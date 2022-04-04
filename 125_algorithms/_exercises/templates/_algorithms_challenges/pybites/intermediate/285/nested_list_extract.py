@@ -29,12 +29,12 @@ ___ extract_ipv4(data
                 print(result_1,result_2)
             ______:
                 _____
-            ____:
+            ____
                 
                 __ result_1 a.. result_2:
                     print('here')
-                    ip_address = data[1][0].strip('"')
-                    mask = data[3][0].strip('"')
+                    ip_address = data[1][0].s..('"')
+                    mask = data[3][0].s..('"')
 
                     result.a..((ip_address,mask
                     _____

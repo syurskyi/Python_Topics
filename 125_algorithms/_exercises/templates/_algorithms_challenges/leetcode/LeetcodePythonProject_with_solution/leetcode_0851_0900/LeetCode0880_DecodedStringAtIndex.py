@@ -14,14 +14,14 @@ c_ Solution(o..
         ___ i, c __ e..(S
             __ c.i..
                 n = n*i..(c)
-            ____:
+            ____
                 n += 1
         ___ j __ r..(i, -1, -1
             c = S[j]
             __ c.i..
                 n //= i..(c)
                 K %= n
-            ____:
+            ____
                 __ K __ n o. K __ 0:
                     r.. c
                 n -= 1
@@ -36,7 +36,7 @@ c_ Solution(o..
         ___ c __ S:
             __ c.i..
                 tmp += tmp*(i..(c)-1)
-            ____:
+            ____
                 tmp += c
             __ K-1 < l..(tmp
                 r.. tmp[K-1]

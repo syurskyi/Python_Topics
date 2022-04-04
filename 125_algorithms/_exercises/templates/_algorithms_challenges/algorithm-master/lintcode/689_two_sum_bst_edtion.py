@@ -28,7 +28,7 @@ c_ Solution:
 
             __ _sum < n:
                 nxt()
-            ____:
+            ____
                 pre()
 
     ___ pre
@@ -45,10 +45,10 @@ c_ Solution:
                     cur.left = N..
                     tail = tail.left
                     _____
-                ____:
+                ____
                     cur.left = tail
                     tail = tail.right
-            ____:
+            ____
                 right = tail
                 tail = tail.left
                 _____
@@ -67,10 +67,10 @@ c_ Solution:
                     cur.right = N..
                     head = head.right
                     _____
-                ____:
+                ____
                     cur.right = head
                     head = head.left
-            ____:
+            ____
                 left = head
                 head = head.right
                 _____

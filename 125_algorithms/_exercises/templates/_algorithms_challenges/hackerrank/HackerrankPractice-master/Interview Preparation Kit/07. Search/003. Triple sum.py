@@ -6,12 +6,12 @@ ___ binary_search_last(arr, el, low, high
     __ low + 1 >= high:
         __ arr[low] > el:
             r.. 0
-        ____:
+        ____
             r.. low + 1
     middle = (low + high) // 2
     __ arr[middle] > el:
         r.. binary_search_last(arr, el, low, middle)
-    ____:
+    ____
         r.. binary_search_last(arr, el, middle, high)
 
 

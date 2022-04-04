@@ -18,10 +18,10 @@ c_ Solution:
         ___ num __ nums:
             __ num __ cnt:
                 cnt[num] += 1
-            ____:
+            ____
                 __ l..(cnt) < 3-1:
                     cnt[num] += 1
-                ____:
+                ____
                     ___ k __ cnt.k..:
                         cnt[k] -= 1
                         __ cnt[k] __ 0:

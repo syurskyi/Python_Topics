@@ -27,14 +27,14 @@ c_ Solution(o..
                 j -= 1
             __ i < j:
                 nums[i], nums[j] = nums[j], nums[i]
-            ____:
+            ____
                 _____
         nums[i], nums[j0] = nums[j0], nums[i]
         __ i __ k:
             r.. nums[i]
         ____ i < k:
             r.. helper(nums, i+1, j0, k)
-        ____:
+        ____
             r.. helper(nums, i0, i-1, k)
     
     ___ findKthLargestHeap  nums, k

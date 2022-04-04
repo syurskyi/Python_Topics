@@ -23,7 +23,7 @@ ___ c__
 
         __ number __ 7:
             verse += phrases[6]
-        ____:
+        ____
             __ number __ 0:
                 c__ = swallowed + animal + '.\n'
             ____ number __ 1:
@@ -31,7 +31,7 @@ ___ c__
                 c__ = c__.r..("<animal>", animal)
                 verse += c__
                 c__ = swallowed+animal+" that"+phrases[0]+"\n"+c__
-            ____:
+            ____
                 verse += phrases[number-1] + "\n"
                 c__ = c__.r..("<animal>", animal)
                 verse += c__
@@ -53,11 +53,11 @@ ___ recite(start_verse, end_verse
     generated = [verse.s...s..("\n") ___ verse __ verses(c__]
     __ start_verse __ end_verse:
         r.. generated[start_verse-1]
-    ____:
+    ____
         result    # list
         ___ i __ r..(start_verse-1, end_verse
             result += generated[i] + [""]
 
         # Pop out the last empty string
-        result.pop()
+        result.p.. )
         r.. result

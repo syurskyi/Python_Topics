@@ -70,8 +70,8 @@ ___ doc(request
     ],
     indirect=["doc"],
 )
-___ test_correct_return_type(doc, expected
-    ... isi..(doc, expected)
+___ test_correct_return_type(doc, e..
+    ... isi..(doc, e..)
 
 
 ?p__.m__.p.(
@@ -86,8 +86,8 @@ ___ test_correct_return_type(doc, expected
     ],
     indirect=["doc"],
 )
-___ test_len_implementation(doc, expected
-    ... l..(doc) __ expected
+___ test_len_implementation(doc, e..
+    ... l..(doc) __ e..
 
 
 ?p__.m__.p.(
@@ -102,8 +102,8 @@ ___ test_len_implementation(doc, expected
     ],
     indirect=["doc"],
 )
-___ test_word_count_implementation(doc, expected
-    ... doc.word_count() __ expected
+___ test_word_count_implementation(doc, e..
+    ... doc.word_count() __ e..
 
 
 ?p__.m__.p.(
@@ -124,8 +124,8 @@ ___ test_word_count_implementation(doc, expected
     ],
     indirect=["doc"],
 )
-___ test_correct_chaining(doc, expected
-    ... s..(doc) __ expected
+___ test_correct_chaining(doc, e..
+    ... s..(doc) __ e..
 
 
 ?p__.m__.p.(
@@ -163,5 +163,5 @@ ___ test_correct_chaining(doc, expected
     ],
     indirect=["doc"],
 )
-___ test_words_property(doc, expected
-    ... doc.words __ expected
+___ test_words_property(doc, e..
+    ... doc.words __ e..

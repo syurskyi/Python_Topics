@@ -50,7 +50,7 @@ c_ Solution:
         ___ s __ S:
             __ s.i..
                 l *= i..(s)
-            ____:
+            ____
                 l += 1
 
         # walk backward
@@ -61,7 +61,7 @@ c_ Solution:
                 r.. s
             __ s.i..
                 l //= i..(s)
-            ____:
+            ____
                 l -= 1
 
         r..

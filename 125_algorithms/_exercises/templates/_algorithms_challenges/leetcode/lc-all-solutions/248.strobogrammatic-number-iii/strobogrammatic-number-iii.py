@@ -14,7 +14,7 @@ c_ Solution(o..
           toAppendInt = i..(toAppend)
           __ low <= toAppendInt <= high:
             count += 1
-        ____:
+        ____
           ___ c __ "018":
             toAppend = pathStr + c + "".j..([d[x] ___ x __ pathStr[::-1]])
             toAppendInt = i..(toAppend)
@@ -27,7 +27,7 @@ c_ Solution(o..
           _____
         p...a..(c)
         dfs(half, p.., n)
-        p...pop()
+        p...p.. )
 
     res    # list
     dfs(n / 2, [], n)

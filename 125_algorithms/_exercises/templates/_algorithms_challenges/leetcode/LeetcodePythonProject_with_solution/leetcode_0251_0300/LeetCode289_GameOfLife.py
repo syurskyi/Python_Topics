@@ -18,7 +18,7 @@ c_ Solution
                 __ board[i][j] __ 1:
                     __ liveNum < 2 o. liveNum > 3:
                         board[i][j] = 2
-                ____:
+                ____
                     __ liveNum __ 3:
                         board[i][j] = -1
         ___ i __ r..(m

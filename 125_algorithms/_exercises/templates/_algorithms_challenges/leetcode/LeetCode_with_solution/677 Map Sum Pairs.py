@@ -47,7 +47,7 @@ c_ MapSum:
                 __ i __ l..(key) - 1:
                     delta = val - cur.val
                     cur.val = val
-                ____:
+                ____
                     cur.children[key[i+1]], delta = insert(cur.children[key[i+1]], key, i + 1, val)
 
                 cur.s.. += delta
@@ -99,7 +99,7 @@ c_ MapSum2:
                 cur = pi.children[key[i]]
                 __ i + 1 < l..(key
                     cur.children[key[i+1]], delta = insert(cur, key, i + 1, val)
-                ____:
+                ____
                     delta = val - cur.val
                     cur.val = val
 

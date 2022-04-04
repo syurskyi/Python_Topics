@@ -37,7 +37,7 @@ ___ rent_or_stream(
     ___ total_month __ s..(month_rental
         __ month_rental[total_month] > STREAMING_COST_PER_MONTH:
             return_dict[total_month] = STREAM
-        ____:
+        ____
             return_dict[total_month] = RENT
     r.. return_dict
 

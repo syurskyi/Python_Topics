@@ -4,11 +4,11 @@ ____ states _______ (get_every_nth_state, get_state_abbrev,
 
 
 ___ test_get_every_nth_state
-    expected =  'Massachusetts', 'Missouri', 'Hawaii',
+    e.. =  'Massachusetts', 'Missouri', 'Hawaii',
                 'Vermont', 'Delaware'
-    ... l..(get_every_nth_state __ expected
-    expected =  'Missouri', 'Vermont'
-    ... l..(get_every_nth_state(n=20 __ expected
+    ... l..(get_every_nth_state __ e..
+    e.. =  'Missouri', 'Vermont'
+    ... l..(get_every_nth_state(n=20 __ e..
 
 
 ___ test_get_state_abbrev
@@ -26,8 +26,8 @@ ___ test_get_longest_state
 
 
 ___ test_combine_state_names_and_abbreviations
-    expected =  'AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA',
+    e.. =  'AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA',
                 'South Dakota', 'Tennessee', 'Texas', 'Utah',
                 'Vermont', 'Virginia', 'Washington', 'West Virginia',
                 'Wisconsin', 'Wyoming'
-    ... combine_state_names_and_abbreviations() __ expected
+    ... combine_state_names_and_abbreviations() __ e..

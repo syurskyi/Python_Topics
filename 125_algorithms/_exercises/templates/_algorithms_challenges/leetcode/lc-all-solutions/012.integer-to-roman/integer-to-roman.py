@@ -17,7 +17,7 @@ c_ Solution(o..
         ans += literals[idx + 1] + (__ - 5) * literals[idx + 2]
       ____ __ __ 4:
         ans += literals[idx + 2] + literals[idx + 1]
-      ____:
+      ____
         ans += __ * literals[idx + 2]
       num %= values[literals[idx + 2]]
     r.. ans

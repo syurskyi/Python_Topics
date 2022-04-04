@@ -43,7 +43,7 @@ c_ Solution:
             ____ char __ ')':
                 w.... stack a.. stack[-1] != '(':
                     res.a..(stack.pop
-                stack.pop()
+                stack.p.. )
 
         w.... stack:
             res.a..(stack.pop
@@ -57,8 +57,8 @@ c_ Solution:
             __ char.i..
                 stack.a..(i..(char
             ____ char __ OP:
-                b = stack.pop()
-                a = stack.pop()
+                b = stack.p.. )
+                a = stack.p.. )
                 stack.a..(OP[char](a, b
 
         r.. stack[0]
@@ -101,7 +101,7 @@ c_ Solution:
             ____ char __ ')':
                 w.... stack a.. stack[-1] != '(':
                     res.a..(stack.pop
-                stack.pop()
+                stack.p.. )
 
         w.... stack:
             res.a..(stack.pop
@@ -115,8 +115,8 @@ c_ Solution:
             __ char.i..
                 stack.a..(i..(char
             ____ char __ '+-*/':
-                b = stack.pop()
-                a = stack.pop()
+                b = stack.p.. )
+                a = stack.p.. )
 
                 __ char __ '+':
                     stack.a..(a + b)

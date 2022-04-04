@@ -18,11 +18,11 @@ ___ _cap_str_to_mln_float(cap
          value as float"""
     __ cap __ "n/a":
         r.. 0
-    ____:
+    ____
         cap = cap.l..("$")
         __ cap[-1] __ "B":
             r.. f__(cap.rstrip("B" * 1000
-        ____:
+        ____
             r.. f__(cap.rstrip("M"
 
 
@@ -35,7 +35,7 @@ ___ get_industry_cap(industry
         cap = _cap_str_to_mln_float(stock["cap"])
         __ stock["industry"] n.. __ industry_cap_lookup:
             industry_cap_lookup[stock["industry"]] = [cap]
-        ____:
+        ____
             industry_cap_lookup[stock["industry"]].a..(cap)
     r.. r..(s..(industry_cap_lookup[industry]), 2)
 

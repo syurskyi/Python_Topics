@@ -14,7 +14,7 @@ c_ Solution:
 
             __ nums[mid] < nums[mid + 1]:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         r.. right __ nums[left] < nums[right] ____ left

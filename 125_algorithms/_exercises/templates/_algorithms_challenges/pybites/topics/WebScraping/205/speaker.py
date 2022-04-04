@@ -35,13 +35,13 @@ ___ get_pycon_speaker_first_names(soup_ N..
         __ ',' __ slot_speaker.text.s..:
             slot_speakers = slot_speaker.text.s...s..(',')
             ___ speaker __ slot_speakers:
-                speakers_list.a..(get_first_name(speaker.strip()))
+                speakers_list.a..(get_first_name(speaker.s..()))
         ____ '/' __ slot_speaker.text.s..:
             slot_speakers = slot_speaker.text.s...s..('/')
             ___ speaker __ slot_speakers:
-                speakers_list.a..(get_first_name(speaker.strip()))
-        ____:
-            speakers_list.a..(get_first_name(slot_speaker.text.strip()))
+                speakers_list.a..(get_first_name(speaker.s..()))
+        ____
+            speakers_list.a..(get_first_name(slot_speaker.text.s..()))
     r.. speakers_list
 
 ___ get_percentage_of_female_speakers(first_names

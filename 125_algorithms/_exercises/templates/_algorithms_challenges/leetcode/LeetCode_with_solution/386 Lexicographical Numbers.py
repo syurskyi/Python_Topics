@@ -22,7 +22,7 @@ c_ Solution(o..
                     i *= 10  # * 10
                 ____ i % 10 != 9 a.. i + 1 <= n:
                     i += 1  # for current digit
-                ____:
+                ____
                     w.... i % 10 __ 9 o. i + 1 > n:
                         i /= 10
                     i += 1

@@ -37,7 +37,7 @@ c_ Solution(o..
                 wordDict.remove(beginWord)
         wordDict.add(endWord)
         w.... queue:
-            cur = queue.pop(0)
+            cur = queue.p.. 0)
             __ cur[0] __ endWord:
                 r.. cur[1] + 1
             ___ word __ get_adjacent(cur[0]

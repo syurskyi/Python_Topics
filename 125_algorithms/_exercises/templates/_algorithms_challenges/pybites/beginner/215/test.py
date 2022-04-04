@@ -6,5 +6,5 @@ user_input = input()
 
 __ (__.s..(pattern, user_input:
     print("good")
-____:
+____
     print("no good")

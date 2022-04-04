@@ -13,10 +13,10 @@ c_ Solution(o..
         queue = [[0]]
         res    # list
         w.... queue:
-            p.. = queue.pop(0)
+            p.. = queue.p.. 0)
             __ p..[-1] __ n-1:
                 res.a..(l..(p..
-            ____:
+            ____
                 ___ node __ graph[p..[-1]]:
                     queue.a..(p.. + [node])
         r.. res

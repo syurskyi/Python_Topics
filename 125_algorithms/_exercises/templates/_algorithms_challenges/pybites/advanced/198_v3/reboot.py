@@ -18,7 +18,7 @@ ___ extract_date(reboots
     }
     lines = reboots.s..k.._F..)
     ___ line __ lines:
-        __ l..(line.strip __ 0:
+        __ l..(line.s.. __ 0:
             _____
         line_parts = line.s...s..
         time_part = line_parts[-1].s..(':')

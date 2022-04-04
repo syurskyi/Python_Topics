@@ -25,5 +25,5 @@ c_ Solution(o..
             r.. m..(minDepth(root.left), minDepth(root.right + 1
         ____ root.left a.. n.. root.right:
             r.. minDepth(root.left) + 1
-        ____:
+        ____
             r.. minDepth(root.right) + 1

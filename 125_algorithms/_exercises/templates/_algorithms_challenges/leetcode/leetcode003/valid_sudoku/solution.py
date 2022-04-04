@@ -24,7 +24,7 @@ c_ Solution(o..
                     p..
                 ____ board[i][j] __ d:
                     r.. F..
-                ____:
+                ____
                     d[board[i][j]] = T..
         # Check columns
         ___ j __ r..(9
@@ -34,7 +34,7 @@ c_ Solution(o..
                     p..
                 ____ board[i][j] __ d:
                     r.. F..
-                ____:
+                ____
                     d[board[i][j]] = T..
         # Check sub-boxes
         ___ m __ r..(0, 9, 3
@@ -46,6 +46,6 @@ c_ Solution(o..
                             p..
                         ____ board[i][j] __ d:
                             r.. F..
-                        ____:
+                        ____
                             d[board[i][j]] = T..
         r.. T..

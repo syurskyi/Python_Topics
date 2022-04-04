@@ -17,7 +17,7 @@ c_ Solution(o..
                 left -= 1
             ____ c __ 'U':
                 up += 1
-            ____:
+            ____
                 up -= 1
         r.. up __ 0 a.. left __ 0
     

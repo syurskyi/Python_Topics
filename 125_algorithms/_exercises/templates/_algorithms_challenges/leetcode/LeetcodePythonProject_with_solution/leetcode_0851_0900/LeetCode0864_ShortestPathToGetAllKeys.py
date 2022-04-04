@@ -23,7 +23,7 @@ c_ Solution(o..
         d..    # list
         d...a..([starti, startj, 0, '.@abcdef', 0])
         w.... d..:
-            i, j, steps, keys, collectedKeys = d...pop(0)
+            i, j, steps, keys, collectedKeys = d...p.. 0)
             __ grid[i][j] __ 'abcdef' a.. grid[i][j].u.. n.. __ keys:
                 keys += grid[i][j].u..
                 collectedKeys += 1

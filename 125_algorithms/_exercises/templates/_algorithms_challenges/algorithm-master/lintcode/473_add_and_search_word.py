@@ -9,7 +9,7 @@ c_ Trie:
         ___ char __ s__:
             __ char __ parent:
                 parent = parent[char]
-            ____:
+            ____
                 parent[char]    # dict
                 parent = parent[char]
         parent '_end'  = T..
@@ -21,7 +21,7 @@ c_ Trie:
         ___ char __ s__:
             __ char __ parent:
                 parent = parent[char]
-            ____:
+            ____
                 r.. F..
         r.. T..
 

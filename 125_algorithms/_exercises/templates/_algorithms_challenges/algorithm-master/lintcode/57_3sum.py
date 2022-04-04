@@ -31,7 +31,7 @@ c_ Solution:
                         c -= 1
                 ____ total < 0:
                     b += 1
-                ____:
+                ____
                     c -= 1
 
         r.. ans

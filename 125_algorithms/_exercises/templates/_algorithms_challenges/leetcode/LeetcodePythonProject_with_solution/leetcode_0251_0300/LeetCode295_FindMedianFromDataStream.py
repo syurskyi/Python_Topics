@@ -17,7 +17,7 @@ c_ MedianFinder(o..
             heapq.heappush(maxHeap, -num)
             __ l..(maxHeap) > l..(minHeap) + 1:
                 heapq.heappush(minHeap, -heapq.heappop(maxHeap
-        ____:
+        ____
             heapq.heappush(minHeap, num)
             __ l..(minHeap) > l..(maxHeap
                 heapq.heappush(maxHeap, -heapq.heappop(minHeap
@@ -25,5 +25,5 @@ c_ MedianFinder(o..
     ___ findMedian
         __ l..(minHeap) __ l..(maxHeap
             r.. (minHeap[0] - maxHeap[0])/2.0
-        ____:
+        ____
             r.. -maxHeap[0]

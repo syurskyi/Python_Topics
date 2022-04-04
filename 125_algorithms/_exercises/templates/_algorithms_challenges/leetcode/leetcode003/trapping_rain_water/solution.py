@@ -12,23 +12,23 @@ c_ Solution:
                 w = i - last - 1
                 area = w * A[last]
                 w.... stack:
-                    area -= A[stack.pop()]
+                    area -= A[stack.p.. )]
                 res += area
                 last = i
-            ____:
+            ____
                 stack.a..(i)
         # Process remaining bars
         __ stack:
-            r = stack.pop()  # Rightmost effective bar
+            r = stack.p.. )  # Rightmost effective bar
             w.... stack:
                 __ A[stack[-1]] >= A[r]:
-                    r = stack.pop()
-                ____:
+                    r = stack.p.. )
+                ____
                     _____
             w.... stack:
-                i = stack.pop()
+                i = stack.p.. )
                 __ A[i] < A[r]:
                     res += A[r] - A[i]
-                ____:
+                ____
                     r = i
         r.. res

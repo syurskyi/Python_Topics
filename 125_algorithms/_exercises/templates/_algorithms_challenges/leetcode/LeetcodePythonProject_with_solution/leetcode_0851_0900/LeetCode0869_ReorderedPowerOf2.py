@@ -24,14 +24,14 @@ c_ Solution(o..
         ___ c __ s..(n
             __ c __ hashmap:
                 hashmap[c] += 1
-            ____:
+            ____
                 hashmap[c] = 1
         ___ c __ s..(num
             __ c __ hashmap:
                 hashmap[c] -= 1
                 __ hashmap[c] __ 0:
                     del hashmap[c]
-            ____:
+            ____
                 r.. F..
         r.. T..
     

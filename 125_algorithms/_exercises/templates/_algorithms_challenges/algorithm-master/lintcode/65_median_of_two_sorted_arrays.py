@@ -103,5 +103,5 @@ c_ Solution:
 
         __ a < b:
             r.. find_kth(A, i + k // 2, B, j, k - k // 2)
-        ____:
+        ____
             r.. find_kth(A, i, B, j + k // 2, k - k // 2)

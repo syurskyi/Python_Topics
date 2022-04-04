@@ -33,7 +33,7 @@ c_ Solution:
         ___ i __ r..(l..(words:
             p...a..(words[i])
             dfs(words, n, ans, p..)
-            p...pop()
+            p...p.. )
 
     ___ is_valid  p..
         __ n.. p.. o. l..(p..) != l..(p..[0]

@@ -26,7 +26,7 @@ c_ Solution(o..
                 val = 0
                 __ j < l..(arr)-1:
                     j += 1
-            ____:
+            ____
                 val = i-arr[j]
             res.a..(val)
         r.. res

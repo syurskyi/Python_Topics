@@ -14,7 +14,7 @@ c_ Solution(o..
           dp[j] = pre
         ____ j __ l..(triangle[i]) - 1:
           dp[j] = pre
-        ____:
+        ____
           dp[j] = m..(dp[j], pre)
         dp[j] += triangle[i][j]
         pre = tmp

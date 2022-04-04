@@ -20,10 +20,10 @@ c_ Solution(o..
             queue.a..((tmp, i, 1
         
         w.... queue:
-            curr = queue.pop(0)
+            curr = queue.p.. 0)
             __ curr[0] __ (1 << n)-1:
                 r.. curr[2]-1
-            ____:
+            ____
                 neighbors = graph[curr[1]]
                 ___ v __ neighbors:
                     bitMask = curr[0]

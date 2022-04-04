@@ -4,5 +4,5 @@ ___ get_username
         username = input("Please type in the name 'PyBites':")
         __ username __ "PyBites":
             _____
-        ____:
+        ____
             print("Invalid username.")

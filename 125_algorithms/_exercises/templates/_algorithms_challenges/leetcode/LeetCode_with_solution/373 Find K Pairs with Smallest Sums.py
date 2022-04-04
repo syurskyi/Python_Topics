@@ -94,9 +94,9 @@ c_ Solution(o..
                 ret.a..([nums1[i], nums2[j]])
                 __ nums1[i] < nums2[j]:
                     j += 1
-                ____:
+                ____
                     i += 1
-            ____:
+            ____
                 _____
 
         r.. ret

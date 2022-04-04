@@ -9,5 +9,5 @@ ___ _ __ r..(n
     b  s..(l.. m..(i.., input().s..())), r.._T..
     __ a..([a[i] + b[i] > k ___ i __ r..(l..(a]
         print('YES')
-    ____:
+    ____
         print('NO')

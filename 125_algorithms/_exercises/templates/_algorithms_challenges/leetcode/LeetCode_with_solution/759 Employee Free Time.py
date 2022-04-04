@@ -110,7 +110,7 @@ c_ Solution:
 
             __ flag __ S:
                 count += 1
-            ____:
+            ____
                 prev = t
                 count -= 1
 

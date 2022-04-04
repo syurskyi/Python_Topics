@@ -7,9 +7,9 @@ c_ Solution:
         ___ d __ ps:
             __ d __ '..':
                 __ res:
-                    res.pop()
+                    res.p.. )
             ____ d __ '.' o. d __ '':
                 p..
-            ____:
+            ____
                 res.a..(d)
         r.. '/' + '/'.j..(res)

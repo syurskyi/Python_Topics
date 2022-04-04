@@ -9,7 +9,7 @@ c_ Solution(o..
     ___ i __ r..(l..(s:
       __ s[i] __ "D":
         cnt += 1
-      ____:
+      ____
         ans[i - cnt:i + 1] = ans[i - cnt:i + 1][::-1]
         cnt = 0
     __ s[-1] __ "D":

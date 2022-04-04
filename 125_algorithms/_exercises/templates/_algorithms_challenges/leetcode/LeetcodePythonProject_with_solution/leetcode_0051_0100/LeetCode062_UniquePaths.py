@@ -38,7 +38,7 @@ c_ Solution(o..
                     dp[i][j] = dp[i][j-1]
                 ____ j __ 0:
                     dp[i][j] = dp[i-1][j]
-                ____:
+                ____
                     dp[i][j] = dp[i-1][j] + dp[i][j-1]
         r.. dp[-1][-1]
     

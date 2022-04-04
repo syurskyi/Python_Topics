@@ -7,7 +7,7 @@ c_ Solution(o..
     stack    # list
     ___ token __ tokens:
       __ token __ ["+", "-", "*", "/"]:
-        b, a = stack.pop(), stack.pop()
+        b, a = stack.p.. ), stack.p.. )
         __ token __ "+":
           res = a + b
         __ token __ "-":
@@ -17,6 +17,6 @@ c_ Solution(o..
         __ token __ "/":
           res = i..(f__(a) / f__(b
         stack.a..(res)
-      ____:
+      ____
         stack.a..(i..(token
-    r.. stack.pop()
+    r.. stack.p.. )

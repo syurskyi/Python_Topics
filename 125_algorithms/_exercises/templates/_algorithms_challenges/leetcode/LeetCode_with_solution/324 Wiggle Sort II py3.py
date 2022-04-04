@@ -50,7 +50,7 @@ c_ Solution:
                     _____
                 nums[i], nums[odd] = nums[odd], nums[i]
                 odd += 2
-            ____:
+            ____
                 i += 1
 
     ___ find_kth  A, lo, hi, k
@@ -59,7 +59,7 @@ c_ Solution:
             r.. p
         ____ k > p:
             r.. find_kth(A, p + 1, hi, k)
-        ____:
+        ____
             r.. find_kth(A, lo, p, k)
 
     ___ pivot  A, lo, hi

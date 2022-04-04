@@ -17,7 +17,7 @@ ___ translate(text
     ___ word __ text.s.. :
         __ starts_with_vowel_sound(word
             words.a..(word + 'ay')
-        ____:
+        ____
             head, tail = split_initial_consonant_sound(word)
             words.a..(tail + head + 'ay')
     r.. ' '.j..(words)

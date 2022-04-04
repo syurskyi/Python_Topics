@@ -46,7 +46,7 @@ c_ Solution:
 
         __ m != 1:  # leftend is None
             leftend.next = prev
-        ____:
+        ____
             head = prev
 
         rightend.next = cur

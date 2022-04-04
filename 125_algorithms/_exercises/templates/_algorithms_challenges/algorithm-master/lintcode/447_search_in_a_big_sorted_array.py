@@ -28,7 +28,7 @@ c_ Solution:
             m = l + (r - l) // 2
             __ reader.g.. m) < target:
                 l = m
-            ____:
+            ____
                 r = m
 
         ___ i __ [l, r]:

@@ -11,7 +11,7 @@ c_ Morse:
                                            ___ c __ word]) ___ word __ words])
         result    # list
         ___ i __ r..(0, l..(code), 32
-            num = code[i:i + 32].ljust(32, '0')
+            num = code[i:i + 32].l.. 32, '0')
             result.a..(i..(num[1:], 2) -
                           (0 __ num[0] __ '0' ____ Morse.neg
         r.. result
@@ -23,7 +23,7 @@ c_ Morse:
             __ num < 0:
                 num += Morse.neg
                 code += '1' + bin(num)[2:].rjust(31, '0')
-            ____:
+            ____
                 code += bin(num)[2:].rjust(32, '0')
         code = code.rstrip('0')
         result = ' '.j..([''.j..([next(k ___ k, v __ Morse.alpha.i.. __ v __ char)

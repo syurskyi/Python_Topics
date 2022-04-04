@@ -65,12 +65,12 @@ c_ Solution:
                 target = 2 * a
             ____ a % 2 != 0:
                 r.. F..
-            ____:
+            ____
                 target = a // 2
 
             __ counter[target] > 0:
                 counter[target] -= 1
-            ____:
+            ____
                 r.. F..
 
         r.. T..

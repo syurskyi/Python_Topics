@@ -23,7 +23,7 @@ c_ Solution(o..
                 __ nums[i]+nums[l]+nums[h] < target:
                     cnt += h-l  # move the high ptr leftward till low.
                     l += 1
-                ____:
+                ____
                     h -= 1
 
         r.. cnt

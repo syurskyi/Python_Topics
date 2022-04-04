@@ -16,7 +16,7 @@ c_ Solution(o..
         ___ i __ r..(n
             __ parent[edges[i][1]] __ 0:
                 parent[edges[i][1]] = edges[i][0]
-            ____:
+            ____
                 can2 = [edges[i][0], edges[i][1]]
                 can1 = [parent[edges[i][1]], edges[i][1]]
                 edges[i][1] = 0

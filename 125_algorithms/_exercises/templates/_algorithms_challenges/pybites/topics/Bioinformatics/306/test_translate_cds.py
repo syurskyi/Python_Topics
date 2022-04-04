@@ -83,13 +83,13 @@ ____ translate_cds _______ translate_cds
         ),  # lots of whitespace
     ],
 )
-___ test_translate_cds(cds, table, expected
+___ test_translate_cds(cds, table, e..
     """
     Test if returned protein sequence and type are correct
     """
     result = translate_cds(cds, table)
     ... isi..(result, s..)
-    ... result.u.. __ expected
+    ... result.u.. __ e..
 
 
 ?p__.m__.p.(

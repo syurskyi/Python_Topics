@@ -82,7 +82,7 @@ ___ generate_enchantments(soup
                     valid_items.a..('fishing_rod')
                 ____ item __ 'rod':
                     _____
-                ____:
+                ____
                     valid_items.a..(item)
                                                
         id_name = __.s..(r'\((.+)\)',values[0]).group(1)
@@ -138,7 +138,7 @@ ___ get_soup(file=HTML_FILE
 
         w__ file.o.. ) __ html_source:
             soup = Soup(html_source, "html.parser")
-    ____:
+    ____
         soup = Soup(file, "html.parser")
 
     r.. soup

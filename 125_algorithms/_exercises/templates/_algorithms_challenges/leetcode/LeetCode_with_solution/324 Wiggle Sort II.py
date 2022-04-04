@@ -40,7 +40,7 @@ c_ Solution(o..
                 i += 1
             ____ A[idx(i)] __ v:
                 i += 1
-            ____:
+            ____
                 hi -= 1
                 A[idx(hi)], A[idx(i)] = A[idx(i)], A[idx(hi)]
 
@@ -58,7 +58,7 @@ c_ Solution(o..
                 i += 1
             ____ A[i] __ v:
                 i += 1
-            ____:
+            ____
                 gt -= 1
                 A[gt], A[i] = A[i], A[gt]
 
@@ -73,7 +73,7 @@ c_ Solution(o..
             r.. k
         __ k <= lt:
             r.. find_kth(A, lo, lt+1, k)
-        ____:
+        ____
             r.. find_kth(A, gt, hi, k)
 
 
@@ -97,7 +97,7 @@ c_ SolutionSort(o..
             __ i % 2 __ 0:
                 nums[i] = A[j]
                 j -= 1
-            ____:
+            ____
                 nums[i] = A[k]
                 k -= 1
 

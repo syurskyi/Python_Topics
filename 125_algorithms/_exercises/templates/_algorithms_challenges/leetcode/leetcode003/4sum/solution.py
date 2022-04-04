@@ -48,6 +48,6 @@ c_ Solution(o..
                             d - 1
                     ____ s < target:
                         c + 1
-                    ____:
+                    ____
                         d - 1
         r.. res

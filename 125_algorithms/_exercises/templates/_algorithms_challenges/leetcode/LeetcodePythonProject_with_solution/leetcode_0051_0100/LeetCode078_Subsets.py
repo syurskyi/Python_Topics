@@ -22,7 +22,7 @@ c_ Solution(o..
         ___ i __ r..(start, l..(nums:
             elem.a..(nums[i])
             helper(nums, elem, i+1, result)
-            elem.pop()
+            elem.p.. )
     
     ___ test
         testCases = [

@@ -22,7 +22,7 @@ ___ bowling_score(rolls
                 total += rolls[index + 1]
             frame += 1
             newframe = T..
-        ____:
+        ____
             newframe = F..
         total += roll
 

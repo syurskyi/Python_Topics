@@ -9,7 +9,7 @@ c = 'H'
 
 # Top Cone
 ___ i __ r..(thickness
-    print((c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1
+    print((c*i).rjust(thickness-1)+c+(c*i).l.. thickness-1
 
 # Top Pillars
 ___ i __ r..(thickness+1
@@ -25,4 +25,4 @@ ___ i __ r..(thickness+1
 
 # Bottom Cone
 ___ i __ r..(thickness
-    print(((c*(thickness-i-1.rjust(thickness)+c+(c*(thickness-i-1.ljust(thickness.rjust(thickness*6
+    print(((c*(thickness-i-1.rjust(thickness)+c+(c*(thickness-i-1.l.. thickness.rjust(thickness*6

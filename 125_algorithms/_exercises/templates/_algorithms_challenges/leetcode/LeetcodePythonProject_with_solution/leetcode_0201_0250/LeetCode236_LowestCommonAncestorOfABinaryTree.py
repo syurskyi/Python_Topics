@@ -29,7 +29,7 @@ c_ Solution(o..
             r.. root
         ____ n.. l a.. n.. r:
             r.. N..
-        ____:
+        ____
             r.. r __ n.. l ____ l
     
     ___ test

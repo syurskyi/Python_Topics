@@ -25,7 +25,7 @@ ___ create_chart
                     slack_frequency[current[:5]] = [1]
                     __ 'Python' __ previous:
                         slack_frequency[current[:5]].a..(slack_frequency[current[:5]][0])
-                ____:
+                ____
                     slack_frequency[current[:5]][0] += 1
                     __ 'Python' __ previous:
                         slack_frequency[current[:5]].a..(slack_frequency[current[:5]][0])
@@ -37,7 +37,7 @@ ___ create_chart
             ___ i __ r..(1, value[0] +1
                 bar += "."
             print(key, bar)
-        ____:
+        ____
             j = 1
             ___ i __ r..(1, value[0] +1
                 snake_num = l..(value) -1
@@ -47,7 +47,7 @@ ___ create_chart
                 __ i __ snake_value_at_i:
                     bar += "🐍"
                     j += 1
-                ____:
+                ____
                     bar += "."
         
             print(key, bar)

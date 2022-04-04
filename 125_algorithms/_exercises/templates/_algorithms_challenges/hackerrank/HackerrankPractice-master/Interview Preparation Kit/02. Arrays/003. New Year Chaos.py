@@ -16,5 +16,5 @@ ___ test __ r..(t
 
     __ arr __ s..(arr
         print(count)
-    ____:
+    ____
         print('Too chaotic')

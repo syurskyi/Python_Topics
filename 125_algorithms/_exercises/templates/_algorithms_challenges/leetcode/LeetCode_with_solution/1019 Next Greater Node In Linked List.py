@@ -54,7 +54,7 @@ c_ Solution:
         cur = head
         w.... cur:
             w.... stk a.. stk[-1][1] < cur.val:
-                idx, _ = stk.pop()
+                idx, _ = stk.p.. )
                 ret[idx] = cur.val
 
             stk.a..([i, cur.val])

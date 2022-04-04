@@ -31,7 +31,7 @@ ___ _get_table(content=content) __ l..:
     raw_table = soup.find('table', {'class': 'list-table'})
     table = [[c.get_text().s.. ___ c __ r.find_all('td')]
              ___ r __ raw_table.find_all('tr')]
-    table.pop(0)                # remove header
+    table.p.. 0)                # remove header
     ___ row __ table:
         row[1] = _parse_date(row[1])
     r.. table
@@ -44,6 +44,6 @@ ___ get_us_bank_holidays(content=content
     table = _get_table()
 
     ___ row __ table:
-        holidays[f'{row[1].month:02d}' .a..(row[3].strip
+        holidays_* {row[1].month:02d}' .a..(row[3].strip
 
     r.. holidays

@@ -13,7 +13,7 @@ ___ i __ r..(data
         #borrow 1 min i.e 60 secs from mins
         min_b -= 1
         sec = (sec_b + 60) - sec_a
-    ____:
+    ____
         sec = sec_b -sec_a
         
     #checking if seconds are greater or no
@@ -21,7 +21,7 @@ ___ i __ r..(data
         #borrow 1 hour i.e 60 mins from hour
         hour_b -= 1
         mino = (min_b + 60) - min_a
-    ____:
+    ____
         mino = min_b - min_a
         
     #checking if hour are greater or no
@@ -29,7 +29,7 @@ ___ i __ r..(data
         #borrow 1 day i.e 24 hours from day
         day_b = day_b - 1
         hour = (hour_b + 24) - hour_a
-    ____:
+    ____
         hour = hour_b - hour_a
     
     day = day_b - day_a

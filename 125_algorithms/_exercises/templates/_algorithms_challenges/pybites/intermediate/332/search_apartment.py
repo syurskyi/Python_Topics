@@ -18,7 +18,7 @@ ___ search_apartment(buildings: L..[i..], direction: s..) __ L..[i..]:
         start =  l..(buildings) - 1
         end = -1
         delta = -1
-    ____:
+    ____
         start = 0
         end = l..(buildings)
         delta = 1

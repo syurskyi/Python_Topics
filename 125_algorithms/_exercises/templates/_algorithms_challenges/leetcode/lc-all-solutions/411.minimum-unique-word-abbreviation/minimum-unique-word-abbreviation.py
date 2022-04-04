@@ -18,7 +18,7 @@ c_ Solution(o..
         __ c.i..
           jump = i..(c)
           i += jump
-        ____:
+        ____
           __ c != dest[i]:
             r.. F..
           i += 1

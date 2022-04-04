@@ -42,7 +42,7 @@ c_ Solution(o..
             res += ' ' + helper(first) + ' Million'
             remaining = num - first*1000000
             res += ' ' + helper(remaining)
-        ____:
+        ____
             first = num/1000000000
             res += ' ' + helper(first) + ' Billion'
             remaining = num - first*1000000000

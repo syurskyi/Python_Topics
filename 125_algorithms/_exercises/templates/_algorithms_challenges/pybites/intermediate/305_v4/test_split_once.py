@@ -16,8 +16,8 @@ ____ split_once _______ split_once
                         ('The quick\tbrown\nfox\vjumps \fover\r the\tlazy\vdog\n',
                           'The', 'quick', 'brown', 'fox', 'jumps ', 'over', ' the\tlazy\vdog\n' ),
 ])
-___ test_split_once_whitespace(test_input, expected
-    ... split_once(test_input) __ expected
+___ test_split_once_whitespace(test_input, e..
+    ... split_once(test_input) __ e..
 
 
 ?p__.m__.p.('test_input, expected', [
@@ -28,8 +28,8 @@ ___ test_split_once_whitespace(test_input, expected
                         ('lorem ipsum, dolor sit - amet, consectetur : adipiscing elit. Praesent vitae orc',
                           'lorem ipsum', ' dolor sit ', ' amet, consectetur ', ' adipiscing elit. Praesent vitae orc' ),
 ])
-___ test_split_once(test_input, expected
-    ... split_once(test_input, separators=',-:') __ expected
+___ test_split_once(test_input, e..
+    ... split_once(test_input, separators=',-:') __ e..
 
 
 ?p__.m__.p.('separators, expected', [
@@ -39,7 +39,7 @@ ___ test_split_once(test_input, expected
     ('aeiouy',  'D', 'rm', 'k and Jalad… at Tanagra.\nShaka, wh', 'n the walls fell.\nTemba, h', 's arms wide!\nDarmok and Jalad… the', ' left together.\nMirab, with sails ', 'nfurled.\n' ),
     ('MDJTS', ['', 'armok and ', 'alad… at ', 'anagra.\n', 'haka, when the walls fell.\nTemba, his arms wide!\nDarmok and Jalad… they left together.\n', 'irab, with sails unfurled.\n' )
 ])
-___ test_split_once_variable_separators(separators, expected
+___ test_split_once_variable_separators(separators, e..
     constant_text = dedent("""\
                            Darmok and Jalad… at Tanagra.
                            Shaka, when the walls fell.
@@ -48,4 +48,4 @@ ___ test_split_once_variable_separators(separators, expected
                            Mirab, with sails unfurled.
                            """)
 
-    ... split_once(constant_text, separators=separators) __ expected
+    ... split_once(constant_text, separators=separators) __ e..

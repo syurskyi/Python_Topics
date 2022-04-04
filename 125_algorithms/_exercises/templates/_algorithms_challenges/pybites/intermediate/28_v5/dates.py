@@ -32,5 +32,5 @@ ___ get_month_most_posts(dates
        that occurs most"""
     months = c...d..(i..)
     ___ x __ dates:
-        months[f'{x.year:04}-{x.month:02}'  += 1
+        months_* {x.year:04}-{x.month:02}'  += 1
     r.. s..(months.i.., key=l.... k_v: -k_v[1])[0][0]

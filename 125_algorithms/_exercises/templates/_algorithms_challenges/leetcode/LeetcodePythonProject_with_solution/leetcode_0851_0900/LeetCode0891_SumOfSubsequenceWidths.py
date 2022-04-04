@@ -35,7 +35,7 @@ c_ Solution(o..
         ___ i __ r..(idx, l..(arr:
             curr.a..(arr[i])
             dfs(arr, i+1, curr, nums)
-            curr.pop()
+            curr.p.. )
     
     ___ test
         testCases = [

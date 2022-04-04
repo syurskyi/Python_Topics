@@ -62,7 +62,7 @@ c_ Solution:
             __ remain > 0:
                 ret += 1 - err
                 remain -= 1
-            ____:
+            ____
                 ret += err
 
         r.. f'{ret:.{3}f}'

@@ -8,9 +8,9 @@ ___ i __ r..(i..(input())):
             p..
         ____ j[1] __ win_dic[j[0]]:
             count1 += 1
-        ____:
+        ____
             count2 += 1
     __ count1 > count2:
         print('1',end=' ')
-    ____:
+    ____
         print('2',end=' ')

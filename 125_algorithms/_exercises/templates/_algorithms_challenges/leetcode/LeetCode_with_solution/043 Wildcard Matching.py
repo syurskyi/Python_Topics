@@ -50,7 +50,7 @@ c_ Solution:
                     dp[i][j] = dp[i+1][j+1]
                 ____ pattern[j]__"*":
                     dp[i][j] = dp[i][j+1] o. dp[i+1][j]  # zero or more
-                ____:
+                ____
                     dp[i][j] = F..
 
 
@@ -91,7 +91,7 @@ c_ Solution:
                 w.... k<m+1 a.. dp[k]!=T..: k+= 1
                 ___ i __ x..(k, m+1
                     dp[i] = T..
-            ____:
+            ____
                 ___ i __ x..(m, 0, -1
                     dp[i] = dp[i-1] a.. (tape[i-1]__pattern[j-1] o. pattern[j-1]__"?")
 

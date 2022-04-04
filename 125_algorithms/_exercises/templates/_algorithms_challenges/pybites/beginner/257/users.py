@@ -13,7 +13,7 @@ ___ get_users(passwd: s..) __ d..:
         parsed_pw  = line.s..(":")
         __ l..(parsed_pw[4]) __ 0:
           pwdict[parsed_pw[0]] = 'unknown'
-        ____:
+        ____
           pwdict[parsed_pw[0]] = __.sub(',+', ' ', parsed_pw[4].rstrip(','
     r..(pwdict)
 

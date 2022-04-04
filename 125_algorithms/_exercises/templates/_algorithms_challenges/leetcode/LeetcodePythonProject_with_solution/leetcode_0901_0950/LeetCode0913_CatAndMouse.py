@@ -32,7 +32,7 @@ c_ Solution(o..
                     __ t2 __ c:
                         color[i2, j2, t2] = c
                         queue.a..((i2, j2, t2, c
-                    ____:
+                    ____
                         degree[i2, j2, t2] -= 1
                         __ degree[i2, j2, t2] __ 0:
                             color[i2, j2, t2] = 3 - t2
@@ -44,7 +44,7 @@ c_ Solution(o..
         __ t __ 2:
             ___ m2 __ graph[m]:
                 res.a..((m2, c, 3-t
-        ____:
+        ____
             ___ c2 __ graph[c]:
                 __ c2:
                     res.a..((m, c2, 3-t

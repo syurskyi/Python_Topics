@@ -23,5 +23,5 @@ c_ Solution:
             ____ A[i] > high:
                 A[right], A[i] = A[i], A[right]
                 right -= 1
-            ____:
+            ____
                 i += 1

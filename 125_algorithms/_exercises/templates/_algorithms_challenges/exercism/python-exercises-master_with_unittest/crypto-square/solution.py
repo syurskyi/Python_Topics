@@ -3,13 +3,13 @@ _______ ___
 
 __ ___.version_info[0] __ 2:
     ____ i.. _______ izip_longest __ z__
-____:
+____
     ____ i.. _______ z__
 
 
 ___ encode(msg
     msg = _cleanse(msg)
-    square_size = i..(ceil(sqrt(l..(msg))))
+    square_size = i..(c.. sqrt(l..(msg))))
     square = _chunks_of(msg, square_size)
     r.. ' '.j..([''.j..(col)
                      ___ col __ z__(*square, fillvalue='')])

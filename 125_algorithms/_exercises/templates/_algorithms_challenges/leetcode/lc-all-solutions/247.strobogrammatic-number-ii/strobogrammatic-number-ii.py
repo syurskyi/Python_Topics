@@ -11,7 +11,7 @@ c_ Solution(o..
         pathStr = "".j..(p..)
         __ half * 2 __ n:
           res.a..(pathStr + "".j..([d[x] ___ x __ pathStr[::-1]]
-        ____:
+        ____
           ___ c __ "018":
             res.a..(pathStr + c + "".j..([d[x] ___ x __ pathStr[::-1]]
         r..
@@ -21,7 +21,7 @@ c_ Solution(o..
           _____
         p...a..(c)
         dfs(half, p.., res, n)
-        p...pop()
+        p...p.. )
 
     res    # list
     dfs(n / 2, [], res, n)

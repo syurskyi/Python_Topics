@@ -30,7 +30,7 @@ c_ Solution(o..
                     r.. F..
                 left += 1
                 right -= 1
-            ____:
+            ____
                 __ n.. s[left].i..
                     left += 1
                 __ n.. s[right].i..

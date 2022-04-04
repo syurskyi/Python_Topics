@@ -15,7 +15,7 @@ c_ Solution(o..
         ___ c __ s:
             __ res[1] + widths[o..(c)-o..('a')] <= 100:
                 res[1] += widths[o..(c)-o..('a')]
-            ____:
+            ____
                 res[0] += 1
                 res[1] = widths[o..(c)-o..('a')]
         r.. res

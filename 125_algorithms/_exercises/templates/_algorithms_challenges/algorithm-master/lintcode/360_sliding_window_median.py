@@ -65,13 +65,13 @@ c_ Solution:
             __ i >= k:
                 __ minheap a.. nums[i - k] >= minheap.top
                     minheap.remove(nums[i - k])
-                ____:
+                ____
                     maxheap.remove(-1 * nums[i - k])
 
             # add nums[i]
             __ minheap a.. nums[i] >= minheap.top
                 minheap.push(nums[i])
-            ____:
+            ____
                 maxheap.push(-1 * nums[i])
 
             # get median

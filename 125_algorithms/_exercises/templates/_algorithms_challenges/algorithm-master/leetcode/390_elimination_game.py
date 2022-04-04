@@ -15,7 +15,7 @@ c_ Solution:
 
             __ turn & 1:
                 ans += delta
-            ____:
+            ____
                 ans -= delta
 
         r.. ans

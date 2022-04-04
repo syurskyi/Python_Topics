@@ -14,6 +14,6 @@ c_ Solution(o..
                 result.a..('Buzz')
             ____ num % 3 __ 0:
                 result.a..('Fizz')
-            ____:
+            ____
                 result.a..(s..(num
         r.. result

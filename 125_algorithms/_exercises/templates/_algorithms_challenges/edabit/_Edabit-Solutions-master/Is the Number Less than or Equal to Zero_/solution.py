@@ -1,5 +1,5 @@
 ___ lessThanOrEqualToZero(num
     __ num <= 0:
         r.. T..
-    ____:
+    ____
         r.. F..

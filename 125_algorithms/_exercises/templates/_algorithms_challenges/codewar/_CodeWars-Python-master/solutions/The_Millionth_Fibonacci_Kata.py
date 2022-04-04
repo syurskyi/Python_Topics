@@ -20,5 +20,5 @@ ___ fibiter(a, b, p, q, count
         r.. b
     __ count % 2 __ 0:
         r.. fibiter(a, b, p * p + q * q, q * q + 2 * p * q, count / 2)
-    ____:
+    ____
         r.. fibiter(b * q + a * q + a * p, b * p + a * q, p, q, count - 1)

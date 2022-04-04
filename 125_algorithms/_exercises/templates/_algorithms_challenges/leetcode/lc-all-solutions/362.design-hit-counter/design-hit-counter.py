@@ -17,7 +17,7 @@ c_ HitCounter(o..
     time, hit = q[idx]
     __ time != timestamp:
       q[idx] = timestamp, 1
-    ____:
+    ____
       q[idx] = time, hit + 1
 
   ___ getHits  timestamp

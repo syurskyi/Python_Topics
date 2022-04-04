@@ -14,7 +14,7 @@ c_ Solution(o..
         ___ i, c __ e..(s
             __ c __ hashmap:
                 l = hashmap[c]
-            ____:
+            ____
                 l    # list
             l.a..(i)
             hashmap[c] = l
@@ -23,11 +23,11 @@ c_ Solution(o..
             ___ i __ r..(l..(l:
                 __ i __ 0:
                     left = l[i]
-                ____:
+                ____
                     left = l[i]-l[i-1]-1
                 __ i __ l..(l)-1:
                     right = l..(s)-l[i]-1
-                ____:
+                ____
                     right = l[i+1]-l[i]-1
                 sumVal = (sumVal+1+left+right+left*right)%(10**9+7)
         r.. sumVal

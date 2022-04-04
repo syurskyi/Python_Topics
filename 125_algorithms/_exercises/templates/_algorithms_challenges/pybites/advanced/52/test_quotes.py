@@ -17,9 +17,9 @@ ___ test_get_quotes
     quotes = data 'quotes'
     ... l..(quotes) __ 3
 
-    expected = {'id': 1, 'movie': 'The Godfather',
+    e.. = {'id': 1, 'movie': 'The Godfather',
                 'quote': "I'm gonna make him an offer he can't refuse."}
-    ... quotes[0] __ expected
+    ... quotes[0] __ e..
 
 
 ___ test_get_existing_quote
@@ -30,8 +30,8 @@ ___ test_get_existing_quote
     quotes = data 'quotes'
     ... l..(quotes) __ 1
 
-    expected = {'id': 2, 'movie': 'Predator', 'quote': "Get to the choppa!"}
-    ... quotes[0] __ expected
+    e.. = {'id': 2, 'movie': 'Predator', 'quote': "Get to the choppa!"}
+    ... quotes[0] __ e..
 
 
 ___ test_get_not_existing_quote

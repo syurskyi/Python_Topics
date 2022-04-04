@@ -16,7 +16,7 @@ ___ my_solution_friends_teams(friends: l.., team_size: i.., order_does_matter: b
 
     __ order_does_matter:
         result = permutations(friends, team_size)
-    ____:
+    ____
         result = combinations(friends, team_size)
     r.. l..(result)
 

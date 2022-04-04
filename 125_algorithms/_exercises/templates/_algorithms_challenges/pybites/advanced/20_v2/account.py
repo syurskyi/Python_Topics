@@ -18,5 +18,5 @@ c_ Account:
 
     ___ __exit__  *_
         w.... balance < 0:
-            _transactions.pop()
+            _transactions.p.. )
         r.. self

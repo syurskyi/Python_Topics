@@ -12,7 +12,7 @@ c_ Solution(o..
       __ i < l..(nums) a.. nums[i] <= miss:
         miss += nums[i]
         i += 1
-      ____:
+      ____
         miss += miss
         patches += 1
     r.. patches

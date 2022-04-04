@@ -27,7 +27,7 @@ w__ o.. commits) __ f:
             commit_list = commit.s..
             __ l..(commit_list) __ 7:
                 total_commit = i..(commit_list[3])+i..(commit_list[5])
-            ____:
+            ____
                 total_commit = i..(commit_list[3])
             #print(f'{year_month} {total_commit}')
             commit_log[year_month] += total_commit

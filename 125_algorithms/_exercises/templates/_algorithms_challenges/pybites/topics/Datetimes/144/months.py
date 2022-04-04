@@ -38,7 +38,7 @@ ___ calc_months_passed(year, month, day
         #print(difference_dt.years, difference_dt.months, difference_dt.days)
         __ difference_dt.days >= MIN_DAYS_TO_COUNT_AS_MONTH:
             months_passed = difference_dt.months + 1
-        ____:
+        ____
             months_passed = difference_dt.months
         __ difference_dt.years > 0:
             months_passed += difference_dt.years * MONTHS_PER_YEAR

@@ -27,15 +27,15 @@ ___ matching_result
         (date(2020, 4, 12), date(2020, 4, 14), 3),
     ],
 )
-___ test_get_all_days(start, end, expected
-    actual = get_all_days(start, end)
-    ... l..(actual) __ expected
+___ test_get_all_days(start, end, e..
+    a.. = get_all_days(start, end)
+    ... l..(a..) __ e..
 
-    ... isi..(actual[0], date)
-    ... isi..(actual[-1], date)
+    ... isi..(a..[0], date)
+    ... isi..(a..[-1], date)
 
-    ... actual[0] __ start
-    ... actual[-1] __ end
+    ... a..[0] __ start
+    ... a..[-1] __ end
 
 
 ?p__.m__.p.(
@@ -47,9 +47,9 @@ ___ test_get_all_days(start, end, expected
         (date(2020, 8, 15), date(2020, 8, 14,
     ],
 )
-___ test_match_daily_rates(date, expected, matching_result
-    actual = matching_result
-    ... actual[date] __ expected
+___ test_match_daily_rates(date, e.., matching_result
+    a.. = matching_result
+    ... a..[date] __ e..
 
 
 ?p__.m__.p.(
@@ -69,12 +69,12 @@ ___ test_match_daily_rates(date, expected, matching_result
         ),
     ],
 )
-___ test_exchange_rates_sample(testdate, expected, exchange_rates_result
-    actual = exchange_rates_result
+___ test_exchange_rates_sample(testdate, e.., exchange_rates_result
+    a.. = exchange_rates_result
 
-    ... actual[testdate]["Base Date"] __ expected["Base Date"]
-    ... actual[testdate]["GBP"] __ expected["GBP"]
-    ... actual[testdate]["USD"] __ expected["USD"]
+    ... a..[testdate]["Base Date"] __ e..["Base Date"]
+    ... a..[testdate]["GBP"] __ e..["GBP"]
+    ... a..[testdate]["USD"] __ e..["USD"]
 
 
 ___ test_exchange_rates_all_dates(exchange_rates_result
@@ -82,10 +82,10 @@ ___ test_exchange_rates_all_dates(exchange_rates_result
 
 
 ___ test_exchange_rates_order(exchange_rates_result
-    actual = l..(exchange_rates_result.keys
-    expected = s..(exchange_rates_result.keys
+    a.. = l..(exchange_rates_result.keys
+    e.. = s..(exchange_rates_result.keys
 
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_exchange_rates_validate_start

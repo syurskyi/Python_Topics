@@ -35,7 +35,7 @@ c_ Solution(o..
             __ a > 0 a.. f_le < f_ri o. a < 0 a.. f_le > f_ri:
                 ret.a..(f_le)
                 le -= 1
-            ____:
+            ____
                 ret.a..(f_ri)
                 ri += 1
 

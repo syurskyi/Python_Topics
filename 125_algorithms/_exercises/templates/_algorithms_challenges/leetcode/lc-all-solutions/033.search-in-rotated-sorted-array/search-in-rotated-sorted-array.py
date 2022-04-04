@@ -16,11 +16,11 @@ c_ Solution(o..
       __ nums[mid] >= nums[left]:
         __ nums[left] <= target <= nums[mid]:
           right = mid - 1
-        ____:
+        ____
           left = mid + 1
-      ____:
+      ____
         __ nums[mid] <= target <= nums[right]:
           left = mid + 1
-        ____:
+        ____
           right = mid - 1
     r.. -1

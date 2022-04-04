@@ -24,7 +24,7 @@ c_ Solution:
             sub = s[i:i+10]
             __ sub __ seen a.. sub n.. __ ret:
                 ret.add(sub)
-            ____:
+            ____
                 seen.add(sub)
 
         r.. l..(ret)

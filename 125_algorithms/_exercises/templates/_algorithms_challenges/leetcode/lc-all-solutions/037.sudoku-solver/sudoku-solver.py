@@ -29,7 +29,7 @@ c_ Solution(o..
               r.. T..
           board[i][j] = "."
           cacheRow[i][k - 1] = cacheCol[j][k - 1] = cacheBox[ib][k - 1] = 0
-      ____:
+      ____
         __ i __ j __ l..(board) - 1:
           r.. T..
         __ i + 1 < l..(board

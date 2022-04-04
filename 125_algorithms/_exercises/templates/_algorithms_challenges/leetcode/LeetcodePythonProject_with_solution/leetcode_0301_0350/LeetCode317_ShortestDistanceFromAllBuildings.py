@@ -26,7 +26,7 @@ c_ Solution(o..
                     w.... queue:
                         size = l..(queue)
                         ___ _ __ r..(size
-                            i0, j0 = queue.pop(0)
+                            i0, j0 = queue.p.. 0)
                             ___ x, y __ (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1
                                 __ 0 <= x < m a.. 0 <= y < n a..\
                                     n.. visited[x][y] a.. grid[x][y] __ 0:

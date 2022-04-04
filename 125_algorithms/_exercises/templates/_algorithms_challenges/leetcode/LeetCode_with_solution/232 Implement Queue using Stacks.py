@@ -35,7 +35,7 @@ c_ Queue:
             w.... in_stk:
                 out_stk.a..(in_stk.pop
 
-        out_stk.pop()
+        out_stk.p.. )
 
     ___ peek
         """

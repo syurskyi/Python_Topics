@@ -23,7 +23,7 @@ ___ _get_winner(computer_choice, player_choice
         r.. tie
     __ player_choice __ defeated_by[computer_choice]:
         r.. win.f..(player_choice, computer_choice)
-    ____:
+    ____
         r.. lose.f..(computer_choice,player_choice)
 
 

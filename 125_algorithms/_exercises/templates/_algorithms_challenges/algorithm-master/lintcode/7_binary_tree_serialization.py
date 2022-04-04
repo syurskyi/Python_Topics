@@ -32,7 +32,7 @@ c_ Solution:
             queue.a..(node.right)
 
         w.... vals[-1] __ EMPTY:
-            vals.pop()
+            vals.p.. )
 
         r.. TEMPLATE.f..(','.j..(vals
 

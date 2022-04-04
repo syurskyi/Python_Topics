@@ -50,12 +50,12 @@ c_ Solution:
             node = TreeNode(a)
             __ a < stk[-1].val:  # len(stk) always >= 1
                 stk[-1].left = node
-            ____:
+            ____
                 w.... l..(stk) >= 2 a.. stk[-2].val < a:
-                    stk.pop()
+                    stk.p.. )
 
                 stk[-1].right = node
-                stk.pop()
+                stk.p.. )
 
             stk.a..(node)
 
@@ -72,9 +72,9 @@ c_ Solution:
             node = TreeNode(a)
             __ a < stk[-1].val:
                 stk[-1].left = node
-            ____:
+            ____
                 w.... stk a.. stk[-1].val < a:
-                    pi = stk.pop()
+                    pi = stk.p.. )
                 pi.right = node
             stk.a..(node)
             

@@ -10,7 +10,7 @@ c_ Solution(o..
       key = pos + k * 10000;
       __ dp.has_key(key
         r.. dp[key]
-      ____:
+      ____
         ___ i __ r..(pos + 1, l..(stones:
           step = stones[i] - stones[pos]
           __ step < k - 1:

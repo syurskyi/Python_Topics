@@ -32,7 +32,7 @@ c_ Solution:
 
         stk = [root]
         w.... stk:
-            cur = stk.pop()
+            cur = stk.p.. )
             ret.a..(cur.val)
             ___ c __ r..(cur.children
                 stk.a..(c)

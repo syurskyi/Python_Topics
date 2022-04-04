@@ -17,7 +17,7 @@ ___ generate_table(*args
             y.. f"{row[0]}{SEPARATOR}{row[1]}"
         ____ num_args __ 3:
             y.. f"{row[0]}{SEPARATOR}{row[1]}{SEPARATOR}{row[2]}"
-        ____:
+        ____
             y.. f"{row[0]}{SEPARATOR}{row[1]}{SEPARATOR}{row[2]}{SEPARATOR}{row[3]}"
 
 

@@ -22,4 +22,4 @@ c_ Solution:
         ___ i __ r..(l..(nums:
             p...a..(nums[i])
             dfs(nums[:i] + nums[i + 1:], ans, p..)
-            p...pop()
+            p...p.. )

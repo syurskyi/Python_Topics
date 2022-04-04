@@ -58,5 +58,5 @@ ___ get_every_second_indexes(ser: pd.Series,
     """
     __ even_index __ F..:
         r.. ser.where(ser.index % 2 != 0).dropna()
-    ____:
+    ____
         r.. ser.where(ser.index % 2 __ 0).dropna()

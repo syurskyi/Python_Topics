@@ -59,13 +59,13 @@ c_ Solution:
         """
         Brute force sort and compare O(n lgn)
         """
-        expected = l..(s..(nums
+        e.. = l..(s..(nums
         i = 0
-        w.... i < l..(nums) a.. nums[i] __ expected[i]:
+        w.... i < l..(nums) a.. nums[i] __ e..[i]:
             i += 1
 
         j = l..(nums) - 1
-        w.... j >= i a.. nums[j] __ expected[j]:
+        w.... j >= i a.. nums[j] __ e..[j]:
             j -= 1
 
         r.. j - i + 1

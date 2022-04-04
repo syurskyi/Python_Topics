@@ -58,7 +58,7 @@ c_ Solution(o..
                     ret = lst[i]+rest
                     __ func(ret
                         y.. ret
-                    ____:
+                    ____
                         _____
 
     ___ hour  n

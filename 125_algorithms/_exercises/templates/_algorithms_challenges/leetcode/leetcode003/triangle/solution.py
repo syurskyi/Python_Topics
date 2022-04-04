@@ -27,7 +27,7 @@ c_ Solution:
             __ row __ n - 1:
                 ___ col __ r..(row + 1
                     t[row][col] = triangle[row][col]
-            ____:
+            ____
                 ___ col __ r..(row + 1
                     minsum = m..(t[row + 1][col], t[row + 1][col + 1])
                     t[row][col] = triangle[row][col] + minsum

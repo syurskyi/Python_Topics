@@ -56,5 +56,5 @@ c_ Solution:
                 m_inv[pattern[i]] = word[i]
             ____ word[i] n.. __ m o. m[word[i]] != pattern[i]:
                 r.. F..
-        ____:
+        ____
             r.. T..

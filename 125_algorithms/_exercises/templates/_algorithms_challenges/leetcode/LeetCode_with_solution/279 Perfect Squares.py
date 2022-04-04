@@ -55,7 +55,7 @@ c_ Solution(o..
                         q.a..(nxt)
                     ____ nxt __ n:
                         r.. level
-                    ____:
+                    ____
                         _____
             q = q[l:]
 

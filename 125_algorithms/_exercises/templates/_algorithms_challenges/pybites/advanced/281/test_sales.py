@@ -24,19 +24,19 @@ ___ test_data(df
         (5, "2016  733947.03  61162.252500  118447.83"),
     ],
 )
-___ test_summary_report(df, capfd, line, expected
+___ test_summary_report(df, capfd, line, e..
     summary_report(df)
     output = ?.r .. 0].s..("\n")
-    ... output[line].s.. __ expected
+    ... output[line].s.. __ e..
 
 
 ?p__.m__.p.(
     "lst, expected", [(["median"], "median"), (["min", "max"], "min        max"),]
 )
-___ test_summary_report_custom(df, capfd, lst, expected
+___ test_summary_report_custom(df, capfd, lst, e..
     summary_report(df, lst)
     output = ?.r .. 0].s..("\n")
-    ... output[0].s.. __ expected
+    ... output[0].s.. __ e..
 
 
 ?p__.m__.p.(
@@ -48,10 +48,10 @@ ___ test_summary_report_custom(df, capfd, lst, expected
         (2016, "6       52981.73"),
     ],
 )
-___ test_yearly_report(df, capfd, year, expected
+___ test_yearly_report(df, capfd, year, e..
     yearly_report(df, year)
     output = ?.r .. 0].s..("\n")
-    ... output[9] __ expected
+    ... output[9] __ e..
 
 
 ?p__.m__.p.("year", [1972, 2000, 2020])

@@ -15,7 +15,7 @@ c_ Solution(o..
             dp[i][j] = 1
           ____ j __ 0:
             dp[i][j] = 1
-          ____:
+          ____
             dp[i][j] = m..(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]) + 1
           ans = m..(ans, dp[i][j])
     r.. ans * ans

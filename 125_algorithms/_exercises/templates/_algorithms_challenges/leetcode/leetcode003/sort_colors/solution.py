@@ -18,5 +18,5 @@ c_ Solution:
                 # Do not increment i, since swapped item may be 0, 1, or 2
                 _____
             # A[i] == 1
-            ____:
+            ____
                 i += 1

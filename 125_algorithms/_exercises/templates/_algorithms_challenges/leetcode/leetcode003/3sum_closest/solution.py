@@ -30,6 +30,6 @@ c_ Solution(o..
                     r.. s
                 ____ s < target:
                     l += 1
-                ____:
+                ____
                     r -= 1
         r.. res

@@ -22,7 +22,7 @@ c_ Solution(o..
         __ la < lb:
             list_a += [0 ___ i __ r..(lb - la)]
             la = l..(list_a)
-        ____:
+        ____
             list_b += [0 ___ i __ r..(la - lb)]
             lb = l..(list_b)
         carry = 0

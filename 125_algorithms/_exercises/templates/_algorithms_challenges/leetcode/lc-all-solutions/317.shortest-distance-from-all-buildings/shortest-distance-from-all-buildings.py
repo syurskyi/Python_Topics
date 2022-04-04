@@ -25,7 +25,7 @@ c_ Solution(o..
               hit[newi][newj] += 1
               visited |= {(newi, newj)}
               queue.a..((newi, newj, dist + 1
-            ____:
+            ____
               count += 1
             visited |= {(newi, newj)}
 

@@ -15,7 +15,7 @@ c_ Solution(o..
             ___ j __ r..(i+2
                 __ j __ 0 o. j __ i+1:
                     newRes.a..(1)
-                ____:
+                ____
                     newRes.a..(res[j-1]+res[j])
             res = newRes
         r.. res

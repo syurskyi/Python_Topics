@@ -14,7 +14,7 @@ c_ Solution(o..
     __ a __ 0:
       __ b >= 0:
         r.. [f(x) ___ x __ nums]
-      ____:
+      ____
         r.. [f(x) ___ x __ r..(nums)]
 
     mid = (-1.0) * b / (2.0 * a)
@@ -24,14 +24,14 @@ c_ Solution(o..
       ___ num __ nums:
         __ num >= mid:
           up.a..(f(num
-        ____:
+        ____
           down.a..(f(num
       down.r..
-    ____:
+    ____
       ___ num __ nums:
         __ num >= mid:
           down.a..(f(num
-        ____:
+        ____
           up.a..(f(num
       down.r..
 
@@ -45,7 +45,7 @@ c_ Solution(o..
       __ upTop < downTop:
         res.a..(upTop)
         upIdx += 1
-      ____:
+      ____
         res.a..(downTop)
         downIdx += 1
     __ upIdx < l..(up

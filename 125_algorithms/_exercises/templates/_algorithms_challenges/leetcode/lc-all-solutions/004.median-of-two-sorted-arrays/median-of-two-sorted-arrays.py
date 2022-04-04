@@ -8,7 +8,7 @@ c_ Solution(o..
       i = (lo + hi) / 2
       __ after - i - 1 < 0 o. a[i] >= b[after - i - 1]:
         hi = i
-      ____:
+      ____
         lo = i + 1
     i = lo
     nextfew = s..(a[i:i + 2] + b[after - i:after - i + 2])

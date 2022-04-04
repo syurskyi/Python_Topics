@@ -11,6 +11,6 @@ c_ Solution(o..
             mid = (start+end)/2
             __ mid*(mid+1)/2 > n:
                 end = mid-1
-            ____:
+            ____
                 start = mid+1
         r.. start-1

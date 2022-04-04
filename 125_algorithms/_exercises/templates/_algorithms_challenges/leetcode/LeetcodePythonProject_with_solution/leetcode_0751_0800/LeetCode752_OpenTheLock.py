@@ -19,7 +19,7 @@ c_ Solution(o..
         w.... queue:
             n = l..(queue)
             ___ _ __ r..(n
-                s = queue.pop(0)
+                s = queue.p.. 0)
                 __ s __ target:
                     r.. level
                 ___ i __ r..(4

@@ -28,13 +28,13 @@ c_ Solution(o..
             r.. T..
         ____ t[i] __ n.. N..
             r.. t[i]
-        ____:
+        ____
             ___ j __ r..(i
                 __ (word_break_aux(s, wordDict, j, t) __ T..
                         a.. s[j + 1:i + 1] __ wordDict
                     t[i] = T..
                     r.. T..
-            ____:
+            ____
                 t[i] = F..
                 r.. F..
 

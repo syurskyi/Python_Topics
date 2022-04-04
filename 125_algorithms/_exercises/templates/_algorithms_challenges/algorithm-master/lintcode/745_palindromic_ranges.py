@@ -16,7 +16,7 @@ c_ Solution:
         ___ num __ r..(left, right + 1
             __ is_palindrome(num
                 dp[num - left + 1] = dp[num - left] + 1
-            ____:
+            ____
                 dp[num - left + 1] = dp[num - left]
 
         ans = 0

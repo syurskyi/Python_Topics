@@ -29,7 +29,7 @@ c_ Memcache:
     ___ s..  curtTime, key, value, ttl
         __ ttl > 0:
             storage[key] = _new_item(key, value, curtTime + ttl)
-        ____:
+        ____
             storage[key] = _new_item(key, value, PERMANENT_TTL)
 
     """

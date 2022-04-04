@@ -35,5 +35,5 @@ ___ get_workout_motd(day
         r.. TRAIN
     __ x __ ("Saturday", "Sunday"
         r.. CHILL_OUT, REST
-    ____:
+    ____
         r.. INVALID_DAY

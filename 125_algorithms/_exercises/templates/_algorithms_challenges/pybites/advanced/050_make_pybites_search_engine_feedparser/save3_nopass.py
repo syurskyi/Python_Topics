@@ -57,7 +57,7 @@ ___ _convert_struct_time_to_dt(stime
         f.. = '%a, %d %b %Y %H:%M:%S %z'
         dt_object = d__.s..(stime, f..)
         r.. dt_object.date()
-    ____:
+    ____
         r.. d__.fromtimestamp(mktime(stime.date()
 
 
@@ -67,7 +67,7 @@ ___ get_feed_entries(feed=FEED
     """
     __ t..(feed) __ AttrDict:
         file = feed
-    ____:
+    ____
         file = p..(feed)
     output    # list
     ___ entry __ file.entries:

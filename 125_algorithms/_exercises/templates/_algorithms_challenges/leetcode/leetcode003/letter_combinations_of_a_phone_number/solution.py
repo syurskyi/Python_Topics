@@ -16,7 +16,7 @@ c_ Solution:
     ___ combinations  d.., i, d
         __ i __ l..(d..
             r.. ['']
-        ____:
+        ____
             res    # list
             rest_combs = combinations(d.., i + 1, d)
             ___ comb __ rest_combs:

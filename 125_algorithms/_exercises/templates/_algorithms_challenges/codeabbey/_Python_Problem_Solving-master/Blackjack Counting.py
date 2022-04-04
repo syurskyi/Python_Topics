@@ -16,23 +16,23 @@ ___ i __ r..(i..(input())):
             #check if it is other than 'A' then add 10 to total TKJQ
             __ j != 'A':
                 tot += 10
-            ____:
+            ____
                 #if A then check whether adding A = 11 it goes above 21
                 __ tot + 11 > 21:
                     #check if it goes above 21 after adding A = 1
                     __ tot + 1 > 21:
                         #if yes then add 1
                         tot += 1
-                    ____:
+                    ____
                         #else add 1
                         tot += 1   
-                ____:
+                ____
                     #else add 11
                     tot += 11
     #check the tot
     __ tot <= 21:
         print(i..(tot),end= ' ')
-    ____:
+    ____
         print("Bust",end = ' ')
 
             

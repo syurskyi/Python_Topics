@@ -11,7 +11,7 @@ c_ Solution:
     ___ sortedArrayToBST  num
         __ n.. num:
             r.. N..
-        ____:
+        ____
             mid = l..(num) / 2
             left_array = num[:mid]
             right_array = num[mid + 1:]

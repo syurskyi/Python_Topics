@@ -20,7 +20,7 @@ c_ Solution:
 
         __ node.val < root.val:
             root.left = insertNode(root.left, node)
-        ____:
+        ____
             root.right = insertNode(root.right, node)
 
         r.. root
@@ -43,7 +43,7 @@ c_ Solution:
                 __ curr.left __ N..
                     curr.left = node
                 curr = curr.left
-            ____:
+            ____
                 __ curr.right __ N..
                     curr.right = node
                 curr = curr.right

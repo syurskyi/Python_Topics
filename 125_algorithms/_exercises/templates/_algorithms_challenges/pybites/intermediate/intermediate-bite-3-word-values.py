@@ -38,7 +38,7 @@ ___ load_words_v1
     l    # list
     w__ o.. DICTIONARY) __ file:
         ___ line __ file:
-            l.a..(line.strip
+            l.a..(line.s..
     r.. l
 
 ___ load_words_v2
@@ -67,7 +67,7 @@ ___ max_word_value(words
         value = calc_word_value(word)
         __ m.. __
             m.. = (word, value)
-        ____:
+        ____
             __ value > m..[1]:
                 m.. = (word, value)
     r.. m..[0]

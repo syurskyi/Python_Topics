@@ -21,7 +21,7 @@ c_ Solution(o..
         right = pruneTree(root.right)
         __ left __ N.. a.. right __ N.. a.. root.val __ 0:
             r.. N..
-        ____:
+        ____
             root.left = left
             root.right = right
             r.. root

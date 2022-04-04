@@ -57,7 +57,7 @@ c_ SegmentTree(o..
             r.. root.lo
         ____ root.left.cnt >= sz:
             r.. find_delete(root.left, sz)
-        ____:
+        ____
             r.. find_delete(root.right,
                                     sz-root.left.cnt)
 
@@ -72,7 +72,7 @@ c_ Solution(o..
         ___ cmp(a, b
             __ a[0] != b[0]:
                 r.. a[0]-b[0]
-            ____:
+            ____
                 r.. a[1]-b[1]
 
         st = SegmentTree()

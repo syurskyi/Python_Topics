@@ -69,7 +69,7 @@ c_ Solution:
         dfs(node.left)
         __ n.. prev:
             root = node
-        ____:
+        ____
             prev.right = node
             node.left = N..  # need test case to test it
 

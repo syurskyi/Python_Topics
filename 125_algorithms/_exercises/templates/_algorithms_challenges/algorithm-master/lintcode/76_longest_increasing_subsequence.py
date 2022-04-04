@@ -43,7 +43,7 @@ c_ Solution:
             mid = (left + right) // 2
             __ P[mid] < a:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         r.. right

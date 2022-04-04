@@ -35,7 +35,7 @@ ___ get_movies_by_director
             movie = Movie(r 'title' , yr, score)
             __ r 'director'  __ result:
                 result[r 'director']].a..(movie)
-            ____:
+            ____
                 result[r 'director']] = [movie]
     r.. result
 

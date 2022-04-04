@@ -14,15 +14,15 @@ c_ DNATest(unittest.TestCase
         assertEqual(c.. '', 'A'), 0)
 
     ___ test_empty_dna_string_has_no_nucleotides
-        expected = {'A': 0, 'T': 0, 'C': 0, 'G': 0}
-        assertEqual(nucleotide_counts(""), expected)
+        e.. = {'A': 0, 'T': 0, 'C': 0, 'G': 0}
+        assertEqual(nucleotide_counts(""), e..)
 
     ___ test_repetitive_cytidine_gets_counted
         assertEqual(c.. 'CCCCC', 'C'), 5)
 
     ___ test_repetitive_sequence_has_only_guanosine
-        expected = {'A': 0, 'T': 0, 'C': 0, 'G': 8}
-        assertEqual(nucleotide_counts('GGGGGGGG'), expected)
+        e.. = {'A': 0, 'T': 0, 'C': 0, 'G': 8}
+        assertEqual(nucleotide_counts('GGGGGGGG'), e..)
 
     ___ test_counts_only_thymidine
         assertEqual(c.. 'GGGGGTAACCCGG', 'T'), 1)
@@ -34,8 +34,8 @@ c_ DNATest(unittest.TestCase
     ___ test_counts_all_nucleotides
         dna = ('AGCTTTTCATTCTGACTGCAACGGGCAATATGTCT'
                'CTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC')
-        expected = {'A': 20, 'T': 21, 'G': 17, 'C': 12}
-        assertEqual(nucleotide_counts(dna), expected)
+        e.. = {'A': 20, 'T': 21, 'G': 17, 'C': 12}
+        assertEqual(nucleotide_counts(dna), e..)
 
 
 __ _____ __ _____

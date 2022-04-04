@@ -25,7 +25,7 @@ c_ Solution(o..
             __ head.val < x:
                 aTail.next = head
                 aTail = aTail.next
-            ____:
+            ____
                 bTail.next = head
                 bTail = bTail.next
             head = head.next

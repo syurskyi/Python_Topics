@@ -5,7 +5,7 @@ ____ time _______ sleep
 _______ ___
 __ ___.version[0] __ '2':
     ____ Queue _______ Queue
-____:
+____
     ____ queue _______ Queue
 
 total_workers = 3  # Maximum number of threads chosen arbitrarily

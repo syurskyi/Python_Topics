@@ -31,13 +31,13 @@ c_ Solution:
             __ l1.val < l2.val:
                 cur = l1
                 l1 = l1.next
-            ____:
+            ____
                 cur = l2
                 l2 = l2.next
             __ res __ N..
                 res = cur
                 end = cur
-            ____:
+            ____
                 end.next = cur
                 end = end.next
         __ l1 __ n.. N..
@@ -59,7 +59,7 @@ c_ Solution:
             __ res __ N..
                 res = l
                 end = l
-            ____:
+            ____
                 end.next = l
                 end = end.next
             __ l.next __ n.. N..

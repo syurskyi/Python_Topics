@@ -17,6 +17,6 @@ c_ Solution(o..
     w.... p a.. p.next:
       __ p.val __ p.next.val:
         p.next = p.next.next
-      ____:
+      ____
         p = p.next
     r.. dummy.next

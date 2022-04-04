@@ -60,11 +60,11 @@ ___ mix(s1,s2
                     ___ j __ r..(s1_dic[i]
                         sub_str += i
                     res_string.a..('1:' + sub_str)
-                ____:
+                ____
                     ___ j __ r..(s2_dic[i]
                         sub_str += i
                     res_string.a..('2:' + sub_str)
-        ____:
+        ____
             __ s1_dic[i] > 1:
                 ___ j __ r..(s1_dic[i]
                     sub_str += i
@@ -127,9 +127,9 @@ ___ mix(s1,s2
                     ____ res_string[j][0] __ '=':
                         res_string[j],res_string[j+1] = res_string[j+1],res_string[j]
                     
-                    ____:
+                    ____
                         p..
-            ____:
+            ____
                 p..
     
     

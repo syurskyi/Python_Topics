@@ -24,7 +24,7 @@ c_ Solution(o..
         n = l..(nums)
         __ n.. nums:
             r.. 0
-        ____:
+        ____
             left = 0
             right = n - 1
             w.... left <= right:
@@ -36,7 +36,7 @@ c_ Solution(o..
                     r.. mid + 1
                 ____ target < nums[mid]:
                     right = mid - 1
-                ____:
+                ____
                     left = mid + 1
             __ left > n - 1:
                 r.. n

@@ -31,7 +31,7 @@ ___ get_ordinal_suffix(number
       r.. f"{number}nd"
     ____ last_char __ ordinal_suffix["rd"]:
       r.. f"{number}rd"
-    ____:
+    ____
       r.. f"{number}th"
 
 

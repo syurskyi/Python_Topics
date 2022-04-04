@@ -8,12 +8,12 @@ c_ Solution:
     ___ _subsets  S, k
         __ k __ 0:
             r.. [[]]
-        ____:
+        ____
             res = [[]]
             ___ i __ r..(l..(S:
                 __ i > 0 a.. S[i] __ S[i - 1]:
                     p..
-                ____:
+                ____
                     rest_subsets = _subsets(S[i + 1:], k - 1)
                     ___ subset __ rest_subsets:
                         subset.insert(0, S[i])

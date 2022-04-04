@@ -38,7 +38,7 @@ c_ Solution:
             ___ j __ x..(n
                 __ matrix[i][j] __ "1":
                     dp_height[i][j] = 1+dp_height[i-1][j]
-                ____:
+                ____
                     dp_height[i][j] = 0
 
         # end of dp
@@ -53,13 +53,13 @@ c_ Solution:
                 __ n.. inc_stack o. j<n a.. dp_height[i][j]>=dp_height[i][inc_stack[-1]]:
                     inc_stack.a..(j)
                     j += 1
-                ____:
-                    last = inc_stack.pop()
+                ____
+                    last = inc_stack.p.. )
                     # height = self.get_height(matrix, i, last)
                     height = dp_height[i][last]
                     __ inc_stack:
                         global_max = m..(global_max, height*(j-(inc_stack[-1]+1)))
-                    ____:
+                    ____
                         global_max = m..(global_max, height*j)
 
         r.. global_max

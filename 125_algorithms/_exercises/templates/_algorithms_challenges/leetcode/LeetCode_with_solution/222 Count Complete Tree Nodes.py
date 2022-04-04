@@ -28,7 +28,7 @@ c_ Solution:
         h_r = get_height(root.right)
         __ h __ h_r+1:
             r.. 2**(h-1)-1+1+countNodes(root.right)  # left_tree nodes + root + right_tree nodes
-        ____:
+        ____
             r.. 2**(h-2)-1+1+countNodes(root.left)  # right_tree nodes + root + left_tree nodes
 
     ___ get_height  cur
@@ -70,7 +70,7 @@ c_ Solution_TLE:
         __ n.. root.left a.. n.. root.left:
             __ depth __ depth:
                 cnt += 1
-            ____:
+            ____
                 stopped = T..
             r..
 

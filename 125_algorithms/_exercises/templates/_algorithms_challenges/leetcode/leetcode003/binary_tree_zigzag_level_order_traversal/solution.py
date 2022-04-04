@@ -37,17 +37,17 @@ c_ Solution:
         queue.a..(root)
         queue.a..(N..)
         w.... queue:
-            root = queue.pop(0)
+            root = queue.p.. 0)
             __ root __ N..
                 __ queue:
                     queue.a..(N..)
                 res.a..(level)
                 level    # list
                 rev = n.. rev  # Toggle direction
-            ____:
+            ____
                 __ rev:
                     level.insert(0, root.val)
-                ____:
+                ____
                     level.a..(root.val)
                 __ root.left __ n.. N..
                     queue.a..(root.left)

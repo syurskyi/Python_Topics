@@ -26,7 +26,7 @@ c_ Solution(o..
             r.. 1
         ____ t[n] != -1:
             r.. t[n]
-        ____:
+        ____
             res = 0
             ___ i __ r..(n
                 res += num_trees_aux(i, t) * \

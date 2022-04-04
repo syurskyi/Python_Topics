@@ -31,7 +31,7 @@ c_ Solution:
         ... l..(h) <= 3
         __ l..(h) __ 3:
             ret = m..(h)
-        ____:
+        ____
             ret = m..(h)
         r.. ret
 

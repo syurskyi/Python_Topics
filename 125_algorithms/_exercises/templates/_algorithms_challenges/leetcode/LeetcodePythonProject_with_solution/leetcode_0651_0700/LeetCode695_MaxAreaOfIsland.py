@@ -25,7 +25,7 @@ c_ Solution(o..
         grid[i][j] = -1
         queue = [(i, j)]
         w.... queue:
-            i, j = queue.pop(0)
+            i, j = queue.p.. 0)
             area += 1
             ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1
                 __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y] __ 1:

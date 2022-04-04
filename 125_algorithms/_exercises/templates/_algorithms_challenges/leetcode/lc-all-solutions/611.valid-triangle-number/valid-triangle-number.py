@@ -9,6 +9,6 @@ c_ Solution(o..
         __ nums[start] + nums[end] > nums[i]:
           ans += end - start
           end -= 1
-        ____:
+        ____
           start += 1
     r.. ans

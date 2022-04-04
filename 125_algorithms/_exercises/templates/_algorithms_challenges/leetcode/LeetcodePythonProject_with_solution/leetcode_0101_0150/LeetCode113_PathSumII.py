@@ -34,11 +34,11 @@ c_ Solution(o..
         __ root.left:
             elem.a..(root.left.val)
             dfs(result, elem, root.left, sumVal-root.left.val)
-            elem.pop()
+            elem.p.. )
         __ root.right:
             elem.a..(root.right.val)
             dfs(result, elem, root.right, sumVal-root.right.val)
-            elem.pop()
+            elem.p.. )
     
     ___ test
         root = TreeNode(5, TreeNode(4, TreeNode(11, TreeNode(7), TreeNode(2))), TreeNode(8, TreeNode(13), TreeNode(4, TreeNode(5), TreeNode(1))))

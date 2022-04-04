@@ -112,7 +112,7 @@ c_ Solution(o..
         w.... i < down:
             __ ptr >= l..(words[i]
                 i += 1
-            ____:
+            ____
                 __ words[i][ptr] n.. __ V:
                     V[words[i][ptr]]    # list
 

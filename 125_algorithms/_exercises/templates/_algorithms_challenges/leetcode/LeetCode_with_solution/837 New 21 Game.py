@@ -58,7 +58,7 @@ c_ Solution:
             __ i >= K:
                 ret += F[i]
                 # stop
-            ____:
+            ____
                 cur_sum += F[i]
                 
             __ i - W >= 0:

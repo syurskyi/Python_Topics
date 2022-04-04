@@ -15,7 +15,7 @@ c_ Solution(o..
           __ partSum >= maxSum - partSum:
             r.. F..
           r.. T..
-        ____:
+        ____
           __ partSum >= maxSum - partSum:
             r.. T..
           r.. F..

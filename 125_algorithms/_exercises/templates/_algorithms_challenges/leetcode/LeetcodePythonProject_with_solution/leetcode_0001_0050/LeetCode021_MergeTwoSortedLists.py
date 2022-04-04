@@ -17,7 +17,7 @@ c_ Solution(o..
             __ l1.val < l2.val:
                 prev.next  l1
                 l1  l1.next
-            ____:
+            ____
                 prev.next  l2
                 l2  l2.next
             prev  prev.next

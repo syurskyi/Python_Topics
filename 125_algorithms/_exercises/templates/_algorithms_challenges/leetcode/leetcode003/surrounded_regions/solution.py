@@ -30,7 +30,7 @@ c_ Solution:
         board[y][x] = 'Y'
         queue.a..((x, y
         w.... queue:
-            root_x, root_y = queue.pop(0)
+            root_x, root_y = queue.p.. 0)
             ___ node __ adjacent(board, root_x, root_y
                 x, y = node
                 __ board[y][x] != 'Y':

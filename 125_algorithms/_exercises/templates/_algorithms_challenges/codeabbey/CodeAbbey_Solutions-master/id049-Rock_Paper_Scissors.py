@@ -8,11 +8,11 @@ ___ playRPS(games
                 0
             ____ any(m.. __ x ___ x __  'RS','PR','SP'
                 player1 += 1
-            ____:
+            ____
                 player2 += 1
         __ player1 > player2:
             answer.a..("1")
-        ____:
+        ____
             answer.a..("2")
     print(' '.j..(answer
 playRPS(input

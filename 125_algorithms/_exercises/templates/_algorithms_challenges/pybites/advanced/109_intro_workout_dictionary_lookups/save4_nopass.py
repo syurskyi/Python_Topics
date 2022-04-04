@@ -33,7 +33,7 @@ ___ get_workout_motd(day
     __ day __ WORKOUT_SCHEDULE:
         __ day __ ("Saturday", "Sunday"
             r.. CHILL_OUT, REST
-        ____:
+        ____
             r.. TRAIN.f..(WORKOUT_SCHEDULE[day])
-    ____:
+    ____
         r.. INVALID_DAY

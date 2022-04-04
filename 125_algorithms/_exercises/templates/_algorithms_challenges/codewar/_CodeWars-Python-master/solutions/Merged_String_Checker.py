@@ -25,7 +25,7 @@ ___ is_merge(s, part1, part2
         ___ c __ part:
             __ c __ result:
                 result.remove(c)
-            ____:
+            ____
                 r.. F..
         r.. T..
 

@@ -5,7 +5,7 @@ ___ get_sqrt(num, r, step
     d = num/r
     __(step __ 0
         r.. r..(r,7)
-    ____:
+    ____
         r = (r+d)/2
         r.. get_sqrt(num,r,step-1)
         

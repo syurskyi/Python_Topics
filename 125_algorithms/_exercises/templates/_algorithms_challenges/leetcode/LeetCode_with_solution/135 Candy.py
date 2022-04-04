@@ -32,7 +32,7 @@ c_ Solution:
                 dp[ind] = dp[ind-1]+1
             ____ ratings[ind-1]>val:
                 dp[ind] = dp[ind-1]-1
-            ____:
+            ____
                 dp[ind] = 1
 
             # trough in the middle

@@ -12,6 +12,6 @@ c_ Solution(o..
         _____
       __ idx __ l..(tails
         tails.a..(envelopes[i][1])
-      ____:
+      ____
         tails[idx] = envelopes[i][1]
     r.. l..(tails)

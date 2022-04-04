@@ -12,7 +12,7 @@ ___ get_round_winner(player1, player2
         __(player1_move - player2_move > 2
             r.. 1
         r.. 2
-    ____:
+    ____
         r.. 0
 
 
@@ -30,7 +30,7 @@ ___ get_match_winner(moves
         r.. 1
     ____(player_2_result > player_1_result
         r.. 2
-    ____:
+    ____
         r.. 0
     
 ___ i __ r..(amount_values

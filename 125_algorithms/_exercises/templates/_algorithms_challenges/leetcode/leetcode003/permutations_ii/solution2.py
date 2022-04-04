@@ -18,7 +18,7 @@ c_ Solution(o..
     ___ permute  nums
         __ n.. nums:
             r.. [[]]
-        ____:
+        ____
             res    # list
             prev = N..
             ___ i, e __ e..(nums

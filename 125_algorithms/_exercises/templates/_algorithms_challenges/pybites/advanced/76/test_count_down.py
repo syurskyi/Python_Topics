@@ -43,8 +43,8 @@ ___ test_count_down_bad_inputs(input_argument, capfd
 
 
 ___ test_count_down_float(capfd
-    expected = '12.34\n12.3\n12.\n12\n1\n'
+    e.. = '12.34\n12.3\n12.\n12\n1\n'
     number = 12.34
     count_down(number)
     output = ?.r .. 0]
-    ... output __ expected
+    ... output __ e..

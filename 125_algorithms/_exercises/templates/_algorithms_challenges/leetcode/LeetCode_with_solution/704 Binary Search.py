@@ -37,7 +37,7 @@ c_ Solution:
                 r.. mid
             ____ nums[mid] < target:
                 lo = mid + 1
-            ____:
+            ____
                 hi = mid
 
         r.. -1

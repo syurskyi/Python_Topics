@@ -14,5 +14,5 @@ ____ non_ascii _______ extract_non_ascii_words
     ('Sí ... habrá que saber algo de Unicode, ¿no?',  'Sí', 'habrá', '¿no?' ),
     ('This string only contains ascii words', []),
 ])
-___ test_extract_non_ascii_words(phrase, expected
-    ... extract_non_ascii_words(phrase) __ expected
+___ test_extract_non_ascii_words(phrase, e..
+    ... extract_non_ascii_words(phrase) __ e..

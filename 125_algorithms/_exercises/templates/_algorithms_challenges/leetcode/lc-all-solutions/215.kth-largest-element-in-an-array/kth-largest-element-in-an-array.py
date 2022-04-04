@@ -19,7 +19,7 @@ c_ Solution(o..
         r.. nums[mid]
       ____ k > mid:
         r.. quickselect(mid + 1, end, nums, k)
-      ____:
+      ____
         r.. quickselect(start, mid - 1, nums, k)
 
     ___ partition(start, end, nums

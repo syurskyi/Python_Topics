@@ -9,7 +9,7 @@ ___ josephus_survivor(n,k
                 steps -= 1
             ____ circle[index+1] __ 0:
                 index += 1
-            ____:
+            ____
                 index += 1
                 steps -= 1
         circle[index] = 0

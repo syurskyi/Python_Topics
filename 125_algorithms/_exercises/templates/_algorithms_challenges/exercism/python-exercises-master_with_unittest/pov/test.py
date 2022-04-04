@@ -16,12 +16,12 @@ c_ PovTest(unittest.TestCase
             Tree('x'),
             Tree('sibling')
         ])
-        expected = Tree('x', [
+        e.. = Tree('x', [
             Tree('parent', [
                 Tree('sibling')
             ])
         ])
-        assertTreeEquals(tree.from_pov('x'), expected)
+        assertTreeEquals(tree.from_pov('x'), e..)
 
     ___ test_can_reroot_tree_with_parent_and_many_siblings
         tree = Tree('parent', [
@@ -30,14 +30,14 @@ c_ PovTest(unittest.TestCase
             Tree('b'),
             Tree('c')
         ])
-        expected = Tree('x', [
+        e.. = Tree('x', [
             Tree('parent', [
                 Tree('a'),
                 Tree('b'),
                 Tree('c')
             ])
         ])
-        assertTreeEquals(tree.from_pov('x'), expected)
+        assertTreeEquals(tree.from_pov('x'), e..)
 
     ___ test_can_reroot_a_tree_with_new_root_deeply_nested
         tree = Tree('level-0', [
@@ -49,7 +49,7 @@ c_ PovTest(unittest.TestCase
                 ])
             ])
         ])
-        expected = Tree('x', [
+        e.. = Tree('x', [
             Tree('level-3', [
                 Tree('level-2', [
                     Tree('level-1', [
@@ -58,7 +58,7 @@ c_ PovTest(unittest.TestCase
                 ])
             ])
         ])
-        assertTreeEquals(tree.from_pov('x'), expected)
+        assertTreeEquals(tree.from_pov('x'), e..)
 
     ___ test_moves_children_of_new_root_to_same_level_as_former_parent
         tree = Tree('parent', [
@@ -67,12 +67,12 @@ c_ PovTest(unittest.TestCase
                 Tree('kid-1')
             ])
         ])
-        expected = Tree('x', [
+        e.. = Tree('x', [
             Tree('parent'),
             Tree('kid-0'),
             Tree('kid-1')
         ])
-        assertTreeEquals(tree.from_pov('x'), expected)
+        assertTreeEquals(tree.from_pov('x'), e..)
 
     ___ test_can_reroot_complex_tree_with_cousins
         tree = Tree('grandparent', [
@@ -89,7 +89,7 @@ c_ PovTest(unittest.TestCase
                 Tree('cousin-1')
             ])
         ])
-        expected = Tree('x', [
+        e.. = Tree('x', [
             Tree('kid-0'),
             Tree('kid-1'),
             Tree('parent', [
@@ -103,7 +103,7 @@ c_ PovTest(unittest.TestCase
                 ])
             ])
         ])
-        assertTreeEquals(tree.from_pov('x'), expected)
+        assertTreeEquals(tree.from_pov('x'), e..)
 
     ___ test_errors_if_target_does_not_exist_in_singleton_tree
         tree = Tree('x')
@@ -127,8 +127,8 @@ c_ PovTest(unittest.TestCase
             Tree('x'),
             Tree('sibling')
         ])
-        expected =  'x', 'parent'
-        assertEqual(tree.path_to('x', 'parent'), expected)
+        e.. =  'x', 'parent'
+        assertEqual(tree.path_to('x', 'parent'), e..)
 
     ___ test_can_find_path_to_sibling
         tree = Tree('parent', [
@@ -137,8 +137,8 @@ c_ PovTest(unittest.TestCase
             Tree('b'),
             Tree('c')
         ])
-        expected =  'x', 'parent', 'b'
-        assertEqual(tree.path_to('x', 'b'), expected)
+        e.. =  'x', 'parent', 'b'
+        assertEqual(tree.path_to('x', 'b'), e..)
 
     ___ test_can_find_path_to_cousin
         tree = Tree('grandparent', [
@@ -155,8 +155,8 @@ c_ PovTest(unittest.TestCase
                 Tree('cousin-1')
             ])
         ])
-        expected =  'x', 'parent', 'grandparent', 'uncle', 'cousin-1'
-        assertEqual(tree.path_to('x', 'cousin-1'), expected)
+        e.. =  'x', 'parent', 'grandparent', 'uncle', 'cousin-1'
+        assertEqual(tree.path_to('x', 'cousin-1'), e..)
 
     ___ test_can_find_path_not_involving_root
         tree = Tree('grandparent', [
@@ -166,8 +166,8 @@ c_ PovTest(unittest.TestCase
                 Tree('sibling-1')
             ])
         ])
-        expected =  'x', 'parent', 'sibling-1'
-        assertEqual(tree.path_to('x', 'sibling-1'), expected)
+        e.. =  'x', 'parent', 'sibling-1'
+        assertEqual(tree.path_to('x', 'sibling-1'), e..)
 
     ___ test_can_find_path_from_nodes_other_than_x
         tree = Tree('parent', [
@@ -176,8 +176,8 @@ c_ PovTest(unittest.TestCase
             Tree('b'),
             Tree('c')
         ])
-        expected =  'a', 'parent', 'c'
-        assertEqual(tree.path_to('a', 'c'), expected)
+        e.. =  'a', 'parent', 'c'
+        assertEqual(tree.path_to('a', 'c'), e..)
 
     ___ test_errors_if_destination_does_not_exist
         tree = Tree('parent', [
@@ -213,9 +213,9 @@ c_ PovTest(unittest.TestCase
     ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
-    ___ assertTreeEquals  result, expected
-        assertEqual(result, expected,
-                         '{} != {}'.f..(result, expected
+    ___ assertTreeEquals  result, e..
+        assertEqual(result, e..,
+                         '{} != {}'.f..(result, e..
 
 
 __ _____ __ _____

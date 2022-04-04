@@ -15,6 +15,6 @@ c_ Solution(o..
       mid = lo + (hi - lo) / 2
       __ isBadVersion(mid
         hi = mid
-      ____:
+      ____
         lo = mid + 1
     r.. lo

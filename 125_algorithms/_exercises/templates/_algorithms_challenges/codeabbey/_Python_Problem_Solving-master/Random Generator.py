@@ -22,7 +22,7 @@ ___ i __ a:
         __ l..(temp_str) __ 8:
             #if yes then take the middle 4 digits
             i = temp_str[2:-2]
-        ____:
+        ____
             #else take the missing count to complete 8 digit number and add zero in fornt of the number.
             miss_count = 8 - l..(temp_str)
             ___ k __ r..(miss_count

@@ -22,7 +22,7 @@ c_ Solution:
             mid = (left + right) // 2
             __ after_dup(A, mid
                 right = mid
-            ____:
+            ____
                 left = mid
 
         __ after_dup(A, left

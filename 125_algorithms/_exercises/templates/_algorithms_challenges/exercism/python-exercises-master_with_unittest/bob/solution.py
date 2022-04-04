@@ -7,7 +7,7 @@ ___ hey(stimulus
         r.. 'Whoa, chill out!'
     ____ _is_question(stimulus
         r.. 'Sure.'
-    ____:
+    ____
         r.. 'Whatever.'
 
 

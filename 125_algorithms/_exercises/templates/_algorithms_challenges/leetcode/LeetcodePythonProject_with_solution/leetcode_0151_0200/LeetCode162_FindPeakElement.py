@@ -16,12 +16,12 @@ c_ Solution(o..
             mid = i..((start+end)/2)
             __ (mid __ 0 a.. nums[mid] > nums[mid+1]) o. (mid __ l..(nums)-1 a.. nums[mid] > nums[mid-1]
                 r.. mid
-            ____:
+            ____
                 __ nums[mid] > nums[mid-1] a.. nums[mid] > nums[mid+1]:
                     r.. mid
                 ____ nums[mid] < nums[mid+1]:
                     start = mid+1
-                ____:
+                ____
                     end = mid-1
         r.. start
     

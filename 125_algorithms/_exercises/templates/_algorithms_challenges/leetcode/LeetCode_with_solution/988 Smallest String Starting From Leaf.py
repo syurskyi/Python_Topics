@@ -67,7 +67,7 @@ c_ Solution:
             t = t..(cur_deque)
             __ n.. mn o. t < mn:
                 mn = t
-        ____:
+        ____
             dfs(node.left, cur_deque)
             dfs(node.right, cur_deque)
         # need to pop at the end

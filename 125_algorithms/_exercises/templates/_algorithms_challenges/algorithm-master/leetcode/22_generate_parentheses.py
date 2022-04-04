@@ -19,9 +19,9 @@ c_ Solution:
         __ rcnt < lcnt:
             p...a..(')')
             dfs(n, lcnt, rcnt + 1, ans, p..)
-            p...pop()
+            p...p.. )
 
         __ lcnt < n:
             p...a..('(')
             dfs(n, lcnt + 1, rcnt, ans, p..)
-            p...pop()
+            p...p.. )

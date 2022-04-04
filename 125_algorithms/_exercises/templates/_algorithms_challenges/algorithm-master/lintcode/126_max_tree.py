@@ -26,7 +26,7 @@ c_ Solution:
         ___ val __ A:
             node = TreeNode(val)
             w.... stack a.. val > stack[-1].val:
-                node.left = stack.pop()
+                node.left = stack.p.. )
 
             # current val less than the last node in stack
             __ stack:

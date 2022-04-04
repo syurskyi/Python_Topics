@@ -16,14 +16,14 @@ c_ Solution(o..
         ___ i __ r..(1, n
             __ ratings[i] > ratings[i-1]:
                 left[i] = left[i-1]+1
-            ____:
+            ____
                 left[i] = 1
         right = [0]*n
         right[-1] = 1
         ___ i __ r..(n-2, -1, -1
             __ ratings[i] > ratings[i+1]:
                 right[i] = right[i+1]+1
-            ____:
+            ____
                 right[i] = 1
         res = 0
         ___ i __ r..(n

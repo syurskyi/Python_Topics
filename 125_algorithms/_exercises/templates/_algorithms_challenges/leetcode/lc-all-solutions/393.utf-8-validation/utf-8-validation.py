@@ -20,9 +20,9 @@ c_ Solution(o..
           r.. F..
         ____ followed != 0:
           new = F..
-        ____:
+        ____
           new = T..
-      ____:
+      ____
         __ (data[i] & 0xc0) != 0x80:
           r.. F..
         followed -= 1

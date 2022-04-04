@@ -30,7 +30,7 @@ c_ Solution(o..
             v = s[i]
             __ v n.. __ stk_set:
                 w.... stk a.. stk[-1] > v a.. last_pos[_idx(stk[-1])] > i:
-                    p = stk.pop()
+                    p = stk.p.. )
                     stk_set.remove(p)
                 stk.a..(v)
                 stk_set.add(v)

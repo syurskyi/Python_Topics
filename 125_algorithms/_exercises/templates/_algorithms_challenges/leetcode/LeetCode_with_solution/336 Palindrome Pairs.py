@@ -75,7 +75,7 @@ c_ Solution:
                 cur = cur.children.g.. w[i], N..)
                 __ cur __ N..
                     _____
-            ____:
+            ____
                 ___ idx_j __ cur.pali_prefix_idxes:
                     __ idx != idx_j:
                         ret.a..([idx, idx_j])

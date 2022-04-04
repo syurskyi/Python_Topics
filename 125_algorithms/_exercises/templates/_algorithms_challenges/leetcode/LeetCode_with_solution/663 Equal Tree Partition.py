@@ -21,7 +21,7 @@ c_ Solution:
         space: O(N)
         """
         dfs(root)
-        total = sums.pop()
+        total = sums.p.. )
         r.. total % 2 __ 0 a.. total // 2 __ sums
 
     ___ dfs  node

@@ -24,7 +24,7 @@ c_ Solution:
         ___ i __ r..(l..(s) - 2, -1, -1
             __ symbs[s[i]] >= symbs[s[i + 1]]:
                 ans += symbs[s[i]]
-            ____:
+            ____
                 ans -= symbs[s[i]]
 
         r.. ans

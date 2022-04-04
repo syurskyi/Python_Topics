@@ -13,7 +13,7 @@ ___ filter_clone(function, xs
 ___ reverse(xs
     __ n.. xs:
         r.. []
-    ____:
+    ____
         r.. xs[::-1]
 
 
@@ -25,14 +25,14 @@ ___ a..(xs, y
 ___ foldl(function, xs, acc
     __ l..(xs) __ 0:
         r.. acc
-    ____:
+    ____
         r.. foldl(function, xs[1:], function(acc, xs[0]
 
 
 ___ foldr(function, xs, acc
     __ l..(xs) __ 0:
         r.. acc
-    ____:
+    ____
         r.. function(xs[0], foldr(function, xs[1:], acc
 
 
@@ -41,7 +41,7 @@ ___ flat(xs
     ___ item __ xs:
         __ isi..(item, l..
             out.extend(flat(item
-        ____:
+        ____
             out.a..(item)
     r.. out
 
@@ -49,7 +49,7 @@ ___ flat(xs
 ___ concat(xs, ys
     __ n.. ys:
         r.. xs
-    ____:
+    ____
         ___ item __ ys:
             xs.a..(item)
         r.. xs

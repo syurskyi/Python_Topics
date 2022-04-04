@@ -1,7 +1,7 @@
 ___ isEvenOrOdd(num
     __ num % 2 __ 0:
         r.. "even"
-    ____:
+    ____
         r.. "odd"
 
 

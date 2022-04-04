@@ -19,7 +19,7 @@ c_ Solution(o..
         root = stack[-1]
         prev = N..
         w.... stack:
-            node = stack.pop()
+            node = stack.p.. )
             node.left = N..
             __ prev:
                 prev.right = node

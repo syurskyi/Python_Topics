@@ -29,7 +29,7 @@ c_ Solution(o..
     ___ combine_aux  a, k
         __ k __ 0:
             r.. [[]]
-        ____:
+        ____
             res    # list
             ___ i, e __ e..(a
                 rest_comb = combine_aux(a[i + 1:], k - 1)

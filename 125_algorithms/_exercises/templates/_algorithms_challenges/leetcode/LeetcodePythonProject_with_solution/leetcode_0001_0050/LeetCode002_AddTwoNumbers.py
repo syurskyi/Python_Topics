@@ -24,7 +24,7 @@ c_ Solution o..
             __ tmpVal >= 10:
                 tmpVal -= 10
                 carry = 1
-            ____:
+            ____
                 carry = 0
             prev.next = ListNode(tmpVal)
             l1 = l1.next
@@ -35,7 +35,7 @@ c_ Solution o..
             __ tmpVal >= 10:
                 tmpVal -= 10
                 carry = 1
-            ____:
+            ____
                 carry = 0
             prev.next = ListNode(tmpVal)
             l1 = l1.next
@@ -45,7 +45,7 @@ c_ Solution o..
             __ tmpVal >= 10:
                 tmpVal -= 10
                 carry = 1
-            ____:
+            ____
                 carry = 0
             prev.next = ListNode(tmpVal)
             l2 = l2.next

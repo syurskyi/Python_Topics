@@ -42,7 +42,7 @@ c_ Excel(o..
         ___ j __ r..(startJ, endJ + 1
           __ (i, j) __ formulas:
             ans += computeFormula(formulas[(i, j)])
-          ____:
+          ____
             ans += data[i][j]
     r.. ans
 

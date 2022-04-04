@@ -15,8 +15,8 @@ c_ Solution(o..
             __ c __ '(':
                 stack.a..(cur)
                 cur = 0
-            ____:
-                cur += stack.pop() + m..(cur, 1)
+            ____
+                cur += stack.p.. ) + m..(cur, 1)
         r.. cur
     
     ___ test

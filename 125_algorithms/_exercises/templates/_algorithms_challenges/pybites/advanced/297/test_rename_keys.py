@@ -81,12 +81,12 @@ ___ fb(value
                                               'viewUrlName': 'viewUrlName'}]},
                           'webpageUrl': 'webpageUrl'})
 ])
-___ test_rename_keys(test_input, expected
+___ test_rename_keys(test_input, e..
     snapshot_before = r.. (test_input)
     renamed = rename_keys(test_input)
     snapshot_after = r.. (test_input)
 
-    ... renamed __ expected
+    ... renamed __ e..
 
     # make sure we're returning a new dict and the original dict was not modified in place
     ... test_input __ n.. renamed

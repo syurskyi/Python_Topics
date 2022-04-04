@@ -22,6 +22,6 @@ c_ Solution(o..
       key = hash(count)
       __ key n.. __ d:
         d[key] = [s..]
-      ____:
+      ____
         d[key].a..(s..)
     r.. [d[k] ___ k __ d]

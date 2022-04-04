@@ -19,8 +19,8 @@ ___ test_type_annotations
 
 
 ___ test_getting_str_for_free(bites
-    expected = Bite(number=1, title='Sum of numbers', level='Beginner')
-    ... bites[0] __ expected
+    e.. = Bite(number=1, title='Sum of numbers', level='Beginner')
+    ... bites[0] __ e..
 
 
 ___ test_default_level_arg_first_bite(bites

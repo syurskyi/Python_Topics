@@ -33,7 +33,7 @@ c_ Solution(o..
             count  i + 1
             __ lowest >= count:
                 h = count
-            ____:
+            ____
                 _____
         r.. h
 

@@ -9,15 +9,15 @@ ____ forth _______ evaluate, StackUnderflowError
 c_ ForthParsingTest(unittest.TestCase
     ___ test_numbers_just_get_pushed_to_stack
         input_data = ["1 2 3 4 5"]
-        expected = [1, 2, 3, 4, 5]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 2, 3, 4, 5]
+        assertEqual(evaluate(input_data), e..)
 
 
 c_ ForthAdditionTest(unittest.TestCase
     ___ test_can_add_two_numbers
         input_data = ["1 2 +"]
-        expected = [3]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [3]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["+"]
@@ -43,8 +43,8 @@ c_ ForthAdditionTest(unittest.TestCase
 c_ ForthSubtractionTest(unittest.TestCase
     ___ test_can_subtract_two_numbers
         input_data = ["3 4 -"]
-        expected = [-1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [-1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["-"]
@@ -70,8 +70,8 @@ c_ ForthSubtractionTest(unittest.TestCase
 c_ ForthMultiplicationTest(unittest.TestCase
     ___ test_can_multiply_two_numbers
         input_data = ["2 4 *"]
-        expected = [8]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [8]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["*"]
@@ -97,13 +97,13 @@ c_ ForthMultiplicationTest(unittest.TestCase
 c_ ForthDivisionTest(unittest.TestCase
     ___ test_can_divide_two_numbers
         input_data = ["12 3 /"]
-        expected = [4]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [4]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_performs_integer_division
         input_data = ["8 3 /"]
-        expected = [2]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [2]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_errors_if_dividing_by_zero
         input_data = ["4 0 /"]
@@ -134,25 +134,25 @@ c_ ForthDivisionTest(unittest.TestCase
 c_ ForthCombinedArithmeticTest(unittest.TestCase
     ___ test_addition_and_subtraction
         input_data = ["1 2 + 4 -"]
-        expected = [-1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [-1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_multiplication_and_division
         input_data = ["2 4 * 3 /"]
-        expected = [2]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [2]
+        assertEqual(evaluate(input_data), e..)
 
 
 c_ ForthDupTest(unittest.TestCase
     ___ test_copies_a_value_on_the_stack
         input_data = ["1 dup"]
-        expected = [1, 1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_copies_the_top_value_on_the_stack
         input_data = ["1 2 dup"]
-        expected = [1, 2, 2]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 2, 2]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["dup"]
@@ -173,13 +173,13 @@ c_ ForthDupTest(unittest.TestCase
 c_ ForthDropTest(unittest.TestCase
     ___ test_removes_the_top_value_on_the_stack_if_it_is_the_only_one
         input_data = ["1 DROP"]
-        expected    # list
-        assertEqual(evaluate(input_data), expected)
+        e..    # list
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_removes_the_top_value_on_the_stack_if_it_not_the_only_one
         input_data = ["3 4 DROP"]
-        expected = [3]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [3]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["drop"]
@@ -200,13 +200,13 @@ c_ ForthDropTest(unittest.TestCase
 c_ ForthSwapTest(unittest.TestCase
     ___ test_swaps_only_two_values_on_stack
         input_data = ["1 2 SWAP"]
-        expected = [2, 1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [2, 1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_swaps_two_two_values_on_stack
         input_data = ["1 2 3 SWAP"]
-        expected = [1, 3, 2]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 3, 2]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["swap"]
@@ -232,13 +232,13 @@ c_ ForthSwapTest(unittest.TestCase
 c_ ForthOverTest(unittest.TestCase
     ___ test_copies_the_second_element_if_there_are_only_two
         input_data = ["1 2 OVER"]
-        expected = [1, 2, 1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 2, 1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_copies_the_second_element_if_there_are_more_than_two
         input_data = ["1 2 3 OVER"]
-        expected = [1, 2, 3, 2]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 2, 3, 2]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["over"]
@@ -267,16 +267,16 @@ c_ ForthUserDefinedWordsTest(unittest.TestCase
             ": dup-twice dup dup ;",
             "1 dup-twice"
         ]
-        expected = [1, 1, 1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 1, 1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_execute_in_the_right_order
         input_data = [
             ": countup 1 2 3 ;",
             "countup"
         ]
-        expected = [1, 2, 3]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 2, 3]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_can_override_other_user_defined_words
         input_data = [
@@ -284,24 +284,24 @@ c_ ForthUserDefinedWordsTest(unittest.TestCase
             ": foo dup dup ;",
             "1 foo"
         ]
-        expected = [1, 1, 1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 1, 1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_can_override_built_in_words
         input_data = [
             ": swap dup ;",
             "1 swap"
         ]
-        expected = [1, 1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_can_override_built_in_operators
         input_data = [
             ": + * ;",
             "3 4 +"
         ]
-        expected = [12]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [12]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_cannot_redefine_numbers
         input_data = [": 1 2 ;"]
@@ -327,39 +327,39 @@ c_ ForthUserDefinedWordsTest(unittest.TestCase
 c_ ForthCaseInsensitivityTest(unittest.TestCase
     ___ test_dup_is_case_insensitive
         input_data = ["1 DUP Dup dup"]
-        expected = [1, 1, 1, 1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 1, 1, 1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_drop_is_case_insensitive
         input_data = ["1 2 3 4 DROP Drop drop"]
-        expected = [1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_swap_is_case_insensitive
         input_data = ["1 2 SWAP 3 Swap 4 swap"]
-        expected = [2, 3, 4, 1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [2, 3, 4, 1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_over_is_case_insensitive
         input_data = ["1 2 OVER Over over"]
-        expected = [1, 2, 1, 2, 1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 2, 1, 2, 1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_user_defined_words_are_case_insensitive
         input_data = [
             ": foo dup ;",
             "1 FOO Foo foo"
         ]
-        expected = [1, 1, 1, 1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 1, 1, 1]
+        assertEqual(evaluate(input_data), e..)
 
     ___ test_definitions_are_case_insensitive
         input_data = [
             ": SWAP DUP Dup dup ;",
             "1 swap"
         ]
-        expected = [1, 1, 1, 1]
-        assertEqual(evaluate(input_data), expected)
+        e.. = [1, 1, 1, 1]
+        assertEqual(evaluate(input_data), e..)
 
 
 __ _____ __ _____

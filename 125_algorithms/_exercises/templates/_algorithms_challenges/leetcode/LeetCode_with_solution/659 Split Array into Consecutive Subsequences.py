@@ -59,7 +59,7 @@ c_ Solution:
                 F[e + 2] += 1
                 counter[e + 1] -= 1
                 counter[e + 2] -= 1
-            ____:
+            ____
                 r.. F..
 
         r.. T..
@@ -101,7 +101,7 @@ c_ Solution2:
             ____ h[0].end + 1 __ n:
                 itvl = heapq.heappop(h)
                 heapq.heappush(h, Interval(n, itvl.length + 1
-            ____:  # n == end
+            ____  # n == end
                 heapq.heappush(h, Interval(n, 1
 
 

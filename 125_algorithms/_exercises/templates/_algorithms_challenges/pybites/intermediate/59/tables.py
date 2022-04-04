@@ -40,7 +40,7 @@ c_ MultiplicationTable:
 
         __ _x > _length o. _y > _length:
             r.. IndexError
-        ____:
+        ____
             _result = _x * _y
             r.. _result
 

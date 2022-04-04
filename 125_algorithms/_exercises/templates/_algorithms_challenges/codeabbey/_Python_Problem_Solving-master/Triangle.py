@@ -13,7 +13,7 @@ ___ i __ r..(0,data
     __ a + b > c a.. a + c > b  a.. b + c > a:
         res +='1'
         res += ' '
-    ____:
+    ____
         res += '0'
         res += ' '
     

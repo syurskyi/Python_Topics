@@ -31,7 +31,7 @@ c_ Solution(o..
                 r.. m..(mini, A[lo])
             ____ A[lo] > A[mid] < A[hi-1]:
                 hi = mid
-            ____:
+            ____
                 lo = mid+1
 
         r.. mini

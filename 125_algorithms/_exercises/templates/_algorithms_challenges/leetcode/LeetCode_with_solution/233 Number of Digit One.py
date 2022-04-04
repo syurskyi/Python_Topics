@@ -35,7 +35,7 @@ c_ Solution:
                 cnt += (hi_digit+1)*sig
             ____ cur_digit __ 1:
                 cnt += hi_digit*sig + (lo_digit+1)
-            ____:
+            ____
                 cnt += hi_digit*sig
 
             sig = temp

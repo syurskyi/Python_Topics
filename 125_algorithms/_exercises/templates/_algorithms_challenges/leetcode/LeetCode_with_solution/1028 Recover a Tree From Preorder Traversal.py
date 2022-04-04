@@ -57,7 +57,7 @@ c_ Solution:
             __ S[i] __ "-":
                 depth += 1
                 i += 1
-            ____:
+            ____
                 j = i
                 w.... j < n a.. S[j] != "-":
                     j += 1
@@ -69,18 +69,18 @@ c_ Solution:
                 __ depth __ 0:
                     root = cur
                     stk = [(depth, root)]
-                ____:
+                ____
                     ... stk
                     w.... stk[-1][0] != depth - 1:
-                        stk.pop()
+                        stk.p.. )
 
                     _, pi = stk[-1]
                     __ n.. pi.left:
                         pi.left = cur
                     ____ n.. pi.right:
                         pi.right = cur
-                        stk.pop()
-                    ____:
+                        stk.p.. )
+                    ____
                         r..
                     stk.a..((depth, cur
 
@@ -103,7 +103,7 @@ c_ Solution:
             __ S[i] __ "-":
                 depth += 1
                 i += 1
-            ____:
+            ____
                 j = i
                 w.... j < n a.. S[j] != "-":
                     j += 1
@@ -121,17 +121,17 @@ c_ Solution:
             __ v __ 0:
                 root = cur
                 stk = [root]
-            ____:
+            ____
                 ... stk
                 w.... depths[stk[-1].val] != v - 1:
-                    stk.pop()
+                    stk.p.. )
 
                 __ n.. stk[-1].left:
                     stk[-1].left = cur
                 ____ n.. stk[-1].right:
                     stk[-1].right = cur
-                    stk.pop()
-                ____:
+                    stk.p.. )
+                ____
                     r..
                 stk.a..(cur)
 

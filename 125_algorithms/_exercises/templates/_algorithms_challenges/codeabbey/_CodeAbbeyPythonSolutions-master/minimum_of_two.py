@@ -5,7 +5,7 @@ ___ get_min(num1, num2
     m.. = 0
     __(num1 < num2
         m.. = num1
-    ____:
+    ____
         m.. = num2
 
     r.. m..

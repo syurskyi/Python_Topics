@@ -66,5 +66,5 @@ ___ convert_emea_date_to_amer_date(date
         dates = __.f..(r"(\d\d)/(\d\d)/(\d{4})",date)[0]
     ______:
         r.. date
-    ____:
+    ____
         r.. '/'.j..((dates[1],dates[0],dates[-1]

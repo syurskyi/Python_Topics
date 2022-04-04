@@ -16,9 +16,9 @@ c_ Solution(o..
       __ a ^ b != 0:
         __ c __ 1:
           carry = 1
-        ____:
+        ____
           ans |= mask
-      ____:
+      ____
         __ a & mask > 0:
           carry = 1
         __ c __ 1:

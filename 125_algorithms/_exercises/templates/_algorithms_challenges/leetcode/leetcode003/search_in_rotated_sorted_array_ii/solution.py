@@ -29,14 +29,14 @@ c_ Solution(o..
             ____ nums[mid] > nums[right]:
                 __ target < nums[mid] a.. target >= nums[left]:
                     right = mid - 1
-                ____:
+                ____
                     left = mid + 1
             # Right part is sorted
             ____ nums[mid] < nums[right]:
                 __ target > nums[mid] a.. target <= nums[right]:
                     left = mid + 1
-                ____:
+                ____
                     right = mid - 1
-            ____:
+            ____
                 right -= 1
         r.. F..

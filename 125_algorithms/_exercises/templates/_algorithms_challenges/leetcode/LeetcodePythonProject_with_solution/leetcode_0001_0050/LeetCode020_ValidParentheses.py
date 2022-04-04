@@ -13,12 +13,12 @@ c_ Solution(o..
         ___ c __ s:
             __ c __  '(', '{', ' ' :
                 stack.a..(c)
-            ____:
+            ____
                 __  (c __ ')' a.. stack a.. stack[-1]__'(') o.\
                     (c __ ' ' a.. stack a.. stack[-1]__' ') o.\
                     (c __ '}' a.. stack a.. stack[-1]__'{'
-                    stack.pop()
-                ____:
+                    stack.p.. )
+                ____
                     r.. F..
         r.. stack __ []
     

@@ -14,7 +14,7 @@ c_ Solution(o..
         ___ i __ r..(1, l..(nums:
             __ i __ 1 a.. l..(nums) > 2:
                 res += '/(%s' % nums[i]
-            ____:
+            ____
                 res += '/%s' % nums[i]
         __ l..(nums) > 2:
             res += ')'

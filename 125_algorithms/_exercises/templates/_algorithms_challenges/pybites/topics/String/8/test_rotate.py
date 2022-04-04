@@ -8,19 +8,19 @@ ___ test_small_rotate
 
 ___ test_bigger_rotation_of_positive_n
     s__ = 'bob and julian love pybites!'
-    expected = 'love pybites!bob and julian '
-    ... rotate(s__, 15) __ expected
+    e.. = 'love pybites!bob and julian '
+    ... rotate(s__, 15) __ e..
 
 
 ___ test_bigger_rotation_of_negative_n
     s__ = 'pybites loves julian and bob!'
-    expected = 'julian and bob!pybites loves '
-    ... rotate(s__, -15) __ expected
+    e.. = 'julian and bob!pybites loves '
+    ... rotate(s__, -15) __ e..
 
 
 ___ test_rotation_of_n_same_as_len_str
-    s__ = expected = 'julian and bob!'
-    ... rotate(s__, l..(s__ __ expected
+    s__ = e.. = 'julian and bob!'
+    ... rotate(s__, l..(s__ __ e..
 
 
 ___ test_rotation_of_n_bigger_than_string

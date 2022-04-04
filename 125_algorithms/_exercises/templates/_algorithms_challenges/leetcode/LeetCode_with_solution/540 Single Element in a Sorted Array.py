@@ -36,7 +36,7 @@ c_ Solution:
                 # when mid even, mid and mid + 1 form a pair; there are odd number of elements on the right
                 # when mid odd, mid and mid - 1 form a pair; there are odd number of elements on the right
                 lo = mid + 1
-            ____:
+            ____
                 hi = mid
 
         r.. nums[lo]
@@ -57,7 +57,7 @@ c_ Solution:
             idx = bisect_right(nums, nums[mid], lo, hi)
             __ idx <= mid:
                 hi = mid - 1
-            ____:
+            ____
                 lo = mid
 
         r.. nums[hi - 1]

@@ -18,28 +18,28 @@ jdoe:*:202:1:John Doe:/home/jdoe:/usr/bin/ksh"""
 
 
 ___ test_get_users_for_shell_default_args
-    actual = get_users_for_shell()
-    expected =  'artagnon', 'avar', 'chad', 'gerrit2',
+    a.. = get_users_for_shell()
+    e.. =  'artagnon', 'avar', 'chad', 'gerrit2',
                 'git-svn-mirror', 'root', 'ssh-rsa'
-    ... s..(actual) __ expected
+    ... s..(a..) __ e..
 
 
 ___ test_get_users_for_sh_shell
-    actual = get_users_for_shell(grep_shell='sh')
-    expected =  'backup', 'bin', 'daemon', 'games', 'gnats', 'irc',
+    a.. = get_users_for_shell(grep_shell='sh')
+    e.. =  'backup', 'bin', 'daemon', 'games', 'gnats', 'irc',
                 'libuuid', 'list', 'lp', 'mail', 'man', 'news',
                 'nobody', 'proxy', 'sys', 'uucp', 'www-data'
-    ... s..(actual) __ expected
+    ... s..(a..) __ e..
 
 ___ test_get_users_for_false_shell
-    actual = get_users_for_shell(grep_shell='false')
-    expected =  'Debian-exim', 'avahi', 'ftp', 'messagebus',
+    a.. = get_users_for_shell(grep_shell='false')
+    e.. =  'Debian-exim', 'avahi', 'ftp', 'messagebus',
                 'mysql', 'postfix', 'statd'
-    ... s..(actual) __ expected
+    ... s..(a..) __ e..
 
 
 ___ test_get_users_for_different_passwd_output_and_ksh_shell
-    actual = get_users_for_shell(passwd_output=OTHER_PASSWD_OUTPUT,
+    a.. = get_users_for_shell(passwd_output=OTHER_PASSWD_OUTPUT,
                                  grep_shell='ksh')
-    expected =  'invscout', 'jdoe', 'paul', 'root'
-    ... s..(actual) __ expected
+    e.. =  'invscout', 'jdoe', 'paul', 'root'
+    ... s..(a..) __ e..

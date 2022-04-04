@@ -5,7 +5,7 @@ ___ even_odd_transform(lst, n
         __ i % 2 __ 0:
             s = i - 2* n
             output.a..(s)
-        ____:
+        ____
             s = i + 2* n
             output.a..(s)
 

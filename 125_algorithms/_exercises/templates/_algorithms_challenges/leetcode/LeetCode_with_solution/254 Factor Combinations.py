@@ -34,14 +34,14 @@ c_ Solution:
         __ l..(cur) > 1:
             ret.a..(l..(cur
 
-        n = cur.pop()
+        n = cur.p.. )
         start = cur[-1] __ cur ____ 2
         ___ i __ x..(start, i..(sqrt(n+1
             __ n % i __ 0:
                 cur.a..(i)
                 cur.a..(n/i)
                 dfs(cur, ret)
-                cur.pop()
+                cur.p.. )
 
     ___ dfs2  n, cur, ret
         __ n > 1 a.. cur a.. l..(cur) >= 1:
@@ -52,7 +52,7 @@ c_ Solution:
             __ n%i __ 0:
                 cur.a..(i)
                 dfs(n/i, cur, ret)
-                cur.pop()
+                cur.p.. )
 
     ___ dfs_TLE  n, cur, ret
         __ n __ 1 a.. cur a.. l..(cur) >= 2:
@@ -60,14 +60,14 @@ c_ Solution:
 
         __ cur:
             start = cur[-1]
-        ____:
+        ____
             start = 2
 
         ___ i __ x..(start, i..(sqrt(n+1))):
             __ n%i __ 0:
                 cur.a..(i)
                 dfs_TLE(n/i, cur, ret)
-                cur.pop()
+                cur.p.. )
 
 
 __ _______ __ _______

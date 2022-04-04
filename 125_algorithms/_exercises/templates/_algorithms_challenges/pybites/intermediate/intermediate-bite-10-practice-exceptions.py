@@ -39,7 +39,7 @@ ___ pybites_solution_positive_divide(numerator, denominator
         r.. 0
     ______ (T.., V...
         r..
-    ____:
+    ____
         __ result < 0:
             r.. V...('Cannot be negative')
         r.. result

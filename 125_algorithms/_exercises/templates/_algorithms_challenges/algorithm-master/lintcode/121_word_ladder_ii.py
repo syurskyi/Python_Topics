@@ -60,7 +60,7 @@ c_ Solution:
                 _____
             p...a..(_word)
             dfs(_word, B, next_words, distance, ans, p..)
-            p...pop()
+            p...p.. )
 
     ___ get_next_word  word, next_words
         ___ i __ r..(l..(word:

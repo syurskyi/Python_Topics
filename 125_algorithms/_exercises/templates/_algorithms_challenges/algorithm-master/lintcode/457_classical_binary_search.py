@@ -15,7 +15,7 @@ c_ Solution:
                 r.. mid
             __ A[mid] < target:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         __ A[left] __ target:

@@ -26,5 +26,5 @@ c_ Triangle(o..
             r.. 'equilateral'
         ____ distinct __ 2:
             r.. 'isosceles'
-        ____:
+        ____
             r.. 'scalene'

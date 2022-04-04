@@ -33,7 +33,7 @@ ___ get_us_bank_holidays(content=content
         row = [i.text ___ i __ td]
         __ l..(row
             #print(row[1][6:8], row[3].strip())
-            holidays[row[1][6:8]].a..(row[3].strip
+            holidays[row[1][6:8]].a..(row[3].s..
     r.. holidays
     
 #day = get_us_bank_holidays()

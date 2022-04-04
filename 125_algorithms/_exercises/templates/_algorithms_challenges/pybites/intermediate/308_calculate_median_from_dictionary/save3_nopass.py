@@ -16,6 +16,6 @@ ___ calc_median_from_dict(d: d..) __ f__:
         mid_after_n = i..(mid + 0.5)
         mid_after = l..(values_sorted.keys[mid_after_n]
         r.. (mid_before + mid_after) / 2
-    ____:
+    ____
         mid = i..(mid)
         r.. l..(values_sorted.keys[mid]

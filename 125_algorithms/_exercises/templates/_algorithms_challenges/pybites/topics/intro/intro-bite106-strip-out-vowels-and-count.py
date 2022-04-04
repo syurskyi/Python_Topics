@@ -62,7 +62,7 @@ ___ my_strip_vowels(text: s..) __ (s.., i..
     ___ letter __ text:
         __ letter.l.. n.. __ vowels:
             out += letter
-        ____:
+        ____
             out += '*'
             cnt += 1
     t = (out, cnt)

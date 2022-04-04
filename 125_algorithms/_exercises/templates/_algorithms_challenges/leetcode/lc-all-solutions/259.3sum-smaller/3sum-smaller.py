@@ -13,7 +13,7 @@ c_ Solution(o..
         __ nums[i] + nums[start] + nums[end] < target:
           ans += end - start
           start += 1
-        ____:
+        ____
           end -= 1
 
     r.. ans

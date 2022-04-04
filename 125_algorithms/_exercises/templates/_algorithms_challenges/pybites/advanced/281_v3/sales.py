@@ -24,7 +24,7 @@ ___ get_data(url: s..) __ Dict[s.., s..]:
     """
     __ TMP.exists
         data = json.loads(TMP.read_text
-    ____:
+    ____
         response = r__.g.. url)
         response.raise_for_status()
         data = json.loads(response.text)

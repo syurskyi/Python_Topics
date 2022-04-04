@@ -26,7 +26,7 @@ c_ Solution:
                         valid + 1
 
                     right + 1
-                ____:
+                ____
                     __ F[s[left]] __ 1:
                         kind - 1
                     __ F[s[left]] __ k:

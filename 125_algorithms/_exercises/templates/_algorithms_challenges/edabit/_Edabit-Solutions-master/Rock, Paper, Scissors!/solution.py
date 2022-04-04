@@ -23,5 +23,5 @@ ___ calculate_score(games
         r.. "Abigail"
     ____ abigail __ ben:
         r.. "Tie"
-    ____:
+    ____
          r.. "Benson"

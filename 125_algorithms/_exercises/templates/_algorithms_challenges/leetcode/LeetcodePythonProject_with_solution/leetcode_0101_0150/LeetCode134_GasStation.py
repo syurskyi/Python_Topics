@@ -16,12 +16,12 @@ c_ Solution(o..
             remain = g-c
             __ sumRemaining >= 0:
                 sumRemaining += remain
-            ____:
+            ____
                 sumRemaining = remain
                 start = i
             sumVal += remain
         __ sumVal >= 0:
             r.. start
-        ____:
+        ____
             r.. -1
     

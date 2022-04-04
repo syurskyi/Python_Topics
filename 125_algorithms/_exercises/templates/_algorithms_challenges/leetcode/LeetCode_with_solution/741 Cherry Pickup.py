@@ -70,7 +70,7 @@ c_ Solution:
 
                     __ r1 __ n - 1 a.. c1 __ n - 1:
                         p..  # seed, otherwise -inf
-                    ____:
+                    ____
                         ret += m..(
                             F(grid, r1+1, c1, r2+1),   # down, down
                             F(grid, r1+1, c1, r2),  # down, right

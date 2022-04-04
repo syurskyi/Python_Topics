@@ -48,7 +48,7 @@ c_ Solution:
                         J = j + dj
                         __ 0 <= I < m a.. 0 <= J < n:
                             F_new[I][J] = (F_new[I][J] + F[i][j]) % MOD
-                        ____:
+                        ____
                             ret = (ret + F[i][j]) % MOD
 
             F = F_new

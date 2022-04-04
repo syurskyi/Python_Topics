@@ -15,7 +15,7 @@ ___ justify(text, width
             line_words = [word]
             lines.a..(line_words)
             current_len = l..(word) + 1
-        ____:
+        ____
             line_words.a..(word)
             current_len += l..(word) + 1
     ___ i __ r..(l..(lines) - 1

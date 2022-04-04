@@ -16,12 +16,12 @@ c_ Solution(o..
         ___ w __ arr1:
             __ w n.. __ hashset1:
                 hashset1.add(w)
-            ____:
+            ____
                 hashset3.add(w)
         ___ w __ arr2:
             __ w n.. __ hashset2:
                 hashset2.add(w)
-            ____:
+            ____
                 hashset3.add(w)
         res    # list
         ___ w __ hashset1:

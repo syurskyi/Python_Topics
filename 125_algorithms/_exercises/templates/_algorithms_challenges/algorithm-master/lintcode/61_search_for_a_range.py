@@ -17,7 +17,7 @@ c_ Solution:
             mid = left + (right - left) // 2
             __ A[mid] < target:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         start = left __ A[left] __ target ____ right
@@ -27,7 +27,7 @@ c_ Solution:
             mid = left + (right - left) // 2
             __ A[mid] <= target:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         end = right __ A[right] __ target ____ left

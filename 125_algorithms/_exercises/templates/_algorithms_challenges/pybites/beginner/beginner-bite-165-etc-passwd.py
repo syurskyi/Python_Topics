@@ -71,7 +71,7 @@ ___ get_users_for_shell(passwd_output: s.. = PASSWD_OUTPUT,
                 output.a..(username)
         ______:
             print("dupa")
-    r.. s..(output)
+    r.. s.. ?
 
 
 print(get_users_for_shell

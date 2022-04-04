@@ -44,7 +44,7 @@ c_ Solution:
             s__ = "".j..(s..(s__  # string reversing and sorting are a little different
             __ s__ n.. __ hash_map:
                 hash_map[s__] = [ind]
-            ____:
+            ____
                 hash_map[s__].a..(ind)
             # indexes = hash_map.get(string, [])
             # indexes.append(ind)  # side-effect

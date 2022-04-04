@@ -103,7 +103,7 @@ c_ SolutionTLE2:
             ret = 0
             __ r __ 0:
                 ret = 1
-            ____:
+            ____
                 ___ nbr __ nbrs[i]:
                     ret += dfs(nbr, r-1)
 
@@ -133,7 +133,7 @@ c_ SolutionTLE:
             ret = 0
             __ r __ 0:
                 ret = 1
-            ____:
+            ____
                 ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj

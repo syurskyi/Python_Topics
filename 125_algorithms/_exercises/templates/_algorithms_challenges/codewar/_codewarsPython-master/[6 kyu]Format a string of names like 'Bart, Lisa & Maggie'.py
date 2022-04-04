@@ -1,8 +1,8 @@
 ___ namelist(names
-    namelist =  [name 'name'  ___ name __ names]
+    namelist =  [name 'name'  ___ ? __ ?
     __ l..(namelist) <= 1:
     	r.. ''.j..(namelist)
-    ____:
+    ____
     	lastTwo = ' & '.j..(namelist[-2:])
     	first = [n + ',' ___ n __ namelist[:-2]]
     	first.a..(lastTwo)

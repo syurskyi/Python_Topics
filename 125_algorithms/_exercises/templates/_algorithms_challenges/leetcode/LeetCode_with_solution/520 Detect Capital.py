@@ -41,7 +41,7 @@ c_ Solution:
                 has_upper = T..
                 __ has_lower o. n.. head_upper:
                     r.. F..
-            ____:
+            ____
                 has_lower = T..
                 __ has_upper:
                     r.. F..

@@ -26,6 +26,6 @@ c_ Solution(o..
           __ cnt __ 0:
             __ n.. root.left:
               root.left = str2tree(s[start:i])
-            ____:
+            ____
               root.right = str2tree(s[start:i])
       r.. root __ root ____ TreeNode(s)

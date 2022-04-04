@@ -32,7 +32,7 @@ c_ Solution(o..
             r.. t[i]
         ____ t[i] __ n.. N..
             r.. t[i]
-        ____:
+        ____
             res    # list
             ___ j __ r..(i
                 rest = word_break_aux(s, wordDict, j, t)

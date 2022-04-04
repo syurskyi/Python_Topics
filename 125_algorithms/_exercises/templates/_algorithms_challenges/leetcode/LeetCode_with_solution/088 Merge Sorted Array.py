@@ -31,7 +31,7 @@ c_ Solution(o..
             __ A[i] > B[j]:
                 A[closed] = A[i]
                 i -= 1
-            ____:
+            ____
                 A[closed] = B[j]
                 j -= 1
 

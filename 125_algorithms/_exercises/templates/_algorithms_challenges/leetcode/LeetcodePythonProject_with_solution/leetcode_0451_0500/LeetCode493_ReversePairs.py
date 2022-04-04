@@ -23,14 +23,14 @@ c_ Solution(o..
             n = l..(lst)
             __ n <= 1:
                 r.. lst
-            ____:
+            ____
                 r.. merger(msort(lst[:i..(n/2)]), msort(lst[i..(n/2]
         ___ merger(left, right
             l, r = 0, 0
             w.... l < l..(left) a.. r < l..(right
                 __ left[l] <= 2*right[r]:
                     l += 1
-                ____:
+                ____
                     cnt += l..(left)-l
                     r += 1
             r.. s..(left+right)
@@ -57,7 +57,7 @@ c_ Solution(o..
             cnt[0] += node.less
         ____ target < node.val:
             s..(cnt, node.left, target)
-        ____:
+        ____
             cnt[0] += node.less + node.same
             s..(cnt, node.right, target)
     
@@ -68,7 +68,7 @@ c_ Solution(o..
             node.same += 1
         ____ val > node.val:
             node.right = build(val, node.right)
-        ____:
+        ____
             node.less += 1
             node.left = build(val, node.left)
         r.. node

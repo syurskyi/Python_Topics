@@ -4,16 +4,16 @@ ____ rhombus _______ gen_rhombus
 ___ test_rhombus_width3
     # recommended: actual before expected
     # https://twitter.com/brianokken/status/1063337328553295876
-    actual = l..(gen_rhombus(3
-    expected =  ' * ', '***', ' * '
-    ... actual __ expected
+    a.. = l..(gen_rhombus(3
+    e.. =  ' * ', '***', ' * '
+    ... a.. __ e..
 
 
 ___ test_rhombus_width5
-    actual = l..(gen_rhombus(5
-    expected =  '  *  ', ' *** ', '*****',
+    a.. = l..(gen_rhombus(5
+    e.. =  '  *  ', ' *** ', '*****',
                 ' *** ', '  *  '
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_rhombus_width11
@@ -30,8 +30,8 @@ ___ test_rhombus_width11
         ***
          *
     """
-    actual = l..(gen_rhombus(11
-    expected =  '     *     ', '    ***    ', '   *****   ',
+    a.. = l..(gen_rhombus(11
+    e.. =  '     *     ', '    ***    ', '   *****   ',
                 '  *******  ', ' ********* ', '***********', ' ********* ',
                 '  *******  ', '   *****   ', '    ***    ', '     *     '
-    ... actual __ expected
+    ... a.. __ e..

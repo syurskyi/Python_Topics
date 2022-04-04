@@ -21,10 +21,10 @@ c_ Solution(o..
             d.. = hashmap[c]
             size = l..(d..)
             ___ i __ r..(size
-                word = d...pop(0)
+                word = d...p.. 0)
                 __ l..(word) __ 1:
                     count += 1
-                ____:
+                ____
                     hashmap[word[1]].a..(word[1:])
         r.. count
     

@@ -24,7 +24,7 @@ c_ Solution(o..
                 c2 = word2[j]
                 __ c1 __ c2:
                     dp[i+1][j+1] = dp[i][j]
-                ____:
+                ____
                     r.. = dp[i][j] + 1
                     insert = dp[i][j+1] + 1
                     delete = dp[i+1][j] + 1

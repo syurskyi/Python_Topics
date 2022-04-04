@@ -8,7 +8,7 @@ ___ int_args(func
         ___ arg __ args:
             __ n.. isi..(arg, i..
                 r.. T..
-            ____:
+            ____
                 __ arg < 0:
                     r.. V...
         r.. func(*args)

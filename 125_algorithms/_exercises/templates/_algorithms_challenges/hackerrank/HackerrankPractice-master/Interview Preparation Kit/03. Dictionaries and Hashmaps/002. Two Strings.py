@@ -7,5 +7,5 @@ ___ i __ r..(i..(input())):
     str2 = s..(input
     __ str1 & str2 != s..
         print('YES')
-    ____:
+    ____
         print('NO')

@@ -47,8 +47,8 @@ c_ SnakeGame(o..
         __ x __ fx a.. y __ fy:
             food.popleft()
             eat += 1
-        ____:
-            body.pop()
+        ____
+            body.p.. )
             __ (x, y) __ body o. n.. (0 <= x < h a.. 0 <= y < w
                 # possible to use set to accelerate check
                 r.. -1

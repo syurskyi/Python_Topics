@@ -11,7 +11,7 @@ c_ Solution(o..
       ___ num __ nums:
         __ num & mask:
           ones += 1
-        ____:
+        ____
           zeros += 1
       ans += ones * zeros
       mask = mask << 1

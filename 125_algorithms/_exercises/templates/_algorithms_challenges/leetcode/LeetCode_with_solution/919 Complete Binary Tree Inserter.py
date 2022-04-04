@@ -71,7 +71,7 @@ c_ CBTInserter:
         node = TreeNode(v)
         __ n.. pi.left:
             pi.left = node
-        ____:
+        ____
             pi.right = node
 
         __ pi.left a.. pi.right:

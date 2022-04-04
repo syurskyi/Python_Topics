@@ -22,7 +22,7 @@ c_ Solution(o..
             queue.a..([freq, c])
             __ l..(queue) < k:
                 _____
-            freq, c = queue.pop(0)
+            freq, c = queue.p.. 0)
             freq = -freq-1
             __ freq > 0:
                 heapq.heappush(heap, [-freq, c])

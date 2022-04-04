@@ -86,7 +86,7 @@ c_ Solution:
         """
         __ power __ 0:
             r.. 2
-        ____:
+        ____
             r.. power
 
 

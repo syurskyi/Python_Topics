@@ -21,7 +21,7 @@ c_ Solution(o..
             n = l..(queue)
             length += 1
             ___ _ __ r..(n
-                word = queue.pop(0)
+                word = queue.p.. 0)
                 __ word __ endWord:
                     r.. length
                 nextWords = getNext(word, wordSet)

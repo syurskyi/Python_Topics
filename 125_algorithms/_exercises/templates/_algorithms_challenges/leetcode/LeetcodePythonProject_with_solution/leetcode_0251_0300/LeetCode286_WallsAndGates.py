@@ -21,7 +21,7 @@ c_ Solution(o..
         m, n = l..(rooms), l..(rooms[0])
         queue = [(i, j, 0)]
         w.... queue:
-            i0, j0, dist = queue.pop(0)
+            i0, j0, dist = queue.p.. 0)
             ___ x, y __ ((i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1:
                 __ 0 <= x < m a.. 0 <= y < n a.. rooms[x][y] != -1:
                     newDist = dist + 1

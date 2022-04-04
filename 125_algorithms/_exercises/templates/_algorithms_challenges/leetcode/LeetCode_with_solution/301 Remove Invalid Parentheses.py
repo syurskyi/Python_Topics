@@ -41,7 +41,7 @@ c_ Solution(o..
             ____ c __ ")":
                 __ left > 0:
                     left -= 1
-                ____:
+                ____
                     rmcnt += 1
 
         rmcnt += left
@@ -68,11 +68,11 @@ c_ Solution(o..
 
         __ s[i] n.. __ ("(", ")"  # skip non-parenthesis
             dfs(s, cur+s[i], left, N.., i+1, rmcnt, ret)
-        ____:
+        ____
             __ pi __ s[i]:  # jump, if rm, rm them all to avoid duplication
                 w.... i < l..(s) a.. pi a.. pi __ s[i]: i, rmcnt = i+1, rmcnt-1
                 dfs(s, cur, left, pi, i, rmcnt, ret)
-            ____:
+            ____
                 dfs(s, cur, left, s[i], i+1, rmcnt-1, ret)
                 L = left+1 __ s[i] __ "(" ____ left-1  # consume "("
                 dfs(s, cur+s[i], L, N.., i+1, rmcnt, ret)  # put

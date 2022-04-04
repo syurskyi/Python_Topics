@@ -36,7 +36,7 @@ c_ Solution:
         ___ i __ r..(1, l..(s:
             __ s[i] __ s[i-1]:
                 cur += 1
-            ____:
+            ____
                 prev = cur
                 cur = 1
             __ prev >= cur:

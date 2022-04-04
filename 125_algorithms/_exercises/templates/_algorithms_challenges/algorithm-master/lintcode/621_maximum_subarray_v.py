@@ -46,7 +46,7 @@ c_ Solution:
             means the min sum is impossible to occur here
             """
             w.... queue a.. S[queue[-1]] > S[i - k1]:
-                queue.pop()
+                queue.p.. )
             queue.a..(i - k1)
 
             __ queue a.. S[i] - S[queue[0]] > ans:

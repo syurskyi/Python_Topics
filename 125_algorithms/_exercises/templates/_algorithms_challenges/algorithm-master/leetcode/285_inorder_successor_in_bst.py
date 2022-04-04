@@ -95,7 +95,7 @@ c_ Solution:
             __ target.val < root.val:
                 ans = root
                 root = root.left
-            ____:
+            ____
                 root = root.right
 
         r.. ans
@@ -125,7 +125,7 @@ c_ Solution2:
                 stack.a..(node)
                 node = node.left
 
-            node = stack.pop()
+            node = stack.p.. )
 
             __ got_target:
                 r.. node

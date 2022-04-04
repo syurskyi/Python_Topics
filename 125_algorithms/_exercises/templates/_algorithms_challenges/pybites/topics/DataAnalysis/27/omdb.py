@@ -7,8 +7,8 @@ ___ get_movie_data(files: l..) __ l..:
     ___ movie __ files:
         w__ o.. movie) __ f:
             ___ line __ f:
-                __ l..(line.strip > 0:
-                    data.a..(json.loads(line.strip()))
+                __ l..(line.s.. > 0:
+                    data.a..(json.loads(line.s..()))
     r.. data
 
 ___ get_single_comedy(movies: l..) __ s..:

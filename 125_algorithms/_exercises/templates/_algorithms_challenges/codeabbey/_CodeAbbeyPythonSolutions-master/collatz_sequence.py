@@ -4,10 +4,10 @@ results    # list
 ___ get_seq(Xnext, counter=0
     __(Xnext __ 1
         r.. counter
-    ____:
+    ____
         __(Xnext % 2 __ 0
             r.. get_seq(Xnext/2, counter+1)
-        ____:
+        ____
             r.. get_seq(3*Xnext+1, counter+1)
 
 XList = l.. m..(i.., input().s..()))

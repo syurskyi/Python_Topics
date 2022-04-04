@@ -37,9 +37,9 @@ c_ Groceries:
            if no item matches"""
         ___ i, item __ e..
             __ item.product __ product:
-                _items.pop(i)
+                _items.p.. i)
                 _____
-        ____:
+        ____
             r.. IndexError _*{product} not in cart')
         show()
 
@@ -110,7 +110,7 @@ ___ handle_args(args=N.., cart_ N..
     ____ args 'delete' :
         item = args 'delete'
         cart.delete(item)
-    ____:
+    ____
         item = args 'search'
         cart.s..(item)
 

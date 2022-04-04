@@ -22,12 +22,12 @@ c_ Solution(o..
             __ num > med:
                 __ num - med > K:
                     num -= K
-                ____:
+                ____
                     num = med
             ____ num < med:
                 __ med - num > K:
                     num += K
-                ____:
+                ____
                     num = med
             maxVal = m..(maxVal, num)
             minVal = m..(minVal, num)

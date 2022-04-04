@@ -51,8 +51,8 @@ c_ Solution:
         ___ s __ S:
             __ s __ "#":
                 __ stk:
-                    stk.pop()
-            ____:
+                    stk.p.. )
+            ____
                 stk.a..(s)
 
         r.. stk

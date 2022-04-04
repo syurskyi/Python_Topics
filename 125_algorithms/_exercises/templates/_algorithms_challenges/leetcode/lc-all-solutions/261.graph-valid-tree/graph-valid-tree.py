@@ -28,5 +28,5 @@ c_ Solution:
 
     __ dfs(0, graph, visited, -1) a.. nodeVisited __ n:
       r.. T..
-    ____:
+    ____
       r.. F..

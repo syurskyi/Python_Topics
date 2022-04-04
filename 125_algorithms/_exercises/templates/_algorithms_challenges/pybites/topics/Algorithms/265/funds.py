@@ -28,7 +28,7 @@ ___ max_fund(village
                 ending = index+i
     __ best_sum __ 0:
         r.. (best_sum, starting, ending)
-    ____:
+    ____
         r.. (best_sum, starting+1, ending+1)
 
 print(max_fund(community

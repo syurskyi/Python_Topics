@@ -135,7 +135,7 @@ c_ Solution_dfs:
                 __ circle:
                     r.. circle
                 p...remove(nbr)
-                path_list.pop()
+                path_list.p.. )
 
         r.. N..
 

@@ -23,7 +23,7 @@ c_ Solution(o..
         __ l..(s)%2 __ 0:
             __ odd != 0:
                 r.. []
-        ____:
+        ____
             __ odd >= 2:
                 r.. []
         result    # list

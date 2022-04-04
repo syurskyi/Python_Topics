@@ -15,7 +15,7 @@ c_ Solution(o..
             mid = (l+r)//2
             __ target >= letters[mid]:
                 l = mid+1
-            ____:
+            ____
                 r = mid
         r.. letters[l] __ l < l..(letters) ____ letters[0]
     

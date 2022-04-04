@@ -34,11 +34,11 @@ ___ intro_bites
     (6,  '88', '31', '50', '90', '179', '98' ),
     (10,  '88', '31', '50', '90', '179', '98', '190', '42', '69', '40' ),
 ])
-___ test_different_args_for_N(N, expected
-    actual = get_most_complex_bites(N)
+___ test_different_args_for_N(N, e..
+    a.. = get_most_complex_bites(N)
     # str or int for IDs is fine with us
-    actual = [s..(i) ___ i __ actual]
-    ... actual __ expected
+    a.. = [s..(i) ___ i __ a..]
+    ... a.. __ e..
 
 """
 @pytest.mark.parametrize("N, expected", [

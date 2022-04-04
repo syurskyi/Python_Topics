@@ -14,7 +14,7 @@ c_ Trie:
       c = word[i]
       __ c __ root.neighbours:
         root = root.neighbours[c]
-      ____:
+      ____
         newnode = TrieNode(c)
         root.neighbours[c] = newnode
         root = root.neighbours[c]

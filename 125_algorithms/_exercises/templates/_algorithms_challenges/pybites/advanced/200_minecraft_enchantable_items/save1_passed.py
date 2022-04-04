@@ -155,7 +155,7 @@ ___ get_soup(file=HTML_FILE
 
         w__ file.o.. ) __ html_source:
             soup = Soup(html_source, "html.parser")
-    ____:
+    ____
         soup = Soup(file, "html.parser")
 
     r.. soup

@@ -19,6 +19,6 @@ sentence5 =  'be', 'a', 'good', 'man'
     (sentence2, sentence3,  'to' ),
     (sentence5, sentence1,  'a', 'be' ),
 ])
-___ test_common_words(sentence1, sentence2, expected
-    actual = common_words(sentence1, sentence2)
-    ... actual __ expected
+___ test_common_words(sentence1, sentence2, e..
+    a.. = common_words(sentence1, sentence2)
+    ... a.. __ e..

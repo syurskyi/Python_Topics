@@ -34,11 +34,11 @@ ___ extract_quotes(html: s.. = HTML) __ d..:
 
     quotes = soup.find_all('p')
     ___ quote __ quotes:
-        quote_text = quote.getText(strip=T..)
+        quote_text = quote.getText(s..=T..)
         m.. = __.s..(r'"(.+)"',quote_text)
         __ m..:
             a = m...group(1)
-        ____:
+        ____
             _____
         author = __.s..(r'-\s?(.+)$',quote_text).group(1)
 

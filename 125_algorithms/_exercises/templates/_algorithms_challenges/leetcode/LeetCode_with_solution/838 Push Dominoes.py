@@ -76,7 +76,7 @@ c_ Solution:
                 cur = "."
             ____ d __ R[i]:
                 cur = "R"
-            ____:
+            ____
                 cur = "L"
             ret.a..(cur)
 

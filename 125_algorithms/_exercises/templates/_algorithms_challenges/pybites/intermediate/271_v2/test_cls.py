@@ -23,6 +23,6 @@ string_classes =  'Formatter', 'Template'
     (__, re_classes),
     (s__, string_classes),
 ])
-___ test_cls(mod, expected
-    actual = get_classes(mod)
-    ... s..(actual) __ s..(expected)
+___ test_cls(mod, e..
+    a.. = get_classes(mod)
+    ... s..(a..) __ s..(e..)

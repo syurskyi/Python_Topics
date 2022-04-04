@@ -37,7 +37,7 @@ c_ Solution(o..
       ____ key < p.val:
         pre = p
         p = p.left
-      ____:
+      ____
         delete(p, pre)
         _____
     r.. dummy.left

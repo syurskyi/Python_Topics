@@ -18,7 +18,7 @@ c_ Solution(o..
                     j = l-i
                     __ 0 <= i < m a.. 0 <= j < n:
                         result.a..(matrix[i][j])
-            ____:
+            ____
                 ___ j __ r..(l+1
                     i = l-j
                     __ 0 <= i < m a.. 0 <= j < n:

@@ -9,6 +9,6 @@ ___ sum_numbers(numbers: l..) __ i..:
     hundreds_value = l..(l..(r..(0, total, 100))) - 1
     __ (total __ N..) o. (total < 100
         r.. total
-    ____:
+    ____
         num_hundreds = num_hundreds + hundreds_value
         r.. total

@@ -26,7 +26,7 @@ c_ Solution(o..
             numStr = num[pos:i]
             __ pos __ 0:
                 helper(num, i, target, numStr, 0, i..(numStr), res)
-            ____:
+            ____
                 helper(num, i, target, curr+'+'+numStr, evalVal+mult, i..(numStr), res)
                 helper(num, i, target, curr+'-'+numStr, evalVal+mult, -i..(numStr), res)
                 helper(num, i, target, curr+'*'+numStr, evalVal, mult*i..(numStr), res)

@@ -5,7 +5,7 @@ ___ even_odd_partition(lst
     ___ i __ lst:
         __ i % 2 __ 0:
             even.a..(i)
-        ____:
+        ____
             odd.a..(i)
     output.a..(even)
     output.a..(odd)

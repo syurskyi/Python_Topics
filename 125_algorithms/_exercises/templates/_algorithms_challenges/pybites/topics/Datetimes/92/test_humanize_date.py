@@ -29,8 +29,8 @@ ___ n_days_ago_str(days
     (NOW - t..(d.._100), n_days_ago_str(100,
     (NOW - t..(d.._365), n_days_ago_str(365,
 ])
-___ test_pretty_date(arg, expected
-    ... pretty_date(arg) __ expected
+___ test_pretty_date(arg, e..
+    ... pretty_date(arg) __ e..
 
 ___ test_input_variable_of_wrong_type
     w__ p__.r..(V...

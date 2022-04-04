@@ -10,12 +10,12 @@ c_ Solution:
     ___ generate_paren_aux  left, right, cand, res
         __ left __ 0 a.. right __ 0:
             res.a..(''.j..(cand
-        ____:
+        ____
             __ left <= right a.. left > 0:
                 cand.a..('(')
                 generate_paren_aux(left - 1, right, cand, res)
-                cand.pop()
+                cand.p.. )
             __ left < right a.. right > 0:
                 cand.a..(')')
                 generate_paren_aux(left, right - 1, cand, res)
-                cand.pop()
+                cand.p.. )

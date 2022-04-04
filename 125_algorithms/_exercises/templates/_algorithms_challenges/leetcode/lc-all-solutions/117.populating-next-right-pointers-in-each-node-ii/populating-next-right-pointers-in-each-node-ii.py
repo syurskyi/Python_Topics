@@ -26,7 +26,7 @@ c_ Solution:
         head = p.left o. p.right
       __ p.next:
         p = p.next
-      ____:
+      ____
         p = head
         head = N..
         pre = N..

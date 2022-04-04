@@ -20,4 +20,4 @@ c_ Solution:
         ___ c __ options:
             p...a..(c)
             dfs(s, i + 1, ans, p..)
-            p...pop()
+            p...p.. )

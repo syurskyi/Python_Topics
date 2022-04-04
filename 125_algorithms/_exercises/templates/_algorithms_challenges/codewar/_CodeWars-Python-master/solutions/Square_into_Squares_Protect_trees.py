@@ -10,7 +10,7 @@ ___ decompose(n
     goal = 0
     result = [n]
     w.... result:
-        current = result.pop()
+        current = result.p.. )
         goal += current ** 2
         ___ i __ r..(current - 1, 0, -1
             __ goal - (i ** 2) >= 0:

@@ -21,7 +21,7 @@ c_ Solution(o..
                 candidate1, count1 = n, 1
             ____ count2 __ 0:
                 candidate2, count2 = n, 1
-            ____:
+            ____
                 count1 -= 1
                 count2 -= 1
         result    # list

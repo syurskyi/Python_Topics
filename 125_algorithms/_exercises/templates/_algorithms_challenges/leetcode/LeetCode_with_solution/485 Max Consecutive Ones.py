@@ -19,7 +19,7 @@ c_ Solution:
                 w.... e < l..(nums) a.. nums[e] __ 1:
                     e += 1
                 ret = m..(ret, e - s)
-            ____:
+            ____
                 e += 1
 
             s = e

@@ -20,7 +20,7 @@ c_ Solution(o..
           visited.add(i)
           p...a..(nums[i])
           dfs(nums, target - nums[i], i + 1, visited, p.., res)
-          p...pop()
+          p...p.. )
           visited.discard(i)
 
     candidates.s..()

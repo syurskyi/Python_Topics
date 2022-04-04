@@ -14,14 +14,14 @@ c_ Solution(o..
     """
     stack = [(1, root)]
     w.... stack:
-      cmd, p = stack.pop()
+      cmd, p = stack.p.. )
       __ n.. p:
         _____
       __ cmd __ 0:
         k -= 1
         __ k __ 0:
           r.. p.val
-      ____:
+      ____
         stack.a..((1, p.right
         stack.a..((0, p
         stack.a..((1, p.left

@@ -18,7 +18,7 @@ c_ Solution(o..
       ___ c __ d.g.. digit, []
         p...a..(c)
         dfs(d.., index + 1, p.., res, d)
-        p...pop()
+        p...p.. )
 
     res    # list
     dfs(d.., 0, [], res, d)

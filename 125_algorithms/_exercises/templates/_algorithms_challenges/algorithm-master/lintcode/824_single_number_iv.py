@@ -18,12 +18,12 @@ c_ Solution:
             __ mid > 0 a.. nums[mid] __ nums[mid - 1]:
                 __ mid & 1 __ 1:
                     left = mid
-                ____:
+                ____
                     right = mid
-            ____:
+            ____
                 __ mid & 1 __ 1:
                     right = mid
-                ____:
+                ____
                     left = mid
 
         ___ mid __ (left, right

@@ -1,7 +1,7 @@
 ___ check(lst, el
     __ lst.c.. el) > 0:
         r.. T..
-    ____:
+    ____
         r.. F..
 
 

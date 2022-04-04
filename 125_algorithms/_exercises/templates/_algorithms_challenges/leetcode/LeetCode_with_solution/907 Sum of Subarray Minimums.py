@@ -53,7 +53,7 @@ c_ Solution:
         stk    # list
         ___ i __ r..(n
             w.... stk a.. A[stk[-1]] >= A[i]:
-                stk.pop()
+                stk.p.. )
 
             __ stk:
                 L[i] = stk[-1]
@@ -63,7 +63,7 @@ c_ Solution:
         ___ i __ r..(n-1, -1, -1
             # avoid double count when equal, attribtue to leftmost duplicate
             w.... stk a.. A[stk[-1]] > A[i]:
-                stk.pop()
+                stk.p.. )
 
             __ stk:
                 R[i] = stk[-1]
@@ -90,7 +90,7 @@ c_ Solution:
         ret = 0
         ___ i, a __ e..(A
             w.... stk a.. A[stk[-1]] > a:
-                h = stk.pop()
+                h = stk.p.. )
                 # record for h
                 ret += A[h] * (h - stk[-1]) * (i - h)
                 ret %= MOD

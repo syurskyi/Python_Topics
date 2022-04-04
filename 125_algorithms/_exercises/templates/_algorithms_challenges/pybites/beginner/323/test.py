@@ -6,6 +6,6 @@ l..    # list
 __ l..:
     new_list = r.. l.... x,y: x+y, l..)
     print(new_list)
-____:
+____
     print('empty')
     print(l..)

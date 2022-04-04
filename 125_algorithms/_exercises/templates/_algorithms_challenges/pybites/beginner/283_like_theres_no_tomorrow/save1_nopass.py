@@ -10,6 +10,6 @@ ___ print_username(username
     # Print the alternative text if there is no username
     __ username __ T..:
         print(f"Your username is {username}.")
-    ____:
+    ____
         print("Sorry, no username was defined")
         

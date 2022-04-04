@@ -45,7 +45,7 @@ c_ Tree(o..
         stack = [self]
         visited = s..()
         w.... stack:
-            tree = stack.pop(0)
+            tree = stack.p.. 0)
             __ tree.label __ visited:
                 _____
             visited.add(tree.label)
@@ -61,7 +61,7 @@ c_ Tree(o..
         p.. = [from_node]
         w.... p..[-1] != to_node:
             ___
-                tree = stack.pop()
+                tree = stack.p.. )
             ______ I..
                 r.. V...("No path found")
             __ to_node __ tree:

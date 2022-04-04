@@ -65,7 +65,7 @@ c_ Solution:
         __ node.end_of __ n.. N..
             next_words.a..(p.. | )
             ans = m..(ans, cnt + 1)
-        ____:
+        ____
             ___ dx, dy __ (
                 (-1, 0), (1, 0),
                 (0, -1), (0, 1),
@@ -78,7 +78,7 @@ c_ Solution:
 
                 find_next_words(board, _x, _y, visited, cnt, node, next_words, p..)
 
-        p...pop()
+        p...p.. )
         visited.discard((x, y
 
     ___ put  root, word

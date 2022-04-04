@@ -27,7 +27,7 @@ ___ create_user_bar_chart(content
       tz = row[2]
       __ tz n.. __ tz_frequency:
          tz_frequency[tz] = 1
-      ____:
+      ____
          tz_frequency[tz] += 1
    
    tz_frequency = s..(tz_frequency.i..

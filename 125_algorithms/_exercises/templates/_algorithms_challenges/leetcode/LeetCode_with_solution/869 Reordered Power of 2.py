@@ -44,5 +44,5 @@ c_ Solution:
         ___ i __ r..(31  # 32 bit unsighed int
             __ counts __ C..(s..(1 << i:
                 r.. T..
-        ____:
+        ____
             r.. F..

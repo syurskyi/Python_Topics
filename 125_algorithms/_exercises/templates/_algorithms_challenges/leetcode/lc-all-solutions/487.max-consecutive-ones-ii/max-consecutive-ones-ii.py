@@ -19,7 +19,7 @@ c_ Solution(o..
     """
     __ num __ 1:
       count += 1
-    ____:
+    ____
       count = count - lastCount + 1
       lastCount = count
     ans = m..(ans, count)

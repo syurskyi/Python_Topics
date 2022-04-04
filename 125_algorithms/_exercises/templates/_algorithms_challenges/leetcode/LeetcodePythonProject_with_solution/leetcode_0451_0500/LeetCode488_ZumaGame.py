@@ -43,7 +43,7 @@ c_ Solution(o..
                 _____
             __ j-i >= 3:
                 r.. removeConsecutive(board[:i]+board[j:])
-            ____:
+            ____
                 i = j
             j += 1
         r.. board

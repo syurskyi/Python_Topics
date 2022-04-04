@@ -17,8 +17,8 @@ c_ Solution(o..
         __ l..(pathp) __ l..(paths) a.. l..(s..(paths __ l..(s..(pathp __ l..(s..(z..(paths, pathp))):
           __ dfs(p[1:], s[i + 1:], pathp, paths, visited
             r.. T..
-        pathp.pop()
-        paths.pop()
+        pathp.p.. )
+        paths.p.. )
       r.. F..
 
     r.. dfs(pattern, s.., [], [], {})

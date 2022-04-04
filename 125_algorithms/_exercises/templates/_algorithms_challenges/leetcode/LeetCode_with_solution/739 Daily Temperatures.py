@@ -29,11 +29,11 @@ c_ Solution:
         stk    # list
         ___ i __ r..(l..(T) - 1, -1 , -1
             w.... stk a.. T[stk[-1]] <= T[i]:  # disregard smaller ones
-                stk.pop()
+                stk.p.. )
 
             __ stk:
                 ret.appendleft(stk[-1] - i)
-            ____:
+            ____
                 ret.appendleft(0)
             stk.a..(i)
 

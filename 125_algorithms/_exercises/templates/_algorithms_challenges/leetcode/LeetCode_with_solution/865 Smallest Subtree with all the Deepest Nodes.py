@@ -45,7 +45,7 @@ c_ Solution:
         """
         down(root, 0)
         __ l..(deepest_nodes) __ 1:
-            r.. deepest_nodes.pop()
+            r.. deepest_nodes.p.. )
 
         c.. root)
         r.. ret

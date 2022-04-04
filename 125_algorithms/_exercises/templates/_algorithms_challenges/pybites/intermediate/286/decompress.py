@@ -8,7 +8,7 @@ ___ decompress(s__: s.., table: Dict[s.., s..]) __ s..:
     ___ c __ s__:
         __ c __ table:
             result.extend(decompress(table[c],table
-        ____:
+        ____
             result.a..(c)
 
     r.. ''.j..(result)

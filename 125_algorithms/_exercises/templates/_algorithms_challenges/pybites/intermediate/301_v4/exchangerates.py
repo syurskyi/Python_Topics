@@ -50,7 +50,7 @@ ___ match_daily_rates(start: date,
     keys = l..(daily_rates.keys
     __ isi..(keys[0], s..
         data_days = s..(l.. m..(_parse_date, keys)))
-    ____:
+    ____
         data_days = s..(keys)
 
     r_start = m..(data_days)
@@ -64,11 +64,11 @@ ___ match_daily_rates(start: date,
     ___ day __ days:
         __ day __ data_days:
             m.. = day
-        ____:
+        ____
             closest = m..(data_days, key=l.... x: abs((x-day).days
             __ closest > day:
                 m.. = data_days[data_days.i.. closest) - 1]
-            ____:
+            ____
                 m.. = closest
         result[day] = m..
 

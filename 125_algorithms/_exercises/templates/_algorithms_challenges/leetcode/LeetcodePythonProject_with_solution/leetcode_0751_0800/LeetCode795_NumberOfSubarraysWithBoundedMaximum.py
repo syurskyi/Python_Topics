@@ -21,7 +21,7 @@ c_ Solution(o..
                 count = i-j+1
             ____ arr[i] < l:
                 res += count
-            ____:
+            ____
                 j = i+1
                 count = 0
         r.. res

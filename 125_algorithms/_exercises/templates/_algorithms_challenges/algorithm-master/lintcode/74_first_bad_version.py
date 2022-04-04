@@ -27,7 +27,7 @@ c_ Solution:
             mid = (left + right) // 2
             __ isBadVersion(mid
                 right = mid
-            ____:
+            ____
                 left = mid
 
         r.. left __ isBadVersion(left) ____ right

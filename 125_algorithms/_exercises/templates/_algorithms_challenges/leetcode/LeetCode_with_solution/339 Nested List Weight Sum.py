@@ -50,7 +50,7 @@ c_ Solution(o..
     ___ dfs  ni, depth
         __ ni.isInteger
             s.. += ni.getInteger() * depth
-        ____:
+        ____
             lst = ni.getList()
             ___ elt __ lst:
                 dfs(elt, depth + 1)

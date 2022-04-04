@@ -61,7 +61,7 @@ ___ make_character_index(text=text, characters=CHARACTERS
             __ isi..(char, t..
                 __ any m..(l.... c: c.l.. __ line, char:
                     index[char[0].l..].a..(n)
-            ____:
+            ____
                 __ char.l.. __ line:
                     index[char.l..].a..(n)
     r.. index

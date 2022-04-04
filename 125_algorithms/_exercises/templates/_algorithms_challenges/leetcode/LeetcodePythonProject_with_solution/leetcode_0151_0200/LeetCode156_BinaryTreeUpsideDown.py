@@ -23,10 +23,10 @@ c_ Solution(o..
         w.... node:
             stack.a..(node)
             node = node.left
-        root = stack.pop()
+        root = stack.p.. )
         node = root
         w.... stack:
-            newNode = stack.pop()
+            newNode = stack.p.. )
             right = newNode.right
             node.left = right
             node.right = newNode

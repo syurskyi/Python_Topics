@@ -21,19 +21,19 @@ c_ Solution(o..
             
             __ (rect[0], rect[1]) n.. __ hashset:
                 hashset.add((rect[0], rect[1]
-            ____:
+            ____
                 hashset.discard((rect[0], rect[1]
             __ (rect[0], rect[3]) n.. __ hashset:
                 hashset.add((rect[0], rect[3]
-            ____:
+            ____
                 hashset.discard((rect[0], rect[3]
             __ (rect[2], rect[3]) n.. __ hashset:
                 hashset.add((rect[2], rect[3]
-            ____:
+            ____
                 hashset.discard((rect[2], rect[3]
             __ (rect[2], rect[1]) n.. __ hashset:
                 hashset.add((rect[2], rect[1]
-            ____:
+            ____
                 hashset.discard((rect[2], rect[1]
         
         __ (x1, y1) n.. __ hashset o.\

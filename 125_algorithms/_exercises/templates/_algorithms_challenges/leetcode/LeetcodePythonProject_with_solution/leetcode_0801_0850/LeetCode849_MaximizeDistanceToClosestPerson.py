@@ -14,7 +14,7 @@ c_ Solution(o..
             __ seats[j] __ 1:
                 __ i __ 0:
                     res = j
-                ____:
+                ____
                     res = m..(res, (j-i+1) >> 1)
                 i = j+1
         r.. m..(res, l..(seats)-i)

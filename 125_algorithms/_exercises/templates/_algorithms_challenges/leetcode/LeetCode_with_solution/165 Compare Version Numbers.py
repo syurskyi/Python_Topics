@@ -29,7 +29,7 @@ c_ Solution:
         ___ i __ x..(m..(n1, n2:
             __ version1[i] __ version2[i]:
                 p..
-            ____:
+            ____
                 r.. -1 __ version1[i] < version2[i] ____ 1
 
         # 1.0.0 and 1 

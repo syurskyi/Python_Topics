@@ -29,7 +29,7 @@ c_ Solution:
             # if needs to prevent overflow, `// gcd`
             __ S[i] __ '+':
                 a = a * _b + _a * b
-            ____:
+            ____
                 a = a * _b - _a * b
 
             b = b * _b

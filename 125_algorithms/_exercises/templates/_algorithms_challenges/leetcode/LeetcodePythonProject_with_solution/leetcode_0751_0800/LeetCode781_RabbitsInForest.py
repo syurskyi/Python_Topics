@@ -17,7 +17,7 @@ c_ Solution(o..
             group = count//(n+1)
             __ count%(n+1) != 0:
                 res += (group+1)*(n+1)
-            ____:
+            ____
                 res += group*(n+1)
         r.. res
     

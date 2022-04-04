@@ -10,6 +10,6 @@ c_ Solution(o..
         a = num
       ____ num <= b:
         b = num
-      ____:
+      ____
         r.. T..
     r.. F..

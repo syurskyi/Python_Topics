@@ -57,7 +57,7 @@ c_ Solution:
                 ret.a..(Interval(lo, hi
             __ A[i].end > B[j].end:
                 j += 1
-            ____:
+            ____
                 i += 1
 
         r.. ret
@@ -79,9 +79,9 @@ c_ Solution:
             ____ a.start <= b.end <= a.end:
                 ret.a..(Interval(m..(a.start, b.start), b.end
                 j += 1
-            ____:
+            ____
                 __ a.end < b.start:
                     i += 1
-                ____:
+                ____
                     j += 1
         r.. ret

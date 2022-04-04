@@ -77,7 +77,7 @@ c_ Solution(o..
                     prev = i+1
                 i+=1
             r.. nestedInt
-        ____:
+        ____
             nestedInt = NestedInteger()
             __ s:
                 nestedInt.setInteger(i..(s

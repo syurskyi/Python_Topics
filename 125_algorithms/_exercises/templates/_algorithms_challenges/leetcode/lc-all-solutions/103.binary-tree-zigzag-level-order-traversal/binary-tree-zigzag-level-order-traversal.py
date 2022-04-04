@@ -28,7 +28,7 @@ c_ Solution(o..
       __ level:
         __ odd:
           ans.a..(level)
-        ____:
+        ____
           ans.a..(level[::-1])
       odd  n.. odd
     r.. ans

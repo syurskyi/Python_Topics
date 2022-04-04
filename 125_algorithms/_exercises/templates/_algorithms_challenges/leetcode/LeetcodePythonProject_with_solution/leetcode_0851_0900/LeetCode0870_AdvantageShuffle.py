@@ -25,7 +25,7 @@ c_ Solution(o..
             __ arrA[r] > val:
                 res[idx] = arrA[r]
                 r -= 1
-            ____:
+            ____
                 res[idx] = arrA[l]
                 l += 1
         r.. res

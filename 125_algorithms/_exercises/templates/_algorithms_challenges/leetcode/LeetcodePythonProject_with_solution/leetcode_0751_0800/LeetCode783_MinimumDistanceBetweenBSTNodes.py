@@ -23,7 +23,7 @@ c_ Solution(o..
         prev = f__('-inf')
         res = f__('inf')
         w.... stack:
-            node = stack.pop()
+            node = stack.p.. )
             res = m..(res, node.val-prev)
             prev = node.val
             node0 = node.right

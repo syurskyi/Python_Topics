@@ -18,7 +18,7 @@ ___ group(iterable, n
 
     __ n.. isi..(iterable, types.GeneratorType
       input = (ele ___ ele __ iterable)
-    ____:
+    ____
       input = iterable
 
     result    # list
@@ -26,7 +26,7 @@ ___ group(iterable, n
       section = l..(islice(input, n
       __ section:
         result.a..(section)
-      ____:
+      ____
         _____
 
     r.. result

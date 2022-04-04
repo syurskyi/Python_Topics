@@ -13,6 +13,6 @@ c_ Solution(o..
         lo = mid + 1
       ____ v > x:
         hi = mid - 1
-      ____:
+      ____
         r.. mid
     r.. hi

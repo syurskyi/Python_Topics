@@ -17,12 +17,12 @@ FILES = ('bite.html commands.sh out_grepped pytest_testrun.out '
    ('o$tput',  'output' ),
    ('nonsense', []),
 ])
-___ test_example_docstring(tmp_path, filter_str, expected
+___ test_example_docstring(tmp_path, filter_str, e..
     # let's create some files in tmp
     ___ fi __ 'bite1 test output'.s.. :
         o.. tmp_path / fi, 'a').c..
-    actual = get_matching_files(tmp_path, filter_str)
-    ... s..(actual) __ s..(expected)
+    a.. = get_matching_files(tmp_path, filter_str)
+    ... s..(a..) __ s..(e..)
 
 
 ?p__.m__.p.("filter_str, expected", [
@@ -39,9 +39,9 @@ ___ test_example_docstring(tmp_path, filter_str, expected
    ('pytest_t',  'pytest_testrun.out', 'pytest_timings.out' ),
    ('timings-templates.PY',  'timings-template.py' ),
 ])
-___ test_other_files(tmp_path, filter_str, expected
+___ test_other_files(tmp_path, filter_str, e..
     # let's create some files in tmp
     ___ fi __ FILES:
         o.. tmp_path / fi, 'a').c..
-    actual = get_matching_files(tmp_path, filter_str)
-    ... s..(actual) __ s..(expected)
+    a.. = get_matching_files(tmp_path, filter_str)
+    ... s..(a..) __ s..(e..)

@@ -20,7 +20,7 @@ c_ Solution(o..
       res.a..(root.val)
       __ root.left:
         dfsLeft(root.left, res)
-      ____:
+      ____
         dfsLeft(root.right, res)
 
     ___ dfsRight(root, res
@@ -28,7 +28,7 @@ c_ Solution(o..
         r..
       __ root.right:
         dfsRight(root.right, res)
-      ____:
+      ____
         dfsRight(root.left, res)
       res.a..(root.val)
 

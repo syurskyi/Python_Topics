@@ -57,5 +57,5 @@ she is talking super fast here!
     (text4, [19, 21, 20]),
     (text5, [34, 32, 33]),
 ])
-___ test_srt(text, expected
-    ... get_srt_section_ids(text) __ expected
+___ test_srt(text, e..
+    ... get_srt_section_ids(text) __ e..

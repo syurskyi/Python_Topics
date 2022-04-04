@@ -24,12 +24,12 @@ c_ Solution(o..
             j = nums[i]
             __ nums[i] != i a.. j < n:
                 nums[i], nums[j] = nums[j], nums[i]
-            ____:
+            ____
                 i += 1
         ___ i, e __ e..(nums
             __ i != e:
                 r.. i
-        ____:
+        ____
             r.. n
 
 

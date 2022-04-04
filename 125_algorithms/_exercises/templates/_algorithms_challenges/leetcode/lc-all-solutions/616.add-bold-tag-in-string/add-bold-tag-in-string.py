@@ -24,7 +24,7 @@ c_ Solution(o..
       __ i __ d:
         ans.a..("<b>{}</b>".f..(s[i:d[i] + 1]
         i = d[i] + 1
-      ____:
+      ____
         ans.a..(s[i])
         i += 1
     r.. "".j..(ans)
@@ -34,6 +34,6 @@ c_ Solution(o..
     ___ intv __ s..(intervals, key=l.... x: x[0]
       __ ans a.. ans[-1][1] + 1 >= intv[0]:
         ans[-1][1] = m..(ans[-1][1], intv[1])
-      ____:
+      ____
         ans += intv,
     r.. ans

@@ -57,7 +57,7 @@ c_ Solution:
                 ___ i __ x..(1, val+1  # now jumping
                     __ ind+i<l+1:
                         dp[ind+i] = T..
-                    ____:
+                    ____
                         _____
         r.. dp[-1]
 

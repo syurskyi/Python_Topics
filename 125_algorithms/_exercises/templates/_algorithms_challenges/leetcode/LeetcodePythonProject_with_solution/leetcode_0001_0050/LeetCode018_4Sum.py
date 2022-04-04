@@ -32,7 +32,7 @@ c_ Solution(o..
                             l -= 1
                     ____ tmp < target:
                         k += 1
-                    ____:
+                    ____
                         l -= 1
         r.. res
     

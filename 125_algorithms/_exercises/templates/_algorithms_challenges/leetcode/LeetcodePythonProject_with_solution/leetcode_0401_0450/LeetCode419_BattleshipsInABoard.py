@@ -24,7 +24,7 @@ c_ Solution(o..
                     ____ j __ 0:
                         __ board[i-1][j] __ '.':
                             count += 1
-                    ____:
+                    ____
                         __ board[i-1][j] __ '.' a.. board[i][j-1] __ '.':
                             count += 1
         r.. count

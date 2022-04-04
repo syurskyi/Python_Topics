@@ -11,6 +11,6 @@ ___ i __ prices:
     total_sum += i
     __ total_sum > k:
         _____
-    ____:
+    ____
         count += 1
 print(count)

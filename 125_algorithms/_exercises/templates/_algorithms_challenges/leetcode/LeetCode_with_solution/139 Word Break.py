@@ -32,7 +32,7 @@ c_ Solution:
                 ___
                     __ wordBreak_TLE(s[i+1:], d..
                         r.. T..
-                    ____:
+                    ____
                         _____
                 ______ I..
                     r.. T..

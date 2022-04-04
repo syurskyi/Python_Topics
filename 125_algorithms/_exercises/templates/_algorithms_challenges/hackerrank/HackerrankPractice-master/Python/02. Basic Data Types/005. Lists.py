@@ -8,7 +8,7 @@ ___ handler(result
     values  inp[1:]
     __ command __ 'print':
         print(result)
-    ____:
+    ____
         execute  'result.' + command + "(" + ",".j..(values) + ")"
         eval(execute)
 

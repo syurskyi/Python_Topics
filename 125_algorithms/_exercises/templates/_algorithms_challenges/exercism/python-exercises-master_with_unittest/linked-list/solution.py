@@ -15,7 +15,7 @@ c_ LinkedList(o..
         new_node = Node(value)
         __ n.. head:
             head = tail = new_node
-        ____:
+        ____
             new_node.prev = tail
             tail.next = new_node
             tail = new_node
@@ -25,7 +25,7 @@ c_ LinkedList(o..
         node = tail
         __ node __ N.. o. node.prev __ N..
             head = tail = N..
-        ____:
+        ____
             tail = tail.prev
             tail.next = N..
         length -= 1
@@ -35,7 +35,7 @@ c_ LinkedList(o..
         node = head
         __ node __ N.. o. node.next __ N..
             head = tail = N..
-        ____:
+        ____
             head = head.next
             head.prev = N..
         length -= 1
@@ -45,7 +45,7 @@ c_ LinkedList(o..
         new_node = Node(value)
         __ n.. head:
             head = tail = new_node
-        ____:
+        ____
             new_node.next = head
             head.prev = new_node
             head = new_node

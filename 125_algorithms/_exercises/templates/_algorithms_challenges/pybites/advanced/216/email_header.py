@@ -34,7 +34,7 @@ ___ get_email_details(header: s..) __ d..:
         date = __.s..(r'^Date: (.+) (?:\+|\-)',header,flags=__.MULTILINE).group(1).s..
     ______:
         r..
-    ____:
+    ____
         d = {'from': from_,'to': to,'subject': subject,'date': date}
     r.. d
 

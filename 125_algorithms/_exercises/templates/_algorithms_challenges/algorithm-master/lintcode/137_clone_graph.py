@@ -28,7 +28,7 @@ c_ Solution:
                 _node = N..
                 __ neighbor.label __ N:
                     _node = N[neighbor.label]
-                ____:
+                ____
                     _node = UndirectedGraphNode(neighbor.label)
                     N[neighbor.label] = _node
                     queue.a..(neighbor)

@@ -11,7 +11,7 @@ c_ Solution:
             r.. N..
         ____ n __ 0:
             r.. head
-        ____:
+        ____
             q = p = pp = head  # `pp` is the node preceding `p`
             w.... q __ n.. N..
                 __ n <= 0:
@@ -22,7 +22,7 @@ c_ Solution:
             # Remove the head node
             __ pp __ p:
                 head = pp.next
-            ____:
+            ____
                 pp.next = p.next
                 # Free p
             r.. head

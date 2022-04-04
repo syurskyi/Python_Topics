@@ -8,7 +8,7 @@ c_ Solution:
         r.. -1
       ____ stra + strb > strb + stra:
         r.. 1
-      ____:
+      ____
         r.. 0
 
     nums.s..(cmp=cmpFunc, r.._T..

@@ -11,5 +11,5 @@ ____ sum_indices _______ sum_indices
                         ( 'a', 'b', 'b', 'c', 'a', 'b', 'a' , 29),
                         ( 'a', 'b', 'c', 'd', 'e', 'a', 'f', 'a', 'g', 'd', 'a' , 75),
                         ( 'a', 'b', 'z', 'c', 'd', 'x', 'b', 'x', 'e' , 42), ])
-___ test_sum_indices(test_input, expected
-    ... sum_indices(test_input) __ expected
+___ test_sum_indices(test_input, e..
+    ... sum_indices(test_input) __ e..

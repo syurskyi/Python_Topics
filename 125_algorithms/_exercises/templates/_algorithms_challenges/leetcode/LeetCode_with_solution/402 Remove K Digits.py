@@ -36,11 +36,11 @@ c_ Solution(o..
         stk    # list  # result after removal
         ___ char __ num:
             w.... k a.. stk a.. stk[-1] > char:
-                stk.pop()
+                stk.p.. )
                 k -= 1
 
             stk.a..(char)
 
-        ___ _ __ x..(k stk.pop()
+        ___ _ __ x..(k stk.p.. )
 
         r.. ''.j..(stk).l..('0') o. '0'

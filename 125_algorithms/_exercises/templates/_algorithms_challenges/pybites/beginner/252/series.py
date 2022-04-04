@@ -61,7 +61,7 @@ ___ get_every_second_indexes(ser: pd.Series,
 
     __ even_index:
         r.. ser[::2]
-    ____:
+    ____
         r.. ser[1::2]
 
 

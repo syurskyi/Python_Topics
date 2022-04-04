@@ -44,7 +44,7 @@ ___ sort_books_by_first_authors_last_name(books=books
     Expected last book in list:
     Automate the Boring Stuff with Python
     """
-    first_authors_last_name = s..(books, key=l.... book: l..(book.authors.s..(" ")[1].strip(" ")))
+    first_authors_last_name = s..(books, key=l.... book: l..(book.authors.s..(" ")[1].s..(" ")))
     r.. first_authors_last_name
 
 

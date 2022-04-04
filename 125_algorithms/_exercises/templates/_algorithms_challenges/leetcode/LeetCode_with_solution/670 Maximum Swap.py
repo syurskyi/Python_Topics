@@ -31,7 +31,7 @@ c_ Solution:
 
         ___ i __ r..(n
             w.... stk a.. stk[-1][0] <= i:
-                stk.pop()
+                stk.p.. )
             __ stk a.. stk[-1][1] > nums[i]:
                 j = stk[-1][0]
                 nums[i], nums[j] = nums[j], nums[i]

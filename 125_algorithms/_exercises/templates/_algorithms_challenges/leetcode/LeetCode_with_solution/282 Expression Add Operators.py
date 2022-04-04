@@ -33,7 +33,7 @@ c_ Solution(o..
         __ pos >= l..(num
             __ cur_val __ target:
                 ret.a..(cur_str)
-        ____:
+        ____
             ___ i __ x..(pos, l..(num:
                 __ i != pos a.. num[pos] __ "0":
                     _____
@@ -41,7 +41,7 @@ c_ Solution(o..
 
                 __ n.. cur_str:
                     dfs(num, target, i+1, "%d"%nxt_val, nxt_val, nxt_val, ret)
-                ____:
+                ____
                     dfs(num, target, i+1, cur_str+"+%d"%nxt_val, cur_val+nxt_val, nxt_val, ret)
                     dfs(num, target, i+1, cur_str+"-%d"%nxt_val, cur_val-nxt_val, -nxt_val, ret)
                     dfs(num, target, i+1, cur_str+"*%d"%nxt_val, cur_val-mul+mul*nxt_val, mul*nxt_val, ret)

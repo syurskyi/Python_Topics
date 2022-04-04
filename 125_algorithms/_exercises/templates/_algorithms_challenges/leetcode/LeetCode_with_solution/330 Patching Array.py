@@ -48,7 +48,7 @@ c_ Solution(o..
             __ i >= l..(nums) o. cur_max + 1 < nums[i]:
                 cur_max += cur_max + 1
                 cnt += 1
-            ____:
+            ____
                 cur_max += nums[i]
                 i += 1
 

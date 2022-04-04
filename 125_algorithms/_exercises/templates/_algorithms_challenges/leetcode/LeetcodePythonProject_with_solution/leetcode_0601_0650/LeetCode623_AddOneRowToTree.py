@@ -27,7 +27,7 @@ c_ Solution(o..
         w.... queue:
             num = l..(queue)
             ___ _ __ r..(num
-                node = queue.pop(0)
+                node = queue.p.. 0)
                 __ node.left:
                     __ level __ d-1:
                         newNode = TreeNode(v)
@@ -35,7 +35,7 @@ c_ Solution(o..
                         node.left = newNode
                         newNode.left = node0
                         queue.a..(newNode)
-                    ____:
+                    ____
                         queue.a..(node.left)
                 ____ level __ d-1:
                     node.left = TreeNode(v)
@@ -47,7 +47,7 @@ c_ Solution(o..
                         node.right = newNode
                         newNode.right = node0
                         queue.a..(newNode)
-                    ____:
+                    ____
                         queue.a..(node.right)
                 ____ level __ d-1:
                     node.right = TreeNode(v)

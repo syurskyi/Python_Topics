@@ -12,7 +12,7 @@ c_ Solution(o..
             root1 = findRoot(roots, e[1])
             __ root0 != root1:
                 roots[root0] = root1
-            ____:
+            ____
                 r.. F..
         r.. l..(edges) __ n-1
     
@@ -38,7 +38,7 @@ c_ Solution(o..
         visited = [F..]*n
         w.... queue:
             top = queue[0]
-            queue.pop(0)
+            queue.p.. 0)
             __ visited[top]:
                 r.. F..
             visited[top] = T..

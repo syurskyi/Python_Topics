@@ -11,10 +11,10 @@ c_ PhoneDirectory(o..
     
     ___ get
         __ availableNums:
-            num = availableNums.pop()
+            num = availableNums.p.. )
             usedNums.add(num)
             r.. num
-        ____:
+        ____
             r.. -1
     
     ___ check  number

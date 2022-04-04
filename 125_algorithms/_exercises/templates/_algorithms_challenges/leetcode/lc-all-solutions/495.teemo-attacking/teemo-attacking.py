@@ -14,7 +14,7 @@ c_ Solution(o..
       s = timeSeries[i]
       __ s <= end:
         end = s + duration
-      ____:
+      ____
         ans += end - start
         start = s
         end = start + duration

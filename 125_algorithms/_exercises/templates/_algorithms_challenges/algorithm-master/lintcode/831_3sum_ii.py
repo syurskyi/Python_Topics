@@ -28,7 +28,7 @@ c_ Solution:
                     b += 1
                 ____ _sum > n:
                     c -= 1
-                ____:
+                ____
                     ans += 1
                     b += 1
                     c -= 1
@@ -58,7 +58,7 @@ c_ Solution:
                     b += 1
                 ____ _sum > target:
                     c -= 1
-                ____:
+                ____
                     ans += 1
                     b += 1
 

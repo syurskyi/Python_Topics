@@ -29,7 +29,7 @@ c_ CryptoSquare:
 
     $
     ___ square_size(msg_length
-        r.. i..(m__.ceil(msg_length ** 0.5
+        r.. i..(m__.c.. msg_length ** 0.5
 
     # https://stackoverflow.com/a/4938130/2813210
     $

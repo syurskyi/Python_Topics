@@ -17,7 +17,7 @@ c_ Solution:
             r.. minDepth(root.right) + 1
         ____ root.left __ n.. N.. a.. root.right __ N..
             r.. minDepth(root.left) + 1
-        ____:
+        ____
             left_min = minDepth(root.left)
             right_min = minDepth(root.right)
             r.. m..(left_min, right_min) + 1

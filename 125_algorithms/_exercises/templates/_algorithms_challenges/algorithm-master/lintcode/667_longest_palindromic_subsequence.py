@@ -26,7 +26,7 @@ c_ Solution:
             start = end - 1
             __ s[start] __ s[end]:
                 dp[start][end] = 2
-            ____:
+            ____
                 dp[start][end] = 1
 
         ___ size __ r..(3, n + 1

@@ -50,7 +50,7 @@ c_ Solution:
         ___ e __ nums2[::-1]:
             w.... stk a.. stk[-1] <= e:
                 # until stk[-1] > e
-                stk.pop()
+                stk.p.. )
 
             h[e] = stk[-1] __ stk ____ -1
             stk.a..(e)

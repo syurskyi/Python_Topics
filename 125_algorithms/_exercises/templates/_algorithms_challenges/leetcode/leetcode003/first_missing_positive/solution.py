@@ -18,7 +18,7 @@ c_ Solution:
             j = A[i] - 1
             __ A[i] != i + 1 a.. A[i] >= 1 a.. A[i] <= n a.. A[i] != A[j]:
                 A[i], A[j] = A[j], A[i]
-            ____:
+            ____
                 i += 1
         ___ i, e __ e..(A
             __ e != i + 1:

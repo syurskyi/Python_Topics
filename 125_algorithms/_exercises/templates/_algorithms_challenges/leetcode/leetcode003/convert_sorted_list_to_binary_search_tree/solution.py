@@ -21,7 +21,7 @@ c_ Solution:
     ___ sortedListToBST  head
         __ head __ N..
             r.. N..
-        ____:
+        ____
             # Get the middle node
             slow = head
             fast = head

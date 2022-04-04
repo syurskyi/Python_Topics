@@ -14,7 +14,7 @@ c_ RandomizedSet(o..
             nums.a..(val)
             pos[val] = l..(nums)-1
             r.. T..
-        ____:
+        ____
             r.. F..
     
     ___ remove  val
@@ -24,7 +24,7 @@ c_ RandomizedSet(o..
             nums[ind] = lastVal
             pos[lastVal] = ind
             del pos[val]
-            nums.pop()
+            nums.p.. )
             r.. T..
         r.. F..
     

@@ -81,7 +81,7 @@ c_ BowlingGame(o..
             r.. V...("invalid pins")
         ____ current_frame_idx __ MAX_FRAME:
             roll_bonus(pins)
-        ____:
+        ____
             current_frame.throw(pins)
             __ current_frame.is_closed
                 current_frame_idx += 1

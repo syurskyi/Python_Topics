@@ -7,6 +7,6 @@ c_ RecordScore:
     ___ __call__  score
         __ record __ N..
             record = score
-        ____:
+        ____
             record = m..(record, score)
         r.. record

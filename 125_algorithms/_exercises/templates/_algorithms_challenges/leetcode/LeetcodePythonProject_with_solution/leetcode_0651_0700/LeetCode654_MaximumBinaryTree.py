@@ -33,7 +33,7 @@ c_ Solution(o..
             newNode = constructMaximumBinaryTree(nums)
             __ newNode:
                 print(newNode.val)
-            ____:
+            ____
                 print(N..)
             print('-='*30+'-')
 

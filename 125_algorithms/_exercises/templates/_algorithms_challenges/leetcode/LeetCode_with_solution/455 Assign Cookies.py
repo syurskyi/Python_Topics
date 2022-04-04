@@ -32,7 +32,7 @@ c_ Solution:
                 ret += 1
                 i += 1
                 j += 1
-            ____:
+            ____
                 j += 1
 
         r.. ret

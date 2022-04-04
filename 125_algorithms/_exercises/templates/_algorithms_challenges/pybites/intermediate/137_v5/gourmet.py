@@ -115,7 +115,7 @@ ___ best_match_per_wine(wine_type="all"
         wines = WINE_LIST[wine_type]
     ____ wine_type __ WINE_LIST 'all' :
         wines = [wine_type]
-    ____:
+    ____
         r.. V...('Wine not recognised')
     cheeses = CHEESES
     hi_score = Scores('', '', 0)

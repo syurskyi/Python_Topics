@@ -45,7 +45,7 @@ c_ Solution:
 
         __ carry:
             ans[0] = s..(carry)
-        ____:
+        ____
             ans = ans[1:]
 
         r.. ''.j..(ans)

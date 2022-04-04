@@ -35,7 +35,7 @@ texts = (
      "The accent grave (grave accent) à, è, ù ..."
      "The accent tréma (dieresis/umlaut) ë, ï, ü"),
 )
-expected = (
+e.. = (
      'á', 'é', 'ñ', 'ú' ,
      'á', 'é', 'í', 'ñ' ,
      'á', 'é', 'í', 'ñ' ,
@@ -43,9 +43,9 @@ expected = (
 )
 
 
-?p__.m__.p.("text, expected", z..(texts, expected
-___ test_filter_accents(text, expected
+?p__.m__.p.("text, expected", z..(texts, e..
+___ test_filter_accents(text, e..
     # get rid of duplicates and sort results
     result = filter_accents(text)
-    actual = s..(l..(s..(result)))
-    ... actual __ expected
+    a.. = s..(l..(s..(result)))
+    ... a.. __ e..

@@ -13,7 +13,7 @@ c_ Solution(o..
         ___ point __ points:
             __ point[0] > maxLen:
                 maxLen = point[1]
-            ____:
+            ____
                 count += 1
         r.. l..(points)-count
     

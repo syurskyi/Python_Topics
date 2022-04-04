@@ -7,7 +7,7 @@ w... T...
     line = input()
     __(line
         values.a..(line.r..(" ", ""
-    ____:
+    ____
         _____
 mod = i..(values[l..(values)-1][1:])
 

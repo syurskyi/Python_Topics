@@ -19,7 +19,7 @@ c_ Solution(o..
         ___ i __ r..(1, l..(intervals:
             __ intervals[i].start >= maxLen:
                 maxLen = intervals[i].end
-            ____:
+            ____
                 count += 1
         r.. count
     

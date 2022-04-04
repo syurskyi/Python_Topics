@@ -15,9 +15,9 @@ c_ Solution(o..
                 stack.a..(['', i..(num)])
                 num = ''
             ____ c __ ' ':
-                st, k = stack.pop()
+                st, k = stack.p.. )
                 stack[-1][0] += st*k
-            ____:
+            ____
                 stack[-1][0] += c
         r.. stack[0][0]
     
@@ -49,6 +49,6 @@ c_ Solution(o..
             ____ n.. c.i..
                 result += c
                 i += 1
-            ____:
+            ____
                 i += 1
         r.. result

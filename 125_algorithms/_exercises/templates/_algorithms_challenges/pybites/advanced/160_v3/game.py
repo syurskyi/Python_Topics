@@ -43,8 +43,8 @@ ___ get_winner(player1, player2, defeat_mapping_ N..
 
     __ player1 __ player2:
         r.. 'Tie'
-    ____:
+    ____
         __ player1 __ defeat_mapping[player2]:
             r.. player2
-        ____:
+        ____
             r.. player1

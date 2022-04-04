@@ -14,7 +14,7 @@ c_ Solution(o..
           count += 1
       __ count >= mid:
         end = mid
-      ____:
+      ____
         start = mid
     __ nums.c.. start) > nums.c.. end
       r.. start

@@ -12,7 +12,7 @@ c_ Solution(o..
     w.... j < l..(strs) a.. i < l..(strs[j]
       __ j __ 0:
         char = strs[j][i]
-      ____:
+      ____
         __ strs[j][i] != char:
           _____
 
@@ -20,7 +20,7 @@ c_ Solution(o..
         i += 1
         j = 0
         end += 1
-      ____:
+      ____
         j += 1
 
     r.. strs[j][:end]

@@ -11,10 +11,10 @@ c_ Solution:
         n = l..(height)
         ___ i __ r..(n + 1
             w.... stack a.. (i __ n o. height[stack[-1]] > height[i]
-                h = height[stack.pop()]
+                h = height[stack.p.. )]
                 __ stack:
                     w = i - stack[-1] - 1
-                ____:
+                ____
                     w = i
                 max_area = m..(max_area, h * w)
             stack.a..(i)

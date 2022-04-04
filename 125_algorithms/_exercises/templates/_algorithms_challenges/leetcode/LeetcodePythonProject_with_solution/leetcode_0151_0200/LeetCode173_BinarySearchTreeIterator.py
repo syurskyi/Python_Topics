@@ -33,7 +33,7 @@ c_ BSTIterator(o..
         """
         :rtype: int
         """
-        node = stack.pop()
+        node = stack.p.. )
         val = node.val
         __ node.right:
             node = node.right

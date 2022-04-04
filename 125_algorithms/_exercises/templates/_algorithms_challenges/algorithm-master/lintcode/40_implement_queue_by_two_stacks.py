@@ -15,7 +15,7 @@ c_ MyQueue:
     """
     ___ pop
         top()
-        r.. stack2.pop()
+        r.. stack2.p.. )
 
     """
     @return: An integer

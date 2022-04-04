@@ -35,7 +35,7 @@ ___ check_equality(list1, list2
     ____ list1 __ list2: r.. Equality.SAME_ORDERED
     ____ l..(list1) __ l..(list2) a.. n.. s..(list1).difference(list2 r.. Equality.SAME_UNORDERED
     ____ l..(s..(list1).symmetric_difference(list2 __ 0: r.. Equality.SAME_UNORDERED_DEDUPED
-    ____:
+    ____
         r.. Equality.NO_EQUALITY
 
 ___ check_equality_solution2(list1, list2

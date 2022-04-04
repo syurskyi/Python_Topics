@@ -19,7 +19,7 @@ c_ Solution(o..
           p...a..(i)
           dfs(k, i + 1, p.., subsum - i, res, visited)
           visited[i] = 0
-          p...pop()
+          p...p.. )
 
     visited = [0] * 10
     res    # list

@@ -20,7 +20,7 @@ c_ Solution:
         ____ root.left __ N.. a.. root.right __ N..
             num += root.val
             res += num
-        ____:
+        ____
             num += root.val
             sn(root.left, 10 * num)
             sn(root.right, 10 * num)

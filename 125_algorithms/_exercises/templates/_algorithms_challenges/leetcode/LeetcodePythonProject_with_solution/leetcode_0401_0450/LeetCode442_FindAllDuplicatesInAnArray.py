@@ -11,7 +11,7 @@ c_ Solution(o..
             ind = abs(num)-1
             __ nums[ind] < 0:
                 result.a..(abs(num
-            ____:
+            ____
                 nums[ind] = -nums[ind]
         r.. result
     

@@ -38,7 +38,7 @@ c_ Solution:
         w.... cur_lvl:
             ret.a..(cur_lvl[-1].val)
             w.... cur_lvl:
-                cur = cur_lvl.pop(0)
+                cur = cur_lvl.p.. 0)
                 __ cur.left: nxt_lvl.a..(cur.left)
                 __ cur.right: nxt_lvl.a..(cur.right)
 

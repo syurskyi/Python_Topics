@@ -136,7 +136,7 @@ c_ Solution:
                 __ heights[i] <= heights[i+1]:
                     __ heights[i] < heights[optimal]:
                         optimal = i
-                ____:
+                ____
                     _____
             __ optimal __ s:
                 # looking to the right
@@ -144,7 +144,7 @@ c_ Solution:
                     __ heights[i] <= heights[i-1]:
                         __ heights[i] < heights[optimal]:
                             optimal = i
-                    ____:
+                    ____
                         _____
             heights[optimal] += 1
 

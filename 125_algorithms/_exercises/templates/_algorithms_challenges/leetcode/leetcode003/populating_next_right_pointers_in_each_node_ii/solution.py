@@ -19,14 +19,14 @@ c_ Solution:
                     __ prev __ N..
                         head = root.left
                         prev = head
-                    ____:
+                    ____
                         prev.next = root.left
                         prev = prev.next
                 __ root.right __ n.. N..
                     __ prev __ N..
                         head = root.right
                         prev = head
-                    ____:
+                    ____
                         prev.next = root.right
                         prev = prev.next
                 root = root.next

@@ -38,9 +38,9 @@ empty_text = ''
                           (no_words_in_text, ('', '', 0,
                           (empty_text, ('', '', 0,
                           ])
-___ test_max_letter_word(given, expected
+___ test_max_letter_word(given, e..
     result = max_letter_word(given)
-    ... result __ expected
+    ... result __ e..
 
 
 ?p__.m__.p.("bad_input", [N.., T.., 1, 1.0, [], {}])

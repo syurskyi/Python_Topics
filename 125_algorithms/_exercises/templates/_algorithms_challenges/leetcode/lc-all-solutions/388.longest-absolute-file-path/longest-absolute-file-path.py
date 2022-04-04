@@ -21,24 +21,24 @@ c_ Solution(o..
           stack.a..((input[start:i], curLen + 1, level
         ____ state __ dfa["file"]:
           maxLen = m..(maxLen, curLen + (i - start
-        ____:
+        ____
           r.. -1
         state = dfa["escapeCMD"]
         level = 0
       ____ chr __ '\t':
         __ state __ dfa["escapeCMD"]:
           level += 1
-        ____:
+        ____
           r.. "TAB cannot be here"
       ____ chr __ '.':
         __ state __ dfa["char"] o. state __ dfa["file"] o. state __ dfa["escapeCMD"]:
           state = dfa["file"]
-        ____:
+        ____
           r.. "unexpected char before dot", state
-      ____:
+      ____
         __ state __ dfa["escapeCMD"]:
           w.... stack a.. stack[-1][2] >= level:
-            stack.pop()
+            stack.p.. )
           start = i
           state = dfa["char"]
         ____ state __ dfa["init"]:

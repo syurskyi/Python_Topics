@@ -15,7 +15,7 @@ c_ Solution(o..
         __ K%2 __ 0:
             prev = kthGrammar(N-1, K/2)
             r.. 1 __ prev __ 0 ____ 0
-        ____:
+        ____
             prev = kthGrammar(N-1, (K+1)/2)
             r.. 0 __ prev __ 0 ____ 1
     

@@ -21,7 +21,7 @@ c_ Solution(o..
                 count += m__.ceil((stations[i+1]-stations[i])/mid)-1
             __ count > k:
                 left = mid
-            ____:
+            ____
                 right = mid
         r.. right
     

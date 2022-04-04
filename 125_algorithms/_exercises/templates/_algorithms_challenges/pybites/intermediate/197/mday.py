@@ -12,7 +12,7 @@ ___ get_mothers_day_date(year
       __ mothers_day.weekday() __ 6:
          sunday_count += 1
          day_counter += 1
-      ____:
+      ____
          day_counter += 1
 
       __ sunday_count __ 2:

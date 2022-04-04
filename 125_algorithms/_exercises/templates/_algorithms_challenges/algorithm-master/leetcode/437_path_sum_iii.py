@@ -72,4 +72,4 @@ c_ Solution:
 
         dfs(node.left, target, ans, p..)
         dfs(node.right, target, ans, p..)
-        p...pop()
+        p...p.. )

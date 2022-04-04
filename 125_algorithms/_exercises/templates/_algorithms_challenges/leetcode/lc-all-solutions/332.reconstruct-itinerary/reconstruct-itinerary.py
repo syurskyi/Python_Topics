@@ -27,7 +27,7 @@ c_ Solution(o..
         ret = dfs(p.., graph, maxLen, top)
         __ ret:
           r.. ret
-        p...pop()
+        p...p.. )
         nbr.a..(top)
       r.. []
 

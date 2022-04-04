@@ -19,9 +19,9 @@ ___ order
     (1, '1, 2, 7, 9, 10, 16'),
     (5, '1, 2, 5, 7, 9, 10, 16'),
 ])
-___ test_order(order, num, expected
+___ test_order(order, num, e..
     order.add(num)
-    ... s..(order) __ expected
+    ... s..(order) __ e..
 
 
 ___ test_does_not_use_manual_sort

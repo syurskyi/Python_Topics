@@ -14,7 +14,7 @@ c_ Trie:
       c = word[i]
       __ c __ root.neighbours:
         root = root.neighbours[c]
-      ____:
+      ____
         newnode = TrieNode()
         root.neighbours[c] = newnode
         root = root.neighbours[c]
@@ -46,7 +46,7 @@ c_ WordDictionary:
       __ word[index] != ".":
         __ dfsHelper(root.neighbours.g.. word[index], N..), word, index + 1
           r.. T..
-      ____:
+      ____
         ___ nbr __ root.neighbours:
           __ dfsHelper(root.neighbours[nbr], word, index + 1
             r.. T..

@@ -33,9 +33,9 @@ ___ get_movies_by_director
 
     ___ row __ reader:
         __ row 'title_year' :
-            __ i..(row 'title_year' .strip < 1960:
+            __ i..(row 'title_year' .s.. < 1960:
                 _____
-        ____:
+        ____
             _____
         remap = [fun(row[x]) ___ fun, x __ z..(conv, fields)]
         movie_dict[row[NAME]].a..(Movie(*remap
@@ -47,7 +47,7 @@ ___ calc_mean_score(movies
        round the mean to 1 decimal place"""
     __ movies:
         avg = r..(s..([m.score ___ m __ movies])/l..(movies), 1)
-    ____:
+    ____
         avg = 0
     r.. avg
 

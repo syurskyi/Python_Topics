@@ -13,8 +13,8 @@ c_ Solution(o..
             stack.a..(node)
             w.... l..(stack)>=3 a.. stack[-1] __ '#' a.. stack[-2] __ '#' a..\
                 stack[-3] != '#':
-                stack.pop()
-                stack.pop()
-                stack.pop()
+                stack.p.. )
+                stack.p.. )
+                stack.p.. )
                 stack.a..('#')
         r.. stack __  '#'

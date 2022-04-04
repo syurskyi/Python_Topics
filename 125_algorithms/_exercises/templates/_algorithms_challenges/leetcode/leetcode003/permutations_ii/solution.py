@@ -19,12 +19,12 @@ c_ Solution(o..
     ___ permute  nums, d
         __ n.. nums:
             r.. [[]]
-        ____:
+        ____
             res    # list
             ___ i, c __ e..(nums
                 __ c __ d:
                     _____
-                ____:
+                ____
                     d[c] = T..
                 rest_perms = permuteUnique(nums[:i] + nums[i + 1:])
                 ___ perm __ rest_perms:

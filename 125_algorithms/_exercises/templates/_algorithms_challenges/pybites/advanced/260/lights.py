@@ -167,14 +167,14 @@ c_ LightsGrid:
                 ____ values[1] __ 'off':
                     s1 = values[2]
                     turn_off(s1,s2)
-                ____:
+                ____
                     s1 = values[3]
                     amount = i..(values[2])
                     __ values[1] __ 'up':
                         turn_up(amount,s1,s2)
-                    ____:
+                    ____
                         turn_down(amount,s1,s2)
-            ____:
+            ____
                 s1 = values[1]
                 toggle(s1,s2)
 

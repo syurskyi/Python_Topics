@@ -38,7 +38,7 @@ c_ Solution(o..
                 r.. mid
             ____ mid > 0 a.. nums[mid - 1] > nums[mid]:
                 right = mid - 1
-            ____:
+            ____
                 left = mid + 1
         r.. mid
 

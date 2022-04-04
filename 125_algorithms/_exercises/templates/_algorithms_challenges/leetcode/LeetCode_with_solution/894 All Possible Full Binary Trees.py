@@ -39,7 +39,7 @@ c_ Solution:
                 ret    # list
             ____ N __ 1:
                 ret = [TreeNode(0)]
-            ____:
+            ____
                 ret    # list
                 ___ i __ r..(N
                     lefts = allPossibleFBT(i)

@@ -29,7 +29,7 @@ c_ Solution(o..
             mid = left + (right - left) / 2
             __ isBadVersion(mid
                 right = mid
-            ____:
+            ____
                 left = mid
         __ isBadVersion(left
             r.. left

@@ -37,10 +37,10 @@ c_ HashHeapq:
             r..
 
         __ i __ n - 1:
-            __heap.pop()
-        ____:
+            __heap.p.. )
+        ____
             __heap[i] = __heap[-1]
-            __heap.pop()
+            __heap.p.. )
             heapq._siftup(__heap, i)
             heapq._siftdown(__heap, 0, i)
 
@@ -71,13 +71,13 @@ c_ Solution:
             __ i >= k:
                 __ minheap a.. nums[i - k] >= minheap.top
                     minheap.remove(nums[i - k])
-                ____:
+                ____
                     maxheap.remove(- nums[i - k])
 
             # add nums[i]
             __ minheap a.. nums[i] >= minheap.top
                 minheap.push(nums[i])
-            ____:
+            ____
                 maxheap.push(- nums[i])
 
             # get median

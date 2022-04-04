@@ -9,7 +9,7 @@ ___ catAndMouse(catA, catB, mouseC
         print('Cat B')
     ____ distanceA __ distanceB:
         print('Mouse C')
-    ____:
+    ____
         print('Cat A')
 
 

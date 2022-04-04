@@ -36,7 +36,7 @@ c_ Solution:
                             d -= 1
                     ____ total < target:
                         c += 1
-                    ____:
+                    ____
                         d -= 1
 
         r.. ans

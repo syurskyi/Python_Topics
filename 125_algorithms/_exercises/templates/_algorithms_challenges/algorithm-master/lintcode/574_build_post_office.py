@@ -85,7 +85,7 @@ c_ Solution:
 
             __ axis[mid] < pos:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         r.. s..((

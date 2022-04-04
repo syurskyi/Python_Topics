@@ -9,6 +9,6 @@ c_ Solution(o..
       mid = start + (end - start) / 2
       __ nums[start] <= nums[mid]:
         start = mid
-      ____:
+      ____
         end = mid
     r.. m..(nums[0], nums[start], nums[end])

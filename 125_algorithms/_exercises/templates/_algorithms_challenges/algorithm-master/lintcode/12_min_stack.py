@@ -20,10 +20,10 @@ c_ MinStack:
         __ n.. stack:
             r.. -1
 
-        x = stack.pop()
+        x = stack.p.. )
 
         __ mins a.. x __ mins[-1]:
-            mins.pop()
+            mins.p.. )
 
         r.. x
 

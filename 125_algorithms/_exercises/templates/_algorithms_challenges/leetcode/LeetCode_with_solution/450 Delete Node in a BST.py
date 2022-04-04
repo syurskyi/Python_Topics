@@ -43,7 +43,7 @@ c_ Solution:
         ____ key > root.val:
             root.right = _delete(root.right, key)
             r.. root
-        ____:
+        ____
             __ root.left:
                 maxa, left = _pop_max(root.left)
                 root.left = left
@@ -54,7 +54,7 @@ c_ Solution:
                 root.right = right
                 root.val = mini
                 r.. root
-            ____:
+            ____
                 r..
 
     ___ _pop_max  root
@@ -63,7 +63,7 @@ c_ Solution:
             root.right = right
             r.. maxa, root
         # irrevelant with root.left, BST property
-        ____:
+        ____
             r.. root.val, root.left
 
     ___ _pop_min  root
@@ -72,7 +72,7 @@ c_ Solution:
             root.left = left
             r.. mini, root
         # irrevelant with root.right, BST property
-        ____:
+        ____
             r.. root.val, root.right
 
     ___ _delete_error  root, key
@@ -92,7 +92,7 @@ c_ Solution:
         ____ key > root.val:
             root.right = _delete(root.right, key)
             r.. root
-        ____:
+        ____
             __ root.left:
                 root.val = root.left.val
                 left = _delete(root.left, root.left.val)
@@ -103,5 +103,5 @@ c_ Solution:
                 right = _delete(root.right, root.right.val)
                 root.right = right
                 r.. root
-            ____:
+            ____
                 r..

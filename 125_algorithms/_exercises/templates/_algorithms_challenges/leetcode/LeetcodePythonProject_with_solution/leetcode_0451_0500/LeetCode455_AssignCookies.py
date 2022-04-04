@@ -20,7 +20,7 @@ c_ Solution(o..
                 i += 1
                 j += 1
                 count += 1
-            ____:
+            ____
                 j += 1
         r.. count
     

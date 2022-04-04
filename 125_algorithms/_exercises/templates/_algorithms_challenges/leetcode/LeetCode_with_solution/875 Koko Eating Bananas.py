@@ -58,11 +58,11 @@ c_ Solution:
         w.... lo < hi:
             mid = (lo + hi) // 2
             __ s..(
-                m__.ceil(piles[i] / mid)
+                m__.c.. piles[i] / mid)
                 ___ i __ r..(n)
             ) > H:
                 lo = mid + 1
-            ____:
+            ____
                 hi = mid
 
         r.. lo

@@ -62,7 +62,7 @@ c_ Solution:
                 cnt += 1
                 __ cnt > 1:
                     ret.a..(e)
-            ____:
+            ____
                 cnt -= 1
                 __ cnt > 0:
                     ret.a..(e)
@@ -80,12 +80,12 @@ c_ Solution:
         ___ e __ S:
             __ e __ "(":
                 stk.a..(e)
-            ____:
-                prev = stk.pop()
+            ____
+                prev = stk.p.. )
                 __ stk:
                     cur_q.appendleft(prev)
                     cur_q.a..(e)
-                ____:
+                ____
                     ret.extend(cur_q)
                     cur_q = d..()
 

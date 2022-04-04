@@ -39,37 +39,37 @@ c_ ProteinTranslationTest(unittest.TestCase
 
     ___ test_translates_rna_strand_into_correct_protein_list
         strand = 'AUGUUUUGG'
-        expected =  'Methionine', 'Phenylalanine', 'Tryptophan'
-        assertEqual(proteins(strand), expected)
+        e.. =  'Methionine', 'Phenylalanine', 'Tryptophan'
+        assertEqual(proteins(strand), e..)
 
     ___ test_stops_translation_if_stop_codon_at_beginning_of_sequence
         strand = 'UAGUGG'
-        expected    # list
-        assertEqual(proteins(strand), expected)
+        e..    # list
+        assertEqual(proteins(strand), e..)
 
     ___ test_stops_translation_if_stop_codon_at_end_of_two_codon_sequence(
             self
         strand = 'UGGUAG'
-        expected =  'Tryptophan'
-        assertEqual(proteins(strand), expected)
+        e.. =  'Tryptophan'
+        assertEqual(proteins(strand), e..)
 
     ___ test_stops_translation_if_stop_codon_at_end_of_three_codon_sequence(
             self
         strand = 'AUGUUUUAA'
-        expected =  'Methionine', 'Phenylalanine'
-        assertEqual(proteins(strand), expected)
+        e.. =  'Methionine', 'Phenylalanine'
+        assertEqual(proteins(strand), e..)
 
     ___ test_stops_translation_if_stop_codon_in_middle_of_three_codon_sequence(
             self
         strand = 'UGGUAGUGG'
-        expected =  'Tryptophan'
-        assertEqual(proteins(strand), expected)
+        e.. =  'Tryptophan'
+        assertEqual(proteins(strand), e..)
 
     ___ test_stops_translation_if_stop_codon_in_middle_of_six_codon_sequence(
             self
         strand = 'UGGUGUUAUUAAUGGUUU'
-        expected =  'Tryptophan', 'Cysteine', 'Tyrosine'
-        assertEqual(proteins(strand), expected)
+        e.. =  'Tryptophan', 'Cysteine', 'Tyrosine'
+        assertEqual(proteins(strand), e..)
 
 
 __ _____ __ _____

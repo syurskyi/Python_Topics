@@ -25,12 +25,12 @@ c_ Solution(o..
       __ mask & num:
         __ root.zero:
           dfs(root.zero, num, mask >> 1)
-        ____:
+        ____
           dfs(root.one, num, mask >> 1)
-      ____:
+      ____
         __ root.one:
           dfs(root.one, num, mask >> 1)
-        ____:
+        ____
           dfs(root.zero, num, mask >> 1)
 
     __ l..(nums) < 2:
@@ -46,13 +46,13 @@ c_ Solution(o..
           __ n.. p.one:
             node = TrieNode()
             p.one = node
-          ____:
+          ____
             node = p.one
-        ____:
+        ____
           __ n.. p.zero:
             node = TrieNode()
             p.zero = node
-          ____:
+          ____
             node = p.zero
         p = node
         mask = mask >> 1

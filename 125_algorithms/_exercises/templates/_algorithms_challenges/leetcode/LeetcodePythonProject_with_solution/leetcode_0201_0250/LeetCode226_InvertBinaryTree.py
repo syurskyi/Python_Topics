@@ -28,7 +28,7 @@ c_ Solution(o..
         __ n.. root: r.. N..
         stack = [root]
         w.... stack:
-            node = stack.pop()
+            node = stack.p.. )
             __ node:
                 left = node.left
                 right = node.right

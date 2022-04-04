@@ -12,6 +12,6 @@ c_ MovingAverage(o..
     ___ next  val
         __ size <= 0: r.. 0
         __ l..(queue) __ size:
-            queue.pop(0)
+            queue.p.. 0)
         queue.a..(val)
         r.. f__(s..(queue/l..(queue)

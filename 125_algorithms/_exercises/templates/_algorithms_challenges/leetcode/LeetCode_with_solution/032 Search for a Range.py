@@ -31,12 +31,12 @@ c_ Solution:
             mid = (start+end)/2
             __ A[mid]<target:  # NOTICE: less than
                 start = mid+1
-            ____:
+            ____
                 end = mid
 
         __ start<length a.. A[start]__target:
             result.a..(start)
-        ____:
+        ____
             r.. [-1, -1]
 
         # high-bound binary search
@@ -46,7 +46,7 @@ c_ Solution:
             mid = (start+end)/2
             __ A[mid]<=target:  # NOTICE: less than or equal
                 start = mid+1
-            ____:
+            ____
                 end = mid
 
         result.a..(start-1)

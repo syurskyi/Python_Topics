@@ -58,6 +58,6 @@ c_ Solution(o..
                 ret.a..(pre.pop
             ____ abs(pre[-1] - target) < abs(suc[-1] - target
                 ret.a..(pre.pop
-            ____:
+            ____
                 ret.a..(suc.pop
         r.. ret

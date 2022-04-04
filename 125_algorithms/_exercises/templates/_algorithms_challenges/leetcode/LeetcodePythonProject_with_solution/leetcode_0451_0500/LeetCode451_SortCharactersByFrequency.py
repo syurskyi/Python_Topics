@@ -15,7 +15,7 @@ c_ Solution(o..
         result = ''
         ___ i __ r..(l..(bucket)-1, -1, -1
             w.... bucket[i]:
-                c = bucket[i].pop()
+                c = bucket[i].p.. )
                 result += c*(i)
         r.. result
     

@@ -37,7 +37,7 @@ ___ BuildTree(records
             r.. V...("Record id is invalid or out of order")
         __ record_id __ root_id:
             root = node_dict[record_id]
-        ____:
+        ____
             parent_id = parent_dict[record_id]
             node_dict[parent_id].children.a..(node_dict[record_id])
 

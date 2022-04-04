@@ -37,7 +37,7 @@ c_ NinjaBelt:
             _last_earned_belt_number = belt
             print _*Congrats, you earned {new_score} points obtaining the PyBites Ninja '
                   f'{_last_earned_belt.t..} Belt')
-        ____:
+        ____
             print _*S.. new score to {new_score}')
 
     score = property(_get_score, _set_score)

@@ -12,7 +12,7 @@ c_ Solution(o..
         dfs = [0]
         seen = s..(dfs)
         w.... dfs:
-            i = dfs.pop()
+            i = dfs.p.. )
             ___ j __ rooms[i]:
                 __ j n.. __ seen:
                     dfs.a..(j)

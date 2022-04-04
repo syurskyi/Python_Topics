@@ -27,7 +27,7 @@ c_ Solution(o..
       ____ i < 0 a.. j >= l..(matrix[0]
         i = 1
         j -= dj
-      ____:
+      ____
         _____
       d = ~d
     r.. ans

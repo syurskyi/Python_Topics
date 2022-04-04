@@ -29,7 +29,7 @@ c_ Solution(o..
       mid = (hi + lo) / 2.
       __ valid(nums, mid, k
         lo = mid
-      ____:
+      ____
         hi = mid
     r.. lo
 
@@ -44,6 +44,6 @@ c_ Solution(o..
       mins = np.minimum.accumulate(sums)
       __ (sums[k:] - mins[:-k]).m..() > 0:
         lo = mid
-      ____:
+      ____
         hi = mid
     r.. lo

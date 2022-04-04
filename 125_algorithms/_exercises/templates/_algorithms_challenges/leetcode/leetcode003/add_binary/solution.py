@@ -29,7 +29,7 @@ c_ Solution(o..
                 j = m - 1 - k
                 r = (i..(a[i]) + i..(b[j]) + c) % 2
                 c = (i..(a[i]) + i..(b[j]) + c) / 2
-            ____:
+            ____
                 r = (i..(a[i]) + c) % 2
                 c = (i..(a[i]) + c) / 2
             res.insert(0, s..(r

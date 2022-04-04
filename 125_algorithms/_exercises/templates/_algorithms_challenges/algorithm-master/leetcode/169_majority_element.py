@@ -15,7 +15,7 @@ c_ Solution:
                 ans, cnt = num, 1
             ____ ans __ num:
                 cnt += 1
-            ____:
+            ____
                 cnt -= 1
 
         r.. ans

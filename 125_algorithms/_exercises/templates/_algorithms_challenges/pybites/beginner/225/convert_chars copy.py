@@ -11,7 +11,7 @@ ___ convert_pybites_chars(text
                 temp += letter.u..
             ____ letter.isupper
                 temp += letter.l..
-        ____:
+        ____
             temp += letter
     r..(temp)
 

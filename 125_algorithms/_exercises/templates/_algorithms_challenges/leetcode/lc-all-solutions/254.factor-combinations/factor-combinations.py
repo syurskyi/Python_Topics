@@ -18,10 +18,10 @@ c_ Solution(o..
 
     p...a..(n)
     dfsHelper(n / n, res, p.., n)
-    p...pop()
+    p...p.. )
 
     ___ i __ r..(start, i..(n ** 0.5) + 1
       __ n % i __ 0:
         p...a..(i)
         dfsHelper(n / i, res, p.., i)
-        p...pop()
+        p...p.. )

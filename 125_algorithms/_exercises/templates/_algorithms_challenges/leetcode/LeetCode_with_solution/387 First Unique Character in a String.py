@@ -28,7 +28,7 @@ c_ Solution(o..
         ___ i, v __ e..(l..(s:
             __ v n.. __ first:
                 first[v] = i
-            ____:
+            ____
                 first[v] = -1
 
         lst = f.. l.... x: x != -1, first.values

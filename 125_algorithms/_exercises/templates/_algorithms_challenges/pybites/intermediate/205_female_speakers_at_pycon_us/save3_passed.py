@@ -38,7 +38,7 @@ ___ get_pycon_speaker_first_names(soup_ N..
         ____ __.m..(r'[A-Z]\.', speaker
             speakers.a..(speaker.s.. [1])
 
-        ____:
+        ____
             speakers.a..(speaker.s.. [0])
 
     r.. speakers

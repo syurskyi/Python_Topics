@@ -46,7 +46,7 @@ c_ Solution:
 
         ____ gross < total:
             ret = F..
-        ____:
+        ____
             ___ choice __ c..:
                 __ n.. _can_win(
                         total - choice,

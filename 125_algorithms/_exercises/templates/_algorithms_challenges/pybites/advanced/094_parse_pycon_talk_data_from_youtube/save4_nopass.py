@@ -740,7 +740,7 @@ ___ parse_isoduration(s
     ___ get_isosplit(s, s..
         __ s.. __ s:
             n, s = s.s..(s..)
-        ____:
+        ____
             n = 0
         r.. n, s
 

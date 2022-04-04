@@ -31,9 +31,9 @@ c_ Solution(o..
 
         __ carry != 0:
             r.. getSum(out, carry)
-        ____:
+        ____
             # handle overflow
             __ out < MAX:
                 r.. out
-            ____:  # negative
+            ____  # negative
                 r.. ~(out ^ MSK)

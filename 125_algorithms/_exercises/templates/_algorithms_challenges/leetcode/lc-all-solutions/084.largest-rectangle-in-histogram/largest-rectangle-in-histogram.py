@@ -11,9 +11,9 @@ c_ Solution(o..
     ans = 0
     ___ i __ r..(0, l..(height:
       w.... stack a.. height[i] < height[stack[-1]]:
-        h = height[stack.pop()]
+        h = height[stack.p.. )]
         w = i - stack[-1] - 1 __ stack ____ i
         ans = m..(ans, h * w)
       stack.a..(i)
-    height.pop()
+    height.p.. )
     r.. ans

@@ -36,10 +36,10 @@ ___ pretty_date(date
             r.. TIME_OFFSETS[4].date_str
         ____ date_delta.seconds > HOUR:
             r.. TIME_OFFSETS[5].date_str.f..(date_delta.seconds // HOUR)
-    ____:
+    ____
         __ date_delta.days __ 1 a.. date_delta.seconds >= 0:
             r.. TIME_OFFSETS[6].date_str
-        ____:
+        ____
             r.. (NOW - date_delta).s..("%m/%d/%y")
 
 

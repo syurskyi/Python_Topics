@@ -17,7 +17,7 @@ c_ Bite(N..
 
 ___ test_deserialize_movie_rented_data
     download_pickle_file()
-    expected = [
+    e.. = [
         MovieRented('Mad Max Fury Road', 4, date(2020, 12, 1,
         MovieRented('Mad Max Fury Road', 4, date(2020, 12, 17,
         MovieRented('Die Hard', 4, date(2020, 12, 3,
@@ -26,8 +26,8 @@ ___ test_deserialize_movie_rented_data
         MovieRented('Spider-Man', 12, date(2020, 12, 28,
         MovieRented('Sonic', 10, date(2020, 11, 4
     ]
-    actual = deserialize()
-    ... actual __ expected
+    a.. = deserialize()
+    ... a.. __ e..
 
 
 ___ test_serialize_and_deserialize_other_data
@@ -37,6 +37,6 @@ ___ test_serialize_and_deserialize_other_data
     ]
     pkl_file = TMP / s..(i..(time.time()))
     serialize(pkl_file, data=data)
-    actual = deserialize(pkl_file)
-    expected = data
-    ... actual __ expected
+    a.. = deserialize(pkl_file)
+    e.. = data
+    ... a.. __ e..

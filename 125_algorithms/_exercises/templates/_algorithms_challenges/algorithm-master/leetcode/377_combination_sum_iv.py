@@ -97,7 +97,7 @@ c_ Solution:
 
             p...a..(a)
             dfs(nums, remain - a, ans, p..)
-            p...pop()
+            p...p.. )
 
 
 # ======

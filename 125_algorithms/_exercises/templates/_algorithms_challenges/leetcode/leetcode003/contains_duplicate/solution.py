@@ -14,6 +14,6 @@ c_ Solution(o..
         ___ i __ nums:
             __ i __ d:
                 r.. T..
-            ____:
+            ____
                 d.add(i)
         r.. F..

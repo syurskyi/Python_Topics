@@ -46,7 +46,7 @@ c_ Solution(o..
                 j = nums[i]
                 nums[i], nums[j] = nums[j], nums[i]
 
-            ____:
+            ____
                 i += 1
 
         __ n.. num_n:

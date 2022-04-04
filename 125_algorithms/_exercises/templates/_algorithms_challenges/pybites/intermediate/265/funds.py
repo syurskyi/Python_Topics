@@ -16,7 +16,7 @@ ___ max_fund(village
         __ value >= current_sum + value:
             current_start= current_end = i
             current_sum = value
-        ____:
+        ____
             current_sum += value
             current_end += 1
 

@@ -11,7 +11,7 @@ c_ Solution(o..
         ___ i, (c1, c2) __ e..(z..(secret, guess:
             __ c1 __ c2:
                 bulls.add(i)
-            ____:
+            ____
                 hashmap[c1] = hashmap.g.. c1, 0)+1
         cows = 0
         ___ i, c __ e..(guess

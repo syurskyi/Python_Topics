@@ -35,7 +35,7 @@ c_ Solution:
                 # remove all duplicated nodes 
                 pre.next = next_non_duplicate
 
-            ____:
+            ____
                 pre = pre.next
 
         r.. dummy.next

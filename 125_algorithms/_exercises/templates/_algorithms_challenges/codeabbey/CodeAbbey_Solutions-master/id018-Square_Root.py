@@ -7,7 +7,7 @@ ___ sqRoot(numbers
 
         __ root __ 0:
             print(1)
-        ____:
+        ____
             ___ x __ r..(runs
                 division  value / root
                 abs(root - division)

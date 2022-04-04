@@ -19,7 +19,7 @@ ___ euclidian_coprimes(limit
     https://en.wikipedia.org/wiki/Euclidean_algorithm#Description
     """
     mn = limit // 2
-    ___ n __ r..(1, i..(ceil(sqrt(mn)))):
+    ___ n __ r..(1, i..(c.. sqrt(mn)))):
         __ mn % n __ 0:
             m = mn // n
             __ (m - n) % 2 __ 1 a.. gcd(m, n) __ 1:

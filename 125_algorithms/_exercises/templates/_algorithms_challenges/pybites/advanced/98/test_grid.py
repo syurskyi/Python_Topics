@@ -14,7 +14,7 @@ small_grid = """
 
 
 ___ test_print_sequence_route_small_grid(capfd
-    expected = """1 2 ⇓
+    e.. = """1 2 ⇓
     3 ⇐
     4 5 ⇑
     6 7 ⇒
@@ -25,11 +25,11 @@ ___ test_print_sequence_route_small_grid(capfd
     22 23 24 25""".s..
 
     print_sequence_route(small_grid)
-    actual = ?.r .. 0].s..
+    a.. = ?.r .. 0].s..
 
-    ... l..(actual) __ l..(expected)
+    ... l..(a..) __ l..(e..)
 
-    ___ i, j __ z..(actual, expected
+    ___ i, j __ z..(a.., e..
         ... i.s.. __ j.s..
 
 
@@ -51,7 +51,7 @@ intermediate_grid = """
 
 
 ___ test_print_sequence_route_intermediate_grid(capfd
-    expected = """1 2 ⇓
+    e.. = """1 2 ⇓
     3 ⇐
     4 5 ⇑
     6 7 ⇒
@@ -66,11 +66,11 @@ ___ test_print_sequence_route_intermediate_grid(capfd
     44 45 46 47 48 49""".s..
 
     print_sequence_route(intermediate_grid)
-    actual = ?.r .. 0].s..
+    a.. = ?.r .. 0].s..
 
-    ... l..(actual) __ l..(expected)
+    ... l..(a..) __ l..(e..)
 
-    ___ i, j __ z..(actual, expected
+    ___ i, j __ z..(a.., e..
         ... i.s.. __ j.s..
 
 
@@ -96,7 +96,7 @@ big_grid = """
 
 
 ___ test_print_sequence_route_big_grid(capfd
-    expected = """1 2 ⇓
+    e.. = """1 2 ⇓
     3 ⇐
     4 5 ⇑
     6 7 ⇒
@@ -115,9 +115,9 @@ ___ test_print_sequence_route_big_grid(capfd
     74 75 76 77 78 79 80 81 """.s..
 
     print_sequence_route(big_grid)
-    actual = ?.r .. 0].s..
+    a.. = ?.r .. 0].s..
 
-    ... l..(actual) __ l..(expected)
+    ... l..(a..) __ l..(e..)
 
-    ___ i, j __ z..(actual, expected
+    ___ i, j __ z..(a.., e..
         ... i.s.. __ j.s..

@@ -41,11 +41,11 @@ c_ Solution:
         w.... lst:
             __ direction:
                 result.a..([element.val ___ element __ lst])
-            ____:
+            ____
                 result.a..([element.val ___ element __ r..(lst)])
 
             ___ i __ r..(l..(lst:  # evaluation time
-                element = lst.pop(0)  # queue 
+                element = lst.p.. 0)  # queue
                 __ element.left:
                     lst.a..(element.left)
                 __ element.right:

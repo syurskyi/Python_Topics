@@ -24,7 +24,7 @@ c_ Solution(o..
             __ isValid(cur, ind, val
                 cur.a..(val)
                 helper(n, res, cur, ind+1)
-                cur.pop()
+                cur.p.. )
     
     ___ convert  nums
         __ n.. nums: r.. []

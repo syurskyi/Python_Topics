@@ -46,8 +46,8 @@ c_ Solution(o..
         V = s..(r..(n
 
         w.... l..(V) > 1:
-            a = V.pop()
-            b = V.pop()
+            a = V.p.. )
+            b = V.p.. )
             __ knows(a, b) a.. n.. knows(b, a
                 V.add(b)
             ____ n.. knows(a, b) a.. knows(b, a
@@ -56,7 +56,7 @@ c_ Solution(o..
         __ n.. V:
             r.. -1
 
-        celebrity = V.pop()
+        celebrity = V.p.. )
         ___ i __ x..(n
             __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i:
                 r.. -1

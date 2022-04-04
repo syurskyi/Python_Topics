@@ -23,7 +23,7 @@ c_ Solution(o..
             __ n.. curr o. curr[-1] <= nums[i]:
                 curr.a..(nums[i])
                 helper(nums, i+1, curr, res)
-                curr.pop()
+                curr.p.. )
     
     ___ test
         testCases = [

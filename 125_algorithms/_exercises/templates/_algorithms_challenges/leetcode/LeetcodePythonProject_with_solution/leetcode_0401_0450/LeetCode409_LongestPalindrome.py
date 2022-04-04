@@ -15,9 +15,9 @@ c_ Solution(o..
             __ count%2 != 0:
                 __ singleNum:
                     result += count-1
-                ____:
+                ____
                     result += count
                     singleNum = T..
-            ____:
+            ____
                 result += count
         r.. result

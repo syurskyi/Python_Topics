@@ -20,7 +20,7 @@ c_ Solution(o..
                     r.. F..
                 hashmap[c1] = c2
                 hashset.add(c2)
-            ____:
+            ____
                 __ hashmap[c1] != c2:
                     r.. F..
         r.. T..

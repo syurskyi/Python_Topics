@@ -34,11 +34,11 @@ c_ Solution(o..
     ___ binary_tree_paths  root, cand, res
         __ root __ N..
             r..
-        ____:
+        ____
             cand.a..(root.val)
             __ root.left __ N.. a.. root.right __ N..
                 p = '->'.j.. m..(s.., cand
                 res.a..(p)
             binary_tree_paths(root.left, cand, res)
             binary_tree_paths(root.right, cand, res)
-            cand.pop()
+            cand.p.. )

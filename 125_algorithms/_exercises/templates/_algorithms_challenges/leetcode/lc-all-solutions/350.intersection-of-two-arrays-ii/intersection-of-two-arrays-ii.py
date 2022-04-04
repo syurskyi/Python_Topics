@@ -14,7 +14,7 @@ c_ Solution(o..
         i += 1
       ____ nums1[i] > nums2[j]:
         j += 1
-      ____:
+      ____
         ans.a..(nums1[i])
         i += 1
         j += 1

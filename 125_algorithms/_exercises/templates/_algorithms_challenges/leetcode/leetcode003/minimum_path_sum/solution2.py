@@ -25,7 +25,7 @@ c_ Solution:
         ____ x > 0 a.. y __ 0:
             t[y][x] = grid[y][x] + min_path_sum_aux(grid, x - 1, y, t)
             r.. t[y][x]
-        ____:
+        ____
             a = min_path_sum_aux(grid, x - 1, y, t)
             b = min_path_sum_aux(grid, x, y - 1, t)
             t[y][x] = grid[y][x] + m..(a, b)

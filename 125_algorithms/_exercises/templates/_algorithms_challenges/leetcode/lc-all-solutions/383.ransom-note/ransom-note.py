@@ -12,6 +12,6 @@ c_ Solution(o..
     ___ c __ ransomNote:
       __ letters[o..(c) - o..('a')] __ 0:
         r.. F..
-      ____:
+      ____
         letters[o..(c) - o..('a')] -= 1
     r.. T..

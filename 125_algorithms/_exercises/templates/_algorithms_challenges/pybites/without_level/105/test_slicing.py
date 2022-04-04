@@ -11,10 +11,10 @@ Strip the trailing dot (.) and exclamation mark (!) from the word first.
 
 
 ___ test_slice_and_dice_default_text
-    expected =  'objects', 'y', 'too', ':)', 'bites' 
-    ... slice_and_dice(text) __ expected
+    e.. =  'objects', 'y', 'too', ':)', 'bites'
+    ... slice_and_dice(text) __ e..
 
 
 ___ test_slice_and_dice_other_text
-    expected =  'word', 'list', 'list' 
-    ... slice_and_dice(another_text) __ expected
+    e.. =  'word', 'list', 'list'
+    ... slice_and_dice(another_text) __ e..

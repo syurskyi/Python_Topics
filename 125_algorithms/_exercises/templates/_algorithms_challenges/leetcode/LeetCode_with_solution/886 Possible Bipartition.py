@@ -65,7 +65,7 @@ c_ Solution:
             __ nbr __ visited:
                 __ visited[nbr] __ color:
                     r.. F..
-            ____:
+            ____
                 __ n.. dfs(nbr, G, visited, color ^ 1
                     r.. F..
 

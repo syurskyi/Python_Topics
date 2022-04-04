@@ -48,11 +48,11 @@ c_ Solution:
 
         __ cur.left:
             dfs(cur.left, p.., ret)
-            p...pop()  # pop the shared path
+            p...p.. )  # pop the shared path
 
         __ cur.right:
             dfs(cur.right, p.., ret)
-            p...pop()  # pop the shared path
+            p...p.. )  # pop the shared path
 
     ___ dfs_path  cur, p.., ret
         __ n.. cur:
@@ -64,4 +64,4 @@ c_ Solution:
 
         dfs_path(cur.left, p.., ret)
         dfs_path(cur.right, p.., ret)
-        p...pop()
+        p...p.. )

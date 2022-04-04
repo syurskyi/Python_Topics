@@ -45,14 +45,14 @@ c_ Solution(o..
         child_cnt = 0
         w.... stk:
             __ stk[-1] __ '#':
-                stk.pop()
+                stk.p.. )
                 child_cnt += 1
-            ____:
+            ____
                 child_cnt -= 2
                 __ child_cnt < 0:
                     r.. F..
 
-                stk.pop()
+                stk.p.. )
                 child_cnt += 1
 
         r.. n.. stk a.. child_cnt __ 1
@@ -67,11 +67,11 @@ c_ Solution(o..
         w.... stk:
             __ stk[-1] __ '#':
                 child_stk.a..(stk.pop  # a counter is enough
-            ____:
+            ____
                 ___
-                    child_stk.pop()
-                    child_stk.pop()
-                    stk.pop()
+                    child_stk.p.. )
+                    child_stk.p.. )
+                    stk.p.. )
                     child_stk.a..('#')
                 ______ I..
                     r.. F..

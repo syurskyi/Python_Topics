@@ -13,7 +13,7 @@ c_ Solution:
         n = l..(intervals)
         __ n __ 1:
             r.. intervals
-        ____:
+        ____
             # Sort the intervals by start value
             intervals.s..(key=l.... x: x.start)
             res    # list
@@ -25,7 +25,7 @@ c_ Solution:
                     __ interval.end > cur_end:
                         res[cur_index].end = interval.end
                         cur_end = interval.end
-                ____:
+                ____
                     # Added a non-overlapping interval
                     res.a..(interval)
                     cur_end = interval.end

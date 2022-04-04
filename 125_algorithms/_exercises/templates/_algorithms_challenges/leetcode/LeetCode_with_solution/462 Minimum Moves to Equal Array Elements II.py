@@ -41,7 +41,7 @@ c_ Solution:
             r.. nums[pivot]
         ____ pivot > k:
             r.. quick_select(nums, lo, pivot, k)
-        ____:
+        ____
             r.. quick_select(nums, pivot + 1, hi, k)
 
 

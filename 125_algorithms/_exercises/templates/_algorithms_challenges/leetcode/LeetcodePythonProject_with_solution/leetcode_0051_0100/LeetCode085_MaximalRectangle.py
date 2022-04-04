@@ -17,7 +17,7 @@ c_ Solution(o..
             ___ j __ r..(n
                 __ matrix[i][j] __ '0':
                     heights[i+1][j] = 0
-                ____:
+                ____
                     heights[i+1][j] = heights[i][j]+1
         ___ i __ r..(m
             area = m..(area, getArea(heights[i+1]
@@ -32,8 +32,8 @@ c_ Solution(o..
             __ n.. stack o. heights[i] >= heights[stack[-1]]:
                 stack.a..(i)
                 i += 1
-            ____:
-                h = heights[stack.pop()]
+            ____
+                h = heights[stack.p.. )]
                 w = i __ n.. stack ____ i-stack[-1]-1
                 area = m..(area, h*w)
         r.. area

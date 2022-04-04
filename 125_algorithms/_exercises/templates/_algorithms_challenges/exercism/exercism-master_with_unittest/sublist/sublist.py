@@ -11,7 +11,7 @@ ___ check_lists(l1, l2
         r.. SUBLIST
     ____ l2 __ each_cons(l1, l..(l2:
         r.. SUPERLIST
-    ____:
+    ____
         r.. UNEQUAL
 
 

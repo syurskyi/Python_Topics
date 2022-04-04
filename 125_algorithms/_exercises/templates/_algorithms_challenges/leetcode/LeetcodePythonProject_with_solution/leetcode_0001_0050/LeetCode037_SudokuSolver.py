@@ -20,7 +20,7 @@ c_ Solution(o..
                             board[i][j] = c
                             __ solve(board
                                 r.. T..
-                            ____:
+                            ____
                                 board[i][j] = '.'
                     r.. F..
         r.. T..

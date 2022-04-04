@@ -24,7 +24,7 @@ c_ HitCounter(o..
         :type timestamp: int
         :rtype: void
         """
-        pop(timestamp)
+        p.. timestamp)
         q.a..(timestamp)
 
     ___ getHits  timestamp
@@ -34,7 +34,7 @@ c_ HitCounter(o..
         :type timestamp: int
         :rtype: int
         """
-        pop(timestamp)
+        p.. timestamp)
         r.. l..(q)
 
     ___ pop  timestamp

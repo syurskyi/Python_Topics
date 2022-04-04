@@ -41,7 +41,7 @@ c_ Color:
                 value = i..(h,16)
             ______:
                 r..
-            ____:
+            ____
                 values.a..(value)
 
 
@@ -102,7 +102,7 @@ c_ Color:
 
         __ rgb:
             r.. s..(rgb)
-        ____:
+        ____
             r.. "Unknown"
 
 

@@ -21,11 +21,11 @@ output = """
 """
 
 
-___ sysinfo_scrape(output
+___ sysinfo_scrape ?
     """Scrapes the output from screenfetch and returns a dictionary"""
     lines = output.s..k.._F..)
     w.... lines[0] __ '':
-        lines.pop(0)
+        lines.p.. 0)
     line = lines[0][::-1]
     info_col = l..(line) - __.s..(r' ', line).start()
     results = {'Name': lines[0][info_col:]}

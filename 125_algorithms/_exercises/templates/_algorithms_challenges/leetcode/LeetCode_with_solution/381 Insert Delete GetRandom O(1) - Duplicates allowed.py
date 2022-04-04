@@ -66,13 +66,13 @@ c_ RandomizedCollection(o..
         __ n.. pos[val]:
             r.. F..
 
-        idx, last = pos[val].pop(), l..(lst) - 1
+        idx, last = pos[val].p.. ), l..(lst) - 1
         __ idx != last:
             lst[idx], lst[last] = lst[last], lst[idx]
             pos[lst[idx]].remove(last)
             pos[lst[idx]].add(idx)
 
-        lst.pop()
+        lst.p.. )
 
         r.. T..
 

@@ -13,8 +13,8 @@ c_ Solution(o..
         stack.a..(["", i..(num)])
         num = ""
       ____ c __ "]":
-        ss, k = stack.pop()
+        ss, k = stack.p.. )
         stack[-1][0] += ss * k
-      ____:
+      ____
         stack[-1][0] += c
     r.. stack[-1][0]

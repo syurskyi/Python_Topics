@@ -23,7 +23,7 @@ c_ Solution:
 
         __ start < end:
             check = l.... start, end: start + 1 < end
-        ____:
+        ____
             check = l.... start, end: start - 1 > end
 
         w.... check(start, end
@@ -31,7 +31,7 @@ c_ Solution:
 
             __ is_empty(image, mid
                 start = mid
-            ____:
+            ____
                 end = mid
 
         r.. end __ is_empty(image, start) ____ start

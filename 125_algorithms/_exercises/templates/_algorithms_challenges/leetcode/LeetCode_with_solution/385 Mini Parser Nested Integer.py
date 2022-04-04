@@ -92,14 +92,14 @@ c_ Solution(o..
                 stk.a..(NestedInteger
                 i += 1
             ____ s[i] __ ' ':
-                ni = stk.pop()
+                ni = stk.p.. )
                 __ n.. stk: r.. ni
 
                 stk[-1].add(ni)
                 i += 1
             ____ s[i] __ ',':
                 i += 1
-            ____:
+            ____
                 j = i
                 w.... j < l..(s) a.. (s[j].i.. o. s[j] __ '-' j += 1
 
@@ -108,7 +108,7 @@ c_ Solution(o..
                 stk[-1].add(ni)
                 i = j
 
-        r.. stk.pop()
+        r.. stk.p.. )
 
 
 __ _______ __ _______

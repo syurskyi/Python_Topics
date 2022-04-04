@@ -32,7 +32,7 @@ c_ Solution(o..
                 res.a..(stack1.pop
             ____ abs(stack1[-1]-target) <= abs(stack2[-1]-target
                 res.a..(stack1.pop
-            ____:
+            ____
                 res.a..(stack2.pop
         r.. res
     

@@ -56,7 +56,7 @@ c_ Solution:
 
             __ is_valid(nums, k, mid, s
                 left = mid
-            ____:
+            ____
                 right = mid
 
         r.. left

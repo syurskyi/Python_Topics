@@ -35,9 +35,9 @@ ___ get_generation(cells, generations
 
 ___ trim_result(result
     w.... is_row_all_empty(result[0]
-        result.pop(0)
+        result.p.. 0)
     w.... is_row_all_empty(result[-1]
-        result.pop()
+        result.p.. )
     start_empty, end_empty = T.., T..
     w.... start_empty o. end_empty:
         ___ r __ result:
@@ -47,9 +47,9 @@ ___ trim_result(result
                 end_empty = F..
         ___ r __ result:
             __ start_empty:
-                r.pop(0)
+                r.p.. 0)
             __ end_empty:
-                r.pop()
+                r.p.. )
 
 
 ___ is_row_all_empty(row

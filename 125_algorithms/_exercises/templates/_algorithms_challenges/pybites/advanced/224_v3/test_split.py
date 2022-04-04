@@ -15,20 +15,20 @@ dot (.) should not end this sentence, the next one should. Have fun!
 
 
 ___ test_get_sentences
-    actual = get_sentences(TEXT)
-    expected = [
+    a.. = get_sentences(TEXT)
+    e.. = [
         "PyBites was founded 19th of December 2016.",
         "That means that today, 14th of October 2019 we are 1029 days old.",
         "Time flies when you code in Python.",
         "Anyways, good luck with this Bite.",
         "What is your favorite editor?"
     ]
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_dot_mid_sentence
-    actual = get_sentences(TEXT_WITH_DOTS)
-    expected = [
+    a.. = get_sentences(TEXT_WITH_DOTS)
+    e.. = [
         ("We are looking forward attending the next Pycon in the "
          "U.S.A. in 2020."),
         "Hope you do so too.",
@@ -37,4 +37,4 @@ ___ test_dot_mid_sentence
         "Btw this dot (.) should not end this sentence, the next one should.",
         "Have fun!"
     ]
-    ... actual __ expected
+    ... a.. __ e..

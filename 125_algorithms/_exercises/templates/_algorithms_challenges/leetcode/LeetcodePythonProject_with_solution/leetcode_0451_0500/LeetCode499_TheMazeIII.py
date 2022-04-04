@@ -21,7 +21,7 @@ c_ Solution(o..
         result.s..(key=l.... x: (x[1], x[0]
         __ result:
             r.. result[0][0]
-        ____:
+        ____
             r.. 'impossible'
     
     ___ helper  matrix, start, hole, curr, p.., result, visited

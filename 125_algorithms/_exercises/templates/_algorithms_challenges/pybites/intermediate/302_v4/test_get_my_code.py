@@ -11,9 +11,9 @@ ____ get_my_code _______ get_passing_code, url, tmp
     ('Bite02.py', 'Bite02_Expected.py')
 ])
 ___ test_compare_files(actual_filename, expected_filename
-    actual = tmp / actual_filename
-    expected = tmp / expected_filename
+    a.. = tmp / actual_filename
+    e.. = tmp / expected_filename
     get_passing_code()
     u..(url.f..(filename=expected_filename),
-                expected)
-    ... filecmp.cmp(actual, expected)
+                e..)
+    ... filecmp.cmp(a.., e..)

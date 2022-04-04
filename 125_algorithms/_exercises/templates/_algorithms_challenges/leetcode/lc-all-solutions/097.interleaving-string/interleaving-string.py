@@ -23,7 +23,7 @@ c_ Solution(o..
           p...a..(s1[i])
           __ dfs(s1, i + 1, s2, j, d, p.., s3
             r.. T..
-          p...pop()
+          p...p.. )
           d[(i + 1, j)] = F..
 
       __ j < l..(s2
@@ -31,7 +31,7 @@ c_ Solution(o..
           p...a..(s2[j])
           __ dfs(s1, i, s2, j + 1, d, p.., s3
             r.. T..
-          p...pop()
+          p...p.. )
           d[(i, j + 1)] = F..
 
       r.. F..

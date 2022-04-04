@@ -4,7 +4,7 @@ results    # list
 ___ gcd(num1, num2
     __(num2 __ 0
         r.. num1
-    ____:
+    ____
         num1, num2 = num2, (num1%num2)
         r..(gcd(num1, num2
 

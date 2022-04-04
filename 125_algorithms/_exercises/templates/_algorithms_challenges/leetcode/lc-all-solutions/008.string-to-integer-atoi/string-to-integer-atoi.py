@@ -16,7 +16,7 @@ c_ Solution(o..
     ___ c __ s:
       __ c.i..
         ans = ans * 10 + i..(c)
-      ____:
+      ____
         _____
     ans *= sign
     __ ans > 2147483647:

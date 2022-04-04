@@ -5,5 +5,5 @@ ___ can_capture(rooks
     e2  rooks[1][1]
     __ s1 __ s2 o. e1 __ e2:
         r.. T..
-    ____:
+    ____
         r.. F..

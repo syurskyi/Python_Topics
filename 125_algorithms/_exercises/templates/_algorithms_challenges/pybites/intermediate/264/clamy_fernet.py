@@ -29,7 +29,7 @@ c_ ClamyFernet:
         
         __ n.. key:
             key = base64.urlsafe_b64encode(kdf.derive(password
-        ____:
+        ____
             key = key
 
         _clf = Fernet(key)

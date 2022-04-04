@@ -35,7 +35,7 @@ c_ Solution:
                 i..(w[1:])
             )
         ___ a __ S:
-            itrs = itrs_m.pop(a, [])
+            itrs = itrs_m.p.. a, [])
             ___ itr __ itrs:
                 v = next(itr, N..)
                 itrs_m[v].a..(itr)

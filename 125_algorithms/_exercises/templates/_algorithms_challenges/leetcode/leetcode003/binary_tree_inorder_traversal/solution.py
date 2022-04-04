@@ -34,8 +34,8 @@ c_ Solution(o..
             __ root __ n.. N..
                 stack.a..(root)
                 root = root.left
-            ____:
-                root = stack.pop()
+            ____
+                root = stack.p.. )
                 p...a..(root.val)
                 root = root.right
         r.. p..

@@ -12,7 +12,7 @@ c_ Solution(o..
     stack    # list
     ___ num __ nums:
       w.... stack a.. stack[-1] < num:
-        top = stack.pop()
+        top = stack.p.. )
         __ top __ d:
           ans[d[top]] = num
       stack.a..(num)

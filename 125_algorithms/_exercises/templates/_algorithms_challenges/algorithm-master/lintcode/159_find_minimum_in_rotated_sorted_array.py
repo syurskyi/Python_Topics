@@ -24,7 +24,7 @@ c_ Solution:
             m = l + (r - l) // 2
             __ nums[m] > last:
                 l = m
-            ____:
+            ____
                 r = m
 
         r.. m..(nums[l], nums[r])

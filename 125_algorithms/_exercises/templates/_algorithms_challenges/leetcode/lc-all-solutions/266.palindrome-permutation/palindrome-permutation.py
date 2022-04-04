@@ -12,13 +12,13 @@ c_ Solution(o..
     ___ k __ d:
       __ d[k] % 2 __ 1:
         oddCount += 1
-      ____:
+      ____
         evenCount += 1
 
     __ l..(s) % 2 __ 1:
       __ oddCount __ 1:
         r.. T..
-    ____:
+    ____
       __ oddCount __ 0:
         r.. T..
     r.. F..

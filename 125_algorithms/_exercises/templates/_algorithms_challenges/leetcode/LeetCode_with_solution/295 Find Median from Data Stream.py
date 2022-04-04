@@ -40,7 +40,7 @@ c_ DualHeap(o..
     ___ insert  num
         __ n.. min_h o. num > min_h[0]:
             heapq.heappush(min_h, num)
-        ____:
+        ____
             heapq.heappush(max_h, -num)
         balance()
 
@@ -52,7 +52,7 @@ c_ DualHeap(o..
         ____ l1 - l2 > 1:
             heapq.heappush(max_h, -heapq.heappop(min_h
             balance()
-        ____:
+        ____
             heapq.heappush(min_h, -heapq.heappop(max_h
             balance()
 
@@ -63,9 +63,9 @@ c_ DualHeap(o..
             m = (l1 + l2) / 2  # median index, equivalent to (l1 + l2 - 1) / 2
             __ m < l2:
                 r.. -max_h[0]
-            ____:
+            ____
                 r.. min_h[0]
-        ____:
+        ____
             r.. (-max_h[0] + min_h[0]) / 2.0
 
 

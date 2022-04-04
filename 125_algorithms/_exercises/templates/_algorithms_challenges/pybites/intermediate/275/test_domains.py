@@ -27,5 +27,5 @@ ___ test_get_common_domains(common_domains
       "d@somedomain.com", "e@somedomain.com", "f@hotmail.fr"],
      [('somedomain.com', 3), ('gmail.es', 1)]),
 ])
-___ test_get_most_common_domains(common_domains, emails, expected
-    ... get_most_common_domains(emails, common_domains) __ expected
+___ test_get_most_common_domains(common_domains, emails, e..
+    ... get_most_common_domains(emails, common_domains) __ e..

@@ -18,7 +18,7 @@ c_ Solution(o..
             x = 1/x
         __ n%2__0:
             r.. myPow(x*x, n/2)
-        ____:
+        ____
             r.. x*myPow(x*x, n/2)
     
     ___ test

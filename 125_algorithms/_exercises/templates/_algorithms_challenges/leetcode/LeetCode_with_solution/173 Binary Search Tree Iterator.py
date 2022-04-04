@@ -38,6 +38,6 @@ c_ BSTIterator:
             stk.a..(cur)
             cur = cur.left
 
-        nxt = stk.pop()
+        nxt = stk.p.. )
         cur = nxt.right
         r.. nxt.val

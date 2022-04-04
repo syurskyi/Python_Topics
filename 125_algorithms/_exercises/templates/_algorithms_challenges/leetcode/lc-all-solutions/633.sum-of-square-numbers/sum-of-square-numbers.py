@@ -13,6 +13,6 @@ c_ Solution(o..
         r.. T..
       ____ mid < c:
         start += 1
-      ____:
+      ____
         end -= 1
     r.. F..

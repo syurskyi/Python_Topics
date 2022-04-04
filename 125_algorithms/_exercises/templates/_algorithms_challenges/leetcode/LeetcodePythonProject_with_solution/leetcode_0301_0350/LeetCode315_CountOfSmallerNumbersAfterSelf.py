@@ -32,14 +32,14 @@ c_ Solution(o..
             __ n.. root.left:
                 root.left = TreeNode(val)
                 r.. num
-            ____:
+            ____
                 r.. getVal(root.left, val, num)
-        ____:
+        ____
             num += root.num
             __ n.. root.right:
                 root.right = TreeNode(val)
                 r.. num
-            ____:
+            ____
                 r.. getVal(root.right, val, num)
     
     ___ test
@@ -58,7 +58,7 @@ c_ Solution(o..
             line    # list
             nextQueue    # list
             w.... queue:
-                node = queue.pop(0)
+                node = queue.p.. 0)
                 line.a..(node)
                 __ node.left:
                     nextQueue.a..(node.left)

@@ -68,7 +68,7 @@ c_ Solution:
         ___ i __ r..(365, 0, -1
             __ i n.. __ days_set:
                 F[i] = F[i+1]
-            ____:
+            ____
                 F[i] = m..(
                     c + F[i+d]
                     ___ d, c __ z..([1, 7, 30], costs)
@@ -96,7 +96,7 @@ c_ Solution:
                     F[i] = m..(F[i], costs[1] + F[j])
                 __ delta <= 30:
                     F[i] = m..(F[i], costs[2] + F[j])
-                ____:
+                ____
                     _____
         r.. F[0]
 
@@ -116,7 +116,7 @@ c_ Solution:
         ___ i __ r..(1, 366
             __ i n.. __ days_set:
                 F[i] = F[i-1]
-            ____:
+            ____
                 # iterate forward does not work
                 F[i] = m..(F[i], F[i-1] + costs[0])
 

@@ -17,7 +17,7 @@ c_ Solution(o..
             area = m..(area, m..(height[i], height[j])*(j-i
             __ height[i] > height[j]:
                 j -= 1
-            ____:
+            ____
                 i += 1
         r.. area
 

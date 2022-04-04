@@ -46,7 +46,7 @@ c_ Solution:
             cur %= 5
             __ cur __ 0:
                 ret.a..(T..)
-            ____:
+            ____
                 ret.a..(F..)
 
         r.. ret

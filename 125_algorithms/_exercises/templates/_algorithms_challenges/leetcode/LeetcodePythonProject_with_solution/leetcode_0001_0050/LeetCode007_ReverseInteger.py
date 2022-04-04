@@ -19,5 +19,5 @@ c_ Solution(o..
         res = res*sig
         __ res > 2**31-1 o. res < -2**31:
             r.. 0
-        ____:
+        ____
             r.. res

@@ -37,7 +37,7 @@ c_ Queue(o..
         """
         __ n.. stack2:
             _move()
-        stack2.pop()
+        stack2.p.. )
 
     ___ peek
         """
@@ -55,7 +55,7 @@ c_ Queue(o..
             _move()
         __ n.. stack2:
             r.. T..
-        ____:
+        ____
             r.. F..
 
     ___ _move

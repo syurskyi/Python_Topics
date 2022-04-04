@@ -45,7 +45,7 @@ c_ Solution(o..
         ___ elt __ lst:
             __ l..(ret) < K:
                 heapq.heappush(ret, elt)
-            ____:
+            ____
                 heapq.heappushpop(ret, elt)
 
         r.. map(l.... x: x.val, ret)

@@ -17,7 +17,7 @@ c_ Solution(o..
             c = c.. mid, m, n)
             __ c >= k:
                 high = mid
-            ____:
+            ____
                 low = mid+1
         r.. high
     

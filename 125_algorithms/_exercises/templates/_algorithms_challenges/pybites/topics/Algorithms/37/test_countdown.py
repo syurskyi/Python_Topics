@@ -2,7 +2,7 @@ _______ i___
 
 ____ countdown _______ countdown_for, countdown_recursive
 
-expected = '''10
+e.. = '''10
 9
 8
 7
@@ -18,19 +18,19 @@ expected_other_start_arg = '''13
 12
 11
 '''
-expected_other_start_arg += expected
+expected_other_start_arg += e..
 
 
 ___ test_countdown_for(capfd
     countdown_for()
     out, _ = capfd.readouterr()
-    ... out __ expected
+    ... out __ e..
 
 
 ___ test_countdown_recursive(capfd
     countdown_recursive()
     out, _ = capfd.readouterr()
-    ... out __ expected
+    ... out __ e..
 
 
 ___ test_test_countdown_recursive_different_start(capfd

@@ -17,7 +17,7 @@ ___ i __ r..(l..(a:
     ___ j __ r..(0,l..(a)-1
         __ a[j] > a[j+1]:
             a[j],a[j+1]=a[j+1],a[j]
-        ____:
+        ____
             p..
 #identifying the elements which are sorted with the dictionary key and printing the original index in sorted form
 ___ ele_list __ a:

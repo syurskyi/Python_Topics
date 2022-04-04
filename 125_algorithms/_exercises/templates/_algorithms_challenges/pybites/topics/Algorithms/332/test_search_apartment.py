@@ -20,5 +20,5 @@ ____ search_apartment _______ search_apartment
         ([1, 2, 3, 3, 4, 4, 4, 5], "E", [7]),
     ],
 )
-___ test_search_apartment(buildings, direction, expected
-    ... search_apartment(buildings, direction) __ expected
+___ test_search_apartment(buildings, direction, e..
+    ... search_apartment(buildings, direction) __ e..

@@ -31,7 +31,7 @@ c_ Solution:
         ___ time, is_start __ timeline:
             __ is_start:
                 cnt += 1
-            ____:
+            ____
                 cnt -= 1
 
             __ cnt > 1:

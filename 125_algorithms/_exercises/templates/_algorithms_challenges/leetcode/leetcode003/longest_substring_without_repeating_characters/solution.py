@@ -7,7 +7,7 @@ c_ Solution:
         ___ i, c __ e..(s
             __ c n.. __ d:
                 cur += 1
-            ____:
+            ____
                 cur = m..(i - d[c], cur + 1)
             d[c] = i
             res = m..(res, cur)

@@ -37,7 +37,7 @@ ___ validate_license(key: s..) __ b..:
     """
     __(__.m..(r"^PB-(\d|\w){8}-(\d|\w){8}-(\d|\w){8}-(\d|\w){8}$", key:
         r.. T..
-    ____:
+    ____
         r.. F..
 
 print(validate_license("PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4"

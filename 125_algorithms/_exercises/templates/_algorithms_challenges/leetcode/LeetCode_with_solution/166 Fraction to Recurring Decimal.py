@@ -30,7 +30,7 @@ c_ Solution:
         __ frac_part:
             decimal_part = frac(numerator-int_part*denominator, denominator)
             ret = s..(int_part)+"."+decimal_part
-        ____:
+        ____
             ret = s..(int_part)
 
         __ sign < 0:
@@ -75,7 +75,7 @@ c_ Solution_error:
         __ fract_part:
             decimal_part = frac(numerator-int_part*denominator, denominator)
             ret = s..(int_part)+"."+decimal_part
-        ____:
+        ____
             ret = s..(int_part)
 
         r.. ret

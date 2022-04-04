@@ -43,5 +43,5 @@ c_ Solution:
                 cur_path.a..(nbr)
                 # pre-check
                 dfs(G, nbr, d, cur_path, visited, ret)
-                cur_path.pop()
+                cur_path.p.. )
                 visited[nbr] = F..

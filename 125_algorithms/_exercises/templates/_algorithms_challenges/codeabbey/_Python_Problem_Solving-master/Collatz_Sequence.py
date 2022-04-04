@@ -18,9 +18,9 @@ ___ i __ r..(l..(a:
                 
                 #print('even res:',res)
                 _____
-            ____:
+            ____
                 count += 1
-        ____:
+        ____
             #print('odd')
             xnext = (3*xnext) + 1
             #print('odd: ',xnext)
@@ -30,7 +30,7 @@ ___ i __ r..(l..(a:
                 res.a..(count)
                 #print(res)
                 _____
-            ____:
+            ____
                 count += 1
 ___ i __ res:
     print(i,end=(' '

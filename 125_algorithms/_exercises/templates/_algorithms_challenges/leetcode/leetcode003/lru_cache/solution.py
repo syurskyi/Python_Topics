@@ -38,7 +38,7 @@ c_ LRUCache:
         timestamp += 1
         __ key __ cache:
             times[key] = timestamp
-        ____:
+        ____
             __ l..(cache) >= capacity:
                 lru_key = get_lru_key()
                 del cache[lru_key]

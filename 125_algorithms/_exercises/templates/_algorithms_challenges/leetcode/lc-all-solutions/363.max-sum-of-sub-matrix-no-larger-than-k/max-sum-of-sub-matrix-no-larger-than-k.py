@@ -20,7 +20,7 @@ c_ Solution(o..
         ___ i __ r..(0, l..(matrix:
           __ start > 0:
             subsum += dp[i][end] - dp[i][start - 1]
-          ____:
+          ____
             subsum += dp[i][end]
           idx = bisect.bisect_left(sums, subsum - k)
           __ idx < l..(sums

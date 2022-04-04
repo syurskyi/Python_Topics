@@ -13,7 +13,7 @@ c_ Queue(o..
             stack1.a..(x)
         ____ stack1:
             stack1.a..(x)
-        ____:
+        ____
             w.... stack2:
                 stack1.a..(stack2.pop
             stack1.a..(x)
@@ -22,7 +22,7 @@ c_ Queue(o..
         __ stack1:
             w.... stack1:
                 stack2.a..(stack1.pop
-        r.. stack2.pop()
+        r.. stack2.p.. )
     
     ___ peep
         __ stack1:

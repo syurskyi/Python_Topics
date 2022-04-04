@@ -26,7 +26,7 @@ c_ Solution(o..
             stack.a..(node)
             node = node.left
         w.... stack:
-            node = stack.pop()
+            node = stack.p.. )
             result.a..(node.val)
             __ node.right:
                 node = node.right

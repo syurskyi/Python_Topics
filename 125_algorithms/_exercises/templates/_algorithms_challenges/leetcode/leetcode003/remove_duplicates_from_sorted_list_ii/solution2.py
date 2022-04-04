@@ -31,7 +31,7 @@ c_ Solution(o..
             __ last __ n.. N..
                 __ current.val __ last.val:
                     count += 1
-                ____:
+                ____
                     __ count __ 0:
                         dummy_end.next = last
                         dummy_end = last

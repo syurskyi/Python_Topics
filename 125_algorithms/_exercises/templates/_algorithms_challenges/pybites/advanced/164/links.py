@@ -18,14 +18,14 @@ ___ make_html_links
             domain = __.s..(r'https?//(.+?)/').group(1)
             __ domain n.. __ INTERNAL_LINKS:
                 add_target = T..
-            ____:
+            ____
                 add_target = F..
 
 
             
             __ n.. add_target:
                 link = f'<a href="{href}">{link_name}</a>'
-            ____:
+            ____
                 link = f'<a href="{href}" target="_blank">{link_name}</a>'
 
             

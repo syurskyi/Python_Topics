@@ -72,7 +72,7 @@ ___ get_dates(dates
         ___ index __ r..(l..(enum_list:
             __ enum_list[index].value __ -999:
                 enum_dict[-999] += 1
-            ____:
+            ____
                 enum_dict[enum_list[index].value] += 1
     sorted_enum = s..(enum_dict, key=enum_dict.get, r.._T..
     # convert to the most prevalent date format
@@ -83,7 +83,7 @@ ___ get_dates(dates
             __ enum_list[0].value __ -999:
                 #print('Invalid')
                 return_list.a..('Invalid')
-            ____:
+            ____
                 ___
                     return_list.a..(s..(d__.s..(date, date_str).date                    )
                 ______ V..
@@ -92,7 +92,7 @@ ___ get_dates(dates
                 #output_date_str = str(datetime.strptime(date, date_str).date())
                 #print(f'good {date} {enum_list[0]} {date_str} {output_date_str}')
                 #return_list.append(output_date_str)
-    ____:
+    ____
         r.. InfDateFmtError 
     r.. return_list
 

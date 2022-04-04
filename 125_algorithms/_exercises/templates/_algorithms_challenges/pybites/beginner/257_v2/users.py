@@ -15,10 +15,10 @@ ___ get_users(passwd: s..) __ d..:
             _____
         values = line.s..(':')
         username,name = values[0],values[4]
-        name = name.strip(',')
+        name = name.s..(',')
         __ name != '':
             name = __.sub(r'\,+',' ',name)
-        ____:
+        ____
             name = 'unknown'
 
 

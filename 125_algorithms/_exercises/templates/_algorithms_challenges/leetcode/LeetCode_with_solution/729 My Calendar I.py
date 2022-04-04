@@ -78,7 +78,7 @@ c_ MyCalendar:
                 r.. N..
             node.right = right
             r.. node
-        ____:
+        ____
             r.. N..
 
     ___ book  start: i.., end: i..) __ b..:

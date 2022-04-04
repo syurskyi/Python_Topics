@@ -5,30 +5,30 @@ ____ proverb _______ proverb
 
 c_ ProverbTest(unittest.TestCase
     ___ test_a_single_consequence
-        expected = 'For want of a nail the shoe was lost.\n'\
+        e.. = 'For want of a nail the shoe was lost.\n'\
                    'And all for the want of a nail.'
-        assertEqual(proverb( 'nail', 'shoe' ), expected)
+        assertEqual(proverb( 'nail', 'shoe' ), e..)
 
     ___ test_short_list
-        expected = 'For want of a nail the shoe was lost.\n'\
+        e.. = 'For want of a nail the shoe was lost.\n'\
                    'For want of a shoe the horse was lost.\n'\
                    'And all for the want of a nail.'
-        assertEqual(proverb( 'nail', 'shoe', 'horse' ), expected)
+        assertEqual(proverb( 'nail', 'shoe', 'horse' ), e..)
 
     ___ test_long_list
-        expected = 'For want of a nail the shoe was lost.\n'\
+        e.. = 'For want of a nail the shoe was lost.\n'\
                    'For want of a shoe the horse was lost.\n'\
                    'For want of a horse the rider was lost.\n'\
                    'And all for the want of a nail.'
-        assertEqual(proverb( 'nail', 'shoe', 'horse', 'rider' ), expected)
+        assertEqual(proverb( 'nail', 'shoe', 'horse', 'rider' ), e..)
 
     ___ test_new_itens
-        expected = 'For want of a key the value was lost.\n'\
+        e.. = 'For want of a key the value was lost.\n'\
                    'And all for the want of a key.'
-        assertEqual(proverb( 'key', 'value' ), expected)
+        assertEqual(proverb( 'key', 'value' ), e..)
 
     ___ test_whole_proverb
-        expected = 'For want of a nail the shoe was lost.\n'\
+        e.. = 'For want of a nail the shoe was lost.\n'\
                    'For want of a shoe the horse was lost.\n'\
                    'For want of a horse the rider was lost.\n'\
                    'For want of a rider the message was lost.\n'\
@@ -39,10 +39,10 @@ c_ ProverbTest(unittest.TestCase
             proverb([
                 'nail', 'shoe', 'horse', 'rider', 'message', 'battle',
                 'kingdom'
-            ]), expected)
+            ]), e..)
 
     ___ test_qualifier
-        expected = 'For want of a nail the shoe was lost.\n'\
+        e.. = 'For want of a nail the shoe was lost.\n'\
                    'For want of a shoe the horse was lost.\n'\
                    'For want of a horse the rider was lost.\n'\
                    'For want of a rider the message was lost.\n'\
@@ -55,7 +55,7 @@ c_ ProverbTest(unittest.TestCase
                     'nail', 'shoe', 'horse', 'rider', 'message', 'battle',
                     'kingdom'
                 ],
-                qualifier='horseshoe'), expected)
+                qualifier='horseshoe'), e..)
 
 
 __ _____ __ _____

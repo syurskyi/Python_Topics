@@ -51,6 +51,6 @@ data = [
 ]
 pkl_file = 'khoo.pickle'
 serialize(pkl_file, data=data)
-actual = deserialize(pkl_file)
+a.. = deserialize(pkl_file)
 
-print(actual)
+print(a..)

@@ -33,7 +33,7 @@ ___ filter_tweets_on_polarity(tweets, keep_positive=T..
       __ keep_positive:
             positive = [tweet ___ tweet __ tweets __ tweet.polarity > 0]
             r.. positive
-      ____:
+      ____
             negative = [tweet ___ tweet __ tweets __ tweet.polarity < 0]
             r.. negative
 
@@ -44,7 +44,7 @@ ___ order_tweets_by_polarity(tweets, positive_highest=T..
       __ positive_highest:
             highest = s..(tweets, key=l.... x: x.polarity, r.._T..
             r.. highest
-      ____:
+      ____
             lowest = s..(tweets, key=l.... x: x.polarity)
             r.. lowest
 

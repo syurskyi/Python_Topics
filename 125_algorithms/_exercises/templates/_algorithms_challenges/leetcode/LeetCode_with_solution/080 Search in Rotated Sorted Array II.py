@@ -40,19 +40,19 @@ c_ Solution:
             __ A[start]<A[mid]<A[end]:
                 __ target>A[mid]:
                     start = mid+1
-                ____:
+                ____
                     end = mid-1
             # case 2
             ____ A[start]>A[mid] a.. A[mid]<A[end]:
                 __ target>A[mid] a.. target<=A[end]:
                     start = mid+1
-                ____:
+                ____
                     end = mid-1
             # case 3
-            ____:
+            ____
                 __ target<A[mid] a.. target>=A[start]:
                     end = mid-1
-                ____:
+                ____
                     start = mid+1
 
         r.. F..
@@ -90,19 +90,19 @@ c_ Solution:
             ____ A[start]<A[mid]<=A[end]:
                 __ target>A[mid]:
                     start = mid+1
-                ____:
+                ____
                     end = mid-1
             # case 2
             ____ A[start]>A[mid] a.. A[mid]<=A[end]:  # slight difference compared to A[mid]<A[end]
                 __ target>A[mid] a.. target<=A[end]:
                     start = mid+1
-                ____:
+                ____
                     end = mid-1
             # case 3
-            ____:
+            ____
                 __ target<A[mid] a.. target>=A[start]:
                     end = mid-1
-                ____:
+                ____
                     start = mid+1
 
         r.. F..

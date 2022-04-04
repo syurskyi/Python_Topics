@@ -19,7 +19,7 @@ c_ VigenereAutokeyCipher:
                 offset = abc.i.. key[index])
                 result.a..(abc[(abc.i.. c) + offset) % l..(abc)])
                 index += 1
-            ____:
+            ____
                 result.a..(c)
         r.. ''.j..(result)
 
@@ -34,6 +34,6 @@ c_ VigenereAutokeyCipher:
                 result.a..(decoded)
                 key += decoded
                 index += 1
-            ____:
+            ____
                 result.a..(c)
         r.. ''.j..(result)

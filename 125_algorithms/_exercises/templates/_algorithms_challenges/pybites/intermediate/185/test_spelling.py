@@ -24,5 +24,5 @@ ___ a_words
     ('accomodate', 'accommodate'),
     ('accidentaly', 'accidentally'),
 ])
-___ test_suggest_word(word, expected, a_words
-    ... suggest_word(word, words=a_words) __ expected
+___ test_suggest_word(word, e.., a_words
+    ... suggest_word(word, words=a_words) __ e..

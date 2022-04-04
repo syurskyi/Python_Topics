@@ -23,7 +23,7 @@ c_ Solution(o..
         size = l..(nums)
         ___ x __ r..(size
             w.... result a.. l..(result)+size-x>maxLen a.. result[-1]<nums[x]:
-                result.pop()
+                result.p.. )
             __ l..(result) < maxLen:
                 result.a..(nums[x])
         r.. result
@@ -32,13 +32,13 @@ c_ Solution(o..
         result    # list
         w.... nums1 a.. nums2:
             __ nums1 >= nums2:
-                result.a..(nums1.pop(0
-            ____:
-                result.a..(nums2.pop(0
+                result.a..(nums1.p.. 0
+            ____
+                result.a..(nums2.p.. 0
         w.... nums1:
-            result.a..(nums1.pop(0
+            result.a..(nums1.p.. 0
         w.... nums2:
-            result.a..(nums2.pop(0
+            result.a..(nums2.p.. 0
         r.. result
     
     ___ test

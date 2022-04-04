@@ -14,7 +14,7 @@ c_ Solution(o..
           end = mid
         ____ nums[mid] < target:
           start = mid
-        ____:
+        ____
           r.. T..
       __ nums[start] __ target:
         r.. T..

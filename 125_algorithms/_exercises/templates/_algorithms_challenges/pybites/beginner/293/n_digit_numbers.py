@@ -9,14 +9,14 @@ ___ n_digit_numbers(numbers: L..[T], n: i..) __ L..[i..]:
             new_number = s..(number).r..('.','')
             __ new_number[0] __ '-':
                 new_number = new_number[:n+1]
-            ____:
+            ____
                 new_number = new_number[:n]
             new_numbers.a..(i..(new_number
         print(new_numbers)
         r.. [number*(10**(n-l..(s..(number))))
                 __ number > 0 ____ number*(10**(n-l..(s..(number).r..('-',''))))
                 ___ number __ new_numbers]
-    ____:
+    ____
         r.. V...
 
 

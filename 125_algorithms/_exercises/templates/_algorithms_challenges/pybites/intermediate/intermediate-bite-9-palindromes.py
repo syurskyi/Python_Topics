@@ -59,7 +59,7 @@ ___ get_longest_palindrome(words_ N..
                 __ l..(word) > max_pal:
                     max_pal = l..(word)
                     pal = word
-    ____:
+    ____
         ___ word __ load_dictionary
             __ is_palindrome(word
                 __ l..(word) > max_pal:

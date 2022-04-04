@@ -18,7 +18,7 @@ c_ Solution(o..
         end = mid
       ____ matrix[mid / n][mid % n] < target:
         start = mid
-      ____:
+      ____
         r.. T..
     __ matrix[start / n][start % n] __ target:
       r.. T..

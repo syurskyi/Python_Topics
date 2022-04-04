@@ -8,5 +8,5 @@ ___ positive_divide(numerator, denominator
 
     __ result < 0:
         r.. V...
-    ____:
+    ____
         r.. result

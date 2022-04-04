@@ -33,7 +33,7 @@ c_ Solution(o..
             w.... j < l..(intervals
                 __ intervals[j].start > nextEnd:
                     _____
-                ____:
+                ____
                     nextEnd = m..(intervals[j].end, nextEnd)
                 j += 1
             i = j

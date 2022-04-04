@@ -6,7 +6,7 @@ ___ cached_fib(n
         r.. V...('cannot calculate negative fibonacci numbers')
     __ n < 2:
         r.. n
-    ____:
+    ____
         r.. (cached_fib(n - 1) + cached_fib(n - 2
 
 

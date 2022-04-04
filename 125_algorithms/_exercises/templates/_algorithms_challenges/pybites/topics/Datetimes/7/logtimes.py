@@ -41,7 +41,7 @@ ___ time_between_shutdowns(loglines
         __ SHUTDOWN_EVENT __ logline:
             __ start_time __ 0:
                 start_time = convert_to_datetime(logline)
-            ____:
+            ____
                 end_time = convert_to_datetime(logline)
     r.. end_time - start_time
 

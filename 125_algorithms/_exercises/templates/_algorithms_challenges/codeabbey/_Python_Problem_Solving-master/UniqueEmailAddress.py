@@ -10,14 +10,14 @@ ___ i __ x:
     w.... i[j]! '@':
         __ plus_check __ F..:
             __ i[j] __ '.':
-                i.pop(j)
+                i.p.. j)
             ____ i[j] __ '+':
                 plus_check  T..
-            ____:
+            ____
                 j + 1
                 p..
-        ____:
-            i.pop(j)
+        ____
+            i.p.. j)
     s__  ''.j..(i)
     __ s__ n.. __ store_add:
         store_add.a..(s__)

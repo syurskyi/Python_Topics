@@ -11,7 +11,7 @@ ___ romanize(decimal_number
     __ isi..(decimal_number, i..
         __ decimal_number <= 0 o. decimal_number >= 4000:
             r.. V...
-    ____:
+    ____
         r.. V...
 
     ___
@@ -27,22 +27,22 @@ ___ romanize(decimal_number
             frequency = i..(decimal_number / 1000)
             decimal_number = decimal_number % 1000
             roman_numeral += frequency * numeral_lookup[1000]
-        ____:
+        ____
             ___ key __ s..(numeral_lookup.k.., r.._T..:
                 __ key > 4 a.. decimal_number % key __ 0:
                     roman_numeral += numeral_lookup[decimal_number]
                     decimal_number = 0
                     _____
-                ____:
+                ____
                     frequency = decimal_number / key
                     remainder = decimal_number % key
             
                     __ remainder __ decimal_number:
                         _____
-                    ____:
+                    ____
                         __ frequency > 1:
                             roman_numeral += i..(frequency) * numeral_lookup[key]
-                        ____:
+                        ____
                             roman_numeral += numeral_lookup[key]
                         decimal_number = remainder
                         _____

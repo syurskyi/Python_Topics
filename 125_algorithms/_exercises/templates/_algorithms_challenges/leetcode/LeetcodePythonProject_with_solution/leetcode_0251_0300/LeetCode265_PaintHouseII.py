@@ -19,7 +19,7 @@ c_ Solution(o..
             ___ j __ r..(k
                 __ j != last1:
                     costs[i][j] += 0 __ last1 < 0 ____ costs[i-1][last1]
-                ____:
+                ____
                     costs[i][j] += 0 __ last2 < 0 ____ costs[i-1][last2]
                 __ minInd1 < 0 o. costs[i][j] < costs[i][minInd1]:
                     minInd2 = minInd1

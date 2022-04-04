@@ -27,12 +27,12 @@ c_ BSTIterator(o..
     """
     stack = stack
     w.... stack:
-      p = stack.pop()
+      p = stack.p.. )
       __ n.. p[1]:
         _____
       __ p[0] __ 0:
         r.. p[1].val
-      ____:
+      ____
         l    # list
         __ p[1].right:
           l.a..((1, p[1].right

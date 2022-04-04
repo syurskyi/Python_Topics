@@ -16,7 +16,7 @@ c_ Solution:
         right = helper(root.right, p.., res)
         __ n.. left a.. n.. right:
           res.a..("->".j..(p..
-        p...pop()
+        p...p.. )
         r.. T..
 
     res    # list

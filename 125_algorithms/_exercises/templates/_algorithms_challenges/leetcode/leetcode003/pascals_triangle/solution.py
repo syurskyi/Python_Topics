@@ -37,7 +37,7 @@ c_ Solution(o..
                     cur.a..(1)
                 ____ i __ n:
                     cur.a..(1)
-                ____:
+                ____
                     c = res[n - 1][i - 1] + res[n - 1][i]
                     cur.a..(c)
             res.a..(cur)

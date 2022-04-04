@@ -45,7 +45,7 @@ c_ Solution:
             ___ i __ r..(x..(k:
                 __ i__0:
                     cur_lst[i].next = temp
-                ____:
+                ____
                     cur_lst[i].next = cur_lst[i-1]
 
             pre = cur_lst[0]
@@ -66,7 +66,7 @@ c_ Solution:
             __ cur:
                 lst.a..(cur)
                 cur = cur.next
-            ____:
+            ____
                 lst.a..(N..)
         r.. lst
 

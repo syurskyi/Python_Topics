@@ -8,7 +8,7 @@ ___ reverse_it(data
     ____ isi..(data,f__
         r.. f__(s..(data)[::-1])
 
-    ____:
+    ____
         r.. data
 
     

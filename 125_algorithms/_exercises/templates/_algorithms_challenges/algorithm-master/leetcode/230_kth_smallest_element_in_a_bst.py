@@ -26,7 +26,7 @@ c_ Solution:
                 stack.a..(node)
                 node = node.left
 
-            node = stack.pop()
+            node = stack.p.. )
 
             k -= 1
             __ k __ 0:

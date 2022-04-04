@@ -47,7 +47,7 @@ c_ Solution:
             __ remain > 0:
                 ret += a
                 remain -= 1
-            ____:
+            ____
                 ret += b
 
         r.. ret
@@ -70,7 +70,7 @@ c_ Solution:
             ____ remain > 0:
                 ret += a
                 remain -= 1
-            ____:
+            ____
                 ret += b
 
         r.. ret

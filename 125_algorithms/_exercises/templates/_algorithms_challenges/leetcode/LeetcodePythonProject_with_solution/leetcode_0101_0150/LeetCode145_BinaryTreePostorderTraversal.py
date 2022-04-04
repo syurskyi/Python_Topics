@@ -22,9 +22,9 @@ c_ Solution(o..
         w.... stack:
             node = stack[-1] # peek
             __ n.. node.left a.. n.. node.right:
-                pop = stack.pop()
+                pop = stack.p.. )
                 result.a..(pop.val)
-            ____:
+            ____
                 __ node.right:
                     stack.a..(node.right)
                     node.right = N..

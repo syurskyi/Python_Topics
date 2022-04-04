@@ -32,7 +32,7 @@ c_ Solution:
                 nxt = head.left
             ____ head.right:
                 nxt = head.right
-            ____:
+            ____
                 head = head.next
 
         __ root.right:

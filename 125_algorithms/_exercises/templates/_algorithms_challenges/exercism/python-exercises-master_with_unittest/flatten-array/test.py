@@ -19,18 +19,18 @@ c_ FlattenArrayTests(unittest.TestCase
 
     ___ test_with_none_values
         inputs = [0, 2, [[2, 3], 8, [[100]], N.., [[N..]]], -2]
-        expected = [0, 2, 2, 3, 8, 100, -2]
-        assertEqual(flatten(inputs), expected)
+        e.. = [0, 2, 2, 3, 8, 100, -2]
+        assertEqual(flatten(inputs), e..)
 
     ___ test_six_level_nesting
         inputs = [1, [2, [[3]], [4, [[5]]], 6, 7], 8]
-        expected = [1, 2, 3, 4, 5, 6, 7, 8]
-        assertEqual(flatten(inputs), expected)
+        e.. = [1, 2, 3, 4, 5, 6, 7, 8]
+        assertEqual(flatten(inputs), e..)
 
     ___ test_all_values_are_none
         inputs = [N.., [[[N..]]], N.., N.., [[N.., N..], N..], N..]
-        expected    # list
-        assertEqual(flatten(inputs), expected)
+        e..    # list
+        assertEqual(flatten(inputs), e..)
 
     ___ test_strings
         assertEqual(flatten( '0',  '1', '2']]),  '0', '1', '2' )

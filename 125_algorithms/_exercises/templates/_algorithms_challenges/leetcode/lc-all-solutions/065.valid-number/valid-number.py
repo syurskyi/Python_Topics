@@ -31,14 +31,14 @@ c_ Solution(o..
           state = states.decimal
         ____ c __ ["+", "-"]:
           state = states.sign
-        ____:
+        ____
           r.. F..
       ____ state __ states.sign:
         __ c __ decimals:
           state = states.decimal
         ____ c __ ".":
           state = states.nullpoint
-        ____:
+        ____
           r.. F..
       ____ state __ states.esign:
         __ c n.. __ decimals:
@@ -58,32 +58,32 @@ c_ Solution(o..
           state = states.e
         ____ c __ ".":
           state = states.decpoint
-        ____:
+        ____
           r.. F..
       ____ state __ states.decpoint:
         __ c __ decimals:
           state = states.afterdp
         ____ c __ "e":
           state = states.e
-        ____:
+        ____
           r.. F..
       ____ state __ states.afterdp:
         __ c __ decimals:
           _____
         ____ c __ "e":
           state = states.e
-        ____:
+        ____
           r.. F..
       ____ state __ states.e:
         __ c __ decimals:
           state = states.aftere
         ____ c __ ["+", "-"]:
           state = states.esign
-        ____:
+        ____
           r.. F..
       ____ state __ states.aftere:
         __ c n.. __ decimals:
           r.. F..
-      ____:
+      ____
         r.. F..
     r.. state n.. __ [states.init, states.e, states.nullpoint, states.sign, states.esign]

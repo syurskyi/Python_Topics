@@ -44,7 +44,7 @@ c_ Solution:
         ___ i __ r..(l..(intvs:  # since there is one more child in intvs
             __ ans a.. intvs[i].start <= ans[-1].end:
                 ans[-1].end = m..(ans[-1].end, intvs[i].end)
-            ____:
+            ____
                 ans.a..(intvs[i])
 
         r.. ans

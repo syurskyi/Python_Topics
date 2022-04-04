@@ -4,7 +4,7 @@ ___ collatz(n
         __ n % 2 __ 0:
             n  n // 2
             output.a..(n)
-        ____:
+        ____
             n  n*3 + 1
             output.a..(n)
-    r.. l..(output),m..(output)
+    r.. l.. ? ,m.. ?

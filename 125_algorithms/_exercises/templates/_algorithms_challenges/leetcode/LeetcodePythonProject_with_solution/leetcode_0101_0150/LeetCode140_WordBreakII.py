@@ -32,7 +32,7 @@ c_ Solution(o..
             __ i >= l..(word
                 curr.insert(0, word)
                 helper(dp, i-l..(word), res, curr)
-                curr.pop(0)
+                curr.p.. 0)
     
     ___ test
         testCases = [

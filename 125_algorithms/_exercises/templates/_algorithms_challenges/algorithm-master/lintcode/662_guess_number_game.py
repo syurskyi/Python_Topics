@@ -25,7 +25,7 @@ c_ Solution:
                 r.. mid
             ____ res __ 1:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         r.. left __ Guess.guess(left) __ 0 ____ right

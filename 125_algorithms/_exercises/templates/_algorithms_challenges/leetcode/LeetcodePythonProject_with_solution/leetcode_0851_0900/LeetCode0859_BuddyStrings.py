@@ -34,9 +34,9 @@ c_ Solution(o..
                 ____ times __ 1:
                     __ c01 __ c2 a.. c02 __ c1:
                         times += 1
-                    ____:
+                    ____
                         r.. F..
-                ____:
+                ____
                     c01, c02 = c1, c2
                     times += 1
         __ times __ 0:

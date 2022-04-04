@@ -22,7 +22,7 @@ ___ my_print_game_stats(games_won=games_won
     ___ key, value __ games_won.i..:
         __ value __ 1:
             print(f"{key} has won {value} game")
-        ____:
+        ____
             print(f"{key} has won {value} games")
 
     p..

@@ -26,7 +26,7 @@ c_ Solution:
             __ head.val < x:
                 left_tail.next = node
                 left_tail = node
-            ____:
+            ____
                 right_tail.next = node
                 right_tail = node
             head = head.next

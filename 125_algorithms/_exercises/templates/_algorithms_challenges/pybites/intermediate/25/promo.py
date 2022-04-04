@@ -37,9 +37,9 @@ c_ Promo:
         __ l..(all_bites) != l..(bites_done
             __ bite_key n.. __ bites_done:
                 r.. bite_key
-            ____:
+            ____
                 _pick_random_bite()
-        ____:
+        ____
             r.. NoBitesAvailable
         r.. bite_key
 

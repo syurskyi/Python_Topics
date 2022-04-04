@@ -24,7 +24,7 @@ c_ Solution(o..
                 hashmap0[c] = hashmap0.g.. c, 0)+1
                 __ l..(s1) __ i-left+1:
                     r.. T..
-            ____:
+            ____
                 left = i+1
                 hashmap0    # dict
         r.. F..

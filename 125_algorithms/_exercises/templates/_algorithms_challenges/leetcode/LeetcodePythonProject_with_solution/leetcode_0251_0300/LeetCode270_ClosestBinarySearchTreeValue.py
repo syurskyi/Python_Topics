@@ -24,6 +24,6 @@ c_ Solution(o..
                 result = root.val
             __ root.val > target:
                 root = root.left
-            ____:
+            ____
                 root = root.right
         r.. result

@@ -6,9 +6,9 @@ ___ char_index(word, char
         ____ char n.. __ word:
             r.. N..
     output.s..()
-    __ l..(output) __ 1:
-        output.a..(output[0])
-    __ l..(output) > 2:
-        ___ i __ r..(1,l..(output)- 1
-            output.pop(i)
+    __ l.. ?  __ 1:
+        output.a.. ? [0])
+    __ l.. ?  > 2:
+        ___ i __ r..(1,l.. ? - 1
+            output.p.. i)
     r.. output

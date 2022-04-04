@@ -45,11 +45,11 @@ c_ Solution:
                 ____ prev_op __ "-":
                     cur = -operand
                 ____ prev_op __ "*":
-                    cur = stk.pop() * operand
-                ____:
+                    cur = stk.p.. ) * operand
+                ____
                     ... prev_op __ "/"
                     # instead of op1 // op2 due to negative handling, -3 // 2 == -2
-                    cur = i..(stk.pop() / operand)
+                    cur = i..(stk.p.. ) / operand)
 
                 stk.a..(cur)
                 prev_op = c
@@ -74,8 +74,8 @@ c_ Solution:
                 cur = {
                     "+": operand,
                     "-": -operand,
-                    "*": stk.pop() * operand,
-                    "/": i..(stk.pop() / operand),  # instead of op1 // op2 due to negative handling, -3 // 2 == -2
+                    "*": stk.p.. ) * operand,
+                    "/": i..(stk.p.. ) / operand),  # instead of op1 // op2 due to negative handling, -3 // 2 == -2
                 }[prev_op]
                 stk.a..(cur)
 

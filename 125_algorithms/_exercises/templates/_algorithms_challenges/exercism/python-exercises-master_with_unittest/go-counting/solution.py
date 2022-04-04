@@ -24,7 +24,7 @@ c_ Board:
             __ s __ STONES:
                 __ s n.. __ visited_stones:
                     r.. (visited_territory, visited_stones + [s])
-            ____:  # s is empty
+            ____  # s is empty
                 ___ d __ DIRECTIONS:
                     visited = w..(x + d[0], y + d[1],
                                         visited_territory + [(x, y)],

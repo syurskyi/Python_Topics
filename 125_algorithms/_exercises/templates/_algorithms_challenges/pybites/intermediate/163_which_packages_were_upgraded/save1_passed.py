@@ -12,7 +12,7 @@ ___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
         ___ i __ x[1].s..('.'
             __ l..(i) __ 1:
                 y.a..('0' + s..(i
-            ____:
+            ____
                 y.a..(s..(i
 
         old[x[0]] = ''.j..(y)
@@ -24,7 +24,7 @@ ___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
         ___ i __ x[1].s..('.'
             __ l..(i) __ 1:
                 y.a..('0' + s..(i
-            ____:
+            ____
                 y.a..(s..(i
         new[x[0]] = ''.j..(y)
 

@@ -81,7 +81,7 @@ c_ Solution:
                 lst.a..(a)
                 __ l..(lst) < W:
                     heapq.heappush(h, (a, lst
-            ____:
+            ____
                 r.. F..
 
         __ h:

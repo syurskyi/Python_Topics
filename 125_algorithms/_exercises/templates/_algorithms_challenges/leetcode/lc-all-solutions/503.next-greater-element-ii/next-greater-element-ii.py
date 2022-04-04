@@ -10,7 +10,7 @@ c_ Solution(o..
     nums *= 2
     ___ i, num __ e..(nums
       w.... stack a.. nums[stack[-1]] < num:
-        top = stack.pop()
+        top = stack.p.. )
         __ top < n:
           ans[top] = num
       stack.a..(i)

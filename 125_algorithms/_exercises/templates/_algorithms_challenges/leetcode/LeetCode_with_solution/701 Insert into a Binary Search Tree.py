@@ -51,7 +51,7 @@ c_ Solution:
             root.right = insertIntoBST(root.right, val)
         ____ root.val > val:
             root.left = insertIntoBST(root.left, val)
-        ____:
+        ____
             r..
 
         r.. root

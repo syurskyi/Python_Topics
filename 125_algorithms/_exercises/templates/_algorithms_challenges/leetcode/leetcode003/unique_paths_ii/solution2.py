@@ -43,7 +43,7 @@ c_ Solution:
         ____ y > 0 a.. x __ 0:
             t[y][x] = unique_paths(grid, x, y - 1, t)
             r.. t[y][x]
-        ____:
+        ____
             a = unique_paths(grid, x - 1, y, t)
             b = unique_paths(grid, x, y - 1, t)
             t[y][x] = a + b

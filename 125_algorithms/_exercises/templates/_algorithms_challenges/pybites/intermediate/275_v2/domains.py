@@ -24,7 +24,7 @@ ___ get_common_domains(url=COMMON_DOMAINS
     rows = soup.find(attrs=TARGET_DIV).find_all('tr')
 
 
-    r.. [value.getText(strip=T..) ___ row __ rows ___ value __ row.select('td:nth-child(3)')]
+    r.. [value.getText(s..=T..) ___ row __ rows ___ value __ row.select('td:nth-child(3)')]
 
 
 ___ get_domain(s__

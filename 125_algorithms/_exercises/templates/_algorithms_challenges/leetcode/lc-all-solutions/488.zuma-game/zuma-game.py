@@ -38,7 +38,7 @@ c_ Solution(o..
         ___ i __ r..(r..(l..(line) - 1:
           __ line[i] __ pre:
             count += 1
-          ____:
+          ____
             pre = line[i]
             count = 1
           dp[i] = count
@@ -47,7 +47,7 @@ c_ Solution(o..
         w.... i < l..(line
           __ dp[i] >= 3:
             i += dp[i]
-          ____:
+          ____
             ret.extend(line[i:i + dp[i]])
             i += dp[i]
         r.. "".j..(ret)

@@ -32,7 +32,7 @@ c_ Solution(o..
     ___ max_sum  root, max_res
         __ root __ N..
             r.. 0
-        ____:
+        ____
             left_max = max_sum(root.left, max_res)
             right_max = max_sum(root.right, max_res)
             root_max = m..(root.val,
@@ -42,6 +42,6 @@ c_ Solution(o..
                 max_res[0] = m..(max_res[0],
                                  root_max,
                                  root.val + left_max + right_max)
-            ____:
+            ____
                 max_res[0] = m..(root_max, root.val + left_max + right_max)
             r.. root_max

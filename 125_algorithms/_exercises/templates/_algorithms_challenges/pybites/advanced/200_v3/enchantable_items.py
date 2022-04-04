@@ -47,7 +47,7 @@ c_ Item:
     #     self.name = self.name.replace('_',' ').title()
 
     ___  -r
-        en = [f'  [{chant.max_level}] {chant.id_name}'
+        en = _*   [{chant.max_level}] {chant.id_name}'
               ___ chant __ s..(enchantments, key=l.... x : x.id_name)]
         r.. f'{name.r..("_"," ").t..}: \n' + '\n'.j..(en)
 
@@ -100,7 +100,7 @@ ___ generate_items(data
         ___ i __ enchantment.items:
             __ i __ res.k..:
                 res[i].enchantments.a..(enchantment)
-            ____:
+            ____
                 res[i] = Item(i, [enchantment])
     r.. d..(s..(res.i.., key=l.... t: t[0]
 
@@ -113,7 +113,7 @@ ___ get_soup(file=HTML_FILE
 
         w__ file.o.. ) __ html_source:
             soup = Soup(html_source, "html.parser")
-    ____:
+    ____
         soup = Soup(file, "html.parser")
 
     r.. soup

@@ -65,7 +65,7 @@ c_ Excel(o..
                 y = o..(arr[0][0])-o..('A')
                 vals.a..((x, y
                 sumVal += matrix[x][y]
-            ____:
+            ____
                 x0 = i..(arr[0][1:])-1
                 y0 = o..(arr[0][0])-o..('A')
                 x1 = i..(arr[1][1:])-1

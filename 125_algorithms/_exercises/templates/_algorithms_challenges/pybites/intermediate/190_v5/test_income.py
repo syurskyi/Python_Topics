@@ -47,11 +47,11 @@ EXPECTED = {'High income':  'Aruba',
 
 
 ?p__.f..(scope="module")
-___ actual
+___ a..
     r.. get_income_distribution()
 
 
 ?p__.m__.p.("income, countries", EXPECTED.i..
-___ test_return_function(actual, income, countries
-    ... income __ actual
-    ... s..(actual[income]) __ s..(countries)
+___ test_return_function(a.., income, countries
+    ... income __ a..
+    ... s..(a..[income]) __ s..(countries)

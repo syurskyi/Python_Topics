@@ -3,7 +3,7 @@ ___ equal_slices(total, people, each
         r.. T..
     __ people * each < total:
         r.. T..
-    ____:
+    ____
         r.. F..
 
 

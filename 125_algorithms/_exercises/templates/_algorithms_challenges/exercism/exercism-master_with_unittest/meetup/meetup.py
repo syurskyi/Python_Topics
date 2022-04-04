@@ -7,7 +7,7 @@ ___ meetup_day(year, month, weekday, schedule
 
     __ schedule __ 'teenth':
         r.. find_teenth(candidates)
-    ____:
+    ____
         r.. find(candidates, schedule)
 
 

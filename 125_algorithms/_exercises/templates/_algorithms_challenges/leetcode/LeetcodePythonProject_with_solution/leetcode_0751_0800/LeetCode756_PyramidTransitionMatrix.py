@@ -16,7 +16,7 @@ c_ Solution(o..
         ___ s __ allowed:
             __ s[:2] __ hashmap:
                 hashmap[s[:2]].add(s[-1])
-            ____:
+            ____
                 hashmap[s[:2]] = s..([s[-1]])
         level = l..(bottom)
         queue = l..(bottom)
@@ -24,7 +24,7 @@ c_ Solution(o..
             __ level __ 1:
                 __ queue a.. queue[0]:
                     r.. T..
-                ____:
+                ____
                     r.. F..
             nextQueue = [s..() ___ _ __ r..(level-1)]
             ___ i __ r..(level-1

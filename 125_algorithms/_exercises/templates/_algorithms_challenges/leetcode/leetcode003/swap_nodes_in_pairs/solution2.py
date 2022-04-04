@@ -27,7 +27,7 @@ c_ Solution:
                 __ res __ N..
                     res = temp
                     res_end = temp_end
-                ____:
+                ____
                     res_end.next = temp
                     res_end = temp_end
                 temp = N..
@@ -37,7 +37,7 @@ c_ Solution:
             __ res __ N..
                 res = temp
                 res_end = temp_end
-            ____:
+            ____
                 res_end.next = temp
                 res_end = temp_end
         r.. res

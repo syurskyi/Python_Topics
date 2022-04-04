@@ -19,7 +19,7 @@ c_ Solution(o..
                 cur, num_of_letters    # list, 0
             cur += [w]
             num_of_letters += l..(w)
-        r.. res +  ' '.j..(cur).ljust(maxWidth)]
+        r.. res +  ' '.j..(cur).l.. maxWidth)]
     
     ___ fullJustify_orig  words, maxWidth
         """

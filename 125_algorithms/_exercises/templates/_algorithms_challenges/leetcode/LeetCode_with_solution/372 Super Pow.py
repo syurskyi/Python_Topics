@@ -36,7 +36,7 @@ c_ Solution(o..
         __ n.. b:
             r.. 1
         s = 1
-        lsd = b.pop()  # list significant digit
+        lsd = b.p.. )  # list significant digit
         s *= (a % C) ** lsd
         s %= C
         rest = superPow(a, b)

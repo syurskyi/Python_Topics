@@ -32,7 +32,7 @@ c_ Solution(o..
         ___ e __ A:
             __ e >= n:  # chunk
                 cnt[n] += 1
-            ____:
+            ____
                 cnt[e] += 1
 
         F = [0 ___ _ __ x..(n+2)]

@@ -37,15 +37,15 @@ c_ Game:
             ______:
                 __ number __ N.. o. l..(number) __ 0:
                     print('Please enter a number')
-                ____:
+                ____
                     print('Should be a number')
                 r.. V...
-            ____:
+            ____
                 __ n.. START <= result <= END:
                     print('Number not in range')
                 ____ result __ _guesses:
                     print('Already guessed')
-                ____:
+                ____
                     _guesses.add(result)
                     r.. result
                 r.. V...
@@ -71,7 +71,7 @@ c_ Game:
             correct = T..
         ____ guess > _answer:
             print(f"{guess} is too high")
-        ____:
+        ____
             print(f"{guess} is too low")
         
         r.. correct
@@ -86,7 +86,7 @@ c_ Game:
                     user_guess = guess()
                 ______ V..
                     p..
-                ____:
+                ____
                     _____
 
             
@@ -99,7 +99,7 @@ c_ Game:
 
         __ _win:
             print(f"It took you {i} guesses")
-        ____:
+        ____
             print(f"Guessed 5 times, answer was {_answer}")
             
 

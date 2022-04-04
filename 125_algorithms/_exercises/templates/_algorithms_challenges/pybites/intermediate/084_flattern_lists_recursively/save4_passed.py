@@ -10,7 +10,7 @@ ___ flatten_more(list_of_lists, output
     ___ i __ list_of_lists:
         __ t..(i) n.. __ (t..([]), t..(())):
             output.a..(i)
-        ____:
+        ____
             flatten_more(i, output)
     r.. output
 

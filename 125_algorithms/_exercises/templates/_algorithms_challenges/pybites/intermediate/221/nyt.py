@@ -41,7 +41,7 @@ ___ get_best_seller_titles(url=URL_NON_FICTION
     ______ E.. __ e:
         print('Other exception')
         print(e)
-    ____:
+    ____
         results = response.j..
 
 

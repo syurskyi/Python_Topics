@@ -73,4 +73,4 @@ c_ Solution:
 
             p...a..(word)
             dfs(s[l..(word], words, ans, p..)
-            p...pop()
+            p...p.. )

@@ -6,26 +6,26 @@ _______ etl
 c_ TransformTest(unittest.TestCase
     ___ test_transform_one_value
         old = {1:  'WORLD' }
-        expected = {'world': 1}
+        e.. = {'world': 1}
 
-        assertEqual(expected, etl.transform(old
+        assertEqual(e.., etl.transform(old
 
     ___ test_transform_more_values
         old = {1:  'WORLD', 'GSCHOOLERS' }
-        expected = {'world': 1, 'gschoolers': 1}
+        e.. = {'world': 1, 'gschoolers': 1}
 
-        assertEqual(expected, etl.transform(old
+        assertEqual(e.., etl.transform(old
 
     ___ test_more_keys
         old = {1:  'APPLE', 'ARTICHOKE' , 2:  'BOAT', 'BALLERINA' }
-        expected = {
+        e.. = {
             'apple': 1,
             'artichoke': 1,
             'boat': 2,
             'ballerina': 2
         }
 
-        assertEqual(expected, etl.transform(old
+        assertEqual(e.., etl.transform(old
 
     ___ test_full_dataset
         old = {
@@ -38,7 +38,7 @@ c_ TransformTest(unittest.TestCase
             10: "QZ",
         }
 
-        expected = {
+        e.. = {
             "a": 1, "b": 3, "c": 3, "d": 2, "e": 1,
             "f": 4, "g": 2, "h": 4, "i": 1, "j": 8,
             "k": 5, "l": 1, "m": 3, "n": 1, "o": 1,
@@ -47,7 +47,7 @@ c_ TransformTest(unittest.TestCase
             "z": 10
         }
 
-        assertEqual(expected, etl.transform(old
+        assertEqual(e.., etl.transform(old
 
 
 __ _____ __ _____

@@ -82,10 +82,10 @@ c_ Solution:
                             remain -= 1
 
                     str_builder.a..(line[-1])
-                ____:
+                ____
                     str_builder.a..(line[-1])
                     str_builder.a..(" "*space_cnt)
-            ____:  # last line, special handling
+            ____  # last line, special handling
                 str_builder = [" ".j..(line)]
                 str_builder.a..(" "*(space_cnt-hole_cnt
 

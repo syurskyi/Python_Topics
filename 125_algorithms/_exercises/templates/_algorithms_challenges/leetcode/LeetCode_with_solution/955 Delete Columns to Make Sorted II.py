@@ -69,7 +69,7 @@ c_ Solution:
                 __ A[i][j] > A[i+1][j]:
                     deleted += 1
                     _____
-            ____:  # not deleted
+            ____  # not deleted
                 # handle equal case
                 ___ i __ r..(m-1
                     lt[i] = lt[i] o. A[i][j] < A[i+1][j]

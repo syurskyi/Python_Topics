@@ -32,12 +32,12 @@ w.... l..(ele) < num_ele:
                     
                     arr_check[ele[i]] += 1
                     #print('True dictionary',ele[i],'is',arr_check[ele[i]])
-                ____:
+                ____
                     
                     arr_check[ele[i]] = 1
                     #print('True else dictionary for ', ele[i],'is',arr_check[ele[i]])
                 
-            ____:
+            ____
                     ava_check = F..
                    
         #if element was not found within the unique list
@@ -50,7 +50,7 @@ w.... l..(ele) < num_ele:
 
                 arr_check[ele[i]] += 1
                 #print('False dictionary for',ele[i],'is',arr_check[ele[i]])
-            ____:
+            ____
 
                 arr_check[ele[i]] = 1
                 #print('False else dictionary for ', ele[i],'is',arr_check[ele[i]])

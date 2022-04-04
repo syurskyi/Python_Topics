@@ -49,7 +49,7 @@ c_ Solution:
                             board[i][j] = num_str
                             __ n.. solve(board
                                 board[i][j] = "."
-                            ____:
+                            ____
                                 r.. T..
 
         r.. F..
@@ -76,9 +76,9 @@ c_ Solution:
                     board[i][j] = num_str
                     __ n.. solve(board, i, j+1
                         board[i][j] = "."  # restore, backtrack, save space
-                    ____:
+                    ____
                         r.. T..
-        ____:
+        ____
             r.. solve(board, i, j+1)
 
         r.. F..

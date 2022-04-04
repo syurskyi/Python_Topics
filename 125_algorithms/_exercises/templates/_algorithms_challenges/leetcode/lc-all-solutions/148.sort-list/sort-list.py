@@ -31,7 +31,7 @@ c_ Solution(o..
         __ left.val < right.val:
           p.next = left
           left = left.next
-        ____:
+        ____
           p.next = right
           right = right.next
         p = p.next

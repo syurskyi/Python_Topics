@@ -8,7 +8,7 @@ ___ strip_comments(code
             __ line.startswith('class'
                 output.a..(line)
                 output.a..('')
-            ____:
+            ____
                 output.a..(line)
-        r.. '\n'.j..(output)
+        r.. '\n'.j.. ?
     r.. __.sub(r'#\s.*\n\s*|"{3}[\s\S]*?"{3}\n\s*', '', code)

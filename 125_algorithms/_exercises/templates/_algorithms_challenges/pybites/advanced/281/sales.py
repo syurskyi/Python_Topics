@@ -22,7 +22,7 @@ ___ get_data(url: s..) __ Dict[s.., s..]:
     """
     __ TMP.exists
         data = json.loads(TMP.read_text
-    ____:
+    ____
         response = r__.g.. url)
         response.raise_for_status()
         data = json.loads(response.text)
@@ -108,7 +108,7 @@ ___ yearly_report(df: pd.DataFrame, year: i..) __ N..
 
     __ l..(df) __ 0:
         r.. V... _*The year {year} is not included in the report!')
-    ____:
+    ____
         print(year)
         print()
         df = df.groupby(df.month.dt.month)[['sales']].s..()

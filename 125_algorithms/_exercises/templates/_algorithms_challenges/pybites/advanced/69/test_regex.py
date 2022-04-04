@@ -28,26 +28,26 @@ ___ test_has_word_with_dashes
 
 ___ test_remove_all_parenthesis_words
     input_string = 'good morning (afternoon), how are you?'
-    expected = 'good morning, how are you?'
-    ... remove_all_parenthesis_words(input_string) __ expected
+    e.. = 'good morning, how are you?'
+    ... remove_all_parenthesis_words(input_string) __ e..
     input_string = 'math (8.6) and science (9.1) where his strengths'
-    expected = 'math and science where his strengths'
-    ... remove_all_parenthesis_words(input_string) __ expected
+    e.. = 'math and science where his strengths'
+    ... remove_all_parenthesis_words(input_string) __ e..
 
 
 ___ test_split_string_on_punctuation
     input_string = 'hi, how are you doing? blabla'
-    expected =  'hi', 'how are you doing', 'blabla'
-    ... split_string_on_punctuation(input_string) __ expected
+    e.. =  'hi', 'how are you doing', 'blabla'
+    ... split_string_on_punctuation(input_string) __ e..
     input_string = ';String. with. punctuation characters!'
-    expected =  'String', 'with', 'punctuation characters'
-    ... split_string_on_punctuation(input_string) __ expected
+    e.. =  'String', 'with', 'punctuation characters'
+    ... split_string_on_punctuation(input_string) __ e..
 
 
 ___ test_remove_duplicate_spacing
     input_string = 'This is a   string with  too    much spacing'
-    expected = 'This is a string with too much spacing'
-    ... remove_duplicate_spacing(input_string) __ expected
+    e.. = 'This is a string with too much spacing'
+    ... remove_duplicate_spacing(input_string) __ e..
 
 
 ___ test_has_three_consecutive_vowels

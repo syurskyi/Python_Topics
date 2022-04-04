@@ -7,6 +7,6 @@ ___ flatten_list(nested_list
         __ n.. isi..(element, l..
             __ element __ n.. N.. a.. n.. isi..(element, t..
                 y.. element
-        ____:
+        ____
             ___ subelement __ flatten_list(element
                 y.. subelement

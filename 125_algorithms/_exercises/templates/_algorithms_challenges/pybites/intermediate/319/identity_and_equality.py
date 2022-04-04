@@ -24,7 +24,7 @@ c_ Car:
             r.. "A week old"
         ____ days __ 365:
             r.. "A year old"
-        ____:
+        ____
             r.. "Neither a week, nor a year old"
 
     $

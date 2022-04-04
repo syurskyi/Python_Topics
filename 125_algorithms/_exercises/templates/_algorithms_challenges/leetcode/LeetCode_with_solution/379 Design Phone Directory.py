@@ -29,7 +29,7 @@ c_ PhoneDirectory(o..
         :rtype: int
         """
         __ released:
-            r.. released.pop()
+            r.. released.p.. )
         __ i < l:
             ret = i
             i += 1

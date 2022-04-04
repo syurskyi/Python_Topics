@@ -15,7 +15,7 @@ ___ bs(numbers,value
 
         __ value < numbers[mid]:
             high = mid - 1
-        ____:
+        ____
             low = mid + 1
 
 

@@ -21,5 +21,5 @@ ___ gen_rhombus(width
     ___ n __ r..(width
         __ n < half:
             y.. (STAR * (2 * n + 1.center(width, ' ')
-        ____:
+        ____
             y.. (STAR * (2 * (width - n) - 1.center(width, ' ')

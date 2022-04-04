@@ -44,7 +44,7 @@ c_ Solution:
             __ count__length-n:
                 pre.next = cur.next  # remove
                 _____
-            ____:
+            ____
                 count += 1
                 pre = pre.next
 

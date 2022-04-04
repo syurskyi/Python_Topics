@@ -10,12 +10,12 @@ c_ Solution:
     ___ partition_aux  s, cand, res
         __ n.. s:
             res.a..(cand | )
-        ____:
+        ____
             ___ i, e __ e..(s
                 __ is_palindrome(s[:i + 1]
                     cand.a..(s[:i + 1])
                     partition_aux(s[i + 1:], cand, res)
-                    cand.pop()
+                    cand.p.. )
 
     ___ is_palindrome  s
         left = 0

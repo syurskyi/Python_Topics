@@ -56,13 +56,13 @@ c_ Solution:
             __ visit[nbr] __ 2:
                 __ nbr __ acyclic:
                     _____
-                ____:
+                ____
                     _____
             __ visit[nbr] __ 1:
                 _____
             __ visit[nbr] __ 0 a.. n.. dfs(graph, nbr, visit, acyclic
                 _____
-        ____:
+        ____
             acyclic.add(cur)
             visit[cur] = 2
             r.. T..

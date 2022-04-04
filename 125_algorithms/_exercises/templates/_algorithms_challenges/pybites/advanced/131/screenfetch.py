@@ -20,7 +20,7 @@ output = """
 """
 
 
-___ sysinfo_scrape(output
+___ sysinfo_scrape ?
     """Scrapes the output from screenfetch and returns a dictionary"""
     
 
@@ -53,4 +53,4 @@ ___ sysinfo_scrape(output
 
 
 
-sysinfo_scrape(output)
+sysinfo_scrape ?

@@ -15,7 +15,7 @@ c_ Solution(o..
         start += 1
       ____ s[(start + 1) % n] __ " ":
         start += 2
-      ____:
+      ____
         w.... start > 0 a.. s[(start - 1) % n] != " ":
           start -= 1
     r.. start / n

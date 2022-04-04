@@ -20,7 +20,7 @@ c_ Solution(o..
             mid = (low+high)//2
             __ countPair(nums, mid) < k:
                 low = mid+1
-            ____:
+            ____
                 high = mid
         r.. low
     
@@ -38,7 +38,7 @@ c_ Solution(o..
             mid = (low+high)//2
             __ key >= nums[mid]:
                 low = mid+1
-            ____:
+            ____
                 high = mid
         r.. low
     

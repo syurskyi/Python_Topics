@@ -37,12 +37,12 @@ c_ Solution:
         ___ i __ r..(n
             __ nums[i] & first_1:
                 acc1 ^= nums[i]
-            ____:
+            ____
                 acc2 ^= nums[i]
 
             __ (i + 1) & first_1:
                 acc1 ^= i + 1
-            ____:
+            ____
                 acc2 ^= i + 1
 
         ___ i __ r..(n

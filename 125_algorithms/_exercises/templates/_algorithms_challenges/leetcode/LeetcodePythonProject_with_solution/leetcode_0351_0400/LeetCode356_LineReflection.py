@@ -14,14 +14,14 @@ c_ Solution(o..
             maxVal = m..(maxVal, x)
             __ y n.. __ hashmap:
                 hashmap[point[1]] = s..([x])
-            ____:
+            ____
                 hashmap[point[1]].add(x)
         mid = f__(minVal+maxVal)/2
         ___ point __ points:
             x, y = point[0], point[1]
             __ x __ mid:
                 _____
-            ____:
+            ____
                 __ 2*mid-x n.. __ hashmap[point[1]]:
                     r.. F..
         r.. T..

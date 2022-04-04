@@ -46,7 +46,7 @@ c_ Solution(o..
         __ node1.val > node2.val:
             node = node2
             node2 = node2.next
-        ____:
+        ____
             node = node1
             node1 = node1.next
         head = node
@@ -61,12 +61,12 @@ c_ Solution(o..
                 node.next = node1
                 node = node.next
                 node1 = node1.next
-            ____:
+            ____
                 __ node1.val < node2.val:
                     node.next = node1
                     node = node.next
                     node1 = node1.next
-                ____:
+                ____
                     node.next = node2
                     node = node.next
                     node2 = node2.next

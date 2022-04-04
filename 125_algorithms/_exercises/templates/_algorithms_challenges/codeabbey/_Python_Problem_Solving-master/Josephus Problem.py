@@ -16,7 +16,7 @@ w.... l..(sucide_squad) != 1:
     #check if the counter has reached the final value of killing people. if yes then kill the person who comes at count k
     __ counter __ k:
         #when k is reached the pop the person out of the list
-        sucide_squad.pop(squad_count)
+        sucide_squad.p.. squad_count)
         #reset the counter to 0
         counter = 0
         #check if the list has reached its limit

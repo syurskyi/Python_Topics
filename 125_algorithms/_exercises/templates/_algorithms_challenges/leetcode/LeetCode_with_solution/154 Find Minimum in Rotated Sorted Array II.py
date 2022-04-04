@@ -37,7 +37,7 @@ c_ Solution(o..
                 r.. m..(mini, A[lo])
             ____ A[lo] > A[mid] <= A[hi-1]:  # trough
                 hi = mid
-            ____:  # peak
+            ____  # peak
                 lo = mid+1
 
         r.. mini

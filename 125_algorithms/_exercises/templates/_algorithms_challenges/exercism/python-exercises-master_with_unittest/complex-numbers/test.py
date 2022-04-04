@@ -75,26 +75,26 @@ c_ ComplexNumbersTest(unittest.TestCase
 
     ___ test_divide_purely_real_numbers
         input_number = ComplexNumber(1.0, 0.0)
-        expected = ComplexNumber(0.5, 0.0)
+        e.. = ComplexNumber(0.5, 0.0)
         divider = ComplexNumber(2.0, 0.0)
-        assertEqual(expected.real, input_number.div(divider).real)
-        assertEqual(expected.imaginary,
+        assertEqual(e...real, input_number.div(divider).real)
+        assertEqual(e...imaginary,
                          input_number.div(divider).imaginary)
 
     ___ test_divide_purely_imaginary_numbers
         input_number = ComplexNumber(0, 1)
-        expected = ComplexNumber(0.5, 0)
+        e.. = ComplexNumber(0.5, 0)
         divider = ComplexNumber(0, 2)
-        assertEqual(expected.real, input_number.div(divider).real)
-        assertEqual(expected.imaginary,
+        assertEqual(e...real, input_number.div(divider).real)
+        assertEqual(e...imaginary,
                          input_number.div(divider).imaginary)
 
     ___ test_divide_numbers_with_real_and_imaginary_part
         input_number = ComplexNumber(1, 2)
-        expected = ComplexNumber(0.44, 0.08)
+        e.. = ComplexNumber(0.44, 0.08)
         divider = ComplexNumber(3, 4)
-        assertEqual(expected.real, input_number.div(divider).real)
-        assertEqual(expected.imaginary,
+        assertEqual(e...real, input_number.div(divider).real)
+        assertEqual(e...imaginary,
                          input_number.div(divider).imaginary)
 
     ___ test_absolute_value_of_a_positive_purely_real_number
@@ -114,42 +114,42 @@ c_ ComplexNumbersTest(unittest.TestCase
 
     ___ test_conjugate_a_purely_real_number
         input_number = ComplexNumber(5, 0)
-        expected = ComplexNumber(5, 0)
-        assertEqual(expected.real, input_number.conjugate().real)
-        assertEqual(expected.imaginary,
+        e.. = ComplexNumber(5, 0)
+        assertEqual(e...real, input_number.conjugate().real)
+        assertEqual(e...imaginary,
                          input_number.conjugate().imaginary)
 
     ___ test_conjugate_a_purely_imaginary_number
         input_number = ComplexNumber(0, 5)
-        expected = ComplexNumber(0, -5)
-        assertEqual(expected.real, input_number.conjugate().real)
-        assertEqual(expected.imaginary,
+        e.. = ComplexNumber(0, -5)
+        assertEqual(e...real, input_number.conjugate().real)
+        assertEqual(e...imaginary,
                          input_number.conjugate().imaginary)
 
     ___ conjugate_a_number_with_real_and_imaginary_part
         input_number = ComplexNumber(1, 1)
-        expected = ComplexNumber(1, -1)
-        assertEqual(expected.real, input_number.conjugate().real)
-        assertEqual(expected.imaginary,
+        e.. = ComplexNumber(1, -1)
+        assertEqual(e...real, input_number.conjugate().real)
+        assertEqual(e...imaginary,
                          input_number.conjugate().imaginary)
 
     ___ test_eulers_identity_formula
         input_number = ComplexNumber(0, m__.pi)
-        expected = ComplexNumber(-1, 0)
-        assertEqual(expected.real, input_number.exp().real)
-        assertEqual(expected.imaginary, input_number.exp().imaginary)
+        e.. = ComplexNumber(-1, 0)
+        assertEqual(e...real, input_number.exp().real)
+        assertEqual(e...imaginary, input_number.exp().imaginary)
 
     ___ test_exponential_of_0
         input_number = ComplexNumber(0, 0)
-        expected = ComplexNumber(1, 0)
-        assertEqual(expected.real, input_number.exp().real)
-        assertEqual(expected.imaginary, input_number.exp().imaginary)
+        e.. = ComplexNumber(1, 0)
+        assertEqual(e...real, input_number.exp().real)
+        assertEqual(e...imaginary, input_number.exp().imaginary)
 
     ___ test_exponential_of_a_purely_real_number
         input_number = ComplexNumber(1, 0)
-        expected = ComplexNumber(m__.e, 0)
-        assertEqual(expected.real, input_number.exp().real)
-        assertEqual(expected.imaginary, input_number.exp().imaginary)
+        e.. = ComplexNumber(m__.e, 0)
+        assertEqual(e...real, input_number.exp().real)
+        assertEqual(e...imaginary, input_number.exp().imaginary)
 
 
 __ _____ __ _____

@@ -19,7 +19,7 @@ c_ Trie(o..
         ___ i, c __ e..(word
             __ c __ children:
                 t = children[c]
-            ____:
+            ____
                 t = TrieNode(c)
                 children[c] = t
             children = t.children
@@ -32,7 +32,7 @@ c_ Trie(o..
             __ c __ children:
                 t = children[c]
                 children = t.children
-            ____:
+            ____
                 r.. N..
         r.. t
     

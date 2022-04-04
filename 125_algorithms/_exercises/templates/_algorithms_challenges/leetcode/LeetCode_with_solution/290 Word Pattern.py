@@ -27,9 +27,9 @@ c_ Solution(o..
             __ pattern[i] __ char2word:
                 __ char2word[pattern[i]] != lst[i]:
                     r.. F..
-                ____:
+                ____
                     ... lst[i] __ words
-            ____:
+            ____
                 __ lst[i] __ words:
                     r.. F..
                 char2word[pattern[i]] = lst[i]

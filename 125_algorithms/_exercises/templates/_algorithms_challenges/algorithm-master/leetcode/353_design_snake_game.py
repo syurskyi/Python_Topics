@@ -103,9 +103,9 @@ c_ SnakeGame:
         __ fx __ hx a.. fy __ hy:
             # eat that food
             fi += 1
-        ____:
+        ____
             # move to empty cell and need to remove tail
-            tail = snake.pop()
+            tail = snake.p.. )
             body.discard(tail)
 
         """

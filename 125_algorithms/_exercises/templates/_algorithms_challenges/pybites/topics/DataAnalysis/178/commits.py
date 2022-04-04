@@ -40,7 +40,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
             __ year __ N.. o. year __ i..(dt_yr
                 __ l..(commit_list) __ 7:
                     total_commit = i..(commit_list[3])+i..(commit_list[5])
-                ____:
+                ____
                     total_commit = i..(commit_list[3])
                 commit_log[year_month] += total_commit
     newlist = s..(commit_log.i.., key=l.... item: item[1], r.._T..

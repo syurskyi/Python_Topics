@@ -34,7 +34,7 @@ c_ MiniUber:
         __ driver_id __ driver_to_locs:
             driver_to_locs[driver_id] 'lat'  = lat
             driver_to_locs[driver_id] 'lng'  = lng
-        ____:
+        ____
             driver_to_locs[driver_id] = _new_location(lat, lng)
 
     # @param rider_id an integer

@@ -23,7 +23,7 @@ c_ Solution(o..
         __ l..(start) __ level:
             start.a..(order)
             end.a..(order)
-        ____:
+        ____
             end[level] = order
         cur = end[level]-start[level]+1
         left = dfs(root.left, level+1, 2*order, start, end)

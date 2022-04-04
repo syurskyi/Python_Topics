@@ -61,7 +61,7 @@ c_ Solution:
                 stack.a..(node)
                 node = node.left
 
-            node = stack.pop()
+            node = stack.p.. )
 
             __ pre a.. node.val - pre.val < ans:
                 ans = node.val - pre.val

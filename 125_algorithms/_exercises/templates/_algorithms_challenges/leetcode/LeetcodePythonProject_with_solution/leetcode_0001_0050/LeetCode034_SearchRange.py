@@ -19,7 +19,7 @@ c_ Solution(o..
                 l = mid+1
             ____ target < nums[mid]:
                 r = mid
-            ____:
+            ____
                 l = mid+1
         l, r = 0, l..(nums)
         w.... l < r:
@@ -29,7 +29,7 @@ c_ Solution(o..
                 r = mid
             ____ target < nums[mid]:
                 r = mid
-            ____:
+            ____
                 l = mid+1
         __ r __ l..(nums
             r.. [-1, -1]

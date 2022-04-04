@@ -39,7 +39,7 @@ ___ extract_quotes(html: s.. = HTML) __ d..:
       quote_clean = quote_temp.s__[quote_clean_start:quote_clean_end]
 
       value, key = quote_clean.s..(" - ")
-      quotes[key] = value.strip('"')
+      quotes[key] = value.s..('"')
 
   r.. quotes
 

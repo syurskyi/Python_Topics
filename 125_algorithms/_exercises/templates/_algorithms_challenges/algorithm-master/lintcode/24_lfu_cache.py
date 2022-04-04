@@ -77,7 +77,7 @@ c_ LFUCache:
 
         __ from_freq.nxt a.. from_freq.nxt.freq __ from_freq.freq + 1:
             to_freq = from_freq.nxt
-        ____:
+        ____
             to_freq = FreqNode(from_freq.freq + 1)
             from_freq.after(to_freq)
 

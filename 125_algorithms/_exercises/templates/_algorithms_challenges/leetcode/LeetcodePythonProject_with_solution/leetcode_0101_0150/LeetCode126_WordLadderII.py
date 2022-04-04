@@ -23,7 +23,7 @@ c_ Solution(o..
         queue = [beginWord]
         distance[beginWord] = 0
         w.... queue:
-            word = queue.pop(0)
+            word = queue.p.. 0)
             nextWords = getNextWords(word, wordSet)
             ___ nextWord __ nextWords:
                 __ nextWord n.. __ distance:
@@ -34,11 +34,11 @@ c_ Solution(o..
         curr.insert(0, word)
         __ word __ beginWord:
             res.a..(l..(curr
-        ____:
+        ____
             ___ nextWord __ getNextWords(word, wordSet
                 __ nextWord __ distance a.. distance[nextWord]+1 __ distance.g.. word, 0
                     dfs(beginWord, nextWord, distance, wordSet, res, curr)
-        curr.pop(0)
+        curr.p.. 0)
     
     ___ getNextWords  word, wordSet
         res    # list

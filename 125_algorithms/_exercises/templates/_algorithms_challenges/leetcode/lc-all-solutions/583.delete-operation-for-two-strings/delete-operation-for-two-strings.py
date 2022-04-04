@@ -15,6 +15,6 @@ c_ Solution(o..
       ___ j __ r..(l..(word2:
         __ word1[i] __ word2[j]:
           dp[i + 1][j + 1] = dp[i][j]
-        ____:
+        ____
           dp[i + 1][j + 1] = m..(dp[i][j + 1] + 1, dp[i + 1][j] + 1)
     r.. dp[-1][-1]

@@ -13,7 +13,7 @@ c_ Solution(o..
     ___ i __ r..(n
       __ mpppid.has_key(ppid[i]
         mpppid[ppid[i]].a..(i)
-      ____:
+      ____
         mpppid[ppid[i]] = [i]
     res = [kill]
 

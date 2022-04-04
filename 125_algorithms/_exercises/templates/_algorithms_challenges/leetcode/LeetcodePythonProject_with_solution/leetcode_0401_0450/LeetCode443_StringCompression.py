@@ -25,7 +25,7 @@ c_ Solution(o..
                     chars[j] = c0
                     j += 1
                 res += 1+l..(numStr)
-            ____:
+            ____
                 chars[j] = chars[i]
                 j += 1
                 res += 1

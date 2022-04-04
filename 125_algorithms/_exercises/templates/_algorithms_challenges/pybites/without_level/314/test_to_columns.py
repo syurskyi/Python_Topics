@@ -9,27 +9,27 @@ ___ names
 
 
 ___ test_default(capfd, names
-    print_names_to_columns(names)
-    actual = ?.r .. 0].s..
-    expected = ("| Bob       | Julian    \n"
+    ? ?
+    a.. = ?.r .. 0].s..
+    e.. = ("| Bob       | Julian    \n"
                 "| Tim       | Sara      \n"
                 "| Eva       | Ana       \n"
                 "| Jake      | Maria")
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_three_columns(capfd, names
     print_names_to_columns(names, cols=3)
-    actual = ?.r .. 0].s..
-    expected = ("| Bob       | Julian    | Tim       \n"
+    a.. = ?.r .. 0].s..
+    e.. = ("| Bob       | Julian    | Tim       \n"
                 "| Sara      | Eva       | Ana       \n"
                 "| Jake      | Maria")
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_four_columns(capfd, names
-    print_names_to_columns(names, cols=4)
-    actual = ?.r .. 0].s..
-    expected = ("| Bob       | Julian    | Tim       | Sara      \n"
+    print_names_to_columns(names, c.._4
+    a.. = ?.r .. 0].s..
+    e.. = ("| Bob       | Julian    | Tim       | Sara      \n"
                 "| Eva       | Ana       | Jake      | Maria")
-    ... actual __ expected
+    ... a.. __ e..

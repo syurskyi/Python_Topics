@@ -21,7 +21,7 @@ c_ Solution(o..
         second = f__('inf')
         queue = [root]
         w.... queue:
-            node = queue.pop(0)
+            node = queue.p.. 0)
             __ node.val < first:
                 second = first
                 first = node.val

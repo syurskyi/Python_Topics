@@ -187,7 +187,7 @@ c_ SolutionError(o..
 
         __ level%2 __ 0:
             r.. h2v[level/2-1]+h2v[level/2]
-        ____:
+        ____
             r.. h2v[level/2]
 
 

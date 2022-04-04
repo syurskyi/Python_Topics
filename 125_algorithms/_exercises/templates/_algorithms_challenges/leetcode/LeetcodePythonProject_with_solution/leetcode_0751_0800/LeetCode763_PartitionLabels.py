@@ -15,7 +15,7 @@ c_ Solution(o..
         ___ i, c __ e..(s
             __ c n.. __ hashmap:
                 hashmap[c] = [i, i]
-            ____:
+            ____
                 hashmap[c][1] = i
         left = 0
         maxLen = 0
@@ -24,7 +24,7 @@ c_ Solution(o..
                 res.a..(maxLen-left+1)
                 left = i
                 maxLen = hashmap[c][1]
-            ____:
+            ____
                 maxLen = m..(maxLen, hashmap[c][1])
         res.a..(l..(s)-left)
         r.. res

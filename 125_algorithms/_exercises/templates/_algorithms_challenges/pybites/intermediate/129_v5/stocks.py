@@ -20,7 +20,7 @@ ___ _cap_str_to_mln_float(cap
          value as float"""
     __ cap __ 'n/a':
         r.. 0.0
-    ____:
+    ____
         cap = cap.s...l..('$')
         __ cap[-1] __ 'M':
             r.. f__(cap[:-1])

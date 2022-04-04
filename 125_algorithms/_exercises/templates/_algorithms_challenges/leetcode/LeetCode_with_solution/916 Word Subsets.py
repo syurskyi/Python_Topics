@@ -69,7 +69,7 @@ c_ Solution:
             ___ k, v __ mx.i..:
                 __ c[k] < v:
                     _____
-            ____:
+            ____
                 ret.a..(a)
 
         r.. ret

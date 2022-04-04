@@ -22,7 +22,7 @@ c_ Solution(o..
         i = lastMatchPos + 1
         lastMatchPos += 1
         j = lastStarPos + 1
-      ____:
+      ____
         r.. F..
     w.... j < lenP a.. p[j] __ "*":
       j += 1

@@ -50,10 +50,10 @@ c_ Solution:
                 ____ prev_op __ "-":
                     stk.a..(-operand)
                 ____ prev_op __ "*":
-                    prev_operand = stk.pop()
+                    prev_operand = stk.p.. )
                     stk.a..(prev_operand * operand)
                 ____ prev_op __ "/":
-                    prev_operand = stk.pop()
+                    prev_operand = stk.p.. )
                     stk.a..(i..(prev_operand / operand
 
                 __ c __ ("+", "-", "*", "/"
@@ -63,7 +63,7 @@ c_ Solution:
                     r.. s..(stk), i
             ____ c __ "(":  # "(" is not delimiter
                 operand, i = eval(s, i + 1, [])
-            ____:
+            ____
                 r..
 
             i += 1

@@ -16,7 +16,7 @@ c_ Solution:
                 ans.a..('Fizz')
             ____ i % 5 __ 0:
                 ans.a..('Buzz')
-            ____:
+            ____
                 ans.a..(s..(i
 
         r.. ans

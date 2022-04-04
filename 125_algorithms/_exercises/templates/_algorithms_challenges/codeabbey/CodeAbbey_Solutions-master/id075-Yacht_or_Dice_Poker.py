@@ -24,7 +24,7 @@ ___ dice_poker
             answer.a..('three')
         ____ values __ [1, 1, 1, 2]:
             answer.a..('pair')
-        ____:
+        ____
             answer.a..('none')
         
     print(' '.j..(answer

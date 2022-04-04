@@ -16,7 +16,7 @@ c_ Solution(o..
       g = guess[i]
       __ secret[i] __ guess[i]:
         a += 1
-      ____:
+      ____
         ds[s] += 1
         dg[g] += 1
         __ ds[g] > 0:

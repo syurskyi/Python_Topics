@@ -74,7 +74,7 @@ ___ get_element_name(element
     __ l..(element) > 30:
         ___ i, c __ r..(l..(e..(acronyms))):
             __ c __ ignore_words:
-                acronyms.pop(i)
+                acronyms.p.. i)
         r.. ''.j..([s[0].u.. ___ s __ acronyms])
 
     r.. ' '.j..([s.u.. ___ s __ acronyms])

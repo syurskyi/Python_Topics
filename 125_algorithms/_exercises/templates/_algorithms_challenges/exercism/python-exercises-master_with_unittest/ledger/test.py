@@ -11,8 +11,8 @@ c_ LedgerTest(unittest.TestCase
         currency = 'USD'
         locale = 'en_US'
         entries    # list
-        expected = 'Date       | Description               | Change       '
-        assertEqual(format_entries(currency, locale, entries), expected)
+        e.. = 'Date       | Description               | Change       '
+        assertEqual(format_entries(currency, locale, entries), e..)
 
     ___ test_one_entry
         currency = 'USD'
@@ -20,11 +20,11 @@ c_ LedgerTest(unittest.TestCase
         entries = [
             create_entry('2015-01-01', 'Buy present', -1000),
         ]
-        expected = '\n'.j..([
+        e.. = '\n'.j..([
             'Date       | Description               | Change       ',
             '01/01/2015 | Buy present               |      ($10.00)',
         ])
-        assertEqual(format_entries(currency, locale, entries), expected)
+        assertEqual(format_entries(currency, locale, entries), e..)
 
     ___ test_credit_and_debit
         currency = 'USD'
@@ -33,12 +33,12 @@ c_ LedgerTest(unittest.TestCase
             create_entry('2015-01-02', 'Get present', 1000),
             create_entry('2015-01-01', 'Buy present', -1000),
         ]
-        expected = '\n'.j..([
+        e.. = '\n'.j..([
             'Date       | Description               | Change       ',
             '01/01/2015 | Buy present               |      ($10.00)',
             '01/02/2015 | Get present               |       $10.00 ',
         ])
-        assertEqual(format_entries(currency, locale, entries), expected)
+        assertEqual(format_entries(currency, locale, entries), e..)
 
     ___ test_multiple_entries_on_same_date_ordered_by_description
         currency = 'USD'
@@ -47,12 +47,12 @@ c_ LedgerTest(unittest.TestCase
             create_entry('2015-01-02', 'Get present', 1000),
             create_entry('2015-01-01', 'Buy present', -1000),
         ]
-        expected = '\n'.j..([
+        e.. = '\n'.j..([
             'Date       | Description               | Change       ',
             '01/01/2015 | Buy present               |      ($10.00)',
             '01/02/2015 | Get present               |       $10.00 ',
         ])
-        assertEqual(format_entries(currency, locale, entries), expected)
+        assertEqual(format_entries(currency, locale, entries), e..)
 
     ___ test_final_order_tie_breaker_is_change
         currency = 'USD'
@@ -62,13 +62,13 @@ c_ LedgerTest(unittest.TestCase
             create_entry('2015-01-01', 'Something', -1),
             create_entry('2015-01-01', 'Something', 1),
         ]
-        expected = '\n'.j..([
+        e.. = '\n'.j..([
             'Date       | Description               | Change       ',
             '01/01/2015 | Something                 |       ($0.01)',
             '01/01/2015 | Something                 |        $0.00 ',
             '01/01/2015 | Something                 |        $0.01 ',
         ])
-        assertEqual(format_entries(currency, locale, entries), expected)
+        assertEqual(format_entries(currency, locale, entries), e..)
 
     ___ test_overlong_description
         currency = 'USD'
@@ -76,11 +76,11 @@ c_ LedgerTest(unittest.TestCase
         entries = [
             create_entry('2015-01-01', 'Freude schoner Gotterfunken', -123456),
         ]
-        expected = '\n'.j..([
+        e.. = '\n'.j..([
             'Date       | Description               | Change       ',
             '01/01/2015 | Freude schoner Gotterf... |   ($1,234.56)',
         ])
-        assertEqual(format_entries(currency, locale, entries), expected)
+        assertEqual(format_entries(currency, locale, entries), e..)
 
     ___ test_euros
         currency = 'EUR'
@@ -88,11 +88,11 @@ c_ LedgerTest(unittest.TestCase
         entries = [
             create_entry('2015-01-01', 'Buy present', -1000),
         ]
-        expected = '\n'.j..([
+        e.. = '\n'.j..([
             'Date       | Description               | Change       ',
             u'01/01/2015 | Buy present               |      (€10.00)',
         ])
-        assertEqual(format_entries(currency, locale, entries), expected)
+        assertEqual(format_entries(currency, locale, entries), e..)
 
     ___ test_dutch_locale
         currency = 'USD'
@@ -100,11 +100,11 @@ c_ LedgerTest(unittest.TestCase
         entries = [
             create_entry('2015-03-12', 'Buy present', 123456),
         ]
-        expected = '\n'.j..([
+        e.. = '\n'.j..([
             'Datum      | Omschrijving              | Verandering  ',
             '12-03-2015 | Buy present               |   $ 1.234,56 ',
         ])
-        assertEqual(format_entries(currency, locale, entries), expected)
+        assertEqual(format_entries(currency, locale, entries), e..)
 
     ___ test_dutch_locale_and_euros
         currency = 'EUR'
@@ -112,11 +112,11 @@ c_ LedgerTest(unittest.TestCase
         entries = [
             create_entry('2015-03-12', 'Buy present', 123456),
         ]
-        expected = '\n'.j..([
+        e.. = '\n'.j..([
             'Datum      | Omschrijving              | Verandering  ',
             u'12-03-2015 | Buy present               |   € 1.234,56 ',
         ])
-        assertEqual(format_entries(currency, locale, entries), expected)
+        assertEqual(format_entries(currency, locale, entries), e..)
 
     ___ test_dutch_negative_number_with_3_digits_before_decimal_point
         currency = 'USD'
@@ -124,11 +124,11 @@ c_ LedgerTest(unittest.TestCase
         entries = [
             create_entry('2015-03-12', 'Buy present', -12345),
         ]
-        expected = '\n'.j..([
+        e.. = '\n'.j..([
             'Datum      | Omschrijving              | Verandering  ',
             '12-03-2015 | Buy present               |    $ -123,45 ',
         ])
-        assertEqual(format_entries(currency, locale, entries), expected)
+        assertEqual(format_entries(currency, locale, entries), e..)
 
     ___ test_american_negative_number_with_3_digits_before_decimal_point
         currency = 'USD'
@@ -136,11 +136,11 @@ c_ LedgerTest(unittest.TestCase
         entries = [
             create_entry('2015-03-12', 'Buy present', -12345),
         ]
-        expected = '\n'.j..([
+        e.. = '\n'.j..([
             'Date       | Description               | Change       ',
             '03/12/2015 | Buy present               |     ($123.45)',
         ])
-        assertEqual(format_entries(currency, locale, entries), expected)
+        assertEqual(format_entries(currency, locale, entries), e..)
 
 
 __ _____ __ _____

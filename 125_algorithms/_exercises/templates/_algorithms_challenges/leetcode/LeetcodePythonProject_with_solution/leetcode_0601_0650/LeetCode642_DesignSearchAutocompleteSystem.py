@@ -41,7 +41,7 @@ c_ AutocompleteSystem(o..
             addCandidate(s)
             s = ''
             r.. res
-        ____:
+        ____
             s += c
             __ node a.. c __ node.children:
                 node = node.children[c]
@@ -51,7 +51,7 @@ c_ AutocompleteSystem(o..
                 res.s..()
                 res = res[:3]
                 r.. [s ___ count, s __ res]
-            ____:
+            ____
                 node = N..
                 r.. []
     

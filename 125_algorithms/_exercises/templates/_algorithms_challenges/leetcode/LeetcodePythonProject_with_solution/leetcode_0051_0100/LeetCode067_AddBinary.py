@@ -29,20 +29,20 @@ c_ Solution(o..
             __ c1 __ '0' a.. c2 __ '0':
                 __ carry:
                     result = '1' + result
-                ____:
+                ____
                     result = '0' + result
                 carry = F..
             ____ c1 __ '1' a.. c2 __ '1':
                 __ carry:
                     result = '1' + result
-                ____:
+                ____
                     result = '0' + result
                 carry = T..
-            ____:
+            ____
                 __ carry:
                     result = '0' + result
                     carry = T..
-                ____:
+                ____
                     result = '1' + result
                     carry = F..
             i1 -= 1
@@ -50,10 +50,10 @@ c_ Solution(o..
         __ carry:
             __ i1 __ -1:
                 result = '1' + result
-            ____:
+            ____
                 tmp = addBinary(a[:i1+1], '1')
                 result = tmp + result
-        ____:
+        ____
             result = a[:i1+1]+ result
         r.. result
     

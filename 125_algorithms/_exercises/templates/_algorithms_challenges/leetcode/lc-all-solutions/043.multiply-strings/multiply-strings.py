@@ -12,5 +12,5 @@ c_ Solution(o..
         ans[i + j + 1] += ans[i + j] / 10
         ans[i + j] %= 10
     w.... l..(ans) > 1 a.. ans[-1] __ 0:
-      ans.pop()
+      ans.p.. )
     r.. "".j.. m..(s.., ans[::-1]

@@ -24,8 +24,8 @@ ___ generate_improved_xmas_tree(rows=10
 
    ___ i __ r..(2
       __ rows % 2 != 0:
-         product = m__.ceil(max_length / 2)
-      ____:
+         product = m__.c.. max_length / 2)
+      ____
          product = m__.f..(max_length / 2) + 2
 
       xmas_tree.a..((product * TRUNK).center(max_length

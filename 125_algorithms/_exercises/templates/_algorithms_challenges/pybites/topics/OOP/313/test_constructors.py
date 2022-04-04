@@ -23,10 +23,10 @@ ___ test_invalid_domain
     ("https://python.org/", "python.org"),
     ("https://stackoverflow.com/a/14836456", "stackoverflow.com"),
 ])
-___ test_create_domain_from_url(arg, expected
+___ test_create_domain_from_url(arg, e..
     domain = Domain.parse_url(arg)
     ... t..(domain) __ Domain
-    ... s..(domain) __ expected
+    ... s..(domain) __ e..
 
 
 ?p__.m__.p.("arg, expected", [
@@ -35,7 +35,7 @@ ___ test_create_domain_from_url(arg, expected
     ("tim@example.net", "example.net"),
     ("sara@hotmail.co.uk", "hotmail.co.uk"),
 ])
-___ test_create_domain_from_email(arg, expected
+___ test_create_domain_from_email(arg, e..
     domain = Domain.parse_email(arg)
     ... t..(domain) __ Domain
-    ... s..(domain) __ expected
+    ... s..(domain) __ e..

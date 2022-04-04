@@ -6,7 +6,7 @@ _______ time
 ___ function_1
     w__ o.. "sample_file.txt") __ infile:
         ___ line __ infile:
-            print(line.strip
+            print(line.s..
 
 ___ function_2
 
@@ -14,7 +14,7 @@ ___ function_2
         print(t..(infile
         data = infile.r..
         ___ line __ data:
-            print(line.strip
+            print(line.s..
 
 ___ function_3
     w__ o.. "sample_file.txt") __ infile:

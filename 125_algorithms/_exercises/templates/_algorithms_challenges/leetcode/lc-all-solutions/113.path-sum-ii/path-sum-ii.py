@@ -21,7 +21,7 @@ c_ Solution(o..
         right = dfs(root.right, s, p.., res)
         __ n.. left a.. n.. right a.. s __ 0:
           res.a..(p.. + [])
-        p...pop()
+        p...p.. )
         r.. T..
 
     res    # list

@@ -39,14 +39,14 @@ c_ Solution:
             __ l1.val < l2.val:
                 small = l1
                 l1 = l1.next
-            ____:
+            ____
                 small = l2
                 l2 = l2.next
             # First node
             __ res __ N..
                 res = small
                 end = res
-            ____:
+            ____
                 end.next = small
                 end = end.next
         __ l1 __ n.. N..

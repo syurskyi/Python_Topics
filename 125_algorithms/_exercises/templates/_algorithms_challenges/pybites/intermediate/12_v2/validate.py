@@ -29,7 +29,7 @@ ___ get_secret_token(username
     ___ user __ USERS:
         __ user.name __ username:
             _____
-    ____:
+    ____
         r.. UserDoesNotExist
 
     __ user.expired:

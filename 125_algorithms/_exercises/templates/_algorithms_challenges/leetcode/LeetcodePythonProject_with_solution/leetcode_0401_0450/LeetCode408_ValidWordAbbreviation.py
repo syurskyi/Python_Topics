@@ -16,7 +16,7 @@ c_ Solution(o..
                 num = i..(abbr[prev:j+1])
                 i += num
                 j += 1
-            ____:
+            ____
                 __ word[i] != abbr[j]:
                     r.. F..
                 i+=1

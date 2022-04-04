@@ -98,7 +98,7 @@ c_ Solution:
                 # Too deep - check till top
                 __ dfs(T, nxt_level, 0, []
                     r.. T..
-            nxt_level.pop()
+            nxt_level.p.. )
 
         r.. F..
 

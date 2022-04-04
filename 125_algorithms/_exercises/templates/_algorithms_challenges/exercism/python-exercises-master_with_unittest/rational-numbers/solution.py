@@ -14,7 +14,7 @@ c_ Rational(o..
     ___ _reduce  numer, denom
         __ numer __ 0:
             n, d = 0, 1
-        ____:
+        ____
             g = gcd(numer, denom)
             n, d = i..(numer/g), i..(denom/g)
             __ n > 0 a.. d < 0:
@@ -48,7 +48,7 @@ c_ Rational(o..
     ___ __abs__
         __ numer >= 0:
             r.. self
-        ____:
+        ____
             r.. Rational(-numer, denom)
 
     ___ __pow__  power

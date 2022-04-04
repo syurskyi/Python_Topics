@@ -11,6 +11,6 @@ c_ Solution:
                 r.. mid
             ____ square < x:
                 left = mid + 1
-            ____:
+            ____
                 right = mid - 1
         r.. (left + right) / 2

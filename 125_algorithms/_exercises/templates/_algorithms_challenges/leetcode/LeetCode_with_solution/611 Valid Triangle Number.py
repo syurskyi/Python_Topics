@@ -39,7 +39,7 @@ c_ Solution:
                 __ nums[i] + nums[j] > nums[k]:
                     ret += j - i  # move i will always satisfy the constraint
                     j -= 1  # to break
-                ____:
+                ____
                     i += 1  # to satisfy
 
         r.. ret
@@ -64,7 +64,7 @@ c_ Solution:
                 __ nums[i] + nums[j] > nums[k]:
                     ret += k - j
                     k -= 1
-                ____:
+                ____
                     j += 1
 
         r.. ret
@@ -87,7 +87,7 @@ c_ Solution:
                     ___ k __ r..(j + 1, n
                         __ nums[k] < nums[i] + nums[j]:
                             cur += 1
-                        ____:
+                        ____
                             _____
                     cache[(i, j)] = cur
                 ret += cache[(i, j)]

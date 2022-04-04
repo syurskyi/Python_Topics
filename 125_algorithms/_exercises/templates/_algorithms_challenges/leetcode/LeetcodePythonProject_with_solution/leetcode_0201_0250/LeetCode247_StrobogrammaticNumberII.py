@@ -41,7 +41,7 @@ c_ Solution(o..
             r.. evenMidCandidate[:-1]
         __ n % 2 != 0:
             pre, midCandidate = findStrobogrammatic(n-1), oddMidCandidate
-        ____:
+        ____
             pre, midCandidate = findStrobogrammatic(n-2), evenMidCandidate
         premid = i..((n-1)/2)
         result    # list

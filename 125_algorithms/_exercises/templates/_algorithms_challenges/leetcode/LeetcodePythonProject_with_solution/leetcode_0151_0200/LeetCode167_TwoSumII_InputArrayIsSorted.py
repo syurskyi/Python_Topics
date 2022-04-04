@@ -17,5 +17,5 @@ c_ Solution(o..
                 r.. [i+1, j+1]
             ____ nums[i]+nums[j] > target:
                 j -= 1
-            ____:
+            ____
                 i += 1

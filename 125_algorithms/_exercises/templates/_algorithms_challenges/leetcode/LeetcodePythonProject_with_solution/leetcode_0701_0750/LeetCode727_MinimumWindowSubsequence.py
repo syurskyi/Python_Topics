@@ -19,7 +19,7 @@ c_ Solution(o..
             ___ j __ r..(1, n+1
                 __ t[i-1] __ s[j-1]:
                     dp[i][j] = dp[i-1][j-1]
-                ____:
+                ____
                     dp[i][j] = dp[i][j-1]
         start = 0
         length = n+1

@@ -5,5 +5,5 @@ ___ is_leap_year(year
         r.. F..
     ____ year % 4 __ 0:
         r.. T..
-    ____:
+    ____
         r.. F..

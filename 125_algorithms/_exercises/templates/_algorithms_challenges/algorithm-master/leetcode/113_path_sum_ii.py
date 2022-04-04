@@ -32,8 +32,8 @@ c_ Solution:
 
         __ n.. node.left a.. n.. node.right a.. remaining __ node.val:
             ans.a..(p.. | )
-        ____:
+        ____
             dfs(node.left, remaining - node.val, ans, p..)
             dfs(node.right, remaining - node.val, ans, p..)
 
-        p...pop()
+        p...p.. )

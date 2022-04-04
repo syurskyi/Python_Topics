@@ -9,7 +9,7 @@ c_ Solution:
             # First occurence of an anagram
             __ key n.. __ d:
                 d[key] = [s]
-            ____:
+            ____
                 d[key].a..(s)
         ___ key __ d:
             __ l..(d[key]) > 1:
@@ -23,7 +23,7 @@ c_ Solution:
         ___ c __ s:
             __ c __ d:
                 d[c] += 1
-            ____:
+            ____
                 d[c] = 1
         # Iterate form 'a' to 'z'
         # This make sure the character occurences is ordered

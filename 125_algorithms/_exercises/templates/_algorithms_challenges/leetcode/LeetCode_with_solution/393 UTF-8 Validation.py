@@ -51,7 +51,7 @@ c_ Solution(o..
             __ d & 0x80 __ 0:
                 __ required != 0:
                     r.. F..
-            ____:
+            ____
                 one_cnt = 0
                 w.... d & 0x80 __ 0x80:
                     one_cnt += 1
@@ -61,7 +61,7 @@ c_ Solution(o..
                     __ one_cnt != 1:
                         r.. F..
                     required -= 1
-                ____:
+                ____
                     __ one_cnt __ 1:
                         r.. F..
                     required += (one_cnt - 1)

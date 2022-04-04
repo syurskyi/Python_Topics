@@ -7,7 +7,7 @@ s = s.. m..(i.., input().s..()))
 ___ i __ r..(i..(input())):
     s__ = input().s..
     __ s__[0] __ 'pop':
-        s.pop()
+        s.p.. )
     ____ s__[0] __ 'remove':
         s.remove(i..(s__[1]
     ____ s__[0] __ 'discard':

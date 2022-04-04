@@ -26,7 +26,7 @@ ___ calc_median_from_dict(d: d..) __ f__:
     ___ key, value __ values_sorted.i..:
         __ i < determinate:
             i += value
-        ____:
+        ____
             the_key.a..(key)
             i2 += value
 
@@ -35,5 +35,5 @@ ___ calc_median_from_dict(d: d..) __ f__:
 
     __ i __ i2:
         r.. (before + the_key_true) / 2
-    ____:
+    ____
         r.. before

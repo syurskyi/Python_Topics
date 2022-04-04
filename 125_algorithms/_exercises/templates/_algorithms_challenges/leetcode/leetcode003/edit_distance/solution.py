@@ -12,7 +12,7 @@ c_ Solution:
             ___ j __ r..(1, m + 1
                 __ word1[i - 1] __ word2[j - 1]:
                     d[i][j] = d[i - 1][j - 1]
-                ____:
+                ____
                     op = m..(d[i - 1][j - 1],  # Substitute
                              d[i - 1][j],  # Insert
                              d[i][j - 1])  # Delete

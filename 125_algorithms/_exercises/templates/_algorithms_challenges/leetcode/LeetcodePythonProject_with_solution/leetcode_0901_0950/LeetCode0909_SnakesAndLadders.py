@@ -13,7 +13,7 @@ c_ Solution(o..
         queue = [(0, 0)]
         visited = s..([0])
         w.... queue:
-            i, d = queue.pop(0)
+            i, d = queue.p.. 0)
             ___ j __ r..(i+1, i+7
                 __ j __ n-1:
                     r.. d+1
@@ -21,7 +21,7 @@ c_ Solution(o..
                     visited.add(j)
                     __ board[j] __ -1:
                         queue.a..((j, d+1
-                    ____:
+                    ____
                         __ board[j] __ n:
                             r.. d+1
                         __ board[board[j]-1] __ -1:

@@ -5,6 +5,6 @@ ___ prime_factors(num
         __ num % i __ 0:
             factors.a..(i)
             num /= i
-        ____:
+        ____
             i += 1
     r.. factors

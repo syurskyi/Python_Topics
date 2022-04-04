@@ -92,17 +92,17 @@ c_ Solution:
                     expect_incr = F..
                     l += 1
                     ret = m..(ret, l)
-                ____:
+                ____
                     l = 1
 
-            ____:
+            ____
                 __ A[i] < A[i-1]:
                     l += 1
                     ret = m..(ret, l)
                 ____ A[i] __ A[i-1]:
                     expect_incr = T..
                     l = 1
-                ____:
+                ____
                     expect_incr = T..
                     l = 2
 

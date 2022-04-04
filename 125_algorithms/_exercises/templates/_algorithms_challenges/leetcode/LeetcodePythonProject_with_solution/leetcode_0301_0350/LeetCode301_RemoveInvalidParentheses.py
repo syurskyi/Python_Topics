@@ -13,7 +13,7 @@ c_ Solution(o..
             ____ c __ ')':
                 __ rmL > 0:
                     rmL -= 1
-                ____:
+                ____
                     rmR += 1
         result = s..()
         helper(s, 0, result, '', rmL, rmR, 0)
@@ -33,7 +33,7 @@ c_ Solution(o..
         ____ c __ ')':
             helper(s, i+1, result, elem+c, rmL, rmR, openNum-1)
             helper(s, i+1, result, elem, rmL, rmR-1, openNum)
-        ____:
+        ____
             helper(s, i+1, result, elem+c, rmL, rmR, openNum)
     
     ___ test

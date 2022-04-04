@@ -35,7 +35,7 @@ c_ Promo:
         remaining_bites = l..(all_bites.k.. - bites_done)
         __ remaining_bites:
             r.. r__.choice(remaining_bites)
-        ____:
+        ____
             r.. NoBitesAvailable
 
         

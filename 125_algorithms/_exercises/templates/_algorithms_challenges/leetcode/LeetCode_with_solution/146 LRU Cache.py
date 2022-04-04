@@ -36,7 +36,7 @@ c_ LRUCache(o..
             cur = map[key]
             cur.val = value
             _elevate(cur)
-        ____:
+        ____
             cur = Node(key, value)
             map[key] = cur
             _appendleft(cur)
@@ -77,7 +77,7 @@ c_ LRUCache(o..
         ____ n.. nxt:
             ... tail __ cur
             _pop()
-        ____:
+        ____
             pre.next, nxt.pre = nxt, pre
 
         _appendleft(cur)
@@ -94,7 +94,7 @@ c_ LRUCache_TLE(o..
             q.remove(key)
             q.insert(0, key)
             r.. dic[key]
-        ____:
+        ____
             r.. -1
 
     ___ s..  key, value
@@ -109,11 +109,11 @@ c_ LRUCache_TLE(o..
         __ key __ dic:
             q.remove(key)
             q.insert(0, key)
-        ____:
+        ____
             __ l..(q)+1 <= capacity:
                 q.insert(0, key)
-            ____:
-                dic.pop(q.pop
+            ____
+                dic.p.. q.pop
                 q.insert(0, key)
 
         dic[key] = value

@@ -53,7 +53,7 @@ async ___ test_session(capfd
     ... "Time to work!" __ output
     ... "min break!" __ output
     ... "Time for lunch!" n.. __ output
-    ... l..(output.s.. __ 8
+    ... l.. ? .s.. __ 8
 
 
 @p__.mark.asyncio
@@ -71,4 +71,4 @@ async ___ test_main(capfd
     ... "min break!" __ output
     ... "Time for lunch!" __ output
     ... "Work day completed at" __ output
-    ... l..(output.s.. __ 45
+    ... l.. ? .s.. __ 45

@@ -20,11 +20,11 @@ c_ Calculator:
         operator_stack = operator_stack()
         num_stack = num_stack()
         w.... l..(operator_stack) > 0:
-            operator = operator_stack.pop(0)
-            num1 = num_stack.pop(0)
-            num2 = num_stack.pop(0)
+            operator = operator_stack.p.. 0)
+            num1 = num_stack.p.. 0)
+            num2 = num_stack.p.. 0)
             num_stack.insert(0, evaluate(operator, num1, num2
-        r.. num_stack.pop(0)
+        r.. num_stack.p.. 0)
 
     ___ evaluate  operator, num1, num2
         r.. eval(s..(num1) + operator + s..(num2

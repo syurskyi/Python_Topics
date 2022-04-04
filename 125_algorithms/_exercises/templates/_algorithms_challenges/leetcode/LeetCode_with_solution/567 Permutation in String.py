@@ -36,7 +36,7 @@ c_ Solution:
                 __ j - i + 1 __ l..(s1
                     r.. T..
                 j += 1
-            ____:
+            ____
                 __ s2[i] __ s1_set:
                     # not check s2[i] in counter, dangerous to check defaultdict
                     counter[s2[i]] += 1

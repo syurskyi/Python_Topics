@@ -15,12 +15,12 @@ TMP = '/tmp'
     ([1000, 1300, 1777, 900], 1.25,  '1300', '1777' ),
     ([1024, 2047, 2048, 2500], 2,  '2048', '2500' ),
 ])
-___ test_get_files(byte_sizes, size_in_kb, expected
+___ test_get_files(byte_sizes, size_in_kb, e..
     w__ TemporaryDirectory(dir=TMP) __ dirname:
         ___ size __ byte_sizes:
             w__ o.. __.p...j..(dirname, s..(size, __) __ f:
                 f.w.. __.urandom(size
 
-        actual = [__.p...basename(fi) ___ fi __
+        a.. = [__.p...basename(fi) ___ fi __
                   get_files(dirname, size_in_kb)]
-        ... s..(actual) __ s..(expected)
+        ... s..(a..) __ s..(e..)

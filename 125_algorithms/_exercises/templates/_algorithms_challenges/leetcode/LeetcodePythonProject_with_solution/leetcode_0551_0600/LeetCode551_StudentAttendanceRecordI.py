@@ -15,7 +15,7 @@ c_ Solution(o..
             __ c __ 'A':
                 __ n.. absent:
                     absent = T..
-                ____:
+                ____
                     r.. F..
             ____ c __ 'L':
                 __ i > 1 a.. s[i-1] __ 'L' a.. s[i-2] __ 'L':

@@ -15,9 +15,9 @@ c_ Solution(o..
         d..    # list
         ___ i, num __ e..(nums
             __ d.. a.. d..[0] __ i-k:
-                d...pop(0)
+                d...p.. 0)
             w.... d.. a.. nums[d..[-1]] < num:
-                d...pop()
+                d...p.. )
             d...a..(i)
             __ i+1>=k:
                 res.a..(nums[d..[0]])

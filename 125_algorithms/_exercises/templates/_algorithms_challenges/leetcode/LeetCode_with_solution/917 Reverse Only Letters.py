@@ -40,7 +40,7 @@ c_ Solution:
                 lst[i], lst[j] = lst[j], lst[i]
                 i += 1
                 j -= 1
-            ____:
+            ____
                 _____
 
         r.. "".j..(lst)

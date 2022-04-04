@@ -54,7 +54,7 @@ ___ print_hanging_indents(poem
         __ line __ "":
             current_line_cnt = 0
             _____
-        ____:
+        ____
             current_line_cnt += 1
         # check the line we're dealing with
         __ current_line_cnt __ 0:

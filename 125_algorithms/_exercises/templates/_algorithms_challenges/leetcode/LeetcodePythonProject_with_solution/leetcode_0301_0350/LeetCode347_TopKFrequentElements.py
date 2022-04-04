@@ -21,8 +21,8 @@ c_ Solution(o..
                 _____
             __ n.. dp[i]:
                 i-=1
-            ____:
-                result.a..(dp[i].pop(0
+            ____
+                result.a..(dp[i].p.. 0
                 k-=1
         r.. result
         

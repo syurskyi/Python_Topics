@@ -9,6 +9,6 @@ ___ get_ordinal_suffix(number
         ordinal = 'nd'
     ____ s..(number)[-1] __ '3':
         ordinal = 'rd'
-    ____:
+    ____
         ordinal = 'th'
     r.. s..(number) + ordinal

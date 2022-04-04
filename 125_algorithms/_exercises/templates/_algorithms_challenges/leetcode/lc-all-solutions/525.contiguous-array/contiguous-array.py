@@ -11,6 +11,6 @@ c_ Solution(o..
       count += delta.g.. nums[i], 0)
       __ count __ d:
         ans = m..(ans, i - d[count])
-      ____:
+      ____
         d[count] = i
     r.. ans

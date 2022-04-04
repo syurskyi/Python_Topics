@@ -17,7 +17,7 @@ c_ Solution(o..
             __ num n.. __ hashset:
                 hashset.add(num)
                 sumVal -= num
-            ____:
+            ____
                 res.a..(num)
         res.a..(sumVal)
         r.. res

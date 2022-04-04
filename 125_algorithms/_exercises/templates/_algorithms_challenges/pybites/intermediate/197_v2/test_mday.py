@@ -22,5 +22,5 @@ ___ test_check_type
     (2023, date(2023, 5, 14,
     (2024, date(2024, 5, 12,
 ])
-___ test_return_various_years(arg, expected
-    ... get_mothers_day_date(arg) __ expected
+___ test_return_various_years(arg, e..
+    ... get_mothers_day_date(arg) __ e..

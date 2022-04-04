@@ -20,7 +20,7 @@ c_ Solution:
             left, right = splitBST(root.left, target)
             root.left = right
             r.. left, root
-        ____:
+        ____
             left, right = splitBST(root.right, target)
             root.right = left
             r.. root, right

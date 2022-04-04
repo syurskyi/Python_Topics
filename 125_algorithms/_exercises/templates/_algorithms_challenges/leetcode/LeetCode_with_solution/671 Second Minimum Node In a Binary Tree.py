@@ -54,12 +54,12 @@ c_ Solution:
         __ root.left a.. root.right:
             __ root.left.val __ root.val:
                 left = find(root.left)
-            ____:
+            ____
                 left = root.left.val
 
             __ root.right.val __ root.val:
                 right = find(root.right)
-            ____:
+            ____
                 right = root.right.val
 
             r.. m..(left, right)

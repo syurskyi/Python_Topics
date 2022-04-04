@@ -40,7 +40,7 @@ c_ Planet:
     ___ __setattr__  var, val
         __ var __ 'mass':
             r.. AttributeError
-        ____:
+        ____
             super(Planet, self).__setattr__(var, val)
     # @mass.setter
     # def mass(self, value):

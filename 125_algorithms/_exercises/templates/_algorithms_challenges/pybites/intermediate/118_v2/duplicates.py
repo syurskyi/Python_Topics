@@ -17,7 +17,7 @@ ___ get_duplicate_indices(words
     ___ i,word __ e..(words
         __ word __ occurences:
             result.add(occurences[word])
-        ____:
+        ____
             occurences[word] = i
 
     

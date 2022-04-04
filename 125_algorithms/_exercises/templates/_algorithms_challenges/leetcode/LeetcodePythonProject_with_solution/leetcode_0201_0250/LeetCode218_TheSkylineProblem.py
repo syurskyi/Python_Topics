@@ -21,7 +21,7 @@ c_ Solution(o..
         ___ h __ heights:
             __ h[1] < 0:
                 heapq.heappush(heap, h[1])
-            ____:
+            ____
                 heap.remove(-h[1])
                 heapq.heapify(heap)
             curr = -heap[0]

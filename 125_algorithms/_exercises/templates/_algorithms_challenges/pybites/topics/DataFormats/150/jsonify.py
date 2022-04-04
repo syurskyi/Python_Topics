@@ -23,7 +23,7 @@ ___ convert_to_json(members=members
         line = member.r..('|',',').r..(';',',').s..(',')
         __ index __ 0:
             col0, col1, col2, col3 = line[0], line[1], line[2], line[3]
-        ____:
+        ____
             member_dict = DefaultDict(s..)
             member_dict[col0] = line[0]
             member_dict[col1] = line[1]

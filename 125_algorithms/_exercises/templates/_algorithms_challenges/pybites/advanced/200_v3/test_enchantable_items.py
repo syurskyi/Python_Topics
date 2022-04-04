@@ -147,8 +147,8 @@ ___ test_enchantment_print(mock_data, capfd
         ("channeling", 1),
     ],
 )
-___ test_roman_numeral_conversion(mock_data, enchant, expected
-    ... mock_data[enchant].max_level __ expected
+___ test_roman_numeral_conversion(mock_data, enchant, e..
+    ... mock_data[enchant].max_level __ e..
 
 
 ___ test_generate_enchantments_with_mock(mock_data
@@ -177,8 +177,8 @@ ___ test_generate_enchantments_from_source
         ("trident", "Channeling"),
     ],
 )
-___ test_gen_items_mocked(mocked_generate_items, item, expected
-    ... mocked_generate_items[item].enchantments[0].name __ expected
+___ test_gen_items_mocked(mocked_generate_items, item, e..
+    ... mocked_generate_items[item].enchantments[0].name __ e..
 
 
 ?p__.m__.p.(
@@ -245,8 +245,8 @@ ___ test_gen_items_mocked(mocked_generate_items, item, expected
         ("trident", ["channeling", "impaling", "loyalty", "riptide"]),
     ],
 )
-___ test_gen_items(coders_dataset, item, expected
-    ... [enc.id_name ___ enc __ coders_dataset[item].enchantments] __ expected
+___ test_gen_items(coders_dataset, item, e..
+    ... [enc.id_name ___ enc __ coders_dataset[item].enchantments] __ e..
 
 
 ?p__.m__.p.(
@@ -290,7 +290,7 @@ ___ test_gen_items(coders_dataset, item, expected
         ),
     ],
 )
-___ test_item_print(coders_dataset, item, expected, capfd
+___ test_item_print(coders_dataset, item, e.., capfd
     print(coders_dataset[item])
     output = ?.r .. 0].s..
-    ... output __ expected
+    ... output __ e..

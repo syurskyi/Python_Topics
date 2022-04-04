@@ -3,5 +3,5 @@ ___ is_symmetrical(num
     a_str = s..(num)
     __ a_str[::-1] __ b_str:
         r.. T..
-    ____:
+    ____
         r.. F..

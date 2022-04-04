@@ -34,7 +34,7 @@ c_ Solution(o..
                 __ neighbor n.. __ d:
                     cloned_neighbor = UndirectedGraphNode(neighbor.label)
                     d[neighbor] = cloned_neighbor
-                ____:
+                ____
                     cloned_neighbor = d[neighbor]
                 cloned_neighbors.a..(cloned_neighbor)
                 visit(neighbor)

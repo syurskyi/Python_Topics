@@ -80,7 +80,7 @@ c_ H2O_TLE2:
         __ gates[0].acquire(blocking=F..  # self.gates[0]._value > 0
             # still have available count
             gates[0].release()
-        ____:
+        ____
             gates[1].release()
 
 
@@ -110,7 +110,7 @@ c_ H2O_TLE:
         releaseHydrogen()
         __ h_cnt < 2:
             locks[0].release()
-        ____:
+        ____
             locks[1].release()
 
 

@@ -12,7 +12,7 @@ c_ Solution(o..
         ans += m..(0, leftWall - height[left])
         leftWall = m..(leftWall, height[left])
         left += 1
-      ____:
+      ____
         ans += m..(0, rightWall - height[right])
         rightWall = m..(rightWall, height[right])
         right -= 1

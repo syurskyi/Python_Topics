@@ -21,6 +21,6 @@ c_ Solution(o..
             ____ p n.. __ hashmap a.. s0 n.. __ hashset:
                 hashset.add(s0)
                 hashmap[p] = s0
-            ____:
+            ____
                 r.. F..
         r.. T..

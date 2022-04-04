@@ -20,7 +20,7 @@ c_ Solution(o..
         ___ c __ commands:
             __ c __ (-1, -2
                 d = calDirection(d, c)
-            ____:
+            ____
                 ___ _ __ r..(c
                     __ (pos[0] + dirs[d][0], pos[1] + dirs[d][1]) n.. __ hashset:
                         pos = [pos[0] + dirs[d][0], pos[1] + dirs[d][1]]

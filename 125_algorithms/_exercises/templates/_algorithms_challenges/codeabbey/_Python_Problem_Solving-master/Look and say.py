@@ -18,7 +18,7 @@ ___ look_and_say(data,maxlen
                 #check if the next element is same as the previous element and update the count
                 __ data[k] __ data[k+1]:
                     count += 1
-                ____:
+                ____
                     #if the next element is different then store the count as well as the character
                     res_string.a..(s..(count) + data[k])
                     #reinitialize the count

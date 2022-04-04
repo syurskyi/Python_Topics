@@ -25,11 +25,11 @@ c_ Solution(o..
             root0 = root0.left
         preNode = N..
         w.... stack:
-            node = stack.pop()
+            node = stack.p.. )
             __ (n.. preNode a.. V < node.val)\
                 o. (preNode a.. preNode.val <= V < node.val
                 r.. getRes(root, preNode)
-            ____:
+            ____
                 preNode = node
                 node0 = node.right
                 w.... node0:
@@ -46,16 +46,16 @@ c_ Solution(o..
             stack.a..(root0)
             __ root0.val > node.val:
                 root0 = root0.left
-            ____:
+            ____
                 root0 = root0.right
         cand = node
         w.... stack a.. stack[-1].val < node.val:
-            cand = stack.pop()
+            cand = stack.p.. )
         __ n.. stack:
             right = node.right
             node.right = N..
             r.. [root, right]
-        ____:
+        ____
             right = node.right
             node.right = N..
             stack[-1].left = right

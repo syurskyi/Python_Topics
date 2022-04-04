@@ -17,7 +17,7 @@ c_ Solution(o..
                 r.. mid
             ____ mid*mid < x:
                 start = mid+1
-            ____:
+            ____
                 end = mid-1
         r.. start __ start __ 0 ____ start-1
     

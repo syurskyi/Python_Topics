@@ -26,7 +26,7 @@ c_ Solution(o..
             queue.extend(buf4)
             curr = m..(l..(queue), n-idx)
             ___ _ __ r..(curr
-                buf[idx] = queue.pop(0)
+                buf[idx] = queue.p.. 0)
                 idx += 1
             __ curr __ 0:
                 _____

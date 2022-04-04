@@ -23,7 +23,7 @@ c_ Solution(o..
         res    # list
         count = 0
         w.... queue:
-            node = queue.pop(0)
+            node = queue.p.. 0)
             res.a..(node)
             count += 1
             ___ node0 __ graph[node]:

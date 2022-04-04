@@ -19,7 +19,7 @@ c_ Solution(o..
       ____ n2 __ 0:
         c2 = nums[i]
         n2 += 1
-      ____:
+      ____
         n1, n2 = n1 - 1, n2 - 1
 
     print

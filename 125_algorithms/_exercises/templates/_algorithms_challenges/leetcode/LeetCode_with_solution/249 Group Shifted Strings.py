@@ -17,7 +17,7 @@ c_ Solution:
         ___ s __ strings:
             __ l..(s) __ 1:
                 hm[0].a..(s)
-            ____:
+            ____
                 lst    # list
                 ___ i __ x..(1, l..(s:
                     lst.a..((o..(s[i])-o..(s[i-1]%26)

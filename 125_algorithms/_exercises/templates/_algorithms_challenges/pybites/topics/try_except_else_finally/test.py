@@ -7,7 +7,7 @@ ______ FileNotFoundError:
     print("file not exist")
 ______ E.. __ e:
     print(e)
-____:
+____
     print(f.read
 finally:
     print("closing")

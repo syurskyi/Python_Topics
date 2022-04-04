@@ -19,7 +19,7 @@ c_ Solution(o..
         o.next = p
         o = o.next
         isOdd = F..
-      ____:
+      ____
         e.next = p
         isOdd = T..
         e = e.next

@@ -35,10 +35,10 @@ c_ Solution(o..
         """
         __ root __ N..
             r.. N..
-        ____:
+        ____
             __ m..(p.val, q.val) <= root.val <= m..(p.val, q.val
                 r.. root
             ____ root.val > m..(p.val, q.val
                 r.. lowestCommonAncestor(root.left, p, q)
-            ____:
+            ____
                 r.. lowestCommonAncestor(root.right, p, q)

@@ -33,7 +33,7 @@ c_ Solution:
                     min_distance = abs(target-min_summation)
                 ____ s..(lst)>target:
                     k -= 1
-                ____:
+                ____
                     j += 1
         r.. min_summation
 

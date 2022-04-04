@@ -56,6 +56,6 @@ c_ Solution:
                 # b2i[a[i]] is empty list
                 r.. []
 
-            ans[i] = b2i[a[i]].pop()
+            ans[i] = b2i[a[i]].p.. )
 
         r.. ans

@@ -40,7 +40,7 @@ paragraphs = [
      "learn more about the various Python library modules described "
      "in The Python Standard Library.")
 ]
-expected = [
+e.. = [
     [('object-oriented', 6)],  # only one word with 6 vowels
     [('documentation.', 6)],  # ditto
     [('customizable', 5), ('applications.', 5)],  # here we have two options
@@ -50,6 +50,6 @@ expected = [
 ]
 
 
-?p__.m__.p.('text, result', z..(paragraphs, expected
+?p__.m__.p.('text, result', z..(paragraphs, e..
 ___ test_get_word_max_vowels(text, result
     ... get_word_max_vowels(text) __ result

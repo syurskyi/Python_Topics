@@ -28,7 +28,7 @@ c_ LoadBalancer:
         svr2idx[key] = i
         svrs[i] = svrs[-1]
 
-        svrs.pop()
+        svrs.p.. )
         del svr2idx[server_id]
 
     """

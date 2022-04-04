@@ -40,9 +40,9 @@ ___ get_secret_token(username
             __ user.expired __ F..:
                 __ user.role __ ADMIN:
                     r.. SECRET
-                ____:
+                ____
                     r.. UserNoPermission
-            ____:
+            ____
                 r.. UserAccessExpired
     r.. UserDoesNotExist
 

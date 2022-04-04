@@ -59,12 +59,12 @@ c_ Solution(o..
                             cnt += lines[i%2][J]
                         ____ I __ i a.. J < j:
                             cnt += lines[(i+1)%2][J]
-                        ____:
+                        ____
                             cnt += board[I][J]
 
                 __ cnt __ 3:
                     board[i][j] = 1
                 ____ cnt __ 2:
                     board[i][j] &= 1
-                ____:
+                ____
                     board[i][j] = 0

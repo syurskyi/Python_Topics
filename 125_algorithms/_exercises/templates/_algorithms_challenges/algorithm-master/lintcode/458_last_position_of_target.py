@@ -13,7 +13,7 @@ c_ Solution:
             m = l + (r - l) // 2
             __ nums[m] > target:
                 r = m
-            ____:
+            ____
                 l = m
 
         """
@@ -25,5 +25,5 @@ c_ Solution:
             r.. r
         ____ nums[l] __ target:
             r.. l
-        ____:
+        ____
             r.. -1

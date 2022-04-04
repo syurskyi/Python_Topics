@@ -14,7 +14,7 @@ ___ BMI_calculator
             result.a..('over')
         ____ BMI >= 30.0:
             result.a..('obese')
-        ____:
+        ____
             _____
     
     result = ' '.j..(s..(e) ___ e __ result)

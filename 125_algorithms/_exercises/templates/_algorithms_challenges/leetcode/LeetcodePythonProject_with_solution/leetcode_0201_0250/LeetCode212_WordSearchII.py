@@ -17,7 +17,7 @@ ___ buildTrie(words
             __ c n.. __ p.children:
                 t = TrieNode(c)
                 p.children[c] = t
-            ____:
+            ____
                 t = p.children[c]
             p = t
             __ i __ l..(word)-1:
@@ -46,7 +46,7 @@ c_ Solution(o..
         __ p.isLeaf:
             elem.a..(c)
             result.add(''.j..(elem
-            elem.pop()
+            elem.p.. )
         m, n = l..(board), l..(board[0])
         
         ___ x, y __ ((i, j+1), (i, j-1), (i+1, j), (i-1, j:
@@ -55,7 +55,7 @@ c_ Solution(o..
                 elem.a..(c)
                 dfs(board, x, y, p, elem, result)
                 board[i][j] = c
-                elem.pop()
+                elem.p.. )
         
     ___ test
         testCases = [

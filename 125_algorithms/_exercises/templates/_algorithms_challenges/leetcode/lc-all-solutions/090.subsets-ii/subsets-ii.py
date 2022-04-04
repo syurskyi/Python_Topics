@@ -15,7 +15,7 @@ c_ Solution(o..
           visited[i] = 1
           p...a..(nums[i])
           dfs(i + 1, nums, p.., res, visited)
-          p...pop()
+          p...p.. )
           del visited[i]
 
     nums.s..()

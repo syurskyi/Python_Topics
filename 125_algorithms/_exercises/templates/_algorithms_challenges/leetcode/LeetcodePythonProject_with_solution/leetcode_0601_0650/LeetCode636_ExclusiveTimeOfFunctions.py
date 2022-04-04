@@ -20,8 +20,8 @@ c_ Solution(o..
             prevTime = i..(arr[2])
             __ arr[1] __ 'start':
                 stack.a..(i..(arr[0]
-            ____:
-                res[stack.pop()] += 1
+            ____
+                res[stack.p.. )] += 1
                 prevTime += 1
         r.. res
     

@@ -17,7 +17,7 @@ c_ Solution(o..
             mid = (l+r)//2
             __ nums[mid] > nums[r]:
                 l = mid+1
-            ____:
+            ____
                 r = mid
         r.. nums[l]
     

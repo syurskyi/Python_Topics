@@ -19,7 +19,7 @@ c_ Solution(o..
             ___ j __ r..(n
                 __ s[i] __ t[j]:
                     dp[i+1][j+1] = dp[i][j] + dp[i][j+1]
-                ____:
+                ____
                     dp[i+1][j+1] = dp[i][j+1]
         r.. dp[-1][-1]
     

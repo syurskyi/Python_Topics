@@ -13,6 +13,6 @@ c_ Solution(o..
         hi = mid
       ____ nums[mid] < target:
         lo = mid + 1
-      ____:
+      ____
         r.. mid
     r.. lo

@@ -12,6 +12,6 @@ c_ Solution(o..
       mid = start + (end - start) / 2
       __ citations[mid] >= n - mid:
         end = mid
-      ____:
+      ____
         start = mid + 1
     r.. n - start __ citations[start] != 0 ____ 0

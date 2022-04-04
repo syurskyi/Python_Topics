@@ -13,13 +13,13 @@ c_ Solution(o..
         stack    # list
         ___ interval __ intervals:
             w.... stack a.. stack[-1][1] >= interval[1]:
-                stack.pop()
+                stack.p.. )
             stack.a..(interval)
         n = l..(stack)
         a = [[0, 0] ___ _ __ r..(n)]
         ___ i __ r..(n-1, -1, -1
             a[i][0] = stack[-1][0]
-            a[i][1] = stack.pop()[1]
+            a[i][1] = stack.p.. )[1]
         res = 2
         p1 = a[0][1]-1
         p2 = a[0][1]

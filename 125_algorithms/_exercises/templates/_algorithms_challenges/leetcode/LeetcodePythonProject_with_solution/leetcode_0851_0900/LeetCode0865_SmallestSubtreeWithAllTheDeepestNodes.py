@@ -26,7 +26,7 @@ c_ Solution(o..
             r.. l[0]+1, l[1]
         ____ l[0] < r[0]:
             r.. r[0]+1, r[1]
-        ____:
+        ____
             r.. l[0]+1, root
     
     ___ subtreeWithAllDeepest_own_twoPass  root
@@ -45,7 +45,7 @@ c_ Solution(o..
             r..
         __ depth __ hashmap:
             hashmap[depth].a..(root)
-        ____:
+        ____
             hashmap[depth] = [root]
         gatherDepths(root.left, depth+1, hashmap)
         gatherDepths(root.right, depth+1, hashmap)
@@ -67,7 +67,7 @@ c_ Solution(o..
                 _____
         __ isRight:
             r.. getCommonParent(root.right, nodes)
-        ____:
+        ____
             r.. root
     
     ___ isSubTree  root, node

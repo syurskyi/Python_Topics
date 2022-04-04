@@ -14,7 +14,7 @@ small_grid = """
 
 
 ___ test_print_sequence_route_small_grid(capfd
-    expected = """1 2 ⇓
+    e.. = """1 2 ⇓
     3 ⇐
     4 5 ⇑
     6 7 ⇒
@@ -27,7 +27,7 @@ ___ test_print_sequence_route_small_grid(capfd
     print_sequence_route(small_grid)
     output = ?.r .. 0].s..
 
-    ___ i, j __ z..(expected, output
+    ___ i, j __ z..(e.., output
         ... i.s.. __ j.s..
 
 
@@ -49,7 +49,7 @@ intermediate_grid = """
 
 
 ___ test_print_sequence_route_intermediate_grid(capfd
-    expected = """1 2 ⇓
+    e.. = """1 2 ⇓
     3 ⇐
     4 5 ⇑
     6 7 ⇒
@@ -66,7 +66,7 @@ ___ test_print_sequence_route_intermediate_grid(capfd
     print_sequence_route(intermediate_grid)
     output = ?.r .. 0].s..
 
-    ___ i, j __ z..(expected, output
+    ___ i, j __ z..(e.., output
         ... i.s.. __ j.s..
 
 
@@ -92,7 +92,7 @@ big_grid = """
 
 
 ___ test_print_sequence_route_big_grid(capfd
-    expected = """1 2 ⇓
+    e.. = """1 2 ⇓
     3 ⇐
     4 5 ⇑
     6 7 ⇒
@@ -113,5 +113,5 @@ ___ test_print_sequence_route_big_grid(capfd
     print_sequence_route(big_grid)
     output = ?.r .. 0].s..
 
-    ___ i, j __ z..(expected, output
+    ___ i, j __ z..(e.., output
         ... i.s.. __ j.s..

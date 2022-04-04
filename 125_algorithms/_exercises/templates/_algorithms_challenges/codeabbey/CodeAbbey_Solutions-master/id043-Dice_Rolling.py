@@ -4,5 +4,5 @@ ___ findRoll(rolls
                 rawRoll  input()
                 calculatedRoll  i..(rawRoll * 6) + 1
                 output.a..(s..(calculatedRoll
-        print(' '.j..(output
+        print(' '.j.. ?
 findRoll(input

@@ -28,7 +28,7 @@ ___ pretty_date(date
         __ secs < to.offset:
             result = to.date_str.f..(i..(secs / (to.divider __ to.divider ____ 1)))
             _____
-    ____:
+    ____
         result = date.s..('%m/%d/%y')
 
     r.. result

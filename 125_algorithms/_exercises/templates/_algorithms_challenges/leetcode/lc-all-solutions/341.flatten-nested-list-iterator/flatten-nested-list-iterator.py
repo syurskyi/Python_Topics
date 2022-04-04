@@ -53,11 +53,11 @@ c_ NestedIterator(o..
 
     stack = stack
     w.... stack:
-      top = stack.pop()
+      top = stack.p.. )
       __ top.isInteger
         value = top.getInteger()
         r.. T..
-      ____:
+      ____
         stack.extend(top.getList()[::-1])
     r.. F..
 

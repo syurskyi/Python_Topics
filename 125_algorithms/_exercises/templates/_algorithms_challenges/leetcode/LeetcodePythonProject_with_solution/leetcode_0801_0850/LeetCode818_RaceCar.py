@@ -17,7 +17,7 @@ c_ Solution(o..
         n = target.bit_length()
         __ 2**n-1 __ target:
             hashmap[target] = n
-        ____:
+        ____
             hashmap[target] = racecar(2**n-1-target)+n+1
             ___ m __ r..(n-1
                 hashmap[target] = m..(hashmap[target],\

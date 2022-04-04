@@ -44,11 +44,11 @@ ___ test_get_missing_dates(missing, month
     shuffle(my_date_range)
 
     # get days from return sequence
-    actual = s..(d.day ___ d __
+    a.. = s..(d.day ___ d __
                     get_missing_dates(my_date_range
 
     # filter out begin and end dates of range
-    expected = s..(d ___ d __ missing __
+    e.. = s..(d ___ d __ missing __
                       d n.. __ (start, end
 
-    ... actual __ expected
+    ... a.. __ e..

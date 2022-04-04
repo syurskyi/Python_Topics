@@ -24,7 +24,7 @@ c_ Trie(o..
       cVal = o..(c) - o..("a")
       __ p.children[cVal]:
         p = p.children[cVal]
-      ____:
+      ____
         newNode = TrieNode()
         p.children[cVal] = newNode
         p = newNode
@@ -38,7 +38,7 @@ c_ Trie(o..
       cVal = o..(c) - o..("a")
       __ p.children[cVal]:
         p = p.children[cVal]
-      ____:
+      ____
         r.. N..
     r.. p
 

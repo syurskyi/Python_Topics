@@ -44,7 +44,7 @@ mac = """
 ?p__.f..(scope="module")
 ___ sysinfo
     """Make a module scope sysinfo object"""
-    r.. sysinfo_scrape(output)
+    r.. sysinfo_scrape ?
 
 
 ___ test_sysinfo_scrape_type(sysinfo
@@ -64,17 +64,17 @@ ___ test_sysinfo_scrape_length(sysinfo
 
 ___ test_sysinfo_scrape_keys(sysinfo
     """Test for the proper keys"""
-    expected = [
+    e.. = [
         'Name', 'OS', 'Kernel', 'Uptime', 'Packages', 'Shell', 
         'Resolution', 'DE', 'WM', 'WM Theme', 'GTK Theme', 'Icon Theme', 
         'Font', 'CPU', 'GPU', 'RAM'
     ]
-    ... l..(sysinfo.keys __ expected
+    ... l..(sysinfo.keys __ e..
 
 
 ___ test_sysinfo_scrape_values(sysinfo
     """Test for the proper values"""
-    expected = [
+    e.. = [
         'mohh@SERENiTY', 'Mint 19 tara', 'x86_64 Linux 4.15.0-34-generic', 
         '1d 4m', '2351', 'zsh 5.4.2', '1366x768', 'Cinnamon 3.8.9', 'Muffin', 
         'Linux Mint (Mint-Y)', 'Mint-Y [GTK2/3]', 'Mint-Y', 'Noto Sans 9', 
@@ -82,7 +82,7 @@ ___ test_sysinfo_scrape_values(sysinfo
         'AMD KAVERI (DRM 2.50.0 / 4.15.0-34-generic, LLVM 6.0.0)', 
         '1886MiB / 6915MiB'
     ]
-    ... l..(sysinfo.values __ expected
+    ... l..(sysinfo.values __ e..
 
 
 ___ test_sysinfo_scrape_debian

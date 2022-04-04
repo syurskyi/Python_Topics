@@ -18,7 +18,7 @@ c_ Solution(o..
         __ root.left:
             __ n.. root.left.left a.. n.. root.left.right:
                 sumVal += root.left.val
-            ____:
+            ____
                 sumVal += sumOfLeftLeaves(root.left)
         __ root.right:
             sumVal += sumOfLeftLeaves(root.right)

@@ -72,7 +72,7 @@ c_ Solution:
             __ pre.next.val > pre_mid.next.val:
                 pre.next, pre_mid.next.next, pre_mid.next = pre_mid.next, pre.next, pre_mid.next.next
                 pre = pre.next
-            ____:
+            ____
                 pre = pre.next
 
         # dangling

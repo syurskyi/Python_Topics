@@ -51,7 +51,7 @@ ___ get_workout_motd(day
     work = workout_schedule[d]
     __ work __ "Rest":
         r.. chill
-    ____:
+    ____
         r.. f"Go train {work}"
 
 

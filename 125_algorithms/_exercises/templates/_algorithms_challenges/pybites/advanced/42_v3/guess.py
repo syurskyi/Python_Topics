@@ -54,7 +54,7 @@ c_ Game:
             r.. T..
         ____ guess < _answer:
             print _*{guess} is too low')
-        ____:
+        ____
             print _*{guess} is too high')
         r.. F..
 

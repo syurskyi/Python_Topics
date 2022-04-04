@@ -76,7 +76,7 @@ c_ Solution:
             __ current_sub_array+delta_prices[j] >= 0:
                 current_sub_array += delta_prices[j]
                 max_sub_array = m..(max_sub_array, current_sub_array)
-            ____:
+            ____
                 # keep two 2
                 __ max_sub_array > max_profits[0]:
                     max_profits[1] = max_profits[0]

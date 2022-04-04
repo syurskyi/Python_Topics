@@ -22,7 +22,7 @@ c_ Solution:
                 __ S[a] + S[b] > S[c]:
                     ans += b - a
                     b -= 1
-                ____:
+                ____
                     a += 1
 
         r.. ans

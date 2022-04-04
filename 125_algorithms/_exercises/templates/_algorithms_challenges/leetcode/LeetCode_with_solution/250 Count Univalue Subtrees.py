@@ -34,6 +34,6 @@ c_ Solution:
                     cur.left a.. cur.left.val != cur.val o.
                     cur.right a.. cur.right.val != cur.val
             r.. F..
-        ____:
+        ____
             cnt += 1  # for currently visiting node as the root of subtree.
             r.. T..

@@ -21,5 +21,5 @@ c_ Solution(o..
             curInd = k//mod
             k = k % mod
             res += s..(nums[curInd])
-            nums.pop(curInd)
+            nums.p.. curInd)
         r.. res

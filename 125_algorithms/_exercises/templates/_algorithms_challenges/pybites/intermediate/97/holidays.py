@@ -31,7 +31,7 @@ ___ get_us_bank_holidays(content=content
     holiday_zip = z..(holiday_dates, holiday_names)
     ___ h_date, h_name __ holiday_zip:
         month = h_date.s..("-")[1]
-        holidays[month].a..(h_name.strip
+        holidays[month].a..(h_name.s..
     r.. holidays
 
 

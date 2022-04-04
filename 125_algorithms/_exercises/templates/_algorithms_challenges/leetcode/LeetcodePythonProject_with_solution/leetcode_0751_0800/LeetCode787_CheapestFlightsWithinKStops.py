@@ -18,7 +18,7 @@ c_ Solution(o..
         ___ f __ flights:
             __ f[0] n.. __ graph:
                 graph[f[0]] = [[f[2], f[1]]]
-            ____:
+            ____
                 graph[f[0]].a..([f[2], f[1]])
         pq = [[0, K+1, src]]
         w.... pq:

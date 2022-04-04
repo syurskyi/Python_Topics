@@ -16,7 +16,7 @@ _______ m__
 
 c_ Solution:
     ___ repeatedStringMatch  A, B
-        r = m__.ceil(l..(B) / l..(A
+        r = m__.c.. l..(B) / l..(A
         ___ count __ (r, r + 1  # r + 1 when len(B) % len(A) == 0
             __ B __ A * count:
                 r.. count
@@ -33,7 +33,7 @@ c_ Solution:
                 idx = i + j - count * l..(A)
                 __ A[idx] __ B[j]:
                     j += 1
-                ____:
+                ____
                     _____
 
             __ j __ l..(B

@@ -9,6 +9,6 @@ c_ Solution(o..
       idx = bisect.bisect_left(tails, start)
       __ idx __ l..(tails
         tails.a..(end)
-      ____:
+      ____
         tails[idx] = m..(tails[idx], end)
     r.. l..(tails)

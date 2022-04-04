@@ -23,6 +23,6 @@ c_ Solution(o..
                 result.a..('Silver Medal')
             ____ ind __ 3:
                 result.a..('Bronze Medal')
-            ____:
+            ____
                 result.a..(s..(ind
         r.. result

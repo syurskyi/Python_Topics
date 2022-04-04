@@ -29,7 +29,7 @@ c_ Solution:
             mid = (left + right) // 2
             __ check_if_possible(L, mid, k
                 left = mid
-            ____:
+            ____
                 right = mid
 
         r.. right __ check_if_possible(L, right, k) ____ left

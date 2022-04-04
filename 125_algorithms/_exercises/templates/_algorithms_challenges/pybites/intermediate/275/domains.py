@@ -29,7 +29,7 @@ ___ get_most_common_domains(emails, common_domains_ N..
         domain = email.s..("@")[1]
         __ domain __ common_domains:
             _____
-        ____:
+        ____
             most_common_prep.a..(domain)
 
     most_common = C..(most_common_prep)

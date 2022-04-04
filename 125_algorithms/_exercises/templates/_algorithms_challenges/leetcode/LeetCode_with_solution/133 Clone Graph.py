@@ -79,11 +79,11 @@ c_ Solution:
         clone = UndirectedGraphNode(node.label)
         original2copy[node] = clone
         w.... q:
-            cur = q.pop()
+            cur = q.p.. )
             ___ neighbor __ cur.neighbors:
                 __ neighbor __ original2copy:  # already copied
                     original2copy[cur].neighbors.a..(original2copy[neighbor])
-                ____:
+                ____
                     q.a..(neighbor)
                     clone_neighbor = UndirectedGraphNode(neighbor.label)
                     original2copy[neighbor] = clone_neighbor

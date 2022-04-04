@@ -19,7 +19,7 @@ c_ MedianFinder:
         """
         __ minheap a.. num < minheap[0]:
             heapq.heappush(maxheap, -num)
-        ____:
+        ____
             heapq.heappush(minheap, num)
 
     ___ findMedian

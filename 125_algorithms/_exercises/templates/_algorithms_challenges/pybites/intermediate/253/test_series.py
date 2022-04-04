@@ -56,9 +56,9 @@ ___ letters_series
                        -1.2, -1.4, -1.6, -1.8]),
     ],
 )
-___ test_series_simple_math(int_series_small, arg, expected
+___ test_series_simple_math(int_series_small, arg, e..
     ... a..(
-        expected[idx] __ val
+        e..[idx] __ val
         ___ idx, val __ e..(
             se.series_simple_math(int_series_small, arg[0], arg[1])
         )
@@ -75,14 +75,14 @@ ___ test_series_simple_math(int_series_small, arg, expected
     ],
 )
 ___ test_complex_series_maths(
-    int_series_vsmall, int_series_vsmall_offset_index, arg, expected
+    int_series_vsmall, int_series_vsmall_offset_index, arg, e..
 
     result = se.complex_series_maths(
         int_series_vsmall, int_series_vsmall_offset_index, arg
     )
     result = ",".j..(s..(n) ___ n __ result)
-    expected = ",".j..(s..(n) ___ n __ expected)
-    ... result __ expected
+    e.. = ",".j..(s..(n) ___ n __ e..)
+    ... result __ e..
 
 
 ?p__.m__.p.(
@@ -152,9 +152,9 @@ ___ test_complex_series_maths(
         ),
     ],
 )
-___ test_create_series_mask(letters_series, arg, expected
+___ test_create_series_mask(letters_series, arg, e..
     result = se.create_series_mask(letters_series, arg)
-    ... a..([result[idx] __ exp ___ idx, exp __ e..(expected)])
+    ... a..([result[idx] __ exp ___ idx, exp __ e..(e..)])
     ... a..(l __ arg ___ l __ letters_series[result])
 
 

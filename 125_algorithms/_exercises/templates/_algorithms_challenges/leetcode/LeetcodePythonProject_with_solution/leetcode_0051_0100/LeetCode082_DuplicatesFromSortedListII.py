@@ -26,6 +26,6 @@ c_ Solution(o..
                 val = node.next.val
                 w.... node.next a.. node.next.val __ val:
                     node.next = node.next.next
-            ____:
+            ____
                 node = node.next
         r.. dummy.next

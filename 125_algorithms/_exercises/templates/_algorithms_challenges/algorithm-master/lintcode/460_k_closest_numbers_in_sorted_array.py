@@ -24,7 +24,7 @@ c_ Solution:
             mid = left + (right - left) // 2
             __ A[mid] <= target:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         """
@@ -48,7 +48,7 @@ c_ Solution:
             ____ A[right] - target < target - A[left]:
                 ans[i] = A[right]
                 right += 1
-            ____:
+            ____
                 ans[i] = A[left]
                 left -= 1
 

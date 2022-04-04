@@ -7,7 +7,7 @@ ___ flatten(list_of_lists
     ___ l __ list_of_lists:
         __ t..(l) __ (t..,l..
             new_list.extend(flatten(l
-        ____:
+        ____
             new_list.a..(l)
     
 

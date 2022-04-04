@@ -11,15 +11,15 @@ c_ Solution(o..
         ___ i __ r..(l..(expression)-1, -1, -1
             c = expression[i]
             __ stack a.. stack[-1] __ '?':
-                stack.pop()
-                first = stack.pop()
-                stack.pop()
-                second = stack.pop()
+                stack.p.. )
+                first = stack.p.. )
+                stack.p.. )
+                second = stack.p.. )
                 __ c __ 'T':
                     stack.a..(first)
-                ____:
+                ____
                     stack.a..(second)
-            ____:
+            ____
                 stack.a..(c)
         r.. stack[-1]
     
@@ -39,7 +39,7 @@ c_ Solution(o..
                         subExp = expression[2:i]
                         _____
                 i+=1
-        ____:
+        ____
             subExp = ''
             i = 2
             count = 0
@@ -54,5 +54,5 @@ c_ Solution(o..
                 i+=1
         __ l..(subExp) __ 1:
             r.. subExp
-        ____:
+        ____
             r.. parseTernary(subExp)

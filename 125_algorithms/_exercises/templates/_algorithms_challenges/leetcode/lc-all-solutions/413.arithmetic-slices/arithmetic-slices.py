@@ -12,7 +12,7 @@ c_ Solution(o..
       ___ i __ r..(1, l..(diff:
         __ diff[i] __ pre:
           count += 1
-        ____:
+        ____
           ans += count * (count - 1) / 2
           count = 1
         pre = diff[i]

@@ -40,12 +40,12 @@ c_ Solution:
                     __ res __ N..
                         res = temp
                         res_end = temp_end
-                    ____:
+                    ____
                         res_end.next = temp
                         res_end = temp_end
                     # Reset `temp`
                     temp = N..
-            ____:
+            ____
                 res_end.next = head
                 _____
             i += 1

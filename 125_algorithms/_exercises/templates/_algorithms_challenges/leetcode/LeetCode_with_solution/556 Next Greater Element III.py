@@ -48,7 +48,7 @@ c_ Solution:
         ret = i..("".j..(seq
         __ ret <= 1 << 31 - 1:
             r.. ret
-        ____:
+        ____
             r.. -1
 
     ___ nextGreaterElement_sort  n: i..) __ i..:
@@ -70,7 +70,7 @@ c_ Solution:
             e = seq[i]
             popped = N..
             w.... stk a.. seq[stk[-1]] > e:
-                popped = stk.pop()
+                popped = stk.p.. )
 
             __ popped:
                 seq[i], seq[popped] = seq[popped], seq[i]
@@ -78,7 +78,7 @@ c_ Solution:
                 ret = i..("".j.. m..(s.., seq)))
                 __ ret <= 1 << 31 - 1:
                     r.. ret
-                ____:
+                ____
                     r.. -1
 
             stk.a..(i)

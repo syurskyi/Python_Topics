@@ -9,6 +9,6 @@ c_ Solution:
             max_area = m..(max_area, (j - i) * m..(height[i], height[j]
             __ height[i] <= height[j]:
                 i += 1
-            ____:
+            ____
                 j -= 1
         r.. max_area

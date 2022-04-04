@@ -58,12 +58,12 @@ c_ SolutionError(o..
         ___ idx, val __ e..(nums
             __ val n.. __ d:
                 d[val] = (idx, 1)
-            ____:
+            ____
                 prev, sz = d[val]
                 p = r__.randrange(0, sz)
                 __ p < sz:
                     d[val] = (idx, sz + 1)
-                ____:
+                ____
                     d[val] = (prev, sz + 1)
 
     ___ pick  target

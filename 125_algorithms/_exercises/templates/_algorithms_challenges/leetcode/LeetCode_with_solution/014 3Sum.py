@@ -26,7 +26,7 @@ c_ Solution:
         ___ ind, val __ e..(num
             __ val n.. __ reverse_map:
                 reverse_map[val] = [ind]
-            ____:
+            ____
                 reverse_map[val].a..(ind)
 
         result    # list
@@ -54,7 +54,7 @@ c_ Solution:
         ___ ind, val __ e..(num
             __ val n.. __ reverse_map:
                 reverse_map[val] = [ind]
-            ____:
+            ____
                 reverse_map[val].a..(ind)
 
         result    # dict
@@ -114,7 +114,7 @@ c_ Solution:
                         k -= 1
                 ____ s..(lst) > 0:
                     k -= 1
-                ____:
+                ____
                     j += 1
 
             i += 1

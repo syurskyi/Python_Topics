@@ -34,12 +34,12 @@ c_ Solution:
         ___ i, e __ e..(nums
             __ e __ 1:
                 o += 1
-            ____:
+            ____
                 z += 1
             diff = o - z
             __ diff __ d:
                 ret = m..(ret, i + 1 - d[diff])
-            ____:
+            ____
                 d[diff] = i + 1
 
         r.. ret
@@ -69,12 +69,12 @@ c_ Solution:
             ____ count * 2 < l:
                 __ nums[i] __ 1:
                     i += 1
-                ____:
+                ____
                     j -= 1
-            ____:
+            ____
                 __ nums[i] __ 0:
                     i += 1
-                ____:
+                ____
                     j -= 1
         r.. 0
 
@@ -92,7 +92,7 @@ c_ Solution:
         ___ e __ nums:
             __ e __ 0:
                 F.a..(F[-1] + 1)
-            ____:
+            ____
                 F.a..(F[-1])
 
         ret = 0

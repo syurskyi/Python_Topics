@@ -36,7 +36,7 @@ c_ Solution(o..
                         hashmap[left] -= 1
                         count -= 1
                         start += wordLen
-                ____:
+                ____
                     hashmap    # dict
                     start = i+wordLen
                     count = 0

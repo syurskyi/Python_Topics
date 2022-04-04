@@ -14,10 +14,10 @@ c_ Solution(o..
         ___ i __ r..(l..(temperatures)-1, -1, -1
             t = temperatures[i]
             w.... stack a.. temperatures[stack[-1]] <= t:
-                stack.pop()
+                stack.p.. )
             __ n.. stack:
                 res.insert(0, 0)
-            ____:
+            ____
                 res.insert(0, stack[-1]-i)
             stack.a..(i)
         r.. res

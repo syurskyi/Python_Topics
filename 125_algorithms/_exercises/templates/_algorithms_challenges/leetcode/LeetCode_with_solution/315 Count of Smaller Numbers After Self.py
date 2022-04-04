@@ -45,7 +45,7 @@ c_ SegmentTree(o..
                 cur = cur.left
             ____ mid <= idx < cur.end:
                 cur = cur.right
-            ____:
+            ____
                 r..
 
     ___ query_less  cur, idx
@@ -57,7 +57,7 @@ c_ SegmentTree(o..
             r.. query_less(cur.left, idx)
         ____ mid <= idx < cur.end:
             r.. (cur.left.cnt __ cur.left ____ 0) + query_less(cur.right, idx)
-        ____:
+        ____
             r.. 0
 
 

@@ -27,4 +27,4 @@ c_ Solution(o..
                 _____
             curr.a..(sub)
             helper(res, curr, s, i)
-            curr.pop()
+            curr.p.. )

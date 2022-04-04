@@ -40,7 +40,7 @@ ___ get_pycon_speaker_first_names(soup_ N..
             ___ speaker __ speaker_clean.s..("/"
                 first_name = speaker.s...s..(" ")[0].s..
                 first_names.a..(first_name)
-        ____:
+        ____
             first_names.a..(speaker_clean.s..(" ")[0])
     r.. first_names
 

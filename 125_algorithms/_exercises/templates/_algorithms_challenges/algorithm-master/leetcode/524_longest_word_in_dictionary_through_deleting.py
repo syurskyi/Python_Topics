@@ -75,7 +75,7 @@ c_ Solution:
         # keep s[i]
         p...a..(s[i])
         find_cands(s, i + 1, cands, p..)
-        p...pop()
+        p...p.. )
 
         # ignore s[i]
         find_cands(s, i + 1, cands, p..)

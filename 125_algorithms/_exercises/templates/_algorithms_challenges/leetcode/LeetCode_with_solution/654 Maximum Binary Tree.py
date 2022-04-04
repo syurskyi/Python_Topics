@@ -51,7 +51,7 @@ c_ Solution:
         ___ n __ nums:
             cur = TreeNode(n)
             w.... stk a.. stk[-1].val < cur.val:
-                left = stk.pop()
+                left = stk.p.. )
                 cur.left = left
 
             __ stk:
@@ -91,7 +91,7 @@ c_ Solution_heap:
             node.left = insert(node.left, m, idx)
         ____ idx[m] > idx[node.val]:
             node.right = insert(node.right, m, idx)
-        ____:
+        ____
             r..
 
         r.. node

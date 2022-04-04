@@ -26,7 +26,7 @@ c_ Solution(o..
                 res.a..(num)
                 __ helper(s, j, res
                     r.. T..
-                res.pop()
+                res.p.. )
         r.. F..
     
     ___ test

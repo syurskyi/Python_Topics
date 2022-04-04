@@ -48,7 +48,7 @@ c_ Trie:
 
         __ i __ l..(w) - 1:
             node.ended = T..
-        ____:
+        ____
             nxt = w[i + 1]
             node.children[nxt] = cls.insert(node.children[nxt], w, i + 1)
 
@@ -66,7 +66,7 @@ c_ Trie:
             r.. w[:i+1]
         ____ i + 1 < l..(w
             r.. cls.s..(node.children[w[i + 1]], w, i + 1)
-        ____:
+        ____
             r..
 
 c_ Solution:
@@ -83,7 +83,7 @@ c_ Solution:
                 __ searched:
                     ret.a..(searched)
                     _____
-            ____:
+            ____
                 ret.a..(word)
 
         r.. " ".j..(ret)

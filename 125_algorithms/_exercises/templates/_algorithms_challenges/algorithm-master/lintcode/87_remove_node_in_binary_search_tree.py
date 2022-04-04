@@ -35,7 +35,7 @@ c_ Solution:
 
         __ target < root.val:
             root.left = removeNode(root.left, target)
-        ____:
+        ____
             root.right = removeNode(root.right, target)
 
         r.. root

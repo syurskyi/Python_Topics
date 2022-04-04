@@ -19,9 +19,9 @@ c_ Solution(o..
         res = n+1
         ___ i __ r..(n+1
             w.... d a.. arr2[i] - arr2[d[0]] >= k:
-                res = m..(res, i-d.pop(0
+                res = m..(res, i-d.p.. 0
             w.... d a.. arr2[i] <= arr2[d[-1]]:
-                d.pop()
+                d.p.. )
             d.a..(i)
         r.. res __ res <= n ____ -1
     

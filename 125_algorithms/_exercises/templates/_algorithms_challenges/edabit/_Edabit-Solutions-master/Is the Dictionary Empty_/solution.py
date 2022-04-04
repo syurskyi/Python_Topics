@@ -1,7 +1,7 @@
 ___ is_empty(dictionary
     __ l..(dictionary) __ 0:
         r.. T..
-    ____:
+    ____
         r.. F..
 
 

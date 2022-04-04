@@ -10,13 +10,13 @@ ___ get_belt(user_score, scores=scores, belts=belts
             ___ j __ r..(0, i
                 result.insert(j, N..)
             last = i
-        ____:
+        ____
             ___ j __ r..(last, i
                 result.insert(j, belts[index - 1])
             last = i
     __ user_score >= scores[l..(scores)-1]:
         r.. belts[l..(belts)-1]
-    ____:
+    ____
         r.. result[user_score]
 
 print(get_belt(1000, scores, belts

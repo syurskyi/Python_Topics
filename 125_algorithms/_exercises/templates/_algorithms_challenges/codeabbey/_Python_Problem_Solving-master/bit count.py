@@ -22,11 +22,11 @@ ___ j __ binary:
             __ k & 1:
                 #odd
                 res_str = '1' + res_str
-            ____:
+            ____
                 #even
                 res_str = '0' + res_str
         print(res_str.c.. '1'),end=' ')
-    ____:
+    ____
         j = abs(j)
         bin_list.a..(j)
         w.... j != 1:
@@ -38,7 +38,7 @@ ___ j __ binary:
             __ k & 1:
                 #odd
                 res_str = '0' + res_str
-            ____:
+            ____
                 #even
                 res_str = '1' + res_str
         res = 1
@@ -63,7 +63,7 @@ ___ j __ binary:
                 carry = 0
                 res = 0
                 result = '0' + result
-            ____:
+            ____
                 p..
         #if at the end carry has 1 then append 1
         __ carry __ 1:

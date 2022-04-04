@@ -20,6 +20,6 @@ c_ Solution(o..
                 count += 1
             ____ cand __ c:
                 count += 1
-            ____:
+            ____
                 count -= 1
         r.. cand

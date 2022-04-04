@@ -3,5 +3,5 @@ ___ missing_angle(angle1, angle2
         r.. "acute"
     ____ angle1 + angle2 __ 90:
         r.. "right"
-    ____:
+    ____
         r.. "obtuse"

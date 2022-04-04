@@ -30,7 +30,7 @@ c_ Solution:
         ___ elt __ nums:
             __ elt & rightmost_bit_set:
                 a ^= elt
-            ____:
+            ____
                 b ^= elt
 
         r.. a, b

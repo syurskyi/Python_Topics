@@ -24,21 +24,21 @@ c_ Solution:
             r..
         ____ n.. s a.. l..(cand) __ 4:
                 res.a..('.'.j..(cand
-        ____:
+        ____
             k = m..(3, l..(s  # Ensures s[:j + 1] won't be duplicate
             ___ j __ r..(k
                 b = s[:j + 1]
                 __ is_valid_byte(b
                     cand.a..(b)
                     restore_ip(s[j + 1:], cand, res)
-                    cand.pop()
+                    cand.p.. )
 
     ___ is_valid_byte  b
         __ b __ '0':
             r.. T..
         ____ b.startswith('0'
             r.. F..
-        ____:
+        ____
             r.. i..(b) < 256
 
 a = "25525511135"

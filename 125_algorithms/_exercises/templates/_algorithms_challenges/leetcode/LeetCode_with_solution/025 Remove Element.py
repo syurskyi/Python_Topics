@@ -22,7 +22,7 @@ c_ Solution:
             __ A[open_ptr]__elem:
                 A[open_ptr], A[back_ptr] = A[back_ptr], A[open_ptr]
                 back_ptr -= 1
-            ____:
+            ____
                 open_ptr += 1
 
         r.. l..(A)+back_ptr+1  # length is index+1
@@ -43,7 +43,7 @@ c_ Solution:
             __ A[open_ptr]__elem:
                 end_ptr -= 1
                 A[open_ptr], A[end_ptr] = A[end_ptr], A[open_ptr]
-            ____:
+            ____
                 open_ptr += 1
 
         r.. end_ptr

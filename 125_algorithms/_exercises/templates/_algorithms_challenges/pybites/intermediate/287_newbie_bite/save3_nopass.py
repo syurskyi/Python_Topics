@@ -2,7 +2,7 @@
 ___ time_printer(time
     __ time:#xafjiwjaf
 	    print(f"The time is {time}.")
-    ____:
+    ____
         r..
     
 '''QWEPOQOPKF 

@@ -43,7 +43,7 @@ c_ Solution(o..
         __ distance.g.. nbr, -2) + 1 __ distance[beginWord]:
           p...a..(nbr)
           dfs(nbr, endWord, wordList, p.., res, distance)
-          p...pop()
+          p...p.. )
 
     res    # list
     distance = bfs(endWord, beginWord, wordlist)

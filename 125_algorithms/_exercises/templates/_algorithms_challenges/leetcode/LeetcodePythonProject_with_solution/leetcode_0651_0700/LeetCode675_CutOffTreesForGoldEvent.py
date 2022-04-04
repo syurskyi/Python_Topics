@@ -37,7 +37,7 @@ c_ Solution(o..
         w.... queue:
             size = l..(queue)
             ___ _ __ r..(size
-                i0, j0 = queue.pop(0)
+                i0, j0 = queue.p.. 0)
                 __ i0 __ i a.. j0 __ j: r.. step
                 ___ i1, j1 __ (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1
                     __ i1 < 0 o. i1 >= m o. j1 < 0 o. j1 >= n o.\

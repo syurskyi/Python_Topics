@@ -49,7 +49,7 @@ ___ get_sign_by_date(signs: l.., date: d__) __ s..:
         __ end_dt < start_dt:
             __ date <= end_dt:
                 start_dt = d__.s..(start, '%B %d').r.. y.._year-1)
-            ____:
+            ____
                 end_dt = d__.s..(end, '%B %d').r.. y.._year+1)
         __ start_dt <= date <= end_dt:
             r.. sign.name

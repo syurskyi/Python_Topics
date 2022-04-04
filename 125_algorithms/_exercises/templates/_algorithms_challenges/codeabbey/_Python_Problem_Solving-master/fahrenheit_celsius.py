@@ -8,7 +8,7 @@ ___ i __ r..(1,i..(d[0])+1
     ____ cel < 0:
         cel = cel - 0.5
         result.a..(i..(cel
-    ____:
+    ____
         cel = cel + 0.5
         result.a..(i..(cel
         

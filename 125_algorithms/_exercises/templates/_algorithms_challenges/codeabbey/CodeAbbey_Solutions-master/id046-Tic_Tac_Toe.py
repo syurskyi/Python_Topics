@@ -32,7 +32,7 @@ ___ is_winner(board
 
     __ player_one_won o. player_two_won:
         r.. T..
-    ____:
+    ____
         r.. N..
 
 ___ tic_tac_toe(games

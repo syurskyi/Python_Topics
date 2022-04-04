@@ -62,15 +62,15 @@ ___ test_get_feed_entries(inp
     ... first.date __ date y.._2018,  m.._2,  d.._18)
     ... first.title __ 'Twitter Digest 2018 Week 08'
     ... first.link __ 'https://pybit.es/twitter_digest_201808.html'
-    expected =  'flask', 'python', 'regex', 'twitter'
+    e.. =  'flask', 'python', 'regex', 'twitter'
     # allow list or set
-    ... s..(l..(first.tags __ expected
+    ... s..(l..(first.tags __ e..
 
     ... last.date __ date y.._2017,  m.._1,  d.._6)
     ... last.title __ 'Copy and Paste with Pyperclip'
     ... last.link __ 'https://pybit.es/pyperclip.html'
-    expected =  'code', 'pybites', 'python', 'tips', 'tricks'
-    ... s..(l..(last.tags __ expected
+    e.. =  'code', 'pybites', 'python', 'tips', 'tricks'
+    ... s..(l..(last.tags __ e..
 
 
 ?p__.m__.p.("arg, ret", [
@@ -106,7 +106,7 @@ ___ test_main(entries, inp, capfd
 
     output = [line ___ line __ out.s..('\n') __ line.s..]
 
-    expected =  '0 entries matched', 'Twitter Digest 2018 Week 08',
+    e.. =  '0 entries matched', 'Twitter Digest 2018 Week 08',
                 '1 entry matched', 'Copy and Paste with Pyperclip',
                 'Twitter Digest 2018 Week 08', '2 entries matched',
                 '0 entries matched', 'Copy and Paste with Pyperclip',
@@ -115,7 +115,7 @@ ___ test_main(entries, inp, capfd
                 'Twitter Digest 2018 Week 08', '1 entry matched',
                 'Please provide a search term', 'Bye'
 
-    ... l..(output) __ l..(expected)
+    ... l.. ?  __ l..(e..)
 
-    ___ line, exp __ z..(output, expected
+    ___ line, exp __ z.. ? , e..
         ... exp __ line

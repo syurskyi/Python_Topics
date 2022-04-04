@@ -18,7 +18,7 @@ c_ Solution(o..
             __ val >= 10:
                 val -= 10
                 carry = 1
-            ____:
+            ____
                 carry = 0
             result = s..(val) + result
             i -= 1
@@ -29,7 +29,7 @@ c_ Solution(o..
             __ val >= 10:
                 val -= 10
                 carry = 1
-            ____:
+            ____
                 carry = 0
             result = s..(val) + result
             i -= 1

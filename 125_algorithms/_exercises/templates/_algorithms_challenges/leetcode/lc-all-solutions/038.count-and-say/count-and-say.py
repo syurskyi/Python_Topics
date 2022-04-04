@@ -13,7 +13,7 @@ c_ Solution(o..
       ___ i __ r..(1, l..(ans:
         __ pre __ ans[i]:
           count += 1
-        ____:
+        ____
           res += s..(count) + pre
           pre = ans[i]
           count = 1

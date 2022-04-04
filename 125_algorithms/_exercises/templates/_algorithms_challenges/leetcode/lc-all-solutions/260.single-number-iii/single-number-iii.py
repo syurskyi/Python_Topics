@@ -13,7 +13,7 @@ c_ Solution(o..
     ___ num __ nums:
       __ num & xor:
         a ^= num
-      ____:
+      ____
         b ^= num
 
     r.. a, b

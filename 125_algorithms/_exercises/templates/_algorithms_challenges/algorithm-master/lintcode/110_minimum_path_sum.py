@@ -24,7 +24,7 @@ c_ Solution:
             ___ j __ r..(1, n
                 __ dp[i - 1][j] < dp[i][j - 1]:
                     dp[i][j] = grid[i][j] + dp[i - 1][j]
-                ____:
+                ____
                     dp[i][j] = grid[i][j] + dp[i][j - 1]
 
         r.. dp[m - 1][n - 1]

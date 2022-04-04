@@ -83,9 +83,9 @@ ___ test_first_ninja_ranks_in_object(ninja_ranks
 
 
 ___ test_dumping_lowest_ranking_fist_ninjas(ninja_ranks
-    actual = ninja_ranks.d.. )
-    expected = Ninja(name="sam", bites=195)
-    ... actual __ expected
+    a.. = ninja_ranks.d.. )
+    e.. = Ninja(name="sam", bites=195)
+    ... a.. __ e..
     ... l..(ninja_ranks) __ 10
 
 
@@ -93,25 +93,25 @@ ___ test_dumping_lowest_ranking_fist_ninjas(ninja_ranks
 
 
 ___ test_highest_ranking_no_arg(ninja_ranks
-    actual = ninja_ranks.highest()
-    expected = [Ninja(name="snow", bites=283)]
-    ... actual __ expected
+    a.. = ninja_ranks.highest()
+    e.. = [Ninja(name="snow", bites=283)]
+    ... a.. __ e..
 
 
 ___ test_lowest_ranking_no_arg(ninja_ranks
-    actual = ninja_ranks.lowest()
-    expected = [Ninja(name="sara", bites=196)]
-    ... actual __ expected
+    a.. = ninja_ranks.lowest()
+    e.. = [Ninja(name="sara", bites=196)]
+    ... a.. __ e..
 
 
 ___ test_lowest_ranking_with_arg(ninja_ranks
-    actual = ninja_ranks.lowest(3)
-    expected = [
+    a.. = ninja_ranks.lowest(3)
+    e.. = [
         Ninja(name="sara", bites=196),
         Ninja(name="james", bites=197),
         Ninja(name="fred", bites=204),
     ]
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_adding_a_ninja(ninja_ranks
@@ -120,47 +120,47 @@ ___ test_adding_a_ninja(ninja_ranks
 
 
 ___ test_lowest_ranking_after_adding_more_ninjas(ninja_ranks
-    actual = ninja_ranks.lowest(3)
-    expected = [
+    a.. = ninja_ranks.lowest(3)
+    e.. = [
         Ninja(name="sam", bites=195),
         Ninja(name="sara", bites=196),
         Ninja(name="james", bites=197),
     ]
-    ... actual __ expected
+    ... a.. __ e..
 
     # now add the ninjas of first_ninja_ranks
     ___ ninja __ SECOND_NINJAS:
         ninja_ranks.add(ninja)
 
     # check lowest again, it should have changed
-    actual = ninja_ranks.highest(3)
-    expected = [
+    a.. = ninja_ranks.highest(3)
+    e.. = [
         Ninja(name="noah", bites=470),
         Ninja(name="doug", bites=469),
         Ninja(name="steve", bites=468),
     ]
-    ... actual __ expected
+    ... a.. __ e..
 
 
 # pairing of ninjas
 
 
 ___ test_pairing_with_no_arg(ninja_ranks
-    actual = ninja_ranks.pair_up()
-    ... l..(actual) __ 3
+    a.. = ninja_ranks.pair_up()
+    ... l..(a..) __ 3
 
-    expected = (Ninja(name="doug", bites=469), Ninja(name="sara", bites=196
-    ... actual[1] __ expected
+    e.. = (Ninja(name="doug", bites=469), Ninja(name="sara", bites=196
+    ... a..[1] __ e..
 
 
 ___ test_pairing_with_count_arg(ninja_ranks
-    actual = ninja_ranks.pair_up(5)
-    ... l..(actual) __ 5
+    a.. = ninja_ranks.pair_up(5)
+    ... l..(a..) __ 5
 
-    expected = (Ninja(name="noah", bites=470),
+    e.. = (Ninja(name="noah", bites=470),
                 Ninja(name="sam", bites=195
-    ... actual[0] __ expected
+    ... a..[0] __ e..
 
-    expected = (Ninja(name="valentine", bites=441),
+    e.. = (Ninja(name="valentine", bites=441),
                 Ninja(name="kenneth", bites=216
-    ... actual[-1] __ expected
+    ... a..[-1] __ e..

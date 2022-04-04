@@ -33,7 +33,7 @@ c_ Solution:
             __ abs(x - A[mid]) > abs(A[mid + k] - x
                 # better to have A[mid+k] rather than A[mid]
                 lo = mid + 1
-            ____:
+            ____
                 hi = mid
 
         r.. A[lo:lo+k]
@@ -53,7 +53,7 @@ c_ Solution:
                 __ abs(A[i] - x) <= abs(A[j] - x
                     ret.appendleft(A[i])
                     i -= 1
-                ____:
+                ____
                     ret.a..(A[j])
                     j += 1
             ____ 0 <= i < n:
@@ -62,7 +62,7 @@ c_ Solution:
             ____ 0 <= j < n:
                 ret.a..(A[j])
                 j += 1
-            ____:
+            ____
                 r..
 
             k -= 1

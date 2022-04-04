@@ -15,7 +15,7 @@ c_ Vector2D(o..
         __ col __ l..(values[row])-1:
             row += 1
             col = 0
-        ____:
+        ____
             col += 1
         r.. val
     
@@ -24,9 +24,9 @@ c_ Vector2D(o..
             r.. F..
         ____ row < l..(values)-1:
             r.. T..
-        ____:
+        ____
             __ col < l..(values[row]
                 r.. T..
-            ____:
+            ____
                 r.. F..
         

@@ -15,7 +15,7 @@ ___ join_lists(lst_of_lst: L..[L..[s..]], sep: s..) __ Union[L..[s..], N..]:
         result.extend(lst)
         result.a..(sep)
     
-    result.pop()
+    result.p.. )
 
     r.. result
 

@@ -30,7 +30,7 @@ ___ parse_markdown(markdown
                         '</em>' + m1.group(3)
                     is_italic = T..
                 i = '<ul><li>' + curr + '</li>'
-            ____:
+            ____
                 is_bold = F..
                 is_italic = F..
                 curr = m.group(1)
@@ -47,7 +47,7 @@ ___ parse_markdown(markdown
                     curr = m1.group(1) + '<em>' + m1.group(2) + \
                         '</em>' + m1.group(3)
                 i = '<li>' + curr + '</li>'
-        ____:
+        ____
             __ in_list:
                 i = '</ul>+i'
                 in_list = F..

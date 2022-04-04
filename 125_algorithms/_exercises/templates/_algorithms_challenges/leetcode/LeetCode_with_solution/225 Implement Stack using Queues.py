@@ -43,15 +43,15 @@ c_ Stack:
             t ^= 1
 
         w.... l..(q[t]) > 1:
-            q[t^1].a..(q[t].pop(0
+            q[t^1].a..(q[t].p.. 0
 
-        r.. q[t].pop()
+        r.. q[t].p.. )
 
     ___ top
         """
         :rtype:  int
         """
-        popped = pop()
+        popped = p.. )
         t = 0
         __ n.. q[t]:
             t ^= 1

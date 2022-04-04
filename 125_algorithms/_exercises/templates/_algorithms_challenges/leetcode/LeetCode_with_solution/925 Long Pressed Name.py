@@ -49,7 +49,7 @@ c_ Solution:
                 j += 1
             ____ j - 1 >= 0 a.. typed[j-1] __ typed[j]:
                 j += 1
-            ____:
+            ____
                 r.. F..
 
         # tail

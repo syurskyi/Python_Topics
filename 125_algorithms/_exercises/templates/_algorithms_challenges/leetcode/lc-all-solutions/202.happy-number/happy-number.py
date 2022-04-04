@@ -14,7 +14,7 @@ c_ Solution(o..
         sub_num /= 10
       __ sq_sum __ record:
         r.. F..
-      ____:
+      ____
         record[sq_sum] = 1
       n = sq_sum
     r.. T..

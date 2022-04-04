@@ -11,7 +11,7 @@ c_ BankAccount(o..
         w__ lock:
             __ is_open:
                 r.. balance
-            ____:
+            ____
                 r.. V...
 
     ___ open
@@ -21,14 +21,14 @@ c_ BankAccount(o..
         w__ lock:
             __ is_open a.. amount > 0:
                 balance += amount
-            ____:
+            ____
                 r.. V...
 
     ___ withdraw  amount
         w__ lock:
             __ is_open a.. 0 < amount <= balance:
                 balance -= amount
-            ____:
+            ____
                 r.. V...
 
     ___ close

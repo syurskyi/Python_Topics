@@ -21,21 +21,21 @@ ___ test_source
 
 
 ___ test_given_header
-    actual = get_email_details(EMAIL_HEADER)
-    expected = {'from': 'redacted-address',
+    a.. = get_email_details(EMAIL_HEADER)
+    e.. = {'from': 'redacted-address',
                 'to': 'redacted-address',
                 'subject': 'A Test From SendGrid',
                 'date': 'Wed, 19 Jun 2013 17:09:33'}
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_other_header
-    actual = get_email_details(OTHER_HEADER)
-    expected = {'from': 'Bob & Julian from PyBites (info@pybit.es)',
+    a.. = get_email_details(OTHER_HEADER)
+    e.. = {'from': 'Bob & Julian from PyBites (info@pybit.es)',
                 'to': 'pybites@ninja.com',
                 'subject': 'New regex learning path!',
                 'date': 'Sun, 18 Aug 2019 17:16:10'}
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_no_match

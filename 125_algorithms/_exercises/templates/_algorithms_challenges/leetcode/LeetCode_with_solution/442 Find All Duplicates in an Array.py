@@ -34,7 +34,7 @@ c_ Solution:
             w.... i != t:
                 __ A[i] __ A[t]:
                     _____
-                ____:
+                ____
                     A[i], A[t] = A[t], A[i]
                     t = idx(A[i])
 

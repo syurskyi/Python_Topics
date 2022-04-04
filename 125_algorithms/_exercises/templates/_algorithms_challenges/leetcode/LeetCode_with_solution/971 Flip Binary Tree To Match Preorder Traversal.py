@@ -76,6 +76,6 @@ c_ Solution:
             ret.a..(node.val)
             dfs(node.right, voyage)
             dfs(node.left, voyage)
-        ____:
+        ____
             dfs(node.left, voyage)
             dfs(node.right, voyage)

@@ -8,7 +8,7 @@ c_ Solution:
     ___ subsets_aux  nums
         __ n.. nums:
             r.. [[]]
-        ____:
+        ____
             res = [[]]
             ___ i, e __ e..(nums
                 __ i > 0 a.. nums[i] __ nums[i - 1]:

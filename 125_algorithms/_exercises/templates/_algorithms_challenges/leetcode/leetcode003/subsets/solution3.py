@@ -13,7 +13,7 @@ c_ Solution:
         ___ i, e __ e..(S
             cand.a..(S[i])
             subsets_aux(S[i + 1:], cand, res)
-            cand.pop()
+            cand.p.. )
 
 s = Solution()
 print(s.subsets([1, 2, 3]

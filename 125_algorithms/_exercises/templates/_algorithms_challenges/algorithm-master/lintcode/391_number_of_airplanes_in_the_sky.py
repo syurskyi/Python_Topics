@@ -25,7 +25,7 @@ c_ Solution:
         ___ _, in_sky __ timeline:
             __ in_sky:
                 cnt += 1
-            ____:
+            ____
                 cnt -= 1
             ans = m..(ans, cnt)
         r.. ans

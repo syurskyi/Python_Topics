@@ -50,7 +50,7 @@ c_ Solution:
                 __ a __ seen:
                     r.. T..
                 seen.add(a)
-            ____:
+            ____
                 r.. F..
 
         # Find a pair
@@ -61,7 +61,7 @@ c_ Solution:
                     pair = (A[i], B[i])
                 ____ pair __ (B[i], A[i]
                     pair = USED
-                ____:
+                ____
                     r.. F..
 
         __ pair __ N.. o. pair __ USED:

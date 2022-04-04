@@ -37,7 +37,7 @@ c_ Solution:
         mini = f__('Inf')
         ___ v __ nums:
             w.... stack a.. stack[-1][1] <= v:  # error when < (e.g. [-2, 1, 1])
-                stack.pop()
+                stack.p.. )
             __ stack a.. stack[-1][0] < v:
                 r.. T..
             mini = m..(mini, v)

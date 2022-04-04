@@ -8,5 +8,5 @@ ___ i __ r..(i..(input())):
     #once the reverse string is stored then i'm comparing it with the original string
     __ rev_str __ s__:
         print('Y',' ')
-    ____:
+    ____
         print('N',' ')

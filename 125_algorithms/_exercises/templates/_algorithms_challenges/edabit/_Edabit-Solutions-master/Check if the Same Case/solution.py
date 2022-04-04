@@ -1,7 +1,7 @@
 ___ same_case(txt
     __ txt.islower() o. txt.isupper() __ T..:
         r.. T..
-    ____:
+    ____
         r.. F..
 
 

@@ -36,8 +36,8 @@ empty = """
                'PE09-1,2020,17409' ),
     (empty, []),
 ])
-___ test_class_rosters(content, expected, tmp_path
+___ test_class_rosters(content, e.., tmp_path
     csvfile = tmp_path / "content"
     csvfile.write_text(content.l..
-    actual = class_rosters(csvfile)
-    ... actual __ expected
+    a.. = class_rosters(csvfile)
+    ... a.. __ e..

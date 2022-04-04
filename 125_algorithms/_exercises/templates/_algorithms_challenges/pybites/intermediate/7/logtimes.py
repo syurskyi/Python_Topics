@@ -44,7 +44,7 @@ ___ time_between_shutdowns(loglines
        calculate the timedelta between the first and last one.
        Return this datetime.timedelta object.
     """
-    shutdown_events = [line.strip("\n") ___ line __ loglines __ "Shutdown initiated" __ line]
+    shutdown_events = [line.s..("\n") ___ line __ loglines __ "Shutdown initiated" __ line]
     first_shutdown = convert_to_datetime(shutdown_events[0])
     last_shutdown = convert_to_datetime(shutdown_events[1])
     r.. last_shutdown - first_shutdown

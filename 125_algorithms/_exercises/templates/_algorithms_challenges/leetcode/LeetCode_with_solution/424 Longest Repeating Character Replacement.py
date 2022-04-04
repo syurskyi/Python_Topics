@@ -39,7 +39,7 @@ c_ Solution:
                 __ l - most > k:
                     counter[s[lo]] -= 1
                     lo += 1
-                ____:
+                ____
                     ret = m..(ret, l)
                     _____
 

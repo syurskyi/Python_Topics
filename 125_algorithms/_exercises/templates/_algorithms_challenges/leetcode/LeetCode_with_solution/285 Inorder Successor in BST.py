@@ -32,5 +32,5 @@ c_ Solution(o..
         __ cur.val > p.val:
             find[0] = cur
             s..(cur.left, p, find)
-        ____:
+        ____
             s..(cur.right, p, find)

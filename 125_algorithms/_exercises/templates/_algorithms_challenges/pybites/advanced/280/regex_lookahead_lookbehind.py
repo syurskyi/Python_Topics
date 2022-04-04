@@ -33,7 +33,7 @@ ___ count_n_reps_or_n_chars_following(text, n=1, char=""
     
     __ char:
         my_regex = r"(.)(?=\1{" + s..(n) + "}|" +  __.escape(char) + "{" + s..(n) + r"})"
-    ____:
+    ____
         my_regex = r"(.)(?=\1{" + s..(n) + r"})"
 
     counts = __.f..(my_regex,text,flags=__.DOTALL)

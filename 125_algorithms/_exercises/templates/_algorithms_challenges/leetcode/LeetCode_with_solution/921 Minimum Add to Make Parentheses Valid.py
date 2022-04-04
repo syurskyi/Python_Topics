@@ -48,10 +48,10 @@ c_ Solution:
         ___ s __ S:
             __ s __ "(":
                 stk.a..(s)
-            ____:
+            ____
                 __ stk:
-                    stk.pop()
-                ____:
+                    stk.p.. )
+                ____
                     ret += 1
 
         ret += l..(stk)

@@ -17,6 +17,6 @@ ___ create_paw_deck(n=8
     deck    # list
     ___ suit __ r..(n
         deck.extend _*{chr(LETTER_A_CODE + suit)}{x}' ___ x __ NUMBERS)
-    actions = l..((ACTIONS * ceil(n / 4[:n]) + ([N..] * 3 * n)
+    actions = l..((ACTIONS * c.. n / 4[:n]) + ([N..] * 3 * n)
     r__.shuffle(actions)
     r.. [PawCard(card, action) ___ card, action __ z..(deck, actions)]

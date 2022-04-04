@@ -27,7 +27,7 @@ c_ Solution(o..
             k = make_key(s)
             __ k n.. __ d:
                 d[k] = [s]
-            ____:
+            ____
                 d[k].a..(s)
         ___ k __ d:
             res.a..(s..(d[k]

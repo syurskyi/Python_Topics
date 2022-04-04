@@ -16,7 +16,7 @@ c_ NumArray(o..
     ___ - , nums
         __ n.. nums:
             root = N..
-        ____:
+        ____
             root = buildTree(nums, 0, l..(nums)-1)
     
     ___ buildTree  nums, i, j
@@ -40,7 +40,7 @@ c_ NumArray(o..
         mid = root.start+(root.end-root.start)//2
         __ i <= mid:
             updateHelper(root.leftChild, i, val)
-        ____:
+        ____
             updateHelper(root.rightChild, i, val)
         __ root.start __ i a.. root.end __ i:
             root.sumVal = val

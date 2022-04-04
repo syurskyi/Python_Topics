@@ -58,8 +58,8 @@ c_ Solution:
             __ char __ '<':
                 queue.a..(current)
             ____ char __ '>':
-                queue.pop()
-            ____:
+                queue.p.. )
+            ____
                 current = TrieNode()
                 queue[-1].children[char] = current
         r.. root

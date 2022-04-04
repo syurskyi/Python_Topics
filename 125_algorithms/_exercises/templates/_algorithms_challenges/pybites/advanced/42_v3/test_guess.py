@@ -66,12 +66,12 @@ ___ test_game_win(inp, capfd
     ... game._win __ T..
 
     out, _ = capfd.readouterr()
-    expected =  '4 is too low', 'Number not in range',
+    e.. =  '4 is too low', 'Number not in range',
                 '9 is too high', 'Already guessed',
                 '6 is correct!', 'It took you 3 guesses'
 
     output = [line.s.. ___ line __ out.s..('\n') __ line.s..]
-    ___ line, exp __ z..(output, expected
+    ___ line, exp __ z.. ? , e..
         ... line __ exp
 
 
@@ -84,11 +84,11 @@ ___ test_game_lose(inp, capfd
     ... game._win __ F..
 
     out, _ = capfd.readouterr()
-    expected =  'Please enter a number', '5 is too low',
+    e.. =  'Please enter a number', '5 is too low',
                 '9 is too low', '14 is too high',
                 '11 is too low', '12 is too low',
                 'Guessed 5 times, answer was 13'
 
     output = [line.s.. ___ line __ out.s..('\n') __ line.s..]
-    ___ line, exp __ z..(output, expected
+    ___ line, exp __ z.. ? , e..
         ... line __ exp

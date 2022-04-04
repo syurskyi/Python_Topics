@@ -44,7 +44,7 @@ c_ Solution(o..
                 r.. m
             ____ A[M[m]] < t:
                 lo = m + 1
-            ____:
+            ____
                 hi = m
 
         r.. lo
@@ -71,7 +71,7 @@ c_ Solution(o..
                 MIN[l] = i
 
                 RET[i] = MIN[l-1]  # (optional)
-            ____:
+            ____
                 j = bin_search(MIN, A, A[i], 1, l+1)
                 MIN[j] = i
 

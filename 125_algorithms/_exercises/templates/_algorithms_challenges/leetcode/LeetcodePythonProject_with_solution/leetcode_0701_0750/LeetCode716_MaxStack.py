@@ -26,7 +26,7 @@ c_ MaxStack(o..
         """
         :rtype: int
         """
-        val = stack.pop()
+        val = stack.p.. )
         heap.remove((-val
         heapq.heapify(heap)
         r.. val

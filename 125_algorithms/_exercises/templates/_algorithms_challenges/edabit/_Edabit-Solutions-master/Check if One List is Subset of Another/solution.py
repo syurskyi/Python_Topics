@@ -3,5 +3,5 @@ ___ subset(lst1, lst2
     Bset = s..(lst2)
     __ Aset.issubset(Bset
         r.. T..
-    ____:
+    ____
         r.. F..

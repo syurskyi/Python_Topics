@@ -73,7 +73,7 @@ c_ Solution:
             sign = e[1:-1]
             __ sign __ "==":
                 ds.union(a, b)
-            ____:
+            ____
                 neqs.a..((a, b
 
         ___ a, b __ neqs:

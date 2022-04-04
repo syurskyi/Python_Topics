@@ -15,7 +15,7 @@ ___ toAscii85(data
         encode_block = hex_str[index:index + 8] __ padding __ 0 ____ hex_str[index:] + '00' * padding
         __ encode_block __ '0' * 8 a.. padding __ 0:
             result += 'z'
-        ____:
+        ____
             encode_block_int = i..(encode_block, 16) / (85 ** padding)
             encode_block_result = ''
             ___ _ __ r..(5 - padding
@@ -38,7 +38,7 @@ ___ fromAscii85(data
         __ data[index] __ 'z':
             result += '\0' * 4
             index += 1
-        ____:
+        ____
             padding = m..(index + 5 - l..(data), 0)
             encoded_block = data[index:index + 5] __ padding __ 0 ____ data[index:] + 'u' * padding
             encoded_int = 0

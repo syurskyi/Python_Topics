@@ -66,7 +66,7 @@ c_ Solution:
             __ nbr __ color:
                 __ color[nbr] __ color[u]:
                     r.. F..
-            ____:
+            ____
                 color[nbr] = 1 - color[u]  # can be (0, 1) or (-1, 1)
                 __ n.. dfs(G, nbr, color
                     r.. F..
@@ -90,7 +90,7 @@ c_ SolutionError:
         visited[u] = T..
         __ is_A:
             A.add(u)
-        ____:
+        ____
             B.add(u)
 
         ___ nbr __ G[u]:

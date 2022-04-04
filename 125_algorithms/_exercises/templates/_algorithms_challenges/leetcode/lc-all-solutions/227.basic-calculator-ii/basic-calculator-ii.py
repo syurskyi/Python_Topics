@@ -15,21 +15,21 @@ c_ Solution(o..
       ____ s[i] __ "-+*/":
         queue.a..(s[i])
         i += 1
-      ____:
+      ____
         start = i
         w.... i < l..(s) a.. s[i] n.. __ "+-*/ ":
           i += 1
         num = i..(s[start:i])
         queue.a..(num)
         w.... l..(queue) > 2 a.. queue[-2] __ "*/":
-          b = queue.pop()
-          ops = queue.pop()
-          a = queue.pop()
+          b = queue.p.. )
+          ops = queue.p.. )
+          a = queue.p.. )
           __ ops __ "*":
             queue.a..(a * b)
           ____ ops __ "/":
             queue.a..(i..(f__(a) / b
-          ____:
+          ____
             r.. "invalid"
     __ queue:
       a = queue.popleft()

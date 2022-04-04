@@ -7,8 +7,8 @@ page2 = ("https://bites-data.s3.us-east-2.amazonaws.com/"
 
 
 ___ test_homepage
-    actual = get_top_titles(homepage)
-    expected = [
+    a.. = get_top_titles(homepage)
+    e.. = [
         Entry(title='How do you set up your Python development environment?',
               points=15, comments=8),
         Entry(title='Python alternative to Docker (www.mattlayman.com)',
@@ -20,16 +20,16 @@ ___ test_homepage
         Entry(title='Python 3.8 is out (www.python.org)',
               points=9, comments=0),
     ]
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_page2
-    actual = get_top_titles(page2, top=2)
-    expected = [
+    a.. = get_top_titles(page2, top=2)
+    e.. = [
         Entry(title='Django REST Framework - Typed Views (github.com)',
               points=4, comments=0),
         Entry(title=('Show 🐍: A news aggregator for the Python community '
                      'written in Python/Django (github.com)'),
               points=3, comments=1),
     ]
-    ... actual __ expected
+    ... a.. __ e..

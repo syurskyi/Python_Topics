@@ -12,5 +12,5 @@ c_ Solution(o..
         end -= 1
       ____ s < target:
         start += 1
-      ____:
+      ____
         r.. (start + 1, end + 1)

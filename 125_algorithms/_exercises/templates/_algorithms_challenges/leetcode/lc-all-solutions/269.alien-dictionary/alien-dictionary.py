@@ -47,12 +47,12 @@ c_ Solution(o..
           __ a[i] n.. __ graph:
             nodeA = Node(a[i])
             graph[a[i]] = nodeA
-          ____:
+          ____
             nodeA = graph[a[i]]
           __ b[i] n.. __ graph:
             nodeB = Node(b[i])
             graph[b[i]] = nodeB
-          ____:
+          ____
             nodeB = graph[b[i]]
           nodeA.connect(nodeB)
           _____

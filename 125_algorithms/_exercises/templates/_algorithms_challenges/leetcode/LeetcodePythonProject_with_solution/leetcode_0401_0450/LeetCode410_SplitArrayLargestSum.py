@@ -14,7 +14,7 @@ c_ Solution(o..
             mid = (left+right)//2
             __ doable(nums, m-1, mid
                 right = mid
-            ____:
+            ____
                 left = mid+1
         r.. left
     
@@ -25,7 +25,7 @@ c_ Solution(o..
                 r.. F..
             ____ acc+num <= maxVal:
                 acc += num
-            ____:
+            ____
                 cuts -= 1
                 acc = num
                 __ cuts < 0:

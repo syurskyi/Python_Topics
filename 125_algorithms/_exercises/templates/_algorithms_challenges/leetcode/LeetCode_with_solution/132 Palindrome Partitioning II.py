@@ -35,7 +35,7 @@ c_ Solution(o..
         ___ i __ x..(n+1
             __ P[0][i]:
                 C[i] = 0
-            ____:
+            ____
                 C[i] = m..(
                     C[j] + 1
                     ___ j __ x..(i)
@@ -101,7 +101,7 @@ c_ Solution(o..
         ___ i __ x..(length-1, -1, -1
             __ P[i][length]:
                 D[i] = 0
-            ____:
+            ____
                 ___ j __ x..(i+1, length
                     __ P[i][j]:
                         D[i] = m..(D[i], D[j]+1)
@@ -172,7 +172,7 @@ c_ Solution(o..
             ___ k __ x..(i, length+1
                 __ is_palindrome(s[i:k]
                     dp[i][k] = 0
-                ____:
+                ____
                     dp[i][k] = m..(1+dp[i][j]+dp[j][k] ___ j __ x..(i+1, k
 
         r.. dp[0][length]
@@ -240,7 +240,7 @@ c_ Solution(o..
             ___ k __ x..(i, length+1
                 __ dp2[i][k]:
                     dp[i][k] = 0
-                ____:
+                ____
                     dp[i][k] = m..(1+dp[i][j]+dp[j][k] ___ j __ x..(i+1, k
 
         r.. dp[0][length]

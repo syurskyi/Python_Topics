@@ -18,7 +18,7 @@ c_ Solution(o..
           ret = dfs(i, n)
           __ ret:
             r.. ret
-      ____:
+      ____
         ___ i __ r..(0, 10
           __ cur * 10 + i > n:
             _____
@@ -48,7 +48,7 @@ c_ Solution(o..
       __ gap <= k:
         ans += 1
         k -= gap
-      ____:
+      ____
         ans *= 10
         k -= 1
     r.. ans

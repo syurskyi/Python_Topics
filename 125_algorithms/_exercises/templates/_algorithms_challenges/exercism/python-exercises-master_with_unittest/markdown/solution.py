@@ -33,7 +33,7 @@ ___ check_bold(line
     __ bold_match:
         r.. bold_match.group(1) + wrap(bold_match.group(2), 'strong')\
             + bold_match.group(3)
-    ____:
+    ____
         r.. N..
 
 
@@ -43,7 +43,7 @@ ___ check_italic(line
     __ italic_match:
         r.. italic_match.group(1) + wrap(italic_match.group(2), 'em')\
             + italic_match.group(3)
-    ____:
+    ____
         r.. N..
 
 
@@ -56,9 +56,9 @@ ___ parse_line(line, in_list
         __ n.. in_list:
             res = '<ul>' + wrap(list_match.group(1), 'li')
             in_list = T..
-        ____:
+        ____
             res = wrap(list_match.group(1), 'li')
-    ____:
+    ____
         __ in_list:
             res += '</ul>'
             in_list = F..

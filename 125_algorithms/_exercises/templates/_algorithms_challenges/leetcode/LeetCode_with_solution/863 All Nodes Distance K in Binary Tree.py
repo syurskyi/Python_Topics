@@ -61,7 +61,7 @@ c_ Solution:
             r..
         __ d __ 0:
             ret.a..(node.val)
-        ____:
+        ____
             dfs_down(node.left, d - 1, ret)
             dfs_down(node.right, d - 1, ret)
 
@@ -73,7 +73,7 @@ c_ Solution:
             # d = 0
             dfs_down(node, K, ret)
             r.. 0
-        ____:
+        ____
             l = ancestor_dist(node.left, K, target, ret)
             r = ancestor_dist(node.right, K, target, ret)
             d = m..(l, r) + 1
@@ -81,7 +81,7 @@ c_ Solution:
                 ret.a..(node.val)
             ____ l __ f__('inf'
                 dfs_down(node.left, K - d - 1, ret)
-            ____:  # r == float('inf')
+            ____  # r == float('inf')
                 dfs_down(node.right, K - d - 1, ret)
             r.. d
 
@@ -107,7 +107,7 @@ c_ SolutionComplicated:
 
         __ K __ 0:
             ret.a..(node.val)
-        ____:
+        ____
             dfs1(node.left, K-1, ret)
             dfs1(node.right, K-1, ret)
 
@@ -117,7 +117,7 @@ c_ SolutionComplicated:
 
         __ node.val __ target.val:
             hm[node.val] = 0
-        ____:
+        ____
             left = ancestor_dist(node.left, target, hm)
             right = ancestor_dist(node.right, target, hm)
             hm[node.val] = m..(left, right) + 1

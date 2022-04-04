@@ -73,19 +73,19 @@ c_ AllOne(o..
       __ head.next.val __ 1:
         d[key] = head.next
         d[key].add(key)
-      ____:
+      ____
         newNode = Node(1)
         newNode.add(key)
         L...insertAfter(head, newNode)
         d[key] = newNode
-    ____:
+    ____
       node = d[key]
       newNode = N..
       __ node.next.val != node.val + 1:
         newNode = Node(node.val + 1)
         newNode.add(key)
         L...insertAfter(node, newNode)
-      ____:
+      ____
         newNode = node.next
         newNode.add(key)
 
@@ -110,13 +110,13 @@ c_ AllOne(o..
       __ node.isEmpty
         L...delete(node)
       del d[key]
-    ____:
+    ____
       newNode = N..
       __ node.prev.val != node.val - 1:
         newNode = Node(node.val - 1)
         newNode.add(key)
         L...insertAfter(node.prev, newNode)
-      ____:
+      ____
         newNode = node.prev
         newNode.add(key)
       node.remove(key)

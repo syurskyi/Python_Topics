@@ -10,7 +10,7 @@ c_ Solution(o..
       __ nums[i] < pre:
         __ nums[i + 1] >= nums[i - 1]:
           nums[i] = nums[i + 1]
-        ____:
+        ____
           nums[i - 1] = nums[i]
         flag = T..
         _____

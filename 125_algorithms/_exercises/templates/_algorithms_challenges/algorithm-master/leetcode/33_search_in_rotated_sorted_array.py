@@ -21,12 +21,12 @@ c_ Solution:
             __ nums[mid] < nums[0]:
                 __ nums[mid] < target <= nums[right]:
                     left = mid
-                ____:
+                ____
                     right = mid
-            ____:
+            ____
                 __ nums[left] <= target < nums[mid]:
                     right = mid
-                ____:
+                ____
                     left = mid
 
         ___ mid __ (left, right

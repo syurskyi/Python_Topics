@@ -47,14 +47,14 @@ c_ Account:
     ___ __add__ other
         __ isi..(other,i..
             _transactions.a..(other)
-        ____:
+        ____
             r.. T..("can only subtract integer")
     
 
     ___ __sub__ other
         __ isi..(other,i..
             _transactions.a..(-other)
-        ____:
+        ____
             r.. T..("can only subtract integer")
 
     

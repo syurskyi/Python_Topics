@@ -46,10 +46,10 @@ c_ NestedIterator(o..
             lst, i = stack[-1]
 
             __ i >= l..(lst
-                stack.pop()
+                stack.p.. )
             ____ lst[i].isInteger
                 r.. T..
-            ____:
+            ____
                 # lst[i] is list
                 stack[-1][1] += 1
                 stack.a..([lst[i].getList(), 0])

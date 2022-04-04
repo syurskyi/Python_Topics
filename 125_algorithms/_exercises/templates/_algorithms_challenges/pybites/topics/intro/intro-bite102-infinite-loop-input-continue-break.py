@@ -15,7 +15,7 @@ ___ my_print_colors
             print("Not a valid color")
             _____
     # this else is useless
-        ____:
+        ____
             print(inp)
 
     # thou shall not stop after a match!!!

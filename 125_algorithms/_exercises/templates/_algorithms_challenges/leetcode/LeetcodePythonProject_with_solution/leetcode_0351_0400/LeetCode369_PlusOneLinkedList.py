@@ -22,7 +22,7 @@ c_ Solution(o..
             __ val >= 10:
                 val -= 10
                 carry = 1
-            ____:
+            ____
                 carry = 0
             node.val = val
             tail = node

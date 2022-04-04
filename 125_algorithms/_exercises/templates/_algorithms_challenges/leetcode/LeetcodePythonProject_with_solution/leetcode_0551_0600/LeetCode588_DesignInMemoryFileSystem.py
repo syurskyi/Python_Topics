@@ -26,7 +26,7 @@ c_ FileSystem(o..
         node.childFolders.s..()
         __ node.isFile:
             r.. [node.folder]
-        ____:
+        ____
             r.. node.childFolders
     
     ___ mkdir  p..
@@ -36,7 +36,7 @@ c_ FileSystem(o..
         ___ folder __ arr:
             __ folder __ node.children:
                 node = node.children[folder]
-            ____:
+            ____
                 newNode = TreeNode(folder)
                 node.children[folder] = newNode
                 node.childFolders.a..(folder)
@@ -51,14 +51,14 @@ c_ FileSystem(o..
         ___ folder __ arr:
             __ folder __ node.children:
                 node = node.children[folder]
-            ____:
+            ____
                 newNode = TreeNode(folder)
                 node.children[folder] = newNode
                 node.childFolders.a..(folder)
                 node = newNode
         __ file __ node.children:
             node.children[file].content += content
-        ____:
+        ____
             newNode = TreeNode(file)
             node.children[file] = newNode
             node.childFolders.a..(file)

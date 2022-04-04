@@ -18,7 +18,7 @@ c_ Solution(o..
             ___ j __ r..(n+1
                 __ i __ 0 o. j __ 0:
                     dp[i][j] = 0
-                ____:
+                ____
                     __ nums1[i-1] __ nums2[j-1]:
                         dp[i][j] = dp[i-1][j-1]+1
                         maxLen = m..(maxLen, dp[i][j])

@@ -75,7 +75,7 @@ c_ Solution:
             ___ j __ x..(1, n+1
                 __ word1[i-1]__word2[j-1]:
                     d[i][j] = d[i-1][j-1]
-                ____:
+                ____
                     d[i][j]= m..(
                         d[i-1][j]+1,  # deletion
                         d[i][j-1]+1,  # insertion

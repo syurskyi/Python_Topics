@@ -15,7 +15,7 @@ c_ SummaryRanges(o..
     ___ addNum  val
         __ n.. intervals:
             intervals.a..(Interval(val, val
-        ____:
+        ____
             result    # list
             newInterval = Interval(val, val)
             ___ interval __ intervals:
@@ -25,7 +25,7 @@ c_ SummaryRanges(o..
                 ____ newInterval.start <= interval.end+1:
                     newInterval = Interval(m..(interval.start, newInterval.start),\
                         m..(interval.end, newInterval.end
-                ____:
+                ____
                     result.a..(interval)
             result.a..(newInterval)
             intervals = result

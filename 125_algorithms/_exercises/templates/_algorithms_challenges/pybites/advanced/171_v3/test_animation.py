@@ -11,8 +11,8 @@ ____ Previous.animation _______ spinner, SPINNER_STATES __ states
 ])
 ___ test_spinner(monkeypatch, capfd, seconds, rounds, slice_
     spinner(seconds)
-    actual = ?.r .. 0].s...s..('\r')
-    expected = states * rounds
+    a.. = ?.r .. 0].s...s..('\r')
+    e.. = states * rounds
     __ slice_:
-        expected += states[:slice_]
-    ... actual __ expected
+        e.. += states[:slice_]
+    ... a.. __ e..

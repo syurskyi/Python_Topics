@@ -62,5 +62,5 @@ artagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/artagnon:/bin/bash
            'avahi': 'Avahi mDNS daemon', 'postfix': 'unknown',
            'ssh-rsa': 'unknown', 'artagnon': 'Ramkumar R Git GSOC'}),
 ])
-___ test_users(input_, expected
-    ... get_users(input_) __ expected
+___ test_users(input_, e..
+    ... get_users(input_) __ e..

@@ -16,6 +16,6 @@ c_ Solution(o..
                 __ haystack[i+j] __ needle[j]:
                     __ j __ l..(needle)-1:
                         r.. i
-                ____:
+                ____
                     _____
         r.. -1

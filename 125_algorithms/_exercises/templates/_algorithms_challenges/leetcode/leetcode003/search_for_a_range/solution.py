@@ -20,7 +20,7 @@ c_ Solution:
         __ n __ 1:
             __ A[0] __ target:
                 r.. [0, 0]
-            ____:
+            ____
                 r.. [-1, -1]
         left = 0
         right = n - 1
@@ -37,7 +37,7 @@ c_ Solution:
                 _____
             ____ target <= A[mid]:
                 right = mid - 1
-            ____:
+            ____
                 left = mid + 1
         # Find upper bound
         left = 0
@@ -52,6 +52,6 @@ c_ Solution:
                 _____
             ____ target < A[mid]:
                 right = mid - 1
-            ____:
+            ____
                 left = mid + 1
         r.. [lower, upper]

@@ -17,7 +17,7 @@ c_ Solution(o..
             diff = abs(target - s..)
             ans = s..
           end -= 1
-        ____:
+        ____
           __ abs(target - s..) < diff:
             diff = abs(target - s..)
             ans = s..

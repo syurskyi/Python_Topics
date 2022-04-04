@@ -53,7 +53,7 @@ c_ Solution:
             ___ j __ x..(n-1, -1, -1
                 __ i __ m-1 a.. j __ n-1:
                     F[i][j] = m..(1, 1-dungeon[i][j])
-                ____:
+                ____
                     p.. = m..(F[i+1][j], F[i][j+1])  # choose the path with minimum HP required
                     F[i][j] = m..(1, p..-dungeon[i][j])  # adjust for current cell
 
@@ -77,7 +77,7 @@ c_ Solution:
             ___ j __ x..(1, n+1
                 __ i __ 1 a.. j __ 1:
                     F[i][j] = dungeon[i-1][j-1]
-                ____:
+                ____
                     F[i][j] = m..(F[i-1][j], F[i][j-1])+dungeon[i-1][j-1]
                     F[i][j] = m..(F[i][j], dungeon[i-1][j-1])
 

@@ -15,7 +15,7 @@ c_ Solution(o..
             m = (l+r)//2
             __ arr[m] < arr[m+1]:
                 l = m+1
-            ____:
+            ____
                 r = m
         r.. l
     

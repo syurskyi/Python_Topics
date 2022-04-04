@@ -20,7 +20,7 @@ c_ ReactTest(unittest.TestCase
     ___ test_compute_cells_calculate_initial_value
         input_ = InputCell(1)
         output = ComputeCell([input_], l.... inputs: inputs[0] + 1)
-        assertEqual(output.value, 2)
+        assertEqual ? .value, 2)
 
     ___ test_compute_cells_take_inputs_in_right_order
         one = InputCell(1)
@@ -29,14 +29,14 @@ c_ ReactTest(unittest.TestCase
             [one, two],
             l.... inputs: inputs[0] + inputs[1]*10
         )
-        assertEqual(output.value, 21)
+        assertEqual ? .value, 21)
 
     ___ test_compute_cells_update_value_when_dependencies_are_changed
         input_ = InputCell(1)
         output = ComputeCell([input_], l.... inputs: inputs[0] + 1)
 
         input_.value = 3
-        assertEqual(output.value, 4)
+        assertEqual ? .value, 4)
 
     ___ test_compute_cells_can_depend_on_other_compute_cells
         input_ = InputCell(1)
@@ -47,9 +47,9 @@ c_ ReactTest(unittest.TestCase
             l.... inputs: inputs[0] + inputs[1]
         )
 
-        assertEqual(output.value, 32)
+        assertEqual ? .value, 32)
         input_.value = 3
-        assertEqual(output.value, 96)
+        assertEqual ? .value, 96)
 
     ___ test_compute_cells_fire_callbacks
         input_ = InputCell(1)

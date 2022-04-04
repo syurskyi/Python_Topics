@@ -9,7 +9,7 @@ c_ Solution:
         maxi = 2**31 -1
         __ ans n.. __ r..(mini,maxi
             r.. 0
-        ____:
+        ____
             r.. ans
         
         

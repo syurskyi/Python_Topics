@@ -37,7 +37,7 @@ c_ Solution(o..
             stack.a..(node)
             node = node.left
         w.... stack:
-            node = stack.pop()
+            node = stack.p.. )
             arr.a..(node.val)
             node0 = node.right
             w.... node0:
@@ -49,7 +49,7 @@ c_ Solution(o..
                 r.. T..
             ____ k > arr[i]+arr[j]:
                 i += 1
-            ____:
+            ____
                 j -= 1
         r.. F..
     

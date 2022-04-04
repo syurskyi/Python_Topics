@@ -141,7 +141,7 @@ c_ Solution:
             l += 1
             node = node.next
 
-        part_l = m__.ceil(l / k)
+        part_l = m__.c.. l / k)
         ret = [[] ___ _ __ r..(k)]
 
         node = root

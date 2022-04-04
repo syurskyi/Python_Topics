@@ -72,7 +72,7 @@ c_ RestAPI(o..
 
         __ n.. lender_owes_borrower(lender, borrower
             execute_borrow(lender, borrower, amount)
-        ____:
+        ____
             # if lender owes borrower, pay off debt first then execute a borrow
             # if necessary.
             remaining_amount_to_borrow = pay_debt(lender, borrower,
@@ -100,7 +100,7 @@ c_ RestAPI(o..
             lender 'owes' [borrower 'name']] -= amount
             borrower 'owed_by' [lender 'name']] -= amount
             r.. 0
-        ____:
+        ____
             # debt can be fully paid off and remaining amount will be borrowed.
             del lender 'owes' [borrower 'name']]
             del borrower 'owed_by' [lender 'name']]

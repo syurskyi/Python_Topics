@@ -16,7 +16,7 @@ c_ Solution:
         S = s..(A)
 
         ___ i __ r..(1, n, 2
-            A[i] = S.pop()
+            A[i] = S.p.. )
 
         ___ i __ r..(0, n, 2
-            A[i] = S.pop()
+            A[i] = S.p.. )

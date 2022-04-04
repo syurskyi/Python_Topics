@@ -17,7 +17,7 @@ ___ convert(number: i.., base: i.. = 2) __ s..:
             dig = i..(number%base)
             __ dig<10:
                 base_num += s..(dig)
-            ____:
+            ____
                 base_num += chr(o..('A')+dig-10)  #Using uppercase letters
             number //= base
 
@@ -25,7 +25,7 @@ ___ convert(number: i.., base: i.. = 2) __ s..:
         r.. base_num
     ____ n.. (isi..(number, i..:
         r.. T..
-    ____:
+    ____
         r.. V...
 
 #print(convert(128, 5))

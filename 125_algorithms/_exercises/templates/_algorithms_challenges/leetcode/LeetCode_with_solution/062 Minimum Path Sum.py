@@ -32,7 +32,7 @@ c_ Solution:
                     dp[i][j] = dp[i][j-1]+grid[i][j]
                 ____ j__0:
                     dp[i][j] = dp[i-1][j]+grid[i][j]
-                ____:
+                ____
                     dp[i][j] = m..(dp[i-1][j], dp[i][j-1])+grid[i][j]  # PoP - Principle of Optimality
 
         r.. dp[row_cnt-1][col_cnt-1]

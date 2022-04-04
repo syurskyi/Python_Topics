@@ -16,7 +16,7 @@ c_ Solution(o..
       flag = F..
       stack = [(1, root)]
       w.... stack:
-        p = stack.pop()
+        p = stack.p.. )
         __ n.. p[1]:
           _____
         __ p[0] __ 0:
@@ -24,7 +24,7 @@ c_ Solution(o..
             r.. p[1]
           __ p[1] __ q:
             flag = T..
-        ____:
+        ____
           stack.extend([(1, p[1].right), (0, p[1]), (1, p[1].left)])
 
       r.. N..

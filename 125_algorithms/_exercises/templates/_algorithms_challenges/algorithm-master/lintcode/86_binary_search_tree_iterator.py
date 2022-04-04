@@ -38,7 +38,7 @@ c_ BSTIterator:
             stack.a..(node)
             node = node.left
 
-        node = stack.pop()
+        node = stack.p.. )
 
         nxt = node
 

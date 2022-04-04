@@ -25,7 +25,7 @@ c_ Solution(o..
     ___ num __ nums:
       root = TreeNode(num)
       w.... stack a.. stack[-1].val < num:
-        root.left = stack.pop()
+        root.left = stack.p.. )
       __ stack:
         stack[-1].right = root
       stack.a..(root)

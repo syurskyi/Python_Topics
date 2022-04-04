@@ -40,7 +40,7 @@ c_ Solution(o..
             r.. []
         ____ inp.i..
             r.. [i..(inp)]
-        ____:
+        ____
             res    # list
             ___ i, c __ e..(inp
                 __ c __ operators:

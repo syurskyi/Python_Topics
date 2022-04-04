@@ -5,7 +5,7 @@ ___ i __ r..(a
     w.... num1 !=  num2:   
         __ num1 >  num2:
             num1 = num1 - num2
-        ____:
+        ____
             num2 = num2 - num1  
     lcm = temp1 * temp2 / num1
     s__ += '('+s..(num1)+' '+s..(i..(lcm+')'

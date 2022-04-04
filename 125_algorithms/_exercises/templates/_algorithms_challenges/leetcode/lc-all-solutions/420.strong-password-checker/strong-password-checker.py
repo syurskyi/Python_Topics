@@ -27,14 +27,14 @@ c_ Solution(o..
           one += 1
         __ length % 3 __ 1:
           two += 1
-      ____:
+      ____
         p += 1
 
     __ l..(s) < 6:
       r.. m..(complexBal, 6 - l..(s
     ____ l..(s) <= 20:
       r.. m..(complexBal, r..)
-    ____:
+    ____
       redundant = l..(s) - 20
       r.. -= m..(redundant, one)
       r.. -= m..(m..(redundant - one, 0), two * 2) / 2

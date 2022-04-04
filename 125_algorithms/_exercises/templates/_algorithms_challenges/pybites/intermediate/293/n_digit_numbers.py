@@ -17,7 +17,7 @@ ___ n_digit_numbers(numbers: L..[T], n: i..) __ L..[i..]:
         __ l..(s..(numbers[i] > n:
             __ numbers[i] > 0:
                 numbers[i] = i..(s..(numbers[i])[:n])
-            ____:
+            ____
                 numbers[i] = i..(s..(numbers[i])[:n +1])
 
     r.. numbers

@@ -10,6 +10,6 @@ c_ Solution(o..
       __ ak > num:
         r.. T..
       w.... stack a.. stack[-1] < num:
-        ak = stack.pop()
+        ak = stack.p.. )
       stack += num,
     r.. F..

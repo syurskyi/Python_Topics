@@ -35,10 +35,10 @@ ___ test_book_class(dummy_book
 
 
 ___ test_book_class_str(dummy_book
-    actual = s..(dummy_book)
-    expected = ("[001] Python Testing with pytest (2017)"
+    a.. = s..(dummy_book)
+    e.. = ("[001] Python Testing with pytest (2017)"
                 "\n      Okken, Brian 5.0")
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_load_data(python_books
@@ -73,16 +73,16 @@ ___ test_load_data(python_books
         (19, "      James, Thomas 4.65"),
     ],
 )
-___ test_display_books(python_books, index, expected, capfd
+___ test_display_books(python_books, index, e.., capfd
     display_books(python_books, year=2017)
     output = ?.r .. 0].s..
-    ... output[index] __ expected
+    ... output[index] __ e..
 
 
 ?p__.m__.p.(
     "limit, expected", [(40, 72), (53, 72), (69, 72), (100, 72), (1000, 72)]
 )
-___ test_display_books_plus(python_books, limit, expected, capfd
+___ test_display_books_plus(python_books, limit, e.., capfd
     display_books(python_books, limit=limit)
     output = ?.r .. 0].s..
-    ... l..(output) __ expected
+    ... l.. ?  __ e..

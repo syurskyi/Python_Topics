@@ -41,12 +41,12 @@ c_ Solution(o..
         ___ token __ tokens:
             __ token n.. __ ops:
                 stack.a..(i..(token
-            ____:
-                arg2 = stack.pop()
-                arg1 = stack.pop()
+            ____
+                arg2 = stack.p.. )
+                arg1 = stack.p.. )
                 result = arith(arg1, arg2, token)
                 stack.a..(result)
-        r.. stack.pop()
+        r.. stack.p.. )
 
 
 __ _______ __ _______

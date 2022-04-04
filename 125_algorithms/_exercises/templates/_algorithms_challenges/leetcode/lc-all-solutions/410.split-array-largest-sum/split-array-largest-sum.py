@@ -24,7 +24,7 @@ c_ Solution(o..
       mid = start + (end - start) / 2
       __ valid(nums, mid, m
         end = mid - 1
-      ____:
+      ____
         start = mid + 1
 
     r.. start

@@ -44,7 +44,7 @@ c_ Solution:
             ____ A[mid] < A[right]:
                 # mid at the right side of pivot
                 right = mid
-            ____:
+            ____
                 # mid at the left side of pivot
                 left = mid
 

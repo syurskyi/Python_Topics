@@ -31,14 +31,14 @@ c_ Solution(o..
         """
         __ n.. s:
             res.a..(' '.j..(cand
-        ____:
+        ____
             ___ i, c __ e..(s
                 word = s[:i + 1]
                 rest = s[i + 1:]
                 __ word __ wordDict:
                     cand.a..(word)
                     word_break_aux(rest, wordDict, cand, res)
-                    cand.pop()
+                    cand.p.. )
 
 
 s1 = "catsanddog"

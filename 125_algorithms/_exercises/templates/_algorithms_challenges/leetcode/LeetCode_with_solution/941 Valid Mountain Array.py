@@ -47,7 +47,7 @@ c_ Solution:
                 __ incr __ 2:
                     r.. F..
                 incr = 1
-            ____:
+            ____
                 __ incr __ 0:
                     r.. F..
                 incr = 2

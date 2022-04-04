@@ -33,14 +33,14 @@ c_ Solution(o..
                 dp0[i] = nums[0]
             ____ i __ 1:
                 dp0[i] = m..(nums[i], nums[i-1])
-            ____:
+            ____
                 dp0[i] = m..(dp0[i-1], dp0[i-2] + nums[i])
         ___ i __ r..(1, l..(nums:
             __ i __ 1:
                 dp1[i] = nums[i]
             ____ i __ 2:
                 dp1[i] = m..(nums[i], nums[i-1])
-            ____:
+            ____
                 dp1[i] = m..(dp1[i-1], dp1[i-2] + nums[i])
         r.. m..(dp0[-2], dp1[-1])
     

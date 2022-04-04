@@ -20,10 +20,10 @@ c_ Solution(o..
       height = h[1]
       __ height < 0:
         heapq.heappush(heap, height)
-      ____:
+      ____
         i = heap.i.. -height)
         heap[i] = heap[-1]
-        heap.pop()
+        heap.p.. )
         __ i < l..(heap
           heapq._siftup(heap, i)
           heapq._siftdown(heap, 0, i)
@@ -32,7 +32,7 @@ c_ Solution(o..
         __ cur != pre:
           ans.a..((pos, -1 * cur
           pre = cur
-      ____:
+      ____
         ans.a..((pos, 0
 
     r.. ans

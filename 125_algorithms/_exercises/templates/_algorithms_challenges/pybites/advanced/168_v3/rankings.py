@@ -66,7 +66,7 @@ c_ Rankings:
         ninja_list.s..()
 
     ___ dump
-        r.. ninja_list.pop(0)
+        r.. ninja_list.p.. 0)
 
     ___ highest  count: i.. = 1
         result = ninja_list[-count:]

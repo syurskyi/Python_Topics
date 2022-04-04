@@ -20,7 +20,7 @@ c_ Solution(o..
             end = nums[i]
             __ end __ start:
                 result.a..('%s' % (start
-            ____:
+            ____
                 result.a..('%s->%s' % (start, end
             i += 1
         r.. result

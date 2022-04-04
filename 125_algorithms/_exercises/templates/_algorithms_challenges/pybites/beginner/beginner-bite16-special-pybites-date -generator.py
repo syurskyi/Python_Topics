@@ -60,7 +60,7 @@ ___ gen_special_pybites_dates_2
         __ next365 < next100:
             nextevent = next365
             next365 += plus365
-        ____:
+        ____
             nextevent = next100
             next100 += plus100
         y.. nextevent

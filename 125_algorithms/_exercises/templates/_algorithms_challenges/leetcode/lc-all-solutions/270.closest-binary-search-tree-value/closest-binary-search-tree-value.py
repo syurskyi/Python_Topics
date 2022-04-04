@@ -18,6 +18,6 @@ c_ Solution(o..
         ans = p.val
       __ target < p.val:
         p = p.left
-      ____:
+      ____
         p = p.right
     r.. ans

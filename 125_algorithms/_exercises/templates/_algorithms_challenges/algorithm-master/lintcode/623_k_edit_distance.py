@@ -61,7 +61,7 @@ c_ Solution:
                         pre[i] + 1,
                         pre[i - 1]
                     )
-                ____:
+                ____
                     dp[i] = m..(
                         dp[i - 1] + 1,
                         pre[i] + 1,

@@ -5,12 +5,12 @@ ___ test_zoo_5_animals
     ___ animal __ 'dog cat fish lion mouse'.s.. :
         Animal(animal)
     zoo = Animal.zoo()
-    expected = ("10001. Dog",
+    e.. = ("10001. Dog",
                 "10002. Cat",
                 "10003. Fish",
                 "10004. Lion",
                 "10005. Mouse")
-    ... zoo __ '\n'.j..(expected)
+    ... zoo __ '\n'.j..(e..)
 
 """
 def test_animal_instance_str():

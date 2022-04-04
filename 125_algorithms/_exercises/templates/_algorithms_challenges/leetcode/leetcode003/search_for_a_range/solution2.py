@@ -28,13 +28,13 @@ c_ Solution(o..
             mid = left + (right - left) / 2
             __ target > nums[mid]:
                 left = mid
-            ____:
+            ____
                 right = mid
         __ nums[left] __ target:
             left_res = left
         ____ nums[right] __ target:
             left_res = right
-        ____:
+        ____
             r.. [-1, -1]
 
         # Search for right bound (last occurence of target)
@@ -44,7 +44,7 @@ c_ Solution(o..
             mid = left + (right - left) / 2
             __ target >= nums[mid]:
                 left = mid
-            ____:
+            ____
                 right = mid
         __ nums[right] __ target:
             right_res = right

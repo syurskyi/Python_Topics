@@ -28,5 +28,5 @@ c_ Solution(o..
             p -= 1
         __ right >= 0:
             r.. right + 1
-        ____:
+        ____
             r.. 0

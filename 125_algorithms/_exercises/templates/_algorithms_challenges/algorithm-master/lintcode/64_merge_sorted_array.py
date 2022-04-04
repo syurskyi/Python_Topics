@@ -14,7 +14,7 @@ c_ Solution:
             __ a[i] > b[j]:
                 a[k] = a[i]
                 i -= 1
-            ____:
+            ____
                 a[k] = b[j]
                 j -= 1
             k -= 1

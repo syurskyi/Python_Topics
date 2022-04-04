@@ -39,7 +39,7 @@ ___ pretty_date(date
 
             __ '{}' __ time_string:
                 r.. time_string.f..(delta)
-            ____:
+            ____
                 r.. time_string
 
         

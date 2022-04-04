@@ -26,7 +26,7 @@ c_ Solution(o..
             n = n-l..(leaves)
             newLeaves    # list
             ___ leaf __ leaves:
-                neighbor = graph[leaf].pop()
+                neighbor = graph[leaf].p.. )
                 graph[neighbor].remove(leaf)
                 __ l..(graph[neighbor]) __ 1:
                     newLeaves.a..(neighbor)

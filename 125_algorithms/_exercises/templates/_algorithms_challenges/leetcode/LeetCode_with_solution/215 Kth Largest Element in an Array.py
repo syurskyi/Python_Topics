@@ -27,7 +27,7 @@ c_ Solution:
         ___ i, v __ e..(nums
             __ i < k:
                 heapq.heappush(h, v)
-            ____:
+            ____
                 __ v <= h[0]:
                     _____
                 heapq.heappop(h)

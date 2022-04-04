@@ -2,7 +2,7 @@ _______ numpy __ np
 f = o.. 'input.txt')
 res    # list
 
-T = i..(f.readline().strip
+T = i..(f.readline().s..
 
 boards    # list
 ___ i __ r..(0,T

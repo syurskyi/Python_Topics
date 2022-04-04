@@ -25,7 +25,7 @@ c_ Solution(o..
             end+=1
         __ minLen > l..(nums
             r.. 0
-        ____:
+        ____
             r.. minLen
     
     ___ minSubArrayLenBS  s, nums
@@ -45,7 +45,7 @@ c_ Solution(o..
             mid = i..((low+high)/2)
             __ sums[mid] >= key:
                 high = mid-1
-            ____:
+            ____
                 low = mid+1
         r.. low
     

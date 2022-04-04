@@ -13,7 +13,7 @@ c_ Solution(o..
         __ num < 0:
             num = -num
             sig = '-'
-        ____:
+        ____
             sig = ''
         res = ''
         w.... num > 0:
@@ -22,7 +22,7 @@ c_ Solution(o..
             num = i..((num-digit)/7)
         __ n.. res:
             r.. '0'
-        ____:
+        ____
             r.. sig+res
     
     ___ test

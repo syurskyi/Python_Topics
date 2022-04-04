@@ -17,7 +17,7 @@ c_ Solution:
                 __ G[i][j] __ '1':
                     H[j] = H.g.. j, 0) + 1
                     L[j] = m..(L.g.. j, 0), curr)
-                ____:
+                ____
                     H[j] = L[j] = 0
                     curr = j + 1
 
@@ -25,7 +25,7 @@ c_ Solution:
             ___ j __ r..(n - 1, -1, -1
                 __ G[i][j] __ '1':
                     R[j] = m..(R.g.. j, n), curr)
-                ____:
+                ____
                     R[j] = n
                     curr = j
 
@@ -103,13 +103,13 @@ c_ Solution:
             ___ j __ r..(n
                 __ G[i][j] __ '1':
                     H[j] += 1
-                ____:
+                ____
                     H[j] = 0
 
             ans = m..(ans, largestRectangleArea(H
 
             # To remove the trick `0`
-            H.pop()
+            H.p.. )
 
         r.. ans
 
@@ -126,7 +126,7 @@ c_ Solution:
 
         ___ right __ r..(l..(H:
             w.... I a.. H[I[-1]] >= H[right]:
-                height = H[I.pop()]
+                height = H[I.p.. )]
                 left = I[-1] __ I ____ -1
                 area = m..(
                     area,

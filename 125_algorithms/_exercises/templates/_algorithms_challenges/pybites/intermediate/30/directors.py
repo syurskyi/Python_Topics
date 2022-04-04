@@ -32,7 +32,7 @@ ___ get_movies_by_director
 
             __ row["title_year"] != "":
                 title_year = i..(row["title_year"])
-            ____:
+            ____
                 _____
 
             __ title_year > MIN_YEAR:
@@ -42,7 +42,7 @@ ___ get_movies_by_director
 
                 __ director_name n.. __ movie_metadata:
                     movie_metadata[director_name] = [Movie(movie_title, title_year, imdb_score)]
-                ____:
+                ____
                     movie_metadata[director_name].a..(Movie(movie_title, title_year, imdb_score
 
     r.. movie_metadata

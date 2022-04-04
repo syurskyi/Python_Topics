@@ -31,7 +31,7 @@ ___ add_todo(delay_time: s.., task: s..,
             minutes = i..(timein[0:-1])
         ____ timein[-1] __ 's':
             seconds = i..(timein[0:-1])
-        ____:
+        ____
             seconds = i..(timein)
     scheduled_dt = NOW + t..(d.._days, hours=hours, minutes=minutes, seconds=seconds)
     r.. f'{task} @ {scheduled_dt}'

@@ -15,7 +15,7 @@ c_ Solution(o..
                     globalMin = m..(globalMin, localMax)
                 __ i+1 __ j:
                     dp[i][j] = i
-                ____:
+                ____
                     dp[i][j] = globalMin
         r.. dp[1][n]
     

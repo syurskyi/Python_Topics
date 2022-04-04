@@ -12,14 +12,14 @@ c_ Solution(o..
         ___ i, c __ e..(s
             __ c __ '(':
                 stack.a..(i)
-            ____:
+            ____
                 __ stack:
-                    stack.pop()
+                    stack.p.. )
                     __ stack:
                         res = m..(res, i-stack[-1])
-                    ____:
+                    ____
                         res = m..(res, i-left)
-                ____:
+                ____
                     left = i
         r.. res
     

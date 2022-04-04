@@ -69,9 +69,9 @@ c_ WordDictionary:
         __ w != ".":
             __ w __ cur.children:
                 r.. __search(word[1:], cur.children[w])
-            ____:
+            ____
                 r.. F..
-        ____:
+        ____
             ___ child __ cur.children.v..
                 __ __search(word[1:], child
                     r.. T..

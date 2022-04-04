@@ -15,7 +15,7 @@ ___ transpose(data
     """
     __ isi..(data, d..
         r.. z..(*data.i..
-    ____:
+    ____
         r.. z..(*data)
 
 

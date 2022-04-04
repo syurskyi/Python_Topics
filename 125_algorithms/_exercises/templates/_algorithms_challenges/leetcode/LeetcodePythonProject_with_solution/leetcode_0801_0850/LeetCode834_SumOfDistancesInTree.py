@@ -67,7 +67,7 @@ c_ Solution(o..
         w.... queue:
             size = l..(queue)
             ___ _ __ r..(size
-                node = queue.pop(0)
+                node = queue.p.. 0)
                 ___ node0 __ graph[node]:
                     __ node0 n.. __ visited:
                         res += level

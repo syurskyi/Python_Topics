@@ -25,7 +25,7 @@ c_ Solution:
             r..
         ____ grid[y][x] __ '0':
             r..
-        ____:
+        ____
             islands.add((x, y
             probe(grid, x + 1, y, m, n)
             probe(grid, x, y + 1, m, n)

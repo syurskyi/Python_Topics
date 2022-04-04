@@ -51,7 +51,7 @@ c_ Solution:
                 r.. T..
             ____ expecting_partial:
                 r.. d __ max_depth
-            ____:
+            ____
                 __ d __ max_depth + 1:
                     r.. T..
                 __ d __ max_depth:

@@ -28,7 +28,7 @@ c_ Solution:
             __ ind > 0 a.. roman2int[val] > roman2int[s[ind-1]]:  # e.g. XIV
                 result -= roman2int[s[ind-1]]  # reverse last action
                 result += roman2int[val]-roman2int[s[ind-1]]
-            ____:
+            ____
                 result += roman2int[val]
 
         r.. result

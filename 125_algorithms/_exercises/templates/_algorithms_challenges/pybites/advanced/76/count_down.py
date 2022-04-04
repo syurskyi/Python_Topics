@@ -12,7 +12,7 @@ ___ count_down(arg
 ___ _(arg
     ___ k __ r..(l..(arg:
         print(''.j.. m..(s.., arg)))
-        arg.pop()
+        arg.p.. )
 
 
 @count_down.register(s..)

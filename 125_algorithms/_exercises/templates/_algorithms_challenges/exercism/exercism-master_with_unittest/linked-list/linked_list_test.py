@@ -8,8 +8,8 @@ c_ LinkedListTest(unittest.TestCase
         lst = LinkedList()
         lst.push(10)
         lst.push(20)
-        assertEqual(lst.pop(), 20)
-        assertEqual(lst.pop(), 10)
+        assertEqual(lst.p.. ), 20)
+        assertEqual(lst.p.. ), 10)
 
     ___ test_push_shift
         lst = LinkedList()
@@ -29,20 +29,20 @@ c_ LinkedListTest(unittest.TestCase
         lst = LinkedList()
         lst.unshift(10)
         lst.unshift(20)
-        assertEqual(lst.pop(), 10)
-        assertEqual(lst.pop(), 20)
+        assertEqual(lst.p.. ), 10)
+        assertEqual(lst.p.. ), 20)
 
     ___ test_all
         lst = LinkedList()
         lst.push(10)
         lst.push(20)
-        assertEqual(lst.pop(), 20)
+        assertEqual(lst.p.. ), 20)
         lst.push(30)
         assertEqual(lst.shift(), 10)
         lst.unshift(40)
         lst.push(50)
         assertEqual(lst.shift(), 40)
-        assertEqual(lst.pop(), 50)
+        assertEqual(lst.p.. ), 50)
         assertEqual(lst.shift(), 30)
 
     ___ test_length
@@ -52,7 +52,7 @@ c_ LinkedListTest(unittest.TestCase
         assertEqual(l..(lst), 2)
         lst.shift()
         assertEqual(l..(lst), 1)
-        lst.pop()
+        lst.p.. )
         assertEqual(l..(lst), 0)
 
     @unittest.skip("extra-credit")

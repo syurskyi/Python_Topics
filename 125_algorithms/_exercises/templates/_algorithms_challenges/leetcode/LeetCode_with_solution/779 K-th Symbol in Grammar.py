@@ -51,7 +51,7 @@ c_ Solution:
         half_l = 2 ** (N - 1) // 2
         __ K <= half_l:
             r.. dfs(N - 1, K, not_flip)
-        ____:
+        ____
             r.. dfs(N - 1, K - half_l, n.. not_flip)
 
     ___ kthGrammar_TLE  N: i.., K: i..) __ i..:

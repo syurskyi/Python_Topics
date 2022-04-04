@@ -30,7 +30,7 @@ c_ Solution(o..
             __ res __ N..
                 res = head
                 res.next = N..
-            ____:
+            ____
                 # Insert to the head of `res`
                 head.next = res
                 res = head

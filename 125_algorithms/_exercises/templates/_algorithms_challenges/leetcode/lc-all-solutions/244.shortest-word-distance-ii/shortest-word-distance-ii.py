@@ -23,7 +23,7 @@ c_ WordDistance(o..
       ans = m..(ans, abs(l1[i] - l2[j]
       __ l1[i] > l2[j]:
         j += 1
-      ____:
+      ____
         i += 1
     r.. ans
 

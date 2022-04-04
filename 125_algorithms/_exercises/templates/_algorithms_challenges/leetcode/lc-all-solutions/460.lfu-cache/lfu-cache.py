@@ -58,7 +58,7 @@ c_ Cache(o..
     __ L...isEmpty(freqNode) o. freqNode.next.freq != freqNode.freq + 1:
       newFreqNode = FreqNode(freqNode.freq + 1)
       L...insertAfter(freqNode, newFreqNode)
-    ____:
+    ____
       newFreqNode = freqNode.next
     freqNode = newFreqNode
     L...delete(self)
@@ -88,7 +88,7 @@ c_ LFUCache(o..
       cacheNode = d[key]
       cacheNode.val = value
       cacheNode.increaseFreq()
-    ____:
+    ____
       __ l..(d) >= cap:
         del d[head.next.popCache().key]
       newFreqNode = FreqNode(0)

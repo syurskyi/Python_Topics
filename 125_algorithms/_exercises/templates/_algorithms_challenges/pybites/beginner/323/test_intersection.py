@@ -19,9 +19,9 @@ ____ intersection _______ intersection
         [("do you like this bite?", "i hope so"), {"o", "i", "h", "e", "s", " "}],
     ],
 )
-___ test_basic(inputs, expected
+___ test_basic(inputs, e..
     results = intersection(*inputs)
-    ... results __ expected
+    ... results __ e..
 
 
 ?p__.m__.p.(
@@ -41,6 +41,6 @@ ___ test_basic(inputs, expected
         [([1, 2, 3, 3, 2, 1],), {1, 2, 3}],  # single input
     ],
 )
-___ test_edgecases(inputs, expected
+___ test_edgecases(inputs, e..
     results = intersection(*inputs)
-    ... results __ expected
+    ... results __ e..

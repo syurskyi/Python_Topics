@@ -32,5 +32,5 @@ c_ Solution:
             r.. quick_select(k, A, start, right)
         ____ left <= k <= end:
             r.. quick_select(k, A, left, end)
-        ____:
+        ____
             r.. A[k]

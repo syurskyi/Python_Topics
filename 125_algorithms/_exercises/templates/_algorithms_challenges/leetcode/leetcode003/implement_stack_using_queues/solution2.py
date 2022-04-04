@@ -50,14 +50,14 @@ c_ Stack(o..
         """
         queue2.a..(x)
         w.... queue1:
-            queue2.a..(queue1.pop(0
+            queue2.a..(queue1.p.. 0
         queue1, queue2 = queue2, queue1
 
     ___ pop
         """
         :rtype: nothing
         """
-        r.. queue1.pop(0)
+        r.. queue1.p.. 0)
 
     ___ top
         """

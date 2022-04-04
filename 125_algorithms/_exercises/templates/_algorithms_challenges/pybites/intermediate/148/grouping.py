@@ -27,7 +27,7 @@ ___ group_cars_by_manufacturer(cars
     ___ model, make __ cars:
         __ model n.. __ cars_grouped:
             cars_grouped[model] = [make]
-        ____:
+        ____
             cars_grouped[model].a..(make)
     
     cars_description = ""

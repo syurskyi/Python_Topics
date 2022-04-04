@@ -38,7 +38,7 @@ c_ Solution:
             __ res __ N..
                 res = new_node
                 end = new_node
-            ____:
+            ____
                 end.next = new_node
                 end = end.next
             # Delete new node from old list

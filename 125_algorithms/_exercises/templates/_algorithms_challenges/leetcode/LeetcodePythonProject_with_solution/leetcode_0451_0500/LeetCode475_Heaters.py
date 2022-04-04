@@ -15,7 +15,7 @@ c_ Solution(o..
                 i += 1
             __ heaters[i] > house:
                 tmp = heaters[i]-house
-            ____:
+            ____
                 tmp = house-heaters[i]
                 __ i+1 < l..(heaters
                     tmp = m..(tmp, heaters[i+1]-house)

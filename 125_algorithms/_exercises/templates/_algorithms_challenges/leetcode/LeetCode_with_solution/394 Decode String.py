@@ -40,12 +40,12 @@ c_ Solution(o..
                 stk[-1][1].a..(s[i])
                 i += 1
             ____ s[i] __ ' ':  # pop
-                cnt, p.. = stk.pop()
+                cnt, p.. = stk.p.. )
                 p.. = ''.j..(p..) * cnt
                 stk[-1][1].a..(p..)
                 i += 1
 
-        r.. ''.j..(stk.pop()[1])
+        r.. ''.j..(stk.p.. )[1])
 
 
 c_ SolutionVerbose(o..
@@ -68,15 +68,15 @@ c_ SolutionVerbose(o..
             ____ s[i].isl..  # append alphabet
                 __ n.. stk:
                     ret.a..(s[i])
-                ____:
+                ____
                     stk[-1][1].a..(s[i])
                 i += 1
             ____ s[i] __ ' ':  # pop
-                cnt, p.. = stk.pop()
+                cnt, p.. = stk.p.. )
                 p.. = ''.j..(p..) * cnt
                 __ n.. stk:
                    ret.a..(p..)
-                ____:
+                ____
                     stk[-1][1].a..(p..)
 
                 i += 1
@@ -105,7 +105,7 @@ c_ SolutionError(o..
                 ___ _ __ x..(repeat ret.a..(s[i])
                 i += 1
             ____ s[i] __ ' ':
-                stk.pop()
+                stk.p.. )
                 i += 1
 
         r.. ''.j..(ret)

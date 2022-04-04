@@ -41,7 +41,7 @@ c_ Solution:
                 ret.a..(s[i])
                 i += 1
 
-            ____:
+            ____
                 b = i
                 w.... i < l..(s) a.. s[i].i..
                     i += 1
@@ -61,8 +61,8 @@ c_ Solution:
             ____ elt __ ")":
                 w.... stk[-1] != "(":
                     ret.a..(stk.pop
-                stk.pop()
-            ____:  # generalized to include * and /
+                stk.p.. )
+            ____  # generalized to include * and /
                 w.... stk a.. precendece(elt) <= precendece(stk[-1]
                     ret.a..(stk.pop
 
@@ -94,9 +94,9 @@ c_ Solution:
                     stk.a..(a-b)
                 ____ elt __ "*":
                     stk.a..(a*b)
-                ____:
+                ____
                     stk.a..(a/b)
-            ____:
+            ____
                 stk.a..(elt)
 
         ... l..(stk) __ 1

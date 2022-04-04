@@ -26,7 +26,7 @@ c_ Solution:
 
         __ n.. node.left a.. n.. node.right:
             ans.a..('->'.j..(p..
-            p...pop()
+            p...p.. )
             r..
 
         __ node.left:
@@ -35,4 +35,4 @@ c_ Solution:
         __ node.right:
             dfs(node.right, ans, p..)
 
-        p...pop()
+        p...p.. )

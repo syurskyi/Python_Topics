@@ -47,7 +47,7 @@ c_ Solution:
         __ x__-1.0:
             __ n&1__1:
                 r.. 1
-            ____:
+            ____
                 r.. -1
 
         __ abs(x-1.0)<1e-6:
@@ -56,7 +56,7 @@ c_ Solution:
         __ abs(x--1.0)<1e-6:
             __ n % 2__0:
                 r.. pow(-x, n)
-            ____:
+            ____
                 r.. -pow(-x, n)
 
         product = 1.0
@@ -64,7 +64,7 @@ c_ Solution:
             pre = product
             __ n>0:
                 product *= x
-            ____:
+            ____
                 product /= x
 
             __ abs(product - pre)<1e-5:

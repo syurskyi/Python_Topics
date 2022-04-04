@@ -8,7 +8,7 @@ c_ Solution:
     ___ subsets_aux  S
         __ n.. S:
             r.. [[]]
-        ____:
+        ____
             res = [[]]
             ___ i, e __ e..(S
                 rest_subsets = subsets_aux(S[i + 1:])

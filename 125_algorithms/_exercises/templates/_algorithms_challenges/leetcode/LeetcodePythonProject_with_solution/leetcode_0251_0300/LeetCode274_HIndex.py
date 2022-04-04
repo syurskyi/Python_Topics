@@ -15,7 +15,7 @@ c_ Solution(o..
         ___ c __ citations:
             __ c > length:
                 count[length]+=1
-            ____:
+            ____
                 count[c]+=1
         total = 0
         print('count: %s' % (count

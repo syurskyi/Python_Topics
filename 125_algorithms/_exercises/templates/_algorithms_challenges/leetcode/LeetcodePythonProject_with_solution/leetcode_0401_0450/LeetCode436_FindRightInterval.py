@@ -19,7 +19,7 @@ c_ Solution(o..
             ind = binary_search(interval.end, sortedList)
             __ ind != i:
                 result.a..(ind)
-            ____:
+            ____
                 result.a..(-1)
         r.. result
     
@@ -29,7 +29,7 @@ c_ Solution(o..
             mid = (start+end)//2
             __ sortedList[mid][0] < target:
                 start = mid+1
-            ____:
+            ____
                 end = mid
         __ end __ l..(sortedList r.. -1
         r.. sortedList[end][1]

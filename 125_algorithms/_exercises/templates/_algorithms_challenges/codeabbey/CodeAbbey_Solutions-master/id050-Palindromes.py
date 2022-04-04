@@ -3,7 +3,7 @@ ___ cleanWord(data
     ___ char __ data:
         __ s...isalpha(char) __ T..:
             word.a..(char)
-        ____:
+        ____
             word.a..('')
     r.. word
 
@@ -14,7 +14,7 @@ ___ isPalindrome(wordCount
         word  ''.j..(word)
         __ word __ word[::-1]:
             answer.a..('Y')
-        ____:
+        ____
             answer.a..('N')
     print(' '.j..(answer
 

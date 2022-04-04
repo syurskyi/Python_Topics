@@ -28,5 +28,5 @@ c_ Solution:
         digit = num % 9
         __ digit __ 0 a.. num != 0:
             r.. 9
-        ____:
+        ____
             r.. digit

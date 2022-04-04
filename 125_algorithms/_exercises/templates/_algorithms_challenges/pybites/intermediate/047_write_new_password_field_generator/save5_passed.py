@@ -8,6 +8,6 @@ ___ validate_password(password
     p = any([c __ s__.punctuation ___ c __ password])
     __ password n.. __ used_passwords:
         used_passwords.add(password)
-    ____:
+    ____
         r.. F..
     r.. p a.. b..(s)

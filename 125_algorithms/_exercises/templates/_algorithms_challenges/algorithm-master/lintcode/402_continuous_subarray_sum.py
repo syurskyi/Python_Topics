@@ -14,7 +14,7 @@ c_ Solution:
             __ _sum < 0:
                 _sum = A[i]
                 left = right = i
-            ____:
+            ____
                 _sum += A[i]
                 right = i
 

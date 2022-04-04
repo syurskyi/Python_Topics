@@ -25,7 +25,7 @@ c_ Solution(o..
         ___ i __ r..(start, 10
             elem.a..(i)
             helper(elem, i+1, k, n-i, result)
-            elem.pop()
+            elem.p.. )
     
     ___ test
         testCases = [

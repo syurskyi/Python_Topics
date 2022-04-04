@@ -41,7 +41,7 @@ ___ years_gold_value_decreased(gold_prices: s.. = gold_prices
          __ delta > decrease_largest:
             decrease_largest = delta
             decrease_year = year
-      ____:
+      ____
          # Increase
          __ delta > increase_largest:
             increase_largest = delta

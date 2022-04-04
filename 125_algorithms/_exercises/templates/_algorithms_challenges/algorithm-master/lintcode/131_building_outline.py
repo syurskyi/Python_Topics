@@ -65,13 +65,13 @@ c_ Solution:
         ___ x, height, is_start __ time:
             __ is_start:
                 heap.push(-height)
-            ____:
+            ____
                 heap.remove(-height)
 
             max_h = -heap.top() __ n.. heap.is_empty() ____ 0
 
             __ tmp a.. tmp[-1][0] __ x:
-                tmp.pop()
+                tmp.p.. )
             __ tmp a.. tmp[-1][1] __ max_h:
                 _____
             tmp.a..([x, max_h])

@@ -12,7 +12,7 @@ c_ Solution:
     ___ buildTree  inorder, postorder
         __ n.. inorder o. n.. postorder:
             r.. N..
-        ____:
+        ____
             d = postorder[-1]
             root = TreeNode(d)
             i = inorder.i.. d)

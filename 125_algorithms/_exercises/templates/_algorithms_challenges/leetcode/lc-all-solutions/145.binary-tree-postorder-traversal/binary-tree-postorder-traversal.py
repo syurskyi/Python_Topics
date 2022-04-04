@@ -13,11 +13,11 @@ c_ Solution(o..
     """
     res, stack    # list, [(1, root)]
     w.... stack:
-      p = stack.pop()
+      p = stack.p.. )
       __ n.. p[1]:
         _____
       __ p[0] __ 0:
         res.a..(p[1].val)
-      ____:
+      ____
         stack.extend([(0, p[1]), (1, p[1].right), (1, p[1].left)])
     r.. res

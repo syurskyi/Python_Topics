@@ -39,7 +39,7 @@ c_ Solution(o..
             cnt += 1
             __ cnt % 2 __ 0:
                 pre = pre.next
-            ____:
+            ____
                 start = ptr.next
                 nxt = cur.next
 
@@ -68,7 +68,7 @@ c_ Solution(o..
             cur = pre.next
             __ cur.val % 2 != parity:
                 pre = pre.next
-            ____:
+            ____
                 start = ptr.next
                 nxt = cur.next
 

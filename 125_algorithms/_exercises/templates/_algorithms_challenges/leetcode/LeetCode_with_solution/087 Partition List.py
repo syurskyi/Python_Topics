@@ -40,7 +40,7 @@ c_ Solution:
             __ cur.val<x:
                 pre_smaller.next = cur
                 pre_smaller = pre_smaller.next
-            ____:
+            ____
                 pre_larger.next = cur
                 pre_larger = pre_larger.next
             pre = pre.next

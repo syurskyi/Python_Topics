@@ -61,7 +61,7 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, da
         ____ date > current_date:
             mapping[current_date] = p..(dates[i -1]).date()
             current_date += dt.t..(d.._1)
-        ____:
+        ____
             i += 1
 
 

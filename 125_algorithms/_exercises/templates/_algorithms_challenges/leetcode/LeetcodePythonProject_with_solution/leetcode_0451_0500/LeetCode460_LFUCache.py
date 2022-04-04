@@ -35,7 +35,7 @@ c_ LFUCache(o..
         """
         __ key n.. __ hashmap:
             r.. -1
-        ____:
+        ____
             value = hashmap[key].val
             updateNode(hashmap[key])
             r.. value
@@ -51,7 +51,7 @@ c_ LFUCache(o..
         __ key __ hashmap:
             hashmap[key].val = value
             updateNode(hashmap[key])
-        ____:
+        ____
             __ capacity > length:
                 length += 1
                 node = Node(key, value)
@@ -65,14 +65,14 @@ c_ LFUCache(o..
                     node.next = nextNode
                     node.next.prev = node
                     freqMap[1][1] = node
-                ____:
+                ____
                     nextNode = head.next
                     node.next = nextNode
                     node.prev = head
                     nextNode.prev = node
                     head.next = node
                     freqMap[1] = [node, node]
-            ____:
+            ____
                 node = Node(key, value)
                 hashmap[key] = node
                 firstNode = head.next
@@ -81,7 +81,7 @@ c_ LFUCache(o..
                     head.next = firstNode.next
                     firstNode.next.prev = head
                     del freqMap[freq]
-                ____:
+                ____
                     freqMap[freq][0] = freqMap[freq][0].next
                     head.next = firstNode.next
                     firstNode.next.prev = head
@@ -94,7 +94,7 @@ c_ LFUCache(o..
                     node.next = nextNode
                     node.next.prev = node
                     freqMap[1][1] = node
-                ____:
+                ____
                     nextNode = head.next
                     nextNode.prev = node
                     node.next = nextNode
@@ -109,7 +109,7 @@ c_ LFUCache(o..
         node.next.prev = node.prev
         __ freqMap[freq][0] __ freqMap[freq][1]:
             del freqMap[freq]
-        ____:
+        ____
             __ freqMap[freq][0] __ node:
                 freqMap[freq][0] = node.next
             __ freqMap[freq][1] __ node:
@@ -123,7 +123,7 @@ c_ LFUCache(o..
             node.next.prev = node
             node.prev = tail
             freqMap[freq][1] = node
-        ____:
+        ____
             prevNode = nextNode.prev
             prevNode.next = node
             node.next = nextNode

@@ -4,7 +4,7 @@ ___ same_structure_as(original,other
             r.. T..
         __ ''.j.. m..(s..,original __ ''.j.. m..(s..,other[::-1]:
             r.. T..
-        ____:
+        ____
             r..  F..
 
     __ t..(original) != t..(other

@@ -31,16 +31,16 @@ c_ LRUCache(o..
                 nextNode.prev = prevNode
                 tail.next = node
                 node.prev = tail
-            ____:
+            ____
                 prevNode.next = node
                 node.prev = prevNode
-        ____:
+        ____
             __ next:
                 head = nextNode
                 nextNode.prev = N..
                 tail.next = node
                 node.prev = tail
-            ____:
+            ____
                 head = node
         tail = node
         head.prev = N..
@@ -49,7 +49,7 @@ c_ LRUCache(o..
     ___ get  key
         __ key n.. __ map:
             r.. -1
-        ____:
+        ____
             node = map[key]
             val = node.val
             removeAndAppend(key)
@@ -61,11 +61,11 @@ c_ LRUCache(o..
             map[key] = node
             head = node
             tail = node
-        ____:
+        ____
             __ key __ map:
                 removeAndAppend(key)
                 tail.val = value
-            ____:
+            ____
                 __ l.. m..) < capacity:
                     node = Node(key, value)
                     tail.next = node
@@ -83,7 +83,7 @@ c_ LRUCache(o..
                         tail.next = node
                         node.prev = tail
                         tail = node
-                    ____:
+                    ____
                         head = node
                         tail = node
 

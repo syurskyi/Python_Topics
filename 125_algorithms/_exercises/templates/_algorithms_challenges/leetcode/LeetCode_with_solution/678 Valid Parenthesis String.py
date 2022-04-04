@@ -40,17 +40,17 @@ c_ Solution:
                 stk_left.a..(i)
             ____ c __ "*":
                 stk_star.a..(i)
-            ____:
+            ____
                 __ stk_left:
-                    stk_left.pop()
+                    stk_left.p.. )
                 ____ stk_star:
-                    stk_star.pop()
-                ____:
+                    stk_star.p.. )
+                ____
                     r.. F..
 
         w.... stk_left a.. stk_star a.. stk_star[-1] > stk_left[-1]:
-            stk_star.pop()
-            stk_left.pop()
+            stk_star.p.. )
+            stk_left.p.. )
 
         r.. n.. stk_left
 

@@ -35,5 +35,5 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
         __ result[1].most_common
             letter, count = result[1].most_common(1)[0]
             r.. result[0], letter, count
-    ____:
+    ____
         r.. '', '', 0

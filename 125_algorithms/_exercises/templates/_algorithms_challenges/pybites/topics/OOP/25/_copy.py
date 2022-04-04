@@ -38,7 +38,7 @@ c_ Promo:
                 random_entry = r__.choice(entry_list)
                 __ random_entry[0] n.. __ bites_done:
                     r.. random_entry[0]
-        ____:
+        ____
             r.. NoBitesAvailable
         
     ___ new_bite

@@ -46,16 +46,16 @@ ___ my_solution_get_harry_most_common_word
     filtered    # list
     f1 = o.. stopwords_file, _
     ___ line __ f1:
-        stopwords.a..(line.strip
+        stopwords.a..(line.s..
 
     f2 = o.. harry_text, _
     ___ line __ f2:
         ___ word __ line.s.. :
             print(word)
-            p = word.strip(s__.punctuation).l..
+            p = word.s..(s__.punctuation).l..
 
             __ l..(p) > 0 a.. p n.. __ stopwords:
-                filtered.a..(word.strip(s__.punctuation).l..
+                filtered.a..(word.s..(s__.punctuation).l..
 
     counter = C..(filtered)
     r.. counter.most_common(1)[0]

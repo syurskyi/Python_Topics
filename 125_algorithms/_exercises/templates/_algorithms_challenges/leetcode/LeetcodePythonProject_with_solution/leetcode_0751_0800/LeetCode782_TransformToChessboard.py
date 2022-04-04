@@ -31,7 +31,7 @@ c_ Solution(o..
                 colSwap = n-colSwap
             __ rowSwap%2 __ 1:
                 rowSwap = n-rowSwap
-        ____:
+        ____
             colSwap = m..(n-colSwap, colSwap)
             rowSwap = m..(n-rowSwap, rowSwap)
         r.. (colSwap+rowSwap)//2

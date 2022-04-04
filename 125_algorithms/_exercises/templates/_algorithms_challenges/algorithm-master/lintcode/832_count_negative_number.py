@@ -17,7 +17,7 @@ c_ Solution:
                 mid = (left + right) // 2
                 __ g[i][mid] < 0:
                     left = mid
-                ____:
+                ____
                     right = mid
 
             __ g[i][left] >= 0:

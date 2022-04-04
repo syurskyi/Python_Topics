@@ -33,7 +33,7 @@ c_ Solution:
             ____ head.val > mid.val:
                 right_tail.next = head
                 right_tail = head
-            ____:
+            ____
                 mid_tail.next = head
                 mid_tail = head
             head = head.next
@@ -68,14 +68,14 @@ c_ Solution:
             __ left.val < right.val:
                 tail.next = left
                 left = left.next
-            ____:
+            ____
                 tail.next = right
                 right = right.next
             tail = tail.next
 
         __ left:
             tail.next = left
-        ____:
+        ____
             tail.next = right
 
         r.. dummy.next

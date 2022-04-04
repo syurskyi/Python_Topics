@@ -57,7 +57,7 @@ c_ Solution:
 
             __ logs[mid] < begin_time:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         mid = left __ logs[left] >= begin_time ____ right

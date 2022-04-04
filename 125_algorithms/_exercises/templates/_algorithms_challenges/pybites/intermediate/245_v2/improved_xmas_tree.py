@@ -27,9 +27,9 @@ ___ generate_improved_xmas_tree(rows=10
     x = last_row_size/2
     
     __ i..(m__.f..(x % 2 __ 0:
-        trunk_width = i..(m__.ceil(x
-    ____:
-        trunk_width = i..(m__.ceil(x + 1
+        trunk_width = i..(m__.c.. x
+    ____
+        trunk_width = i..(m__.c.. x + 1
     
 
     trunk = f"{TRUNK * trunk_width:^{last_row_size}}"

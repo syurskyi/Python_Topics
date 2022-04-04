@@ -12,7 +12,7 @@ ___ password_complexity(password: s..
             lo += 1
         ____ l.i..
             num += 1
-        ____:
+        ____
             spec += 1
     score = 0
     __ 0 < up a.. 0 < lo:

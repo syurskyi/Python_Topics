@@ -47,7 +47,7 @@ c_ Solution:
                 r.. [left + 1, right + 1]
             __ _sum < target:
                 left += 1
-            ____:
+            ____
                 right -= 1
 
         r.. NOT_FOUND

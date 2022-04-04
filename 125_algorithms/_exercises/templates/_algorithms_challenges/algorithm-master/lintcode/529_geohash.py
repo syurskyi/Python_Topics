@@ -41,7 +41,7 @@ c_ GeoHash:
             __ location > mid:
                 left = mid
                 bins.a..(1)
-            ____:
+            ____
                 right = mid
                 bins.a..(0)
 

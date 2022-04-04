@@ -27,7 +27,7 @@ c_ Solution(o..
             ____ nums[mid] > nums[right]:
                 left = mid + 1
             # The minimum element is in the left side
-            ____:
+            ____
                 right = mid - 1
 
 

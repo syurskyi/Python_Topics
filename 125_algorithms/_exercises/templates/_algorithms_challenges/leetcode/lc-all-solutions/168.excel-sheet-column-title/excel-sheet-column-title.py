@@ -10,7 +10,7 @@ c_ Solution(o..
       __ y __ 0:
         char = "Z"
         n -= 26
-      ____:
+      ____
         char = chr(o..("A") + y - 1)
       ans += char
       n = n / 26

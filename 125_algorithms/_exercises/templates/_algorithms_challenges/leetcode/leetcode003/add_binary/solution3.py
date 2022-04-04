@@ -36,7 +36,7 @@ c_ Solution(o..
             __ c != '0':
                 res = res[i:]
                 _____
-        ____:
+        ____
             res =  '0'
         r.. ''.j..(res)
 

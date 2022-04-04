@@ -10,6 +10,6 @@ c_ Solution(o..
       ans = m..(ans, (right - left) * m..(height[left], height[right]
       __ height[left] <= height[right]:
         left += 1
-      ____:
+      ____
         right -= 1
     r.. ans

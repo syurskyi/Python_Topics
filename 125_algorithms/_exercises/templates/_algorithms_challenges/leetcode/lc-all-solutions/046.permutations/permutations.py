@@ -19,7 +19,7 @@ c_ Solution(o..
           visited.add(i)
           p...a..(nums[i])
           dfs(nums, p.., res, visited)
-          p...pop()
+          p...p.. )
           visited.discard(i)
 
     dfs(nums, [], res, visited)

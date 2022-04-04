@@ -81,9 +81,9 @@ ___ filter_killed_mutants(mutpy_output: l..  N..) __ l..:
                 test_result.clear()
                 output.a..(line)
                 in_test  F..
-            ____:
+            ____
                 test_result.a..(line)
-        ____:
+        ____
             __ line.startswith('   - [#'
                 in_test  T..
             output.a..(line)

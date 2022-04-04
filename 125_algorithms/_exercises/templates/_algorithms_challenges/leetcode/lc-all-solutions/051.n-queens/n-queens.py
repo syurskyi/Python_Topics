@@ -15,7 +15,7 @@ c_ Solution(o..
         __ i n.. __ p.. a.. isValidQueen(p.., i
           p...a..(i)
           dfs(p.., n, ans)
-          p...pop()
+          p...p.. )
 
     ___ isValidQueen(p.., k
       ___ i __ r..(l..(p..:

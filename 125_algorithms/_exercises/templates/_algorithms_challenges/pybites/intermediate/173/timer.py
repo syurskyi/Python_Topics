@@ -37,7 +37,7 @@ ___ add_todo(delay_time: s.., task: s..,
             seconds = i..(unit[:-1])
         ____ last_char.i..
             seconds = i..(unit)
-        ____:
+        ____
             _____
         
     r.. f"{task} @ {start_time + t..(d.._days, hours=hours, minutes=minutes, seconds=seconds)}"

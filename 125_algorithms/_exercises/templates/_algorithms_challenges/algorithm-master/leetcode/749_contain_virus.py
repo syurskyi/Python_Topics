@@ -74,7 +74,7 @@ c_ Solution:
             __ i __ _max_i:
                 ___ x, y __ ex_virus[i]:
                     G[x][y] = EX_VIRUS
-            ____:
+            ____
                 ___ x, y __ spreading[i]:
                     G[x][y] = VIRUS
 

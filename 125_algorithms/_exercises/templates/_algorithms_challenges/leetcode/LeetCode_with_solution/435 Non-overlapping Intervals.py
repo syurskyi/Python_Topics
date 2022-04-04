@@ -39,7 +39,7 @@ c_ Solution:
         ___ itv __ intervals[1:]:
             __ cur.end <= itv.start:
                 cur = itv
-            ____:
+            ____
                 ret += 1
                 cur = cur __ cur.end < itv.end ____ itv
 

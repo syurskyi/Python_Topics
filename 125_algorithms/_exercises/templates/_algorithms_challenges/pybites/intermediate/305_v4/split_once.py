@@ -19,5 +19,5 @@ ___ split_once(text: s.., separators: s.. = N..) __ L..[s..]:
             last_index = index + 1
         s...a..(text[last_index:])
         r.. s..
-    ____:
+    ____
         r.. [text]

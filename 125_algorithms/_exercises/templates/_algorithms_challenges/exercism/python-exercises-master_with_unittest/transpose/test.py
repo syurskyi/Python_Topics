@@ -7,10 +7,10 @@ ____ transpose _______ transpose
 c_ TransposeTests(unittest.TestCase
     ___ test_empty_string
         input_line = ""
-        expected = ""
+        e.. = ""
         assertEqual(
             transpose(input_line),
-            expected
+            e..
         )
 
     ___ test_two_characters_in_a_row
@@ -30,7 +30,7 @@ c_ TransposeTests(unittest.TestCase
             "ABC",
             "123"
         ]
-        expected = [
+        e.. = [
             "A1",
             "B2",
             "C3"
@@ -38,12 +38,12 @@ c_ TransposeTests(unittest.TestCase
 
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(expected)
+            "\n".j..(e..)
         )
 
     ___ test_single_line
         input_line = ["Single line."]
-        expected = [
+        e.. = [
             "S",
             "i",
             "n",
@@ -59,7 +59,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(expected)
+            "\n".j..(e..)
         )
 
     ___ test_first_line_longer_than_second_line
@@ -67,7 +67,7 @@ c_ TransposeTests(unittest.TestCase
             "The fourth line.",
             "The fifth line."
         ]
-        expected = [
+        e.. = [
             "TT",
             "hh",
             "ee",
@@ -87,7 +87,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(expected)
+            "\n".j..(e..)
         )
 
     ___ test_second_line_longer_than_first_line
@@ -95,7 +95,7 @@ c_ TransposeTests(unittest.TestCase
             "The first line.",
             "The second line."
         ]
-        expected = [
+        e.. = [
             "TT",
             "hh",
             "ee",
@@ -115,7 +115,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(expected)
+            "\n".j..(e..)
         )
 
     ___ test_square
@@ -126,7 +126,7 @@ c_ TransposeTests(unittest.TestCase
             "RESIN",
             "TREND"
         ]
-        expected = [
+        e.. = [
             "HEART",
             "EMBER",
             "ABUSE",
@@ -135,7 +135,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(expected)
+            "\n".j..(e..)
         )
 
     ___ test_rectangle
@@ -145,7 +145,7 @@ c_ TransposeTests(unittest.TestCase
             "BLOOMING",
             "SEPTETTE"
         ]
-        expected = [
+        e.. = [
             "FOBS",
             "RULE",
             "ATOP",
@@ -157,7 +157,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(expected)
+            "\n".j..(e..)
         )
 
     ___ test_triangle
@@ -169,7 +169,7 @@ c_ TransposeTests(unittest.TestCase
             "EEEEE",
             "RRRRRR"
         ]
-        expected = [
+        e.. = [
             "TEASER",
             " EASER",
             "  ASER",
@@ -179,7 +179,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(expected)
+            "\n".j..(e..)
         )
 
     ___ test_many_lines
@@ -199,7 +199,7 @@ c_ TransposeTests(unittest.TestCase
             "The which if you with patient ears attend,",
             "What here shall miss, our toil shall strive to mend."
         ]
-        expected = [
+        e.. = [
             "CIFWFAWDTAWITW",
             "hnrhr hohnhshh",
             "o oeopotedi ea",
@@ -256,7 +256,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(expected)
+            "\n".j..(e..)
         )
 
 

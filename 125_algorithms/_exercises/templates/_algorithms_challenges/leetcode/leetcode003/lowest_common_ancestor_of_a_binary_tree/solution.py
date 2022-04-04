@@ -40,12 +40,12 @@ c_ Solution(o..
             r.. N..
         ____ root __ p o. root __ q:
             r.. root
-        ____:
+        ____
             l = lowestCommonAncestor(root.left, p, q)
             r = lowestCommonAncestor(root.right, p, q)
             __ l __ n.. N.. a.. r __ n.. N..
                 r.. root
-            ____:
+            ____
                 __ l __ n.. N..
                     r.. l
                 __ r __ n.. N..

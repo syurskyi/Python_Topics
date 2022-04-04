@@ -59,15 +59,15 @@ c_ Solution:
             w.... stk a.. e < 0 < stk[-1]:
                 __ abs(e) > abs(stk[-1]
                     # -> exploded, <- continues
-                    stk.pop()
+                    stk.p.. )
                 ____ abs(e) __ abs(stk[-1]
                     # -> <- both exploded
-                    stk.pop()
+                    stk.p.. )
                     _____
-                ____:
+                ____
                     # <- exploded, -> continue
                     _____
-            ____:
+            ____
                 stk.a..(e)
 
         r.. stk
@@ -86,10 +86,10 @@ c_ Solution:
         ___ i __ r..(n-1, -1, -1
             cur = asteroids[i]
             w.... stk a.. asteroids[stk[-1]] < 0 a.. cur > 0 a.. abs(asteroids[stk[-1]]) < abs(cur
-                stk.pop()
+                stk.p.. )
 
             __ stk a.. cur > 0 a.. asteroids[stk[-1]] __ -cur:
-                stk.pop()
+                stk.p.. )
                 _____
 
             __ n.. stk:

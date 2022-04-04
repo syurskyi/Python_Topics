@@ -24,7 +24,7 @@ c_ Solution(o..
         level = m..(left, right)+1
         __ level < l..(res
             res[level].a..(root.val)
-        ____:
+        ____
             res.a..([root.val])
         r.. level
     
@@ -44,7 +44,7 @@ c_ Solution(o..
         __ n.. root.left a.. n.. root.right:
             __ parent.left __ root:
                 parent.left = N..
-            ____:
+            ____
                 parent.right = N..
             result.a..(root.val)
         getLeaves(root, root.left, result)

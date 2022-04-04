@@ -18,12 +18,12 @@ ___ add_ingredients(ingredients
 ___ test_bacon_sandwich(capfd
     ingredients =  'bacon', 'lettuce', 'tomato'
     add_ingredients(ingredients)
-    actual = ?.r .. 0]
-    ... actual __ SANDWICH_BACON
+    a.. = ?.r .. 0]
+    ... a.. __ SANDWICH_BACON
 
 
 ___ test_fried_egg_sandwich(capfd
     ingredients =  'fried egg', 'tomato', 'cucumber'
     add_ingredients(ingredients)
-    actual = ?.r .. 0]
-    ... actual __ SANDWICH_EGG
+    a.. = ?.r .. 0]
+    ... a.. __ SANDWICH_EGG

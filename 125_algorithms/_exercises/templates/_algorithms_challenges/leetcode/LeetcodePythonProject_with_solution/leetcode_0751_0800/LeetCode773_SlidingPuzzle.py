@@ -17,7 +17,7 @@ c_ Solution(o..
         w.... queue:
             size = l..(queue)
             ___ _ __ r..(size
-                s = queue.pop(0)
+                s = queue.p.. 0)
                 __ s __ target:
                     r.. res
                 i = s.i.. '0')

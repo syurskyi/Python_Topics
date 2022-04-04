@@ -15,12 +15,12 @@ c_ Codec:
     stack = [(1, root)]
     ans    # list
     w.... stack:
-      pc, node = stack.pop()
+      pc, node = stack.p.. )
       __ n.. node:
         _____
       __ pc __ 0:
         ans.a..(s..(node.val
-      ____:
+      ____
         stack.a..((1, node.right
         stack.a..((1, node.left
         stack.a..((0, node

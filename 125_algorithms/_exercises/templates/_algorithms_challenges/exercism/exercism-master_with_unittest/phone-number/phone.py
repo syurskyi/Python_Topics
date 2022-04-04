@@ -8,7 +8,7 @@ c_ Phone:
         number = number(inp)
 
     ___ number  inp
-        cleaned = strip(inp)
+        cleaned = s..(inp)
         __ valid_11_digits(cleaned
             r.. cleaned[1:]
         ____ valid_10_digits(cleaned
@@ -37,5 +37,5 @@ c_ Phone:
         r.. l..(inp) __ 10
 
     $
-    ___ strip(inp
+    ___ s..(inp
         r.. ''.j..(char ___ char __ inp __ char.i..

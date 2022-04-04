@@ -55,7 +55,7 @@ c_ Solution:
             ___ col __ x..(1, len_s+1
                 __ S[col-1]__T[row-1]:
                     dp[row][col] = dp[row][col-1]+dp[row-1][col-1]
-                ____:
+                ____
                     dp[row][col] = dp[row][col-1]
 
         r.. dp[-1][-1]

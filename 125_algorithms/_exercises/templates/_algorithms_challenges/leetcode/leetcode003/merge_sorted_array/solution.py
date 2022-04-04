@@ -25,7 +25,7 @@ c_ Solution(o..
             __ nums1[i] > nums2[j]:
                 nums1[k] = nums1[i]
                 i -= 1
-            ____:
+            ____
                 nums1[k] = nums2[j]
                 j -= 1
             k -= 1

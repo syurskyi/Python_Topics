@@ -25,7 +25,7 @@ c_ Solution(o..
         ____ nums[i] > mid:
           ans[r] = nums[i]
           r += 2
-    ____:
+    ____
       print
       'here'
       l = 0
@@ -51,7 +51,7 @@ c_ Solution(o..
       r.. A[k]
     ____ mid > k:
       r.. quickselect(start, mid - 1, A, k)
-    ____:
+    ____
       r.. quickselect(mid + 1, end, A, k)
 
   ___ partition  start, end, A

@@ -30,7 +30,7 @@ c_ Solution(o..
                 substr = s[i:j+1]
                 __ j-i < 4:
                     dp[i][j] = substr
-                ____:
+                ____
                     dp[i][j] = substr
                     ___ k __ r..(i, j
                         __ l..(dp[i][k]+dp[k+1][j]) < l..(dp[i][j]

@@ -32,13 +32,13 @@ c_ Solution:
         w.... idx < l..(num2
             __ idx < l..(num1
                 s = i..(num1[idx]) + i..(num2[idx]) + carry
-            ____:
+            ____
                 s = i..(num2[idx]) + carry
 
             __ s >= 10:
                 s -= 10
                 carry = 1
-            ____:
+            ____
                 carry = 0
 
             ret.a..(s)

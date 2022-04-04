@@ -22,7 +22,7 @@ c_ Solution(o..
         ans = m..(ans, abs(m..(lMax[i - 1], rMax[i + 1]) - minArray[i]
       ____ i __ 0:
         ans = m..(ans, abs(rMax[i + 1] - minArray[i]
-      ____:
+      ____
         ans = m..(ans, abs(lMax[i - 1] - minArray[i]
     r.. ans
 

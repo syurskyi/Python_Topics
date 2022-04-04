@@ -57,7 +57,7 @@ c_ Solution:
             ____ s[i] __ "(":
                 # avoid setting operand to 0
                 operand, i = eval(s, i + 1, [])
-            ____:
+            ____
                 r..
 
             i += 1

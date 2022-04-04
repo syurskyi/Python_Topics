@@ -21,7 +21,7 @@ c_ Solution(o..
         queue = l..(hashmap[kill])
         result = s..([kill])
         w.... queue:
-            node = queue.pop(0)
+            node = queue.p.. 0)
             result.add(node)
             ___ node0 __ hashmap.g.. node, []
                 __ node0 n.. __ result:

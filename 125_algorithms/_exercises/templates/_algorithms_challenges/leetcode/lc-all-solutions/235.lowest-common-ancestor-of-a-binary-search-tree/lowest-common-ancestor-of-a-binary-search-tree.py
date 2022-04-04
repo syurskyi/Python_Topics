@@ -10,6 +10,6 @@ c_ Solution(o..
     w.... n.. a <= root.val <= b:
       __ a > root.val:
         root = root.right
-      ____:
+      ____
         root = root.left
     r.. root

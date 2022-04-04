@@ -14,7 +14,7 @@ c_ Solution(o..
         ___ i, num __ e..(nums
             __ num n.. __ hashmap o. i - hashmap[num] > k:
                 hashmap[num] = i
-            ____:
+            ____
                 r.. T..
         r.. F..
     

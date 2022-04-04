@@ -19,12 +19,12 @@ c_ Solution(o..
         __ val1 __ val2:
             __ valX1 __ valX2:
                 r.. 'Infinite solutions'
-            ____:
+            ____
                 r.. 'x=0'
-        ____:
+        ____
             __ valX1 __ valX2:
                 r.. 'No solution'
-            ____:
+            ____
                 val = (val2-val1)//(valX1-valX2)
                 r.. 'x=%s' % val
     
@@ -43,7 +43,7 @@ c_ Solution(o..
                 __ i < l..(s) a.. s[i] __ 'x':
                     valX1 += num*sig
                     i += 1
-                ____:
+                ____
                     val1 += num*sig
             ____ s[i] __ 'x':
                 __ i __ 0:

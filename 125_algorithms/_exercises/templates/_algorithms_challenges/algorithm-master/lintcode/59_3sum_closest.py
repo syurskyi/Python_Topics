@@ -29,7 +29,7 @@ c_ Solution:
 
                 __ total < target:
                     b += 1
-                ____:
+                ____
                     c -= 1
 
         r.. ans __ ans < INF ____ -1

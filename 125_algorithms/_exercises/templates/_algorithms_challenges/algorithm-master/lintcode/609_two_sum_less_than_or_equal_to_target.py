@@ -19,7 +19,7 @@ c_ Solution:
                 # e.g, from 1 to 4, 1-2, 1-3, 1-4, got 3 connections
                 ans += right - left
                 left += 1
-            ____:
+            ____
                 right -= 1
 
         r.. ans

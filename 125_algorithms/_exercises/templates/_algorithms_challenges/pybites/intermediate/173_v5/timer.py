@@ -31,6 +31,6 @@ ___ add_todo(delay_time: s.., task: s..,
             td += t..(minutes=i..(dl[:-1]
         ____ dl[-1] __ 's':
             td += t..(seconds=i..(dl[:-1]
-        ____:
+        ____
             td += t..(seconds=i..(dl
     r.. f'{task} @ {td.s..("%Y-%m-%d %H:%M:%S")}'

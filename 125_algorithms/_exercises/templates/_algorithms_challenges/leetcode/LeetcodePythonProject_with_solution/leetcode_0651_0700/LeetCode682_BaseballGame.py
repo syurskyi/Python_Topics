@@ -19,9 +19,9 @@ c_ Solution(o..
                 res += valids[-1]*2
                 valids.a..(valids[-1]*2)
             ____ c __ 'C':
-                d = valids.pop()
+                d = valids.p.. )
                 res -= d
-            ____:
+            ____
                 res += i..(c)
                 valids.a..(i..(c
         r.. res

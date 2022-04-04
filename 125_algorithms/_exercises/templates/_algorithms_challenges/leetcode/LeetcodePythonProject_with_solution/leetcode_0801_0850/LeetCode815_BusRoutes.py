@@ -34,7 +34,7 @@ c_ Solution(o..
             size = l..(queue)
             count += 1
             ___ _ __ r..(size
-                stop = queue.pop(0)
+                stop = queue.p.. 0)
                 __ stop __ t: r.. count
                 ___ r __ hashmap[stop]:
                     __ r __ addedRoute: _____

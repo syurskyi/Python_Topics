@@ -24,7 +24,7 @@ ___ simple_calculator(calculation
             i..(x)
         ______:
             r.. F..
-        ____:
+        ____
             r.. T..
     
 

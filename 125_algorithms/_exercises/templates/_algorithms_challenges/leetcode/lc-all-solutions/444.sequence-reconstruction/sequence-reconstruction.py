@@ -32,7 +32,7 @@ c_ Solution(o..
     visited = c...d..(i..)
     queue = [q ___ q __ incomings __ incomings[q] __ 0]
     w.... l..(queue) __ 1:
-      top = queue.pop()
+      top = queue.p.. )
       order.a..(top)
       ___ nbr __ graph[top]:
         incomings[nbr] -= 1

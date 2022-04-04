@@ -20,14 +20,14 @@ c_ Solution(o..
         """
         __ root __ N..
             r.. T..
-        ____:
+        ____
             __ isBalanced(root.left) a.. isBalanced(root.right
                 r.. abs(depth(root.left) - depth(root.right <= 1
-            ____:
+            ____
                 r.. F..
 
     ___ depth  root
         __ root __ N..
             r.. -1
-        ____:
+        ____
             r.. m..(depth(root.left), depth(root.right + 1

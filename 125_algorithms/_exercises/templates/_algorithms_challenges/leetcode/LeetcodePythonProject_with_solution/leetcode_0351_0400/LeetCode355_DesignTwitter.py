@@ -34,7 +34,7 @@ c_ Twitter(o..
             prevTweet = latestTweets[userId]
             tweet = TweetObj(tweet_id, userId, tweetId, prevTweet)
             latestTweets[userId] = tweet
-        ____:
+        ____
             tweet = TweetObj(tweet_id, userId, tweetId, N..)
             latestTweets[userId] = tweet
 
@@ -78,7 +78,7 @@ c_ Twitter(o..
         """
         __ followerId __ following:
             following[followerId].add(followeeId)
-        ____:
+        ____
             following[followerId] = s..([followeeId])
 
     ___ unfollow  followerId, followeeId

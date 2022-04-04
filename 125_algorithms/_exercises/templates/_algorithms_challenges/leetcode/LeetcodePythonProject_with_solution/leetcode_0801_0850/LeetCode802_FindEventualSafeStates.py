@@ -23,7 +23,7 @@ c_ Solution(o..
                 queue.a..(i)
         res    # list
         w.... queue:
-            i = queue.pop(0)
+            i = queue.p.. 0)
             res.a..(i)
             ___ j __ inlinks[i]:
                 outdegrees[j] -= 1

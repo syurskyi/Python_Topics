@@ -32,13 +32,13 @@ c_ Solution:
         stk    # list
         ___ n __ nums[::-1]:
             w.... stk a.. stk[-1] <= n:
-                stk.pop()
+                stk.p.. )
             stk.a..(n)
 
         ret    # list
         ___ n __ nums[::-1]:
             w.... stk a.. stk[-1] <= n:
-                stk.pop()
+                stk.p.. )
             ret.a..(stk[-1] __ stk ____ -1)
             stk.a..(n)
 
@@ -59,7 +59,7 @@ c_ Solution:
             t = bisect(A, e)
             __ t __ l..(A
                 ret.a..(-1)
-            ____:
+            ____
                 ret.a..(A[t])
 
         print(ret)

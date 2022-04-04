@@ -7,7 +7,7 @@ ___ run_length_encoding(s
 	___ c __ s[1:]:
 		__ char __ c:
 			count += 1
-		____:
+		____
 			res.a..([count,s..(char)])
 			char = c
 			count = 1

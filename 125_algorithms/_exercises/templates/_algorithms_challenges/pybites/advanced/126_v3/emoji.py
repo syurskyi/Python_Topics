@@ -19,7 +19,7 @@ ___ _make_emoji_mapping
        - return dict with keys=emojis, values=names"""
     __ _make_emoji_mapping.MAPPING:
         res = _make_emoji_mapping.MAPPING
-    ____:
+    ____
         res = d..()
         ___ em __ r..(START_EMOJI_RANGE, ___.maxunicode + 1
             emoji = chr(em)

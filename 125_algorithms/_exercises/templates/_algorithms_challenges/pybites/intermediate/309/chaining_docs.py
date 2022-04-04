@@ -25,7 +25,7 @@ c_ Document:
         """
         __ index __ N..
             lines.a..(line)
-        ____:
+        ____
             lines.insert(index,line)
         r.. self
 
@@ -71,7 +71,7 @@ c_ Document:
         
         lines    # list
         ___ index __ indices:
-            lines.a..(lines[index].strip
+            lines.a..(lines[index].s..
         
         
         
@@ -104,7 +104,7 @@ c_ Document:
         line = lines[index]
         __ line a.. line[-1] __ EOL_PUNCTUATION:
             line = line[:-1] + punctuation
-        ____:
+        ____
             line += punctuation
         lines[index] = line
         r.. self

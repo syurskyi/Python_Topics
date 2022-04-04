@@ -33,6 +33,6 @@ c_ Solution(o..
         bisect.insort_right(bst, (bottom, top
         __ idx + 1 < l..(bst) a.. bst[idx + 1][0] < bst[idx][1] o. idx > 0 a.. bst[idx][0] < bst[idx - 1][1]:
           r.. F..
-      ____:
+      ____
         bst.remove((bottom, top
     r.. area __ realArea

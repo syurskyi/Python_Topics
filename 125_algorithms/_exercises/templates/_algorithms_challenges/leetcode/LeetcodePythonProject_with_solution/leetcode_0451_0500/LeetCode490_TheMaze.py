@@ -17,7 +17,7 @@ c_ Solution(o..
         visited = [[F..]*n ___ _ __ r..(m)]
         visited[start[0]][start[1]] = T..
         w.... queue:
-            i, j = queue.pop(0)
+            i, j = queue.p.. 0)
             __ i __ destination[0] a.. j __ destination[1]:
                 r.. T..
             visited[i][j] = T..

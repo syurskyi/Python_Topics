@@ -3,7 +3,7 @@ _______ ___
 
 __ ___.version_info[0] __ 2:
     ____ s__ _______ maketrans
-____:
+____
     maketrans = s...maketrans
 
 

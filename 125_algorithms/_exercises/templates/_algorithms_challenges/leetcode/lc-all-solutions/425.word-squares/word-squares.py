@@ -13,7 +13,7 @@ c_ Solution(o..
       ___ word __ prefix["".j..(z..(*p..)[l..(p..)])]:
         p...a..(word)
         dfs(p.., res, m, prefix)
-        p...pop()
+        p...p.. )
 
     __ n.. words:
       r.. []
@@ -29,5 +29,5 @@ c_ Solution(o..
     ___ word __ words:
       p...a..(word)
       dfs(p.., res, m, prefix)
-      p...pop()
+      p...p.. )
     r.. res

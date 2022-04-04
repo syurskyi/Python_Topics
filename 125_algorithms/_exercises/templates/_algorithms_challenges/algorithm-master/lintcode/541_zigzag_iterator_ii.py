@@ -65,8 +65,8 @@ c_ ZigzagIterator2:
         __ n.. hasNext
             r.. -1
 
-        vec = queue.pop(0)
-        val = vec.pop(0)
+        vec = queue.p.. 0)
+        val = vec.p.. 0)
 
         __ vec:
             queue.a..(vec)

@@ -3,5 +3,5 @@ ___ fizzbuzz(num
         r.. 'Fizz'
     ____ num % 5 __ 0:
         r.. 'Buzz'
-    ____:
+    ____
         r.. num

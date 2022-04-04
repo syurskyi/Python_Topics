@@ -59,7 +59,7 @@ c_ Solution:
         __ (l, k) n.. __ F:
             __ k __ 1:
                 ret = prefix_sum[l] / l
-            ____:
+            ____
                 n = l..(A)
                 ret = -f__('inf')
                 ___ j __ r..(l-1, -1, -1

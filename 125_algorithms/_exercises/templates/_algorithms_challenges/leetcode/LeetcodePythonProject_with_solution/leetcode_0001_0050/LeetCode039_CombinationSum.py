@@ -23,4 +23,4 @@ c_ Solution(o..
         ___ i __ r..(ind, l..(nums:
             curr.a..(nums[i])
             helper(nums, i, curr, target-nums[i], res)
-            curr.pop()
+            curr.p.. )

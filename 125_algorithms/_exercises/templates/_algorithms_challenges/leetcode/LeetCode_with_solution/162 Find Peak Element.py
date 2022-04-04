@@ -36,7 +36,7 @@ c_ Solution:
                 r.. m
             ____ _get(m+1) > _get(m
                 l = m+1
-            ____:
+            ____
                 h = m
 
         r.. -1
@@ -44,7 +44,7 @@ c_ Solution:
     ___ _get  i
         __ i < 0 o. i >= l..(A
             r.. -___.maxint-1
-        ____:
+        ____
             r.. A[i]
 
     ___ findPeakElement_complicated  nums
@@ -69,7 +69,7 @@ c_ Solution:
 
             ____ m+1 < n a.. nums[m+1] > nums[m]:
                 l = m+1
-            ____:
+            ____
                 h = m
 
         r.. -1

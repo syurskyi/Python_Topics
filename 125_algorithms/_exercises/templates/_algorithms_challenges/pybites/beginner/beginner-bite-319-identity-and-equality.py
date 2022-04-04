@@ -68,7 +68,7 @@ c_ Car:
             r.. "A week old"
         ____ days __ 365:  # *
             r.. "A year old"
-        ____:
+        ____
             r.. "Neither a week, nor a year old"
 
     $
@@ -85,7 +85,7 @@ ___ is_same_car_color_and_model(car1, car2
     """
     __ car1.-e(car2
         r.. T..
-    ____:
+    ____
         r.. F..
 
 
@@ -96,7 +96,7 @@ ___ is_same_instance_of_car(car1, car2
     """
     __ car1 __ car2:
         r.. T..
-    ____:
+    ____
         r.. false
 
 
@@ -105,7 +105,7 @@ config2 = [['gas', 'electro', 'hybrid' , '200 PS', 'radio'
 
 __ t..(config1) != l.. o. t..(config2) != l..:
     r.. T..()
-____:
+____
     print("OK")
 
 __ isi..(config1, l..

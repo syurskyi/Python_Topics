@@ -13,5 +13,5 @@ ___ validate_password(password
     __ password n.. __ used_passwords a.. b..(s
         used_passwords.add(password)
         r.. b..(s)
-    ____:
+    ____
         r.. F..

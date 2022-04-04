@@ -32,11 +32,11 @@ ___ get_us_bank_holidays(content=content
     ___ i,row __ e..(table.find_all('tr':
         __ i __ 0:
             _____
-        date = row.select_one('td:nth-child(2)').getText(strip=T..)
+        date = row.select_one('td:nth-child(2)').getText(s..=T..)
         hyphen = date.i.. '-')
         date = date[hyphen+1:hyphen+ 3]
 
-        holiday = row.select_one('td:nth-child(4)').getText(strip=T..)
+        holiday = row.select_one('td:nth-child(4)').getText(s..=T..)
         holidays[date].a..(holiday)
     
 

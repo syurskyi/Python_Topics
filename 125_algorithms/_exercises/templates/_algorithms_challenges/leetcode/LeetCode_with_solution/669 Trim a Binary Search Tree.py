@@ -65,5 +65,5 @@ c_ Solution:
             r.. node.right
         ____ node.val > R:
             r.. node.left
-        ____:
+        ____
             r.. node

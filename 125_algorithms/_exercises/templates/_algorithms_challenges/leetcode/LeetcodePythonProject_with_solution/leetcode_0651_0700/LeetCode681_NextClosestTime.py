@@ -26,7 +26,7 @@ c_ Solution(o..
         __ mm >= 60:
             carry = mm//60
             mm = mm%60
-        ____:
+        ____
             carry = 0
         hh += carry
         __ hh >= 24:

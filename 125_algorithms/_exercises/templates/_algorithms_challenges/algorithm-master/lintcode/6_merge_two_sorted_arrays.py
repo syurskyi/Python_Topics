@@ -18,7 +18,7 @@ c_ Solution:
             __ A[i] < B[j]:
                 ans[index] = A[i]
                 i += 1
-            ____:
+            ____
                 ans[index] = B[j]
                 j += 1
             index += 1

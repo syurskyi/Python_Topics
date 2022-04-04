@@ -29,7 +29,7 @@ c_ Solution(o..
             r.. newRoot
         ____ val < l:
             r.. trimBST(root.right, l, r)
-        ____:
+        ____
             r.. trimBST(root.left, l, r)
     
     ___ test

@@ -56,7 +56,7 @@ c_ Solution(o..
 
         __ min_win[1] __ ___.maxint:
             r.. ""
-        ____:
+        ____
             r.. S[min_win[0]:min_win[1]]
 
 

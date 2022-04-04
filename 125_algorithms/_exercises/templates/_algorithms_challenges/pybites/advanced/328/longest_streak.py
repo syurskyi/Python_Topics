@@ -58,7 +58,7 @@ ___ longest_streak(
 
             __ date + day_timedelta __ previous_date:
                 current_streak += 1
-            ____:
+            ____
                 __ current_streak > longest_streak:
                     longest_streak = current_streak
                     start_date = current_start __ current_start ____ date

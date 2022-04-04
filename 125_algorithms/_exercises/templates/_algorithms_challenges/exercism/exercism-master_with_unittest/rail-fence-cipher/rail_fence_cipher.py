@@ -7,18 +7,18 @@ c_ Rails:
     ___ populate_rails_linear  message, rail_lengths
         message_list = l..(message)
         ___ rail __ linear_iterator(rail_lengths
-            rail.a..(message_list.pop(0
+            rail.a..(message_list.p.. 0
 
     ___ populate_rails_zig_zag  message
         message_list = l..(message)
         ___ rail __ zig_zag_iterator(message
-            rail.a..(message_list.pop(0
+            rail.a..(message_list.p.. 0
 
     ___ to_string_linear
         r.. ''.j..([data ___ rail __ rails ___ data __ rail])
 
     ___ to_string_zig_zag  message
-        r.. ''.j..([rail.pop(0) ___ rail __
+        r.. ''.j..([rail.p.. 0) ___ rail __
                         zig_zag_iterator(message)])
 
     ___ linear_iterator  rail_lengths
@@ -37,7 +37,7 @@ c_ Rails:
     ___ increment_index  index, increasing
         __ increasing:
             r.. index + 1
-        ____:
+        ____
             r.. index - 1
 
     ___ direction  index, increasing
@@ -45,7 +45,7 @@ c_ Rails:
             r.. T..
         ____ index __ num_rails - 1:
             r.. F..
-        ____:
+        ____
             r.. increasing
 
 

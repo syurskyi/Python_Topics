@@ -19,7 +19,7 @@ c_ Solution(o..
                 nums[i]=j
                 colors[j] -= 1
                 i += 1
-            ____:
+            ____
                 j += 1
     
     ___ test

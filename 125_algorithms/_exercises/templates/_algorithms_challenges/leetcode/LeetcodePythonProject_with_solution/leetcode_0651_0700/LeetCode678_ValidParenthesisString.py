@@ -18,7 +18,7 @@ c_ Solution(o..
                 __ low > 0:
                     low -= 1
                 high -= 1
-            ____:
+            ____
                 __ low > 0:
                     low -= 1
                 high += 1

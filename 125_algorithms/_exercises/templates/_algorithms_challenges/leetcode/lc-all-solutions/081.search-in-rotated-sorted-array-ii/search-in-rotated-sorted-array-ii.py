@@ -13,14 +13,14 @@ c_ Solution(o..
       __ nums[start] < nums[mid]:
         __ nums[start] <= target <= nums[mid]:
           end = mid
-        ____:
+        ____
           start = mid
       ____ nums[start] > nums[mid]:
         __ nums[mid] <= target <= nums[end]:
           start = mid
-        ____:
+        ____
           end = mid
-      ____:
+      ____
         start += 1
 
     __ nums[start] __ target:

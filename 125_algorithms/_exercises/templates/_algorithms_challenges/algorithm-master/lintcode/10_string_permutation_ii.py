@@ -23,4 +23,4 @@ c_ Solution:
                 _____
             p...a..(S[i])
             dfs(S[:i] + S[i + 1:], ans, p..)
-            p...pop()
+            p...p.. )

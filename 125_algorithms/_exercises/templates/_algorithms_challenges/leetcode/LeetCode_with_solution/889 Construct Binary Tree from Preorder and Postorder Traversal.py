@@ -47,12 +47,12 @@ c_ Solution:
         ___ e __ pre:
             stk.a..(TreeNode(e
             w.... stk a.. stk[-1].val __ post[j]:
-                popped = stk.pop()
+                popped = stk.p.. )
                 j += 1
                 __ stk:
                     __ n.. stk[-1].left:
                         stk[-1].left = popped
-                    ____:
+                    ____
                         stk[-1].right = popped
 
         ... j __ l..(post)
@@ -77,13 +77,13 @@ c_ Solution:
             # multiple answers
             left = N..
             right = constructFromPrePost(pre[1:], post[:-1])
-        ____:
+        ____
             l = 0
             ___ a __ post:
                 l += 1
                 __ a __ pre[1]:
                     _____
-            ____:
+            ____
                 r..
 
             left = constructFromPrePost(pre[1:1+l], post[:l])

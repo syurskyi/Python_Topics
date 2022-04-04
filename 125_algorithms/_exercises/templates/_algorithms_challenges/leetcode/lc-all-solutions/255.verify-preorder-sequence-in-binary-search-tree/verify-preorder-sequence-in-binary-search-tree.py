@@ -13,7 +13,7 @@ c_ Solution(o..
       __ lastElem > preorder[i]:
         r.. F..
       w.... l..(stack) > 0 a.. preorder[i] > stack[-1]:
-        lastElem = stack.pop()
+        lastElem = stack.p.. )
       stack.a..(preorder[i])
 
     r.. T..

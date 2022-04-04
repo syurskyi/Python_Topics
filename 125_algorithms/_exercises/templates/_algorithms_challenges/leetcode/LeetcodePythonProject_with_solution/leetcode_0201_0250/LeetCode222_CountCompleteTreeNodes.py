@@ -23,7 +23,7 @@ c_ Solution(o..
         rightHeight = getRightHeight(root)
         __ leftHeight __ rightHeight:
             r.. i..(m__.pow(2, leftHeight - 1
-        ____:
+        ____
             r.. countNodes(root.left) + countNodes(root.right) + 1
     
     ___ getLeftHeight  root

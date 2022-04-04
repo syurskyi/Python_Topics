@@ -23,7 +23,7 @@ c_ Solution(o..
         count = 0
         res    # list
         w.... queue:
-            node = queue.pop(0)
+            node = queue.p.. 0)
             sumVal += node.val
             count += 1
             __ node.left:

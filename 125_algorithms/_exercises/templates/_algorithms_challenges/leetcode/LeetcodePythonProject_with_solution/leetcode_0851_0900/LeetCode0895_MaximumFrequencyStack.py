@@ -53,14 +53,14 @@ c_ FreqStack_self(o..
         __ x n.. __ hashmap:
             node = ListNode(x)
             hashmap[x] = node
-        ____:
+        ____
             node = hashmap[x]
         node.freq += 1
         node.indexes.a..(idx)
         __ n.. head:
             head = node
             tail = node
-        ____:
+        ____
             node0 = node.next
             w.... node0 a.. node0.freq <= node.freq:
                 node0 = node0.next
@@ -68,7 +68,7 @@ c_ FreqStack_self(o..
                 nextNode = node0.next
                 node0.next = node
                 node.next = nextNode
-            ____:
+            ____
                 tail.next = node
 
     ___ pop
@@ -77,7 +77,7 @@ c_ FreqStack_self(o..
         """
         node = tail
         node.freq -= 1
-        node.indexes.pop()
+        node.indexes.p.. )
         val = node.val
         __ node.freq __ 0:
             del hashmap[val]
@@ -87,16 +87,16 @@ c_ FreqStack_self(o..
                 prevNode.next = nextNode
                 __ nextNode:
                     nextNode.prev = prevNode
-                ____:
+                ____
                     tail = prevNode
-            ____:
+            ____
                 head = nextNode
                 __ nextNode:
                     nextNode.prev = prevNode
-                ____:
+                ____
                     head = N..
                     tail = N..
-        ____:
+        ____
             node0 = node.prev
             w.... node0 a.. (node0.freq > node.freq o.
                              (node0.freq __ node.freq a..
@@ -106,7 +106,7 @@ c_ FreqStack_self(o..
                 prevNode = node0.prev
                 node0.prev = node
                 node.prev = prevNode
-            ____:
+            ____
                 head.prev = node
         r.. val
 

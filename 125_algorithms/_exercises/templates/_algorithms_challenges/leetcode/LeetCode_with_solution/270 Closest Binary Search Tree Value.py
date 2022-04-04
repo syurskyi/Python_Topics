@@ -29,7 +29,7 @@ c_ Solution(o..
         find(root, target, hi, F..)
         __ hi[0] - target < target - lo[0]:
             r.. i..(hi[0])
-        ____:
+        ____
             r.. i..(lo[0])
 
     ___ find  root, target, ret, lower=T..
@@ -43,7 +43,7 @@ c_ Solution(o..
         __ root.val < target:
             __ lower: ret[0] = m..(ret[0], root.val)
             find(root.right, target, ret, lower)
-        ____:
+        ____
             __ n.. lower: ret[0] = m..(ret[0], root.val)
             find(root.left, target, ret, lower)
 

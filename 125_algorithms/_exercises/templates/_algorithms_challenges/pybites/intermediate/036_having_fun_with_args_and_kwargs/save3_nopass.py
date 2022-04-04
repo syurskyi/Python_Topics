@@ -11,5 +11,5 @@ ___ get_profile(name, age, *sports, **awards
     __ sports a.. awards:
         r.. {'name': name, 'age': age,
             'sports': sports, 'awards': awards}
-    ____:
+    ____
         r.. {'name': name, 'age': age}

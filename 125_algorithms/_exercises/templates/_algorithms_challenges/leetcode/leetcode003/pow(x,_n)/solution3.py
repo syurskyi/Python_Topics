@@ -9,5 +9,5 @@ c_ Solution:
             r.. x
         ____ n < 0:
             r.. 1.0 / pow(x, -n)
-        ____:
+        ____
             r.. pow(x, n / 2) * pow(x, n - n / 2)

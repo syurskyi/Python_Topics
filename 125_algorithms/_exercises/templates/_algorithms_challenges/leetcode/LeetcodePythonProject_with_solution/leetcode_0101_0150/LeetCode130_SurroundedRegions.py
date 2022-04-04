@@ -34,7 +34,7 @@ c_ Solution(o..
         index = x*n+y
         queue = [index]
         w.... queue:
-            nextInd = queue.pop(0)
+            nextInd = queue.p.. 0)
             i = i..(nextInd/n)
             j = nextInd%n
             __ i > 1 a.. board[i-1][j] __ 'O':

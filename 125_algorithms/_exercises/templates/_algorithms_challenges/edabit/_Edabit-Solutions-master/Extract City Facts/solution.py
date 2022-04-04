@@ -4,6 +4,6 @@ ___ city_facts(city
             c  city[i]
         ____ i __ "population":
             p  city[i]
-        ____:
+        ____
             co  city[i]
     r.. ("{} has a population of {} and is situated in {}".f..(c,p,co

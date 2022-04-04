@@ -40,7 +40,7 @@ c_ Solution(o..
                 r.. T..
             ____ mat[mid][0] < target:
                 lo = mid+1
-            ____:
+            ____
                 hi = mid
 
         lst = mat[lo-1]  # <=
@@ -54,7 +54,7 @@ c_ Solution(o..
                 r.. T..
             ____ lst[mid] < target:
                 lo = mid+1
-            ____:
+            ____
                 hi = mid
 
         r.. F..

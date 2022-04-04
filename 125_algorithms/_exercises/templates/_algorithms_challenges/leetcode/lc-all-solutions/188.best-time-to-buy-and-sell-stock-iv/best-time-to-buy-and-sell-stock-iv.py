@@ -20,7 +20,7 @@ c_ Solution(o..
         r.. nums[mid]
       ____ k > mid:
         r.. quickselect(mid + 1, end, nums, k)
-      ____:
+      ____
         r.. quickselect(start, mid - 1, nums, k)
 
     ___ partition(start, end, nums
@@ -58,11 +58,11 @@ c_ Solution(o..
       w.... p < n a.. prices[p] > prices[p - 1]:
         p += 1
       w.... stack a.. prices[stack[-1][0]] > prices[v]:
-        _v, _p = stack.pop()
+        _v, _p = stack.p.. )
         heap.a..(prices[_p - 1] - prices[_v])
       w.... stack a.. prices[stack[-1][1] - 1] < prices[p - 1]:
         heap.a..(prices[stack[-1][1] - 1] - prices[v])
-        v, _ = stack.pop()
+        v, _ = stack.p.. )
       stack.a..((v, p
 
     heap += [prices[p - 1] - prices[v] ___ v, p __ stack]

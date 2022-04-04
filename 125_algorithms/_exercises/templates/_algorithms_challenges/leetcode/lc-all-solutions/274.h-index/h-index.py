@@ -9,7 +9,7 @@ c_ Solution(o..
     ___ c __ citations:
       __ c > n:
         dp[n] += 1
-      ____:
+      ____
         dp[c] += 1
 
     total = 0

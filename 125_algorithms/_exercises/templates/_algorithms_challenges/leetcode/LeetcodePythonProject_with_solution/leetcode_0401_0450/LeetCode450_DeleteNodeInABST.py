@@ -11,11 +11,11 @@ c_ Solution(o..
         __ n.. node: r.. root
         __ n.. parent:
             r.. removeNode(node)
-        ____:
+        ____
             newNode = removeNode(node)
             __ node __ parent.left:
                 parent.left = newNode
-            ____:
+            ____
                 parent.right = newNode
             r.. root
     
@@ -36,7 +36,7 @@ c_ Solution(o..
                 node = node.right
             node.right = right
             r.. newRoot
-        ____:
+        ____
             r.. N..
     
     ___ findNode  key, root, parent
@@ -46,5 +46,5 @@ c_ Solution(o..
             r.. parent, root
         ____ root.val > key:
             r.. findNode(key, root.left, root)
-        ____:
+        ____
             r.. findNode(key, root.right, root)

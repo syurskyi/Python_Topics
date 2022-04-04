@@ -8,7 +8,7 @@ ___ test_get_similarities
     # not interested in the order of the pairs
     similar_tags = {t..(s..(pair ___ pair __ similar_tags}
 
-    expected = [('cheat sheet', 'cheat sheets'),
+    e.. = [('cheat sheet', 'cheat sheets'),
                 ('python anywhere', 'pythonanywhere'),
                 ('web scraping', 'webscraping'),
                 ('object oriented', 'objectoriented'),
@@ -23,5 +23,5 @@ ___ test_get_similarities
                 ('object oriented', 'objectoriented'),
                 ('code challenges', 'codechallenges')]
 
-    ___ hit __ expected:
+    ___ hit __ e..:
         ... t..(s..(hit __ similar_tags, f'{hit} not in similar tags'

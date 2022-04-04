@@ -45,14 +45,14 @@ c_ Solution:
         __ S_lst[i].i..
             lst.a..(S_lst[i])
             dfs(lst, S_lst, i + 1)
-            lst.pop()
-        ____:
+            lst.p.. )
+        ____
             lst.a..(S_lst[i].l..
             dfs(lst, S_lst, i + 1)
-            lst.pop()
+            lst.p.. )
             lst.a..(S_lst[i].upper
             dfs(lst, S_lst, i + 1)
-            lst.pop()
+            lst.p.. )
 
 
 __ _______ __ _______

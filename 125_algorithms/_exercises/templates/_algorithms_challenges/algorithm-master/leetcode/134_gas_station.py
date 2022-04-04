@@ -22,7 +22,7 @@ c_ Solution:
             __ tank >= 0:
                 end += 1
                 tank += gas[end] - cost[end]
-            ____:
+            ____
                 start -= 1
                 tank += gas[start] - cost[start]
 

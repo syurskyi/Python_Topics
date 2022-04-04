@@ -18,8 +18,8 @@ c_ CheckBrackets:
             __ is_opening_bracket(bracket
                 stack.a..(bracket)
             ____ is_closing_bracket(bracket) a.. closes_existing_bracket(bracket, stack
-                stack.pop()
-            ____:
+                stack.p.. )
+            ____
                 r.. F..  # This is an invalid closing bracket
 
         r.. is_empty(stack)  # There are more open brackets left to close

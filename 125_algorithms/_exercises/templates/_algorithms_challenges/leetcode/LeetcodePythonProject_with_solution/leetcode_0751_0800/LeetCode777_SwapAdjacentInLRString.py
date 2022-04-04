@@ -64,7 +64,7 @@ c_ Solution(o..
         visited = s..([start])
         queue = [start]
         w.... queue:
-            s = queue.pop()
+            s = queue.p.. )
             __ s __ end:
                 r.. T..
             ___ i __ r..(l..(s)-1

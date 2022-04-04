@@ -14,7 +14,7 @@ c_ Solution:
             ___ j __ r..(m
                 __ i __ 0:
                     hist[i][j] = i..(matrix[i][j])
-                ____:
+                ____
                     __ matrix[i][j] __ '1':
                         hist[i][j] = 1 + hist[i - 1][j]
         res = 0
@@ -30,10 +30,10 @@ c_ Solution:
         stack    # list
         ___ i __ r..(n + 1
             w.... stack a.. (i __ n o. heights[stack[-1]] > heights[i]
-                h = heights[stack.pop()]
+                h = heights[stack.p.. )]
                 __ stack:
                     w = i - stack[-1] - 1
-                ____:
+                ____
                     w = i
                 max_area = m..(max_area, h * w)
             stack.a..(i)

@@ -13,7 +13,7 @@ c_ Solution(o..
             __ num < s3:
                 r.. T..
             w.... stack a.. stack[-1] < num:
-                s3 = stack.pop()
+                s3 = stack.p.. )
             stack.a..(num)
         r.. F..
     

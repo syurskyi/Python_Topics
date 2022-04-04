@@ -46,7 +46,7 @@ c_ Solution(o..
 
             __ j __ n:
                 str_builder += char
-            ____:
+            ____
                 _____
 
         r.. str_builder

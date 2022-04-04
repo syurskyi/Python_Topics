@@ -25,7 +25,7 @@ c_ Solution(o..
             stack.a..(node)
             node = node.left
         w.... stack:
-            node = stack.pop()
+            node = stack.p.. )
             __ prev >= node.val:
                 r.. F..
             prev = node.val

@@ -9,7 +9,7 @@ c_ Solution(o..
       mid = start + (end - start) / 2
       __ nums[mid] < nums[mid + 1]:
         start = mid
-      ____:
+      ____
         end = mid
     __ nums[start] > nums[end]:
       r.. start

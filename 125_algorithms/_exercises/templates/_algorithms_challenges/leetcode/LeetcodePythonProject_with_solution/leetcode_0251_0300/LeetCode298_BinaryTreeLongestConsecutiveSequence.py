@@ -25,13 +25,13 @@ c_ Solution(o..
         __ root.left:
             __ root.left.val __ root.val+1:
                 helper(root.left, length+1, result)
-            ____:
+            ____
                 result[0] = m..(result[0], length)
                 helper(root.left, 1, result)
         __ root.right:
             __ root.right.val __ root.val+1:
                 helper(root.right, length+1, result)
-            ____:
+            ____
                 result[0] = m..(result[0], length)
                 helper(root.right, 1, result)
     

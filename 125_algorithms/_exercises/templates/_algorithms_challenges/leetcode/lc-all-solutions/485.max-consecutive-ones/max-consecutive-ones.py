@@ -9,7 +9,7 @@ c_ Solution(o..
     ___ num __ nums:
       __ num __ 1:
         count += 1
-      ____:
+      ____
         count = 0
       ans = m..(ans, count)
     r.. ans

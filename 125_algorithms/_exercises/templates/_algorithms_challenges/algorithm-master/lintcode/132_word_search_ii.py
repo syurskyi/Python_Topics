@@ -16,7 +16,7 @@ c_ Solution:
         ___ char __ s__:
             __ char __ parent 'children' :
                 parent = parent 'children' [char]
-            ____:
+            ____
                 parent 'children' [char] = new_node()
                 parent = parent 'children' [char]
         parent 'end_of'  = s__

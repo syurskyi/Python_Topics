@@ -32,23 +32,23 @@ c_ Solution(o..
                 hashmap0 = helper(s[prev:i-1])
                 __ i __ l..(s) o. n.. s[i].i..
                     count = 1
-                ____:
+                ____
                     prev = i
                     w.... i < l..(s) a.. s[i].i..
                         i += 1
                     count = i..(s[prev:i])
                 ___ elem, freq __ hashmap0.i..:
                     hashmap[elem] = hashmap.g.. elem, 0)+freq*count
-            ____:
+            ____
                 __ i+1 < l..(s) a.. __.m..('[a-z]', s[i+1]
                     elem = s[i:i+2]
                     i+=1
-                ____:
+                ____
                     elem = s[i]
                 i+=1
                 __ i __ l..(s) o. n.. s[i].i.. o. s[i] __ '(':
                     count = 1
-                ____:
+                ____
                     prev = i
                     w.... i < l..(s) a.. s[i].i..
                         i += 1

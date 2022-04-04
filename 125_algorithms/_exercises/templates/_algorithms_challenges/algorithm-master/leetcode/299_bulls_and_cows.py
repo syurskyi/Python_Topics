@@ -51,7 +51,7 @@ c_ Solution:
         ___ i __ r..(l..(secret:
             __ secret[i] __ guess[i]:
                 bulls += 1
-            ____:
+            ____
                 cnt_s[i..(secret[i])] += 1
                 cnt_g[i..(guess[i])] += 1
 

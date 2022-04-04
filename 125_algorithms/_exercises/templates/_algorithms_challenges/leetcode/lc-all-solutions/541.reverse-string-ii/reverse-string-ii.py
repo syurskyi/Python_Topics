@@ -13,14 +13,14 @@ c_ Solution(o..
     ___ c __ s:
       __ isFirst:
         a = c + a
-      ____:
+      ____
         b += c
       cnt += 1
       __ cnt __ k:
         __ isFirst:
           ans.a..(a)
           a = ""
-        ____:
+        ____
           ans.a..(b)
           b = ""
         isFirst = n.. isFirst

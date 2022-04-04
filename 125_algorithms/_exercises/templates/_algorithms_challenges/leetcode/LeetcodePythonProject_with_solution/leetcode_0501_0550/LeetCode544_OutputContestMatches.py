@@ -18,7 +18,7 @@ c_ Solution(o..
             r.. '(%s,%s)' % (l[0], l[1])
         l0    # list
         w.... l:
-            l0.a..('(%s,%s)' % (l.pop(0), l.pop()))
+            l0.a..('(%s,%s)' % (l.p.. 0), l.p.. )))
         res = helper(l0)
         r.. res
     

@@ -36,7 +36,7 @@ ___ get_top_books(content_ N..
     count    # list
     ___ letter __ c:
         __ c[letter] >= MIN_COUNT:
-            books_final.a..(letter.strip
+            books_final.a..(letter.s..
             count.a..(c[letter])
 
     r.. s..(l..(z..(books_final, count,

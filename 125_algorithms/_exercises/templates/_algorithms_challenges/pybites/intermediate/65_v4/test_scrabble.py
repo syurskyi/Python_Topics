@@ -25,10 +25,10 @@ ___ max_word_value(words
     ('B, R, C, O, O, E, O', 'boce'),
     ('G, A, R, Y, T, E, V', 'garvey'),
 ])
-___ test_max_word(draw, expected
+___ test_max_word(draw, e..
     draw = draw.s..(', ')
     words = get_possible_dict_words(draw)
-    __ l..(expected) > 1:
-        ... max_word_value(words) __ expected
-    ____:
-        ... max_word_value(words) __ expected
+    __ l..(e..) > 1:
+        ... max_word_value(words) __ e..
+    ____
+        ... max_word_value(words) __ e..

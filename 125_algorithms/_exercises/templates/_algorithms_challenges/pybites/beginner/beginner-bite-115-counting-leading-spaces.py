@@ -18,7 +18,7 @@ ___ count_indents_v1(text
     ___ c __ text:
        __ c __ ' ':
            n += 1
-       ____:
+       ____
            _____
 
     r.. n

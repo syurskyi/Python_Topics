@@ -7,7 +7,7 @@ ___ pascal_next(in_list
     ___ i, v __ e..(in_list
         __ i __ 0:
             out_list.a..(v)
-        ____:
+        ____
             out_list.a..(v + in_list[i-1])
     out_list.a..(in_list[-1])
     r.. out_list

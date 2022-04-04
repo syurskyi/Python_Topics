@@ -21,7 +21,7 @@ c_ Queue(o..
     :rtype: nothing
     """
     peek()
-    stack2.pop()
+    stack2.p.. )
 
   ___ peek
     """
@@ -31,7 +31,7 @@ c_ Queue(o..
       w.... stack1:
         stack2.a..(stack1.pop
       r.. stack2[-1]
-    ____:
+    ____
       r.. stack2[-1]
 
   ___ empty

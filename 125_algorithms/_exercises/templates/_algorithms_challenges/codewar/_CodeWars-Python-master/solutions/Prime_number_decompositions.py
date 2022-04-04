@@ -26,7 +26,7 @@ ___ getUniquePrimeFactorsWithCount(n
         ___ f __ factors:
             __ f __ result[0]:
                 result[1][-1] += 1
-            ____:
+            ____
                 result[0].a..(f)
                 result[1].a..(1)
     r.. result

@@ -22,7 +22,7 @@ c_ Solution(o..
                     dp[i][j] = dp[i][j-1] + grid[i][j]
                 ____ i != 0 a.. j __ 0:
                     dp[i][j] = dp[i-1][j] + grid[i][j]
-                ____:
+                ____
                     dp[i][j] = m..(dp[i-1][j], dp[i][j-1])+grid[i][j]
         r.. dp[-1][-1]
     

@@ -40,12 +40,12 @@ ___ calc_months_passed(year, month, day
 
    __ date_diff.years >= 1:
       total_months = date_diff.years * MONTHS_PER_YEAR
-   ____:
+   ____
       total_months = 0
 
    __ date_diff.days >= MIN_DAYS_TO_COUNT_AS_MONTH:
       total_months += date_diff.months + 1
-   ____:
+   ____
       total_months += date_diff.months
 
    r.. total_months

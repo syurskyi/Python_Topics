@@ -25,19 +25,19 @@ c_ DiffieHellmanTest(unittest.TestCase
         p = 23
         g = 5
         private = 6
-        expected = 8
+        e.. = 8
 
-        actual = diffie_hellman.public_key(p, g, private)
-        assertEqual(actual, expected)
+        a.. = diffie_hellman.public_key(p, g, private)
+        assertEqual(a.., e..)
 
     ___ test_can_calculate_secret_using_other_party_s_public_key
         p = 23
         public = 19
         private = 6
-        expected = 2
+        e.. = 2
 
-        actual = diffie_hellman.secret(p, public, private)
-        assertEqual(actual, expected)
+        a.. = diffie_hellman.secret(p, public, private)
+        assertEqual(a.., e..)
 
     ___ test_key_exchange
         p = 23

@@ -12,7 +12,7 @@ c_ Solution:
         stack = [1]
 
         w.... stack:
-            x = stack.pop()
+            x = stack.p.. )
             ans.a..(x)
 
             # considering the case no carry up if x + 1

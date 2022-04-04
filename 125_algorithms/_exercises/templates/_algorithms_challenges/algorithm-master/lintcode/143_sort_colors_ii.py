@@ -80,7 +80,7 @@ c_ Solution:
                     # leave it to
                     # the next iteration of `while count < k` to sort
                     i += 1
-                ____:
+                ____
                     colors[i], colors[right] = colors[right], colors[i]
                     right -= 1
 

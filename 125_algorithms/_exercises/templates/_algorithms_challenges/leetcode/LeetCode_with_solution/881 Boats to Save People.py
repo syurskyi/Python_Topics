@@ -41,7 +41,7 @@ c_ Solution:
         ret = 0
         q = d..(s..(people
         w.... q:
-            tail = q.pop()
+            tail = q.p.. )
             ret += 1
             __ q a.. q[0] + tail <= limit:
                 q.popleft()

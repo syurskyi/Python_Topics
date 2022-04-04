@@ -28,7 +28,7 @@ c_ Solution(o..
         w.... prime*prime <= num a.. num > 1:
             __ num % prime != 0:
                 prime += 1
-            ____:
+            ____
                 num /= prime
                 __ prime n.. __ ugly:
                     r.. F..

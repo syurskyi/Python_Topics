@@ -11,5 +11,5 @@ WORKOUTS = {'mon': 'upper body #1',
             
 ___ test_print_workout_days(capfd
     output = ?.r .. 0]
-    ... t..(output) __ s..
+    ... t.. ?  __ s..
     ... print_workout_days('upper body #1') __ 'Mon'

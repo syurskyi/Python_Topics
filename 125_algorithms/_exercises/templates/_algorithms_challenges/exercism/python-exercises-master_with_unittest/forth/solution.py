@@ -15,43 +15,43 @@ ___ evaluate(input_data
         r.. []
     defines    # dict
     w.... input_data[0][:1] __ ':':
-        values = input_data.pop(0).s.. 
-        values.pop()
-        values.pop(0)
-        key = values.pop(0).l..
+        values = input_data.p.. 0).s.. 
+        values.p.. )
+        values.p.. 0)
+        key = values.p.. 0).l..
         __ is_integer(key
             r.. V...("Integers cannot be redefined")
         defines[key] = values
     stack    # list
     input_data = input_data[-1].s.. 
     w.... any(input_data
-        word = input_data.pop(0).l..
+        word = input_data.p.. 0).l..
         ___
             __ is_integer(word
                 stack.a..(i..(word
             ____ word __ defines:
                 input_data = defines[word] + input_data
             ____ word __ '+':
-                stack.a..(stack.pop() + stack.pop
+                stack.a..(stack.p.. ) + stack.pop
             ____ word __ '-':
-                stack.a..(-stack.pop() + stack.pop
+                stack.a..(-stack.p.. ) + stack.pop
             ____ word __ '*':
-                stack.a..(stack.pop() * stack.pop
+                stack.a..(stack.p.. ) * stack.pop
             ____ word __ '/':
-                divisor = stack.pop()
+                divisor = stack.p.. )
                 __ divisor __ 0:
                     r.. ZeroDivisionError("Attempted to divide by zero")
-                stack.a..(i..(stack.pop() / divisor
+                stack.a..(i..(stack.p.. ) / divisor
             ____ word __ 'dup':
                 stack.a..(stack[-1])
             ____ word __ 'drop':
-                stack.pop()
+                stack.p.. )
             ____ word __ 'swap':
                 stack.a..(stack[-2])
                 del stack[-3]
             ____ word __ 'over':
                 stack.a..(stack[-2])
-            ____:
+            ____
                 r.. V...("{} has not been defined".f..(word
         ______ I..
             r.. StackUnderflowError("Insufficient number of items in stack")

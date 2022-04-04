@@ -32,7 +32,7 @@ c_ Solution(o..
         stack    # list
         stack.a..(root)
         w.... stack:
-            root = stack.pop()
+            root = stack.p.. )
             p...a..(root.val)
             __ root.right __ n.. N..
                 stack.a..(root.right)

@@ -32,7 +32,7 @@ c_ Solution(o..
             pre = ret[-1]
             __ cur.start <= pre.end:  # overlap
                 pre.end = m..(pre.end, cur.end)
-            ____:
+            ____
                 ret.a..(cur)
 
         r.. ret

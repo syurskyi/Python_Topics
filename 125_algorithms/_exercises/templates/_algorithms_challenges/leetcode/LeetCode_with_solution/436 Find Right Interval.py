@@ -47,7 +47,7 @@ c_ Solution:
             idx = bisect_left(starts, itv.end)
             __ idx >= l..(starts
                 ret.a..(-1)
-            ____:
+            ____
                 ret.a..(
                     indexes[starts[idx]]
                 )

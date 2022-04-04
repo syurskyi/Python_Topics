@@ -1,5 +1,5 @@
 ___ s..(lst, item
     __ lst.c.. item) __ 0:
         r.. -1
-    ____:
+    ____
         r.. lst.i.. item)

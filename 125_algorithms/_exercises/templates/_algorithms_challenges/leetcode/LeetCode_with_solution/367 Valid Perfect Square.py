@@ -32,7 +32,7 @@ c_ Solution(o..
                 r.. T..
             ____ midsq < num:
                 lo = mid + 1
-            ____:
+            ____
                 hi = mid
 
         r.. F..

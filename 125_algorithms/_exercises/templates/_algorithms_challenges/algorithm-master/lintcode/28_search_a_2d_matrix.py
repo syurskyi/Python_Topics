@@ -20,7 +20,7 @@ c_ Solution:
                 left = mid
             ____ matrix[x][y] > target:
                 right = mid
-            ____:
+            ____
                 r.. T..
 
         r.. any(

@@ -29,7 +29,7 @@ c_ Solution(o..
             next_node = current.next
             __ current.val __ last.val:
                 last.next = next_node
-            ____:
+            ____
                 last = current
             current = next_node
         r.. head

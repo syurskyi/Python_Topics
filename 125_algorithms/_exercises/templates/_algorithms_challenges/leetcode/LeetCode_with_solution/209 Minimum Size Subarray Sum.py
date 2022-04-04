@@ -33,7 +33,7 @@ c_ Solution:
             __ S[hi]-S[lo] >= s:
                 mini = m..(mini, hi-lo)
                 lo += 1
-            ____:
+            ____
                 hi += 1
 
         r.. mini __ mini != ___.maxint ____ 0

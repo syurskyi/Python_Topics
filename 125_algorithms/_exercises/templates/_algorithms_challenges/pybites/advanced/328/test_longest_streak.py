@@ -35,11 +35,11 @@ ___ download_test_files
 
 ?p__.m__.p.("argument, expected",
                          z..(PATHS, RESULTS
-___ test_longest_streak_easterntz(argument, expected, download_test_files
-    ... longest_streak(argument, MY_TZ) __ expected
+___ test_longest_streak_easterntz(argument, e.., download_test_files
+    ... longest_streak(argument, MY_TZ) __ e..
 
 
 ?p__.m__.p.("argument, expected",
                          z..(PATHS, RESULTS_UTC
-___ test_longest_streak_utc(argument, expected, download_test_files
-    ... longest_streak(argument, UTC) __ expected
+___ test_longest_streak_utc(argument, e.., download_test_files
+    ... longest_streak(argument, UTC) __ e..

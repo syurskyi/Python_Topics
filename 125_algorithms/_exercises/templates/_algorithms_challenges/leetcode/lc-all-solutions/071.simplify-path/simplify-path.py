@@ -11,7 +11,7 @@ c_ Solution(o..
         _____
       __ p __ "..":
         __ stack:
-          stack.pop()
-      ____:
+          stack.p.. )
+      ____
         stack.a..(p)
     r.. "/" + "/".j..(stack)

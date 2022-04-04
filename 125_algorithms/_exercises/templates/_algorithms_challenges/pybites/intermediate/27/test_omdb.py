@@ -48,5 +48,5 @@ ___ test_type_of_movie_elements(movies
     (get_movie_most_nominations, 'Fight Club'),
     (get_movie_longest_runtime, 'Blade Runner 2049'),
 ])
-___ test_data_analysis(func, expected, movies
-    ... func(movies) __ expected
+___ test_data_analysis(func, e.., movies
+    ... func(movies) __ e..

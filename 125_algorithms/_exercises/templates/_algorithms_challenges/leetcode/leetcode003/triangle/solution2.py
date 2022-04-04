@@ -35,13 +35,13 @@ c_ Solution(o..
                     ____ j __ 0:
                         triangle[i][j] += triangle[i - 1][j]
                     # j == m - 1
-                    ____:
+                    ____
                         triangle[i][j] += triangle[i - 1][j - 1]
             __ i __ n - 1:
                 ___ col __ row:
                     __ res __ N..
                         res = col
-                    ____:
+                    ____
                         res = m..(col, res)
         r.. res
 

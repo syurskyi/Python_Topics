@@ -14,11 +14,11 @@ c_ Solution(o..
       __ left < n:
         p...a..("(")
         dfs(left + 1, p.., res, n)
-        p...pop()
+        p...p.. )
       __ left > 0:
         p...a..(")")
         dfs(left - 1, p.., res, n)
-        p...pop()
+        p...p.. )
 
     res    # list
     dfs(0, [], res, n)

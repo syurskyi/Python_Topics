@@ -22,9 +22,9 @@ ___ convert_pybites_chars(text
         __ char.l.. __ PYBITES:
             __ char.isupper
                 output += output.j..(char.l..
-            ____:
+            ____
                 output += output.j..(char.upper
-        ____:
+        ____
             output += output.j..(char)
     r.. output
 

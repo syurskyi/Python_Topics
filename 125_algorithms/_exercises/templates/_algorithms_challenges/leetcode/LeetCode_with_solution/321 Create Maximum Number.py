@@ -56,7 +56,7 @@ c_ SolutionTLE(o..
         stk    # list
         n = l..(A)
         ___ i __ x..(n
-            w.... stk a.. l..(stk)-1+(n-1-i+1) >= k a.. stk[-1] < A[i]: stk.pop()
+            w.... stk a.. l..(stk)-1+(n-1-i+1) >= k a.. stk[-1] < A[i]: stk.p.. )
             __ l..(stk) < k:
                 stk.a..(A[i])
 
@@ -76,7 +76,7 @@ c_ SolutionTLE(o..
             __ ahead2 >= l..(A2) o. (ahead1 < l..(A1) a.. A1[ahead1] > A2[ahead2]
                 ret.a..(A1[p1])
                 p1 += 1
-            ____:
+            ____
                 ret.a..(A2[p2])
                 p2 += 1
 

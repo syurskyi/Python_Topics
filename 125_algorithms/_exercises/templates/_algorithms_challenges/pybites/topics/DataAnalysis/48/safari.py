@@ -31,7 +31,7 @@ ___ create_chart
                         outstr += log_date+' '
                     __ 'python' __ second.l..:
                         outstr += PY_BOOK
-                    ____:
+                    ____
                         outstr += OTHER_BOOK
                     current_date = log_date
         __ outstr != '':

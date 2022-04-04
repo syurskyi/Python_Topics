@@ -42,7 +42,7 @@ c_ Solution(o..
                 r.. T..
             ____ mat[i][j] > target:
                 j -= 1
-            ____:
+            ____
                 i += 1
 
         r.. F..
@@ -87,12 +87,12 @@ c_ SolutionBinSearch(o..
                 r.. mid
             ____ A[mid] < t:
                 lo = mid+1
-            ____:
+            ____
                 hi = mid
 
         __ lower:
             r.. lo-1
-        ____:
+        ____
             r.. lo
 
 __ _______ __ _______

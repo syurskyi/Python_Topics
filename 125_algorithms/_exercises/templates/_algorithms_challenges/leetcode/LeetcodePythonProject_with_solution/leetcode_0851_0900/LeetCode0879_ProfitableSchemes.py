@@ -39,7 +39,7 @@ c_ Solution(o..
             curProfit += profit[i]
             curGroup.a..(group[i])
             dfs(i+1, group, profit, G, P, curGroup, curProfit, res)
-            curGroup.pop()
+            curGroup.p.. )
             curProfit -= profit[i]
     
     ___ test

@@ -20,23 +20,23 @@ c_ Solution(o..
         """
         __ root __ N..
             r.. T..
-        ____:
+        ____
             __ height(root) != -1:
                 r.. T..
-            ____:
+            ____
                 r.. F..
 
     ___ height  root
         # Return -1 if not balanced
         __ root __ N..
             r.. 0
-        ____:
+        ____
             left_height = height(root.left)
             right_height = height(root.right)
             __ left_height __ -1 o. right_height __ -1:
                 r.. -1
-            ____:
+            ____
                 __ abs(left_height - right_height) <= 1:
                     r.. m..(left_height, right_height) + 1
-                ____:
+                ____
                     r.. -1

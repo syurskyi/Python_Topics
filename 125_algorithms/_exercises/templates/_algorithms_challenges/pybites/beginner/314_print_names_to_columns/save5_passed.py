@@ -1,23 +1,23 @@
-____ t___ _______ L..  # not needed when we upgrade to 3.9
-
-
-___ print_names_to_columns(names: L..[s..], cols: i.. = 2) __ N..
-    name_list = [f'| {name:{10}}' ___ name __ names]
-
-    breaks    # list
-    ___ i __ r..(0, l..(names), cols
-        breaks.a.. _*| {names[i]:{10}}')
-
-    output = ''
-    __ cols __ 1:
-        ___ entry __ name_list:
-            output += ''.j..(entry) + '\n'
-    __ cols != 1:
-        breaks.pop(0)
-        ___ entry __ name_list:
-            __ entry __ breaks:
-                output += '\n' + ''.j..(entry)
-            ____:
-                output += ''.j..(entry)
-
-    print(output)
+# ____ t___ _______ L..  # not needed when we upgrade to 3.9
+#
+#
+# ___ print_names_to_columns names L.. s.. cols i..  2 __ N..
+#     name_list  _* | ? 10 ___ ? __ ?
+#
+#     breaks    # list
+#     ___ i __ r.. 0 l.. ? ?
+#         ?.a.. _*| ? ?| 10
+#
+#     output = ''
+#     __ cols __ 1
+#         ___ e.. __ n..
+#             ? +_ ''.j.. ? + '\n'
+#     __ c.. !_ 1
+#         b__.p.. 0
+#         ___ entry __ n..
+#             __ e.. __ b..
+#                 ? +_ '\n' + ''.j.. ?
+#             ____
+#                 ? +_ ''.j.. ?
+#
+#     print ?

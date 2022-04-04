@@ -8,7 +8,7 @@ c_ TwoSum:
     ___ add  number
         __ number __ count:
             count[number] += 1
-        ____:
+        ____
             count[number] = 1
 
     """

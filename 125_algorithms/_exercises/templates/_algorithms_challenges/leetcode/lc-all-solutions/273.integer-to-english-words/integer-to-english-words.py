@@ -24,7 +24,7 @@ c_ Solution(o..
       number = number % 100
       __ number __ tenToTwenty:
         ans.a..(tenToTwenty[number])
-      ____:
+      ____
         t = number / 10
         __ t != 0:
           ans.a..(tens[t])

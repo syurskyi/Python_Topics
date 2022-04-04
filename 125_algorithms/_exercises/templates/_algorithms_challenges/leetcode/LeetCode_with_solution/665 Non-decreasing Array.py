@@ -32,10 +32,10 @@ c_ Solution:
             __ n.. changed:
                 __ i - 1 < 0 o. A[i-1] <= A[i+1]:
                     A[i] = A[i+1]
-                ____:
+                ____
                     A[i+1] = A[i]
                 changed = T..
-            ____:
+            ____
                 r.. F..
 
         r.. T..
@@ -52,9 +52,9 @@ c_ Solution:
                 A[i] = A[i + 1]  # Error
                 __ i - 1 < 0 o. A[i - 1] <= A[i]:
                     changed = T..
-                ____:
+                ____
                     r.. F..
-            ____:
+            ____
                 r.. F..
 
         r.. T..

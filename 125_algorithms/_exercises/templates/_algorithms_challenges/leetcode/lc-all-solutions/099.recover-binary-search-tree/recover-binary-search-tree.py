@@ -12,7 +12,7 @@ c_ Solution:
         __ n1 __ N..
           n1 = pre
           n2 = root
-        ____:
+        ____
           n2 = root
     pre = root
     findBadNode(root.right)

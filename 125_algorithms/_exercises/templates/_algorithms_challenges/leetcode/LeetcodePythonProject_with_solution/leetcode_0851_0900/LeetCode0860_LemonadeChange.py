@@ -18,7 +18,7 @@ c_ Solution(o..
             __ b __ 10:
                 __ hashmap[5] >= 1:
                     hashmap[5] -= 1
-                ____:
+                ____
                     r.. F..
             ____ b __ 20:
                 val = 20
@@ -28,12 +28,12 @@ c_ Solution(o..
                 __ val __ 10:
                     __ hashmap[5] >= 1:
                         hashmap[5] -= 1
-                    ____:
+                    ____
                         r.. F..
-                ____:
+                ____
                     __ hashmap[5] >= 3:
                         hashmap[5] -= 3
-                    ____:
+                    ____
                         r.. F..
             hashmap[b] += 1
         r.. T..

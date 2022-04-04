@@ -15,7 +15,7 @@ c_ Solution:
             mid = (left + right) // 2
             __ check_valid(A, mid, k
                 right = mid
-            ____:
+            ____
                 left = mid
 
         r.. left __ check_valid(A, left, k) ____ right

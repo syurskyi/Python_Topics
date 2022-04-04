@@ -1,7 +1,7 @@
 ___ is_empty(s
     __ s __ "":
         r.. T..
-    ____:
+    ____
         r.. F..
 
 ___ test_empty

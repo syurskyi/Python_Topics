@@ -46,4 +46,4 @@ c_ Solution:
         __ node.right a.. node.right __ n.. start:
             find_path(node.right, node, remaining, ans, p..)
 
-        p...pop()
+        p...p.. )

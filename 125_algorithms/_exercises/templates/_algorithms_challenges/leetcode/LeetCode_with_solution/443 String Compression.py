@@ -51,7 +51,7 @@ c_ Solution:
             l = idx - s
             __ l __ 1:
                 s = m..(s + 1, l..(chars) - 1)
-            ____:
+            ____
                 ___ digit __ s..(l
                     s += 1
                     chars[s] = digit

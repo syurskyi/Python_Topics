@@ -11,9 +11,9 @@ ___ login_required(func
         __ user.l.. __ known_users:
             __ user.l.. __ loggedin_users:
                 r.. func $ $$
-            ____:
+            ____
                 r.. "please login"
-        ____:
+        ____
             r.. "please create an account"
     r.. wrapper
 

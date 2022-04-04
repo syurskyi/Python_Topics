@@ -14,7 +14,7 @@ ____ workouts _______ print_workout_days
     ('body', 'Mon, Tue, Thu, Fri\n'),
     ('khoo', 'No matching workout\n')
 ])
-___ test_print_workout_days(capfd, arg, expected
+___ test_print_workout_days(capfd, arg, e..
     print_workout_days(arg)
     output = ?.r .. 0]
-    ... output __ expected
+    ... output __ e..

@@ -49,7 +49,7 @@ c_ Trie:
         ___ w __ word:
             __ w __ cur.children:
                 cur = cur.children[w]
-            ____:
+            ____
                 r.. F..
 
         __ n.. cur.ended:  # not ended here
@@ -67,7 +67,7 @@ c_ Trie:
         ___ w __ prefix:
             __ w __ cur.children:
                 cur = cur.children[w]
-            ____:
+            ____
                 r.. F..
 
         r.. T..

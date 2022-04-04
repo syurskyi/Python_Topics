@@ -163,7 +163,7 @@ EXPECTED_OUTPUT_WITH_GAP  """
 
 
 ?p__.f..(scope'module')
-___ actual
+___ a..
     r.. [line.rstrip() ___ line __ filter_killed_mutants()]
 
 
@@ -176,16 +176,16 @@ ___ actual2
     test10 = mutpy_output.i.. '   - [#  10] CRP account:')
     test12 = mutpy_output.i.. '   - [#  12] CRP account:')
     output = mutpy_output[:test10] + mutpy_output[test12:]
-    r.. [line.rstrip() ___ line __ filter_killed_mutants(output)]
+    r.. [line.rstrip() ___ line __ filter_killed_mutants ? ]
 
 
-___ test_output_matches(actual
-    expected = [line.rstrip() ___ line __
+___ test_output_matches(a..
+    e.. = [line.rstrip() ___ line __
                 EXPECTED_OUTPUT.s...s.. ]
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_different_output(actual2
-    expected = [line.rstrip() ___ line __
+    e.. = [line.rstrip() ___ line __
                 EXPECTED_OUTPUT_WITH_GAP.s...s.. ]
-    ... actual2 __ expected
+    ... actual2 __ e..

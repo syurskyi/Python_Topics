@@ -22,7 +22,7 @@ c_ Solution(o..
         ___ i __ r..(n
             __ s[:i + 1] __ wordDict:
                 t[i] = T..
-            ____:
+            ____
                 ___ j __ r..(i
                     __ t[j] __ T.. a.. s[j + 1:i + 1] __ wordDict:
                         t[i] = T..

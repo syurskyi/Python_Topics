@@ -12,9 +12,9 @@ ____ color _______ Color
     ("orange", (255, 128, 0,
     ("puke", N..),
 ])
-___ test_color_class(color, expected
+___ test_color_class(color, e..
     c = Color(color)
-    ... c.rgb __ expected
+    ... c.rgb __ e..
 
 
 ?p__.m__.p.("rgb, expected", [
@@ -25,8 +25,8 @@ ___ test_color_class(color, expected
     ((0, 128, 0), "#008000"),
     ((255, 128, 0), "#ff8000"),
 ])
-___ test_color_classmethod_rgb2hex(rgb, expected
-    ... Color.rgb2hex(rgb) __ expected
+___ test_color_classmethod_rgb2hex(rgb, e..
+    ... Color.rgb2hex(rgb) __ e..
 
 
 ?p__.m__.p.("rgb", [
@@ -49,8 +49,8 @@ ___ test_color_rgb2hex_bad_value(rgb
     ("#008000", (0, 128, 0,
     ("#ff8000", (255, 128, 0,
 ])
-___ test_color_classmethod_hex2rgb(hex, expected
-    ... Color.hex2rgb(hex) __ expected
+___ test_color_classmethod_hex2rgb(hex, e..
+    ... Color.hex2rgb(hex) __ e..
 
 
 ?p__.m__.p.("value", [

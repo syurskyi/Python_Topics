@@ -27,7 +27,7 @@ c_ Solution:
     ___ is_valid_bst_aux  root
         __ root __ N..
             r.. T..
-        ____:
+        ____
             __ n.. is_valid_bst_aux(root.left
                 r.. F..
             __ prev __ n.. N..

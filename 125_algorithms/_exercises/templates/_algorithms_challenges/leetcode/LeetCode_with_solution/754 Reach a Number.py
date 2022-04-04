@@ -47,8 +47,8 @@ c_ Solution:
         delta = s - target
         __ delta % 2 __ 0:
             r.. k
-        ____:  # delta is odd
+        ____  # delta is odd
             __ (k + 1) % 2 __ 1:
                 r.. k + 1
-            ____:
+            ____
                 r.. k + 2

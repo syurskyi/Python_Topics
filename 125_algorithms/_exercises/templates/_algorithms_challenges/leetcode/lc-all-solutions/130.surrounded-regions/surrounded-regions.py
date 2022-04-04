@@ -19,7 +19,7 @@ c_ UnionFind
       r.. F..
     __ rank[x] > rank[y]:
       dad[y] = x
-    ____:
+    ____
       dad[x] = y
       __ rank[x] __ rank[y]:
         rank[y] += 1

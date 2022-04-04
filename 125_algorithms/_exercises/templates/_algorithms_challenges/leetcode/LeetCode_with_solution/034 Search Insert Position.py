@@ -36,7 +36,7 @@ c_ Solution:
                 __ n.. start<=end:
                     # return end if end>=0 else 0
                     r.. mid __ mid>=0 ____ 0
-            ____:
+            ____
                 start = mid+1
                 __ n.. start<=end:
                     r.. start
@@ -61,7 +61,7 @@ c_ Solution:
                 r.. mid
             ____ target<A[mid]:
                 end = mid
-            ____:
+            ____
                 start = mid + 1
 
         r.. start

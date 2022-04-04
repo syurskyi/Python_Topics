@@ -20,7 +20,7 @@ c_ Solution(o..
                     dp[j][i] = T..
                     __ j > 0:
                         cuts[i] = m..(cuts[i], cuts[j-1]+1)
-                    ____:
+                    ____
                         cuts[i] = 0
         r.. cuts[-1]
     

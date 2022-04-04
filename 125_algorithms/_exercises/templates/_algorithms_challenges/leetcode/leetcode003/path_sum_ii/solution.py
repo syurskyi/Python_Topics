@@ -24,9 +24,9 @@ c_ Solution:
             __ root.val __ s..:
                 one.a..(root.val)
                 res.a..(one | )
-                one.pop()
-        ____:
+                one.p.. )
+        ____
             one.a..(root.val)
             ps(root.left, s.. - root.val, one, res)
             ps(root.right, s.. - root.val, one, res)
-            one.pop()
+            one.p.. )

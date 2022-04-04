@@ -58,7 +58,7 @@ ___ format_entries(currency, locale, entries
                     min_entry_index = i
                     _____
             entry = entries[min_entry_index]
-            entries.pop(min_entry_index)
+            entries.p.. min_entry_index)
 
             # Write entry date to table
             month = entry.date.month
@@ -87,11 +87,11 @@ ___ format_entries(currency, locale, entries
                 ___ i __ r..(22
                     table += entry.description[i]
                 table += '...'
-            ____:
+            ____
                 ___ i __ r..(25
                     __ l..(entry.description) > i:
                         table += entry.description[i]
-                    ____:
+                    ____
                         table += ' '
             table += ' | '
 
@@ -108,10 +108,10 @@ ___ format_entries(currency, locale, entries
                     change_dollar = change_dollar // 1000
                 __ l..(dollar_parts) __ 0:
                     change_str += '0'
-                ____:
+                ____
                     w... T...
                         change_str += dollar_parts[0]
-                        dollar_parts.pop(0)
+                        dollar_parts.p.. 0)
                         __ l..(dollar_parts) __ 0:
                             _____
                         change_str += ','
@@ -123,7 +123,7 @@ ___ format_entries(currency, locale, entries
                 change_str += change_cents
                 __ entry.change < 0:
                     change_str += ')'
-                ____:
+                ____
                     change_str += ' '
                 w.... l..(change_str) < 13:
                     change_str = ' ' + change_str
@@ -140,10 +140,10 @@ ___ format_entries(currency, locale, entries
                     change_euro = change_euro // 1000
                 __ l..(euro_parts) __ 0:
                     change_str += '0'
-                ____:
+                ____
                     w... T...
                         change_str += euro_parts[0]
-                        euro_parts.pop(0)
+                        euro_parts.p.. 0)
                         __ l..(euro_parts) __ 0:
                             _____
                         change_str += ','
@@ -155,7 +155,7 @@ ___ format_entries(currency, locale, entries
                 change_str += change_cents
                 __ entry.change < 0:
                     change_str += ')'
-                ____:
+                ____
                     change_str += ' '
                 w.... l..(change_str) < 13:
                     change_str = ' ' + change_str
@@ -201,7 +201,7 @@ ___ format_entries(currency, locale, entries
                     min_entry_index = i
                     _____
             entry = entries[min_entry_index]
-            entries.pop(min_entry_index)
+            entries.p.. min_entry_index)
 
             # Write entry date to table
             day = entry.date.day
@@ -230,11 +230,11 @@ ___ format_entries(currency, locale, entries
                 ___ i __ r..(22
                     table += entry.description[i]
                 table += '...'
-            ____:
+            ____
                 ___ i __ r..(25
                     __ l..(entry.description) > i:
                         table += entry.description[i]
-                    ____:
+                    ____
                         table += ' '
             table += ' | '
 
@@ -250,10 +250,10 @@ ___ format_entries(currency, locale, entries
                     change_dollar = change_dollar // 1000
                 __ l..(dollar_parts) __ 0:
                     change_str += '0'
-                ____:
+                ____
                     w... T...
                         change_str += dollar_parts[0]
-                        dollar_parts.pop(0)
+                        dollar_parts.p.. 0)
                         __ l..(dollar_parts) __ 0:
                             _____
                         change_str += '.'
@@ -278,10 +278,10 @@ ___ format_entries(currency, locale, entries
                     change_euro = change_euro // 1000
                 __ l..(euro_parts) __ 0:
                     change_str += '0'
-                ____:
+                ____
                     w... T...
                         change_str += euro_parts[0]
-                        euro_parts.pop(0)
+                        euro_parts.p.. 0)
                         __ l..(euro_parts) __ 0:
                             _____
                         change_str += '.'

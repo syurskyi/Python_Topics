@@ -29,9 +29,9 @@ ___ test_make_character_index_with_default_args
         [9, 10, 13, 14, 16, 17, 18, 20, 23, 25, 27, 29, 30, 31, 33, 35],
         [32, 34, 35]
     )
-    expected = d..(z..(keys, values
-    actual = make_character_index()
-    ... actual __ expected
+    e.. = d..(z..(keys, values
+    a.. = make_character_index()
+    ... a.. __ e..
 
 
 ___ test_make_character_index_with_other_args
@@ -41,7 +41,7 @@ ___ test_make_character_index_with_other_args
         [2, 11],
         [4, 5, 7, 8, 9, 15],
     )
-    actual = make_character_index(text=the_neetle_tree,
+    a.. = make_character_index(text=the_neetle_tree,
                                   characters=characters)
-    expected = d..(z..(keys, values
-    ... actual __ expected
+    e.. = d..(z..(keys, values
+    ... a.. __ e..

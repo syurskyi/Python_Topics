@@ -14,6 +14,6 @@ ___ print_colors
             _____
         ____ color __ VALID_COLORS:
             print(color.l..
-        ____:
+        ____
             print("Not a valid color")
         p..

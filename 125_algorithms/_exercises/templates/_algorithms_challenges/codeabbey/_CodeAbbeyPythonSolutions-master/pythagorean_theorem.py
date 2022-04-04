@@ -9,7 +9,7 @@ ___ get_triangle_type(side1, side2, side3
         r.. "A"
     ____(side3 > hypotenuse
         r.. "O"
-    ____:
+    ____
         r.. "R"
 
 ___ i __ r..(amount_values

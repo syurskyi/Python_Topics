@@ -12,5 +12,5 @@ c_ Promo:
         NOW = dt.d__.n..
         __ NOW < expires:
             print("Not expired! :)")
-        ____:
+        ____
             print("Expired! :(")

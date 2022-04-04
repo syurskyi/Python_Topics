@@ -26,7 +26,7 @@ c_ Solution(o..
         d = {node: start_cloned_node}
         queue.a..(node)
         w.... queue:
-            node = queue.pop(0)
+            node = queue.p.. 0)
             visited.add(node)
             cloned_node = d[node]
             cloned_neighbors    # list
@@ -36,7 +36,7 @@ c_ Solution(o..
                 __ neighbor n.. __ d:
                     cloned_neighbor = UndirectedGraphNode(neighbor.label)
                     d[neighbor] = cloned_neighbor
-                ____:
+                ____
                     cloned_neighbor = d[neighbor]
                 cloned_neighbors.a..(cloned_neighbor)
             cloned_node.neighbors = cloned_neighbors

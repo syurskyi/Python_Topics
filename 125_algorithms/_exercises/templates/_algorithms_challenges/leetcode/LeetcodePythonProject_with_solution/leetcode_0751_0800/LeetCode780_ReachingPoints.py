@@ -17,7 +17,7 @@ c_ Solution(o..
         __ sx __ tx a.. (ty-sy) % sx __ 0 o.\
             sy __ ty a.. (tx-sx) % sy __ 0:
             r.. T..
-        ____:
+        ____
             r.. F..
     
     # RuntimeError: maximum recursion depth exceeded

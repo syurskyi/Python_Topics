@@ -12,7 +12,7 @@ c_ Solution(o..
         start = mid
       ____ nums[start] > nums[mid]:
         end = mid
-      ____:
+      ____
         start += 1
         ans = m..(ans, nums[start])
 

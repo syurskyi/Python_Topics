@@ -66,7 +66,7 @@ c_ Solution:
 
             __ h __ h2mans:
                 h2mans[h].a..((k, i
-            ____:
+            ____
                 h2mans[h] = [(k, i)]
                 heights.a..(h)
 

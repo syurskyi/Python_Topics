@@ -8,5 +8,5 @@ ____ freq _______ freq_digit
     (12345, 1), (994145467, 4),
     (748791789189717891789, 7)
 ])
-___ test_freq_digit(data, expected
-    ... freq_digit(data) __ expected
+___ test_freq_digit(data, e..
+    ... freq_digit(data) __ e..

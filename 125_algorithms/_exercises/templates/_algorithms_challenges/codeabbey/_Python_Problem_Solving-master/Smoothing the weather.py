@@ -15,7 +15,7 @@ ___ i __ r..(l..(mea:
         mea_store.a..(mea[i])
         _____
     #else calculate the average of the middle numbers and store in the result
-    ____:
+    ____
         res = (mea[i]+mea[i-1]+mea[i+1])/3
         mea_store.a..(res)
         

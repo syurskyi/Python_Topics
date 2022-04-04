@@ -23,5 +23,5 @@ c_ Solution:
         # Compare t and x
         __ t __ x:
             r.. T..
-        ____:
+        ____
             r.. F..

@@ -19,5 +19,5 @@ c_ Solution(o..
                 root = root.left
             ____ root.val < p.val a.. root.val < q.val:
                 root = root.right
-            ____:
+            ____
                 r.. root

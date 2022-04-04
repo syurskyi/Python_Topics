@@ -15,7 +15,7 @@ ___ i __ r..(data
     avg = sum_numbs / (l..(avg_numbs)-1)
     __ avg.is_integer
         result.a..(i..(avg
-    ____:
+    ____
         avg = avg + 0.5
         result.a..(i..(avg
         

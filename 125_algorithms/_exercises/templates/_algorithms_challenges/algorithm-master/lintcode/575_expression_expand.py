@@ -22,7 +22,7 @@ c_ Solution:
                     part.a..(stack.pop
                 cnt = i..(stack.pop __ stack ____ 1
                 stack.a..(cnt * ''.j..(r..(part)))
-            ____:
+            ____
                 stack.a..(c)
 
         r.. ''.j..(stack)

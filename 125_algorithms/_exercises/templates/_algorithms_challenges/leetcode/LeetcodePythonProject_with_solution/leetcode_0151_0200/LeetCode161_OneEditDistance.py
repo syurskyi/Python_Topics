@@ -21,7 +21,7 @@ c_ Solution(o..
             __ s[i] __ t[j]:
                 i+=1
                 j+=1
-            ____:
+            ____
                 count+=1
                 __ count>1:
                     r.. F..
@@ -29,7 +29,7 @@ c_ Solution(o..
                     j+=1
                 ____ n>m:
                     i+=1
-                ____:
+                ____
                     i+=1
                     j+=1
         __ i < n o. j < m:

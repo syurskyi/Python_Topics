@@ -48,7 +48,7 @@ c_ Hand:
             r.. TWO_PAIR + high_card()
         ____ one_pair
             r.. ONE_PAIR + rank_of_card_with_highest_occurence()
-        ____:
+        ____
             r.. high_card()
 
     ___ straight_flush

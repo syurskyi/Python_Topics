@@ -30,12 +30,12 @@ WTForms==2.1
 
 
 ___ test_changed_dependencies_old_vs_new
-    actual = changed_dependencies(old_reqs, new_reqs)
-    expected =  'Faker', 'Flask'
-    ... s..(actual) __ expected
+    a.. = changed_dependencies(old_reqs, new_reqs)
+    e.. =  'Faker', 'Flask'
+    ... s..(a..) __ e..
 
 
 ___ test_changed_dependencies_other_data
-    actual = changed_dependencies(other_old_reqs, other_new_reqs)
-    expected =  'WTForms', 'Werkzeug'
-    ... s..(actual) __ expected
+    a.. = changed_dependencies(other_old_reqs, other_new_reqs)
+    e.. =  'WTForms', 'Werkzeug'
+    ... s..(a..) __ e..

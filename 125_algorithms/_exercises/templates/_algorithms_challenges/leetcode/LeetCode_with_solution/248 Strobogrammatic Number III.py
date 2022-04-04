@@ -39,8 +39,8 @@ c_ Solution(o..
             ___ elt __ middle:
                 cur.a..(elt)
                 build(n, cur, ret)
-                cur.pop()
-        ____:
+                cur.p.. )
+        ____
             __ l..(cur) __ n:
                 ret.a..("".j..(cur
                 r..
@@ -49,5 +49,5 @@ c_ Solution(o..
                     cur.appendleft(elt[0])
                     cur.a..(elt[1])
                     build(n, cur, ret)
-                    cur.pop()
+                    cur.p.. )
                     cur.popleft()

@@ -13,7 +13,7 @@ c_ Solution(o..
       __ a % k __ 0:
         p...a..(s..(k
         a /= k
-      ____:
+      ____
         k -= 1
     p...s..()
     __ a > 9 o. n.. p..:
@@ -39,7 +39,7 @@ c_ Solution(o..
           p...a..(s..(i
           __ dfs(num / i, p..
             r.. T..
-          p...pop()
+          p...p.. )
       r.. F..
 
     ans = f__("inf")

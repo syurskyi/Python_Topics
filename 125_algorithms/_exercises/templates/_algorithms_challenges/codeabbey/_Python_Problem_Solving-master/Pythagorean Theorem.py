@@ -10,5 +10,5 @@ ___ i __ r..(i..(input())):
     ____ c < cal:
         print('A',end' ')
     #obtuse triangle which is greater than 90 degree
-    ____:
+    ____
         print('O',end' ')

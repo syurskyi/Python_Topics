@@ -17,7 +17,7 @@ c_ Solution(o..
         ___ i __ r..(2, l..(nums:
             __ nums[i]-nums[i-1] __ nums[i-1]-nums[i-2]:
                 curr += 1
-            ____:
+            ____
                 curr = 0
             res += curr
         r.. res

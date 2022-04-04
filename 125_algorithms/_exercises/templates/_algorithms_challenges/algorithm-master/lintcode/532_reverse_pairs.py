@@ -23,7 +23,7 @@ c_ Solution:
                 tmp[i] = A[right]
                 right += 1
                 ans += mid - left + 1
-            ____:
+            ____
                 tmp[i] = A[left]
                 left += 1
             i += 1

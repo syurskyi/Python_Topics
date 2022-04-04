@@ -36,7 +36,7 @@ ___ filter_tweets_on_polarity(tweets, keep_positive=T..
     ___ tweet __ tweets:
         __ tweet.polarity > 0:
             positive.a..(tweet)
-        ____:
+        ____
             negative.a..(tweet)
     r.. [positive __ keep_positive __ T.. ____ negative][0]
 
@@ -45,5 +45,5 @@ ___ order_tweets_by_polarity(tweets, positive_highest=T..
        the order. Returns a list of ordered tweets."""
     __ positive_highest __ T..:
         r.. s..(tweets, key=attrgetter('polarity'), r.._T..
-    ____:
+    ____
         r.. s..(tweets, key=attrgetter('polarity'), r.._F..

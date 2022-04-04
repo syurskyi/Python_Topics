@@ -44,23 +44,23 @@ c_ Solution:
                     __ char __ regex[state]:  # advance tape
                         w.... index < l..(tape) a.. tape[index] __ char: index += 1
                         state += 2
-                    ____:
+                    ____
                         state += 2
-                ____:  # .*
+                ____  # .*
                     state += 2
                     __ state < l..(regex
                         __ regex[state] != ".":  # find until the next char in regex
                             w.... index < l..(tape) a.. tape[index] != regex[state]: index += 1
-                        ____:  # difficult part
+                        ____  # difficult part
                             count = 1
 
-                    ____:
+                    ____
                         r.. T..
-            ____:  # no * appended
+            ____  # no * appended
                 __ char __ regex[state] o. regex[state] __ ".":
                     index += 1
                     state += 1
-                ____:
+                ____
                     _____
 
         __ index __ l..(tape) a.. state __ l..(regex
@@ -95,7 +95,7 @@ c_ Solution:
         __ n.. tape a.. regex:
             __ state+1 < l..(regex) a.. regex[state+1] __ "*":
                 r.. isMatch(tape, regex[state+2:])
-            ____:
+            ____
                 r.. F..
 
         __ state+1 < l..(regex) a.. regex[state+1] __ "*":
@@ -103,12 +103,12 @@ c_ Solution:
                 r.. isMatch(tape[index+1:], regex[state:]) o. \
                        isMatch(tape[index+1:], regex[state+2:]) o. \
                        isMatch(tape[index:], regex[state+2:])
-            ____:
+            ____
                 r.. isMatch(tape[index:], regex[state+2:])
-        ____:  # without trailing *
+        ____  # without trailing *
             __ tape[index] __ regex[state] o. regex[state] __ ".":
                 r.. isMatch(tape[index+1:], regex[state+1:])
-            ____:
+            ____
                 r.. F..
 
     ___ isMatch  s, p
@@ -148,7 +148,7 @@ c_ Solution:
                 dp[m][j] = dp[m][j+1]
             ____ j+1 < n a.. regex[j+1] __ "*":
                 dp[m][j] = dp[m][j+1]
-            ____:
+            ____
                 dp[m][j] = F..
 
         # normal cases
@@ -157,17 +157,17 @@ c_ Solution:
                 __ regex[j] __ "*":
                     __ j-1 >= 0 a.. regex[j-1] != "*":
                         dp[i][j] = dp[i][j+1]  # skip
-                    ____:
+                    ____
                         r.. F..  # two consecutive *
                 ____ j+1 < n a.. regex[j+1] __ "*":
                     __ tape[i] __ regex[j] o. regex[j] __ ".":
                         dp[i][j] = dp[i][j+2] o. dp[i+1][j] o. dp[i+1][j+2]  # what is done in dfs
-                    ____:
+                    ____
                         dp[i][j] = dp[i][j+2]
-                ____:
+                ____
                     __ tape[i] __ regex[j] o. regex[j] __ ".":
                         dp[i][j] = dp[i+1][j+1]
-                    ____:
+                    ____
                         dp[i][j] = F..
 
         # notice that in edge cases and normal cases, checking conditions are exactly the same

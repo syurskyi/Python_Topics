@@ -14,7 +14,7 @@ c_ Solution:
     ___ generate_bst  a
         __ n.. a:
             r.. [N..]
-        ____:
+        ____
             res    # list
             ___ i, c __ e..(a
                 left = generate_bst(a[:i])

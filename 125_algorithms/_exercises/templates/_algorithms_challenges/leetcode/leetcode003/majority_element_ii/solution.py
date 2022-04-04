@@ -25,7 +25,7 @@ c_ Solution(o..
             ____ count2 __ 0:
                 cand2 = c
                 count2 += 1
-            ____:
+            ____
                 count1 -= 1
                 count2 -= 1
         count1 = 0

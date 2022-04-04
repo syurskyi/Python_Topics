@@ -39,7 +39,7 @@ c_ Solution:
             __ s __ h:
                 __ l - h[s] >= 2:  # size at least 2
                     r.. T..
-            ____:
+            ____
                 # only keep the lowest
                 h[s] = l
 

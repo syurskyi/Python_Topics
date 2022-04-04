@@ -52,7 +52,7 @@ c_ Solution:
         ___ i __ x..(start, 10
             cur.a..(i)
             dfs(remain_k - 1, remain_n - i, cur, ret)
-            cur.pop()
+            cur.p.. )
 
 
 __ _______ __ _______

@@ -38,6 +38,6 @@ c_ Solution(o..
                             right - 1
                     ____ s < 0:
                         left + 1
-                    ____:
+                    ____
                         right - 1
         r.. res

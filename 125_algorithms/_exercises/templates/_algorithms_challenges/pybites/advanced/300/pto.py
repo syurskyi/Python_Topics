@@ -48,7 +48,7 @@ ___ four_day_weekends(*args,
 
     __ args:
         r.. V...(ERROR_MSG)
-    ____:
+    ____
         four_day_weekends = workdays =  0
         weekend_dates =[]
         workday_dates    # list
@@ -73,12 +73,12 @@ ___ four_day_weekends(*args,
                 __ a..(date n.. __ FEDERAL_HOLIDAYS ___ date __ dates
                     weekend_dates.a..((current,monday
                     four_day_weekends += 1
-                ____:
+                ____
                     __ monday n..  __ FEDERAL_HOLIDAYS:
                         workday_dates.a..(monday)
                     __ current n.. __ FEDERAL_HOLIDAYS:
                         workday_dates.a..(current)
-            ____:
+            ____
                 __ current n.. __ FEDERAL_HOLIDAYS:
                     workday_dates.a..(current)
 
@@ -128,11 +128,11 @@ ___ four_day_weekends(*args,
                 print(f"{weekend_start} - {weekend_end}",end='')
                 __ (weekend_start,weekend_end) __ date_start_losing:
                     print(' *')
-                ____:
+                ____
                     print()
 
 
-        ____:
+        ____
             print _*Remaining Work Days: {workdays * 8} ({workdays} days)')
 
 

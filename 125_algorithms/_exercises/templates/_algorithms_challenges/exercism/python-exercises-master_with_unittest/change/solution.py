@@ -16,7 +16,7 @@ ___ find_minimum_coins(total_change, coins
         min_coins_required[change] = final_result
     __ min_coins_required[total_change] __ 1e9:
         r.. V...("no combination can add up to target")
-    ____:
+    ____
         last_coin_value = total_change
         array    # list
         w....(last_coin[last_coin_value] != -1

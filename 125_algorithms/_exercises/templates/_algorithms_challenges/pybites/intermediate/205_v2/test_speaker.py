@@ -17,6 +17,6 @@ ___ test_get_pycon_speaker_first_names(first_names
 
 
 ___ test_get_percentage_of_female_speakers(first_names
-    actual = get_percentage_of_female_speakers(first_names)
-    expected = 28.57
-    ... actual __ expected
+    a.. = get_percentage_of_female_speakers(first_names)
+    e.. = 28.57
+    ... a.. __ e..

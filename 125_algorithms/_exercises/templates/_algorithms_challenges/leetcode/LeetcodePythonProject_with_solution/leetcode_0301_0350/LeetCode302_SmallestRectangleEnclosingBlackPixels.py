@@ -20,7 +20,7 @@ c_ Solution(o..
                 k+=1
             __ (k < bottom) __ opt:
                 j = mid
-            ____:
+            ____
                 i = mid+1
         r.. i
     
@@ -31,7 +31,7 @@ c_ Solution(o..
                 k+=1
             __ (k < right) __ opt:
                 j = mid
-            ____:
+            ____
                 i  = mid+1
         r.. i
     

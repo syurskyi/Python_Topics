@@ -34,7 +34,7 @@ c_ Solution:
             __ target - vals[i] < vals[j] - target:
                 ans.a..(vals[i])
                 i -= 1
-            ____:
+            ____
                 ans.a..(vals[j])
                 j += 1
             k -= 1

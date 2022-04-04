@@ -52,7 +52,7 @@ c_ Solution:
                             k -= 1
                     ____ summation>target:
                         k -= 1
-                    ____:
+                    ____
                         j += 1
     
                 i += 1
@@ -85,7 +85,7 @@ c_ Solution:
                 # record the pair sum
                 __ num[p]+num[q] n.. __ sum2index:
                     sum2index[num[p]+num[q]] = [(p, q)]
-                ____:
+                ____
                     sum2index[num[p]+num[q]].a..((p, q
 
         ___ i __ x..(length

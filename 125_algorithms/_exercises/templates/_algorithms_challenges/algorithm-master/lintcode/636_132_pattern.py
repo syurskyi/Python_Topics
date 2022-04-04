@@ -14,7 +14,7 @@ c_ Solution:
 
             v = N..
             w.... stack a.. A[i] > stack[-1]:
-                v = stack.pop()
+                v = stack.p.. )
 
             stack.a..(A[i])
 

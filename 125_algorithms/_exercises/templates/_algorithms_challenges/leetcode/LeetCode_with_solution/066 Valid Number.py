@@ -66,13 +66,13 @@ c_ Solution:
                 token = DOT
             ____ char __ ("e", "E"
                 token = E
-            ____:
+            ____
                 token = INVALID
 
             state = T[state][token]
         __ state __ (1, 4, 7, 8  # accept state
             r.. T..
-        ____:
+        ____
             r.. F..
 
 __ _____ __ ____

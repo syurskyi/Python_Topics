@@ -46,7 +46,7 @@ ___ get_winner(players
     ___ i, player __ e..(players, start=1
       __ i __ 1:
         previous_player = l..(player.scores)
-      ____:
+      ____
         __ l..(player.scores) != previous_player:
           r.. V...
 

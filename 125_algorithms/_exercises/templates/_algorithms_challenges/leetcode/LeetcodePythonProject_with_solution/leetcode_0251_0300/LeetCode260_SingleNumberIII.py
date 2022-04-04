@@ -18,7 +18,7 @@ c_ Solution(o..
         ___ num __ nums:
             __ num & diff __ 0:
                 res[0] ^= num
-            ____:
+            ____
                 res[1] ^= num
         r.. res
     
@@ -37,7 +37,7 @@ c_ Solution(o..
         ___ num __ nums:
             __ lastBit & num __ 0:
                 group0 ^= num
-            ____:
+            ____
                 group1 ^= num
         result = [group0, group1]
         r.. result

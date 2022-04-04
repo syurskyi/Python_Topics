@@ -62,7 +62,7 @@ c_ SolutionSlow(o..
 
         __ isBalanced(root.left) a.. isBalanced(root.right
             r.. T..
-        ____:
+        ____
             r.. F..
 
     ___ fathom  root, depth

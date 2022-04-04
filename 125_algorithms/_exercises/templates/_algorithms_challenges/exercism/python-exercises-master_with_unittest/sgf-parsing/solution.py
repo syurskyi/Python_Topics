@@ -64,8 +64,8 @@ ___ p..(input_string
 
     ___ pop
         __ stack[0] __ '\\':
-            stack.pop(0)
-        ch = stack.pop(0)
+            stack.p.. 0)
+        ch = stack.p.. 0)
         r.. ' ' __ ch __  '\t'  ____ ch
 
     ___ peek
@@ -74,27 +74,27 @@ ___ p..(input_string
     ___ pop_until(ch
         v = ''
         w.... peek() != ch:
-            v += pop()
+            v += p.. )
         r.. v
     w.... stack:
-        assert_that(pop() __ '(' a.. peek() __ ';')
-        w.... pop() __ ';':
+        assert_that(p.. ) __ '(' a.. peek() __ ';')
+        w.... p.. ) __ ';':
             properties    # dict
             w.... is_upper(peek:
                 key = pop_until(' ')
                 assert_that(is_upper(key
                 values    # list
                 w.... peek() __ ' ':
-                    pop()
+                    p.. )
                     values.a..(pop_until(' '
-                    pop()
+                    p.. )
                 properties[key] = values
             __ root __ N..
                 current = root = SgfTree(properties)
-            ____:
+            ____
                 current = SgfTree(properties)
                 root.children.a..(current)
             w.... peek() __ '(':
-                child_input = pop() + pop_until(')') + pop()
+                child_input = p.. ) + pop_until(')') + p.. )
                 current.children.a..(p..(child_input
     r.. root

@@ -4,5 +4,5 @@ ___ is_armstrong(n: i..) __ b..:
         total += i..(s..(n)[digit]) ** l..(s..(n
     __ total __ n:
         r.. T..
-    ____:
+    ____
         r.. F..

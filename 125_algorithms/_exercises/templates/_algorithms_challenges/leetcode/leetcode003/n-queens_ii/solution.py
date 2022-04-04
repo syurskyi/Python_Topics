@@ -19,7 +19,7 @@ c_ Solution:
     ___ solve  columns, row
         __ row __ n:
             res += 1
-        ____:
+        ____
             ___ col __ r..(n
                 __ is_valid(columns, row, col
                     columns[row] = col

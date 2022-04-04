@@ -16,7 +16,7 @@ c_ Solution:
                 mx_l = m..(mx_l, heights[l])
                 ans += mx_l - heights[l]
                 l += 1
-            ____:
+            ____
                 mx_r = m..(mx_r, heights[r])
                 ans += mx_r - heights[r]
                 r -= 1

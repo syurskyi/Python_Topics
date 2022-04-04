@@ -16,8 +16,8 @@ _______ p__
         ({-1: 22, +4: 22}, 1.5),
     ],
 )
-___ test_median_from_dict__valid_numbers(test_input, expected
-    ... calc_median_from_dict(test_input) __ expected
+___ test_median_from_dict__valid_numbers(test_input, e..
+    ... calc_median_from_dict(test_input) __ e..
 
 
 # Huge numbers
@@ -43,8 +43,8 @@ ___ test_median_from_dict__valid_numbers(test_input, expected
         ),
     ],
 )
-___ test_median_from_dict_valid_huge_numbers(test_input, expected
-    ... calc_median_from_dict(test_input) __ expected
+___ test_median_from_dict_valid_huge_numbers(test_input, e..
+    ... calc_median_from_dict(test_input) __ e..
 
 
 # Errors should be raised when the dict value is not a number

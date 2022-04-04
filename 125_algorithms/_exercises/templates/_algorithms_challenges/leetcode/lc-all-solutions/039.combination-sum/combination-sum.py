@@ -14,7 +14,7 @@ c_ Solution(o..
         __ target - candidates[i] >= 0:
           p...a..(candidates[i])
           dfs(candidates, i, target - candidates[i], p.., res)
-          p...pop()
+          p...p.. )
 
     res    # list
     dfs(candidates, 0, target, [], res)

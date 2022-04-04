@@ -35,7 +35,7 @@ c_ Solution:
             """
             p...a..(nums[i])
             dfs(nums[:i] + nums[i + 1:], ans, p..)
-            p...pop()
+            p...p.. )
 
 
 c_ Solution:
@@ -81,4 +81,4 @@ c_ Solution:
             p...a..(nums[i])
             dfs(nums, visited, ans, p..)
             visited[i] = F..
-            p...pop()
+            p...p.. )

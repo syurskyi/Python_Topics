@@ -37,8 +37,8 @@ c_ RandomizedCollection(o..
 
     # del dd[val][idx]
     del dd[a[-1]][l..(a) - 1]
-    d[val].pop()
-    a.pop()
+    d[val].p.. )
+    a.p.. )
     r.. T..
 
   ___ getRandom

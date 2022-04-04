@@ -59,5 +59,5 @@ c_ Solution:
         dfs(root.left, t, p.., found)
         dfs(root.right, t, p.., found)
         __ n.. found[0]:
-            p...pop()  # 1 pop() corresponds to 1 append()
+            p...p.. )  # 1 pop() corresponds to 1 append()
 

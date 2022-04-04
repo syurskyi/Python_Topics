@@ -19,7 +19,7 @@ c_ Solution(o..
             key = ''.j..(arr)
             __ key __ hashmap:
                 hashmap[key].a..(s)
-            ____:
+            ____
                 hashmap[key] = [s]
         res    # list
         ___ value __ hashmap.v..

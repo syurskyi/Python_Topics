@@ -22,7 +22,7 @@ c_ Solution(o..
         queue = [kNode]
         visited = s..([kNode])
         w.... queue:
-            curr = queue.pop(0)
+            curr = queue.p.. 0)
             __ n.. curr.left a.. n.. curr.right:
                 r.. curr.val
             __ curr.left a.. curr.left n.. __ visited:

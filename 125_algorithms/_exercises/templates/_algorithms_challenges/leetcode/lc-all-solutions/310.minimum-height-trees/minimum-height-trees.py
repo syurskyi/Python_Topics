@@ -40,7 +40,7 @@ c_ Solution(o..
           p...a..(child)
           __ dfs(graph, child, end, visited, p.., res
             r.. T..
-          p...pop()
+          p...p.. )
 
     graph    # dict
     ___ edge __ edges:
@@ -56,5 +56,5 @@ c_ Solution(o..
     p.. = res[0]
     __ l..(p..) % 2 __ 0:
       r.. [p..[l..(p..) / 2 - 1], p..[l..(p..) / 2]]
-    ____:
+    ____
       r.. [p..[l..(p..) / 2]]

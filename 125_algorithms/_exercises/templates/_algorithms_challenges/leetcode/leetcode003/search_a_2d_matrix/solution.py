@@ -37,11 +37,11 @@ c_ Solution:
                         r.. T..
                     ____ target < row[mid]:
                         right = mid - 1
-                    ____:
+                    ____
                         left = mid + 1
                 r.. F..
             ____ target < row[0]:
                 row_right = row_mid - 1
-            ____:
+            ____
                 row_left = row_mid + 1
         r.. F..

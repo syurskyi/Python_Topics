@@ -30,7 +30,7 @@ c_ Solution:
                 l..(res) + n - i > size a..
                 res[-1] < a[i]
 
-                res.pop()
+                res.p.. )
 
             __ l..(res) < size:
                 res.a..(a[i])
@@ -39,6 +39,6 @@ c_ Solution:
 
     ___ merge  a, b
         r.. [
-            m..(a, b).pop(0)
+            m..(a, b).p.. 0)
             ___ _ __ r..(l..(a) + l..(b
         ]

@@ -39,7 +39,7 @@ mount2_expected = [
     (2, mount2_expected, F..),
     (3, N.., T..),
 ])
-___ test_json2csv(file_no, expected, exception, capfd
+___ test_json2csv(file_no, e.., exception, capfd
     mount_json = TMP / f'mount{file_no}.json'
     mount_csv = TMP / f'mount{file_no}.csv'
 
@@ -57,5 +57,5 @@ ___ test_json2csv(file_no, expected, exception, capfd
 
     convert_to_csv(mount_json)
     w__ o.. mount_csv) __ csv_file:
-        actual = l..(csv.reader(csv_file
-        ... actual __ expected
+        a.. = l..(csv.reader(csv_file
+        ... a.. __ e..

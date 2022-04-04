@@ -31,7 +31,7 @@ ___ _get_winner(computer_choice, player_choice
         r.. win.f..(player_choice,computer_choice)
     ____ player_defeated_by __ computer_choice:
         r.. lose.f..(computer_choice,player_choice)
-    ____:
+    ____
         r.. tie
 
 
@@ -61,7 +61,7 @@ ___ game
         
         __ player_choice n.. __ ('scissors','rock','paper'
             print('Invalid input')
-        ____:
+        ____
             computer_choice = _get_computer_move() 
             print(_get_winner(computer_choice,player_choice
 

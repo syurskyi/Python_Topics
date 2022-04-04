@@ -20,7 +20,7 @@ c_ Solution(o..
             r..
         __ s[i].i..
             helper(s, i+1, curr+s[i], res)
-        ____:
+        ____
             helper(s, i+1, curr+s[i].u.., res)
             helper(s, i+1, curr+s[i].l.., res)
     

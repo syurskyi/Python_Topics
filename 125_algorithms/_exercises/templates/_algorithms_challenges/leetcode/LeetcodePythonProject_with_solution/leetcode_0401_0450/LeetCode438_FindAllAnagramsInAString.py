@@ -48,7 +48,7 @@ c_ Solution(o..
                 end += 1
                 __ count __ 0:
                     result.a..(left)
-            ____:
+            ____
                 arr1[o..(s[left]) - o..('a')] -= 1
                 count += 1
                 left += 1

@@ -15,7 +15,7 @@ c_ EggCreator:
         count + 1
         __ count < m..:
             r.. f"{choice(COLORS)} egg"
-        ____:
+        ____
             r.. StopIteration
 
 ec  EggCreator(5)

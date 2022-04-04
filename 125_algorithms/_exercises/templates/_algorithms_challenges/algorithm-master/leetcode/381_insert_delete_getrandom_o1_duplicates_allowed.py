@@ -30,14 +30,14 @@ c_ RandomizedCollection:
         __ val n.. __ I o. n.. I[val]:
             r.. F..
 
-        i = I[val].pop()
+        i = I[val].p.. )
         _val = A[-1]
 
         I[_val].add(i)
         I[_val].discard(l..(A) - 1)
 
         A[i] = _val
-        A.pop()
+        A.p.. )
         r.. T..
 
     ___ getRandom

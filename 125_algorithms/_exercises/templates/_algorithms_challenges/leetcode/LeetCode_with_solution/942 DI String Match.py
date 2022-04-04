@@ -44,7 +44,7 @@ c_ Solution:
             __ c __ "I":
                 ret.a..(mini)
                 mini += 1
-            ____:  # "D"
+            ____  # "D"
                 ret.a..(maxa)
                 maxa -= 1
 
@@ -61,7 +61,7 @@ c_ Solution:
         ___ c __ S:
             __ c __ "I":
                 ret.a..(ret[-1] + 1)
-            ____:
+            ____
                 ret.a..(ret[-1] -1)
         mn = m..(ret)
         r.. [

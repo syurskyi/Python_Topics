@@ -2,7 +2,7 @@ a  l.. m..(i..,input().s..()))
 ___ i __ a:
     __ 1 <i < 8 o. 9< i < 31 o. 33< i <45  :
         _____
-    ____:
+    ____
         bits  '{:08b}'.f..(i)
         temp_bin    # list
         s__  ''
@@ -16,12 +16,12 @@ ___ i __ a:
                     s__ + k
                 dec  i..(s__,2)
                 print(chr(dec),end'')
-            ____:
+            ____
                 print(chr(i),end'')
-        ____:
+        ____
             __ temp_bin[0] __ '1':
                 p..
-            ____:
+            ____
                 temp_bin[0]  '1'
                 
                 ___ k __ temp_bin:
@@ -29,6 +29,6 @@ ___ i __ a:
                 dec  i..(s__,2)
                 __ 128< dec < 255:
                     p..
-                ____:
+                ____
                     #print(dec)
                     print(chr(dec),end'')

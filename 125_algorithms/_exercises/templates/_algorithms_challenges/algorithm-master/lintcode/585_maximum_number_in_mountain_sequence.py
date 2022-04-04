@@ -17,7 +17,7 @@ c_ Solution:
             """
             __ nums[m] > nums[m+1]:
                 r = m
-            ____:
+            ____
                 l = m
 
         r.. m..(nums[l], nums[r])

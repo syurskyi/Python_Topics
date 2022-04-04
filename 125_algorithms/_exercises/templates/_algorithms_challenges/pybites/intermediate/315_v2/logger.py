@@ -25,7 +25,7 @@ ___ sum_even_numbers(numbers: L..[f__]) __ f__:
         logger.exception _*Bad inputs: {numbers}')
         r..
 
-    ____:
+    ____
         logger.info(f"Input: {numbers} -> output: {s}")
         r.. s
 

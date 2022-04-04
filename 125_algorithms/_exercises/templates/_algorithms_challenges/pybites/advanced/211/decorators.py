@@ -29,7 +29,7 @@ ___ retry(func
             ______ E.. __ e:
                 retries += 1
                 print(e)
-        ____:
+        ____
             r.. MaxRetriesException
 
         r.. vals

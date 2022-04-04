@@ -16,7 +16,7 @@ c_ Solution(o..
                 nums[newIndex(right, n)], nums[newIndex(i, n)] =\
                 nums[newIndex(i, n)], nums[newIndex(right, n)]
                 right -= 1
-            ____:
+            ____
                 i += 1
     
     ___ newIndex  index, n
@@ -33,7 +33,7 @@ c_ Solution(o..
                 lo = j+1
             ____ j > k:
                 hi = j-1
-            ____:
+            ____
                 _____
         r.. nums[k]
     

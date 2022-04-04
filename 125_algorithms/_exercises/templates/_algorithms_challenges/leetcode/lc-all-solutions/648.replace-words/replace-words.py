@@ -31,6 +31,6 @@ c_ Solution(o..
           __ p.isWord:
             words[i] = p.word
             _____
-        ____:
+        ____
           _____
     r.. " ".j..(words)

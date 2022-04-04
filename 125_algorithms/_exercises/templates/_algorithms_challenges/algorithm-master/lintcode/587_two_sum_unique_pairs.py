@@ -27,7 +27,7 @@ c_ Solution:
 
             __ _sum > target:
                 right -= 1
-            ____:
+            ____
                 left += 1
 
         r.. ans

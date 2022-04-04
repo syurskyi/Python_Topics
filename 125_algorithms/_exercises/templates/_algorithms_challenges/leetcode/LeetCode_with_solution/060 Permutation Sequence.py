@@ -28,7 +28,7 @@ c_ Solution(o..
         ret    # list
         ___ i __ x..(n-1, -1, -1
             idx, k = divmod(k, m__.factorial(i
-            ret.a..(array.pop(idx
+            ret.a..(array.p.. idx
 
         r.. "".j.. m..(s.., ret
 
@@ -62,7 +62,7 @@ c_ Solution(o..
             w... T...
                 __ visited[i]:
                     i += 1
-                ____:
+                ____
                     __ cnt __ val: _____
                     cnt += 1
                     i += 1

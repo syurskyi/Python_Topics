@@ -31,7 +31,7 @@ c_ Solution:
             __ s[i] __ s[j]:
                 i += 1
                 j -= 1
-            ____:
+            ____
                 # error, for -1, start > end. Indexing is like range
                 # return s[i:j] == s[i:j:-1] or s[i+1:j+1] == s[i+1:j+1:-1]
                 r.. is_palindrome(s[i:j]) o. is_palindrome(s[i+1:j+1])

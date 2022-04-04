@@ -19,11 +19,11 @@ c_ Solution(o..
             valuesMap[(e[1], e[0])] = 1.0/v
             __ e[0] __ graph:
                 graph[e[0]].add(e[1])
-            ____:
+            ____
                 graph[e[0]] = s..([e[1]])
             __ e[1] __ graph:
                 graph[e[1]].add(e[0])
-            ____:
+            ____
                 graph[e[1]] = s..([e[0]])
         result    # list
         ___ query __ queries:
@@ -31,7 +31,7 @@ c_ Solution(o..
                 result.a..(-1.0)
             ____ query[0] __ query[1]:
                 result.a..(1.0)
-            ____:
+            ____
                 tmp = [-1.0]
                 dfs(valuesMap, graph, query[0], query[1], 1.0, s..(), tmp)
                 result.a..(tmp[0])

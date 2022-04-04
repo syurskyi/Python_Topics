@@ -21,7 +21,7 @@ c_ Solution(o..
         stack = [root]
         prev = TreeNode(-1)
         w.... stack:
-            node = stack.pop()
+            node = stack.p.. )
             prev.right = node
             __ node.right:
                 stack.a..(node.right)

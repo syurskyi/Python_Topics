@@ -47,7 +47,7 @@ ___ test_taxes(taxes_2019
 
 ___ test_summary(taxes_2019
     output = s..(taxes_2019).s..
-    ... l..(output) __ 5
+    ... l.. ?  __ 5
     ... "Summary Report" __ output[0]
 
 
@@ -58,11 +58,11 @@ ___ test_low_income(taxes_2020_low
 ___ test_report(taxes_2020_over, capfd
     taxes_2020_over.report()
     output = ?.r .. 0].s...s..
-    ... l..(output) __ 17
+    ... l.. ?  __ 17
     ... "Summary Report" __ output[0]
     ... "Taxes Breakdown" __ output[6]
     ... "=" __ output[1]
-    ... l..(output[1]) __ 34
+    ... l.. ? [1]) __ 34
     ... "-" __ output[-2]
     ... "14,096.00" __ output[-5]
     ... "0.24" __ output[-6]

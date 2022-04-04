@@ -27,10 +27,10 @@ ___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) __ i..:
             new_seq = T..
             seq = line[1:]
             print(seq)
-        ____:
+        ____
             __ line[-1] __ '>':
                 info.a..(line[:-1])
-            ____:
+            ____
                 info.a..(line)
 
 

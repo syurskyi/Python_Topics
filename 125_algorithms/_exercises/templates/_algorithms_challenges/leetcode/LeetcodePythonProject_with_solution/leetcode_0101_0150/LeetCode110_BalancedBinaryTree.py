@@ -21,7 +21,7 @@ c_ Solution(o..
             r.. T..
         ____ n.. root.left a.. n.. root.right:
             r.. T..
-        ____:
+        ____
             r.. abs(getHeight(root.left)-getHeight(root.right <= 1 a..\
                 isBalanced(root.left) a.. isBalanced(root.right)
     

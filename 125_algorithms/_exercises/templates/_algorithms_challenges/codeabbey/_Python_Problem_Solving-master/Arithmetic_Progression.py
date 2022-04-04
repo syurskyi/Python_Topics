@@ -9,7 +9,7 @@ w.... count < d:
     ___ i __ r..(0,a[2]
         __ i__0:
             result = val
-        ____:
+        ____
             result = result + (val + step * i)
             
     res.a..(result)

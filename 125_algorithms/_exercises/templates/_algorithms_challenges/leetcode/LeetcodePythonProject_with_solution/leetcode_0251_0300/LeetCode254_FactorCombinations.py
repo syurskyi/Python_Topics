@@ -16,13 +16,13 @@ c_ Solution(o..
                 __ n.. stack:
                     r.. res
                 res.a..(stack+[n])
-                x = stack.pop()
+                x = stack.p.. )
                 n *= x
                 x += 1
             ____ n % x __ 0:
                 stack.a..(x)
                 n = n//x
-            ____:
+            ____
                 x += 1
     
     ___ getFactorsSlow  n
@@ -44,7 +44,7 @@ c_ Solution(o..
             __ n % i __ 0:
                 item.a..(i)
                 helper(result, item, i..(n/i), i)
-                item.pop()
+                item.p.. )
     
     ___ test
         testCases = [

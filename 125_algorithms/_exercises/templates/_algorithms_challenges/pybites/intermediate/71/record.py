@@ -6,7 +6,7 @@ c_ RecordScore
     ___ __call__  new
         __ m.. __ N..
             m..  new
-        ____:
+        ____
             __ new > m..:
                 m..  new
         r.. m..

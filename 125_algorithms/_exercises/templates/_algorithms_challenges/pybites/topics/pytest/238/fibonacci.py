@@ -3,7 +3,7 @@ ___ fib(n
         r.. V...
    ____ n __ (0, 1
        r.. n
-   ____:
+   ____
        r..(fib(n-1) + fib(n-2
 
 print(fib(6

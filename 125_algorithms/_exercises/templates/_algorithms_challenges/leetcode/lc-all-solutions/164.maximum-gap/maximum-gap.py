@@ -18,11 +18,11 @@ c_ Solution(o..
       index = (num - a) / gap
       __ bucketMin[index] __ N..
         bucketMin[index] = num
-      ____:
+      ____
         bucketMin[index] = m..(bucketMin[index], num)
       __ bucketMax[index] __ N..
         bucketMax[index] = num
-      ____:
+      ____
         bucketMax[index] = m..(bucketMax[index], num)
     bucketMin = [b ___ b __ bucketMin __ b __ n.. N..]
     bucketMax = [b ___ b __ bucketMax __ b __ n.. N..]

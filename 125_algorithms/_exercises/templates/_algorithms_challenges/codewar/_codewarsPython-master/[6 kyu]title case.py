@@ -5,7 +5,7 @@ ___ title_case(title, minor_words = ''
     ___ word __ title.t...s.. [1:]:
         __ word.l.. __ [w.l.. ___ w __ minor_words.s.. ]:
             res.a..(word.l..
-        ____:
+        ____
             res.a..(word)
     r.. ' '.j..(res)
 

@@ -20,7 +20,7 @@ c_ Solution:
                 it will be swapped if there is `0` later
                 """
                 i += 1
-            ____:
+            ____
                 """
                 cannot `i += 1` since the swapped value still need to check
                 """

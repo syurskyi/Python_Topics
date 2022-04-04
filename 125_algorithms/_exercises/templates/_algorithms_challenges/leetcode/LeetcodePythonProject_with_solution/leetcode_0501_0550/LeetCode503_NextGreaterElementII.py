@@ -15,10 +15,10 @@ c_ Solution(o..
         stack = l..(r..(n-1, -1, -1
         ___ i __ r..(n-1, -1, -1
             w.... stack a.. nums[stack[-1]] <= nums[i]:
-                stack.pop()
+                stack.p.. )
             __ stack:
                 res.insert(0, nums[stack[-1]])
-            ____:
+            ____
                 res.insert(0, -1)
             stack.a..(i)
         r.. res

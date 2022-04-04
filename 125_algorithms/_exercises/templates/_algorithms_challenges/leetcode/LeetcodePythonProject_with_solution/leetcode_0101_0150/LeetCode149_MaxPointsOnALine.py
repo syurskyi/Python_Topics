@@ -36,9 +36,9 @@ c_ Solution(o..
                 __ x __ hashmap:
                     __ y __ hashmap[x]:
                         hashmap[x][y] += 1
-                    ____:
+                    ____
                         hashmap[x][y] = 1
-                ____:
+                ____
                     hashmap0    # dict
                     hashmap0[y] = 1
                     hashmap[x] = hashmap0
@@ -65,16 +65,16 @@ c_ Solution(o..
                 __ points[i].x __ points[j].x:
                     __ points[i].y __ points[j].y:
                         duplicate += 1
-                    ____:
+                    ____
                         vertical += 1
-                ____:
+                ____
                     __ points[j].y __ points[i].y:
                         slope = 0.0
-                    ____:
+                    ____
                         slope = f__(points[j].y-points[i].y)/(points[j].x-points[i].x)
                     __ slope n.. __ hashmap:
                         hashmap[slope] = 1
-                    ____:
+                    ____
                         hashmap[slope] += 1
             ___ count __ hashmap.v..
                 __ count + duplicate > maxVal:

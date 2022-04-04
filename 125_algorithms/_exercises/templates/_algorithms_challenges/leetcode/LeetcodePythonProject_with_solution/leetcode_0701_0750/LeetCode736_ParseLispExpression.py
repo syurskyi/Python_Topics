@@ -18,7 +18,7 @@ c_ Solution(o..
             __ tokens[0] __ ('add', 'mult'
                 tmp = l.. m..(i.., map(getVal, tokens[1:])))
                 r.. s..(tmp[0]+tmp[1] __ tokens[0]__'add' ____ tmp[0]*tmp[1])
-            ____:
+            ____
                 ___ i __ r..(1, l..(tokens)-1, 2
                     __ tokens[i+1]:
                         d[tokens[i]] = getVal(tokens[i+1])
@@ -34,9 +34,9 @@ c_ Solution(o..
                 tokens.a..('')
             ____ c __ ')':
                 val = evaluate(tokens)
-                tokens, d = st.pop()
+                tokens, d = st.p.. )
                 tokens[-1] += val
-            ____:
+            ____
                 tokens[-1] += c
         r.. i..(tokens[0])
     
@@ -53,7 +53,7 @@ c_ Solution(o..
             r.. i..(exp)
         ____ exp[0] != '(':
             r.. hashmap[exp]
-        ____:
+        ____
             exp = exp[1:-1]
             __ exp[:3] __ 'add':
                 sub1, i = nextElem(exp, 4)
@@ -65,7 +65,7 @@ c_ Solution(o..
                 sub2, _ = nextElem(exp, i+1)
                 res = helper(sub1, hashmap)*helper(sub2, hashmap)
                 r.. res
-            ____:
+            ____
                 i = 3
                 w... T...
                     sub1, i = nextElem(exp, i+1)
@@ -90,7 +90,7 @@ c_ Solution(o..
                 res += s[i]
                 i += 1
             r.. res, i
-        ____:
+        ____
             w.... i < l..(s) a.. s[i] != ' ':
                 res += s[i]
                 i += 1

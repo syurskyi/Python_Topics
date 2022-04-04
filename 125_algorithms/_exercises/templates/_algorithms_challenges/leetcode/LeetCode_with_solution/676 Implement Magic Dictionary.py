@@ -41,7 +41,7 @@ c_ MagicDictionary:
 
                 __ i __ l..(s) -1:
                     cur.end = T..
-                ____:
+                ____
                     nxt = s[i+1]
                     cur.children[nxt] = insert(cur.children[nxt], s, i + 1)
 

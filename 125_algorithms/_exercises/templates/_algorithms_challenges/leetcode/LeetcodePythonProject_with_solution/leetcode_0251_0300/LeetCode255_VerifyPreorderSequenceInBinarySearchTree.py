@@ -33,6 +33,6 @@ c_ Solution(o..
             __ p < low:
                 r.. F..
             w.... stack a.. stack[-1] < p:
-                low = stack.pop()
+                low = stack.p.. )
             stack.a..(p)
         r.. T..

@@ -48,9 +48,9 @@ c_ Solution:
         n = l..(nums)
         ___ i __ x..(n
             w.... q a.. q[0] <= i-k:
-                q.pop(0)
+                q.p.. 0)
             w.... q a.. nums[q[-1]] < nums[i]:
-                q.pop()
+                q.p.. )
             q.a..(i)
             __ i >= k-1:
                 ret.a..(nums[q[0]])

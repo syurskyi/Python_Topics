@@ -71,7 +71,7 @@ c_ Solution:
                 stack.a..(c)
             ____ stack:
                 # c == RM
-                stack.pop()
+                stack.p.. )
 
         _stack    # list
 
@@ -80,6 +80,6 @@ c_ Solution:
                 _stack.a..(c)
             ____ _stack:
                 # c == RM
-                _stack.pop()
+                _stack.p.. )
 
         r.. RES[i..(stack __ _stack)]

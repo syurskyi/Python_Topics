@@ -16,15 +16,15 @@ c_ Thumbs:
             ____ number < 0:
                 number  abs(number)
                 s__  THUMBS_DOWN
-            ____:
+            ____
                 r.. V...("Specify a number")
             
             
             __ number < 3:
                 r.. s__ * number
-            ____:
+            ____
                 r.. f"{s__} ({number}x)"
             
-        ____:
+        ____
             r.. T..("Can only multiple by intger")
 

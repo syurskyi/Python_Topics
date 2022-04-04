@@ -34,9 +34,9 @@ c_ Solution:
                         _____
 
                 # one duplicate
-                ____:
+                ____
                     duplicate_count +=1
-            ____:
+            ____
                 duplicate_count = 0
 
             A[closed_ptr+1] = A[open_ptr]
@@ -66,7 +66,7 @@ c_ Solution:
                 duplicate_once = T..
                 close_ptr += 1
                 A[close_ptr] = A[open_ptr]
-            ____:  # found duplicate, and duplicated before, continue searching
+            ____  # found duplicate, and duplicated before, continue searching
                 _____  # find next non-duplicate
 
         r.. close_ptr+1

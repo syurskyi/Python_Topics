@@ -14,8 +14,8 @@ c_ Solution:
             r..
         ____ target __ 0:
             res.a..(cand | )
-        ____:
+        ____
             ___ i, c __ e..(candidates
                 cand.a..(c)
                 combination_sum(candidates[i:], cand, target - c, res)
-                cand.pop()
+                cand.p.. )

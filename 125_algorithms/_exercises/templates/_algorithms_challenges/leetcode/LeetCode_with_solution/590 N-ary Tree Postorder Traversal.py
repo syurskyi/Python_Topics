@@ -34,7 +34,7 @@ c_ Solution:
         stk = [root]
         visited = s..()
         w.... stk:
-            cur = stk.pop()
+            cur = stk.p.. )
             ret.appendleft(cur.val)
             ___ c __ cur.children:
                 stk.a..(c)
@@ -54,9 +54,9 @@ c_ Solution:
         w.... stk:
             cur = stk[-1]
             __ cur __ visited:
-                stk.pop()
+                stk.p.. )
                 ret.a..(cur.val)
-            ____:
+            ____
                 visited.add(cur)
                 ___ c __ r..(cur.children
                     stk.a..(c)

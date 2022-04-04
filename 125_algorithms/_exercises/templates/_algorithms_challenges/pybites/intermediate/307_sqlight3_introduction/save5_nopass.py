@@ -176,7 +176,7 @@ c_ DB:
             r.. cur.execute(f"SELECT * FROM {table}")
         ____ target __ N.. a.. columns:
             r.. cur.execute(f"SELECT {columns} FROM {table}")
-        ____:
+        ____
             __ l..(target) __ 2:  # no operator specified
                 (column_name, value) = target
                 r.. cur.execute(f"SELECT {columns} FROM {table} WHERE {column_name} = {value}")

@@ -50,7 +50,7 @@ c_ Solution(o..
                 n >>= 1
             ____ n __ 0b11 o. n >> 1 & 1 __ 0:
                 n -= 1
-            ____:
+            ____
                 n += 1
 
         r.. ret
@@ -66,7 +66,7 @@ c_ Solution(o..
         ret = 1
         __ n%2 __ 0:
             ret += integerReplacement(n/2)
-        ____:
+        ____
             ret += m..(integerReplacement(n+1), integerReplacement(n-1
 
         r.. ret

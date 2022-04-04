@@ -20,7 +20,7 @@ c_ Solution(o..
         stack = [root]
         res    # list
         w.... stack:
-            node = stack.pop()
+            node = stack.p.. )
             res.a..(node.val)
             __ node.right:
                 stack.a..(node.right)

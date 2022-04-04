@@ -22,7 +22,7 @@ c_ Solution(o..
         sDummy.next = p.next
         p.next = p.next.next
         sDummy = sDummy.next
-      ____:
+      ____
         p = p.next
       # if you change p.next then make sure you wouldn't change p in next run
     sDummy.next = dummy.next

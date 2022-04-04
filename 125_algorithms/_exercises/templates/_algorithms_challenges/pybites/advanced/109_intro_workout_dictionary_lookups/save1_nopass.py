@@ -33,6 +33,6 @@ ___ get_workout_motd(day
     day = day.t..
     __ day n.. __ WORKOUT_SCHEDULE:
         r.. INVALID_DAY
-    ____:
+    ____
             print(WORKOUT_SCHEDULE.v..[day])
     r..

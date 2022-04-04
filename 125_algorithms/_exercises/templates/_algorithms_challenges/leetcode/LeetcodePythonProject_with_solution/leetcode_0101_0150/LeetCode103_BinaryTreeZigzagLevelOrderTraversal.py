@@ -21,7 +21,7 @@ c_ Solution(o..
         queue, nextQueue, elem = [root], [], []
         order = T..
         w.... queue:
-            node = queue.pop(0)
+            node = queue.p.. 0)
             elem.a..(node.val)
             __ node.left:
                 nextQueue.a..(node.left)
@@ -30,7 +30,7 @@ c_ Solution(o..
             __ n.. queue:
                 __ n.. order:
                     res.a..(elem[::-1])
-                ____:
+                ____
                     res.a..(elem)
                 elem    # list
                 queue = nextQueue

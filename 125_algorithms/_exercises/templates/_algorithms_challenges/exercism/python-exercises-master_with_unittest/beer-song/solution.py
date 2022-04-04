@@ -18,7 +18,7 @@ ___ verse(number
 ___ _action(current_verse
     __ current_verse __ 0:
         r.. "Go to the store and buy some more, "
-    ____:
+    ____
         r.. "Take %s down and pass it around, " % (
             "one" __ current_verse > 1 ____ "it"
         )
@@ -33,7 +33,7 @@ ___ _bottles(number
         r.. 'no more bottles'
     __ number __ 1:
         r.. '1 bottle'
-    ____:
+    ____
         r.. '%d bottles' % number
 
 

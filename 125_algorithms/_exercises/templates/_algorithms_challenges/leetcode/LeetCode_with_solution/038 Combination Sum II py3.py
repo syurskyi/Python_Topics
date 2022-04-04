@@ -59,7 +59,7 @@ c_ Solution:
         cur.a..(candidates[i])
         cur_sum += candidates[i]
         dfs(candidates, i + 1, cur, cur_sum, target, ret)
-        cur.pop()
+        cur.p.. )
         cur_sum -= candidates[i]
 
 

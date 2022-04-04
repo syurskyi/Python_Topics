@@ -18,7 +18,7 @@ c_ Solution(o..
             code = encode(subStr)
             __ code __ resultCodes:
                 result.add(subStr)
-            ____:
+            ____
                 resultCodes.add(code)
         r.. l..(result)
     
@@ -31,7 +31,7 @@ c_ Solution(o..
                 sumVal = sumVal*4+1
             ____ c __ 'G':
                 sumVal = sumVal*4+2
-            ____:
+            ____
                 sumVal = sumVal*4+3
         r.. sumVal
     

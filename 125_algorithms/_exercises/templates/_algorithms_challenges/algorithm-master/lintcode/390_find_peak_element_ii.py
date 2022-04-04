@@ -49,16 +49,16 @@ c_ Solution:
                     r.. [row, col]
                 __ A[row][col] < A[row-1][col]:
                     down = row
-                ____:
+                ____
                     up = row
-            ____:
+            ____
                 col = left + (right - left) // 2
                 row = findColMax(A, col, up, down)
                 __ isPeak(A, row, col
                     r.. [row, col]
                 __ A[row][col] < A[row][col-1]:
                     right = col
-                ____:
+                ____
                     left = col
         ___ r __ [up, down]:
             ___ c __ [left, right]:

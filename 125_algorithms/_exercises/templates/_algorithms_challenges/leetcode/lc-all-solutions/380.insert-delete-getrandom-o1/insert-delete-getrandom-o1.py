@@ -29,7 +29,7 @@ c_ RandomizedSet(o..
     index = d[val]
     a[index] = a[-1]
     d[a[-1]] = index
-    a.pop()
+    a.p.. )
     del d[val]
     r.. T..
 

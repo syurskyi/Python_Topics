@@ -52,7 +52,7 @@ c_ ZeroEvenOdd:
             printNumber(0)
             __ (i + 1) % 2 __ 1:
                 locks[1].release()
-            ____:
+            ____
                 locks[2].release()
 
     ___ odd  printNumber: Callable[[i..], N..]) __ N..

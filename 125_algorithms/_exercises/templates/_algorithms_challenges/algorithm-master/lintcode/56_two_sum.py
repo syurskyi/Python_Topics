@@ -60,7 +60,7 @@ c_ Solution:
 
             __ _sum < target:
                 left += 1
-            ____:
+            ____
                 right -= 1
 
         r.. NOT_FOUND

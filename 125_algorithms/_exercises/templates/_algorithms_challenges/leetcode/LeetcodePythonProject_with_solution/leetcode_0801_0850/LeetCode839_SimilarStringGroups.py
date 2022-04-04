@@ -37,7 +37,7 @@ c_ Solution(o..
             ___ x, y __ i...combinations(arr, 2
                 __ similar(x, y
                     union(x, y)
-        ____:
+        ____
             ___ x __ arr:
                 ___ i, j __ i...combinations(r..(m), 2
                     y = x[:i] + x[j] + x[i+1:j] + x[i] + x[j+1:]

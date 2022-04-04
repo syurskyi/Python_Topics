@@ -11,7 +11,7 @@ c_ Solution(o..
             mid = (lower+upper)//2
             __ c.. matrix, mid) < k:
                 lower = mid+1
-            ____:
+            ____
                 upper = mid
         r.. upper
     
@@ -23,7 +23,7 @@ c_ Solution(o..
             __ matrix[i][j] <= target:
                 count += i+1
                 j += 1
-            ____:
+            ____
                 i -= 1
         r.. count
     

@@ -71,7 +71,7 @@ ___ filter_entries_by_tag(s.., entry
     ____ '|' __ s..:
         splits = s...s..('|')
         r.. any(s...l.. __ entry_tags ___ s.. __ splits)
-    ____:
+    ____
         r.. s...l.. __ entry_tags
 
 ___ main
@@ -109,7 +109,7 @@ ___ main
         
         __ matches __ 1:
             print('1 entry matched')
-        ____:
+        ____
             print(f"{matches} entries matched")
 
 

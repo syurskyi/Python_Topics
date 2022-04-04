@@ -14,7 +14,7 @@ ___ binary_search(sequence, target
 
         __ sequence[mid] < target:
             low = mid + 1
-        ____:
+        ____
             high =mid - 1
 
 

@@ -18,7 +18,7 @@ c_ Solution:
 
             __ square < x:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         r.. left

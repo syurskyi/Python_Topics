@@ -33,4 +33,4 @@ c_ TrieService:
             parent.top10.a..(frequency)
             parent.top10.s..(r.._T..
             __ l..(parent.top10) > 10:
-                parent.top10.pop()
+                parent.top10.p.. )

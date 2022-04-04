@@ -22,7 +22,7 @@ c_ Calculator(o..
         w.... i < l..(result) - 1:
             __ result[i] __ operators:
                 result[i - 1] = s..(__class__.operands[result[i]](f__(result[i - 1]), f__(result[i + 1])))
-                result.pop(i + 1)
-                result.pop(i)
+                result.p.. i + 1)
+                result.p.. i)
                 _____
             i += 1

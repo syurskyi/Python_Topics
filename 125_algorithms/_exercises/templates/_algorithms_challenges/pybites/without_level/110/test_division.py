@@ -12,8 +12,8 @@ ____ division _______ divide_numbers
     (8.2, 2, 4),
     (1, 2.9, 0.5),
 ])
-___ test_divide_numbers_good_inputs(numerator, denominator, expected
-    ... divide_numbers(numerator, denominator) __ expected
+___ test_divide_numbers_good_inputs(numerator, denominator, e..
+    ... divide_numbers(numerator, denominator) __ e..
 
 
 ?p__.m__.p.("numerator, denominator", [

@@ -31,7 +31,7 @@ c_ Solution:
                 point2 = points[j]
                 __ point1.x __ point2.x:
                     key = (1 << 32, point1.x)
-                ____:
+                ____
                     slope = f__(point1.y-point2.y)/(point1.x-point2.x)
                     intersection = slope*point1.x - point1.y
 
@@ -86,7 +86,7 @@ c_ Solution:
                     _____
                 __ point1.x__point2.x:
                     key = 1<<32
-                ____:
+                ____
                     slope = f__(point1.y-point2.y)/(point1.x-point2.x)
                     slope = i..(slope*10000) # avoid numeric errors
                     # no need to calculate intersection. During this iteration, all lines pass point1
@@ -100,7 +100,7 @@ c_ Solution:
             __ hash_map:
                 max_key = m..(hash_map, key=hash_map.get)
                 max_value = hash_map[max_key]
-            ____:
+            ____
                 max_value  = 0
             maxa = m..(maxa, max_value+duplicate)
 

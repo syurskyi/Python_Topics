@@ -26,7 +26,7 @@ c_ Solution(o..
             r.. [1]
         ____ l..(nums) __ 2:
             r.. nums[::-1]
-        ____:
+        ____
             m = 1
             rest = nums[1:]
             ___ c __ rest:

@@ -17,6 +17,6 @@ c_ Solution(o..
                 r.. mid
             ____ target > nums[mid]:
                 l = mid+1
-            ____:
+            ____
                 r = mid
         r.. l

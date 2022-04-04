@@ -27,11 +27,11 @@ c_ Solution(o..
             stack.a..(node)
             node = node.left
         w.... stack:
-            node = stack.pop()
+            node = stack.p.. )
             __ node.val != prev:
                 count = 1
                 prev = node.val
-            ____:
+            ____
                 count += 1
             __ count > maxCount:
                 maxCount = count

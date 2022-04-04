@@ -22,7 +22,7 @@ c_ Beer:
     ___ suffix(cls, verse_num
         __ verse_num __ 0:
             r.. cls.LAST_LINE
-        ____:
+        ____
             r.. ('Take %(cardinality)s down and pass it around, '
                     '%(quantity)s %(container)s of beer on the wall.'
                     % cls.vals_for(verse_num - 1

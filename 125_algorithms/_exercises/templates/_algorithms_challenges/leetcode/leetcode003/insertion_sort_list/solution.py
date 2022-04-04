@@ -27,7 +27,7 @@ c_ Solution:
                 head.next = h
                 h = head
             # Insert head to the middle or end of h
-            ____:
+            ____
                 prev.next = head
                 head.next = current
             head = next_node

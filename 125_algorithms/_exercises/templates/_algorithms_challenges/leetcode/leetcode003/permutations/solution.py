@@ -16,7 +16,7 @@ c_ Solution(o..
         """
         __ n.. nums:
             r.. [[]]
-        ____:
+        ____
             res    # list
             ___ i, e __ e..(nums
                 rest = nums[:i] + nums[i + 1:]

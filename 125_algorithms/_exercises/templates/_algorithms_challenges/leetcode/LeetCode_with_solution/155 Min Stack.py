@@ -42,9 +42,9 @@ c_ MinStack:
 
         :return: nothing
         """
-        x = stk.pop()
+        x = stk.p.. )
         __ x __ non_asc[-1]:
-            non_asc.pop()
+            non_asc.p.. )
 
     ___ top
         """

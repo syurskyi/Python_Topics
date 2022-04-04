@@ -33,7 +33,7 @@ c_ Solution(o..
                 result.a..(root.val)
             __ root.left:
                 root = root.left
-            ____:
+            ____
                 root = root.right
         r.. result
     
@@ -53,7 +53,7 @@ c_ Solution(o..
                 result.a..(root.val)
             __ root.right:
                 root = root.right
-            ____:
+            ____
                 root = root.left
         result.r..
         r.. result

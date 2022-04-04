@@ -20,6 +20,6 @@ c_ Solution:
         ___ i __ x..(n
             __ i < k:
                 nums[i] = nums[n-k+i]
-            ____:
+            ____
                 nums[i] = temp[i-k]
 

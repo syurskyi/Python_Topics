@@ -64,7 +64,7 @@ c_ Solution:
 
             __ nums[i] __ nums[i - 1] + 1:
                 size += 1
-            ____:
+            ____
                 size = 1
 
             __ size > ans:

@@ -19,7 +19,7 @@ c_ Solution(o..
       __ s.. >= 10:
         carry = 1
         ans += s..(s.. - 10)
-      ____:
+      ____
         ans += s..(s..)
     __ carry __ 1:
       ans += "1"

@@ -54,24 +54,24 @@ c_ Solution(o..
           __ code.startswith("]]>", i
             i += 3
             _____
-          ____:
+          ____
             r.. F..
-        ____:
+        ____
           token = getTokenStartsAt(i)
           __ n.. isTag(token
             r.. F..
           __ n.. isClosedTag(token
             stack.a..(token)
-          ____:
+          ____
             __ n.. stack:
               r.. F..
             __ isTagsMatched(stack[-1], token
-              stack.pop()
+              stack.p.. )
               __ n.. stack a.. i + l..(token) < l..(code
                 r.. F..
-            ____:
+            ____
               r.. F..
           i += l..(token)
-      ____:
+      ____
         i += 1
     r.. n.. stack

@@ -11,23 +11,23 @@ c_ Solution:
                                
                                 non_count +=1
                                 i = 0
-                            ____:
+                            ____
                                 __ nums[i+1] < nums[i+2]:
                                     __ equals __ T..:
                                         nums[i+1] = nums[i]
-                                    ____:
+                                    ____
                                         __ nums[i] < nums[i+2]:
                                             nums[i+1] = nums[i+2]
-                                        ____:
+                                        ____
                                             nums[i] = nums[i+1]
-                                ____:
+                                ____
                                     nums[i] = (nums[i] - nums[i+1])
                                 non_count += 1
                                 i = 0
                         ____ nums[i] __ nums[i+1]:
                             equals = T..
                             i += 1
-                        ____:
+                        ____
                             i += 1
                     ______:
                         p..
@@ -35,5 +35,5 @@ c_ Solution:
                         _____
                 __ non_count <= 1:
                     r.. T..
-                ____:
+                ____
                     r.. F..

@@ -51,15 +51,15 @@ c_ Solution:
         j = 0
         ___ a __ A:
             __ a > B[j]:
-                i = idxes[B[j]].pop()
+                i = idxes[B[j]].p.. )
                 ret[i] = a
                 j += 1
-            ____:
+            ____
                 not_used.a..(a)
 
         ___ i __ r..(n
             __ ret[i] __ N..
-                ret[i] = not_used.pop()
+                ret[i] = not_used.p.. )
 
         r.. ret
 

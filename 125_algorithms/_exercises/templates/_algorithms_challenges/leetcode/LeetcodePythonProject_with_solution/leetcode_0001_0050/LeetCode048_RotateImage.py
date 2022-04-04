@@ -12,7 +12,7 @@ c_ Solution(o..
         _______ m__
         n = l..(matrix)
         ___ i __ r..(n//2
-            ___ j __ r..(i..(m__.ceil(n/2.0))):
+            ___ j __ r..(i..(m__.c.. n/2.0))):
                 tmp = matrix[i][j]
                 matrix[i][j] = matrix[n-1-j][i]
                 matrix[n-1-j][i] = matrix[n-1-i][n-1-j]

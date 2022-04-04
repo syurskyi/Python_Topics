@@ -95,7 +95,7 @@ c_ MiniYelp:
         hashcode = restr_to_geohash[restaurant_id]
         index = bisect.bisect_left(geohashs, hashcode)
 
-        geohashs.pop(index)
+        geohashs.p.. index)
         del restaurants[hashcode]
         del restr_to_geohash[restaurant_id]
 

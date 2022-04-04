@@ -17,13 +17,13 @@ c_ Solution(o..
           dp[i][j] = j
         ____ j __ 0:
           dp[i][j] = i
-        ____:
+        ____
           cond1 = dp[i][j - 1] + 1
           cond2 = dp[i - 1][j] + 1
           cond3 = 0
           __ word1[i - 1] __ word2[j - 1]:
             cond3 = dp[i - 1][j - 1]
-          ____:
+          ____
             cond3 = dp[i - 1][j - 1] + 1
           dp[i][j] = m..(cond1, cond2, cond3)
     r.. dp[-1][-1]

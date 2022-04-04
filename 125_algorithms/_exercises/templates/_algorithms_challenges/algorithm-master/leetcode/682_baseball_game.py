@@ -11,12 +11,12 @@ c_ Solution:
 
         ___ op __ ops:
             __ op __ 'C':
-                stack.pop()
+                stack.p.. )
             ____ op __ 'D':
                 stack.a..(2 * stack[-1])
             ____ op __ '+':
                 stack.a..(stack[-1] + stack[-2])
-            ____:
+            ____
                 stack.a..(i..(op
 
         r.. s..(stack)

@@ -8,7 +8,7 @@ ___ divide_numbers(numerator, denominator
     ___
         __ denominator __ 0:
             r.. 0
-        ____:
+        ____
             r.. i..(numerator) / i..(denominator)
     ______ V..
         r..

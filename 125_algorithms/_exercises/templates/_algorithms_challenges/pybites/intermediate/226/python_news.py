@@ -36,10 +36,10 @@ ___ get_top_titles(url, top=5
 
     ___ row __ rows:
         links = row.select('span.title a')
-        title_text = links[0].getText(strip=T..)
+        title_text = links[0].getText(s..=T..)
         link_text = ''
         __ l..(links) > 1:
-            link_text = links[1].getText(strip=T..)
+            link_text = links[1].getText(s..=T..)
             link_text = f" ({link_text})"
 
 
@@ -54,7 +54,7 @@ ___ get_top_titles(url, top=5
 
 
 
-        comments = next_row.select_one('span.naturaltime a').getText(strip=T..)
+        comments = next_row.select_one('span.naturaltime a').getText(s..=T..)
 
         comments = get_number(comments)
 

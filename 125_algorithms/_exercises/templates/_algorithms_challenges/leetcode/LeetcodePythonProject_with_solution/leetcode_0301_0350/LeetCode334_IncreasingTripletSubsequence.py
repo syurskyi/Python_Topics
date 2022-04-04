@@ -15,7 +15,7 @@ c_ Solution(o..
                 first = nums[i]
             ____ nums[i] <= second:
                 second = nums[i]
-            ____:
+            ____
                 r.. T..
         r.. F..
     

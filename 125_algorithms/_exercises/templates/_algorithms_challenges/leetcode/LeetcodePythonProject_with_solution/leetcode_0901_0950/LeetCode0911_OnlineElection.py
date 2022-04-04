@@ -26,7 +26,7 @@ c_ TopVotedCandidate(o..
             mid = (i+j)//2
             __ t < arr[mid][0]:
                 j = mid
-            ____:
+            ____
                 i = mid+1
         r.. arr[i-1][1]
 

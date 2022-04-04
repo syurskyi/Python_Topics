@@ -16,7 +16,7 @@ c_ Solution(o..
                 count += 1
             ____ count __ 0:
                 cand, count = num, 1
-            ____:
+            ____
                 count -= 1
         r.. cand
     

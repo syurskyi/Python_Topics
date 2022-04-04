@@ -35,7 +35,7 @@ c_ Solution(o..
             __ n.. cur.left:
                 ret.a..(cur.val)
                 cur = cur.right
-            ____:
+            ____
                 pre = cur.left
                 w.... pre.right a.. pre.right != cur:
                     pre = pre.right
@@ -43,7 +43,7 @@ c_ Solution(o..
                 __ n.. pre.right:
                     pre.right = cur
                     cur = cur.left
-                ____:
+                ____
                     pre.right = N..
                     ret.a..(cur.val)
                     cur = cur.right
@@ -91,7 +91,7 @@ c_ Solution(o..
             w.... cur:
                 stk.a..(cur)
                 cur = cur.left
-            cur = stk.pop()  # left_most
+            cur = stk.p.. )  # left_most
             lst.a..(cur.val)
             cur = cur.right
             # if cur.right:  # should go to next iteration

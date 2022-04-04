@@ -14,7 +14,7 @@ c_ Solution:
             mid = (left + right) / 2.0
             __ mid * mid < x:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         r.. left

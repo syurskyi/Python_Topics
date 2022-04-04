@@ -23,7 +23,7 @@ c_ HighScores(o..
     ___ personal_best_message
         __ amount_short() __ 0:
             r.. "That's your personal best!"
-        ____:
+        ____
             r.. f"That's {amount_short()} short of your personal best!"
 
     ___ amount_short

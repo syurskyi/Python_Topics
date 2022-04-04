@@ -19,11 +19,11 @@ c_ Solution:
     ___ letter_combination_aux  d.., d, cand, res
         __ n.. d..:
             res.a..(''.j..(cand
-        ____:
+        ____
             digit = d..[0]
             __ digit __ d:
                 letters = d[digit]
                 ___ letter __ letters:
                     cand.a..(letter)
                     letter_combination_aux(d..[1:], d, cand, res)
-                    cand.pop()
+                    cand.p.. )

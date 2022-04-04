@@ -12,10 +12,10 @@ c_ Solution(o..
       ____ expression[i] __ "?":
         i -= 1
         __ expression[i] __ "T":
-          top = stack.pop()
-          stack.pop()
+          top = stack.p.. )
+          stack.p.. )
           stack.a..(top)
         ____ expression[i] __ "F":
-          stack.pop()
+          stack.p.. )
       i -= 1
     r.. stack[0]

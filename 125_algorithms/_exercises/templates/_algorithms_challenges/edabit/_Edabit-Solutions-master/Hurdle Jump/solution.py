@@ -4,7 +4,7 @@ ___ hurdle_jump(hurdles, jump_height
     hurdles.s..()
     __ hurdles[-1] < jump_height:
         r.. T..
-    ____:
+    ____
         r.. F..
 
 

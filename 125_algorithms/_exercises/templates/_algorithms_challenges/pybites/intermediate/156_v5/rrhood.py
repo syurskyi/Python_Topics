@@ -66,7 +66,7 @@ ___ make_character_index(text=text, characters=CHARACTERS
                         flag = T..
                 __ flag:
                     result[c[0].l..].a..(x)
-            ____:
+            ____
                 __ c.l.. __ s.l..:
                     result[c.l..].a..(x)
     r.. result

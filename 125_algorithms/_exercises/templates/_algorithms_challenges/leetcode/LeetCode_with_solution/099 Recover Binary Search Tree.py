@@ -50,7 +50,7 @@ c_ Solution:
         in_order(root)
         __ l..(swapped_pair)__2:
             swapped_pair[0][0].val, swapped_pair[1][1].val = swapped_pair[1][1].val, swapped_pair[0][0].val
-        ____: # neighboring
+        ____ # neighboring
             swapped_pair[0][0].val, swapped_pair[0][1].val = swapped_pair[0][1].val, swapped_pair[0][0].val
         r.. root
 
@@ -65,7 +65,7 @@ c_ Solution:
         __ pre a.. n.. pre.val<current.val:
             __ n.. swapped_pair:
                 swapped_pair.a..((pre, current  # pre is wrong
-            ____:
+            ____
                 swapped_pair.a..((pre, current  # current is wrong
         in_order(current.right)
 

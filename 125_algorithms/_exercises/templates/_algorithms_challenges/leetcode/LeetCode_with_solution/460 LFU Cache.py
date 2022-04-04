@@ -67,7 +67,7 @@ c_ LFUCache:
                 mini = freq_org + 1
 
             r.. val
-        ____:
+        ____
             r.. - 1
 
     ___ put  key: i.., value: i..) __ N..
@@ -77,7 +77,7 @@ c_ LFUCache:
         __ key __ values:
             values[key] = value
             g.. key)  # update
-        ____:
+        ____
             __ l..(values) >= cap:
                 evit_key, _ = keys[mini].popitem(last=F..)  # least recent is at head
                 del values[evit_key]

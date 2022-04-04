@@ -22,7 +22,7 @@ c_ Solution(o..
                         res.a..(val)
                     i += 1
                     changed = T..
-                ____:
+                ____
                     res.a..(asteroids[i])
                 i += 1
             __ n.. changed:

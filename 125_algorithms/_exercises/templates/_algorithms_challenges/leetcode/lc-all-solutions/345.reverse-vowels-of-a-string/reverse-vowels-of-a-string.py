@@ -15,7 +15,7 @@ c_ Solution(o..
         start += 1
       ____ s[end] n.. __ vowels:
         end -= 1
-      ____:
+      ____
         s[start], s[end] = s[end], s[start]
         start += 1
         end -= 1

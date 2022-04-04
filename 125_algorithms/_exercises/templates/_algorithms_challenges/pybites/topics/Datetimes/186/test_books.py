@@ -15,8 +15,8 @@ ____ books _______ get_number_books_read
     (100, '11-20-2019', 90),
     (100, '5/20/2019', 40),
 ])
-___ test_get_number_books_read(goal, date_str, expected
-    ... get_number_books_read(goal, date_str) __ expected
+___ test_get_number_books_read(goal, date_str, e..
+    ... get_number_books_read(goal, date_str) __ e..
 
 
 ___ test_not_positive_goal_exception

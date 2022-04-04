@@ -22,7 +22,7 @@ c_ Codec:
     w.... end < l..(s
       __ s[end] != "|":
         end += 1
-      ____:
+      ____
         length = i..(s[start:end])
         start = end + 1
         end = start + length

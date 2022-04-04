@@ -14,6 +14,6 @@ ___ print_colors
         ____ color __ input("quit"
             print("bye")
             _____
-        ____:
+        ____
             print("Not a valid color")
         p..

@@ -39,7 +39,7 @@ c_ Solution:
         ___ i __ r..(n
             stk.a..(pushed[i])
             w.... j < n a.. stk a.. stk[-1] __ popped[j]:
-                stk.pop()
+                stk.p.. )
                 j += 1
 
         r.. j __ n
@@ -57,11 +57,11 @@ c_ Solution:
                 stk.a..(pushed[i])
                 i += 1
 
-            stk.pop()
+            stk.p.. )
             j += 1
 
         w.... j < n a.. stk a.. stk[-1] __ popped[j]:
-            stk.pop()
+            stk.p.. )
             j += 1
 
         r.. n.. stk

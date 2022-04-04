@@ -21,12 +21,12 @@ c_ Solution(o..
                 imin = i+1
             ____ i > 0 a.. nums1[i-1] > nums2[j]:
                 imax = i-1
-            ____:
+            ____
                 __ i __ 0:
                     max_of_left = nums2[j-1]
                 ____ j __ 0:
                     max_of_left = nums1[i-1]
-                ____:
+                ____
                     max_of_left = m..(nums1[i-1], nums2[j-1])
                 __ (m+n)%2 __ 1:
                     r.. max_of_left
@@ -34,7 +34,7 @@ c_ Solution(o..
                     min_of_right = nums2[j]
                 ____ j __ n:
                     min_of_right = nums1[i]
-                ____:
+                ____
                     min_of_right = m..(nums1[i], nums2[j])
                 r.. (max_of_left + min_of_right)/2.0
     

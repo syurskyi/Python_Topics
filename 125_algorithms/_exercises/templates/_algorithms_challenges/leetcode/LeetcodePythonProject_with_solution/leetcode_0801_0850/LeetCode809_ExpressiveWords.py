@@ -34,7 +34,7 @@ c_ Solution(o..
                     flag = F..
                     _____
                 i, j = i0, j0
-            ____:
+            ____
                 _____
         __ i __ m a.. j __ n a.. flag:
             r.. T..

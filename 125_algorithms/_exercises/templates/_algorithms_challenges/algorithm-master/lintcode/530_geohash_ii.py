@@ -38,7 +38,7 @@ c_ GeoHash:
             mid = left + (right - left) / 2.0
             __ code:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         r.. left + (right - left) / 2.0
@@ -48,7 +48,7 @@ c_ GeoHash:
         ___ i __ r..(5
             __ val_in_oct % 2:
                 bins.a..(1)
-            ____:
+            ____
                 bins.a..(0)
             val_in_oct = val_in_oct >> 1
 

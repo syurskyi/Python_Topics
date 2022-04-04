@@ -27,7 +27,7 @@ c_ Solution(o..
                 _____
             curr.a..(nums[i])
             helper2(nums, i+1, curr, res, target-nums[i])
-            curr.pop()
+            curr.p.. )
     
     ___ combinationSum2_origin  candidates, target
         """
@@ -52,4 +52,4 @@ c_ Solution(o..
             __ prev != nums[i]:
                 curr.a..(nums[i])
                 helper(nums, target-nums[i], i+1, curr, res)
-                prev = curr.pop()
+                prev = curr.p.. )

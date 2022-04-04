@@ -7,7 +7,7 @@ INTERNAL_LINKS = ('pybit.es', 'codechalleng.es')
 ___ make_html_links
     ___ line __ ___.stdin:
         res = process_line(line)
-        __ res a.. l..(res.strip > 0:
+        __ res a.. l..(res.s.. > 0:
             print(res)
 
 
@@ -20,7 +20,7 @@ ___ process_line(line
         elements = urlparse(url)
         __ elements.hostname n.. __ INTERNAL_LINKS:
             target = ' target="_blank"'
-        ____:
+        ____
             target = ''
         r.. f'<a href="{url}"{target}>{title}</a>'  # .encode('ascii')
     r.. ''

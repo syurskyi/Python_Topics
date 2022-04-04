@@ -13,7 +13,7 @@ c_ Solution(o..
       ans = 0
       ___ i __ r..(0, l..(height:
         w.... stack a.. height[i] < height[stack[-1]]:
-          h = height[stack.pop()]
+          h = height[stack.p.. )]
           w = i - stack[-1] - 1 __ stack ____ i
           ans = m..(ans, h * w)
         stack.a..(i)
@@ -24,7 +24,7 @@ c_ Solution(o..
     ___ i __ r..(r..(0, l..(matrix))):
       __ i __ l..(matrix) - 1:
         dp[i] = [i..(h) ___ h __ matrix[i]]
-      ____:
+      ____
         ___ j __ r..(0, l..(matrix[0]:
           __ matrix[i][j] != "0":
             dp[i][j] = dp[i + 1][j] + 1

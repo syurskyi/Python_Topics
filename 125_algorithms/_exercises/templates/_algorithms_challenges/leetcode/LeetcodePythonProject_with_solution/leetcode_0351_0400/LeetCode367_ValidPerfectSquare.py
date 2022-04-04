@@ -13,6 +13,6 @@ c_ Solution(o..
                 r.. T..
             ____ mid*mid > num:
                 r = mid-1
-            ____:
+            ____
                 l = mid+1
         r.. F..

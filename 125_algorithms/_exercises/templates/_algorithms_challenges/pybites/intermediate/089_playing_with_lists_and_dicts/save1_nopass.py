@@ -46,7 +46,7 @@ ___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev
        in the NOT_FOUND constant (takeaway: dicts are great for lookups)"""
     __ state_name n.. __ us_state_abbrev.k..:
         r.. NOT_FOUND
-    ____:
+    ____
         r.. us_state_abbrev[state_name]
 
 

@@ -18,7 +18,7 @@ ___ i __ r..(i..(input())):
     __ (area - i..(area > 0.5:
         area += 0.5
         area = i..(area)
-    ____:
+    ____
         area = i..(area)
     area = m__.sqrt(area)
     print(area,end=' ')

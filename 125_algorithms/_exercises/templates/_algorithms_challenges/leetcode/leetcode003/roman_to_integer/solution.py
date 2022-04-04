@@ -24,6 +24,6 @@ c_ Solution(o..
         ___ i, c __ e..(s
             __ i < l..(s) - 1 a.. roman[c] < roman[s[i + 1]]:
                 res -= roman[c]
-            ____:
+            ____
                 res += roman[c]
         r.. res

@@ -21,7 +21,7 @@ c_ Solution(o..
         nextQueue    # list
         res = [root.val]
         w.... queue:
-            node = queue.pop(0)
+            node = queue.p.. 0)
             __ node.left:
                 nextQueue.a..(node.left)
             __ node.right:

@@ -40,20 +40,20 @@ c_ Solution(o..
             __ l..(queue) > n:
                 res += l..(queue)
                 w.... queue:
-                    count, c = queue.pop(0)
+                    count, c = queue.p.. 0)
                     count -= 1
                     __ count > 0:
                         heapq.heappush(heap, (-count, c
             __ n.. heap:
                 count0 = l..(queue)
                 w.... queue:
-                    count, c = queue.pop(0)
+                    count, c = queue.p.. 0)
                     count -= 1
                     __ count > 0:
                         heapq.heappush(heap, (-count, c
                 __ n.. heap:
                     res += count0
-                ____:
+                ____
                     res += n+1
         r.. res
     

@@ -31,7 +31,7 @@ c_ Solution:
                 stack.a..(node)
                 node = node.left
 
-            node = stack.pop()
+            node = stack.p.. )
 
             _node = DoublyListNode(node.val)
             _node.prev = tail

@@ -132,7 +132,7 @@ c_ BridgeHand:
             __ l..(cards) __ 1:
                 __ cards[0] != Rank.A:
                     losing_tricks += 1
-            ____:
+            ____
 
                 cards = s..(cards,key=l.... x: x.value)
                 __ l..(cards) __ 2:
@@ -140,7 +140,7 @@ c_ BridgeHand:
                         losing_tricks += 1
                     ____ cards[0] != Rank.A o.  cards[1] != Rank.K:
                         losing_tricks += 2
-                ____:
+                ____
                     cards = cards[:3]
 
                     __ cards != [Rank.A,Rank.K,Rank.Q]:
@@ -148,7 +148,7 @@ c_ BridgeHand:
                             losing_tricks += 1
                         ____ cards[0] __ (Rank.A,Rank.K,Rank.Q
                             losing_tricks += 2
-                        ____:
+                        ____
                             losing_tricks += 3
 
 

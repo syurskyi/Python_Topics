@@ -31,7 +31,7 @@ c_ Solution:
 
                 __ heads[i]:
                     tails[i].next = _node
-                ____:
+                ____
                     heads[i] = _node
 
                 tails[i] = _node

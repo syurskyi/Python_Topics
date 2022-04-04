@@ -42,7 +42,7 @@ ___ test_return_types(slice2
     ('green', 64),
     ('amber', 16),
 ])
-___ test_timings(slice1, color, expected
+___ test_timings(slice1, color, e..
     timeout_for_color = s..(state.timeout ___ state __ slice1
                             __ state.color __ color)
-    ... timeout_for_color __ expected
+    ... timeout_for_color __ e..

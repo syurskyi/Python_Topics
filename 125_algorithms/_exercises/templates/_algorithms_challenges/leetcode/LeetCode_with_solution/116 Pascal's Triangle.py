@@ -26,7 +26,7 @@ c_ Solution:
             ___ col __ x..(row+1
                 __ col__0 o. col__row:
                     current.a..(1)
-                ____:
+                ____
                     current.a..(result[row-1][col-1]+result[row-1][col])
             result.a..(current)
 

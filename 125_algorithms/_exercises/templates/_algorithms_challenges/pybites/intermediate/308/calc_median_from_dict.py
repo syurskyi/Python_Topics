@@ -21,7 +21,7 @@ ___ calc_median_from_dict(d: d..) __ f__:
 
     __ l..(frequency) % 2 != 0:
         r.. f__(frequency[l..(frequency) // 2])
-    ____:
+    ____
         mid_2 = (l..(frequency) // 2)
         mid_1 = mid_2 -1
         r.. (frequency[mid_1] + frequency[mid_2]) / 2

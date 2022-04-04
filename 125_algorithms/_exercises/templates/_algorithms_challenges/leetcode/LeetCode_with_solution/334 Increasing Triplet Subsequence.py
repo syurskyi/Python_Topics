@@ -48,7 +48,7 @@ c_ Solution(o..
         stk    # list
         ___ elt __ nums:
             w.... stk a.. stk[-1] >= elt:
-                stk.pop()
+                stk.p.. )
 
             stk.a..(elt)
             __ l..(stk) >= 3:

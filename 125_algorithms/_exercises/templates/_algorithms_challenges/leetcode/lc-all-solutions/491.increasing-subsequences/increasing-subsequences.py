@@ -17,7 +17,7 @@ c_ Solution(o..
           _____
         p...a..(nums[i])
         dfs(nums, i + 1, p.., ans)
-        p...pop()
+        p...p.. )
 
     dfs(nums, 0, [], ans)
     r.. l..(s..(ans

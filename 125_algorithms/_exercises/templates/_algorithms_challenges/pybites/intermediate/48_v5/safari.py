@@ -19,7 +19,7 @@ ___ create_chart
                 last_date = d
             __ i != '':
                 book = t
-            ____:
+            ____
                 __ t __ 'sending to slack channel':
                     print(PY_BOOK __ 'python' __ book.l.. ____ OTHER_BOOK, end='')
         print()

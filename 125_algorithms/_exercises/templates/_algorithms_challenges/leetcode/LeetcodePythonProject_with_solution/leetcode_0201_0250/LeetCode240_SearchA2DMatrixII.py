@@ -19,7 +19,7 @@ c_ Solution(o..
                 r.. T..
             ____ matrix[i][j] > target:
                 i -= 1
-            ____:
+            ____
                 j += 1
         r.. F..
     
@@ -37,7 +37,7 @@ c_ Solution(o..
                 r.. T..
             ____ matrix[i][j] > target:
                 j -= 1
-            ____:
+            ____
                 i += 1
         r.. F..
     
@@ -56,7 +56,7 @@ c_ Solution(o..
                 r.. T..
             ____ matrix[mid][0] > target:
                 end = mid-1
-            ____:
+            ____
                 start = mid+1
         row0 = start __ start < l..(matrix) ____ start-1
         ___ row __ r..(row0, -1, -1
@@ -67,7 +67,7 @@ c_ Solution(o..
                     r.. T..
                 ____ matrix[row][mid] > target:
                     end = mid-1 
-                ____:
+                ____
                     start = mid+1
         r.. F..
     

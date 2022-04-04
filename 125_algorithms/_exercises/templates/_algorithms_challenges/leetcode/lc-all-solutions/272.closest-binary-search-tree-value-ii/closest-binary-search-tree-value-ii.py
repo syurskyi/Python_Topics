@@ -21,14 +21,14 @@ c_ Solution(o..
       __ root.val < target:
         preStack.a..(root)
         root = root.right
-      ____:
+      ____
         sucStack.a..(root)
         root = root.left
 
     ___ getPredecessor(stack
       __ n.. stack:
         r..
-      pre = stack.pop()
+      pre = stack.p.. )
       p = pre.left
       w.... p:
         stack.a..(p)
@@ -38,7 +38,7 @@ c_ Solution(o..
     ___ getSuccessor(stack
       __ n.. stack:
         r..
-      suc = stack.pop()
+      suc = stack.p.. )
       p = suc.right
       w.... p:
         stack.a..(p)

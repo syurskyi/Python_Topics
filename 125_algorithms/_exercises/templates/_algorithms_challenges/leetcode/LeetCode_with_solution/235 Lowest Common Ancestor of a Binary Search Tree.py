@@ -40,5 +40,5 @@ c_ Solution:
                 cur = cur.left
             ____ p.val > cur.val a.. q.val > cur.val:
                 cur = cur.right
-            ____:  # including case in self-descendant
+            ____  # including case in self-descendant
                 r.. cur

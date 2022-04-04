@@ -8,7 +8,7 @@ c_ Solution(o..
     __ l..(haystack) __ l..(needle
       __ haystack __ needle:
         r.. 0
-      ____:
+      ____
         r.. -1
 
     ___ i __ r..(0, l..(haystack:

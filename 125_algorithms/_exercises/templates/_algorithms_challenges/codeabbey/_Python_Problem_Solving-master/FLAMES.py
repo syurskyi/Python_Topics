@@ -23,12 +23,12 @@ len_count = 1
 w.... l..(flame)!= 1:
     #if length of the combined string has reached then pop the current element of the flames list
     __ len_count __ length:
-        flame.pop(i)
+        flame.p.. i)
         len_count = 1
         #check if after poping the element has the flames reached the end of the list if yes then reset the i counter
         __ i __ l..(flame
             i = 0
-    ____:
+    ____
         len_count += 1
         i += 1
         #check if the i counter has reached end of the list if yes then reset the counter

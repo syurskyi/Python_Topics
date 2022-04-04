@@ -30,7 +30,7 @@ ___ protein(rna
     w.... l..(rna) > 0:
         __ transDict[rna[:3]] __ 'Stop':
             p..
-        ____:
+        ____
             codec += transDict[rna[:3]]
         rna = rna[3:]
     r.. codec

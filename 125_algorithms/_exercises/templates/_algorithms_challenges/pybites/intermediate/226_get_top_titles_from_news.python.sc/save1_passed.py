@@ -42,4 +42,4 @@ ___ get_top_titles(url, top=5
     ___ entry __ z..(title_list, point_list, comment_list
         output.a..(Entry(title=entry[0], points=entry[1], comments=entry[2]
 
-    r.. s..(output, key=l.... x: (x.points, x.comments), r.._T..[:top]
+    r.. s.. ? , key=l.... x: (x.points, x.comments), r.._T..[:top]

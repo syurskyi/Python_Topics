@@ -22,7 +22,7 @@ c_ Codec:
       __ n.. top:
         ret.a..("None")
         _____
-      ____:
+      ____
         ret.a..(s..(top.val
       queue.a..(top.left)
       queue.a..(top.right)

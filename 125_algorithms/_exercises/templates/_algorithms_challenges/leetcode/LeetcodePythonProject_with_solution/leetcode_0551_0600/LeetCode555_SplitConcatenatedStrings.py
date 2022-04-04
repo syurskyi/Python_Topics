@@ -17,7 +17,7 @@ c_ Solution(o..
                 ___ j __ r..(l..(start)+1
                     __ n.. res:
                         res = start[j:] + ''.j..(arr[i+1:]+arr[:i]) + start[:j]
-                    ____:
+                    ____
                         res = m..(res, start[j:] + ''.j..(arr[i+1:]+arr[:i]) + start[:j])
         r.. res
     

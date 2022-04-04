@@ -21,7 +21,7 @@ c_ Solution(o..
             start += 1
           ____ s.. > target:
             end -= 1
-          ____:
+          ____
             res.a..((nums[i], nums[j], nums[start], nums[end]
             start += 1
             end -= 1

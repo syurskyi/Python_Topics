@@ -14,7 +14,7 @@ c_ HitCounter(o..
         __ timestamp != timestampes[ind]:
             hitCount[ind] = 1
             timestampes[ind] = timestamp
-        ____:
+        ____
             hitCount[ind] += 1
     
     ___ getHits  timestamp
@@ -31,7 +31,7 @@ c_ HitCounterOwn(o..
     ___ hit  timestamp
         queue.a..(timestamp)
         __ queue a.. queue[0] < timestamp-300:
-            queue.pop(0)
+            queue.p.. 0)
     
     ___ getHits  timestamp
         start, end = 0, l..(queue)
@@ -40,6 +40,6 @@ c_ HitCounterOwn(o..
             mid = (start+end)/2
             __ target >= queue[mid]:
                 start = mid+1
-            ____:
+            ____
                 end = mid
         r.. l..(queue)-end

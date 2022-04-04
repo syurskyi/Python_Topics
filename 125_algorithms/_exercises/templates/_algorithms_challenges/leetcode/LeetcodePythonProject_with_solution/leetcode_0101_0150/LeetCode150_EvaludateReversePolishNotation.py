@@ -14,22 +14,22 @@ c_ Solution(o..
         stack    # list
         ___ token __ tokens:
             __ token __ '+':
-                num1 = stack.pop()
-                num2 = stack.pop()
+                num1 = stack.p.. )
+                num2 = stack.p.. )
                 stack.a..(num1+num2)
             ____ token __ '-':
-                num1 = stack.pop()
-                num2 = stack.pop()
+                num1 = stack.p.. )
+                num2 = stack.p.. )
                 stack.a..(num2-num1)
             ____ token __ '*':
-                num1 = stack.pop()
-                num2 = stack.pop()
+                num1 = stack.p.. )
+                num2 = stack.p.. )
                 stack.a..(num1*num2)
             ____ token __ '/':
-                num1 = stack.pop()
-                num2 = stack.pop()
+                num1 = stack.p.. )
+                num2 = stack.p.. )
                 stack.a..(i..(operator.truediv(num2, num1)
-            ____:
+            ____
                 stack.a..(i..(token
         r.. stack[-1]
     

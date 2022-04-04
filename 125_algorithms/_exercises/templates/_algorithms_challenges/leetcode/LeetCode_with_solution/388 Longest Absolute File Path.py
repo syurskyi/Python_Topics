@@ -51,11 +51,11 @@ c_ Solution(o..
         ___ elt __ input:
             idx = elt.c.. '\t')
             idx = m..(idx, l..(F
-            e = elt.strip('\t')
+            e = elt.s..('\t')
             prev = -1 __ idx __ 0 ____ F[idx-1]
             __ idx __ l..(F
                 F.a..(prev + 1 + l..(e
-            ____:
+            ____
                 F[idx] = prev + 1 + l..(e)  # reset
 
             __ '.' __ elt:

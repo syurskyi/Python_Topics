@@ -25,12 +25,12 @@ c_ Solution(o..
             __ l1.val < l2.val:
                 dummy_end.next = l1
                 l1 = l1.next
-            ____:
+            ____
                 dummy_end.next = l2
                 l2 = l2.next
             dummy_end = dummy_end.next
         __ l1 __ n.. N..
             dummy_end.next = l1
-        ____:
+        ____
             dummy_end.next = l2
         r.. dummy.next

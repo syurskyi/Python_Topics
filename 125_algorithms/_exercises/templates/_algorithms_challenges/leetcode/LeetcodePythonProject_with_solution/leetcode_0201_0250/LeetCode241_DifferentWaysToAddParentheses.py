@@ -21,7 +21,7 @@ c_ Solution(o..
                             res.a..(num1+num2)
                         ____ c __ '-':
                             res.a..(num1-num2)
-                        ____:
+                        ____
                             res.a..(num1*num2)
         __ n.. res:
             res = [i..(s)]

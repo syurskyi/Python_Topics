@@ -8,7 +8,7 @@ c_ Solution(o..
     w.... i < l..(nums
       __ 0 < nums[i] <= l..(nums) a.. nums[nums[i] - 1] != nums[i]:
         nums[nums[i] - 1], nums[i] = nums[i], nums[nums[i] - 1]
-      ____:
+      ____
         i += 1
 
     ___ i __ r..(0, l..(nums:

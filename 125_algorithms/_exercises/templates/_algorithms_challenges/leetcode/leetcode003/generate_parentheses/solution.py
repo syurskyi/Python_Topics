@@ -12,6 +12,6 @@ c_ Solution:
             r..
         ____ left __ 0 a.. right __ 0:
             res.a..(cand)
-        ____:
+        ____
             gp(left - 1, right, cand + '(', res)
             gp(left, right - 1, cand + ')', res)

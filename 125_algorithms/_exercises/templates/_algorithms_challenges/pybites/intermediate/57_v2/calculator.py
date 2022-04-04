@@ -43,7 +43,7 @@ ___ call_calculator(args=N.., stdout=F..
         args = vars(parser.parse_args
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
-    ____:
+    ____
         args = vars(args)
     numbers = args 'numbers'
     __ args 'mul' :

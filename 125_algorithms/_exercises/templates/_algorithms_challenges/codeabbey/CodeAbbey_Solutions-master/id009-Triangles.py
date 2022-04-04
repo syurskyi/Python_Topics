@@ -12,7 +12,7 @@ ___ triangle(calculations
         a,b,c  minNum, midNum, maxNum
         __ (a+b) > c:
             answer.a..(s..('1'
-        ____:
+        ____
             answer.a..(s..('0'
     print(' '.j..(answer
 triangle(input

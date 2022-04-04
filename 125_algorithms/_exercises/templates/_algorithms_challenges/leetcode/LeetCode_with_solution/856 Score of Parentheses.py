@@ -46,12 +46,12 @@ c_ Solution:
         ___ s __ S:
             __ s __ "(":
                 stk.a..(0)
-            ____:
-                cur = stk.pop()
+            ____
+                cur = stk.p.. )
                 score = m..(2 * cur, 1)
                 __ stk:
                     stk[-1] += score
-                ____:
+                ____
                     ret += score
 
         r.. ret
@@ -66,11 +66,11 @@ c_ Solution:
             __ s __ "(":
                 cur_stk.a..(0)
                 stk.a..(s)
-            ____:
-                stk.pop()
+            ____
+                stk.p.. )
                 __ cur_stk[-1] __ 0:
                     cur_stk[-1] = 1
-                ____:
+                ____
                     cur_stk[-1] *= 2
             __ n.. stk:
                 ret += cur

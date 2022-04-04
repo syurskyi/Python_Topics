@@ -77,7 +77,7 @@ c_ RandomizedSet(o..
             pos[lst[idx]] = idx
 
         del pos[val]
-        lst.pop()
+        lst.p.. )
 
         r.. T..
 

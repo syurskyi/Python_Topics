@@ -51,7 +51,7 @@ c_ DualHeap:
         __ max_h a.. num > max_h[0][1]:
             heapq.heappush(min_h, (num, num
             min_sz += 1
-        ____:
+        ____
             heapq.heappush(max_h, (-num, num
             max_sz += 1
         balance()
@@ -60,7 +60,7 @@ c_ DualHeap:
         to_remove.add(num)
         __ max_h a.. num > max_h[0][1]:
             min_sz -= 1
-        ____:
+        ____
             max_sz -= 1
         balance()
 
@@ -93,7 +93,7 @@ c_ DualHeap:
         clean_top()
         __ k % 2 __ 1:
             r.. max_h[0][1]
-        ____:
+        ____
             r.. 0.5 * (max_h[0][1] + min_h[0][1])
 
 
@@ -123,7 +123,7 @@ c_ Solution:
 
         ___ i __ r..(k, l..(nums:
             dh.insert(nums[i])
-            dh.pop(nums[i-k])
+            dh.p.. nums[i-k])
             ret.a..(dh.get_median(k
 
         r.. ret

@@ -19,12 +19,12 @@ c_ Solution(o..
             __ n.. stack o. heights[i] >= heights[stack[-1]]:
                 stack.a..(i)
                 i+=1
-            ____:
-                h = heights[stack.pop()]
+            ____
+                h = heights[stack.p.. )]
                 w = i __ n.. stack ____ (i-stack[-1]-1)
                 area = m..(w*h, area)
         w.... stack:
-            h = heights[stack.pop()]
+            h = heights[stack.p.. )]
             w = i __ n.. stack ____ (i-stack[-1]-1)
             area = m..(area, w*h)
         r.. area

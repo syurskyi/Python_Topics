@@ -24,7 +24,7 @@ c_ Solution(o..
     ___ gcd  a, b
         __ a __ 0:
             r.. abs(b)
-        ____:
+        ____
             r.. gcd(b%a, a)
     
     ___ test

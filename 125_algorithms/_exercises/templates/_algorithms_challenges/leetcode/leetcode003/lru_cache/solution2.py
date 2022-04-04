@@ -41,7 +41,7 @@ c_ LRUCache(o..
             node = cache[key]
             node.value = value
             times.touch(node)
-        ____:
+        ____
             __ times.size >= capacity:
                 tail_node = times.tail
                 times.remove(tail_node)
@@ -72,7 +72,7 @@ c_ L..(o..
         node.next = head
         __ head __ n.. N..
             head.prev = node
-        ____:
+        ____
             tail = node
         head = node
         size += 1
@@ -85,7 +85,7 @@ c_ L..(o..
             prev_node.next = next_node
             __ next_node __ n.. N..
                 next_node.prev = prev_node
-            ____:
+            ____
                 tail = prev_node
             node.prev = N..
             node.next = head
@@ -102,9 +102,9 @@ c_ L..(o..
             # If node is not the tail node
             __ next_node __ n.. N..
                 next_node.prev = prev_node
-            ____:
+            ____
                 tail = prev_node
-        ____:
+        ____
             head = N..
             tail = N..
         size -= 1

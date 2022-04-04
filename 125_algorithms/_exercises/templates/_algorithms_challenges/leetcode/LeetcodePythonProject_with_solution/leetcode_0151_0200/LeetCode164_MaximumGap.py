@@ -15,7 +15,7 @@ c_ Solution(o..
         minVal = m..(nums)
         maxVal = m..(nums)
         n = l..(nums)
-        gap = m__.ceil(f__(maxVal-minVal)/(n-1
+        gap = m__.c.. f__(maxVal-minVal)/(n-1
         bucketsMin = [f__('inf')]*(n-1)
         bucketsMax = [f__('-inf')]*(n-1)
         ___ num __ nums:

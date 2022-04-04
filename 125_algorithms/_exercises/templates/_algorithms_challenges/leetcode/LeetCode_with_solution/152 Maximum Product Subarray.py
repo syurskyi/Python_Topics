@@ -54,7 +54,7 @@ c_ Solution(o..
                 F_neg[i] = F_neg[i-1]*v
             ____ v __ 0:
                 F_pos[i], F_neg[i] = 0, 0
-            ____:
+            ____
                 F_neg[i] = m..(0, F_pos[i-1]*v)
                 F_pos[i] = m..(0, F_neg[i-1]*v)
 
@@ -82,7 +82,7 @@ c_ Solution(o..
                 dp[i] = dp[i+1]+1
             ____ A[i]__0:
                 dp[i] = 0
-            ____:
+            ____
                 dp[i] = dp[i+1]
 
         global_max = -1<<32
@@ -97,7 +97,7 @@ c_ Solution(o..
         ___ ind, val __ e..(A
             __ cur!=0:
                 cur *= val
-            ____:
+            ____
                 cur = val
 
             __ cur<0 a.. dp[ind+1]<1:
@@ -130,7 +130,7 @@ c_ Solution(o..
                 dp[i] = dp[i+1]+1
             ____ A[i]__0:
                 dp[i] = 0
-            ____:
+            ____
                 dp[i] = dp[i+1]
 
         global_max = -1<<32
@@ -140,7 +140,7 @@ c_ Solution(o..
         w.... end_ptr<length:  # [start, end), expanding
             __ cur!=0:
                 cur *= A[end_ptr]
-            ____:
+            ____
                 cur = A[end_ptr]
                 start_ptr = end_ptr
 

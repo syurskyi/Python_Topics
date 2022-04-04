@@ -33,7 +33,7 @@ ___ test_calc_mean_score(movies
     ... calc_mean_score(movies_nolan) __ 8.4
 
 ___ test_get_average_scores_top_directors(scores
-    expected = [('Sergio Leone', 8.5),
+    e.. = [('Sergio Leone', 8.5),
                 ('Christopher Nolan', 8.4),
                 ('Quentin Tarantino', 8.2),
                 ('Hayao Miyazaki', 8.2),
@@ -41,7 +41,7 @@ ___ test_get_average_scores_top_directors(scores
                 ('Stanley Kubrick', 8.0),
                 ('James Cameron', 7.9),
                 ('Joss Whedon', 7.9)]
-    ... scores[0:8] __ expected
+    ... scores[0:8] __ e..
 
 ?p__.m__.p.("director", [
     'Quentin Tarantino', 'Hayao Miyazaki',

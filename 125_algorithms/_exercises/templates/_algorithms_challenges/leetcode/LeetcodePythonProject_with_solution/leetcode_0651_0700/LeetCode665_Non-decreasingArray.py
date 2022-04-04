@@ -33,7 +33,7 @@ c_ Solution(o..
                 modified += 1
                 __ i - 2 < 0 o. nums[i-2] <= nums[i]:
                     nums[i-1] = nums[i]
-                ____:
+                ____
                     nums[i] = nums[i-1]
         r.. T..
     

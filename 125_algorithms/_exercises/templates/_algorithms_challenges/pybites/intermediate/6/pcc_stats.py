@@ -40,7 +40,7 @@ ___ gen_files(tempfile=tempfile
         data = file.r..
 
         ___ row __ data:
-            current = row.strip("\n").s..(",")
+            current = row.s..("\n").s..(",")
             __ current[1] __ 'True':
                 y.. current[0].l..
 
@@ -67,7 +67,7 @@ ___ diehard_pybites(files_ N..
         challenge, user = row.s..("/")
         __ user __ IGNORE:
             _____
-        ____:
+        ____
             users.update([user])
             popular_challenges.update([challenge])
 

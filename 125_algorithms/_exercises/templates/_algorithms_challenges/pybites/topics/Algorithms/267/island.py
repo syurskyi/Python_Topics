@@ -78,7 +78,7 @@ ___ get_others(map_, r, c
             nums += 1
         __ map_[r][c-1] __ 0:
             nums += 1
-    ____: # the rest, excluding edge and corner
+    ____ # the rest, excluding edge and corner
         __ map_[r-1][c] __ 0:
             nums += 1
         __ map_[r+1][c] __ 0:

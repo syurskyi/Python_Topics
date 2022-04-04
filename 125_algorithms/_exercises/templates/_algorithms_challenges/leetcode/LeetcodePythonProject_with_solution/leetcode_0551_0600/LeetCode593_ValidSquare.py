@@ -28,7 +28,7 @@ c_ Solution(o..
         ___ length __ lengths:
             __ maxVal != length:
                 nonMax = length
-            ____:
+            ____
                 count += 1
         __ count != 2: r.. F..
         ___ length __ lengths:

@@ -44,7 +44,7 @@ c_ Solution:
 
             __ '.' __ name:
                 ans = m..(ans, dep2size[depth] + size)
-            ____:
+            ____
                 dep2size[depth + 1] = dep2size[depth] + size + 1
 
         r.. ans

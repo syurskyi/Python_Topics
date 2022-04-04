@@ -18,12 +18,12 @@ c_ Solution:
         hashmap = {node:newHead}
         queue = [node]
         w.... queue:
-            node = queue.pop(0)
+            node = queue.p.. 0)
             nodeCopy = hashmap[node]
             ___ node0 __ node.neighbors:
                 __ node0 __ hashmap:
                     nodeCopy.neighbors.a..(hashmap[node0])
-                ____:
+                ____
                     node0Copy = UndirectedGraphNode(node0.label)
                     hashmap[node0] = node0Copy
                     nodeCopy.neighbors.a..(node0Copy)

@@ -10,7 +10,7 @@ ___ sum_indices(items: L..[s..]) __ i..:
         __ item n.. __ duplicate_lookup:
             duplicate_lookup[item] = [i]
             running_total += i
-        ____:
+        ____
             duplicate_lookup[item].a..(i)
             running_total += s..(duplicate_lookup[item])
     

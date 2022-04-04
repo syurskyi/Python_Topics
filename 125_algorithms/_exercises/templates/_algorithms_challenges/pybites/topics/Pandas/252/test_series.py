@@ -24,8 +24,8 @@ ___ alpha_series
 ?p__.m__.p.("arg, expected", [
     (0, 0.000), (500, 0.500), (1000, 1.000)
 ])
-___ test_return_at_index(float_series, arg, expected
-    ... se.return_at_index(float_series, arg) __ expected
+___ test_return_at_index(float_series, arg, e..
+    ... se.return_at_index(float_series, arg) __ e..
 
 ___ test_return_at_index_raise_exception(float_series
     w__ p__.r..(KeyError
@@ -46,15 +46,15 @@ ___ test_get_slice_inclusive(float_series
 ?p__.m__.p.("arg, expected", [
     (0, 0.000), (5, 0.005), (9, 0.009)
 ])
-___ test_return_head(float_series, arg, expected
-    ... se.return_head(float_series, 10)[arg] __ expected
+___ test_return_head(float_series, arg, e..
+    ... se.return_head(float_series, 10)[arg] __ e..
     ... ".head" __ i___.getsource(se.return_head)
 
 ?p__.m__.p.("arg, expected", [
     (991, 0.991), (995, 0.995), (1000, 1.000)
 ])
-___ test_return_tail(float_series, arg, expected
-    ... se.return_tail(float_series, 10)[arg] __ expected
+___ test_return_tail(float_series, arg, e..
+    ... se.return_tail(float_series, 10)[arg] __ e..
     ... ".tail" __ i___.getsource(se.return_tail)
 
 ___ test_get_index(alpha_series

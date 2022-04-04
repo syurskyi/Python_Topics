@@ -9,7 +9,7 @@ c_ Solution(o..
       x, y = map(find, xy)
       __ rank[x] > rank[y]:
         parent[y] = x
-      ____:
+      ____
         parent[x] = y
         __ rank[x] __ rank[y]:
           rank[y] += 1

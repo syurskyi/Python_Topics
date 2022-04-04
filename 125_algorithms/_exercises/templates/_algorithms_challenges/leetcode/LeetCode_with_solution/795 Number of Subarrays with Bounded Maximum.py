@@ -42,7 +42,7 @@ c_ Solution:
             ____ a > R:
                 F = 0
                 prev = i
-            ____:
+            ____
                 # F = F
                 ret += F
 
@@ -66,7 +66,7 @@ c_ Solution:
                 ret += F
             ____ a > R:
                 F = 0
-            ____:
+            ____
                 # F = F
                 ret += F
 

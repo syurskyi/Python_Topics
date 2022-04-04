@@ -81,7 +81,7 @@ c_ Solution:
 
                 closed_tail.next = open_head_next
 
-            ____:
+            ____
                 closed_tail = closed_tail.next
 
 

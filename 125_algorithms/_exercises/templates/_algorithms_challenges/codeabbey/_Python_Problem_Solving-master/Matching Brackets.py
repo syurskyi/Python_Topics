@@ -21,8 +21,8 @@ ___ i __ r..(i..(input())):
             #try and except are used because if a particular key is not present in dictionary p, it can throw error
             ___
                 __ p[store_str[k]] __ s..(store_str[k+1]
-                    store_str.pop(k)
-                    store_str.pop(k)
+                    store_str.p.. k)
+                    store_str.p.. k)
             ______:
                 p..
         __ l..(store_str) __ 1:
@@ -33,7 +33,7 @@ ___ i __ r..(i..(input())):
             print('1',end= ' ')
             checker = F..
             _____
-        ____:
+        ____
             checker = T..
             p..
     #Step two is once the element next to each other which were pair are removed.
@@ -44,9 +44,9 @@ ___ i __ r..(i..(input())):
         w.... l..(store_str) != 1:
             ___
                 __ p[store_str[0]] __ store_str[-1]:
-                    store_str.pop(0)
-                    store_str.pop(-1)
-                ____:
+                    store_str.p.. 0)
+                    store_str.p.. -1)
+                ____
                     _____
             ______:
                 _____

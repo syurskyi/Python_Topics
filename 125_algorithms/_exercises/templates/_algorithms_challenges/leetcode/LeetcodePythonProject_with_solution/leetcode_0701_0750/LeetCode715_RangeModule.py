@@ -72,7 +72,7 @@ c_ RangeModule_own(o..
                 newInterval = interval
             ____ interval.right < newInterval.left:
                 res.a..(interval)
-            ____:
+            ____
                 newInterval = Interval(m..(interval.left, newInterval.left),\
                                     m..(interval.right, newInterval.right
         res.a..(newInterval)
@@ -92,7 +92,7 @@ c_ RangeModule_own(o..
                 r = mid-1
             ____ intervals[mid].right <= newInterval.left:
                 l = mid+1
-            ____:
+            ____
                 r.. intervals[mid].left <= newInterval.left a..\
                     intervals[mid].right >= newInterval.right
         r.. F..

@@ -11,5 +11,5 @@ ____ join_lists _______ join_lists
                         ([['a', 'b' ,  'c' ,  'd', 'e']], '+',
                           'a', 'b', '+', 'c', '+', 'd', 'e' ),
 ])
-___ test_join_lists(input_list, sep, expected
-    ... join_lists(input_list, sep) __ expected
+___ test_join_lists(input_list, sep, e..
+    ... join_lists(input_list, sep) __ e..

@@ -21,13 +21,13 @@ c_ SgfParsingTest(unittest.TestCase
 
     ___ test_node_without_properties
         input_string = '(;)'
-        expected = SgfTree()
-        assertEqual(p..(input_string), expected)
+        e.. = SgfTree()
+        assertEqual(p..(input_string), e..)
 
     ___ test_single_node_tree
         input_string = '(;A[B])'
-        expected = SgfTree(properties={'A':  'B' })
-        assertEqual(p..(input_string), expected)
+        e.. = SgfTree(properties={'A':  'B' })
+        assertEqual(p..(input_string), e..)
 
     ___ test_properties_without_delimiter
         input_string = '(;a)'
@@ -46,38 +46,38 @@ c_ SgfParsingTest(unittest.TestCase
 
     ___ test_two_nodes
         input_string = '(;A[B];B[C])'
-        expected = SgfTree(
+        e.. = SgfTree(
             properties={'A':  'B' },
             children=[
                 SgfTree({'B':  'C' })
             ]
         )
-        assertEqual(p..(input_string), expected)
+        assertEqual(p..(input_string), e..)
 
     ___ test_two_child_trees
         input_string = '(;A[B](;B[C])(;C[D]))'
-        expected = SgfTree(
+        e.. = SgfTree(
             properties={'A':  'B' },
             children=[
                 SgfTree({'B':  'C' }),
                 SgfTree({'C':  'D' }),
             ]
         )
-        assertEqual(p..(input_string), expected)
+        assertEqual(p..(input_string), e..)
 
     ___ test_multiple_property_values
         input_string = '(;A[b][c][d])'
-        expected = SgfTree(
+        e.. = SgfTree(
             properties={'A':  'b', 'c', 'd' }
         )
-        assertEqual(p..(input_string), expected)
+        assertEqual(p..(input_string), e..)
 
     ___ test_escaped_property
         input_string = '(;A[\]b\nc\nd\t\te \n\]])'
-        expected = SgfTree(
+        e.. = SgfTree(
             properties={'A':  ' b\nc\nd  e \n]' }
         )
-        assertEqual(p..(input_string), expected)
+        assertEqual(p..(input_string), e..)
 
     # Utility functions
     ___ setUp

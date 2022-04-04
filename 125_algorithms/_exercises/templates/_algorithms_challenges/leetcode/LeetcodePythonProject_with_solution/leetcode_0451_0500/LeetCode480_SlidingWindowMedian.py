@@ -35,13 +35,13 @@ c_ Solution(o..
             r.. 0
         __ l..(minHeap) __ l..(maxHeap
             r.. (minHeap[0] - maxHeap[0])/2.0
-        ____:
+        ____
             r.. f__(minHeap[0])
     
     ___ add  num
         __ n.. maxHeap o. num > -maxHeap[0]:
             heapq.heappush(minHeap, num)
-        ____:
+        ____
             heapq.heappush(maxHeap, -num)
         __ l..(maxHeap) > l..(minHeap
             val = heapq.heappop(maxHeap)
@@ -54,7 +54,7 @@ c_ Solution(o..
         __ num >= getMedian
             minHeap.remove(num)
             heapq.heapify(minHeap)
-        ____:
+        ____
             maxHeap.remove(-num)
             heapq.heapify(maxHeap)
         __ l..(maxHeap) > l..(minHeap

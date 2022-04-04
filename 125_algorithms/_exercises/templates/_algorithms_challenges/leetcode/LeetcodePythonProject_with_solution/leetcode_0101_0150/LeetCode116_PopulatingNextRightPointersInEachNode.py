@@ -25,7 +25,7 @@ c_ Solution:
                 __ n.. currentHead:
                     currentHead = lastCurrent.left
                     current =  lastCurrent.left
-                ____:
+                ____
                     current.next = lastCurrent.left
                     current = current.next
                 __ currentHead:

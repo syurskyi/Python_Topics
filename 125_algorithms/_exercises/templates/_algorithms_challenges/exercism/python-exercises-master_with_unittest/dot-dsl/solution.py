@@ -48,5 +48,5 @@ c_ Graph(o..
                 __ l..(item) != 4:
                     r.. V...("EDGE malformed")
                 edges.a..(Edge(item[1], item[2], item[3]
-            ____:
+            ____
                 r.. V...("Unknown item {}".f..(item[0]

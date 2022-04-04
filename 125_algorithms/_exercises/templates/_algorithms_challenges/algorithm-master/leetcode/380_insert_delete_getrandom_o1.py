@@ -37,7 +37,7 @@ c_ RandomizedSet:
         val2idx[key] = i
         nums[i] = nums[-1]
 
-        nums.pop()
+        nums.p.. )
         del val2idx[val]
         r.. T..
 

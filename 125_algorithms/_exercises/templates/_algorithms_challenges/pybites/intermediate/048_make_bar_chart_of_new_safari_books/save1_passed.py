@@ -16,7 +16,7 @@ ___ create_chart
             __ python_books.s..(matches
                 info = matches.s.. [0], '🐍'
                 books.a..(info)
-            ____:
+            ____
                 info = matches.s.. [0], '.'
                 books.a..(info)
 

@@ -34,7 +34,7 @@ c_ Solution(o..
             ____ nums[mid] < nums[right]:
                 right = mid - 1
             # The mid element equals the right element
-            ____:
+            ____
                 right -= 1
         # All elements are equal
         r.. nums[0]

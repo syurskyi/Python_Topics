@@ -27,14 +27,14 @@ c_ Solution:
                     __ n.. currentHead:
                         currentHead = lastCurrent.left
                         current = currentHead
-                    ____:
+                    ____
                         current.next = lastCurrent.left
                         current = current.next
                 __ lastCurrent.right:
                     __ n.. currentHead:
                         currentHead = lastCurrent.right
                         current = currentHead
-                    ____:
+                    ____
                         current.next = lastCurrent.right
                         current = current.next
                 lastCurrent = lastCurrent.next

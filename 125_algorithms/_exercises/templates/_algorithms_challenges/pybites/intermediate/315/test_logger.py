@@ -17,8 +17,8 @@ ___ test_sum_numbers_logging(caplog
     ... record.module __ 'logger'
     ... record.name __ 'app'
     ... record.levelname __ 'INFO'
-    expected = 'Input: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] -> output: 30'
-    ... record.message __ expected
+    e.. = 'Input: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] -> output: 30'
+    ... record.message __ e..
 
 
 ___ test_sum_numbers_throws_exception(caplog
@@ -28,8 +28,8 @@ ___ test_sum_numbers_throws_exception(caplog
     ... l..(caplog.records) __ 1
     record = caplog.records[0]
     ... record.levelname __ 'ERROR'
-    expected = "Bad inputs: [1, 'a', 2, 3]"
-    ... record.message __ expected
+    e.. = "Bad inputs: [1, 'a', 2, 3]"
+    ... record.message __ e..
     ... record.exc_text.startswith('Traceback')
     ... record.exc_text.e..
         ('TypeError: not all arguments converted during '

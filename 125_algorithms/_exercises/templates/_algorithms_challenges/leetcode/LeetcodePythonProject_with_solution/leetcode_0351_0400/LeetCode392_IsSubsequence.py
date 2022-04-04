@@ -11,7 +11,7 @@ c_ Solution(o..
         ___ i, c __ e..(t
             __ c __ hashmap:
                 hashmap[c].a..(i)
-            ____:
+            ____
                 hashmap[c] = [i]
         prev = 0
         ___ i, c __ e..(s
@@ -40,11 +40,11 @@ c_ Solution(o..
             __ s[i] __ t[j]:
                 i+=1
                 j+=1
-            ____:
+            ____
                 j+=1
         __ i < l..(s
             r.. F..
-        ____:
+        ____
             r.. T..
     
     ___ test

@@ -27,7 +27,7 @@ c_ Solution(o..
             size = l..(queue)
             __ size > 1:
                 r.. F..
-            curr = queue.pop(0)
+            curr = queue.p.. 0)
             __ index >= l..(org) o. org[index] != curr:
                 r.. F..
             index += 1

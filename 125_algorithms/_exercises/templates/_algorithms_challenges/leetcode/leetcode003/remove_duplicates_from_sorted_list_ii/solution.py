@@ -25,7 +25,7 @@ c_ Solution(o..
         w.... current __ n.. N..
             __ current.val n.. __ d:
                 d[current.val] = 1
-            ____:
+            ____
                 d[current.val] += 1
             current = current.next
         current = head

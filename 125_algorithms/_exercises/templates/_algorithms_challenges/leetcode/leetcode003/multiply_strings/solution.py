@@ -31,7 +31,7 @@ c_ Solution(o..
         ___ i, d __ e..(res
             __ d != '0':
                 r.. res[i:]
-        ____:
+        ____
             r.. '0'
 
 s = Solution()

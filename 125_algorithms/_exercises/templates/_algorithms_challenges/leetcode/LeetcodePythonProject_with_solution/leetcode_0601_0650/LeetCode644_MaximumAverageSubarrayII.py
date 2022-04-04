@@ -21,7 +21,7 @@ c_ Solution(o..
         ans = f__('-inf')
         ___ j __ r..(k-1, n
             w.... l..(hull) >= 2 a.. d(hull[-2], hull[-1]-1) >= d(hull[-2], j-k
-                hull.pop()
+                hull.p.. )
             hull.a..(j-k+1)
             w.... l..(hull) >= 2 a.. d(hull[0], hull[1]-1) <= d(hull[0], j
                 hull.popleft()
@@ -39,7 +39,7 @@ c_ Solution(o..
             mid = (l+r)/2.0
             __ check(nums, k, mid
                 l = mid
-            ____:
+            ____
                 r = mid
         r.. r
     

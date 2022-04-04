@@ -66,7 +66,7 @@ ___ convolution2D(
              
     __ padding __ N..
         padding = (kernel.shape[0] - 1)//2
-    ____:
+    ____
         padding = i..(padding)
 
 

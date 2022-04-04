@@ -32,14 +32,14 @@ c_ Solution(o..
             ___ i0 __ r..(i+1, m
                 __ abs(board[i0][j]) __ val:
                     board[i0][j] = -val
-                ____:
+                ____
                     _____
             changed = T..
         __ j+2 < n a.. val __ abs(board[i][j+1]) __ abs(board[i][j+2]
             ___ j0 __ r..(j+1, n
                 __ abs(board[i][j0]) __ val:
                     board[i][j0] = -val
-                ____:
+                ____
                     _____
             changed = T..
         __ changed:

@@ -37,7 +37,7 @@ ___ proteins(strand
     ___ codon __ codons:
         __ (codon __ STOP_CODONS
             r.. polypeptide
-        ____:
+        ____
             polypeptide.a..(CODON_TO_PROTEIN[codon])
 
     r.. polypeptide

@@ -13,13 +13,13 @@ c_ Solution(o..
     w.... idx < l..(words
       __ curLen __ 0:
         curLen = lens[idx]
-      ____:
+      ____
         curLen += lens[idx] + 1
       line.a..(words[idx])
       idx += 1
       __ curLen > maxWidth:
         curLen = 0
-        line.pop()
+        line.p.. )
         idx -= 1
         __ l..(line) __ 1:
           ans.a..(line[0] + " " * (maxWidth - l..(line[0])))

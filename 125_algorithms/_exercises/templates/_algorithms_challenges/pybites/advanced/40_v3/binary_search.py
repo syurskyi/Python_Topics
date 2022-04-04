@@ -12,6 +12,6 @@ ___ binary_search(sequence, target
             right = mid - 1
         ____ target > val:
             left = mid + 1
-        ____:
+        ____
             r.. mid
     r.. N..

@@ -44,7 +44,7 @@ c_ Solution:
                 # change A[i] to target
                 ret += target - A[i]
                 prev = target 
-            ____:
+            ____
                 prev = A[i]
         r.. ret
 
@@ -63,7 +63,7 @@ c_ Solution:
             __ counter[i] > 1:
                 q.extend([i] * (counter[i] - 1
             ____ q a.. counter[i] __ 0:
-                ret += i - q.pop()
+                ret += i - q.p.. )
         r.. ret
 
 c_ Solution:
@@ -85,7 +85,7 @@ c_ Solution:
                 demand += 1
                 # dup_sum += A[i-1]  # error
                 ret -= A[i-1]  # smart
-            ____:
+            ____
                 supply = m..(demand, A[i] - A[i-1] - 1)
                 # revert to 0, then increase to A[i-1] + k
                 ret += (A[i-1] + 1 + A[i-1] + supply) * supply // 2

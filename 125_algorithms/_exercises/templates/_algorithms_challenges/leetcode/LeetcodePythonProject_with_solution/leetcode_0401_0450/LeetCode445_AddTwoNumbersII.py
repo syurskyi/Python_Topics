@@ -23,12 +23,12 @@ c_ Solution(o..
         carry = 0
         nextNode = N..
         w.... stack1 a.. stack2:
-            v1, v2 = stack1.pop(), stack2.pop()
+            v1, v2 = stack1.p.. ), stack2.p.. )
             val = v1 + v2 + carry
             __ val >= 10:
                 val -= 10
                 carry = 1
-            ____:
+            ____
                 carry = 0
             node = ListNode(val)
             node.next = nextNode
@@ -36,11 +36,11 @@ c_ Solution(o..
         __ stack2 a.. n.. stack1:
             stack1, stack2 = stack2, stack1
         w.... stack1:
-            val = stack1.pop() + carry
+            val = stack1.p.. ) + carry
             __ val >= 10:
                 val -= 10
                 carry = 1
-            ____:
+            ____
                 carry = 0
             node = ListNode(val)
             node.next = nextNode

@@ -12,7 +12,7 @@ c_ Solution(o..
       stack    # list
       ___ c __ num:
         w.... drop > 0 a.. stack a.. stack[-1] < c:
-          stack.pop()
+          stack.p.. )
           drop -= 1
         stack.a..(c)
       r.. stack[:k]
@@ -24,7 +24,7 @@ c_ Solution(o..
         __ nums1[i:] > nums2[j:]:
           ans.a..(nums1[i])
           i += 1
-        ____:
+        ____
           ans.a..(nums2[j])
           j += 1
 

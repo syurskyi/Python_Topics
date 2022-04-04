@@ -21,5 +21,5 @@ c_ Solution(o..
       r.. right + 1
     ____ n.. right:
       r.. left + 1
-    ____:
+    ____
       r.. m..(left, right) + 1

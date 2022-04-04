@@ -12,10 +12,10 @@ ___ filter_names(names
                     _____
                 ____ QUIT_CHAR __ name:
                     _____
-                ____:
+                ____
                     __ names_list_number >= MAX_NAMES:
                         _____
-                    ____:
+                    ____
                         names_list.a..(name)
                         names_list_number += 1
     r.. names_list

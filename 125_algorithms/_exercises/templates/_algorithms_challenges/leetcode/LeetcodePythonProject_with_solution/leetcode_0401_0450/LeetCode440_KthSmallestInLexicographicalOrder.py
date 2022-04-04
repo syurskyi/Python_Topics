@@ -13,7 +13,7 @@ c_ Solution(o..
             __ steps <= k:
                 curr += 1
                 k -= steps
-            ____:
+            ____
                 curr *= 10
                 k -= 1
         r.. curr

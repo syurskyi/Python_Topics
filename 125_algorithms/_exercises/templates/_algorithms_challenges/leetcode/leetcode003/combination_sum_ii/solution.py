@@ -14,14 +14,14 @@ c_ Solution:
             res.a..(cand | )
         ____ target < 0:
             r..
-        ____:
+        ____
             ___ i, c __ e..(candidates
                 __ i __ 0:
                     prev = c
                 ____ prev __ c:
                     _____
-                ____:
+                ____
                     prev = c
                 cand.a..(c)
                 combination_sum(candidates[i + 1:], target - c, cand, res)
-                cand.pop()
+                cand.p.. )

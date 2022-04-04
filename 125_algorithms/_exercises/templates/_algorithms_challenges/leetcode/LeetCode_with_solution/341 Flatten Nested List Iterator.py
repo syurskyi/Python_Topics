@@ -82,12 +82,12 @@ c_ NestedIterator(o..
                 ni = nl[idx]
                 __ ni.isInteger
                     r.. T..
-                ____:
+                ____
                     stk[-1][1] = idx + 1  # prepare the parent, otherwise dead loop
                     nxt_nl = ni.getList()
                     stk.a..([nxt_nl, 0])
-            ____:
-                stk.pop()
+            ____
+                stk.p.. )
 
         r.. F..
 
@@ -133,15 +133,15 @@ c_ NestedIteratorVerbose(o..
                 ni = nl[idx]
                 __ ni.isInteger
                     r.. T..
-                ____:
+                ____
                     idx_stk[-1] = idx+1
                     nxt_nl = ni.getList()
                     nxt_idx = 0
                     nl_stk.a..(nxt_nl)
                     idx_stk.a..(nxt_idx)
-            ____:
-                nl_stk.pop()
-                idx_stk.pop()
+            ____
+                nl_stk.p.. )
+                idx_stk.p.. )
 
         r.. F..
 

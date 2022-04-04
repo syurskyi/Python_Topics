@@ -10,7 +10,7 @@ c_ Solution(o..
         res = 0
         ___ i, num __ e..(A
             w.... stack a.. stack[-1][0] > num:
-                stack.pop()
+                stack.p.. )
             total = (stack[-1][2] + (i-stack[-1][1]) * num) % MOD
             stack.a..([num, i, total])
             res = (res + total) % MOD

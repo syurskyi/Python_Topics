@@ -11,7 +11,7 @@ ___ i __ r..(data
         x1  (-b + m__.sqrt(cal / deno
         x2  (-b - m__.sqrt(cal / deno
         res  s..(i..(x1+' '+s..(i..(x2
-    ____:
+    ____
         cal  cal * -1
         x_cal  s..(i..(m__.sqrt(cal) / deno + 'i'
         b_cal  -b /deno
@@ -20,5 +20,5 @@ ___ i __ r..(data
         res  x1 + ' '+ x2
     __ i __ data-1:
         print(res,end  '')
-    ____:
+    ____
         print(res,end  '; ')

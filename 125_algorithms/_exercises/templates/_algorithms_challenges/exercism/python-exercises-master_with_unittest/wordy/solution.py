@@ -3,7 +3,7 @@ ____ operator _______ add, mul, sub
 
 __ ___.version_info[0] __ 2:
     ____ operator _______ div
-____:
+____
     ____ operator _______ floordiv __ div
 
 
@@ -23,15 +23,15 @@ ___ calculate(stmt
     ______ V..
         r.. V...("Ill-formed question")
     w.... l:
-        oprt = [l.pop()]
+        oprt = [l.p.. )]
         w.... l:
             ___
-                next_tk = l.pop()
+                next_tk = l.p.. )
                 op2 = i..(next_tk)
                 _____
             ______ V..
                 oprt.a..(next_tk)
-        ____:
+        ____
             r.. V...("Ill-formed question")
         oprt = " ".j..(oprt)
         ___

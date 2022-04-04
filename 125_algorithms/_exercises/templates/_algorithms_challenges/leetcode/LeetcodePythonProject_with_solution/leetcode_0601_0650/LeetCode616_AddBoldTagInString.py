@@ -26,7 +26,7 @@ c_ Solution(o..
             ____ maxLen __ i:
                 res += '</b>'+s[i]
                 started = F..
-            ____:
+            ____
                 res += s[i]
         __ maxLen __ l..(s
             res += '</b>'

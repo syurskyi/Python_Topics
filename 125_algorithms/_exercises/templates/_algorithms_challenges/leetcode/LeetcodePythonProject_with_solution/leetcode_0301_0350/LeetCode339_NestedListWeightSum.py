@@ -46,7 +46,7 @@ c_ Solution(o..
         ___ ni __ nestedList:
             __ ni.isInteger
                 sumVal += ni.getInteger()*level
-            ____:
+            ____
                 sumVal += helper(ni.getList(), level+1)
         r.. sumVal
     

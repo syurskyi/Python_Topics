@@ -30,12 +30,12 @@ c_ Solution:
             __ (n.. node.right o.
                 last_visit __ node.right
 
-                stack.pop()
+                stack.p.. )
 
                 ans.a..(node.val)
                 last_visit = node
                 node = N..
-            ____:
+            ____
                 node = node.right
 
         r.. ans

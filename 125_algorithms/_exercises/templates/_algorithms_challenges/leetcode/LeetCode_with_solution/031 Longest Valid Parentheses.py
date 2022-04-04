@@ -29,12 +29,12 @@ c_ Solution(o..
         maxa = 0
         ___ idx, val __ e..(s
             __ val __ ")" a.. stk a.. s[stk[-1]] __ "(":
-                stk.pop()
+                stk.p.. )
                 __ n.. stk:
                     maxa = m..(maxa, idx+1)
-                ____:
+                ____
                     maxa = m..(maxa, idx-stk[-1])
-            ____:
+            ____
                 stk.a..(idx)
 
         r.. maxa

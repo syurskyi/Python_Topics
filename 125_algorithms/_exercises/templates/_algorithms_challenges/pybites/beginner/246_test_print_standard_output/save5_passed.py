@@ -22,7 +22,7 @@ ____ workouts _______ print_workout_days
     ('30 min cardio -', 'No matching workout'),
     ('nonsense', 'No matching workout'),
 ])
-___ test_print_workout_days(arg, expected, capfd
+___ test_print_workout_days(arg, e.., capfd
     print_workout_days(arg)
-    actual = ?.r .. 0].s..
-    ... actual __ expected
+    a.. = ?.r .. 0].s..
+    ... a.. __ e..

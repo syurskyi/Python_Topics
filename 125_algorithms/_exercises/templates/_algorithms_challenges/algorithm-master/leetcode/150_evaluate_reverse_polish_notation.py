@@ -20,8 +20,8 @@ c_ Solution:
                 stack.a..(i..(char
                 _____
 
-            b = stack.pop()
-            a = stack.pop()
+            b = stack.p.. )
+            a = stack.p.. )
 
             stack.a..(i..(operation[char](a, b)))
 

@@ -7,7 +7,7 @@ ___ split_words_and_quoted_text(text
     ___ word __ text.r..('"', '').s.. :
         __ word n.. __ m_list:
             output.a..(word)
-        ____:
+        ____
             __ m.group() n.. __ output:
                 output.a..(m.group
     r.. output

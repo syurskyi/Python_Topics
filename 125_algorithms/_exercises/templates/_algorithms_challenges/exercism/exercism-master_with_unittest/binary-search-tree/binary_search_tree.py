@@ -25,19 +25,19 @@ c_ BinarySearchTree(o..
         new_node = TreeNode(node_data)
         __ head __ N..
             head = new_node
-        ____:
+        ____
             insert_node_at(new_node, head)
 
     ___ insert_node_at  new_node, position
         __ new_node.data <= position.data:
             __ position.left __ N..
                 position.left = new_node
-            ____:
+            ____
                 insert_node_at(new_node, position.left)
         ____ new_node.data > position.data:
             __ position.right __ N..
                 position.right = new_node
-            ____:
+            ____
                 insert_node_at(new_node, position.right)
 
     ___ inorder_traversal  node

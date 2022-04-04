@@ -47,8 +47,8 @@ ___ test_return_dict_len(grouping1, grouping2
     ('SE',  'Luke Brenston' ),
     ('TD',  'Rudolph Jeffry' ),
 ])
-___ test_grouping1_return(grouping1, key, expected
-    ... s..(grouping1[key]) __ expected
+___ test_grouping1_return(grouping1, key, e..
+    ... s..(grouping1[key]) __ e..
 
 
 ?p__.m__.p.('key, expected', [
@@ -59,5 +59,5 @@ ___ test_grouping1_return(grouping1, key, expected
     ('IR',  'Allissa Tunstall', 'Augy Kamenar', 'Raffaello Gillicuddy' ),
     ('NL',  'Ave Insko', 'Bryant Kynman' ),
 ])
-___ test_grouping2_return(grouping2, key, expected
-    ... s..(grouping2[key]) __ expected
+___ test_grouping2_return(grouping2, key, e..
+    ... s..(grouping2[key]) __ e..

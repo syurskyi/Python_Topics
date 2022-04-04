@@ -25,7 +25,7 @@ c_ Solution(o..
         """
         __ head __ N..
             r.. N..
-        ____:
+        ____
             rev_rest = reverseList(head.next)
             current = rev_rest
             __ current __ N..

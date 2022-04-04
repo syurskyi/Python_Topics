@@ -10,14 +10,14 @@ ___ dirReduc(dir    # list):
         #traversing through all the elements except the last one
         ___ i __ r..(0,l..(dir)-1
             __ dir[i] __ 'NORTH' a.. dir[i+1] __ 'SOUTH' o. dir[i] __ 'SOUTH' a.. dir[i+1] __ 'NORTH':
-                dir.pop(i)
-                dir.pop(i)  
+                dir.p.. i)
+                dir.p.. i)
                 _____
             ____ dir[i] __ 'WEST' a.. dir[i+1] __ 'EAST' o. dir[i] __ 'EAST' a.. dir[i+1] __ 'WEST':
-                dir.pop(i)
-                dir.pop(i)
+                dir.p.. i)
+                dir.p.. i)
                 _____
-            ____:
+            ____
                 p..
     #print the result of the direction reduction
     print(dir)

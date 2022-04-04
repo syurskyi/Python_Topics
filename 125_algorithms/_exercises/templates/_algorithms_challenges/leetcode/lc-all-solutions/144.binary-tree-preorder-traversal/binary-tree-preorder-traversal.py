@@ -9,7 +9,7 @@ c_ Solution(o..
   ___ preorderTraversal  root
     res, stack    # list, [(1, root)]
     w.... stack:
-      p = stack.pop()
+      p = stack.p.. )
       __ n.. p[1]: _____
       stack.extend([(1, p[1].right), (1, p[1].left), (0, p[1])]) __ p[0] != 0 ____ res.a..(p[1].val)
     r.. res

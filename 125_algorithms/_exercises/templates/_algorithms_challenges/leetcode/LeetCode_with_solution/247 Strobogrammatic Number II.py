@@ -25,8 +25,8 @@ c_ Solution(o..
             ___ elt __ middle:
                 cur.a..(elt)
                 build(n, cur, ret)
-                cur.pop()
-        ____:
+                cur.p.. )
+        ____
             __ l..(cur) __ n:
                 ret.a..("".j..(cur
                 r..
@@ -35,7 +35,7 @@ c_ Solution(o..
                     cur.appendleft(elt[0])
                     cur.a..(elt[1])
                     build(n, cur, ret)
-                    cur.pop()
+                    cur.p.. )
                     cur.popleft()
 
 
@@ -60,7 +60,7 @@ c_ SolutionArray(o..
             ___ i __ ["0", "1", "8"]:
                 cur.a..(i)
                 build(n, cur, ret)
-                cur.pop()
+                cur.p.. )
             r..
 
         __ l..(cur)/2 __ n/2:
@@ -72,8 +72,8 @@ c_ SolutionArray(o..
                 cur.insert(0, elt[0])
                 cur.a..(elt[1])
                 build(n, cur, ret)
-                cur.pop()
-                cur.pop(0)
+                cur.p.. )
+                cur.p.. 0)
 
 
 c_ SolutionOutputLimitExceeded(o..
@@ -106,7 +106,7 @@ c_ SolutionOutputLimitExceeded(o..
                         ___ i __ x..(idx-1, -1, -1
                             temp.a.. m..[temp[i]])
                         ret.a..("".j..(temp
-            ____:
+            ____
                 temp = l..(cur)
                 ___ i __ x..(idx-1, -1, -1
                     temp.a.. m..[temp[i]])
@@ -118,7 +118,7 @@ c_ SolutionOutputLimitExceeded(o..
             __ k != "0" o. idx != 0:
                 cur.a..(k)
                 build(idx+1, n, cur, ret)
-                cur.pop()
+                cur.p.. )
 
 
 __ _______ __ _______

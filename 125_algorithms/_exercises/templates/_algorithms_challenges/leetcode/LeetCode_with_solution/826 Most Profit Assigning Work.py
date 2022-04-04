@@ -44,7 +44,7 @@ c_ Solution:
             __ worker[j] >= diff:
                 ret += pro
                 j -= 1
-            ____:
+            ____
                 i -= 1
 
         r.. ret

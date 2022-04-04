@@ -21,6 +21,6 @@ c_ Solution:
             head = head.next
         __ p __ N..
             r.. h.next
-        ____:
+        ____
             p.next = p.next.next
         r.. h

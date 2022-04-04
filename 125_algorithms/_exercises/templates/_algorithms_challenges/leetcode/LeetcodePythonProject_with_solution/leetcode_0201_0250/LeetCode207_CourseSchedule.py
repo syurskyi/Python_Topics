@@ -24,7 +24,7 @@ c_ Solution(o..
                 queue.a..(i)
                 count += 1
         w.... queue:
-            course = queue.pop(0)
+            course = queue.p.. 0)
             ___ pointer __ graph[course]:
                 degree[pointer] -= 1
                 __ degree[pointer] __ 0:
@@ -34,7 +34,7 @@ c_ Solution(o..
         print('degree: %s' % (degree
         __ count __ numCourses:
             r.. T..
-        ____:
+        ____
             r.. F..
     
     ___ canFinishDFS  numCourses, prerequisites
@@ -55,7 +55,7 @@ c_ Solution(o..
     ___ dfs  graph, visited, course
         __ visited[course]:
             r.. F..
-        ____:
+        ____
             visited[course] = T..
         ___ precourse __ graph[course]:
             __ n.. dfs(graph, visited, precourse

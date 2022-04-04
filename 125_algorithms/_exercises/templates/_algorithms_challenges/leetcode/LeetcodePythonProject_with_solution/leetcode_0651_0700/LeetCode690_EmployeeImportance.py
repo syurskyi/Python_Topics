@@ -31,7 +31,7 @@ c_ Solution(o..
                 queue.a..(emp)
         res = 0
         w.... queue:
-            emp = queue.pop(0)
+            emp = queue.p.. 0)
             subs = emp.subordinates
             res += emp.importance
             ___ sub __ subs:

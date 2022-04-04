@@ -71,7 +71,7 @@ c_ Solution(o..
                 _____
             ____ w1 n.. __ hashmap o. w2 n.. __ hashmap:
                 r.. F..
-            ____:
+            ____
                 r1 = getRoot(roots, hashmap[w1])
                 r2 = getRoot(roots, hashmap[w2])
                 __ r1 != r2:

@@ -31,7 +31,7 @@ c_ Solution(o..
                     word += s..(count)
                     count = 0
                 word += w
-            ____:
+            ____
                 count += 1
             num >>= 1
         __ count:

@@ -52,7 +52,7 @@ c_ Solution:
             ____ word n.. __ L:
                 __ window:
                     i = window_t-l..(window)*k+1  # going to original point plus 1
-                ____:
+                ____
                     i += 1
 
                 window    # list
@@ -102,7 +102,7 @@ c_ Solution:
         ___ item __ L:
             __ item __ Lmap:
                 Lmap[item] += 1
-            ____:
+            ____
                 Lmap[item] = 1
 
         Lmap_original = d..(Lmap)
@@ -134,7 +134,7 @@ c_ Solution:
             ____ word n.. __ Lmap:
                 __ working_win:
                     i = win_e-l..(working_win)*k+1  # going to window start+1  # cannot jump
-                ____:
+                ____
                     i += 1
 
                 working_win    # list

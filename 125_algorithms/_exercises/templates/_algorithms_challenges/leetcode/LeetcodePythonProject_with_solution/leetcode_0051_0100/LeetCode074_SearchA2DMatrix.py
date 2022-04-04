@@ -18,7 +18,7 @@ c_ Solution(o..
             mid = (l+r-1)//2
             __ matrix[mid//n][mid%n] < target:
                 l = mid+1
-            ____:
+            ____
                 r = mid
         r.. matrix[r//n][r%n] __ target
     
@@ -38,7 +38,7 @@ c_ Solution(o..
                 r.. T..
             ____ target > matrix[mid][0]:
                 lo = mid+1
-            ____:
+            ____
                 hi = mid
         row = lo-1 __ lo > 0 ____ lo
         lo, hi = 0, n
@@ -48,6 +48,6 @@ c_ Solution(o..
                 r.. T..
             ____ target > matrix[row][mid]:
                 lo = mid+1
-            ____:
+            ____
                 hi = mid
         r.. F..

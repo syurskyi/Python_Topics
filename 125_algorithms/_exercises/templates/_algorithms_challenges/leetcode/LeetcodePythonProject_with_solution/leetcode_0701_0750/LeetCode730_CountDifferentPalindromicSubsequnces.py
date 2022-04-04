@@ -31,10 +31,10 @@ c_ Solution(o..
                     ____ low __ high:
                         # 'aaa'
                         dp[i][j] = dp[i+1][j-1]*2+1
-                    ____:
+                    ____
                         # 'aacaa'
                         dp[i][j] = dp[i+1][j-1]*2-dp[low+1][high-1]
-                ____:
+                ____
                     dp[i][j] = dp[i+1][j]+dp[i][j-1]-dp[i+1][j-1]
                 dp[i][j] = dp[i][j]%MOD
         r.. dp[0][-1]

@@ -50,7 +50,7 @@ c_ Solution(o..
       head.next = N..
       __ p:
         p.next = head
-      ____:
+      ____
         newHead = head
       r.. head
 

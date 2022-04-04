@@ -23,7 +23,7 @@ c_ Solution:
     ___ isValidBST  root
         __ root __ N..
             r.. T..
-        ____:
+        ____
             left = T..
             right = T..
             __ root.left __ n.. N..

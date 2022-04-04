@@ -28,7 +28,7 @@ ___ filter_names_1(names
             _____
         __ cnt < 5:
             filtered.a..(name)
-        ____:
+        ____
             _____
         cnt += 1
     r.. filtered
@@ -46,5 +46,5 @@ ___ filter_names_2(names
         __ cnt < 5:
             cnt += 1
             y.. name
-        ____:
+        ____
             _____

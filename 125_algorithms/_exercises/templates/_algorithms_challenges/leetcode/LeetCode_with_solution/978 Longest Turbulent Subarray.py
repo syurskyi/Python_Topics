@@ -48,14 +48,14 @@ c_ Solution:
                 __ flag __ N.. o. flag __ 1:
                     cur += 1
                     ret = m..(ret, cur)
-                ____:
+                ____
                     cur = 2
                 flag = 0
-            ____:  # <
+            ____  # <
                 __ flag __ N.. o. flag __ 0:
                     cur += 1
                     ret = m..(ret, cur)
-                ____:
+                ____
                     cur = 2
                 flag = 1
 

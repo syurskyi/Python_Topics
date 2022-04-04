@@ -32,7 +32,7 @@ c_ Solution(o..
                 __ n.. cur.next:
                     cur.next = ListNode(0)
                 cur = cur.next
-            ____:
+            ____
                 _____
 
         r.. head

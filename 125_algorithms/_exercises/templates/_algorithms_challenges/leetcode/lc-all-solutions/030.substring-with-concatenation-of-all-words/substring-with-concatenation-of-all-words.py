@@ -30,7 +30,7 @@ c_ Solution(o..
         t[cword]  t.g.. cword, 0) + 1
         __ t[cword] < d[cword]:
           score + 1
-        ____:
+        ____
           _____
         start + wl
 

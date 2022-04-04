@@ -8,21 +8,21 @@ ___ timeCalc(calculations
     
         __ s2 > s1:
             s  s2 - s1
-        ____:
+        ____
             m2 - 1
             s2 + 60
             s  s2 - s1
 
         __ m2 > m1:
             m  m2 - m1
-        ____:
+        ____
             h2 - 1
             m2 + 60
             m  m2 - m1
         
         __ h2 > h1:
             h  h2 - h1
-        ____:
+        ____
             d2 - 1
             h2 + 24
             h  h2 - h1

@@ -37,10 +37,10 @@ c_ NestedIterator(o..
         d.. = nestedList
         result    # list
         w.... d..:
-            ni = d...pop(0)
+            ni = d...p.. 0)
             __ ni.isInteger
                 result.a..(ni.getInteger
-            ____:
+            ____
                 l = ni.getList()
                 l.r..
                 ___ ni0 __ l:
@@ -48,7 +48,7 @@ c_ NestedIterator(o..
         result = result
 
     ___ next
-        r.. result.pop(0)
+        r.. result.p.. 0)
 
     ___ hasNext
         __ result:

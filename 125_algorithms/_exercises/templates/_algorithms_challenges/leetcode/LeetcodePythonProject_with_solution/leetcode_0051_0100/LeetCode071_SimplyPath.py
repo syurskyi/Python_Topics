@@ -24,7 +24,7 @@ c_ Solution(o..
                 _____
             __ cont > 0:
                 cont -= 1
-            ____:
+            ____
                 result = '/' + l[i] + result
         __ result __ '':
             result = '/'

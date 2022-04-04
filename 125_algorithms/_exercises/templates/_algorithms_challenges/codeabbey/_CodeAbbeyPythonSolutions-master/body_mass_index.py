@@ -13,7 +13,7 @@ ___ i __ r..(amount_values
         results.a..("normal")
     ____(bmi >= 25 a.. bmi < 30
         results.a..("over")
-    ____:
+    ____
         results.a..("obese")
 
 print(*results)

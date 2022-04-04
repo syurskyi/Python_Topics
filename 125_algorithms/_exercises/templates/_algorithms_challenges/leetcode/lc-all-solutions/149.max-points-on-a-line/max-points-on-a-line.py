@@ -32,7 +32,7 @@ c_ Solution(o..
           ku /= kg
           kd /= kg
           d[(ku, kd, x1, y1)] = d.get((ku, kd, x1, y1), 0) + 1
-        ____:
+        ____
           overlap += 1
           ans = m..(ans, overlap)
         ans = m..(ans, d.get((ku, kd, x1, y1), 0) + overlap)

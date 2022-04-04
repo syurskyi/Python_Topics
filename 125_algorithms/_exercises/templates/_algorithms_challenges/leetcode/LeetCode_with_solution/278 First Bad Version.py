@@ -28,7 +28,7 @@ c_ Solution(o..
             m = (l+h)/2
             __ n.. isBadVersion(m
                 l = m+1
-            ____:
+            ____
                 h = m
 
         r.. l

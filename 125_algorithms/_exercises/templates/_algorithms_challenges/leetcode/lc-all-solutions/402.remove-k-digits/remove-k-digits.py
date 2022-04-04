@@ -8,7 +8,7 @@ c_ Solution(o..
     stack    # list
     ___ c __ num:
       w.... k > 0 a.. stack a.. stack[-1] > c:
-        stack.pop()
+        stack.p.. )
         k -= 1
       stack.a..(c)
     __ k > 0:

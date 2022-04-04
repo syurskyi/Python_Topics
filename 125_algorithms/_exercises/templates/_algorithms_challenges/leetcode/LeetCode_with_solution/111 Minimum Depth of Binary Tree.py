@@ -28,5 +28,5 @@ c_ Solution(o..
         __ n.. root: r.. depth
         ____ root.right a.. n.. root.left: r.. fathom(root.right, depth+1)
         ____ root.left a.. n.. root.right: r.. fathom(root.left, depth+1)
-        ____: r.. m..(fathom(root.left, depth+1),
+        ____ r.. m..(fathom(root.left, depth+1),
                          fathom(root.right, depth+1

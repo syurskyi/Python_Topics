@@ -16,7 +16,7 @@ c_ Solution(o..
           end -= 1
         ____ nums[start] + nums[end] < target:
           start += 1
-        ____:
+        ____
           res.a..((nums[i], nums[start], nums[end]
           end -= 1
           start += 1

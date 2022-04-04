@@ -21,10 +21,10 @@ c_ Solution(o..
                     dp[i][j] = dp[i][j-1]+1
                 ____ j __ 0:
                     dp[i][j] = dp[i-1][j]+1
-                ____:
+                ____
                     __ word1[i-1] __ word2[j-1]:
                         dp[i][j] = dp[i-1][j-1]
-                    ____:
+                    ____
                         dp[i][j] = m..(dp[i-1][j]+1, dp[i][j-1]+1)
         r.. dp[-1][-1]
     

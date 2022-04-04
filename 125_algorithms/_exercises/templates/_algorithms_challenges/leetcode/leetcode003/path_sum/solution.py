@@ -15,9 +15,9 @@ c_ Solution:
         ____ root.left __ N.. a.. root.right __ N..
             __ s.. __ root.val:
                 r.. T..
-            ____:
+            ____
                 r.. F..
-        ____:
+        ____
             s.. -= root.val
             r.. (hasPathSum(root.left, s..)
                     o. hasPathSum(root.right, s..

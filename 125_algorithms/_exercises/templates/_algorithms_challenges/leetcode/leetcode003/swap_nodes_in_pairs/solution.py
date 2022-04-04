@@ -10,7 +10,7 @@ c_ Solution:
     ___ swapPairs  head
         __ head __ N.. o. head.next __ N..
             r.. head
-        ____:
+        ____
             t = head.next
             head.next = swapPairs(t.next)
             t.next = head

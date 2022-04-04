@@ -12,15 +12,15 @@ c_ Solution:
         stk    # list
         ___ c __ r..(expression
             __ stk a.. stk[-1] __ "?":
-                stk.pop()  # ?
-                first = stk.pop()
-                stk.pop()  # :
-                second = stk.pop()
+                stk.p.. )  # ?
+                first = stk.p.. )
+                stk.p.. )  # :
+                second = stk.p.. )
                 __ c __ "T":
                     stk.a..(first)
-                ____:
+                ____
                     stk.a..(second)
-            ____:
+            ____
                 stk.a..(c)
 
         r.. stk[0]
@@ -46,15 +46,15 @@ c_ Solution:
 
             __ expression[j] __ ":":
                 i = j - 1
-            ____:  # "?"
+            ____  # "?"
                 i = j - 1
                 __ expression[i] __ "T":
-                    a = stk.pop()
-                    stk.pop()
+                    a = stk.p.. )
+                    stk.p.. )
                     stk.a..(a)
                     i -= 1
-                ____:
-                    stk.pop()
+                ____
+                    stk.p.. )
                     i -= 1
 
         r.. stk[0]

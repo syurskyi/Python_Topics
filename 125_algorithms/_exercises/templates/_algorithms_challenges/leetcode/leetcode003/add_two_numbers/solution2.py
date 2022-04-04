@@ -37,7 +37,7 @@ c_ Solution(o..
             __ res __ N..
                 res = ListNode(digit)
                 res_end = res
-            ____:
+            ____
                 res_end.next = ListNode(digit)
                 res_end = res_end.next
         r.. res

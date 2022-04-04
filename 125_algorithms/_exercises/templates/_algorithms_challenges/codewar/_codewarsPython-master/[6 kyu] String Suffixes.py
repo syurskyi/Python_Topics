@@ -9,7 +9,7 @@ ___ stringMatch(str_,toMatch
 	___ n __ r..(m..(l..(str_),l..(toMatch))):
 		__ str_[n] __ toMatch[n]:
 			res += 1
-		____:
+		____
 			_____
 	r.. res
 

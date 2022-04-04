@@ -54,7 +54,7 @@ c_ ExamRoom:
         """
         __ n.. idxes:
             ret_idx = 0
-        ____:
+        ____
             max_dist, ret_idx = 0, 0
             # begin
             dist = idxes[0] - 0

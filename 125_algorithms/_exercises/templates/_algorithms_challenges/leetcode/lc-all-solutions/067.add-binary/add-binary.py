@@ -8,7 +8,7 @@ c_ Solution(o..
     diff = abs(l..(a) - l..(b
     __ l..(a) > l..(b
       b = "0" * diff + b
-    ____:
+    ____
       a = "0" * diff + a
 
     ret = ""
@@ -20,19 +20,19 @@ c_ Solution(o..
       __ ac __ "1" a.. bc __ "1":
         __ carry __ 1:
           ret += "1"
-        ____:
+        ____
           ret += "0"
         carry = 1
       ____ ac __ "0" a.. bc __ "0":
         __ carry __ 1:
           ret += "1"
-        ____:
+        ____
           ret += "0"
         carry = 0
-      ____:
+      ____
         __ carry __ 1:
           ret += "0"
-        ____:
+        ____
           ret += "1"
 
       ai -= 1

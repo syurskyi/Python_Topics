@@ -21,14 +21,14 @@ c_ Solution:
                 __ large __ N..
                     large = head
                     large_end = large
-                ____:
+                ____
                     large_end.next = head
                     large_end = large_end.next
-            ____:
+            ____
                 __ res __ N..
                     res = head
                     res_end = res
-                ____:
+                ____
                     res_end.next = head
                     res_end = res_end.next
             head = next_node
@@ -36,6 +36,6 @@ c_ Solution:
             large_end.next = N..
         __ res __ n.. N..
             res_end.next = large
-        ____:
+        ____
             res = large
         r.. res

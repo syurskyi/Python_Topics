@@ -89,9 +89,9 @@ c_ Solution:
                     __ S[k:k+l..(nxt_str)] __ nxt_str:
                         k = k + l..(nxt_str)
                         ret.a..(nxt)
-                    ____:
+                    ____
                         _____
-                ____:
+                ____
                     __ k __ l a.. l..(ret) >= 3:
                         r.. ret
 

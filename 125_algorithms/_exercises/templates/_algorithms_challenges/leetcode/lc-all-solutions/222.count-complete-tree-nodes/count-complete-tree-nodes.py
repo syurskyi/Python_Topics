@@ -20,7 +20,7 @@ c_ Solution(o..
       __ l __ r:
         count += 2 ** l
         root = root.right
-      ____:
+      ____
         count += 2 ** r
         root = root.left
     r.. count

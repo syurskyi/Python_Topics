@@ -40,7 +40,7 @@ c_ Solution:
             ___ i __ r..(l..(nums:
                 __ nums[i] & 1 __ 0:
                     o += 1
-                ____:
+                ____
                     z += 1
                 nums[i] >>= 1
 

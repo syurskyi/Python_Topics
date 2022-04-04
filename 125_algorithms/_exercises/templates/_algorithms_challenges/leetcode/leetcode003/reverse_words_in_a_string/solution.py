@@ -30,7 +30,7 @@ c_ Solution:
         ___ p __ r..(start, end + 1
             __ p > start a.. ls[p] __ ' ' a.. ls[p] __ ls[p - 1]:
                 p..
-            ____:
+            ____
                 ls[k] = ls[p]
                 k += 1
         end = k - 1

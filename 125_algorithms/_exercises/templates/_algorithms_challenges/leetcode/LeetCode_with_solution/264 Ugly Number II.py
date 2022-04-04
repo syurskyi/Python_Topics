@@ -48,7 +48,7 @@ c_ Solution(o..
         w.... cnt < n:
             cnt += 1
             popped = heapq.heappop(h)
-            ret = popped.q.pop(0)
+            ret = popped.q.p.. 0)
             ___ i __ x..(ugly.i.. popped.origin), 3
                 qs[i].q.a..(ret*ugly[i])
 

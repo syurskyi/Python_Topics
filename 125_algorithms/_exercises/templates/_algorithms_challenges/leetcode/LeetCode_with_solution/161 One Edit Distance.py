@@ -24,10 +24,10 @@ c_ Solution(o..
             __ s[i] __ t[j]:
                 i += 1
                 j += 1
-            ____:
+            ____
                 __ m != n:
                     j += 1  # delete
-                ____:  # replace s[i]
+                ____  # replace s[i]
                     i += 1
                     j += 1
 
@@ -51,10 +51,10 @@ c_ Solution1(o..
         w.... a a.. b a.. diff < 2:
             __ a __ b:
                 a, b = next(i, N..), next(j, N..)
-            ____:
+            ____
                 __ m != n:
                     b = next(j, N..)
-                ____:
+                ____
                     a, b = next(i, N..), next(j, N..)
 
                 diff += 1

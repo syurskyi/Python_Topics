@@ -39,7 +39,7 @@ c_ NinjaBelt:
             _last_earned_belt = rank
 
             print(f"Congrats, you earned {score} points obtaining the PyBites Ninja {_last_earned_belt.capitalize()} Belt")
-        ____:
+        ____
             print(f"Set new score to {score}")
 
 

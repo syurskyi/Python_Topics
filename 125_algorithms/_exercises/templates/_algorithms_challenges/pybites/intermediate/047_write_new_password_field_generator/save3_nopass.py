@@ -15,5 +15,5 @@ ___ validate_password(password
             __ c __ PUNCTUATION_CHARS:
                 used_passwords.add(password)
                 r.. b..(s)
-    ____:
+    ____
         r.. F..

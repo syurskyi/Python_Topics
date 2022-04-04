@@ -16,7 +16,7 @@ c_ Solution(o..
             ___ j __ r..(i+1
                 __ j __ 0 o. j __ i:
                     tmp.a..(1)
-                ____:
+                ____
                     tmp.a..(res[i-1][j] + res[i-1][j-1])
             res.a..(tmp)
         r.. res

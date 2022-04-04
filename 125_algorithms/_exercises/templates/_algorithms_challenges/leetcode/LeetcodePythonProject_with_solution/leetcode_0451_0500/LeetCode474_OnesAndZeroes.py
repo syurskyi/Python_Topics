@@ -27,7 +27,7 @@ c_ Solution(o..
                         dp[i][j][k] = 0
                     ____ j >= nums[0] a.. k >= nums[1]:
                         dp[i][j][k] = m..(dp[i-1][j][k], dp[i-1][j-nums[0]][k-nums[1]]+1)
-                    ____:
+                    ____
                         dp[i][j][k] = dp[i-1][j][k]
         r.. dp[l][m][n]
     

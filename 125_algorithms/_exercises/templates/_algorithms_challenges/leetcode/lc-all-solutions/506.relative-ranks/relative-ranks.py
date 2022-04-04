@@ -14,7 +14,7 @@ c_ Solution(o..
     ___ _, i __ scores:
       __ rank > 2:
         ans[i] = s..(rank + 1)
-      ____:
+      ____
         ans[i] = rankTitles[rank]
       rank += 1
     r.. ans

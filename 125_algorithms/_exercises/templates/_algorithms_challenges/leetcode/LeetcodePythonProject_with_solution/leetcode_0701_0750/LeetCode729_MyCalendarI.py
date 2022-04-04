@@ -26,7 +26,7 @@ c_ MyCalendar(o..
                 r.. T..
             ____ newInterval.start >= interval.end:
                 _____
-            ____:
+            ____
                 r.. F..
         intervals.a..(newInterval)
         r.. T..

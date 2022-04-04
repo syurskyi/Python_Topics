@@ -9,4 +9,4 @@ w.... l..(a)!= 1:
     ind = a.i.. m..)
     print(ind,end=' ')
     a[ind],a[-1] = a[-1],a[ind]
-    a.pop(-1)
+    a.p.. -1)

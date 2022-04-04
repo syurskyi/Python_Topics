@@ -164,7 +164,7 @@ c_ Solution:
             mid = (left + right) // 2
             __ check_if_possible(P, mid, k
                 right = mid
-            ____:
+            ____
                 left = mid
 
         """

@@ -49,10 +49,10 @@ c_ Solution:
                     mono = 2
                 ____ A[i] < A[i-1]:
                     mono = 1
-            ____:
+            ____
                 __ A[i] > A[i-1] a.. mono __ 1:
                     r.. F..
                 ____ A[i] < A[i-1] a.. mono __ 2:
                     r.. F..
-        ____:
+        ____
             r.. T..

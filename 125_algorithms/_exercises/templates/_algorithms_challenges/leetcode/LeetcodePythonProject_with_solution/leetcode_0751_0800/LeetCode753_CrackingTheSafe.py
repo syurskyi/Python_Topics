@@ -28,7 +28,7 @@ c_ Solution(o..
                 __ dfs(arr, goal, visited, n, k
                     r.. T..
                 visited.remove(nextStr)
-                arr.pop()
+                arr.p.. )
         r.. F..
     
     ___ test

@@ -24,7 +24,7 @@ c_ Solution(o..
                     r.. target
                 ____ tmp > target:
                     k -= 1
-                ____:
+                ____
                     j += 1
         r.. res
     

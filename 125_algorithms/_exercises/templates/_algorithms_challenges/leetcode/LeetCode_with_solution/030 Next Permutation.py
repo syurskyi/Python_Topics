@@ -43,7 +43,7 @@ c_ Solution:
         __ partition_num_index__change_num_index__0:
             # If such arrangement is not possible, to lowest possible order (ie, sorted in ascending order).
             num.r..
-        ____:
+        ____
             num[partition_num_index+1:] = r..(num[partition_num_index+1:])
         r.. num
 

@@ -8,7 +8,7 @@ ___ is_triangle(sides
         r.. 0
     ____(sides[0] + sides[2] < sides[1]
         r.. 0
-    ____:
+    ____
         r.. 1
 
 ___ i __ r..(amount_values

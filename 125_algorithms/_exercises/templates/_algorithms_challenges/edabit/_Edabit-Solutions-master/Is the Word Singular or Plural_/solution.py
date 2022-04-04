@@ -1,7 +1,7 @@
 ___ is_plural(word
     __ word[-1] __ "s":
         r.. T..
-    ____:
+    ____
         r.. F..
 
 

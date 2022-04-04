@@ -16,12 +16,12 @@ c_ Codec:
         stack = [root]
         result = ''
         w.... stack:
-            node = stack.pop()
+            node = stack.p.. )
             __ node:
                 result += '%s,' % (node.val)
                 stack.a..(node.right)
                 stack.a..(node.left)
-            ____:
+            ____
                 result += '#,'
         r.. result[:-1]
     
@@ -52,7 +52,7 @@ __ _____ __ _____
     line    # list
     nextQueue   # list
     w.... queue:
-        node = queue.pop(0)
+        node = queue.p.. 0)
         line.a..(node.val)
         __ node.left:
             nextQueue.a..(node.left)

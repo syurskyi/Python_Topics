@@ -22,7 +22,7 @@ c_ Solution(o..
             __ isPalindrome(s[startInd:i+1]
                 elem.a..(s[startInd:i+1])
                 helper(s, i+1, elem, result)
-                elem.pop()
+                elem.p.. )
     
     ___ isPalindrome  s
         __ n.. s: r.. F..

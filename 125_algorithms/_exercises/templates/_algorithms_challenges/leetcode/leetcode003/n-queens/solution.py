@@ -28,7 +28,7 @@ c_ Solution:
     ___ solve  columns, row, res
         __ row __ n:
             res.a..(make_string_list(columns
-        ____:
+        ____
             ___ col __ r..(n
                 __ is_valid(columns, row, col
                     columns[row] = col

@@ -47,11 +47,11 @@ c_ Solution:
         stk = [node]
         # pre-order
         w.... stk:
-            cur = stk.pop()
+            cur = stk.p.. )
             __ n.. cur:
                 _____
             __ n.. cur.left a.. n.. cur.right:
                 y.. cur.val
-            ____:
+            ____
                 stk.a..(cur.right)
                 stk.a..(cur.left)

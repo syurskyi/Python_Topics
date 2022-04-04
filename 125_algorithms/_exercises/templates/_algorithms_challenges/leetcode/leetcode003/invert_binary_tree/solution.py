@@ -30,7 +30,7 @@ c_ Solution(o..
         """
         __ root __ N..
             r.. N..
-        ____:
+        ____
             left = invertTree(root.left)
             right = invertTree(root.right)
             root.left = right

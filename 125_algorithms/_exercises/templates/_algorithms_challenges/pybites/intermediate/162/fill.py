@@ -6,7 +6,7 @@ ___ prefill_with_character(value, column_length=4, fill_char=HTML_SPACE
     value = s..(value)
     __ l..(value) __ column_length:
         r.. value
-    ____:
+    ____
         delta = column_length - l..(value)
         r.. f"{fill_char * delta}{value}"
 

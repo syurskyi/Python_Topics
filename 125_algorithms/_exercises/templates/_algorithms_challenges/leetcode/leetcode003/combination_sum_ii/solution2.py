@@ -12,7 +12,7 @@ c_ Solution:
     ___ combination_sum_aux  candidates, target, cand, res
         __ target __ 0:
             res.a..(cand | )
-        ____:
+        ____
             prev = N..
             ___ i, c __ e..(candidates
                 __ prev __ N.. o. prev != c:
@@ -20,5 +20,5 @@ c_ Solution:
                         cand.a..(c)
                         combination_sum_aux(candidates[i + 1:],
                                                  target - c, cand, res)
-                        cand.pop()
+                        cand.p.. )
                 prev = c

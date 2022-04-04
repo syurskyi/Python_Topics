@@ -41,5 +41,5 @@ c_ Solution(o..
                 r.. mid
             ____ g < 1:
                 hi = mid
-            ____:
+            ____
                 lo = mid + 1

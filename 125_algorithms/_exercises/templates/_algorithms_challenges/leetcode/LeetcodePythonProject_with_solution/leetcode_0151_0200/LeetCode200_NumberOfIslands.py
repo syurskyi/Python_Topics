@@ -25,7 +25,7 @@ c_ Solution(o..
         queue = [(i, j)]
         m, n = l..(grid), l..(grid[0])
         w.... queue:
-            i, j = queue.pop(0)
+            i, j = queue.p.. 0)
             ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
                 __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y] __ '1':
                     grid[x][y] = '#'

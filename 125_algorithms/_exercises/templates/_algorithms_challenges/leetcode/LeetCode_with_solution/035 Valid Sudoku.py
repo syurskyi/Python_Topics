@@ -42,7 +42,7 @@ c_ Solution:
                     row_element = i..(board[i][j])
                     __ row_element __ row:
                         r.. F..
-                    ____:
+                    ____
                         row.a..(row_element)
                 ______ V..
                     p..
@@ -52,7 +52,7 @@ c_ Solution:
                     column_element = i..(board[j][i])
                     __ column_element __ column:
                         r.. F..
-                    ____:
+                    ____
                         column.a..(column_element)
                 ______ V..
                     p..
@@ -62,7 +62,7 @@ c_ Solution:
                     square_element = i..(board[i/3*3 + j/3][i%3*3 + j%3])
                     __ square_element __ square:
                         r.. F..
-                    ____:
+                    ____
                         square.a..(square_element)
                 ______ V..
                     p..

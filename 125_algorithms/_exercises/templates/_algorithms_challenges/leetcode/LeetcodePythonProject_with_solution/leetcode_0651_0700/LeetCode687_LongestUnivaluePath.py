@@ -26,11 +26,11 @@ c_ Solution(o..
         right = helper(root.right)
         __ root.left a.. root.left.val __ root.val:
             left += 1
-        ____:
+        ____
             left = 0
         __ root.right a.. root.right.val __ root.val:
             right += 1
-        ____:
+        ____
             right = 0
         maxLen = m..(maxLen, left+right)
         r.. m..(left, right)

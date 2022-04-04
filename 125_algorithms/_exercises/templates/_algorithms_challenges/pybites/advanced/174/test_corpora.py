@@ -85,29 +85,29 @@ ___ test_cleanup_text_alt_text(beer_tax
 
 
 ___ test_word_metrics_gettysburg_default(getty
-    expected = [
+    e.. = [
         ("nation", 5),
         ("dedicated", 4),
         ("great", 3),
         ("cannot", 3),
         ("dead", 3),
     ]
-    ... getty.metrics __ expected
+    ... getty.metrics __ e..
 
 
 ___ test_word_metrics_beer_tax(beer_tax
-    expected = [("pay", 13), ("would", 12), ("men", 8), ("paid", 7), ("man", 7)]
-    ... beer_tax.metrics __ expected
+    e.. = [("pay", 13), ("would", 12), ("men", 8), ("paid", 7), ("man", 7)]
+    ... beer_tax.metrics __ e..
 
 
 ___ test_word_metrics_with_word_removed(beer_tax
-    expected = [("pay", 13), ("would", 12), ("paid", 7), ("bill", 6), ("saving", 6)]
+    e.. = [("pay", 13), ("would", 12), ("paid", 7), ("bill", 6), ("saving", 6)]
     beer_tax.extra = ["men", "man"]
-    ... beer_tax.metrics __ expected
+    ... beer_tax.metrics __ e..
 
 
 ___ test_graph_gettysburgh(getty, capfd
-    expected = [
+    e.. = [
         "    nation #####",
         " dedicated ####",
         "     great ###",
@@ -117,11 +117,11 @@ ___ test_graph_gettysburgh(getty, capfd
     getty.extra = EXTRA_CHAR
     getty.graph
     output = ?.r .. 0].s..
-    ... output __ expected
+    ... output __ e..
 
 
 ___ test_graph_beer_tax(beer_tax, capfd
-    expected = [
+    e.. = [
         "       pay #############",
         "     would ############",
         "       men ########",
@@ -136,11 +136,11 @@ ___ test_graph_beer_tax(beer_tax, capfd
     beer_tax.count = 10
     beer_tax.graph
     output = ?.r .. 0].s..
-    ... output __ expected
+    ... output __ e..
 
 
 ___ test_graph_beer_tax_asterisk(beer_tax, capfd
-    expected = [
+    e.. = [
         "       pay *************",
         "     would ************",
         "       men ********",
@@ -150,4 +150,4 @@ ___ test_graph_beer_tax_asterisk(beer_tax, capfd
     beer_tax.tag = "*"
     beer_tax.graph
     output = ?.r .. 0].s..
-    ... output __ expected
+    ... output __ e..

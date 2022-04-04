@@ -19,7 +19,7 @@ c_ WordDictionary(o..
         ___ i, c __ e..(word
             __ c __ children:
                 t = children[c]
-            ____:
+            ____
                 t = TrieNode(c)
                 children[c] = t
             children = t.children
@@ -41,7 +41,7 @@ c_ WordDictionary(o..
                 __ searchDFS(children[key].children, word, startInd+1
                     r.. T..
             r.. F..
-        ____:
+        ____
             r.. F..
     
     ___ s..  word

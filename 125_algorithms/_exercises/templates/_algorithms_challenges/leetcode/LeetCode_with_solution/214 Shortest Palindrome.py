@@ -36,7 +36,7 @@ c_ Solution:
                 pos += 1
             ____ T[cnd] != -1:
                 cnd = T[cnd]
-            ____:
+            ____
                 T[pos] = 0
                 cnd = 0
                 pos += 1
@@ -52,7 +52,7 @@ c_ Solution:
             ____ T[i] != -1:
                 b = b+i-T[i]
                 i = T[i]
-            ____:
+            ____
                 b += 1
                 i = 0
 

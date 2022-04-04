@@ -28,7 +28,7 @@ c_ Solution(o..
                 r.. nums[pivot]
             ____ pivot < k - 1:
                 left = pivot + 1
-            ____:
+            ____
                 right = pivot - 1
 
     ___ partition  nums, left, right

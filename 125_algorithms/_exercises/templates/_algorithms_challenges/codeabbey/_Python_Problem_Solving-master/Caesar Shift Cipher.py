@@ -26,7 +26,7 @@ ___ i __ r..(data
         #if present in the decoding dictionary add the respective character to result string
         __ s[j] __ a:
             res += a[s[j]]
-        ____:
+        ____
             res +=' '
     #print the result ending with '. '
     print(res,end='. ')

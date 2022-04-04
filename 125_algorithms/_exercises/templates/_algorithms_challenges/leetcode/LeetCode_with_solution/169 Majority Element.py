@@ -22,7 +22,7 @@ c_ Solution:
         ___ i, v __ e..(nums
             __ mjr __ v:
                 cnt += 1
-            ____:
+            ____
                 cnt -= 1
 
             __ cnt < 0:

@@ -27,7 +27,7 @@ c_ Account:
 
 
         w.... balance < 0:
-            _transactions.pop()
+            _transactions.p.. )
 
 
         

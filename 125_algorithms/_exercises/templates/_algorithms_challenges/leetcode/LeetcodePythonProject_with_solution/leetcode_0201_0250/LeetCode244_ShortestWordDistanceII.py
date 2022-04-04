@@ -27,6 +27,6 @@ c_ WordDistance(o..
             res = m..(res, abs(arr1[i]-arr2[j]
             __ arr1[i] > arr2[j]:
                 j += 1
-            ____:
+            ____
                 i += 1
         r.. res

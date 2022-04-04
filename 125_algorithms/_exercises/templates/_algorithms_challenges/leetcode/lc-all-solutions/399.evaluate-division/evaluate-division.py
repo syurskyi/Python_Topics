@@ -35,7 +35,7 @@ c_ Graph(o..
     node1.nbrs[node2.label] = div
     __ div != 0:
       node2.nbrs[node1.label] = 1.0 / div
-    ____:
+    ____
       node2.nbrs[node1.label] = f__("inf")
 
 

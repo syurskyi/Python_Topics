@@ -14,8 +14,8 @@ c_ Solution:
                 d...remove(start)
         d...add(end)
         w.... queue:
-            cur = queue.pop(0)
-            d = distance.pop(0)
+            cur = queue.p.. 0)
+            d = distance.p.. 0)
             ___ word __ s..(d..  # Iterate over the copy of dict
                 __ is_adjacent(cur, word
                     d...remove(word)  # Mark as visited

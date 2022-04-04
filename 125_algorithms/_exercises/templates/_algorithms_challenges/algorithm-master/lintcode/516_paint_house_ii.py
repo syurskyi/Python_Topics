@@ -59,7 +59,7 @@ c_ Solution:
                 dp[curr][j] = C[i][j]
                 __ dp[prev][j] __ min1:
                     dp[curr][j] += min2
-                ____:
+                ____
                     dp[curr][j] += min1
 
         r.. m..(dp[curr])

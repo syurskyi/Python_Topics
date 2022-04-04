@@ -17,13 +17,13 @@ c_ Solution(o..
       ans    # list
       stack = [(root, 1)]
       w.... stack:
-        node, p = stack.pop()
+        node, p = stack.p.. )
         __ n.. node:
           ans.a..("#")
           _____
         __ p __ 0:
           ans.a..("|" + s..(node.val
-        ____:
+        ____
           stack.a..((node.right, 1
           stack.a..((node.left, 1
           stack.a..((node, 0

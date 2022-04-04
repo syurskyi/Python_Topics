@@ -14,7 +14,7 @@ c_ Solution(o..
             r.. F..
           start = i
           digit = T..
-      ____:
+      ____
         __ digit:
           jump = i..(src[start:i])
           digit = F..

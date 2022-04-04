@@ -39,11 +39,11 @@ ___ fasta_to_2line_fasta(fasta_file:s..="test.txt", fasta_2line_file: s..='test_
                         f1.w.. '\n'.j..(sequence
                         f1.w.. '\n')
                         sequence    # list
-                    ____:
+                    ____
                         sequence = [line]
                     records += 1
                     lines    # list
-                ____:
+                ____
                     lines.a..(line)
     '''    
     records *= 2

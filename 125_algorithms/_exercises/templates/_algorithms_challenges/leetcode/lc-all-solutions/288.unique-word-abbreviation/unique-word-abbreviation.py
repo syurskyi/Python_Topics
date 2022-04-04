@@ -11,7 +11,7 @@ c_ ValidWordAbbr(o..
       __ wordLen > 2:
         key = word[0] + s..(wordLen - 2) + word[-1]
         d[key] = d.g.. key, 0) + 1
-      ____:
+      ____
         d[word] = d.g.. word, 0) + 1
 
   ___ isUnique  word
@@ -24,13 +24,13 @@ c_ ValidWordAbbr(o..
     key = N..
     __ wordLen > 2:
       key = word[0] + s..(wordLen - 2) + word[-1]
-    ____:
+    ____
       key = word
     __ key __ d:
       __ d[key] __ 1 a.. word __ d..:
         r.. T..
       r.. F..
-    ____:
+    ____
       r.. T..
 
 # Your ValidWordAbbr object will be instantiated and called as such:

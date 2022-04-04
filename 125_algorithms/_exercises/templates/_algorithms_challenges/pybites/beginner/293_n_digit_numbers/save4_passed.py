@@ -20,6 +20,6 @@ ___ n_digit_numbers(numbers: L..[T], n: i..) __ L..[i..]:
                 number_list.a..(i..(s..(number * 10 **n)[:n + 1]
             ____ number_of_digits > n:
                 number_list.a..(i..(s..(number * 10 **n)[:n + 1]
-            ____:
+            ____
                 number_list.a..(number)
     r.. number_list

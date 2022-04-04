@@ -28,7 +28,7 @@ ___ series_simple_math(
         func = ser.sub
     ____ function __ 'mul':
         func = ser.mul
-    ____:
+    ____
         func = ser.div
 
     r.. func(number)
@@ -81,7 +81,7 @@ ___ complex_series_maths(
         func = ser_01.sub
     ____ function __ 'mul':
         func = ser_01.mul
-    ____:
+    ____
         func = ser_01.div
 
     r.. func(ser_02)

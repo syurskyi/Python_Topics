@@ -7,7 +7,7 @@ ____ gendates _______ gen_special_pybites_dates
 ___ test_gen_special_pybites_dates
     gen = gen_special_pybites_dates()
     dates = l..(islice(gen, 10
-    expected = [d__(2017, 3, 29, 0, 0),
+    e.. = [d__(2017, 3, 29, 0, 0),
                 d__(2017, 7, 7, 0, 0),
                 d__(2017, 10, 15, 0, 0),
                 d__(2018, 1, 23, 0, 0),
@@ -17,4 +17,4 @@ ___ test_gen_special_pybites_dates
                 d__(2019, 2, 27, 0, 0),
                 d__(2019, 6, 7, 0, 0),
                 d__(2019, 9, 15, 0, 0)]
-    ... dates __ expected
+    ... dates __ e..

@@ -47,7 +47,7 @@ c_ Solution(o..
         # For each of the remaining node, remove its prerequisites in queue;
         # if node has no prerequisites, add it to queue, and repeat
         w.... queue:
-            u = queue.pop(0)
+            u = queue.p.. 0)
             ___ v, prqs __ prq_graph.i..:
                 __ u __ prqs:
                     prqs.remove(u)

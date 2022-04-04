@@ -26,13 +26,13 @@ c_ BinarySearchTree(o..
             __ data <= cur_node.data:
                 __ cur_node.left:
                     cur_node = cur_node.left
-                ____:
+                ____
                     cur_node.left = TreeNode(data, N.., N..)
                     inserted = T..
             ____ data > cur_node.data:
                 __ cur_node.right:
                     cur_node = cur_node.right
-                ____:
+                ____
                     cur_node.right = TreeNode(data, N.., N..)
                     inserted = T..
 

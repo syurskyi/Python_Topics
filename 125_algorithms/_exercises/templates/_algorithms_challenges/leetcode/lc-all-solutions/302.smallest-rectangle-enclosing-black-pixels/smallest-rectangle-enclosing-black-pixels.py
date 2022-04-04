@@ -14,7 +14,7 @@ c_ Solution(o..
       mid = i + (j - i) / 2
       __ ("1" __ image[mid]) __ opt:
         j = mid
-      ____:
+      ____
         i = mid + 1
     r.. j
 
@@ -23,6 +23,6 @@ c_ Solution(o..
       mid = i + (j - i) / 2
       __ any([image[k][mid] __ "1" ___ k __ r..(top, bottom)]) __ opt:
         j = mid
-      ____:
+      ____
         i = mid + 1
     r.. j

@@ -21,6 +21,6 @@ c_ Solution(o..
             ___ k __ r..(m
                 __ haystack[i + k] != needle[k]:
                     _____
-            ____:
+            ____
                 r.. i
         r.. -1

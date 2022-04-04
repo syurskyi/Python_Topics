@@ -13,6 +13,6 @@ c_ Solution(o..
       idx = bisect.bisect_left(tail, num)
       __ idx __ l..(tail
         tail.a..(num)
-      ____:
+      ____
         tail[idx] = num
     r.. l..(tail)

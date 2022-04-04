@@ -65,13 +65,13 @@ c_ Solution:
                     r.. F..
                 five -= 1
                 ten += 1
-            ____:  # 20
+            ____  # 20
                 __ ten >= 1 a.. five >= 1:
                     ten -= 1  # ten first
                     five -= 1
                 ____ five >= 3:
                     five -= 3
-                ____:
+                ____
                     r.. F..
 
         r.. T..

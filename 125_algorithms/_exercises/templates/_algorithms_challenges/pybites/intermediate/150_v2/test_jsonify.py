@@ -10,12 +10,12 @@ ___ output
     r.. convert_to_json()
 
 
-___ test_return_type(output
-    ... t..(output) __ s..
+___ test_return_type ?
+    ... t.. ?  __ s..
 
 
-___ test_extracted_data_is_correct(output
-    data = json.loads(output)
+___ test_extracted_data_is_correct ?
+    data = json.loads ?
     ... t..(data) __ l..
     ... l..(data) __ 10
     ___ row __ [{"id": "1", "first_name": "Junie", "last_name": "Kybert",

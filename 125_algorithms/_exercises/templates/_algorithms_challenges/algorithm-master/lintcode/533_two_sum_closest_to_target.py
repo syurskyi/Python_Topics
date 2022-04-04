@@ -18,7 +18,7 @@ c_ Solution:
             __ _sum < target:
                 diff = m..(diff, target - _sum)
                 left += 1
-            ____:
+            ____
                 diff = m..(diff, _sum - target)
                 right -= 1
 

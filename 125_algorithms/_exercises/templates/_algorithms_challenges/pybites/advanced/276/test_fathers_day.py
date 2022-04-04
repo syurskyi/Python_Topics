@@ -93,5 +93,5 @@ ___ test_get_father_days_other_years
 
 ___ test_generate_father_day_planning(capfd
     generate_father_day_planning()
-    actual = ?.r .. 0]
-    ... actual.s.. __ CALENDAR_OUTPUT
+    a.. = ?.r .. 0]
+    ... a...s.. __ CALENDAR_OUTPUT

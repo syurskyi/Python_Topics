@@ -44,28 +44,28 @@ c_ SimpleLinkedListTest(unittest.TestCase
 
     ___ test_can_from_non_empty_list
         sut = LinkedList([3, 4, 5])
-        assertEqual(sut.pop(), 5)
+        assertEqual(sut.p.. ), 5)
         assertEqual(l..(sut), 2)
         assertEqual(sut.head().value(), 4)
 
     ___ test_pop_from_singleton_list_removes_head
         sut = LinkedList([1])
-        assertEqual(sut.pop(), 1)
+        assertEqual(sut.p.. ), 1)
         w__ assertRaisesWithMessage(EmptyListException
             sut.head()
 
     ___ test_error_on_empty_list_pop
         sut = LinkedList()
         w__ assertRaisesWithMessage(EmptyListException
-            sut.pop()
+            sut.p.. )
 
     ___ test_push_and_pop
         sut = LinkedList([1, 2])
         sut.push(3)
         assertEqual(l..(sut), 3)
-        assertEqual(sut.pop(), 3)
-        assertEqual(sut.pop(), 2)
-        assertEqual(sut.pop(), 1)
+        assertEqual(sut.p.. ), 3)
+        assertEqual(sut.p.. ), 2)
+        assertEqual(sut.p.. ), 1)
         assertEqual(l..(sut), 0)
         sut.push(4)
         assertEqual(l..(sut), 1)

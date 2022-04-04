@@ -5,5 +5,5 @@ ___ divisible(num
         r.. T..
     ____ num < 0 a.. num % 100 __ 0:
         r.. T..
-    ____:
+    ____
         r.. F..

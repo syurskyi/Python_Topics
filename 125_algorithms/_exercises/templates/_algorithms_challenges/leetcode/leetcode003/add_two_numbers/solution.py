@@ -17,7 +17,7 @@ c_ Solution:
             __ res __ N..
                 res = ListNode(digit)
                 res_end = res
-            ____:
+            ____
                 res_end.next = ListNode(digit)
                 res_end = res_end.next
             l1 = l1.next
@@ -25,7 +25,7 @@ c_ Solution:
         rem = N..
         __ l1 __ n.. N..
             rem = l1
-        ____:
+        ____
             rem = l2
         w.... rem __ n.. N..
             temp = rem.val + carry
@@ -34,7 +34,7 @@ c_ Solution:
             __ res __ N..
                 res = ListNode(digit)
                 res_end = res
-            ____:
+            ____
                 res_end.next = ListNode(digit)
                 res_end = res_end.next
             rem = rem.next

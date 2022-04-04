@@ -16,11 +16,11 @@ c_ Solution(o..
         __ n.. root: r.. N..
         __ root.val <= p.val:
             r.. inorderSuccessor(root.right, p)
-        ____:
+        ____
             left = inorderSuccessor(root.left, p)
             __ left:
                 r.. left
-            ____:
+            ____
                 r.. root
     
     ___ inorderSuccessorNonRec  root, p
@@ -42,10 +42,10 @@ c_ Solution(o..
                 node = node.left
             ____ node.val < p.val:
                 node = node.right
-            ____:
+            ____
                 _____
         w.... stack a.. stack[-1].val < p.val:
-            stack.pop()
+            stack.p.. )
         __ n.. stack:
             r.. N..
         node = stack[-1]

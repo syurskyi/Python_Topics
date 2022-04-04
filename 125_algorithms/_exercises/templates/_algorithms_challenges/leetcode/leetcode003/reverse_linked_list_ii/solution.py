@@ -24,7 +24,7 @@ c_ Solution:
                 rev = head
                 __ i __ m:
                     rev_end = head
-            ____:  # i > n
+            ____  # i > n
                 _____
             head = next_node
             i += 1
@@ -32,7 +32,7 @@ c_ Solution:
         __ m __ 1:
             res = rev
             res_end = rev_end
-        ____:
+        ____
             res_end.next = rev
         rev_end.next = head
         r.. res

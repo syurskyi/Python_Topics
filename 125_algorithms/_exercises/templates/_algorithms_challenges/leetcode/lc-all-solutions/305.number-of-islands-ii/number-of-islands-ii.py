@@ -16,7 +16,7 @@ c_ UnionFind(o..
       dad[y] = x
     ____ rank[x] < rank[y]:
       dad[x] = y
-    ____:
+    ____
       dad[y] = x
       rank[x] += 1
     r.. T..

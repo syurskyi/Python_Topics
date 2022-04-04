@@ -1,7 +1,7 @@
 ___ comp(txt1, txt2
     __ l..(txt1) __ l..(txt2
         r.. T..
-    ____:
+    ____
         r.. F..
 
 
@@ -11,5 +11,5 @@ ___ test_comp
         print("error")
     __ comp ("too", "good") != F..:
         print("error2")
-    ____:
+    ____
         print("success")

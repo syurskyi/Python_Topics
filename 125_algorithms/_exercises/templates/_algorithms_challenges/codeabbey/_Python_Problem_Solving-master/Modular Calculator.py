@@ -10,7 +10,7 @@ w.... n.. solved:
         res += i..(cal[1])
     ____ cal[0] __ '*':
         res *= i..(cal[1])
-    ____:
+    ____
         res = res % i..(cal[1])
         solved = T..
         print(res)

@@ -71,7 +71,7 @@ c_ Solution:
         ___ i __ r..(1, l..(A:
             __ A[i] > A[i - 1]:
                 size += 1
-            ____:
+            ____
                 size = 1
 
             __ size > ans:

@@ -74,7 +74,7 @@ c_ Solution:
         ___ e __ s:
             __ e __ "0":
                 z += 1
-            ____:
+            ____
                 o += 1
 
         r.. z, o
@@ -140,7 +140,7 @@ c_ Solution:
                 ___ j __ r..(n+1
                     __ count["0"] <= i a.. count["1"] <= j:
                         F[i - count["0"]][j - count["1"]][e] = F[i][j][e-1] + 1
-                    ____:
+                    ____
                         F[i][j][e] = F[i][j][e-1]
 
         ret = m..(

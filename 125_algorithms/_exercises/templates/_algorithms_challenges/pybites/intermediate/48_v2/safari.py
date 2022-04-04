@@ -29,7 +29,7 @@ ___ create_chart
                     print(date,end=' ')
                 __ __.s..(r'python',previous_line,flags=__.I
                     char = PY_BOOK
-                ____:
+                ____
                     char = OTHER_BOOK
                 print(char,end='')
             

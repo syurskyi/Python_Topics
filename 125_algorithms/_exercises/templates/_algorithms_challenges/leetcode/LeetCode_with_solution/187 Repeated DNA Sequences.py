@@ -49,7 +49,7 @@ c_ Solution:
             cur += s[i]
             __ cur __ h a.. cur n.. __ ret:
                 ret.add(cur)
-            ____:
+            ____
                 h.add(cur)
 
         r.. map(decode, ret)

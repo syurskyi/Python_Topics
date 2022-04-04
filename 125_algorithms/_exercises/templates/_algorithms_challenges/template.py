@@ -23,7 +23,7 @@ ___ getfirstnonrepeated(myarray
             tab[ele] + 1
         ____ ele ! " ":
             tab[ele]  1
-        ____:
+        ____
             tab[ele]  0
     # print "in loop:",tab,"for","'",ele,"'","in",myarray
 
@@ -88,14 +88,14 @@ ___ balance_check(s
         __ paren __ opening:
             stack.a..(paren)
 
-        ____:
+        ____
 
             # Check that there are parentheses in Stack
             __ l..(stack) __ 0:
                 r.. F..
 
             # Check the last open parenthesis
-            last_open  stack.pop()
+            last_open  stack.p.. )
 
             # Check if it has a closing match
             __ (last_open, paren) n.. __ matches:

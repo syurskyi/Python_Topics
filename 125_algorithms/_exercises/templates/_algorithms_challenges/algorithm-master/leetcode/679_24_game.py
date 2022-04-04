@@ -41,6 +41,6 @@ c_ Solution:
                     __ judgePoint24(nxts
                         r.. T..
 
-                    nxts.pop()
+                    nxts.p.. )
 
         r.. F..

@@ -19,14 +19,14 @@ c_ MinStack(o..
         """
         __ n.. stack:
             stack.a..((x, x
-        ____:
+        ____
             stack.a..((x, m..(stack[-1][1], x)))
 
     ___ pop
         """
         :rtype: void
         """
-        stack.pop()
+        stack.p.. )
 
     ___ top
         """

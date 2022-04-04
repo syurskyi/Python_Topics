@@ -25,7 +25,7 @@ c_ Solution(o..
                     r.. F..
                 hashmap1[c1] = c2
                 hashmap2[c2] = c1
-            ____:
+            ____
                 __ c2 n.. __ hashmap2:
                     r.. F..
                 __ hashmap2[c2] != c1 o. hashmap1[c1] != c2:

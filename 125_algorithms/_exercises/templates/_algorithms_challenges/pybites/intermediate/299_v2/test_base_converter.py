@@ -25,8 +25,8 @@ ____ base_converter _______ convert
     (483, 13, "2B2"),
     (279, 27, "A9"),
 ])
-___ test_convert(number, base, expected
-    ... convert(number, base) __ expected
+___ test_convert(number, base, e..
+    ... convert(number, base) __ e..
 
 
 ?p__.m__.p.("number, base", [

@@ -22,7 +22,7 @@ c_ Solution(o..
                 freqMap[num+1] -= 1
                 freqMap[num+2] -= 1
                 appendFreqMap[num+3] = appendFreqMap.g.. num+3, 0)+1
-            ____:
+            ____
                 r.. F..
             freqMap[num] -= 1
         r.. T..

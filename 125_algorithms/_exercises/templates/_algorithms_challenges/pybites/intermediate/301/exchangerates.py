@@ -40,7 +40,7 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, da
                 previous_date = previous_date - t..(d.._1)
             dates[current_date] = previous_date
             current_date = current_date + t..(d.._1)
-        ____:
+        ____
             dates[current_date] = current_date
             current_date = current_date + t..(d.._1)
 

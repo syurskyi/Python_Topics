@@ -61,7 +61,7 @@ c_ Solution:
         deck.s..()
         ___ i __ r..(l..(deck) - 1, -1, -1
             __ q:
-                tail = q.pop()
+                tail = q.p.. )
                 q.appendleft(tail)
             q.appendleft(deck[i])
 

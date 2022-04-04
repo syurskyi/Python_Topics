@@ -13,8 +13,8 @@ c_ Solution(o..
         ____ c __ ")":
           stack.a..(")")
           __ l..(stack) >= 2 a.. stack[-2] + stack[-1] __ "()":
-            stack.pop()
-            stack.pop()
+            stack.p.. )
+            stack.p.. )
       r.. l..(stack)
 
     ___ dfs(s, res, cache, length

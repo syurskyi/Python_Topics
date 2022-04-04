@@ -93,23 +93,23 @@ CORRECT_ANSWERS_REVERSE_COMPLEMENT = [
     "input_sequence,expected",
     z..(ACGT_BASES_ONLY, CORRECT_ANSWERS_COMPLEMENTED),
 )
-___ test_acgt_complement(input_sequence, expected
-    ... reverse_complement.complement(input_sequence).u.. __ expected
+___ test_acgt_complement(input_sequence, e..
+    ... reverse_complement.complement(input_sequence).u.. __ e..
 
 
 ?p__.m__.p.(
     "input_sequence,expected",
     z..(MIXED_CASE_DNA, CORRECT_ANSWERS_COMPLEMENTED),
 )
-___ test_mixed_case_complement(input_sequence, expected
-    ... reverse_complement.complement(input_sequence).u.. __ expected
+___ test_mixed_case_complement(input_sequence, e..
+    ... reverse_complement.complement(input_sequence).u.. __ e..
 
 
 ?p__.m__.p.(
     "input_sequence,expected", z..(DIRTY_DNA, CORRECT_ANSWERS_COMPLEMENTED)
 )
-___ test_dirty_complement(input_sequence, expected
-    ... reverse_complement.complement(input_sequence).u.. __ expected
+___ test_dirty_complement(input_sequence, e..
+    ... reverse_complement.complement(input_sequence).u.. __ e..
 
 
 # ############################################################################
@@ -120,22 +120,22 @@ ___ test_dirty_complement(input_sequence, expected
 ?p__.m__.p.(
     "input_sequence,expected", z..(ACGT_BASES_ONLY, CORRECT_ANSWERS_REVERSE)
 )
-___ test_acgt_reverse(input_sequence, expected
-    ... reverse_complement.reverse(input_sequence).u.. __ expected
+___ test_acgt_reverse(input_sequence, e..
+    ... reverse_complement.reverse(input_sequence).u.. __ e..
 
 
 ?p__.m__.p.(
     "input_sequence,expected", z..(MIXED_CASE_DNA, CORRECT_ANSWERS_REVERSE)
 )
-___ test_mixed_case_reverse(input_sequence, expected
-    ... reverse_complement.reverse(input_sequence).u.. __ expected
+___ test_mixed_case_reverse(input_sequence, e..
+    ... reverse_complement.reverse(input_sequence).u.. __ e..
 
 
 ?p__.m__.p.(
     "input_sequence,expected", z..(DIRTY_DNA, CORRECT_ANSWERS_REVERSE)
 )
-___ test_dirty_reverse(input_sequence, expected
-    ... reverse_complement.reverse(input_sequence).u.. __ expected
+___ test_dirty_reverse(input_sequence, e..
+    ... reverse_complement.reverse(input_sequence).u.. __ e..
 
 
 # ############################################################################
@@ -147,10 +147,10 @@ ___ test_dirty_reverse(input_sequence, expected
     "input_sequence,expected",
     z..(ACGT_BASES_ONLY, CORRECT_ANSWERS_REVERSE_COMPLEMENT),
 )
-___ test_acgt_reverse_complement(input_sequence, expected
+___ test_acgt_reverse_complement(input_sequence, e..
     ... (
         reverse_complement.reverse_complement(input_sequence).u..
-        __ expected
+        __ e..
     )
 
 
@@ -158,10 +158,10 @@ ___ test_acgt_reverse_complement(input_sequence, expected
     "input_sequence,expected",
     z..(MIXED_CASE_DNA, CORRECT_ANSWERS_REVERSE_COMPLEMENT),
 )
-___ test_mixed_case_reverse_complement(input_sequence, expected
+___ test_mixed_case_reverse_complement(input_sequence, e..
     ... (
         reverse_complement.reverse_complement(input_sequence).u..
-        __ expected
+        __ e..
     )
 
 
@@ -169,10 +169,10 @@ ___ test_mixed_case_reverse_complement(input_sequence, expected
     "input_sequence,expected",
     z..(DIRTY_DNA, CORRECT_ANSWERS_REVERSE_COMPLEMENT),
 )
-___ test_dirty_reverse_complement(input_sequence, expected
+___ test_dirty_reverse_complement(input_sequence, e..
     ... (
         reverse_complement.reverse_complement(input_sequence).u..
-        __ expected
+        __ e..
     )
 
 
@@ -225,10 +225,10 @@ CORRECT_ANSWER_AMBIGOUS_DNA_REVERSE_COMPLEMENT = [
     "input_sequence,expected",
     z..(AMBIGOUS_DIRTY_DNA, CORRECT_ANSWER_AMBIGOUS_DNA_COMPLEMENT),
 )
-___ test_acgt_complement_new_table(input_sequence, expected
+___ test_acgt_complement_new_table(input_sequence, e..
     ... (
         reverse_complement.complement(input_sequence, COMPLEMENTS_STR).u..
-        __ expected
+        __ e..
     )
 
 
@@ -236,10 +236,10 @@ ___ test_acgt_complement_new_table(input_sequence, expected
     "input_sequence,expected",
     z..(AMBIGOUS_DIRTY_DNA, CORRECT_ANSWER_AMBIGOUS_DNA_REVERSE),
 )
-___ test_mixed_case_reverse_new_table(input_sequence, expected
+___ test_mixed_case_reverse_new_table(input_sequence, e..
     ... (
         reverse_complement.reverse(input_sequence, COMPLEMENTS_STR).u..
-        __ expected
+        __ e..
     )
 
 
@@ -247,10 +247,10 @@ ___ test_mixed_case_reverse_new_table(input_sequence, expected
     "input_sequence,expected",
     z..(AMBIGOUS_DIRTY_DNA, CORRECT_ANSWER_AMBIGOUS_DNA_REVERSE_COMPLEMENT),
 )
-___ test_dirty_reverse_complement_new_table(input_sequence, expected
+___ test_dirty_reverse_complement_new_table(input_sequence, e..
     ... (
         reverse_complement.reverse_complement(
             input_sequence, COMPLEMENTS_STR
         ).u..
-        __ expected
+        __ e..
     )

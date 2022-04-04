@@ -58,7 +58,7 @@ c_ Solution:
         stk.a..(root)
         cur = N..
         w.... stk:
-            cur = stk.pop()
+            cur = stk.p.. )
             post.a..(cur)
             __ cur.left:
                 stk.a..(cur.left)
@@ -66,7 +66,7 @@ c_ Solution:
                 stk.a..(cur.right)
 
         w.... post:
-            cur = post.pop()
+            cur = post.p.. )
             cur.left, cur.right = cur.right, cur.left
 
         r.. cur

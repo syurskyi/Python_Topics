@@ -20,6 +20,6 @@ c_ Solution:
                     t[i][j] = grid[i][j] + t[i][j - 1]
                 ____ j __ 0:
                     t[i][j] = grid[i][j] + t[i - 1][j]
-                ____:
+                ____
                     t[i][j] = grid[i][j] + m..(t[i - 1][j], t[i][j - 1])
         r.. t[n - 1][m - 1]

@@ -25,7 +25,7 @@ ___ blackjack_counter(games
 
         __ total > 21:
             answer.a..('Bust')
-        ____:
+        ____
             answer.a..(s..(total
 
     print(' '.j..(answer

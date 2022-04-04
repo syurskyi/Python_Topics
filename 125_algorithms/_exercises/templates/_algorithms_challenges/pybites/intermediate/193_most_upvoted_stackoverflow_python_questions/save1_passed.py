@@ -25,12 +25,12 @@ ___ top_python_questions(url=cached_so_url
 
         __ vote __ N..
             vote = 0
-        ____:
+        ____
             vote = vote.text
 
         __ view __ N..
             view = 0
-        ____:
+        ____
             view = view.text.s...s.. [0]
 
         q.a..(question)

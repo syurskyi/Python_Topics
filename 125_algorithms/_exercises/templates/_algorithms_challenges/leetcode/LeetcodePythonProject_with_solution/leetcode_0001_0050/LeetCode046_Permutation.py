@@ -21,7 +21,7 @@ c_ Solution(o..
         ___ i, num __ e..(nums
             curr.a..(num)
             dfs(nums[:i]+nums[i+1:], curr, res)
-            curr.pop()
+            curr.p.. )
     
     ___ test
         testCases  [

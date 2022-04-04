@@ -39,7 +39,7 @@ c_ Solution:
         ___ i __ r..(R+C-1
             __ i % 2 __ 1:
                 ret.extend(F[i])
-            ____:
+            ____
                 ret.extend(F[i][::-1])
 
         r.. ret
@@ -70,17 +70,17 @@ c_ Solution:
                     inc = F..
                     __ i < 0 a.. j < C:
                         i = 0
-                    ____:
+                    ____
                         i += 2
                         j = C - 1
-            ____:
+            ____
                 i += 1
                 j -= 1
                 __ i >= R o. j < 0:
                     inc = T..
                     __ j < 0 a.. i < R:
                         j = 0
-                    ____:
+                    ____
                         i = R - 1
                         j += 2
 

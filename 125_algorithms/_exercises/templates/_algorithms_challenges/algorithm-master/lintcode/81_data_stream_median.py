@@ -18,7 +18,7 @@ c_ Solution:
         ___ num __ nums:
             __ num < median:
                 heapq.heappush(maxheap, -num)
-            ____:
+            ____
                 heapq.heappush(minheap, num)
 
             w.... l..(minheap) > l..(maxheap
@@ -29,7 +29,7 @@ c_ Solution:
 
             __ maxheap:
                 median = -maxheap[0]
-            ____:
+            ____
                 median = 0
 
             ans.a..(median)

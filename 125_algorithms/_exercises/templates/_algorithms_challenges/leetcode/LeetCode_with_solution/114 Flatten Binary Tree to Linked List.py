@@ -99,7 +99,7 @@ c_ Solution:
         __ left:
             root.right = left
             left_last.right = right
-        ____:
+        ____
             root.right = right
         r.. root
 
@@ -115,7 +115,7 @@ c_ Solution:
             r.. root
         __ root.right:
             r.. get_last(root.right)
-        ____:
+        ____
             r.. get_last(root.left)
 
 __ _____ __ ____

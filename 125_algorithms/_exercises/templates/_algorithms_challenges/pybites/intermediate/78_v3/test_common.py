@@ -12,28 +12,28 @@ ___ programmers
 
 
 ___ test_common_languages(programmers
-    expected =  'JS', 'Python'
-    actual = common_languages(programmers)
-    ... s..(l..(actual __ expected
+    e.. =  'JS', 'Python'
+    a.. = common_languages(programmers)
+    ... s..(l..(a.. __ e..
 
 
 ___ test_adding_programmer_without_js(programmers
     programmers 'sue'  =  'Scala', 'Python'
-    expected =  'Python'
-    actual = common_languages(programmers)
-    ... l..(actual) __ expected
+    e.. =  'Python'
+    a.. = common_languages(programmers)
+    ... l..(a..) __ e..
 
 
 ___ test_adding_programmer_without_js_nor_python(programmers
     programmers 'fabio'  =  'PHP'
-    expected    # list
-    actual = common_languages(programmers)
-    ... l..(actual) __ expected
+    e..    # list
+    a.. = common_languages(programmers)
+    ... l..(a..) __ e..
 
 
 ___ test_common_languages_adding_new_common_language(programmers
     programmers 'bob' .a..('C++')
     programmers 'sara' .a..('C++')
-    expected =  'C++', 'JS', 'Python'
-    actual = common_languages(programmers)
-    ... s..(l..(actual __ expected
+    e.. =  'C++', 'JS', 'Python'
+    a.. = common_languages(programmers)
+    ... s..(l..(a.. __ e..

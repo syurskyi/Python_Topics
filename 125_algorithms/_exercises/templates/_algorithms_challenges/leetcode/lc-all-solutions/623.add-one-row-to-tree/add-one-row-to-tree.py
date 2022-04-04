@@ -18,7 +18,7 @@ c_ Solution(o..
     dummy.left = root
     stack = [(1, dummy, 0)]
     w.... stack:
-      p, node, h = stack.pop()
+      p, node, h = stack.p.. )
       __ n.. node:
         _____
       __ p __ 1:

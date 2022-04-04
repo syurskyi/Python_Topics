@@ -16,9 +16,9 @@ ___ test_dict2nt
 
 ___ test_nt2json
     output = nt2json(nt)
-    ... t..(output) __ s..
+    ... t.. ?  __ s..
 
-    data = json.loads(output)
+    data = json.loads ?
     ... data 'name'  __ 'PyBites'
     ... data 'founders' [0] __ 'Julian'
     ... data 'tags' [0] __ 'Python'

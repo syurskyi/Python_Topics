@@ -19,7 +19,7 @@ c_ Solution(o..
             m = (s+e)/2
             __ A[m] >= n-m:
                 e = m
-            ____:
+            ____
                 s = m+1
 
         r.. n-s

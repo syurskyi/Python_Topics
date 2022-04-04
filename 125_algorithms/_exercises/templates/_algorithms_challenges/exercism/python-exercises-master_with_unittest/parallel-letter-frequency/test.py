@@ -7,37 +7,37 @@ ____ parallel_letter_frequency _______ calculate
 
 c_ ParallelLetterFrequencyTest(unittest.TestCase
     ___ test_one_letter
-        actual  calculate( 'a' )
-        expected  {'a': 1}
-        assertDictEqual(actual, expected)
+        a..  calculate( 'a' )
+        e..  {'a': 1}
+        assertDictEqual(a.., e..)
 
     ___ test_case_insensitivity
-        actual  calculate( 'aA' )
-        expected  {'a': 2}
-        assertDictEqual(actual, expected)
+        a..  calculate( 'aA' )
+        e..  {'a': 2}
+        assertDictEqual(a.., e..)
 
     ___ test_numbers
-        actual  calculate( '012', '345', '6789' )
-        expected    # dict
-        assertDictEqual(actual, expected)
+        a..  calculate( '012', '345', '6789' )
+        e..    # dict
+        assertDictEqual(a.., e..)
 
     ___ test_punctuations
-        actual  calculate( '[]\;,', './{}|', ':"<>?' )
-        expected    # dict
-        assertDictEqual(actual, expected)
+        a..  calculate( '[]\;,', './{}|', ':"<>?' )
+        e..    # dict
+        assertDictEqual(a.., e..)
 
     ___ test_whitespaces
-        actual  calculate( '  ', '\t ', '\n\n' )
-        expected    # dict
-        assertDictEqual(actual, expected)
+        a..  calculate( '  ', '\t ', '\n\n' )
+        e..    # dict
+        assertDictEqual(a.., e..)
 
     ___ test_repeated_string_with_known_frequencies
         letter_frequency  3
         text_input  'abc\n' * letter_frequency
-        actual  calculate(text_input.s..('\n'
-        expected  {'a': letter_frequency, 'b': letter_frequency,
+        a..  calculate(text_input.s..('\n'
+        e..  {'a': letter_frequency, 'b': letter_frequency,
                     'c': letter_frequency}
-        assertDictEqual(actual, expected)
+        assertDictEqual(a.., e..)
 
     ___ test_multiline_text
         text_input  "3 Quotes from Excerism Homepage:\n" + \
@@ -52,9 +52,9 @@ c_ ParallelLetterFrequencyTest(unittest.TestCase
                      "slapdash explosion of complexity is an\n" + \
                      "expensive yak shave waiting to\n" + \
                      "happen."
-        actual  calculate(text_input.s..('\n'
-        expected  C..([x ___ x __ text_input.l.. __ x.i..])
-        assertDictEqual(actual, expected)
+        a..  calculate(text_input.s..('\n'
+        e..  C..([x ___ x __ text_input.l.. __ x.i..])
+        assertDictEqual(a.., e..)
 
 
 __ _____ __ _____

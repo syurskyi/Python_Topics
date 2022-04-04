@@ -12,7 +12,7 @@ ___ _divide_line(line: s.., col_width: i.. = COL_WIDTH
         __ l..(line2) > col_width:
             result.a..(line)
             line = word
-        ____:
+        ____
             line = line2
     result.a..(line)
     r.. result

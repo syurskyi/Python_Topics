@@ -26,7 +26,7 @@ c_ Solution(o..
             __ temp[1] < heap[0][0]:
                 res.a..(Interval(temp[1], heap[0][0]
                 temp = heapq.heappop(heap)
-            ____:
+            ____
                 __ temp[1] < heap[0][1]:
                     temp = heap[0]
                 heapq.heappop(heap) 

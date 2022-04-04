@@ -25,7 +25,7 @@ c_ Solution(o..
                 r.. mid
             ____ target <= nums[mid]:
                 right = mid
-            ____:
+            ____
                 left = mid
         __ nums[left] < target < nums[right]:
             r.. left + 1

@@ -19,12 +19,12 @@ c_ Solution(o..
         queue = [(0, root)]
         minLevel, maxLevel = 0, 0
         w.... queue:
-            level, node = queue.pop(0)
+            level, node = queue.p.. 0)
             maxLevel = m..(maxLevel, level)
             minLevel = m..(minLevel, level)
             __ level n.. __ hashmap:
                 hashmap[level] = [node.val]
-            ____:
+            ____
                 hashmap[level].a..(node.val)
             __ node.left:
                 queue.a..((level-1, node.left

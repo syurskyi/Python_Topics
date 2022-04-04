@@ -50,7 +50,7 @@ c_ Solution:
                 # A[i] <= B[i-1] and B[i] <=A[i-1], cannot flip
                 F[0][i] = F[0][i-1]
                 F[1][i] = F[1][i-1] + 1
-            ____:
+            ____
                 # has to swap, flip 
                 F[0][i] = F[1][i-1]
                 F[1][i] = F[0][i-1] + 1
@@ -73,7 +73,7 @@ c_ Solution:
                 t += 1
                 __ t < i + 1 - t:
                     A[i], B[i] = B[i], A[i]
-                ____:
+                ____
                     t = i + 1 - t
 
         r.. t

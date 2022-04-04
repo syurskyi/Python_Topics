@@ -18,11 +18,11 @@ c_ Solution(o..
             __ nums[l] < nums[mid]:
                 __ nums[l] < target < nums[mid]:
                     r  mid-1
-                ____:
+                ____
                     l  mid+1
-            ____:
+            ____
                 __ nums[mid] < target < nums[r]:
                     l  mid+1
-                ____:
+                ____
                     r  mid-1
         r.. -1

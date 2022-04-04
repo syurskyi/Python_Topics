@@ -30,7 +30,7 @@ c_ AllOne(o..
                 tail = nextBucket
                 bucket.next = nextBucket
                 keyBucketMap[key] = nextBucket
-            ____:
+            ____
                 newBucket = Bucket(bucket.value+1)
                 newBucket.keySet.add(key)
                 nextBucket.prev = newBucket
@@ -45,21 +45,21 @@ c_ AllOne(o..
                     nextBucket = bucket.next
                     prevBucket.next = bucket.next
                     nextBucket.prev = prevBucket
-                ____:
+                ____
                     nextBucket = bucket.next
                     nextBucket.prev = N..
                     head = nextBucket
-        ____:
+        ____
             __ head:
                 __ head.value __ 1:
                     head.keySet.add(key)
-                ____:
+                ____
                     bucket = Bucket(1)
                     bucket.keySet.add(key)
                     head.prev = bucket
                     bucket.next = head
                     head = bucket
-            ____:
+            ____
                 bucket= Bucket(1)
                 bucket.keySet.add(key)
                 head = bucket
@@ -74,7 +74,7 @@ c_ AllOne(o..
                 __ prevBucket.value+1 __ bucket.value:
                     prevBucket.keySet.add(key)
                     keyBucketMap[key] = prevBucket
-                ____:
+                ____
                     newBucket = Bucket(bucket.value-1)
                     newBucket.keySet.add(key)
                     newBucket.prev = prevBucket
@@ -82,10 +82,10 @@ c_ AllOne(o..
                     prevBucket.next = newBucket
                     bucket.prev = newBucket
                     keyBucketMap[key] = newBucket
-            ____:
+            ____
                 __ bucket.value __ 1:
                     del keyBucketMap[key]
-                ____:
+                ____
                     newBucket = Bucket(bucket.value-1)
                     newBucket.keySet.add(key)
                     newBucket.next = bucket
@@ -105,7 +105,7 @@ c_ AllOne(o..
                     bucket.next.prev = N..
                     head = bucket.next
                     bucket.next = N..
-                ____:
+                ____
                     bucket.next.prev = bucket.prev
                     bucket.prev.next = bucket.next
                     bucket.prev = N..
@@ -113,17 +113,17 @@ c_ AllOne(o..
         
     ___ getMax
         __ tail:
-            val = tail.keySet.pop()
+            val = tail.keySet.p.. )
             tail.keySet.add(val)
             r.. val
-        ____:
+        ____
             r.. ''
     
     ___ getMin
         __ head:
-            val = head.keySet.pop()
+            val = head.keySet.p.. )
             head.keySet.add(val)
             r.. val
-        ____:
+        ____
             r.. ''
     

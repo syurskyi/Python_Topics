@@ -11,7 +11,7 @@ c_ Solution(o..
     stack = c...d..([])
     ___ i __ r..(0, k
       w.... stack a.. nums[stack[-1]] < nums[i]:
-        stack.pop()
+        stack.p.. )
       stack.a..(i)
     ans[0] = nums[stack[0]]
     idx = 0
@@ -20,7 +20,7 @@ c_ Solution(o..
       __ stack a.. stack[0] __ i - k:
         stack.popleft()
       w.... stack a.. nums[stack[-1]] < nums[i]:
-        stack.pop()
+        stack.p.. )
       stack.a..(i)
       ans[idx] = nums[stack[0]]
 

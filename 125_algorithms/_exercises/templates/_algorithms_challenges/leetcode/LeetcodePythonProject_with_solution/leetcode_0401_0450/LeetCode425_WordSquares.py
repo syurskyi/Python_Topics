@@ -31,10 +31,10 @@ c_ Solution(o..
                 ___ i __ r..(l..(elems:
                     prefix += elems[i][l..(elems)]
                 candidates = wordsWithPrefix(prefix)
-            ____:
+            ____
                 candidates    # list
             dfs(words, elems, result, candidates)
-            elems.pop()
+            elems.p.. )
     
     ___ buildTrie  words
         root.candidates = words
@@ -43,7 +43,7 @@ c_ Solution(o..
             ___ c __ word:
                 __ c __ children:
                     node = children[c]
-                ____:
+                ____
                     node = TrieNode(c)
                     children[c] = node
                 node.candidates.add(word)
@@ -57,9 +57,9 @@ c_ Solution(o..
                 node = children[c]
                 __ i __ l..(prefix)-1:
                     r.. l..(node.candidates)
-                ____:
+                ____
                     children = node.children
-            ____:
+            ____
                 r.. []
         r.. []
     

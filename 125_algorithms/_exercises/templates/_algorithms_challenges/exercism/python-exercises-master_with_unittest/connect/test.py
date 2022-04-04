@@ -107,11 +107,11 @@ c_ ConnectTest(unittest.TestCase
         ___ testcase __ testcases:
             game = connect.ConnectGame(testcase["board"])
             winner = game.get_winner()
-            expected = testcase["winner"] __ testcase["winner"] ____ "None"
+            e.. = testcase["winner"] __ testcase["winner"] ____ "None"
             got = winner __ winner ____ "None"
             assertEqual(winner, testcase["winner"],
                              "Test failed: %s, expected winner: %s, got: %s"
-                             % (testcase["description"], expected, got
+                             % (testcase["description"], e.., got
 
 
 __ _____ __ _____

@@ -23,7 +23,7 @@ c_ Solution:
             __ nums[i] != pre+1:
                 __ pre != bgn:
                     ret.a..("%d->%d"%(bgn, pre
-                ____:
+                ____
                     ret.a..("%d"%bgn)
                 bgn = nums[i]
 
@@ -32,7 +32,7 @@ c_ Solution:
         # clean up
         __ pre != bgn:
             ret.a..("%d->%d"%(bgn, pre
-        ____:
+        ____
             ret.a..("%d"%bgn)
 
         r.. ret

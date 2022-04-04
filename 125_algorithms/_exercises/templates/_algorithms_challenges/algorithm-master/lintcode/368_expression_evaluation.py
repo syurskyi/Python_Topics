@@ -67,7 +67,7 @@ c_ Solution:
                 """
                 w.... stack a.. stack[-1] != '(':
                     res.a..(stack.pop
-                stack.pop()  # evict '('
+                stack.p.. )  # evict '('
 
         """
         output the remaining in `stack`
@@ -92,8 +92,8 @@ c_ Solution:
             the first poped one is base,
             otherwise there is error occurred when '/' and '-'
             """
-            b = stack.pop()
-            a = stack.pop()
+            b = stack.p.. )
+            a = stack.p.. )
 
             __ char __ '+':
                 stack.a..(a + b)

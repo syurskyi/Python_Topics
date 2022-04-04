@@ -69,7 +69,7 @@ c_ Solution:
                     i += 1
                     ret += 1
                 j += 1
-            ____:
+            ____
                 w.... i <= j a.. cur_sum > S:
                     cur_sum -= A[i]
                     i += 1

@@ -62,10 +62,10 @@ c_ Solution(o..
             sumVal = 0
             size = l..(queue)
             ___ _ __ r..(size
-                ni = queue.pop(0)
+                ni = queue.p.. 0)
                 __ ni.isInteger
                     sumVal += ni.getInteger()
-                ____:
+                ____
                     ___ ni0 __ ni.getList
                         queue.a..(ni0)
             prev += sumVal

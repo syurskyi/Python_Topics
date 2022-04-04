@@ -6,7 +6,7 @@ ___ is_anagram(word1, word2
    word2 = word2.r..(" ", "").l..
    __ s..(word1) __ s..(word2
       r.. T..
-   ____:
+   ____
       r.. F..
 
 

@@ -7,29 +7,29 @@ ____ house _______ rhyme, verse
 
 c_ VerseTest(unittest.TestCase
     ___ test_verse_0
-        expected = 'This is the house that Jack built.'
-        assertEqual(verse(0), expected)
+        e.. = 'This is the house that Jack built.'
+        assertEqual(verse(0), e..)
 
     ___ test_verse_1
-        expected = 'This is the malt\n'\
+        e.. = 'This is the malt\n'\
                    'that lay in the house that Jack built.'
-        assertEqual(verse(1), expected)
+        assertEqual(verse(1), e..)
 
     ___ test_verse_2
-        expected = 'This is the rat\n'\
+        e.. = 'This is the rat\n'\
                    'that ate the malt\n'\
                    'that lay in the house that Jack built.'
-        assertEqual(verse(2), expected)
+        assertEqual(verse(2), e..)
 
     ___ test_verse_3
-        expected = 'This is the cat\n'\
+        e.. = 'This is the cat\n'\
                    'that killed the rat\n'\
                    'that ate the malt\n'\
                    'that lay in the house that Jack built.'
-        assertEqual(verse(3), expected)
+        assertEqual(verse(3), e..)
 
     ___ test_verse_11
-        expected = 'This is the horse and the hound and the horn\n'\
+        e.. = 'This is the horse and the hound and the horn\n'\
                    'that belonged to the farmer sowing his corn\n'\
                    'that kept the rooster that crowed in the morn\n'\
                    'that woke the priest all shaven and shorn\n'\
@@ -41,10 +41,10 @@ c_ VerseTest(unittest.TestCase
                    'that killed the rat\n'\
                    'that ate the malt\n'\
                    'that lay in the house that Jack built.'
-        assertEqual(verse(11), expected)
+        assertEqual(verse(11), e..)
 
     ___ test_rhyme
-        expected = 'This is the house that Jack built.\n\n'\
+        e.. = 'This is the house that Jack built.\n\n'\
                    'This is the malt\n'\
                    'that lay in the house that Jack built.\n\n'\
                    'This is the rat\n'\
@@ -122,7 +122,7 @@ c_ VerseTest(unittest.TestCase
                    'that killed the rat\n'\
                    'that ate the malt\n'\
                    'that lay in the house that Jack built.'
-        assertEqual(rhyme(), expected)
+        assertEqual(rhyme(), e..)
 
 
 __ _____ __ _____

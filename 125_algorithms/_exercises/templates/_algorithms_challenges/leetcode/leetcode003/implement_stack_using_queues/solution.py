@@ -58,8 +58,8 @@ c_ Stack(o..
         :rtype: nothing
         """
         w.... l..(queue1) > 1:
-            queue2.a..(queue1.pop(0
-        res = queue1.pop(0)
+            queue2.a..(queue1.p.. 0
+        res = queue1.p.. 0)
         queue1, queue2 = queue2, queue1
         r.. res
 

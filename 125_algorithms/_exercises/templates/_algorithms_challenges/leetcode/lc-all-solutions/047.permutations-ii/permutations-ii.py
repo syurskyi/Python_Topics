@@ -20,7 +20,7 @@ c_ Solution(o..
         visited |= {i}
         p...a..(nums[i])
         dfs(nums, res, p.., visited)
-        p...pop()
+        p...p.. )
         visited -= {i}
 
     dfs(nums, res, [], s..

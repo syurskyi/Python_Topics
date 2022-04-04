@@ -11,7 +11,7 @@ ___ positive_divide(numerator, denominator
         r.. 0
     ______ T..:
         r..
-    ____:
+    ____
         r.. result
 
 

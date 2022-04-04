@@ -20,13 +20,13 @@ c_ RestAPITest(unittest.TestCase
             'user': 'Adam'
         })
         response = api.post('/add', payload)
-        expected = {
+        e.. = {
             'name': 'Adam',
             'owes': {},
             'owed_by': {},
             'balance': 0
         }
-        assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), e..)
 
     ___ test_get_single_user
         database = {
@@ -50,7 +50,7 @@ c_ RestAPITest(unittest.TestCase
             'users':  'Bob'
         })
         response = api.g.. '/users', payload)
-        expected = {
+        e.. = {
             'users': [
                 {
                     'name': 'Bob',
@@ -60,7 +60,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), e..)
 
     ___ test_iou_both_users_have_0_balance
         database = {
@@ -86,7 +86,7 @@ c_ RestAPITest(unittest.TestCase
             'amount': 3
         })
         response = api.post('/iou', payload)
-        expected = {
+        e.. = {
             'users': [
                 {
                     'name': 'Adam',
@@ -106,7 +106,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), e..)
 
     ___ test_borrower_has_negative_balance
         database = {
@@ -142,7 +142,7 @@ c_ RestAPITest(unittest.TestCase
             'amount': 3
         })
         response = api.post('/iou', payload)
-        expected = {
+        e.. = {
             'users': [
                 {
                     'name': 'Adam',
@@ -163,7 +163,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), e..)
 
     ___ test_lender_has_negative_balance
         database = {
@@ -199,7 +199,7 @@ c_ RestAPITest(unittest.TestCase
             'amount': 3
         })
         response = api.post('/iou', payload)
-        expected = {
+        e.. = {
             'users': [
                 {
                     'name': 'Adam',
@@ -221,7 +221,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), e..)
 
     ___ test_lender_owes_borrower
         database = {
@@ -251,7 +251,7 @@ c_ RestAPITest(unittest.TestCase
             'amount': 2
         })
         response = api.post('/iou', payload)
-        expected = {
+        e.. = {
             'users': [
                 {
                     "name": "Adam",
@@ -271,7 +271,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), e..)
 
     ___ test_lender_owes_borrower_less_than_new_loan
         database = {
@@ -301,7 +301,7 @@ c_ RestAPITest(unittest.TestCase
             'amount': 4.0
         })
         response = api.post('/iou', payload)
-        expected = {
+        e.. = {
             'users': [
                 {
                     "name": "Adam",
@@ -323,7 +323,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), e..)
 
     ___ test_lender_owes_borrower_same_as_new_loan
         database = {
@@ -353,7 +353,7 @@ c_ RestAPITest(unittest.TestCase
             'amount': 3.0
         })
         response = api.post('/iou', payload)
-        expected = {
+        e.. = {
             'users': [
                 {
                     "name": "Adam",
@@ -373,7 +373,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), e..)
 
 
 __ _____ __ _____

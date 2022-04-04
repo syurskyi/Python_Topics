@@ -18,7 +18,7 @@ c_ Solution:
             __ a.val < b.val:
                 tail.next = ListNode(a.val)
                 a = a.next
-            ____:
+            ____
                 tail.next = ListNode(b.val)
                 b = b.next
             tail = tail.next

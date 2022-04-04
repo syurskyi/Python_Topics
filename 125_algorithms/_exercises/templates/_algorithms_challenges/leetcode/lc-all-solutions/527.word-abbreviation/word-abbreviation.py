@@ -22,8 +22,8 @@ c_ Solution(o..
               nabbr = getAbbr(word, prefix)
               word2abbr[word] = nabbr
               _____
-      ____:
-        word2abbr[words.pop()] = abbr
+      ____
+        word2abbr[words.p.. )] = abbr
     r.. [word2abbr[word] ___ word __ d..]
 
   ___ checkUnique  prefix, words

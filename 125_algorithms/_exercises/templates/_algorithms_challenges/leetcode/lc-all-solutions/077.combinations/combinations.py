@@ -4,7 +4,7 @@ c_ Solution(o..
       r.. [[i] ___ i __ r..(1, n + 1)]
     ____ k __ n:
       r.. [[i ___ i __ r..(1, n + 1)]]
-    ____:
+    ____
       rs    # list
       rs += combine(n - 1, k)
       part = combine(n - 1, k - 1)

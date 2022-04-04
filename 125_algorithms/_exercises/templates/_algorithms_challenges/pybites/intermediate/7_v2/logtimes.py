@@ -48,7 +48,7 @@ ___ time_between_shutdowns(loglines
         __ 'Shutdown initiated' __ line:
             __ n.. first:
                 first = convert_to_datetime(line)
-            ____:
+            ____
                 last = convert_to_datetime(line)
 
     r.. last - first

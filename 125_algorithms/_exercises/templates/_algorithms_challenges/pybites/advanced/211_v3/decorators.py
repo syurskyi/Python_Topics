@@ -20,7 +20,7 @@ ___ retry(func
             ______ E.. __ exc:
                 print(exc)
                 _____
-            ____:
+            ____
                 r..
         r.. MaxRetriesException()
 

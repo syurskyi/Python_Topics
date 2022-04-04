@@ -10,7 +10,7 @@ c_ Solution(o..
     ___ plot __ flowerbed:
       __ plot __ 0:
         cnt += 1
-      ____:
+      ____
         ans += abs(cnt - 1) / 2
         cnt = 0
     r.. ans + cnt / 2 >= n

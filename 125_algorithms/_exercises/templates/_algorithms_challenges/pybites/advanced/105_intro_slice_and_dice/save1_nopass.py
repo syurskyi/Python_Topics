@@ -19,12 +19,12 @@ keep enjoying our bites!
 ___ slice_and_dice(text: s.. = text) __ l..:
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
-    strip = text.strip(" . !")
+    s.. = text.s..(" . !")
     s.. = text.s..("\n")
     ___ words __ text:
-        strip, s..
+        s.., s..
     ___ firstword __ text:
         __ firstword.isl..
             firstword.s..
-    results = [""].strip.s..
+    results = [""].s...s..
     r.. results

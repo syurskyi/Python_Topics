@@ -31,7 +31,7 @@ c_ Solution(o..
         stack2    # list
         stack1.a..(root)
         w.... stack1:
-            root = stack1.pop()
+            root = stack1.p.. )
             stack2.a..(root.val)
             __ root.left __ n.. N..
                 stack1.a..(root.left)

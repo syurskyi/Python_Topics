@@ -15,7 +15,7 @@ c_ IntList(l..
         v = s..(self)
         __ l..(v) % 2 __ 1:
             r.. v[l..(v)//2]
-        ____:
+        ____
             r.. (v[l..(v)//2 -1] + v[l..(v)//2])/2
 
 
@@ -29,9 +29,9 @@ c_ IntList(l..
         ____ isi..(values,l..
             __ a..(t..(v) __ (i..,f__,Decimal) ___ v __ values
                 self += values
-            ____:
+            ____
                 r.. T..
-        ____:
+        ____
             r.. T..
 
 
@@ -41,9 +41,9 @@ c_ IntList(l..
                 ___ v __ value:
                     a..(v)
                 r.. self
-            ____:
+            ____
                 r.. T..
-        ____:
+        ____
             r.. T..
 
 
@@ -56,9 +56,9 @@ c_ IntList(l..
         __ isi..(value,l..
             __ a..(t..(v) __ i.. ___ v __ value
                 r.. super().__add__(value)
-            ____:
+            ____
                 r.. T..
-        ____:
+        ____
             r.. T..
 
 

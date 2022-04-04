@@ -41,7 +41,7 @@ c_ FileSystem(o..
       __ name n.. __ p.childs:
         __ isAutoCreate:
           p.childs[name] = FileNode(name)
-        ____:
+        ____
           r.. N..
       p = p.childs[name]
     r.. p

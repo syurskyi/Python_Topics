@@ -23,8 +23,8 @@ ___ test_get_pycon_events_number(pycon_events
 
 
 ___ test_get_pycon_events_cities(pycon_events
-    actual = {event.city ___ event __ pycon_events}
-    expected = {
+    a.. = {event.city ___ event __ pycon_events}
+    e.. = {
         "Accra", "Belgrade", "Berlin",
         "Bratislava", "Cardiff", "Cleveland, OH", "Dublin",
         "Florence", "Hyderabad", "Jakarta", "Johannesburg",
@@ -32,7 +32,7 @@ ___ test_get_pycon_events_cities(pycon_events
         "Ostrava", "Puerto Vallarta", "Sydney",
         "Taipei", "Toronto",
     }
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_get_pycon_events_dates(pycon_events
@@ -45,19 +45,19 @@ ___ test_get_pycon_events_dates(pycon_events
 
 
 ___ test_filter_pycons_number(filtered_pycons
-    actual = l..(filtered_pycons)
-    expected = 9
-    ... actual __ expected
+    a.. = l..(filtered_pycons)
+    e.. = 9
+    ... a.. __ e..
 
 
 ___ test_filter_pycons_cities(filtered_pycons
-    actual = {event.city ___ event __ filtered_pycons}
-    expected = {
+    a.. = {event.city ___ event __ filtered_pycons}
+    e.. = {
         "Belgrade", "Berlin", "Bratislava", "Cardiff",
         "Dublin", "Florence", "Munich", "Odessa",
         "Ostrava",
     }
-    ... actual __ expected
+    ... a.. __ e..
 
 
 ___ test_filter_pycons_dates(filtered_pycons
@@ -72,12 +72,12 @@ ___ test_filter_pycons_dates(filtered_pycons
 
 
 ___ test_filter_pycons_year(filtered_pycons
-    actual = {pycon.start_date.year ___ pycon __ filtered_pycons}
-    expected = {2019}
-    ... actual __ expected
+    a.. = {pycon.start_date.year ___ pycon __ filtered_pycons}
+    e.. = {2019}
+    ... a.. __ e..
 
 
 ___ test_filter_pycons_continent(filtered_pycons
-    actual = {get_continent(pycon.country) ___ pycon __ filtered_pycons}
-    expected = {"Europe"}
-    ... actual __ expected
+    a.. = {get_continent(pycon.country) ___ pycon __ filtered_pycons}
+    e.. = {"Europe"}
+    ... a.. __ e..

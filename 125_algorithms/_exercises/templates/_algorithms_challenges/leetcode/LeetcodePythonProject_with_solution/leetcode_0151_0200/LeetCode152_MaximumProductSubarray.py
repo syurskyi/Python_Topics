@@ -18,7 +18,7 @@ c_ Solution(o..
             __ num > 0:
                 maxArr[i] = m..(maxArr[i-1]*num, num)
                 minArr[i] = m..(minArr[i-1]*num, num)
-            ____:
+            ____
                 maxArr[i] = m..(minArr[i-1]*num, num)
                 minArr[i] = m..(maxArr[i-1]*num, num)
             result = m..(result, maxArr[i])

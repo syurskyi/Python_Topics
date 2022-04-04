@@ -16,7 +16,7 @@ c_ Solution:
 
             __ H[left] < H[right]:
                 left += 1
-            ____:
+            ____
                 right -= 1
 
         r.. ans

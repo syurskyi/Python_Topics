@@ -69,12 +69,12 @@ c_ Codec:
             __ val < root.val:
                 __ n.. root.left:
                     root.left = TreeNode(val)
-                ____:
+                ____
                     insert(root.left, val)
-            ____:
+            ____
                 __ n.. root.right:
                     root.right = TreeNode(val)
-                ____:
+                ____
                     insert(root.right, val)
 
         ___ a __ lst[1:]:

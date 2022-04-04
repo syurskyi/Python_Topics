@@ -7,6 +7,6 @@ ___ binary_search(search_list, value
             high = middle - 1
         ____ search_list[middle] < value:
             low = middle + 1
-        ____:
+        ____
             r.. middle
     r.. V...("Value not found.")

@@ -31,7 +31,7 @@ c_ Solution:
         ___ t, is_start __ time:
             __ is_start:
                 cnt += 1
-            ____:
+            ____
                 cnt -= 1
 
             __ cnt > ans:

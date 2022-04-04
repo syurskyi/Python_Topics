@@ -18,7 +18,7 @@ c_ Solution:
                 cs = 0
         __ ts < 0:
             r.. -1
-        ____:
+        ____
             r.. res
 
     ___ canCompleteCircuit2  gas, cost

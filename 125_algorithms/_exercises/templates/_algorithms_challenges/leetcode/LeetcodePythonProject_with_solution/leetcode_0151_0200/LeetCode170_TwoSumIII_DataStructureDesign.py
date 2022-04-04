@@ -18,7 +18,7 @@ c_ TwoSum(o..
         """
         __ number __ elements:
             elements[number] += 1
-        ____:
+        ____
             elements[number] = 1
 
     ___ find  value

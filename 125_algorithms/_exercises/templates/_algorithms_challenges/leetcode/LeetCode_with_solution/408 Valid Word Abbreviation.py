@@ -21,7 +21,7 @@ c_ Solution(o..
                 num = i..(abbr[a:e])
                 a = e
                 w += num
-            ____:
+            ____
                 __ word[w] != abbr[a]:
                     r.. F..
 

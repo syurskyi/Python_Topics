@@ -14,7 +14,7 @@ c_ Solution(o..
         __ cnt < 2:
           nums[j] = nums[i]
           j += 1
-      ____:
+      ____
         nums[j] = nums[i]
         j += 1
         cnt = 0

@@ -45,7 +45,7 @@ ___ measure(bucket_one, bucket_two, goal, start_bucket
                     toVisit.a..((consolidate(buckets, i), nc
         __ n.. any(toVisit
             r.. V...('No more moves!')
-        buckets, count = toVisit.pop(0)
+        buckets, count = toVisit.p.. 0)
 
     goalIndex = buckets.i.. goal)
     goalBucket =  'one', 'two' [goalIndex]

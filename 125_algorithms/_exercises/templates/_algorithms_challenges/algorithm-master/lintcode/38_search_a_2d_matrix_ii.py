@@ -66,7 +66,7 @@ c_ Solution:
                 y += 1
             ____ matrix[x][y] > target:
                 x -= 1
-            ____:
+            ____
                 ans += 1
                 x -= 1
                 y += 1

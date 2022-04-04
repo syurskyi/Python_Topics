@@ -12,8 +12,8 @@ c_ Solution:
     ___ buildTree  preorder, inorder
         __ l..(inorder) __ 0:
             r.. N..
-        ____:
-            root_val = preorder.pop(0)
+        ____
+            root_val = preorder.p.. 0)
             root_index = inorder.i.. root_val)
             left_tree = buildTree(preorder, inorder[:root_index])
             right_tree = buildTree(preorder, inorder[root_index + 1:])

@@ -15,7 +15,7 @@ c_ Solution(o..
         ___ i, c __ e..(p
             __ i > 0 a.. (o..(c)-o..(p[i-1])__1 o. (c__'a' a.. p[i-1]__'z':
                 maxCurrLen += 1
-            ____:
+            ____
                 maxCurrLen = 1
             count[o..(c)-o..('a')] = m..(count[o..(c)-o..('a')], maxCurrLen)
         r.. s..(count)

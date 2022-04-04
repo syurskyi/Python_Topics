@@ -28,12 +28,12 @@ c_ Solution(o..
                 __ last __ n.. N..
                     # Remove `current` node and `last` node is not changed
                     last.next = current.next
-                ____:
+                ____
                     # `current` is the head node
                     # Remove the head node and `last` node is still None
                     head = current.next
                     last = N..
-            ____:
+            ____
                 last = current
             current = current.next
         r.. head

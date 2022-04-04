@@ -12,7 +12,7 @@ c_ Solution:
             mid = left + (right - left) // 2
             __ A[mid] < target:
                 left = mid
-            ____:
+            ____
                 right = mid
 
         __ A[left] __ target:

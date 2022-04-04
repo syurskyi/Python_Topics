@@ -16,10 +16,10 @@ c_ Solution:
                 r.. m
             ____ A[m] > target:
                 r = m
-            ____:
+            ____
                 l = m
 
         __ A[r] - target > target - A[l]:
             r.. l
-        ____:
+        ____
             r.. r

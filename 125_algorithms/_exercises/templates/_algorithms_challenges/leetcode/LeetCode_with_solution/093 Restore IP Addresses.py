@@ -64,7 +64,7 @@ c_ Solution:
             # condition check
             __ l..(cur) < 4 a.. is_valid(new_seg
                 dfs(seq[i:], cur + [new_seg], result)
-            ____:
+            ____
                 r..
 
     ___ is_valid  s

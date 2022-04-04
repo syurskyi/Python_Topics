@@ -31,7 +31,7 @@ ___ my_join_lists(lst_of_lst: L..[L..[s..]], sep: s..) __ Union[L..[s..], N..]:
     ___ inner_list __ lst_of_lst:
         __ first:
             first = F..
-        ____:
+        ____
             result.a..(sep)
         ___ element __ inner_list:
             result.a..(element)

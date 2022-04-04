@@ -6,6 +6,6 @@ c_ Solution:
         ___ n __ s..(nums
             __ n __ res:
                 r.. T..
-            ____:
+            ____
                 res = n
         r.. F..

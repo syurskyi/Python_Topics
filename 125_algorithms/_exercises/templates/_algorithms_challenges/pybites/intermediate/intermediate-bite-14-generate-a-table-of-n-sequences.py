@@ -37,7 +37,7 @@ ___ my_generate_table(*args
         ___ t __ i:
             __ s __ "":
                 s = s..(t)
-            ____:
+            ____
                 s = s + " | " + s..(t)
         l.a..(s)
     r.. l

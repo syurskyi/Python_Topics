@@ -42,7 +42,7 @@ c_ Say:
 
         __ num __ 0:
             r.. 'zero'
-        ____:
+        ____
             r.. ' '.j..([convert_chunk_to_word(chunk, index)
                              ___ index, chunk
                              __ e..(get_chunks(num]).rstrip()
@@ -61,7 +61,7 @@ c_ Say:
         __ 10 < left_over < 20:
             tens = convert_num_to_word(left_over)
             ones = N..
-        ____:
+        ____
             tens = convert_num_to_word(tens_digit * 10)
             ones = convert_num_to_word(ones_digit)
 

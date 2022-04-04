@@ -33,7 +33,7 @@ c_ Solution(o..
         w.... node:
             __ node.r__:
                 newNode.r__ = hashmap[node.r__]
-            ____:
+            ____
                 newNode.r__ = N..
             node = node.next
             newNode = newNode.next

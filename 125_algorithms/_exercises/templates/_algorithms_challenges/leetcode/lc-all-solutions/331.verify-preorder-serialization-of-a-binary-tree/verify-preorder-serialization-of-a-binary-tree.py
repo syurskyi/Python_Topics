@@ -15,9 +15,9 @@ c_ Solution(o..
         r.. F..
       stack.a..(c)
       w.... l..(stack) > 2 a.. stack[-1] + stack[-2] __ "##":
-        stack.pop()
-        stack.pop()
-        stack.pop()
+        stack.p.. )
+        stack.p.. )
+        stack.p.. )
         stack.a..("#")
     __ l..(stack) __ 1 a.. stack[0] __ "#":
       r.. T..

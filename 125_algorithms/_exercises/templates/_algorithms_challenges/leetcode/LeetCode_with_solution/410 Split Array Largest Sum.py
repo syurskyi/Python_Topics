@@ -70,13 +70,13 @@ c_ Solution:
                 __ cur_sum + e > mid:
                     cnt += 1
                     cur_sum = e
-                ____:
+                ____
                     cur_sum += e
 
             __ cnt <= m:
                 ret = m..(ret, mid)  # pitfall. Condition satisfied
                 hi = mid
-            ____:
+            ____
                 lo = mid + 1
 
         r.. ret

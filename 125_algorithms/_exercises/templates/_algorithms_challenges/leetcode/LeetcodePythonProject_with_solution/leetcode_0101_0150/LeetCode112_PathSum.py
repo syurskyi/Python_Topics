@@ -22,7 +22,7 @@ c_ Solution(o..
             r.. F..
         __ root.val __ sumVal a.. n.. root.left a.. n.. root.right:
             r.. T..
-        ____:
+        ____
             r.. hasPathSum(root.left, sumVal-root.val) o.\
                 hasPathSum(root.right, sumVal-root.val)
     

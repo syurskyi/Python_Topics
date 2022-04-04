@@ -13,10 +13,10 @@ NUMBERS = [
 ___ test_two_sums
     """Test of the example given in the description"""
     numbers = [3, 10, 14, 8, 15, 5, 16, 13, 9, 2]
-    expected = (2, 6)
+    e.. = (2, 6)
     target = 30
     result = two_sums(numbers, target)
-    ... result __ expected
+    ... result __ e..
 
 
 ?p__.m__.p.("target, expected", [
@@ -27,9 +27,9 @@ ___ test_two_sums
     (5224, (31, 42,
     (2934785974, N..),
 ])
-___ test_two_sums_param(target, expected
+___ test_two_sums_param(target, e..
     result = two_sums(NUMBERS, target)
-    ... result __ expected
+    ... result __ e..
 
 
 ___ test_two_sums_random
@@ -39,10 +39,10 @@ ___ test_two_sums_random
     index1 = numbers.i.. picked[0])
     index2 = numbers.i.. picked[1])
     ordered = s..([index1, index2])
-    expected = ordered[0], ordered[1]
+    e.. = ordered[0], ordered[1]
     target = s..(picked)
     result = two_sums(numbers, target)
-    ... result __ expected
+    ... result __ e..
 
 
 ___ test_two_sums_none

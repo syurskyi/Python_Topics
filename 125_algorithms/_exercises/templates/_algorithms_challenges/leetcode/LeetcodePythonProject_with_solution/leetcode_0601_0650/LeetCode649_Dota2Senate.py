@@ -15,14 +15,14 @@ c_ Solution(o..
         ___ i __ r..(n
             __ senate[i] __ 'R':
                 queue1.a..(i)
-            ____:
+            ____
                 queue2.a..(i)
         w.... queue1 a.. queue2:
-            r_index = queue1.pop(0)
-            d_index = queue2.pop(0)
+            r_index = queue1.p.. 0)
+            d_index = queue2.p.. 0)
             __ r_index < d_index:
                 queue1.a..(r_index+n)
-            ____:
+            ____
                 queue2.a..(d_index+n)
         r.. 'Radiant' __ l..(queue1) > l..(queue2) ____ 'Dire'
     

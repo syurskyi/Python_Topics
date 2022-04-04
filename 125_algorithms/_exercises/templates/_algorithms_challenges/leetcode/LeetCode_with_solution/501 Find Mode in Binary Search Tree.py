@@ -66,13 +66,13 @@ c_ Solution:
 
         __ prev[0] __ root.val:
             prev[1] += 1
-        ____:
+        ____
             prev[1] = 1
         prev[0] = root.val
 
         __ n.. collect:
             ret[1] = m..(ret[1], prev[1])
-        ____:
+        ____
             __ prev[1] __ ret[1]:
                 ret[0].a..(root.val)
 
@@ -106,7 +106,7 @@ c_ Solution:
                 ret[0], ret[1] = cur, [target]
             ____ cur __ ret[0]:
                 ret[1].a..(target)
-        ____:
+        ____
             find_mode_error(root, root.val, ret)
 
         r.. cur

@@ -12,7 +12,7 @@ c_ Solution(o..
       m = l + (r - l) / 2
       __ target > nums[m]:
         l = m + 1
-      ____:
+      ____
         __ target __ nums[m]:
           found += 1
         r = m - 1
@@ -29,7 +29,7 @@ c_ Solution(o..
       m = l + (r - l) / 2
       __ target < nums[m]:
         r = m - 1
-      ____:
+      ____
         __ target __ nums[m]:
           found += 1
         l = m + 1

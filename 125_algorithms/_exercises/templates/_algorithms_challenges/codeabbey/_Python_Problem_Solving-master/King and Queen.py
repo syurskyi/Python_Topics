@@ -10,7 +10,7 @@ ___ i __ r..(i..(input())):
     #first condition check if the character of kind and queen are the same
     __ k __ q:
         print("Y",end = ' ')
-    ____:
+    ____
         # Second condition check for example e > b 
         __ q > k:
             #even if the columns are different but the row value is same then return Y
@@ -50,7 +50,7 @@ ___ i __ r..(i..(input())):
                 __ qp __ kp a.. chr(ascii_val) __ k:
                     print('Y',end = ' ')
         #else if exact opposite of the above steps
-        ____:
+        ____
              #even if the columns are different but the row value is same then return Y
             __ qp __ kp:
                 print('Y',end = ' ')

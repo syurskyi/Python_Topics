@@ -55,7 +55,7 @@ c_ Solution:
                 cur <<= 1
                 cur += a
             ret += cur
-        ____:
+        ____
             dfs(node.left)
             dfs(node.right)
-        lst.pop()
+        lst.p.. )

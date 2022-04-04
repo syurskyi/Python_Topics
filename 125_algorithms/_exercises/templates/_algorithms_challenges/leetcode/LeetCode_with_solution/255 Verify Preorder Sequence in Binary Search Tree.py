@@ -20,7 +20,7 @@ c_ Solution:
                 r.. F..
 
             w.... stk a.. stk[-1] < num:
-                left_finished = stk.pop()
+                left_finished = stk.p.. )
 
             stk.a..(num)
 

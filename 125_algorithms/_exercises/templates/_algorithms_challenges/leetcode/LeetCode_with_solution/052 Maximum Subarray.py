@@ -33,7 +33,7 @@ c_ Solution:
         ___ i __ r..(l..(A:
             __ current_max+A[i]>=0:
                 current_max+=A[i]
-            ____:
+            ____
                 current_max = 0
             max_result = m..(max_result, current_max)
 

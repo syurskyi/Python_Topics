@@ -13,12 +13,12 @@ c_ ZigzagIterator(o..
         w.... hashNext
             __ vec[pointer]:
                 val = vec[pointer][0]
-                vec[pointer].pop()
+                vec[pointer].p.. )
                 pointer += 1
                 __ pointer >= l..(vec
                     pointer = 0
                 r.. val
-            ____:
+            ____
                 pointer += 1
                 __ pointer >= l..(vec
                     pointer = 0

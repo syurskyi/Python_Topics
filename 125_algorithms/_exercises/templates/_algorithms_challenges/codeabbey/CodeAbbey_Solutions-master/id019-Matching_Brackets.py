@@ -15,7 +15,7 @@ ___ check_brackets(checks
 
         __ l..(data) > 0:
             answer.a..('0') # String had incorrect bracket usage.
-        ____:
+        ____
             answer.a..('1') # String had completely correct bracket usage.
     print(' '.j..(answer
 check_brackets(i..(input()))

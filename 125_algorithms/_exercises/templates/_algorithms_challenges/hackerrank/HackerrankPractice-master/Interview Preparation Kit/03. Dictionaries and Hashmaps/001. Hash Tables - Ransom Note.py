@@ -8,7 +8,7 @@ ____ c.. _______ C..
 ___ checkMagazine(magazine, note
     __ C..(note) - C..(magazine) __ {}:
         r.. 'Yes'
-    ____:
+    ____
         r.. 'No'
 
 

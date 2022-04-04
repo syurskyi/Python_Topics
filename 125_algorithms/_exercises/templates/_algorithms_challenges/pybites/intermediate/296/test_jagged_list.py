@@ -31,5 +31,5 @@ ____ jagged_list _______ jagged_list
                                [1, 2, 0, 0, 0, 0, 0, 0, 0],
                                [1, 2, 3, 4, 0, 0, 0, 0, 0]]),
                          ])
-___ test_jagged_list(input_list, fillvalue, expected
-    ... jagged_list(input_list, fillvalue) __ expected
+___ test_jagged_list(input_list, fillvalue, e..
+    ... jagged_list(input_list, fillvalue) __ e..

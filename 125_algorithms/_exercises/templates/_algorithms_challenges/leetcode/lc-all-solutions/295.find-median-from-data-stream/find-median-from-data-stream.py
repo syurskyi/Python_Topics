@@ -24,7 +24,7 @@ c_ MedianFinder:
 
     __ num <= median:
       heapq.heappush(left, -num)
-    ____:
+    ____
       heapq.heappush(right, num)
 
     __ l..(left) > l..(right) + 1:

@@ -22,7 +22,7 @@ c_ Solution(o..
         __ n.. root: r.. 0
         __ root.val __ sumVal:
             res = 1
-        ____:
+        ____
             res = 0
         res += helper(root.left, sumVal-root.val)
         res += helper(root.right, sumVal-root.val)

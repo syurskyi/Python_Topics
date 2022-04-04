@@ -44,14 +44,14 @@ c_ Solution:
                     p..[i][j] = p..[i][j-1] __ obstacleGrid[i][j-1]__0 ____ 0
                 ____ j__0:
                     p..[i][j] = p..[i-1][j] __ obstacleGrid[i-1][j]__0 ____ 0
-                ____:
+                ____
                     __ obstacleGrid[i][j-1]__0 a.. obstacleGrid[i-1][j]__0:
                         p..[i][j] = p..[i-1][j]+p..[i][j-1]
                     ____ obstacleGrid[i][j-1]__0:
                         p..[i][j] = p..[i][j-1]
                     ____ obstacleGrid[i-1][j]__0:
                         p..[i][j] = p..[i-1][j]
-                    ____:
+                    ____
                         p..[i][j]=0
 
 

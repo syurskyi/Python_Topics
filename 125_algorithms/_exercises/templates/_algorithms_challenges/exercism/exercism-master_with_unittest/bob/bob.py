@@ -7,5 +7,5 @@ ___ hey(phrase
         r.. "Whoa, chill out!"
     ____ phrase.e.. "?"
         r.. "Sure."
-    ____:
+    ____
         r.. 'Whatever.'

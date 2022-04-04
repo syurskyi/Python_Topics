@@ -15,6 +15,6 @@ c_ Solution(o..
         w.... l < area:
             __ area%l __ 0:
                 r.. [m..(l, area/l), m..(l, area/l)]
-            ____:
+            ____
                 l += 1
         r.. [area, 1]

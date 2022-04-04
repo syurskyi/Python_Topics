@@ -3,6 +3,6 @@ ___ flatten(list_of_lists
     ___ i __ list_of_lists:
         __ isi..(i, (l.., t..:
             res.extend(flatten(i
-        ____:
+        ____
             res.a..(i)
     r.. res

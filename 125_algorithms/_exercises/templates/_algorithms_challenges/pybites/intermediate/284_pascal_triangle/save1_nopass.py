@@ -6,7 +6,7 @@ ___ pascal(N: i..) __ L..[i..]:
     """
     __ N __ 1:
         r.. [1]
-    ____:
+    ____
         line = [1]
         previous_line = pascal(N - 1)
         ___ i __ r..(l..(previous_line) - 1

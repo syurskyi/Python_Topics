@@ -19,7 +19,7 @@ c_ Solution(o..
       hashcode = ",".j..(hashcodeArray)
       __ hashcode n.. __ d:
         d[hashcode] = [s]
-      ____:
+      ____
         d[hashcode].a..(s)
     ___ k __ d:
       ans.a..(d[k])

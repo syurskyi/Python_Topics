@@ -9,13 +9,13 @@ ___ create_chessboard(size=8
             ___ column __ r..(0, size
                 __ column % 2 __ 0:
                     print(WHITE, end ='')
-                ____:
+                ____
                     print(BLACK, end ='')
-        ____:
+        ____
             ___ column __ r..(0, size
                 __ column % 2 __ 0:
                     print(BLACK, end ='')
-                ____:
+                ____
                     print(WHITE, end = '')
         print('\n')
 

@@ -31,4 +31,4 @@ c_ Solution:
         dfs(node.left, remaining, ans, p..)
         dfs(node.right, remaining, ans, p..)
 
-        p...pop()
+        p...p.. )

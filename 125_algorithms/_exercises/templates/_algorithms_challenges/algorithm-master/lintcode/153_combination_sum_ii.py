@@ -29,4 +29,4 @@ c_ Solution:
 
             p...a..(A[i])
             dfs(A, i + 1, remaining - A[i], ans, p..)
-            p...pop()
+            p...p.. )

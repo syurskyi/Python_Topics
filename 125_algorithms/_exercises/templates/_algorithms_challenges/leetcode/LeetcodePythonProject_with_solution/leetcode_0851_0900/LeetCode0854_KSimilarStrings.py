@@ -20,7 +20,7 @@ c_ Solution(o..
             res += 1
             size = l..(q)
             ___ _ __ r..(size
-                s = q.pop(0)
+                s = q.p.. 0)
                 i = 0
                 w.... s[i] __ b[i]:
                     i += 1

@@ -25,7 +25,7 @@ c_ Solution:
                 A[left], A[right] = A[right], A[left]
                 # `A[left] = A[right]` is also ok, since no need to visit `A[right]` again
                 right -= 1
-            ____:
+            ____
                 A[left], A[i] = A[i], A[left]
 
         r.. left + 1

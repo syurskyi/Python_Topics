@@ -24,15 +24,15 @@ c_ Solution(o..
             __ c n.. __ pars:
                 stack.a..(c)
             # Right parenthesis
-            ____:
+            ____
                 __ stack:
                     __ stack[-1] __ pars[c]:
-                        stack.pop()
-                    ____:
+                        stack.p.. )
+                    ____
                         r.. F..
-                ____:
+                ____
                     r.. F..
         __ stack:
             r.. F..
-        ____:
+        ____
             r.. T..

@@ -32,7 +32,7 @@ c_ Solution(o..
             __ n.. cur.left:
                 ret.a..(cur.val)
                 cur = cur.right
-            ____:
+            ____
                 pre = cur.left
                 w.... pre.right a.. pre.right != cur:
                     pre = pre.right
@@ -41,7 +41,7 @@ c_ Solution(o..
                     pre.right = cur
                     ret.a..(cur.val)
                     cur = cur.left
-                ____:
+                ____
                     pre.right = N..
                     cur = cur.right
 
@@ -81,7 +81,7 @@ c_ Solution(o..
             r..
         stk = [root]
         w.... stk:
-            node = stk.pop()
+            node = stk.p.. )
             lst.a..(node.val)
             __ node.right:  # right first
                 stk.a..(node.right)

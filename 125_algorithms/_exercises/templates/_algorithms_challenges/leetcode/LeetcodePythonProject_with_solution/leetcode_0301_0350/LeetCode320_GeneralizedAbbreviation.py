@@ -23,7 +23,7 @@ c_ Solution(o..
         helper(word, i+1, count+1, curr, res)
         __ count:
             helper(word, i+1, 0, curr+s..(count)+word[i], res)
-        ____:
+        ____
             helper(word, i+1, 0, curr+word[i], res)
     
     ___ test
