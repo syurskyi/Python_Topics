@@ -8,7 +8,7 @@ c_ Handshake:
     ___ commands  inp
         __ n.. valid_inp(inp
             r.. []
-        r.. commands_for_num(to_num(inp))
+        r.. commands_for_num(to_num(inp
 
     ___ commands_for_num  num
         __ testBit(num, 4
@@ -34,7 +34,7 @@ c_ Handshake:
     ___ unreversed_code  handshake
         curr = 0
         ___ event __ handshake:
-            curr = setBit(curr, EVENTS.i.. event))
+            curr = setBit(curr, EVENTS.i.. event
         r.. curr
 
     ___ valid_inp  inp
@@ -52,7 +52,7 @@ c_ Handshake:
 
     $
     ___ valid_string(s__
-        r.. n.. b..(__.s..('[^01]', s__))
+        r.. n.. b..(__.s..('[^01]', s__
 
     $
     ___ testBit(int_type, offset

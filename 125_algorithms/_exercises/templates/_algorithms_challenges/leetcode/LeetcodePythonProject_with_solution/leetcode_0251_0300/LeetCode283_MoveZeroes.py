@@ -15,5 +15,5 @@ c_ Solution(o..
             __ num != 0:
                 nums[j] = num
                 j+=1
-        ___ i __ r..(j, l..(nums)):
+        ___ i __ r..(j, l..(nums:
             nums[i] = 0

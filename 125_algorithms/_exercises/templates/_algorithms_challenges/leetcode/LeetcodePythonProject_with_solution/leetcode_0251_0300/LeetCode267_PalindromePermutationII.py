@@ -47,9 +47,9 @@ c_ Solution(o..
             'aab',
         ]
         ___ s __ testCases:
-            print('s: %s' % (s))
+            print('s: %s' % (s
             result = generatePalindromes(s)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
             
 

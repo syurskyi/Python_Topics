@@ -50,7 +50,7 @@ c_ Codec:
 
         ret    # list
         traverse(root, ret)
-        r.. DELIMITER.j.. m..(s.., ret))
+        r.. DELIMITER.j.. m..(s.., ret
 
     ___ deserialize  data
         """Decodes your encoded data to tree.

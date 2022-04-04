@@ -57,7 +57,7 @@ ___ p..(input_string
                 'invalid format at {}:{}: {}'.f..(
                     r.. (input_string),
                     l..(input_string) - l..(stack),
-                    r.. (''.j..(stack))
+                    r.. (''.j..(stack
                 )
             )
     assert_that(stack)
@@ -82,11 +82,11 @@ ___ p..(input_string
             properties    # dict
             w.... is_upper(peek:
                 key = pop_until(' ')
-                assert_that(is_upper(key))
+                assert_that(is_upper(key
                 values    # list
                 w.... peek() __ ' ':
                     pop()
-                    values.a..(pop_until(' '))
+                    values.a..(pop_until(' '
                     pop()
                 properties[key] = values
             __ root __ N..
@@ -96,5 +96,5 @@ ___ p..(input_string
                 root.children.a..(current)
             w.... peek() __ '(':
                 child_input = pop() + pop_until(')') + pop()
-                current.children.a..(p..(child_input))
+                current.children.a..(p..(child_input
     r.. root

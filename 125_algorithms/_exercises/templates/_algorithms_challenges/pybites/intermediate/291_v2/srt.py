@@ -29,7 +29,7 @@ ___ get_srt_section_ids(text: s..) __ L..[i..]:
     
     text = text.s..
     
-    sections = (text.s..('\n\n'))
+    sections = (text.s..('\n\n'
     
 
     id_to_speed    # dict

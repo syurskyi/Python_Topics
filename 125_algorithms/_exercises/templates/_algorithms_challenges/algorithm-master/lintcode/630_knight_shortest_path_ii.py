@@ -34,7 +34,7 @@ c_ Solution:
                     __ _x __ m - 1 a.. _y __ n - 1:
                         r.. turns[_x, _y]
 
-                    queue.a..((_x, _y))
+                    queue.a..((_x, _y
 
         r.. NOT_FOUND
 

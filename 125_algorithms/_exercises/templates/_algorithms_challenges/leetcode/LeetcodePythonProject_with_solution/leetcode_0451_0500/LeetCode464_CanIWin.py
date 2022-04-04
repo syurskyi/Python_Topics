@@ -9,7 +9,7 @@ c_ Solution(o..
         __ (1+maxChoosableInteger)*maxChoosableInteger/2 < desiredTotal:
             r.. F..
         memo    # dict
-        r.. helper(l..(r..(1, maxChoosableInteger+1)), desiredTotal)
+        r.. helper(l..(r..(1, maxChoosableInteger+1, desiredTotal)
     
     ___ helper  nums, desiredTotal
         hash = s..(nums)

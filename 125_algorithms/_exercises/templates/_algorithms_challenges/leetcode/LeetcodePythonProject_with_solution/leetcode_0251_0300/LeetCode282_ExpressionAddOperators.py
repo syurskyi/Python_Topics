@@ -40,10 +40,10 @@ c_ Solution(o..
             ('3456237490', 9191),
         ]
         ___ num, target __ testCases:
-            print('num: %s' % (num))
-            print('target: %s' % (target))
+            print('num: %s' % (num
+            print('target: %s' % (target
             result = addOperators(num, target)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

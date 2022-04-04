@@ -1,11 +1,11 @@
 _______ __
 _______ ___.e__.E__ __ ET
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ u__.r.. _______ u..
 ____ c.. _______ d..
 
 # import the countries xml file
-tmp = Path(__.getenv("TMP", "/tmp"))
+tmp = P..(__.g..("TMP", "/tmp"
 countries = tmp / 'countries.xml'
 
 __ n.. countries.exists

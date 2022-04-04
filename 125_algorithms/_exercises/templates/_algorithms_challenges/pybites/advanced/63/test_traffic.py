@@ -8,13 +8,13 @@ ____ traffic _______ traffic_light, State
 ?p__.f..(scope="module")
 ___ slice1
     it = traffic_light()
-    r.. l..(islice(it, 96))
+    r.. l..(islice(it, 96
 
 
 ?p__.f..(scope="module")
 ___ slice2
     it = traffic_light()
-    r.. l..(islice(it, 100, 217))
+    r.. l..(islice(it, 100, 217
 
 
 ___ test_iterator_islice(slice1, slice2

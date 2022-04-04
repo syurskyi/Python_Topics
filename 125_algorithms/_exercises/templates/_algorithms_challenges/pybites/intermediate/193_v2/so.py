@@ -33,7 +33,7 @@ ___ top_python_questions(url=cached_so_url
             views = question.find('div',class_='views').getText()
             __ views.s...s.. [0][-1] __ 'm':
                 votes = i..(question.find('span',class_='vote-count-post').strong.getText
-                results.a..((question_text,votes))
+                results.a..((question_text,votes
 
         
         r.. s..(results,key=l.... x: x[1],r.._T..

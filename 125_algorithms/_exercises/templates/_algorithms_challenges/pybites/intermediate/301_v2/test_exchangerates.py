@@ -41,10 +41,10 @@ ___ test_get_all_days(start, end, expected
 ?p__.m__.p.(
     "date, expected",
     [
-        (date(2020, 1, 18), date(2020, 1, 17)),
-        (date(2020, 2, 2), date(2020, 1, 31)),
-        (date(2020, 5, 3), date(2020, 4, 30)),
-        (date(2020, 8, 15), date(2020, 8, 14)),
+        (date(2020, 1, 18), date(2020, 1, 17,
+        (date(2020, 2, 2), date(2020, 1, 31,
+        (date(2020, 5, 3), date(2020, 4, 30,
+        (date(2020, 8, 15), date(2020, 8, 14,
     ],
 )
 ___ test_match_daily_rates(date, expected, matching_result

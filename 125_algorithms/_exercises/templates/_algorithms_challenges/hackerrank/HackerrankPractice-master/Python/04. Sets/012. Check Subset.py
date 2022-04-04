@@ -5,4 +5,4 @@
 ___ i __ r..(i..(input())):
     _, a = input(), s.. m..(i.., input().s..()))
     _, b = input(), s.. m..(i.., input().s..()))
-    print(a.issubset(b))
+    print(a.issubset(b

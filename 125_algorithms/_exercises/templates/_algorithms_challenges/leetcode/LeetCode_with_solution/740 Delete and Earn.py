@@ -96,12 +96,12 @@ c_ Solution:
         w.... i < l..(nums
             w.... j < l..(nums) a.. nums[i] __ nums[j]:
                 j += 1
-            counter.a..((nums[i], j - i))
+            counter.a..((nums[i], j - i
             i = j
 
         # F[i] be the max points delete counter[i]
         F = [0 ___ _ __ counter]
-        ___ i __ r..(l..(counter)):
+        ___ i __ r..(l..(counter:
             F[i] = counter[i][0] * counter[i][1]
             F[i] += m..(
                 [

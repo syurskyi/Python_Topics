@@ -11,14 +11,14 @@ c_ Solution(o..
     k = 9
     w.... k > 1 a.. a > 1:
       __ a % k __ 0:
-        p...a..(s..(k))
+        p...a..(s..(k
         a /= k
       ____:
         k -= 1
     p...s..()
     __ a > 9 o. n.. p..:
       r.. 0
-    ans = i..("".j..(p..))
+    ans = i..("".j..(p..
     r.. ans __ ans <= 0x7fffffff ____ 0
 
   # normal DFS
@@ -34,9 +34,9 @@ c_ Solution(o..
       __ num __ 1:
         ans = m..(ans, i..("".j..(s..(p..))))
         r.. T..
-      ___ i __ r..(r..(2, 10)):
+      ___ i __ r..(r..(2, 10:
         __ num % i __ 0:
-          p...a..(s..(i))
+          p...a..(s..(i
           __ dfs(num / i, p..
             r.. T..
           p...pop()

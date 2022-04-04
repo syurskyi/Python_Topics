@@ -35,7 +35,7 @@ c_ Solution:
         ___ a, b __ pairs:
             union(nodes, a, b)
 
-        ___ i __ r..(l..(words1)):
+        ___ i __ r..(l..(words1:
             a  words1[i]
             b  words2[i]
             _a  find(nodes, a)
@@ -89,7 +89,7 @@ c_ Solution2:
             simils[a].add(b)
             simils[b].add(a)
 
-        ___ i __ r..(l..(words1)):
+        ___ i __ r..(l..(words1:
             a  words1[i]
             b  words2[i]
 

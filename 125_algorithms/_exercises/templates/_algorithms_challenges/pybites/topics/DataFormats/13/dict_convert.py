@@ -30,7 +30,7 @@ ___ nt2json(nt
 
 nt = dict2nt(blog)
 print(nt.started)
-print(t..(nt.started))
+print(t..(nt.started
 
-print(t..(nt))
-print(json.dumps(nt._asdict(), default=s..))
+print(t..(nt
+print(json.dumps(nt._asdict(), default=s..

@@ -67,7 +67,7 @@ ___ sum_numbers_1(numbers_ N..
     ___
         r.. s..(numbers)
     ______ T..:
-        r.. s..(r..(1,101))
+        r.. s..(r..(1,101
 
 
-print(pyb_sum_numbers("hello"))
+print(pyb_sum_numbers("hello"

@@ -30,7 +30,7 @@ c_ Solution:
         i = 0
         ret = 0
         p = 1
-        ___ j __ r..(l..(nums)):
+        ___ j __ r..(l..(nums:
             p *= nums[j]
             w.... p >= k a.. i <= j:
                 p //= nums[i]

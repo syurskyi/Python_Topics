@@ -9,7 +9,7 @@ c_ Solution:
 
         start = size = 0
 
-        ___ i __ r..(l..(s)):
+        ___ i __ r..(l..(s:
             _start, _size = check_palindrome(s, i, i)
 
             __ _size > size:

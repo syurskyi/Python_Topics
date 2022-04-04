@@ -56,15 +56,15 @@ c_ Solution(o..
     ___ test
         testCases = [
             [
-                TreeNode(2, TreeNode(1), TreeNode(3)),
+                TreeNode(2, TreeNode(1), TreeNode(3,
                 4,
             ],
             [
-                TreeNode(5, TreeNode(3, TreeNode(2), TreeNode(4)), TreeNode(6, N.., TreeNode(7))),
+                TreeNode(5, TreeNode(3, TreeNode(2), TreeNode(4, TreeNode(6, N.., TreeNode(7))),
                 9
             ],
             [
-                TreeNode(5, TreeNode(3, TreeNode(2), TreeNode(4)), TreeNode(6, N.., TreeNode(7))),
+                TreeNode(5, TreeNode(3, TreeNode(2), TreeNode(4, TreeNode(6, N.., TreeNode(7))),
                 28,
             ],
         ]

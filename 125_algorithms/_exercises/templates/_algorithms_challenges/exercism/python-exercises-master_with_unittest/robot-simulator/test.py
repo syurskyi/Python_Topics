@@ -6,12 +6,12 @@ c_ RobotTests(unittest.TestCase
 
     ___ test_init
         robot = Robot()
-        assertEqual(robot.coordinates, (0, 0))
+        assertEqual(robot.coordinates, (0, 0
         assertEqual(robot.bearing, NORTH)
 
     ___ test_setup
         robot = Robot(SOUTH, -1, 1)
-        assertEqual(robot.coordinates, (-1, 1))
+        assertEqual(robot.coordinates, (-1, 1
         assertEqual(robot.bearing, SOUTH)
 
     ___ test_turn_right
@@ -29,43 +29,43 @@ c_ RobotTests(unittest.TestCase
     ___ test_advance_positive_north
         robot = Robot(NORTH, 0, 0)
         robot.advance()
-        assertEqual(robot.coordinates, (0, 1))
+        assertEqual(robot.coordinates, (0, 1
         assertEqual(robot.bearing, NORTH)
 
     ___ test_advance_positive_east
         robot = Robot(EAST, 0, 0)
         robot.advance()
-        assertEqual(robot.coordinates, (1, 0))
+        assertEqual(robot.coordinates, (1, 0
         assertEqual(robot.bearing, EAST)
 
     ___ test_advance_negative_south
         robot = Robot(SOUTH, 0, 0)
         robot.advance()
-        assertEqual(robot.coordinates, (0, -1))
+        assertEqual(robot.coordinates, (0, -1
         assertEqual(robot.bearing, SOUTH)
 
     ___ test_advance_positive_west
         robot = Robot(WEST, 0, 0)
         robot.advance()
-        assertEqual(robot.coordinates, (-1, 0))
+        assertEqual(robot.coordinates, (-1, 0
         assertEqual(robot.bearing, WEST)
 
     ___ test_simulate_prog1
         robot = Robot(NORTH, 0, 0)
         robot.simulate("LAAARALA")
-        assertEqual(robot.coordinates, (-4, 1))
+        assertEqual(robot.coordinates, (-4, 1
         assertEqual(robot.bearing, WEST)
 
     ___ test_simulate_prog2
         robot = Robot(EAST, 2, -7)
         robot.simulate("RRAAAAALA")
-        assertEqual(robot.coordinates, (-3, -8))
+        assertEqual(robot.coordinates, (-3, -8
         assertEqual(robot.bearing, SOUTH)
 
     ___ test_simulate_prog3
         robot = Robot(SOUTH, 8, 4)
         robot.simulate("LAAARRRALLLL")
-        assertEqual(robot.coordinates, (11, 5))
+        assertEqual(robot.coordinates, (11, 5
         assertEqual(robot.bearing, NORTH)
 
 

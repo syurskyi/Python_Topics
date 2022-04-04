@@ -6,7 +6,7 @@ ___ test_get_similarities
     similar_tags = l..(get_similarities
 
     # not interested in the order of the pairs
-    similar_tags = {t..(s..(pair)) ___ pair __ similar_tags}
+    similar_tags = {t..(s..(pair ___ pair __ similar_tags}
 
     expected = [('cheat sheet', 'cheat sheets'),
                 ('python anywhere', 'pythonanywhere'),
@@ -24,4 +24,4 @@ ___ test_get_similarities
                 ('code challenges', 'codechallenges')]
 
     ___ hit __ expected:
-        ... t..(s..(hit)) __ similar_tags, f'{hit} not in similar tags'
+        ... t..(s..(hit __ similar_tags, f'{hit} not in similar tags'

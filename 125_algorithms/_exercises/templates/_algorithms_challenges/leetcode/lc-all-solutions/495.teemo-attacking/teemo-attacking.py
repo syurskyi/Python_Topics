@@ -10,7 +10,7 @@ c_ Solution(o..
     ans = 0
     start = timeSeries[0]
     end = start + duration
-    ___ i __ r..(1, l..(timeSeries)):
+    ___ i __ r..(1, l..(timeSeries:
       s = timeSeries[i]
       __ s <= end:
         end = s + duration

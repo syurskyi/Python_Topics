@@ -70,7 +70,7 @@ c_ DominoesTest(unittest.TestCase
     # Utility methods
 
     ___ normalize_dominoes  dominoes
-        r.. l..(s..(t..(s..(domino)) ___ domino __ dominoes))
+        r.. l..(s..(t..(s..(domino ___ domino __ dominoes
 
     ___ assert_same_dominoes  input_dominoes, output_chain
         msg = ('Dominoes used in the output must be the same '

@@ -27,7 +27,7 @@ ___ high_low_record_breakers_for_2015
     stations = pd.read_csv("https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv",parse_dates= 'Date' )
     
     stations 'Data_Value'  = stations 'Data_Value' .div(10)
-    stations = stations[~((stations.Date.dt.day __ 29) & (stations.Date.dt.month __ 2))]
+    stations = stations[~((stations.Date.dt.day __ 29) & (stations.Date.dt.month __ 2]
 
     s = stations[stations.Date.dt.year != 2015]
 
@@ -62,7 +62,7 @@ ___ high_low_record_breakers_for_2015
 
     n = n.reset_index()
     n.Date = pd.to_datetime(n.Date,f..='%j')
-    n.Date = n.Date.apply(l.... x: x.r.. y.._2015))
+    n.Date = n.Date.apply(l.... x: x.r.. y.._2015
 
 
     n[0] = n[0].astype('float')

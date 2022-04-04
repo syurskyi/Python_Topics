@@ -65,7 +65,7 @@ c_ Solution(o..
                 ___ i __ r..(m
                     ___ j __ r..(n
                         newGrid[j][i] = grid0[i][j]
-                hashset.add(getKey(newGrid))
+                hashset.add(getKey(newGrid
                 grid0 = newGrid
             ___ _ __ r..(4
                 m, n = l..(grid0), l..(grid0[0])
@@ -73,7 +73,7 @@ c_ Solution(o..
                 ___ i __ r..(m
                     ___ j __ r..(n
                         newGrid[n-1-j][m-1-i] = grid0[i][j]
-                hashset.add(getKey(newGrid))
+                hashset.add(getKey(newGrid
                 grid0 = newGrid
     
     ___ getKey  grid
@@ -164,7 +164,7 @@ c_ Solution(o..
         ___ grid __ testCases:
             print('grid:')
             grid = [[i..(c) ___ c __ row] ___ row __ grid]
-            print('\n'.j..([s..(row) ___ row __ grid]))
+            print('\n'.j..([s..(row) ___ row __ grid]
             result = numDistinctIslands2(grid)
             print('result: %s' % result)
             print('-='*30+'-')

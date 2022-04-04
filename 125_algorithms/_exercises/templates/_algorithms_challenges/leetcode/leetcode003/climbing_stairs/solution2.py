@@ -27,8 +27,8 @@ c_ Solution(o..
 
 
 s = Solution()
-print(s.climbStairs(0))
-print(s.climbStairs(1))
-print(s.climbStairs(2))
-print(s.climbStairs(3))
-print(s.climbStairs(4))
+print(s.climbStairs(0
+print(s.climbStairs(1
+print(s.climbStairs(2
+print(s.climbStairs(3
+print(s.climbStairs(4

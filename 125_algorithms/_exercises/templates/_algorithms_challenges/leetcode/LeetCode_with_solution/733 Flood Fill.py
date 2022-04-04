@@ -36,7 +36,7 @@ The value of each color in image[i][j] and newColor will be an integer in
 [0, 65535].
 """
 ____ t___ _______ L..
-dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
+dirs = ((-1, 0), (1, 0), (0, -1), (0, 1
 
 
 c_ Solution:

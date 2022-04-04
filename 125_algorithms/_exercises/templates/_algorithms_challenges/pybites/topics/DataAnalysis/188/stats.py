@@ -2,7 +2,7 @@ _______ __
 _______ statistics
 ____ u__.r.. _______ u..
 
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA = 'testfiles_number_loc.txt'
 STATS = __.p...j..(TMP, DATA)
@@ -62,12 +62,12 @@ data = get_all_line_counts()
 sample = l..(data)[::2]
 
 
-print(l..(data))
-print(m..(data))
-print(m..(data))
-print(r..(statistics.mean(data),2))
-print(r..(statistics.pstdev(data),2))
-print(r..(statistics.pvariance(data),2))
+print(l..(data
+print(m..(data
+print(m..(data
+print(r..(statistics.mean(data),2
+print(r..(statistics.pstdev(data),2
+print(r..(statistics.pvariance(data),2
 print(r..(l..(sample)))
-print(r..(statistics.stdev(sample),2))
-print(r..(statistics.variance(sample),2))
+print(r..(statistics.stdev(sample),2
+print(r..(statistics.variance(sample),2

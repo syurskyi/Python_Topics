@@ -14,9 +14,9 @@ c_ Solution(o..
       r.. points
 
     ___ direction(p, q, r
-      r.. ((p.x - r.x) * (q.y - r.y) - (p.y - r.y) * (q.x - r.x))
+      r.. ((p.x - r.x) * (q.y - r.y) - (p.y - r.y) * (q.x - r.x
 
-    points.s..(key=l.... x: (x.x, x.y))
+    points.s..(key=l.... x: (x.x, x.y
     upper    # list
     lower    # list
     ___ point __ points:
@@ -29,4 +29,4 @@ c_ Solution(o..
         upper.pop()
       upper.a..(point)
 
-    r.. l..(s..(upper[1:] + lower[1:]))
+    r.. l..(s..(upper[1:] + lower[1:]

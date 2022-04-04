@@ -22,6 +22,6 @@ c_ Solution(o..
         __ k __ 0:
           r.. p.val
       ____:
-        stack.a..((1, p.right))
-        stack.a..((0, p))
-        stack.a..((1, p.left))
+        stack.a..((1, p.right
+        stack.a..((0, p
+        stack.a..((1, p.left

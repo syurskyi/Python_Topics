@@ -68,6 +68,6 @@ c_ NumArray(o..
         __ i __ root.start a.. j __ root.end:
             r.. root.sumVal
         mid = (root.start+root.end)//2
-        res = sumRangeHelper(root.left, i, m..(j, mid))+\
+        res = sumRangeHelper(root.left, i, m..(j, mid+\
             sumRangeHelper(root.right, m..(i, mid+1), j)
         r.. res

@@ -10,7 +10,7 @@ c_ Trie:
 
   ___ addWord  word
     root = root
-    ___ i __ r..(0, l..(word)):
+    ___ i __ r..(0, l..(word:
       c = word[i]
       __ c __ root.neighbours:
         root = root.neighbours[c]
@@ -29,7 +29,7 @@ c_ Solution:
     # write your code here
     trie = Trie()
     res    # list
-    visited = [[0] * l..(board[0]) ___ i __ r..(0, l..(board))]
+    visited = [[0] * l..(board[0]) ___ i __ r..(0, l..(board]
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ dfs(i, j, board, visited, res, root, p..
@@ -51,10 +51,10 @@ c_ Solution:
     ___ word __ words:
       trie.addWord(word)
     root = trie.root
-    ___ i __ r..(0, l..(board)):
-      ___ j __ r..(0, l..(board[0])):
+    ___ i __ r..(0, l..(board:
+      ___ j __ r..(0, l..(board[0]:
         c = board[i][j]
         visited[i][j] = 1
         dfs(i, j, board, visited, res, root.neighbours.g.. c, N..), c)
         visited[i][j] = 0
-    r.. l..(s..(res))
+    r.. l..(s..(res

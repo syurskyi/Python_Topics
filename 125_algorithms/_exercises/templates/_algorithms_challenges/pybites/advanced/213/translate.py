@@ -63,4 +63,4 @@ __ _______ __ _______
     print(bite_202_en)
     print(bite_202_de)
 
-    print(fix_translation(bite_202_en,bite_202_de))
+    print(fix_translation(bite_202_en,bite_202_de

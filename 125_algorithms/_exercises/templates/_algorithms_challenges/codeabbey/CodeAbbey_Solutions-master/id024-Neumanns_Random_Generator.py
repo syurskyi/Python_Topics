@@ -23,6 +23,6 @@ ___ neumanns(inputs
                 no_repition  F..
                 
             repeats.a..(new_num)
-        answer.a..(s..(loop_count))
-    print(' '.j..(answer))
+        answer.a..(s..(loop_count
+    print(' '.j..(answer
 neumanns(input # This is input() is required to be wasted. Please ignore.

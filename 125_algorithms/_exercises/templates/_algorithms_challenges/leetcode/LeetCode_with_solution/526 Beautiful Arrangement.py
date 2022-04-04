@@ -40,7 +40,7 @@ c_ Solution:
         """
         dfs
         """
-        candidates = s..(r..(1, N+1))
+        candidates = s..(r..(1, N+1
         ret = dfs(candidates, 1, N)
         r.. ret
 

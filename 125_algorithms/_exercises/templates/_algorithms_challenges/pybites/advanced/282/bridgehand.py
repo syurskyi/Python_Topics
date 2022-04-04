@@ -1,10 +1,10 @@
 ____ c.. _______ n..,d..
 ____ e.. _______ E..
-____ t___ _______ Sequence
-____ c...abc _______ Sequence __ seq
+____ t___ _______ S..
+____ c...abc _______ S.. __ seq
 
-Suit = E..("Suit", l..("SHDC"))
-Rank = E..("Rank", l..("AKQJT98765432"))
+Suit = E..("Suit", l..("SHDC"
+Rank = E..("Rank", l..("AKQJT98765432"
 Card = n..("Card", ["suit", "Rank"])
 
 HCP = {Rank.A: 4, Rank.K: 3, Rank.Q: 2, Rank.J: 1}
@@ -12,7 +12,7 @@ SSP = {2: 1, 1: 2, 0: 3}  # cards in a suit -> short suit points
 
 
 c_ BridgeHand:
-    ___ - , cards: Sequence[Card]
+    ___ - , cards: S..[Card]
         """
         Process and store the sequence of Card objects passed in input.
         Raise TypeError if not a sequence

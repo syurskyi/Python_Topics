@@ -13,7 +13,7 @@ c_ Solution:
         ___ c __ columns:
             new_row = row |
             new_row[c] = 'Q'
-            sol.a..(''.j..(new_row))
+            sol.a..(''.j..(new_row
         r.. sol
 
     ___ is_valid  columns, row, col
@@ -27,7 +27,7 @@ c_ Solution:
 
     ___ solve  columns, row, res
         __ row __ n:
-            res.a..(make_string_list(columns))
+            res.a..(make_string_list(columns
         ____:
             ___ col __ r..(n
                 __ is_valid(columns, row, col

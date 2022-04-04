@@ -27,7 +27,7 @@ c_ Solution:
     ___ to_rpn  s, P
         stack, res    # list, []
 
-        ___ i __ r..(l..(s)):
+        ___ i __ r..(l..(s:
             char = s[i]
 
             __ i > 0 a.. s[i - 1].i.. a.. char.i..
@@ -55,11 +55,11 @@ c_ Solution:
 
         ___ char __ s:
             __ char.i..
-                stack.a..(i..(char))
+                stack.a..(i..(char
             ____ char __ OP:
                 b = stack.pop()
                 a = stack.pop()
-                stack.a..(OP[char](a, b))
+                stack.a..(OP[char](a, b
 
         r.. stack[0]
 
@@ -83,7 +83,7 @@ c_ Solution:
     ___ to_rpn  s
         stack, res    # list, []
 
-        ___ i __ r..(l..(s)):
+        ___ i __ r..(l..(s:
             char = s[i]
 
             __ i > 0 a.. s[i - 1].i.. a.. char.i..
@@ -113,7 +113,7 @@ c_ Solution:
 
         ___ char __ s:
             __ char.i..
-                stack.a..(i..(char))
+                stack.a..(i..(char
             ____ char __ '+-*/':
                 b = stack.pop()
                 a = stack.pop()

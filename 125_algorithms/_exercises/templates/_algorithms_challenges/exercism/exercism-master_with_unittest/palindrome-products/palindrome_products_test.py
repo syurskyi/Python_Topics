@@ -25,22 +25,22 @@ c_ PalindromesTests(unittest.TestCase
     ___ test_largest_palindrome_from_double_digit_factors
         value, factors = largest_palindrome(max_factor=99, min_factor=10)
         assertEqual(9009, value)
-        assertEqual({91, 99}, s..(factors))
+        assertEqual({91, 99}, s..(factors
 
     ___ test_smallest_palindrome_from_double_digit_factors
         value, factors = smallest_palindrome(max_factor=99, min_factor=10)
         assertEqual(121, value)
-        assertEqual({11}, s..(factors))
+        assertEqual({11}, s..(factors
 
     ___ test_largest_palindrome_from_triple_digit_factors
         value, factors = largest_palindrome(max_factor=999, min_factor=100)
         assertEqual(906609, value)
-        assertEqual({913, 993}, s..(factors))
+        assertEqual({913, 993}, s..(factors
 
     ___ test_smallest_palindrome_from_triple_digit_factors
         value, factors = smallest_palindrome(max_factor=999, min_factor=100)
         assertEqual(10201, value)
-        assertEqual({101, 101}, s..(factors))
+        assertEqual({101, 101}, s..(factors
 
 
 __ _____ __ _____

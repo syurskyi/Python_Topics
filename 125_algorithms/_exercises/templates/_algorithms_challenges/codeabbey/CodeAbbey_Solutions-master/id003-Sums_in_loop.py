@@ -5,6 +5,6 @@ ___ find_Sums(pairAmount
                 s.. = 0
                 ___ x __ r..(0, 2
                         s.. += i..(numbers[x])
-                answer.a..(s..(s..))
-        print(' '.j..(answer))
+                answer.a..(s..(s..
+        print(' '.j..(answer
 find_Sums(input

@@ -16,11 +16,11 @@ c_ Solution(o..
         """
         m, n = l..(image), l..(image[0])
         yaxis = [
-            1 __ any(image[i][j] __ "1" ___ i __ x..(m)) ____ 0
+            1 __ any(image[i][j] __ "1" ___ i __ x..(m ____ 0
             ___ j __ x..(n)
         ]
         xaxis = [
-            1 __ any(image[i][j] __ "1" ___ j __ x..(n)) ____ 0
+            1 __ any(image[i][j] __ "1" ___ j __ x..(n ____ 0
             ___ i __ x..(m)
         ]
 

@@ -11,11 +11,11 @@ c_ Solution:
   ___ binaryTreePaths  root
     ___ helper(root, p.., res
       __ root:
-        p...a..(s..(root.val))
+        p...a..(s..(root.val
         left = helper(root.left, p.., res)
         right = helper(root.right, p.., res)
         __ n.. left a.. n.. right:
-          res.a..("->".j..(p..))
+          res.a..("->".j..(p..
         p...pop()
         r.. T..
 

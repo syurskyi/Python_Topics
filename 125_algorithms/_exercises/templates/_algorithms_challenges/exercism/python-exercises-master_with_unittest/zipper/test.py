@@ -17,10 +17,10 @@ c_ ZipperTest(unittest.TestCase
         r.. bt(value, N.., N..)
 
     ___ create_trees
-        t1 = bt(1, bt(2, N.., leaf(3)), leaf(4))
-        t2 = bt(1, bt(5, N.., leaf(3)), leaf(4))
-        t3 = bt(1, bt(2, leaf(5), leaf(3)), leaf(4))
-        t4 = bt(1, leaf(2), leaf(4))
+        t1 = bt(1, bt(2, N.., leaf(3, leaf(4
+        t2 = bt(1, bt(5, N.., leaf(3, leaf(4
+        t3 = bt(1, bt(2, leaf(5), leaf(3, leaf(4
+        t4 = bt(1, leaf(2), leaf(4
         r.. (t1, t2, t3, t4)
 
     ___ test_data_is_retained
@@ -54,7 +54,7 @@ c_ ZipperTest(unittest.TestCase
     ___ test_set_left_with_value
         t1, _, t3, _ = create_trees()
         zipper = Zipper.from_tree(t1)
-        updatedZipper = zipper.left().set_left(leaf(5))
+        updatedZipper = zipper.left().set_left(leaf(5
         tree = updatedZipper.to_tree()
         assertEqual(tree, t3)
 

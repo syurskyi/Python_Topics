@@ -24,7 +24,7 @@ c_ Solution(o..
             nextStr = ''.j..(nextArr)
             __ nextStr n.. __ visited:
                 visited.add(nextStr)
-                arr.a..(s..(i))
+                arr.a..(s..(i
                 __ dfs(arr, goal, visited, n, k
                     r.. T..
                 visited.remove(nextStr)

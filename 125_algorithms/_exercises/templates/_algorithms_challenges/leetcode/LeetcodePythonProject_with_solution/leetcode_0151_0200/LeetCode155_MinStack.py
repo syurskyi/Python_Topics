@@ -18,7 +18,7 @@ c_ MinStack(o..
         :rtype: void
         """
         __ n.. stack:
-            stack.a..((x, x))
+            stack.a..((x, x
         ____:
             stack.a..((x, m..(stack[-1][1], x)))
 

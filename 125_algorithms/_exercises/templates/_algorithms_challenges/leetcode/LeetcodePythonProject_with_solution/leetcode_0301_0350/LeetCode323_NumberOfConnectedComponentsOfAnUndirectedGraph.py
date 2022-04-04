@@ -24,7 +24,7 @@ c_ Solution(o..
     
     ___ countComponentsAnother  n, edges
         count = n
-        roots = l..(r..(n))
+        roots = l..(r..(n
         ___ edge __ edges:
             root1 = find(roots, edge[0])
             root2 = find(roots, edge[1])
@@ -46,11 +46,11 @@ c_ Solution(o..
             (3, [[0, 1], [0, 2]]),
         ]
         ___ n, edges __ testCases:
-            print('n: %s' % (n))
-            print('edges: %s' % (edges))
+            print('n: %s' % (n
+            print('edges: %s' % (edges
             result = countComponents(n, edges)
             result = countComponentsOwn(n, edges)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
     
 __ _____ __ _____

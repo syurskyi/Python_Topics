@@ -12,7 +12,7 @@ c_ Solution(o..
     pCount = C..(p)
     ans    # list
 
-    ___ i __ r..(l..(p) - 1, l..(s)):
+    ___ i __ r..(l..(p) - 1, l..(s:
       sCount[s[i]] += 1
       __ sCount __ pCount:
         ans.a..(i - l..(p) + 1)

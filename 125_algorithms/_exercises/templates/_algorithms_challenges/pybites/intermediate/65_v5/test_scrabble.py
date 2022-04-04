@@ -21,7 +21,7 @@ ___ max_word_value(words
 ?p__.m__.p.("draw, expected", [
     ('T, I, I, G, T, T, L', 'gilt'),
     ('O, N, V, R, A, Z, H', 'zonar'),
-    ('E, P, A, E, I, O, A', ('apio', 'peai')),
+    ('E, P, A, E, I, O, A', ('apio', 'peai',
     ('B, R, C, O, O, E, O', 'boce'),
     ('G, A, R, Y, T, E, V', 'garvey'),
 ])

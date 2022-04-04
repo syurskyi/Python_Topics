@@ -1,5 +1,5 @@
 # ask for number of iterations
-num_iter = i..(input('Enter the number of iterations:'))
+num_iter = i..(input('Enter the number of iterations:'
 #initialize the starting element of the sequence
 start_num = input('Enter the starting string of the sequence:')
 
@@ -13,7 +13,7 @@ ___ look_and_say(data,maxlen
         #list to store the count of the character and the character
         res_string    # list
         #Loop for traversing through the length of the given string
-        ___ k __ r..(0,l..(data)):
+        ___ k __ r..(0,l..(data:
             ___
                 #check if the next element is same as the previous element and update the count
                 __ data[k] __ data[k+1]:

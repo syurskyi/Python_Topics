@@ -5,4 +5,4 @@
 ____ i.. _______ groupby
 
 
-print(*[(l..(l..(c)), i..(x)) ___ x, c __ groupby(input])
+print(*[(l..(l..(c, i..(x ___ x, c __ groupby(input])

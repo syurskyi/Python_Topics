@@ -7,9 +7,9 @@ UNEQUAL = 3
 ___ check_lists(l1, l2
     __ l1 __ l2:
         r.. EQUAL
-    ____ l1 __ each_cons(l2, l..(l1)):
+    ____ l1 __ each_cons(l2, l..(l1:
         r.. SUBLIST
-    ____ l2 __ each_cons(l1, l..(l2)):
+    ____ l2 __ each_cons(l1, l..(l2:
         r.. SUPERLIST
     ____:
         r.. UNEQUAL

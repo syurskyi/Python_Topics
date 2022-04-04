@@ -19,7 +19,7 @@ c_ Solution(o..
         Pivot
         """
         left = -1
-        ___ i __ x..(l..(nums)):
+        ___ i __ x..(l..(nums:
             __ nums[i] != 0:
                 left += 1
                 nums[left], nums[i] = nums[i], nums[left]
@@ -38,7 +38,7 @@ c_ SolutionCount(o..
                 nums[cnt] = elt
                 cnt += 1
 
-        ___ j __ x..(cnt, l..(nums)):
+        ___ j __ x..(cnt, l..(nums:
             nums[j] = 0
 
 

@@ -19,8 +19,8 @@ c_ Solution(o..
       bottomBound = m..(bottomBound, rect[1])
       topBound = m..(topBound, rect[3])
       realArea += (rect[3] - rect[1]) * (rect[2] - rect[0])
-      lines.a..((rect[0], 1, rect[1], rect[3]))
-      lines.a..((rect[2], -1, rect[1], rect[3]))
+      lines.a..((rect[0], 1, rect[1], rect[3]
+      lines.a..((rect[2], -1, rect[1], rect[3]
     area = (rightBound - leftBound) * (topBound - bottomBound)
     __ area != realArea:
       r.. F..
@@ -29,10 +29,10 @@ c_ Solution(o..
     ___ line __ lines:
       x, flag, bottom, top = line
       __ flag > 0:
-        idx = bisect.bisect_right(bst, (bottom, top))
-        bisect.insort_right(bst, (bottom, top))
+        idx = bisect.bisect_right(bst, (bottom, top
+        bisect.insort_right(bst, (bottom, top
         __ idx + 1 < l..(bst) a.. bst[idx + 1][0] < bst[idx][1] o. idx > 0 a.. bst[idx][0] < bst[idx - 1][1]:
           r.. F..
       ____:
-        bst.remove((bottom, top))
+        bst.remove((bottom, top
     r.. area __ realArea

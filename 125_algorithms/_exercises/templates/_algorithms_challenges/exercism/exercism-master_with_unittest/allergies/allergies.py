@@ -14,7 +14,7 @@ c_ Allergies:
     ___ - , score
         score = score
         lst = l..(allergy ___ allergy __ ALLERGY_SCORES __
-                        is_allergic_to(allergy))
+                        is_allergic_to(allergy
 
     ___ is_allergic_to  allergen
         r.. ALLERGY_SCORES[allergen] & score

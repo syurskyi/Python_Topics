@@ -10,28 +10,28 @@ ____ gigasecond _______ add_gigasecond
 c_ GigasecondTest(unittest.TestCase
     ___ test_date_only_specification_of_time
         assertEqual(
-            add_gigasecond(d__(2011, 4, 25)),
-            d__(2043, 1, 1, 1, 46, 40))
+            add_gigasecond(d__(2011, 4, 25,
+            d__(2043, 1, 1, 1, 46, 40
 
     ___ test_another_date_only_specification_of_time
         assertEqual(
-            add_gigasecond(d__(1977, 6, 13)),
-            d__(2009, 2, 19, 1, 46, 40))
+            add_gigasecond(d__(1977, 6, 13,
+            d__(2009, 2, 19, 1, 46, 40
 
     ___ test_one_more_date_only_specification_of_time
         assertEqual(
-            add_gigasecond(d__(1959, 7, 19)),
-            d__(1991, 3, 27, 1, 46, 40))
+            add_gigasecond(d__(1959, 7, 19,
+            d__(1991, 3, 27, 1, 46, 40
 
     ___ test_full_time_specified
         assertEqual(
-            add_gigasecond(d__(2015, 1, 24, 22, 0, 0)),
-            d__(2046, 10, 2, 23, 46, 40))
+            add_gigasecond(d__(2015, 1, 24, 22, 0, 0,
+            d__(2046, 10, 2, 23, 46, 40
 
     ___ test_full_time_with_day_roll_over
         assertEqual(
-            add_gigasecond(d__(2015, 1, 24, 23, 59, 59)),
-            d__(2046, 10, 3, 1, 46, 39))
+            add_gigasecond(d__(2015, 1, 24, 23, 59, 59,
+            d__(2046, 10, 3, 1, 46, 39
 
     ___ test_yourself
         # customize this to test your birthday and find your gigasecond date:

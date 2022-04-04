@@ -7,7 +7,7 @@ c_ Solution(o..
 
     ___ dfs(nums, index, p.., ans
       ans.a..(p..)
-      [dfs(nums, i + 1, p.. + [nums[i]], ans) ___ i __ r..(index, l..(nums))]
+      [dfs(nums, i + 1, p.. + [nums[i]], ans) ___ i __ r..(index, l..(nums]
 
     ans    # list
     dfs(nums, 0, [], ans)

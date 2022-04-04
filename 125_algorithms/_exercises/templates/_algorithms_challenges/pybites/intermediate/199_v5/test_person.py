@@ -83,5 +83,5 @@ ___ test_use_inheritance
     # should not duplicate substr in subclass
     substr = 'I am a person'
     ___ src __ (i___.getsource(Father),
-                i___.getsource(Mother)):
+                i___.getsource(Mother:
         ... substr n.. __ src

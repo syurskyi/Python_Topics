@@ -21,7 +21,7 @@ c_ Triangle(o..
         ])
 
     ___ kind
-        distinct = l..(s..(sides))
+        distinct = l..(s..(sides
         __ distinct __ 1:
             r.. 'equilateral'
         ____ distinct __ 2:

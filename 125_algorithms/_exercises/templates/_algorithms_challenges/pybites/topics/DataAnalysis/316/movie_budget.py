@@ -1,16 +1,16 @@
 ____ d__ _______ date
-____ t___ _______ Dict, Sequence, NamedTuple
+____ t___ _______ Dict, S.., N..
 ____ c.. _______ d..
 
 
 
-c_ MovieRented(NamedTuple
+c_ MovieRented(N..
     title: s..
     price: i..
     date: date
 
 
-RentingHistory = Sequence[MovieRented]
+RentingHistory = S..[MovieRented]
 STREAMING_COST_PER_MONTH = 12
 STREAM, RENT = 'stream', 'rent'
 
@@ -44,9 +44,9 @@ ___ rent_or_stream(
 
 
 renting_history = [
-    MovieRented('Breach', 7, date(2020, 12, 1)),
-    MovieRented('Sonic', 10, date(2020, 11, 4)),
-    MovieRented('Die Hard', 3, date(2020, 11, 3)),
-    MovieRented('Love and Monsters', 5, date(2020, 12, 9)) ]
+    MovieRented('Breach', 7, date(2020, 12, 1,
+    MovieRented('Sonic', 10, date(2020, 11, 4,
+    MovieRented('Die Hard', 3, date(2020, 11, 3,
+    MovieRented('Love and Monsters', 5, date(2020, 12, 9 ]
 
-print(rent_or_stream(renting_history))
+print(rent_or_stream(renting_history

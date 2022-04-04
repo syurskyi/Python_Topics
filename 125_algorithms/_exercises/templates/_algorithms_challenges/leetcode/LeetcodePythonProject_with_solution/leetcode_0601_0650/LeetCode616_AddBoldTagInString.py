@@ -18,7 +18,7 @@ c_ Solution(o..
         ___ i __ r..(n
             ___ word __ d..:
                 __ i+l..(word) <= n a.. s[i:i+l..(word)] __ word:
-                    maxLen = m..(maxLen, i+l..(word))
+                    maxLen = m..(maxLen, i+l..(word
                     _____
             __ maxLen > i a.. n.. started:
                 res += '<b>'+s[i]

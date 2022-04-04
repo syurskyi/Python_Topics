@@ -9,7 +9,7 @@ c_ Solution:
     # @return {string}
     ___ largestNumber  nums
         comp = l.... a, b: 1 __ a+b > b+a ____ -1 __ a+b<b+a ____ 0
-        nums = l.. m..(s.., nums))
+        nums = l.. m..(s.., nums
         nums.s..(cmp=comp, r.._T..
         r.. ''.j..(nums).l..('0')
     
@@ -26,9 +26,9 @@ c_ Solution:
             [3, 30, 34, 5, 9],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = largestNumber(nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

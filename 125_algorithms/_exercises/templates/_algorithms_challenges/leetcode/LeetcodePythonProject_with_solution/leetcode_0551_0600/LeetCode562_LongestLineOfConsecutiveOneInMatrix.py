@@ -41,7 +41,7 @@ c_ Solution(o..
             ],
         ]
         ___ matrix __ testCases:
-            print('\n'.j..([s..(row) ___ row __ matrix]))
+            print('\n'.j..([s..(row) ___ row __ matrix]
             result = longestLine(matrix)
             print('result: %s' % result)
             print('-='*30+'-')

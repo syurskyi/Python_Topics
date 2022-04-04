@@ -61,7 +61,7 @@ c_ Solution:
         :rtype: list[list[int]]
         """
         # Map from x-coordinate to event.
-        events = d..(l....: Event(starts=[], ends=[]))
+        events = d..(l....: Event(starts=[], ends=[]
         ___ left, right, height __ buildings:
             building = Building(height)
             events[left].starts.a..(building)  # possible multiple building at the same x-coordinate.

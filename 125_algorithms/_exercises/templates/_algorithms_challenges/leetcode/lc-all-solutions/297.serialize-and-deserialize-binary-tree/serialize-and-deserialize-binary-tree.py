@@ -23,7 +23,7 @@ c_ Codec:
         ret.a..("None")
         _____
       ____:
-        ret.a..(s..(top.val))
+        ret.a..(s..(top.val
       queue.a..(top.left)
       queue.a..(top.right)
     r.. ",".j..(ret)
@@ -39,7 +39,7 @@ c_ Codec:
     data = data.s..(",")
     __ data[0] __ "None":
       r.. N..
-    root = TreeNode(i..(data[0]))
+    root = TreeNode(i..(data[0]
     queue = d..([root])
     i = 0
     w.... queue a.. i < l..(data
@@ -47,11 +47,11 @@ c_ Codec:
       i += 1
       left = right = N..
       __ i < l..(data) a.. data[i] != "None":
-        left = TreeNode(i..(data[i]))
+        left = TreeNode(i..(data[i]
         queue.a..(left)
       i += 1
       __ i < l..(data) a.. data[i] != "None":
-        right = TreeNode(i..(data[i]))
+        right = TreeNode(i..(data[i]
         queue.a..(right)
 
       top.left = left

@@ -26,7 +26,7 @@ c_ Solution:
             r.. T..
 
         # greedy
-        ___ i __ r..(l..(s)):
+        ___ i __ r..(l..(s:
             string_builder += s[i]
             __ string_builder __ d..:
                 ___
@@ -70,7 +70,7 @@ c_ Solution:
         dp = [F..] * (l..(s)+1)
         dp[0] = T.. # dummy
 
-        ___ i __ r..(l..(dp)):  # [0, len(s)+1)
+        ___ i __ r..(l..(dp:  # [0, len(s)+1)
             # continue from matched condition
             __ dp[i]:
                 ___ word __ d..:

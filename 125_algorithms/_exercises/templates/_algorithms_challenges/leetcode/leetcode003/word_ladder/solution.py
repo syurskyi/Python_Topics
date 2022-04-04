@@ -28,8 +28,8 @@ c_ Solution(o..
         :rtype: int
         """
         queue    # list
-        queue.a..((beginWord, 0))
-        letters = map(chr, r..(o..('a'), o..('z') + 1))
+        queue.a..((beginWord, 0
+        letters = map(chr, r..(o..('a'), o..('z') + 1
         word_dict = wordDict
         # Remove words that are same as beginWord
         ___ word __ s..(wordDict
@@ -42,7 +42,7 @@ c_ Solution(o..
                 r.. cur[1] + 1
             ___ word __ get_adjacent(cur[0]
                 wordDict.remove(word)  # Mark as visited
-                queue.a..((word, cur[1] + 1))
+                queue.a..((word, cur[1] + 1
         r.. 0
 
     ___ get_adjacent  word1
@@ -56,6 +56,6 @@ c_ Solution(o..
 
 
 s = Solution()
-print s.ladderLength("hit", "dow", s..(["hot", "dot", "dog", "lot", "log"]))
-print s.ladderLength("hit", "cog", s..(["hot", "dot", "dog", "lot", "log"]))
-print s.ladderLength("hit", "cog", s..(["aos", "dis", "dog", "lot", "log"]))
+print s.ladderLength("hit", "dow", s..(["hot", "dot", "dog", "lot", "log"]
+print s.ladderLength("hit", "cog", s..(["hot", "dot", "dog", "lot", "log"]
+print s.ladderLength("hit", "cog", s..(["aos", "dis", "dog", "lot", "log"]

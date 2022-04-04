@@ -43,11 +43,11 @@ c_ Solution(o..
             ],
         ]
         ___ m, n, positions __ testCases:
-            print('m: %s' % (m))
-            print('n: %s' % (n))
-            print('positions: %s' % (positions))
+            print('m: %s' % (m
+            print('n: %s' % (n
+            print('positions: %s' % (positions
             result = numIslands2(m, n, positions)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

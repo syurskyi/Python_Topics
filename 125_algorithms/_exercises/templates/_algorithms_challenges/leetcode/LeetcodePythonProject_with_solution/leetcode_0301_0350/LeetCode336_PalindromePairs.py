@@ -40,9 +40,9 @@ c_ Solution(o..
             ["abcd", "dcba", "lls", "s", "sssll"],
         ]
         ___ words __ testCases:
-            print('words: %s' % (words))
+            print('words: %s' % (words
             result = palindromePairs(words)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

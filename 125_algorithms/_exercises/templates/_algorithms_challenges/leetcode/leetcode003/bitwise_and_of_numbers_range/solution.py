@@ -21,5 +21,5 @@ c_ Solution(o..
 
 
 s = Solution()
-print(s.rangeBitwiseAnd(5, 6))
-print(s.rangeBitwiseAnd(0, 2147483647))
+print(s.rangeBitwiseAnd(5, 6
+print(s.rangeBitwiseAnd(0, 2147483647

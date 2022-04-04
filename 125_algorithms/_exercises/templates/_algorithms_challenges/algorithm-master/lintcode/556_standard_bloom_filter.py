@@ -12,7 +12,7 @@ c_ HashFunc:
             r.. code
 
         ___ char __ key:
-            code = (seed * code + o..(char)) % cap
+            code = (seed * code + o..(char % cap
 
         r.. code
 
@@ -31,7 +31,7 @@ c_ StandardBloomFilter:
             hashs.a..(HashFunc(
                 randint(CAP // 2, CAP),
                 i * 2 + 3
-            ))
+
 
     ___ add  word
         """

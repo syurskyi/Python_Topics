@@ -19,7 +19,7 @@ c_ Solution(o..
         __ ''.j..(s..(nums) + ',') __ hashmap:
             r.. F..
         ___ i __ r..(l..(nums)-1
-            ___ j __ r..(i+1, l..(nums)):
+            ___ j __ r..(i+1, l..(nums:
                 a = nums[i]
                 b = nums[j]
                 nums1 = nums[:i]+nums[i+1:j]+nums[j+1:]
@@ -27,8 +27,8 @@ c_ Solution(o..
                     helper(nums1 + [a*b], hashmap) o.\
                     helper(nums1 + [b-a], hashmap) o.\
                     helper(nums1 + [a-b], hashmap) o.\
-                    (a != 0 a.. helper(nums1 + [f__(b)/a], hashmap)) o.\
-                    (b != 0 a.. helper(nums1 + [f__(a)/b], hashmap)):
+                    (a != 0 a.. helper(nums1 + [f__(b)/a], hashmap o.\
+                    (b != 0 a.. helper(nums1 + [f__(a)/b], hashmap:
                     r.. T..
         hashmap[''.j..(s..(nums)+',')] = F..
         r.. F..

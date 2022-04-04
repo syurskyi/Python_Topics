@@ -14,6 +14,6 @@ ___ find_name(amount_of_cards
         rank_number  card % 13
         rank  ranks[rank_number]
 
-        answer.a..('{0}-of-{1}'.f..(rank, suit))
-    print(' '.j..(answer))
+        answer.a..('{0}-of-{1}'.f..(rank, suit
+    print(' '.j..(answer
 find_name(input

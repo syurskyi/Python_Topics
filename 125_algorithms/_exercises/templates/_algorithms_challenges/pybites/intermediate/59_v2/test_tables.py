@@ -21,7 +21,7 @@ ___ t3
 
 ])
 ___ test_table_len(arg, ret
-    ... l..(MultiplicationTable(arg)) __ ret
+    ... l..(MultiplicationTable(arg __ ret
 
 
 ?p__.m__.p.("arg, ret", [

@@ -9,7 +9,7 @@ w.... l..(lista) < d:
 
     res = s..(addi)
     
-    ___ i __ r..(0,l..(res)):
+    ___ i __ r..(0,l..(res:
         result = result + i..(res[i])
     
     lista.a..(result)

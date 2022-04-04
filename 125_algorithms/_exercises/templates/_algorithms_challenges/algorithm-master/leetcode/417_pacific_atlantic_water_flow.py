@@ -20,12 +20,12 @@ c_ Solution:
         aqueue    # list
 
         ___ x __ r..(m
-            pqueue.a..((x, 0))
-            aqueue.a..((x, n - 1))
+            pqueue.a..((x, 0
+            aqueue.a..((x, n - 1
 
         ___ y __ r..(n
-            pqueue.a..((0, y))
-            aqueue.a..((m - 1, y))
+            pqueue.a..((0, y
+            aqueue.a..((m - 1, y
 
         pvisited = s..(pqueue)
         avisited = s..(aqueue)
@@ -53,8 +53,8 @@ c_ Solution:
                 __ matrix[_x][_y] < matrix[x][y]:
                     _____
 
-                queue.a..((_x, _y))
-                visited.add((_x, _y))
+                queue.a..((_x, _y
+                visited.add((_x, _y
 
 
 c_ Solution:
@@ -84,7 +84,7 @@ c_ Solution:
         r.. l..(pvisited & avisited)
 
     ___ dfs  matrix, x, y, visited
-        visited.add((x, y))
+        visited.add((x, y
 
         ___ dx, dy __ (
             (0, -1), (0, 1),

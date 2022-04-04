@@ -12,7 +12,7 @@ ___ calc_sums(values: s.. = VALUES) __ Generator[s.., N.., N..]:
         'The sum of 0.1 and 0.2, rounded to two decimal places, is 0.3.'
     """
     values_list = VALUES.strip("[]").s..(", ")
-    ___ i __ r..(1, l..(values_list)):
+    ___ i __ r..(1, l..(values_list:
         
         previous, current = f__(values_list[i -1]), f__(values_list[i])
         __ previous < 0.1 a.. current < 0.1:

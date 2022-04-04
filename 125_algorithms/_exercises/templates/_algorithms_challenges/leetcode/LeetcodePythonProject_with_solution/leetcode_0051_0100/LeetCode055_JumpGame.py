@@ -24,9 +24,9 @@ c_ Solution(o..
             [3,2,1,0,4],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = canJump(nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
 
 __ _____ __ _____

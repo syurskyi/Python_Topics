@@ -22,7 +22,7 @@ c_ Solution(o..
         __ n.. root.left a.. n.. root.right:
             r.. 1
         ____ root.left a.. root.right:
-            r.. m..(minDepth(root.left), minDepth(root.right)) + 1
+            r.. m..(minDepth(root.left), minDepth(root.right + 1
         ____ root.left a.. n.. root.right:
             r.. minDepth(root.left) + 1
         ____:

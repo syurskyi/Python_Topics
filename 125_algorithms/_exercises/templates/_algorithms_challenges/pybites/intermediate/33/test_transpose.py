@@ -15,7 +15,7 @@ ___ _gen_community
         y.. Member(name=name,
                      since_days=randint(1, 365),
                      karma_points=randint(1, 100),
-                     bitecoin_earned=randint(1, 100))
+                     bitecoin_earned=randint(1, 100
 
 
 ___ test_transpose_dict

@@ -4,4 +4,4 @@
 
 n, s = i..(input().strip, l.. m..(i.., input().s..()))
 d, m = map(i.., input().s..
-print(s..([s..(s[i: i + m]) __ d ___ i __ r..(l..(s) - m + 1)]))
+print(s..([s..(s[i: i + m]) __ d ___ i __ r..(l..(s) - m + 1)]

@@ -20,7 +20,7 @@ c_ Solution(o..
                 ____:
                     heights[i+1][j] = heights[i][j]+1
         ___ i __ r..(m
-            area = m..(area, getArea(heights[i+1]))
+            area = m..(area, getArea(heights[i+1]
         r.. area
     
     ___ getArea  heights

@@ -9,5 +9,5 @@ ___ title_case(title, minor_words = ''
             res.a..(word)
     r.. ' '.j..(res)
 
-print(title_case('a clash of KINGS', 'a an the of'))
-print(title_case('', ''))
+print(title_case('a clash of KINGS', 'a an the of'
+print(title_case('', ''

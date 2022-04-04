@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ maxEnvelopes  envelopes
         _______ bisect
         length = 0
-        envelopes.s..(key=l.... x: (x[0], -x[1]))
+        envelopes.s..(key=l.... x: (x[0], -x[1]
         dp = [0]*l..(envelopes)
         ___ env __ envelopes:
             ind = bisect.bisect_left(dp, env[1], 0, length)
@@ -23,9 +23,9 @@ c_ Solution(o..
             [[4, 6], [5, 4], [5, 4], [5, 5], [5, 5]],
         ]
         ___ envelopes __ testCases:
-            print('envelopes: %s' % (envelopes))
+            print('envelopes: %s' % (envelopes
             result = maxEnvelopes(envelopes)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

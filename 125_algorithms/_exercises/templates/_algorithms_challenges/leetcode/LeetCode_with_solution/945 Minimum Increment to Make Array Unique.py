@@ -38,7 +38,7 @@ c_ Solution:
         A.s..()
         ret = 0
         prev = A[0]
-        ___ i __ r..(1, l..(A)):
+        ___ i __ r..(1, l..(A:
             target = prev + 1
             __ A[i] < target:
                 # change A[i] to target
@@ -61,7 +61,7 @@ c_ Solution:
         ret = 0
         ___ i __ r..(40000 * 2
             __ counter[i] > 1:
-                q.extend([i] * (counter[i] - 1))
+                q.extend([i] * (counter[i] - 1
             ____ q a.. counter[i] __ 0:
                 ret += i - q.pop()
         r.. ret
@@ -80,7 +80,7 @@ c_ Solution:
         A.a..(1 << 31 - 1)  # append max
         demand = 0
         supply = 0
-        ___ i __ r..(1, l..(A)):
+        ___ i __ r..(1, l..(A:
             __ A[i] __ A[i-1]:
                 demand += 1
                 # dup_sum += A[i-1]  # error

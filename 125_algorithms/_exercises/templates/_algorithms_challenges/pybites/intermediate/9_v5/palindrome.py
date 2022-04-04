@@ -29,4 +29,4 @@ ___ get_longest_palindrome(words_ N..
     __ words __ N..
         words = load_dictionary()
     pals = [word ___ word __ words __ is_palindrome(word)]
-    r.. s..(pals, key=l.... x:-l..(x))[0]
+    r.. s..(pals, key=l.... x:-l..(x[0]

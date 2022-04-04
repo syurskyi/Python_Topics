@@ -8,7 +8,7 @@ c_ LightsGrid:
 
     ___ - , grid_size: i.., instructions: L..[s..]
         grid_size = grid_size
-        grid = pd.DataFrame(np.zeros([grid_size, grid_size], dtype=i..))
+        grid = pd.DataFrame(np.zeros([grid_size, grid_size], dtype=i..
         instructions = instructions
 
     ___ process_grid_coordinates  s1: s.., s2: s..
@@ -21,8 +21,8 @@ c_ LightsGrid:
 
         Suggested return are 4 integers representing x1, x2, y1, y2 [hint]"""
 
-        row_1,col_1 = map(i..,s1.s..(','))
-        row_2,col_2 = map(i..,s2.s..(','))
+        row_1,col_1 = map(i..,s1.s..(','
+        row_2,col_2 = map(i..,s2.s..(','
 
 
 
@@ -102,7 +102,7 @@ c_ LightsGrid:
         df = grid.iloc[row_start:row_end + 1,col_start:col_end +1]
 
 
-        grid.iloc[row_start:row_end +1,col_start:col_end +1] = df.applymap(l.... value: m..(5,value + amount))
+        grid.iloc[row_start:row_end +1,col_start:col_end +1] = df.applymap(l.... value: m..(5,value + amount
 
 
     ___ turn_down  amount: i.., s1: s.., s2: s..
@@ -119,7 +119,7 @@ c_ LightsGrid:
         df = grid.iloc[row_start:row_end + 1,col_start:col_end +1]
 
 
-        grid.iloc[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: m..(0,value - amount))
+        grid.iloc[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: m..(0,value - amount
 
     ___ toggle  s1: s.., s2: s..
         """The toggle function takes 2 parameters:

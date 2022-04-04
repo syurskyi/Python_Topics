@@ -16,7 +16,7 @@ c_ Solution(o..
             change[(i-arr[i]+1)%n] -= 1
         ___ i __ r..(1, n
             change[i] += change[i-1]
-        r.. change.i.. m..(change))
+        r.. change.i.. m..(change
     
     # This EASY solution is TLE    
     ___ bestRotation_slow  A
@@ -26,7 +26,7 @@ c_ Solution(o..
         """
         arr = A
         idx, maxVal = 0, f__('-inf')
-        ___ i __ r..(l..(arr)):
+        ___ i __ r..(l..(arr:
             val = getScore(arr, i)
             __ val > maxVal:
                 maxVal = val

@@ -70,7 +70,7 @@ c_ Solution:
             # head
             j = 0
             itv = itvs[j]
-            heapq.heappush(q, (itv[S], i, j))
+            heapq.heappush(q, (itv[S], i, j
 
         ret    # list
         w.... q:
@@ -85,7 +85,7 @@ c_ Solution:
             j += 1
             __ j < l..(schedule[i]
                 itv = schedule[i][j]
-                heapq.heappush(q, (itv[S], i, j))
+                heapq.heappush(q, (itv[S], i, j
 
         r.. ret
 
@@ -121,7 +121,7 @@ c_ Solution:
         Cannot store iterator in the heap to compare
         use index instead
         """
-        schedules = l.. m..(i.., schedule))
+        schedules = l.. m..(i.., schedule
         cur_max_end = m..(
             itv[E]
             ___ emp __ schedule
@@ -131,7 +131,7 @@ c_ Solution:
         ___ emp_iter __ schedules:
             itv = next(emp_iter, N..)
             __ itv:
-                heapq.heappush(q, (itv[S], itv, emp_iter))
+                heapq.heappush(q, (itv[S], itv, emp_iter
 
         ret    # list
         w.... q:
@@ -141,7 +141,7 @@ c_ Solution:
             cur_max_end = m..(cur_max_end, itv[E])
             itv = next(emp_iter, N..)
             __ itv:
-                heapq.heappush(q, (itv[S], itv, emp_iter))
+                heapq.heappush(q, (itv[S], itv, emp_iter
 
         r.. ret
 

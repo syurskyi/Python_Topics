@@ -11,7 +11,7 @@ ____ intersection _______ intersection
         [({1, "2", "3"}, {1, "3"}), {1, "3"}],
         [
             # mixing lists/sets/tuples
-            ([1, 2, 3, 4, 5, 1, 2, 3, 2, 3], {0, 10, 5}, ("a", 5)),
+            ([1, 2, 3, 4, 5, 1, 2, 3, 2, 3], {0, 10, 5}, ("a", 5,
             {
                 5,
             },
@@ -27,7 +27,7 @@ ___ test_basic(inputs, expected
 ?p__.m__.p.(
     "inputs,expected",
     [
-        [((N.., "this is a string")), {" ", "a", "g", "h", "i", "n", "r", "s", "t"}],
+        [((N.., "this is a string", {" ", "a", "g", "h", "i", "n", "r", "s", "t"}],
         [
             # no input
             (N..,),
@@ -35,7 +35,7 @@ ___ test_basic(inputs, expected
         ],
         [
             # multiple None inputs
-            (N.., {1, 2, 3}, N.., l..(r..(10)), N..),
+            (N.., {1, 2, 3}, N.., l..(r..(10, N..),
             {1, 2, 3},
         ],
         [([1, 2, 3, 3, 2, 1],), {1, 2, 3}],  # single input

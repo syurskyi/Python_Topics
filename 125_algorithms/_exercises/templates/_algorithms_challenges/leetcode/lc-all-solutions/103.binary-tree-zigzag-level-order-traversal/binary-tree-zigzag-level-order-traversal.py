@@ -18,7 +18,7 @@ c_ Solution(o..
     odd  T..
     w.... stack:
       level    # list
-      ___ k __ r..(0, l..(stack)):
+      ___ k __ r..(0, l..(stack:
         top  stack.popleft()
         __ top __ N..
           _____

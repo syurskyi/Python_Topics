@@ -19,7 +19,7 @@ c_ SpaceAge:
 
 
 ___ add_on_planet_fn(planet
-    setattr(SpaceAge, 'on_' + planet, l.... self: on_planet(planet))
+    setattr(SpaceAge, 'on_' + planet, l.... self: on_planet(planet
 
 
 ___ planet __ l..(SpaceAge.ORBITAL_PERIODS.k..

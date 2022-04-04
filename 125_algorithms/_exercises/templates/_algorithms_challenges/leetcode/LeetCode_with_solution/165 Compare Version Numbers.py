@@ -21,20 +21,20 @@ c_ Solution:
         :type version2: str
         :rtype int
         """
-        version1 = map(i.., version1.s..("."))
-        version2 = map(i.., version2.s..("."))
+        version1 = map(i.., version1.s..("."
+        version2 = map(i.., version2.s..("."
         n1 = l..(version1)
         n2 = l..(version2)
 
-        ___ i __ x..(m..(n1, n2)):
+        ___ i __ x..(m..(n1, n2:
             __ version1[i] __ version2[i]:
                 p..
             ____:
                 r.. -1 __ version1[i] < version2[i] ____ 1
 
         # 1.0.0 and 1 
-        __ n1 __ n2 o. n1 > n2 a.. a.. m..(l.... x: x __ 0, version1[n2:])) o. \
-                                n1 < n2 a.. a.. m..(l.... x: x __ 0, version2[n1:])):
+        __ n1 __ n2 o. n1 > n2 a.. a.. m..(l.... x: x __ 0, version1[n2:] o. \
+                                n1 < n2 a.. a.. m..(l.... x: x __ 0, version2[n1:]:
             r.. 0
 
         r.. -1 __ n1 < n2 ____ 1

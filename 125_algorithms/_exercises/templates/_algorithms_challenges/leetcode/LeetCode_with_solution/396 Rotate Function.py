@@ -40,7 +40,7 @@ c_ Solution(o..
         n = l..(A)
         s = s..(A)
 
-        cur = s..(idx * val ___ idx, val __ e..(A))
+        cur = s..(idx * val ___ idx, val __ e..(A
         ___ r __ r..(A
             cur = cur + s - n * r
             gmax = m..(gmax, cur)

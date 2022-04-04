@@ -9,7 +9,7 @@ __author__ = 'Danyang'
 
 c_ Solution(o..
     ___ maxProduct_oneline  nums
-        r.. m..(r.. l.... A, n: [m..(A), m..(n, A[1]*n, A[2]*n), m..(n, A[1]*n, A[2]*n)], nums[1:], [nums[0]]*3))
+        r.. m..(r.. l.... A, n: [m..(A), m..(n, A[1]*n, A[2]*n), m..(n, A[1]*n, A[2]*n)], nums[1:], [nums[0]]*3
 
     ___ maxProduct  nums
         """

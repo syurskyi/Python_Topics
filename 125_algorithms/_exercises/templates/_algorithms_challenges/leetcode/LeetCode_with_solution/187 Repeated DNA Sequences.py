@@ -32,7 +32,7 @@ c_ Solution:
         __ l..(s) < 10:
             r.. []
 
-        s = map(mapping, l..(s))
+        s = map(mapping, l..(s
         h = s..()
         # in_ret = set()
         ret = s..()
@@ -43,7 +43,7 @@ c_ Solution:
             cur += s[i]
         h.add(cur)
 
-        ___ i __ x..(10, l..(s)):
+        ___ i __ x..(10, l..(s:
             cur <<= 2
             cur &= 0xFFFFF  # 10 * 2 = 20 position
             cur += s[i]
@@ -66,7 +66,7 @@ c_ Solution:
             ret.a..(dic[s%4])
             s >>= 2
 
-        r.. "".j..(r..(ret))
+        r.. "".j..(r..(ret
 
     ___ mapping  a
         dic = {

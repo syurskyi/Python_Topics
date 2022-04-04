@@ -8,4 +8,4 @@ ___ solution(roman
         current = v
     r.. values
 
-print(solution('XX'))    
+print(solution('XX'

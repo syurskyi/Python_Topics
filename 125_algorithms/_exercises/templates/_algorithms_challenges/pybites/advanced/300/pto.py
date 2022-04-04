@@ -54,7 +54,7 @@ ___ four_day_weekends(*args,
         workday_dates    # list
         current = date(year,start_month,1)
         current += relativedelta(weekday=FR)
-        first_monday = current + relativedelta(weekday=MO(-1))
+        first_monday = current + relativedelta(weekday=MO(-1
         __ first_monday.year __ year a.. first_monday.month __ start_month:
             workday_dates.a..(first_monday)
             
@@ -71,7 +71,7 @@ ___ four_day_weekends(*args,
             dates = [current,monday]
             __ monday.year __ year:
                 __ a..(date n.. __ FEDERAL_HOLIDAYS ___ date __ dates
-                    weekend_dates.a..((current,monday))
+                    weekend_dates.a..((current,monday
                     four_day_weekends += 1
                 ____:
                     __ monday n..  __ FEDERAL_HOLIDAYS:
@@ -99,7 +99,7 @@ ___ four_day_weekends(*args,
 
         
         __ n.. show_workdays:
-            length = l..(s..(paid_time_off))
+            length = l..(s..(paid_time_off
             number = 24 
             before_days = paid_time_off//8 
             new_balance = paid_time_off -  HOURS *  four_day_weekends * 2

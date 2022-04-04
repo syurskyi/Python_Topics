@@ -28,7 +28,7 @@ c_ Solution(o..
                     r.. = dp[i][j] + 1
                     insert = dp[i][j+1] + 1
                     delete = dp[i+1][j] + 1
-                    dp[i+1][j+1] = m..((r.., insert, delete))
+                    dp[i+1][j+1] = m..((r.., insert, delete
         r.. dp[-1][-1]
     
     ___ test
@@ -38,10 +38,10 @@ c_ Solution(o..
             ('horse', 'ros'),
         ]
         ___ word1, word2 __ testCases:
-            print('word1: %s' % (word1))
-            print('word2: %s' % (word2))
+            print('word1: %s' % (word1
+            print('word2: %s' % (word2
             result = minDistance(word1, word2)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
 
 __ _____ __ _____

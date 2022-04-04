@@ -40,7 +40,7 @@ c_ Solution(o..
         stack    # list
         ___ token __ tokens:
             __ token n.. __ ops:
-                stack.a..(i..(token))
+                stack.a..(i..(token
             ____:
                 arg2 = stack.pop()
                 arg1 = stack.pop()

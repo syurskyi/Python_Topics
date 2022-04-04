@@ -27,7 +27,7 @@ c_ Solution:
         why reverse? reverse the increasing from right to left to decreasing
         from right to left (i.e. sorted)
         """
-        seq = l..(s..(n))
+        seq = l..(s..(n
         N = l..(seq)
         __ N < 2:
             r.. -1
@@ -45,7 +45,7 @@ c_ Solution:
 
         seq[i], seq[j] = seq[j], seq[i]
         seq[i+1:] = r..(seq[i+1:])
-        ret = i..("".j..(seq))
+        ret = i..("".j..(seq
         __ ret <= 1 << 31 - 1:
             r.. ret
         ____:

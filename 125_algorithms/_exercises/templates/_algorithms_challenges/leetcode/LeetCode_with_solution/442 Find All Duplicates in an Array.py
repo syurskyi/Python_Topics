@@ -29,7 +29,7 @@ c_ Solution:
         :type A: List[int]
         :rtype: List[int]
         """
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             t = idx(A[i])
             w.... i != t:
                 __ A[i] __ A[t]:
@@ -39,7 +39,7 @@ c_ Solution:
                     t = idx(A[i])
 
         ret    # list
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             __ idx(A[i]) != i:
                 ret.a..(A[i])
 
@@ -47,4 +47,4 @@ c_ Solution:
 
 
 __ _______ __ _______
-    ... s..(Solution().findDuplicates([4,3,2,7,8,2,3,1])) __ s..([2,3])
+    ... s..(Solution().findDuplicates([4,3,2,7,8,2,3,1] __ s..([2,3])

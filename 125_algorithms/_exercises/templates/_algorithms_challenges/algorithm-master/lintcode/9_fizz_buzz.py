@@ -17,7 +17,7 @@ c_ Solution:
             ____ i % 5 __ 0:
                 ans.a..('Buzz')
             ____:
-                ans.a..(s..(i))
+                ans.a..(s..(i
 
         r.. ans
 
@@ -36,7 +36,7 @@ c_ Solution:
 
         w.... a <= n:
             w.... a <= n a.. a < i3 * 3 a.. a < i5 * 5:
-                ans.a..(s..(a))
+                ans.a..(s..(a
                 a += 1
 
             __ a <= n a.. a __ i3 * 3 a.. a __ i5 * 5:

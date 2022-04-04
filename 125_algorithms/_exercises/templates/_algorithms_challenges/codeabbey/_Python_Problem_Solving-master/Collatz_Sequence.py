@@ -3,7 +3,7 @@ data = i..(input
 a = [i..(x) ___ x __ input().s.. ]
 #print(len(a))
 res    # list
-___ i __ r..(l..(a)):
+___ i __ r..(l..(a:
     #print('starting')
     count = 0
     xnext = a[i]
@@ -33,4 +33,4 @@ ___ i __ r..(l..(a)):
             ____:
                 count += 1
 ___ i __ res:
-    print(i,end=(' '))
+    print(i,end=(' '

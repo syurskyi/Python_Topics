@@ -29,7 +29,7 @@ ___ test_files_and_dirs
     w__ TemporaryDirectory(dir=TMP) __ dirname:
         ___ i __ r..(10
             __ i % 2 __ 0:
-                target_dir = __.p...j..(dirname, s..(i))
+                target_dir = __.p...j..(dirname, s..(i
                 __.makedirs(target_dir)
                 ___ j __ r..(5
                     filename = f'{j}.txt'

@@ -35,11 +35,11 @@ ___ validate_license(key: s..) __ b..:
     """Write a regex that matches a PyBites license key
        (e.g. PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4)
     """
-    __(__.m..(r"^PB-(\d|\w){8}-(\d|\w){8}-(\d|\w){8}-(\d|\w){8}$", key)):
+    __(__.m..(r"^PB-(\d|\w){8}-(\d|\w){8}-(\d|\w){8}-(\d|\w){8}$", key:
         r.. T..
     ____:
         r.. F..
 
-print(validate_license("PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4"))
-print(validate_license("vogus"))
+print(validate_license("PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4"
+print(validate_license("vogus"
 

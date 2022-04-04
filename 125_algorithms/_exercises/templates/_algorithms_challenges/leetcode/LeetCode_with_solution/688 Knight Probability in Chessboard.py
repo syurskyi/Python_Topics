@@ -60,7 +60,7 @@ c_ Solution:
                     I = i + di
                     J = j + dj
                     __ 0 <= I < N a.. 0 <= J < N:
-                        cur_q.add((I, J))
+                        cur_q.add((I, J
                         cur_P[I][J] += P[i][j] * 1 / 8
 
             q = cur_q
@@ -90,7 +90,7 @@ c_ Solution:
                     I = i + di
                     J = j + dj
                     __ 0 <= I < N a.. 0 <= J < N:
-                        cur_q.a..((I, J))  # error, count multiple times
+                        cur_q.a..((I, J  # error, count multiple times
                         cur_P[I][J] += P[i][j] * 1 / 8
 
             q = cur_q

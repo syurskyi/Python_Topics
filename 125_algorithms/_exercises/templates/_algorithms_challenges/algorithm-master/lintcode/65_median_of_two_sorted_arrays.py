@@ -19,7 +19,7 @@ c_ Solution:
                 _____
 
             n += l..(nums)
-            heapq.heappush(heap, (nums[0], nums, 0))
+            heapq.heappush(heap, (nums[0], nums, 0
 
         __ n __ 0:
             r.. 0.0
@@ -30,7 +30,7 @@ c_ Solution:
 
             i += 1
             __ i < l..(nums
-                heapq.heappush(heap, (nums[i], nums, i))
+                heapq.heappush(heap, (nums[i], nums, i
 
         __ n & 1 __ 1:
             r.. num * 1.0

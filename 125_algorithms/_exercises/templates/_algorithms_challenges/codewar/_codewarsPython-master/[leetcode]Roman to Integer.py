@@ -14,6 +14,6 @@ c_ Solution:
 
 
 test = Solution()
-print(test.romanToInt('XXXVII')) #37
-print(test.romanToInt('IXXX')) #29
-print(test.romanToInt('MCMXCVI')) #1996
+print(test.romanToInt('XXXVII' #37
+print(test.romanToInt('IXXX' #29
+print(test.romanToInt('MCMXCVI' #1996

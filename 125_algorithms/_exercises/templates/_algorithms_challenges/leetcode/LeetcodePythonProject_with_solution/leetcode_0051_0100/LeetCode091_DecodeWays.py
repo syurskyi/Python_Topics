@@ -33,7 +33,7 @@ c_ Solution(o..
             r.. 0
         __ l..(s) __ 1:
             r.. 1
-        dp = [0]*(l..(s))
+        dp = [0]*(l..(s
         dp[0] = 1
         __ i..(s[0:2]) > 26:
             __ s[1] != '0':
@@ -61,9 +61,9 @@ c_ Solution(o..
             '111',
         ]
         ___ s __ testCases:
-            print('s: %s' % (s))
+            print('s: %s' % (s
             result = numDecodings(s)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
 
 __ _____ __ _____

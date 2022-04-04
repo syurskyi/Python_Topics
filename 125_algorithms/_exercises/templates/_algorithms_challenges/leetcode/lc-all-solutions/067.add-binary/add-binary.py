@@ -5,7 +5,7 @@ c_ Solution(o..
     :type b: str
     :rtype: str
     """
-    diff = abs(l..(a) - l..(b))
+    diff = abs(l..(a) - l..(b
     __ l..(a) > l..(b
       b = "0" * diff + b
     ____:

@@ -36,11 +36,11 @@ c_ Solution(o..
             ('aabcc', 'dbbca', 'aadbbbaccc'),
         ]
         ___ s1, s2, s3 __ testCases:
-            print('s1: %s' % (s1))
-            print('s2: %s' % (s2))
-            print('s3: %s' % (s3))
+            print('s1: %s' % (s1
+            print('s2: %s' % (s2
+            print('s3: %s' % (s3
             result = isInterleave(s1, s2, s3)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
 
 __ _____ __ _____

@@ -39,10 +39,10 @@ ___ measure(bucket_one, bucket_two, goal, start_bucket
             nc = count + 1
             ___ i __ r..(2
                 __ buckets[i] != 0:
-                    toVisit.a..((empty(buckets, i), nc))
+                    toVisit.a..((empty(buckets, i), nc
                 __ buckets[i] != sizes[i]:
-                    toVisit.a..((fill(buckets, i), nc))
-                    toVisit.a..((consolidate(buckets, i), nc))
+                    toVisit.a..((fill(buckets, i), nc
+                    toVisit.a..((consolidate(buckets, i), nc
         __ n.. any(toVisit
             r.. V...('No more moves!')
         buckets, count = toVisit.pop(0)

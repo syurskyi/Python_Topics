@@ -25,7 +25,7 @@ c_ Solution:
             count_valid_path(root, target),
             pathSum(root.left, target),
             pathSum(root.right, target),
-        ))
+
 
     ___ count_valid_path  node, remaining
         __ n.. node:
@@ -35,7 +35,7 @@ c_ Solution:
             i..(node.val __ remaining),
             count_valid_path(node.left, remaining - node.val),
             count_valid_path(node.right, remaining - node.val),
-        ))
+
 
 
 c_ Solution:

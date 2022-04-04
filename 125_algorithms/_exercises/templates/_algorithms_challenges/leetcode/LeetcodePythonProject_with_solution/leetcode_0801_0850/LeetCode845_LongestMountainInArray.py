@@ -12,7 +12,7 @@ c_ Solution(o..
         arr = A
         up, down = [0]*l..(arr), [0]*l..(arr)
         res = 0
-        ___ i __ r..(1, l..(arr)):
+        ___ i __ r..(1, l..(arr:
             __ arr[i] > arr[i-1]:
                 up[i] = up[i-1]+1
         ___ i __ r..(l..(arr)-1, -1, -1
@@ -29,7 +29,7 @@ c_ Solution(o..
         """
         arr = A
         res, up, down = 0, 0, 0
-        ___ i __ r..(1, l..(arr)):
+        ___ i __ r..(1, l..(arr:
             __ (down a.. arr[i-1] < arr[i]) o. (arr[i-1] __ arr[i]
                 up, down = 0, 0
             __ arr[i-1] < arr[i]:

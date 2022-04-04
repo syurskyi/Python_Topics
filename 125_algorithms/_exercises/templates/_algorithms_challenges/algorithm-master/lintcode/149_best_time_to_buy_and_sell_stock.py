@@ -10,7 +10,7 @@ c_ Solution:
 
         Pmin = P[0]
 
-        ___ i __ r..(1, l..(P)):
+        ___ i __ r..(1, l..(P:
             __ P[i] - Pmin > ans:
                 ans = P[i] - Pmin
             __ P[i] < Pmin:

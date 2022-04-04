@@ -12,7 +12,7 @@ c_ Solution(o..
       __ s[i] __ " ":
         i += 1
       ____ s[i] __ "(":
-        _stack.a..(l..(stack))
+        _stack.a..(l..(stack
         i += 1
       ____ s[i] __ ")":
         start = _stack.pop()

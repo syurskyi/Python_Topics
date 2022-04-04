@@ -17,15 +17,15 @@ c_ Solution(o..
       __ side > sideLen:
         r.. F..
     halfLen = 2 * sideLen
-    sticksIdx = s..([i ___ i __ r..(0, l..(nums))])
+    sticksIdx = s..([i ___ i __ r..(0, l..(nums])
     nums.s..()
 
     ___ backpack(nums, subset
       cands = [nums[k] ___ k __ subset]
-      dp = [[F..] * (sideLen + 1) ___ _ __ r..(l..(cands))]
-      ___ i __ r..(0, l..(cands)):
+      dp = [[F..] * (sideLen + 1) ___ _ __ r..(l..(cands]
+      ___ i __ r..(0, l..(cands:
         dp[i][0] = T..
-      ___ i __ r..(0, l..(cands)):
+      ___ i __ r..(0, l..(cands:
         ___ j __ r..(1, sideLen + 1
           dp[i][j] |= dp[i - 1][j]
           __ j - cands[i] >= 0:
@@ -38,7 +38,7 @@ c_ Solution(o..
           r.. T..
         r.. F..
 
-      ___ i __ r..(start, l..(nums)):
+      ___ i __ r..(start, l..(nums:
         __ i > start a.. nums[i] __ nums[i - 1]:
           _____
         __ i __ sticksIdx:

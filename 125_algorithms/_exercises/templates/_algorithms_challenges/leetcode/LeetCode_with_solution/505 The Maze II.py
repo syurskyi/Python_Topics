@@ -38,7 +38,7 @@ c_ Solution:
 
                 __ dist + cur_dist < D[I][J]:
                     D[I][J] = dist + cur_dist
-                    heapq.heappush(q, (D[I][J], I, J))
+                    heapq.heappush(q, (D[I][J], I, J
 
         i, j = destination
         r.. D[i][j] __ D[i][j] != f__("inf") ____ -1

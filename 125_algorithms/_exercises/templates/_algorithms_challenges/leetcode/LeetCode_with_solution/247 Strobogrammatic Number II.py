@@ -28,7 +28,7 @@ c_ Solution(o..
                 cur.pop()
         ____:
             __ l..(cur) __ n:
-                ret.a..("".j..(cur))
+                ret.a..("".j..(cur
                 r..
             ___ elt __ lst:
                 __ n.. (elt __ "00" a.. l..(cur) __ n-2
@@ -64,7 +64,7 @@ c_ SolutionArray(o..
             r..
 
         __ l..(cur)/2 __ n/2:
-            ret.a..("".j..(cur))
+            ret.a..("".j..(cur
             r..
 
         ___ elt __ map1:
@@ -105,12 +105,12 @@ c_ SolutionOutputLimitExceeded(o..
                         temp.a..(m)
                         ___ i __ x..(idx-1, -1, -1
                             temp.a.. m..[temp[i]])
-                        ret.a..("".j..(temp))
+                        ret.a..("".j..(temp
             ____:
                 temp = l..(cur)
                 ___ i __ x..(idx-1, -1, -1
                     temp.a.. m..[temp[i]])
-                    ret.a..("".j..(temp))
+                    ret.a..("".j..(temp
 
             r..
 

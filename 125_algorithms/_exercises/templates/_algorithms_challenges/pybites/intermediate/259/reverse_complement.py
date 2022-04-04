@@ -44,7 +44,7 @@ ___ _clean_sequence(sequence, str_table
 ___ _str_table_lookup(str_table
     str_table_split = str_table.s..
     lookup    # dict
-    ___ i __ r..(l..(str_table_split)):
+    ___ i __ r..(l..(str_table_split:
         __ i __ [0, 1]:
             _____
         row = str_table_split[i].s..("\t")
@@ -72,10 +72,10 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     str_table while removing non input_sequence characters
     e.g. t!t%ttttAACCG --> AAAAAATTGGC
     """
-    sequence_clean = l..(_clean_sequence(sequence, str_table))
+    sequence_clean = l..(_clean_sequence(sequence, str_table
     str_table_lookup = _str_table_lookup(str_table)
 
-    ___ i __ r..(l..(sequence_clean)):
+    ___ i __ r..(l..(sequence_clean:
         sequence_clean[i] = str_table_lookup[sequence_clean[i]]
 
     r.. "".j..(sequence_clean)

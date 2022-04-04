@@ -28,8 +28,8 @@ ___ print_sequence_route(grid: s.., start_coordinates_ N..
                   __ l..(line.r..('|', '').strip > 0]
 
     start_coordinates = [(row, col)
-                         ___ row __ r..(l..(grid_array))
-                         ___ col __ r..(l..(grid_array[row]))
+                         ___ row __ r..(l..(grid_array
+                         ___ col __ r..(l..(grid_array[row]
                          __ grid_array[row][col] __ START_VALUE][0]
 
     current_direction = RIGHT
@@ -40,7 +40,7 @@ ___ print_sequence_route(grid: s.., start_coordinates_ N..
     w.... current_direction != STOP:
         next_coordinates, next_direction = _seek_next(grid_array, next_coordinates)
         __ current_direction __ next_direction:
-            current_vals.a..(s..(this_val))
+            current_vals.a..(s..(this_val
         ____:
             print _*{" ".j..(current_vals)} {next_direction}')
             current_vals = [s..(this_val)]

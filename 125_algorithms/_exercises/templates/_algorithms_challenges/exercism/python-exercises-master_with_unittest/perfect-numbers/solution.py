@@ -9,4 +9,4 @@ ___ divisor_generator(n
 
 ___ is_perfect(n
     ''' A perfect number equals the sum of its positive divisors. '''
-    r.. s..(divisor_generator(n)) + 1 __ n
+    r.. s..(divisor_generator(n + 1 __ n

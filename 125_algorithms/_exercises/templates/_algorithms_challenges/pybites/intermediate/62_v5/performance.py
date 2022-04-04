@@ -80,4 +80,4 @@ ___ list_creation(n: i..) __ L..[i..]:
 
 @timing
 ___ list_creation_fast(n: i..
-    y.. ____ (v ___ v __ r..(n))
+    y.. ____ (v ___ v __ r..(n

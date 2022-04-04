@@ -4,7 +4,7 @@
 
 ___ readScores(listOfStudents
     line  l..(input().s..
-    avScore  s.. m..(f__, line[1:])) / 3
+    avScore  s.. m..(f__, line[1:] / 3
     name  line[0]
     listOfStudents[name]  avScore
 

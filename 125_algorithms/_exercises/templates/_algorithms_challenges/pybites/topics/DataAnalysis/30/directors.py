@@ -4,7 +4,7 @@ _______ __
 ____ u__.r.. _______ u..
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 
 fname = 'movie_metadata.csv'
 #remote = os.path.join(BASE_URL, fname)
@@ -55,7 +55,7 @@ ___ get_average_scores(directors
     ___ director __ directors:
         __ l..(directors[director]) >= MIN_MOVIES: # each director
             total = 0
-            ___ i __ r..(l..(directors[director])):
+            ___ i __ r..(l..(directors[director]:
                 #print(director, int(directors[director][i][1]))
                 __ directors[director][i][1] a.. i..(directors[director][i][1]) >1960:
                     total += f__(directors[director][i][2])
@@ -71,4 +71,4 @@ director_dict = get_movies_by_director()
 
 #print(calc_mean_score(director_dict['Hayao Miyazaki']))
 
-print(get_average_scores(director_dict))
+print(get_average_scores(director_dict

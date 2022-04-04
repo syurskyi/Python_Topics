@@ -119,16 +119,16 @@ c_ Solution:
             ___ j __ r..(n
                 e = grid[i][j]
                 __ e __ "/" o. e __ " ":
-                    ds.union((i, j, B), (i, j, R))
-                    ds.union((i, j, T), (i, j, L))
+                    ds.union((i, j, B), (i, j, R
+                    ds.union((i, j, T), (i, j, L
                 __ e __ "\\" o. e __ " ":  # not elif
-                    ds.union((i, j, T), (i, j, R))
-                    ds.union((i, j, B), (i, j, L))
+                    ds.union((i, j, T), (i, j, R
+                    ds.union((i, j, B), (i, j, L
                 # nbr
                 __ i - 1 >= 0:
-                    ds.union((i, j, T), (i-1, j, B))
+                    ds.union((i, j, T), (i-1, j, B
                 __ j - 1 >= 0:
-                    ds.union((i, j, L), (i, j-1, R))
+                    ds.union((i, j, L), (i, j-1, R
 
                 # unnessary, half closed half open
                 # if i + 1 < m:
@@ -140,7 +140,7 @@ c_ Solution:
         r.. l..(s..(
             ds.find(x)
             ___ x __ ds.pi.k..
-        ))
+
 
 
 __ _______ __ _______

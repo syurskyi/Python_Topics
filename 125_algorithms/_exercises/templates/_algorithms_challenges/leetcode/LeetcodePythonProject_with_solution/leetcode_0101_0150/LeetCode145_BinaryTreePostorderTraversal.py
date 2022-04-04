@@ -35,11 +35,11 @@ c_ Solution(o..
     
     ___ test
         testCases = [
-            TreeNode(5, TreeNode(3, TreeNode(1), TreeNode(4)), TreeNode(7, N.., TreeNode(9)))
+            TreeNode(5, TreeNode(3, TreeNode(1), TreeNode(4, TreeNode(7, N.., TreeNode(9)))
         ]
         ___ root __ testCases:
             result = postorderTraversal(root)
-            print('result: %s' % (result))
+            print('result: %s' % (result
 
 __ _____ __ _____
     Solution().test()

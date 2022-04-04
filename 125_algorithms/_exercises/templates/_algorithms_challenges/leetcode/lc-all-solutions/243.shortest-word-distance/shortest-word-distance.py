@@ -8,7 +8,7 @@ c_ Solution(o..
     """
     idx1 = idx2 = -1
     ans = l..(words)
-    ___ i __ r..(0, l..(words)):
+    ___ i __ r..(0, l..(words:
       word = words[i]
       __ word __ (word1, word2
         __ word __ word1:
@@ -16,5 +16,5 @@ c_ Solution(o..
         ____ word __ word2:
           idx2 = i
         __ idx1 != -1 a.. idx2 != -1:
-          ans = m..(ans, abs(idx2 - idx1))
+          ans = m..(ans, abs(idx2 - idx1
     r.. ans

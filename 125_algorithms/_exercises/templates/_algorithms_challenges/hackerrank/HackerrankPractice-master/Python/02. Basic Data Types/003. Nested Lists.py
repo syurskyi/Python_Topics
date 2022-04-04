@@ -3,7 +3,7 @@
 
 
 ___ secondLowestGrade(classList
-    secondLowestScore  s..(s..(_[1] ___ _ __ classList))[1]
+    secondLowestScore  s..(s..(_[1] ___ _ __ classList[1]
     result  s..([_[0] ___ _ __ classList __ _[1] __ secondLowestScore])
     r.. result
 

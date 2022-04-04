@@ -74,7 +74,7 @@ c_ Solution:
             __ sign __ "==":
                 ds.union(a, b)
             ____:
-                neqs.a..((a, b))
+                neqs.a..((a, b
 
         ___ a, b __ neqs:
             __ ds.find(a) __ ds.find(b

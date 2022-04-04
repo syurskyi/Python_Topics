@@ -3,4 +3,4 @@
 
 
 arr  l.. m..(i.., input().s..()))
-print(s..(arr) - m..(arr), s..(arr) - m..(arr))
+print(s..(arr) - m..(arr), s..(arr) - m..(arr

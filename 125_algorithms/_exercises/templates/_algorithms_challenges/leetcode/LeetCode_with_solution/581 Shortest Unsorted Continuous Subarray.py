@@ -59,7 +59,7 @@ c_ Solution:
         """
         Brute force sort and compare O(n lgn)
         """
-        expected = l..(s..(nums))
+        expected = l..(s..(nums
         i = 0
         w.... i < l..(nums) a.. nums[i] __ expected[i]:
             i += 1

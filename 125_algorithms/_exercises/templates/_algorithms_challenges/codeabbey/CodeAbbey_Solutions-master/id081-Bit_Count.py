@@ -6,5 +6,5 @@ ___ bitCount
         data = i..(num) % 0x100000000
         bits = f..(data, 'b')
         answer.a..(s..(bits.c.. '1')))
-    print(' '.j..(answer))
+    print(' '.j..(answer
 bitCount()

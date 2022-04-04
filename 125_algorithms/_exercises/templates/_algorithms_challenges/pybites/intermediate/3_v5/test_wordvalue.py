@@ -25,7 +25,7 @@ ___ test_max_word_value
     ... max_word_value(words[20000:21000]) __ 'benzalphenylhydrazone'
     # cannot call with empty sequence
     w__ p__.r..(V...
-        ... max_word_value(())
+        ... max_word_value((
 
 
 ___ test_non_scrabble_characters

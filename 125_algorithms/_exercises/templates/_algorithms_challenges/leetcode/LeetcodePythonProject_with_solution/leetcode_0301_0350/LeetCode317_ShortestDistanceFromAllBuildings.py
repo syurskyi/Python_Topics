@@ -33,7 +33,7 @@ c_ Solution(o..
                                     distance[x][y] += level
                                     reach[x][y] += 1
                                     visited[x][y] = T..
-                                    queue.a..((x, y))
+                                    queue.a..((x, y
                         level += 1
         res = f__('inf')
         ___ i __ r..(m
@@ -52,7 +52,7 @@ c_ Solution(o..
         ]
         ___ grid __ testCases:
             result = shortestDistance(grid)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

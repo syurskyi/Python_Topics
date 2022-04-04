@@ -32,9 +32,9 @@ c_ Solution(o..
             [-2,1,-3,4,-1,2,1,-5,4],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = maxSubArray(nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
 
 __ _____ __ _____

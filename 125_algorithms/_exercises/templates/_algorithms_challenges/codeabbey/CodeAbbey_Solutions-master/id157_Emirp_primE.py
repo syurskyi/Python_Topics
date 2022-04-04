@@ -30,5 +30,5 @@ ___ gen_primes(limit300000000
     ___ entry __ data:
         answer.a..(s..(find_answer(entry)))
 
-    print(' '.j..(answer))
+    print(' '.j..(answer
 gen_primes()

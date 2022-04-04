@@ -20,7 +20,7 @@ c_ Solution(o..
         ___ i __ r..(n
             __ right >= n: _____
             __ days[i] __ days[right] a.. i __ right:
-                res = m..(res, m..(days[left], days[right]))
+                res = m..(res, m..(days[left], days[right]
             __ days[i] < days[left] o. days[i] < days[right]:
                 left = i
                 right = k+1+i

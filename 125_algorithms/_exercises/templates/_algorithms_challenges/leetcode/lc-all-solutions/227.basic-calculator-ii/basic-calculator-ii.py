@@ -28,7 +28,7 @@ c_ Solution(o..
           __ ops __ "*":
             queue.a..(a * b)
           ____ ops __ "/":
-            queue.a..(i..(f__(a) / b))
+            queue.a..(i..(f__(a) / b
           ____:
             r.. "invalid"
     __ queue:

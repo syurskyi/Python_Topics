@@ -17,7 +17,7 @@ c_ Solution(o..
         ___ i __ r..(m
             ___ j __ r..(n
                 __ forest[i][j] > 1:
-                    heapq.heappush(heap, (forest[i][j], i, j))
+                    heapq.heappush(heap, (forest[i][j], i, j
         sumVal = 0
         x, y = 0, 0
         w.... heap:
@@ -33,7 +33,7 @@ c_ Solution(o..
         visited = [[F..]*n ___ _ __ r..(m)]
         visited[x][y] = T..
         queue    # list
-        queue.a..((x, y))
+        queue.a..((x, y
         w.... queue:
             size = l..(queue)
             ___ _ __ r..(size
@@ -43,7 +43,7 @@ c_ Solution(o..
                     __ i1 < 0 o. i1 >= m o. j1 < 0 o. j1 >= n o.\
                         forest[i1][j1] __ 0 o. visited[i1][j1]:
                         _____
-                    queue.a..((i1, j1))
+                    queue.a..((i1, j1
                     visited[i1][j1] = T..
             step += 1
         r.. -1

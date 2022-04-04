@@ -9,7 +9,7 @@ c_ Solution(o..
         __ n.. nums: r.. 0
         __ l..(nums) __ 1: r.. nums[0]
         r.. m..(robHelper(nums, 0, l..(nums)-2),\
-                   robHelper(nums, 1, l..(nums)-1))
+                   robHelper(nums, 1, l..(nums)-1
     
     ___ robHelper  nums, lo, hi
         include, exclude = 0, 0
@@ -35,7 +35,7 @@ c_ Solution(o..
                 dp0[i] = m..(nums[i], nums[i-1])
             ____:
                 dp0[i] = m..(dp0[i-1], dp0[i-2] + nums[i])
-        ___ i __ r..(1, l..(nums)):
+        ___ i __ r..(1, l..(nums:
             __ i __ 1:
                 dp1[i] = nums[i]
             ____ i __ 2:
@@ -52,9 +52,9 @@ c_ Solution(o..
             [2, 1, 1, 2]
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = rob(nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

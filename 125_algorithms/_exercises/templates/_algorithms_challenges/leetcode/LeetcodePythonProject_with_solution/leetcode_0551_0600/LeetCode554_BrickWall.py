@@ -35,7 +35,7 @@ c_ Solution(o..
         ]
         ___ wall __ testCases:
             print('wall:')
-            print('\n'.j..([s..(row) ___ row __ wall]))
+            print('\n'.j..([s..(row) ___ row __ wall]
             result = leastBricks(wall)
             print('result: %s' % result)
             print('-='*30+'-')

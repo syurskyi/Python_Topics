@@ -10,7 +10,7 @@ c_ Solution(o..
         :type k: int
         :rtype: List[int]
         """
-        res = l..(r..(1, n-k))
+        res = l..(r..(1, n-k
         ___ i __ r..(k+1
             __ i%2 __ 0:
                 res.a..(n-k+i//2)

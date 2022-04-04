@@ -36,7 +36,7 @@ c_ Solution:
         :rtype: int
         """
         n = l..(s)
-        F = d..(l....: d..(i..))
+        F = d..(l....: d..(i..
         ___ i __ r..(n
             F[i][i] = 1
 

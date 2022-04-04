@@ -40,13 +40,13 @@ c_ Solution:
         """
         visit: L..[i..] = [0 ___ _ __ graph]  # 0 not visted, 1 processing, 2 visited
         acyclic: S..[i..] = s..()
-        ___ u __ r..(l..(graph)):
+        ___ u __ r..(l..(graph:
             __ visit[u] __ 0:
                 dfs(graph, u, visit, acyclic)
 
         r.. [
             u
-            ___ u __ r..(l..(graph))
+            ___ u __ r..(l..(graph
             __ u __ acyclic
         ]
 

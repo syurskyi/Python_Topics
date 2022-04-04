@@ -16,7 +16,7 @@ c_ Solution(o..
       r = read4(tmp)
       __ r __ 0:
         _____
-      ___ i __ r..(m..(r, n - cnt)):
+      ___ i __ r..(m..(r, n - cnt:
         buf[cnt] = tmp[i]
         cnt += 1
     r.. cnt

@@ -31,9 +31,9 @@ c_ Solution(o..
             ('ABCDE', 'AEC'),
         ]
         ___ s, t __ testCases:
-            print('s: %s, t: %s' % (s, t))
+            print('s: %s, t: %s' % (s, t
             result = numDistinct(s, t)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 Solution().test()

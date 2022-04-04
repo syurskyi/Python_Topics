@@ -78,7 +78,7 @@ c_ Solution:
 
             p..    # list
             dfs(node, visited, p..)
-            ans.a..(s..(p..))
+            ans.a..(s..(p..
 
         r.. ans
 

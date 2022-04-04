@@ -36,7 +36,7 @@ c_ Solution(o..
             print('word1: %s' % word1)
             print('word2: %s' % word2)
             result = shortestDistance(words, word1, word2)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

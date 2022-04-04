@@ -16,4 +16,4 @@ ___ dict2nt(dict_
 
 ___ nt2json(nt
     d = nt._asdict()
-    r.. json.dumps(s..(d))
+    r.. json.dumps(s..(d

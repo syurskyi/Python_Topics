@@ -86,7 +86,7 @@ ___ mix(s1,s2
 #so the next few cycles will help us to sort the given string according to the desired result
 #here the string is sorted on the basis of the length of the string
     
-    ___ i __ r..(l..(res_string)):
+    ___ i __ r..(l..(res_string:
         ___ j __ r..(0,l..(res_string)-1
             
             # check if the string is less than the next item in the list if yes swap the two string

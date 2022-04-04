@@ -26,9 +26,9 @@ c_ Solution(o..
             20,
         ]
         ___ n __ testCases:
-            print('n: %s' % (n))
+            print('n: %s' % (n
             result = nthUglyNumber(n)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*30+'-')
 
 __ _____ __ _____

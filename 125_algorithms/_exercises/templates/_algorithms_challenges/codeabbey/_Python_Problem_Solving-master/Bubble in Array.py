@@ -3,7 +3,7 @@ a.remove(a[-1])
 swap_count = 0
 seed = 0
 
-___ i __ r..(l..(a)):
+___ i __ r..(l..(a:
     __ i __ l..(a)-1:
         _____
     __ a[i] > a[i+1]:
@@ -15,7 +15,7 @@ ___ i __ r..(l..(a)):
         _____
 
 #seed = seed - 4513010
-___ j __ r..(l..(a)):
+___ j __ r..(l..(a:
     #print('index',j,'value is',a[j])
     seed = (seed + a[j]) * 113
     

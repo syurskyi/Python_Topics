@@ -56,6 +56,6 @@ c_ Solution:
 
 
 __ _______ __ _______
-    ... Solution().findRightInterval(Interval.new([ [3,4], [2,3], [1,2] ])) __ [-1, 0, 1]
-    ... Solution().findRightInterval(Interval.new([ [1,2] ])) __ [-1]
-    ... Solution().findRightInterval(Interval.new([ [1,4], [2,3], [3,4] ])) __ [-1, 2, -1]
+    ... Solution().findRightInterval(Interval.new([ [3,4], [2,3], [1,2] ] __ [-1, 0, 1]
+    ... Solution().findRightInterval(Interval.new([ [1,2] ] __ [-1]
+    ... Solution().findRightInterval(Interval.new([ [1,4], [2,3], [3,4] ] __ [-1, 2, -1]

@@ -39,7 +39,7 @@ c_ Solution:
         __ n.. people:
             r.. ans
 
-        people.s..(key=l.... p: (p[0], -p[1]))
+        people.s..(key=l.... p: (p[0], -p[1]
 
         ___ i __ r..(l..(people) - 1, -1, -1
             ans.insert(people[i][1], people[i])
@@ -61,11 +61,11 @@ c_ Solution:
         h2mans    # dict
         heights    # list
 
-        ___ i __ r..(l..(people)):
+        ___ i __ r..(l..(people:
             h, k = people[i]
 
             __ h __ h2mans:
-                h2mans[h].a..((k, i))
+                h2mans[h].a..((k, i
             ____:
                 h2mans[h] = [(k, i)]
                 heights.a..(h)

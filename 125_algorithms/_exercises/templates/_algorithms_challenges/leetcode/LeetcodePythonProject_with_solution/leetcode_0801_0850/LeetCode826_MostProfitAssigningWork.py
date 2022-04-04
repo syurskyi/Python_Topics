@@ -14,7 +14,7 @@ c_ Solution(o..
         arr = [[d, p] ___ d, p __ z..(difficulty, profit)]
         arr.s..()
         p0 = 0
-        ___ i __ r..(l..(arr)):
+        ___ i __ r..(l..(arr:
             p0 = m..(p0, arr[i][1])
             arr[i][1] = p0
         res = 0

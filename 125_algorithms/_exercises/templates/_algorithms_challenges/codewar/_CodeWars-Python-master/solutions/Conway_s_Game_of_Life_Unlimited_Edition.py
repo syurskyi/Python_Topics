@@ -16,12 +16,12 @@ ___ get_generation(cells, generations
     ___ row __ origin:
         row.insert(0, 0)
         row.a..(0)
-    origin.insert(0, [0] * l..(origin[0]))
-    origin.a..([0] * l..(origin[0]))
+    origin.insert(0, [0] * l..(origin[0]
+    origin.a..([0] * l..(origin[0]
 
     result = d..(origin)
-    ___ r __ r..(l..(origin)):
-        ___ c __ r..(l..(origin[0])):
+    ___ r __ r..(l..(origin:
+        ___ c __ r..(l..(origin[0]:
             neighbours = get_living_neighbours(origin, r, c)
             __ neighbours > 3 o. neighbours < 2:
                 result[r][c] = 0

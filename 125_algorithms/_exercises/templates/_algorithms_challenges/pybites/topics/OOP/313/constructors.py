@@ -31,5 +31,5 @@ c_ Domain:
     ___ __str__(self) __ s..:
         r.. f'{name}'
 
-print(Domain.parse_url('http://www.khooville.com'))
+print(Domain.parse_url('http://www.khooville.com'
 #print(Domain.parse_email('sckhoo@khooville.com'))

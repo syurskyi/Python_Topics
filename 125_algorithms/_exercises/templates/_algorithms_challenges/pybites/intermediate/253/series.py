@@ -165,7 +165,7 @@ ___ custom_series_function(ser: pd.Series,
 
         r.. F..
     
-    mask = pd.Series([F..] * l..(ser))
+    mask = pd.Series([F..] * l..(ser
     ___ stat __ relevant:
         mask |= ser.between(stats.loc[stat] - within,stats.loc[stat] + within)
 

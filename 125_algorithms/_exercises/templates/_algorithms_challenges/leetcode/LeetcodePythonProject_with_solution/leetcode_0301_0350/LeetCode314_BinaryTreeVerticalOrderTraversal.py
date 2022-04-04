@@ -27,9 +27,9 @@ c_ Solution(o..
             ____:
                 hashmap[level].a..(node.val)
             __ node.left:
-                queue.a..((level-1, node.left))
+                queue.a..((level-1, node.left
             __ node.right:
-                queue.a..((level+1, node.right))
+                queue.a..((level+1, node.right
         ___ i __ r..(minLevel, maxLevel+1
             result.a..(hashmap[i])
         r.. result

@@ -1,7 +1,7 @@
 _______ i..
 
 rank = [s..(i) ___ i __ r..(2,11)] +  'J', 'Q', 'K', 'A'
-print(l..(rank))
+print(l..(rank
 
 suits =  'H', 'C', 'D', 'S'
 
@@ -10,4 +10,4 @@ print(deck)
 
 combinations = [combination ___ combination __ i...combinations(deck, 5)]
 
-print(l..(combinations))
+print(l..(combinations

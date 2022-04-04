@@ -46,7 +46,7 @@ __ _______ __ _______
     #
     #  W <-                    ->  E(ast)
     #
-    print(search_apartment(A, "W"))  # [0, 1, 4]
-    print(search_apartment(A, "E"))  # [4, 6, 7]
-    print(search_apartment(B, "W"))  # [0, 5]
-    print(search_apartment(B, "E"))  # [5]
+    print(search_apartment(A, "W"  # [0, 1, 4]
+    print(search_apartment(A, "E"  # [4, 6, 7]
+    print(search_apartment(B, "W"  # [0, 5]
+    print(search_apartment(B, "E"  # [5]

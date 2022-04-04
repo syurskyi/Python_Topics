@@ -45,7 +45,7 @@ ___ calculate(list_of_texts
     threads    # list
     ___ i __ r..(total_workers
         worker = Thread(target=count_letters, args=(queue_of_texts,
-                                                    letter_to_frequency, i))
+                                                    letter_to_frequency, i
         worker.start()
         threads.a..(worker)
     queue_of_texts.j..()

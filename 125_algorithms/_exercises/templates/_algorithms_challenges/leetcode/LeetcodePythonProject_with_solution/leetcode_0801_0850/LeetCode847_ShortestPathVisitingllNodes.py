@@ -16,8 +16,8 @@ c_ Solution(o..
         
         ___ i __ r..(n
             tmp = (1 << i)
-            hashset.add((tmp, i, 0))
-            queue.a..((tmp, i, 1))
+            hashset.add((tmp, i, 0
+            queue.a..((tmp, i, 1
         
         w.... queue:
             curr = queue.pop(0)
@@ -30,7 +30,7 @@ c_ Solution(o..
                     bitMask |= (1<<v)
                     t = (bitMask, v, 0)
                     __ t n.. __ hashset:
-                        queue.a..((bitMask, v, curr[2]+1))
+                        queue.a..((bitMask, v, curr[2]+1
                         hashset.add(t)
         r.. -1
     

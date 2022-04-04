@@ -9,4 +9,4 @@ ___ print_names_to_columns(names: L..[s..], cols: i.. = 2) __ N..
         ____:
             x.a.. _*| {name:{10}}')
 
-    print(''.j..(x))
+    print(''.j..(x

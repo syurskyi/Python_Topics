@@ -24,6 +24,6 @@ ___ convert(number: i.., base: i.. = 2) __ s..:
         d...a..(number % base)
         number //= base
 
-    d.. = l.. m..(digit_map, d..))
+    d.. = l.. m..(digit_map, d..
 
-    r.. ''.j..(r..(d..))
+    r.. ''.j..(r..(d..

@@ -45,14 +45,14 @@ c_ TopVotedCandidate:
         """
         maxes    # list  # [(t, i)]  at time t
         counter = d..(i..)
-        tp = s..(z..(times, persons))
+        tp = s..(z..(times, persons
         ___ t, p __ tp:
             counter[p] += 1
             __ n.. maxes o. counter[maxes[-1][1]] <= counter[p]:
-                maxes.a..((t, p))
+                maxes.a..((t, p
 
     ___ q  t: i..) __ i..:
-        i = bisect.bisect(maxes, (t, 0))
+        i = bisect.bisect(maxes, (t, 0
         # equal
         __ i < l..(maxes) a.. maxes[i][0] __ t:
             r.. maxes[i][1]

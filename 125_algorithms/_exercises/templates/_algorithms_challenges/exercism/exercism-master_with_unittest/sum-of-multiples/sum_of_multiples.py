@@ -2,7 +2,7 @@ ____ i.. _______ c__
 
 
 ___ sum_of_multiples(limit, factors
-    r.. s..(all_multiples(limit, factors))
+    r.. s..(all_multiples(limit, factors
 
 
 ___ all_multiples(limit, factors

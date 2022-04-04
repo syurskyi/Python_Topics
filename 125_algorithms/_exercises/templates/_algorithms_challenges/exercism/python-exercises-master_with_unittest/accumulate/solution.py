@@ -4,5 +4,5 @@
 ___ accumulate(seq, op
     res    # list
     ___ el __ seq:
-        res.a..(op(el))
+        res.a..(op(el
     r.. res

@@ -14,4 +14,4 @@ ___ get_belt(user_score, scores=scores, belts=belts
 
 
 
-print(get_belt(10))
+print(get_belt(10

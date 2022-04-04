@@ -7,7 +7,7 @@ _______ u__.r..
 
 # getting the data
 COURSE_TIMES = __.p...j..(
-    __.getenv("TMP", "/tmp"),
+    __.g..("TMP", "/tmp"),
     'course_timings'
 )
 u__.r...u..(
@@ -43,7 +43,7 @@ ___ calc_total_course_duration(timestamps
     s.. = d__ y.._2000,  m.._1,  d.._1, hour=0, minute=0, second=0)
     s = s.. + t..(hours=0, minutes=0, seconds=10)
     ___ item __ timestamps:
-        s.. = s.. + t..(hours=0, minutes=i..(item.s..(':')[0]), seconds=i..(item.s..(':')[1]))
+        s.. = s.. + t..(hours=0, minutes=i..(item.s..(':')[0]), seconds=i..(item.s..(':')[1]
     r..(s..(s...time()))
 
 """

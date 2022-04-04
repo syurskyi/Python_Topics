@@ -119,8 +119,8 @@ c_ SnakeGame:
         """
         new head is valid, track it
         """
-        snake.appendleft((hx, hy))
-        body.add((hx, hy))
+        snake.appendleft((hx, hy
+        body.add((hx, hy
 
         """
         There is no food anymore

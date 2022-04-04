@@ -34,5 +34,5 @@ ___ get_number_books_read(books_per_year_goal: i..,
 
 
 #print(NOW)
-print(get_number_books_read(52, 'Sunday, March 18th, 2019'))
+print(get_number_books_read(52, 'Sunday, March 18th, 2019'
 #get_number_books_read(52)

@@ -43,7 +43,7 @@ c_ Solution:
         h = d..(l..)
         ___ d_idx, w __ e..(d
             w_idx = 0
-            h[w[w_idx]].a..((d_idx, w_idx))
+            h[w[w_idx]].a..((d_idx, w_idx
 
         ret = ""
         ___ e __ s:
@@ -53,9 +53,9 @@ c_ Solution:
                 w_idx += 1
                 __ w_idx >= l..(w
                     # if len(w) >= len(ret) and w < ret:  # error
-                    ret = m..(ret, w, key=l.... x: (-l..(x), x))  # compare with primary and secondary key
+                    ret = m..(ret, w, key=l.... x: (-l..(x), x  # compare with primary and secondary key
                 ____:
-                    h[w[w_idx]].a..((d_idx, w_idx))
+                    h[w[w_idx]].a..((d_idx, w_idx
 
         r.. ret
 

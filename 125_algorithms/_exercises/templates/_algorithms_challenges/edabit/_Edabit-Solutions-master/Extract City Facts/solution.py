@@ -6,4 +6,4 @@ ___ city_facts(city
             p  city[i]
         ____:
             co  city[i]
-    r.. ("{} has a population of {} and is situated in {}".f..(c,p,co))
+    r.. ("{} has a population of {} and is situated in {}".f..(c,p,co

@@ -23,4 +23,4 @@ ___ calc_sums(values: s.. = VALUES) __ Generator[s.., N.., N..]:
     template = "The sum of {} and {}, rounded to two decimal places, is {:.2f}."
 
     ___ a, b __ pairs:
-        y.. template.f..(a, b, my_round(a + b))
+        y.. template.f..(a, b, my_round(a + b

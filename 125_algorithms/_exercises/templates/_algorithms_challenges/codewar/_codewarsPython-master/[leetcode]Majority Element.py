@@ -9,4 +9,4 @@ c_ Solution:
         r.. m..(numDict.values
 
 test = Solution()
-print(test.majorityElement([1,2,3,4,4,4,5,7,7,7,4,7]))
+print(test.majorityElement([1,2,3,4,4,4,5,7,7,7,4,7]

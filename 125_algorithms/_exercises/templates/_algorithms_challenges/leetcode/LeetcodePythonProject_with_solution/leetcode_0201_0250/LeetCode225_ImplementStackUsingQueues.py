@@ -16,11 +16,11 @@ c_ Solution(o..
             __ queue1:
                 queue2.a..(x)
                 w.... queue1:
-                    queue2.a..(queue1.pop(0))
+                    queue2.a..(queue1.pop(0
             ____:
                 queue1.a..(x)
                 w.... queue2:
-                    queue1.a..(queue2.pop(0))
+                    queue1.a..(queue2.pop(0
     
     ___ pop
         __ queue1:

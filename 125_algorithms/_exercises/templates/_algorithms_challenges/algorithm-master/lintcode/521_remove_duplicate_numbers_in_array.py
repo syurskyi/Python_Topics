@@ -13,7 +13,7 @@ c_ Solution:
             r.. ans
 
         exists = s..()
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             __ nums[i] n.. __ exists:
                 exists.add(nums[i])
                 ans += 1
@@ -39,7 +39,7 @@ c_ Solution:
 
         # for `nums[0]`
         ans = 1
-        ___ i __ r..(1, l..(nums)):
+        ___ i __ r..(1, l..(nums:
             __ nums[i - 1] != nums[i]:
                 nums[ans] = nums[i]
                 ans += 1

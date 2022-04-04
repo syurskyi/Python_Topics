@@ -15,7 +15,7 @@ c_ Solution(o..
         m = {0: -1}  # initial condition, sum -> idx
         maxa = 0
         s = 0
-        ___ i __ x..(l..(A)):
+        ___ i __ x..(l..(A:
             s += A[i]
             t = s - k  # s - t = k
             __ t __ m:

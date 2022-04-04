@@ -34,7 +34,7 @@ c_ Solution:
                 ___ sub __ subs
                 __ n >= sub[-1]
             ])
-            subs.add((n,))
+            subs.add((n,
             
         r.. [
             l..(sub)
@@ -67,4 +67,4 @@ c_ Solution:
                         ret.add(cur)
                         F[i].a..(cur)
 
-        r.. l.. m..(l.., ret))
+        r.. l.. m..(l.., ret

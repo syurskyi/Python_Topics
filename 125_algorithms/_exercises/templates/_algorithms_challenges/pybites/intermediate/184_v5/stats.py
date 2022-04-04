@@ -12,13 +12,13 @@ c_ BiteStats:
 
     ___ _load_data  data) __ l..:
         w__ o.. DATA) __ d:
-            r.. l..(DictReader(d))
+            r.. l..(DictReader(d
 
     ___ - , data=DATA
         rows = _load_data(data)
 
     ___ _count_attribute  attrib, completed=F..
-        r.. C..(x[attrib] ___ x __ rows __ n.. completed o. (completed a.. x 'completed'  __ 'True'))
+        r.. C..(x[attrib] ___ x __ rows __ n.. completed o. (completed a.. x 'completed'  __ 'True'
 
     ___ _count_clicks  attrib, completed=F..
         counter = C..()

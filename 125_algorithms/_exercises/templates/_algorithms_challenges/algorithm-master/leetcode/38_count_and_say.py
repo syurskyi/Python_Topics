@@ -19,11 +19,11 @@ c_ Solution:
                 __ c __ char:
                     cnt += 1
                     _____
-                _queue.extend((s..(cnt), char))
+                _queue.extend((s..(cnt), char
                 cnt = 1
                 char = c
 
-            _queue.extend((s..(cnt), char))
+            _queue.extend((s..(cnt), char
             queue, _queue = ''.j..(_queue), []
 
         r.. queue

@@ -34,7 +34,7 @@ ___ i __ r..(data
     
     day = day_b - day_a
     
-    s__ += '('+s..(i..(day))+' '+s..(i..(hour))+' '+s..(i..(mino))+' '+s..(i..(sec))+')'
+    s__ += '('+s..(i..(day+' '+s..(i..(hour+' '+s..(i..(mino+' '+s..(i..(sec+')'
     s__ += ' '
     
 print(s__)

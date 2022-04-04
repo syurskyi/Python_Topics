@@ -32,13 +32,13 @@ c_ Solution(o..
         result    # list
         w.... nums1 a.. nums2:
             __ nums1 >= nums2:
-                result.a..(nums1.pop(0))
+                result.a..(nums1.pop(0
             ____:
-                result.a..(nums2.pop(0))
+                result.a..(nums2.pop(0
         w.... nums1:
-            result.a..(nums1.pop(0))
+            result.a..(nums1.pop(0
         w.... nums2:
-            result.a..(nums2.pop(0))
+            result.a..(nums2.pop(0
         r.. result
     
     ___ test
@@ -65,11 +65,11 @@ c_ Solution(o..
             ),
         ]
         ___ nums1, nums2, k __ testCases:
-            print('nums1: %s' % (nums1))
-            print('nums2: %s' % (nums2))
-            print('k: %s' % (k))
+            print('nums1: %s' % (nums1
+            print('nums2: %s' % (nums2
+            print('k: %s' % (k
             result = maxNumber(nums1, nums2, k)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

@@ -12,7 +12,7 @@ ___ get_sum(values
 
 ___ i __ r..(amount_values
     values = l.. m..(i.., input().s..()))
-    results.a..(get_sum(values))
+    results.a..(get_sum(values
 
 print(*results)
 

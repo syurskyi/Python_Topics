@@ -48,7 +48,7 @@ c_ Solution:
         cur_path.a..(root.val)
         # terminal condition
         __ s..__0 a.. root.left __ N.. a.. root.right __ N..
-            result.a..(l..(cur_path))  # new copy
+            result.a..(l..(cur_path  # new copy
             r..
 
         # dfs with pre-checking

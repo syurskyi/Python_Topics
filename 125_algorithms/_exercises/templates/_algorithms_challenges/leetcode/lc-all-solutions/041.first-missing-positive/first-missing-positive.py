@@ -11,7 +11,7 @@ c_ Solution(o..
       ____:
         i += 1
 
-    ___ i __ r..(0, l..(nums)):
+    ___ i __ r..(0, l..(nums:
       __ nums[i] != i + 1:
         r.. i + 1
     r.. l..(nums) + 1

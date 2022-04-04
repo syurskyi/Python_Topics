@@ -18,7 +18,7 @@ _______ u__.r..
 _______ __
 
 # prep
-DIR = __.getenv('TMP', '/tmp')
+DIR = __.g..('TMP', '/tmp')
 FILENAME = "feed.txt"
 tempfile = __.p...j..(DIR, FILENAME)
 u__.r...u..(
@@ -37,6 +37,6 @@ ___ get_pybites_top_tags(n=10
        data already loaded into the content variable"""
     m.. = __.f..(r'<category>([a-z]+)<\/category>', content)
     c = C..(m..)
-    r..(c.most_common(10))
+    r..(c.most_common(10
 
 get_pybites_top_tags()

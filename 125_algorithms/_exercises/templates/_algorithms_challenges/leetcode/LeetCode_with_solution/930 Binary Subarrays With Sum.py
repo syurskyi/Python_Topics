@@ -33,7 +33,7 @@ c_ Solution:
         ret = 0
         i_lo, i_hi, j = 0, 0, 0
         sum_lo, sum_hi = 0, 0
-        ___ j __ r..(l..(A)):
+        ___ j __ r..(l..(A:
             sum_lo += A[j]
             sum_hi += A[j]
             w.... i_lo < j a.. sum_lo > S:

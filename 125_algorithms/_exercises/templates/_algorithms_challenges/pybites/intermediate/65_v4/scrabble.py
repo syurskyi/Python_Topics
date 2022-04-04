@@ -4,7 +4,7 @@ _______ __
 _______ u__.r..
 
 # PREWORK
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 DICT = 'dictionary.txt'
 DICTIONARY = __.p...j..(TMP, DICT)
 u__.r...u..(
@@ -21,7 +21,7 @@ ___ get_possible_dict_words(draw
        valid dictionary words. Use _get_permutations_draw and provided
        dictionary"""
     perms = _get_permutations_draw(draw)
-    r.. l..(f.. l.... x: x __ dictionary, perms))
+    r.. l..(f.. l.... x: x __ dictionary, perms
 
 
 ___ _get_permutations_draw(draw

@@ -13,7 +13,7 @@ c_ Solution(o..
     :rtype: TreeNode
     """
     __ t1 o. t2:
-      root = TreeNode((t1 a.. t1.val o. 0) + (t2 a.. t2.val o. 0))
+      root = TreeNode((t1 a.. t1.val o. 0) + (t2 a.. t2.val o. 0
       root.left = mergeTrees(t1 a.. t1.left, t2 a.. t2.left)
       root.right = mergeTrees(t1 a.. t1.right, t2 a.. t2.right)
       r.. root

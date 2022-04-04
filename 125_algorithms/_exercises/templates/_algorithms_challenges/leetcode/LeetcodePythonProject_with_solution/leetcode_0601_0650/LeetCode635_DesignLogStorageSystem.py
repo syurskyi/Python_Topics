@@ -21,7 +21,7 @@ c_ LogSystem(o..
         :type timestamp: str
         :rtype: void
         """
-        timestamps.a..((id, timestamp))
+        timestamps.a..((id, timestamp
 
     ___ retrieve  s, e, gra
         """
@@ -43,8 +43,8 @@ __ _____ __ _____
     log.put(1, "2017:01:01:23:59:59")
     log.put(2, "2017:01:01:22:59:59")
     log.put(3, "2016:01:01:00:00:00")
-    print(log.retrieve("2016:01:01:01:01:01","2017:01:01:23:00:00","Year"))
-    print(log.retrieve("2016:01:01:01:01:01","2017:01:01:23:00:00","Hour"))
+    print(log.retrieve("2016:01:01:01:01:01","2017:01:01:23:00:00","Year"
+    print(log.retrieve("2016:01:01:01:01:01","2017:01:01:23:00:00","Hour"
     print('-='*30+'-')
     
 #     log = LogSystem()

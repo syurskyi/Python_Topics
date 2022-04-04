@@ -27,8 +27,8 @@ c_ Solution:
                 __ pos + x __ stones[-1]:
                     r.. T..
 
-                visited.add((pos + x, x))
-                queue.a..((pos + x, x))
+                visited.add((pos + x, x
+                queue.a..((pos + x, x
 
         r.. F..
 

@@ -38,7 +38,7 @@ ___ my_join_lists(lst_of_lst: L..[L..[s..]], sep: s..) __ Union[L..[s..], N..]:
     r.. result
 
 
-print(my_join_lists([['a', 'b' ,  'c']], '&'))
+print(my_join_lists([['a', 'b' ,  'c']], '&'
 
 ### -------------------------------- Pybites solution -------------------------------
 

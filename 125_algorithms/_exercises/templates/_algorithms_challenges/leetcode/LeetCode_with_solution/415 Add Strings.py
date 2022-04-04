@@ -47,7 +47,7 @@ c_ Solution:
         __ carry:
             ret.a..(carry)
 
-        r.. "".j.. m..(s.., ret[::-1]))
+        r.. "".j.. m..(s.., ret[::-1]
 
 
 __ _______ __ _______

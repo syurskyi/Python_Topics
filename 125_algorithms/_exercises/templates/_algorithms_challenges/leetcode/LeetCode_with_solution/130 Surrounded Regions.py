@@ -34,11 +34,11 @@ c_ Solution:
         m = l..(board)
         n = l..(board[0])
         ___ i __ x..(m
-            __ board[i][0]__'O': q.a..((i, 0))
-            __ board[i][n-1]__'O': q.a..((i, n-1))
+            __ board[i][0]__'O': q.a..((i, 0
+            __ board[i][n-1]__'O': q.a..((i, n-1
         ___ j __ x..(1, n-1
-            __ board[0][j]__'O': q.a..((0, j))
-            __ board[m-1][j]__'O': q.a..((m-1, j))
+            __ board[0][j]__'O': q.a..((0, j
+            __ board[m-1][j]__'O': q.a..((m-1, j
 
 
         w.... q: # dynamically expanding, no deletion of elements
@@ -48,7 +48,7 @@ c_ Solution:
                 row = cor[0]+direction[0]
                 col = cor[1]+direction[1]
                 __ 0<=row<m a.. 0<=col<n a.. board[row][col]__'O':
-                    q.a..((row, col))
+                    q.a..((row, col
 
 
         ___ i __ x..(m

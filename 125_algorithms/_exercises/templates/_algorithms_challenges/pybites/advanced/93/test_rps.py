@@ -66,7 +66,7 @@ ___ test_get_winner(player1, player2, result
 ___ test_stop_iteration(my_game
     # 3.6 = StopIteration
     # 3.7 = RuntimeError - see: https://bugs.python.org/issue32670
-    w__ p__.r..((StopIteration, RuntimeError)):
+    w__ p__.r..((StopIteration, RuntimeError:
         my_game.send('q')
 
 

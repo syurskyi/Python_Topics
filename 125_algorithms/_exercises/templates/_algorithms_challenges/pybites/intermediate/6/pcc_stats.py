@@ -3,7 +3,7 @@ _______ __
 _______ u__.r..
 
 # prep
-tmp = __.getenv("TMP", "/tmp")
+tmp = __.g..("TMP", "/tmp")
 tempfile = __.p...j..(tmp, 'dirnames')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/dirnames.txt',
@@ -71,7 +71,7 @@ ___ diehard_pybites(files_ N..
             users.update([user])
             popular_challenges.update([challenge])
 
-    r.. Stats(users.most_common()[0][0], (popular_challenges.most_common()[0][0], popular_challenges.most_common()[0][1]))
+    r.. Stats(users.most_common()[0][0], (popular_challenges.most_common()[0][0], popular_challenges.most_common()[0][1]
 
 
 # if __name__ == "__main__":

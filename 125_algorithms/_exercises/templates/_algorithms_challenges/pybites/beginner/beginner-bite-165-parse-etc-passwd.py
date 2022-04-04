@@ -50,7 +50,7 @@ x = get_users_for_shell()
 print(x)
 #for i in x:
 #    print(i)
-print(next(x))
-print(next(x))
-print(next(x))
+print(next(x
+print(next(x
+print(next(x
 #print(sorted(x))

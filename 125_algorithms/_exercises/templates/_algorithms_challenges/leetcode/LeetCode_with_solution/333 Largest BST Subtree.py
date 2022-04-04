@@ -49,7 +49,7 @@ c_ Solution(o..
         sz = 1 + left.sz + right.sz
         gmax = m..(gmax, sz)
         # when root.left is None
-        r.. BSTInfo(sz, m..(root.val, left.lo), m..(root.val, right.hi))
+        r.. BSTInfo(sz, m..(root.val, left.lo), m..(root.val, right.hi
 
 
 c_ SolutionError(o..

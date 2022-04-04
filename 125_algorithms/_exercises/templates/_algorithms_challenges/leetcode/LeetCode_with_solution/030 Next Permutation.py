@@ -29,11 +29,11 @@ c_ Solution:
         partition_num_index = 0
         change_num_index = 0
 
-        ___ i __ r..(x..(1, length)):
+        ___ i __ r..(x..(1, length:
             __ num[i]>num[i-1]:
                 partition_num_index = i-1
                 _____
-        ___ i __ r..(x..(1, length)):
+        ___ i __ r..(x..(1, length:
             __ num[i]>num[partition_num_index]:
                 change_num_index = i
                 _____

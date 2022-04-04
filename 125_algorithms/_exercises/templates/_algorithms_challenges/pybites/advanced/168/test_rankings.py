@@ -83,7 +83,7 @@ ___ test_first_ninja_ranks_in_object(ninja_ranks
 
 
 ___ test_dumping_lowest_ranking_fist_ninjas(ninja_ranks
-    actual = ninja_ranks.dump()
+    actual = ninja_ranks.d.. )
     expected = Ninja(name="sam", bites=195)
     ... actual __ expected
     ... l..(ninja_ranks) __ 10
@@ -115,7 +115,7 @@ ___ test_lowest_ranking_with_arg(ninja_ranks
 
 
 ___ test_adding_a_ninja(ninja_ranks
-    ninja_ranks.add(Ninja(name="sam", bites=195))
+    ninja_ranks.add(Ninja(name="sam", bites=195
     ... l..(ninja_ranks) __ 12
 
 
@@ -149,7 +149,7 @@ ___ test_pairing_with_no_arg(ninja_ranks
     actual = ninja_ranks.pair_up()
     ... l..(actual) __ 3
 
-    expected = (Ninja(name="natalia", bites=282), Ninja(name="sara", bites=196))
+    expected = (Ninja(name="natalia", bites=282), Ninja(name="sara", bites=196
     ... actual[1] __ expected
 
 
@@ -158,9 +158,9 @@ ___ test_pairing_with_count_arg(ninja_ranks
     ... l..(actual) __ 5
 
     expected = (Ninja(name="snow", bites=283),
-                Ninja(name="sam", bites=195))
+                Ninja(name="sam", bites=195
     ... actual[0] __ expected
 
     expected = (Ninja(name="maria", bites=255),
-                Ninja(name="kenneth", bites=216))
+                Ninja(name="kenneth", bites=216
     ... actual[-1] __ expected

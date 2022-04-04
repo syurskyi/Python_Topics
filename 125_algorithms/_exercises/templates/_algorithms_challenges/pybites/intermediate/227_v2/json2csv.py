@@ -1,11 +1,11 @@
-____ pathlib _______ Path
+____ p.. _______ P..
 _______ csv
 _______ json
 _______ r__
 ____ json.decoder _______ JSONDecodeError
 
 EXCEPTION = 'exception caught'
-TMP = Path('/tmp')
+TMP = P..('/tmp')
 
 
 ___ convert_to_csv(json_file
@@ -28,7 +28,7 @@ ___ convert_to_csv(json_file
     # you code
 
     ___
-        data = json.load(json_file)
+        data = json.l.. json_file)
     ______ JSONDecodeError:
         print(EXCEPTION)
         r..

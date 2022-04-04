@@ -32,7 +32,7 @@ ___ print_sequence_route(grid, start_coordinates_ N..
     
     print(current_value,end=' ')
     w.... current_value != goal:
-        directions = ((current_row + 1,current_col,DOWN),(current_row - 1,current_col,UP),(current_row,current_col + 1,RIGHT),(current_row,current_col -1,LEFT))
+        directions = ((current_row + 1,current_col,DOWN),(current_row - 1,current_col,UP),(current_row,current_col + 1,RIGHT),(current_row,current_col -1,LEFT
 
 
         ___ neighbor_x,neighbor_y,direction __ directions:

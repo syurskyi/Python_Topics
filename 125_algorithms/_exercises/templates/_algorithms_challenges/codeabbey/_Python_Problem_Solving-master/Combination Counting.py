@@ -8,5 +8,5 @@ ___  fact(n
 ___ i __ r..(i..(input())):
     n,k = l.. m..(i..,input().s..()))
     result = 0
-    result = fact(n) / (fact(k) * fact(n-k))
+    result = fact(n) / (fact(k) * fact(n-k
     print(i..(result),end=' ')

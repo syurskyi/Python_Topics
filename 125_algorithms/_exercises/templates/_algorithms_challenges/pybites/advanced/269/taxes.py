@@ -40,10 +40,10 @@ Sample output from running the code in the if/main clause:
               Total =     4,658.50
 """
 ____ dataclasses _______ dataclass, field
-____ t___ _______ L.., NamedTuple
+____ t___ _______ L.., N..
 
-Bracket = NamedTuple("Bracket", [("end", i..), ("rate", f__)])
-Taxed = NamedTuple("Taxed", [("amount", f__), ("rate", f__), ("tax", f__)])
+Bracket = N..("Bracket", [("end", i..), ("rate", f__)])
+Taxed = N..("Taxed", [("amount", f__), ("rate", f__), ("tax", f__)])
 BRACKET = [
     Bracket(9_700, 0.1),
     Bracket(39_475, 0.12),
@@ -123,13 +123,13 @@ c_ Taxes:
 
         largest_amount = largest_tax =  f__("-inf")
         ___ amount,rate,tax __ tax_amounts:
-            largest_amount = m..(largest_amount,i..(amount))
-            largest_tax = m..(largest_tax,i..(tax))
+            largest_amount = m..(largest_amount,i..(amount
+            largest_tax = m..(largest_tax,i..(tax
     
         
-        largest_amount = l..(s..(largest_amount))
+        largest_amount = l..(s..(largest_amount
         largest_amount += 16
-        largest_tax = l..(s..(largest_tax))
+        largest_tax = l..(s..(largest_tax
         largest_tax += 4
 
         middle = OUTPUT_WIDTH - 3 - (largest_amount + 11) - (largest_tax + 4)

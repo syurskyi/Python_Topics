@@ -42,7 +42,7 @@ c_ Solution(o..
         __ n.. root:
             r.. depth-1
 
-        ret = m..(fathom(root.left, depth+1), fathom(root.right, depth+1))
+        ret = m..(fathom(root.left, depth+1), fathom(root.right, depth+1
         depth_bottom[root] = ret
         r.. ret
 
@@ -57,7 +57,7 @@ c_ SolutionSlow(o..
         """
         __ n.. root:
             r.. T..
-        __ abs(fathom(root.left, 0)-fathom(root.right, 0)) > 1:
+        __ abs(fathom(root.left, 0)-fathom(root.right, 0 > 1:
             r.. F..
 
         __ isBalanced(root.left) a.. isBalanced(root.right
@@ -71,4 +71,4 @@ c_ SolutionSlow(o..
         """
         __ n.. root:
             r.. depth-1  # test cases
-        r.. m..(fathom(root.left, depth+1), fathom(root.right, depth+1))
+        r.. m..(fathom(root.left, depth+1), fathom(root.right, depth+1

@@ -1,7 +1,7 @@
 string_data = input().s.. 
 print(string_data)
 result    # list
-___ i __ r..(l..(string_data)):
+___ i __ r..(l..(string_data:
     s.. = string_data[i]
     s.. = s..[::-1]
     result.a..(s..)
@@ -9,5 +9,5 @@ ___ i __ r..(l..(string_data)):
 result = result[::-1]
 
 ___ j __ result:
-    print(j,end=(' '))
+    print(j,end=(' '
     

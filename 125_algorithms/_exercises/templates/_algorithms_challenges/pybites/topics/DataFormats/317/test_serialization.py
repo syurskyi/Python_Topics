@@ -1,6 +1,6 @@
 ____ d__ _______ date
 _______ time
-____ t___ _______ NamedTuple
+____ t___ _______ N..
 
 ____ serialization _______ (download_pickle_file,
                            deserialize,
@@ -9,7 +9,7 @@ ____ serialization _______ (download_pickle_file,
                            MovieRented)
 
 
-c_ Bite(NamedTuple
+c_ Bite(N..
     title: s..
     number: i..
     level: s..
@@ -18,13 +18,13 @@ c_ Bite(NamedTuple
 ___ test_deserialize_movie_rented_data
     download_pickle_file()
     expected = [
-        MovieRented('Mad Max Fury Road', 4, date(2020, 12, 1)),
-        MovieRented('Mad Max Fury Road', 4, date(2020, 12, 17)),
-        MovieRented('Die Hard', 4, date(2020, 12, 3)),
-        MovieRented('Tenet', 20, date(2020, 12, 1)),
-        MovieRented('Breach', 7, date(2020, 11, 17)),
-        MovieRented('Spider-Man', 12, date(2020, 12, 28)),
-        MovieRented('Sonic', 10, date(2020, 11, 4))
+        MovieRented('Mad Max Fury Road', 4, date(2020, 12, 1,
+        MovieRented('Mad Max Fury Road', 4, date(2020, 12, 17,
+        MovieRented('Die Hard', 4, date(2020, 12, 3,
+        MovieRented('Tenet', 20, date(2020, 12, 1,
+        MovieRented('Breach', 7, date(2020, 11, 17,
+        MovieRented('Spider-Man', 12, date(2020, 12, 28,
+        MovieRented('Sonic', 10, date(2020, 11, 4
     ]
     actual = deserialize()
     ... actual __ expected

@@ -11,4 +11,4 @@ c_ Solution:
         r.. num
 
 test = Solution()
-print(test.lengthOfLastWord('H '))
+print(test.lengthOfLastWord('H '

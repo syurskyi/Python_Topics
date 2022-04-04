@@ -6,7 +6,7 @@ c_ Solution(o..
         :rtype: str
         """
         __ K > 1:
-            r.. ''.j..(s..(S))
+            r.. ''.j..(s..(S
         n = l..(S)
         minIdx = 0
         ___ i __ r..(1, n

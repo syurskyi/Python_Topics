@@ -13,7 +13,7 @@ c_ RecordScore
 
 record = RecordScore()
 
-print(record(-6))
-print(record(-4))
-print(record(-2))
-print(record(-3))
+print(record(-6
+print(record(-4
+print(record(-2
+print(record(-3

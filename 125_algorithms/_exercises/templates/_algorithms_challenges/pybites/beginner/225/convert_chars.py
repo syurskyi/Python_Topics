@@ -7,6 +7,6 @@ ___ convert_pybites_chars(text
     r.. ''.j..(c.swapcase() __ c.l.. __ PYBITES ____ c
                    ___ c __ text)
 
-print(convert_pybites_chars('pybites'))
+print(convert_pybites_chars('pybites'
 
 

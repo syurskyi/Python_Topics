@@ -14,7 +14,7 @@ ___ test_gen_files
 
 ___ test_diehard_pybites
     ret = diehard_pybites()
-    ... ret __ Stats(user='clamytoe', challenge=('01', 7))
+    ... ret __ Stats(user='clamytoe', challenge=('01', 7
 
 
 ___ test_diehard_other_input
@@ -28,4 +28,4 @@ ___ test_diehard_other_input
             "23/santiagobenitez",
             "07/santiagobenitez"
         ])
-    ... ret __ Stats(user='santiagobenitez', challenge=('25', 2))
+    ... ret __ Stats(user='santiagobenitez', challenge=('25', 2

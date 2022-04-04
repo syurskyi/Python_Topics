@@ -14,7 +14,7 @@ ___ sum_digits(num
 ___ i __ r..(amount_values
     A, B, C = map(i.., input().s..
     num = calc(A,B,C)
-    results.a..(sum_digits(num))
+    results.a..(sum_digits(num
 
 print(*results)
 

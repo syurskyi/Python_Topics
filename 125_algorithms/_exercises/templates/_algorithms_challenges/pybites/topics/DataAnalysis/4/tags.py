@@ -4,7 +4,7 @@ _______ u__.r..
 _______ ___.e__.E__ __ ET
 
 # prep
-tmp = __.getenv("TMP", "/tmp")
+tmp = __.g..("TMP", "/tmp")
 tempfile = __.p...j..(tmp, 'feed')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
@@ -24,4 +24,4 @@ ___ get_pybites_top_tags(n=10
         temp_list.a..(category.text)
     r.. C..(temp_list).most_common(n)
 
-print(get_pybites_top_tags(3))
+print(get_pybites_top_tags(3

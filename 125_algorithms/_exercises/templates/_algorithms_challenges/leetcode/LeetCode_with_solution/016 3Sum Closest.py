@@ -26,7 +26,7 @@ c_ Solution:
             k = l..(num)-1
             w.... j<k:
                 lst = [val, num[j], num[k]]
-                __ min_distance>abs(target-s..(lst)):
+                __ min_distance>abs(target-s..(lst:
                     min_summation = s..(lst)
                     __ s..(lst)__target:
                         r.. min_summation

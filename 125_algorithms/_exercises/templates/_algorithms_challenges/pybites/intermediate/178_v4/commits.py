@@ -4,7 +4,7 @@ _______ __
 ____ u__.r.. _______ u..
 ____ dateutil.parser _______ p..
 
-commits = __.p...j..(__.getenv("TMP", "/tmp"), 'commits')
+commits = __.p...j..(__.g..("TMP", "/tmp"), 'commits')
 u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/git_log_stat.out',
     commits
@@ -17,7 +17,7 @@ YEAR_MONTH = '{y}-{m:02d}'
 ___ _parse_line(line: s..) __ d..:
     """returns a line with the key of date type and value of add/del"""
     d_str, all_changes = line.s..(' | ')
-    date = p..(__.sub(r'Date:[ ]+', '', d_str)).date()
+    date = p..(__.sub(r'Date:[ ]+', '', d_str.date()
 
     # add insertions and deletions
     insertions = __.f..(r'([0-9]+) insertions', all_changes)

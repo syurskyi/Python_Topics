@@ -7,7 +7,7 @@ ____ sublist _______ check_lists, SUBLIST, SUPERLIST, EQUAL, UNEQUAL
 
 c_ SublistTest(unittest.TestCase
     ___ test_unique_return_values
-        assertEqual(l..(s..([SUBLIST, SUPERLIST, EQUAL, UNEQUAL])), 4)
+        assertEqual(l..(s..([SUBLIST, SUPERLIST, EQUAL, UNEQUAL], 4)
 
     ___ test_empty_lists
         assertEqual(
@@ -120,14 +120,14 @@ c_ SublistTest(unittest.TestCase
 
     # additional track specific test
     ___ test_large_lists
-        l1 = l..(r..(1000)) * 1000 + l..(r..(1000, 1100))
-        l2 = l..(r..(900, 1050))
+        l1 = l..(r..(1000 * 1000 + l..(r..(1000, 1100
+        l2 = l..(r..(900, 1050
         assertEqual(check_lists(l1, l2), SUPERLIST)
 
     # additional track specific test
     ___ test_spread_sublist
-        multiples_of_3 = l..(r..(3, 200, 3))
-        multiples_of_15 = l..(r..(15, 200, 15))
+        multiples_of_3 = l..(r..(3, 200, 3
+        multiples_of_15 = l..(r..(15, 200, 15
         assertEqual(check_lists(multiples_of_15, multiples_of_3), UNEQUAL)
 
 

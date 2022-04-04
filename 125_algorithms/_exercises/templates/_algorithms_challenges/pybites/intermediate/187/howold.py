@@ -23,7 +23,7 @@ ___ get_age(actor: Actor, movie: Movie) __ s..:
        e.g.
        Wesley Snipes was 28 years old when New Jack City came out.
     """
-    date_delta = relativedelta(parser.p..(movie.release_date), parser.p..(actor.born))
+    date_delta = relativedelta(parser.p..(movie.release_date), parser.p..(actor.born
     r.. f"{actor.name} was {date_delta.years} years old when {movie.title} came out."
 
 

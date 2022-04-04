@@ -20,11 +20,11 @@ c_ Solution:
         dummy = tail = ListNode(-1)
         heap    # list
 
-        ___ i __ r..(l..(lists)):
+        ___ i __ r..(l..(lists:
             __ n.. lists[i]:
                 _____
 
-            heapq.heappush(heap, (lists[i].val, i))
+            heapq.heappush(heap, (lists[i].val, i
 
         w.... heap:
             val, i = heapq.heappop(heap)
@@ -34,6 +34,6 @@ c_ Solution:
 
             __ lists[i].next:
                 lists[i] = lists[i].next
-                heapq.heappush(heap, (lists[i].val, i))
+                heapq.heappush(heap, (lists[i].val, i
 
         r.. dummy.next

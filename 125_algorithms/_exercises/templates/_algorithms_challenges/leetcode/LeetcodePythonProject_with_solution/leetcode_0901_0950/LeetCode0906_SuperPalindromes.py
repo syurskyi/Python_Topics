@@ -20,7 +20,7 @@ c_ Solution(o..
         r.. res
 
     ___ dfs  low, high, s
-        __ l..(s) > l..(s..(high)):
+        __ l..(s) > l..(s..(high:
             r.. 0
         count = 0
         __ s a.. s[0] != '0':

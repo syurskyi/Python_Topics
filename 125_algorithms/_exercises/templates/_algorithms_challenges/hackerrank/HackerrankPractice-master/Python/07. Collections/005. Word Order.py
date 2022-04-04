@@ -10,5 +10,5 @@ c_ OrderedCounter(C.., OrderedDict
 
 
 ordered_counter  OrderedCounter(input() ___ _ __ r..(i..(input())))
-print(l..(ordered_counter))
+print(l..(ordered_counter
 print(*ordered_counter.values

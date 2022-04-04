@@ -9,7 +9,7 @@ c_ Solution:
         end -= 1
 
     wstart, wend = 0, 0
-    ___ i __ r..(0, l..(s)):
+    ___ i __ r..(0, l..(s:
       __ s[i] __ " ":
         wend = i - 1
         swap(wstart, wend, s)

@@ -33,4 +33,4 @@ ___ freq_digit(num: i..) __ i..:
     r.. i..(m)
 
 
-print(freq_digit(748791789189717891789))
+print(freq_digit(748791789189717891789

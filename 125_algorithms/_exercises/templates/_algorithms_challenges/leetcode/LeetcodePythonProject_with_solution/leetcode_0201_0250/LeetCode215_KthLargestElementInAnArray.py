@@ -56,12 +56,12 @@ c_ Solution(o..
             ([3,3,3,3,3,3], 1),
         ]
         ___ nums, k __ testCases:
-            print('nums: %s' % (nums))
-            print('k: %s' % (k))
+            print('nums: %s' % (nums
+            print('k: %s' % (k
             result = findKthLargest(nums, k)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             resultHeap = findKthLargestHeap(nums, k)
-            print('resultHeap: %s' % (resultHeap))
+            print('resultHeap: %s' % (resultHeap
             print('-='*20+'-')
 
 __ _____ __ _____

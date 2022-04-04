@@ -730,7 +730,7 @@ ___ get_most_popular_talks_by_like_ratio(videos
         __ i..(video.metrics 'likeCount' )- i..(video.metrics 'dislikeCount' ) > 0:
             video_list.a..(video)
     output = s..(video_list,
-                  key=l.... x: i..(x.metrics 'viewCount' ) / (i..(x.metrics 'likeCount' ) - i..(x.metrics 'dislikeCount' )),
+                  key=l.... x: i..(x.metrics 'viewCount' ) / (i..(x.metrics 'likeCount' ) - i..(x.metrics 'dislikeCount' ,
                   r.._F..[:7]
     r.. output
 
@@ -755,7 +755,7 @@ ___ parse_isoduration(s
     seconds, s = get_isosplit(s, 'S')
 
     # Convert all to seconds
-    dt = d__.t..(d.._i..(days), hours=i..(hours), minutes=i..(minutes), seconds=i..(seconds))
+    dt = d__.t..(d.._i..(days), hours=i..(hours), minutes=i..(minutes), seconds=i..(seconds
     r.. i..(dt.total_seconds
 
 

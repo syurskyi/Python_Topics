@@ -54,7 +54,7 @@ c_ Solution:
             lo = m..(A[i].start, B[j].start)
             hi = m..(A[i].end, B[j].end)
             __ lo <= hi:
-                ret.a..(Interval(lo, hi))
+                ret.a..(Interval(lo, hi
             __ A[i].end > B[j].end:
                 j += 1
             ____:
@@ -74,10 +74,10 @@ c_ Solution:
             a = A[i]
             b = B[j]
             __ b.start <= a.end <= b.end:
-                ret.a..(Interval(m..(a.start, b.start), a.end))
+                ret.a..(Interval(m..(a.start, b.start), a.end
                 i += 1
             ____ a.start <= b.end <= a.end:
-                ret.a..(Interval(m..(a.start, b.start), b.end))
+                ret.a..(Interval(m..(a.start, b.start), b.end
                 j += 1
             ____:
                 __ a.end < b.start:

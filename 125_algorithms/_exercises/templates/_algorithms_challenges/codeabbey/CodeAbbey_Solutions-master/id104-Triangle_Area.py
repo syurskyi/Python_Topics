@@ -10,6 +10,6 @@ ___ triangleArea(amount
         c  sqrt((x3 - x2)**2 + (y3-y2)**2) # Distance between B and C
         s  (a + b + c) / 2 # s  = Semiperimeter
         area  sqrt(s*((s-a)*(s-b)*(s-c))) # Heron's Formula
-        answer.a..(s..(area))
-    print(' '.j..(answer))
+        answer.a..(s..(area
+    print(' '.j..(answer
 triangleArea(input

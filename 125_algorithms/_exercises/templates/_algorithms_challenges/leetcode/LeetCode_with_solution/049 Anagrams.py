@@ -41,7 +41,7 @@ c_ Solution:
         """
         hash_map    # dict
         ___ ind, s__ __ e..(strs
-            s__ = "".j..(s..(s__))  # string reversing and sorting are a little different
+            s__ = "".j..(s..(s__  # string reversing and sorting are a little different
             __ s__ n.. __ hash_map:
                 hash_map[s__] = [ind]
             ____:

@@ -7,7 +7,7 @@ c_ Solution(o..
 
     ___ dfs(w, start, res
       res.a..(w)
-      ___ i __ r..(start, l..(w)):
+      ___ i __ r..(start, l..(w:
         ___ l __ r..(1, l..(w) - i + 1
           lstr = s..(l)
           llen = l..(lstr)

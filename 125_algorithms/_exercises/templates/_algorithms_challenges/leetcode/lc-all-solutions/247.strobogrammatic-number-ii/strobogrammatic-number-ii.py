@@ -10,10 +10,10 @@ c_ Solution(o..
       __ l..(p..) __ half:
         pathStr = "".j..(p..)
         __ half * 2 __ n:
-          res.a..(pathStr + "".j..([d[x] ___ x __ pathStr[::-1]]))
+          res.a..(pathStr + "".j..([d[x] ___ x __ pathStr[::-1]]
         ____:
           ___ c __ "018":
-            res.a..(pathStr + c + "".j..([d[x] ___ x __ pathStr[::-1]]))
+            res.a..(pathStr + c + "".j..([d[x] ___ x __ pathStr[::-1]]
         r..
 
       ___ c __ "01689":

@@ -2,7 +2,7 @@ _______ __
 _______ u__.r..
 
 # PREWORK
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DICT = 'dictionary.txt'
 DICTIONARY = __.p...j..(TMP, DICT)
@@ -36,5 +36,5 @@ ___ max_word_value(words
     """Given a list of words calculate the word with the maximum value and return it"""
     key_list = [word ___ word __ words]
     value_list = [calc_word_value(word) ___ word __ words]
-    d = d..(z..(key_list, value_list))
+    d = d..(z..(key_list, value_list
     r.. m..(d, key=d.get)

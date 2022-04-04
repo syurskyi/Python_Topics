@@ -6,4 +6,4 @@ ___ pattern(n
     r.. '\n'.j..([s..(i) * i ___ i __ r..(2,n+1,2)])
 
 ___ i __ r..(1,10
-    print(pattern(i))
+    print(pattern(i

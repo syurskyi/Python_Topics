@@ -24,5 +24,5 @@ c_ Solution(o..
             ____ ind __ 3:
                 result.a..('Bronze Medal')
             ____:
-                result.a..(s..(ind))
+                result.a..(s..(ind
         r.. result

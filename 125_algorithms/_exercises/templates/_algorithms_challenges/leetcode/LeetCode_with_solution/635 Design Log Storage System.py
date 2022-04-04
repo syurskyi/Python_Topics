@@ -45,7 +45,7 @@ c_ LogSystem:
         lst    # list
 
     ___ put  id: i.., timestamp: s..) __ N..
-        bisect.insort(lst, (timestamp, id))
+        bisect.insort(lst, (timestamp, id
 
     ___ retrieve  s: s.., e: s.., gra: s..) __ L..[i..]:
         """
@@ -65,7 +65,7 @@ c_ LogSystem:
 
         s = s[:pre] + lo[pre:]
         e = e[:pre] + hi[pre:]
-        i = bisect.bisect_left(lst, (s, 0))
+        i = bisect.bisect_left(lst, (s, 0
         j = bisect.bisect_right(lst, (e, f__("inf")))
         r.. [id ___ _, id __ lst[i:j]]
 

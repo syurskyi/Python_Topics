@@ -72,14 +72,14 @@ c_ Solution:
         ret = [-f__("inf"), 0]
         n = l..(seats)
         # two ends
-        ___ i, j __ z..((0, n-1), (0, -1)):
+        ___ i, j __ z..((0, n-1), (0, -1:
             dist = abs(i - idxes[j])
             __ dist > ret[0]:
                 ret = [dist, i]
 
         ___ j __ r..(l..(idxes) - 1
             i = (idxes[j] + idxes[j+1]) // 2
-            dist = m..(abs(i - idxes[j]), abs(i - idxes[j+1]))
+            dist = m..(abs(i - idxes[j]), abs(i - idxes[j+1]
             __ dist > ret[0]:
                 ret = [dist, i]
 

@@ -69,7 +69,7 @@ ___ create_quote
 
     data = request.json
 
-    __ n.. (('quote' __ data) a..  ('movie' __ data)):
+    __ n.. (('quote' __ data) a..  ('movie' __ data:
         r.. "Incomplete data",400
     
 
@@ -102,7 +102,7 @@ ___ update_quote(qid
 
     data = request.json
     print(data)
-    __ n.. (('quote' __ data) o.  ('movie' __ data)):
+    __ n.. (('quote' __ data) o.  ('movie' __ data:
         r.. "Incomplete data",400
     quote = _get_quote(qid)
 

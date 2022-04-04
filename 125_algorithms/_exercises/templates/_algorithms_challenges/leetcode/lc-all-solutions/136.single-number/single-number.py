@@ -4,6 +4,6 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: int
     """
-    ___ i __ r..(1, l..(nums)):
+    ___ i __ r..(1, l..(nums:
       nums[0] ^= nums[i]
     r.. nums[0]

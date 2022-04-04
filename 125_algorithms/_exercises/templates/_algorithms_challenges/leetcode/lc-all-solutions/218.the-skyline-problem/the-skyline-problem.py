@@ -10,8 +10,8 @@ c_ Solution(o..
     hs    # list
     heap    # list
     ___ b __ buildings:
-      hs.a..((b[0], -b[2]))
-      hs.a..((b[1], b[2]))
+      hs.a..((b[0], -b[2]
+      hs.a..((b[1], b[2]
     hs.s..()
     ans    # list
     pre = cur = N..
@@ -30,9 +30,9 @@ c_ Solution(o..
       __ heap:
         cur = heap[0]
         __ cur != pre:
-          ans.a..((pos, -1 * cur))
+          ans.a..((pos, -1 * cur
           pre = cur
       ____:
-        ans.a..((pos, 0))
+        ans.a..((pos, 0
 
     r.. ans

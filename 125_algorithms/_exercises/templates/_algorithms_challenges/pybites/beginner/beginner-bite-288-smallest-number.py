@@ -32,4 +32,4 @@ ___ minimum_number(d..: L..[i..]) __ i..:
     r.. i..(r)
 
 
-print(minimum_number([1,9,5,9,1]))
+print(minimum_number([1,9,5,9,1]

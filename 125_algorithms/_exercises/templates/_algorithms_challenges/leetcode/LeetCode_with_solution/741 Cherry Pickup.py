@@ -54,7 +54,7 @@ c_ Solution:
         of the path, so we are only considering two paths from the beginning to
         the end.
         """
-        r.. m..(0, F(grid, 0, 0, 0))
+        r.. m..(0, F(grid, 0, 0, 0
 
     ___ F  grid, r1, c1, r2
         n = l..(grid)

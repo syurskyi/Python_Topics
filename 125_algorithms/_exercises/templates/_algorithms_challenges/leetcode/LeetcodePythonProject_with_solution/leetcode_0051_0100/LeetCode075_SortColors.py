@@ -27,10 +27,10 @@ c_ Solution(o..
             [2, 1, 0, 0, 1, 2, 2, 1],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             sortColors(nums)
             print('After sort')
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             print('-='*15+'-')
 __ _____ __ _____
     Solution().test()

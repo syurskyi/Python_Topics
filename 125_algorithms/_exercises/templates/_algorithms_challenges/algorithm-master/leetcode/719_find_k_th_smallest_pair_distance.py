@@ -26,7 +26,7 @@ c_ Solution:
         """
         cnt = left = 0
 
-        ___ right __ r..(l..(A)):
+        ___ right __ r..(l..(A:
             w.... A[right] - A[left] > mid:
                 left += 1
 

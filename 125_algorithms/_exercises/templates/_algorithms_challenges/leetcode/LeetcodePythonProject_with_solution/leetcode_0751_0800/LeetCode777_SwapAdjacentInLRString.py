@@ -42,7 +42,7 @@ c_ Solution(o..
         :rtype: bool
         """
         l, r = 0, 0
-        ___ i __ r..(l..(start)):
+        ___ i __ r..(l..(start:
             __ start[i] __ 'R': r += 1
             __ end[i] __ 'L': l += 1
             __ start[i] __ 'L': l -= 1

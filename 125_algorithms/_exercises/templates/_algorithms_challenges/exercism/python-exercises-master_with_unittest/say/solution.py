@@ -12,7 +12,7 @@ ___ say(number, recursive=F..
     __ number < 0:
         r.. AttributeError('number is negative')
     __ number >= t:
-        r.. AttributeError('number is too large: %s' % s..(number))
+        r.. AttributeError('number is too large: %s' % s..(number
 
     __ number < 20:
         r.. small[number] __ n.. recursive ____ 'and ' + small[number]

@@ -31,4 +31,4 @@ c_ Solution(o..
 
 a1 = [4, 1, 6, 10, 5, 13, 2, 7]
 s = Solution()
-print(s.rob(a1))
+print(s.rob(a1

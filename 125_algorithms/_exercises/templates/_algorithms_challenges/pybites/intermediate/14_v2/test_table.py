@@ -4,10 +4,10 @@ ____ table _______ (names, aliases, points, awake,
                    SEPARATOR, generate_table)
 
 # cast to list in case of generator
-table1 = l..(generate_table(names))
-table2 = l..(generate_table(names, aliases))
-table3 = l..(generate_table(names, aliases, points))
-table4 = l..(generate_table(names, aliases, points, awake))
+table1 = l..(generate_table(names
+table2 = l..(generate_table(names, aliases
+table3 = l..(generate_table(names, aliases, points
+table4 = l..(generate_table(names, aliases, points, awake
 
 
 ___ test_generate_table

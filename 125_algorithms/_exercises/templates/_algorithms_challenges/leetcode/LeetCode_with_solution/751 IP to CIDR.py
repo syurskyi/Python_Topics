@@ -106,7 +106,7 @@ c_ Solution:
 
     ___ to_bin  ip
         ret = 0
-        ___ n, w __ z.. m..(i.., ip.s..(".")), weights
+        ___ n, w __ z.. m..(i.., ip.s..(".", weights
             ret += n << w
 
         r.. ret
@@ -117,7 +117,7 @@ c_ Solution:
             ret.a..(
                 (bin >> w) & 255
             )
-        r.. ".".j.. m..(s.., ret))
+        r.. ".".j.. m..(s.., ret
 
     ___ get_lsb  n
         lsb = 0

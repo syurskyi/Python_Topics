@@ -24,8 +24,8 @@ c_ Solution(o..
             r.. F..
         __ sumVal __ s..(root) a.. n.. firstLevel:
             r.. T..
-        __ (root.left a.. helper(root.left, sumVal+root.val+s..(root.right), F..)) o.\
-            (root.right a.. helper(root.right, sumVal+root.val+s..(root.left), F..)):
+        __ (root.left a.. helper(root.left, sumVal+root.val+s..(root.right), F.. o.\
+            (root.right a.. helper(root.right, sumVal+root.val+s..(root.left), F..:
             r.. T..
         r.. F..
     
@@ -46,9 +46,9 @@ c_ Solution(o..
         testCases = [
             TreeNode(5, TreeNode(10), TreeNode(10, TreeNode(2), TreeNode(3))),
             TreeNode(1, TreeNode(2), TreeNode(10, TreeNode(2), TreeNode(20))),
-            TreeNode(1, TreeNode(-1)),
-            TreeNode(1, N.., TreeNode(2)),
-            TreeNode(2, TreeNode(1, TreeNode(0), TreeNode(2, TreeNode(3))), TreeNode(3)),
+            TreeNode(1, TreeNode(-1,
+            TreeNode(1, N.., TreeNode(2,
+            TreeNode(2, TreeNode(1, TreeNode(0), TreeNode(2, TreeNode(3))), TreeNode(3,
         ]
         ___ root __ testCases:
             result = checkEqualTree(root)

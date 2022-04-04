@@ -10,4 +10,4 @@ ___ within_schedule(utc, *timezones
     __ n.. a..(tz __ TIMEZONES ___ tz __ timezones
         r.. V...('Time zone name error')
     utc = pytz.utc.localize(utc)
-    r.. a..(utc.astimezone(pytz.timezone(tz)).hour __ MEETING_HOURS ___ tz __ timezones)
+    r.. a..(utc.astimezone(pytz.timezone(tz.hour __ MEETING_HOURS ___ tz __ timezones)

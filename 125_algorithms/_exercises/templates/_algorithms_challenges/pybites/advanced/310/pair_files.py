@@ -32,7 +32,7 @@ ___ pair_files(filenames
 
             __ '_R1_' __ value[1]:
                 value.r..
-            result.a..(t..(value))
+            result.a..(t..(value
 
 
     r.. result
@@ -65,7 +65,7 @@ __ _______ __ _______
         "Sample2_S2_L001_R1_001.fastq.gz",
         "sample2_s2_l001_r2_001.fastq.gz",
     ]
-    print(pair_files(filenames))
+    print(pair_files(filenames
     # ('Sample1_S1_L001_R1_001.FASTQ.GZ', 'Sample1_S1_L001_R2_001.fastq.gz')
     # ('Sample2_S2_L001_R1_001.fastq.gz', 'sample2_s2_l001_r2_001.fastq.gz')
 

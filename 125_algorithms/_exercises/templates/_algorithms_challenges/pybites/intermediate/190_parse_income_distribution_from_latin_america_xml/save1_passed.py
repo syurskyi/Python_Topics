@@ -1,11 +1,11 @@
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ u__.r.. _______ u..
 ____ bs4 _______ BeautifulSoup
 ____ c.. _______ d..
 
 # import the countries xml file
-tmp = Path(__.getenv("TMP", "/tmp"))
+tmp = P..(__.g..("TMP", "/tmp"
 countries = tmp / 'countries.xml'
 
 __ n.. countries.exists
@@ -35,4 +35,4 @@ ___ get_income_distribution(___=countries
         income = tr.find('wb:incomelevel').text
         d[income].a..(name)
 
-    r.. d..(s..(d.i.., key=l.... item: item[1]))
+    r.. d..(s..(d.i.., key=l.... item: item[1]

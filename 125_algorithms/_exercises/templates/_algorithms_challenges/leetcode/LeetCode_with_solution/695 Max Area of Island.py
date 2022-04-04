@@ -28,7 +28,7 @@ Note: The length of each dimension in the given grid does not exceed 50.
 ____ t___ _______ L..
 
 
-dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
+dirs = ((0, -1), (0, 1), (-1, 0), (1, 0
 
 
 c_ Solution:
@@ -45,7 +45,7 @@ c_ Solution:
         ___ i __ r..(m
             ___ j __ r..(n
                 __ n.. visited[i][j] a.. grid[i][j] __ 1:
-                    ret = m..(ret, dfs(grid, i, j, visited))
+                    ret = m..(ret, dfs(grid, i, j, visited
 
         r.. ret
 

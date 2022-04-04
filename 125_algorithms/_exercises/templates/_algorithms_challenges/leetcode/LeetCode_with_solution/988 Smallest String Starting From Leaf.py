@@ -54,7 +54,7 @@ c_ Solution:
         __ n.. mn:
             r.. ""
         r.. "".j..(
-            chr(e + o..("a"))
+            chr(e + o..("a"
             ___ e __ mn
         )
 

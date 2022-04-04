@@ -33,7 +33,7 @@ c_ Solution(o..
              'aa', 'aa' ,
         ]
         ___ strs __ testCases:
-            print('\n'.j..([s..(row) ___ row __ strs]))
+            print('\n'.j..([s..(row) ___ row __ strs]
             result = longestCommonPrefix(strs)
             print('result: %s' % result)
             print('-='*30+'-')

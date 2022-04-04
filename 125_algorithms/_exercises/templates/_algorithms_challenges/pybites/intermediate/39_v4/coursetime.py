@@ -5,7 +5,7 @@ _______ u__.r..
 
 # getting the data
 COURSE_TIMES = __.p...j..(
-    __.getenv("TMP", "/tmp"),
+    __.g..("TMP", "/tmp"),
     'course_timings'
 )
 u__.r...u..(
@@ -38,7 +38,7 @@ ___ calc_total_course_duration(timestamps
     cum = ref
 
     ___ time __ timestamps:
-        minutes, seconds = map(i.., time.s..(':'))
+        minutes, seconds = map(i.., time.s..(':'
         cum += t..(minutes=minutes, seconds=seconds)
 
     dt_sec = (cum - ref).seconds

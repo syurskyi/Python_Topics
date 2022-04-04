@@ -15,7 +15,7 @@ c_ Solution(o..
             __ num_of_letters + l..(w) + l..(cur) > maxWidth:
                 ___ i __ r..(maxWidth-num_of_letters
                     cur[i%(l..(cur)-1 o. 1)] += ' '
-                res.a..(''.j..(cur))
+                res.a..(''.j..(cur
                 cur, num_of_letters    # list, 0
             cur += [w]
             num_of_letters += l..(w)
@@ -61,7 +61,7 @@ c_ Solution(o..
             count += l..(words[i])
             s += words[i] + ' '
         s += words[-1]
-        s += ' '*(maxWidth-l..(s))
+        s += ' '*(maxWidth-l..(s
         result.a..(s)
         r.. result
     
@@ -70,10 +70,10 @@ c_ Solution(o..
             (["This", "is", "an", "example", "of", "text", "justification."], 16),
         ]
         ___ words, maxWidth __ testCases:
-            print('words: %s' % (words))
-            print('maxWidth: %s' % (maxWidth))
+            print('words: %s' % (words
+            print('maxWidth: %s' % (maxWidth
             result = fullJustify(words, maxWidth)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
 
 __ _____ __ _____

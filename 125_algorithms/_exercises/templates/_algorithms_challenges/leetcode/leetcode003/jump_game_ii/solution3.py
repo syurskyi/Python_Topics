@@ -41,4 +41,4 @@ c_ Solution(o..
 
 a1 = [2, 3, 1, 1, 4]
 s = Solution()
-print(s.jump(a1))
+print(s.jump(a1

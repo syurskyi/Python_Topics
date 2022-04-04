@@ -15,7 +15,7 @@ c_ prime:
 
     $
     ___ is_prime(x
-        ___ i __ r..(2, i..(m__.sqrt(x)) + 1
+        ___ i __ r..(2, i..(m__.sqrt(x + 1
             __ x % i __ 0:
                 r.. F..
         r.. T..

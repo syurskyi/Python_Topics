@@ -18,7 +18,7 @@ c_ Solution(o..
         res = s..()
         first = points[0]
         firstInd = 0
-        ___ i __ r..(1, l..(points)):
+        ___ i __ r..(1, l..(points:
             __ points[i].x < first.x:
                 first = points[i]
                 firstInd = i
@@ -30,12 +30,12 @@ c_ Solution(o..
             flag = F..
             nextPoint = points[0]
             nextInd = 0
-            ___ i __ r..(1, l..(points)):
+            ___ i __ r..(1, l..(points:
                 __ i __ curInd:
                     _____
                 cross = crossProductLength(cur, points[i], nextPoint)
                 __ nextInd __ curInd o. cross > 0 o.\
-                    (cross __ 0 a.. distance(points[i], cur) > distance(nextPoint, cur)):
+                    (cross __ 0 a.. distance(points[i], cur) > distance(nextPoint, cur:
                     nextPoint = points[i]
                     nextInd = i
             ___ i, point __ e..(points

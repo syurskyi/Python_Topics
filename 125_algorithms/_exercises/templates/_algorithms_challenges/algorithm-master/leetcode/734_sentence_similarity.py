@@ -36,7 +36,7 @@ c_ Solution:
             simils[a].add(b)
             simils[b].add(a)
 
-        ___ i __ r..(l..(words1)):
+        ___ i __ r..(l..(words1:
             a = words1[i]
             b = words2[i]
 

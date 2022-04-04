@@ -18,7 +18,7 @@ _______ __
 _______ u__.r..
 
 # PREWORK
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 print(TMP)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DICT = 'dictionary.txt'
@@ -75,4 +75,4 @@ ___ max_word_value(words
 ___ max_word_value_v2(words
     r.. m..(words, key=calc_word_value)
 
-print(max_word_value( 'zime', 'fgrtgtrtvv' ))
+print(max_word_value( 'zime', 'fgrtgtrtvv' 

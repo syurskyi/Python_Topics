@@ -28,13 +28,13 @@ c_ Solution(o..
         cur = end[level]-start[level]+1
         left = dfs(root.left, level+1, 2*order, start, end)
         right = dfs(root.right, level+1, 2*order+1, start, end)
-        r.. m..(cur, m..(left, right))
+        r.. m..(cur, m..(left, right
     
     ___ test
         testCases = [
-            TreeNode(1, TreeNode(3, TreeNode(5), TreeNode(3)), TreeNode(2, N.., TreeNode(9))),
+            TreeNode(1, TreeNode(3, TreeNode(5), TreeNode(3, TreeNode(2, N.., TreeNode(9))),
             TreeNode(1, TreeNode(3, TreeNode(5), TreeNode(3))),
-            TreeNode(1, TreeNode(3, TreeNode(5)), TreeNode(2)),
+            TreeNode(1, TreeNode(3, TreeNode(5, TreeNode(2,
             TreeNode(1, TreeNode(3, TreeNode(5, TreeNode(6))), TreeNode(2, N.., TreeNode(9, N.., TreeNode(7)))),
         ]
         ___ root __ testCases:

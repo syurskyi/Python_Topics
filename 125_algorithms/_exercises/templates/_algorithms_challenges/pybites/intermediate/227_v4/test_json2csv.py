@@ -57,5 +57,5 @@ ___ test_json2csv(file_no, expected, exception, capfd
 
     convert_to_csv(mount_json)
     w__ o.. mount_csv) __ csv_file:
-        actual = l..(csv.reader(csv_file))
+        actual = l..(csv.reader(csv_file
         ... actual __ expected

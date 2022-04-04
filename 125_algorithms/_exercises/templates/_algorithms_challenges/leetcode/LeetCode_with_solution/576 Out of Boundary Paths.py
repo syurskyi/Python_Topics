@@ -26,7 +26,7 @@ The length and height of the grid is in range [1,50].
 N is in range [0,50].
 """
 MOD = 10 ** 9 + 7
-dirs = ((0, 1), (0, -1), (1, 0), (-1, 0))
+dirs = ((0, 1), (0, -1), (1, 0), (-1, 0
 
 
 c_ Solution:

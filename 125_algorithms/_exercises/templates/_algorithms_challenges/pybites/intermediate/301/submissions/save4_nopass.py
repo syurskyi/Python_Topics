@@ -1,11 +1,11 @@
 _______ __
 ____ d__ _______ date, t.., s..
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ t___ _______ Dict, L..
 ____ u__.r.. _______ u..
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 RATES_FILE = TMP / "exchangerates.json"
 
 __ n.. RATES_FILE.exists

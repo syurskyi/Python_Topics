@@ -22,7 +22,7 @@ c_ Solution(o..
             __ n.. dp[i]:
                 i-=1
             ____:
-                result.a..(dp[i].pop(0))
+                result.a..(dp[i].pop(0
                 k-=1
         r.. result
         
@@ -34,7 +34,7 @@ c_ Solution(o..
             hashmap[num] = hashmap.g.. num, 0)+1
         heap    # list
         ___ num, count __ hashmap.i..:
-            heapq.heappush(heap, (-count, num))
+            heapq.heappush(heap, (-count, num
         result    # list
         w.... k > 0:
             result.a..(heapq.heappop(heap)[1])
@@ -47,10 +47,10 @@ c_ Solution(o..
             ([1,1,1,2,2,2,3,3,3], 3),
         ]
         ___ nums, k __ testCases:
-            print('nums: %s' % (nums))
-            print('k: %s' % (k))
+            print('nums: %s' % (nums
+            print('k: %s' % (k
             result = topKFrequent(nums, k)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

@@ -11,6 +11,6 @@ ___ rotate(index, s__
 ___ i __ r..(amount_values
     index, s__ = map(s.., input().s..
     index = i..(index)
-    results.a..(rotate(index, s__))
+    results.a..(rotate(index, s__
 
 print(*results)

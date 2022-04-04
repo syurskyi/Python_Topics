@@ -13,4 +13,4 @@ ___ common_words(sentence1: L..[s..], sentence2: L..[s..]) __ L..[s..]:
 
 
 
-    r.. s..(l..(s..(word.l.. ___ word __ sentence1) & s..(word.l.. ___ word __ sentence2)),key=l..)
+    r.. s..(l..(s..(word.l.. ___ word __ sentence1) & s..(word.l.. ___ word __ sentence2,key=l..)

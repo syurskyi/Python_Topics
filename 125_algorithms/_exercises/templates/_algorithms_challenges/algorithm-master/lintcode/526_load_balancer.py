@@ -35,5 +35,5 @@ c_ LoadBalancer:
     @return: pick a server in the cluster randomly with equal probability
     """
     ___ pick
-        i = r__.randrange(l..(servers))
+        i = r__.randrange(l..(servers
         r.. servers[i]

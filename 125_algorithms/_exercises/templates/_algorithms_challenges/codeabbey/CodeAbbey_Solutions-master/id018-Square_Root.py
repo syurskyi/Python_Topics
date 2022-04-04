@@ -12,6 +12,6 @@ ___ sqRoot(numbers
                 division  value / root
                 abs(root - division)
                 root  (root + division) / 2
-            answer.a..(s..(root))
-    print(' '.j..(answer))
+            answer.a..(s..(root
+    print(' '.j..(answer
 sqRoot(input

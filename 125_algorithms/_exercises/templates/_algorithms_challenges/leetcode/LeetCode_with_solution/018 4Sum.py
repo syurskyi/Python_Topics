@@ -86,7 +86,7 @@ c_ Solution:
                 __ num[p]+num[q] n.. __ sum2index:
                     sum2index[num[p]+num[q]] = [(p, q)]
                 ____:
-                    sum2index[num[p]+num[q]].a..((p, q))
+                    sum2index[num[p]+num[q]].a..((p, q
 
         ___ i __ x..(length
             ___ j __ x..(i+1, length-2
@@ -95,6 +95,6 @@ c_ Solution:
                     # construct the result
                     ___ pair __ sum2index[sum_remain]:
                         __ pair[0]>j:  # avoid duplicate
-                            result_set.add(( num[i], num[j], num[pair[0]], num[pair[1]] ))
+                            result_set.add(( num[i], num[j], num[pair[0]], num[pair[1]]
 
         r.. [l..(i) ___ i __ result_set]  # convert tuple to list

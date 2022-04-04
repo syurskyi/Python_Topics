@@ -9,6 +9,6 @@ c_ BirthdayDict(d..
         bday = birthday.month, birthday.day
 
         __ any([(v.month, v.day) __ bday ___ v __ v..
-            print(MSG.f..(name))
+            print(MSG.f..(name
 
         update({name: birthday})

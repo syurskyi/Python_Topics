@@ -35,7 +35,7 @@ ___ text_to_columns(text
             #print(f"{value:<25}",end='')
         #print()
 
-        result.a..(''.j..(line))
+        result.a..(''.j..(line
 
     
     r.. '\n'.j..(result)

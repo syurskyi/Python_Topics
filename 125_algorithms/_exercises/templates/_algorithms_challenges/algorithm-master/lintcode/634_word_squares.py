@@ -23,14 +23,14 @@ c_ Solution:
 
     ___ dfs  words, n, ans, p..
         __ (l..(p..) __ n a..
-            is_valid(p..)):
+            is_valid(p..:
             ans.a..(p.. | )
             r..
 
         __ l..(p..) >= n:
             r..
 
-        ___ i __ r..(l..(words)):
+        ___ i __ r..(l..(words:
             p...a..(words[i])
             dfs(words, n, ans, p..)
             p...pop()
@@ -39,7 +39,7 @@ c_ Solution:
         __ n.. p.. o. l..(p..) != l..(p..[0]
             r.. F..
 
-        ___ i __ r..(1, l..(p..)):
+        ___ i __ r..(1, l..(p..:
             ___ j __ r..(i
                 __ p..[i][j] != p..[j][i]:
                     r.. F..

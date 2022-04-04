@@ -1,19 +1,19 @@
 ____ d__ _______ date
 _______ __
-____ pathlib _______ Path
-_______ pickle
-____ t___ _______ Sequence, NamedTuple
+____ p.. _______ P..
+_______ p..
+____ t___ _______ S.., N..
 ____ u__.r.. _______ u..
 _______ time
 
 
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 S3 = "https://bites-data.s3.us-east-2.amazonaws.com"
 PICKLE_INFILE = TMP / 'input.pkl'
 PICKLE_OUTFILE = TMP / 'output.pkl'
 
 
-c_ MovieRented(NamedTuple
+c_ MovieRented(N..
     title: s..
     price: i..
     date: date
@@ -26,21 +26,21 @@ ___ download_pickle_file
     u.. _*{S3}/bite317.pkl', PICKLE_INFILE)
 
 
-___ deserialize(pkl_file: Path = PICKLE_INFILE) __ Sequence[NamedTuple]:
+___ deserialize(pkl_file: P.. = PICKLE_INFILE) __ S..[N..]:
     """Load the list of namedtuples from the pickle file passed in"""
     input_file = o.. pkl_file, "rb")
-    r.. pickle.load(input_file)
+    r.. p...l.. input_file)
 
 
-___ serialize(pkl_file: Path = PICKLE_OUTFILE,
-              data: Sequence[NamedTuple] = N..) __ N..
+___ serialize(pkl_file: P.. = PICKLE_OUTFILE,
+              data: S..[N..] = N..) __ N..
     """Save the data passed in to the pickle file passed in"""
     #if data is None:
     #    data = deserialize()
     output_file = o.. pkl_file, "wb")
-    pickle.dump(data, output_file)
+    p...d.. data, output_file)
 
-c_ Bite(NamedTuple
+c_ Bite(N..
     title: s..
     number: i..
     level: s..

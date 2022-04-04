@@ -11,7 +11,7 @@ ___ function_1
 ___ function_2
 
     w__ o.. "sample_file.txt") __ infile:
-        print(t..(infile))
+        print(t..(infile
         data = infile.r..
         ___ line __ data:
             print(line.strip

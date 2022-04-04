@@ -33,4 +33,4 @@ ___ test_sum_numbers_throws_exception(caplog
     ... record.exc_text.startswith('Traceback')
     ... record.exc_text.e..
         ('TypeError: not all arguments converted during '
-         'string formatting'))
+         'string formatting'

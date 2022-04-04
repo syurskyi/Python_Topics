@@ -93,7 +93,7 @@ c_ SolutionSort(o..
         A = s..(nums)
 
         j, k = (n-1) / 2, n-1
-        ___ i __ x..(l..(nums)):
+        ___ i __ x..(l..(nums:
             __ i % 2 __ 0:
                 nums[i] = A[j]
                 j -= 1

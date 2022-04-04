@@ -25,10 +25,10 @@ c_ Solution(o..
             ([-2, -1, 2, 1], 1),
         ]
         ___ nums, k __ testCases:
-            print('nums: %s' % (nums))
-            print('k: %s' % (k))
+            print('nums: %s' % (nums
+            print('k: %s' % (k
             result = maxSubArrayLen(nums, k)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
     
 __ _____ __ _____

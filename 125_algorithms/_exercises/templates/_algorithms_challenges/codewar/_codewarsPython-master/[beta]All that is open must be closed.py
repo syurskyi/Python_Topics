@@ -4,4 +4,4 @@ ___ is_balanced(s__, caps
     ___ p __ [c ___ c __ s__ __ c __ caps]:
         p..
 
-print(is_balanced('(Sensei [says) no!]','()[]'))    
+print(is_balanced('(Sensei [says) no!]','()[]'

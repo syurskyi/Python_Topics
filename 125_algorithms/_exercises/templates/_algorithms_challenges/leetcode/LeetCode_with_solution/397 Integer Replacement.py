@@ -67,6 +67,6 @@ c_ Solution(o..
         __ n%2 __ 0:
             ret += integerReplacement(n/2)
         ____:
-            ret += m..(integerReplacement(n+1), integerReplacement(n-1))
+            ret += m..(integerReplacement(n+1), integerReplacement(n-1
 
         r.. ret

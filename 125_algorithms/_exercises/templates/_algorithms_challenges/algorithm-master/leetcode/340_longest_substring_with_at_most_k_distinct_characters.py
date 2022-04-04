@@ -22,7 +22,7 @@ c_ Solution:
         freqs = c...d..(i..)
         i = cnt = 0
 
-        ___ j __ r..(l..(s)):
+        ___ j __ r..(l..(s:
             freqs[s[j]] += 1
             __ freqs[s[j]] __ 1:
                 cnt += 1

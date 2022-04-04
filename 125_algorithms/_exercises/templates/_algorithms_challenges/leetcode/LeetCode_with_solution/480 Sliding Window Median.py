@@ -49,10 +49,10 @@ c_ DualHeap:
 
     ___ insert  num
         __ max_h a.. num > max_h[0][1]:
-            heapq.heappush(min_h, (num, num))
+            heapq.heappush(min_h, (num, num
             min_sz += 1
         ____:
-            heapq.heappush(max_h, (-num, num))
+            heapq.heappush(max_h, (-num, num
             max_sz += 1
         balance()
 
@@ -77,13 +77,13 @@ c_ DualHeap:
         w.... max_sz < min_sz :
             clean_top()
             _, num =heapq.heappop(min_h)
-            heapq.heappush(max_h, (-num, num))
+            heapq.heappush(max_h, (-num, num
             min_sz -= 1
             max_sz += 1
         w.... max_sz > min_sz + 1:
             clean_top()
             _, num = heapq.heappop(max_h)
-            heapq.heappush(min_h, (num, num))
+            heapq.heappush(min_h, (num, num
             min_sz += 1
             max_sz -= 1
 
@@ -119,12 +119,12 @@ c_ Solution:
         ___ i __ r..(k
             dh.insert(nums[i])
 
-        ret.a..(dh.get_median(k))
+        ret.a..(dh.get_median(k
 
-        ___ i __ r..(k, l..(nums)):
+        ___ i __ r..(k, l..(nums:
             dh.insert(nums[i])
             dh.pop(nums[i-k])
-            ret.a..(dh.get_median(k))
+            ret.a..(dh.get_median(k
 
         r.. ret
 

@@ -25,4 +25,4 @@ ___ pascal(N: i..) __ L..[i..]:
     r.. out_list
 
 
-print(pascal(12))
+print(pascal(12

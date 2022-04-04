@@ -50,7 +50,7 @@ c_ Solution(o..
         ]
         ___ matrix __ testCases:
             print('matrix:')
-            print('\n'.j..([s..(row) ___ row __ matrix]))
+            print('\n'.j..([s..(row) ___ row __ matrix]
             res = findCircleNum(matrix)
             print('result: %s' % res)
             print('-='*30+'-')

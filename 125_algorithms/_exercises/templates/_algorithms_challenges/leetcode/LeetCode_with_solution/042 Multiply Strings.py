@@ -31,19 +31,19 @@ c_ Solution(o..
             r.. multiply(num2, num1)
 
         # reverse them first
-        num1 = map(i.., l..(num1[::-1]))
-        num2 = map(i.., l..(num2[::-1]))
+        num1 = map(i.., l..(num1[::-1]
+        num2 = map(i.., l..(num2[::-1]
 
         # multiply by 1 digit at a time
         ___ d __ num1:
-            result.a..(multiply_1_digit(d, num2))
+            result.a..(multiply_1_digit(d, num2
 
         # add the temporary results up
         lst = add_list(result)
 
         # post processing
         lst.r..  # reverse back
-        result = "".j.. m..(s.., lst)).l..("0")
+        result = "".j.. m..(s.., lst.l..("0")
         __ n.. result:
             r.. "0"
         r.. result
@@ -94,7 +94,7 @@ c_ Solution(o..
 
         ret    # list
         carry = 0
-        ___ idx __ x..(l..(num2)):  # longer one
+        ___ idx __ x..(l..(num2:  # longer one
             ___
                 sm = num1[idx] + num2[idx] + carry
             ______ I..

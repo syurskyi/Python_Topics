@@ -22,7 +22,7 @@ ___ hand_rank(hand
     __ ranks __ [14, 5, 4, 3, 2]:
         ranks = [5, 4, 3, 2, 1]
     straight = (l..(counts) __ 5) a.. (m..(ranks) - m..(ranks) __ 4)
-    flush = l..(s..([s ___ r, s __ hand])) __ 1
+    flush = l..(s..([s ___ r, s __ hand] __ 1
     r.. (9 __ counts __ (5,) ____
             8 __ straight a.. flush ____
             7 __ counts __ (4, 1) ____

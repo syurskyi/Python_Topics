@@ -1,5 +1,5 @@
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 _______ platform
 _______ subprocess
 
@@ -7,7 +7,7 @@ _______ p__
 
 # no need to import make_html_links as we call links.py from CLI!
 
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 SCRIPT = 'links.py'
 IS_LOCAL = platform.system() __ 'Darwin'
 MY_CODE = SCRIPT __ IS_LOCAL ____ TMP / SCRIPT
@@ -22,7 +22,7 @@ ___ my_file(tmp_path
 
 
 ___ _create_and_verify_links(my_file, lines, expected_links
-    my_file.w..(b'\n'.j..(lines))
+    my_file.w..(b'\n'.j..(lines
     cmd = f'cat {my_file.r..()} | python {MY_CODE}'
     output = subprocess.check_output(cmd, shell=T..).s..
     ... a..(link __ output ___ link __ expected_links)

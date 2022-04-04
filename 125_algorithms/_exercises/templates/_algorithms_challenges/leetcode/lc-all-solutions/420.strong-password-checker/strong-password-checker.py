@@ -31,7 +31,7 @@ c_ Solution(o..
         p += 1
 
     __ l..(s) < 6:
-      r.. m..(complexBal, 6 - l..(s))
+      r.. m..(complexBal, 6 - l..(s
     ____ l..(s) <= 20:
       r.. m..(complexBal, r..)
     ____:

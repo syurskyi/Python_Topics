@@ -6,7 +6,7 @@ direction  [x.u.. ___ x __ direction]
 #defining the definition of the direction reduction
 ___ dirReduc(dir    # list):
     #traversing through all the elements of the list
-    ___ j __ r..(l..(dir)):
+    ___ j __ r..(l..(dir:
         #traversing through all the elements except the last one
         ___ i __ r..(0,l..(dir)-1
             __ dir[i] __ 'NORTH' a.. dir[i+1] __ 'SOUTH' o. dir[i] __ 'SOUTH' a.. dir[i+1] __ 'NORTH':

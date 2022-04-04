@@ -36,7 +36,7 @@ c_ Solution(o..
 
         d..[0] += 1
         carry = 0
-        ___ i __ x..(l..(d..)):  # for ind, val in enumerate(digits):
+        ___ i __ x..(l..(d..:  # for ind, val in enumerate(digits):
             d..[i] += carry
             __ d..[i] > 9:
                 d..[i] -= 10

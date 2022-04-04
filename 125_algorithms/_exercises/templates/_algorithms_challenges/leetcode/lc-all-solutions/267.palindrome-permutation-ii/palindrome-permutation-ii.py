@@ -10,10 +10,10 @@ c_ Solution(o..
 
     ___ helper(s, p.., ans, visited
       __ l..(p..) __ l..(s
-        ans.a..("".j..(p..))
+        ans.a..("".j..(p..
         r..
 
-      ___ i __ r..(l..(s)):
+      ___ i __ r..(l..(s:
         __ i > 0 a.. s[i] __ s[i - 1] a.. i - 1 n.. __ visited o. i __ visited:
           _____
         visited |= {i}

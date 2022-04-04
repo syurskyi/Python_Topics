@@ -5,7 +5,7 @@ ___ get_movie_data(files: l..) __ l..:
     """Parse movie json files into a list of dicts"""
     output    # list
     ___ movie __ files:
-        output.a..(d..(json.load(movie)))
+        output.a..(d..(json.l.. movie)))
     r.. output
 
 

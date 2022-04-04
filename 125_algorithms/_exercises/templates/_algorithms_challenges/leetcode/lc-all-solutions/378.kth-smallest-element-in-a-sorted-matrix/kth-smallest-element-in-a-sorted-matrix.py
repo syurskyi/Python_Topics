@@ -9,7 +9,7 @@ c_ Solution(o..
     :rtype: int
     """
     visited  {(0, 0)}
-    heap  [(matrix[0][0], (0, 0))]
+    heap  [(matrix[0][0], (0, 0]
 
     w.... heap:
       val, (i, j)  heapq.heappop(heap)
@@ -18,7 +18,7 @@ c_ Solution(o..
         r.. val
       __ i + 1 < l..(matrix) a.. (i + 1, j) n.. __ visited:
         heapq.heappush(heap, (matrix[i + 1][j], (i + 1, j)))
-        visited.add((i + 1, j))
+        visited.add((i + 1, j
       __ j + 1 < l..(matrix) a.. (i, j + 1) n.. __ visited:
         heapq.heappush(heap, (matrix[i][j + 1], (i, j + 1)))
-        visited.add((i, j + 1))
+        visited.add((i, j + 1

@@ -3,7 +3,7 @@ c_ Solution:
         __ x > 0:
             ans = i..(s..(x)[::-1])
         __ x <= 0:
-            ans = -1 * i..(s..(abs(x))[::-1])
+            ans = -1 * i..(s..(abs(x[::-1])
         
         mini = -2**31
         maxi = 2**31 -1

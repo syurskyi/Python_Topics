@@ -21,6 +21,6 @@ c_ Solution:
         r.. n | mask
 
 s = Solution()
-print(bin(43261596))
+print(bin(43261596
 res = s.reverseBits(43261596)
-print(bin(res))
+print(bin(res

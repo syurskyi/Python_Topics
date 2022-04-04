@@ -31,5 +31,5 @@ ___ get_longest_palindrome(words_ N..
         words = [word ___ word __ load_dictionary()][0]
     words = words.r..(' ', '').l..
     output = ''.j..(ch ___ ch __ words __ ch.isalnum
-    palindrome_list = ''.j..(word ___ word __ output __ is_palindrome(word))
+    palindrome_list = ''.j..(word ___ word __ output __ is_palindrome(word
     r.. s..(palindrome_list, key=l..)[0]

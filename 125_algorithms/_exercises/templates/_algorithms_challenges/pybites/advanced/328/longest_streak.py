@@ -2,13 +2,13 @@ _______ json
 ____ dateutil.tz _______ gettz
 ____ d__ _______ date, t.., tzinfo
 ____ dateutil.parser _______ p..
-____ pathlib _______ Path
+____ p.. _______ P..
 _______ r__
 ____ t___ _______ Tuple, Optional, L..
 _______ __
 
 DATA_FILE_NAME = "test1.json"
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 
 
 DATA_PATH = TMP / DATA_FILE_NAME
@@ -17,7 +17,7 @@ UTC = gettz("UTC")
 
 
 ___ longest_streak(
-    data_file: Path = DATA_PATH, my_tz: Optional[tzinfo] = MY_TZ
+    data_file: P.. = DATA_PATH, my_tz: Optional[tzinfo] = MY_TZ
 ) __ Optional[Tuple[date, date]]:
     """Retrieve datetime strings of passed commits and calculate the longest
     streak from the user's data
@@ -37,7 +37,7 @@ ___ longest_streak(
     or None
     """
     w__ o.. data_file) __ f:
-        data = json.load(f)
+        data = json.l.. f)
     # You code from here
     commits = data 'commits'
     longest_streak = f__("-inf")
@@ -46,7 +46,7 @@ ___ longest_streak(
     day_timedelta = t..(d.._1)
     previous_date= current_start =N..
     current_streak = 1
-    ___ i __ r..(l..(commits)):
+    ___ i __ r..(l..(commits:
         commit = commits[i]
         __ commit 'passed' :
             date = p..(commit 'date' )

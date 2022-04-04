@@ -14,4 +14,4 @@ c_ Score(E..
 
     @classmethod
     ___ average(cls
-        r.. s..(v.value ___ v __ l..(cls))/l..(cls)
+        r.. s..(v.value ___ v __ l..(cls/l..(cls)

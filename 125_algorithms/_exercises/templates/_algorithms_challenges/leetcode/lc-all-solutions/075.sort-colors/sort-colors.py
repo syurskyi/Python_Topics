@@ -5,7 +5,7 @@ c_ Solution(o..
     :rtype: void Do not return anything, modify nums in-place instead.
     """
     x = y = z = -1
-    ___ i __ r..(0, l..(nums)):
+    ___ i __ r..(0, l..(nums:
       __ nums[i] __ 0:
         x += 1
         y += 1

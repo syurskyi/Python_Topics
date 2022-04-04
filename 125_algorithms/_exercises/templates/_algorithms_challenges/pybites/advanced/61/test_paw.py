@@ -12,12 +12,12 @@ ___ deck
 
 ?p__.f..(scope="module")
 ___ small_deck
-    r.. l..(create_paw_deck(4))
+    r.. l..(create_paw_deck(4
 
 
 ?p__.f..(scope="module")
 ___ big_deck
-    r.. l..(create_paw_deck(16))
+    r.. l..(create_paw_deck(16
 
 
 ___ test_deck_size(deck, small_deck, big_deck
@@ -71,7 +71,7 @@ ___ test_deck_cards_numbers_constant(deck, small_deck, big_deck
 
 ___ test_deck_numbers_used
     ___ i __ r..(1, 27
-        deck = l..(create_paw_deck(i))
+        deck = l..(create_paw_deck(i
         ... s..(1 ___ card __ deck __ i..(card.card[1:]) __ 1) __ i
 
 

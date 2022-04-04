@@ -15,7 +15,7 @@ c_ Solution(o..
     ___ height(root
       __ n.. root:
         r.. 0
-      r.. 1 + m..(height(root.left), height(root.right))
+      r.. 1 + m..(height(root.left), height(root.right
 
     ___ fill(root, res, left, right, h
       __ root:

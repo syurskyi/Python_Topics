@@ -14,7 +14,7 @@ ___ get_users(passwd: s..) __ d..:
         __ l..(parsed_pw[4]) __ 0:
           pwdict[parsed_pw[0]] = 'unknown'
         ____:
-          pwdict[parsed_pw[0]] = __.sub(',+', ' ', parsed_pw[4].rstrip(','))
+          pwdict[parsed_pw[0]] = __.sub(',+', ' ', parsed_pw[4].rstrip(','
     r..(pwdict)
 
 
@@ -30,4 +30,4 @@ ssh-rsa:x:1004:1004::/home/ssh-rsa:/bin/bash
 artagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/artagnon:/bin/bash
 """
 
-print(get_users(pw1))
+print(get_users(pw1

@@ -36,10 +36,10 @@ c_ Solution(o..
     
     ___ findRightInterval_short  intervals
         _______ bisect
-        l = s..((e.start, i) ___ i, e __ e..(intervals))
+        l = s..((e.start, i) ___ i, e __ e..(intervals
         res    # list
         ___ e __ intervals:
-            r = bisect.bisect_left(l, (e.end,))
+            r = bisect.bisect_left(l, (e.end,
             res.a..(l[r][1] __ r < l..(l) ____ -1)
         r.. res
     

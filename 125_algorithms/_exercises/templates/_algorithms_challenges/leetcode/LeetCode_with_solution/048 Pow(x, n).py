@@ -60,7 +60,7 @@ c_ Solution:
                 r.. -pow(-x, n)
 
         product = 1.0
-        ___ i __ x..(abs(n)):
+        ___ i __ x..(abs(n:
             pre = product
             __ n>0:
                 product *= x

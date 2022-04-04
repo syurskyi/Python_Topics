@@ -15,7 +15,7 @@ c_ Solution:
         """
         put_set = ("(", "[", "{")
         pop_set = (")", "]", "}")
-        pair = d..(z..(put_set, pop_set))
+        pair = d..(z..(put_set, pop_set
 
         stack    # list
         ___ element __ s:

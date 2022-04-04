@@ -28,9 +28,9 @@ c_ Solution(o..
             ____ token __ '/':
                 num1 = stack.pop()
                 num2 = stack.pop()
-                stack.a..(i..(operator.truediv(num2, num1) ))
+                stack.a..(i..(operator.truediv(num2, num1)
             ____:
-                stack.a..(i..(token))
+                stack.a..(i..(token
         r.. stack[-1]
     
     ___ test
@@ -40,9 +40,9 @@ c_ Solution(o..
             ["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"],
         ]
         ___ tokens __ testCases:
-            print('tokens: %s' % (tokens))
+            print('tokens: %s' % (tokens
             result = evalRPN(tokens)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

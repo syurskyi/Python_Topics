@@ -56,7 +56,7 @@ c_ Solution(o..
             graph[edge[1]].a..(edge[0])
         res    # list
         ___ i __ r..(n
-            res.a..(bfs(graph, i))
+            res.a..(bfs(graph, i
         r.. res
     
     ___ bfs  graph, i

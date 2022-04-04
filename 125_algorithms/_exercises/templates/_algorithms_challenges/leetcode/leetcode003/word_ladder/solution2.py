@@ -35,5 +35,5 @@ c_ Solution:
 
 
 s = Solution()
-print s.ladderLength("hit", "dow", s..(["hot", "dot", "dog", "lot", "log"]))
-print s.ladderLength("hit", "cog", s..(["hot", "dot", "dog", "lot", "log"]))
+print s.ladderLength("hit", "dow", s..(["hot", "dot", "dog", "lot", "log"]
+print s.ladderLength("hit", "cog", s..(["hot", "dot", "dog", "lot", "log"]

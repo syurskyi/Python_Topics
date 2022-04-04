@@ -23,7 +23,7 @@ c_ Solution(o..
             [4, 3, 2, 6],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = maxRotateFunction(nums)
             print('result: %s' % result)
             print('-='*20+'-')

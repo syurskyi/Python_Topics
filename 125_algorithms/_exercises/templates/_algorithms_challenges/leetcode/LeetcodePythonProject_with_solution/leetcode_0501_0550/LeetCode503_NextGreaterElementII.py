@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         res    # list
         n = l..(nums)
-        stack = l..(r..(n-1, -1, -1))
+        stack = l..(r..(n-1, -1, -1
         ___ i __ r..(n-1, -1, -1
             w.... stack a.. nums[stack[-1]] <= nums[i]:
                 stack.pop()

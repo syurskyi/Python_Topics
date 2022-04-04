@@ -72,7 +72,7 @@ c_ Solution(o..
         """
         # preprocess the array to make it discrete in [0, 1, ..., n-1]
         h    # dict
-        ___ i, v __ e..(s..(nums)):
+        ___ i, v __ e..(s..(nums:
             h[v] = i  # override duplicates
 
         A = [h[v] ___ v __ nums]
@@ -80,7 +80,7 @@ c_ Solution(o..
         st = SegmentTree(n)
         ret    # list
         ___ i __ x..(n-1, -1, -1
-            ret.a..(st.query_less(st.root, A[i]))
+            ret.a..(st.query_less(st.root, A[i]
             st.inc(A[i], 1)
 
         r.. ret[::-1]

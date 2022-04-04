@@ -63,7 +63,7 @@ ___ game
             print('Invalid input')
         ____:
             computer_choice = _get_computer_move() 
-            print(_get_winner(computer_choice,player_choice))
+            print(_get_winner(computer_choice,player_choice
 
 
 

@@ -24,7 +24,7 @@ c_ WordDistance(o..
         res = f__('inf')
         arr1, arr2 = hashmap[word1], hashmap[word2]
         w.... i < l..(arr1) a.. j < l..(arr2
-            res = m..(res, abs(arr1[i]-arr2[j]))
+            res = m..(res, abs(arr1[i]-arr2[j]
             __ arr1[i] > arr2[j]:
                 j += 1
             ____:

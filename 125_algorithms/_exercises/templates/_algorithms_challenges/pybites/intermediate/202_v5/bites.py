@@ -1,8 +1,8 @@
 _______ csv
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ u__.r.. _______ u..
 
-tmp = Path('/tmp')
+tmp = P..('/tmp')
 stats = tmp / 'bites.csv'
 
 __ n.. stats.exists
@@ -17,7 +17,7 @@ ___ get_most_complex_bites(N=10, stats=stats
     """
     w__ o.. stats, encoding="utf-8-sig") __ s:
         r.. [x[0] ___ x __ s..(
-            [[r..(f__(x 'Bite' .s..(' ')[1])), f__(x 'Difficulty' )] ___ x __ csv.DictReader(s, delimiter=';')
+            [[r..(f__(x 'Bite' .s..(' ')[1], f__(x 'Difficulty' )] ___ x __ csv.DictReader(s, delimiter=';')
              __ x 'Difficulty'  != 'None' , key=l.... x: x[1], r.._T..[:N]]
 
 

@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         __ n.. cost: r.. 0
         __ l..(cost) __ 1: r.. cost[0]
-        ___ i __ r..(l..(cost)):
+        ___ i __ r..(l..(cost:
             __ i > 1:
                 cost[i] += m..(cost[i-1], cost[i-2])
         r.. m..(cost[-1], cost[-2])

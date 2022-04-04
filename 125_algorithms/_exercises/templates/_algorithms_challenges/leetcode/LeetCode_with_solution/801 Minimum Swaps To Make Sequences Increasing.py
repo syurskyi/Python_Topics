@@ -68,7 +68,7 @@ c_ Solution:
         swap can be length - times (swap the other)
         """
         t = 0
-        ___ i __ r..(1, l..(A)):
+        ___ i __ r..(1, l..(A:
             __ A[i] <= A[i-1] o. B[i] <= B[i-1]:
                 t += 1
                 __ t < i + 1 - t:

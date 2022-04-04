@@ -21,4 +21,4 @@ c_ Solution:
         r.. res
 
 s = Solution()
-print(s.subsets([1, 2, 3]))
+print(s.subsets([1, 2, 3]

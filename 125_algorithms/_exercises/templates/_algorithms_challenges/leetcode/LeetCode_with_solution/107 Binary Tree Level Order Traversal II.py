@@ -37,7 +37,7 @@ c_ Solution:
         next_level = [root]
         w.... next_level:
             current_level = next_level
-            result.insert(0, map(l.... x: x.val, current_level))  # current level, only difference with Binary Tree Level Order Traversal I
+            result.insert(0, map(l.... x: x.val, current_level  # current level, only difference with Binary Tree Level Order Traversal I
 
             next_level    # list
             ___ element __ current_level:
@@ -48,7 +48,7 @@ c_ Solution:
         r.. result
 
 __ _____ __ ____
-    Solution().levelOrderBottom(TreeNode(1))
+    Solution().levelOrderBottom(TreeNode(1
 
 
 

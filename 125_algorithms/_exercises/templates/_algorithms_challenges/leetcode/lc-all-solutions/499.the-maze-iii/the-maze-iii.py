@@ -25,7 +25,7 @@ c_ Solution(o..
             _____
         y.. (i, j), mark, dist
 
-    heap = [(0, "", t..(ball))]
+    heap = [(0, "", t..(ball]
     visited = s..()
     hole = t..(hole)
     w.... heap:
@@ -36,6 +36,6 @@ c_ Solution(o..
       __ curr __ hole:
         r.. word
       ___ pos, mark, incDist __ next(curr, maze
-        heapq.heappush(heap, (dist + incDist, word + mark, pos))
+        heapq.heappush(heap, (dist + incDist, word + mark, pos
 
     r.. "impossible"

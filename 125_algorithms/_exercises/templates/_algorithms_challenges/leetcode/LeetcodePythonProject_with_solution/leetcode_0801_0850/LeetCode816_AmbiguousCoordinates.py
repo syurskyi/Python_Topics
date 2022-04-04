@@ -17,7 +17,7 @@ c_ Solution(o..
             arrB = helper(s[i+1:n-1])
             ___ s1 __ arrA:
                 ___ s2 __ arrB:
-                    res.a..('(%s, %s)' % (s1, s2))
+                    res.a..('(%s, %s)' % (s1, s2
         r.. res
     
     ___ helper  s

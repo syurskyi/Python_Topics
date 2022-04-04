@@ -25,7 +25,7 @@ c_ Solution(o..
         __ N __ cache:
             r.. cache[N]
         __ N __ 1:
-            res.a..(TreeNode(0))
+            res.a..(TreeNode(0
             r.. res
         ___ i __ r..(N
             left = allPossibleFBT(i)

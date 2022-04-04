@@ -12,6 +12,6 @@ ___ collatzSequence(tests
             ____:
                 value  3 * value + 1
             count + 1
-        answer.a..(s..(count))
-    print(' '.j..(answer))
+        answer.a..(s..(count
+    print(' '.j..(answer
 collatzSequence(input

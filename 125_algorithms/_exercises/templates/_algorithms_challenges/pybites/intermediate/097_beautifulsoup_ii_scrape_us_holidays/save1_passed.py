@@ -6,7 +6,7 @@ ____ bs4 _______ BeautifulSoup
 
 
 # prep data
-tmp = __.getenv("TMP", "/tmp")
+tmp = __.g..("TMP", "/tmp")
 page = 'us_holidays.html'
 holidays_page = __.p...j..(tmp, page)
 u..(

@@ -15,7 +15,7 @@ c_ Solution(o..
         sums += nums[i] - mid
       __ sums >= 0:
         r.. T..
-      ___ i __ r..(k, l..(nums)):
+      ___ i __ r..(k, l..(nums:
         sums += nums[i] - mid
         preSums += nums[i - k] - mid
         minSum = m..(minSum, preSums)

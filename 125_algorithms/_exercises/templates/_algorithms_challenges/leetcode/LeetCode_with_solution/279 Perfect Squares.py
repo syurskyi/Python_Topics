@@ -46,7 +46,7 @@ c_ Solution(o..
             level += 1
             l = l..(q)
             ___ i __ x..(l
-                ___ j __ x..(1, i..(m__.sqrt(n))+1
+                ___ j __ x..(1, i..(m__.sqrt(n+1
                     nxt = q[i]+j*j
                     __ nxt <= n a.. visited[nxt]:
                         _____
@@ -69,7 +69,7 @@ c_ Solution(o..
         """
         F = [i ___ i __ x..(n+1)]
         ___ i __ x..(1, n+1
-            ___ j __ x..(1, i..(m__.sqrt(i))+1
+            ___ j __ x..(1, i..(m__.sqrt(i+1
                 __ i-j*j >= 0:
                     F[i] = m..(F[i], F[i-j*j]+1)
 

@@ -23,7 +23,7 @@ ___ get_octal_from_file_permission(rwx: s..) __ s..:
    }
 
    octal_c = [octal_lookup[char] __ char __ octal_lookup ____ 0 ___ char __ rwx]
-   octal_file = [s..(s..(octal_c[i:j])) ___ i, j __ z..(r..(0, l..(octal_c), 3), r..(3, l..(octal_c) +1, 3))]
+   octal_file = [s..(s..(octal_c[i:j] ___ i, j __ z..(r..(0, l..(octal_c), 3), r..(3, l..(octal_c) +1, 3]
    r.. "".j..(octal_file)
 
 

@@ -9,8 +9,8 @@ ___ combinations_counting(test_cases
     answer    # list
     ___ x __ r..(test_cases
         n, k  [i..(x) ___ x __ raw_input().s.. ]
-        case_answer  factorial_of(n) / (factorial_of(k) * factorial_of(n - k))
-        answer.a..(s..(case_answer))
-    print(' '.j..(answer))
+        case_answer  factorial_of(n) / (factorial_of(k) * factorial_of(n - k
+        answer.a..(s..(case_answer
+    print(' '.j..(answer
         
 combinations_counting(input

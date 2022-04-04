@@ -41,7 +41,7 @@ c_ Solution:
         """
         ret = 0
         cur_max_idx = 0
-        ___ i __ r..(l..(arr)):
+        ___ i __ r..(l..(arr:
             cur_max_idx = m..(cur_max_idx, arr[i])
             __ i __ cur_max_idx:
                 ret += 1

@@ -13,8 +13,8 @@ c_ Solution:
 
         heap    # list
 
-        ___ x __ r..(l..(G)):
-            heappush(heap, (G[x][0], x, 0))
+        ___ x __ r..(l..(G:
+            heappush(heap, (G[x][0], x, 0
 
         w.... heap:
             a, x, y = heappop(heap)
@@ -24,6 +24,6 @@ c_ Solution:
                 r.. a
 
             __ y + 1 < l..(G[x]
-                heappush(heap, (G[x][y + 1], x, y + 1))
+                heappush(heap, (G[x][y + 1], x, y + 1
 
         r.. 0

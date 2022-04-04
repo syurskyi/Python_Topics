@@ -71,7 +71,7 @@ ___ convolution2D(
 
 
 
-    output_array_size = i..(np.f..((image.shape[0] + 2 * padding - kernel.shape[0])/stride + 1))
+    output_array_size = i..(np.f..((image.shape[0] + 2 * padding - kernel.shape[0])/stride + 1
 
 
     output_array = np.zeros((output_array_size,) * 2)
@@ -128,7 +128,7 @@ __ _______ __ _______
            [0.11111111, 0.11111111, 0.11111111]])
     padding = 0
 
-    print(convolution2D(image,kernel,padding))
+    print(convolution2D(image,kernel,padding
 
 
 

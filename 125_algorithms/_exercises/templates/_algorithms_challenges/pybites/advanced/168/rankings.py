@@ -108,7 +108,7 @@ c_ Rankings:
         start,end = 0,l..(rankings)  - 1
         pairs    # list
         ___ i __ r..(n
-            pairs.a..((rankings[end - i],rankings[start + i]))
+            pairs.a..((rankings[end - i],rankings[start + i]
 
         r.. pairs
 

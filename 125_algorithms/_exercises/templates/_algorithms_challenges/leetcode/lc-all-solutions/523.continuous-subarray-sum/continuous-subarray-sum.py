@@ -14,7 +14,7 @@ c_ Solution(o..
     ppSum = 0
     subSum = nums[0] + nums[1]
     d = s..([0])
-    ___ i __ r..(2, l..(nums)):
+    ___ i __ r..(2, l..(nums:
       ppSum = (ppSum + nums[i - 2]) % k
       d |= {ppSum}
       subSum = (subSum + nums[i]) % k

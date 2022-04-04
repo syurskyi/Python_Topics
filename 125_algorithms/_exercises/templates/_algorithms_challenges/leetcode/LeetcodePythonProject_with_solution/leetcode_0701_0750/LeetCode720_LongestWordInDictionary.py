@@ -18,7 +18,7 @@ c_ Solution(o..
                 dp[l..(word)].add(word)
         ___ i __ r..(n, -1, -1
             __ dp[i]:
-                r.. s..(l..(dp[i])).pop(0)
+                r.. s..(l..(dp[i].pop(0)
         r.. ''
     
     ___ test

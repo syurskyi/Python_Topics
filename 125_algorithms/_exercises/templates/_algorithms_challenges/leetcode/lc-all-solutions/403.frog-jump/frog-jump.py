@@ -11,7 +11,7 @@ c_ Solution(o..
       __ dp.has_key(key
         r.. dp[key]
       ____:
-        ___ i __ r..(pos + 1, l..(stones)):
+        ___ i __ r..(pos + 1, l..(stones:
           step = stones[i] - stones[pos]
           __ step < k - 1:
             _____;

@@ -23,7 +23,7 @@ c_ Solution(o..
             r.. 0
         ____ n __ 1:
             r.. nums[0]
-        r.. m..(rob_aux(nums, 0), rob_aux(nums, 1))
+        r.. m..(rob_aux(nums, 0), rob_aux(nums, 1
 
     ___ rob_aux  nums, left
         n = l..(nums) - 1
@@ -41,5 +41,5 @@ c_ Solution(o..
 a1 = [1]
 a2 = [4, 1, 6, 10, 5, 13, 2, 7]
 s = Solution()
-print(s.rob(a1))
-print(s.rob(a2))
+print(s.rob(a1
+print(s.rob(a2

@@ -15,4 +15,4 @@ ___ get_missing_dates(dates
     rng: t.. = end_date - start_date
     r.. [start_date + t..(d)
             ___ d __ r..(rng.days)
-            __ (start_date + t..(d)) n.. __ dt]
+            __ (start_date + t..(d n.. __ dt]

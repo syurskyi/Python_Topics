@@ -17,7 +17,7 @@ c_ Solution:
         :rtype: int
         """
         mini = m..(nums)
-        r.. s.. m..(l.... e: e - mini, nums))
+        r.. s.. m..(l.... e: e - mini, nums
 
 
 __ _______ __ _______

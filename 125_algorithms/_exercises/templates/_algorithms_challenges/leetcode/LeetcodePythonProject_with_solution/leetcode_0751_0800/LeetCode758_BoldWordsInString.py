@@ -15,13 +15,13 @@ c_ Solution(o..
         start = F..
         j = 0
         res = ''
-        ___ i __ r..(l..(s)):
+        ___ i __ r..(l..(s:
             ___ word __ words:
                 __ i+l..(word) <= l..(s) a.. s[i:i+l..(word)] __ word:
                     __ n.. start:
                         res += '<b>'
                         start = T..
-                    j = m..(j, i+l..(word))
+                    j = m..(j, i+l..(word
             __ i __ j a.. start:
                 res += '</b>'
                 start = F..

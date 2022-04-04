@@ -10,7 +10,7 @@ c_ Solution(o..
         :type rectangles: List[List[int]]
         :rtype: int
         """
-        xs = s..(s..([x ___ x1, y1, x2, y2 __ rectangles ___ x __ [x1, x2]] + [0]))
+        xs = s..(s..([x ___ x1, y1, x2, y2 __ rectangles ___ x __ [x1, x2]] + [0]
         x_i = {v: i ___ i, v __ e..(xs)}
         count = [0] * l..(x_i)
         L    # list
@@ -24,7 +24,7 @@ c_ Solution(o..
             cur_y = y
             ___ i __ r..(x_i[x1], x_i[x2]
                 count[i] += sig
-            cur_x_sum = s..(x2-x1 __ c ____ 0 ___ x1, x2, c __ z..(xs, xs[1:], count))
+            cur_x_sum = s..(x2-x1 __ c ____ 0 ___ x1, x2, c __ z..(xs, xs[1:], count
         r.. area % (10**9+7)
     
     ___ test

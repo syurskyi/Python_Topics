@@ -12,7 +12,7 @@ c_ Solution(o..
         res.a..(p.. + [])
         r..
 
-      ___ i __ r..(l..(nums)):
+      ___ i __ r..(l..(nums:
         __ i __ visited:
           _____
         __ i > 0 a.. nums[i] __ nums[i - 1] a.. i - 1 n.. __ visited:

@@ -1,7 +1,7 @@
 ____ c.. _______ n..
 _______ csv
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 _______ sqlite3
 _______ r__
 _______ s__
@@ -9,7 +9,7 @@ _______ s__
 _______ r__
 
 DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 
 salt = ''.j..(
     r__.choice(s__.ascii_lowercase) ___ i __ r..(20)
@@ -17,7 +17,7 @@ salt = ''.j..(
 DB = TMP / f'nba_{salt}.db'
 
 Player = n..('Player', ('name year first_year team college active '
-                               'games avg_min avg_points'))
+                               'games avg_min avg_points'
 
 conn = sqlite3.connect(DB)
 cur = conn.cursor()
@@ -39,7 +39,7 @@ ___ import_data
                               active=row 'Yrs' ,
                               games=row 'Games' ,
                               avg_min=row 'Minutes.per.Game' ,
-                              avg_points=row 'Points.per.Game' ))
+                              avg_points=row 'Points.per.Game'
 
     cur.execute('''CREATE TABLE IF NOT EXISTS players
                   (name, year, first_year, team, college, active,

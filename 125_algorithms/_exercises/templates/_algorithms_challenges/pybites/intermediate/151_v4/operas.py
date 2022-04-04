@@ -51,7 +51,7 @@ operas = [
 
 
 ___ _get_date(date_str
-    r.. d__.date(d__.s..(date_str, "%d %B %Y"))
+    r.. d__.date(d__.s..(date_str, "%d %B %Y"
 
 
 ___ _was_alive(composer, date
@@ -82,4 +82,4 @@ ___ operas_both_at_premiere(guest, composer
 
     r.. [opera.play ___ opera __ operas
             __ (composer __ opera.author a.. _was_alive(gst, opera.date)
-                a.. _was_alive(comp, opera.date))]
+                a.. _was_alive(comp, opera.date]

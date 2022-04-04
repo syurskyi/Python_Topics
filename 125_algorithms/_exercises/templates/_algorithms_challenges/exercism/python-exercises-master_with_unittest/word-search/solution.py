@@ -23,7 +23,7 @@ c_ Point(o..
 
 
 DIRECTIONS = (Point(1, 0), Point(1, -1), Point(1, 1), Point(-1, -1),
-              Point(0, -1), Point(0, 1), Point(-1, 1), Point(-1, 0))
+              Point(0, -1), Point(0, 1), Point(-1, 1), Point(-1, 0
 
 
 c_ WordSearch(o..
@@ -49,7 +49,7 @@ c_ WordSearch(o..
 
     ___ s..  word
         positions = (Point(x, y)
-                     ___ x __ r..(width) ___ y __ r..(height))
+                     ___ x __ r..(width) ___ y __ r..(height
         ___ pos __ positions:
             ___ d __ DIRECTIONS:
                 result = find(word, pos, d)

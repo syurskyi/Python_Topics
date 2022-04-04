@@ -35,9 +35,9 @@ c_ Solution(o..
             100021,
         ]
         ___ x __ testCases:
-            print('x: %s' % (x))
+            print('x: %s' % (x
             result = isPalindrome(x)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*30+'-')
 
 __ _____ __ _____

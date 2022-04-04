@@ -2,7 +2,7 @@ _______ __
 _______ statistics
 ____ u__.r.. _______ u..
 
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA = 'testfiles_number_loc.txt'
 STATS = __.p...j..(TMP, DATA)
@@ -36,7 +36,7 @@ ___ get_all_line_counts(data: s.. = STATS) __ l..:
         ___ line __ f:
             line = line.s..
             space_index = line.i.. ' ')
-            lines.a..(i..(line[:space_index]))
+            lines.a..(i..(line[:space_index]
     
     r.. lines
 

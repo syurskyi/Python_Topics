@@ -13,7 +13,7 @@ c_ RandomizedCollection(o..
     :type val: int
     :rtype: bool
     """
-    d[val].a..(l..(a))
+    d[val].a..(l..(a
     dOfd[val][l..(a)] = l..(d[val]) - 1
     a.a..(val)
     r.. l..(d[val]) __ 1
@@ -46,7 +46,7 @@ c_ RandomizedCollection(o..
     Get a random element from the collection.
     :rtype: int
     """
-    r.. a[r__.randrange(0, l..(a))]
+    r.. a[r__.randrange(0, l..(a]
 
 # Your RandomizedCollection object will be instantiated and called as such:
 # obj = RandomizedCollection()

@@ -26,7 +26,7 @@ c_ Solution:
         """
         bloom    # list
 
-        ___ day __ r..(l..(flowers)):
+        ___ day __ r..(l..(flowers:
             x = flowers[day]
             i = bisect.bisect_left(bloom, x)
             ___ _x __ bloom[m..(0, i - 1i + 1]:
@@ -66,9 +66,9 @@ c_ Solution2:
             __ any((
                 x2day[i] < x2day[left],
                 x2day[i] <= x2day[right],
-            )):
+            :
                 __ i __ right:
-                    ans = m..(ans, m..(x2day[left], x2day[right]))
+                    ans = m..(ans, m..(x2day[left], x2day[right]
                 left, right = i, k + i + 1
             i += 1
 

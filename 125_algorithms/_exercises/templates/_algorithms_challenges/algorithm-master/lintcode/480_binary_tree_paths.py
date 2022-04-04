@@ -22,10 +22,10 @@ c_ Solution:
         r.. ans
 
     ___ dfs  node, ans, p..
-        p...a..(s..(node.val))
+        p...a..(s..(node.val
 
         __ n.. node.left a.. n.. node.right:
-            ans.a..('->'.j..(p..))
+            ans.a..('->'.j..(p..
             p...pop()
             r..
 

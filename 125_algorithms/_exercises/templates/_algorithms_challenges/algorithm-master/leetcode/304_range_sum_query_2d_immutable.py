@@ -23,7 +23,7 @@ c_ NumMatrix:
                     prefix_sum[x][y - 1],
                     - prefix_sum[x - 1][y - 1],
                     matrix[x - 1][y - 1],
-                ))
+
 
     ___ sumRegion  x1, y1, x2, y2
         """
@@ -40,7 +40,7 @@ c_ NumMatrix:
             0 <= x2 + 1 < l..(prefix_sum),
             0 <= y1 < l..(prefix_sum[0]),
             0 <= y2 + 1 < l..(prefix_sum[0]),
-        )):
+        :
             r.. 0
 
         r.. s..((
@@ -48,4 +48,4 @@ c_ NumMatrix:
             - prefix_sum[x2 + 1][y1],
             - prefix_sum[x1][y2 + 1],
             prefix_sum[x1][y1],
-        ))
+

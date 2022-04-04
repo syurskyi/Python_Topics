@@ -10,7 +10,7 @@ c_ Solution(o..
     directions = [(-1, 1), (1, -1)]
     d = 0
     i = j = 0
-    ___ _ __ r..(l..(matrix) * l..(matrix[0])):
+    ___ _ __ r..(l..(matrix) * l..(matrix[0]:
       ans.a..(matrix[i][j])
       di, dj = directions[d]
       i, j = i + di, j + dj

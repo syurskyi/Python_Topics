@@ -26,7 +26,7 @@ ___ extract_date(reboots
                         m.._months[line_parts[-3]],
                         d.._int(line_parts[-2]),
                        hour=i..(time_part[0]),
-                       minute=i..(time_part[1]))
+                       minute=i..(time_part[1]
 
 
 ___ calc_max_uptime(reboots

@@ -29,7 +29,7 @@ c_ Solution:
         r.. a..((
             l01 __ l02 __ l13 __ l23 > 0,
             l03 __ l12,
-        ))
+
 
     ___ get_distance  a, b
         """

@@ -23,7 +23,7 @@ c_ Solution(o..
             [1, 2, 3, 4],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = find132pattern(nums)
             print('result: %s' % result)
             print('-='*20+'-')

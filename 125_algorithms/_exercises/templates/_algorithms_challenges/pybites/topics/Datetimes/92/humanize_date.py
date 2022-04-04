@@ -34,4 +34,4 @@ ___ pretty_date(date
 dt = d__.n.. - t..(d.._2, hours=22, minutes=14, seconds=15)
 #dt = datetime.now() - timedelta(seconds=125)
 #print(dt)
-print(pretty_date(dt))
+print(pretty_date(dt

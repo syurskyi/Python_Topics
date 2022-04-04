@@ -34,7 +34,7 @@ c_ Solution(o..
     
     ___ test
         node1 = TreeNode(5, TreeNode(6), TreeNode(2, TreeNode(7), TreeNode(4)))
-        node2 = TreeNode(1, TreeNode(0), TreeNode(8))
+        node2 = TreeNode(1, TreeNode(0), TreeNode(8
         root = TreeNode(3)
         root.left = node1
         root.right = node2

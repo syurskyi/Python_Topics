@@ -16,11 +16,11 @@ _______ json __ j
 IPINFO_URL = 'http://ipinfo.io/{ip}/json'
 
 ___ get_ip_country_2(ip_address
-    response = r__.g.. IPINFO_URL.f..(ip=ip_address))
-    print(t..(response.text))
+    response = r__.g.. IPINFO_URL.f..(ip=ip_address
+    print(t..(response.text
     print(response.text)
     jso = j.loads(response.text)
-    print(t..(jso))
+    print(t..(jso
     print(jso 'country' )
 
 
@@ -29,7 +29,7 @@ ___ get_ip_country(ip_address
        parse the json response returning the country code of the IP"""
 
     # Execute HTTP GET request, this method returns requests.models.Response object
-    response = r__.g.. IPINFO_URL.f..(ip=ip_address))
+    response = r__.g.. IPINFO_URL.f..(ip=ip_address
     # Returns json-encoded value of the response object, throws ValueError if the response body does not contain a valid json
     # So dzejson is a dict
     ___
@@ -39,6 +39,6 @@ ___ get_ip_country(ip_address
 
     r..(dzejson 'country' )
 
-print(get_ip_country_2(ip_address="8.8.8.8"))
+print(get_ip_country_2(ip_address="8.8.8.8"
 
 

@@ -38,7 +38,7 @@ c_ Solution(o..
     ___ test
         root = TreeNode(1, N.., TreeNode(3, TreeNode(2), TreeNode(4, N.., TreeNode(5))))
         result = longestConsecutive(root)
-        print('result: %s' % (result))
+        print('result: %s' % (result
 
 __ _____ __ _____
     Solution().test()

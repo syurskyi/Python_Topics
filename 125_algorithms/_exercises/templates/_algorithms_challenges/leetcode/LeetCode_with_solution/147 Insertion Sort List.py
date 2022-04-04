@@ -92,7 +92,7 @@ __ _____ __ ____
     lst = [ListNode(i) ___ i __ r__.sample(x..(-1000, 1000), 1000)]
     # lst = [ListNode(1), ListNode(3), ListNode(2)]
     # lst = [ListNode(i) for i in range(10, -1, -1)]
-    ___ i __ r..(l..(lst)):
+    ___ i __ r..(l..(lst:
         ___
             lst[i].next = lst[i+1]
         ______ I.. # last
@@ -102,7 +102,7 @@ __ _____ __ ____
 
     head = Solution().insertionSortList(lst[0])
     current = head
-    ___ i __ r..(l..(lst)):
+    ___ i __ r..(l..(lst:
         print current.val
         current = current.next
 

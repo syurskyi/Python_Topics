@@ -46,5 +46,5 @@ c_ RandomizedSet:
         Get a random element from the set.
         :rtype: int
         """
-        i = r__.randrange(l..(nums))
+        i = r__.randrange(l..(nums
         r.. nums[i]

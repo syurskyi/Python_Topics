@@ -7,5 +7,5 @@ ___ findRange(numbers
             minNum  x
         __ i..(x) > i..(maxNum
             maxNum  x
-    print(s..(maxNum) + " " + s..(minNum))
+    print(s..(maxNum) + " " + s..(minNum
 findRange(raw_input

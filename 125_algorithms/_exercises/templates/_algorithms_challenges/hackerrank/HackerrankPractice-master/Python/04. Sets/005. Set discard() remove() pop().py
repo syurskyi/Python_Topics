@@ -9,7 +9,7 @@ ___ i __ r..(i..(input())):
     __ s__[0] __ 'pop':
         s.pop()
     ____ s__[0] __ 'remove':
-        s.remove(i..(s__[1]))
+        s.remove(i..(s__[1]
     ____ s__[0] __ 'discard':
-        s.discard(i..(s__[1]))
-print(s..(s))
+        s.discard(i..(s__[1]
+print(s..(s

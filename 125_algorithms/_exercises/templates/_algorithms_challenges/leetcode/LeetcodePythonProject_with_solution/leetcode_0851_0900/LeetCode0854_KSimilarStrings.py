@@ -24,7 +24,7 @@ c_ Solution(o..
                 i = 0
                 w.... s[i] __ b[i]:
                     i += 1
-                ___ j __ r..(i+1, l..(s)):
+                ___ j __ r..(i+1, l..(s:
                     __ s[j] __ b[j] o. s[i] != b[j]:
                         _____
                     tmp = swap(s, i, j)

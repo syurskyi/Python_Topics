@@ -33,7 +33,7 @@ c_ Solution(o..
         ___ num __ nums:
             xor ^= num
         group0, group1 = 0, 0
-        lastBit = xor-(xor&(xor-1))
+        lastBit = xor-(xor&(xor-1
         ___ num __ nums:
             __ lastBit & num __ 0:
                 group0 ^= num
@@ -47,9 +47,9 @@ c_ Solution(o..
             [1, 2, 1, 3, 2, 5],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = singleNumber(nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____
@@ -58,8 +58,8 @@ __ _____ __ _____
     _______ r__
     ___ num __ r..(30
         num = r__.randint(0, num)
-        print('num:  %08s' % bin(num & 0b11111111))
-        print('-num: %8s' % bin(-num & 0b11111111))
+        print('num:  %08s' % bin(num & 0b11111111
+        print('-num: %8s' % bin(-num & 0b11111111
         diff = num&(-num)
-        print('diff: %8s' % bin(diff & 0b11111111))
+        print('diff: %8s' % bin(diff & 0b11111111
         print('-='*30+'-')

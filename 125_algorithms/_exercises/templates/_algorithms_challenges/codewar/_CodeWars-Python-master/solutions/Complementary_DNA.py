@@ -12,6 +12,6 @@ ___ DNA_strand(dna
     r.. ''.j..([complements[c] ___ c __ dna])
 
 
-print(DNA_strand("AAAA"))
-print(DNA_strand("ATTGC"))
-print(DNA_strand("GTAT"))
+print(DNA_strand("AAAA"
+print(DNA_strand("ATTGC"
+print(DNA_strand("GTAT"

@@ -28,13 +28,13 @@ c_ LuhnTests(unittest.TestCase
         assertTrue(Luhn(8739567).is_valid
 
     ___ test_create_valid_number1
-        assertEqual(1230, Luhn.create(123))
+        assertEqual(1230, Luhn.create(123
 
     ___ test_create_valid_number2
-        assertEqual(8739567, Luhn.create(873956))
+        assertEqual(8739567, Luhn.create(873956
 
     ___ test_create_valid_number3
-        assertEqual(8372637564, Luhn.create(837263756))
+        assertEqual(8372637564, Luhn.create(837263756
 
     ___ test_is_valid_can_be_called_repeatedly
         # This test was added, because we saw many implementations

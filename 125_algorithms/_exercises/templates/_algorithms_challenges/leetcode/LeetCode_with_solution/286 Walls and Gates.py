@@ -6,7 +6,7 @@ __author__ = 'Daniel'
 
 c_ Solution(o..
     ___ -
-        dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
+        dirs = ((-1, 0), (1, 0), (0, -1), (0, 1
 
     ___ wallsAndGates  mat
         """
@@ -23,12 +23,12 @@ c_ Solution(o..
                 i1, j1 = i+d[0], j+d[1]
                 __ 0 <= i1 < l..(mat) a.. 0 <= j1 < l..(mat[0]) a.. mat[i1][j1] > mat[i][j]+1:
                     mat[i1][j1] = mat[i][j]+1
-                    q.a..((i1, j1))
+                    q.a..((i1, j1
 
 
 c_ Solution_slow(o..
     ___ -
-        dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
+        dirs = ((-1, 0), (1, 0), (0, -1), (0, 1
 
     ___ wallsAndGates  rooms
         """
@@ -61,7 +61,7 @@ c_ Solution_slow(o..
                     i_t = i+d[0]
                     j_t = j+d[1]
                     __ 0 <= i_t < m a.. 0 <= j_t < n a.. rooms[i_t][j_t] != -1 a.. rooms[i_t][j_t] >= level+1:
-                        q.a..((i_t, j_t))
+                        q.a..((i_t, j_t
 
             q = q[l:]
             level += 1
@@ -72,19 +72,19 @@ c_ Solution_slow(o..
         m = l..(rooms)
         n = l..(rooms[0])
         q = d..()
-        q.a..((x, y, 0))
+        q.a..((x, y, 0
         w.... q:
             i, j, level = q.popleft()
             rooms[i][j] = m..(rooms[i][j], level)
             ___ d __ dirs:
                 i_t, j_t = i+d[0], j+d[1]
                 __ 0 <= i_t < m a.. 0 <= j_t < n a.. rooms[i_t][j_t] != -1 a.. rooms[i_t][j_t] >= level+1:
-                    q.a..((i_t, j_t, level+1))
+                    q.a..((i_t, j_t, level+1
 
 
 c_ Solution_error(o..
     ___ -
-        dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
+        dirs = ((-1, 0), (1, 0), (0, -1), (0, 1
 
     ___ wallsAndGates  rooms
         """

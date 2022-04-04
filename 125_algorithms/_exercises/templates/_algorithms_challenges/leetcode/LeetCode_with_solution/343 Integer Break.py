@@ -30,7 +30,7 @@ c_ Solution(o..
         F[1] = 1
         ___ i __ x..(2, n+1
             F[i] = m..(
-                m..(F[j] * F[i-j], j * F[i-j], F[j] * (i-j), j * (i-j))
+                m..(F[j] * F[i-j], j * F[i-j], F[j] * (i-j), j * (i-j
                 ___ j __ x..(1, i/2)
             )
 

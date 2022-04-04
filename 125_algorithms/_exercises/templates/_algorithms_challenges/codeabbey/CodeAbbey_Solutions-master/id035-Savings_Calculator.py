@@ -10,6 +10,6 @@ ___ savingsCalc(calculations
         w.... start < end:
             start *= rate
             year += 1
-        answer.a..(s..(year))
-    print(' '.j..(answer))
+        answer.a..(s..(year
+    print(' '.j..(answer
 savingsCalc(input

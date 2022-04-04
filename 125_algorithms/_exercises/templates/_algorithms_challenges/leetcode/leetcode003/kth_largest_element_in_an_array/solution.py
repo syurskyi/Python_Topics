@@ -20,7 +20,7 @@ c_ Solution(o..
         """
         h    # list
         ___ e __ nums:
-            heapq.heappush(h, (-e, e))
+            heapq.heappush(h, (-e, e
         ___ i __ r..(k
             w, e = heapq.heappop(h)
             __ i __ k - 1:

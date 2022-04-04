@@ -33,17 +33,17 @@ c_ HandshakeTest(unittest.TestCase
         assertEqual(code( 'jump', 'double blink' ), '11010')
 
     ___ test_composition1
-        assertEqual(code(handshake(27)), '11011')
+        assertEqual(code(handshake(27, '11011')
 
     ___ test_composition2
-        assertEqual(code(handshake(1)), '1')
+        assertEqual(code(handshake(1, '1')
 
     ___ test_composition3
-        assertEqual(code(handshake('111')), '111')
+        assertEqual(code(handshake('111', '111')
 
     ___ test_composition4
         inp =  'wink', 'double blink', 'jump' 
-        assertEqual(handshake(code(inp)), inp)
+        assertEqual(handshake(code(inp, inp)
 
 
 __ _____ __ _____

@@ -57,7 +57,7 @@ c_ Solution(o..
         ret    # list
         toWords(num, ret)
         ret = f.. l.... x: x, ret)  # filter None as zeros
-        r.. " ".j.. m..(s.., ret))
+        r.. " ".j.. m..(s.., ret
 
     ___ toWords  num, ret
         """

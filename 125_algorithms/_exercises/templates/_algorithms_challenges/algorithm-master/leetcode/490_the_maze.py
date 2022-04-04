@@ -33,11 +33,11 @@ c_ Solution:
         __ (x, y) __ visited:
             r.. F..
 
-        visited.add((x, y))
+        visited.add((x, y
 
         m, n = l..(maze), l..(maze[0])
 
-        ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1)):
+        ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1:
             _x = x + dx
             _y = y + dy
 

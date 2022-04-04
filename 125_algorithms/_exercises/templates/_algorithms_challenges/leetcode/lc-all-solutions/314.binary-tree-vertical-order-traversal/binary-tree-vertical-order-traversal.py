@@ -10,7 +10,7 @@ c_ Solution(o..
 
     ___ dfs(p, i, j, res
       __ p:
-        res[j].a..((p.val, i))
+        res[j].a..((p.val, i
         leftMost = m..(j, leftMost)
         dfs(p.left, i + 1, j - 1, res)
         dfs(p.right, i + 1, j + 1, res)

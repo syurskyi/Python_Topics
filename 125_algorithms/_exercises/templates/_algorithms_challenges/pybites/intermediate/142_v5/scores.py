@@ -22,4 +22,4 @@ ___ get_winner(players
     """
     __ any(l..(players[0].scores) != l..(s.scores) ___ s __ players[1:]
         r.. V...()
-    r.. s..(players, key=l.... x: calculate_score(x.scores))[-1]
+    r.. s..(players, key=l.... x: calculate_score(x.scores[-1]

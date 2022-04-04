@@ -23,8 +23,8 @@ c_ Solution:
         sb    # list  # string builder
         w.... n:
             n -= 1  # there is not 0 representation in excel title
-            sb.a..(chr(o..("A")+n%26))
+            sb.a..(chr(o..("A")+n%26
             n /= 26
 
-        r.. "".j..(r..(sb))
+        r.. "".j..(r..(sb
 

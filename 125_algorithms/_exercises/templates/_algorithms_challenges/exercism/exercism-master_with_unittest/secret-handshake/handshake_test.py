@@ -5,32 +5,32 @@ ____ handshake _______ handshake, code
 
 c_ HandshakeTest(unittest.TestCase
     ___ test_shake_int
-        assertEqual( 'wink', 'jump' , handshake(9))
+        assertEqual( 'wink', 'jump' , handshake(9
 
     ___ test_shake_bin1
         assertEqual( 'close your eyes', 'double blink' ,
-                         handshake('10110'))
+                         handshake('10110'
 
     ___ test_shake_bin2
-        assertEqual( 'wink', 'close your eyes' , handshake('101'))
+        assertEqual( 'wink', 'close your eyes' , handshake('101'
 
     ___ test_shake_negative_int
-        assertEqual([], handshake(-9))
+        assertEqual([], handshake(-9
 
     ___ test_shake_bin_invalid
-        assertEqual([], handshake('121'))
+        assertEqual([], handshake('121'
 
     ___ test_unknown_action
-        assertEqual('0', code( 'wink', 'sneeze' ))
+        assertEqual('0', code( 'wink', 'sneeze'
 
     ___ test_code1
-        assertEqual('1100', code( 'close your eyes', 'jump' ))
+        assertEqual('1100', code( 'close your eyes', 'jump'
 
     ___ test_code2
-        assertEqual('11', code( 'wink', 'double blink' ))
+        assertEqual('11', code( 'wink', 'double blink'
 
     ___ test_code3
-        assertEqual('11010', code( 'jump', 'double blink' ))
+        assertEqual('11010', code( 'jump', 'double blink'
 
     ___ test_composition1
         assertEqual('11011', code(handshake(27)))

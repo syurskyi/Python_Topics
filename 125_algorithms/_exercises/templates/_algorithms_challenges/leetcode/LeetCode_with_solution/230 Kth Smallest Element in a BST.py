@@ -31,7 +31,7 @@ c_ Solution:
         __ l+1 __ k:
             r.. root.val
         ____ l+1 < k:
-            r.. kthSmallest(root.right, k-(l+1))
+            r.. kthSmallest(root.right, k-(l+1
         ____:
             r.. kthSmallest(root.left, k)
 

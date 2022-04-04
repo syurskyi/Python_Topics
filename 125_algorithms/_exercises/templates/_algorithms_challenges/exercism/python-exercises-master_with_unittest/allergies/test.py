@@ -12,18 +12,18 @@ __ n.. hasattr(unittest.TestCase, 'assertCountEqual'
 c_ AllergiesTests(unittest.TestCase
     ___ test_no_allergies_means_not_allergic
         allergies = Allergies(0)
-        assertFalse(allergies.is_allergic_to('peanuts'))
-        assertFalse(allergies.is_allergic_to('cats'))
-        assertFalse(allergies.is_allergic_to('strawberries'))
+        assertFalse(allergies.is_allergic_to('peanuts'
+        assertFalse(allergies.is_allergic_to('cats'
+        assertFalse(allergies.is_allergic_to('strawberries'
 
     ___ test_is_allergic_to_eggs
-        assertTrue(Allergies(1).is_allergic_to('eggs'))
+        assertTrue(Allergies(1).is_allergic_to('eggs'
 
     ___ test_allergic_to_eggs_in_addition_to_other_stuff
         allergies = Allergies(5)
-        assertTrue(allergies.is_allergic_to('eggs'))
-        assertTrue(allergies.is_allergic_to('shellfish'))
-        assertFalse(allergies.is_allergic_to('strawberries'))
+        assertTrue(allergies.is_allergic_to('eggs'
+        assertTrue(allergies.is_allergic_to('shellfish'
+        assertFalse(allergies.is_allergic_to('strawberries'
 
     ___ test_no_allergies_at_all
         assertEqual(Allergies(0).lst, [])

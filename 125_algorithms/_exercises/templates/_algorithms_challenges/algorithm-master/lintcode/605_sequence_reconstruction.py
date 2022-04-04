@@ -28,7 +28,7 @@ c_ Solution:
 
             cnt += l..(seq)
 
-            ___ i __ r..(l..(seq)):
+            ___ i __ r..(l..(seq:
                 __ n.. (1 <= seq[i] <= n
                     r.. F..
                 __ n.. edges[seq[i]]:

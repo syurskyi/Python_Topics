@@ -39,9 +39,9 @@ c_ Solution(o..
             (6, [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]]),
         ]
         ___ n, edges __ testCases:
-            print('edges: %s' % (edges))
+            print('edges: %s' % (edges
             result = findMinHeightTrees(n, edges)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
     
 __ _____ __ _____

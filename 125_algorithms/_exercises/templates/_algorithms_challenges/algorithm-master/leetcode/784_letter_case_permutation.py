@@ -12,7 +12,7 @@ c_ Solution:
 
     ___ dfs  s, i, ans, p..
         __ i __ l..(s
-            ans.a..(''.j..(p..))
+            ans.a..(''.j..(p..
             r..
 
         options = [s[i]] __ s[i].i.. ____ [s[i].l.., s[i].u..]

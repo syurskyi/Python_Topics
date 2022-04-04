@@ -122,10 +122,10 @@ ___ best_match_per_wine(wine_type="all"
 
     
 
-    maximum = m..(i...product(values,CHEESES),key=l.... x: _calculate_similarity(*x))
+    maximum = m..(i...product(values,CHEESES),key=l.... x: _calculate_similarity(*x
 
 
-    r.. (*maximum,_calculate_similarity(*maximum))
+    r.. (*maximum,_calculate_similarity(*maximum
 
 
 
@@ -154,8 +154,8 @@ ___ match_wine_5cheeses
     results    # list
 
     ___ wine __ all_wines:
-        sorted_list = s..(CHEESES,key=l.... x: (-(_calculate_similarity(wine,x)),x))
-        results.a..((wine,sorted_list[:5]))
+        sorted_list = s..(CHEESES,key=l.... x: (-(_calculate_similarity(wine,x,x
+        results.a..((wine,sorted_list[:5]
 
     
     r.. s..(results,key=l.... x:x[0])

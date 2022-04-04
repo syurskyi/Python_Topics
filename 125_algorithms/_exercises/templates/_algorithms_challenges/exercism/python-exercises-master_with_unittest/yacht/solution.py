@@ -39,7 +39,7 @@ ___ big_straight(dice
 
 
 ___ yacht(dice
-    r.. 50 __ l..(s..(dice)) __ 1 ____ 0
+    r.. 50 __ l..(s..(dice __ 1 ____ 0
 
 
 functions = [

@@ -115,7 +115,7 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
                                 country=json.loads(x.s__)["location"]["address"]["addressCountry"],
                                 start_date=json.loads(x.s__)["startDate"],
                                 end_date=json.loads(x.s__)["endDate"],
-                                url=json.loads(x.s__)["url"]))
+                                url=json.loads(x.s__)["url"]
     r.. event_list
 
 

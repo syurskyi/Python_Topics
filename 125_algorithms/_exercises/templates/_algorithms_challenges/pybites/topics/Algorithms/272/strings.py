@@ -22,4 +22,4 @@ sentence1 =  'To', 'be', 'or', 'not', 'to', 'be',
 sentence2 =  'To', 'strive', 'to', 'seek', 'to',
              'find', 'and', 'not', 'to', 'yield' 
 
-print(common_words(sentence1, sentence2))
+print(common_words(sentence1, sentence2

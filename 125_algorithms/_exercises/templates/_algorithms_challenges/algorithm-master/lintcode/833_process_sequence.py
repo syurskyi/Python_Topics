@@ -9,11 +9,11 @@ c_ Solution:
 
         # 0: end, 1: start, 2: in progress
         ___ log __ logs:
-            time.a..((log.start, 1))
-            time.a..((log.end + 1, 0))
+            time.a..((log.start, 1
+            time.a..((log.end + 1, 0
 
         ___ t __ queries:
-            time.a..((t, 2))
+            time.a..((t, 2
 
         time.s..()
 

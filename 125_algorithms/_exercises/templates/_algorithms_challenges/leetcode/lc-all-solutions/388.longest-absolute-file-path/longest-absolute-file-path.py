@@ -12,15 +12,15 @@ c_ Solution(o..
     start = 0
     level = 0
 
-    ___ i __ r..(0, l..(input)):
+    ___ i __ r..(0, l..(input:
       chr = input[i]
       __ chr __ '\n':
         curLen = 0 __ l..(stack) __ 0 ____ stack[-1][1]
         __ state __ dfa["char"]:
           curLen += i - start
-          stack.a..((input[start:i], curLen + 1, level))
+          stack.a..((input[start:i], curLen + 1, level
         ____ state __ dfa["file"]:
-          maxLen = m..(maxLen, curLen + (i - start))
+          maxLen = m..(maxLen, curLen + (i - start
         ____:
           r.. -1
         state = dfa["escapeCMD"]

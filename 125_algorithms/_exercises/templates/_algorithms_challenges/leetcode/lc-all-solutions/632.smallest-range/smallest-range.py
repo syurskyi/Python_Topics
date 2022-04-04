@@ -11,9 +11,9 @@ c_ Solution(o..
     d = c...d..(i..)
     tuples    # list
 
-    ___ i __ r..(l..(nums)):
+    ___ i __ r..(l..(nums:
       ___ num __ nums[i]:
-        tuples.a..((num, i))
+        tuples.a..((num, i
 
     tuples.s..()
     length = l..(tuples)

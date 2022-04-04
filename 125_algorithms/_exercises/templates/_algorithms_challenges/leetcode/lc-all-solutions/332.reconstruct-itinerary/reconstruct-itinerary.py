@@ -15,7 +15,7 @@ c_ Solution(o..
     maxLen = l..(tickets) + 1
 
     ___ k __ graph:
-      graph[k] = d..(s..(graph[k]))
+      graph[k] = d..(s..(graph[k]
 
     ___ dfs(p.., graph, maxLen, start
       __ l..(p..) __ maxLen:

@@ -67,7 +67,7 @@ c_ Solution:
 
                 distance[_x, _y] = distance[x, y] + _step
                 paths[_x, _y] = paths[x, y] + [dn]
-                queue.a..((_x, _y))
+                queue.a..((_x, _y
 
         r.. ''.j..(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND
 
@@ -143,6 +143,6 @@ c_ Solution2:
 
                 distance[_x, _y] = _step
                 paths[_x, _y] = paths[x, y] + [dn]
-                heapq.heappush(heap, (_x, _y))
+                heapq.heappush(heap, (_x, _y
 
         r.. ''.j..(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND

@@ -12,7 +12,7 @@ c_ Solution(o..
         res = 0
         __ n.. prices: r.. res
         minVal = prices[0]
-        ___ i __ r..(1, l..(prices)):
+        ___ i __ r..(1, l..(prices:
             res = m..(res, prices[i]-minVal)
             minVal = m..(minVal, prices[i])
         r.. res
@@ -24,9 +24,9 @@ c_ Solution(o..
             [2, 4, 1],
         ]
         ___ prices __ testCases:
-            print('prices: %s' % (prices))
+            print('prices: %s' % (prices
             result = maxProfit(prices)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
     
 __ _____ __ _____

@@ -14,7 +14,7 @@ c_ Codec(o..
         :type strs: List[str]
         :rtype: str
         """
-        strs = map(l.... x: s..(l..(x))+"/"+x, strs)
+        strs = map(l.... x: s..(l..(x+"/"+x, strs)
         r.. r.. l.... x, y: x+y, strs, "")  # i.e. "".join(strs)
 
     ___ decode  s

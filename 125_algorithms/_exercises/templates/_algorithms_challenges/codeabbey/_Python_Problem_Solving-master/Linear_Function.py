@@ -6,7 +6,7 @@ T = i..(f.readline().strip
 
 boards    # list
 ___ i __ r..(0,T
-    boards.a..(f.readline().s...s..(' '))
+    boards.a..(f.readline().s...s..(' '
 
 ___ i __ r..(T
     a = [i..(j) ___ j __ boards[i]]
@@ -23,7 +23,7 @@ ___ i __ r..(T
         z[0] = z[0] + 0.5
     __ z[0] - i..(z[0]) < 0:
         z[0] = r..(z[0]  - 0.5)
-    s__ = '('+s..(i..(z[0]))+' '+s..(i..(z[1]))+')'
+    s__ = '('+s..(i..(z[0]+' '+s..(i..(z[1]+')'
     res.a..(s__)
                                   
 final = ' '.j..(s..(e) ___ e __ res)

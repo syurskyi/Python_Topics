@@ -62,7 +62,7 @@ c_ Solution:
         # assure for divisibility
         """
         cnt = 0
-        ___ k __ r..(1, i..(N ** 0.5)):  # error
+        ___ k __ r..(1, i..(N ** 0.5:  # error
             x0k = N - k * (k - 1) // 2
             __ x0k % k __ 0:
                 cnt += 1

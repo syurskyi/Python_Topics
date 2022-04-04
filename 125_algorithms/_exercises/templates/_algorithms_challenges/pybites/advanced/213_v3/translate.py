@@ -10,7 +10,7 @@ ___ fix_translation(org_text, trans_text
     pattern = r'<(?P<tag>pre|code).*?>(?P<content>.*?)</(?P=tag)>'
     eng = __.finditer(pattern, org_text, __.MULTILINE | __.DOTALL)
     rus = __.finditer(pattern, trans_text, __.MULTILINE | __.DOTALL)
-    ___ (e_t, r_t) __ l..(z..(eng, rus)):
+    ___ (e_t, r_t) __ l..(z..(eng, rus:
         __ e_t.group('tag') __ {'code', 'pre'}:
             fix_text = fix_text.r..(r_t.group('content'), e_t.group('content'), 1)
     r.. fix_text

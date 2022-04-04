@@ -5,7 +5,7 @@ ____ u__.r.. _______ u..
 
 ____ dateutil.parser _______ p..
 
-commits = __.p...j..(__.getenv("TMP", "/tmp"), 'commits')
+commits = __.p...j..(__.g..("TMP", "/tmp"), 'commits')
 u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/git_log_stat.out',
     commits
@@ -44,7 +44,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
 
             numbers = __.f..(r'(\d+) (?:insertions|deletions)',change_section)
 
-            changes= s.. m..(i..,numbers))
+            changes= s.. m..(i..,numbers
 
 
             month_changes[date.s..('%Y-%m')] += changes

@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: List[int]
         """
         n = l..(s)
-        res = l..(r..(1, n+2))
+        res = l..(r..(1, n+2
         i = 0
         w.... i < n:
             __ s[i] __ 'D':

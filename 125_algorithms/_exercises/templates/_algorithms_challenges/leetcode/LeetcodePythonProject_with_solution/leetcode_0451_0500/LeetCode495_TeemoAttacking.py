@@ -13,7 +13,7 @@ c_ Solution(o..
         """
         __ n.. timeSeries: r.. 0
         res = 0
-        ___ i __ r..(1, l..(timeSeries)):
+        ___ i __ r..(1, l..(timeSeries:
             res += m..(timeSeries[i]-timeSeries[i-1], duration)
         res += duration
         r.. res

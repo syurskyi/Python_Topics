@@ -31,9 +31,9 @@ c_ Solution(o..
             [100, 2, -1, 9, 89, -1, -1, 9],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = maxProduct(nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20 + '-')
 
 __ _____ __ _____

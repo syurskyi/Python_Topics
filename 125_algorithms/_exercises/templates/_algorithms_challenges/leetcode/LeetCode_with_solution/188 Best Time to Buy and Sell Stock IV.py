@@ -38,7 +38,7 @@ c_ Solution:
 
     ___ maxProfit_unlimited_transactions  prices
         profit = 0
-        ___ i __ x..(1, l..(prices)):
+        ___ i __ x..(1, l..(prices:
             profit += m..(0, prices[i] - prices[i-1])
         r.. profit
 

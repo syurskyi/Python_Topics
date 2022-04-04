@@ -36,7 +36,7 @@ c_ Solution:
         """
         ___ row __ A:
             prev = l..(row)
-            ___ i __ r..(l..(row)):
+            ___ i __ r..(l..(row:
                 row[i] = prev[-1-i] ^ 1
 
         r.. A

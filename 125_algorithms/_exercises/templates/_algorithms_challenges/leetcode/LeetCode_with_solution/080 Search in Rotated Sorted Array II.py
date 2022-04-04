@@ -26,7 +26,7 @@ c_ Solution:
         :param target: an integer
         :return: a boolean
         """
-        A = l..(s..(A))  # short-cut eliminate duplicates  # but O(n)
+        A = l..(s..(A  # short-cut eliminate duplicates  # but O(n)
 
         length = l..(A)
         start = 0

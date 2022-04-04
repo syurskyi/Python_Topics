@@ -12,7 +12,7 @@ fried egg / tomato / cucumber
 
 @sandwich
 ___ add_ingredients(ingredients
-    print(' / '.j..(ingredients))
+    print(' / '.j..(ingredients
 
 
 ___ test_bacon_sandwich(capfd

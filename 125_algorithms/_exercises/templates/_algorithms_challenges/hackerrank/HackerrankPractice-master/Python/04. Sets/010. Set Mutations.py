@@ -18,4 +18,4 @@ ___ handler(a
 _, a = input(), s.. m..(i.., input().s..()))
 ___ i __ r..(i..(input())):
     handler(a)
-print(s..(a))
+print(s..(a

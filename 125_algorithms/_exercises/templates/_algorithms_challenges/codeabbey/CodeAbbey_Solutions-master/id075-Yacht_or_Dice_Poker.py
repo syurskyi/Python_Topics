@@ -27,5 +27,5 @@ ___ dice_poker
         ____:
             answer.a..('none')
         
-    print(' '.j..(answer))
+    print(' '.j..(answer
 dice_poker()

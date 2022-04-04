@@ -4,12 +4,12 @@ ____ color _______ Color
 
 
 ?p__.m__.p.("color, expected", [
-    ("white", (255, 255, 255)),
-    ("black", (0, 0, 0)),
-    ("blue", (0, 0, 255)),
-    ("red", (255, 0, 0)),
-    ("green", (0, 128, 0)),
-    ("orange", (255, 128, 0)),
+    ("white", (255, 255, 255,
+    ("black", (0, 0, 0,
+    ("blue", (0, 0, 255,
+    ("red", (255, 0, 0,
+    ("green", (0, 128, 0,
+    ("orange", (255, 128, 0,
     ("puke", N..),
 ])
 ___ test_color_class(color, expected
@@ -32,8 +32,8 @@ ___ test_color_staticmethod_rgb2hex(rgb, expected
 ?p__.m__.p.("rgb", [
     ("puke"),
     ("0, 0, 0"),
-    ((0, -5, 255)),
-    ((256, 0, 0)),
+    ((0, -5, 255,
+    ((256, 0, 0,
 ])
 
 ___ test_color_rgb2hex_bad_value(rgb
@@ -42,12 +42,12 @@ ___ test_color_rgb2hex_bad_value(rgb
 
 
 ?p__.m__.p.("hex, expected", [
-    ("#ffffff", (255, 255, 255)),
-    ("#000000", (0, 0, 0)),
-    ("#0000ff", (0, 0, 255)),
-    ("#ff0000", (255, 0, 0)),
-    ("#008000", (0, 128, 0)),
-    ("#ff8000", (255, 128, 0)),
+    ("#ffffff", (255, 255, 255,
+    ("#000000", (0, 0, 0,
+    ("#0000ff", (0, 0, 255,
+    ("#ff0000", (255, 0, 0,
+    ("#008000", (0, 128, 0,
+    ("#ff8000", (255, 128, 0,
 ])
 ___ test_color_staticmethod_hex2rgb(hex, expected
     ... Color.hex2rgb(hex) __ expected

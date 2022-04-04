@@ -24,7 +24,7 @@ c_ Solution(o..
             __ n <= 1:
                 r.. lst
             ____:
-                r.. merger(msort(lst[:i..(n/2)]), msort(lst[i..(n/2]))
+                r.. merger(msort(lst[:i..(n/2)]), msort(lst[i..(n/2]
         ___ merger(left, right
             l, r = 0, 0
             w.... l < l..(left) a.. r < l..(right

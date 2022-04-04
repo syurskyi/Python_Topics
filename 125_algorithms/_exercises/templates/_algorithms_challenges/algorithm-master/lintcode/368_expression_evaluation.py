@@ -85,7 +85,7 @@ c_ Solution:
                 if its digit
                 then temply save in `stack`
                 """
-                stack.a..(i..(char))
+                stack.a..(i..(char
                 _____
 
             """

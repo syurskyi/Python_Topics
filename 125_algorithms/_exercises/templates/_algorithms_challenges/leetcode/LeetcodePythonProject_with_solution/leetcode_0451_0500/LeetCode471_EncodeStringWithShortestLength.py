@@ -12,7 +12,7 @@ c_ Solution(o..
         __ s n.. __ mem:
             n = l..(s)
             i = (s+s).find(s, 1)
-            one = '%d[%s]' % (n/i, encode_short(s[:i])) __ i < n ____ s
+            one = '%d[%s]' % (n/i, encode_short(s[:i] __ i < n ____ s
             multi = [encode(s[:i]) + encode(s[i:]) ___ i __ r..(1, n)]
             mem[s] = m..([s, one] + multi, key=l..)
         r.. mem[s]
@@ -35,7 +35,7 @@ c_ Solution(o..
                     ___ k __ r..(i, j
                         __ l..(dp[i][k]+dp[k+1][j]) < l..(dp[i][j]
                             dp[i][j] = dp[i][k]+dp[k+1][j]
-                    ___ k __ r..(l..(substr)):
+                    ___ k __ r..(l..(substr:
                         repeatStr = substr[:k+1]
                         __ repeatStr a.. l..(substr)%l..(repeatStr)__0 a.. substr.r..(repeatStr, '') __ '':
                             ss = s..(i..(l..(substr)/l..(repeatStr))) + ' ' + dp[i][i+k] + ' '

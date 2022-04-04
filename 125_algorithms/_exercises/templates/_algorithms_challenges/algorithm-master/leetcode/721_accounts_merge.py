@@ -10,7 +10,7 @@ c_ Solution:
         M    # dict  # mails
         M2N    # dict  # mail to name
         ___ L __ A:
-            ___ i __ r..(1, l..(L)):
+            ___ i __ r..(1, l..(L:
                 M2N[L[i]] = L[0]
                 connect(M, L[i], L[1])
 

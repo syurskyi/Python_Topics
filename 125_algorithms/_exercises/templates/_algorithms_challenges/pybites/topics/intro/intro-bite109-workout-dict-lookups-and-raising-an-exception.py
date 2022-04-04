@@ -56,4 +56,4 @@ ___ get_workout_motd(day
 
 
 
-print(get_workout_motd("monday"))
+print(get_workout_motd("monday"

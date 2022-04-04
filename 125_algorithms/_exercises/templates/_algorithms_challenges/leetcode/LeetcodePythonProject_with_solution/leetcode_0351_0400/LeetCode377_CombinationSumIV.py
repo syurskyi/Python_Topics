@@ -20,7 +20,7 @@ c_ Solution(o..
             ([1, 2, 3], 4),
         ]
         ___ nums, target __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             print('target: %s' % target)
             result = combinationSum4(nums, target)
             print('result: %s' % result)

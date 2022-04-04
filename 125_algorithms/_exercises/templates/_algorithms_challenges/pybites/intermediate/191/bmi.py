@@ -30,10 +30,10 @@ ___ person_max_bmi(data=data
     ___ row __ data_list:
        current = row.s...s..(",")
        __ l..(current) > 1:
-         bmi[current[0]] = f__(current[2]) / ((i..(current[1])) / 100) ** 2
+         bmi[current[0]] = f__(current[2]) / ((i..(current[1] / 100) ** 2
 
     name_max_bmi = m..(bmi, key = bmi.get)
-    r.. (name_max_bmi, r..(bmi[name_max_bmi], 2))
+    r.. (name_max_bmi, r..(bmi[name_max_bmi], 2
 
 # if __name__ == "__main__":
 #    print(person_max_bmi())

@@ -2,7 +2,7 @@ _______ __
 _______ u__.r..
 _______ __
 
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 DATA = 'safari.logs'
 SAFARI_LOGS = __.p...j..(TMP, DATA)
 PY_BOOK, OTHER_BOOK = '🐍', '.'

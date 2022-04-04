@@ -52,7 +52,7 @@ c_ Solution(o..
 
         h    # list
         ___ i __ x..(m
-            heapq.heappush(h, Node(i, 0))
+            heapq.heappush(h, Node(i, 0
 
         ret = N..
         ___ _ __ x..(k

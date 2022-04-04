@@ -14,7 +14,7 @@ c_ Hexa:
         __ n.. cls.valid(inp
             r.. V...
         r.. s..([cls.convert_char(char) * cls.BASE**index ___ index, char __
-                    e..(r..(inp))])
+                    e..(r..(inp])
 
     @classmethod
     ___ valid(cls, inp

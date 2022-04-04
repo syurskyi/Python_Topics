@@ -10,13 +10,13 @@ c_ Solution(o..
         heap    # list
         ___ num1 __ nums1:
             ___ num2 __ nums2:
-                heapq.heappush(heap, (num1+num2, num1, num2))
+                heapq.heappush(heap, (num1+num2, num1, num2
         result    # list
         ___ _ __ r..(k
             __ n.. heap:
                 _____
             _, num1, num2 = heapq.heappop(heap)
-            result.a..((num1, num2))
+            result.a..((num1, num2
         r.. result
     
     ___ test

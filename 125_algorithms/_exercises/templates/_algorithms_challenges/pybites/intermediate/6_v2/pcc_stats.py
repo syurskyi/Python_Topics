@@ -3,7 +3,7 @@ _______ __
 _______ u__.r..
 
 # prep
-tmp = __.getenv("TMP", "/tmp")
+tmp = __.g..("TMP", "/tmp")
 tempfile = __.p...j..(tmp, 'dirnames')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/dirnames.txt',

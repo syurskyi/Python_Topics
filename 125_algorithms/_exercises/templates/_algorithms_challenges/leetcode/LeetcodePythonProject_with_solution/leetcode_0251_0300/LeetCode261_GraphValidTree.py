@@ -88,10 +88,10 @@ c_ Solution(o..
             ],
         ]
         ___ n, edges __ testCases:
-            print('n: %s' % (n))
-            print('edges: %s' % (edges))
+            print('n: %s' % (n
+            print('edges: %s' % (edges
             result = validTree(n, edges)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
         
 __ _____ __ _____

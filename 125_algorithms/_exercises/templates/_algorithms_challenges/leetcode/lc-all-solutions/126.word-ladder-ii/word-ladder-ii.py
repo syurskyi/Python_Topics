@@ -13,7 +13,7 @@ c_ Solution(o..
     ___ getNbrs(src, dest, wordList
       res    # list
       ___ c __ s__.ascii_lowercase:
-        ___ i __ r..(0, l..(src)):
+        ___ i __ r..(0, l..(src:
           newWord = src[:i] + c + src[i + 1:]
           __ newWord __ src:
             _____
@@ -26,7 +26,7 @@ c_ Solution(o..
       length = 0
       w.... queue:
         length += 1
-        ___ k __ r..(0, l..(queue)):
+        ___ k __ r..(0, l..(queue:
           top = queue.popleft()
           ___ nbr __ getNbrs(top, endWord, wordList
             __ nbr n.. __ distance:

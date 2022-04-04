@@ -13,7 +13,7 @@ c_ Solution(o..
         __ n <= 1: r.. 0
         res = 1
         ___ i __ r..(3, n+1
-            res = ((i-1)*(dn1+dn2))%(10**9+7)
+            res = ((i-1)*(dn1+dn2%(10**9+7)
             dn2 = dn1
             dn1 = res
         r.. i..(res)

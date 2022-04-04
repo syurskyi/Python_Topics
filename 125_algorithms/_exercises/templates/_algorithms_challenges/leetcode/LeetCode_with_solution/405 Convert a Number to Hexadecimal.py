@@ -36,7 +36,7 @@ c_ Solution(o..
         """
         ret    # list
         w.... l..(ret) < 8 a.. num:
-            ret.a..(encode(num & 0xf))
+            ret.a..(encode(num & 0xf
             num >>= 4
 
         r.. ''.j..(ret[::-1]) o. '0'
@@ -49,7 +49,7 @@ c_ Solution(o..
         """
         ret    # list
         w.... l..(ret) < 8 a.. num:
-            ret.a..(encode(num % 16))
+            ret.a..(encode(num % 16
             num /= 16
 
         r.. ''.j..(ret[::-1]) o. '0'

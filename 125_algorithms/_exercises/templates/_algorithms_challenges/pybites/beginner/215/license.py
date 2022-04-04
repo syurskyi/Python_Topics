@@ -9,4 +9,4 @@ ___ validate_license(key: s..) __ b..:
     r.. T.. __ __.m..(pattern, key) ____ F..
 
 
-print(validate_license('PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4-A'))
+print(validate_license('PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4-A'

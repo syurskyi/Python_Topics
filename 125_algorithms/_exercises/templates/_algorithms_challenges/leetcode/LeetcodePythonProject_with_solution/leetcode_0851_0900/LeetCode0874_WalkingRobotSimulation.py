@@ -16,7 +16,7 @@ c_ Solution(o..
         d = 0
         hashset = s..()
         ___ ob __ obstacles:
-            hashset.add(t..(ob))
+            hashset.add(t..(ob
         ___ c __ commands:
             __ c __ (-1, -2
                 d = calDirection(d, c)

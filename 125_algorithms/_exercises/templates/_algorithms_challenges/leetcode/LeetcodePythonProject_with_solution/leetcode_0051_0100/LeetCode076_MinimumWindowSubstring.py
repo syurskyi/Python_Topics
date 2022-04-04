@@ -74,10 +74,10 @@ c_ Solution(o..
              'aa', 'aa' ,
         ]
         ___ s, t __ testCases:
-            print('s: %s' % (s))
-            print('t: %s' % (t))
+            print('s: %s' % (s
+            print('t: %s' % (t
             result = minWindow(s, t)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15 + '-')
 
 Solution().test()

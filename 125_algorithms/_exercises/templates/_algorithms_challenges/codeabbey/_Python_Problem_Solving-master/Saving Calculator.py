@@ -9,7 +9,7 @@ ___ i __ r..(i..(input())):
     year_count  0
     w.... r > s:
         #calculate the rate of interest on the amount and the numbers of years it will take to get the R
-        s  s + (s*(p/100))
+        s  s + (s*(p/100
         year_count += 1
     print(year_count,end=' ')
         

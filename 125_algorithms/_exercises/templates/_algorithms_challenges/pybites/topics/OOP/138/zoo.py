@@ -5,7 +5,7 @@ c_ Animal:
     ___ - , name
         Animal.counter += 1
         name = name.t..
-        animals.a..(s..(self))
+        animals.a..(s..(self
         
 
     ___ __str__

@@ -50,10 +50,10 @@ c_ DualHeap(o..
         __ abs(l1 - l2) <= 1:
             r..
         ____ l1 - l2 > 1:
-            heapq.heappush(max_h, -heapq.heappop(min_h))
+            heapq.heappush(max_h, -heapq.heappop(min_h
             balance()
         ____:
-            heapq.heappush(min_h, -heapq.heappop(max_h))
+            heapq.heappush(min_h, -heapq.heappop(max_h
             balance()
 
     ___ get_median

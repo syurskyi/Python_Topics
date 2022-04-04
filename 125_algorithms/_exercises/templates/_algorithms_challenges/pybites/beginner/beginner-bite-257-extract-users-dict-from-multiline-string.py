@@ -37,8 +37,8 @@ ___ get_users_2nd_solution(passwd: s..) __ d..:
     ___ row __ passwd.s...s..
         fields = row.s..(':')
         username = fields[0]
-        name = __.sub(r',+', r' ', fields[4].strip(',')) o. 'unknown'
+        name = __.sub(r',+', r' ', fields[4].strip(',' o. 'unknown'
         output[username] = name
     r.. output
 
-print(get_users(pw))
+print(get_users(pw

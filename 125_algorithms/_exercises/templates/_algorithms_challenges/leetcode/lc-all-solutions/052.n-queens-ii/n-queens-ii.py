@@ -17,7 +17,7 @@ c_ Solution(o..
       r.. res
 
     ___ isValidQueen(p.., k
-      ___ i __ r..(l..(p..)):
+      ___ i __ r..(l..(p..:
         __ abs(k - p..[i]) __ abs(l..(p..) - i
           r.. F..
       r.. T..

@@ -11,13 +11,13 @@ ___ calc_median_from_dict(d: d..) __ f__:
     __ n.. isi..(d, d..) o. d __ N..
         r.. T..
 
-    __ n.. a..([isi..(k, (i.., f__)) a.. k ___ k __ d.v..
+    __ n.. a..([isi..(k, (i.., f__ a.. k ___ k __ d.v..
         r.. T..
 
     items = [(k, d[k]) ___ k __ s..(d)]  # handle unordered dicts
     values = [item[1] ___ item __ items]
     length = s..(d.values
-    cumsums = t..(accumulate(values))
+    cumsums = t..(accumulate(values
 
     # determine intervals: gotta be a way to do this with itertools
     intervals    # list
@@ -31,11 +31,11 @@ ___ calc_median_from_dict(d: d..) __ f__:
 
     # two cases, even length and odd length, next is same for both
     b = next(f.. l.... x: x[0][0] <= length // 2 + 1 <= x[0][1],
-                    cums))[1][0]
+                    cums[1][0]
 
     __ length % 2 __ 1:
         r.. b
     ____:
         a = next(f.. l.... x: x[0][0] <= length // 2 <= x[0][1],
-                        cums))[1][0]
+                        cums[1][0]
         r.. (a + b) / 2

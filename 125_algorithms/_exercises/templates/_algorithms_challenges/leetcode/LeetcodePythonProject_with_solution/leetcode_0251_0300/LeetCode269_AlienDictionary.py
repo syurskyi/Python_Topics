@@ -15,10 +15,10 @@ c_ Solution(o..
         ___ word __ words:
             ___ c __ word:
                 degree[c] = 0
-        ___ i __ r..(1, l..(words)):
+        ___ i __ r..(1, l..(words:
             currWord = words[i]
             prevWord = words[i-1]
-            length = m..(l..(currWord), l..(prevWord))
+            length = m..(l..(currWord), l..(prevWord
             ___ j __ r..(length
                 c1, c2 = prevWord[j], currWord[j]
                 __ c1 != c2:
@@ -64,9 +64,9 @@ c_ Solution(o..
             ["a","b","ca","cc"],
         ]
         ___ words __ testCases:
-            print('words: %s' % (words))
+            print('words: %s' % (words
             result = alienOrder(words)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
     
 __ __name__  __ '__main__':

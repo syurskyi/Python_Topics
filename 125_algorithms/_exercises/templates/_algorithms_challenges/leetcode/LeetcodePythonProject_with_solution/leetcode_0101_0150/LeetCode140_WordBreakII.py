@@ -26,7 +26,7 @@ c_ Solution(o..
     ___ helper  dp, i, res, curr
         __ i <= 0:
             __ i __ 0:
-                res.a..(' '.j..(curr))
+                res.a..(' '.j..(curr
             r..
         ___ word __ dp[i]:
             __ i >= l..(word
@@ -39,10 +39,10 @@ c_ Solution(o..
             ('catsanddog', ["cat", "cats", "and", "sand", "dog"]),
         ]
         ___ s, wordDict __ testCases:
-            print('s: %s' % (s))
-            print('wordDict: %s' % (wordDict))
+            print('s: %s' % (s
+            print('wordDict: %s' % (wordDict
             result = wordBreak(s, wordDict)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

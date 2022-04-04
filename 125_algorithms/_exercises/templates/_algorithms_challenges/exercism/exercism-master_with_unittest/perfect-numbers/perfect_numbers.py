@@ -3,7 +3,7 @@ ____ f.. _______ r..
 
 
 ___ is_perfect(number
-    r.. s..(factors(number)) __ number
+    r.. s..(factors(number __ number
 
 
 ___ factors(n
@@ -11,4 +11,4 @@ ___ factors(n
 
 
 ___ pairs_of_factors(n
-    r.. [[i, n / i] ___ i __ r..(1, i..(m__.sqrt(n)) + 1) __ n % i __ 0]
+    r.. [[i, n / i] ___ i __ r..(1, i..(m__.sqrt(n + 1) __ n % i __ 0]

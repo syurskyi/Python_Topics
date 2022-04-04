@@ -51,11 +51,11 @@ c_ Solution(o..
         inOrderRev(root.left, target, stack)
     
     ___ test
-        root = TreeNode(10, TreeNode(5, TreeNode(1), TreeNode(7)), TreeNode(15, TreeNode(13), TreeNode(20)))
+        root = TreeNode(10, TreeNode(5, TreeNode(1), TreeNode(7, TreeNode(15, TreeNode(13), TreeNode(20)))
         target = 13.5
         k = 5
         result = closestKValues(root, target, k)
-        print('result: %s' % (result))
+        print('result: %s' % (result
         print('-='*30+'-')
 
 __ _____ __ _____

@@ -20,7 +20,7 @@ c_ Solution:
         :rtype: int
         """
         ret = 0
-        ___ i __ r..(r..(32)):
+        ___ i __ r..(r..(32:
             prefixes = s..(num >> i ___ num __ nums)
             ret <<= 1
             # fixing the remaining bit, set the LSB

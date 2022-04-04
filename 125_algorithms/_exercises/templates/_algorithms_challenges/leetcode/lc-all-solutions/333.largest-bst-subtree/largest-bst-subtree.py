@@ -14,7 +14,7 @@ c_ Solution(o..
 
     ___ helper(root
       __ n.. root:
-        r.. (0, 0, f__("inf"), f__("-inf"))  # numBST, maxNumBST, min, max
+        r.. (0, 0, f__("inf"), f__("-inf"  # numBST, maxNumBST, min, max
       lnumBST, lmaxNumBST, lmin, lmax = helper(root.left)
       rnumBST, rmaxNumBST, rmin, rmax = helper(root.right)
       numBST = -1

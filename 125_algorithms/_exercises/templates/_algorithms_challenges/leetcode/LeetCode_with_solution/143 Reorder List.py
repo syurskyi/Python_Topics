@@ -69,14 +69,14 @@ c_ Solution:
         lst2.r..
 
         lst    # list
-        ___ i __ r..(l..(lst2)):
+        ___ i __ r..(l..(lst2:
             ___
                 lst.a..(lst1[i])
             ______ I..
                 p..
             lst.a..(lst2[i])
 
-        ___ i __ r..(l..(lst)):
+        ___ i __ r..(l..(lst:
             ___
                 lst[i].next = lst[i+1]
             ______ I..

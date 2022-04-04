@@ -14,6 +14,6 @@ ___ bitCount
 
         answer.a..(s..(bits.c.. '1')))
 
-    print(' '.j..(answer))
+    print(' '.j..(answer
 
 bitCount()

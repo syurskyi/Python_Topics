@@ -16,14 +16,14 @@ c_ Solution:
 
         # Put the cells on the matrix boundaries into `bounds`
         ___ i __ r..(m
-            heappush(bounds, (heights[i][0], i, 0))
+            heappush(bounds, (heights[i][0], i, 0
             visited[i][0] = 1
-            heappush(bounds, (heights[i][n - 1], i, n - 1))
+            heappush(bounds, (heights[i][n - 1], i, n - 1
             visited[i][n - 1] = 1
         ___ i __ r..(1, n - 1
-            heappush(bounds, (heights[0][i], 0, i))
+            heappush(bounds, (heights[0][i], 0, i
             visited[0][i] = 1
-            heappush(bounds, (heights[m - 1][i], m - 1, i))
+            heappush(bounds, (heights[m - 1][i], m - 1, i
             visited[m - 1][i] = 1
 
         w.... bounds:
@@ -40,7 +40,7 @@ c_ Solution:
                     # than this cell will store water
                     # otherwise this cell will become the new boundary
                     _bound = m..(bound, heights[_x][_y])
-                    heappush(bounds, (_bound, _x, _y))
+                    heappush(bounds, (_bound, _x, _y
                     __ _bound > heights[_x][_y]:
                         ans += _bound - heights[_x][_y]
         r.. ans

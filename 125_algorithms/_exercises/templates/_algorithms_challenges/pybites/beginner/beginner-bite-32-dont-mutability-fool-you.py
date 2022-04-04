@@ -21,5 +21,5 @@ ___ duplicate_items(items
 
 items_copy = items
 
-print(id(items))
-print(id(items_copy))
+print(id(items
+print(id(items_copy

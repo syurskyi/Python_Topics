@@ -7,7 +7,7 @@ ____ u__.r.. _______ u..
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 RSS_FEED = 'pybites_feed.rss.xml'
 PUB_DATE = __.c..(r'<pubDate>(.*?)</pubDate>')
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 
 
 ___ _get_dates
@@ -38,4 +38,4 @@ ___ get_month_most_posts(dates
 
 converted_dates = [convert_to_datetime(d) ___ d __ _get_dates()]
 print(converted_dates[:3])
-print(get_month_most_posts(converted_dates))
+print(get_month_most_posts(converted_dates

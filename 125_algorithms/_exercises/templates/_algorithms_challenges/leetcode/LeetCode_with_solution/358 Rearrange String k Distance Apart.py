@@ -62,7 +62,7 @@ c_ Solution(o..
 
         h    # list
         ___ char, cnt __ d.i..:
-            heapq.heappush(h, Val(cnt, char))
+            heapq.heappush(h, Val(cnt, char
 
         ret    # list
         w.... h:

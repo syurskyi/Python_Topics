@@ -13,16 +13,16 @@ ___ test_equation(puzzle, substitutions
     __ check_leading_zeros(right, *left_numbers
         r.. F..
 
-    r.. s.. m..(i.., left_numbers)) __ i..(right)
+    r.. s.. m..(i.., left_numbers __ i..(right)
 
 
 ___ solve(puzzle
     letters = s..(char ___ char __ puzzle __ char.isupper
-    numbers = map(s.., r..(10))
+    numbers = map(s.., r..(10
 
-    ___ c __ combinations(numbers, l..(letters)):
+    ___ c __ combinations(numbers, l..(letters:
         ___ p __ permutations(c
-            substitutions = d..(z..(letters, p))
+            substitutions = d..(z..(letters, p
             __ test_equation(puzzle, substitutions
                 r.. {k: i..(v) ___ k, v __ substitutions.i..}
 

@@ -11,4 +11,4 @@ ___ smooth_weather(values
     r.. result
 
 values = l.. m..(f__, input().s..()))
-print(*smooth_weather(values))
+print(*smooth_weather(values

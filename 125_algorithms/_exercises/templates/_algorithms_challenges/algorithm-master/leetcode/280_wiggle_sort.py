@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. nums:
             r..
 
-        ___ i __ r..(1, l..(nums)):
+        ___ i __ r..(1, l..(nums:
             __ i & 1 __ 1 a.. nums[i] >= nums[i - 1]:
                 _____
             __ i & 1 __ 0 a.. nums[i] <= nums[i - 1]:

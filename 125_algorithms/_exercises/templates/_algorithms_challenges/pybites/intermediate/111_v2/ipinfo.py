@@ -8,7 +8,7 @@ ___ get_ip_country(ip_address
        parse the json response returning the country code of the IP"""
 
 
-    r.. r__.g.. IPINFO_URL.f..(ip=ip_address)).j.. 'country'
+    r.. r__.g.. IPINFO_URL.f..(ip=ip_address.j.. 'country'
 
 
 

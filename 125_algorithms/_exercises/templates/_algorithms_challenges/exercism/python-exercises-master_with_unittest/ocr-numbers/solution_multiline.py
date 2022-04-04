@@ -49,7 +49,7 @@ ___ validate_numbers(numbers: s..
 ___ _convert_ocr_line(ocr_numbers: L..[s..]) __ s..:
     ocrs_split = split_ocr_numbers(ocr_numbers)
     numbers = [
-        s..(OCR_NUMBERS.i.. ocr)) __ ocr __ OCR_NUMBERS ____ '?'
+        s..(OCR_NUMBERS.i.. ocr __ ocr __ OCR_NUMBERS ____ '?'
         ___ ocr __ ocrs_split
     ]
     r.. ''.j..(numbers)

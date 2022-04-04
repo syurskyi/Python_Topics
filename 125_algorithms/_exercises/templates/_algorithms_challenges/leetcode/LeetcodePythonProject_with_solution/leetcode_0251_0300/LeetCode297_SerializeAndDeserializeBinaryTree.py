@@ -45,7 +45,7 @@ __ _____ __ _____
     root = TreeNode(1, TreeNode(2), TreeNode(3, TreeNode(4), TreeNode(5)))
     codec = Codec()
     s = codec.serialize(root)
-    print('s: %s' % (s))
+    print('s: %s' % (s
     root = codec.deserialize(s)
     
     queue = [root]

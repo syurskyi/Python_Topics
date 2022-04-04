@@ -21,7 +21,7 @@ c_ BinarySearchTreeTest(unittest.TestCase
         assertTreeEqual(BinarySearchTree( '4', '4' ).data(), expected)
 
     ___ test_greater_number_at_right_node
-        expected = TreeNode('4', N.., TreeNode('5', N.., N..))
+        expected = TreeNode('4', N.., TreeNode('5', N.., N..
         assertTreeEqual(BinarySearchTree( '4', '5' ).data(), expected)
 
     ___ test_can_create_complex_tree
@@ -73,7 +73,7 @@ c_ BinarySearchTreeTest(unittest.TestCase
         ___
             compare_tree(tree_one, tree_two)
         ______ AssertionError:
-            r.. AssertionError("{} != {}".f..(tree_one, tree_two))
+            r.. AssertionError("{} != {}".f..(tree_one, tree_two
 
     ___ compare_tree  tree_one, tree_two
         assertEqual(tree_one.data, tree_two.data)

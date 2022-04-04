@@ -34,7 +34,7 @@ c_ Solution:
         :type s: str
         :rtype: int
         """
-        F = d..(l....: d..(b..))
+        F = d..(l....: d..(b..
         n = l..(s)
         ___ i __ r..(n
             F[i][i] = T..

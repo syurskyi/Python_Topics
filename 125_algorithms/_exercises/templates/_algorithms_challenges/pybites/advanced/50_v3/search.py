@@ -27,7 +27,7 @@ ___ get_feed_entries(feed=FEED
         result.a..(Entry(_convert_struct_time_to_dt(item.published_parsed),
                             item.title,
                             item.link,
-                            [t.term.l.. ___ t __ item.tags]))
+                            [t.term.l.. ___ t __ item.tags]
     r.. result
 
 
@@ -43,9 +43,9 @@ ___ filter_entries_by_tag(s.., entry
        3. Else: match if search is in tags
     """
     __ '&' __ s..:
-        r.. a..(tag.l.. __ entry.tags ___ tag __ s...s..('&'))
+        r.. a..(tag.l.. __ entry.tags ___ tag __ s...s..('&'
     __ '|' __ s..:
-        r.. any(tag.l.. __ entry.tags ___ tag __ s...s..('|'))
+        r.. any(tag.l.. __ entry.tags ___ tag __ s...s..('|'
     r.. s...l.. __ entry.tags
 
 

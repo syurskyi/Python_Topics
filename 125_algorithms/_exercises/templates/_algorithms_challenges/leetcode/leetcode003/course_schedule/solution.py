@@ -58,5 +58,5 @@ c_ Solution(o..
         r.. l..(finished_courses) __ numCourses
 
 s = Solution()
-print(s.canFinish(1, []))
-print(s.canFinish(3, [[1, 0], [0, 1]]))
+print(s.canFinish(1, []
+print(s.canFinish(3, [[1, 0], [0, 1]]

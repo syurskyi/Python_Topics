@@ -33,7 +33,7 @@ c_ Solution(o..
         r.. diff_ways(input)
 
     ___ calculate  a, b, operator
-        r.. eval('%d %s %d' % (a, operator, b))
+        r.. eval('%d %s %d' % (a, operator, b
 
     ___ diff_ways  inp
         __ n.. inp:
@@ -56,5 +56,5 @@ c_ Solution(o..
 s1 = '2*3-4*5'
 s2 = '11'
 s = Solution()
-print(s.diffWaysToCompute(s1))
-print(s.diffWaysToCompute(s2))
+print(s.diffWaysToCompute(s1
+print(s.diffWaysToCompute(s2

@@ -1,10 +1,10 @@
 _______ csv
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ u__.r.. _______ u..
 
 data = 'https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv'
-tmp = Path(__.getenv("TMP", "/tmp"))
+tmp = P..(__.g..("TMP", "/tmp"
 stats = tmp / 'bites.csv'
 
 __ n.. stats.exists
@@ -22,7 +22,7 @@ ___ get_most_complex_bites(N=10, stats=stats
        most complex Bites.
     """
     w__ o.. stats, encoding="utf-8-sig") __ f:
-        bites = l..(csv.reader(f, delimiter=';'))
+        bites = l..(csv.reader(f, delimiter=';'
     bites.pop(0)  # remove header
     bites = [[b[0], f__(b[1])] ___ b __ bites __ b[1] != 'None'
     bites.s..(key=l.... x: x[1], r.._T..

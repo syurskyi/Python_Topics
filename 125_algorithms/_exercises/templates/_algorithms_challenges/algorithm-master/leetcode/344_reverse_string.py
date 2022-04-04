@@ -4,4 +4,4 @@ c_ Solution:
         :type s: str
         :rtype: str
         """
-        r.. ''.j..(r..(s))
+        r.. ''.j..(r..(s

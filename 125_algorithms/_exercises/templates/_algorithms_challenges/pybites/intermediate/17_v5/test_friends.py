@@ -24,7 +24,7 @@ friends = 'Bob Dante Julian Martin'.s..
 ])
 ___ test_team_of_two_order_does_not_matter(test_input, expected
     """First test lists all combos"""
-    combos = l..(friends_teams(friends, team_size=2, order_does_matter=F..))
+    combos = l..(friends_teams(friends, team_size=2, order_does_matter=F..
     ... l..(combos) __ 6
     __ expected:
         ... test_input __ combos
@@ -43,7 +43,7 @@ ___ test_team_of_two_order_does_not_matter(test_input, expected
 ])
 ___ test_team_of_two_order_does_matter(test_input, expected
     """From here on just test a subset of combos"""
-    combos = l..(friends_teams(friends, team_size=2, order_does_matter=T..))
+    combos = l..(friends_teams(friends, team_size=2, order_does_matter=T..
     ... l..(combos) __ 12
     ... test_input __ combos
 
@@ -60,7 +60,7 @@ ___ test_team_of_two_order_does_matter(test_input, expected
     (('Dante', 'Dante', 'Martin'), F..),
 ])
 ___ test_team_of_three_order_does_not_matter(test_input, expected
-    combos = l..(friends_teams(friends, team_size=3, order_does_matter=F..))
+    combos = l..(friends_teams(friends, team_size=3, order_does_matter=F..
     ... l..(combos) __ 4
     __ expected:
         ... test_input __ combos
@@ -78,6 +78,6 @@ ___ test_team_of_three_order_does_not_matter(test_input, expected
     (('Julian', 'Martin', 'Dante'), T..),
 ])
 ___ test_team_of_three_order_does_matter(test_input, expected
-    combos = l..(friends_teams(friends, team_size=3, order_does_matter=T..))
+    combos = l..(friends_teams(friends, team_size=3, order_does_matter=T..
     ... l..(combos) __ 24
     ... test_input __ combos

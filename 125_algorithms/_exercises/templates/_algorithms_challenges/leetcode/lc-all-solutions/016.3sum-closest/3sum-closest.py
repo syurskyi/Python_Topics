@@ -8,7 +8,7 @@ c_ Solution(o..
     nums.s..()
     ans = 0
     diff = f__("inf")
-    ___ i __ r..(0, l..(nums)):
+    ___ i __ r..(0, l..(nums:
       start, end = i + 1, l..(nums) - 1
       w.... start < end:
         s.. = nums[i] + nums[start] + nums[end]

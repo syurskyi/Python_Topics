@@ -21,7 +21,7 @@ c_ Solution:
         sum_to_index[0] = -1
 
         prefix_sum = 0
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             prefix_sum += nums[i]
 
             __ prefix_sum __ sum_to_index:

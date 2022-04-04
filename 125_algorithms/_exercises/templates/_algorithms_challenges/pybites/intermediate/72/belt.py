@@ -7,7 +7,7 @@ belts  'white yellow orange green blue brown black paneled red'.s..
 ___ get_belt(user_score, scoresscores, beltsbelts
     ninja_belts  OrderedDict()
 
-    ___ i __ r..(l..(scores)):
+    ___ i __ r..(l..(scores:
         ninja_belts[scores[i]]  belts[i]
 
     __ user_score < 10:

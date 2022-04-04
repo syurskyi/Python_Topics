@@ -49,7 +49,7 @@ ___ grep(pattern, files, flags=''
         w__ o.. file_name) __ f:
             ___ line_number, line __ e..(f.r.., start=1
                 __ matches(line, pattern, flags
-                    matched_lines.a..((file_name, line_number, line))
+                    matched_lines.a..((file_name, line_number, line
 
     __ '-l' __ flags:
         r.. format_files(matched_lines)

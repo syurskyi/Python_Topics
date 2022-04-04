@@ -11,7 +11,7 @@ c_ Solution(o..
     dp = [1] * l..(nums)
     p.. = [-1] * l..(nums)
     finalMaxLen, finalMaxLenIdx = -1, -1
-    ___ i __ r..(1, l..(nums)):
+    ___ i __ r..(1, l..(nums:
       maxLen, maxLenIdx = -1, -1
       ___ j __ r..(0, i
         __ nums[i] % nums[j] __ 0:

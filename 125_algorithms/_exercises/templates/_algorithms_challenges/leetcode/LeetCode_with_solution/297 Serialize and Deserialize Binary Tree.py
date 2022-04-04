@@ -47,15 +47,15 @@ c_ Codec:
         ret    # list
         q    # list
         q.a..(root)
-        ret.a..(s..(root.val))  # add result when enqueue
+        ret.a..(s..(root.val  # add result when enqueue
         w.... q:
             l = l..(q)
             ___ i __ x..(l
                 cur = q[i]
                 __ cur.left: q.a..(cur.left)
-                ret.a..(encode(cur.left))
+                ret.a..(encode(cur.left
                 __ cur.right: q.a..(cur.right)
-                ret.a..(encode(cur.right))
+                ret.a..(encode(cur.right
 
             q = q[l:]
 
@@ -90,7 +90,7 @@ c_ Codec:
         __ s __ "null":
             r.. N..
         ____:
-            r.. TreeNode(i..(s))
+            r.. TreeNode(i..(s
 
     ___ encode  node
         __ n.. node:

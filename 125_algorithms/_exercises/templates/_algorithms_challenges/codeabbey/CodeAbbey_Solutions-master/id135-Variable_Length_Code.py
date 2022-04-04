@@ -26,11 +26,11 @@ ___ compress_string(s__
     ___ char __ s__[::]:
         bits = ("%s") % (value_dict[char])
         eight_bit.a..(bits)
-    eight_bit = (''.j..(eight_bit))
+    eight_bit = (''.j..(eight_bit
 
     # Split into chunks of 8
     chunks    # list
-    ___ byte __ r..(l..(eight_bit)):
+    ___ byte __ r..(l..(eight_bit:
         __ l..(eight_bit) > 0 a.. l..(eight_bit) < 8:
             w.... l..(eight_bit) < 8:
                 eight_bit += '0'
@@ -47,6 +47,6 @@ ___ compress_string(s__
         __ l..(encoded_value) __ 1:
             encoded_value = '0' + encoded_value
         answer.a..(encoded_value)
-    print(' '.j..(answer))
+    print(' '.j..(answer
     
 compress_string(raw_input

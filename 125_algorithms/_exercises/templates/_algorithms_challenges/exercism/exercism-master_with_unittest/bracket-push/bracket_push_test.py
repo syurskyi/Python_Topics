@@ -59,7 +59,7 @@ c_ BracketPushTest(unittest.TestCase
         assertEqual(
             is_paired(
                 ("\\left(\\begin{array}{cc} \\frac{1}{3} & x\\\\ \\mathrm{e}^{"
-                 "x} &... x^2 \\end{array}\\right)")), T..)
+                 "x} &... x^2 \\end{array}\\right)", T..)
 
 
 __ _____ __ _____

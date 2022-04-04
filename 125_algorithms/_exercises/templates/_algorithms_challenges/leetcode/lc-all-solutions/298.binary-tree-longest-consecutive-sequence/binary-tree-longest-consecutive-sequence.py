@@ -22,6 +22,6 @@ c_ Solution(o..
         ret  leftLen + 1
       __ root.val + 1 __ right:
         ret  m..(ret, rightLen + 1)
-      r.. (root.val, ret, m..(maxLeftLen, maxRightLen, ret))
+      r.. (root.val, ret, m..(maxLeftLen, maxRightLen, ret
 
     r.. helper(root)[2]

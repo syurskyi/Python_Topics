@@ -13,7 +13,7 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        r.. permute(s..(nums))
+        r.. permute(s..(nums
 
     ___ permute  nums
         __ n.. nums:

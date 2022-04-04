@@ -25,7 +25,7 @@ ___ alpha_index_series() __ pd.Series:
     so index 'a'=1, 'b'=2 ... 'y'=25, 'z'=26
     Don't worry about the series name.
     """
-    r.. pd.Series([i+1 ___ i __ r..(26)], index=l..(s__.ascii_lowercase))
+    r.. pd.Series([i+1 ___ i __ r..(26)], index=l..(s__.ascii_lowercase
 
 
 ___ object_values_series() __ pd.Series:

@@ -18,7 +18,7 @@ c_ Solution(o..
     
     ___ helper  elem, start, k, n, result
         __ l..(elem) __ k a.. n __ 0:
-            result.a..(l..(elem))
+            result.a..(l..(elem
             r..
         __ n < 0:
             r..
@@ -33,10 +33,10 @@ c_ Solution(o..
             (3, 9),
         ]
         ___ k, n __ testCases:
-            print('k: %s' % (k))
-            print('n: %s' % (n))
+            print('k: %s' % (k
+            print('n: %s' % (n
             result = combinationSum3(k, n)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

@@ -17,6 +17,6 @@ ___ get_cipher(words, shifter
 
 
 ___ i __ r..(amount_values
-    results.a..(get_cipher(input(),shifter))
+    results.a..(get_cipher(input(),shifter
 
 print(*results)

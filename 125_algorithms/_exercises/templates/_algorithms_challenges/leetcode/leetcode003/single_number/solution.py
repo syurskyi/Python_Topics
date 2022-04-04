@@ -5,6 +5,6 @@ c_ Solution:
         __ n.. A:
             r.. N..
         p = A[0]
-        ___ i __ r..(1, l..(A)):
+        ___ i __ r..(1, l..(A:
             p = p ^ A[i]
         r.. p

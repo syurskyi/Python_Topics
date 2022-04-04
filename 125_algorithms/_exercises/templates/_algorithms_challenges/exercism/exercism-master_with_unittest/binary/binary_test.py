@@ -12,25 +12,25 @@ ____ binary _______ parse_binary
 c_ BinaryTests(unittest.TestCase
 
     ___ test_binary_1_is_decimal_1
-        assertEqual(1, parse_binary("1"))
+        assertEqual(1, parse_binary("1"
 
     ___ test_binary_10_is_decimal_2
-        assertEqual(2, parse_binary("10"))
+        assertEqual(2, parse_binary("10"
 
     ___ test_binary_11_is_decimal_3
-        assertEqual(3, parse_binary("11"))
+        assertEqual(3, parse_binary("11"
 
     ___ test_binary_100_is_decimal_4
-        assertEqual(4, parse_binary("100"))
+        assertEqual(4, parse_binary("100"
 
     ___ test_binary_1001_is_decimal_9
-        assertEqual(9, parse_binary("1001"))
+        assertEqual(9, parse_binary("1001"
 
     ___ test_binary_11010_is_decimal_26
-        assertEqual(26, parse_binary("11010"))
+        assertEqual(26, parse_binary("11010"
 
     ___ test_binary_10001101000_is_decimal_1128
-        assertEqual(1128, parse_binary("10001101000"))
+        assertEqual(1128, parse_binary("10001101000"
 
     ___ test_invalid_binary_text_only
         assertRaises(V..., parse_binary, "carrot")

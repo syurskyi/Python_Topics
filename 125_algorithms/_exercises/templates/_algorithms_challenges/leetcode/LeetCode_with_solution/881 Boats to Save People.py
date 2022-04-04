@@ -39,7 +39,7 @@ c_ Solution:
         sort + gready
         """
         ret = 0
-        q = d..(s..(people))
+        q = d..(s..(people
         w.... q:
             tail = q.pop()
             ret += 1

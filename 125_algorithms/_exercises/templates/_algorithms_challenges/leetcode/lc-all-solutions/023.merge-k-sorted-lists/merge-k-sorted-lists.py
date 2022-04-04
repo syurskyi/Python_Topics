@@ -16,7 +16,7 @@ c_ Solution(o..
     """
     heap    # list
     p = dummy = ListNode(-1)
-    ___ i __ r..(0, l..(lists)):
+    ___ i __ r..(0, l..(lists:
       node = lists[i]
       __ n.. node:
         _____

@@ -32,8 +32,8 @@ c_ Solution(o..
         l = map(l.., words)
         codes = map(encode, words)
         maxa = 0
-        ___ i __ x..(l..(codes)):
-            ___ j __ x..(i+1, l..(codes)):
+        ___ i __ x..(l..(codes:
+            ___ j __ x..(i+1, l..(codes:
                 __ codes[i] & codes[j] __ 0:
                     maxa = m..(maxa, l[i]*l[j])
 
@@ -42,7 +42,7 @@ c_ Solution(o..
     ___ encode  x
         ret = 0
         ___ c __ x:
-            ret |= 1 << (o..(c)-o..('a'))
+            ret |= 1 << (o..(c)-o..('a'
         r.. ret
 
 

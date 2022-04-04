@@ -111,4 +111,4 @@ ___ get_duplicate_indices(words
     r..(result)
 
 
-print(get_duplicate_indices( 'is', 'it', 'true', 'or', 'is', 'it', 'not?' ))
+print(get_duplicate_indices( 'is', 'it', 'true', 'or', 'is', 'it', 'not?'

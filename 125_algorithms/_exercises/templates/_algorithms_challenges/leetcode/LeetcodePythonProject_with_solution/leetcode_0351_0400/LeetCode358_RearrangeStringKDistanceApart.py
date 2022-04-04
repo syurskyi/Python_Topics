@@ -35,10 +35,10 @@ c_ Solution(o..
             ('aaadbbcc', 2),
         ]
         ___ s, k __ testCases:
-            print('s: %s' % (s))
-            print('k: %s' % (k))
+            print('s: %s' % (s
+            print('k: %s' % (k
             result = rearrangeString(s, k)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

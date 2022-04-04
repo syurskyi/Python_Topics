@@ -23,5 +23,5 @@ ___ split_once(text: s.., separators: s.. = N..) __ L..[s..]:
 
 __ _______ __ _______
 
-    print(split_once('abc: def: ijk, lmno: pqr - stu, wxy', separators=',-:'))
+    print(split_once('abc: def: ijk, lmno: pqr - stu, wxy', separators=',-:'
 

@@ -48,7 +48,7 @@ c_ Solution(o..
 
         # recursive
         __ (l a.. r a..
-            l.val __ r.val a.. isSymmetrical(l.left, r.right) a.. isSymmetrical(l.right, r.left)):
+            l.val __ r.val a.. isSymmetrical(l.left, r.right) a.. isSymmetrical(l.right, r.left:
             r.. T..
 
         r.. F..

@@ -7,4 +7,4 @@ ___ kangaroo(x1, v1, x2, v2
 
 
 x1, v1, x2, v2 = map(i.., input().s..
-print(kangaroo(x1, v1, x2, v2))
+print(kangaroo(x1, v1, x2, v2

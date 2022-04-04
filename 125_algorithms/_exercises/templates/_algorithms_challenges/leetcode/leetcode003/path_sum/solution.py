@@ -20,4 +20,4 @@ c_ Solution:
         ____:
             s.. -= root.val
             r.. (hasPathSum(root.left, s..)
-                    o. hasPathSum(root.right, s..))
+                    o. hasPathSum(root.right, s..

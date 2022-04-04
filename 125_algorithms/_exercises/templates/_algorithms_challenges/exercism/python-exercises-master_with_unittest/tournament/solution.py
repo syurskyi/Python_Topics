@@ -15,7 +15,7 @@ ___ parse_game(game_line
     game = game_line.s..(';')
     __ l..(game) __ 3 a.. game[2] __ RESULTS:
         result = RESULTS[game[2]]
-        r.. (game[0], result), (game[1], invert_result(result))
+        r.. (game[0], result), (game[1], invert_result(result
     r.. []
 
 
@@ -27,10 +27,10 @@ ___ format_table(results
     table =  'Team                           | MP |  W |  D |  L |  P'
 
     ___ team, games __ s..(
-            results.i.., key=l.... g: (-calculate_points(g[1]), g[0])):
+            results.i.., key=l.... g: (-calculate_points(g[1]), g[0]:
         team_fmt = '{0:30} | {1:2} | {3:2} | {4:2} | {5:2} | {2:2}'
         table.a..(
-            team_fmt.f..(team, s..(games), calculate_points(games), *games))
+            team_fmt.f..(team, s..(games), calculate_points(games), *games
 
     r.. '\n'.j..(table)
 

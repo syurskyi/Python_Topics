@@ -91,7 +91,7 @@ c_ Solution:
         r.. s..((
             pos * right - ps[right],
             ps[n] - ps[right] - pos * (n - right),
-        ))
+        
 
 
 c_ Solution:
@@ -121,7 +121,7 @@ c_ Solution:
         ___ x __ r..(m
             ___ y __ r..(n
                 __ grid[x][y] __ HOUSE:
-                    houses.a..((x, y))
+                    houses.a..((x, y
                     xc += x
                     yc += y
 
@@ -134,7 +134,7 @@ c_ Solution:
 
         ___ x, y __ queue:
             __ grid[x][y] __ EMPTY:
-                ans = m..(ans, get_step(houses, x, y))
+                ans = m..(ans, get_step(houses, x, y
 
             ___ dx, dy __ (
                 (-1, 0), (1, 0),
@@ -148,8 +148,8 @@ c_ Solution:
                 __ (_x, _y) __ visited:
                     _____
 
-                visited.add((_x, _y))
-                queue.a..((_x, _y))
+                visited.add((_x, _y
+                queue.a..((_x, _y
 
         r.. ans __ ans < INF ____ -1
 
@@ -222,8 +222,8 @@ c_ Solution:
                     __ (_x, _y) __ visited:
                         _____
 
-                    visited.add((_x, _y))
+                    visited.add((_x, _y
                     steps[_x][_y] += step
-                    _queue.a..((_x, _y))
+                    _queue.a..((_x, _y
 
             queue, _queue = _queue, []

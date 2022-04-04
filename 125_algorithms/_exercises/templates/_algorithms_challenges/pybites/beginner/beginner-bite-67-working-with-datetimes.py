@@ -18,7 +18,7 @@ ___ get_hundred_days_end_date
     """Return a string of yyyy-mm-dd"""
     t = t..(100)
     finish = start_100days + t
-    print(s..(finish))
+    print(s..(finish
     r.. s..(finish)
 
 

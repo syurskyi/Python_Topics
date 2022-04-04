@@ -23,7 +23,7 @@ c_ Solution(o..
 
         char2word    # dict
         words = s..()
-        ___ i __ x..(l..(pattern)):
+        ___ i __ x..(l..(pattern:
             __ pattern[i] __ char2word:
                 __ char2word[pattern[i]] != lst[i]:
                     r.. F..
@@ -64,7 +64,7 @@ c_ SolutionError(o..
         __ l..(pattern) != l..(lst
             r.. F..
 
-        ___ i __ x..(l..(pattern)):
+        ___ i __ x..(l..(pattern:
             a = m.g.. pattern[i])
             b = m.g.. lst[i])
             __ a __ N.. a.. b __ N..

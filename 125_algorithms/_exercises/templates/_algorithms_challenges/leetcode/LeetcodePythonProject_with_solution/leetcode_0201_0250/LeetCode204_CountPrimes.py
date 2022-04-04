@@ -30,7 +30,7 @@ c_ Solution(o..
         __ n <= 2:
             r.. 0
         primes = [F..,]*2 + [T..,]*(n-2)
-        ___ i __ r..(2, i..(m__.sqrt(n-1))+1
+        ___ i __ r..(2, i..(m__.sqrt(n-1+1
             __ primes[i]:
                 ___ j __ r..(i+i, n, i
                     primes[j] = F..
@@ -45,9 +45,9 @@ c_ Solution(o..
             6,
         ]
         ___ n __ testCases:
-            print('n: %s' % (n))
+            print('n: %s' % (n
             result = countPrimes(n)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

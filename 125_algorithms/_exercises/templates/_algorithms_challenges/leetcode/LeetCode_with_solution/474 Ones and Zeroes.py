@@ -52,7 +52,7 @@ c_ Solution:
                 __ i + z<= m a.. j + o <= n:
                     F[i][j] = 1
 
-        ___ e __ r..(1, l..(strs)):
+        ___ e __ r..(1, l..(strs:
             z, o = c.. strs[e])
             ___ i __ r..(m+1
                 ___ j __ r..(n+1
@@ -93,14 +93,14 @@ c_ Solution:
         __ n.. strs:
             r.. 0
 
-        F = [[[0 ___ _ __ r..(l..(strs))] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
+        F = [[[0 ___ _ __ r..(l..(strs] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
         count = C..(strs[0])
         ___ i __ r..(m+1
             ___ j __ r..(n+1
                 __ i + count["0"] <= m a.. j + count["1"] <= n:
                     F[i][j][0] = 1
 
-        ___ e __ r..(1, l..(strs)):
+        ___ e __ r..(1, l..(strs:
             count = C..(strs[e])
             ___ i __ r..(m+1
                 ___ j __ r..(n+1
@@ -129,12 +129,12 @@ c_ Solution:
         __ n.. strs:
             r.. 0
 
-        F = [[[0 ___ _ __ r..(l..(strs))] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
+        F = [[[0 ___ _ __ r..(l..(strs] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
         count = C..(strs[0])
         __ count["0"] <= m a.. count["1"] <= n:
             F[m - count["0"]][n - count["1"]][0] += 1
 
-        ___ e __ r..(1, l..(strs)):
+        ___ e __ r..(1, l..(strs:
             count = C..(strs[e])
             ___ i __ r..(m+1
                 ___ j __ r..(n+1

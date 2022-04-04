@@ -23,7 +23,7 @@ ___ simple_calculator(calculation
         x = i..(calculation.s.. [0])
         y = i..(calculation.s.. [2])
         operator = calculation.s.. [1]
-        r.. operation[operator](i..(x), i..(y))
+        r.. operation[operator](i..(x), i..(y
     
     ______ (V..., KeyError, ZeroDivisionError
         r.. V...

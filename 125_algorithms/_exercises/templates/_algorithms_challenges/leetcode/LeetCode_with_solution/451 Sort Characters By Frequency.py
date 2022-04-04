@@ -23,7 +23,7 @@ c_ Solution(o..
             bucket[v].a..(k)
 
         ret    # list
-        ___ count __ r..(r..(1, l..(s) + 1)):
+        ___ count __ r..(r..(1, l..(s) + 1:
             __ bucket[count]:
                 ___ c __ bucket[count]:
                     ret.a..(c * count)

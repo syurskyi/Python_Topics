@@ -13,7 +13,7 @@ c_ Solution(o..
         ans = dp(i + 1, j, 0) + (k + 1) ** 2
         ___ m __ r..(i + 1, j + 1
           __ A[i] __ A[m]:
-            ans = m..(ans, dp(i + 1, m - 1, 0) + dp(m, j, k + 1))
+            ans = m..(ans, dp(i + 1, m - 1, 0) + dp(m, j, k + 1
         memo[i][j][k] = ans
       r.. memo[i][j][k]
 

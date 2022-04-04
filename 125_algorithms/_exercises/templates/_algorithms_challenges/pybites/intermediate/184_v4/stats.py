@@ -3,7 +3,7 @@ _______ __
 ____ u__.r.. _______ u..
 ____ c.. _______ C..
 
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 LOGS = 'bite_output_log.txt'
 DATA = __.p...j..(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
@@ -15,7 +15,7 @@ c_ BiteStats:
 
     ___ _load_data  data) __ l..:
         w__ o.. DATA) __ f:
-            r.. l..(DictReader(f))
+            r.. l..(DictReader(f
 
     ___ - , data=DATA
         rows = _load_data(data)

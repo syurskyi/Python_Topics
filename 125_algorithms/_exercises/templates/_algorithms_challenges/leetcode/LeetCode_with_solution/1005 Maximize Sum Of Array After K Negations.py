@@ -42,7 +42,7 @@ c_ Solution:
         since -100 <= A[i] <= 100, then sort can be done in linear time
         """
         A.s..()
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             __ K __ 0:
                 _____
 

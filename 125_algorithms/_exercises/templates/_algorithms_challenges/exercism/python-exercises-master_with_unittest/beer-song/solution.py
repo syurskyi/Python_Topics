@@ -1,6 +1,6 @@
 ___ song(first, last=0
     verses = ''
-    ___ number __ r..(r..(last, first + 1)):
+    ___ number __ r..(r..(last, first + 1:
         verses += verse(number) + '\n'
 
     r.. verses
@@ -25,7 +25,7 @@ ___ _action(current_verse
 
 
 ___ _next_bottle(current_verse
-    r.. "%s of beer on the wall.\n" % _bottles(_next_verse(current_verse))
+    r.. "%s of beer on the wall.\n" % _bottles(_next_verse(current_verse
 
 
 ___ _bottles(number

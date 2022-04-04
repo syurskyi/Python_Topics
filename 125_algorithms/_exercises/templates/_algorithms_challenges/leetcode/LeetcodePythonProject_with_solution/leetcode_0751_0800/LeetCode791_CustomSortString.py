@@ -21,7 +21,7 @@ c_ Solution(o..
                 count[o..(c)-o..('a')] -= 1
         ___ i __ r..(26
             w.... count[i] > 0:
-                res += chr(i+o..('a'))
+                res += chr(i+o..('a'
                 count[i] -= 1
         r.. res
     

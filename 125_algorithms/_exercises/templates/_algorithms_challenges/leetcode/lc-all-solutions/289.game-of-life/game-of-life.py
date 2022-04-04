@@ -16,10 +16,10 @@ c_ Solution(o..
       __ cnt __ 3 o. (board[p][q] __ 1 a.. cnt __ 2
         board[p][q] |= 2
 
-    ___ i __ r..(0, l..(board)):
-      ___ j __ r..(0, l..(board[0])):
+    ___ i __ r..(0, l..(board:
+      ___ j __ r..(0, l..(board[0]:
         helper(board, i, j)
 
-    ___ i __ r..(0, l..(board)):
-      ___ j __ r..(0, l..(board[0])):
+    ___ i __ r..(0, l..(board:
+      ___ j __ r..(0, l..(board[0]:
         board[i][j] >>= 1

@@ -1,6 +1,6 @@
 ___ char_index(word, char
     output    # list
-    ___ i __ r..(l..(word)):
+    ___ i __ r..(l..(word:
         __ word[i] __ char:
             output.a..(i)
         ____ char n.. __ word:

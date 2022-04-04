@@ -37,9 +37,9 @@ c_ Solution:
         depth = preorder[parent_at][1] + 1
 
         __ node.left:
-            preorder.a..((node.left, depth))
+            preorder.a..((node.left, depth
             dfs(node.left, ans, preorder, l..(preorder) - 1)
 
         __ node.right:
-            preorder.a..((node.right, depth))
+            preorder.a..((node.right, depth
             dfs(node.right, ans, preorder, l..(preorder) - 1)

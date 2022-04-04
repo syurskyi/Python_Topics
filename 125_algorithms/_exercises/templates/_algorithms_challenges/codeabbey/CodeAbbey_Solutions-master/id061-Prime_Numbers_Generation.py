@@ -14,6 +14,6 @@ ___ gen_primes(limit3000000
                sieve[i]  F..
                
     ___ number __ data:
-        answer.a..(s..(primes[number-1]))
-    print(' '.j..(answer))
+        answer.a..(s..(primes[number-1]
+    print(' '.j..(answer
 gen_primes()

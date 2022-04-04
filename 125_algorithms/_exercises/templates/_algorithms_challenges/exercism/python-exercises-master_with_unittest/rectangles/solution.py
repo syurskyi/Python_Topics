@@ -27,10 +27,10 @@ ___ same_col(index, l..
 
 ___ search_corners(input
     corner_list    # list
-    ___ i __ r..(0, l..(input)):
-        ___ j __ r..(0, l..(input[i])):
+    ___ i __ r..(0, l..(input:
+        ___ j __ r..(0, l..(input[i]:
             __ (input[i][j] __ "+"
-                corner_list.a..(corners(i, j))
+                corner_list.a..(corners(i, j
     r.. corner_list
 
 
@@ -51,7 +51,7 @@ ___ possible_rect(quartet
     dy = abs(quartet[0].j - mid_y)
 
     # Check all the same distance from centroid are equals
-    ___ i __ r..(1, l..(quartet)):
+    ___ i __ r..(1, l..(quartet:
         __ abs(quartet[i].i - mid_x) != dx o. abs(quartet[i].j - mid_y) != dy:
             r.. F..
     r.. T..
@@ -60,12 +60,12 @@ ___ possible_rect(quartet
 # validate path between two corners
 ___ p..(c1, c2, input
     __ c1.i __ c2.i:
-        ___ j __ r..(m..(c1.j + 1, c2.j + 1), m..(c1.j, c2.j)):
+        ___ j __ r..(m..(c1.j + 1, c2.j + 1), m..(c1.j, c2.j:
             __ input[c1.i][j] != "-" a.. input[c1.i][j] != "+":
                 r.. F..
         r.. T..
     ____ c1.j __ c2.j:
-        ___ i __ r..(m..(c1.i + 1, c2.i + 1), m..(c1.i, c2.i)):
+        ___ i __ r..(m..(c1.i + 1, c2.i + 1), m..(c1.i, c2.i:
             __ input[i][c1.j] != "|" a.. input[i][c1.j] != "+":
                 r.. F..
         r.. T..
@@ -75,7 +75,7 @@ ___ p..(c1, c2, input
 ___ validate_rect(rect, input
     # validate connection at every corner
     # with neighbours on the same line and col
-    ___ i __ r..(0, l..(rect)):
+    ___ i __ r..(0, l..(rect:
         l = same_line(rect[i].i, rect[0:i] + rect[i + 1:])
         c = same_col(rect[i].j, rect[0:i] + rect[i + 1:])
         __ n.. p..(rect[i], l, input) o. n.. p..(rect[i], c, input
@@ -98,14 +98,14 @@ ___ c.. lines=""
 
     # now let the magic begins
     # all combinations of 4 corners (python ftw)
-    q = l..(i...combinations(corners, r=4))
+    q = l..(i...combinations(corners, r=4
     rectangles    # list
     ___ el __ q:
-        __ (possible_rect(el)):
+        __ (possible_rect(el:
             rectangles.a..(el)
 
     # validate path in found rectangles
     ___ rect __ rectangles:
-        __ (validate_rect(rect, lines)):
+        __ (validate_rect(rect, lines:
             nb_rect = nb_rect + 1
     r.. nb_rect

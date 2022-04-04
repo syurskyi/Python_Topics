@@ -8,7 +8,7 @@ c_ Solution(o..
       r.. l..(nums)
     cnt = 0
     j = 1
-    ___ i __ r..(1, l..(nums)):
+    ___ i __ r..(1, l..(nums:
       __ nums[i] __ nums[i - 1]:
         cnt += 1
         __ cnt < 2:

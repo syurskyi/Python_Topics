@@ -27,8 +27,8 @@ c_ Solution:
             ___ j __ r..(l..(words[i]) + 1
                 s = words[i][:j]
                 t = words[i][j:]
-                _s = ''.j..(r..(s))
-                _t = ''.j..(r..(t))
+                _s = ''.j..(r..(s
+                _t = ''.j..(r..(t
 
                 __ (is_palindrome(s) a..
                     _t __ w2i a..

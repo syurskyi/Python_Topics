@@ -33,7 +33,7 @@ c_ Solution(o..
     ___ dfs  beginWord, word, distance, wordSet, res, curr
         curr.insert(0, word)
         __ word __ beginWord:
-            res.a..(l..(curr))
+            res.a..(l..(curr
         ____:
             ___ nextWord __ getNextWords(word, wordSet
                 __ nextWord __ distance a.. distance[nextWord]+1 __ distance.g.. word, 0

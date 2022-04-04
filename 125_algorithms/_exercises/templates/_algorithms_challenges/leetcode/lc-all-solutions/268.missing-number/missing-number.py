@@ -5,4 +5,4 @@ c_ Solution(o..
     :rtype: int
     """
     n = l..(nums)
-    r.. (n * (n + 1)) / 2 - s..(nums)
+    r.. (n * (n + 1 / 2 - s..(nums)

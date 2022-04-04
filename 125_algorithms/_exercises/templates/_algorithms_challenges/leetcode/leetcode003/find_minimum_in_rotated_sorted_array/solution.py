@@ -33,4 +33,4 @@ c_ Solution(o..
 
 a1 = [4, 5, 6, 7, 0, 1, 2]
 s = Solution()
-print(s.findMin(a1))
+print(s.findMin(a1

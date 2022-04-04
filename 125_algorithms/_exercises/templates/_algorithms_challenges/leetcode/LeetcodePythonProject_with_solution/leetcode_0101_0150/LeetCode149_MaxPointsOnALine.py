@@ -89,9 +89,9 @@ c_ Solution(o..
         ]
         ___ l __ testCases:
             points = [Point(x[0], x[1]) ___ x __ l]
-            print('points: %s' % (l))
+            print('points: %s' % (l
             result = maxPoints(points)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

@@ -86,7 +86,7 @@ ___ list_creation(n: i..) __ L..[i..]:
 ___ list_creation_fast(n: i..
     
 
-    r.. l..(r..(n))
+    r.. l..(r..(n
 
 
 

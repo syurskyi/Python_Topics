@@ -8,9 +8,9 @@ c_ Solution(o..
 
     ___ dfs(nums, start, p.., ans
       __ l..(p..) >= 2:
-        ans.a..(t..(p.. + []))
+        ans.a..(t..(p.. + []
 
-      ___ i __ r..(start, l..(nums)):
+      ___ i __ r..(start, l..(nums:
         __ i != start a.. nums[i] __ nums[i - 1]:
           _____
         __ p.. a.. nums[i] < p..[-1]:
@@ -20,4 +20,4 @@ c_ Solution(o..
         p...pop()
 
     dfs(nums, 0, [], ans)
-    r.. l..(s..(ans))
+    r.. l..(s..(ans

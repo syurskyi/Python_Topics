@@ -5,7 +5,7 @@ c_ WordDistance(o..
     :type words: List[str]
     """
     d    # dict
-    ___ i __ r..(0, l..(words)):
+    ___ i __ r..(0, l..(words:
       d[words[i]] = d.g.. words[i], []) + [i]
 
   ___ shortest  word1, word2
@@ -20,7 +20,7 @@ c_ WordDistance(o..
     i = j = 0
     ans = f__("inf")
     w.... i < l..(l1) a.. j < l..(l2
-      ans = m..(ans, abs(l1[i] - l2[j]))
+      ans = m..(ans, abs(l1[i] - l2[j]
       __ l1[i] > l2[j]:
         j += 1
       ____:

@@ -6,7 +6,7 @@ c_ Solution:
         """
         color    # dict
 
-        ___ node __ r..(l..(graph)):
+        ___ node __ r..(l..(graph:
             __ node n.. __ color:
                 color[node] = 0
             ___ nei __ graph[node]:

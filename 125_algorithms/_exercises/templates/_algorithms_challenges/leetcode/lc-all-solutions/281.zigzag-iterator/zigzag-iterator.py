@@ -9,8 +9,8 @@ c_ ZigzagIterator(o..
     :type v1: List[int]
     :type v2: List[int]
     """
-    iters = d.. m..(i.., [v1, v2]))
-    total = s.. m..(l.., [v1, v2]))
+    iters = d.. m..(i.., [v1, v2]
+    total = s.. m..(l.., [v1, v2]
 
   ___ next
     """

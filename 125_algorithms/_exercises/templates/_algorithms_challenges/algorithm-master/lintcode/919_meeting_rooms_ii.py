@@ -21,8 +21,8 @@ c_ Solution:
         time    # list
 
         ___ x __ intervals:
-            time.a..((x.start, T..))
-            time.a..((x.end, F..))
+            time.a..((x.start, T..
+            time.a..((x.end, F..
 
         time.s..()
 

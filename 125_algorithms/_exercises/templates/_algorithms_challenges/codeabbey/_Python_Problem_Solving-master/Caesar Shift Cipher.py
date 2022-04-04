@@ -12,7 +12,7 @@ s2 = s1[k:] + s1[:k]
 a    # dict
 
 #store the decoding data in dictionary a
-___ i __ r..(l..(s1)):
+___ i __ r..(l..(s1:
     a[s2[i]] = s1[i]
 
 #now for number of test cases run the for loop

@@ -40,18 +40,18 @@ ___ intersection $a.. I..) __ S..[A..]:
     l    # list
     ___ input __ args:
         __ input __ n.. N.. a.. l..(input) > 0:
-            l.a..(s..(input))
+            l.a..(s..(input
     # I need to handle an exception in case dealing with empty inputs
     # Then I use intersection method which takes an arbitrary number of sets
     # as input.
     # {0,1,2,3} intersection {0,1,2,3}, {3,4,5,6}, {2,3,5,6}
     ___
         first = l[0]
-        r..(first.intersection(*l))
+        r..(first.intersection(*l
     ______ IndexError __ e:
         print(e)
         r..(s..
 
 
 
-print(intersection(N..))
+print(intersection(N..

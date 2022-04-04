@@ -7,7 +7,7 @@ ___ major_n_minor(numbers
     Output: the majority and minority number
     """
     temp_list = s..(C..(numbers).most_common(l..(s..(numbers))))
-    temp_list.s..(key=operator.itemgetter(1))
+    temp_list.s..(key=operator.itemgetter(1
     #print(type(temp_list[0][1]))
     print(temp_list)
 
@@ -17,6 +17,6 @@ ___ major_n_minor(numbers
     r.. temp_list[-1][0], temp_list[0][0]
 
 
-print(major_n_minor([1, 3, 5, 7, 8, 8, 9, 9, 3, 5, 8, 7]))
+print(major_n_minor([1, 3, 5, 7, 8, 8, 9, 9, 3, 5, 8, 7]
 
 #[1, 3, 5, 7, 8, 8, 9, 9, 3, 5, 8, 7]

@@ -8,7 +8,7 @@ c_ Solution:
         a = o..('a')
         ans = o..(t[-1]) - a
 
-        ___ i __ r..(l..(s)):
+        ___ i __ r..(l..(s:
             ans ^= o..(s[i]) - a
             ans ^= o..(t[i]) - a
 

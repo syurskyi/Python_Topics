@@ -54,8 +54,8 @@ c_ Solution:
         time    # list
 
         ___ x, _x, height __ buildings:
-            time.a..((x, height, T..))
-            time.a..((_x, height, F..))
+            time.a..((x, height, T..
+            time.a..((_x, height, F..
 
         time.s..()
         heap = HashHeapq()

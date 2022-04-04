@@ -73,7 +73,7 @@ c_ Solution:
         __ n.. cur:
             r.. merkle_hash(N..)
 
-        subtree_value = (cur.val, w..(cur.left, ret), w..(cur.right, ret))
+        subtree_value = (cur.val, w..(cur.left, ret), w..(cur.right, ret
         merkle_hash = merkle_hash(subtree_value)
         __ counter[merkle_hash] __ 1:
             ret.a..(cur)

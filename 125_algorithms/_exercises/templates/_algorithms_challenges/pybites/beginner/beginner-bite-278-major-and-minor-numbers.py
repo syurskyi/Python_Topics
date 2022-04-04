@@ -49,4 +49,4 @@ ___ major_n_minor(numbers
     # difference between for i in d:
     # for i in d.items(): ?
     # return (next((iter(reversed(sor.items()))))[0], next(iter(sor.items()))[0] )
-print(major_n_minor([0,0,0,1,2,2]))
+print(major_n_minor([0,0,0,1,2,2]

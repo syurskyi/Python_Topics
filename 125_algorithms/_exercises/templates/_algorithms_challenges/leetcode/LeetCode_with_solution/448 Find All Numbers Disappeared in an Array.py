@@ -19,7 +19,7 @@ c_ Solution:
         :type A: List[int]
         :rtype: List[int]
         """
-        ___ idx __ r..(l..(A)):
+        ___ idx __ r..(l..(A:
             w... T...
                 target = A[idx] - 1
                 __ idx __ target o. A[idx] __ A[target]:

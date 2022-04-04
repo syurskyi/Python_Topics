@@ -71,6 +71,6 @@ c_ Solution:
     ___ dfs  node, x, y
         __ n.. node:
             r..
-        mp[x].a..((-y, node.val))
+        mp[x].a..((-y, node.val
         dfs(node.left, x-1, y-1)
         dfs(node.right, x+1, y-1)

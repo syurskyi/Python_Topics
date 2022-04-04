@@ -36,7 +36,7 @@ ___ getUniquePrimeFactorsWithProducts(n
     result    # list
     __ isvalidparameter(n
         factors = getUniquePrimeFactorsWithCount(n)
-        result = map(l.... x: x[0] ** x[1], z..(factors[0], factors[1]))
+        result = map(l.... x: x[0] ** x[1], z..(factors[0], factors[1]
     r.. result
 
 

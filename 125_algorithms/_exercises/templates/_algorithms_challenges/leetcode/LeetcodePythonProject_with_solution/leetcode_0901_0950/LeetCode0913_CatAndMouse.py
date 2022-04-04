@@ -20,10 +20,10 @@ c_ Solution(o..
         ___ i __ r..(N
             ___ t __ r..(1, 3
                 color[0, i, t] = MOUSE
-                queue.a..((0, i, t, MOUSE))
+                queue.a..((0, i, t, MOUSE
                 __ i > 0:
                     color[i, i, t] = CAT
-                    queue.a..((i, i, t, CAT))
+                    queue.a..((i, i, t, CAT
 
         w.... queue:
             i, j, t, c = queue.popleft()
@@ -31,23 +31,23 @@ c_ Solution(o..
                 __ color[i2, j2, t2] __ DRAW:
                     __ t2 __ c:
                         color[i2, j2, t2] = c
-                        queue.a..((i2, j2, t2, c))
+                        queue.a..((i2, j2, t2, c
                     ____:
                         degree[i2, j2, t2] -= 1
                         __ degree[i2, j2, t2] __ 0:
                             color[i2, j2, t2] = 3 - t2
-                            queue.a..((i2, j2, t2, 3-t2))
+                            queue.a..((i2, j2, t2, 3-t2
         r.. color[1, 2, 1]
 
     ___ parents  graph, m, c, t
         res    # list
         __ t __ 2:
             ___ m2 __ graph[m]:
-                res.a..((m2, c, 3-t))
+                res.a..((m2, c, 3-t
         ____:
             ___ c2 __ graph[c]:
                 __ c2:
-                    res.a..((m, c2, 3-t))
+                    res.a..((m, c2, 3-t
         r.. res
 
     ___ test

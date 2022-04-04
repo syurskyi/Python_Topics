@@ -36,7 +36,7 @@ c_ Solution:
             i = bisect.bisect(heaters, h)  # insertion point
             left = m..(0, i - 1)
             right = m..(l..(heaters) - 1, i)
-            r_cur = m..(abs(heaters[left] - h), abs(heaters[right] - h))
+            r_cur = m..(abs(heaters[left] - h), abs(heaters[right] - h
             r = m..(r, r_cur)
             
         r.. r
@@ -50,7 +50,7 @@ c_ Solution:
         """
         houses.s..()
         heaters.s..()
-        heaters.a..(f__('inf'))
+        heaters.a..(f__('inf'
         r = 0
         i = 0
         ___ h __ houses:
@@ -59,7 +59,7 @@ c_ Solution:
                 # find which heater is responsible for the house
                 i += 1
 
-            r = m..(r, abs(heaters[i] - h))
+            r = m..(r, abs(heaters[i] - h
 
         r.. r
 

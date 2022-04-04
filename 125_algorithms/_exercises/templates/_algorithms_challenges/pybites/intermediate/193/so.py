@@ -18,14 +18,14 @@ ___ top_python_questions(url=cached_so_url
 
    question_summary = soup.find_all("div", class_="question-summary")
    ___ question __ question_summary:
-      views = i..(question.find("div", class_="views").g.. "title").s..(" ")[0].r..(",", ""))
+      views = i..(question.find("div", class_="views").g.. "title").s..(" ")[0].r..(",", ""
       _question = question.find("a", class_="question-hyperlink").get_text()
       votes = i..(question.find("span", class_="vote-count-post").get_text
       
       __ views >= 1000000:
-         ge_1m.a..((_question, votes))
+         ge_1m.a..((_question, votes
       ____:
-         lt_1m.a..((_question, votes))
+         lt_1m.a..((_question, votes
 
    r.. s..(ge_1m, key=l.... x: x[1], r.._T..
 

@@ -14,6 +14,6 @@ ___ is_palindrome(s__
 
 ___ i __ r..(amount_values
     s__ = input()
-    results.a..(is_palindrome(s__))
+    results.a..(is_palindrome(s__
 
 print(*results)

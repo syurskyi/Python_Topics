@@ -52,12 +52,12 @@ c_ CipherTest(unittest.TestCase
                'gzsabdjmdjabeorttiwinfrpmpogvabiofqexnohrqu')
         plaintext = 'adaywithoutlaughterisadaywasted'
         c = Cipher(key)
-        assertEqual(c.d.. c.encode(plaintext)), plaintext)
+        assertEqual(c.d.. c.encode(plaintext, plaintext)
 
     ___ test_cipher_compositiion2
         plaintext = 'adaywithoutlaughterisadaywasted'
         c = Cipher()
-        assertEqual(c.d.. c.encode(plaintext)), plaintext)
+        assertEqual(c.d.. c.encode(plaintext, plaintext)
 
     ___ test_cipher_random_key
         c = Cipher()

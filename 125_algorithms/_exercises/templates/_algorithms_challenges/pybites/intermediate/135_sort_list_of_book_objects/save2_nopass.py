@@ -36,10 +36,10 @@ ___ sort_books_by_first_authors_last_name(books=books
 
 
 ___ sort_books_by_number_of_page(books=books
-    f = s..(books, key=attrgetter('pages'))
+    f = s..(books, key=attrgetter('pages'
     r.. [b.title ___ b __ f]
 
 
 ___ sort_books_by_published_date(books=books
-    f = s..(books, key=attrgetter('published'))
+    f = s..(books, key=attrgetter('published'
     r.. [b.title ___ b __ f]

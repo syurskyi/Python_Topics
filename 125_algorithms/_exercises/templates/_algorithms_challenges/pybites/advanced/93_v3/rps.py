@@ -37,4 +37,4 @@ ___ game
         __ player_choice __ 'q':
             r.. StopIteration
         computer_choice = _get_computer_move()
-        print(_get_winner(computer_choice, player_choice))
+        print(_get_winner(computer_choice, player_choice

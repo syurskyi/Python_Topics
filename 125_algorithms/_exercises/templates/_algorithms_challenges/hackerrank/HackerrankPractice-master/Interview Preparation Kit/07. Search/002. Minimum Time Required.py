@@ -19,4 +19,4 @@ ___ minimum_time(goal, machines
 
 n, goal = map(i.., input().s..
 machines = l.. m..(i.., input().s..()))
-print(minimum_time(goal, machines))
+print(minimum_time(goal, machines

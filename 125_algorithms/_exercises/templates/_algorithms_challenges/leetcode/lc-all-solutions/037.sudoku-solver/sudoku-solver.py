@@ -4,9 +4,9 @@ c_ Solution(o..
     :type board: List[List[str]]
     :rtype: void Do not return anything, modify board in-place instead.
     """
-    cacheBox = [[0] * l..(board) ___ _ __ r..(l..(board))]
-    cacheRow = [[0] * l..(board) ___ _ __ r..(l..(board))]
-    cacheCol = [[0] * l..(board) ___ _ __ r..(l..(board))]
+    cacheBox = [[0] * l..(board) ___ _ __ r..(l..(board]
+    cacheRow = [[0] * l..(board) ___ _ __ r..(l..(board]
+    cacheCol = [[0] * l..(board) ___ _ __ r..(l..(board]
 
     ___ helper(board, i, j, cacheRow, cacheCol, cacheBox
       __ board[i][j] __ ".":
@@ -40,8 +40,8 @@ c_ Solution(o..
             r.. T..
       r.. F..
 
-    ___ i __ r..(l..(board)):
-      ___ j __ r..(l..(board)):
+    ___ i __ r..(l..(board:
+      ___ j __ r..(l..(board:
         __ board[i][j] != ".":
           ib = (i / 3) * 3 + j / 3
           k = i..(board[i][j]) - 1

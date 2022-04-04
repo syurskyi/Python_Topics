@@ -17,7 +17,7 @@ c_ Solution:
     ___ binaryTreePaths  root
         __ n.. root: r.. []
         res    # list
-        helper(root, res, s..(root.val))
+        helper(root, res, s..(root.val
         r.. res
     
     ___ helper  root, res, curr
@@ -25,17 +25,17 @@ c_ Solution:
             res.a..(curr)
             r..
         __ root.left:
-            helper(root.left, res, curr+('->%s' % root.left.val))
+            helper(root.left, res, curr+('->%s' % root.left.val
         __ root.right:
-            helper(root.right, res, curr+('->%s' % root.right.val))
+            helper(root.right, res, curr+('->%s' % root.right.val
     
     ___ test
         testCases = [
-            TreeNode(1, TreeNode(2, N.., TreeNode(5)), TreeNode(3)),
+            TreeNode(1, TreeNode(2, N.., TreeNode(5, TreeNode(3,
         ]
         ___ root __ testCases:
             result = binaryTreePaths(root)
-            print('result: %s' % (result))
+            print('result: %s' % (result
 
 __ _____ __ _____
     Solution().test()

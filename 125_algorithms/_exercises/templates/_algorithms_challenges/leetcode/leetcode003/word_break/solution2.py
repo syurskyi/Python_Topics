@@ -40,5 +40,5 @@ c_ Solution(o..
 
 
 s = Solution()
-print(s.wordBreak('leetcode',  'leet', 'code' ))
-print(s.wordBreak('leetcode',  'lee', 'code' ))
+print(s.wordBreak('leetcode',  'leet', 'code'
+print(s.wordBreak('leetcode',  'lee', 'code'

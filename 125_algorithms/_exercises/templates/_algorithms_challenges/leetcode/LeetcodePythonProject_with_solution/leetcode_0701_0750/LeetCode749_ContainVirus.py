@@ -32,7 +32,7 @@ c_ Solution(o..
                         flag = T..
                     __ maxVal __ -1 o. res[0] > info[maxVal][0]:
                         maxVal = count-2
-                    info.a..(l..(res))
+                    info.a..(l..(res
         __ count __ 1:
             r.. F..
         cost[0] += info[maxVal][1]

@@ -27,7 +27,7 @@ c_ Solution(o..
         p.. = f.. l.... x: x n.. __ ("", " ", "."), p..)
 
         # modify the content of the list, not the structure.
-        ___ idx __ x..(l..(p..)):
+        ___ idx __ x..(l..(p..:
             val = p..[idx]
             __ val __ "..":
                 p..[idx] = "."

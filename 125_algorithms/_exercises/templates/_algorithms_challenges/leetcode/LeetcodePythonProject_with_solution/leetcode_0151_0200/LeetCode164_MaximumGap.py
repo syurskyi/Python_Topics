@@ -15,7 +15,7 @@ c_ Solution(o..
         minVal = m..(nums)
         maxVal = m..(nums)
         n = l..(nums)
-        gap = m__.ceil(f__(maxVal-minVal)/(n-1))
+        gap = m__.ceil(f__(maxVal-minVal)/(n-1
         bucketsMin = [f__('inf')]*(n-1)
         bucketsMax = [f__('-inf')]*(n-1)
         ___ num __ nums:
@@ -39,9 +39,9 @@ c_ Solution(o..
             [1, 1000],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = maximumGap(nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

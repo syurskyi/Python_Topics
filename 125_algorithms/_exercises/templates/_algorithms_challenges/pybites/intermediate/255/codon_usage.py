@@ -30,7 +30,7 @@ ___ _preload_sequences(url=URL
     """
     #x = requests.get(url)
     #return x.text.splitlines()
-    filename = __.p...j..(__.getenv("TMP", "/tmp"), "NC_009641.txt")
+    filename = __.p...j..(__.g..("TMP", "/tmp"), "NC_009641.txt")
     __ n.. __.p...isfile(filename
         u..(url, filename)
     w__ o.. filename, "r") __ f:
@@ -103,7 +103,7 @@ ___ return_codon_usage_table(
     heading =  '|  Codon AA  Freq  Count  ' * 4  + '|'
     lines.a..(heading)
     #print(heading)
-    lines.a..('-' * l..(heading))
+    lines.a..('-' * l..(heading
     #print('-' * len(heading))
     
 
@@ -118,11 +118,11 @@ ___ return_codon_usage_table(
                 data = f"|  {codon_text:<5} {aa:<2}  {freq:>4}  {count:>5}  "
                 row.a..(data)
             row.a..('|')
-            lines.a..(''.j..(row))
+            lines.a..(''.j..(row
             #print(''.join(row))
         
 
-        lines.a..('-' * l..(heading))
+        lines.a..('-' * l..(heading
         #print('-' * len(heading))
 
 

@@ -38,6 +38,6 @@ c_ Promo:
     ___ expired
         r.. d__.n.. > expires
 
-p = Promo('blackfriday', NOW + t..(d.._5))
+p = Promo('blackfriday', NOW + t..(d.._5
 
 print(p.expired)

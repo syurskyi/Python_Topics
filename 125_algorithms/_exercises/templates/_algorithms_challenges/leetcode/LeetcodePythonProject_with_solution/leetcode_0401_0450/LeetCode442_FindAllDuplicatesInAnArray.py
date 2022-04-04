@@ -10,7 +10,7 @@ c_ Solution(o..
         ___ num __ nums:
             ind = abs(num)-1
             __ nums[ind] < 0:
-                result.a..(abs(num))
+                result.a..(abs(num
             ____:
                 nums[ind] = -nums[ind]
         r.. result

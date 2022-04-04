@@ -16,7 +16,7 @@ c_ Beer:
     ___ prefix(cls, verse_num
         r.. ('%(quantity)s %(container)s of beer on the wall, '
                 '%(quantity)s %(container)s of beer.'
-                % cls.vals_for(verse_num)).capitalize()
+                % cls.vals_for(verse_num.capitalize()
 
     @classmethod
     ___ suffix(cls, verse_num
@@ -25,7 +25,7 @@ c_ Beer:
         ____:
             r.. ('Take %(cardinality)s down and pass it around, '
                     '%(quantity)s %(container)s of beer on the wall.'
-                    % cls.vals_for(verse_num - 1))
+                    % cls.vals_for(verse_num - 1
 
     @classmethod
     ___ vals_for(cls, num

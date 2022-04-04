@@ -58,9 +58,9 @@ c_ Solution(o..
 #             'a',
 #         ]
         ___ word __ words:
-            print('word: %s' % (word))
+            print('word: %s' % (word
             result = exist(board, word)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
         
 

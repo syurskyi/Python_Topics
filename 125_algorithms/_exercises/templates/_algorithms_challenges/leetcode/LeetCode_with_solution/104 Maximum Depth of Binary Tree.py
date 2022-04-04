@@ -28,4 +28,4 @@ c_ Solution(o..
         DFS
         """
         __ n.. root: r.. depth
-        ____: r.. m..(fathom(root.left, depth+1), fathom(root.right, depth+1))
+        ____: r.. m..(fathom(root.left, depth+1), fathom(root.right, depth+1

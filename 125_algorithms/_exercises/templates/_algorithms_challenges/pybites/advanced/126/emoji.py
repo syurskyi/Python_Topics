@@ -25,7 +25,7 @@ ___ _make_emoji_mapping
 
     ___ i __ r..(START_EMOJI_RANGE,___.maxunicode + 1
         ___
-            meaning = what_means_emoji(chr(i))
+            meaning = what_means_emoji(chr(i
             mapping[chr(i)] = meaning
         ______:
             p..

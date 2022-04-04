@@ -15,7 +15,7 @@ c_ Solution(o..
         w.... queue:
             p.. = queue.pop(0)
             __ p..[-1] __ n-1:
-                res.a..(l..(p..))
+                res.a..(l..(p..
             ____:
                 ___ node __ graph[p..[-1]]:
                     queue.a..(p.. + [node])

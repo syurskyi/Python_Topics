@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         a, b = A, B
         __ l..(a) != l..(b r.. F..
-        __ a __ b a.. l..(s..(a)) < l..(a r.. T..
+        __ a __ b a.. l..(s..(a < l..(a r.. T..
         dif = [(c1, c2) ___ c1, c2 __ z..(a, b) __ c1 != c2]
         r.. l..(dif) __ 2 a.. dif[0] __ dif[1][::-1]
     
@@ -40,7 +40,7 @@ c_ Solution(o..
                     c01, c02 = c1, c2
                     times += 1
         __ times __ 0:
-            r.. l..(s..(a)) < l..(a)
+            r.. l..(s..(a < l..(a)
         r.. times __ 2
     
     ___ test

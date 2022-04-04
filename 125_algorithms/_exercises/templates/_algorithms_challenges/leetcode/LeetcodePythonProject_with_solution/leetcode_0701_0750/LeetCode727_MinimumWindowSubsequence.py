@@ -29,7 +29,7 @@ c_ Solution(o..
                     start = dp[m][j]-1
                     length = j-dp[m][j]+1
         print('dp:')
-        print('\n'.j..([s..(row) ___ row __ dp]))
+        print('\n'.j..([s..(row) ___ row __ dp]
         r.. '' __ length__n+1 ____ s[start:start+length]
     
     ___ test

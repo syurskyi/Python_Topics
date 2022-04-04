@@ -43,7 +43,7 @@ c_ Solution(o..
         __ l..(n1) > 1 a.. n1[0] __ '0' o. l..(n2) > 1 a.. n2[0] __ '0':
             r.. F..
 
-        n3 = s..(i..(n1)+i..(n2))
+        n3 = s..(i..(n1)+i..(n2
         J = j+l..(n3)
         __ s[j:J] __ n3:
             r.. predicate(s, i, j, J)

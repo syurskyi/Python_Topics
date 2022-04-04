@@ -13,7 +13,7 @@ c_ Solution(o..
             ___ i, p __ z..(times, primes
                 minVal = m..(minVal, res[i]*p)
             res.a..(minVal)
-            ___ i __ r..(l..(times)):
+            ___ i __ r..(l..(times:
                 __ minVal __ res[times[i]]*primes[i]:
                     times[i] += 1
         r.. res[-1]

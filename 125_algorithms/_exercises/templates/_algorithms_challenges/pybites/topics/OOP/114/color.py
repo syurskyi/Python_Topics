@@ -3,7 +3,7 @@ _______ ___
 _______ u__.r..
 
 # PREWORK (don't modify): import colors, save to temp file and import
-tmp = __.getenv("TMP", "/tmp")
+tmp = __.g..("TMP", "/tmp")
 color_values_module = __.p...j..(tmp, 'color_values.py')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/color_values.py',
@@ -30,7 +30,7 @@ c_ Color:
         __ l..(hex_value) != 7 o. hex_value[0] != '#':
             r.. V...
         ___
-            rgb = t..(i..(hex_value.l..('#')[i:i+2], 16) ___ i __ (0, 2, 4))
+            rgb = t..(i..(hex_value.l..('#')[i:i+2], 16) ___ i __ (0, 2, 4
         ______ V..
             r.. V...
         r.. rgb

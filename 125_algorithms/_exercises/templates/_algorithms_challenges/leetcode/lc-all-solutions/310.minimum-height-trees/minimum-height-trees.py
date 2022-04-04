@@ -20,11 +20,11 @@ c_ Solution(o..
       farthest = N..
       w.... queue:
         level += 1
-        ___ i __ r..(0, l..(queue)):
+        ___ i __ r..(0, l..(queue:
           label, parent = queue.popleft()
           ___ child __ graph.g.. label, []
             __ child != parent:
-              queue.a..((child, label))
+              queue.a..((child, label
               __ level > maxLevel:
                 maxLevel = level
                 farthest = child

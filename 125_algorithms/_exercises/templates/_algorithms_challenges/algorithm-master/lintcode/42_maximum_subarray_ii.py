@@ -24,8 +24,8 @@ c_ Solution:
             r.. NOT_FOUND
 
         n = l..(nums)
-        left = get_max_sums(nums, r..(n))
-        right = get_max_sums(nums, r..(n - 1, -1, -1))
+        left = get_max_sums(nums, r..(n
+        right = get_max_sums(nums, r..(n - 1, -1, -1
 
         ans = _INF = f__('-inf')
 

@@ -16,7 +16,7 @@ c_ Solution:
 
         left = 1
         total_len = right = L[0]
-        ___ i __ r..(1, l..(L)):
+        ___ i __ r..(1, l..(L:
             __ L[i] > right:
                 right = L[i]
 
@@ -37,7 +37,7 @@ c_ Solution:
     ___ check_if_possible  L, size, max_pieces
         pieces = 0
 
-        ___ i __ r..(l..(L)):
+        ___ i __ r..(l..(L:
             pieces += L[i] // size
             __ pieces >= max_pieces:
                 r.. T..

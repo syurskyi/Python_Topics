@@ -41,7 +41,7 @@ c_ Solution:
         dfs(root, q, path2, [F..])
 
         i = 0
-        w.... i < m..(l..(path1), l..(path2)):
+        w.... i < m..(l..(path1), l..(path2:
             __ path1[i] != path2[i]:
                 r.. path1[i-1]
             i += 1

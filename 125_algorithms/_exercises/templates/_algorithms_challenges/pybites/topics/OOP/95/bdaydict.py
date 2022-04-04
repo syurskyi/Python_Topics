@@ -14,7 +14,7 @@ c_ BirthdayDict(d..
     ___ __setitem__  name, birthday
         ___ date __ v..
             __ date.month __ birthday.month a.. date.day __ birthday.day:
-                print(MSG.f..(name))
+                print(MSG.f..(name
         update({name: birthday})
 
 bd = BirthdayDict()

@@ -38,7 +38,7 @@ c_ Tree(o..
             tree.children.remove(child)
             __ child.label __ node:
                 _____
-            tree.children.a..(child.remove(node))
+            tree.children.a..(child.remove(node
         r.. tree
 
     ___ from_pov  from_node

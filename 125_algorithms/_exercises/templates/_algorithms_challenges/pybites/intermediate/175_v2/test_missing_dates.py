@@ -30,14 +30,14 @@ ___ _create_dates(missing, year=2019,  m.._2
 
 ?p__.m__.p.("missing, month", [
     ([2, 7, 11], 2),
-    (l..(r..(2, 12, 2)), 3),
+    (l..(r..(2, 12, 2, 3),
     ([14, 12], 3),
     ([2, 3, 7, 9], 4),
     ([1, 3, 7, 31], 5),  # expected = 3, 7, not start/end month
-    (l..(r..(1, 31)), 6),  # 0 missing
+    (l..(r..(1, 31, 6),  # 0 missing
 ])
 ___ test_get_missing_dates(missing, month
-    my_date_range = l..(_create_dates(missing,  m.._month))
+    my_date_range = l..(_create_dates(missing,  m.._month
     start, end = my_date_range[0].day, my_date_range[-1].day
 
     # order passed in arg should not matter
@@ -45,10 +45,10 @@ ___ test_get_missing_dates(missing, month
 
     # get days from return sequence
     actual = s..(d.day ___ d __
-                    get_missing_dates(my_date_range))
+                    get_missing_dates(my_date_range
 
     # filter out begin and end dates of range
     expected = s..(d ___ d __ missing __
-                      d n.. __ (start, end))
+                      d n.. __ (start, end
 
     ... actual __ expected

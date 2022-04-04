@@ -4,7 +4,7 @@ _______ __
 ___ has_timestamp(text
     """Return True if text has a timestamp of this format:
        2014-07-03T23:30:37"""
-    r.. b..(__.s..(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}', text))
+    r.. b..(__.s..(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}', text
 
 
 ___ is_integer(number
@@ -14,7 +14,7 @@ ___ is_integer(number
 
 ___ has_word_with_dashes(text
     """Returns True if text has one or more words with dashes"""
-    r.. b..(__.s..(r'\w+-\w+', text))
+    r.. b..(__.s..(r'\w+-\w+', text
 
 
 ___ remove_all_parenthesis_words(text
@@ -38,7 +38,7 @@ ___ remove_duplicate_spacing(text
 
 ___ has_three_consecutive_vowels(word
     """Returns True if word has at least 3 consecutive vowels"""
-    r.. b..(__.s..(r'[aeiou]{3,}', word))
+    r.. b..(__.s..(r'[aeiou]{3,}', word
 
 
 ___ convert_emea_date_to_amer_date(date

@@ -13,8 +13,8 @@ c_ Solution(o..
     """
 
     ___ dfs(root
-      __ n.. root: r.. (0, f__("-inf"))
+      __ n.. root: r.. (0, f__("-inf"
       (l, lm), (r, rm) = map(dfs, [root.left, root.right])
-      r.. (m..(root.val, root.val + m..(l, r)), m..(lm, rm, root.val + m..(l, r), root.val, root.val + l + r))
+      r.. (m..(root.val, root.val + m..(l, r, m..(lm, rm, root.val + m..(l, r), root.val, root.val + l + r
 
     r.. dfs(root)[1]

@@ -8,7 +8,7 @@ c_ Solution:
       r.. T..
     __ l..(board) __ 0:
       r.. F..
-    visited = [[0] * l..(board[0]) ___ i __ r..(0, l..(board))]
+    visited = [[0] * l..(board[0]) ___ i __ r..(0, l..(board]
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ dfs(i, j, board, visited, word, index
@@ -26,8 +26,8 @@ c_ Solution:
             visited[ni][nj] = 0
       r.. F..
 
-    ___ i __ r..(0, l..(board)):
-      ___ j __ r..(0, l..(board[0])):
+    ___ i __ r..(0, l..(board:
+      ___ j __ r..(0, l..(board[0]:
         visited[i][j] = 1
         __ dfs(i, j, board, visited, word, 0
           r.. T..

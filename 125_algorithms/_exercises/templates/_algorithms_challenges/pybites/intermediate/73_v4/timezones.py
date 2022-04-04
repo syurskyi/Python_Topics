@@ -10,6 +10,6 @@ ___ within_schedule(utc, *timezones
     __ any([tz n.. __ TIMEZONES ___ tz __ timezones]
         r.. V...
 
-    localized = [pytz.utc.localize(utc).astimezone(pytz.timezone(tz))
+    localized = [pytz.utc.localize(utc).astimezone(pytz.timezone(tz
                  ___ tz __ timezones]
     r.. a..([loc.hour __ MEETING_HOURS ___ loc __ localized])

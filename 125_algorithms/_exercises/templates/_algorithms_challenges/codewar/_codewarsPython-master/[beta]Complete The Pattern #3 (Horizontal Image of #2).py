@@ -9,4 +9,4 @@ ___ pattern(n
 
 
 ___ i __ (13,
-    print(pattern(i))    
+    print(pattern(i

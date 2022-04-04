@@ -6,7 +6,7 @@ ___ progressionCalc(calculations
         total = 0
         
         ___ x __ r..(c
-            total += (a + (b*x))
-        answer.a..(s..(total))
-    print(' '.j..(answer))
+            total += (a + (b*x
+        answer.a..(s..(total
+    print(' '.j..(answer
 progressionCalc(input

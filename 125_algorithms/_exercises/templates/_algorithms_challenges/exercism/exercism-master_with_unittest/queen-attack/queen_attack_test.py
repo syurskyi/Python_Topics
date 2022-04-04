@@ -54,19 +54,19 @@ c_ QueenAttackTest(unittest.TestCase
     # they should raise a ValueError with a meaningful error message.
     ___ test_invalid_position_board
         w__ assertRaises(V...
-            board((0, 0), (7, 8))
+            board((0, 0), (7, 8
 
     ___ test_invalid_position_can_attack
         w__ assertRaises(V...
-            can_attack((0, 0), (7, 8))
+            can_attack((0, 0), (7, 8
 
     ___ test_queens_same_position_board
         w__ assertRaises(V...
-            board((2, 2), (2, 2))
+            board((2, 2), (2, 2
 
     ___ test_queens_same_position_can_attack
         w__ assertRaises(V...
-            can_attack((2, 2), (2, 2))
+            can_attack((2, 2), (2, 2
 
 
 __ _____ __ _____

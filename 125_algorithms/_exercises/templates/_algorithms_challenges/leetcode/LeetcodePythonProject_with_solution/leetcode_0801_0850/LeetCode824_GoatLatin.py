@@ -10,10 +10,10 @@ c_ Solution(o..
         :rtype: str
         """
         s = S
-        vowels = s..(l..('aeiouAEIOU'))
+        vowels = s..(l..('aeiouAEIOU'
         arr = s.s..(' ')
         res = ''
-        ___ i __ r..(l..(arr)):
+        ___ i __ r..(l..(arr:
             __ n.. arr[i]:
                 _____
             word = arr[i]

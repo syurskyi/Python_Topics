@@ -20,7 +20,7 @@ c_ MagicDictionary:
         :rtype: void
         """
         ___ word __ words:
-            ___ i __ r..(l..(word)):
+            ___ i __ r..(l..(word:
                 key = '{0},{1}'.f..(word[:i], word[i + 1:])
 
                 __ key n.. __ words:
@@ -35,7 +35,7 @@ c_ MagicDictionary:
         :type word: str
         :rtype: bool
         """
-        ___ i __ r..(l..(word)):
+        ___ i __ r..(l..(word:
             key = '{0},{1}'.f..(word[:i], word[i + 1:])
 
             __ key n.. __ words:

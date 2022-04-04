@@ -12,7 +12,7 @@ c_ Solution:
             r.. ans
 
         n = l..(G)
-        V = ((-1, 0), (1, 0), (0, -1), (0, 1))
+        V = ((-1, 0), (1, 0), (0, -1), (0, 1
 
         heap = [(G[0][0], 0, 0)]
         visited = {(0, 0 T..}
@@ -31,6 +31,6 @@ c_ Solution:
                 __ (_x, _y) __ visited:
                     _____
                 visited[_x, _y] = T..
-                heappush(heap, (G[_x][_y], _x, _y))
+                heappush(heap, (G[_x][_y], _x, _y
 
         r.. ans

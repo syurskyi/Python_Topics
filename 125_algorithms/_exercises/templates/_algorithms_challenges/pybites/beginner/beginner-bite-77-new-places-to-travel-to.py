@@ -31,8 +31,8 @@ ___ uncommon_cities_solution_2(my_cities, other_cities
     r.. l..(uncommon)
 
 ___ uncommon_cities_solution_3(my_cities, other_cities
-    r..(l..([a ___ a __ my_cities + other_cities __ (a n.. __ my_cities) o. (a n.. __ other_cities)]))
+    r..(l..([a ___ a __ my_cities + other_cities __ (a n.. __ my_cities) o. (a n.. __ other_cities)]
 
-print(uncommon_cities_solution_1( 'A','B','C' ,  'A','B','C','D' ))
-print(uncommon_cities_solution_2( 'A', 'B', 'C' ,  'A', 'B', 'C', 'D' ))
-print(uncommon_cities_solution_3( 'A', 'B', 'C' ,  'A', 'B', 'C', 'D' ))
+print(uncommon_cities_solution_1( 'A','B','C' ,  'A','B','C','D'
+print(uncommon_cities_solution_2( 'A', 'B', 'C' ,  'A', 'B', 'C', 'D'
+print(uncommon_cities_solution_3( 'A', 'B', 'C' ,  'A', 'B', 'C', 'D'

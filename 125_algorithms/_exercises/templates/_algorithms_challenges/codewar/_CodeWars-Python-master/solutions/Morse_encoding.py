@@ -13,7 +13,7 @@ c_ Morse:
         ___ i __ r..(0, l..(code), 32
             num = code[i:i + 32].ljust(32, '0')
             result.a..(i..(num[1:], 2) -
-                          (0 __ num[0] __ '0' ____ Morse.neg))
+                          (0 __ num[0] __ '0' ____ Morse.neg
         r.. result
 
     @classmethod
@@ -91,7 +91,7 @@ c_ Morse:
         ' ': '0'}
 
 __ _____ __ _____
-    print(Morse.encode('hello world'))
+    print(Morse.encode('hello world'
     # print(Morse.encode('EEEEEEEIE'))
     # print(Morse.decode([-2004318070, 536870912]))
-    print(Morse.d.. [-1440552402, -1547992901, -1896993141, -1461059584]))
+    print(Morse.d.. [-1440552402, -1547992901, -1896993141, -1461059584]

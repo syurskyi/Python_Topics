@@ -19,7 +19,7 @@ c_ Solution:
                         hist[i][j] = 1 + hist[i - 1][j]
         res = 0
         ___ row __ hist:
-            res = m..(res, max_hist_rect(row))
+            res = m..(res, max_hist_rect(row
         r.. res
 
     ___ max_hist_rect  heights

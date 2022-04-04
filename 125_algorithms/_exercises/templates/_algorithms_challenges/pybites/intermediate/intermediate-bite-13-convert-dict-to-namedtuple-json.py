@@ -40,18 +40,18 @@ j = { "name": "PyBites",
 Blog = n..('Blog', 'name founders started tags location site')
 
 ___ dict2nt(dict_
-    b = Blog(dict_.g.. 'name'), dict_.g.. 'founders'), dict_.g.. 'started'), dict_.g.. 'tags'), dict_.g.. 'location'), dict_.g.. 'site'))
+    b = Blog(dict_.g.. 'name'), dict_.g.. 'founders'), dict_.g.. 'started'), dict_.g.. 'tags'), dict_.g.. 'location'), dict_.g.. 'site'
     r.. b
 
 ___ nt2json(nt
-    json.dump()
+    json.d.. )
 
 
 b = dict2nt(blog)
 # Q: How to serialize datetime object?
 # https://code-maven.com/serialize-datetime-object-as-json-in-python
 # https://stackoverflow.com/questions/11875770/how-to-overcome-datetime-datetime-not-json-serializable/36142844#36142844
-print(json.dumps(OrderedDict(b._asdict, default=s.., indent=4))
+print(json.dumps(OrderedDict(b._asdict, default=s.., indent=4
 
 
 ### ---------- PyBites original solution ---------------
@@ -65,5 +65,5 @@ ___ pyb_dict2nt(dict_
 
 
 ___ pyb_nt2json(nt
-    nt = nt._replace(started=s..(nt.started))
+    nt = nt._replace(started=s..(nt.started
     r.. json.dumps(nt._asdict

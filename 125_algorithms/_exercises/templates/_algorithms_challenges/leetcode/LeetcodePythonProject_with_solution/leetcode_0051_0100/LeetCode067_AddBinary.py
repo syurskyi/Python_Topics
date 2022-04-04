@@ -64,7 +64,7 @@ c_ Solution(o..
             ('1', '110'),
         ]
         ___ a, b __ testCases:
-            print('a: %s, b: %s' % (a, b))
+            print('a: %s, b: %s' % (a, b
             result = addBinary(a, b)
             print('result: %s' % result)
             print('-='*15 + '-')

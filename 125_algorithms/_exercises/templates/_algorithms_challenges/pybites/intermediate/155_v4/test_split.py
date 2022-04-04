@@ -19,7 +19,7 @@ expected_returns = (
 
 
 ?p__.m__.p.("arg, ret",
-                         z..(some_strings, expected_returns))
+                         z..(some_strings, expected_returns
 
 ___ test_split_words_and_quoted_text(arg, ret
     ... split_words_and_quoted_text(arg) __ ret

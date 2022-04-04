@@ -58,7 +58,7 @@ ___ _convert_struct_time_to_dt(stime
         dt_object = d__.s..(stime, f..)
         r.. dt_object.date()
     ____:
-        r.. d__.fromtimestamp(mktime(stime)).date()
+        r.. d__.fromtimestamp(mktime(stime.date()
 
 
 ___ get_feed_entries(feed=FEED
@@ -73,7 +73,7 @@ ___ get_feed_entries(feed=FEED
     ___ entry __ file.entries:
         date = _convert_struct_time_to_dt(entry.published)
         tag_list = [tag 'term' .l.. ___ tag __ entry.tags]
-        output.a..(Entry(date, entry.title, entry.link, tag_list))
+        output.a..(Entry(date, entry.title, entry.link, tag_list
     r.. output
 
 

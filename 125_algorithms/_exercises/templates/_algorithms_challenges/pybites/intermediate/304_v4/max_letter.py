@@ -20,14 +20,14 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     __ n.. isi..(text, s..
         r.. V...('bad input')
 
-    words = l.. m..(l.... x: __.sub(PAT, '', x.r..('_', '')),
+    words = l.. m..(l.... x: __.sub(PAT, '', x.r..('_', '',
                      text.s..(' ')))
     counts    # list
     ___ word __ words:
         folded = word.c..()
         count = C..([c ___ c __ folded __ c.i..])
         __ count.most_common(1
-            counts.a..((word, count))
+            counts.a..((word, count
 
     __ counts:
         result = m..(counts, key=l.... x: x[1].most_common(1)[0][1])

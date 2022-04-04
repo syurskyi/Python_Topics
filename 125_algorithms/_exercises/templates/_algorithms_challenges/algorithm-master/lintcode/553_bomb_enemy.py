@@ -88,8 +88,8 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. ans
 
-        ___ x __ r..(l..(grid)):
-            ___ y __ r..(l..(grid[0])):
+        ___ x __ r..(l..(grid:
+            ___ y __ r..(l..(grid[0]:
                 __ grid[x][y] __ EMPTY:
                     ans = m..(
                         ans,

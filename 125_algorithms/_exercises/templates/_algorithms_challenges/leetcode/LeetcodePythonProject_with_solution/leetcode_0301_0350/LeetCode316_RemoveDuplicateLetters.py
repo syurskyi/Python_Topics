@@ -17,7 +17,7 @@ c_ Solution(o..
             cnt[o..(c)-o..('a')] -= 1
             __ cnt[o..(c)-o..('a')] __ 0:
                 _____
-        r.. s[pos]+removeDuplicateLetters(s[pos+1:].r..(s[pos], ''))
+        r.. s[pos]+removeDuplicateLetters(s[pos+1:].r..(s[pos], ''
     
     ___ removeDuplicateLetters_another  s
         __ n.. s: r.. ''
@@ -46,9 +46,9 @@ c_ Solution(o..
             'cbacbcbc',
         ]
         ___ s __ testCases:
-            print('s: %s' % (s))
+            print('s: %s' % (s
             result = removeDuplicateLetters(s)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

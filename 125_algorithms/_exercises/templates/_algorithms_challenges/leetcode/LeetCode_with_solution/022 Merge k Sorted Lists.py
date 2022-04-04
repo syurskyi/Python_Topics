@@ -57,7 +57,7 @@ c_ Solution:
             r..
 
         result = lists[0]
-        ___ i __ x..(1, l..(lists)):
+        ___ i __ x..(1, l..(lists:
             result = mergeTwoLists(result, lists[i])
         r.. result
 
@@ -111,7 +111,7 @@ c_ Solution:
         heap    # list
         ___ head_node __ lists:
             __ head_node:
-                heapq.heappush(heap, (head_node.val, head_node))
+                heapq.heappush(heap, (head_node.val, head_node
 
         dummy = ListNode(0)
 
@@ -121,7 +121,7 @@ c_ Solution:
             cur.next = smallest_node
             cur = cur.next
             __ smallest_node.next:
-                heapq.heappush(heap, (smallest_node.next.val, smallest_node.next))
+                heapq.heappush(heap, (smallest_node.next.val, smallest_node.next
         r.. dummy.next
 
 __ _____ __ ____

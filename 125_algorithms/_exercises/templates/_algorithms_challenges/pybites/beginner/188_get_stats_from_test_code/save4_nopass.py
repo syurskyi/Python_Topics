@@ -10,7 +10,7 @@ ___ get_all_line_counts(data: s.. = DATA) __ l..:
        returning a list of ints"""
     values    # list
     ___ value __ DATA[DATA.columns[0]]:
-        values.a..(i..(value.s.. [0]))
+        values.a..(i..(value.s.. [0]
     r.. values
 
 

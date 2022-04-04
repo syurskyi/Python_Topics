@@ -13,7 +13,7 @@ c_ Solution(o..
         """
         _______ heapq
         k = K
-        workers = s..([f__(w)/q, q] ___ w, q __ z..(wage, quality))
+        workers = s..([f__(w)/q, q] ___ w, q __ z..(wage, quality
         res = f__('inf')
         qsum = 0
         heap    # list

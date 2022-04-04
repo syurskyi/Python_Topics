@@ -18,10 +18,10 @@ extreme = [-1, -2, -3, -4, -5, -1, -2, -3]
 
 
 ?p__.m__.p.("data, expected", [
-    (community, (100, 31, 74)),
-    (poverty, (13, 6, 9)),
-    (some, (50,  9, 12)),
-    (extreme, (0, 0, 0))
+    (community, (100, 31, 74,
+    (poverty, (13, 6, 9,
+    (some, (50,  9, 12,
+    (extreme, (0, 0, 0
 ])
 ___ test_funds(data, expected
     ... max_fund(data) __ expected

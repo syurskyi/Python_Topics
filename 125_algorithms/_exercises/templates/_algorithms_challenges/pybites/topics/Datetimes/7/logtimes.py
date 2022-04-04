@@ -5,7 +5,7 @@ _______ u__.r..
 SHUTDOWN_EVENT = 'Shutdown initiated'
 
 # prep: read in the logfile
-tmp = __.getenv("TMP", "/tmp")
+tmp = __.g..("TMP", "/tmp")
 logfile = __.p...j..(tmp, 'log')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/messages.log',
@@ -46,4 +46,4 @@ ___ time_between_shutdowns(loglines
     r.. end_time - start_time
 
 
-print(time_between_shutdowns(loglines))
+print(time_between_shutdowns(loglines

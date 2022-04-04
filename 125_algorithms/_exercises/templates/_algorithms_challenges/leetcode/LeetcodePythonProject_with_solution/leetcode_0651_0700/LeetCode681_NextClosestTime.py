@@ -10,8 +10,8 @@ c_ Solution(o..
         :rtype: str
         """
         arr = l..(time[:2]+time[3:])
-        hh = i..(''.j..(arr[:2]))
-        mm = i..(''.j..(arr[2:]))
+        hh = i..(''.j..(arr[:2]
+        mm = i..(''.j..(arr[2:]
         charSet = s..(arr)
         __ l..(charSet) __ 1:
             r.. time
@@ -31,9 +31,9 @@ c_ Solution(o..
         hh += carry
         __ hh >= 24:
             hh -= 24
-        res = s..(hh) __ l..(s..(hh))__2 ____ '0'+s..(hh)
+        res = s..(hh) __ l..(s..(hh__2 ____ '0'+s..(hh)
         res += ':'
-        res += s..(mm) __ l..(s..(mm))__2 ____ '0'+s..(mm)
+        res += s..(mm) __ l..(s..(mm__2 ____ '0'+s..(mm)
         ___ c __ res:
             __ c != ':' a.. c n.. __ charSet:
                 r.. F.., res

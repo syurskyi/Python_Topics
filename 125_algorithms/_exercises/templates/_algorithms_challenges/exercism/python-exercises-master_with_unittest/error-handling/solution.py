@@ -11,7 +11,7 @@ ___ handle_error_by_returning_none(input_data
 
 ___ handle_error_by_returning_tuple(input_data
     ___
-        r.. (T.., i..(input_data))
+        r.. (T.., i..(input_data
     ______ V..
         r.. (F.., N..)
 

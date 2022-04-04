@@ -62,10 +62,10 @@ c_ Solution(o..
         ___ matrix __ testCases:
             board = [l..(l) ___ l __ matrix]
             print('before')
-            print('%s' % (board))
+            print('%s' % (board
             solve(board)
             print('after')
-            print('%s' % (board))
+            print('%s' % (board
             print('-='*20+'-')
 
 __ _____ __ _____

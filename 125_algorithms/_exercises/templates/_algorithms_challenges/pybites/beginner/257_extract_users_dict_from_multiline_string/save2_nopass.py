@@ -14,5 +14,5 @@ ___ get_users(passwd: s..) __ d..:
         __ l..(p.s..(':')[4]) __ 0:
             values.a..('unknown')
         ____:
-            values.a..(p.s..(':')[4].r..(',', ''))
-    r.. d..(z..(keys, values))
+            values.a..(p.s..(':')[4].r..(',', ''
+    r.. d..(z..(keys, values

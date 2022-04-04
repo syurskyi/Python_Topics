@@ -18,7 +18,7 @@ c_ Solution(o..
     n = l..(s)
     ans = s[::-1] + s
     ansLen = 2 * l..(s)
-    ___ i __ r..(r..(0, l..(s) + 1)):
+    ___ i __ r..(r..(0, l..(s) + 1:
       newPal = s[i:][::-1] + s
       __ isPal(newPal) a.. n + l..(s) - i < ansLen:
         ansLen = n + l..(s) - i

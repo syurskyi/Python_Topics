@@ -13,9 +13,9 @@ c_ Solution(o..
                 arr[i] = arr[i] | (1 << (o..(c) - o..('a')))
         result = 0
         ___ i, word __ e..(words
-            ___ j __ r..(i+1, l..(words)):
+            ___ j __ r..(i+1, l..(words:
                 __ arr[i] & arr[j] __ 0:
-                    result = m..(result, l..(words[i])*l..(words[j]))
+                    result = m..(result, l..(words[i])*l..(words[j]
         r.. result
     
     ___ test
@@ -25,9 +25,9 @@ c_ Solution(o..
             ["a", "aa", "aaa", "aaaa"],
         ]
         ___ words __ testCases:
-            print('words: %s' % (words))
+            print('words: %s' % (words
             result = maxProduct(words)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

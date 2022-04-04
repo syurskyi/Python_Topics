@@ -43,10 +43,10 @@ c_ Graph(o..
             ____ type_ __ NODE:
                 __ l..(item) != 3:
                     r.. V...("NODE malformed")
-                nodes.a..(Node(item[1], item[2]))
+                nodes.a..(Node(item[1], item[2]
             ____ type_ __ EDGE:
                 __ l..(item) != 4:
                     r.. V...("EDGE malformed")
-                edges.a..(Edge(item[1], item[2], item[3]))
+                edges.a..(Edge(item[1], item[2], item[3]
             ____:
-                r.. V...("Unknown item {}".f..(item[0]))
+                r.. V...("Unknown item {}".f..(item[0]

@@ -1,10 +1,10 @@
 _______ csv
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ u__.r.. _______ u..
 
 data = 'https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv'
-tmp = Path(__.getenv("TMP", "/tmp"))
+tmp = P..(__.g..("TMP", "/tmp"
 stats = tmp / 'bites.csv'
 
 __ n.. stats.exists

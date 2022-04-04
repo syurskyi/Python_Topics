@@ -42,7 +42,7 @@ c_ Solution:
         ret = 0
         up_cnt = 0
         down_cnt = 0
-        ___ i __ r..(1, l..(A)):
+        ___ i __ r..(1, l..(A:
             __ down_cnt a.. A[i] >= A[i-1]:
                 up_cnt = 0
                 down_cnt = 0
@@ -84,7 +84,7 @@ c_ Solution:
         ret = 0
         l = 1
         expect_incr = T..
-        ___ i __ r..(1, l..(A)):
+        ___ i __ r..(1, l..(A:
             __ expect_incr:
                 __ A[i] > A[i-1]:
                     l += 1

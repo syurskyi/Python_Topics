@@ -1,11 +1,11 @@
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ u__.r.. _______ u..
 _______ json
 
 filename = "my_code.json"
 url = "https://bites-data.s3.us-east-2.amazonaws.com/{filename}"
-tmp = Path(__.getenv("TMP", "/tmp"))
+tmp = P..(__.g..("TMP", "/tmp"
 json_input_file = tmp / filename
 
 __ n.. json_input_file.exists
@@ -14,7 +14,7 @@ __ n.. json_input_file.exists
 
 ___ get_json_data
     w__ o.. json_input_file) __ file_in:
-        r.. json.load(file_in)
+        r.. json.l.. file_in)
 
 
 json_data = get_json_data()

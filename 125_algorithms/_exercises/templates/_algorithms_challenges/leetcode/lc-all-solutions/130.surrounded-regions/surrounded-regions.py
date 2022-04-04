@@ -35,10 +35,10 @@ c_ Solution:
       r..
     regions = s..([])
     n, m = l..(board), l..(board[0])
-    uf = UnionFind(l..(board[0]), l..(board))
+    uf = UnionFind(l..(board[0]), l..(board
     directions = {"u": (-1, 0), "d": (1, 0), "l": (0, -1), "r": (0, 1)}
-    ___ i __ r..(0, l..(board)):
-      ___ j __ r..(0, l..(board[0])):
+    ___ i __ r..(0, l..(board:
+      ___ j __ r..(0, l..(board[0]:
         __ board[i][j] __ 'X':
           _____
         ___ d __ ["d", "r"]:
@@ -46,19 +46,19 @@ c_ Solution:
           newi, newj = i + di, j + dj
           __ newi >= 0 a.. newi < l..(board) a.. newj >= 0 a.. newj < l..(board[0]
             __ board[newi][newj] __ "O":
-              uf.union((newi * m + newj, i * m + j))
+              uf.union((newi * m + newj, i * m + j
 
-    ___ i __ r..(0, l..(board)):
+    ___ i __ r..(0, l..(board:
       ___ j __ [0, l..(board[0]) - 1]:
         __ board[i][j] __ "O":
-          regions.add(uf.find(i * m + j))
+          regions.add(uf.find(i * m + j
 
-    ___ j __ r..(0, l..(board[0])):
+    ___ j __ r..(0, l..(board[0]:
       ___ i __ [0, l..(board) - 1]:
         __ board[i][j] __ "O":
-          regions.add(uf.find(i * m + j))
+          regions.add(uf.find(i * m + j
 
-    ___ i __ r..(0, l..(board)):
-      ___ j __ r..(0, l..(board[0])):
+    ___ i __ r..(0, l..(board:
+      ___ j __ r..(0, l..(board[0]:
         __ board[i][j] __ "O" a.. uf.find(i * m + j) n.. __ regions:
           board[i][j] = "X"

@@ -15,11 +15,11 @@ c_ PascalsTriangleTest(unittest.TestCase
 
     ___ test_is_triangle_true
         inp =  '1', '1 1', '1 2 1', '1 3 3 1', '1 4 6 4 1', '1 5 10 10 5 1'
-        assertTrue(is_triangle(inp))
+        assertTrue(is_triangle(inp
 
     ___ test_is_triangle_false
         inp =  '1', '1 1', '1 2 1', '1 4 4 1'
-        assertFalse(is_triangle(inp))
+        assertFalse(is_triangle(inp
 
     ___ test_row1
         ans = '1'

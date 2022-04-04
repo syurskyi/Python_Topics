@@ -51,7 +51,7 @@ c_ Solution:
         ___ e __ emails:
             local, domain = e.s..("@")
             local = stem(local)
-            s.add((local, domain))
+            s.add((local, domain
 
         r.. l..(s)
 

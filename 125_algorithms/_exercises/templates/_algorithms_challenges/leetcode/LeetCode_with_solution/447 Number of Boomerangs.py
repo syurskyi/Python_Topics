@@ -21,9 +21,9 @@ c_ Solution:
         :rtype: int
         """
         ret = 0
-        ___ i __ r..(l..(points)):
+        ___ i __ r..(l..(points:
             dist_cnt = C..()
-            ___ j __ r..(l..(points)):
+            ___ j __ r..(l..(points:
                 __ i != j:
                     d = distance(points[i], points[j])
                     dist_cnt[d] += 1
@@ -41,10 +41,10 @@ c_ Solution:
         :rtype: int
         """
         ret = 0
-        ___ i __ r..(l..(points)):
+        ___ i __ r..(l..(points:
             dist_cnt = C..()
             dist_lst    # list
-            ___ j __ r..(l..(points)):
+            ___ j __ r..(l..(points:
                 __ i != j:
                     d = distance(points[i], points[j])
                     dist_lst.a..(d)

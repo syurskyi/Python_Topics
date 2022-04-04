@@ -10,7 +10,7 @@ ___ is_anagram(word, candidate
     word_lowercase = word.l..
     candidate_lowercase = candidate.l..
     r.. (is_not_identical(word_lowercase, candidate_lowercase) a..
-            is_identical_when_sorted(word_lowercase, candidate_lowercase))
+            is_identical_when_sorted(word_lowercase, candidate_lowercase
 
 
 ___ is_not_identical(word, candidate

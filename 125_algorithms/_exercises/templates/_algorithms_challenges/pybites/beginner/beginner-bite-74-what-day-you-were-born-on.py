@@ -12,4 +12,4 @@ ___ weekday_of_birth_date(date
     r.. (ca__.d..[date.w..)
 
 d = d__.date(1984, 4, 4)
-print(weekday_of_birth_date(d))
+print(weekday_of_birth_date(d

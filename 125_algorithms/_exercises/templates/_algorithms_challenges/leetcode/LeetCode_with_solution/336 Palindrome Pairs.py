@@ -67,9 +67,9 @@ c_ Solution:
         ret    # list
         ___ idx, w __ e..(words
             cur = root
-            ___ i __ r..(l..(w)):
+            ___ i __ r..(l..(w:
                 # cur.children.get(w[i], None)  # error, pre-advancing the trie is unable to handle empty str
-                __ is_palindrome(w, i, l..(w)) a.. cur.word_idx __ n.. N.. a.. cur.word_idx != idx:
+                __ is_palindrome(w, i, l..(w a.. cur.word_idx __ n.. N.. a.. cur.word_idx != idx:
                     ret.a..([idx, cur.word_idx])
 
                 cur = cur.children.g.. w[i], N..)

@@ -14,7 +14,7 @@ ___ class_rosters(input_file
 
         ___ row __ data:
             _id = row[0]
-            ___ i __ r..(2,l..(row)):
+            ___ i __ r..(2,l..(row:
                 class_ = row[i]
                 __ class_:
                     class_section = class_.r.. ' - ')[0]

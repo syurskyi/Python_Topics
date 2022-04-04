@@ -4,7 +4,7 @@ ____ flatten _______ flatten
 ___ test_flatten_various_levels
     inp = [1, [2, 3], [4, 5, [6, 7, [8, 9, 10]]]]
     expected = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    ... l..(flatten(inp)) __ expected
+    ... l..(flatten(inp __ expected
 
 
 ___ test_flatten_various_levels_different_contant
@@ -12,7 +12,7 @@ ___ test_flatten_various_levels_different_contant
            [11, [12, 13], [14, [15, 16, [17, 18, [19, 20]]]]]]
     expected = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
                 14, 15, 16, 17, 18, 19, 20]
-    ... l..(flatten(inp)) __ expected
+    ... l..(flatten(inp __ expected
 
 
 ___ test_flatten_ints_and_chars
@@ -21,10 +21,10 @@ ___ test_flatten_ints_and_chars
            [4, [5, 6, [7, [8]]]]]
     expected =  'a', 'b', 1, 2, 3, 'c', 'd', 'e', 'f', 'g',
                 'h', 4, 5, 6, 7, 8]
-    ... l..(flatten(inp)) __ expected
+    ... l..(flatten(inp __ expected
 
 
 ___ test_works_with_tuple_as_well
     inp = [1, (2, 3), [(4, 5), [6, 7, [8, 9, 10]]]]
     expected = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    ... l..(flatten(inp)) __ expected
+    ... l..(flatten(inp __ expected

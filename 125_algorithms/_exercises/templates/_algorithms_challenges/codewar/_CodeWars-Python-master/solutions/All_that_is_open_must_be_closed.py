@@ -25,7 +25,7 @@ ___ is_balanced(source, caps
                 ____:
                     __ l..(stack) __ 0 o. stack.pop() != caps[i - 1]:
                         r.. F..
-    r.. (l..(stack) __ 0) a.. ((s..([v ___ k, v __ count.i..])) % 2 __ 0)
+    r.. (l..(stack) __ 0) a.. ((s..([v ___ k, v __ count.i..] % 2 __ 0)
 
 print(is_balanced("(Sensei says yes!)", "()") __ T..)
 print(is_balanced("(Sensei says no!", "()") __ F..)

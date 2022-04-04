@@ -7,7 +7,7 @@ c_ IntList(l..
         super().__init__(numbers)
 
     ___ _validate  numbers
-        __ isi..(numbers, (i.., f__, Decimal)):
+        __ isi..(numbers, (i.., f__, Decimal:
             numbers = [numbers]
         numbers = [i..(n) ___ n __ numbers __ r..(n, 0) __ i..(n)]
         __ n.. isi..(numbers, i..) a.. any(n.. isi..(x, i..) ___ x __ numbers

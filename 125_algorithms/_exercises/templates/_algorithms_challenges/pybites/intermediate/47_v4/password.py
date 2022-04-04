@@ -18,9 +18,9 @@ Has not been used before (use: used_passwords)
 ___ validate_password(password
 
     length = 6 <= l..(password) <= 12
-    digit = l..(__.f..(r'[0-9]', password)) >= 1
-    lower = l..(__.f..(r'[a-z]', password)) >= 1
-    upper = l..(__.f..(r'[A-Z]', password)) >= 1
+    digit = l..(__.f..(r'[0-9]', password >= 1
+    lower = l..(__.f..(r'[a-z]', password >= 1
+    upper = l..(__.f..(r'[A-Z]', password >= 1
     punc = any([c __ PUNCTUATION_CHARS ___ c __ password])
     new = password n.. __ used_passwords
 

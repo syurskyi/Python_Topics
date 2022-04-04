@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         hashset = s..()
         ___ w __ A:
-            hashset.add(getHash(w))
+            hashset.add(getHash(w
         r.. l..(hashset)
     
     ___ getHash  word

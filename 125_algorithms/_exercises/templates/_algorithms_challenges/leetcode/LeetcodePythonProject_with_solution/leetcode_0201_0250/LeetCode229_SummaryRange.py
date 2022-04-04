@@ -19,8 +19,8 @@ c_ Solution(o..
                 i+=1
             end = nums[i]
             __ end __ start:
-                result.a..('%s' % (start))
+                result.a..('%s' % (start
             ____:
-                result.a..('%s->%s' % (start, end))
+                result.a..('%s->%s' % (start, end
             i += 1
         r.. result

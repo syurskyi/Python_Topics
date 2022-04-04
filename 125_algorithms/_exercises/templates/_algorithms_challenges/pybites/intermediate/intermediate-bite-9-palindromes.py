@@ -16,7 +16,7 @@ _______ u__.r..
 _______ s__
 _______ __
 
-DICTIONARY = __.p...j..(__.getenv('temp'), 'dictionary_m_words.txt')
+DICTIONARY = __.p...j..(__.g..('temp'), 'dictionary_m_words.txt')
 u__.r...u..('http://bit.ly/2Cbj6zn', DICTIONARY)
 
 # How come it's a generator, if it doesn't have yield statement?
@@ -72,7 +72,7 @@ ___ get_longest_palindrome(words_ N..
 
     __ n.. words:
         words = load_dictionary()
-    palindromes = (word ___ word __ words __ is_palindrome(word))
+    palindromes = (word ___ word __ words __ is_palindrome(word
     r.. m..(palindromes, key=l..)
 
 print(get_longest_palindrome

@@ -19,4 +19,4 @@ ___ solution(arr
 ___ t __ r..(i..(input())):
     input()
     items = l.. m..(i.., input().s..()))
-    print(solution(items))
+    print(solution(items

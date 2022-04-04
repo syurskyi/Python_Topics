@@ -28,10 +28,10 @@ c_ Solution:
             right = T..
             __ root.left __ n.. N..
                 left = (max_node(root.left).val < root.val
-                        a.. isValidBST(root.left))
+                        a.. isValidBST(root.left
             __ root.right __ n.. N..
                 right = (min_node(root.right).val > root.val
-                         a.. isValidBST(root.right))
+                         a.. isValidBST(root.right
             __ left a.. right:
                 r.. T..
             r.. F..

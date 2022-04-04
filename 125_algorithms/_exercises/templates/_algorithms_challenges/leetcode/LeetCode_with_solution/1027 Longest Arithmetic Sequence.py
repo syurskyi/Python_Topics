@@ -40,8 +40,8 @@ c_ Solution:
 
         Let F[i][j] be the longest arith subseq ending at A[i] with step j
         """
-        F = d..(l....: d..(l....: 1))
-        ___ i __ r..(l..(A)):
+        F = d..(l....: d..(l....: 1
+        ___ i __ r..(l..(A:
             ___ j __ r..(i
                 delta = A[i] - A[j]
                 F[i][delta] = F[j][delta] + 1

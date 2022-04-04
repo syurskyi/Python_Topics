@@ -51,7 +51,7 @@ c_ Solution:
             F[i+1] = F[i] + a
 
         ret = -f__("inf")
-        ___ l, m __ ((L, M), (M, L)):
+        ___ l, m __ ((L, M), (M, L:
             ___ i __ r..(n + 1 - l
                 ___ j __ r..(i + l, n + 1 - m  # upper needs +1 here
                     cur = F[i + l] - F[i] + F[j + m] - F[j]

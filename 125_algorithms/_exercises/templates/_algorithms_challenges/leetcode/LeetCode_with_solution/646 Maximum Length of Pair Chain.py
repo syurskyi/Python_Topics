@@ -70,7 +70,7 @@ c_ Solution2:
         F[i] = max(F[j] + 1 if predicate A[i] A[j])
         O(N^2)
         """
-        pairs.s..(key=l.... x: t..(x))
+        pairs.s..(key=l.... x: t..(x
         n = l..(pairs)
         F = [1 ___ _ __ r..(n)]
         ___ i __ r..(n

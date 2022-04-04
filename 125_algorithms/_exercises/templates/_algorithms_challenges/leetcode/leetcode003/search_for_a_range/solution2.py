@@ -56,5 +56,5 @@ c_ Solution(o..
 a1 = [5, 7, 7, 8, 8, 10]
 a2 = [2, 2]
 s = Solution()
-print(s.searchRange(a1, 8))
-print(s.searchRange(a2, 2))
+print(s.searchRange(a1, 8
+print(s.searchRange(a2, 2

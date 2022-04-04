@@ -8,25 +8,25 @@ ____ house _______ rhyme, verse
 c_ VerseTest(unittest.TestCase
     ___ test_verse_0
         expected = 'This is the house that Jack built.'
-        assertEqual(expected, verse(0))
+        assertEqual(expected, verse(0
 
     ___ test_verse_1
         expected = 'This is the malt\n'\
                    'that lay in the house that Jack built.'
-        assertEqual(expected, verse(1))
+        assertEqual(expected, verse(1
 
     ___ test_verse_2
         expected = 'This is the rat\n'\
                    'that ate the malt\n'\
                    'that lay in the house that Jack built.'
-        assertEqual(expected, verse(2))
+        assertEqual(expected, verse(2
 
     ___ test_verse_3
         expected = 'This is the cat\n'\
                    'that killed the rat\n'\
                    'that ate the malt\n'\
                    'that lay in the house that Jack built.'
-        assertEqual(expected, verse(3))
+        assertEqual(expected, verse(3
 
     ___ test_verse_11
         expected = 'This is the horse and the hound and the horn\n'\
@@ -41,7 +41,7 @@ c_ VerseTest(unittest.TestCase
                    'that killed the rat\n'\
                    'that ate the malt\n'\
                    'that lay in the house that Jack built.'
-        assertEqual(expected, verse(11))
+        assertEqual(expected, verse(11
 
     ___ test_rhyme
         expected = 'This is the house that Jack built.\n\n'\

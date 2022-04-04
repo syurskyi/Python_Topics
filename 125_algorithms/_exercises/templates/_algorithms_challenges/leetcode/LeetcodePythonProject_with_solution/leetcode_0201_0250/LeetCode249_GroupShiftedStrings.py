@@ -23,7 +23,7 @@ c_ Solution(o..
         __ n.. s: r.. '-2'
         __ l..(s) __ 1: r.. '-1'
         res = ''
-        ___ i __ r..(1, l..(s)):
+        ___ i __ r..(1, l..(s:
             diff = o..(s[i])-o..(s[i-1])
             __ diff < 0:
                 diff += 26
@@ -70,9 +70,9 @@ c_ Solution(o..
             ["abc","bcd","acef","xyz","az","ba","a","z"],
         ]
         ___ strings __ testCases:
-            print('strs: %s' % (strings))
+            print('strs: %s' % (strings
             result = groupStrings(strings)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
     
 __ _____ __ _____

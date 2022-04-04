@@ -30,7 +30,7 @@ ___ sysinfo_scrape(output
 
     name = __.s..(r'\S+$',lines[1]).group()
     mapping 'Name'  = name
-    ___ i __ r..(2,l..(lines)):
+    ___ i __ r..(2,l..(lines:
         line = lines[i]
 
         result = __.s..(r'(\S+\s{0,1}\S+):(?!.*:)\s(.+)$',line)

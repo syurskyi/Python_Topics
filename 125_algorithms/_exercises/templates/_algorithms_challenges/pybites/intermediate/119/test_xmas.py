@@ -20,9 +20,9 @@ smaller_tree = """
 
 
 ___ test_height_xmas_tree
-    ... l..(generate_xmas_tree().s..('\n')) __ 10  # default arg
-    ... l..(generate_xmas_tree(5).s..('\n')) __ 5
-    ... l..(generate_xmas_tree(20).s..('\n')) __ 20
+    ... l..(generate_xmas_tree().s..('\n' __ 10  # default arg
+    ... l..(generate_xmas_tree(5).s..('\n' __ 5
+    ... l..(generate_xmas_tree(20).s..('\n' __ 20
 
 
 ___ test_num_stars_used

@@ -39,7 +39,7 @@ c_ Solution:
                 ___ d, w __ G[s].i..:
                     __ t + w < reach_time[d]:
                         reach_time[d] = t + w
-                        heapq.heappush(h, (t + w, d))
+                        heapq.heappush(h, (t + w, d
 
         ret = m..(reach_time[1:])  # notice reach_time[0] is dummy
         __ ret __ f__('inf'

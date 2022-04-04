@@ -25,7 +25,7 @@ c_ Solution(o..
                         __ matrix[x][y] != 0:
                             count += f__(matrix[x][y])
                         num += 1
-                tmp = i..(m__.f..(count/num))
+                tmp = i..(m__.f..(count/num
                 res[i][j] = tmp
         r.. res
     
@@ -49,10 +49,10 @@ c_ Solution(o..
         ]
         ___ matrix __ testCases:
             print('matrix:')
-            print('\n'.j..([s..(row) ___ row __ matrix]))
+            print('\n'.j..([s..(row) ___ row __ matrix]
             result = imageSmoother(matrix)
             print('result:')
-            print('\n'.j..([s..(row) ___ row __ result]))
+            print('\n'.j..([s..(row) ___ row __ result]
             print('-='*30+'-')
 
 __ _____ __ _____

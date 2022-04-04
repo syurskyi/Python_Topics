@@ -53,7 +53,7 @@ c_ Solution:
         end = N..
         ___ l __ lists:
             __ l __ n.. N..
-                heapq.heappush(h, (l.val, l))
+                heapq.heappush(h, (l.val, l
         w.... h:
             l = heapq.heappop(h)[1]
             __ res __ N..
@@ -64,5 +64,5 @@ c_ Solution:
                 end = end.next
             __ l.next __ n.. N..
                 l = l.next
-                heapq.heappush(h, (l.val, l))
+                heapq.heappush(h, (l.val, l
         r.. res

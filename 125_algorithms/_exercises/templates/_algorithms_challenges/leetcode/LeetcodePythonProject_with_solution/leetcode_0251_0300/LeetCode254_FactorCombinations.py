@@ -37,7 +37,7 @@ c_ Solution(o..
     ___ helper  result, item, n, start
         __ n <= 1:
             __ l..(item)>1:
-                result.a..(l..(item))
+                result.a..(l..(item
             r..
         
         ___ i __ r..(start, n+1
@@ -55,7 +55,7 @@ c_ Solution(o..
             23848713,
         ]
         ___ n __ testCases:
-            print('n: %s' % (n))
+            print('n: %s' % (n
             result = getFactors(n)
             print('result: %s' % result)
             print('-='*20+'-')

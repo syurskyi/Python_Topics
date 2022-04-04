@@ -37,7 +37,7 @@ c_ Solution(o..
             print('matrix: %s' % matrix)
             matrix = [l..(x) ___ x __ matrix]
             result = maximalSquare(matrix)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
     
 __ _____ __ _____

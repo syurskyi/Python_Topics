@@ -7,11 +7,11 @@ c_ Luhn:
         r.. s..(addends % 10
 
     ___ addends
-        r.. [addend(idx, i..(val)) ___ idx, val __
+        r.. [addend(idx, i..(val ___ idx, val __
                 e..(r..(s..(number)))]
 
     ___ addend  idx, val
-        r.. subtract_nine(idx, double_every_other(idx, val))
+        r.. subtract_nine(idx, double_every_other(idx, val
 
     ___ double_every_other  idx, val
         r.. val * 2 __ idx % 2 __ 1 ____ val
@@ -26,4 +26,4 @@ c_ Luhn:
     ___ create(cls, num
         ___ i __ r..(0, 10
             __ cls(i..(s..(num) + s..(i))).is_valid
-                r.. i..(s..(num) + s..(i))
+                r.. i..(s..(num) + s..(i

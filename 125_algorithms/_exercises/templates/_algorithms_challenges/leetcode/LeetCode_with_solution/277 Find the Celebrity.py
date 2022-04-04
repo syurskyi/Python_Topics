@@ -30,7 +30,7 @@ c_ Solution(o..
 
         celebrity = i
         ___ i __ x..(n
-            __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i)):
+            __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i:
                 r.. -1
 
         r.. celebrity
@@ -43,7 +43,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        V = s..(r..(n))
+        V = s..(r..(n
 
         w.... l..(V) > 1:
             a = V.pop()
@@ -58,7 +58,7 @@ c_ Solution(o..
 
         celebrity = V.pop()
         ___ i __ x..(n
-            __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i)):
+            __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i:
                 r.. -1
 
         r.. celebrity

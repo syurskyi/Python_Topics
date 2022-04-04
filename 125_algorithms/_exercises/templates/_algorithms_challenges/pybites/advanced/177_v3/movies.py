@@ -22,10 +22,10 @@ ___ explode(df, lst_cols, fill_value='', preserve_index=F..
         ___ col __ idx_cols},
         index=idx)
            .assign(**{col: np.concatenate(df.loc[lens > 0, col].values)
-                      ___ col __ lst_cols}))
+                      ___ col __ lst_cols}
     __ (lens __ 0).any
         res = (res.a..(df.loc[lens __ 0, idx_cols], s..=F..)
-               .fillna(fill_value))
+               .fillna(fill_value
     res = res.sort_index()
     __ n.. preserve_index:
         res = res.reset_index(drop=T..)
@@ -46,10 +46,10 @@ ___ group_by_genre(data=movie_excel_file
        descending (example output: https://bit.ly/2ILODva)
     """
     df = pd.read_excel(data, skiprows=7, usecols='C:D')
-    df = df.assign(genres=df.genres.s...s..('|'))
+    df = df.assign(genres=df.genres.s...s..('|'
     df = explode(df, 'genres')
     df = df[df.genres != '(no genres listed)'
-    df = df.groupby('genres').agg(movie=('movie','count'))
+    df = df.groupby('genres').agg(movie=('movie','count'
     df = df.sort_values(by= 'movie' , ascending=F..)
     r.. df
 

@@ -5,7 +5,7 @@ c_ Solution(o..
     :rtype: int
     """
     ans = 0
-    ___ i __ r..(1, l..(prices)):
+    ___ i __ r..(1, l..(prices:
       __ prices[i] > prices[i - 1]:
         ans += prices[i] - prices[i - 1]
     r.. ans

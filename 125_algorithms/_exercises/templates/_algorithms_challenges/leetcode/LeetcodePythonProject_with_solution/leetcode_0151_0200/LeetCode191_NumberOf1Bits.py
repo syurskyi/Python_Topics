@@ -20,9 +20,9 @@ c_ Solution(o..
             i..('00000000000000000000000000001011', 2),
         ]
         ___ n __ testCases:
-            print('n:      {0:032b}'.f..(n))
+            print('n:      {0:032b}'.f..(n
             result = hammingWeight(n)
-            print('result: {0:d}'.f..(result))
+            print('result: {0:d}'.f..(result
             print('-='*20+'-')
 
 __ _____ __ _____

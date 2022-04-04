@@ -30,10 +30,10 @@ c_ Solution(o..
     bst = IntvArray()
     ans    # list
     ___ i, intv __ e..(intervals
-      bst.a..((intv.start, i))
+      bst.a..((intv.start, i
     bst.s..()
     length = l..(bst)
     ___ intv __ intervals:
       idx = bisect.bisect_left(bst, intv.end)
-      ans.a..(bst.getIdx(idx))
+      ans.a..(bst.getIdx(idx
     r.. ans

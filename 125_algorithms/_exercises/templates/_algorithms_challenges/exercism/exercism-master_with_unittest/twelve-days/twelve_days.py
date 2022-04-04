@@ -41,7 +41,7 @@ c_ TwelveDays:
     @classmethod
     ___ head(cls, verse_num
         r.. ("On the %(cardinality)s day of Christmas my true love gave to "
-                "me" % ({"cardinality": cls.CARDINALS[verse_num]}))
+                "me" % ({"cardinality": cls.CARDINALS[verse_num]}
 
     $
     ___ tail(verse_num

@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ c __ s:
       ci = o..(c) - o..('a')
       letters[ci] += 1
-    ___ i __ r..(0, l..(s)):
+    ___ i __ r..(0, l..(s:
       ci = o..(s[i]) - o..('a')
       __ letters[ci] __ 1:
         r.. i

@@ -29,7 +29,7 @@ A[i][j] == 0 or A[i][j] == 1
 ____ t___ _______ L..
 
 
-dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
+dirs = ((0, -1), (0, 1), (-1, 0), (1, 0
 
 
 c_ Solution:
@@ -60,7 +60,7 @@ c_ Solution:
             ___ j __ r..(n
                 __ colors[i][j] __ 0:
                     visited[i][j] = T..
-                    q.a..((i, j))
+                    q.a..((i, j
 
         w.... q:
             cur_q    # list
@@ -69,7 +69,7 @@ c_ Solution:
                     __ n.. visited[I][J]:
                         __ colors[I][J] __ N..
                             visited[I][J] = T..   # pre-check, dedup
-                            cur_q.a..((I, J))
+                            cur_q.a..((I, J
                         ____ colors[I][J] __ 1:
                             r.. step
             step += 1

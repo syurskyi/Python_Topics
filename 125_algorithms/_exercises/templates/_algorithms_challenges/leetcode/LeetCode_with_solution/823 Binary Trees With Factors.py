@@ -40,7 +40,7 @@ c_ Solution:
         """
         A.s..()
         F    # dict
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             F[A[i]] = 1
             ___ j __ r..(i
                 __ A[i] % A[j] __ 0 a.. A[i] // A[j] __ F:

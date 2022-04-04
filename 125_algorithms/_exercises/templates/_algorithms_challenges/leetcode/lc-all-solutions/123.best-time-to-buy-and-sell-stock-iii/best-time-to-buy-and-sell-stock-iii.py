@@ -7,7 +7,7 @@ c_ Solution(o..
     buy1 = buy2 = f__("-inf")
     sell1 = sell2 = 0
 
-    ___ i __ r..(l..(prices)):
+    ___ i __ r..(l..(prices:
       sell1 = m..(prices[i] + buy1, sell1)
       buy1 = m..(buy1, -prices[i])
       sell2 = m..(sell2, prices[i] + buy2)

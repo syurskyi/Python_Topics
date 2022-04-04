@@ -25,7 +25,7 @@ ___ test_get_most_popular_talks_by_views(videos
     videos_copy = d..(videos)
     expected =  'T-TwcmT6Rcw', 'GBQAKldqgZs', 'ms29ZPUKxbU',
                 'zJ9z6Ge-vXs', 'WiQqqB9MlkA'
-    vids = l..(get_most_popular_talks_by_views(videos_copy))
+    vids = l..(get_most_popular_talks_by_views(videos_copy
     actual = [vid.id ___ vid __ vids[:5]]
     ... expected __ actual
 
@@ -33,7 +33,7 @@ ___ test_get_most_popular_talks_by_views(videos
 ___ test_get_most_popular_talks_by_like_ratio(videos
     # same here: let's use a local copy of videos
     videos_copy = d..(videos)
-    vids = l..(get_most_popular_talks_by_like_ratio(videos_copy))
+    vids = l..(get_most_popular_talks_by_like_ratio(videos_copy
     expected =  '8OoR-P6wE0M', 'h-38HZqanJs', 'C7ZhMnfUKIA',
                 'GmbaKdd6o6A', '3EXvR1shVFQ'
     actual = [vid.id ___ vid __ vids[:5]]

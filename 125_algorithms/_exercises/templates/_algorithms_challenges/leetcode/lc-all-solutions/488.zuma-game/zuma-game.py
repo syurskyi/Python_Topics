@@ -15,7 +15,7 @@ c_ Solution(o..
       __ l..(balls) __ 0:
         r.. f__("inf")
       res = f__("inf")
-      ___ i __ r..(l..(balls)):
+      ___ i __ r..(l..(balls:
         ___ j __ r..(l..(line) + 1
           __ j __ 0 a.. line[0] != balls[i]:
             _____
@@ -23,7 +23,7 @@ c_ Solution(o..
             _____
           ____ 0 < j < l..(line) a.. balls[i] != line[j - 1] a.. balls[i] != line[j]:
             _____
-          res = m..(res, dfs(line[:j] + balls[i] + line[j:], balls[:i] + balls[i + 1:], visited))
+          res = m..(res, dfs(line[:j] + balls[i] + line[j:], balls[:i] + balls[i + 1:], visited
       visited[line, balls] = res
       r.. res
 
@@ -35,7 +35,7 @@ c_ Solution(o..
         dp = [1] * l..(line)
         pre = line[-1]
         count = 1
-        ___ i __ r..(r..(l..(line) - 1)):
+        ___ i __ r..(r..(l..(line) - 1:
           __ line[i] __ pre:
             count += 1
           ____:
@@ -60,5 +60,5 @@ c_ Solution(o..
       r.. ans
 
     visited    # dict
-    ret = dfs(board, "".j..(s..(hand)), visited)
+    ret = dfs(board, "".j..(s..(hand, visited)
     r.. ret __ ret != f__("inf") ____ -1

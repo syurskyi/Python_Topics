@@ -17,4 +17,4 @@ ___ breaking_records(score
 
 n = i..(input
 score = l.. m..(i.., input().s..()))
-print(*breaking_records(score))
+print(*breaking_records(score

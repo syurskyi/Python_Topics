@@ -18,7 +18,7 @@ He rushed to his brother and removed each needle with painstaking love.
 After he finished, the elder brother apologised for treating him badly and promised to be better.
 The tree saw the change in the elder brother’s heart and gave them all the golden apples they could ever need.
 """
-characters = ('elder brother', 'younger brother', ('the tree', 'magical tree'))
+characters = ('elder brother', 'younger brother', ('the tree', 'magical tree'
 
 
 ___ test_make_character_index_with_default_args
@@ -29,7 +29,7 @@ ___ test_make_character_index_with_default_args
         [9, 10, 13, 14, 16, 17, 18, 20, 23, 25, 27, 29, 30, 31, 33, 35],
         [32, 34, 35]
     )
-    expected = d..(z..(keys, values))
+    expected = d..(z..(keys, values
     actual = make_character_index()
     ... actual __ expected
 
@@ -43,5 +43,5 @@ ___ test_make_character_index_with_other_args
     )
     actual = make_character_index(text=the_neetle_tree,
                                   characters=characters)
-    expected = d..(z..(keys, values))
+    expected = d..(z..(keys, values
     ... actual __ expected

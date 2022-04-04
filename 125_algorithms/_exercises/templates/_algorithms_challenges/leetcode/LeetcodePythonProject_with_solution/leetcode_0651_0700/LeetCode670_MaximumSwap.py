@@ -9,7 +9,7 @@ c_ Solution(o..
         :type num: int
         :rtype: int
         """
-        arr = l..(s..(num))
+        arr = l..(s..(num
         hashmap    # dict
         ___ i, c __ e..(arr
             hashmap[c] = i
@@ -22,7 +22,7 @@ c_ Solution(o..
                     _____
             __ flag:
                 _____
-        r.. i..(''.j..(arr))
+        r.. i..(''.j..(arr
     
     ___ test
         testCases = [

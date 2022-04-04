@@ -70,7 +70,7 @@ c_ Level:
             gotcha = 0
 
             ___ y __ RANGE:
-                __ spots.get((x, y)):
+                __ spots.get((x, y:
                     gotcha = 0
                     _____
 
@@ -80,7 +80,7 @@ c_ Level:
                     spots    # list
 
                     ___ i __ r..(y, y - gotcha, -1
-                        spots.a..((x, i))
+                        spots.a..((x, i
                         spots[x, i] = vehicle
 
                     vehicle.at_level = self

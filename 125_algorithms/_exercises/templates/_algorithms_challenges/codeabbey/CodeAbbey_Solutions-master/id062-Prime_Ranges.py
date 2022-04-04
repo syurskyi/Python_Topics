@@ -22,6 +22,6 @@ ___ primes_between
     a, b  i..(a), i..(b)
     primes  gen_primes(a, b)
     count  l..(s..(primes).s..
-    answer.a..(s..(count))
-  print(' '.j..(answer))
+    answer.a..(s..(count
+  print(' '.j..(answer
 primes_between()

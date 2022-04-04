@@ -19,7 +19,7 @@ c_ Solution:
             ans.a..(p.. | )
             r..
 
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             p...a..(nums[i])
             dfs(nums[:i] + nums[i + 1:], ans, p..)
             p...pop()

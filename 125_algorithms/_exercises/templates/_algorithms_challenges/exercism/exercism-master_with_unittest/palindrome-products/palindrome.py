@@ -17,7 +17,7 @@ c_ Palindromes:
     ___ palindromes(cls, max_factor, min_factor
         r.. [(cls.product(candidate), candidate) ___ candidate __
                 cls.candidates(max_factor, min_factor) __
-                cls.is_palindrome(cls.product(candidate))]
+                cls.is_palindrome(cls.product(candidate]
 
     $
     ___ candidates(max_factor, min_factor

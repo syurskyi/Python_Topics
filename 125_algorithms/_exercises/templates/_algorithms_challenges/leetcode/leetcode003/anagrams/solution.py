@@ -32,5 +32,5 @@ c_ Solution:
             c = chr(i)
             __ c __ d:
                 res.a..(c)
-                res.a..(s..(d[c]))
+                res.a..(s..(d[c]
         r.. ''.j..(res)

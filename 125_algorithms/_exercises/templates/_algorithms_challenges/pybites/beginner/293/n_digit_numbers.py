@@ -11,7 +11,7 @@ ___ n_digit_numbers(numbers: L..[T], n: i..) __ L..[i..]:
                 new_number = new_number[:n+1]
             ____:
                 new_number = new_number[:n]
-            new_numbers.a..(i..(new_number))
+            new_numbers.a..(i..(new_number
         print(new_numbers)
         r.. [number*(10**(n-l..(s..(number))))
                 __ number > 0 ____ number*(10**(n-l..(s..(number).r..('-',''))))

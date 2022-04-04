@@ -13,7 +13,7 @@ c_ Solution(o..
     tCount = [0] * 26
     p1 = 2903
     p2 = 29947
-    ___ i __ r..(0, l..(s)):
+    ___ i __ r..(0, l..(s:
       sCount[o..(s[i]) - o..('a')] += 1
       tCount[o..(t[i]) - o..('a')] += 1
 

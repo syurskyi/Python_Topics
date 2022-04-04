@@ -20,7 +20,7 @@ c_ Solution:
         __ start >= l..(A
             r..
 
-        ___ i __ r..(start, l..(A)):
+        ___ i __ r..(start, l..(A:
             __ i - 1 >= start a.. A[i] __ A[i - 1]:
                 _____
 

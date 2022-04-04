@@ -1,5 +1,5 @@
 ___ is_armstrong(n: i..) __ b..:
-    digit_count = l..(s..(n))
+    digit_count = l..(s..(n
     input_n = n
     s.. = 0
     w.... (n != 0

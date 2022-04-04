@@ -5,7 +5,7 @@ ___ filter_accents(text
       the passed in lowercased text string
    """
    accent_chars    # list
-   ___ i __ r..(l..(text)):
+   ___ i __ r..(l..(text:
       char = unicodedata.normalize("NFD", text[i]).encode("ascii", "ignore").d.. "utf-8")
 
       __ char.l.. __ text[i].l..:

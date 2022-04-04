@@ -29,7 +29,7 @@ c_ MinesweeperTest(unittest.TestCase
                "|1*22*2|",
                "|111111|",
                "+------+"]
-        assertEqual(out, board(inp))
+        assertEqual(out, board(inp
 
     ___ test_board2
         inp = ["+-----+",
@@ -46,7 +46,7 @@ c_ MinesweeperTest(unittest.TestCase
                "|12*4*|",
                "|1*3*2|",
                "+-----+"]
-        assertEqual(out, board(inp))
+        assertEqual(out, board(inp
 
     ___ test_board3
         inp = ["+-----+",
@@ -55,7 +55,7 @@ c_ MinesweeperTest(unittest.TestCase
         out = ["+-----+",
                "|1*2*1|",
                "+-----+"]
-        assertEqual(out, board(inp))
+        assertEqual(out, board(inp
 
     ___ test_board4
         inp = ["+-+",
@@ -72,7 +72,7 @@ c_ MinesweeperTest(unittest.TestCase
                "|1|",
                "| |",
                "+-+"]
-        assertEqual(out, board(inp))
+        assertEqual(out, board(inp
 
     ___ test_board5
         inp = ["+-+",
@@ -81,7 +81,7 @@ c_ MinesweeperTest(unittest.TestCase
         out = ["+-+",
                "|*|",
                "+-+"]
-        assertEqual(out, board(inp))
+        assertEqual(out, board(inp
 
     ___ test_board6
         inp = ["+--+",
@@ -92,7 +92,7 @@ c_ MinesweeperTest(unittest.TestCase
                "|**|",
                "|**|",
                "+--+"]
-        assertEqual(out, board(inp))
+        assertEqual(out, board(inp
 
     ___ test_board7
         inp = ["+--+",
@@ -103,7 +103,7 @@ c_ MinesweeperTest(unittest.TestCase
                "|**|",
                "|**|",
                "+--+"]
-        assertEqual(out, board(inp))
+        assertEqual(out, board(inp
 
     ___ test_board8
         inp = ["+---+",
@@ -116,7 +116,7 @@ c_ MinesweeperTest(unittest.TestCase
                "|*8*|",
                "|***|",
                "+---+"]
-        assertEqual(out, board(inp))
+        assertEqual(out, board(inp
 
     ___ test_board9
         inp = ["+-----+",
@@ -133,7 +133,7 @@ c_ MinesweeperTest(unittest.TestCase
                "|111  |",
                "|1*1  |",
                "+-----+"]
-        assertEqual(out, board(inp))
+        assertEqual(out, board(inp
 
     ___ test_different_len
         inp = ["+-+",

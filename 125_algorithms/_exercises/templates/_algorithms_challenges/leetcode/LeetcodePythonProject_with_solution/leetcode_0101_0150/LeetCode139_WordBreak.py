@@ -14,7 +14,7 @@ c_ Solution(o..
         wordDict = s..(wordDict)
         dp = [F..]*(l..(s)+1)
         dp[0] = T..
-        ___ i __ r..(l..(s)):
+        ___ i __ r..(l..(s:
             __ n.. dp[i]:
                 _____
             ___ word __ wordDict:

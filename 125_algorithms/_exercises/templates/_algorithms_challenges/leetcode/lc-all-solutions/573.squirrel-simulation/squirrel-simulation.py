@@ -20,5 +20,5 @@ c_ Solution(o..
 
     ret = f__("inf")
     ___ nut __ nuts:
-      ret = m..(ret, ans - dist(nut, tree) + dist(nut, squirrel))
+      ret = m..(ret, ans - dist(nut, tree) + dist(nut, squirrel
     r.. ret

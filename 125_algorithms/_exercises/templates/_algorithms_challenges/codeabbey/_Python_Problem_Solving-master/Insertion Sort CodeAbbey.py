@@ -5,7 +5,7 @@ temp = 0
 temp_ind    # list
 
 # traversing through all the elements of the list expect first.
-___ i __ r..(1,l..(x)):
+___ i __ r..(1,l..(x:
     #storing the current element in the temp variable 
     #to compare with element which are sorted
     temp = x[i]

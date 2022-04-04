@@ -17,7 +17,7 @@ c_ Solution(o..
             __ count __ 0:
                 res.a..('1'+makeLargestSpecial(S[i+1:j])+'0')
                 i = j+1
-        r.. ''.j..(s..(res, reverse=T..))
+        r.. ''.j..(s..(res, reverse=T..
     
     ___ test
         testCases = [

@@ -17,7 +17,7 @@ c_ Solution:
     ___ findLadders  A, B, D
         ans    # list
         __ (D __ N.. o. A __ N.. o. B __ N.. o.
-            l..(A) != l..(B)):
+            l..(A) != l..(B:
             r.. ans
 
         __ A n.. __ D:
@@ -63,7 +63,7 @@ c_ Solution:
             p...pop()
 
     ___ get_next_word  word, next_words
-        ___ i __ r..(l..(word)):
+        ___ i __ r..(l..(word:
             key = word[:i] + word[i + 1:]
             __ key n.. __ next_words[i]:
                 _____

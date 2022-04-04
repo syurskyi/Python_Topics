@@ -9,7 +9,7 @@ c_ Solution:
 
     ___ generate_paren_aux  left, right, cand, res
         __ left __ 0 a.. right __ 0:
-            res.a..(''.j..(cand))
+            res.a..(''.j..(cand
         ____:
             __ left <= right a.. left > 0:
                 cand.a..('(')

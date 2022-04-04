@@ -8,7 +8,7 @@ c_ Solution(o..
 
     ___ dfs(p.., n, ans
       __ l..(p..) __ n:
-        ans.a..(drawChess(p..))
+        ans.a..(drawChess(p..
         r..
 
       ___ i __ r..(n
@@ -18,18 +18,18 @@ c_ Solution(o..
           p...pop()
 
     ___ isValidQueen(p.., k
-      ___ i __ r..(l..(p..)):
+      ___ i __ r..(l..(p..:
         __ abs(k - p..[i]) __ abs(l..(p..) - i
           r.. F..
       r.. T..
 
     ___ drawChess(p..
       ret    # list
-      chess = [["."] * l..(p..) ___ _ __ r..(l..(p..))]
-      ___ i __ r..(0, l..(p..)):
+      chess = [["."] * l..(p..) ___ _ __ r..(l..(p..]
+      ___ i __ r..(0, l..(p..:
         chess[i][p..[i]] = "Q"
       ___ chs __ chess:
-        ret.a..("".j..(chs))
+        ret.a..("".j..(chs
       r.. ret
 
     dfs([], n, ans)

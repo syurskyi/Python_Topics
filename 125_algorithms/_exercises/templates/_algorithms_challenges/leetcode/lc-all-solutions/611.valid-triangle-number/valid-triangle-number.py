@@ -2,7 +2,7 @@ c_ Solution(o..
   ___ triangleNumber  nums
     ans = 0
     nums.s..()
-    ___ i __ r..(2, l..(nums)):
+    ___ i __ r..(2, l..(nums:
       start = 0
       end = i - 1
       w.... start < end:

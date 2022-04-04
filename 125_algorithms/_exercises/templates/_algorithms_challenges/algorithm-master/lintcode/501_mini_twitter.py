@@ -27,7 +27,7 @@ c_ MiniTwitter:
         tweets[user_id].a..((
             timestamp,
             Tweet.create(user_id, tweet_text),
-        ))
+
 
         r.. tweets[user_id][-1][1]
 

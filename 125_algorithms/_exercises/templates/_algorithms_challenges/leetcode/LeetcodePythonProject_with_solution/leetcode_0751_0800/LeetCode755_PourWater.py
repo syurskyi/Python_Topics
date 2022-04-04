@@ -24,7 +24,7 @@ c_ Solution(o..
                 heights[idx] += 1
                 V -= 1
                 _____
-            ___ i __ r..(K+1, l..(heights)):
+            ___ i __ r..(K+1, l..(heights:
                 __ heights[i] > heights[idx]:
                     _____
                 ____ heights[i] < heights[idx]:

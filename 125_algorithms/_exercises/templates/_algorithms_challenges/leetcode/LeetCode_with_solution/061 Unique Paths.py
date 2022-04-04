@@ -29,7 +29,7 @@ c_ Solution(o..
         """
         m -= 1
         n -= 1
-        r.. m__.factorial(m+n) / (m__.factorial(n) * m__.factorial(m))
+        r.. m__.factorial(m+n) / (m__.factorial(n) * m__.factorial(m
 
     ___ uniquePathsDP  m, n
         F = [[0 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]

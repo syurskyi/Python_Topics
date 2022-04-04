@@ -24,10 +24,10 @@ c_ Solution(o..
             ),
         ]
         ___ coins, amount __ testCases:
-            print('coins: %s' % (coins))
-            print('amount: %s' % (amount))
+            print('coins: %s' % (coins
+            print('amount: %s' % (amount
             result = coinChange(coins, amount)
-            print('result: %s' % (result))
+            print('result: %s' % (result
 
 __ _____ __ _____
     Solution().test()

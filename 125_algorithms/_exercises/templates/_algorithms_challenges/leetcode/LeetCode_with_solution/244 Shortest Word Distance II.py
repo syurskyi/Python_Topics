@@ -32,6 +32,6 @@ c_ WordDistance(o..
             idx = bisect_left(word_dict[word2], i)
             ___ nei __ (-1, 0
                 __ 0 <= idx+nei < l..(word_dict[word2]
-                    mini = m..(mini, abs(i-word_dict[word2][idx+nei]))
+                    mini = m..(mini, abs(i-word_dict[word2][idx+nei]
 
         r.. mini

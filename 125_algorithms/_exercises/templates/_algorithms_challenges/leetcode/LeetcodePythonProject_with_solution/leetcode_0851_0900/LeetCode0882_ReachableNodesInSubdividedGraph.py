@@ -19,7 +19,7 @@ c_ Solution(o..
         res = 0
         h    # list
         visited = [F..]*N
-        heapq.heappush(h, (-M, 0))
+        heapq.heappush(h, (-M, 0
         w.... h:
             cur = heapq.heappop(h)
             start = cur[1]

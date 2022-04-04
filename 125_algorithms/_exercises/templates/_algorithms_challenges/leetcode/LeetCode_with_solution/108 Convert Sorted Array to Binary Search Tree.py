@@ -19,7 +19,7 @@ c_ Solution:
         __ n.. num:
             r.. N..
 
-        mid = (0+l..(num))/2
+        mid = (0+l..(num/2
         left_subtree = sortedArrayToBST(num[0:mid])
         right_subtree = sortedArrayToBST(num[mid+1:])
 

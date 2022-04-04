@@ -47,7 +47,7 @@ c_ WordCountTests(unittest.TestCase
         assertMultiLineEqual(d.. '2a3b4c'), 'aabbbcccc')
 
     ___ test_combination
-        assertMultiLineEqual(d.. encode('zzz ZZ  zZ')), 'zzz ZZ  zZ')
+        assertMultiLineEqual(d.. encode('zzz ZZ  zZ', 'zzz ZZ  zZ')
 
 
 __ _____ __ _____

@@ -18,7 +18,7 @@ c_ Solution(o..
     
     ___ helper  low, high, l, r, curr, res
         __ l > r:
-            __ i..(low) <= i..(''.j..(curr)) <= i..(high
+            __ i..(low) <= i..(''.j..(curr <= i..(high
                 res[0] += 1
             r..
         ___ p __ pairs:

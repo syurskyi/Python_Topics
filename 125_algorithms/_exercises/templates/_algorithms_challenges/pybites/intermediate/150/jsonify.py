@@ -18,7 +18,7 @@ id,first_name,last_name,email
 
 ___ convert_to_json(members=members
     members_data    # list
-    ___ i, row __ e..(members.strip("\n").s..("\n")):
+    ___ i, row __ e..(members.strip("\n").s..("\n":
         __ i __ 0:
             row = row.s..(",")
             id_h, first_h, last_h, email_h = row[0], row[1], row[2], row[3]

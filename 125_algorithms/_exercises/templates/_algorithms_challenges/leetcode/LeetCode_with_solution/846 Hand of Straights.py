@@ -75,12 +75,12 @@ c_ Solution:
                 _____
 
             __ a __ h[0][1][-1]:
-                heapq.heappush(h, (a, [a]))
+                heapq.heappush(h, (a, [a]
             ____ a __ h[0][1][-1] + 1:
                 _, lst = heapq.heappop(h)
                 lst.a..(a)
                 __ l..(lst) < W:
-                    heapq.heappush(h, (a, lst))
+                    heapq.heappush(h, (a, lst
             ____:
                 r.. F..
 

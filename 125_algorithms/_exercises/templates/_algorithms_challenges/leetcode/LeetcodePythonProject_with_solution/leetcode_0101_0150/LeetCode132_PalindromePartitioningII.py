@@ -13,7 +13,7 @@ c_ Solution(o..
         __ n.. s: r.. 0
         n = l..(s)
         dp = [[F..]*n ___ _ __ r..(n)]
-        cuts = l..(r..(n))
+        cuts = l..(r..(n
         ___ i __ r..(n
             ___ j __ r..(i, -1, -1
                 __ s[i] __ s[j] a.. (i-j<=1 o. dp[j+1][i-1]
@@ -31,9 +31,9 @@ c_ Solution(o..
             'aca'
         ]
         ___ s __ testCases:
-            print('s: %s' % (s))
+            print('s: %s' % (s
             result = minCut(s)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
     
 __ _____ __ _____

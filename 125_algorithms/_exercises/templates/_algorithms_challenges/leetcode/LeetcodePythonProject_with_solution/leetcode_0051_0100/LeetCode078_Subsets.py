@@ -18,8 +18,8 @@ c_ Solution(o..
         r.. result
     
     ___ helper  nums, elem, start, result
-        result.a..(l..(elem))
-        ___ i __ r..(start, l..(nums)):
+        result.a..(l..(elem
+        ___ i __ r..(start, l..(nums:
             elem.a..(nums[i])
             helper(nums, elem, i+1, result)
             elem.pop()
@@ -29,9 +29,9 @@ c_ Solution(o..
             [1, 2, 3],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = subsets(nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
 
 __ _____ __ _____

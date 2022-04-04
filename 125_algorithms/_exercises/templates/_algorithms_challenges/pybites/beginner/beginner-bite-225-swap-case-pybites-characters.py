@@ -34,4 +34,4 @@ ___ convert_pybites_chars_pybites_solution(text
     r.. ''.j..(c.swapcase() __ c.l.. __ PYBITES ____ c
                    ___ c __ text)
 
-print(convert_pybites_chars(t))
+print(convert_pybites_chars(t

@@ -29,7 +29,7 @@ c_ Solution(o..
         __ n.. root:
             r..
         __ sumVal __ 0 a.. n.. root.left a.. n.. root.right:
-            result.a..(l..(elem))
+            result.a..(l..(elem
             r..
         __ root.left:
             elem.a..(root.left.val)
@@ -44,7 +44,7 @@ c_ Solution(o..
         root = TreeNode(5, TreeNode(4, TreeNode(11, TreeNode(7), TreeNode(2))), TreeNode(8, TreeNode(13), TreeNode(4, TreeNode(5), TreeNode(1))))
         sumVal = 22
         result = pathSum(root, sumVal)
-        print('result: %s' % (result))
+        print('result: %s' % (result
 
 __ _____ __ _____
     Solution().test()

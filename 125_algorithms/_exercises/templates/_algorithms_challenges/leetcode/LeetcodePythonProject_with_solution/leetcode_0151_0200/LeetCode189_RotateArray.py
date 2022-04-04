@@ -26,10 +26,10 @@ c_ Solution(o..
             ([1,2,3,4,5,6,7], 3),
         ]
         ___ nums, k __ testCases:
-            print('nums: %s' % (nums))
-            print('k: %s' % (k))
+            print('nums: %s' % (nums
+            print('k: %s' % (k
             rotate(nums, k)
-            print('after: %s' % (nums))
+            print('after: %s' % (nums
             print('-='*20+'-')
         
 __ _____ __ _____

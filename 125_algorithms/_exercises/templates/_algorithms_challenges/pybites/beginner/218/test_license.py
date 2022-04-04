@@ -8,7 +8,7 @@ ALPHABET = a.. + d..
 
 ___ _create_license
     r.. 'PB-' + '-'.j..(
-        [''.j..(r__.sample(ALPHABET, 8))
+        [''.j..(r__.sample(ALPHABET, 8
          ___ _ __ r..(4)]
     )
 
@@ -44,5 +44,5 @@ ___ test_invalid_license
 ___ test_valid_prefix
     license = "PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4"
     ... validate_license(license)
-    ... n.. validate_license(license.r..('PB', 'APB'))
-    ... n.. validate_license(license.r..('PB', 'COAPB'))
+    ... n.. validate_license(license.r..('PB', 'APB'
+    ... n.. validate_license(license.r..('PB', 'COAPB'

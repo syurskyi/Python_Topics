@@ -58,7 +58,7 @@ c_ Solution:
 
         size = 1
 
-        ___ i __ r..(1, l..(nums)):
+        ___ i __ r..(1, l..(nums:
             __ nums[i] __ nums[i - 1]:
                 _____
 

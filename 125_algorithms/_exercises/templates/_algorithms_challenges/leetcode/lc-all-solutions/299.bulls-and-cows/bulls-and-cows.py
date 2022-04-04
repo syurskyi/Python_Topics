@@ -11,7 +11,7 @@ c_ Solution(o..
     a = b = 0
     ds = C..()
     dg = C..()
-    ___ i __ r..(l..(secret)):
+    ___ i __ r..(l..(secret:
       s = secret[i]
       g = guess[i]
       __ secret[i] __ guess[i]:

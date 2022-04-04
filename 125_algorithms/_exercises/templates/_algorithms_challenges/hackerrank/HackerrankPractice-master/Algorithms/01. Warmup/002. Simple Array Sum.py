@@ -4,4 +4,4 @@
 
 n  i..(input
 arr  l.. m..(i.., input().s..()))
-print(s..(arr))
+print(s..(arr

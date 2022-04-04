@@ -25,7 +25,7 @@ ___ group(iterable, n
 
 
 
-    r.. l..(islice(iterable,0,l..(iterable),n))
+    r.. l..(islice(iterable,0,l..(iterable),n
 
 
 __ _____ __ _____

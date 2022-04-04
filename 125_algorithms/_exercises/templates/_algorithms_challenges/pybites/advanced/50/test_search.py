@@ -45,11 +45,11 @@ MOCK_ENTRIES = AttrDict({'entries':
 
 ?p__.m__.p.("arg, ret", [
     (d__(2017, 9, 12, 8, 50, 0).t.. ,
-     date y.._2017,  m.._9,  d.._12)),
+     date y.._2017,  m.._9,  d.._12,
     (d__(2017, 9, 8, 14, 30, 0).t.. ,
-     date y.._2017,  m.._9,  d.._8)),
+     date y.._2017,  m.._9,  d.._8,
     (d__(2016, 12, 19, 9, 26, 0).t.. ,
-     date y.._2016,  m.._12,  d.._19)),
+     date y.._2016,  m.._12,  d.._19,
 ])
 ___ test_convert_struct_time_to_dt(arg, ret
     ... _convert_struct_time_to_dt(arg) __ ret
@@ -64,13 +64,13 @@ ___ test_get_feed_entries(inp
     ... first.link __ 'https://pybit.es/twitter_digest_201808.html'
     expected =  'flask', 'python', 'regex', 'twitter'
     # allow list or set
-    ... s..(l..(first.tags)) __ expected
+    ... s..(l..(first.tags __ expected
 
     ... last.date __ date y.._2017,  m.._1,  d.._6)
     ... last.title __ 'Copy and Paste with Pyperclip'
     ... last.link __ 'https://pybit.es/pyperclip.html'
     expected =  'code', 'pybites', 'python', 'tips', 'tricks'
-    ... s..(l..(last.tags)) __ expected
+    ... s..(l..(last.tags __ expected
 
 
 ?p__.m__.p.("arg, ret", [

@@ -15,15 +15,15 @@ c_ Solution(o..
     ans = f__("-inf")
     ___ i __ r..(1, n
       lMax[i] = m..(lMax[i - 1], maxArray[i])
-    ___ i __ r..(r..(0, n - 1)):
+    ___ i __ r..(r..(0, n - 1:
       rMax[i] = m..(rMax[i + 1], maxArray[i])
     ___ i __ r..(n
       __ 0 < i < n - 1:
-        ans = m..(ans, abs(m..(lMax[i - 1], rMax[i + 1]) - minArray[i]))
+        ans = m..(ans, abs(m..(lMax[i - 1], rMax[i + 1]) - minArray[i]
       ____ i __ 0:
-        ans = m..(ans, abs(rMax[i + 1] - minArray[i]))
+        ans = m..(ans, abs(rMax[i + 1] - minArray[i]
       ____:
-        ans = m..(ans, abs(lMax[i - 1] - minArray[i]))
+        ans = m..(ans, abs(lMax[i - 1] - minArray[i]
     r.. ans
 
   # one pass
@@ -35,7 +35,7 @@ c_ Solution(o..
     ___ i __ r..(1, n
       head = arrays[i][0]
       tail = arrays[i][-1]
-      ans = m..(ans, abs(tail - minNum), abs(head - maxNum))
+      ans = m..(ans, abs(tail - minNum), abs(head - maxNum
       minNum = m..(head, minNum)
       maxNum = m..(tail, maxNum)
     r.. ans

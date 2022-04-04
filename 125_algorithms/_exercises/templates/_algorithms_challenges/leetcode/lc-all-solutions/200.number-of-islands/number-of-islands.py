@@ -16,8 +16,8 @@ c_ Solution(o..
         dfs(grid, newi, newj, visited)
       r.. T..
 
-    ___ i __ r..(0, l..(grid)):
-      ___ j __ r..(0, l..(grid[0])):
+    ___ i __ r..(0, l..(grid:
+      ___ j __ r..(0, l..(grid[0]:
         __ dfs(grid, i, j, visited
           ans += 1
     r.. ans

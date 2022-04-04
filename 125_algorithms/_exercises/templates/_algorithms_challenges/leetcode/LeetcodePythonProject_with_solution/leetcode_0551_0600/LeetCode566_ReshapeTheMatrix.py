@@ -45,12 +45,12 @@ c_ Solution(o..
         ]
         ___ nums, r, c __ testCases:
             print('nums:')
-            print('\n'.j..([s..(row) ___ row __ nums]))
+            print('\n'.j..([s..(row) ___ row __ nums]
             print('r: %s' % r)
             print('c: %s' % c)
             result = matrixReshape(nums, r, c)
             print('result:')
-            print('\n'.j..([s..(row) ___ row __ result]))
+            print('\n'.j..([s..(row) ___ row __ result]
             print('-='*30)
 
 __ _____ __ _____

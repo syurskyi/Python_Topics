@@ -2,13 +2,13 @@ _______ __
 _______ json
 ____ d__ _______ date
 _______ d__ __ dt
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ t___ _______ Dict, L..
 ____ u__.r.. _______ u..
 ____ dateutil.parser _______ p..
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 RATES_FILE = TMP / "exchangerates.json"
 
 __ n.. RATES_FILE.exists
@@ -75,7 +75,7 @@ ___ exchange_rates(
     
 
     w__ o.. RATES_FILE _ __ f:
-        data = json.load(f)
+        data = json.l.. f)
     __ (start_date < data 'start_at' ) o. (end_date > data 'end_at'
         r.. V...("Invalid dates")
     matching_dates = match_daily_rates(p..(start_date).date(),p..(end_date).date(),data 'rates' )

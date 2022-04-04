@@ -8,4 +8,4 @@ ___ repeated_string(s, n
 
 s = input()
 n = i..(input
-print(repeated_string(s, n))
+print(repeated_string(s, n

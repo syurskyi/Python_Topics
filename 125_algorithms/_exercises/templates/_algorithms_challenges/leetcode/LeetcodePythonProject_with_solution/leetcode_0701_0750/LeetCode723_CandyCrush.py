@@ -77,10 +77,10 @@ c_ Solution(o..
         ]
         ___ board __ testCases:
             print('board:')
-            print('\n'.j..([s..(row) ___ row __ board]))
+            print('\n'.j..([s..(row) ___ row __ board]
             result = candyCrush(board)
             print('result:')
-            print('\n'.j..([s..(row) ___ row __ result]))
+            print('\n'.j..([s..(row) ___ row __ result]
             print('-='*30+'-')
 
 __ _____ __ _____

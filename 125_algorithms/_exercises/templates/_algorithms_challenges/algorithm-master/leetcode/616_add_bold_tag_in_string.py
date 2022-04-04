@@ -53,7 +53,7 @@ c_ Solution:
             w.... right < n a.. is_bold[right]:
                 right += 1
 
-            ans.a..(TMPL.f..(s[left:right]))
+            ans.a..(TMPL.f..(s[left:right]
             left = right  # imply left' = left + 1
 
         r.. ''.j..(ans)

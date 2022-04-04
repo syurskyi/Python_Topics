@@ -51,7 +51,7 @@ c_ Solution:
             counter[w] += 1
 
         ___ w, c __ counter.i..:
-            heapq.heappush(h, Word(w, c))
+            heapq.heappush(h, Word(w, c
             __ l..(h) > k:
                 heapq.heappop(h)
 

@@ -44,5 +44,5 @@ c_ Solution(o..
         __ left __ n.. N.. a.. right __ n.. N..
             r.. (left.val __ right.val a..
                     _isSymmetric(left.left, right.right) a..
-                    _isSymmetric(left.right, right.left))
+                    _isSymmetric(left.right, right.left
         r.. F..

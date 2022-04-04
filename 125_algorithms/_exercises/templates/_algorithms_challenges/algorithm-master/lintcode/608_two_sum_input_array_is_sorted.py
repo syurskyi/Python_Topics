@@ -14,7 +14,7 @@ c_ Solution:
             r.. NOT_FOUND
 
         remaining    # dict
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             __ A[i] __ remaining:
                 r.. [
                     remaining[A[i]] + 1,

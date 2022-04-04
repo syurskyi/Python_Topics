@@ -23,7 +23,7 @@ ___ validateRecord(record
 ___ BuildTree(records
     parent_dict    # dict
     node_dict    # dict
-    ordered_id = s..((i.record_id ___ i __ records))
+    ordered_id = s..((i.record_id ___ i __ records
     ___ record __ records:
         validateRecord(record)
         parent_dict[record.record_id] = record.parent_id

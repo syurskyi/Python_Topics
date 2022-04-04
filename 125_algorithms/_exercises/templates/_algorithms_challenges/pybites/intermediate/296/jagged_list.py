@@ -15,4 +15,4 @@ ___ jagged_list(lst_of_lst: L..[L..[i..]], fillvalue: i.. = 0) __ L..[L..[i..]]:
 #lol = [[1, 2, 3], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2], [1, 2, 3, 4]]
 lol = [[0]]
 
-print(jagged_list(lol))
+print(jagged_list(lol

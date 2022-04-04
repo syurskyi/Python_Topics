@@ -37,7 +37,7 @@ c_ Solution(o..
         F    # dict
         pi    # dict
         A.s..()
-        ___ i __ x..(l..(A)):
+        ___ i __ x..(l..(A:
             F[i] = 1
             pi[i] = i
             ___ j __ x..(i

@@ -1,5 +1,5 @@
 _______ unittest
-____ c.. _______ Sequence
+____ c.. _______ S..
 ____ types _______ GeneratorType
 
 ____ grade_school _______ School
@@ -18,32 +18,32 @@ c_ SchoolTest(unittest.TestCase
 
     ___ test_add_student
         school.add("Aimee", 2)
-        assertCountEqual(school.grade(2), ("Aimee", ))
+        assertCountEqual(school.grade(2), ("Aimee",
 
     ___ test_add_more_students_in_same_class
         school.add("James", 2)
         school.add("Blair", 2)
         school.add("Paul", 2)
-        assertCountEqual(school.grade(2), ("James", "Blair", "Paul"))
+        assertCountEqual(school.grade(2), ("James", "Blair", "Paul"
 
     ___ test_add_students_to_different_grades
         school.add("Chelsea", 3)
         school.add("Logan", 7)
-        assertCountEqual(school.grade(3), ("Chelsea", ))
-        assertCountEqual(school.grade(7), ("Logan", ))
+        assertCountEqual(school.grade(3), ("Chelsea",
+        assertCountEqual(school.grade(7), ("Logan",
 
     ___ test_get_students_in_a_grade
         school.add("Franklin", 5)
         school.add("Bradley", 5)
         school.add("Jeff", 1)
-        assertCountEqual(school.grade(5), ("Franklin", "Bradley"))
+        assertCountEqual(school.grade(5), ("Franklin", "Bradley"
 
     ___ test_get_students_in_a_non_existant_grade
         assertCountEqual(school.grade(1), s..
 
     ___ test_sort_school
-        students = [(3, ("Kyle", )), (4, ("Christopher", "Jennifer", )),
-                    (6, ("Kareem", ))]
+        students = [(3, ("Kyle", , (4, ("Christopher", "Jennifer", ,
+                    (6, ("Kareem", ]
 
         ___ grade, students_in_grade __ students[::-1]:
             ___ student __ students_in_grade[::-1]:
@@ -53,7 +53,7 @@ c_ SchoolTest(unittest.TestCase
 
         # Attempts to catch false positives
         assertTrue(
-            isi..(result, Sequence) o.
+            isi..(result, S..) o.
             isi..(result, GeneratorType) o.
             callable(getattr(result, '__reversed__', F..)))
 

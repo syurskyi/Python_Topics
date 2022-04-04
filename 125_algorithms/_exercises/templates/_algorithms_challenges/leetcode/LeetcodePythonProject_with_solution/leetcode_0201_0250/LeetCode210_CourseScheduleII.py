@@ -39,10 +39,10 @@ c_ Solution(o..
             [2, [[1,0]]],
         ]
         ___ numCourses, prerequisites __ testCases:
-            print('numCourses: %s' % (numCourses))
-            print('prerequisites: %s' % (prerequisites))
+            print('numCourses: %s' % (numCourses
+            print('prerequisites: %s' % (prerequisites
             result = findOrder(numCourses, prerequisites)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

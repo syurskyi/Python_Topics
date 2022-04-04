@@ -31,9 +31,9 @@ c_ Solution(o..
         ]
         ___ grid __ testCases:
             grid = [[i..(x) ___ x __ l] ___ l __ grid]
-            print('grid: %s' % (grid))
+            print('grid: %s' % (grid
             result = minTotalDistance(grid)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20 + '-')
 
 __ _____ __ _____

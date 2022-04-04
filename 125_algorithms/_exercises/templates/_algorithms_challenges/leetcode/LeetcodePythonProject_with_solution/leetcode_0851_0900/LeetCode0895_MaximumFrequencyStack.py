@@ -15,7 +15,7 @@ c_ FreqStack(o..
         """
         size += 1
         hashmap[x] = hashmap.g.. x, 0) + 1
-        heapq.heappush(heap, (-hashmap[x], -size, x))
+        heapq.heappush(heap, (-hashmap[x], -size, x
 
     ___ pop
         """
@@ -100,7 +100,7 @@ c_ FreqStack_self(o..
             node0 = node.prev
             w.... node0 a.. (node0.freq > node.freq o.
                              (node0.freq __ node.freq a..
-                              node0.indexes[-1] > node.indexes[-1])):
+                              node0.indexes[-1] > node.indexes[-1]:
                 node0 = node0.prev
             __ node0 a.. node0 != node:
                 prevNode = node0.prev

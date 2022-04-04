@@ -3,11 +3,11 @@ results    # list
 
 ___ get_median(values
     diff    # list
-    avg = i..(s..(values)//l..(values))
+    avg = i..(s..(values)//l..(values
     ___ i __ values:
-        diff.a..(abs(i-avg))
+        diff.a..(abs(i-avg
     
-    med = values[diff.i.. m..(diff))]
+    med = values[diff.i.. m..(diff]
     results.a..(med)
 
 ___ i __ r..(amount_values

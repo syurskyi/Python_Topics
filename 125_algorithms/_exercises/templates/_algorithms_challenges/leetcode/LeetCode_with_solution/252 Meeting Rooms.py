@@ -19,7 +19,7 @@ c_ Solution:
         :type intervals: list[Interval]
         :rtype: bool
         """
-        intervals.s..(key=operator.attrgetter("start"))
+        intervals.s..(key=operator.attrgetter("start"
         ___ i __ x..(l..(intervals)-1
             __ intervals[i].end > intervals[i+1].start:
                 r.. F..

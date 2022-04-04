@@ -45,7 +45,7 @@ c_ Solution:
         popped = N..
         j = 0
         ___ e __ pre:
-            stk.a..(TreeNode(e))
+            stk.a..(TreeNode(e
             w.... stk a.. stk[-1].val __ post[j]:
                 popped = stk.pop()
                 j += 1

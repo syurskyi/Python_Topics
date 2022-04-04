@@ -29,7 +29,7 @@ c_ Minesweeper:
     ___ convert_square(cls, inp, y, x
         __ n.. cls.is_space(inp[y][x]
             r.. inp[y][x]
-        r.. s..(cls.output_of_neighbor_mines(inp, y, x))
+        r.. s..(cls.output_of_neighbor_mines(inp, y, x
 
     @classmethod
     ___ output_of_neighbor_mines(cls, inp, y, x
@@ -41,14 +41,14 @@ c_ Minesweeper:
         r.. l..(
             l..([neighbor ___ neighbor __ cls.all_neighbor_coords(
                 inp, y, x) __ cls.is_neighbor_a_mine(
-                inp, neighbor)]))
+                inp, neighbor)]
 
     # Checks if coords are within bounds then checks for is_mine
     @classmethod
     ___ is_neighbor_a_mine(cls, inp, neighbor
         y, x = neighbor[0], neighbor[1]
         r.. (0 < y < l..(inp) a.. 0 < x < l..(inp[0]) a..
-                cls.is_mine(inp[y][x]))
+                cls.is_mine(inp[y][x]
 
     # Generates list of tuples for all neighboring coords
     # (excluding current coord)
@@ -61,7 +61,7 @@ c_ Minesweeper:
     ___ valid(cls, inp
         r.. (cls.valid_len(inp) a..
                 cls.valid_border(inp) a..
-                cls.valid_squares(inp))
+                cls.valid_squares(inp
 
     # Tests if all rows are the same size
     @classmethod
@@ -71,7 +71,7 @@ c_ Minesweeper:
     @classmethod
     ___ valid_border(cls, inp
         r.. (cls.valid_middle_borders(inp) a..
-                cls.valid_first_and_last_borders(inp))
+                cls.valid_first_and_last_borders(inp
 
     @classmethod
     ___ valid_middle_borders(cls, inp
@@ -80,17 +80,17 @@ c_ Minesweeper:
     @classmethod
     ___ valid_middle_border(cls, row
         r.. (cls.is_vertical_edge(row[0]) a..
-                cls.is_vertical_edge(row[-1]))
+                cls.is_vertical_edge(row[-1]
 
     @classmethod
     ___ valid_first_and_last_borders(cls, inp
         r.. (cls.valid_first_or_last_border(inp[0]) a..
-                cls.valid_first_or_last_border(inp[-1]))
+                cls.valid_first_or_last_border(inp[-1]
 
     @classmethod
     ___ valid_first_or_last_border(cls, row
         r.. (cls.is_corner(row[0]) a.. cls.is_corner(row[-1]) a..
-                a..(cls.is_horizontal_edge(square) ___ square __ row[1:-1]))
+                a..(cls.is_horizontal_edge(square) ___ square __ row[1:-1]
 
     @classmethod
     ___ valid_squares(cls, inp
@@ -102,7 +102,7 @@ c_ Minesweeper:
                 cls.is_space(square) o.
                 cls.is_corner(square) o.
                 cls.is_vertical_edge(square) o.
-                cls.is_horizontal_edge(square))
+                cls.is_horizontal_edge(square
 
     @classmethod
     ___ valid_non_border(cls, square

@@ -23,9 +23,9 @@ ___ _cap_str_to_mln_float(cap
 
     cap = cap.l..('$')
     __ 'M' __ cap:
-        value = f__(cap.rstrip('M'))
+        value = f__(cap.rstrip('M'
     ____ 'B' __ cap:
-        value = f__(cap.rstrip('B')) * 1000
+        value = f__(cap.rstrip('B' * 1000
 
     r.. value
 
@@ -51,7 +51,7 @@ ___ get_stock_symbol_with_highest_cap
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
 
-    r.. m..(data,key=l.... x: _cap_str_to_mln_float(x 'cap' )) 'symbol' 
+    r.. m..(data,key=l.... x: _cap_str_to_mln_float(x 'cap'  'symbol'
 
 
 ___ get_sectors_with_max_and_min_stocks

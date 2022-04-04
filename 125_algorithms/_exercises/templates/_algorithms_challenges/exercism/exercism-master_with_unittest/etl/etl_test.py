@@ -8,13 +8,13 @@ c_ TransformTest(unittest.TestCase
         old = {1:  'WORLD' }
         expected = {'world': 1}
 
-        assertEqual(expected, etl.transform(old))
+        assertEqual(expected, etl.transform(old
 
     ___ test_transform_more_values
         old = {1:  'WORLD', 'GSCHOOLERS' }
         expected = {'world': 1, 'gschoolers': 1}
 
-        assertEqual(expected, etl.transform(old))
+        assertEqual(expected, etl.transform(old
 
     ___ test_more_keys
         old = {1:  'APPLE', 'ARTICHOKE' , 2:  'BOAT', 'BALLERINA' }
@@ -25,7 +25,7 @@ c_ TransformTest(unittest.TestCase
             'ballerina': 2
         }
 
-        assertEqual(expected, etl.transform(old))
+        assertEqual(expected, etl.transform(old
 
     ___ test_full_dataset
         old = {
@@ -47,7 +47,7 @@ c_ TransformTest(unittest.TestCase
             "z": 10
         }
 
-        assertEqual(expected, etl.transform(old))
+        assertEqual(expected, etl.transform(old
 
 
 __ _____ __ _____

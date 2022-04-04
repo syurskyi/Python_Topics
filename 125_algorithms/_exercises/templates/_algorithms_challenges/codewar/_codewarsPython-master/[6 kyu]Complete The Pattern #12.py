@@ -8,10 +8,10 @@ ___ pattern(n
     ___ i __ r..(1,n
         temp = pattern |
         temp[i-1] = temp[-i] = s..(i%10)
-        res.a..(''.j..(temp))
+        res.a..(''.j..(temp
     pattern[n-1] = s..(n%10)
-    res.a..(''.j..(pattern))
+    res.a..(''.j..(pattern
     res += res[n-2::-1]    
     r.. '\n'.j..(res)
 
-print(pattern(1))
+print(pattern(1

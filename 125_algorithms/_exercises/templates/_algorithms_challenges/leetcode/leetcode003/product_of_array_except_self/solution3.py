@@ -43,8 +43,8 @@ a3 = [1, 2, 3, 4]
 a4 = [2, 3, 4, 5]
 
 s = Solution()
-print(s.productExceptSelf(a0))
-print(s.productExceptSelf(a1))
-print(s.productExceptSelf(a2))
-print(s.productExceptSelf(a3))
-print(s.productExceptSelf(a4))
+print(s.productExceptSelf(a0
+print(s.productExceptSelf(a1
+print(s.productExceptSelf(a2
+print(s.productExceptSelf(a3
+print(s.productExceptSelf(a4

@@ -10,7 +10,7 @@ c_ Solution(o..
     w.... pos < l..(nums) - 1:
       dis = nums[pos]
       farthest = posToFarthest = 0
-      ___ i __ r..(pos + 1, m..(pos + dis + 1, bound)):
+      ___ i __ r..(pos + 1, m..(pos + dis + 1, bound:
         canReach = i + nums[i]
         __ i __ l..(nums) - 1:
           r.. ans + 1

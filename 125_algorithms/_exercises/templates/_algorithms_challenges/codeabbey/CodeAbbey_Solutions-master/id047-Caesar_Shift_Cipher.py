@@ -11,7 +11,7 @@ ___ encrypt(msg_count, key
         unencrypted_msg  raw_input().u..
         encrypted_msg  unencrypted_msg.translate(caesar_shift)
         answer.a..(encrypted_msg)
-    print(' '.j..(answer))
+    print(' '.j..(answer
 
 ___ decrypt(msg_count, key
     key  26 - key
@@ -24,7 +24,7 @@ ___ decrypt(msg_count, key
         unencrypted_msg  raw_input().u..
         encrypted_msg  unencrypted_msg.translate(caesar_shift)
         answer.a..(encrypted_msg)
-    print(' '.j..(answer))
+    print(' '.j..(answer
 
 ___ caesar_cipher
     encrypted_msg_count, shift_key  [i..(x) ___ x __ raw_input().s.. ]

@@ -39,7 +39,7 @@ c_ Solution:
 
     ___ dfs  remain_k, remain_n, cur, ret
         __ remain_k __ 0 a.. remain_n __ 0:
-            ret.a..(l..(cur))
+            ret.a..(l..(cur
             r..
 
         # check max and min reach

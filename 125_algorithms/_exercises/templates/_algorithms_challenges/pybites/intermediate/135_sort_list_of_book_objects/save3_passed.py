@@ -37,8 +37,8 @@ ___ sort_books_by_first_authors_last_name(books=books
 
 
 ___ sort_books_by_number_of_page(books=books
-    r.. s..(books, key=attrgetter('pages'))
+    r.. s..(books, key=attrgetter('pages'
 
 
 ___ sort_books_by_published_date(books=books
-    r.. s..(books, key=attrgetter('published'))
+    r.. s..(books, key=attrgetter('published'

@@ -11,7 +11,7 @@ ___ i __ guess:
     bull_count  0
     res  ''
     #look for the index , if the numbers of the real number and guess number positions are same
-    ___ j __ r..(l..(i)):
+    ___ j __ r..(l..(i:
         __ i[j] __ n:
             bull  T..
             __ i[j] __ n[j]:

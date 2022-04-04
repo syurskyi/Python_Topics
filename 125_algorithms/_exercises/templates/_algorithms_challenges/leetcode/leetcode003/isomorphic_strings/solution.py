@@ -44,7 +44,7 @@ c_ Solution(o..
 
 s = Solution()
 f = s.isIsomorphic
-print(f('ab', 'aa'))
-print(f('egg', 'add'))
-print(f('foo', 'bar'))
-print(f('paper', 'title'))
+print(f('ab', 'aa'
+print(f('egg', 'add'
+print(f('foo', 'bar'
+print(f('paper', 'title'

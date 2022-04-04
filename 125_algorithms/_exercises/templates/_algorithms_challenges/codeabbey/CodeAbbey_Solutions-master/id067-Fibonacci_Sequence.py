@@ -8,6 +8,6 @@ ___ fibonacci_search(amount
                         a  b
                         b  c
                         count + 1
-                answer.a..(s..(count))
-        print(' '.j..(answer))
+                answer.a..(s..(count
+        print(' '.j..(answer
 fibonacci_search(input

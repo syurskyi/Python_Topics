@@ -25,7 +25,7 @@ ___ climbingLeaderboard(leaderboard, aliceScores
 ___ createRankings(leaderboard
     rankings = [1]
     rank = 1
-    ___ i __ r..(1, l..(leaderboard)):
+    ___ i __ r..(1, l..(leaderboard:
         __ leaderboard[i] < leaderboard[i - 1]:
             rank += 1
         rankings.a..(rank)

@@ -9,6 +9,6 @@ ___ get_x_next(A,C,M,X0,N
 
 ___ i __ r..(amount_values
     A,C,M,X0,N = map(i.., input().s..
-    results.a..(get_x_next(A,C,M,X0,N))
+    results.a..(get_x_next(A,C,M,X0,N
 
 print(*results)

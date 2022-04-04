@@ -45,14 +45,14 @@ ___ top_python_questions(url=cached_so_url
         __ number.e.. 'm'
             vi_true.a..(f__(number[:-1]) * 1_000_000)
         __ number __ '0':
-            vi_true.a..(f__(number))
+            vi_true.a..(f__(number
 
-    final = l..(z..(q, vo, vi_true))
+    final = l..(z..(q, vo, vi_true
     output1    # list
     output2    # list
     ___ question, vote, view __ final:
         __ view >= 1_000_000:
             output1.a..(question)
-            output2.a..(i..(vote))
+            output2.a..(i..(vote
 
-    r.. s..(l..(z..(output1, output2)), key=l.... x :x[1], r.._T..
+    r.. s..(l..(z..(output1, output2, key=l.... x :x[1], r.._T..

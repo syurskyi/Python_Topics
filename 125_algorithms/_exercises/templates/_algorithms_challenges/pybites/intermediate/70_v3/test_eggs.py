@@ -10,9 +10,9 @@ ___ test_iterator_type
 
 ___ test_len_iterator_is_limit_input_arg
     ec = EggCreator(2)
-    ... l..(l..(ec)) __ 2
+    ... l..(l..(ec __ 2
     ec = EggCreator(5)
-    ... l..(l..(ec)) __ 5
+    ... l..(l..(ec __ 5
 
 
 ___ test_call_next_on_iterator

@@ -22,5 +22,5 @@ c = s..(l..(s.. m..(i.., input().s..()))))
 
 ans = 0
 ___ i __ s..(b
-    ans += binary_search_last(a, i, 0, l..(a)) * binary_search_last(c, i, 0, l..(c))
+    ans += binary_search_last(a, i, 0, l..(a * binary_search_last(c, i, 0, l..(c
 print(ans)

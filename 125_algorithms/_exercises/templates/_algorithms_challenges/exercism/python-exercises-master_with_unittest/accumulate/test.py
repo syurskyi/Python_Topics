@@ -13,14 +13,14 @@ c_ AccumulateTest(unittest.TestCase
 
     ___ test_divmod
         assertEqual(
-            accumulate([10, 17, 23], l.... x: divmod(x, 7)),
+            accumulate([10, 17, 23], l.... x: divmod(x, 7,
             [(1, 3), (2, 3), (3, 2)])
 
     ___ test_composition
         inp = [10, 17, 23]
         assertEqual(
             accumulate(
-                accumulate(inp, l.... x: divmod(x, 7)),
+                accumulate(inp, l.... x: divmod(x, 7,
                 l.... x: 7 * x[0] + x[1]), inp)
 
     ___ test_capitalize
@@ -32,7 +32,7 @@ c_ AccumulateTest(unittest.TestCase
         out = [['a1', 'a2', 'a3' ,  'b1', 'b2', 'b3' ,  'c1', 'c2', 'c3']]
         assertEqual(
             accumulate(
-                inp, l.... x: accumulate(l..('123'), l.... y: x + y)), out)
+                inp, l.... x: accumulate(l..('123'), l.... y: x + y, out)
 
 
 __ _____ __ _____

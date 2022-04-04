@@ -39,7 +39,7 @@ c_ SnakeGame(o..
     __ ni < 0 o. ni >= height o. nj < 0 o. nj >= width:
       r.. -1
 
-    snake.appendleft((ni, nj))
+    snake.appendleft((ni, nj
 
     __ food a.. [ni, nj] __ food[0]:
       score += 1

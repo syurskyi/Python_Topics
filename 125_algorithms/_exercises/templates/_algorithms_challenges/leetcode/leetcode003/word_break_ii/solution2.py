@@ -47,5 +47,5 @@ c_ Solution(o..
 s1 = "catsanddog"
 d1 = ["cat", "cats", "and", "sand", "dog"]
 s = Solution()
-print(s.wordBreak(s1, d1))
-print(s.wordBreak('leetcode',  'leet', 'code' ))
+print(s.wordBreak(s1, d1
+print(s.wordBreak('leetcode',  'leet', 'code'

@@ -22,12 +22,12 @@ c_ Solution:
         stk maintain a increasing stack from right to left
         """
         stk    # list
-        nums = l..(s..(num))
+        nums = l..(s..(num
         n = l..(nums)
         ___ i __ r..(n-1, -1, -1
             __ stk a.. stk[-1][1] >= nums[i]:  # only keep the rightmost duplicate
                 _____
-            stk.a..((i, nums[i]))
+            stk.a..((i, nums[i]
 
         ___ i __ r..(n
             w.... stk a.. stk[-1][0] <= i:
@@ -37,7 +37,7 @@ c_ Solution:
                 nums[i], nums[j] = nums[j], nums[i]
                 _____
 
-        r.. i..("".j..(nums))
+        r.. i..("".j..(nums
 
 
 __ _______ __ _______

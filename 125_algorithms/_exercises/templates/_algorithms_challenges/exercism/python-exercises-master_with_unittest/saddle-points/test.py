@@ -13,7 +13,7 @@ ____ saddle_points _______ saddle_points
 c_ SaddlePointTest(unittest.TestCase
     ___ test_one_saddle
         inp = [[9, 8, 7], [5, 3, 2], [6, 6, 7]]
-        assertEqual(saddle_points(inp), s..([(1, 0)]))
+        assertEqual(saddle_points(inp), s..([(1, 0)]
 
     ___ test_no_saddle
         assertEqual(saddle_points([[2, 1], [1, 2]]), s..

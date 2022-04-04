@@ -41,12 +41,12 @@ c_ Solution(o..
             'AAAAAAAAAAAA',
         ]
         ___ s __ testCases:
-            print('s: %s' % (s))
+            print('s: %s' % (s
             result = findRepeatedDnaSequences(s)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
-        print(encode('AAAAACCCCC'))
-        print(encode('CCCCCAAAAA'))
+        print(encode('AAAAACCCCC'
+        print(encode('CCCCCAAAAA'
 
 __ _____ __ _____
     Solution().test()

@@ -68,7 +68,7 @@ c_ Solution:
     ___ get_lics_size  A
         ans = size = 1
 
-        ___ i __ r..(1, l..(A)):
+        ___ i __ r..(1, l..(A:
             __ A[i] > A[i - 1]:
                 size += 1
             ____:

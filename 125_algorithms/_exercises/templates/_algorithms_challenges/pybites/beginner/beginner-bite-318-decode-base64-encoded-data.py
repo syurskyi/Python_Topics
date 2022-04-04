@@ -56,9 +56,9 @@ Jaclin,Tonge,3549852104724527"""
 
     decoded = base64.b..(encoded)
     # print(decoded)???
-    print(bytes.d.. decoded, 'ascii'))
+    print(bytes.d.. decoded, 'ascii'
     inp = bytes.d.. decoded, 'ascii')
-    print(t..(inp))
+    print(t..(inp
     result = csv.reader(inp.s..
     result = l..(result)
     r = result[1:]

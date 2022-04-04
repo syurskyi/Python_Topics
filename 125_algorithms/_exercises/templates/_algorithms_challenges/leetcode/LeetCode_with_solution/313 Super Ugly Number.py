@@ -60,14 +60,14 @@ c_ SolutionHeap(o..
         :rtype: int
         """
         ret = 1
-        h = [QueueWrapper(i, d..([v])) ___ i, v __ e..(primes)]
+        h = [QueueWrapper(i, d..([v] ___ i, v __ e..(primes)]
         dic = {e.idx: e ___ e __ h}
 
         heapq.heapify(h)
         ___ _ __ x..(n-1
             mini = heapq.heappop(h)
             ret = mini.q.popleft()
-            ___ i __ x..(mini.idx, l..(primes)):
+            ___ i __ x..(mini.idx, l..(primes:
                 dic[i].q.a..(ret*primes[i])
             heapq.heappush(h, mini)
 

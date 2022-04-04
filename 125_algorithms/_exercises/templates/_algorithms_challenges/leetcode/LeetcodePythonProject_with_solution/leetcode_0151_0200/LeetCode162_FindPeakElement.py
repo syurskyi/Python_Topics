@@ -32,9 +32,9 @@ c_ Solution(o..
             [2, 9, 3, 1, 0],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = findPeakElement(nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20 + '-')
 
 __ _____ __ _____

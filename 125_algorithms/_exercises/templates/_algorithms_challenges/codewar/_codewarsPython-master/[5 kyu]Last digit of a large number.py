@@ -20,4 +20,4 @@ ___ last_digit(n1, n2
         r.. res[n1][n2%l..(res[n1]) - 1]
 
 ___ i __ r..(0,5
-    print(last_digit(34,i))    
+    print(last_digit(34,i

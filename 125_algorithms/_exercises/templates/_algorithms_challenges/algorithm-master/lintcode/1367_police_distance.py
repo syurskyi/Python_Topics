@@ -19,7 +19,7 @@ c_ Solution:
                     ans[x][y] = -1
                 ____ matrix[x][y] __ POLICE:
                     ans[x][y] = 0
-                    queue.a..((x, y))
+                    queue.a..((x, y
 
         ___ x, y __ queue:
             ___ dx, dy __ (
@@ -37,6 +37,6 @@ c_ Solution:
                     _____
 
                 ans[_x][_y] = ans[x][y] + 1
-                queue.a..((_x, _y))
+                queue.a..((_x, _y
 
         r.. ans

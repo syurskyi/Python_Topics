@@ -22,13 +22,13 @@ c_ Solution(o..
     
     ___ dfs  words, elems, result, nextWords
         __ l..(elems) __ l..(words[0]
-            result.a..(l..(elems))
+            result.a..(l..(elems
             r..
         ___ word __ nextWords:
             elems.a..(word)
             __ l..(elems) < l..(words[0]
                 prefix = ''
-                ___ i __ r..(l..(elems)):
+                ___ i __ r..(l..(elems:
                     prefix += elems[i][l..(elems)]
                 candidates = wordsWithPrefix(prefix)
             ____:

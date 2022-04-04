@@ -12,7 +12,7 @@ c_ Solution(o..
         res.a..(p.. + [])
         r..
 
-      ___ i __ r..(0, l..(nums)):
+      ___ i __ r..(0, l..(nums:
         # if i > 0 and nums[i - 1] == nums[i]:
         #     continue
         __ i n.. __ visited:

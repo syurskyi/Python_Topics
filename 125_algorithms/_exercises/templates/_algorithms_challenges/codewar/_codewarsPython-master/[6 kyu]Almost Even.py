@@ -2,7 +2,7 @@ ___ splitInteger(num,parts
     mul,mod = divmod(num,parts)
     r.. [mul] * parts
 
-print(splitInteger(23,2))
+print(splitInteger(23,2
 
 
 #We need the ability to divide an unknown integer 

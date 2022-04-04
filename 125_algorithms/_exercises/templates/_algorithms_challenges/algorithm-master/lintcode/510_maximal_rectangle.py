@@ -106,7 +106,7 @@ c_ Solution:
                 ____:
                     H[j] = 0
 
-            ans = m..(ans, largestRectangleArea(H))
+            ans = m..(ans, largestRectangleArea(H
 
             # To remove the trick `0`
             H.pop()
@@ -124,7 +124,7 @@ c_ Solution:
         I    # list
         left = height = 0
 
-        ___ right __ r..(l..(H)):
+        ___ right __ r..(l..(H:
             w.... I a.. H[I[-1]] >= H[right]:
                 height = H[I.pop()]
                 left = I[-1] __ I ____ -1

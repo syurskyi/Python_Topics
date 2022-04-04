@@ -28,7 +28,7 @@ ___ common_words(sentence1: L..[s..], sentence2: L..[s..]) __ L..[s..]:
     """
     lower_s1 = [e.l.. ___ e __ sentence1 ]
     lower_s2 = [e.l.. ___ e __ sentence2 ]
-    result = l..(s..(lower_s1) & s..(lower_s2))
+    result = l..(s..(lower_s1) & s..(lower_s2
 
     r.. s..(result, key=l..)
 
@@ -49,5 +49,5 @@ sentence4 =  'The', 'more', 'read', 'the',
              'more', 'things', 'will', 'know'
 sentence5 =  'be', 'a', 'good', 'man'
 
-print(common_words(sentence1, sentence5))
+print(common_words(sentence1, sentence5
 

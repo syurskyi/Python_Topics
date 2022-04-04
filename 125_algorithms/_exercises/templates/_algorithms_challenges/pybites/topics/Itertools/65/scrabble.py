@@ -3,7 +3,7 @@ _______ __
 _______ u__.r..
 
 # PREWORK
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 DICT = 'dictionary.txt'
 DICTIONARY = __.p...j..(TMP, DICT)
 u__.r...u..(
@@ -46,8 +46,8 @@ ___ _get_permutations_draw(draw
     """Helper to get all permutations of a draw (list of letters), hint:
        use itertools.permutations (order of letters matters)"""
     permute_words_list    # list
-    ___ i __ r..(l..(draw)):
-        permute_words = l..(i...permutations(draw, i+1))
+    ___ i __ r..(l..(draw:
+        permute_words = l..(i...permutations(draw, i+1
         permute_words_list += permute_words
     r.. permute_words_list
 

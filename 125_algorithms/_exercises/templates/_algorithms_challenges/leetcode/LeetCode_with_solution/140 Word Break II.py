@@ -44,7 +44,7 @@ c_ Solution:
 
         dp[0].a..("dummy")
 
-        ___ i __ r..(l..(s)):
+        ___ i __ r..(l..(s:
             __ n.. dp[i]:
                 _____
 
@@ -69,7 +69,7 @@ c_ Solution:
         """
         # reached, build the result from cur_sentence
         __ cur_index __ 0:
-            result.a..(" ".j..(cur_sentence))
+            result.a..(" ".j..(cur_sentence
             r..
 
         # dfs

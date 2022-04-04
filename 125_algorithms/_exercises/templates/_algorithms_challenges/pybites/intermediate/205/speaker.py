@@ -1,12 +1,12 @@
 ____ codecs _______ ignore_errors
 ____ u__.r.. _______ u..
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 
 _______ gender_guesser.detector __ gender
 ____ bs4 _______ BeautifulSoup __ Soup
 
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 PYCON_HTML = TMP / "pycon2019.html"
 PYCON_PAGE = ('https://bites-data.s3.us-east-2.amazonaws.com/'
               'pycon2019.html')

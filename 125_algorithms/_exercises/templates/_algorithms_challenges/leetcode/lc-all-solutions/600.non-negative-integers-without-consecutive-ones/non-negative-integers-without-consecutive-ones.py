@@ -9,7 +9,7 @@ c_ Solution(o..
     A = [1 ___ _ __ r..(length)]  # ends with 0
     B = [1 ___ _ __ r..(length)]  # ends with 1
 
-    ___ i __ r..(1, l..(n)):
+    ___ i __ r..(1, l..(n:
       A[i] = A[i - 1] + B[i - 1]
       B[i] = A[i - 1]
     ans = A[-1] + B[-1]

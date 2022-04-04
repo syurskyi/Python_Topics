@@ -38,9 +38,9 @@ c_ Solution(o..
     ___ getNums  length
         res    # list
         num = 2
-        w.... l..(s..(num)) < length:
+        w.... l..(s..(num < length:
             num *= 2
-        w.... l..(s..(num)) __ length:
+        w.... l..(s..(num __ length:
             res.a..(num)
             num *= 2
         r.. res

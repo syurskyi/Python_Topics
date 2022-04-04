@@ -18,4 +18,4 @@ ___ count_triplets(arr, r
 
 n, r = map(i.., input().s..
 arr = l.. m..(i.., input().s..()))
-print(count_triplets(arr, r))
+print(count_triplets(arr, r

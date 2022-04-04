@@ -23,7 +23,7 @@ c_ Solution:
             ans.a..(p.. | )
             r..
 
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             """
             ignore same num
             """
@@ -64,7 +64,7 @@ c_ Solution:
             ans.a..(p.. | )
             r..
 
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             __ visited[i]:
                 _____
 

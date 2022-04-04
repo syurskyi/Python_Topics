@@ -35,7 +35,7 @@ c_ Solution:
         :rtype: list[]
         """
         input_lst = __.s..(r"(\D)", input)  # capturing parentheses
-        nums = map(i.., f.. l.... x: __.m..(r"\d+", x), input_lst))
+        nums = map(i.., f.. l.... x: __.m..(r"\d+", x), input_lst
         ops = f.. l.... x: __.m..(r"\D", x), input_lst)
         ret = dfs_eval(nums, ops)
         r.. ret
@@ -51,7 +51,7 @@ c_ Solution:
             right_vals = dfs_eval(nums[i+1:], ops[i+1:])
             ___ l __ left_vals:
                 ___ r __ right_vals:
-                    ret.a..(_eval(l, r, op))
+                    ret.a..(_eval(l, r, op
 
         r.. ret
 

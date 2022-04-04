@@ -35,7 +35,7 @@ ___ sort_books_by_len_of_title(books=books
     Expected last book in list:
     Automate the Boring Stuff with Python
     """
-    r.. s..(books,key=l.... x: l..(x.title))
+    r.. s..(books,key=l.... x: l..(x.title
 
 
 ___ sort_books_by_first_authors_last_name(books=books
@@ -63,4 +63,4 @@ ___ sort_books_by_published_date(books=books
     Expected last book in list:
     Python Interviews
     """
-    r.. s..(books,key=l.... x:d__.s..(x.published,"%Y-%m-%d"))
+    r.. s..(books,key=l.... x:d__.s..(x.published,"%Y-%m-%d"

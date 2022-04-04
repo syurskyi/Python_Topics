@@ -34,9 +34,9 @@ ___ parse_social_platforms_string
         
         values    # list
         ___ i __ r..(1,5
-            values.a..(result.group(i))
+            values.a..(result.group(i
         platform_name = values[0]
-        range_object = r..(i..(values[1]),i..(values[2]))
+        range_object = r..(i..(values[1]),i..(values[2]
         last = ''.j..(values[-1].s..
         regex = '^ ' + last + ' +$'
         r = __.c..(regex)

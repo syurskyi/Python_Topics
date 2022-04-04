@@ -37,8 +37,8 @@ c_ Solution(o..
     ___ test
         testCases = [
             [
-                TreeNode(1, TreeNode(3, TreeNode(5)), TreeNode(2)),
-                TreeNode(2, TreeNode(1, N.., TreeNode(4)), TreeNode(3, N.., TreeNode(7))),
+                TreeNode(1, TreeNode(3, TreeNode(5, TreeNode(2,
+                TreeNode(2, TreeNode(1, N.., TreeNode(4, TreeNode(3, N.., TreeNode(7))),
             ],
         ]
         ___ t1, t2 __ testCases:

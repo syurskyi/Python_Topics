@@ -35,9 +35,9 @@ c_ Solution(o..
             [10, 11, 12, 15],
         ]
         ___ heights __ testCases:
-            print('heights: %s' % (heights))
+            print('heights: %s' % (heights
             result = largestRectangleArea(heights)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
 
 __ _____ __ _____

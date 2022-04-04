@@ -38,7 +38,7 @@ c_ Solution(o..
     
     ___ test
         ___ n __ r..(5
-            print('n: %s' % (n))
+            print('n: %s' % (n
             result = totalNQueens(n)
             print('result: %s' % result)
             print('-='*15+'-')

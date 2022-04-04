@@ -22,7 +22,7 @@ c_ Solution(o..
             r.. T..
         ____:
             __ isBalanced(root.left) a.. isBalanced(root.right
-                r.. abs(depth(root.left) - depth(root.right)) <= 1
+                r.. abs(depth(root.left) - depth(root.right <= 1
             ____:
                 r.. F..
 
@@ -30,4 +30,4 @@ c_ Solution(o..
         __ root __ N..
             r.. -1
         ____:
-            r.. m..(depth(root.left), depth(root.right)) + 1
+            r.. m..(depth(root.left), depth(root.right + 1

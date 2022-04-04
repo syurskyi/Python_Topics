@@ -45,8 +45,8 @@ a3 = [4, 5, 6, 7, 0, 1, 2, 4]
 a5 = [1, 1]
 a4 = [1, 1, 1]
 s = Solution()
-print(s.findMin(a1))
-print(s.findMin(a2))
-print(s.findMin(a3))
-print(s.findMin(a4))
-print(s.findMin(a5))
+print(s.findMin(a1
+print(s.findMin(a2
+print(s.findMin(a3
+print(s.findMin(a4
+print(s.findMin(a5

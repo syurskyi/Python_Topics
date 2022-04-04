@@ -26,12 +26,12 @@ c_ Board:
 
     ___ same_diag
         r.. (abs(white_coords[0] - black_coords[0]) __
-                abs(white_coords[1] - black_coords[1]))
+                abs(white_coords[1] - black_coords[1]
 
     ___ valid_coords
         r.. (different_coords() a..
                 valid_coord(white_coords) a..
-                valid_coord(black_coords))
+                valid_coord(black_coords
 
     ___ different_coords
         r.. white_coords != black_coords

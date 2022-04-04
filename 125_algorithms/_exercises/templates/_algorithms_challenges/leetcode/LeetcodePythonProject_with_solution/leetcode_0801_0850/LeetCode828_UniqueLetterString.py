@@ -20,7 +20,7 @@ c_ Solution(o..
             hashmap[c] = l
         sumVal = 0
         ___ c, l __ hashmap.i..:
-            ___ i __ r..(l..(l)):
+            ___ i __ r..(l..(l:
                 __ i __ 0:
                     left = l[i]
                 ____:

@@ -2,7 +2,7 @@ _______ json
 _______ __
 ____ io _______ StringIO
 ____ base64 _______ b..
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ t___ _______ Dict, L.., Union
 
 _______ pandas __ pd  # type: ignore
@@ -10,7 +10,7 @@ _______ r__
 
 URL: s.. = "https://bites-data.s3.us-east-2.amazonaws.com/MonthlySales.csv"
 STATS: L..[s..] = ["sum", "mean", "max"]
-TMP: Path = Path(__.getenv("TMP", "/tmp")) / "MonthlySales.csv"
+TMP: P.. = P..(__.g..("TMP", "/tmp" / "MonthlySales.csv"
 
 
 ___ get_data(url: s..) __ Dict[s.., s..]:
@@ -29,7 +29,7 @@ ___ get_data(url: s..) __ Dict[s.., s..]:
         response.raise_for_status()
         data = json.loads(response.text)
         w__ TMP.o.. "w") __ tmp:
-            json.dump(data, tmp)
+            json.d.. data, tmp)
     r.. data
 
 
@@ -70,7 +70,7 @@ ___ summary_report(df: pd.DataFrame, stats: Union[L..[s..], N..] = STATS) __ N..
     df = df.c..
     df 'year'  = df.month.dt.year
     s = df.groupby( 'year' ).agg({'sales': stats}).__str__().s..('\n')[1:]
-    print('\n'.j..(s))
+    print('\n'.j..(s
 
 
 
@@ -112,7 +112,7 @@ ___ yearly_report(df: pd.DataFrame, year: i..) __ N..
     df 'month'  = df.month.dt.month
     df = df.groupby('year').get_group(year).set_index('month')
     print _*\n{year}')
-    print(df.to_string(columns= 'sales' ))
+    print(df.to_string(columns= 'sales'
 
 
 #uncomment the following for viewing/testing the reports/code

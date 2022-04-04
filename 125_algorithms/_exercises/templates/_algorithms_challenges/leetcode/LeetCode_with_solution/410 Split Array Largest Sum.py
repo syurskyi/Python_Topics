@@ -109,7 +109,7 @@ c_ SolutionTLE2:
             right = sums[hi] - sums[j]
             left = dfs(j, m - 1)
             # minimize the max
-            mini = m..(mini, m..(left, right))
+            mini = m..(mini, m..(left, right
 
         r.. mini
 
@@ -142,7 +142,7 @@ c_ SolutionTLE:
             left = sums[j] - sums[lo]
             right = dfs(nums, j, hi, m - 1)
             # minimize the max
-            mini = m..(mini, m..(left, right))
+            mini = m..(mini, m..(left, right
 
         r.. mini
 

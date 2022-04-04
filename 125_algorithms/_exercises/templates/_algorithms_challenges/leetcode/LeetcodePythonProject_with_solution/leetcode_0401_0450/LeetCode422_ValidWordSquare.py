@@ -9,7 +9,7 @@ c_ Solution(o..
         __ n.. words: r.. F..
         ___ i, word1 __ e..(words
             word2 = ''
-            ___ j __ r..(l..(word1)):
+            ___ j __ r..(l..(word1:
                 __ j >= l..(words
                     r.. F..
                 __ i >= l..(words[j]

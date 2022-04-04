@@ -20,7 +20,7 @@ c_ Solution(o..
     
     ___ helper  elem, result, start, n, k
         __ l..(elem) __ k:
-            result.a..(l..(elem))
+            result.a..(l..(elem
             r..
         ___ i __ r..(start, n+1
             elem.a..(i)
@@ -32,9 +32,9 @@ c_ Solution(o..
             (4, 2),
         ]
         ___ n, k __ testCases:
-            print('n: %s, k: %s' % (n, k))
+            print('n: %s, k: %s' % (n, k
             result = combine(n, k)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
 
 __ _____ __ _____

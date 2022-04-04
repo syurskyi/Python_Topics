@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: List[int]
         """
         _______ m__
-        l = i..(m__.sqrt(area))
+        l = i..(m__.sqrt(area
         w.... l < area:
             __ area%l __ 0:
                 r.. [m..(l, area/l), m..(l, area/l)]

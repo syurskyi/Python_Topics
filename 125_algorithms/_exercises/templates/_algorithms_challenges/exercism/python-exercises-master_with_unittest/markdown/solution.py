@@ -22,7 +22,7 @@ ___ check_headers(line
     pattern = '# (.*)'
     ___ i __ r..(6
         __ __.m..(pattern, line
-            r.. wrap(line[(i + 2], 'h' + s..(i + 1))
+            r.. wrap(line[(i + 2], 'h' + s..(i + 1
         pattern = '#' + pattern
     r.. line
 

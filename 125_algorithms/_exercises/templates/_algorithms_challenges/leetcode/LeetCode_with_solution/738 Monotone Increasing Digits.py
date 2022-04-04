@@ -35,7 +35,7 @@ c_ Solution:
                 pointer = i
                 d..[i - 1] -= 1
 
-        ___ i __ r..(pointer, l..(d..)):
+        ___ i __ r..(pointer, l..(d..:
             d..[i] = 9
 
         r.. i..("".j.. m..(s.., d..)))

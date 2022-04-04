@@ -9,8 +9,8 @@ c_ Solution:
         ans    # list
 
         ___ size __ r..(
-            m..(0, k - l..(a)),
-            m..(k, l..(b)) + 1
+            m..(0, k - l..(a,
+            m..(k, l..(b + 1
 
             res = merge(
                 get_max(a, k - size),
@@ -40,5 +40,5 @@ c_ Solution:
     ___ merge  a, b
         r.. [
             m..(a, b).pop(0)
-            ___ _ __ r..(l..(a) + l..(b))
+            ___ _ __ r..(l..(a) + l..(b
         ]

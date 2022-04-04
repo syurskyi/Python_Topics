@@ -14,7 +14,7 @@ ___ get_others(map_, r, c
     map_[r][c] = '#'
     nums = 0
 
-    ___ n_row,n_col __ ((r +1,c),(r -1,c),(r,c +1),(r,c-1)):
+    ___ n_row,n_col __ ((r +1,c),(r -1,c),(r,c +1),(r,c-1:
         in_bounds = 0 <= n_row < l..(map_) a.. 0 <= n_col < l..(map_[0])
         __ in_bounds a.. map_[n_row][n_col] __ 1:
             nums += get_others(map_,n_row,n_col)
@@ -42,8 +42,8 @@ ___ island_size(map_
 
 
     # your code here
-    ___ row __ r..(l..(map_)):
-        ___ col __ r..(l..(map_[0])):
+    ___ row __ r..(l..(map_:
+        ___ col __ r..(l..(map_[0]:
             __ map_[row][col] __ 1:
                 perimeter += get_others(map_,row,col)
 

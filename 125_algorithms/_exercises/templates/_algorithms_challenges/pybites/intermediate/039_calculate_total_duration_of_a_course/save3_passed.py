@@ -5,7 +5,7 @@ _______ u__.r..
 
 # getting the data
 COURSE_TIMES = __.p...j..(
-    __.getenv("TMP", "/tmp"),
+    __.g..("TMP", "/tmp"),
     'course_timings'
 )
 u__.r...u..(
@@ -35,7 +35,7 @@ ___ get_all_timestamps
         t = __.s..(r, t)
         __ t != N..
             t = t.group()
-            l.a..(__.sub(r'[\(\)]','', t))
+            l.a..(__.sub(r'[\(\)]','', t
 
     r.. l
 

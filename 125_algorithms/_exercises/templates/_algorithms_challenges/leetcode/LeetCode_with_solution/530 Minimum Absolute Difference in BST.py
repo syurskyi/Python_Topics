@@ -50,9 +50,9 @@ c_ Solution:
         left_min, left_max = dfs(node.left, ret)
         right_min, right_max = dfs(node.right, ret)
         __ left_max:
-            ret[0] = m..(ret[0], abs(node.val - left_max))
+            ret[0] = m..(ret[0], abs(node.val - left_max
         __ right_min:
-            ret[0] = m..(ret[0], abs(node.val - right_min))
+            ret[0] = m..(ret[0], abs(node.val - right_min
         left_min = left_min o. node.val
         right_max = right_max o. node.val
         r.. left_min, right_max

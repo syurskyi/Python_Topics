@@ -17,7 +17,7 @@ ___ check_anagram
                 __ word_data __ anagram_data a.. word != line:
                     count += 1 # If letter compisiton matches and ..
                                # the word is not the exact word, count it.
-        answer.a..(s..(count)) # Store answer and reset for next word.
+        answer.a..(s..(count # Store answer and reset for next word.
         anagram_count = 0
-    print(' '.j..(answer))
+    print(' '.j..(answer
 check_anagram()

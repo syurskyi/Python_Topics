@@ -46,7 +46,7 @@ ___ get_best_seller_titles(url=URL_NON_FICTION
 
 
         ___ book __ results 'results'  'books' :
-            books.a..((book 'title' ,book 'weeks_on_list' ))
+            books.a..((book 'title' ,book 'weeks_on_list'
         r.. books
         
 

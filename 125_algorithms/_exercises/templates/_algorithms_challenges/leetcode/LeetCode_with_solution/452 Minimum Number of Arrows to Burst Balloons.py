@@ -57,7 +57,7 @@ c_ Solution:
                 ret += 1
                 heap    # list
 
-            heapq.heappush(heap, Balloon(s, e))
+            heapq.heappush(heap, Balloon(s, e
 
         __ heap:
             ret += 1

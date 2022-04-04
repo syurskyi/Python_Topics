@@ -25,7 +25,7 @@ c_ Solution(o..
     
     ___ isSelfCrossing_another  x
         __ n.. x o. l..(x) < 3: r.. F..
-        ___ i __ r..(3, l..(x)):
+        ___ i __ r..(3, l..(x:
             __ x[i] >= x[i-2] a.. x[i-3] >= x[i-1]:
                 r.. T..
             __ i >= 4 a.. x[i]+x[i-4] >= x[i-2] a.. x[i-1] __ x[i-3]:

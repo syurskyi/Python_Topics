@@ -10,7 +10,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     text = text.r..('_', '').r..('--', '').r..('-', 'placeholder').r..('\'', 'pxaceholder')
     text = __.sub('\W', ' ', text) #remove not word characters
     text = __.sub(' +', ' ', text) #remove extra spaces
-    t = ''.j..(s ___ s __ text __ n.. any(c.i.. ___ c __ s)) #remove digit words
+    t = ''.j..(s ___ s __ text __ n.. any(c.i.. ___ c __ s #remove digit words
 
     words = t.s..
     df = pd.DataFrame(words, columns= 'word' )

@@ -22,7 +22,7 @@ c_ Solution(o..
           r.. F..
         prev = p[1].val
       ____:
-        stack.a..((1, p[1].right))
-        stack.a..((0, p[1]))
-        stack.a..((1, p[1].left))
+        stack.a..((1, p[1].right
+        stack.a..((0, p[1]
+        stack.a..((1, p[1].left
     r.. T..

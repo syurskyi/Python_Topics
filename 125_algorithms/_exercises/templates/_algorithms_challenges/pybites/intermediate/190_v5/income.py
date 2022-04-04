@@ -1,10 +1,10 @@
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ c.. _______ d..
 ____ u__.r.. _______ u..
 _______ ___.e__.E__ __ ET
 
 # import the countries xml file
-tmp = Path('/tmp')
+tmp = P..('/tmp')
 countries = tmp / 'countries.xml'
 
 __ n.. countries.exists
@@ -21,7 +21,7 @@ ___ get_income_distribution(___=countries
     """
     tree = ET.p..(___)
     root = tree.getroot()
-    namespaces = {'wb': 'http://www.worldbank.org'}
+    namespaces = {__: 'http://www.worldbank.org'}
 
     xpath = f".//wb:country"
     country_list = d..(l..)

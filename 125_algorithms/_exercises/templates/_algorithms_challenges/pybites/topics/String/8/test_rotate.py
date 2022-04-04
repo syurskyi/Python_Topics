@@ -20,7 +20,7 @@ ___ test_bigger_rotation_of_negative_n
 
 ___ test_rotation_of_n_same_as_len_str
     s__ = expected = 'julian and bob!'
-    ... rotate(s__, l..(s__)) __ expected
+    ... rotate(s__, l..(s__ __ expected
 
 
 ___ test_rotation_of_n_bigger_than_string

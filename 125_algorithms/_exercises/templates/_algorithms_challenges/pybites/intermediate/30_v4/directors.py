@@ -29,7 +29,7 @@ ___ get_movies_by_director
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
     movie_dict = d..(l..)
-    reader = csv.DictReader(o.. local))
+    reader = csv.DictReader(o.. local
 
     ___ row __ reader:
         __ row 'title_year' :
@@ -38,7 +38,7 @@ ___ get_movies_by_director
         ____:
             _____
         remap = [fun(row[x]) ___ fun, x __ z..(conv, fields)]
-        movie_dict[row[NAME]].a..(Movie(*remap))
+        movie_dict[row[NAME]].a..(Movie(*remap
     r.. movie_dict
 
 
@@ -58,7 +58,7 @@ ___ get_average_scores(directors
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
 
-    r.. s..([(d, calc_mean_score(m))
+    r.. s..([(d, calc_mean_score(m
                    ___ d, m __ directors.i..
                    __ l..(m) >= MIN_MOVIES],
                   r.._T.. key=l.... x: x[1])

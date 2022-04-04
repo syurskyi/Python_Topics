@@ -7,7 +7,7 @@ __author__ = 'Danyang'
 c_ Solution(o..
     ___ longestCommonPrefix  strs
         __ n.. strs: r.. ""
-        l = m.. m..(l.., strs))
+        l = m.. m..(l.., strs
         i = 0
         w.... i < l:
             char = strs[0][i]

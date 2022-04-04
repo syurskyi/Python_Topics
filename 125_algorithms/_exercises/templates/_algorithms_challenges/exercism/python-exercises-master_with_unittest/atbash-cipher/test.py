@@ -54,7 +54,7 @@ c_ AtbashCipherTest(unittest.TestCase
     # additional track specific test
     ___ test_encode_decode
         assertMultiLineEqual(
-            d.. encode("Testing, 1 2 3, testing.")), "testing123testing")
+            d.. encode("Testing, 1 2 3, testing.", "testing123testing")
 
 
 __ _____ __ _____

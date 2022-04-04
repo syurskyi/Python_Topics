@@ -18,13 +18,13 @@ OCR_LIST = [OCR_LIST[-1]] + OCR_LIST[:9]
 
 ___ number(ocr
     __ (l..(ocr) != ROW o. l..(ocr[0]) % COL o.
-            any(l..(r) != l..(ocr[0]) ___ r __ ocr)):
+            any(l..(r) != l..(ocr[0]) ___ r __ ocr:
         r.. V...('Wrong grid size.')
     numbers = split_ocr(ocr)
     d.. = ''
     ___ n __ numbers:
         ___
-            d.. += s..(OCR_LIST.i.. n))
+            d.. += s..(OCR_LIST.i.. n
         ______ V..
             d.. += '?'
     r.. d..

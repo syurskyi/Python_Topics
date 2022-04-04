@@ -30,10 +30,10 @@ c_ Solution(o..
     
     ___ minSubArrayLenBS  s, nums
         sums = [0]*(l..(nums)+1)
-        ___ i __ r..(1, l..(sums)):
+        ___ i __ r..(1, l..(sums:
             sums[i] = sums[i-1] + nums[i-1]
         minLen = l..(nums)+1
-        ___ i __ r..(l..(sums)):
+        ___ i __ r..(l..(sums:
             end = binarySearch(i+1, l..(sums)-1, sums[i]+s, sums)
             __ end __ l..(sums
                 _____
@@ -56,12 +56,12 @@ c_ Solution(o..
             (11, [1, 2, 3, 4, 5]),
         ]
         ___ s, nums __ testCases:
-            print('nums: %s' % (nums))
-            print('s: %s' % (s))
+            print('nums: %s' % (nums
+            print('s: %s' % (s
             result = minSubArrayLen(s, nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             resultBS = minSubArrayLenBS(s, nums)
-            print('resultBS: %s' % (resultBS))
+            print('resultBS: %s' % (resultBS
             print('-='*20+'-')
 
 __ _____ __ _____

@@ -41,7 +41,7 @@ c_ Solution(o..
     ___ test
         root = TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))
         result = levelOrderBottom(root)
-        print('result: %s' % (result))
+        print('result: %s' % (result
 
 __ _____ __ _____
     Solution().test()

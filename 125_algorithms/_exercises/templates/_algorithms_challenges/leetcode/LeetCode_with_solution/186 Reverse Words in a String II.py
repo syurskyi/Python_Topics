@@ -12,7 +12,7 @@ c_ Solution(o..
         :type s: a list of 1 length strings (List[str])
         :rtype: nothing
         """
-        reverse(s, 0, l..(s))
+        reverse(s, 0, l..(s
         i = 0
         w.... i < l..(s
             j = i+1

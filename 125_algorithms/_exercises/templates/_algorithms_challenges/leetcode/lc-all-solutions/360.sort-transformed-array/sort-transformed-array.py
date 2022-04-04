@@ -23,16 +23,16 @@ c_ Solution(o..
     __ a >= 0:
       ___ num __ nums:
         __ num >= mid:
-          up.a..(f(num))
+          up.a..(f(num
         ____:
-          down.a..(f(num))
+          down.a..(f(num
       down.r..
     ____:
       ___ num __ nums:
         __ num >= mid:
-          down.a..(f(num))
+          down.a..(f(num
         ____:
-          up.a..(f(num))
+          up.a..(f(num
       down.r..
 
     res    # list

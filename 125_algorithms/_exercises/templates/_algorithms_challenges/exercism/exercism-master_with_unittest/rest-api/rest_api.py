@@ -44,7 +44,7 @@ c_ RestAPI(o..
         username = payload 'user'
 
         create_user(username)
-        r.. json.dumps(get_user(username))
+        r.. json.dumps(get_user(username
 
     # Description: Create IOU
     # HTTP method: POST

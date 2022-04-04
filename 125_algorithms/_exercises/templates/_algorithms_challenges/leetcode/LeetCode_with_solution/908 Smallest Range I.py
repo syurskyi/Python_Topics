@@ -38,4 +38,4 @@ c_ Solution:
         """
         only need the max and min
         """
-        r.. m..(0, m..(A) - K - (m..(A) + K))
+        r.. m..(0, m..(A) - K - (m..(A) + K

@@ -8,6 +8,6 @@ ___ i __ r..(a
         ____:
             num2 = num2 - num1  
     lcm = temp1 * temp2 / num1
-    s__ += '('+s..(num1)+' '+s..(i..(lcm))+')'
+    s__ += '('+s..(num1)+' '+s..(i..(lcm+')'
     s__ += ' '
 print(s__)

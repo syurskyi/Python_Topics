@@ -35,6 +35,6 @@ postfix:x:108:112::/var/sppol/postfix
 artagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/bin
 """
 
-    print(get_users(pw))
+    print(get_users(pw
 
 

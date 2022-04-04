@@ -88,9 +88,9 @@ c_ Solution:
             ret = m..(ret, right - left + 1)
             ___ idx, node __ q:
                 __ node.left:
-                    cur_q.a..((idx * 2, node.left))
+                    cur_q.a..((idx * 2, node.left
                 __ node.right:
-                    cur_q.a..((idx * 2 + 1, node.right))
+                    cur_q.a..((idx * 2 + 1, node.right
 
             q = cur_q
 

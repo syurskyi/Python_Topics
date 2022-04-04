@@ -5,6 +5,6 @@ ___ foolsDay(problems
         numbers  raw_input().s..
         ___ num __ numbers:
             total + i..(num)*i..(num)
-        answer.a..(s..(total))
-    print(' '.j..(answer))
+        answer.a..(s..(total
+    print(' '.j..(answer
 foolsDay(input

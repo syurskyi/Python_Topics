@@ -41,8 +41,8 @@ c_ Solution:
 
         routes = [s..(e) ___ e __ routes]
         G = d..(s..)
-        ___ i __ r..(l..(routes)):
-            ___ j __ r..(i + 1, l..(routes)):
+        ___ i __ r..(l..(routes:
+            ___ j __ r..(i + 1, l..(routes:
                 stops_1, stops_2 = routes[i], routes[j]  # bus represented by stops
                 ___ stop __ stops_1:  # any(stop in stops_2 for stop in stops_1)
                     __ stop __ stops_2:
@@ -80,8 +80,8 @@ c_ Solution:
         """
         G = d..(s..)
         ___ stops __ routes:
-            ___ i __ r..(l..(stops)):
-                ___ j __ r..(i + 1, l..(stops)):
+            ___ i __ r..(l..(stops:
+                ___ j __ r..(i + 1, l..(stops:
                     u, v = stops[i], stops[j]
                     G[u].add(v)
                     G[v].add(u)

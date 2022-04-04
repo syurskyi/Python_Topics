@@ -45,7 +45,7 @@ c_ Say:
         ____:
             r.. ' '.j..([convert_chunk_to_word(chunk, index)
                              ___ index, chunk
-                             __ e..(get_chunks(num))]).rstrip()
+                             __ e..(get_chunks(num]).rstrip()
 
     ___ get_chunks  num
         reversed_string = s..(num)[::-1]
@@ -66,11 +66,11 @@ c_ Say:
             ones = convert_num_to_word(ones_digit)
 
         word_chunk = format_chunk(hundreds, tens, ones)
-        units = get_units(l..(get_chunks(num)) - 1 - i)
+        units = get_units(l..(get_chunks(num - 1 - i)
 
         __ n.. word_chunk:
             r.. ''
-        r.. ' '.j..((word_chunk, units))
+        r.. ' '.j..((word_chunk, units
 
     ___ format_chunk  hundreds, tens, ones
         chunk = ''

@@ -30,7 +30,7 @@ ___ get_top_books(content_ N..
     counts = C..()
     soup = BeautifulSoup(content,'html.parser')
 
-    links =  soup.find_all('a',href=__.c..(r'amazon.com'))
+    links =  soup.find_all('a',href=__.c..(r'amazon.com'
 
     ___ link __ links:
         title = link.getText(strip=T..)

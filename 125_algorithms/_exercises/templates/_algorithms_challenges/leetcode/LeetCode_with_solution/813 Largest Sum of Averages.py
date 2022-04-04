@@ -88,7 +88,7 @@ c_ Solution:
             ret += m..(
                 # error
                 dfs(A, j, prefix_sum, F, k - 1)
-                ___ j __ r..(i, l..(A))
+                ___ j __ r..(i, l..(A
             )
             F[i, k] = ret
 

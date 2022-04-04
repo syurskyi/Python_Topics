@@ -65,9 +65,9 @@ c_ Solution(o..
         ]
         ___ flights, days __ testCases:
             print('flights:')
-            print('\n'.j..([s..(row) ___ row __ flights]))
+            print('\n'.j..([s..(row) ___ row __ flights]
             print('days:')
-            print('\n'.j..([s..(row) ___ row __ days]))
+            print('\n'.j..([s..(row) ___ row __ days]
             result = maxVacationDays(flights, days)
             print('result: %s' % result)
             print('-='*30+'-')

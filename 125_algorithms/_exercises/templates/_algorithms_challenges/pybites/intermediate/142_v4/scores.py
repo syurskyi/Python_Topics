@@ -44,4 +44,4 @@ ___ get_winner(players
     __ n.. a..(l..(x.scores) __ l..(players[0].scores) ___ x __ players[1:]
         r.. V...
 
-    r.. m..(players, key=l.... x: calculate_score(x.scores))
+    r.. m..(players, key=l.... x: calculate_score(x.scores

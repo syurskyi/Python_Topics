@@ -15,7 +15,7 @@ c_ Solution:
         freqs = c...d..(i..)
         i = rep = 0
 
-        ___ j __ r..(l..(s)):
+        ___ j __ r..(l..(s:
             __ freqs[s[j]] __ 1:
                 rep += 1
             freqs[s[j]] += 1

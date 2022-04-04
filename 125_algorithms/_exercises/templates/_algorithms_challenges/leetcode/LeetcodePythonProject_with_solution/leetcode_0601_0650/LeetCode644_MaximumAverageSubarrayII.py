@@ -25,7 +25,7 @@ c_ Solution(o..
             hull.a..(j-k+1)
             w.... l..(hull) >= 2 a.. d(hull[0], hull[1]-1) <= d(hull[0], j
                 hull.popleft()
-            ans = m..(ans, d(hull[0], j))
+            ans = m..(ans, d(hull[0], j
         r.. ans
     
     ___ findMaxAverage_binarySearch  nums, k
@@ -50,7 +50,7 @@ c_ Solution(o..
             now += dp[i]
         __ now > 0:
             r.. T..
-        ___ i __ r..(k, l..(nums)):
+        ___ i __ r..(k, l..(nums:
             now += dp[i]
             last += dp[i-k]
             __ last < 0:

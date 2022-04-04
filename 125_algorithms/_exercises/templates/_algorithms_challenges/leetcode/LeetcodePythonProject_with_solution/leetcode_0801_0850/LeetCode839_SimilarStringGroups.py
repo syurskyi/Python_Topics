@@ -11,7 +11,7 @@ c_ Solution(o..
         :type A: List[str]
         :rtype: int
         """
-        arr = l..(s..(A))
+        arr = l..(s..(A
         parents = {x: x ___ x __ arr}
         n, m = l..(arr), l..(arr[0])
         count = n
@@ -30,7 +30,7 @@ c_ Solution(o..
             r.. F..
         
         ___ similar(x, y
-            r.. s..(i != j ___ i, j __ z..(x, y)) __ 2
+            r.. s..(i != j ___ i, j __ z..(x, y __ 2
         
         ## Solution part ##
         __ n < m:

@@ -20,7 +20,7 @@ c_ Solution(o..
           dist += 1
         y.. (i, j), dist
 
-    heap = [(0, t..(ball))]
+    heap = [(0, t..(ball]
     visited = s..()
     hole = t..(hole)
     w.... heap:
@@ -31,6 +31,6 @@ c_ Solution(o..
       __ curr __ hole:
         r.. dist
       ___ pos, incDist __ next(curr, maze
-        heapq.heappush(heap, (dist + incDist, pos))
+        heapq.heappush(heap, (dist + incDist, pos
 
     r.. -1

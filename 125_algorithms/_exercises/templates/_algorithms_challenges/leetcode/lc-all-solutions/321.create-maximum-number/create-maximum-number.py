@@ -42,5 +42,5 @@ c_ Solution(o..
         __ i __ 2:
           print
           n1, n2
-        ans.a..(merge(n1, n2))
+        ans.a..(merge(n1, n2
     r.. m..(ans)

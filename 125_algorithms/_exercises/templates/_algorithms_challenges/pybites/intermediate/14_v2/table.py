@@ -12,7 +12,7 @@ ___ generate_table(*args
 
 
     ___ combos __ z..(*args
-        y.. SEPARATOR.j.. m..(s..,combos))
+        y.. SEPARATOR.j.. m..(s..,combos
 
 
 

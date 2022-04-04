@@ -22,4 +22,4 @@ ____ control_flow _______ filter_names
       'tim', 'amber', 'ana', 'sara', 'molly' ),
 ])
 ___ test_filter_names(names, expected_return
-    ... l..(filter_names(names)) __ expected_return
+    ... l..(filter_names(names __ expected_return

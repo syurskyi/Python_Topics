@@ -2,7 +2,7 @@ gestures =  'wink', 'double blink', 'close your eyes', 'jump'
 
 
 ___ handshake(s
-    s = l..(sanitize(s))
+    s = l..(sanitize(s
     s.r..
     seq    # list
     lim = l..(s) __ l..(s) <= l..(gestures) ____ l..(gestures)
@@ -19,12 +19,12 @@ ___ code(seq
         r.. '0'
     s = find_subseq(seq)
     __ n.. s:
-        s =  '1'  + find_subseq(r..(seq))
+        s =  '1'  + find_subseq(r..(seq
     r.. "".j..(s)
 
 
 ___ sanitize(s
-    __ n..(isi..(s, i..) o. isi..(s, s..)):
+    __ n..(isi..(s, i..) o. isi..(s, s..:
         r.. T..('Unknown type')
     __ isi..(s, i..
         __ s < 0:
@@ -34,7 +34,7 @@ ___ sanitize(s
         r.. ""
     __ l..(s) > 5:
         r.. V...('Binary string too long')
-    r.. "0" * (l..(gestures) - l..(s)) + s
+    r.. "0" * (l..(gestures) - l..(s + s
 
 
 ___ find_subseq(seq

@@ -46,7 +46,7 @@ c_ Solution:
                     q.a..(cur.left)
                 __ cur.right:
                     q.a..(cur.right)
-            result.a.. m..(l.... x: x.val, q[:length]))  # no need to create a new list
+            result.a.. m..(l.... x: x.val, q[:length]  # no need to create a new list
             q = q[length:]  # no need to create a new list
         r.. result
 

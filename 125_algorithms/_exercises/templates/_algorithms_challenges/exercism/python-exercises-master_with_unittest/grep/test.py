@@ -101,14 +101,14 @@ c_ GrepTest(unittest.TestCase
             grep("may", [MIDSUMMERNIGHTFILENAME]),
             ("Nor how it may concern my modesty,\n"
              "But I beseech your grace that I may know\n"
-             "The worst that may befall me in this case,\n"))
+             "The worst that may befall me in this case,\n"
 
     ___ test_one_file_several_matches_print_line_numbers_flag
         assertMultiLineEqual(
             grep("may", [MIDSUMMERNIGHTFILENAME], "-n"),
             ("3:Nor how it may concern my modesty,\n"
              "5:But I beseech your grace that I may know\n"
-             "6:The worst that may befall me in this case,\n"))
+             "6:The worst that may befall me in this case,\n"
 
     ___ test_one_file_several_matches_match_entire_lines_flag
         assertMultiLineEqual(
@@ -118,7 +118,7 @@ c_ GrepTest(unittest.TestCase
         assertMultiLineEqual(
             grep("ACHILLES", [ILIADFILENAME], "-i"),
             ("Achilles sing, O Goddess! Peleus' son;\n"
-             "The noble Chief Achilles from the son\n"))
+             "The noble Chief Achilles from the son\n"
 
     ___ test_one_file_several_matches_inverted_flag
         assertMultiLineEqual(
@@ -127,7 +127,7 @@ c_ GrepTest(unittest.TestCase
              "With loss of Eden, till one greater Man\n"
              "Restore us, and regain the blissful Seat,\n"
              "Sing Heav'nly Muse, that on the secret top\n"
-             "That Shepherd, who first taught the chosen Seed\n"))
+             "That Shepherd, who first taught the chosen Seed\n"
 
     ___ test_one_file_no_matches_various_flags
         assertMultiLineEqual(
@@ -147,7 +147,7 @@ c_ GrepTest(unittest.TestCase
             ("midsummer-night.txt:Nor how it may concern my modesty,\n"
              "midsummer-night.txt:But I beseech your grace that I may know\n"
              "midsummer-night.txt:The worst that may befall me in this case,\n"
-             ))
+
 
     ___ test_multiple_files_several_matches_print_line_numbers_flag
         assertMultiLineEqual(
@@ -158,7 +158,7 @@ c_ GrepTest(unittest.TestCase
              "midsummer-night.txt:6:The worst that may befall me in this case,"
              "\nparadise-lost.txt:2:Of that Forbidden Tree, whose mortal tast"
              "\nparadise-lost.txt:6:Sing Heav'nly Muse, that on the secret top"
-             "\n"))
+             "\n"
 
     ___ test_multiple_files_one_match_print_file_names_flag
         assertMultiLineEqual(
@@ -180,7 +180,7 @@ c_ GrepTest(unittest.TestCase
              ";\nmidsummer-night.txt:If I refuse to wed Demetrius.\n"
              "paradise-lost.txt:Brought Death into the World, and all our woe,"
              "\nparadise-lost.txt:Restore us, and regain the blissful Seat,\n"
-             "paradise-lost.txt:Sing Heav'nly Muse, that on the secret top\n"))
+             "paradise-lost.txt:Sing Heav'nly Muse, that on the secret top\n"
 
     ___ test_multiple_files_several_matches_inverted_flag
         assertMultiLineEqual(
@@ -188,7 +188,7 @@ c_ GrepTest(unittest.TestCase
                 "a", ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"],
                 "-v"), ("iliad.txt:Achilles sing, O Goddess! Peleus' son;\n"
                         "iliad.txt:The noble Chief Achilles from the son\n"
-                        "midsummer-night.txt:If I refuse to wed Demetrius.\n"))
+                        "midsummer-night.txt:If I refuse to wed Demetrius.\n"
 
     ___ test_multiple_files_one_match_match_entire_lines_flag
         assertMultiLineEqual(

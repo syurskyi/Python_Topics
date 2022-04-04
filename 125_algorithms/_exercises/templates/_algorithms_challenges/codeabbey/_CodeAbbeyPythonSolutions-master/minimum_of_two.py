@@ -12,6 +12,6 @@ ___ get_min(num1, num2
 
 ___ i __ r..(amount_values
     num1, num2 = map(i.., input().s..
-    results.a..(get_min(num1, num2))
+    results.a..(get_min(num1, num2
 
 print(*results)

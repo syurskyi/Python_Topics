@@ -38,7 +38,7 @@ a1 = [0, 1, 3]
 a2 = [3, 0, 1]
 a3 = [3, 5, 1, 2, 0]
 s = Solution()
-print(s.missingNumber(a0))
-print(s.missingNumber(a1))
-print(s.missingNumber(a2))
-print(s.missingNumber(a3))
+print(s.missingNumber(a0
+print(s.missingNumber(a1
+print(s.missingNumber(a2
+print(s.missingNumber(a3

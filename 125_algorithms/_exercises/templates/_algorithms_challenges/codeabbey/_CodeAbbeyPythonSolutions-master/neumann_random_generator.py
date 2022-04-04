@@ -15,7 +15,7 @@ ___ generate(num, counter
 values = l.. m..(i.., input().s..()))
 
 ___ i __ r..(amount_value
-    results.a..(generate(values[i],0))
+    results.a..(generate(values[i],0
     generator_list.clear()
 
 print(*results)

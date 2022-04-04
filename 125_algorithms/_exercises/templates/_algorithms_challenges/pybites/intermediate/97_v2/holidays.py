@@ -6,7 +6,7 @@ ____ bs4 _______ BeautifulSoup
 
 
 # prep data
-tmp = __.getenv("TMP", "/tmp")
+tmp = __.g..("TMP", "/tmp")
 page = 'us_holidays.html'
 holidays_page = __.p...j..(tmp, page)
 u..(
@@ -29,7 +29,7 @@ ___ get_us_bank_holidays(content=content
 
     table = soup.find('table',class_="list-table")
 
-    ___ i,row __ e..(table.find_all('tr')):
+    ___ i,row __ e..(table.find_all('tr':
         __ i __ 0:
             _____
         date = row.select_one('td:nth-child(2)').getText(strip=T..)

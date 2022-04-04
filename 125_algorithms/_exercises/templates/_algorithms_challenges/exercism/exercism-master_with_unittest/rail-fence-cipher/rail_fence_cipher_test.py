@@ -7,28 +7,28 @@ c_ RailFenceTests(unittest.TestCase
 
     ___ test_encode_with_two_rails
         assertMultiLineEqual('XXXXXXXXXOOOOOOOOO',
-                                  encode('XOXOXOXOXOXOXOXOXO', 2))
+                                  encode('XOXOXOXOXOXOXOXOXO', 2
 
     ___ test_encode_with_three_rails
         assertMultiLineEqual('WECRLTEERDSOEEFEAOCAIVDEN',
-                                  encode('WEAREDISCOVEREDFLEEATONCE', 3))
+                                  encode('WEAREDISCOVEREDFLEEATONCE', 3
 
     ___ test_encode_with_middle_stop
-        assertMultiLineEqual('ESXIEECSR', encode('EXERCISES', 4))
+        assertMultiLineEqual('ESXIEECSR', encode('EXERCISES', 4
 
     ___ test_decode_with_three_rails
         assertMultiLineEqual('THEDEVILISINTHEDETAILS',
-                                  d.. 'TEITELHDVLSNHDTISEIIEA', 3))
+                                  d.. 'TEITELHDVLSNHDTISEIIEA', 3
 
     ___ test_decode_with_five_rails
         assertMultiLineEqual('EXERCISMISAWESOME',
-                                  d.. 'EIEXMSMESAORIWSCE', 5))
+                                  d.. 'EIEXMSMESAORIWSCE', 5
 
     ___ test_decode_with_six_rails
         assertMultiLineEqual(
             '112358132134558914423337761098715972584418167651094617711286',
             d.. '133714114238148966225439541018335470986172518171757571'
-                   '896261', 6))
+                   '896261', 6
 
 
 __ _____ __ _____

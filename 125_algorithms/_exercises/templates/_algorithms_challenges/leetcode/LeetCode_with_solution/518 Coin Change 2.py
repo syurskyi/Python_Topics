@@ -42,7 +42,7 @@ c_ Solution:
         :type coins: List[int]
         :rtype: int
         """
-        F = d..(l....: d..(i..))
+        F = d..(l....: d..(i..
         n = l..(coins)
         ___ l __ r..(n + 1
             F[0][l] = 1   # trivial case
@@ -72,7 +72,7 @@ c_ Solution:
 
         coins.s..()
         n = l..(coins)
-        F = d..(l....: d..(i..))
+        F = d..(l....: d..(i..
         ___ i __ r..(n
             F[coins[i]][i] = 1
 

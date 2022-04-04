@@ -61,7 +61,7 @@ c_ SayTest(unittest.TestCase
             say(987654321123), ("nine hundred and eighty-seven billion "
                                 "six hundred and fifty-four million "
                                 "three hundred and twenty-one thousand "
-                                "one hundred and twenty-three"))
+                                "one hundred and twenty-three"
 
     ___ test_number_to_large
         w__ assertRaises(AttributeError

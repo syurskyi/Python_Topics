@@ -5,7 +5,7 @@ c_ NumArray(o..
     :type nums: List[int]
     """
     dp = [0] * (l..(nums) + 1)
-    ___ i __ r..(0, l..(nums)):
+    ___ i __ r..(0, l..(nums:
       dp[i + 1] = dp[i] + nums[i]
 
   ___ sumRange  i, j

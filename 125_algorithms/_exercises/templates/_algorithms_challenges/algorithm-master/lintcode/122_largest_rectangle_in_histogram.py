@@ -48,7 +48,7 @@ c_ Solution:
 
         n = l..(H)
 
-        ___ right __ r..(l..(H)):
+        ___ right __ r..(l..(H:
             __ right < n - 1 a.. H[right] <= H[right + 1]:
                 _____
             Hmin = H[right]
@@ -79,7 +79,7 @@ c_ Solution:
         H.a..(0)
         stack    # list
 
-        ___ right __ r..(l..(H)):
+        ___ right __ r..(l..(H:
             w.... stack a.. H[stack[-1]] >= H[right]:
                 height = H[stack.pop()]
                 left = stack[-1] __ stack ____ -1

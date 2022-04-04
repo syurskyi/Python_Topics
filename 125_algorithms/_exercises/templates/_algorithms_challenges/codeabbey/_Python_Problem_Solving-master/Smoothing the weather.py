@@ -6,7 +6,7 @@ mea = l.. m..(f__, input().s..()))
 mea_store    # list
 
 #traversing through each element of the measurements
-___ i __ r..(l..(mea)):
+___ i __ r..(l..(mea:
     #if first element then store it in the result
     __ i __ 0:
         mea_store.a..(mea[i])

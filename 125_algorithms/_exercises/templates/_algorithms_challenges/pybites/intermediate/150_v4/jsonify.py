@@ -21,5 +21,5 @@ ___ convert_to_json(members=members
     members = members.r..('|', ',').r..(';', ',').s..
     members.pop(0)
     print _*{members=}', file=sys.stderr, flush=T..)
-    members_dict = l..(DictReader(members))
+    members_dict = l..(DictReader(members
     r.. json.dumps(members_dict)

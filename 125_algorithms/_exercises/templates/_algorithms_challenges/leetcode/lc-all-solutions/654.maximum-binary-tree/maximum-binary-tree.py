@@ -13,7 +13,7 @@ c_ Solution(o..
     :rtype: TreeNode
     """
     __ nums:
-      pos = nums.i.. m..(nums))
+      pos = nums.i.. m..(nums
       root = TreeNode(nums[pos])
       root.left = constructMaximumBinaryTree(nums[:pos])
       root.right = constructMaximumBinaryTree(nums[pos + 1:])

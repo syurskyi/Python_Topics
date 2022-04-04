@@ -7,7 +7,7 @@ ___ r..(num1, num2
     __(result < 0
         result = result * -1
         is_negative = T..
-    __(result + 0.5 >= i..(result+1)):
+    __(result + 0.5 >= i..(result+1:
         result = i..(result + 1)
     ____:
         result = i..(result)
@@ -18,5 +18,5 @@ ___ r..(num1, num2
 
 ___ i __ r..(amount_values
     num1, num2 = map(i.., input().s..
-    results.a..(r..(num1,num2))
+    results.a..(r..(num1,num2
 print(*results)

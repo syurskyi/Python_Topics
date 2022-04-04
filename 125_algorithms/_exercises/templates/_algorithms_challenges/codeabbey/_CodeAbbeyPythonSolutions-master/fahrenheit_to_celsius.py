@@ -7,6 +7,6 @@ ___ convert_fahrenheit_to_celsius(fahrenheit_degree
     r.. celsius_degree
 
 ___ i __ r..(1,amount_values+1
-    results.a..(convert_fahrenheit_to_celsius(values[i]))
+    results.a..(convert_fahrenheit_to_celsius(values[i]
 
 print(*results)

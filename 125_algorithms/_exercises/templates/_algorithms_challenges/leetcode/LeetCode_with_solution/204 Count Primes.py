@@ -20,7 +20,7 @@ c_ Solution:
 
         is_prime = [T.. ___ _ __ x..(n)]
         is_prime[0], is_prime[1] = F.., F..
-        ___ i __ x..(2, i..(m__.sqrt(n))+1
+        ___ i __ x..(2, i..(m__.sqrt(n+1
             __ is_prime[i]:
                 ___ j __ x..(i*i, n, i
                     is_prime[j] = F..

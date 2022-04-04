@@ -1,12 +1,12 @@
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ tempfile _______ TemporaryDirectory
 
 _______ p__
 
 ____ files _______ get_files
 
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 
 
 ?p__.m__.p.("byte_sizes, size_in_kb, expected", [
@@ -19,8 +19,8 @@ TMP = Path(__.getenv("TMP", "/tmp"))
 ___ test_get_files(byte_sizes, size_in_kb, expected
     w__ TemporaryDirectory(dir=TMP) __ dirname:
         ___ size __ byte_sizes:
-            w__ o.. __.p...j..(dirname, s..(size)), 'wb') __ f:
-                f.w.. __.urandom(size))
+            w__ o.. __.p...j..(dirname, s..(size, __) __ f:
+                f.w.. __.urandom(size
 
         actual = [__.p...basename(fi) ___ fi __
                   get_files(dirname, size_in_kb)]

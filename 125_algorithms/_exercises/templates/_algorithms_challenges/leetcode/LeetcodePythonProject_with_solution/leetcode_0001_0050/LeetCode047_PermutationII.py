@@ -17,7 +17,7 @@ c_ Solution(o..
     
     ___ dfs  nums, curr, res
         __ nums __ []:
-            res.a..(l..(curr))
+            res.a..(l..(curr
             r..
         ___ i, num __ e..(nums
             __ i > 0 a.. nums[i] __ nums[i-1]:

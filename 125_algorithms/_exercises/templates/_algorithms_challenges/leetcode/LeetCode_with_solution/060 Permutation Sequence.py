@@ -27,10 +27,10 @@ c_ Solution(o..
         k %= m__.factorial(n)
         ret    # list
         ___ i __ x..(n-1, -1, -1
-            idx, k = divmod(k, m__.factorial(i))
-            ret.a..(array.pop(idx))
+            idx, k = divmod(k, m__.factorial(i
+            ret.a..(array.pop(idx
 
-        r.. "".j.. m..(s.., ret))
+        r.. "".j.. m..(s.., ret
 
     ___ getPermutation  n, k
         """
@@ -70,7 +70,7 @@ c_ Solution(o..
             a[ind] = candidate[i]
             visited[i] = T..
 
-        r.. "".j.. m..(s.., a))
+        r.. "".j.. m..(s.., a
 
     ___ getPermutation_complicated  n, k
         """
@@ -102,7 +102,7 @@ c_ Solution(o..
 
         result    # list
         array = r..(1, n+1)
-        ___ i __ r..(x..(1, n)):
+        ___ i __ r..(x..(1, n:
             index = k/factorial
             result.a..(array[index])
             array = array[:index]+array[index+1:]

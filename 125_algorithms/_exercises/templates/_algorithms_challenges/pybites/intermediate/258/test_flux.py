@@ -14,7 +14,7 @@ ___ test_calculate
 
 
 ___ test_identify
-    flux = identify_flux(calculate_flux(XYZ))
+    flux = identify_flux(calculate_flux(XYZ
     ... isi..(flux, l..)
     ... l..(flux) __ 5
     ... [act ___ act, *_ __ flux] __ [

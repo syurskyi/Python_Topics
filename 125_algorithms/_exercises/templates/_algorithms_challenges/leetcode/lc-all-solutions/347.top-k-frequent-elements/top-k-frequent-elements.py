@@ -14,7 +14,7 @@ c_ Solution(o..
       d[num] = d.g.. num, 0) + 1
 
     ___ key __ d:
-      res.a..((d[key], key))
+      res.a..((d[key], key
 
     ___ t __ res:
       freq, key = t

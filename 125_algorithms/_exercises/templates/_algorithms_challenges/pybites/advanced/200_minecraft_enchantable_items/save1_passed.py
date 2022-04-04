@@ -1,7 +1,7 @@
 ____ c.. _______ d..
 ____ dataclasses _______ dataclass, field
 ____ f.. _______ total_ordering
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ __ _______ c.., s..
 ____ t___ _______ A.., DefaultDict, L..
 ____ u__.r.. _______ u..
@@ -11,7 +11,7 @@ ____ bs4 _______ BeautifulSoup __ Soup
 out_dir = "/tmp"
 html_file = f"{out_dir}/enchantment_list_pc.html"
 
-HTML_FILE = Path(html_file)
+HTML_FILE = P..(html_file)
 # source:
 # https://www.digminecraft.com/lists/enchantment_list_pc.php
 URL = ("https://bites-data.s3.us-east-2.amazonaws.com/"
@@ -120,7 +120,7 @@ ___ generate_items(data
     unique_items = gen_item_set(data)
 
     ___ item __ unique_items:
-        mc_items[item] = Item(item.r..("_", " "))
+        mc_items[item] = Item(item.r..("_", " "
 
     ___ enchant __ data:
         ___ item __ data[enchant].items:
@@ -149,7 +149,7 @@ ___ get_soup(file=HTML_FILE
     :param file: Path file object
     :return: BeautifulSoup object
     """
-    __ isi..(file, Path
+    __ isi..(file, P..
         __ n.. HTML_FILE.is_file
             u..(URL, HTML_FILE)
 

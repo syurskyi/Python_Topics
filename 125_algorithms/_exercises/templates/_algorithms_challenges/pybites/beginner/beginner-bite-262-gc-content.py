@@ -39,7 +39,7 @@ ___ calculate_gc_content_1st_solution(sequence
         __ v __ F..:
             counts[k] = 0
 
-    result = f__("{0:.2f}".f..(((counts 'g'  + counts 'c' ) / (counts 'a'  + counts 'c'  + counts 'g'  + counts 't' )) * 100))
+    result = f__("{0:.2f}".f..(((counts 'g'  + counts 'c' ) / (counts 'a'  + counts 'c'  + counts 'g'  + counts 't'  * 100
     ___
         r.. result
     ______:
@@ -50,8 +50,8 @@ ___ calculate_gc_content_2nd_solution(sequence
     counts = C..(sequence.upper
     gc_content = counts 'G'  + counts 'C'
     at_content = counts 'A'  + counts 'T'
-    r.. r..((gc_content / (gc_content + at_content)) * 100, 2)
+    r.. r..((gc_content / (gc_content + at_content * 100, 2)
 
 
 
-print(calculate_gc_content_2nd_solution(s))
+print(calculate_gc_content_2nd_solution(s

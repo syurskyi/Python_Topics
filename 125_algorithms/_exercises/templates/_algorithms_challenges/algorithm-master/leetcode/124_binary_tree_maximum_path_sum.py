@@ -51,8 +51,8 @@ c_ Solution:
         __ n.. node:
             r.. 0
 
-        left = m..(0, divide_conquer(node.left))
-        right = m..(0, divide_conquer(node.right))
+        left = m..(0, divide_conquer(node.left
+        right = m..(0, divide_conquer(node.right
 
         __ node.val + left + right > ans:
             ans = node.val + left + right

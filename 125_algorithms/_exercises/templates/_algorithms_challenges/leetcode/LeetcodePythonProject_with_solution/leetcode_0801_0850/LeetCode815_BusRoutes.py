@@ -14,8 +14,8 @@ c_ Solution(o..
         s, t = S, T
         __ s __ t: r.. 0
         hashmap    # dict
-        ___ i __ r..(l..(routes)):
-            ___ j __ r..(l..(routes[i])):
+        ___ i __ r..(l..(routes:
+            ___ j __ r..(l..(routes[i]:
                 __ routes[i][j] n.. __ hashmap:
                     hashmap[routes[i][j]]    # list
                 hashmap[routes[i][j]].a..(i)
@@ -24,7 +24,7 @@ c_ Solution(o..
         addedStop = s..()
         ___ r __ hashmap[s]:
             __ r __ addedRoute: _____
-            ___ i __ r..(l..(routes[r])):
+            ___ i __ r..(l..(routes[r]:
                 __ routes[r][i] n.. __ addedStop:
                     queue.a..(routes[r][i])
                     addedStop.add(routes[r][i])
@@ -38,7 +38,7 @@ c_ Solution(o..
                 __ stop __ t: r.. count
                 ___ r __ hashmap[stop]:
                     __ r __ addedRoute: _____
-                    ___ i __ r..(l..(routes[r])):
+                    ___ i __ r..(l..(routes[r]:
                         __ routes[r][i] n.. __ addedStop:
                             queue.a..(routes[r][i])
                     addedRoute.add(r)

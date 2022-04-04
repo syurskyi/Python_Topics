@@ -18,7 +18,7 @@ c_ Solution(o..
         ___ nut __ nuts:
             dist = abs(tree[0]-nut[0])+abs(tree[1]-nut[1])
             sumVal += dist*2
-            maxDiff = m..(maxDiff, dist-abs(squirrel[0]-nut[0])-abs(squirrel[1]-nut[1]))
+            maxDiff = m..(maxDiff, dist-abs(squirrel[0]-nut[0])-abs(squirrel[1]-nut[1]
         r.. sumVal-maxDiff
     
     ___ minDistance_space  height, width, tree, squirrel, nuts

@@ -38,26 +38,26 @@ IMAGE_5x5_SQUARES = np.array(
 
 KERNEL_1x1 = np.array([[1]])
 KERNEL_3x3_SHARPEN = np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]])
-KERNEL_3x3_BLUR = np.ones((3, 3)) * 1 / 9
+KERNEL_3x3_BLUR = np.ones((3, 3 * 1 / 9
 KERNEL_3x3_HORIZONTAL_EDGE = np.array([[-1, -2, -1], [0, 0, 0], [1, 2, 1]])
 KERNEL_3x3_VERTICAL_EDGE = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
 KERNEL_5x5 = np.r__.rand(5, 5)
-KERNEL_5x5_ONES = np.diag(np.ones(5))
+KERNEL_5x5_ONES = np.diag(np.ones(5
 
 
 ?p__.m__.p.(
     "image, kernel, padding, stride, feature_map_size",
     [
-        (IMAGE_1x1, KERNEL_1x1, N.., 1, (1, 1)),
-        (IMAGE_3x3, KERNEL_3x3_SHARPEN, 0, 1, (1, 1)),
-        (IMAGE_3x3, KERNEL_3x3_SHARPEN, N.., 1, (3, 3)),
-        (IMAGE_9x9, KERNEL_3x3_SHARPEN, 0, 1, (7, 7)),
-        (IMAGE_9x9, KERNEL_3x3_SHARPEN, N.., 1, (9, 9)),
-        (IMAGE_9x9, KERNEL_3x3_SHARPEN, 0, 2, (4, 4)),
-        (IMAGE_9x9, KERNEL_3x3_SHARPEN, N.., 2, (5, 5)),
-        (IMAGE_9x9, KERNEL_3x3_SHARPEN, 0, 3, (3, 3)),
-        (IMAGE_9x9, KERNEL_3x3_SHARPEN, 2, 3, (4, 4)),
-        (IMAGE_256x256, KERNEL_5x5, N.., 3, (86, 86)),
+        (IMAGE_1x1, KERNEL_1x1, N.., 1, (1, 1,
+        (IMAGE_3x3, KERNEL_3x3_SHARPEN, 0, 1, (1, 1,
+        (IMAGE_3x3, KERNEL_3x3_SHARPEN, N.., 1, (3, 3,
+        (IMAGE_9x9, KERNEL_3x3_SHARPEN, 0, 1, (7, 7,
+        (IMAGE_9x9, KERNEL_3x3_SHARPEN, N.., 1, (9, 9,
+        (IMAGE_9x9, KERNEL_3x3_SHARPEN, 0, 2, (4, 4,
+        (IMAGE_9x9, KERNEL_3x3_SHARPEN, N.., 2, (5, 5,
+        (IMAGE_9x9, KERNEL_3x3_SHARPEN, 0, 3, (3, 3,
+        (IMAGE_9x9, KERNEL_3x3_SHARPEN, 2, 3, (4, 4,
+        (IMAGE_256x256, KERNEL_5x5, N.., 3, (86, 86,
     ],
     ids=[
         "image and kernel of size 1x1",
@@ -80,7 +80,7 @@ ___ test_feature_map_dimension(image, kernel, padding, stride, feature_map_size
 ?p__.m__.p.(
     "image, kernel, padding, stride, feature_map",
     [
-        (IMAGE_1x1, KERNEL_1x1, N.., 1, np.array([[1]])),
+        (IMAGE_1x1, KERNEL_1x1, N.., 1, np.array([[1]],
         (
             IMAGE_5x5_OUTER_SQUARE,
             KERNEL_3x3_SHARPEN,
@@ -123,7 +123,7 @@ ___ test_feature_map_dimension(image, kernel, padding, stride, feature_map_size
             2,
             np.array([[3, 2, 3], [0, 0, 0], [-3, -2, -3]]),
         ),
-        (IMAGE_5x5_INNER_SQUARE, KERNEL_5x5_ONES, 0, 1, np.array([[3]])),
+        (IMAGE_5x5_INNER_SQUARE, KERNEL_5x5_ONES, 0, 1, np.array([[3]],
     ],
     ids=[
         "image and kernel of size 1x1",
@@ -148,8 +148,8 @@ ___ test_feature_map(image, kernel, padding, stride, feature_map
         (IMAGE_256x256, [[1, 1, 1], [2, 2, 2], [3, 3, 3]], N.., 1, T..),
         (np.ones(9), KERNEL_3x3_BLUR, N.., 1, V...),
         (IMAGE_5x5_INNER_SQUARE, np.ones(3), N.., 1, V...),
-        (np.ones((3, 3, 3)), KERNEL_3x3_BLUR, N.., 1, V...),
-        (IMAGE_5x5_INNER_SQUARE, np.ones((3, 3, 3)), N.., 1, V...),
+        (np.ones((3, 3, 3, KERNEL_3x3_BLUR, N.., 1, V...),
+        (IMAGE_5x5_INNER_SQUARE, np.ones((3, 3, 3, N.., 1, V...),
         (np.array([]), KERNEL_3x3_BLUR, N.., 1, V...),
         (IMAGE_5x5_SQUARES, np.array([]), N.., 1, V...),
         (np.r__.rand(3, 2), KERNEL_3x3_BLUR, N.., 1, V...),
@@ -165,7 +165,7 @@ ___ test_feature_map(image, kernel, padding, stride, feature_map
             1,
             T..,
         ),
-        (IMAGE_5x5_INNER_SQUARE, np.ones((2, 2)), N.., 1, V...),
+        (IMAGE_5x5_INNER_SQUARE, np.ones((2, 2, N.., 1, V...),
         (IMAGE_1x1, KERNEL_5x5_ONES, N.., 1, V...),
         (IMAGE_3x3, KERNEL_3x3_BLUR, 1.2, 1, T..),
         (IMAGE_3x3, KERNEL_3x3_BLUR, -1, 1, V...),

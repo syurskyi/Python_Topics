@@ -35,8 +35,8 @@ __ _____ __ _____
     # print(stockSpanner.next(75))
     # print(stockSpanner.next(85))
 
-    print(stockSpanner.next(29))
-    print(stockSpanner.next(91))
-    print(stockSpanner.next(62))
-    print(stockSpanner.next(76))
-    print(stockSpanner.next(51))
+    print(stockSpanner.next(29
+    print(stockSpanner.next(91
+    print(stockSpanner.next(62
+    print(stockSpanner.next(76
+    print(stockSpanner.next(51

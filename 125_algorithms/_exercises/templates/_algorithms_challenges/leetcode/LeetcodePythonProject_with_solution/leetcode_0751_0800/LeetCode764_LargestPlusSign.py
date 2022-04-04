@@ -50,7 +50,7 @@ c_ Solution(o..
                     dp[i][j][3] = dp[i][j+1][3]+1
         ___ i __ r..(n
             ___ j __ r..(n
-                maxLen = m..(maxLen, m..(dp[i][j]))
+                maxLen = m..(maxLen, m..(dp[i][j]
         r.. maxLen
     
     ___ test

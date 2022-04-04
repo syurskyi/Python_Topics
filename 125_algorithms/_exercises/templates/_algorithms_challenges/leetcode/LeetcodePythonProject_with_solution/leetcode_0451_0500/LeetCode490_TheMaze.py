@@ -23,7 +23,7 @@ c_ Solution(o..
             visited[i][j] = T..
             ___ x, y __ getNextSteps(maze, i, j
                 __ n.. visited[x][y]:
-                    queue.a..((x, y))
+                    queue.a..((x, y
         r.. F..
     
     ___ getNextSteps  maze, i, j
@@ -36,6 +36,6 @@ c_ Solution(o..
                 maze[x+dir[0]][y+dir[1]] != 1:
                 x += dir[0]
                 y += dir[1]
-            result.add((x, y))
-        result.discard((i, j))
+            result.add((x, y
+        result.discard((i, j
         r.. l..(result)

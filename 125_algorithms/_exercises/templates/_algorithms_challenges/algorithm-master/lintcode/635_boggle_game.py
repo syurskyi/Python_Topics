@@ -59,8 +59,8 @@ c_ Solution:
         m, n = l..(board), l..(board[0])
         node = node.children[board[x][y]]
 
-        p...a..((x, y))
-        visited.add((x, y))
+        p...a..((x, y
+        visited.add((x, y
 
         __ node.end_of __ n.. N..
             next_words.a..(p.. | )
@@ -79,7 +79,7 @@ c_ Solution:
                 find_next_words(board, _x, _y, visited, cnt, node, next_words, p..)
 
         p...pop()
-        visited.discard((x, y))
+        visited.discard((x, y
 
     ___ put  root, word
         node = root

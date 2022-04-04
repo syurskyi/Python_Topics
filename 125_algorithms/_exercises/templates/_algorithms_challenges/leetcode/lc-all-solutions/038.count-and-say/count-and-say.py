@@ -10,7 +10,7 @@ c_ Solution(o..
       res = ""
       pre = ans[0]
       count = 1
-      ___ i __ r..(1, l..(ans)):
+      ___ i __ r..(1, l..(ans:
         __ pre __ ans[i]:
           count += 1
         ____:

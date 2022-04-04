@@ -21,7 +21,7 @@ c_ Solution(o..
         
     ___ dfs  result, hashmap, elem
         w.... hashmap.g.. elem
-            dfs(result, hashmap, heapq.heappop(hashmap[elem]))
+            dfs(result, hashmap, heapq.heappop(hashmap[elem]
         result.insert(0, elem)
     
     ___ test

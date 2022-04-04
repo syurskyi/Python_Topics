@@ -30,7 +30,7 @@ c_ Solution:
         n = l..(nums)
         # mid = self.find_kth(nums, 0, n, (n - 1) // 2)
         # median = nums[mid]
-        median = l..(s..(nums))[n//2]
+        median = l..(s..(nums[n//2]
 
         # three way pivot
         odd = 1

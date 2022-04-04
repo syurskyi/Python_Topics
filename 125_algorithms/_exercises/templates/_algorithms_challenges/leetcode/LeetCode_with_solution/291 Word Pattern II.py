@@ -34,7 +34,7 @@ c_ Solution(o..
                 ... word __ words
                 r.. dfs(pattern[1:], s[l..(word], char2word, words)
         ____:
-            ___ i __ x..(l..(s)):
+            ___ i __ x..(l..(s:
                 word = s[:i+1]
                 __ word __ words:
                     _____

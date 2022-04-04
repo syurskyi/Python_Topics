@@ -27,7 +27,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        cnt = i..(m__.sqrt(n))
+        cnt = i..(m__.sqrt(n
         r.. cnt
 
 

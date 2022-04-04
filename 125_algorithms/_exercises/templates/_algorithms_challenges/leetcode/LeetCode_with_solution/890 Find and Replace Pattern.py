@@ -50,7 +50,7 @@ c_ Solution:
 
         m    # dict
         m_inv    # dict  # bijection
-        ___ i __ r..(l..(word)):
+        ___ i __ r..(l..(word:
             __ word[i] n.. __ m a.. pattern[i] n.. __ m_inv:
                 m[word[i]] = pattern[i]
                 m_inv[pattern[i]] = word[i]

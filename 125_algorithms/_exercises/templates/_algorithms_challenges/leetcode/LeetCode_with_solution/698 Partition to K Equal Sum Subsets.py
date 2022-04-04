@@ -48,7 +48,7 @@ c_ Solution:
             # start index is 0
             r.. dfs(nums, 0, N.., target_sum, visited, k - 1)
 
-        ___ i __ r..(start_idx, l..(nums)):
+        ___ i __ r..(start_idx, l..(nums:
             __ n.. visited[i]:
                 # corner case target_sum is 0
                 visited[i] = T..
@@ -88,7 +88,7 @@ c_ Solution_TLE:
         __ cur_sum a.. cur_sum __ target_sum:
             r.. dfs(nums, N.., target_sum, visited, k - 1)
 
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             __ n.. visited[i]:
                 # corner case target_sum is 0
                 visited[i] = T..

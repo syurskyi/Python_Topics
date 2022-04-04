@@ -45,7 +45,7 @@ c_ Solution:
     ___ camelMatch  queries: L..[s..], pattern: s..) __ L..[b..]:
         ret    # list
         ___ q __ queries:
-            ret.a..(m..(q, pattern))
+            ret.a..(m..(q, pattern
             
         r.. ret
 

@@ -54,7 +54,7 @@ c_ Solution:
                     stk.a..(prev_operand * operand)
                 ____ prev_op __ "/":
                     prev_operand = stk.pop()
-                    stk.a..(i..(prev_operand / operand))
+                    stk.a..(i..(prev_operand / operand
 
                 __ c __ ("+", "-", "*", "/"
                     operand = 0

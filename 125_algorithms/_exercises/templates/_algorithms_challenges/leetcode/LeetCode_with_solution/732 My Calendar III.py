@@ -50,8 +50,8 @@ c_ MyCalendarThree:
         lst    # list
 
     ___ book  start: i.., end: i..) __ i..:
-        bisect.insort(lst, (start, "start"))
-        bisect.insort(lst, (end, "end"))
+        bisect.insort(lst, (start, "start"
+        bisect.insort(lst, (end, "end"
         ret = 0
         count = 0
         ___ _, flag __ lst:

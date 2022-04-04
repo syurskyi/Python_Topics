@@ -3,7 +3,7 @@ ___ common_languages(programmers
       of programming languages, return the common languages"""
    common = s..()
 
-   ___ i __ r..(l..(programmers)):
+   ___ i __ r..(l..(programmers:
       ___ key, value __ programmers.i..:
          __ i __ 1:
             common.update(value)

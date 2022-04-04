@@ -82,7 +82,7 @@ c_ Solution:
                         stk.pop()
                     ____:
                         r..
-                    stk.a..((depth, cur))
+                    stk.a..((depth, cur
 
                 depth = 0
                 i = j

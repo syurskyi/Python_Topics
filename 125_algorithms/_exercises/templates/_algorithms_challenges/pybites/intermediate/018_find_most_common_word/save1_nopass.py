@@ -2,7 +2,7 @@ _______ __
 _______ u__.r..
 
 # data provided
-tmp = __.getenv("TMP", "/tmp")
+tmp = __.g..("TMP", "/tmp")
 stopwords_file = __.p...j..(tmp, 'stopwords')
 harry_text = __.p...j..(tmp, 'harry')
 u__.r...u..(

@@ -33,8 +33,8 @@ c_ Solution:
         :rtype: int
         """
         ret = 0
-        D = d..(l....: d..(i..))
-        ___ i __ r..(l..(A)):
+        D = d..(l....: d..(i..
+        ___ i __ r..(l..(A:
             ___ j __ r..(i
                 d = A[i] - A[j]
                 D[i][d] += 1 + D[j][d]
@@ -50,8 +50,8 @@ c_ Solution:
         :rtype: int
         """
         ret = 0
-        D = d..(l....: d..(i..))
-        ___ i __ r..(l..(A)):
+        D = d..(l....: d..(i..
+        ___ i __ r..(l..(A:
             ___ j __ r..(i
                 delta = A[i] - A[j]
                 D[i][delta] += 1 + D[j][delta]

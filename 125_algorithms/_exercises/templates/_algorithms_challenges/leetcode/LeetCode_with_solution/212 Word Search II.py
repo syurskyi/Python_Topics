@@ -63,8 +63,8 @@ c_ Solution:
 
         ret = s..()
         marked = s..()
-        ___ i __ x..(l..(board)):
-            ___ j __ x..(l..(board[0])):
+        ___ i __ x..(l..(board:
+            ___ j __ x..(l..(board[0]:
                 dfs(board, i, j, trie.root, marked, ret)
 
         r.. l..(ret)
@@ -75,7 +75,7 @@ c_ Solution:
         """
         m = l..(board)
         n = l..(board[0])
-        marked.add((i, j))
+        marked.add((i, j
         c = board[i][j]
 
         __ c __ parent.children:
@@ -88,4 +88,4 @@ c_ Solution:
                 __ 0 <= row < m a.. 0 <= col < n a.. (row, col) n.. __ marked:
                     dfs(board, row, col, cur, marked, ret)
 
-        marked.remove((i, j))
+        marked.remove((i, j

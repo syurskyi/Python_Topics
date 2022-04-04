@@ -69,17 +69,17 @@ c_ Solution(o..
                             count -= 1
                         ____ s[i] __ ' ':
                             count += 1
-                    nestedInt.add(deserialize(s[prev:i+1]))
+                    nestedInt.add(deserialize(s[prev:i+1]
                     i+=1
                     prev = i+1
                 ____ s[i] __ ',':
-                    nestedInt.add(i..(s[prev:i]))
+                    nestedInt.add(i..(s[prev:i]
                     prev = i+1
                 i+=1
             r.. nestedInt
         ____:
             nestedInt = NestedInteger()
             __ s:
-                nestedInt.setInteger(i..(s))
+                nestedInt.setInteger(i..(s
             r.. nestedInt
 

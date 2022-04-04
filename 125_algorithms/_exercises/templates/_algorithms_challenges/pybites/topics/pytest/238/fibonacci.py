@@ -4,6 +4,6 @@ ___ fib(n
    ____ n __ (0, 1
        r.. n
    ____:
-       r..(fib(n-1) + fib(n-2))
+       r..(fib(n-1) + fib(n-2
 
-print(fib(6))
+print(fib(6

@@ -103,7 +103,7 @@ ___ calculate_similarity(cheese, wine
     wine_count = C..(wine.l..
     cheese_count = C..(cheese.l..
     common_letters = (wine_count & cheese_count)
-    similarity = s..(common_letters.values / (1 + (l..(wine) - l..(cheese)) ** 2)
+    similarity = s..(common_letters.values / (1 + (l..(wine) - l..(cheese ** 2)
     r.. similarity
 
 
@@ -140,9 +140,9 @@ ___ match_wine_5cheeses
     scores    # list
     ___ wine, cheese __ product(WINE_LIST 'all' , CHEESES
         similarity = calculate_similarity(cheese, wine)
-        scores.a..(Scores(wine, cheese, similarity))
-    scores = s..(scores, key=l.... x: (x.wine, -x.score, x.cheese))
+        scores.a..(Scores(wine, cheese, similarity
+    scores = s..(scores, key=l.... x: (x.wine, -x.score, x.cheese
     res    # list
     ___ k, g __ groupby(scores, l.... x: x.wine
-        res.a..((k, [rec.cheese ___ rec __ g][:5]))
+        res.a..((k, [rec.cheese ___ rec __ g][:5]
     r.. res

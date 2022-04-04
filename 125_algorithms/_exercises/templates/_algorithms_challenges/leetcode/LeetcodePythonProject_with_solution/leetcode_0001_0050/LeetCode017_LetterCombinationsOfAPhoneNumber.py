@@ -35,7 +35,7 @@ c_ Solution(o..
     
     ___ dfs  l, ind, elem, result
         __ l..(elem) __ l..(l
-            result.a..(s..(elem))
+            result.a..(s..(elem
             r.. result
         ___ c __ l[ind]:
             elem += c
@@ -52,9 +52,9 @@ c_ Solution(o..
         ]
         
         ___ d.. __ testCases:
-            print('digits: %s' % (d..))
+            print('digits: %s' % (d..
             result = letterCombinations(d..)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-+'*15+'-')
 
 __ _____ __ _____

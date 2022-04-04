@@ -7,7 +7,7 @@ c_ Solution(o..
     ans = [""] * l..(nums)
     scores    # list
     ___ i, num __ e..(nums
-      scores.a..((num, i))
+      scores.a..((num, i
     scores.s..(r.._T..
     rankTitles = ["Gold Medal", "Silver Medal", "Bronze Medal"]
     rank = 0

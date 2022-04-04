@@ -24,7 +24,7 @@ ___ calculator(operation, numbers
         total = f__(numbers[0])
         ___ i __ numbers[1:]:
             total = total / f__(i)
-    print(t..(total))
+    print(t..(total
     r.. r..(total,2)
 
 

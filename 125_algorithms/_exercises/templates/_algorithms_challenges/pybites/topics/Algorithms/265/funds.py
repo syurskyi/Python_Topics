@@ -18,9 +18,9 @@ ___ max_fund(village
     # Hint: while iterating, you could save the best_sum collected so far
     # return total, starting, ending
     best_sum, total, starting, ending = 0, 0, 0, 0
-    ___ index __ r..(l..(village)):
+    ___ index __ r..(l..(village:
         total = 0
-        ___ i __ r..(l..(village[index:])):
+        ___ i __ r..(l..(village[index:]:
             total += village[index+i]
             __ total >= best_sum:
                 best_sum = total
@@ -31,7 +31,7 @@ ___ max_fund(village
     ____:
         r.. (best_sum, starting+1, ending+1)
 
-print(max_fund(community))
-print(max_fund(poverty))
-print(max_fund(some))
-print(max_fund(extreme))
+print(max_fund(community
+print(max_fund(poverty
+print(max_fund(some
+print(max_fund(extreme

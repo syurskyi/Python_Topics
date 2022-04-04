@@ -18,7 +18,7 @@ c_ Solution(o..
     j = 0
     score = 0
     chashmap    # dict
-    ___ i __ r..(0, l..(s)):
+    ___ i __ r..(0, l..(s:
       w.... j < l..(s) a.. (score < k o. chashmap.g.. s[j], 0) != 0
         __ chashmap.g.. s[j], 0) __ 0:
           score += 1

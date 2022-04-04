@@ -16,7 +16,7 @@ c_ Solution(o..
         r.. cnt
     
     ___ checkNum  num
-        arr = l..(s..(num))
+        arr = l..(s..(num
         i, j = 0, l..(arr)-1
         arr0 = ['']*l..(arr)
         hashmap = {

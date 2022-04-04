@@ -8,19 +8,19 @@ c_ GigasecondTest(unittest.TestCase
     ___ test_1
         assertEqual(
             date(2043, 1, 1),
-            add_gigasecond(date(2011, 4, 25))
+            add_gigasecond(date(2011, 4, 25
         )
 
     ___ test_2
         assertEqual(
             date(2009, 2, 19),
-            add_gigasecond(date(1977, 6, 13))
+            add_gigasecond(date(1977, 6, 13
         )
 
     ___ test_3
         assertEqual(
             date(1991, 3, 27),
-            add_gigasecond(date(1959, 7, 19))
+            add_gigasecond(date(1959, 7, 19
         )
 
     ___ test_yourself

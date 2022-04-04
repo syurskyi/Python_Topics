@@ -24,6 +24,6 @@ ___ get_time_diff(d1, h1, m1, s1, d2, h2, m2, s2
 
 ___ i __ r..(amount_values
     d1,h1,m1,s1,d2,h2,m2,s2 = map(i..,input().s..
-    results.a..(get_time_diff(d1,h1,m1,s1, d2, h2, m2, s2))
+    results.a..(get_time_diff(d1,h1,m1,s1, d2, h2, m2, s2
 
 print(*results)

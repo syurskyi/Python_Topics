@@ -41,7 +41,7 @@ c_ Solution:
                 tmp.a..(res + 1)
 
         # to prevent len(tmp) == 0
-        tmp.extend((0, 0))
+        tmp.extend((0, 0
         tmp.s..(r.._T..
 
         ans = m..(ans, tmp[0] + tmp[1])

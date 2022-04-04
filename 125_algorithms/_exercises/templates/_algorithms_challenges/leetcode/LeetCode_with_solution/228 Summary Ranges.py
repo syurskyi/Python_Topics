@@ -22,7 +22,7 @@ c_ Solution:
         ___ i __ x..(1, n
             __ nums[i] != pre+1:
                 __ pre != bgn:
-                    ret.a..("%d->%d"%(bgn, pre))
+                    ret.a..("%d->%d"%(bgn, pre
                 ____:
                     ret.a..("%d"%bgn)
                 bgn = nums[i]
@@ -31,7 +31,7 @@ c_ Solution:
 
         # clean up
         __ pre != bgn:
-            ret.a..("%d->%d"%(bgn, pre))
+            ret.a..("%d->%d"%(bgn, pre
         ____:
             ret.a..("%d"%bgn)
 

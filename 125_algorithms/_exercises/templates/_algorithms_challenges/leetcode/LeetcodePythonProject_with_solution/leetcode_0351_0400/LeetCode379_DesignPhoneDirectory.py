@@ -6,7 +6,7 @@ Created on Apr 1, 2017
 
 c_ PhoneDirectory(o..
     ___ - , maxNumbers
-        availableNums = s..(r..(maxNumbers))
+        availableNums = s..(r..(maxNumbers
         usedNums = s..()
     
     ___ get

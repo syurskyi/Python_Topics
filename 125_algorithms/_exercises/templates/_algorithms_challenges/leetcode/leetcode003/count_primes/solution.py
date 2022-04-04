@@ -34,4 +34,4 @@ c_ Solution(o..
 
 
 s = Solution()
-print(s.countPrimes(500))
+print(s.countPrimes(500

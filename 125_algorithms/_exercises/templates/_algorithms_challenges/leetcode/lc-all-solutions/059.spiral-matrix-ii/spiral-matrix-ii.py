@@ -16,11 +16,11 @@ c_ Solution(o..
         ans[i][right] = k
         k += 1
       right -= 1
-      ___ i __ r..(r..(left, right + 1)):
+      ___ i __ r..(r..(left, right + 1:
         ans[down][i] = k
         k += 1
       down -= 1
-      ___ i __ r..(r..(up, down + 1)):
+      ___ i __ r..(r..(up, down + 1:
         ans[i][left] = k
         k += 1
       left += 1

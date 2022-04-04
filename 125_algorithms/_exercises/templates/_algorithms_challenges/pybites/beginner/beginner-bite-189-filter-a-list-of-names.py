@@ -33,7 +33,7 @@ ___ filter_names_1(names
         cnt += 1
     r.. filtered
 
-print(filter_names_1(names))
+print(filter_names_1(names
 
 # Solution 2 (using generator)
 ___ filter_names_2(names

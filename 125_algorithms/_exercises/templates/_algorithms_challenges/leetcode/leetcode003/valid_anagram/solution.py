@@ -37,5 +37,5 @@ c_ Solution(o..
 
 
 s = Solution()
-print(s.isAnagram("aacc", "ccac"))
-print(s.isAnagram("abcd", "bcda"))
+print(s.isAnagram("aacc", "ccac"
+print(s.isAnagram("abcd", "bcda"

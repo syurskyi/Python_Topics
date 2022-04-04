@@ -22,7 +22,7 @@ c_ Solution(o..
                 r.. res
             v = nums[i][j+1]
             right = m..(right, v)
-            heapq.heappush(pq, (v, i, j+1))
+            heapq.heappush(pq, (v, i, j+1
         r.. res
     
     ___ test

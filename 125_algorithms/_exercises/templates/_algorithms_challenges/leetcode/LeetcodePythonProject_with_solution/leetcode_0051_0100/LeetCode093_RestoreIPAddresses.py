@@ -16,7 +16,7 @@ c_ Solution(o..
     
     ___ helper  res, curr, s, ind
         __ ind __ l..(s) a.. l..(curr) __ 4:
-            res.a..('.'.j..(curr))
+            res.a..('.'.j..(curr
         __ ind >= l..(s
             r..
         ___ i __ r..(ind+1, ind+4

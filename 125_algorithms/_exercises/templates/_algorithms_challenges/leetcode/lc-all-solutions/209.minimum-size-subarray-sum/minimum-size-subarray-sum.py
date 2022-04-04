@@ -8,7 +8,7 @@ c_ Solution(o..
     s.. = 0
     j = 0
     ans = f__("inf")
-    ___ i __ r..(0, l..(nums)):
+    ___ i __ r..(0, l..(nums:
       w.... j < l..(nums) a.. s.. < target:
         s.. += nums[j]
         j += 1

@@ -41,5 +41,5 @@ c_ Solution(o..
 a1 = [0, 1, 2, 4, 5, 7]
 a2 = [0, 5, 9]
 s = Solution()
-print(s.summaryRanges(a1))
-print(s.summaryRanges(a2))
+print(s.summaryRanges(a1
+print(s.summaryRanges(a2

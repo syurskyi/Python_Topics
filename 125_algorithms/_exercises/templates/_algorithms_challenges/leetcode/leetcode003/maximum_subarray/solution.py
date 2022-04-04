@@ -15,7 +15,7 @@ c_ Solution:
             r.. E..(msg)
         max_sum = A[0]
         max_current = max_sum
-        ___ i __ r..(1, l..(A)):
+        ___ i __ r..(1, l..(A:
             max_current = m..(A[i], max_current + A[i])
             max_sum = m..(max_sum, max_current)
         r.. max_sum

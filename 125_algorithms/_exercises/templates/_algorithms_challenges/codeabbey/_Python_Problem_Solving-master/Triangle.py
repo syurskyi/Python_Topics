@@ -4,7 +4,7 @@ res= ''
 ___ i __ r..(0,data
     para = input().s.. 
     
-    para = l.. m..(i..,para))
+    para = l.. m..(i..,para
     
     a = para[0]
     b = para[1]

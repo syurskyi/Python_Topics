@@ -31,7 +31,7 @@ c_ Solution:
                 _____
 
             ___ word __ dfs(s[size:], words, memo
-                res.a..('{0} {1}'.f..(prefix, word))
+                res.a..('{0} {1}'.f..(prefix, word
 
         memo[s] = res
         r.. res
@@ -62,7 +62,7 @@ c_ Solution:
 
     ___ dfs  s, words, ans, p..
         __ n.. s:
-            ans.a..(' '.j..(p..))
+            ans.a..(' '.j..(p..
             r..
 
         ___ word __ words:

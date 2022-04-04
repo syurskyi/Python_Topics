@@ -23,17 +23,17 @@ c_ Calculator:
             operator = operator_stack.pop(0)
             num1 = num_stack.pop(0)
             num2 = num_stack.pop(0)
-            num_stack.insert(0, evaluate(operator, num1, num2))
+            num_stack.insert(0, evaluate(operator, num1, num2
         r.. num_stack.pop(0)
 
     ___ evaluate  operator, num1, num2
-        r.. eval(s..(num1) + operator + s..(num2))
+        r.. eval(s..(num1) + operator + s..(num2
 
     ___ num_stack
         r.. l.. m..(i.., l..(f.. digit, tokens))))
 
     ___ operator_stack
-        r.. l..(f.. operator, tokens))
+        r.. l..(f.. operator, tokens
 
     ___ valid
         r.. (valid_elements() a..
@@ -49,7 +49,7 @@ c_ Calculator:
                    slices_of_two
 
     ___ slices_of_two
-        r.. l..(z..(tokens, tokens[1:]))
+        r.. l..(z..(tokens, tokens[1:]
 
     ___ valid_elements
         r.. a..(valid_element(element) ___ element __ tokens)

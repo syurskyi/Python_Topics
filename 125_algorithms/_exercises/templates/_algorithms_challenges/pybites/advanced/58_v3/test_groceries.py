@@ -12,7 +12,7 @@ ___ cart
 
     items    # list
     ___ item __ z..(products, prices, cravings
-        items.a..(Item(*item))
+        items.a..(Item(*item
 
     r.. Groceries(items)
 

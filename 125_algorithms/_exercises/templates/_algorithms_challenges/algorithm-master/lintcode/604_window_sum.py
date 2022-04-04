@@ -11,7 +11,7 @@ c_ Solution:
             r.. ans
 
         _sum = 0
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             _sum += A[i]
 
             __ i < k - 1:

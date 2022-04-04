@@ -111,7 +111,7 @@ c_ ConnectTest(unittest.TestCase
             got = winner __ winner ____ "None"
             assertEqual(winner, testcase["winner"],
                              "Test failed: %s, expected winner: %s, got: %s"
-                             % (testcase["description"], expected, got))
+                             % (testcase["description"], expected, got
 
 
 __ _____ __ _____

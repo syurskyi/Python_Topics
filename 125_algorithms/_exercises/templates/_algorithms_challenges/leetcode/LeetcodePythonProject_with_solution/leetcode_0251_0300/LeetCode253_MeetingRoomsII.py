@@ -23,7 +23,7 @@ c_ Solution(o..
             w.... heap a.. heap[0] <= interval.start:
                 heapq.heappop(heap)
             heapq.heappush(heap, interval.end)
-            maxLen = m..(maxLen, l..(heap))
+            maxLen = m..(maxLen, l..(heap
         r.. maxLen
      
     ___ test
@@ -34,7 +34,7 @@ c_ Solution(o..
             [[2, 15], [36, 45], [9, 29], [16, 23], [4, 9]],
         ]
         ___ intervals __ testCases:
-            print('intervals: %s' % (intervals))
+            print('intervals: %s' % (intervals
             intervals = [Interval(inter[0], inter[1]) ___ inter __ intervals]
             result = minMeetingRooms(intervals)
             print('result: %s' % result)

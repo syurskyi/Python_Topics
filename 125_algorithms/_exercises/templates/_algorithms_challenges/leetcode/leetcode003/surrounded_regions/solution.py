@@ -28,23 +28,23 @@ c_ Solution:
         """Use BFS to set O to Y"""
         queue    # list
         board[y][x] = 'Y'
-        queue.a..((x, y))
+        queue.a..((x, y
         w.... queue:
             root_x, root_y = queue.pop(0)
             ___ node __ adjacent(board, root_x, root_y
                 x, y = node
                 __ board[y][x] != 'Y':
                     board[y][x] = 'Y'
-                    queue.a..((x, y))
+                    queue.a..((x, y
 
     ___ adjacent  board, x, y
         res    # list
         __ x + 1 < m a.. board[y][x + 1] __ 'O':
-            res.a..((x + 1, y))
+            res.a..((x + 1, y
         __ x - 1 > 0 a.. board[y][x - 1] __ 'O':
-            res.a..((x - 1, y))
+            res.a..((x - 1, y
         __ y + 1 < n a.. board[y + 1][x] __ 'O':
-            res.a..((x, y + 1))
+            res.a..((x, y + 1
         __ y - 1 > 0 a.. board[y - 1][x] __ 'O':
-            res.a..((x, y - 1))
+            res.a..((x, y - 1
         r.. res

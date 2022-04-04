@@ -14,7 +14,7 @@ ___ programmers
 ___ test_common_languages(programmers
     expected   'JS', 'Python'
     actual  common_languages(programmers)
-    ... s..(l..(actual)) __ expected
+    ... s..(l..(actual __ expected
 
 
 ___ test_adding_programmer_without_js(programmers
@@ -36,4 +36,4 @@ ___ test_common_languages_adding_new_common_language(programmers
     programmers 'sara' .a..('C++')
     expected   'C++', 'JS', 'Python'
     actual  common_languages(programmers)
-    ... s..(l..(actual)) __ expected
+    ... s..(l..(actual __ expected

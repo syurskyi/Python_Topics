@@ -36,7 +36,7 @@ c_ SummaryRanges(o..
         :type val: int
         :rtype: void
         """
-        itvls.a..(Interval(val, val))
+        itvls.a..(Interval(val, val
 
     ___ getIntervals
         """

@@ -11,7 +11,7 @@ c_ Solution(o..
         c = m..([(s.c.. c), c) ___ c __ s])[1]
         __ s.c.. c) >= k:
             r.. l..(s)
-        r.. m..(longestSubstring_orig(t, k) ___ t __ s.s..(c))
+        r.. m..(longestSubstring_orig(t, k) ___ t __ s.s..(c
     
     ___ longestSubstring  s, k
         __ l..(s) < k: r.. 0
@@ -27,7 +27,7 @@ c_ Solution(o..
             r.. l..(s)
         maxRes = f__('-inf')
         ___ t __ s.s..(minChar
-            maxRes = m..(maxRes, longestSubstring(t, k))
+            maxRes = m..(maxRes, longestSubstring(t, k
         r.. maxRes
     
     ___ longestSubstring_another  s, k
@@ -42,13 +42,13 @@ c_ Solution(o..
         print('splitSet: %s' % splitSet)
         maxLen = 0
         prev = 0
-        ___ i __ r..(l..(s)):
+        ___ i __ r..(l..(s:
             __ s[i] __ splitSet:
                 __ prev < i:
-                    maxLen = m..(maxLen, longestSubstring_another(s[prev:i], k))
+                    maxLen = m..(maxLen, longestSubstring_another(s[prev:i], k
                 prev = i+1
         __ prev < l..(s
-            maxLen = m..(maxLen, longestSubstring_another(s[prev:], k))
+            maxLen = m..(maxLen, longestSubstring_another(s[prev:], k
         r.. maxLen
     
     ___ test

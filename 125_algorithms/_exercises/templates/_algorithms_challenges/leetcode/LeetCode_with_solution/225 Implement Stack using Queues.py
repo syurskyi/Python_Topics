@@ -43,7 +43,7 @@ c_ Stack:
             t ^= 1
 
         w.... l..(q[t]) > 1:
-            q[t^1].a..(q[t].pop(0))
+            q[t^1].a..(q[t].pop(0
 
         r.. q[t].pop()
 

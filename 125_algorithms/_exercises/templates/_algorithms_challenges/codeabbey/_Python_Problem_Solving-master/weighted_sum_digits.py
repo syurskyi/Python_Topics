@@ -5,7 +5,7 @@ result    # list
 w.... l..(result) < data:
     #split all the records so that it can be accessed differently
     num = input().s..
-    ___ i __ r..(0,l..(num)):
+    ___ i __ r..(0,l..(num:
         
         digitsum = 0
         #take data individually to perform weighted sum
@@ -20,4 +20,4 @@ w.... l..(result) < data:
 
 #displaying the records
 ___ i __ result:
-    print(i,end=(' '))
+    print(i,end=(' '

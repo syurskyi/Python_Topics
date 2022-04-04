@@ -26,7 +26,7 @@ c_ Solution(o..
           __ board[ni][nj] __ "M":
             mineCnt += 1
           ____:
-            nbrs.a..((ni, nj))
+            nbrs.a..((ni, nj
       __ mineCnt __ 0:
         queue.extend(nbrs)
       board[i][j] = numbers[mineCnt]

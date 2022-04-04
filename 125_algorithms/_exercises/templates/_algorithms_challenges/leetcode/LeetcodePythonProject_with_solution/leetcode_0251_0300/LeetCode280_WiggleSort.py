@@ -22,9 +22,9 @@ c_ Solution(o..
             [3, 5, 2, 1, 6, 4],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             wiggleSort(nums)
-            print('after sort: %s' % (nums))
+            print('after sort: %s' % (nums
             print('-='*20+'-')
 
 __ _____ __ _____

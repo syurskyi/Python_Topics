@@ -7,7 +7,7 @@ ___ cached_fib(n
     __ n < 2:
         r.. n
     ____:
-        r.. (cached_fib(n - 1) + cached_fib(n - 2))
+        r.. (cached_fib(n - 1) + cached_fib(n - 2
 
 
 __ _____ __ _____

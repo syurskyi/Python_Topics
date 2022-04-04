@@ -34,10 +34,10 @@ c_ Solution:
 
         __ n.. cur o. is_valid(cur[-1]
             __ l..(cur) __ 4 a.. n.. seq:  # check the last one first
-                result.a..(".".j..(cur))
+                result.a..(".".j..(cur
                 r..
 
-            ___ i __ x..(1, m..(3, l..(seq))+1
+            ___ i __ x..(1, m..(3, l..(seq+1
                 dfs(seq[i:], cur+[seq[:i]], result)
 
     ___ dfs  seq, cur, result
@@ -54,12 +54,12 @@ c_ Solution:
         """
         # terminal condition
         __ n.. seq a.. l..(cur)__4:
-            result.a..(".".j..(cur))
+            result.a..(".".j..(cur
             r..
 
         # for i in xrange(1, 3+1):
         # for loop
-        ___ i __ x..(1, m..(3, l..(seq)) + 1
+        ___ i __ x..(1, m..(3, l..(seq + 1
             new_seg = seq[:i]
             # condition check
             __ l..(cur) < 4 a.. is_valid(new_seg

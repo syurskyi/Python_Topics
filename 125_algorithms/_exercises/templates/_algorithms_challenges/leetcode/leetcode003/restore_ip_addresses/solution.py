@@ -23,9 +23,9 @@ c_ Solution:
         __ l..(cand) > 4 o. l..(cand) __ 4 a.. s:
             r..
         ____ n.. s a.. l..(cand) __ 4:
-                res.a..('.'.j..(cand))
+                res.a..('.'.j..(cand
         ____:
-            k = m..(3, l..(s))  # Ensures s[:j + 1] won't be duplicate
+            k = m..(3, l..(s  # Ensures s[:j + 1] won't be duplicate
             ___ j __ r..(k
                 b = s[:j + 1]
                 __ is_valid_byte(b
@@ -44,5 +44,5 @@ c_ Solution:
 a = "25525511135"
 b = "010010"
 s = Solution()
-print(s.restoreIpAddresses(a))
-print(s.restoreIpAddresses(b))
+print(s.restoreIpAddresses(a
+print(s.restoreIpAddresses(b

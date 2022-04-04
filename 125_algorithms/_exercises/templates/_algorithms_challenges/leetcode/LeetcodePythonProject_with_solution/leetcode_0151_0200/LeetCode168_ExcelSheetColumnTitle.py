@@ -13,15 +13,15 @@ c_ Solution(o..
         res = ''
         w.... n > 0:
             mod = (n-1)%26
-            res = chr(mod+o..('A'))+res
+            res = chr(mod+o..('A'+res
             n = i..((n-mod)/26)
         r.. res
     
     ___ test
         ___ n __ r..(30
-            print('n: %s' % (n))
+            print('n: %s' % (n
             result = convertToTitle(n)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20 + '-')
 
 __ _____ __ _____

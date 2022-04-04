@@ -33,7 +33,7 @@ ___ simple_calculator(calculation
     __ is_numeric(values[0]) a.. is_numeric(values[2]) a.. values[1] __ operations:
         operation = operations[values[1]]
         ___
-            r.. operation(f__(values[0]),f__(values[2]))
+            r.. operation(f__(values[0]),f__(values[2]
         ______ ZeroDivisionError:
             r.. V...("Division by zero")
 

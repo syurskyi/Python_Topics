@@ -76,7 +76,7 @@ c_ SimpleLinkedListTest(unittest.TestCase
         assertIsNone(sut.head().next
 
     ___ test_non_empty_list_traverse
-        sut = LinkedList(r..(10))
+        sut = LinkedList(r..(10
         current = sut.head()
         ___ i __ r..(10
             assertEqual(current.value(), 9 - i)

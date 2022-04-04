@@ -1,6 +1,6 @@
 ____ c.. _______ n..
 _______ __
-_______ pickle
+_______ p..
 _______ u__.r..
 _______ __
 
@@ -8,7 +8,7 @@ _______ __
 # download pickle file and store it in a tmp file
 pkl_file = 'pycon_videos.pkl'
 data = f'https://bites-data.s3.us-east-2.amazonaws.com/{pkl_file}'
-tmp = __.getenv("TMP", "/tmp")
+tmp = __.g..("TMP", "/tmp")
 pycon_videos = __.p...j..(tmp, pkl_file)
 u__.r...u..(data, pycon_videos)
 
@@ -20,7 +20,7 @@ ___ load_pycon_data(pycon_videos=pycon_videos
     """Load the pickle file (pycon_videos) and return the data structure
        it holds"""
 
-    r.. pickle.load(o.. pycon_videos,'rb'))
+    r.. p...l.. o.. pycon_videos,'rb'
 
 
 ___ get_most_popular_talks_by_views(videos
@@ -28,7 +28,7 @@ ___ get_most_popular_talks_by_views(videos
     
 
 
-    r.. s..(videos,r.._T..key=l.... x: i..(x.metrics 'viewCount' ))
+    r.. s..(videos,r.._T..key=l.... x: i..(x.metrics 'viewCount'
 
 
 ___ get_most_popular_talks_by_like_ratio(videos
@@ -38,7 +38,7 @@ ___ get_most_popular_talks_by_like_ratio(videos
        Return the filtered list"""
 
 
-    r.. s..(videos,r.._T..key=l.... x: (i..(x.metrics 'likeCount' ) - i..(x.metrics 'dislikeCount' ))/i..(x.metrics 'viewCount' ))
+    r.. s..(videos,r.._T..key=l.... x: (i..(x.metrics 'likeCount' ) - i..(x.metrics 'dislikeCount' /i..(x.metrics 'viewCount'
 
 
 ___ get_talks_gt_one_hour(videos
@@ -52,7 +52,7 @@ ___ get_talks_lt_twentyfour_min(videos
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
 
-    r.. [video ___ video __ videos __ ('H' n.. __ video.duration a.. i..(__.s..(r"(\d+)M",video.duration).group(1)) < 24)]
+    r.. [video ___ video __ videos __ ('H' n.. __ video.duration a.. i..(__.s..(r"(\d+)M",video.duration).group(1 < 24)]
 
 
 __ _______ __ _______

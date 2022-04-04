@@ -87,11 +87,11 @@ c_ Solution:
 
         __ G[x][y] __ VIRUS:
             visited[x][y] = T..
-            ex_virus[-1].add((x, y))
+            ex_virus[-1].add((x, y
             ___ dx, dy __ V:
                 _x = x + dx
                 _y = y + dy
                 dfs(_x, _y, G, visited, ex_virus, spreading, walls)
         ____ G[x][y] __ NORMAL:
-            spreading[-1].add((x, y))
+            spreading[-1].add((x, y
             walls[-1] += 1

@@ -21,7 +21,7 @@ c_ TransposeTests(unittest.TestCase
 
     ___ test_two_characters_in_a_column
         assertEqual(
-            transpose("\n".j..(["A", "1"])),
+            transpose("\n".j..(["A", "1"],
             "A1"
         )
 
@@ -37,7 +37,7 @@ c_ TransposeTests(unittest.TestCase
         ]
 
         assertEqual(
-            transpose("\n".j..(input_line)),
+            transpose("\n".j..(input_line,
             "\n".j..(expected)
         )
 
@@ -58,7 +58,7 @@ c_ TransposeTests(unittest.TestCase
             "."
         ]
         assertEqual(
-            transpose("\n".j..(input_line)),
+            transpose("\n".j..(input_line,
             "\n".j..(expected)
         )
 
@@ -86,7 +86,7 @@ c_ TransposeTests(unittest.TestCase
             "."
         ]
         assertEqual(
-            transpose("\n".j..(input_line)),
+            transpose("\n".j..(input_line,
             "\n".j..(expected)
         )
 
@@ -114,7 +114,7 @@ c_ TransposeTests(unittest.TestCase
             " ."
         ]
         assertEqual(
-            transpose("\n".j..(input_line)),
+            transpose("\n".j..(input_line,
             "\n".j..(expected)
         )
 
@@ -134,7 +134,7 @@ c_ TransposeTests(unittest.TestCase
             "TREND"
         ]
         assertEqual(
-            transpose("\n".j..(input_line)),
+            transpose("\n".j..(input_line,
             "\n".j..(expected)
         )
 
@@ -156,7 +156,7 @@ c_ TransposeTests(unittest.TestCase
             "EDGE"
         ]
         assertEqual(
-            transpose("\n".j..(input_line)),
+            transpose("\n".j..(input_line,
             "\n".j..(expected)
         )
 
@@ -178,7 +178,7 @@ c_ TransposeTests(unittest.TestCase
             "     R"
         ]
         assertEqual(
-            transpose("\n".j..(input_line)),
+            transpose("\n".j..(input_line,
             "\n".j..(expected)
         )
 
@@ -255,7 +255,7 @@ c_ TransposeTests(unittest.TestCase
             "          ,"
         ]
         assertEqual(
-            transpose("\n".j..(input_line)),
+            transpose("\n".j..(input_line,
             "\n".j..(expected)
         )
 

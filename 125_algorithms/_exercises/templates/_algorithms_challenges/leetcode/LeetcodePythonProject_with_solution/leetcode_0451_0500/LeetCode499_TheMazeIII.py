@@ -18,7 +18,7 @@ c_ Solution(o..
         maxPath = f__('inf')
         map = [[f__('inf')]*n ___ _ __ r..(m)]
         helper(maze, ball, hole, '', 0, result, visited)
-        result.s..(key=l.... x: (x[1], x[0]))
+        result.s..(key=l.... x: (x[1], x[0]
         __ result:
             r.. result[0][0]
         ____:
@@ -37,7 +37,7 @@ c_ Solution(o..
             res, dist0 = isPassing(matrix, start, stop, hole)
             __ res:
                 maxPath = m..(maxPath, p..+dist0)
-                result.a..((curr+dirStr, p..+dist0))
+                result.a..((curr+dirStr, p..+dist0
             ____ n.. visited[stop[0]][stop[1]]:
                 helper(matrix, stop, hole, curr+dirStr, p..+dist, result, visited)
         visited[start[0]][start[1]] = F..
@@ -68,5 +68,5 @@ c_ Solution(o..
                 y += dir[1]
                 dir += 1
             __ x != i o. y != j:
-                steps.add((x, y, dir[2], dist))
+                steps.add((x, y, dir[2], dist
         r.. steps

@@ -25,7 +25,7 @@ c_ Solution(o..
             r.. -1
 
         first    # dict
-        ___ i, v __ e..(l..(s)):
+        ___ i, v __ e..(l..(s:
             __ v n.. __ first:
                 first[v] = i
             ____:

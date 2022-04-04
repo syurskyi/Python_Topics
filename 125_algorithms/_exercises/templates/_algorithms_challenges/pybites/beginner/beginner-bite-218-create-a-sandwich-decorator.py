@@ -56,8 +56,8 @@ ___ sandwich_v2(func
 
 @sandwich_v2
 ___ add_ingredients(ingredients
-    print(' / '.j..(ingredients))
+    print(' / '.j..(ingredients
     r.. l..(ingredients)
 
 ingredients =  'bacon', 'lettuce', 'tomato'
-print(add_ingredients(ingredients))
+print(add_ingredients(ingredients

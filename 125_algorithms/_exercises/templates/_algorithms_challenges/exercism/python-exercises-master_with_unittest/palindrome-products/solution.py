@@ -7,10 +7,10 @@ ___ smallest_palindrome(max_factor, min_factor
 
 
 ___ palindromes(max_factor, min_factor
-    r.. ((a * b, (a, b))
+    r.. ((a * b, (a, b
             ___ a __ r..(min_factor, max_factor + 1)
             ___ b __ r..(min_factor, a + 1)
-            __ is_palindrome(a * b))
+            __ is_palindrome(a * b
 
 
 ___ is_palindrome(n

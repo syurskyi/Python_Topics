@@ -7,4 +7,4 @@ Created on Mar 17, 2017
 c_ Solution(o..
     ___ bulbSwitch  n
         _______ m__
-        r.. i..(m__.sqrt(n))
+        r.. i..(m__.sqrt(n

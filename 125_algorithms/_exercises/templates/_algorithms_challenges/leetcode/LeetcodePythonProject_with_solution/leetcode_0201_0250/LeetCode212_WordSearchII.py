@@ -45,11 +45,11 @@ c_ Solution(o..
         p = p.children[c]
         __ p.isLeaf:
             elem.a..(c)
-            result.add(''.j..(elem))
+            result.add(''.j..(elem
             elem.pop()
         m, n = l..(board), l..(board[0])
         
-        ___ x, y __ ((i, j+1), (i, j-1), (i+1, j), (i-1, j)):
+        ___ x, y __ ((i, j+1), (i, j-1), (i+1, j), (i-1, j:
             __ 0 <= x < m a.. 0 <= y < n:
                 board[i][j] = '#'
                 elem.a..(c)

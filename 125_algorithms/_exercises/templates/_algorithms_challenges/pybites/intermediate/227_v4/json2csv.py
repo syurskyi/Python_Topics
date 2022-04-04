@@ -1,11 +1,11 @@
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 _______ csv
 _______ json
 ____ json.decoder _______ JSONDecodeError
 
 EXCEPTION = 'exception caught'
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 
 
 ___ convert_to_csv(json_file
@@ -27,7 +27,7 @@ ___ convert_to_csv(json_file
 
     w__ o.. json_file, _ __ f:
         ___
-            data = json.load(f)
+            data = json.l.. f)
             fields = data 'mounts'  'collected' [0].k..
             w__ o.. csv_file, 'w') __ csv_fp:
                 writer = csv.DictWriter(csv_fp, fieldnames=fields)

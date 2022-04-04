@@ -17,7 +17,7 @@ ___ _convert_struct_time_to_dt(stime
     -> date(2016, 12, 28)
     """
 
-    dt = d__.d__.fromtimestamp(mktime(stime))
+    dt = d__.d__.fromtimestamp(mktime(stime
 
     r.. dt.date()
 

@@ -20,7 +20,7 @@ c_ Solution:
         ___ x __ r..(m
             ___ y __ r..(n
                 __ (G[x][y] __ s[0] a..
-                    dfs(G, x, y, s, 1, visited)):
+                    dfs(G, x, y, s, 1, visited:
                     r.. T..
 
         r.. F..
@@ -32,7 +32,7 @@ c_ Solution:
         ___ dx, dy __ V:
             _x = x + dx
             _y = y + dy
-            __ n.. (0 <= _x < l..(G) a.. 0 <= _y < l..(G[0])):
+            __ n.. (0 <= _x < l..(G) a.. 0 <= _y < l..(G[0]:
                 _____
             __ visited[_x][_y] o. G[_x][_y] != s[i]:
                 _____

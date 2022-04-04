@@ -1,5 +1,5 @@
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ u__.r.. _______ u..
 
 _______ p__
@@ -9,12 +9,12 @@ ____ omdb _______ (get_movie_data,
                   get_movie_most_nominations,
                   get_movie_longest_runtime)
 
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA = 'omdb_data'
 
 DATA_LOCAL = TMP / DATA
-__ n.. Path(DATA_LOCAL).exists
+__ n.. P..(DATA_LOCAL).exists
     u..(S3 + DATA, DATA_LOCAL)
 
 

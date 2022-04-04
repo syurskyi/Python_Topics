@@ -14,7 +14,7 @@ c_ Solution(o..
         ___ i __ r..(m
             ___ j __ r..(n
                 __ i__0 o. j__0 o. i__m-1 o. j__n-1:
-                    heapq.heappush(heap, (heightMap[i][j], i, j))
+                    heapq.heappush(heap, (heightMap[i][j], i, j
                     visited[i][j] = T..
         res = 0
         w.... heap:
@@ -22,7 +22,7 @@ c_ Solution(o..
             ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
                 __ 0<=x<m a.. 0<=y<n a.. n.. visited[x][y]:
                     res += m..(0, height-heightMap[x][y])
-                    heapq.heappush(heap, (m..(height, heightMap[x][y]), x, y))
+                    heapq.heappush(heap, (m..(height, heightMap[x][y]), x, y
                     visited[x][y] = T..
         r.. res
     
@@ -36,7 +36,7 @@ c_ Solution(o..
         ]
         ___ heightMap __ testCases:
             print('heightMap:')
-            print('\n'.j..([s..(row) ___ row __ heightMap]))
+            print('\n'.j..([s..(row) ___ row __ heightMap]
             result = trapRainWater(heightMap)
             print('result: %s' % result)
             print('-='*30+'-')

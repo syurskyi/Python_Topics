@@ -2,7 +2,7 @@ ____ difflib _______ SequenceMatcher
 _______ __
 ____ u__.r.. _______ u..
 
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 DICTIONARY = __.p...j..(TMP, 'dictionary.txt')
 __ n.. __.p...isfile(DICTIONARY
     u..(

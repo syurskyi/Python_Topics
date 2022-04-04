@@ -109,7 +109,7 @@ ___ similarity(s1, s2
             s2.remove(c)
 
     vals = C..(common).v..
-    r.. s..(vals) / (1 + pow(dlen, 2))
+    r.. s..(vals) / (1 + pow(dlen, 2
 
 
 ___ best_match_per_wine(wine_type="all"
@@ -122,8 +122,8 @@ ___ best_match_per_wine(wine_type="all"
     __ wine_type n.. __ WT:
         r.. V...
     print _*{WT[wine_type]=}')
-    sims = ((w, c, similarity(w, c))
-            ___ w, c __ product(WT[wine_type], CHEESES))
+    sims = ((w, c, similarity(w, c
+            ___ w, c __ product(WT[wine_type], CHEESES
 
     r.. m..(sims, key=l.... x: x[2])
 
@@ -141,6 +141,6 @@ ___ match_wine_5cheeses
     """
     wine_5 = l..()
     ___ wine __ s..(ALL_WINES
-        cheeses = s..(CHEESES, key=l.... x: (-similarity(wine, x), x))[:5]
-        wine_5.a..((wine, cheeses))
+        cheeses = s..(CHEESES, key=l.... x: (-similarity(wine, x), x[:5]
+        wine_5.a..((wine, cheeses
     r.. wine_5

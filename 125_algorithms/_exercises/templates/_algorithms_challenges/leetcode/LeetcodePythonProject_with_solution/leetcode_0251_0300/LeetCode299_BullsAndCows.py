@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ getHint  secret, guess
         bulls = s..()
         hashmap    # dict
-        ___ i, (c1, c2) __ e..(z..(secret, guess)):
+        ___ i, (c1, c2) __ e..(z..(secret, guess:
             __ c1 __ c2:
                 bulls.add(i)
             ____:
@@ -27,10 +27,10 @@ c_ Solution(o..
             ('1123', '0111'),
         ]
         ___ secret, guess __ testCases:
-            print('secret: %s' % (secret))
-            print('guess: %s' % (guess))
+            print('secret: %s' % (secret
+            print('guess: %s' % (guess
             result = getHint(secret, guess)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

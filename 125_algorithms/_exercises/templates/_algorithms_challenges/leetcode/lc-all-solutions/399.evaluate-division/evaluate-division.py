@@ -27,7 +27,7 @@ c_ Graph(o..
           nbrNode = g.g.. nbr)
           __ nbrNode __ node2:
             r.. ans * w
-          queue.a..((nbrNode, ans * w))
+          queue.a..((nbrNode, ans * w
 
     r.. -1.0
 
@@ -56,7 +56,7 @@ c_ Solution(o..
     visited    # dict
     g = Graph()
     ans    # list
-    ___ i __ r..(0, l..(equations)):
+    ___ i __ r..(0, l..(equations:
       label1, label2 = equations[i]
       node1, node2 = g.g.. label1), g.g.. label2)
       g.connect(node1, node2, values[i])

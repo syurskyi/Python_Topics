@@ -9,7 +9,7 @@ c_ Solution(o..
     """
 
     ___ getTokenStartsAt(start
-      ___ i __ r..(start, l..(code)):
+      ___ i __ r..(start, l..(code:
         __ code[i] __ ">":
           _____
       r.. code[start:i + 1]

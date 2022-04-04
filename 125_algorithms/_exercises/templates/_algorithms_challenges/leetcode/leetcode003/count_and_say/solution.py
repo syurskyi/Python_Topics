@@ -17,7 +17,7 @@ c_ Solution(o..
         :type n: int
         :rtype: str
         """
-        ln = l..(s..(1))
+        ln = l..(s..(1
         ___ i __ r..(1, n
             tn    # list
             count = 1
@@ -26,12 +26,12 @@ c_ Solution(o..
                 __ prev __ c:
                     count += 1
                 __ prev __ n.. N.. a.. prev != c:
-                    tn.a..(s..(count))
-                    tn.a..(s..(prev))
+                    tn.a..(s..(count
+                    tn.a..(s..(prev
                     count = 1
                 prev = c
-            tn.a..(s..(count))
-            tn.a..(s..(prev))
+            tn.a..(s..(count
+            tn.a..(s..(prev
             ln = tn
         r.. ''.j..(ln)
 

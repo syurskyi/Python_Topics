@@ -11,7 +11,7 @@ c_ Solution(o..
     ___ i, name __ e..(list2
       d[name] = i
     ___ i, name __ e..(list1
-      idxSum = i + d.g.. name, f__("inf"))
+      idxSum = i + d.g.. name, f__("inf"
       __ idxSum __ minSum:
         ans.a..(name)
       __ idxSum < minSum:

@@ -12,16 +12,16 @@ c_ Solution:
             r.. ans
 
         heap    # list
-        ___ i __ r..(l..(G)):
+        ___ i __ r..(l..(G:
             __ n.. G[i]:
                 _____
 
-            heappush(heap, (G[i][0], i, 0))
+            heappush(heap, (G[i][0], i, 0
 
         w.... heap:
             num, x, y = heappop(heap)
             ans.a..(num)
             __ y + 1 < l..(G[x]
-                heappush(heap, (G[x][y + 1], x, y + 1))
+                heappush(heap, (G[x][y + 1], x, y + 1
 
         r.. ans

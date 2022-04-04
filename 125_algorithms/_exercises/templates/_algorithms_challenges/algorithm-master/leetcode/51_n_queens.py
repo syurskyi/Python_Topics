@@ -14,10 +14,10 @@ c_ Solution:
 
     ___ dfs  G, y, ans
         __ y __ l..(G
-            ans.a..(clone_board(G))
+            ans.a..(clone_board(G
             r..
 
-        ___ x __ r..(l..(G)):
+        ___ x __ r..(l..(G:
             __ is_valid(G, x, y
                 G[x][y] = 'Q'
                 dfs(G, y + 1, ans)
@@ -32,7 +32,7 @@ c_ Solution:
         3. `x - i = y - j` => `x + j = y + i` => left diagonal line
         4. `x - i = -(y - j)` => `x + y = i + j` => right diagonal line
         """
-        ___ i __ r..(l..(G)):
+        ___ i __ r..(l..(G:
             ___ j __ r..(y
                 __ G[i][j] != 'Q':
                     _____
@@ -45,5 +45,5 @@ c_ Solution:
     ___ clone_board  G
         res    # list
         ___ R __ G:
-            res.a..(''.j..(R))
+            res.a..(''.j..(R
         r.. res

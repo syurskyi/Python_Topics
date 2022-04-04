@@ -39,10 +39,10 @@ c_ Solution(o..
             ('d', 'ef'),
         ]
         ___ pattern, s __ testCases:
-            print('pattern: %s' % (pattern))
-            print('s: %s' % (s))
+            print('pattern: %s' % (pattern
+            print('s: %s' % (s
             result = wordPatternMatch(pattern, s)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
     
 __ _____ __ _____

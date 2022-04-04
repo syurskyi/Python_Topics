@@ -103,5 +103,5 @@ c_ SolutionTLE(o..
         __ root __ N..
             r.. 0
 
-        r.. (m..(notrob(root.left), rob(root.left)) +
+        r.. (m..(notrob(root.left), rob(root.left +
                     m..(notrob(root.right), rob(root.right)))

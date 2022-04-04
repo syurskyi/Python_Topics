@@ -17,5 +17,5 @@ ___ decodeMorse(morseCode
     r.. ''.j..([MORSE_CODE[code] ___ code __ morseCode.s.. ])
 
 
-print(decodeMorse('.... . -.--   .--- ..- -.. .   '))
+print(decodeMorse('.... . -.--   .--- ..- -.. .   '
 #                  H    E Y      J    U   D   E  

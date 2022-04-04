@@ -20,21 +20,21 @@ c_ Solution(o..
             area += (rect[2]-rect[0])*(rect[3]-rect[1])
             
             __ (rect[0], rect[1]) n.. __ hashset:
-                hashset.add((rect[0], rect[1]))
+                hashset.add((rect[0], rect[1]
             ____:
-                hashset.discard((rect[0], rect[1]))
+                hashset.discard((rect[0], rect[1]
             __ (rect[0], rect[3]) n.. __ hashset:
-                hashset.add((rect[0], rect[3]))
+                hashset.add((rect[0], rect[3]
             ____:
-                hashset.discard((rect[0], rect[3]))
+                hashset.discard((rect[0], rect[3]
             __ (rect[2], rect[3]) n.. __ hashset:
-                hashset.add((rect[2], rect[3]))
+                hashset.add((rect[2], rect[3]
             ____:
-                hashset.discard((rect[2], rect[3]))
+                hashset.discard((rect[2], rect[3]
             __ (rect[2], rect[1]) n.. __ hashset:
-                hashset.add((rect[2], rect[1]))
+                hashset.add((rect[2], rect[1]
             ____:
-                hashset.discard((rect[2], rect[1]))
+                hashset.discard((rect[2], rect[1]
         
         __ (x1, y1) n.. __ hashset o.\
             (x1, y2) n.. __ hashset o.\

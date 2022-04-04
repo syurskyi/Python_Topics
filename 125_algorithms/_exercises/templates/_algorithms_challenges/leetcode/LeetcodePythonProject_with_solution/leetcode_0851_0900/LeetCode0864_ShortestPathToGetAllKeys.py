@@ -34,7 +34,7 @@ c_ Solution(o..
                 nj = j+y
                 __ 0<=ni<m a.. 0<=nj<n a.. grid[ni][nj] __ keys:
                     __ (ni, nj, keys) n.. __ moves:
-                        moves.add((ni, nj, keys))
+                        moves.add((ni, nj, keys
                         d...a..([ni, nj, steps+1, keys, collectedKeys])
         r.. -1
     

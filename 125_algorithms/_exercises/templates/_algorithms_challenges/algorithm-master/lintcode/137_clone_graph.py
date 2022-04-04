@@ -58,6 +58,6 @@ c_ Solution:
 
         N[node.label] = UndirectedGraphNode(node.label)
         ___ neighbor __ node.neighbors:
-            N[node.label].neighbors.a..(dfs(neighbor, N))
+            N[node.label].neighbors.a..(dfs(neighbor, N
 
         r.. N[node.label]

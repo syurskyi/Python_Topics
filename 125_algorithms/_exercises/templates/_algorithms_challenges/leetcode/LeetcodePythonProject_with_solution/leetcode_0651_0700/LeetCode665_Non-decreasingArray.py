@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         prev = nums[0]
         modified = F..
-        ___ i __ r..(1, l..(nums)):
+        ___ i __ r..(1, l..(nums:
             __ nums[i] < prev:
                 __ modified:
                     r.. F..
@@ -27,7 +27,7 @@ c_ Solution(o..
         :rtype: bool
         """
         modified = 0
-        ___ i __ r..(1, l..(nums)):
+        ___ i __ r..(1, l..(nums:
             __ nums[i-1] > nums[i]:
                 __ modified != 0: r.. F..
                 modified += 1

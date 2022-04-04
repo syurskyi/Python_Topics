@@ -1,12 +1,12 @@
 _______ __
 _______ json
 ____ d__ _______ d__, date, t..
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ t___ _______ Dict, L..
 ____ u__.r.. _______ u..
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 RATES_FILE = TMP / "exchangerates.json"
 
 __ n.. RATES_FILE.exists
@@ -28,7 +28,7 @@ ___ get_all_days(start_date: date, end_date: date) __ L..[date]:
 
 ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, date]:
 
-    dates_open_lookup = s.. m..(l.... x: d__.s..(x, "%Y-%m-%d").date(), daily_rates))
+    dates_open_lookup = s.. m..(l.... x: d__.s..(x, "%Y-%m-%d").date(), daily_rates
 
     dates    # dict
     date_diff = (end - start).days
@@ -52,7 +52,7 @@ ___ exchange_rates(
 ) __ Dict[date, d..]:
     
     w__ o.. RATES_FILE) __ file:
-        data = json.load(file)
+        data = json.l.. file)
 
     start = d__.s..(start_date, "%Y-%m-%d").date()
     end = d__.s..(end_date, "%Y-%m-%d").date()

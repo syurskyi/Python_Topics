@@ -11,7 +11,7 @@ ___ jagged_list(lst_of_lst: L..[L..[i..]], fillvalue: i.. = 0) __ L..[L..[i..]]:
         __ l..(lst) __ max_length:
             _____
         ____:
-            ___ i __ r..(max_length -l..(lst)):
+            ___ i __ r..(max_length -l..(lst:
                 lst.a..(fillvalue)
 
     r.. lst_of_lst

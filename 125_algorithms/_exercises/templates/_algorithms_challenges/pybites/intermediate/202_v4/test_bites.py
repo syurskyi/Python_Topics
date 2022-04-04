@@ -1,11 +1,11 @@
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ tempfile _______ TemporaryDirectory
 
 _______ p__
 
 ____ bites _______ get_most_complex_bites
 
-TMP = Path('/tmp')
+TMP = P..('/tmp')
 BITES_CSV = TMP / 'intro_bites.csv'
 INTRO_BITE_STATS = """Bite;Difficulty
 Bite 101. f-strings and a simple if/else;3.52

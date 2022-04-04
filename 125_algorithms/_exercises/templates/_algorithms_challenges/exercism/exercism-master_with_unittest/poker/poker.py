@@ -55,11 +55,11 @@ c_ Hand:
         r.. straight() a.. flush()
 
     ___ straight
-        r.. (l..(r..(m..(ranks), m..(ranks) + 1)) __
-                s..(ranks))
+        r.. (l..(r..(m..(ranks), m..(ranks) + 1 __
+                s..(ranks
 
     ___ flush
-        r.. l..(s..(suits)) __ 1
+        r.. l..(s..(suits __ 1
 
     ___ four_of_a_kind
         r.. m..(rank_occurences().values __ 4

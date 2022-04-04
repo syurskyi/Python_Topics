@@ -7,7 +7,7 @@ c_ Solution(o..
     __ n.. nums:
       r.. 0
     up = down = 1
-    ___ i __ r..(1, l..(nums)):
+    ___ i __ r..(1, l..(nums:
       __ nums[i] > nums[i - 1]:
         up = down + 1
       ____ nums[i] < nums[i - 1]:

@@ -57,15 +57,15 @@ c_ Solution(o..
         # add cells at the four edges
         ___ i __ x..(m
             visited[i][0] = T..
-            heapq.heappush(h, Cell(i, 0, mat[i][0]))
+            heapq.heappush(h, Cell(i, 0, mat[i][0]
             visited[i][n-1] = T..
-            heapq.heappush(h, Cell(i, n-1, mat[i][n-1]))
+            heapq.heappush(h, Cell(i, n-1, mat[i][n-1]
 
         ___ j __ x..(1, n-1
             visited[0][j] = T..
-            heapq.heappush(h, Cell(0, j, mat[0][j]))
+            heapq.heappush(h, Cell(0, j, mat[0][j]
             visited[m-1][j] = T..
-            heapq.heappush(h, Cell(m-1, j, mat[m-1][j]))
+            heapq.heappush(h, Cell(m-1, j, mat[m-1][j]
 
         # BFS with heap
         trapped = 0

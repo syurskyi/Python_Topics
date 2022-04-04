@@ -15,7 +15,7 @@ c_ Solution(o..
         w.... k < n:
           a = i..(num[i:j + 1])
           b = i..(num[j + 1:k + 1])
-          add = s..(i..(a + b))
+          add = s..(i..(a + b
           __ n.. num.startswith(add, k + 1
             _____
           __ l..(add) + 1 + k __ l..(num

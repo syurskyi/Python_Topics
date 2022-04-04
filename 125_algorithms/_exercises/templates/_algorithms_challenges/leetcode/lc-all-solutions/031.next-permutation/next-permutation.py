@@ -22,7 +22,7 @@ c_ Solution(o..
 
     # find the min value in the rest of the array
     minPos, minV = pos + 1, nums[pos + 1]
-    ___ i __ r..(pos + 1, l..(nums)):
+    ___ i __ r..(pos + 1, l..(nums:
       __ nums[i] <= minV a.. nums[i] > nums[pos]:
         minV = nums[i]
         minPos = i

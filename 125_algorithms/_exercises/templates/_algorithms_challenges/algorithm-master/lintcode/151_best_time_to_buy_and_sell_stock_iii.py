@@ -24,7 +24,7 @@ c_ Solution:
         dp = [[0] * STAGE ___ _ __ r..(2)]
 
         i = j = prev = curr = profit = 0
-        ___ i __ r..(1, l..(P)):
+        ___ i __ r..(1, l..(P:
             prev = curr
             curr = 1 - curr
             profit = P[i] - P[i - 1]

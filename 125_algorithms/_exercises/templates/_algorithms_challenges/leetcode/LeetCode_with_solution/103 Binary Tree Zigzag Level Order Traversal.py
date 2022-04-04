@@ -44,7 +44,7 @@ c_ Solution:
             ____:
                 result.a..([element.val ___ element __ r..(lst)])
 
-            ___ i __ r..(l..(lst)):  # evaluation time
+            ___ i __ r..(l..(lst:  # evaluation time
                 element = lst.pop(0)  # queue 
                 __ element.left:
                     lst.a..(element.left)

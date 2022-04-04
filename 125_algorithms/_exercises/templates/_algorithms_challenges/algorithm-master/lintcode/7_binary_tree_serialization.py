@@ -27,14 +27,14 @@ c_ Solution:
                 vals.a..(EMPTY)
                 _____
 
-            vals.a..(s..(node.val))
+            vals.a..(s..(node.val
             queue.a..(node.left)
             queue.a..(node.right)
 
         w.... vals[-1] __ EMPTY:
             vals.pop()
 
-        r.. TEMPLATE.f..(','.j..(vals))
+        r.. TEMPLATE.f..(','.j..(vals
 
     ___ deserialize  data
         """Decodes your encoded data to tree.
@@ -53,7 +53,7 @@ c_ Solution:
         n = l..(vals)
         i = 0
 
-        root = TreeNode(i..(vals[i]))
+        root = TreeNode(i..(vals[i]
         queue = [root]
 
         ___ node __ queue:
@@ -66,6 +66,6 @@ c_ Solution:
                     _____
 
                 setattr(node, branch, TreeNode(i..(vals[i])))
-                queue.a..(getattr(node, branch))
+                queue.a..(getattr(node, branch
 
         r.. root

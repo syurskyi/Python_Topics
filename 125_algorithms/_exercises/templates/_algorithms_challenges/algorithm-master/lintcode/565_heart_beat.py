@@ -9,7 +9,7 @@ c_ HeartBeat:
     @return: nothing
     """
     ___ initialize  slaves_ip_list, k
-        slaves_ip_list.update(d...f..(slaves_ip_list, 0))
+        slaves_ip_list.update(d...f..(slaves_ip_list, 0
         ttl = 2 * k
 
     """

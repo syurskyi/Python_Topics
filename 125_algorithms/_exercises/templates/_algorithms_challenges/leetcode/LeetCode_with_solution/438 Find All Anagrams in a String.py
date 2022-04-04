@@ -25,7 +25,7 @@ c_ Solution:
         __ counter_cur __ counter_target:
             ret.a..(0)
 
-        ___ idx __ r..(l..(target), l..(s)):
+        ___ idx __ r..(l..(target), l..(s:
             head = s[idx - l..(target)]
             tail = s[idx]
             counter_cur[tail] += 1

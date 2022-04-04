@@ -25,16 +25,16 @@ c_ Solution:
         """
         idx = [
             i
-            ___ i __ r..(l..(S))
+            ___ i __ r..(l..(S
             __ S[i] __ C
         ]
         idx = [-f__("inf")] + idx + [f__("inf")]
         ret    # list
         i = 0
-        ___ j __ r..(l..(S)):
+        ___ j __ r..(l..(S:
             w.... n.. idx[i] <= j < idx[i+1]:
                 i += 1
 
-            ret.a..(m..(j - idx[i], idx[i+1] - j))
+            ret.a..(m..(j - idx[i], idx[i+1] - j
 
         r.. ret

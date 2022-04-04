@@ -78,5 +78,5 @@ __ _______ __ _______
     insert = [4, 9]
     lst_interval    # list
     ___ item __ lst:
-        lst_interval.a..(Interval(item[0], item[1]))
-    print Solution().insert(lst_interval, Interval(insert[0], insert[1]))
+        lst_interval.a..(Interval(item[0], item[1]
+    print Solution().insert(lst_interval, Interval(insert[0], insert[1]

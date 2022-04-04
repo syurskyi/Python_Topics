@@ -11,7 +11,7 @@ ___ toAscii85(data
         hex_str += f..(o..(c), '02x')
     index = 0
     w.... index < l..(hex_str
-        padding = m..(((index + 8) - l..(hex_str)) / 2, 0)
+        padding = m..(((index + 8) - l..(hex_str / 2, 0)
         encode_block = hex_str[index:index + 8] __ padding __ 0 ____ hex_str[index:] + '00' * padding
         __ encode_block __ '0' * 8 a.. padding __ 0:
             result += 'z'
@@ -48,5 +48,5 @@ ___ fromAscii85(data
             __ padding > 0:
                 encoded_byte = encoded_byte[:-padding * 2]
             index += 5
-            result += ''.j..([chr(i..(encoded_byte[i:i + 2], 16)) ___ i __ r..(0, l..(encoded_byte), 2)])
+            result += ''.j..([chr(i..(encoded_byte[i:i + 2], 16 ___ i __ r..(0, l..(encoded_byte), 2)])
     r.. result

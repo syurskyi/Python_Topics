@@ -5,4 +5,4 @@ c_ Solution(o..
     :type b: str
     :rtype: int
     """
-    r.. m..(l..(a), l..(b)) __ a != b ____ -1
+    r.. m..(l..(a), l..(b __ a != b ____ -1

@@ -31,7 +31,7 @@ __ _____ __ _____
         [1, 0, 3, 0, 5],
     ]
     numMatrix = NumMatrix(matrix)
-    print(numMatrix.sumRegion(2, 1, 4, 3))
-    print(numMatrix.sumRegion(1, 1, 2, 2))
-    print(numMatrix.sumRegion(1, 2, 2, 4))
+    print(numMatrix.sumRegion(2, 1, 4, 3
+    print(numMatrix.sumRegion(1, 1, 2, 2
+    print(numMatrix.sumRegion(1, 2, 2, 4
     print('-='*30+'-')

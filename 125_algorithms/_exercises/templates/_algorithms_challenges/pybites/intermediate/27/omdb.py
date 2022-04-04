@@ -6,7 +6,7 @@ ___ get_movie_data(files: l..) __ l..:
     movie_files    # list
     ___ file __ files:
         w__ o.. file) __ mf:
-            data = json.load(mf)
+            data = json.l.. mf)
             movie_files.a..(data)
     r.. movie_files
     

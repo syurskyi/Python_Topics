@@ -10,7 +10,7 @@ c_ Solution(o..
       __ target __ 0:
         r.. res.a..(p.. + [])
 
-      ___ i __ r..(start, l..(candidates)):
+      ___ i __ r..(start, l..(candidates:
         __ target - candidates[i] >= 0:
           p...a..(candidates[i])
           dfs(candidates, i, target - candidates[i], p.., res)

@@ -45,7 +45,7 @@ c_ Solution(o..
         gmax = 1
         ___ i __ x..(m
             ___ j __ x..(n
-                gmax = m..(gmax, longest(matrix, i, j))
+                gmax = m..(gmax, longest(matrix, i, j
 
         r.. gmax
 
@@ -59,7 +59,7 @@ c_ Solution(o..
             ___ d __ dirs:
                 I, J = i + d[0], j + d[1]
                 __ 0 <= I < m a.. 0 <= J < n a.. matrix[I][J] > matrix[i][j]:
-                    maxa = m..(maxa, 1 + longest(matrix, I, J))
+                    maxa = m..(maxa, 1 + longest(matrix, I, J
 
             cache[i][j] = maxa
 

@@ -64,4 +64,4 @@ c_ Solution(o..
           res += helper(nested.getList(), depth + 1, maxDepth)
       r.. res
 
-    r.. helper(nestedList, 0, getDepth(nestedList))
+    r.. helper(nestedList, 0, getDepth(nestedList

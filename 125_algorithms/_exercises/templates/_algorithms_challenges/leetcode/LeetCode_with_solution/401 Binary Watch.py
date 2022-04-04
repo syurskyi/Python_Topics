@@ -40,7 +40,7 @@ c_ Solution(o..
                 ___ hour __ hour(hour_n
                     ___ minute __ minute(num-hour_n
                         hour = s..(hour)
-                        minute = ('0' + s..(minute))[-2:]
+                        minute = ('0' + s..(minute[-2:]
                         y.. hour + ':' + minute
 
         r.. l..(gen
@@ -52,7 +52,7 @@ c_ Solution(o..
         __ n __ 0:
             y.. 0
 
-        ___ i __ x..(head, l..(lst)):
+        ___ i __ x..(head, l..(lst:
             ___ rest __ gen(n-1, i+1, lst, func
                 __ rest __ n.. N..
                     ret = lst[i]+rest

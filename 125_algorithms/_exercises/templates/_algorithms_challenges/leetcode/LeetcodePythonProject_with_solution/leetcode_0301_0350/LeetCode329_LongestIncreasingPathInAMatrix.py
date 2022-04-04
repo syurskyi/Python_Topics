@@ -12,16 +12,16 @@ c_ Solution(o..
         maxPath = 0
         ___ i __ r..(m
             ___ j __ r..(n
-                maxPath = m..(maxPath, helper(matrix, i, j, mem))
+                maxPath = m..(maxPath, helper(matrix, i, j, mem
         r.. maxPath
     
     ___ helper  matrix, i, j, mem
         m, n = l..(matrix), l..(matrix[0])
         __ mem[i][j]:
             r.. mem[i][j]
-        ___ x, y __ ((i+1, j), (i-1, j), (i, j+1), (i, j-1)):
+        ___ x, y __ ((i+1, j), (i-1, j), (i, j+1), (i, j-1:
             __ 0 <= x < m a.. 0 <= y < n a.. matrix[x][y] > matrix[i][j]:
-                mem[i][j] = m..(mem[i][j], helper(matrix, x, y, mem))
+                mem[i][j] = m..(mem[i][j], helper(matrix, x, y, mem
         mem[i][j] += 1
         r.. mem[i][j]
     
@@ -40,7 +40,7 @@ c_ Solution(o..
         ]
         ___ matrix __ testCases:
             result = longestIncreasingPath(matrix)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

@@ -17,7 +17,7 @@ c_ Solution:
             __ d n.. __ L:
                 r.. []
             __ n.. queue:
-                queue.extend(l..(L[d]))
+                queue.extend(l..(L[d]
                 _____
 
             ___ c __ L[d]:

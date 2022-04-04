@@ -31,9 +31,9 @@ c_ Solution(o..
             'word',
         ]
         ___ word __ testCases:
-            print('word: %s' % (word))
+            print('word: %s' % (word
             result = generateAbbreviations(word)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

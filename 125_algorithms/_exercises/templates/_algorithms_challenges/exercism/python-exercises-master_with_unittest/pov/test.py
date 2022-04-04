@@ -215,7 +215,7 @@ c_ PovTest(unittest.TestCase
 
     ___ assertTreeEquals  result, expected
         assertEqual(result, expected,
-                         '{} != {}'.f..(result, expected))
+                         '{} != {}'.f..(result, expected
 
 
 __ _____ __ _____

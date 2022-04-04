@@ -33,7 +33,7 @@ ___ test_assert_js_behavior(D
     D.d = 4
     ... l..(D) __ 4
     del D.b
-    D.update(d..(e=5))
+    D.update(d..(e=5
     ... D.e __ 5
 
 

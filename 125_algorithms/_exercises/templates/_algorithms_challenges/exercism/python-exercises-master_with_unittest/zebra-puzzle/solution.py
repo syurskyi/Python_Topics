@@ -16,7 +16,7 @@ ___ next_to(x, y
 
 ___ solution
     houses = first, _, middle, _, _ = r..(5)
-    orderings = l..(permutations(houses))
+    orderings = l..(permutations(houses
     result = next(
         [{
             Englishman: "Englishman",
@@ -36,6 +36,6 @@ ___ solution
         __ Japanese __ Parliaments
         ___ (dog, snails, fox, horse, zebra) __ orderings __ Spaniard __ dog
         __ OldGold __ snails __ next_to(Chesterfields, fox)
-        __ next_to(Kools, horse))
+        __ next_to(Kools, horse
     r.. ("It is the {} who drinks the water.\n"
             "The {} keeps the zebra.").f..(*result)

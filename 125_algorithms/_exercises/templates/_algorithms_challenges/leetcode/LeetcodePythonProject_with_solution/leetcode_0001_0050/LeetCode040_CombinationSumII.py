@@ -18,9 +18,9 @@ c_ Solution(o..
     
     ___ helper2  nums, ind, curr, res, target
         __ target __ 0:
-            res.a..(l..(curr))
+            res.a..(l..(curr
             r..
-        ___ i __ r..(ind, l..(nums)):
+        ___ i __ r..(ind, l..(nums:
             __ target < nums[i]:
                 r..
             __ i > ind a.. nums[i] __ nums[i-1]:
@@ -43,10 +43,10 @@ c_ Solution(o..
     
     ___ helper  nums, target, ind, curr, res
         __ target __ 0:
-            res.a..(l..(curr))
+            res.a..(l..(curr
             r..
         prev = -1
-        ___ i __ r..(ind, l..(nums)):
+        ___ i __ r..(ind, l..(nums:
             __ nums[i] > target:
                 r..
             __ prev != nums[i]:

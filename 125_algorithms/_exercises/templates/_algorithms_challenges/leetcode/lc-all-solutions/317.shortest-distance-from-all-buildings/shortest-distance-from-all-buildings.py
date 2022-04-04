@@ -24,7 +24,7 @@ c_ Solution(o..
               grid[newi][newj] -= dist + 1
               hit[newi][newj] += 1
               visited |= {(newi, newj)}
-              queue.a..((newi, newj, dist + 1))
+              queue.a..((newi, newj, dist + 1
             ____:
               count += 1
             visited |= {(newi, newj)}
@@ -36,21 +36,21 @@ c_ Solution(o..
       r.. T..
 
     count = 0
-    ___ i __ r..(0, l..(grid)):
-      ___ j __ r..(0, l..(grid[0])):
+    ___ i __ r..(0, l..(grid:
+      ___ j __ r..(0, l..(grid[0]:
         __ grid[i][j] __ 1:
           count += 1
 
-    hit = [[0] * l..(grid[0]) ___ _ __ r..(0, l..(grid))]
-    ___ i __ r..(0, l..(grid)):
-      ___ j __ r..(0, l..(grid[0])):
+    hit = [[0] * l..(grid[0]) ___ _ __ r..(0, l..(grid]
+    ___ i __ r..(0, l..(grid:
+      ___ j __ r..(0, l..(grid[0]:
         __ grid[i][j] __ 1:
           __ n.. bfs(i, j, grid, count, hit
             r.. -1
 
     ans = f__("-inf")
-    ___ i __ r..(0, l..(grid)):
-      ___ j __ r..(0, l..(grid[0])):
+    ___ i __ r..(0, l..(grid:
+      ___ j __ r..(0, l..(grid[0]:
         __ grid[i][j] < 0 a.. hit[i][j] __ count:
           ans = m..(ans, grid[i][j])
           grid[i][j] = 0

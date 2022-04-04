@@ -48,7 +48,7 @@ c_ Solution:
         __ i >= l..(nums
             r.. T..
 
-        ___ j __ r..(l..(square)):
+        ___ j __ r..(l..(square:
             __ nums[i] + square[j] <= l:
                 square[j] += nums[i]
                 __ dfs(nums, i + 1, l, square

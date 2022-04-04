@@ -6,8 +6,8 @@ c_ Solution(o..
     """
     meetings    # list
     ___ i __ intervals:
-      meetings.a..((i.start, 1))
-      meetings.a..((i.end, 0))
+      meetings.a..((i.start, 1
+      meetings.a..((i.end, 0
     meetings.s..()
     ans = 0
     count = 0

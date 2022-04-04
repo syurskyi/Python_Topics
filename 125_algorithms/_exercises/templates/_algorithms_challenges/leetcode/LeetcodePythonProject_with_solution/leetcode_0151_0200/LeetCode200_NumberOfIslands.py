@@ -49,7 +49,7 @@ c_ Solution(o..
         ___ grid __ testCases:
             grid = [l..(x) ___ x __ grid]
             result = numIslands(grid)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

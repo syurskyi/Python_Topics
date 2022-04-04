@@ -15,10 +15,10 @@ c_ Solution(o..
         freq = 0
         banned = s..(banned)
         i = 0
-        ___ j __ r..(l..(paragraph)):
+        ___ j __ r..(l..(paragraph:
             c = paragraph[j]
             __ n.. (o..('a') <= o..(c) <= o..('z') o.\
-                o..('A') <= o..(c) <= o..('Z')):
+                o..('A') <= o..(c) <= o..('Z':
                 word = paragraph[i:j].l..
                 __ word a.. word n.. __ banned:
                     hashmap[word] = hashmap.g.. word, 0)+1

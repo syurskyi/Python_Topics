@@ -64,7 +64,7 @@ c_ ExamRoom:
             # middle
             ___ j __ r..(l..(idxes)-1
                 i = (idxes[j] + idxes[j+1]) // 2
-                dist = m..(abs(idxes[j] - i), abs(idxes[j+1] - i))
+                dist = m..(abs(idxes[j] - i), abs(idxes[j+1] - i
                 __ dist > max_dist:
                     max_dist = dist
                     ret_idx = i

@@ -37,7 +37,7 @@ c_ Solution:
         """
         m, n = l..(A), l..(A[0])
         ret = 0
-        ret += (1 << (n-1)) * m  # all rows with MSB being 1
+        ret += (1 << (n-1 * m  # all rows with MSB being 1
         ___ j __ r..(1, n
             cnt = 0
             ___ i __ r..(m
@@ -46,6 +46,6 @@ c_ Solution:
 
             # toggle 
             cnt = m..(cnt, m-cnt)
-            ret += (1 << (n-1-j)) * cnt
+            ret += (1 << (n-1-j * cnt
 
         r.. ret

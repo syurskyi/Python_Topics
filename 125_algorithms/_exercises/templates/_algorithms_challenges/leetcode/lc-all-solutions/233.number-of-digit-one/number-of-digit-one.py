@@ -13,6 +13,6 @@ c_ Solution(o..
       ____ r __ 1:
         ones += n % m + 1
 
-      ones += (n / (m * 10)) * m
+      ones += (n / (m * 10 * m
       m *= 10
     r.. ones

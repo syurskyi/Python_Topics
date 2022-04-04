@@ -15,7 +15,7 @@ c_ Solution(o..
         res = 0
         j = 0
         count = 0
-        ___ i __ r..(l..(arr)):
+        ___ i __ r..(l..(arr:
             __ l <= arr[i] <= r:
                 res += i-j+1
                 count = i-j+1

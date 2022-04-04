@@ -54,4 +54,4 @@ a1 = [
 ]
 
 s = Solution()
-print(s.minimumTotal(a1))
+print(s.minimumTotal(a1

@@ -23,7 +23,7 @@ c_ Solution(o..
         root = TreeNode(nums[-1])
         result = [0]
         ___ i __ r..(l..(nums)-2, -1, -1
-            result.insert(0, getVal(root, nums[i], 0))
+            result.insert(0, getVal(root, nums[i], 0
         r.. result, root
     
     ___ getVal  root, val, num
@@ -51,7 +51,7 @@ c_ Solution(o..
         ___ nums __ testCases:
             print('nums: %s' % nums)
             result, root = countSmaller(nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
             
             queue= [root]

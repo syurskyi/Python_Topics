@@ -17,7 +17,7 @@ ___ josephus_survivor(n,k
     ___ num __ circle:
         __ num != 0:
             r.. num
-print(josephus_survivor(14,2))
+print(josephus_survivor(14,2
 
 #[1,2,3,4,5,6,7] - initial sequence 3
 #[1,2,4,5,6,7] => 3 is counted out 6

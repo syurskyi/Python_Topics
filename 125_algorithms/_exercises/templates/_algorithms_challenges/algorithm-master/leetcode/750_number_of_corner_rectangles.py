@@ -28,7 +28,7 @@ c_ Solution:
         n = 0
         count    # dict
         ___ R __ G:
-            ___ end __ r..(1, l..(R)):
+            ___ end __ r..(1, l..(R:
                 __ R[end] __ 0:
                     _____
 

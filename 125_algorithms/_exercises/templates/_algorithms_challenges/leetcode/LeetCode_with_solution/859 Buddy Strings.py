@@ -55,7 +55,7 @@ c_ Solution:
 
         # Find a pair
         pair = N..
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             __ A[i] != B[i]:
                 __ n.. pair:
                     pair = (A[i], B[i])

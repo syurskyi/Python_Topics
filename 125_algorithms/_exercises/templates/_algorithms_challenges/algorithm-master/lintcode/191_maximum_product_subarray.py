@@ -16,7 +16,7 @@ c_ Solution:
             r.. 0
 
         ans = Pmin = Pmax = A[0]
-        ___ i __ r..(1, l..(A)):
+        ___ i __ r..(1, l..(A:
             """
             adding `A[i]` to reset `min` and `max`
             if its so lowest or highest

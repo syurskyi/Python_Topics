@@ -20,14 +20,14 @@ c_ Solution(o..
                 __ j n.. __ visited:
                     visited.add(j)
                     __ board[j] __ -1:
-                        queue.a..((j, d+1))
+                        queue.a..((j, d+1
                     ____:
                         __ board[j] __ n:
                             r.. d+1
                         __ board[board[j]-1] __ -1:
                             visited.add(board[j]-1)
                             # if not, later moves can visit it again?
-                        queue.a..((board[j]-1, d+1))
+                        queue.a..((board[j]-1, d+1
         r.. -1
 
     ___ test

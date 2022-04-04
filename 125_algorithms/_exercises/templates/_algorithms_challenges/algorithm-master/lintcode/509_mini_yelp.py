@@ -118,7 +118,7 @@ c_ MiniYelp:
             restaurant = restaurants[hashcode]
             distance = Helper.get_distance(location, restaurant.location)
             __ distance <= k:
-                neighbors.a..((distance, restaurant))
+                neighbors.a..((distance, restaurant
 
         neighbors.s..(key=l.... item: item[0])
         r.. [
@@ -247,7 +247,7 @@ c_ MiniYelp:
             restaurant = restaurants[hashcode]
             distance = Helper.get_distance(location, restaurant.location)
             __ distance <= k:
-                neighbors.a..((distance, restaurant))
+                neighbors.a..((distance, restaurant
 
         neighbors.s..(key=l.... item: item[0])
         r.. [

@@ -12,7 +12,7 @@ EXPECTED = (
 
 ___ test_calc_sums
     i = 0
-    ___ i, line __ e..(calc_sums(VALUES)):
+    ___ i, line __ e..(calc_sums(VALUES:
         n1, n2, sum_ = EXPECTED[i]
         ... (
             line __ f"The sum of {n1} and {n2}, rounded to two decimal places, is {sum_}."

@@ -24,7 +24,7 @@ c_ StrainTest(unittest.TestCase
     ___ test_discard_endswith
         inp =  'dough', 'cash', 'plough', 'though', 'through', 'enough'
         out =  'cash'
-        assertEqual(discard(inp, l.... x: s...e.. x, 'ough')), out)
+        assertEqual(discard(inp, l.... x: s...e.. x, 'ough', out)
 
     ___ test_keep_z
         inp =  'zebra', 'arizona', 'apple', 'google', 'mozilla'

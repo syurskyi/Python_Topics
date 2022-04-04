@@ -30,7 +30,7 @@ c_ Solution(o..
         Determine if s[:i + 1] can be segmented by dict wordDict
         """
         __ n.. s:
-            res.a..(' '.j..(cand))
+            res.a..(' '.j..(cand
         ____:
             ___ i, c __ e..(s
                 word = s[:i + 1]
@@ -44,4 +44,4 @@ c_ Solution(o..
 s1 = "catsanddog"
 d1 = ["cat", "cats", "and", "sand", "dog"]
 s = Solution()
-print(s.wordBreak(s1, d1))
+print(s.wordBreak(s1, d1

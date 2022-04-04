@@ -1,13 +1,13 @@
 _______ __
 ____ d__ _______ date, t..
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ t___ _______ Dict, L.., OrderedDict
 ____ u__.r.. _______ u..
 _______ json
 ____ c.. _______ OrderedDict
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 RATES_FILE = TMP / "exchangerates.json"
 
 __ n.. RATES_FILE.exists
@@ -65,7 +65,7 @@ ___ match_daily_rates(start: date,
         __ day __ data_days:
             m.. = day
         ____:
-            closest = m..(data_days, key=l.... x: abs((x-day).days))
+            closest = m..(data_days, key=l.... x: abs((x-day).days
             __ closest > day:
                 m.. = data_days[data_days.i.. closest) - 1]
             ____:

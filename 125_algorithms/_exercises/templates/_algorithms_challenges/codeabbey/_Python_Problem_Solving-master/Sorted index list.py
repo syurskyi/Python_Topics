@@ -9,11 +9,11 @@ ele    # dict
 s__ = ''
 
 #storing the index of the elements
-___ x __ r..(l..(a)):
+___ x __ r..(l..(a:
     ele[a[x]] = x+1
     
 #sorting the array using the bubble sort
-___ i __ r..(l..(a)):
+___ i __ r..(l..(a:
     ___ j __ r..(0,l..(a)-1
         __ a[j] > a[j+1]:
             a[j],a[j+1]=a[j+1],a[j]

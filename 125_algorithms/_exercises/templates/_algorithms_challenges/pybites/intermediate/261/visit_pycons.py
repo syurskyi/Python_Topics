@@ -5,7 +5,7 @@ ____ dataclasses _______ dataclass
 ____ d__ _______ d__
 ____ m__ _______ acos, cos, radians, sin
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ u__.r.. _______ u..
 
 ____ dateutil.parser _______ p..
@@ -15,7 +15,7 @@ RESPONSES = "https://bites-data.s3.us-east-2.amazonaws.com/nominatim_responses.j
 
 
 
-tmp = Path(__.getenv("TMP", "/tmp"))
+tmp = P..(__.g..("TMP", "/tmp"
 pycons_file = tmp / "pycons-europe-2019.json"
 nominatim_responses = tmp / "nominatim_responses.json"
 
@@ -74,7 +74,7 @@ ___ _get_pycons
                 p..(pycon["end_date"]),
                 pycon["url"],
             )
-            ___ pycon __ json.load(f)
+            ___ pycon __ json.l.. f)
         ]
 
 
@@ -84,7 +84,7 @@ ___ _km_distance(origin, destination
         radians, [origin.lon, origin.lat, destination.lon, destination.lat]
     )
     r.. 6371 * (
-        acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon1 - lon2))
+        acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon1 - lon2
     )
 
 
@@ -92,7 +92,7 @@ ___ _extract_city_country_to_lat_lon
         
     
     w__ o.. nominatim_responses _ __ f:
-        places = json.load(f)
+        places = json.l.. f)
     
     mapping    # dict
     ___ key,places __ places.i..:
@@ -150,7 +150,7 @@ ___ create_travel_plan(pycons
 
 
 
-    r.. [Trip(sorted_pycons[i],sorted_pycons[i +1],_get_pycons(sorted_pycons[i],sorted_pycons[i +1])) ___ i __ r..(l..(sorted_pycons) - 1)]
+    r.. [Trip(sorted_pycons[i],sorted_pycons[i +1],_get_pycons(sorted_pycons[i],sorted_pycons[i +1] ___ i __ r..(l..(sorted_pycons) - 1)]
 
 
 

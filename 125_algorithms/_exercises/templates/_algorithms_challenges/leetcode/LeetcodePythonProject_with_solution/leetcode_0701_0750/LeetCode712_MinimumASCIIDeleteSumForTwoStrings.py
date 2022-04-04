@@ -21,7 +21,7 @@ c_ Solution(o..
                 __ s1[i] __ s2[j]:
                     dp[i+1][j+1] = dp[i][j]
                 ____:
-                    dp[i+1][j+1] = m..(dp[i+1][j]+o..(s2[j]), dp[i][j+1]+o..(s1[i]))
+                    dp[i+1][j+1] = m..(dp[i+1][j]+o..(s2[j]), dp[i][j+1]+o..(s1[i]
         r.. dp[-1][-1]
     
     ___ test

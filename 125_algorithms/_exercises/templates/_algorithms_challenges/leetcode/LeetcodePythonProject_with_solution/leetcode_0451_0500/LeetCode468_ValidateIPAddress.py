@@ -29,7 +29,7 @@ c_ Solution(o..
     ___ checkIP6  ip
         arr = ip.s..(':')
         __ l..(arr) != 8: r.. F..
-        d.. = s..(l..('0123456789abcdefABCDEF'))
+        d.. = s..(l..('0123456789abcdefABCDEF'
         ___ i, elem __ e..(arr
             __ i > 0 a.. l..(elem) > 4: r.. F..
             __ i __ 0 a.. l..(elem) > 4:

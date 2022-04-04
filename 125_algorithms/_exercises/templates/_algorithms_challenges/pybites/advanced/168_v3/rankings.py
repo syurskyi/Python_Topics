@@ -80,7 +80,7 @@ c_ Rankings:
     ___ pair_up  count: i.. = 3
         highest = highest(count)
         lowest = lowest(count)
-        r.. l..(z..(highest, lowest))
+        r.. l..(z..(highest, lowest
 
     ___ __len__
         r.. l..(ninja_list)

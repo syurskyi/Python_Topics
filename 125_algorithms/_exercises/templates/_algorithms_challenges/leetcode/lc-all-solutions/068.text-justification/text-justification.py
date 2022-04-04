@@ -25,23 +25,23 @@ c_ Solution(o..
           ans.a..(line[0] + " " * (maxWidth - l..(line[0])))
           line    # list
           _____
-        spaces = maxWidth - s.. m..(l.., line))
+        spaces = maxWidth - s.. m..(l.., line
         avgSpace = spaces / (l..(line) - 1)
         extraSpace = spaces % (l..(line) - 1)
         res = ""
-        ___ i __ r..(0, l..(line)):
+        ___ i __ r..(0, l..(line:
           res += line[i]
           __ i < l..(line) - 1:
-            res += " " * (avgSpace + (extraSpace > 0))
+            res += " " * (avgSpace + (extraSpace > 0
             extraSpace -= 1
         ans.a..(res)
         line    # list
       ____ idx __ l..(words
         res = ""
-        ___ i __ r..(0, l..(line)):
+        ___ i __ r..(0, l..(line:
           res += line[i]
           __ i < l..(line) - 1:
             res += " "
-        res += " " * (maxWidth - l..(res))
+        res += " " * (maxWidth - l..(res
         ans.a..(res)
     r.. ans

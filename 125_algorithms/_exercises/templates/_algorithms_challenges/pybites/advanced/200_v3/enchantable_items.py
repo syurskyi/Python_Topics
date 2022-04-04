@@ -1,6 +1,6 @@
 _______ __
 ____ dataclasses _______ dataclass, field
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ t___ _______ L..
 ____ u__.r.. _______ u..
 
@@ -9,7 +9,7 @@ ____ bs4 _______ BeautifulSoup __ Soup
 out_dir = "/tmp"
 html_file = f"{out_dir}/enchantment_list_pc.html"
 
-HTML_FILE = Path(html_file)
+HTML_FILE = P..(html_file)
 URL = "https://www.digminecraft.com/lists/enchantment_list_pc.php"
 
 
@@ -102,12 +102,12 @@ ___ generate_items(data
                 res[i].enchantments.a..(enchantment)
             ____:
                 res[i] = Item(i, [enchantment])
-    r.. d..(s..(res.i.., key=l.... t: t[0]))
+    r.. d..(s..(res.i.., key=l.... t: t[0]
 
 
 ___ get_soup(file=HTML_FILE
     """Retrieves/takes source HTML and returns a BeautifulSoup object"""
-    __ isi..(file, Path
+    __ isi..(file, P..
         __ n.. HTML_FILE.is_file
             u..(URL, HTML_FILE)
 

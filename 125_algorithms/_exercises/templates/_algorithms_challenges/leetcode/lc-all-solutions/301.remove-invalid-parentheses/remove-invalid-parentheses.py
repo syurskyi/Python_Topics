@@ -26,13 +26,13 @@ c_ Solution(o..
           res.a..(s)
           r..
 
-      ___ i __ r..(0, l..(s)):
+      ___ i __ r..(0, l..(s:
         __ s[i] __ "(" o. s[i] __ ")" a.. l..(s) - 1 >= length:
           dfs(s[:i] + s[i + 1:], res, cache, length)
           cache.add(s[:i] + s[i + 1:])
 
     prepLeft = ""
-    ___ i __ r..(0, l..(s)):
+    ___ i __ r..(0, l..(s:
       __ s[i] __ "(":
         prepLeft += s[i:]
         _____

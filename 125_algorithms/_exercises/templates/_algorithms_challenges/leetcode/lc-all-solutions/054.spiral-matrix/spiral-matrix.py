@@ -15,10 +15,10 @@ c_ Solution(o..
       ___ i __ r..(up, down + 1
         ans += matrix[i][right],
       right -= 1
-      ___ i __ r..(r..(left, right + 1)):
+      ___ i __ r..(r..(left, right + 1:
         ans += matrix[down][i],
       down -= 1
-      ___ i __ r..(r..(up, down + 1)):
+      ___ i __ r..(r..(up, down + 1:
         ans += matrix[i][left],
       left += 1
-    r.. ans[:(l..(matrix) * l..(matrix[0]))]
+    r.. ans[:(l..(matrix) * l..(matrix[0]]

@@ -11,7 +11,7 @@ c_ Solution(o..
         :type speed: List[int]
         :rtype: int
         """
-        time = [f__(target-p)/s ___ p, s __ s..(z..(position, speed))]
+        time = [f__(target-p)/s ___ p, s __ s..(z..(position, speed]
         res = cur = 0
         ___ t __ time[::-1]:
             __ t > cur:

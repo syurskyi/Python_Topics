@@ -26,8 +26,8 @@ c_ Solution(o..
         :param n: integer
         :return: integer
         """
-        r.. m__.factorial(2*n)/(m__.factorial(n)*m__.factorial(n))-m__.factorial(2*n)/(
-            m__.factorial(n+1)*m__.factorial(n-1))
+        r.. m__.factorial(2*n)/(m__.factorial(n)*m__.factorial(n-m__.factorial(2*n)/(
+            m__.factorial(n+1)*m__.factorial(n-1
 
     ___ numTrees  n
         """

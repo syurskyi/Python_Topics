@@ -40,7 +40,7 @@ c_ Solution:
         use a flag
         """
         incr = 0  # 0 undecided, 1 increasing, 2 decresing
-        ___ i __ r..(1, l..(A)):
+        ___ i __ r..(1, l..(A:
             __ A[i] __ A[i-1]:
                 r.. F..
             ____ A[i] > A[i-1]:

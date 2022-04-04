@@ -20,14 +20,14 @@ c_ MaxStack(o..
         :rtype: void
         """
         stack.a..(x)
-        heapq.heappush(heap, (-x))
+        heapq.heappush(heap, (-x
 
     ___ pop
         """
         :rtype: int
         """
         val = stack.pop()
-        heap.remove((-val))
+        heap.remove((-val
         heapq.heapify(heap)
         r.. val
 

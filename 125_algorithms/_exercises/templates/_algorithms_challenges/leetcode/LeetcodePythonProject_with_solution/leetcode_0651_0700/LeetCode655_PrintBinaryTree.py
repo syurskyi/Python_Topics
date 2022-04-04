@@ -34,13 +34,13 @@ c_ Solution(o..
     ___ getHeight  root
         __ n.. root: r.. 0
         r.. m..(getHeight(root.left),\
-                   getHeight(root.right))+1
+                   getHeight(root.right+1
     
     ___ test
         testCases = [
-            TreeNode(1, TreeNode(2)),
-            TreeNode(1, TreeNode(2, N.., TreeNode(4)), TreeNode(3)),
-            TreeNode(1, TreeNode(2, TreeNode(3, TreeNode(4))), TreeNode(5)),
+            TreeNode(1, TreeNode(2,
+            TreeNode(1, TreeNode(2, N.., TreeNode(4, TreeNode(3,
+            TreeNode(1, TreeNode(2, TreeNode(3, TreeNode(4))), TreeNode(5,
         ]
         ___ root __ testCases:
             result = printTree(root)

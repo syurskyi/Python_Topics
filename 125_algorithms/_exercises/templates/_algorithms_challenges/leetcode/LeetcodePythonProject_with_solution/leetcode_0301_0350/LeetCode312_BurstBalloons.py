@@ -34,7 +34,7 @@ c_ Solution(o..
             result = m..(result,\
                 nums[left]*nums[i]*nums[right] + \
                 burst(memo, nums, left, i) +\
-                burst(memo, nums, i, right))
+                burst(memo, nums, i, right
             memo[left][right] = result
         r.. result
     
@@ -43,9 +43,9 @@ c_ Solution(o..
             [3, 1, 5, 8],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = maxCoins(nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

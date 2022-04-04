@@ -22,4 +22,4 @@ c_ Solution(o..
 
 args1 = [[1, 0, 1, 1], 1]
 s = Solution()
-print(s.containsNearbyDuplicate(*args1))
+print(s.containsNearbyDuplicate(*args1

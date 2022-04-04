@@ -32,7 +32,7 @@ c_ Solution(o..
     
     ___ test
         testCases = [
-            TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3)),
+            TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5, TreeNode(3,
         ]
         ___ root __ testCases:
             result = diameterOfBinaryTree(root)

@@ -13,10 +13,10 @@ c_ Interval(o..
 c_ Solution(o..
     ___ eraseOverlapIntervals  intervals
         __ n.. intervals: r.. 0
-        intervals.s..(key=l.... x: (x.end, x.start))
+        intervals.s..(key=l.... x: (x.end, x.start
         maxLen = intervals[0].end
         count = 0
-        ___ i __ r..(1, l..(intervals)):
+        ___ i __ r..(1, l..(intervals:
             __ intervals[i].start >= maxLen:
                 maxLen = intervals[i].end
             ____:

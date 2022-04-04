@@ -40,9 +40,9 @@ c_ Solution:
         """
         count the digit and compare
         """
-        counts = C..(s..(N))
+        counts = C..(s..(N
         ___ i __ r..(31  # 32 bit unsighed int
-            __ counts __ C..(s..(1 << i)):
+            __ counts __ C..(s..(1 << i:
                 r.. T..
         ____:
             r.. F..

@@ -10,7 +10,7 @@ c_ Trie:
 
   ___ addWord  word
     root = root
-    ___ i __ r..(0, l..(word)):
+    ___ i __ r..(0, l..(word:
       c = word[i]
       __ c __ root.neighbours:
         root = root.neighbours[c]

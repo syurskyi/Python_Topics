@@ -33,7 +33,7 @@ c_ Solution:
 
         _max = 0  # since 0 is the min in nums
 
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             _max = m..(_max, nums[i])
 
             __ _max __ i:

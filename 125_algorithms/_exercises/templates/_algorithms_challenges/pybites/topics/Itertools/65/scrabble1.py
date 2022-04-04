@@ -3,7 +3,7 @@ _______ __
 _______ u__.r..
 
 # PREWORK
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 DICT = 'dictionary.txt'
 DICTIONARY = __.p...j..(TMP, DICT)
 u__.r...u..(

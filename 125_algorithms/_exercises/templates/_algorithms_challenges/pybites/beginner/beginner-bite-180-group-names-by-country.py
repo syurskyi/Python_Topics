@@ -71,6 +71,6 @@ ___ group_names_by_country(data: s.. = data) __ d..:
     r.. countries
 
 
-print(group_names_by_country(data))
+print(group_names_by_country(data
 
 

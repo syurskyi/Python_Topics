@@ -83,13 +83,13 @@ c_ Solution:
             __ q a.. q[0][0] <= clock:
                 # don't do while in while when clock++
                 _, k = q.popleft()
-                heapq.heappush(pq, (-counter[k], k))
+                heapq.heappush(pq, (-counter[k], k
 
             __ pq:
                 _, k = heapq.heappop(pq)
                 counter[k] -= 1
                 __ counter[k] > 0:
-                    q.a..((clock + 1 + n, k))
+                    q.a..((clock + 1 + n, k
 
             clock += 1
 

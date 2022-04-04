@@ -17,7 +17,7 @@ c_ Solution:
         dp = [0] * (m + 1)
 
         _val = 0
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             ___ w __ r..(A[i], m + 1
                 _val = dp[w - A[i]] + V[i]
                 __ _val > dp[w]:

@@ -33,7 +33,7 @@ c_ Solution:
         cur = 1  # 0 1 symmetry, no need 0, 1 counter, only need cur and prev counter
         prev = 0
         ret = 0
-        ___ i __ r..(1, l..(s)):
+        ___ i __ r..(1, l..(s:
             __ s[i] __ s[i-1]:
                 cur += 1
             ____:
@@ -53,7 +53,7 @@ c_ Solution:
         __ n.. s:
             r.. ret
         counter[s[0]] += 1
-        ___ i __ r..(1, l..(s)):
+        ___ i __ r..(1, l..(s:
             __ s[i] != s[i-1] a.. counter[s[i]] != 0:
                 counter[s[i]] = 0
 

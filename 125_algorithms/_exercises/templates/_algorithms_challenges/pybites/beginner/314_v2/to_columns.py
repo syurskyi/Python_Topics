@@ -4,7 +4,7 @@ _______ m__
 ___ print_names_to_columns(names: L..[s..], cols: i.. = 2) __ N..
 
     
-    rows = i..(m__.ceil(l..(names) / cols))
+    rows = i..(m__.ceil(l..(names) / cols
 
     
     ___ row __ r..(rows

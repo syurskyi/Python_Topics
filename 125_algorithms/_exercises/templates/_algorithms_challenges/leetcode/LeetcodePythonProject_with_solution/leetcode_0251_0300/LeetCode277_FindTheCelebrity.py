@@ -24,7 +24,7 @@ c_ Solution(o..
             ____:
                 r -= 1
         ___ i __ r..(n
-            __ i __ l o. (knows(i, l) a.. n.. knows(l, i)):
+            __ i __ l o. (knows(i, l) a.. n.. knows(l, i:
                 _____
             ____:
                 r.. -1

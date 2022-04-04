@@ -51,7 +51,7 @@ c_ Solution:
         r.. 0
 
     ___ get_next_word  word, next_words
-        ___ i __ r..(l..(word)):
+        ___ i __ r..(l..(word:
             key = word[:i] + word[i + 1:]
             __ key n.. __ next_words[i]:
                 _____

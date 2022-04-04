@@ -96,7 +96,7 @@ c_ Solution:
         ret = 0
         ___ i __ r..(N
             ___ j __ r..(N
-                ret = m..(ret, m..(F[i][j]))
+                ret = m..(ret, m..(F[i][j]
 
         r.. ret
 

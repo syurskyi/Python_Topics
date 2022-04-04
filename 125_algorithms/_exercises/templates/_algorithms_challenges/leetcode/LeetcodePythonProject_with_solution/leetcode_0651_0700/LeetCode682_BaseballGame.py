@@ -23,7 +23,7 @@ c_ Solution(o..
                 res -= d
             ____:
                 res += i..(c)
-                valids.a..(i..(c))
+                valids.a..(i..(c
         r.. res
     
     ___ test

@@ -20,6 +20,6 @@ ___ c.. decimal_number
 
 values = l.. m..(i.., input().s..()))
 ___ i __ r..(amount_values
-    results.a..(c.. values[i]))
+    results.a..(c.. values[i]
 
 print(*results)

@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ dfs(left, p.., res, n
       __ l..(p..) __ 2 * n:
         __ left __ 0:
-          res.a..("".j..(p..))
+          res.a..("".j..(p..
         r..
 
       __ left < n:

@@ -31,11 +31,11 @@ c_ MedianFinder:
 
         # to handle odd case, it make sure `minheap` has one more child than `maxheap`
         w.... l..(minheap) > l..(maxheap) + 1:
-            heapq.heappush(maxheap, - heapq.heappop(minheap))
+            heapq.heappush(maxheap, - heapq.heappop(minheap
 
         # to handle even case, it make sure `minheap` and `maxheap` are same size
         w.... l..(maxheap) > l..(minheap
-            heapq.heappush(minheap, - heapq.heappop(maxheap))
+            heapq.heappush(minheap, - heapq.heappop(maxheap
 
         __ l..(minheap) > l..(maxheap
             r.. minheap[0] * 1.0

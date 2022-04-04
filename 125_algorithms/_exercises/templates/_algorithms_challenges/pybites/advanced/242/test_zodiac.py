@@ -1,7 +1,7 @@
 ____ d__ _______ d__
 _______ json
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ u__.r.. _______ u..
 
 _______ p__
@@ -11,8 +11,8 @@ ____ zodiac _______ (get_signs, get_sign_with_most_famous_people,
 
 # original source: https://zodiacal.herokuapp.com/api
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/zodiac.json"
-TMP = __.getenv("TMP", "/tmp")
-PATH = Path(TMP, "zodiac.json")
+TMP = __.g..("TMP", "/tmp")
+PATH = P..(TMP, "zodiac.json")
 
 
 ?p__.f..(scope='module')
@@ -26,7 +26,7 @@ ___ signs
 
 # write your pytest code here ...
 ___ test_named_tuple(signs
-    ... l..(Sign._fields) __ l..('name compatibility famous_people sun_dates'.s..(' '))
+    ... l..(Sign._fields) __ l..('name compatibility famous_people sun_dates'.s..(' '
     ... r.. (signs[0]).startswith('Sign(')
 
 
@@ -76,4 +76,4 @@ ___ test_signs_are_mutually_compatible(signs, sgn1, sgn2, result
 ])
 ___ test_get_sign_by_date(signs, dt, result
     m, d = dt
-    ... get_sign_by_date(signs, d__ y.._2000,  m.._m,  d.._d)) __ result
+    ... get_sign_by_date(signs, d__ y.._2000,  m.._m,  d.._d __ result

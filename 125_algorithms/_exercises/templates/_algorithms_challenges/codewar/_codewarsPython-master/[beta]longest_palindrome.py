@@ -13,6 +13,6 @@ ___ longest_palindrome (s
 
 
 
-print(longest_palindrome('baablkj12345432133d'))    
-print(longest_palindrome('baa'))
-print(longest_palindrome('abba'))
+print(longest_palindrome('baablkj12345432133d'
+print(longest_palindrome('baa'
+print(longest_palindrome('abba'

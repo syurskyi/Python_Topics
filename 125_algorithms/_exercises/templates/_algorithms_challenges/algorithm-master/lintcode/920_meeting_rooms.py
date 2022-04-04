@@ -21,8 +21,8 @@ c_ Solution:
         timeline    # list
 
         ___ interval __ intervals:
-            timeline.a..((interval.start, T..))
-            timeline.a..((interval.end, F..))
+            timeline.a..((interval.start, T..
+            timeline.a..((interval.end, F..
 
         timeline.s..()
 
@@ -51,9 +51,9 @@ c_ Solution:
         :type intervals: list[Interval]
         :rtype: bool
         """
-        intervals.s..(key=l.... x: (x.start, x.end))
+        intervals.s..(key=l.... x: (x.start, x.end
 
-        ___ i __ r..(1, l..(intervals)):
+        ___ i __ r..(1, l..(intervals:
             __ intervals[i].start < intervals[i - 1].end:
                 r.. F..
 

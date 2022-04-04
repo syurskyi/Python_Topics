@@ -1,7 +1,7 @@
 _______ __
 _______ u__.r..
 
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 DATA = 'safari.logs'
 SAFARI_LOGS = __.p...j..(TMP, DATA)
 PY_BOOK, OTHER_BOOK = '🐍', '.'
@@ -17,7 +17,7 @@ ___ create_chart
 
     w__ o.. SAFARI_LOGS) __ file:
         safari_logs = file.r..
-        ___ i __ r..(l..(safari_logs)):
+        ___ i __ r..(l..(safari_logs:
             previous = safari_logs[i -1]
             current = safari_logs[i]
             __ "sending to slack channel" __ current:

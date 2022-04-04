@@ -45,6 +45,6 @@ ___ test_quotes_len(output_your_code
 
 
 ?p__.m__.p.("author, quote",
-                         z..(expected_authors, expected_quotes))
+                         z..(expected_authors, expected_quotes
 ___ test_quotes_dict_content(author, quote, output_your_code
     ... output_your_code.g.. author) __ quote

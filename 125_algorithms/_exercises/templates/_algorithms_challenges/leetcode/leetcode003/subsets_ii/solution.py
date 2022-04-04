@@ -3,14 +3,14 @@ c_ Solution:
     # @return a list of lists of integer
     ___ subsetsWithDup  S
         S.s..()
-        r.. _subsets(S, l..(S))
+        r.. _subsets(S, l..(S
 
     ___ _subsets  S, k
         __ k __ 0:
             r.. [[]]
         ____:
             res = [[]]
-            ___ i __ r..(l..(S)):
+            ___ i __ r..(l..(S:
                 __ i > 0 a.. S[i] __ S[i - 1]:
                     p..
                 ____:

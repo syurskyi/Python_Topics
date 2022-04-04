@@ -7,7 +7,7 @@ pycon_date = date(2018, 5, 8)
 
 ___ get_hundred_days_end_date
     """Return a string of yyyy-mm-dd"""
-    r.. s..(start_100days + t..( days = 100))
+    r.. s..(start_100days + t..( days = 100
 
 
 ___ get_days_between_pb_start_first_joint_pycon

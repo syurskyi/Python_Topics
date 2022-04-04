@@ -6,7 +6,7 @@ ____ humanize_date _______ pretty_date, NOW
 
 
 ___ n_days_ago_str(days
-    r.. (NOW - t..(d.._days)).s..('%m/%d/%y')
+    r.. (NOW - t..(d.._days.s..('%m/%d/%y')
 
 
 ?p__.m__.p.("arg, expected", [
@@ -24,10 +24,10 @@ ___ n_days_ago_str(days
     (NOW - t..(hours=24), 'yesterday'),
     (NOW - t..(hours=47), 'yesterday'),
     (NOW - t..(d.._1), 'yesterday'),
-    (NOW - t..(d.._2), n_days_ago_str(2)),
-    (NOW - t..(d.._7), n_days_ago_str(7)),
-    (NOW - t..(d.._100), n_days_ago_str(100)),
-    (NOW - t..(d.._365), n_days_ago_str(365)),
+    (NOW - t..(d.._2), n_days_ago_str(2,
+    (NOW - t..(d.._7), n_days_ago_str(7,
+    (NOW - t..(d.._100), n_days_ago_str(100,
+    (NOW - t..(d.._365), n_days_ago_str(365,
 ])
 ___ test_pretty_date(arg, expected
     ... pretty_date(arg) __ expected
@@ -40,4 +40,4 @@ ___ test_input_variable_of_wrong_type
 
 ___ test_input_variable_future_date
     w__ p__.r..(V...
-        pretty_date(NOW + t..(d.._1))
+        pretty_date(NOW + t..(d.._1

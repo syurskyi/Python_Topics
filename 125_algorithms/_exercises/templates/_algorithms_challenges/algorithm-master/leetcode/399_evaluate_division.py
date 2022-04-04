@@ -22,7 +22,7 @@ c_ Solution:
         nexts = c...d..(s..)
         evals = c...d..(f__)
 
-        ___ i __ r..(l..(equations)):
+        ___ i __ r..(l..(equations:
             a, b = equations[i]
             nexts[a].add(b)
             nexts[b].add(a)
@@ -31,7 +31,7 @@ c_ Solution:
 
         ___ a, b __ queries:
             res = dfs(a, b, 1, nexts, evals, s..
-            ans.a..(f__(res))
+            ans.a..(f__(res
 
         r.. ans
 

@@ -14,6 +14,6 @@ ___ get_triangle_type(side1, side2, side3
 
 ___ i __ r..(amount_values
     side1, side2, side3 = map(i.., input().s..
-    results.a..(get_triangle_type(side1,side2, side3))
+    results.a..(get_triangle_type(side1,side2, side3
 
 print(*results)

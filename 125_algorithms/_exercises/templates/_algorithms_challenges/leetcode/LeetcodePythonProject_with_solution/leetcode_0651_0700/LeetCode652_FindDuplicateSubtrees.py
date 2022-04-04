@@ -24,7 +24,7 @@ c_ Solution(o..
         __ n.. cur: r.. '#'
         serial = '%s,%s,%s' % (cur.val,\
                 postorder(cur.left, hashmap, res),\
-                postorder(cur.right, hashmap, res))
+                postorder(cur.right, hashmap, res
         __ hashmap.g.. serial, 0) __ 1:
             res.a..(cur)
         hashmap[serial] = hashmap.g.. serial, 0)+1
@@ -32,8 +32,8 @@ c_ Solution(o..
     
     ___ test
         testCases = [
-            TreeNode(2, TreeNode(1), TreeNode(1)),
-            TreeNode(1, TreeNode(2, TreeNode(4)), TreeNode(3, TreeNode(2, TreeNode(4)), TreeNode(4))),
+            TreeNode(2, TreeNode(1), TreeNode(1,
+            TreeNode(1, TreeNode(2, TreeNode(4, TreeNode(3, TreeNode(2, TreeNode(4, TreeNode(4))),
         ]
         ___ root __ testCases:
             res = findDuplicateSubtrees(root)

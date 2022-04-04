@@ -30,8 +30,8 @@ c_ Solution:
         # starting from penultimate row
         ___ row __ x..(length-1-1, -1, -1
             dp.insert(0, [])
-            ___ col __ x..(l..(triangle[row])):
-                dp[0].a..(triangle[row][col]+m..(dp[1][col], dp[1][col+1]))  # next level
+            ___ col __ x..(l..(triangle[row]:
+                dp[0].a..(triangle[row][col]+m..(dp[1][col], dp[1][col+1]  # next level
 
         ... l..(dp[0])__1
 

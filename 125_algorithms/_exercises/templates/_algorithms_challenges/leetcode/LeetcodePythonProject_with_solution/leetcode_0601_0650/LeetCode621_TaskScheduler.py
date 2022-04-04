@@ -31,26 +31,26 @@ c_ Solution(o..
             hashmap[task] = hashmap.g.. task, 0)+1
         heap    # list
         ___ c, count __ hashmap.i..:
-            heapq.heappush(heap, (-count, c))
+            heapq.heappush(heap, (-count, c
         res = 0
         queue    # list
         w.... heap:
             count, c = heapq.heappop(heap)
-            queue.a..((-count, c))
+            queue.a..((-count, c
             __ l..(queue) > n:
                 res += l..(queue)
                 w.... queue:
                     count, c = queue.pop(0)
                     count -= 1
                     __ count > 0:
-                        heapq.heappush(heap, (-count, c))
+                        heapq.heappush(heap, (-count, c
             __ n.. heap:
                 count0 = l..(queue)
                 w.... queue:
                     count, c = queue.pop(0)
                     count -= 1
                     __ count > 0:
-                        heapq.heappush(heap, (-count, c))
+                        heapq.heappush(heap, (-count, c
                 __ n.. heap:
                     res += count0
                 ____:

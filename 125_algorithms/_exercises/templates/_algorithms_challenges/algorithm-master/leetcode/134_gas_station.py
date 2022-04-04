@@ -45,7 +45,7 @@ c_ Solution:
             r.. NOT_FOUND
 
         n = l..(gas)
-        RANGE = l..(r..(n))
+        RANGE = l..(r..(n
 
         ___ start __ r..(n
             tank = 0

@@ -33,6 +33,6 @@ ___ remove_punctuation_solution_3(input_string
 
 #remove_punctuation_solution_1("test1234!()vtpqaz")
 
-print(remove_punctuation_solution_2("test1234!()vtpqaz"))
+print(remove_punctuation_solution_2("test1234!()vtpqaz"
 
 remove_punctuation_solution_3("test123")

@@ -26,7 +26,7 @@ c_ Solution(o..
       ____ h __ d:
         left = node.left
         right = node.right
-        node.left, node.right = map(TreeNode, (v, v))
+        node.left, node.right = map(TreeNode, (v, v
         node.left.left = left
         node.right.right = right
     r.. dummy.left

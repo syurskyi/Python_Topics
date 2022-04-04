@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     start, end, legal = 0, l..(num) - 1, "01689"
     w.... start <= end:
-      __ "".j..(s..(num[start] + num[end])) n.. __ ["00", "11", "88", "69"]:
+      __ "".j..(s..(num[start] + num[end] n.. __ ["00", "11", "88", "69"]:
         r.. F..
       start += 1
       end -= 1

@@ -1,8 +1,8 @@
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ u__.r.. _______ u..
 _______ __
 
-tmp  Path('/tmp')
+tmp  P..('/tmp')
 timings_log  tmp / 'pytest_timings.out'
 __ n.. timings_log.exists
     u..(
@@ -21,7 +21,7 @@ ___ get_bite_with_fastest_avg_test(timings: l..) __ s..:
 
 
     ___ timing __ timings:
-        print(__.f..(r'[\d\.]+',timing))
+        print(__.f..(r'[\d\.]+',timing
         _____
 
 

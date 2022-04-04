@@ -32,4 +32,4 @@ in Python. Anyways, good luck with this Bite. What is your favorite editor?
 """
     print(TEXT_WITH_DOTS)
 
-    print(get_sentences(TEXT_WITH_DOTS))
+    print(get_sentences(TEXT_WITH_DOTS

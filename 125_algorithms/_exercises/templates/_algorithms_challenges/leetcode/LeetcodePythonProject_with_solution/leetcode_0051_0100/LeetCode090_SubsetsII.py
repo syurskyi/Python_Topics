@@ -15,8 +15,8 @@ c_ Solution(o..
         r.. res
     
     ___ helper  nums, ind, curr, res
-        res.a..(l..(curr))
-        ___ i __ r..(ind, l..(nums)):
+        res.a..(l..(curr
+        ___ i __ r..(ind, l..(nums:
             __ i > ind a.. nums[i] __ nums[i-1]:
                 _____
             curr.a..(nums[i])

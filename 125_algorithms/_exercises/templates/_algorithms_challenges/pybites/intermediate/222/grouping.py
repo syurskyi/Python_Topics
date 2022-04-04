@@ -23,7 +23,7 @@ ___ group(iterable, n
 
     result    # list
     w... T...
-      section = l..(islice(input, n))
+      section = l..(islice(input, n
       __ section:
         result.a..(section)
       ____:

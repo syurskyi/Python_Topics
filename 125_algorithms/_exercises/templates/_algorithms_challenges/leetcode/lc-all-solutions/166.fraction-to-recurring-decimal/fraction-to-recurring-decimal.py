@@ -22,7 +22,7 @@ c_ Solution(o..
       __ numerator __ d:
         idx = d[numerator]
         r.. ans + "".j..(res[:idx]) + "(" + "".j..(res[idx:]) + ")"
-      res.a..(s..(v))
+      res.a..(s..(v
       __ v __ 0:
         d[numerator] = l..(res) - 1
         numerator *= 10

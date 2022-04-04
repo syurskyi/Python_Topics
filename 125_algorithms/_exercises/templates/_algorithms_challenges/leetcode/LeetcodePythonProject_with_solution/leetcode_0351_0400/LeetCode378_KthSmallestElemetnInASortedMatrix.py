@@ -36,7 +36,7 @@ c_ Solution(o..
         nums = [1, 5, 9, 10, 13]
         ___ num __ nums:
             print('num: %s' % num)
-            print('count: %s' % c.. matrix, num))
+            print('count: %s' % c.. matrix, num
             print('-='*20+'-')
 
 __ _____ __ _____

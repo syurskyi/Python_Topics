@@ -10,7 +10,7 @@ c_ Solution:
 
         left = right = 0
         _max = _sum = f__('-inf')
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             __ _sum < 0:
                 _sum = A[i]
                 left = right = i

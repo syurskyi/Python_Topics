@@ -43,9 +43,9 @@ c_ Solution(o..
             ')(',
         ]
         ___ s __ testCases:
-            print('s: %s' % (s))
+            print('s: %s' % (s
             result = removeInvalidParentheses(s)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
     
 __ _____ __ _____

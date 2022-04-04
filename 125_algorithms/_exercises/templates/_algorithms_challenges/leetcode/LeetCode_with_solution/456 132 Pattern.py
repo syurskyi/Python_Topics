@@ -41,7 +41,7 @@ c_ Solution:
             __ stack a.. stack[-1][0] < v:
                 r.. T..
             mini = m..(mini, v)
-            stack.a..((mini, v))
+            stack.a..((mini, v
 
         r.. F..
 
@@ -54,9 +54,9 @@ c_ Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             maxa = nums[i]
-            ___ j __ r..(i + 1, l..(nums)):
+            ___ j __ r..(i + 1, l..(nums:
                 __ nums[j] > nums[i]:
                     __ nums[j] < maxa:
                         r.. T..

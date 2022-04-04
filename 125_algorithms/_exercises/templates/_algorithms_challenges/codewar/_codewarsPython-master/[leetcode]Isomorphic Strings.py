@@ -11,8 +11,8 @@ c_ Solution:
         r.. isomorphic(s,t) a.. isomorphic(t,s)
 
 test = Solution()
-print(test.isIsomorphic('ab','aa'))
-print(test.isIsomorphic('egg','add'))
-print(test.isIsomorphic('egg','adv'))
-print(test.isIsomorphic('paper','title'))
-print(test.isIsomorphic('paper','title'))
+print(test.isIsomorphic('ab','aa'
+print(test.isIsomorphic('egg','add'
+print(test.isIsomorphic('egg','adv'
+print(test.isIsomorphic('paper','title'
+print(test.isIsomorphic('paper','title'

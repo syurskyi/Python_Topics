@@ -17,7 +17,7 @@ c_ MultiplicationTable:
         s = ''
 
         ___ row __ _table:
-            s += (' | '.j..(row)) + '\n'
+            s += (' | '.j..(row + '\n'
 
 
         r.. s
@@ -31,7 +31,7 @@ c_ MultiplicationTable:
         """Takes x and y coords and returns the re-calculated result"""
 
 
-        __ n.. ((1 <= x <= _length) a.. (1 <= y <= _length)):
+        __ n.. ((1 <= x <= _length) a.. (1 <= y <= _length:
             r.. IndexError("Invalid x and y")
 
 

@@ -8,7 +8,7 @@ c_ Solution:
         _max = __max = f__('-inf')
         _max_i = -1
 
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             __ A[i] > _max:
                 __max = _max
                 _max = A[i]

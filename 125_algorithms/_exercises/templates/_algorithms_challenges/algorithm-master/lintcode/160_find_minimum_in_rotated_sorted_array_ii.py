@@ -11,7 +11,7 @@ c_ Solution:
             r.. -1
 
         _min = A[0]
-        ___ i __ r..(1, l..(A)):
+        ___ i __ r..(1, l..(A:
             __ A[i] < _min:
                 _min = A[i]
                 _____

@@ -20,4 +20,4 @@ ___ get_possible_dict_words(draw
 ___ _get_permutations_draw(draw
     """Helper to get all permutations of a draw (list of letters), hint:
        use itertools.permutations (order of letters matters)"""
-    r.. [''.j..(x).l.. ___ r __ r..(l..(draw)) ___ x __ i...permutations(draw, r + 1)]
+    r.. [''.j..(x).l.. ___ r __ r..(l..(draw ___ x __ i...permutations(draw, r + 1)]

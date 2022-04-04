@@ -8,7 +8,7 @@ c_ Solution(o..
     j = 0
     ans = 0
     d..    # dict
-    ___ i __ r..(l..(s)):
+    ___ i __ r..(l..(s:
       d..[s[i]] = d...g.. s[i], 0) + 1
       w.... j <= i a.. l..(d..) > k:
         d..[s[j]] -= 1

@@ -7,7 +7,7 @@ c_ Solution(o..
     ans = left = 0
     right = l..(height) - 1
     w.... left < right:
-      ans = m..(ans, (right - left) * m..(height[left], height[right]))
+      ans = m..(ans, (right - left) * m..(height[left], height[right]
       __ height[left] <= height[right]:
         left += 1
       ____:

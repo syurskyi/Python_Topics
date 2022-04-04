@@ -21,7 +21,7 @@ ___ strip_range(start, end
     ___ decorator_replace(fun
         @wraps(fun)
         ___ wrapper_replace $ $$:
-            output = l..(fun(*args, **kwargs))
+            output = l..(fun(*args, **kwargs
             this_end = end __ end < l..(output) ____ l..(output)
             this_end = this_end __ this_end > 0 ____ 0
             this_start = start __ start >= 0 ____ 0

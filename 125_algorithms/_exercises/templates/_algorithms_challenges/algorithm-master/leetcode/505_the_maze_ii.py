@@ -32,7 +32,7 @@ c_ Solution:
         distance = {(sx, sy 0}
 
         ___ x, y __ queue:
-            ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1)):
+            ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1:
                 _x = x + dx
                 _y = y + dy
                 _step = 0
@@ -54,7 +54,7 @@ c_ Solution:
                 __ _x __ tx a.. _y __ ty:
                     r.. distance[_x, _y]
 
-                queue.a..((_x, _y))
+                queue.a..((_x, _y
 
         r.. -1
 
@@ -100,7 +100,7 @@ c_ Solution2:
         w.... heap:
             x, y = heapq.heappop(heap)
 
-            ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1)):
+            ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1:
                 _x = x + dx
                 _y = y + dy
 
@@ -120,6 +120,6 @@ c_ Solution2:
                     r.. _step
 
                 distance[_x, _y] = _step
-                heapq.heappush(heap, (_x, _y))
+                heapq.heappush(heap, (_x, _y
 
         r.. -1

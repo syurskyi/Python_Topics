@@ -3,7 +3,7 @@ which reads the same backward as forward"""
 _______ __
 _______ u__.r..
 
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 DICTIONARY = __.p...j..(TMP, 'dictionary_m_words.txt')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/dictionary_m_words.txt',
@@ -32,6 +32,6 @@ ___ get_longest_palindrome(words_ N..
        to populate the words list"""
     __ words __ N..
         words = load_dictionary()
-    temp_list = (word ___ word __ words __ is_palindrome(word))
+    temp_list = (word ___ word __ words __ is_palindrome(word
     r.. m..(l..(temp_list), key=l..)
 

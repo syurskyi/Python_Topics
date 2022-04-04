@@ -50,10 +50,10 @@ c_ GeoHash:
     ___ get_base32_list
         base32_list = [s..(i) ___ i __ r..(10)]
 
-        ignored_char = (o..('a'), o..('i'), o..('l'), o..('o'))
+        ignored_char = (o..('a'), o..('i'), o..('l'), o..('o'
         ___ i __ r..(o..('a'), o..('z') + 1
             __ i __ ignored_char:
                 _____
-            base32_list.a..(chr(i))
+            base32_list.a..(chr(i
 
         r.. base32_list

@@ -66,7 +66,7 @@ c_ ListOpsTest(unittest.TestCase
 
     ___ test_append_range
         assertEqual(
-            list_ops.a..([100], r..(1000)), [100, r..(1000)])
+            list_ops.a..([100], r..(1000, [100, r..(1000)])
 
     ___ test_append_to_empty
         assertEqual(list_ops.a..([], 42), [42])

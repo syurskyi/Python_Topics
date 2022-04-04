@@ -50,7 +50,7 @@ c_ Solution(o..
         ]
         ___ board __ testCases:
             print('board')
-            print('\n'.j..([s..(row) ___ row __ board]))
+            print('\n'.j..([s..(row) ___ row __ board]
             result = slidingPuzzle(board)
             print('result: %s' % result)
             print('-='*30+'-')

@@ -54,7 +54,7 @@ c_ Solution(o..
             [6, 5, 11, 16], # True
         ]
         ___ sx, sy, tx, ty __ testCases:
-            print('sx: %s, sy: %s, tx: %s, ty: %s' % (sx, sy, tx, ty))
+            print('sx: %s, sy: %s, tx: %s, ty: %s' % (sx, sy, tx, ty
             result = reachingPoints(sx, sy, tx, ty)
             print('result: %s' % result)
             print('-='*30+'-')

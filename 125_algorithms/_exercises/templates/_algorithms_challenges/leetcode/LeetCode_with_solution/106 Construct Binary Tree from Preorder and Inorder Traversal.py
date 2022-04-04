@@ -49,7 +49,7 @@ c_ Solution:
         """
         preorder = preorder
         inorder = inorder
-        r.. _buildTree(0, l..(preorder), 0, l..(inorder))
+        r.. _buildTree(0, l..(preorder), 0, l..(inorder
 
     ___ _buildTree  pre_start, pre_end, in_start, in_end
         __ pre_start >= pre_end:

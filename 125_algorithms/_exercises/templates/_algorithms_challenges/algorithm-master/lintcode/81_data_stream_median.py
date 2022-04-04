@@ -22,10 +22,10 @@ c_ Solution:
                 heapq.heappush(minheap, num)
 
             w.... l..(minheap) > l..(maxheap
-                heapq.heappush(maxheap, -heapq.heappop(minheap))
+                heapq.heappush(maxheap, -heapq.heappop(minheap
 
             w.... l..(maxheap) > l..(minheap) + 1:
-                heapq.heappush(minheap, -heapq.heappop(maxheap))
+                heapq.heappush(minheap, -heapq.heappop(maxheap
 
             __ maxheap:
                 median = -maxheap[0]

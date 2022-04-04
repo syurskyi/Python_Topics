@@ -38,7 +38,7 @@ c_ Color:
         __ l..(hex_str) != 7 o. hex_str[0] != '#':
             r.. V...('Invalid hex colour string')
         ___
-            r.. t..(bytes.fromhex(hex_str[1:]))
+            r.. t..(bytes.fromhex(hex_str[1:]
         ______ V... __ exp:
             r.. V... _*Invalid hex value ({exp.args})')
 

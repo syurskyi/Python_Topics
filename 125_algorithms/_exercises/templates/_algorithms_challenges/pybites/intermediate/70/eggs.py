@@ -20,4 +20,4 @@ c_ EggCreator:
 
 ec  EggCreator(5)
 
-print(next(ec))
+print(next(ec

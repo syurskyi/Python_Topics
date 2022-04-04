@@ -8,6 +8,6 @@ ___ major_n_minor(numbers
     r.. major, minor
 
 
-print(major_n_minor([1, 3, 5, 7, 8, 8, 9, 9, 3, 5, 8, 7]))
+print(major_n_minor([1, 3, 5, 7, 8, 8, 9, 9, 3, 5, 8, 7]
 
 #[1, 3, 5, 7, 8, 8, 9, 9, 3, 5, 8, 7]

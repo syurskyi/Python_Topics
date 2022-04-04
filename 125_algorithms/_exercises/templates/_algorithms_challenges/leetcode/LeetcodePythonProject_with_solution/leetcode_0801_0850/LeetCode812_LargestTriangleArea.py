@@ -14,7 +14,7 @@ c_ Solution(o..
         ___ i __ r..(n
             ___ j __ r..(n
                 ___ k __ r..(n
-                    res = m..(res, getArea(points[i], points[j], points[k]))
+                    res = m..(res, getArea(points[i], points[j], points[k]
         r.. res
     
     ___ getArea  p1, p2, p3

@@ -20,7 +20,7 @@ _______ __
 
 
 # data provided
-tmp = __.getenv("TMP", "/tmp")
+tmp = __.g..("TMP", "/tmp")
 stopwords_file = __.p...j..(tmp, 'stopwords')
 harry_text = __.p...j..(tmp, 'harry')
 u__.r...u..(
@@ -63,7 +63,7 @@ ___ my_solution_get_harry_most_common_word
 ___ pyb_solution_get_harry_most_common_word
     ___ get_harry_most_common_word
         w__ o.. stopwords_file) __ f:
-            stopwords = s..(f.r...s...l...s..('\n'))
+            stopwords = s..(f.r...s...l...s..('\n'
 
         w__ o.. harry_text) __ f:
             words = [__.sub(r'\W+', r'', word)  # [^a-zA-Z0-9_]

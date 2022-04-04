@@ -24,7 +24,7 @@ c_ Solution:
         ___ x __ r..(m
             ___ y __ r..(n
                 __ grid[x][y] __ ZOMBIE:
-                    queue.a..((x, y))
+                    queue.a..((x, y
 
         w.... queue:
             days += 1
@@ -36,7 +36,7 @@ c_ Solution:
                     __ 0 <= _x < m a.. 0 <= _y < n \
                             a.. grid[_x][_y] __ PEOPLE:
                         grid[_x][_y] = ZOMBIE
-                        _queue.a..((_x, _y))
+                        _queue.a..((_x, _y
             queue = _queue
 
         ___ x __ r..(m

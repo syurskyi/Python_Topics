@@ -16,6 +16,6 @@ ___ isPalindrome(wordCount
             answer.a..('Y')
         ____:
             answer.a..('N')
-    print(' '.j..(answer))
+    print(' '.j..(answer
 
 isPalindrome(input

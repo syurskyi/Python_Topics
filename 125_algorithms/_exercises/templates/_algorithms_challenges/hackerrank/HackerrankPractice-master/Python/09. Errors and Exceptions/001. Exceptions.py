@@ -5,6 +5,6 @@
 ___ _ __ r..(i..(input())):
     a, b  input().s..
     ___
-        print(i..(a) // i..(b))
+        print(i..(a) // i..(b
     ______ BaseException __ err:
         print("Error Code:", err)

@@ -7,13 +7,13 @@ c_ CryptoSquare:
 
     @classmethod
     ___ encode(cls, msg
-        __ l..(cls.normalize(msg)) __ 0:
+        __ l..(cls.normalize(msg __ 0:
             r.. ''
         r.. ' '.j..(cls.transpose_square(cls.squarify(cls.normalize(msg))))
 
     @classmethod
     ___ squarify(cls, msg
-        r.. [msg[i:i + cls.square_size(l..(msg))]
+        r.. [msg[i:i + cls.square_size(l..(msg]
                 ___ i __ r..(0, l..(msg), cls.square_size(l..(msg)))]
 
     @classmethod
@@ -25,16 +25,16 @@ c_ CryptoSquare:
     $
     ___ normalize(msg
         r.. ''.j..(ch.l.. ___ ch __ msg __ ch n.. __
-                       s..(s__.punctuation + ' '))
+                       s..(s__.punctuation + ' '
 
     $
     ___ square_size(msg_length
-        r.. i..(m__.ceil(msg_length ** 0.5))
+        r.. i..(m__.ceil(msg_length ** 0.5
 
     # https://stackoverflow.com/a/4938130/2813210
     $
     ___ transpose_uneven_matrix(matrix
-        transposed_matrix = l..(i...z__(*matrix))
+        transposed_matrix = l..(i...z__(*matrix
         # Remove None's
         r.. [[val ___ val __ row __ val __ n.. N..]
                 ___ row __ transposed_matrix]

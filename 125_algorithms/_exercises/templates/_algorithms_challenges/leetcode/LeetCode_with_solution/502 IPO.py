@@ -44,14 +44,14 @@ c_ Solution:
 
         O(N logN) + O(N log N)
         """
-        capital_q = l..(z..(Capital, Profits))
+        capital_q = l..(z..(Capital, Profits
         profit_q    # list
         heapq.heapify(capital_q)
         capital = W
         ___ _ __ r..(k
             w.... capital_q a.. capital_q[0][0] <= capital:
                 _, pro = heapq.heappop(capital_q)
-                heapq.heappush(profit_q, (-pro, pro))
+                heapq.heappush(profit_q, (-pro, pro
 
             __ profit_q:
                 _, pro = heapq.heappop(profit_q)

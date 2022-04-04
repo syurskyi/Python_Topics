@@ -26,14 +26,14 @@ c_ Solution:
         A.s..()
 
         ___ i __ r..(n
-            heappush(heap, (A[i]/A[-1], i, n - 1))
+            heappush(heap, (A[i]/A[-1], i, n - 1
 
         ___ _ __ r..(K - 1
             _, i, j = heappop(heap)
 
             j -= 1
             __ j >= 0:
-                heappush(heap, (A[i]/A[j], i, j))
+                heappush(heap, (A[i]/A[j], i, j
 
         _, i, j = heappop(heap)
         r.. [A[i], A[j]]

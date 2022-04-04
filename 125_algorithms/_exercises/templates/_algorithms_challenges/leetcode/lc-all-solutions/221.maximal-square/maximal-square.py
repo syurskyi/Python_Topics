@@ -6,10 +6,10 @@ c_ Solution(o..
     """
     __ l..(matrix) __ 0:
       r.. 0
-    dp = [[0] * l..(matrix[0]) ___ i __ r..(0, l..(matrix))]
+    dp = [[0] * l..(matrix[0]) ___ i __ r..(0, l..(matrix]
     ans = 0
-    ___ i __ r..(0, l..(matrix)):
-      ___ j __ r..(0, l..(matrix[0])):
+    ___ i __ r..(0, l..(matrix:
+      ___ j __ r..(0, l..(matrix[0]:
         __ matrix[i][j] __ "1":
           __ i __ 0:
             dp[i][j] = 1

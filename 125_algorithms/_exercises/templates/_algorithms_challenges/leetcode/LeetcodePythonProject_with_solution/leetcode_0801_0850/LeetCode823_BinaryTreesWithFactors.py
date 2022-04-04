@@ -14,7 +14,7 @@ c_ Solution(o..
         res = 0
         arr.s..()
         hashmap    # dict
-        ___ i __ r..(l..(arr)):
+        ___ i __ r..(l..(arr:
             hashmap[arr[i]] = 1
             ___ j __ r..(i
                 __ arr[j] __ hashmap a.. arr[i]%arr[j]__0 a..\

@@ -29,7 +29,7 @@ c_ Solution(o..
             mem[s] = T..
             r.. T..
         flag = F..
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             __ n.. helper(nums[:i]+nums[i+1:], mem
                 flag = T..
                 _____

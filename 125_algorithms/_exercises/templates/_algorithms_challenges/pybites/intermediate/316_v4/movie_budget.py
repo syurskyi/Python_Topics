@@ -1,14 +1,14 @@
 ____ d__ _______ date
-____ t___ _______ Dict, Sequence, NamedTuple
+____ t___ _______ Dict, S.., N..
 ____ c.. _______ d..
 
-c_ MovieRented(NamedTuple
+c_ MovieRented(N..
     title: s..
     price: i..
     date: date
 
 
-RentingHistory = Sequence[MovieRented]
+RentingHistory = S..[MovieRented]
 STREAMING_COST_PER_MONTH = 12
 STREAM, RENT = 'stream', 'rent'
 

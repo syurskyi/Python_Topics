@@ -26,7 +26,7 @@ c_ Solution:
             val = o..(s[i]) - ZERO
 
             __ (ans > INT_MAX // 10 o.
-                (ans __ INT_MAX // 10 a.. val > 7)):
+                (ans __ INT_MAX // 10 a.. val > 7:
                 r.. INT_MAX __ sign __ 1 ____ ~INT_MAX
 
             ans = ans * 10 + val

@@ -24,7 +24,7 @@ c_ Solution(o..
     
     ___ quickSolve  prices
         res = 0
-        ___ i __ r..(1, l..(prices)):
+        ___ i __ r..(1, l..(prices:
             res += m..(0, prices[i]-prices[i-1])
         r.. res
     
@@ -34,10 +34,10 @@ c_ Solution(o..
             ([1, 7, 2, 9, 3, 1, 2, 8, 5, 6, 1, 13], 4),
         ]
         ___ prices, k __ testCases:
-            print('prices: %s' % (prices))
-            print('k: %s' % (k))
+            print('prices: %s' % (prices
+            print('k: %s' % (k
             result = maxProfit(k, prices)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

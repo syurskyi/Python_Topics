@@ -19,8 +19,8 @@ c_ Solution:
         S_A = (C-A)*(D-B)
         S_B = (G-E)*(H-F)
 
-        l = m..(0, m..(C, G)-m..(A, E))
-        h = m..(0, m..(D, H)-m..(B, F))
+        l = m..(0, m..(C, G)-m..(A, E
+        h = m..(0, m..(D, H)-m..(B, F
         r.. S_A + S_B - l*h
 
 

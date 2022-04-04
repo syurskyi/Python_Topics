@@ -27,7 +27,7 @@ __ _______ __ _______
     text = 'Should give "3 words only"'
 
 
-    print(split_words_and_quoted_text(text))
+    print(split_words_and_quoted_text(text
 
 
 

@@ -11,10 +11,10 @@ c_ Solution(o..
       idx = bisect.bisect_left(heaters, house)
       dist = f__("inf")
       __ idx > 0:
-        dist = m..(dist, abs(house - heaters[idx - 1]))
+        dist = m..(dist, abs(house - heaters[idx - 1]
       __ idx < l..(heaters) - 1:
-        dist = m..(dist, abs(house - heaters[idx + 1]))
+        dist = m..(dist, abs(house - heaters[idx + 1]
       __ idx < l..(heaters
-        dist = m..(dist, abs(house - heaters[idx]))
+        dist = m..(dist, abs(house - heaters[idx]
       minDist = m..(minDist, dist)
     r.. minDist

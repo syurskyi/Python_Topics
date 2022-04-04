@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     ans = 0
     dp = [c...d..(i..) ___ _ __ A]
-    ___ i __ r..(l..(A)):
+    ___ i __ r..(l..(A:
       ___ j __ r..(i
         diff = A[i] - A[j]
         dp[i][diff] += 1

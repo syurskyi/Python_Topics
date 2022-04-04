@@ -25,9 +25,9 @@ c_ Solution(o..
             10,
         ]
         ___ n __ testCases:
-            print('n: %s' % (n))
+            print('n: %s' % (n
             result = trailingZeroes(n)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

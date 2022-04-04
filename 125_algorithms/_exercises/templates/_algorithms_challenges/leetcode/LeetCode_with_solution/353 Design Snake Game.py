@@ -53,7 +53,7 @@ c_ SnakeGame(o..
                 # possible to use set to accelerate check
                 r.. -1
 
-        body.appendleft((x, y))
+        body.appendleft((x, y
         r.. eat
 
 

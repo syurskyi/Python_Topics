@@ -28,7 +28,7 @@ c_ Solution:
             result.a..(cur)
 
         # partition seq
-        ___ i __ x..(l..(seq)):
+        ___ i __ x..(l..(seq:
             __ is_palindrome(seq[:i+1]  # otherwise prune
                 get_partition(seq[i+1:], cur+[seq[:i+1]], result)
 

@@ -28,7 +28,7 @@ ___ timeCalc(calculations
             h  h2 - h1
         d  d2 - d1
         answer.a..('('+s..(d)+' '+s..(h)+' '+s..(m)+' '+s..(s)+') ')
-    print(' '.j..(answer))
+    print(' '.j..(answer
 timeCalc(input
 
 # Note to self: Optimize later with use of sequential arrays.

@@ -9,7 +9,7 @@ c_ Binary:
 
     @classmethod
     ___ convert_to_decimal(cls, inp
-        r.. s..([2**idx ___ idx, val __ e..(r..(inp))
+        r.. s..([2**idx ___ idx, val __ e..(r..(inp
                     __ val __ "1"])
 
     @classmethod

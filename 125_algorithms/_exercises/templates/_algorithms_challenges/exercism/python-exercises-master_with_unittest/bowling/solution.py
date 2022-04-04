@@ -95,5 +95,5 @@ c_ BowlingGame(o..
         __ frames[-1].is_strike() a.. l..(bonus_throws) != 2:
             r.. IndexError(
                 "two bonuses must be rolled when the tenth frame is strike")
-        r.. s..(frame.score(next_throws(frame.idx))
+        r.. s..(frame.score(next_throws(frame.idx
                    ___ frame __ frames)

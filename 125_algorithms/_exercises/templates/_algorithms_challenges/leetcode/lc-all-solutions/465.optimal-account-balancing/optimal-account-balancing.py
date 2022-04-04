@@ -20,6 +20,6 @@ c_ Solution(o..
         ___ persons __ i...combinations(people_list, i
           __ s..(balances[p] ___ p __ persons) __ 0:
             people -= s..(persons)
-            r.. dfs(l..(people)) + l..(persons) - 1
+            r.. dfs(l..(people + l..(persons) - 1
 
     r.. dfs(people_list)

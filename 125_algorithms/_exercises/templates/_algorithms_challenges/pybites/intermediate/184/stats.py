@@ -3,7 +3,7 @@ ____ csv _______ DictReader
 _______ __
 ____ u__.r.. _______ u..
 
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 LOGS = 'bite_output_log.txt'
 DATA = __.p...j..(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
@@ -25,19 +25,19 @@ c_ BiteStats:
     $
     ___ number_bites_accessed(self) __ i..:
         """Get the number of unique Bites accessed"""
-        unique_bites_accessed = l..(s..([row["bite"] ___ row __ rows]))
+        unique_bites_accessed = l..(s..([row["bite"] ___ row __ rows]
         r.. unique_bites_accessed
 
     $
     ___ number_bites_resolved(self) __ i..:
         """Get the number of unique Bites resolved (completed=True)"""
-        unique_bites_resolved = l..(s..([row["bite"] ___ row __ rows __ row["completed"] __ "True"]))
+        unique_bites_resolved = l..(s..([row["bite"] ___ row __ rows __ row["completed"] __ "True"]
         r.. unique_bites_resolved
 
     $
     ___ number_users_active(self) __ i..:
         """Get the number of unique users in the data set"""
-        unique_users = l..(s..([row["user"] ___ row __ rows]))
+        unique_users = l..(s..([row["user"] ___ row __ rows]
         r.. unique_users
 
     $

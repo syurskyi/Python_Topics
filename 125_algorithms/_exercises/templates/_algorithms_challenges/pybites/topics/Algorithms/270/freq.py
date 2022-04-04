@@ -5,4 +5,4 @@ ___ freq_digit(num: i..) __ i..:
 
 
 
-print(freq_digit(994145467))
+print(freq_digit(994145467

@@ -7,7 +7,7 @@ c_ Codec:
     """
     ret = ""
     ___ s __ strs:
-      ret += s..(l..(s)) + "|" + s
+      ret += s..(l..(s + "|" + s
 
     r.. ret
 

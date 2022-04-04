@@ -57,7 +57,7 @@ c_ Solution:
         ret = 0
         ___ k, v __ hm.i..:
             __ k __ 0:
-                ret += (v * (v - 1)) // 2
+                ret += (v * (v - 1 // 2
             ____ k <= 60 - k:  # attribution
                 v2 =  hm[60 - k]
                 ret += v2 * v

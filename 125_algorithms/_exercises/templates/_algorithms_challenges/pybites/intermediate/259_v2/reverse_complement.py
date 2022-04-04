@@ -15,7 +15,7 @@ ___ get_mapping(str_table=SIMPLE_COMPLEMENTS_STR
     
     
     mapping    # dict
-    ___ i __ r..(2,l..(lines)):
+    ___ i __ r..(2,l..(lines:
         values = lines[i].s.. 
         mapping[values[0]] = values[-1]
 

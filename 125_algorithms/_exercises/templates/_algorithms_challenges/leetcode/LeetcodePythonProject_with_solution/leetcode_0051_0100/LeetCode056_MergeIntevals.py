@@ -37,7 +37,7 @@ c_ Solution(o..
                     nextEnd = m..(intervals[j].end, nextEnd)
                 j += 1
             i = j
-            result.a..(Interval(curr.start, nextEnd))
+            result.a..(Interval(curr.start, nextEnd
         
         r.. result
     
@@ -48,9 +48,9 @@ c_ Solution(o..
         ]
         ___ intervals __ testCases:
             intervals = [Interval(x[0], x[1]) ___ x __ intervals]
-            print('intervals: %s' % (intervals))
+            print('intervals: %s' % (intervals
             result = merge(intervals)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
 
 __ _____ __ _____

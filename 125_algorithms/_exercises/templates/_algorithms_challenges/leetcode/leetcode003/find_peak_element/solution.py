@@ -45,5 +45,5 @@ c_ Solution(o..
 a1 = [1, 2]
 a2 = [1, 2, 1]
 s = Solution()
-print(s.findPeakElement(a1))
-print(s.findPeakElement(a2))
+print(s.findPeakElement(a1
+print(s.findPeakElement(a2

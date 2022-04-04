@@ -17,7 +17,7 @@ ___ float_series() __ pd.Series:
     Don't worry about the indexes or the series name.
     """
 
-    r.. pd.Series(np.arange(0.000,1.001,0.001))
+    r.. pd.Series(np.arange(0.000,1.001,0.001
 
 
 
@@ -27,7 +27,7 @@ ___ alpha_index_series() __ pd.Series:
     so index 'a'=1, 'b'=2 ... 'y'=25, 'z'=26
     Don't worry about the series name.
     """
-    r.. pd.Series(r..(1,27),dtype='int64',index=l..(s__.ascii_lowercase))
+    r.. pd.Series(r..(1,27),dtype='int64',index=l..(s__.ascii_lowercase
 
 
 ___ object_values_series() __ pd.Series:
@@ -37,4 +37,4 @@ ___ object_values_series() __ pd.Series:
     Don't worry about the series name.
     """
 
-    r.. pd.Series(l..(s__.a..),index=r..(101,127))
+    r.. pd.Series(l..(s__.a..),index=r..(101,127

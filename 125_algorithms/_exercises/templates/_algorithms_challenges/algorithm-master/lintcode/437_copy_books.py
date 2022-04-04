@@ -154,7 +154,7 @@ c_ Solution:
             k = n
 
         left = right = P[0]
-        ___ i __ r..(1, l..(P)):
+        ___ i __ r..(1, l..(P:
             __ P[i] > left:
                 left = P[i]
 
@@ -179,7 +179,7 @@ c_ Solution:
         """
         copied_pages, copiers = 0, 1
 
-        ___ i __ r..(l..(P)):
+        ___ i __ r..(l..(P:
             """
             if a copier will spend more than `spent_time`
             add one more copier in

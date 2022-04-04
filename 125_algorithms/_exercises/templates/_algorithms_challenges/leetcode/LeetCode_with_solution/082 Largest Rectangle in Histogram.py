@@ -50,7 +50,7 @@ c_ Solution:
             w.... inc_stack a.. height[inc_stack[-1]] > height[i]:
                 last = inc_stack.pop()
                 __ inc_stack:  # calculate area when popping
-                    area = height[last]*(i-(inc_stack[-1]+1))
+                    area = height[last]*(i-(inc_stack[-1]+1
                 ____:
                     area = height[last]*i
                 gmax = m..(gmax, area)
@@ -62,7 +62,7 @@ c_ Solution:
         w.... inc_stack:
             last = inc_stack.pop()
             __ inc_stack:
-                area = height[last]*(i-(inc_stack[-1]+1))
+                area = height[last]*(i-(inc_stack[-1]+1
             ____:
                 area = height[last]*i
             gmax = m..(gmax, area)

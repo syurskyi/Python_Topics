@@ -22,7 +22,7 @@ cars = {
 ___ get_all_jeeps cars=cars
     """return a comma  + space (', ') separated string of jeep models (original order)"""
     separator = ', '
-    r..(separator.j..(cars 'Jeep' ))
+    r..(separator.j..(cars 'Jeep' 
 
 ___ get_first_model_each_manufacturer cars=cars
     """return a list of matching models (original ordering)"""

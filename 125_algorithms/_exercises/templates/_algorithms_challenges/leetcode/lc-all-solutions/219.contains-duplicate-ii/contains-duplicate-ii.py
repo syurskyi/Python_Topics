@@ -13,7 +13,7 @@ c_ Solution(o..
     __ k __ 0:
       r.. F..
     k = k + 1
-    k = m..(k, l..(nums))
+    k = m..(k, l..(nums
 
     window = d..([])
     d = s..()
@@ -22,7 +22,7 @@ c_ Solution(o..
         r.. T..
       d |= {nums[i]}
       window.a..(i)
-    ___ i __ r..(k, l..(nums)):
+    ___ i __ r..(k, l..(nums:
       d -= {nums[window.popleft()]}
       __ nums[i] __ d:
         r.. T..

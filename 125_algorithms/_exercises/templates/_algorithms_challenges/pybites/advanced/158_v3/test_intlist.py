@@ -33,7 +33,7 @@ ___ test_mean_median_start_second_instance(list2
 
 ___ test_append_and_new_stats_second_instance(list2
     list2.a..(9.0)  # float ok too
-    list2.a..(Decimal(11))  # decimal ok too
+    list2.a..(Decimal(11  # decimal ok too
     ... r..(list2.mean, 2) __ 5.86
     ... list2.median __ 5
 

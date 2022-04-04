@@ -30,8 +30,8 @@ c_ Solution:
                 reverse_map[val].a..(ind)
 
         result    # list
-        ___ i __ x..(l..(num)):
-            ___ j __ x..(i, l..(num)):
+        ___ i __ x..(l..(num:
+            ___ j __ x..(i, l..(num:
                 target = 0-num[i]-num[j]
                 __ target n.. __ reverse_map:
                     _____
@@ -58,8 +58,8 @@ c_ Solution:
                 reverse_map[val].a..(ind)
 
         result    # dict
-        ___ i __ x..(l..(num)):
-            ___ j __ x..(i, l..(num)):
+        ___ i __ x..(l..(num:
+            ___ j __ x..(i, l..(num:
                 target = 0-num[i]-num[j]
                 __ target n.. __ reverse_map:
                     _____

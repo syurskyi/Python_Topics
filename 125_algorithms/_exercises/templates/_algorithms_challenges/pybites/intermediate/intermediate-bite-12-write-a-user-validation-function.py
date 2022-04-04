@@ -63,7 +63,7 @@ ___ pyb_get_user(username
 
 ___ pyb_get_secret_token(username
     user = pyb_get_user(username)
-    print(t..(user))
+    print(t..(user
     print(user)
     # Big question here how to test for None: if not x vs if x is None
     # https://stackoverflow.com/questions/24270344/is-there-a-difference-between-if-not-x-and-if-x-is-none
@@ -85,7 +85,7 @@ ___ pyb_get_secret_token(username
 
 
 ___
-    print(pyb_get_secret_token('Tim'))
+    print(pyb_get_secret_token('Tim'
 ______ UserAccessExpired __ e:
     print("Caught exception UserAccessExpired")
 ______ UserNoPermission __ e:

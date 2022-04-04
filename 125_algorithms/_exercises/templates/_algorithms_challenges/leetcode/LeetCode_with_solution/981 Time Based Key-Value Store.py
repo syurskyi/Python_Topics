@@ -73,7 +73,7 @@ c_ TimeMap:
 
         # find the largest v, s.t. v <= t
         lst = m[key]
-        i = bisect.bisect(lst, (timestamp, ""))
+        i = bisect.bisect(lst, (timestamp, ""
         __ i < l..(lst) a.. lst[i][0] __ timestamp:
             r.. lst[i][1]
         i -= 1

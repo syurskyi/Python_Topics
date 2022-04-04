@@ -15,7 +15,7 @@ ___ extract_dates(data
     ___ i,line __ e..(lines
         __ i > 2 a.. i != l..(lines) - 1:
             date_ = __.s..(r'^\s*\|\s(\S+)\s\|',line).group(1)
-            year,month,day = map(i..,date_.s..("-"))
+            year,month,day = map(i..,date_.s..("-"
 
             date_ = date y.._year, m.._month, d.._day)
             dates.add(date_)

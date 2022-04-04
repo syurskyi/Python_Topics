@@ -7,9 +7,9 @@ ___ fibDiv(tests
         ___ count __ r..(i..(m..(numbers))):
             c = a + b
             __ c % i..(numbers[test]) __ 0:
-                answer.a..(s..(count+2))
+                answer.a..(s..(count+2
                 _____
             a = b
             b = c
-    print(' '.j..(answer))
+    print(' '.j..(answer
 fibDiv(input

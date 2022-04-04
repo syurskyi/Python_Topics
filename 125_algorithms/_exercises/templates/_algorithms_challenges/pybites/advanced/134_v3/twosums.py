@@ -6,7 +6,7 @@ ___ two_sums(numbers: l.., target: i..
     :return: tuple - (index1, index2) or None
     """
     num_list = s..(e..(numbers), key=l.... x: x[1])
-    ___ x __ r..(l..(numbers)):
+    ___ x __ r..(l..(numbers:
         i, n = num_list[x]
         ___ j, m __ num_list[x + 1:]:
             n_m = n + m

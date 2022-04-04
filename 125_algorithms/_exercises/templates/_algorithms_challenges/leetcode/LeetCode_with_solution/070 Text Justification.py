@@ -87,9 +87,9 @@ c_ Solution:
                     str_builder.a..(" "*space_cnt)
             ____:  # last line, special handling
                 str_builder = [" ".j..(line)]
-                str_builder.a..(" "*(space_cnt-hole_cnt))
+                str_builder.a..(" "*(space_cnt-hole_cnt
 
-            new_result.a..("".j..(str_builder))
+            new_result.a..("".j..(str_builder
 
         r.. new_result
 

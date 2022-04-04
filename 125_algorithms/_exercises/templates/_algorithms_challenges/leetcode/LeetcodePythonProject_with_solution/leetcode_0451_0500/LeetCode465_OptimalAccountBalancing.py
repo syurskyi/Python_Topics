@@ -20,10 +20,10 @@ c_ Solution(o..
             s += 1
         res = f__('inf')
         prev = 0
-        ___ i __ r..(s+1, l..(debt)):
+        ___ i __ r..(s+1, l..(debt:
             __ debt[i] != prev a.. debt[i]*debt[s] < 0:
                 debt[i] += debt[s]
-                res = m..(res, dfs(s+1, cnt+1))
+                res = m..(res, dfs(s+1, cnt+1
                 debt[i] -= debt[s]
                 prev = debt[i]
         r.. res __ res != f__('inf') ____ cnt

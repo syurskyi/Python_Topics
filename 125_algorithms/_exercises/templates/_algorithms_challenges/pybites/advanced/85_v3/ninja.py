@@ -1,6 +1,6 @@
 scores = [10, 50, 100, 175, 250, 400, 600, 800, 1000]
 ranks = 'white yellow orange green blue brown black paneled red'.s..
-BELTS = d..(z..(scores, ranks))
+BELTS = d..(z..(scores, ranks
 
 
 c_ NinjaBelt:

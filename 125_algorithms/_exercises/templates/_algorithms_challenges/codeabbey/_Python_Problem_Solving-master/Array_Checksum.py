@@ -9,10 +9,10 @@ w.... l..(arr) < data:
     #print('values is in arr are :', arr)
     
     #traversing through each element of the array
-    ___ x __ r..(l..(arr)):
+    ___ x __ r..(l..(arr:
         
         #print('current array is :', currarr)
-        result =  (result + i..(arr[x])) * 113
+        result =  (result + i..(arr[x] * 113
         #print('result of calculation of ',arr[x],' is : ',result)
         __ result > 10000007:
             #print('result is greater than 10000007 for ',arr[x],' thus iam performing mod')

@@ -40,10 +40,10 @@ c_ Solution(o..
                 ri += 1
 
         w.... le >= 0:
-            ret.a..(f(nums[le], a, b, c))
+            ret.a..(f(nums[le], a, b, c
             le -= 1
         w.... ri < l..(nums
-            ret.a..(f(nums[ri], a, b, c))
+            ret.a..(f(nums[ri], a, b, c
             ri += 1
 
         r.. ret __ a > 0 ____ ret[::-1]

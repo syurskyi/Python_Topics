@@ -19,7 +19,7 @@ ___ get_belt(user_score, scores=scores, belts=belts
     ____:
         r.. result[user_score]
 
-print(get_belt(1000, scores, belts))
+print(get_belt(1000, scores, belts
 
 
 

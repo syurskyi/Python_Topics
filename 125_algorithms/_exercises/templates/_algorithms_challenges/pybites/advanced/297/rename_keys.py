@@ -22,7 +22,7 @@ ___ rename_keys(data: Dict[A.., A..]) __ Dict[A.., A..]:
             __ isi..(value,l..
                 values    # list
                 ___ v __ value:
-                    values.a..(rename_keys(v))
+                    values.a..(rename_keys(v
                 value = values
             new_dict[key] = value
 
@@ -70,4 +70,4 @@ __ _______ __ _______
     print(d)
 
 
-    print(rename_keys(d))
+    print(rename_keys(d

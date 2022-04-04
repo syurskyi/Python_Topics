@@ -22,11 +22,11 @@ c_ Solution(o..
           ans.a..("#")
           _____
         __ p __ 0:
-          ans.a..("|" + s..(node.val))
+          ans.a..("|" + s..(node.val
         ____:
-          stack.a..((node.right, 1))
-          stack.a..((node.left, 1))
-          stack.a..((node, 0))
+          stack.a..((node.right, 1
+          stack.a..((node.left, 1
+          stack.a..((node, 0
       r.. ",".j..(ans)
 
     r.. serialize(t) __ serialize(s)

@@ -11,7 +11,7 @@ c_ Solution(o..
         res.a..(p.. + [])
         r..
 
-      ___ i __ r..(start, l..(nums)):
+      ___ i __ r..(start, l..(nums:
         __ i > start a.. nums[i] __ nums[i - 1]:
           _____
         __ target - nums[i] < 0:

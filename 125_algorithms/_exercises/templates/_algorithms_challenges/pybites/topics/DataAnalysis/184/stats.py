@@ -3,7 +3,7 @@ ____ csv _______ DictReader
 _______ __
 ____ u__.r.. _______ u..
 
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 LOGS = 'bite_output_log.txt'
 DATA = __.p...j..(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
@@ -14,7 +14,7 @@ __ n.. __.p...isfile(DATA
 c_ BiteStats:
 
     ___ _load_data  data) __ l..:
-        r.. [line ___ line __ DictReader(o.. data))]  # start here
+        r.. [line ___ line __ DictReader(o.. data]  # start here
 
     ___ - , data=DATA
         rows = _load_data(data)
@@ -52,12 +52,12 @@ c_ BiteStats:
         """Get the user that completed the most Bites"""
         r.. C..( dic 'user'  ___ dic __ newlist __ dic.g.. 'completed') __ 'True').most_common(1)[0][0]
 
-new_list = DictReader(o.. DATA))
+new_list = DictReader(o.. DATA
 print(new_list.fieldnames)
 print(new_list.reader)
 
 newlist = [line ___ line __ new_list]
-print(l..(newlist))
+print(l..(newlist
 
 print(l..(s..(dic.g.. 'bite') ___ dic __ newlist)))
 

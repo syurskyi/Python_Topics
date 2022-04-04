@@ -18,7 +18,7 @@ c_ Solution(o..
     
     ___ helper  n, res, cur, ind
         __ ind __ n:
-            res.a..(l..(cur))
+            res.a..(l..(cur
             r..
         ___ val __ r..(n
             __ isValid(cur, ind, val
@@ -33,7 +33,7 @@ c_ Solution(o..
             n = l..(row)
             curr    # list
             ___ val __ row:
-                curr.a..('.'*val+'Q'+'.'*(n-val-1))
+                curr.a..('.'*val+'Q'+'.'*(n-val-1
             res.a..(curr)
         r.. res
     
@@ -58,7 +58,7 @@ c_ Solution(o..
             results = solveNQueens(n)
             print('results')
             ___ res __ results:
-                print('\n'.j..(res))
+                print('\n'.j..(res
                 print('-'*20)
             print('-='*30+'-')
 

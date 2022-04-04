@@ -44,7 +44,7 @@ c_ SummaryRanges(o..
     :type val: int
     :rtype: void
     """
-    insert(Interval(val, val))
+    insert(Interval(val, val
 
   ___ getIntervals
     """

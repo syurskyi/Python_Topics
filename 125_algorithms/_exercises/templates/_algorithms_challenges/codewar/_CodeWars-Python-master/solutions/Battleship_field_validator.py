@@ -6,8 +6,8 @@ http://www.codewars.com/kata/52bb6539a4cf1b12d90005b7/train/python
 
 ___ validateBattlefield(field
     ships    # dict
-    ___ row __ r..(l..(field[0])):
-        ___ col __ r..(l..(field)):
+    ___ row __ r..(l..(field[0]:
+        ___ col __ r..(l..(field:
             __ field[row][col] __ 1:
                 ___
                     result = getShipSize(row, col, field)

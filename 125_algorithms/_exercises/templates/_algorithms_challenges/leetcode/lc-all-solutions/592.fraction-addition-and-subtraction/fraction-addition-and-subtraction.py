@@ -14,8 +14,8 @@ c_ Solution(o..
           a, b = b, a % b
         r.. a
 
-      (an, ad), (bn, bd) = map(i.., a.s..("/")), map(i.., b.s..("/"))
-      lcm = (ad * bd) / (gcd(ad, bd))
+      (an, ad), (bn, bd) = map(i.., a.s..("/", map(i.., b.s..("/"
+      lcm = (ad * bd) / (gcd(ad, bd
       an, bn = an * (lcm / ad), bn * (lcm / bd)
       n = an + bn
       g = gcd(n, lcm)
@@ -24,7 +24,7 @@ c_ Solution(o..
     expression += "+"
     ans = "0/1"
     start = 0
-    ___ i __ r..(1, l..(expression)):
+    ___ i __ r..(1, l..(expression:
       __ expression[i] __ ["+", "-"]:
         num = expression[start:i]
         ans = add(ans, num)

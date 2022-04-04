@@ -17,7 +17,7 @@ c_ Solution:
                 n.. is_subseq(s, w),
                 l..(w) < l..(ans),
                 l..(w) __ l..(ans) a.. w >= ans,  # means w has larger lexicographical order
-            )):
+            :
                 _____
 
             ans = w
@@ -60,7 +60,7 @@ c_ Solution:
                 w n.. __ target,
                 l..(w) < l..(ans),
                 l..(w) __ l..(ans) a.. w >= ans,
-            )):
+            :
                 _____
 
             ans = w
@@ -69,7 +69,7 @@ c_ Solution:
 
     ___ find_cands  s, i, cands, p..
         __ i __ l..(s
-            cands.a..(''.j..(p..))
+            cands.a..(''.j..(p..
             r..
 
         # keep s[i]

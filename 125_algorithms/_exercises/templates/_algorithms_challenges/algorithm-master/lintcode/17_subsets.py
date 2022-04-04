@@ -20,7 +20,7 @@ c_ Solution:
         __ start >= l..(A
             r..
 
-        ___ i __ r..(start, l..(A)):
+        ___ i __ r..(start, l..(A:
             dfs(A, i + 1, ans, subset + [A[i]])
 
 

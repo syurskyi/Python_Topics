@@ -9,7 +9,7 @@ c_ BirthdayDict(d..
         
         ___ key, value __ d...items
             __ birthday.month __ value.month a.. birthday.day __ value.day:
-                print(MSG.f..(name))
+                print(MSG.f..(name
 
         d...__setitem__  name, birthday)
 

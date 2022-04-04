@@ -15,22 +15,22 @@ c_ PigLatinTranslator:
     ___ translate(cls, word
         __ (word[0] __ cls.vowels o.
             word.startswith('yt') o.
-                word.startswith('xr')):
+                word.startswith('xr':
             r.. word + 'ay'
         ____ (word.startswith('squ') o.
                 word.startswith('sch') o.
-                word.startswith('thr')):
+                word.startswith('thr':
             r.. word[3:] + word[0:3] + 'ay'
         ____ ((word[0] __ cls.consonants a..
                 word[1] __ cls.consonants) o.
-                word.startswith('qu')):
+                word.startswith('qu':
             r.. word[2:] + word[0:2] + 'ay'
         ____ (word[0] __ cls.consonants
             r.. word[1:] + word[0] + 'ay'
 
 
 ___ translate(phrase
-    print((PigLatinTranslator.alpha))
-    print((PigLatinTranslator.vowels))
-    print((PigLatinTranslator.consonants))
+    print((PigLatinTranslator.alpha
+    print((PigLatinTranslator.vowels
+    print((PigLatinTranslator.consonants
     r.. PigLatinTranslator.translate_phrase(phrase)

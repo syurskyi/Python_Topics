@@ -8,7 +8,7 @@ ___ test_get_every_nth_state
                 'Vermont', 'Delaware'
     ... l..(get_every_nth_state __ expected
     expected =  'Missouri', 'Vermont'
-    ... l..(get_every_nth_state(n=20)) __ expected
+    ... l..(get_every_nth_state(n=20 __ expected
 
 
 ___ test_get_state_abbrev

@@ -39,7 +39,7 @@ c_ Solution(o..
 
         lst    # list
         ___ k, v __ cnt.i..:
-            lst.a..(C..(k, v))
+            lst.a..(C..(k, v
 
         ret    # list
         ___ elt __ lst:

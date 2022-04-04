@@ -10,5 +10,5 @@ ___ is_triangle(t
 ___ row(nth
     r = [1]
     ___ i __ r..(1, nth + 1
-        r.a..(i..(r[-1] * (nth - i + 1) / i))
+        r.a..(i..(r[-1] * (nth - i + 1) / i
     r.. " ".j..([s..(i) ___ i __ r])

@@ -6,7 +6,7 @@ ____ performance _______ (contains, contains_fast,
                          list_inserts, list_inserts_fast,
                          list_creation, list_creation_fast)
 
-alist = l..(r..(1000000))
+alist = l..(r..(1000000
 aset = s..(alist)
 listofstrings = l..(ascii_lowercase) * 1000
 

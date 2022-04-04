@@ -14,7 +14,7 @@ c_ Solution(o..
         i, j = 0, l..(height)-1
         area = 0
         w.... i < j:
-            area = m..(area, m..(height[i], height[j])*(j-i))
+            area = m..(area, m..(height[i], height[j])*(j-i
             __ height[i] > height[j]:
                 j -= 1
             ____:
@@ -26,9 +26,9 @@ c_ Solution(o..
             [1, 3, 9, 2],
         ]
         ___ height __ testCases:
-            print('height: %s' % (height))
+            print('height: %s' % (height
             result = maxArea(height)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15 + '-')
 
 __ _____ __ _____

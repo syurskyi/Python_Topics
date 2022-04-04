@@ -29,10 +29,10 @@ c_ Solution(o..
             ([3, 1, 0, -2], 4),
         ]
         ___ nums, target __ testCases:
-            print('nums: %s' % (nums))
-            print('target: %s' % (target))
+            print('nums: %s' % (nums
+            print('target: %s' % (target
             result = threeSumSmaller(nums, target)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

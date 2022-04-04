@@ -22,6 +22,6 @@ c_ Solution:
             idx = bisect_left(lst2, i)
             ___ nei __ (-1, 0
                 __ 0 <= idx+nei < l..(lst2
-                    mini = m..(mini, abs(i-lst2[idx+nei]))
+                    mini = m..(mini, abs(i-lst2[idx+nei]
 
         r.. mini

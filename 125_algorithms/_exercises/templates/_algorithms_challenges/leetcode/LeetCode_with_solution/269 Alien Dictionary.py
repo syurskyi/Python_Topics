@@ -59,7 +59,7 @@ c_ Solution(o..
                 __ n.. topo_dfs(V, v, visited, pathset, ret
                     r.. ""
 
-        r.. "".j..(r..(ret))
+        r.. "".j..(r..(ret
 
     ___ construct_graph  words
         V = d..(l..)

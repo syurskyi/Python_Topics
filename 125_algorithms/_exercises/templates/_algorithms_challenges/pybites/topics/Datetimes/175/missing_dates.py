@@ -13,7 +13,7 @@ ___ get_missing_dates(dates
     first_dt = m..(dates)
     last_dt = m..(dates)
     full_dt = [first_dt+t..(i) ___ i __ r..((last_dt-first_dt).days+1)]
-    r.. s..(s..(full_dt)-s..(dates))
+    r.. s..(s..(full_dt)-s..(dates
 
 
 ___ _create_dates(missing, year=2019,  m.._2
@@ -38,9 +38,9 @@ ___ _create_dates(missing, year=2019,  m.._2
     y.. last
 
 
-date_list = l..(_create_dates([2, 7, 11], 2))
+date_list = l..(_create_dates([2, 7, 11], 2
 
 #print(type(date_list), len(date_list))
 #print(date_list)
 
-print(get_missing_dates(date_list))
+print(get_missing_dates(date_list

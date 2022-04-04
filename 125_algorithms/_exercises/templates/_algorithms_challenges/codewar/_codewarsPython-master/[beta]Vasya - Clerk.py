@@ -20,4 +20,4 @@ ___ tickets(people
     r.. 'YES'
 
 
-print(tickets([25,25,25,100,25,50]))    
+print(tickets([25,25,25,100,25,50]

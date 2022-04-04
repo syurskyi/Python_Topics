@@ -73,8 +73,8 @@ c_ Solution:
                     __ (_x, _y) __ visited:
                         _____
 
-                    visited.add((_x, _y))
-                    _queue.a..((_x, _y))
+                    visited.add((_x, _y
+                    _queue.a..((_x, _y
 
                     steps[_x, _y] += step
                     times[_x, _y] += 1

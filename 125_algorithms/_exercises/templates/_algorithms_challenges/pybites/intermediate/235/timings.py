@@ -1,8 +1,8 @@
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ u__.r.. _______ u..
 
-tmp = Path(__.getenv("TMP", "/tmp"))
+tmp = P..(__.g..("TMP", "/tmp"
 timings_log = tmp / 'pytest_timings.out'
 __ n.. timings_log.exists
     u..(

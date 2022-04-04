@@ -18,7 +18,7 @@ c_ Solution(o..
             ____:
                 count[c]+=1
         total = 0
-        print('count: %s' % (count))
+        print('count: %s' % (count
         ___ i __ r..(length, -1, -1
             total += count[i]
             __ total >= i:
@@ -30,9 +30,9 @@ c_ Solution(o..
             [3, 0, 6, 1, 5],
         ]
         ___ citations __ testCases:
-            print('citations: %s' % (citations))
+            print('citations: %s' % (citations
             result = hIndex(citations)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

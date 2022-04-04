@@ -31,4 +31,4 @@ c_ Solution(o..
       __ n > 1:
         y.. n
 
-    r.. s..(factor(n))
+    r.. s..(factor(n

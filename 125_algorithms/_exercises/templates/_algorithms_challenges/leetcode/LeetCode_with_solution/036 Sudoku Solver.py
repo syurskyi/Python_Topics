@@ -17,10 +17,10 @@ c_ Solution:
         :return: NIL
         """
         # break board
-        ___ row __ x..(l..(board)):
+        ___ row __ x..(l..(board:
             board[row] = l..(board[row])
         solve(board, 0, 0)
-        ___ row __ x..(l..(board)):
+        ___ row __ x..(l..(board:
             board[row] = "".j..(board[row])
 
     ___ solve_TLE  board

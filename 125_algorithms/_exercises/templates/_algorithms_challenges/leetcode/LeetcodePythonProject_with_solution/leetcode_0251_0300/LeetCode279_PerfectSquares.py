@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: int
         """
         _______ m__
-        maxVal = i..(m__.sqrt(n))+1
+        maxVal = i..(m__.sqrt(n+1
         __ n < 0: r.. 0
         dp = [f__('inf')]*(n+1)
         dp[0] = 0
@@ -29,9 +29,9 @@ c_ Solution(o..
             24,
         ]
         ___ n __ testCases:
-            print('n: %s' % (n))
+            print('n: %s' % (n
             result = numSquares(n)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

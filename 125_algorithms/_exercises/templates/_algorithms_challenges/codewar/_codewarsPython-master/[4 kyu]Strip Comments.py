@@ -11,6 +11,6 @@ ___ solution(s__,markers
         r.. afterStrip
     r.. '\n'.j..([stripSentence(s) ___ s __ stringSplit])
 
-print(solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"]))
-print(solution("apples, pears # and bananas\ngrapes\nbananas !#apples", ["#", "!"]))
+print(solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"]
+print(solution("apples, pears # and bananas\ngrapes\nbananas !#apples", ["#", "!"]
 #

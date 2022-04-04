@@ -15,7 +15,7 @@ c_ Solution(o..
       stack.a..(i)
     ans[0] = nums[stack[0]]
     idx = 0
-    ___ i __ r..(k, l..(nums)):
+    ___ i __ r..(k, l..(nums:
       idx += 1
       __ stack a.. stack[0] __ i - k:
         stack.popleft()

@@ -13,7 +13,7 @@ c_ Solution:
         cows = 0
         cnts = [0] * 10
 
-        ___ i __ r..(l..(secret)):
+        ___ i __ r..(l..(secret:
             s = o..(secret[i]) - o..('0')
             g = o..(guess[i]) - o..('0')
 
@@ -48,7 +48,7 @@ c_ Solution:
         cnt_s = [0] * 10
         cnt_g = [0] * 10
 
-        ___ i __ r..(l..(secret)):
+        ___ i __ r..(l..(secret:
             __ secret[i] __ guess[i]:
                 bulls += 1
             ____:

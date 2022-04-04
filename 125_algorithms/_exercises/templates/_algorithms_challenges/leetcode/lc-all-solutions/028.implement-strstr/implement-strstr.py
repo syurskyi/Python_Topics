@@ -11,7 +11,7 @@ c_ Solution(o..
       ____:
         r.. -1
 
-    ___ i __ r..(0, l..(haystack)):
+    ___ i __ r..(0, l..(haystack:
       k = i
       j = 0
       w.... j < l..(needle) a.. k < l..(haystack) a.. haystack[k] __ needle[j]:

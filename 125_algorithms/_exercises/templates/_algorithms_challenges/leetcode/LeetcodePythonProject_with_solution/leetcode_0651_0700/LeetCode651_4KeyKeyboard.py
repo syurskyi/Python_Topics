@@ -15,7 +15,7 @@ c_ Solution(o..
             dp[i] = m..(dp[i], i)
             ___ j __ r..(1, n+1
                 __ i+j+2 < n+1:
-                    dp[i+j+2] = m..(dp[i+j+2], dp[i]*(j+1))
+                    dp[i+j+2] = m..(dp[i+j+2], dp[i]*(j+1
         r.. dp[-1]
     
     ___ test

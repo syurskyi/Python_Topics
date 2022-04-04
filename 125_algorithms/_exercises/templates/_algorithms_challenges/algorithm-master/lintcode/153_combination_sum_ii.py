@@ -18,7 +18,7 @@ c_ Solution:
             ans.a..(p.. | )
             r..
 
-        ___ i __ r..(start, l..(A)):
+        ___ i __ r..(start, l..(A:
             __ remaining < A[i]:
                 r..
 

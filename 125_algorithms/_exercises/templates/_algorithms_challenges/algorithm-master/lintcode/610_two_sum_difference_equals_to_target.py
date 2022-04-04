@@ -16,7 +16,7 @@ c_ Solution:
             r.. NOT_FOUND
 
         remaining    # dict
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             """
             if a - b = t
             => a = b + t

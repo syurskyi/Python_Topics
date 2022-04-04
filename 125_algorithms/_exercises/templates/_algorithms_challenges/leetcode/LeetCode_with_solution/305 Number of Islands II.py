@@ -50,7 +50,7 @@ Op = n..('Op', 'r c')  # row col
 
 c_ Solution:
     ___ -
-        dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
+        dirs = ((-1, 0), (1, 0), (0, -1), (0, 1
 
     ___ numIslands2  n, m, operators
         rows = n
@@ -61,13 +61,13 @@ c_ Solution:
         ret    # list
         ___ op __ operators:
             op = Op(r=op[0], c=op[1])
-            uf.add(unroll(op.r, op.c))
+            uf.add(unroll(op.r, op.c
             mat[op.r][op.c] = 1
             ___ dir __ dirs:
                 x1 = op.r+dir[0]
                 y1 = op.c+dir[1]
                 __ 0 <= x1 < rows a.. 0 <= y1 < cols a.. mat[x1][y1] __ 1:
-                    uf.union(unroll(op.r, op.c), unroll(x1, y1))
+                    uf.union(unroll(op.r, op.c), unroll(x1, y1
 
             ret.a..(uf.count)
 

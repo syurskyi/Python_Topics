@@ -51,7 +51,7 @@ operas = [
 
 
 ___ _get_date(date_str
-    r.. d__.date(d__.s..(date_str, "%d %B %Y"))
+    r.. d__.date(d__.s..(date_str, "%d %B %Y"
 
 
 ___ operas_both_at_premiere(guest, composer
@@ -86,7 +86,7 @@ ___ operas_both_at_premiere(guest, composer
 
 #print(type(operas))
 #print(type(composers))
-print(operas_both_at_premiere("verdi", "wagner"))
+print(operas_both_at_premiere("verdi", "wagner"
 
 #if "khoo" not in composers:
 #    print("khoo not a composer")

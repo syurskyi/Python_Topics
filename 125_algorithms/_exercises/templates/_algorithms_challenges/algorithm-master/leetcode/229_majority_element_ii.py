@@ -33,7 +33,7 @@ c_ Solution:
             ____ num __ a2:
                 c2 + 1
 
-        ___ a, c __ ((a1, c1), (a2, c2)):
+        ___ a, c __ ((a1, c1), (a2, c2:
             __ c > l..(nums) // 3:
                 ans.a..(a)
 

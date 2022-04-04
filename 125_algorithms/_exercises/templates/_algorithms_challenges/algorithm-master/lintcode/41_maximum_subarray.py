@@ -16,7 +16,7 @@ c_ Solution:
 
         ans = f__('-inf')
         S = Smin = 0
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             S += A[i]
 
             __ S - Smin > ans:

@@ -113,49 +113,49 @@ c_ ClockTest(unittest.TestCase
 
     # Construct two separate clocks, set times, test if they are equal.
     ___ test_clocks_with_same_time
-        assertEqual(Clock(15, 37), Clock(15, 37))
+        assertEqual(Clock(15, 37), Clock(15, 37
 
     ___ test_clocks_a_minute_apart
-        assertNotEqual(Clock(15, 36), Clock(15, 37))
+        assertNotEqual(Clock(15, 36), Clock(15, 37
 
     ___ test_clocks_an_hour_apart
-        assertNotEqual(Clock(14, 37), Clock(15, 37))
+        assertNotEqual(Clock(14, 37), Clock(15, 37
 
     ___ test_clocks_with_hour_overflow
-        assertEqual(Clock(10, 37), Clock(34, 37))
+        assertEqual(Clock(10, 37), Clock(34, 37
 
     ___ test_clocks_with_hour_overflow_by_several_days
-        assertEqual(Clock(3, 11), Clock(99, 11))
+        assertEqual(Clock(3, 11), Clock(99, 11
 
     ___ test_clocks_with_negative_hour
-        assertEqual(Clock(22, 40), Clock(-2, 40))
+        assertEqual(Clock(22, 40), Clock(-2, 40
 
     ___ test_clocks_with_negative_hour_that_wraps
-        assertEqual(Clock(17, 3), Clock(-31, 3))
+        assertEqual(Clock(17, 3), Clock(-31, 3
 
     ___ test_clocks_with_negative_hour_that_wraps_multiple_times
-        assertEqual(Clock(13, 49), Clock(-83, 49))
+        assertEqual(Clock(13, 49), Clock(-83, 49
 
     ___ test_clocks_with_minute_overflow
-        assertEqual(Clock(0, 1), Clock(0, 1441))
+        assertEqual(Clock(0, 1), Clock(0, 1441
 
     ___ test_clocks_with_minute_overflow_by_several_days
-        assertEqual(Clock(2, 2), Clock(2, 4322))
+        assertEqual(Clock(2, 2), Clock(2, 4322
 
     ___ test_clocks_with_negative_minute
-        assertEqual(Clock(2, 40), Clock(3, -20))
+        assertEqual(Clock(2, 40), Clock(3, -20
 
     ___ test_clocks_with_negative_minute_that_wraps
-        assertEqual(Clock(4, 10), Clock(5, -1490))
+        assertEqual(Clock(4, 10), Clock(5, -1490
 
     ___ test_clocks_with_negative_minute_that_wraps_multiple_times
-        assertEqual(Clock(6, 15), Clock(6, -4305))
+        assertEqual(Clock(6, 15), Clock(6, -4305
 
     ___ test_clocks_with_negative_hours_and_minutes
-        assertEqual(Clock(7, 32), Clock(-12, -268))
+        assertEqual(Clock(7, 32), Clock(-12, -268
 
     ___ test_clocks_with_negative_hours_and_minutes_that_wrap
-        assertEqual(Clock(18, 7), Clock(-54, -11513))
+        assertEqual(Clock(18, 7), Clock(-54, -11513
 
 
 __ _____ __ _____

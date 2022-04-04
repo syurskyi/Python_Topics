@@ -8,7 +8,7 @@ c_ BirthdayDict(d..
     ___ __setitem__  name, birthday
         ___ b __ v..
             __ b.month __ birthday.month a.. b.day __ birthday.day:
-                print(MSG.f..(name))
+                print(MSG.f..(name
 
         super().__setitem__(name,birthday)
 

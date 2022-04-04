@@ -29,7 +29,7 @@ c_ Node(o..
         right = N..
 
     ___  -r
-        r.. r.. ("[%d,%d)" % (lo, hi))
+        r.. r.. ("[%d,%d)" % (lo, hi
 
 
 c_ SegmentTree(o..

@@ -37,13 +37,13 @@ __ _____ __ _____
         [24,29,31,76,81]
     )
     # [28],[24],[29],[77],[30],[25],[76],[75],[81],[80]
-    print(candidate.q(28))
-    print(candidate.q(24))
-    print(candidate.q(29))
-    print(candidate.q(77))
-    print(candidate.q(30))
-    print(candidate.q(25))
-    print(candidate.q(76))
-    print(candidate.q(75))
-    print(candidate.q(81))
-    print(candidate.q(80))
+    print(candidate.q(28
+    print(candidate.q(24
+    print(candidate.q(29
+    print(candidate.q(77
+    print(candidate.q(30
+    print(candidate.q(25
+    print(candidate.q(76
+    print(candidate.q(75
+    print(candidate.q(81
+    print(candidate.q(80

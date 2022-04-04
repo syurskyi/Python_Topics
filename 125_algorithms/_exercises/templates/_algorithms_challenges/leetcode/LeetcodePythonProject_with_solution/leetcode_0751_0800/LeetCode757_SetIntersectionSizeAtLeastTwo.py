@@ -9,7 +9,7 @@ c_ Solution(o..
         :type intervals: List[List[int]]
         :rtype: int
         """
-        intervals.s..(key=l.... x: (x[0], -x[1]))
+        intervals.s..(key=l.... x: (x[0], -x[1]
         stack    # list
         ___ interval __ intervals:
             w.... stack a.. stack[-1][1] >= interval[1]:

@@ -4,10 +4,10 @@ c_ Solution(o..
     :type s: str
     :rtype: int
     """
-    dp = [0 ___ _ __ r..(0, l..(s))]
+    dp = [0 ___ _ __ r..(0, l..(s]
     left = 0
     ans = 0
-    ___ i __ r..(0, l..(s)):
+    ___ i __ r..(0, l..(s:
       __ s[i] __ "(":
         left += 1
       ____ left > 0:

@@ -54,7 +54,7 @@ c_ Solution:
                             r.. steps
 
                         min_steps[_x][_y] = steps
-                        _queue.a..(Point(_x, _y))
+                        _queue.a..(Point(_x, _y
 
             queue = _queue
 

@@ -10,7 +10,7 @@ c_ Solution(o..
         r.. schedule[0]
       m    # list
       ___ i __ r..(l..(schedule) / 2
-        m.a..("({},{})".f..(schedule[i], schedule[-i - 1]))
+        m.a..("({},{})".f..(schedule[i], schedule[-i - 1]
       r.. helper(m)
 
     r.. helper m..(s.., r..(1, n + 1)))

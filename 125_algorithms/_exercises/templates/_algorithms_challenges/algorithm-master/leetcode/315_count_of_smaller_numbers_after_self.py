@@ -13,8 +13,8 @@ c_ Solution:
         n = l..(nums)
         ans = [0] * n
 
-        cands = s..(s..(nums))
-        v2i = {cands[i]: i ___ i __ r..(l..(cands))}
+        cands = s..(s..(nums
+        v2i = {cands[i]: i ___ i __ r..(l..(cands}
         bits = [0] * (l..(v2i) + 1)
 
         ___ i __ r..(n - 1, -1, -1

@@ -33,7 +33,7 @@ c_ Solution(o..
             ____ interval.end >= newInterval.start o. interval.start <= newInterval.end:
                 newInterval = Interval(\
                     m..(newInterval.start, interval.start),\
-                    m..(newInterval.end, interval.end))
+                    m..(newInterval.end, interval.end
         result.a..(newInterval)
         r.. result
     
@@ -46,9 +46,9 @@ c_ Solution(o..
         ___ intervals, newInterval __ testCases:
             intervals = [Interval(x[0], x[1]) ___ x __ intervals]
             newInterval = Interval(newInterval[0], newInterval[1])
-            print('intervals: %s' % (intervals))
+            print('intervals: %s' % (intervals
             result = insert(intervals, newInterval)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
 
 __ _____ __ _____

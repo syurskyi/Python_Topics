@@ -37,8 +37,8 @@ c_ Solution(o..
     
     ___ test
         testCases = [
-            TreeNode(5, TreeNode(4, TreeNode(1), TreeNode(1)), TreeNode(5, N.., TreeNode(5))),
-            TreeNode(1, TreeNode(4, TreeNode(4), TreeNode(4)), TreeNode(5, N.., TreeNode(5))),
+            TreeNode(5, TreeNode(4, TreeNode(1), TreeNode(1, TreeNode(5, N.., TreeNode(5))),
+            TreeNode(1, TreeNode(4, TreeNode(4), TreeNode(4, TreeNode(5, N.., TreeNode(5))),
         ]
         ___ root __ testCases:
             result = longestUnivaluePath(root)

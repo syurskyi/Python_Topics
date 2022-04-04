@@ -28,7 +28,7 @@ ___ _preload_sequences(url=URL
     Provided helper function
     Returns coding sequences, one sequence each line
     """
-    filename = __.p...j..(__.getenv("TMP", "/tmp"), "NC_009641.txt")
+    filename = __.p...j..(__.g..("TMP", "/tmp"), "NC_009641.txt")
     __ n.. __.p...isfile(filename
         u..(url, filename)
     w__ o.. filename, "r") __ f:
@@ -78,7 +78,7 @@ ___ return_codon_usage_table(
                             condon_count,
                             s..(condon_count.values,
                             translation
-                            ))
+
         whole_table.a..(seperator)
     r.. '\n'.j..(whole_table)
 

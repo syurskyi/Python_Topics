@@ -42,7 +42,7 @@ c_ Solution(o..
                 cur.pop()
         ____:
             __ l..(cur) __ n:
-                ret.a..("".j..(cur))
+                ret.a..("".j..(cur
                 r..
             ___ elt __ lst:
                 __ n.. (elt __ "00" a.. l..(cur) __ n-2

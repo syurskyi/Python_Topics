@@ -16,11 +16,11 @@ c_ Solution(o..
     
     ___ helper  nums, ind, curr, target, res
         __ target __ 0:
-            res.a..(l..(curr))
+            res.a..(l..(curr
             r..
         __ target < 0:
             r..
-        ___ i __ r..(ind, l..(nums)):
+        ___ i __ r..(ind, l..(nums:
             curr.a..(nums[i])
             helper(nums, i, curr, target-nums[i], res)
             curr.pop()

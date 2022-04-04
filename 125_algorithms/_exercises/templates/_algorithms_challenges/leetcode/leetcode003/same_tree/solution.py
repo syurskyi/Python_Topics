@@ -24,6 +24,6 @@ c_ Solution(o..
         ____ p __ n.. N.. a.. q __ n.. N..
             __ (p.val __ q.val a..
                     isSameTree(p.left, q.left) a..
-                    isSameTree(p.right, q.right)):
+                    isSameTree(p.right, q.right:
                 r.. T..
         r.. F..

@@ -11,7 +11,7 @@ c_ Solution(o..
         :type dictionary: List[str]
         :rtype: str
         """
-        ret = (target, l..(target))
+        ret = (target, l..(target
         ___ abbr, abbr_l __ dfs(target
             __ validate(dictionary, abbr) a.. ret[1] > abbr_l:
                 ret = (abbr, abbr_l)
@@ -35,7 +35,7 @@ c_ Solution(o..
 
             ___ right, right_l __ dfs(word[l+1:]
                 cur = left_num + word[l:l+1] + right  # word[l:l+1] possible ""
-                ret.a..((cur, left_l + right_l))
+                ret.a..((cur, left_l + right_l
 
         r.. ret
 

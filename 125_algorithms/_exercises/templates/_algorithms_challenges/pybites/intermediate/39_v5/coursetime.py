@@ -34,4 +34,4 @@ ___ calc_total_course_duration(timestamps
     total_time = s..(t..(minutes=xt.minute, seconds=xt.second).total_seconds()
                      ___ t __ timestamps
                      ___ xt __ [d__.s..(t, '%M:%S')])
-    r.. s..(t..(seconds=total_time))
+    r.. s..(t..(seconds=total_time

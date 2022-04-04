@@ -4,7 +4,7 @@ ____ t___ _______ L..
 ___ sum_indices(items: L..[s..]) __ i..:
     duplicate_lookup    # dict
     running_total = 0
-    ___ i __ r..(l..(items)):
+    ___ i __ r..(l..(items:
         item = items[i]
 
         __ item n.. __ duplicate_lookup:

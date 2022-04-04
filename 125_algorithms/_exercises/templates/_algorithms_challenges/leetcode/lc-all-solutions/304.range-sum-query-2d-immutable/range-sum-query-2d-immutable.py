@@ -4,9 +4,9 @@ c_ NumMatrix(o..
     initialize your data structure here.
     :type matrix: List[List[int]]
     """
-    dp = [[0] * l..(matrix[0]) ___ i __ r..(0, l..(matrix))]
-    ___ i __ r..(0, l..(matrix)):
-      ___ j __ r..(0, l..(matrix[0])):
+    dp = [[0] * l..(matrix[0]) ___ i __ r..(0, l..(matrix]
+    ___ i __ r..(0, l..(matrix:
+      ___ j __ r..(0, l..(matrix[0]:
         __ i __ 0:
           dp[0][j] = dp[0][j - 1] + matrix[i][j]
         ____ j __ 0:

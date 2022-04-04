@@ -125,7 +125,7 @@ c_ Solution(o..
                     r.. count
                 # 1 cut
                 ___ ind, val __ e..(cur
-                    ___ i __ x..(1, l..(val)):
+                    ___ i __ x..(1, l..(val:
                         cut1 = val[:i]
                         cut2 = val[i:]
                         new_cur = l..(cur)
@@ -173,7 +173,7 @@ c_ Solution(o..
                 __ is_palindrome(s[i:k]
                     dp[i][k] = 0
                 ____:
-                    dp[i][k] = m..(1+dp[i][j]+dp[j][k] ___ j __ x..(i+1, k))
+                    dp[i][k] = m..(1+dp[i][j]+dp[j][k] ___ j __ x..(i+1, k
 
         r.. dp[0][length]
 
@@ -241,7 +241,7 @@ c_ Solution(o..
                 __ dp2[i][k]:
                     dp[i][k] = 0
                 ____:
-                    dp[i][k] = m..(1+dp[i][j]+dp[j][k] ___ j __ x..(i+1, k))
+                    dp[i][k] = m..(1+dp[i][j]+dp[j][k] ___ j __ x..(i+1, k
 
         r.. dp[0][length]
 

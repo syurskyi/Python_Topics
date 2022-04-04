@@ -1,5 +1,5 @@
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ u__.r.. _______ u..
 _______ __
 _______ d__
@@ -8,7 +8,7 @@ ____ c.. _______ d..
 ____ dateutil.parser _______ p..
 
 # get the data
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 base_url = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 
 fathers_days_countries = TMP / 'fathers-day-countries.txt'
@@ -103,7 +103,7 @@ ___ generate_father_day_planning(days_to_countries_ N..
 
 
     ___ i,date __ e..(dates
-        dates[i] = p..(date,default=d__.d__(2020,1,1))
+        dates[i] = p..(date,default=d__.d__(2020,1,1
         #days_to_countries[date].sort()
 
 

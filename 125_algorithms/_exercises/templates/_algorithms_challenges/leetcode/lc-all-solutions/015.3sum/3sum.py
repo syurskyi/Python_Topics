@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     res    # list
     nums.s..()
-    ___ i __ r..(0, l..(nums)):
+    ___ i __ r..(0, l..(nums:
       __ i > 0 a.. nums[i] __ nums[i - 1]:
         _____
       target = 0 - nums[i]
@@ -17,7 +17,7 @@ c_ Solution(o..
         ____ nums[start] + nums[end] < target:
           start += 1
         ____:
-          res.a..((nums[i], nums[start], nums[end]))
+          res.a..((nums[i], nums[start], nums[end]
           end -= 1
           start += 1
           w.... start < end a.. nums[end] __ nums[end + 1]:

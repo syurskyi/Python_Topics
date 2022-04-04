@@ -59,7 +59,7 @@ c_ Solution:
         """
         n = l..(nums)
         median = quick_select(nums, 0, n, n//2)
-        r.. s.. m..(l.... x: abs(x - median), nums))
+        r.. s.. m..(l.... x: abs(x - median), nums
 
     ___ find_median  nums
         n = l..(nums)
@@ -77,7 +77,7 @@ c_ Solution:
         """
         n = l..(nums)
         avg = r..(s..(nums) / n)
-        r.. s.. m..(l.... x: abs(x - avg), nums))
+        r.. s.. m..(l.... x: abs(x - avg), nums
 
 
 __ _______ __ _______

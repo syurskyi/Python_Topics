@@ -39,7 +39,7 @@ c_ Solution:
 
     ___ dfs  lst, S_lst, i
         __ l..(lst) __ l..(S_lst
-            ret.a..(l..(lst))
+            ret.a..(l..(lst
             r..
 
         __ S_lst[i].i..

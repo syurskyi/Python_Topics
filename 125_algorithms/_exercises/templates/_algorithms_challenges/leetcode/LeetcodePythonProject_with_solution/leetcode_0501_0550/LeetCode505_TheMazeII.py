@@ -16,7 +16,7 @@ c_ Solution(o..
         __ n.. maze o. n.. maze[0]: r.. -1
         m, n = l..(maze), l..(maze[0])
         heap    # list
-        heapq.heappush(heap, (0, start[0], start[1]))
+        heapq.heappush(heap, (0, start[0], start[1]
         visited = [[F..]*n ___ _ __ r..(m)]
         w.... heap:
             currDist, i, j = heapq.heappop(heap)
@@ -25,7 +25,7 @@ c_ Solution(o..
             visited[i][j] = T..
             ___ x, y, dist __ getNextSteps(maze, i, j
                 __ n.. visited[x][y]:
-                    heapq.heappush(heap, (currDist+dist, x, y))
+                    heapq.heappush(heap, (currDist+dist, x, y
         r.. -1
     
     ___ getNextSteps  maze, i, j
@@ -41,5 +41,5 @@ c_ Solution(o..
                 y += dir[1]
                 dist += 1
             __ x != i o. y != j:
-                steps.add((x, y, dist))
+                steps.add((x, y, dist
         r.. l..(steps)

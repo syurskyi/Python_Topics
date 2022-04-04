@@ -42,4 +42,4 @@ ___ get_total_points(belts=ninja_belts
     ___ item __ values:
         total += item.ninjas * item.score
     r.. total
-print(get_total_points(ninja_belts))
+print(get_total_points(ninja_belts

@@ -23,6 +23,6 @@ ___ round_up_or_down(transactions, up=T..
 
 
 l = [4.5, 3.2, 6.9]
-print(round_up_or_down(l, up=F..))
+print(round_up_or_down(l, up=F..
 
 

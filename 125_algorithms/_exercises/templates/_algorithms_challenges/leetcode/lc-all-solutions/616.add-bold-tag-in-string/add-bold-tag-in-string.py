@@ -22,7 +22,7 @@ c_ Solution(o..
     i = 0
     w.... i < l..(s
       __ i __ d:
-        ans.a..("<b>{}</b>".f..(s[i:d[i] + 1]))
+        ans.a..("<b>{}</b>".f..(s[i:d[i] + 1]
         i = d[i] + 1
       ____:
         ans.a..(s[i])

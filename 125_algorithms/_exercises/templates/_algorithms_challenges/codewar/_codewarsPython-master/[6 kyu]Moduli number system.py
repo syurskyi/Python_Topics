@@ -10,5 +10,5 @@ ___ fromNb2Str(n, modsys
         r.. 'Not applicable'
     r.. '-' + '--'.j..([s..(n%num) ___ num __ modsys]) + '-'
 
-print(fromNb2Str(187,[8,7,5,3]))
-print(fromNb2Str(15,[8,6,5,3]))
+print(fromNb2Str(187,[8,7,5,3]
+print(fromNb2Str(15,[8,6,5,3]

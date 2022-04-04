@@ -35,10 +35,10 @@ c_ Solution(o..
     :type M: List[List[int]]
     :rtype: int
     """
-    uf = UnionFind(l..(M))
+    uf = UnionFind(l..(M
     ans = 0
-    ___ i __ r..(l..(M)):
-      ___ j __ r..(l..(M[0])):
+    ___ i __ r..(l..(M:
+      ___ j __ r..(l..(M[0]:
         __ M[i][j] __ 1:
           uf.union(i, j)
     r.. uf.getCount()

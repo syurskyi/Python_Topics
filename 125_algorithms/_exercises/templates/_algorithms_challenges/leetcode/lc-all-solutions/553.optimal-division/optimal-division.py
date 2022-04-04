@@ -5,5 +5,5 @@ c_ Solution(o..
     :rtype: str
     """
     __ l..(nums) < 3:
-      r.. "/".j.. m..(s.., nums))
+      r.. "/".j.. m..(s.., nums
     r.. "%s/(%s)" % (nums[0], "/".j.. m..(s.., nums[1:])))

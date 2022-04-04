@@ -7,12 +7,12 @@ c_ Rails:
     ___ populate_rails_linear  message, rail_lengths
         message_list = l..(message)
         ___ rail __ linear_iterator(rail_lengths
-            rail.a..(message_list.pop(0))
+            rail.a..(message_list.pop(0
 
     ___ populate_rails_zig_zag  message
         message_list = l..(message)
         ___ rail __ zig_zag_iterator(message
-            rail.a..(message_list.pop(0))
+            rail.a..(message_list.pop(0
 
     ___ to_string_linear
         r.. ''.j..([data ___ rail __ rails ___ data __ rail])
@@ -22,7 +22,7 @@ c_ Rails:
                         zig_zag_iterator(message)])
 
     ___ linear_iterator  rail_lengths
-        ___ index __ r..(l..(rails)):
+        ___ index __ r..(l..(rails:
             ___ rail_length __ r..(rail_lengths[index]
                 y.. rails[index]
 

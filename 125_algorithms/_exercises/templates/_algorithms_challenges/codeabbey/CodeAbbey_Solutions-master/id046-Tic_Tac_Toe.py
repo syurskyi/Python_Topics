@@ -46,11 +46,11 @@ ___ tic_tac_toe(games
             board[move - 1]  player_one __ turn % 2 __ 0 ____ player_two
 
             __ is_winner(board
-                answer.a..(s..(turn+1))
+                answer.a..(s..(turn+1
                 _____; # Stops loop each time an answer is found.
             __ turn __ l..(moves) - 1:
                 answer.a..('0') # Tie game
 
 __ _____ __ _____
     tic_tac_toe(input
-    print(' '.j..(answer))
+    print(' '.j..(answer

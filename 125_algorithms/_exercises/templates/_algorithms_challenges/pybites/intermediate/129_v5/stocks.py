@@ -39,7 +39,7 @@ ___ get_industry_cap(industry
 ___ get_stock_symbol_with_highest_cap
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
-    r.. s..([(co 'symbol' , _cap_str_to_mln_float(co 'cap' )) ___ co __ data], key=l.... x: x[1])[-1][0]
+    r.. s..([(co 'symbol' , _cap_str_to_mln_float(co 'cap'  ___ co __ data], key=l.... x: x[1])[-1][0]
 
 
 ___ get_sectors_with_max_and_min_stocks

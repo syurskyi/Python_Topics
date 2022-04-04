@@ -37,7 +37,7 @@ ___ get_movies_by_director
                                   f__(row 'imdb_score' )])
 
     ___ name, movie, year, score __ full_list:
-        d[name].a..(Movie(title=movie, year=year, score=score))
+        d[name].a..(Movie(title=movie, year=year, score=score
 
     r.. d
 

@@ -33,7 +33,7 @@ c_ Solution(o..
     
     ___ test
 #         root = TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3, None, TreeNode(6)))
-        root = TreeNode(1, TreeNode(2), TreeNode(3))
+        root = TreeNode(1, TreeNode(2), TreeNode(3
         result = sumNumbers(root)
         print(result)
 

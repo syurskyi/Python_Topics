@@ -59,7 +59,7 @@ c_ Solution:
             __ n.. visited[i]:
                 emails = s..()
                 dfs(i, accounts, email_to_ids, emails, visited)
-                ret.a..([v[0]] + s..(emails))
+                ret.a..([v[0]] + s..(emails
 
         r.. ret
 
@@ -82,7 +82,7 @@ c_ Solution:
         """
         email_id    # dict
         id_emails = d..(l..)
-        ___ i __ r..(l..(accounts)):
+        ___ i __ r..(l..(accounts:
             person = N..
             ___ email __ accounts[i][1:]:
                 __ email __ email_id:
@@ -100,6 +100,6 @@ c_ Solution:
 
         ret    # list
         ___ k, v __ id_emails.i..:
-            ret.a..([accounts[k][0]] + s..(v))
+            ret.a..([accounts[k][0]] + s..(v
 
         r.. ret

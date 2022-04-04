@@ -22,7 +22,7 @@ c_ Solution(o..
         __ l..(ans) __ l..(s
           r.. "".j..(ans)
         __ freq < 0:
-          temp.a..((freq, c))
+          temp.a..((freq, c
       ___ freq, c __ temp:
-        heapq.heappush(heap, (freq, c))
+        heapq.heappush(heap, (freq, c
     r.. "".j..(ans)

@@ -4,7 +4,7 @@ _______ __
 _______ u__.r..
 _______ ___
 # prep
-tmp = __.getenv("TMP", "/tmp")
+tmp = __.g..("TMP", "/tmp")
 tempfile = __.p...j..(tmp, 'dirnames')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/dirnames.txt',
@@ -61,7 +61,7 @@ ___ diehard_pybites(files_ N..
 
     users = C..()
     popular_challenges = C..()
-    files = l..(filterfalse(l.... x: x.s..('/')[-1] __ IGNORE, files))
+    files = l..(filterfalse(l.... x: x.s..('/')[-1] __ IGNORE, files
     users.update([f.s..('/')[-1] ___ f __ files])
     popular_challenges.update([f.s..('/')[0] ___ f __ files])
     print(l..(files), file=___.stderr, flush=T..)

@@ -48,7 +48,7 @@ c_ Solution(o..
         ]
         ___ image, x, y __ testCases:
             result = minArea(image, x, y)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

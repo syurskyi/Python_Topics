@@ -7,44 +7,44 @@ c_ CipherTest(unittest.TestCase
 
     ___ test_caesar_encode1
         assertEqual('lwlvdzhvrphsurjudpplqjlqsbwkrq',
-                         Caesar().encode('itisawesomeprogramminginpython'))
+                         Caesar().encode('itisawesomeprogramminginpython'
 
     ___ test_caesar_encode2
-        assertEqual('yhqlylglylfl', Caesar().encode('venividivici'))
+        assertEqual('yhqlylglylfl', Caesar().encode('venividivici'
 
     ___ test_caesar_encode3
         assertEqual('wzdvwkhqljkwehiruhfkulvwpdv',
-                         Caesar().encode('\'Twas the night before Christmas'))
+                         Caesar().encode('\'Twas the night before Christmas'
 
     ___ test_caesar_encode_with_numbers
-        assertEqual('jr', Caesar().encode('1, 2, 3, Go!'))
+        assertEqual('jr', Caesar().encode('1, 2, 3, Go!'
 
     ___ test_caesar_decode
-        assertEqual('venividivici', Caesar().d.. 'yhqlylglylfl'))
+        assertEqual('venividivici', Caesar().d.. 'yhqlylglylfl'
 
     ___ test_cipher_encode1
         c = Cipher('a')
         assertEqual('itisawesomeprogramminginpython',
-                         c.encode('itisawesomeprogramminginpython'))
+                         c.encode('itisawesomeprogramminginpython'
 
     ___ test_cipher_encode2
         c = Cipher('aaaaaaaaaaaaaaaaaaaaaa')
         assertEqual('itisawesomeprogramminginpython',
-                         c.encode('itisawesomeprogramminginpython'))
+                         c.encode('itisawesomeprogramminginpython'
 
     ___ test_cipher_encode3
         c = Cipher('dddddddddddddddddddddd')
-        assertEqual('yhqlylglylfl', c.encode('venividivici'))
+        assertEqual('yhqlylglylfl', c.encode('venividivici'
 
     ___ test_cipher_encode4
         key = ('duxrceqyaimciuucnelkeoxjhdyduucpmrxmaivacmybmsdrzwqxvbxsy'
                'gzsabdjmdjabeorttiwinfrpmpogvabiofqexnohrqu')
         c = Cipher(key)
-        assertEqual('gccwkixcltycv', c.encode('diffiehellman'))
+        assertEqual('gccwkixcltycv', c.encode('diffiehellman'
 
     ___ test_cipher_encode_short_key
         c = Cipher('abcd')
-        assertEqual('abcdabcd', c.encode('aaaaaaaa'))
+        assertEqual('abcdabcd', c.encode('aaaaaaaa'
 
     ___ test_cipher_compositiion1
         key = ('duxrceqyaimciuucnelkeoxjhdyduucpmrxmaivacmybmsdrzwqxvbxsy'

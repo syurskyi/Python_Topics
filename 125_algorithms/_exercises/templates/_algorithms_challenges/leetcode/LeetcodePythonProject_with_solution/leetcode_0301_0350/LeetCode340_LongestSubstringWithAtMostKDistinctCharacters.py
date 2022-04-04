@@ -25,7 +25,7 @@ c_ Solution(o..
             ('abddebddesbaddes', 3),
         ]
         ___ s, k __ testCases:
-            print('s: %s, k: %s' % (s, k))
+            print('s: %s, k: %s' % (s, k
             result = lengthOfLongestSubstringKDistinct(s, k)
             print('result: %s' % (s..(result)))
             print('-='*20+'-')

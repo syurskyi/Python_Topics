@@ -30,11 +30,11 @@ c_ Solution:
             r.. F..
 
         target = s // 2
-        d = d..(l....: d..(i..))
+        d = d..(l....: d..(i..
         d[0][0] = 1
         d[0][nums[0]] = 1
 
-        ___ i __ r..(1, l..(nums)):
+        ___ i __ r..(1, l..(nums:
             ___ v __ r..(target + 1
                 d[i][v] = d[i-1][v] + d[i-1][v-nums[i]]
 

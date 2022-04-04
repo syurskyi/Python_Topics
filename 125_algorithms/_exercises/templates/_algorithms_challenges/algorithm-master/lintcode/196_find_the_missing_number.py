@@ -26,7 +26,7 @@ c_ Solution:
 
         nums.s..()
 
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             __ i != nums[i]:
                 r.. i
 

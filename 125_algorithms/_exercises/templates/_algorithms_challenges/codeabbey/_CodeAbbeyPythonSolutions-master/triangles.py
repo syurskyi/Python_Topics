@@ -13,7 +13,7 @@ ___ is_triangle(sides
 
 ___ i __ r..(amount_values
     sides = l.. m..(i.., input().s..()))
-    results.a..(is_triangle(sides))
+    results.a..(is_triangle(sides
 
 print(*results)
 

@@ -40,7 +40,7 @@ c_ Solution:
 
         ret    # list
         ___ i, s __ e..(S
-            b = (o..(s) + shifts[i] - o..('a')) % 26 + o..('a')
+            b = (o..(s) + shifts[i] - o..('a' % 26 + o..('a')
             b = chr(b)
             ret.a..(b)
 

@@ -14,6 +14,6 @@ ___ bulls_and_crows
             __ num __ secret_number a.. num ! secret_number[count]:
                 number_match + 1
             count + 1
-        answer.a..('{0}-{1}'.f..(place_match, number_match))
-    print(' '.j..(answer))
+        answer.a..('{0}-{1}'.f..(place_match, number_match
+    print(' '.j..(answer
 bulls_and_crows()

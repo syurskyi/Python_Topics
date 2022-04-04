@@ -49,7 +49,7 @@ ___ get_movie_longest_runtime(movies: l..) __ s..:
 print(l..(get_movie_data( '1.json', '2.json', '3.json', '4.json', '5.json' )))
 
 ___ m __ get_movie_data( '1.json', '2.json', '3.json', '4.json', '5.json'
-    print(t..(m))
+    print(t..(m
 
 print(get_single_comedy(get_movie_data( '1.json', '2.json', '3.json', '4.json', '5.json' )))
 

@@ -19,7 +19,7 @@ c_ Solution:
         m, n = l..(matrix), l..(matrix[0])
 
         ___ i __ r..(m
-            heapq.heappush(heap, (matrix[i][0], i, 0))
+            heapq.heappush(heap, (matrix[i][0], i, 0
 
         w.... heap a.. heap[0][0] <= target:
             num, x, y = heapq.heappop(heap)
@@ -29,7 +29,7 @@ c_ Solution:
 
             y += 1
             __ y < n:
-                heapq.heappush(heap, (matrix[x][y], x, y))
+                heapq.heappush(heap, (matrix[x][y], x, y
 
         r.. ans
 

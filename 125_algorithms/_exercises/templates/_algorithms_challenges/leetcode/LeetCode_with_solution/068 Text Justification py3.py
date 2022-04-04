@@ -78,7 +78,7 @@ c_ Solution:
                 ___ i __ r..(maxWidth - char_cnt
                     cur_words[i % m..(1, l..(cur_words) - 1)] += " "
 
-                ret.a..("".j..(cur_words))
+                ret.a..("".j..(cur_words
 
                 cur_words = [w]
                 char_cnt = l..(w)
@@ -109,7 +109,7 @@ c_ Solution2:
                 ___ i __ r..(maxWidth - char_cnt
                     cur_words[i % m..(1, l..(cur_words) - 1)] += " "  # insert in between
                     # len(cur_words) - 1 can be 0
-                ret.a..("".j..(cur_words))
+                ret.a..("".j..(cur_words
 
                 cur_words    # list
                 char_cnt = 0

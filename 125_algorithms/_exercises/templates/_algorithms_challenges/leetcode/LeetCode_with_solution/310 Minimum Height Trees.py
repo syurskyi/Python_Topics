@@ -73,8 +73,8 @@ c_ Solution(o..
 
     ___ bfs  s, V
         # bfs
-        visited = [F.. ___ _ __ x..(l..(V))]
-        pi = [-1 ___ _ __ x..(l..(V))]
+        visited = [F.. ___ _ __ x..(l..(V]
+        pi = [-1 ___ _ __ x..(l..(V]
         last = s
         level = 0
         q    # list
@@ -125,7 +125,7 @@ c_ Solution_TLE(o..
 
     ___ bfs  s, V
         # bfs
-        visisted = [F.. ___ _ __ x..(l..(V))]
+        visisted = [F.. ___ _ __ x..(l..(V]
         q    # list
         level = 0
         q.a..(s)

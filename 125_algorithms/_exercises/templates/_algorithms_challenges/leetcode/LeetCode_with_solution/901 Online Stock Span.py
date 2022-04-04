@@ -54,7 +54,7 @@ c_ StockSpanner:
         w.... stk a.. stk[-1][0] <= price:
             _, span = stk.pop()
             cur_span += span
-        stk.a..((price, cur_span))
+        stk.a..((price, cur_span
         r.. cur_span
 
 

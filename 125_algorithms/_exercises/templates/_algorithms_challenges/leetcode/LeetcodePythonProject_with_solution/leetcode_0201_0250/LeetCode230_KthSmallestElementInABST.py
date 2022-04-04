@@ -36,13 +36,13 @@ c_ Solution(o..
     ___ test
         testCases = [
             (
-                TreeNode(2, TreeNode(1)),
+                TreeNode(2, TreeNode(1,
                 1,
             ),
         ]
         ___ root, k __ testCases:
             result = kthSmallest(root, k)
-            print('result: %s' % (result))
+            print('result: %s' % (result
 
 __ _____ __ _____
     Solution().test()

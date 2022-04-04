@@ -1,11 +1,11 @@
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 _______ bisect
 _______ __
 ____ u__.r.. _______ u..
 ____ bs4 _______ BeautifulSoup __ Soup
 
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 HTML_FILE = TMP / "enchantment_list_pc.html"
 
 # source:
@@ -123,7 +123,7 @@ ___ generate_items(data
             item_mapping[item].add_enchantment(enchantment)
     
     
-    item_mapping = d..(s..(item_mapping.i..,key=l.... x:x[0]))
+    item_mapping = d..(s..(item_mapping.i..,key=l.... x:x[0]
 
     r.. item_mapping
 
@@ -132,7 +132,7 @@ ___ generate_items(data
 
 ___ get_soup(file=HTML_FILE
     """Retrieves/takes source HTML and returns a BeautifulSoup object"""
-    __ isi..(file, Path
+    __ isi..(file, P..
         __ n.. file.is_file
             u..(URL, file)
 

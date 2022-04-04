@@ -21,7 +21,7 @@ c_ CircularBuffer(o..
             buffer[write_point] = o..(data)
 
     ___ clear
-        buffer = bytearray(l..(buffer))
+        buffer = bytearray(l..(buffer
 
     ___ write  data
         __ a..(buffer

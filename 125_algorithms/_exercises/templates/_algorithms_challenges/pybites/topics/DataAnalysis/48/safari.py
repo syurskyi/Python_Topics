@@ -20,7 +20,7 @@ ___ create_chart
         #print(len(lines))
         current_date = ''
         outstr = ''
-        ___ line __ r..(l..(lines)):
+        ___ line __ r..(l..(lines:
             #print(lines[line])
                 __ '- sending to slack channel' __ lines[line]:
                     first, second = s..(lines[line-1]).s..('root         DEBUG')

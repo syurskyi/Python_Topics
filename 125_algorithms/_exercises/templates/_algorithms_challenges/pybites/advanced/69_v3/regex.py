@@ -9,7 +9,7 @@ ___ has_timestamp(text
 
 ___ is_integer(number
     """Return True if number is an integer"""
-    r.. __.m..(r'^[-+]?\d+$', s..(number)) __ n.. N..
+    r.. __.m..(r'^[-+]?\d+$', s..(number __ n.. N..
 
 
 ___ has_word_with_dashes(text
@@ -44,4 +44,4 @@ ___ has_three_consecutive_vowels(word
 ___ convert_emea_date_to_amer_date(date
     """Convert dd/mm/yyyy (EMEA date format) to mm/dd/yyyy
        (AMER date format)"""
-    r.. __.sub(r'(\d\d)/(\d\d)/(\d{4})', r'\2/\1/\3', s..(date))
+    r.. __.sub(r'(\d\d)/(\d\d)/(\d{4})', r'\2/\1/\3', s..(date

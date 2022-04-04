@@ -52,7 +52,7 @@ c_ Solution:
         """
         G = graph
         color = d..(i..)
-        ___ k __ r..(l..(G)):
+        ___ k __ r..(l..(G:
             __ k n.. __ color:
                 color[k] = 0
                 __ n.. dfs(G, k, color
@@ -79,7 +79,7 @@ c_ SolutionError:
         G = graph
         A, B = s..(), s..()
         visited = d..(b..)
-        ___ k __ r..(l..(G)):
+        ___ k __ r..(l..(G:
             __ n.. visited[k]:
                 __ n.. dfs(G, visited, k, A, B, T..
                     r.. F..

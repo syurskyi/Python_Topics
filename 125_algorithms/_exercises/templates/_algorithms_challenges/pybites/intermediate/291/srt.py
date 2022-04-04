@@ -35,8 +35,8 @@ ___ get_srt_section_ids(text: s..) __ L..[i..]:
       total_chars = l..(section[2])
       start_h, start_m, start_s = start.s..(":")
       stop_h, stop_m, stop_s = stop.s..(":")
-      start = t..(hours=i..(start_h), minutes=i..(start_m), seconds=i..(start_s[:2]))
-      stop = t..(hours=i..(stop_h), minutes=i..(stop_m), seconds=i..(stop_s[:2]))
+      start = t..(hours=i..(start_h), minutes=i..(start_m), seconds=i..(start_s[:2]
+      stop = t..(hours=i..(stop_h), minutes=i..(stop_m), seconds=i..(stop_s[:2]
       time_delta = stop - start
       sections_ranking[i..(section[0])] = total_chars / time_delta.seconds
 
@@ -76,4 +76,4 @@ __ _______ __ _______
    You can actually hide the sidebar and have only the description and the code editor.
    """
 
-   print(get_srt_section_ids(text1))
+   print(get_srt_section_ids(text1

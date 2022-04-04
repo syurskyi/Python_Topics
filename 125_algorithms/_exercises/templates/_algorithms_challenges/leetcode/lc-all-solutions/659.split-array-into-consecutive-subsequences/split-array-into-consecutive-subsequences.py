@@ -10,4 +10,4 @@ c_ Solution(o..
         heapq.heappush(d[num], heapq.heappop(d[num - 1]) + 1)
       ____:
         heapq.heappush(d[num], 1)
-    r.. n.. any(length < 3 ___ length __ s..(d.v.., []))
+    r.. n.. any(length < 3 ___ length __ s..(d.v.., []

@@ -17,7 +17,7 @@ c_ Solution(o..
     
     ___ helper  l, r, curr, res
         __ l > r:
-            res.a..(''.j..(curr))
+            res.a..(''.j..(curr
             r..
         ___ p __ pairs:
             curr[l] = p[0]
@@ -55,9 +55,9 @@ c_ Solution(o..
             4,
         ]
         ___ n __ testCases:
-            print('n: %s' % (n))
+            print('n: %s' % (n
             result = findStrobogrammatic(n)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
  
 __ _____ __ _____

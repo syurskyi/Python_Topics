@@ -14,7 +14,7 @@ c_ Solution(o..
         left = [0]*l..(prices)
         right = [0]*l..(prices)
         minVal = prices[0]
-        ___ i __ r..(1, l..(prices)):
+        ___ i __ r..(1, l..(prices:
             left[i] = m..(prices[i]-minVal, left[i])
             minVal = m..(minVal, prices[i])
         maxVal = prices[-1]
@@ -22,7 +22,7 @@ c_ Solution(o..
             right[i] = m..(maxVal-prices[i], right[i+1])
             maxVal = m..(maxVal, prices[i])
         profit = 0
-        ___ i __ r..(l..(prices)):
+        ___ i __ r..(l..(prices:
             profit = m..(left[i]+right[i], profit)
         r.. profit
     
@@ -35,9 +35,9 @@ c_ Solution(o..
             [3, 3],
         ]
         ___ prices __ testCases:
-            print('prices: %s' % (prices))
+            print('prices: %s' % (prices
             result = maxProfit(prices)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

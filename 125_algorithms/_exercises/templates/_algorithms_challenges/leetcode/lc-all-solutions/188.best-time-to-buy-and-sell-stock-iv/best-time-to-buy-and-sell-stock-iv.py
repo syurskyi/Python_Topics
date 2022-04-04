@@ -63,7 +63,7 @@ c_ Solution(o..
       w.... stack a.. prices[stack[-1][1] - 1] < prices[p - 1]:
         heap.a..(prices[stack[-1][1] - 1] - prices[v])
         v, _ = stack.pop()
-      stack.a..((v, p))
+      stack.a..((v, p
 
     heap += [prices[p - 1] - prices[v] ___ v, p __ stack]
     __ l..(heap) < k:

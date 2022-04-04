@@ -10,7 +10,7 @@ c_ Solution(o..
         :type n: int
         :rtype: str
         """
-        l = l..(r..(1, n+1))
+        l = l..(r..(1, n+1
         r.. helper(l)
     
     ___ helper  l

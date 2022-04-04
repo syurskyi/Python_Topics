@@ -55,7 +55,7 @@ c_ Solution:
                 ret.insert(d[(q, r)], "(")
                 r.. "".j..(ret)
 
-            ret.a..(s..(q))
+            ret.a..(s..(q
             d[(q, r)] = i
             i += 1
             num -= q*deno
@@ -104,7 +104,7 @@ c_ Solution_error:
                 ret.a..("0")
                 i += 1
 
-            ret.a..(s..(r))
+            ret.a..(s..(r
             d[r] = i
             i += 1
             num -= r*deno

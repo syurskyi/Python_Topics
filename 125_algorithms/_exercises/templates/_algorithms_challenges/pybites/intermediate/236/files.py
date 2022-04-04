@@ -1,4 +1,4 @@
-____ pathlib _______ PosixPath
+____ p.. _______ PosixPath
 _______ difflib
 _______ __
 
@@ -42,7 +42,7 @@ ___ get_matching_files(directory: PosixPath, filter_str: s..) __ l..:
         r.. exact_matches
 
 
-    close_matches = difflib.get_close_matches(filter_str,(file.l.. ___ file __ files))
+    close_matches = difflib.get_close_matches(filter_str,(file.l.. ___ file __ files
     r.. close_matches
 
 

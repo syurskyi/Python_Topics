@@ -13,7 +13,7 @@ xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
 
 ___ get_tree
     """You probably want to use ET.fromstring"""
-    r..(ET.f..(xmlstring))
+    r..(ET.f..(xmlstring
 
 
 
@@ -29,4 +29,4 @@ ___ get_movie_longest_runtime
     root = ET.f..(xmlstring)
     ___ movie __ root.f..('movie'
         __ i..(movie.g.. 'runtime')[:3]) __ longest:
-            r..(movie.g.. 'title'))
+            r..(movie.g.. 'title'

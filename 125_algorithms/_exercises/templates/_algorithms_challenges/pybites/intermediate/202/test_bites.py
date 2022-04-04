@@ -1,4 +1,4 @@
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ tempfile _______ TemporaryDirectory
 
 _______ p__

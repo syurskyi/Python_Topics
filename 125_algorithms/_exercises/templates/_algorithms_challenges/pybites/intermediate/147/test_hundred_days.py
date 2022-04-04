@@ -14,7 +14,7 @@ ___ test_get_hundred_weekdays_default_start_date
     # check if weekends are not included
     ... days[1] __ date(2018, 11, 30)
     ... days[2] __ date(2018, 12, 3)
-    fri_index = days.i.. date(2019, 1, 18))
+    fri_index = days.i.. date(2019, 1, 18
     ... days[fri_index + 1] __ date(2019, 1, 21)
 
 
@@ -27,5 +27,5 @@ ___ test_get_hundred_weekdays_different_start_date
     # check if weekends are not included
     ... days[2] __ date(2019, 1, 25)
     ... days[3] __ date(2019, 1, 28)
-    fri_index = days.i.. date(2019, 6, 7))
+    fri_index = days.i.. date(2019, 6, 7
     ... days[fri_index + 1] __ date(2019, 6, 10)

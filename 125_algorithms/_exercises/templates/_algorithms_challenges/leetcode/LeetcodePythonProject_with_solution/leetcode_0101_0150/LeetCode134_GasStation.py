@@ -12,7 +12,7 @@ c_ Solution(o..
         :rtype: int
         """
         sumRemaining, sumVal, start = 0, 0, 0
-        ___ i, (g, c) __ e..(z..(gas, cost)):
+        ___ i, (g, c) __ e..(z..(gas, cost:
             remain = g-c
             __ sumRemaining >= 0:
                 sumRemaining += remain

@@ -11,7 +11,7 @@ ___ common_words(sentence1: L..[s..], sentence2: L..[s..]) __ L..[s..]:
             Returned words should be sorted by word's length.
     """
     common = s..()
-    sentence2 = l.. m..(l.... x: x.l.., sentence2))
+    sentence2 = l.. m..(l.... x: x.l.., sentence2
     ___ word __ sentence1:
         word_lower = word.l..
         __ word_lower __ sentence2:

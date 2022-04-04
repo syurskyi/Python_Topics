@@ -6,7 +6,7 @@ ____ u__.r.. _______ u..
 
 # prep
 TAG_HTML = __.c..(r'<category>([^<]+)</category>')
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 TEMPFILE = __.p...j..(TMP, 'feed')
 MIN_TAG_LEN = 10
 IDENTICAL = 1.0
@@ -41,7 +41,7 @@ ___ get_similarities(tags_ N..
             sm = SequenceMatcher(N..,word_1,word_2)
             print(sm.ratio
             __ sm.ratio() > .95:
-                result.a..((word_1,word_2))
+                result.a..((word_1,word_2
     print(result)
     r.. result
 

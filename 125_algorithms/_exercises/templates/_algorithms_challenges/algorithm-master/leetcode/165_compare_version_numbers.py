@@ -16,7 +16,7 @@ c_ Solution:
         w = version2.s..('.')
         m, n = l..(v), l..(w)
 
-        ___ i __ r..(m..(m, n)):
+        ___ i __ r..(m..(m, n:
             a = get_int(v[i]) __ i < m ____ 0
             b = get_int(w[i]) __ i < n ____ 0
 

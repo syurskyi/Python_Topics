@@ -37,7 +37,7 @@ ___ get_movies_by_director
                                   f__(row 'imdb_score' )])
 
     ___ name, movie, year, score __ full_list:
-        d[name].a..(Movie(title=movie, year=year, score=score))
+        d[name].a..(Movie(title=movie, year=year, score=score
 
     r.. d
 
@@ -53,4 +53,4 @@ ___ get_average_scores(directors
        return a list of tuples (director, average_score) ordered by highest
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
-    r.. [(k, calc_mean_score(v)) ___ k, v __ directors.i.. __ l..(v) >= MIN_MOVIES]
+    r.. [(k, calc_mean_score(v ___ k, v __ directors.i.. __ l..(v) >= MIN_MOVIES]

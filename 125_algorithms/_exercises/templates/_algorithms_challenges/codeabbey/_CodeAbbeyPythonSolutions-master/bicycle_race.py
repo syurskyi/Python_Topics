@@ -7,6 +7,6 @@ ___ get_meeting_point(distance, racer1_speed, racer2_speed
 
 ___ i __ r..(amount_values
     distance, racer1_speed, racer2_speed = map(i.., input().s..
-    results.a..(get_meeting_point(distance, racer1_speed, racer2_speed))
+    results.a..(get_meeting_point(distance, racer1_speed, racer2_speed
 
 print(*results)

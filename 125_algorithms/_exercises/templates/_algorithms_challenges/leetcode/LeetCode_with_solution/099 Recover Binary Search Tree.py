@@ -64,9 +64,9 @@ c_ Solution:
         current = current
         __ pre a.. n.. pre.val<current.val:
             __ n.. swapped_pair:
-                swapped_pair.a..((pre, current))  # pre is wrong
+                swapped_pair.a..((pre, current  # pre is wrong
             ____:
-                swapped_pair.a..((pre, current))  # current is wrong
+                swapped_pair.a..((pre, current  # current is wrong
         in_order(current.right)
 
     # def __get_smallest(self, root):

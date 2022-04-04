@@ -28,9 +28,9 @@ c_ Solution(o..
             (101, 110),
         ]
         ___ m, n __ testCases:
-            print('m: %s, n: %s' % (m, n))
+            print('m: %s, n: %s' % (m, n
             result = rangeBitwiseAnd(m, n)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

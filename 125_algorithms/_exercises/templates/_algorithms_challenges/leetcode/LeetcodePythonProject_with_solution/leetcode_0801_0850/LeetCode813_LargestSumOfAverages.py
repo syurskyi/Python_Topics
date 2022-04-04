@@ -27,7 +27,7 @@ c_ Solution(o..
         cur = 0.0
         ___ i __ r..(n-1, -1, -1
             cur += arr[i]
-            memo[n][k] = m..(memo[n][k], s..(i, k-1, arr, memo)+cur/(n-i))
+            memo[n][k] = m..(memo[n][k], s..(i, k-1, arr, memo)+cur/(n-i
         r.. memo[n][k]
     
     ___ test

@@ -39,11 +39,11 @@ c_ Solution(o..
         ]
         ___ piles, h __ testCases:
             res = minEatingSpeed(piles, h)
-            print('res: %s' % s..(res))
+            print('res: %s' % s..(res
             print('-='*30+'-')
 
 __ _____ __ _____
     _______ m__
-    print(m__.ceil(f__(3)/3))
-    print(m__.ceil(f__(4)/3))
+    print(m__.ceil(f__(3)/3
+    print(m__.ceil(f__(4)/3
     Solution().test()

@@ -16,7 +16,7 @@ c_ Solution(o..
     __ l..(nums) % 2 __ 0:
       l = l..(nums) - 2
       r = 1
-      ___ i __ r..(0, l..(nums)):
+      ___ i __ r..(0, l..(nums:
         __ nums[i] < mid:
           ans[l] = nums[i]
           l -= 2
@@ -26,14 +26,14 @@ c_ Solution(o..
     ____:
       l = 0
       r = l..(nums) - 2
-      ___ i __ r..(0, l..(nums)):
+      ___ i __ r..(0, l..(nums:
         __ nums[i] < mid:
           ans[l] = nums[i]
           l += 2
         ____ nums[i] > mid:
           ans[r] = nums[i]
           r -= 2
-    ___ i __ r..(0, l..(nums)):
+    ___ i __ r..(0, l..(nums:
       nums[i] = ans[i]
 
   ___ quickselect  start, end, A, k

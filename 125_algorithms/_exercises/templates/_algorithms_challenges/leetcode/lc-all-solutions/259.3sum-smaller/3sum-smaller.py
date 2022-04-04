@@ -7,7 +7,7 @@ c_ Solution(o..
     """
     ans = 0
     nums.s..()
-    ___ i __ r..(0, l..(nums)):
+    ___ i __ r..(0, l..(nums:
       start, end = i + 1, l..(nums) - 1
       w.... start < end:
         __ nums[i] + nums[start] + nums[end] < target:

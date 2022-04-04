@@ -39,6 +39,6 @@ c_ Solution(o..
 
 
 s = Solution()
-print(s.isHappy(19))
-print(s.isHappy(1))
-print(s.isHappy(20))
+print(s.isHappy(19
+print(s.isHappy(1
+print(s.isHappy(20

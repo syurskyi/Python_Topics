@@ -10,7 +10,7 @@ c_ Solution(o..
         :rtype: int
         """
         res = i = 0
-        ___ j __ r..(l..(seats)):
+        ___ j __ r..(l..(seats:
             __ seats[j] __ 1:
                 __ i __ 0:
                     res = j
@@ -39,7 +39,7 @@ c_ Solution(o..
         res = f__('-inf')
         ___ i __ r..(n
             __ left[i+1] != 0 a.. right[i] != 0:
-                res = m..(res, m..(left[i+1], right[i]))
+                res = m..(res, m..(left[i+1], right[i]
         r.. res
     
     ___ test

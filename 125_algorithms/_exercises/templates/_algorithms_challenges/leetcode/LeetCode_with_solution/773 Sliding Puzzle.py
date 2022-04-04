@@ -96,7 +96,7 @@ c_ Solution:
                     B = d..(board)   # need a copy in the queue
                     B[I][J], B[i][j] = B[i][j], B[I][J]
                     __ n.. visited[ser(B)]:
-                        heapq.heappush(q, (heuristic_dist(B) + cur_dist, cur_dist, B))
+                        heapq.heappush(q, (heuristic_dist(B) + cur_dist, cur_dist, B
         r.. -1
 
     ___ zero_pos  board

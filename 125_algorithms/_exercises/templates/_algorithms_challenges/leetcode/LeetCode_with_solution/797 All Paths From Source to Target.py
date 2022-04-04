@@ -34,7 +34,7 @@ c_ Solution:
 
     ___ dfs  G, cur, d, cur_path, visited, ret
         __ cur __ d:
-            ret.a..(l..(cur_path))
+            ret.a..(l..(cur_path
             r..
 
         ___ nbr __ G[cur]:

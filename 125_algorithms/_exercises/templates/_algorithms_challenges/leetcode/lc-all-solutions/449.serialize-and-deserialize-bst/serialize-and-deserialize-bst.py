@@ -19,11 +19,11 @@ c_ Codec:
       __ n.. node:
         _____
       __ pc __ 0:
-        ans.a..(s..(node.val))
+        ans.a..(s..(node.val
       ____:
-        stack.a..((1, node.right))
-        stack.a..((1, node.left))
-        stack.a..((0, node))
+        stack.a..((1, node.right
+        stack.a..((1, node.left
+        stack.a..((0, node
     r.. ",".j..(ans)
 
   ___ deserialize  data
@@ -39,7 +39,7 @@ c_ Codec:
     inOrder = s..(preOrder)
     preIdx = 0
     d    # dict
-    ___ i __ r..(0, l..(inOrder)):
+    ___ i __ r..(0, l..(inOrder:
       d[inOrder[i]] = i
 
     ___ helper(preOrder, start, end, inOrder, d

@@ -18,10 +18,10 @@ c_ Solution(o..
         __ p < 0 o. q < 0 o. p >= l..(matrix) o. q >= l..(matrix[0]
           _____
         __ (p, q) n.. __ cache a.. matrix[p][q] > matrix[i][j]:
-          cache.add((p, q))
+          cache.add((p, q
           r = dfs(matrix, p, q, visited, cache)
           ret = m..(ret, r)
-          cache.discard((p, q))
+          cache.discard((p, q
 
       visited[(i, j)] = ret + 1
       r.. ret + 1
@@ -29,9 +29,9 @@ c_ Solution(o..
     visited    # dict
     cache = s..()
     ans = 0
-    ___ i __ r..(0, l..(matrix)):
-      ___ j __ r..(0, l..(matrix[0])):
-        cache.add((i, j))
-        ans = m..(ans, dfs(matrix, i, j, visited, cache))
-        cache.discard((i, j))
+    ___ i __ r..(0, l..(matrix:
+      ___ j __ r..(0, l..(matrix[0]:
+        cache.add((i, j
+        ans = m..(ans, dfs(matrix, i, j, visited, cache
+        cache.discard((i, j
     r.. ans

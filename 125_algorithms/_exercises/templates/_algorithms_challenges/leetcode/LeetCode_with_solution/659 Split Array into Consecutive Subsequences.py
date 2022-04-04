@@ -77,7 +77,7 @@ c_ Interval:
         r.. end < other.end
 
     ___  -r
-        r.. r.. ((end, length))
+        r.. r.. ((end, length
 
 
 c_ Solution2:
@@ -97,12 +97,12 @@ c_ Solution2:
                     r.. F..
 
             __ n.. h:
-                heapq.heappush(h, Interval(n, 1))
+                heapq.heappush(h, Interval(n, 1
             ____ h[0].end + 1 __ n:
                 itvl = heapq.heappop(h)
-                heapq.heappush(h, Interval(n, itvl.length + 1))
+                heapq.heappush(h, Interval(n, itvl.length + 1
             ____:  # n == end
-                heapq.heappush(h, Interval(n, 1))
+                heapq.heappush(h, Interval(n, 1
 
 
         ___ itvl __ h:

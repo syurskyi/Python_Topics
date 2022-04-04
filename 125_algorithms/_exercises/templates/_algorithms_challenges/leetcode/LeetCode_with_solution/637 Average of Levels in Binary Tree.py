@@ -39,7 +39,7 @@ c_ Solution:
         q = [root]
         w.... q:
             n = l..(q)
-            avg = s.. m..(l.... node: node.val, q)) / n
+            avg = s.. m..(l.... node: node.val, q / n
             ret.a..(avg)
             cur_q    # list
             ___ node __ q:

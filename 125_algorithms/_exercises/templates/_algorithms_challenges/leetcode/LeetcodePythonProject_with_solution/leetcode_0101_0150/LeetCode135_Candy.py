@@ -38,9 +38,9 @@ c_ Solution(o..
             [1, 2, 3, 1, 3, 3, 2],
         ]
         ___ ratings __ testCases:
-            print('ratings: %s' % (ratings))
+            print('ratings: %s' % (ratings
             result = candy(ratings)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

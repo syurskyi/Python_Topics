@@ -30,11 +30,11 @@ c_ Solution(o..
             ____:
                 d[k].a..(s)
         ___ k __ d:
-            res.a..(s..(d[k]))
+            res.a..(s..(d[k]
         r.. res
 
     ___ make_key  s
-        r.. ''.j..(s..(s))
+        r.. ''.j..(s..(s
 
 
 s = Solution()

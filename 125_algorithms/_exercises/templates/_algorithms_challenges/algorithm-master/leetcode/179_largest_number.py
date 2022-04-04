@@ -14,5 +14,5 @@ c_ Solution:
         :type A: List[int]
         :rtype: str
         """
-        A = ''.j..(s.. m..(s.., A), key=LgSort))
+        A = ''.j..(s.. m..(s.., A), key=LgSort
         r.. '0' __ A[0] __ '0' ____ A

@@ -24,7 +24,7 @@ c_ Solution:
             r.. ret
 
         delta    # list
-        ___ i __ r..(1, l..(A)):
+        ___ i __ r..(1, l..(A:
             delta.a..(A[i] - A[i-1])
 
         s = 0

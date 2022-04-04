@@ -13,10 +13,10 @@ w.... l..(ele) < ele_type:
             unique.a..(x)
             
     #counting the occurence of the element in the list
-    ___ i __ r..(l..(unique)):
+    ___ i __ r..(l..(unique:
         count_store = num_count.c.. unique[i])
         ele.a..(count_store)
         
         
 ___ k __ ele:
-    print(k,end=(' '))
+    print(k,end=(' '

@@ -94,4 +94,4 @@ ___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
 
 #print(get_complement_pair(COMPLEMENTS_STR))
 
-print(reverse_complement('t!t%ttttAACCG', COMPLEMENTS_STR))
+print(reverse_complement('t!t%ttttAACCG', COMPLEMENTS_STR

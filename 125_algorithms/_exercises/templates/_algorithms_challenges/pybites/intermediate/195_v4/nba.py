@@ -1,7 +1,7 @@
 ____ c.. _______ n..
 _______ csv
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 _______ sqlite3
 _______ r__
 _______ s__
@@ -9,7 +9,7 @@ _______ s__
 _______ r__
 
 DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 
 salt = ''.j..(
     r__.choice(s__.ascii_lowercase) ___ i __ r..(20)
@@ -17,7 +17,7 @@ salt = ''.j..(
 DB = TMP / f'nba_{salt}.db'
 
 Player = n..('Player', ('name year first_year team college active '
-                               'games avg_min avg_points'))
+                               'games avg_min avg_points'
 
 conn = sqlite3.connect(DB)
 cur = conn.cursor()
@@ -39,7 +39,7 @@ ___ import_data
                               active=row 'Yrs' ,
                               games=row 'Games' ,
                               avg_min=row 'Minutes.per.Game' ,
-                              avg_points=row 'Points.per.Game' ))
+                              avg_points=row 'Points.per.Game'
 
     cur.execute('''CREATE TABLE IF NOT EXISTS players
                   (name, year, first_year, team, college, active,
@@ -62,7 +62,7 @@ ___ player_with_max_points_per_game
                                from players
                                where CAST(avg_points as numeric) =
                                (SELECT max(CAST(avg_points as numeric))
-                               as max_points from players)'''))[0][0]
+                               as max_points from players)'''[0][0]
 
 
 ___ number_of_players_from_duke
@@ -77,7 +77,7 @@ ___ avg_years_active_players_stanford
        are active ("active" column)"""
     average = t..(cur.execute('''SELECT AVG(CAST(active as numeric))
                                  from players
-                                 where college="Stanford University"'''))[0][0]
+                                 where college="Stanford University"'''[0][0]
     r.. r..(average, 2)
 
 
@@ -86,5 +86,5 @@ ___ year_with_most_drafts
     drafts = t..(cur.execute('''SELECT CAST(year as numeric), COUNT(year)
                                 from players
                                 GROUP BY year
-                                ORDER BY COUNT(year)'''))
+                                ORDER BY COUNT(year)'''
     r.. drafts[-1][0]

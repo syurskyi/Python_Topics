@@ -1,7 +1,7 @@
 ____ c.. _______ n..
 _______ csv
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 _______ sqlite3
 _______ r__
 _______ s__
@@ -9,7 +9,7 @@ _______ s__
 _______ r__
 
 DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
-TMP = Path(__.getenv("TMP", "/tmp"))
+TMP = P..(__.g..("TMP", "/tmp"
 
 salt = ''.j..(
     r__.choice(s__.ascii_lowercase) ___ i __ r..(20)
@@ -17,7 +17,7 @@ salt = ''.j..(
 DB = TMP / f'nba_{salt}.db'
 
 Player = n..('Player', ('name year first_year team college active '
-                               'games avg_min avg_points'))
+                               'games avg_min avg_points'
 
 conn = sqlite3.connect(DB)
 cur = conn.cursor()
@@ -39,7 +39,7 @@ ___ import_data
                               active=row 'Yrs' ,
                               games=row 'Games' ,
                               avg_min=row 'Minutes.per.Game' ,
-                              avg_points=row 'Points.per.Game' ))
+                              avg_points=row 'Points.per.Game'
 
     cur.execute('''CREATE TABLE IF NOT EXISTS players
                   (name, year, first_year, team, college, active,
@@ -56,7 +56,7 @@ ___ player_with_max_points_per_game
        numeric in your SQL query)"""
     r.. l..(cur.execute('SELECT name '
                             'FROM players '
-                            'ORDER BY CAST(avg_points as FLOAT) DESC'))[0][0]
+                            'ORDER BY CAST(avg_points as FLOAT) DESC'[0][0]
 
 
 ___ number_of_players_from_duke
@@ -71,7 +71,7 @@ ___ avg_years_active_players_stanford
        are active ("active" column)"""
     r.. l..(cur.execute('SELECT ROUND(AVG(active), 2) '
                             'FROM players '
-                            'WHERE college = "Stanford University"'))[0][0]
+                            'WHERE college = "Stanford University"'[0][0]
 
 
 ___ year_with_most_drafts
@@ -79,4 +79,4 @@ ___ year_with_most_drafts
     r.. l..(cur.execute('SELECT year, COUNT(*) as draft_count '
                             'FROM players '
                             'GROUP BY year '
-                            'ORDER BY draft_count DESC'))[0][0]
+                            'ORDER BY draft_count DESC'[0][0]

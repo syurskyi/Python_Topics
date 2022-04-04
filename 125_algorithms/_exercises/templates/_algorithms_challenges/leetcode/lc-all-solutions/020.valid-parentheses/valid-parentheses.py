@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     stack    # list
     d = ["()", "[]", "{}"]
-    ___ i __ r..(0, l..(s)):
+    ___ i __ r..(0, l..(s:
       stack.a..(s[i])
       __ l..(stack) >= 2 a.. stack[-2] + stack[-1] __ d:
         stack.pop()

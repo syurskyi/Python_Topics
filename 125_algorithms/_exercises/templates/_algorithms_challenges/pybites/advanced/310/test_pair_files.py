@@ -256,4 +256,4 @@ ____ pair_files _______ pair_files
 )
 ___ test_pair_files(test_description, test_input, expected
     print(f"Test_pair_files {test_description}")
-    ... s..(pair_files(test_input)) __ expected
+    ... s..(pair_files(test_input __ expected

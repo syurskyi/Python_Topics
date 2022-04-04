@@ -41,14 +41,14 @@ c_ Solution(o..
         __ l..(prices) <= 1:
             r.. 0
         delta_prices    # list
-        ___ i __ x..(1, l..(prices)):
+        ___ i __ x..(1, l..(prices:
             delta_prices.a..(prices[i]-prices[i-1])
 
         # O(n)
         # notice: possible to do nothing thus profit at least is 0 
         max_sub_array = 0
         current_sub_array = 0
-        ___ j __ x..(l..(delta_prices)):
+        ___ j __ x..(l..(delta_prices:
             current_sub_array = m..(0, current_sub_array+delta_prices[j])
             max_sub_array = m..(max_sub_array, current_sub_array)
 

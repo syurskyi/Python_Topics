@@ -28,9 +28,9 @@ c_ Solution(o..
             ([1,3,-1,-3,5,3,6,7], 3),
         ]
         ___ nums, k __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = maxSlidingWindow(nums, k)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

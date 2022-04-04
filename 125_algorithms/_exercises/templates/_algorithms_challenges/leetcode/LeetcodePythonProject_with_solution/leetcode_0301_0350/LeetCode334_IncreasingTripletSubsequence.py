@@ -10,7 +10,7 @@ c_ Solution(o..
 #         first = float('inf')
         first = nums[0]
         second = f__('inf')
-        ___ i __ r..(1, l..(nums)):
+        ___ i __ r..(1, l..(nums:
             __ nums[i] <= first:
                 first = nums[i]
             ____ nums[i] <= second:
@@ -32,9 +32,9 @@ c_ Solution(o..
             [3, 2, 1, 9],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             result = increasingTriplet(nums)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

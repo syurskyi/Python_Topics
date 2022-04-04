@@ -8,7 +8,7 @@ c_ Solution(o..
     d = {0: -1}
     maxLen = 0
     _sum = 0
-    ___ i __ r..(0, l..(nums)):
+    ___ i __ r..(0, l..(nums:
       _sum += nums[i]
       __ _sum n.. __ d:
         d[_sum] = i

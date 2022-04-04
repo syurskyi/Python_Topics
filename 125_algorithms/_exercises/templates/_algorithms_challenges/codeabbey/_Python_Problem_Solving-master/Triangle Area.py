@@ -15,7 +15,7 @@ ___ i __ r..(i..(input())):
     s2 = abs(s-b) 
     s3 =abs(s-c)
     area = s * s1 * s2 * s3
-    __ (area - i..(area)) > 0.5:
+    __ (area - i..(area > 0.5:
         area += 0.5
         area = i..(area)
     ____:

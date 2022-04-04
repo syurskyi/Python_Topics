@@ -7,7 +7,7 @@ ____ d__ _______ d__
 
 ____ dateutil.parser _______ p..
 
-commits = __.p...j..(__.getenv("TMP", "/tmp"), 'commits')
+commits = __.p...j..(__.g..("TMP", "/tmp"), 'commits')
 u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/git_log_stat.out',
     commits
@@ -46,4 +46,4 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
     newlist = s..(commit_log.i.., key=l.... item: item[1], r.._T..
     r.. (newlist[-1][0], newlist[0][0])
 
-print(get_min_max_amount_of_commits y.._2017))
+print(get_min_max_amount_of_commits y.._2017

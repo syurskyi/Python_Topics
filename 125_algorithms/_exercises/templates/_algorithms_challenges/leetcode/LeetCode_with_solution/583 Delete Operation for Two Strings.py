@@ -26,7 +26,7 @@ c_ Solution:
         F[i][j] = F[i-1][j-1] + 1 if word1[i-1] == word2[j-1]
         F[i][j] = max(F[i-1][j], F[i][j-1])
         """
-        F = d..(l....: d..(i..))
+        F = d..(l....: d..(i..
         m = l..(word1)
         n = l..(word2)
 
@@ -51,7 +51,7 @@ c_ Solution:
         F[i][j] = F[i-1][j-1] if word1[i-1] == word2[j-1]
         F[i][j] = min(F[i-1][j] + 1, F[i][j-1] + 1)
         """
-        F = d..(l....: d..(i..))
+        F = d..(l....: d..(i..
         m = l..(word1)
         n = l..(word2)
 

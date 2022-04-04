@@ -68,9 +68,9 @@ c_ Solution(o..
             [1, 2, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2],
         ]
         ___ nums __ testCases:
-            print('nums: %s' % (nums))
+            print('nums: %s' % (nums
             wiggleSort(nums)
-            print('sorted: %s' % (nums))
+            print('sorted: %s' % (nums
             print('-='*20+'-')
 
 __ _____ __ _____

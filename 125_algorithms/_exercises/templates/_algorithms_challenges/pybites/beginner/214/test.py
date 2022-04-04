@@ -6,9 +6,9 @@ ___ infinite_sequence
 
 print("start")
 gen = infinite_sequence()
-print("->", next(gen))
-print("->", next(gen))
-print("->", next(gen))
-print("->", next(gen))
-print("->", next(gen))
-print("->", next(gen))
+print("->", next(gen
+print("->", next(gen
+print("->", next(gen
+print("->", next(gen
+print("->", next(gen
+print("->", next(gen

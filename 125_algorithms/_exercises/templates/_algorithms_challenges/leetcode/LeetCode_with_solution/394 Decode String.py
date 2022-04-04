@@ -98,7 +98,7 @@ c_ SolutionError(o..
                 j = i + 1
                 w.... s[j] != ' ': j += 1
                 prev = stk[-1] __ stk ____ 1
-                stk.a..(prev * i..(s[i:j]))
+                stk.a..(prev * i..(s[i:j]
                 i = j + 1
             ____ s[i].isl..
                 repeat = stk[-1] __ stk ____ 1

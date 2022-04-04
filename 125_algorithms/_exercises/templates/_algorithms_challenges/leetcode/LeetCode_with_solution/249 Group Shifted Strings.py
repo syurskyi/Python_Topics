@@ -19,8 +19,8 @@ c_ Solution:
                 hm[0].a..(s)
             ____:
                 lst    # list
-                ___ i __ x..(1, l..(s)):
-                    lst.a..((o..(s[i])-o..(s[i-1]))%26)
+                ___ i __ x..(1, l..(s:
+                    lst.a..((o..(s[i])-o..(s[i-1]%26)
                 hm[t..(lst)].a..(s)
 
         r.. map(s.., hm.values

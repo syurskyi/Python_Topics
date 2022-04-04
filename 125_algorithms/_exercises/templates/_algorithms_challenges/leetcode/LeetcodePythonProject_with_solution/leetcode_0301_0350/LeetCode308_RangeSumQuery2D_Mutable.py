@@ -60,7 +60,7 @@ c_ NumMatrix(o..
         colSums = colSums
     
     ___ update  row, col, val
-        ___ i __ r..(row+1, l..(colSums)):
+        ___ i __ r..(row+1, l..(colSums:
             colSums[i][col] = colSums[i][col]+val-matrix[row][col]
         matrix[row][col] = val
     

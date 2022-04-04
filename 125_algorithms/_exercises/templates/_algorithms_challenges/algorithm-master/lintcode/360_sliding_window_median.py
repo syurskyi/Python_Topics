@@ -60,7 +60,7 @@ c_ Solution:
         minheap = HashHeapqWithLazy()
         maxheap = HashHeapqWithLazy()
 
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             # remove nums[i - k]
             __ i >= k:
                 __ minheap a.. nums[i - k] >= minheap.top

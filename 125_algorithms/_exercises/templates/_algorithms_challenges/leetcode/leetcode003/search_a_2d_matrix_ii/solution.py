@@ -54,6 +54,6 @@ a1 = [
 ]
 
 s = Solution()
-print(s.searchMatrix(a1, 5))
-print(s.searchMatrix(a1, 20))
-print(s.searchMatrix(a1, 17))
+print(s.searchMatrix(a1, 5
+print(s.searchMatrix(a1, 20
+print(s.searchMatrix(a1, 17

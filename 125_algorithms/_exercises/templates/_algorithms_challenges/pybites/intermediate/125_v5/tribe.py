@@ -23,5 +23,5 @@ ___ get_top_books(content=N.., limit=5
         content = load_page()
     soup = BeautifulSoup(content)
     entry_content = soup.find('div', class_='entry-content')
-    count = C..(link.text ___ link __ entry_content.select('p > a') __ AMAZON __ link.g.. 'href'))
+    count = C..(link.text ___ link __ entry_content.select('p > a') __ AMAZON __ link.g.. 'href'
     r.. [title ___ title, _ __ count.most_common(limit)]

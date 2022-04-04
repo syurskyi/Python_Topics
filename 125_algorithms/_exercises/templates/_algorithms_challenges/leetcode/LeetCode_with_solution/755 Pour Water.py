@@ -140,7 +140,7 @@ c_ Solution:
                     _____
             __ optimal __ s:
                 # looking to the right
-                ___ i __ r..(s+1, l..(heights)):
+                ___ i __ r..(s+1, l..(heights:
                     __ heights[i] <= heights[i-1]:
                         __ heights[i] < heights[optimal]:
                             optimal = i

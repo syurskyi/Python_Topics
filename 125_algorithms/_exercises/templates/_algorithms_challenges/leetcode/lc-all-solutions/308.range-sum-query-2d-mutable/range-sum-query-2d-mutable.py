@@ -10,8 +10,8 @@ c_ NumMatrix(o..
       col = l..(matrix[0])
     c = [[0] * (col + 1) ___ _ __ r..(0, l..(matrix) + 1)]
     m = [[0] * (col + 1) ___ _ __ r..(0, l..(matrix) + 1)]
-    ___ i __ r..(0, l..(matrix)):
-      ___ j __ r..(0, l..(matrix[0])):
+    ___ i __ r..(0, l..(matrix:
+      ___ j __ r..(0, l..(matrix[0]:
         update(i, j, matrix[i][j])
 
   ___ update  row, col, val

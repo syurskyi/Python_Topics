@@ -11,7 +11,7 @@ c_ Solution(o..
       height.a..(-1)
       stack    # list
       ans = 0
-      ___ i __ r..(0, l..(height)):
+      ___ i __ r..(0, l..(height:
         w.... stack a.. height[i] < height[stack[-1]]:
           h = height[stack.pop()]
           w = i - stack[-1] - 1 __ stack ____ i
@@ -20,13 +20,13 @@ c_ Solution(o..
       r.. ans
 
     ans = 0
-    dp = [[0] * l..(matrix[0]) ___ _ __ r..(0, l..(matrix))]
+    dp = [[0] * l..(matrix[0]) ___ _ __ r..(0, l..(matrix]
     ___ i __ r..(r..(0, l..(matrix))):
       __ i __ l..(matrix) - 1:
         dp[i] = [i..(h) ___ h __ matrix[i]]
       ____:
-        ___ j __ r..(0, l..(matrix[0])):
+        ___ j __ r..(0, l..(matrix[0]:
           __ matrix[i][j] != "0":
             dp[i][j] = dp[i + 1][j] + 1
-      ans = m..(ans, histogram(dp[i]))
+      ans = m..(ans, histogram(dp[i]
     r.. ans

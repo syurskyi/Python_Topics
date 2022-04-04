@@ -1,6 +1,6 @@
 ____ c.. _______ n.., C..
 _______ __
-____ t___ _______ NamedTuple
+____ t___ _______ N..
 
 _______ feedparser
 
@@ -58,7 +58,7 @@ c_ PythonBytes:
         counts = C..()
         ___ entry __ entries:
             summary = entry 'summary'
-            domains = s..(__.f..(r'https?://[^/]+',summary))
+            domains = s..(__.f..(r'https?://[^/]+',summary
             ___ domain __ domains:
                 __ domain n.. __ IGNORE_DOMAINS:
                     counts[domain] += 1
@@ -75,7 +75,7 @@ c_ PythonBytes:
 
         r.. s..(SPECIAL_GUEST __ entry 'summary'  ___ entry __ entries)
 
-    ___ get_average_duration_episode_in_seconds(self) __ NamedTuple:
+    ___ get_average_duration_episode_in_seconds(self) __ N..:
         """Return the average duration in seconds of a Python Bytes episode, as
            well as the shortest and longest episode in hh:mm:ss notation.
            Return the results using the Duration namedtuple.
@@ -90,7 +90,7 @@ c_ PythonBytes:
 
         ___ entry __ entries:
             duration= entry 'itunes_duration'
-            hours,minutes,seconds = map(i..,duration.s..(':'))
+            hours,minutes,seconds = map(i..,duration.s..(':'
             total_seconds = 3600 * hours + 60 * minutes + seconds
             duration_sums += total_seconds
             __ total_seconds < min_duration_seconds:
@@ -100,7 +100,7 @@ c_ PythonBytes:
                 max_duration_seconds = total_seconds
                 max_duration = duration
 
-        average_duration = i..(duration_sums/ l..(entries))
+        average_duration = i..(duration_sums/ l..(entries
         r.. Duration(average_duration,max_duration,min_duration)
 
 

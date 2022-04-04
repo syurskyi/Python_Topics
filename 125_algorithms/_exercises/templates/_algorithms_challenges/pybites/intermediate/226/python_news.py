@@ -63,7 +63,7 @@ ___ get_top_titles(url, top=5
         entries.a..(entry)
 
 
-    entries.s..(r.._T..key=l.... x: (x.points,x.comments))
+    entries.s..(r.._T..key=l.... x: (x.points,x.comments
 
     r.. entries[:top]
 

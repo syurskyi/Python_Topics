@@ -28,7 +28,7 @@ ___ evaluate(input_data
         word = input_data.pop(0).l..
         ___
             __ is_integer(word
-                stack.a..(i..(word))
+                stack.a..(i..(word
             ____ word __ defines:
                 input_data = defines[word] + input_data
             ____ word __ '+':
@@ -41,7 +41,7 @@ ___ evaluate(input_data
                 divisor = stack.pop()
                 __ divisor __ 0:
                     r.. ZeroDivisionError("Attempted to divide by zero")
-                stack.a..(i..(stack.pop() / divisor))
+                stack.a..(i..(stack.pop() / divisor
             ____ word __ 'dup':
                 stack.a..(stack[-1])
             ____ word __ 'drop':
@@ -52,7 +52,7 @@ ___ evaluate(input_data
             ____ word __ 'over':
                 stack.a..(stack[-2])
             ____:
-                r.. V...("{} has not been defined".f..(word))
+                r.. V...("{} has not been defined".f..(word
         ______ I..
             r.. StackUnderflowError("Insufficient number of items in stack")
     r.. stack

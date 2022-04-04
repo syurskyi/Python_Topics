@@ -32,11 +32,11 @@ c_ Solution:
         [4, 4]
         """
         __ l..(cur) > 1:
-            ret.a..(l..(cur))
+            ret.a..(l..(cur
 
         n = cur.pop()
         start = cur[-1] __ cur ____ 2
-        ___ i __ x..(start, i..(sqrt(n))+1
+        ___ i __ x..(start, i..(sqrt(n+1
             __ n % i __ 0:
                 cur.a..(i)
                 cur.a..(n/i)
@@ -48,7 +48,7 @@ c_ Solution:
             ret.a..(l..(cur)+[n])
 
         start = cur[-1] __ cur ____ 2
-        ___ i __ x..(start, i..(sqrt(n))+1
+        ___ i __ x..(start, i..(sqrt(n+1
             __ n%i __ 0:
                 cur.a..(i)
                 dfs(n/i, cur, ret)
@@ -56,7 +56,7 @@ c_ Solution:
 
     ___ dfs_TLE  n, cur, ret
         __ n __ 1 a.. cur a.. l..(cur) >= 2:
-            ret.a..(l..(cur))
+            ret.a..(l..(cur
 
         __ cur:
             start = cur[-1]

@@ -14,7 +14,7 @@ c_ Solution(o..
                     dp[i] += l..(D)**(k-i-1)
                 ____ d __ s[i]:
                     dp[i] += dp[i+1]
-        r.. dp[0] + s..(l..(D)**i ___ i __ r..(1, k))
+        r.. dp[0] + s..(l..(D)**i ___ i __ r..(1, k
 
     ___ test
         testCases = [

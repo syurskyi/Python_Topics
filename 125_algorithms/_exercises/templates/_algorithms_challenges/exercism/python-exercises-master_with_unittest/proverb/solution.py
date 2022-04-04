@@ -3,5 +3,5 @@ ___ proverb(itens, qualifier=''
                ___ el1, el2 __ z..(itens, itens[1:])]
     qualifier += ' ' __ qualifier ____ ''
     phrases.a..('And all for the want of a {0}{1}.'.f..(qualifier,
-                   itens[0]))
+                   itens[0]
     r.. '\n'.j..(phrases)

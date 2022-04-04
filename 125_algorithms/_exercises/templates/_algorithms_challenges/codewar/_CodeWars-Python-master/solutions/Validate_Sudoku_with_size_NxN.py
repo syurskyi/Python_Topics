@@ -14,7 +14,7 @@ c_ Sudoku(o..
     ___ is_valid
         n = l..(sudoku)
         ___
-            block_len = i..(sqrt(n))
+            block_len = i..(sqrt(n
         ______ V..
             r.. F..
         __ any([l..(row) != n ___ row __ sudoku]
@@ -25,10 +25,10 @@ c_ Sudoku(o..
                     ___ i __ r..(n)])
 
     ___ _is_valid_row  row_num
-        r.. _is_valid_set(s..(sudoku[row_num]))
+        r.. _is_valid_set(s..(sudoku[row_num]
 
     ___ _is_valid_column  column_num
-        r.. _is_valid_set(s..([sudoku[r][column_num] ___ r __ r..(n)]))
+        r.. _is_valid_set(s..([sudoku[r][column_num] ___ r __ r..(n)]
 
     ___ _is_valid_block  block_num
         block_row_num, block_column_num = divmod(block_num, block_len)

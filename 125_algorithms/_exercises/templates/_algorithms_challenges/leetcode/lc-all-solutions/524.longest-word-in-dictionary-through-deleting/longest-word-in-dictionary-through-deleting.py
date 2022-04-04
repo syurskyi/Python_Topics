@@ -8,7 +8,7 @@ c_ Solution(o..
     :type d: List[str]
     :rtype: str
     """
-    d.s..(key=l.... x: (-l..(x), x))
+    d.s..(key=l.... x: (-l..(x), x
 
     ___ isSubseq(word, s
       i = 0

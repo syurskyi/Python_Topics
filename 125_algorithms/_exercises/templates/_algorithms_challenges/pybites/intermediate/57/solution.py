@@ -5,7 +5,7 @@ _______ operator
 operations = d..(add=s..,
                   sub=l.... items: r.. operator.sub, items),
                   mul=l.... items: r.. operator.mul, items),
-                  div=l.... items: r.. operator.truediv, items))
+                  div=l.... items: r.. operator.truediv, items
 
 
 ___ calculator(operation, numbers

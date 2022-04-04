@@ -28,6 +28,6 @@ ___ test_rgb_to_hex(rgb, hex_
 
 ___ test_wrong_values
     w__ p__.r..(V...
-        rgb_to_hex((-1, 100, 100))
-        rgb_to_hex((100, 300, 200))
-        rgb_to_hex((100, 200, 256))
+        rgb_to_hex((-1, 100, 100
+        rgb_to_hex((100, 300, 200
+        rgb_to_hex((100, 200, 256

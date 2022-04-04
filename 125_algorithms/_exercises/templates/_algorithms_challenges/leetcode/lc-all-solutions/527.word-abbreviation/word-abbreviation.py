@@ -16,7 +16,7 @@ c_ Solution(o..
     ___ abbr, words __ abbr2word.i..:
       __ l..(words) > 1:
         ___ word __ words:
-          ___ i __ r..(2, l..(word)):
+          ___ i __ r..(2, l..(word:
             prefix = word[:i]
             __ checkUnique(prefix, words
               nabbr = getAbbr(word, prefix)
@@ -30,7 +30,7 @@ c_ Solution(o..
     r.. s..(word.startswith(prefix) ___ word __ words) __ 1
 
   ___ getAbbr  word, prefix
-    abbr = prefix + s..(l..(word) - 1 - l..(prefix)) + word[-1]
+    abbr = prefix + s..(l..(word) - 1 - l..(prefix + word[-1]
     r.. abbr __ l..(abbr) < l..(word) ____ word
 
   ___ getAbbreviation  word

@@ -34,7 +34,7 @@ c_ ParallelLetterFrequencyTest(unittest.TestCase
     ___ test_repeated_string_with_known_frequencies
         letter_frequency  3
         text_input  'abc\n' * letter_frequency
-        actual  calculate(text_input.s..('\n'))
+        actual  calculate(text_input.s..('\n'
         expected  {'a': letter_frequency, 'b': letter_frequency,
                     'c': letter_frequency}
         assertDictEqual(actual, expected)
@@ -52,7 +52,7 @@ c_ ParallelLetterFrequencyTest(unittest.TestCase
                      "slapdash explosion of complexity is an\n" + \
                      "expensive yak shave waiting to\n" + \
                      "happen."
-        actual  calculate(text_input.s..('\n'))
+        actual  calculate(text_input.s..('\n'
         expected  C..([x ___ x __ text_input.l.. __ x.i..])
         assertDictEqual(actual, expected)
 

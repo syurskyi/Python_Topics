@@ -710,7 +710,7 @@ ___ get_most_popular_talks_by_like_ratio(videos
        12 likes on 300 views. Discount the dislikeCount from the likeCount.
        Return the filtered list"""
     r.. s..(videos,
-                  key=l.... x: (i..(x.metrics 'likeCount' ) - i..(x.metrics 'dislikeCount' )) / i..(x.metrics 'viewCount' ),
+                  key=l.... x: (i..(x.metrics 'likeCount' ) - i..(x.metrics 'dislikeCount'  / i..(x.metrics 'viewCount' ),
                   r.._T..
 
 

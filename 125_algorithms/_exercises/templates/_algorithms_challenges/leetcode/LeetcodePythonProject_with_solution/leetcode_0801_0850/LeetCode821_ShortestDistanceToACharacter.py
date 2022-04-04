@@ -17,7 +17,7 @@ c_ Solution(o..
                 arr.a..(i)
         res    # list
         j = 0
-        ___ i __ r..(l..(s)):
+        ___ i __ r..(l..(s:
             __ i < arr[j]:
                 val = arr[j]-i
                 __ j > 0:

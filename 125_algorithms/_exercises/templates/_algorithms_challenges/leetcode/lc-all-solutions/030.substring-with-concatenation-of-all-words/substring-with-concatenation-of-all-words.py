@@ -20,7 +20,7 @@ c_ Solution(o..
       d[word]  d.g.. word, 0) + 1
       fullscore + 1
 
-    ___ i __ r..(0, l..(s)):
+    ___ i __ r..(0, l..(s:
       head  start  i
       t.clear()
       score  0

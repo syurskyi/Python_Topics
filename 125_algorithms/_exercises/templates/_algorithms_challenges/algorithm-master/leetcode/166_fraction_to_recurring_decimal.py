@@ -19,7 +19,7 @@ c_ Solution:
         __ b < 0:
             b = -b
 
-        ans.a..(s..(a // b))
+        ans.a..(s..(a // b
 
         a %= b
         __ a __ 0:
@@ -29,7 +29,7 @@ c_ Solution:
         D = {a: l..(ans)}  # the index of first occurrence of `a`
         w.... a:
             a *= 10
-            ans.a..(s..(a // b))
+            ans.a..(s..(a // b
             a %= b
 
             __ a __ D:

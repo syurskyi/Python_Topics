@@ -78,7 +78,7 @@ c_ ZeroEvenOddError:
         """
         n = n
         locks = [Lock(), Lock(), Lock(), Lock()]
-        ___ i __ r..(1, l..(locks)):
+        ___ i __ r..(1, l..(locks:
             locks[i].a..
 
 	# printNumber(x) outputs "x", where x is an integer.

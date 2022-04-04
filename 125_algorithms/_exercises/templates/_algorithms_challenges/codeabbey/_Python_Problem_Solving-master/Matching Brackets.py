@@ -16,8 +16,8 @@ ___ i __ r..(i..(input())):
             store_str.a..(j)
 
     #First step is to check if there are any pair next to each other if yes then pop those two elements from list
-    ___ j __ r..(l..(store_str)):
-        ___ k __ r..(0, l..(store_str)):
+    ___ j __ r..(l..(store_str:
+        ___ k __ r..(0, l..(store_str:
             #try and except are used because if a particular key is not present in dictionary p, it can throw error
             ___
                 __ p[store_str[k]] __ s..(store_str[k+1]

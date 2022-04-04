@@ -20,7 +20,7 @@ c_ Solution(o..
         h = 0
         ___ pos __ positions:
             cur = Interval(pos[0], pos[0]+pos[1], pos[1])
-            h = m..(h, getHeight(intervals, cur))
+            h = m..(h, getHeight(intervals, cur
             res.a..(h)
         r.. res
     

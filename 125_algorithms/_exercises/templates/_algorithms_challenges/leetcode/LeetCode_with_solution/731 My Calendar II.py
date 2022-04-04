@@ -61,14 +61,14 @@ c_ MyCalendarTwo:
         """
         O(lg n) + O(n)
         """
-        bisect.insort(lst, (start, "start"))
-        bisect.insort(lst, (end, "end"))
+        bisect.insort(lst, (start, "start"
+        bisect.insort(lst, (end, "end"
         count = 0
         ___ _, flag __ lst:
             count += 1 __ flag __ "start" ____ -1
             __ count > 2:
-                lst.remove((start, "start"))
-                lst.remove((end, "end"))
+                lst.remove((start, "start"
+                lst.remove((end, "end"
                 r.. F..
 
         r.. T..

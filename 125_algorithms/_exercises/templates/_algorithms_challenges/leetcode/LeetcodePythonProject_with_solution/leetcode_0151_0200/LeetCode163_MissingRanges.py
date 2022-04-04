@@ -24,7 +24,7 @@ c_ Solution(o..
         __ upper __ prev:
             res.a..('%s' % prev)
         ____ upper > prev:
-            res.a..('%s->%s' % (prev, upper))
+            res.a..('%s->%s' % (prev, upper
         r.. res
     
     ___ test

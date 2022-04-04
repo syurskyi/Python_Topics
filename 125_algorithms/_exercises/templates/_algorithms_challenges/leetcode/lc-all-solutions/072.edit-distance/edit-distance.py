@@ -6,7 +6,7 @@ c_ Solution(o..
     :rtype: int
     """
     __ l..(word1) __ 0 o. l..(word2) __ 0:
-      r.. m..(l..(word1), l..(word2))
+      r.. m..(l..(word1), l..(word2
 
     dp = [[0] * (l..(word2) + 1) ___ _ __ r..(0, l..(word1) + 1)]
     dp[0][0] = 0

@@ -46,7 +46,7 @@ c_ Solution(o..
 
 a = [1, 3, 5, 6]
 s = Solution()
-print(s.searchInsert(a, 5))
-print(s.searchInsert(a, 2))
-print(s.searchInsert(a, 7))
-print(s.searchInsert(a, 0))
+print(s.searchInsert(a, 5
+print(s.searchInsert(a, 2
+print(s.searchInsert(a, 7
+print(s.searchInsert(a, 0

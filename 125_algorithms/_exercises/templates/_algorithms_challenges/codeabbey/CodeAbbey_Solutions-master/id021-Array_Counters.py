@@ -4,5 +4,5 @@ ___ arrayCount(dataRange, numbers
     
     ___ num __ r..(1,maxVariable+1
         answer.a..(s..(numbers.c.. num)))
-    print(' '.j..(answer))
+    print(' '.j..(answer
 arrayCount(raw_input().s.. ,[i..(x) ___ x __ raw_input().s.. ])

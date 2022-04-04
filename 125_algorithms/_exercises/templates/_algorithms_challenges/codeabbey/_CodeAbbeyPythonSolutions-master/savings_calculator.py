@@ -9,6 +9,6 @@ ___ get_required_year(S,R,P,year
 
 ___ i __ r..(amount_values
     S,R,P = map(i.., input().s..
-    results.a..(get_required_year(S,R,P,0))
+    results.a..(get_required_year(S,R,P,0
 
 print(*results)

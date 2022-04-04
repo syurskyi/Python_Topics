@@ -19,7 +19,7 @@ c_ Solution(o..
     queue = d..([root])
     w.... queue:
       levelans    # list
-      ___ _ __ r..(0, l..(queue)):
+      ___ _ __ r..(0, l..(queue:
         root = queue.popleft()
         __ root.left:
           levelans.a..(root.left.val)

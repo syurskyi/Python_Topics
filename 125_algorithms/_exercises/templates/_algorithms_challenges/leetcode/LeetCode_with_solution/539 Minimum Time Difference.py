@@ -21,9 +21,9 @@ c_ Solution:
         A = l..(s.. m..(minutes, timePoints)))
         n = l..(A)
         ___ i __ r..(n - 1
-            ret = m..(ret, diff(A[i+1], A[i]))
+            ret = m..(ret, diff(A[i+1], A[i]
 
-        ret = m..(ret, diff(A[n-1], A[0]))
+        ret = m..(ret, diff(A[n-1], A[0]
         r.. ret
 
     ___ diff  b, a

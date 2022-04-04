@@ -40,9 +40,9 @@ c_ Solution(o..
             'cbbd',
         ]
         ___ s __ testCases:
-            print('s: %s' % (s))
+            print('s: %s' % (s
             result = longestPalindromeDP(s)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*15+'-')
 
 __ _____ __ _____

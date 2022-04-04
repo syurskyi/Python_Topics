@@ -13,7 +13,7 @@ c_ Solution:
         idx    # dict
         gotcha = F..
 
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             __ nums[i] __ idx a.. i - idx[nums[i]] < k:
                 gotcha = T..
 

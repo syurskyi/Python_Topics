@@ -13,7 +13,7 @@ c_ Solution:
 
     ___ dfs  n, lcnt, rcnt, ans, p..
         __ l..(p..) __ 2 * n:
-            ans.a..(''.j..(p..))
+            ans.a..(''.j..(p..
             r..
 
         __ rcnt < lcnt:

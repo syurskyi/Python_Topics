@@ -16,9 +16,9 @@ c_ Solution(o..
     
     ___ helper  s, startInd, elem, result
         __ startInd __ l..(s
-            result.a..(l..(elem))
+            result.a..(l..(elem
             r..
-        ___ i __ r..(startInd, l..(s)):
+        ___ i __ r..(startInd, l..(s:
             __ isPalindrome(s[startInd:i+1]
                 elem.a..(s[startInd:i+1])
                 helper(s, i+1, elem, result)
@@ -41,9 +41,9 @@ c_ Solution(o..
             'abcba',
         ]
         ___ s __ testCases:
-            print('s: %s' % (s))
+            print('s: %s' % (s
             result = partition(s)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

@@ -5,5 +5,5 @@ ___ common_languages(programmers
        of programming languages, return the common languages"""
     programmer_count = l..(programmers)
     languages = [item ___ l __ programmers.v.. ___ item __ l]
-    language_dict = d..(C..(languages))
+    language_dict = d..(C..(languages
     r.. [k ___ k, v __ language_dict.i.. __ v __ programmer_count]

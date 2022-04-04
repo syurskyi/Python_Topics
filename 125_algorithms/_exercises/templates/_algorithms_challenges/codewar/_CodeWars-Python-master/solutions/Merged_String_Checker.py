@@ -12,7 +12,7 @@ ___ is_merge(s, part1, part2
         pointer = 0
         ___ c __ part:
             found = F..
-            ___ i __ r..(pointer, l..(result)):
+            ___ i __ r..(pointer, l..(result:
                 __ result[i] __ c:
                     pointer = i + 1
                     found = T..

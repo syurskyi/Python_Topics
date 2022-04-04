@@ -15,7 +15,7 @@ c_ Solution(o..
     """
     count = 0
     ans = -1
-    ___ i __ r..(0, l..(nums)):
+    ___ i __ r..(0, l..(nums:
       __ nums[i] __ target:
         count += 1
         __ r__.randrange(0, count) __ 0:

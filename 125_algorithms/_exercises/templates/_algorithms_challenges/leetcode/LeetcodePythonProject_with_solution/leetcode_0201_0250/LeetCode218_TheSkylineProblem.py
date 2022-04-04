@@ -35,9 +35,9 @@ c_ Solution(o..
             [ [2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8] ],
         ]
         ___ buildings __ testCases:
-            print('buildings: %s' % (buildings))
+            print('buildings: %s' % (buildings
             result = getSkyline(buildings)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
     
 __ _____ __ _____

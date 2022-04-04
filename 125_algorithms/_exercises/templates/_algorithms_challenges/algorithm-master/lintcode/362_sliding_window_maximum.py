@@ -44,7 +44,7 @@ c_ Solution:
 
         heap = HashHeapq()
 
-        ___ i __ r..(l..(A)):
+        ___ i __ r..(l..(A:
             heap.push(-A[i])
             __ i >= k - 1:
                 ans.a..(-heap.top
@@ -67,7 +67,7 @@ c_ Solution:
         ans    # list
         __ n.. A o. l..(A) < 1:
             r.. ans
-        ___ r __ r..(l..(A)):
+        ___ r __ r..(l..(A:
             __ r >= k - 1:
-                ans.a..(m..(A[r - k + 1 : r + 1]))
+                ans.a..(m..(A[r - k + 1 : r + 1]
         r.. ans

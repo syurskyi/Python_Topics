@@ -19,7 +19,7 @@ c_ Solution(o..
             step = x &(-x)
             w.... step > n:
                 step /= 2
-            res.a..(long2ip(x, step))
+            res.a..(long2ip(x, step
             x += step
             n -= step
         r.. res
@@ -52,8 +52,8 @@ __ _____ __ _____
     
     ___ n __ r..(1, 20
         print('n: %s' % n)
-        print('{:b}'.f..(n))
-        print('{:b}'.f..(-n))
+        print('{:b}'.f..(n
+        print('{:b}'.f..(-n
         result = n&-n
         print('res: %s' % result)
         print('-='*30+'-')

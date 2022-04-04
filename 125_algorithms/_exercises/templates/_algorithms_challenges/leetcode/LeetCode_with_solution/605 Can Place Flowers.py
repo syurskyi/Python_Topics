@@ -30,7 +30,7 @@ c_ Solution:
         __ n __ 0:
             r.. T..
 
-        ___ i __ r..(l..(flowerbed)):
+        ___ i __ r..(l..(flowerbed:
             __ (
                 flowerbed[i] != 1 a..
                 (i + 1 >= l..(flowerbed) o. flowerbed[i+1] != 1) a..

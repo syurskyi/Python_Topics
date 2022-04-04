@@ -20,7 +20,7 @@ c_ Solution(o..
 
     prefix = c...d..(l..)
     ___ word __ words:
-      ___ i __ r..(0, l..(word)):
+      ___ i __ r..(0, l..(word:
         prefix[word[:i]].a..(word)
 
     m = l..(words[0])

@@ -27,7 +27,7 @@ c_ Solution:
 
                 nxts = [nums[k] ___ k __ r..(n) __ i != k != j]  # i != j != k is different
 
-                ___ k __ r..(l..(OP)):
+                ___ k __ r..(l..(OP:
                     __ i < j a.. k < 2:
                         # since a + b == b + a, so just do half in j >= i
                         # same for `*`
@@ -36,7 +36,7 @@ c_ Solution:
                         # divide by 0
                         _____
 
-                    nxts.a..(OP[k](nums[i], nums[j]))
+                    nxts.a..(OP[k](nums[i], nums[j]
 
                     __ judgePoint24(nxts
                         r.. T..

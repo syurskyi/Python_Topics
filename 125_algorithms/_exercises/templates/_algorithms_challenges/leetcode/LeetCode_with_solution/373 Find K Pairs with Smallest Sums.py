@@ -67,7 +67,7 @@ c_ Solution(o..
 
         h    # list
         ___ i __ x..(m..(k, l..(nums1))):
-            heapq.heappush(h, Node(i, 0))
+            heapq.heappush(h, Node(i, 0
 
         ret    # list
         w.... h a.. l..(ret) < k:

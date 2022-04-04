@@ -63,7 +63,7 @@ c_ Excel(o..
             __ l..(arr) __ 1:
                 x = i..(arr[0][1:])-1
                 y = o..(arr[0][0])-o..('A')
-                vals.a..((x, y))
+                vals.a..((x, y
                 sumVal += matrix[x][y]
             ____:
                 x0 = i..(arr[0][1:])-1
@@ -72,7 +72,7 @@ c_ Excel(o..
                 y1 = o..(arr[1][0])-o..('A')
                 ___ i0 __ r..(x0, x1+1
                     ___ j0 __ r..(y0, y1+1
-                        vals.a..((i0, j0))
+                        vals.a..((i0, j0
                         sumVal += matrix[i0][j0]
         hashmap[(i, j)] = vals
         matrix[i][j] = sumVal
@@ -81,31 +81,31 @@ c_ Excel(o..
 __ _____ __ _____
     excel = Excel(3, 'C')
     excel.s..(1, 'A', 2)
-    print(excel.s..(3, 'C',  'A1', 'A1:B2' ))
+    print(excel.s..(3, 'C',  'A1', 'A1:B2'
     excel.s..(2, 'B', 2)
-    print(excel.g.. 3, 'C'))
+    print(excel.g.. 3, 'C'
     print('-='*10+'-')
  
     excel = Excel(5, 'E')
-    print(excel.g.. 1, 'A'))
-    print(excel.s..(1, 'A', 1))
-    print(excel.g.. 1, 'A'))
-    print(excel.s..(2, 'B',  'A1', 'A1' ))
-    print(excel.s..(1, 'A', 2))
-    print(excel.g.. 2, 'B'))
+    print(excel.g.. 1, 'A'
+    print(excel.s..(1, 'A', 1
+    print(excel.g.. 1, 'A'
+    print(excel.s..(2, 'B',  'A1', 'A1'
+    print(excel.s..(1, 'A', 2
+    print(excel.g.. 2, 'B'
     print('-='*10+'-')
  
     excel = Excel(5, 'E')
-    print(excel.s..(1, 'A', 1))
-    print(excel.s..(2, 'B',  'A1' ))
-    print(excel.s..(2, 'B', 0))
-    print(excel.g.. 1, 'B'))
-    print(excel.s..(1, 'A', 5))
-    print(excel.g.. 2, 'B'))
+    print(excel.s..(1, 'A', 1
+    print(excel.s..(2, 'B',  'A1'
+    print(excel.s..(2, 'B', 0
+    print(excel.g.. 1, 'B'
+    print(excel.s..(1, 'A', 5
+    print(excel.g.. 2, 'B'
     print('-='*10+'-')
 
     excel = Excel(3, 'C')
-    print(excel.s..(1, 'A',  'A2' ))
-    print(excel.s..(2, 'A', 1))
-    print(excel.g.. 1, 'A'))
+    print(excel.s..(1, 'A',  'A2'
+    print(excel.s..(2, 'A', 1
+    print(excel.g.. 1, 'A'
     print('-='*10+'-')

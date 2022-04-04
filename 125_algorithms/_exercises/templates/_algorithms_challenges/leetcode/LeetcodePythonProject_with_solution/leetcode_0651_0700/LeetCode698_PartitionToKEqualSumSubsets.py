@@ -19,7 +19,7 @@ c_ Solution(o..
     ___ helper  nums, elems, target, ind, k
         __ ind __ k:
             r.. T..
-        ___ i __ r..(l..(nums)):
+        ___ i __ r..(l..(nums:
             __ elems[ind]+nums[i] <= target:
                 elems[ind] += nums[i]
                 __ elems[ind] __ target a..\

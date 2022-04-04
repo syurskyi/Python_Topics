@@ -4,7 +4,7 @@ _______ __
 ____ u__.r.. _______ u..
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
-TMP = __.getenv("TMP", "/tmp")
+TMP = __.g..("TMP", "/tmp")
 
 fname = 'movie_metadata.csv'
 remote = __.p...j..(BASE_URL, fname)
@@ -43,7 +43,7 @@ ___ get_movies_by_director
                 __ director_name n.. __ movie_metadata:
                     movie_metadata[director_name] = [Movie(movie_title, title_year, imdb_score)]
                 ____:
-                    movie_metadata[director_name].a..(Movie(movie_title, title_year, imdb_score))
+                    movie_metadata[director_name].a..(Movie(movie_title, title_year, imdb_score
 
     r.. movie_metadata
 
@@ -64,7 +64,7 @@ ___ get_average_scores(directors
     ___ key, value __ directors.i..:
         director_avg_score = calc_mean_score(value)
         __ l..(value) >= MIN_MOVIES:
-            directors_scores.a..((key, director_avg_score))
+            directors_scores.a..((key, director_avg_score
     r.. s..(directors_scores, key=l.... x: x[1], r.._T..
 
 

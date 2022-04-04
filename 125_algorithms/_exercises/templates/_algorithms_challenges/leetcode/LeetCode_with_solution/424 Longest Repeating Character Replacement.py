@@ -31,7 +31,7 @@ c_ Solution:
         lo = 0
         ret = 0
         ... k > 0
-        ___ hi __ r..(l..(s)):
+        ___ hi __ r..(l..(s:
             counter[s[hi]] += 1
             w... T...
                 most = m..(counter.values  # O(26)

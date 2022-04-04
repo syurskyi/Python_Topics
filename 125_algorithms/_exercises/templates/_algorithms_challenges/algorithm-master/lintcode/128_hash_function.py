@@ -12,6 +12,6 @@ c_ Solution:
 
         _code = 0
         ___ char __ key:
-            _code = (_code * MAGIC_NUMBER + o..(char)) % HASH_SIZE
+            _code = (_code * MAGIC_NUMBER + o..(char % HASH_SIZE
 
         r.. _code

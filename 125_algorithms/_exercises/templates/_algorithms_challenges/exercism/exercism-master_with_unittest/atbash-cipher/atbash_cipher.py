@@ -9,7 +9,7 @@ c_ Atbash:
 
     $
     ___ encode  msg
-        r.. split_every_five  encoded  msg))
+        r.. split_every_five  encoded  msg
 
     $
     ___ split_every_five  encoded
@@ -18,7 +18,7 @@ c_ Atbash:
     $
     ___ encoded  msg
         r.. ''.j..(([char __ char.i.. ____ CIPHER[char]
-                         ___ char __ clean  msg)]))
+                         ___ char __ clean  msg)]
 
     $
     ___ clean  msg

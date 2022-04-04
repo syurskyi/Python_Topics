@@ -21,7 +21,7 @@ xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
 ___ get_tree
     """You probably want to use ET.fromstring"""
     #tree = ET.fromstring(xmlstring)
-    r.. ET.E__(ET.f..(xmlstring))
+    r.. ET.E__(ET.f..(xmlstring
     #return tree
 
 ___ get_movies

@@ -23,7 +23,7 @@ c_ Solution(o..
       p.word = word
 
     words = sentence.s..
-    ___ i __ r..(l..(words)):
+    ___ i __ r..(l..(words:
       p = root
       ___ c __ words[i]:
         __ c __ p.children:

@@ -22,12 +22,12 @@ c_ Solution(o..
     
     ___ test
         testCases = [
-            TreeNode(3, TreeNode(2, N.., TreeNode(3)), TreeNode(3, N.., TreeNode(1))),
-            TreeNode(3, TreeNode(4, TreeNode(1), TreeNode(3)), TreeNode(5, N.., TreeNode(1))),
+            TreeNode(3, TreeNode(2, N.., TreeNode(3, TreeNode(3, N.., TreeNode(1))),
+            TreeNode(3, TreeNode(4, TreeNode(1), TreeNode(3, TreeNode(5, N.., TreeNode(1))),
         ]
         ___ root __ testCases:
             result = rob(root)
-            print('result: %s' % (result))
+            print('result: %s' % (result
 
 __ _____ __ _____
     Solution().test()

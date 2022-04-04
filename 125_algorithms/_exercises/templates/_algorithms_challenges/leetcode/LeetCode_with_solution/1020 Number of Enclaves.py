@@ -30,7 +30,7 @@ All rows have the same size.
 ____ t___ _______ L..
 
 
-dirs = ((0, -1), (0, 1), (1, 0), (-1, 0))
+dirs = ((0, -1), (0, 1), (1, 0), (-1, 0
 
 
 c_ Solution:

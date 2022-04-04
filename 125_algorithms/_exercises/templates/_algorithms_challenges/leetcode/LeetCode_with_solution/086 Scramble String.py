@@ -72,7 +72,7 @@ c_ Solution:
             r.. T..
 
 
-        ___ i __ x..(1, l..(s1)):
+        ___ i __ x..(1, l..(s1:
             __ isScramble(s1[:i], s2[:i]) a.. isScramble(s1[i:], s2[i:]) o. \
                 isScramble(s1[:i], s2[-i:]) a.. isScramble(s1[i:], s2[:l..(s2)-i]
                 r.. T..

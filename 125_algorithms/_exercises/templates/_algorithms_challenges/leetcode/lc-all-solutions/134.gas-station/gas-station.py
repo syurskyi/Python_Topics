@@ -10,11 +10,11 @@ c_ Solution(o..
     totalcost = 0
     start = 0
     balance = 0
-    ___ i __ r..(0, l..(gas)):
+    ___ i __ r..(0, l..(gas:
       totalgas += gas[i]
       totalcost += cost[i]
 
-    ___ i __ r..(0, l..(gas)):
+    ___ i __ r..(0, l..(gas:
       balance += gas[i] - cost[i]
       __ balance < 0:
         start = i + 1

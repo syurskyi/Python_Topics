@@ -1,11 +1,11 @@
 _______ __
-____ pathlib _______ Path
+____ p.. _______ P..
 ____ c.. _______ d..
 ____ u__.r.. _______ u..
 ____ bs4 _______ BeautifulSoup
 
 # import the countries xml file
-tmp = Path(__.getenv("TMP", "/tmp"))
+tmp = P..(__.g..("TMP", "/tmp"
 countries = tmp / 'countries.xml'
 
 __ n.. countries.exists

@@ -8,7 +8,7 @@ c_ Solution:
             r.. ''
 
         t = strs[0]
-        ___ i __ r..(l..(t)):
+        ___ i __ r..(l..(t:
             ___ s __ strs:
                 __ i >= l..(s) o. s[i] != t[i]:
                     r.. t[:i]

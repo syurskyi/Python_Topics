@@ -50,7 +50,7 @@ ___ get_srt_section_ids(text: s..) __ L..[i..]:
     r.. s..(line_dict, key=line_dict.get, reverse=T.. )
 
 
-print(get_srt_section_ids(text1))
+print(get_srt_section_ids(text1
 
 #epoch = '1970-01-01'
 #a = datetime.fromisoformat(f'{epoch} 00:05:23.283')

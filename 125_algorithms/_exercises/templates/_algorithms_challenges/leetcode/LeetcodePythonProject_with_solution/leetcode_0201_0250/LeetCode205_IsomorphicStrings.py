@@ -52,9 +52,9 @@ c_ Solution(o..
             ('paper', 'title'),
         ]
         ___ s, t __ testCases:
-            print('s: %s, t: %s' % (s, t))
+            print('s: %s, t: %s' % (s, t
             result = isIsomorphic(s, t)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

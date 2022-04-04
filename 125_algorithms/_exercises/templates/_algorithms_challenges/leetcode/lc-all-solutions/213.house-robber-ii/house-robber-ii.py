@@ -10,7 +10,7 @@ c_ Solution(o..
       r.. m..(nums | )
     # If we rob the first house, the problem becomes how to rob houses except the last one.
     # If we rob the last house, the problem becomes how to rob houses ecept the first one.
-    r.. m..(robHelper(nums[1:]), robHelper(nums[:l..(nums) - 1]))
+    r.. m..(robHelper(nums[1:]), robHelper(nums[:l..(nums) - 1]
 
   ___ robHelper  nums
     """
@@ -19,7 +19,7 @@ c_ Solution(o..
     """
     pp = nums[0]
     p = m..(pp, nums[1])
-    ___ i __ r..(2, l..(nums)):
+    ___ i __ r..(2, l..(nums:
       tmp = p
       p = m..(pp + nums[i], p)
       pp = tmp

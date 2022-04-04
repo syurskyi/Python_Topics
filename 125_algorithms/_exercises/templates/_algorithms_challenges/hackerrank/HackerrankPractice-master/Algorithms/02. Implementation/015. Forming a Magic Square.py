@@ -29,4 +29,4 @@ square = [
     l.. m..(i.., input().s..())),
     l.. m..(i.., input().s..()))
     ]
-print(formingMagicSquare(square))
+print(formingMagicSquare(square

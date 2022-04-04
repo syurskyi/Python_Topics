@@ -13,18 +13,18 @@ c_ Cipher:
 
     ___ encode  phrase
         r.. ''.j..([chr(wrap(o..(c) + offset(i))) ___ i, c __
-                        e..(clean(phrase))])
+                        e..(clean(phrase])
 
     ___ decode  phrase
         r.. ''.j..([chr(wrap(o..(c) - offset(i))) ___ i, c __
-                        e..(clean(phrase))])
+                        e..(clean(phrase])
 
     ___ clean  phrase
         r.. l..(f.. s...isalpha, phrase.lower()))
 
     ___ generate_random_key
         r.. ''.j..(r__.SystemRandom().choice(s__.ascii_lowercase)
-                       ___ _ __ r..(random_key_length))
+                       ___ _ __ r..(random_key_length
 
     ___ valid_key
         r.. key.i.. a.. key.islower()

@@ -28,7 +28,7 @@ c_ HitCounter(o..
     :rtype: int
     """
     ans = 0
-    ___ i __ r..(0, l..(q)):
+    ___ i __ r..(0, l..(q:
       time, hit = q[i]
       __ timestamp - time < 300:
         ans += hit

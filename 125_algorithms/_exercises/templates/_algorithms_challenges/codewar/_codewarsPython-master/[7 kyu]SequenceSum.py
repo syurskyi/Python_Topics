@@ -7,7 +7,7 @@ ___ sum_of_n(n
 	r.. res
 
 
-print(sum_of_n(5))
-print(sum_of_n(3))
-print(sum_of_n(-5))
+print(sum_of_n(5
+print(sum_of_n(3
+print(sum_of_n(-5
   

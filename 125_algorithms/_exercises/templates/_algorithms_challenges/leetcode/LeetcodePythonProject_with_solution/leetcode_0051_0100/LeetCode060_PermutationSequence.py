@@ -10,7 +10,7 @@ c_ Solution(o..
         :type k: int
         :rtype: str
         """
-        nums = l..(r..(1, n+1))
+        nums = l..(r..(1, n+1
         k -= 1
         mod = 1
         ___ i __ r..(n

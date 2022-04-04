@@ -53,9 +53,9 @@ ___ generate_bc(url, separator
         breadcrumb = '<a href="/">HOME</a>'
 
         ___ i, e __ e..(menus[:-1]
-            breadcrumb += separator + '<a href="/{}/">{}</a>'.f..('/'.j..(menus[:i + 1]), get_element_name(e))
+            breadcrumb += separator + '<a href="/{}/">{}</a>'.f..('/'.j..(menus[:i + 1]), get_element_name(e
 
-        breadcrumb += separator + '<span class="active">{}</span>'.f..(get_element_name(menus[-1]))
+        breadcrumb += separator + '<span class="active">{}</span>'.f..(get_element_name(menus[-1]
         r.. breadcrumb
     ______:
         r.. url
@@ -96,7 +96,7 @@ ___ get_element_name(element
 # print(generate_bc("https://www.linkedin.com/in/giacomosorbi", " * "))
 ... generate_bc("https://www.linkedin.com/in/giacomosorbi",
                    " * ") __ '<a href="/">HOME</a> * <a href="/in/">IN</a> * <span class="active">GIACOMOSORBI</span>'
-print(generate_bc("www.agcpartners.co.uk", " * "))
+print(generate_bc("www.agcpartners.co.uk", " * "
 ... generate_bc("www.agcpartners.co.uk", " * ") __ '<span class="active">HOME</span>'
 ... generate_bc("www.agcpartners.co.uk/", " * ") __ '<span class="active">HOME</span>'
 ... generate_bc("www.agcpartners.co.uk/index.html", " * ") __ '<span class="active">HOME</span>'

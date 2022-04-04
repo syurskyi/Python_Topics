@@ -35,7 +35,7 @@ ___ sort_books_by_len_of_title(books=books
     Expected last book in list:
     Automate the Boring Stuff with Python
     """
-    len_of_title = s..(books, key=l.... x: l..(x.title))
+    len_of_title = s..(books, key=l.... x: l..(x.title
     r.. len_of_title
 
 

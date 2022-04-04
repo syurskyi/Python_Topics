@@ -1,6 +1,6 @@
 ___ string_suffix(str_
 	sumSuffix = 0
-	___ n __ r..(l..(str_)):
+	___ n __ r..(l..(str_:
 		sumSuffix += stringMatch(str_, str_[n:])
 	r.. sumSuffix
 
@@ -13,4 +13,4 @@ ___ stringMatch(str_,toMatch
 			_____
 	r.. res
 
-print(string_suffix('ababaa'))
+print(string_suffix('ababaa'

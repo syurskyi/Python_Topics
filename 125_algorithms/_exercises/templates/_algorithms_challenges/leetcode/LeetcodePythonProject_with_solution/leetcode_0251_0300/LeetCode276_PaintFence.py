@@ -28,10 +28,10 @@ c_ Solution(o..
             (3, 2),
         ]
         ___ n, k __ testCases:
-            print('n: %s' % (n))
-            print('k: %s' % (k))
+            print('n: %s' % (n
+            print('k: %s' % (k
             result = numWays(n, k)
-            print('result: %s' % (result))
+            print('result: %s' % (result
             print('-='*20+'-')
 
 __ _____ __ _____

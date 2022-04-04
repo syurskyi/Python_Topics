@@ -8,7 +8,7 @@ c_ Solution(o..
       r.. []
     c1, c2 = N.., N..
     n1, n2 = 0, 0
-    ___ i __ r..(0, l..(nums)):
+    ___ i __ r..(0, l..(nums:
       __ c1 __ nums[i]:
         n1 += 1
       ____ c2 __ nums[i]:
@@ -29,7 +29,7 @@ c_ Solution(o..
     size = l..(nums)
     cn1 = 0
     cn2 = 0
-    ___ i __ r..(0, l..(nums)):
+    ___ i __ r..(0, l..(nums:
       __ nums[i] __ c1:
         cn1 += 1
       ____ nums[i] __ c2:
