@@ -1,12 +1,12 @@
-____ c.. _______ C..
-
-___ calculate_gc_content(sequence
-    """
-    Receives a DNA sequence (A, G, C, or T)
-    Returns the percentage of GC content (rounded to the last two digits)
-    """
-    count = C..(sequence.l..
-    total_acgt = count 'a'  + count 'c'  + count 'g'  + count 't'
-    total_gc = count 'c'  + count 'g'
-    r.. r..( (total_gc/total_acgt) *100,2)
-
+# ____ c.. _______ C..
+#
+# ___ calculate_gc_content sequence
+#     """
+#     Receives a DNA sequence (A, G, C, or T)
+#     Returns the percentage of GC content (rounded to the last two digits)
+#     """
+#     count  C.. s__.l..
+#     total_acgt  ? 'a'  + ? 'c'  + ? 'g'  + ? 't'
+#     total_gc  ? 'c'  + ? 'g'
+#     r.. r.. ?/? *100,2
+#

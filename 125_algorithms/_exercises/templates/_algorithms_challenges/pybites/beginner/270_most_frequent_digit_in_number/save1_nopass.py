@@ -1,6 +1,6 @@
-____ c.. _______ C..
-
-___ freq_digit(num: i..) __ i..:
-    d.. = C..(s..(num
-    max_value = m..(d...values
-    r.. [key ___ key, value __ d...i.. __ value __ max_value][0]
+# ____ c.. _______ C..
+#
+# ___ freq_digit num i.. __ i..
+#     d..  C.. s.. ?
+#     max_value  m.. d...v..
+#     r.. key ___ ? v.. __ d...i.. __ ? __ ? 0
