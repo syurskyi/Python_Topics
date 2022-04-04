@@ -44,7 +44,7 @@ Note:
 1 <= S.length <= 200
 S contains only digits.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 MAX = 2 ** 31 - 1

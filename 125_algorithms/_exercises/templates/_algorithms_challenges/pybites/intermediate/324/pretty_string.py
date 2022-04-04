@@ -1,7 +1,7 @@
-_______ pprint
-____ typing _______ Any
+_______ pp__
+____ t___ _______ A..
 
 
-___ pretty_string(obj: Any) __ s..:
-    pp = pprint.pformat(obj, depth=2, width=60)
+___ pretty_string(obj: A..) __ s..:
+    pp = pp__.p..(obj, depth=2, width=60)
     r.. pp

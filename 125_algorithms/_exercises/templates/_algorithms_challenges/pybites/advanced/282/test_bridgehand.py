@@ -1,6 +1,6 @@
 ____ dataclasses _______ dataclass, field
 ____ r__ _______ shuffle
-____ typing _______ List
+____ t___ _______ List
 
 _______ p__
 

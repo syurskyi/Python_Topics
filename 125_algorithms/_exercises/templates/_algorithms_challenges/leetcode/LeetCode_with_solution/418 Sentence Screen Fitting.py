@@ -53,7 +53,7 @@ had--
 
 The character '-' signifies an empty space on the screen.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

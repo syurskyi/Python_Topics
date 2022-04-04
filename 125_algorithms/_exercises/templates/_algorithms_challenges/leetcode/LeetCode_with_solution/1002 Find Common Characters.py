@@ -27,7 +27,7 @@ A[i][j] is a lowercase letter
 """
 _______ s__
 
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ C..
 
 

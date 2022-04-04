@@ -1,5 +1,5 @@
 _______ __
-____ typing _______ Tuple
+____ t___ _______ Tuple
 
 text = """
 The Zen of Python, by Tim Peters

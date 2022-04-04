@@ -1,6 +1,6 @@
 ____ c.. _______ n..,d..
 ____ e.. _______ E..
-____ typing _______ Sequence
+____ t___ _______ Sequence
 ____ c...abc _______ Sequence __ seq
 
 Suit = E..("Suit", l..("SHDC"))

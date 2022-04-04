@@ -27,7 +27,7 @@ Note:
 arr will have length in range [1, 10].
 arr[i] will be a permutation of [0, 1, ..., arr.length - 1].
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

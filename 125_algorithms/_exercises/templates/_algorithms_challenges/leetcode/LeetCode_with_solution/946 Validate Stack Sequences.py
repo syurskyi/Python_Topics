@@ -25,7 +25,7 @@ Note:
 pushed is a permutation of popped.
 pushed and popped have distinct values.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

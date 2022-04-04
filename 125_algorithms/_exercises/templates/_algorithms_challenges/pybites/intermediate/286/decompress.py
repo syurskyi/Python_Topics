@@ -1,4 +1,4 @@
-____ typing _______ Dict
+____ t___ _______ Dict
 
 
 ___ decompress(s__: s.., table: Dict[s.., s..]) __ s..:

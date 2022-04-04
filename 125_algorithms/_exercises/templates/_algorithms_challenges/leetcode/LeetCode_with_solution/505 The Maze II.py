@@ -2,7 +2,7 @@
 """
 premium question
 """
-____ typing _______ List
+____ t___ _______ List
 _______ heapq
 
 

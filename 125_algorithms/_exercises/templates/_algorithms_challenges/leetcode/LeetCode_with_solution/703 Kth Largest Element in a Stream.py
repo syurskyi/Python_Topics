@@ -21,7 +21,7 @@ kthLargest.add(4);   // returns 8
 Note:
 You may assume that nums' length ≥ k-1 and k ≥ 1.
 """
-____ typing _______ List
+____ t___ _______ List
 _______ heapq
 
 

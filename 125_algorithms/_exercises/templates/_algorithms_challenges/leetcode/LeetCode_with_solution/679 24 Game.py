@@ -18,7 +18,7 @@ unary operator. For example, with [1, 1, 1, 1] as input, the expression -1 - 1 -
 You cannot concatenate numbers together. For example, if the input is
 [1, 2, 1, 2], we cannot write this as 12 + 12.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

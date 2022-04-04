@@ -19,7 +19,7 @@ pre[] and post[] are both permutations of 1, 2, ..., pre.length.
 It is guaranteed an answer exists. If there exists multiple answers, you can
 return any of them.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 # Definition for a binary tree node.

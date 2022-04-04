@@ -41,7 +41,7 @@ Total length of input string will be 3n, where 1 ≤ n ≤ 20.
 Total number of H will be 2n in the input string.
 Total number of O will be n in the input string.
 """
-____ typing _______ Callable
+____ t___ _______ Callable
 ____ threading _______ Semaphore
 
 ____ c.. _______ d..

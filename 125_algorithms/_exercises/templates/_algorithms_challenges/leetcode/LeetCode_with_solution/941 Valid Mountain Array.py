@@ -29,7 +29,7 @@ Note:
 0 <= A.length <= 10000
 0 <= A[i] <= 10000
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

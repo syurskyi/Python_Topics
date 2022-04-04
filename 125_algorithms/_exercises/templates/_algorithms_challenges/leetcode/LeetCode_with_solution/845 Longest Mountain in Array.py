@@ -31,7 +31,7 @@ Follow up:
 Can you solve it using only one pass?
 Can you solve it in O(1) space?
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

@@ -1,6 +1,6 @@
 ____ f.. _______ wraps
 ____ time _______ time
-____ typing _______ Deque, List, Set, Generator
+____ t___ _______ Deque, List, Set, Generator
 ____ c.. _______ d..
 
 

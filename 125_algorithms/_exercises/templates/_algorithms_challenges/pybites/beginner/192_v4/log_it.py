@@ -1,5 +1,5 @@
 _______ logging
-____ typing _______ Callable
+____ t___ _______ Callable
 
 logger = logging.getLogger('pybites_logger')
 DEBUG = l.... x: logger.log(logging.DEBUG, x)

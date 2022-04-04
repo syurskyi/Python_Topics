@@ -1,4 +1,4 @@
-____ typing _______ List
+____ t___ _______ List
 
 
 ___ list_to_decimal(nums: List[i..]) __ i..:

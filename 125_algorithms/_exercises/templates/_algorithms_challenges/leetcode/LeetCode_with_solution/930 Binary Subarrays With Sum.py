@@ -20,7 +20,7 @@ A.length <= 30000
 0 <= S <= A.length
 A[i] is either 0 or 1.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

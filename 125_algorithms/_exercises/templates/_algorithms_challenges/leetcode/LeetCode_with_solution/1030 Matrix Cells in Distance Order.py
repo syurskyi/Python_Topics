@@ -34,7 +34,7 @@ Note:
 0 <= r0 < R
 0 <= c0 < C
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

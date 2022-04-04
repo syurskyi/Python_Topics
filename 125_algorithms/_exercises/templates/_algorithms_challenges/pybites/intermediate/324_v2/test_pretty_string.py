@@ -56,5 +56,5 @@ ____ pretty_string _______ pretty_string
     ],
 )
 ___ test_pretty_str(input_obj, expected_result
-    result = pretty_string(input_obj)
+    result = ? ?
     ... result __ expected_result

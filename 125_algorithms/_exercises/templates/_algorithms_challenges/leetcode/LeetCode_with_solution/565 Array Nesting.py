@@ -27,7 +27,7 @@ N is an integer within the range [1, 20,000].
 The elements of A are all distinct.
 Each element of A is an integer within the range [0, N-1].
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

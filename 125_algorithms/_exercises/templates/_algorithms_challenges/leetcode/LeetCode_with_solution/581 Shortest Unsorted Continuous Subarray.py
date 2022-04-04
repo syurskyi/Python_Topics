@@ -16,7 +16,7 @@ Note:
 Then length of the input array is in range [1, 10,000].
 The input array may contain duplicates, so ascending order here means <=.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

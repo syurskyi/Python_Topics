@@ -23,7 +23,7 @@ Note:
 The number of tasks is in the range [1, 10000].
 The integer n is in the range [0, 100].
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d.., d..
 _______ heapq
 

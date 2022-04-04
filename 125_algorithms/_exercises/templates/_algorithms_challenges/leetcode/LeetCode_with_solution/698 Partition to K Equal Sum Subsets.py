@@ -16,7 +16,7 @@ Note:
 1 <= k <= len(nums) <= 16.
 0 < nums[i] < 10000.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

@@ -1,10 +1,10 @@
-____ typing _______ Dict, Any
+____ t___ _______ Dict, A..
 ____ d__ _______ d__
 
 _______ __
 
 
-___ rename_keys(data: Dict[Any, Any]) __ Dict[Any, Any]:
+___ rename_keys(data: Dict[A.., A..]) __ Dict[A.., A..]:
 
 
     new_dict    # dict

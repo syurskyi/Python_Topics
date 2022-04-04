@@ -1,6 +1,6 @@
 ____ d__ _______ date
 _______ time
-____ typing _______ NamedTuple
+____ t___ _______ NamedTuple
 
 ____ serialization _______ (download_pickle_file,
                            deserialize,

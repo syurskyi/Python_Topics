@@ -23,7 +23,7 @@ Note:
 1 <= routes[i].length <= 500.
 0 <= routes[i][j] < 10 ^ 6.
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

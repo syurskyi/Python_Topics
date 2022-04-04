@@ -1,4 +1,4 @@
-____ typing _______ List, Union
+____ t___ _______ List, Union
 
 ___ join_lists(lst_of_lst: List[List[s..]], sep: s..) __ Union[List[s..], N..]:
     output    # list

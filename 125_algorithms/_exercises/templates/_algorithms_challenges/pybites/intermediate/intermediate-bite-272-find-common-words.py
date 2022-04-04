@@ -14,7 +14,7 @@ T = ['We', 'are', 'what', 'we', 'repeatedly', 'do', 'is', 'not', 'an', 'act']
 Result = ['do', 'not']
 """
 
-____ typing _______ List
+____ t___ _______ List
 
 
 ___ common_words(sentence1: List[s..], sentence2: List[s..]) __ List[s..]:

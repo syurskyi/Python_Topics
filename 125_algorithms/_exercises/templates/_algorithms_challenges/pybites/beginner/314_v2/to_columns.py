@@ -1,4 +1,4 @@
-____ typing _______ List  # not needed when we upgrade to 3.9
+____ t___ _______ List  # not needed when we upgrade to 3.9
 _______ m__
 
 ___ print_names_to_columns(names: List[s..], cols: i.. = 2) __ N..

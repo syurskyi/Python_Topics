@@ -28,7 +28,7 @@ Note:
 1 <= S.length <= 10000
 S only contains characters "I" or "D".
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

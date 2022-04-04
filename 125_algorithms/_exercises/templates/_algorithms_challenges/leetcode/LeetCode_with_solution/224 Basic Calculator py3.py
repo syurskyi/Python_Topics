@@ -21,7 +21,7 @@ Note:
 You may assume that the given expression is always valid.
 Do not use the eval built-in library function.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

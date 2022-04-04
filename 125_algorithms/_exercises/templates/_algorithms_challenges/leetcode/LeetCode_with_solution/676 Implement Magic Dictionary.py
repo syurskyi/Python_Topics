@@ -15,7 +15,7 @@ Input: search("hhllo"), Output: True
 Input: search("hell"), Output: False
 Input: search("leetcoded"), Output: False
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

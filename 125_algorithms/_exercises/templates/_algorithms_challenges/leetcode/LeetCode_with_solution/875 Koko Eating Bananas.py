@@ -34,7 +34,7 @@ Note:
 piles.length <= H <= 10^9
 1 <= piles[i] <= 10^9
 """
-____ typing _______ List
+____ t___ _______ List
 _______ m__
 
 

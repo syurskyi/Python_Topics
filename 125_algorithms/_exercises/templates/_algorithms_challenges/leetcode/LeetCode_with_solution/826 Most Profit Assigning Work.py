@@ -26,7 +26,7 @@ Notes:
 1 <= worker.length <= 10000
 difficulty[i], profit[i], worker[i]  are in range [1, 10^5]
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

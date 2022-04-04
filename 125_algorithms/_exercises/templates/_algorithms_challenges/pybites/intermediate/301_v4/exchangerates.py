@@ -1,7 +1,7 @@
 _______ __
 ____ d__ _______ date, t..
 ____ pathlib _______ Path
-____ typing _______ Dict, List, OrderedDict
+____ t___ _______ Dict, List, OrderedDict
 ____ u__.r.. _______ u..
 _______ json
 ____ c.. _______ OrderedDict

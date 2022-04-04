@@ -28,7 +28,7 @@ Note:
 3 <= A.length <= 10000
 1 <= A[i] <= 10^6
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

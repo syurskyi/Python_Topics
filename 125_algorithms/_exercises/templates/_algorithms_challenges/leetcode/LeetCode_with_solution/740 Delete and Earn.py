@@ -32,7 +32,7 @@ Note:
 The length of nums is at most 20000.
 Each element nums[i] is an integer in the range [1, 10000].
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

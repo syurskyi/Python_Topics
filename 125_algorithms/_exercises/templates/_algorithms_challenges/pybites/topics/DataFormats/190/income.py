@@ -1,6 +1,6 @@
 _______ __
 ____ pathlib _______ Path
-____ typing _______ DefaultDict
+____ t___ _______ DefaultDict
 ____ u__.r.. _______ u..
 _______ ___.e__.E__ __ ET
 

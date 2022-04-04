@@ -38,7 +38,7 @@ c_ TreeNode:
         right = N..
 
 
-____ typing _______ Tuple
+____ t___ _______ Tuple
 ____ c.. _______ d..
 
 

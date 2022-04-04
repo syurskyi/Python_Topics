@@ -25,7 +25,7 @@ Example 2:
 Given the above grid, return 0.
 Note: The length of each dimension in the given grid does not exceed 50.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))

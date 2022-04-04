@@ -1,4 +1,4 @@
-____ typing _______ List
+____ t___ _______ List
 
 
 ___ sum_numbers(List[numbers]) __ i..:

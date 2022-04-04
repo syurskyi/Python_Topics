@@ -35,7 +35,7 @@ image[0].length.
 The value of each color in image[i][j] and newColor will be an integer in
 [0, 65535].
 """
-____ typing _______ List
+____ t___ _______ List
 dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
 

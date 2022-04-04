@@ -1,5 +1,5 @@
 ____ d__ _______ t..
-____ typing _______ List
+____ t___ _______ List
 
 
 ___ get_srt_section_ids(text: s..) __ List[i..]:

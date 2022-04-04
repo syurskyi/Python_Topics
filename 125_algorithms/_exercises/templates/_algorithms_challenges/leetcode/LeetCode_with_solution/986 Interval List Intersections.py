@@ -21,7 +21,7 @@ Note:
 0 <= B.length < 1000
 0 <= A[i].start, A[i].end, B[i].start, B[i].end < 10^9
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 # Definition for an interval.

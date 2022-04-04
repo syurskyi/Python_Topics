@@ -12,7 +12,7 @@ Input: [3,3,7,7,10,11,11]
 Output: 10
 Note: Your solution should run in O(log n) time and O(1) space.
 """
-____ typing _______ List
+____ t___ _______ List
 ____ bisect _______ bisect_right
 
 

@@ -24,7 +24,7 @@ Try to solve it in O(n log k) time and O(n) extra space.
 """
 _______ heapq
 ____ c.. _______ d..
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Word:

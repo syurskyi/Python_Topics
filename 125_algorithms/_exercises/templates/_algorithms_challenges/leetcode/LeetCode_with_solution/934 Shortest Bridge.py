@@ -26,7 +26,7 @@ Note:
 1 <= A.length = A[0].length <= 100
 A[i][j] == 0 or A[i][j] == 1
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))

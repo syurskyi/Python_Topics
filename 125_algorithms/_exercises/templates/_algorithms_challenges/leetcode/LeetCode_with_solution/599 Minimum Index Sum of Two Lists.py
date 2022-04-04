@@ -25,7 +25,7 @@ The length of strings in both lists will be in the range of [1, 30].
 The index is starting from 0 to the list length minus 1.
 No duplicates in both lists.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

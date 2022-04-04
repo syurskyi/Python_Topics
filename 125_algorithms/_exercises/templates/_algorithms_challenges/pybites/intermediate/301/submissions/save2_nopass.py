@@ -1,7 +1,7 @@
 _______ __
 ____ d__ _______ date, t..
 ____ pathlib _______ Path
-____ typing _______ Dict, List
+____ t___ _______ Dict, List
 ____ u__.r.. _______ u..
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"

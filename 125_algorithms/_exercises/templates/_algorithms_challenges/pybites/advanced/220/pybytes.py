@@ -1,6 +1,6 @@
 ____ c.. _______ n.., C..
 _______ __
-____ typing _______ NamedTuple
+____ t___ _______ NamedTuple
 
 _______ feedparser
 

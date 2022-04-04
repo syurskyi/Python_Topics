@@ -45,7 +45,7 @@ c_ TreeNode:
         right = N..
 
 
-____ typing _______ Tuple
+____ t___ _______ Tuple
 
 
 c_ Solution:

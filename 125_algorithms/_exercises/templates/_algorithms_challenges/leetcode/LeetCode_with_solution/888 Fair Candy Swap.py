@@ -40,7 +40,7 @@ Note:
 It is guaranteed that Alice and Bob have different total amounts of candy.
 It is guaranteed there exists an answer.
 """
-____ typing _______ List
+____ t___ _______ List
 _______ bisect
 
 

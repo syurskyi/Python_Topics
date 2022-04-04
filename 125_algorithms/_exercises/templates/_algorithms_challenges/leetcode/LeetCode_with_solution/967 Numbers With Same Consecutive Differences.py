@@ -26,7 +26,7 @@ Note:
 1 <= N <= 9
 0 <= K <= 9
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

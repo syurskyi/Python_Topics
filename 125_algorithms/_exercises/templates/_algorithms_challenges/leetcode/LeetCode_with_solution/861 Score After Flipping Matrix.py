@@ -24,7 +24,7 @@ Note:
 1 <= A[0].length <= 20
 A[i][j] is 0 or 1.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

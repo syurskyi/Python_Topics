@@ -32,7 +32,7 @@ Note:
 A.length is even
 -100000 <= A[i] <= 100000
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ C..
 
 

@@ -3,7 +3,7 @@ ____ dataclasses _______ dataclass, field
 ____ f.. _______ total_ordering
 ____ pathlib _______ Path
 ____ __ _______ c.., s..
-____ typing _______ Any, DefaultDict, List
+____ t___ _______ A.., DefaultDict, List
 ____ u__.r.. _______ u..
 
 ____ bs4 _______ BeautifulSoup __ Soup
@@ -97,7 +97,7 @@ ___ generate_enchantments(soup
     """
     item_list = enchantable_items(soup)
     data = parse_html(soup)
-    enchant_data: DefaultDict[Any, Enchantment] = d..(Enchantment)
+    enchant_data: DefaultDict[A.., Enchantment] = d..(Enchantment)
 
     ___ i, row __ e..(data
         id_name, name = split_title(row[0])
@@ -116,7 +116,7 @@ ___ generate_items(data
     :param data: DefaultDict of Enchantment objects
     :return: DefaultDict of Item objects
     """
-    mc_items: DefaultDict[Any, Item] = d..(Item)
+    mc_items: DefaultDict[A.., Item] = d..(Item)
     unique_items = gen_item_set(data)
 
     ___ item __ unique_items:

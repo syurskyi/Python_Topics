@@ -44,7 +44,7 @@ days is in strictly increasing order.
 costs.length == 3
 1 <= costs[i] <= 1000
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

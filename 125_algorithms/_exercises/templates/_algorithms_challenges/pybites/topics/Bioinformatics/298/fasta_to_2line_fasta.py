@@ -1,5 +1,5 @@
 _______ __
-____ typing _______ Sequence
+____ t___ _______ Sequence
 _______ urllib
 ____ Bio _______ SeqIO
 

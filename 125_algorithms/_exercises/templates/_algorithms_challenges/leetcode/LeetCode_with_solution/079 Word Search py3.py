@@ -19,7 +19,7 @@ Given word = "ABCCED", return true.
 Given word = "SEE", return true.
 Given word = "ABCB", return false.
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

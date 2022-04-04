@@ -33,7 +33,7 @@ Note:
 1 <= grid[0].length <= 10
 grid[i][j] is only 0, 1, or 2.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))

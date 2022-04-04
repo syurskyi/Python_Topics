@@ -10,7 +10,7 @@ your output should be [1, 1, 4, 2, 1, 1, 0, 0].
 Note: The length of temperatures will be in the range [1, 30000]. Each
 temperature will be an integer in the range [30, 100].
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

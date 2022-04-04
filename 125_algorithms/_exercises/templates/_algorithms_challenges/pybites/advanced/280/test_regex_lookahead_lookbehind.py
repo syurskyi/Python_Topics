@@ -1,5 +1,5 @@
 _______ p__
-____ typing _______ List
+____ t___ _______ List
 
 ____ regex_lookahead_lookbehind _______ (
     count_n_repetitions,

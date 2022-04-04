@@ -38,7 +38,7 @@ Output: ""
 
 Explanation: The order is invalid, so return "".
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d.., d..
 
 

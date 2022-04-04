@@ -69,7 +69,7 @@ Note:
 1 <= grid.length == grid[0].length <= 30
 grid[i][j] is either '/', '\', or ' '.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ DisjointSet:

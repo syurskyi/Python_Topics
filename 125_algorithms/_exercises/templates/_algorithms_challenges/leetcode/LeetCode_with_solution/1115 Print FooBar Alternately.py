@@ -34,7 +34,7 @@ Output: "foobarfoobar"
 Explanation: "foobar" is being output 2 times.
 """
 ____ threading _______ Lock
-____ typing _______ Callable
+____ t___ _______ Callable
 
 
 c_ FooBar:

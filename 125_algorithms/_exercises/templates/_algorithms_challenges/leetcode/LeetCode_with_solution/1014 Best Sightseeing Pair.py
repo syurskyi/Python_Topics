@@ -20,7 +20,7 @@ Note:
 2 <= A.length <= 50000
 1 <= A[i] <= 1000
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

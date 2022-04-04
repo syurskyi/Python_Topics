@@ -31,7 +31,7 @@ Note:
 1 <= K <= 10000
 -100 <= A[i] <= 100
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

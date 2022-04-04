@@ -1,4 +1,4 @@
-____ typing _______ Type
+____ t___ _______ Type
 
 
 ___ get_profile(name, age, *args, **kwargs

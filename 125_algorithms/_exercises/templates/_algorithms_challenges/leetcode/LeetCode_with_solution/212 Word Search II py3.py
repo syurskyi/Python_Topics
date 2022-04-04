@@ -18,7 +18,7 @@ Return ["eat","oath"].
 Note:
 You may assume that all inputs are consist of lowercase letters a-z.
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

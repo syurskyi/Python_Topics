@@ -8,7 +8,7 @@ _______ time
 # HOUR = ONE_MIN * 60
 # CURRENT_SESSION = 1
 ____ asyncio _______ sleep
-____ typing _______ Union
+____ t___ _______ Union
 
 ONE_MIN = .006
 FIVE_MIN = ONE_MIN * .0005

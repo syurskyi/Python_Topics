@@ -25,7 +25,7 @@ Output: False
 Note:
 The length of the input is in range of [1, 10000]
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 _______ heapq
 

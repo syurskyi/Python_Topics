@@ -31,7 +31,7 @@ Note:
 1 <= A.length <= 30000
 A[i] is 0 or 1
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

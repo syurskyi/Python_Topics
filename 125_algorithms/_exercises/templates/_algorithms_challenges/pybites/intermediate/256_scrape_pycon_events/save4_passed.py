@@ -1,6 +1,6 @@
 _______ json
 ____ c.. _______ n..
-____ typing _______ List
+____ t___ _______ List
 
 _______ r__
 ____ bs4 _______ BeautifulSoup __ Soup

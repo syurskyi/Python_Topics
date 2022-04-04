@@ -37,7 +37,7 @@ Note:
 board will be a 2 x 3 array as described above.
 board[i][j] will be a permutation of [0, 1, 2, 3, 4, 5].
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 ____ copy _______ d..
 _______ heapq

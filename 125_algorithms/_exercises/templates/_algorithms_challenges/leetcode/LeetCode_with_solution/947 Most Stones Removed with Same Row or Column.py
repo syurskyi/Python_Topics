@@ -27,7 +27,7 @@ Note:
 1 <= stones.length <= 1000
 0 <= stones[i][j] < 10000
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

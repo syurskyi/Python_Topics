@@ -36,7 +36,7 @@ M >= 1
 L + M <= A.length <= 1000
 0 <= A[i] <= 1000
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

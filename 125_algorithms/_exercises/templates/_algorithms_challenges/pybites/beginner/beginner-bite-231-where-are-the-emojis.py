@@ -17,7 +17,7 @@ Here is an example how it should work:
 """
 
 _______ __
-____ typing _______ List
+____ t___ _______ List
 
 # https://stackoverflow.com/a/43147265
 # just for exercise sake, real life use emoji lib

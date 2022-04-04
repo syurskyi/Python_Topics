@@ -44,7 +44,7 @@ Note:
 0 <= clips[i][0], clips[i][1] <= 100
 0 <= T <= 100
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

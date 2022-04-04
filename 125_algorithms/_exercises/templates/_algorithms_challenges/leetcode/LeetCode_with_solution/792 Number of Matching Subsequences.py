@@ -17,7 +17,7 @@ The length of S will be in the range of [1, 50000].
 The length of words will be in the range of [1, 5000].
 The length of words[i] will be in the range of [1, 50].
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

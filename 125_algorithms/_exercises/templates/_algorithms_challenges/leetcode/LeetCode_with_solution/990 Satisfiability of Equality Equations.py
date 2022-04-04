@@ -43,7 +43,7 @@ equations[i][0] and equations[i][3] are lowercase letters
 equations[i][1] is either '=' or '!'
 equations[i][2] is '='
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ DisjointSet:

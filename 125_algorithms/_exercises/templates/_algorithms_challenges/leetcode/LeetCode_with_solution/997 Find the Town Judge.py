@@ -44,7 +44,7 @@ trust[i] are all different
 trust[i][0] != trust[i][1]
 1 <= trust[i][0], trust[i][1] <= N
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

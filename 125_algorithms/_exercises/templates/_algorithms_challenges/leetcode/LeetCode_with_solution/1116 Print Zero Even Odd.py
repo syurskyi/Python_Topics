@@ -30,7 +30,7 @@ Example 2:
 Input: n = 5
 Output: "0102030405"
 """
-____ typing _______ Callable
+____ t___ _______ Callable
 ____ threading _______ Lock
 
 

@@ -18,7 +18,7 @@ c_ Node:
         children = children
 
 
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

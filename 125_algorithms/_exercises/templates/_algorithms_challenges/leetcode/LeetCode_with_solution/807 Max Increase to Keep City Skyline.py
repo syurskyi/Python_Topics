@@ -39,7 +39,7 @@ All heights grid[i][j] are in the range [0, 100].
 All buildings in grid[i][j] occupy the entire grid cell: that is, they are a
 1 x 1 x grid[i][j] rectangular prism.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

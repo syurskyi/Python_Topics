@@ -25,7 +25,7 @@ Note:
 0 <= A[i] < 10000
 A.length is even
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

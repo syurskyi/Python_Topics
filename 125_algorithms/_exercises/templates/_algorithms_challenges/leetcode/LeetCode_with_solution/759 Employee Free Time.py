@@ -35,7 +35,7 @@ Note:
 schedule and schedule[i] are lists with lengths in range [1, 50].
 0 <= schedule[i].start < schedule[i].end <= 10^8.
 """
-____ typing _______ List
+____ t___ _______ List
 _______ heapq
 
 

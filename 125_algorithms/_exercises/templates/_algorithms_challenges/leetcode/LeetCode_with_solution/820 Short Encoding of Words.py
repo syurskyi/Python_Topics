@@ -24,7 +24,7 @@ Note:
 1 <= words[i].length <= 7.
 Each word has only lowercase letters.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

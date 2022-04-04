@@ -54,7 +54,7 @@ Output:
   "do                  "
 ]
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

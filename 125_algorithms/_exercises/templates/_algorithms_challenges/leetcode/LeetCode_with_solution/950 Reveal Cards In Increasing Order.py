@@ -39,7 +39,7 @@ Note:
 1 <= A[i] <= 10^6
 A[i] != A[j] for all i != j
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

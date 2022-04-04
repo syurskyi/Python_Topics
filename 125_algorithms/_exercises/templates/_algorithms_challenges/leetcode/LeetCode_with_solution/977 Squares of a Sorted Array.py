@@ -19,7 +19,7 @@ Note:
 -10000 <= A[i] <= 10000
 A is sorted in non-decreasing order.
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

@@ -3,7 +3,7 @@ _______ json
 ____ d__ _______ date
 _______ d__ __ dt
 ____ pathlib _______ Path
-____ typing _______ Dict, List
+____ t___ _______ Dict, List
 ____ u__.r.. _______ u..
 ____ dateutil.parser _______ p..
 

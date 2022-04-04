@@ -13,7 +13,7 @@ Input: s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
 
 Output: ["AAAAACCCCC", "CCCCCAAAAA"]
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

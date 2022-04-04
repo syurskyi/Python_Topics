@@ -1,10 +1,10 @@
-_______ pprint
-____ typing _______ Any
-
-
-___ pretty_string(obj: Any) __ s..:
-    # TODO: your code
-    
-
-    pp = pprint.PrettyPrinter(width=60,depth=2,sort_dicts=T..)
-    r.. pp.pformat(obj)
+# _______ pp__
+# ____ t___ _______ A..
+#
+#
+# ___ pretty_string obj A.. __ s..
+#     # TODO: your code
+#
+#
+#     pp  pp__.P.. w.._60 d.._2 s.._T..
+#     r.. ?.p.. ?

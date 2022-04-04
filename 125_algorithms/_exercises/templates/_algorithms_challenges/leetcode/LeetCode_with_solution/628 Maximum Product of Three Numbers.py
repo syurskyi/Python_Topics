@@ -24,7 +24,7 @@ Multiplication of any three numbers in the input won't exceed the range of
 """
 _______ heapq
 
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

@@ -44,7 +44,7 @@ Note:
 2 <= K <= 30
 1 <= stones[i] <= 100
 """
-____ typing _______ List
+____ t___ _______ List
 ____ f.. _______ lru_cache
 
 

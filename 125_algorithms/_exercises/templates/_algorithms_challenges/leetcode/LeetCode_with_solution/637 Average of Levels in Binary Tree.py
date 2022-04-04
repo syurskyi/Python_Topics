@@ -16,7 +16,7 @@ is 11. Hence return [3, 14.5, 11].
 Note:
 The range of node's value is in the range of 32-bit signed integer.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 # Definition for a binary tree node.

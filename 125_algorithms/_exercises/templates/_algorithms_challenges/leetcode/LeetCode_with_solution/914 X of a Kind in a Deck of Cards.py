@@ -39,7 +39,7 @@ Note:
 1 <= deck.length <= 10000
 0 <= deck[i] < 10000
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ C..
 
 

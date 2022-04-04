@@ -29,7 +29,7 @@ A solution set is:
   [5]
 ]
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

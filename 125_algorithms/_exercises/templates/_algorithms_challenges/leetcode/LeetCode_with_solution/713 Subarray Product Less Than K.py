@@ -18,7 +18,7 @@ Note:
 0 < nums[i] < 1000.
 0 <= k < 10^6.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

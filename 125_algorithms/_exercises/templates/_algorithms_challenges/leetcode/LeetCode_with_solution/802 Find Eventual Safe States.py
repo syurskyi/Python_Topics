@@ -29,7 +29,7 @@ The number of edges in the graph will not exceed 32000.
 Each graph[i] will be a sorted list of different integers, chosen within the
 range [0, graph.length - 1].
 """
-____ typing _______ List, Set
+____ t___ _______ List, Set
 
 
 c_ Solution:

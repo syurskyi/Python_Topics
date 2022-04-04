@@ -16,7 +16,7 @@ Note:
 1 <= k <= n <= 30,000.
 Elements of the given array will be in the range [-10,000, 10,000].
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

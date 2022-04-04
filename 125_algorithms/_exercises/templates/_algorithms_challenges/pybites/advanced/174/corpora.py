@@ -2,7 +2,7 @@ _______ __
 ____ c.. _______ C..
 ____ dataclasses _______ dataclass, field
 ____ s__ _______ punctuation
-____ typing _______ List, Set, Tuple
+____ t___ _______ List, Set, Tuple
 
 STOPWORDS: s.. = {
     "she's", "wasn", "through", "won", "that'll", "his", "once", "this",

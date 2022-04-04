@@ -26,7 +26,7 @@ The input will only have lower-case letters.
 1 <= root length <= 100
 1 <= sentence words length <= 1000
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

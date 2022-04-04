@@ -27,7 +27,7 @@ Note:
 0 <= A[i] <= 10^6
 It is guaranteed there is at least one way to partition A as described.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

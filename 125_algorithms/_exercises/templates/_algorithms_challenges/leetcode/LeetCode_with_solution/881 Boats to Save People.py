@@ -29,7 +29,7 @@ Note:
 1 <= people.length <= 50000
 1 <= people[i] <= limit <= 30000
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

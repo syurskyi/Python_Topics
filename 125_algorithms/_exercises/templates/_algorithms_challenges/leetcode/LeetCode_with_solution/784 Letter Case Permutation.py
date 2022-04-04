@@ -18,7 +18,7 @@ Note:
 S will be a string with length between 1 and 12.
 S will consist only of letters or digits.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

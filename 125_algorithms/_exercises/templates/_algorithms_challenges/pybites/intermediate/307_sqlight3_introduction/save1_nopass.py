@@ -1,6 +1,6 @@
 _______ sqlite3
 ____ e.. _______ E..
-____ typing _______ Any, Dict, List, Optional, Tuple, Union
+____ t___ _______ A.., Dict, List, Optional, Tuple, Union
 
 
 c_ SQLiteType(E..
@@ -99,7 +99,7 @@ c_ DB:
         r.. cur.execute(f"CREATE TABLE {table} ({schema_new})")
 
 
-    ___ delete  table: s.., target: Tuple[s.., Any]
+    ___ delete  table: s.., target: Tuple[s.., A..]
         """Deletes rows from the table.
 
         Args:
@@ -148,7 +148,7 @@ c_ DB:
             self,
             table: s..,
             columns: Optional[List[s..]] = N..,
-            target: Optional[Tuple[s.., Optional[s..], Any]] = N..,
+            target: Optional[Tuple[s.., Optional[s..], A..]] = N..,
     ) __ List[Tuple]:
         """Selects records from the database.
 
@@ -169,7 +169,7 @@ c_ DB:
         """
         r.. NotImplementedError("You have to implement this method first.")
 
-    ___ update  table: s.., new_value: Tuple[s.., Any], target: Tuple[s.., Any]
+    ___ update  table: s.., new_value: Tuple[s.., A..], target: Tuple[s.., A..]
         """Update a record in the database.
 
         Args:

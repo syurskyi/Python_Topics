@@ -30,7 +30,7 @@ You may assume all numbers in the input are non-negative integers.
 The length of Profits array and Capital array will not exceed 50,000.
 The answer is guaranteed to fit in a 32-bit signed integer.
 """
-____ typing _______ List
+____ t___ _______ List
 _______ heapq
 
 

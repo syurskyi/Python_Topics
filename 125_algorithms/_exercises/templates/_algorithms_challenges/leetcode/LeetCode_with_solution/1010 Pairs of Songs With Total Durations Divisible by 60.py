@@ -24,7 +24,7 @@ Note:
 1 <= time.length <= 60000
 1 <= time[i] <= 500
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

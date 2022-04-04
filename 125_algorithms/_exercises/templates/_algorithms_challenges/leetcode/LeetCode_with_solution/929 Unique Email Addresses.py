@@ -39,7 +39,7 @@ Each emails[i] contains exactly one '@' character.
 All local and domain names are non-empty.
 Local names do not start with a '+' character.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

@@ -27,7 +27,7 @@ Note:
 0 <= K <= A.length
 A[i] is 0 or 1
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

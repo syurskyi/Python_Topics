@@ -1,5 +1,5 @@
 ____ d__ _______ date
-____ typing _______ Dict, Sequence, NamedTuple
+____ t___ _______ Dict, Sequence, NamedTuple
 ____ c.. _______ d..
 
 c_ MovieRented(NamedTuple

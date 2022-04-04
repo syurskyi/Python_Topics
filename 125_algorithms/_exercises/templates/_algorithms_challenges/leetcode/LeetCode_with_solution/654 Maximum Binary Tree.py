@@ -35,7 +35,7 @@ c_ TreeNode:
         right = N..
 
 
-____ typing _______ List
+____ t___ _______ List
 _______ heapq
 
 

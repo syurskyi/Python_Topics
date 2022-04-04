@@ -20,7 +20,7 @@ Note: Calling the function with an empty list should return None.
 
 ### ----------------------------- My solution -----------------------------------
 
-____ typing _______ List, Union
+____ t___ _______ List, Union
 ____ f.. _______ reduce
 
 ___ my_join_lists(lst_of_lst: List[List[s..]], sep: s..) __ Union[List[s..], N..]:

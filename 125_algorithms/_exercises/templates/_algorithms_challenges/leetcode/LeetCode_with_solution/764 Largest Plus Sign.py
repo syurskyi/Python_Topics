@@ -65,7 +65,7 @@ mines[i] will be length 2 and consist of integers in the range [0, N-1].
 (Additionally, programs submitted in C, C++, or C# will be judged with a
 slightly smaller time limit.)
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

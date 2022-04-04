@@ -15,7 +15,7 @@ Examples:
 Note: An empty input list [] should return 0.
 """
 
-____ typing _______ List
+____ t___ _______ List
 
 # Mialem jeszcze innego pomysla, zeby uzyc joina:
 # s = ('').join(lista)

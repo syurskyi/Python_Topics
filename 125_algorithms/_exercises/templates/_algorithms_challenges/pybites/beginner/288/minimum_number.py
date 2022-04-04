@@ -1,4 +1,4 @@
-____ typing _______ List
+____ t___ _______ List
 
 
 ___ minimum_number(d..: List[i..]) __ i..:

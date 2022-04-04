@@ -40,7 +40,7 @@ Sample output from running the code in the if/main clause:
               Total =     4,658.50
 """
 ____ dataclasses _______ dataclass, field
-____ typing _______ List, NamedTuple
+____ t___ _______ List, NamedTuple
 
 Bracket = NamedTuple("Bracket", [("end", i..), ("rate", f__)])
 Taxed = NamedTuple("Taxed", [("amount", f__), ("rate", f__), ("tax", f__)])

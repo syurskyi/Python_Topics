@@ -1,7 +1,7 @@
 ____ c.. _______ n..
 ____ d__ _______ d__
 ____ operator _______ itemgetter
-____ typing _______ List
+____ t___ _______ List
 
 Sign = n..('Sign', 'name compatibility famous_people sun_dates')
 

@@ -1,6 +1,6 @@
 ____ m__ _______ f..
 ____ s__ _______ ascii_lowercase, a.., d..
-____ typing _______ Dict
+____ t___ _______ Dict
 
 CODEX: s.. = d.. + ascii_lowercase + a..
 BASE: i.. = l..(CODEX)

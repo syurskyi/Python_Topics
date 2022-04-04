@@ -27,7 +27,7 @@ Note:
 0 <= hand[i] <= 10^9
 1 <= W <= hand.length
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ C.., d..
 _______ heapq
 

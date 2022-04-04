@@ -22,7 +22,7 @@ Note:
 nums.length will be between 1 and 50,000.
 nums[i] will be an integer between 0 and 49,999.
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

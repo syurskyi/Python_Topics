@@ -2,7 +2,7 @@ ____ d__ _______ date
 _______ __
 ____ pathlib _______ Path
 _______ pickle
-____ typing _______ Sequence, NamedTuple
+____ t___ _______ Sequence, NamedTuple
 ____ u__.r.. _______ u..
 _______ time
 

@@ -17,7 +17,7 @@ Note:
 S will have length in range [1, 500].
 S will consist of lowercase letters ('a' to 'z') only.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

@@ -1,6 +1,6 @@
 _______ base64
 _______ csv
-____ typing _______ List  # will remove with 3.9
+____ t___ _______ List  # will remove with 3.9
 
 
 ___ get_credit_cards(data: bytes) __ List[s..]:

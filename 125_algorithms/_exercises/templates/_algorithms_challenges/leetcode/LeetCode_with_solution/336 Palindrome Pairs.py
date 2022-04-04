@@ -15,7 +15,7 @@ Input: ["bat","tab","cat"]
 Output: [[0,1],[1,0]]
 Explanation: The palindromes are ["battab","tabbat"]
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

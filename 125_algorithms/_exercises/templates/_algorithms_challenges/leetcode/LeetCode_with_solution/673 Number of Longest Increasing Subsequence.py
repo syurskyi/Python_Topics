@@ -16,7 +16,7 @@ there are 5 subsequences' length is 1, so output 5.
 Note: Length of the given array will be not exceed 2000 and the answer is
 guaranteed to be fit in 32-bit signed int.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ LenCnt:

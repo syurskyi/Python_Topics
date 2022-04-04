@@ -1,4 +1,4 @@
-____ typing _______ List
+____ t___ _______ List
 
 ___ to_lower(in_list
         r.. [word.l.. ___ word __ in_list]

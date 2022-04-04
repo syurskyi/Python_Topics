@@ -26,7 +26,7 @@ Note:
 1 <= K <= A.length.
 Answers within 10^-6 of the correct answer will be accepted as correct.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

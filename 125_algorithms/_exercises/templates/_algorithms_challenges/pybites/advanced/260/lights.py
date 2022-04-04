@@ -1,4 +1,4 @@
-____ typing _______ List
+____ t___ _______ List
 
 _______ numpy __ np
 _______ pandas __ pd

@@ -46,7 +46,7 @@ Note:
 1 <= A.length <= 100
 1 <= A[i].length <= 100
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

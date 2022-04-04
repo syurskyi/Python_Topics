@@ -46,7 +46,7 @@ target will not be in the list deadends.
 Every string in deadends and the string target will be a string of 4 digits from
 the 10,000 possibilities '0000' to '9999'.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

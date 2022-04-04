@@ -17,7 +17,7 @@ Note:
 1 <= preorder.length <= 100
 The values of preorder are distinct.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 # Definition for a binary tree node.

@@ -19,7 +19,7 @@ The input array won't violate no-adjacent-flowers rule.
 The input array size is in the range of [1, 20000].
 n is a non-negative integer which won't exceed the input array size.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

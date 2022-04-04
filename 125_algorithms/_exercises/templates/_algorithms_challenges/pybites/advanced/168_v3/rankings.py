@@ -1,6 +1,6 @@
 ____ dataclasses _______ dataclass
 ____ f.. _______ total_ordering
-____ typing _______ List
+____ t___ _______ List
 
 bites: List[i..] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
 names: List[s..] = [

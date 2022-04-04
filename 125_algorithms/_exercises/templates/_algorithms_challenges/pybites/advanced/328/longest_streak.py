@@ -4,7 +4,7 @@ ____ d__ _______ date, t.., tzinfo
 ____ dateutil.parser _______ p..
 ____ pathlib _______ Path
 _______ r__
-____ typing _______ Tuple, Optional, List
+____ t___ _______ Tuple, Optional, List
 _______ __
 
 DATA_FILE_NAME = "test1.json"

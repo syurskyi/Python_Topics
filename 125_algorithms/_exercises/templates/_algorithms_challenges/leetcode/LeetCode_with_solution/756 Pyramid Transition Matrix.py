@@ -45,7 +45,7 @@ Letters in all strings will be chosen from the set {'A', 'B', 'C', 'D', 'E',
 'F', 'G'}.
 """
 _______ i..
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ d..
 
 

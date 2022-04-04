@@ -31,7 +31,7 @@ Note:
 -10000 <= queries[i][0] <= 10000
 0 <= queries[i][1] < A.length
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

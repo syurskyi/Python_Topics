@@ -1,5 +1,5 @@
 _______ __
-____ pprint _______ pprint
+____ pp__ _______ pp__
 
 COURSE = ('Introduction 1 Lecture 01:47'
           'The Basics 4 Lectures 32:03'
@@ -45,6 +45,6 @@ ___ match_first_paragraph(html=HTML
     r.. result.group(1) __ result ____ ''
 
 __ _______ __ _______
-    pprint(extract_course_times
-    pprint(get_all_hashtags_and_links
-    pprint(match_first_paragraph
+    pp__(extract_course_times
+    pp__(get_all_hashtags_and_links
+    pp__(match_first_paragraph

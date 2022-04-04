@@ -1,8 +1,8 @@
 _______ f..
-____ typing _______ Iterable, Set, Any
+____ t___ _______ Iterable, Set, A..
 
 
-___ intersection(*args: Iterable) __ Set[Any]:
+___ intersection(*args: Iterable) __ Set[A..]:
 
     
     result = [s..(arg) ___ arg __ args __ arg]

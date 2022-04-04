@@ -1,4 +1,4 @@
-____ typing _______ List
+____ t___ _______ List
 
 ___ find_max_list(lol
     len_lol = [l..(i) ___ i __ lol]

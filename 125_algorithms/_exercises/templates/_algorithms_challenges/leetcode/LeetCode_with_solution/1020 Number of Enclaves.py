@@ -27,7 +27,7 @@ Note:
 0 <= A[i][j] <= 1
 All rows have the same size.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 dirs = ((0, -1), (0, 1), (1, 0), (-1, 0))

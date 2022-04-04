@@ -38,7 +38,7 @@ Note:
 1 <= pattern.length <= 100
 All strings consists only of lower and upper case English letters.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

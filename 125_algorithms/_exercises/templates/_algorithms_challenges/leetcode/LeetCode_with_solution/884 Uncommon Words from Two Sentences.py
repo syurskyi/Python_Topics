@@ -28,7 +28,7 @@ Note:
 0 <= B.length <= 200
 A and B both contain only spaces and lowercase letters.
 """
-____ typing _______ List
+____ t___ _______ List
 ____ c.. _______ C..
 
 

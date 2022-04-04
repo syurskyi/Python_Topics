@@ -16,7 +16,7 @@ Explanation: The longest chain is [1,2] -> [3,4]
 Note:
 The number of given pairs will be in the range [1, 1000].
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

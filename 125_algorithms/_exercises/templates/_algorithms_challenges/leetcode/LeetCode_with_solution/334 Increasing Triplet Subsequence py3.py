@@ -18,7 +18,7 @@ Example 2:
 Input: [5,4,3,2,1]
 Output: false
 """
-____ typing _______ List
+____ t___ _______ List
 ____ bisect _______ bisect_left
 
 

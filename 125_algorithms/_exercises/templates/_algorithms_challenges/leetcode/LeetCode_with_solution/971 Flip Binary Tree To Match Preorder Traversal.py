@@ -38,7 +38,7 @@ Note:
 
 1 <= N <= 100
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 # Definition for a binary tree node.

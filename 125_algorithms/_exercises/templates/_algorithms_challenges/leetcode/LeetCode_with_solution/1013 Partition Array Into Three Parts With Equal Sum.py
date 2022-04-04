@@ -27,7 +27,7 @@ Note:
 3 <= A.length <= 50000
 -10000 <= A[i] <= 10000
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

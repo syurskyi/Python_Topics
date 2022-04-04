@@ -1,4 +1,4 @@
-____ typing _______ List
+____ t___ _______ List
 
 
 ___ pascal(N: i..) __ List[i..]:

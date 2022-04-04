@@ -23,7 +23,7 @@ Note:
 A.length % 2 == 0
 0 <= A[i] <= 1000
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

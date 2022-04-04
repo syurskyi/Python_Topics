@@ -30,7 +30,7 @@ Note:
 1 <= words.length <= 50
 1 <= pattern.length = words[i].length <= 20
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

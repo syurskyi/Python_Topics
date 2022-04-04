@@ -1,7 +1,7 @@
 _______ __
 ____ dataclasses _______ dataclass, field
 ____ pathlib _______ Path
-____ typing _______ List
+____ t___ _______ List
 ____ u__.r.. _______ u..
 
 ____ bs4 _______ BeautifulSoup __ Soup

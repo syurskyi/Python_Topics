@@ -41,7 +41,7 @@ Note:
 The length of asteroids will be at most 10000.
 Each asteroid will be a non-zero integer in the range [-1000, 1000]..
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

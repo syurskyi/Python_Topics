@@ -36,7 +36,7 @@ Note:
 order.length == 26
 All characters in words[i] and order are english lowercase letters.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

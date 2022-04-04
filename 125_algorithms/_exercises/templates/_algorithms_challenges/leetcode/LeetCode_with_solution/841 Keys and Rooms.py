@@ -33,7 +33,7 @@ Note:
 0 <= rooms[i].length <= 1000
 The number of keys in all rooms combined is at most 3000.
 """
-____ typing _______ List
+____ t___ _______ List
 
 
 c_ Solution:

@@ -34,7 +34,7 @@ Each string of prices prices[i] represents a real number which is between 0 and
 1000 and has exactly 3 decimal places.
 target is between 0 and 1000000.
 """
-____ typing _______ List
+____ t___ _______ List
 _______ m__
 
 
