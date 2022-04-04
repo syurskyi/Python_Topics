@@ -24,7 +24,7 @@ Note:
 0 <= routes[i][j] < 10 ^ 6.
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -40,7 +40,7 @@ c_ Solution:
             r.. 0
 
         routes = [s..(e) ___ e __ routes]
-        G = defaultdict(s..)
+        G = d..(s..)
         ___ i __ r..(l..(routes)):
             ___ j __ r..(i + 1, l..(routes)):
                 stops_1, stops_2 = routes[i], routes[j]  # bus represented by stops
@@ -52,7 +52,7 @@ c_ Solution:
 
         q = [i ___ i, stops __ e..(routes) __ S __ stops]
         target_set = s..([i ___ i, stops __ e..(routes) __ T __ stops])
-        visited = defaultdict(b..)
+        visited = d..(b..)
         ___ i __ q:
             visited[i] = T..
         step = 1
@@ -78,7 +78,7 @@ c_ Solution:
 
         Connect stops within in bus use one edge in G
         """
-        G = defaultdict(s..)
+        G = d..(s..)
         ___ stops __ routes:
             ___ i __ r..(l..(stops)):
                 ___ j __ r..(i + 1, l..(stops)):
@@ -88,7 +88,7 @@ c_ Solution:
 
         q = [S]
         step = 0
-        visited = defaultdict(b..)
+        visited = d..(b..)
         visited[S] = T..  # avoid add duplicate
         w.... q:
             cur_q    # list

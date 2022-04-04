@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict, C..
+____ c.. _______ d.., C..
 ____ csv _______ DictReader
 _______ __
 ____ u__.r.. _______ u..
@@ -44,7 +44,7 @@ c_ BiteStats:
     ___ number_users_solving_bites(self) __ i..:
         """Get the number of unique users that resolved
            one or more Bites"""
-        bite_resolved_counter = defaultdict(i..)
+        bite_resolved_counter = d..(i..)
         ___ row __ rows:
             __ row["completed"] __ "True":
                 bite_resolved_counter[row["user"]] += 1
@@ -54,7 +54,7 @@ c_ BiteStats:
     ___ top_bite_by_number_of_clicks(self) __ s..:
         """Get the Bite that got accessed the most
            (= in most rows)"""
-        popular_bite = defaultdict(i..)
+        popular_bite = d..(i..)
         ___ row __ rows:
             popular_bite[row["bite"]] += 1
         r.. m..(popular_bite, key=popular_bite.get)

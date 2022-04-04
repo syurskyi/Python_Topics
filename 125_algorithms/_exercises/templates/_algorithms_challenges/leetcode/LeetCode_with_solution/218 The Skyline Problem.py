@@ -31,7 +31,7 @@ There must be no consecutive horizontal lines of equal height in the output skyl
 as such: [...[2 3], [4 5], [12 7], ...]
 """
 __author__ = 'Daniel'
-____ c.. _______ defaultdict, n..
+____ c.. _______ d.., n..
 _______ heapq
 
 
@@ -61,7 +61,7 @@ c_ Solution:
         :rtype: list[list[int]]
         """
         # Map from x-coordinate to event.
-        events = defaultdict(l....: Event(starts=[], ends=[]))
+        events = d..(l....: Event(starts=[], ends=[]))
         ___ left, right, height __ buildings:
             building = Building(height)
             events[left].starts.a..(building)  # possible multiple building at the same x-coordinate.

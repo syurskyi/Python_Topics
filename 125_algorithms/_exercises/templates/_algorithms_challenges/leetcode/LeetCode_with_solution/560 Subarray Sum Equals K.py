@@ -12,7 +12,7 @@ The range of numbers in the array is [-1000, 1000] and the range of the integer
 k is [-1e7, 1e7].
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -20,7 +20,7 @@ c_ Solution:
         """
         prefix sum
         """
-        h = defaultdict(i..)
+        h = d..(i..)
         ret = 0
         s = 0
         h[s] += 1

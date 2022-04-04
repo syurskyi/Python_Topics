@@ -1,12 +1,12 @@
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 ___ sum_indices(items: List[s..]) __ i..:
 
 
 
-    indexes = defaultdict(i..)
+    indexes = d..(i..)
 
     total = 0
     ___ i,value __ e..(items

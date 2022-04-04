@@ -39,13 +39,13 @@ Output: ""
 Explanation: The order is invalid, so return "".
 """
 ____ typing _______ List
-____ c.. _______ defaultdict, d..
+____ c.. _______ d.., d..
 
 
 c_ Solution(o..
     ___ alienOrder  words: List[s..]) __ s..:
         G = construct_graph(words)
-        visited = defaultdict(i..)  # 0 not visited, 1 visiting, 2 visted
+        visited = d..(i..)  # 0 not visited, 1 visiting, 2 visted
         ret = d..()
         ___ u __ G.k..:
             __ visited[u] __ 0:
@@ -55,7 +55,7 @@ c_ Solution(o..
         r.. "".j..(ret)
 
     ___ construct_graph  words
-        G = defaultdict(l..)
+        G = d..(l..)
         # need to initialize, consider test case ["z", "z"]
         ___ w __ words:  # error
             ___ c __ w:

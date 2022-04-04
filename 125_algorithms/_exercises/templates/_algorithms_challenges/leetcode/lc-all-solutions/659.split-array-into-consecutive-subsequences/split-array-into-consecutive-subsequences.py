@@ -4,7 +4,7 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: bool
     """
-    d = c...defaultdict(l..)
+    d = c...d..(l..)
     ___ num __ nums:
       __ d[num - 1]:
         heapq.heappush(d[num], heapq.heappop(d[num - 1]) + 1)

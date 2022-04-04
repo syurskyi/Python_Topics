@@ -18,7 +18,7 @@ values = [2.0, 3.0],
 queries = [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ].
 
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 ____ i.. _______ izip
 
 __author__ = 'Daniel'
@@ -33,7 +33,7 @@ c_ Solution(o..
         :type queries: List[List[str]]
         :rtype: List[float]
         """
-        G = defaultdict(d..)
+        G = d..(d..)
         ___ edge, val __ izip(equations, values
             s, e = edge
             G[s][e], G[e][s] = val, 1/val
@@ -67,7 +67,7 @@ c_ Solution(o..
         :type queries: List[List[str]]
         :rtype: List[float]
         """
-        G = defaultdict(d..)
+        G = d..(d..)
         ___ edge, val __ izip(equations, values
             s, e = edge
             G[s][e], G[e][s] = val, 1/val

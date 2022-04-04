@@ -2,12 +2,12 @@
 #  Score: 25
 
 
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 ___ count_triplets(arr, r
-    arr2 = defaultdict(i..)
-    arr3 = defaultdict(i..)
+    arr2 = d..(i..)
+    arr3 = d..(i..)
     count = 0
     ___ i __ arr:
         count += arr3[i]

@@ -19,8 +19,8 @@ c_ Solution:
 
             r.. ans
 
-        nexts = c...defaultdict(s..)
-        evals = c...defaultdict(f__)
+        nexts = c...d..(s..)
+        evals = c...d..(f__)
 
         ___ i __ r..(l..(equations)):
             a, b = equations[i]

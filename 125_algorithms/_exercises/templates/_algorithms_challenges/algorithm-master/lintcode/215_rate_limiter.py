@@ -20,7 +20,7 @@ c_ Solution:
             'h': 3600,
             'd': 86400,
         }
-        logs = c...defaultdict(l..)
+        logs = c...d..(l..)
 
     ___ isRatelimited  timestamp, event, rate, increment
         """

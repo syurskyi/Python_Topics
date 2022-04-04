@@ -63,7 +63,7 @@ c_ Solution:
         __ n.. edges:
             r.. []
 
-        nodes = c...defaultdict(s..)
+        nodes = c...d..(s..)
 
         ___ u, v __ edges:
             # dfs to check u and v are connected already => cycle

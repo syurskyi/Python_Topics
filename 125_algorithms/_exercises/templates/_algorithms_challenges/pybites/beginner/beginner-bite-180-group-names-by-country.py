@@ -31,7 +31,7 @@ defaultdict(,
              'TD': ['Rudolph Jeffry']})
 """
 
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 # fake data from https://www.mockaroo.com
 data = """last_name,first_name,country_code
@@ -47,8 +47,8 @@ Braunle,Kermit,PL
 Halbard,Davie,CN"""
 
 
-___ group_names_by_country(data: s.. = data) __ defaultdict:
-    countries = defaultdict(l..)
+___ group_names_by_country(data: s.. = data) __ d..:
+    countries = d..(l..)
     # you code
     split_lines = data.s..
     line_cnt = 0

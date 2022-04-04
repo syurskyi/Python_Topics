@@ -35,13 +35,13 @@ c_ TreeNode:
 
 
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ MerkleHash:
     ___ -
         start_key = 0
-        merkle_hash = defaultdict(_auto_incr)  # subtree -> id
+        merkle_hash = d..(_auto_incr)  # subtree -> id
 
     ___ _auto_incr
         start_key += 1
@@ -53,7 +53,7 @@ c_ MerkleHash:
 
 c_ Solution:
     ___ -
-        counter = defaultdict(i..)
+        counter = d..(i..)
         merkle_hash = MerkleHash()
 
     ___ findDuplicateSubtrees  root: TreeNode) __ List[TreeNode]:
@@ -88,7 +88,7 @@ c_ Solution2:
         Only need to return the root
         """
         ret    # list
-        w..(root, defaultdict(i..), ret)
+        w..(root, d..(i..), ret)
         r.. ret
 
     ___ w..  cur, counter, ret) __ s..:

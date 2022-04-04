@@ -27,7 +27,7 @@ Another possible answer is: "abcabcda"
 The same letters are at least distance 2 from each other.
 
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 _______ heapq
 
 __author__ = 'Daniel'
@@ -56,7 +56,7 @@ c_ Solution(o..
         """
         __ n.. s o. k __ 0: r.. s
 
-        d = defaultdict(i..)
+        d = d..(i..)
         ___ c __ s:
             d[c] += 1
 

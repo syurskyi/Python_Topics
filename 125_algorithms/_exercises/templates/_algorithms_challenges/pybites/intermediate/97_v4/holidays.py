@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 _______ __
 ____ u__.r.. _______ u..
 ____ d__ _______ d__
@@ -17,7 +17,7 @@ u..(
 w__ o.. holidays_page) __ f:
     content = f.r..
 
-holidays = defaultdict(l..)
+holidays = d..(l..)
 
 
 ___ _parse_date(date: s..

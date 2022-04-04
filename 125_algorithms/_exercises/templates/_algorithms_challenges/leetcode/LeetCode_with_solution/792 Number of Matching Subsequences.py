@@ -18,7 +18,7 @@ The length of words will be in the range of [1, 5000].
 The length of words[i] will be in the range of [1, 50].
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -29,7 +29,7 @@ c_ Solution:
 
         HashMap + Iterator
         """
-        itrs_m = defaultdict(l..)
+        itrs_m = d..(l..)
         ___ w __ words:
             itrs_m[w[0]].a..(
                 i..(w[1:])

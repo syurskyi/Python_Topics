@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -16,7 +16,7 @@ c_ Solution(o..
         :type guess: str
         :rtype: str
         """
-        cnt = defaultdict(i..)
+        cnt = d..(i..)
         A = 0
         B = 0
         ___ c __ secret:

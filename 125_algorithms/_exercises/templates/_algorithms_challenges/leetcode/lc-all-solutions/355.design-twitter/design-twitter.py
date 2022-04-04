@@ -8,8 +8,8 @@ c_ Twitter(o..
     Initialize your data structure here.
     """
     ts = 0
-    tweets = c...defaultdict(l..)
-    friendship = c...defaultdict(s..)
+    tweets = c...d..(l..)
+    friendship = c...d..(s..)
 
   ___ postTweet  userId, tweetId
     """

@@ -11,7 +11,7 @@ canConstruct("a", "b") -> false
 canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -23,7 +23,7 @@ c_ Solution(o..
         :type magazine: str
         :rtype: bool
         """
-        d = defaultdict(i..)
+        d = d..(i..)
 
         ___ e __ magazine:
             d[e] += 1

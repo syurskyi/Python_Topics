@@ -29,7 +29,7 @@ collection.remove(1);
 // getRandom should return 1 and 2 both equally likely.
 collection.getRandom();
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 _______ r__
 
 __author__ = 'Daniel'
@@ -42,7 +42,7 @@ c_ RandomizedCollection(o..
         Initialize your data structure here.
         """
         lst    # list
-        pos = defaultdict(s..)
+        pos = d..(s..)
 
     ___ insert  val
         """

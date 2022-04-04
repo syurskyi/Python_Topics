@@ -12,7 +12,7 @@ Note:
 The length of given words won't exceed 500.
 Characters in given words can only be lower-case letters.
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -26,7 +26,7 @@ c_ Solution:
         F[i][j] = F[i-1][j-1] + 1 if word1[i-1] == word2[j-1]
         F[i][j] = max(F[i-1][j], F[i][j-1])
         """
-        F = defaultdict(l....: defaultdict(i..))
+        F = d..(l....: d..(i..))
         m = l..(word1)
         n = l..(word2)
 
@@ -51,7 +51,7 @@ c_ Solution:
         F[i][j] = F[i-1][j-1] if word1[i-1] == word2[j-1]
         F[i][j] = min(F[i-1][j] + 1, F[i][j-1] + 1)
         """
-        F = defaultdict(l....: defaultdict(i..))
+        F = d..(l....: d..(i..))
         m = l..(word1)
         n = l..(word2)
 

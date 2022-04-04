@@ -30,7 +30,7 @@ Note:
 0 <= A[i] <= 10000
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -40,7 +40,7 @@ c_ Solution:
 
         Let F[i][j] be the longest arith subseq ending at A[i] with step j
         """
-        F = defaultdict(l....: defaultdict(l....: 1))
+        F = d..(l....: d..(l....: 1))
         ___ i __ r..(l..(A)):
             ___ j __ r..(i
                 delta = A[i] - A[j]

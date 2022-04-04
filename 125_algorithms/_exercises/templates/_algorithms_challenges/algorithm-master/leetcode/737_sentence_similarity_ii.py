@@ -83,7 +83,7 @@ c_ Solution2:
         __ l..(words1) ! l..(words2
             r.. F..
 
-        simils  c...defaultdict(s..)
+        simils  c...d..(s..)
 
         ___ a, b __ pairs:
             simils[a].add(b)

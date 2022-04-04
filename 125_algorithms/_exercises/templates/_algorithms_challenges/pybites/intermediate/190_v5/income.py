@@ -1,5 +1,5 @@
 ____ pathlib _______ Path
-____ c.. _______ defaultdict
+____ c.. _______ d..
 ____ u__.r.. _______ u..
 _______ ___.e__.E__ __ ET
 
@@ -24,7 +24,7 @@ ___ get_income_distribution(___=countries
     namespaces = {'wb': 'http://www.worldbank.org'}
 
     xpath = f".//wb:country"
-    country_list = defaultdict(l..)
+    country_list = d..(l..)
     ___ x __ root.f..(xpath, namespaces
         country_list[x.find('wb:incomeLevel', namespaces).text].a..(x.find('wb:name', namespaces).text)
 

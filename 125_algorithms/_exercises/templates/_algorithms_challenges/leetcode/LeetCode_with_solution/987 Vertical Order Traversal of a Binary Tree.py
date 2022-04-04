@@ -49,12 +49,12 @@ c_ TreeNode:
         right = N..
 
 
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
     ___ -
-        mp = defaultdict(l..)  # element (-Y, val)  # from left to right, top to bottom
+        mp = d..(l..)  # element (-Y, val)  # from left to right, top to bottom
 
     ___ verticalTraversal  root: TreeNode) __ List[List[i..]]:
         dfs(root, 0, 0)

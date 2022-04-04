@@ -1,9 +1,9 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ School:
     ___ -
-        db = defaultdict(l..)
+        db = d..(l..)
 
     ___ add_student  name, grade
         db[grade].a..(name)

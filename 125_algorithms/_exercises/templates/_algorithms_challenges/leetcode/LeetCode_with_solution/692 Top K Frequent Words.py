@@ -23,7 +23,7 @@ Follow up:
 Try to solve it in O(n log k) time and O(n) extra space.
 """
 _______ heapq
-____ c.. _______ defaultdict
+____ c.. _______ d..
 ____ typing _______ List
 
 
@@ -46,7 +46,7 @@ c_ Solution:
         heap log k
         """
         h    # list
-        counter = defaultdict(i..)
+        counter = d..(i..)
         ___ w __ words:
             counter[w] += 1
 

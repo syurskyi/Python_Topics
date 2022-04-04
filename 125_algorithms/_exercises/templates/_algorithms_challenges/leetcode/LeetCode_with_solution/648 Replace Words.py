@@ -27,14 +27,14 @@ The input will only have lower-case letters.
 1 <= sentence words length <= 1000
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Node:
     ___ - , chr
         chr = chr
         ended = F..
-        children = defaultdict(l....: N..)
+        children = d..(l....: N..)
 
 
 c_ Trie:

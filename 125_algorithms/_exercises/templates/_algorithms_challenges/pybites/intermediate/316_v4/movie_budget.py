@@ -1,6 +1,6 @@
 ____ d__ _______ date
 ____ typing _______ Dict, Sequence, NamedTuple
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 c_ MovieRented(NamedTuple
     title: s..
@@ -17,7 +17,7 @@ ___ collect_totals(renting_history: RentingHistory) __ Dict[s.., i..]:
     '''Creates a dictionary containing totals per month, with keys
     YYYY-MM and values (int) of the total cost for that month and year.
     '''
-    totals = defaultdict(l....: 0)
+    totals = d..(l....: 0)
     ___ movie __ renting_history:
         totals[movie.date.s..('%Y-%m')] += movie.price
     r.. totals

@@ -13,7 +13,7 @@ c_ Solution:
         __ n.. s o. n.. k:
             r.. ans
 
-        freq = c...defaultdict(i..)
+        freq = c...d..(i..)
         n = l..(s)
         left = right = cnt = 0
 

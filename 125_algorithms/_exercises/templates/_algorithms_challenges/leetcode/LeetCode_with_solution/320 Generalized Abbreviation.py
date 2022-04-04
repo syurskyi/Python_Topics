@@ -2,7 +2,7 @@
 Premium Question
 Backtracking
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -29,7 +29,7 @@ c_ Solution(o..
 
 c_ SolutionTLE(o..
     ___ -
-        cache = defaultdict(l..)
+        cache = d..(l..)
 
     ___ generateAbbreviations  word
         """

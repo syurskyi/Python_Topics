@@ -24,7 +24,7 @@ c_ Solution(o..
       r.. minDist
 
     cache    # dict
-    d = c...defaultdict(l..)
+    d = c...d..(l..)
     ___ i, c __ e..(ring
       d[c].a..(i)
     length = l..(ring)

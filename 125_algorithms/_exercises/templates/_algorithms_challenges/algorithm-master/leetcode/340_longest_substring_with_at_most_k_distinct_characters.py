@@ -19,7 +19,7 @@ c_ Solution:
         __ n.. s o. n.. k o. k < 0:
             r.. ans
 
-        freqs = c...defaultdict(i..)
+        freqs = c...d..(i..)
         i = cnt = 0
 
         ___ j __ r..(l..(s)):

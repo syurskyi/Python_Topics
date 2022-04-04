@@ -2,11 +2,11 @@
 # Score: 20
 
 
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 n, m  map(i.., input().s..
-d  defaultdict(l..)
+d  d..(l..)
 ___ i __ r..(1, n + 1
     d[input()].a..(s..(i))
 ___ i __ r..(m

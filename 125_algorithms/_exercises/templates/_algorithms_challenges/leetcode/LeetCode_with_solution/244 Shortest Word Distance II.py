@@ -2,7 +2,7 @@
 Premium Question
 """
 ____ bisect _______ bisect_left
-____ c.. _______ defaultdict
+____ c.. _______ d..
 _______ ___
 
 __author__ = 'Daniel'
@@ -15,7 +15,7 @@ c_ WordDistance(o..
 
         :type words: list[str]
         """
-        word_dict = defaultdict(l..)
+        word_dict = d..(l..)
         ___ i, w __ e..(words
             word_dict[w].a..(i)
 

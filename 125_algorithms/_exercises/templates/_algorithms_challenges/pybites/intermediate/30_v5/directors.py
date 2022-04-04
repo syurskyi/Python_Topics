@@ -1,6 +1,6 @@
 _______ csv
 _______ __
-____ c.. _______ defaultdict, n..
+____ c.. _______ d.., n..
 ____ u__.r.. _______ u..
 
 BASE_URL = 'http://projects.bobbelderbos.com/pcc/movies/'
@@ -27,7 +27,7 @@ ___ get_movies_by_director
         films = [{'director': r 'director_name' , 'title': r 'movie_title' , 'year': r 'title_year' ,
                   'score': r 'imdb_score' }
                  ___ r __ reader]
-    result = defaultdict()
+    result = d..()
     ___ r __ films:
         yr = i..(r 'year' , 10) __ r 'year'  ____ 0
         __ yr >= MIN_YEAR:
@@ -46,7 +46,7 @@ ___ calc_mean_score(movies: l..
     r.. r..(s..(x.score ___ x __ movies) / l..(movies), 1)
 
 
-___ get_average_scores(directors: defaultdict
+___ get_average_scores(directors: d..
     """Iterate through the directors dict (returned by get_movies_by_director),
        return a list of tuples (director, average_score) ordered by highest
        score in descending order. Only take directors into account

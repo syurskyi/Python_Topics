@@ -8,7 +8,7 @@ c_ Solution(o..
     :rtype: List[int]
     """
     k = l..(nums)
-    d = c...defaultdict(i..)
+    d = c...d..(i..)
     tuples    # list
 
     ___ i __ r..(l..(nums)):

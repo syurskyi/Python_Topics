@@ -1,6 +1,6 @@
 ____ d__ _______ date
 ____ typing _______ Dict, Sequence, NamedTuple
-____ c.. _______ n..,defaultdict
+____ c.. _______ n..,d..
 
 
 
@@ -35,7 +35,7 @@ ___ rent_or_stream(
     """
     
 
-    m = defaultdict(i..)
+    m = d..(i..)
 
 
     ___ movie_rented __ renting_history:

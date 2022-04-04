@@ -22,7 +22,7 @@ Note:
 0 <= B[i] <= 10^9
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -39,7 +39,7 @@ c_ Solution:
         Keep a reverse index mapping is not enough, since duplicate in B
         then keep a list
         """
-        idxes = defaultdict(l..)
+        idxes = d..(l..)
         ___ i, b __ e..(B
             idxes[b].a..(i)
 

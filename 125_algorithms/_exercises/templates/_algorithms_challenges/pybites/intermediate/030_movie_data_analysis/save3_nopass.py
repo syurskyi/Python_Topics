@@ -1,5 +1,5 @@
 _______ csv
-____ c.. _______ defaultdict, n..
+____ c.. _______ d.., n..
 _______ __
 ____ u__.r.. _______ u..
 
@@ -23,7 +23,7 @@ ___ get_movies_by_director
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
 
-    d = defaultdict(l..)
+    d = d..(l..)
     full_list    # list
 
     w__ o.. MOVIE_DATA, newline='') __ file:

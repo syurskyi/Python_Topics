@@ -1,10 +1,10 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ School(o..
     ___ - , name
         name = name
-        db = defaultdict(s..)
+        db = d..(s..)
 
     ___ add  student, grade
         db[grade].add(student)

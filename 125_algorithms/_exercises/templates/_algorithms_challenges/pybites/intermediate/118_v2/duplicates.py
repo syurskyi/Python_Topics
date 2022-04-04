@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 ___ get_duplicate_indices(words
     """Given a list of words, loop through the words and check for each
        word if it occurs more than once.
@@ -12,7 +12,7 @@ ___ get_duplicate_indices(words
     result = s..()
     
 
-    occurences = defaultdict(i..)
+    occurences = d..(i..)
 
     ___ i,word __ e..(words
         __ word __ occurences:

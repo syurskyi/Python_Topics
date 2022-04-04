@@ -9,7 +9,7 @@ c_ Solution(o..
         N = l..(graph)
 
         DRAW, MOUSE, CAT = 0, 1, 2
-        color = c...defaultdict(i..)
+        color = c...d..(i..)
         degree    # dict
         ___ m __ r..(N
             ___ c __ r..(N

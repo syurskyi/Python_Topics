@@ -4,7 +4,7 @@ c_ Solution(o..
     :type s: str
     :rtype: int
     """
-    d = c...defaultdict(i..)
+    d = c...d..(i..)
     l = ans = 0
     ___ i, c __ e..(s
       w.... l > 0 a.. d[c] > 0:

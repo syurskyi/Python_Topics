@@ -25,7 +25,7 @@ Note:
 1 <= time[i] <= 500
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -33,7 +33,7 @@ c_ Solution:
         """
         Running attribution
         """
-        counter = defaultdict(i..)
+        counter = d..(i..)
         ret = 0
         ___ t __ time:
             ret += counter[(60 - t) % 60]  # handle 0
@@ -50,7 +50,7 @@ c_ Solution:
 
         attribution error
         """
-        hm = defaultdict(i..)
+        hm = d..(i..)
         ___ t __ time:
             hm[t % 60] += 1
 

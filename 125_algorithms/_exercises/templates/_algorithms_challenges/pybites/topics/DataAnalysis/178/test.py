@@ -1,7 +1,7 @@
 ____ c.. _______ C..
 _______ __
 ____ u__.r.. _______ u..
-____ c.. _______ defaultdict
+____ c.. _______ d..
 ____ d__ _______ d__
 
 
@@ -16,7 +16,7 @@ u..(
 year_argument = 'None'
 
 w__ o.. commits) __ f:
-    commit_log = defaultdict(i..)
+    commit_log = d..(i..)
     ___ line __ f:
         #print(line)
         date, commit  = line.s..(' | ')

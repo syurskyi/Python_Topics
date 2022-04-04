@@ -23,7 +23,7 @@ The two tuples are:
 1. (0, 0, 0, 1) -> A[0] + B[0] + C[0] + D[1] = 1 + (-2) + (-1) + 2 = 0
 2. (1, 1, 0, 0) -> A[1] + B[1] + C[0] + D[0] = 2 + (-1) + (-1) + 0 = 0
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -44,8 +44,8 @@ c_ Solution:
         :rtype: int
         """
         N = l..(A)
-        AB = defaultdict(i..)
-        CD = defaultdict(i..)
+        AB = d..(i..)
+        CD = d..(i..)
         ___ i __ r..(N
             ___ j __ r..(N
                 AB[A[i] + B[j]] += 1

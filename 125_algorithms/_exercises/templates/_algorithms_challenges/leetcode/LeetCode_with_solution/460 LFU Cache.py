@@ -29,7 +29,7 @@ cache.get(1);       // returns -1 (not found)
 cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 """
-____ c.. _______ defaultdict, OrderedDict
+____ c.. _______ d.., OrderedDict
 DUMMY = N..
 
 
@@ -51,8 +51,8 @@ c_ LFUCache:
         """
         cap = capacity
         values    # dict
-        freqs = defaultdict(i..)
-        keys = defaultdict(OrderedDict)
+        freqs = d..(i..)
+        keys = d..(OrderedDict)
         mini = -1  # mini frequency
 
     ___ get  key: i..) __ i..:

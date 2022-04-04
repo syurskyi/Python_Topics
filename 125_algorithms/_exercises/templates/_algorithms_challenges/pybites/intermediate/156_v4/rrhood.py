@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 text = """
 Once upon a time, there was a little girl who lived in a village near the forest.  Whenever she went out, the little girl wore a red riding cloak, so everyone in the village called her Little Red Riding Hood.
@@ -54,7 +54,7 @@ ___ make_character_index(text=text, characters=CHARACTERS
        - e.g. ('Grandmother', 'Grandma', 'Granny') -
        then return the former as key.
     """
-    index = defaultdict(l..)
+    index = d..(l..)
 
     ___ n, line __ e..(text.l...s..:
         ___ char __ characters:

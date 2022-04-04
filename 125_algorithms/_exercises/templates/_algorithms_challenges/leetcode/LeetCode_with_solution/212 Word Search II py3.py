@@ -19,7 +19,7 @@ Note:
 You may assume that all inputs are consist of lowercase letters a-z.
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 dirs = [(0, 1), (0, -1), (-1, 0), (1, 0)]
@@ -28,7 +28,7 @@ dirs = [(0, 1), (0, -1), (-1, 0), (1, 0)]
 c_ TrieNode:
     ___ -
         word = N..
-        children = defaultdict(TrieNode)
+        children = d..(TrieNode)
 
 
 c_ Solution:

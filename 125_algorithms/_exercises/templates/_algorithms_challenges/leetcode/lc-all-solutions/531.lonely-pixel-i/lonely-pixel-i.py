@@ -1,11 +1,11 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 c_ Solution(o..
   
   ___ findLonelyPixel  picture
 
-      col = defaultdict(i..)
-      row = defaultdict(i..)
+      col = d..(i..)
+      row = d..(i..)
 
       ___ i, r __ e..(picture
         ___ j, pixel __ e..(r

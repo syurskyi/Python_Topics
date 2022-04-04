@@ -16,7 +16,7 @@ Input: search("hell"), Output: False
 Input: search("leetcoded"), Output: False
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ MagicDictionary:
@@ -29,7 +29,7 @@ c_ MagicDictionary:
             ___ - , chr
                 chr = chr
                 end = F..  # a word ends here
-                children = defaultdict(l....: N..)
+                children = d..(l....: N..)
 
         c_ Trie:
             ___ -

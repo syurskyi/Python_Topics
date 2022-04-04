@@ -1,5 +1,5 @@
 _______ csv
-____ c.. _______ defaultdict, n..
+____ c.. _______ d.., n..
 _______ __
 ____ u__.r.. _______ u..
 _______ pandas __ pd
@@ -28,7 +28,7 @@ ___ get_movies_by_director
     
 
     data = data[data.title_year >= 1960]
-    result = defaultdict(l..)
+    result = d..(l..)
 
 
     ___ _,row __ data.iterrows

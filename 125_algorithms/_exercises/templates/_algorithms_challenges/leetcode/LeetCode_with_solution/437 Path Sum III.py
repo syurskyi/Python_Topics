@@ -18,7 +18,7 @@ c_ TreeNode:
         right = N..
 
 
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -32,7 +32,7 @@ c_ Solution:
 
         Downward path
         """
-        dfs(root, target, 0, defaultdict(i..))
+        dfs(root, target, 0, d..(i..))
         r.. count
 
     ___ dfs  node, target, cur_sum, prefix_sum_counter

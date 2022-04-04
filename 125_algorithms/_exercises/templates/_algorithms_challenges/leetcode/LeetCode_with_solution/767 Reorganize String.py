@@ -18,7 +18,7 @@ Note:
 
 S will consist of lowercase letters and have length in range [1, 500].
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -26,7 +26,7 @@ c_ Solution:
         """
         piles by max char and circular append
         """
-        counter = defaultdict(i..)
+        counter = d..(i..)
         ___ c __ S:
             counter[c] += 1
 

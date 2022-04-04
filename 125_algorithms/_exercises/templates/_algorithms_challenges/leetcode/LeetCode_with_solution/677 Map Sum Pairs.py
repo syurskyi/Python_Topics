@@ -27,14 +27,14 @@ c_ MapSum:
 
         update using delta
         """
-        ____ c.. _______ defaultdict
+        ____ c.. _______ d..
 
         c_ TrieNode:
             ___ - , chr, s.., val
                 chr = chr
                 s.. = s..
                 val = val
-                children = defaultdict(l....: N..)
+                children = d..(l....: N..)
 
         c_ Trie:
             ___ -

@@ -28,7 +28,7 @@ Note:
 0 <= stones[i][j] < 10000
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -41,7 +41,7 @@ c_ Solution:
         construct graph O(N^2)
         DFS - O(N)
         """
-        G = defaultdict(l..)
+        G = d..(l..)
         n = l..(stones)
         ___ i __ r..(n
             ___ j __ r..(i

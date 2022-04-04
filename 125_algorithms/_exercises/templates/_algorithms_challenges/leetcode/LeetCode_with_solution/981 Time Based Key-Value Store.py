@@ -48,7 +48,7 @@ TimeMap.set and TimeMap.get functions will be called a total of 120000 times
 combined) per test case.
 """
 _______ bisect
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ TimeMap:
@@ -61,7 +61,7 @@ c_ TimeMap:
         BST
         Bineary search
         """
-        m = defaultdict(l..)
+        m = d..(l..)
 
     ___ s..  key: s.., value: s.., timestamp: i..) __ N..
         n = (timestamp, value)

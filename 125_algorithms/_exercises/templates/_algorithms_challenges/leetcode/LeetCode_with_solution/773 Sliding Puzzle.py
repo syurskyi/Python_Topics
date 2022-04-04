@@ -38,7 +38,7 @@ board will be a 2 x 3 array as described above.
 board[i][j] will be a permutation of [0, 1, 2, 3, 4, 5].
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 ____ copy _______ d..
 _______ heapq
 
@@ -74,7 +74,7 @@ c_ Solution:
 
         Possible to reduce the 2D array in a 1D array and do %C and //C, where C is the size of the column
         """
-        visited = defaultdict(b..)
+        visited = d..(b..)
         m, n = l..(board), l..(board[0])
         q = [(heuristic_dist(board) + 0, 0, board)]
         target = [

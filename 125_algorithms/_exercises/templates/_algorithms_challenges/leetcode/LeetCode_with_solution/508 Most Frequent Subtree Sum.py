@@ -34,7 +34,7 @@ c_ TreeNode:
         right = N..
 
 
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -44,7 +44,7 @@ c_ Solution:
         :type root: TreeNode
         :rtype: List[int]
         """
-        counter = defaultdict(i..)
+        counter = d..(i..)
         traverse(root, counter)
         ret = [[], 0]
         ___ k, v __ counter.i..:

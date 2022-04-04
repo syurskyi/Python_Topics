@@ -21,7 +21,7 @@ Output:
 
 The longest substring is "ababb", as 'a' is repeated 2 times and 'b' is repeated 3 times.
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -37,7 +37,7 @@ c_ Solution(o..
         __ n.. s:
             r.. 0
 
-        cnt = defaultdict(i..)
+        cnt = d..(i..)
         ___ e __ s: cnt[e] += 1
 
         c = m..(

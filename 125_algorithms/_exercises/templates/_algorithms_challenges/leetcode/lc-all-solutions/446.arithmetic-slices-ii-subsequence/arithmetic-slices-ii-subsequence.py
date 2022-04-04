@@ -5,7 +5,7 @@ c_ Solution(o..
     :rtype: int
     """
     ans = 0
-    dp = [c...defaultdict(i..) ___ _ __ A]
+    dp = [c...d..(i..) ___ _ __ A]
     ___ i __ r..(l..(A)):
       ___ j __ r..(i
         diff = A[i] - A[j]

@@ -1,7 +1,7 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 ____ typing _______ C..
 
-count = defaultdict(C..)
+count = d..(C..)
 
 count 'khoo'  'a'  = 1
 count 'khoo'  'b'  = 2

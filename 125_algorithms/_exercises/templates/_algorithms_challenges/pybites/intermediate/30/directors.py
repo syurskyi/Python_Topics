@@ -1,5 +1,5 @@
 _______ csv
-____ c.. _______ defaultdict, n..
+____ c.. _______ d.., n..
 _______ __
 ____ u__.r.. _______ u..
 
@@ -23,7 +23,7 @@ ___ get_movies_by_director
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
 
-    movie_metadata = defaultdict(l..)
+    movie_metadata = d..(l..)
 
     w__ o.. local) __ file:
         csv_content = csv.DictReader(file)

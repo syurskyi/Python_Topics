@@ -13,7 +13,7 @@ What if nums1's size is small compared to nums2's size? Which algorithm is bette
 What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the
 memory at once?
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -28,7 +28,7 @@ c_ Solution(o..
         :type nums2: List[int]
         :rtype: List[int]
         """
-        h1, h2 = defaultdict(i..), defaultdict(i..)
+        h1, h2 = d..(i..), d..(i..)
         ___ a __ nums1:
             h1[a] += 1
         ___ b __ nums2:

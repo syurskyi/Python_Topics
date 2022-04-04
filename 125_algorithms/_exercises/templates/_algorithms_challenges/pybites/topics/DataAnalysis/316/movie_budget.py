@@ -1,6 +1,6 @@
 ____ d__ _______ date
 ____ typing _______ Dict, Sequence, NamedTuple
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 
@@ -30,8 +30,8 @@ ___ rent_or_stream(
 
        Check out the tests for examples.
     """
-    month_rental = defaultdict(i..)
-    return_dict = defaultdict(s..)
+    month_rental = d..(i..)
+    return_dict = d..(s..)
     ___ movie __ renting_history:
         month_rental[getattr(movie,'date').s..("%Y-%m")] += getattr(movie,'price')
     ___ total_month __ s..(month_rental

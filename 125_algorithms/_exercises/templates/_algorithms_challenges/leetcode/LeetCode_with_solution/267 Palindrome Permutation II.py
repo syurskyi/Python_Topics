@@ -2,7 +2,7 @@
 Premium Question
 https://leetcode.com/problems/palindrome-permutation-ii/
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 __author__ = 'Daniel'
@@ -14,7 +14,7 @@ c_ Solution(o..
         :type s: str
         :rtype: List[str]
         """
-        m = defaultdict(i..)
+        m = d..(i..)
         ___ c __ s:
             m[c] += 1
 

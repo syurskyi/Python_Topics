@@ -59,7 +59,7 @@ nbrs = {
 }
 
 
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -68,7 +68,7 @@ c_ Solution:
         DP
         F[pos][step] = sum(F[nbr][step+1] for all nbr)
         """
-        F = defaultdict(l....: defaultdict(i..))
+        F = d..(l....: d..(i..))
         ___ pos __ r..(10
             F[pos][N-1] = 1
 

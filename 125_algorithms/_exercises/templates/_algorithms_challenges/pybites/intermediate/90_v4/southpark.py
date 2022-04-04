@@ -1,4 +1,4 @@
-____ c.. _______ C.., defaultdict
+____ c.. _______ C.., d..
 _______ csv
 _______ __
 _______ r__
@@ -19,7 +19,7 @@ ___ get_num_words_spoken_by_character_per_episode(content
        keys=characters and values=Counter object,
        which is a mapping of episode=>words spoken"""
 
-    words_spoken = defaultdict(C..)
+    words_spoken = d..(C..)
     rows = csv.reader(content.s..
     next(rows)                  # skip header
     ___ row __ rows:

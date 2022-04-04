@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 names = 'bob julian tim martin rod sara joyce nick beverly kevin'.s..
 ids = r..(l..(names))
@@ -13,7 +13,7 @@ ___ get_friend_with_most_friends(friendships, users=users
     """Receives the friendships list of user ID pairs,
        parse it to see who has most friends, return a tuple
        of (name_friend_with_most_friends, his_or_her_friends)"""
-    user_friends = defaultdict(s..)
+    user_friends = d..(s..)
     ___ u, f __ friendships:
         user_friends[u].add(f)
         user_friends[f].add(u)

@@ -38,7 +38,7 @@ The length of accounts will be in the range [1, 1000].
 The length of accounts[i] will be in the range [1, 10].
 The length of accounts[i][j] will be in the range [1, 30].
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -47,7 +47,7 @@ c_ Solution:
         merge has to be dfs
         account id
         """
-        email_to_ids = defaultdict(s..)
+        email_to_ids = d..(s..)
         ___ i, v __ e..(accounts
             ___ email __ v[1:]:
                 email_to_ids[email].add(i)
@@ -81,7 +81,7 @@ c_ Solution:
         mistake: not dfs, search on the first level
         """
         email_id    # dict
-        id_emails = defaultdict(l..)
+        id_emails = d..(l..)
         ___ i __ r..(l..(accounts)):
             person = N..
             ___ email __ accounts[i][1:]:

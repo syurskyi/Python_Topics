@@ -2,12 +2,12 @@
 #  Score: 50
 
 
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 ___ t __ r..(i..(input())):
     s = input()
-    substrings = defaultdict(i..)
+    substrings = d..(i..)
 
     ___ i __ r..(1, l..(s)):
         ___ j __ r..(l..(s) - i + 1

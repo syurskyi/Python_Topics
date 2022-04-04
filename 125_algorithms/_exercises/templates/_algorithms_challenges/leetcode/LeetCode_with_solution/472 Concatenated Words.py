@@ -22,12 +22,12 @@ All the input string will only include lower case letters.
 The returned elements order does not matter.
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
     ___ -
-        TrieNode = l....: defaultdict(TrieNode)  # not defaultdict(lambda: TrieNode)
+        TrieNode = l....: d..(TrieNode)  # not defaultdict(lambda: TrieNode)
         root = TrieNode()  # root of tire
 
     ___ findAllConcatenatedWordsInADict  words: List[s..]) __ List[s..]:

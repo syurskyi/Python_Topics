@@ -1,4 +1,4 @@
-____ c.. _______ C.., defaultdict
+____ c.. _______ C.., d..
 _______ csv
 _______ r__
 
@@ -17,7 +17,7 @@ ___ get_num_words_spoken_by_character_per_episode(content=get_season_csv_file:
    which is a mapping of episode=>words spoken
    """
    data = csv.DictReader(content.s.. , delimiter=',')
-   character_words_per_episode = defaultdict(C..)
+   character_words_per_episode = d..(C..)
    ___ record __ data:
       character_words_per_episode[record 'Character']][record  'Episode']] += l..(record 'Line' .s..
    r.. character_words_per_episode

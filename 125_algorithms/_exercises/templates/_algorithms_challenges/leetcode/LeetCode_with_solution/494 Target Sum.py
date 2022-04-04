@@ -24,7 +24,7 @@ The length of the given array is positive and will not exceed 20.
 The sum of elements in the given array will not exceed 1000.
 Your output answer is guaranteed to be fitted in a 32-bit integer.
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -39,7 +39,7 @@ c_ Solution:
         """
         __ n.. A:
             r..
-        F = defaultdict(l....: defaultdict(i..))
+        F = d..(l....: d..(i..))
         F[0][0] = 1
         ___ i __ r..(l..(A)):
             ___ k __ F[i].k..:  # F[i] for A[:i]

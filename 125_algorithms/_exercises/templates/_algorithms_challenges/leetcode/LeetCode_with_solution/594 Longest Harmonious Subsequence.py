@@ -14,7 +14,7 @@ Explanation: The longest harmonious subsequence is [3,2,2,2,3].
 Note: The length of the input array will not exceed 20,000.
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -22,7 +22,7 @@ c_ Solution:
         """
         counter and iterate
         """
-        counter = defaultdict(i..)
+        counter = d..(i..)
         ___ n __ nums:
             counter[n] += 1
 

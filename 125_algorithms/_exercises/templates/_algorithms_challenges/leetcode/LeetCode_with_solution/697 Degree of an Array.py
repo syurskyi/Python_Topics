@@ -23,7 +23,7 @@ nums.length will be between 1 and 50,000.
 nums[i] will be an integer between 0 and 49,999.
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -35,7 +35,7 @@ c_ Solution:
         __ n.. nums:
             r..
 
-        counter = defaultdict(i..)
+        counter = d..(i..)
         first    # dict  # map from number to index
         mx = [0, 0]  #  [degree, length]
         ___ i, n __ e..(nums

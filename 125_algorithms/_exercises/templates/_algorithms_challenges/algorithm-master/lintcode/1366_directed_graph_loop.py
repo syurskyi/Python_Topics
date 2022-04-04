@@ -12,7 +12,7 @@ c_ Solution:
             r.. F..
 
         n = l..(start)
-        nxt = c...defaultdict(s..)
+        nxt = c...d..(s..)
         visited = s..()
         rec_stack = s..()
 

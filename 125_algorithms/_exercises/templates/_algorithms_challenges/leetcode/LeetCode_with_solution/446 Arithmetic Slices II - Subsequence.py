@@ -6,7 +6,7 @@ elements and if the difference between any two consecutive elements is the same.
 The function should return the number of arithmetic subsequence slices in the
 array A. (Subsequence rather than slide)
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -33,7 +33,7 @@ c_ Solution:
         :rtype: int
         """
         ret = 0
-        D = defaultdict(l....: defaultdict(i..))
+        D = d..(l....: d..(i..))
         ___ i __ r..(l..(A)):
             ___ j __ r..(i
                 d = A[i] - A[j]
@@ -50,7 +50,7 @@ c_ Solution:
         :rtype: int
         """
         ret = 0
-        D = defaultdict(l....: defaultdict(i..))
+        D = d..(l....: d..(i..))
         ___ i __ r..(l..(A)):
             ___ j __ r..(i
                 delta = A[i] - A[j]

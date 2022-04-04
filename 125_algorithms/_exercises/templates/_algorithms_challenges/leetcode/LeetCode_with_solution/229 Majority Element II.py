@@ -4,7 +4,7 @@ Given an integer array of size n, find all elements that appear more than ⌊ n/
 linear time and in O(1) space.
 """
 __author__ = 'Daniel'
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -14,7 +14,7 @@ c_ Solution:
         :type nums: list[int]
         :rtype: list[int]
         """
-        cnt = defaultdict(i..)
+        cnt = d..(i..)
         ___ num __ nums:
             __ num __ cnt:
                 cnt[num] += 1

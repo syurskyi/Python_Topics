@@ -1,5 +1,5 @@
 _______ csv
-____ c.. _______ C.., defaultdict
+____ c.. _______ C.., d..
 ____ io _______ StringIO
 _______ r__
 
@@ -18,7 +18,7 @@ ___ get_num_words_spoken_by_character_per_episode(content: s..
     """Receives loaded csv content (str) and returns a dict of
        keys=characters and values=Counter object,
        which is a mapping of episode=>words spoken"""
-    lines = defaultdict(l.... : C..
+    lines = d..(l.... : C..
     ___ row __ [{'episode': x 'Episode' , 'character': x 'Character' ,
                  'words': l..(x 'Line' .s..} ___ x __ csv.DictReader(StringIO(content))]:
         lines[row 'character']] += C..({row 'episode' : row 'words' })

@@ -4,7 +4,7 @@
 Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
-____ c.. _______ C..,defaultdict
+____ c.. _______ C..,d..
 _______ operator
 _______ i..
 
@@ -149,7 +149,7 @@ ___ match_wine_5cheeses
     ]
     """
     all_wines = mapping 'all'
-    wine_cheeses = defaultdict(l..)
+    wine_cheeses = d..(l..)
     
     results    # list
 

@@ -16,14 +16,14 @@ Output: [[0,1],[1,0]]
 Explanation: The palindromes are ["battab","tabbat"]
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ TrieNode:
     ___ -
         pali_prefix_idxes    # list  # suffix ends, prefix pali
         word_idx = N..
-        children = defaultdict(TrieNode)
+        children = d..(TrieNode)
 
 
 c_ Solution:

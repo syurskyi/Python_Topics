@@ -34,7 +34,7 @@ twitter.unfollow(1, 2);
 // since user 1 is no longer following user 2.
 twitter.getNewsFeed(1);
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 _______ heapq
 
 __author__ = 'Daniel'
@@ -66,8 +66,8 @@ c_ Twitter(o..
         """
         Initialize your data structure here.
         """
-        tweets = defaultdict(l....: N..)
-        followees = defaultdict(s..)
+        tweets = d..(l....: N..)
+        followees = d..(s..)
 
     ___ postTweet  userId, tweetId
         """

@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 _______ __
 ____ u__.r.. _______ u..
 
@@ -17,7 +17,7 @@ u..(
 w__ o.. holidays_page) __ f:
     content = f.r..
 
-holidays = defaultdict(l..)
+holidays = d..(l..)
 
 
 ___ get_us_bank_holidays(content=content

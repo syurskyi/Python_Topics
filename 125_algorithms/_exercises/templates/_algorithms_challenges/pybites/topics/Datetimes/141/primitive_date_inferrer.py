@@ -1,6 +1,6 @@
 ____ e.. _______ E..
 ____ d__ _______ d__
-____ c.. _______ C.., defaultdict
+____ c.. _______ C.., d..
 
 
 c_ DateFormat(E..
@@ -66,7 +66,7 @@ ___ get_dates(dates
     return_list    # list
     #
     # to find the most prevalent date format
-    enum_dict = defaultdict(i..)
+    enum_dict = d..(i..)
     ___ date __ dates:
         enum_list = _maybe_DateFormats(date)
         ___ index __ r..(l..(enum_list)):

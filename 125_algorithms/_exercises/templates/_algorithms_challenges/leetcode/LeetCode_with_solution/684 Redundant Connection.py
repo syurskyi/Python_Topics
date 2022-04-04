@@ -34,7 +34,7 @@ Every integer represented in the 2D-array will be between 1 and N, where N is
 the size of the input array.
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ DisjointSet
@@ -97,7 +97,7 @@ c_ Solution_dfs:
         Find circle through dfs: O(|V|)
         Notice: need to extract the circle from the cyclic path
         """
-        G = defaultdict(s..)
+        G = d..(s..)
         ___ p, q __ edges:
             G[p].add(q)
             G[q].add(p)

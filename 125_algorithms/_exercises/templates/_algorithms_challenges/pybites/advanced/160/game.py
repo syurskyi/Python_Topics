@@ -1,7 +1,7 @@
 _______ csv
 _______ __
 ____ u__.r.. _______ u..
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 TMP = __.getenv("TMP", "/tmp")
 DATA = 'battle-table.csv'
@@ -18,7 +18,7 @@ ___ _create_defeat_mapping
        with keys = attackers / values = who they defeat.
     """
     
-    mapping = defaultdict(s..)
+    mapping = d..(s..)
     w__ o.. BATTLE_DATA _ __ f:
         reader = csv.DictReader(f)
         ___ row __ reader:

@@ -1,5 +1,5 @@
 _______ csv
-____ c.. _______ defaultdict, n..
+____ c.. _______ d.., n..
 _______ __
 ____ u__.r.. _______ u..
 
@@ -28,7 +28,7 @@ ___ get_movies_by_director
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
-    movie_dict = defaultdict(l..)
+    movie_dict = d..(l..)
     reader = csv.DictReader(o.. local))
 
     ___ row __ reader:

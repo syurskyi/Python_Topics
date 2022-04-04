@@ -28,7 +28,7 @@ Credits:
 Special thanks to @pbrother for adding this problem and creating all test cases
 """
 ____ bisect _______ bisect_left
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -36,7 +36,7 @@ c_ Solution:
         """
         Subsequence - Binary search
         """
-        char_pos = defaultdict(l..)
+        char_pos = d..(l..)
         ___ p, c __ e..(t
             char_pos[c].a..(p)
             # the list is naturally sorted

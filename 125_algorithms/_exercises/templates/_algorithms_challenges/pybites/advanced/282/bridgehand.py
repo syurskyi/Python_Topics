@@ -1,4 +1,4 @@
-____ c.. _______ n..,defaultdict
+____ c.. _______ n..,d..
 ____ e.. _______ E..
 ____ typing _______ Sequence
 ____ c...abc _______ Sequence __ seq
@@ -33,7 +33,7 @@ c_ BridgeHand:
 
         cards = cards
 
-        suit_to_cards = defaultdict(l..)
+        suit_to_cards = d..(l..)
         ___ card __ cards:
             suit_to_cards[card.suit].a..(card.Rank)
 

@@ -33,7 +33,7 @@ The number of bricks in each row is in range [1,10,000]. The height of wall is
 in range [1,10,000]. Total number of bricks of the wall won't exceed 20,000.
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -41,7 +41,7 @@ c_ Solution:
         """
         Iterate and count edge at a position
         """
-        h = defaultdict(i..)
+        h = d..(i..)
         m = l..(wall)
         ___ i __ r..(m
             s = 0

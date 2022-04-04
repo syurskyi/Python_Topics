@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 ____ directors _______ (get_movies_by_director, get_average_scores,
                        calc_mean_score, Movie)
 
@@ -12,7 +12,7 @@ ___ test_get_movies_by_director
 
 
 ___ test_director_movies_data_structure
-    ... t..(director_movies) __ (d.., defaultdict)
+    ... t..(director_movies) __ (d.., d..)
     ... t..(director_movies 'Peter Jackson' ) __ l..
     ... t..(director_movies 'Peter Jackson' [0]) __ Movie
 

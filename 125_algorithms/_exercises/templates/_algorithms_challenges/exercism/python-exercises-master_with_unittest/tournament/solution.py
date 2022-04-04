@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 RESULTS = d..(win=0, draw=1, loss=2)
 
@@ -36,7 +36,7 @@ ___ format_table(results
 
 
 ___ tally(data
-    table = defaultdict(l....: [0, 0, 0])
+    table = d..(l....: [0, 0, 0])
 
     ___ line __ data.s..('\n'
         ___ team, result __ parse_game(line

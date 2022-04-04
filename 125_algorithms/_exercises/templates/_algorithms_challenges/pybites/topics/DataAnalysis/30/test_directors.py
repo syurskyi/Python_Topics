@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 _______ p__
 
@@ -22,7 +22,7 @@ ___ test_get_movies_by_director(movies
     ... l..(movies 'Peter Jackson' ) __ 12
 
 ___ test_director_movies_data_structure(movies
-    ... t..(movies) __ (d.., defaultdict)
+    ... t..(movies) __ (d.., d..)
     ... t..(movies 'Peter Jackson' ) __ l..
     ... t..(movies 'Peter Jackson' [0]) __ Movie
 

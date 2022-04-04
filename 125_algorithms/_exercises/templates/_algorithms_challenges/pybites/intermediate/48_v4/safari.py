@@ -1,7 +1,7 @@
 _______ __
 _______ __
 _______ u__.r..
-____ c.. _______ defaultdict
+____ c.. _______ d..
 ____ d__ _______ d__
 
 TMP = __.getenv("TMP", "/tmp")
@@ -26,7 +26,7 @@ ___ _parse_book_line(line
 
 ___ create_chart
 
-    chart = defaultdict(s..)
+    chart = d..(s..)
     w__ o.. SAFARI_LOGS, _ __ f:
         prev = f.readline()
         ___ line __ f:

@@ -30,7 +30,7 @@ TopVotedCandidate.q is called at most 10000 times per test case.
 TopVotedCandidate.q(int t) is always called with t >= times[0].
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 _______ bisect
 
 
@@ -44,7 +44,7 @@ c_ TopVotedCandidate:
         query is binary search
         """
         maxes    # list  # [(t, i)]  at time t
-        counter = defaultdict(i..)
+        counter = d..(i..)
         tp = s..(z..(times, persons))
         ___ t, p __ tp:
             counter[p] += 1

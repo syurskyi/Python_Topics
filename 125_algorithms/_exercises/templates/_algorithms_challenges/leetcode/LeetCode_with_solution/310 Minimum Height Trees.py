@@ -34,7 +34,7 @@ Given n = 6, edges = [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]]
         5
 return [3, 4]
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -168,7 +168,7 @@ c_ SolutionError(o..
 
         # bfs
         visisted = [F.. ___ _ __ x..(n)]
-        h2v = defaultdict(l..)
+        h2v = d..(l..)
         q    # list
         level = 0
         q.a..(leaf)

@@ -1,7 +1,7 @@
 _______ csv
 _______ __
 ____ u__.r.. _______ u..
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 BATTLE_DATA = __.p...j..('/tmp', 'battle-table.csv')
 __ n.. __.p...isfile(BATTLE_DATA
@@ -12,7 +12,7 @@ ___ _create_defeat_mapping
     """Parse battle-table.csv building up a defeat_mapping dict
        with keys = attackers / values = who they defeat.
     """
-    result = defaultdict(d..)
+    result = d..(d..)
     w__ o.. BATTLE_DATA) __ b:
         reader = csv.DictReader(b)
         ___ row __ reader:

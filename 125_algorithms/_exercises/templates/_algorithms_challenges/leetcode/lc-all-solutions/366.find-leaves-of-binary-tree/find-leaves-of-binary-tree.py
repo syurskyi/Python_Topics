@@ -24,7 +24,7 @@ c_ Solution(o..
       r.. depth
 
     ans    # list
-    res = c...defaultdict(l..)
+    res = c...d..(l..)
     helper(root, res)
     ___ i __ r..(1, l..(res) + 1
       ans.a..(res[i])

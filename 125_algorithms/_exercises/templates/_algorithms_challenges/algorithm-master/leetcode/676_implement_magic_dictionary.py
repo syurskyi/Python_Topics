@@ -11,7 +11,7 @@ c_ MagicDictionary:
         """
         Initialize your data structure here.
         """
-        words = c...defaultdict(s..)
+        words = c...d..(s..)
 
     ___ buildDict  words
         """

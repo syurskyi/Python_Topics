@@ -28,7 +28,7 @@ Note:
 -100 <= A[i][j] <= 100
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -39,7 +39,7 @@ c_ Solution:
         using default dict
         """
         m, n = l..(A), l..(A[0])
-        F = defaultdict(l....: defaultdict(l....: f__("inf")))
+        F = d..(l....: d..(l....: f__("inf")))
         ___ j __ r..(n
             F[m-1][j] = A[m-1][j]
 

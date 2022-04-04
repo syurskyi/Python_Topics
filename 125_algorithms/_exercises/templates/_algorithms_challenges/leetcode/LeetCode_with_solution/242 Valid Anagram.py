@@ -8,7 +8,7 @@ s = "rat", t = "car", return false.
 Note:
 You may assume the string contains only lowercase alphabets.
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -22,7 +22,7 @@ c_ Solution:
         :type t: str
         :rtype: bool
         """
-        cnt = defaultdict(i..)
+        cnt = d..(i..)
         ___ c __ s:
             cnt[c] += 1
 

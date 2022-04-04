@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -11,7 +11,7 @@ c_ TwoSum(o..
         """
         initialize your data structure here
         """
-        hash_map = defaultdict(i..)
+        hash_map = d..(i..)
 
     ___ add  number
         """

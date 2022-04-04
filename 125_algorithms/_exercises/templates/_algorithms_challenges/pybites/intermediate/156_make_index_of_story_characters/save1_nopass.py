@@ -1,5 +1,5 @@
 _______ __
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 CHARACTERS =  'Red Riding Hood',
               # we're omitting 'mother' here for simplicity
@@ -55,7 +55,7 @@ ___ make_character_index(text=text, characters=CHARACTERS
        - e.g. ('Grandmother', 'Grandma', 'Granny') -
        then return the former as key.
     """
-    d = defaultdict(l..)
+    d = d..(l..)
     character_list    # list
     new_text = text.s..
 

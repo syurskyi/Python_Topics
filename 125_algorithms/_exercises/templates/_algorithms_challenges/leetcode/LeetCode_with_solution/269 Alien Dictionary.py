@@ -39,7 +39,7 @@ Output: ""
 
 Explanation: The order is invalid, so return "".
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -62,7 +62,7 @@ c_ Solution(o..
         r.. "".j..(r..(ret))
 
     ___ construct_graph  words
-        V = defaultdict(l..)
+        V = d..(l..)
         # need to initialize, consider test case ["z", "z"]
         ___ w __ words:  # pitfall
             ___ c __ w:

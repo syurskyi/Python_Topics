@@ -1,6 +1,6 @@
 _______ __
 ____ pathlib _______ Path
-____ c.. _______ defaultdict
+____ c.. _______ d..
 ____ u__.r.. _______ u..
 ____ bs4 _______ BeautifulSoup
 
@@ -27,7 +27,7 @@ ___ get_income_distribution(___=countries
         soup = BeautifulSoup(f.read
 
     
-    income_to_countries = defaultdict(l..)
+    income_to_countries = d..(l..)
 
     ___ country __ soup.find_all("wb:country"
         country_name = country.find('wb:name').getText()

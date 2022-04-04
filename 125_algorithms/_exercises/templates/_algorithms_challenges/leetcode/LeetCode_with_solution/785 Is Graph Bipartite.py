@@ -41,7 +41,7 @@ graph[i] will not contain i or duplicate values.
 The graph is undirected: if any element j is in graph[i], then i will be in
 graph[j].
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -51,7 +51,7 @@ c_ Solution:
         dfs coloring
         """
         G = graph
-        color = defaultdict(i..)
+        color = d..(i..)
         ___ k __ r..(l..(G)):
             __ k n.. __ color:
                 color[k] = 0
@@ -78,7 +78,7 @@ c_ SolutionError:
     ___ isBipartite  graph: List[List[i..]]) __ b..:
         G = graph
         A, B = s..(), s..()
-        visited = defaultdict(b..)
+        visited = d..(b..)
         ___ k __ r..(l..(G)):
             __ n.. visited[k]:
                 __ n.. dfs(G, visited, k, A, B, T..

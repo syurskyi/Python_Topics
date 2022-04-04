@@ -9,9 +9,9 @@ c_ Solution(o..
     :rtype: bool
     """
     n = l..(org)
-    graph = c...defaultdict(l..)
+    graph = c...d..(l..)
     visited    # dict
-    incomings = c...defaultdict(i..)
+    incomings = c...d..(i..)
     nodes = s..()
     ___ seq __ seqs:
       nodes |= s..(seq)
@@ -29,7 +29,7 @@ c_ Solution(o..
         __ count __ 2:
           r.. F..
     order    # list
-    visited = c...defaultdict(i..)
+    visited = c...d..(i..)
     queue = [q ___ q __ incomings __ incomings[q] __ 0]
     w.... l..(queue) __ 1:
       top = queue.pop()

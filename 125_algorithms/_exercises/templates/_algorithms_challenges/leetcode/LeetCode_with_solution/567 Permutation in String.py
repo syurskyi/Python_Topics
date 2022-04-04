@@ -15,7 +15,7 @@ Note:
 The input strings only contain lower case letters.
 The length of both given strings is in range [1, 10,000].
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -23,7 +23,7 @@ c_ Solution:
         """
         counter + two pointers
         """
-        counter = defaultdict(i..)
+        counter = d..(i..)
         s1_set = s..(s1)
         ___ c __ s1:
             counter[c] += 1

@@ -16,7 +16,7 @@ c_ Solution(o..
         #we can' t use i//n*n + i%n. Although it is a distinct way to encode position
         LA = [(i, j) ___ i __ r..(n) ___ j __ r..(n) __ A[i][j] __ 1]
         LB = [(i, j) ___ i __ r..(n) ___ j __ r..(n) __ B[i][j] __ 1]
-        counts = c...defaultdict(i..)
+        counts = c...d..(i..)
         res = 0
         ___ i __ LA:
             ___ j __ LB:

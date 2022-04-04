@@ -35,7 +35,7 @@ c_ Solution(o..
 
     ans = ""
     graph    # dict
-    visited = c...defaultdict(i..)
+    visited = c...d..(i..)
     topNum = 0
     ___ i __ r..(0, l..(words) - 1
       a = words[i]

@@ -18,7 +18,7 @@ Output:
 2
 One possible longest palindromic subsequence is "bb".
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -36,7 +36,7 @@ c_ Solution:
         :rtype: int
         """
         n = l..(s)
-        F = defaultdict(l....: defaultdict(i..))
+        F = d..(l....: d..(i..))
         ___ i __ r..(n
             F[i][i] = 1
 

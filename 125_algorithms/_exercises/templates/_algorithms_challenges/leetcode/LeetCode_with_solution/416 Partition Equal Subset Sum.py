@@ -4,7 +4,7 @@ Given a non-empty array containing only positive integers, find if the array can
 be partitioned into two subsets such that the sum of elements in both subsets is
 equal.
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -30,7 +30,7 @@ c_ Solution:
             r.. F..
 
         target = s // 2
-        d = defaultdict(l....: defaultdict(i..))
+        d = d..(l....: d..(i..))
         d[0][0] = 1
         d[0][nums[0]] = 1
 

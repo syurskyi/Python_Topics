@@ -32,7 +32,7 @@ Note:
 0 <= target <= 300
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 MOD = 10 ** 9 + 7
@@ -45,7 +45,7 @@ c_ Solution:
         3 pointers O(N + K^2)
         j, k scan each element once
         """
-        counter = defaultdict(i..)
+        counter = d..(i..)
         ___ a __ A:
             counter[a] += 1
 
@@ -147,7 +147,7 @@ c_ Solution:
         O(n * target * 3)
         Let F[i][t][k] be the number of k sums using A[:i] to target t
         """
-        F = defaultdict(l....: defaultdict(l....: defaultdict(i..)))
+        F = d..(l....: d..(l....: d..(i..)))
         n = l..(A)
         ___ i __ r..(n+1
             F[i][0][0] = 1

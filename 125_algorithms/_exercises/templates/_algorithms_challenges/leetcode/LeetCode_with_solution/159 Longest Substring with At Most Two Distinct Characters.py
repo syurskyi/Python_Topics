@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -13,7 +13,7 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        m = defaultdict(i..)
+        m = d..(i..)
         i = 0
         j = 0
         maxa = 0

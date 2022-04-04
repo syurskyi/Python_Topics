@@ -26,7 +26,7 @@ Note:
 The length of the input is in range of [1, 10000]
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 _______ heapq
 
 
@@ -42,11 +42,11 @@ c_ Solution:
 
         Let F[i] be the number of consecutive subsequence at A[i]
         """
-        counter = defaultdict(i..)
+        counter = d..(i..)
         ___ e __ nums:
             counter[e] += 1
 
-        F = defaultdict(i..)
+        F = d..(i..)
         ___ e __ nums:
             __ counter[e] __ 0:
                 _____

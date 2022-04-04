@@ -1,6 +1,6 @@
 c_ Solution(o..
   ___ minTransfers  transactions
-    balances = c...defaultdict(i..)
+    balances = c...d..(i..)
     people = s..()
     ___ giver, receiver, amount __ transactions:
       balances[giver] -= amount

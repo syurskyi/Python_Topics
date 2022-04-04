@@ -18,7 +18,7 @@ Output:
 Explanation:
 One longest palindrome that can be built is "dccaccd", whose length is 7.
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -29,7 +29,7 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        c = defaultdict(i..)
+        c = d..(i..)
         ___ elt __ s:
             c[elt] += 1
 

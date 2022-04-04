@@ -1,7 +1,7 @@
 _______ __
 ____ pathlib _______ Path
 ____ u__.r.. _______ u..
-____ c.. _______ defaultdict
+____ c.. _______ d..
 _______ ___.e__.E__ __ ET
 
 # import the countries xml file
@@ -23,7 +23,7 @@ ___ get_income_distribution(___=countries
       - keys = incomes (wb:incomeLevel)
       - values = list of country names (wb:name)
     """
-    dist = defaultdict(l..)
+    dist = d..(l..)
     tree = ET.p..(countries)
     root = tree.getroot()
 

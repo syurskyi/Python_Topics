@@ -12,7 +12,7 @@ c_ Solution:
 
         left = bottom = f__('inf')
         right = top = f__('-inf')
-        points = c...defaultdict(i..)
+        points = c...d..(i..)
 
         ___ l, b, r, t __ recs:
             left = m..(left, l)

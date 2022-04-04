@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution(o..
@@ -17,7 +17,7 @@ c_ Solution(o..
 
     leftMost = f__("inf")
     ans    # list
-    res = defaultdict(l..)
+    res = d..(l..)
     dfs(root, 0, 0, res)
     i = leftMost
     w... T...

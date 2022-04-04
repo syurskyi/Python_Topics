@@ -4,7 +4,7 @@ such that nums[i] = nums[j] and the difference between i and j is at most k.
 """
 __author__ = 'Daniel'
 _______ heapq
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -14,7 +14,7 @@ c_ Solution:
 
         :rtype: bool
         """
-        d = defaultdict(l..)
+        d = d..(l..)
         ___ i, v __ e..(nums
             heapq.heappush(d[v], i)
 

@@ -24,7 +24,7 @@ The number of tasks is in the range [1, 10000].
 The integer n is in the range [0, 100].
 """
 ____ typing _______ List
-____ c.. _______ d.., defaultdict
+____ c.. _______ d.., d..
 _______ heapq
 
 
@@ -42,7 +42,7 @@ c_ Solution:
         Free page size is n + 1 - (# of max)
         Find the idle count
         """
-        counter = defaultdict(i..)
+        counter = d..(i..)
         ___ t __ tasks:
             counter[t] += 1
 
@@ -68,7 +68,7 @@ c_ Solution:
         max heap, most tasks first
         cool down queue
         """
-        counter = defaultdict(i..)
+        counter = d..(i..)
         ___ t __ tasks:
             counter[t] += 1
 

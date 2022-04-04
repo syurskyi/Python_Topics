@@ -8,7 +8,7 @@ Note:
 You may assume k is always valid, 1 <= k <= number of unique elements.
 Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 _______ heapq
 
 __author__ = 'Daniel'
@@ -33,7 +33,7 @@ c_ Solution(o..
         :type K: int
         :rtype: List[int]
         """
-        cnt = defaultdict(i..)
+        cnt = d..(i..)
         ___ e __ nums:
             cnt[e] += 1
 

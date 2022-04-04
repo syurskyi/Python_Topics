@@ -14,7 +14,7 @@ Input:
 Output:
 [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -80,7 +80,7 @@ c_ Solution(o..
         st.root = st.build(0, n)
         A.s..(cmp=cmp)
         ret = [0]*n
-        ret_cnt = defaultdict(i..)  # handle duplicate element
+        ret_cnt = d..(i..)  # handle duplicate element
         ___ a __ A:
             val, inv = a
             idx = st.find_delete(st.root, inv+1-ret_cnt[val])

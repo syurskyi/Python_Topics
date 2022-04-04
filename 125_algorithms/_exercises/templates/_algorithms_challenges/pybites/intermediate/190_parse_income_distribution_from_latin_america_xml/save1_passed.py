@@ -2,7 +2,7 @@ _______ __
 ____ pathlib _______ Path
 ____ u__.r.. _______ u..
 ____ bs4 _______ BeautifulSoup
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 # import the countries xml file
 tmp = Path(__.getenv("TMP", "/tmp"))
@@ -28,7 +28,7 @@ ___ get_income_distribution(___=countries
 
     soup = BeautifulSoup(contents, features='html.parser')
     table = soup.find_all('wb:country')
-    d = defaultdict(l..)
+    d = d..(l..)
 
     ___ tr __ table:
         name = tr.find('wb:name').text

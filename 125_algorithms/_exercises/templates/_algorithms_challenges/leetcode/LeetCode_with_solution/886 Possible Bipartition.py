@@ -35,7 +35,7 @@ dislikes[i][0] < dislikes[i][1]
 There does not exist i != j for which dislikes[i] == dislikes[j].
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -47,7 +47,7 @@ c_ Solution:
 
         DFS + coloring do a dfs all on nodes O(N) + O(M)
         """
-        G = defaultdict(l..)
+        G = d..(l..)
         ___ u, v __ dislikes:
             G[u].a..(v)
             G[v].a..(u)

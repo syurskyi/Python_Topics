@@ -2,11 +2,11 @@
 #  Score: 40
 
 
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
-arr = defaultdict(i..)
-frequencies = defaultdict(i..)
+arr = d..(i..)
+frequencies = d..(i..)
 result    # list
 ___ i __ r..(i..(input())):
     command, value = map(i.., input().s..

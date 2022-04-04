@@ -12,7 +12,7 @@ c_ Solution:
         __ n.. s:
             r.. ans
 
-        freqs = c...defaultdict(i..)
+        freqs = c...d..(i..)
         i = rep = 0
 
         ___ j __ r..(l..(s)):

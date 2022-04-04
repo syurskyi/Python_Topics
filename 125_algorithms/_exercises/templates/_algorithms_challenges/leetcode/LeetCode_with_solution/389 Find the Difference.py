@@ -18,7 +18,7 @@ Explanation:
 'e' is the letter that was added.
 
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -30,7 +30,7 @@ c_ Solution(o..
         :type t: str
         :rtype: str
         """
-        d = defaultdict(i..)
+        d = d..(i..)
         ___ e __ s:
             d[e] += 1
 

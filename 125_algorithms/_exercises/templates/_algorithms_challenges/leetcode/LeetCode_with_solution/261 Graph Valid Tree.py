@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -19,7 +19,7 @@ c_ Solution(o..
         __ n.. edges:
             r.. n __ (0, 1)
 
-        V = defaultdict(l..)
+        V = d..(l..)
         ___ e __ edges:
             V[e[0]].a..(e[1])
             V[e[1]].a..(e[0])

@@ -2,7 +2,7 @@
 """
 Given a string, sort it in decreasing order based on the frequency of characters.
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution(o..
@@ -14,7 +14,7 @@ c_ Solution(o..
         :type s: str
         :rtype: str
         """
-        counter = defaultdict(i..)
+        counter = d..(i..)
         ___ c __ s:
             counter[c] += 1
 

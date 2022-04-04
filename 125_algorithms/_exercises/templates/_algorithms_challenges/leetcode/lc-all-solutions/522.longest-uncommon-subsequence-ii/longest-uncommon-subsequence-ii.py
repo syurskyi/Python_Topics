@@ -9,7 +9,7 @@ c_ Solution(o..
       r.. m..(l..(a), l..(b)) __ a != b ____ -1
 
     ___ isSubsequence(s, t
-      d = c...defaultdict(l..)
+      d = c...d..(l..)
       ___ i, c __ e..(t
         d[c].a..(i)
       start = 0

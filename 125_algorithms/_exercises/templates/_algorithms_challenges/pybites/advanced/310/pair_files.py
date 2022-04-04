@@ -1,5 +1,5 @@
 _______ __
-____ c.. _______ defaultdict
+____ c.. _______ d..
 ___ pair_files(filenames
     """
     Function that pairs filenames
@@ -9,7 +9,7 @@ ___ pair_files(filenames
     """
     # TODO: You code
 
-    mapping = defaultdict(l..)
+    mapping = d..(l..)
 
 
     ___ file __ filenames:

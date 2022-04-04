@@ -23,7 +23,7 @@ All the strings in the input will only contain lower-case letters.
 The size of the dictionary won't exceed 1,000.
 The length of all the strings in the input won't exceed 1,000.
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -40,7 +40,7 @@ c_ Solution:
         :type d: List[str]
         :rtype: str
         """
-        h = defaultdict(l..)
+        h = d..(l..)
         ___ d_idx, w __ e..(d
             w_idx = 0
             h[w[w_idx]].a..((d_idx, w_idx))

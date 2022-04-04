@@ -17,7 +17,7 @@ The length of times will be in the range [1, 6000].
 All edges times[i] = (u, v, w) will have 1 <= u, v <= N and 0 <= w <= 100.
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 _______ heapq
 
 
@@ -26,7 +26,7 @@ c_ Solution:
         """
         Dijkstra's algorithm
         """
-        G = defaultdict(d..)
+        G = d..(d..)
         reach_time = [f__('inf') ___ _ __ r..(N + 1)]
         ___ u, v, w __ times:
             G[u][v] = w

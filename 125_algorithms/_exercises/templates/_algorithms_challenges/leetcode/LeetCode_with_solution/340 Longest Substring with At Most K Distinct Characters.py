@@ -9,7 +9,7 @@ Show Company Tags
 Show Tags
 Show Similar Problems
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -25,7 +25,7 @@ c_ Solution(o..
         :rtype: int
         """
         st = 0  # start
-        counter = defaultdict(i..)
+        counter = d..(i..)
         maxa = 0
         ___ idx, val __ e..(s
             __ counter[val] __ 0:

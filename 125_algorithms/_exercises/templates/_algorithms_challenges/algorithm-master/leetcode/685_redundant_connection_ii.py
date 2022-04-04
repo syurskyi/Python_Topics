@@ -21,8 +21,8 @@ c_ Solution:
         :rtype: List[int]
         """
         ans = edge = N..  # `edge` is the last edge in a loop
-        adj = c...defaultdict(s..)
-        uf = c...defaultdict(i..)
+        adj = c...d..(s..)
+        uf = c...d..(i..)
         has_parent = s..()
 
         ___ u, v __ edges:

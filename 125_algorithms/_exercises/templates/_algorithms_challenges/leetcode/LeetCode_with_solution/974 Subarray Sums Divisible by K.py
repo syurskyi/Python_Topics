@@ -17,7 +17,7 @@ Note:
 2 <= K <= 10000
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -27,7 +27,7 @@ c_ Solution:
         nC2
         """
         prefix_sum = 0
-        counter = defaultdict(i..)
+        counter = d..(i..)
         counter[0] = 1  # important trival case
         ___ a __ A:
             prefix_sum += a
@@ -50,7 +50,7 @@ c_ Solution:
         prefix sum has to be MOD by K.
         """
         prefix_sum = 0
-        counter = defaultdict(i..)
+        counter = d..(i..)
         counter[0] = 1  # trival case. !important
         ret = 0
         ___ a __ A:

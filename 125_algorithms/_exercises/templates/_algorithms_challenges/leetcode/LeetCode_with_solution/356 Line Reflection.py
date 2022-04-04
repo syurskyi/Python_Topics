@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -15,7 +15,7 @@ c_ Solution(o..
         :type points: List[List[int]]
         :rtype: bool
         """
-        d = defaultdict(l..)
+        d = d..(l..)
         ___ x, y __ points:
             d[y].a..(x)
 

@@ -4,7 +4,7 @@ premium question
 """
 
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -17,12 +17,12 @@ c_ Solution:
 
         Need to count the #appearances in the TrieNode
         """
-        hm = defaultdict(l..)
+        hm = d..(l..)
         ret = [N.. ___ _ __ words]
         ___ i, w __ e..(words
             hm[w[0], w[-1], l..(w)].a..(i)
 
-        TrieNode = l....: defaultdict(TrieNode)
+        TrieNode = l....: d..(TrieNode)
 
         ___ lst __ hm.v..
             root = TrieNode()

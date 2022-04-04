@@ -1,4 +1,4 @@
-____ c.. _______ C.., defaultdict
+____ c.. _______ C.., d..
 ____ io _______ StringIO
 _______ pandas __ pd
 _______ csv
@@ -22,7 +22,7 @@ ___ get_num_words_spoken_by_character_per_episode(content
        which is a mapping of episode=>words spoken"""
     
 
-    counts = defaultdict(C..)
+    counts = d..(C..)
     
 
     ___ line __ csv.DictReader(StringIO(content)):

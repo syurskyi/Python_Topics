@@ -17,7 +17,7 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 Note:
 The input string length won't exceed 1000.
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -34,7 +34,7 @@ c_ Solution:
         :type s: str
         :rtype: int
         """
-        F = defaultdict(l....: defaultdict(b..))
+        F = d..(l....: d..(b..))
         n = l..(s)
         ___ i __ r..(n
             F[i][i] = T..

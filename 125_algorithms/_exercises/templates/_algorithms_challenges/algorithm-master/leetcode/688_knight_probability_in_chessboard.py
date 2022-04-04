@@ -16,11 +16,11 @@ c_ Solution:
         :type c: int
         :rtype: float
         """
-        dp = c...defaultdict(i..)
+        dp = c...d..(i..)
         dp[r, c] = 1.0
 
         ___ _ __ r..(k
-            nxt = c...defaultdict(i..)
+            nxt = c...d..(i..)
 
             ___ x __ r..(n
                 ___ y __ r..(n

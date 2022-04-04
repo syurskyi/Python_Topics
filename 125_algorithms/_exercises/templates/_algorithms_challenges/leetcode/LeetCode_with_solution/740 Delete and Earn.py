@@ -33,7 +33,7 @@ The length of nums is at most 20000.
 Each element nums[i] is an integer in the range [1, 10000].
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -68,7 +68,7 @@ c_ Solution:
             F[n-2] + reward if pick n
 
         """
-        counter = defaultdict(i..)
+        counter = d..(i..)
         ___ n __ nums:
             counter[n] += 1
 

@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 _______ p__
 
@@ -29,8 +29,8 @@ ___ grouping2
 
 
 ___ test_return_type(grouping1, grouping2
-    ... t..(grouping1) __ defaultdict
-    ... t..(grouping2) __ defaultdict
+    ... t..(grouping1) __ d..
+    ... t..(grouping2) __ d..
 
 
 ___ test_return_dict_len(grouping1, grouping2

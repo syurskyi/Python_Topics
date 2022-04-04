@@ -40,7 +40,7 @@ The price of each flight will be in the range [1, 10000].
 k is in the range of [0, n - 1].
 There will not be any duplicated flights or self cycles.
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 _______ heapq
 
 
@@ -49,8 +49,8 @@ c_ Solution:
         """
         dijkstra
         """
-        G = defaultdict(d..)
-        visited = defaultdict(b..)
+        G = d..(d..)
+        visited = d..(b..)
         ___ u, v, w __ flights:
             G[u][v] = w
 

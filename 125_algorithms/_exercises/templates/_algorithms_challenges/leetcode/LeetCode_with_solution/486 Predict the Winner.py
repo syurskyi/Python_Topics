@@ -30,7 +30,7 @@ Any scores in the given array are non-negative integers and will not exceed
 10,000,000.
 If the scores of both players are equal, then player 1 is still the winner.
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -52,7 +52,7 @@ c_ Solution:
         ___ e __ nums:
             gross.a..(gross[-1] + e)
 
-        F = defaultdict(l....: defaultdict(i..))
+        F = d..(l....: d..(i..))
         ___ i __ r..(l-1, -1, -1
             ___ j __ r..(i+1, l+1
                 F[i][j] = m..(

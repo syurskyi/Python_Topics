@@ -45,7 +45,7 @@ Note:
 poured will be in the range of [0, 10 ^ 9].
 query_glass and query_row will be in the range of [0, 99].
 """
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -56,7 +56,7 @@ c_ Solution:
         glass, keep track of the total amount of champagne that flows through a
         glass.
         """
-        G = defaultdict(l....: defaultdict(i..))
+        G = d..(l....: d..(i..))
         G[0][0] = poured
         ___ i __ r..(query_row
             ___ j __ r..(i+1  # i + 1 glasses at row i

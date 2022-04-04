@@ -45,7 +45,7 @@ trust[i][0] != trust[i][1]
 1 <= trust[i][0], trust[i][1] <= N
 """
 ____ typing _______ List
-____ c.. _______ defaultdict
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -53,8 +53,8 @@ c_ Solution:
         """
         like the find the celebrity
         """
-        ingress = defaultdict(s..)
-        egress =defaultdict(s..)
+        ingress = d..(s..)
+        egress =d..(s..)
         ___ p, q __ trust:
             egress[p].add(q)
             ingress[q].add(p)

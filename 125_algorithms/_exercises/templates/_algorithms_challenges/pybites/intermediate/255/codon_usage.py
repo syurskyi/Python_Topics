@@ -1,7 +1,7 @@
 _______ __
 ____ u__.r.. _______ u..
 _______ r__
-____ c.. _______ defaultdict
+____ c.. _______ d..
 ____ i.. _______ combinations
 
 # Translation Table:
@@ -77,7 +77,7 @@ ___ return_codon_usage_table(
     
     amino_acid_mapping = get_translation_table(translation_table_str)
     total = 0
-    codon_to_count = defaultdict(i..)
+    codon_to_count = d..(i..)
     
     ___ sequence __ sequences:
         sequence = sequence.s..
