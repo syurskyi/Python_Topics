@@ -1,29 +1,29 @@
-____ t___ _______ L.., Union
-
-
-
-___ join_lists(lst_of_lst: L..[L..[s..]], sep: s..) __ Union[L..[s..], N..]:
-
-    __ n.. lst_of_lst:
-        r.. N..
-
-    
-    result    # list
-
-
-    ___ lst __ lst_of_lst:
-        result.extend(lst)
-        result.a..(sep)
-    
-    result.p.. )
-
-    r.. result
-
-
-
-    
-
-
-
-
-
+# ____ t___ _______ L.. U..
+#
+#
+#
+# ___ join_lists lst_of_lst L.. L.. s.. sep s.. __ U.. L.. s.. N..
+#
+#     __ n.. lst_of_lst
+#         r.. N..
+#
+#
+#     ?    # list
+#
+#
+#     ___ lst __ ?
+#         ?.e.. ?
+#         ?.a.. ?
+#
+#     ?.p..
+#
+#     r.. ?
+#
+#
+#
+#
+#
+#
+#
+#
+#

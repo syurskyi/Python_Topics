@@ -1,6 +1,6 @@
 _______ sqlite3
 ____ e.. _______ E..
-____ t___ _______ A.., Dict, L.., Optional, Tuple, Union
+____ t___ _______ A.., Dict, L.., Optional, Tuple, U..
 
 
 c_ SQLiteType(E..

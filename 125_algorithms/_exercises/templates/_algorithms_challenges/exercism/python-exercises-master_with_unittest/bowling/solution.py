@@ -52,8 +52,8 @@ c_ BowlingGame(o..
         """Return a frame's next throws in the form of a list."""
         throws    # list
         ___ idx __ r..(frame_idx + 1, MAX_FRAME
-            throws.extend(frames[idx].throws)
-        throws.extend(bonus_throws)
+            throws.e.. frames[idx].throws)
+        throws.e.. bonus_throws)
         r.. throws
 
     ___ roll_bonus  pins

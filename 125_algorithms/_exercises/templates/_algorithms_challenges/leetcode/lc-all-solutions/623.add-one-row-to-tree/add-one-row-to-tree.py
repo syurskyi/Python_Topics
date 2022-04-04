@@ -22,7 +22,7 @@ c_ Solution(o..
       __ n.. node:
         _____
       __ p __ 1:
-        stack.extend([(1, node.right, h + 1), (1, node.left, h + 1), (0, node, h + 1)])
+        stack.e.. [(1, node.right, h + 1), (1, node.left, h + 1), (0, node, h + 1)])
       ____ h __ d:
         left = node.left
         right = node.right

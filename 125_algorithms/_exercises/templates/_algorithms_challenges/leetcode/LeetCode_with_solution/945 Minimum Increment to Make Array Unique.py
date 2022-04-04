@@ -61,7 +61,7 @@ c_ Solution:
         ret = 0
         ___ i __ r..(40000 * 2
             __ counter[i] > 1:
-                q.extend([i] * (counter[i] - 1
+                q.e.. [i] * (counter[i] - 1
             ____ q a.. counter[i] __ 0:
                 ret += i - q.p.. )
         r.. ret

@@ -20,7 +20,7 @@ ___ extract_ipv4(data
     result    # list
     ___ l __ data:
         __ t..(l) __ l..:
-            result.extend(extract_ipv4(l
+            result.e.. extract_ipv4(l
         ____ l __ 'ip':
             print(data)
             ___

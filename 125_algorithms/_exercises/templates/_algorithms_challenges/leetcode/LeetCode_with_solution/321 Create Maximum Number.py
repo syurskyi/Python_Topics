@@ -81,6 +81,6 @@ c_ SolutionTLE(o..
                 p2 += 1
 
         # dangling
-        ret.extend(A1[p1:])
-        ret.extend(A2[p2:])
+        ret.e.. A1[p1:])
+        ret.e.. A2[p2:])
         r.. ret

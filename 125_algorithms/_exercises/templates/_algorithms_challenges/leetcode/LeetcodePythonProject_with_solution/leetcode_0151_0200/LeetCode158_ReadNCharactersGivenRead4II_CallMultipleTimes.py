@@ -23,7 +23,7 @@ c_ Solution(o..
         w... T...
             buf4 = ['']*4
             read4(buf4)
-            queue.extend(buf4)
+            queue.e.. buf4)
             curr = m..(l..(queue), n-idx)
             ___ _ __ r..(curr
                 buf[idx] = queue.p.. 0)

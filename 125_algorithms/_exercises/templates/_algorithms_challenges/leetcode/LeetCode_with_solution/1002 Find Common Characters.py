@@ -48,6 +48,6 @@ c_ Solution:
 
         ___ c __ s__.ascii_lowercase:
             __ counter[c] > 0:
-                ret.extend([c] * counter[c])
+                ret.e.. [c] * counter[c])
 
         r.. ret

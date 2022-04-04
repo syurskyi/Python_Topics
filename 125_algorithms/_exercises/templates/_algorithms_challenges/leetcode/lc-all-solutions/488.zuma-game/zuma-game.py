@@ -48,7 +48,7 @@ c_ Solution(o..
           __ dp[i] >= 3:
             i += dp[i]
           ____
-            ret.extend(line[i:i + dp[i]])
+            ret.e.. line[i:i + dp[i]])
             i += dp[i]
         r.. "".j..(ret)
 

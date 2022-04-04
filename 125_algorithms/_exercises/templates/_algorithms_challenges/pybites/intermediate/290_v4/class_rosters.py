@@ -22,5 +22,5 @@ ___ class_rosters(input_file
         ___ row __ csv.reader(f
             sis_rows = process_row(row)
             __ sis_rows:
-                sis_list.extend(sis_rows)
+                sis_list.e.. sis_rows)
     r.. sis_list

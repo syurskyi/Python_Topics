@@ -39,7 +39,7 @@ c_ Solution:
         """
         ret    # list
         ___ i __ r..(1, 10
-            ret.extend(dfs(i, N, K
+            ret.e.. dfs(i, N, K
 
         __ N __ 1:
             ret.a..([0])  # special case

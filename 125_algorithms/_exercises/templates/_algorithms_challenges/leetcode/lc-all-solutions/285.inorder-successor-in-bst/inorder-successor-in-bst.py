@@ -25,6 +25,6 @@ c_ Solution(o..
           __ p[1] __ q:
             flag = T..
         ____
-          stack.extend([(1, p[1].right), (0, p[1]), (1, p[1].left)])
+          stack.e.. [(1, p[1].right), (0, p[1]), (1, p[1].left)])
 
       r.. N..

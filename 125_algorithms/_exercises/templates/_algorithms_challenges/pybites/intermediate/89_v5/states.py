@@ -66,5 +66,5 @@ ___ combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
        (see also test_combine_state_names_and_abbreviations)"""
 
     res = s..(us_state_abbrev.values[:10]
-    res.extend(s..(states)[-10:])
+    res.e.. s..(states)[-10:])
     r.. res

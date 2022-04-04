@@ -17,6 +17,6 @@ c_ Solution:
 
         ___ k, S __ D.i..:
             __ l..(S) > 1:
-                ans.extend(S)
+                ans.e.. S)
 
         r.. ans

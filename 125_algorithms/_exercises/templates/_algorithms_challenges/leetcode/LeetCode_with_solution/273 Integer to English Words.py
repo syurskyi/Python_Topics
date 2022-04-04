@@ -83,7 +83,7 @@ c_ Solution(o..
         __ num/sig:
             prefix    # list
             toWords(num/sig, prefix)
-            ret.extend(prefix)
+            ret.e.. prefix)
             ret.a..(table[sig])
 
 

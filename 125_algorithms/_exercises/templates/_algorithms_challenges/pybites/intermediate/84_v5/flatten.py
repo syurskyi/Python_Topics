@@ -2,7 +2,7 @@ ___ flatten(list_of_lists
     res    # list
     ___ i __ list_of_lists:
         __ isi..(i, (l.., t..:
-            res.extend(flatten(i
+            res.e.. flatten(i
         ____
             res.a..(i)
     r.. res

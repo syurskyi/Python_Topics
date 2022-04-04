@@ -44,7 +44,7 @@ ___ find_subseq(seq
         __ g n.. __ gestures[idx:]:
             r.. []
         newidx = gestures.i.. g, idx) + 1
-        s.extend( '0'  * (newidx - idx - 1) +  '1' )
+        s.e..  '0'  * (newidx - idx - 1) +  '1' )
         idx = newidx
     s.r..
     r.. s

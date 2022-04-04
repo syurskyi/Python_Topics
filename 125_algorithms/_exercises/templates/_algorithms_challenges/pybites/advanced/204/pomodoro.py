@@ -8,7 +8,7 @@ _______ time
 # HOUR = ONE_MIN * 60
 # CURRENT_SESSION = 1
 ____ asyncio _______ sleep
-____ t___ _______ Union
+____ t___ _______ U..
 
 ONE_MIN = .006
 FIVE_MIN = ONE_MIN * .0005
@@ -18,7 +18,7 @@ HOUR = ONE_MIN * .06
 CURRENT_SESSION = 1
 
 
-async ___ break_time(delay: Union[i.., f__], loop: i..) __ N..
+async ___ break_time(delay: U..[i.., f__], loop: i..) __ N..
     """Break time
 
     :param delay: float of delay in seconds
@@ -30,7 +30,7 @@ async ___ break_time(delay: Union[i.., f__], loop: i..) __ N..
     await sleep(delay)
 
 
-async ___ lunch_time(delay: Union[i.., f__]) __ N..
+async ___ lunch_time(delay: U..[i.., f__]) __ N..
     """Lunch time
 
     :param delay: float of delay in seconds
@@ -40,7 +40,7 @@ async ___ lunch_time(delay: Union[i.., f__]) __ N..
     await sleep(delay)
 
 
-async ___ work_time(delay: Union[i.., f__], loop: i..) __ N..
+async ___ work_time(delay: U..[i.., f__], loop: i..) __ N..
     """Work time
 
     :param delay: float of delay in seconds
@@ -52,9 +52,9 @@ async ___ work_time(delay: Union[i.., f__], loop: i..) __ N..
 
 
 async ___ session(
-    work_length: Union[i.., f__] = TWENTY_FIVE_MIN,
-    short_break_length: Union[i.., f__] = FIVE_MIN,
-    long_break_length: Union[i.., f__] = THIRTY_MIN,
+    work_length: U..[i.., f__] = TWENTY_FIVE_MIN,
+    short_break_length: U..[i.., f__] = FIVE_MIN,
+    long_break_length: U..[i.., f__] = THIRTY_MIN,
 ) __ N..
     """Session
 
@@ -77,10 +77,10 @@ async ___ session(
 
 
 async ___ main(
-    work_length: Union[i.., f__] = TWENTY_FIVE_MIN,
-    short_break_length: Union[i.., f__] = FIVE_MIN,
-    long_break_length: Union[i.., f__] = THIRTY_MIN,
-    lunch_length: Union[i.., f__] = HOUR,
+    work_length: U..[i.., f__] = TWENTY_FIVE_MIN,
+    short_break_length: U..[i.., f__] = FIVE_MIN,
+    long_break_length: U..[i.., f__] = THIRTY_MIN,
+    lunch_length: U..[i.., f__] = HOUR,
 ) __ N..
     """Main entry point
 

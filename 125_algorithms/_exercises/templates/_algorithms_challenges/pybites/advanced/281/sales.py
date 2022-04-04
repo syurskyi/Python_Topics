@@ -1,7 +1,7 @@
 _______ json
 _______ __
 ____ p.. _______ P..
-____ t___ _______ Dict, L.., Union
+____ t___ _______ Dict, L.., U..
 
 _______ pandas __ pd  # type: ignore
 _______ r__
@@ -46,7 +46,7 @@ ___ process_data(url: s..) __ pd.DataFrame:
     r.. monthly_sales
 
 
-___ summary_report(df: pd.DataFrame, stats: Union[L..[s..], N..] = STATS) __ N..
+___ summary_report(df: pd.DataFrame, stats: U..[L..[s..], N..] = STATS) __ N..
     """Summary report generated from the DataFrame and list of stats
 
     Will aggregate statistics for sum, mean, and max by default.

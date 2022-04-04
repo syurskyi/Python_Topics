@@ -51,6 +51,6 @@ c_ Solution:
 
         ret    # list
         ___ e __ lst:
-            ret.extend(e)
+            ret.e.. e)
 
         r.. ret

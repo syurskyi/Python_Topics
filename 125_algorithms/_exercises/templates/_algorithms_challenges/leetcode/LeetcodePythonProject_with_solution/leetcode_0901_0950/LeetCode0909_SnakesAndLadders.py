@@ -7,7 +7,7 @@ c_ Solution(o..
         n = l..(board)
         newboard    # list
         ___ i __ r..(n
-            newboard.extend(board[n-i-1] __ i % 2 __ 0 ____ board[n-i-1][::-1])
+            newboard.e.. board[n-i-1] __ i % 2 __ 0 ____ board[n-i-1][::-1])
         board = newboard
         n = l..(board)
         queue = [(0, 0)]

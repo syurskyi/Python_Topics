@@ -12,7 +12,7 @@ c_ School:
     ___ roster
         all_student_names    # list
         ___ grade_number __ s..(db.k..
-            all_student_names.extend(db[grade_number])
+            all_student_names.e.. db[grade_number])
         r.. all_student_names
 
     ___ grade  grade_number

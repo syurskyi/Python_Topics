@@ -86,7 +86,7 @@ c_ Solution:
                     cur_q.appendleft(prev)
                     cur_q.a..(e)
                 ____
-                    ret.extend(cur_q)
+                    ret.e.. cur_q)
                     cur_q = d..()
 
         r.. "".j..(ret)

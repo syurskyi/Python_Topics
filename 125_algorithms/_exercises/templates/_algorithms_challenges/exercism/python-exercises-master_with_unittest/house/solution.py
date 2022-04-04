@@ -14,7 +14,7 @@ parts = [('lay in', 'the house that Jack built'),
 
 ___ verse(n
     v =  'This is {}'.f..(parts[n][1])]
-    v.extend( 'that {0} {1}'.f..(parts[i][0], parts[i][1])
+    v.e..  'that {0} {1}'.f..(parts[i][0], parts[i][1])
               ___ i __ r..(n - 1, -1, -1)])
     v[-1] += '.'
     r.. '\n'.j..(v)

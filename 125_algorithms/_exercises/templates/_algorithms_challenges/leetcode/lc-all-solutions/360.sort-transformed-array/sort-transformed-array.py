@@ -49,7 +49,7 @@ c_ Solution(o..
         res.a..(downTop)
         downIdx += 1
     __ upIdx < l..(up
-      res.extend(up[upIdx:l..(up)])
+      res.e.. up[upIdx:l..(up)])
     __ downIdx < l..(down
-      res.extend(down[downIdx:l..(down)])
+      res.e.. down[downIdx:l..(down)])
     r.. res

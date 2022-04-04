@@ -39,12 +39,12 @@ c_ MiniTwitter:
         res    # list
 
         __ user_id __ tweets:
-            res.extend(tweets[user_id][-10:])
+            res.e.. tweets[user_id][-10:])
 
         __ user_id __ followings:
             ___ follow_id __ followings[user_id]:
                 __ follow_id __ tweets:
-                    res.extend(tweets[follow_id][-10:])
+                    res.e.. tweets[follow_id][-10:])
 
         __ n.. res:
             r.. []

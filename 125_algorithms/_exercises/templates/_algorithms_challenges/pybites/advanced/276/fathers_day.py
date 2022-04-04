@@ -38,7 +38,7 @@ ___ _parse_father_days_per_country(year, date_to_countries,filename=fathers_days
 
                 __ date __ year:
                     day = day.s..
-                    date_to_countries[day].extend(countries)
+                    date_to_countries[day].e.. countries)
 
 
 ___ _parse_recurring_father_days(days_to_countries,filename=fathers_days_recurring

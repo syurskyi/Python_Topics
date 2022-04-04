@@ -93,7 +93,7 @@ ___ filter_killed_mutants(mutpy_output: l.. = N..) __ l..:
                 code_block = [line]
             ____
                 __ a..(fil n.. __ mutpy_output[i +1] ___ fil __ filters
-                    filtered.extend(code_block)
+                    filtered.e.. code_block)
                 code_block = N..
                 previous_dashed_line = N..
         ____ n.. code_block:

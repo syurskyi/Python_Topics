@@ -19,5 +19,5 @@ c_ Solution(o..
       __ p[0] __ 0:
         res.a..(p[1].val)
       ____
-        stack.extend([(0, p[1]), (1, p[1].right), (1, p[1].left)])
+        stack.e.. [(0, p[1]), (1, p[1].right), (1, p[1].left)])
     r.. res

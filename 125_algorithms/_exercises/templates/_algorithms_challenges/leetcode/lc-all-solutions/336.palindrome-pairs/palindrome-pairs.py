@@ -11,7 +11,7 @@ c_ Solution(o..
 
     ___ i, word __ e..(words
       __ word __ "":
-        ans.extend([(i, j) ___ j __ r..(l..(words __ i != j a.. words[j] __ words[j][::-1]])
+        ans.e.. [(i, j) ___ j __ r..(l..(words __ i != j a.. words[j] __ words[j][::-1]])
         _____
       ___ j __ r..(l..(word:
         left = word[:j]

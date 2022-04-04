@@ -37,7 +37,7 @@ c_ Solution(o..
         ret    # list
         ___ k, v __ h1.i..:
             cnt = m..(v, h2[k])
-            ret.extend([k]*cnt)
+            ret.e.. [k]*cnt)
 
         r.. ret
 

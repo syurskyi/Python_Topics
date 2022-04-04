@@ -20,10 +20,10 @@ Note: Calling the function with an empty list should return None.
 
 ### ----------------------------- My solution -----------------------------------
 
-____ t___ _______ L.., Union
+____ t___ _______ L.., U..
 ____ f.. _______ r..
 
-___ my_join_lists(lst_of_lst: L..[L..[s..]], sep: s..) __ Union[L..[s..], N..]:
+___ my_join_lists(lst_of_lst: L..[L..[s..]], sep: s..) __ U..[L..[s..], N..]:
     __ l..(lst_of_lst) __ 0:
         r.. N..
     result    # list
@@ -42,7 +42,7 @@ print(my_join_lists([['a', 'b' ,  'c']], '&'
 
 ### -------------------------------- Pybites solution -------------------------------
 
-___ join_lists(lst_of_lst: L..[L..[s..]], sep: s..) __ Union[L..[s..], N..]:
+___ join_lists(lst_of_lst: L..[L..[s..]], sep: s..) __ U..[L..[s..], N..]:
     __ n.. lst_of_lst:
         r.. N..
 

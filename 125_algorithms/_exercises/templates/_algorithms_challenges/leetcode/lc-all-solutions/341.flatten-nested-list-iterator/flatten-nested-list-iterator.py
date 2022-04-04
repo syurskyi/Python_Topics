@@ -58,7 +58,7 @@ c_ NestedIterator(o..
         value = top.getInteger()
         r.. T..
       ____
-        stack.extend(top.getList()[::-1])
+        stack.e.. top.getList()[::-1])
     r.. F..
 
 # Your NestedIterator object will be instantiated and called as such:

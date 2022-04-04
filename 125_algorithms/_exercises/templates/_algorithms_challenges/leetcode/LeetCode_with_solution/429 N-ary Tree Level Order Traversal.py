@@ -28,7 +28,7 @@ c_ Solution:
             cur    # list
             q_new    # list
             ___ e __ q:
-                q_new.extend(e.children)
+                q_new.e.. e.children)
                 cur.a..(e.val)
 
             ret.a..(cur)

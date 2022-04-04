@@ -20,7 +20,7 @@ c_ GeoHash:
         ___ char __ geohash:
             __ char n.. __ base32:
                 r.. []
-            bin_codes.extend(_oct_to_bins(base32.i.. char)))
+            bin_codes.e.. _oct_to_bins(base32.i.. char)))
 
         n = l..(bin_codes)
         lat_codes = [bin_codes[i] ___ i __ r..(1, n, 2)]

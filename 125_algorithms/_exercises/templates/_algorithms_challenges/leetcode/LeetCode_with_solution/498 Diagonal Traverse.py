@@ -38,9 +38,9 @@ c_ Solution:
         ret    # list
         ___ i __ r..(R+C-1
             __ i % 2 __ 1:
-                ret.extend(F[i])
+                ret.e.. F[i])
             ____
-                ret.extend(F[i][::-1])
+                ret.e.. F[i][::-1])
 
         r.. ret
 

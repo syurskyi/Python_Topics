@@ -77,7 +77,7 @@ ___ filter_killed_mutants(mutpy_output: l..  N..) __ l..:
         __ in_test:
             __ line.startswith(' '
                 __ 'survived' __ line:
-                    output.extend(test_result)
+                    output.e.. test_result)
                 test_result.clear()
                 output.a..(line)
                 in_test  F..

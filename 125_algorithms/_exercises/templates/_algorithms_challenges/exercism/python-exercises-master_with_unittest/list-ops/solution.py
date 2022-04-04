@@ -40,7 +40,7 @@ ___ flat(xs
     out    # list
     ___ item __ xs:
         __ isi..(item, l..
-            out.extend(flat(item
+            out.e.. flat(item
         ____
             out.a..(item)
     r.. out

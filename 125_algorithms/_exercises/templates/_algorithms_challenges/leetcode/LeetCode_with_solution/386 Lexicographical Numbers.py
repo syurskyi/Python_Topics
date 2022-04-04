@@ -38,7 +38,7 @@ c_ Solution(o..
         ___ i __ x..(1, 10
             sig = 1
             w.... i * sig <= n:
-                ret.extend(r..(
+                ret.e.. r..(
                     i * sig,
                     m..((1+i)*sig-1, n)+1),
                 )

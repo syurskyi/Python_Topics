@@ -6,7 +6,7 @@ ___ flatten(list_of_lists
     
     ___ l __ list_of_lists:
         __ t..(l) __ (t..,l..
-            new_list.extend(flatten(l
+            new_list.e.. flatten(l
         ____
             new_list.a..(l)
     

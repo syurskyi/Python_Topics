@@ -39,7 +39,7 @@ c_ BSTIterator(o..
         l.a..((0, p[1]
         __ p[1].left:
           l.a..((1, p[1].left
-        stack.extend(l)
+        stack.e.. l)
 
 # Your BSTIterator will be called like this:
 # i, v = BSTIterator(root), []

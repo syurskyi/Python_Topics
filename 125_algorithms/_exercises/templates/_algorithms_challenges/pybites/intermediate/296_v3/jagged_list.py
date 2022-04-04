@@ -10,7 +10,7 @@ ___ jagged_list(lst_of_lst: L..[L..[i..]], fillvalue: i.. = 0) __ L..[L..[i..]]:
 
 
     ___ l __ lst_of_lst:
-        l.extend([fillvalue] * (max_length - l..(l)))
+        l.e.. [fillvalue] * (max_length - l..(l)))
 
 
     r.. lst_of_lst
