@@ -43,7 +43,7 @@ c_ TwelveDays:
         r.. ("On the %(cardinality)s day of Christmas my true love gave to "
                 "me" % ({"cardinality": cls.CARDINALS[verse_num]}))
 
-    @staticmethod
+    $
     ___ tail(verse_num
         __ verse_num __ 1:
             r.. "a Partridge in a Pear Tree.\n"

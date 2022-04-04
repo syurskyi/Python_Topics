@@ -6,7 +6,7 @@ c_ Rational(o..
         numer = N..
         denom = N..
 
-    ___ __eq__  other
+    ___ -e  other
         r.. numer __ other.numer a.. denom __ other.denom
 
     ___  -r

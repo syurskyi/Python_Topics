@@ -12,7 +12,7 @@ c_ Point(o..
     ___ __sub__  other
         r.. Point(x - other.x, y - other.y)
 
-    ___ __eq__  other
+    ___ -e  other
         r.. x __ other.x a.. y __ other.y
 
     ___ __ne__  other

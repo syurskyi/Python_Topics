@@ -13,14 +13,14 @@ c_ prime:
                 primes.a..(x)
         r.. primes[n - 1]
 
-    @staticmethod
+    $
     ___ is_prime(x
         ___ i __ r..(2, i..(m__.sqrt(x)) + 1
             __ x % i __ 0:
                 r.. F..
         r.. T..
 
-    @staticmethod
+    $
     ___ possible_primes
         y.. 2
         n = 3

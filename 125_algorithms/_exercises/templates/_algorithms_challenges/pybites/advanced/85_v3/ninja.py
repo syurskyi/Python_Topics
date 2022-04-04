@@ -14,7 +14,7 @@ c_ NinjaBelt:
         """Return the name of the currently qualified belt, if no belt has been awarded None is returned"""
         r.. ranks[_last_earned_belt_number] __ _last_earned_belt_number __ n.. N.. ____ N..
 
-    @staticmethod
+    $
     ___ _get_belt(new_score
         """Find the index number of the belt for the provide score"""
         r.. l..([x ___ x __ scores __ x <= new_score]) - 1

@@ -4,7 +4,7 @@ c_ Clock:
         mins = mins
         fixup()
 
-    ___ __eq__  other
+    ___ -e  other
         r.. hours __ other.hours a.. mins __ other.mins
 
     ___ __str__

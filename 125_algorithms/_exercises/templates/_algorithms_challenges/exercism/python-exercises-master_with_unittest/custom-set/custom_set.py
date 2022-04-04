@@ -14,7 +14,7 @@ c_ CustomSet(o..
     ___ isdisjoint  other
         p..
 
-    ___ __eq__  other
+    ___ -e  other
         p..
 
     ___ add  element

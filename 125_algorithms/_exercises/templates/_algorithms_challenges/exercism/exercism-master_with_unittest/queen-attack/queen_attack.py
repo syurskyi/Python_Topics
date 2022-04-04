@@ -36,11 +36,11 @@ c_ Board:
     ___ different_coords
         r.. white_coords != black_coords
 
-    @staticmethod
+    $
     ___ valid_coord(coord
         r.. (0 <= coord[0] <= 7 a.. 0 <= coord[1] <= 7)
 
-    @staticmethod
+    $
     ___ place_piece(board, piece, coords
         board[coords[0]][coords[1]] = piece
         r.. board

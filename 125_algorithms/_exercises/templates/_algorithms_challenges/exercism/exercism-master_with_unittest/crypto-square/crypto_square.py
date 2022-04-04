@@ -22,17 +22,17 @@ c_ CryptoSquare:
         transposed_matrix = cls.transpose_uneven_matrix(matrix)
         r.. [''.j..(row) ___ row __ transposed_matrix]
 
-    @staticmethod
+    $
     ___ normalize(msg
         r.. ''.j..(ch.l.. ___ ch __ msg __ ch n.. __
                        s..(s__.punctuation + ' '))
 
-    @staticmethod
+    $
     ___ square_size(msg_length
         r.. i..(m__.ceil(msg_length ** 0.5))
 
     # https://stackoverflow.com/a/4938130/2813210
-    @staticmethod
+    $
     ___ transpose_uneven_matrix(matrix
         transposed_matrix = l..(i...z__(*matrix))
         # Remove None's

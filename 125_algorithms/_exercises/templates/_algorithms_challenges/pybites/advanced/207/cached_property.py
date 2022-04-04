@@ -23,7 +23,7 @@ c_ Planet:
     SOLAR_MASS_UNITS = 'M\N{SUN}'
 
     ___ - , color
-        color = color
+        ? ?
         _mass = N..
 
     ___  -r

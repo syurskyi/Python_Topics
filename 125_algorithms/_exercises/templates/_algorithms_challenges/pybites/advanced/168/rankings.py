@@ -48,7 +48,7 @@ c_ Ninja:
 
         r.. V...
 
-    ___ __eq__ other
+    ___ -e other
         __ isi..(other,Ninja
 
             r.. bites __ other.bites

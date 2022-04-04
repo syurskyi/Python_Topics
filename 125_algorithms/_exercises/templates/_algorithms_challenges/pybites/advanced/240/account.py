@@ -34,7 +34,7 @@ c_ Account:
     ___ __getitem__  position
         r.. _transactions[position]
 
-    ___ __eq__  other
+    ___ -e  other
         r.. balance __ other.balance
 
     ___ __lt__  other

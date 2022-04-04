@@ -1,26 +1,26 @@
 c_ List(o..
-  @staticmethod
+  $
   ___ delete(elem
     elem.prev.next = elem.next
     elem.next.prev = elem.prev
     r.. elem
 
-  @staticmethod
+  $
   ___ move(elem, newPrev, newNext
     elem.prev = newPrev
     elem.next = newNext
     newPrev.next = elem
     newNext.prev = elem
 
-  @staticmethod
+  $
   ___ a..(head, elem
     List.move(elem, head.prev, head)
 
-  @staticmethod
+  $
   ___ isEmpty(head
     r.. head.next __ head.prev __ head
 
-  @staticmethod
+  $
   ___ initHead(head
     head.prev = head.next = head
 

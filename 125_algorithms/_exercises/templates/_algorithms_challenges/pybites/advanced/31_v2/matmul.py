@@ -10,7 +10,7 @@ c_ Matrix(o..
     ___ values
         r.. _values
 
-    @staticmethod
+    $
     ___ _matrix_mult(mat1, mat2
         result = [([s..(a * b ___ a, b __ z..(x, y)) ___ y __ z..(*mat2)]) ___ x __ mat1]
         r.. result

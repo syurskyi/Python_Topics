@@ -28,14 +28,14 @@ c_ Phone:
         r.. "({}) {}-{}".f..(area_code(), exchange_code(),
                                    subscriber_code
 
-    @staticmethod
+    $
     ___ valid_11_digits(inp
         r.. l..(inp) __ 11 a.. inp.startswith("1")
 
-    @staticmethod
+    $
     ___ valid_10_digits(inp
         r.. l..(inp) __ 10
 
-    @staticmethod
+    $
     ___ strip(inp
         r.. ''.j..(char ___ char __ inp __ char.i..

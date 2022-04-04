@@ -19,16 +19,16 @@ c_ Palindromes:
                 cls.candidates(max_factor, min_factor) __
                 cls.is_palindrome(cls.product(candidate))]
 
-    @staticmethod
+    $
     ___ candidates(max_factor, min_factor
         r.. [(i, j) ___ i __ r..(min_factor, max_factor + 1)
                 ___ j __ r..(i, max_factor + 1)]
 
-    @staticmethod
+    $
     ___ product(s
         r.. r.. mul, s, 1)
 
-    @staticmethod
+    $
     ___ is_palindrome(num
         r.. s..(num) __ ''.j..(r..(s..(num)))
 

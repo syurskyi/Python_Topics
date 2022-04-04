@@ -22,10 +22,10 @@ c_ Color:
     """
 
     ___ - , color
-        color = color
+        ? ?
         rgb = COLOR_NAMES.g.. color.upper
 
-    @staticmethod
+    $
     ___ hex2rgb(hex_value
         """Class method that converts a hex value into an rgb one"""
         __ t..(hex_value) != s.. o. l..(hex_value) != 7:
@@ -61,7 +61,7 @@ c_ Color:
 
 
 
-    @staticmethod
+    $
     ___ rgb2hex(rgb_value
         """Class method that converts an rgb value into a hex one"""
         __ t..(rgb_value) n.. __ [l..,t..] o. l..(rgb_value) != 3:

@@ -64,7 +64,7 @@ c_ Calculator:
             inp = inp.r..(operator, token)
         r.. inp
 
-    @staticmethod
+    $
     ___ digit(element
         r.. element.l..("-").i..
 

@@ -22,7 +22,7 @@ c_ Account:
             r.. V...()
         r.. balance > other.balance
 
-    ___ __eq__  other
+    ___ -e  other
         __ n.. isi..(other, Account
             r.. V...()
         r.. balance __ other.balance

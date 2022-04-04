@@ -23,7 +23,7 @@ c_ Color:
 
     ___ - , color
         rgb = COLOR_NAMES.g.. color.upper
-        color = color
+        ? ?
 
     ___ hex2rgb(hex_value
         """Class method that converts a hex value into an rgb one"""

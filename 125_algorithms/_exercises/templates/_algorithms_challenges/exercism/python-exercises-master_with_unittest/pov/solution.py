@@ -15,7 +15,7 @@ c_ Tree(o..
     ___ __lt__  other
         r.. label < other.label
 
-    ___ __eq__  other
+    ___ -e  other
         r.. __dict__() __ other.__dict__()
 
     ___ __iter__

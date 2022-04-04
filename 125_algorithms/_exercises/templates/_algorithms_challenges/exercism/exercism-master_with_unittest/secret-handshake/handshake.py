@@ -46,25 +46,25 @@ c_ Handshake:
     ___ valid_handshake  handshake
         r.. s..(handshake) <= s..(EVENTS)
 
-    @staticmethod
+    $
     ___ valid_integer(integer
         r.. integer >= 0
 
-    @staticmethod
+    $
     ___ valid_string(s__
         r.. n.. b..(__.s..('[^01]', s__))
 
-    @staticmethod
+    $
     ___ testBit(int_type, offset
         mask = 1 << offset
         r.. (int_type & mask) > 0
 
-    @staticmethod
+    $
     ___ setBit(int_type, offset
         mask = 1 << offset
         r.. (int_type | mask)
 
-    @staticmethod
+    $
     ___ to_num(inp
         __ isi..(inp, s..
             r.. i..(inp, 2)

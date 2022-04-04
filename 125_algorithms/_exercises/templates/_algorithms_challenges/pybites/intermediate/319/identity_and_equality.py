@@ -6,16 +6,16 @@ c_ Car:
     """
 
     ___ - , model, color
-        model = model
-        color = color
+        ? ?
+        ? ?
 
-    ___ __eq__  other_car
+    ___ -e  other_car
         r.. (
             model.l.. __ other_car.model.l..
             a.. color.l.. __ other_car.color.l..
         )
 
-    @staticmethod
+    $
     ___ age(days
         """if / elif / else for exercise sake, if there would
            be more conditions we would use a dict / mapping
@@ -27,7 +27,7 @@ c_ Car:
         ____:
             r.. "Neither a week, nor a year old"
 
-    @staticmethod
+    $
     ___ has_same_configuration(config1, config2
         __ n.. isi..(config1, l..) o. n.. isi..(config2, l..
             r.. T..()
@@ -39,7 +39,7 @@ ___ is_same_car_color_and_model(car1, car2
     """
     Returns true if car1 and car2 are the of same model and color
     """
-    __ Car.__eq__(car1, car2
+    __ Car.-e(car1, car2
         r.. T..
     r.. F..
 

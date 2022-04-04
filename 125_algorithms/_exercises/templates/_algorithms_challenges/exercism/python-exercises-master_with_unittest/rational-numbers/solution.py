@@ -21,7 +21,7 @@ c_ Rational(o..
                 n, d = -n, -d
         r.. n, d
 
-    ___ __eq__  other
+    ___ -e  other
         r.. numer __ other.numer a.. denom __ other.denom
 
     ___  -r

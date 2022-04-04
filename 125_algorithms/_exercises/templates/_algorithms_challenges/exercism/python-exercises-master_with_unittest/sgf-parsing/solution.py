@@ -3,7 +3,7 @@ c_ SgfTree(o..
         properties = properties o. {}
         children = children o. []
 
-    ___ __eq__  other
+    ___ -e  other
         __ n.. isi..(other, SgfTree
             r.. F..
         ___ k, v __ properties.i..:

@@ -10,7 +10,7 @@ c_ Clock(o..
     ___  -r
         r.. "%02d:%02d" % (hour, minute)
 
-    ___ __eq__  other
+    ___ -e  other
         r.. r.. (self) __ r.. (other)
 
     ___ add  minutes

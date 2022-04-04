@@ -33,15 +33,15 @@ c_ Beer:
                 'container': cls.container(num),
                 'cardinality': cls.cardinality(num)}
 
-    @staticmethod
+    $
     ___ quantity(num
         r.. 'no more' __ num __ 0 ____ s..(num)
 
-    @staticmethod
+    $
     ___ container(num
         r.. 'bottle' __ num __ 1 ____ 'bottles'
 
-    @staticmethod
+    $
     ___ cardinality(num
         r.. 'it' __ num __ 0 ____ 'one'
 

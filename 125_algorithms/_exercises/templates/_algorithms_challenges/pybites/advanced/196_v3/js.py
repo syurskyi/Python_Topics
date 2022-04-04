@@ -51,7 +51,7 @@ c_ JsObject:
     ___ __iter__
         y.. ____ _local
 
-    ___ __eq__  other
+    ___ -e  other
         r.. _local __ other._local
 
     ___ keys

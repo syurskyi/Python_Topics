@@ -14,7 +14,7 @@ c_ Account:
         r.. l..(_transactions)
     
 
-    ___ __eq__ other
+    ___ -e other
         __ isi..(other,Account
             r.. balance __ other.balance
     

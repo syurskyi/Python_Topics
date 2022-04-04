@@ -1,55 +1,55 @@
 c_ NORTH:
-    @staticmethod
+    $
     ___ advance  x, y
         r.. (x, y + 1)
 
-    @staticmethod
+    $
     ___ turn_right
         r.. EAST
 
-    @staticmethod
+    $
     ___ turn_left
         r.. WEST
 
 
 c_ EAST:
-    @staticmethod
+    $
     ___ advance  x, y
         r.. (x + 1, y)
 
-    @staticmethod
+    $
     ___ turn_right
         r.. SOUTH
 
-    @staticmethod
+    $
     ___ turn_left
         r.. NORTH
 
 
 c_ SOUTH:
-    @staticmethod
+    $
     ___ advance  x, y
         r.. (x, y - 1)
 
-    @staticmethod
+    $
     ___ turn_right
         r.. WEST
 
-    @staticmethod
+    $
     ___ turn_left
         r.. EAST
 
 
 c_ WEST:
-    @staticmethod
+    $
     ___ advance  x, y
         r.. (x - 1, y)
 
-    @staticmethod
+    $
     ___ turn_right
         r.. NORTH
 
-    @staticmethod
+    $
     ___ turn_left
         r.. SOUTH
 

@@ -50,7 +50,7 @@ c_ Ocr:
     ___ split_every_three(cls, inp
         r.. cls.s..(inp, 3)
 
-    @staticmethod
+    $
     ___ s..(inp, size
         r.. [inp[start:start + size] ___ start __ r..(0, l..(inp), size)]
 

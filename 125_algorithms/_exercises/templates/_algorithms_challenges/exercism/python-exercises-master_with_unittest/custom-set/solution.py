@@ -17,7 +17,7 @@ c_ CustomSet(o..
     ___ isdisjoint  other
         r.. a..(x n.. __ other ___ x __ self)
 
-    ___ __eq__  other
+    ___ -e  other
         r.. issubset(other) a.. other.issubset(self)
 
     ___ add  element

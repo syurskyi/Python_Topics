@@ -35,7 +35,7 @@ c_ Ninja:
     ___ __lt__  other
         r.. bites < other.bites
 
-    ___ __eq__  other
+    ___ -e  other
         r.. bites __ other.bites
 
     ___ __str__
