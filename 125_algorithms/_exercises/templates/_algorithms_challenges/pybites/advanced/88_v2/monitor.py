@@ -12,7 +12,7 @@ violations = C..()
 
 ___ get_today
     """Making it easier to test/mock"""
-    r.. date.today()
+    r.. date.t..
 
 
 @contextmanager

@@ -3,7 +3,7 @@ ____ dateutil.relativedelta _______ *
 ____ dateutil.rrule _______ *
 
 NOW = d__.n..
-TODAY = date.today()
+TODAY = date.t..
 
 print(NOW, TODAY)
 

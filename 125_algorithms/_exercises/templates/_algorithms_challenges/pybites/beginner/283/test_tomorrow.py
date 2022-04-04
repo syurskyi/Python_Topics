@@ -1,12 +1,12 @@
 _______ d__
 ____ r__ _______ randint
 
-____ freezegun _______ freeze_time
+____ f.. _______ f..
 
 ____ tomorrow _______ tomorrow
 
 
-@freeze_time('2020-07-09')
+$f..('2020-07-09')
 ___ test_no_args
     ... tomorrow() __ d__.date(2020, 7, 10)
 

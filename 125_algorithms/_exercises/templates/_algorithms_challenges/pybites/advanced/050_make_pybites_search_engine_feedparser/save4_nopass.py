@@ -20,8 +20,8 @@ c_ AttrDict(d..
         super(AttrDict, self).__init__ $ $$
         __dict__ = self
 
-dt1 = d__(2018, 2, 18, 19, 52, 0).timetuple()
-dt2 = d__(2017, 1, 6, 11, 0, 0).timetuple()
+dt1 = d__(2018, 2, 18, 19, 52, 0).t..
+dt2 = d__(2017, 1, 6, 11, 0, 0).t..
 
 FEED = AttrDict({'entries':
                 [AttrDict({'author': 'PyBites',

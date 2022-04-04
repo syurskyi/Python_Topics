@@ -24,7 +24,7 @@ reboot    ~                         Sun Oct 18 17:11
 reboot    ~                         Mon Oct  5 09:35
 reboot    ~                         Sat Oct  3 18:57
 """
-THIS_YEAR = date.today().year
+THIS_YEAR = date.t...year
 
 
 ___ test_default_output

@@ -15,8 +15,8 @@ c_ AttrDict(d..
         __dict__ = self
 
 
-dt1 = d__(2018, 2, 18, 19, 52, 0).timetuple()
-dt2 = d__(2017, 1, 6, 11, 0, 0).timetuple()
+dt1 = d__(2018, 2, 18, 19, 52, 0).t..
+dt2 = d__(2017, 1, 6, 11, 0, 0).t..
 
 MOCK_ENTRIES = AttrDict({'entries':
                 [AttrDict({'author': 'PyBites',
@@ -44,11 +44,11 @@ MOCK_ENTRIES = AttrDict({'entries':
 
 
 ?p__.m__.p.("arg, ret", [
-    (d__(2017, 9, 12, 8, 50, 0).timetuple(),
+    (d__(2017, 9, 12, 8, 50, 0).t.. ,
      date y.._2017,  m.._9,  d.._12)),
-    (d__(2017, 9, 8, 14, 30, 0).timetuple(),
+    (d__(2017, 9, 8, 14, 30, 0).t.. ,
      date y.._2017,  m.._9,  d.._8)),
-    (d__(2016, 12, 19, 9, 26, 0).timetuple(),
+    (d__(2016, 12, 19, 9, 26, 0).t.. ,
      date y.._2016,  m.._12,  d.._19)),
 ])
 ___ test_convert_struct_time_to_dt(arg, ret

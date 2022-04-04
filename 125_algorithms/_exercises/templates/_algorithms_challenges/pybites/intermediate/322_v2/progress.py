@@ -5,14 +5,14 @@ ____ d__ _______ t..
 ___ ontrack_reading(books_goal: i.., books_read: i..,
                     day_of_year: i.. = N..) __ b..:
 
-    year = d__.today().year
+    year = d__.t...year
     boy = d__(year, 1, 1)
     eoy = d__(year, 12, 31)
 
     __ day_of_year:
         today = boy + t..(d.._day_of_year-1)
     ____:
-        today = d__.today()
+        today = d__.t..
 
     days_left = (eoy - today).days
     books_left = books_goal - books_read

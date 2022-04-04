@@ -1,6 +1,6 @@
 ____ d__ _______ date, d__, time, t..
 
-TODAY = date.today()
+TODAY = date.t..
 
 
 ___ gen_bite_planning(num_bites=1, num_days=1, start_date=TODAY
