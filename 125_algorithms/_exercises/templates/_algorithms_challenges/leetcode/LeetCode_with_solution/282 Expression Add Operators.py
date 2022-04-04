@@ -30,7 +30,7 @@ c_ Solution(o..
         r.. ret
 
     ___ dfs  num, target, pos, cur_str, cur_val, mul, ret
-        __ pos >= l..(num
+        __ pos >_ l..(num
             __ cur_val __ target:
                 ret.a..(cur_str)
         ____

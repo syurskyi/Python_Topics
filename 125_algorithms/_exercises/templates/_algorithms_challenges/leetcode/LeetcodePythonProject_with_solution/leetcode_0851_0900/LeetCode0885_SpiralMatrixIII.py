@@ -16,7 +16,7 @@ c_ Solution(o..
         dx, dy, n = 0, 1, 0
         w.... l..(res) < R*C:
             ___ _ __ r..(n//2+1
-                __ 0 <= r0 < R a.. 0 <= c0 < C:
+                __ 0 <_ r0 < R a.. 0 <_ c0 < C:
                     res.a..([r0, c0])
                 r0, c0 = r0+dx, c0+dy
             dx, dy, n = dy, -dx, n+1
@@ -47,7 +47,7 @@ c_ Solution(o..
         r.. res
     
     ___ isInRange  pos, R, C
-        r.. 0 <= pos[0] < R a.. 0 <= pos[1] < C
+        r.. 0 <_ pos[0] < R a.. 0 <_ pos[1] < C
     
     ___ test
         testCases = [

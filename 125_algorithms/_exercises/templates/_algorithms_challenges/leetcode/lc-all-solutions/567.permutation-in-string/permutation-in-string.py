@@ -12,7 +12,7 @@ c_ Solution(o..
     window    # dict
     ___ i, c __ e..(s2
       window[c] = window.g.. c, 0) + 1
-      __ i >= l..(s1
+      __ i >_ l..(s1
         window[s2[i - n]] = window.g.. s2[i - n], 0) - 1
         __ window[s2[i - n]] __ 0:
           del window[s2[i - n]]

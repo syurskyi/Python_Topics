@@ -15,7 +15,7 @@ c_ Solution:
         w.... left < right:
             # if minimum + maximum still <= target
             # ignore the 2nd, 3rd maximum
-            __ A[left] + A[right] <= target:
+            __ A[left] + A[right] <_ target:
                 left += 1
                 _____
 

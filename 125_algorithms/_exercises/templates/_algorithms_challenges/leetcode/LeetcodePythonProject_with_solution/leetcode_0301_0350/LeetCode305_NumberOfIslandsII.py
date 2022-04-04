@@ -15,7 +15,7 @@ c_ Solution(o..
             count += 1
             root0 = i*n+j
             ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1
-                __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y]:
+                __ 0 <_ x < m a.. 0 <_ y < n a.. grid[x][y]:
                     root = getRoot(roots, x*n+y)
                     __ root != root0:
                         count -= 1

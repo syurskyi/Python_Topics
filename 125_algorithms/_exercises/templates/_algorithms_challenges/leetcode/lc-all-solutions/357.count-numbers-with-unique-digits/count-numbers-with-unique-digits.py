@@ -4,7 +4,7 @@ c_ Solution(o..
     :type n: int
     :rtype: int4
     """
-    __ n <= 1:
+    __ n <_ 1:
       r.. 10 ** n
     dp = [0] * (n + 1)
     dp[0] = 0

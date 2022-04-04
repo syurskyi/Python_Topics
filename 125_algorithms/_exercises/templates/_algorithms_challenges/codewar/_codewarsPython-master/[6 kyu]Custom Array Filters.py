@@ -10,4 +10,4 @@ c_ l..(o..
     ___ over num
         r.. [n ___ n __ arg __ n > num]
     ___ in_range m..,m..
-        r.. [n ___ n __ arg __ n >= m.. a.. n <= m..]
+        r.. [n ___ n __ arg __ n >_ m.. a.. n <_ m..]

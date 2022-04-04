@@ -19,7 +19,7 @@ c_ Solution(o..
         r..
       inorder(root.left)
       __ val __ n.. N..
-        ans = m..(ans, abs(root.val - val
+        ans = m..(ans, a..(root.val - val
       val = root.val
       inorder(root.right)
 

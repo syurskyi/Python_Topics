@@ -42,7 +42,7 @@ c_ Solution:
         r.. -1
 
     ___ _get  i
-        __ i < 0 o. i >= l..(A
+        __ i < 0 o. i >_ l..(A
             r.. -___.maxint-1
         ____
             r.. A[i]

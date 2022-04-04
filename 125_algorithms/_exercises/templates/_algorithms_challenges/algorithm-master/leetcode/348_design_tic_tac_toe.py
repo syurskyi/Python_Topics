@@ -29,10 +29,10 @@ c_ TicTacToe(o..
         C[y] += delta
         DR += delta __ x __ y ____ 0  # x - y == 0
         DL += delta __ x __ n - 1 - y ____ 0  # x + y == n - 1
-        r.. (abs(R[x]) __ n o.
-                abs(C[y]) __ n o.
-                abs(DR) __ n o.
-                abs(DL) __ n)
+        r.. (a..(R[x]) __ n o.
+                a..(C[y]) __ n o.
+                a..(DR) __ n o.
+                a..(DL) __ n)
 
 
 # Your TicTacToe object will be instantiated and called as such:

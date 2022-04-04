@@ -23,7 +23,7 @@ c_ Solution(o..
         right = n - 1
         __ n __ 1:
             r.. nums[0]
-        w.... left <= right:
+        w.... left <_ right:
             mid = left + (right - left) / 2
             __ mid > 0 a.. nums[mid - 1] > nums[mid]:
                 r.. nums[mid]

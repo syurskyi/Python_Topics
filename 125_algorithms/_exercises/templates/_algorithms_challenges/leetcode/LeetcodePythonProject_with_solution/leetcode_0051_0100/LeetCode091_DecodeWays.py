@@ -18,9 +18,9 @@ c_ Solution(o..
         ___ i __ r..(2, n+1
             first = i..(s[i-1])
             second = i..(s[i-2:i])
-            __ 1 <= first <= 9:
+            __ 1 <_ first <_ 9:
                 dp[i] += dp[i-1]
-            __ 10 <= second <= 26:
+            __ 10 <_ second <_ 26:
                 dp[i] += dp[i-2]
         r.. dp[-1]
     
@@ -51,7 +51,7 @@ c_ Solution(o..
             __ s[i] != '0':
                 dp[i] += dp[i-1]
             val = i..(s[i-1:i+1])
-            __ val<=26 a.. val>=10:
+            __ val<_26 a.. val>_10:
                 dp[i] += dp[i-2]
         
         r.. dp[-1]

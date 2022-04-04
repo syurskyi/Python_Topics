@@ -29,7 +29,7 @@ c_ Solution(o..
       nums[end], nums[p] = nums[p], nums[end]
       mid = start
       ___ i __ r..(start, end
-        __ nums[i] >= pv:
+        __ nums[i] >_ pv:
           nums[i], nums[mid] = nums[mid], nums[i]
           mid += 1
       nums[mid], nums[end] = nums[end], nums[mid]
@@ -52,7 +52,7 @@ c_ Solution(o..
     ans = 0
     w.... p < n:
       v = p
-      w.... v < n - 1 a.. prices[v] >= prices[v + 1]:
+      w.... v < n - 1 a.. prices[v] >_ prices[v + 1]:
         v += 1
       p = v + 1
       w.... p < n a.. prices[p] > prices[p - 1]:

@@ -10,7 +10,7 @@ ___ allowed_driving(name, age
 
        checking the passed in age against the MIN_DRIVING_AGE constant"""
 
-    __ age >= MIN_DRIVING_AGE:
+    __ age >_ MIN_DRIVING_AGE:
 
         print _*{name} is allowed to drive')
 

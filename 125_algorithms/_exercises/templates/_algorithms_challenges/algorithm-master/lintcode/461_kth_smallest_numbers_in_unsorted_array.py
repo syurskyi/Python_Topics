@@ -11,26 +11,26 @@ c_ Solution:
         r.. quick_select(K - 1, A, 0, l..(A) - 1)
 
     ___ quick_select  k, A, start, end
-        __ start >= end:
+        __ start >_ end:
             r.. A[end]
 
         left, right = start, end
         pivot = A[(start + end) // 2]
 
-        w.... left <= right:
-            w.... left <= right a.. A[left] < pivot:
+        w.... left <_ right:
+            w.... left <_ right a.. A[left] < pivot:
                 left += 1
-            w.... left <= right a.. A[right] > pivot:
+            w.... left <_ right a.. A[right] > pivot:
                 right -= 1
 
-            __ left <= right:
+            __ left <_ right:
                 A[left], A[right] = A[right], A[left]
                 left += 1
                 right -= 1
 
-        __ start <= k <= right:
+        __ start <_ k <_ right:
             r.. quick_select(k, A, start, right)
-        ____ left <= k <= end:
+        ____ left <_ k <_ end:
             r.. quick_select(k, A, left, end)
         ____
             r.. A[k]

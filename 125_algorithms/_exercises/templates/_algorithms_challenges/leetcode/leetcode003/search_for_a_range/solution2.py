@@ -42,7 +42,7 @@ c_ Solution(o..
         right = n - 1
         w.... left + 1 < right:
             mid = left + (right - left) / 2
-            __ target >= nums[mid]:
+            __ target >_ nums[mid]:
                 left = mid
             ____
                 right = mid

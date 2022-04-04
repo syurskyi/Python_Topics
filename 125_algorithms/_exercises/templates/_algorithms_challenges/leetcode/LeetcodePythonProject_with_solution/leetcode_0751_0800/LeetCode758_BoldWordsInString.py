@@ -17,7 +17,7 @@ c_ Solution(o..
         res = ''
         ___ i __ r..(l..(s:
             ___ word __ words:
-                __ i+l..(word) <= l..(s) a.. s[i:i+l..(word)] __ word:
+                __ i+l..(word) <_ l..(s) a.. s[i:i+l..(word)] __ word:
                     __ n.. start:
                         res += '<b>'
                         start = T..
@@ -26,7 +26,7 @@ c_ Solution(o..
                 res += '</b>'
                 start = F..
             res += s[i]
-        __ j >= l..(s
+        __ j >_ l..(s
             res += '</b>'
         r.. res
     

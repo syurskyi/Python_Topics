@@ -22,7 +22,7 @@ ___ max_fund(village
         total = 0
         ___ i __ r..(l..(village[index:]:
             total += village[index+i]
-            __ total >= best_sum:
+            __ total >_ best_sum:
                 best_sum = total
                 starting = index
                 ending = index+i

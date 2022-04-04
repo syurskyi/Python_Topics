@@ -36,7 +36,7 @@ ___ calc_months_passed(year, month, day
         months_passed = 0
         difference_dt = relativedelta(date(year, month, day), START_DATE)
         #print(difference_dt.years, difference_dt.months, difference_dt.days)
-        __ difference_dt.days >= MIN_DAYS_TO_COUNT_AS_MONTH:
+        __ difference_dt.days >_ MIN_DAYS_TO_COUNT_AS_MONTH:
             months_passed = difference_dt.months + 1
         ____
             months_passed = difference_dt.months

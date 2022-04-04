@@ -45,7 +45,7 @@ c_ Solution:
         ret    # list
         ___ itv __ intervals:
             idx = bisect_left(starts, itv.end)
-            __ idx >= l..(starts
+            __ idx >_ l..(starts
                 ret.a..(-1)
             ____
                 ret.a..(

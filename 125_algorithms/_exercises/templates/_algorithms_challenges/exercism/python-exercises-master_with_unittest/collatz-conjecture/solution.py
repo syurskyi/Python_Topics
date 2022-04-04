@@ -1,5 +1,5 @@
 ___ collatz_steps(n
-    __ n <= 0:
+    __ n <_ 0:
         r..
 
     step_count = 0

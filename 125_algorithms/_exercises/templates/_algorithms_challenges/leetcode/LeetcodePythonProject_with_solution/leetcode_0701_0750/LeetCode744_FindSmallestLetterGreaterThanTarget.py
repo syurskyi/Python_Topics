@@ -13,7 +13,7 @@ c_ Solution(o..
         l, r = 0, l..(letters)
         w.... l < r:
             mid = (l+r)//2
-            __ target >= letters[mid]:
+            __ target >_ letters[mid]:
                 l = mid+1
             ____
                 r = mid

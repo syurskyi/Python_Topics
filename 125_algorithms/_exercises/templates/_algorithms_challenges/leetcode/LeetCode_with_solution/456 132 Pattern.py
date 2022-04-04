@@ -36,7 +36,7 @@ c_ Solution:
         stack    # list  # List[Interval]
         mini = f__('Inf')
         ___ v __ nums:
-            w.... stack a.. stack[-1][1] <= v:  # error when < (e.g. [-2, 1, 1])
+            w.... stack a.. stack[-1][1] <_ v:  # error when < (e.g. [-2, 1, 1])
                 stack.p.. )
             __ stack a.. stack[-1][0] < v:
                 r.. T..

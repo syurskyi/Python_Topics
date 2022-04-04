@@ -41,7 +41,7 @@ c_ Solution(o..
                 subStr = s[i+1:j-1]
                 tmp = decodeString(subStr)
                 j = i
-                w.... j-1 >= 0 a.. s[j-1].i..
+                w.... j-1 >_ 0 a.. s[j-1].i..
                     j-=1
                 times = i..(s[j:i])
                 result += times*tmp

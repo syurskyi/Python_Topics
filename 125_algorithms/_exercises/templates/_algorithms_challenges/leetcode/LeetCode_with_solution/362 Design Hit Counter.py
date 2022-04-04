@@ -38,7 +38,7 @@ c_ HitCounter(o..
         r.. l..(q)
 
     ___ pop  timestamp
-        w.... q a.. timestamp - q[0] >= 300:
+        w.... q a.. timestamp - q[0] >_ 300:
             q.popleft()
 
 

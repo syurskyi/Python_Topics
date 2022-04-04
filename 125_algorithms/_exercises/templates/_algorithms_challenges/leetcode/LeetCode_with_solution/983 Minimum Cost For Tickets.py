@@ -90,11 +90,11 @@ c_ Solution:
         ___ i __ r..(n-2, -1, -1
             ___ j __ r..(i+1, n
                 delta = days[j] - days[i]
-                __ delta <= 1:
+                __ delta <_ 1:
                     F[i] = m..(F[i], costs[0] + F[j])
-                __ delta <= 7:
+                __ delta <_ 7:
                     F[i] = m..(F[i], costs[1] + F[j])
-                __ delta <= 30:
+                __ delta <_ 30:
                     F[i] = m..(F[i], costs[2] + F[j])
                 ____
                     _____

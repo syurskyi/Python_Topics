@@ -22,7 +22,7 @@ ___ top_python_questions(url=cached_so_url
       _question = question.find("a", class_="question-hyperlink").get_text()
       votes = i..(question.find("span", class_="vote-count-post").get_text
       
-      __ views >= 1000000:
+      __ views >_ 1000000:
          ge_1m.a..((_question, votes
       ____
          lt_1m.a..((_question, votes

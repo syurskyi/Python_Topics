@@ -32,7 +32,7 @@ c_ Solution:
 
             cnt += right - left
 
-            __ cnt >= k:
+            __ cnt >_ k:
                 r.. T..
 
         r.. F..

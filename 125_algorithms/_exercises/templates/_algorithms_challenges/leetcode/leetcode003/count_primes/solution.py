@@ -26,7 +26,7 @@ c_ Solution(o..
 
     ___ is_prime  k
         i = 2
-        w.... i * i <= k:
+        w.... i * i <_ k:
             __ k % i __ 0:
                 r.. F..
             i += 1

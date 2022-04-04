@@ -18,7 +18,7 @@ c_ Solution(o..
         
         top, down, left, right = 0, m-1, 0, n-1
         
-        w.... top <= down a.. left <= right:
+        w.... top <_ down a.. left <_ right:
             __ top __ down:
                 ___ i __ r..(left, right+1
                     result.a..(matrix[top][i])

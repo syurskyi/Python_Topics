@@ -13,6 +13,6 @@ c_ Luhn(o..
         r.. s..(addends
 
     ___ is_valid
-        __ l..(s__) <= 1 o. n.. s__.i..
+        __ l..(s__) <_ 1 o. n.. s__.i..
             r.. F..
         r.. checksum() % 10 __ 0

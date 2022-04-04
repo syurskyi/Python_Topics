@@ -79,7 +79,7 @@ c_ Solution:
         equiv to itertools.product - nested for-loops in a generator expression
         Cartesian product
         """
-        __ lo + 1 >= l..(level
+        __ lo + 1 >_ l..(level
             y.. ""
             r..
 

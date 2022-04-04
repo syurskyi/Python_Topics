@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     lo = 0
     hi = x
-    w.... lo <= hi:
+    w.... lo <_ hi:
       mid = (hi + lo) // 2
       v = mid * mid
       __ v < x:

@@ -66,13 +66,13 @@ c_ MyCalendar:
         __ n.. node:
             r.. Node(s, e)
 
-        __ e <= node.s:
+        __ e <_ node.s:
             left = insert(node.left, s, e)
             __ left __ N..
                 r.. N..
             node.left = left
             r.. node
-        ____ s >= node.e:
+        ____ s >_ node.e:
             right = insert(node.right, s, e)
             __ right __ N..
                 r.. N..

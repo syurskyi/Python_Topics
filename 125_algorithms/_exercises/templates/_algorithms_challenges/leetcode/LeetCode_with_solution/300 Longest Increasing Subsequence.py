@@ -75,7 +75,7 @@ c_ Solution(o..
                 j = bin_search(MIN, A, A[i], 1, l+1)
                 MIN[j] = i
 
-                RET[i] = MIN[j-1] __ j-1 >= 1 ____ -1  # (optional)
+                RET[i] = MIN[j-1] __ j-1 >_ 1 ____ -1  # (optional)
 
         # build the LIS (optional)
         cur = MIN[l]

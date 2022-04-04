@@ -15,10 +15,10 @@ c_ Solution(o..
         start, end = 0, 0
         minLen = l..(nums) + 1
         sumVal = 0
-        w.... start <= end a.. end < l..(nums
+        w.... start <_ end a.. end < l..(nums
             sumVal += nums[end]
-            __ sumVal >= s:
-                w.... start <= end a.. sumVal >= s:
+            __ sumVal >_ s:
+                w.... start <_ end a.. sumVal >_ s:
                     sumVal -= nums[start]
                     minLen = m..(minLen, end-start+1)
                     start+=1
@@ -38,12 +38,12 @@ c_ Solution(o..
             __ end __ l..(sums
                 _____
             minLen = m..(minLen, end-i)
-        r.. minLen __ minLen <= l..(nums) ____ 0
+        r.. minLen __ minLen <_ l..(nums) ____ 0
     
     ___ binarySearch  low, high, key, sums
-        w.... low <= high:
+        w.... low <_ high:
             mid = i..((low+high)/2)
-            __ sums[mid] >= key:
+            __ sums[mid] >_ key:
                 high = mid-1
             ____
                 low = mid+1

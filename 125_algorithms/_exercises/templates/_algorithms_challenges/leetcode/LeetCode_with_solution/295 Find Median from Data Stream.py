@@ -47,7 +47,7 @@ c_ DualHeap(o..
     ___ balance
         l1 = l..(min_h)
         l2 = l..(max_h)
-        __ abs(l1 - l2) <= 1:
+        __ a..(l1 - l2) <_ 1:
             r..
         ____ l1 - l2 > 1:
             heapq.heappush(max_h, -heapq.heappop(min_h

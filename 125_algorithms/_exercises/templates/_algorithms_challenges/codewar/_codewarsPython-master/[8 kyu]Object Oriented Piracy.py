@@ -4,7 +4,7 @@ c_ Ship:
         crew = crew
     
     ___ is_worth_it
-        r.. draft - 1.5 * crew >= 20
+        r.. draft - 1.5 * crew >_ 20
 
 boat = Ship(21,0)
 print(boat.is_worth_it

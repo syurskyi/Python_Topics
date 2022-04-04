@@ -19,14 +19,14 @@ c_ Solution:
         tank = gas[start] - cost[start]
 
         w.... start > end:
-            __ tank >= 0:
+            __ tank >_ 0:
                 end += 1
                 tank += gas[end] - cost[end]
             ____
                 start -= 1
                 tank += gas[start] - cost[start]
 
-        r.. start __ tank >= 0 ____ NOT_FOUND
+        r.. start __ tank >_ 0 ____ NOT_FOUND
 
 
 c_ Solution:

@@ -29,7 +29,7 @@ c_ SegmentTree(o..
         root = build(0, n)
 
     ___ build  start, end
-        __ start >= end: r..
+        __ start >_ end: r..
         __ start __ end-1: r.. TreeNode(start, end)
         node = TreeNode(start, end)
         node.left = build(start, (start+end)/2)
@@ -41,9 +41,9 @@ c_ SegmentTree(o..
         w.... cur:
             cur.cnt += val
             mid = (cur.start+cur.end)/2
-            __ cur.start <= idx < mid:
+            __ cur.start <_ idx < mid:
                 cur = cur.left
-            ____ mid <= idx < cur.end:
+            ____ mid <_ idx < cur.end:
                 cur = cur.right
             ____
                 r..
@@ -53,9 +53,9 @@ c_ SegmentTree(o..
             r.. 0
 
         mid = (cur.start+cur.end)/2
-        __ cur.start <= idx < mid:
+        __ cur.start <_ idx < mid:
             r.. query_less(cur.left, idx)
-        ____ mid <= idx < cur.end:
+        ____ mid <_ idx < cur.end:
             r.. (cur.left.cnt __ cur.left ____ 0) + query_less(cur.right, idx)
         ____
             r.. 0

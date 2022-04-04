@@ -22,7 +22,7 @@ c_ Solution(o..
         r.. F..
     
     ___ helper  board, word, start, i, j
-        __ i < 0 o. j < 0 o. i >= l..(board) o. j >= l..(board[0]
+        __ i < 0 o. j < 0 o. i >_ l..(board) o. j >_ l..(board[0]
             r.. F..
         __ word[start] __ board[i][j]:
             __ start __ l..(word)-1:

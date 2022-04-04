@@ -20,8 +20,8 @@ ___ timeit
     start = time()
     y..
     end = time()
-    __ end - start >= OPERATION_THRESHOLD_IN_SECONDS:
+    __ end - start >_ OPERATION_THRESHOLD_IN_SECONDS:
         dt = get_today()
         violations[dt] += 1
-        __ violations[dt] >= ALERT_THRESHOLD:
+        __ violations[dt] >_ ALERT_THRESHOLD:
             print(ALERT_MSG)

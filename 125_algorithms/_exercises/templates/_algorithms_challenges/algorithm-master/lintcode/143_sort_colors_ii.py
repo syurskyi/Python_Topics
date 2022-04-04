@@ -17,19 +17,19 @@ c_ Solution:
         """
         like quick sort
         """
-        __ color_from >= color_to:
+        __ color_from >_ color_to:
             r..
-        __ start >= end:
+        __ start >_ end:
             r..
 
         left, right = start, end
         color_mid = (color_from + color_to) // 2
-        w.... left <= right:
-            w.... left <= right a.. colors[left] <= color_mid:
+        w.... left <_ right:
+            w.... left <_ right a.. colors[left] <_ color_mid:
                 left += 1
-            w.... left <= right a.. colors[right] > color_mid:
+            w.... left <_ right a.. colors[right] > color_mid:
                 right -= 1
-            __ left <= right:
+            __ left <_ right:
                 colors[left], colors[right] = colors[right], colors[left]
                 left += 1
                 right -= 1
@@ -71,7 +71,7 @@ c_ Solution:
                     _max = colors[i]
 
             i = left
-            w.... i <= right:
+            w.... i <_ right:
                 __ colors[i] __ _min:
                     colors[left], colors[i] = colors[i], colors[left]
                     left += 1

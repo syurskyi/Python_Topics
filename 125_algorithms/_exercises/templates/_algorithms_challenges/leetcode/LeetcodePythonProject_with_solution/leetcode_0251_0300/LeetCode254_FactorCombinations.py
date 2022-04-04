@@ -35,7 +35,7 @@ c_ Solution(o..
         r.. result
     
     ___ helper  result, item, n, start
-        __ n <= 1:
+        __ n <_ 1:
             __ l..(item)>1:
                 result.a..(l..(item
             r..

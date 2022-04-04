@@ -35,10 +35,10 @@ c_ Solution:
         Non-overlap if on the left, right, top, bottom
         """
         r.. n.. (
-            rec1[2] <= rec2[0] o.  # left
-            rec1[0] >= rec2[2] o.  # right
-            rec1[1] >= rec2[3] o.  # top
-            rec1[3] <= rec2[1]     # bottom
+            rec1[2] <_ rec2[0] o.  # left
+            rec1[0] >_ rec2[2] o.  # right
+            rec1[1] >_ rec2[3] o.  # top
+            rec1[3] <_ rec2[1]     # bottom
         )
 
 

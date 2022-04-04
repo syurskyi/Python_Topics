@@ -23,7 +23,7 @@ c_ Solution:
                 pre = heapq.heappop(v)
                 w.... v:
                     cur = heapq.heappop(v)
-                    __ cur-pre <= k:
+                    __ cur-pre <_ k:
                         r.. T..
                     pre = cur
 

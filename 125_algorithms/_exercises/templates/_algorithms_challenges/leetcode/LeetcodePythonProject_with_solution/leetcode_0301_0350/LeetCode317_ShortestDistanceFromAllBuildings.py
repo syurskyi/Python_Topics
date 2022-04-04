@@ -28,7 +28,7 @@ c_ Solution(o..
                         ___ _ __ r..(size
                             i0, j0 = queue.p.. 0)
                             ___ x, y __ (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1
-                                __ 0 <= x < m a.. 0 <= y < n a..\
+                                __ 0 <_ x < m a.. 0 <_ y < n a..\
                                     n.. visited[x][y] a.. grid[x][y] __ 0:
                                     distance[x][y] += level
                                     reach[x][y] += 1

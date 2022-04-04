@@ -36,9 +36,9 @@ c_ Solution:
         n = l..(expression)
         stk    # list
         i = n - 1
-        w.... i >= 0:
+        w.... i >_ 0:
             j = i
-            w.... j >= 0 a.. expression[j] n.. __ (":", "?"
+            w.... j >_ 0 a.. expression[j] n.. __ (":", "?"
                 j -= 1
 
             __ j < i:

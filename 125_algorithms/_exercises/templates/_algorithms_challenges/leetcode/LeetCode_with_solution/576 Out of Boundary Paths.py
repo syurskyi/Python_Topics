@@ -46,7 +46,7 @@ c_ Solution:
                     ___ di, dj __ dirs:
                         I = i + di
                         J = j + dj
-                        __ 0 <= I < m a.. 0 <= J < n:
+                        __ 0 <_ I < m a.. 0 <_ J < n:
                             F_new[I][J] = (F_new[I][J] + F[i][j]) % MOD
                         ____
                             ret = (ret + F[i][j]) % MOD

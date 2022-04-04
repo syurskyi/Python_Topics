@@ -39,9 +39,9 @@ c_ Solution:
         i = l..(tasks) - 1
         j = l..(worker) - 1
         ret = 0
-        w.... i >= 0 a.. j >= 0:
+        w.... i >_ 0 a.. j >_ 0:
             pro, diff = tasks[i]
-            __ worker[j] >= diff:
+            __ worker[j] >_ diff:
                 ret += pro
                 j -= 1
             ____

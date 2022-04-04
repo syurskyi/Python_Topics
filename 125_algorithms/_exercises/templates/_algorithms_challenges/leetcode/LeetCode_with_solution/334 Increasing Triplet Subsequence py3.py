@@ -31,7 +31,7 @@ c_ Solution:
         F = [f__('inf') ___ _ __ r..(3)]
         ___ n __ nums:
             i = bisect_left(F, n)
-            __ i >= 2:
+            __ i >_ 2:
                 r.. T..
             F[i] = n
 

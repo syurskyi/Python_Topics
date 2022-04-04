@@ -35,7 +35,7 @@ c_ Solution(o..
             r.. -1  # leaves index start from 0
 
         height = 1 + m..(dfs(node.left, leaves), dfs(node.right, leaves
-        __ height >= l..(leaves
+        __ height >_ l..(leaves
             leaves.a..([])  # grow
 
         leaves[height].a..(node.val)

@@ -36,4 +36,4 @@ ___ calc_months_passed(year, month, day
 
     result = relativedelta(end_date, START_DATE)
 
-    r.. result.months + (1 __ result.days >= 10 ____ 0) + 12 * result.years
+    r.. result.months + (1 __ result.days >_ 10 ____ 0) + 12 * result.years

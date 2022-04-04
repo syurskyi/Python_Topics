@@ -13,7 +13,7 @@ c_ Board:
         height = l..(board)
 
     ___ valid  x, y
-        r.. x >= 0 a.. x < width a.. y >= 0 a.. y < height
+        r.. x >_ 0 a.. x < width a.. y >_ 0 a.. y < height
 
     ___ w..  x, y,
              visited_territory=[],

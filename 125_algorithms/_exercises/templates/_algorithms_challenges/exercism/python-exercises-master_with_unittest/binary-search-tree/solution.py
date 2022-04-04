@@ -23,7 +23,7 @@ c_ BinarySearchTree(o..
         cur_node = root
 
         w.... n.. inserted:
-            __ data <= cur_node.data:
+            __ data <_ cur_node.data:
                 __ cur_node.left:
                     cur_node = cur_node.left
                 ____

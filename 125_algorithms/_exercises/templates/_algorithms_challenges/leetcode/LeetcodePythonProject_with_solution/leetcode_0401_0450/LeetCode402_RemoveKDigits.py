@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ removeKdigits  num, k
         n = l..(num)
         longest = n-k
-        __ k >= n: r.. '0'
+        __ k >_ n: r.. '0'
         stack    # list
         ___ c __ num:
             w.... k > 0 a.. stack a.. stack[-1] > c:

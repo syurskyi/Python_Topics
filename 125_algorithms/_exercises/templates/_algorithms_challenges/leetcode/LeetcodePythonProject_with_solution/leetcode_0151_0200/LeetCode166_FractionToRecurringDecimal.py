@@ -11,13 +11,13 @@ c_ Solution(o..
         :type denominator: int
         :rtype: str
         """
-        n, remainder = divmod(abs(numerator), abs(denominator
+        n, remainder = divmod(a..(numerator), a..(denominator
         sign = '-' __ numerator*denominator<0 ____ ''
         result = [sign+s..(n), '.'
         stack    # list
         w.... remainder n.. __ stack:
             stack.a..(remainder)
-            n, remainder = divmod(remainder*10, abs(denominator
+            n, remainder = divmod(remainder*10, a..(denominator
             result.a..(s..(n
         idx = stack.i.. remainder)
         result.insert(idx+2, '(')

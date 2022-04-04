@@ -89,7 +89,7 @@ c_ LFUCache(o..
       cacheNode.val = value
       cacheNode.increaseFreq()
     ____
-      __ l..(d) >= cap:
+      __ l..(d) >_ cap:
         del d[head.next.popCache().key]
       newFreqNode = FreqNode(0)
       newCacheNode = Cache(key, value, newFreqNode)

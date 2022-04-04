@@ -47,7 +47,7 @@ c_ Solution:
                 _x = x + dx
                 _y = y + dy
 
-                __ n.. (0 <= _x < m a.. 0 <= _y < n
+                __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                     _____
 
                 cnt += board[_x][_y] & 1
@@ -103,8 +103,8 @@ c_ Solution:
                 _y = y + dy
 
                 __ n.. (
-                    0 <= _x < m a..
-                    0 <= _y < n a..
+                    0 <_ _x < m a..
+                    0 <_ _y < n a..
                     board[_x][_y] __ 1
 
                     _____

@@ -24,7 +24,7 @@ c_ Solution:
                 __ total __ target:
                     r.. total
 
-                __ abs(total - target) < abs(ans - target
+                __ a..(total - target) < a..(ans - target
                     ans = total
 
                 __ total < target:

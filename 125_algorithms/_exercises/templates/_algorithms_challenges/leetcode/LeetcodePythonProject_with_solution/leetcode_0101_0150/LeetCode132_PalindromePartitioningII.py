@@ -16,7 +16,7 @@ c_ Solution(o..
         cuts = l..(r..(n
         ___ i __ r..(n
             ___ j __ r..(i, -1, -1
-                __ s[i] __ s[j] a.. (i-j<=1 o. dp[j+1][i-1]
+                __ s[i] __ s[j] a.. (i-j<_1 o. dp[j+1][i-1]
                     dp[j][i] = T..
                     __ j > 0:
                         cuts[i] = m..(cuts[i], cuts[j-1]+1)

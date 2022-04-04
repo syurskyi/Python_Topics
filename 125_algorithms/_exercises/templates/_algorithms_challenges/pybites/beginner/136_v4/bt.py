@@ -60,7 +60,7 @@ ___ check_bt(donor, recipient
         Returns:
         bool: True for compatability, False otherwise.
     """
-    r.. a..(a >= 0 ___ a __ _particular_antigen_comp(donor=_blood_int(donor), recipient=_blood_int(recipient)))
+    r.. a..(a >_ 0 ___ a __ _particular_antigen_comp(donor=_blood_int(donor), recipient=_blood_int(recipient)))
 
 
 # hint

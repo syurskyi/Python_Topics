@@ -10,13 +10,13 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        __ k <= 1: r.. 0
+        __ k <_ 1: r.. 0
         prod = 1
         left = 0
         count = 0
         ___ i, num __ e..(nums
             prod *= num
-            w.... left < i+1 a.. prod >= k:
+            w.... left < i+1 a.. prod >_ k:
                 prod //= nums[left]
                 left += 1
             count += i-left+1

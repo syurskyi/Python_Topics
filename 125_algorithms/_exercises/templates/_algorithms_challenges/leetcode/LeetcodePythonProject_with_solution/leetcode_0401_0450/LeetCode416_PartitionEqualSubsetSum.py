@@ -14,7 +14,7 @@ c_ Solution(o..
         dp[0] = T..
         ___ num __ nums:
             ___ i __ r..(target, -1, -1
-                __ i-num >= 0 a.. dp[i-num]:
+                __ i-num >_ 0 a.. dp[i-num]:
                     dp[i] = T..
         r.. dp[-1]
     

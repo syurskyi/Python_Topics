@@ -35,7 +35,7 @@ c_ Solution(o..
         # Step-wise Linear Search from upper right
         y = 0
         x = m - 1
-        w.... x >= 0 a.. y <= n - 1:
+        w.... x >_ 0 a.. y <_ n - 1:
             __ target __ matrix[y][x]:
                 r.. T..
             ____ target < matrix[y][x]:

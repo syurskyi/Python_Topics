@@ -12,13 +12,13 @@ c_ Solution(o..
         :rtype: float
         """
         n, k, w = N, K, W
-        __ k __ 0 o. n >= k+w: r.. 1
+        __ k __ 0 o. n >_ k+w: r.. 1
         dp = [1.0]+[0.0]*n
         wSum = 1.0
         ___ i __ r..(1, n+1
             dp[i] = wSum/w
             __ i < k: wSum += dp[i]
-            __ i - w >= 0: wSum -= dp[i-w]
+            __ i - w >_ 0: wSum -= dp[i-w]
         r.. s..(dp[k:])
     
     ___ test

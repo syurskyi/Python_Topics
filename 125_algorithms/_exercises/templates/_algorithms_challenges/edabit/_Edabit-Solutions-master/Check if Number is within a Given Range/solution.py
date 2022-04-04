@@ -5,7 +5,7 @@ ___ is_in_range(n, r
         ____
             i __ "max"
             b = i
-    __ n >= r[s] a.. n <= r[b]:
+    __ n >_ r[s] a.. n <_ r[b]:
             r.. T..
     ____
         r.. F..

@@ -19,7 +19,7 @@ c_ Solution(o..
         tail = node
         w.... node a.. carry:
             val = node.val + carry
-            __ val >= 10:
+            __ val >_ 10:
                 val -= 10
                 carry = 1
             ____

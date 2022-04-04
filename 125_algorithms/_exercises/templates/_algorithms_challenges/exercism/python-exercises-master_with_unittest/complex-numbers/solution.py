@@ -29,7 +29,7 @@ c_ ComplexNumber(o..
              real * other.imaginary) / f__(d)
         r.. ComplexNumber(r, i)
 
-    ___ abs
+    ___ a..
         square_sum = real * real + imaginary * imaginary
         r.. m__.sqrt(square_sum)
 

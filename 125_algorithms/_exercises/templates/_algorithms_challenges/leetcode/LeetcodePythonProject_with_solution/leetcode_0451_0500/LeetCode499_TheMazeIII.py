@@ -44,14 +44,14 @@ c_ Solution(o..
     
     ___ isPassing  maze, start, stop, hole
         __ start[0] __ stop[0] __ hole[0]:
-            __ start[1] < hole[1] <= stop[1]:
+            __ start[1] < hole[1] <_ stop[1]:
                 r.. T.., hole[1]-start[1]
-            ____ stop[1] <= hole[1] < start[1]:
+            ____ stop[1] <_ hole[1] < start[1]:
                 r.. T.., start[1]-hole[1]
         ____ start[1] __ stop[1] __ hole[1]:
-            __ start[0] < hole[0] <= stop[0]:
+            __ start[0] < hole[0] <_ stop[0]:
                 r.. T.., hole[0]-start[0]
-            ____ stop[0] <= hole[0] < start[0]:
+            ____ stop[0] <_ hole[0] < start[0]:
                 r.. T.., hole[0]-stop[0]
         r.. F.., 0
     
@@ -62,7 +62,7 @@ c_ Solution(o..
         ___ dir __ dirs:
             x, y = i, j
             dist = 0
-            w.... 0 <= x+dir[0] < m a.. 0 <= y+dir[1] < n a..\
+            w.... 0 <_ x+dir[0] < m a.. 0 <_ y+dir[1] < n a..\
                 matrix[x+dir[0]][y+dir[1]] __ 0:
                 x += dir[0]
                 y += dir[1]

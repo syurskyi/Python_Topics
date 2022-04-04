@@ -10,7 +10,7 @@ c_ MovingAverage(o..
         queue    # list
     
     ___ next  val
-        __ size <= 0: r.. 0
+        __ size <_ 0: r.. 0
         __ l..(queue) __ size:
             queue.p.. 0)
         queue.a..(val)

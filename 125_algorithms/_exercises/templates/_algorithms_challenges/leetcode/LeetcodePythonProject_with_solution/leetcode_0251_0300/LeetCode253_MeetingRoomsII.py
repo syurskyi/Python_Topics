@@ -20,7 +20,7 @@ c_ Solution(o..
         heap    # list
         maxLen = 0
         ___ interval __ intervals:
-            w.... heap a.. heap[0] <= interval.start:
+            w.... heap a.. heap[0] <_ interval.start:
                 heapq.heappop(heap)
             heapq.heappush(heap, interval.end)
             maxLen = m..(maxLen, l..(heap

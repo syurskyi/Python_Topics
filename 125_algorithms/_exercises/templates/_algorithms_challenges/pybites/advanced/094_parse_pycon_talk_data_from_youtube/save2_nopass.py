@@ -758,7 +758,7 @@ ___ parse_isoduration(s
 ___ get_talks_gt_one_hour(videos
     """Filter the videos list down to videos of > 1 hour"""
     one_hour_in_seconds = 3600
-    r.. [video ___ video __ videos __ parse_isoduration(video.duration) >= one_hour_in_seconds]
+    r.. [video ___ video __ videos __ parse_isoduration(video.duration) >_ one_hour_in_seconds]
 
 
 # TODO: FIX BELOW

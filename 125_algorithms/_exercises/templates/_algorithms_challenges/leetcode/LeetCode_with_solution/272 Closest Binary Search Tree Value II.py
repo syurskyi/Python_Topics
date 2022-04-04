@@ -36,7 +36,7 @@ c_ Solution(o..
             r..
 
         predecessors(root.left, target, stk)
-        __ root.val <= target:
+        __ root.val <_ target:
             stk.a..(root.val)
             predecessors(root.right, target, stk)
 
@@ -56,7 +56,7 @@ c_ Solution(o..
                 ret.a..(suc.pop
             ____ n.. suc:
                 ret.a..(pre.pop
-            ____ abs(pre[-1] - target) < abs(suc[-1] - target
+            ____ a..(pre[-1] - target) < a..(suc[-1] - target
                 ret.a..(pre.pop
             ____
                 ret.a..(suc.pop

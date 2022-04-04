@@ -35,7 +35,7 @@ c_ SegmentedTree(o..
         root.total = val
         r.. val
       mid = root.start + (root.end - root.start) / 2
-      __ i <= mid:
+      __ i <_ mid:
         updateVal(root.left, i, val)
       ____
         updateVal(root.right, i, val)
@@ -51,9 +51,9 @@ c_ SegmentedTree(o..
         r.. root.total
 
       mid = root.start + (root.end - root.start) / 2
-      __ j <= mid:
+      __ j <_ mid:
         r.. rangeSum(root.left, start, end)
-      ____ i >= mid + 1:
+      ____ i >_ mid + 1:
         r.. rangeSum(root.right, start, end)
       ____
         r.. rangeSum(root.left, start, mid) + rangeSum(root.right, mid + 1, end)

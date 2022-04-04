@@ -14,13 +14,13 @@ c_ Solution(o..
         sumRemaining, sumVal, start = 0, 0, 0
         ___ i, (g, c) __ e..(z..(gas, cost:
             remain = g-c
-            __ sumRemaining >= 0:
+            __ sumRemaining >_ 0:
                 sumRemaining += remain
             ____
                 sumRemaining = remain
                 start = i
             sumVal += remain
-        __ sumVal >= 0:
+        __ sumVal >_ 0:
             r.. start
         ____
             r.. -1

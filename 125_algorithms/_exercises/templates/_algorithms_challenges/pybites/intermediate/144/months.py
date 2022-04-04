@@ -38,12 +38,12 @@ ___ calc_months_passed(year, month, day
 
    date_diff = relativedelta(new_date, START_DATE)
 
-   __ date_diff.years >= 1:
+   __ date_diff.years >_ 1:
       total_months = date_diff.years * MONTHS_PER_YEAR
    ____
       total_months = 0
 
-   __ date_diff.days >= MIN_DAYS_TO_COUNT_AS_MONTH:
+   __ date_diff.days >_ MIN_DAYS_TO_COUNT_AS_MONTH:
       total_months += date_diff.months + 1
    ____
       total_months += date_diff.months

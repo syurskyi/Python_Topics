@@ -17,7 +17,7 @@ ___ get_files(dirname, size_in_kb
             size = __.p...getsize(__.p...j..(dirname,file
             print(file,size)
             size /= ONE_KB
-            __ size >= size_in_kb:
+            __ size >_ size_in_kb:
                 y.. file
 
 

@@ -18,7 +18,7 @@ c_ Hexa:
 
     @classmethod
     ___ valid(cls, inp
-        r.. s..(inp) <= cls.VALID_CHARS
+        r.. s..(inp) <_ cls.VALID_CHARS
 
     @classmethod
     ___ convert_char(cls, char

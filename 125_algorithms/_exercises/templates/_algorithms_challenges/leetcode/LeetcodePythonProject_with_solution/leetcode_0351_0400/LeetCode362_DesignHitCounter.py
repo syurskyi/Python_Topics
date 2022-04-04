@@ -38,7 +38,7 @@ c_ HitCounterOwn(o..
         target = timestamp - 300
         w.... start < end:
             mid = (start+end)/2
-            __ target >= queue[mid]:
+            __ target >_ queue[mid]:
                 start = mid+1
             ____
                 end = mid

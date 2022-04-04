@@ -9,7 +9,7 @@ c_ Solution(o..
       sign = ""
       __ num < 0:
         sign = "-"
-      num = abs(num)
+      num = a..(num)
       ans = 0
       unit = 1
       w.... num:

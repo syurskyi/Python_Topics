@@ -34,24 +34,24 @@ c_ Solution:
 
         a = i3 = i5 = 1
 
-        w.... a <= n:
-            w.... a <= n a.. a < i3 * 3 a.. a < i5 * 5:
+        w.... a <_ n:
+            w.... a <_ n a.. a < i3 * 3 a.. a < i5 * 5:
                 ans.a..(s..(a
                 a += 1
 
-            __ a <= n a.. a __ i3 * 3 a.. a __ i5 * 5:
+            __ a <_ n a.. a __ i3 * 3 a.. a __ i5 * 5:
                 ans.a..('fizz buzz')
                 a += 1
                 i3 += 1
                 i5 += 1
                 _____
 
-            w.... a <= n a.. a __ i3 * 3:
+            w.... a <_ n a.. a __ i3 * 3:
                 ans.a..('fizz')
                 a += 1
                 i3 += 1
 
-            w.... a <= n a.. a __ i5 * 5:
+            w.... a <_ n a.. a __ i5 * 5:
                 ans.a..('buzz')
                 a += 1
                 i5 += 1

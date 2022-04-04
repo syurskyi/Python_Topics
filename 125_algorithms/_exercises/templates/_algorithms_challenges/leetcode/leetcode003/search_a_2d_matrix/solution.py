@@ -25,13 +25,13 @@ c_ Solution:
     ___ searchMatrix  matrix, target
         row_left = 0
         row_right = l..(matrix) - 1
-        w.... row_left <= row_right:
+        w.... row_left <_ row_right:
             row_mid = row_left + (row_right - row_left) / 2
             row = matrix[row_mid]
-            __ target >= row[0] a.. target <= row[-1]:
+            __ target >_ row[0] a.. target <_ row[-1]:
                 left = 0
                 right = l..(row) - 1
-                w.... left <= right:
+                w.... left <_ right:
                     mid = left + (right - left) / 2
                     __ target __ row[mid]:
                         r.. T..

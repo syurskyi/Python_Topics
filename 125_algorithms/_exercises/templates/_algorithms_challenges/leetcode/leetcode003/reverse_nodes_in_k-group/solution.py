@@ -29,7 +29,7 @@ c_ Solution:
         i = 1
         w.... head __ n.. N..
             next_node = head.next
-            __ i <= last_group:
+            __ i <_ last_group:
                 # Appended current node to `temp` list
                 __ temp __ N..
                     temp_end = head

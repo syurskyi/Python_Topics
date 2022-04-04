@@ -9,7 +9,7 @@ ___ romanize(decimal_number
     numeral_lookup = OrderedDict([(1, "I"), (4, "IV"), (5, "V"), (9, "IX"), (10, "X"), (40, "XL"), (50, "L"), (90, "XC"), (100, "C"), (400, "CD"), (500, "D"), (900, "CM"), (1000, "M")])
 
     __ isi..(decimal_number, i..
-        __ decimal_number <= 0 o. decimal_number >= 4000:
+        __ decimal_number <_ 0 o. decimal_number >_ 4000:
             r.. V...
     ____
         r.. V...
@@ -47,7 +47,7 @@ ___ romanize(decimal_number
                         decimal_number = remainder
                         _____
                         
-        __ decimal_number > 0 a.. decimal_number <= 3:
+        __ decimal_number > 0 a.. decimal_number <_ 3:
             roman_numeral += remainder * numeral_lookup[1]
             decimal_number = 0
 

@@ -33,12 +33,12 @@ c_ Solution:
                 r.. mid
             ____ target<A[mid]:
                 end = mid-1
-                __ n.. start<=end:
+                __ n.. start<_end:
                     # return end if end>=0 else 0
-                    r.. mid __ mid>=0 ____ 0
+                    r.. mid __ mid>_0 ____ 0
             ____
                 start = mid+1
-                __ n.. start<=end:
+                __ n.. start<_end:
                     r.. start
 
     ___ searchInsert  A, target

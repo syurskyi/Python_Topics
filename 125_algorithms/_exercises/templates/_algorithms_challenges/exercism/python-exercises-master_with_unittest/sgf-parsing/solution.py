@@ -41,7 +41,7 @@ c_ SgfTree(o..
 ___ is_upper(s
     a, z = map(o.., 'AZ')
     r.. a..(
-        a <= o a.. o <= z
+        a <_ o a.. o <_ z
         ___ o __ map(o.., s)
     )
 

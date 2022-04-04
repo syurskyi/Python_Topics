@@ -40,7 +40,7 @@ c_ House:
 
     @classmethod
     ___ middle(cls, verse_num
-        __ verse_num >= 2:
+        __ verse_num >_ 2:
             r.. "\n".j..([cls.middle_partial(num) ___ num __
                               r..(verse_num - 1, 0, -1)])
 

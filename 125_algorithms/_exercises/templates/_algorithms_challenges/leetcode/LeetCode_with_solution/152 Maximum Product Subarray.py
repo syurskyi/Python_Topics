@@ -148,7 +148,7 @@ c_ Solution(o..
 
             __ cur<0 a.. dp[end_ptr]<1:
                 # from the starting point, get the first negative 
-                w.... start_ptr<=end_ptr a.. A[start_ptr]>0:
+                w.... start_ptr<_end_ptr a.. A[start_ptr]>0:
                     cur /= A[start_ptr]
                     start_ptr += 1
                 __ A[start_ptr]<0:

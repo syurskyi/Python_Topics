@@ -18,7 +18,7 @@ c_ Logger(o..
     __ message n.. __ d:
       d[message] = timestamp
       r.. T..
-    ____ timestamp - d[message] >= 10:
+    ____ timestamp - d[message] >_ 10:
       d[message] = timestamp
       r.. T..
     r.. F..

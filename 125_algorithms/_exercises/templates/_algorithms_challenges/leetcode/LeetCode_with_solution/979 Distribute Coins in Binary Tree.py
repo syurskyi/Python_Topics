@@ -62,5 +62,5 @@ c_ Solution:
         demand_m = 1 - node.val
         # attribut the move to the node required
         demand = demand_l + demand_r + demand_m
-        ret += abs(demand)
+        ret += a..(demand)
         r.. demand

@@ -28,7 +28,7 @@ c_ Solution(o..
             '9':'6',
             '0':'0',
         }
-        w.... i <= j:
+        w.... i <_ j:
             __ arr[i] __ hashmap a.. arr[j] __ hashmap:
                 arr0[i], arr0[j] = hashmap[arr[i]], hashmap[arr[j]]
                 i += 1

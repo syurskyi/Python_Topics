@@ -62,16 +62,16 @@ c_ Solution:
                 _____
 
             max_e = -f__("inf")
-            w.... i < l..(clips) a.. clips[i][0] <= prev_e:
+            w.... i < l..(clips) a.. clips[i][0] <_ prev_e:
                 max_e = m..(max_e, clips[i][1])
                 i += 1
 
             prev_e = max_e  # take
             ret += 1
-            __ prev_e >= T:
+            __ prev_e >_ T:
                 _____
 
-        r.. ret __ prev_e >= T ____ -1
+        r.. ret __ prev_e >_ T ____ -1
 
     ___ videoStitching_error  clips: L..[L..[i..]], T: i..) __ i..:
         """
@@ -85,7 +85,7 @@ c_ Solution:
             r.. F..
 
         ___ _, _, s, e __ A[1:]:
-            __ s <= prev_e a.. e > prev_e:
+            __ s <_ prev_e a.. e > prev_e:
                 prev_e = e
                 ret += 1
 

@@ -13,10 +13,10 @@ c_ Solution(o..
         _______ m__
         piles.s..()
         l, r = 1, m..(piles)
-        w.... l <= r:
+        w.... l <_ r:
             mid = l+(r-l)//2
             sumVal = s..(m__.c.. f__(num)/mid) ___ num __ piles)
-            __ sumVal <= H:
+            __ sumVal <_ H:
                 r = mid-1
             ____
                 l = mid+1

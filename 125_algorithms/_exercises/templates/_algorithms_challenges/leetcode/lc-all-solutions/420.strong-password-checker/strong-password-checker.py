@@ -32,7 +32,7 @@ c_ Solution(o..
 
     __ l..(s) < 6:
       r.. m..(complexBal, 6 - l..(s
-    ____ l..(s) <= 20:
+    ____ l..(s) <_ 20:
       r.. m..(complexBal, r..)
     ____
       redundant = l..(s) - 20

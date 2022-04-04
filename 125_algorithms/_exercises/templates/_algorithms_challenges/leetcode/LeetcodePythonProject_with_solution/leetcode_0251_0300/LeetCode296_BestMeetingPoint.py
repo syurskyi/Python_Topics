@@ -16,9 +16,9 @@ c_ Solution(o..
         cols.s..()
         sumVal = 0
         ___ row __ rows:
-            sumVal += abs(row - rows[l..(rows)//2])
+            sumVal += a..(row - rows[l..(rows)//2])
         ___ col __ cols:
-            sumVal += abs(col - cols[l..(cols)//2])
+            sumVal += a..(col - cols[l..(cols)//2])
         r.. sumVal
     
     ___ test

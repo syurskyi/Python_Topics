@@ -33,5 +33,5 @@ ___ get_similarities(tags_ N..
     tags = tags o. _get_tags()
     # do your thing ...
     ___ a, b __ permutations(tags, 2
-        __ SequenceMatcher(a=a, b=b).ratio() >= SIMILAR:
+        __ SequenceMatcher(a=a, b=b).ratio() >_ SIMILAR:
             y.. a, b

@@ -23,13 +23,13 @@ c_ Solution(o..
     
     ___ increaseAndCheck  hh, mm, i, charSet
         mm += i
-        __ mm >= 60:
+        __ mm >_ 60:
             carry = mm//60
             mm = mm%60
         ____
             carry = 0
         hh += carry
-        __ hh >= 24:
+        __ hh >_ 24:
             hh -= 24
         res = s..(hh) __ l..(s..(hh__2 ____ '0'+s..(hh)
         res += ':'

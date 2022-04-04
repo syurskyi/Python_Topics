@@ -44,7 +44,7 @@ c_ Solution:
                 _step = 0
 
                 w.... (
-                    0 <= _x < m a.. 0 <= _y < n a..
+                    0 <_ _x < m a.. 0 <_ _y < n a..
                     maze[_x][_y] __ 0 a..
                     n.. (_x __ tx a.. _y __ ty)
 
@@ -122,7 +122,7 @@ c_ Solution2:
                 _y = y + dy
 
                 w.... (
-                    0 <= _x < m a.. 0 <= _y < n a..
+                    0 <_ _x < m a.. 0 <_ _y < n a..
                     maze[_x][_y] __ 0 a..
                     n.. (_x __ tx a.. _y __ ty)
 
@@ -133,7 +133,7 @@ c_ Solution2:
                     _x -= dx
                     _y -= dy
 
-                _step = distance[x, y] + abs(_x - x) + abs(_y - y)
+                _step = distance[x, y] + a..(_x - x) + a..(_y - y)
 
                 __ (_x, _y) __ distance a.. _step > distance[_x, _y]:
                     _____

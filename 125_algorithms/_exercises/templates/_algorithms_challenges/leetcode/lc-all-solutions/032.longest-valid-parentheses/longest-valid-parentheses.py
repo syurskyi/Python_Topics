@@ -14,7 +14,7 @@ c_ Solution(o..
         left -= 1
         dp[i] = dp[i - 1] + 2
         j = i - dp[i]
-        __ j >= 0:
+        __ j >_ 0:
           dp[i] += dp[j]
         ans = m..(ans, dp[i])
     r.. ans

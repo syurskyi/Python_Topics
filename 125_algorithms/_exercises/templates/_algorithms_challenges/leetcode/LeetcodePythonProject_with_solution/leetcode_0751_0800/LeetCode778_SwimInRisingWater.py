@@ -20,7 +20,7 @@ c_ Solution(o..
             __ x __ y __ n-1:
                 r.. res
             ___ i, j __ (x+1, y), (x, y+1), (x-1, y), (x, y-1
-                __ 0 <= i < n a.. 0 <= j < n a.. (i, j) n.. __ visited:
+                __ 0 <_ i < n a.. 0 <_ j < n a.. (i, j) n.. __ visited:
                     visited.add((i, j
                     heapq.heappush(pq, (grid[i][j], i, j
         r.. res

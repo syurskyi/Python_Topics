@@ -10,7 +10,7 @@ c_ Solution(o..
       ___ i __ r..(2, n
         __ dp[i] __ 1:
           k = i * i
-          __ k >= n:
+          __ k >_ n:
             r..
           w.... k < n:
             dp[k] = 0

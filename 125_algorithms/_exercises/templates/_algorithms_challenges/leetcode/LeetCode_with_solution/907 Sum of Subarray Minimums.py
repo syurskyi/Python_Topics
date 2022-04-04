@@ -52,7 +52,7 @@ c_ Solution:
 
         stk    # list
         ___ i __ r..(n
-            w.... stk a.. A[stk[-1]] >= A[i]:
+            w.... stk a.. A[stk[-1]] >_ A[i]:
                 stk.p.. )
 
             __ stk:

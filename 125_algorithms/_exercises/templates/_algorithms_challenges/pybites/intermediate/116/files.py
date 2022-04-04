@@ -9,7 +9,7 @@ ___ get_files(dirname, size_in_kb
     file_gt_kb    # list
     ___ file __ glob.glob(f"{dirname}/*"
         file_size = __.p...getsize(file)
-        __ file_size >= (size_in_kb * ONE_KB
+        __ file_size >_ (size_in_kb * ONE_KB
             file_gt_kb.a..(s..(file_size
 
     r.. file_gt_kb

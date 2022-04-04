@@ -36,7 +36,7 @@ c_ Solution:
         ___ i __ r..(n - k - 1, -1, -1
             R[i] = R[i + 1]
             _sum = S[i + k] - S[i]
-            __ _sum >= max_sum:
+            __ _sum >_ max_sum:
                 R[i] = i
                 max_sum = _sum
 

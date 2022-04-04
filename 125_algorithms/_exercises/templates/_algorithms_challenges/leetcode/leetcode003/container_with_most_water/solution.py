@@ -7,7 +7,7 @@ c_ Solution:
         max_area = 0
         w.... i < j:
             max_area = m..(max_area, (j - i) * m..(height[i], height[j]
-            __ height[i] <= height[j]:
+            __ height[i] <_ height[j]:
                 i += 1
             ____
                 j -= 1

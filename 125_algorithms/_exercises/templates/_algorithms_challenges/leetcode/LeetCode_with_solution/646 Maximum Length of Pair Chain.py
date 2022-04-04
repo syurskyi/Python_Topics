@@ -33,7 +33,7 @@ c_ Solution:
         ret = 0
         cur_end = -f__("inf")
         ___ i __ r..(n
-            __ pairs[i][0] <= cur_end:
+            __ pairs[i][0] <_ cur_end:
                 _____
 
             cur_end = pairs[i][1]
@@ -57,7 +57,7 @@ c_ Solution:
             cur_end = pairs[i][1]
 
             i += 1
-            w.... i < n a.. pairs[i][0] <= cur_end:
+            w.... i < n a.. pairs[i][0] <_ cur_end:
                 i += 1
 
         r.. ret

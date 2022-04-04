@@ -14,7 +14,7 @@ c_ Solution:
 
         ___ i __ r..(1, target + 1
             ___ j __ r..(n
-                __ i >= A[j]:
+                __ i >_ A[j]:
                     dp[i] += dp[i - A[j]]
 
         r.. dp[target]

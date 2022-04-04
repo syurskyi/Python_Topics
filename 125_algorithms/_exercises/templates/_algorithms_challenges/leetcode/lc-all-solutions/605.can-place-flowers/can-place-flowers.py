@@ -11,6 +11,6 @@ c_ Solution(o..
       __ plot __ 0:
         cnt += 1
       ____
-        ans += abs(cnt - 1) / 2
+        ans += a..(cnt - 1) / 2
         cnt = 0
-    r.. ans + cnt / 2 >= n
+    r.. ans + cnt / 2 >_ n

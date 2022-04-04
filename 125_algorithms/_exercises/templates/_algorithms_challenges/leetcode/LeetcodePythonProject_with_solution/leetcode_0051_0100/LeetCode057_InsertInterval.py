@@ -30,7 +30,7 @@ c_ Solution(o..
             ____ interval.start > newInterval.end:
                 result.a..(newInterval)
                 newInterval = interval
-            ____ interval.end >= newInterval.start o. interval.start <= newInterval.end:
+            ____ interval.end >_ newInterval.start o. interval.start <_ newInterval.end:
                 newInterval = Interval(\
                     m..(newInterval.start, interval.start),\
                     m..(newInterval.end, interval.end

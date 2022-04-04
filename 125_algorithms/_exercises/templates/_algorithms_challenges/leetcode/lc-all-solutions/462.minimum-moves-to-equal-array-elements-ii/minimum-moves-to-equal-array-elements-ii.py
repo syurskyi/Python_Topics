@@ -6,4 +6,4 @@ c_ Solution(o..
     """
     nums.s..()
     mid  nums[l..(nums) / 2]
-    r.. s..(abs(num - mid) ___ num __ nums)
+    r.. s..(a..(num - mid) ___ num __ nums)

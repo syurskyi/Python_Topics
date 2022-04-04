@@ -3,7 +3,7 @@ ____ f.. _______ lru_cache
 @lru_cache
 ___ cached_fib(n
 
-    __ n <= 1:
+    __ n <_ 1:
         r.. n
 
 

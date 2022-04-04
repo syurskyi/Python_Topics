@@ -30,7 +30,7 @@ c_ Solution(o..
             __ node __ p..:
                 ___ node0 __ p..[node]:
                     absDist = d+p..[node][node0]
-                    __ node0 __ distanceMap a.. distanceMap[node0] <= absDist:
+                    __ node0 __ distanceMap a.. distanceMap[node0] <_ absDist:
                         _____
                     distanceMap[node0] = absDist
                     heapq.heappush(heap, [absDist, node0])

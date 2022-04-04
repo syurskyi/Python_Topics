@@ -46,14 +46,14 @@ c_ LFUCache:
         :type val: int
         :rtype: void
         """
-        __ cap <= 0:
+        __ cap <_ 0:
             r..
 
         __ key __ nodes:
             _update(key, val)
             r..
 
-        w.... l..(nodes) >= cap:
+        w.... l..(nodes) >_ cap:
             _evict()
 
         _add(key, val)

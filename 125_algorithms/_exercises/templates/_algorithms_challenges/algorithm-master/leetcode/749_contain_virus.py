@@ -82,7 +82,7 @@ c_ Solution:
 
     ___ dfs  x, y, G, visited, ex_virus, spreading, walls
         m, n = l..(G), l..(G[0])
-        __ n.. (0 <= x < m a.. 0 <= y < n) o. visited[x][y]:
+        __ n.. (0 <_ x < m a.. 0 <_ y < n) o. visited[x][y]:
             r..
 
         __ G[x][y] __ VIRUS:

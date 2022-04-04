@@ -52,7 +52,7 @@ c_ Solution:
         top = 0
         bottom = l..(matrix) - 1
 
-        w.... left <= right a.. top <= bottom:
+        w.... left <_ right a.. top <_ bottom:
             ___ c __ x..(left, right + 1
                 result.a..(matrix[top][c])
             ___ r __ x..(top + 1, bottom + 1

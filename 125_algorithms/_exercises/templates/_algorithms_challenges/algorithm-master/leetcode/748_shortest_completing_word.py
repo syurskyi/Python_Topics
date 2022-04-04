@@ -38,7 +38,7 @@ c_ Solution:
         ord_z = o..('z')
 
         ___ char __ word.l..:
-            __ ord_a <= o..(char) <= ord_z:
+            __ ord_a <_ o..(char) <_ ord_z:
                 times[char] = times.g.. char, 0) + 1
 
         r.. times

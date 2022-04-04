@@ -70,7 +70,7 @@ c_ Color:
 
         values    # list
         ___ value __ rgb_value:
-            __ n.. 0 <= value <= 255:
+            __ n.. 0 <_ value <_ 255:
                 r.. V...("Invalid value")
 
             hex_value = f"{hex(value0<2}"

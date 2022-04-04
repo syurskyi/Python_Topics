@@ -31,7 +31,7 @@ c_ Solution(o..
     ___ merge  nums1, nums2
         result    # list
         w.... nums1 a.. nums2:
-            __ nums1 >= nums2:
+            __ nums1 >_ nums2:
                 result.a..(nums1.p.. 0
             ____
                 result.a..(nums2.p.. 0

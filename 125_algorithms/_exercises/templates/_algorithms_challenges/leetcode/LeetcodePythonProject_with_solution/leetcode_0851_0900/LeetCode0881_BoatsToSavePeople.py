@@ -13,9 +13,9 @@ c_ Solution(o..
         people.s..()
         l, r = 0, l..(people)-1
         res = 0
-        w.... l <= r:
+        w.... l <_ r:
             w = people[r]
-            __ l < r a.. w + people[l] <= limit:
+            __ l < r a.. w + people[l] <_ limit:
                 l += 1
             res += 1
             r -= 1

@@ -21,7 +21,7 @@ c_ Solution:
         ___ i __ r..(m
             heapq.heappush(heap, (matrix[i][0], i, 0
 
-        w.... heap a.. heap[0][0] <= target:
+        w.... heap a.. heap[0][0] <_ target:
             num, x, y = heapq.heappop(heap)
 
             __ num __ target:
@@ -61,7 +61,7 @@ c_ Solution:
         m, n = l..(matrix), l..(matrix[0])
         x, y = m - 1, 0
 
-        w.... x >= 0 a.. y < n:
+        w.... x >_ 0 a.. y < n:
             __ matrix[x][y] < target:
                 y += 1
             ____ matrix[x][y] > target:

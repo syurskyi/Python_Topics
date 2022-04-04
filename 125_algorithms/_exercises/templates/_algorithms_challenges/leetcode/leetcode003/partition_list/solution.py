@@ -17,7 +17,7 @@ c_ Solution:
         res_end = N..
         w.... head __ n.. N..
             next_node = head.next
-            __ head.val >= x:
+            __ head.val >_ x:
                 __ large __ N..
                     large = head
                     large_end = large

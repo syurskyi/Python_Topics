@@ -33,7 +33,7 @@ c_ Solution:
             ___ i __ r..(4
                 _x = x + dx[i]
                 _y = y + dy[i]
-                __ 0 <= _x < m a.. 0 <= _y < n a.. n.. visited[_x][_y]:
+                __ 0 <_ _x < m a.. 0 <_ _y < n a.. n.. visited[_x][_y]:
                     visited[_x][_y] = 1
                     # Choosing the boundary of current cell
                     # if its lower than the bound outside

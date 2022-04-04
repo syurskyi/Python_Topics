@@ -18,7 +18,7 @@ c_ ConnectGame:
             ... l..(l) __ width
 
     ___ valid  x, y
-        r.. x >= 0 a.. x < width a.. y >= 0 a.. y < height
+        r.. x >_ 0 a.. x < width a.. y >_ 0 a.. y < height
 
     ___ make_board  lines
         r.. ["".j..(l.s.. ___ l __ lines.s.. ]

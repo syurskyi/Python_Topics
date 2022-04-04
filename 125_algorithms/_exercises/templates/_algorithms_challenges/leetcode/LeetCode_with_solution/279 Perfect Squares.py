@@ -21,11 +21,11 @@ c_ Solution(o..
         O(n), think it as a tree, cache tree O(m+n) = O(2n); rather than O(n sqrt(n))
         backward
         """
-        w.... l..(Solution.F) <= n:
+        w.... l..(Solution.F) <_ n:
             i = l..(Solution.F)
             Solution.F.a..(___.maxint)
             j = 1
-            w.... i - j*j >= 0:
+            w.... i - j*j >_ 0:
                 Solution.F[i] = m..(Solution.F[i], Solution.F[i-j*j]+1)
                 j += 1
 
@@ -48,7 +48,7 @@ c_ Solution(o..
             ___ i __ x..(l
                 ___ j __ x..(1, i..(m__.sqrt(n+1
                     nxt = q[i]+j*j
-                    __ nxt <= n a.. visited[nxt]:
+                    __ nxt <_ n a.. visited[nxt]:
                         _____
                     ____ nxt < n:
                         visited[nxt] = T..
@@ -70,7 +70,7 @@ c_ Solution(o..
         F = [i ___ i __ x..(n+1)]
         ___ i __ x..(1, n+1
             ___ j __ x..(1, i..(m__.sqrt(i+1
-                __ i-j*j >= 0:
+                __ i-j*j >_ 0:
                     F[i] = m..(F[i], F[i-j*j]+1)
 
         r.. F[n]

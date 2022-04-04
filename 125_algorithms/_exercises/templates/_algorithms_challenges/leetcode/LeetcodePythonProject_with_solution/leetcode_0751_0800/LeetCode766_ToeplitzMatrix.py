@@ -13,14 +13,14 @@ c_ Solution(o..
         ___ i __ r..(m-1, 0, -1
             val = matrix[i][0]
             ___ k __ r..(1, n
-                __ i+k >= m o. k >= n:
+                __ i+k >_ m o. k >_ n:
                     _____
                 __ matrix[i+k][k] != val:
                     r.. F..
         ___ j __ r..(n
             val = matrix[0][j]
             ___ k __ r..(1, m
-                __ j+k >= n o. k >= m:
+                __ j+k >_ n o. k >_ m:
                     _____
                 __ matrix[k][j+k] != val:
                     r.. F..

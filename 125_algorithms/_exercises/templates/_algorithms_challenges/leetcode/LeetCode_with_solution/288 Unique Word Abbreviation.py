@@ -19,7 +19,7 @@ c_ ValidWordAbbr(o..
             abbrev[process(word)] += 1
 
     ___ process  word
-        __ l..(word) <= 2:
+        __ l..(word) <_ 2:
             r.. word
 
         r.. word[0]+s..(l..(word)-2)+word[-1]

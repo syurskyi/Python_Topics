@@ -31,7 +31,7 @@ c_ Solution:
                 I = i
                 J = j
                 # look ahead
-                w.... 0 <= I + di < m a.. 0 <= J + dj < n a.. maze[I + di][J + dj] __ 0:
+                w.... 0 <_ I + di < m a.. 0 <_ J + dj < n a.. maze[I + di][J + dj] __ 0:
                     I += di
                     J += dj
                     cur_dist += 1

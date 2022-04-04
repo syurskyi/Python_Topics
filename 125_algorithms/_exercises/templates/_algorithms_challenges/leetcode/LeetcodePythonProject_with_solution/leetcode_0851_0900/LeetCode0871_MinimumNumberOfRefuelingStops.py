@@ -16,7 +16,7 @@ c_ Solution(o..
         res = i = 0
         cur = startFuel
         w.... cur < target:
-            w.... i < l..(stations) a.. stations[i][0] <= cur:
+            w.... i < l..(stations) a.. stations[i][0] <_ cur:
                 heapq.heappush(h, -stations[i][1])
                 i += 1
             __ n.. h:

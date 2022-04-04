@@ -26,7 +26,7 @@ c_ Solution:
         length = l..(A)
         w.... i<length:
             current = A[i]
-            __ current<=0 o. current>length o. A[current-1]__current:  # out-of-range or in-place
+            __ current<_0 o. current>length o. A[current-1]__current:  # out-of-range or in-place
                 i += 1
             ____
                 A[current-1], A[i] = current, A[current-1]   # go to the next iteration

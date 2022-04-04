@@ -17,8 +17,8 @@ c_ Solution(o..
         i = 0
         ___ j __ r..(l..(paragraph:
             c = paragraph[j]
-            __ n.. (o..('a') <= o..(c) <= o..('z') o.\
-                o..('A') <= o..(c) <= o..('Z':
+            __ n.. (o..('a') <_ o..(c) <_ o..('z') o.\
+                o..('A') <_ o..(c) <_ o..('Z':
                 word = paragraph[i:j].l..
                 __ word a.. word n.. __ banned:
                     hashmap[word] = hashmap.g.. word, 0)+1

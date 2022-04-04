@@ -11,7 +11,7 @@ c_ TopVotedCandidate(o..
         maxP = N..
         ___ p, t __ z..(persons, times
             hashmap[p] = hashmap.g.. p, 0)+1
-            __ hashmap[p] >= maxNum:
+            __ hashmap[p] >_ maxNum:
                 maxP = p
                 maxNum = hashmap[p]
             arr.a..([t, maxP])

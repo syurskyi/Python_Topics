@@ -37,7 +37,7 @@ c_ Solution:
                         _x = x + dx
                         _y = y + dy
 
-                        __ n.. (0 <= _x < n a.. 0 <= _y < n
+                        __ n.. (0 <_ _x < n a.. 0 <_ _y < n
                             _____
 
                         nxt[_x, _y] += dp[x, y] / 8.0
@@ -83,7 +83,7 @@ c_ Solution:
                     _x = x + dx
                     _y = y + dy
 
-                    __ n.. (0 <= _x < n a.. 0 <= _y < n
+                    __ n.. (0 <_ _x < n a.. 0 <_ _y < n
                         _____
 
                     __ k __ 0:

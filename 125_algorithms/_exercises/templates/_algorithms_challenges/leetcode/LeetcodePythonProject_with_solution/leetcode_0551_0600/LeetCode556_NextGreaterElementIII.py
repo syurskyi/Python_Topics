@@ -12,7 +12,7 @@ c_ Solution(o..
         s = s..(n)
         arr = l..(s)
         i = l..(s)-1
-        w.... i > 0 a.. arr[i-1] >= arr[i]:
+        w.... i > 0 a.. arr[i-1] >_ arr[i]:
             i -= 1
         __ i __ 0:
             r.. -1
@@ -23,11 +23,11 @@ c_ Solution(o..
             i += 1
             j -= 1
         j = ind
-        w.... j < l..(s) a.. arr[j] <= arr[ind-1]:
+        w.... j < l..(s) a.. arr[j] <_ arr[ind-1]:
             j += 1
         arr[ind-1], arr[j] = arr[j], arr[ind-1]
         res = i..(''.j..(arr
-        __ res >= 1 << 32-1:
+        __ res >_ 1 << 32-1:
             r.. -1
         r.. res
     

@@ -47,7 +47,7 @@ c_ Solution:
             ___ direction __ directions:
                 row = cor[0]+direction[0]
                 col = cor[1]+direction[1]
-                __ 0<=row<m a.. 0<=col<n a.. board[row][col]__'O':
+                __ 0<_row<m a.. 0<_col<n a.. board[row][col]__'O':
                     q.a..((row, col
 
 

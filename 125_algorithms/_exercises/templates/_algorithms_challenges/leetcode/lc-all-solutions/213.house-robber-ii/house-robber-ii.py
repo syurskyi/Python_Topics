@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     __ l..(nums) __ 0 o. nums __ N..
       r.. 0
-    __ l..(nums) <= 2:
+    __ l..(nums) <_ 2:
       r.. m..(nums | )
     # If we rob the first house, the problem becomes how to rob houses except the last one.
     # If we rob the last house, the problem becomes how to rob houses ecept the first one.

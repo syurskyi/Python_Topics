@@ -39,7 +39,7 @@ c_ Solution:
             ____
                 prev = cur
                 cur = 1
-            __ prev >= cur:
+            __ prev >_ cur:
                 ret += 1
 
         r.. ret

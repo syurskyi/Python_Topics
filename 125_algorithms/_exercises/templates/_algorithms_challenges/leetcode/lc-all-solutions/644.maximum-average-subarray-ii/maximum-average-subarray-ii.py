@@ -13,13 +13,13 @@ c_ Solution(o..
       minSum = preSums = sums = 0
       ___ i __ r..(k
         sums += nums[i] - mid
-      __ sums >= 0:
+      __ sums >_ 0:
         r.. T..
       ___ i __ r..(k, l..(nums:
         sums += nums[i] - mid
         preSums += nums[i - k] - mid
         minSum = m..(minSum, preSums)
-        __ sums - minSum >= 0:
+        __ sums - minSum >_ 0:
           r.. T..
       r.. F..
 

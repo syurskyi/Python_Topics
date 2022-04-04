@@ -20,7 +20,7 @@ c_ Solution:
             __ x < n a.. x % 10 < 9:
                 stack.a..(x + 1)
 
-            __ x * 10 <= n:
+            __ x * 10 <_ n:
                 stack.a..(x * 10)
 
         r.. ans

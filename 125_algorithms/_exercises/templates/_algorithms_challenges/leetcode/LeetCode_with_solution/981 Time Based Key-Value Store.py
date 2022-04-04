@@ -77,7 +77,7 @@ c_ TimeMap:
         __ i < l..(lst) a.. lst[i][0] __ timestamp:
             r.. lst[i][1]
         i -= 1
-        __ i >= 0:
+        __ i >_ 0:
             r.. lst[i][1]
             
         r.. ""

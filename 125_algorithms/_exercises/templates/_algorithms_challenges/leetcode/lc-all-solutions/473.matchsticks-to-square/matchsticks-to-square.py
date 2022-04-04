@@ -28,12 +28,12 @@ c_ Solution(o..
       ___ i __ r..(0, l..(cands:
         ___ j __ r..(1, sideLen + 1
           dp[i][j] |= dp[i - 1][j]
-          __ j - cands[i] >= 0:
+          __ j - cands[i] >_ 0:
             dp[i][j] |= dp[i - 1][j - cands[i]]
       r.. dp[-1][-1]
 
     ___ dfs(nums, start, sticksIdx, halfLen, subSum, subsetIdx
-      __ subSum >= halfLen:
+      __ subSum >_ halfLen:
         __ subSum __ halfLen a.. backpack(nums, subsetIdx) a.. backpack(nums, sticksIdx
           r.. T..
         r.. F..

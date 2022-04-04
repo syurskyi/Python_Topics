@@ -12,7 +12,7 @@ c_ Solution(o..
       ___ num __ nums:
         __ num < mid:
           count += 1
-      __ count >= mid:
+      __ count >_ mid:
         end = mid
       ____
         start = mid

@@ -26,7 +26,7 @@ c_ Solution(o..
         j = n-1
         closed = m+n
 
-        w.... i >= 0 a.. j >= 0:
+        w.... i >_ 0 a.. j >_ 0:
             closed -= 1
             __ A[i] > B[j]:
                 A[closed] = A[i]
@@ -37,5 +37,5 @@ c_ Solution(o..
 
         # either-or
         # dangling
-        __ j >= 0: A[:closed] = B[:j+1]
+        __ j >_ 0: A[:closed] = B[:j+1]
         # if i >= 0: A[:closed] = A[:i+1]

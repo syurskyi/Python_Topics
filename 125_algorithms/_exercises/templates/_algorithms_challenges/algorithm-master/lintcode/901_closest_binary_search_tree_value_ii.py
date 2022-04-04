@@ -30,7 +30,7 @@ c_ Solution:
 
         i, j = i - 1, i
 
-        w.... k a.. i >= 0 a.. j < n:
+        w.... k a.. i >_ 0 a.. j < n:
             __ target - vals[i] < vals[j] - target:
                 ans.a..(vals[i])
                 i -= 1
@@ -39,7 +39,7 @@ c_ Solution:
                 j += 1
             k -= 1
 
-        w.... k a.. i >= 0:
+        w.... k a.. i >_ 0:
             ans.a..(vals[i])
             i -= 1
             k -= 1

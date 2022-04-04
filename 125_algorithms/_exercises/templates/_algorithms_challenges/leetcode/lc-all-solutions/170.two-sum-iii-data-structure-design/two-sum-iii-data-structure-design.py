@@ -24,7 +24,7 @@ c_ TwoSum(o..
       t = value - num
       __ t __ d:
         __ t __ num:
-          __ d[t] >= 2:
+          __ d[t] >_ 2:
             r.. T..
         ____
           r.. T..

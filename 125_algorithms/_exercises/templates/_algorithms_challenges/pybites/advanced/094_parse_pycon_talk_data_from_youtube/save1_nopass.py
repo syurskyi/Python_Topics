@@ -720,7 +720,7 @@ ___ get_video_duration(video
 
 ___ get_talks_gt_one_hour(videos
     """Filter the videos list down to videos of > 1 hour"""
-    r.. [video ___ video __ videos __ get_video_duration(video) >= d__.t..(hours=1)]
+    r.. [video ___ video __ videos __ get_video_duration(video) >_ d__.t..(hours=1)]
 
 
 ___ get_talks_lt_twentyfour_min(videos

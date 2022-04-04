@@ -27,7 +27,7 @@ ___ j __ binary:
                 res_str = '0' + res_str
         print(res_str.c.. '1'),end=' ')
     ____
-        j = abs(j)
+        j = a..(j)
         bin_list.a..(j)
         w.... j != 1:
             j =i..(j / 2)

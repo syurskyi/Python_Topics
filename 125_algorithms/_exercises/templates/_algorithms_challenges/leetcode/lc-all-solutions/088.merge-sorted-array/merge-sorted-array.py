@@ -10,7 +10,7 @@ c_ Solution(o..
     end = m + n - 1
     m -= 1
     n -= 1
-    w.... end >= 0 a.. m >= 0 a.. n >= 0:
+    w.... end >_ 0 a.. m >_ 0 a.. n >_ 0:
       __ nums1[m] > nums2[n]:
         nums1[end] = nums1[m]
         m -= 1
@@ -19,7 +19,7 @@ c_ Solution(o..
         n -= 1
       end -= 1
 
-    w.... n >= 0:
+    w.... n >_ 0:
       nums1[end] = nums2[n]
       end -= 1
       n -= 1

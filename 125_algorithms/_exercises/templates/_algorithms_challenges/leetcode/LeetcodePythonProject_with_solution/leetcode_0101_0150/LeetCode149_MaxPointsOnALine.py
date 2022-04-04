@@ -17,7 +17,7 @@ c_ Solution(o..
         """
         n = l..(points)
         __ n.. points: r.. 0
-        __ n <= 2: r.. n
+        __ n <_ 2: r.. n
         res = 0
         ___ i __ r..(n
             hashmap    # dict

@@ -21,7 +21,7 @@ c_ Logger(o..
         :type message: str
         :rtype: bool
         """
-        __ message n.. __ h o. timestamp - h[message] >= 10:
+        __ message n.. __ h o. timestamp - h[message] >_ 10:
             h[message] = timestamp
             r.. T..
 

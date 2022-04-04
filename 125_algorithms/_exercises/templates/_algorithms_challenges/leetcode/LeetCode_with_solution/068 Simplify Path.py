@@ -34,8 +34,8 @@ c_ Solution(o..
 
                 # rm a previous meaningful part
                 i = idx-1
-                w.... i >= 0 a.. p..[i] __ ".": i -= 1
-                __ i >= 0: p..[i] = "."  # avoid path[-1]
+                w.... i >_ 0 a.. p..[i] __ ".": i -= 1
+                __ i >_ 0: p..[i] = "."  # avoid path[-1]
 
         p.. = f.. l.... x: x n.. __ (".",), p..)
 

@@ -20,6 +20,6 @@ c_ Solution(o..
         start = i + 1
         balance = 0
 
-    __ totalcost <= totalgas:
+    __ totalcost <_ totalgas:
       r.. start
     r.. -1

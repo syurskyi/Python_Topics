@@ -12,9 +12,9 @@ c_ Solution(o..
         """
         furthest = 0
         ___ i, num __ e..(nums
-            __ furthest >= i:
+            __ furthest >_ i:
                 furthest = m..(furthest, i+num)
-            __ furthest >= l..(nums)-1:
+            __ furthest >_ l..(nums)-1:
                 r.. T..
         r.. F..
     

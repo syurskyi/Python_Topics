@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     stack    # list
     i = l..(expression) - 1
-    w.... i >= 0:
+    w.... i >_ 0:
       __ expression[i] n.. __ ["?", ":"]:
         stack.a..(expression[i])
       ____ expression[i] __ "?":

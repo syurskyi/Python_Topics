@@ -89,9 +89,9 @@ c_ Solution:
             since k == 1
             return min(4, 4) = `4`
         """
-        __ i >= l..(A
+        __ i >_ l..(A
             r.. B[j + k - 1]
-        __ j >= l..(B
+        __ j >_ l..(B
             r.. A[i + k - 1]
         __ k __ 1:
             r.. m..(A[i], B[j])

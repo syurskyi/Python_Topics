@@ -34,7 +34,7 @@ c_ Game:
             print('Should be a number')
             r.. V...('Non-digit entered')
         guess = i..(guess)
-        __ n.. (START <= guess <= END
+        __ n.. (START <_ guess <_ END
             print('Number not in range')
             r.. V...('Out of range')
         __ guess __ _guesses:

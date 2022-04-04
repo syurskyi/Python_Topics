@@ -46,7 +46,7 @@ c_ Solution:
                 hash_map[key][j] = 1
 
 
-        __ (length<=1
+        __ (length<_1
             r.. length
 
         __(l..(hash_map)__0
@@ -69,7 +69,7 @@ c_ Solution:
         """
         maxa = -1<<32
         length = l..(points)
-        __ (length<=1
+        __ (length<_1
             r.. length
 
         ___ i __ x..(length

@@ -37,7 +37,7 @@ c_ Solution:
         left, mid, right = 0, 0, n - 1
         w.... left + 1 < right:
             mid = left + (right - left) // 2
-            __ A[mid] <= target:
+            __ A[mid] <_ target:
                 left = mid
             ____
                 right = mid

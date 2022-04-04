@@ -15,7 +15,7 @@ c_ Solution(o..
         result[0][0] = poured
         ___ i __ r..(100
             ___ j __ r..(i+1
-                __ result[i][j] >= 1:
+                __ result[i][j] >_ 1:
                     result[i+1][j] += (result[i][j]-1)/2.0
                     result[i+1][j+1] += (result[i][j]-1)/2.0
                     result[i][j] = 1.0

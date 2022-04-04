@@ -30,7 +30,7 @@ c_ Solution(o..
         n = l..(A)
         cnt = [0 ___ _ __ x..(n+1)]
         ___ e __ A:
-            __ e >= n:  # chunk
+            __ e >_ n:  # chunk
                 cnt[n] += 1
             ____
                 cnt[e] += 1
@@ -38,7 +38,7 @@ c_ Solution(o..
         F = [0 ___ _ __ x..(n+2)]
         ___ i __ x..(n, -1, -1
             F[i] += F[i+1] + cnt[i]
-            __ F[i] >= i:
+            __ F[i] >_ i:
                 r.. i
 
         r.. 0
@@ -52,7 +52,7 @@ c_ Solution(o..
         n = l..(citations)
         citations.s..()
         ___ i __ x..(n
-            __ citations[i] >= n-i:
+            __ citations[i] >_ n-i:
                 r.. n-i
 
         r.. 0
@@ -67,7 +67,7 @@ c_ Solution(o..
         citations.a..(0)
         h = 0
         ___ i __ x..(l..(citations)-1
-            __ citations[i] >= i+1 >= citations[i+1]:
+            __ citations[i] >_ i+1 >_ citations[i+1]:
                 h = i+1
             ____ h:
                 _____

@@ -19,8 +19,8 @@ c_ Solution(o..
         m, n = l..(matrix), l..(matrix[0])
         i, j = m-1, 0
         count = 0
-        w.... i >= 0 a.. j < n:
-            __ matrix[i][j] <= target:
+        w.... i >_ 0 a.. j < n:
+            __ matrix[i][j] <_ target:
                 count += i+1
                 j += 1
             ____

@@ -74,15 +74,15 @@ c_ Solution:
                     r.. t
 
                 cur = e * 2
-                __ cur >= 1:
+                __ cur >_ 1:
                     __ cur > Y a.. n.. has_larger:
                         has_larger = T..
                         cur_q.a..(cur)
-                    ____ cur <= Y:
+                    ____ cur <_ Y:
                         cur_q.a..(cur)
 
                 cur = e - 1
-                __ cur >= 1:
+                __ cur >_ 1:
                     cur_q.a..(cur)
             q = cur_q
             t += 1

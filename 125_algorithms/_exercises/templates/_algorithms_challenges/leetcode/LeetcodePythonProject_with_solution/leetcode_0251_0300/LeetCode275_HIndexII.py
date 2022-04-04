@@ -13,7 +13,7 @@ c_ Solution(o..
         n = l..(citations)
         count = [0]*(n+1)
         ___ c __ citations:
-            __ c >= n:
+            __ c >_ n:
                 count[n] += 1
             ____
                 count[c] += 1
@@ -21,6 +21,6 @@ c_ Solution(o..
         sumVal = 0
         ___ i __ r..(n, -1, -1
             sumVal += count[i]
-            __ sumVal >= i:
+            __ sumVal >_ i:
                 r.. i
         r.. res

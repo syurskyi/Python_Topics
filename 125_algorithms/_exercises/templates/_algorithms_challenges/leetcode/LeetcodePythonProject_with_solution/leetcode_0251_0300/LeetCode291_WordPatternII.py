@@ -14,7 +14,7 @@ c_ Solution(o..
     ___ helper  pattern, s, i, j, hashmap, hashset
         __ i __ l..(pattern) a.. j __ l..(s
             r.. T..
-        __ i >= l..(pattern) o. j >= l..(s
+        __ i >_ l..(pattern) o. j >_ l..(s
             r.. F..
         c = pattern[i]
         ___ k __ r..(j+1, l..(s)+1

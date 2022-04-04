@@ -10,7 +10,7 @@ ___ sqRoot(numbers
         ____
             ___ x __ r..(runs
                 division  value / root
-                abs(root - division)
+                a..(root - division)
                 root  (root + division) / 2
             answer.a..(s..(root
     print(' '.j..(answer

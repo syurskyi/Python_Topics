@@ -32,7 +32,7 @@ c_ Solution(o..
       tag = tag[1:-1]
       __ tag[0] __ "/":
         tag = tag[1:]
-      __ n.. 1 <= l..(tag) <= 9:
+      __ n.. 1 <_ l..(tag) <_ 9:
         r.. F..
       ___ c __ tag:
         __ c n.. __ s__.a..:

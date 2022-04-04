@@ -87,7 +87,7 @@ c_ Solution:
             cur[1] = i
             mx = m..(mx, cur[0])
             j = i + 1
-            w.... cur[0] >= 0 a.. j < i + n:
+            w.... cur[0] >_ 0 a.. j < i + n:
                 cur[0] += A[j % n]
                 mx = m..(mx, cur[0])
                 j += 1

@@ -52,19 +52,19 @@ c_ Solution:
                 # diagonal
                 row = queen_index+m
                 col = i+m
-                __ 0<=row<n a.. 0<=col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
+                __ 0<_row<n a.. 0<_col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
                 row = queen_index-m
                 col = i-m
-                __ 0<=row<n a.. 0<=col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
+                __ 0<_row<n a.. 0<_col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
                 row = queen_index-m
                 col = i+m
-                __ 0<=row<n a.. 0<=col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
+                __ 0<_row<n a.. 0<_col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
                 row = queen_index+m
                 col = i-m
-                __ 0<=row<n a.. 0<=col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
+                __ 0<_row<n a.. 0<_col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
             backtrack(queen_index+1, new_config, result)
 

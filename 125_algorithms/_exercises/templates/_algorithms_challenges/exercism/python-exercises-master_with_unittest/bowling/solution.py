@@ -77,7 +77,7 @@ c_ BowlingGame(o..
                 "wrong number of fill balls when the tenth frame is a spare")
 
     ___ roll  pins
-        __ n.. 0 <= pins <= 10:
+        __ n.. 0 <_ pins <_ 10:
             r.. V...("invalid pins")
         ____ current_frame_idx __ MAX_FRAME:
             roll_bonus(pins)

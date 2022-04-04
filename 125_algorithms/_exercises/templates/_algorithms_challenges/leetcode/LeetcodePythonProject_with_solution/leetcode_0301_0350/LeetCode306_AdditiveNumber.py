@@ -38,7 +38,7 @@ c_ NumArray(o..
         __ n.. root:
             r..
         mid = root.start+(root.end-root.start)//2
-        __ i <= mid:
+        __ i <_ mid:
             updateHelper(root.leftChild, i, val)
         ____
             updateHelper(root.rightChild, i, val)

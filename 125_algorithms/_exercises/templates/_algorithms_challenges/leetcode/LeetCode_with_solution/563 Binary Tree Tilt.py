@@ -47,5 +47,5 @@ c_ Solution:
 
         l = w..(node.left, ret)
         r = w..(node.right, ret)
-        ret[0] += abs(l - r)
+        ret[0] += a..(l - r)
         r.. l + node.val + r

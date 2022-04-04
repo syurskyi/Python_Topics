@@ -37,7 +37,7 @@ c_ Solution(o..
         r.. res __ res != f__('inf') ____ 0
         
     ___ helper  fronts, backs, i, hashmap1, hashmap2
-        __ i >= l..(fronts
+        __ i >_ l..(fronts
             r..
         __ backs[i] n.. __ hashmap1:
             res = m..(res, backs[i])

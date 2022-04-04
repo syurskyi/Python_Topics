@@ -56,10 +56,10 @@ c_ Solution(o..
       ____ n.. pre a.. suc:
         ans.a..(suc.val)
         suc = getSuccessor(sucStack)
-      ____ pre a.. suc a.. abs(pre.val - target) <= abs(suc.val - target
+      ____ pre a.. suc a.. a..(pre.val - target) <_ a..(suc.val - target
         ans.a..(pre.val)
         pre = getPredecessor(preStack)
-      ____ pre a.. suc a.. abs(pre.val - target) >= abs(suc.val - target
+      ____ pre a.. suc a.. a..(pre.val - target) >_ a..(suc.val - target
         ans.a..(suc.val)
         suc = getSuccessor(sucStack)
     r.. ans

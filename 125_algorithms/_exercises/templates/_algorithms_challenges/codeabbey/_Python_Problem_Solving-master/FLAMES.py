@@ -32,7 +32,7 @@ w.... l..(flame)!= 1:
         len_count += 1
         i += 1
         #check if the i counter has reached end of the list if yes then reset the counter
-        __ i >= l..(flame
+        __ i >_ l..(flame
             i = 0
 print('The relationship future of',name1,'&',name2,' is',flame_dic[flame[0]])
     

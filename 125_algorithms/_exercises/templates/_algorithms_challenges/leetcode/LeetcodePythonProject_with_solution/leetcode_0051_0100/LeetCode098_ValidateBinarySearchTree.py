@@ -26,7 +26,7 @@ c_ Solution(o..
             node = node.left
         w.... stack:
             node = stack.p.. )
-            __ prev >= node.val:
+            __ prev >_ node.val:
                 r.. F..
             prev = node.val
             node0 = node.right

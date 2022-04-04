@@ -11,11 +11,11 @@ c_ Solution(o..
         i = 1
         w.... i < l..(nums
             __ nums[i] > nums[i-1]:
-                w.... i+1 < l..(nums) a.. nums[i] <= nums[i+1]:
+                w.... i+1 < l..(nums) a.. nums[i] <_ nums[i+1]:
                     i += 1
                 maxLen += 1
             ____ nums[i-1] > nums[i]:
-                w.... i+1 < l..(nums) a.. nums[i+1] <= nums[i]:
+                w.... i+1 < l..(nums) a.. nums[i+1] <_ nums[i]:
                     i += 1
                 maxLen += 1
             i += 1

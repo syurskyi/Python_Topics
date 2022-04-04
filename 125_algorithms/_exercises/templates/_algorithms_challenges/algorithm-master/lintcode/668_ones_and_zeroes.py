@@ -71,7 +71,7 @@ c_ Solution:
                     """
                     case 1: included current `strs[i - 1]`
                     """
-                    __ j >= c0 a.. k >= c1:
+                    __ j >_ c0 a.. k >_ c1:
                         dp[i][j][k] = dp[i - 1][j - c0][k - c1] + 1
 
                     """

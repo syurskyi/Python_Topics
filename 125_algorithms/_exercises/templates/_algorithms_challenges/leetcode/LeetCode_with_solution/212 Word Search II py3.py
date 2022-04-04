@@ -55,7 +55,7 @@ c_ Solution:
             ___ di, dj __ dirs:
                 I = i + di
                 J = j + dj
-                __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J]:
+                __ 0 <_ I < m a.. 0 <_ J < n a.. n.. visited[I][J]:
                     dfs(board, visited, I, J, nxt, ret)
 
         visited[i][j] = F..

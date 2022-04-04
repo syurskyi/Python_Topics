@@ -12,8 +12,8 @@ ___ can_attack(pos1, pos2
     validate_position(pos1, pos2)
     x1, y1 = pos1
     x2, y2 = pos2
-    dx = x1 - x2 __ x1 >= x2 ____ x2 - x1
-    dy = y1 - y2 __ y1 >= y2 ____ y2 - y1
+    dx = x1 - x2 __ x1 >_ x2 ____ x2 - x1
+    dy = y1 - y2 __ y1 >_ y2 ____ y2 - y1
     __ dx __ dy o. dx __ 0 o. dy __ 0:
         r.. T..
     r.. F..

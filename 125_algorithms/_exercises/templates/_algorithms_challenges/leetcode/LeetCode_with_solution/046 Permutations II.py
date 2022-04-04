@@ -45,7 +45,7 @@ c_ Solution:
             result.a..(current)
 
         ___ ind, val __ e..(nums
-            __ ind-1>=0 a.. val__nums[ind-1]: _____  # JUMP; only need to compare to previous value
+            __ ind-1>_0 a.. val__nums[ind-1]: _____  # JUMP; only need to compare to previous value
             get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 
 __ _____ __ ____

@@ -22,7 +22,7 @@ ___ romanize(decimal_number
     res = ''
     d = decimal_number
     ___ v, c __ ROMAN_DIGITS:
-        __ d >= v:
+        __ d >_ v:
             x = d // v
             res += c * x
             d -= v * x

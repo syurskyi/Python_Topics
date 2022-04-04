@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: int
         """
         start, end = 1, x
-        w.... start <= end:
+        w.... start <_ end:
             mid = (start+end)/2
             __ mid*mid __ x:
                 r.. mid

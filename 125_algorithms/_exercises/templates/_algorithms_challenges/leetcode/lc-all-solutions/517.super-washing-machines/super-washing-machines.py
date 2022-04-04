@@ -11,5 +11,5 @@ c_ Solution(o..
     ans = 0
     ___ v __ machines:
       total += target - v
-      ans = m..(ans, abs(total), v - target)
+      ans = m..(ans, a..(total), v - target)
     r.. ans

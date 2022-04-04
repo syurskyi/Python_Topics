@@ -47,11 +47,11 @@ c_ Solution(o..
         """
         stk    # list
         ___ elt __ nums:
-            w.... stk a.. stk[-1] >= elt:
+            w.... stk a.. stk[-1] >_ elt:
                 stk.p.. )
 
             stk.a..(elt)
-            __ l..(stk) >= 3:
+            __ l..(stk) >_ 3:
                 r.. T..
 
         r.. F..

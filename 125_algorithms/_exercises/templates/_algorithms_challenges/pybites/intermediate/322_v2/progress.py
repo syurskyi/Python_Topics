@@ -25,4 +25,4 @@ ___ ontrack_reading(books_goal: i.., books_read: i..,
         read_rate = books_goal / 365
 
     print _*{books_left=}, {days_left=}')
-    r.. T.. __ books_left __ 0 ____ books_left / read_rate <= days_left
+    r.. T.. __ books_left __ 0 ____ books_left / read_rate <_ days_left

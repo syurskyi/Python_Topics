@@ -29,7 +29,7 @@ c_ Solution(o..
         stack    # list
         i = 0
         w.... i < l..(heights
-            __ n.. stack o. heights[i] >= heights[stack[-1]]:
+            __ n.. stack o. heights[i] >_ heights[stack[-1]]:
                 stack.a..(i)
                 i += 1
             ____

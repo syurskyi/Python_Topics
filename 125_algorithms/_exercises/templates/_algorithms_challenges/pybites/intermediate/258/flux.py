@@ -36,7 +36,7 @@ ___ identify_flux(xyz: l..) __ l..:
 
     ___ line __ xyz:
         *orig,dollar_amount,pct_amount = line
-        __ abs(dollar_amount) > THRESHOLDS[0] a.. abs(pct_amount) > THRESHOLDS[1]:
+        __ a..(dollar_amount) > THRESHOLDS[0] a.. a..(pct_amount) > THRESHOLDS[1]:
             flagged_lines.a..(line)
 
 

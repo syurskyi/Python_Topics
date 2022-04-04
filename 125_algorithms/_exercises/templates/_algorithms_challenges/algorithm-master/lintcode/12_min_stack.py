@@ -10,7 +10,7 @@ c_ MinStack:
         """
         stack.a..(x)
 
-        __ n.. mins o. x <= mins[-1]:
+        __ n.. mins o. x <_ mins[-1]:
             mins.a..(x)
 
     ___ pop

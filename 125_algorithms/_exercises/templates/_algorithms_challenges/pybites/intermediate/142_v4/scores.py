@@ -20,7 +20,7 @@ ___ calculate_score(scores
     __ n.. a..(s __ r..(1, 7) ___ s __ scores
         r.. V...
 
-    r.. s..(s ___ s __ scores __ s >= MIN_SCORE)
+    r.. s..(s ___ s __ scores __ s >_ MIN_SCORE)
 
 
 ___ get_winner(players

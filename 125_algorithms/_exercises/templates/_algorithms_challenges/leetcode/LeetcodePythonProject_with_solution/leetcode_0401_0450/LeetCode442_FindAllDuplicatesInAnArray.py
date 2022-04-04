@@ -8,9 +8,9 @@ c_ Solution(o..
     ___ findDuplicates  nums
         result    # list
         ___ num __ nums:
-            ind = abs(num)-1
+            ind = a..(num)-1
             __ nums[ind] < 0:
-                result.a..(abs(num
+                result.a..(a..(num
             ____
                 nums[ind] = -nums[ind]
         r.. result

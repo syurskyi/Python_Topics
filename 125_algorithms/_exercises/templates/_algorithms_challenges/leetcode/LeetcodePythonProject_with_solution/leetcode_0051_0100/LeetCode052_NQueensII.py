@@ -10,7 +10,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        __ n <= 0:
+        __ n <_ 0:
             r.. []
         sumArr = [0]
         usedColumns = [0]*n
@@ -31,7 +31,7 @@ c_ Solution(o..
         ___ i __ r..(row
             __ usedColumns[i] __ col:
                 r.. F..
-            __ row-i __ abs(col-usedColumns[i]
+            __ row-i __ a..(col-usedColumns[i]
                 r.. F..
         
         r.. T..

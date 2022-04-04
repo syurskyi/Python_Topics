@@ -7,7 +7,7 @@ ___ r..(num1, num2
     __(result < 0
         result = result * -1
         is_negative = T..
-    __(result + 0.5 >= i..(result+1:
+    __(result + 0.5 >_ i..(result+1:
         result = i..(result + 1)
     ____
         result = i..(result)

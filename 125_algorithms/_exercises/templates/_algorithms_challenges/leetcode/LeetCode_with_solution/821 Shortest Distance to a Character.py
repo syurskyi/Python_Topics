@@ -32,7 +32,7 @@ c_ Solution:
         ret    # list
         i = 0
         ___ j __ r..(l..(S:
-            w.... n.. idx[i] <= j < idx[i+1]:
+            w.... n.. idx[i] <_ j < idx[i+1]:
                 i += 1
 
             ret.a..(m..(j - idx[i], idx[i+1] - j

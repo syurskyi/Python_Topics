@@ -14,7 +14,7 @@ c_ Solution(o..
     """
     ans = p.val
     w.... p:
-      __ abs(target - p.val) < abs(ans - target
+      __ a..(target - p.val) < a..(ans - target
         ans = p.val
       __ target < p.val:
         p = p.left

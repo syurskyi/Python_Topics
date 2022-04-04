@@ -45,7 +45,7 @@ c_ Solution(o..
         i = 0
 
         w.... i < l..(line
-          __ dp[i] >= 3:
+          __ dp[i] >_ 3:
             i += dp[i]
           ____
             ret.e.. line[i:i + dp[i]])

@@ -12,7 +12,7 @@ c_ Solution(o..
       r.. a * (x ** 2) + b * x + c
 
     __ a __ 0:
-      __ b >= 0:
+      __ b >_ 0:
         r.. [f(x) ___ x __ nums]
       ____
         r.. [f(x) ___ x __ r..(nums)]
@@ -20,16 +20,16 @@ c_ Solution(o..
     mid = (-1.0) * b / (2.0 * a)
     up, down    # list, []
 
-    __ a >= 0:
+    __ a >_ 0:
       ___ num __ nums:
-        __ num >= mid:
+        __ num >_ mid:
           up.a..(f(num
         ____
           down.a..(f(num
       down.r..
     ____
       ___ num __ nums:
-        __ num >= mid:
+        __ num >_ mid:
           down.a..(f(num
         ____
           up.a..(f(num

@@ -15,7 +15,7 @@ c_ Solution(o..
         r.. res __ l..(res) > 2 ____ []
     
     ___ helper  s, i, res
-        __ i >= l..(s) a.. l..(res) > 2:
+        __ i >_ l..(s) a.. l..(res) > 2:
             r.. T..
         ___ j __ r..(i+1, l..(s)+1
             s0 = s[i:j]

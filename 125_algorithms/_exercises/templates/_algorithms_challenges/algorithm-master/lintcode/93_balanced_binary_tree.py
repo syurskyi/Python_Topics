@@ -27,5 +27,5 @@ c_ Solution:
         __ n.. is_balanced_right:
             r.. F.., 0
 
-        r.. abs(maxdepth_left - maxdepth_right) <= 1, \
+        r.. a..(maxdepth_left - maxdepth_right) <_ 1, \
             m..(maxdepth_left, maxdepth_right) + 1

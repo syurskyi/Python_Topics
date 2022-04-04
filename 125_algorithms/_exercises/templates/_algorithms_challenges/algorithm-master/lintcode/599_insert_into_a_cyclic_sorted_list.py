@@ -26,7 +26,7 @@ c_ Solution:
             cur = cur.next
 
             # in the list
-            __ pre.val <= x <= cur.val:
+            __ pre.val <_ x <_ cur.val:
                 _____
 
             # at the boundary between minimum and maximum

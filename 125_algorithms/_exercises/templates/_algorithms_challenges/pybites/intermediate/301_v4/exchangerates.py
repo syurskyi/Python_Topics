@@ -65,7 +65,7 @@ ___ match_daily_rates(start: date,
         __ day __ data_days:
             m.. = day
         ____
-            closest = m..(data_days, key=l.... x: abs((x-day).days
+            closest = m..(data_days, key=l.... x: a..((x-day).days
             __ closest > day:
                 m.. = data_days[data_days.i.. closest) - 1]
             ____

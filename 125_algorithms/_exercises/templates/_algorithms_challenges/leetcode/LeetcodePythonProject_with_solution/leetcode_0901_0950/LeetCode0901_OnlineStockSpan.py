@@ -14,7 +14,7 @@ c_ StockSpanner(o..
             dp.a..(1)
         ____
             i = idx -1
-            w.... i >= 0 a.. price >= prices[i]:
+            w.... i >_ 0 a.. price >_ prices[i]:
                 i -= dp[i]
             dp.a..(idx-i)
         prices.a..(price)

@@ -49,7 +49,7 @@ c_ Solution:
         n = l..(H)
 
         ___ right __ r..(l..(H:
-            __ right < n - 1 a.. H[right] <= H[right + 1]:
+            __ right < n - 1 a.. H[right] <_ H[right + 1]:
                 _____
             Hmin = H[right]
             ___ left __ r..(right, -1, -1
@@ -80,7 +80,7 @@ c_ Solution:
         stack    # list
 
         ___ right __ r..(l..(H:
-            w.... stack a.. H[stack[-1]] >= H[right]:
+            w.... stack a.. H[stack[-1]] >_ H[right]:
                 height = H[stack.p.. )]
                 left = stack[-1] __ stack ____ -1
                 area = height * (right - left - 1)

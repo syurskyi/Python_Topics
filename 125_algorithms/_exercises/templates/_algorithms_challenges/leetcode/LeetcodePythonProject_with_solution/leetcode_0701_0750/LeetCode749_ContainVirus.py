@@ -46,7 +46,7 @@ c_ Solution(o..
         ___ i __ r..(4
             newRow = row+shiftX[i]
             newCol = col+shiftY[i]
-            __ 0 <= newRow < m a.. 0 <= newCol < n:
+            __ 0 <_ newRow < m a.. 0 <_ newCol < n:
                 __ grid[newRow][newCol] __ 1:
                     grid[newRow][newCol] = count
                     dfs(newRow, newCol, grid, count, walls, res)
@@ -67,7 +67,7 @@ c_ Solution(o..
                     ___ k __ r..(4
                         newRow = i+shiftX[k]
                         newCol = j+shiftY[k]
-                        __ 0 <= newRow < m a.. 0 <= newCol < n a.. grid[newRow][newCol] __ 0:
+                        __ 0 <_ newRow < m a.. 0 <_ newCol < n a.. grid[newRow][newCol] __ 0:
                             grid[newRow][newCol] = 1
                     grid[i][j] = 1
                 ____ grid[i][j] __ quarantine:

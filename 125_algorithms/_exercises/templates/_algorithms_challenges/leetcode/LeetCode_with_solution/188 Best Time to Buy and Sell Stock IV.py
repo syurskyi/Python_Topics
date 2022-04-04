@@ -21,7 +21,7 @@ c_ Solution:
         :rtype: int
         """
         n = l..(prices)
-        __ k >= n:
+        __ k >_ n:
             r.. maxProfit_unlimited_transactions(prices)
 
         l = [0 ___ _ __ x..(k+1)]  # local max

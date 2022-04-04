@@ -5,7 +5,7 @@ ROW_FMT = u'{{:<{1}}} | {{:<{2}}} | {{:{0}{3}}}'
 
 
 ___ truncate(s, length=25
-    __ l..(s) <= length:
+    __ l..(s) <_ length:
         r.. s
     r.. s[:length - 3] + '...'
 
@@ -37,7 +37,7 @@ c_ LCInfo(o..
         }.g.. currency)
 
     ___ number  n
-        n_int, n_float = divmod(abs(n), 100)
+        n_int, n_float = divmod(a..(n), 100)
         n_int_parts    # list
         w.... n_int > 0:
             n_int, x = divmod(n_int, 1000)

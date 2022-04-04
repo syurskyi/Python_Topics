@@ -10,7 +10,7 @@ c_ Solution(o..
     d..    # dict
     ___ i __ r..(l..(s:
       d..[s[i]] = d...g.. s[i], 0) + 1
-      w.... j <= i a.. l..(d..) > k:
+      w.... j <_ i a.. l..(d..) > k:
         d..[s[j]] -= 1
         __ d..[s[j]] __ 0:
           del d..[s[j]]

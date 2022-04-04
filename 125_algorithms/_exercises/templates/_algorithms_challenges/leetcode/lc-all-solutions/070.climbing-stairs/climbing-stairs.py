@@ -4,7 +4,7 @@ c_ Solution(o..
     :type n: int
     :rtype: int
     """
-    __ n <= 1:
+    __ n <_ 1:
       r.. 1
     pre, ppre = 1, 1
     ___ i __ r..(2, n + 1

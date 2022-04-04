@@ -40,7 +40,7 @@ ___ calc_months_passed(year, month, day
     x  = relativedelta(new_date,START_DATE)
 
 
-    r.. MONTHS_PER_YEAR * x.years + x.months + (1 __ x.days >= MIN_DAYS_TO_COUNT_AS_MONTH ____ 0)
+    r.. MONTHS_PER_YEAR * x.years + x.months + (1 __ x.days >_ MIN_DAYS_TO_COUNT_AS_MONTH ____ 0)
 
 
 

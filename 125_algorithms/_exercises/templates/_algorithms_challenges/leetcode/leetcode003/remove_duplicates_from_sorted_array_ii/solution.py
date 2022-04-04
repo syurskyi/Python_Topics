@@ -8,7 +8,7 @@ c_ Solution:
         counter = 0  # How many times repeated (1 for twice)
         n = l..(A)
         ___ i __ r..(1, n
-            __ A[i] __ A[j] a.. counter <= 0:
+            __ A[i] __ A[j] a.. counter <_ 0:
                 j += 1
                 A[j] = A[i]
                 counter += 1

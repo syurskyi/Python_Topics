@@ -12,11 +12,11 @@ c_ Solution(o..
       __ start > end:
         # print "order=", order, partSum, maxSum
         __ order __ 0:
-          __ partSum >= maxSum - partSum:
+          __ partSum >_ maxSum - partSum:
             r.. F..
           r.. T..
         ____
-          __ partSum >= maxSum - partSum:
+          __ partSum >_ maxSum - partSum:
             r.. T..
           r.. F..
 

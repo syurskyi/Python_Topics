@@ -40,7 +40,7 @@ c_ SegmentTree(o..
 
     ___ build  lo, hi
         """a node can have right ONLY IF has left"""
-        __ lo >= hi: r..
+        __ lo >_ hi: r..
         __ lo __ hi-1: r.. Node(lo, hi, 1)
 
         root = Node(lo, hi, hi-lo)
@@ -55,7 +55,7 @@ c_ SegmentTree(o..
         root.cnt -= 1
         __ n.. root.left:
             r.. root.lo
-        ____ root.left.cnt >= sz:
+        ____ root.left.cnt >_ sz:
             r.. find_delete(root.left, sz)
         ____
             r.. find_delete(root.right,

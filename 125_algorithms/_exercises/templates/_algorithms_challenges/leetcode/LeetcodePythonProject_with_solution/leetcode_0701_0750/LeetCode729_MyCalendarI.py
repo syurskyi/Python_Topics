@@ -21,10 +21,10 @@ c_ MyCalendar(o..
         """
         newInterval = Interval(start, end)
         ___ i, interval __ e..(intervals
-            __ newInterval.end <= interval.start:
+            __ newInterval.end <_ interval.start:
                 intervals.insert(i, newInterval)
                 r.. T..
-            ____ newInterval.start >= interval.end:
+            ____ newInterval.start >_ interval.end:
                 _____
             ____
                 r.. F..

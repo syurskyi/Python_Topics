@@ -22,7 +22,7 @@ c_ Solution:
                     nums[j] - dp[j - 1]
                 )
 
-        r.. dp[n - 1] >= 0
+        r.. dp[n - 1] >_ 0
 
 
 """
@@ -49,4 +49,4 @@ c_ Solution:
                     nums[j] - dp[i][j - 1]
                 )
 
-        r.. dp[0][n - 1] >= 0
+        r.. dp[0][n - 1] >_ 0

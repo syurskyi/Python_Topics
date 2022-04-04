@@ -26,18 +26,18 @@ c_ Solution(o..
     ___ bfs  board, i, j
         __ board[i][j] __ 0: r.. F..
         m, n = l..(board), l..(board[0])
-        val = abs(board[i][j])
+        val = a..(board[i][j])
         changed = F..
-        __ i+2 < m a.. val __ abs(board[i+1][j]) __ abs(board[i+2][j]
+        __ i+2 < m a.. val __ a..(board[i+1][j]) __ a..(board[i+2][j]
             ___ i0 __ r..(i+1, m
-                __ abs(board[i0][j]) __ val:
+                __ a..(board[i0][j]) __ val:
                     board[i0][j] = -val
                 ____
                     _____
             changed = T..
-        __ j+2 < n a.. val __ abs(board[i][j+1]) __ abs(board[i][j+2]
+        __ j+2 < n a.. val __ a..(board[i][j+1]) __ a..(board[i][j+2]
             ___ j0 __ r..(j+1, n
-                __ abs(board[i][j0]) __ val:
+                __ a..(board[i][j0]) __ val:
                     board[i][j0] = -val
                 ____
                     _____

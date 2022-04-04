@@ -43,7 +43,7 @@ c_ Solution(o..
         :type N: int
         :rtype: List[TreeNode]
         """
-        __ N <= 0:
+        __ N <_ 0:
             r.. []
         __ N __ 1:
             r.. [TreeNode(0)]

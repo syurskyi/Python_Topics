@@ -6,7 +6,7 @@ c_ Solution(o..
     lo, hi = 0, m
     w.... lo < hi:
       i = (lo + hi) / 2
-      __ after - i - 1 < 0 o. a[i] >= b[after - i - 1]:
+      __ after - i - 1 < 0 o. a[i] >_ b[after - i - 1]:
         hi = i
       ____
         lo = i + 1

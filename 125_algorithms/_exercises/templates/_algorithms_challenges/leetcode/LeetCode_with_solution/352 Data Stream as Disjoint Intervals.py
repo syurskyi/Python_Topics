@@ -48,7 +48,7 @@ c_ SummaryRanges(o..
         ret = [itvls[0]]
         ___ itvl __ itvls[1:]:
             pre = ret[-1]
-            __ itvl.start <= pre.end + 1:
+            __ itvl.start <_ pre.end + 1:
                 pre.end = m..(itvl.end, pre.end)
             ____
                 ret.a..(itvl)

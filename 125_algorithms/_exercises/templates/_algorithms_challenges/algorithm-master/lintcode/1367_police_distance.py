@@ -29,11 +29,11 @@ c_ Solution:
                 _x = x + dx
                 _y = y + dy
 
-                __ n.. (0 <= _x < m a.. 0 <= _y < n
+                __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                     _____
                 __ matrix[_x][_y] __ WALL:
                     _____
-                __ ans[_x][_y] <= ans[x][y] + 1:
+                __ ans[_x][_y] <_ ans[x][y] + 1:
                     _____
 
                 ans[_x][_y] = ans[x][y] + 1

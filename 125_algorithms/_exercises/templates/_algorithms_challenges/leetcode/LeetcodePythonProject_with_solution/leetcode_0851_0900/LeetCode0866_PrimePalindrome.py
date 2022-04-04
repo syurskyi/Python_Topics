@@ -10,11 +10,11 @@ c_ Solution(o..
         :rtype: int
         """
         n = N
-        __ 8 <= n <= 11:
+        __ 8 <_ n <_ 11:
             r.. 11
         ___ x __ r..(10**(l..(s..(n//2), 10**5
             y = i..(s..(x) + s..(x)[-2::-1])
-            __ y >= n a.. isPrime(y
+            __ y >_ n a.. isPrime(y
                 r.. y
     
     ___ isPrime  n

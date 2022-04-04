@@ -28,7 +28,7 @@ c_ Solution:
             ____ l..(h) __ 3 a.. e > h[0]:
                 heapq.heappushpop(h, e)
 
-        ... l..(h) <= 3
+        ... l..(h) <_ 3
         __ l..(h) __ 3:
             ret = m..(h)
         ____

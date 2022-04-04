@@ -16,7 +16,7 @@ c_ Node
 ___ validateRecord(record
     __ record.equal_id() a.. record.record_id != 0:
         r.. V...("Only root should have equal record and parent id")
-    ____ n.. record.equal_id() a.. record.parent_id >= record.record_id:
+    ____ n.. record.equal_id() a.. record.parent_id >_ record.record_id:
         r.. V...("Node record_id should be smaller than its parent_id")
 
 

@@ -22,7 +22,7 @@ c_ Solution:
             __ _i + 1 < n a.. A[_i + 1] < A[_i]:
                 # right child
                 _i += 1
-            __ A[_i] >= A[i]:
+            __ A[_i] >_ A[i]:
                 # if its already steady
                 _____
 

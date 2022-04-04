@@ -20,12 +20,12 @@ c_ Solution(o..
     upper    # list
     lower    # list
     ___ point __ points:
-      w.... l..(lower) >= 2 a.. direction(lower[-2], lower[-1], point) < 0:
+      w.... l..(lower) >_ 2 a.. direction(lower[-2], lower[-1], point) < 0:
         lower.p.. )
       lower.a..(point)
 
     ___ point __ r..(points
-      w.... l..(upper) >= 2 a.. direction(upper[-2], upper[-1], point) < 0:
+      w.... l..(upper) >_ 2 a.. direction(upper[-2], upper[-1], point) < 0:
         upper.p.. )
       upper.a..(point)
 

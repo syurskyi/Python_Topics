@@ -13,7 +13,7 @@ c_ Solution:
 
         ___ j __ r..(max_size
             ___ word __ words:
-                __ j >= l..(word
+                __ j >_ l..(word
                     _____
 
                 __ word[j] __ gotcha:

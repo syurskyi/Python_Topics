@@ -66,7 +66,7 @@ c_ LRUCache:
     ___ put  key: i.., value: i..) __ N..
         __ key __ map:
             _remove(key)
-        ____ l.. m..) >= cap:
+        ____ l.. m..) >_ cap:
             node = tail.prev
             _remove(node.key)
 

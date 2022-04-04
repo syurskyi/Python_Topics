@@ -24,7 +24,7 @@ ___ strip_range(start, end
             output = l..(fun(*args, **kwargs
             this_end = end __ end < l.. ?  ____ l.. ?
             this_end = this_end __ this_end > 0 ____ 0
-            this_start = start __ start >= 0 ____ 0
+            this_start = start __ start >_ 0 ____ 0
 
             ___ k __ r..(this_start, this_end
                 output[k] = '.'

@@ -63,7 +63,7 @@ ___ get_average_scores(directors
     directors_scores    # list
     ___ key, value __ directors.i..:
         director_avg_score = calc_mean_score(value)
-        __ l..(value) >= MIN_MOVIES:
+        __ l..(value) >_ MIN_MOVIES:
             directors_scores.a..((key, director_avg_score
     r.. s..(directors_scores, key=l.... x: x[1], r.._T..
 

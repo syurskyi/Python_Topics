@@ -21,7 +21,7 @@ c_ Solution o..
         carry  0
         w.... l1 a.. l2
             tmpVal = l1.val+l2.val+carry
-            __ tmpVal >= 10:
+            __ tmpVal >_ 10:
                 tmpVal -= 10
                 carry = 1
             ____
@@ -32,7 +32,7 @@ c_ Solution o..
             prev = prev.next
         w.... l1:
             tmpVal = l1.val+carry
-            __ tmpVal >= 10:
+            __ tmpVal >_ 10:
                 tmpVal -= 10
                 carry = 1
             ____
@@ -42,7 +42,7 @@ c_ Solution o..
             prev = prev.next
         w.... l2:
             tmpVal = l2.val+carry
-            __ tmpVal >= 10:
+            __ tmpVal >_ 10:
                 tmpVal -= 10
                 carry = 1
             ____

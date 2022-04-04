@@ -18,7 +18,7 @@ c_ Solution(o..
                 ___ p __ r..(N-1, -1, -1
                     j = n-i
                     q = n-p
-                    __ j<0 o. j>=N o. q<0 o. q>=N o. grid[i][j]<0 o. grid[p][q]<0:
+                    __ j<0 o. j>_N o. q<0 o. q>_N o. grid[i][j]<0 o. grid[p][q]<0:
                         dp[i][p] = -1
                         _____
                     __ i > 0:
@@ -27,7 +27,7 @@ c_ Solution(o..
                         dp[i][p] = m..(dp[i][p], dp[i][p-1])
                     __ i > 0 a.. p > 0:
                         dp[i][p] = m..(dp[i][p], dp[i-1][p-1])
-                    __ dp[i][p] >= 0:
+                    __ dp[i][p] >_ 0:
                         dp[i][p] += grid[i][j]+(grid[p][q] __ i!=p ____ 0)
         r.. m..(dp[-1][-1], 0)
     

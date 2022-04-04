@@ -17,7 +17,7 @@ c_ Solution:
     ___ dfs  A, start, ans, subset
         ans.a..(subset | )
 
-        __ start >= l..(A
+        __ start >_ l..(A
             r..
 
         ___ i __ r..(start, l..(A:

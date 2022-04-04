@@ -21,7 +21,7 @@ c_ Solution(o..
                 num = 1.0
                 ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1),\
                     (i+1, j+1), (i-1, j-1), (i+1, j-1), (i-1, j+1
-                    __ 0 <= x < m a.. 0 <= y < n:
+                    __ 0 <_ x < m a.. 0 <_ y < n:
                         __ matrix[x][y] != 0:
                             count += f__(matrix[x][y])
                         num += 1

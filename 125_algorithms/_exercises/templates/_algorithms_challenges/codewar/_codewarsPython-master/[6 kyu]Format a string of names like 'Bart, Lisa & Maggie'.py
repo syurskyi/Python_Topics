@@ -1,6 +1,6 @@
 ___ namelist(names
     namelist =  [name 'name'  ___ ? __ ?
-    __ l..(namelist) <= 1:
+    __ l..(namelist) <_ 1:
     	r.. ''.j..(namelist)
     ____
     	lastTwo = ' & '.j..(namelist[-2:])

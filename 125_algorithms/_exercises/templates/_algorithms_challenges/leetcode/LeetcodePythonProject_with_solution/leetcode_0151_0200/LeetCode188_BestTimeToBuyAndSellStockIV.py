@@ -12,7 +12,7 @@ c_ Solution(o..
         :rtype: int
         """
         n = l..(prices)
-        __ k*2 >= n:
+        __ k*2 >_ n:
             r.. quickSolve(prices)
         dp = [[0]*n ___ _ __ r..(k+1)]
         ___ i __ r..(1, k+1

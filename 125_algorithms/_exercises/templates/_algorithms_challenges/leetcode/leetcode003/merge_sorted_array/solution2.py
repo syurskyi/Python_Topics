@@ -21,8 +21,8 @@ c_ Solution(o..
         i = m - 1
         j = n - 1
         k = m + n - 1
-        w.... k >= 0:
-            __ i >= 0 a.. j >= 0:
+        w.... k >_ 0:
+            __ i >_ 0 a.. j >_ 0:
                 __ nums1[i] > nums2[j]:
                     nums1[k] = nums1[i]
                     i -= 1

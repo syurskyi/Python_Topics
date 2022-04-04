@@ -43,7 +43,7 @@ c_ PhoneDirectory(o..
         :type number: int
         :rtype: bool
         """
-        r.. number __ released o. i <= number < l
+        r.. number __ released o. i <_ number < l
 
     ___ release  number
         """
@@ -51,7 +51,7 @@ c_ PhoneDirectory(o..
         :type number: int
         :rtype: void
         """
-        __ i <= number < l:
+        __ i <_ number < l:
             r..
 
         released.add(number)

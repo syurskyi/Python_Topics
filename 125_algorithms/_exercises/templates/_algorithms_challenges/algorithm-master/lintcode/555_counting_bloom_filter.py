@@ -58,6 +58,6 @@ c_ CountingBloomFilter:
         """
         ___ f __ hashs:
             index = f.hash(word)
-            __ bits[index] <= 0:
+            __ bits[index] <_ 0:
                 r.. F..
         r.. T..

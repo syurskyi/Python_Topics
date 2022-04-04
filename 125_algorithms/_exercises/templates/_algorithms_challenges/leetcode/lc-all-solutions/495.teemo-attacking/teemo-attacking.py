@@ -12,7 +12,7 @@ c_ Solution(o..
     end = start + duration
     ___ i __ r..(1, l..(timeSeries:
       s = timeSeries[i]
-      __ s <= end:
+      __ s <_ end:
         end = s + duration
       ____
         ans += end - start

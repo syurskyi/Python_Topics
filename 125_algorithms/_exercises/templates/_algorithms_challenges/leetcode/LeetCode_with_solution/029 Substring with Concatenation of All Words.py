@@ -37,7 +37,7 @@ c_ Solution:
         window_t = -1  # [0, t)
         window    # list
         i = 0
-        w.... i<=l..(S)-3:
+        w.... i<_l..(S)-3:
             # test window
             __ l..(window)__l:
                 result.a..(window_t-l*k)

@@ -36,7 +36,7 @@ ___ print_sequence_route(grid, start_coordinates_ N..
 
 
         ___ neighbor_x,neighbor_y,direction __ directions:
-            __ 0 <= neighbor_x < length a.. 0 <= neighbor_y < length:
+            __ 0 <_ neighbor_x < length a.. 0 <_ neighbor_y < length:
                 __ matrix[neighbor_x][neighbor_y] __ current_value + 1:
                     __ previous_direction __ n.. N.. a.. direction != previous_direction:
                         print(direction)

@@ -21,7 +21,7 @@ c_ DateFormat(E..
         d_parse_formats = ["%d/%m/%y", "%m/%d/%y", "%y/%m/%d"]
         __ val __ N..
             r.. d_parse_formats
-        __ 0 <= val <= l..(d_parse_formats
+        __ 0 <_ val <_ l..(d_parse_formats
             r.. d_parse_formats[val]
         r.. V...
 
@@ -81,7 +81,7 @@ ___ get_dates(dates
 
     max_frequency,max_count = format_counts.most_common(1)[0]
 
-    __ max_frequency __ DateFormat.NONPARSABLE o. s..(value __ max_count ___ key,value __ format_counts.i.. __ key != DateFormat.NONPARSABLE) >= 2:
+    __ max_frequency __ DateFormat.NONPARSABLE o. s..(value __ max_count ___ key,value __ format_counts.i.. __ key != DateFormat.NONPARSABLE) >_ 2:
         r.. InfDateFmtError
 
     result    # list

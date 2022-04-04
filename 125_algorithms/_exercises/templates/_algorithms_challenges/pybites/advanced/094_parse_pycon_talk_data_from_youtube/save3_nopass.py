@@ -757,11 +757,11 @@ ___ parse_isoduration(s
 ___ get_talks_gt_one_hour(videos
     """Filter the videos list down to videos of > 1 hour"""
     one_hour_in_seconds = 3600
-    r.. [video ___ video __ videos __ parse_isoduration(video.duration) >= one_hour_in_seconds]
+    r.. [video ___ video __ videos __ parse_isoduration(video.duration) >_ one_hour_in_seconds]
 
 
 ___ get_talks_lt_twentyfour_min(videos
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
     twenty_four_minutes_in_seconds = 1400
-    r.. [video ___ video __ videos __ parse_isoduration(video.duration) <= twenty_four_minutes_in_seconds]
+    r.. [video ___ video __ videos __ parse_isoduration(video.duration) <_ twenty_four_minutes_in_seconds]

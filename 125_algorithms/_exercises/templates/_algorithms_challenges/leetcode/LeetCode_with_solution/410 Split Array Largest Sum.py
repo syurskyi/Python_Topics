@@ -73,7 +73,7 @@ c_ Solution:
                 ____
                     cur_sum += e
 
-            __ cnt <= m:
+            __ cnt <_ m:
                 ret = m..(ret, mid)  # pitfall. Condition satisfied
                 hi = mid
             ____

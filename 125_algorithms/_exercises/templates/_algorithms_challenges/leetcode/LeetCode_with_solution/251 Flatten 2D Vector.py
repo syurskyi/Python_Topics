@@ -32,7 +32,7 @@ c_ Vector2D:
         :rtype: bool
         """
         # update
-        w.... i < l..(vec2d) a.. j >= l..(vec2d[i]
+        w.... i < l..(vec2d) a.. j >_ l..(vec2d[i]
             i += 1
             j = 0
 

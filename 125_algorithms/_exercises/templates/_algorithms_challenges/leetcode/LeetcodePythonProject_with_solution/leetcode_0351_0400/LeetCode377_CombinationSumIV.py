@@ -11,7 +11,7 @@ c_ Solution(o..
         dp[0] = 1
         ___ i __ r..(target+1
             ___ num __ nums:
-                __ i+num <= target:
+                __ i+num <_ target:
                     dp[i+num] += dp[i]
         r.. dp[-1]
     

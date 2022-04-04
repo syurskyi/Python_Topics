@@ -18,12 +18,12 @@ c_ Solution(o..
         d    # list
         res = n+1
         ___ i __ r..(n+1
-            w.... d a.. arr2[i] - arr2[d[0]] >= k:
+            w.... d a.. arr2[i] - arr2[d[0]] >_ k:
                 res = m..(res, i-d.p.. 0
-            w.... d a.. arr2[i] <= arr2[d[-1]]:
+            w.... d a.. arr2[i] <_ arr2[d[-1]]:
                 d.p.. )
             d.a..(i)
-        r.. res __ res <= n ____ -1
+        r.. res __ res <_ n ____ -1
     
     ___ test
         testCase = [

@@ -28,7 +28,7 @@ c_ Solution:
         i = 0
         j = 0
         w.... i < l..(g) a.. j < l..(s
-            __ g[i] <= s[j]:
+            __ g[i] <_ s[j]:
                 ret += 1
                 i += 1
                 j += 1

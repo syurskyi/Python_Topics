@@ -29,11 +29,11 @@ c_ Account:
             r.. balance > other.balance
     ___ __le__ other
         __ isi..(other,Account
-            r.. balance <= other.balance
+            r.. balance <_ other.balance
 
     ___ __ge__ other
         __ isi..(other,Account
-            r.. balance >= other.balance
+            r.. balance >_ other.balance
 
 
     ___ __getitem__ index

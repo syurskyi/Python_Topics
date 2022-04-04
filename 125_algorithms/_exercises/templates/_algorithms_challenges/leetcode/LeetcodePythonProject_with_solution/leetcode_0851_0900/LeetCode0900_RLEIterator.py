@@ -22,7 +22,7 @@ c_ RLEIterator(o..
                     arr[countIdx] __ 0:
                 countIdx += 2
                 numIdx += 2
-            __ countIdx >= l..(arr
+            __ countIdx >_ l..(arr
                 r.. -1
             val = arr[numIdx]
             arr[countIdx] -= 1

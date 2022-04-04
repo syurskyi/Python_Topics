@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     __ l..(nums) __ 0:
       r.. 0
-    __ l..(nums) <= 2:
+    __ l..(nums) <_ 2:
       r.. m..(nums)
     dp = [0 ___ i __ r..(0, 2)]
     dp[0] = nums[0]

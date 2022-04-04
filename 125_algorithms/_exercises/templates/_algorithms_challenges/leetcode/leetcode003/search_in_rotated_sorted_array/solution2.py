@@ -24,13 +24,13 @@ c_ Solution(o..
                 r.. mid
             # Right side is sorted
             ____ nums[mid] < nums[right]:
-                __ nums[mid] <= target <= nums[right]:
+                __ nums[mid] <_ target <_ nums[right]:
                     left = mid
                 ____
                     right = mid
             # Left side is sorted
             ____
-                __ nums[left] <= target <= nums[mid]:
+                __ nums[left] <_ target <_ nums[mid]:
                     right = mid
                 ____
                     left = mid

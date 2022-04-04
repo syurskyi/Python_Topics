@@ -28,12 +28,12 @@ c_ Triangle:
         r.. negative_sides() o. triangle_inequality()
 
     ___ negative_sides
-        r.. a <= 0 o. b <= 0 o. c <= 0
+        r.. a <_ 0 o. b <_ 0 o. c <_ 0
 
     ___ triangle_inequality
-        r.. (a + b <= c o.
-                b + c <= a o.
-                a + c <= b)
+        r.. (a + b <_ c o.
+                b + c <_ a o.
+                a + c <_ b)
 
 
 c_ TriangleError(E..

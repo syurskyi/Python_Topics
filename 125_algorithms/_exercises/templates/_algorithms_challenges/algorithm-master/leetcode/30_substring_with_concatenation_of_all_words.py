@@ -28,7 +28,7 @@ c_ Solution:
                     _____
 
                 _F[sr] = _F.g.. sr, 0) + 1
-                __ _F[sr] <= F[sr]:
+                __ _F[sr] <_ F[sr]:
                     cnt += 1
                 w.... _F[sr] > F[sr]:
                     sl = s[left:left + k]

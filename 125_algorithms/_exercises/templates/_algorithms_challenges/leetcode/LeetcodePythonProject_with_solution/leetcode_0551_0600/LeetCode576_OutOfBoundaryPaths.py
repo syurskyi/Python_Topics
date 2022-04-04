@@ -23,7 +23,7 @@ c_ Solution(o..
             ___ r __ r..(m
                 ___ c __ r..(n
                     ___ nr, nc __ (r+1, c), (r-1, c), (r, c+1), (r, c-1
-                        __ 0 <= nr < m a.. 0 <= nc < n:
+                        __ 0 <_ nr < m a.. 0 <_ nc < n:
                             tmp[nr][nc] = (tmp[nr][nc]+count[r][c])%mod
                         ____
                             result = (result+count[r][c])%mod

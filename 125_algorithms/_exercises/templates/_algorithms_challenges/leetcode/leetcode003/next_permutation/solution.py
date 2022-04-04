@@ -11,7 +11,7 @@ c_ Solution:
                 k = i
 
         # Find the largest l such that num[k] < num[l] (if k exists)
-        __ k >= 0:
+        __ k >_ 0:
             ___ i __ r..(n
                 __ num[i] > num[k]:
                     l = i

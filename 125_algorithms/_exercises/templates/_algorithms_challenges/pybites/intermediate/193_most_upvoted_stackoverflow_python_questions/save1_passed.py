@@ -51,7 +51,7 @@ ___ top_python_questions(url=cached_so_url
     output1    # list
     output2    # list
     ___ question, vote, view __ final:
-        __ view >= 1_000_000:
+        __ view >_ 1_000_000:
             output1.a..(question)
             output2.a..(i..(vote
 

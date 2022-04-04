@@ -31,10 +31,10 @@ c_ Solution:
             key = n/t
             ___ j __ (-1, 0, 1  # (n-t, n, n+t), shrink the interval
                 m = od.g.. key+j)
-                __ m __ n.. N.. a.. abs(m-n) <= t:  # need to recheck, consider case {1, 7}, t=4
+                __ m __ n.. N.. a.. a..(m-n) <_ t:  # need to recheck, consider case {1, 7}, t=4
                     r.. T..
 
-            w.... l..(od) >= k:
+            w.... l..(od) >_ k:
                 od.popitem(F..)  # not last, i.e. the first
 
             od[key] = n
@@ -47,7 +47,7 @@ c_ Solution:
             __ od.g.. n
                 r.. T..
 
-            w.... l..(od) >= k:
+            w.... l..(od) >_ k:
                 od.popitem(F..)
 
             od[n] = n

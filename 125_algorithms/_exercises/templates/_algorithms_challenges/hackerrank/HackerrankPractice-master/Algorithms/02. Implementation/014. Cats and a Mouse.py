@@ -3,8 +3,8 @@
 
 
 ___ catAndMouse(catA, catB, mouseC
-    distanceA = abs(catA - mouseC)
-    distanceB = abs(catB - mouseC)
+    distanceA = a..(catA - mouseC)
+    distanceB = a..(catB - mouseC)
     __ distanceA > distanceB:
         print('Cat B')
     ____ distanceA __ distanceB:

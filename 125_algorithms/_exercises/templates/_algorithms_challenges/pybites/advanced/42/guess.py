@@ -41,7 +41,7 @@ c_ Game:
                     print('Should be a number')
                 r.. V...
             ____
-                __ n.. START <= result <= END:
+                __ n.. START <_ result <_ END:
                     print('Number not in range')
                 ____ result __ _guesses:
                     print('Already guessed')

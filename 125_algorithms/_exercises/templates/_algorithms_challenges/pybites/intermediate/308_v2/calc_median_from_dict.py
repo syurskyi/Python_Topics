@@ -27,7 +27,7 @@ ___ calc_median_from_dict(d: d..) __ f__:
 
     ___ i,key __ e..(keys
         s += d[key]
-        __ s >= median_count:
+        __ s >_ median_count:
             __ odd:
                 r.. key
             r.. key __ s > median_count ____ (key + keys[i +1])/2

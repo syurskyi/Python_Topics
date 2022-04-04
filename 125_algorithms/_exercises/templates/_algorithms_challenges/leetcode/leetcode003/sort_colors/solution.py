@@ -6,7 +6,7 @@ c_ Solution:
         r = 0  # Last index of red
         b = n - 1  # First index of white
         i = 0
-        w.... i <= b:
+        w.... i <_ b:
             __ A[i] __ 0:
                 A[i], A[r] = A[r], A[i]
                 r += 1

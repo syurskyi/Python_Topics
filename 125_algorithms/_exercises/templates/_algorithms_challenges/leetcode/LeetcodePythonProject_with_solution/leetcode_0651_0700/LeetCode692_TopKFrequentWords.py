@@ -22,7 +22,7 @@ c_ Solution(o..
             __ dp[i]:
                 dp[i].s..()
                 res += dp[i]
-                __ l..(res) >= k:
+                __ l..(res) >_ k:
                     _____
         r.. res[:k]
     

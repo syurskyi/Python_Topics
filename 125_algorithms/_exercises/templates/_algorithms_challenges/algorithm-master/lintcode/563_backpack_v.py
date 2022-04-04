@@ -18,7 +18,7 @@ c_ Solution:
         ___ i __ r..(1, n + 1
             ___ j __ r..(target + 1
                 dp[i][j] = dp[i - 1][j]
-                __ j >= A[i - 1]:
+                __ j >_ A[i - 1]:
                     dp[i][j] += dp[i - 1][j - A[i - 1]]
 
         r.. dp[n][target]

@@ -14,7 +14,7 @@ ___ get_belt(user_score, scores=scores, belts=belts
             ___ j __ r..(last, i
                 result.insert(j, belts[index - 1])
             last = i
-    __ user_score >= scores[l..(scores)-1]:
+    __ user_score >_ scores[l..(scores)-1]:
         r.. belts[l..(belts)-1]
     ____
         r.. result[user_score]

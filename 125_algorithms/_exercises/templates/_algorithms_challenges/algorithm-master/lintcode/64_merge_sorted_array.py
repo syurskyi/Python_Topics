@@ -10,7 +10,7 @@ c_ Solution:
         i, j = m - 1, n - 1
         k = m + n - 1
 
-        w.... i >= 0 a.. j >= 0:
+        w.... i >_ 0 a.. j >_ 0:
             __ a[i] > b[j]:
                 a[k] = a[i]
                 i -= 1
@@ -19,7 +19,7 @@ c_ Solution:
                 j -= 1
             k -= 1
 
-        w.... j >= 0:
+        w.... j >_ 0:
             a[k] = b[j]
             j -= 1
             k -= 1

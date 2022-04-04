@@ -20,7 +20,7 @@ c_ Solution(o..
                 fInd = i
             ____ num > second:
                 second = num
-        r.. fInd __ first >= 2*second ____ -1
+        r.. fInd __ first >_ 2*second ____ -1
     
     ___ test
         testCases = [

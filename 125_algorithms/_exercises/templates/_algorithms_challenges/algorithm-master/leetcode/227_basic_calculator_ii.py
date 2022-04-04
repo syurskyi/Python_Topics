@@ -35,7 +35,7 @@ c_ Solution:
             ____ char.i..
                 res.a..(char)
             ____ char __ P:
-                w.... stack a.. stack[-1] __ P a.. P[char] <= P[stack[-1]]:
+                w.... stack a.. stack[-1] __ P a.. P[char] <_ P[stack[-1]]:
                     res.a..(stack.pop
                 stack.a..(char)
             ____ char __ '(':

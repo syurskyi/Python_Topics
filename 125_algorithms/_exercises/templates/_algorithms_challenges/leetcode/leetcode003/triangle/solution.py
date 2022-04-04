@@ -23,7 +23,7 @@ c_ Solution:
         t = [[0 ___ col __ row] ___ row __ triangle]  # Initialize t
         n = l..(triangle)
         row = n - 1
-        w.... row >= 0:
+        w.... row >_ 0:
             __ row __ n - 1:
                 ___ col __ r..(row + 1
                     t[row][col] = triangle[row][col]

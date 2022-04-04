@@ -11,6 +11,6 @@ c_ Solution(o..
       s, current = s / 2, 0
       ___ num __ nums:
         current |= ((current o. 1) << num) % (1 << (s + 1
-        __ current >= 1 << s:
+        __ current >_ 1 << s:
           r.. T..
     r.. F..

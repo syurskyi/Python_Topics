@@ -38,7 +38,7 @@ ____ c.. _______ C..
 
 c_ Solution:
     ___ canReorderDoubled  A: L..[i..]) __ b..:
-        A.s..(key=abs)
+        A.s..(key=a..)
         counter = C..(A)
         ___ a __ A:
             __ counter[a] __ 0:

@@ -53,7 +53,7 @@ ___ get_average_scores(directors
     #print(len(directors))
     local_list    # list
     ___ director __ directors:
-        __ l..(directors[director]) >= MIN_MOVIES: # each director
+        __ l..(directors[director]) >_ MIN_MOVIES: # each director
             total = 0
             ___ i __ r..(l..(directors[director]:
                 #print(director, int(directors[director][i][1]))

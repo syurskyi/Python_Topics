@@ -19,4 +19,4 @@ c_ Solution(o..
           farthest = canReach
           posToFarthest = i
       pos = posToFarthest
-    r.. T.. __ pos >= l..(nums) - 1 ____ F..
+    r.. T.. __ pos >_ l..(nums) - 1 ____ F..

@@ -42,7 +42,7 @@ c_ LightsGrid:
           - no lights are brighter than 5
           - no lights are less than 0"""
 
-        r.. grid.applymap(l.... value: 0 <= value <= 5).a..().a..()
+        r.. grid.applymap(l.... value: 0 <_ value <_ 5).a..().a..()
 
 
 

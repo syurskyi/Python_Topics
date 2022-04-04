@@ -29,7 +29,7 @@ c_ Solution:
         T[0] = -1
         pos = 2
         cnd = 0
-        w.... pos <= l:
+        w.... pos <_ l:
             __ s[pos-1] __ s[cnd]:
                 T[pos] = cnd+1
                 cnd += 1

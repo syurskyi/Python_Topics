@@ -22,7 +22,7 @@ c_ MedianFinder:
       median = num
       r..
 
-    __ num <= median:
+    __ num <_ median:
       heapq.heappush(left, -num)
     ____
       heapq.heappush(right, num)

@@ -10,7 +10,7 @@ c_ Solution(o..
       __ 2 * (n - i) + 1 < right - left + 1:
         _____
       l = r = i
-      w.... l >= 0 a.. r < n a.. s[l] __ s[r]:
+      w.... l >_ 0 a.. r < n a.. s[l] __ s[r]:
         l -= 1
         r += 1
       __ r - l - 2 > right - left:
@@ -18,7 +18,7 @@ c_ Solution(o..
         right = r - 1
       l = i
       r = i + 1
-      w.... l >= 0 a.. r < n a.. s[l] __ s[r]:
+      w.... l >_ 0 a.. r < n a.. s[l] __ s[r]:
         l -= 1
         r += 1
       __ r - l - 2 > right - left:

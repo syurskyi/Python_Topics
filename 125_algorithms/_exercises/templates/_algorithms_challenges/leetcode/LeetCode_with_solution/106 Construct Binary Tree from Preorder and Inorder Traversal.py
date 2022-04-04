@@ -52,7 +52,7 @@ c_ Solution:
         r.. _buildTree(0, l..(preorder), 0, l..(inorder
 
     ___ _buildTree  pre_start, pre_end, in_start, in_end
-        __ pre_start >= pre_end:
+        __ pre_start >_ pre_end:
             r.. N..
         root = TreeNode(preorder[pre_start])
         offset = inorder[in_start:in_end + 1].i.. root.val)

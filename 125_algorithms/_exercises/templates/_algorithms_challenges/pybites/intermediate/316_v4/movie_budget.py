@@ -38,5 +38,5 @@ ___ rent_or_stream(
 
        Check out the tests for examples.
     """
-    r.. {key: RENT __ value <= STREAMING_COST_PER_MONTH ____ STREAM
+    r.. {key: RENT __ value <_ STREAMING_COST_PER_MONTH ____ STREAM
             ___ key, value __ collect_totals(renting_history).i..}

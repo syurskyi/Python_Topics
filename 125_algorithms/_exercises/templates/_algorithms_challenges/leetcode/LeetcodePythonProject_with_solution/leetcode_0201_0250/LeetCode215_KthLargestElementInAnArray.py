@@ -23,7 +23,7 @@ c_ Solution(o..
         w... T...
             w.... i < j a.. nums[i] < pivot:
                 i += 1
-            w.... i < j a.. nums[j] >= pivot:
+            w.... i < j a.. nums[j] >_ pivot:
                 j -= 1
             __ i < j:
                 nums[i], nums[j] = nums[j], nums[i]

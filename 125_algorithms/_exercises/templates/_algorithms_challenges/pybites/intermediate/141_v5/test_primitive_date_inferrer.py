@@ -171,7 +171,7 @@ ___ test_different_enum
             d_parse_formats = ["%d.%m.%Y", "%d/%m/%y", "%y/%m/%d", "%m/%d/%y"]
             __ idx __ N..
                 r.. d_parse_formats
-            __ 0 <= idx <= l..(d_parse_formats
+            __ 0 <_ idx <_ l..(d_parse_formats
                 r.. d_parse_formats[idx]
             r.. V...
 

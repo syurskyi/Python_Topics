@@ -92,11 +92,11 @@ c_ Solution:
         left, right = 0, n - 1
 
         w.... left < right:
-            __ left >= a a.. t[left - a] != t[right - a]:
+            __ left >_ a a.. t[left - a] != t[right - a]:
                 r.. F..
             ____ right < a a.. s[left] != s[right]:
                 r.. F..
-            ____ left < a a.. right >= a a.. s[left] != t[right - a]:
+            ____ left < a a.. right >_ a a.. s[left] != t[right - a]:
                 r.. F..
 
             left += 1

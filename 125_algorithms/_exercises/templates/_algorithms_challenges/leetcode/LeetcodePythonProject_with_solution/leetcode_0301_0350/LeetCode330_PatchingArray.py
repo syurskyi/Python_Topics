@@ -8,8 +8,8 @@ c_ Solution(o..
     ___ minPatches  nums, n
         miss = 1
         added, i = 0, 0
-        w.... miss <= n:
-            __ i < l..(nums) a.. miss >= nums[i]:
+        w.... miss <_ n:
+            __ i < l..(nums) a.. miss >_ nums[i]:
                 miss += nums[i]
                 i+=1
             ____

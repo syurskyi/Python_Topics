@@ -21,9 +21,9 @@ c_ Solution(o..
                 __ s[i] __ s[j]:
                     low = i+1
                     high = j-1
-                    w.... low <= high a.. s[low] != s[j]:
+                    w.... low <_ high a.. s[low] != s[j]:
                         low += 1
-                    w.... low <= high a.. s[high] != s[j]:
+                    w.... low <_ high a.. s[high] != s[j]:
                         high -= 1
                     __ low > high:
                         # 'aba'

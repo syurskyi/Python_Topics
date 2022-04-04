@@ -25,7 +25,7 @@ c_ Solution:
         # see the last Solution in this file
         ___ amount __ r..(1, target + 1
             ___ num __ nums:
-                __ amount >= num:
+                __ amount >_ num:
                     dp[amount] += dp[amount - num]
 
         r.. dp[target]

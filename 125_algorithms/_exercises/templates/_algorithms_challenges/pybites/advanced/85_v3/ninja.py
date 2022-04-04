@@ -17,7 +17,7 @@ c_ NinjaBelt:
     $
     ___ _get_belt(new_score
         """Find the index number of the belt for the provide score"""
-        r.. l..([x ___ x __ scores __ x <= new_score]) - 1
+        r.. l..([x ___ x __ scores __ x <_ new_score]) - 1
 
     ___ _get_score
         r.. _score

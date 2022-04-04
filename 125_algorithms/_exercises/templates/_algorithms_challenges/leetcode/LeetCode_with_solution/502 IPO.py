@@ -49,7 +49,7 @@ c_ Solution:
         heapq.heapify(capital_q)
         capital = W
         ___ _ __ r..(k
-            w.... capital_q a.. capital_q[0][0] <= capital:
+            w.... capital_q a.. capital_q[0][0] <_ capital:
                 _, pro = heapq.heappop(capital_q)
                 heapq.heappush(profit_q, (-pro, pro
 
@@ -82,7 +82,7 @@ c_ Solution:
             maxa = 0
             maxa_i = 0
             ___ i __ r..(n
-                __ n.. visited[i] a.. Profits[i] >= maxa a.. Capital[i] <= capital:
+                __ n.. visited[i] a.. Profits[i] >_ maxa a.. Capital[i] <_ capital:
                     maxa = Profits[i]
                     maxa_i = i
             __ maxa > 0:

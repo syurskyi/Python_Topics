@@ -19,7 +19,7 @@ c_ Solution(o..
             ind = i
             curLen = 0
             time = 0
-            w.... curLen+l..(sentence[ind])<=cols:
+            w.... curLen+l..(sentence[ind])<_cols:
                 curLen += l..(sentence[ind])+1
                 ind += 1
                 __ ind __ l..(sentence

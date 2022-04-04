@@ -11,7 +11,7 @@ c_ Solution(o..
         :type k: int
         :rtype: List[List[int]]
         """
-        __ n <= 0 o. n < k:
+        __ n <_ 0 o. n < k:
             r.. []
         result    # list
         elem    # list

@@ -22,7 +22,7 @@ c_ SummaryRanges(o..
                 __ newInterval.end < interval.start-1:
                     result.a..(newInterval)
                     newInterval = interval
-                ____ newInterval.start <= interval.end+1:
+                ____ newInterval.start <_ interval.end+1:
                     newInterval = Interval(m..(interval.start, newInterval.start),\
                         m..(interval.end, newInterval.end
                 ____

@@ -7,7 +7,7 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.
     """
-    __ l..(nums) <= 2:
+    __ l..(nums) <_ 2:
       nums.s..()
       r..
     numscopy = nums + []
@@ -58,10 +58,10 @@ c_ Solution(o..
     left, right = start, end
     pivot = A[left]
     w.... left < right:
-      w.... left < right a.. A[right] <= pivot:
+      w.... left < right a.. A[right] <_ pivot:
         right -= 1
       A[left] = A[right]
-      w.... left < right a.. A[left] >= pivot:
+      w.... left < right a.. A[left] >_ pivot:
         left += 1
       A[right] = A[left]
     A[left] = pivot

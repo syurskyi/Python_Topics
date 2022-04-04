@@ -34,19 +34,19 @@ c_ Solution:
 
         # from right to left
         i = N - 2
-        w.... seq[i] >= seq[i+1]:
+        w.... seq[i] >_ seq[i+1]:
             i -= 1
             __ i < 0:
                 r.. -1
 
         j = N - 1
-        w.... seq[i] >= seq[j]:
+        w.... seq[i] >_ seq[j]:
             j -= 1
 
         seq[i], seq[j] = seq[j], seq[i]
         seq[i+1:] = r..(seq[i+1:])
         ret = i..("".j..(seq
-        __ ret <= 1 << 31 - 1:
+        __ ret <_ 1 << 31 - 1:
             r.. ret
         ____
             r.. -1
@@ -76,7 +76,7 @@ c_ Solution:
                 seq[i], seq[popped] = seq[popped], seq[i]
                 seq[i+1:] = s..(seq[i+1:])  # reversed also good
                 ret = i..("".j.. m..(s.., seq)))
-                __ ret <= 1 << 31 - 1:
+                __ ret <_ 1 << 31 - 1:
                     r.. ret
                 ____
                     r.. -1

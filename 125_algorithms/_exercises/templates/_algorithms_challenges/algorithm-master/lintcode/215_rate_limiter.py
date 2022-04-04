@@ -60,5 +60,5 @@ c_ Solution:
             ____
                 right = mid
 
-        mid = left __ logs[left] >= begin_time ____ right
-        r.. l..(logs) - mid >= freq
+        mid = left __ logs[left] >_ begin_time ____ right
+        r.. l..(logs) - mid >_ freq

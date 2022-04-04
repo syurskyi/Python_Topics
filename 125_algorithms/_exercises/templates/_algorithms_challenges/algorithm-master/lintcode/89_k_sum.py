@@ -19,7 +19,7 @@ c_ Solution:
         ___ i __ r..(1, n + 1
             ___ j __ r..(1, m..(K, i) + 1
                 ___ k __ r..(1, target + 1
-                    __ k >= A[i - 1]:
+                    __ k >_ A[i - 1]:
                         dp[i][j][k] += dp[i - 1][j - 1][k - A[i - 1]]
 
                     dp[i][j][k] += dp[i - 1][j][k]

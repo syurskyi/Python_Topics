@@ -30,7 +30,7 @@ tweets = [
 ___ filter_tweets_on_polarity(tweets, keep_positive=T..
     """Filter the tweets by polarity score, receives keep_positive bool which
        determines what to keep. Returns a list of filtered tweets."""
-    r.. [tweet ___ tweet __ tweets __ (tweet.polarity >= 0) __ keep_positive]
+    r.. [tweet ___ tweet __ tweets __ (tweet.polarity >_ 0) __ keep_positive]
 
 
 ___ order_tweets_by_polarity(tweets, positive_highest=T..

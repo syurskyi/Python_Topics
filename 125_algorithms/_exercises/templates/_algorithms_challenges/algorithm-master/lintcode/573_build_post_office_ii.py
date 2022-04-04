@@ -66,7 +66,7 @@ c_ Solution:
                     _x = x + dx
                     _y = y + dy
 
-                    __ n.. (0 <= _x < m a.. 0 <= _y < n
+                    __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                         _____
                     __ grid[_x][_y] != EMPTY:
                         _____
@@ -137,11 +137,11 @@ c_ Solution:
             _x = x + dx
             _y = y + dy
 
-            __ n.. (0 <= _x < m a.. 0 <= _y < n
+            __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                 _____
             __ grid[_x][_y] != EMPTY:
                 _____
-            __ step[x, y] + 1 >= step[_x, _y] > 0:  # > 0 means visited, since its defaultdict
+            __ step[x, y] + 1 >_ step[_x, _y] > 0:  # > 0 means visited, since its defaultdict
                 _____
 
             ids[_x, _y].add(id)

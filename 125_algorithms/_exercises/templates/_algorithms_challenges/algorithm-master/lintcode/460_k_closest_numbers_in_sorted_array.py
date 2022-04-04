@@ -22,7 +22,7 @@ c_ Solution:
         left, mid, right = 0, 0, n - 1
         w.... left + 1 < right:
             mid = left + (right - left) // 2
-            __ A[mid] <= target:
+            __ A[mid] <_ target:
                 left = mid
             ____
                 right = mid
@@ -42,7 +42,7 @@ c_ Solution:
             __ left < 0:
                 ans[i] = A[right]
                 right += 1
-            ____ right >= n:
+            ____ right >_ n:
                 ans[i] = A[left]
                 left -= 1
             ____ A[right] - target < target - A[left]:

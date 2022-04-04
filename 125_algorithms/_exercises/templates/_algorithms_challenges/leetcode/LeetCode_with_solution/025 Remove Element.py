@@ -18,7 +18,7 @@ c_ Solution:
 
         open_ptr = 0
         back_ptr = -1  # Python style backward
-        w.... l..(A)+back_ptr>=open_ptr:
+        w.... l..(A)+back_ptr>_open_ptr:
             __ A[open_ptr]__elem:
                 A[open_ptr], A[back_ptr] = A[back_ptr], A[open_ptr]
                 back_ptr -= 1

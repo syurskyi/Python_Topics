@@ -4,7 +4,7 @@ c_ Solution(o..
     :type n: int
     :rtype: int
     """
-    __ n <= 3:
+    __ n <_ 3:
       r.. n - 1
     __ n % 3 __ 0:
       r.. 3 ** (n / 3)

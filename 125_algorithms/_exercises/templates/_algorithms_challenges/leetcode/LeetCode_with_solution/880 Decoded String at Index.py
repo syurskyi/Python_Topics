@@ -85,7 +85,7 @@ c_ Solution:
 
                 d = i..(S[j])
                 l = last - i
-                w.... K >= l a.. d > 0:
+                w.... K >_ l a.. d > 0:
                     K -= l
                     d -= 1
                 __ d > 0:

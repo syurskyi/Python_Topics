@@ -10,7 +10,7 @@ c_ Solution:
 
         w.... left + 1 < right:
             mid = (left + right) // 2
-            __ L[mid] <= target:
+            __ L[mid] <_ target:
                 left = mid
             ____
                 right = mid

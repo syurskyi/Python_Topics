@@ -60,7 +60,7 @@ c_ Solution:
 
         Error in the abs of difference
         """
-        A = [(abs(a - b), a, b) ___ a, b __ costs]
+        A = [(a..(a - b), a, b) ___ a, b __ costs]
         A.s..(r.._T..
         ret = 0
         remain = l..(A) // 2

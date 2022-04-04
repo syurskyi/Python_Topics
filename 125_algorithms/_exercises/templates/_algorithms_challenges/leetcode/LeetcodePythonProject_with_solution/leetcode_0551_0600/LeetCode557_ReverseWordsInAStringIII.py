@@ -23,7 +23,7 @@ c_ Solution(o..
     
     ___ reverse  s, i, j
         res = ''
-        w.... i <= j:
+        w.... i <_ j:
             res += s[j]
             j -= 1
         r.. res

@@ -26,13 +26,13 @@ c_ Solution:
     @return: The sum of a and b
     """
     ___ dropEggs  n
-        __ n <= 0:
+        __ n <_ 0:
             r.. 0
 
         _sum = 0
         ___ i __ r..(n
             _sum += i
-            __ _sum >= n:
+            __ _sum >_ n:
                 r.. i
 
         r.. n
@@ -56,7 +56,7 @@ c_ Solution:
     @return: The sum of a and b
     """
     ___ dropEggs  n
-        __ n <= 0:
+        __ n <_ 0:
             r.. 0
 
         x = i..(sqrt(2 * n

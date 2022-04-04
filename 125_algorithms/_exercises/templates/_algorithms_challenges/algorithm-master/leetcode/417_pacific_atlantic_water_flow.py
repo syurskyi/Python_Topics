@@ -46,7 +46,7 @@ c_ Solution:
                 _x = x + dx
                 _y = y + dy
 
-                __ n.. (0 <= _x < m a.. 0 <= _y < n
+                __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                     _____
                 __ (_x, _y) __ visited:
                     _____
@@ -94,8 +94,8 @@ c_ Solution:
             _y = y + dy
 
             __ n.. (
-                0 <= _x < l..(matrix) a..
-                0 <= _y < l..(matrix[0])
+                0 <_ _x < l..(matrix) a..
+                0 <_ _y < l..(matrix[0])
 
                 _____
             __ (_x, _y) __ visited:

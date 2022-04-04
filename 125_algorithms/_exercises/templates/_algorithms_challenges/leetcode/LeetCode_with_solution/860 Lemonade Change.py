@@ -66,10 +66,10 @@ c_ Solution:
                 five -= 1
                 ten += 1
             ____  # 20
-                __ ten >= 1 a.. five >= 1:
+                __ ten >_ 1 a.. five >_ 1:
                     ten -= 1  # ten first
                     five -= 1
-                ____ five >= 3:
+                ____ five >_ 3:
                     five -= 3
                 ____
                     r.. F..

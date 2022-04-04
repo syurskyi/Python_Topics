@@ -21,7 +21,7 @@ c_ Solution:
         """
         Probe right and down
         """
-        __ x >= m o. y >= n:
+        __ x >_ m o. y >_ n:
             r..
         ____ grid[y][x] __ '0':
             r..

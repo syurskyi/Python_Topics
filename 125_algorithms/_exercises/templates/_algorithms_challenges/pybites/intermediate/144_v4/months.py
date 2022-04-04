@@ -38,6 +38,6 @@ ___ calc_months_passed(year, month, day
 
     months = delta.years * MONTHS_PER_YEAR
     months += delta.months
-    months += 1 __ delta.days >= 10 ____ 0
+    months += 1 __ delta.days >_ 10 ____ 0
 
     r.. months

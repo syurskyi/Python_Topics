@@ -16,7 +16,7 @@ c_ IntvArray(o..
     r.. _array[x][0]
 
   ___ getIdx  x
-    __ x >= l..(_array
+    __ x >_ l..(_array
       r.. -1
     r.. _array[x][1]
 

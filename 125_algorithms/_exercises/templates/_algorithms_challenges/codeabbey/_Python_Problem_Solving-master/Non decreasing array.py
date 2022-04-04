@@ -31,9 +31,9 @@ c_ Solution:
                             i += 1
                     ______:
                         p..
-                    __ non_count >= 2:
+                    __ non_count >_ 2:
                         _____
-                __ non_count <= 1:
+                __ non_count <_ 1:
                     r.. T..
                 ____
                     r.. F..

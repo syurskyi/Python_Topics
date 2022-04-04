@@ -28,7 +28,7 @@ c_ Solution(o..
         h_end    # list
         ___ itvl __ intervals:
             heapq.heappush(h_end, itvl.end)
-            w.... h_end a.. h_end[0] <= itvl.start:
+            w.... h_end a.. h_end[0] <_ itvl.start:
                 heapq.heappop(h_end)
 
             maxa = m..(maxa, l..(h_end

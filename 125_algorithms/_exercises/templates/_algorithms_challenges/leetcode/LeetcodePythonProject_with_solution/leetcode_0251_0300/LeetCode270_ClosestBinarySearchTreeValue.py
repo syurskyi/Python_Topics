@@ -20,7 +20,7 @@ c_ Solution(o..
         """
         result= root.val
         w.... root:
-            __ abs(target - root.val) < abs(target-result
+            __ a..(target - root.val) < a..(target-result
                 result = root.val
             __ root.val > target:
                 root = root.left

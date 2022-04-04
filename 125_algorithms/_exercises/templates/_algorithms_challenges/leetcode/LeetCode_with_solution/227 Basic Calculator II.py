@@ -63,7 +63,7 @@ c_ Solution:
                     ret.a..(stk.pop
                 stk.p.. )
             ____  # generalized to include * and /
-                w.... stk a.. precendece(elt) <= precendece(stk[-1]
+                w.... stk a.. precendece(elt) <_ precendece(stk[-1]
                     ret.a..(stk.pop
 
                 stk.a..(elt)

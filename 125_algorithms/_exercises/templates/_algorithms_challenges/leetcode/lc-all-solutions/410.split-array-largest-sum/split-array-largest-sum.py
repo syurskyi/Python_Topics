@@ -20,7 +20,7 @@ c_ Solution(o..
 
     start, end = m..(nums), s..(nums)
     mid = 0
-    w.... start <= end:
+    w.... start <_ end:
       mid = start + (end - start) / 2
       __ valid(nums, mid, m
         end = mid - 1

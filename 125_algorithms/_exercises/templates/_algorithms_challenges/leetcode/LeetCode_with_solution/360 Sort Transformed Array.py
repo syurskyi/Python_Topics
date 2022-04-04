@@ -29,7 +29,7 @@ c_ Solution(o..
         ri = bisect.bisect_left(nums, mid)
         le = ri - 1
         ret    # list
-        w.... le >= 0 a.. ri < l..(nums) a.. le < ri:
+        w.... le >_ 0 a.. ri < l..(nums) a.. le < ri:
             f_le = f(nums[le], a, b, c)
             f_ri = f(nums[ri], a, b, c)
             __ a > 0 a.. f_le < f_ri o. a < 0 a.. f_le > f_ri:
@@ -39,7 +39,7 @@ c_ Solution(o..
                 ret.a..(f_ri)
                 ri += 1
 
-        w.... le >= 0:
+        w.... le >_ 0:
             ret.a..(f(nums[le], a, b, c
             le -= 1
         w.... ri < l..(nums

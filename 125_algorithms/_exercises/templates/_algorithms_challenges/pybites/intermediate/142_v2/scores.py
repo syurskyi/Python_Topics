@@ -20,7 +20,7 @@ ___ calculate_score(scores
     ___ score __ scores:
         __ score n.. __ DICE_VALUES:
             r.. V...("Invalid dice value")
-        __ score >= MIN_SCORE:
+        __ score >_ MIN_SCORE:
             s += score
 
     r.. s

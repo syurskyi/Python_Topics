@@ -17,11 +17,11 @@ c_ Solution(o..
             r.. 1
     
     ___ helper  hashmap, a, b
-        __ a <= 0 a.. b <= 0:
+        __ a <_ 0 a.. b <_ 0:
             r.. 0.5
-        __ a <= 0:
+        __ a <_ 0:
             r.. 1
-        __ b <= 0:
+        __ b <_ 0:
             r.. 0
         s = s..(a)+':'+s..(b)
         __ s n.. __ hashmap:

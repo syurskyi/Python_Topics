@@ -37,7 +37,7 @@ c_ Solution:
         leftend = prev
         rightend = cur
 
-        w.... l <= n:  # notice is it <=
+        w.... l <_ n:  # notice is it <=
             nxt = cur.next
             cur.next = prev
             prev = cur

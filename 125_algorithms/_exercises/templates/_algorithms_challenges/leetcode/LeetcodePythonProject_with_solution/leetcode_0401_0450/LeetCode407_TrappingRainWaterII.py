@@ -20,7 +20,7 @@ c_ Solution(o..
         w.... heap:
             height, i, j = heapq.heappop(heap)
             ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
-                __ 0<=x<m a.. 0<=y<n a.. n.. visited[x][y]:
+                __ 0<_x<m a.. 0<_y<n a.. n.. visited[x][y]:
                     res += m..(0, height-heightMap[x][y])
                     heapq.heappush(heap, (m..(height, heightMap[x][y]), x, y
                     visited[x][y] = T..

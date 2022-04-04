@@ -13,7 +13,7 @@ ___ filter_names(names
                 ____ QUIT_CHAR __ name:
                     _____
                 ____
-                    __ names_list_number >= MAX_NAMES:
+                    __ names_list_number >_ MAX_NAMES:
                         _____
                     ____
                         names_list.a..(name)

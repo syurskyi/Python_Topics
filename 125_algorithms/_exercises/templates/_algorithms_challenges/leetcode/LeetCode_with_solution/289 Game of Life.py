@@ -54,7 +54,7 @@ c_ Solution(o..
                 ___ d __ dirs:
                     I = i+d[0]
                     J = j+d[1]
-                    __ 0 <= I < m a.. 0 <= J < n:
+                    __ 0 <_ I < m a.. 0 <_ J < n:
                         __ I < i:
                             cnt += lines[i%2][J]
                         ____ I __ i a.. J < j:

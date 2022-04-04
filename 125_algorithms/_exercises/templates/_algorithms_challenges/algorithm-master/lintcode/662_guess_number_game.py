@@ -12,7 +12,7 @@ c_ Solution:
         :type n: int
         :rtype: int
         """
-        __ n.. n o. n <= 1:
+        __ n.. n o. n <_ 1:
             r.. 1
 
         left, right = 1, n

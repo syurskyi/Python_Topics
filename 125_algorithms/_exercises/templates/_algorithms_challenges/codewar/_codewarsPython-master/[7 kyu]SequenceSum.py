@@ -1,8 +1,8 @@
 ___ sum_of_n(n
 	res    # list
 	v = 0
-	___ i __ r..(abs(n)+1
-		v += i __ n >= 0 ____ -i
+	___ i __ r..(a..(n)+1
+		v += i __ n >_ 0 ____ -i
 		res.a..(v)
 	r.. res
 

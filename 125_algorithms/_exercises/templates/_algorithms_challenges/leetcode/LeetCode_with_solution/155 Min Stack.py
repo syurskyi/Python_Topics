@@ -34,7 +34,7 @@ c_ MinStack:
         :return: int
         """
         stk.a..(x)
-        __ l..(non_asc) __ 0 o. x <= non_asc[-1]:  # rather than <
+        __ l..(non_asc) __ 0 o. x <_ non_asc[-1]:  # rather than <
             non_asc.a..(x)
 
     ___ pop

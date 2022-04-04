@@ -8,7 +8,7 @@ c_ Solution(o..
     ans = 0
 
     ___ dfs(grid, i, j, visited
-      __ i < 0 o. i >= l..(grid) o. j < 0 o. j >= l..(grid[0]) o. grid[i][j] __ "0" o. (i, j) __ visited:
+      __ i < 0 o. i >_ l..(grid) o. j < 0 o. j >_ l..(grid[0]) o. grid[i][j] __ "0" o. (i, j) __ visited:
         r.. F..
       visited |= {(i, j)}
       ___ di, dj __ [(-1, 0), (1, 0), (0, 1), (0, -1)]:

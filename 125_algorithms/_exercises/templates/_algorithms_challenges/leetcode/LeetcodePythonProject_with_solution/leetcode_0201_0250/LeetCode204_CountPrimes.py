@@ -27,7 +27,7 @@ c_ Solution(o..
         :rtype: int
         """
         _______ m__
-        __ n <= 2:
+        __ n <_ 2:
             r.. 0
         primes = [F..,]*2 + [T..,]*(n-2)
         ___ i __ r..(2, i..(m__.sqrt(n-1+1

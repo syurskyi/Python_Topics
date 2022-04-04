@@ -16,4 +16,4 @@ c_ Solution:
             a, b = a ^ b, (a & b) << 1
             a &= INT_RANGE
 
-        r.. a __ a >> 31 <= 0 ____ a ^ ~INT_RANGE
+        r.. a __ a >> 31 <_ 0 ____ a ^ ~INT_RANGE

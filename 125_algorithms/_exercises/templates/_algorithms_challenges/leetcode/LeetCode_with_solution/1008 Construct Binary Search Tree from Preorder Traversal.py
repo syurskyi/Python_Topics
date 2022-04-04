@@ -51,7 +51,7 @@ c_ Solution:
             __ a < stk[-1].val:  # len(stk) always >= 1
                 stk[-1].left = node
             ____
-                w.... l..(stk) >= 2 a.. stk[-2].val < a:
+                w.... l..(stk) >_ 2 a.. stk[-2].val < a:
                     stk.p.. )
 
                 stk[-1].right = node

@@ -37,7 +37,7 @@ c_ Solution:
         if target negative, flip the sign. Thus, we can only consider positive
         number
         """
-        target = abs(target)
+        target = a..(target)
         s = 0
         k = 0
         w.... s < target:

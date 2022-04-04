@@ -76,7 +76,7 @@ c_ Solution(o..
     
     ___ nextElem  s, i
         res = ''
-        __ i >= l..(s
+        __ i >_ l..(s
             r.. res, i
         ____ s[i] __ '(':
             res = '('

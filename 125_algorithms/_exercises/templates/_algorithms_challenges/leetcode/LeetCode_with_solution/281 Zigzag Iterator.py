@@ -18,15 +18,15 @@ c_ ZigzagIterator(o..
         _reposition()
 
     ___ _reposition
-        w.... i >= l..(mat) o. j >= l..(mat[i]
+        w.... i >_ l..(mat) o. j >_ l..(mat[i]
             __ n.. hasNext
                 r..
 
-            ____ i >= l..(mat
+            ____ i >_ l..(mat
                 i = 0
                 j += 1
 
-            ____ j >= l..(mat[i]
+            ____ j >_ l..(mat[i]
                 i += 1
 
     ___ next
@@ -45,7 +45,7 @@ c_ ZigzagIterator(o..
         """
         :rtype: bool
         """
-        r.. j <= maxa[0]
+        r.. j <_ maxa[0]
 
 
 __ _______ __ _______

@@ -31,7 +31,7 @@ c_ Solution:
             __ n.. is_valid_bst_aux(root.left
                 r.. F..
             __ prev __ n.. N..
-                __ prev.val >= root.val:
+                __ prev.val >_ root.val:
                     r.. F..
             prev = root
             __ n.. is_valid_bst_aux(root.right

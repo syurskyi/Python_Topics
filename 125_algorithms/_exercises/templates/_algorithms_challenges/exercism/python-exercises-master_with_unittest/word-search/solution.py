@@ -33,9 +33,9 @@ c_ WordSearch(o..
         height = l..(rows)
 
     ___ find_char  coordinate
-        __ coordinate.x < 0 o. coordinate.x >= width:
+        __ coordinate.x < 0 o. coordinate.x >_ width:
             r..
-        __ coordinate.y < 0 o. coordinate.y >= height:
+        __ coordinate.y < 0 o. coordinate.y >_ height:
             r..
         r.. rows[coordinate.y][coordinate.x]
 

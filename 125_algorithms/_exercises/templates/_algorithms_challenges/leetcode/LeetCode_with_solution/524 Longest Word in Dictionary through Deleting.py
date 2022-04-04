@@ -51,7 +51,7 @@ c_ Solution:
             ___ d_idx, w_idx __ lst:
                 w = d[d_idx]
                 w_idx += 1
-                __ w_idx >= l..(w
+                __ w_idx >_ l..(w
                     # if len(w) >= len(ret) and w < ret:  # error
                     ret = m..(ret, w, key=l.... x: (-l..(x), x  # compare with primary and secondary key
                 ____

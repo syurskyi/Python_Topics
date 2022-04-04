@@ -46,7 +46,7 @@ c_ Solution:
 
         ___ i __ r..(l..(A:
             heap.push(-A[i])
-            __ i >= k - 1:
+            __ i >_ k - 1:
                 ans.a..(-heap.top
                 heap.remove(-A[i - k + 1])
 
@@ -68,6 +68,6 @@ c_ Solution:
         __ n.. A o. l..(A) < 1:
             r.. ans
         ___ r __ r..(l..(A:
-            __ r >= k - 1:
+            __ r >_ k - 1:
                 ans.a..(m..(A[r - k + 1 : r + 1]
         r.. ans

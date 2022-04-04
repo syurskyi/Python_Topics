@@ -65,7 +65,7 @@ c_ Solution(o..
                 ___ dir __ dirs:
                     I = i+dir[0]
                     J = j+dir[1]
-                    __ 0 <= I < m a.. 0 <= J < n a.. grid[I][J] __ 0 a.. n.. visited[I][J]:
+                    __ 0 <_ I < m a.. 0 <_ J < n a.. grid[I][J] __ 0 a.. n.. visited[I][J]:
                         q.a..((I, J
                         visited[I][J] = T..
 

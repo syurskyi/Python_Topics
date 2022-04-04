@@ -45,7 +45,7 @@ c_ Solution:
         __ n.. node:
             r..
 
-        __ L <= node.val <= R:
+        __ L <_ node.val <_ R:
             ret += node.val
             dfs(node.left, L, R)
             dfs(node.right, L, R)

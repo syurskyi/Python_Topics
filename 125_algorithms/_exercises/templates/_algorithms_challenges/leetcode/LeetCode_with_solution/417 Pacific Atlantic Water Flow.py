@@ -84,7 +84,7 @@ c_ Solution:
         ___ x, y __ dirs:
             I = i + x
             J = j + y
-            __ 0 <= I < m a.. 0 <= J < n a.. matrix[i][j] <= matrix[I][J]:
+            __ 0 <_ I < m a.. 0 <_ J < n a.. matrix[i][j] <_ matrix[I][J]:
                 __ n.. C[I][J]:
                     dfs(matrix, I, J, C)
 
@@ -111,7 +111,7 @@ c_ Solution:
         visisted = [[F..] * n ] * m
         ___ i __ r..(m
             ___ j __ r..(n
-                dfs_error(matrix, i, j, visisted, A, l.... i, j: i >= m o. j >= n)
+                dfs_error(matrix, i, j, visisted, A, l.... i, j: i >_ m o. j >_ n)
 
         ret = [
             [i, j]
@@ -131,8 +131,8 @@ c_ Solution:
         ___ x, y __ dirs:
             i2 = i + x
             j2= j + y
-            __ 0 <= i2 < m a.. 0 <= j2 < n:
-                __ dfs_error(matrix, i2, j2, visisted, C, predicate) a.. matrix[i][j] >= matrix[i2][j2]:
+            __ 0 <_ i2 < m a.. 0 <_ j2 < n:
+                __ dfs_error(matrix, i2, j2, visisted, C, predicate) a.. matrix[i][j] >_ matrix[i2][j2]:
                     C[i][j] = T..
             ____ predicate(i2, j2
                 C[i][j] = T..

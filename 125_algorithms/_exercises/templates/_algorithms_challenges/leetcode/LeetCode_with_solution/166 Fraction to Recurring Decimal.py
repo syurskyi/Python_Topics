@@ -20,9 +20,9 @@ c_ Solution:
         :type denominator: int
         :rtype: str
         """
-        sign = 1 __ numerator*denominator >= 0 ____ -1
-        numerator = abs(numerator)
-        denominator = abs(denominator)
+        sign = 1 __ numerator*denominator >_ 0 ____ -1
+        numerator = a..(numerator)
+        denominator = a..(denominator)
 
         int_part = numerator/denominator
         frac_part = numerator-int_part*denominator

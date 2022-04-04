@@ -3,7 +3,7 @@
 
 
 ___ binary_search_last(arr, el, low, high
-    __ low + 1 >= high:
+    __ low + 1 >_ high:
         __ arr[low] > el:
             r.. 0
         ____

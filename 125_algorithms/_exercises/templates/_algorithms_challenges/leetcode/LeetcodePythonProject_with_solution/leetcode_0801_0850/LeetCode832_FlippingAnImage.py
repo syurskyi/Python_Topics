@@ -14,7 +14,7 @@ c_ Solution(o..
         m, n = l..(image), l..(image[0])
         ___ i __ r..(m
             j, l = 0, n-1
-            w.... j <= l:
+            w.... j <_ l:
                 image[i][j], image[i][l] = image[i][l], image[i][j]
                 image[i][j] = 1 __ n.. image[i][j] ____ 0
                 __ j < l:

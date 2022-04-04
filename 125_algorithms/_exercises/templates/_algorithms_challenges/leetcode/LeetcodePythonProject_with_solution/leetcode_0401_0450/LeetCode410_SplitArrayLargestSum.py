@@ -23,7 +23,7 @@ c_ Solution(o..
         ___ num __ nums:
             __ num > maxVal:
                 r.. F..
-            ____ acc+num <= maxVal:
+            ____ acc+num <_ maxVal:
                 acc += num
             ____
                 cuts -= 1

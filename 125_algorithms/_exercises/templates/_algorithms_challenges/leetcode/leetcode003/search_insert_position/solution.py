@@ -27,7 +27,7 @@ c_ Solution(o..
         ____
             left = 0
             right = n - 1
-            w.... left <= right:
+            w.... left <_ right:
                 mid = (left + right) / 2
                 __ nums[mid] __ target:
                     r.. mid

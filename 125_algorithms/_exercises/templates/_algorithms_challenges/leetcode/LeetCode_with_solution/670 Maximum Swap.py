@@ -25,12 +25,12 @@ c_ Solution:
         nums = l..(s..(num
         n = l..(nums)
         ___ i __ r..(n-1, -1, -1
-            __ stk a.. stk[-1][1] >= nums[i]:  # only keep the rightmost duplicate
+            __ stk a.. stk[-1][1] >_ nums[i]:  # only keep the rightmost duplicate
                 _____
             stk.a..((i, nums[i]
 
         ___ i __ r..(n
-            w.... stk a.. stk[-1][0] <= i:
+            w.... stk a.. stk[-1][0] <_ i:
                 stk.p.. )
             __ stk a.. stk[-1][1] > nums[i]:
                 j = stk[-1][0]

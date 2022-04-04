@@ -14,7 +14,7 @@ c_ Solution(o..
         n = l..(nums)
         stack = l..(r..(n-1, -1, -1
         ___ i __ r..(n-1, -1, -1
-            w.... stack a.. nums[stack[-1]] <= nums[i]:
+            w.... stack a.. nums[stack[-1]] <_ nums[i]:
                 stack.p.. )
             __ stack:
                 res.insert(0, nums[stack[-1]])

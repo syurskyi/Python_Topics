@@ -31,7 +31,7 @@ c_ MultiplicationTable:
         """Takes x and y coords and returns the re-calculated result"""
 
 
-        __ n.. ((1 <= x <= _length) a.. (1 <= y <= _length:
+        __ n.. ((1 <_ x <_ _length) a.. (1 <_ y <_ _length:
             r.. IndexError("Invalid x and y")
 
 

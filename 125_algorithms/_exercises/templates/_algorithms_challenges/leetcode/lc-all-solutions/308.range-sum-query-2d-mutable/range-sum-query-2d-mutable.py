@@ -62,7 +62,7 @@ c_ NumMatrix(o..
     :rtype: int
     """
     total = sumRange(row2, col2)
-    left = sumRange(row2, col1 - 1) __ col1 - 1 >= 0 ____ 0
-    top = sumRange(row1 - 1, col2) __ row1 - 1 >= 0 ____ 0
-    overlap = sumRange(row1 - 1, col1 - 1) __ row1 - 1 >= 0 a.. col1 - 1 >= 0 ____ 0
+    left = sumRange(row2, col1 - 1) __ col1 - 1 >_ 0 ____ 0
+    top = sumRange(row1 - 1, col2) __ row1 - 1 >_ 0 ____ 0
+    overlap = sumRange(row1 - 1, col1 - 1) __ row1 - 1 >_ 0 a.. col1 - 1 >_ 0 ____ 0
     r.. total - left - top + overlap

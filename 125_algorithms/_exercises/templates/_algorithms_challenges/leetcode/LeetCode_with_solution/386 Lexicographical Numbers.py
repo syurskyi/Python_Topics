@@ -18,9 +18,9 @@ c_ Solution(o..
             i = 1
             ___ _ __ x..(n  # erroneous for while i <= n:
                 y.. i
-                __ i * 10 <= n:
+                __ i * 10 <_ n:
                     i *= 10  # * 10
-                ____ i % 10 != 9 a.. i + 1 <= n:
+                ____ i % 10 != 9 a.. i + 1 <_ n:
                     i += 1  # for current digit
                 ____
                     w.... i % 10 __ 9 o. i + 1 > n:
@@ -37,7 +37,7 @@ c_ Solution(o..
         ret    # list
         ___ i __ x..(1, 10
             sig = 1
-            w.... i * sig <= n:
+            w.... i * sig <_ n:
                 ret.e.. r..(
                     i * sig,
                     m..((1+i)*sig-1, n)+1),

@@ -6,7 +6,7 @@ c_ Solution(o..
         left = 0
         i = 0
         right = n-1
-        w.... i <= right:
+        w.... i <_ right:
             __ nums[newIndex(i, n)] > median:
                 nums[newIndex(left, n)], nums[newIndex(i, n)] =\
                 nums[newIndex(i, n)], nums[newIndex(left, n)]
@@ -40,11 +40,11 @@ c_ Solution(o..
     ___ partition  nums, lo, hi
         i, j = lo+1, hi
         w... T...
-            w.... i < hi a.. nums[i] <= nums[lo]:
+            w.... i < hi a.. nums[i] <_ nums[lo]:
                 i += 1
-            w.... j > lo a.. nums[lo] <= nums[j]:
+            w.... j > lo a.. nums[lo] <_ nums[j]:
                 j -= 1
-            __ i >= j:
+            __ i >_ j:
                 _____
             nums[i], nums[j] = nums[j], nums[i]
         nums[lo], nums[j] = nums[j], nums[lo]

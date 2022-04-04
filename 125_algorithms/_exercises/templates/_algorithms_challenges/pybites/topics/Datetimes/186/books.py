@@ -14,7 +14,7 @@ ___ get_number_books_read(books_per_year_goal: i..,
        If books_per_year_goal negative or 0, or at_date is in the
        past, raise a ValueError."""
     in_date = NOW __ at_date __ N.. ____ p..(at_date)
-    __ books_per_year_goal <= 0 o. in_date < NOW:
+    __ books_per_year_goal <_ 0 o. in_date < NOW:
         r.. V...
     # TODOs
 

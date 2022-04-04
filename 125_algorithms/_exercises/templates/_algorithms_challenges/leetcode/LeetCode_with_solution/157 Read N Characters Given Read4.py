@@ -36,7 +36,7 @@ c_ Solution(o..
                 idx += r
                 __ r < 4: _____
             ____
-                buf[idx:n] = buf4[:n-idx]
+                buf[idx:n] = buf4 |?-idx]
                 idx = n
 
         r.. idx

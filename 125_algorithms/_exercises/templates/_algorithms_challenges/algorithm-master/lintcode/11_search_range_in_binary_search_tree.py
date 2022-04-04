@@ -30,7 +30,7 @@ c_ Solution:
 
         dfs(node.left, a, b, ans)
 
-        __ a <= node.val <= b:
+        __ a <_ node.val <_ b:
             ans.a..(node.val)
 
         dfs(node.right, a, b, ans)

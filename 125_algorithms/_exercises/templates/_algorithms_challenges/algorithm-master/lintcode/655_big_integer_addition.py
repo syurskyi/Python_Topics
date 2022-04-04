@@ -21,7 +21,7 @@ c_ Solution:
         carry = 0
         zero = o..('0')
 
-        w.... i >= 0 a.. j >= 0:
+        w.... i >_ 0 a.. j >_ 0:
             carry += o..(a[i]) + o..(b[j]) - 2 * zero
             ans[idx] = s..(carry % 10)
             carry //= 10
@@ -29,14 +29,14 @@ c_ Solution:
             i -= 1
             j -= 1
 
-        w.... i >= 0:
+        w.... i >_ 0:
             carry += o..(a[i]) - zero
             ans[idx] = s..(carry % 10)
             carry //= 10
             idx -= 1
             i -= 1
 
-        w.... j >= 0:
+        w.... j >_ 0:
             carry += o..(b[j]) - zero
             ans[idx] = s..(carry % 10)
             carry //= 10

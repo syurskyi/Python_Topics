@@ -8,7 +8,7 @@ c_ Solution(o..
     pre = f__("-inf")
     ___ i __ r..(l..(nums) - 1
       __ nums[i] < pre:
-        __ nums[i + 1] >= nums[i - 1]:
+        __ nums[i + 1] >_ nums[i - 1]:
           nums[i] = nums[i + 1]
         ____
           nums[i - 1] = nums[i]

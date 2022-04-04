@@ -31,7 +31,7 @@ c_ Solution:
         length = l..(A)
         start = 0
         end = length-1
-        w.... start<=end:
+        w.... start<_end:
             mid = (start+end)/2
             # found
             __ A[mid]__target:
@@ -44,13 +44,13 @@ c_ Solution:
                     end = mid-1
             # case 2
             ____ A[start]>A[mid] a.. A[mid]<A[end]:
-                __ target>A[mid] a.. target<=A[end]:
+                __ target>A[mid] a.. target<_A[end]:
                     start = mid+1
                 ____
                     end = mid-1
             # case 3
             ____
-                __ target<A[mid] a.. target>=A[start]:
+                __ target<A[mid] a.. target>_A[start]:
                     end = mid-1
                 ____
                     start = mid+1
@@ -78,7 +78,7 @@ c_ Solution:
         length = l..(A)
         start = 0
         end = length-1
-        w.... start<=end:
+        w.... start<_end:
             mid = (start+end)/2
             # found
             __ A[mid]__target:
@@ -87,20 +87,20 @@ c_ Solution:
             __ A[start]__A[mid]:
                 start += 1
             # case 1
-            ____ A[start]<A[mid]<=A[end]:
+            ____ A[start]<A[mid]<_A[end]:
                 __ target>A[mid]:
                     start = mid+1
                 ____
                     end = mid-1
             # case 2
-            ____ A[start]>A[mid] a.. A[mid]<=A[end]:  # slight difference compared to A[mid]<A[end]
-                __ target>A[mid] a.. target<=A[end]:
+            ____ A[start]>A[mid] a.. A[mid]<_A[end]:  # slight difference compared to A[mid]<A[end]
+                __ target>A[mid] a.. target<_A[end]:
                     start = mid+1
                 ____
                     end = mid-1
             # case 3
             ____
-                __ target<A[mid] a.. target>=A[start]:
+                __ target<A[mid] a.. target>_A[start]:
                     end = mid-1
                 ____
                     start = mid+1

@@ -30,7 +30,7 @@ c_ Solution(o..
         ret = [itvls[0]]
         ___ cur __ itvls[1:]:
             pre = ret[-1]
-            __ cur.start <= pre.end:  # overlap
+            __ cur.start <_ pre.end:  # overlap
                 pre.end = m..(pre.end, cur.end)
             ____
                 ret.a..(cur)
@@ -52,16 +52,16 @@ c_ Solution(o..
             __ ret[-1].end < interval.start:
                 ret.a..(interval)
                 _____
-            __ ret[-1].start <= interval.start <= ret[-1].end <= interval.end:
+            __ ret[-1].start <_ interval.start <_ ret[-1].end <_ interval.end:
                 ret[-1].end = interval.end
                 _____
-            __ interval.start <= ret[-1].start a.. ret[-1].end <= interval.end:
+            __ interval.start <_ ret[-1].start a.. ret[-1].end <_ interval.end:
                 ret[-1] = interval
                 _____
-            __ ret[-1].start <= interval.start < ret[-1].end a.. ret[-1].start <= interval.end < ret[-1].end:
+            __ ret[-1].start <_ interval.start < ret[-1].end a.. ret[-1].start <_ interval.end < ret[-1].end:
                 ret.a..(interval)
                 _____
-            __ interval.start < ret[-1].start <= interval.end < ret[-1].end:
+            __ interval.start < ret[-1].start <_ interval.end < ret[-1].end:
                 ret[-1].start = interval.start
                 _____
             __ interval.end < ret[-1].start:

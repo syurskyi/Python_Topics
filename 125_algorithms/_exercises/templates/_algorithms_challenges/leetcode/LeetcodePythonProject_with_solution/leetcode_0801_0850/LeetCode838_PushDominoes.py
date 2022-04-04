@@ -26,9 +26,9 @@ c_ Solution(o..
                     setVals(arr, i, j)
             i += 1
         i = n-1
-        w.... i >= 0 a.. arr[i] __ '.':
+        w.... i >_ 0 a.. arr[i] __ '.':
             i -= 1
-        __ i >= 0 a.. arr[i] __ 'R' a.. i < n:
+        __ i >_ 0 a.. arr[i] __ 'R' a.. i < n:
             arr[-1] = 'R'
             setVals(arr, i, n-1)
         r.. ''.j..(arr)

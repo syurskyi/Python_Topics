@@ -21,7 +21,7 @@ c_ DateFormat(E..
         d_parse_formats = ["%d/%m/%y", "%m/%d/%y", "%y/%m/%d"]
         __ val __ N..
             r.. d_parse_formats
-        __ 0 <= val <= l..(d_parse_formats
+        __ 0 <_ val <_ l..(d_parse_formats
             r.. d_parse_formats[val]
         r.. V...
 

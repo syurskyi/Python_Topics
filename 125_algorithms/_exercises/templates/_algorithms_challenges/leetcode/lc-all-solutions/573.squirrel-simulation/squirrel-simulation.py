@@ -12,7 +12,7 @@ c_ Solution(o..
     ___ dist(s, t
       x1, y1 = s
       x2, y2 = t
-      r.. abs(x1 - x2) + abs(y1 - y2)
+      r.. a..(x1 - x2) + a..(y1 - y2)
 
     ans = 0
     ___ nut __ nuts:

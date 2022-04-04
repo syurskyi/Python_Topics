@@ -10,7 +10,7 @@ c_ Solution(o..
         k -= 1
         w.... k > 0:
             steps = calSteps(n, curr, curr+1)
-            __ steps <= k:
+            __ steps <_ k:
                 curr += 1
                 k -= steps
             ____
@@ -20,7 +20,7 @@ c_ Solution(o..
     
     ___ calSteps  n, n1, n2
         steps = 0
-        w.... n1 <= n:
+        w.... n1 <_ n:
             steps += m..(n+1, n2)-n1
             n1 *= 10
             n2 *= 10

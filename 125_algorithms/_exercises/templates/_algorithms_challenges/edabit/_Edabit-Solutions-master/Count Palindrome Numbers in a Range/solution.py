@@ -6,7 +6,7 @@ ___ ispalindrome(num
 
 ___ count_palindromes(num1, num2
     output = 0
-    w.... num1 <= num2:
+    w.... num1 <_ num2:
         __ ispalindrome(num1) __ T..:
             output += 1
         num1 += 1

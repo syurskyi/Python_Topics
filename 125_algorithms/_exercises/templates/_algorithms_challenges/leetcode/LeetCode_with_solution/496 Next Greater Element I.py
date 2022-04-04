@@ -48,7 +48,7 @@ c_ Solution:
         h    # dict  # num -> next greater element
         stk    # list
         ___ e __ nums2[::-1]:
-            w.... stk a.. stk[-1] <= e:
+            w.... stk a.. stk[-1] <_ e:
                 # until stk[-1] > e
                 stk.p.. )
 

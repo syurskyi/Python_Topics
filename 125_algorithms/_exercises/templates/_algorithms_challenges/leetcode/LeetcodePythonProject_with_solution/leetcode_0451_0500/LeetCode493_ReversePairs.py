@@ -21,14 +21,14 @@ c_ Solution(o..
         cnt = 0
         ___ msort(lst
             n = l..(lst)
-            __ n <= 1:
+            __ n <_ 1:
                 r.. lst
             ____
                 r.. merger(msort(lst[:i..(n/2)]), msort(lst[i..(n/2]
         ___ merger(left, right
             l, r = 0, 0
             w.... l < l..(left) a.. r < l..(right
-                __ left[l] <= 2*right[r]:
+                __ left[l] <_ 2*right[r]:
                     l += 1
                 ____
                     cnt += l..(left)-l

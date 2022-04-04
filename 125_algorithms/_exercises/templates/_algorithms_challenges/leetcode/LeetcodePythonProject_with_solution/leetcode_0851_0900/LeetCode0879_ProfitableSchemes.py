@@ -33,7 +33,7 @@ c_ Solution(o..
         r.. res[0]
     
     ___ dfs  ind, group, profit, G, P, curGroup, curProfit, res
-        __ curProfit >= P a.. s..(curGroup) <= G:
+        __ curProfit >_ P a.. s..(curGroup) <_ G:
             res[0] += 1
         ___ i __ r..(ind, l..(group:
             curProfit += profit[i]

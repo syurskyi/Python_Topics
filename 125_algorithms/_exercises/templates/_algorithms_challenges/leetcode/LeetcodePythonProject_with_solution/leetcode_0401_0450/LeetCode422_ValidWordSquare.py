@@ -10,9 +10,9 @@ c_ Solution(o..
         ___ i, word1 __ e..(words
             word2 = ''
             ___ j __ r..(l..(word1:
-                __ j >= l..(words
+                __ j >_ l..(words
                     r.. F..
-                __ i >= l..(words[j]
+                __ i >_ l..(words[j]
                     r.. F..
                 word2 += words[j][i]
             __ word1 != word2:

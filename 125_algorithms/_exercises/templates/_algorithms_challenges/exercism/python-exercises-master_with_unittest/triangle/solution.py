@@ -10,14 +10,14 @@ c_ Triangle(o..
             r.. TriangleError
 
     ___ _invalid_lengths
-        r.. any([side <= 0 ___ side __ sides])
+        r.. any([side <_ 0 ___ side __ sides])
 
     ___ _violates_inequality
         x, y, z = sides
         r.. any([
-            x + y <= z,
-            x + z <= y,
-            y + z <= x,
+            x + y <_ z,
+            x + z <_ y,
+            y + z <_ x,
         ])
 
     ___ kind

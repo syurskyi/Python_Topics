@@ -25,7 +25,7 @@ c_ Solution(o..
         __ n.. nums: r.. 0
 
         ___ msort(A, lo, hi
-            __ hi - lo <= 1: r.. 0
+            __ hi - lo <_ 1: r.. 0
 
             mid = (lo + hi)/2
             cnt = msort(A, lo, mid) + msort(A, mid, hi)
@@ -34,7 +34,7 @@ c_ Solution(o..
             i = j = r = mid
             ___ l __ x..(lo, mid
                 w.... i < hi a.. A[i] - A[l] <  lower: i += 1
-                w.... j < hi a.. A[j] - A[l] <= upper: j += 1
+                w.... j < hi a.. A[j] - A[l] <_ upper: j += 1
                 cnt += j - i
 
                 w.... r < hi a.. A[r] < A[l]:

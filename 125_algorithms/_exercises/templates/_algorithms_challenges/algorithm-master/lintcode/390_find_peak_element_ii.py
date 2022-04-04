@@ -87,8 +87,8 @@ c_ Solution:
         ___ i __ r..(4
             _r = row + dx[i]
             _c = col + dy[i]
-            __ 0 <= _r < m \
-                    a.. 0 <= _c < n \
+            __ 0 <_ _r < m \
+                    a.. 0 <_ _c < n \
                     a.. A[row][col] < A[_r][_c]:
                 r.. 0
         r.. 1

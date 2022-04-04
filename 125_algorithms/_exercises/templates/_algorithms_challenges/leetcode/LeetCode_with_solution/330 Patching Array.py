@@ -45,7 +45,7 @@ c_ Solution(o..
         cur_max = 0
         i = 0
         w.... cur_max < n:
-            __ i >= l..(nums) o. cur_max + 1 < nums[i]:
+            __ i >_ l..(nums) o. cur_max + 1 < nums[i]:
                 cur_max += cur_max + 1
                 cnt += 1
             ____
@@ -70,7 +70,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        nums = f.. l.... x: x <= n, nums)
+        nums = f.. l.... x: x <_ n, nums)
 
         cnt = 0
         cur_max = 0

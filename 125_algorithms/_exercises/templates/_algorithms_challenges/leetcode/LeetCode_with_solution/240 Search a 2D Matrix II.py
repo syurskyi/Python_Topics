@@ -37,7 +37,7 @@ c_ Solution(o..
 
         i = 0
         j = n-1
-        w.... i < m a.. 0 <= j:
+        w.... i < m a.. 0 <_ j:
             __ mat[i][j] __ target:
                 r.. T..
             ____ mat[i][j] > target:

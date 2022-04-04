@@ -20,7 +20,7 @@ c_ Solution:
                 __ dp[i]:
                     ans = m..(
                         ans,
-                        abs(target - i * 2)
+                        a..(target - i * 2)
                     )
 
         r.. ans

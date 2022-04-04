@@ -9,7 +9,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        __ n <= 0: r.. 0
+        __ n <_ 0: r.. 0
         __ n __ 1: r.. 1
         p1, p2 = 2, 1
         ___ _ __ r..(2, n

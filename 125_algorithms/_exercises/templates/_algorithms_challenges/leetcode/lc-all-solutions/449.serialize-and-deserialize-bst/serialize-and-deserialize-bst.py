@@ -43,7 +43,7 @@ c_ Codec:
       d[inOrder[i]] = i
 
     ___ helper(preOrder, start, end, inOrder, d
-      __ start <= end:
+      __ start <_ end:
         rootVal = preOrder[preIdx]
         preIdx += 1
         root = TreeNode(rootVal)

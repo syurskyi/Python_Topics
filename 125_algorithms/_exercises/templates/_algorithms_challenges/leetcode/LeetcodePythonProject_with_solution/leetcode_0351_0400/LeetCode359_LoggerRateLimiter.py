@@ -25,7 +25,7 @@ c_ Logger(o..
             hashmap[message] = timestamp
             r.. T..
         ____
-            __ timestamp - hashmap[message] >= 10:
+            __ timestamp - hashmap[message] >_ 10:
                 hashmap[message] = timestamp
                 r.. T..
             ____

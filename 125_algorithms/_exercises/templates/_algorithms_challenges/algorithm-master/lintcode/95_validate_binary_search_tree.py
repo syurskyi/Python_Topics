@@ -31,7 +31,7 @@ c_ Solution:
 
             node = stack.p.. )
 
-            __ pre a.. node.val <= pre.val:
+            __ pre a.. node.val <_ pre.val:
                 r.. F..
 
             pre = node
@@ -55,7 +55,7 @@ c_ Solution:
 
         isValidBST(root.left)
 
-        __ pre a.. root.val <= pre.val:
+        __ pre a.. root.val <_ pre.val:
             ans = F..
             r.. ans
 

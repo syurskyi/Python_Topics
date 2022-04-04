@@ -110,7 +110,7 @@ c_ LRUCache_TLE(o..
             q.remove(key)
             q.insert(0, key)
         ____
-            __ l..(q)+1 <= capacity:
+            __ l..(q)+1 <_ capacity:
                 q.insert(0, key)
             ____
                 dic.p.. q.pop

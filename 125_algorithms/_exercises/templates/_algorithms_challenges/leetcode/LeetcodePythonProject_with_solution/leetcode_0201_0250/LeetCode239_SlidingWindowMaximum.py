@@ -19,7 +19,7 @@ c_ Solution(o..
             w.... d.. a.. nums[d..[-1]] < num:
                 d...p.. )
             d...a..(i)
-            __ i+1>=k:
+            __ i+1>_k:
                 res.a..(nums[d..[0]])
         r.. res
     

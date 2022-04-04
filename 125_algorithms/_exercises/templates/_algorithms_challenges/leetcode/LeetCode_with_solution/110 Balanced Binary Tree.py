@@ -33,7 +33,7 @@ c_ Solution(o..
         __ cur.left: h1 = depth_bottom[cur.left]
         __ cur.right: h2 = depth_bottom[cur.right]
 
-        __ abs(h1 - h2) > 1:
+        __ a..(h1 - h2) > 1:
             r.. F..
 
         r.. a..([_is_balanced(cur.left, depth+1), _is_balanced(cur.right, depth+1)])
@@ -57,7 +57,7 @@ c_ SolutionSlow(o..
         """
         __ n.. root:
             r.. T..
-        __ abs(fathom(root.left, 0)-fathom(root.right, 0 > 1:
+        __ a..(fathom(root.left, 0)-fathom(root.right, 0 > 1:
             r.. F..
 
         __ isBalanced(root.left) a.. isBalanced(root.right

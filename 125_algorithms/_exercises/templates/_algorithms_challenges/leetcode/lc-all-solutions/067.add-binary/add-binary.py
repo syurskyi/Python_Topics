@@ -5,7 +5,7 @@ c_ Solution(o..
     :type b: str
     :rtype: str
     """
-    diff = abs(l..(a) - l..(b
+    diff = a..(l..(a) - l..(b
     __ l..(a) > l..(b
       b = "0" * diff + b
     ____
@@ -15,7 +15,7 @@ c_ Solution(o..
     carry = 0
     ai, bi = l..(a) - 1, l..(b) - 1
     al, bl = l..(a), l..(b)
-    w.... ai >= 0 a.. bi >= 0:
+    w.... ai >_ 0 a.. bi >_ 0:
       ac, bc = a[ai], b[bi]
       __ ac __ "1" a.. bc __ "1":
         __ carry __ 1:

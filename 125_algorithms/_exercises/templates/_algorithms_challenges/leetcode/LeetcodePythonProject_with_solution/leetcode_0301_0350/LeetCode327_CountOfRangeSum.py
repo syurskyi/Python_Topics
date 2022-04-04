@@ -19,7 +19,7 @@ c_ Solution(o..
         i, j = mid, mid
         ___ left __ first[l:mid]:
             w.... i < r a.. first[i]-left <  lower: i+=1
-            w.... j < r a.. first[j]-left <= upper: j+=1
+            w.... j < r a.. first[j]-left <_ upper: j+=1
             count += j-i
         first[l:r] = s..(first[l:r])
         r.. count

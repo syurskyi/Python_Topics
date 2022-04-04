@@ -18,7 +18,7 @@ c_ Solution(o..
       __ n.. p[1]:
         _____
       __ p[0] __ 0:
-        __ p[1].val <= prev:
+        __ p[1].val <_ prev:
           r.. F..
         prev = p[1].val
       ____

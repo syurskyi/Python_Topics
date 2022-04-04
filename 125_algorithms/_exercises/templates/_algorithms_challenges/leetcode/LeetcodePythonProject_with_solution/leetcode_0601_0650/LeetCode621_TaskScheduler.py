@@ -15,7 +15,7 @@ c_ Solution(o..
             arr[o..(t)-o..('A')] += 1
         arr.s..()
         i = 25
-        w.... i >= 0 a.. arr[i]__arr[-1]:
+        w.... i >_ 0 a.. arr[i]__arr[-1]:
             i -= 1
         r.. m..(l..(tasks), (arr[-1]-1)*(n+1)+25-i)
     

@@ -16,7 +16,7 @@ c_ Solution:
         :return: an integer
         """
         length = l..(A)
-        __ length<=2:
+        __ length<_2:
             r.. length
 
         closed_ptr = 0
@@ -24,7 +24,7 @@ c_ Solution:
         open_ptr = closed_ptr+1
         w.... open_ptr<length:
             __ A[closed_ptr]__A[open_ptr]:
-                __ duplicate_count>=1:
+                __ duplicate_count>_1:
                     # find next non-duplicate
                     ___
                         w.... A[closed_ptr]__A[open_ptr]:
@@ -52,7 +52,7 @@ c_ Solution:
         :return: an integer
         """
         length = l..(A)
-        __ length<=2:
+        __ length<_2:
             r.. length
 
         close_ptr = 0

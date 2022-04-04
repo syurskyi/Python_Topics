@@ -20,7 +20,7 @@ ___ get_ordinal_suffix(number
     num_str = s..(number)
     suffix = 'th'
 
-    __ n.. (11 <= i..(num_str[-2:]) <= 19) a.. 1 <= i..(num_str[-1]) <= 3:
+    __ n.. (11 <_ i..(num_str[-2:]) <_ 19) a.. 1 <_ i..(num_str[-1]) <_ 3:
         suffix = SUFFIXES[i..(num_str[-1])]
 
     r.. num_str + suffix

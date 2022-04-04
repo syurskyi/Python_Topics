@@ -16,7 +16,7 @@ c_ Solution(o..
         ___ start __ map(s.., (p-1, p, p+1:
             candidates.a..(start+(start[:-1] __ k%2 ____ start)[::-1])
         ___ delta(x
-            r.. abs(i..(n)-i..(x
+            r.. a..(i..(n)-i..(x
         res = N..
         ___ cand __ candidates:
             __ cand != n a.. n.. cand.startswith('00'

@@ -27,7 +27,7 @@ c_ Solution(o..
         cur = head
         w.... cur:
             cur.val += 1
-            __ cur.val >= 10:
+            __ cur.val >_ 10:
                 cur.val -= 10
                 __ n.. cur.next:
                     cur.next = ListNode(0)

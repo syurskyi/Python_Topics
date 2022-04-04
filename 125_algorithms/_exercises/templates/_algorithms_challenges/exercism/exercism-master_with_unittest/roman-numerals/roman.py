@@ -25,7 +25,7 @@ c_ Roman:
     ___ get_components(cls, arabic
         components    # list
         ___ key __ r..(s..(cls.NUMERALS.keys())):
-            w.... arabic >= key:
+            w.... arabic >_ key:
                 arabic -= key
                 components.a..(key)
         r.. components

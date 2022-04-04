@@ -20,7 +20,7 @@ c_ Solution:
 
         ___ pos, k __ queue:
             ___ x __ (k - 1, k, k + 1
-                __ x <= 0 o. pos + x n.. __ xs:
+                __ x <_ 0 o. pos + x n.. __ xs:
                     _____
                 __ (pos + x, x) __ visited:
                     _____

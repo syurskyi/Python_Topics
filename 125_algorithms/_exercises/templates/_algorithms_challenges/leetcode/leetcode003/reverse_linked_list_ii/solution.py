@@ -19,7 +19,7 @@ c_ Solution:
             next_node = head.next
             __ i < m:
                 res_end = head
-            ____ i >= m a.. i <= n:
+            ____ i >_ m a.. i <_ n:
                 head.next = rev
                 rev = head
                 __ i __ m:

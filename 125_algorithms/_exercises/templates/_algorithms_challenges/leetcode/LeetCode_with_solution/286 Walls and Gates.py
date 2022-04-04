@@ -21,7 +21,7 @@ c_ Solution(o..
         ___ i, j __ q:  # iterator
             ___ d __ dirs:
                 i1, j1 = i+d[0], j+d[1]
-                __ 0 <= i1 < l..(mat) a.. 0 <= j1 < l..(mat[0]) a.. mat[i1][j1] > mat[i][j]+1:
+                __ 0 <_ i1 < l..(mat) a.. 0 <_ j1 < l..(mat[0]) a.. mat[i1][j1] > mat[i][j]+1:
                     mat[i1][j1] = mat[i][j]+1
                     q.a..((i1, j1
 
@@ -60,7 +60,7 @@ c_ Solution_slow(o..
                 ___ d __ dirs:
                     i_t = i+d[0]
                     j_t = j+d[1]
-                    __ 0 <= i_t < m a.. 0 <= j_t < n a.. rooms[i_t][j_t] != -1 a.. rooms[i_t][j_t] >= level+1:
+                    __ 0 <_ i_t < m a.. 0 <_ j_t < n a.. rooms[i_t][j_t] != -1 a.. rooms[i_t][j_t] >_ level+1:
                         q.a..((i_t, j_t
 
             q = q[l:]
@@ -78,7 +78,7 @@ c_ Solution_slow(o..
             rooms[i][j] = m..(rooms[i][j], level)
             ___ d __ dirs:
                 i_t, j_t = i+d[0], j+d[1]
-                __ 0 <= i_t < m a.. 0 <= j_t < n a.. rooms[i_t][j_t] != -1 a.. rooms[i_t][j_t] >= level+1:
+                __ 0 <_ i_t < m a.. 0 <_ j_t < n a.. rooms[i_t][j_t] != -1 a.. rooms[i_t][j_t] >_ level+1:
                     q.a..((i_t, j_t, level+1
 
 

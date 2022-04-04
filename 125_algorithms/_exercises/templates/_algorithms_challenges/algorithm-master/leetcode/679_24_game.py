@@ -18,7 +18,7 @@ c_ Solution:
         n = l..(nums)
 
         __ n __ 1:
-            r.. abs(nums[0] - 24) < EPS
+            r.. a..(nums[0] - 24) < EPS
 
         ___ i __ r..(n
             ___ j __ r..(n

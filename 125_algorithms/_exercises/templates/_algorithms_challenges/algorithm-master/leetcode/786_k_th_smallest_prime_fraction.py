@@ -32,7 +32,7 @@ c_ Solution:
             _, i, j = heappop(heap)
 
             j -= 1
-            __ j >= 0:
+            __ j >_ 0:
                 heappush(heap, (A[i]/A[j], i, j
 
         _, i, j = heappop(heap)

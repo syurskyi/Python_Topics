@@ -27,7 +27,7 @@ c_ Solution(o..
     ___ isPalindrome  s
         __ n.. s: r.. F..
         start, end = 0, l..(s)-1
-        w.... start<=end:
+        w.... start<_end:
             __ s[start] != s[end]:
                 r.. F..
             start += 1

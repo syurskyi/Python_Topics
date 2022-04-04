@@ -51,7 +51,7 @@ c_ StockSpanner:
 
     ___ next  price: i..) __ i..:
         cur_span = 1
-        w.... stk a.. stk[-1][0] <= price:
+        w.... stk a.. stk[-1][0] <_ price:
             _, span = stk.p.. )
             cur_span += span
         stk.a..((price, cur_span

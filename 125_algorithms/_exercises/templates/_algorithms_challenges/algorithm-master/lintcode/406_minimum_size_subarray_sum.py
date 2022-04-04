@@ -17,11 +17,11 @@ c_ Solution:
                 r += 1
 
             # Terminate iteration if all the children in nums have been added
-            __ r >= n a.. t < s:
+            __ r >_ n a.. t < s:
                 _____
 
             # Keep substracting the prev int from total until total < s
-            w.... l < r a.. t >= s:
+            w.... l < r a.. t >_ s:
                 t -= nums[l]
                 l += 1
 

@@ -21,7 +21,7 @@ c_ Solution(o..
         print('count: %s' % (count
         ___ i __ r..(length, -1, -1
             total += count[i]
-            __ total >= i:
+            __ total >_ i:
                 r.. i
         r.. 0
     

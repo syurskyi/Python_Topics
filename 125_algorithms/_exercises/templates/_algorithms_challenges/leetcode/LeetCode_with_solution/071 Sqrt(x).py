@@ -19,7 +19,7 @@ c_ Solution:
         w... T...
             m_before = m
             m = m - f__(m*m-x)/(2*m)
-            __ abs(m-m_before)<1e-7: _____
+            __ a..(m-m_before)<1e-7: _____
 
         r.. i..(m)
 

@@ -13,7 +13,7 @@ ___ meetup_day(year, month, weekday, schedule
 
 ___ find_teenth(candidates
     ___ date __ candidates:
-        __ date.day >= 13 a.. date.day <= 19:
+        __ date.day >_ 13 a.. date.day <_ 19:
             r.. date
 
 

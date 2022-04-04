@@ -33,7 +33,7 @@ c_ Solution(o..
             r.. "invalid"
     __ queue:
       a = queue.popleft()
-      w.... l..(queue) >= 2:
+      w.... l..(queue) >_ 2:
         ops = queue.popleft()
         b = queue.popleft()
         __ ops __ "+":

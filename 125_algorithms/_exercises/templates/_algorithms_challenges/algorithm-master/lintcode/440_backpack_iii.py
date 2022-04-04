@@ -50,7 +50,7 @@ c_ Solution:
             ___ w __ r..(1, m + 1
                 dp[i][w] = dp[i - 1][w]
 
-                __ w >= A[i - 1]:
+                __ w >_ A[i - 1]:
                     dp[i][w] = m..(
                         dp[i][w],
                         dp[i][w - A[i - 1]] + V[i - 1]

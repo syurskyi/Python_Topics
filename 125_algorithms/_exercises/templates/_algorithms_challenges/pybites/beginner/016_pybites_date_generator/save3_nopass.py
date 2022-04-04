@@ -12,9 +12,9 @@ ___ looping_100days(d__
     """Making cardinal numbers"""
     day = i..(d__.day)
     suffix =  'th', 'st', 'nd', 'rd', 'th' [m..(day % 10, 4)]
-    __ 11 <= (day % 100) <= 13:
+    __ 11 <_ (day % 100) <_ 13:
         suffix = 'th'
-    w.... start_date <= end_date:
+    w.... start_date <_ end_date:
         special_month = i..(start_date.month)
         more_special_month = ca__.month_abbr[special_month]
         print(f"{s..(start_date.day) + suffix} of {more_special_month} {start_date.year}")
@@ -27,7 +27,7 @@ ___ gen_special_pybites_dates(d__
     """Making cardinal numbers"""
     day = i..(d__.day)
     suffix =  'th', 'st', 'nd', 'rd', 'th' [m..(day % 10, 4)]
-    __ 11 <= (day % 100) <= 13:
+    __ 11 <_ (day % 100) <_ 13:
         suffix = 'th'
     """Printing out same date but different years from 2016 to 2020"""
     ___ year __ r..(2016, 2021

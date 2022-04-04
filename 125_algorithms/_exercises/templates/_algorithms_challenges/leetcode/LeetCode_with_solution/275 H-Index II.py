@@ -17,7 +17,7 @@ c_ Solution(o..
         e = n
         w.... s < e:
             m = (s+e)/2
-            __ A[m] >= n-m:
+            __ A[m] >_ n-m:
                 e = m
             ____
                 s = m+1

@@ -29,8 +29,8 @@ c_ Solution:
 
         lo, hi = 0, 1
         mini = ___.maxint
-        w.... hi <= n:
-            __ S[hi]-S[lo] >= s:
+        w.... hi <_ n:
+            __ S[hi]-S[lo] >_ s:
                 mini = m..(mini, hi-lo)
                 lo += 1
             ____

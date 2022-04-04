@@ -44,7 +44,7 @@ c_ Solution:
                 cur.p.. )
 
     ___ dfs2  n, cur, ret
-        __ n > 1 a.. cur a.. l..(cur) >= 1:
+        __ n > 1 a.. cur a.. l..(cur) >_ 1:
             ret.a..(l..(cur)+[n])
 
         start = cur[-1] __ cur ____ 2
@@ -55,7 +55,7 @@ c_ Solution:
                 cur.p.. )
 
     ___ dfs_TLE  n, cur, ret
-        __ n __ 1 a.. cur a.. l..(cur) >= 2:
+        __ n __ 1 a.. cur a.. l..(cur) >_ 2:
             ret.a..(l..(cur
 
         __ cur:

@@ -15,7 +15,7 @@ c_ Solution:
         last_at = l..(A) - 1
 
         ___ i __ r..(last_at, -1, -1
-            __ i + A[i] >= last_at:
+            __ i + A[i] >_ last_at:
                 last_at = i
 
         r.. last_at __ 0
@@ -47,7 +47,7 @@ c_ Solution:
                 backtracking
                 if `j` could be reached
                 """
-                __ dp[j] a.. j + A[j] >= i:
+                __ dp[j] a.. j + A[j] >_ i:
                     """
                     if jump from `j` can reach `i`
                     """

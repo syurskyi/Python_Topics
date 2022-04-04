@@ -14,7 +14,7 @@ c_ TreeNode(o..
 c_ Solution(o..
     ___ inorderSuccessor  root, p
         __ n.. root: r.. N..
-        __ root.val <= p.val:
+        __ root.val <_ p.val:
             r.. inorderSuccessor(root.right, p)
         ____
             left = inorderSuccessor(root.left, p)

@@ -54,7 +54,7 @@ c_ Solution:
                 then pop and output
                 """
                 w.... (stack a.. stack[-1] __ P a..
-                       P[stack[-1]] >= P[char]
+                       P[stack[-1]] >_ P[char]
                     res.a..(stack.pop
                 stack.a..(char)
             ____ char __ '(':

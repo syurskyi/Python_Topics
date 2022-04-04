@@ -41,7 +41,7 @@ c_ Solution:
             _x = x + dx
             _y = y + dy
 
-            w.... 0 <= _x < m a.. 0 <= _y < n a.. maze[_x][_y] __ 0:
+            w.... 0 <_ _x < m a.. 0 <_ _y < n a.. maze[_x][_y] __ 0:
                 _x += dx
                 _y += dy
 

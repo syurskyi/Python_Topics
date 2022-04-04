@@ -36,10 +36,10 @@ c_ NumMatrix:
         __ n.. a..((
             prefix_sum,
             prefix_sum[0],
-            0 <= x1 < l..(prefix_sum),
-            0 <= x2 + 1 < l..(prefix_sum),
-            0 <= y1 < l..(prefix_sum[0]),
-            0 <= y2 + 1 < l..(prefix_sum[0]),
+            0 <_ x1 < l..(prefix_sum),
+            0 <_ x2 + 1 < l..(prefix_sum),
+            0 <_ y1 < l..(prefix_sum[0]),
+            0 <_ y2 + 1 < l..(prefix_sum[0]),
         :
             r.. 0
 

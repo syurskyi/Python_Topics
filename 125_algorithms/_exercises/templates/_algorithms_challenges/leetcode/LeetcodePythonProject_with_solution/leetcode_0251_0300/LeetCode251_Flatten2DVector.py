@@ -20,7 +20,7 @@ c_ Vector2D(o..
         r.. val
     
     ___ hasNext
-        __ row>=l..(values
+        __ row>_l..(values
             r.. F..
         ____ row < l..(values)-1:
             r.. T..

@@ -9,7 +9,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        __ n <= 0: r.. 0
+        __ n <_ 0: r.. 0
         q, x, res = n, 1, 0
         w.... q > 0:
             digit = q%10

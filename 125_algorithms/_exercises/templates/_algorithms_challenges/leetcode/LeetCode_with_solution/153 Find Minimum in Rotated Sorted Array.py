@@ -27,7 +27,7 @@ c_ Solution(o..
         w.... lo < hi:
             mid = (lo+hi)/2
             mini = m..(mini, A[mid])
-            __ A[lo] <= A[mid] <= A[hi-1]:
+            __ A[lo] <_ A[mid] <_ A[hi-1]:
                 r.. m..(mini, A[lo])
             ____ A[lo] > A[mid] < A[hi-1]:
                 hi = mid

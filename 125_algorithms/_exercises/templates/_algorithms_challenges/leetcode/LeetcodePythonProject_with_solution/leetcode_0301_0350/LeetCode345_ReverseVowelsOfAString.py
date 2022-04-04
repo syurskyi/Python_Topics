@@ -13,7 +13,7 @@ c_ Solution(o..
         w.... left < right:
             w.... left < l..(s) a.. s[left] n.. __ vowels:
                 left += 1
-            w.... right >= 0 a.. s[right] n.. __ vowels:
+            w.... right >_ 0 a.. s[right] n.. __ vowels:
                 right -= 1
             __ left < right:
                 s[left], s[right] = s[right], s[left]

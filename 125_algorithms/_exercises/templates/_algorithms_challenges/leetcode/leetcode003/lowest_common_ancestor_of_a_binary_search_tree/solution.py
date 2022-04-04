@@ -36,7 +36,7 @@ c_ Solution(o..
         __ root __ N..
             r.. N..
         ____
-            __ m..(p.val, q.val) <= root.val <= m..(p.val, q.val
+            __ m..(p.val, q.val) <_ root.val <_ m..(p.val, q.val
                 r.. root
             ____ root.val > m..(p.val, q.val
                 r.. lowestCommonAncestor(root.left, p, q)

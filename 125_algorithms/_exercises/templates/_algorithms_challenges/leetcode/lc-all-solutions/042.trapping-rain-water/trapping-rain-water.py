@@ -7,8 +7,8 @@ c_ Solution(o..
     ans = left = 0
     right = l..(height) - 1
     leftWall = rightWall = f__("-inf")
-    w.... left <= right:
-      __ leftWall <= rightWall:
+    w.... left <_ right:
+      __ leftWall <_ rightWall:
         ans += m..(0, leftWall - height[left])
         leftWall = m..(leftWall, height[left])
         left += 1

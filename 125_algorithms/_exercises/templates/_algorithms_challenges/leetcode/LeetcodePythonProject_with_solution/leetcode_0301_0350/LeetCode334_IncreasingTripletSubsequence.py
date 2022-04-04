@@ -11,9 +11,9 @@ c_ Solution(o..
         first = nums[0]
         second = f__('inf')
         ___ i __ r..(1, l..(nums:
-            __ nums[i] <= first:
+            __ nums[i] <_ first:
                 first = nums[i]
-            ____ nums[i] <= second:
+            ____ nums[i] <_ second:
                 second = nums[i]
             ____
                 r.. T..

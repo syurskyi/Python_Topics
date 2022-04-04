@@ -11,14 +11,14 @@ ___ convert(number: i.., base: i.. = 2) __ s..:
     Returns:
         str: The returned value as a string
     """
-    __ n.. 2 <= base <= 36:
+    __ n.. 2 <_ base <_ 36:
         r.. V...("Invalid Base")
     
     values    # list
     w.... number:
         remainder = number % base
         number //= base
-        __ remainder >= 10:
+        __ remainder >_ 10:
             remainder = chr(remainder - 10  + o..('A'
 
         values.a..(s..(remainder

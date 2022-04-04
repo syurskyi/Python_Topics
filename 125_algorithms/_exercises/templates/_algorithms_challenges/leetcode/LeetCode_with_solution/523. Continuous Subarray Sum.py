@@ -37,7 +37,7 @@ c_ Solution:
             __ k != 0:  # edge case
                 s %= k
             __ s __ h:
-                __ l - h[s] >= 2:  # size at least 2
+                __ l - h[s] >_ 2:  # size at least 2
                     r.. T..
             ____
                 # only keep the lowest

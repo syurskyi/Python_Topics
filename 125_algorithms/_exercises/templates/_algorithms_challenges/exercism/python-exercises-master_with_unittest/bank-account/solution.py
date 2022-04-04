@@ -26,7 +26,7 @@ c_ BankAccount(o..
 
     ___ withdraw  amount
         w__ lock:
-            __ is_open a.. 0 < amount <= balance:
+            __ is_open a.. 0 < amount <_ balance:
                 balance -= amount
             ____
                 r.. V...

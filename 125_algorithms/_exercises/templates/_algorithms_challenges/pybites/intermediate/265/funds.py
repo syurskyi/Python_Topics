@@ -13,7 +13,7 @@ ___ max_fund(village
 
     ___ i,value __ e..(village
         value = village[i]
-        __ value >= current_sum + value:
+        __ value >_ current_sum + value:
             current_start= current_end = i
             current_sum = value
         ____

@@ -13,7 +13,7 @@ c_ Solution(o..
         res    # list
         ___ i __ r..(l..(temperatures)-1, -1, -1
             t = temperatures[i]
-            w.... stack a.. temperatures[stack[-1]] <= t:
+            w.... stack a.. temperatures[stack[-1]] <_ t:
                 stack.p.. )
             __ n.. stack:
                 res.insert(0, 0)

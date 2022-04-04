@@ -43,7 +43,7 @@ c_ Solution:
             ret.a..(l..(cur
             r..
             
-        __ cur_sum > target o. i >= l..(candidates
+        __ cur_sum > target o. i >_ l..(candidates
             r..
 
         # not choose A_i

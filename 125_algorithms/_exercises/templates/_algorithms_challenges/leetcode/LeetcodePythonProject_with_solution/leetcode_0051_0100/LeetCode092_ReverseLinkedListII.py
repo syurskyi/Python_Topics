@@ -18,7 +18,7 @@ c_ Solution(o..
         :type n: int
         :rtype: ListNode
         """
-        __ m >= n o. n.. head:
+        __ m >_ n o. n.. head:
             r.. head
         dummy = ListNode(-1)
         dummy.next = head

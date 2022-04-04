@@ -24,7 +24,7 @@ c_ Solution(o..
             r = n - 1
             w.... l < r:
                 s = nums[i] + nums[l] + nums[r]
-                __ abs(s - target) < abs(res - target
+                __ a..(s - target) < a..(res - target
                     res = s
                 __ s __ target:
                     r.. s

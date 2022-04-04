@@ -143,7 +143,7 @@ c_ Solution:
                 _x = x + dx
                 _y = y + dy
 
-                __ n.. (0 <= _x < m a.. 0 <= _y < n
+                __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                     _____
                 __ (_x, _y) __ visited:
                     _____
@@ -157,7 +157,7 @@ c_ Solution:
         step = 0
 
         ___ _x, _y __ houses:
-            step += abs(_x - x) + abs(_y - y)
+            step += a..(_x - x) + a..(_y - y)
 
         r.. step
 
@@ -217,7 +217,7 @@ c_ Solution:
                     _x = x + dx
                     _y = y + dy
 
-                    __ n.. (0 <= _x < m a.. 0 <= _y < n
+                    __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                         _____
                     __ (_x, _y) __ visited:
                         _____

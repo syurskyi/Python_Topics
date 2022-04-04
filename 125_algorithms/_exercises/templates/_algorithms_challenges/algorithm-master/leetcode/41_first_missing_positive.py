@@ -11,7 +11,7 @@ c_ Solution:
         """
         left, right = 0, l..(A) - 1
 
-        w.... left <= right:
+        w.... left <_ right:
             """
             for `A[left]`, the index it should be at is `A[left] - 1`
             1. if it is already at `i` => pass

@@ -41,7 +41,7 @@ c_ Solution(o..
         ___ i __ x..(1, amount+1
             __ F[i] != ___.maxint:
                 ___ k __ coins:
-                    __ i+k <= amount:
+                    __ i+k <_ amount:
                         F[i+k] = m..(F[i+k], F[i]+1)
 
         r.. F[amount] __ F[amount] != ___.maxint ____ -1

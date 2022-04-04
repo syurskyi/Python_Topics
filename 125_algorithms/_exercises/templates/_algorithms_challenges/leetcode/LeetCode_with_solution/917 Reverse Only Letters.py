@@ -33,10 +33,10 @@ c_ Solution:
         w... T...
             w.... i < n a.. n.. lst[i].isalpha
                 i += 1
-            w.... j >= 0 a.. n.. lst[j].isalpha
+            w.... j >_ 0 a.. n.. lst[j].isalpha
                 j -= 1
 
-            __ i < j a.. i < n a.. j >= 0:
+            __ i < j a.. i < n a.. j >_ 0:
                 lst[i], lst[j] = lst[j], lst[i]
                 i += 1
                 j -= 1

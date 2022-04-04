@@ -30,7 +30,7 @@ ___ get_movies_by_director
     result = d..()
     ___ r __ films:
         yr = i..(r 'year' , 10) __ r 'year'  ____ 0
-        __ yr >= MIN_YEAR:
+        __ yr >_ MIN_YEAR:
             score = f__(r 'score' ) __ r 'score'  ____ 0.0
             movie = Movie(r 'title' , yr, score)
             __ r 'director'  __ result:
@@ -51,5 +51,5 @@ ___ get_average_scores(directors: d..
        return a list of tuples (director, average_score) ordered by highest
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
-    r.. s..([(d, calc_mean_score(directors[d] ___ d __ directors.k.. __ l..(directors[d]) >= MIN_MOVIES],
+    r.. s..([(d, calc_mean_score(directors[d] ___ d __ directors.k.. __ l..(directors[d]) >_ MIN_MOVIES],
                   key=l.... x: -x[1])

@@ -21,7 +21,7 @@ c_ Solution(o..
         ___ i __ r..(1, 4
             ___ j __ r..(k-1, n
                 tmpMax = accu[j] __ j-k<0 ____ accu[j]-accu[j-k]+dp[i-1][j-k]
-                __ j >= k:
+                __ j >_ k:
                     dp[i][j] = dp[i][j-1]
                     ids[i][j] = ids[i][j-1]
                 __ j > 0 a.. tmpMax > dp[i][j-1]:

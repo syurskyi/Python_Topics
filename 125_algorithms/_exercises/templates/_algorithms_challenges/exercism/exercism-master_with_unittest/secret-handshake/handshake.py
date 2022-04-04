@@ -44,11 +44,11 @@ c_ Handshake:
             r.. valid_string(inp)
 
     ___ valid_handshake  handshake
-        r.. s..(handshake) <= s..(EVENTS)
+        r.. s..(handshake) <_ s..(EVENTS)
 
     $
     ___ valid_integer(integer
-        r.. integer >= 0
+        r.. integer >_ 0
 
     $
     ___ valid_string(s__

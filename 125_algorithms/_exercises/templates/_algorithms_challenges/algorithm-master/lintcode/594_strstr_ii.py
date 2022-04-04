@@ -72,7 +72,7 @@ c_ Solution:
             """
             kick out `S[i - n]`
             """
-            __ i >= n:
+            __ i >_ n:
                 _code = (_code - (o..(S[i - n]) - A) * p) % MOD
 
             __ _code < 0:

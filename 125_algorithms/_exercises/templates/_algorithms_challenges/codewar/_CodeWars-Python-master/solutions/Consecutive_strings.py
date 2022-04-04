@@ -13,7 +13,7 @@ n being the length of the string array, if n = 0 or k > n or k <= 0 return "".
 
 ___ longest_consec(strarr, k
     n = l..(strarr)
-    __ n __ 0 o. k > n o. k <= 0:
+    __ n __ 0 o. k > n o. k <_ 0:
         r.. ''
 
     longest = index = 0

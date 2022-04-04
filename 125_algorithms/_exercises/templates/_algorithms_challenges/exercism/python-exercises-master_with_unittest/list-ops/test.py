@@ -21,7 +21,7 @@ c_ ListOpsTest(unittest.TestCase
 
     ___ test_map_absolute
         assertEqual(
-            list_ops.map_clone(l.... x: abs(x),
+            list_ops.map_clone(l.... x: a..(x),
                                [-1, 2, -3, 4, -5, 6, -7, 8, -9, 10]),
             [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 

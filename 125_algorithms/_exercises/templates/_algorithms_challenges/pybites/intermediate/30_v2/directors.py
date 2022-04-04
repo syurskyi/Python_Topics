@@ -27,7 +27,7 @@ ___ get_movies_by_director
     data = pd.read_csv(local)
     
 
-    data = data[data.title_year >= 1960]
+    data = data[data.title_year >_ 1960]
     result = d..(l..)
 
 
@@ -70,7 +70,7 @@ ___ get_average_scores(directors
     result    # list
 
     ___ director,movies __ directors.i..:
-        __ l..(movies) >= MIN_MOVIES:
+        __ l..(movies) >_ MIN_MOVIES:
             mean_score = calc_mean_score(movies)
             result.a..((director,mean_score
     

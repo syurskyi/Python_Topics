@@ -34,7 +34,7 @@ c_ Solution(o..
         w.... i < l..(s
             __ s[i].i..
                 sig = 1
-                __ i>=1 a.. s[i-1] __ '-':
+                __ i>_1 a.. s[i-1] __ '-':
                     sig = -1
                 num = 0
                 w.... i < l..(s) a.. s[i].i..

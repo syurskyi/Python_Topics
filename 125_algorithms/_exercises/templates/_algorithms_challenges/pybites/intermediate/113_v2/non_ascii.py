@@ -4,7 +4,7 @@ ___ extract_non_ascii_words(text
     ___ word __ text.s..(" "
         word_split = l..(word)
         ___ letter __ word_split:
-            __ o..(letter) >= 128:
+            __ o..(letter) >_ 128:
                 na_words.a..(word)
                 _____
     r.. na_words

@@ -18,7 +18,7 @@ c_ Solution(o..
         dp[1] = 1
         ___ i __ r..(n+1
             ___ j __ r..(maxVal
-                __ j*j<=i:
+                __ j*j<_i:
                     dp[i] = m..(dp[i], dp[i-j*j]+1)
         r.. dp[-1]
     

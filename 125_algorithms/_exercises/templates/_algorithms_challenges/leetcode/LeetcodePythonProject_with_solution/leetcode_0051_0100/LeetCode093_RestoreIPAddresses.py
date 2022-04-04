@@ -17,7 +17,7 @@ c_ Solution(o..
     ___ helper  res, curr, s, ind
         __ ind __ l..(s) a.. l..(curr) __ 4:
             res.a..('.'.j..(curr
-        __ ind >= l..(s
+        __ ind >_ l..(s
             r..
         ___ i __ r..(ind+1, ind+4
             sub = s[ind:i]

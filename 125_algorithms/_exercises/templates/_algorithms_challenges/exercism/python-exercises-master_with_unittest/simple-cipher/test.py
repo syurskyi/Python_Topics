@@ -62,7 +62,7 @@ c_ CipherTest(unittest.TestCase
     ___ test_cipher_random_key
         c = Cipher()
         assertTrue(
-            l..(c.key) >= 100,
+            l..(c.key) >_ 100,
             'A random key must be generated when no key is given!')
         assertTrue(c.key.islower() a.. c.key.i..,
                         'All items in the key must be chars and lowercase!')

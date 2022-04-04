@@ -22,7 +22,7 @@ c_ Solution(o..
         __ n.. root o. l > r:
             r.. N..
         val = root.val
-        __ l <= val <= r:
+        __ l <_ val <_ r:
             newRoot = TreeNode(val)
             newRoot.left = trimBST(root, l, val-1)
             newRoot.right = trimBST(root, val+1, r)

@@ -29,7 +29,7 @@ c_ BinarySearchTree(o..
             insert_node_at(new_node, head)
 
     ___ insert_node_at  new_node, position
-        __ new_node.data <= position.data:
+        __ new_node.data <_ position.data:
             __ position.left __ N..
                 position.left = new_node
             ____

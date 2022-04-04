@@ -28,7 +28,7 @@ c_ Solution(o..
                 sortedlist = [0]
                 ___ c __ r..(n
                     area = areas[r2][c]
-                    __ r1-1>=0:
+                    __ r1-1>_0:
                         area -= areas[r2][c]
                     ind = bisect.bisect_left(sortedlist, area-k)
                     __ ind < l..(sortedlist

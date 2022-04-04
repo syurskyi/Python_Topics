@@ -16,11 +16,11 @@ c_ Solution(o..
       r.. F..
     ___ i, num __ e..(nums
       idx = bisect.bisect_left(bst, num)
-      __ idx < l..(bst) a.. abs(bst[idx] - num) <= t:
+      __ idx < l..(bst) a.. a..(bst[idx] - num) <_ t:
         r.. T..
-      __ idx > 0 a.. abs(bst[idx - 1] - num) <= t:
+      __ idx > 0 a.. a..(bst[idx - 1] - num) <_ t:
         r.. T..
-      __ l..(bst) >= k:
+      __ l..(bst) >_ k:
         del bst[bisect.bisect_left(bst, nums[i - k])]
       bisect.insort(bst, num)
     r.. F..

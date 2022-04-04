@@ -35,7 +35,7 @@ ___ years_gold_value_decreased(gold_prices: s.. = gold_prices
       previous_year_price = price_delta[year -1]
       current_year_price = price_delta[year]
    
-      delta = abs(current_year_price - previous_year_price)
+      delta = a..(current_year_price - previous_year_price)
       __ current_year_price < previous_year_price:
          # Decrease
          __ delta > decrease_largest:

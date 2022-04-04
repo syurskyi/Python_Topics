@@ -13,7 +13,7 @@ c_ Solution:
         ___ i __ r..(1, n + 1
             ___ j __ r..(m + 1
                 dp[i][j] = dp[i - 1][j]
-                __ (j >= A[i - 1]
+                __ (j >_ A[i - 1]
                     a.. dp[i - 1][j - A[i - 1]]
                     dp[i][j] = T..
 

@@ -27,7 +27,7 @@ c_ Solution(o..
                 j += 1
                 _____
             need = 3-(j-i)
-            __ h[o..(s[i])-o..('A')] >= need:
+            __ h[o..(s[i])-o..('A')] >_ need:
                 h[o..(s[i])-o..('A')] -= need
                 res = m..(res, need+helper(s[:i]+s[j:], h
                 h[o..(s[i])-o..('A')] += need
@@ -41,7 +41,7 @@ c_ Solution(o..
             __ board[j] __ board[i]:
                 j += 1
                 _____
-            __ j-i >= 3:
+            __ j-i >_ 3:
                 r.. removeConsecutive(board[:i]+board[j:])
             ____
                 i = j

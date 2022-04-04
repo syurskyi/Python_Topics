@@ -34,7 +34,7 @@ c_ Solution:
                     ___ dr, dc __ dirs:
                         r = r0 + dr
                         c = c0 + dc
-                        __ r < 0 o. r >= R o. c < 0 o. c >= C:
+                        __ r < 0 o. r >_ R o. c < 0 o. c >_ C:
                             ret += 1
                         ____ grid[r][c] __ 0:
                             ret += 1

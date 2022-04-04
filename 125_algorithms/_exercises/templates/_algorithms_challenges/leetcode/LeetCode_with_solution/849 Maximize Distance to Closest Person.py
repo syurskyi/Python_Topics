@@ -47,7 +47,7 @@ c_ Solution:
         ___ i __ r..(n
             __ seats[i] __ 1:
                 L[i] = 0
-            ____ i - 1 >= 0:
+            ____ i - 1 >_ 0:
                 L[i] = L[i-1] + 1
         ___ i __ r..(n-1, -1 , -1
             __ seats[i] __ 1:
@@ -73,13 +73,13 @@ c_ Solution:
         n = l..(seats)
         # two ends
         ___ i, j __ z..((0, n-1), (0, -1:
-            dist = abs(i - idxes[j])
+            dist = a..(i - idxes[j])
             __ dist > ret[0]:
                 ret = [dist, i]
 
         ___ j __ r..(l..(idxes) - 1
             i = (idxes[j] + idxes[j+1]) // 2
-            dist = m..(abs(i - idxes[j]), abs(i - idxes[j+1]
+            dist = m..(a..(i - idxes[j]), a..(i - idxes[j+1]
             __ dist > ret[0]:
                 ret = [dist, i]
 

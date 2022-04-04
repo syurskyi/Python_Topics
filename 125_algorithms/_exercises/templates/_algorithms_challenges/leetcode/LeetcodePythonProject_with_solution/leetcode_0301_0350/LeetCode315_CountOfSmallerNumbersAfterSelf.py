@@ -27,7 +27,7 @@ c_ Solution(o..
         r.. result, root
     
     ___ getVal  root, val, num
-        __ root.val >= val:
+        __ root.val >_ val:
             root.num += 1
             __ n.. root.left:
                 root.left = TreeNode(val)

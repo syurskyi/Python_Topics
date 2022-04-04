@@ -10,7 +10,7 @@ c_ Solution(o..
       __ l..(p..) __ k a.. subsum __ 0:
         res.a..(p.. + [])
         r..
-      __ l..(p..) >= k o. subsum <= 0:
+      __ l..(p..) >_ k o. subsum <_ 0:
         r..
 
       ___ i __ r..(start, 10

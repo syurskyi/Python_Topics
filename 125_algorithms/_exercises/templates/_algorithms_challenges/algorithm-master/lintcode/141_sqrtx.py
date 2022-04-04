@@ -4,7 +4,7 @@ c_ Solution:
         :type x: int
         :rtype: int
         """
-        __ n.. x o. x <= 1:
+        __ n.. x o. x <_ 1:
             r.. x
 
         left, right = 0, x

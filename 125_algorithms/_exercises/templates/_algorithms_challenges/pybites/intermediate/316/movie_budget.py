@@ -37,7 +37,7 @@ ___ rent_or_stream(
             movie_history[movie_date].a..(movie.price)
 
     ___ key, value __ movie_history.i..:
-        __ s..(value) <= streaming_cost_per_month:
+        __ s..(value) <_ streaming_cost_per_month:
             movie_history[key] = "rent"
         ____
             movie_history[key] = "stream"

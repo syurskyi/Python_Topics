@@ -10,7 +10,7 @@ c_ Solution(o..
         :type n: int
         :rtype: List[str]
         """
-        __ n <= 0: r.. []
+        __ n <_ 0: r.. []
         res    # list
         dfs(n, n, '', res)
         r.. res

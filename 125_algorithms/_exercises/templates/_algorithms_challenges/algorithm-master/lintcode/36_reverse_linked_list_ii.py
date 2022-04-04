@@ -38,7 +38,7 @@ c_ Solution:
         """
         B = cur = A.next
         pre = nxt = N..
-        w.... n >= 0:
+        w.... n >_ 0:
             n -= 1
             nxt = B.next
             B.next = pre

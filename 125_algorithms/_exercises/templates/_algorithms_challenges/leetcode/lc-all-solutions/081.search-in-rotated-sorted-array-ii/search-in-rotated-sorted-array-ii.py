@@ -11,12 +11,12 @@ c_ Solution(o..
       __ nums[mid] __ target:
         r.. T..
       __ nums[start] < nums[mid]:
-        __ nums[start] <= target <= nums[mid]:
+        __ nums[start] <_ target <_ nums[mid]:
           end = mid
         ____
           start = mid
       ____ nums[start] > nums[mid]:
-        __ nums[mid] <= target <= nums[end]:
+        __ nums[mid] <_ target <_ nums[end]:
           start = mid
         ____
           end = mid

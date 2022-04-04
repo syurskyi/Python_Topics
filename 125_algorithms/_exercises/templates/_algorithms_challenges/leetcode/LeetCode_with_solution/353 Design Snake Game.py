@@ -49,7 +49,7 @@ c_ SnakeGame(o..
             eat += 1
         ____
             body.p.. )
-            __ (x, y) __ body o. n.. (0 <= x < h a.. 0 <= y < w
+            __ (x, y) __ body o. n.. (0 <_ x < h a.. 0 <_ y < w
                 # possible to use set to accelerate check
                 r.. -1
 

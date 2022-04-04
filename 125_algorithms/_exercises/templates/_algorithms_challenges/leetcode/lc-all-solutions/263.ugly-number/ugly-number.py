@@ -4,7 +4,7 @@ c_ Solution(o..
     :type num: int
     :rtype: bool
     """
-    __ n <= 0:
+    __ n <_ 0:
       r.. F..
     w.... n % 2 __ 0 o. n % 3 __ 0 o. n % 5 __ 0:
       __ n % 2 __ 0:

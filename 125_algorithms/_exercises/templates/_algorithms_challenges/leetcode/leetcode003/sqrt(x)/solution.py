@@ -4,7 +4,7 @@ c_ Solution:
     ___ sqrt  x
         left = 0
         right = x
-        w.... left <= right:
+        w.... left <_ right:
             mid = left + (right - left) / 2
             square = mid * mid
             __ square __ x:

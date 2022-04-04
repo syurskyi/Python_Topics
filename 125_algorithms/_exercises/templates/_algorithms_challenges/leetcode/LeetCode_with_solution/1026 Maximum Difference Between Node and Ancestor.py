@@ -52,8 +52,8 @@ c_ Solution:
         mini = m..(lmin, rmin)
         maxa = m..(lmax, rmax)
         __ mini != f__("inf"
-            ret = m..(ret, abs(mini - node.val
+            ret = m..(ret, a..(mini - node.val
         __ maxa != -f__("inf"
-            ret = m..(ret, abs(maxa - node.val
+            ret = m..(ret, a..(maxa - node.val
 
         r.. m..(mini, node.val), m..(maxa, node.val)

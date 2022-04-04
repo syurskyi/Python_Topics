@@ -20,7 +20,7 @@ ___ calculate_score(scores
       __ score n.. __ DICE_VALUES:
         r.. V...
     
-    total_score = s..([score ___ score __ scores __ score >= MIN_SCORE])
+    total_score = s..([score ___ score __ scores __ score >_ MIN_SCORE])
     r.. total_score
 
 

@@ -48,7 +48,7 @@ c_ TopVotedCandidate:
         tp = s..(z..(times, persons
         ___ t, p __ tp:
             counter[p] += 1
-            __ n.. maxes o. counter[maxes[-1][1]] <= counter[p]:
+            __ n.. maxes o. counter[maxes[-1][1]] <_ counter[p]:
                 maxes.a..((t, p
 
     ___ q  t: i..) __ i..:

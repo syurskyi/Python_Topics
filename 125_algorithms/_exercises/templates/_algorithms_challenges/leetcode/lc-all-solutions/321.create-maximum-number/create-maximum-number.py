@@ -36,7 +36,7 @@ c_ Solution(o..
 
     ans    # list
     ___ i __ r..(0, k + 1
-      __ i <= l..(_nums1) a.. k - i <= l..(_nums2
+      __ i <_ l..(_nums1) a.. k - i <_ l..(_nums2
         n1 = getKDigits(_nums1, i)
         n2 = getKDigits(_nums2, k - i)
         __ i __ 2:

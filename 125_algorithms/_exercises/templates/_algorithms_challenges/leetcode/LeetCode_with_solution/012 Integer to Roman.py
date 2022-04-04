@@ -38,7 +38,7 @@ c_ Solution:
 
         # starting from the largest
         ___ component __ r..(components  # reversed
-            w.... num >= component:
+            w.... num >_ component:
                 string_builder.a..(int2roman[component])
                 num -= component
 

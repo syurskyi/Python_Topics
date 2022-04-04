@@ -11,7 +11,7 @@ ___ just_right_of(x, y
 
 
 ___ next_to(x, y
-    r.. abs(x - y) __ 1
+    r.. a..(x - y) __ 1
 
 
 ___ solution

@@ -6,7 +6,7 @@ http://www.codewars.com/kata/53d40c1e2f13e331fc000c26/train/python
 
 ___ fib(n
     """Calculates the nth Fibonacci number"""
-    __ n >= 0:
+    __ n >_ 0:
         r.. fibiter(1, 0, 0, 1, n)
     __ n < 0:
         a, b = 0, 1

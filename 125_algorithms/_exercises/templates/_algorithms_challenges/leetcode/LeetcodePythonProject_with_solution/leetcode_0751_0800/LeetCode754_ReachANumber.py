@@ -9,7 +9,7 @@ c_ Solution(o..
         :type target: int
         :rtype: int
         """
-        target = abs(target)
+        target = a..(target)
         step = 0
         sumVal = 0
         w.... sumVal < target:

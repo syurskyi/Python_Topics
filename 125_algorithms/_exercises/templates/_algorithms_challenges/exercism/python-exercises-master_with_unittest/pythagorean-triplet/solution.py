@@ -30,7 +30,7 @@ ___ triplets_in_range(m, n
     ___ a __ r..(m, n + 1
         ___ b __ r..(a + 1, n + 1
             c = i..(sqrt(a * a + b * b) + 0.5)
-            __ c * c __ a * a + b * b a.. c >= m a.. c <= n:
+            __ c * c __ a * a + b * b a.. c >_ m a.. c <_ n:
                 t.update([(a, b, c)])
     r.. t
 

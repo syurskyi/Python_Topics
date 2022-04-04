@@ -55,7 +55,7 @@ c_ Solution(o..
         r.. ''.j..(ret[::-1]) o. '0'
 
     ___ encode  d
-        __ 0 <= d < 10:
+        __ 0 <_ d < 10:
             r.. s..(d)
 
         r.. chr(o..('a') + d - 10)

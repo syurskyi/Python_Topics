@@ -30,7 +30,7 @@ c_ Solution:
             __ n.. num:
                 _____
 
-            w.... num >= amount:  # num - amount >= 0
+            w.... num >_ amount:  # num - amount >= 0
                 num -= amount
                 ans.a..(symb)
 

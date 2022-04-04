@@ -92,7 +92,7 @@ c_ Solution:
             ___ di, dj __ dirs:
                 I = i + di
                 J = j + dj
-                __ 0 <= I < m a.. 0 <= J < n:
+                __ 0 <_ I < m a.. 0 <_ J < n:
                     B = d..(board)   # need a copy in the queue
                     B[I][J], B[i][j] = B[i][j], B[I][J]
                     __ n.. visited[ser(B)]:
@@ -115,7 +115,7 @@ c_ Solution:
             ___ j, v __ e..(row
                 __ v != 0:
                     I, J = final_pos[v]
-                    ret += abs(i - I) + abs(j - J)
+                    ret += a..(i - I) + a..(j - J)
         r.. ret
 
     ___ ser  board

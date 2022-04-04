@@ -30,7 +30,7 @@ c_ Solution(o..
                 res.a..(stack2.pop
             ____ n.. stack2:
                 res.a..(stack1.pop
-            ____ abs(stack1[-1]-target) <= abs(stack2[-1]-target
+            ____ a..(stack1[-1]-target) <_ a..(stack2[-1]-target
                 res.a..(stack1.pop
             ____
                 res.a..(stack2.pop
@@ -46,7 +46,7 @@ c_ Solution(o..
     ___ inOrderRev  root, target, stack
         __ n.. root: r..
         inOrderRev(root.right, target, stack)
-        __ root.val <= target: r..
+        __ root.val <_ target: r..
         stack.a..(root.val)
         inOrderRev(root.left, target, stack)
     

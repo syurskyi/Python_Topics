@@ -24,15 +24,15 @@ c_ Solution:
             r.. MAX_INT
 
         # handle signs
-        sign = 1 __ dividend >= 0 a.. divisor >= 0 o. dividend < 0 a.. divisor < 0 ____ -1
-        dividend = abs(dividend)
-        divisor = abs(divisor)
+        sign = 1 __ dividend >_ 0 a.. divisor >_ 0 o. dividend < 0 a.. divisor < 0 ____ -1
+        dividend = a..(dividend)
+        divisor = a..(divisor)
 
         result = 0
-        w.... dividend >= divisor:
+        w.... dividend >_ divisor:
             current_result = 1
             current = divisor  # write inner loop first
-            w.... current <= dividend:
+            w.... current <_ dividend:
                 current <<= 1
                 current_result <<= 1
 

@@ -56,7 +56,7 @@ c_ Solution:
         ___ i __ r..(n
             j = i  # not i + 1
             k = n - 1
-            w.... j <= k:  # not <
+            w.... j <_ k:  # not <
                 a, b, c = keys[i], keys[j], keys[k]
                 __ b + c < target - a:
                     j += 1
@@ -105,7 +105,7 @@ c_ Solution:
                         l_cnt += 1
 
                     r_cnt = 1
-                    w.... k - r_cnt >= 0 a.. A[k - r_cnt] __ A[k]:
+                    w.... k - r_cnt >_ 0 a.. A[k - r_cnt] __ A[k]:
                         r_cnt += 1
 
                     __ A[j] != A[k]:
@@ -136,7 +136,7 @@ c_ Solution:
                 ___ k __ r..(1, 3 + 1
                     # choose A[i-1] or not
                     F[i][t][k] = F[i-1][t][k] % MOD
-                    __ t - A[i-1] >= 0:
+                    __ t - A[i-1] >_ 0:
                         F[i][t][k] += F[i-1][t-A[i-1]][k-1] % MOD
 
         print(F[n][target][3])

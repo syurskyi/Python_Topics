@@ -40,13 +40,13 @@ c_ Solution(o..
         :rtype: int
         """
         F = [0 ___ _ __ x..(target + 1)]
-        nums = f.. l.... x: x <= target, nums)
+        nums = f.. l.... x: x <_ target, nums)
         ___ k __ nums:
             F[k] = 1
 
         ___ i __ x..(target + 1
             ___ k __ nums:
-                __ i - k >= 0:
+                __ i - k >_ 0:
                     F[i] += F[i-k]
 
         r.. F[target]

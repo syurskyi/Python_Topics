@@ -28,7 +28,7 @@ c_ Solution:
 
         result = [[-1 ___ _ __ x..(n)] ___ _ __ x..(n)]
         num = 1
-        w.... left <= right a.. top <= bottom:
+        w.... left <_ right a.. top <_ bottom:
             ___ i __ x..(left, right + 1  # tuning ending condition, be greedy
                 result[top][i] = num
                 num += 1
@@ -65,7 +65,7 @@ c_ SolutionError:
 
         result = [[-1 ___ _ __ x..(n)] ___ _ __ x..(n)]
         num = 1
-        w.... left <= right a.. top <= bottom:
+        w.... left <_ right a.. top <_ bottom:
             ___ i __ x..(left, right  # tuning ending condition, this will fail in the middle
                 result[top][i] = num
                 num += 1

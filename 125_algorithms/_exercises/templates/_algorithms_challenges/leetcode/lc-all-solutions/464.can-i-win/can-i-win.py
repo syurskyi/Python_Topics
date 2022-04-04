@@ -9,9 +9,9 @@ c_ Solution(o..
     ___ helper(pool, target, visited
       __ pool __ visited:
         r.. visited[pool]
-      __ target <= 0:
+      __ target <_ 0:
         r.. F..
-      __ pool >= maxPool:
+      __ pool >_ maxPool:
         r.. T..
 
       mask = 0x01

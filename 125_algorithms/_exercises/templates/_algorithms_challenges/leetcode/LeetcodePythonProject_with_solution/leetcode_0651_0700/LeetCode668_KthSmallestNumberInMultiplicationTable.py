@@ -15,7 +15,7 @@ c_ Solution(o..
         w.... low < high:
             mid = (low+high)//2
             c = c.. mid, m, n)
-            __ c >= k:
+            __ c >_ k:
                 high = mid
             ____
                 low = mid+1

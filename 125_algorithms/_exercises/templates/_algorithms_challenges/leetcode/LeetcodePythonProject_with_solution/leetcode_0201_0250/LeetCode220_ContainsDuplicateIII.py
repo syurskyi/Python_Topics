@@ -18,11 +18,11 @@ c_ Solution(o..
             m = num//w
             __ m __ hashmap:
                 r.. T..
-            __ m+1 __ hashmap a.. abs(hashmap[m+1]-num) < w:
+            __ m+1 __ hashmap a.. a..(hashmap[m+1]-num) < w:
                 r.. T..
-            __ m-1 __ hashmap a.. abs(hashmap[m-1]-num) < w:
+            __ m-1 __ hashmap a.. a..(hashmap[m-1]-num) < w:
                 r.. T..
             hashmap[m] = num
-            __ i>=k:
+            __ i>_k:
                 del hashmap[nums[i-k]//w]
         r.. F..

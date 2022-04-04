@@ -56,7 +56,7 @@ c_ Solution:
         ___ di, dj __ dirs:
             I = i + di
             J = j + dj
-            __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J] a.. grid[I][J] __ 1:
+            __ 0 <_ I < m a.. 0 <_ J < n a.. n.. visited[I][J] a.. grid[I][J] __ 1:
                 ret += dfs(grid, I, J, visited)
 
         r.. ret

@@ -14,7 +14,7 @@ c_ Solution(o..
         d    # dict
         ___ i, e __ e..(nums
             __ e __ d:
-                __ i - d[e] <= k:
+                __ i - d[e] <_ k:
                     r.. T..
             d[e] = i
         r.. F..

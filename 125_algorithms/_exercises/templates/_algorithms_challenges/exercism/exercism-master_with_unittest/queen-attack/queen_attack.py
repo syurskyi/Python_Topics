@@ -25,8 +25,8 @@ c_ Board:
         r.. white_coords[1] __ black_coords[1]
 
     ___ same_diag
-        r.. (abs(white_coords[0] - black_coords[0]) __
-                abs(white_coords[1] - black_coords[1]
+        r.. (a..(white_coords[0] - black_coords[0]) __
+                a..(white_coords[1] - black_coords[1]
 
     ___ valid_coords
         r.. (different_coords() a..
@@ -38,7 +38,7 @@ c_ Board:
 
     $
     ___ valid_coord(coord
-        r.. (0 <= coord[0] <= 7 a.. 0 <= coord[1] <= 7)
+        r.. (0 <_ coord[0] <_ 7 a.. 0 <_ coord[1] <_ 7)
 
     $
     ___ place_piece(board, piece, coords

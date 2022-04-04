@@ -27,7 +27,7 @@ c_ Solution:
             ans.a..(p.. | )
             r..
 
-        __ l..(p..) >= n:
+        __ l..(p..) >_ n:
             r..
 
         ___ i __ r..(l..(words:

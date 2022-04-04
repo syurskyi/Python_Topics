@@ -17,7 +17,7 @@ c_ Solution(o..
       temp = [1] + [0] * k
       ___ j __ r..(k + 1
         temp[j] = (temp[j - 1] + dp[j]) % MOD
-        __ j - i >= 0:
+        __ j - i >_ 0:
           temp[j] = (temp[j] - dp[j - i]) % MOD
       dp = temp
     r.. dp[k]

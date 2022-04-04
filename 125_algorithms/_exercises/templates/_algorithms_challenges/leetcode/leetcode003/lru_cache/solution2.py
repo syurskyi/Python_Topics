@@ -42,7 +42,7 @@ c_ LRUCache(o..
             node.value = value
             times.touch(node)
         ____
-            __ times.size >= capacity:
+            __ times.size >_ capacity:
                 tail_node = times.tail
                 times.remove(tail_node)
                 del cache[tail_node.key]

@@ -6,9 +6,9 @@ c_ Solution(o..
     """
     a = b = f__("inf")
     ___ num __ nums:
-      __ num <= a:
+      __ num <_ a:
         a = num
-      ____ num <= b:
+      ____ num <_ b:
         b = num
       ____
         r.. T..

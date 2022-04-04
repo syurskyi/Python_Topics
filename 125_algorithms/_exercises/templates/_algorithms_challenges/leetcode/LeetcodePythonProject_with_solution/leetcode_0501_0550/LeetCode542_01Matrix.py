@@ -21,7 +21,7 @@ c_ Solution(o..
         w.... queue:
             i, j, d = queue.p.. 0)
             ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1
-                __ 0 <= x < m a.. 0 <= y < n a.. distance[x][y] > d+1:
+                __ 0 <_ x < m a.. 0 <_ y < n a.. distance[x][y] > d+1:
                     distance[x][y] = d+1
                     queue.a..((x, y, d+1
         r.. distance

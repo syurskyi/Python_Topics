@@ -11,7 +11,7 @@ c_ Solution(o..
       d[c] = d.g.. c, 0) + 1
 
     ___ key __ d:
-      __ d[key] >= 2:
+      __ d[key] >_ 2:
         count = d[key]
         left = d[key] % 2
         d[key] = left

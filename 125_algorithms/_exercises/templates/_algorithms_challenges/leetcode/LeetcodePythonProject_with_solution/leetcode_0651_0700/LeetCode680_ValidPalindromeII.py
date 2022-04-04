@@ -15,21 +15,21 @@ c_ Solution(o..
         w.... i < j a.. s[i] __ s[j]:
             i += 1
             j -= 1
-        __ i >= j:
+        __ i >_ j:
             r.. T..
         i0, j0 = i, j
         i += 1
         w.... i < j a.. s[i] __ s[j]:
             i += 1
             j -= 1
-        __ i >= j:
+        __ i >_ j:
             r.. T..
         i, j = i0, j0
         j -= 1
         w.... i < j a.. s[i] __ s[j]:
             i += 1
             j -= 1
-        __ i >= j:
+        __ i >_ j:
             r.. T..
         r.. F..
     

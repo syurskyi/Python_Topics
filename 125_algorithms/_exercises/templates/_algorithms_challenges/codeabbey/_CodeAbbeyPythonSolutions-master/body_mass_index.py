@@ -9,9 +9,9 @@ ___ i __ r..(amount_values
     bmi = get_bmi(weight, height)
     __(bmi < 18.5
         results.a..("under")
-    ____(bmi >= 18.5 a.. bmi < 25
+    ____(bmi >_ 18.5 a.. bmi < 25
         results.a..("normal")
-    ____(bmi >= 25 a.. bmi < 30
+    ____(bmi >_ 25 a.. bmi < 30
         results.a..("over")
     ____
         results.a..("obese")

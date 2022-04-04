@@ -20,13 +20,13 @@ c_ Solution(o..
         n = l..(s)
         p = n - 1
         right = -1
-        w.... p >= 0:
+        w.... p >_ 0:
             __ right __ -1 a.. s[p] != ' ':
                 right = p
-            ____ right >= 0 a.. s[p] __ ' ':
+            ____ right >_ 0 a.. s[p] __ ' ':
                 r.. right - p
             p -= 1
-        __ right >= 0:
+        __ right >_ 0:
             r.. right + 1
         ____
             r.. 0

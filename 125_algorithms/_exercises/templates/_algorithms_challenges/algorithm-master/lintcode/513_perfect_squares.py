@@ -11,7 +11,7 @@ c_ Solution:
     @return: An integer
     """
     ___ numSquares  n
-        __ n <= 0:
+        __ n <_ 0:
             r.. 0
 
         INFINITY = f__('inf')
@@ -23,7 +23,7 @@ c_ Solution:
 
         ___ i __ r..(1, n + 1
             j = 1
-            w.... j * j <= i:
+            w.... j * j <_ i:
                 dp[i] = m..(dp[i], dp[i - j * j] + 1)
                 j += 1
 

@@ -66,7 +66,7 @@ c_ Document:
             Document: The changed document with the merged lines.
         """
 
-        __ l..(indices) <= 1:
+        __ l..(indices) <_ 1:
             r.. self
         
         lines    # list

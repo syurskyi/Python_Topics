@@ -11,11 +11,11 @@ c_ Solution(o..
         i, j = l..(num1)-1, l..(num2)-1
         result = ''
         carry = 0
-        w.... j >= 0:
+        w.... j >_ 0:
             n1 = i..(num1[i])
             n2 = i..(num2[j])
             val = n1+n2+carry
-            __ val >= 10:
+            __ val >_ 10:
                 val -= 10
                 carry = 1
             ____
@@ -23,10 +23,10 @@ c_ Solution(o..
             result = s..(val) + result
             i -= 1
             j -= 1
-        w.... i >= 0:
+        w.... i >_ 0:
             n1 = i..(num1[i])
             val = n1+carry
-            __ val >= 10:
+            __ val >_ 10:
                 val -= 10
                 carry = 1
             ____

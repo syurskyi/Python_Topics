@@ -36,7 +36,7 @@ c_ Solution:
                 dp[ind] = 1
 
             # trough in the middle
-            __ ind+1<length a.. ratings[ind-1]>val a.. val<=ratings[ind+1]:
+            __ ind+1<length a.. ratings[ind-1]>val a.. val<_ratings[ind+1]:
                 re_adjust(ratings, dp, ind)
 
         # trough at the end

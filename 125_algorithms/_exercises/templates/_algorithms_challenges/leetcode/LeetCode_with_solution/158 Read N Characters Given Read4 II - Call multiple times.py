@@ -39,7 +39,7 @@ c_ Solution(o..
                 idx += r
                 __ r < 4: r.. idx
             ____
-                buf[idx:n] = buf4[:n-idx]
+                buf[idx:n] = buf4 |?-idx]
                 prev = buf4[n-idx:r]  # pitfall buf4[n-idx:]
                 idx = n
 

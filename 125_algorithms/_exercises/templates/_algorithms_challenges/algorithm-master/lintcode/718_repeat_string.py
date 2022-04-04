@@ -5,7 +5,7 @@ c_ Solution:
         :type b: str
         :rtype: int
         """
-        __ l..(b) <= l..(a) a.. b __ a:
+        __ l..(b) <_ l..(a) a.. b __ a:
             r.. 1
         __ n.. a o. n.. b:
             r.. -1

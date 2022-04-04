@@ -10,7 +10,7 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        __ l..(nums) <= 2:
+        __ l..(nums) <_ 2:
             r.. l..(nums)
         prev, curr = 1, 2
         w.... curr < l..(nums

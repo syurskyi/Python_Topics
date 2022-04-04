@@ -8,8 +8,8 @@ c_ Solution(o..
     i = 0
     patches = 0
     miss = 1
-    w.... miss <= n:
-      __ i < l..(nums) a.. nums[i] <= miss:
+    w.... miss <_ n:
+      __ i < l..(nums) a.. nums[i] <_ miss:
         miss += nums[i]
         i += 1
       ____

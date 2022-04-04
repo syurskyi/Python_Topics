@@ -11,7 +11,7 @@ c_ Solution(o..
       ___ i __ r..(r..(0, j:
         tmp = dp[i]
         __ s[i] __ s[j]:
-          dp[i] = 2 + pre __ i + 1 <= j - 1 ____ 2
+          dp[i] = 2 + pre __ i + 1 <_ j - 1 ____ 2
         ____
           dp[i] = m..(dp[i + 1], dp[i])
         pre = tmp

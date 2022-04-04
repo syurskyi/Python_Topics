@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         res = 0
         i = 5
-        w.... n / i >= 1:
+        w.... n / i >_ 1:
             res += n / i
             i *= 5
         r.. res

@@ -47,7 +47,7 @@ c_ Solution:
         lst = [[] ___ _ __ r..(r_max + c_max + 1)]
         ___ i __ r..(R
             ___ j __ r..(C
-                lst[abs(i - r0) + abs(j - c0)].a..([i, j])
+                lst[a..(i - r0) + a..(j - c0)].a..([i, j])
 
         ret    # list
         ___ e __ lst:

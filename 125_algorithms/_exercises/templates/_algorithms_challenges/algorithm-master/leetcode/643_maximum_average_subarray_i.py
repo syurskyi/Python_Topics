@@ -39,8 +39,8 @@ c_ Solution:
         max_sum, tmp_sum = f__('-inf'), 0
         ___ i __ r..(l..(nums:
             tmp_sum += nums[i]
-            __ i >= k:
+            __ i >_ k:
                 tmp_sum -= nums[i-k]
-            __ i + 1 >= k:
+            __ i + 1 >_ k:
                 max_sum = m..(max_sum, tmp_sum)
         r.. max_sum / f__(k)

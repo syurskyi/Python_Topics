@@ -16,7 +16,7 @@ ___ spinner(seconds
 
     start_time = time()
 
-    w.... time() - start_time <= seconds:
+    w.... time() - start_time <_ seconds:
         s = next(cycles)
         print(s,end='\r')
         

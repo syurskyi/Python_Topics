@@ -30,7 +30,7 @@ c_ Solution:
             x = flowers[day]
             i = bisect.bisect_left(bloom, x)
             ___ _x __ bloom[m..(0, i - 1i + 1]:
-                __ abs(_x - x) - 1 __ k:
+                __ a..(_x - x) - 1 __ k:
                     r.. day + 1  # changed to 1-based
             bloom.insert(i, x)
 
@@ -65,7 +65,7 @@ c_ Solution2:
         w.... right < n:
             __ any((
                 x2day[i] < x2day[left],
-                x2day[i] <= x2day[right],
+                x2day[i] <_ x2day[right],
             :
                 __ i __ right:
                     ans = m..(ans, m..(x2day[left], x2day[right]

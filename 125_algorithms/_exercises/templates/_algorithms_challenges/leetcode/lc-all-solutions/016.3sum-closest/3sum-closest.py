@@ -13,13 +13,13 @@ c_ Solution(o..
       w.... start < end:
         s.. = nums[i] + nums[start] + nums[end]
         __ s.. > target:
-          __ abs(target - s..) < diff:
-            diff = abs(target - s..)
+          __ a..(target - s..) < diff:
+            diff = a..(target - s..)
             ans = s..
           end -= 1
         ____
-          __ abs(target - s..) < diff:
-            diff = abs(target - s..)
+          __ a..(target - s..) < diff:
+            diff = a..(target - s..)
             ans = s..
           start += 1
     r.. ans

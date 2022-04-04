@@ -22,7 +22,7 @@ c_ Solution(o..
         dp[0] = 1
         ___ num __ nums:
             ___ i __ r..(target, -1, -1
-                __ i >= num:
+                __ i >_ num:
                     dp[i] += dp[i-num]
         r.. dp[-1]
     

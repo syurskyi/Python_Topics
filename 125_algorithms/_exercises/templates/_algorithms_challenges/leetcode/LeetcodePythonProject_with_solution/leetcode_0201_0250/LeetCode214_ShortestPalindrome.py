@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: str
         """
         i, j = 0, l..(s)-1
-        w.... j >= 0:
+        w.... j >_ 0:
             __ s[i] __ s[j]:
                 i += 1
             j -= 1

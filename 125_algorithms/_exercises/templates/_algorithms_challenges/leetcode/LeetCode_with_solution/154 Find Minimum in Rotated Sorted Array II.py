@@ -33,9 +33,9 @@ c_ Solution(o..
             mini = m..(mini, A[mid])
             __ A[lo] __ A[mid]:  # JUMP
                 lo += 1
-            ____ A[lo] < A[mid] <= A[hi-1]:
+            ____ A[lo] < A[mid] <_ A[hi-1]:
                 r.. m..(mini, A[lo])
-            ____ A[lo] > A[mid] <= A[hi-1]:  # trough
+            ____ A[lo] > A[mid] <_ A[hi-1]:  # trough
                 hi = mid
             ____  # peak
                 lo = mid+1

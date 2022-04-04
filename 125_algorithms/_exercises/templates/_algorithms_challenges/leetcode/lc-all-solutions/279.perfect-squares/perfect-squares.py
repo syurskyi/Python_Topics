@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     squares    # list
     j = 1
-    w.... j * j <= n:
+    w.... j * j <_ n:
       squares.a..(j * j)
       j += 1
     level = 0

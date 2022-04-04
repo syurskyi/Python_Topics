@@ -14,7 +14,7 @@ c_ Solution:
         ____
             q = p = pp = head  # `pp` is the node preceding `p`
             w.... q __ n.. N..
-                __ n <= 0:
+                __ n <_ 0:
                     pp = p
                     p = p.next
                 q = q.next

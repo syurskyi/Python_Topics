@@ -21,7 +21,7 @@ c_ Solution:
             cur_end = intervals[0].end
             cur_index = 0
             ___ interval __ intervals[1:]:
-                __ interval.start <= cur_end:
+                __ interval.start <_ cur_end:
                     __ interval.end > cur_end:
                         res[cur_index].end = interval.end
                         cur_end = interval.end

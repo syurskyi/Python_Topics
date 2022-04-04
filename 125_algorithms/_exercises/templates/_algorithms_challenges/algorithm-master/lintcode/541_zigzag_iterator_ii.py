@@ -41,11 +41,11 @@ c_ ZigzagIterator2:
 
                 r.. T..
 
-            __ x >= l..(g
+            __ x >_ l..(g
                 x = 0
                 y += 1
 
-            __ y >= l..(g[x]
+            __ y >_ l..(g[x]
                 x += 1
 
         r.. F..

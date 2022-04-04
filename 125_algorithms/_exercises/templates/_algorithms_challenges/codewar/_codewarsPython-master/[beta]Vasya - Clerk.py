@@ -10,10 +10,10 @@ ___ tickets(people
             cashier[25] -= 1
         ____
             cashier[100] += 1
-            __ cashier[50] >= 1 a.. cashier[25] >= 1:
+            __ cashier[50] >_ 1 a.. cashier[25] >_ 1:
                 cashier[50] -= 1
                 cashier[25] -= 1
-            ____ cashier[25] >= 3:
+            ____ cashier[25] >_ 3:
                 cashier[25] -= 3
             ____
                 r.. 'NO'

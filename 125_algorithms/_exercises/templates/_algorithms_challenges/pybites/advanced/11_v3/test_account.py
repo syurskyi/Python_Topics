@@ -20,9 +20,9 @@ ___ test_account_balance
 
 ___ test_account_comparison
     ... checking > saving
-    ... checking >= saving
+    ... checking >_ saving
     ... saving < checking
-    ... saving <= checking
+    ... saving <_ checking
     saving + 5
     ... checking __ saving
 

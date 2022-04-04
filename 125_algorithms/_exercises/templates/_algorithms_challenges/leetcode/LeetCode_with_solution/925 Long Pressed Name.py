@@ -47,13 +47,13 @@ c_ Solution:
             __ name[i] __ typed[j]:
                 i += 1
                 j += 1
-            ____ j - 1 >= 0 a.. typed[j-1] __ typed[j]:
+            ____ j - 1 >_ 0 a.. typed[j-1] __ typed[j]:
                 j += 1
             ____
                 r.. F..
 
         # tail
-        w.... j - 1 >= 0 a.. j < n a.. typed[j-1] __ typed[j]:
+        w.... j - 1 >_ 0 a.. j < n a.. typed[j-1] __ typed[j]:
             j += 1
 
         r.. i __ m a.. j __ n

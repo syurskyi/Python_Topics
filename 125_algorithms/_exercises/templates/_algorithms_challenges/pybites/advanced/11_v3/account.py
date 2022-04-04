@@ -30,12 +30,12 @@ c_ Account:
     ___ __le__  other
         __ n.. isi..(other, Account
             r.. V...()
-        r.. balance <= other.balance
+        r.. balance <_ other.balance
 
     ___ __ge__  other
         __ n.. isi..(other, Account
             r.. V...()
-        r.. balance >= other.balance
+        r.. balance >_ other.balance
 
     ___ __getitem__  item
         r.. _transactions[item]

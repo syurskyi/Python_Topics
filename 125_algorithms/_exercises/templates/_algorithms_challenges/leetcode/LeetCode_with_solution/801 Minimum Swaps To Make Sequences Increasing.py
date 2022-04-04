@@ -69,7 +69,7 @@ c_ Solution:
         """
         t = 0
         ___ i __ r..(1, l..(A:
-            __ A[i] <= A[i-1] o. B[i] <= B[i-1]:
+            __ A[i] <_ A[i-1] o. B[i] <_ B[i-1]:
                 t += 1
                 __ t < i + 1 - t:
                     A[i], B[i] = B[i], A[i]

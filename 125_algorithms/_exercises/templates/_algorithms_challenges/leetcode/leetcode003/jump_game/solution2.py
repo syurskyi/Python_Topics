@@ -26,6 +26,6 @@ c_ Solution:
         ___ i __ r..(1, n
             # j is from n - 1 to 0
             j = n - 1 - i
-            __ d[j] >= reach:
+            __ d[j] >_ reach:
                 reach = j
         r.. reach __ 0

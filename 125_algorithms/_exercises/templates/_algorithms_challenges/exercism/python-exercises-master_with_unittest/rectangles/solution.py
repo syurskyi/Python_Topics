@@ -47,12 +47,12 @@ ___ possible_rect(quartet
         mid_y = mid_y + c.j / 4.0
 
     # reference distance using first corner
-    dx = abs(quartet[0].i - mid_x)
-    dy = abs(quartet[0].j - mid_y)
+    dx = a..(quartet[0].i - mid_x)
+    dy = a..(quartet[0].j - mid_y)
 
     # Check all the same distance from centroid are equals
     ___ i __ r..(1, l..(quartet:
-        __ abs(quartet[i].i - mid_x) != dx o. abs(quartet[i].j - mid_y) != dy:
+        __ a..(quartet[i].i - mid_x) != dx o. a..(quartet[i].j - mid_y) != dy:
             r.. F..
     r.. T..
 

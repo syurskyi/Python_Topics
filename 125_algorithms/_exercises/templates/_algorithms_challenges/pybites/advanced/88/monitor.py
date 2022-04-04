@@ -25,9 +25,9 @@ ___ timeit
     y.. 
     end_time = time()
     total_time = end_time - start_time
-    __ total_time >= OPERATION_THRESHOLD_IN_SECONDS:
+    __ total_time >_ OPERATION_THRESHOLD_IN_SECONDS:
         violations[get_today()] += 1
-        __ violations[get_today()] >= ALERT_THRESHOLD:
+        __ violations[get_today()] >_ ALERT_THRESHOLD:
             print(ALERT_MSG)
 
 

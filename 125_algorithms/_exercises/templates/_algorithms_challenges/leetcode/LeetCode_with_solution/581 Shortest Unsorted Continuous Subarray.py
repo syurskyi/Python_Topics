@@ -33,13 +33,13 @@ c_ Solution:
         """
         n = l..(nums)
         lo, hi = 0, n - 1
-        w.... lo < hi a.. nums[lo] <= nums[lo + 1]:
+        w.... lo < hi a.. nums[lo] <_ nums[lo + 1]:
             lo += 1
 
-        w.... lo < hi a.. nums[hi - 1] <= nums[hi]:
+        w.... lo < hi a.. nums[hi - 1] <_ nums[hi]:
             hi -= 1
 
-        __ hi <= lo:
+        __ hi <_ lo:
             r.. 0
 
         mini = f__('inf')
@@ -48,7 +48,7 @@ c_ Solution:
             mini = m..(mini, nums[i])
             maxa = m..(maxa, nums[i])
 
-        w.... lo - 1 >= 0 a.. nums[lo - 1] > mini:
+        w.... lo - 1 >_ 0 a.. nums[lo - 1] > mini:
             lo -= 1
         w.... hi + 1 < n a.. nums[hi + 1] < maxa:
             hi += 1
@@ -65,7 +65,7 @@ c_ Solution:
             i += 1
 
         j = l..(nums) - 1
-        w.... j >= i a.. nums[j] __ e..[j]:
+        w.... j >_ i a.. nums[j] __ e..[j]:
             j -= 1
 
         r.. j - i + 1

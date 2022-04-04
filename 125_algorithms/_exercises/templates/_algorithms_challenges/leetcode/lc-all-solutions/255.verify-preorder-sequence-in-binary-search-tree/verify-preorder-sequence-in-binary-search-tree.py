@@ -6,7 +6,7 @@ c_ Solution(o..
     :type preorder: List[int]
     :rtype: bool
     """
-    __ l..(preorder) <= 1:
+    __ l..(preorder) <_ 1:
       r.. T..
     stack, lastElem = [preorder[0]], N..
     ___ i __ r..(1, l..(preorder:

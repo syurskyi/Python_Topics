@@ -24,4 +24,4 @@ c_ Solution(o..
 
     count = c...d..(l..)
     merkle(root)
-    r.. [nodes.p.. ) ___ nodes __ count.v.. __ l..(nodes) >= 2]
+    r.. [nodes.p.. ) ___ nodes __ count.v.. __ l..(nodes) >_ 2]

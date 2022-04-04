@@ -155,7 +155,7 @@ c_ Solution:
         ___ i __ x..(m-1, -1, -1
             ___ j __ x..(n-1, -1, -1
                 __ regex[j] __ "*":
-                    __ j-1 >= 0 a.. regex[j-1] != "*":
+                    __ j-1 >_ 0 a.. regex[j-1] != "*":
                         dp[i][j] = dp[i][j+1]  # skip
                     ____
                         r.. F..  # two consecutive *

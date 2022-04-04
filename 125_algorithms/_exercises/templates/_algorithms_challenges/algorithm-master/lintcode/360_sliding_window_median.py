@@ -54,7 +54,7 @@ c_ Solution:
         """
         ans    # list
 
-        __ n.. nums o. k <= 0 o. l..(nums) < k:
+        __ n.. nums o. k <_ 0 o. l..(nums) < k:
             r.. ans
 
         minheap = HashHeapqWithLazy()
@@ -62,20 +62,20 @@ c_ Solution:
 
         ___ i __ r..(l..(nums:
             # remove nums[i - k]
-            __ i >= k:
-                __ minheap a.. nums[i - k] >= minheap.top
+            __ i >_ k:
+                __ minheap a.. nums[i - k] >_ minheap.top
                     minheap.remove(nums[i - k])
                 ____
                     maxheap.remove(-1 * nums[i - k])
 
             # add nums[i]
-            __ minheap a.. nums[i] >= minheap.top
+            __ minheap a.. nums[i] >_ minheap.top
                 minheap.push(nums[i])
             ____
                 maxheap.push(-1 * nums[i])
 
             # get median
-            __ i >= k - 1:
+            __ i >_ k - 1:
                 ans.a..(get_median
 
         r.. ans

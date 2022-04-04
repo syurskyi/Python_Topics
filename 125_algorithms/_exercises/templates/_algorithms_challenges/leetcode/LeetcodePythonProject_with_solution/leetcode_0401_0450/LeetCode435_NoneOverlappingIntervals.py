@@ -17,7 +17,7 @@ c_ Solution(o..
         maxLen = intervals[0].end
         count = 0
         ___ i __ r..(1, l..(intervals:
-            __ intervals[i].start >= maxLen:
+            __ intervals[i].start >_ maxLen:
                 maxLen = intervals[i].end
             ____
                 count += 1

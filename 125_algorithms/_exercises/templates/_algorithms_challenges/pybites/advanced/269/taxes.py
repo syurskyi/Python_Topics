@@ -163,7 +163,7 @@ c_ Taxes:
         previous_end = 0
         leave = F..
         ___ end,rate __ bracket:
-            __ value >= end:
+            __ value >_ end:
                 tax_paid = end - previous_end
             ____
                 tax_paid = value - previous_end

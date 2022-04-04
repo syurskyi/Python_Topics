@@ -26,13 +26,13 @@ c_ Solution:
         r.. F..
 
     ___ dfs  G, x, y, s, i, visited
-        __ i >= l..(s
+        __ i >_ l..(s
             r.. T..
 
         ___ dx, dy __ V:
             _x = x + dx
             _y = y + dy
-            __ n.. (0 <= _x < l..(G) a.. 0 <= _y < l..(G[0]:
+            __ n.. (0 <_ _x < l..(G) a.. 0 <_ _y < l..(G[0]:
                 _____
             __ visited[_x][_y] o. G[_x][_y] != s[i]:
                 _____

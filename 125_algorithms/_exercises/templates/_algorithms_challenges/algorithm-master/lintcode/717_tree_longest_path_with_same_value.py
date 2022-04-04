@@ -10,7 +10,7 @@ c_ Solution:
         :type e: list[int]
         :rtype: int
         """
-        __ n.. a o. l..(a) <= 1:
+        __ n.. a o. l..(a) <_ 1:
             r.. 0
 
         neibs = [[] ___ _ __ r..(l..(a) + 1)]  # neighbors

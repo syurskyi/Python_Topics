@@ -16,7 +16,7 @@ c_ Solution:
             r.. ans
 
         n = l..(P)
-        __ n <= 2:
+        __ n <_ 2:
             r.. n
 
         ___ i __ r..(n

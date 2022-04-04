@@ -25,6 +25,6 @@ ___ timeit() __ N..
         elapsed = time() - start
         __ elapsed > OPERATION_THRESHOLD_IN_SECONDS:
             violations.update([get_today()])
-        __ violations[get_today()] >= ALERT_THRESHOLD:
+        __ violations[get_today()] >_ ALERT_THRESHOLD:
             print(ALERT_MSG)
         # print(f'{elapsed=}\n{len(violations)=}')

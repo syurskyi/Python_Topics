@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     ans    # list
     ___ i __ r..(0, l..(nums:
-      idx  abs(nums[i]) - 1
+      idx  a..(nums[i]) - 1
       nums[idx]  -nums[idx] __ nums[idx] > 0 ____ nums[idx]
 
     ___ i __ r..(0, l..(nums:

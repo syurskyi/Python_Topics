@@ -33,7 +33,7 @@ c_ Solution:
         index = l..(intvs)
 
         ___ i __ r..(l..(intvs) - 1, -1, -1
-            __ intvs[i].start <= intv.start:
+            __ intvs[i].start <_ intv.start:
                 _____
             index -= 1
 
@@ -42,7 +42,7 @@ c_ Solution:
             intvs[i], intvs[i - 1] = intvs[i - 1], intvs[i]
 
         ___ i __ r..(l..(intvs:  # since there is one more child in intvs
-            __ ans a.. intvs[i].start <= ans[-1].end:
+            __ ans a.. intvs[i].start <_ ans[-1].end:
                 ans[-1].end = m..(ans[-1].end, intvs[i].end)
             ____
                 ans.a..(intvs[i])

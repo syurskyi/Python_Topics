@@ -10,7 +10,7 @@ c_ Solution(o..
         :type prices: List[int]
         :rtype: int
         """
-        __ n.. prices o. l..(prices) <= 1: r.. 0
+        __ n.. prices o. l..(prices) <_ 1: r.. 0
         left = [0]*l..(prices)
         right = [0]*l..(prices)
         minVal = prices[0]

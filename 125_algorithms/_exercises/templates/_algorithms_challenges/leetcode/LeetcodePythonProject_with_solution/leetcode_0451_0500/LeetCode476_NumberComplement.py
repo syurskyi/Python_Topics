@@ -6,7 +6,7 @@ Created on Apr 27, 2017
 c_ Solution
     ___ findComplement  num
         i = 1
-        w.... i <= num:
+        w.... i <_ num:
             i = i << 1
         r.. (i-1) ^ num
     

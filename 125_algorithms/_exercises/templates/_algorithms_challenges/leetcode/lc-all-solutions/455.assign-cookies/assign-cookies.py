@@ -12,8 +12,8 @@ c_ Solution(o..
     children.s..()
     i = 0
     ___ cookie __ cookies:
-      __ i >= l..(children
+      __ i >_ l..(children
         _____
-      __ children[i] <= cookie:
+      __ children[i] <_ cookie:
         i += 1
     r.. i

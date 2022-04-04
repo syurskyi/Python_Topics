@@ -25,7 +25,7 @@ c_ Solution(o..
             first = num/10
             res += ' ' + tens[first-2]
             ind = num-first*10-1
-            __ ind >= 0:
+            __ ind >_ 0:
                 res += ' ' + tokens20[ind]
         ____ num < 1000:
             first = num/100

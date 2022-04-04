@@ -52,7 +52,7 @@ c_ Solution:
         ___ a __ r..(m + 1
             target = n - a * a
             b, c = a, m
-            w.... b <= c:
+            w.... b <_ c:
                 _sum = b * b + c * c
                 __ _sum < target:
                     b += 1

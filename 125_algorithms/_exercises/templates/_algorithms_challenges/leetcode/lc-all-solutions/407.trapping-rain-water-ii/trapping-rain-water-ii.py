@@ -24,7 +24,7 @@ c_ Solution(o..
       height, i, j = heapq.heappop(heap)
       ___ di, dj __ dirs:
         ni, nj = i + di, j + dj
-        __ 0 <= ni < h a.. 0 <= nj < w a.. (ni, nj) n.. __ visited:
+        __ 0 <_ ni < h a.. 0 <_ nj < w a.. (ni, nj) n.. __ visited:
           ans += m..(0, height - heightMap[ni][nj])
           heapq.heappush(heap, (m..(heightMap[ni][nj], height), ni, nj
           visited |= {(ni, nj)}

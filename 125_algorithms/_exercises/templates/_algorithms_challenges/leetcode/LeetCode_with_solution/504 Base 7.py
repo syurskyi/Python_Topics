@@ -23,7 +23,7 @@ c_ Solution:
         __ num __ 0:
             r.. "0"
         ret    # list
-        n = abs(num)
+        n = a..(num)
         w.... n:
             ret.a..(n % 7)
             n //= 7

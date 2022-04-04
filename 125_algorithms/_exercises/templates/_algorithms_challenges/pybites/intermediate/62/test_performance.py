@@ -15,7 +15,7 @@ ___ test_contains
     t1, res1 = contains(alist, 500)
     t2, res2 = contains_fast(aset, 1000)
     ... res1 __ res2
-    ... t1 >= t2
+    ... t1 >_ t2
 
 
 ___ test_ordered_max

@@ -10,12 +10,12 @@ c_ Solution(o..
         :type k: int
         :rtype: float
         """
-        __ k <= 0: r.. 0
+        __ k <_ 0: r.. 0
         sumVal = 0
         maxVal = f__('-inf')
         ___ i, num __ e..(nums
             sumVal += num
-            __ i >= k-1:
+            __ i >_ k-1:
                 maxVal = m..(maxVal, sumVal)
                 sumVal -= nums[i-k+1]
         r.. f__(maxVal)/k

@@ -23,7 +23,7 @@ c_ Solution(o..
             hashmap[c] = hashmap.g.. c, 0)+1
             __ c __ hashmap0 a.. hashmap[c] __ hashmap0[c]:
                 count += 1
-            w.... left <= i a.. hashmap[s[left]] > hashmap0.g.. s[left], 0
+            w.... left <_ i a.. hashmap[s[left]] > hashmap0.g.. s[left], 0
                 hashmap[s[left]] -= 1
                 left += 1
             __ count __ l..(hashmap0
@@ -51,7 +51,7 @@ c_ Solution(o..
         res = ''
         minLen = f__('inf')
         ___ i, c __ e..(s
-            __ c __ hashmap a.. hashmapAll.g.. c, 0)+1 >= hashmap[c]:
+            __ c __ hashmap a.. hashmapAll.g.. c, 0)+1 >_ hashmap[c]:
                 hashset.add(c)
             hashmapAll[c] = hashmapAll.g.. c, 0)+1
             w.... left < i a.. (s[left] n.. __ hashmap o. hashmapAll[s[left]] > hashmap[s[left]]

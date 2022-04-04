@@ -35,7 +35,7 @@ c_ Solution:
         cnt = 0
 
         ___ a __ A:
-            __ a <= mid:
+            __ a <_ mid:
                 cnt += 1
             __ cnt > mid:
                 r.. T..

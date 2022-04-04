@@ -10,7 +10,7 @@ c_ Solution:
         t = strs[0]
         ___ i __ r..(l..(t:
             ___ s __ strs:
-                __ i >= l..(s) o. s[i] != t[i]:
+                __ i >_ l..(s) o. s[i] != t[i]:
                     r.. t[:i]
 
         r.. t

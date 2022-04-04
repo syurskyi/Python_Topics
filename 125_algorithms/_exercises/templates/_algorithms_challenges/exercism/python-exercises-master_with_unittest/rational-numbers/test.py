@@ -69,13 +69,13 @@ c_ RationalNumbersTest(unittest.TestCase
 
     # Test absolute value
     ___ test_absolute_value_of_positive
-        assertEqual(abs(Rational(1, 2, Rational(1, 2
+        assertEqual(a..(Rational(1, 2, Rational(1, 2
 
     ___ test_absolute_value_of_negative
-        assertEqual(abs(Rational(-1, 2, Rational(1, 2
+        assertEqual(a..(Rational(-1, 2, Rational(1, 2
 
     ___ test_absolute_value_of_zero
-        assertEqual(abs(Rational(0, 1, Rational(0, 1
+        assertEqual(a..(Rational(0, 1, Rational(0, 1
 
     # Test exponentiation of a rational number
     ___ test_raise_a_positive_rational_to_a_positive_integer_power

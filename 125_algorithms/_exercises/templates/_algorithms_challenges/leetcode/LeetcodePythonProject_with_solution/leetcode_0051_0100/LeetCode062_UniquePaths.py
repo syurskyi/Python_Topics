@@ -27,7 +27,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        __ m <= 0 o. n <= 0: r.. 0
+        __ m <_ 0 o. n <_ 0: r.. 0
         dp  = [[0]*m ___ i __ r..(n)]
         dp[0][0] = 1
         ___ i __ r..(0, n

@@ -19,7 +19,7 @@ c_ Solution(o..
     __ a > 9 o. n.. p..:
       r.. 0
     ans = i..("".j..(p..
-    r.. ans __ ans <= 0x7fffffff ____ 0
+    r.. ans __ ans <_ 0x7fffffff ____ 0
 
   # normal DFS
   ___ smallestFactorization  a
@@ -27,7 +27,7 @@ c_ Solution(o..
     :type a: int
     :rtype: int
     """
-    __ a <= 1:
+    __ a <_ 1:
       r.. a
 
     ___ dfs(num, p..
@@ -44,4 +44,4 @@ c_ Solution(o..
 
     ans = f__("inf")
     dfs(a, [])
-    r.. ans __ ans != f__("inf") a.. ans <= 0x7fffffff ____ 0
+    r.. ans __ ans != f__("inf") a.. ans <_ 0x7fffffff ____ 0

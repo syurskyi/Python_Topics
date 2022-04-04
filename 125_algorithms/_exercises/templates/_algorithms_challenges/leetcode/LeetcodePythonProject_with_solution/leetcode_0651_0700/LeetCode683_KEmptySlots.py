@@ -18,7 +18,7 @@ c_ Solution(o..
         left, right = 0, k+1
         res = f__('inf')
         ___ i __ r..(n
-            __ right >= n: _____
+            __ right >_ n: _____
             __ days[i] __ days[right] a.. i __ right:
                 res = m..(res, m..(days[left], days[right]
             __ days[i] < days[left] o. days[i] < days[right]:

@@ -65,7 +65,7 @@ c_ RLEIterator:
             run -= A[cur_i]
             cur_i += 2
 
-        __ cur_i >= l..(A
+        __ cur_i >_ l..(A
             r.. -1
 
         cur_used = run

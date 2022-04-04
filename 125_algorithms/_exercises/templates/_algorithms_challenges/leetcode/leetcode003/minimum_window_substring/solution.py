@@ -18,7 +18,7 @@ c_ Solution:
                     right = i
                     # Move left pointers
                     cc = s[left]
-                    w.... left <= right a.. (cc n.. __ d o. d[cc] > td[cc]
+                    w.... left <_ right a.. (cc n.. __ d o. d[cc] > td[cc]
                         __ cc __ d:
                             d[cc] -= 1
                         left += 1

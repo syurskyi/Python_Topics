@@ -30,7 +30,7 @@ ___ i __ r..(i..(input())):
                     #else add 11
                     tot += 11
     #check the tot
-    __ tot <= 21:
+    __ tot <_ 21:
         print(i..(tot),end= ' ')
     ____
         print("Bust",end = ' ')

@@ -30,12 +30,12 @@ ___ calc_median_from_dict(d: d..) __ f__:
     cums = [(interval, item) ___ interval, item __ z..(intervals, items)]
 
     # two cases, even length and odd length, next is same for both
-    b = next(f.. l.... x: x[0][0] <= length // 2 + 1 <= x[0][1],
+    b = next(f.. l.... x: x[0][0] <_ length // 2 + 1 <_ x[0][1],
                     cums[1][0]
 
     __ length % 2 __ 1:
         r.. b
     ____
-        a = next(f.. l.... x: x[0][0] <= length // 2 <= x[0][1],
+        a = next(f.. l.... x: x[0][0] <_ length // 2 <_ x[0][1],
                         cums[1][0]
         r.. (a + b) / 2

@@ -12,7 +12,7 @@ c_ Solution(o..
         pairs = s..( '00', '11', '69', '96', '88' )
         singles = s..( '0', '1', '8' )
         l, r = 0, l..(num)-1
-        w.... l <= r:
+        w.... l <_ r:
             __ l < r a.. num[l]+num[r] n.. __ pairs:
                 r.. F..
             __ l __ r a.. num[l] n.. __ singles:

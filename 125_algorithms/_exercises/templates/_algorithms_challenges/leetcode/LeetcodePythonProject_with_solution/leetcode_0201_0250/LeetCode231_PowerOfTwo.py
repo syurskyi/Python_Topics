@@ -10,7 +10,7 @@ c_ Solution(o..
         :type n: int
         :rtype: bool
         """
-        __ n <= 0: r.. F..
+        __ n <_ 0: r.. F..
         r.. b..(n&(n-1)__0)
     
     ___ isPowerOfTwoSlow  n

@@ -27,7 +27,7 @@ c_ Solution:
     ___ check_palindrome  s, left, right
         n = l..(s)
 
-        w.... left >= 0 a.. right < n a.. s[left] __ s[right]:
+        w.... left >_ 0 a.. right < n a.. s[left] __ s[right]:
             left -= 1
             right += 1
 

@@ -15,7 +15,7 @@ c_ Solution(o..
         hash = s..(nums)
         __ hash __ memo:
             r.. memo[hash]
-        __ nums[-1] >= desiredTotal:
+        __ nums[-1] >_ desiredTotal:
             r.. T..
         length = l..(nums)
         ___ i __ r..(length

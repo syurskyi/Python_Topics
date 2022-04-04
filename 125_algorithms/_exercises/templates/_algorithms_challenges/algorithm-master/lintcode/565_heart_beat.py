@@ -30,5 +30,5 @@ c_ HeartBeat:
             r.. []
         r.. [ ip
             ___ ip, t0 __ slaves_ip_list.i..
-            __ timestamp - t0 >= ttl
+            __ timestamp - t0 >_ ttl
         ]

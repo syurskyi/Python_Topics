@@ -64,7 +64,7 @@ c_ Solution:
                 R[i] = 0
             ____ dominoes[i] __ "L":
                 R[i] = f__("inf")
-            ____ i - 1 >= 0:
+            ____ i - 1 >_ 0:
                 R[i] = R[i-1] + 1
 
         ret    # list

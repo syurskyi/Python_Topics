@@ -21,7 +21,7 @@ c_ Solution(o..
         __ dividend __ 0 o. dividend < divisor:
             r.. 0
         res = ldivide(dividend, divisor)
-        __ res >= 2**31-1:
+        __ res >_ 2**31-1:
             res = 2**31-1 __ sign __ 1 ____ -2**31
         ____
             res = res __ sign > 0 ____ -res
@@ -31,7 +31,7 @@ c_ Solution(o..
         __ dividend < divisor: r.. 0
         sumVal = divisor
         multiple = 1
-        w.... sumVal+sumVal <= dividend:
+        w.... sumVal+sumVal <_ dividend:
             sumVal += sumVal
             multiple += multiple
         r.. multiple + ldivide(dividend-sumVal, divisor)

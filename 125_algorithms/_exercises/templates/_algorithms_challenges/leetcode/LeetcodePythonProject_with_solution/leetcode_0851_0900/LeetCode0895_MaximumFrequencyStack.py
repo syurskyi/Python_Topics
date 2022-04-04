@@ -62,7 +62,7 @@ c_ FreqStack_self(o..
             tail = node
         ____
             node0 = node.next
-            w.... node0 a.. node0.freq <= node.freq:
+            w.... node0 a.. node0.freq <_ node.freq:
                 node0 = node0.next
             __ node0:
                 nextNode = node0.next

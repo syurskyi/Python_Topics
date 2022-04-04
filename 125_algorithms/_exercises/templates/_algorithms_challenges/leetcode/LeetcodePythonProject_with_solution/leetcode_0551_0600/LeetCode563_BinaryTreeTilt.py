@@ -26,7 +26,7 @@ c_ Solution(o..
         helper(root.right, res)
         leftSum = getSum(root.left)
         rightSum = getSum(root.right)
-        res[0] += abs(leftSum-rightSum)
+        res[0] += a..(leftSum-rightSum)
     
     ___ getSum  root
         __ n.. root: r.. 0

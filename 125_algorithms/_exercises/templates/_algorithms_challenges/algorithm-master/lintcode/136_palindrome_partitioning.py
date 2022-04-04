@@ -73,7 +73,7 @@ c_ Solution:
     # otherwise will be ignored
     # and catch all result at the end
     ___ dfs  s, start, palindromes
-        __ start >= n:
+        __ start >_ n:
             ans.a..(palindromes)
         next_start = 0
         ___ end __ r..(start, n

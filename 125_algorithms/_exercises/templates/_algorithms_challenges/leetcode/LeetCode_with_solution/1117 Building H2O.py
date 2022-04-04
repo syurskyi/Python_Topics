@@ -60,7 +60,7 @@ c_ H2O:
         try_output()
 
     ___ try_output
-        __ l..(hq) >= 2 a.. l..(oq) >= 1:
+        __ l..(hq) >_ 2 a.. l..(oq) >_ 1:
             hq.popleft()()
             hq.popleft()()
             oq.popleft()()

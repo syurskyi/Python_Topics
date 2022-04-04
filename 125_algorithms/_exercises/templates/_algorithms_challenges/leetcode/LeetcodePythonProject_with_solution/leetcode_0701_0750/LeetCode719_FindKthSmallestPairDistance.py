@@ -32,11 +32,11 @@ c_ Solution(o..
         r.. res
     
     ___ upperBound  nums, low, high, key
-        __ nums[high] <= key:
+        __ nums[high] <_ key:
             r.. high+1
         w.... low < high:
             mid = (low+high)//2
-            __ key >= nums[mid]:
+            __ key >_ nums[mid]:
                 low = mid+1
             ____
                 high = mid
@@ -47,7 +47,7 @@ c_ Solution(o..
         res = 0
         ___ i __ r..(n
             j = i
-            w.... j < n a.. nums[j]-nums[i] <= mid:
+            w.... j < n a.. nums[j]-nums[i] <_ mid:
                 j += 1
             res += j-i-1
         r.. res

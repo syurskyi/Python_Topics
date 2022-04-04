@@ -10,7 +10,7 @@ c_ Solution(o..
         :type n: int
         :rtype: List[List[str]]
         """
-        __ n <= 0: r.. []
+        __ n <_ 0: r.. []
         res    # list
         helper(n, res, [], 0)
         res = convert(res)
@@ -41,7 +41,7 @@ c_ Solution(o..
         ___ i __ r..(ind
             __ cur[i] __ val:
                 r.. F..
-            __ abs(i-ind) __ abs(cur[i]-val
+            __ a..(i-ind) __ a..(cur[i]-val
                 r.. F..
         r.. T..
     

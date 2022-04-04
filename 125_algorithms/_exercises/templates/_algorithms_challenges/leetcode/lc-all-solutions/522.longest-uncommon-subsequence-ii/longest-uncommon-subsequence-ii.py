@@ -15,7 +15,7 @@ c_ Solution(o..
       start = 0
       ___ c __ s:
         idx = bisect.bisect_left(d[c], start)
-        __ l..(d[c]) __ 0 o. idx >= l..(d[c]
+        __ l..(d[c]) __ 0 o. idx >_ l..(d[c]
           r.. F..
         start = d[c][idx] + 1
       r.. T..

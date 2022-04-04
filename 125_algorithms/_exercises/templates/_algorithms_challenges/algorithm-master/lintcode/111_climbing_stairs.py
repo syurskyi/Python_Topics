@@ -7,7 +7,7 @@ c_ Solution:
     @return: An integer
     """
     ___ climbStairs  n
-        __ n <= 0:
+        __ n <_ 0:
             r.. 0
 
         dp = [0] * 3
@@ -34,7 +34,7 @@ c_ Solution:
     @return: An integer
     """
     ___ climbStairs  n
-        __ n <= 0:
+        __ n <_ 0:
             r.. 0
 
         dp = [0] * n
@@ -57,7 +57,7 @@ c_ Solution:
     @return: An integer
     """
     ___ climbStairs  n
-        __ n <= 0:
+        __ n <_ 0:
             r.. 0
 
         dp = [0] * (n + 1)

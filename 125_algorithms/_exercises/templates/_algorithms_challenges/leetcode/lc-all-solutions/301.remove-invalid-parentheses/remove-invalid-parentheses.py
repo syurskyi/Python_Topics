@@ -12,7 +12,7 @@ c_ Solution(o..
           stack.a..("(")
         ____ c __ ")":
           stack.a..(")")
-          __ l..(stack) >= 2 a.. stack[-2] + stack[-1] __ "()":
+          __ l..(stack) >_ 2 a.. stack[-2] + stack[-1] __ "()":
             stack.p.. )
             stack.p.. )
       r.. l..(stack)
@@ -27,7 +27,7 @@ c_ Solution(o..
           r..
 
       ___ i __ r..(0, l..(s:
-        __ s[i] __ "(" o. s[i] __ ")" a.. l..(s) - 1 >= length:
+        __ s[i] __ "(" o. s[i] __ ")" a.. l..(s) - 1 >_ length:
           dfs(s[:i] + s[i + 1:], res, cache, length)
           cache.add(s[:i] + s[i + 1:])
 

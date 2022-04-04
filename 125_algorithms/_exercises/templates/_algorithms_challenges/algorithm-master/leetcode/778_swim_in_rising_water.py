@@ -26,7 +26,7 @@ c_ Solution:
             ___ dx, dy __ V:
                 _x = x + dx
                 _y = y + dy
-                __ n.. (0 <= _x < n a.. 0 <= _y < n
+                __ n.. (0 <_ _x < n a.. 0 <_ _y < n
                     _____
                 __ (_x, _y) __ visited:
                     _____

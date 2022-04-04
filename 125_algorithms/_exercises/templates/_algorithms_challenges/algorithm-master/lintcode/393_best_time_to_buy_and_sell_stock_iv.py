@@ -15,7 +15,7 @@ c_ Solution:
         `./lintcode/150_best_time_to_buy_and_sell_stock_ii.py`
         so we dont need to use `dp`, since it lead to overflow
         """
-        __ K >= n:
+        __ K >_ n:
             profit = 0
             ___ i __ r..(1, n
                 __ P[i] > P[i - 1]:

@@ -44,7 +44,7 @@ c_ Solution:
         ___ d __ ["d", "r"]:
           di, dj = directions[d]
           newi, newj = i + di, j + dj
-          __ newi >= 0 a.. newi < l..(board) a.. newj >= 0 a.. newj < l..(board[0]
+          __ newi >_ 0 a.. newi < l..(board) a.. newj >_ 0 a.. newj < l..(board[0]
             __ board[newi][newj] __ "O":
               uf.union((newi * m + newj, i * m + j
 

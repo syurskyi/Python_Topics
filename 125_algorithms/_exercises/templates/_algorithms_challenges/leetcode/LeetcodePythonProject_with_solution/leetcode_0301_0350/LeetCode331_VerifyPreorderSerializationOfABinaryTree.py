@@ -11,7 +11,7 @@ c_ Solution(o..
         stack    # list
         ___ node __ nodes:
             stack.a..(node)
-            w.... l..(stack)>=3 a.. stack[-1] __ '#' a.. stack[-2] __ '#' a..\
+            w.... l..(stack)>_3 a.. stack[-1] __ '#' a.. stack[-2] __ '#' a..\
                 stack[-3] != '#':
                 stack.p.. )
                 stack.p.. )

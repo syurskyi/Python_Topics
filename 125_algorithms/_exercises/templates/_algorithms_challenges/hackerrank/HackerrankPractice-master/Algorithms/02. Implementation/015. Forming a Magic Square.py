@@ -18,7 +18,7 @@ ___ formingMagicSquare(square
         cost = 0
         ___ i __ r..(3
             ___ j __ r..(3
-                cost += abs(magicSquare[i][j] - square[i][j])
+                cost += a..(magicSquare[i][j] - square[i][j])
         __ cost < minCost:
             minCost = cost
     r.. minCost

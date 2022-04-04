@@ -38,8 +38,8 @@ c_ Solution:
                 _y = op.y + dy
 
                 __ n.. (
-                    0 <= _x < m a..
-                    0 <= _y < n a..
+                    0 <_ _x < m a..
+                    0 <_ _y < n a..
                     (_x, _y) __ nodes
 
                     _____

@@ -35,8 +35,8 @@ c_ Solution(o..
       ____ nums[i] __ c2:
         cn2 += 1
 
-    __ cn1 >= size / 3 + 1:
+    __ cn1 >_ size / 3 + 1:
       ret.a..(c1)
-    __ cn2 >= size / 3 + 1:
+    __ cn2 >_ size / 3 + 1:
       ret.a..(c2)
     r.. ret

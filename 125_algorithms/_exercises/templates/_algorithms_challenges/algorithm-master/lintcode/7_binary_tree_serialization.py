@@ -60,7 +60,7 @@ c_ Solution:
             ___ branch __ ('left', 'right'
                 i += 1
 
-                __ i >= n:
+                __ i >_ n:
                     _____
                 __ vals[i] __ EMPTY:
                     _____

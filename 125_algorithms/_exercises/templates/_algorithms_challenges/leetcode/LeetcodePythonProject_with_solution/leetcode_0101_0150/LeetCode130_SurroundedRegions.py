@@ -9,7 +9,7 @@ c_ Solution(o..
         :type board: List[List[str]]
         :rtype: void Do not return anything, modify board in-place instead.
         """
-        __ n.. board o. l..(board) <= 1 o. l..(board[0]) <= 1: r..
+        __ n.. board o. l..(board) <_ 1 o. l..(board[0]) <_ 1: r..
         m, n = l..(board), l..(board[0])
         ___ i __ r..(m
             __ board[i][0] __ 'O':

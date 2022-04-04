@@ -23,7 +23,7 @@ c_ Solution:
             _x = x + delta[turn][0]
             _y = y + delta[turn][1]
 
-            __ n.. (0 <= _x < m a.. 0 <= _y < n) o. matrix[_x][_y] __ N..
+            __ n.. (0 <_ _x < m a.. 0 <_ _y < n) o. matrix[_x][_y] __ N..
                 turn = (turn + 1) % l..(delta)
                 _x = x + delta[turn][0]
                 _y = y + delta[turn][1]

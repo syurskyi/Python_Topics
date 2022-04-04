@@ -85,7 +85,7 @@ c_ Solution:
             ___ dir __ dirs:
                 row = i+dir[0]
                 col = j+dir[1]
-                __ 0 <= row < m a.. 0 <= col < n a.. (row, col) n.. __ marked:
+                __ 0 <_ row < m a.. 0 <_ col < n a.. (row, col) n.. __ marked:
                     dfs(board, row, col, cur, marked, ret)
 
         marked.remove((i, j

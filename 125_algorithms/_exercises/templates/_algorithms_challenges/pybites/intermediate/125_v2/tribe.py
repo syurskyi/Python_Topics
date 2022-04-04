@@ -38,7 +38,7 @@ ___ get_top_books(content_ N..
 
     
 
-    r.. [value ___ value __ counts.i.. __ value[1] >= MIN_COUNT]
+    r.. [value ___ value __ counts.i.. __ value[1] >_ MIN_COUNT]
 
 
     # code here ...

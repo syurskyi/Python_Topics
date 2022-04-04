@@ -45,7 +45,7 @@ c_ Solution:
 
         ___ i __ r..(1, n
             ___ j __ r..(i
-                __ (dp[j] < INFINITY a.. j + A[j] >= i a..
+                __ (dp[j] < INFINITY a.. j + A[j] >_ i a..
                     dp[j] + 1 < dp[i]
                     dp[i] = dp[j] + 1
 

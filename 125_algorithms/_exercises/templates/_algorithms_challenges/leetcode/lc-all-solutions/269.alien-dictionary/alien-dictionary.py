@@ -57,7 +57,7 @@ c_ Solution(o..
           nodeA.connect(nodeB)
           _____
         i += 1
-      __ i < l..(a) a.. i >= l..(b
+      __ i < l..(a) a.. i >_ l..(b
         r.. ""
 
     ___ c __ graph:

@@ -36,7 +36,7 @@ c_ Solution:
         ret = 0
         prev = -1
         ___ i, a __ e..(A
-            __ L <= a <= R:
+            __ L <_ a <_ R:
                 F = i - prev
                 ret += F
             ____ a > R:
@@ -61,7 +61,7 @@ c_ Solution:
         F = 0
         ret = 0
         ___ a __ A:
-            __ L <= a <= R:
+            __ L <_ a <_ R:
                 F += 1  # error
                 ret += F
             ____ a > R:

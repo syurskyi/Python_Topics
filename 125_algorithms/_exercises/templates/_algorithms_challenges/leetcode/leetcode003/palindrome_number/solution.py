@@ -8,7 +8,7 @@ c_ Solution:
         w.... y != 0:
             y /= 10
             num_digit += 1
-        __ num_digit <= 1:
+        __ num_digit <_ 1:
             r.. T..
         # Reverse the right half
         i = 0

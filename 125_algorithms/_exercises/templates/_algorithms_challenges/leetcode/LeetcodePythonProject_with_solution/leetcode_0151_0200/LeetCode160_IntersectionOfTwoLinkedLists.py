@@ -20,7 +20,7 @@ c_ Solution(o..
         __ n.. lenA o. n.. lenB: r.. N..
         __ lenA < lenB:
             headA, headB = headB, headA
-        diff = abs(lenA-lenB)
+        diff = a..(lenA-lenB)
         w.... diff a.. headA:
             headA = headA.next
             diff -= 1

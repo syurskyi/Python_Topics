@@ -8,7 +8,7 @@ c_ Solution(o..
     tails    # list
     ___ i __ r..(0, l..(envelopes:
       idx = bisect.bisect_right(tails, envelopes[i][1])
-      __ idx - 1 >= 0 a.. tails[idx - 1] __ envelopes[i][1]:
+      __ idx - 1 >_ 0 a.. tails[idx - 1] __ envelopes[i][1]:
         _____
       __ idx __ l..(tails
         tails.a..(envelopes[i][1])

@@ -3,7 +3,7 @@ BOOK_PRICE = 8
 
 ___ _group_price(size
     discounts = [0, .05, .1, .2, .25]
-    __ n.. (0 < size <= 5
+    __ n.. (0 < size <_ 5
         r.. V...('size must be in 1..' + l..(discounts
     r.. 8 * size * (1 - discounts[size - 1])
 

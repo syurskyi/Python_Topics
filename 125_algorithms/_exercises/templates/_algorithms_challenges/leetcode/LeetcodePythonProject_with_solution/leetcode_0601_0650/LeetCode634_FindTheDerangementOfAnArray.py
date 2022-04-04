@@ -10,7 +10,7 @@ c_ Solution(o..
         :rtype: int
         """
         dn1, dn2 = 1, 0
-        __ n <= 1: r.. 0
+        __ n <_ 1: r.. 0
         res = 1
         ___ i __ r..(3, n+1
             res = ((i-1)*(dn1+dn2%(10**9+7)

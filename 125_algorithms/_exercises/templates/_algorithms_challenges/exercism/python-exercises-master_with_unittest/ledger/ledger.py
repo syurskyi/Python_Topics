@@ -101,7 +101,7 @@ ___ format_entries(currency, locale, entries
                 __ entry.change < 0:
                     change_str = '('
                 change_str += '$'
-                change_dollar = abs(i..(entry.change / 100.0
+                change_dollar = a..(i..(entry.change / 100.0
                 dollar_parts    # list
                 w.... change_dollar > 0:
                     dollar_parts.insert(0, s..(change_dollar % 1000
@@ -116,7 +116,7 @@ ___ format_entries(currency, locale, entries
                             _____
                         change_str += ','
                 change_str += '.'
-                change_cents = abs(entry.change) % 100
+                change_cents = a..(entry.change) % 100
                 change_cents = s..(change_cents)
                 __ l..(change_cents) < 2:
                     change_cents = '0' + change_cents
@@ -133,7 +133,7 @@ ___ format_entries(currency, locale, entries
                 __ entry.change < 0:
                     change_str = '('
                 change_str += u'€'
-                change_euro = abs(i..(entry.change / 100.0
+                change_euro = a..(i..(entry.change / 100.0
                 euro_parts    # list
                 w.... change_euro > 0:
                     euro_parts.insert(0, s..(change_euro % 1000
@@ -148,7 +148,7 @@ ___ format_entries(currency, locale, entries
                             _____
                         change_str += ','
                 change_str += '.'
-                change_cents = abs(entry.change) % 100
+                change_cents = a..(entry.change) % 100
                 change_cents = s..(change_cents)
                 __ l..(change_cents) < 2:
                     change_cents = '0' + change_cents
@@ -243,7 +243,7 @@ ___ format_entries(currency, locale, entries
                 change_str = '$ '
                 __ entry.change < 0:
                     change_str += '-'
-                change_dollar = abs(i..(entry.change / 100.0
+                change_dollar = a..(i..(entry.change / 100.0
                 dollar_parts    # list
                 w.... change_dollar > 0:
                     dollar_parts.insert(0, s..(change_dollar % 1000
@@ -258,7 +258,7 @@ ___ format_entries(currency, locale, entries
                             _____
                         change_str += '.'
                 change_str += ','
-                change_cents = abs(entry.change) % 100
+                change_cents = a..(entry.change) % 100
                 change_cents = s..(change_cents)
                 __ l..(change_cents) < 2:
                     change_cents = '0' + change_cents
@@ -271,7 +271,7 @@ ___ format_entries(currency, locale, entries
                 change_str = u'€ '
                 __ entry.change < 0:
                     change_str += '-'
-                change_euro = abs(i..(entry.change / 100.0
+                change_euro = a..(i..(entry.change / 100.0
                 euro_parts    # list
                 w.... change_euro > 0:
                     euro_parts.insert(0, s..(change_euro % 1000
@@ -286,7 +286,7 @@ ___ format_entries(currency, locale, entries
                             _____
                         change_str += '.'
                 change_str += ','
-                change_cents = abs(entry.change) % 100
+                change_cents = a..(entry.change) % 100
                 change_cents = s..(change_cents)
                 __ l..(change_cents) < 2:
                     change_cents = '0' + change_cents

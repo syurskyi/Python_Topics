@@ -20,7 +20,7 @@ c_ Solution(o..
       right = dfs(p.right)
       __ left __ -1 o. right __ -1:
         r.. -1
-      __ abs(left - right) > 1:
+      __ a..(left - right) > 1:
         r.. -1
       r.. 1 + m..(left, right)
 

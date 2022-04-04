@@ -14,7 +14,7 @@ c_ Solution:
 
         w.... left < n a.. s[left] __ ' ':
             left += 1
-        w.... right >= 0 a.. s[right] __ ' ':
+        w.... right >_ 0 a.. s[right] __ ' ':
             right -= 1
 
         __ left < n a.. s[left] __ ('+', '-'
@@ -29,7 +29,7 @@ c_ Solution:
         nine = o..('9')
         INT_MAX = 0x7FFFFFFF
         INT_MIN = -0x80000000
-        w.... left <= right a.. zero <= o..(s[left]) <= nine:
+        w.... left <_ right a.. zero <_ o..(s[left]) <_ nine:
             ans = ans * 10 + o..(s[left]) - zero
             left += 1
 

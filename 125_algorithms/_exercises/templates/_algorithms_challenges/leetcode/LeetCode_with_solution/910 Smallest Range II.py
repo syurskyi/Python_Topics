@@ -65,9 +65,9 @@ c_ Solution:
         ___ a __ A:
             diffs = [(a + K) - upper, lower - (a - K)]
             cur_diff = m..(diffs)
-            __ cur_diff __ diffs[0] a.. cur_diff >= max_upper_diff:
+            __ cur_diff __ diffs[0] a.. cur_diff >_ max_upper_diff:
                 max_upper_diff = cur_diff
-            ____ cur_diff __ diffs[1] a.. cur_diff >= max_lower_diff:
+            ____ cur_diff __ diffs[1] a.. cur_diff >_ max_lower_diff:
                 max_lower_diff = cur_diff
 
         r.. upper + max_upper_diff - (lower + max_lower_diff)

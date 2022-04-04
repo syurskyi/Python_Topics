@@ -31,8 +31,8 @@ c_ Solution:
             _y = y + dy
 
             __ n.. (
-                0 <= _x < m a..
-                0 <= _y < n a..
+                0 <_ _x < m a..
+                0 <_ _y < n a..
                 grid[_x][_y] __ 1
 
                 _____

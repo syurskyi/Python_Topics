@@ -10,6 +10,6 @@ ___ get_files(dirname, size_in_kb
         ___ name __ files:
             f = __.p...j..(root, name)
             size = __.p...getsize(f) / ONE_KB
-            __  size >= size_in_kb:
+            __  size >_ size_in_kb:
                 output.a..(f)
     r.. output

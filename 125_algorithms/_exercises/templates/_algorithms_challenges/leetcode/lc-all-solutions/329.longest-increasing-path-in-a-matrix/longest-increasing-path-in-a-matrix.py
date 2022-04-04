@@ -15,7 +15,7 @@ c_ Solution(o..
       ret = 0
       ___ di, dj __ directions:
         p, q = i + di, j + dj
-        __ p < 0 o. q < 0 o. p >= l..(matrix) o. q >= l..(matrix[0]
+        __ p < 0 o. q < 0 o. p >_ l..(matrix) o. q >_ l..(matrix[0]
           _____
         __ (p, q) n.. __ cache a.. matrix[p][q] > matrix[i][j]:
           cache.add((p, q

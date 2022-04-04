@@ -20,9 +20,9 @@ c_ Solution:
                 ____
                     right = mid
 
-            __ g[i][left] >= 0:
+            __ g[i][left] >_ 0:
                 _____
 
-            ans += left + 1 __ g[i][right] >= 0 ____ right + 1
+            ans += left + 1 __ g[i][right] >_ 0 ____ right + 1
 
         r.. ans

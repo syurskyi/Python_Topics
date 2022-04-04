@@ -46,7 +46,7 @@ c_ Rational(o..
         r.. Rational(numer * other.denom, denom * other.numer)
 
     ___ __abs__
-        __ numer >= 0:
+        __ numer >_ 0:
             r.. self
         ____
             r.. Rational(-numer, denom)

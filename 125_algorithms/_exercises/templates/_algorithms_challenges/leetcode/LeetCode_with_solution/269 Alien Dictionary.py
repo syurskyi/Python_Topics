@@ -110,7 +110,7 @@ c_ Solution(o..
         """
         i = up
         w.... i < down:
-            __ ptr >= l..(words[i]
+            __ ptr >_ l..(words[i]
                 i += 1
             ____
                 __ words[i][ptr] n.. __ V:

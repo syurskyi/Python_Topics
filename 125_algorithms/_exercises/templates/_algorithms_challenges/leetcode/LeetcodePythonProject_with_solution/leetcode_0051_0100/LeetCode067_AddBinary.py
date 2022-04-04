@@ -23,7 +23,7 @@ c_ Solution(o..
         result = ''
         i1, i2 = length1-1, length2-1
         carry = F..
-        w.... i2 >= 0:
+        w.... i2 >_ 0:
             c1 = a[i1]
             c2 = b[i2]
             __ c1 __ '0' a.. c2 __ '0':

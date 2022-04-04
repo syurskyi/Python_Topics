@@ -55,7 +55,7 @@ ___ _get_date(date_str
 
 
 ___ _was_alive(composer, date
-    r.. _get_date(composer.born) <= _get_date(date) < _get_date(composer.died)
+    r.. _get_date(composer.born) <_ _get_date(date) < _get_date(composer.died)
 
 
 ___ operas_both_at_premiere(guest, composer

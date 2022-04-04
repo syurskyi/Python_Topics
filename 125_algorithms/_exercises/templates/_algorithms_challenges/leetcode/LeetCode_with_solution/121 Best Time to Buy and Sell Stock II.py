@@ -19,7 +19,7 @@ c_ Solution:
         :param prices: list of integers
         :return: integer
         """
-        __ l..(prices) <= 1:
+        __ l..(prices) <_ 1:
             r.. 0
 
         delta_prices    # list  # \delta

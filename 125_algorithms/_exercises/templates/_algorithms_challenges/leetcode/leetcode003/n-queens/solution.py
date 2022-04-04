@@ -21,7 +21,7 @@ c_ Solution:
             c = columns[r]
             __ c __ col:
                 r.. F..
-            __ abs(c - col) __ row - r:
+            __ a..(c - col) __ row - r:
                 r.. F..
         r.. T..
 

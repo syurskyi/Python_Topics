@@ -19,6 +19,6 @@ c_ Solution(o..
       leftSum, leftTilt = dfs(root.left)
       rightSum, rightTilt = dfs(root.right)
 
-      r.. leftSum + root.val + rightSum, abs(leftSum - rightSum) + leftTilt + rightTilt
+      r.. leftSum + root.val + rightSum, a..(leftSum - rightSum) + leftTilt + rightTilt
 
     r.. dfs(root)[1]

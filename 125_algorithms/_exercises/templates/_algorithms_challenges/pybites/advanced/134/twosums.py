@@ -6,7 +6,7 @@ ___ bs(numbers,value
     low,high = 0,l..(numbers) - 1
 
 
-    w.... low <= high:
+    w.... low <_ high:
         mid = (low + high)//2
 
         __ numbers[mid] __ value:

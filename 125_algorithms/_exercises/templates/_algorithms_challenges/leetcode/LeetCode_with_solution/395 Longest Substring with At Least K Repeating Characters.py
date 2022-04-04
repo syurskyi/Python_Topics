@@ -45,7 +45,7 @@ c_ Solution(o..
             key=l.... x: cnt[x],
         )
 
-        __ cnt[c] >= k:
+        __ cnt[c] >_ k:
             r.. l..(s)
 
         r.. m..(

@@ -69,7 +69,7 @@ c_ LRUCache(o..
       d[key].hit()
       d[key].value = value
     ____
-      __ l..(d) >= cap:
+      __ l..(d) >_ cap:
         oldNode = L...delete(head.next)
         del d[oldNode.key]
 

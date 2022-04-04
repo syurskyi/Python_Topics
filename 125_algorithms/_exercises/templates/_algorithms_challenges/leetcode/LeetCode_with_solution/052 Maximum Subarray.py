@@ -31,7 +31,7 @@ c_ Solution:
         max_result = -1<<31
         current_max = 0
         ___ i __ r..(l..(A:
-            __ current_max+A[i]>=0:
+            __ current_max+A[i]>_0:
                 current_max+=A[i]
             ____
                 current_max = 0

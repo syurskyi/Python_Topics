@@ -17,11 +17,11 @@ c_ Solution:
     ___ dfs  A, start, ans, subset
         ans.a..(subset | )
 
-        __ start >= l..(A
+        __ start >_ l..(A
             r..
 
         ___ i __ r..(start, l..(A:
-            __ i - 1 >= start a.. A[i] __ A[i - 1]:
+            __ i - 1 >_ start a.. A[i] __ A[i - 1]:
                 _____
 
             dfs(A, i + 1, ans, subset + [A[i]])

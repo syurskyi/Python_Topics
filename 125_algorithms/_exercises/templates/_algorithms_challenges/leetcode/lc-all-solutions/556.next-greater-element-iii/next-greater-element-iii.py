@@ -21,6 +21,6 @@ c_ Solution(o..
     n = i..("".j..(n
     print
     n
-    __ n <= num o. n > 0x7fffffff:
+    __ n <_ num o. n > 0x7fffffff:
       r.. -1
     r.. n

@@ -105,7 +105,7 @@ c_ Solution:
 
         global_max = -1<<32
         ___ ind, val __ e..(height
-            __ ind+1<l..(height) a.. val<=height[ind+1]:  # PRUNE, find until peak
+            __ ind+1<l..(height) a.. val<_height[ind+1]:  # PRUNE, find until peak
                 _____
 
             min_h = val
@@ -137,7 +137,7 @@ c_ Solution:
 
         i = 0
         w.... i<length:
-            __ n.. inc_stack o. height[i]>=height[inc_stack[-1]]:
+            __ n.. inc_stack o. height[i]>_height[inc_stack[-1]]:
                 inc_stack.a..(i)
                 i += 1
             ____

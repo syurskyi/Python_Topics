@@ -11,7 +11,7 @@ ___ meetup_day(year, month, day_of_the_week, which
 
 ___ _choice(which
     __ which __ 'teenth':
-        r.. l.... dates: next(d ___ d __ dates __ 13 <= d.day <= 19)
+        r.. l.... dates: next(d ___ d __ dates __ 13 <_ d.day <_ 19)
 
     ix = -1 __ (which __ 'last') ____ (i..(which[0]) - 1)
     r.. l.... dates: dates[ix]

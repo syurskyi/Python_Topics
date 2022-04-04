@@ -36,7 +36,7 @@ c_ MiniCassandra:
         result = [
             column
             ___ column_key, column __ storage[raw_key].i..
-            __ column_start <= column_key <= column_end
+            __ column_start <_ column_key <_ column_end
         ]
 
         r.. s..(result, key=l.... column: column.key)

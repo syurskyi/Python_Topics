@@ -23,7 +23,7 @@ c_ Solution:
             ___ w __ r..(1, m + 1
                 dp[curr][w] = dp[prev][w]
 
-                __ w >= A[i - 1]:
+                __ w >_ A[i - 1]:
                     dp[curr][w] = m..(
                         dp[curr][w],
                         dp[prev][w - A[i - 1]] + V[i - 1]
@@ -53,7 +53,7 @@ c_ Solution:
             ___ w __ r..(1, m + 1
                 dp[i][w] = dp[i - 1][w]
 
-                __ w >= A[i - 1]:
+                __ w >_ A[i - 1]:
                     dp[i][w] = m..(
                         dp[i][w],
                         dp[i - 1][w - A[i - 1]] + V[i - 1]

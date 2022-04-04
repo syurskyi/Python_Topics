@@ -5,7 +5,7 @@ ___ handshake(s
     s = l..(sanitize(s
     s.r..
     seq    # list
-    lim = l..(s) __ l..(s) <= l..(gestures) ____ l..(gestures)
+    lim = l..(s) __ l..(s) <_ l..(gestures) ____ l..(gestures)
     ___ i1 __ r..(lim
         __ s[i1] __ '1':
             seq.a..(gestures[i1])

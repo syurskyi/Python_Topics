@@ -22,6 +22,6 @@ ___ _cleanse(s
 
 
 ___ _chunks_of(s, n
-    __ l..(s) <= n:
+    __ l..(s) <_ n:
         r.. [s]
-    r.. [s[:n]] + _chunks_of(s[n:], n)
+    r.. [s |?]] + _chunks_of(s[n:], n)

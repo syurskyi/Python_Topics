@@ -59,9 +59,9 @@ ___ is_row_all_empty(row
 ___ get_living_neighbours(cells, row, col
     livings = 0
     ___ r __ [-1, 0, 1]:
-        __ 0 <= row + r <= l..(cells) - 1:
+        __ 0 <_ row + r <_ l..(cells) - 1:
             ___ c __ [-1, 0, 1]:
-                __ 0 <= col + c <= l..(cells[0]) - 1:
+                __ 0 <_ col + c <_ l..(cells[0]) - 1:
                     __ c __ 0 a.. r __ 0:
                         _____
                     livings += cells[row + r][col + c]

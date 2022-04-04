@@ -12,7 +12,7 @@ c_ Solution(o..
         dp = [[F..]*n ___ _ __ r..(n)]
         ___ i __ r..(n
             ___ j __ r..(i, -1, -1
-                __ s[i] __ s[j] a.. (i-j<=1 o. dp[i-1][j+1]
+                __ s[i] __ s[j] a.. (i-j<_1 o. dp[i-1][j+1]
                     dp[i][j] = T..
                     __ i-j+1 > l..(res
                         res = s[j:i+1]
@@ -27,7 +27,7 @@ c_ Solution(o..
         ___ l __ r..(length
             ___ i __ r..(length-l
                 j = i+l
-                __ s[i] __ s[j] a.. (j-i<=2 o. table[i+1][j-1]
+                __ s[i] __ s[j] a.. (j-i<_2 o. table[i+1][j-1]
                     table[i][j] = T..
                     __ j-i+1 > maxLen:
                         maxLen = j-i+1

@@ -19,7 +19,7 @@ c_ Solution(o..
         arr = [0]*26
         ___ i, c __ e..(s
             arr[o..(c)-o..('a')] += 1
-            w.... left <= i a.. arr[o..(c)-o..('a')] > arr0[o..(c)-o..('a')]:
+            w.... left <_ i a.. arr[o..(c)-o..('a')] > arr0[o..(c)-o..('a')]:
                 arr[o..(s[left])-o..('a')] -= 1
                 left += 1
             __ i-left+1 __ l..(p

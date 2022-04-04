@@ -30,11 +30,11 @@ c_ Solution(o..
             hashmap[root] = 0
             r.. 0
         left = find(root.left, target, hashmap)
-        __ left >= 0:
+        __ left >_ 0:
             hashmap[root] = left+1
             r.. left+1
         right = find(root.right, target, hashmap)
-        __ right >= 0:
+        __ right >_ 0:
             hashmap[root] = right+1
             r.. right+1
         r.. -1

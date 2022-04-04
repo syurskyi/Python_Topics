@@ -9,7 +9,7 @@ c_ Solution:
 
         left, right = 0, l..(A) - 1
         i = 0
-        w.... i <= right:
+        w.... i <_ right:
             __ A[i] __ 0:
                 A[left], A[i] = A[i], A[left]
                 left += 1

@@ -31,7 +31,7 @@ c_ Solution:
 
             # jump forward
             ___ i __ x..(ind+1, ind+val+1
-                __ i>=length:
+                __ i>_length:
                     _____
                 ___ item __ dp[ind]:
                     dp[i].add(item)
@@ -76,7 +76,7 @@ c_ Solution:
         """
         l = l..(A)
         # trivial
-        __ l<=1:
+        __ l<_1:
             r.. T..
 
         # dp = [-1]*(l-1)  # normally starting from \phi
@@ -86,7 +86,7 @@ c_ Solution:
         ___ i __ x..(1, l
             # check terminal condition first
             # able to reach the end index
-            __ dp[i-1]>=l-1:  # directly reach the end
+            __ dp[i-1]>_l-1:  # directly reach the end
                 r.. T..
 
             # fail to reach current index

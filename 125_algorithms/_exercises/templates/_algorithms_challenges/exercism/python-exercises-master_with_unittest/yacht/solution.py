@@ -27,7 +27,7 @@ ___ full_house(dice
 ___ four_of_a_kind(dice
     counter = C..(dice)
     number, count = counter.most_common()[0]
-    r.. 4 * number __ count >= 4 ____ 0
+    r.. 4 * number __ count >_ 4 ____ 0
 
 
 ___ little_straight(dice

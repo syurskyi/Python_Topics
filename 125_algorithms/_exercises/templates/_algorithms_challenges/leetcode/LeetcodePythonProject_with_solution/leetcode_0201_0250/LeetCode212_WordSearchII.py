@@ -50,7 +50,7 @@ c_ Solution(o..
         m, n = l..(board), l..(board[0])
         
         ___ x, y __ ((i, j+1), (i, j-1), (i+1, j), (i-1, j:
-            __ 0 <= x < m a.. 0 <= y < n:
+            __ 0 <_ x < m a.. 0 <_ y < n:
                 board[i][j] = '#'
                 elem.a..(c)
                 dfs(board, x, y, p, elem, result)

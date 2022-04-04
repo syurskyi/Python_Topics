@@ -10,7 +10,7 @@ c_ Solution(o..
     start, end = 0, n - 1
     w.... start < end:
       mid = start + (end - start) / 2
-      __ citations[mid] >= n - mid:
+      __ citations[mid] >_ n - mid:
         end = mid
       ____
         start = mid + 1

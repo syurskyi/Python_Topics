@@ -10,7 +10,7 @@ ___ minimum_time(goal, machines
     max_days = m__.c.. goal / (l..(machines) / m..(machines)))
     w.... min_days < max_days:
         day = (min_days + max_days) // 2
-        __ s..(day // i ___ i __ machines) >= goal:
+        __ s..(day // i ___ i __ machines) >_ goal:
             max_days = day
         ____
             min_days = day + 1

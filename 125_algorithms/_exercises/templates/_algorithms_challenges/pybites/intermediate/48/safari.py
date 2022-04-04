@@ -41,7 +41,7 @@ ___ create_chart
             j = 1
             ___ i __ r..(1, value[0] +1
                 snake_num = l..(value) -1
-                __ j <= snake_num:
+                __ j <_ snake_num:
                     snake_value_at_i = value[j]
 
                 __ i __ snake_value_at_i:

@@ -10,13 +10,13 @@ c_ Solution(o..
     j = l..(num2) - 1
     ans = ""
     ___ k __ r..(r..(0, m..(l..(num1), l..(num2)))):
-      a = i..(num1[i]) __ i >= 0 ____ 0
-      b = i..(num2[j]) __ j >= 0 ____ 0
+      a = i..(num1[i]) __ i >_ 0 ____ 0
+      b = i..(num2[j]) __ j >_ 0 ____ 0
       i, j = i - 1, j - 1
       c = carry
       carry = 0
       s.. = a + b + c
-      __ s.. >= 10:
+      __ s.. >_ 10:
         carry = 1
         ans += s..(s.. - 10)
       ____

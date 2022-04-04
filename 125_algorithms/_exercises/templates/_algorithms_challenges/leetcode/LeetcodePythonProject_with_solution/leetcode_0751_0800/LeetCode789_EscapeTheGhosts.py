@@ -10,10 +10,10 @@ c_ Solution(o..
         :type target: List[int]
         :rtype: bool
         """
-        maxVal = abs(target[0])+abs(target[1])
+        maxVal = a..(target[0])+a..(target[1])
         ___ g __ ghosts:
-            d = abs(g[0]-target[0])+abs(g[1]-target[1])
-            __ d <= maxVal:
+            d = a..(g[0]-target[0])+a..(g[1]-target[1])
+            __ d <_ maxVal:
                 r.. F..
         r.. T..
     

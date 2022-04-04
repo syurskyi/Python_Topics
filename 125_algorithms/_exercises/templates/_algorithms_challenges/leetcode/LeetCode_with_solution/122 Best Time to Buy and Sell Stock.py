@@ -14,7 +14,7 @@ c_ Solution(o..
         DP version
         Let F[i] be the maximum subarray sum ending at A[i-1]
         """
-        __ l..(A) <= 1:
+        __ l..(A) <_ 1:
             r.. 0
 
         n = l..(A)
@@ -38,7 +38,7 @@ c_ Solution(o..
         :param prices: a list of integer
         :return: integer, max profit
         """
-        __ l..(prices) <= 1:
+        __ l..(prices) <_ 1:
             r.. 0
         delta_prices    # list
         ___ i __ x..(1, l..(prices:

@@ -10,6 +10,6 @@ c_ Solution(o..
 
     ___ i __ r..(1, target + 1
       ___ j __ r..(1, l..(nums) + 1
-        __ i - nums[j - 1] >= 0:
+        __ i - nums[j - 1] >_ 0:
           dp[i] += dp[i - nums[j - 1]]
     r.. dp[-1]

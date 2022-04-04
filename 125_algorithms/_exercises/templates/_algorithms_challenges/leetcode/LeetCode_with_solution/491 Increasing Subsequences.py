@@ -32,14 +32,14 @@ c_ Solution:
             subs |= s..([
                 sub + (n,)
                 ___ sub __ subs
-                __ n >= sub[-1]
+                __ n >_ sub[-1]
             ])
             subs.add((n,
             
         r.. [
             l..(sub)
             ___ sub __ subs
-            __ l..(sub) >= 2
+            __ l..(sub) >_ 2
         ]
 
 
@@ -61,7 +61,7 @@ c_ Solution:
         ret = s..()
         ___ i __ r..(1, l
             ___ j __ r..(i
-                __ nums[i] >= nums[j]:
+                __ nums[i] >_ nums[j]:
                     ___ t __ F[j]:
                         cur = t + (nums[i],)
                         ret.add(cur)

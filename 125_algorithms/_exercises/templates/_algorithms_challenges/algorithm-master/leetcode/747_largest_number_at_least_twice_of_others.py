@@ -18,7 +18,7 @@ c_ Solution:
             __ A[i] > __max:
                 __max = A[i]
 
-        __ _max >= __max * 2:
+        __ _max >_ __max * 2:
             r.. _max_i
 
         r.. -1

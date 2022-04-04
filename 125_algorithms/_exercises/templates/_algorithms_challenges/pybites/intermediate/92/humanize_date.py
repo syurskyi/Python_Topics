@@ -26,9 +26,9 @@ ___ pretty_date(date
     __ date_delta.days __ 0:
         __ date_delta.seconds < 10:
             r.. TIME_OFFSETS[0].date_str
-        ____ date_delta.seconds >= 10 a.. date_delta.seconds < MINUTE:
+        ____ date_delta.seconds >_ 10 a.. date_delta.seconds < MINUTE:
             r.. TIME_OFFSETS[1].date_str.f..(date_delta.seconds)
-        ____ date_delta.seconds >= MINUTE a.. date_delta.seconds < 2 * MINUTE:
+        ____ date_delta.seconds >_ MINUTE a.. date_delta.seconds < 2 * MINUTE:
             r.. TIME_OFFSETS[2].date_str
         ____ date_delta.seconds < HOUR:
             r.. TIME_OFFSETS[3].date_str.f..(date_delta.seconds // MINUTE)
@@ -37,7 +37,7 @@ ___ pretty_date(date
         ____ date_delta.seconds > HOUR:
             r.. TIME_OFFSETS[5].date_str.f..(date_delta.seconds // HOUR)
     ____
-        __ date_delta.days __ 1 a.. date_delta.seconds >= 0:
+        __ date_delta.days __ 1 a.. date_delta.seconds >_ 0:
             r.. TIME_OFFSETS[6].date_str
         ____
             r.. (NOW - date_delta).s..("%m/%d/%y")

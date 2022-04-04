@@ -37,7 +37,7 @@ c_ Solution(o..
         res[3] = m..(res[3], j)
         m, n = l..(grid), l..(grid[0])
         ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1
-            __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y] __ 1:
+            __ 0 <_ x < m a.. 0 <_ y < n a.. grid[x][y] __ 1:
                 grid[x][y] = 2
                 helper(grid, x, y, res)
     

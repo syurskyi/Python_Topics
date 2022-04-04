@@ -43,7 +43,7 @@ c_ Solution:
         w.... j < n:
             w.... j < n a.. S[i] __ S[j]:
                 j += 1
-            __ j - i >= 3:
+            __ j - i >_ 3:
                 ret.a..([i, j - 1])
             i = j
 

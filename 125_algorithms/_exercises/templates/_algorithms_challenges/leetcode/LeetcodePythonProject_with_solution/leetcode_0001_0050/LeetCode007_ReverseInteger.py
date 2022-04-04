@@ -10,8 +10,8 @@ c_ Solution(o..
         :rtype: int
         """
         res = 0
-        sig = 1 __ x >= 0 ____ -1
-        x = abs(x)
+        sig = 1 __ x >_ 0 ____ -1
+        x = a..(x)
         w.... x > 0:
             digit = x%10
             res = res*10 + digit

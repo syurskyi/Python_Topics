@@ -14,7 +14,7 @@ c_ Solution(o..
       __ c __ wanted:
         deq.a..(i)
         d[c] = d.g.. c, 0) + 1
-        __ d[c] <= wanted[c]:
+        __ d[c] <_ wanted[c]:
           score += 1
         w.... deq a.. d[s[deq[0]]] > wanted[s[deq[0]]]:
           d[s[deq.popleft()]] -= 1

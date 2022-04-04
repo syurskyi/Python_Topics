@@ -4,7 +4,7 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: int
     """
-    __ l..(nums) <= 1:
+    __ l..(nums) <_ 1:
       r.. l..(nums)
     slow = 0
     ___ i __ r..(1, l..(nums:

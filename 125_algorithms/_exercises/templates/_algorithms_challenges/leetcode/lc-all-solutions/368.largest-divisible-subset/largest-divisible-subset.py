@@ -15,12 +15,12 @@ c_ Solution(o..
       maxLen, maxLenIdx = -1, -1
       ___ j __ r..(0, i
         __ nums[i] % nums[j] __ 0:
-          __ dp[j] >= maxLen:
+          __ dp[j] >_ maxLen:
             maxLen = dp[j]
             maxLenIdx = j
       dp[i] = maxLen + 1
       p..[i] = maxLenIdx
-      __ dp[i] >= finalMaxLen:
+      __ dp[i] >_ finalMaxLen:
         finalMaxLen = dp[i]
         finalMaxLenIdx = i
 

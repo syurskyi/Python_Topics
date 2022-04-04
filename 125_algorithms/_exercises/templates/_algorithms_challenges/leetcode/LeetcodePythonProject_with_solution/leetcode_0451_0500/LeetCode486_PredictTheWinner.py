@@ -18,7 +18,7 @@ c_ Solution(o..
             ___ i __ r..(n-l
                 j = i+l
                 dp[i][j] = m..(nums[i]-dp[i+1][j], nums[j]-dp[i][j-1])
-        r.. dp[0][n-1] >= 0
+        r.. dp[0][n-1] >_ 0
     
     ___ PredictTheWinner_DnC  nums
         """
@@ -26,7 +26,7 @@ c_ Solution(o..
         :rtype: bool
         """
         mem    # dict
-        r.. helper(nums, 0, l..(nums)-1) >= 0
+        r.. helper(nums, 0, l..(nums)-1) >_ 0
     
     ___ helper  nums, start, end
         n = l..(nums)

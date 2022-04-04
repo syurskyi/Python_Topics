@@ -42,7 +42,7 @@ c_ Solution:
             w.... i_hi < j a.. (sum_hi > S o. sum_hi __ S a.. A[i_hi] __ 0
                 sum_hi -= A[i_hi]
                 i_hi += 1
-            ... i_hi >= i_lo
+            ... i_hi >_ i_lo
             __ sum_lo __ S:
                 ... sum_hi __ S
                 ret += i_hi - i_lo + 1
@@ -65,17 +65,17 @@ c_ Solution:
                 j += 1
             ____ cur_sum __ S:
                 ret += 1
-                w.... i <= j a.. A[i] __ 0:
+                w.... i <_ j a.. A[i] __ 0:
                     i += 1
                     ret += 1
                 j += 1
             ____
-                w.... i <= j a.. cur_sum > S:
+                w.... i <_ j a.. cur_sum > S:
                     cur_sum -= A[i]
                     i += 1
                 __ cur_sum __ S:
                     ret += 1
-                    w.... i <= j a.. A[i] __ 0:
+                    w.... i <_ j a.. A[i] __ 0:
                         i += 1
                         ret += 1
                 j += 1

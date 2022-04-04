@@ -5,7 +5,7 @@ c_ Solution(o..
     :type numRows: int
     :rtype: str
     """
-    __ numRows <= 1:
+    __ numRows <_ 1:
       r.. s
     n = l..(s)
     ans    # list
@@ -14,7 +14,7 @@ c_ Solution(o..
       one = i
       two = -i
       w.... one < n o. two < n:
-        __ 0 <= two < n a.. one != two a.. i != numRows - 1:
+        __ 0 <_ two < n a.. one != two a.. i != numRows - 1:
           ans.a..(s[two])
         __ one < n:
           ans.a..(s[one])

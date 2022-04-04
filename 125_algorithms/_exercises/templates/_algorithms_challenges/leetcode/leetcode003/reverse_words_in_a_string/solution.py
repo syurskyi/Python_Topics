@@ -16,7 +16,7 @@ c_ Solution:
         # Process spaces
         i = 0
         j = l..(s) - 1
-        w.... i <= j:
+        w.... i <_ j:
             __ ls[i] != ' ' a.. ls[j] != ' ':
                 _____
             __ ls[i] __ ' ':
@@ -61,7 +61,7 @@ c_ Solution:
         # Remove leading and trailing spaces
         left = 0
         right = n - 1
-        w.... left <= right a.. (cs[left] __ ' ' o. cs[right] __ ' '
+        w.... left <_ right a.. (cs[left] __ ' ' o. cs[right] __ ' '
             __ cs[left] __ ' ':
                 left += 1
             __ cs[right] __ ' ':
@@ -81,14 +81,14 @@ c_ Solution:
         # Reverse each word
         start = left
         q = start
-        w.... q <= right:
-            w.... q <= right a.. cs[q] != ' ':
+        w.... q <_ right:
+            w.... q <_ right a.. cs[q] != ' ':
                 q += 1
             # q - 1 is the end index of the word
             reverse(cs, start, q - 1)
             # Start of next word
             start = q
-            w.... start <= right a.. cs[start] __ ' ':
+            w.... start <_ right a.. cs[start] __ ' ':
                 start += 1
             q = start
         r.. ''.j..(cs[left:right + 1])

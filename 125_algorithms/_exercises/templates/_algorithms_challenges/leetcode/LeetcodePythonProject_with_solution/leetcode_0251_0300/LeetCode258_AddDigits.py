@@ -12,7 +12,7 @@ c_ Solution(o..
         r.. num-9*((num-1)/9) __ num != 0 ____ 0
     
     ___ addDigits_slow  num
-        w.... num >= 10:
+        w.... num >_ 10:
             newNum = 0
             w.... num > 0:
                 digit = num%10

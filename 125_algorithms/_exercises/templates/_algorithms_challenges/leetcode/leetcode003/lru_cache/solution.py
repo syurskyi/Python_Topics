@@ -39,7 +39,7 @@ c_ LRUCache:
         __ key __ cache:
             times[key] = timestamp
         ____
-            __ l..(cache) >= capacity:
+            __ l..(cache) >_ capacity:
                 lru_key = get_lru_key()
                 del cache[lru_key]
                 del times[lru_key]
@@ -50,7 +50,7 @@ c_ LRUCache:
         min_time = timestamp
         res = N..
         ___ key __ times:
-            __ times[key] <= min_time:
+            __ times[key] <_ min_time:
                 res = key
                 min_time = times[key]
         r.. res

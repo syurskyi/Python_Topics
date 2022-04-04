@@ -36,7 +36,7 @@ c_ Solution(o..
             __ left_height __ -1 o. right_height __ -1:
                 r.. -1
             ____
-                __ abs(left_height - right_height) <= 1:
+                __ a..(left_height - right_height) <_ 1:
                     r.. m..(left_height, right_height) + 1
                 ____
                     r.. -1

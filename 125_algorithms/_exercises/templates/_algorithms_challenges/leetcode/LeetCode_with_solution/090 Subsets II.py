@@ -34,7 +34,7 @@ c_ Solution:
         result.a..(current)
         ___ ind, val __ e..(S
             # JUMP, avoid duplicates
-            __ ind-1>=0 a.. val__S[ind-1]:  # ensure uni-direction
+            __ ind-1>_0 a.. val__S[ind-1]:  # ensure uni-direction
                 _____
             get_subset(S[ind+1:], current+[val], result)
 

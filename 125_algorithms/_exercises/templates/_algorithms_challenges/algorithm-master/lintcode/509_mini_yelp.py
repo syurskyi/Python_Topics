@@ -117,7 +117,7 @@ c_ MiniYelp:
             hashcode = geohashs[i]
             restaurant = restaurants[hashcode]
             distance = Helper.get_distance(location, restaurant.location)
-            __ distance <= k:
+            __ distance <_ k:
                 neighbors.a..((distance, restaurant
 
         neighbors.s..(key=l.... item: item[0])
@@ -246,7 +246,7 @@ c_ MiniYelp:
         ___ hashcode __ hashcodes:
             restaurant = restaurants[hashcode]
             distance = Helper.get_distance(location, restaurant.location)
-            __ distance <= k:
+            __ distance <_ k:
                 neighbors.a..((distance, restaurant
 
         neighbors.s..(key=l.... item: item[0])

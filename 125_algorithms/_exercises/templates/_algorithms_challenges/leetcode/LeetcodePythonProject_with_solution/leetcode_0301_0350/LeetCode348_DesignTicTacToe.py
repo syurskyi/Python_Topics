@@ -19,9 +19,9 @@ c_ TicTacToe(o..
         __ col __ l..(cols)-1-row:
             antiDiagonal += toAdd
         n = l..(cols)
-        __ abs(rows[row]) __ n o.\
-            abs(cols[col]) __ n o.\
-            abs(diagonal) __ n o.\
-            abs(antiDiagonal) __ n:
+        __ a..(rows[row]) __ n o.\
+            a..(cols[col]) __ n o.\
+            a..(diagonal) __ n o.\
+            a..(antiDiagonal) __ n:
             r.. player
         r.. 0

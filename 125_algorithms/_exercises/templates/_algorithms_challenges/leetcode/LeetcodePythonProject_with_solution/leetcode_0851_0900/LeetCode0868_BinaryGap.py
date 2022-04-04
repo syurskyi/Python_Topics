@@ -16,7 +16,7 @@ c_ Solution(o..
         w.... n > 0:
             d = n % 2
             __ d __ 1:
-                __ prev >= 0:
+                __ prev >_ 0:
                     res = m..(res, i-prev)
                 prev = i
             n //= 2

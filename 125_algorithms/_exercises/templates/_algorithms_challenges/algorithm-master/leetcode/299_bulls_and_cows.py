@@ -24,9 +24,9 @@ c_ Solution:
             cnts[s] += 1
             cnts[g] -= 1
 
-            __ cnts[s] <= 0:
+            __ cnts[s] <_ 0:
                 cows += 1
-            __ cnts[g] >= 0:
+            __ cnts[g] >_ 0:
                 cows += 1
 
         r.. TMPL.f..(bulls, cows)

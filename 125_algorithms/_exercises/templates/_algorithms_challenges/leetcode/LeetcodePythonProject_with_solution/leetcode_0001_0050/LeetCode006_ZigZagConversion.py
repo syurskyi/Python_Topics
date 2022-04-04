@@ -10,7 +10,7 @@ c_ Solution(o..
         :type numRows: int
         :rtype: str
         """
-        __ n.. s o. l..(s) <= 1 o. numRows __ 1:
+        __ n.. s o. l..(s) <_ 1 o. numRows __ 1:
             r.. s
         step = 2*numRows-2
         res = ''

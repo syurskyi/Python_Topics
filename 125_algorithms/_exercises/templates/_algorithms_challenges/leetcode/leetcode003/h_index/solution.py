@@ -31,7 +31,7 @@ c_ Solution(o..
         ___ i, c __ e..(citations
             lowest  c
             count  i + 1
-            __ lowest >= count:
+            __ lowest >_ count:
                 h = count
             ____
                 _____

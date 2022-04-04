@@ -39,7 +39,7 @@ c_ Solution:
 
         ___ i __ r..(l..(L:
             pieces += L[i] // size
-            __ pieces >= max_pieces:
+            __ pieces >_ max_pieces:
                 r.. T..
 
         r.. F..

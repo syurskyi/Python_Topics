@@ -14,7 +14,7 @@ c_ Solution(o..
         r.. helper(l)
     
     ___ helper  l
-        __ l..(l) <= 2:
+        __ l..(l) <_ 2:
             r.. '(%s,%s)' % (l[0], l[1])
         l0    # list
         w.... l:

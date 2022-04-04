@@ -40,14 +40,14 @@ c_ Solution:
 
     ___ dfs  board, visited, i, j, word, idx
         visited[i][j] = T..
-        __ idx >= l..(word
+        __ idx >_ l..(word
             r.. T..
 
         m, n = l..(board), l..(board[0])
         ___ di, dj __ dirs:
             I = i + di
             J = j + dj
-            __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J] a.. board[I][J] __ word[idx]:
+            __ 0 <_ I < m a.. 0 <_ J < n a.. n.. visited[I][J] a.. board[I][J] __ word[idx]:
                 __ dfs(board, visited, I, J, word, idx + 1
                     r.. T..
 

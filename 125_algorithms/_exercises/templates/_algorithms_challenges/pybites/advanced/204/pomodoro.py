@@ -93,7 +93,7 @@ async ___ main(
     g.. CURRENT_SESSION
     print(f"Pomodor timer started at: {time.s..('%X')}")
 
-    w.... CURRENT_SESSION <= 4:
+    w.... CURRENT_SESSION <_ 4:
         print(f"\nSession: {CURRENT_SESSION}")
         await session(work_length, short_break_length, long_break_length)
         __ CURRENT_SESSION __ 2:

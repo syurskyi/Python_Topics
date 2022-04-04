@@ -4,7 +4,7 @@ ___ binary_search(sequence, target
     low,high = 0,l..(sequence) - 1
 
 
-    w.... low <= high:
+    w.... low <_ high:
         mid = (low + high)//2
 
 

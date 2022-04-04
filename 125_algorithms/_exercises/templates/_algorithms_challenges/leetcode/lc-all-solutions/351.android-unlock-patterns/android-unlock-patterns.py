@@ -7,7 +7,7 @@ c_ Solution(o..
     """
 
     ___ dfs(m, n, prev, visited, length
-      __ m <= length <= n:
+      __ m <_ length <_ n:
         ans += 1
 
       __ length __ n:
@@ -17,7 +17,7 @@ c_ Solution(o..
         __ i n.. __ visited:
           x, y, xp, yp = (i - 1) / 3, (i - 1) % 3, (prev - 1) / 3, (prev - 1) % 3
           __ (5 n.. __ visited a.. (x + xp, y + yp) __ (2, 2 o. (
-            (x __ xp a.. abs(y - yp) __ 2) o. (y __ yp a.. abs(x - xp) __ 2 a.. (prev + i) / 2 n.. __ visited:
+            (x __ xp a.. a..(y - yp) __ 2) o. (y __ yp a.. a..(x - xp) __ 2 a.. (prev + i) / 2 n.. __ visited:
             _____
           visited |= {i}
           dfs(m, n, i, visited, length + 1)

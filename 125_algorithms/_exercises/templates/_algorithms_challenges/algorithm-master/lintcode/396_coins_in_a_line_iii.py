@@ -51,4 +51,4 @@ c_ Solution:
                     values[j] - dp[i][j - 1],
 
 
-        r.. dp[0][n - 1] >= 0
+        r.. dp[0][n - 1] >_ 0

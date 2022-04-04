@@ -43,7 +43,7 @@ c_ Solution(o..
 
         left = measure(root.left)
         right = measure(root.right)
-        __ left.sz __ -1 o. right.sz __ -1 o. n.. left.hi <= root.val o. n.. root.val <= right.lo:
+        __ left.sz __ -1 o. right.sz __ -1 o. n.. left.hi <_ root.val o. n.. root.val <_ right.lo:
             r.. BSTInfo(-1, MIN, MAX)
 
         sz = 1 + left.sz + right.sz
@@ -71,7 +71,7 @@ c_ SolutionError(o..
         left = measure(root.left)
         right = measure(root.right)
 
-        __ root.left a.. n.. root.val >= root.left.val o. root.right a.. n.. root.val <= root.right.val:
+        __ root.left a.. n.. root.val >_ root.left.val o. root.right a.. n.. root.val <_ root.right.val:
             r.. 0
 
         __ root.left a.. left __ 0 o. root.right a.. right __ 0:

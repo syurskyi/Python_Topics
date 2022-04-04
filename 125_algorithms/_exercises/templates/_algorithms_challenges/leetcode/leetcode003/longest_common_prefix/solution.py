@@ -16,7 +16,7 @@ c_ Solution(o..
         ___ s __ strs[1:]:
             n = l..(s)
             ___ i, c __ e..(res
-                __ i >= n o. res[i] != s[i]:
+                __ i >_ n o. res[i] != s[i]:
                     res = res[:i]
                     _____
         r.. res

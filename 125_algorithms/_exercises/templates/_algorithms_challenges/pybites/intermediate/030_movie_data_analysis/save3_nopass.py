@@ -56,7 +56,7 @@ ___ get_average_scores(directors
 
     director_list    # list
     ___ director __ directors:
-        __ l..(get_movies_by_director()[director]) >= MIN_MOVIES:
+        __ l..(get_movies_by_director()[director]) >_ MIN_MOVIES:
             d_tuple = director, calc_mean_score(get_movies_by_director()[director])
             director_list.a..(d_tuple)
 

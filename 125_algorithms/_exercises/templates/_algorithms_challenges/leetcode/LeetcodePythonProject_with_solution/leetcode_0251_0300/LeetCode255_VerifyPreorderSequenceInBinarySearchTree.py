@@ -15,7 +15,7 @@ c_ Solution(o..
         ___ p __ preorder:
             __ p < low:
                 r.. F..
-            w.... i >= 0 a.. p > preorder[i]:
+            w.... i >_ 0 a.. p > preorder[i]:
                 low = preorder[i]
                 i -= 1
             i += 1

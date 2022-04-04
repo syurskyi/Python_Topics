@@ -7,7 +7,7 @@ c_ Solution(o..
     :rtype: TreeNode
     """
     a, b = s..([p.val, q.val])
-    w.... n.. a <= root.val <= b:
+    w.... n.. a <_ root.val <_ b:
       __ a > root.val:
         root = root.right
       ____

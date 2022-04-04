@@ -19,11 +19,11 @@ c_ Solution(o..
       rMax[i] = m..(rMax[i + 1], maxArray[i])
     ___ i __ r..(n
       __ 0 < i < n - 1:
-        ans = m..(ans, abs(m..(lMax[i - 1], rMax[i + 1]) - minArray[i]
+        ans = m..(ans, a..(m..(lMax[i - 1], rMax[i + 1]) - minArray[i]
       ____ i __ 0:
-        ans = m..(ans, abs(rMax[i + 1] - minArray[i]
+        ans = m..(ans, a..(rMax[i + 1] - minArray[i]
       ____
-        ans = m..(ans, abs(lMax[i - 1] - minArray[i]
+        ans = m..(ans, a..(lMax[i - 1] - minArray[i]
     r.. ans
 
   # one pass
@@ -35,7 +35,7 @@ c_ Solution(o..
     ___ i __ r..(1, n
       head = arrays[i][0]
       tail = arrays[i][-1]
-      ans = m..(ans, abs(tail - minNum), abs(head - maxNum
+      ans = m..(ans, a..(tail - minNum), a..(head - maxNum
       minNum = m..(head, minNum)
       maxNum = m..(tail, maxNum)
     r.. ans

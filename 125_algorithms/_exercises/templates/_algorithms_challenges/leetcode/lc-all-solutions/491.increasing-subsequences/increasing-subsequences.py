@@ -7,7 +7,7 @@ c_ Solution(o..
     ans    # list
 
     ___ dfs(nums, start, p.., ans
-      __ l..(p..) >= 2:
+      __ l..(p..) >_ 2:
         ans.a..(t..(p.. + []
 
       ___ i __ r..(start, l..(nums:

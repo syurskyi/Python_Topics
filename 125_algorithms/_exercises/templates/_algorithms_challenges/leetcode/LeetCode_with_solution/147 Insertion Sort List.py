@@ -69,7 +69,7 @@ c_ Solution:
         w.... (closed_tail a.. closed_tail.next
             open_head = closed_tail.next
             open_head_next = closed_tail.next.next
-            __ n.. comparator(closed_tail, open_head)<=0:  # Step 1: only compare the closed set tail and open set head
+            __ n.. comparator(closed_tail, open_head)<_0:  # Step 1: only compare the closed set tail and open set head
 
                 pre = dummy
                 w.... comparator(pre.next, open_head)<0:  # Step 2: find position

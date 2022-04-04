@@ -38,14 +38,14 @@ c_ Solution:
         i = 0
         w.... i < n:
             __ nums[i] < median:
-                __ i >= even a.. i % 2 __ 0:
+                __ i >_ even a.. i % 2 __ 0:
                     i += 1
                     _____
                 nums[i], nums[even] = nums[even], nums[i]
                 even -= 2
 
             ____ nums[i] > median:
-                __ i <= odd  a.. i % 2 __ 1:
+                __ i <_ odd  a.. i % 2 __ 1:
                     i += 1
                     _____
                 nums[i], nums[odd] = nums[odd], nums[i]

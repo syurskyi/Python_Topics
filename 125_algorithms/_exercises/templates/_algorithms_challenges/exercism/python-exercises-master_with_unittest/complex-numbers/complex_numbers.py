@@ -14,7 +14,7 @@ c_ ComplexNumber(o..
     ___ div  other
         p..
 
-    ___ abs
+    ___ a..
         p..
 
     ___ conjugate

@@ -16,7 +16,7 @@ c_ Solution(o..
         i, j = 0, 0
         count = 0
         w.... i < l..(g) a.. j < l..(s
-            __ g[i] <= s[j]:
+            __ g[i] <_ s[j]:
                 i += 1
                 j += 1
                 count += 1

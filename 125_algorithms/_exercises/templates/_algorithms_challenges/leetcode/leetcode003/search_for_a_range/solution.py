@@ -27,7 +27,7 @@ c_ Solution:
         lower = -1
         upper = -1
         # Find lower bound
-        w.... left <= right:
+        w.... left <_ right:
             mid = (left + right) / 2
             __ mid < n - 1 a.. A[mid + 1] __ target a.. A[mid] < target:
                 lower = mid + 1
@@ -35,14 +35,14 @@ c_ Solution:
             ____ A[mid] __ target a.. mid __ 0:
                 lower = mid
                 _____
-            ____ target <= A[mid]:
+            ____ target <_ A[mid]:
                 right = mid - 1
             ____
                 left = mid + 1
         # Find upper bound
         left = 0
         right = n - 1
-        w.... left <= right:
+        w.... left <_ right:
             mid = (left + right) / 2
             __ mid < n - 1 a.. A[mid + 1] > target a.. A[mid] __ target:
                 upper = mid

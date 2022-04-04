@@ -15,7 +15,7 @@ c_ Solution:
         :type n: int, Maximum number of characters to read
         :rtype: int, The number of characters read
         """
-        __ n.. buf o. n <= 0:
+        __ n.. buf o. n <_ 0:
             r.. 0
 
         i = 0

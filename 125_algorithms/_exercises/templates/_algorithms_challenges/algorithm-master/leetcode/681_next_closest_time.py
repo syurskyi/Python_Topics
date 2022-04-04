@@ -30,7 +30,7 @@ c_ Solution:
         """
         __ n.. (
             time a.. l..(time) __ 5 a.. time[2] __ ':' a..
-            0 <= i..(time[:2]) < 24 a.. 0 <= i..(time[3:]) < 60
+            0 <_ i..(time[:2]) < 24 a.. 0 <_ i..(time[3:]) < 60
 
             r.. ''
 
@@ -62,7 +62,7 @@ c_ Solution:
         carry = 0
         i = l..(ids) - 1
 
-        w.... i >= 0:
+        w.... i >_ 0:
             carry += ids[i]
             ids[i] = carry % n
             carry = carry // n
@@ -75,7 +75,7 @@ c_ Solution:
         h = d..[ids[0]] * 10 + d..[ids[1]]
         m = d..[ids[2]] * 10 + d..[ids[3]]
 
-        __ 0 <= h < 24 a.. 0 <= m < 60:
+        __ 0 <_ h < 24 a.. 0 <_ m < 60:
             r.. T..
 
         r.. F..

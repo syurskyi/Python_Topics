@@ -32,7 +32,7 @@ c_ Solution:
             current_level = q
             q    # list
             ___ ind __ current_level:
-                __ ind>=length-1:
+                __ ind>_length-1:
                     r.. counter
                 ___ j __ x..(ind+1, ind+A[ind]+1
                     __ j n.. __ current_level:  # avoid duplicate

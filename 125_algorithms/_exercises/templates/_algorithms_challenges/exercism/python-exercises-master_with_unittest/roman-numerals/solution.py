@@ -18,7 +18,7 @@ NUMERAL_MAPPINGS = (
 ___ numeral(number
     s = ''
     ___ arabic, roman __ NUMERAL_MAPPINGS:
-        w.... number >= arabic:
+        w.... number >_ arabic:
             s += roman
             number -= arabic
     r.. s

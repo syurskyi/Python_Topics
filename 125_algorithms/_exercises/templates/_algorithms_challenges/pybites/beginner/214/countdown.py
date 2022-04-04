@@ -8,7 +8,7 @@ ___ countdown
     """Write a generator that counts from 100 to 1"""
     num = 100
     w... T...
-        __ num >= 1:
+        __ num >_ 1:
             y.. num
             num -= 1
         ____

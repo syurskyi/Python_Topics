@@ -46,7 +46,7 @@ c_ Solution:
             MI[i] = m..(MI[i+1], A[i])
 
         ___ l __ r..(1, n+1
-            __ MX[l] <= MI[l]:
+            __ MX[l] <_ MI[l]:
                 r.. l
         r..
 
@@ -65,7 +65,7 @@ c_ Solution:
             MI[i] = m..(MI[i+1], A[i])
 
         ___ i __ r..(n-1
-            __ MX[i] <= MI[i+1]:
+            __ MX[i] <_ MI[i+1]:
                 r.. i
 
         r..

@@ -59,7 +59,7 @@ c_ Solution:
         ___ dir __ dirs:
             I = i+dir[0]
             J = j+dir[1]
-            __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J] a.. grid[I][J] __ "1":
+            __ 0 <_ I < m a.. 0 <_ J < n a.. n.. visited[I][J] a.. grid[I][J] __ "1":
                 dfs(grid, I, J, visited)
 
 

@@ -40,7 +40,7 @@ c_ Solution:
             tmp_sum = prefix_sum[i].s.. - prefix_sum[i - 1].s..
 
             # keep finding the minimum closest sum
-            __ tmp_sum >= closest_sum:
+            __ tmp_sum >_ closest_sum:
                 _____
 
             closest_sum = tmp_sum

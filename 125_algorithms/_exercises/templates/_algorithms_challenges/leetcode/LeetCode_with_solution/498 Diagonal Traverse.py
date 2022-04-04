@@ -66,7 +66,7 @@ c_ Solution:
             __ inc:
                 i -= 1
                 j += 1
-                __ i < 0 o. j >= C:
+                __ i < 0 o. j >_ C:
                     inc = F..
                     __ i < 0 a.. j < C:
                         i = 0
@@ -76,7 +76,7 @@ c_ Solution:
             ____
                 i += 1
                 j -= 1
-                __ i >= R o. j < 0:
+                __ i >_ R o. j < 0:
                     inc = T..
                     __ j < 0 a.. i < R:
                         j = 0

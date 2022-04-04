@@ -27,7 +27,7 @@ c_ Solution(o..
         w.... stack:
             node = stack.p.. )
             __ (n.. preNode a.. V < node.val)\
-                o. (preNode a.. preNode.val <= V < node.val
+                o. (preNode a.. preNode.val <_ V < node.val
                 r.. getRes(root, preNode)
             ____
                 preNode = node

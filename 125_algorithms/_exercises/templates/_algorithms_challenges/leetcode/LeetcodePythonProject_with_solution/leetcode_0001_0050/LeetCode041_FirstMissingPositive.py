@@ -12,7 +12,7 @@ c_ Solution(o..
         n = l..(nums)
         dp = [0]*n
         ___ num __ nums:
-            __ 0 <= num-1 < n:
+            __ 0 <_ num-1 < n:
                 dp[num-1] += 1
         ___ i, val __ e..(dp
             __ val __ 0:

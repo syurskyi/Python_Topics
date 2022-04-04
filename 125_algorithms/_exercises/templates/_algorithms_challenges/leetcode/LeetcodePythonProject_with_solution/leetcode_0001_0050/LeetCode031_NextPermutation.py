@@ -11,13 +11,13 @@ c_ Solution(o..
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         j = l..(nums)-1
-        w.... j > 0 a.. nums[j-1] >= nums[j]:
+        w.... j > 0 a.. nums[j-1] >_ nums[j]:
             j -= 1
         reverse(nums, j, l..(nums)-1)
         __ j __ 0:
             r..
         i = j-1
-        w.... j+1 < l..(nums) a.. nums[i] >= nums[j]:
+        w.... j+1 < l..(nums) a.. nums[i] >_ nums[j]:
             j += 1
         nums[i], nums[j] = nums[j], nums[i]
     

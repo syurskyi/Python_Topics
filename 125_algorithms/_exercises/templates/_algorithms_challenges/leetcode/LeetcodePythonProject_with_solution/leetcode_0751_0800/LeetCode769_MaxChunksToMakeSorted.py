@@ -20,7 +20,7 @@ c_ Solution(o..
             minOfRight[i] = m..(minOfRight[i+1], arr[i])
         res = 0
         ___ i __ r..(n-1
-            __ maxOfLeft[i] <= minOfRight[i+1]:
+            __ maxOfLeft[i] <_ minOfRight[i+1]:
                 res += 1
         r.. res+1
     

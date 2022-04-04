@@ -8,7 +8,7 @@ ___ find_minimum_coins(total_change, coins
     ___ change __ r..(1, total_change + 1
         final_result = min_coins_required[change]
         ___ coin __ coins:
-            __ coin <= change:
+            __ coin <_ change:
                 result = min_coins_required[change - coin] + 1
                 __ result < final_result:
                     final_result = result

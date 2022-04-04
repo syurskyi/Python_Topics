@@ -14,7 +14,7 @@ c_ Thumbs:
             __ number > 0:
                 s__  THUMBS_UP
             ____ number < 0:
-                number  abs(number)
+                number  a..(number)
                 s__  THUMBS_DOWN
             ____
                 r.. V...("Specify a number")

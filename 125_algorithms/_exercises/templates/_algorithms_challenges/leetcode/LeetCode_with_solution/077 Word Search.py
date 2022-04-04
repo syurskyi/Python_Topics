@@ -51,7 +51,7 @@ c_ Solution:
         n = l..(board[0])
         next_positions = [(pre_row-1, pre_col), (pre_row+1, pre_col), (pre_row, pre_col-1), (pre_row, pre_col+1)]  # four directions
         ___ next_position __ next_positions:
-            __ 0<=next_position[0]<m a.. 0<=next_position[1]<n:  # pre-checking
+            __ 0<_next_position[0]<m a.. 0<_next_position[1]<n:  # pre-checking
                 __ visited[next_position[0]][next_position[1]]__False a.. board[next_position[0]][next_position[1]]__word[0]:
                     visited[next_position[0]][next_position[1]] = T..
                     __ s..(board, next_position[0], next_position[1], word[1:], visited

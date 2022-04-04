@@ -125,7 +125,7 @@ c_ Solution:
         left = height = 0
 
         ___ right __ r..(l..(H:
-            w.... I a.. H[I[-1]] >= H[right]:
+            w.... I a.. H[I[-1]] >_ H[right]:
                 height = H[I.p.. )]
                 left = I[-1] __ I ____ -1
                 area = m..(

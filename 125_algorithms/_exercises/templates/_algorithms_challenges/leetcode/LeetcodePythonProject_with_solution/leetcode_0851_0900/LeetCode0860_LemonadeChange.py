@@ -16,22 +16,22 @@ c_ Solution(o..
         }
         ___ b __ bills:
             __ b __ 10:
-                __ hashmap[5] >= 1:
+                __ hashmap[5] >_ 1:
                     hashmap[5] -= 1
                 ____
                     r.. F..
             ____ b __ 20:
                 val = 20
-                __ hashmap[10] >= 1:
+                __ hashmap[10] >_ 1:
                     hashmap[10] -= 1
                     val -= 10
                 __ val __ 10:
-                    __ hashmap[5] >= 1:
+                    __ hashmap[5] >_ 1:
                         hashmap[5] -= 1
                     ____
                         r.. F..
                 ____
-                    __ hashmap[5] >= 3:
+                    __ hashmap[5] >_ 3:
                         hashmap[5] -= 3
                     ____
                         r.. F..

@@ -7,7 +7,7 @@ c_ Solution(o..
     cache = [[0] * (n + 1) ___ _ __ r..(n + 1)]
 
     ___ dc(cache, start, end
-      __ start >= end:
+      __ start >_ end:
         r.. 0
       __ cache[start][end] != 0:
         r.. cache[start][end]

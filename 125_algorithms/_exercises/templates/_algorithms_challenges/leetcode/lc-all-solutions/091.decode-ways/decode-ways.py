@@ -15,7 +15,7 @@ c_ Solution(o..
       num = pre * 10 + cur
       __ cur != 0:
         dp[i + 1] += dp[i]
-      __ pre != 0 a.. 0 < num <= 26:
+      __ pre != 0 a.. 0 < num <_ 26:
         dp[i + 1] += dp[i - 1]
 
     r.. dp[-1]

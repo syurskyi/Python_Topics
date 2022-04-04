@@ -31,7 +31,7 @@ c_ Solution(o..
         __ n __ 0:
             r.. t[n]
         t[1] = nums[left]
-        __ n <= 1:
+        __ n <_ 1:
             r.. t[n]
         t[2] = m..(nums[left: left + 2])
         ___ i __ r..(3, n + 1

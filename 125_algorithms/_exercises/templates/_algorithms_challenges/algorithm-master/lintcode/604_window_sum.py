@@ -6,7 +6,7 @@ c_ Solution:
     """
     ___ winSum  A, k
         ans    # list
-        __ (n.. A o. n.. k o. k <= 0 o.
+        __ (n.. A o. n.. k o. k <_ 0 o.
             l..(A) < k
             r.. ans
 

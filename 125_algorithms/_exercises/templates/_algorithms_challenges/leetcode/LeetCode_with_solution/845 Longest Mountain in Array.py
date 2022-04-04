@@ -43,7 +43,7 @@ c_ Solution:
         up_cnt = 0
         down_cnt = 0
         ___ i __ r..(1, l..(A:
-            __ down_cnt a.. A[i] >= A[i-1]:
+            __ down_cnt a.. A[i] >_ A[i-1]:
                 up_cnt = 0
                 down_cnt = 0
             __ A[i] > A[i-1]:
@@ -88,7 +88,7 @@ c_ Solution:
             __ expect_incr:
                 __ A[i] > A[i-1]:
                     l += 1
-                ____ A[i] < A[i-1] a.. l >= 2:
+                ____ A[i] < A[i-1] a.. l >_ 2:
                     expect_incr = F..
                     l += 1
                     ret = m..(ret, l)
@@ -106,7 +106,7 @@ c_ Solution:
                     expect_incr = T..
                     l = 2
 
-        r.. ret __ ret >= 3 ____ 0
+        r.. ret __ ret >_ 3 ____ 0
 
 
 __ _______ __ _______

@@ -57,7 +57,7 @@ ___ convolution2D(
         __ value __ n.. N..
             __ is_not_integer(value
                 r.. T..(f"{type_} must be integer")
-            __ n.. value >= min_:
+            __ n.. value >_ min_:
                 r.. V...(f"{type_}, must be greater than zero")
     
 
@@ -87,11 +87,11 @@ ___ convolution2D(
     output_row = output_col = 0
 
     ___ row __ r..(0,rows,stride
-        __ row + (kernel_size - 1) >= rows:
+        __ row + (kernel_size - 1) >_ rows:
             _____
 
         ___ col __ r..(0,cols,stride
-            __ col + (kernel_size - 1) >= cols:
+            __ col + (kernel_size - 1) >_ cols:
                 _____
 
             
@@ -106,7 +106,7 @@ ___ convolution2D(
             
             output_array[output_row,output_col] = sum_
             output_col += 1
-            __ output_col >= output_array_size:
+            __ output_col >_ output_array_size:
                 output_col = 0
                 output_row += 1
 

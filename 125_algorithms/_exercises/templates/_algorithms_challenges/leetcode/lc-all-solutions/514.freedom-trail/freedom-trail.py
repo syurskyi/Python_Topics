@@ -17,7 +17,7 @@ c_ Solution(o..
       minDist = f__("inf")
       toChar = key[0]
       ___ i __ d[toChar]:
-        cost = m..(length - abs(pointTo - i), abs(pointTo - i + 1
+        cost = m..(length - a..(pointTo - i), a..(pointTo - i + 1
         cost += dfs(ring, key[1:], i, d, length, cache)
         minDist = m..(minDist, cost)
       cache[pointTo, key] = minDist

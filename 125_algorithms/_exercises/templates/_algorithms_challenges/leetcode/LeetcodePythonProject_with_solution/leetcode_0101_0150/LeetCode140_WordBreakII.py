@@ -24,12 +24,12 @@ c_ Solution(o..
         r.. res
     
     ___ helper  dp, i, res, curr
-        __ i <= 0:
+        __ i <_ 0:
             __ i __ 0:
                 res.a..(' '.j..(curr
             r..
         ___ word __ dp[i]:
-            __ i >= l..(word
+            __ i >_ l..(word
                 curr.insert(0, word)
                 helper(dp, i-l..(word), res, curr)
                 curr.p.. 0)

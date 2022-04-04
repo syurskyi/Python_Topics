@@ -4,13 +4,13 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.
     """
-    __ nums __ N.. o. l..(nums) <= 1:
+    __ nums __ N.. o. l..(nums) <_ 1:
       r..
 
     pos = N..
     p = l..(nums) - 2
     # find the first number that is not in correct order
-    w.... p >= 0:
+    w.... p >_ 0:
       __ nums[p + 1] > nums[p]:
         pos = p
         _____
@@ -23,7 +23,7 @@ c_ Solution(o..
     # find the min value in the rest of the array
     minPos, minV = pos + 1, nums[pos + 1]
     ___ i __ r..(pos + 1, l..(nums:
-      __ nums[i] <= minV a.. nums[i] > nums[pos]:
+      __ nums[i] <_ minV a.. nums[i] > nums[pos]:
         minV = nums[i]
         minPos = i
     # swap the two above number and reverse the array from `pos`

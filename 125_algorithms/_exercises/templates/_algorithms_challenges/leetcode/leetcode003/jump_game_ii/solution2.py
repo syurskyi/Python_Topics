@@ -30,9 +30,9 @@ c_ Solution:
         i = cur - 1
         reached = F..  # Whether `cur` can be reached by previous elements
         # Worst case: O(n^2)
-        w.... i >= 0:
-            w.... i >= 0:
-                __ t[i] >= cur:
+        w.... i >_ 0:
+            w.... i >_ 0:
+                __ t[i] >_ cur:
                     min_i = i
                     reached = T..
                 i -= 1

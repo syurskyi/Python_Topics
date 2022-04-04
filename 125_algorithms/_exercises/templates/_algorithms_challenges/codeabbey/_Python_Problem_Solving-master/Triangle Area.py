@@ -11,9 +11,9 @@ ___ i __ r..(i..(input())):
     
     #Heron's formula s = 1/2(a+b+c)
     s = 0.5 * (a + b + c)
-    s1= abs(s-a) 
-    s2 = abs(s-b) 
-    s3 =abs(s-c)
+    s1= a..(s-a)
+    s2 = a..(s-b)
+    s3 =a..(s-c)
     area = s * s1 * s2 * s3
     __ (area - i..(area > 0.5:
         area += 0.5

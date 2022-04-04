@@ -46,7 +46,7 @@ c_ Solution:
     ___ dfs  node, k, target, ans, pre
         n = l..(target)
 
-        __ node.end_of __ n.. N.. a.. pre[n] <= k:
+        __ node.end_of __ n.. N.. a.. pre[n] <_ k:
             ans.a..(node.end_of)
 
         dp = [0] * (n + 1)

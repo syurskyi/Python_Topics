@@ -32,7 +32,7 @@ c_ Solution(o..
             ___ x, y __ dirs:
                 ni = i+x
                 nj = j+y
-                __ 0<=ni<m a.. 0<=nj<n a.. grid[ni][nj] __ keys:
+                __ 0<_ni<m a.. 0<_nj<n a.. grid[ni][nj] __ keys:
                     __ (ni, nj, keys) n.. __ moves:
                         moves.add((ni, nj, keys
                         d...a..([ni, nj, steps+1, keys, collectedKeys])

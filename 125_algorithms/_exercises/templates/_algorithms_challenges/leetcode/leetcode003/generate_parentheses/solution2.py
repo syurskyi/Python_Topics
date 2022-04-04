@@ -11,7 +11,7 @@ c_ Solution:
         __ left __ 0 a.. right __ 0:
             res.a..(''.j..(cand
         ____
-            __ left <= right a.. left > 0:
+            __ left <_ right a.. left > 0:
                 cand.a..('(')
                 generate_paren_aux(left - 1, right, cand, res)
                 cand.p.. )

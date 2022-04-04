@@ -48,7 +48,7 @@ c_ BiteStats:
         ___ row __ rows:
             __ row["completed"] __ "True":
                 bite_resolved_counter[row["user"]] += 1
-        r.. l..([key ___ key, value __ bite_resolved_counter.i.. __ value >= 1])
+        r.. l..([key ___ key, value __ bite_resolved_counter.i.. __ value >_ 1])
 
     $
     ___ top_bite_by_number_of_clicks(self) __ s..:

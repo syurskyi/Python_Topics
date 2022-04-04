@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         __ x < 0: r.. F..
         div = 1
-        w.... x//div >= 10:
+        w.... x//div >_ 10:
             div *= 10
         w.... x > 0:
             first = x//div

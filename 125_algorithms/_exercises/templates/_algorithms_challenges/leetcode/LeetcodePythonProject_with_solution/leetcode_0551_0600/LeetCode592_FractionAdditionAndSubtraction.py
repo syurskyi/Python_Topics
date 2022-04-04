@@ -23,7 +23,7 @@ c_ Solution(o..
     
     ___ gcd  a, b
         __ a __ 0:
-            r.. abs(b)
+            r.. a..(b)
         ____
             r.. gcd(b%a, a)
     

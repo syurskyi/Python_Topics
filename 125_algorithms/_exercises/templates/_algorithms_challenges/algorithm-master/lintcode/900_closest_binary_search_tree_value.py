@@ -20,13 +20,13 @@ c_ Solution:
         __ root.left a.. target < root.val:
             left = closestValue(root.left, target)
 
-            __ abs(left - target) < abs(root.val - target
+            __ a..(left - target) < a..(root.val - target
                 r.. left
 
         __ root.right a.. target > root.val:
             right = closestValue(root.right, target)
 
-            __ abs(right - target) < abs(root.val - target
+            __ a..(right - target) < a..(root.val - target
                 r.. right
 
         r.. root.val

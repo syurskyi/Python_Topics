@@ -20,7 +20,7 @@ c_ Solution(o..
         __ ind __ k:
             r.. T..
         ___ i __ r..(l..(nums:
-            __ elems[ind]+nums[i] <= target:
+            __ elems[ind]+nums[i] <_ target:
                 elems[ind] += nums[i]
                 __ elems[ind] __ target a..\
                     helper(nums[:i]+nums[i+1:], elems, target, ind+1, k

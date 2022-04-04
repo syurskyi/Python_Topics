@@ -25,7 +25,7 @@ c_ Solution(o..
                     visited = s..()
                     curr = 1
                     ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
-                        __ 0 <= x < n a.. 0 <= y < n:
+                        __ 0 <_ x < n a.. 0 <_ y < n:
                             index = grid[x][y]
                             __ index > 1 a.. index n.. __ visited:
                                 visited.add(index)
@@ -38,6 +38,6 @@ c_ Solution(o..
         n = l..(grid)
         grid[i][j] = index
         ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
-            __ 0 <= x < n a.. 0 <= y < n a.. grid[x][y] __ 1:
+            __ 0 <_ x < n a.. 0 <_ y < n a.. grid[x][y] __ 1:
                 area += dfs(grid, x, y, index)
         r.. area+1

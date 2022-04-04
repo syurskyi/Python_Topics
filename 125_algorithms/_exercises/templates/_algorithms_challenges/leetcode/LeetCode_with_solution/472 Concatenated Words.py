@@ -52,7 +52,7 @@ c_ Solution:
             r.. F..
 
         k = l..(word)
-        __ lo >= k:
+        __ lo >_ k:
             r.. T..
 
         cur = root

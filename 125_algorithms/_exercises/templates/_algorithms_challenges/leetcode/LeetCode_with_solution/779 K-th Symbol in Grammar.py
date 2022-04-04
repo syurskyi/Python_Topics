@@ -49,7 +49,7 @@ c_ Solution:
         __ N __ 1:
             r.. 0 __ not_flip ____ 1
         half_l = 2 ** (N - 1) // 2
-        __ K <= half_l:
+        __ K <_ half_l:
             r.. dfs(N - 1, K, not_flip)
         ____
             r.. dfs(N - 1, K - half_l, n.. not_flip)

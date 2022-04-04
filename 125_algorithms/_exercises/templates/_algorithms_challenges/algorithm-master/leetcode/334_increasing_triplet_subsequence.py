@@ -10,9 +10,9 @@ c_ Solution:
         a = b = f__('inf')
 
         ___ x __ A:
-            __ x <= a:
+            __ x <_ a:
                 a = x
-            ____ x <= b:
+            ____ x <_ b:
                 b = x
             ____
                 r.. T..

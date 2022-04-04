@@ -35,7 +35,7 @@ c_ Solution(o..
       gap = 0
       start = ans
       end = start + 1
-      w.... start <= n:
+      w.... start <_ n:
         gap += m..(0, m..(n + 1, end) - start)
         start *= 10
         end *= 10
@@ -45,7 +45,7 @@ c_ Solution(o..
     k -= 1
     w.... k > 0:
       gap = getGap(n, ans)
-      __ gap <= k:
+      __ gap <_ k:
         ans += 1
         k -= gap
       ____

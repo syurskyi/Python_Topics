@@ -7,7 +7,7 @@ c_ Solution:
         last = 0
         stack    # list
         ___ i __ r..(1, n
-            __ A[i] >= A[last]:
+            __ A[i] >_ A[last]:
                 # Calculate trapped water
                 w = i - last - 1
                 area = w * A[last]
@@ -21,7 +21,7 @@ c_ Solution:
         __ stack:
             r = stack.p.. )  # Rightmost effective bar
             w.... stack:
-                __ A[stack[-1]] >= A[r]:
+                __ A[stack[-1]] >_ A[r]:
                     r = stack.p.. )
                 ____
                     _____

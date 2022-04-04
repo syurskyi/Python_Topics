@@ -32,7 +32,7 @@ c_ Solution:
         p = 1
         ___ j __ r..(l..(nums:
             p *= nums[j]
-            w.... p >= k a.. i <= j:
+            w.... p >_ k a.. i <_ j:
                 p //= nums[i]
                 i += 1
 

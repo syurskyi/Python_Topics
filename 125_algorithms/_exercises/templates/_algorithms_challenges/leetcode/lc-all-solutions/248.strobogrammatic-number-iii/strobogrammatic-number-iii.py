@@ -12,13 +12,13 @@ c_ Solution(o..
         __ half * 2 __ n:
           toAppend = pathStr + "".j..([d[x] ___ x __ pathStr[::-1]])
           toAppendInt = i..(toAppend)
-          __ low <= toAppendInt <= high:
+          __ low <_ toAppendInt <_ high:
             count += 1
         ____
           ___ c __ "018":
             toAppend = pathStr + c + "".j..([d[x] ___ x __ pathStr[::-1]])
             toAppendInt = i..(toAppend)
-            __ low <= toAppendInt <= high:
+            __ low <_ toAppendInt <_ high:
               count += 1
         r..
 

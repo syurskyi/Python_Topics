@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     m = 1
     ones = 0
-    w.... m <= n:
+    w.... m <_ n:
       r = (n / m) % 10
       __ r > 1:
         ones += m

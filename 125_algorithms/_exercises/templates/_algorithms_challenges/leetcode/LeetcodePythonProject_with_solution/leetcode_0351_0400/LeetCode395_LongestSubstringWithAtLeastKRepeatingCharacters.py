@@ -9,7 +9,7 @@ c_ Solution(o..
         __ l..(s) < k:
             r.. 0
         c = m..([(s.c.. c), c) ___ c __ s])[1]
-        __ s.c.. c) >= k:
+        __ s.c.. c) >_ k:
             r.. l..(s)
         r.. m..(longestSubstring_orig(t, k) ___ t __ s.s..(c
     
@@ -23,7 +23,7 @@ c_ Solution(o..
             __ hashmap[c] < minCount:
                 minCount = hashmap[c]
                 minChar = c
-        __ hashmap[minChar] >= k:
+        __ hashmap[minChar] >_ k:
             r.. l..(s)
         maxRes = f__('-inf')
         ___ t __ s.s..(minChar

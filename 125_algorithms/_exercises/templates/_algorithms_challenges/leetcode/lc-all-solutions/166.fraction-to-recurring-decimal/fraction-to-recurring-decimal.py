@@ -6,8 +6,8 @@ c_ Solution(o..
     :rtype: str
     """
     ans = "-" __ numerator * denominator < 0 ____ ""
-    numerator = abs(numerator)
-    denominator = abs(denominator)
+    numerator = a..(numerator)
+    denominator = a..(denominator)
     ans += s..(numerator / denominator)
     __ numerator % denominator:
       ans += "."

@@ -16,7 +16,7 @@ c_ Solution(o..
                 __ modified:
                     r.. F..
                 modified = T..
-                __ i-2 >= 0 a.. nums[i-2] > nums[i]:
+                __ i-2 >_ 0 a.. nums[i-2] > nums[i]:
                     _____
             prev = nums[i]
         r.. T..
@@ -31,7 +31,7 @@ c_ Solution(o..
             __ nums[i-1] > nums[i]:
                 __ modified != 0: r.. F..
                 modified += 1
-                __ i - 2 < 0 o. nums[i-2] <= nums[i]:
+                __ i - 2 < 0 o. nums[i-2] <_ nums[i]:
                     nums[i-1] = nums[i]
                 ____
                     nums[i] = nums[i-1]

@@ -19,7 +19,7 @@ c_ Solution(o..
             r.. arr[-k:]
         heap    # list
         ___ i __ r..(m..(0, ind-k), m..(l..(arr), ind+k:
-            diff = abs(x-arr[i])
+            diff = a..(x-arr[i])
             heapq.heappush(heap, (diff, arr[i]
         res    # list
         ___ _ __ r..(k

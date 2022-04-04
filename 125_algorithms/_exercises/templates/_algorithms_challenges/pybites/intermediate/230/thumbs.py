@@ -7,10 +7,10 @@ c_ Thumbs:
         __ other __ 0:
             r.. V...("Specify a number")
 
-        __ (other > 0 a.. other <= 3) o. (other >= -3 a.. other < 0
-            r.. f"{(THUMBS_UP __ other > 0 ____ THUMBS_DOWN) * abs(other)}"
+        __ (other > 0 a.. other <_ 3) o. (other >_ -3 a.. other < 0
+            r.. f"{(THUMBS_UP __ other > 0 ____ THUMBS_DOWN) * a..(other)}"
 
-        r.. f"{THUMBS_UP __ other > 0 ____ THUMBS_DOWN} ({abs(other)}x)"
+        r.. f"{THUMBS_UP __ other > 0 ____ THUMBS_DOWN} ({a..(other)}x)"
 
     ___ __rmul__  other
         r.. __mul__(other)

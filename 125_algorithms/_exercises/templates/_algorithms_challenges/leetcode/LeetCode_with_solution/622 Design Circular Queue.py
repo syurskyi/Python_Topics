@@ -41,7 +41,7 @@ c_ MyCircularQueue:
         """
         Insert an element into the circular queue. Return true if the operation is successful.
         """
-        __ sz >= k:
+        __ sz >_ k:
             r.. F..
 
         tail += 1
@@ -53,7 +53,7 @@ c_ MyCircularQueue:
         """
         Delete an element from the circular queue. Return true if the operation is successful.
         """
-        __ sz <= 0:
+        __ sz <_ 0:
             r.. F..
 
         lst[head % k] = N..

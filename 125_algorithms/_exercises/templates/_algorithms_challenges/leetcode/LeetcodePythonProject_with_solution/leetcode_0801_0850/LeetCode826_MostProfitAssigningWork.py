@@ -22,7 +22,7 @@ c_ Solution(o..
         i = 0
         maxProfit = 0
         ___ w __ worker:
-            w.... i < l..(arr) a.. arr[i][0] <= w:
+            w.... i < l..(arr) a.. arr[i][0] <_ w:
                 maxProfit = m..(maxProfit, arr[i][1])
                 i += 1
             res += maxProfit

@@ -11,7 +11,7 @@ c_ Solution:
         left, right = 0, n - 1
         w.... left < n a.. s[left] __ ' ':
             left += 1
-        w.... right >= 0 a.. s[right] __ ' ':
+        w.... right >_ 0 a.. s[right] __ ' ':
             right -= 1
         __ left < n a.. s[left] __ ('+', '-'
             left += 1
@@ -29,11 +29,11 @@ c_ Solution:
         ___ char __ s:
             __ char __ '.' a.. is_contained_dot:
                 r.. F..
-            __ n.. (char __ '.' o. zero <= o..(char) <= nine
+            __ n.. (char __ '.' o. zero <_ o..(char) <_ nine
                 r.. F..
             __ char __ '.':
                 is_contained_dot = T..
-            __ zero <= o..(char) <= nine:
+            __ zero <_ o..(char) <_ nine:
                 is_contained_num = T..
 
         r.. is_contained_num

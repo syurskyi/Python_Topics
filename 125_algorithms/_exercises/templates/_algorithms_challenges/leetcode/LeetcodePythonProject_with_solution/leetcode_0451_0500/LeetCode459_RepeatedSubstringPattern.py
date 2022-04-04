@@ -11,7 +11,7 @@ c_ Solution(o..
             sub = s[:i]
             __ l..(s)%l..(sub) __ 0:
                 j = i
-                w.... j+l..(sub) <= n a.. s[j:j+l..(sub)]__sub:
+                w.... j+l..(sub) <_ n a.. s[j:j+l..(sub)]__sub:
                     j += l..(sub)
                     __ j __ n:
                         r.. T..

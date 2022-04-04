@@ -43,7 +43,7 @@ c_ Solution:
         w.... q:
             tail = q.p.. )
             ret += 1
-            __ q a.. q[0] + tail <= limit:
+            __ q a.. q[0] + tail <_ limit:
                 q.popleft()
 
         r.. ret

@@ -59,7 +59,7 @@ c_ Solution:
                     gross[j] - gross[i] - F[i+1][j],
                     gross[j] - gross[i] - F[i][j-1]
                 )
-        r.. F[0][l] >= (gross[-1] - F[0][l])
+        r.. F[0][l] >_ (gross[-1] - F[0][l])
 
 
 __ _______ __ _______

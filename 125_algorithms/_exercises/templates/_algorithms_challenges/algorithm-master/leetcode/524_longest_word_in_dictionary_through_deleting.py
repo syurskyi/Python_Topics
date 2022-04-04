@@ -16,7 +16,7 @@ c_ Solution:
             __ any((
                 n.. is_subseq(s, w),
                 l..(w) < l..(ans),
-                l..(w) __ l..(ans) a.. w >= ans,  # means w has larger lexicographical order
+                l..(w) __ l..(ans) a.. w >_ ans,  # means w has larger lexicographical order
             :
                 _____
 
@@ -59,7 +59,7 @@ c_ Solution:
             __ any((
                 w n.. __ target,
                 l..(w) < l..(ans),
-                l..(w) __ l..(ans) a.. w >= ans,
+                l..(w) __ l..(ans) a.. w >_ ans,
             :
                 _____
 

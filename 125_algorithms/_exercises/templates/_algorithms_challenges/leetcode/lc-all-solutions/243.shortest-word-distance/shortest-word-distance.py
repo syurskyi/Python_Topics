@@ -16,5 +16,5 @@ c_ Solution(o..
         ____ word __ word2:
           idx2 = i
         __ idx1 != -1 a.. idx2 != -1:
-          ans = m..(ans, abs(idx2 - idx1
+          ans = m..(ans, a..(idx2 - idx1
     r.. ans

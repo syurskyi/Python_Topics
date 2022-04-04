@@ -6,13 +6,13 @@ Created on Mar 20, 2017
 
 c_ Solution(o..
     ___ lengthOfLongestSubstringKDistinct  s, k
-        __ k <= 0: r.. 0
+        __ k <_ 0: r.. 0
         hashmap    # dict
         maxLen = 0
         left = 0
         ___ i, c __ e..(s
             hashmap[c] = i
-            w.... left <= i a.. l..(hashmap) > k:
+            w.... left <_ i a.. l..(hashmap) > k:
                 __ s[left] __ hashmap a.. left __ hashmap[s[left]]:
                     del hashmap[s[left]]
                 left+=1

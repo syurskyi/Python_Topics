@@ -10,11 +10,11 @@ ___ BMI(users
 
                 __ BMI < 18.5:
                         answer.a..(s..('under'
-                ____ BMI >= 18.5 a.. BMI < 25.0:
+                ____ BMI >_ 18.5 a.. BMI < 25.0:
                         answer.a..(s..('normal'
-                ____ BMI >= 25.0 a.. BMI < 30.0:
+                ____ BMI >_ 25.0 a.. BMI < 30.0:
                         answer.a..(s..('over'
-                ____ BMI >= 30.0:
+                ____ BMI >_ 30.0:
                         answer.a..(s..('obese'
                 ____
                         print("Error.")

@@ -13,5 +13,5 @@ c_ Solution(o..
     times.s..()
 
     ___ i __ r..(l..(times) - 1
-      ans = m..(ans, abs(times[i] - times[i + 1]
-    r.. m..(ans, 1440 - abs(times[0] - times[-1]
+      ans = m..(ans, a..(times[i] - times[i + 1]
+    r.. m..(ans, 1440 - a..(times[0] - times[-1]

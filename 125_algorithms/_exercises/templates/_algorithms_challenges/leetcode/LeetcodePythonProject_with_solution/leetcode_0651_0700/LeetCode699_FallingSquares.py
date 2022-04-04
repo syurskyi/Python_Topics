@@ -27,8 +27,8 @@ c_ Solution(o..
     ___ getHeight  intervals, cur
         preMaxHeight = 0
         ___ i __ intervals:
-            __ i.end <= cur.start: _____
-            __ i.start >= cur.end: _____
+            __ i.end <_ cur.start: _____
+            __ i.start >_ cur.end: _____
             preMaxHeight = m..(preMaxHeight, i.height)
         cur.height += preMaxHeight
         intervals.a..(cur)

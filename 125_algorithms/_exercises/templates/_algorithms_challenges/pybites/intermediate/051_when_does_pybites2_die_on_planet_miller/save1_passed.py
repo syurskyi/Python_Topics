@@ -8,7 +8,7 @@ BITE_CREATED_DT = d__.s..('2018-02-26 23:24:04', '%Y-%m-%d %H:%M:%S')
 ___ py2_earth_hours_left(start_date=BITE_CREATED_DT
     """Return how many hours, rounded to 2 decimals, Python 2 has
        left on Planet Earth (calculated from start_date)"""
-    time = abs(start_date - PY2_DEATH_DT)
+    time = a..(start_date - PY2_DEATH_DT)
     days, seconds = time.days, time.seconds
     r.. r..((days * 24) + (seconds / 3600), 2)
 

@@ -53,4 +53,4 @@ ___ get_average_scores(directors
        return a list of tuples (director, average_score) ordered by highest
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
-    r.. [(k, calc_mean_score(v ___ k, v __ directors.i.. __ l..(v) >= MIN_MOVIES]
+    r.. [(k, calc_mean_score(v ___ k, v __ directors.i.. __ l..(v) >_ MIN_MOVIES]

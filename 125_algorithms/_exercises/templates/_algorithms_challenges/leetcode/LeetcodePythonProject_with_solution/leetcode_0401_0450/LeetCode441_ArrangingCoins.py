@@ -7,7 +7,7 @@ Created on Apr 17, 2017
 c_ Solution(o..
     ___ arrangeCoins  n
         start, end = 1, n
-        w.... start <= end:
+        w.... start <_ end:
             mid = (start+end)/2
             __ mid*(mid+1)/2 > n:
                 end = mid-1

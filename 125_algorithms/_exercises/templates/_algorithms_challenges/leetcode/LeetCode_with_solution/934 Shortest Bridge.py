@@ -82,7 +82,7 @@ c_ Solution:
         ___ di, dj __ dirs:
             I = i + di
             J = j + dj
-            __ 0 <= I < m a.. 0 <= J < n:
+            __ 0 <_ I < m a.. 0 <_ J < n:
                 y.. I, J
 
     ___ dfs  A, i, j, colors, color

@@ -91,7 +91,7 @@ c_ SnakeGame:
         hx = x + dx
         hy = y + dy
 
-        __ n.. (0 <= hx < height a.. 0 <= hy < width
+        __ n.. (0 <_ hx < height a.. 0 <_ hy < width
             is_over = T..
             r.. SCORE_IN_OVER
 
@@ -125,7 +125,7 @@ c_ SnakeGame:
         """
         There is no food anymore
         """
-        __ fi >= l..(food
+        __ fi >_ l..(food
             is_over = T..
 
         r.. l..(snake) - 1

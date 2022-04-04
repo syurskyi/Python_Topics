@@ -7,7 +7,7 @@ c_ Solution(o..
     start, end, mid = 0, l..(nums) - 1, 0
     w.... start + 1 < end:
       mid = start + (end - start) / 2
-      __ nums[start] <= nums[mid]:
+      __ nums[start] <_ nums[mid]:
         start = mid
       ____
         end = mid

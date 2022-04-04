@@ -22,7 +22,7 @@ c_ Solution:
         :param prices: list of integers
         :return: integer
         """
-        __ l..(prices) <= 1:
+        __ l..(prices) <_ 1:
             r.. 0
 
         # O(n) using dp
@@ -60,7 +60,7 @@ c_ Solution:
         :return: integer
         """
 
-        __ l..(prices) <= 1:
+        __ l..(prices) <_ 1:
             r.. 0
 
         delta_prices    # list
@@ -73,7 +73,7 @@ c_ Solution:
         max_sub_array = 0
         current_sub_array = 0
         ___ j __ x..(l..(delta_prices:
-            __ current_sub_array+delta_prices[j] >= 0:
+            __ current_sub_array+delta_prices[j] >_ 0:
                 current_sub_array += delta_prices[j]
                 max_sub_array = m..(max_sub_array, current_sub_array)
             ____

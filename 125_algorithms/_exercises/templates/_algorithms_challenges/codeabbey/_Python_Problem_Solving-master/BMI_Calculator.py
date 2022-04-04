@@ -8,11 +8,11 @@ ___ BMI_calculator
         
         __ BMI < 18.5:
             result.a..('under')
-        ____ BMI >= 18.5 a.. BMI < 25.0:
+        ____ BMI >_ 18.5 a.. BMI < 25.0:
             result.a..('normal')
-        ____ BMI >= 25.0 a.. BMI < 30.0:
+        ____ BMI >_ 25.0 a.. BMI < 30.0:
             result.a..('over')
-        ____ BMI >= 30.0:
+        ____ BMI >_ 30.0:
             result.a..('obese')
         ____
             _____

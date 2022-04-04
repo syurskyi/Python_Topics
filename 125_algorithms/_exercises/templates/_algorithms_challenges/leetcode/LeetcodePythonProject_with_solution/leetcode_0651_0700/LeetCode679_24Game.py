@@ -14,7 +14,7 @@ c_ Solution(o..
     
     ___ helper  nums, hashmap
         __ l..(nums) __ 1:
-            r.. abs(nums[0]-24) <= 0.0001
+            r.. a..(nums[0]-24) <_ 0.0001
         nums = s..(nums)
         __ ''.j..(s..(nums) + ',') __ hashmap:
             r.. F..

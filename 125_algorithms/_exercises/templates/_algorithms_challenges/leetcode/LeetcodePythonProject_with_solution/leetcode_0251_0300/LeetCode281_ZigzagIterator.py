@@ -15,12 +15,12 @@ c_ ZigzagIterator(o..
                 val = vec[pointer][0]
                 vec[pointer].p.. )
                 pointer += 1
-                __ pointer >= l..(vec
+                __ pointer >_ l..(vec
                     pointer = 0
                 r.. val
             ____
                 pointer += 1
-                __ pointer >= l..(vec
+                __ pointer >_ l..(vec
                     pointer = 0
         r.. N..
     

@@ -20,10 +20,10 @@ c_ Solution(o..
         hull = c...d..()
         ans = f__('-inf')
         ___ j __ r..(k-1, n
-            w.... l..(hull) >= 2 a.. d(hull[-2], hull[-1]-1) >= d(hull[-2], j-k
+            w.... l..(hull) >_ 2 a.. d(hull[-2], hull[-1]-1) >_ d(hull[-2], j-k
                 hull.p.. )
             hull.a..(j-k+1)
-            w.... l..(hull) >= 2 a.. d(hull[0], hull[1]-1) <= d(hull[0], j
+            w.... l..(hull) >_ 2 a.. d(hull[0], hull[1]-1) <_ d(hull[0], j
                 hull.popleft()
             ans = m..(ans, d(hull[0], j
         r.. ans

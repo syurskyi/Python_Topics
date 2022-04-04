@@ -39,4 +39,4 @@ c_ Solution:
                 values[i] + values[i + 1] - dp[i + 2],
 
 
-        r.. dp[0] >= 0
+        r.. dp[0] >_ 0

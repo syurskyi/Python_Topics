@@ -61,7 +61,7 @@ c_ Solution:
                 r.. cost
 
             stops = k - 1 + 1
-            __ stops <= K:
+            __ stops <_ K:
                 ___ v, w __ G[u].i..:
                     heapq.heappush(pq, (cost + w, k + 1, v
 

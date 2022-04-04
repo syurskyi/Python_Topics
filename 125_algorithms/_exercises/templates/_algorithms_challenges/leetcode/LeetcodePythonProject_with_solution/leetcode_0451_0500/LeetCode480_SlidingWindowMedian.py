@@ -51,7 +51,7 @@ c_ Solution(o..
             heapq.heappush(maxHeap, -val)
     
     ___ remove  num
-        __ num >= getMedian
+        __ num >_ getMedian
             minHeap.remove(num)
             heapq.heapify(minHeap)
         ____
@@ -73,7 +73,7 @@ c_ Solution(o..
         n = l..(nums) - k + 1
         result = [0.0]*n
         ___ i __ r..(l..(nums)+1
-            __ i >= k:
+            __ i >_ k:
                 result[i-k] = getMedian()
                 remove(nums[i-k])
             __ i < l..(nums

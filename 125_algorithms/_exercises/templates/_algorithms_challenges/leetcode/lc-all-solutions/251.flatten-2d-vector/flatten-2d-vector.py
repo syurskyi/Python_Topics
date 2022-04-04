@@ -20,7 +20,7 @@ c_ Vector2D(o..
     :rtype: bool
     """
     m = m
-    w.... x < l..(m) a.. y >= l..(m[x]
+    w.... x < l..(m) a.. y >_ l..(m[x]
       x += 1
       y = 0
     r.. x < l..(m)

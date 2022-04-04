@@ -22,7 +22,7 @@ c_ Solution(o..
         r.. res
     
     ___ dfs  i, quiet, richer2, res
-        __ (res[i] >= 0
+        __ (res[i] >_ 0
             r.. res[i]
         res[i] = i
         ___ j __ richer2[i]:

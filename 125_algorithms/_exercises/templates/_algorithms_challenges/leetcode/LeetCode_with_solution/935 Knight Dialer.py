@@ -137,7 +137,7 @@ c_ SolutionTLE:
                 ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
-                    __ 0 <= I < m a.. 0 <= J < n a.. (I, J) != (3, 0) a.. (I, J) != (3, 2
+                    __ 0 <_ I < m a.. 0 <_ J < n a.. (I, J) != (3, 0) a.. (I, J) != (3, 2
                         ret += dfs(I, J, r - 1)
                         ret %= MOD
 

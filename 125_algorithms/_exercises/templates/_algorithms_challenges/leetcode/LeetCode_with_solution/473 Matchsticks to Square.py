@@ -45,11 +45,11 @@ c_ Solution:
         r.. dfs(nums, 0, l, square)
 
     ___ dfs  nums, i, l, square
-        __ i >= l..(nums
+        __ i >_ l..(nums
             r.. T..
 
         ___ j __ r..(l..(square:
-            __ nums[i] + square[j] <= l:
+            __ nums[i] + square[j] <_ l:
                 square[j] += nums[i]
                 __ dfs(nums, i + 1, l, square
                     r.. T..

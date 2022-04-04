@@ -45,7 +45,7 @@ c_ NestedIterator(o..
         w.... stack:
             lst, i = stack[-1]
 
-            __ i >= l..(lst
+            __ i >_ l..(lst
                 stack.p.. )
             ____ lst[i].isInteger
                 r.. T..

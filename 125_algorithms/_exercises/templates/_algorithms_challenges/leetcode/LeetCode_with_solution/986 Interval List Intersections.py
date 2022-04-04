@@ -53,7 +53,7 @@ c_ Solution:
         w.... i < m a.. j < n:
             lo = m..(A[i].start, B[j].start)
             hi = m..(A[i].end, B[j].end)
-            __ lo <= hi:
+            __ lo <_ hi:
                 ret.a..(Interval(lo, hi
             __ A[i].end > B[j].end:
                 j += 1
@@ -73,10 +73,10 @@ c_ Solution:
         w.... i < m a.. j < n:
             a = A[i]
             b = B[j]
-            __ b.start <= a.end <= b.end:
+            __ b.start <_ a.end <_ b.end:
                 ret.a..(Interval(m..(a.start, b.start), a.end
                 i += 1
-            ____ a.start <= b.end <= a.end:
+            ____ a.start <_ b.end <_ a.end:
                 ret.a..(Interval(m..(a.start, b.start), b.end
                 j += 1
             ____

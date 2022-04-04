@@ -14,7 +14,7 @@ c_ Solution(o..
         __ m > n:
             nums1, nums2, m, n = nums2, nums1, n, m
         imin, imax, half_len = 0, m, (m+n+1)//2
-        w.... imin <= imax:
+        w.... imin <_ imax:
             i = (imin+imax)//2
             j = half_len - i
             __ i < m a.. nums2[j-1] > nums1[i]:

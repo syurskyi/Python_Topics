@@ -14,7 +14,7 @@ c_ Solution(o..
         i = 3
         w.... n%2 __ 0:
             n /= 2
-        w.... i*i <= n:
+        w.... i*i <_ n:
             count = 0
             w.... n%i __ 0:
                 n //= i

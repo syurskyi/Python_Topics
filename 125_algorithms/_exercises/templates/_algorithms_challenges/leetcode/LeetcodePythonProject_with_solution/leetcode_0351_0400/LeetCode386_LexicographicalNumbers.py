@@ -10,9 +10,9 @@ c_ Solution(o..
         curr = 1
         ___ _ __ r..(n
             res.a..(curr)
-            __ curr*10 <= n:
+            __ curr*10 <_ n:
                 curr *= 10
-            ____ curr%10 != 9 a.. curr+1 <= n:
+            ____ curr%10 != 9 a.. curr+1 <_ n:
                 curr += 1
             ____
                 w.... (curr//10)%10 __ 9:

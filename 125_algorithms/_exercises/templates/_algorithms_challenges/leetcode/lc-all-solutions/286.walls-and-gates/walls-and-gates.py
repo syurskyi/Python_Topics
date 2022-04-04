@@ -20,6 +20,6 @@ c_ Solution(o..
       i, j = queue.popleft()
       ___ di, dj __ directions:
         p, q = i + di, j + dj
-        __ 0 <= p < l..(rooms) a.. 0 <= q < l..(rooms[0]) a.. rooms[p][q] __ INF:
+        __ 0 <_ p < l..(rooms) a.. 0 <_ q < l..(rooms[0]) a.. rooms[p][q] __ INF:
           rooms[p][q] = rooms[i][j] + 1
           queue.a..((p, q

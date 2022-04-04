@@ -1,8 +1,8 @@
-____ t___ _______ L.., TypeVar
-T = TypeVar('T', i.., f__)
+____ t___ _______ L.., T..
+T = T..('T', i.., f__)
 
 
-___ n_digit_numbers(numbers: L..[T], n: i..) __ L..[i..]:
+___ n_digit_numbersnumbers L.. T n i.. __ L.. i..
     # Checks
     __ n < 1:
         r.. V...
@@ -16,9 +16,9 @@ ___ n_digit_numbers(numbers: L..[T], n: i..) __ L..[i..]:
         numbers[i] = r..(numbers[i] * n_multiply_lookup[n])
         __ l..(s..(numbers[i] > n:
             __ numbers[i] > 0:
-                numbers[i] = i..(s..(numbers[i])[:n])
+                numbers[i] = i..(s..(numbers[i]) :?)
             ____
-                numbers[i] = i..(s..(numbers[i])[:n +1])
+                numbers[i] = i..(s..(numbers[i]) |? +1])
 
     r.. numbers
 

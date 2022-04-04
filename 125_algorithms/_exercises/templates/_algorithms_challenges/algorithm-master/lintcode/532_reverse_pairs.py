@@ -9,7 +9,7 @@ c_ Solution:
         r.. merge_sort(A, 0, n - 1, tmp)
 
     ___ merge_sort  A, start, end, tmp
-        __ start >= end:
+        __ start >_ end:
             r.. 0
 
         mid = (start + end) // 2
@@ -18,7 +18,7 @@ c_ Solution:
         ans += merge_sort(A, right, end, tmp)
 
         i = start
-        w.... left <= mid a.. right <= end:
+        w.... left <_ mid a.. right <_ end:
             __ A[left] > A[right]:
                 tmp[i] = A[right]
                 right += 1
@@ -28,12 +28,12 @@ c_ Solution:
                 left += 1
             i += 1
 
-        w.... left <= mid:
+        w.... left <_ mid:
             tmp[i] = A[left]
             left += 1
             i += 1
 
-        w.... right <= end:
+        w.... right <_ end:
             tmp[i] = A[right]
             right += 1
             i += 1

@@ -60,7 +60,7 @@ c_ Solution:
         :param board: a 9x9 2D array
         :return: Boolean
         """
-        __ j>=9:
+        __ j>_9:
             r.. solve(board, i+1, 0)
         __ i__9:
             r.. T..

@@ -160,7 +160,7 @@ ___ custom_series_function(ser: pd.Series,
     ___ is_between(x
         ___ index __ relevant:
             lower,upper = stats[index] - within,stats[index] + within
-            __ lower <= x <= mean:
+            __ lower <_ x <_ mean:
                 r.. T..
 
         r.. F..

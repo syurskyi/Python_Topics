@@ -54,10 +54,10 @@ c_ Solution:
             __ N __ 1:
                 ret = [[start]]
             ____ N > 1:
-                __ start + K <= 9:
+                __ start + K <_ 9:
                     ___ e __ dfs(start + K, N - 1, K
                         ret.a..([start] + e)
-                __ start - K >= 0 a.. K != 0:  # special case
+                __ start - K >_ 0 a.. K != 0:  # special case
                     ___ e __ dfs(start - K, N - 1, K
                         ret.a..([start] + e)
 

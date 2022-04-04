@@ -33,7 +33,7 @@ c_ Solution:
                 ___ dx, dy __ vector:
                     _x = x + dx
                     _y = y + dy
-                    __ 0 <= _x < m a.. 0 <= _y < n \
+                    __ 0 <_ _x < m a.. 0 <_ _y < n \
                             a.. grid[_x][_y] __ PEOPLE:
                         grid[_x][_y] = ZOMBIE
                         _queue.a..((_x, _y

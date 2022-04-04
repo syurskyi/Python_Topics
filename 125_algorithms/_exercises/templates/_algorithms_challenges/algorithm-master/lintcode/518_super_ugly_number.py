@@ -5,7 +5,7 @@ c_ Solution:
         :type primes: list[int]
         :rtype: int
         """
-        __ n.. n o. n <= 1 o. n.. primes:
+        __ n.. n o. n <_ 1 o. n.. primes:
             r.. 1
 
         k = l..(primes)

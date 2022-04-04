@@ -6,7 +6,7 @@ ___ get_belt(user_score, scores=scores, belts=belts
     
 
     ___ score,belt __ z..(r..(scores),r..(belts:
-        __ user_score >= score:
+        __ user_score >_ score:
             r.. belt
 
 

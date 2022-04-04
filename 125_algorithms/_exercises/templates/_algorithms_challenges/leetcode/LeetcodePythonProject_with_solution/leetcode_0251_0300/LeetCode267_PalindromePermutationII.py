@@ -24,18 +24,18 @@ c_ Solution(o..
             __ odd != 0:
                 r.. []
         ____
-            __ odd >= 2:
+            __ odd >_ 2:
                 r.. []
         result    # list
         helper(oddVal, l..(s), hashmap, result)
         r.. result
     
     ___ helper  s0, length, hashmap, result
-        __ l..(s0) >= length:
+        __ l..(s0) >_ length:
             result.a..(s0)
             r..
         ___ c, val __ hashmap.i..:
-            __ val >= 2:
+            __ val >_ 2:
                 hashmap[c] -= 2
                 helper(c+s0+c, length, hashmap, result)
                 hashmap[c] += 2

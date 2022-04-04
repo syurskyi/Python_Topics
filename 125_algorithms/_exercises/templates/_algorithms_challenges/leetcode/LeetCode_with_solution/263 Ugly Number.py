@@ -25,7 +25,7 @@ c_ Solution(o..
         ugly = {2, 3, 5}
 
         prime = 2
-        w.... prime*prime <= num a.. num > 1:
+        w.... prime*prime <_ num a.. num > 1:
             __ num % prime != 0:
                 prime += 1
             ____

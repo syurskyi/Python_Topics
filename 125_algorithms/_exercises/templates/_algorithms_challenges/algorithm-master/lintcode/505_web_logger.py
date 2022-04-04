@@ -26,7 +26,7 @@ c_ WebLogger:
         head = dummy[1]
 
         w.... (head __ n.. dummy a..
-               head[2] + 300 <= timestamp
+               head[2] + 300 <_ timestamp
             _, nxt, _ = head
             dummy[1] = nxt
             nxt[0] = dummy

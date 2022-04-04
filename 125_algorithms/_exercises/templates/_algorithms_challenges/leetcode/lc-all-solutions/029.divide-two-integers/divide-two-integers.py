@@ -12,11 +12,11 @@ c_ Solution(o..
       sign = -1
     ans = 0
     cnt = 1
-    dividend = abs(dividend)
-    divisor = abs(divisor)
+    dividend = a..(dividend)
+    divisor = a..(divisor)
     subsum = divisor
-    w.... dividend >= divisor:
-      w.... (subsum << 1) <= dividend:
+    w.... dividend >_ divisor:
+      w.... (subsum << 1) <_ dividend:
         cnt <<= 1
         subsum <<= 1
       ans += cnt

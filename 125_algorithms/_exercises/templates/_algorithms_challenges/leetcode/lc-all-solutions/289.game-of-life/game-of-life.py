@@ -11,7 +11,7 @@ c_ Solution(o..
         ___ j __ r..(q - 1, q + 2
           __ i __ p a.. j __ q:
             _____
-          __ 0 <= i < l..(board) a.. 0 <= j < l..(board[0]) a.. board[i][j] & 1:
+          __ 0 <_ i < l..(board) a.. 0 <_ j < l..(board[0]) a.. board[i][j] & 1:
             cnt += 1
       __ cnt __ 3 o. (board[p][q] __ 1 a.. cnt __ 2
         board[p][q] |= 2

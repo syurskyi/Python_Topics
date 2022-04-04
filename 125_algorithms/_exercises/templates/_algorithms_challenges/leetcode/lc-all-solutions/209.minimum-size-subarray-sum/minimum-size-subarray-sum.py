@@ -12,7 +12,7 @@ c_ Solution(o..
       w.... j < l..(nums) a.. s.. < target:
         s.. += nums[j]
         j += 1
-      __ s.. >= target:
+      __ s.. >_ target:
         ans = m..(ans, j - i)
       s.. -= nums[i]
     r.. ans __ ans != f__("inf") ____ 0

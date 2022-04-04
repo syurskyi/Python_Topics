@@ -19,7 +19,7 @@ c_ Solution:
         """
         invert_flag = F.. __ n > 0 ____ T..
         # O(log n)
-        n = abs(n)
+        n = a..(n)
         product = 1.0
         w.... n > 0:
             __ n & 1 __ 1:
@@ -40,7 +40,7 @@ c_ Solution:
         """
         O(n)
         """
-        __ abs(x)<=0.00001:
+        __ a..(x)<_0.00001:
             r.. 0
         __ x__1.0:
             r.. 1
@@ -50,24 +50,24 @@ c_ Solution:
             ____
                 r.. -1
 
-        __ abs(x-1.0)<1e-6:
+        __ a..(x-1.0)<1e-6:
             r.. 1+(x-1.0)*n
 
-        __ abs(x--1.0)<1e-6:
+        __ a..(x--1.0)<1e-6:
             __ n % 2__0:
                 r.. pow(-x, n)
             ____
                 r.. -pow(-x, n)
 
         product = 1.0
-        ___ i __ x..(abs(n:
+        ___ i __ x..(a..(n:
             pre = product
             __ n>0:
                 product *= x
             ____
                 product /= x
 
-            __ abs(product - pre)<1e-5:
+            __ a..(product - pre)<1e-5:
                 _____
 
         r.. product

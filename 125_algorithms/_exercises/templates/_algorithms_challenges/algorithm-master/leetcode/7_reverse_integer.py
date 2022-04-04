@@ -15,7 +15,7 @@ c_ Solution:
             ans = ans * 10 + _x % 10
             _x //= 10
 
-        __ ans >= INT_MAX:
+        __ ans >_ INT_MAX:
             r.. 0
 
         r.. ans __ x > 0 ____ -ans

@@ -90,7 +90,7 @@ ___ operas_both_at_premiere(guest, composer
 
     ___ opera __ f.. l.... x: x.author __ composer_name,operas
         play_date = _get_date(opera.date)
-        __ guest_birthday <= play_date < guest_death_day a.. composer_death_day > play_date:
+        __ guest_birthday <_ play_date < guest_death_day a.. composer_death_day > play_date:
             y.. opera.play
 
 

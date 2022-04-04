@@ -65,13 +65,13 @@ c_ Solution(o..
         r.. lt, gt
 
     ___ find_kth  A, lo, hi, k
-        __ lo >= hi: r..
+        __ lo >_ hi: r..
 
         lt, gt = pivot(A, lo, hi)
 
         __ lt < k < gt:
             r.. k
-        __ k <= lt:
+        __ k <_ lt:
             r.. find_kth(A, lo, lt+1, k)
         ____
             r.. find_kth(A, gt, hi, k)

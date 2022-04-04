@@ -55,13 +55,13 @@ c_ Solution:
         ret = 0
         ___ i __ r..(1, N+1
             F[i] = cur_sum * (1/W)
-            __ i >= K:
+            __ i >_ K:
                 ret += F[i]
                 # stop
             ____
                 cur_sum += F[i]
                 
-            __ i - W >= 0:
+            __ i - W >_ 0:
                 cur_sum -= F[i - W]
 
         r.. ret
@@ -77,9 +77,9 @@ c_ Solution:
         F[0] = 1
         ___ i __ r..(1, K+W+1
             ___ j __ r..(W, 0, -1
-                __ i - j >= K:
+                __ i - j >_ K:
                     _____
-                __ i - j >= 0:
+                __ i - j >_ 0:
                     F[i] += F[i-j] * 1 / W
 
         ret = s..(F[1:N+1])  # error

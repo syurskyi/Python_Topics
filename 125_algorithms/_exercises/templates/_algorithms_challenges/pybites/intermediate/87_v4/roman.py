@@ -40,7 +40,7 @@ ___ romanutil(n: i.., queue: l..
 ___ romanize(decimal_number: i..
     """Takes a decimal number int and converts its Roman Numeral str"""
 
-    __ n.. isi..(decimal_number, i..) o. 4000 <= decimal_number <= 0:
+    __ n.. isi..(decimal_number, i..) o. 4000 <_ decimal_number <_ 0:
         r.. V...
 
     roman    # list

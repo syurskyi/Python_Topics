@@ -35,7 +35,7 @@ c_ Solution(o..
         ___ dir __ dirs:
             x, y = i, j
             dist = 0
-            w.... 0 <= x+dir[0] < m a.. 0 <= y+dir[1] < n a..\
+            w.... 0 <_ x+dir[0] < m a.. 0 <_ y+dir[1] < n a..\
                 maze[x+dir[0]][y+dir[1]] != 1:
                 x += dir[0]
                 y += dir[1]

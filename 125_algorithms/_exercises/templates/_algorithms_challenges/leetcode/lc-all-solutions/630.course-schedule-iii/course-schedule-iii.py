@@ -19,7 +19,7 @@ c_ Solution(o..
     now = 0
     heap    # list
     ___ t, d __ s..(courses, key=l.... x: x[1]
-      __ now + t <= d:
+      __ now + t <_ d:
         now += t
         heapq.heappush(heap, -t)
       ____ heap a.. -heap[0] > t:

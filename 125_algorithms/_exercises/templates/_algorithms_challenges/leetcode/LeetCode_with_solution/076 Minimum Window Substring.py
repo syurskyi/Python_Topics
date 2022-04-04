@@ -42,7 +42,7 @@ c_ Solution(o..
             __ t_cnt[o..(val)] > 0:
                 w_cnt[o..(val)] += 1
 
-            __ t_cnt[o..(val)] > 0 a.. w_cnt[o..(val)] <= t_cnt[o..(val)]:
+            __ t_cnt[o..(val)] > 0 a.. w_cnt[o..(val)] <_ t_cnt[o..(val)]:
                 appeared_cnt += 1  # cache, determine when to decrease appeared_cnt
 
             # shrink

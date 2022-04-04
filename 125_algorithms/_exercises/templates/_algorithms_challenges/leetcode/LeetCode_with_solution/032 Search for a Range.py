@@ -44,7 +44,7 @@ c_ Solution:
         end = length  # no "-1" # [0, length)
         w.... start<end:
             mid = (start+end)/2
-            __ A[mid]<=target:  # NOTICE: less than or equal
+            __ A[mid]<_target:  # NOTICE: less than or equal
                 start = mid+1
             ____
                 end = mid

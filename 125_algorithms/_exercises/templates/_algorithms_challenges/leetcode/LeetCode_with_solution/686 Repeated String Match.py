@@ -28,7 +28,7 @@ c_ Solution:
             j = 0
             count = 0
             w.... j < l..(B
-                __ i + j - count * l..(A) >= l..(A
+                __ i + j - count * l..(A) >_ l..(A
                     count += 1
                 idx = i + j - count * l..(A)
                 __ A[idx] __ B[j]:

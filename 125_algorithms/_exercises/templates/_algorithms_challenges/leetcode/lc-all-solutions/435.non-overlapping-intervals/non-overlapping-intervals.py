@@ -15,7 +15,7 @@ c_ Solution(o..
     end = f__("-inf")
     ___ interval __ intervals:
       # print interval.start, interval.end
-      __ interval.start >= end:
+      __ interval.start >_ end:
         ans += 1
         end = interval.end
     r.. l..(intervals) - ans

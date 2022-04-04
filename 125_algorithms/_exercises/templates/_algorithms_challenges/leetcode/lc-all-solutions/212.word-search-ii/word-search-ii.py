@@ -41,7 +41,7 @@ c_ Solution:
 
       ___ direction __ directions:
         ni, nj = i + direction[0], j + direction[1]
-        __ 0 <= ni < l..(board) a.. 0 <= nj < l..(board[0]
+        __ 0 <_ ni < l..(board) a.. 0 <_ nj < l..(board[0]
           c = board[ni][nj]
           __ visited[ni][nj] __ 0:
             visited[ni][nj] = 1

@@ -15,6 +15,6 @@ c_ Solution(o..
     total = 0
     ___ i __ r..(r..(1, l..(dp))):
       total += dp[i]
-      __ total >= i:
+      __ total >_ i:
         r.. i
     r.. 0

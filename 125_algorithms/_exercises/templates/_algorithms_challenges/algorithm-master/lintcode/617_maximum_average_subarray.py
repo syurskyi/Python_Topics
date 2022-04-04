@@ -74,7 +74,7 @@ c_ Solution:
             if there is a non-negative sum subarray of length at least k
             => it's valid even if just only one, return True immediately
             """
-            __ s[i] >= smin:  # s[i] - smin >= 0
+            __ s[i] >_ smin:  # s[i] - smin >= 0
                 r.. T..
 
             __ s[i - k + 1] < smin:

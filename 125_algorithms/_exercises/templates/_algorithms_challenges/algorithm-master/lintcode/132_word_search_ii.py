@@ -56,8 +56,8 @@ c_ Solution:
         ___ d __ r..(4
             _x = x + row_vector[d]
             _y = y + col_vector[d]
-            __ 0 <= _x < m \
-                    a.. 0 <= _y < n \
+            __ 0 <_ _x < m \
+                    a.. 0 <_ _y < n \
                     a.. board[_x][_y] __ parent 'children' :
                 find(_x, _y, parent, result)
         board[x][y] = char

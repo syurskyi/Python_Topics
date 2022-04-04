@@ -38,7 +38,7 @@ c_ SolutionTLE(o..
         n1, n2 = l..(nums1), l..(nums2)
         ___ l1 __ x..(m..(n1, k)+1
             l2 = k - l1
-            ... l2 >= 0
+            ... l2 >_ 0
             A1, A2 = maxNumberSingle(nums1, l1), maxNumberSingle(nums2, l2)
             cur = maxNumberDual(A1, A2)
             __ n.. maxa o. eval(maxa) < eval(cur
@@ -56,7 +56,7 @@ c_ SolutionTLE(o..
         stk    # list
         n = l..(A)
         ___ i __ x..(n
-            w.... stk a.. l..(stk)-1+(n-1-i+1) >= k a.. stk[-1] < A[i]: stk.p.. )
+            w.... stk a.. l..(stk)-1+(n-1-i+1) >_ k a.. stk[-1] < A[i]: stk.p.. )
             __ l..(stk) < k:
                 stk.a..(A[i])
 
@@ -73,7 +73,7 @@ c_ SolutionTLE(o..
             w.... ahead1 < l..(A1) a.. ahead2 < l..(A2) a.. A1[ahead1] __ A2[ahead2]:
                 ahead1, ahead2 = ahead1+1, ahead2+1
 
-            __ ahead2 >= l..(A2) o. (ahead1 < l..(A1) a.. A1[ahead1] > A2[ahead2]
+            __ ahead2 >_ l..(A2) o. (ahead1 < l..(A1) a.. A1[ahead1] > A2[ahead2]
                 ret.a..(A1[p1])
                 p1 += 1
             ____

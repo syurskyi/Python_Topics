@@ -11,9 +11,9 @@ c_ Solution(o..
       k = num / values[literals[idx]]
       __ = (num % values[literals[idx]]) / values[literals[idx + 2]]
       ans += k * literals[idx]
-      __ __ >= 9:
+      __ __ >_ 9:
         ans += literals[idx + 2] + literals[idx]
-      ____ __ >= 5:
+      ____ __ >_ 5:
         ans += literals[idx + 1] + (__ - 5) * literals[idx + 2]
       ____ __ __ 4:
         ans += literals[idx + 2] + literals[idx + 1]

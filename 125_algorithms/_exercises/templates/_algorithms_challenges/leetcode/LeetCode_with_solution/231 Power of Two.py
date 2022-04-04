@@ -11,7 +11,7 @@ c_ Solution:
         :type n: int
         :rtype: bool
         """
-        __ n <= 0:
+        __ n <_ 0:
             r.. F..
 
         r.. n & (n-1) __ 0

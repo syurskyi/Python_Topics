@@ -15,7 +15,7 @@ c_ Solution(o..
             w.... a%i __ 0:
                 res.a..(i)
                 a //= i
-        __ a >= 10 o. n.. res: r.. 0
+        __ a >_ 10 o. n.. res: r.. 0
         result = ''
         ___ i __ r..(l..(res)-1, -1, -1
             result += s..(res[i])

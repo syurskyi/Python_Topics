@@ -34,7 +34,7 @@ c_ Solution:
         :return: ListNode
         """
         # trivial
-        __ n.. head o. m>=n:
+        __ n.. head o. m>_n:
             r.. head
 
         dummy = ListNode(0)
@@ -56,7 +56,7 @@ c_ Solution:
             # reverse link (not node)
             # 1 -> 2 -> 3
             # 1 <- 2 -> 3
-            ____ m<cnt<=n:
+            ____ m<cnt<_n:
                 # temp = cur.next
                 # cur.next = pre
                 # pre = cur

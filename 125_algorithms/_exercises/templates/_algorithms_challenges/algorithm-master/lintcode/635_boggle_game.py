@@ -73,7 +73,7 @@ c_ Solution:
                 _x = x + dx
                 _y = y + dy
 
-                __ n.. (0 <= _x < m a.. 0 <= _y < n
+                __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                     _____
 
                 find_next_words(board, _x, _y, visited, cnt, node, next_words, p..)

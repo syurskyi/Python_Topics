@@ -37,7 +37,7 @@ c_ Solution(o..
           r.. "unexpected char before dot", state
       ____
         __ state __ dfa["escapeCMD"]:
-          w.... stack a.. stack[-1][2] >= level:
+          w.... stack a.. stack[-1][2] >_ level:
             stack.p.. )
           start = i
           state = dfa["char"]

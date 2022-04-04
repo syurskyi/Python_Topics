@@ -41,7 +41,7 @@ c_ Solution:
             r.. cache[(total, c..)]
 
         ret = F..
-        __ m..(c..) >= total:
+        __ m..(c..) >_ total:
             ret = T..
 
         ____ gross < total:

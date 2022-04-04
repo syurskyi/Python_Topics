@@ -46,7 +46,7 @@ c_ Solution:
                     _x = P.x + dx
                     _y = P.y + dy
 
-                    __ (0 <= _x < m a.. 0 <= _y < n a..
+                    __ (0 <_ _x < m a.. 0 <_ _y < n a..
                         n.. G[_x][_y] a..
                         steps < min_steps[_x][_y]
 

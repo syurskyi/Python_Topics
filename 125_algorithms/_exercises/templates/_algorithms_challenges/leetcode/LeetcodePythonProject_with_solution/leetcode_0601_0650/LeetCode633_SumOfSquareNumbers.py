@@ -13,7 +13,7 @@ c_ Solution(o..
         _______ m__
         __ c < 0: r.. F..
         l, r = 0, i..(m__.sqrt(c
-        w.... l <= r:
+        w.... l <_ r:
             __ l*l + r*r < c:
                 l += 1
             ____ l*l + r*r > c:

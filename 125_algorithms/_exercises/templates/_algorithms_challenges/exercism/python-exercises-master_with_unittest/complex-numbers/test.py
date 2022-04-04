@@ -98,19 +98,19 @@ c_ ComplexNumbersTest(unittest.TestCase
                          input_number.div(divider).imaginary)
 
     ___ test_absolute_value_of_a_positive_purely_real_number
-        assertEqual(ComplexNumber(5, 0).abs(), 5)
+        assertEqual(ComplexNumber(5, 0).a..(), 5)
 
     ___ test_absolute_value_of_a_negative_purely_real_number
-        assertEqual(ComplexNumber(-5, 0).abs(), 5)
+        assertEqual(ComplexNumber(-5, 0).a..(), 5)
 
     ___ test_absolute_value_of_imaginary_number_negative_imaginary_part
-        assertEqual(ComplexNumber(0, -5).abs(), 5)
+        assertEqual(ComplexNumber(0, -5).a..(), 5)
 
     ___ test_absolute_value_of_imaginary_number_positive_imaginary_part
-        assertEqual(ComplexNumber(0, 5).abs(), 5)
+        assertEqual(ComplexNumber(0, 5).a..(), 5)
 
     ___ test_absolute_value_of_a_number_with_real_and_imaginary_part
-        assertEqual(ComplexNumber(3, 4).abs(), 5)
+        assertEqual(ComplexNumber(3, 4).a..(), 5)
 
     ___ test_conjugate_a_purely_real_number
         input_number = ComplexNumber(5, 0)

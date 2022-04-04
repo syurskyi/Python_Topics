@@ -28,7 +28,7 @@ c_ NumArray:
         __ (
             n.. prefix_sum o.
             i < 0 o.
-            j + 1 >= l..(prefix_sum)
+            j + 1 >_ l..(prefix_sum)
 
             r.. 0
         r.. prefix_sum[j + 1] - prefix_sum[i]

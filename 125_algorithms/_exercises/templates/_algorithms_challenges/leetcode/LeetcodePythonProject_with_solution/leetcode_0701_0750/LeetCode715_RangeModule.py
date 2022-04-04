@@ -86,15 +86,15 @@ c_ RangeModule_own(o..
         """
         newInterval = Interval(left, right)
         l, r = 0, l..(intervals)-1
-        w.... l <= r:
+        w.... l <_ r:
             mid = (l+r)//2
-            __ intervals[mid].left >= newInterval.right:
+            __ intervals[mid].left >_ newInterval.right:
                 r = mid-1
-            ____ intervals[mid].right <= newInterval.left:
+            ____ intervals[mid].right <_ newInterval.left:
                 l = mid+1
             ____
-                r.. intervals[mid].left <= newInterval.left a..\
-                    intervals[mid].right >= newInterval.right
+                r.. intervals[mid].left <_ newInterval.left a..\
+                    intervals[mid].right >_ newInterval.right
         r.. F..
 
     ___ removeRange  left, right
@@ -106,20 +106,20 @@ c_ RangeModule_own(o..
         newInterval = Interval(left, right)
         res    # list
         ___ interval __ intervals:
-            __ newInterval.right >= interval.right a.. newInterval.left <= interval.left:
+            __ newInterval.right >_ interval.right a.. newInterval.left <_ interval.left:
                 _____
-            ____ newInterval.right <= interval.right a.. newInterval.left >= interval.left:
+            ____ newInterval.right <_ interval.right a.. newInterval.left >_ interval.left:
                 __ interval.left != newInterval.left:
                     res.a..(Interval(interval.left, newInterval.left
                 __ interval.right != newInterval.right:
                     res.a..(Interval(newInterval.right, interval.right
-            ____ newInterval.right <= interval.left o. interval.right <= newInterval.left:
+            ____ newInterval.right <_ interval.left o. interval.right <_ newInterval.left:
                 res.a..(interval)
-            ____ newInterval.right <= interval.right:
+            ____ newInterval.right <_ interval.right:
                 tmpInterval = Interval(newInterval.right, interval.right)
                 __ tmpInterval.left < tmpInterval.right:
                     res.a..(tmpInterval)
-            ____ newInterval.left >= interval.left:
+            ____ newInterval.left >_ interval.left:
                 tmpInterval = Interval(interval.left, newInterval.left)
                 __ tmpInterval.left < tmpInterval.right:
                     res.a..(tmpInterval)

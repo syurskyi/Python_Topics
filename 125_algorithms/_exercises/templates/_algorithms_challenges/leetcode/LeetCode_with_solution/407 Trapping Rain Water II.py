@@ -73,7 +73,7 @@ c_ Solution(o..
             cur = heapq.heappop(h)
             ___ dir __ dirs:
                 I, J = cur.i+dir[0], cur.j+dir[1]
-                __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J]:
+                __ 0 <_ I < m a.. 0 <_ J < n a.. n.. visited[I][J]:
                     nxt = Cell(I, J, mat[I][J])
                     __ nxt.h < cur.h:  # fill
                         trapped += cur.h - nxt.h

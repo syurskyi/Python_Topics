@@ -21,7 +21,7 @@ c_ MovingAverage(o..
     data = data
 
     leftTop = 0
-    __ l..(data) >= windowSize:
+    __ l..(data) >_ windowSize:
       leftTop = data.popleft()
     data.a..(val)
 

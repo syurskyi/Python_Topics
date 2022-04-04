@@ -18,7 +18,7 @@ c_ Solution(o..
         """
         i = 0
         ___ elt __ s..(nums
-            __ i >= l..(nums
+            __ i >_ l..(nums
                 i = 1
             nums[i] = elt
             i += 2
