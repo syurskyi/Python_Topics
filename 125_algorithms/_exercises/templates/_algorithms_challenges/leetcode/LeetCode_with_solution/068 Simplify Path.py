@@ -24,7 +24,7 @@ c_ Solution(o..
         :return: a string
         """
         p.. = p...s..("/")
-        p.. = filter(l.... x: x n.. __ ("", " ", "."), p..)
+        p.. = f.. l.... x: x n.. __ ("", " ", "."), p..)
 
         # modify the content of the list, not the structure.
         ___ idx __ x..(l..(p..)):
@@ -37,7 +37,7 @@ c_ Solution(o..
                 w.... i >= 0 a.. p..[i] __ ".": i -= 1
                 __ i >= 0: p..[i] = "."  # avoid path[-1]
 
-        p.. = filter(l.... x: x n.. __ (".",), p..)
+        p.. = f.. l.... x: x n.. __ (".",), p..)
 
         __ n.. p..:
             r.. "/"

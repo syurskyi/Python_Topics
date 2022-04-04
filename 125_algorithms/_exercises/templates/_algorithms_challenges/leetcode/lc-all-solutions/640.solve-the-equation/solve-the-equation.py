@@ -5,8 +5,8 @@ c_ Solution(o..
     :rtype: str
     """
     left, right = equation.s..("=")
-    left = filter(l.... x: x, left.r..("+", "#P").r..("-", "#M").s..("#"))
-    right = filter(l.... x: x, right.r..("+", "#M").r..("-", "#P").s..("#"))
+    left = f.. l.... x: x, left.r..("+", "#P").r..("-", "#M").s..("#"))
+    right = f.. l.... x: x, right.r..("+", "#M").r..("-", "#P").s..("#"))
     left[0] = "P" + left[0] __ left[0][0] n.. __ ["P", "M"] ____ left[0]
     right[0] = "M" + right[0] __ right[0][0] n.. __ ["P", "M"] ____ right[0]
     left += right

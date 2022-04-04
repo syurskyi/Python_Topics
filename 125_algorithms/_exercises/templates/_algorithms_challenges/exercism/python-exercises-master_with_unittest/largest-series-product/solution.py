@@ -1,4 +1,4 @@
-____ f.. _______ reduce
+____ f.. _______ r..
 ____ operator _______ mul
 
 
@@ -14,4 +14,4 @@ ___ slices(series, length
 ___ largest_product(series, length
     __ length __ 0:
         r.. 1
-    r.. m..(reduce(mul, slc) ___ slc __ slices(series, length))
+    r.. m..(r.. mul, slc) ___ slc __ slices(series, length))

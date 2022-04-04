@@ -1,7 +1,7 @@
-____ f.. _______ reduce
-____ t___ _______ Iterable, Set, A..
+____ f.. _______ r..
+____ t___ _______ I.., S.., A..
 
 
-___ intersection(*args: Iterable) __ Set[A..]:
+___ intersection $a.. I..) __ S..[A..]:
     args = [s..(arg) ___ arg __ args __ arg a.. arg != '']
-    r.. reduce(s...intersection, args) __ args ____ s..()
+    r.. r.. s...intersection, args) __ args ____ s..()

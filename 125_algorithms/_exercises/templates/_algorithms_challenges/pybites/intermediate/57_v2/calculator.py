@@ -8,7 +8,7 @@ ___ calculator(f, numbers
     
 
 
-    r.. r..(f...reduce(l.... x,y: f(x,y),numbers),2)
+    r.. r..(f...r.. l.... x,y: f(x,y),numbers),2)
 
 
 

@@ -21,7 +21,7 @@ Note: Calling the function with an empty list should return None.
 ### ----------------------------- My solution -----------------------------------
 
 ____ t___ _______ List, Union
-____ f.. _______ reduce
+____ f.. _______ r..
 
 ___ my_join_lists(lst_of_lst: List[List[s..]], sep: s..) __ Union[List[s..], N..]:
     __ l..(lst_of_lst) __ 0:
@@ -46,4 +46,4 @@ ___ join_lists(lst_of_lst: List[List[s..]], sep: s..) __ Union[List[s..], N..]:
     __ n.. lst_of_lst:
         r.. N..
 
-    r.. reduce(l.... x, y: x + [sep] + y, lst_of_lst)
+    r.. r.. l.... x, y: x + [sep] + y, lst_of_lst)

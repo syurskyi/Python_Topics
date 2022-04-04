@@ -24,8 +24,8 @@ c_ SummaryRanges(o..
       intervals.a..(newInterval)
       r..
     s, e = newInterval.start, newInterval.end
-    left = filter(l.... x: x.end < newInterval.start, intervals)
-    right = filter(l.... x: x.start > newInterval.end, intervals)
+    left = f.. l.... x: x.end < newInterval.start, intervals)
+    right = f.. l.... x: x.start > newInterval.end, intervals)
     # print left, right, (s, e)
     __ left + right != intervals:
       s = m..(intervals[l..(left)].start, s)

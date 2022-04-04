@@ -9,9 +9,9 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: bool
         """
-        ____ f.. _______ reduce
+        ____ f.. _______ r..
         ____ operator _______ xor
-        r.. l..(nums)%2__0 o. reduce(xor,nums)__0
+        r.. l..(nums)%2__0 o. r.. xor,nums)__0
     
     ___ xorGame_own_TLE  nums
         """

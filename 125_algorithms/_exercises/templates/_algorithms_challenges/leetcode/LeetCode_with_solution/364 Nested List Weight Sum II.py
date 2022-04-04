@@ -65,7 +65,7 @@ c_ Solution(o..
         r.. s..
 
     ___ height  nl
-        nl_lst = filter(l.... x: n.. x.isInteger(), nl)
+        nl_lst = f.. l.... x: n.. x.isInteger(), nl)
         __ n.. nl_lst:
             r.. 1
         __ nl_lst:
@@ -74,8 +74,8 @@ c_ Solution(o..
             )
 
     ___ inverseDepthSum  nl, inv_depth
-        nl_lst = filter(l.... x: n.. x.isInteger(), nl)
-        ni_list = filter(l.... x: x.isInteger(), nl)
+        nl_lst = f.. l.... x: n.. x.isInteger(), nl)
+        ni_list = f.. l.... x: x.isInteger(), nl)
         __ nl_lst:
             map(l.... x: inverseDepthSum(x.getList(), inv_depth - 1), nl_lst)
         __ ni_list:
@@ -102,8 +102,8 @@ c_ SolutionError(o..
         """
         height = 1
 
-        nl_lst = filter(l.... x: n.. x.isInteger(), nl)
-        ni_list = filter(l.... x: x.isInteger(), nl)
+        nl_lst = f.. l.... x: n.. x.isInteger(), nl)
+        ni_list = f.. l.... x: x.isInteger(), nl)
         __ nl_lst:
             height = 1 + m..(
                 map(l.... x: dfs(x.getList, nl_lst)

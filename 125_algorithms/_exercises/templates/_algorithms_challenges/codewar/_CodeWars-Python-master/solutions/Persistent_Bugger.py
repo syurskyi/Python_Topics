@@ -22,7 +22,7 @@ ___ persistence(n
     times = 0
 
     w.... n > 9:
-        n = f...reduce(l.... x, y: x * y, [i..(i) ___ i __ s..(n)])
+        n = f...r.. l.... x, y: x * y, [i..(i) ___ i __ s..(n)])
         times += 1
 
     r.. times

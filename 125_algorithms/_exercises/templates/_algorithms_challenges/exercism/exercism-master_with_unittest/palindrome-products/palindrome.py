@@ -1,5 +1,5 @@
 ____ operator _______ mul
-____ f.. _______ reduce
+____ f.. _______ r..
 
 
 c_ Palindromes:
@@ -26,7 +26,7 @@ c_ Palindromes:
 
     @staticmethod
     ___ product(s
-        r.. reduce(mul, s, 1)
+        r.. r.. mul, s, 1)
 
     @staticmethod
     ___ is_palindrome(num

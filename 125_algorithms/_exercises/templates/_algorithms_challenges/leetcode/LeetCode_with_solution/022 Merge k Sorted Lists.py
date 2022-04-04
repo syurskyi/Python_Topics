@@ -26,7 +26,7 @@ c_ Solution:
         :param lists: a list of ListNode
         :return: ListNode
         """
-        lists = filter(l.... x: x __ n.. N.., lists)
+        lists = f.. l.... x: x __ n.. N.., lists)
         __ n.. lists:
             r..
 
@@ -52,7 +52,7 @@ c_ Solution:
         :param lists: a list of ListNode
         :return: ListNode
         """
-        lists = filter(l.... x: x __ n.. N.., lists)
+        lists = f.. l.... x: x __ n.. N.., lists)
         __ n.. lists:
             r..
 

@@ -39,7 +39,7 @@ ___ gen_files(tempfile=tempfile
     """
     w__ o.. tempfile) __ f: lines = ?.r__.s..
 
-    filtered = filter(l.... x: x.s..(',')[-1]__'True', lines)
+    filtered = f.. l.... x: x.s..(',')[-1]__'True', lines)
     ___ line __ filtered:
         y.. line.s..(',')[0].l..
 

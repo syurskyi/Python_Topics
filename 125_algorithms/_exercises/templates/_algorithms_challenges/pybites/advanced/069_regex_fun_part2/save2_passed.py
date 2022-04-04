@@ -28,7 +28,7 @@ ___ split_string_on_punctuation(text
     """Split on ?!.,; - e.g. "hi, how are you doing? blabla" ->
        ['hi', 'how are you doing', 'blabla']
        (make sure you strip trailing spaces)"""
-    r.. l..(filter(N.., __.s..(r'\s?[?!\.,;]\s?', text)))
+    r.. l..(f.. N.., __.s..(r'\s?[?!\.,;]\s?', text)))
 
 
 ___ remove_duplicate_spacing(text

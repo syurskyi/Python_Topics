@@ -8,7 +8,7 @@ c_ Solution:
         n = 2 ** k
         res    # list
         ___ i __ r..(n
-            s = filter(S, k, i)
+            s = f.. S, k, i)
             res.a..(s)
         r.. res
 

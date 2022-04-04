@@ -70,7 +70,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        nums = filter(l.... x: x <= n, nums)
+        nums = f.. l.... x: x <= n, nums)
 
         cnt = 0
         cur_max = 0

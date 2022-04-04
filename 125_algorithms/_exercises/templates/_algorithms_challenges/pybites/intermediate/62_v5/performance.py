@@ -1,5 +1,5 @@
 ____ f.. _______ wraps
-____ t___ _______ List, Set
+____ t___ _______ List, S..
 
 ____ time _______ time
 
@@ -30,7 +30,7 @@ ___ contains(sequence: List[i..], num: i..) __ b..:
 
 
 @timing
-___ contains_fast(sequence: Set[i..], num: i..) __ b..:
+___ contains_fast(sequence: S..[i..], num: i..) __ b..:
     r.. num __ sequence
 
 

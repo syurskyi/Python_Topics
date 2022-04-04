@@ -29,10 +29,10 @@ to code intersection())
 """
 
 _______ f..
-____ t___ _______ Iterable, Set, A..
+____ t___ _______ I.., S.., A..
 
 # First attempt - crap and ugly
-___ intersection(*args: Iterable) __ Set[A..]:
+___ intersection $a.. I..) __ S..[A..]:
     # Filter out inputs, store them in a list
     # I want iterables that are not None and not empty
     # Edge condition:

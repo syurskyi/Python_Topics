@@ -1,11 +1,11 @@
 _______ a__
-____ f.. _______ reduce
+____ f.. _______ r..
 _______ operator
 
 operations = d..(add=s..,
-                  sub=l.... items: reduce(operator.sub, items),
-                  mul=l.... items: reduce(operator.mul, items),
-                  div=l.... items: reduce(operator.truediv, items))
+                  sub=l.... items: r.. operator.sub, items),
+                  mul=l.... items: r.. operator.mul, items),
+                  div=l.... items: r.. operator.truediv, items))
 
 
 ___ calculator(operation, numbers

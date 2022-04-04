@@ -29,7 +29,7 @@ c_ Solution:
 
         ret    # list
         ___ k __ cnt.k..:
-            __ l..(filter(l.... x: x __ k, nums)) > l..(nums)/2:
+            __ l..(f.. l.... x: x __ k, nums)) > l..(nums)/2:
                 ret.a..(k)
 
         r.. ret

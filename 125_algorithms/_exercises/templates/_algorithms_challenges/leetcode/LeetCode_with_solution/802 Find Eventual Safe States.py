@@ -29,7 +29,7 @@ The number of edges in the graph will not exceed 32000.
 Each graph[i] will be a sorted list of different integers, chosen within the
 range [0, graph.length - 1].
 """
-____ t___ _______ List, Set
+____ t___ _______ List, S..
 
 
 c_ Solution:
@@ -39,7 +39,7 @@ c_ Solution:
         prune by nodes with no cycle
         """
         visit: List[i..] = [0 ___ _ __ graph]  # 0 not visted, 1 processing, 2 visited
-        acyclic: Set[i..] = s..()
+        acyclic: S..[i..] = s..()
         ___ u __ r..(l..(graph)):
             __ visit[u] __ 0:
                 dfs(graph, u, visit, acyclic)

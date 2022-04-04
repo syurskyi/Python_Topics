@@ -2,7 +2,7 @@ _______ __
 ____ c.. _______ C..
 ____ dataclasses _______ dataclass, field
 ____ s__ _______ punctuation
-____ t___ _______ List, Set, Tuple
+____ t___ _______ List, S.., Tuple
 
 STOPWORDS: s.. = {
     "she's", "wasn", "through", "won", "that'll", "his", "once", "this",
@@ -43,7 +43,7 @@ c_ Corpora:
     count: i.. = 5
     tag: s.. = '#'
     extra: List[s..] = field(default_factory=l..)
-    stopwords: Set[s..] = field(init=F..)
+    stopwords: S..[s..] = field(init=F..)
 
     ___ __post_init__
         stopwords = STOPWORDS

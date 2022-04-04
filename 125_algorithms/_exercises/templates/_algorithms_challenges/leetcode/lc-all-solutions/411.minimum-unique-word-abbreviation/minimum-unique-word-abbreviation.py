@@ -30,7 +30,7 @@ c_ Solution(o..
     res    # list
     dfs(l..(target), 0, res)
     res.s..(key=l.... x: l..(x))
-    dictionary = filter(l.... s: l..(s) __ wordLen, dictionary)
+    dictionary = f.. l.... s: l..(s) __ wordLen, dictionary)
 
     ___ w __ res:
       allMiss = T..

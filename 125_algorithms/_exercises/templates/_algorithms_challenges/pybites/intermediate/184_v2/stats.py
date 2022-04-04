@@ -70,7 +70,7 @@ c_ BiteStats:
            one or more Bites"""
         users = s..()
 
-        ___ row __ filter(l.... row: row 'completed'  __ 'True',rows
+        ___ row __ f.. l.... row: row 'completed'  __ 'True',rows
             users.add(row 'user' )
 
         r.. l..(users)
@@ -89,7 +89,7 @@ c_ BiteStats:
     ___ top_user_by_bites_completed(self) __ s..:
         """Get the user that completed the most Bites"""
 
-        r.. C..(row 'user'  ___ row __ filter(l.... row: row 'completed'  __ 'True',rows)).most_common(1)[0][0]
+        r.. C..(row 'user'  ___ row __ f.. l.... row: row 'completed'  __ 'True',rows)).most_common(1)[0][0]
 
 
 

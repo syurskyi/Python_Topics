@@ -1,6 +1,6 @@
 ____ f.. _______ wraps
 ____ time _______ time
-____ t___ _______ Deque, List, Set, Generator
+____ t___ _______ Deque, List, S.., Generator
 
 
 ___ timing(f
@@ -27,7 +27,7 @@ ___ contains(sequence: List[i..], num: i..) __ b..:
 
 
 @timing
-___ contains_fast(sequence: Set[i..], num: i..) __ b..:
+___ contains_fast(sequence: S..[i..], num: i..) __ b..:
     __ num __ sequence:
         r.. T..
     r.. F..

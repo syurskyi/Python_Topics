@@ -1,4 +1,4 @@
-____ f.. _______ reduce
+____ f.. _______ r..
 
 
 valid_hexchars = s..('0123456789abcdef')
@@ -12,4 +12,4 @@ ___ hexa(hexstring
         o..(c) - o..('a') + 10 __ c __ 'abcdef' ____ o..(c) - o..('0')
         ___ c __ s
         ]
-    r.. reduce(l.... x, y: x * 16 + y, hexchars_as_ints, 0)
+    r.. r.. l.... x, y: x * 16 + y, hexchars_as_ints, 0)

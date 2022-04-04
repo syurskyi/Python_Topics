@@ -19,7 +19,7 @@ ___ sum_even_numbers(numbers: List[f__]) __ f__:
     s = 0
     
     ___
-        ___ num __ filter(l.... x: x % 2 __ 0,numbers
+        ___ num __ f.. l.... x: x % 2 __ 0,numbers
             s += num
     ______ E.. __ e:
         logger.exception _*Bad inputs: {numbers}')

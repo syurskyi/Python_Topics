@@ -40,7 +40,7 @@ c_ Solution(o..
         :rtype: int
         """
         F = [0 ___ _ __ x..(target + 1)]
-        nums = filter(l.... x: x <= target, nums)
+        nums = f.. l.... x: x <= target, nums)
         ___ k __ nums:
             F[k] = 1
 

@@ -21,7 +21,7 @@ c_ Solution(o..
         """
         cnt = 0
         ___ l __ x..(l..(low), l..(high)+1
-            cnt += l..(filter(l.... x: i..(low) <= i..(x) <= i..(high), strobogrammatic(l)))
+            cnt += l..(f.. l.... x: i..(low) <= i..(x) <= i..(high), strobogrammatic(l)))
 
         r.. cnt
 

@@ -15,7 +15,7 @@ c_ Codec(o..
         :rtype: str
         """
         strs = map(l.... x: s..(l..(x))+"/"+x, strs)
-        r.. reduce(l.... x, y: x+y, strs, "")  # i.e. "".join(strs)
+        r.. r.. l.... x, y: x+y, strs, "")  # i.e. "".join(strs)
 
     ___ decode  s
         """
@@ -46,7 +46,7 @@ c_ CodecMethod2(o..
         :rtype: str
         """
         strs = map(l.... x: x.r..("\n", "\n\n")+"_\n_", strs)
-        r.. reduce(l.... x, y: x+y, strs, "")
+        r.. r.. l.... x, y: x+y, strs, "")
 
     ___ decode  s
         """

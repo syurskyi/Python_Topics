@@ -30,10 +30,10 @@ c_ Calculator:
         r.. eval(s..(num1) + operator + s..(num2))
 
     ___ num_stack
-        r.. l.. m..(i.., l..(filter(digit, tokens))))
+        r.. l.. m..(i.., l..(f.. digit, tokens))))
 
     ___ operator_stack
-        r.. l..(filter(operator, tokens))
+        r.. l..(f.. operator, tokens))
 
     ___ valid
         r.. (valid_elements() a..

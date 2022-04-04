@@ -34,7 +34,7 @@ ___ get_industry_cap(industry
        the _cap_str_to_mln_float to parse the cap values,
        return a float with 2 digit precision"""
     total = s.. m..(l.... x: _cap_str_to_mln_float(x 'cap' ),
-                    filter(l.... x: x 'industry'  __ industry, data)
+                    f.. l.... x: x 'industry'  __ industry, data)
                     )
                 )
 
@@ -51,7 +51,7 @@ ___ get_sectors_with_max_and_min_stocks
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
     min_max = C.. m..(l.... x: x 'sector' ,
-                          filter(l.... x: x 'sector'  != 'n/a', data)
+                          f.. l.... x: x 'sector'  != 'n/a', data)
                           )
                       )
     most = min_max.most_common(1)[0][0]

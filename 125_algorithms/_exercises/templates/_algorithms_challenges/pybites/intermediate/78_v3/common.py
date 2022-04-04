@@ -8,7 +8,7 @@ ___ common_languages(programmers
 
 
 
-    r.. f...reduce(l.... x,y: x.intersection(y),sets)
+    r.. f...r.. l.... x,y: x.intersection(y),sets)
 
 
 

@@ -39,7 +39,7 @@ c_ Solution:
         """
         maintain a sum
         """
-        cur_sum = s..(filter(l.... x: x % 2 __ 0, A))
+        cur_sum = s..(f.. l.... x: x % 2 __ 0, A))
         ret    # list
         ___ val, idx __ queries:
             prev = A[idx]

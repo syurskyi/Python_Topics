@@ -1,5 +1,5 @@
 ____ i.. _______ permutations
-____ f.. _______ reduce
+____ f.. _______ r..
 
 
 ___ swap(a, b
@@ -24,7 +24,7 @@ ___ c__(dominoes
     __ n.. any(dominoes
         r.. []
     ___ perm __ permutations(dominoes
-        c__ = reduce(build_chain, perm[1:], [perm[0]])
+        c__ = r.. build_chain, perm[1:], [perm[0]])
         __ c__ __ n.. N.. a.. c__[0][0] __ c__[-1][1]:
             r.. c__
     r.. N..

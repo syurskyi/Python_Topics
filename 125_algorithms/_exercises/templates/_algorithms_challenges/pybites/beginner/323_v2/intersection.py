@@ -1,20 +1,20 @@
-_______ f..
-____ t___ _______ Iterable, Set, A..
-
-
-___ intersection(*args: Iterable) __ Set[A..]:
-
-    
-    result = [s..(arg) ___ arg __ args __ arg]
-
-    __ l..(result) __ 0:
-        r.. s..()
-    ____ l..(result) __ 1:
-        r.. result[0]
-
-
-
-    r.. f...reduce(l.... x,y: x & y,result)
-
-
-
+# _______ f..
+# ____ t___ _______ I.., S.. A..
+#
+#
+# ___ intersection $a.. I.. __ S.. A..
+#
+#
+#     result  s.. a.. ___ ? __ ? __ ?
+#
+#     __ l.. ? __ 0
+#         r.. s..
+#     ____ l..? __ 1
+#         r.. ? 0
+#
+#
+#
+#     r.. f...r.. l.... x y| ? _ ? ?
+#
+#
+#

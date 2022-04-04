@@ -1,5 +1,5 @@
 _______ a__
-____ f.. _______ reduce
+____ f.. _______ r..
 ____ operator _______ add, sub, mul, truediv
 
 
@@ -8,7 +8,7 @@ ___ calculator(operation, numbers
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals"""
     OPS = {'add': add, 'sub': sub, 'mul': mul, 'div': truediv}
-    r.. r..(reduce(OPS[operation], map(f__, numbers)), 2)
+    r.. r..(r.. OPS[operation], map(f__, numbers)), 2)
 
 
 ___ create_parser

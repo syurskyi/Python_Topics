@@ -11,4 +11,4 @@ c_ Solution(o..
       ___ data __ raw[1:]:
         name, sign = data.s..("(")
         d[sign].a..(dirPath + "/" + name)
-    r.. filter(l.... x: l..(x) > 1, d.values
+    r.. f.. l.... x: l..(x) > 1, d.values

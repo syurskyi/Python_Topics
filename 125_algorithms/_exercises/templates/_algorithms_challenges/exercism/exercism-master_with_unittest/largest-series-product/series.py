@@ -1,8 +1,8 @@
-____ f.. _______ reduce
+____ f.. _______ r..
 
 
 ___ largest_product(d.., size
-    products = [reduce(l.... x, y: x * y, s, 1) ___ s __ slices(d.., size)]
+    products = [r.. l.... x, y: x * y, s, 1) ___ s __ slices(d.., size)]
     r.. m..(products)
 
 

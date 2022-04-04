@@ -1,5 +1,5 @@
 _______ m__
-____ f.. _______ reduce
+____ f.. _______ r..
 
 
 ___ is_perfect(number
@@ -7,7 +7,7 @@ ___ is_perfect(number
 
 
 ___ factors(n
-    r.. s..(reduce(l...__add__, pairs_of_factors(n))) - s..([n])
+    r.. s..(r.. l...__add__, pairs_of_factors(n))) - s..([n])
 
 
 ___ pairs_of_factors(n

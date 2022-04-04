@@ -6,7 +6,7 @@ __author__ = 'Daniel'
 
 c_ Solution(o..
     ___ numWays_oneliner  n, k
-        r.. 0 __ n < 1 ____ s..(reduce(l.... F, i: [(k-1)*(F[0]+F[1]), F[0]], x..(1, n), [k, 0]))
+        r.. 0 __ n < 1 ____ s..(r.. l.... F, i: [(k-1)*(F[0]+F[1]), F[0]], x..(1, n), [k, 0]))
 
     ___ numWays  n, k
         """

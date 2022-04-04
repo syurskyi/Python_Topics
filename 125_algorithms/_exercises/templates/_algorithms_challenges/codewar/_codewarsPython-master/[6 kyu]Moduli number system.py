@@ -1,4 +1,4 @@
-____ f.. _______ reduce
+____ f.. _______ r..
 
 ___ fromNb2Str(n, modsys
     prime = [i ___ num __ modsys ___ i __ r..(2,num+1) __ num%i __ 0]
@@ -6,7 +6,7 @@ ___ fromNb2Str(n, modsys
         __ prime.c.. p) > 1:
             r.. 'Not applicable'
     
-    __ reduce(l.... x,y:x*y, modsys) < n:
+    __ r.. l.... x,y:x*y, modsys) < n:
         r.. 'Not applicable'
     r.. '-' + '--'.j..([s..(n%num) ___ num __ modsys]) + '-'
 
