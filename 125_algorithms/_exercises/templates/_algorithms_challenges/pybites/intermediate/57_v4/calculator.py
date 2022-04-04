@@ -1,6 +1,6 @@
 _______ a__
 ____ f.. _______ r..
-____ operator _______ add, sub, mul, truediv
+____ o.. _______ add, sub, mul, truediv
 
 
 ___ calculator(operation, numbers

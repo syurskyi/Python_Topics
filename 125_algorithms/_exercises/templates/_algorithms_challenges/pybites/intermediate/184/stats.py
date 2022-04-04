@@ -63,7 +63,7 @@ c_ BiteStats:
     ___ top_user_by_bites_completed(self) __ s..:
         """Get the user that completed the most Bites"""
         top_user = C..([row["user"] ___ row __ rows __ row["completed"] __ "True"])
-        r.. top_user.most_common()[0][0]
+        r.. top_user.m..[0][0]
 
 
 # if __name__ == "__main__":

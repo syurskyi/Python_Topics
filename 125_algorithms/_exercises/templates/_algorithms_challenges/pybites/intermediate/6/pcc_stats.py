@@ -71,7 +71,7 @@ ___ diehard_pybites(files_ N..
             users.update([user])
             popular_challenges.update([challenge])
 
-    r.. Stats(users.most_common()[0][0], (popular_challenges.most_common()[0][0], popular_challenges.most_common()[0][1]
+    r.. Stats(users.m..[0][0], (popular_challenges.m..[0][0], popular_challenges.m..[0][1]
 
 
 # if __name__ == "__main__":

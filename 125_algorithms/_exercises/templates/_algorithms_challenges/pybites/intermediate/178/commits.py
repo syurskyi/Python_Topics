@@ -52,7 +52,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
 
 
 
-    values = month_changes.most_common()
+    values = month_changes.m..
 
 
     r.. values[-1][0],values[0][0]

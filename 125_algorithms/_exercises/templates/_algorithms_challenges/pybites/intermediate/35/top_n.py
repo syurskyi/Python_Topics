@@ -1,5 +1,5 @@
 ____ d__ _______ d__
-____ operator _______ itemgetter
+____ o.. _______ itemgetter
 
 _______ heapq
 
@@ -38,5 +38,5 @@ ___ get_latest_dates(dates, n=3
     r.. heapq.nlargest(n, dates)
 
 ___ get_highest_earnings(earnings_mln, n=3
-    r.. heapq.nlargest(n, earnings_mln, key=itemgetter('earnings'
+    r.. heapq.nlargest(n, earnings_mln, key=i.. 'earnings'
 

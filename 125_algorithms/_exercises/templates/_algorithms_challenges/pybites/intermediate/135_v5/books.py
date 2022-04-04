@@ -1,6 +1,6 @@
 ____ c.. _______ n..
 ____ d__ _______ d__
-____ operator _______ attrgetter
+____ o.. _______ attrgetter
 
 Book = n..('Book', 'title authors pages published')
 

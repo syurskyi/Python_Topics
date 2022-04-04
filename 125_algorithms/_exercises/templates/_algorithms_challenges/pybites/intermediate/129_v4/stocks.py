@@ -55,5 +55,5 @@ ___ get_sectors_with_max_and_min_stocks
                           )
                       )
     most = min_max.most_common(1)[0][0]
-    least = min_max.most_common()[-1][0]
+    least = min_max.m..[-1][0]
     r.. most, least

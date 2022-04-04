@@ -5,7 +5,7 @@ Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
 ____ c.. _______ C..,d..
-_______ operator
+_______ o..
 _______ i..
 
 

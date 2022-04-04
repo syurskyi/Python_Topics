@@ -63,7 +63,7 @@ ___ max_and_min_years_new_characters(characters=characters
     """
     first_app = C..([_year_app(c.first_appearance) ___ c __ characters
                          __ c.first_appearance])
-    mc = first_app.most_common()
+    mc = first_app.m..
     r.. mc[0][0], mc[-1][0]
 
 

@@ -1,4 +1,4 @@
-____ operator _______ add, sub, mul, truediv
+____ o.. _______ add, sub, mul, truediv
 
 
 ___ simple_calculator(calculation

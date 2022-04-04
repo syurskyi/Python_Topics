@@ -1,5 +1,5 @@
 ____ c.. _______ n..
-____ operator _______ attrgetter
+____ o.. _______ attrgetter
 
 Book = n..('Book', 'title authors pages published')
 

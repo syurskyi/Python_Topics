@@ -6,7 +6,7 @@ a longest substring containing all repeating letters you can get after
 performing the above operations.
 """
 _______ s__
-_______ operator
+_______ o..
 
 
 c_ Solution:

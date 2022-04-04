@@ -1,6 +1,6 @@
 _______ a__
 ____ f.. _______ r..
-_______ operator
+_______ o..
 
 operations = d..(add=s..,
                   sub=l.... items: r.. operator.sub, items),

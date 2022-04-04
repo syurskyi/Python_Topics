@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-_______ operator
+_______ o..
 
 __author__ = 'Daniel'
 

@@ -3,7 +3,7 @@ Premium Question
 Find the maximum number of overlapped intervals
 """
 _______ heapq
-_______ operator
+_______ o..
 
 
 __author__ = 'Daniel'

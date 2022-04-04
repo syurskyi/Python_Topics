@@ -10,7 +10,7 @@ c_ Solution(o..
         :type tokens: List[str]
         :rtype: int
         """
-        _______ operator
+        _______ o..
         stack    # list
         ___ token __ tokens:
             __ token __ '+':

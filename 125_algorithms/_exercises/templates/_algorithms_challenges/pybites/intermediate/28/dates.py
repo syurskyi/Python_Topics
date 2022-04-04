@@ -33,7 +33,7 @@ ___ get_month_most_posts(dates
        that occurs most"""
     posts_yr_mo = [post_date.s..("%Y-%m") ___ post_date __ dates]
     posts_frequency = c...C..(posts_yr_mo)
-    r.. posts_frequency.most_common()[0][0]
+    r.. posts_frequency.m..[0][0]
     
 
 #if __name__ == "__main__":

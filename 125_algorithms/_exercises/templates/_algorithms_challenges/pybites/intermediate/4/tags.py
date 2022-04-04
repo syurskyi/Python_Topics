@@ -22,6 +22,6 @@ ___ get_pybites_top_tags(n=10
        data already loaded into the content variable"""
     tags = C..()
     tags.update(categories)
-    r.. tags.most_common() :?
+    r.. tags.m.. :?
 
 #print(get_pybites_top_tags())

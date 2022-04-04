@@ -10,7 +10,7 @@ c_ Solution(o..
         :rtype: bool
         """
         ____ f.. _______ r..
-        ____ operator _______ xor
+        ____ o.. _______ xor
         r.. l..(nums)%2__0 o. r.. xor,nums)__0
     
     ___ xorGame_own_TLE  nums

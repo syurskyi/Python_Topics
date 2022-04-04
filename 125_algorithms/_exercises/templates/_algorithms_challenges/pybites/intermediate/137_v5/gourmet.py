@@ -6,7 +6,7 @@ Pairs wines and cheeses by similarity of wine name and cheese name.
 
 ____ i.. _______ product, groupby
 ____ c.. _______ C.., n..
-_______ operator
+_______ o..
 
 CHEESES = [
     "Red Leicester",

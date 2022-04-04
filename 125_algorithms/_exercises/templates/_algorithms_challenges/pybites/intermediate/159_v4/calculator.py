@@ -1,4 +1,4 @@
-_______ operator
+_______ o..
 
 OPS = {'+': operator.add,
        '-': operator.sub,

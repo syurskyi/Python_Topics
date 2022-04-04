@@ -1,5 +1,5 @@
 ____ f.. _______ r..
-____ operator _______ mul
+____ o.. _______ mul
 
 
 ___ slices(series, length

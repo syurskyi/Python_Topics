@@ -1,5 +1,5 @@
 ____ c.. _______ n..
-____ operator _______ attrgetter
+____ o.. _______ attrgetter
 
 Tweet = n..('Tweet', 'text polarity')
 

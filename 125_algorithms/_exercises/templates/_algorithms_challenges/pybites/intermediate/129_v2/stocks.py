@@ -65,6 +65,6 @@ ___ get_sectors_with_max_and_min_stocks
             counts[company 'sector']] += 1
 
 
-    sector_counts = counts.most_common()
+    sector_counts = counts.m..
 
     r.. sector_counts[0][0],sector_counts[-1][0]

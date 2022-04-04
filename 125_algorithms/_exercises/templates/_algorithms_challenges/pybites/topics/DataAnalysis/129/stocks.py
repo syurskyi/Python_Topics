@@ -48,7 +48,7 @@ ___ get_sectors_with_max_and_min_stocks
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
     stock_by_sector = C..(counter 'sector'  ___ counter __ data __ counter 'sector'  != 'n/a')
-    r.. stock_by_sector.most_common()[0][0], stock_by_sector.most_common()[-1][0]
+    r.. stock_by_sector.m..[0][0], stock_by_sector.m..[-1][0]
 
 
 

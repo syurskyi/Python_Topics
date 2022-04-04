@@ -1,6 +1,6 @@
 ____ c.. _______ n..
 ____ d__ _______ d__
-____ operator _______ itemgetter
+____ o.. _______ itemgetter
 ____ t___ _______ L..
 
 Sign = n..('Sign', 'name compatibility famous_people sun_dates')
@@ -25,7 +25,7 @@ ___ get_sign_with_most_famous_people(signs: l..
     famous_people = [
         (s.name, l..(s.famous_people ___ s __ signs
     ]
-    r.. m..(famous_people, key=itemgetter(1
+    r.. m..(famous_people, key=i.. 1
 
 
 ___ signs_are_mutually_compatible(signs: l.., sign1: s.., sign2: s..) __ b..:

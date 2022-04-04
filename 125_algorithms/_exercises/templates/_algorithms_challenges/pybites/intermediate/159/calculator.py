@@ -1,4 +1,4 @@
-_______ operator
+_______ o..
 
 ___ simple_calculator(calculation
    """Receives 'calculation' and returns the calculated result,

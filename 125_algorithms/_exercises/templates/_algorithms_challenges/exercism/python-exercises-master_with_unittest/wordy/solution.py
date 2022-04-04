@@ -1,10 +1,10 @@
 _______ ___
-____ operator _______ add, mul, sub
+____ o.. _______ add, mul, sub
 
 __ ___.version_info[0] __ 2:
-    ____ operator _______ div
+    ____ o.. _______ div
 ____
-    ____ operator _______ floordiv __ div
+    ____ o.. _______ floordiv __ div
 
 
 VALID_OPERATIONS = {"plus": add, "minus": sub,
