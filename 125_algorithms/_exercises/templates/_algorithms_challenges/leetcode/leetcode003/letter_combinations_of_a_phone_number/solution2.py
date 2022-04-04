@@ -17,7 +17,7 @@ c_ Solution:
         r.. res
 
     ___ letter_combination_aux  d.., d, cand, res
-        __ n.. d..:
+        __ n.. d..
             res.a..(''.j..(cand
         ____
             digit = d..[0]

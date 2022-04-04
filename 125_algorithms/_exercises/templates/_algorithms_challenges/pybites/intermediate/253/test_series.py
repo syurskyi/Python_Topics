@@ -18,25 +18,25 @@ ___ sepal_length_series
 ?p__.f..()
 ___ int_series_vsmall
     """Returns a pandas Series containing ints"""
-    r.. pd.Series(r..(1, 6
+    r.. pd.S..(r..(1, 6
 
 
 ?p__.f..()
 ___ int_series_small
     """Returns a pandas Series containing ints"""
-    r.. pd.Series(r..(10
+    r.. pd.S..(r..(10
 
 
 ?p__.f..()
 ___ int_series_vsmall_offset_index
     """Returns a pandas Series containing ints"""
-    r.. pd.Series(r..(0, 10, 2), index=r..(0, 10, 2
+    r.. pd.S..(r..(0, 10, 2), index=r..(0, 10, 2
 
 
 ?p__.f..()
 ___ letters_series
     """Returns a pandas Series containing all lower case letters"""
-    r.. pd.Series(l..(s__.ascii_lowercase
+    r.. pd.S..(l..(s__.ascii_lowercase
 
 
 ?p__.m__.p.(

@@ -25,7 +25,7 @@ ___ years_gold_value_decreased(gold_prices: s..  gold_prices) __ (i.., i..
     """
         
     prices  gold_prices.s..
-    df  pd.Series(prices)
+    df  pd.S..(prices)
 
     df  df.s...extract(r'(?P<year>.+)-.+\,(?P<price>.+)')
     df  df.set_index('year').price.astype('float')

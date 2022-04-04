@@ -11,14 +11,14 @@ _______ series __ se
 ?p__.f..()
 ___ float_series
     """Returns a pandas Series containing floats"""
-    r.. pd.Series([f__(n) / 1000 ___ n __ r..(0, 1001)])
+    r.. pd.S..([f__(n) / 1000 ___ n __ r..(0, 1001)])
 
 
 ?p__.f..()
 ___ alpha_series
     """Returns a pandas Series containing floats"""
     dictionary = d..(z..(s__.ascii_lowercase, r..(1, 27)))
-    r.. pd.Series(dictionary)
+    r.. pd.S..(dictionary)
 
 
 ?p__.m__.p.("arg, expected", [
@@ -33,13 +33,13 @@ ___ test_return_at_index_raise_exception(float_series
 
 ___ test_get_slice(float_series
     slce = se.get_slice(float_series, 20, 25)
-    ... isi..(slce, pd.core.series.Series)
+    ... isi..(slce, pd.core.series.S..)
     ... l..(slce) __ 5
     ... slce[24] __ 0.024
 
 ___ test_get_slice_inclusive(float_series
     slce = se.get_slice_inclusive(float_series, 20, 25)
-    ... isi..(slce, pd.core.series.Series)
+    ... isi..(slce, pd.core.series.S..)
     ... l..(slce) __ 6
     ... slce[25] __ 0.025
 

@@ -40,7 +40,7 @@ ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..
     df 'Ratio'  = df.Protein.div(df.Calories)
 
 
-    r.. df.nlargest(5,'Ratio').Item.tolist()
+    r.. df.nlargest(5,'Ratio').Item.t..
 
 
 

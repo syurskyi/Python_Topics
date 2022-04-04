@@ -21,10 +21,10 @@ ____ t___ _______ L..
 # s = ('').join(lista)
 # jak zamienic liste intow na liste str?
 # d = [str(x) for x in c]
-___ minimum_number(d..: L..[i..]) __ i..:
+___ minimum_number d.. L.. i.. __ i..
     __ l..(d..) __ 0:
         r.. 0
-    reduced = s..(d..)
+    reduced  s..(d..)
     s.. = s..(reduced)
     r = ""
     ___ e __ s..:

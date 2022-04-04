@@ -137,7 +137,7 @@ c_ Solution:
                 __ queue[i]__end:  # reached
                     r.. path_len
 
-                remain_set = s..(d..)
+                remain_set  s..(d..)
                 ___ item __ d..:  # O(k), add next level
                    __ diff_count(item, queue[i])__1:
                         queue.a..(item)

@@ -10,7 +10,7 @@ ___ explode(df, lst_cols, fill_value='', preserve_index=F..
        https://stackoverflow.com/a/40449726
     """
     __(lst_cols __ n.. N.. a.. l..(lst_cols) > 0 a.. n..
-       isi..(lst_cols, (l.., t.., np.ndarray, pd.Series))):
+       isi..(lst_cols, (l.., t.., np.ndarray, pd.S..))):
         lst_cols = [lst_cols]
     idx_cols = df.columns.difference(lst_cols)
     lens = df[lst_cols[0]].s...l..()

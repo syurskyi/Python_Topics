@@ -6,7 +6,7 @@ c_ Solution:
         """
         ans    # list
 
-        __ n.. d..:
+        __ n.. d..
             r.. ans
 
         carry = 1
@@ -30,7 +30,7 @@ c_ Solution:
         :type digits: List[int]
         :rtype: List[int]
         """
-        __ n.. d..:
+        __ n.. d..
             r.. []
 
         carry = 0

@@ -3,7 +3,7 @@ _______ pandas __ pd
 data = "https://bites-data.s3.us-east-2.amazonaws.com/summer.csv"
 
 
-___ athletes_most_medals(data: s.. = data) __ pd.Series:
+___ athletes_most_medals(data: s.. = data) __ pd.S..:
     df = pd.read_csv(data)
     men = df[df["Gender"] __ "Men"]
     women = df[df["Gender"] __ "Women"]
