@@ -8,7 +8,7 @@ c_ Cipher(o..
     ___ - , key_ N..
         __ n.. key:
             r__.seed(time
-            key = ''.j..(r__.choice(ascii_lowercase) ___ i __ r..(100
+            key = ''.j..(r__.c..(ascii_lowercase) ___ i __ r..(100
         ____ n.. key.i.. o. n.. key.isl..
             r.. V...('Wrong key parameter!')
         key = key

@@ -23,7 +23,7 @@ ___ create_paw_deck(n=8
             action = N..
             card = f"{letter}{j}"
             __ r __ j:
-                action = r__.choice(ACTIONS)
+                action = r__.c..(ACTIONS)
 
 
             pawcard = PawCard(card,action)

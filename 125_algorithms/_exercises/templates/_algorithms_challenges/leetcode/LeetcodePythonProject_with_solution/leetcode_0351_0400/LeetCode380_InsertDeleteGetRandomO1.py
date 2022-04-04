@@ -30,4 +30,4 @@ c_ RandomizedSet(o..
     
     ___ getRandom
         _______ r__
-        r.. r__.choice(nums)
+        r.. r__.c..(nums)

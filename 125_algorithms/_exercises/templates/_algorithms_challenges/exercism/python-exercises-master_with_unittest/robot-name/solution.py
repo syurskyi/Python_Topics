@@ -10,13 +10,13 @@ c_ Robot(o..
 
     ___ prefix
         r.. ''.j..([
-            r__.choice(alphabet)
+            r__.c..(alphabet)
             ___ _ __ r..(0, 2)
         ])
 
     ___ suffix
         r.. ''.j..([
-            s..(r__.choice(r..(0, 10)))
+            s..(r__.c..(r..(0, 10)))
             ___ _ __ r..(0, 3)
         ])
 

@@ -12,7 +12,7 @@ DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
 TMP = P..(__.g..("TMP", "/tmp"
 
 salt = ''.j..(
-    r__.choice(s__.ascii_lowercase) ___ i __ r..(20)
+    r__.c..(s__.ascii_lowercase) ___ i __ r..(20)
 )
 DB = TMP / f'nba_{salt}.db'
 

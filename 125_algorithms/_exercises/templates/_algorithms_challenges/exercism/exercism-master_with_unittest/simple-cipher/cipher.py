@@ -23,7 +23,7 @@ c_ Cipher:
         r.. l..(f.. s...isalpha, phrase.lower()))
 
     ___ generate_random_key
-        r.. ''.j..(r__.SystemRandom().choice(s__.ascii_lowercase)
+        r.. ''.j..(r__.SystemRandom().c..(s__.ascii_lowercase)
                        ___ _ __ r..(random_key_length
 
     ___ valid_key

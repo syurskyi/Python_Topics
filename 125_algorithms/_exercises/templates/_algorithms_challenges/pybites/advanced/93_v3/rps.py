@@ -1,4 +1,4 @@
-____ r__ _______ choice
+____ r__ _______ c..
 
 defeated_by = d..(paper='scissors',
                    rock='paper',
@@ -11,7 +11,7 @@ c.. = defeated_by.v..
 
 ___ _get_computer_move
     """Randomly select a move"""
-    r.. choice(c..)
+    r.. c..(c..)
 
 
 ___ _get_winner(computer_choice, player_choice

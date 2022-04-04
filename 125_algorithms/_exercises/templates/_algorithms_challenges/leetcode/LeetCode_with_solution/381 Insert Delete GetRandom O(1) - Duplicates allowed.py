@@ -81,7 +81,7 @@ c_ RandomizedCollection(o..
         Get a random element from the collection.
         :rtype: int
         """
-        r.. r__.choice(lst)
+        r.. r__.c..(lst)
 
 
 # Your RandomizedCollection object will be instantiated and called as such:

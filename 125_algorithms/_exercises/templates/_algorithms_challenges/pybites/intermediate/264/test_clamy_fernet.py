@@ -1,5 +1,5 @@
 ____ d__ _______ d__
-____ r__ _______ choice
+____ r__ _______ c..
 ____ tempfile _______ NamedTemporaryFile
 
 _______ p__
@@ -19,7 +19,7 @@ FILE = TMP_FILE.name
 ?p__.f..(scope="function")
 ___ rcf
     password = b"#clamybite"
-    key = choice(KEYS)
+    key = c..(KEYS)
     r.. ClamyFernet(password, key)
 
 

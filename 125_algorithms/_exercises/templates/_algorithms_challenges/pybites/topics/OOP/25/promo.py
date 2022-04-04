@@ -34,7 +34,7 @@ c_ Promo:
            Bites are done, raise a NoBitesAvailable exception"""
         remaining_bites = l..(all_bites.k.. - bites_done)
         __ remaining_bites:
-            r.. r__.choice(remaining_bites)
+            r.. r__.c..(remaining_bites)
         ____
             r.. NoBitesAvailable
 

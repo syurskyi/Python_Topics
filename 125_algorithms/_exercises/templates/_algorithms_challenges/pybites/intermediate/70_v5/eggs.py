@@ -1,4 +1,4 @@
-____ r__ _______ choice
+____ r__ _______ c..
 
 COLORS = 'red blue green yellow brown purple'.s.. 
 
@@ -15,4 +15,4 @@ c_ EggCreator:
         __ current > limit:
             r.. StopIteration
         current += 1
-        r.. f'{choice(COLORS)} egg'
+        r.. f'{c..(COLORS)} egg'

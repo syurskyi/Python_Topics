@@ -50,6 +50,6 @@ c_ TinyUrl:
 
     ___ get_hash_key  size
         r.. ''.j..(
-            r__.choice(chars)
+            r__.c..(chars)
             ___ _ __ r..(size)
         )

@@ -1,4 +1,4 @@
-____ r__ _______ choice
+____ r__ _______ c..
 
 defeated_by = d..(paper='scissors',
                    rock='paper',
@@ -13,7 +13,7 @@ ___ _get_computer_move
 
     c.. =  'scissors','paper','rock'
 
-    r.. choice(c..)
+    r.. c..(c..)
 
 
 

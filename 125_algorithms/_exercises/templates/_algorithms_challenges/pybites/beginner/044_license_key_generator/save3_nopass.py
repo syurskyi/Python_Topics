@@ -6,5 +6,5 @@ ___ gen_key(parts=4, chars_per_part=8
     password = ""
     ___ part __ r..(parts
         ___ char __ r..(chars_per_part
-            password += s__.choice(string_alphabet)
+            password += s__.c..(string_alphabet)
     r.. print('-'.j..(password[i:i+parts] ___ i __ r..(0, l..(password), parts)))

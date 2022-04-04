@@ -1,10 +1,10 @@
 _______ m__
 
-___ round_to_next(number: i.., multiple: i..
-    r.. (m__.c.. number/multiple*multiple
+___ round_to_next number i.. multiple i..
+    r.. (m__.c.. ?/?
 
 
 
 
 
-print(round_to_next(12_345, 42
+print ? 12_345, 42

@@ -86,7 +86,7 @@ c_ RandomizedSet(o..
         Gets a random element from the set.
         :rtype: int
         """
-        r.. r__.choice(lst)
+        r.. r__.c..(lst)
 
 
 c_ RandomizedSetTLE(o..

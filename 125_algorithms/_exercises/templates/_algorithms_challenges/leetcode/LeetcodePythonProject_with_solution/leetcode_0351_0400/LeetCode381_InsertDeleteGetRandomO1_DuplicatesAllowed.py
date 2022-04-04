@@ -34,5 +34,5 @@ c_ RandomizedCollection(o..
     
     ___ getRandom
         _______ r__
-        r.. r__.choice(vals)
+        r.. r__.c..(vals)
     

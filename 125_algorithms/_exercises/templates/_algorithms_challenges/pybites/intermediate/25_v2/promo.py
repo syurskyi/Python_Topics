@@ -38,7 +38,7 @@ c_ Promo:
            Bites are done, raise a NoBitesAvailable exception"""
         __ all_bites_done:
             r.. NoBitesAvailable
-        r.. r__.choice([key ___ key __ BITES.k.. __ key n.. __ bites_done])
+        r.. r__.c..([key ___ key __ BITES.k.. __ key n.. __ bites_done])
 
     ___ new_bite
         """Get  a random Bite using _pick_random_bite,

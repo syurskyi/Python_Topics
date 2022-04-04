@@ -1,4 +1,4 @@
-____ r__ _______ choice
+____ r__ _______ c..
 
 COLORS = 'red blue green yellow brown purple'.s.. 
 
@@ -14,7 +14,7 @@ c_ EggCreator:
     ___ __next__
         __ _limit > 0:
             _limit -= 1
-            r.. choice(COLORS)
+            r.. c..(COLORS)
         ____
             r.. StopIteration
 
