@@ -1,5 +1,5 @@
 _______ a__
-____ functools _______ reduce
+____ f.. _______ reduce
 ____ operator _______ add, sub, mul, truediv
 
 

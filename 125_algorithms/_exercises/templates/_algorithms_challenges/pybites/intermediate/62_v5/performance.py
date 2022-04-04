@@ -1,4 +1,4 @@
-____ functools _______ wraps
+____ f.. _______ wraps
 ____ typing _______ List, Set
 
 ____ time _______ time

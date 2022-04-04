@@ -1,5 +1,5 @@
 # source: https://dbader.org/blog/python-dunder-methods
-____ functools _______ total_ordering
+____ f.. _______ total_ordering
 
 
 @total_ordering

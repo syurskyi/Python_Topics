@@ -1,5 +1,5 @@
 _______ a__
-____ functools _______ reduce
+____ f.. _______ reduce
 _______ operator
 
 operations = d..(add=s..,

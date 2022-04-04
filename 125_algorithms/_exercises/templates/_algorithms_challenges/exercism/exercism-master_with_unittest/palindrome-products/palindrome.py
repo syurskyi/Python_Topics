@@ -1,5 +1,5 @@
 ____ operator _______ mul
-____ functools _______ reduce
+____ f.. _______ reduce
 
 
 c_ Palindromes:

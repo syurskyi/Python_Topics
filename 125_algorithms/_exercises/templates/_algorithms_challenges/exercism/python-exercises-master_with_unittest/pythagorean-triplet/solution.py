@@ -1,5 +1,5 @@
 ____ i.. _______ product
-____ functools _______ reduce
+____ f.. _______ reduce
 ____ operator _______ mul
 ____ m__ _______ sqrt
 

@@ -15,14 +15,14 @@ For example:
  persistence(4) => 0   # Because 4 is already a one-digit number.
 """
 
-_______ functools
+_______ f..
 
 
 ___ persistence(n
     times = 0
 
     w.... n > 9:
-        n = functools.reduce(l.... x, y: x * y, [i..(i) ___ i __ s..(n)])
+        n = f...reduce(l.... x, y: x * y, [i..(i) ___ i __ s..(n)])
         times += 1
 
     r.. times

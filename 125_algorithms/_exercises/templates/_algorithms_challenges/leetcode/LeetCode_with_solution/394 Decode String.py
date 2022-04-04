@@ -40,9 +40,9 @@ c_ Solution(o..
                 stk[-1][1].a..(s[i])
                 i += 1
             ____ s[i] __ ' ':  # pop
-                cnt, partial = stk.pop()
-                partial = ''.j..(partial) * cnt
-                stk[-1][1].a..(partial)
+                cnt, p.. = stk.pop()
+                p.. = ''.j..(p..) * cnt
+                stk[-1][1].a..(p..)
                 i += 1
 
         r.. ''.j..(stk.pop()[1])
@@ -72,12 +72,12 @@ c_ SolutionVerbose(o..
                     stk[-1][1].a..(s[i])
                 i += 1
             ____ s[i] __ ' ':  # pop
-                cnt, partial = stk.pop()
-                partial = ''.j..(partial) * cnt
+                cnt, p.. = stk.pop()
+                p.. = ''.j..(p..) * cnt
                 __ n.. stk:
-                   ret.a..(partial)
+                   ret.a..(p..)
                 ____:
-                    stk[-1][1].a..(partial)
+                    stk[-1][1].a..(p..)
 
                 i += 1
 

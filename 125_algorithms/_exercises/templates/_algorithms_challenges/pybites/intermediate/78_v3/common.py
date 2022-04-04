@@ -1,4 +1,4 @@
-_______ functools
+_______ f..
 ___ common_languages(programmers
     """Receive a dict of keys -> names and values -> a sequence of
        of programming languages, return the common languages"""
@@ -8,7 +8,7 @@ ___ common_languages(programmers
 
 
 
-    r.. functools.reduce(l.... x,y: x.intersection(y),sets)
+    r.. f...reduce(l.... x,y: x.intersection(y),sets)
 
 
 

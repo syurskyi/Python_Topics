@@ -1,4 +1,4 @@
-____ functools _______ singledispatch
+____ f.. _______ singledispatch
 
 
 @singledispatch

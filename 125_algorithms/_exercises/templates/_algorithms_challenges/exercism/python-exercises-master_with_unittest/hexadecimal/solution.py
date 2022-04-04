@@ -1,4 +1,4 @@
-____ functools _______ reduce
+____ f.. _______ reduce
 
 
 valid_hexchars = s..('0123456789abcdef')

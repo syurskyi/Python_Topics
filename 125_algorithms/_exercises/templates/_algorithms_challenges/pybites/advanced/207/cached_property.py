@@ -1,6 +1,6 @@
 ____ r__ _______ r__
 ____ time _______ sleep
-____ functools _______ wraps
+____ f.. _______ wraps
 
 
 ___ cached_property(func

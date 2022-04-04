@@ -1,4 +1,4 @@
-____ functools _______ wraps
+____ f.. _______ wraps
 ____ r__ _______ r__
 ____ time _______ sleep
 

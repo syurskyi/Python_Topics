@@ -1,4 +1,4 @@
-_______ functools
+_______ f..
 ____ typing _______ Iterable, Set, Any, cast
 
 
@@ -8,7 +8,7 @@ ___ intersection(*args: Iterable) __ Set[Any]:
     __ l..(cast_to_set) __ 0:
         r.. s..()
     
-    r.. functools.reduce(s...intersection, cast_to_set)
+    r.. f...reduce(s...intersection, cast_to_set)
 
 
 # if __name__ == "__main__":

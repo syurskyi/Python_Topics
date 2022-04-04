@@ -1,6 +1,6 @@
 ____ c.. _______ defaultdict
 ____ dataclasses _______ dataclass, field
-____ functools _______ total_ordering
+____ f.. _______ total_ordering
 ____ pathlib _______ Path
 ____ __ _______ c.., s..
 ____ typing _______ Any, DefaultDict, List

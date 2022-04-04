@@ -1,4 +1,4 @@
-____ functools _______ wraps
+____ f.. _______ wraps
 
 UPPER_SLICE = "=== Upper bread slice ==="
 LOWER_SLICE = "=== Lower bread slice ==="

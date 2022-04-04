@@ -1,4 +1,4 @@
-____ functools _______ wraps
+____ f.. _______ wraps
 
 known_users =  'bob', 'julian', 'mike', 'carmen', 'sue'
 loggedin_users =  'mike', 'sue'

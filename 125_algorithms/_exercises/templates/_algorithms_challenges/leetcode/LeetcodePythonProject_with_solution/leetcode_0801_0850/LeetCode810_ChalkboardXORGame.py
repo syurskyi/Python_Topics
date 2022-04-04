@@ -9,7 +9,7 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: bool
         """
-        ____ functools _______ reduce
+        ____ f.. _______ reduce
         ____ operator _______ xor
         r.. l..(nums)%2__0 o. reduce(xor,nums)__0
     

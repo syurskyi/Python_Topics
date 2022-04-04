@@ -1,4 +1,4 @@
-____ functools _______ lru_cache
+____ f.. _______ lru_cache
 
 @lru_cache
 ___ cached_fib(n

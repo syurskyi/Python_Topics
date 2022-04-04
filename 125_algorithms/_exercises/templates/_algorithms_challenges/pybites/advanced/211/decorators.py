@@ -1,4 +1,4 @@
-____ functools _______ wraps
+____ f.. _______ wraps
 _______ ___
 
 MAX_RETRIES = 3

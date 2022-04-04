@@ -1,5 +1,5 @@
 _______ a__
-_______ functools
+_______ f..
 
 ___ calculator(f, numbers
     """TODO 1:
@@ -8,7 +8,7 @@ ___ calculator(f, numbers
     
 
 
-    r.. r..(functools.reduce(l.... x,y: f(x,y),numbers),2)
+    r.. r..(f...reduce(l.... x,y: f(x,y),numbers),2)
 
 
 

@@ -7,7 +7,7 @@ full = """
 36283,"Jones, Tom",SCI09-4 - SU,MATH09-2 - PH,TA09-1 - AB,IS09-4 - LM,SCI09-3 - NdN,MATH09-2 - RB,DE09-3 - KmQ,ENG09-3 - KaR,PE09-3 - PS
 99415,"Blake, Arnold",,,,,,,,,,
 """  # noqa E501
-partial = """
+p.. = """
 17409,"Jones, Tom",,,,,,,,,,
 17409,"Matheson, Rick",,IS09-1 - BR,,SCI09-4 - SU,MATH09-2 - RB,,ENG09-4 - LE,,PE09-1 - MR,
 99415,"Blake, Arnold",,,,,,,,,,
@@ -29,7 +29,7 @@ empty = """
             'DE09-3,2020,36283',
             'ENG09-3,2020,36283',
             'PE09-3,2020,36283' ),
-    (partial,  'IS09-1,2020,17409',
+    (p..,  'IS09-1,2020,17409',
                'SCI09-4,2020,17409',
                'MATH09-2,2020,17409',
                'ENG09-4,2020,17409',

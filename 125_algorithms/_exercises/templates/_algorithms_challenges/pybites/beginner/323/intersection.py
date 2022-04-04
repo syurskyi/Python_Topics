@@ -1,4 +1,4 @@
-_______ functools
+_______ f..
 ____ typing _______ Iterable, Set, Any
 
 
@@ -8,7 +8,7 @@ ___ intersection(*args: Iterable) __ Set[Any]:
     #print( args0.intersection(args1) )
     lists = [x ___ x __ args __ x]
     ___
-        temp_set = s..(functools.reduce(l.... x, y: s..(x).intersection(y), lists))
+        temp_set = s..(f...reduce(l.... x, y: s..(x).intersection(y), lists))
     ______ T..:
         temp_set = s..()
     r.. temp_set

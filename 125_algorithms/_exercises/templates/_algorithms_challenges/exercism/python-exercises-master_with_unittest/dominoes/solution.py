@@ -1,5 +1,5 @@
 ____ i.. _______ permutations
-____ functools _______ reduce
+____ f.. _______ reduce
 
 
 ___ swap(a, b

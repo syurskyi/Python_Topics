@@ -1,5 +1,5 @@
 ____ c.. _______ C..
-____ functools _______ partial
+____ f.. _______ p..
 
 YACHT = 0
 ONES = 1
@@ -44,12 +44,12 @@ ___ yacht(dice
 
 functions = [
     yacht,
-    partial(ns, 1),
-    partial(ns, 2),
-    partial(ns, 3),
-    partial(ns, 4),
-    partial(ns, 5),
-    partial(ns, 6),
+    p..(ns, 1),
+    p..(ns, 2),
+    p..(ns, 3),
+    p..(ns, 4),
+    p..(ns, 5),
+    p..(ns, 6),
     full_house,
     four_of_a_kind,
     little_straight,

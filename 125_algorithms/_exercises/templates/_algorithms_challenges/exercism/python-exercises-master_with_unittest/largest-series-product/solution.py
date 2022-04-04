@@ -1,4 +1,4 @@
-____ functools _______ reduce
+____ f.. _______ reduce
 ____ operator _______ mul
 
 

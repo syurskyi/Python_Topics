@@ -12,7 +12,7 @@ def get_text(text='I code with PyBites'):
 
 # Approach 3 - not working
 
-____ functools _______ wraps
+____ f.. _______ wraps
 
 ___ make_html(param
 

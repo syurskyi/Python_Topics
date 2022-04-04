@@ -1,5 +1,5 @@
 _______ unittest
-____ functools _______ partial
+____ f.. _______ p..
 
 ____ react _______ InputCell, ComputeCell
 
@@ -195,7 +195,7 @@ c_ ReactTest(unittest.TestCase
     ___ callback_factory  observer
         ___ callback(observer, value
             observer.a..(value)
-        r.. partial(callback, observer)
+        r.. p..(callback, observer)
 
 
 __ _____ __ _____

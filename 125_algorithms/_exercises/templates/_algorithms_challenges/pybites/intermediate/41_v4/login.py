@@ -1,11 +1,11 @@
-_______ functools
+_______ f..
 
 known_users =  'bob', 'julian', 'mike', 'carmen', 'sue'
 loggedin_users =  'mike', 'sue'
 
 
 ___ login_required(func
-    @functools.wraps(func)
+    @f...wraps(func)
     ___ wrapper $ $$:
         user, *_ = args
         __ user.l.. __ known_users:

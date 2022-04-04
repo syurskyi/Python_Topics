@@ -1,4 +1,4 @@
-____ functools _______ reduce
+____ f.. _______ reduce
 
 
 ___ largest_product(d.., size

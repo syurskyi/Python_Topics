@@ -1,4 +1,4 @@
-____ functools _______ wraps
+____ f.. _______ wraps
 ____ time _______ time
 ____ typing _______ Deque, List, Set, Generator
 ____ c.. _______ d..

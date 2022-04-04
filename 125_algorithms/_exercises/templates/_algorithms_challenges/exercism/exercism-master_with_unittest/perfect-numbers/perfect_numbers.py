@@ -1,5 +1,5 @@
 _______ m__
-____ functools _______ reduce
+____ f.. _______ reduce
 
 
 ___ is_perfect(number

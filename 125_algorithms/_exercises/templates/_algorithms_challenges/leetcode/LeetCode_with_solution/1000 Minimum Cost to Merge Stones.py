@@ -45,7 +45,7 @@ Note:
 1 <= stones[i] <= 100
 """
 ____ typing _______ List
-____ functools _______ lru_cache
+____ f.. _______ lru_cache
 
 
 c_ Solution:

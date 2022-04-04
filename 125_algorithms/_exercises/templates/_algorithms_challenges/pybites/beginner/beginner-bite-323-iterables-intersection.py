@@ -28,7 +28,7 @@ but it is not mandatory for solving this bite (i.e., there are at least two ways
 to code intersection())
 """
 
-_______ functools
+_______ f..
 ____ typing _______ Iterable, Set, Any
 
 # First attempt - crap and ugly

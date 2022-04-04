@@ -1,4 +1,4 @@
-_______ functools
+_______ f..
 ____ typing _______ Iterable, Set, Any
 
 
@@ -14,7 +14,7 @@ ___ intersection(*args: Iterable) __ Set[Any]:
 
 
 
-    r.. functools.reduce(l.... x,y: x & y,result)
+    r.. f...reduce(l.... x,y: x & y,result)
 
 
 

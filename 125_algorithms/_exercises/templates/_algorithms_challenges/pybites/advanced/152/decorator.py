@@ -1,4 +1,4 @@
-____ functools _______ wraps
+____ f.. _______ wraps
 
 
 DEFAULT_TEXT = ('Subscribe to our blog (sidebar) to periodically get '

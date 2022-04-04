@@ -1,5 +1,5 @@
 ____ typing _______ List, Union
-____ functools _______ reduce
+____ f.. _______ reduce
 
 
 ___ join_lists(lst_of_lst: List[List[s..]], sep: s..) __ Union[List[s..], N..]:

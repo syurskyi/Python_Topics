@@ -40,7 +40,7 @@ Note:
 2 <= x <= 100
 1 <= target <= 2 * 10^8
 """
-____ functools _______ lru_cache
+____ f.. _______ lru_cache
 
 
 c_ Solution:
