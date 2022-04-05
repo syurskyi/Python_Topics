@@ -11,7 +11,7 @@ ___ sandwich(func
        func's docstring)
     """
 
-    @wraps(func)
+    $w.. f..
     ___ wrapped $ $$:
         print(UPPER_SLICE)
         func $ $$

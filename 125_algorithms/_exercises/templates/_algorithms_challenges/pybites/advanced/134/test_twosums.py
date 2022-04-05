@@ -34,8 +34,8 @@ ___ test_two_sums_param(target, e..
 
 ___ test_two_sums_random
     seed(1)
-    numbers = sample(r..(1, 1_000_000), 1_000)
-    picked = sample(numbers, 2)
+    numbers = s.. r..(1, 1_000_000), 1_000)
+    picked = s.. numbers, 2)
     index1 = numbers.i.. picked[0])
     index2 = numbers.i.. picked[1])
     ordered = s..([index1, index2])

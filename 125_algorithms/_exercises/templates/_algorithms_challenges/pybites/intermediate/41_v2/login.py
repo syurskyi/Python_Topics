@@ -6,7 +6,7 @@ ____ f.. _______ wraps
 ___ login_required(func
 
 
-    @wraps(func)
+    $w.. f..
     ___ wrapper(user
         __ user  n.. __ known_users:
             r.. "please create an account"

@@ -4,7 +4,7 @@ ____ f.. _______ wraps
 ___ make_html(element
     '''Wraps text with HTML tag.'''
     ___ decorate(func
-        @wraps(func)
+        $w.. f..
         ___ wrapper $ $$:
             '''Returns text wrapped in provided HTML tag'''
             r.. f'<{element}>{func $ $$}</{element}>'

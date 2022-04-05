@@ -5,7 +5,7 @@ loggedin_users =  'mike', 'sue'
 
 
 ___ login_required(func
-    @wraps(func)
+    $w.. f..
     ___ wrapper(*args
         __ args[0] __ loggedin_users:
             r.. func(args[0])

@@ -3,7 +3,7 @@ ____ f.. _______ wraps
 ___ make_html(element
 
     ___ decorator(func
-        @wraps(func)
+        $w.. f..
         ___ wrapper
             result = func()
             r.. f"<{element}>{result}</{element}>"

@@ -2,7 +2,7 @@ _______ r__
 
 names = 'Julian Bob PyBites Dante Martin Rodolfo'.s.. 
 aliases = 'Pythonista Nerd Coder'.s..  * 2
-points = r__.sample(r..(81, 101), 6)
+points = r__.s.. r..(81, 101), 6)
 awake = [T.., F..] * 3
 SEPARATOR = ' | '
 

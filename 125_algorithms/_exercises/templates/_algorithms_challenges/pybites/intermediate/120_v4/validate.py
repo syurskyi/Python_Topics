@@ -2,7 +2,7 @@ ____ f.. _______ wraps
 
 
 ___ int_args(func
-    @wraps(func)
+    $w.. f..
     ___ wrapper $ $$:
         __ n.. a.. m..(l.... x: isi..(x, i..), a..:
             r.. T..

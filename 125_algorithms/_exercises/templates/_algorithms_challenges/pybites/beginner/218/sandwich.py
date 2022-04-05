@@ -10,7 +10,7 @@ ___ sandwich(func
        that is passed in  (@wraps is to preserve the original
        func's docstring)
     """
-    @wraps(func)
+    $w.. f..
     ___ wrapped $ $$:
         print(UPPER_SLICE)
         func $ $$

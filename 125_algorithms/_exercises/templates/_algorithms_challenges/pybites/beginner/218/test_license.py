@@ -8,7 +8,7 @@ ALPHABET = a.. + d..
 
 ___ _create_license
     r.. 'PB-' + '-'.j..(
-        [''.j..(r__.sample(ALPHABET, 8
+        [''.j..(r__.s.. ALPHABET, 8
          ___ _ __ r..(4)]
     )
 

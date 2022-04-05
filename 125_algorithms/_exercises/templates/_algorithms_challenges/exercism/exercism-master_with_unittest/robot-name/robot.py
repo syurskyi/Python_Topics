@@ -15,7 +15,7 @@ c_ Robot:
         r.. random_prefix(2) + random_suffix(3)
 
     ___ random_prefix  n
-        r.. ''.j..(r__.sample(s__.a.., n
+        r.. ''.j..(r__.s.. s__.a.., n
 
     ___ random_suffix  n
-        r.. ''.j..(r__.sample(s__.d.., n
+        r.. ''.j..(r__.s.. s__.d.., n

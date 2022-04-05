@@ -2,7 +2,7 @@ ____ f.. _______ wraps
 ____ time _______ time
 
 ___ timer(func
-    @wraps(func)
+    $w.. f..
     ___ wrapper $ $$:
         start = time()
         answer = func $ $$
@@ -12,7 +12,7 @@ ___ timer(func
     r.. wrapper
 
 ___ tracer(func
-    @wraps(func)
+    $w.. f..
     ___ wrapper $ $$:
         print('Entering...')
         func $ $$

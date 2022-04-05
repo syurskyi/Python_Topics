@@ -6,7 +6,7 @@ ____ f.. _______ wraps
 ___ cached_property(func
     """decorator used to cache expensive object attribute lookup"""
     cache = N..
-    @wraps(func)
+    $w.. f..
     ___ wrapper $ $$:
         nonlocal cache
         __ cache __ N..

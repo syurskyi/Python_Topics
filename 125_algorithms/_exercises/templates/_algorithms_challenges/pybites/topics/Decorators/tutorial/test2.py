@@ -1,7 +1,7 @@
 ____ f.. _______ wraps
 
 ___ int_inputs(func
-    @wraps(func)
+    $w.. f..
     ___ wrapper(*args
         newargs = [i..(a) ___ a __ args]
         r.. func(*newargs)

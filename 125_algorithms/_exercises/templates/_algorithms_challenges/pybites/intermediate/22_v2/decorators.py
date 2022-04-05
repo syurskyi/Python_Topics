@@ -11,7 +11,7 @@ ___ make_html(element
 
         ___ wrapper(*args,**kwargs
 
-            r.. f'<{element}>{function(*args,**kwargs)}</{element}>'
+            r.. f'<{element}>{function( $ $$}</{element}>'
 
         r.. wrapper
     r.. decorator

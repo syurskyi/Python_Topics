@@ -121,7 +121,7 @@ c_ RandomizedSetTLE(o..
         Get a random element from the set.
         :rtype: int
         """
-        r.. r__.sample(s.., 1)[0]  # O(N), equivalent to random.choice(tuple(allLetters))
+        r.. r__.s.. s.., 1)[0]  # O(N), equivalent to random.choice(tuple(allLetters))
 
 
 

@@ -89,7 +89,7 @@ c_ Solution:
 
 __ _____ __ ____
     _______ r__
-    lst = [ListNode(i) ___ i __ r__.sample(x..(-1000, 1000), 1000)]
+    lst = [ListNode(i) ___ i __ r__.s.. x..(-1000, 1000), 1000)]
     # lst = [ListNode(1), ListNode(3), ListNode(2)]
     # lst = [ListNode(i) for i in range(10, -1, -1)]
     ___ i __ r..(l..(lst:
