@@ -28,7 +28,7 @@ Output: "firstsecondthird"
 Explanation: The input [1,3,2] means thread A calls first(), thread B calls
 third(), and thread C calls second(). "firstsecondthird" is the correct output.
 """
-____ t___ _______ Callable
+____ t___ _______ C..
 ____ threading _______ Lock
 
 
@@ -42,21 +42,21 @@ c_ Foo:
         locks[1].a..
 
 
-    ___ first  printFirst: Callable[[], N..]) __ N..
+    ___ first  printFirst: C..[[], N..]) __ N..
         # printFirst() outputs "first". Do not change or remove this line.
         printFirst()
         locks[0].release()
 
 
 
-    ___ second  printSecond: Callable[[], N..]) __ N..
+    ___ second  printSecond: C..[[], N..]) __ N..
         w__ locks[0]:
             # printSecond() outputs "second". Do not change or remove this line.
             printSecond()
             locks[1].release()
 
 
-    ___ third  printThird: Callable[[], N..]) __ N..
+    ___ third  printThird: C..[[], N..]) __ N..
         w__ locks[1]:
             # printThird() outputs "third". Do not change or remove this line.
             printThird()

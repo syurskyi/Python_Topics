@@ -30,7 +30,7 @@ Example 2:
 Input: n = 5
 Output: "0102030405"
 """
-____ t___ _______ Callable
+____ t___ _______ C..
 ____ threading _______ Lock
 
 
@@ -46,7 +46,7 @@ c_ ZeroEvenOdd:
         locks[2].a..
 
 	# printNumber(x) outputs "x", where x is an integer.
-    ___ zero  printNumber: Callable[[i..], N..]) __ N..
+    ___ zero  printNumber: C..[[i..], N..]) __ N..
         ___ i __ r..(n
             locks[0].a..
             printNumber(0)
@@ -55,13 +55,13 @@ c_ ZeroEvenOdd:
             ____
                 locks[2].release()
 
-    ___ odd  printNumber: Callable[[i..], N..]) __ N..
+    ___ odd  printNumber: C..[[i..], N..]) __ N..
         ___ i __ r..((n + 1) // 2
             locks[1].a..
             printNumber(i * 2 + 1)
             locks[0].release()
 
-    ___ even  printNumber: Callable[[i..], N..]) __ N..
+    ___ even  printNumber: C..[[i..], N..]) __ N..
         ___ i __ r..(n // 2
             locks[2].a..
             printNumber(i * 2 + 2)

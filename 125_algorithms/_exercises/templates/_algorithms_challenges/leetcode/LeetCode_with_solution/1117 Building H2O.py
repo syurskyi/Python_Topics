@@ -41,7 +41,7 @@ Total length of input string will be 3n, where 1 ≤ n ≤ 20.
 Total number of H will be 2n in the input string.
 Total number of O will be n in the input string.
 """
-____ t___ _______ Callable
+____ t___ _______ C..
 ____ threading _______ Semaphore
 
 ____ c.. _______ d..
@@ -51,11 +51,11 @@ c_ H2O:
         hq = d..()
         oq = d..()
 
-    ___ hydrogen  releaseHydrogen: Callable[[], N..]) __ N..
+    ___ hydrogen  releaseHydrogen: C..[[], N..]) __ N..
         hq.a..(releaseHydrogen)
         try_output()
 
-    ___ oxygen  releaseOxygen: Callable[[], N..]) __ N..
+    ___ oxygen  releaseOxygen: C..[[], N..]) __ N..
         oq.a..(releaseOxygen)
         try_output()
 
@@ -73,7 +73,7 @@ c_ H2O_TLE2:
         """
         gates = [Semaphore(2), Semaphore(0)]  # inititally allow 2 H, 0 O
 
-    ___ hydrogen  releaseHydrogen: Callable[[], N..]) __ N..
+    ___ hydrogen  releaseHydrogen: C..[[], N..]) __ N..
         gates[0].a..
         # releaseHydrogen() outputs "H". Do not change or remove this line.
         releaseHydrogen()
@@ -84,7 +84,7 @@ c_ H2O_TLE2:
             gates[1].release()
 
 
-    ___ oxygen  releaseOxygen: Callable[[], N..]) __ N..
+    ___ oxygen  releaseOxygen: C..[[], N..]) __ N..
         gates[1].a..
         # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()
@@ -103,7 +103,7 @@ c_ H2O_TLE:
         locks[1].a..
 
 
-    ___ hydrogen  releaseHydrogen: Callable[[], N..]) __ N..
+    ___ hydrogen  releaseHydrogen: C..[[], N..]) __ N..
         locks[0].a..
         h_cnt += 1
         # releaseHydrogen() outputs "H". Do not change or remove this line.
@@ -114,7 +114,7 @@ c_ H2O_TLE:
             locks[1].release()
 
 
-    ___ oxygen  releaseOxygen: Callable[[], N..]) __ N..
+    ___ oxygen  releaseOxygen: C..[[], N..]) __ N..
         locks[1].a..
         # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()

@@ -34,7 +34,7 @@ Output: "foobarfoobar"
 Explanation: "foobar" is being output 2 times.
 """
 ____ threading _______ Lock
-____ t___ _______ Callable
+____ t___ _______ C..
 
 
 c_ FooBar:
@@ -44,7 +44,7 @@ c_ FooBar:
         locks[1].a..
 
 
-    ___ foo  printFoo: Callable[[], N..]) __ N..
+    ___ foo  printFoo: C..[[], N..]) __ N..
         ___ i __ r..(n
             locks[0].a..
             # printFoo() outputs "foo". Do not change or remove this line.
@@ -52,7 +52,7 @@ c_ FooBar:
             locks[1].release()
 
 
-    ___ bar  printBar: Callable[[], N..]) __ N..
+    ___ bar  printBar: C..[[], N..]) __ N..
         ___ i __ r..(n
             locks[1].a..
             # printBar() outputs "bar". Do not change or remove this line.

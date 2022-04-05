@@ -1,8 +1,8 @@
-_______ logging
+_______ l___
 ____ t___ _______ L..  # python 3.9 we can drop this
 
 
-logger = logging.getLogger('app')
+logger = l___.g..'app')
 
 
 ___ sum_even_numbers(numbers: L..[f__]) __ f__:
@@ -26,7 +26,7 @@ ___ sum_even_numbers(numbers: L..[f__]) __ f__:
         r..
 
     ____
-        logger.info(f"Input: {numbers} -> output: {s}")
+        logger.i..(f"Input: {numbers} -> output: {s}")
         r.. s
 
 

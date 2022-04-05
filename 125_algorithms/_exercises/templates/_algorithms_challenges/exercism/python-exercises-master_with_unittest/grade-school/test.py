@@ -55,7 +55,7 @@ c_ SchoolTest(unittest.TestCase
         assertTrue(
             isi..(result, S..) o.
             isi..(result, GeneratorType) o.
-            callable(getattr(result, '__reversed__', F..)))
+            c.. getattr(result, '__reversed__', F..)))
 
         result_list = l..(result.i..
                            __ hasattr(result, "items") ____ result)

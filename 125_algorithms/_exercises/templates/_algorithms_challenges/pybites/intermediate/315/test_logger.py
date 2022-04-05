@@ -1,4 +1,4 @@
-_______ logging
+_______ l___
 
 _______ p__
 
@@ -10,26 +10,26 @@ ___ test_sum_numbers_function_works(caplog
 
 
 ___ test_sum_numbers_logging(caplog
-    caplog.set_level(logging.INFO, logger="app")
+    caplog.s.. l___.INFO, logger="app")
     sum_even_numbers(l..(r..(1, 11)))
-    ... l..(caplog.records) __ 1
+    ... l.. c__.r.. __ 1
     record = caplog.records[0]
     ... record.module __ 'logger'
-    ... record.name __ 'app'
-    ... record.levelname __ 'INFO'
+    ...  r__n.. __ 'app'
+    ...  r__l.. __ 'INFO'
     e.. = 'Input: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] -> output: 30'
-    ... record.message __ e..
+    ...  r__m.. __ e..
 
 
 ___ test_sum_numbers_throws_exception(caplog
-    caplog.set_level(logging.INFO, logger="app")
+    caplog.s.. l___.INFO, logger="app")
     w__ p__.r.. T..
         sum_even_numbers([1, 'a', 2, 3])
-    ... l..(caplog.records) __ 1
+    ... l.. c__.r.. __ 1
     record = caplog.records[0]
-    ... record.levelname __ 'ERROR'
+    ...  r__l.. __ 'ERROR'
     e.. = "Bad inputs: [1, 'a', 2, 3]"
-    ... record.message __ e..
+    ...  r__m.. __ e..
     ... record.exc_text.s.. 'Traceback')
     ... record.exc_text.e..
         ('TypeError: not all arguments converted during '
