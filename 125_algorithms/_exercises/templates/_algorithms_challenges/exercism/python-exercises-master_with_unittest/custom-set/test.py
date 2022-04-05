@@ -133,31 +133,31 @@ c_ CustomSetTest(unittest.TestCase
         set1 = CustomSet()
         set2 = CustomSet()
         e.. = CustomSet()
-        assertEqual(set1.intersection(set2), e..)
+        assertEqual(set1.i.. set2), e..)
 
     ___ test_intersection_of_empty_set_and_non_empty_set_is_empty_set
         set1 = CustomSet()
         set2 = CustomSet([3, 2, 5])
         e.. = CustomSet()
-        assertEqual(set1.intersection(set2), e..)
+        assertEqual(set1.i.. set2), e..)
 
     ___ test_intersection_of_non_empty_set_and_empty_set_is_empty_set
         set1 = CustomSet([1, 2, 3, 4])
         set2 = CustomSet()
         e.. = CustomSet()
-        assertEqual(set1.intersection(set2), e..)
+        assertEqual(set1.i.. set2), e..)
 
     ___ test_intersection_of_sets_with_no_shared_elements_is_empty_set
         set1 = CustomSet([1, 2, 3])
         set2 = CustomSet([4, 5, 6])
         e.. = CustomSet()
-        assertEqual(set1.intersection(set2), e..)
+        assertEqual(set1.i.. set2), e..)
 
     ___ test_intersection_contains_shared_elements_only
         set1 = CustomSet([1, 2, 3, 4])
         set2 = CustomSet([3, 2, 5])
         e.. = CustomSet([2, 3])
-        assertEqual(set1.intersection(set2), e..)
+        assertEqual(set1.i.. set2), e..)
 
     ___ test_difference_of_two_empty_sets_is_empty_set
         set1 = CustomSet()

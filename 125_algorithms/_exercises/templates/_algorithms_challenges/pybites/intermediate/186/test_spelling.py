@@ -10,7 +10,7 @@ ___ a_words
     """Get only a[abcdefghijklm]-words to speed up tests"""
     words = load_words()
     r.. {word ___ word __ words
-            __ word.startswith('a') a.. l..(word) > 1
+            __ word.s.. 'a') a.. l..(word) > 1
             a.. word[1] __ s__.ascii_letters[:13]}
 
 

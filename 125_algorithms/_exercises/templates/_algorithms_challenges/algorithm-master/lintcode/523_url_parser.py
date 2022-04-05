@@ -11,4 +11,4 @@ c_ HtmlParser:
         # ["\']: this block should contain `"` or `'`
         # [^"\'>\s]*: this block should contain any chars until `"`, `'`, `>`, or blank appears
         links = __.f..(r'href[=\s]+["\']([^"\'>\s]*)', content, __.I)
-        r.. [link ___ link __ links __ link a.. n.. link.startswith('#')]
+        r.. [link ___ link __ links __ link a.. n.. link.s.. '#')]

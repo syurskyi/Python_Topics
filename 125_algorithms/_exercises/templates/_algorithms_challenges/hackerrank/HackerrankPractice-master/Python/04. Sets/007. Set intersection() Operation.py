@@ -4,4 +4,4 @@
 
 _, a = input(), s..(input().s..
 _, b = input(), s..(input().s..
-print(l..(a.intersection(b)))
+print(l..(a.i.. b)))

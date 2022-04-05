@@ -21,7 +21,7 @@ c_ Solution(o..
       r.. tag[1] __ "/"
 
     ___ isCDATATag(i
-      r.. code.startswith("<![CDATA[", i)
+      r.. code.s.. "<![CDATA[", i)
 
     ___ isTag(tag
       __ l..(tag) < 3:
@@ -49,9 +49,9 @@ c_ Solution(o..
         __ isCDATATag(i
           __ n.. stack:
             r.. F..
-          w.... i < l..(code) - 7 a.. n.. code.startswith("]]>", i
+          w.... i < l..(code) - 7 a.. n.. code.s.. "]]>", i
             i += 1
-          __ code.startswith("]]>", i
+          __ code.s.. "]]>", i
             i += 3
             _____
           ____

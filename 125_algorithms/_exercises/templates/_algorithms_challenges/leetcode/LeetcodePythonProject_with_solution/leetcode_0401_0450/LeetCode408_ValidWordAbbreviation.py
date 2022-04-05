@@ -12,7 +12,7 @@ c_ Solution(o..
                 prev = j
                 w.... j+1 < l..(abbr) a.. abbr[j+1].i..
                     j+=1
-                __ abbr[prev:j+1].startswith('0' r.. F..
+                __ abbr[prev:j+1].s.. '0' r.. F..
                 num = i..(abbr[prev:j+1])
                 i += num
                 j += 1

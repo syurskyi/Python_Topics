@@ -31,9 +31,9 @@ c_ Solution:
         n = l..(lst)
         j = n - 1
         w... T...
-            w.... i < n a.. n.. lst[i].isalpha
+            w.... i < n a.. n.. lst[i].i..
                 i += 1
-            w.... j >_ 0 a.. n.. lst[j].isalpha
+            w.... j >_ 0 a.. n.. lst[j].i..
                 j -= 1
 
             __ i < j a.. i < n a.. j >_ 0:

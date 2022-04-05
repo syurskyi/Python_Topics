@@ -67,7 +67,7 @@ ___ redirect(url: s..) __ s..:
     3. Return URL stored in LINKS or proper message
     """
     
-    __ n.. url.startswith(SITE
+    __ n.. url.s.. SITE
         r.. INVALID
 
     number = url.s..('/')[-1]

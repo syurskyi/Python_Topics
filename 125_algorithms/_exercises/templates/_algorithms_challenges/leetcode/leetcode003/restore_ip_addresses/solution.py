@@ -36,7 +36,7 @@ c_ Solution:
     ___ is_valid_byte  b
         __ b __ '0':
             r.. T..
-        ____ b.startswith('0'
+        ____ b.s.. '0'
             r.. F..
         ____
             r.. i..(b) < 256

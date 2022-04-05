@@ -29,7 +29,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     ___ word __ words:
         counts = C..()
         ___ letter __ word.c..
-            __ letter.isalpha
+            __ letter.i..
                 counts[letter] += 1
 
         __ counts:

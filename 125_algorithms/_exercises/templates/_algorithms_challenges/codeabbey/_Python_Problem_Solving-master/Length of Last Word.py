@@ -6,7 +6,7 @@ c_ Solution:
             __ s[l] __ ' ':
                 l -= 1
                 
-            __ s[l].isalpha
+            __ s[l].i..
                 count += 1
                 l -= 1
                 __ s[l] __ ' ':

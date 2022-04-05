@@ -16,7 +16,7 @@ c_ Solution(o..
           a = i..(num[i:j + 1])
           b = i..(num[j + 1:k + 1])
           add = s..(i..(a + b
-          __ n.. num.startswith(add, k + 1
+          __ n.. num.s.. add, k + 1
             _____
           __ l..(add) + 1 + k __ l..(num
             r.. T..

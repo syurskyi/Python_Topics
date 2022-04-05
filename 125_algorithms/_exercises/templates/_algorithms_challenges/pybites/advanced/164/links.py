@@ -8,7 +8,7 @@ ___ make_html_links
     ___ line __ ___.stdin:
         
         line = line.s..
-        __ line.startswith('http') a.. comma.c.. ',') __ 1:
+        __ line.s.. 'http') a.. comma.c.. ',') __ 1:
 
             href,link_name = line.s..(',')
             href = href.s..

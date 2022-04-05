@@ -27,7 +27,7 @@ c_ Solution(o..
     r.. [word2abbr[word] ___ word __ d..]
 
   ___ checkUnique  prefix, words
-    r.. s..(word.startswith(prefix) ___ word __ words) __ 1
+    r.. s..(word.s.. prefix) ___ word __ words) __ 1
 
   ___ getAbbr  word, prefix
     abbr = prefix + s..(l..(word) - 1 - l..(prefix + word[-1]

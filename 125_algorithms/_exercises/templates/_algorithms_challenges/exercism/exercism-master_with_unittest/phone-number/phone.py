@@ -30,7 +30,7 @@ c_ Phone:
 
     $
     ___ valid_11_digits(inp
-        r.. l..(inp) __ 11 a.. inp.startswith("1")
+        r.. l..(inp) __ 11 a.. inp.s.. "1")
 
     $
     ___ valid_10_digits(inp

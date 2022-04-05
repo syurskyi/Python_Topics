@@ -47,11 +47,11 @@ ___ intersection $a.. I..) __ S..[A..]:
     # {0,1,2,3} intersection {0,1,2,3}, {3,4,5,6}, {2,3,5,6}
     ___
         first = l[0]
-        r..(first.intersection(*l
+        r..(first.i.. *l
     ______ IndexError __ e:
         print(e)
         r..(s..
 
 
 
-print(intersection(N..
+print(i.. N..

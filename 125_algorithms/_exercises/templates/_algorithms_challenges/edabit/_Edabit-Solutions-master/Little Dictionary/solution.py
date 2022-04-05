@@ -4,7 +4,7 @@ ___ dictionary(intial,lst
     a_list    # list
     w.... index < last_index:
         word  lst[index]
-        __ word.startswith(intial
+        __ word.s.. intial
             a_list.a..(word)
         index  index + 1
     r.. a_list

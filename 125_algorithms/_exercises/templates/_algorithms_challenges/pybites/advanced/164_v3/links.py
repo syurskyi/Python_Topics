@@ -12,7 +12,7 @@ ___ make_html_links
 
 
 ___ process_line(line
-    __ line.startswith('http'
+    __ line.s.. 'http'
         url, *title = [l.s.. ___ l __ line.s..(',')]
         __ l..(title) > 1:
             r.. ''

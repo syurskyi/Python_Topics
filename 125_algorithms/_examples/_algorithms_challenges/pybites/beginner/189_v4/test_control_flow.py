@@ -22,4 +22,4 @@ from control_flow import filter_names
      ['tim', 'amber', 'ana', 'sara', 'molly']),
 ])
 def test_filter_names(names, expected_return):
-    assert list(filter_names(names)) == expected_return
+    assert list ? ? )) == expected_return

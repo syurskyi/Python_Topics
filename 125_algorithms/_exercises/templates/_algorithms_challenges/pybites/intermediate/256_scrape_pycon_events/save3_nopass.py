@@ -111,7 +111,7 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     event_list    # list
     ___ x __ data:
         name = json.loads(x.s__)["name"]
-        __ name.startswith('PyCon'
+        __ name.s.. 'PyCon'
             event_list.a..(PyCon(name=name,
                                     city=json.loads(x.s__)["location"]["address"]["addressLocality"],
                                     country=json.loads(x.s__)["location"]["address"]["addressCountry"],

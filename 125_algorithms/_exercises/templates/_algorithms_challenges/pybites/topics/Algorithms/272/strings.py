@@ -14,7 +14,7 @@ ___ common_words(sentence1: L..[s..], sentence2: L..[s..]) __ L..[s..]:
     """
     s1 = [word.l.. ___ word __ sentence1]
     s2 = [word.l.. ___ word __ sentence2]
-    r.. s..(s..(s1).intersection(s2), key=l..)
+    r.. s..(s..(s1).i.. s2), key=l..)
 
 
 sentence1 =  'To', 'be', 'or', 'not', 'to', 'be',

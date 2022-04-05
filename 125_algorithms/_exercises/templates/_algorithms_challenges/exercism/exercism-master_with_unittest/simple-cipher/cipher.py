@@ -20,7 +20,7 @@ c_ Cipher:
                         e..(clean(phrase])
 
     ___ clean  phrase
-        r.. l..(f.. s...isalpha, phrase.lower()))
+        r.. l..(f.. s...i.., phrase.lower()))
 
     ___ generate_random_key
         r.. ''.j..(r__.SystemRandom().c..(s__.ascii_lowercase)

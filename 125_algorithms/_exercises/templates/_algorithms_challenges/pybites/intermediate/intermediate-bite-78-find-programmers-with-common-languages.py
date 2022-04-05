@@ -28,7 +28,7 @@ ___ common_languages(programmers
     first_set = sets[0]
     remaining_sets = sets[1:]
     print(remaining_sets)
-    result = first_set.intersection(*remaining_sets)
+    result = first_set.i.. *remaining_sets)
     print(result)
 
 common_languages(programmers)

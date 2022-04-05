@@ -18,7 +18,7 @@ ___ is_palindrome(word: s..
        Case insensitive, so Madam is valid too.
        It should work for phrases too so strip all but alphanumeric chars.
        So "No 'x' in 'Nixon'" should pass (see tests for more)"""
-    s__ = ''.j..(c.l.. ___ c __ word __ c.isalpha
+    s__ = ''.j..(c.l.. ___ c __ word __ c.i..
     r.. s__ __ s__[::-1]
 
 

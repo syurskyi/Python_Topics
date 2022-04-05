@@ -29,7 +29,7 @@ c_ Solution(o..
         :param s: a string
         :return: an integer
         """
-        __ s.startswith("0"
+        __ s.s.. "0"
             r.. 0
 
         n = l..(s)

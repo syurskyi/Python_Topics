@@ -33,13 +33,13 @@ c_ StrainTest(unittest.TestCase
 
     ___ test_keep_discard
         inp =  '1,2,3', 'one', 'almost!', 'love'
-        assertEqual(discard(keep(inp, s...isalpha), s...isalpha), [])
+        assertEqual(discard(keep(inp, s...i..), s...i..), [])
 
     ___ test_keep_plus_discard
         inp =  '1,2,3', 'one', 'almost!', 'love'
         out =  'one', 'love', '1,2,3', 'almost!'
         assertEqual(
-            keep(inp, s...isalpha) + discard(inp, s...isalpha), out)
+            keep(inp, s...i..) + discard(inp, s...i..), out)
 
 
 __ _____ __ _____

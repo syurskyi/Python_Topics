@@ -20,4 +20,4 @@ c_ Solution(o..
         :type nums2: List[int]
         :rtype: List[int]
         """
-        r.. l..(s..(nums1).intersection(s..(nums2)))
+        r.. l..(s..(nums1).i.. s..(nums2)))

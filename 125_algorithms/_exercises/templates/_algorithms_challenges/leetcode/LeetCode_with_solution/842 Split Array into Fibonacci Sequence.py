@@ -62,7 +62,7 @@ c_ Solution:
         l = l..(S)
         ___ i __ r..(1, l + 1
             num_str = S[:i]
-            __ l..(num_str) > 1 a.. num_str.startswith("0"
+            __ l..(num_str) > 1 a.. num_str.s.. "0"
                 _____
 
             num = i..(num_str)
@@ -71,7 +71,7 @@ c_ Solution:
 
             ___ j __ r..(i + 1, l + 1
                 num2_str = S[i:j]
-                __ l..(num2_str) > 1 a.. num2_str.startswith("0"
+                __ l..(num2_str) > 1 a.. num2_str.s.. "0"
                     _____
 
                 num2 = i..(num2_str)

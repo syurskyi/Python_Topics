@@ -12,7 +12,7 @@ VALID_OPERATIONS = {"plus": add, "minus": sub,
 
 
 ___ calculate(stmt
-    __ n.. (stmt.startswith("What is ") a.. stmt.e.. "?":
+    __ n.. (stmt.s.. "What is ") a.. stmt.e.. "?":
         r.. V...("Ill-formed question")
     l = stmt[8:-1].s...l...s..
     __ n.. l:

@@ -16,7 +16,7 @@ c_ Solution:
         __ c[0] a.. a.e.. c[0]
             ans += 1
 
-        __ c[-1] a.. a.startswith(c[-1]
+        __ c[-1] a.. a.s.. c[-1]
             ans += 1
 
-        r.. ans __ a.startswith(c[-1]) a.. a.e.. c[0]) ____ -1
+        r.. ans __ a.s.. c[-1]) a.. a.e.. c[0]) ____ -1

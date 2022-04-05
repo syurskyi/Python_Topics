@@ -26,9 +26,9 @@ ___ _parse_father_days_per_country(year, date_to_countries,filename=fathers_days
 
         ___ line __ f:
             line = line.s..
-            __ n.. line o. line.startswith('#'
+            __ n.. line o. line.s.. '#'
                 _____
-            ____ line.startswith('*'
+            ____ line.s.. '*'
 
                 line = __.sub(r'\band\b','',line)
 
@@ -48,9 +48,9 @@ ___ _parse_recurring_father_days(days_to_countries,filename=fathers_days_recurri
     w__ o.. filename _ __ f:
         ___ line __ f:
             line = line.s..
-            __ n.. line o. line.startswith('#'
+            __ n.. line o. line.s.. '#'
                 _____
-            __ line.startswith('*'
+            __ line.s.. '*'
                 date = line[2:]
             ____
                 days_to_countries[date].a..(line)

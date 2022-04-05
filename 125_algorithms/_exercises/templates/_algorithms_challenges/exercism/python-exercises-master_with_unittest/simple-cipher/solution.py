@@ -14,7 +14,7 @@ c_ Cipher(o..
         key = key
 
     ___ encode  text
-        text = ''.j..(c ___ c __ text __ c.isalpha.l..
+        text = ''.j..(c ___ c __ text __ c.i...l..
         key = key * (l..(text) // l..(key) + 1)
         r.. ''.j..(chr((o..(c) - 194 + o..(k % 26 + 97)
                        ___ c, k __ z..(text, key

@@ -7,7 +7,7 @@ ___ common_languages(programmers
       ___ key, value __ programmers.i..:
          __ i __ 1:
             common.update(value)
-         common = common.intersection(value)
+         common = common.i.. value)
    r.. common
 
 

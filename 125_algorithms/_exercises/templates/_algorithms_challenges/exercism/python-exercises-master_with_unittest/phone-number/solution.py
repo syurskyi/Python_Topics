@@ -28,7 +28,7 @@ c_ Phone(o..
 
     ___ _normalize  number
         valid = l..(number) __ 10 o. \
-            l..(number) __ 11 a.. number.startswith('1')
+            l..(number) __ 11 a.. number.s.. '1')
 
         __ valid:
             r.. number[-10:]

@@ -21,7 +21,7 @@ c_ Solution(o..
         __ l..(arr) != 4: r.. F..
         ___ elem __ arr:
             __ n.. elem: r.. F..
-            __ elem.startswith('0') a.. l..(elem) > 1: r.. F..
+            __ elem.s.. '0') a.. l..(elem) > 1: r.. F..
             __ n.. elem.i.. o. i..(elem) > 255:
                 r.. F..
         r.. T..

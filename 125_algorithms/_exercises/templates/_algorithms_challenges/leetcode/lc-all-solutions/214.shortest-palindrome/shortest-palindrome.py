@@ -28,5 +28,5 @@ c_ Solution(o..
   ___ shortestPalindrome  s
     r = s[::-1]
     ___ i __ r..(l..(s) + 1
-      __ s.startswith(r[i:]
+      __ s.s.. r[i:]
         r.. r[:i] + s

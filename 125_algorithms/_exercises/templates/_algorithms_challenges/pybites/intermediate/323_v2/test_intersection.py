@@ -20,7 +20,7 @@ ____ intersection _______ intersection
     ],
 )
 ___ test_basic(inputs, e..
-    results = intersection(*inputs)
+    results = i.. *inputs)
     ... results __ e..
 
 
@@ -42,5 +42,5 @@ ___ test_basic(inputs, e..
     ],
 )
 ___ test_edgecases(inputs, e..
-    results = intersection(*inputs)
+    results = i.. *inputs)
     ... results __ e..

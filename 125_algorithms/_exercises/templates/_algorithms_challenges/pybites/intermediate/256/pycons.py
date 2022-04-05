@@ -115,7 +115,7 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     ___ event __ events:
         event = json.loads(event.getText
         name = event 'name'
-        __ n.. name.startswith('PyCon'
+        __ n.. name.s.. 'PyCon'
             _____
         start_date = p..(event 'startDate' )
         end_date = p..(event 'endDate' )

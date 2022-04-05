@@ -56,7 +56,7 @@ c_ Solution:
         # walk backward
         ___ s __ r..(S
             K %= l
-            __ K __ 0 a.. s.isalpha
+            __ K __ 0 a.. s.i..
                 # K == l * n, return the last chr
                 r.. s
             __ s.i..
