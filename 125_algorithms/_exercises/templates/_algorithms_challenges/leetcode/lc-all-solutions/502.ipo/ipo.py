@@ -6,5 +6,5 @@ c_ Solution(o..
       w.... future a.. future[-1][0] <_ W:
         heapq.heappush(current, -future.p.. )[1])
       __ current:
-        W -= heapq.heappop(current)
+        W -_ heapq.heappop(current)
     r.. W

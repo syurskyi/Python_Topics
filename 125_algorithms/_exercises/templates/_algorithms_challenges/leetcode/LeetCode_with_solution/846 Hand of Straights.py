@@ -52,7 +52,7 @@ c_ Solution:
             prev, prev_cnt = k, counter[k]
             __ l..(q) __ W:
                 c = q.popleft()
-                prev_cnt -= c
+                prev_cnt -_ c
 
         r.. prev_cnt __ 0
 

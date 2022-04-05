@@ -28,7 +28,7 @@ c_ Solution:
 
             node = stack.p.. )
 
-            k -= 1
+            k -_ 1
             __ k __ 0:
                 r.. node.val
 

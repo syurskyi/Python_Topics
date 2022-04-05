@@ -19,7 +19,7 @@ c_ Solution(o..
         cur.next = pre
         pre = cur
         cur = tmp
-        k -= 1
+        k -_ 1
       head.next = cur
       r.. cur, pre
 

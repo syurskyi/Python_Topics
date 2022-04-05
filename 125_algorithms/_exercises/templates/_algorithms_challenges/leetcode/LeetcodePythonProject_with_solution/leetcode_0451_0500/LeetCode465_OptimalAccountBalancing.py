@@ -24,7 +24,7 @@ c_ Solution(o..
             __ debt[i] != prev a.. debt[i]*debt[s] < 0:
                 debt[i] += debt[s]
                 res = m..(res, dfs(s+1, cnt+1
-                debt[i] -= debt[s]
+                debt[i] -_ debt[s]
                 prev = debt[i]
         r.. res __ res != f__('inf') ____ cnt
     

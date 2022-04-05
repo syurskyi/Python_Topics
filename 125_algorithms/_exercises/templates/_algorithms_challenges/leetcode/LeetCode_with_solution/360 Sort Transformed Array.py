@@ -34,14 +34,14 @@ c_ Solution(o..
             f_ri = f(nums[ri], a, b, c)
             __ a > 0 a.. f_le < f_ri o. a < 0 a.. f_le > f_ri:
                 ret.a..(f_le)
-                le -= 1
+                le -_ 1
             ____
                 ret.a..(f_ri)
                 ri += 1
 
         w.... le >_ 0:
             ret.a..(f(nums[le], a, b, c
-            le -= 1
+            le -_ 1
         w.... ri < l..(nums
             ret.a..(f(nums[ri], a, b, c
             ri += 1

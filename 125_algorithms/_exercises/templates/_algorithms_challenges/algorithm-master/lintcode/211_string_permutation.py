@@ -16,7 +16,7 @@ c_ Solution:
         ___ char __ B:
             __ char n.. __ cnts o. cnts[char] __ 0:
                 r.. F..
-            cnts[char] -= 1
+            cnts[char] -_ 1
         ___ cnt __ cnts.v..
             __ cnt != 0:
                 r.. F..

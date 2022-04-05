@@ -29,7 +29,7 @@ c_ Solution(o..
     
     ___ calDirection  d, c
         __ c __ -2:
-            d -= 1
+            d -_ 1
         ____ c __ -1:
             d += 1
         d %= 4

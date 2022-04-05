@@ -60,7 +60,7 @@ c_ Solution(o..
                 __ hasnext
                     r.. Node(i, j + 1)
 
-                r.. StopIteration
+                r.. S..
 
         __ n.. nums1 o. n.. nums2:
             r.. []

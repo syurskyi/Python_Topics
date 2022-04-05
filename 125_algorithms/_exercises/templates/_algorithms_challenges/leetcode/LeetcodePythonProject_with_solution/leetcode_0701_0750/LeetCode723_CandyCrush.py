@@ -53,7 +53,7 @@ c_ Solution(o..
             ___ i __ r..(m-1, -1, -1
                 __ board[i][j] > 0:
                     res[i0][j] = board[i][j]
-                    i0 -= 1
+                    i0 -_ 1
             ___ i __ r..(i0, -1, -1
                 res[i][j] = 0
     

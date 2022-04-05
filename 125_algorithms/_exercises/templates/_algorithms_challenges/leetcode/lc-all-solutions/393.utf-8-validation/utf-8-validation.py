@@ -25,7 +25,7 @@ c_ Solution(o..
       ____
         __ (data[i] & 0xc0) != 0x80:
           r.. F..
-        followed -= 1
+        followed -_ 1
         __ followed __ 0:
           new = T..
       i += 1

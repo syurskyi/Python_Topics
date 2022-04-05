@@ -15,6 +15,6 @@ c_ Solution(o..
       __ meeting[1] __ 1:
         count += 1
       ____
-        count -= 1
+        count -_ 1
       ans = m..(ans, count)
     r.. ans

@@ -16,7 +16,7 @@ c_ Solution(o..
       sCount[s[i]] += 1
       __ sCount __ pCount:
         ans.a..(i - l..(p) + 1)
-      sCount[s[i - l..(p) + 1]] -= 1
+      sCount[s[i - l..(p) + 1]] -_ 1
       __ sCount[s[i - l..(p) + 1]] __ 0:
         del sCount[s[i - l..(p) + 1]]
     r.. ans

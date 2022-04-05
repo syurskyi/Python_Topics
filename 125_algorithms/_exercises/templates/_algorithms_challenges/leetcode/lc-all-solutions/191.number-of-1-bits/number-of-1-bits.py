@@ -6,6 +6,6 @@ c_ Solution(o..
     """
     ans = 0
     w.... n > 0:
-      n -= (n & -n)
+      n -_ (n & -n)
       ans += 1
     r.. ans

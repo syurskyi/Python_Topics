@@ -16,7 +16,7 @@ c_ Solution(o..
           __ a..(target - s..) < diff:
             diff = a..(target - s..)
             ans = s..
-          end -= 1
+          end -_ 1
         ____
           __ a..(target - s..) < diff:
             diff = a..(target - s..)

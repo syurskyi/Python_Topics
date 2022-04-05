@@ -46,7 +46,7 @@ c_ Solution:
                 mini += 1
             ____  # "D"
                 ret.a..(maxa)
-                maxa -= 1
+                maxa -_ 1
 
         ret.a..(mini)
         r.. ret

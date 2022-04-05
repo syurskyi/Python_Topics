@@ -20,8 +20,8 @@ ___ blackjack_counter(games
                 ace_count += 1
                 
         w.... total > 21 a.. ace_count > 0:
-            total -= 10
-            ace_count -= 1
+            total -_ 10
+            ace_count -_ 1
 
         __ total > 21:
             answer.a..('Bust')

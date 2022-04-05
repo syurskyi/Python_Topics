@@ -73,7 +73,7 @@ c_ Solution(o..
 
                 e = heapq.heappop(h)
                 ret.a..(e.val)
-                e.cnt -= 1
+                e.cnt -_ 1
                 __ e.cnt > 0:
                     cur.a..(e)
 

@@ -13,11 +13,11 @@ ___ i __ r..(i..(input())):
     __ command __ 1:
         arr[value] += 1
         frequencies[arr[value]] += 1
-        frequencies[arr[value] - 1] -= 1
+        frequencies[arr[value] - 1] -_ 1
     __ command __ 2 a.. arr[value] != 0:
-        arr[value] -= 1
+        arr[value] -_ 1
         frequencies[arr[value]] += 1
-        frequencies[arr[value] + 1] -= 1
+        frequencies[arr[value] + 1] -_ 1
     __ command __ 3:
         result.a..(1 __ frequencies[value] > 0 ____ 0)
 

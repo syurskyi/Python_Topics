@@ -33,7 +33,7 @@ c_ Solution:
 
         ___ a, b __ edges:
             __ union(nodes, a, b
-                ans -= 1
+                ans -_ 1
 
         r.. ans
 

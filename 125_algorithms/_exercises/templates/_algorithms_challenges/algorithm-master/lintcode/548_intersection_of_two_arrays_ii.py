@@ -19,7 +19,7 @@ c_ Solution:
             __ n.. freq.g.. x
                 _____
 
-            freq[x] -= 1
+            freq[x] -_ 1
             ans.a..(x)
 
         r.. ans

@@ -62,7 +62,7 @@ c_ Solution:
             __ s.i..
                 l //= i..(s)
             ____
-                l -= 1
+                l -_ 1
 
         r..
 
@@ -73,7 +73,7 @@ c_ Solution:
 
         understanding error, one digit will make the entire str repeated
         """
-        K -= 1  # 0-indexed
+        K -_ 1  # 0-indexed
         i = 0
         j = 0
         last = N..
@@ -86,8 +86,8 @@ c_ Solution:
                 d = i..(S[j])
                 l = last - i
                 w.... K >_ l a.. d > 0:
-                    K -= l
-                    d -= 1
+                    K -_ l
+                    d -_ 1
                 __ d > 0:
                     r.. S[i + K]
             ____ last:

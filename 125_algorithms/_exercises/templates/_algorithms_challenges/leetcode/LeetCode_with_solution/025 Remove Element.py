@@ -21,7 +21,7 @@ c_ Solution:
         w.... l..(A)+back_ptr>_open_ptr:
             __ A[open_ptr]__elem:
                 A[open_ptr], A[back_ptr] = A[back_ptr], A[open_ptr]
-                back_ptr -= 1
+                back_ptr -_ 1
             ____
                 open_ptr += 1
 
@@ -41,7 +41,7 @@ c_ Solution:
         end_ptr = l..(A)
         w.... open_ptr<end_ptr:
             __ A[open_ptr]__elem:
-                end_ptr -= 1
+                end_ptr -_ 1
                 A[open_ptr], A[end_ptr] = A[end_ptr], A[open_ptr]
             ____
                 open_ptr += 1

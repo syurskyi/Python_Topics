@@ -177,7 +177,7 @@ c_ Solution_TLE2:
 
                 # greedy, cannot repeat while possibly repeat in the same level; otherwise cannot be the shortest
                 # the paths downwards are independent of the path before that.
-                d.. -= {current.s__}
+                d.. -_ {current.s__}
 
                 # check whether reached
                 __ current.string__end:  # reached
@@ -231,7 +231,7 @@ c_ Solution:  # use set to mimic queue, fastest
         candidates[current].add(start)
         w.... end n.. __ candidates[current]:
             current, previous = previous, current
-            ___ i __ candidates[previous]: d.. -= {i}  # greedy elimination
+            ___ i __ candidates[previous]: d.. -_ {i}  # greedy elimination
 
             candidates[current].clear()  # to be added to the current level
             ___ word __ candidates[previous]:

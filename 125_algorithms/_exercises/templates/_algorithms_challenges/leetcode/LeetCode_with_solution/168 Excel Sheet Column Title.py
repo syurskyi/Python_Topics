@@ -22,7 +22,7 @@ c_ Solution:
         """
         sb    # list  # string builder
         w.... n:
-            n -= 1  # there is not 0 representation in excel title
+            n -_ 1  # there is not 0 representation in excel title
             sb.a..(chr(o..("A")+n%26
             n /= 26
 

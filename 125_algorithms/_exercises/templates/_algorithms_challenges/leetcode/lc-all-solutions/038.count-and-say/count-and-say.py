@@ -5,7 +5,7 @@ c_ Solution(o..
     :rtype: str
     """
     ans = "1"
-    n -= 1
+    n -_ 1
     w.... n > 0:
       res = ""
       pre = ans[0]
@@ -19,5 +19,5 @@ c_ Solution(o..
           count = 1
       res += s..(count) + pre
       ans = res
-      n -= 1
+      n -_ 1
     r.. ans

@@ -36,7 +36,7 @@ c_ Solution:
                 s = i..(num2[idx]) + carry
 
             __ s >_ 10:
-                s -= 10
+                s -_ 10
                 carry = 1
             ____
                 carry = 0

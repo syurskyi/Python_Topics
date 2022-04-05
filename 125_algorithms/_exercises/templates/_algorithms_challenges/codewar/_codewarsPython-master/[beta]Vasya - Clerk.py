@@ -7,14 +7,14 @@ ___ tickets(people
             __ cashier[25] __ 0:
                 r.. 'NO'
             cashier[50] += 1
-            cashier[25] -= 1
+            cashier[25] -_ 1
         ____
             cashier[100] += 1
             __ cashier[50] >_ 1 a.. cashier[25] >_ 1:
-                cashier[50] -= 1
-                cashier[25] -= 1
+                cashier[50] -_ 1
+                cashier[25] -_ 1
             ____ cashier[25] >_ 3:
-                cashier[25] -= 3
+                cashier[25] -_ 3
             ____
                 r.. 'NO'
     r.. 'YES'

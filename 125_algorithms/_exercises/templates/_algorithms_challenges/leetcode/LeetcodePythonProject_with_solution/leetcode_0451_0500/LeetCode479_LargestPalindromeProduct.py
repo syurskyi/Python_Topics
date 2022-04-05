@@ -24,7 +24,7 @@ c_ Solution(o..
                 __ palindrome % i __ 0:
                     palindromeFound = T..
                     _____
-            firstHalf -= 1
+            firstHalf -_ 1
         r.. i..(palindrome%1337)
     
     ___ createPalindrome  num

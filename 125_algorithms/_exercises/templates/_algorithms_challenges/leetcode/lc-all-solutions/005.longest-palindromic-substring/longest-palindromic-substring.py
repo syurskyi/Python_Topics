@@ -11,7 +11,7 @@ c_ Solution(o..
         _____
       l = r = i
       w.... l >_ 0 a.. r < n a.. s[l] __ s[r]:
-        l -= 1
+        l -_ 1
         r += 1
       __ r - l - 2 > right - left:
         left = l + 1
@@ -19,7 +19,7 @@ c_ Solution(o..
       l = i
       r = i + 1
       w.... l >_ 0 a.. r < n a.. s[l] __ s[r]:
-        l -= 1
+        l -_ 1
         r += 1
       __ r - l - 2 > right - left:
         left = l + 1

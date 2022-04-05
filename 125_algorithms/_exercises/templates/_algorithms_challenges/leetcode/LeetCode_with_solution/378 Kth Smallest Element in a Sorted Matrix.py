@@ -48,7 +48,7 @@ c_ Solution(o..
                 __ hasnext
                     r.. Node(i, j + 1)
 
-                r.. StopIteration
+                r.. S..
 
         h    # list
         ___ i __ x..(m

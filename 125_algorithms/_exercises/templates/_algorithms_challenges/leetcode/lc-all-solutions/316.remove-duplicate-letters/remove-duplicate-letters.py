@@ -17,5 +17,5 @@ c_ Solution(o..
           cache.discard(stack.pop
         stack.a..(c)
         cache.add(c)
-      count[c] -= 1
+      count[c] -_ 1
     r.. "".j..(stack)

@@ -13,6 +13,6 @@ c_ Solution(o..
         w.... n > 1 a.. availableNumbers > 0:
             uniqueDigits = uniqueDigits*availableNumbers
             res += uniqueDigits
-            availableNumbers -= 1
-            n -= 1
+            availableNumbers -_ 1
+            n -_ 1
         r.. res

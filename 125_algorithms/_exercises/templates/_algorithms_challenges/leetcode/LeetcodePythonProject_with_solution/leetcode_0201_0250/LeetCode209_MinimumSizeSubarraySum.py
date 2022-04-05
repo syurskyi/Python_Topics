@@ -19,7 +19,7 @@ c_ Solution(o..
             sumVal += nums[end]
             __ sumVal >_ s:
                 w.... start <_ end a.. sumVal >_ s:
-                    sumVal -= nums[start]
+                    sumVal -_ nums[start]
                     minLen = m..(minLen, end-start+1)
                     start+=1
             end+=1

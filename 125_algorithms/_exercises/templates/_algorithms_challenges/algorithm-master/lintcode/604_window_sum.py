@@ -19,6 +19,6 @@ c_ Solution:
 
             ans.a..(_sum)
 
-            _sum -= A[i - k + 1]
+            _sum -_ A[i - k + 1]
 
         r.. ans

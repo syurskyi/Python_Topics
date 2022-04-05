@@ -20,7 +20,7 @@ c_ Twitter(o..
     """
     tInfo = ts, tweetId, userId, l..(tweets[userId])
     tweets[userId].a..(tInfo)
-    ts -= 1
+    ts -_ 1
 
   ___ getNewsFeed  userId
     """
@@ -42,7 +42,7 @@ c_ Twitter(o..
       ret.a..(tid)
       __ idx > 0:
         heapq.heappush(heap, tweets[uid][idx - 1])
-      cnt -= 1
+      cnt -_ 1
     r.. ret
 
   ___ follow  followerId, followeeId
@@ -63,7 +63,7 @@ c_ Twitter(o..
     :type followeeId: int
     :rtype: void
     """
-    friendship[followerId] -= {followeeId}
+    friendship[followerId] -_ {followeeId}
 
 # Your Twitter object will be instantiated and called as such:
 # obj = Twitter()

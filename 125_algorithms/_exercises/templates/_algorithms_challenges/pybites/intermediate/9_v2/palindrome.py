@@ -36,7 +36,7 @@ ___ is_palindrome(word
             r.. F..
 
         low += 1
-        high -= 1
+        high -_ 1
 
     r.. T..
 

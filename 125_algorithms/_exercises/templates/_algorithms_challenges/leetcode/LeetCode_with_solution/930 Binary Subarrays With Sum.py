@@ -37,10 +37,10 @@ c_ Solution:
             sum_lo += A[j]
             sum_hi += A[j]
             w.... i_lo < j a.. sum_lo > S:
-                sum_lo -= A[i_lo]
+                sum_lo -_ A[i_lo]
                 i_lo += 1
             w.... i_hi < j a.. (sum_hi > S o. sum_hi __ S a.. A[i_hi] __ 0
-                sum_hi -= A[i_hi]
+                sum_hi -_ A[i_hi]
                 i_hi += 1
             ... i_hi >_ i_lo
             __ sum_lo __ S:
@@ -71,7 +71,7 @@ c_ Solution:
                 j += 1
             ____
                 w.... i <_ j a.. cur_sum > S:
-                    cur_sum -= A[i]
+                    cur_sum -_ A[i]
                     i += 1
                 __ cur_sum __ S:
                     ret += 1

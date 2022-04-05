@@ -38,5 +38,5 @@ c_ Solution(o..
                 ____
                     right = mid - 1
             ____
-                right -= 1
+                right -_ 1
         r.. F..

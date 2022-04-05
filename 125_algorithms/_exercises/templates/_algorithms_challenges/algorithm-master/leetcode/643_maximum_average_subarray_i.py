@@ -40,7 +40,7 @@ c_ Solution:
         ___ i __ r..(l..(nums:
             tmp_sum += nums[i]
             __ i >_ k:
-                tmp_sum -= nums[i-k]
+                tmp_sum -_ nums[i-k]
             __ i + 1 >_ k:
                 max_sum = m..(max_sum, tmp_sum)
         r.. max_sum / f__(k)

@@ -31,7 +31,7 @@ c_ Solution(o..
             __ s[start] != s[end]:
                 r.. F..
             start += 1
-            end -= 1
+            end -_ 1
         r.. T..
     
     ___ test

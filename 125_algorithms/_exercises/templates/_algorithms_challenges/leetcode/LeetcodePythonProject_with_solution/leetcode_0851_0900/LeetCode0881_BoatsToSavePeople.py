@@ -18,7 +18,7 @@ c_ Solution(o..
             __ l < r a.. w + people[l] <_ limit:
                 l += 1
             res += 1
-            r -= 1
+            r -_ 1
         r.. res
     
     ___ test

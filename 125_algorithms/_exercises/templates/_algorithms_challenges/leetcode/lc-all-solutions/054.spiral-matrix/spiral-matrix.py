@@ -14,10 +14,10 @@ c_ Solution(o..
       up += 1
       ___ i __ r..(up, down + 1
         ans += matrix[i][right],
-      right -= 1
+      right -_ 1
       ___ i __ r..(r..(left, right + 1:
         ans += matrix[down][i],
-      down -= 1
+      down -_ 1
       ___ i __ r..(r..(up, down + 1:
         ans += matrix[i][left],
       left += 1

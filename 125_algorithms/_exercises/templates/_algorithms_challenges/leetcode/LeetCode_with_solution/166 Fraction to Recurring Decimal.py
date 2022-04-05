@@ -58,7 +58,7 @@ c_ Solution:
             ret.a..(s..(q
             d[(q, r)] = i
             i += 1
-            num -= q*deno
+            num -_ q*deno
 
         r.. "".j..(ret)
 
@@ -107,7 +107,7 @@ c_ Solution_error:
             ret.a..(s..(r
             d[r] = i
             i += 1
-            num -= r*deno
+            num -_ r*deno
 
         r.. "".j..(ret)
 

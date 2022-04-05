@@ -31,6 +31,6 @@ c_ Solution(o..
         ___ e __ ransomNote:
             __ d[e] __ 0:
                 r.. F..
-            d[e] -= 1
+            d[e] -_ 1
 
         r.. T..

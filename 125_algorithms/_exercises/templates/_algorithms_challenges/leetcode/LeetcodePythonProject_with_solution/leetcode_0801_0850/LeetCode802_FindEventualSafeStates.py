@@ -26,7 +26,7 @@ c_ Solution(o..
             i = queue.p.. 0)
             res.a..(i)
             ___ j __ inlinks[i]:
-                outdegrees[j] -= 1
+                outdegrees[j] -_ 1
                 __ outdegrees[j] __ 0:
                     queue.a..(j)
         res.s..()

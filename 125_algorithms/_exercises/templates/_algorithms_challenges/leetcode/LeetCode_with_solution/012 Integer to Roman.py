@@ -40,6 +40,6 @@ c_ Solution:
         ___ component __ r..(components  # reversed
             w.... num >_ component:
                 string_builder.a..(int2roman[component])
-                num -= component
+                num -_ component
 
         r.. "".j..(string_builder)

@@ -48,7 +48,7 @@ c_ Solution(o..
                 stk.p.. )
                 child_cnt += 1
             ____
-                child_cnt -= 2
+                child_cnt -_ 2
                 __ child_cnt < 0:
                     r.. F..
 

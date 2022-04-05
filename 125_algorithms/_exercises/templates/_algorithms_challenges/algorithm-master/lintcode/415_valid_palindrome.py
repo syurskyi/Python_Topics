@@ -15,12 +15,12 @@ c_ Solution:
             w.... left < right a.. n.. s[left].i..
                 left += 1
             w.... left < right a.. n.. s[right].i..
-                right -= 1
+                right -_ 1
 
             __ s[left] != s[right]:
                 r.. F..
 
             left += 1
-            right -= 1
+            right -_ 1
 
         r.. T..

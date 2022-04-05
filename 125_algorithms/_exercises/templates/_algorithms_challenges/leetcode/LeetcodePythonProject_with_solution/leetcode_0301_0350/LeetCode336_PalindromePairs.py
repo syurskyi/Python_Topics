@@ -31,7 +31,7 @@ c_ Solution(o..
             __ s[left] != s[right]:
                 r.. F..
             left+=1
-            right-=1
+            right-_1
         r.. T..
     
     ___ test

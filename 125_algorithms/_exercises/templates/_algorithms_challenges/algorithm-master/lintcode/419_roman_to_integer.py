@@ -25,6 +25,6 @@ c_ Solution:
             __ symbs[s[i]] >_ symbs[s[i + 1]]:
                 ans += symbs[s[i]]
             ____
-                ans -= symbs[s[i]]
+                ans -_ symbs[s[i]]
 
         r.. ans

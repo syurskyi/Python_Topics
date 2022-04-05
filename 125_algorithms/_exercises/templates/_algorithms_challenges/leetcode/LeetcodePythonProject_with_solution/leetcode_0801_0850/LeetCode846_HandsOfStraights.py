@@ -21,7 +21,7 @@ c_ Solution(o..
             ___ i __ r..(w
                 __ minVal + i n.. __ hashmap:
                     r.. F..
-                hashmap[minVal+i] -= 1
+                hashmap[minVal+i] -_ 1
                 __ hashmap[minVal+i] __ 0:
                     del hashmap[minVal+i]
         r.. l..(hashmap) __ 0

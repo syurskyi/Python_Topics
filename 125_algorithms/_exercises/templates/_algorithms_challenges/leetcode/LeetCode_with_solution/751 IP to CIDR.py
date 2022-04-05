@@ -93,10 +93,10 @@ c_ Solution:
         w.... n > 0:
             lsb = get_lsb(num_ip)
             w.... (1 << lsb) > n:
-                lsb -= 1
+                lsb -_ 1
 
             cur_cover = 1 << lsb
-            n -= cur_cover
+            n -_ cur_cover
             ret.a..(
                 to_ip(num_ip) + f"/{32-lsb}"
             )

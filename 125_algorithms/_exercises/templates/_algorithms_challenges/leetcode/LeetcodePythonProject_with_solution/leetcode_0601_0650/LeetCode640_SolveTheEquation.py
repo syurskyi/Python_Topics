@@ -49,7 +49,7 @@ c_ Solution(o..
                 __ i __ 0:
                     valX1 += 1
                 ____ s[i-1] __ '-':
-                    valX1 -= 1
+                    valX1 -_ 1
                 ____ s[i-1] __ '+':
                     valX1 += 1
             i += 1

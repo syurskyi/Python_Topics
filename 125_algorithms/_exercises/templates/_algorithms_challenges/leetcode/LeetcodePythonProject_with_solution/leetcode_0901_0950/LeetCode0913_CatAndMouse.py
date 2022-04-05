@@ -33,7 +33,7 @@ c_ Solution(o..
                         color[i2, j2, t2] = c
                         queue.a..((i2, j2, t2, c
                     ____
-                        degree[i2, j2, t2] -= 1
+                        degree[i2, j2, t2] -_ 1
                         __ degree[i2, j2, t2] __ 0:
                             color[i2, j2, t2] = 3 - t2
                             queue.a..((i2, j2, t2, 3-t2

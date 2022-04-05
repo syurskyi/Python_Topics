@@ -35,7 +35,7 @@ c_ Solution:
         w.... lo < hi:
             __ A[lo] ** 2 < A[hi - 1] ** 2:
                 ret.appendleft(A[hi - 1] ** 2)
-                hi -= 1
+                hi -_ 1
             ____
                 ret.appendleft(A[lo] ** 2)
                 lo += 1

@@ -28,7 +28,7 @@ c_ Solution(o..
                 _____
             need = 3-(j-i)
             __ h[o..(s[i])-o..('A')] >_ need:
-                h[o..(s[i])-o..('A')] -= need
+                h[o..(s[i])-o..('A')] -_ need
                 res = m..(res, need+helper(s[:i]+s[j:], h
                 h[o..(s[i])-o..('A')] += need
             i = j

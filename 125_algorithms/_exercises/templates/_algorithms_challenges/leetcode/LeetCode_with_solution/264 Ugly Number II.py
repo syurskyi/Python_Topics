@@ -35,7 +35,7 @@ c_ Solution(o..
         __ n __ 1:
             r.. 1
 
-        n -= 1  # exclude 1
+        n -_ 1  # exclude 1
 
         ugly = [2, 3, 5]
         qs = [Node(i, [i]) ___ i __ ugly]

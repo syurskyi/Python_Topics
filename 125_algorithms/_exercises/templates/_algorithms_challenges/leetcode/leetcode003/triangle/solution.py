@@ -31,5 +31,5 @@ c_ Solution:
                 ___ col __ r..(row + 1
                     minsum = m..(t[row + 1][col], t[row + 1][col + 1])
                     t[row][col] = triangle[row][col] + minsum
-            row -= 1
+            row -_ 1
         r.. t[0][0]

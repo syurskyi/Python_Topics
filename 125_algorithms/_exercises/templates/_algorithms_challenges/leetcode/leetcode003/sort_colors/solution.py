@@ -14,7 +14,7 @@ c_ Solution:
                 i += 1
             ____ A[i] __ 2:
                 A[i], A[b] = A[b], A[i]
-                b -= 1
+                b -_ 1
                 # Do not increment i, since swapped item may be 0, 1, or 2
                 _____
             # A[i] == 1

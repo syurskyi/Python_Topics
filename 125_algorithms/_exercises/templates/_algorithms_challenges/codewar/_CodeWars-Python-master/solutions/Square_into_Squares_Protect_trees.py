@@ -14,7 +14,7 @@ ___ decompose(n
         goal += current ** 2
         ___ i __ r..(current - 1, 0, -1
             __ goal - (i ** 2) >_ 0:
-                goal -= i ** 2
+                goal -_ i ** 2
                 result.a..(i)
                 __ goal __ 0:
                     result.s..()

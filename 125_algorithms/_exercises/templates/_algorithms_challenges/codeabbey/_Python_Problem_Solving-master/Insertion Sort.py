@@ -14,5 +14,5 @@ ___ i __ r..(1,l..(x:
         __ temp < x[j]:
             x[temp_i],x[j] = x[j],temp
             #decrement the temp_i to traverse backward
-            temp_i -= 1
+            temp_i -_ 1
 print(x)

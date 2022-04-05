@@ -33,7 +33,7 @@ c_ Solution(o..
             index += 1
             __ curr __ graph:
                 ___ nextVal __ graph[curr]:
-                    degree[nextVal] -= 1
+                    degree[nextVal] -_ 1
                     __ degree[nextVal] __ 0:
                         queue.a..(nextVal)
         r.. index __ l..(org) a.. index __ l..(graph)

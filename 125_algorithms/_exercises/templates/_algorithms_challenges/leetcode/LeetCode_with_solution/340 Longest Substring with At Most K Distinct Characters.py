@@ -29,11 +29,11 @@ c_ Solution(o..
         maxa = 0
         ___ idx, val __ e..(s
             __ counter[val] __ 0:
-                k -= 1
+                k -_ 1
 
             counter[val] += 1
             w.... k < 0:
-                counter[s[st]] -= 1
+                counter[s[st]] -_ 1
                 __ counter[s[st]] __ 0:
                     k += 1
                 st += 1

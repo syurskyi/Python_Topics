@@ -26,7 +26,7 @@ c_ ConnectingGraph3:
         root_b = find(b)
         __ root_a != root_b:
             nodes[root_a] = root_b
-            count -= 1
+            count -_ 1
 
     """
     @return: An integer

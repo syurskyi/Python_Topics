@@ -18,9 +18,9 @@ c_ Solution:
 
         w.... right < n:
             __ s[right] __ F:
-                F[s[right]] -= 1
+                F[s[right]] -_ 1
                 __ F[s[right]] __ 0:
-                    cnt -= 1
+                    cnt -_ 1
 
             right += 1
 

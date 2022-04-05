@@ -86,7 +86,7 @@ c_ Solution(o..
                 __ s[i] __ '(':
                     count += 1
                 ____ s[i] __ ')':
-                    count -= 1
+                    count -_ 1
                 res += s[i]
                 i += 1
             r.. res, i

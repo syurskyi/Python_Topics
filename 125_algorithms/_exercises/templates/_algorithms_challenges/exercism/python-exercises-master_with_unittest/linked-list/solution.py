@@ -28,7 +28,7 @@ c_ LinkedList(o..
         ____
             tail = tail.prev
             tail.next = N..
-        length -= 1
+        length -_ 1
         r.. node.value
 
     ___ shift
@@ -38,7 +38,7 @@ c_ LinkedList(o..
         ____
             head = head.next
             head.prev = N..
-        length -= 1
+        length -_ 1
         r.. node.value
 
     ___ unshift  value

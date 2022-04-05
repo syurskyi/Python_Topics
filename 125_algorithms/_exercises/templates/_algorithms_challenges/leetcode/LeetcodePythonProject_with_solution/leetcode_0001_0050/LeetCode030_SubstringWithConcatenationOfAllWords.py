@@ -27,14 +27,14 @@ c_ Solution(o..
                     count += 1
                     w.... hashmap[sub] > hashmap0[sub]:
                         left = s[start:start+wordLen]
-                        hashmap[left] -= 1
-                        count -= 1
+                        hashmap[left] -_ 1
+                        count -_ 1
                         start += wordLen
                     __ count __ l..(words
                         res.a..(start)
                         left = s[start:start+wordLen]
-                        hashmap[left] -= 1
-                        count -= 1
+                        hashmap[left] -_ 1
+                        count -_ 1
                         start += wordLen
                 ____
                     hashmap    # dict

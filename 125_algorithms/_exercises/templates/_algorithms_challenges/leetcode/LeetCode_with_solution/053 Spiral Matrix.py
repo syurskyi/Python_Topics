@@ -65,9 +65,9 @@ c_ Solution:
                     result.a..(matrix[r][left])
 
             left += 1
-            right -= 1
+            right -_ 1
             top += 1
-            bottom -= 1
+            bottom -_ 1
 
         r.. result
 

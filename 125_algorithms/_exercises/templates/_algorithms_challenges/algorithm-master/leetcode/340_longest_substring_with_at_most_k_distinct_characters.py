@@ -28,9 +28,9 @@ c_ Solution:
                 cnt += 1
 
             w.... cnt > k:
-                freqs[s[i]] -= 1
+                freqs[s[i]] -_ 1
                 __ freqs[s[i]] __ 0:
-                    cnt -= 1
+                    cnt -_ 1
 
                 i += 1
 

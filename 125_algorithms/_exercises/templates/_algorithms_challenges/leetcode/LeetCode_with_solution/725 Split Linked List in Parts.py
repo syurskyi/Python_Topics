@@ -115,7 +115,7 @@ c_ Solution:
             counter += 1
             ret[i].a..(node.val)
             __ cur_l __ part_l:
-                k -= 1
+                k -_ 1
                 cur_l = 0
                 i += 1
                 __ k != 0:

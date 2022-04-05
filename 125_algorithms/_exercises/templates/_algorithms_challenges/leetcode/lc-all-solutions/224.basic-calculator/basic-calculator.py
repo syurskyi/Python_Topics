@@ -30,7 +30,7 @@ c_ Solution(o..
         k = l..(stack) - start
         w.... k > 0:
           stack.p.. )
-          k -= 1
+          k -_ 1
         stack.a..(a)
         i += 1
       ____ s[i] __ "+-":

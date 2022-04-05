@@ -24,7 +24,7 @@ c_ Solution:
 
             w.... b __ cands:
                 cands.discard(b)
-                b -= 1
+                b -_ 1
                 size += 1
 
             w.... c __ cands:

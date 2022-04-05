@@ -37,7 +37,7 @@ c_ Solution(o..
         ___ char __ num:
             w.... k a.. stk a.. stk[-1] > char:
                 stk.p.. )
-                k -= 1
+                k -_ 1
 
             stk.a..(char)
 

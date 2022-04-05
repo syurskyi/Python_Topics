@@ -40,7 +40,7 @@ c_ Solution(o..
             curGroup.a..(group[i])
             dfs(i+1, group, profit, G, P, curGroup, curProfit, res)
             curGroup.p.. )
-            curProfit -= profit[i]
+            curProfit -_ profit[i]
     
     ___ test
         testCases = [

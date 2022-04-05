@@ -22,7 +22,7 @@ c_ Solution(o..
             __ knows(l, r
                 l += 1
             ____
-                r -= 1
+                r -_ 1
         ___ i __ r..(n
             __ i __ l o. (knows(i, l) a.. n.. knows(l, i:
                 _____

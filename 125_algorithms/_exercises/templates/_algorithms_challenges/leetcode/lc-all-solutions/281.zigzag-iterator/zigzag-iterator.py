@@ -19,9 +19,9 @@ c_ ZigzagIterator(o..
     top = iters.popleft()
     ___
       value = top.next()
-    ______ StopIteration:
+    ______ S..:
       r.. next()
-    total -= 1
+    total -_ 1
     __ total != 0:
       iters.a..(top)
     r.. value

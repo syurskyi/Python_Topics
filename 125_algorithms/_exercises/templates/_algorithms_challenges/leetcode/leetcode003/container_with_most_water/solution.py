@@ -10,5 +10,5 @@ c_ Solution:
             __ height[i] <_ height[j]:
                 i += 1
             ____
-                j -= 1
+                j -_ 1
         r.. max_area

@@ -35,7 +35,7 @@ c_ Solution:
     ___ find_path  node, start, remaining, ans, p..
         p...a..(node.val)
 
-        remaining -= node.val
+        remaining -_ node.val
         __ remaining __ 0:
             ans.a..(p.. | )
 

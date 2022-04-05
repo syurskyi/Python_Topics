@@ -21,6 +21,6 @@ c_ Solution(o..
         subsum <<= 1
       ans += cnt
       cnt = 1
-      dividend -= subsum
+      dividend -_ subsum
       subsum = divisor
     r.. m..(m..(sign * ans, 0x7fffffff), -2147483648)

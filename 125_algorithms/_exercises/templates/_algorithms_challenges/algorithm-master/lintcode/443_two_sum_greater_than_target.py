@@ -22,6 +22,6 @@ c_ Solution:
             # if minimum + maximum > target
             # we can ensure the 2nd, 3rd minimum also fit demand
             ans += right - left
-            right -= 1
+            right -_ 1
 
         r.. ans

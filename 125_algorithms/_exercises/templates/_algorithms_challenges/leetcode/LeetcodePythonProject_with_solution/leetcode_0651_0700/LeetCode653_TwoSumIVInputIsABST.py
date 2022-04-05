@@ -50,7 +50,7 @@ c_ Solution(o..
             ____ k > arr[i]+arr[j]:
                 i += 1
             ____
-                j -= 1
+                j -_ 1
         r.. F..
     
     ___ test

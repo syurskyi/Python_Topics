@@ -37,7 +37,7 @@ c_ Solution(o..
                 r.. F..
 
             i += 1
-            j -= 1
+            j -_ 1
 
         __ i __ j:
             __ n.. x:

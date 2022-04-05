@@ -20,7 +20,7 @@ c_ Solution(o..
                 w.... i < l..(s) a.. s[i].i..
                     preVal = preVal*10 + i..(s[i])
                     i += 1
-                i -= 1
+                i -_ 1
             ____ s[i] __ '(':
                 stack.a..(res)
                 stack.a..(sign)

@@ -6,7 +6,7 @@ c_ Solution:
       w.... start < end:
         slist[start], slist[end] = slist[end], slist[start]
         start += 1
-        end -= 1
+        end -_ 1
 
     wstart, wend = 0, 0
     ___ i __ r..(0, l..(s:

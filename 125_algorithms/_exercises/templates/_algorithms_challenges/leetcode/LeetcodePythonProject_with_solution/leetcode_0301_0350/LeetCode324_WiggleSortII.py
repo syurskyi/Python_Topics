@@ -15,7 +15,7 @@ c_ Solution(o..
             ____ nums[newIndex(i, n)] < median:
                 nums[newIndex(right, n)], nums[newIndex(i, n)] =\
                 nums[newIndex(i, n)], nums[newIndex(right, n)]
-                right -= 1
+                right -_ 1
             ____
                 i += 1
     
@@ -43,7 +43,7 @@ c_ Solution(o..
             w.... i < hi a.. nums[i] <_ nums[lo]:
                 i += 1
             w.... j > lo a.. nums[lo] <_ nums[j]:
-                j -= 1
+                j -_ 1
             __ i >_ j:
                 _____
             nums[i], nums[j] = nums[j], nums[i]

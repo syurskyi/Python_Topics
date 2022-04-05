@@ -26,7 +26,7 @@ c_ Solution(o..
       d[no] += 1
       w.... l..(deq) > 1 a.. d[deq[0][1]] > 1:
         _num, _no = deq.popleft()
-        d[_no] -= 1
+        d[_no] -_ 1
         __ d[_no] __ 0:
           del d[_no]
       __ l..(d) __ k:

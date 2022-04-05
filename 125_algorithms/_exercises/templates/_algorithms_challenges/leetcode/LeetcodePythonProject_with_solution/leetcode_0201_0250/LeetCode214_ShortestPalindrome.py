@@ -14,7 +14,7 @@ c_ Solution(o..
         w.... j >_ 0:
             __ s[i] __ s[j]:
                 i += 1
-            j -= 1
+            j -_ 1
         __ i __ l..(s
             r.. s
         mid = s[:i]

@@ -33,21 +33,21 @@ c_ Solution:
         w.... k a.. i >_ 0 a.. j < n:
             __ target - vals[i] < vals[j] - target:
                 ans.a..(vals[i])
-                i -= 1
+                i -_ 1
             ____
                 ans.a..(vals[j])
                 j += 1
-            k -= 1
+            k -_ 1
 
         w.... k a.. i >_ 0:
             ans.a..(vals[i])
-            i -= 1
-            k -= 1
+            i -_ 1
+            k -_ 1
 
         w.... k a.. j < n:
             ans.a..(vals[j])
             j += 1
-            k -= 1
+            k -_ 1
 
         r.. ans
 

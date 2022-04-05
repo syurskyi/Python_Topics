@@ -11,7 +11,7 @@ ___ i __ r..(data
     #checking if seconds are greater or no
     __ sec_a > sec_b:
         #borrow 1 min i.e 60 secs from mins
-        min_b -= 1
+        min_b -_ 1
         sec = (sec_b + 60) - sec_a
     ____
         sec = sec_b -sec_a
@@ -19,7 +19,7 @@ ___ i __ r..(data
     #checking if seconds are greater or no
     __ min_a > min_b:
         #borrow 1 hour i.e 60 mins from hour
-        hour_b -= 1
+        hour_b -_ 1
         mino = (min_b + 60) - min_a
     ____
         mino = min_b - min_a

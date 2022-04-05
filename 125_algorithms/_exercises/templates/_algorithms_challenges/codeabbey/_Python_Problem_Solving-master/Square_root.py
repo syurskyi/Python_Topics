@@ -6,7 +6,7 @@ ___ squareroot
         v,steps = map(i.., input().s..
         w.... steps > 0:
             r = (r + v/r) / 2
-            steps -= 1
+            steps -_ 1
         print(r,'')
     
     

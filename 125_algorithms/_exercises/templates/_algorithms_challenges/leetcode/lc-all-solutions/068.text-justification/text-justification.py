@@ -20,7 +20,7 @@ c_ Solution(o..
       __ curLen > maxWidth:
         curLen = 0
         line.p.. )
-        idx -= 1
+        idx -_ 1
         __ l..(line) __ 1:
           ans.a..(line[0] + " " * (maxWidth - l..(line[0])))
           line    # list
@@ -33,7 +33,7 @@ c_ Solution(o..
           res += line[i]
           __ i < l..(line) - 1:
             res += " " * (avgSpace + (extraSpace > 0
-            extraSpace -= 1
+            extraSpace -_ 1
         ans.a..(res)
         line    # list
       ____ idx __ l..(words

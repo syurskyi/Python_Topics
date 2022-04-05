@@ -54,7 +54,7 @@ c_ Solution:
         w.... i>0 a.. ratings[i-1]>ratings[i]:  # test case [8, 7, 6, 5, 4, 3, 2, 1]
             dp[i] = candy
             candy += 1
-            i -= 1
+            i -_ 1
         # peak
         __ original<1:  # test case [4, 2, 3, 4, 1]
             dp[i] = candy

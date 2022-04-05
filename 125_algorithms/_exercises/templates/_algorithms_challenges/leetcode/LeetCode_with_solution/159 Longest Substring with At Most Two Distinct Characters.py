@@ -20,7 +20,7 @@ c_ Solution(o..
         ___ j __ x..(l..(s:
             m[s[j]] += 1
             w.... l..(m) > 2:
-                m[s[i]] -= 1
+                m[s[i]] -_ 1
                 __ m[s[i]] __ 0:
                     del m[s[i]]
 

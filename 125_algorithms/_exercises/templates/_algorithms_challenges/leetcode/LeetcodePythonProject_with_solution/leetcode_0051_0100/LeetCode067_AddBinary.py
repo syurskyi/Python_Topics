@@ -45,8 +45,8 @@ c_ Solution(o..
                 ____
                     result = '1' + result
                     carry = F..
-            i1 -= 1
-            i2 -= 1
+            i1 -_ 1
+            i2 -_ 1
         __ carry:
             __ i1 __ -1:
                 result = '1' + result

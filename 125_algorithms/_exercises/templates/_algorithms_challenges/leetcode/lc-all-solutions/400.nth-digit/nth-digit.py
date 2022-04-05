@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     start, size, step = 1, 1, 9
     w.... n > size * step:
-      n -= size * step
+      n -_ size * step
       size += 1
       start *= 10
       step *= 10

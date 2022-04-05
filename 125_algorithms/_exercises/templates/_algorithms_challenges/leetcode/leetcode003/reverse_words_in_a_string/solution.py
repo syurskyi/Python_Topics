@@ -22,7 +22,7 @@ c_ Solution:
             __ ls[i] __ ' ':
                 i += 1
             __ ls[j] __ ' ':
-                j -= 1
+                j -_ 1
         start = i
         end = j
         # Remove duplicate spaces between words
@@ -53,7 +53,7 @@ c_ Solution:
         w.... i < j:
             a[i], a[j] = a[j], a[i]
             i += 1
-            j -= 1
+            j -_ 1
 
     ___ reverseWords2  s
         cs = l..(s)  # Make a C-string like list
@@ -65,7 +65,7 @@ c_ Solution:
             __ cs[left] __ ' ':
                 left += 1
             __ cs[right] __ ' ':
-                right -= 1
+                right -_ 1
         # The string contains only spaces
         __ left > right:
             r.. ''

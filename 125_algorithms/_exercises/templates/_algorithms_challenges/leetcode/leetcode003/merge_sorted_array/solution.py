@@ -24,12 +24,12 @@ c_ Solution(o..
         w.... i >_ 0 a.. j >_ 0:
             __ nums1[i] > nums2[j]:
                 nums1[k] = nums1[i]
-                i -= 1
+                i -_ 1
             ____
                 nums1[k] = nums2[j]
-                j -= 1
-            k -= 1
+                j -_ 1
+            k -_ 1
         w.... j >_ 0:
             nums1[k] = nums2[j]
-            j -= 1
-            k -= 1
+            j -_ 1
+            k -_ 1

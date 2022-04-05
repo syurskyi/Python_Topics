@@ -8,14 +8,14 @@ c_ Solution(o..
     visited = [0 ___ i __ r..(n)]
     fact = [m__.factorial(n - i - 1) ___ i __ r..(n)]
     ans = ""
-    k -= 1
+    k -_ 1
     ___ i __ r..(n
       t = k / fact[i]
       ___ j __ r..(n
         __ n.. visited[j]:
           __ t __ 0:
             _____
-          t -= 1
+          t -_ 1
       ans += s..(j + 1)
       k %= fact[i]
       visited[j] = 1

@@ -26,13 +26,13 @@ c_ Solution(o..
             __ v __ secret[i]:
                 A += 1
                 __ cnt[v] > 0:
-                    cnt[v] -= 1
+                    cnt[v] -_ 1
                 ____
-                    B -= 1
+                    B -_ 1
 
             ____ cnt[v] > 0:
                 B += 1
-                cnt[v] -= 1
+                cnt[v] -_ 1
 
         r.. "%dA%dB" % (A, B)
 

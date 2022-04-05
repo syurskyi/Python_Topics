@@ -66,7 +66,7 @@ c_ Solution:
             carry += ids[i]
             ids[i] = carry % n
             carry = carry // n
-            i -= 1
+            i -_ 1
 
         __ carry:
             ids |  = [0] * l..(ids)

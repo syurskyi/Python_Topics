@@ -49,7 +49,7 @@ c_ Solution:
         prefix_sum_counter[cur_sum] += 1
         dfs(node.left, target, cur_sum, prefix_sum_counter)
         dfs(node.right, target, cur_sum, prefix_sum_counter)
-        prefix_sum_counter[cur_sum] -= 1
+        prefix_sum_counter[cur_sum] -_ 1
         
 
 c_ SolutionComplex:
@@ -85,4 +85,4 @@ c_ SolutionComplex:
         prefix_sum[cur_sum] = prefix_sum.g.. cur_sum, 0) + 1
         dfs(root.left, s.., cur_sum, prefix_sum, count)
         dfs(root.right, s.., cur_sum, prefix_sum, count)
-        prefix_sum[cur_sum] -= 1  # pop to save space
+        prefix_sum[cur_sum] -_ 1  # pop to save space

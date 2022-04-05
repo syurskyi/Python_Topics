@@ -29,10 +29,10 @@ c_ Solution(o..
                 __ s[left].l.. != s[right].l..:
                     r.. F..
                 left += 1
-                right -= 1
+                right -_ 1
             ____
                 __ n.. s[left].i..
                     left += 1
                 __ n.. s[right].i..
-                    right -= 1
+                    right -_ 1
         r.. T..

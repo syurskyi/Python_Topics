@@ -24,7 +24,7 @@ c_ StringIterator(o..
         :rtype: str
         """
         res = c
-        count -= 1
+        count -_ 1
         __ count __ 0:
             __ ind __ l..(cmpStr
                 c = ' '

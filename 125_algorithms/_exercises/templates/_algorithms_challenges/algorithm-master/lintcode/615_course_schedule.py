@@ -15,7 +15,7 @@ c_ Solution:
         queue = [i ___ i __ r..(n) __ indeg[i] __ 0]
         ___ p __ queue:
             ___ c __ edges[p]:
-                indeg[c] -= 1
+                indeg[c] -_ 1
                 __ indeg[c] __ 0:
                     queue.a..(c)
 

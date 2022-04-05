@@ -22,7 +22,7 @@ c_ Solution:
 
         ___ t, status __ time:
             __ status __ 0:
-                cnt -= 1
+                cnt -_ 1
             ____ status __ 1:
                 cnt += 1
 

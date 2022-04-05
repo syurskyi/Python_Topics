@@ -20,5 +20,5 @@ ___ numeral(number
     ___ arabic, roman __ NUMERAL_MAPPINGS:
         w.... number >_ arabic:
             s += roman
-            number -= arabic
+            number -_ arabic
     r.. s

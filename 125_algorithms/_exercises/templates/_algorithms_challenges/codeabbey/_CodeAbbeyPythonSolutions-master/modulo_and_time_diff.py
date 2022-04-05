@@ -12,10 +12,10 @@ ___ get_time_diff(d1, h1, m1, s1, d2, h2, m2, s2
     time_diff_in_seconds = time2_in_seconds - time1_in_seconds
     time_diff_day = (time_diff_in_seconds)//(day_in_seconds)
 
-    time_diff_in_seconds -= (day_in_seconds* time_diff_day)
+    time_diff_in_seconds -_ (day_in_seconds* time_diff_day)
     time_diff_hour = (time_diff_in_seconds)//(hour_in_seconds)
 
-    time_diff_in_seconds -= (hour_in_seconds* time_diff_hour)
+    time_diff_in_seconds -_ (hour_in_seconds* time_diff_hour)
     time_diff_minute = (time_diff_in_seconds)//(minute_in_seconds)
 
     time_diff_seconds = time_diff_in_seconds - (minute_in_seconds*time_diff_minute)

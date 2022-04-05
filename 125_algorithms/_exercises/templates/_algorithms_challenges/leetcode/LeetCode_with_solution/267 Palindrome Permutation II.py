@@ -27,7 +27,7 @@ c_ Solution(o..
 
         cur = ""
         __ odd:
-            m[odd] -= 1
+            m[odd] -_ 1
             cur = odd
 
         ret    # list
@@ -43,7 +43,7 @@ c_ Solution(o..
         ___ k __ count_map.k..:
             __ k != pi a.. count_map[k] > 0:
                 ___ i __ x..(1, count_map[k]/2+1  # jump the parent
-                    count_map[k] -= i*2
+                    count_map[k] -_ i*2
                     grow(s, count_map, k, k*i+cur+k*i, ret)
                     count_map[k] += i*2
 

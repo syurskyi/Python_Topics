@@ -44,9 +44,9 @@ c_ Solution:
                 num += 1
 
             left += 1
-            right -= 1
+            right -_ 1
             top += 1
-            bottom -= 1
+            bottom -_ 1
 
         r.. result
 
@@ -82,9 +82,9 @@ c_ SolutionError:
                 num += 1
 
             left += 1
-            right -= 1
+            right -_ 1
             top += 1
-            bottom -= 1
+            bottom -_ 1
 
         r.. result
 

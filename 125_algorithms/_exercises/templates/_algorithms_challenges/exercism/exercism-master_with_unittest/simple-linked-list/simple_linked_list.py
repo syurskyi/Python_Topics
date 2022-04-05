@@ -34,7 +34,7 @@ c_ LinkedList:
     ___ pop
         current_head = head()
         _head = current_head.next()
-        _size -= 1
+        _size -_ 1
         r.. current_head.value()
 
     ___ r..
@@ -53,7 +53,7 @@ c_ LinkedListIterator:
 
     ___ __next__
         __ _current __ N..
-            r.. StopIteration
+            r.. S..
         current_value = _current.value()
         _current = _current.next()
         r.. current_value

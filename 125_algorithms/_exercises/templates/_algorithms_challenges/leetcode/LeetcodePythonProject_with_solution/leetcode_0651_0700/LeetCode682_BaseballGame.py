@@ -20,7 +20,7 @@ c_ Solution(o..
                 valids.a..(valids[-1]*2)
             ____ c __ 'C':
                 d = valids.p.. )
-                res -= d
+                res -_ d
             ____
                 res += i..(c)
                 valids.a..(i..(c

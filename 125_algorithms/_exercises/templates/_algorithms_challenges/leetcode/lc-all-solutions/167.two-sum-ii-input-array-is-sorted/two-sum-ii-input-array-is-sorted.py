@@ -9,7 +9,7 @@ c_ Solution(o..
     w.... start < end:
       s = nums[start] + nums[end]
       __ s > target:
-        end -= 1
+        end -_ 1
       ____ s < target:
         start += 1
       ____

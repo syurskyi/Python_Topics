@@ -14,9 +14,9 @@ c_ Solution(o..
             w.... left < l..(s) a.. s[left] n.. __ vowels:
                 left += 1
             w.... right >_ 0 a.. s[right] n.. __ vowels:
-                right -= 1
+                right -_ 1
             __ left < right:
                 s[left], s[right] = s[right], s[left]
             left += 1
-            right -= 1
+            right -_ 1
         r.. ''.j..(s)

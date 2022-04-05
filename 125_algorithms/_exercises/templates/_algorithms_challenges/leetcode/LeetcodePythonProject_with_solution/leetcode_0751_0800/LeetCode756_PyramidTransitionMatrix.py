@@ -37,7 +37,7 @@ c_ Solution(o..
                 __ n.. nextQueue[i]:
                     r.. F..
             queue = nextQueue
-            level -= 1
+            level -_ 1
         r.. T..
     
     ___ test

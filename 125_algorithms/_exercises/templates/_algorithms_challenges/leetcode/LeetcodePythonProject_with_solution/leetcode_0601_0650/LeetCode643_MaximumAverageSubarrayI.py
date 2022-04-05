@@ -17,7 +17,7 @@ c_ Solution(o..
             sumVal += num
             __ i >_ k-1:
                 maxVal = m..(maxVal, sumVal)
-                sumVal -= nums[i-k+1]
+                sumVal -_ nums[i-k+1]
         r.. f__(maxVal)/k
     
     ___ test

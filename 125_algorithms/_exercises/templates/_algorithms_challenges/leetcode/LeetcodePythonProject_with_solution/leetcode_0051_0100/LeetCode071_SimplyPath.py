@@ -23,7 +23,7 @@ c_ Solution(o..
                 cont += 1
                 _____
             __ cont > 0:
-                cont -= 1
+                cont -_ 1
             ____
                 result = '/' + l[i] + result
         __ result __ '':

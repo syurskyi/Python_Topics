@@ -25,4 +25,4 @@ c_ Solution:
                 cannot `i += 1` since the swapped value still need to check
                 """
                 A[right], A[i] = A[i], A[right]
-                right -= 1
+                right -_ 1

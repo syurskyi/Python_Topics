@@ -25,7 +25,7 @@ c_ Solution(o..
             __ knows(i, j) o. n.. knows(j, i
                 nxt_i += 1
             __ knows(j, i) o. n.. knows(i, j
-                nxt_j -= 1
+                nxt_j -_ 1
             i, j = nxt_i, nxt_j
 
         celebrity = i

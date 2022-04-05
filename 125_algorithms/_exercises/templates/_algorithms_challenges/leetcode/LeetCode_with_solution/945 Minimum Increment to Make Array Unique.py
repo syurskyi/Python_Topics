@@ -84,11 +84,11 @@ c_ Solution:
             __ A[i] __ A[i-1]:
                 demand += 1
                 # dup_sum += A[i-1]  # error
-                ret -= A[i-1]  # smart
+                ret -_ A[i-1]  # smart
             ____
                 supply = m..(demand, A[i] - A[i-1] - 1)
                 # revert to 0, then increase to A[i-1] + k
                 ret += (A[i-1] + 1 + A[i-1] + supply) * supply // 2
-                demand -= supply
+                demand -_ supply
 
         r.. ret

@@ -49,7 +49,7 @@ c_ Solution(o..
                         ce += 1
                     __ extraLen > 0:
                         s += ' '
-                        extraLen -= 1
+                        extraLen -_ 1
                 s += words[i-1]
                 w.... l..(s) < maxWidth:
                     s += ' '

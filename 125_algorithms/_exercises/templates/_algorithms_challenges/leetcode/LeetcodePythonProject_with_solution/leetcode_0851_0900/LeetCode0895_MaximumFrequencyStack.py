@@ -22,7 +22,7 @@ c_ FreqStack(o..
         :rtype: int
         """
         _, _, val = heapq.heappop(heap)
-        hashmap[val] -= 1
+        hashmap[val] -_ 1
         r.. val
 
 
@@ -76,7 +76,7 @@ c_ FreqStack_self(o..
         :rtype: int
         """
         node = tail
-        node.freq -= 1
+        node.freq -_ 1
         node.indexes.p.. )
         val = node.val
         __ node.freq __ 0:

@@ -52,20 +52,20 @@ c_ Solution:
             __ 0 <_ i < n a.. 0 <_ j < n:
                 __ a..(A[i] - x) <_ a..(A[j] - x
                     ret.appendleft(A[i])
-                    i -= 1
+                    i -_ 1
                 ____
                     ret.a..(A[j])
                     j += 1
             ____ 0 <_ i < n:
                 ret.appendleft(A[i])
-                i -= 1
+                i -_ 1
             ____ 0 <_ j < n:
                 ret.a..(A[j])
                 j += 1
             ____
                 r..
 
-            k -= 1
+            k -_ 1
 
         r.. l..(ret)
 

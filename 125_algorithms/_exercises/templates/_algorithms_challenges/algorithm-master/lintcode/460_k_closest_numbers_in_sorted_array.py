@@ -44,12 +44,12 @@ c_ Solution:
                 right += 1
             ____ right >_ n:
                 ans[i] = A[left]
-                left -= 1
+                left -_ 1
             ____ A[right] - target < target - A[left]:
                 ans[i] = A[right]
                 right += 1
             ____
                 ans[i] = A[left]
-                left -= 1
+                left -_ 1
 
         r.. ans

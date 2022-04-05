@@ -18,7 +18,7 @@ c_ Solution(o..
                 __ 0 <_ x < m a.. 0 <_ y < n a.. grid[x][y]:
                     root = getRoot(roots, x*n+y)
                     __ root != root0:
-                        count -= 1
+                        count -_ 1
                         roots[root] = root0
             res.a..(count)
         r.. res

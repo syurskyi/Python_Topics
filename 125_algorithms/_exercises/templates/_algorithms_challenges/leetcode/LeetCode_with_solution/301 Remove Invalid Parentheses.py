@@ -40,7 +40,7 @@ c_ Solution(o..
                 left += 1
             ____ c __ ")":
                 __ left > 0:
-                    left -= 1
+                    left -_ 1
                 ____
                     rmcnt += 1
 

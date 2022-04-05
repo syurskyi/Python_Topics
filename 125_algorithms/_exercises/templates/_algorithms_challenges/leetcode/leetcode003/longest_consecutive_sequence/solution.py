@@ -14,7 +14,7 @@ c_ Solution:
             __ c n.. __ d:
                 _____
             w.... c - 1 __ d:
-                c -= 1
+                c -_ 1
             del d[c]
             w.... c + 1 __ d:
                 c += 1

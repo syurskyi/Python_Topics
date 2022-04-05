@@ -26,7 +26,7 @@ c_ Solution(o..
             ____ acc+num <_ maxVal:
                 acc += num
             ____
-                cuts -= 1
+                cuts -_ 1
                 acc = num
                 __ cuts < 0:
                     r.. F..

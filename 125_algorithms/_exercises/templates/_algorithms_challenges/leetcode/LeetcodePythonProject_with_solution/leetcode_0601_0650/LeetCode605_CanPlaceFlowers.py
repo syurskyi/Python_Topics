@@ -14,7 +14,7 @@ c_ Solution(o..
             __ flower __ 0 a..\
                 (i __ 0 o. flowerbed[i-1] __ 0) a..\
                 (i __ l..(flowerbed)-1 o. flowerbed[i+1] __ 0
-                n -= 1
+                n -_ 1
                 flowerbed[i] = 1
             __ n <_ 0:
                 r.. T..

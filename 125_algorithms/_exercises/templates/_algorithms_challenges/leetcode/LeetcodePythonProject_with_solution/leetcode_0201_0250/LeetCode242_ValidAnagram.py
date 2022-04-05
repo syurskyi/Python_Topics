@@ -20,7 +20,7 @@ c_ Solution(o..
             ____ hashmap[c] = 1
         ___ c __ t:
             __ c n.. __ hashmap: r.. F..
-            hashmap[c] -= 1
+            hashmap[c] -_ 1
             __ hashmap[c] __ 0:
                 del hashmap[c]
         __ hashmap:

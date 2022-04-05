@@ -27,7 +27,7 @@ c_ Solution(o..
             i += 1
         i = n-1
         w.... i >_ 0 a.. arr[i] __ '.':
-            i -= 1
+            i -_ 1
         __ i >_ 0 a.. arr[i] __ 'R' a.. i < n:
             arr[-1] = 'R'
             setVals(arr, i, n-1)
@@ -43,7 +43,7 @@ c_ Solution(o..
                 arr[i] = arr[i0]
                 arr[j] = arr[j0]
                 i += 1
-                j -= 1
+                j -_ 1
     
     ___ test
         testCases = [

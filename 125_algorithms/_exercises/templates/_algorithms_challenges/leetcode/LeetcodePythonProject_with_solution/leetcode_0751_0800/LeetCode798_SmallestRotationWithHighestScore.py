@@ -13,7 +13,7 @@ c_ Solution(o..
         n = l..(arr)
         change = [1]*n
         ___ i __ r..(n
-            change[(i-arr[i]+1)%n] -= 1
+            change[(i-arr[i]+1)%n] -_ 1
         ___ i __ r..(1, n
             change[i] += change[i-1]
         r.. change.i.. m..(change

@@ -24,7 +24,7 @@ c_ Solution(o..
             ____
                 __ K __ n o. K __ 0:
                     r.. c
-                n -= 1
+                n -_ 1
     
     ___ decodeAtIndex_own_MLE  S, K
         """

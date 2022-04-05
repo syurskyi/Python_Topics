@@ -41,7 +41,7 @@ c_ Solution:
                 A[red_end_ptr], A[i] = A[i], A[red_end_ptr]
                 i += 1
             ____
-                blue_start_ptr -= 1
+                blue_start_ptr -_ 1
                 A[blue_start_ptr], A[i] = A[i], A[blue_start_ptr]
                 # no i+=1, since you need to examine A[i] again
 

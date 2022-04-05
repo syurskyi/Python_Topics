@@ -23,7 +23,7 @@ c_ Solution(o..
             ___ i __ r..(n
                 __ needs[i] < arr[i]:
                     overflow = T..
-                needs[i] -= arr[i]
+                needs[i] -_ arr[i]
             __ n.. overflow:
                 added = T..
                 helper(price, special, needs, curPrice+arr[-1])

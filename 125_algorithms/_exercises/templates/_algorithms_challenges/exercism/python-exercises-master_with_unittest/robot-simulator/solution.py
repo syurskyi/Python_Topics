@@ -24,11 +24,11 @@ c_ Robot(o..
         __ bearing __ NORTH:
             y += 1
         ____ bearing __ SOUTH:
-            y -= 1
+            y -_ 1
         ____ bearing __ EAST:
             x += 1
         ____ bearing __ WEST:
-            x -= 1
+            x -_ 1
 
     ___ turn_left
         compass.left()

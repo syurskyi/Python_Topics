@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: str
         """
         nums = l..(r..(1, n+1
-        k -= 1
+        k -_ 1
         mod = 1
         ___ i __ r..(n
             mod = mod*(i+1)

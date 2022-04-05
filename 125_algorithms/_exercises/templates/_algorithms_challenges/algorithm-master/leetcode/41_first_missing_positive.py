@@ -24,7 +24,7 @@ c_ Solution:
             ____ i < 0 o. i > right o. A[i] __ A[left]:
                 A[left], A[right] = A[right], A[left]
                 # `A[left] = A[right]` is also ok, since no need to visit `A[right]` again
-                right -= 1
+                right -_ 1
             ____
                 A[left], A[i] = A[i], A[left]
 

@@ -44,7 +44,7 @@ c_ Solution:
         ___ val, idx __ queries:
             prev = A[idx]
             __ prev % 2 __ 0:
-                cur_sum -= prev
+                cur_sum -_ prev
             A[idx] += val
             __ A[idx] % 2 __ 0:
                 cur_sum += A[idx]

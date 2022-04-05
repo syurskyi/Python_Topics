@@ -25,7 +25,7 @@ c_ Solution(o..
                 right = p
             ____ right >_ 0 a.. s[p] __ ' ':
                 r.. right - p
-            p -= 1
+            p -_ 1
         __ right >_ 0:
             r.. right + 1
         ____

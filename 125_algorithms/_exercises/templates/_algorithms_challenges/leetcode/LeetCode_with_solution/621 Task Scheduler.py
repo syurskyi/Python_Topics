@@ -87,7 +87,7 @@ c_ Solution:
 
             __ pq:
                 _, k = heapq.heappop(pq)
-                counter[k] -= 1
+                counter[k] -_ 1
                 __ counter[k] > 0:
                     q.a..((clock + 1 + n, k
 

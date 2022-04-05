@@ -19,6 +19,6 @@ c_ Solution:
             __ c n.. __ freq:
                 r.. F..
 
-            freq[c] -= 1
+            freq[c] -_ 1
 
         r.. a..(v __ 0 ___ v __ freq.values

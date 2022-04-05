@@ -39,7 +39,7 @@ c_ Solution:
         w.... i >_ 0:
             j = i
             w.... j >_ 0 a.. expression[j] n.. __ (":", "?"
-                j -= 1
+                j -_ 1
 
             __ j < i:
                 stk.a..(expression[j+1:i+1])
@@ -52,10 +52,10 @@ c_ Solution:
                     a = stk.p.. )
                     stk.p.. )
                     stk.a..(a)
-                    i -= 1
+                    i -_ 1
                 ____
                     stk.p.. )
-                    i -= 1
+                    i -_ 1
 
         r.. stk[0]
 

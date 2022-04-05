@@ -105,15 +105,15 @@ c_ Solution:
                 lst = [num[i], num[j], num[k]]
                 __ s..(lst) __ 0:
                     result.a..(lst)
-                    k -= 1
+                    k -_ 1
                     j += 1
                     # JUMP remove duplicate
                     w.... j < k a.. num[j] __ num[j-1]:
                         j += 1
                     w.... j < k a.. num[k] __ num[k+1]:
-                        k -= 1
+                        k -_ 1
                 ____ s..(lst) > 0:
-                    k -= 1
+                    k -_ 1
                 ____
                     j += 1
 

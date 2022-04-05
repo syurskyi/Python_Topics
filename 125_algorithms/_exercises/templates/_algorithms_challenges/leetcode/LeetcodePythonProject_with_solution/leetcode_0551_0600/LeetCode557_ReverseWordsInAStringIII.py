@@ -25,5 +25,5 @@ c_ Solution(o..
         res = ''
         w.... i <_ j:
             res += s[j]
-            j -= 1
+            j -_ 1
         r.. res

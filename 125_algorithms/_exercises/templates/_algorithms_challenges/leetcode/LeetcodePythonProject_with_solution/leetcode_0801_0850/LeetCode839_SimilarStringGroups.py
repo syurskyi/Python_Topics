@@ -25,7 +25,7 @@ c_ Solution(o..
             x, y = find(x), find(y)
             __ x != y:
                 parents[x] = y
-                count -= 1
+                count -_ 1
                 r.. T..
             r.. F..
         

@@ -26,8 +26,8 @@ c_ Solution(o..
                 cand2 = c
                 count2 += 1
             ____
-                count1 -= 1
-                count2 -= 1
+                count1 -_ 1
+                count2 -_ 1
         count1 = 0
         count2 = 0
         ___ c __ nums:

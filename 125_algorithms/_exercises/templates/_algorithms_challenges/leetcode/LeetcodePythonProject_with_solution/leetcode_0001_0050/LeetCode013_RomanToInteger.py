@@ -18,7 +18,7 @@ c_ Solution(o..
         ___ i, c __ e..(s
             curVal = hashmap[c]
             __ i+1 < l..(s) a.. hashmap[s[i+1]] > curVal:
-                res -= curVal
+                res -_ curVal
             ____
                 res += curVal
         r.. res

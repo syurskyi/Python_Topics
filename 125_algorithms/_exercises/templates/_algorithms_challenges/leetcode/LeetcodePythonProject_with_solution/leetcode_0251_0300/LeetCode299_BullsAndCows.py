@@ -17,7 +17,7 @@ c_ Solution(o..
         ___ i, c __ e..(guess
             __ i n.. __ bulls:
                 __ c __ hashmap a.. hashmap[c] > 0:
-                    hashmap[c] -= 1
+                    hashmap[c] -_ 1
                     cows += 1
         r.. '%sA%sB' % (l..(bulls), cows)
     

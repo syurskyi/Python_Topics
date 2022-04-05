@@ -14,11 +14,11 @@ c_ Solution(o..
             __ c __ 'L':
                 left += 1
             ____ c __ 'R':
-                left -= 1
+                left -_ 1
             ____ c __ 'U':
                 up += 1
             ____
-                up -= 1
+                up -_ 1
         r.. up __ 0 a.. left __ 0
     
     ___ test

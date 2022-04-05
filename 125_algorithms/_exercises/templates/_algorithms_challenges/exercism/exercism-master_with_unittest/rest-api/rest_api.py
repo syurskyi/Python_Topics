@@ -97,8 +97,8 @@ c_ RestAPI(o..
         __ amount < debt:
             # debt can not be fully paid off so no additional amount will be
             # borrowed.
-            lender 'owes' [borrower 'name']] -= amount
-            borrower 'owed_by' [lender 'name']] -= amount
+            lender 'owes' [borrower 'name']] -_ amount
+            borrower 'owed_by' [lender 'name']] -_ amount
             r.. 0
         ____
             # debt can be fully paid off and remaining amount will be borrowed.
@@ -109,7 +109,7 @@ c_ RestAPI(o..
 
     ___ update_balance  lender, borrower, amount
         lender 'balance'  += amount
-        borrower 'balance'  -= amount
+        borrower 'balance'  -_ amount
 
     ___ create_user  username
         new_user = {

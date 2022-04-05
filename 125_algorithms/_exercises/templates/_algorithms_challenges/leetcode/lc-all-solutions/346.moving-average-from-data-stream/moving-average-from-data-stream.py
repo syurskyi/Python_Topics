@@ -25,7 +25,7 @@ c_ MovingAverage(o..
       leftTop = data.popleft()
     data.a..(val)
 
-    windowSum -= leftTop
+    windowSum -_ leftTop
     __ l..(data) < windowSize:
       r.. windowSum / l..(data)
     r.. windowSum / windowSize

@@ -37,7 +37,7 @@ c_ Solution:
             __ c n.. __ freq:
                 r.. c
 
-            freq[c] -= 1
+            freq[c] -_ 1
 
         ___ c, cnt __ freq.i..:
             __ cnt:

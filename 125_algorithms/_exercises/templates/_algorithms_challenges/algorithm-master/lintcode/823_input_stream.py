@@ -23,23 +23,23 @@ c_ Solution:
         w.... i >_ 0 a.. j >_ 0:
             w.... i >_ 0 a.. (a[i] __ BACK o. acnt
                 acnt += 1 __ a[i] __ BACK ____ -1
-                i -= 1
+                i -_ 1
             w.... j >_ 0 a.. (b[j] __ BACK o. bcnt
                 bcnt += 1 __ b[j] __ BACK ____ -1
-                j -= 1
+                j -_ 1
 
             __ a[i] != b[j]:
                 r.. RES[0]
 
-            i -= 1
-            j -= 1
+            i -_ 1
+            j -_ 1
 
         w.... i >_ 0 a.. (a[i] __ BACK o. acnt
             acnt += 1 __ a[i] __ BACK ____ -1
-            i -= 1
+            i -_ 1
         w.... j >_ 0 a.. (b[j] __ BACK o. bcnt
             bcnt += 1 __ b[j] __ BACK ____ -1
-            j -= 1
+            j -_ 1
 
         r.. RES[i..(i __ j)]
 

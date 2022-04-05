@@ -12,5 +12,5 @@ c_ Solution(o..
     k = 9
     ___ i __ r..(2, n + 1
       dp[i] = m..(dp[i - 1] * k, 0)
-      k -= 1
+      k -_ 1
     r.. s..(dp) + 1

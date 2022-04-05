@@ -24,8 +24,8 @@ ___ i __ r..(i..(input())):
                 # or ascii value of queen column is equal to kings column 
                 w.... qp != kp o. chr(ascii_val) != k:
                     #reduce the ascii value as king is at lower alphabet and queen position as king is at lower position(number)
-                    ascii_val -= 1
-                    qp -= 1
+                    ascii_val -_ 1
+                    qp -_ 1
                     # if queen position reaches 0 or less than qp then return No and break
                     __ qp __ 0:
                         print('N',end=' ')
@@ -42,7 +42,7 @@ ___ i __ r..(i..(input())):
                 w.... qp != kp o. chr(ascii_val) != k:
                     #reduce the ascii value as king is at lower alphabet and 
                     #increase queen position as king is at higher position(number)
-                    ascii_val -= 1
+                    ascii_val -_ 1
                     qp += 1
                     __ qp > kp:
                         print('N',end=' ')
@@ -59,7 +59,7 @@ ___ i __ r..(i..(input())):
                 ascii_val = o..(q)
                 w.... qp != kp o. chr(ascii_val) != k:
                     ascii_val += 1
-                    qp -= 1
+                    qp -_ 1
                     __ qp __ 0:
                         print('N',end=' ')
                         _____

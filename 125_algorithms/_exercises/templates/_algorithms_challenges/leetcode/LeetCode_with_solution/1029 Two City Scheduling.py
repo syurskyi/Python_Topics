@@ -46,7 +46,7 @@ c_ Solution:
         ___ _, a, b __ A:
             __ remain > 0:
                 ret += a
-                remain -= 1
+                remain -_ 1
             ____
                 ret += b
 
@@ -69,7 +69,7 @@ c_ Solution:
                 ret += b
             ____ remain > 0:
                 ret += a
-                remain -= 1
+                remain -_ 1
             ____
                 ret += b
 

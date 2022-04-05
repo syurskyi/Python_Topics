@@ -16,7 +16,7 @@ c_ Solution(o..
       __ right __ l..(arr
         r.. arr[-k:]
       __ x - arr[left - 1] <_ arr[right] - x:
-        left -= 1
+        left -_ 1
       ____
         right += 1
     r.. arr[left:right]

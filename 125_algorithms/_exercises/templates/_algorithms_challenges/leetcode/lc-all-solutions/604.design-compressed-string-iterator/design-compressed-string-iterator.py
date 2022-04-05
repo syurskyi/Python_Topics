@@ -26,7 +26,7 @@ c_ StringIterator(o..
     """
     __ hasNext
       ret = cur
-      num -= 1
+      num -_ 1
       __ num <_ 0:
         decodeNext()
       r.. ret

@@ -9,5 +9,5 @@ ___ luck_check(s__
     w.... i != j a.. i < j:
         total += (i..(s__[i]) - i..(s__[j]
         i += 1
-        j -= 1
+        j -_ 1
     r.. total __ 0

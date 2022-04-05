@@ -25,15 +25,15 @@ c_ Solution(o..
                     __ tmp __ target:
                         res.a..([nums[i], nums[j], nums[k], nums[l]])
                         k += 1
-                        l -= 1
+                        l -_ 1
                         w.... k < l a.. nums[k-1] __ nums[k]:
                             k += 1
                         w.... k < l a.. nums[l+1] __ nums[l]:
-                            l -= 1
+                            l -_ 1
                     ____ tmp < target:
                         k += 1
                     ____
-                        l -= 1
+                        l -_ 1
         r.. res
     
     ___ test

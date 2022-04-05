@@ -18,4 +18,4 @@ c_ Solution:
         w.... start < end:
             S[start], S[end] = S[end], S[start]
             start += 1
-            end -= 1
+            end -_ 1

@@ -22,8 +22,8 @@ c_ Solution(o..
             ____ count2 __ 0:
                 candidate2, count2 = n, 1
             ____
-                count1 -= 1
-                count2 -= 1
+                count1 -_ 1
+                count2 -_ 1
         result    # list
         __ nums.c.. candidate1) > l..(nums)//3:
             result.a..(candidate1)

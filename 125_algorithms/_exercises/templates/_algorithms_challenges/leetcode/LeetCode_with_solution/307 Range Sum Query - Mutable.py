@@ -39,7 +39,7 @@ c_ BinaryIndexTree(o..
         ret = 0
         w.... i > 0:
             ret += N[i]
-            i -= _lowbit(i)
+            i -_ _lowbit(i)
 
         r.. ret
 

@@ -25,5 +25,5 @@ ___ romanize(decimal_number
         __ d >_ v:
             x = d // v
             res += c * x
-            d -= v * x
+            d -_ v * x
     r.. res

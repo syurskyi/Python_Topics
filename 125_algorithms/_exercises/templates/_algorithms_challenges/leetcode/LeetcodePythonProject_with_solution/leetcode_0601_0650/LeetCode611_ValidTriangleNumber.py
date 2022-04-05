@@ -16,7 +16,7 @@ c_ Solution(o..
             w.... l < r:
                 __ nums[l]+nums[r] > nums[i]:
                     count += r-l
-                    r -= 1
+                    r -_ 1
                 ____
                     l += 1
         r.. count

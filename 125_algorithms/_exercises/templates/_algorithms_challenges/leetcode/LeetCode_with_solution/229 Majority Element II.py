@@ -23,7 +23,7 @@ c_ Solution:
                     cnt[num] += 1
                 ____
                     ___ k __ cnt.k..:
-                        cnt[k] -= 1
+                        cnt[k] -_ 1
                         __ cnt[k] __ 0:
                             del cnt[k]
 

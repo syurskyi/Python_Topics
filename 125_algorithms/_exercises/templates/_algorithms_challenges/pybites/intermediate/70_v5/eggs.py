@@ -13,6 +13,6 @@ c_ EggCreator:
 
     ___ __next__
         __ current > limit:
-            r.. StopIteration
+            r..
         current += 1
         r.. f'{c..(COLORS)} egg'

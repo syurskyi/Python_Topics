@@ -146,7 +146,7 @@ c_ Solution:
 
             ids[_x, _y].add(id)
 
-            steps[_x, _y] -= step[_x, _y]
+            steps[_x, _y] -_ step[_x, _y]
             step[_x, _y] = step[x, y] + 1
             steps[_x, _y] += step[_x, _y]
 

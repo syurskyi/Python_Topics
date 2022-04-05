@@ -15,11 +15,11 @@ c_ Solution(o..
       ___ i __ r..(up, down + 1
         ans[i][right] = k
         k += 1
-      right -= 1
+      right -_ 1
       ___ i __ r..(r..(left, right + 1:
         ans[down][i] = k
         k += 1
-      down -= 1
+      down -_ 1
       ___ i __ r..(r..(up, down + 1:
         ans[i][left] = k
         k += 1

@@ -38,7 +38,7 @@ c_ Solution:
             w.... i < j:
                 __ nums[i] + nums[j] > nums[k]:
                     ret += j - i  # move i will always satisfy the constraint
-                    j -= 1  # to break
+                    j -_ 1  # to break
                 ____
                     i += 1  # to satisfy
 
@@ -63,7 +63,7 @@ c_ Solution:
                 # error, since move k will not break the formula
                 __ nums[i] + nums[j] > nums[k]:
                     ret += k - j
-                    k -= 1
+                    k -_ 1
                 ____
                     j += 1
 

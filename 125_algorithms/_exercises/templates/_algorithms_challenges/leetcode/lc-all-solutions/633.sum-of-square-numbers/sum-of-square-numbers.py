@@ -14,5 +14,5 @@ c_ Solution(o..
       ____ mid < c:
         start += 1
       ____
-        end -= 1
+        end -_ 1
     r.. F..

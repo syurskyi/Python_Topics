@@ -35,7 +35,7 @@ c_ Solution:
         ___ i __ r..(l..(intvs) - 1, -1, -1
             __ intvs[i].start <_ intv.start:
                 _____
-            index -= 1
+            index -_ 1
 
         intvs.a..(intv)
         ___ i __ r..(l..(intvs) - 1, index, -1

@@ -29,7 +29,7 @@ c_ Solution:
         i = k
         w.... i < l..(nums
             cur_sum += nums[i]
-            cur_sum -= nums[i-k]
+            cur_sum -_ nums[i-k]
             maxa = m..(maxa, cur_sum)
             i += 1
 

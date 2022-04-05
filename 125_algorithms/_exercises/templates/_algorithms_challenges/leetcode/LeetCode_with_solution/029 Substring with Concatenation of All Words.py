@@ -126,7 +126,7 @@ c_ Solution:
             # case 1, match one in L
             __ word __ Lmap a.. Lmap[word]>0:
                 working_win.a..(word)
-                Lmap[word] -= 1
+                Lmap[word] -_ 1
                 win_e = i+k
                 i += k
 
@@ -147,7 +147,7 @@ c_ Solution:
                     Lmap[working_win[j]] += 1  # restore
                 working_win = working_win[working_win.i.. word)+1:]
                 working_win.a..(word)
-                Lmap[word] -= 1
+                Lmap[word] -_ 1
                 win_e = i+k
                 i += k
 

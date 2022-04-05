@@ -8,4 +8,4 @@ c_ Solution(o..
     w.... root > 0:
       __ area % root __ 0:
         r.. i..(area / root), root
-      root -= 1
+      root -_ 1

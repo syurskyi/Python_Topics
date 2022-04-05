@@ -17,7 +17,7 @@ c_ Solution(o..
                 r.. F..
             w.... i >_ 0 a.. p > preorder[i]:
                 low = preorder[i]
-                i -= 1
+                i -_ 1
             i += 1
             preorder[i] = p
         r.. T..

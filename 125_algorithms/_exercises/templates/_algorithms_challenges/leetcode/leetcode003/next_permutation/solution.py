@@ -24,7 +24,7 @@ c_ Solution:
         w.... left < right:
             num[left], num[right] = num[right], num[left]
             left += 1
-            right -= 1
+            right -_ 1
         r.. num
 
 

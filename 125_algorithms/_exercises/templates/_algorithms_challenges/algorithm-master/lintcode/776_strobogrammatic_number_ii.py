@@ -11,7 +11,7 @@ c_ Solution:
 
         __ n & 1:
             ans =  '0', '1', '8'
-            n -= 1
+            n -_ 1
 
         w.... n:
             queue    # list
@@ -26,6 +26,6 @@ c_ Solution:
                 queue.a..('9' + s + '6')
 
             ans = queue
-            n -= 2
+            n -_ 2
 
         r.. ans

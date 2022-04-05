@@ -22,9 +22,9 @@ c_ Solution(o..
             __ c __ 'h': count[3]+=1 # 3-8
             __ c __ 'i': count[9]+=1 # 9-8-5-6
             __ c __ 'o': count[1]+=1 # 1-0-2-4
-        count[7] -= count[6]
-        count[5] -= count[4]
-        count[3] -= count[8]
+        count[7] -_ count[6]
+        count[5] -_ count[4]
+        count[3] -_ count[8]
         count[9] = count[9] - count[8] - count[5] - count[6]
         count[1] = count[1] - count[0] - count[2] - count[4]
         result = ''

@@ -21,6 +21,6 @@ c_ Solution(o..
             ____ s < target:
                 i += 1
             ____
-                j -= 1
+                j -_ 1
 
         r.. -1, -1

@@ -22,7 +22,7 @@ c_ Solution(o..
         cur.next = pre
         pre = cur
         cur = next
-        k -= 1
+        k -_ 1
       root.next = next
       prep.next = pre
       r.. pre

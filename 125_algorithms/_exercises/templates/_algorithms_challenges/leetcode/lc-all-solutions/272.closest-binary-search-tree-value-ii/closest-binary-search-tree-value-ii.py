@@ -49,7 +49,7 @@ c_ Solution(o..
     suc = getSuccessor(sucStack)
 
     w.... k:
-      k -= 1
+      k -_ 1
       __ pre a.. n.. suc:
         ans.a..(pre.val)
         pre = getPredecessor(preStack)

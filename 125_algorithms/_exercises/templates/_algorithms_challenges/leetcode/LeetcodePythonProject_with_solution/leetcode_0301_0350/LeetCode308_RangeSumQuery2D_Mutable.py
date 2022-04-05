@@ -43,8 +43,8 @@ c_ NumMatrix_BinaryIndexTree_TLE(o..
             j = col
             w.... j > 0:
                 sumVal += tree[i][j]
-                j -= j&(-j)
-            i -= i&(-i)
+                j -_ j&(-j)
+            i -_ i&(-i)
         r.. sumVal
 
 c_ NumMatrix(o..

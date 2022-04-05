@@ -19,7 +19,7 @@ c_ Solution:
         w.... heap:
             a, x, y = heappop(heap)
 
-            k -= 1
+            k -_ 1
             __ k __ 0:
                 r.. a
 

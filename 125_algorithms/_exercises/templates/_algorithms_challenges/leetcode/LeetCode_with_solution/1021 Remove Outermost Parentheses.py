@@ -63,7 +63,7 @@ c_ Solution:
                 __ cnt > 1:
                     ret.a..(e)
             ____
-                cnt -= 1
+                cnt -_ 1
                 __ cnt > 0:
                     ret.a..(e)
 

@@ -35,13 +35,13 @@ c_ Solution:
         # from right to left
         i = N - 2
         w.... seq[i] >_ seq[i+1]:
-            i -= 1
+            i -_ 1
             __ i < 0:
                 r.. -1
 
         j = N - 1
         w.... seq[i] >_ seq[j]:
-            j -= 1
+            j -_ 1
 
         seq[i], seq[j] = seq[j], seq[i]
         seq[i+1:] = r..(seq[i+1:])

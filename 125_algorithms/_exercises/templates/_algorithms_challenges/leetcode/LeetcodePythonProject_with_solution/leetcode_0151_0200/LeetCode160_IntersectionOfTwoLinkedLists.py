@@ -23,7 +23,7 @@ c_ Solution(o..
         diff = a..(lenA-lenB)
         w.... diff a.. headA:
             headA = headA.next
-            diff -= 1
+            diff -_ 1
         w.... headA a.. headB:
             __ headA __ headB:
                 r.. headA

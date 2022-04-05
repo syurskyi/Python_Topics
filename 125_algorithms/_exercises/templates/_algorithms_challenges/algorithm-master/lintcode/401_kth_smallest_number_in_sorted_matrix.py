@@ -15,5 +15,5 @@ c_ Solution:
             j = ans[2] + 1
             __ j < n:
                 heapq.heappush(heap, (matrix[ans[1]][j], ans[1], j
-            k -= 1
+            k -_ 1
         r.. ans[0]

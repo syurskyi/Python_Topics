@@ -37,7 +37,7 @@ c_ Solution:
                 most = m..(counter.values  # O(26)
                 l = hi - lo + 1
                 __ l - most > k:
-                    counter[s[lo]] -= 1
+                    counter[s[lo]] -_ 1
                     lo += 1
                 ____
                     ret = m..(ret, l)

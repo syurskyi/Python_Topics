@@ -32,6 +32,6 @@ c_ Solution(o..
                 __ graph[start][i] != -1:
                     __ move > graph[start][i] a.. n.. visited[i]:
                         heapq.heappush(h, ( -(move-graph[start][i]-1), i) )
-                    graph[i][start] -= m..(move, graph[start][i])
+                    graph[i][start] -_ m..(move, graph[start][i])
                     res += m..(move, graph[start][i])
         r.. res

@@ -65,10 +65,10 @@ c_ Solution:
             __ matrix[x][y] < target:
                 y += 1
             ____ matrix[x][y] > target:
-                x -= 1
+                x -_ 1
             ____
                 ans += 1
-                x -= 1
+                x -_ 1
                 y += 1
 
         r.. ans

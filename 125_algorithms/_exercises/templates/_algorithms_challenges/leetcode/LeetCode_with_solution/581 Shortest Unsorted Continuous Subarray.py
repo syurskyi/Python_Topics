@@ -37,7 +37,7 @@ c_ Solution:
             lo += 1
 
         w.... lo < hi a.. nums[hi - 1] <_ nums[hi]:
-            hi -= 1
+            hi -_ 1
 
         __ hi <_ lo:
             r.. 0
@@ -49,7 +49,7 @@ c_ Solution:
             maxa = m..(maxa, nums[i])
 
         w.... lo - 1 >_ 0 a.. nums[lo - 1] > mini:
-            lo -= 1
+            lo -_ 1
         w.... hi + 1 < n a.. nums[hi + 1] < maxa:
             hi += 1
 
@@ -66,7 +66,7 @@ c_ Solution:
 
         j = l..(nums) - 1
         w.... j >_ i a.. nums[j] __ e..[j]:
-            j -= 1
+            j -_ 1
 
         r.. j - i + 1
 

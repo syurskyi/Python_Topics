@@ -41,7 +41,7 @@ c_ Solution(o..
             ____ A[idx(i)] __ v:
                 i += 1
             ____
-                hi -= 1
+                hi -_ 1
                 A[idx(hi)], A[idx(i)] = A[idx(i)], A[idx(hi)]
 
     ___ pivot  A, lo, hi, pidx_ N..
@@ -59,7 +59,7 @@ c_ Solution(o..
             ____ A[i] __ v:
                 i += 1
             ____
-                gt -= 1
+                gt -_ 1
                 A[gt], A[i] = A[i], A[gt]
 
         r.. lt, gt
@@ -96,10 +96,10 @@ c_ SolutionSort(o..
         ___ i __ x..(l..(nums:
             __ i % 2 __ 0:
                 nums[i] = A[j]
-                j -= 1
+                j -_ 1
             ____
                 nums[i] = A[k]
-                k -= 1
+                k -_ 1
 
 
 __ _______ __ _______

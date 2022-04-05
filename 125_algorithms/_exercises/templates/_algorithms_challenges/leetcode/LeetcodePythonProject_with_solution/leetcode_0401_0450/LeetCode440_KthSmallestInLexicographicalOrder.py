@@ -7,15 +7,15 @@ Created on Apr 17, 2017
 c_ Solution(o..
     ___ findKthNumber  n, k
         curr = 1
-        k -= 1
+        k -_ 1
         w.... k > 0:
             steps = calSteps(n, curr, curr+1)
             __ steps <_ k:
                 curr += 1
-                k -= steps
+                k -_ steps
             ____
                 curr *= 10
-                k -= 1
+                k -_ 1
         r.. curr
     
     ___ calSteps  n, n1, n2

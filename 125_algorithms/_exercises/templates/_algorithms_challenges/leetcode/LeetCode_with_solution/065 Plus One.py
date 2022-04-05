@@ -20,7 +20,7 @@ c_ Solution(o..
             __ d..[i] < 10:
                 r.. d..
             ____
-                d..[i] -= 10
+                d..[i] -_ 10
 
         # MSB
         d...insert(0, 1)
@@ -39,7 +39,7 @@ c_ Solution(o..
         ___ i __ x..(l..(d..:  # for ind, val in enumerate(digits):
             d..[i] += carry
             __ d..[i] > 9:
-                d..[i] -= 10
+                d..[i] -_ 10
                 carry = 1
             ____
                 carry = 0

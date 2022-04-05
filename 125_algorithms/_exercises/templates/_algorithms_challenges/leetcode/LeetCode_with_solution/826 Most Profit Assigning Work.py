@@ -43,8 +43,8 @@ c_ Solution:
             pro, diff = tasks[i]
             __ worker[j] >_ diff:
                 ret += pro
-                j -= 1
+                j -_ 1
             ____
-                i -= 1
+                i -_ 1
 
         r.. ret

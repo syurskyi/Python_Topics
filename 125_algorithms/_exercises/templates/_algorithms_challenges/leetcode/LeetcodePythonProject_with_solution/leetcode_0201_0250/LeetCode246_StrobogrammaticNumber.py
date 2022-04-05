@@ -18,5 +18,5 @@ c_ Solution(o..
             __ l __ r a.. num[l] n.. __ singles:
                 r.. F..
             l += 1
-            r -= 1
+            r -_ 1
         r.. T..

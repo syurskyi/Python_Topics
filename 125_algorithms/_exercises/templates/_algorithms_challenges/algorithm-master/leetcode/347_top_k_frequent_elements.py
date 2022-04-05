@@ -18,6 +18,6 @@ c_ Solution:
                 _____
 
             ans.a..(a)
-            k -= 1
+            k -_ 1
 
         r.. ans

@@ -29,7 +29,7 @@ c_ Solution(o..
                 ___ c __ r..(n
                     area = areas[r2][c]
                     __ r1-1>_0:
-                        area -= areas[r2][c]
+                        area -_ areas[r2][c]
                     ind = b__.bisect_left(sortedlist, area-k)
                     __ ind < l..(sortedlist
                         maxVal = m..(maxVal, area-sortedlist[ind])

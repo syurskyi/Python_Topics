@@ -48,6 +48,6 @@ c_ Solution:
                 r.. F..
             __ org[i + 1] n.. __ edges[org[i]]:
                 r.. F..
-            indeg[org[i + 1]] -= 1
+            indeg[org[i + 1]] -_ 1
 
         r.. T..

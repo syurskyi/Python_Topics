@@ -54,7 +54,7 @@ c_ Solution:
                 r.. F..
 
             left += 1
-            right -= 1
+            right -_ 1
 
         r.. T..
 
@@ -100,7 +100,7 @@ c_ Solution:
                 r.. F..
 
             left += 1
-            right -= 1
+            right -_ 1
 
         r.. T..
 
@@ -140,6 +140,6 @@ c_ Solution:
                 r.. F..
 
             left += 1
-            right -= 1
+            right -_ 1
 
         r.. T..

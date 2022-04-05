@@ -15,5 +15,5 @@ c_ Solution(o..
       ____
         ans += m..(0, rightWall - height[right])
         rightWall = m..(rightWall, height[right])
-        right -= 1
+        right -_ 1
     r.. ans

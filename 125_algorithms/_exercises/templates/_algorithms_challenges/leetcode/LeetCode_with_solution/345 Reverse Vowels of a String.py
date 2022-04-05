@@ -16,9 +16,9 @@ c_ Solution(o..
         i = 0
         w.... i < j:
             __ s[i] __ vowels:
-                w.... s[j] n.. __ vowels: j -= 1
+                w.... s[j] n.. __ vowels: j -_ 1
                 s[i], s[j] = s[j], s[i]
-                j -= 1
+                j -_ 1
 
             i += 1
 

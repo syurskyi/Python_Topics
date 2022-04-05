@@ -25,7 +25,7 @@ c_ RLEIterator(o..
             __ countIdx >_ l..(arr
                 r.. -1
             val = arr[numIdx]
-            arr[countIdx] -= 1
+            arr[countIdx] -_ 1
         r.. val
 
 

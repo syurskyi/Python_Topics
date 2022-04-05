@@ -20,7 +20,7 @@ c_ Solution(o..
         ___ i, c __ e..(s
             arr[o..(c)-o..('a')] += 1
             w.... left <_ i a.. arr[o..(c)-o..('a')] > arr0[o..(c)-o..('a')]:
-                arr[o..(s[left])-o..('a')] -= 1
+                arr[o..(s[left])-o..('a')] -_ 1
                 left += 1
             __ i-left+1 __ l..(p
                 res.a..(left)
@@ -44,12 +44,12 @@ c_ Solution(o..
             numInd = o..(s[end]) - o..('a')
             __ arr1[numInd] < arr0[numInd]:
                 arr1[numInd] += 1
-                count -= 1
+                count -_ 1
                 end += 1
                 __ count __ 0:
                     result.a..(left)
             ____
-                arr1[o..(s[left]) - o..('a')] -= 1
+                arr1[o..(s[left]) - o..('a')] -_ 1
                 count += 1
                 left += 1
         r.. result

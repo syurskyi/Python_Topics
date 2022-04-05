@@ -16,7 +16,7 @@ c_ Solution(o..
         __ i __ l..(s)-1:
             r.. N
         w.... i > 0 a.. s[i-1] __ s[i]:
-            i -= 1
+            i -_ 1
         res = s[:i]
         res += s..(i..(s[i])-1)
         res += '9'*(l..(s)-i-1)

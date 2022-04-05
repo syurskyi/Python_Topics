@@ -17,7 +17,7 @@ c_ Solution(o..
             j, k = i+1, l..(nums)-1
             w.... j < k:
                 __ nums[i]+nums[j]+nums[k] >_ target:
-                    k -= 1
+                    k -_ 1
                 ____
                     res += k-j
                     j += 1

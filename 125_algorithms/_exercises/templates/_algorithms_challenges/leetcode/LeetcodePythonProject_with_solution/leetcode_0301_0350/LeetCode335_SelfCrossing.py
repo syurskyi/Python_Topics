@@ -16,7 +16,7 @@ c_ Solution(o..
             r.. F..
         # check border
         __ x[i] >_ x[i-2]-x[i-4]:
-            x[i-1] -= x[i-3]
+            x[i-1] -_ x[i-3]
         i += 1
         # inner spiral
         w.... i < n a.. x[i] < x[i-2]:

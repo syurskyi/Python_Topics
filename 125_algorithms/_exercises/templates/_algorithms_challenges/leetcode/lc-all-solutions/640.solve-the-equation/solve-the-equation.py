@@ -18,9 +18,9 @@ c_ Solution(o..
         __ l..(param) > 2:
           k = i..(param[1:-1])
         __ param[0] __ "-":
-          a -= k
+          a -_ k
         ____
           a += k
       ____
-        b -= i..(param)
+        b -_ i..(param)
     r.. "x={0}".f..(s..(b / a __ a ____ "No solution" __ b ____ "Infinite solutions"

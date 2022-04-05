@@ -17,5 +17,5 @@ c_ Solution(o..
       __ n[i:i + 2] __ "11":
         _____
       __ n[i:i + 2] __ "00":
-        ans -= B[i]
+        ans -_ B[i]
     r.. ans

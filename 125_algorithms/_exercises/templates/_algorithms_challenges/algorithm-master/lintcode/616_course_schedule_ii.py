@@ -21,7 +21,7 @@ c_ Solution:
 
         ___ p __ queue:
             ___ c __ edges[p]:
-                indeg[c] -= 1
+                indeg[c] -_ 1
 
                 __ indeg[c] __ 0:
                     queue.a..(c)

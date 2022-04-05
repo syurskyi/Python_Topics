@@ -31,7 +31,7 @@ c_ Solution:
         ___ _ __ r..(K - 1
             _, i, j = heappop(heap)
 
-            j -= 1
+            j -_ 1
             __ j >_ 0:
                 heappush(heap, (A[i]/A[j], i, j
 

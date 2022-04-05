@@ -32,7 +32,7 @@ c_ Solution(o..
             __ arr[i] __ hashmap a.. arr[j] __ hashmap:
                 arr0[i], arr0[j] = hashmap[arr[i]], hashmap[arr[j]]
                 i += 1
-                j -= 1
+                j -_ 1
             ____
                 r.. F..
         r.. arr0 != arr

@@ -34,7 +34,7 @@ c_ Cipher:
 
     ___ wrap  val
         w.... val > 122:
-            val -= 26
+            val -_ 26
         w.... val < 97:
             val += 26
         r.. val

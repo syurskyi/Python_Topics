@@ -20,7 +20,7 @@ c_ Solution:
                     cc = s[left]
                     w.... left <_ right a.. (cc n.. __ d o. d[cc] > td[cc]
                         __ cc __ d:
-                            d[cc] -= 1
+                            d[cc] -_ 1
                         left += 1
                         cc = s[left]
                     lefts.a..(left)

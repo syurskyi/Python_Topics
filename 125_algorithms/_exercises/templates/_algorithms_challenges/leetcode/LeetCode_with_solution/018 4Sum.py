@@ -43,15 +43,15 @@ c_ Solution:
                     summation = s..(lst)
                     __ summation__target:
                         result.a..(lst)
-                        k -= 1
+                        k -_ 1
                         j += 1
                         # remove duplicate
                         w.... j<k a.. num[j]__num[j-1]:
                             j += 1
                         w.... j<k a.. num[k]__num[k+1]:
-                            k -= 1
+                            k -_ 1
                     ____ summation>target:
-                        k -= 1
+                        k -_ 1
                     ____
                         j += 1
     

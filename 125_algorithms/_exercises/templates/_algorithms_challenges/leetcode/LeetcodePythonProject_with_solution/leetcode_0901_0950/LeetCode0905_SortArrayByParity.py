@@ -10,9 +10,9 @@ c_ Solution(o..
             w.... i < j a.. A[i] % 2 __ 0:
                 i += 1
             w.... i < j a.. A[j] % 2 __ 1:
-                j -= 1
+                j -_ 1
             __ i < j:
                 A[i], A[j] = A[j], A[i]
             i += 1
-            j -= 1
+            j -_ 1
         r.. A

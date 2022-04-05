@@ -10,7 +10,7 @@ ___ get_cipher(words, shifter
             _____
         ____(cipher_char-shifter < 65
             cipher_char += 26
-        cipher_char -= shifter
+        cipher_char -_ shifter
         cipher_word += chr(cipher_char)
         
     r.. cipher_word

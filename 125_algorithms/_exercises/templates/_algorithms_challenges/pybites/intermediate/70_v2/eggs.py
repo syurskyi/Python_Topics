@@ -13,10 +13,10 @@ c_ EggCreator:
 
     ___ __next__
         __ _limit > 0:
-            _limit -= 1
+            _limit -_ 1
             r.. c..(COLORS)
         ____
-            r.. StopIteration
+            r.. S..
 
 
 #if __name__ == "__main__":

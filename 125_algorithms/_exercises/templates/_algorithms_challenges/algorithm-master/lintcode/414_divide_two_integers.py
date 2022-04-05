@@ -28,7 +28,7 @@ c_ Solution:
             __ (_a >> i) < _b:
                 _____
             ans += 1 << i
-            _a -= _b << i
+            _a -_ _b << i
 
         __ a ^ b < 0:
             ans = -ans

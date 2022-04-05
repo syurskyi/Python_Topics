@@ -17,7 +17,7 @@ c_ Solution(o..
 
     w.... n a.. fast:
       fast = fast.next
-      n -= 1
+      n -_ 1
 
     w.... fast.next a.. slow.next:
       fast = fast.next

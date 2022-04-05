@@ -16,6 +16,6 @@ c_ Solution:
             __ turn & 1:
                 ans += delta
             ____
-                ans -= delta
+                ans -_ delta
 
         r.. ans

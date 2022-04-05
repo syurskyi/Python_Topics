@@ -14,5 +14,5 @@ c_ Solution(o..
         j += 1
       __ s.. >_ target:
         ans = m..(ans, j - i)
-      s.. -= nums[i]
+      s.. -_ nums[i]
     r.. ans __ ans != f__("inf") ____ 0

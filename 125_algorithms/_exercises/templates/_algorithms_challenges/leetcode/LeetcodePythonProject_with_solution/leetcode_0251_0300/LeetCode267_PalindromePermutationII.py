@@ -36,7 +36,7 @@ c_ Solution(o..
             r..
         ___ c, val __ hashmap.i..:
             __ val >_ 2:
-                hashmap[c] -= 2
+                hashmap[c] -_ 2
                 helper(c+s0+c, length, hashmap, result)
                 hashmap[c] += 2
     

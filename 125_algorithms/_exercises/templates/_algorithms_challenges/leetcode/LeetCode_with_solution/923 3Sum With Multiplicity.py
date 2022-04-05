@@ -61,7 +61,7 @@ c_ Solution:
                 __ b + c < target - a:
                     j += 1
                 ____ b + c > target - a:
-                    k -= 1
+                    k -_ 1
                 ____  # equal
                     __ a < b < c:
                         ret += counter[a] * counter[b] * counter[c]
@@ -78,7 +78,7 @@ c_ Solution:
 
                     ret %= MOD
                     j += 1
-                    k -= 1
+                    k -_ 1
 
         r.. ret
 
@@ -98,7 +98,7 @@ c_ Solution:
                 __ A[j] + A[k] < target - A[i]:
                     j += 1
                 ____ A[j] + A[k] > target - A[i]:
-                    k -= 1
+                    k -_ 1
                 ____  # equal
                     l_cnt = 1
                     w.... j + l_cnt < n a.. A[j + l_cnt] __ A[j]:
@@ -116,7 +116,7 @@ c_ Solution:
                         ret %= MOD
 
                     j += l_cnt
-                    k -= r_cnt
+                    k -_ r_cnt
 
         r.. ret
 

@@ -12,7 +12,7 @@ c_ Solution(o..
       w.... start < end:
         s[start], s[end] = s[end], s[start]
         start += 1
-        end -= 1
+        end -_ 1
 
     n = l..(nums) - 1
     k = k % l..(nums)

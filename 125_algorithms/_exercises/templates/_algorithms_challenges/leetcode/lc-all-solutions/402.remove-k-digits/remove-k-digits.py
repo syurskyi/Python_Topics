@@ -9,7 +9,7 @@ c_ Solution(o..
     ___ c __ num:
       w.... k > 0 a.. stack a.. stack[-1] > c:
         stack.p.. )
-        k -= 1
+        k -_ 1
       stack.a..(c)
     __ k > 0:
       stack = stack[:-k]

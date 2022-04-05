@@ -67,7 +67,7 @@ c_ Solution:
         valid = 0
 
         w.... queue a.. k:
-            k -= 1
+            k -_ 1
 
             ___ x, y __ queue:
                 ___ dx, dy __ (

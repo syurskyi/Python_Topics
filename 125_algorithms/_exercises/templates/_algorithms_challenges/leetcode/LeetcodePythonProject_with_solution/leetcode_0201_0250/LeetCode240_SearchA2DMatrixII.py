@@ -18,7 +18,7 @@ c_ Solution(o..
             __ matrix[i][j] __ target:
                 r.. T..
             ____ matrix[i][j] > target:
-                i -= 1
+                i -_ 1
             ____
                 j += 1
         r.. F..
@@ -36,7 +36,7 @@ c_ Solution(o..
             __ matrix[i][j] __ target:
                 r.. T..
             ____ matrix[i][j] > target:
-                j -= 1
+                j -_ 1
             ____
                 i += 1
         r.. F..

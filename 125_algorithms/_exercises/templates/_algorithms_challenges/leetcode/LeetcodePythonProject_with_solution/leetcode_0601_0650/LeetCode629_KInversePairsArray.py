@@ -23,7 +23,7 @@ c_ Solution(o..
             ___ j __ r..(1, m..(k, i*(i-1)//2)+1
                 dp[i][j] = dp[i][j-1]+dp[i-1][j]
                 __ j >_ i:
-                    dp[i][j] -= dp[i-1][j-i]
+                    dp[i][j] -_ dp[i-1][j-i]
                 dp[i][j] = (dp[i][j]+mod)%mod
         r.. dp[-1][-1]
     
@@ -35,7 +35,7 @@ c_ Solution(o..
             ___ j __ r..(k+1
                 v = dp[j+1]
                 __ j >_ i:
-                    v -= dp[j-i+1]
+                    v -_ dp[j-i+1]
                 new.a..((new[-1]+v)%mod)
             dp = new
         r.. (dp[k+1]-dp[k])%mod

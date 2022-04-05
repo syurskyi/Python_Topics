@@ -60,7 +60,7 @@ c_ Solution:
         ___ char __ s1:
             chars[o..(char)-o..('a')] += 1
         ___ char __ s2:
-            chars[o..(char)-o..('a')] -= 1
+            chars[o..(char)-o..('a')] -_ 1
 
         # if filter(lambda x: x!=0, chars):
         #     return False

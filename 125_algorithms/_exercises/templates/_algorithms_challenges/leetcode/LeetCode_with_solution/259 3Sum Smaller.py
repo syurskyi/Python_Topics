@@ -24,6 +24,6 @@ c_ Solution(o..
                     cnt += h-l  # move the high ptr leftward till low.
                     l += 1
                 ____
-                    h -= 1
+                    h -_ 1
 
         r.. cnt

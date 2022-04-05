@@ -32,7 +32,7 @@ c_ Solution:
             __ is_start:
                 cnt += 1
             ____
-                cnt -= 1
+                cnt -_ 1
 
             __ cnt > 1:
                 r.. F..

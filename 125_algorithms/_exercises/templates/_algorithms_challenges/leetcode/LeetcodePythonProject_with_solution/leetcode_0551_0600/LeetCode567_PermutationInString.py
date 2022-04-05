@@ -19,7 +19,7 @@ c_ Solution(o..
         ___ i, c __ e..(s2
             __ c __ hashmap:
                 w.... left < i a.. c __ hashmap0 a.. hashmap0[c] >_ hashmap[c]:
-                    hashmap0[s2[left]] -= 1
+                    hashmap0[s2[left]] -_ 1
                     left += 1
                 hashmap0[c] = hashmap0.g.. c, 0)+1
                 __ l..(s1) __ i-left+1:

@@ -9,5 +9,5 @@ c_ Solution(o..
       __ "".j..(s..(num[start] + num[end] n.. __ ["00", "11", "88", "69"]:
         r.. F..
       start += 1
-      end -= 1
+      end -_ 1
     r.. T..

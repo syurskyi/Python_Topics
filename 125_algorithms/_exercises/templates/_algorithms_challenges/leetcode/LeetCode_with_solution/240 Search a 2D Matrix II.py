@@ -41,7 +41,7 @@ c_ Solution(o..
             __ mat[i][j] __ target:
                 r.. T..
             ____ mat[i][j] > target:
-                j -= 1
+                j -_ 1
             ____
                 i += 1
 

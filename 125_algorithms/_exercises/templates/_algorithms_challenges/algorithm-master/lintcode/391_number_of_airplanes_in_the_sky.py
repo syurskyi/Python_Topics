@@ -26,6 +26,6 @@ c_ Solution:
             __ in_sky:
                 cnt += 1
             ____
-                cnt -= 1
+                cnt -_ 1
             ans = m..(ans, cnt)
         r.. ans

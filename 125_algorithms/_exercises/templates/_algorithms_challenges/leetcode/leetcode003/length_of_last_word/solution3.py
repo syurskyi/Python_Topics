@@ -26,5 +26,5 @@ c_ Solution(o..
             ____
                 __ res != 0:
                     _____
-            i -= 1
+            i -_ 1
         r.. res

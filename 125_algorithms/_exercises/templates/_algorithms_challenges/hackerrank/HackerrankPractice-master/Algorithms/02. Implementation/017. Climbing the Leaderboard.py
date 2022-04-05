@@ -18,7 +18,7 @@ ___ climbingLeaderboard(leaderboard, aliceScores
                 print(rankings[i])
                 flag = F..
             ____ score > leaderboard[i]:
-                i -= 1
+                i -_ 1
     r..
 
 

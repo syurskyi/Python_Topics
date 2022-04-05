@@ -14,7 +14,7 @@ c_ Solution(o..
         ___ i, c __ e..(s
             __ s[i] < s[pos]:
                 pos = i
-            cnt[o..(c)-o..('a')] -= 1
+            cnt[o..(c)-o..('a')] -_ 1
             __ cnt[o..(c)-o..('a')] __ 0:
                 _____
         r.. s[pos]+removeDuplicateLetters(s[pos+1:].r..(s[pos], ''

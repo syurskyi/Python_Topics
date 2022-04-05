@@ -22,7 +22,7 @@ c_ Solution(o..
                     idx = i
             __ idx != K:
                 heights[idx] += 1
-                V -= 1
+                V -_ 1
                 _____
             ___ i __ r..(K+1, l..(heights:
                 __ heights[i] > heights[idx]:
@@ -30,7 +30,7 @@ c_ Solution(o..
                 ____ heights[i] < heights[idx]:
                     idx = i
             heights[idx] += 1
-            V -= 1
+            V -_ 1
         r.. heights
     
     ___ test

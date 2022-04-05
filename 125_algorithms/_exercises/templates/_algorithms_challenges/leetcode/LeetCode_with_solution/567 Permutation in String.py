@@ -32,7 +32,7 @@ c_ Solution:
         j = 0
         w.... j < l..(s2
             __ counter[s2[j]] > 0:
-                counter[s2[j]] -= 1
+                counter[s2[j]] -_ 1
                 __ j - i + 1 __ l..(s1
                     r.. T..
                 j += 1

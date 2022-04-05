@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ findNthDigit  n
         length, count, start = 1, 9, 1
         w.... n > length*count:
-            n -= length*count
+            n -_ length*count
             length += 1
             count *= 10
             start *= 10

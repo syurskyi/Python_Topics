@@ -16,7 +16,7 @@ c_ Solution(o..
       ret = 0
       w.... i > 0:
         ret += b[i]
-        i -= (i & -i)
+        i -_ (i & -i)
       r.. ret
 
     ans = 0

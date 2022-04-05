@@ -9,7 +9,7 @@ ___ counting_valleys(n, s
         __ s[i] __ 'U':
             current_level += 1
         ____ s[i] __ 'D':
-            current_level -= 1
+            current_level -_ 1
             __ current_level __ -1:
                 count += 1
     r.. count

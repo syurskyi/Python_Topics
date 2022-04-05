@@ -15,7 +15,7 @@ c_ Solution:
         w.... left < n a.. s[left] __ ' ':
             left += 1
         w.... right >_ 0 a.. s[right] __ ' ':
-            right -= 1
+            right -_ 1
 
         __ left < n a.. s[left] __ ('+', '-'
             is_negative = (s[left] __ '-')

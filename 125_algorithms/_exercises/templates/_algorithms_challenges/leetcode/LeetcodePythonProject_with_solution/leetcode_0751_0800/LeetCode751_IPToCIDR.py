@@ -21,7 +21,7 @@ c_ Solution(o..
                 step /= 2
             res.a..(long2ip(x, step
             x += step
-            n -= step
+            n -_ step
         r.. res
     
     ___ long2ip  x, step
@@ -31,7 +31,7 @@ c_ Solution(o..
             x >>= 8
         n = 33
         w.... step > 0:
-            n -= 1
+            n -_ 1
             step //= 2
         r.. '.'.j..([s..(s) ___ s __ res])+'/'+s..(n)
     

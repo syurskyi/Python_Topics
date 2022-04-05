@@ -28,7 +28,7 @@ c_ Solution(o..
         w.... i < j-1:
             s[i], s[j-1] = s[j-1], s[i]
             i += 1
-            j -= 1
+            j -_ 1
 
 __ _______ __ _______
     lst = l..("the sky is blue")

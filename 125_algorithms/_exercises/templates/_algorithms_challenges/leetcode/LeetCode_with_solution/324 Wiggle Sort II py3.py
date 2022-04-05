@@ -42,7 +42,7 @@ c_ Solution:
                     i += 1
                     _____
                 nums[i], nums[even] = nums[even], nums[i]
-                even -= 2
+                even -_ 2
 
             ____ nums[i] > median:
                 __ i <_ odd  a.. i % 2 __ 1:

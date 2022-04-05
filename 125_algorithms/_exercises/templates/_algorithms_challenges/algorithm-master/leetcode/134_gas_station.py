@@ -23,7 +23,7 @@ c_ Solution:
                 end += 1
                 tank += gas[end] - cost[end]
             ____
-                start -= 1
+                start -_ 1
                 tank += gas[start] - cost[start]
 
         r.. start __ tank >_ 0 ____ NOT_FOUND
@@ -56,7 +56,7 @@ c_ Solution:
                 __ tank < cost[mid]:
                     is_failed = T..
                     _____
-                tank -= cost[mid]
+                tank -_ cost[mid]
 
             __ n.. is_failed:
                 r.. start

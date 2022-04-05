@@ -15,7 +15,7 @@ c_ Solution(o..
       queue.a..(num)
       s += num
       __ l..(queue) > k:
-        s -= queue.popleft()
+        s -_ queue.popleft()
       __ l..(queue) __ k:
         ans = m..(ans, f__(s) / k)
     r.. ans

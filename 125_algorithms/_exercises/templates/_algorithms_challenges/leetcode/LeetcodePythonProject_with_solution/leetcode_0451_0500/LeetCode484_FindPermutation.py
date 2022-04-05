@@ -26,7 +26,7 @@ c_ Solution(o..
         w.... l < r:
             res[l], res[r] = res[r], res[l]
             l += 1
-            r -= 1
+            r -_ 1
     
     ___ test
         testCases = [

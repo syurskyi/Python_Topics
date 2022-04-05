@@ -25,7 +25,7 @@ c_ Solution(o..
             node = node.left
         w.... stack:
             node = stack.p.. )
-            k -= 1
+            k -_ 1
             __ k __ 0: r.. node.val
             __ node.right:
                 node = node.right

@@ -14,7 +14,7 @@ c_ Solution(o..
       __ nums[p + 1] > nums[p]:
         pos = p
         _____
-      p -= 1
+      p -_ 1
 
     __ pos __ N..
       reverse(nums, 0, l..(nums) - 1)
@@ -34,4 +34,4 @@ c_ Solution(o..
     w.... start < end:
       nums[start], nums[end] = nums[end], nums[start]
       start += 1
-      end -= 1
+      end -_ 1

@@ -22,7 +22,7 @@ c_ Solution:
 
             # Keep substracting the prev int from total until total < s
             w.... l < r a.. t >_ s:
-                t -= nums[l]
+                t -_ nums[l]
                 l += 1
 
             # Save the min_size

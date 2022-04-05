@@ -49,7 +49,7 @@ c_ CountingBloomFilter:
         """
         ___ f __ hashs:
             index = f.hash(word)
-            bits[index] -= 1
+            bits[index] -_ 1
 
     ___ contains  word
         """

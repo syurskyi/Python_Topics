@@ -16,15 +16,15 @@ c_ Solution(o..
             __ freqMap[num] __ 0:
                 _____
             ____ appendFreqMap.g.. num, 0) > 0:
-                appendFreqMap[num] -= 1
+                appendFreqMap[num] -_ 1
                 appendFreqMap[num+1] = appendFreqMap.g.. num+1, 0)+1
             ____ freqMap.g.. num+1, 0)>0 a.. freqMap.g.. num+2, 0)>0:
-                freqMap[num+1] -= 1
-                freqMap[num+2] -= 1
+                freqMap[num+1] -_ 1
+                freqMap[num+2] -_ 1
                 appendFreqMap[num+3] = appendFreqMap.g.. num+3, 0)+1
             ____
                 r.. F..
-            freqMap[num] -= 1
+            freqMap[num] -_ 1
         r.. T..
     
     ___ test

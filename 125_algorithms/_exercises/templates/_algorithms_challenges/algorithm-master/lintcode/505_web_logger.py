@@ -33,6 +33,6 @@ c_ WebLogger:
             head[0] = head[1] = N..
 
             head = nxt
-            size -= 1
+            size -_ 1
 
         r.. size

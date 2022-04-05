@@ -26,7 +26,7 @@ c_ HashHeapq:
 
     ___ is_empty
         w.... heap a.. deleted.g.. heap[0]
-            deleted[heap[0]] -= 1
+            deleted[heap[0]] -_ 1
             heappop(heap)
         r.. n.. heap
 

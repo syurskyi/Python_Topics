@@ -22,7 +22,7 @@ c_ Solution(o..
           __ cnt __ 1:
             start = i + 1
         __ c __ ")":
-          cnt -= 1
+          cnt -_ 1
           __ cnt __ 0:
             __ n.. root.left:
               root.left = str2tree(s[start:i])

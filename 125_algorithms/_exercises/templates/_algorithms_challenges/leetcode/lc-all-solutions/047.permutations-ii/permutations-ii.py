@@ -21,7 +21,7 @@ c_ Solution(o..
         p...a..(nums[i])
         dfs(nums, res, p.., visited)
         p...p.. )
-        visited -= {i}
+        visited -_ {i}
 
     dfs(nums, res, [], s..
     r.. res

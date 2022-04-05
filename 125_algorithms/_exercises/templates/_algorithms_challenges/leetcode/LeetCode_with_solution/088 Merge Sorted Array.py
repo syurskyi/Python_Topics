@@ -27,13 +27,13 @@ c_ Solution(o..
         closed = m+n
 
         w.... i >_ 0 a.. j >_ 0:
-            closed -= 1
+            closed -_ 1
             __ A[i] > B[j]:
                 A[closed] = A[i]
-                i -= 1
+                i -_ 1
             ____
                 A[closed] = B[j]
-                j -= 1
+                j -_ 1
 
         # either-or
         # dangling

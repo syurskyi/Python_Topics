@@ -52,7 +52,7 @@ c_ SegmentTree(o..
         """
         :return: index
         """
-        root.cnt -= 1
+        root.cnt -_ 1
         __ n.. root.left:
             r.. root.lo
         ____ root.left.cnt >_ sz:

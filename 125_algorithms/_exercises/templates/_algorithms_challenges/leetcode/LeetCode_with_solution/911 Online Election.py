@@ -58,7 +58,7 @@ c_ TopVotedCandidate:
             r.. maxes[i][1]
 
         # smaller
-        i -= 1
+        i -_ 1
         r.. maxes[i][1]
 
 

@@ -50,7 +50,7 @@ ___ calculate_streak(dates
     w.... day __ dates:
         streak += 1
 
-        day -= delta
+        day -_ delta
 
     
 

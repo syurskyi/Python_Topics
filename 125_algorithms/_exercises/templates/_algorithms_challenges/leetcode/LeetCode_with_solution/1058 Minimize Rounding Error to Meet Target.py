@@ -61,7 +61,7 @@ c_ Solution:
         ___ err __ errors:
             __ remain > 0:
                 ret += 1 - err
-                remain -= 1
+                remain -_ 1
             ____
                 ret += err
 

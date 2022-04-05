@@ -17,7 +17,7 @@ c_ Solution(o..
         w.... j < 3:
             __ colors[j]:
                 nums[i]=j
-                colors[j] -= 1
+                colors[j] -_ 1
                 i += 1
             ____
                 j += 1

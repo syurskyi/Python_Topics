@@ -18,6 +18,6 @@ c_ Solution:
             ____
                 r.. F..
         ____
-            s.. -= root.val
+            s.. -_ root.val
             r.. (hasPathSum(root.left, s..)
                     o. hasPathSum(root.right, s..

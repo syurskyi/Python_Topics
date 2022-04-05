@@ -21,14 +21,14 @@ c_ HashHeapqWithLazy:
         __ _is_empty
             r..
 
-        __size -= 1
+        __size -_ 1
         r.. heapq.heappop(__heap)
 
     ___ remove  val
         __ _is_empty
             r..
 
-        __size -= 1
+        __size -_ 1
         __deleted[val] = __deleted.g.. val, 0) + 1
 
     ___ top
@@ -40,7 +40,7 @@ c_ HashHeapqWithLazy:
     ___ _is_empty
         w.... __heap a.. __deleted.g.. __heap[0]
             val = heapq.heappop(__heap)
-            __deleted[val] -= 1
+            __deleted[val] -_ 1
 
         r.. __size __ 0
 

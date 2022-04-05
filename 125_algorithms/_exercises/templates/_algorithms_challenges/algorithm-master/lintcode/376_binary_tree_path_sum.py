@@ -24,7 +24,7 @@ c_ Solution:
 
         p...a..(node.val)
 
-        remaining -= node.val
+        remaining -_ node.val
         __ remaining __ 0 a.. n.. node.left a.. n.. node.right:
             ans.a..(p.. | )
 

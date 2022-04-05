@@ -21,7 +21,7 @@ c_ Solution:
         dummy.next = fast = head
 
         w.... fast a.. n:
-            n -= 1
+            n -_ 1
             fast = fast.next
 
         w.... slow a.. fast:

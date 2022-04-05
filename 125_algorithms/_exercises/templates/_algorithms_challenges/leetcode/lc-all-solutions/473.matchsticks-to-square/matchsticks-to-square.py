@@ -42,11 +42,11 @@ c_ Solution(o..
         __ i > start a.. nums[i] __ nums[i - 1]:
           _____
         __ i __ sticksIdx:
-          sticksIdx -= {i}
+          sticksIdx -_ {i}
           subsetIdx |= {i}
           __ dfs(nums, i + 1, sticksIdx, halfLen, subSum + nums[i], subsetIdx
             r.. T..
-          subsetIdx -= {i}
+          subsetIdx -_ {i}
           sticksIdx |= {i}
       r.. F..
 

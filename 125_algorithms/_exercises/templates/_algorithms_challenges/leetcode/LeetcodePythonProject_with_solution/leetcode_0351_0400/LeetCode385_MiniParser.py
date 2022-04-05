@@ -66,7 +66,7 @@ c_ Solution(o..
                     w.... i < l..(s) a.. count > 0:
                         i+=1
                         __ s[i] __ ' ':
-                            count -= 1
+                            count -_ 1
                         ____ s[i] __ ' ':
                             count += 1
                     nestedInt.add(deserialize(s[prev:i+1]

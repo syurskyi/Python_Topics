@@ -22,6 +22,6 @@ c_ Solution:
                 i += 1
             ____ A[i] > high:
                 A[right], A[i] = A[i], A[right]
-                right -= 1
+                right -_ 1
             ____
                 i += 1

@@ -21,7 +21,7 @@ c_ Solution:
             w.... a < b:
                 __ S[a] + S[b] > S[c]:
                     ans += b - a
-                    b -= 1
+                    b -_ 1
                 ____
                     a += 1
 

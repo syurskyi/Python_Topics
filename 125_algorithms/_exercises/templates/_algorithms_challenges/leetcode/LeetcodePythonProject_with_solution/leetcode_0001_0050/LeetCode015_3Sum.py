@@ -21,13 +21,13 @@ c_ Solution(o..
                 __ tmp __ 0:
                     res.a..([nums[i], nums[j], nums[k]])
                     j += 1
-                    k -= 1
+                    k -_ 1
                     w.... j < k a.. nums[j] __ nums[j-1]:
                         j += 1
                     w.... j < k a.. nums[k] __ nums[k+1]:
-                        k -= 1
+                        k -_ 1
                 ____ tmp > 0:
-                    k -= 1
+                    k -_ 1
                 ____
                     j += 1
         r.. res

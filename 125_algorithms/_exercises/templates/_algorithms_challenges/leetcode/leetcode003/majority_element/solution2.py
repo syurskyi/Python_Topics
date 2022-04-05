@@ -21,5 +21,5 @@ c_ Solution(o..
             ____ cand __ c:
                 count += 1
             ____
-                count -= 1
+                count -_ 1
         r.. cand

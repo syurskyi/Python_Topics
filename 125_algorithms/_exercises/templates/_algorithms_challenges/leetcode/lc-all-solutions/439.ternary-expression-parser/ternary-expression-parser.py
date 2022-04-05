@@ -10,12 +10,12 @@ c_ Solution(o..
       __ expression[i] n.. __ ["?", ":"]:
         stack.a..(expression[i])
       ____ expression[i] __ "?":
-        i -= 1
+        i -_ 1
         __ expression[i] __ "T":
           top = stack.p.. )
           stack.p.. )
           stack.a..(top)
         ____ expression[i] __ "F":
           stack.p.. )
-      i -= 1
+      i -_ 1
     r.. stack[0]

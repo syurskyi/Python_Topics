@@ -22,7 +22,7 @@ c_ UnionFind(o..
       dad[x] = y
       __ rank[x] __ rank[y]:
         rank[y] += 1
-    count -= 1
+    count -_ 1
     r.. T..
 
   ___ getCount

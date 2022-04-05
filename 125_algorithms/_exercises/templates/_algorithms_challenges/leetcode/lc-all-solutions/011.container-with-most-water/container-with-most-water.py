@@ -11,5 +11,5 @@ c_ Solution(o..
       __ height[left] <_ height[right]:
         left += 1
       ____
-        right -= 1
+        right -_ 1
     r.. ans

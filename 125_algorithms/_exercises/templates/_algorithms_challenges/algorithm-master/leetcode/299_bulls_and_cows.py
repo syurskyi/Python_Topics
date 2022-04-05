@@ -22,7 +22,7 @@ c_ Solution:
                 _____
 
             cnts[s] += 1
-            cnts[g] -= 1
+            cnts[g] -_ 1
 
             __ cnts[s] <_ 0:
                 cows += 1

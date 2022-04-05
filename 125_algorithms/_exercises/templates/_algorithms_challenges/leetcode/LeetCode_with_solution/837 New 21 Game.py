@@ -62,7 +62,7 @@ c_ Solution:
                 cur_sum += F[i]
                 
             __ i - W >_ 0:
-                cur_sum -= F[i - W]
+                cur_sum -_ F[i - W]
 
         r.. ret
 

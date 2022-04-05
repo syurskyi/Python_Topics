@@ -13,5 +13,5 @@ c_ Solution(o..
         w.... left < right:
             count += nums[right]-nums[left]
             left += 1
-            right -= 1
+            right -_ 1
         r.. count

@@ -30,7 +30,7 @@ c_ Solution(o..
             carry = 0
         hh += carry
         __ hh >_ 24:
-            hh -= 24
+            hh -_ 24
         res = s..(hh) __ l..(s..(hh__2 ____ '0'+s..(hh)
         res += ':'
         res += s..(mm) __ l..(s..(mm__2 ____ '0'+s..(mm)

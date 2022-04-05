@@ -15,10 +15,10 @@ c_ Solution(o..
         w.... m > 0 a.. n > 0:
             __ nums1[m-1] > nums2[n-1]:
                 nums1[m+n-1] = nums1[m-1]
-                m -= 1
+                m -_ 1
             ____
                 nums1[m+n-1] = nums2[n-1]
-                n -= 1
+                n -_ 1
         w.... n > 0:
             nums1[n-1] = nums2[n-1]
-            n -= 1
+            n -_ 1

@@ -27,15 +27,15 @@ c_ Solution:
                 __ _sum < n:
                     b += 1
                 ____ _sum > n:
-                    c -= 1
+                    c -_ 1
                 ____
                     ans += 1
                     b += 1
-                    c -= 1
+                    c -_ 1
                     w.... b < c a.. nums[b] __ nums[b - 1]:
                         b += 1
                     w.... b < c a.. nums[c] __ nums[c + 1]:
-                        c -= 1
+                        c -_ 1
 
         r.. ans
 
@@ -57,7 +57,7 @@ c_ Solution:
                 __ _sum < target:
                     b += 1
                 ____ _sum > target:
-                    c -= 1
+                    c -_ 1
                 ____
                     ans += 1
                     b += 1

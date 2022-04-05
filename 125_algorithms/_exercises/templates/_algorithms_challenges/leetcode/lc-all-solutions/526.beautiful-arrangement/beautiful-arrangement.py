@@ -11,7 +11,7 @@ c_ Solution(o..
       ret = 0
       ___ num __ l..(unused
         __ pos % num __ 0 o. num % pos __ 0:
-          unused -= {num}
+          unused -_ {num}
           ret += dfs(pos + 1, unused)
           unused |= {num}
       r.. ret

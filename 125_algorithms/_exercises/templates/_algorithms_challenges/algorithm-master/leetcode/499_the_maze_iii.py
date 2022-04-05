@@ -53,9 +53,9 @@ c_ Solution:
                     _step += 1
 
                 __ n.. (_x __ tx a.. _y __ ty
-                    _x -= dx
-                    _y -= dy
-                    _step -= 1
+                    _x -_ dx
+                    _y -_ dy
+                    _step -_ 1
 
                 __ ((_x, _y) __ distance a..
                     distance[x, y] + _step > distance[_x, _y]
@@ -130,8 +130,8 @@ c_ Solution2:
                     _y += dy
 
                 __ n.. (_x __ tx a.. _y __ ty
-                    _x -= dx
-                    _y -= dy
+                    _x -_ dx
+                    _y -_ dy
 
                 _step = distance[x, y] + a..(_x - x) + a..(_y - y)
 

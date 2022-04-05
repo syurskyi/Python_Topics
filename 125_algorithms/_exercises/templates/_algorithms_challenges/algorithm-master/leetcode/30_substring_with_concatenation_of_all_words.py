@@ -33,15 +33,15 @@ c_ Solution:
                 w.... _F[sr] > F[sr]:
                     sl = s[left:left + k]
                     __ _F[sl] __ F[sl]:
-                        cnt -= 1
-                    _F[sl] -= 1
+                        cnt -_ 1
+                    _F[sl] -_ 1
                     left += k
 
                 __ cnt __ m:
                     ans.a..(left)
                     sl = s[left:left + k]
-                    cnt -= 1
-                    _F[sl] -= 1
+                    cnt -_ 1
+                    _F[sl] -_ 1
                     left += k
 
         r.. ans

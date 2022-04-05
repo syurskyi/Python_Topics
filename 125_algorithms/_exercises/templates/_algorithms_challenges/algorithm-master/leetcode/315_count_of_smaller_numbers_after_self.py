@@ -36,7 +36,7 @@ c_ Solution:
 
         w.... i > 0:
             res += bits[i]
-            i -= (i & -i)
+            i -_ (i & -i)
 
         r.. res
 

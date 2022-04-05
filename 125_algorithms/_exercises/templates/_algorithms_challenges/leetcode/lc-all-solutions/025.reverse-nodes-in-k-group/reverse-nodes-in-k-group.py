@@ -20,7 +20,7 @@ c_ Solution(o..
         cur.next = pre
         pre = cur
         cur = tmp
-        k -= 1
+        k -_ 1
       head.next = cur
       r.. cur, pre
 
@@ -43,5 +43,5 @@ c_ Solution(o..
         pre.next = newHead
       pre = p
       p = next
-      step -= 1
+      step -_ 1
     r.. ret

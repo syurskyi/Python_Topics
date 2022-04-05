@@ -3,7 +3,7 @@ c_ Solution(o..
     balances = c...d..(i..)
     people = s..()
     ___ giver, receiver, amount __ transactions:
-      balances[giver] -= amount
+      balances[giver] -_ amount
       balances[receiver] += amount
       people |= {giver, receiver}
     ___ person, balance __ balances.i..:
@@ -19,7 +19,7 @@ c_ Solution(o..
       ___ i __ r..(2, l..(people_list) + 1
         ___ persons __ i...c..people_list, i
           __ s..(balances[p] ___ p __ persons) __ 0:
-            people -= s..(persons)
+            people -_ s..(persons)
             r.. dfs(l..(people + l..(persons) - 1
 
     r.. dfs(people_list)

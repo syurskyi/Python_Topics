@@ -27,7 +27,7 @@ c_ Solution(o..
                     r.. T..
                 ____ helper(nums[:i]+nums[i+1:], elems, target, ind, k
                     r.. T..
-                elems[ind] -= nums[i]
+                elems[ind] -_ nums[i]
             ____
                 _____
         r.. F..

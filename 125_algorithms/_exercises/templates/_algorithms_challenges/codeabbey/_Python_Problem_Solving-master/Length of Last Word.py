@@ -4,11 +4,11 @@ c_ Solution:
         count = 0
         w.... l > -1:
             __ s[l] __ ' ':
-                l -= 1
+                l -_ 1
                 
             __ s[l].i..
                 count += 1
-                l -= 1
+                l -_ 1
                 __ s[l] __ ' ':
                     _____
         r.. count

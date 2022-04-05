@@ -68,7 +68,7 @@ c_ NumMatrix:
             j = y
             w.... j > 0:
                 res += bits[i][j]
-                j -= (j & -j)
-            i -= (i & -i)
+                j -_ (j & -j)
+            i -_ (i & -i)
 
         r.. res

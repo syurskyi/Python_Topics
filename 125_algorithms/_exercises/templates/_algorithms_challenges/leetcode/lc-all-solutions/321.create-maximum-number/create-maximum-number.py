@@ -13,7 +13,7 @@ c_ Solution(o..
       ___ c __ num:
         w.... drop > 0 a.. stack a.. stack[-1] < c:
           stack.p.. )
-          drop -= 1
+          drop -_ 1
         stack.a..(c)
       r.. stack[:k]
 

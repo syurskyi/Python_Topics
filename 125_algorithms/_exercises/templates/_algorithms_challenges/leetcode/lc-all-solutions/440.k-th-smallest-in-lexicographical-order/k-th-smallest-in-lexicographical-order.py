@@ -10,7 +10,7 @@ c_ Solution(o..
     ___ dfs(cur, n
       __ k __ 0:
         r.. cur
-      k -= 1
+      k -_ 1
       __ cur __ 0:
         ___ i __ r..(1, 10
           __ i > n:
@@ -42,13 +42,13 @@ c_ Solution(o..
       r.. gap
 
     ans = 1
-    k -= 1
+    k -_ 1
     w.... k > 0:
       gap = getGap(n, ans)
       __ gap <_ k:
         ans += 1
-        k -= gap
+        k -_ gap
       ____
         ans *= 10
-        k -= 1
+        k -_ 1
     r.. ans

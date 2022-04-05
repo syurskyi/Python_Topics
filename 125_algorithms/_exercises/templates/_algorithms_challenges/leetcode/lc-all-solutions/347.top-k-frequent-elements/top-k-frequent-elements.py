@@ -26,7 +26,7 @@ c_ Solution(o..
       __ item a.. k > 0:
         w.... item a.. k > 0:
           ans.a..(item.pop
-          k -= 1
+          k -_ 1
         __ k __ 0:
           r.. ans
 

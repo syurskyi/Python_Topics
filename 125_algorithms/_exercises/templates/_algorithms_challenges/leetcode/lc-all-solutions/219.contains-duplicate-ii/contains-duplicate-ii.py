@@ -23,7 +23,7 @@ c_ Solution(o..
       d |= {nums[i]}
       window.a..(i)
     ___ i __ r..(k, l..(nums:
-      d -= {nums[window.popleft()]}
+      d -_ {nums[window.popleft()]}
       __ nums[i] __ d:
         r.. T..
       d |= {nums[i]}

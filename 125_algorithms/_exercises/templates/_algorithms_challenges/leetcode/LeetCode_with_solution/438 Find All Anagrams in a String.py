@@ -29,7 +29,7 @@ c_ Solution:
             head = s[idx - l..(target)]
             tail = s[idx]
             counter_cur[tail] += 1
-            counter_cur[head] -= 1
+            counter_cur[head] -_ 1
             __ counter_cur[head] __ 0:
                 del counter_cur[head]  # requried for comparison
             __ counter_cur __ counter_target:

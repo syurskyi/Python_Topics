@@ -23,7 +23,7 @@ c_ Solution(o..
                 __ tmp __ target:
                     r.. target
                 ____ tmp > target:
-                    k -= 1
+                    k -_ 1
                 ____
                     j += 1
         r.. res

@@ -20,13 +20,13 @@ c_ Solution(o..
           __ s.. < target:
             start += 1
           ____ s.. > target:
-            end -= 1
+            end -_ 1
           ____
             res.a..((nums[i], nums[j], nums[start], nums[end]
             start += 1
-            end -= 1
+            end -_ 1
             w.... start < end a.. nums[start] __ nums[start - 1]:
               start += 1
             w.... start < end a.. nums[end] __ nums[end + 1]:
-              end -= 1
+              end -_ 1
     r.. res

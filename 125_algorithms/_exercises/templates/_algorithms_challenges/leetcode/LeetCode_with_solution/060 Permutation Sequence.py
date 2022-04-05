@@ -21,7 +21,7 @@ __author__ = 'Danyang'
 
 c_ Solution(o..
     ___ getPermutation  n, k
-        k -= 1
+        k -_ 1
 
         array = r..(1, n+1)
         k %= m__.factorial(n)
@@ -47,7 +47,7 @@ c_ Solution(o..
             fac[i] = fac[i-1]*i
 
         # solve equation
-        k -= 1  # index starting from 0
+        k -_ 1  # index starting from 0
         a = [0 ___ _ __ x..(n)]
         ___ i __ x..(n-1, -1, -1
             a[n-1-i] = k/fac[i]  # a[i] = k/fac[i]
@@ -94,7 +94,7 @@ c_ Solution(o..
         :param k: integer
         :return: String
         """
-        k -= 1  # index starting from 0
+        k -_ 1  # index starting from 0
 
         factorial = 1  # (n-1)!
         ___ i __ x..(1, n

@@ -25,23 +25,23 @@ c_ Solution:
             carry += o..(a[i]) + o..(b[j]) - 2 * zero
             ans[idx] = s..(carry % 10)
             carry //= 10
-            idx -= 1
-            i -= 1
-            j -= 1
+            idx -_ 1
+            i -_ 1
+            j -_ 1
 
         w.... i >_ 0:
             carry += o..(a[i]) - zero
             ans[idx] = s..(carry % 10)
             carry //= 10
-            idx -= 1
-            i -= 1
+            idx -_ 1
+            i -_ 1
 
         w.... j >_ 0:
             carry += o..(b[j]) - zero
             ans[idx] = s..(carry % 10)
             carry //= 10
-            idx -= 1
-            j -= 1
+            idx -_ 1
+            j -_ 1
 
         __ carry:
             ans[0] = s..(carry)

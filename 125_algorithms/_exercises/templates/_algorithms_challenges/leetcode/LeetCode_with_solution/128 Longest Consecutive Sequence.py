@@ -29,7 +29,7 @@ c_ Solution:
             # check val--
             sequence_val_expected = val-1
             w.... sequence_val_expected __ inverted_table:
-                sequence_val_expected -= 1
+                sequence_val_expected -_ 1
                 current_length += 1
 
             # check val++
@@ -66,7 +66,7 @@ c_ Solution:
             sequence_val_expected = val-1
             w.... sequence_val_expected __ visited:
                 visited[sequence_val_expected] = T..
-                sequence_val_expected -= 1
+                sequence_val_expected -_ 1
                 current_length += 1
 
             # check val++

@@ -22,11 +22,11 @@ c_ Solution(o..
             ___ i __ r..(top, down+1
                 result[i][right] = count
                 count+=1
-            right -= 1
+            right -_ 1
             ___ i __ r..(right, left-1, -1
                 result[down][i] = count
                 count+=1
-            down -= 1
+            down -_ 1
             ___ i __ r..(down, top-1, -1
                 result[i][left] = count
                 count+=1

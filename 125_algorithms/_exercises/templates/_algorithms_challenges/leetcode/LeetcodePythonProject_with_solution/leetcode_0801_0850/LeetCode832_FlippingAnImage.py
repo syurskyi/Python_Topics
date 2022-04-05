@@ -20,7 +20,7 @@ c_ Solution(o..
                 __ j < l:
                     image[i][l] = 1 __ n.. image[i][l] ____ 0
                 j += 1
-                l -= 1
+                l -_ 1
         r.. image
     
     ___ test

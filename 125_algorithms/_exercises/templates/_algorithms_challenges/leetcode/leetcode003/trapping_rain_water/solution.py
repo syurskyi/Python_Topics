@@ -12,7 +12,7 @@ c_ Solution:
                 w = i - last - 1
                 area = w * A[last]
                 w.... stack:
-                    area -= A[stack.p.. )]
+                    area -_ A[stack.p.. )]
                 res += area
                 last = i
             ____

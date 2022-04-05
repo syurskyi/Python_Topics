@@ -34,10 +34,10 @@ c_ Solution(o..
             top += 1
             ___ i __ r..(top, down+1
                 result.a..(matrix[i][right])
-            right-=1
+            right-_1
             ___ i __ r..(right, left-1, -1
                 result.a..(matrix[down][i])
-            down-=1
+            down-_1
             ___ i __ r..(down, top-1, -1
                 result.a..(matrix[i][left])
             left+=1

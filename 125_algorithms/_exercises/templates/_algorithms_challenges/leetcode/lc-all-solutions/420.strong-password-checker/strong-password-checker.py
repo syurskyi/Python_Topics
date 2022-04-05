@@ -6,11 +6,11 @@ c_ Solution(o..
     """
     complexBal = 3
     __ any(c __ s__.lowercase ___ c __ s
-      complexBal -= 1
+      complexBal -_ 1
     __ any(c __ s__.uppercase ___ c __ s
-      complexBal -= 1
+      complexBal -_ 1
     __ any(c.i.. ___ c __ s
-      complexBal -= 1
+      complexBal -_ 1
 
     one = 0
     two = 0
@@ -36,7 +36,7 @@ c_ Solution(o..
       r.. m..(complexBal, r..)
     ____
       redundant = l..(s) - 20
-      r.. -= m..(redundant, one)
-      r.. -= m..(m..(redundant - one, 0), two * 2) / 2
-      r.. -= m..(redundant - one - two * 2, 0) / 3
+      r.. -_ m..(redundant, one)
+      r.. -_ m..(m..(redundant - one, 0), two * 2) / 2
+      r.. -_ m..(redundant - one - two * 2, 0) / 3
       r.. redundant + m..(complexBal, r..)

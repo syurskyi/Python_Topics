@@ -9,7 +9,7 @@ c_ Solution(o..
       y = n % 26
       __ y __ 0:
         char = "Z"
-        n -= 26
+        n -_ 26
       ____
         char = chr(o..("A") + y - 1)
       ans += char

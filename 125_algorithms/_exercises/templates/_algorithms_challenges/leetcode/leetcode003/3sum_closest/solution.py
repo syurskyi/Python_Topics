@@ -31,5 +31,5 @@ c_ Solution(o..
                 ____ s < target:
                     l += 1
                 ____
-                    r -= 1
+                    r -_ 1
         r.. res

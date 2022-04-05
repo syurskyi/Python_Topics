@@ -53,7 +53,7 @@ c_ Solution:
                 square[j] += nums[i]
                 __ dfs(nums, i + 1, l, square
                     r.. T..
-                square[j] -= nums[i]
+                square[j] -_ nums[i]
 
         r.. F..
 

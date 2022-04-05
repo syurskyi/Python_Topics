@@ -28,11 +28,11 @@ c_ Solution:
             w.... left <_ right a.. colors[left] <_ color_mid:
                 left += 1
             w.... left <_ right a.. colors[right] > color_mid:
-                right -= 1
+                right -_ 1
             __ left <_ right:
                 colors[left], colors[right] = colors[right], colors[left]
                 left += 1
-                right -= 1
+                right -_ 1
 
         rainbow_sort(colors, start, right, color_from, color_mid)
         rainbow_sort(colors, left, end, color_mid + 1, color_to)
@@ -82,6 +82,6 @@ c_ Solution:
                     i += 1
                 ____
                     colors[i], colors[right] = colors[right], colors[i]
-                    right -= 1
+                    right -_ 1
 
             count += 2

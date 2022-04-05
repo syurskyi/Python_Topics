@@ -74,7 +74,7 @@ c_ Solution:
             __ char_cnt + l..(cur_words) - 1 > maxWidth:
                 # break
                 cur_words.p.. )
-                char_cnt -= l..(w)
+                char_cnt -_ l..(w)
                 ___ i __ r..(maxWidth - char_cnt
                     cur_words[i % m..(1, l..(cur_words) - 1)] += " "
 

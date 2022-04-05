@@ -23,11 +23,11 @@ c_ Solution(o..
                     __ i __ j: diag += 1
                     __ i+j __ 2: antidiag += 1
                 ____ board[i][j] __ 'O':
-                    turns -= 1
-                    rows[i] -= 1
-                    cols[j] -= 1
-                    __ i __ j: diag -= 1
-                    __ i+j __ 2: antidiag -= 1
+                    turns -_ 1
+                    rows[i] -_ 1
+                    cols[j] -_ 1
+                    __ i __ j: diag -_ 1
+                    __ i+j __ 2: antidiag -_ 1
         xwin = rows[0]__3 o. rows[1]__3 o. rows[2]__3 o.\
             cols[0]__3 o. cols[1]__ 3 o. cols[2]__3 o.\
             diag __ 3 o. antidiag __ 3

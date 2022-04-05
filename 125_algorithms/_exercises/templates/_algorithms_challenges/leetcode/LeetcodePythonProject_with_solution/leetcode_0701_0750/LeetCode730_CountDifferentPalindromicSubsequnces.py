@@ -24,7 +24,7 @@ c_ Solution(o..
                     w.... low <_ high a.. s[low] != s[j]:
                         low += 1
                     w.... low <_ high a.. s[high] != s[j]:
-                        high -= 1
+                        high -_ 1
                     __ low > high:
                         # 'aba'
                         dp[i][j] = dp[i+1][j-1]*2+2

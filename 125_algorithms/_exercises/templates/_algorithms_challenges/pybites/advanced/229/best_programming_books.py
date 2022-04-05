@@ -57,7 +57,7 @@ ___ display_books(books, limit=10, year_ N..
             _____
         __ year __ N.. o. b.year >_ year:
             print(b)
-            limit -= 1
+            limit -_ 1
 
 
 ___ load_data

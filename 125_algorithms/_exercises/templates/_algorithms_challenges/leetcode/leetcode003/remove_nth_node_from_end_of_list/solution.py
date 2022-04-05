@@ -18,7 +18,7 @@ c_ Solution:
                     pp = p
                     p = p.next
                 q = q.next
-                n -= 1
+                n -_ 1
             # Remove the head node
             __ pp __ p:
                 head = pp.next

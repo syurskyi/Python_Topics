@@ -16,7 +16,7 @@ c_ Solution(o..
         __ i __ j:
             r.. 0
         w.... i < j a.. numsSorted[j] __ nums[j]:
-            j -= 1
+            j -_ 1
         r.. j-i+1
     
     ___ test

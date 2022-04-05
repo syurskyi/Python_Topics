@@ -17,7 +17,7 @@ c_ Solution(o..
             time += course[0]
             heapq.heappush(heap, -course[0])
             __ time > course[1]:
-                time -= -heapq.heappop(heap)
+                time -_ -heapq.heappop(heap)
         r.. l..(heap)
     
     ___ test

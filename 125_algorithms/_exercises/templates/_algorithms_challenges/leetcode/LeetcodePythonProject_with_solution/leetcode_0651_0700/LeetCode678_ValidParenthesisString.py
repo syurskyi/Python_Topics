@@ -16,11 +16,11 @@ c_ Solution(o..
                 high += 1
             ____ c __ ')':
                 __ low > 0:
-                    low -= 1
-                high -= 1
+                    low -_ 1
+                high -_ 1
             ____
                 __ low > 0:
-                    low -= 1
+                    low -_ 1
                 high += 1
             __ high < 0:
                 r.. F..

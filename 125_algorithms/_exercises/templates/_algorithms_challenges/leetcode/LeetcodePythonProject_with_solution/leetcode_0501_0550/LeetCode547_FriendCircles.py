@@ -20,7 +20,7 @@ c_ Solution(o..
                     root1 = getRoot(roots, i)
                     root2 = getRoot(roots, j)
                     __ root1 != root2:
-                        count -= 1
+                        count -_ 1
                         roots[root1] = root2
         r.. count
     

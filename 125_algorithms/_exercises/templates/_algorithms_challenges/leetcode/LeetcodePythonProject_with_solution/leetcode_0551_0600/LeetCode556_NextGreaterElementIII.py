@@ -13,7 +13,7 @@ c_ Solution(o..
         arr = l..(s)
         i = l..(s)-1
         w.... i > 0 a.. arr[i-1] >_ arr[i]:
-            i -= 1
+            i -_ 1
         __ i __ 0:
             r.. -1
         j = l..(s)-1
@@ -21,7 +21,7 @@ c_ Solution(o..
         w.... i < j:
             arr[i], arr[j] = arr[j], arr[i]
             i += 1
-            j -= 1
+            j -_ 1
         j = ind
         w.... j < l..(s) a.. arr[j] <_ arr[ind-1]:
             j += 1

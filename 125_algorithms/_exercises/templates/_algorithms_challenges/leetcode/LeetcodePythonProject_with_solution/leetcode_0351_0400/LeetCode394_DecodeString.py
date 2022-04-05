@@ -35,14 +35,14 @@ c_ Solution(o..
                     __ s[j] __ ' ':
                         count+=1
                     ____ s[j] __ ' ':
-                        count-=1
+                        count-_1
                     j+=1
                 nextInd = j
                 subStr = s[i+1:j-1]
                 tmp = decodeString(subStr)
                 j = i
                 w.... j-1 >_ 0 a.. s[j-1].i..
-                    j-=1
+                    j-_1
                 times = i..(s[j:i])
                 result += times*tmp
                 i = nextInd

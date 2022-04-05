@@ -39,7 +39,7 @@ c_ Solution(o..
             __ target __ matrix[y][x]:
                 r.. T..
             ____ target < matrix[y][x]:
-                x -= 1
+                x -_ 1
             ____
                 y += 1
         r.. F..

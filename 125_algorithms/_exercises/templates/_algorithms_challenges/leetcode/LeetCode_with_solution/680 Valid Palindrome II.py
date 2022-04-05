@@ -30,7 +30,7 @@ c_ Solution:
         w.... i < j:
             __ s[i] __ s[j]:
                 i += 1
-                j -= 1
+                j -_ 1
             ____
                 # error, for -1, start > end. Indexing is like range
                 # return s[i:j] == s[i:j:-1] or s[i+1:j+1] == s[i+1:j+1:-1]

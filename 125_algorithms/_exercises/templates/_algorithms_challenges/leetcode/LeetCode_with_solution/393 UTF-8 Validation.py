@@ -60,7 +60,7 @@ c_ Solution(o..
                 __ required != 0:
                     __ one_cnt != 1:
                         r.. F..
-                    required -= 1
+                    required -_ 1
                 ____
                     __ one_cnt __ 1:
                         r.. F..

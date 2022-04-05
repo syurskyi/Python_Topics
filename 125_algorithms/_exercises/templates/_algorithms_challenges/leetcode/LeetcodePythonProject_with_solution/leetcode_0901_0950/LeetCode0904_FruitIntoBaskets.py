@@ -10,7 +10,7 @@ c_ Solution(o..
         ___ i, num __ e..(tree
             hashmap[num] = hashmap.g.. num, 0) + 1
             w.... l..(hashmap) > 2:
-                hashmap[tree[left]] -= 1
+                hashmap[tree[left]] -_ 1
                 __ hashmap[tree[left]] __ 0:
                     del hashmap[tree[left]]
                 left += 1

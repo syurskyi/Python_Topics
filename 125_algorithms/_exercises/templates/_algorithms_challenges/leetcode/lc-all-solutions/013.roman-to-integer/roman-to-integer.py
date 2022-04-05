@@ -10,7 +10,7 @@ c_ Solution(o..
       c = s[i]
       cafter = s[i + 1]
       __ d[c] < d[cafter]:
-        ans -= d[c]
+        ans -_ d[c]
       ____
         ans += d[c]
     ans += d[s[-1]]

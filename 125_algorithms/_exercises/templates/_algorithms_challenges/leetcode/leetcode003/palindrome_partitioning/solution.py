@@ -24,5 +24,5 @@ c_ Solution:
             __ s[left] != s[right]:
                 r.. F..
             left += 1
-            right -= 1
+            right -_ 1
         r.. T..

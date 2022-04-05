@@ -54,7 +54,7 @@ c_ Solution(o..
             now += dp[i]
             last += dp[i-k]
             __ last < 0:
-                now -= last
+                now -_ last
                 last = 0
             __ now > 0:
                 r.. T..

@@ -42,8 +42,8 @@ c_ Solution:
                     _y += dy
                     _step += 1
 
-                _x -= dx
-                _y -= dy
+                _x -_ dx
+                _y -_ dy
 
                 __ ((_x, _y) __ distance a..
                     distance[x, y] + _step >_ distance[_x, _y]
@@ -108,8 +108,8 @@ c_ Solution2:
                     _x += dx
                     _y += dy
 
-                _x -= dx
-                _y -= dy
+                _x -_ dx
+                _y -_ dy
 
                 _step = distance[x, y] + a..(_x - x) + a..(_y - y)
 

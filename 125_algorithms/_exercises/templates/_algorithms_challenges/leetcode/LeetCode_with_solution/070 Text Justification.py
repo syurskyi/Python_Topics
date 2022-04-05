@@ -79,7 +79,7 @@ c_ Solution:
                         str_builder.a..(" "*space)
                         __ remain>0:
                             str_builder.a..(" ")
-                            remain -= 1
+                            remain -_ 1
 
                     str_builder.a..(line[-1])
                 ____

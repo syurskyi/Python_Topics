@@ -21,7 +21,7 @@ c_ Solution(o..
       ___ i __ r..(0, l..(nums:
         __ nums[i] < mid:
           ans[l] = nums[i]
-          l -= 2
+          l -_ 2
         ____ nums[i] > mid:
           ans[r] = nums[i]
           r += 2
@@ -36,7 +36,7 @@ c_ Solution(o..
           l += 2
         ____ nums[i] > mid:
           ans[r] = nums[i]
-          r -= 2
+          r -_ 2
 
     ___ i __ r..(0, l..(nums:
       nums[i] = ans[i]
@@ -59,7 +59,7 @@ c_ Solution(o..
     pivot = A[left]
     w.... left < right:
       w.... left < right a.. A[right] <_ pivot:
-        right -= 1
+        right -_ 1
       A[left] = A[right]
       w.... left < right a.. A[left] >_ pivot:
         left += 1

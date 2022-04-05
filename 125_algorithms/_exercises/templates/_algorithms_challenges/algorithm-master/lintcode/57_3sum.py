@@ -24,14 +24,14 @@ c_ Solution:
                 __ total __ 0:
                     ans.a..([nums[a], nums[b], nums[c]])
                     b += 1
-                    c -= 1
+                    c -_ 1
                     w.... b < c a.. nums[b] __ nums[b - 1]:
                         b += 1
                     w.... b < c a.. nums[c] __ nums[c + 1]:
-                        c -= 1
+                        c -_ 1
                 ____ total < 0:
                     b += 1
                 ____
-                    c -= 1
+                    c -_ 1
 
         r.. ans

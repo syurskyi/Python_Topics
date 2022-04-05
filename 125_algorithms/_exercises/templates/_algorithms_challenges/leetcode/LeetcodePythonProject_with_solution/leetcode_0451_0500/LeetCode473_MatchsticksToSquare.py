@@ -30,7 +30,7 @@ c_ Solution(o..
             sums[i] += nums[ind]
             __ helper(nums, sums, ind+1, target
                 r.. T..
-            sums[i] -= nums[ind]
+            sums[i] -_ nums[ind]
         r.. F..
     
     ___ test

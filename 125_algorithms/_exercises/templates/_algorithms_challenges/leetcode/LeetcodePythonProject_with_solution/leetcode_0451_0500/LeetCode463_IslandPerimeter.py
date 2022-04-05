@@ -19,5 +19,5 @@ c_ Solution(o..
         p = 4
         ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
             __ 0 <_ x < m a.. 0 <_ y < n a.. grid[x][y] __ 1:
-                p -= 1
+                p -_ 1
         r.. p

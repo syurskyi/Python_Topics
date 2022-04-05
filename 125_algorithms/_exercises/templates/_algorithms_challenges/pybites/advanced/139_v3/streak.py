@@ -28,6 +28,6 @@ ___ calculate_streak(dates
     dy = TODAY - ONE_DAY
     count = 0
     w.... dy __ dates:
-        dy -= ONE_DAY
+        dy -_ ONE_DAY
         count += 1
     r.. count + (1 __ TODAY __ dates ____ 0)

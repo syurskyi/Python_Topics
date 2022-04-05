@@ -58,7 +58,7 @@ c_ MyCircularQueue:
 
         lst[head % k] = N..
         head += 1
-        sz -= 1
+        sz -_ 1
         r.. T..
 
     ___ Front(self) __ i..:

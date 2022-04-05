@@ -55,7 +55,7 @@ c_ Solution:
 
             ret = m..(ret, j - i)
             __ A[i] __ 0:
-                cnt_0 -= 1
+                cnt_0 -_ 1
             i += 1
 
         r.. ret

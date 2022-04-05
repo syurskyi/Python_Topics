@@ -20,7 +20,7 @@ c_ Solution(o..
         p...a..(s[i])
         helper(s, p.., ans, visited)
         p...p.. )
-        visited -= {i}
+        visited -_ {i}
 
     ans    # list
     res    # list
@@ -31,7 +31,7 @@ c_ Solution(o..
     __ l..(s) % 2 __ 1:
       __ l..(oddChars) __ 1:
         mid = oddChars[0]
-        counter[mid] -= 1
+        counter[mid] -_ 1
       ____
         r.. []
     ____ l..(oddChars) > 0:

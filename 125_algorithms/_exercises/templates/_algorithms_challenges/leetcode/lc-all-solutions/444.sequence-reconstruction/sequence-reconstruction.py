@@ -35,7 +35,7 @@ c_ Solution(o..
       top = queue.p.. )
       order.a..(top)
       ___ nbr __ graph[top]:
-        incomings[nbr] -= 1
+        incomings[nbr] -_ 1
         __ incomings[nbr] __ 0:
           queue.a..(nbr)
     __ l..(queue) > 1:

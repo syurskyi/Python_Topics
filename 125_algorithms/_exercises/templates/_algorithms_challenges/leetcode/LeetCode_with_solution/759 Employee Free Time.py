@@ -112,7 +112,7 @@ c_ Solution:
                 count += 1
             ____
                 prev = t
-                count -= 1
+                count -_ 1
 
         r.. ret
 

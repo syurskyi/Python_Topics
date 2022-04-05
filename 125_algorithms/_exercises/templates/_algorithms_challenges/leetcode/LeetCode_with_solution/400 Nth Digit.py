@@ -35,11 +35,11 @@ c_ Solution(o..
         digit_cnt = 1
         num_cnt = 9
         w.... n > digit_cnt * num_cnt:
-            n -= digit_cnt * num_cnt
+            n -_ digit_cnt * num_cnt
             digit_cnt += 1
             num_cnt *= 10
 
-        n -= 1  # debugging: without -1, it just pass over the target digit
+        n -_ 1  # debugging: without -1, it just pass over the target digit
         q, r = n / digit_cnt, n % digit_cnt
         target = num_cnt / 9 + q
         r.. i..(s..(target)[r])

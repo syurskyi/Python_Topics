@@ -32,7 +32,7 @@ c_ UnionFind(o..
 
             pi[pi1] = pi2
             sz[pi2] += sz[pi1]
-            count -= 1
+            count -_ 1
 
     ___ _pi  item
         """

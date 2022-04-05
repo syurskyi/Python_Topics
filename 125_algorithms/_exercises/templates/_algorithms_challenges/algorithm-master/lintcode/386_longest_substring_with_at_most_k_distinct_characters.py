@@ -25,9 +25,9 @@ c_ Solution:
             right += 1
 
             w.... cnt > k:
-                freq[s[left]] -= 1
+                freq[s[left]] -_ 1
                 __ freq[s[left]] __ 0:
-                    cnt -= 1
+                    cnt -_ 1
 
                 left += 1
 

@@ -18,15 +18,15 @@ c_ Solution:
             __ _sum __ target:
                 ans += 1
                 left += 1
-                right -= 1
+                right -_ 1
                 w.... left < right a.. nums[right] __ nums[right + 1]:
-                    right -= 1
+                    right -_ 1
                 w.... left < right a.. nums[left] __ nums[left - 1]:
-                    left -= 1
+                    left -_ 1
                 _____
 
             __ _sum > target:
-                right -= 1
+                right -_ 1
             ____
                 left += 1
 

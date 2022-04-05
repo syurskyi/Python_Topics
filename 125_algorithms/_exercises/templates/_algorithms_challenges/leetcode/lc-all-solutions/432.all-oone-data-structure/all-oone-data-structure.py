@@ -41,7 +41,7 @@ c_ Node(o..
     keys |= {key}
 
   ___ remove  key
-    keys -= {key}
+    keys -_ {key}
 
   ___ isEmpty
     r.. l..(keys) __ 0

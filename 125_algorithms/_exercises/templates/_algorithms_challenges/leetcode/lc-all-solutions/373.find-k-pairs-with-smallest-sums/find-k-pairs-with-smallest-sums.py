@@ -18,7 +18,7 @@ c_ Solution(o..
     w.... heap:
       val, i, j = heapq.heappop(heap)
       ans.a..((nums1[i], nums2[j]
-      k -= 1
+      k -_ 1
       __ k __ 0:
         r.. ans
       __ i + 1 < l..(nums1) a.. (i + 1, j) n.. __ visited:

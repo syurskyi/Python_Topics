@@ -24,15 +24,15 @@ c_ Solution(o..
             __ c __ hashmap0 a.. hashmap[c] __ hashmap0[c]:
                 count += 1
             w.... left <_ i a.. hashmap[s[left]] > hashmap0.g.. s[left], 0
-                hashmap[s[left]] -= 1
+                hashmap[s[left]] -_ 1
                 left += 1
             __ count __ l..(hashmap0
                 __ minLen > i-left+1:
                     minLen = i-left+1
                     res = s[left:i+1]
                 __ hashmap0.g.. s[left], 0) __ hashmap[s[left]]:
-                    count -= 1
-                hashmap[s[left]] -= 1
+                    count -_ 1
+                hashmap[s[left]] -_ 1
                 left += 1
         r.. res
     
@@ -55,7 +55,7 @@ c_ Solution(o..
                 hashset.add(c)
             hashmapAll[c] = hashmapAll.g.. c, 0)+1
             w.... left < i a.. (s[left] n.. __ hashmap o. hashmapAll[s[left]] > hashmap[s[left]]
-                hashmapAll[s[left]] -= 1
+                hashmapAll[s[left]] -_ 1
                 __ hashmapAll[s[left]] < hashmap.g.. s[left], 0
                     hashset.discard(s[left])
                 __ hashmapAll[s[left]] __ 0:

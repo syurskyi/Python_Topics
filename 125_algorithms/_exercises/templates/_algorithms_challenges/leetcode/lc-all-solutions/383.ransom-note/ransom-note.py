@@ -13,5 +13,5 @@ c_ Solution(o..
       __ letters[o..(c) - o..('a')] __ 0:
         r.. F..
       ____
-        letters[o..(c) - o..('a')] -= 1
+        letters[o..(c) - o..('a')] -_ 1
     r.. T..

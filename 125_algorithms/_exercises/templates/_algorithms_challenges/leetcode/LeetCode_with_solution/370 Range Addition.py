@@ -26,7 +26,7 @@ c_ Solution(o..
         deltas = [0 ___ _ __ x..(length)]
         ___ i, j, k __ updates:
             deltas[i] += k
-            __ j + 1 < length: deltas[j + 1] -= k
+            __ j + 1 < length: deltas[j + 1] -_ k
 
         ret    # list
         acc = 0

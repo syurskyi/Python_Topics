@@ -89,7 +89,7 @@ c_ Solution:
             __ w[i] != w[j]:
                 r.. F..
             i += 1
-            j -= 1
+            j -_ 1
         r.. T..
 
 

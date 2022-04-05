@@ -15,7 +15,7 @@ c_ Solution(o..
             arr[ind] += 1
             maxCount = m..(maxCount, arr[ind])
             __ left <_ i a.. maxCount+k<i-left+1:
-                arr[o..(s[left])-o..('A')] -= 1
+                arr[o..(s[left])-o..('A')] -_ 1
                 left += 1
             res = m..(res, i-left+1)
         r.. res

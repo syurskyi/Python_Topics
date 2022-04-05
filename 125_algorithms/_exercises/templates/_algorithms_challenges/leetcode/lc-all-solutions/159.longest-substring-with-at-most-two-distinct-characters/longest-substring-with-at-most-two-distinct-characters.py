@@ -26,7 +26,7 @@ c_ Solution(o..
         j += 1
 
       ans = m..(ans, j - i)
-      chashmap[s[i]] -= 1
+      chashmap[s[i]] -_ 1
       __ chashmap[s[i]] __ 0:
-        score -= 1
+        score -_ 1
     r.. ans

@@ -17,5 +17,5 @@ c_ Solution(o..
     ___ _ __ r..(n
       fk += sumA - n * A[idx]
       ans = m..(ans, fk)
-      idx -= 1
+      idx -_ 1
     r.. ans

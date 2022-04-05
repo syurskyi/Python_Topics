@@ -12,7 +12,7 @@ c_ Solution(o..
         __ cand[start] != cand[end]:
           r.. F..
         start += 1
-        end -= 1
+        end -_ 1
       r.. T..
 
     n = l..(s)

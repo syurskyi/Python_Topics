@@ -26,7 +26,7 @@ c_ Solution(o..
             v1, v2 = stack1.p.. ), stack2.p.. )
             val = v1 + v2 + carry
             __ val >_ 10:
-                val -= 10
+                val -_ 10
                 carry = 1
             ____
                 carry = 0
@@ -38,7 +38,7 @@ c_ Solution(o..
         w.... stack1:
             val = stack1.p.. ) + carry
             __ val >_ 10:
-                val -= 10
+                val -_ 10
                 carry = 1
             ____
                 carry = 0

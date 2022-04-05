@@ -20,6 +20,6 @@ c_ Solution:
                 ans += right - left
                 left += 1
             ____
-                right -= 1
+                right -_ 1
 
         r.. ans

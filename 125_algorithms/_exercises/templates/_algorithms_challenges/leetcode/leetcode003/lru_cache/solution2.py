@@ -107,4 +107,4 @@ c_ L..(o..
         ____
             head = N..
             tail = N..
-        size -= 1
+        size -_ 1

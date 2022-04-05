@@ -30,7 +30,7 @@ c_ Solution:
             __ c n.. __ cnt o. cnt[c] < 1:
                 r.. F..
 
-            cnt[c] -= 1
+            cnt[c] -_ 1
 
         ___ v __ cnt.v..
             __ v != 0:

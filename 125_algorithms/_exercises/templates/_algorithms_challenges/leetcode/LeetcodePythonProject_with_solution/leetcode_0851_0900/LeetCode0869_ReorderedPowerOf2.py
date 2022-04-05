@@ -28,7 +28,7 @@ c_ Solution(o..
                 hashmap[c] = 1
         ___ c __ s..(num
             __ c __ hashmap:
-                hashmap[c] -= 1
+                hashmap[c] -_ 1
                 __ hashmap[c] __ 0:
                     del hashmap[c]
             ____

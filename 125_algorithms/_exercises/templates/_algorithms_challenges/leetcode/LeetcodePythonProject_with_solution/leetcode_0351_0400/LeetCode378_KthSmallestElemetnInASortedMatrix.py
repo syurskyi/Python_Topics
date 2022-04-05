@@ -24,7 +24,7 @@ c_ Solution(o..
                 count += i+1
                 j += 1
             ____
-                i -= 1
+                i -_ 1
         r.. count
     
     ___ test

@@ -35,8 +35,8 @@ c_ Solution(o..
         ____
           ret += "1"
 
-      ai -= 1
-      bi -= 1
+      ai -_ 1
+      bi -_ 1
 
     __ carry __ 1:
       ret += "1"

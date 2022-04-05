@@ -28,7 +28,7 @@ c_ Solution:
         n = l..(s)
 
         w.... left >_ 0 a.. right < n a.. s[left] __ s[right]:
-            left -= 1
+            left -_ 1
             right += 1
 
         r.. left + 1, right - left - 1

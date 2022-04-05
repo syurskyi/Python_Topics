@@ -76,7 +76,7 @@ c_ TimeMap:
         i = b__.b__(lst, (timestamp, ""
         __ i < l..(lst) a.. lst[i][0] __ timestamp:
             r.. lst[i][1]
-        i -= 1
+        i -_ 1
         __ i >_ 0:
             r.. lst[i][1]
             

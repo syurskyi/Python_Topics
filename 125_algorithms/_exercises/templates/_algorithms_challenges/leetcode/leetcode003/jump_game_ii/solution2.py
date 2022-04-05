@@ -35,7 +35,7 @@ c_ Solution:
                 __ t[i] >_ cur:
                     min_i = i
                     reached = T..
-                i -= 1
+                i -_ 1
             __ n.. reached:
                 r.. -1
             reached = F..

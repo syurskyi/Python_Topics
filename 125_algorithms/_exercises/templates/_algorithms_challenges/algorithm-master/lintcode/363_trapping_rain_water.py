@@ -19,5 +19,5 @@ c_ Solution:
             ____
                 mx_r = m..(mx_r, heights[r])
                 ans += mx_r - heights[r]
-                r -= 1
+                r -_ 1
         r.. ans

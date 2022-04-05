@@ -21,7 +21,7 @@ c_ Solution(o..
             _____
           __ 0 <_ newi < l..(grid) a.. 0 <_ newj < l..(grid[0]) a.. grid[newi][newj] != 2:
             __ grid[newi][newj] != 1:
-              grid[newi][newj] -= dist + 1
+              grid[newi][newj] -_ dist + 1
               hit[newi][newj] += 1
               visited |= {(newi, newj)}
               queue.a..((newi, newj, dist + 1

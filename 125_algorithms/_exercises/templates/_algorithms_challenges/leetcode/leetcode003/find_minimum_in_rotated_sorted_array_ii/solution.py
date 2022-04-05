@@ -35,7 +35,7 @@ c_ Solution(o..
                 right = mid - 1
             # The mid element equals the right element
             ____
-                right -= 1
+                right -_ 1
         # All elements are equal
         r.. nums[0]
 

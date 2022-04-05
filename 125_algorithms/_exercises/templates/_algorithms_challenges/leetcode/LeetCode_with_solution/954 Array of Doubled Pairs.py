@@ -46,8 +46,8 @@ c_ Solution:
             __ counter[2*a] __ 0:
                 r.. F..
 
-            counter[a] -= 1
-            counter[2*a] -= 1
+            counter[a] -_ 1
+            counter[2*a] -_ 1
 
         r.. T..
 
@@ -60,7 +60,7 @@ c_ Solution:
         ___ a __ A:
             __ counter[a] __ 0:
                 _____
-            counter[a] -= 1
+            counter[a] -_ 1
             __ a > 0:
                 target = 2 * a
             ____ a % 2 != 0:
@@ -69,7 +69,7 @@ c_ Solution:
                 target = a // 2
 
             __ counter[target] > 0:
-                counter[target] -= 1
+                counter[target] -_ 1
             ____
                 r.. F..
 

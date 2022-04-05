@@ -48,6 +48,6 @@ c_ Solution:
             __ _sum < target:
                 left += 1
             ____
-                right -= 1
+                right -_ 1
 
         r.. NOT_FOUND

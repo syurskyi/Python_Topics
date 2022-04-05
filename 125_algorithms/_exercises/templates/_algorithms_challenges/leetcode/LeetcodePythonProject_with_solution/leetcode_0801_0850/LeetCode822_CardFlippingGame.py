@@ -51,10 +51,10 @@ c_ Solution(o..
         fronts[i], backs[i] = backs[i], fronts[i]
         hashmap1[b] = hashmap1.g.. b, 0)+1
         hashmap2[f] = hashmap2.g.. f, 0)+1
-        hashmap1[f] -= 1
+        hashmap1[f] -_ 1
         __ hashmap1[f] __ 0:
             del hashmap1[f]
-        hashmap2[b] -= 1
+        hashmap2[b] -_ 1
         __ hashmap2[b] __ 0:
             del hashmap2[b]
         __ backs[i] n.. __ hashmap1:

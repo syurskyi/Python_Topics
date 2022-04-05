@@ -20,6 +20,6 @@ c_ Solution:
                 left += 1
             ____
                 diff = m..(diff, _sum - target)
-                right -= 1
+                right -_ 1
 
         r.. diff

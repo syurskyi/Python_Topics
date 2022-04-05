@@ -10,7 +10,7 @@ c_ Solution(o..
       start, end, delta = update
       ans[start] += delta
       __ end + 1 < length:
-        ans[end + 1] -= delta
+        ans[end + 1] -_ delta
 
     delta = 0
     ___ i __ r..(0, length

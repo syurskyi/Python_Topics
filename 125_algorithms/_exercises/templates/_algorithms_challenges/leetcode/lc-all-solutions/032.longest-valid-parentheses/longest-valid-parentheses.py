@@ -11,7 +11,7 @@ c_ Solution(o..
       __ s[i] __ "(":
         left += 1
       ____ left > 0:
-        left -= 1
+        left -_ 1
         dp[i] = dp[i - 1] + 2
         j = i - dp[i]
         __ j >_ 0:

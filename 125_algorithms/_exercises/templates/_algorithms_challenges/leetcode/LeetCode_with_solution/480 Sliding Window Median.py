@@ -59,9 +59,9 @@ c_ DualHeap:
     ___ pop  num
         to_remove.add(num)
         __ max_h a.. num > max_h[0][1]:
-            min_sz -= 1
+            min_sz -_ 1
         ____
-            max_sz -= 1
+            max_sz -_ 1
         balance()
 
     ___ clean_top
@@ -78,14 +78,14 @@ c_ DualHeap:
             clean_top()
             _, num =heapq.heappop(min_h)
             heapq.heappush(max_h, (-num, num
-            min_sz -= 1
+            min_sz -_ 1
             max_sz += 1
         w.... max_sz > min_sz + 1:
             clean_top()
             _, num = heapq.heappop(max_h)
             heapq.heappush(min_h, (num, num
             min_sz += 1
-            max_sz -= 1
+            max_sz -_ 1
 
         clean_top()
 

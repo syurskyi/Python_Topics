@@ -18,11 +18,11 @@ c_ Solution(o..
         ___ c __ s:
             w.... count[o..(c)-o..('a')] > 0:
                 res += c
-                count[o..(c)-o..('a')] -= 1
+                count[o..(c)-o..('a')] -_ 1
         ___ i __ r..(26
             w.... count[i] > 0:
                 res += chr(i+o..('a'
-                count[i] -= 1
+                count[i] -_ 1
         r.. res
     
     ___ test

@@ -65,7 +65,7 @@ c_ Solution:
 
         remaining = target
         ___ i __ r..(l..(p..) - 1, -1, -1
-            remaining -= p..[i]
+            remaining -_ p..[i]
 
             __ remaining __ 0:
                 ans.a..(p..[i:])

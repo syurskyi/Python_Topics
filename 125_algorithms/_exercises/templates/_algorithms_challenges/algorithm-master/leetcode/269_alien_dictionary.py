@@ -60,7 +60,7 @@ c_ Solution:
             __ c n.. __ edges:
                 _____
             ___ _c __ edges[c]:
-                indeg[_c] -= 1
+                indeg[_c] -_ 1
                 __ indeg[_c] __ 0:
                     queue.a..(_c)
 

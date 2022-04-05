@@ -46,8 +46,8 @@ c_ Solution:
                 _y += dy
 
             # since for now its means the position of wall
-            _x -= dx
-            _y -= dy
+            _x -_ dx
+            _y -_ dy
 
             __ dfs(maze, _x, _y, tx, ty, visited
                 r.. T..

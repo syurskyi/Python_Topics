@@ -31,7 +31,7 @@ c_ Solution:
                 _____
 
             w.... num >_ amount:  # num - amount >= 0
-                num -= amount
+                num -_ amount
                 ans.a..(symb)
 
         r.. ''.j..(ans)

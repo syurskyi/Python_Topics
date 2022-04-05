@@ -20,10 +20,10 @@ c_ Solution(o..
             __ i < 0:
                 _____
             __ n.. dp[i]:
-                i-=1
+                i-_1
             ____
                 result.a..(dp[i].p.. 0
-                k-=1
+                k-_1
         r.. result
         
     
@@ -38,7 +38,7 @@ c_ Solution(o..
         result    # list
         w.... k > 0:
             result.a..(heapq.heappop(heap)[1])
-            k -= 1
+            k -_ 1
         r.. result
     
     ___ test

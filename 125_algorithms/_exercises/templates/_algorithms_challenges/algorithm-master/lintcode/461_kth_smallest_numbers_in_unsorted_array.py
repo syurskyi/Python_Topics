@@ -21,12 +21,12 @@ c_ Solution:
             w.... left <_ right a.. A[left] < pivot:
                 left += 1
             w.... left <_ right a.. A[right] > pivot:
-                right -= 1
+                right -_ 1
 
             __ left <_ right:
                 A[left], A[right] = A[right], A[left]
                 left += 1
-                right -= 1
+                right -_ 1
 
         __ start <_ k <_ right:
             r.. quick_select(k, A, start, right)

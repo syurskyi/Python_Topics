@@ -27,8 +27,8 @@ c_ Solution(o..
         :param n:
         :return:
         """
-        m -= 1
-        n -= 1
+        m -_ 1
+        n -_ 1
         r.. m__.factorial(m+n) / (m__.factorial(n) * m__.factorial(m
 
     ___ uniquePathsDP  m, n

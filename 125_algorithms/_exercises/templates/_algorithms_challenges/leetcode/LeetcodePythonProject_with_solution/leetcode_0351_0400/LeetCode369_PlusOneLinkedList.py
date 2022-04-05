@@ -20,7 +20,7 @@ c_ Solution(o..
         w.... node a.. carry:
             val = node.val + carry
             __ val >_ 10:
-                val -= 10
+                val -_ 10
                 carry = 1
             ____
                 carry = 0

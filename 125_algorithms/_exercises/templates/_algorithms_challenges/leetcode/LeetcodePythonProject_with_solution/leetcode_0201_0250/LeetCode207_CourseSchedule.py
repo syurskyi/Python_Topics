@@ -26,7 +26,7 @@ c_ Solution(o..
         w.... queue:
             course = queue.p.. 0)
             ___ pointer __ graph[course]:
-                degree[pointer] -= 1
+                degree[pointer] -_ 1
                 __ degree[pointer] __ 0:
                     queue.a..(pointer)
                     count += 1

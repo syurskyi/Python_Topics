@@ -12,7 +12,7 @@ c_ Solution(o..
                 rmL += 1
             ____ c __ ')':
                 __ rmL > 0:
-                    rmL -= 1
+                    rmL -_ 1
                 ____
                     rmR += 1
         result = s..()

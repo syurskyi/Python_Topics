@@ -16,7 +16,7 @@ c_ Solution(o..
         arr.s..()
         i = 25
         w.... i >_ 0 a.. arr[i]__arr[-1]:
-            i -= 1
+            i -_ 1
         r.. m..(l..(tasks), (arr[-1]-1)*(n+1)+25-i)
     
     ___ leastInterval_own  tasks, n
@@ -41,14 +41,14 @@ c_ Solution(o..
                 res += l..(queue)
                 w.... queue:
                     count, c = queue.p.. 0)
-                    count -= 1
+                    count -_ 1
                     __ count > 0:
                         heapq.heappush(heap, (-count, c
             __ n.. heap:
                 count0 = l..(queue)
                 w.... queue:
                     count, c = queue.p.. 0)
-                    count -= 1
+                    count -_ 1
                     __ count > 0:
                         heapq.heappush(heap, (-count, c
                 __ n.. heap:

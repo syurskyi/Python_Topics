@@ -45,7 +45,7 @@ c_ Solution:
                     _____
 
                 __ union(nodes, node, (_x, _y:
-                    cnt -= 1
+                    cnt -_ 1
 
             ans.a..(cnt)
 

@@ -23,7 +23,7 @@ c_ LinkedList(o..
             head = new_node
 
     ___ pop
-        length -= 1
+        length -_ 1
         __ tail __ n.. N..
             popped_node = tail
             tail = popped_node.previous
@@ -40,7 +40,7 @@ c_ LinkedList(o..
             tail = new_node
 
     ___ shift
-        length -= 1
+        length -_ 1
         __ head __ n.. N..
             shifted_node = head
             head = shifted_node.succeeding

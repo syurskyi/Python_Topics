@@ -41,7 +41,7 @@ c_ Solution(o..
                 i += 1
                 res.a..(prevHead)
                 prevHead = head
-            lengths[i] -= 1
+            lengths[i] -_ 1
             prev = head
             head = head.next
         res.a..(prevHead)

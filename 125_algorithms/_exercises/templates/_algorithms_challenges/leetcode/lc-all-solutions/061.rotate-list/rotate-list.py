@@ -27,7 +27,7 @@ c_ Solution(o..
     k
     w.... k > 0:
       pp = pp.next
-      k -= 1
+      k -_ 1
     newHead = pp.next
     pp.next = N..
     p.next = head

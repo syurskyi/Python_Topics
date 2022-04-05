@@ -15,7 +15,7 @@ c_ Solution(o..
         sumVal = (length+1)*(length)/2
         result = sumVal
         ___ num __ nums:
-            result -= num
+            result -_ num
         r.. result
     
     

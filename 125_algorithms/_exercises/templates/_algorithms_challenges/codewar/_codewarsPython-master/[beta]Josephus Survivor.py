@@ -6,12 +6,12 @@ ___ josephus_survivor(n,k
         w.... steps > 0:
             __ index + 1 > n-1:
                 index = 0
-                steps -= 1
+                steps -_ 1
             ____ circle[index+1] __ 0:
                 index += 1
             ____
                 index += 1
-                steps -= 1
+                steps -_ 1
         circle[index] = 0
         print(circle,index)
     ___ num __ circle:

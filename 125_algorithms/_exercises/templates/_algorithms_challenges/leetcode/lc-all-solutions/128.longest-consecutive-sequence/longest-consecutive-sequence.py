@@ -15,7 +15,7 @@ c_ Solution(o..
         w.... left __ s:
           s.discard(left)
           cnt += 1
-          left -= 1
+          left -_ 1
         w.... right __ s:
           s.discard(right)
           cnt += 1

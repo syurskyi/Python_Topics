@@ -27,7 +27,7 @@ c_ Solution(o..
         
         # Mark whether there is a brick at the each hit
         ___ i, j __ hits:
-            grid[i][j] -= 1
+            grid[i][j] -_ 1
         
         # Get grid after all hits
         ___ i __ r..(n

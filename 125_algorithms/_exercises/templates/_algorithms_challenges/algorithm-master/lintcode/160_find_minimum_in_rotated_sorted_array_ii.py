@@ -40,7 +40,7 @@ c_ Solution:
             mid = (left + right) // 2
             __ A[mid] __ A[right]:
                 # means it's ok to remove the end child
-                right -= 1
+                right -_ 1
             ____ A[mid] < A[right]:
                 # mid at the right side of pivot
                 right = mid

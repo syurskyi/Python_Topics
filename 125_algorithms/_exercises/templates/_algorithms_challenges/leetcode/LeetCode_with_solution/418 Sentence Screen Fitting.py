@@ -68,7 +68,7 @@ c_ Solution:
         ___ r __ r..(rows
             i += cols
             w.... sentence[i % l..(sentence)] != " ":
-                i -= 1
+                i -_ 1
 
             # now sentence[i] is " "
             i += 1

@@ -14,6 +14,6 @@ c_ Solution(o..
           ans += end - start
           start += 1
         ____
-          end -= 1
+          end -_ 1
 
     r.. ans

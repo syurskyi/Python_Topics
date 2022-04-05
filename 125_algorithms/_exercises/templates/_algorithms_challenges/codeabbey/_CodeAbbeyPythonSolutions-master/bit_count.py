@@ -5,7 +5,7 @@ ___ c.. decimal_number
     is_negative = F..
     __(decimal_number < 0
         decimal_number *= -1
-        decimal_number -=1
+        decimal_number -_1
         is_negative = T..
     counter = 0
     w....(decimal_number != 0

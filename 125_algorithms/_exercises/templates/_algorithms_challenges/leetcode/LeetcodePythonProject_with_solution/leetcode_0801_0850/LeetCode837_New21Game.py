@@ -18,7 +18,7 @@ c_ Solution(o..
         ___ i __ r..(1, n+1
             dp[i] = wSum/w
             __ i < k: wSum += dp[i]
-            __ i - w >_ 0: wSum -= dp[i-w]
+            __ i - w >_ 0: wSum -_ dp[i-w]
         r.. s..(dp[k:])
     
     ___ test

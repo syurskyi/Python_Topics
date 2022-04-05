@@ -21,7 +21,7 @@ c_ Solution(o..
         ___ num __ A:
             __ num > med:
                 __ num - med > K:
-                    num -= K
+                    num -_ K
                 ____
                     num = med
             ____ num < med:

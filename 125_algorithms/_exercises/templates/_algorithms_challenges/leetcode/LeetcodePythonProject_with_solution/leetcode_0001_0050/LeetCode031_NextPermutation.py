@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         j = l..(nums)-1
         w.... j > 0 a.. nums[j-1] >_ nums[j]:
-            j -= 1
+            j -_ 1
         reverse(nums, j, l..(nums)-1)
         __ j __ 0:
             r..
@@ -25,7 +25,7 @@ c_ Solution(o..
         w.... i < j:
             nums[i], nums[j] = nums[j], nums[i]
             i += 1
-            j -= 1
+            j -_ 1
     
     ___ test
         testCases = [

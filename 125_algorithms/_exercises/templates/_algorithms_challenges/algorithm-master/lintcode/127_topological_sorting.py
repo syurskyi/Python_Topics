@@ -30,7 +30,7 @@ c_ Solution:
         ___ node __ queue:
             ans.a..(node)
             ___ _node __ node.neighbors:
-                indegs[_node] -= 1
+                indegs[_node] -_ 1
                 __ indegs[_node] __ 0:
                     queue.a..(_node)
 

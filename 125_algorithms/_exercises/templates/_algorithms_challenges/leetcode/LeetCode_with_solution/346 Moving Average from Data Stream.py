@@ -24,7 +24,7 @@ c_ MovingAverage(o..
         q.a..(val)
         s.. += val
         __ l..(q) > size:
-            s.. -= q.popleft()
+            s.. -_ q.popleft()
 
         r.. f__(s..) / l..(q)
 

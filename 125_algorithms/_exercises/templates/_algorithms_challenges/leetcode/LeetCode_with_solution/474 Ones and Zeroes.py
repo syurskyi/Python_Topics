@@ -165,8 +165,8 @@ c_ Solution:
             count = C..(a)
             __ count["0"] <_ m a.. count["1"] <_ n:
                 ret += 1
-                m -= count["0"]
-                n -= count["1"]
+                m -_ count["0"]
+                n -_ count["1"]
 
         r.. ret
 

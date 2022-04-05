@@ -34,7 +34,7 @@ c_ Solution(o..
                 __ expression[i] __ '?':
                     count += 1
                 ____ expression[i] __ ':':
-                    count -= 1
+                    count -_ 1
                     __ count __ -1:
                         subExp = expression[2:i]
                         _____
@@ -47,7 +47,7 @@ c_ Solution(o..
                 __ expression[i] __ '?':
                     count += 1
                 ____ expression[i] __ ':':
-                    count -= 1
+                    count -_ 1
                     __ count __ -1:
                         subExp = expression[i+1:]
                         _____

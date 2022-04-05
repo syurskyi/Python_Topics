@@ -42,6 +42,6 @@ c_ Solution(o..
         ni, nj = i + di, j + dj
         __ 0 <_ ni < m a.. 0 <_ nj < n a.. (ni, nj) __ grid:
           __ uf.union((ni * n + nj, i * n + j:
-            ans -= 1
+            ans -_ 1
       ret.a..(ans)
     r.. ret

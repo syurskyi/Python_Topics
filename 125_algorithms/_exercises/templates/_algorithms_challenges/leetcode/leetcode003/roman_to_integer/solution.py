@@ -23,7 +23,7 @@ c_ Solution(o..
         res = 0
         ___ i, c __ e..(s
             __ i < l..(s) - 1 a.. roman[c] < roman[s[i + 1]]:
-                res -= roman[c]
+                res -_ roman[c]
             ____
                 res += roman[c]
         r.. res

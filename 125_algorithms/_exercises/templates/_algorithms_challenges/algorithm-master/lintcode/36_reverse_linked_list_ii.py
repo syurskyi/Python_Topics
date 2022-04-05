@@ -22,14 +22,14 @@ c_ Solution:
         """
         to get to `n`th node from `m`th node needs `n - m` operations
         """
-        n -= m
+        n -_ m
 
         """
         `A` will stay at `m-1`th node
         """
         A = dummy = ListNode(-1, head)
         w.... m > 1:
-            m -= 1
+            m -_ 1
             A = A.next
 
         """
@@ -39,7 +39,7 @@ c_ Solution:
         B = cur = A.next
         pre = nxt = N..
         w.... n >_ 0:
-            n -= 1
+            n -_ 1
             nxt = B.next
             B.next = pre
             pre = B

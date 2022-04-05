@@ -14,9 +14,9 @@ c_ Solution(o..
       __ s[start] n.. __ vowels:
         start += 1
       ____ s[end] n.. __ vowels:
-        end -= 1
+        end -_ 1
       ____
         s[start], s[end] = s[end], s[start]
         start += 1
-        end -= 1
+        end -_ 1
     r.. "".j..(s)

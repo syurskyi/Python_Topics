@@ -17,7 +17,7 @@ c_ Solution(o..
             __ l*l + r*r < c:
                 l += 1
             ____ l*l + r*r > c:
-                r -= 1
+                r -_ 1
             ____
                 r.. T..
         r.. F..

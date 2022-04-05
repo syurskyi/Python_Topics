@@ -18,15 +18,15 @@ c_ Solution(o..
         i = 0
       ____ i >_ l..(matrix
         i = l..(matrix) - 1
-        j -= 2 * dj
+        j -_ 2 * dj
       ____ 0 <_ i < l..(matrix) a.. j < 0:
         j = 0
       ____ 0 <_ i < l..(matrix) a.. j >_ l..(matrix[0]
         j = l..(matrix[0]) - 1
-        i -= 2 * di
+        i -_ 2 * di
       ____ i < 0 a.. j >_ l..(matrix[0]
         i = 1
-        j -= dj
+        j -_ dj
       ____
         _____
       d = ~d

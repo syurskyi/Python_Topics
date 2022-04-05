@@ -36,7 +36,7 @@ c_ Solution:
                 current <<= 1
                 current_result <<= 1
 
-            dividend -= current>>1
+            dividend -_ current>>1
             result += current_result>>1
 
         r.. sign*result

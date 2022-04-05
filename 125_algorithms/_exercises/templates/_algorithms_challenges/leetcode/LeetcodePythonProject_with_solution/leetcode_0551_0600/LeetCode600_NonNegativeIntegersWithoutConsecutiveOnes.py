@@ -23,7 +23,7 @@ c_ Solution(o..
             __ s[i] __ '1' a.. s[i+1] __ '1':
                 _____
             __ s[i] __ '0' a.. s[i+1] __ '0':
-                res -= dp2[i]
+                res -_ dp2[i]
         r.. res
     
     ___ test

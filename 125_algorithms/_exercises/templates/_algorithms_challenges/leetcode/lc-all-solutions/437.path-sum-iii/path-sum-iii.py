@@ -15,7 +15,7 @@ c_ Solution(o..
         preDict[pathSum] = preDict.g.. pathSum, 0) + 1
         dfs(p.left, target, pathSum, preDict)
         dfs(p.right, target, pathSum, preDict)
-        preDict[pathSum] -= 1
+        preDict[pathSum] -_ 1
 
     dfs(root, target, 0, preDict)
     r.. count

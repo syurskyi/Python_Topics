@@ -45,8 +45,8 @@ c_ Solution(o..
         ___ i __ r..(l..(start:
             __ start[i] __ 'R': r += 1
             __ end[i] __ 'L': l += 1
-            __ start[i] __ 'L': l -= 1
-            __ end[i] __ 'R': r -= 1
+            __ start[i] __ 'L': l -_ 1
+            __ end[i] __ 'R': r -_ 1
             __ (l < 0 o. r != 0) a.. (l != 0 o. r < 0
                 r.. F..
         __ l __ 0 a.. r __ 0:

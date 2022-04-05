@@ -15,7 +15,7 @@ c_ Solution(o..
         __ count[i] % 3 != 0:
           ret |= 1 << i
       __ ret > 0x7fffffff:
-        ret -= 0x100000000
+        ret -_ 0x100000000
       r.. ret
 
     r.. singleNumberK(nums, 3)

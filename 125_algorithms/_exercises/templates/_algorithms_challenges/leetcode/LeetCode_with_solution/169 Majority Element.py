@@ -23,7 +23,7 @@ c_ Solution:
             __ mjr __ v:
                 cnt += 1
             ____
-                cnt -= 1
+                cnt -_ 1
 
             __ cnt < 0:
                 mjr = v
