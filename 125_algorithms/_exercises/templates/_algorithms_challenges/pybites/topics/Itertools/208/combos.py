@@ -9,6 +9,6 @@ ____ i.. _______ combinations
     return temp """
 
 ___ find_number_pairs(numbers, N=10
-    r..[(i,j) ___ i, j __ combinations(numbers,2) __ i+j__N]
+    r..[(i,j) ___ i, j __ c..numbers,2) __ i+j__N]
 
 print(find_number_pairs([9, 1, 3, 8, 7]

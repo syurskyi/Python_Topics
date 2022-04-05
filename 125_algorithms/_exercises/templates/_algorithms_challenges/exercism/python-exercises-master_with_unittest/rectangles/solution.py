@@ -98,7 +98,7 @@ ___ c.. lines=""
 
     # now let the magic begins
     # all combinations of 4 corners (python ftw)
-    q = l..(i...combinations(corners, r=4
+    q = l..(i...c..corners, r=4
     rectangles    # list
     ___ el __ q:
         __ (possible_rect(el:

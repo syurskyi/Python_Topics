@@ -8,6 +8,6 @@ suits =  'H', 'C', 'D', 'S'
 deck = [card ___ card __ i...product(rank, suits)]
 print(deck)
 
-combinations = [combination ___ combination __ i...combinations(deck, 5)]
+combinations = [combination ___ combination __ i...c..deck, 5)]
 
 print(l..(combinations

@@ -20,7 +20,7 @@ ___ solve(puzzle
     letters = s..(char ___ char __ puzzle __ char.isupper
     numbers = map(s.., r..(10
 
-    ___ c __ combinations(numbers, l..(letters:
+    ___ c __ c..numbers, l..(letters:
         ___ p __ permutations(c
             substitutions = d..(z..(letters, p
             __ test_equation(puzzle, substitutions

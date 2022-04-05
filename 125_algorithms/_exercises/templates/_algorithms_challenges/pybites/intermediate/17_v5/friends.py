@@ -4,4 +4,4 @@ ___ friends_teams(friend_list: l.., team_size: i.., order_does_matter: b.. = F..
     __ order_does_matter:
         r.. [x ___ x __ permutations(friend_list,team_size)]
     ____
-        r.. [x ___ x __ combinations(friend_list,team_size)]
+        r.. [x ___ x __ c..friend_list,team_size)]
