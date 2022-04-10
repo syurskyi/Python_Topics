@@ -22,4 +22,4 @@ c_ Solution(o..
         idx = stack.i.. remainder)
         result.insert(idx+2, '(')
         result.a..(')')
-        r.. ''.j..(result).r..('(0)', '').rstrip('.')
+        r.. ''.j..(result).r..('(0)', '').r..('.')

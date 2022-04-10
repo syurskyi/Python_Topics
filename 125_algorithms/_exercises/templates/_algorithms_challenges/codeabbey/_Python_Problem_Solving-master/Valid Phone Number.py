@@ -1,7 +1,7 @@
 f  o.. 'file.txt' _
 a []
 ___ y __ f:
-    y  y.rstrip()
+    y  y.r..()
     __ l..(y) __ 12 o. l..(y)__ 14:
         __ y[3] __ '-':
             a,b,c  y.s..('-')

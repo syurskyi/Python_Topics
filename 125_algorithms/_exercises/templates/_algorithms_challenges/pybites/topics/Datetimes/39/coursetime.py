@@ -28,7 +28,7 @@ ___ get_all_timestamps
     """
     w__ o.. COURSE_TIMES) __ f:
         lines = f.r..
-        lines = [line.rstrip() ___ line __ lines __ ')' __ line]
+        lines = [line.r..() ___ line __ lines __ ')' __ line]
     r.. [line.s..('(')[1].s..(')')[0] ___ line __ lines]
 
 ___ calc_total_course_duration(timestamps

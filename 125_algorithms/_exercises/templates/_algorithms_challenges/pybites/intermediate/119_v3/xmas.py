@@ -20,7 +20,7 @@ ___ generate_xmas_tree(rows=10
         left_gap += 1
         line = f"{'*'*stars:>{left_gap}}\n"
         __ row __ rows:
-            line = line.rstrip()
+            line = line.r..()
         result.a..(line)
 
 

@@ -13,7 +13,7 @@ __ n.. PATH.exists
 
 ___ _get_data(pathPATH
     w__ o.. p..) __ f:
-        r.. [line.rstrip() ___ line __ f.r..]
+        r.. [line.r..() ___ line __ f.r..]
 
 
 ___ filter_killed_mutants(mutpy_output: l..  N..) __ l..:

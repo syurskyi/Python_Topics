@@ -45,7 +45,7 @@ c_ Say:
         ____
             r.. ' '.j..([convert_chunk_to_word(chunk, index)
                              ___ index, chunk
-                             __ e..(get_chunks(num]).rstrip()
+                             __ e..(get_chunks(num]).r..()
 
     ___ get_chunks  num
         reversed_string = s..(num)[::-1]

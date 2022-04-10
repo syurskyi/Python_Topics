@@ -36,7 +36,7 @@ ___ generate_bc(url, separator
     __ '//' __ url:
         url = url[url.i.. '//') + 2:]
 
-    url = url.rstrip('/')
+    url = url.r..('/')
 
     ___
         ___ i, c __ e..(url

@@ -13,5 +13,5 @@ ___ jumping_on_clouds(n, c
 
 
 n = i..(input
-c = l.. m..(i.., input().rstrip().s..()))
+c = l.. m..(i.., input().r..().s..()))
 print(jumping_on_clouds(n, c

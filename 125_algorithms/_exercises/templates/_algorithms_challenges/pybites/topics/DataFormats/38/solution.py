@@ -25,7 +25,7 @@ ___ get_movies
 
 ___ _get_runtime(movie
     """Helper function to extract the minutes (int) from the runtime movie attribute"""
-    r.. i..(movie.attrib 'runtime' .rstrip(' min'
+    r.. i..(movie.attrib 'runtime' .r..(' min'
 
 
 ___ get_movie_longest_runtime

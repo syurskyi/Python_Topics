@@ -25,7 +25,7 @@ c_ Morse:
                 code += '1' + bin(num)[2:].rjust(31, '0')
             ____
                 code += bin(num)[2:].rjust(32, '0')
-        code = code.rstrip('0')
+        code = code.r..('0')
         result = ' '.j..([''.j..([next(k ___ k, v __ Morse.alpha.i.. __ v __ char)
                                     ___ char __ words.s..('000')]) ___ words __ code.s..('0' * 7)])
 

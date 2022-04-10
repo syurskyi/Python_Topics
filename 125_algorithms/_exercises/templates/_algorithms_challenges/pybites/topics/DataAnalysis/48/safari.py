@@ -16,7 +16,7 @@ ___ create_chart
     #count = 0
     w__ o.. 'safari.logs', encoding="utf-8") __ f:
         all_lines = f.r..
-        lines = [line.rstrip() ___ line __ all_lines]
+        lines = [line.r..() ___ line __ all_lines]
         #print(len(lines))
         current_date = ''
         outstr = ''

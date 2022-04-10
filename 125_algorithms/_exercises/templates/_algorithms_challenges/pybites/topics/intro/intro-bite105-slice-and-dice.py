@@ -39,8 +39,8 @@ ___ my_slice_and_dice(text=text
     ___ item __ s:
         item = item.s..
         __ item[0].isl..
-            item = item.rstrip('!')
-            item = item.rstrip('.')
+            item = item.r..('!')
+            item = item.r..('.')
             words = item.s..(' ')
             results.a..(words[words.__len__()-1])
     r.. results
@@ -60,7 +60,7 @@ ___ slice_and_dice(text=text
             _____
         words = line.s.. 
 
-        last_word_stripped = words[-1].rstrip('!.')
+        last_word_stripped = words[-1].r..('!.')
         results.a..(last_word_stripped)
 
     r.. results

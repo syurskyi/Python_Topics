@@ -27,7 +27,7 @@ ___ slice_and_dice(text: s.. = text) __ l..:
             _____
 
         words = line.s..
-        last_word_stripped = words[-1].rstrip('!.')
+        last_word_stripped = words[-1].r..('!.')
         results.a..(last_word_stripped)
 
     r.. results

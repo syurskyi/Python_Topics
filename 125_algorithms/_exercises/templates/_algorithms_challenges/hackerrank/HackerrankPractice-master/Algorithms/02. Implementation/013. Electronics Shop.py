@@ -12,7 +12,7 @@ ___ getMoneySpent(keyboards, drives, b
 
 
 b, n, m = map(i.., input().s..
-keyboards = l.. m..(i.., input().rstrip().s..()))
-drives = l.. m..(i.., input().rstrip().s..()))
+keyboards = l.. m..(i.., input().r..().s..()))
+drives = l.. m..(i.., input().r..().s..()))
 moneySpent = getMoneySpent(keyboards, drives, b)
 print(moneySpent)

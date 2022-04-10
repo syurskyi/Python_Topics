@@ -12,5 +12,5 @@ ___ solution(s__, markers
             index = line.find(marker)
             __ index != -1:
                 line = line[:index]
-        lines[i] = line.rstrip(' ')
+        lines[i] = line.r..(' ')
     r.. '\n'.j..(lines)

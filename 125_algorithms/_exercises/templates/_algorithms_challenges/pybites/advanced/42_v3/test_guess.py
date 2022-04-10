@@ -46,15 +46,15 @@ ___ test_validate_guess(capfd
 
     ... n.. game._validate_guess(1)
     out, _ = capfd.readouterr()
-    ... out.rstrip() __ '1 is too low'
+    ... out.r..() __ '1 is too low'
 
     ... n.. game._validate_guess(3)
     out, _ = capfd.readouterr()
-    ... out.rstrip() __ '3 is too high'
+    ... out.r..() __ '3 is too high'
 
     ... game._validate_guess(2)
     out, _ = capfd.readouterr()
-    ... out.rstrip() __ '2 is correct!'
+    ... out.r..() __ '2 is correct!'
 
 
 @patch("builtins.input", side_effect=[4, 22, 9, 4, 6])

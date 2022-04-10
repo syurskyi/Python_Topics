@@ -29,7 +29,7 @@ ___ test_make_character_index_with_default_args
         [9, 10, 13, 14, 16, 17, 18, 20, 23, 25, 27, 29, 30, 31, 33, 35],
         [32, 34, 35]
     )
-    e.. = d..(z..(keys, values
+    e.. = d.. z.. ? ?
     a.. = make_character_index()
     ... a.. __ e..
 
@@ -43,5 +43,5 @@ ___ test_make_character_index_with_other_args
     )
     a.. = make_character_index(text=the_neetle_tree,
                                   characters=characters)
-    e.. = d..(z..(keys, values
+    e.. = d.. z.. ? ?
     ... a.. __ e..

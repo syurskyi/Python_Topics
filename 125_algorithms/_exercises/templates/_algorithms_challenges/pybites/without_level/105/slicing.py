@@ -24,6 +24,6 @@ ___ slice_and_dice(text: s.. = text) __ l..:
     ___ line __ lines.s..("\n"
         l = line.l..
         __ l[:1].isl..
-            word = line.s..(' ')[-1].rstrip('.!')
+            word = line.s..(' ')[-1].r..('.!')
             results.a..(word)
     r.. results

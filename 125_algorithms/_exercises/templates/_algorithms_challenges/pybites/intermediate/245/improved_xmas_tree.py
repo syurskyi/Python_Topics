@@ -16,11 +16,11 @@ ___ generate_improved_xmas_tree(rows=10
 
    ___ i __ r..(rows + 1
       __ i __ 0:
-         xmas_tree.a..(STAR.center(max_length).rstrip
+         xmas_tree.a..(STAR.center(max_length).r..
          _____
 
       leaf_count = i * 2 -1
-      xmas_tree.a..((leaf_count * LEAF).center(max_length).rstrip
+      xmas_tree.a..((leaf_count * LEAF).center(max_length).r..
 
    ___ i __ r..(2
       __ rows % 2 != 0:

@@ -14,10 +14,10 @@ ____ t___ _______ Dict
 pw = "\nmysql:x:106:107:MySQL Server,,,:/var/lib/mysql:/bin/false\navar:x:1000:1000::/home/avar:/bin/bash\nchad:x:1001:1001::/home/chad:/bin/bash\ngit-svn-mirror:x:1002:1002:Git mirror,,,:/home/git-svn-mirror:/bin/bash\ngerrit2:x:1003:1003:Gerrit User,,,:/home/gerrit2:/bin/bash\navahi:x:107:108:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false\npostfix:x:108:112::/var/spool/postfix:/bin/false\nssh-rsa:x:1004:1004::/home/ssh-rsa:/bin/bash\nartagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/artagnon:/bin/bash\n"
 _______ __
 
-___ get_users_1st_solution(passwd: s..) __ d..:
+___ get_users_1st_solution passwd: s..  __ d..
 
     result    # dict
-    passwd = passwd.s..('\n')
+    passwd  ?.s...('\n')
     lines = passwd.s..('\n')
     ___ line __ lines:
         fields = line.s..(':')
@@ -31,7 +31,7 @@ ___ get_users_1st_solution(passwd: s..) __ d..:
         result[k] = v
     r..(result)
 
-___ get_users_2nd_solution(passwd: s..) __ d..:
+___ get_users_2nd_solution passwd: s..  __ d..
 
     output    # dict
     ___ row __ passwd.s...s..
