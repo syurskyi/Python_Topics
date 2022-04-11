@@ -21,8 +21,8 @@ _______ __
 
 # data provided
 tmp  __.g.. TMP  /tmp
-stopwords_file __.p...j..(tmp, 'stopwords')
-harry_text __.p...j..(tmp, 'harry')
+stopwords_file __.p...j.. ? 'stopwords')
+harry_text __.p...j.. ? 'harry')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/stopwords.txt',
     stopwords_file

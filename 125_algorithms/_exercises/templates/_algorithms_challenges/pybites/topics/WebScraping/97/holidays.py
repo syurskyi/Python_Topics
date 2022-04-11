@@ -9,7 +9,7 @@ ____ bs4 _______ BeautifulSoup __ Soup
 # prep data
 tmp  __.g.. TMP  /tmp
 page 'us_holidays.html'
-holidays_page __.p...j..(tmp, page)
+holidays_page __.p...j.. ? page)
 u..(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{page}',
     holidays_page

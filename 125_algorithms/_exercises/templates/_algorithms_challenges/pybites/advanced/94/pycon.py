@@ -9,7 +9,7 @@ _______ __
 pkl_file 'pycon_videos.pkl'
 data f'https://bites-data.s3.us-east-2.amazonaws.com/{pkl_file}'
 tmp  __.g.. TMP  /tmp
-pycon_videos __.p...j..(tmp, pkl_file)
+pycon_videos __.p...j.. ? pkl_file)
 u__.r...u..(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples

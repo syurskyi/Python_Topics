@@ -18,7 +18,7 @@ c_ Solution(o..
             ____
                 tmp  house-heaters[i]
                 __ i+1 < l..(heaters
-                    tmp  m..(tmp, heaters[i+1]-house)
+                    tmp  m.. ? heaters[i+1]-house)
             radius m..(radius, tmp)
         r.. radius
     

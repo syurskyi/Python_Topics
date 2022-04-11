@@ -50,7 +50,7 @@
 #
 # ?p__.m__.p. 'test_input,expected', [
 #     (('Bob', 'Dante', 'Julian'), T..),
-#     (('Bob', 'Dante', 'Martin'), T..),
+#     (('Bob', 'Dante', 'Makrtin'), T..),
 #     (('Bob', 'Julian', 'Martin'), T..),
 #     (('Dante', 'Julian', 'Martin'), T..),
 #     # order does not matter

@@ -26,7 +26,7 @@ c_ Solution(o..
             tmp  helper(dp, boxes, i+1, j, 1) + k*k
             ___ m __ r..(i+1, j+1
                 __ boxes[i] __ boxes[m]:
-                    tmp  m..(tmp, helper(dp, boxes, i+1, m-1, 1)+\
+                    tmp  m.. ? helper(dp, boxes, i+1, m-1, 1)+\
                               helper(dp, boxes, m, j, k+1
             dp[i][j][k] tmp
             r.. tmp

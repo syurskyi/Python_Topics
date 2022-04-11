@@ -5,7 +5,7 @@ _______ ___.e__.E__ __ ET
 
 # prep
 tmp  __.g.. TMP  /tmp
-tempfile __.p...j..(tmp, 'feed')
+tempfile __.p...j.. ? 'feed')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile
