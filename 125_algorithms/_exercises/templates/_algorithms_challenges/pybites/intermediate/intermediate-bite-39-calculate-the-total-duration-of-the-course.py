@@ -1,4 +1,4 @@
-____ d__ _______ d__, t.., time
+____ d__ _______ d__, t.., t__
 _______ __
 _______ __
 _______ u__.r..
@@ -44,7 +44,7 @@ ___ calc_total_course_duration(timestamps
     s = s.. + t..(hours=0, minutes=0, seconds=10)
     ___ item __ timestamps:
         s.. = s.. + t..(hours=0, minutes=i..(item.s..(':')[0]), seconds=i..(item.s..(':')[1]
-    r..(s..(s...time()))
+    r..(s..(s...t__()))
 
 """
 def get_all_timestamps():

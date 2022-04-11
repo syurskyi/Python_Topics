@@ -27,11 +27,11 @@ c_ Solution(o..
         result = 0
         prev = 0
         maxTime = 0
-        ___ time __ timeSeries:
-            __ maxTime < time:
+        ___ t__ __ timeSeries:
+            __ maxTime < t__:
                 result += maxTime - prev
-                prev = time
-            maxTime = m..(maxTime, time+duration)
+                prev = t__
+            maxTime = m..(maxTime, t__+duration)
         result += maxTime-prev
         r.. result
     

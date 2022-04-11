@@ -18,15 +18,15 @@ c_ Solution(o..
         ___ i __ r..(length
             ind = i
             curLen = 0
-            time = 0
+            t__ = 0
             w.... curLen+l..(sentence[ind])<_cols:
                 curLen += l..(sentence[ind])+1
                 ind += 1
                 __ ind __ l..(sentence
                     ind = 0
-                    time += 1
+                    t__ += 1
             nextInd[i] = ind
-            times[i] = time
+            times[i] = t__
         ind = 0
         res = 0
         ___ _ __ r..(rows

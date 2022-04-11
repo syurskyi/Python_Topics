@@ -18,17 +18,17 @@ c_ Solution:
         __ n.. intervals:
             r.. ans
 
-        time    # list
+        t__    # list
 
         ___ x __ intervals:
-            time.a..((x.start, T..
-            time.a..((x.end, F..
+            t__.a..((x.start, T..
+            t__.a..((x.end, F..
 
-        time.s..()
+        t__.s..()
 
         cnt = 0
 
-        ___ t, is_start __ time:
+        ___ t, is_start __ t__:
             __ is_start:
                 cnt += 1
             ____

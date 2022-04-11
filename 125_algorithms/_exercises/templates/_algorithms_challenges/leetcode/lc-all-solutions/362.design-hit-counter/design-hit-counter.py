@@ -14,11 +14,11 @@ c_ HitCounter(o..
     :rtype: void
     """
     idx = timestamp % 300
-    time, hit = q[idx]
-    __ time != timestamp:
+    t__, hit = q[idx]
+    __ t__ != timestamp:
       q[idx] = timestamp, 1
     ____
-      q[idx] = time, hit + 1
+      q[idx] = t__, hit + 1
 
   ___ getHits  timestamp
     """
@@ -29,8 +29,8 @@ c_ HitCounter(o..
     """
     ans = 0
     ___ i __ r..(0, l..(q:
-      time, hit = q[i]
-      __ timestamp - time < 300:
+      t__, hit = q[i]
+      __ timestamp - t__ < 300:
         ans += hit
     r.. ans
 

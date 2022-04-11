@@ -13,11 +13,11 @@ c_ Solution(o..
         """
         _______ heapq
         p..    # dict
-        ___ time __ times:
-            sourceMap = p...g.. time[0], {})
-            __ time[1] n.. __ sourceMap o. sourceMap[time[1]] > time[2]:
-                sourceMap[time[1]] = time[2]
-            p..[time[0]] = sourceMap
+        ___ t__ __ times:
+            sourceMap = p...g.. t__[0], {})
+            __ t__[1] n.. __ sourceMap o. sourceMap[t__[1]] > t__[2]:
+                sourceMap[t__[1]] = t__[2]
+            p..[t__[0]] = sourceMap
         
         distanceMap = {K:0}
         heap    # list

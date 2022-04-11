@@ -1,4 +1,4 @@
-____ d__ _______ date, d__, time, t..
+____ d__ _______ date, d__, t__, t..
 
 TODAY = date.t..
 

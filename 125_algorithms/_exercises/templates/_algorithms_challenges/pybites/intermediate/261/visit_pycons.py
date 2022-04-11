@@ -1,5 +1,5 @@
 _______ json
-_______ time
+_______ t__
 _______ r__
 ____ dataclasses _______ dataclass
 ____ d__ _______ d__

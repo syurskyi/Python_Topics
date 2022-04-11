@@ -19,8 +19,8 @@ c_ HitCounter(o..
     
     ___ getHits  timestamp
         count = 0
-        ___ i, time __ e..(timestampes
-            __ timestamp - time < 300:
+        ___ i, t__ __ e..(timestampes
+            __ timestamp - t__ < 300:
                 count += hitCount[i]
         r.. count
 

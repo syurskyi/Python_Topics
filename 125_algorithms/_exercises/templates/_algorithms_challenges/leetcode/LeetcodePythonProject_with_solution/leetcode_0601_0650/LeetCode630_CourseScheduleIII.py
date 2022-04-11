@@ -12,12 +12,12 @@ c_ Solution(o..
         _______ heapq
         heap    # list
         courses.s..(key=l.... x: x[1])
-        time = 0
+        t__ = 0
         ___ course __ courses:
-            time += course[0]
+            t__ += course[0]
             heapq.heappush(heap, -course[0])
-            __ time > course[1]:
-                time -_ -heapq.heappop(heap)
+            __ t__ > course[1]:
+                t__ -_ -heapq.heappop(heap)
         r.. l..(heap)
     
     ___ test

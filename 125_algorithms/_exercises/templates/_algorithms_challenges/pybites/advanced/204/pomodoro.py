@@ -1,5 +1,5 @@
 _______ asyncio
-_______ time
+_______ t__
 
 # ONE_MIN = 60
 # FIVE_MIN = ONE_MIN * 5
@@ -26,7 +26,7 @@ async ___ break_time(delay: U..[i.., f__], loop: i..) __ N..
     :return: None
     """
     _delay = i..(delay / ONE_MIN)
-    print(f"[{loop}] {time.s..('%X')} Time for a {_delay} min break!")
+    print(f"[{loop}] {t__.s..('%X')} Time for a {_delay} min break!")
     await sleep(delay)
 
 
@@ -36,7 +36,7 @@ async ___ lunch_time(delay: U..[i.., f__]) __ N..
     :param delay: float of delay in seconds
     :return: None
     """
-    print(f"\n** {time.s..('%X')} Time for lunch! **")
+    print(f"\n** {t__.s..('%X')} Time for lunch! **")
     await sleep(delay)
 
 
@@ -47,7 +47,7 @@ async ___ work_time(delay: U..[i.., f__], loop: i..) __ N..
     :param loop: int of the current loop
     :return: None
     """
-    print(f"[{loop}] {time.s..('%X')} Time to work!")
+    print(f"[{loop}] {t__.s..('%X')} Time to work!")
     await sleep(delay)
 
 
@@ -91,7 +91,7 @@ async ___ main(
     :return: None
     """
     g.. CURRENT_SESSION
-    print(f"Pomodor timer started at: {time.s..('%X')}")
+    print(f"Pomodor timer started at: {t__.s..('%X')}")
 
     w.... CURRENT_SESSION <_ 4:
         print(f"\nSession: {CURRENT_SESSION}")
@@ -100,9 +100,9 @@ async ___ main(
             await lunch_time(lunch_length)
         CURRENT_SESSION += 1
 
-    print(f"\n{time.s..('%X')} Time to go home!")
+    print(f"\n{t__.s..('%X')} Time to go home!")
 
-    print(f"\nWork day completed at: {time.s..('%X')}")
+    print(f"\nWork day completed at: {t__.s..('%X')}")
 
 
 __ _______ __ _______

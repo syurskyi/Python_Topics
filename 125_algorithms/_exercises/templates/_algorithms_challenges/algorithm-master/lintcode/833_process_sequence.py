@@ -5,22 +5,22 @@ c_ Solution:
     @return: Return the number of processes
     """
     ___ numberOfProcesses  logs, queries
-        time    # list
+        t__    # list
 
         # 0: end, 1: start, 2: in progress
         ___ log __ logs:
-            time.a..((log.start, 1
-            time.a..((log.end + 1, 0
+            t__.a..((log.start, 1
+            t__.a..((log.end + 1, 0
 
         ___ t __ queries:
-            time.a..((t, 2
+            t__.a..((t, 2
 
-        time.s..()
+        t__.s..()
 
         cnt = 0
         time2cnt    # dict
 
-        ___ t, status __ time:
+        ___ t, status __ t__:
             __ status __ 0:
                 cnt -_ 1
             ____ status __ 1:

@@ -1,7 +1,7 @@
 ____ f.. _______ wraps
 ____ t___ _______ L.., S..
 
-____ time _______ time
+____ t__ _______ t__
 
 
 ___ timing(f
@@ -11,11 +11,11 @@ ___ timing(f
 
     @wraps(f)
     ___ wrapper $ $$:
-        start = time()
+        start = t__()
         result = f $ $$
-        end = time()
+        end = t__()
         duration = end - start
-        print _*Elapsed time {f.__name__}: {duration}')
+        print _*Elapsed t__ {f.__name__}: {duration}')
         r.. duration, result
 
     r.. wrapper

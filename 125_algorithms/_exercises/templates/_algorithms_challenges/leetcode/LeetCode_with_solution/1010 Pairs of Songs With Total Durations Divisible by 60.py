@@ -29,20 +29,20 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ numPairsDivisibleBy60  time: L..[i..]) __ i..:
+    ___ numPairsDivisibleBy60  t__: L..[i..]) __ i..:
         """
         Running attribution
         """
         counter = d..(i..)
         ret = 0
-        ___ t __ time:
+        ___ t __ t__:
             ret += counter[(60 - t) % 60]  # handle 0
             counter[t % 60] += 1
 
         r.. ret
 
 
-    ___ numPairsDivisibleBy60_error  time: L..[i..]) __ i..:
+    ___ numPairsDivisibleBy60_error  t__: L..[i..]) __ i..:
         """
         O(N^2) check i, j
         Reduce it
@@ -51,7 +51,7 @@ c_ Solution:
         attribution error
         """
         hm = d..(i..)
-        ___ t __ time:
+        ___ t __ t__:
             hm[t % 60] += 1
 
         ret = 0

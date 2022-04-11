@@ -52,17 +52,17 @@ c_ Solution:
         __ n.. buildings:
             r.. ans
 
-        time    # list
+        t__    # list
 
         ___ x, _x, height __ buildings:
-            time.a..((x, height, T..
-            time.a..((_x, height, F..
+            t__.a..((x, height, T..
+            t__.a..((_x, height, F..
 
-        time.s..()
+        t__.s..()
         heap = HashHeapq()
         tmp    # list
 
-        ___ x, height, is_start __ time:
+        ___ x, height, is_start __ t__:
             __ is_start:
                 heap.push(-height)
             ____

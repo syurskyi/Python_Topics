@@ -28,7 +28,7 @@ c_ Solution:
 
         cnt = 0
 
-        ___ time, is_start __ timeline:
+        ___ t__, is_start __ timeline:
             __ is_start:
                 cnt += 1
             ____

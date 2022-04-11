@@ -23,18 +23,18 @@ True
 
 
 c_ Solution:
-    ___ nextClosestTime  time
+    ___ nextClosestTime  t__
         """
         :type time: str
         :rtype: str
         """
         __ n.. (
-            time a.. l..(time) __ 5 a.. time[2] __ ':' a..
-            0 <_ i..(time[:2]) < 24 a.. 0 <_ i..(time[3:]) < 60
+            t__ a.. l..(t__) __ 5 a.. t__[2] __ ':' a..
+            0 <_ i..(t__[:2]) < 24 a.. 0 <_ i..(t__[3:]) < 60
 
             r.. ''
 
-        times = [i..(t) ___ t __ time __ t != ':' 
+        times = [i..(t) ___ t __ t__ __ t != ':'
         d..    # list
 
         ___ a __ s..(times

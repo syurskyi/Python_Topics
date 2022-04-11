@@ -6,13 +6,13 @@ SHUTDOWN_EVENT = 'Shutdown initiated'
 
 # prep: read in the logfile
 tmp  __.g.. TMP  /tmp
-logfile = __.p...j..(tmp, 'log')
+logfile = __.p...j.. ? log
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/messages.log',
     logfile
 )
 
-w__ o.. logfile) __ f:
+w__ o..  ? __ f
     loglines = f.r..
 
 

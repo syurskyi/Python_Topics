@@ -1,6 +1,6 @@
 ____ c.. _______ n..
 ____ i.. _______ cycle, islice
-____ time _______ sleep
+____ t__ _______ sleep
 
 State = n..('State', 'color command timeout')
 

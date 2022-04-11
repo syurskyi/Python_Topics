@@ -1,5 +1,5 @@
 ____ f.. _______ wraps
-____ time _______ time
+____ t__ _______ t__
 ____ t___ _______ Deque, L.., S.., Generator
 
 
@@ -10,11 +10,11 @@ ___ timing(f
        Returns (timing, result) tuple"""
     @wraps(f)
     ___ wrapper $ $$:
-        start = time()
+        start = t__()
         result = f $ $$
-        end = time()
+        end = t__()
         duration = end - start
-        print _*Elapsed time {f.__name__}: {duration}')
+        print _*Elapsed t__ {f.__name__}: {duration}')
         r.. duration, result
     r.. wrapper
 

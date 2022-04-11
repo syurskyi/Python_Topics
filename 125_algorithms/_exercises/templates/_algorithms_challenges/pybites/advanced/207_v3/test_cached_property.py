@@ -1,4 +1,4 @@
-____ time _______ perf_counter
+____ t__ _______ perf_counter
 _______ p__
 
 ____ Previous.cached_property _______ Planet

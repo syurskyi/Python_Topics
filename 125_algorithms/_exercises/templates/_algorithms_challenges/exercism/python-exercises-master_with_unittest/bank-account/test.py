@@ -1,6 +1,6 @@
 _______ ___
 _______ threading
-_______ time
+_______ t__
 _______ unittest
 
 ____ bank_account _______ BankAccount
@@ -93,7 +93,7 @@ c_ BankAccountTest(unittest.TestCase
     ___ adjust_balance_concurrently
         ___ transact
             account.deposit(5)
-            time.sleep(0.001)
+            t__.sleep(0.001)
             account.withdraw(5)
 
         # Greatly improve the chance of an operation being interrupted

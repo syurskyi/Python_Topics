@@ -22,6 +22,6 @@ ___ get_us_bank_holidays(content=content
     soup = BeautifulSoup(content, features='html.parser')
     hol_list = soup.find(class_='list-table').tbody
     ___ hol __ hol_list('tr'
-        _,month,_ = hol.time.s__.s..('-')
+        _,month,_ = hol.t__.s__.s..('-')
         holidays[month].a..(hol.a.s__.s..
     r.. holidays

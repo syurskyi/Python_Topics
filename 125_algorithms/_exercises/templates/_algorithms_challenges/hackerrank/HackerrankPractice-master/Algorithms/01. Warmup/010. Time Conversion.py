@@ -2,5 +2,5 @@
 # Score: 15
 
 
-_______ time
-print(time.s..('%H:%M:%S', time.s..(input(), '%I:%M:%S%p')))
+_______ t__
+print(t__.s..('%H:%M:%S', t__.s..(input(), '%I:%M:%S%p')))

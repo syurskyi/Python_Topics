@@ -1,7 +1,7 @@
 ____ c.. _______ C..
 ____ contextlib _______ contextmanager
 ____ d__ _______ date
-____ time _______ time
+____ t__ _______ t__
 _______ ___
 
 OPERATION_THRESHOLD_IN_SECONDS = 2.2
@@ -18,11 +18,11 @@ ___ get_today
 
 @contextmanager
 ___ timeit() __ N..
-    start = time()
+    start = t__()
     ___
         y..
     _______
-        elapsed = time() - start
+        elapsed = t__() - start
         __ elapsed > OPERATION_THRESHOLD_IN_SECONDS:
             violations.update([get_today()])
         __ violations[get_today()] >_ ALERT_THRESHOLD:

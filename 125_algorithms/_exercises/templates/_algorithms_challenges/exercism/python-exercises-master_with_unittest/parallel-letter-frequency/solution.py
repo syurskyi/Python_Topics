@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ____ c.. _______ C..
 ____ threading _______ Lock, Thread
-____ time _______ sleep
+____ t__ _______ sleep
 _______ ___
 __ ___.version[0] __ '2':
     ____ Queue _______ Queue

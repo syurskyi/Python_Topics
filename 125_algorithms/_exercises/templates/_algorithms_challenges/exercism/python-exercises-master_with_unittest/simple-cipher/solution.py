@@ -1,5 +1,5 @@
 ____ s__ _______ a..
-____ time _______ time
+____ t__ _______ t__
 _______ r__
 
 
@@ -7,7 +7,7 @@ c_ Cipher(o..
 
     ___ - , key_ N..
         __ n.. key:
-            r__.seed(time
+            r__.seed(t__
             key = ''.j..(r__.c..(a..) ___ i __ r..(100
         ____ n.. key.i.. o. n.. key.isl..
             r.. V...('Wrong key parameter!')

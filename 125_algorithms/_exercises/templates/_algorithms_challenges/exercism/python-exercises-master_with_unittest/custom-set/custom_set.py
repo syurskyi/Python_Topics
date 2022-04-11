@@ -5,7 +5,7 @@ c_ CustomSet(o..
     ___ isempty
         p..
 
-    ___ __contains__  element
+    ___  -c  element
         p..
 
     ___ issubset  other

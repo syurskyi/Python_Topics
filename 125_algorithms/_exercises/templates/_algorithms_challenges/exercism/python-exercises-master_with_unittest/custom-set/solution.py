@@ -8,7 +8,7 @@ c_ CustomSet(o..
     ___ __iter__
         r.. i..(elements)
 
-    ___ __contains__  element
+    ___  -c  element
         r.. element __ elements
 
     ___ issubset  other

@@ -6,8 +6,8 @@ c_ Solution(o..
     """
     ans = 24 * 60
     times = [0] * l..(timePoints)
-    ___ i, time __ e..(timePoints
-      h, m = map(i.., time.s..(":"
+    ___ i, t__ __ e..(timePoints
+      h, m = map(i.., t__.s..(":"
       times[i] = h * 60 + m
 
     times.s..()

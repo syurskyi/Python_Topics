@@ -1,6 +1,6 @@
 ____ i.. _______ cycle
 _______ ___
-____ time _______ time, sleep
+____ t__ _______ t__, sleep
 
 SPINNER_STATES =  '-', '\\', '|', '/'   # had to escape \
 STATE_TRANSITION_TIME = 0.1
@@ -14,9 +14,9 @@ ___ spinner(seconds
     cycles = cycle(SPINNER_STATES)
 
 
-    start_time = time()
+    start_time = t__()
 
-    w.... time() - start_time <_ seconds:
+    w.... t__() - start_time <_ seconds:
         s = next(cycles)
         print(s,end='\r')
         

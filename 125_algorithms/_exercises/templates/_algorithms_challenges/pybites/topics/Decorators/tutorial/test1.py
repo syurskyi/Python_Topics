@@ -1,12 +1,12 @@
 ____ f.. _______ wraps
-____ time _______ time
+____ t__ _______ t__
 
 ___ timer(func
     $w.. f..
     ___ wrapper $ $$:
-        start = time()
+        start = t__()
         answer = func $ $$
-        end = time()
+        end = t__()
         print _*Elapsed: {end-start}')
         r.. answer
     r.. wrapper

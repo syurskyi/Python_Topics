@@ -1,7 +1,7 @@
 ____ c.. _______ C..
 ____ contextlib _______ contextmanager
 ____ d__ _______ date
-____ time _______ time
+____ t__ _______ t__
 
 OPERATION_THRESHOLD_IN_SECONDS = 2.2
 ALERT_THRESHOLD = 3
@@ -20,10 +20,10 @@ ___ timeit
 
     
 
-    start_time = time()
+    start_time = t__()
 
     y.. 
-    end_time = time()
+    end_time = t__()
     total_time = end_time - start_time
     __ total_time >_ OPERATION_THRESHOLD_IN_SECONDS:
         violations[get_today()] += 1

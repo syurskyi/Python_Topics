@@ -37,8 +37,8 @@ ___ calc_total_course_duration(timestamps
     ref = d__(2021, 1, 1)
     cum = ref
 
-    ___ time __ timestamps:
-        minutes, seconds = map(i.., time.s..(':'
+    ___ t__ __ timestamps:
+        minutes, seconds = map(i.., t__.s..(':'
         cum += t..(minutes=minutes, seconds=seconds)
 
     dt_sec = (cum - ref).seconds

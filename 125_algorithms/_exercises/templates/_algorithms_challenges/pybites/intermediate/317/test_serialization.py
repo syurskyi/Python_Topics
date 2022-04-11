@@ -1,5 +1,5 @@
 ____ d__ _______ date
-_______ time
+_______ t__
 ____ t___ _______ N..
 
 ____ serialization _______ (download_pickle_file,
@@ -35,7 +35,7 @@ ___ test_serialize_and_deserialize_other_data
         Bite('Sum of Numbers', 1, 'Beginner'),
         Bite('Regex Fun', 2, 'Advanced'),
     ]
-    pkl_file = TMP / s..(i..(time.time()))
+    pkl_file = TMP / s..(i..(t__.t__()))
     serialize(pkl_file, data=data)
     a.. = deserialize(pkl_file)
     e.. = data
