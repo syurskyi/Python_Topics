@@ -5,13 +5,13 @@ c_ Solution(o..
     :type k: int
     :rtype: int
     """
-    d = {0: -1}
-    maxLen = 0
-    _sum = 0
+    d {0: -1}
+    maxLen 0
+    _sum 0
     ___ i __ r..(0, l..(nums:
       _sum += nums[i]
       __ _sum n.. __ d:
-        d[_sum] = i
+        d[_sum] i
       __ _sum - k __ d:
-        maxLen = m..(maxLen, i - d[_sum - k])
+        maxLen m..(maxLen, i - d[_sum - k])
     r.. maxLen

@@ -1,11 +1,11 @@
 c_ TreeNode(o..
     ___ - , data, left, right
-        data = N..
-        left = N..
-        right = N..
+        data N..
+        left N..
+        right N..
 
     ___ -s
-        fmt = 'TreeNode(data={}, left={}, right={})'
+        fmt 'TreeNode(data={}, left={}, right={})'
         r.. fmt.f..(data, left, right)
 
 

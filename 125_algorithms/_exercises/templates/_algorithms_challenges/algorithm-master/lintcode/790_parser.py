@@ -7,14 +7,14 @@ c_ Solution:
     """
     ___ canBeGenerated  S, start, end
         __ n.. start:
-            start = ''
+            start ''
 
         N    # dict
 
         ___ s __ S:
-            cur, nxt = s.s..(' -> ')
+            cur, nxt s.s..(' -> ')
             __ cur n.. __ N:
-                N[cur] = s..()
+                N[cur] s..()
             N[cur].add(nxt)
 
         r.. dfs(N, end, start)
@@ -31,7 +31,7 @@ c_ Solution:
                 _____
 
             ___ _s __ N[s[i]]:
-                res = dfs(N, end, s[:i] + _s + s[i + 1:])
+                res dfs(N, end, s[:i] + _s + s[i + 1:])
                 __ res:
                     r.. T..
 

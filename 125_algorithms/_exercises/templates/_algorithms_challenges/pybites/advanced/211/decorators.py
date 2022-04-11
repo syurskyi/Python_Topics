@@ -1,7 +1,7 @@
 ____ f.. _______ wraps
 _______ ___
 
-MAX_RETRIES = 3
+MAX_RETRIES 3
 
 
 c_ MaxRetriesException(E..
@@ -21,10 +21,10 @@ ___ retry(func
     #
     $w.. f..
     ___ wrapper $ $$:
-        retries = 0
+        retries 0
         w.... retries < MAX_RETRIES:
             ___
-                vals = func $ $$
+                vals func $ $$
                 _____
             ______ E.. __ e:
                 retries += 1

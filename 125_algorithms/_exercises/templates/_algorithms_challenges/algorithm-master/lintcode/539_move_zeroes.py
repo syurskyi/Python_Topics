@@ -7,10 +7,10 @@ c_ Solution:
         __ n.. nums:
             r..
 
-        n = l..(nums)
-        left = 0
+        n l..(nums)
+        left 0
 
         ___ right __ r..(n
             __ nums[right] != 0:
-                nums[left], nums[right] = nums[right], nums[left]
+                nums[left], nums[right] nums[right], nums[left]
                 left += 1

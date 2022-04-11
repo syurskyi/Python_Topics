@@ -6,9 +6,9 @@ c_ Solution(o..
     """
     tails    # list
     ___ start, end __ s..(pairs
-      idx = b__.bisect_left(tails, start)
+      idx b__.bisect_left(tails, start)
       __ idx __ l..(tails
         tails.a..(end)
       ____
-        tails[idx] = m..(tails[idx], end)
+        tails[idx] m..(tails[idx], end)
     r.. l..(tails)

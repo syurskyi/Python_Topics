@@ -13,7 +13,7 @@ c_ Solution(o..
         :rtype: bool
         """
         w.... sx < tx a.. sy < ty:
-            tx, ty = tx%ty, ty%tx
+            tx, ty tx%ty, ty%tx
         __ sx __ tx a.. (ty-sy) % sx __ 0 o.\
             sy __ ty a.. (tx-sx) % sy __ 0:
             r.. T..
@@ -34,20 +34,20 @@ c_ Solution(o..
     
     ___ helper  sx, sy, tx, ty, mem
         __ sx __ tx a.. sy __ ty:
-            mem[(sx, sy)] = T..
+            mem[(sx, sy)] T..
             r.. T..
         __ sx > tx o. sy > ty:
-            mem[(sx, sy)] = F..
+            mem[(sx, sy)] F..
             r.. F..
         __ (sx, sy) __ mem:
             r.. mem[(sx, sy)]
-        res = helper(sx, sx+sy, tx, ty, mem) o.\
+        res helper(sx, sx+sy, tx, ty, mem) o.\
             helper(sx+sy, sy, tx, ty, mem)
-        mem[(sx, sy)] = res
+        mem[(sx, sy)] res
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [1, 1, 3, 5], # True
             [1, 1, 2, 2], # False
             [1, 1, 1, 1], # True
@@ -55,7 +55,7 @@ c_ Solution(o..
         ]
         ___ sx, sy, tx, ty __ testCases:
             print('sx: %s, sy: %s, tx: %s, ty: %s' % (sx, sy, tx, ty
-            result = reachingPoints(sx, sy, tx, ty)
+            result reachingPoints(sx, sy, tx, ty)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -1,13 +1,13 @@
 c_ Triangle:
 
-    EQUILATERAL = "equilateral"
-    ISOSCELES = "isosceles"
-    SCALENE = "scalene"
+    EQUILATERAL "equilateral"
+    ISOSCELES "isosceles"
+    SCALENE "scalene"
 
     ___ - , a, b, c
-        a = a
-        b = b
-        c = c
+        a a
+        b b
+        c c
         __ error
             r.. TriangleError
 

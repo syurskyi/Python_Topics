@@ -33,7 +33,7 @@ Example 2:
 Return false. There is no way to jump to the last stone as
 the gap between the 5th and 6th stone is too large.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -50,13 +50,13 @@ c_ Solution(o..
         """
         F    # dict
         ___ stone __ stones:
-            F[stone] = s..()
+            F[stone] s..()
 
         F[0].add(0)
         ___ stone __ stones:
             ___ step __ F[stone]:
                 ___ i __ (-1, 0, 1
-                    nxt = stone + step + i
+                    nxt stone + step + i
                     __ nxt != stone a.. nxt __ F:
                         F[nxt].add(step + i)
 

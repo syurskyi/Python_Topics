@@ -4,8 +4,8 @@ _______ csv
 _______ j__
 ____ j__.decoder _______ JSONDecodeError
 
-EXCEPTION = 'exception caught'
-TMP = P..(__.g..("TMP", "/tmp"
+EXCEPTION 'exception caught'
+TMP P..(__.g..("TMP", "/tmp"
 
 
 ___ convert_to_csv(json_file
@@ -23,20 +23,20 @@ ___ convert_to_csv(json_file
        63502,ability_mount_hordescorpionamber,True,...
        ...
    """  # noqa E501
-   csv_file = TMP / json_file.name.r..('.json', '.csv')
+   csv_file TMP / json_file.name.r..('.json', '.csv')
 
    # you code
    w__ o.. json_file) __ f:
       ___
-         data = j__.l.. (f.read
+         data j__.l.. (f.read
       ______ JSONDecodeError:
          print(EXCEPTION)
          r..
 
-   mounts = data["mounts"]["collected"]
+   mounts data["mounts"]["collected"]
    w__ o.. csv_file, "w") __ f:
-      headers = [key ___ key __ mounts[0].k..]
-      writer = csv.DictWriter(f, fieldnames=headers)
+      headers [key ___ key __ mounts[0].k..]
+      writer csv.DictWriter(f, fieldnames=headers)
 
       writer.writeheader()
       ___ row __ mounts:

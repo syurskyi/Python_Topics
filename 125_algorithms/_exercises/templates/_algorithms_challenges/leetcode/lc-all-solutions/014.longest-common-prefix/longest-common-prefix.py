@@ -6,19 +6,19 @@ c_ Solution(o..
     """
     __ l..(strs) __ 0:
       r.. ""
-    i = 0
-    j = 0
-    end = 0
+    i 0
+    j 0
+    end 0
     w.... j < l..(strs) a.. i < l..(strs[j]
       __ j __ 0:
-        char = strs[j][i]
+        char strs[j][i]
       ____
         __ strs[j][i] != char:
           _____
 
       __ j __ l..(strs) - 1:
         i += 1
-        j = 0
+        j 0
         end += 1
       ____
         j += 1

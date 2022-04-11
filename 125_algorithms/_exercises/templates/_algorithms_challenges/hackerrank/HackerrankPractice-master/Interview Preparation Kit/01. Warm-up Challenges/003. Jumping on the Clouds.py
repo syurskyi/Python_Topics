@@ -4,14 +4,14 @@
 
 ___ jumping_on_clouds(n, c
     c.a..(0)
-    ans = 0
-    position = 0
+    ans 0
+    position 0
     w.... position < n-1:
         position += (c[position+2] __ 0) + 1
         ans += 1
     r.. ans
 
 
-n = i..(input
-c = l.. m..(i.., input().r..().s..()))
+n i..(input
+c l.. m..(i.., input().r..().s..()))
 print(jumping_on_clouds(n, c

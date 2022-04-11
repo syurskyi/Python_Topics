@@ -19,8 +19,8 @@ Hint: regex might be overkill here! Have fun and remember, keep calm and code in
 """
 
 ___ generate_affiliation_link(url
-    a = url.s..('/')
-    o = f'http://www.amazon.com/dp/{a[5]}/?tag=pyb0f-20'
+    a url.s..('/')
+    o f'http://www.amazon.com/dp/{a[5]}/?tag=pyb0f-20'
     print(o)
 
 
@@ -29,10 +29,10 @@ generate_affiliation_link("https://www.amazon.com/War-Art-Through-Creative-Battl
 
 #### PYBITES SOLUTION #####
 
-PYBITES_LINK = 'http://www.amazon.com/dp/{}/?tag=pyb0f-20'
+PYBITES_LINK 'http://www.amazon.com/dp/{}/?tag=pyb0f-20'
 
 ___ generate_affiliation_link_pybites(url
-    asin = url.s..('dp/')[-1].s..('/')[0]
+    asin url.s..('dp/')[-1].s..('/')[0]
     r.. PYBITES_LINK.f..(asin)
 
 

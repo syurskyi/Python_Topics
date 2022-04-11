@@ -23,8 +23,8 @@ c_ Solution:
     => d = x * i - S[i]  +  (S[n] - S[i]) - x * (n - i)
     """
 
-    EMPTY = 0
-    HOUSE = 1
+    EMPTY 0
+    HOUSE 1
 
     ___ shortestDistance  grid
         """
@@ -34,7 +34,7 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. -1
 
-        m, n = l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid[0])
         xs, ys    # list, []
 
         ___ x __ r..(m
@@ -49,44 +49,44 @@ c_ Solution:
 
         ys.s..()
 
-        k = l..(xs) + 1
-        psx, psy = [0] * k, [0] * k  # prefix sum
+        k l..(xs) + 1
+        psx, psy [0] * k, [0] * k  # prefix sum
 
         ___ i __ r..(1, k
-            psx[i] = psx[i - 1] + xs[i - 1]
-            psy[i] = psy[i - 1] + ys[i - 1]
+            psx[i] psx[i - 1] + xs[i - 1]
+            psy[i] psy[i - 1] + ys[i - 1]
 
-        ans = INF = f__('inf')
+        ans INF f__('inf')
 
         ___ x __ r..(m
             ___ y __ r..(n
                 __ grid[x][y] != EMPTY:
                     _____
 
-                step = get_step(psx, xs, x) + get_step(psy, ys, y)
+                step get_step(psx, xs, x) + get_step(psy, ys, y)
 
                 __ step < ans:
-                    ans = step
+                    ans step
 
         r.. ans __ ans < INF ____ -1
 
     ___ get_step  ps, axis, pos
-        n = l..(axis)
+        n l..(axis)
 
         __ axis[0] > pos:
             r.. ps[n] - pos * n
         __ axis[-1] < pos:
             r.. pos * n - ps[n]
 
-        left, right = 0, n - 1
+        left, right 0, n - 1
 
         w.... left + 1 < right:
-            mid = (left + right) // 2
+            mid (left + right) // 2
 
             __ axis[mid] < pos:
-                left = mid
+                left mid
             ____
-                right = mid
+                right mid
 
         r.. s..((
             pos * right - ps[right],
@@ -103,8 +103,8 @@ c_ Solution:
     and then do bfs
     """
 
-    EMPTY = 0
-    HOUSE = 1
+    EMPTY 0
+    HOUSE 1
 
     ___ shortestDistance  grid
         """
@@ -114,9 +114,9 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. -1
 
-        m, n = l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid[0])
         houses    # list
-        xc = yc = 0  # the center of the shape composed of houses
+        xc yc 0  # the center of the shape composed of houses
 
         ___ x __ r..(m
             ___ y __ r..(n
@@ -128,20 +128,20 @@ c_ Solution:
         xc //= l..(houses)
         yc //= l..(houses)
 
-        ans = INF = f__('inf')
-        queue = [(xc, yc)]
-        visited = s..(queue)
+        ans INF f__('inf')
+        queue [(xc, yc)]
+        visited s..(queue)
 
         ___ x, y __ queue:
             __ grid[x][y] __ EMPTY:
-                ans = m..(ans, get_step(houses, x, y
+                ans m..(ans, get_step(houses, x, y
 
             ___ dx, dy __ (
                 (-1, 0), (1, 0),
                 (0, -1), (0, 1),
 
-                _x = x + dx
-                _y = y + dy
+                _x x + dx
+                _y y + dy
 
                 __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                     _____
@@ -154,7 +154,7 @@ c_ Solution:
         r.. ans __ ans < INF ____ -1
 
     ___ get_step  houses, x, y
-        step = 0
+        step 0
 
         ___ _x, _y __ houses:
             step += a..(_x - x) + a..(_y - y)
@@ -170,8 +170,8 @@ c_ Solution:
     brute force to bfs
     """
 
-    EMPTY = 0
-    HOUSE = 1
+    EMPTY 0
+    HOUSE 1
 
     ___ shortestDistance  grid
         """
@@ -181,30 +181,30 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. -1
 
-        m, n = l..(grid), l..(grid[0])
-        steps = [[0] * n ___ _ __ r..(m)]
+        m, n l..(grid), l..(grid[0])
+        steps [[0] * n ___ _ __ r..(m)]
 
         ___ x __ r..(m
             ___ y __ r..(n
                 __ grid[x][y] __ HOUSE:
                     bfs(grid, x, y, steps)
 
-        ans = INF = f__('inf')
+        ans INF f__('inf')
 
         ___ x __ r..(m
             ___ y __ r..(n
                 __ grid[x][y] != EMPTY:
                     _____
                 __ steps[x][y] < ans:
-                    ans = steps[x][y]
+                    ans steps[x][y]
 
         r.. ans __ ans < INF ____ -1
 
     ___ bfs  grid, x, y, steps
-        m, n = l..(grid), l..(grid[0])
-        queue, _queue = [(x, y)], []
-        visited = s..(queue)
-        step = 0
+        m, n l..(grid), l..(grid[0])
+        queue, _queue [(x, y)], []
+        visited s..(queue)
+        step 0
 
         w.... queue:
             step += 1
@@ -214,8 +214,8 @@ c_ Solution:
                     (-1, 0), (1, 0),
                     (0, -1), (0, 1),
 
-                    _x = x + dx
-                    _y = y + dy
+                    _x x + dx
+                    _y y + dy
 
                     __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                         _____
@@ -226,4 +226,4 @@ c_ Solution:
                     steps[_x][_y] += step
                     _queue.a..((_x, _y
 
-            queue, _queue = _queue, []
+            queue, _queue _queue, []

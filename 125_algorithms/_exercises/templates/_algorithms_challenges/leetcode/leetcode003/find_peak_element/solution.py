@@ -23,13 +23,13 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        n = l..(nums)
-        left = 0
-        right = n - 1
+        n l..(nums)
+        left 0
+        right n - 1
         __ n __ 1:
             r.. 0
         w.... left <_ right:
-            mid = left + (right - left) / 2
+            mid left + (right - left) / 2
             __ mid __ 0 a.. nums[mid] > nums[mid + 1]:
                 r.. mid
             ____ mid __ n - 1 a.. nums[mid] > nums[mid - 1]:
@@ -37,13 +37,13 @@ c_ Solution(o..
             ____ nums[mid - 1] < nums[mid] > nums[mid + 1]:
                 r.. mid
             ____ mid > 0 a.. nums[mid - 1] > nums[mid]:
-                right = mid - 1
+                right mid - 1
             ____
-                left = mid + 1
+                left mid + 1
         r.. mid
 
-a1 = [1, 2]
-a2 = [1, 2, 1]
-s = Solution()
+a1 [1, 2]
+a2 [1, 2, 1]
+s Solution()
 print(s.findPeakElement(a1
 print(s.findPeakElement(a2

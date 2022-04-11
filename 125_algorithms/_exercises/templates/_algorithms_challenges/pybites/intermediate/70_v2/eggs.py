@@ -1,12 +1,12 @@
 ____ r__ _______ c..
 
-COLORS = 'red blue green yellow brown purple'.s.. 
+COLORS 'red blue green yellow brown purple'.s..
 
 
 c_ EggCreator:
     
     ___ - , limit
-        _limit = limit
+        _limit limit
 
     ___ __iter__
         r.. self

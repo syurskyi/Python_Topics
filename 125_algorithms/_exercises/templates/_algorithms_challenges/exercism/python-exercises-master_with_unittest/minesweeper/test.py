@@ -13,7 +13,7 @@ ____ minesweeper _______ board
 
 c_ MinesweeperTest(unittest.TestCase
     ___ test_board1
-        inp = ["+------+",
+        inp ["+------+",
                "| *  * |",
                "|  *   |",
                "|    * |",
@@ -21,7 +21,7 @@ c_ MinesweeperTest(unittest.TestCase
                "| *  * |",
                "|      |",
                "+------+"]
-        out = ["+------+",
+        out ["+------+",
                "|1*22*1|",
                "|12*322|",
                "| 123*2|",
@@ -32,14 +32,14 @@ c_ MinesweeperTest(unittest.TestCase
         assertEqual(board(inp), out)
 
     ___ test_board2
-        inp = ["+-----+",
+        inp ["+-----+",
                "| * * |",
                "|     |",
                "|   * |",
                "|  * *|",
                "| * * |",
                "+-----+"]
-        out = ["+-----+",
+        out ["+-----+",
                "|1*2*1|",
                "|11322|",
                "| 12*2|",
@@ -49,23 +49,23 @@ c_ MinesweeperTest(unittest.TestCase
         assertEqual(board(inp), out)
 
     ___ test_board3
-        inp = ["+-----+",
+        inp ["+-----+",
                "| * * |",
                "+-----+"]
-        out = ["+-----+",
+        out ["+-----+",
                "|1*2*1|",
                "+-----+"]
         assertEqual(board(inp), out)
 
     ___ test_board4
-        inp = ["+-+",
+        inp ["+-+",
                "|*|",
                "| |",
                "|*|",
                "| |",
                "| |",
                "+-+"]
-        out = ["+-+",
+        out ["+-+",
                "|*|",
                "|2|",
                "|*|",
@@ -75,43 +75,43 @@ c_ MinesweeperTest(unittest.TestCase
         assertEqual(board(inp), out)
 
     ___ test_board5
-        inp = ["+-+",
+        inp ["+-+",
                "|*|",
                "+-+"]
-        out = ["+-+",
+        out ["+-+",
                "|*|",
                "+-+"]
         assertEqual(board(inp), out)
 
     ___ test_board6
-        inp = ["+--+",
+        inp ["+--+",
                "|**|",
                "|**|",
                "+--+"]
-        out = ["+--+",
+        out ["+--+",
                "|**|",
                "|**|",
                "+--+"]
         assertEqual(board(inp), out)
 
     ___ test_board7
-        inp = ["+--+",
+        inp ["+--+",
                "|**|",
                "|**|",
                "+--+"]
-        out = ["+--+",
+        out ["+--+",
                "|**|",
                "|**|",
                "+--+"]
         assertEqual(board(inp), out)
 
     ___ test_board8
-        inp = ["+---+",
+        inp ["+---+",
                "|***|",
                "|* *|",
                "|***|",
                "+---+"]
-        out = ["+---+",
+        out ["+---+",
                "|***|",
                "|*8*|",
                "|***|",
@@ -119,14 +119,14 @@ c_ MinesweeperTest(unittest.TestCase
         assertEqual(board(inp), out)
 
     ___ test_board9
-        inp = ["+-----+",
+        inp ["+-----+",
                "|     |",
                "|   * |",
                "|     |",
                "|     |",
                "| *   |",
                "+-----+"]
-        out = ["+-----+",
+        out ["+-----+",
                "|  111|",
                "|  1*1|",
                "|  111|",
@@ -136,7 +136,7 @@ c_ MinesweeperTest(unittest.TestCase
         assertEqual(board(inp), out)
 
     ___ test_different_len
-        inp = ["+-+",
+        inp ["+-+",
                "| |",
                "|*  |",
                "|  |",
@@ -144,13 +144,13 @@ c_ MinesweeperTest(unittest.TestCase
         assertRaises(V..., board, inp)
 
     ___ test_faulty_border
-        inp = ["+-----+",
+        inp ["+-----+",
                "*   * |",
                "+-- --+"]
         assertRaises(V..., board, inp)
 
     ___ test_invalid_char
-        inp = ["+-----+",
+        inp ["+-----+",
                "|X  * |",
                "+-----+"]
         assertRaises(V..., board, inp)

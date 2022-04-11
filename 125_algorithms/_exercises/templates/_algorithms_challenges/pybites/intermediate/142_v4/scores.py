@@ -1,10 +1,10 @@
 ____ c.. _______ n..
 
 
-MIN_SCORE = 4
-DICE_VALUES = r..(1, 7)
+MIN_SCORE 4
+DICE_VALUES r..(1, 7)
 
-Player = n..('Player', 'name scores')
+Player n..('Player', 'name scores')
 
 
 ___ calculate_score(scores

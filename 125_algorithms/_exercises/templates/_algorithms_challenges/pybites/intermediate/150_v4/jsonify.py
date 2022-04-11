@@ -2,7 +2,7 @@ _______ ___
 _______ j__
 ____ csv _______ DictReader
 
-members = """
+members """
 id,first_name,last_name,email
 1,Junie,Kybert;jkybert0@army.mil
 2,Sid,Churching|schurching1@tumblr.com
@@ -18,8 +18,8 @@ id,first_name,last_name,email
 
 
 ___ convert_to_json(members=members
-    members = members.r..('|', ',').r..(';', ',').s..
+    members members.r..('|', ',').r..(';', ',').s..
     members.p.. 0)
     print _*{members=}', file=sys.stderr, flush=T..)
-    members_dict = l..(DictReader(members
+    members_dict l..(DictReader(members
     r.. j__.d..members_dict)

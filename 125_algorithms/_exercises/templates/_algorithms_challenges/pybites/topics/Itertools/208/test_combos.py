@@ -23,6 +23,6 @@ ___ _sort_all(ret
       4.28, 6.36, 5.19, 4.57], 10, [(4.81, 5.19)]),
 ])
 ___ test_find_number_pairs(numbers, N, e..
-    a.. = find_number_pairs(numbers, N=N)
+    a.. find_number_pairs(numbers, N=N)
     ... t..(a..) __ l..
     ... _sort_all(a..) __ _sort_all(e..)

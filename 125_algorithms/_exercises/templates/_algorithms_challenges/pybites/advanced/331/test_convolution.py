@@ -3,12 +3,12 @@ _______ p__
 
 ____ convolution _______ convolution2D
 
-IMAGE_1x1 = np.array([[1]])
-IMAGE_3x3 = np.r__.rand(3, 3)
-IMAGE_9x9 = np.r__.rand(9, 9)
-IMAGE_256x256 = np.r__.rand(256, 256)
+IMAGE_1x1 np.array([[1]])
+IMAGE_3x3 np.r__.rand(3, 3)
+IMAGE_9x9 np.r__.rand(9, 9)
+IMAGE_256x256 np.r__.rand(256, 256)
 
-IMAGE_5x5_OUTER_SQUARE = np.array(
+IMAGE_5x5_OUTER_SQUARE np.array(
     [
         [1, 1, 1, 1, 1],
         [1, 0, 0, 0, 1],
@@ -17,7 +17,7 @@ IMAGE_5x5_OUTER_SQUARE = np.array(
         [1, 1, 1, 1, 1],
     ]
 )
-IMAGE_5x5_INNER_SQUARE = np.array(
+IMAGE_5x5_INNER_SQUARE np.array(
     [
         [0, 0, 0, 0, 0],
         [0, 1, 1, 1, 0],
@@ -26,7 +26,7 @@ IMAGE_5x5_INNER_SQUARE = np.array(
         [0, 0, 0, 0, 0],
     ]
 )
-IMAGE_5x5_SQUARES = np.array(
+IMAGE_5x5_SQUARES np.array(
     [
         [1, 1, 0, 1, 1],
         [1, 1, 0, 1, 1],
@@ -36,13 +36,13 @@ IMAGE_5x5_SQUARES = np.array(
     ]
 )
 
-KERNEL_1x1 = np.array([[1]])
-KERNEL_3x3_SHARPEN = np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]])
-KERNEL_3x3_BLUR = np.ones((3, 3 * 1 / 9
-KERNEL_3x3_HORIZONTAL_EDGE = np.array([[-1, -2, -1], [0, 0, 0], [1, 2, 1]])
-KERNEL_3x3_VERTICAL_EDGE = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
-KERNEL_5x5 = np.r__.rand(5, 5)
-KERNEL_5x5_ONES = np.diag(np.ones(5
+KERNEL_1x1 np.array([[1]])
+KERNEL_3x3_SHARPEN np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]])
+KERNEL_3x3_BLUR np.ones((3, 3 * 1 / 9
+KERNEL_3x3_HORIZONTAL_EDGE np.array([[-1, -2, -1], [0, 0, 0], [1, 2, 1]])
+KERNEL_3x3_VERTICAL_EDGE np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
+KERNEL_5x5 np.r__.rand(5, 5)
+KERNEL_5x5_ONES np.diag(np.ones(5
 
 
 ?p__.m__.p.(
@@ -73,7 +73,7 @@ KERNEL_5x5_ONES = np.diag(np.ones(5
     ],
 )
 ___ test_feature_map_dimension(image, kernel, padding, stride, feature_map_size
-    feature_map = convolution2D(image, kernel, padding, stride)
+    feature_map convolution2D(image, kernel, padding, stride)
     np.testing.assert_array_equal(feature_map.shape, feature_map_size)
 
 
@@ -137,7 +137,7 @@ ___ test_feature_map_dimension(image, kernel, padding, stride, feature_map_size
     ],
 )
 ___ test_feature_map(image, kernel, padding, stride, feature_map
-    feature_map_ = convolution2D(image, kernel, padding, stride)
+    feature_map_ convolution2D(image, kernel, padding, stride)
     np.testing.assert_array_equal(feature_map_, feature_map)
 
 

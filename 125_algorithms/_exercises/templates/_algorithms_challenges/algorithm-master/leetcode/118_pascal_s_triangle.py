@@ -11,7 +11,7 @@ c_ Solution:
         ans.a..([1])
 
         ___ i __ r..(1, num_rows
-            p.. = [ans[i - 1][0]]
+            p.. [ans[i - 1][0]]
 
             ___ j __ r..(1, l..(ans[i - 1]:
                 p...a..(ans[i - 1][j] + ans[i - 1][j - 1])

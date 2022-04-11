@@ -13,10 +13,10 @@ c_ Solution:
     @return: Count of airplanes are in the sky.
     """
     ___ countOfAirplanes  airplanes
-        ans = 0
+        ans 0
         __ n.. airplanes:
             r.. ans
-        cnt = 0
+        cnt 0
         timeline    # list
         ___ interval __ airplanes:
             timeline.a..((interval.start, 1
@@ -27,5 +27,5 @@ c_ Solution:
                 cnt += 1
             ____
                 cnt -_ 1
-            ans = m..(ans, cnt)
+            ans m..(ans, cnt)
         r.. ans

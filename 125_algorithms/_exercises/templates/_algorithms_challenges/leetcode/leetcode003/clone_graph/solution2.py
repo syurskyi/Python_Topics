@@ -19,23 +19,23 @@ c_ Solution(o..
         """
         __ node __ N..
             r.. N..
-        visited = s..()
-        cloned_node = UndirectedGraphNode(node.label)
-        d = {node: cloned_node}
+        visited s..()
+        cloned_node UndirectedGraphNode(node.label)
+        d {node: cloned_node}
         visit(node)
         r.. d[node]
 
     ___ visit  node
         __ node n.. __ visited:
             visited.add(node)
-            cloned_node = d[node]
+            cloned_node d[node]
             cloned_neighbors    # list
             ___ neighbor __ node.neighbors:
                 __ neighbor n.. __ d:
-                    cloned_neighbor = UndirectedGraphNode(neighbor.label)
-                    d[neighbor] = cloned_neighbor
+                    cloned_neighbor UndirectedGraphNode(neighbor.label)
+                    d[neighbor] cloned_neighbor
                 ____
-                    cloned_neighbor = d[neighbor]
+                    cloned_neighbor d[neighbor]
                 cloned_neighbors.a..(cloned_neighbor)
                 visit(neighbor)
-            cloned_node.neighbors = cloned_neighbors
+            cloned_node.neighbors cloned_neighbors

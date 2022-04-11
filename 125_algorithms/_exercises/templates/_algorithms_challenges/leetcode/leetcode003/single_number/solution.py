@@ -4,7 +4,7 @@ c_ Solution:
     ___ singleNumber  A
         __ n.. A:
             r.. N..
-        p = A[0]
+        p A[0]
         ___ i __ r..(1, l..(A:
-            p = p ^ A[i]
+            p p ^ A[i]
         r.. p

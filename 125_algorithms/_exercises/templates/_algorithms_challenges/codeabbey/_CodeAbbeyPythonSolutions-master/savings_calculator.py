@@ -1,4 +1,4 @@
-amount_values = i..(input
+amount_values i..(input
 results    # list
 
 ___ get_required_year(S,R,P,year
@@ -8,7 +8,7 @@ ___ get_required_year(S,R,P,year
     r.. get_required_year(S,R,P, year+1)
 
 ___ i __ r..(amount_values
-    S,R,P = map(i.., input().s..
+    S,R,P map(i.., input().s..
     results.a..(get_required_year(S,R,P,0
 
 print(*results)

@@ -4,20 +4,20 @@ c_ Solution(o..
     :type s: str
     :rtype: int
     """
-    maxLen = 0
-    single = F..
+    maxLen 0
+    single F..
     d    # dict
     ___ c __ s:
-      d[c] = d.g.. c, 0) + 1
+      d[c] d.g.. c, 0) + 1
 
     ___ key __ d:
       __ d[key] >_ 2:
-        count = d[key]
-        left = d[key] % 2
-        d[key] = left
+        count d[key]
+        left d[key] % 2
+        d[key] left
         maxLen += count - left
       __ n.. single:
         __ d[key] __ 1:
           maxLen += 1
-          single = T..
+          single T..
     r.. maxLen

@@ -1,7 +1,7 @@
 ____ d__ _______ date
 ____ dateutil.rrule _______ *
 
-TODAY = date y.._2018,  m.._11,  d.._29)
+TODAY date y.._2018,  m.._11,  d.._29)
 
 
 ___ get_hundred_weekdays(start_date=TODAY

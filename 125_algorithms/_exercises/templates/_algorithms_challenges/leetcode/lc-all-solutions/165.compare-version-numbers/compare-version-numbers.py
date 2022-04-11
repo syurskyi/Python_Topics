@@ -5,11 +5,11 @@ c_ Solution(o..
     :type version2: str
     :rtype: int
     """
-    v1 = version1.s..(".")
-    v2 = version2.s..(".")
-    i = 0
+    v1 version1.s..(".")
+    v2 version2.s..(".")
+    i 0
     w.... i < l..(v1) a.. i < l..(v2
-      v1Seg, v2Seg = i..(v1[i]), i..(v2[i])
+      v1Seg, v2Seg i..(v1[i]), i..(v2[i])
       __ v1Seg > v2Seg:
         r.. 1
       ____ v1Seg < v2Seg:

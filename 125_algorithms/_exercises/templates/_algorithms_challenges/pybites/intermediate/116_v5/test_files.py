@@ -5,7 +5,7 @@ _______ p__
 
 ____ files _______ get_files
 
-TMP = '/tmp'
+TMP '/tmp'
 
 
 ?p__.m__.p.("byte_sizes, size_in_kb, expected", [
@@ -21,6 +21,6 @@ ___ test_get_files(byte_sizes, size_in_kb, e..
             w__ o.. __.p...j..(dirname, s..(size, __) __ f:
                 f.w.. __.urandom(size
 
-        a.. = [__.p...basename(fi) ___ fi __
+        a.. [__.p...basename(fi) ___ fi __
                   get_files(dirname, size_in_kb)]
         ... s..(a..) __ s..(e..)

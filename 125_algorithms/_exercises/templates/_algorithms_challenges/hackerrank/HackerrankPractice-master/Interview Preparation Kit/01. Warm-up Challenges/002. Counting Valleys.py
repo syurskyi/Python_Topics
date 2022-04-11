@@ -3,8 +3,8 @@
 
 
 ___ counting_valleys(n, s
-    current_level = 0
-    count = 0
+    current_level 0
+    count 0
     ___ i __ r..(n
         __ s[i] __ 'U':
             current_level += 1
@@ -15,7 +15,7 @@ ___ counting_valleys(n, s
     r.. count
 
 
-n = i..(input().s..
-s = input().s..
-result = counting_valleys(n, s)
+n i..(input().s..
+s input().s..
+result counting_valleys(n, s)
 print(result)

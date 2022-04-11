@@ -16,17 +16,17 @@ Here are few examples.
 
 c_ Solution(o..
     ___ searchInsert  nums, target
-        n = l..(nums)
-        left = 0
-        right = n - 1
+        n l..(nums)
+        left 0
+        right n - 1
         w.... left + 1 < right:
-            mid = left + (right - left) / 2
+            mid left + (right - left) / 2
             __ mid > 0 a.. nums[mid - 1] < target < nums[mid]:
                 r.. mid
             ____ target <_ nums[mid]:
-                right = mid
+                right mid
             ____
-                left = mid
+                left mid
         __ nums[left] < target < nums[right]:
             r.. left + 1
         ____ nums[left] __ target:
@@ -39,6 +39,6 @@ c_ Solution(o..
             r.. m..(n, right)
 
 
-a1 = [1, 3]
-s = Solution()
+a1 [1, 3]
+s Solution()
 print s.searchInsert(a1, 2)

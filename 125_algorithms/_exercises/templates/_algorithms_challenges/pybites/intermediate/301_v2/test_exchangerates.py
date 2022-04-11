@@ -13,9 +13,9 @@ ___ exchange_rates_result
 
 ?p__.f..(scope="session")
 ___ matching_result
-    start = date(2020, 1, 1)
-    end = date(2020, 9, 1)
-    daily_rates = j__.l.. (RATES_FILE.read_text["rates"]
+    start date(2020, 1, 1)
+    end date(2020, 9, 1)
+    daily_rates j__.l.. (RATES_FILE.read_text["rates"]
     r.. match_daily_rates(start, end, daily_rates)
 
 
@@ -28,7 +28,7 @@ ___ matching_result
     ],
 )
 ___ test_get_all_days(start, end, e..
-    a.. = get_all_days(start, end)
+    a.. get_all_days(start, end)
     ... l..(a..) __ e..
 
     ... isi..(a..[0], date)
@@ -48,7 +48,7 @@ ___ test_get_all_days(start, end, e..
     ],
 )
 ___ test_match_daily_rates(date, e.., matching_result
-    a.. = matching_result
+    a.. matching_result
     ... a..[date] __ e..
 
 
@@ -70,7 +70,7 @@ ___ test_match_daily_rates(date, e.., matching_result
     ],
 )
 ___ test_exchange_rates_sample(testdate, e.., exchange_rates_result
-    a.. = exchange_rates_result
+    a.. exchange_rates_result
 
     ... a..[testdate]["Base Date"] __ e..["Base Date"]
     ... a..[testdate]["GBP"] __ e..["GBP"]
@@ -82,8 +82,8 @@ ___ test_exchange_rates_all_dates(exchange_rates_result
 
 
 ___ test_exchange_rates_order(exchange_rates_result
-    a.. = l..(exchange_rates_result.keys
-    e.. = s..(exchange_rates_result.keys
+    a.. l..(exchange_rates_result.keys
+    e.. s..(exchange_rates_result.keys
 
     ... a.. __ e..
 

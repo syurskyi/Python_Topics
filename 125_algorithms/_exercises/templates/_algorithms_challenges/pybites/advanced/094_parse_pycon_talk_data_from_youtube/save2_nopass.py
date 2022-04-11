@@ -30,11 +30,11 @@ _______ d__
 # u__.r...u..(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples
-Video = n..('Video', 'id title duration metrics')
+Video n..('Video', 'id title duration metrics')
 
 # POSSIBLE DASK ERROR. UNABLE TO LOAD PICKLE FILE
 # MANUALLY INSERTED BELOW
-pycon_videos = [Video(id='T-TwcmT6Rcw',
+pycon_videos [Video(id='T-TwcmT6Rcw',
                       title='Raymond Hettinger - Dataclasses:  The code generator to end all code generators - PyCon 2018',
                       duration='PT45M8S',
                       metrics={'viewCount': '6047', 'likeCount': '139', 'dislikeCount': '2', 'favoriteCount': '0',
@@ -734,30 +734,30 @@ ___ parse_isoduration(s
 
     ___ get_isosplit(s, s..
         __ s.. __ s:
-            n, s = s.s..(s..)
+            n, s s.s..(s..)
         ____
-            n = 0
+            n 0
         r.. n, s
 
     # Remove prefix
-    s = s.s..('P')[-1]
+    s s.s..('P')[-1]
 
     # Step through letter dividers
-    days, s = get_isosplit(s, 'D')
-    _, s = get_isosplit(s, 'T')
-    hours, s = get_isosplit(s, 'H')
-    minutes, s = get_isosplit(s, 'M')
-    seconds, s = get_isosplit(s, 'S')
+    days, s get_isosplit(s, 'D')
+    _, s get_isosplit(s, 'T')
+    hours, s get_isosplit(s, 'H')
+    minutes, s get_isosplit(s, 'M')
+    seconds, s get_isosplit(s, 'S')
 
     # Convert all to seconds
-    dt = d__.t..(d.._i..(days), hours=i..(hours), minutes=i..(minutes), seconds=i..(seconds
+    dt d__.t..(d.._i..(days), hours=i..(hours), minutes=i..(minutes), seconds=i..(seconds
     r.. i..(dt.total_seconds
 
 
 # TODO: FIX BELOW
 ___ get_talks_gt_one_hour(videos
     """Filter the videos list down to videos of > 1 hour"""
-    one_hour_in_seconds = 3600
+    one_hour_in_seconds 3600
     r.. [video ___ video __ videos __ parse_isoduration(video.duration) >_ one_hour_in_seconds]
 
 
@@ -765,5 +765,5 @@ ___ get_talks_gt_one_hour(videos
 ___ get_talks_lt_twentyfour_min(videos
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
-    twenty_four_minutes_in_seconds = 1400
+    twenty_four_minutes_in_seconds 1400
     r.. [video ___ video __ videos __ parse_isoduration(video.duration) < twenty_four_minutes_in_seconds]

@@ -32,7 +32,7 @@ input    # list
 ### ----------- My solution ---------------------------
 
 ___ my_sum_numbers(numbers_ N..
-    result = 0
+    result 0
     # Dlaczego samo "if numbers:" nie dziala? Tzn. wtedy jak podamy pusta liste to nie spelnia warunku?
     # albo inaczej, przy przekazywaniu argumentu "if arg" dla pelnej tablicy dziala, dla pustej nie
     # "false" values include False, None, 0 and [] (an empty list), also empty sets, strings, dicts.
@@ -56,7 +56,7 @@ ___ my_sum_numbers(numbers_ N..
 
 ___ pyb_sum_numbers(numbers_ N..
     __ numbers __ N..
-        numbers = r..(1, 101)
+        numbers r..(1, 101)
     r.. s..(numbers)
 
 ### Tutaj nie wiem, co chcialem osiagnac. Chyba chcialem sprawdzic alternatywny sposob, jak moznaby

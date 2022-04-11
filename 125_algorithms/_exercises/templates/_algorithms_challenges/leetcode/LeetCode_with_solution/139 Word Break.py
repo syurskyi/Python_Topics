@@ -7,7 +7,7 @@ dict = ["leet", "code"].
 
 Return true because "leetcode" can be segmented as "leet code".
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ wordBreak_TLE  s, d..
         """
@@ -21,7 +21,7 @@ c_ Solution:
         :param dict: a set of string
         :return: a boolean
         """
-        string_builder = ""
+        string_builder ""
         __ s__"":
             r.. T..
 
@@ -67,8 +67,8 @@ c_ Solution:
         :param dict: a set of string
         :return: a boolean
         """
-        dp = [F..] * (l..(s)+1)
-        dp[0] = T.. # dummy
+        dp [F..] * (l..(s)+1)
+        dp[0] T.. # dummy
 
         ___ i __ r..(l..(dp:  # [0, len(s)+1)
             # continue from matched condition
@@ -81,7 +81,7 @@ c_ Solution:
 
                         # main
                         __ s[i:i+l..(word)]__word: # test whether [i, i+len) can construct a word. THE BEAUTY OF HALF OPEN
-                            dp[i+l..(word)] = T..  # record the checking
+                            dp[i+l..(word)] T..  # record the checking
                     ______ I..
                         _____
 

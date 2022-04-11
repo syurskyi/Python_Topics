@@ -8,7 +8,7 @@ c_ Solution(o..
     __ a < 10:
       r.. a
     p..    # list
-    k = 9
+    k 9
     w.... k > 1 a.. a > 1:
       __ a % k __ 0:
         p...a..(s..(k
@@ -18,7 +18,7 @@ c_ Solution(o..
     p...s..()
     __ a > 9 o. n.. p..:
       r.. 0
-    ans = i..("".j..(p..
+    ans i..("".j..(p..
     r.. ans __ ans <_ 0x7fffffff ____ 0
 
   # normal DFS
@@ -32,7 +32,7 @@ c_ Solution(o..
 
     ___ dfs(num, p..
       __ num __ 1:
-        ans = m..(ans, i..("".j..(s..(p..))))
+        ans m..(ans, i..("".j..(s..(p..))))
         r.. T..
       ___ i __ r..(r..(2, 10:
         __ num % i __ 0:
@@ -42,6 +42,6 @@ c_ Solution(o..
           p...p.. )
       r.. F..
 
-    ans = f__("inf")
+    ans f__("inf")
     dfs(a, [])
     r.. ans __ ans != f__("inf") a.. ans <_ 0x7fffffff ____ 0

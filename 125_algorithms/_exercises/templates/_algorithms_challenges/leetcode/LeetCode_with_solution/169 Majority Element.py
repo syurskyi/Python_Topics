@@ -5,7 +5,7 @@ times.
 
 You may assume that the array is non-empty and the majority element always exist in the array.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -17,8 +17,8 @@ c_ Solution:
         :type nums: list[int]
         :rtype int
         """
-        mjr = nums[0]
-        cnt = 0
+        mjr nums[0]
+        cnt 0
         ___ i, v __ e..(nums
             __ mjr __ v:
                 cnt += 1
@@ -26,8 +26,8 @@ c_ Solution:
                 cnt -_ 1
 
             __ cnt < 0:
-                mjr = v
-                cnt = 1
+                mjr v
+                cnt 1
 
         r.. mjr
 

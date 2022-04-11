@@ -13,7 +13,7 @@ c_ Solution(o..
         :type s: str
         :rtype: bool
         """
-        pars = {
+        pars {
             ')': '(',
             ' ': ' ',
             '}': '{',

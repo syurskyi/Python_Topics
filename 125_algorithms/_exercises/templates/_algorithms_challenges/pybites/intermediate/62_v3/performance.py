@@ -10,10 +10,10 @@ ___ timing(f
        Returns (timing, result) tuple"""
     @wraps(f)
     ___ wrapper $ $$:
-        start = t__()
-        result = f $ $$
-        end = t__()
-        duration = end - start
+        start t__()
+        result f $ $$
+        end t__()
+        duration end - start
         print _*Elapsed t__ {f.__name__}: {duration}')
         r.. duration, result
     r.. wrapper
@@ -44,7 +44,7 @@ ___ ordered_list_max_fast(sequence: L..[i..]) __ i..:
 
 @timing
 ___ list_concat(sequence: L..[s..]) __ s..:
-    bigstr = ''
+    bigstr ''
     ___ i __ sequence:
         bigstr += s..(i)
     r.. bigstr
@@ -66,7 +66,7 @@ ___ list_inserts(n: i..) __ L..[i..]:
 
 @timing
 ___ list_inserts_fast(n: i..) __ Deque[i..]:
-    queue = d..()
+    queue d..()
     ___ i __ r..(n
         queue.appendleft(i)
     r.. l..(queue)

@@ -1,16 +1,16 @@
 #accept the range of input
 ___ i __ r..(i..(input())):
     #accept the types of card
-    a = input().s..
+    a input().s..
     # sort the list keeping A at the end
     predefined_list =  'A'
     a =s..(a, key=l.... x: x __ predefined_list)
-    tot = 0
+    tot 0
     #for all elements in a
     ___ j __ a:
         ___
             #check if number or not
-            temp = f__(j)
+            temp f__(j)
             tot +=  temp
         ______:
             #check if it is other than 'A' then add 10 to total TKJQ
@@ -33,7 +33,7 @@ ___ i __ r..(i..(input())):
     __ tot <_ 21:
         print(i..(tot),end= ' ')
     ____
-        print("Bust",end = ' ')
+        print("Bust",end ' ')
 
             
             

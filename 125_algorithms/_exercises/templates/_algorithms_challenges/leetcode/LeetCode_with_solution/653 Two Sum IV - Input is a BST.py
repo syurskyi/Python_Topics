@@ -35,21 +35,21 @@ Output: False
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ findTarget  root: TreeNode, k: i..) __ b..:
-        root = root
+        root root
         r.. w..(root, k)
 
     ___ w..  node, k
         __ n.. node:
             r.. F..
 
-        target = k - node.val
+        target k - node.val
         __ find(root, target, node
             r.. T..
 

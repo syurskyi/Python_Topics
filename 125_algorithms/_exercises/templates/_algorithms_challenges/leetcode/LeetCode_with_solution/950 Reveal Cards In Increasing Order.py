@@ -57,11 +57,11 @@ c_ Solution:
         Reverse the proess of move top card to the bottom - move the bottom card
         to the top
         """
-        q = d..()
+        q d..()
         deck.s..()
         ___ i __ r..(l..(deck) - 1, -1, -1
             __ q:
-                tail = q.p.. )
+                tail q.p.. )
                 q.appendleft(tail)
             q.appendleft(deck[i])
 

@@ -11,8 +11,8 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. boxes: r.. 0
-        n = l..(boxes)
-        dp = [[[0]*n ___ _ __ r..(n)] ___ _ __ r..(n)]
+        n l..(boxes)
+        dp [[[0]*n ___ _ __ r..(n)] ___ _ __ r..(n)]
         r.. helper(dp, boxes, 0, n-1, 1)
     
     ___ helper  dp, boxes, i, j, k
@@ -28,16 +28,16 @@ c_ Solution(o..
                 __ boxes[i] __ boxes[m]:
                     tmp  m..(tmp, helper(dp, boxes, i+1, m-1, 1)+\
                               helper(dp, boxes, m, j, k+1
-            dp[i][j][k] = tmp
+            dp[i][j][k] tmp
             r.. tmp
     
     ___ test
-        testCases = [
+        testCases [
             [1, 3, 2, 2, 2, 3, 4, 3, 1],
         ]
         ___ boxes __ testCases:
             print('boxes: %s' % boxes)
-            result = removeBoxes(boxes)
+            result removeBoxes(boxes)
             print('result: %s' % result)
             print('-='*30+'-')
 

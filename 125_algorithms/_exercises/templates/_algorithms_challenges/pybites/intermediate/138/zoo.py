@@ -2,11 +2,11 @@ ____ i.. _______ count
 
 c_ Animal:
 
-    instances = l..()
-    animal_sequence = c.. 10001, 1)
+    instances l..()
+    animal_sequence c.. 10001, 1)
 
     ___ - , name
-        _name = name.capitalize()
+        _name name.capitalize()
         instances.a..(self)
 
     ___ -s

@@ -6,14 +6,14 @@ c_ Solution:
         __ n.. A:
             r.. -1
 
-        left, mid, right = 0, 0, l..(A) - 1
+        left, mid, right 0, 0, l..(A) - 1
 
         w.... left + 1 < right:
-            mid = left + (right - left) // 2
+            mid left + (right - left) // 2
             __ A[mid] < target:
-                left = mid
+                left mid
             ____
-                right = mid
+                right mid
 
         __ A[left] __ target:
             r.. left

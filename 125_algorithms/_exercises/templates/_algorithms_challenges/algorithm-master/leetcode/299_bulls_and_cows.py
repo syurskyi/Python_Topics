@@ -8,14 +8,14 @@ c_ Solution:
         __ n.. secret o. n.. guess o. l..(secret) != l..(guess
             r.. ''
 
-        TMPL = '{}A{}B'
-        bulls = 0
-        cows = 0
-        cnts = [0] * 10
+        TMPL '{}A{}B'
+        bulls 0
+        cows 0
+        cnts [0] * 10
 
         ___ i __ r..(l..(secret:
-            s = o..(secret[i]) - o..('0')
-            g = o..(guess[i]) - o..('0')
+            s o..(secret[i]) - o..('0')
+            g o..(guess[i]) - o..('0')
 
             __ s __ g:
                 bulls += 1
@@ -42,11 +42,11 @@ c_ Solution:
         __ n.. secret o. n.. guess o. l..(secret) != l..(guess
             r.. ''
 
-        TMPL = '{}A{}B'
-        bulls = 0
-        cows = 0
-        cnt_s = [0] * 10
-        cnt_g = [0] * 10
+        TMPL '{}A{}B'
+        bulls 0
+        cows 0
+        cnt_s [0] * 10
+        cnt_g [0] * 10
 
         ___ i __ r..(l..(secret:
             __ secret[i] __ guess[i]:

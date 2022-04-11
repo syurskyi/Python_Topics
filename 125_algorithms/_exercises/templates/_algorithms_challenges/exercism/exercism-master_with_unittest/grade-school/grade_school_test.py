@@ -7,13 +7,13 @@ ____ grade_school _______ School
 
 c_ GradeSchoolTest(unittest.TestCase
     ___ test_adding_student_adds_them_to_sorted_roster
-        school = School()
+        school School()
         school.add_student(name='Aimee', grade=2)
         e.. =  'Aimee'
         assertEqual(school.roster(), e..)
 
     ___ test_adding_more_students_adds_them_to_sorted_roster
-        school = School()
+        school School()
         school.add_student(name='Blair', grade=2)
         school.add_student(name='James', grade=2)
         school.add_student(name='Paul', grade=2)
@@ -21,7 +21,7 @@ c_ GradeSchoolTest(unittest.TestCase
         assertEqual(school.roster(), e..)
 
     ___ test_students_in_different_grades_in_same_roster
-        school = School()
+        school School()
         school.add_student(name='Chelsea', grade=3)
         school.add_student(name='Logan', grade=7)
         e.. =  'Chelsea', 'Logan'
@@ -31,7 +31,7 @@ c_ GradeSchoolTest(unittest.TestCase
         assertEqual(School().roster(), [])
 
     ___ test_roster_is_sorted_by_grade_then_name
-        school = School()
+        school School()
         ___ name, grade __ [
             ('Peter', 2),
             ('Anna', 1),
@@ -46,7 +46,7 @@ c_ GradeSchoolTest(unittest.TestCase
         assertEqual(school.roster(), e..)
 
     ___ test_grade_returns_students_in_that_grade_in_alphabetical_order
-        school = School()
+        school School()
         school.add_student(name='Franklin', grade=5)
         school.add_student(name='Bradley', grade=5)
         school.add_student(name='Jeff', grade=1)

@@ -16,7 +16,7 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        mini = m..(nums)
+        mini m..(nums)
         r.. s.. m..(l.... e: e - mini, nums
 
 

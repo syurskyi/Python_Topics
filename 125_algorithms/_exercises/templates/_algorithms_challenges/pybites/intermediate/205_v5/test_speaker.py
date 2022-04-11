@@ -17,6 +17,6 @@ ___ test_get_pycon_speaker_first_names(first_names
 
 
 ___ test_get_percentage_of_female_speakers(first_names
-    a.. = get_percentage_of_female_speakers(first_names)
-    e.. = 28.57
+    a.. get_percentage_of_female_speakers(first_names)
+    e.. 28.57
     ... a.. __ e..

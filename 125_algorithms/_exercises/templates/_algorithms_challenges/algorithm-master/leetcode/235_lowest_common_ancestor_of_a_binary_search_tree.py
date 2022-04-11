@@ -16,8 +16,8 @@ c_ Solution(o..
         """
         w.... root:
             __ root.val > p.val a.. root.val > q.val:
-                root = root.left
+                root root.left
             ____ root.val < p.val a.. root.val < q.val:
-                root = root.right
+                root root.right
             ____
                 r.. root

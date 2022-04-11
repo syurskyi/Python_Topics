@@ -27,8 +27,8 @@ c_ HashHeapq:
         __ n.. __heap:
             r..
 
-        i = 0
-        n = l..(__heap)
+        i 0
+        n l..(__heap)
 
         w.... i < n a.. __heap[i] != val:
             i += 1
@@ -39,7 +39,7 @@ c_ HashHeapq:
         __ i __ n - 1:
             __heap.p.. )
         ____
-            __heap[i] = __heap[-1]
+            __heap[i] __heap[-1]
             __heap.p.. )
             heapq._siftup(__heap, i)
             heapq._siftdown(__heap, 0, i)
@@ -63,8 +63,8 @@ c_ Solution:
         __ n.. nums o. k <_ 0 o. l..(nums) < k:
             r.. ans
 
-        minheap = HashHeapq()
-        maxheap = HashHeapq()
+        minheap HashHeapq()
+        maxheap HashHeapq()
 
         ___ i __ r..(l..(nums:
             # remove nums[i - k]

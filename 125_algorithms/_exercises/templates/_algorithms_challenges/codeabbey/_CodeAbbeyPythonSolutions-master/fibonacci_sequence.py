@@ -1,12 +1,12 @@
 _______ m__ __ m
 
-amount_values = i..(input
+amount_values i..(input
 results    # list
 
 ___ get_index_of_fib_number(num
     __(num __ 0
         r.. 0
-    index = 2.078087 * m.log(num) + 1.672276
+    index 2.078087 * m.log(num) + 1.672276
     r.. r..(index)
 
 ___ i __ r..(amount_values

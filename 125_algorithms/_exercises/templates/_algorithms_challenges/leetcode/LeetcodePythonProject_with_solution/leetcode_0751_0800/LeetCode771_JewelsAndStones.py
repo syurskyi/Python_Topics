@@ -10,16 +10,16 @@ c_ Solution(o..
         :type S: str
         :rtype: int
         """
-        j, s = J, S
-        jset = s..(l..(j
-        res = 0
+        j, s J, S
+        jset s..(l..(j
+        res 0
         ___ c __ s:
             __ c __ jset:
                 res += 1
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 'aA',
                 'aAAbbbb',
@@ -32,7 +32,7 @@ c_ Solution(o..
         ___ j, s __ testCases:
             print('j: %s' % j)
             print('s: %s' % s)
-            result = numJewelsInStones(j, s)
+            result numJewelsInStones(j, s)
             print('result: %s' % result)
             print('-='*30+'-')
 

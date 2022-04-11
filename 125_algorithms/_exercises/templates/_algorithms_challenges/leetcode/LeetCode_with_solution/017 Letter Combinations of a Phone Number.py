@@ -6,9 +6,9 @@ Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 Note:
 Although the above answer is in lexicographical order, your answer could be in any order you want.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
-    digit2letters = {
+    digit2letters {
         '2': "abc",
         '3': "def",
         '4': "ghi",

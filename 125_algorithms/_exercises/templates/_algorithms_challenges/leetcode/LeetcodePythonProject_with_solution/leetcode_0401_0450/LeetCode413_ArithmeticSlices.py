@@ -10,25 +10,25 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: int
         """
-        nums = A
+        nums A
         __ n.. nums o. l..(nums) < 3: r.. 0
-        res = 0
-        curr = 0
+        res 0
+        curr 0
         ___ i __ r..(2, l..(nums:
             __ nums[i]-nums[i-1] __ nums[i-1]-nums[i-2]:
                 curr += 1
             ____
-                curr = 0
+                curr 0
             res += curr
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [1, 2, 3, 4],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = numberOfArithmeticSlices(nums)
+            result numberOfArithmeticSlices(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

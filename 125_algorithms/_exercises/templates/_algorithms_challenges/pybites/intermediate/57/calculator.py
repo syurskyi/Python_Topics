@@ -5,25 +5,25 @@ ___ calculator(operation, numbers
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals"""
     print(operation,numbers)
-    total = 0
+    total 0
     __ operation __ 'add':
-        total = f__(numbers[0])
+        total f__(numbers[0])
         ___ i __ numbers[1:]:
-            total = total + f__(i)
+            total total + f__(i)
     ____ operation __ 'sub':
-        total = f__(numbers[0])
+        total f__(numbers[0])
         ___ i __ numbers[1:]:
-            total = total - f__(i)
+            total total - f__(i)
     ____ operation __ 'mul':
-        total = f__(numbers[0])
+        total f__(numbers[0])
         print(total)
         ___ i __ numbers[1:]:
-            total = total * f__(i)
+            total total * f__(i)
             print(total)
     ____ operation __ 'div':
-        total = f__(numbers[0])
+        total f__(numbers[0])
         ___ i __ numbers[1:]:
-            total = total / f__(i)
+            total total / f__(i)
     print(t..(total
     r.. r..(total,2)
 
@@ -37,7 +37,7 @@ ___ create_parser
 
        Note that type=float times out here so do the casting in the calculator
        function above!"""
-    my_parser = a__.A..(d.._'A simple calculator')
+    my_parser a__.A..(d.._'A simple calculator')
     my_parser.a..('-a',
                        '--add',
                        a.._'store', nargs='+',
@@ -63,10 +63,10 @@ ___ call_calculator(args=N.., stdout=F..
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,
        if stdout is True print the result"""
-    parser = create_parser()
+    parser create_parser()
 
     __ args __ N..
-        args = parser.p..
+        args parser.p..
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
@@ -76,9 +76,9 @@ ___ call_calculator(args=N.., stdout=F..
             _____
 
         ___
-            res = calculator(operation, numbers)
+            res calculator(operation, numbers)
         ______ Z..
-            res = 0
+            res 0
 
         __ stdout:
             print(res)

@@ -5,8 +5,8 @@ c_ Solution:
         :type t: str
         :rtype: str
         """
-        a = o..('a')
-        ans = o..(t[-1]) - a
+        a o..('a')
+        ans o..(t[-1]) - a
 
         ___ i __ r..(l..(s:
             ans ^= o..(s[i]) - a
@@ -29,7 +29,7 @@ c_ Solution:
 
         ___ c __ s:
             __ c n.. __ freq:
-                freq[c] = 0
+                freq[c] 0
 
             freq[c] += 1
 

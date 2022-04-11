@@ -15,7 +15,7 @@ ___ test_return_type ?
 
 
 ___ test_extracted_data_is_correct ?
-    data = j__.l..  ?
+    data j__.l..  ?
     ... t..(data) __ l..
     ... l..(data) __ 10
     ___ row __ [{"id": "1", "first_name": "Junie", "last_name": "Kybert",

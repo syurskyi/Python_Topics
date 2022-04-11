@@ -46,7 +46,7 @@ c_ Solution:
         """
         walk backward
         """
-        l = 0
+        l 0
         ___ s __ S:
             __ s.i..
                 l *= i..(s)
@@ -74,25 +74,25 @@ c_ Solution:
         understanding error, one digit will make the entire str repeated
         """
         K -_ 1  # 0-indexed
-        i = 0
-        j = 0
-        last = N..
-        n = l..(S)
+        i 0
+        j 0
+        last N..
+        n l..(S)
         w.... j < n:
             __ S[j].i..
                 __ n.. last:
-                    last = j
+                    last j
 
-                d = i..(S[j])
-                l = last - i
+                d i..(S[j])
+                l last - i
                 w.... K >_ l a.. d > 0:
                     K -_ l
                     d -_ 1
                 __ d > 0:
                     r.. S[i + K]
             ____ last:
-                    i = j
-                    last = N..
+                    i j
+                    last N..
 
             j += 1
 

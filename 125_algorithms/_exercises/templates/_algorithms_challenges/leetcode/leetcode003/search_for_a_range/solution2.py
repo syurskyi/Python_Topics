@@ -18,43 +18,43 @@ c_ Solution(o..
         :type target: int
         :rtype: List[int]
         """
-        n = l..(nums)
-        left = 0
-        right = n - 1
-        left_res = -1
-        right_res = -1
+        n l..(nums)
+        left 0
+        right n - 1
+        left_res -1
+        right_res -1
         # Search for left bound (first occurence of target)
         w.... left + 1 < right:
-            mid = left + (right - left) / 2
+            mid left + (right - left) / 2
             __ target > nums[mid]:
-                left = mid
+                left mid
             ____
-                right = mid
+                right mid
         __ nums[left] __ target:
-            left_res = left
+            left_res left
         ____ nums[right] __ target:
-            left_res = right
+            left_res right
         ____
             r.. [-1, -1]
 
         # Search for right bound (last occurence of target)
-        left = 0
-        right = n - 1
+        left 0
+        right n - 1
         w.... left + 1 < right:
-            mid = left + (right - left) / 2
+            mid left + (right - left) / 2
             __ target >_ nums[mid]:
-                left = mid
+                left mid
             ____
-                right = mid
+                right mid
         __ nums[right] __ target:
-            right_res = right
+            right_res right
         ____ nums[left] __ target:
-            right_res = left
+            right_res left
         r.. [left_res, right_res]
 
 
-a1 = [5, 7, 7, 8, 8, 10]
-a2 = [2, 2]
-s = Solution()
+a1 [5, 7, 7, 8, 8, 10]
+a2 [2, 2]
+s Solution()
 print(s.searchRange(a1, 8
 print(s.searchRange(a2, 2

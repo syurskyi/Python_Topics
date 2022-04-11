@@ -8,7 +8,7 @@ ____ spelling _______ suggest_word, load_words
 ?p__.f..(scope='module')
 ___ a_words
     """Get only a[abcdefghijklm]-words to speed up tests"""
-    words = load_words()
+    words load_words()
     r.. {word ___ word __ words
             __ word.s.. 'a') a.. l..(word) > 1
             a.. word[1] __ s__.ascii_letters[:13]}

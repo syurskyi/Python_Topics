@@ -7,9 +7,9 @@ Created on Feb 1, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution(o..
     ___ isBalanced  root
@@ -28,8 +28,8 @@ c_ Solution(o..
     ___ getHeight  root
         __ n.. root:
             r.. 0
-        leftHeight = getHeight(root.left)
-        rightHeight = getHeight(root.right)
+        leftHeight getHeight(root.left)
+        rightHeight getHeight(root.right)
         r.. m..(leftHeight, rightHeight) + 1
     
     ___ test

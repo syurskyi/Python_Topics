@@ -12,18 +12,18 @@ c_ Solution(o..
         """
         _______ m__
         piles.s..()
-        l, r = 1, m..(piles)
+        l, r 1, m..(piles)
         w.... l <_ r:
-            mid = l+(r-l)//2
-            sumVal = s..(m__.c.. f__(num)/mid) ___ num __ piles)
+            mid l+(r-l)//2
+            sumVal s..(m__.c.. f__(num)/mid) ___ num __ piles)
             __ sumVal <_ H:
-                r = mid-1
+                r mid-1
             ____
-                l = mid+1
+                l mid+1
         r.. l
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [3,6,7,11],
                 8
@@ -38,7 +38,7 @@ c_ Solution(o..
             ],
         ]
         ___ piles, h __ testCases:
-            res = minEatingSpeed(piles, h)
+            res minEatingSpeed(piles, h)
             print('res: %s' % s..(res
             print('-='*30+'-')
 

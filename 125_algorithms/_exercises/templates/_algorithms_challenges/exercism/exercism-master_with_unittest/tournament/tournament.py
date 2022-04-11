@@ -1,13 +1,13 @@
 c_ Team:
 
-    POINTS_PER_WIN = 3
-    POINTS_PER_DRAW = 1
+    POINTS_PER_WIN 3
+    POINTS_PER_DRAW 1
 
     ___ - , name
-        name = name
-        wins = 0
-        draws = 0
-        losses = 0
+        name name
+        wins 0
+        draws 0
+        losses 0
 
     $
     ___ matches_played
@@ -34,10 +34,10 @@ c_ Team:
 
 c_ Tournament:
 
-    WIN = 'win'
-    DRAW = 'draw'
-    LOSS = 'loss'
-    RESULT_SEPERATOR = ';'
+    WIN 'win'
+    DRAW 'draw'
+    LOSS 'loss'
+    RESULT_SEPERATOR ';'
     COLUMN_HEADERS =  'Team', 'MP', 'W', 'D', 'L', 'P'
 
     ___ - , results
@@ -46,20 +46,20 @@ c_ Tournament:
             p..(results)
 
     ___ results_table
-        table = [table_header()]
+        table [table_header()]
         ___ team __ sorted_teams
             table.a..(s..(team
         r.. "\n".j..(table)
 
     ___ sorted_teams
-        alphabetic = s..(_teams.v.., key=l.... team: team.name)
-        alphabetic_descending_points = s..(
+        alphabetic s..(_teams.v.., key=l.... team: team.name)
+        alphabetic_descending_points s..(
             alphabetic, key=l.... team: team.points, r.._T..
         r.. alphabetic_descending_points
 
     ___ p..  results
         ___ result __ results.s..("\n"
-            team_a, team_b, outcome = result.s..(RESULT_SEPERATOR)
+            team_a, team_b, outcome result.s..(RESULT_SEPERATOR)
             maybe_initialize_teams(team_a, team_b)
             tally_outcome(team_a, team_b, outcome)
 
@@ -89,7 +89,7 @@ c_ Tournament:
 
     ___ maybe_initialize_team  name
         __ name n.. __ _teams:
-            _teams[name] = Team(name)
+            _teams[name] Team(name)
 
     ___ table_header
         r.. '{:<30} | {:^3}| {:^3}| {:^3}| {:^3}| {:>2}'.f..(

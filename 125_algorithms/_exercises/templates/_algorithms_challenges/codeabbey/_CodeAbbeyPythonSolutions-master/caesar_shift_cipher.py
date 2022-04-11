@@ -1,10 +1,10 @@
-amount_values,shifter = map(i..,(input().s..()))
+amount_values,shifter map(i..,(input().s..()))
 results    # list
 
 ___ get_cipher(words, shifter
-    cipher_word = ""
+    cipher_word ""
     ___ i __ words:
-        cipher_char = o..(i)
+        cipher_char o..(i)
         __(cipher_char < 65
             cipher_word += chr(cipher_char)
             _____

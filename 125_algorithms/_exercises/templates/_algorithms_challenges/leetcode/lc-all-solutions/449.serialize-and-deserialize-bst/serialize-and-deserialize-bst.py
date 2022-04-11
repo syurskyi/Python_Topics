@@ -12,10 +12,10 @@ c_ Codec:
     :type root: TreeNode
     :rtype: str
     """
-    stack = [(1, root)]
+    stack [(1, root)]
     ans    # list
     w.... stack:
-      pc, node = stack.p.. )
+      pc, node stack.p.. )
       __ n.. node:
         _____
       __ pc __ 0:
@@ -34,22 +34,22 @@ c_ Codec:
     """
     __ n.. data:
       r.. N..
-    vals = data.s..(",")
-    preOrder = map(i.., vals)
-    inOrder = s..(preOrder)
-    preIdx = 0
+    vals data.s..(",")
+    preOrder map(i.., vals)
+    inOrder s..(preOrder)
+    preIdx 0
     d    # dict
     ___ i __ r..(0, l..(inOrder:
-      d[inOrder[i]] = i
+      d[inOrder[i]] i
 
     ___ helper(preOrder, start, end, inOrder, d
       __ start <_ end:
-        rootVal = preOrder[preIdx]
+        rootVal preOrder[preIdx]
         preIdx += 1
-        root = TreeNode(rootVal)
-        midPos = d[rootVal]
-        root.left = helper(preOrder, start, midPos - 1, inOrder, d)
-        root.right = helper(preOrder, midPos + 1, end, inOrder, d)
+        root TreeNode(rootVal)
+        midPos d[rootVal]
+        root.left helper(preOrder, start, midPos - 1, inOrder, d)
+        root.right helper(preOrder, midPos + 1, end, inOrder, d)
         r.. root
 
     r.. helper(preOrder, 0, l..(inOrder) - 1, inOrder, d)

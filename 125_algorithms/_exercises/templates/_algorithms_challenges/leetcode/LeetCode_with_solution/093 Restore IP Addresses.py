@@ -6,7 +6,7 @@ Given "25525511135",
 
 return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -60,7 +60,7 @@ c_ Solution:
         # for i in xrange(1, 3+1):
         # for loop
         ___ i __ x..(1, m..(3, l..(seq + 1
-            new_seg = seq[:i]
+            new_seg seq[:i]
             # condition check
             __ l..(cur) < 4 a.. is_valid(new_seg
                 dfs(seq[i:], cur + [new_seg], result)
@@ -73,5 +73,5 @@ c_ Solution:
         r.. s __ "0" o. s[0]!="0" a.. 0<_ i..(s) <256  # ["0.0.0.0"]
 
 __ _____ __ ____
-    IP = "25525511135"
+    IP "25525511135"
     print Solution().restoreIpAddresses(IP)

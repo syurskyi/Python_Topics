@@ -8,8 +8,8 @@ c_ Account:
 
     ___ - , owner, amount=0
         'This is the constructor that lets us create objects from this class'
-        owner = owner
-        amount = amount
+        owner owner
+        amount amount
         _transactions    # list
 
     ___  -r
@@ -41,9 +41,9 @@ c_ Account:
         r.. balance < other.balance
 
     ___ __add__  other
-        owner = '{}&{}'.f..(owner, other.owner)
-        start_amount = amount + other.amount
-        acc = Account(owner, start_amount)
+        owner '{}&{}'.f..(owner, other.owner)
+        start_amount amount + other.amount
+        acc Account(owner, start_amount)
         ___ t __ l..(self) + l..(other
             acc.add_transaction(t)
         r.. acc

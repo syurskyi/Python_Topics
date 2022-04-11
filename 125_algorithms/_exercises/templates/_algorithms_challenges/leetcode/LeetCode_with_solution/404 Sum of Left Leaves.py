@@ -11,20 +11,20 @@ Example:
 
 There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution(o..
     ___ -
-        s = 0
+        s 0
 
     ___ sumOfLeftLeaves  root
         """

@@ -4,9 +4,9 @@ ____ dataclasses _______ dataclass
 
 ____ bs4 _______ BeautifulSoup, Tag
 
-url = "https://bites-data.s3.us-east-2.amazonaws.com/" "best-programming-books.html"
+url "https://bites-data.s3.us-east-2.amazonaws.com/" "best-programming-books.html"
 tmp  P..("/tmp")
-html_file = tmp / "books.html"
+html_file tmp / "books.html"
 
 __ n.. html_file.exists
     u..(url, html_file)
@@ -30,7 +30,7 @@ c_ Book:
     rating: f__
 
     ___ _rating
-        res = f"{rating:.2f}"
+        res f"{rating:.2f}"
         r.. res[:-1] __ res[-1] __ "0" ____ res
 
     ___ -s
@@ -72,23 +72,23 @@ ___ load_data
     should be updated to indicate this new sorting order.The Book object
     with the highest rating should be first and go down from there.
     """
-    soup = _get_soup(html_file)
-    book_list = soup.find("div", {"class": "books"})
+    soup _get_soup(html_file)
+    book_list soup.find("div", {"class": "books"})
     books    # list
     book: Tag
     ___ book __ book_list.find_all("div", {"class": "book"}
-        title = book.select("h2.main")[0].text
+        title book.select("h2.main")[0].text
         __ "python" n.. __ title.l..:
             _____
         ___
-            author_a = book.select("h3.authors > a")[0].text.s..(" ")
-            author = f'{author_a[-1]}, {" ".j..(author_a[:-1])}'
-            date_span = book.select("span.date")
+            author_a book.select("h3.authors > a")[0].text.s..(" ")
+            author f'{author_a[-1]}, {" ".j..(author_a[:-1])}'
+            date_span book.select("span.date")
             __ l..(date_span) __ 0:
                 _____
-            year = i..(date_span[0].text[-4:])
-            rank = i..(book.select("div.rank > span")[0].text)
-            rating = f__(book.select("span.our-rating")[0].text)
+            year i..(date_span[0].text[-4:])
+            rank i..(book.select("div.rank > span")[0].text)
+            rating f__(book.select("span.our-rating")[0].text)
         ______ AttributeError:
             _____
         books.a..(
@@ -101,13 +101,13 @@ ___ load_data
         ),
         start=1,
 
-        b.rank = n
+        b.rank n
         res.a..(b)
     r.. res
 
 
 ___ main
-    books = load_data()
+    books load_data()
     display_books(books, limit=5, year=2017)
     """If done correctly, the previous function call should display the
     output below.

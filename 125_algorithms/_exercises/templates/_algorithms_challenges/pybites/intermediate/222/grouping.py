@@ -17,13 +17,13 @@ ___ group(iterable, n
     """
 
     __ n.. isi..(iterable, types.GeneratorType
-      input = (ele ___ ele __ iterable)
+      input (ele ___ ele __ iterable)
     ____
-      input = iterable
+      input iterable
 
     result    # list
     w... T...
-      section = l..(islice(input, n
+      section l..(islice(input, n
       __ section:
         result.a..(section)
       ____

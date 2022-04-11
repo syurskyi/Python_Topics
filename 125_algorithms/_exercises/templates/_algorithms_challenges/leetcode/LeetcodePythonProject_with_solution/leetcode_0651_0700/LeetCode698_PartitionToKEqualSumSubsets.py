@@ -10,7 +10,7 @@ c_ Solution(o..
         :type k: int
         :rtype: bool
         """
-        sumVal = s..(nums)
+        sumVal s..(nums)
         __ sumVal%k != 0:
             r.. F..
         nums.s..(r.._T..
@@ -33,7 +33,7 @@ c_ Solution(o..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [4, 3, 2, 3, 5, 2, 1],
                 4,
@@ -50,7 +50,7 @@ c_ Solution(o..
         ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
-            result = canPartitionKSubsets(nums, k)
+            result canPartitionKSubsets(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

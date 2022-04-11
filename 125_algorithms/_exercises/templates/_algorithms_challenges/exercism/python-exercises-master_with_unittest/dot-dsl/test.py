@@ -5,14 +5,14 @@ ____ dot_dsl _______ Graph, Node, Edge, NODE, EDGE, ATTR
 
 c_ DotDslTest(unittest.TestCase
     ___ test_empty_graph
-        g = Graph()
+        g Graph()
 
         assertEqual(g.nodes, [])
         assertEqual(g.edges, [])
         assertEqual(g.attrs, {})
 
     ___ test_graph_with_one_node
-        g = Graph([
+        g Graph([
             (NODE, "a", {})
         ])
 
@@ -21,7 +21,7 @@ c_ DotDslTest(unittest.TestCase
         assertEqual(g.attrs, {})
 
     ___ test_graph_with_one_node_with_keywords
-        g = Graph([
+        g Graph([
             (NODE, "a", {"color": "green"})
         ])
 
@@ -30,7 +30,7 @@ c_ DotDslTest(unittest.TestCase
         assertEqual(g.attrs, {})
 
     ___ test_graph_with_one_edge
-        g = Graph([
+        g Graph([
             (EDGE, "a", "b", {})
         ])
 
@@ -39,7 +39,7 @@ c_ DotDslTest(unittest.TestCase
         assertEqual(g.attrs, {})
 
     ___ test_graph_with_one_attribute
-        g = Graph([
+        g Graph([
             (ATTR, "foo", "1")
         ])
 
@@ -48,7 +48,7 @@ c_ DotDslTest(unittest.TestCase
         assertEqual(g.attrs, {"foo": "1"})
 
     ___ test_graph_with_attributes
-        g = Graph([
+        g Graph([
             (ATTR, "foo", "1"),
             (ATTR, "title", "Testing Attrs"),
             (NODE, "a", {"color": "green"}),
@@ -117,7 +117,7 @@ c_ DotDslTest(unittest.TestCase
         ___
             assertRaisesRegex
         ______ AttributeError:
-            assertRaisesRegex = assertRaisesRegexp
+            assertRaisesRegex assertRaisesRegexp
 
     ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")

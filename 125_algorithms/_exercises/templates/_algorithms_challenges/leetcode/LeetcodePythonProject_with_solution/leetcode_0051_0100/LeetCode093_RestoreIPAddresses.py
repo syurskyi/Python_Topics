@@ -20,7 +20,7 @@ c_ Solution(o..
         __ ind >_ l..(s
             r..
         ___ i __ r..(ind+1, ind+4
-            sub = s[ind:i]
+            sub s[ind:i]
             __ sub[0] __ '0' a.. l..(sub) > 1:
                 _____
             __ i..(sub) > 255:

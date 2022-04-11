@@ -6,7 +6,7 @@ For "(()", the longest valid parentheses substring is "()", which has length = 2
 
 Another example is ")()())", where the longest valid parentheses substring is "()()", which has length = 4.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -26,14 +26,14 @@ c_ Solution(o..
         :return: an integer
         """
         stk    # list  # hold the INDEX of UNPAIRED bracket, either ( or )
-        maxa = 0
+        maxa 0
         ___ idx, val __ e..(s
             __ val __ ")" a.. stk a.. s[stk[-1]] __ "(":
                 stk.p.. )
                 __ n.. stk:
-                    maxa = m..(maxa, idx+1)
+                    maxa m..(maxa, idx+1)
                 ____
-                    maxa = m..(maxa, idx-stk[-1])
+                    maxa m..(maxa, idx-stk[-1])
             ____
                 stk.a..(idx)
 

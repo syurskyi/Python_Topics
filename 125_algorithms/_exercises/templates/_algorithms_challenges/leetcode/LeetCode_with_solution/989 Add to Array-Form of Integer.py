@@ -37,13 +37,13 @@ c_ Solution:
         """
         carry
         """
-        carry = K
+        carry K
         ___ i __ r..(l..(A)-1, -1, -1
             A[i] += carry
-            carry = A[i] // 10
+            carry A[i] // 10
             A[i] %= 10
             
-        head = d..()
+        head d..()
         w.... carry:
             head.appendleft(carry % 10)
             carry //= 10

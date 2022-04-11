@@ -13,15 +13,15 @@ c_ Solution:
         __ n.. a o. l..(a) <_ 1:
             r.. 0
 
-        neibs = [[] ___ _ __ r..(l..(a) + 1)]  # neighbors
+        neibs [[] ___ _ __ r..(l..(a) + 1)]  # neighbors
 
         # to build the node connection
         ___ i __ r..(0, l..(e), 2
             neibs[e[i]].a..(e[i + 1])
             neibs[e[i + 1]].a..(e[i])
 
-        ans = 0
-        res = dfs(0, 1, a, neibs)
+        ans 0
+        res dfs(0, 1, a, neibs)
 
         r.. m..(ans, res)
 
@@ -33,7 +33,7 @@ c_ Solution:
             __ neib __ root:
                 _____
 
-            res = dfs(curr, neib, a, neibs)
+            res dfs(curr, neib, a, neibs)
 
             # incr the res and append to tmp
             # if both `neib` and `curr` have same value
@@ -44,6 +44,6 @@ c_ Solution:
         tmp.extend((0, 0
         tmp.s..(r.._T..
 
-        ans = m..(ans, tmp[0] + tmp[1])
+        ans m..(ans, tmp[0] + tmp[1])
 
         r.. tmp[0]

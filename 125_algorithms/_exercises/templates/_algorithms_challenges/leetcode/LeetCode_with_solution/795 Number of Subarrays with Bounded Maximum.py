@@ -32,16 +32,16 @@ c_ Solution:
 
         memory optimization - one counter F is enough
         """
-        F = 0
-        ret = 0
-        prev = -1
+        F 0
+        ret 0
+        prev -1
         ___ i, a __ e..(A
             __ L <_ a <_ R:
-                F = i - prev
+                F i - prev
                 ret += F
             ____ a > R:
-                F = 0
-                prev = i
+                F 0
+                prev i
             ____
                 # F = F
                 ret += F
@@ -58,14 +58,14 @@ c_ Solution:
 
         memory optimization - one counter F is enough
         """
-        F = 0
-        ret = 0
+        F 0
+        ret 0
         ___ a __ A:
             __ L <_ a <_ R:
                 F += 1  # error
                 ret += F
             ____ a > R:
-                F = 0
+                F 0
             ____
                 # F = F
                 ret += F

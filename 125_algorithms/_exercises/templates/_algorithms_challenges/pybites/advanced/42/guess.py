@@ -1,6 +1,6 @@
 _______ r__
-MAX_GUESSES = 5
-START, END = 1, 20
+MAX_GUESSES 5
+START, END 1, 20
 
 
 ___ get_random_number
@@ -13,9 +13,9 @@ c_ Game:
 
     ___ -
         """Init _guesses, _answer, _win to set(), get_random_number(), False"""
-        _guesses = s..()
-        _answer = get_random_number()
-        _win = F..
+        _guesses s..()
+        _answer get_random_number()
+        _win F..
 
 
 
@@ -32,8 +32,8 @@ c_ Game:
         
         w... T...
             ___
-                number = input("Guess a number between 1 and 20: ")
-                result = i..(number)
+                number input("Guess a number between 1 and 20: ")
+                result i..(number)
             ______:
                 __ number __ N.. o. l..(number) __ 0:
                     print('Please enter a number')
@@ -65,10 +65,10 @@ c_ Game:
            {guess} is too high
            Return a boolean"""
         
-        correct = F..
+        correct F..
         __ guess __ _answer:
             print(f"{guess} is correct!")
-            correct = T..
+            correct T..
         ____ guess > _answer:
             print(f"{guess} is too high")
         ____
@@ -83,14 +83,14 @@ c_ Game:
         ___ i __ r..(1,MAX_GUESSES + 1
             w... T...
                 ___
-                    user_guess = guess()
+                    user_guess guess()
                 ______ V..
                     p..
                 ____
                     _____
 
             
-            _win = _validate_guess(user_guess)
+            _win _validate_guess(user_guess)
 
 
             __ _win:
@@ -113,5 +113,5 @@ c_ Game:
 
 
 __ _____ __ _____
-    game = Game()
+    game Game()
     game()

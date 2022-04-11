@@ -1,5 +1,5 @@
 c_ Solution:
-    V = (
+    V (
         (-1,  0),
         ( 1,  0),
         ( 0, -1),
@@ -15,8 +15,8 @@ c_ Solution:
         __ G __ N.. o. G[0] __ N.. o. s __ N..
             r.. F..
 
-        m, n = l..(G), l..(G[0])
-        visited = [[F..] * n ___ _ __ r..(m)]
+        m, n l..(G), l..(G[0])
+        visited [[F..] * n ___ _ __ r..(m)]
         ___ x __ r..(m
             ___ y __ r..(n
                 __ (G[x][y] __ s[0] a..
@@ -30,16 +30,16 @@ c_ Solution:
             r.. T..
 
         ___ dx, dy __ V:
-            _x = x + dx
-            _y = y + dy
+            _x x + dx
+            _y y + dy
             __ n.. (0 <_ _x < l..(G) a.. 0 <_ _y < l..(G[0]:
                 _____
             __ visited[_x][_y] o. G[_x][_y] != s[i]:
                 _____
 
-            visited[_x][_y] = T..
+            visited[_x][_y] T..
             __ dfs(G, _x, _y, s, i + 1, visited
                 r.. T..
-            visited[_x][_y] = F..
+            visited[_x][_y] F..
 
         r.. F..

@@ -19,9 +19,9 @@ c_ Solution:
             r.. node
 
         __ node.val < root.val:
-            root.left = insertNode(root.left, node)
+            root.left insertNode(root.left, node)
         ____
-            root.right = insertNode(root.right, node)
+            root.right insertNode(root.right, node)
 
         r.. root
 
@@ -37,15 +37,15 @@ c_ Solution:
         __ n.. root:
             r.. node
 
-        curr = root
+        curr root
         w.... curr __ n.. node:
             __ node.val < curr.val:
                 __ curr.left __ N..
-                    curr.left = node
-                curr = curr.left
+                    curr.left node
+                curr curr.left
             ____
                 __ curr.right __ N..
-                    curr.right = node
-                curr = curr.right
+                    curr.right node
+                curr curr.right
 
         r.. root

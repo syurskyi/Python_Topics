@@ -4,7 +4,7 @@ Backtracking
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -19,9 +19,9 @@ c_ Solution(o..
 
         ret    # list
         ___ i __ x..(l..(word)+1
-            left_num = s..(i) __ i ____ ""
+            left_num s..(i) __ i ____ ""
             ___ right __ generateAbbreviations(word[i+1:]
-                cur = left_num + word[i:i+1] + right
+                cur left_num + word[i:i+1] + right
                 ret.a..(cur)
 
         r.. ret
@@ -29,7 +29,7 @@ c_ Solution(o..
 
 c_ SolutionTLE(o..
     ___ -
-        cache = d..(l..)
+        cache d..(l..)
 
     ___ generateAbbreviations  word
         """
@@ -44,10 +44,10 @@ c_ SolutionTLE(o..
         __ word n.. __ cache:
             ret    # list
             ___ l __ x..(1, l..(word)+1
-                pivot = s..(l)
+                pivot s..(l)
                 ___ i __ x..(l..(word)-l+1
-                    lefts = dfs(word[:i])
-                    rights = dfs(word[i+l:])
+                    lefts dfs(word[:i])
+                    rights dfs(word[i+l:])
                     ___ left __ lefts:
                         ___ right __ rights:
                             __ left a.. left[-1].i.. o. right a.. right[0].i..
@@ -56,7 +56,7 @@ c_ SolutionTLE(o..
                             ret.a..(left+pivot+right)
 
             ret.a..(word)
-            cache[word] = ret
+            cache[word] ret
 
         r.. cache[word]
 

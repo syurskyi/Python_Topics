@@ -22,11 +22,11 @@ Visually, the graph looks like the following:
          / \
          \_/
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a undirected graph node
 c_ UndirectedGraphNode:
     ___ - , x
-        label = x
+        label x
         neighbors    # list
     ___  -r
         r.. r.. (label)
@@ -51,12 +51,12 @@ c_ Solution:
         __ n.. node:
             r..
         visited_set.add(node)
-        neighbors_cloned = [clone_graph_visited(neighbor, s..(visited_set ___ neighbor __ node.neighbors __ neighbor n.. __ visited_set]
-        node_cloned = UndirectedGraphNode(node.label)
+        neighbors_cloned [clone_graph_visited(neighbor, s..(visited_set ___ neighbor __ node.neighbors __ neighbor n.. __ visited_set]
+        node_cloned UndirectedGraphNode(node.label)
         ___ neighbor_cloned __ neighbors_cloned:
             __ neighbor_cloned n.. __ visited_set:
                 neighbor_cloned.neighbors.a..(node_cloned)
-        node_cloned.neighbors = neighbors_cloned
+        node_cloned.neighbors neighbors_cloned
         r.. node_cloned
 
     ___ cloneGraph  node
@@ -74,30 +74,30 @@ c_ Solution:
             r..
 
         original2copy    # dict # dict  #!important
-        q = [node]  # queue of nodes whose the neighbors are to be copied
+        q [node]  # queue of nodes whose the neighbors are to be copied
 
-        clone = UndirectedGraphNode(node.label)
-        original2copy[node] = clone
+        clone UndirectedGraphNode(node.label)
+        original2copy[node] clone
         w.... q:
-            cur = q.p.. )
+            cur q.p.. )
             ___ neighbor __ cur.neighbors:
                 __ neighbor __ original2copy:  # already copied
                     original2copy[cur].neighbors.a..(original2copy[neighbor])
                 ____
                     q.a..(neighbor)
-                    clone_neighbor = UndirectedGraphNode(neighbor.label)
-                    original2copy[neighbor] = clone_neighbor
+                    clone_neighbor UndirectedGraphNode(neighbor.label)
+                    original2copy[neighbor] clone_neighbor
                     original2copy[cur].neighbors.a..(original2copy[neighbor])
 
         r.. original2copy[node]
 
 
 __ _____ __ ____
-    lst = [UndirectedGraphNode(i+1) ___ i __ r..(3)]
+    lst [UndirectedGraphNode(i+1) ___ i __ r..(3)]
     ___ item __ lst:
-        item.neighbors = l..(lst)
+        item.neighbors l..(lst)
         item.neighbors.remove(item)
-    cloned = Solution().cloneGraph(lst[0])
+    cloned Solution().cloneGraph(lst[0])
     ... cloned.neighbors[0].label __ (2, 3)
     ... cloned.neighbors[1].label __ (2, 3)
 

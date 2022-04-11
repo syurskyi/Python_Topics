@@ -8,18 +8,18 @@ c_ Solution:
         __ n.. matrix o. n.. matrix[0]:
             r.. F..
 
-        m, n = l..(matrix), l..(matrix[0])
-        left, right = 0, m * n - 1
+        m, n l..(matrix), l..(matrix[0])
+        left, right 0, m * n - 1
 
         w.... left + 1 < right:
-            mid = (left + right) // 2
-            x = mid // n
-            y = mid % n
+            mid (left + right) // 2
+            x mid // n
+            y mid % n
 
             __ matrix[x][y] < target:
-                left = mid
+                left mid
             ____ matrix[x][y] > target:
-                right = mid
+                right mid
             ____
                 r.. T..
 

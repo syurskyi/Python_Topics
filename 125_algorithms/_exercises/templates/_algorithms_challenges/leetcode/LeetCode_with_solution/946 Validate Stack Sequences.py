@@ -33,8 +33,8 @@ c_ Solution:
         """
         maintain a stack and iterate through pushed
         """
-        j = 0
-        n = l..(pushed)
+        j 0
+        n l..(pushed)
         stk    # list
         ___ i __ r..(n
             stk.a..(pushed[i])
@@ -48,10 +48,10 @@ c_ Solution:
         """
         maintain a stack
         """
-        i = 0
-        j = 0
+        i 0
+        j 0
         stk    # list
-        n = l..(pushed)
+        n l..(pushed)
         w.... i < n a.. j < n:
             w.... i < n a.. (n.. stk o. stk[-1] != popped[j]
                 stk.a..(pushed[i])

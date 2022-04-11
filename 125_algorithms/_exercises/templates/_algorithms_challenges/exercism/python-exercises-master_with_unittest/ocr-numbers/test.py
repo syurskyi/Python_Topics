@@ -75,7 +75,7 @@ c_ OcrTest(unittest.TestCase
             ]), '0010110')
 
     ___ test_3186547290
-        d.. = '3186547290'
+        d.. '3186547290'
         assertEqual(
             number([
                 " _     _  _  _     _  _  _  _ ",
@@ -85,7 +85,7 @@ c_ OcrTest(unittest.TestCase
             ]), d..)
 
     ___ test_Lost
-        d.. = '4815162342'
+        d.. '4815162342'
         assertEqual(
             number([
                 "    _     _     _  _  _     _ ",
@@ -104,7 +104,7 @@ c_ OcrTest(unittest.TestCase
             ]), '12?45')
 
     ___ test_grid3186547290
-        d.. = '3186547290'
+        d.. '3186547290'
         assertEqual(
             grid(d..), [
                 " _     _  _  _     _  _  _  _ ",

@@ -4,8 +4,8 @@ _______ j__
 _______ r__
 ____ j__.decoder _______ JSONDecodeError
 
-EXCEPTION = 'exception caught'
-TMP = P..('/tmp')
+EXCEPTION 'exception caught'
+TMP P..('/tmp')
 
 
 ___ convert_to_csv(json_file
@@ -28,19 +28,19 @@ ___ convert_to_csv(json_file
     # you code
 
     ___
-        data = j__.l.. json_file)
+        data j__.l.. json_file)
     ______ JSONDecodeError:
         print(EXCEPTION)
         r..
 
 
-    creatures = data 'mounts'  'collected'
+    creatures data 'mounts'  'collected'
 
-    field_names = l..(creatures[0].keys
+    field_names l..(creatures[0].keys
 
     
     w__ o.. csv_file,'w') __ csv_file:
-        writer = csv.DictWriter(csv_file,fieldnames=fieldnames)
+        writer csv.DictWriter(csv_file,fieldnames=fieldnames)
         writer.writeheader()
 
 
@@ -57,7 +57,7 @@ ___ convert_to_csv(json_file
 
     
 __ _______ __ _______
-    json_file = 'https://bites-data.s3.us-east-2.amazonaws.com/mount-data1.json'
+    json_file 'https://bites-data.s3.us-east-2.amazonaws.com/mount-data1.json'
     convert_to_csv(json_file)
 
 

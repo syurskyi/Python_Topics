@@ -5,8 +5,8 @@ c_ Solution(o..
     :type s2: str
     :rtype: bool
     """
-    n = l..(s1)
-    m = l..(s2)
+    n l..(s1)
+    m l..(s2)
     __ s..(s1) != s..(s2
       r.. F..
 

@@ -1,4 +1,4 @@
-VOWELS = l..('aeiou')
+VOWELS l..('aeiou')
 
 
 ___ get_word_max_vowels(text
@@ -8,14 +8,14 @@ ___ get_word_max_vowels(text
    vowel_frequency    # dict
 
    ___ word __ text.s.. :
-      vowel_count = 0
+      vowel_count 0
       ___ char __ word:
          __ char __ VOWELS:
             vowel_count += 1
       __ vowel_count > 0:
-         vowel_frequency[word] = vowel_count
+         vowel_frequency[word] vowel_count
 
-   vowel_frequency_max = m..(vowel_frequency, key=vowel_frequency.get)
+   vowel_frequency_max m..(vowel_frequency, key=vowel_frequency.get)
    r.. (vowel_frequency_max, vowel_frequency[vowel_frequency_max])
 
 

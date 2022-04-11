@@ -2,7 +2,7 @@
 Premium question
 Non-dp version of edit distance
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -14,12 +14,12 @@ c_ Solution(o..
         :type t: str
         :rtype: bool
         """
-        m, n = l..(s), l..(t)
+        m, n l..(s), l..(t)
         __ m > n: r.. isOneEditDistance(t, s)
         __ n-m > 1: r.. F..
 
-        diff = 0
-        i, j = 0, 0
+        diff 0
+        i, j 0, 0
         w.... i < m a.. j < n a.. diff < 2:
             __ s[i] __ t[j]:
                 i += 1
@@ -41,21 +41,21 @@ c_ Solution1(o..
         """
         Iterator version
         """
-        m, n = l..(s), l..(t)
+        m, n l..(s), l..(t)
         __ m > n: r.. isOneEditDistance(t, s)
         __ n-m > 1: r.. F..
 
-        diff = 0
-        i, j = i..(s), i..(t)
-        a, b = next(i, N..), next(j, N..)
+        diff 0
+        i, j i..(s), i..(t)
+        a, b next(i, N..), next(j, N..)
         w.... a a.. b a.. diff < 2:
             __ a __ b:
-                a, b = next(i, N..), next(j, N..)
+                a, b next(i, N..), next(j, N..)
             ____
                 __ m != n:
-                    b = next(j, N..)
+                    b next(j, N..)
                 ____
-                    a, b = next(i, N..), next(j, N..)
+                    a, b next(i, N..), next(j, N..)
 
                 diff += 1
 

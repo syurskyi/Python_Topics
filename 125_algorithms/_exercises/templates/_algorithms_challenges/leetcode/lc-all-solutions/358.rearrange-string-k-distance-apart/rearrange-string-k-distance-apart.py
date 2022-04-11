@@ -7,8 +7,8 @@ c_ Solution(o..
     """
     __ k < 2:
       r.. s
-    d = c...C..(s)
-    heap = [(-d[key], key) ___ key __ d]
+    d c...C..(s)
+    heap [(-d[key], key) ___ key __ d]
     heapq.heapify(heap)
     ans    # list
     w.... l..(ans) < l..(s
@@ -16,7 +16,7 @@ c_ Solution(o..
       ___ _ __ r..(k
         __ n.. heap:
           r.. ""
-        freq, c = heapq.heappop(heap)
+        freq, c heapq.heappop(heap)
         freq += 1
         ans.a..(c)
         __ l..(ans) __ l..(s

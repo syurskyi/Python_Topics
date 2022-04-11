@@ -16,10 +16,10 @@ c_ Logger(o..
     :rtype: bool
     """
     __ message n.. __ d:
-      d[message] = timestamp
+      d[message] timestamp
       r.. T..
     ____ timestamp - d[message] >_ 10:
-      d[message] = timestamp
+      d[message] timestamp
       r.. T..
     r.. F..
 

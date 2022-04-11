@@ -8,7 +8,7 @@ ___ process_classes(classes: l..) __ l..:
 
 ___ process_row(row
     '''processes row according to SIS format.'''
-    classes = process_classes(row[2:])
+    classes process_classes(row[2:])
     r..  ','.j..([cls, '2020', row[0]]) ___ cls __ classes]
 
 
@@ -17,10 +17,10 @@ ___ class_rosters(input_file
         according to the Bite description.
         Return a list holding one item per student
         per class, correctly formatted.'''
-    sis_list = l..()
+    sis_list l..()
     w__ o.. input_file, _ __ f:
         ___ row __ csv.reader(f
-            sis_rows = process_row(row)
+            sis_rows process_row(row)
             __ sis_rows:
                 sis_list.e.. sis_rows)
     r.. sis_list

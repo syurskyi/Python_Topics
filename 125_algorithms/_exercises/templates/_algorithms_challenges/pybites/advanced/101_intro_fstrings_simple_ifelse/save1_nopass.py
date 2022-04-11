@@ -1,10 +1,10 @@
-MIN_DRIVING_AGE = 18
+MIN_DRIVING_AGE 18
 
 
 ___ allowed_driving(name, age
-    name = input("What is your name?")
-    age = i..(input("How old are you?"
-    MIN_DRIVING_AGE = age
+    name input("What is your name?")
+    age i..(input("How old are you?"
+    MIN_DRIVING_AGE age
     __ MIN_DRIVING_AGE <_ 18:
         print(f"{name} is allowed to drive")
     ____

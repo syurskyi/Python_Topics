@@ -9,25 +9,25 @@ c_ Solution(o..
         :type S: str
         :rtype: List[List[int]]
         """
-        s = S
+        s S
         res    # list
-        left = 0
+        left 0
         ___ i __ r..(l..(s)+1
             __ i __ l..(s) o. s[i] != s[left]:
                 __ i-left >_ 3:
                     res.a..([left, i-1])
-                left = i
+                left i
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             'aaa',
             'abbxxxxzzy',
             'abc',
             'abcdddeeeeaabbbcd',
         ]
         ___ s __ testCases:
-            result = largeGroupPositions(s)
+            result largeGroupPositions(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

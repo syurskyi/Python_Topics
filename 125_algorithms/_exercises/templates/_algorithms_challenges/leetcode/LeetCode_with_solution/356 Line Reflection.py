@@ -3,19 +3,19 @@ Premium Question
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
     ___ -
-        x = N..
+        x N..
 
     ___ isReflected  points
         """
         :type points: List[List[int]]
         :rtype: bool
         """
-        d = d..(l..)
+        d d..(l..)
         ___ x, y __ points:
             d[y].a..(x)
 
@@ -27,12 +27,12 @@ c_ Solution(o..
 
     ___ check  lst
         lst.s..()
-        i = 0
-        j = l..(lst) - 1
+        i 0
+        j l..(lst) - 1
         w.... i < j:
-            x = (lst[i] + lst[j]) / f__(2)
+            x (lst[i] + lst[j]) / f__(2)
             __ n.. x:
-                x = x
+                x x
             ____ x != x:
                 r.. F..
 
@@ -41,7 +41,7 @@ c_ Solution(o..
 
         __ i __ j:
             __ n.. x:
-                x = lst[i]
+                x lst[i]
             ____ x != lst[i]:
                 r.. F..
 

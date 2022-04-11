@@ -22,13 +22,13 @@ c_ Solution:
         vals    # list
         inorder_traverse(root, vals)
 
-        n = l..(vals)
-        i = 0
+        n l..(vals)
+        i 0
 
         w.... i < n a.. vals[i] < target:
             i += 1
 
-        i, j = i - 1, i
+        i, j i - 1, i
 
         w.... k a.. i >_ 0 a.. j < n:
             __ target - vals[i] < vals[j] - target:

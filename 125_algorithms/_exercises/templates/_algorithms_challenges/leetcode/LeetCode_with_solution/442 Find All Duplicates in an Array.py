@@ -30,13 +30,13 @@ c_ Solution:
         :rtype: List[int]
         """
         ___ i __ r..(l..(A:
-            t = idx(A[i])
+            t idx(A[i])
             w.... i != t:
                 __ A[i] __ A[t]:
                     _____
                 ____
-                    A[i], A[t] = A[t], A[i]
-                    t = idx(A[i])
+                    A[i], A[t] A[t], A[i]
+                    t idx(A[i])
 
         ret    # list
         ___ i __ r..(l..(A:

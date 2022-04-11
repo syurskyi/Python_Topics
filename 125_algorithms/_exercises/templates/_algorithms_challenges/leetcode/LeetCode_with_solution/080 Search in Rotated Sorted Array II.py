@@ -6,7 +6,7 @@ Would this affect the run-time complexity? How and why?
 
 Write a function to determine if a given target is in the array.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ search_set  A, target
         """
@@ -26,34 +26,34 @@ c_ Solution:
         :param target: an integer
         :return: a boolean
         """
-        A = l..(s..(A  # short-cut eliminate duplicates  # but O(n)
+        A l..(s..(A  # short-cut eliminate duplicates  # but O(n)
 
-        length = l..(A)
-        start = 0
-        end = length-1
+        length l..(A)
+        start 0
+        end length-1
         w.... start<_end:
-            mid = (start+end)/2
+            mid (start+end)/2
             # found
             __ A[mid]__target:
                 r.. T..
             # case 1
             __ A[start]<A[mid]<A[end]:
                 __ target>A[mid]:
-                    start = mid+1
+                    start mid+1
                 ____
-                    end = mid-1
+                    end mid-1
             # case 2
             ____ A[start]>A[mid] a.. A[mid]<A[end]:
                 __ target>A[mid] a.. target<_A[end]:
-                    start = mid+1
+                    start mid+1
                 ____
-                    end = mid-1
+                    end mid-1
             # case 3
             ____
                 __ target<A[mid] a.. target>_A[start]:
-                    end = mid-1
+                    end mid-1
                 ____
-                    start = mid+1
+                    start mid+1
 
         r.. F..
 
@@ -75,11 +75,11 @@ c_ Solution:
         :param target: an integer
         :return: a boolean
         """
-        length = l..(A)
-        start = 0
-        end = length-1
+        length l..(A)
+        start 0
+        end length-1
         w.... start<_end:
-            mid = (start+end)/2
+            mid (start+end)/2
             # found
             __ A[mid]__target:
                 r.. T..
@@ -89,21 +89,21 @@ c_ Solution:
             # case 1
             ____ A[start]<A[mid]<_A[end]:
                 __ target>A[mid]:
-                    start = mid+1
+                    start mid+1
                 ____
-                    end = mid-1
+                    end mid-1
             # case 2
             ____ A[start]>A[mid] a.. A[mid]<_A[end]:  # slight difference compared to A[mid]<A[end]
                 __ target>A[mid] a.. target<_A[end]:
-                    start = mid+1
+                    start mid+1
                 ____
-                    end = mid-1
+                    end mid-1
             # case 3
             ____
                 __ target<A[mid] a.. target>_A[start]:
-                    end = mid-1
+                    end mid-1
                 ____
-                    start = mid+1
+                    start mid+1
 
         r.. F..
 

@@ -5,7 +5,7 @@ ___ make_html(element
     ___ decorator(func
         $w.. f..
         ___ wrapper
-            result = func()
+            result func()
             r.. f"<{element}>{result}</{element}>"
         r.. wrapper
     r.. decorator

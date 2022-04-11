@@ -9,7 +9,7 @@ c_ TwoSum:
         __ number __ count:
             count[number] += 1
         ____
-            count[number] = 1
+            count[number] 1
 
     """
     @param: value: An integer
@@ -17,7 +17,7 @@ c_ TwoSum:
     """
     ___ find  value
         ___ num __ count:
-            remaining = value - num
+            remaining value - num
             __ remaining n.. __ count:
                 _____
             __ remaining != num:

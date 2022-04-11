@@ -5,4 +5,4 @@ c_ Solution:
         ___ i, e __ e..(num
             __ e __ d:
                 r.. d[e] + 1, i + 1
-            d[target - e] = i
+            d[target - e] i

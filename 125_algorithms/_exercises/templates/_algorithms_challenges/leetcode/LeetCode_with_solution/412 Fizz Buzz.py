@@ -27,7 +27,7 @@ Return:
     "FizzBuzz"
 ]
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -38,13 +38,13 @@ c_ Solution(o..
         """
         ret    # list
         ___ i __ x..(1, n+1
-            cur = ""
+            cur ""
             __ i % 3 __ 0:
                 cur += "Fizz"
             __ i % 5 __ 0:
                 cur += "Buzz"
             __ n.. cur:
-                cur = s..(i)
+                cur s..(i)
 
             ret.a..(cur)
 

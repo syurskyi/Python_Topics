@@ -1,6 +1,6 @@
 c_ SpaceAge:
 
-    ORBITAL_PERIODS = {
+    ORBITAL_PERIODS {
         'mercury': 7600530.24,
         'venus': 19413907.2,
         'earth': 31558149.76,
@@ -12,7 +12,7 @@ c_ SpaceAge:
     }
 
     ___ - , seconds
-        seconds = seconds
+        seconds seconds
 
     ___ on_planet  planet
         r.. r..(seconds / ORBITAL_PERIODS[planet], 2)

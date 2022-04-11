@@ -8,6 +8,6 @@ ___ d.. s__
 
 ___ encode(s__
     ___ single_helper(k, g
-        l = l..(l..(g
+        l l..(l..(g
         r.. k __ l __ 1 ____ s..(l) + k
     r.. ''.j..(single_helper(key, group) ___ key, group __ groupby(s__

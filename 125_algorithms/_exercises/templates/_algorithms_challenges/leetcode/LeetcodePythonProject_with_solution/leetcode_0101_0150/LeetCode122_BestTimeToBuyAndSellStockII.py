@@ -10,14 +10,14 @@ c_ Solution(o..
         :type prices: List[int]
         :rtype: int
         """
-        res = 0
+        res 0
         ___ i __ r..(1, l..(prices:
             __ prices[i]>prices[i-1]:
                 res += prices[i] - prices[i-1]
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [1, 9, 2, 1, 3, 7, 2],
             [1, 2],
             [2, 1],
@@ -25,7 +25,7 @@ c_ Solution(o..
         ]
         ___ prices __ testCases:
             print('prices: %s' % prices)
-            result = maxProfit(prices)
+            result maxProfit(prices)
             print('result: %s' % (result
             print('-='*15+'-')
 

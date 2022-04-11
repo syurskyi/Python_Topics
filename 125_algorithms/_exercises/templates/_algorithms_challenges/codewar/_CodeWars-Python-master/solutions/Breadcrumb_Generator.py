@@ -34,23 +34,23 @@ Special thanks to the colleague that, seeing my code and commenting that I worke
 
 ___ generate_bc(url, separator
     __ '//' __ url:
-        url = url[url.i.. '//') + 2:]
+        url url[url.i.. '//') + 2:]
 
-    url = url.r..('/')
+    url url.r..('/')
 
     ___
         ___ i, c __ e..(url
             __ c __  '?', '#' :
-                url = url[0:i]
+                url url[0:i]
                 _____
 
-        menus = url.s..('/')[1:]
+        menus url.s..('/')[1:]
         __ menus a.. 'index.' __ menus[-1][0:6]:
-            menus = menus[:-1]
+            menus menus[:-1]
         __ n.. menus:
             r.. '<span class="active">HOME</span>'
 
-        breadcrumb = '<a href="/">HOME</a>'
+        breadcrumb '<a href="/">HOME</a>'
 
         ___ i, e __ e..(menus[:-1]
             breadcrumb += separator + '<a href="/{}/">{}</a>'.f..('/'.j..(menus[:i + 1]), get_element_name(e
@@ -61,14 +61,14 @@ ___ generate_bc(url, separator
         r.. url
 
 
-ignore_words = ["the", "of", "in", "from", "by", "with", "and", "or", "for", "to", "at", "a"]
+ignore_words ["the", "of", "in", "from", "by", "with", "and", "or", "for", "to", "at", "a"]
 
 
 ___ get_element_name(element
-    acronyms = element.s..('-')
+    acronyms element.s..('-')
     ___ i, c __ e..(acronyms[-1]
         __ c __ '.':
-            acronyms[-1] = acronyms[-1][:i]
+            acronyms[-1] acronyms[-1][:i]
             _____
 
     __ l..(element) > 30:

@@ -3,12 +3,12 @@ Premium Question
 Checking Strobogrammatic
 https://leetcode.com/problems/strobogrammatic-number/
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
     ___ -
-        map = {
+        map {
             "1": "1",
             "6": "9",
             "9": "6",
@@ -29,7 +29,7 @@ c_ Solution:
         :type num: str
         :rtype: bool
         """
-        num = l..(num)
+        num l..(num)
         rev    # list  # reverse
         ___ digit __ r..(num
             ___

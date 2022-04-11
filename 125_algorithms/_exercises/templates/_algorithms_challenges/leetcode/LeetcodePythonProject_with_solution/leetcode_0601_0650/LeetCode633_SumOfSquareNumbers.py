@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         _______ m__
         __ c < 0: r.. F..
-        l, r = 0, i..(m__.sqrt(c
+        l, r 0, i..(m__.sqrt(c
         w.... l <_ r:
             __ l*l + r*r < c:
                 l += 1
@@ -23,7 +23,7 @@ c_ Solution(o..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             0,
             3,
             4,
@@ -31,7 +31,7 @@ c_ Solution(o..
         ]
         ___ c __ testCases:
             print(c)
-            result = judgeSquareSum(c)
+            result judgeSquareSum(c)
             print('result: %s' % result)
             print('-='*30+'-')
 

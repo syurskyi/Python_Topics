@@ -25,16 +25,16 @@ c_ Solution:
         greedy change
         two way of changing
         """
-        changed = F..
+        changed F..
         ___ i __ r..(l..(A) - 1
             __ A[i] <_ A[i + 1]:
                 _____
             __ n.. changed:
                 __ i - 1 < 0 o. A[i-1] <_ A[i+1]:
-                    A[i] = A[i+1]
+                    A[i] A[i+1]
                 ____
-                    A[i+1] = A[i]
-                changed = T..
+                    A[i+1] A[i]
+                changed T..
             ____
                 r.. F..
 
@@ -44,14 +44,14 @@ c_ Solution:
         """
         greedy change
         """
-        changed = F..
+        changed F..
         ___ i __ r..(l..(A) - 1
             __ A[i] <_ A[i + 1]:
                 _____
             __ n.. changed:
-                A[i] = A[i + 1]  # Error
+                A[i] A[i + 1]  # Error
                 __ i - 1 < 0 o. A[i - 1] <_ A[i]:
-                    changed = T..
+                    changed T..
                 ____
                     r.. F..
             ____

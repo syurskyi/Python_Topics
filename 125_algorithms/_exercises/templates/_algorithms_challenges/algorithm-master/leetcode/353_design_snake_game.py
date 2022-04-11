@@ -49,19 +49,19 @@ c_ SnakeGame:
             # raise error
             r..
 
-        width = width
-        height = height
-        food = food
-        fi = 0
+        width width
+        height height
+        food food
+        fi 0
 
-        is_over = F..
-        SCORE_IN_OVER = -1
+        is_over F..
+        SCORE_IN_OVER -1
 
-        pos = [(0, 0)]
-        snake = c...d..(pos)
-        body = s..(pos)
+        pos [(0, 0)]
+        snake c...d..(pos)
+        body s..(pos)
 
-        dn = {
+        dn {
             'U': (-1,  0),
             'D': ( 1,  0),
             'L': ( 0, -1),
@@ -86,26 +86,26 @@ c_ SnakeGame:
         """
         new head will hit wall?
         """
-        x, y = snake[0]
-        dx, dy = dn[direction]
-        hx = x + dx
-        hy = y + dy
+        x, y snake[0]
+        dx, dy dn[direction]
+        hx x + dx
+        hy y + dy
 
         __ n.. (0 <_ hx < height a.. 0 <_ hy < width
-            is_over = T..
+            is_over T..
             r.. SCORE_IN_OVER
 
         """
         eat food or not
         """
-        fx, fy = food[fi]
+        fx, fy food[fi]
 
         __ fx __ hx a.. fy __ hy:
             # eat that food
             fi += 1
         ____
             # move to empty cell and need to remove tail
-            tail = snake.p.. )
+            tail snake.p.. )
             body.discard(tail)
 
         """
@@ -113,7 +113,7 @@ c_ SnakeGame:
         this detection MUST AFTER removing tail
         """
         __ (hx, hy) __ body:
-            is_over = T..
+            is_over T..
             r.. SCORE_IN_OVER
 
         """
@@ -126,6 +126,6 @@ c_ SnakeGame:
         There is no food anymore
         """
         __ fi >_ l..(food
-            is_over = T..
+            is_over T..
 
         r.. l..(snake) - 1

@@ -29,9 +29,9 @@ Therefore, you need to return above trees' root in the form of a list.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 ____ t___ _______ L..
@@ -40,8 +40,8 @@ ____ c.. _______ d..
 
 c_ MerkleHash:
     ___ -
-        start_key = 0
-        merkle_hash = d..(_auto_incr)  # subtree -> id
+        start_key 0
+        merkle_hash d..(_auto_incr)  # subtree -> id
 
     ___ _auto_incr
         start_key += 1
@@ -53,8 +53,8 @@ c_ MerkleHash:
 
 c_ Solution:
     ___ -
-        counter = d..(i..)
-        merkle_hash = MerkleHash()
+        counter d..(i..)
+        merkle_hash MerkleHash()
 
     ___ findDuplicateSubtrees  root: TreeNode) __ L..[TreeNode]:
         """
@@ -73,8 +73,8 @@ c_ Solution:
         __ n.. cur:
             r.. merkle_hash(N..)
 
-        subtree_value = (cur.val, w..(cur.left, ret), w..(cur.right, ret
-        merkle_hash = merkle_hash(subtree_value)
+        subtree_value (cur.val, w..(cur.left, ret), w..(cur.right, ret
+        merkle_hash merkle_hash(subtree_value)
         __ counter[merkle_hash] __ 1:
             ret.a..(cur)
 
@@ -114,7 +114,7 @@ c_ Solution2:
         __ n.. cur:
             r.. "None"
 
-        cur_key = ",".j..([
+        cur_key ",".j..([
             w..(cur.left, counter, ret),
             w..(cur.right, counter, ret),
             s..(cur.val),

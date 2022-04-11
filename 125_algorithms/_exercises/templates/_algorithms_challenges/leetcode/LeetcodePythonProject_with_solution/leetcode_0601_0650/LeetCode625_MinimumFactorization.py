@@ -16,14 +16,14 @@ c_ Solution(o..
                 res.a..(i)
                 a //= i
         __ a >_ 10 o. n.. res: r.. 0
-        result = ''
+        result ''
         ___ i __ r..(l..(res)-1, -1, -1
             result += s..(res[i])
-        result = i..(result)
+        result i..(result)
         r.. result __ result < 2**31-1 ____ 0
     
     ___ test
-        testCases = [
+        testCases [
             48,
             15,
             11,
@@ -31,7 +31,7 @@ c_ Solution(o..
         ]
         ___ num __ testCases:
             print('num: %s' % num)
-            result = smallestFactorization(num)
+            result smallestFactorization(num)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -9,18 +9,18 @@ c_ Solution(o..
         :type n: int
         :rtype: bool
         """
-        prev = n&1
+        prev n&1
         n >>= 1
         w.... n > 0:
-            digit = n & 1
+            digit n & 1
             __ n.. digit ^ prev:
                 r.. F..
-            prev = digit
+            prev digit
             n >>= 1
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             4,
             5,
             7,
@@ -29,7 +29,7 @@ c_ Solution(o..
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = hasAlternatingBits(n)
+            result hasAlternatingBits(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

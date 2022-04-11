@@ -10,16 +10,16 @@ c_ Solution:
 
         nums.s..()
 
-        left, right = 0, l..(nums) - 1
-        _sum = 0
-        diff = f__('inf')
+        left, right 0, l..(nums) - 1
+        _sum 0
+        diff f__('inf')
         w.... left < right:
-            _sum = nums[left] + nums[right]
+            _sum nums[left] + nums[right]
             __ _sum < target:
-                diff = m..(diff, target - _sum)
+                diff m..(diff, target - _sum)
                 left += 1
             ____
-                diff = m..(diff, _sum - target)
+                diff m..(diff, _sum - target)
                 right -_ 1
 
         r.. diff

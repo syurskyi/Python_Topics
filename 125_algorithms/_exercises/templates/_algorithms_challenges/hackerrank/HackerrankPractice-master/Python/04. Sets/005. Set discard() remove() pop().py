@@ -2,10 +2,10 @@
 # Score: 10
 
 
-n = i..(input
-s = s.. m..(i.., input().s..()))
+n i..(input
+s s.. m..(i.., input().s..()))
 ___ i __ r..(i..(input())):
-    s__ = input().s..
+    s__ input().s..
     __ s__[0] __ 'pop':
         s.p.. )
     ____ s__[0] __ 'remove':

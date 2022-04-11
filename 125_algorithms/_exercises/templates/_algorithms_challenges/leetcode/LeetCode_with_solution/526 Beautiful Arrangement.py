@@ -40,15 +40,15 @@ c_ Solution:
         """
         dfs
         """
-        candidates = s..(r..(1, N+1
-        ret = dfs(candidates, 1, N)
+        candidates s..(r..(1, N+1
+        ret dfs(candidates, 1, N)
         r.. ret
 
     ___ dfs  candidates, i, N
         __ i > N:
             r.. 1
 
-        ret = 0
+        ret 0
         ___ c __ candidates:
             __ c % i __ 0 o. i % c __ 0:
                 candidates.remove(c)

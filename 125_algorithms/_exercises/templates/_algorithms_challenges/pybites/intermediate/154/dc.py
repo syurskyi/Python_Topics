@@ -9,7 +9,7 @@ c_ Bite:
 
     number: i..
     title: s..
-    level: s.. = field(default_factory=get_level)
+    level: s.. field(default_factory=get_level)
 
     ___ __post_init__
-        title = title.capitalize()
+        title title.capitalize()

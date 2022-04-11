@@ -47,14 +47,14 @@ c_ Solution:
         """
         grow the to limit constraint by 2D skyline
         """
-        m, n = l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid[0])
         # left to right projection
-        lr = [
+        lr [
             m..(row)
             ___ row __ grid
         ]
         # top to bottom projection
-        tb = [
+        tb [
             m..(
                 grid[i][j]
                 ___ i __ r..(m)
@@ -62,10 +62,10 @@ c_ Solution:
             ___ j __ r..(n)
         ]
 
-        ret = 0
+        ret 0
         ___ i __ r..(m
             ___ j __ r..(n
-                diff = m..(lr[i], tb[j]) - grid[i][j]
+                diff m..(lr[i], tb[j]) - grid[i][j]
                 ret += diff
 
         r.. ret

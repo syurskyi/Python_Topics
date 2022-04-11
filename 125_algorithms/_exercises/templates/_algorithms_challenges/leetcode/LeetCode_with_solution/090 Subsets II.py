@@ -16,7 +16,7 @@ If S = [1,2,2], a solution is:
   []
 ]
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ subsetsWithDup  S
         """

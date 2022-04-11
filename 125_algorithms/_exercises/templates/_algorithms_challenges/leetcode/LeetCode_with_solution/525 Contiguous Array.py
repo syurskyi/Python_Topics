@@ -27,20 +27,20 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        o = 0
-        z = 0
-        d = {0: 0}  # diff for nums[:l]
-        ret = 0
+        o 0
+        z 0
+        d {0: 0}  # diff for nums[:l]
+        ret 0
         ___ i, e __ e..(nums
             __ e __ 1:
                 o += 1
             ____
                 z += 1
-            diff = o - z
+            diff o - z
             __ diff __ d:
-                ret = m..(ret, i + 1 - d[diff])
+                ret m..(ret, i + 1 - d[diff])
             ____
-                d[diff] = i + 1
+                d[diff] i + 1
 
         r.. ret
 
@@ -51,18 +51,18 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        n = l..(nums)
-        F = [0 ___ _ __ r..(n+1)]
+        n l..(nums)
+        F [0 ___ _ __ r..(n+1)]
         ___ i __ r..(n
-            F[i+1] = F[i]
+            F[i+1] F[i]
             __ nums[i] __ 0:
                 F[i+1] += 1
 
-        i = 0
-        j = n
+        i 0
+        j n
         w.... i < j:
-            count = F[j] - F[i]
-            l = j - i
+            count F[j] - F[i]
+            l j - i
             __ count * 2 __ l:
                 print(l)
                 r.. l
@@ -87,19 +87,19 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        F = [0]
-        n = l..(nums)
+        F [0]
+        n l..(nums)
         ___ e __ nums:
             __ e __ 0:
                 F.a..(F[-1] + 1)
             ____
                 F.a..(F[-1])
 
-        ret = 0
+        ret 0
         ___ i __ r..(n
             ___ j __ r..(i+1, n+1
                 __ (F[j] - F[i]) * 2 __ j - i:
-                    ret = m..(ret, j - i)
+                    ret m..(ret, j - i)
 
         r.. ret
 

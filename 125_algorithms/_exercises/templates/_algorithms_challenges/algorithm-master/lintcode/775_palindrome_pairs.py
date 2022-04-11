@@ -17,18 +17,18 @@ c_ Solution:
         __ n.. words:
             r.. ans
 
-        n = l..(words)
+        n l..(words)
         w2i    # dict
 
         ___ i __ r..(n
-            w2i[words[i]] = i
+            w2i[words[i]] i
 
         ___ i __ r..(n
             ___ j __ r..(l..(words[i]) + 1
-                s = words[i][:j]
-                t = words[i][j:]
-                _s = ''.j..(r..(s
-                _t = ''.j..(r..(t
+                s words[i][:j]
+                t words[i][j:]
+                _s ''.j..(r..(s
+                _t ''.j..(r..(t
 
                 __ (is_palindrome(s) a..
                     _t __ w2i a..
@@ -46,8 +46,8 @@ c_ Solution:
         r.. ans
 
     ___ is_palindrome  word
-        n = l..(word)
-        left, right = 0, n - 1
+        n l..(word)
+        left, right 0, n - 1
 
         w.... left < right:
             __ word[left] != word[right]:
@@ -73,7 +73,7 @@ c_ Solution:
         __ n.. words:
             r.. ans
 
-        n = l..(words)
+        n l..(words)
 
         ___ i __ r..(n
             ___ j __ r..(i
@@ -86,10 +86,10 @@ c_ Solution:
         r.. ans
 
     ___ is_palindrome  words, i, j
-        s, t = words[i], words[j]
-        a, b = l..(s), l..(t)
-        n = a + b
-        left, right = 0, n - 1
+        s, t words[i], words[j]
+        a, b l..(s), l..(t)
+        n a + b
+        left, right 0, n - 1
 
         w.... left < right:
             __ left >_ a a.. t[left - a] != t[right - a]:
@@ -119,7 +119,7 @@ c_ Solution:
         __ n.. words:
             r.. ans
 
-        n = l..(words)
+        n l..(words)
 
         ___ i __ r..(n
             ___ j __ r..(n
@@ -132,8 +132,8 @@ c_ Solution:
         r.. ans
 
     ___ is_palindrome  s
-        n = l..(s)
-        left, right = 0, n - 1
+        n l..(s)
+        left, right 0, n - 1
 
         w.... left < right:
             __ s[left] != s[right]:

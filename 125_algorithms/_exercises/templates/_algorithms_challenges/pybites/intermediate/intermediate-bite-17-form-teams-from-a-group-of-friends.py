@@ -12,14 +12,14 @@ the number of teams would be greater.
 See the tests for more details. Enjoy :)
 """
 
-___ my_solution_friends_teams(friends: l.., team_size: i.., order_does_matter: b.. = F..) __ l..:
+___ my_solution_friends_teams(friends: l.., team_size: i.., order_does_matter: b.. F..) __ l..:
 
     __ order_does_matter:
-        result = permutations(friends, team_size)
+        result p.. friends, team_size)
     ____
-        result = c..friends, team_size)
+        result c..friends, team_size)
     r.. l..(result)
 
-result = my_solution_friends_teams( 'Bob', 'Alice', 'John', 'Mary', 'Theo', 'Julius' , 2, order_does_matter = T..)
+result my_solution_friends_teams( 'Bob', 'Alice', 'John', 'Mary', 'Theo', 'Julius' , 2, order_does_matter T..)
 print(result)
 

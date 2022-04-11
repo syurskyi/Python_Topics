@@ -6,9 +6,9 @@ Created on Oct 5, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution(o..
     ___ constructMaximumBinaryTree  nums
@@ -17,20 +17,20 @@ c_ Solution(o..
         :rtype: TreeNode
         """
         __ n.. nums: r.. N..
-        maxVal = m..(nums)
-        ind = nums.i.. maxVal)
-        root = TreeNode(maxVal)
-        root.left = constructMaximumBinaryTree(nums[:ind])
-        root.right = constructMaximumBinaryTree(nums[ind+1:])
+        maxVal m..(nums)
+        ind nums.i.. maxVal)
+        root TreeNode(maxVal)
+        root.left constructMaximumBinaryTree(nums[:ind])
+        root.right constructMaximumBinaryTree(nums[ind+1:])
         r.. root
     
     ___ test
-        testCases = [
+        testCases [
             [3, 2, 1, 6, 0, 5]
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            newNode = constructMaximumBinaryTree(nums)
+            newNode constructMaximumBinaryTree(nums)
             __ newNode:
                 print(newNode.val)
             ____

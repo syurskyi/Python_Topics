@@ -10,54 +10,54 @@ c_ Solution(o..
         :type formula: str
         :rtype: str
         """
-        hashmap = helper(formula)
-        arr = s..([s..(c)+s..(count) __ count > 1 ____ s..(c) ___ c, count __ hashmap.i..])
-        res = ''.j..(arr)
+        hashmap helper(formula)
+        arr s..([s..(c)+s..(count) __ count > 1 ____ s..(c) ___ c, count __ hashmap.i..])
+        res ''.j..(arr)
         r.. res
     
     ___ helper  s
         hashmap    # dict
-        i = 0
+        i 0
         w.... i < l..(s
             __ s[i] __ '(':
-                count0 = 1
+                count0 1
                 i += 1
-                prev = i
+                prev i
                 w.... i < l..(s) a.. count0 > 0:
                     __ s[i] __ ')':
                         count0 -_ 1
                     ____ s[i] __ '(':
                         count0 += 1
                     i += 1
-                hashmap0 = helper(s[prev:i-1])
+                hashmap0 helper(s[prev:i-1])
                 __ i __ l..(s) o. n.. s[i].i..
-                    count = 1
+                    count 1
                 ____
-                    prev = i
+                    prev i
                     w.... i < l..(s) a.. s[i].i..
                         i += 1
-                    count = i..(s[prev:i])
+                    count i..(s[prev:i])
                 ___ elem, freq __ hashmap0.i..:
-                    hashmap[elem] = hashmap.g.. elem, 0)+freq*count
+                    hashmap[elem] hashmap.g.. elem, 0)+freq*count
             ____
                 __ i+1 < l..(s) a.. __.m..('[a-z]', s[i+1]
-                    elem = s[i:i+2]
+                    elem s[i:i+2]
                     i+=1
                 ____
-                    elem = s[i]
+                    elem s[i]
                 i+=1
                 __ i __ l..(s) o. n.. s[i].i.. o. s[i] __ '(':
-                    count = 1
+                    count 1
                 ____
-                    prev = i
+                    prev i
                     w.... i < l..(s) a.. s[i].i..
                         i += 1
-                    count = i..(s[prev:i])
-                hashmap[elem] = hashmap.g.. elem, 0)+count
+                    count i..(s[prev:i])
+                hashmap[elem] hashmap.g.. elem, 0)+count
         r.. hashmap
     
     ___ test
-        testCases = [
+        testCases [
 #             'H2O',
 #             'Mg(OH)2',
 #             'K4(ON(SO3)2)2',
@@ -66,7 +66,7 @@ c_ Solution(o..
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = countOfAtoms(s)
+            result countOfAtoms(s)
             print('result: %s' % result)
             print('-='*30+'-')
         

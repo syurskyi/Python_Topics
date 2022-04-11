@@ -18,10 +18,10 @@ ____ t___ _______ L..
 
 c_ Solution:
     ___ findRepeatedDnaSequences  s: s..) __ L..[s..]:
-        ret = s..()
-        seen = s..()
+        ret s..()
+        seen s..()
         ___ i __ r..(l..(s) - 10 + 1
-            sub = s[i:i+10]
+            sub s[i:i+10]
             __ sub __ seen a.. sub n.. __ ret:
                 ret.add(sub)
             ____

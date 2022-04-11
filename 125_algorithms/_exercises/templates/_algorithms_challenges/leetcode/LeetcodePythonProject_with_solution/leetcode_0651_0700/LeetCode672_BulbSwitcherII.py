@@ -20,7 +20,7 @@ c_ Solution(o..
         r.. 8
     
     ___ test
-        testCases = [
+        testCases [
             [
                 1,
                 1,
@@ -37,7 +37,7 @@ c_ Solution(o..
         ___ n, m __ testCases:
             print('n: %s' % n)
             print('m: %s' % m)
-            result = flipLights(n, m)
+            result flipLights(n, m)
             print('result: %s' % result)
             print('-='*30+'-')
 

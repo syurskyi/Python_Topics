@@ -29,14 +29,14 @@ All the tilt values won't exceed the range of 32-bit integer.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ findTilt  root: TreeNode) __ i..:
-        ret = [0]
+        ret [0]
         w..(root, ret)
         r.. ret[0]
 
@@ -45,7 +45,7 @@ c_ Solution:
         __ n.. node:
             r.. 0
 
-        l = w..(node.left, ret)
-        r = w..(node.right, ret)
+        l w..(node.left, ret)
+        r w..(node.right, ret)
         ret[0] += a..(l - r)
         r.. l + node.val + r

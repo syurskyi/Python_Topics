@@ -15,8 +15,8 @@ c_ Solution:
         __ pi < l..(p) - 1 a.. p[pi + 1] != '*' o. pi __ l..(p) - 1:
             ... p[pi] != '*'
             # si must be in bound
-            is_cur_matched = si < l..(s) a.. (p[pi] __ s[si] o. p[pi] __ '.')
-            is_next_matched = is_match_aux(s, p, si + 1, pi + 1)
+            is_cur_matched si < l..(s) a.. (p[pi] __ s[si] o. p[pi] __ '.')
+            is_next_matched is_match_aux(s, p, si + 1, pi + 1)
             r.. is_cur_matched a.. is_next_matched
         # Next char is *
         w.... si < l..(s) a.. pi < l..(p) a.. (p[pi] __ s[si] o. p[pi] __ '.'
@@ -26,7 +26,7 @@ c_ Solution:
         r.. is_match_aux(s, p, si, pi + 2)
 
 
-s = Solution()
+s Solution()
 print s.isMatch("aa", "a")
 print s.isMatch("aa", "aa")
 print s.isMatch("aaa", "aa")

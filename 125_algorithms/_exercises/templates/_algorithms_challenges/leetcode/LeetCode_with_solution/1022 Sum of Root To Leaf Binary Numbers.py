@@ -25,14 +25,14 @@ The answer will not exceed 2^31 - 1.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ -
-        ret = 0
+        ret 0
         lst    # list
 
     ___ sumRootToLeaf  root: TreeNode) __ i..:
@@ -50,7 +50,7 @@ c_ Solution:
         lst.a..(node.val)  # error prone
         __ n.. node.left a.. n.. node.right:
             # leaf
-            cur = 0
+            cur 0
             ___ a __ lst:
                 cur <<= 1
                 cur += a

@@ -4,12 +4,12 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: int
     """
-    ans = 0
-    count = 0
+    ans 0
+    count 0
     ___ num __ nums:
       __ num __ 1:
         count += 1
       ____
-        count = 0
-      ans = m..(ans, count)
+        count 0
+      ans m..(ans, count)
     r.. ans

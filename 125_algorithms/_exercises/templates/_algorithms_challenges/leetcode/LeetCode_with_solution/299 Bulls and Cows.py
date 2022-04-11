@@ -1,6 +1,6 @@
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -16,9 +16,9 @@ c_ Solution(o..
         :type guess: str
         :rtype: str
         """
-        cnt = d..(i..)
-        A = 0
-        B = 0
+        cnt d..(i..)
+        A 0
+        B 0
         ___ c __ secret:
             cnt[c] += 1
 

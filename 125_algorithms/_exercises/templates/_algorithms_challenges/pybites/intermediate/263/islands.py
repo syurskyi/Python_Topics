@@ -14,7 +14,7 @@ ___ count_islands(grid
 
 
     
-    islands = 0
+    islands 0
     ___ row __ r..(l..(grid:
         ___ col __ r..(l..(grid[0]:
             __ grid[row][col] __ 1:
@@ -51,7 +51,7 @@ ___ mark_islands(i, j, grid
     # grid[i][j] = '#'      # one way to mark visited ones - suggestion.
 
 
-    grid[i][j] = '#'
+    grid[i][j] '#'
 
 
     ___ n_row,n_col __ ((i + 1,j),(i -1,j),(i,j + 1),(i,j-1:

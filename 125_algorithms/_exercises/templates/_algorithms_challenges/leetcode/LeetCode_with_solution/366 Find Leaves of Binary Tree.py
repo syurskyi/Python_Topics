@@ -1,15 +1,15 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution(o..
@@ -34,7 +34,7 @@ c_ Solution(o..
         __ n.. node:
             r.. -1  # leaves index start from 0
 
-        height = 1 + m..(dfs(node.left, leaves), dfs(node.right, leaves
+        height 1 + m..(dfs(node.left, leaves), dfs(node.right, leaves
         __ height >_ l..(leaves
             leaves.a..([])  # grow
 

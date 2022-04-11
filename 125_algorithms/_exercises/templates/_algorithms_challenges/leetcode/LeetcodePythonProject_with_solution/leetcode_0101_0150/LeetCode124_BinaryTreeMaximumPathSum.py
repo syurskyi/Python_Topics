@@ -6,9 +6,9 @@ Created on Feb 6, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution(o..
     ___ maxPathSum  root
@@ -23,9 +23,9 @@ c_ Solution(o..
         __ n.. root:
             r.. 0, f__('-inf')
         left  = helper(root.left)
-        right = helper(root.right)
-        single = m..([left[0]+root.val, right[0]+root.val, 0])
-        gbl = m..([left[1], right[1], left[0]+right[0]+root.val])
+        right helper(root.right)
+        single m..([left[0]+root.val, right[0]+root.val, 0])
+        gbl m..([left[1], right[1], left[0]+right[0]+root.val])
         r.. single, gbl
     
     ___ test

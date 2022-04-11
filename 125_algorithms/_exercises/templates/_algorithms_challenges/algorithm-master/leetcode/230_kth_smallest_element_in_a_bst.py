@@ -19,17 +19,17 @@ c_ Solution:
             r..
 
         stack    # list
-        node = root
+        node root
 
         w.... node o. stack:
             w.... node:
                 stack.a..(node)
-                node = node.left
+                node node.left
 
-            node = stack.p.. )
+            node stack.p.. )
 
             k -_ 1
             __ k __ 0:
                 r.. node.val
 
-            node = node.right
+            node node.right

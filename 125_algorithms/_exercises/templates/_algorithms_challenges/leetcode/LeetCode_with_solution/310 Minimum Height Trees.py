@@ -36,7 +36,7 @@ return [3, 4]
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -51,19 +51,19 @@ c_ Solution(o..
         __ n.. edges:
             r.. [0]
 
-        V = {i: [] ___ i __ x..(n)}
+        V {i: [] ___ i __ x..(n)}
         ___ a, b __ edges:
             V[a].a..(b)
             V[b].a..(a)
 
         # longest path algorithm
-        _, _, last = bfs(0, V)
-        level, pi, last = bfs(last, V)
+        _, _, last bfs(0, V)
+        level, pi, last bfs(last, V)
 
         ret    # list
-        cur = last
+        cur last
         ___ _ __ x..((level-1)/2
-            cur = pi[cur]
+            cur pi[cur]
         ret.a..(cur)
 
         __ level%2 __ 0:
@@ -73,24 +73,24 @@ c_ Solution(o..
 
     ___ bfs  s, V
         # bfs
-        visited = [F.. ___ _ __ x..(l..(V]
-        pi = [-1 ___ _ __ x..(l..(V]
-        last = s
-        level = 0
+        visited [F.. ___ _ __ x..(l..(V]
+        pi [-1 ___ _ __ x..(l..(V]
+        last s
+        level 0
         q    # list
         q.a..(s)
         w.... q:
-            l = l..(q)
+            l l..(q)
             ___ i __ x..(l
-                cur = q[i]
-                last = cur
-                visited[cur] = T..
+                cur q[i]
+                last cur
+                visited[cur] T..
                 ___ nbr __ V[cur]:
                     __ n.. visited[nbr]:
-                        pi[nbr] = cur
+                        pi[nbr] cur
                         q.a..(nbr)
 
-            q = q[l:]
+            q q[l:]
             level += 1
 
         r.. level, pi, last
@@ -106,18 +106,18 @@ c_ Solution_TLE(o..
         __ n.. edges:
             r.. 0
 
-        V = {i: [] ___ i __ x..(n)}
+        V {i: [] ___ i __ x..(n)}
         ___ a, b __ edges:
             V[a].a..(b)
             V[b].a..(a)
 
         ret    # list
-        mini = n
+        mini n
         ___ k __ V.k..:
-            l = bfs(k, V)
+            l bfs(k, V)
             __ l < mini:
-                ret = [k]
-                mini = l
+                ret [k]
+                mini l
             ____ l __ mini:
                 ret.a..(k)
 
@@ -125,20 +125,20 @@ c_ Solution_TLE(o..
 
     ___ bfs  s, V
         # bfs
-        visisted = [F.. ___ _ __ x..(l..(V]
+        visisted [F.. ___ _ __ x..(l..(V]
         q    # list
-        level = 0
+        level 0
         q.a..(s)
         w.... q:
-            l = l..(q)
+            l l..(q)
             ___ i __ x..(l
-                cur = q[i]
-                visisted[cur] = T..
+                cur q[i]
+                visisted[cur] T..
                 ___ nbr __ V[cur]:
                     __ n.. visisted[nbr]:
                         q.a..(nbr)
 
-            q = q[l:]
+            q q[l:]
             level += 1
 
         r.. level
@@ -155,34 +155,34 @@ c_ SolutionError(o..
         __ n.. edges:
             r.. 0
 
-        V = {i: [] ___ i __ x..(n)}
+        V {i: [] ___ i __ x..(n)}
         ___ a, b __ edges:
             V[a].a..(b)
             V[b].a..(a)
 
-        leaf = N..
+        leaf N..
         ___ k, v __ V.i..:
             __ l..(v) __ 1:
-                leaf = k
+                leaf k
                 _____
 
         # bfs
-        visisted = [F.. ___ _ __ x..(n)]
-        h2v = d..(l..)
+        visisted [F.. ___ _ __ x..(n)]
+        h2v d..(l..)
         q    # list
-        level = 0
+        level 0
         q.a..(leaf)
         w.... q:
-            l = l..(q)
+            l l..(q)
             ___ i __ x..(l
-                cur = q[i]
+                cur q[i]
                 h2v[level].a..(cur)
-                visisted[cur] = T..
+                visisted[cur] T..
                 ___ nbr __ V[cur]:
                     __ n.. visisted[nbr]:
                         q.a..(nbr)
 
-            q = q[l:]
+            q q[l:]
             level += 1
 
         __ level%2 __ 0:

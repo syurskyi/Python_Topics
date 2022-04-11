@@ -10,18 +10,18 @@ c_ Solution(o..
         :type k: int
         :rtype: str
         """
-        total = k**n
+        total k**n
         arr =  '0' *n
-        visited = s..( '0'*n])
+        visited s..( '0'*n])
         dfs(arr, total, visited, n, k)
         r.. ''.j..(arr)
     
     ___ dfs  arr, goal, visited, n, k
         __ l..(visited) __ goal: r.. T..
-        prevArr = arr[l..(arr)-n+1:]
+        prevArr arr[l..(arr)-n+1:]
         ___ i __ r..(k
-            nextArr = prevArr+[s..(i)]
-            nextStr = ''.j..(nextArr)
+            nextArr prevArr+[s..(i)]
+            nextStr ''.j..(nextArr)
             __ nextStr n.. __ visited:
                 visited.add(nextStr)
                 arr.a..(s..(i
@@ -32,14 +32,14 @@ c_ Solution(o..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             [1, 2],
             [2, 2],
         ]
         ___ n, k __ testCases:
             print('n: %s' % n)
             print('k: %s' % k)
-            result = crackSafe(n, k)
+            result crackSafe(n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

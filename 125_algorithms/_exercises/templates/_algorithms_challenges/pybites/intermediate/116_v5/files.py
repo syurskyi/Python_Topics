@@ -1,6 +1,6 @@
 _______ __
 
-ONE_KB = 1024
+ONE_KB 1024
 
 
 ___ get_files(dirname, size_in_kb

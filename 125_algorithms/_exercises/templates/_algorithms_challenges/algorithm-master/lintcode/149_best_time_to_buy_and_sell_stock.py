@@ -4,16 +4,16 @@ c_ Solution:
     @return: Maximum profit
     """
     ___ maxProfit  P
-        ans = 0
+        ans 0
         __ n.. P:
             r.. ans
 
-        Pmin = P[0]
+        Pmin P[0]
 
         ___ i __ r..(1, l..(P:
             __ P[i] - Pmin > ans:
-                ans = P[i] - Pmin
+                ans P[i] - Pmin
             __ P[i] < Pmin:
-                Pmin = P[i]
+                Pmin P[i]
 
         r.. ans

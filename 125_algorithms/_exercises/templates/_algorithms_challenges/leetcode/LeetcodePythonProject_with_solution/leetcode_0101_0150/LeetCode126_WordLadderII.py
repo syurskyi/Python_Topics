@@ -11,7 +11,7 @@ c_ Solution(o..
         :type wordList: List[str]
         :rtype: List[List[str]]
         """
-        wordSet = s..(wordList)
+        wordSet s..(wordList)
         wordSet.add(beginWord)
         distance    # dict
         bfs(beginWord, endWord, distance, wordSet)
@@ -20,14 +20,14 @@ c_ Solution(o..
         r.. res
     
     ___ bfs  beginWord, endWord, distance, wordSet
-        queue = [beginWord]
-        distance[beginWord] = 0
+        queue [beginWord]
+        distance[beginWord] 0
         w.... queue:
-            word = queue.p.. 0)
-            nextWords = getNextWords(word, wordSet)
+            word queue.p.. 0)
+            nextWords getNextWords(word, wordSet)
             ___ nextWord __ nextWords:
                 __ nextWord n.. __ distance:
-                    distance[nextWord] = distance[word]+1
+                    distance[nextWord] distance[word]+1
                     queue.a..(nextWord)
     
     ___ dfs  beginWord, word, distance, wordSet, res, curr
@@ -45,13 +45,13 @@ c_ Solution(o..
         ___ i, c __ e..(word
             ___ c0 __ 'abcdefghijklmnopqrstuvwxyz':
                 __ c0 != c:
-                    word0 = word[:i] + c0 + word[i+1:]
+                    word0 word[:i] + c0 + word[i+1:]
                     __ word0 __ wordSet:
                         res.a..(word0)
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 "hit",
                 "cog",
@@ -59,7 +59,7 @@ c_ Solution(o..
             ],
         ]
         ___ beginWord, endWord, wordList __ testCases:
-            result = findLadders(beginWord, endWord, wordList)
+            result findLadders(beginWord, endWord, wordList)
             print('result: %s' % result)
             print('-='*30+'-')
 

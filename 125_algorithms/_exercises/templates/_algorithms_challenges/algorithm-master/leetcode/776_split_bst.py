@@ -17,10 +17,10 @@ c_ Solution:
             r.. N.., N..
 
         __ root.val > target:
-            left, right = splitBST(root.left, target)
-            root.left = right
+            left, right splitBST(root.left, target)
+            root.left right
             r.. left, root
         ____
-            left, right = splitBST(root.right, target)
-            root.right = left
+            left, right splitBST(root.right, target)
+            root.right left
             r.. root, right

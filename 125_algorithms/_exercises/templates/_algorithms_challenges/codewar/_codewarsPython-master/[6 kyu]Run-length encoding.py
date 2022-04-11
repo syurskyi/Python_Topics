@@ -2,15 +2,15 @@ ___ run_length_encoding(s
 	__ l..(s) __ 0:
 		r.. []
 	res    # list
-	char = s[0]
-	count = 1
+	char s[0]
+	count 1
 	___ c __ s[1:]:
 		__ char __ c:
 			count += 1
 		____
 			res.a..([count,s..(char)])
-			char = c
-			count = 1
+			char c
+			count 1
 	res.a..([count,s..(char)])
 	r.. res
 

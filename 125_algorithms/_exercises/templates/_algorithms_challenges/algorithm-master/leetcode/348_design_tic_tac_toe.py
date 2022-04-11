@@ -1,16 +1,16 @@
 c_ TicTacToe(o..
-    PLER_A = 1
-    PLER_B = 2
+    PLER_A 1
+    PLER_B 2
 
     ___ - , n
         """
         Initialize your data structure here.
         :type n: int
         """
-        R = [0] * n
-        C = [0] * n
-        DR = 0  # only one
-        DL = 0  # only one
+        R [0] * n
+        C [0] * n
+        DR 0  # only one
+        DL 0  # only one
 
     ___ move  x, y, player
         """
@@ -23,8 +23,8 @@ c_ TicTacToe(o..
                 1: Player 1 wins.
                 2: Player 2 wins.
         """
-        n = l..(R)
-        delta = 1 __ player __ PLER_A ____ -1
+        n l..(R)
+        delta 1 __ player __ PLER_A ____ -1
         R[x] += delta
         C[y] += delta
         DR += delta __ x __ y ____ 0  # x - y == 0

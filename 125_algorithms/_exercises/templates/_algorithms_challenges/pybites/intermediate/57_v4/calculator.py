@@ -7,7 +7,7 @@ ___ calculator(operation, numbers
     """TODO 1:
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals"""
-    OPS = {'add': add, 'sub': sub, 'mul': mul, 'div': truediv}
+    OPS {'add': add, 'sub': sub, 'mul': mul, 'div': truediv}
     r.. r..(r.. OPS[operation], map(f__, numbers, 2)
 
 
@@ -16,7 +16,7 @@ ___ create_parser
     - an opration argument
     - one or more numbers to operate on
     """
-    parser = a__.A..(d.._'A simple calculator')
+    parser a__.A..(d.._'A simple calculator')
     parser.a..('-a', '--add', nargs='+',
                         h.._'Sums numbers')
     parser.a..('-s', '--sub', nargs='+',
@@ -34,10 +34,10 @@ ___ call_calculator(args=N.., stdout=F..
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,
        if stdout is True print the result"""
-    parser = create_parser()
+    parser create_parser()
 
     __ args __ N..
-        args = parser.p..
+        args parser.p..
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
@@ -46,9 +46,9 @@ ___ call_calculator(args=N.., stdout=F..
             _____
 
         ___
-            res = calculator(operation, numbers)
+            res calculator(operation, numbers)
         ______ Z..
-            res = 0
+            res 0
 
         __ stdout:
             print(res)

@@ -9,7 +9,7 @@ Examples:
 ")(" -> [""]
 
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -23,7 +23,7 @@ c_ Solution(o..
         :type s: str
         :rtype: List[str]
         """
-        rmcnt = minrm(s)
+        rmcnt minrm(s)
         ret    # list
         dfs(s, "", 0, N.., 0, rmcnt, ret)
         r.. ret
@@ -33,8 +33,8 @@ c_ Solution(o..
         Find the minimal removal count to limit the search depth
         returns minimal number of removals
         """
-        rmcnt = 0
-        left = 0
+        rmcnt 0
+        left 0
         ___ c __ s:
             __ c __ "(":
                 left += 1
@@ -70,11 +70,11 @@ c_ Solution(o..
             dfs(s, cur+s[i], left, N.., i+1, rmcnt, ret)
         ____
             __ pi __ s[i]:  # jump, if rm, rm them all to avoid duplication
-                w.... i < l..(s) a.. pi a.. pi __ s[i]: i, rmcnt = i+1, rmcnt-1
+                w.... i < l..(s) a.. pi a.. pi __ s[i]: i, rmcnt i+1, rmcnt-1
                 dfs(s, cur, left, pi, i, rmcnt, ret)
             ____
                 dfs(s, cur, left, s[i], i+1, rmcnt-1, ret)
-                L = left+1 __ s[i] __ "(" ____ left-1  # consume "("
+                L left+1 __ s[i] __ "(" ____ left-1  # consume "("
                 dfs(s, cur+s[i], L, N.., i+1, rmcnt, ret)  # put
 
 

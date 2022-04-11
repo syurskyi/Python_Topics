@@ -5,16 +5,16 @@ c_ Solution:
         :type b: int
         :rtype: int
         """
-        INT_MAX = 0x7FFFFFFF
-        ans = 0
+        INT_MAX 0x7FFFFFFF
+        ans 0
 
         __ n.. b:
             r.. INT_MAX
         __ n.. a:
             r.. ans
 
-        _a = -a __ a < 0 ____ a
-        _b = -b __ b < 0 ____ b
+        _a -a __ a < 0 ____ a
+        _b -b __ b < 0 ____ b
 
         ___ i __ r..(31, -1, -1
             """
@@ -31,7 +31,7 @@ c_ Solution:
             _a -_ _b << i
 
         __ a ^ b < 0:
-            ans = -ans
+            ans -ans
 
         __ ans > INT_MAX:
             r.. INT_MAX

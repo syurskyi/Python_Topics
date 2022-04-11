@@ -4,11 +4,11 @@ _______ ___
 __ ___.version_info[0] __ 2:
     ____ s__ _______ maketrans
 ____
-    maketrans = s...maketrans
+    maketrans s...maketrans
 
 
-BLKSZ = 5
-trtbl = maketrans(a.., a..[::-1])
+BLKSZ 5
+trtbl maketrans(a.., a..[::-1])
 
 
 ___ base_trans(text
@@ -16,7 +16,7 @@ ___ base_trans(text
 
 
 ___ encode(plain
-    cipher = base_trans(plain)
+    cipher base_trans(plain)
     r.. " ".j..([cipher[i:i + BLKSZ]
                      ___ i __ r..(0, l..(cipher), BLKSZ)])
 

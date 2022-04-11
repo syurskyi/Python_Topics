@@ -23,22 +23,22 @@ c_ Solution(o..
         """
 
         # Use set d to check endless loop
-        d = s..()
+        d s..()
         w.... n n.. __ d:
             d.add(n)
-            t = n
-            s = 0  # sum
+            t n
+            s 0  # sum
             w.... t != 0:
-                digit = (t % 10)
+                digit (t % 10)
                 s += digit * digit
                 t /= 10
-            n = s
+            n s
             __ n __ 1:
                 r.. T..
         r.. F..
 
 
-s = Solution()
+s Solution()
 print(s.isHappy(19
 print(s.isHappy(1
 print(s.isHappy(20

@@ -12,9 +12,9 @@ c_ RandomizedCollection:
         :type val: int
         :rtype: bool
         """
-        A, I = A, I
+        A, I A, I
         __ val n.. __ I:
-            I[val] = s..()
+            I[val] s..()
 
         A.a..(val)
         I[val].add(l..(A) - 1)
@@ -26,17 +26,17 @@ c_ RandomizedCollection:
         :type val: int
         :rtype: bool
         """
-        A, I = A, I
+        A, I A, I
         __ val n.. __ I o. n.. I[val]:
             r.. F..
 
-        i = I[val].p.. )
-        _val = A[-1]
+        i I[val].p.. )
+        _val A[-1]
 
         I[_val].add(i)
         I[_val].discard(l..(A) - 1)
 
-        A[i] = _val
+        A[i] _val
         A.p.. )
         r.. T..
 

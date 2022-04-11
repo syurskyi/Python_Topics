@@ -25,7 +25,7 @@ c_ Solution:
         scanning from right
         [73, 74, 75, 71, 69, 72, 76, 73]
         """
-        ret = d..()
+        ret d..()
         stk    # list
         ___ i __ r..(l..(T) - 1, -1 , -1
             w.... stk a.. T[stk[-1]] <_ T[i]:  # disregard smaller ones

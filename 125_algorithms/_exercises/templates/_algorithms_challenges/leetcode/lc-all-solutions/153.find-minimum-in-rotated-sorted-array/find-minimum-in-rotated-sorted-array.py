@@ -4,11 +4,11 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: int
     """
-    start, end, mid = 0, l..(nums) - 1, 0
+    start, end, mid 0, l..(nums) - 1, 0
     w.... start + 1 < end:
-      mid = start + (end - start) / 2
+      mid start + (end - start) / 2
       __ nums[start] <_ nums[mid]:
-        start = mid
+        start mid
       ____
-        end = mid
+        end mid
     r.. m..(nums[0], nums[start], nums[end])

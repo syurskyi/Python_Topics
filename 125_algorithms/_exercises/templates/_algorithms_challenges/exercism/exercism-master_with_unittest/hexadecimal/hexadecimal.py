@@ -1,13 +1,13 @@
 c_ Hexa:
-    CHAR_VALUES = {'a': 10,
+    CHAR_VALUES {'a': 10,
                    'b': 11,
                    'c': 12,
                    'd': 13,
                    'e': 14,
                    'f': 15}
-    VALID_CHARS = s..(l.. m..(s.., l..(r..(0, 10)))) +
+    VALID_CHARS s..(l.. m..(s.., l..(r..(0, 10)))) +
                       l..(CHAR_VALUES.k.. )))
-    BASE = 16
+    BASE 16
 
     @classmethod
     ___ convert(cls, inp

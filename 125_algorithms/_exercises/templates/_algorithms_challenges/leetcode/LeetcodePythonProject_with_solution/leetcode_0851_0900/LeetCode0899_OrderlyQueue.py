@@ -7,19 +7,19 @@ c_ Solution(o..
         """
         __ K > 1:
             r.. ''.j..(s..(S
-        n = l..(S)
-        minIdx = 0
+        n l..(S)
+        minIdx 0
         ___ i __ r..(1, n
             ___ i1 __ r..(n
                 __ S[(i+i1)%n] < S[(minIdx+i1)%n]:
-                    minIdx = i
+                    minIdx i
                     _____
                 ____ S[(i+i1)%n] > S[(minIdx+i1)%n]:
                     _____
         r.. S[minIdx:] + S[:minIdx]
 
     ___ test
-        testCases = [
+        testCases [
             [
                 "cba", 1,
             ],
@@ -31,7 +31,7 @@ c_ Solution(o..
             ],
         ]
         ___ s, k __ testCases:
-            res = orderlyQueue(s, k)
+            res orderlyQueue(s, k)
             print('res: %s' % res)
             print('-='*30+'-')
 

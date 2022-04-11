@@ -17,9 +17,9 @@ ___ test_is_palidrome
 
 
 ___ test_get_longest_palindrome
-    words = load_dictionary()
+    words load_dictionary()
     ... get_longest_palindrome() __ 'malayalam'
 
-    new_longest = 'A car, a man, a maraca.'
-    words = l..(words) + [new_longest]
+    new_longest 'A car, a man, a maraca.'
+    words l..(words) + [new_longest]
     ... get_longest_palindrome(words) __ new_longest

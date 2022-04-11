@@ -10,7 +10,7 @@ Follow up:
 Could you solve it with constant space complexity? (Note: The output array does not count as extra space for the purpose
 of space complexity analysis.)
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -21,12 +21,12 @@ c_ Solution:
         :type nums: list[int]
         :rtype: list[int]
         """
-        n = l..(nums)
-        left = [1 ___ _ __ x..(n+1)]  # the 0th one is dummy
-        right = [1 ___ _ __ x..(n+1)]  # the last one is dummy
+        n l..(nums)
+        left [1 ___ _ __ x..(n+1)]  # the 0th one is dummy
+        right [1 ___ _ __ x..(n+1)]  # the last one is dummy
         ___ i __ x..(1, n+1
-            left[i] = left[i-1]*nums[i-1]
+            left[i] left[i-1]*nums[i-1]
         ___ i __ x..(n-1, -1, -1
-            right[i] = right[i+1]*nums[i]
+            right[i] right[i+1]*nums[i]
 
         r.. [left[i]*right[i+1] ___ i __ x..(n)]

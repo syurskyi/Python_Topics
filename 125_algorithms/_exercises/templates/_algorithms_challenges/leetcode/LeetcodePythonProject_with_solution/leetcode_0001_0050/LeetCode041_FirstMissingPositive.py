@@ -9,8 +9,8 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        n = l..(nums)
-        dp = [0]*n
+        n l..(nums)
+        dp [0]*n
         ___ num __ nums:
             __ 0 <_ num-1 < n:
                 dp[num-1] += 1

@@ -1,12 +1,12 @@
 ____ d__ _______ d__, t..
 _______ __
 
-NOW = d__ y.._2019,  m.._2,  d.._6,
+NOW d__ y.._2019,  m.._2,  d.._6,
                hour=22, minute=0, second=0)
 
 
 ___ add_todo(delay_time: s.., task: s..,
-             start_time: d__ = NOW) __ s..:
+             start_time: d__ NOW) __ s..:
     """
     Add a todo list item in the future with a delay time.
 
@@ -23,22 +23,22 @@ ___ add_todo(delay_time: s.., task: s..,
     """
 
 
-    values = delay_time.s.. 
+    values delay_time.s.. 
 
-    days = seconds = minutes = hours = 0 
+    days seconds minutes hours 0 
     ___ value __ values:
-        v = i..(value) __ value[-1].i.. ____ i..(value[:-1])
+        v i..(value) __ value[-1].i.. ____ i..(value[:-1])
         __ value[-1].i.. o. value[-1] __ 's':
-            seconds = v
+            seconds v
         ____ value[-1] __ 'd':
-            days = v
+            days v
         ____ value[-1] __ 'h':
-            hours = v
+            hours v
         ____ value[-1] __ 'm':
-            minutes = v 
+            minutes v 
 
     
-    t__ = start_time + t..(hours=hours,seconds=seconds,minutes=minutes,d.._days)
+    t__ start_time + t..(hours=hours,seconds=seconds,minutes=minutes,d.._days)
 
 
     r.. f"{task} @ {t__.s..('%Y-%m-%d %H:%M:%S')}"

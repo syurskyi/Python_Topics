@@ -4,7 +4,7 @@ _______ __
 _______ u__.r..
 
 # getting the data
-COURSE_TIMES = __.p...j..(
+COURSE_TIMES __.p...j..(
     __.g.. TMP  /tmp,
     'course_timings'
 )
@@ -26,7 +26,7 @@ ___ get_all_timestamps
         Return a list of MM:SS timestamps
     """
     w__ o.. COURSE_TIMES, _ __ f:
-        text = f.r..
+        text f.r..
 
     r.. __.f..(r'\d*:*\d*:\d{2}', text, flags=__.MULTILINE)
 
@@ -34,15 +34,15 @@ ___ get_all_timestamps
 ___ calc_total_course_duration(timestamps
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
-    ref = d__(2021, 1, 1)
-    cum = ref
+    ref d__(2021, 1, 1)
+    cum ref
 
     ___ t__ __ timestamps:
-        minutes, seconds = map(i.., t__.s..(':'
+        minutes, seconds map(i.., t__.s..(':'
         cum += t..(minutes=minutes, seconds=seconds)
 
-    dt_sec = (cum - ref).seconds
-    hours, seconds = dt_sec // 3600, dt_sec % 3600
-    minutes, seconds = seconds // 60, seconds % 60
+    dt_sec (cum - ref).seconds
+    hours, seconds dt_sec // 3600, dt_sec % 3600
+    minutes, seconds seconds // 60, seconds % 60
 
     r.. f'{hours}:{minutes}:{seconds}'

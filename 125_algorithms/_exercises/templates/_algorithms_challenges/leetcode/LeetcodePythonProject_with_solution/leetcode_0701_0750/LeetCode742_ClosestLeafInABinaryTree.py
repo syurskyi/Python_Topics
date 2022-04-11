@@ -6,9 +6,9 @@ Created on Mar 21, 2018
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ findClosestLeaf  root, k
@@ -18,11 +18,11 @@ c_ Solution(o..
         :rtype: int
         """
         backMap    # dict
-        kNode = dfs(root, k, backMap)
-        queue = [kNode]
-        visited = s..([kNode])
+        kNode dfs(root, k, backMap)
+        queue [kNode]
+        visited s..([kNode])
         w.... queue:
-            curr = queue.p.. 0)
+            curr queue.p.. 0)
             __ n.. curr.left a.. n.. curr.right:
                 r.. curr.val
             __ curr.left a.. curr.left n.. __ visited:
@@ -40,23 +40,23 @@ c_ Solution(o..
         __ root.val __ k:
             r.. root
         __ root.left:
-            backMap[root.left] = root
-            left = dfs(root.left, k, backMap)
+            backMap[root.left] root
+            left dfs(root.left, k, backMap)
             __ left:
                 r.. left
         __ root.right:
-            backMap[root.right] = root
-            right = dfs(root.right, k, backMap)
+            backMap[root.right] root
+            right dfs(root.right, k, backMap)
             __ right:
                 r.. right
         r.. N..
     
     ___ test
-        testCases = [
+        testCases [
             
         ]
         ___ root, k __ testCases:
-            result = findClosestLeaf(root, k)
+            result findClosestLeaf(root, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -4,7 +4,7 @@ Find the contiguous subarray within an array (containing at least one number) wh
 For example, given the array [2,3,-2,4],
 the contiguous subarray [2,3] has the largest product = 6
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -25,12 +25,12 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        small = nums[0]
-        large = nums[0]
-        maxa = nums[0]
+        small nums[0]
+        large nums[0]
+        maxa nums[0]
         ___ a __ nums[1:]:
-            small, large = m..(a, small*a, large*a), m..(a, small*a, large*a)
-            maxa = m..(maxa, small, large)
+            small, large m..(a, small*a, large*a), m..(a, small*a, large*a)
+            maxa m..(maxa, small, large)
 
         r.. maxa
 
@@ -42,23 +42,23 @@ c_ Solution(o..
         __ l..(nums) < 2:
             r.. m..(nums)
 
-        n = l..(nums)
-        F_pos = [0 ___ _ __ x..(n+1)]
-        F_neg = [0 ___ _ __ x..(n+1)]
+        n l..(nums)
+        F_pos [0 ___ _ __ x..(n+1)]
+        F_neg [0 ___ _ __ x..(n+1)]
 
-        maxa = 1
+        maxa 1
         ___ i __ x..(1, n+1
-            v = nums[i-1]
+            v nums[i-1]
             __ v > 0:
-                F_pos[i] = F_pos[i-1]*v __ F_pos[i-1] != 0 ____ v
-                F_neg[i] = F_neg[i-1]*v
+                F_pos[i] F_pos[i-1]*v __ F_pos[i-1] != 0 ____ v
+                F_neg[i] F_neg[i-1]*v
             ____ v __ 0:
-                F_pos[i], F_neg[i] = 0, 0
+                F_pos[i], F_neg[i] 0, 0
             ____
-                F_neg[i] = m..(0, F_pos[i-1]*v)
-                F_pos[i] = m..(0, F_neg[i-1]*v)
+                F_neg[i] m..(0, F_pos[i-1]*v)
+                F_pos[i] m..(0, F_neg[i-1]*v)
 
-            maxa = m..(maxa, F_pos[i])
+            maxa m..(maxa, F_pos[i])
 
         r.. maxa
 
@@ -71,21 +71,21 @@ c_ Solution(o..
         """
         __ n.. A:
             r..
-        length = l..(A)
+        length l..(A)
         __ length__1:
             r.. A[0]
 
-        dp = [-1 ___ _ __ x..(length+1)]
-        dp[length] = 0 # dummy
+        dp [-1 ___ _ __ x..(length+1)]
+        dp[length] 0 # dummy
         ___ i __ x..(length-1, -1, -1
             __ A[i]<0:
-                dp[i] = dp[i+1]+1
+                dp[i] dp[i+1]+1
             ____ A[i]__0:
-                dp[i] = 0
+                dp[i] 0
             ____
-                dp[i] = dp[i+1]
+                dp[i] dp[i+1]
 
-        global_max = -1<<32
+        global_max -1<<32
         # cur = 1  # starting from 0, encountering problem [-2, 0, -1]
         # for ind, val in enumerate(A):
         #     cur *= val
@@ -93,17 +93,17 @@ c_ Solution(o..
         #             cur = 1
         #     global_max = max(global_max, cur)
 
-        cur = 0  # starting from 0
+        cur 0  # starting from 0
         ___ ind, val __ e..(A
             __ cur!=0:
                 cur *= val
             ____
-                cur = val
+                cur val
 
             __ cur<0 a.. dp[ind+1]<1:
-                cur = 0
+                cur 0
 
-            global_max = m..(global_max, cur)
+            global_max m..(global_max, cur)
 
         r.. global_max
 
@@ -119,30 +119,30 @@ c_ Solution(o..
         """
         __ n.. A:
             r..
-        length = l..(A)
+        length l..(A)
         __ length__1:
             r.. A[0]
 
-        dp = [-1 ___ _ __ x..(length+1)]
-        dp[length] = 0 # dummy
+        dp [-1 ___ _ __ x..(length+1)]
+        dp[length] 0 # dummy
         ___ i __ x..(length-1, -1, -1
             __ A[i]<0:
-                dp[i] = dp[i+1]+1
+                dp[i] dp[i+1]+1
             ____ A[i]__0:
-                dp[i] = 0
+                dp[i] 0
             ____
-                dp[i] = dp[i+1]
+                dp[i] dp[i+1]
 
-        global_max = -1<<32
-        cur = 0  # starting from 0
-        start_ptr = 0
-        end_ptr = 0
+        global_max -1<<32
+        cur 0  # starting from 0
+        start_ptr 0
+        end_ptr 0
         w.... end_ptr<length:  # [start, end), expanding
             __ cur!=0:
                 cur *= A[end_ptr]
             ____
-                cur = A[end_ptr]
-                start_ptr = end_ptr
+                cur A[end_ptr]
+                start_ptr end_ptr
 
             end_ptr += 1
 
@@ -155,9 +155,9 @@ c_ Solution(o..
                     cur /= A[start_ptr]
                     start_ptr += 1
                 __ start_ptr__end_ptr:  # consider A=[-2, 0, -1] when processing [-1]
-                    cur = 0 # otherwise 1
+                    cur 0 # otherwise 1
                     
-            global_max = m..(global_max, cur)
+            global_max m..(global_max, cur)
 
         r.. global_max
 

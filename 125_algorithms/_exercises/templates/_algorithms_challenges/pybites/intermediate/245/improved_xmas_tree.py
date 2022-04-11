@@ -1,8 +1,8 @@
 _______ m__
 
-STAR = "+"
-LEAF = "*"
-TRUNK = "|"
+STAR "+"
+LEAF "*"
+TRUNK "|"
 
 
 ___ generate_improved_xmas_tree(rows=10
@@ -12,21 +12,21 @@ ___ generate_improved_xmas_tree(rows=10
 
 
    xmas_tree    # list
-   max_length = rows * 2 -1
+   max_length rows * 2 -1
 
    ___ i __ r..(rows + 1
       __ i __ 0:
          xmas_tree.a..(STAR.center(max_length).r..
          _____
 
-      leaf_count = i * 2 -1
+      leaf_count i * 2 -1
       xmas_tree.a..((leaf_count * LEAF).center(max_length).r..
 
    ___ i __ r..(2
       __ rows % 2 != 0:
-         product = m__.c.. max_length / 2)
+         product m__.c.. max_length / 2)
       ____
-         product = m__.f..(max_length / 2) + 2
+         product m__.f..(max_length / 2) + 2
 
       xmas_tree.a..((product * TRUNK).center(max_length
    

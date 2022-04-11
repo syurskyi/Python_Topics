@@ -12,7 +12,7 @@ prices = [1, 2, 3, 0, 2]
 maxProfit = 3
 transactions = [buy, sell, cooldown, buy, sell]
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -31,24 +31,24 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: int
         """
-        n = l..(A)
+        n l..(A)
         __ n __ 0 o. n __ 1:
             r.. 0
         __ n __ 2:
             r.. m..(0, A[1]-A[0])
 
-        CD = 1  # cool down
-        F = [0 ___ _ __ x..(n)]
-        M = [0 ___ _ __ x..(n)]
-        F[1] = A[1]-A[0]
-        M[1] = m..(M[0], F[1])
-        F[2] = m..(A[2]-A[2-1-i] ___ i __ x..(2
-        M[2] = m..(M[1], F[2])
+        CD 1  # cool down
+        F [0 ___ _ __ x..(n)]
+        M [0 ___ _ __ x..(n)]
+        F[1] A[1]-A[0]
+        M[1] m..(M[0], F[1])
+        F[2] m..(A[2]-A[2-1-i] ___ i __ x..(2
+        M[2] m..(M[1], F[2])
 
         # core
         ___ i __ x..(3, n
-            F[i] = m..(F[i-1]+A[i]-A[i-1], M[i-2-CD]+A[i]-A[i-1])
-            M[i] = m..(M[i-1], F[i])
+            F[i] m..(F[i-1]+A[i]-A[i-1], M[i-2-CD]+A[i]-A[i-1])
+            M[i] m..(M[i-1], F[i])
 
         r.. M[-1]
 

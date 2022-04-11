@@ -20,24 +20,24 @@ c_ Solution(o..
         :type l2: ListNode
         :rtype: ListNode
         """
-        carry = 0
-        res = N..
-        res_end = N..
+        carry 0
+        res N..
+        res_end N..
         w.... l1 __ n.. N.. o. l2 __ n.. N.. o. carry __ 1:
-            temp = 0
+            temp 0
             __ l1 __ n.. N..
                 temp += l1.val
-                l1 = l1.next
+                l1 l1.next
             __ l2 __ n.. N..
                 temp += l2.val
-                l2 = l2.next
+                l2 l2.next
             temp += carry
-            digit = temp % 10
-            carry = temp / 10
+            digit temp % 10
+            carry temp / 10
             __ res __ N..
-                res = ListNode(digit)
-                res_end = res
+                res ListNode(digit)
+                res_end res
             ____
-                res_end.next = ListNode(digit)
-                res_end = res_end.next
+                res_end.next ListNode(digit)
+                res_end res_end.next
         r.. res

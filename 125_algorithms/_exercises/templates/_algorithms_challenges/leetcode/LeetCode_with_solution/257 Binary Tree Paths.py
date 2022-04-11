@@ -13,14 +13,14 @@ All root-to-leaf paths are:
 ["1->2->5", "1->3"]
 
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:

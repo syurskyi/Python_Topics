@@ -6,9 +6,9 @@ c_ Solution(o..
     """
     __ n.. t:
       r.. ""
-    res = ""
-    left = tree2str(t.left)
-    right = tree2str(t.right)
+    res ""
+    left tree2str(t.left)
+    right tree2str(t.right)
     __ left o. right:
       res += "(%s)" % left
     __ right:

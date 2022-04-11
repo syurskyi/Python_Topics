@@ -7,7 +7,7 @@ c_ Solution:
         :type D: List[int]
         :rtype: int
         """
-        ans = 0
+        ans 0
         __ n.. A o. n.. B o. n.. C o. n.. D:
             r.. ans
 
@@ -15,8 +15,8 @@ c_ Solution:
 
         ___ c __ C:
             ___ d __ D:
-                key = - (c + d)
-                S[key] = S.g.. key, 0) + 1
+                key - (c + d)
+                S[key] S.g.. key, 0) + 1
 
         ___ a __ A:
             ___ b __ B:

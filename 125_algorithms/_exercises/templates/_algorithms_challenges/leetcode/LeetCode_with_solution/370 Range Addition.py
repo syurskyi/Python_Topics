@@ -1,7 +1,7 @@
 """
 Premium question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -23,13 +23,13 @@ c_ Solution(o..
         :type updates: List[List[int]]
         :rtype: List[int]
         """
-        deltas = [0 ___ _ __ x..(length)]
+        deltas [0 ___ _ __ x..(length)]
         ___ i, j, k __ updates:
             deltas[i] += k
             __ j + 1 < length: deltas[j + 1] -_ k
 
         ret    # list
-        acc = 0
+        acc 0
         ___ delta __ deltas:
             acc += delta
             ret.a..(acc)

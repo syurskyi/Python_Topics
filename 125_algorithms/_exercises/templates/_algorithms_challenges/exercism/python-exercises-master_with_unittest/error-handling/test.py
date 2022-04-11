@@ -5,18 +5,18 @@ _______ error_handling __ er
 
 c_ FileLike(o..
     ___ - , fail_something=T..
-        is_open = F..
-        was_open = F..
-        did_something = F..
-        fail_something = fail_something
+        is_open F..
+        was_open F..
+        did_something F..
+        fail_something fail_something
 
     ___ open
-        was_open = F..
-        is_open = T..
+        was_open F..
+        is_open T..
 
     ___ close
-        is_open = F..
-        was_open = T..
+        is_open F..
+        was_open T..
 
     ___ __enter__
         o.. )
@@ -26,7 +26,7 @@ c_ FileLike(o..
         c..
 
     ___ do_something
-        did_something = T..
+        did_something T..
         __ fail_something:
             r.. E..("Failed while doing something")
 
@@ -43,17 +43,17 @@ c_ ErrorHandlingTest(unittest.TestCase
                           'Result of invalid input should be None')
 
     ___ test_return_tuple
-        successful_result, result = er.handle_error_by_returning_tuple('1')
+        successful_result, result er.handle_error_by_returning_tuple('1')
         assertIs(successful_result, T..,
                       'Valid input should be successful')
         assertEqual(result, 1, 'Result of valid input should not be None')
 
-        failure_result, result = er.handle_error_by_returning_tuple('a')
+        failure_result, result er.handle_error_by_returning_tuple('a')
         assertIs(failure_result, F..,
                       'Invalid input should not be successful')
 
     ___ test_filelike_objects_are_closed_on_exception
-        filelike_object = FileLike(fail_something=T..)
+        filelike_object FileLike(fail_something=T..)
         w__ assertRaisesWithMessage(E..
             er.filelike_objects_are_closed_on_exception(filelike_object)
         assertIs(filelike_object.is_open, F..,
@@ -64,7 +64,7 @@ c_ ErrorHandlingTest(unittest.TestCase
                       'filelike_object should call do_something()')
 
     ___ test_filelike_objects_are_closed_without_exception
-        filelike_object = FileLike(fail_something=F..)
+        filelike_object FileLike(fail_something=F..)
         er.filelike_objects_are_closed_on_exception(filelike_object)
         assertIs(filelike_object.is_open, F..,
                       'filelike_object should be closed')
@@ -78,7 +78,7 @@ c_ ErrorHandlingTest(unittest.TestCase
         ___
             assertRaisesRegex
         ______ AttributeError:
-            assertRaisesRegex = assertRaisesRegexp
+            assertRaisesRegex assertRaisesRegexp
 
     ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")

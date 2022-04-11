@@ -1,8 +1,8 @@
 _______ p__
 ____ so _______ top_python_questions
 
-actual_return = top_python_questions()
-expected_return = [
+actual_return top_python_questions()
+expected_return [
     ('What does the “yield” keyword do?', 9169),
     ('Does Python have a ternary conditional operator?', 5135),
     ('What does if __name__ == “__main__”: do?', 4927),

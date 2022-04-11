@@ -25,12 +25,12 @@ c_ Solution(o..
             elem.p.. )
     
     ___ test
-        testCases = [
+        testCases [
             [1, 2, 3],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums
-            result = subsets(nums)
+            result subsets(nums)
             print('result: %s' % (result
             print('-='*15+'-')
 

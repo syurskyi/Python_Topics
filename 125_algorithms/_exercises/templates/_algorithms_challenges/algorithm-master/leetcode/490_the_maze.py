@@ -22,9 +22,9 @@ c_ Solution:
         __ n.. maze o. n.. maze[0] o. n.. start o. n.. destination:
             r.. F..
 
-        x, y = start
-        tx, ty = destination
-        visited = s..()
+        x, y start
+        tx, ty destination
+        visited s..()
         r.. dfs(maze, x, y, tx, ty, visited)
 
     ___ dfs  maze, x, y, tx, ty, visited
@@ -35,11 +35,11 @@ c_ Solution:
 
         visited.add((x, y
 
-        m, n = l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze[0])
 
         ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1:
-            _x = x + dx
-            _y = y + dy
+            _x x + dx
+            _y y + dy
 
             w.... 0 <_ _x < m a.. 0 <_ _y < n a.. maze[_x][_y] __ 0:
                 _x += dx

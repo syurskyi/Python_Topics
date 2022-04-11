@@ -1,4 +1,4 @@
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -10,7 +10,7 @@ c_ Solution(o..
         :param tokens:
         :return:
         """
-        ops = ["+", "-", "*", "/"]
+        ops ["+", "-", "*", "/"]
 
         ___ arith(a, b, op
             __ (op __ "+"
@@ -42,9 +42,9 @@ c_ Solution(o..
             __ token n.. __ ops:
                 stack.a..(i..(token
             ____
-                arg2 = stack.p.. )
-                arg1 = stack.p.. )
-                result = arith(arg1, arg2, token)
+                arg2 stack.p.. )
+                arg1 stack.p.. )
+                result arith(arg1, arg2, token)
                 stack.a..(result)
         r.. stack.p.. )
 

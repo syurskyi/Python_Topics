@@ -17,7 +17,7 @@ Result: [1,2,4,8]
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -38,24 +38,24 @@ c_ Solution(o..
         pi    # dict
         A.s..()
         ___ i __ x..(l..(A:
-            F[i] = 1
-            pi[i] = i
+            F[i] 1
+            pi[i] i
             ___ j __ x..(i
                 __ A[i] % A[j] __ 0:
                     __ F[i] < 1 + F[j]:
-                        F[i] = 1 + F[j]
-                        pi[i] = j
+                        F[i] 1 + F[j]
+                        pi[i] j
 
-        max_i, max_v = 0, 1
+        max_i, max_v 0, 1
         ___ k, v __ F.i..:
             __ v > max_v:
-                max_i, max_v = k, v
+                max_i, max_v k, v
 
-        ret = d..()
-        cur = max_i
+        ret d..()
+        cur max_i
         ret.appendleft(A[cur])
         w.... pi[cur] != cur:
-            cur = pi[cur]
+            cur pi[cur]
             ret.appendleft(A[cur])
 
         r.. l..(ret)

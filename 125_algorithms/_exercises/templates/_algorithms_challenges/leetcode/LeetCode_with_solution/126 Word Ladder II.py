@@ -19,14 +19,14 @@ Note:
 All words have the same length.
 All words contain only lowercase alphabetic characters.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 c_ Solution_MLE:  # Memory Limit Exceeds
     c_ Node:
         ___ - , s__, pre, d..
-            s__ = s__
-            pre = pre  # node
-            d.. = d..
+            s__ s__
+            pre pre  # node
+            d.. d..
 
         ___  -r
             r.. r.. (s__)
@@ -41,46 +41,46 @@ c_ Solution_MLE:  # Memory Limit Exceeds
         """
 
         result    # list
-        lower_cases = [chr(i+o..('a' ___ i __ x..(26)]
+        lower_cases [chr(i+o..('a' ___ i __ x..(26)]
 
-        start_node = Node(start, N.., d..-{start}|{end})
-        queue = [start_node]
+        start_node Node(start, N.., d..-{start}|{end})
+        queue [start_node]
         w.... queue:
-            length_0 = l..(queue)
+            length_0 l..(queue)
             ___ i __ x..(length_0  #O(V)
-                current = queue[i]
+                current queue[i]
                 __ current.string__end:  # reached
                     a..(current, result)
             __ result:  # shortest, thus pruning
                 r.. result
 
             ___ i __ x..(length_0
-                current = queue[i].s__
+                current queue[i].s__
                 ___ pos __ x..(l..(current:
-                    lst = l..(current)
+                    lst l..(current)
                     ___ char __ lower_cases:
-                        lst[pos] = char
-                        temp = "".j..(lst)
+                        lst[pos] char
+                        temp "".j..(lst)
                         __ temp __ queue[i].d..:
                             queue.a..(Node(temp, queue[i], queue[i].d..-{temp}
 
-            queue = queue[length_0:]
+            queue queue[length_0:]
         r.. []  # natural break, no result
 
     ___ a..  node, result
-        cur = node
+        cur node
         lst    # list
         w.... cur:
             lst.insert(0, cur.s__)
-            cur = cur.pre
+            cur cur.pre
         result.a..(lst)
 
 
 c_ Solution_TLE:
     c_ Node:
         ___ - , s__, pre
-            s__ = s__
-            pre = pre  # node
+            s__ s__
+            pre pre  # node
 
         ___  -r
             r.. r.. (s__)
@@ -95,53 +95,53 @@ c_ Solution_TLE:
         """
         d.. |= {end}
         result    # list
-        lower_cases = [chr(i+o..('a' ___ i __ x..(26)]
+        lower_cases [chr(i+o..('a' ___ i __ x..(26)]
 
-        start_node = Node(start, N..)
-        queue = [start_node]
+        start_node Node(start, N..)
+        queue [start_node]
         w.... queue:
-            length_0 = l..(queue)
+            length_0 l..(queue)
             ___ i __ x..(length_0  #O(V)
-                current = queue[i]
+                current queue[i]
                 __ current.string__end:  # reached
                     a..(current, result)
             __ result:  # shortest, thus pruning
                 r.. result
 
             ___ i __ x..(length_0
-                current = queue[i].s__
+                current queue[i].s__
                 ___ pos __ x..(l..(current:
-                    lst = l..(current)
+                    lst l..(current)
                     ___ char __ lower_cases:
-                        lst[pos] = char
-                        temp = "".j..(lst)
+                        lst[pos] char
+                        temp "".j..(lst)
                         __ temp __ d.. a.. n.. in_previous(queue[i], temp
                             queue.a..(Node(temp, queue[i]
 
-            queue = queue[length_0:]
+            queue queue[length_0:]
         r.. []  # natural break, no result
 
     ___ a..  node, result
-        cur = node
+        cur node
         lst    # list
         w.... cur:
             lst.insert(0, cur.s__)
-            cur = cur.pre
+            cur cur.pre
         result.a..(lst)
 
     ___ in_previous  node, s__
-        cur = node
+        cur node
         w.... cur:
             __ cur.string__string:
                 r.. T..
-            cur = cur.pre
+            cur cur.pre
         r.. F..
 
 
 c_ Node:
     ___ - , s__, pre
-        s__ = s__
-        pre = pre  # node
+        s__ s__
+        pre pre  # node
         # self.pres = self.pre.pres|{string} if self.pre else {string}  # accelerate speed
 
     ___  -r
@@ -166,14 +166,14 @@ c_ Solution_TLE2:
         """
         d.. |= {end}  # set
         result    # list
-        lower_cases = 'abcdefghijklmnopqrstuvwxyz'
+        lower_cases 'abcdefghijklmnopqrstuvwxyz'
 
         # bfs
-        queue = [Node(start, N..)]
+        queue [Node(start, N..)]
         w.... queue:
-            length_0 = l..(queue)
+            length_0 l..(queue)
             ___ i __ x..(length_0  #O(V)
-                current = queue[i]
+                current queue[i]
 
                 # greedy, cannot repeat while possibly repeat in the same level; otherwise cannot be the shortest
                 # the paths downwards are independent of the path before that.
@@ -187,24 +187,24 @@ c_ Solution_TLE2:
                 r.. result
 
             ___ i __ x..(length_0
-                current = queue[i].s__
+                current queue[i].s__
                 ___ pos __ x..(l..(current:
-                    lst = l..(current)
+                    lst l..(current)
                     ___ char __ lower_cases:
-                        lst[pos] = char
-                        temp = "".j..(lst)
+                        lst[pos] char
+                        temp "".j..(lst)
                         __ temp __ d..:
                             queue.a..(Node(temp, queue[i]
 
-            queue = queue[length_0:]
+            queue queue[length_0:]
         r.. []  # natural break, no result
 
     ___ a..  node, result
-        cur = node
+        cur node
         lst    # list
         w.... cur:
             lst.insert(0, cur.s__)
-            cur = cur.pre
+            cur cur.pre
         result.a..(lst)
 
 c_ Solution:  # use set to mimic queue, fastest
@@ -230,7 +230,7 @@ c_ Solution:  # use set to mimic queue, fastest
 
         candidates[current].add(start)
         w.... end n.. __ candidates[current]:
-            current, previous = previous, current
+            current, previous previous, current
             ___ i __ candidates[previous]: d.. -_ {i}  # greedy elimination
 
             candidates[current].clear()  # to be added to the current level

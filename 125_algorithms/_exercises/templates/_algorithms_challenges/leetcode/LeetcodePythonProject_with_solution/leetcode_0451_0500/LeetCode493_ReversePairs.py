@@ -6,11 +6,11 @@ Created on May 9, 2017
 
 c_ Node(o..
     ___ - , val
-        val = val
-        less = 0
-        same = 1
-        left = N..
-        right = N..
+        val val
+        less 0
+        same 1
+        left N..
+        right N..
 
 c_ Solution(o..
     ___ reversePairs_mergeSort  nums
@@ -18,15 +18,15 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        cnt = 0
+        cnt 0
         ___ msort(lst
-            n = l..(lst)
+            n l..(lst)
             __ n <_ 1:
                 r.. lst
             ____
                 r.. merger(msort(lst[:i..(n/2)]), msort(lst[i..(n/2]
         ___ merger(left, right
-            l, r = 0, 0
+            l, r 0, 0
             w.... l < l..(left) a.. r < l..(right
                 __ left[l] <_ 2*right[r]:
                     l += 1
@@ -42,12 +42,12 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        root = N..
-        cnt = [0]
+        root N..
+        cnt [0]
         ___ i __ r..(l..(nums)-1, -1, -1
-            num = nums[i]
+            num nums[i]
             s..(cnt, root, num/2.0)
-            root = build(num, root)
+            root build(num, root)
         r.. cnt[0]
     
     ___ s..  cnt, node, target
@@ -67,20 +67,20 @@ c_ Solution(o..
         ____ val __ node.val:
             node.same += 1
         ____ val > node.val:
-            node.right = build(val, node.right)
+            node.right build(val, node.right)
         ____
             node.less += 1
-            node.left = build(val, node.left)
+            node.left build(val, node.left)
         r.. node
     
     ___ test
-        testCases = [
+        testCases [
             [1, 3, 2, 3, 1],
             [2, 4, 3, 5, 1],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = reversePairs_mergeSort(nums)
+            result reversePairs_mergeSort(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

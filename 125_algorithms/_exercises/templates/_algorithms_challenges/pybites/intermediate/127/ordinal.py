@@ -13,15 +13,15 @@ ___ get_ordinal_suffix(number
        - th is used for all other numbers (e.g. 9th, pronounced ninth).
        """
 
-    ordinal_suffix = {
+    ordinal_suffix {
       "st": '1',
       "nd": '2',
       "rd": '3',
       "th":  '11', '12', '13'       
     }
 
-    number = s..(number)
-    last_char = number[-1]
+    number s..(number)
+    last_char number[-1]
     
     __ number[-2:] __ ordinal_suffix["th"] a.. l..(number) > 1:
       r.. f"{number}th"

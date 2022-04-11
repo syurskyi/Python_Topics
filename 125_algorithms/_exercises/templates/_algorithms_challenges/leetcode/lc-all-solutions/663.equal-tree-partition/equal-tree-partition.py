@@ -10,10 +10,10 @@ c_ Solution(o..
     ___ s..(node
       __ n.. node:
         r.. 0
-      s = node.val + s..(node.left) + s..(node.right)
+      s node.val + s..(node.left) + s..(node.right)
       __ node __ n.. root:
         cuts.add(s)
       r.. s
 
-    cuts = s..()
+    cuts s..()
     r.. s..(root) / 2. __ cuts

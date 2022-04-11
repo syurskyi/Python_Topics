@@ -1,10 +1,10 @@
 ____ c.. _______ n..
 
-Tweet = n..('Tweet', 'text polarity')
+Tweet n..('Tweet', 'text polarity')
 
 # polarity < 0 = negative, > 0 = positive
 # long strings and pep8: you can wrap strings in () to reduce line length
-tweets = [
+tweets [
     Tweet(text=("It's shocking that the vast majority of online banking "
                 "systems have critical vulnerabilities leaving customer "
                 "accounts unprotected."),

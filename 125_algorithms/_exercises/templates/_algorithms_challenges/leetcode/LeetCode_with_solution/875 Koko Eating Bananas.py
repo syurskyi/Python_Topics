@@ -52,18 +52,18 @@ c_ Solution:
         __ l..(piles) > H:
             r.. N..
 
-        n = l..(piles)
-        hi = m..(piles) + 1
-        lo = 1
+        n l..(piles)
+        hi m..(piles) + 1
+        lo 1
         w.... lo < hi:
-            mid = (lo + hi) // 2
+            mid (lo + hi) // 2
             __ s..(
                 m__.c.. piles[i] / mid)
                 ___ i __ r..(n)
             ) > H:
-                lo = mid + 1
+                lo mid + 1
             ____
-                hi = mid
+                hi mid
 
         r.. lo
 

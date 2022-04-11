@@ -10,11 +10,11 @@ c_ Solution(o..
         :type T: str
         :rtype: str
         """
-        s, t = S, T
-        count = [0]*26
+        s, t S, T
+        count [0]*26
         ___ c __ t:
             count[o..(c)-o..('a')] += 1
-        res = ''
+        res ''
         ___ c __ s:
             w.... count[o..(c)-o..('a')] > 0:
                 res += c
@@ -26,7 +26,7 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
              'cba', 'abcd' ,
             ["kqep", "pekeq"],
             ["exv", "xwvee"],
@@ -34,7 +34,7 @@ c_ Solution(o..
         ___ s, t __ testCases:
             print('s: %s' % s)
             print('t: %s' % t)
-            result = customSortString(s, t)
+            result customSortString(s, t)
             print('result: %s' % result)
             print('-='*30+'-')
 

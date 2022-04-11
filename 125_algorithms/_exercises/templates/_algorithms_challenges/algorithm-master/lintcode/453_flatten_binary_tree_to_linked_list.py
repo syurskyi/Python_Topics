@@ -44,11 +44,11 @@ c_ Solution:
         __ n.. root.left:
             r..
 
-        node = root.left
+        node root.left
 
         w.... node.right:
-            node = node.right
+            node node.right
 
-        node.right = root.right
-        root.right = root.left
-        root.left = N..
+        node.right root.right
+        root.right root.left
+        root.left N..

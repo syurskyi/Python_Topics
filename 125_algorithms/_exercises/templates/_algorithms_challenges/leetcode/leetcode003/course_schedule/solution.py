@@ -35,7 +35,7 @@ c_ Solution(o..
         # adjacency list
         queue    # list
         finished_courses    # list
-        prq_graph = {x: s..() ___ x __ r..(numCourses)}
+        prq_graph {x: s..() ___ x __ r..(numCourses)}
         ___ c, p __ prerequisites:
             prq_graph[c].add(p)
 
@@ -47,7 +47,7 @@ c_ Solution(o..
         # For each of the remaining node, remove its prerequisites in queue;
         # if node has no prerequisites, add it to queue, and repeat
         w.... queue:
-            u = queue.p.. 0)
+            u queue.p.. 0)
             ___ v, prqs __ prq_graph.i..:
                 __ u __ prqs:
                     prqs.remove(u)
@@ -57,6 +57,6 @@ c_ Solution(o..
 
         r.. l..(finished_courses) __ numCourses
 
-s = Solution()
+s Solution()
 print(s.canFinish(1, []
 print(s.canFinish(3, [[1, 0], [0, 1]]

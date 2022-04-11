@@ -12,12 +12,12 @@ c_ Solution:
         __ n.. nums:
             r.. F..
 
-        n = l..(nums)
-        dp = [0] * n
+        n l..(nums)
+        dp [0] * n
 
         ___ i __ r..(n - 1, -1, -1
             ___ j __ r..(i + 1, n
-                dp[j] = m..(
+                dp[j] m..(
                     nums[i] - dp[j],
                     nums[j] - dp[j - 1]
                 )
@@ -39,12 +39,12 @@ c_ Solution:
         __ n.. nums:
             r.. F..
 
-        n = l..(nums)
-        dp = [[0] * n ___ _ __ r..(n)]
+        n l..(nums)
+        dp [[0] * n ___ _ __ r..(n)]
 
         ___ i __ r..(n - 1, -1, -1
             ___ j __ r..(i + 1, n
-                dp[i][j] = m..(
+                dp[i][j] m..(
                     nums[i] - dp[i + 1][j],
                     nums[j] - dp[i][j - 1]
                 )

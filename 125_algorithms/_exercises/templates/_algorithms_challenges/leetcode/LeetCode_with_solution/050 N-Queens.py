@@ -21,11 +21,11 @@ There exist two distinct solutions to the 4-queens puzzle:
   ".Q.."]
 ]
 """
-__author__ = 'Danyang'
-INVALID = -1
-QUEEN = 1
-DEFAULT = 0
-directions = [(+1, +1), (-1, -1), (-1, +1), (+1, -1)]
+__author__ 'Danyang'
+INVALID -1
+QUEEN 1
+DEFAULT 0
+directions [(+1, +1), (-1, -1), (-1, +1), (+1, -1)]
 c_ Solution:
     ___ solveNQueens  n
         """
@@ -34,7 +34,7 @@ c_ Solution:
         :return: a list of lists of string
         """
         result    # list
-        current = [[0 ___ _ __ x..(n)] ___ _ __ x..(n)]
+        current [[0 ___ _ __ x..(n)] ___ _ __ x..(n)]
         backtrack(0, current, result)
         r.. transform2string(result)
 
@@ -50,7 +50,7 @@ c_ Solution:
         :param result: list of 2D matrix
         :return: Nothing
         """
-        n = l..(current)
+        n l..(current)
         __ queen_index__n:
             result.a..(current)
             r..
@@ -60,17 +60,17 @@ c_ Solution:
                 _____
 
             # place the queen
-            new_config = [l..(element) ___ element __ current]  # new copy
-            new_config[queen_index][i] = QUEEN
+            new_config [l..(element) ___ element __ current]  # new copy
+            new_config[queen_index][i] QUEEN
 
             # update invalid position in the new config
             ___ m __ x..(n
                 # col
                 __ new_config[m][i]__DEFAULT:
-                    new_config[m][i] = INVALID
+                    new_config[m][i] INVALID
                 # row
                 __ new_config[queen_index][m]__DEFAULT:
-                    new_config[queen_index][m] = INVALID
+                    new_config[queen_index][m] INVALID
 
                 # diagonal - not optimized
                 # row = queen_index+m
@@ -91,10 +91,10 @@ c_ Solution:
 
                 # diagonal - optimized
                 ___ direction __ directions:
-                    row = queen_index+direction[0]*m
-                    col = i+direction[1]*m
+                    row queen_index+direction[0]*m
+                    col i+direction[1]*m
                     __ 0<_row<n a.. 0<_col<n a.. new_config[row][col]__DEFAULT:
-                        new_config[row][col] = INVALID
+                        new_config[row][col] INVALID
 
             # dfs
             # backtrack by using clone of the board configuration
@@ -106,8 +106,8 @@ c_ Solution:
         ___ configuration __ result:
             current    # list
             ___ row __ configuration:
-                row = map(l.... x: "." __ x__-1 ____ "Q", row)
-                row = "".j..(row)
+                row map(l.... x: "." __ x__-1 ____ "Q", row)
+                row "".j..(row)
                 current.a..(row)
             string_result.a..(current)
         r.. string_result

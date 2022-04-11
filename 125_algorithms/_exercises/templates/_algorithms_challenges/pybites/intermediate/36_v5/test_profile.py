@@ -30,26 +30,26 @@ ___ test_get_profile_dict
 
 
 ___ test_get_profile_one_sport
-    e.. = {'name': 'tim', 'age': 36,
+    e.. {'name': 'tim', 'age': 36,
                 'sports':  'tennis' }
     ... get_profile('tim', 36, 'tennis') __ e..
 
 
 ___ test_get_profile_two_sports
-    e.. = {'name': 'tim', 'age': 36,
+    e.. {'name': 'tim', 'age': 36,
                 'sports':  'basketball', 'tennis' }
     ... get_profile('tim', 36, 'tennis', 'basketball') __ e..
 
 
 ___ test_get_profile_award
-    e.. = {'name': 'tim', 'age': 36,
+    e.. {'name': 'tim', 'age': 36,
                 'awards': {'champ': 'helped out team in crisis'}}
     ... get_profile('tim', 36,
                        champ='helped out team in crisis') __ e..
 
 
 ___ test_get_profile_two_sports_and_one_award
-    e.. = {'name': 'tim', 'age': 36,
+    e.. {'name': 'tim', 'age': 36,
                 'sports':  'basketball', 'tennis' ,
                 'awards': {'champ': 'helped out team in crisis'}}
     ... get_profile('tim', 36, 'tennis', 'basketball',
@@ -57,7 +57,7 @@ ___ test_get_profile_two_sports_and_one_award
 
 
 ___ test_get_profile_two_sports_and_three_awards
-    e.. = {'name': 'tim', 'age': 36,
+    e.. {'name': 'tim', 'age': 36,
                 'sports':  'basketball', 'tennis' ,
                 'awards': {'champ': 'helped out the team in crisis',
                            'service': 'going the extra mile for our customers',

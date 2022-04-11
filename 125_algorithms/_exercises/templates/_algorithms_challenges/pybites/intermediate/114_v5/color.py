@@ -10,7 +10,7 @@ _______ ___
 _______ u__.r..
 
 # PREWORK (don't modify): import colors, save to temp file and import
-color_values_module = __.p...j..('/tmp', 'color_values.py')
+color_values_module __.p...j..('/tmp', 'color_values.py')
 u__.r...u..('https://bit.ly/2MSuu4z',
                            color_values_module)
 ___.p...a..('/tmp')
@@ -26,8 +26,8 @@ c_ Color:
     """
 
     ___ - , color: s..
-        colorname = color
-        rgb = COLOR_NAMES.g.. color.u.., N..)
+        colorname color
+        rgb COLOR_NAMES.g.. color.u.., N..)
 
     @classmethod
     ___ hex2rgb(cls, hex_str: s..) __ t..:

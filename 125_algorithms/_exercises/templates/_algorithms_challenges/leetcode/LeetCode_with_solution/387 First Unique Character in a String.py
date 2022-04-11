@@ -12,7 +12,7 @@ Note: You may assume the string contain only lowercase letters.
 
 
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -27,11 +27,11 @@ c_ Solution(o..
         first    # dict
         ___ i, v __ e..(l..(s:
             __ v n.. __ first:
-                first[v] = i
+                first[v] i
             ____
-                first[v] = -1
+                first[v] -1
 
-        lst = f.. l.... x: x != -1, first.values
+        lst f.. l.... x: x != -1, first.values
         r.. m..(lst) __ lst ____ -1
 
 

@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Codec(o..
@@ -14,7 +14,7 @@ c_ Codec(o..
         :type strs: List[str]
         :rtype: str
         """
-        strs = map(l.... x: s..(l..(x+"/"+x, strs)
+        strs map(l.... x: s..(l..(x+"/"+x, strs)
         r.. r.. l.... x, y: x+y, strs, "")  # i.e. "".join(strs)
 
     ___ decode  s
@@ -25,12 +25,12 @@ c_ Codec(o..
         :rtype: List[str]
         """
         strs    # list
-        i = 0
+        i 0
         w.... i < l..(s
-            j = s.i.. "/", i)
-            l = i..(s[i:j])
+            j s.i.. "/", i)
+            l i..(s[i:j])
             strs.a..(s[j+1:j+1+l])
-            i = j+1+l
+            i j+1+l
 
         r.. strs
 
@@ -45,7 +45,7 @@ c_ CodecMethod2(o..
         :type strs: List[str]
         :rtype: str
         """
-        strs = map(l.... x: x.r..("\n", "\n\n")+"_\n_", strs)
+        strs map(l.... x: x.r..("\n", "\n\n")+"_\n_", strs)
         r.. r.. l.... x, y: x+y, strs, "")
 
     ___ decode  s
@@ -55,8 +55,8 @@ c_ CodecMethod2(o..
         :type s: str
         :rtype: List[str]
         """
-        strs = s.s..("_\n_")
-        strs = strs[:-1]  # clear the trailing delimiter
+        strs s.s..("_\n_")
+        strs strs[:-1]  # clear the trailing delimiter
         r.. map(l.... x: x.r..("\n\n", "\n"), strs)
 
 
@@ -70,8 +70,8 @@ c_ CodecError(o..
         :type strs: List[str]
         :rtype: str
         """
-        strs = map(l.... x: x.r..("\x00", "\\x00"), strs)
-        ret = ""
+        strs map(l.... x: x.r..("\x00", "\\x00"), strs)
+        ret ""
         ___ s __ strs:
             ret += s+"\x00"
         r.. ret
@@ -86,7 +86,7 @@ c_ CodecError(o..
         __ "\x00" n.. __ s:
             r.. []
 
-        s = s[:-1]  # traiing \x00
-        strs = s.s..("\x00")
-        strs = map(l.... x: x.r..("\\x00", "\x00"), strs)
+        s s[:-1]  # traiing \x00
+        strs s.s..("\x00")
+        strs map(l.... x: x.r..("\\x00", "\x00"), strs)
         r.. strs

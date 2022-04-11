@@ -15,7 +15,7 @@ memory at once?
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -28,7 +28,7 @@ c_ Solution(o..
         :type nums2: List[int]
         :rtype: List[int]
         """
-        h1, h2 = d..(i..), d..(i..)
+        h1, h2 d..(i..), d..(i..)
         ___ a __ nums1:
             h1[a] += 1
         ___ b __ nums2:
@@ -36,7 +36,7 @@ c_ Solution(o..
 
         ret    # list
         ___ k, v __ h1.i..:
-            cnt = m..(v, h2[k])
+            cnt m..(v, h2[k])
             ret.e.. [k]*cnt)
 
         r.. ret

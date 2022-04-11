@@ -23,10 +23,10 @@ ___ convert(value: f__, fmt: s..) __ f__:
     __ t..(value) __ i.. o. t..(value) __ f__:
         __ fmt.l.. __ "cm" o. fmt.l.. __ "in":
             __ fmt.l.. __ "cm":
-                result = value*2.54
+                result value*2.54
                 r.. r..(result,4)
             ____
-                result = value*0.393700787
+                result value*0.393700787
                 r.. r..(result, 4)
         ____
             r.. V...

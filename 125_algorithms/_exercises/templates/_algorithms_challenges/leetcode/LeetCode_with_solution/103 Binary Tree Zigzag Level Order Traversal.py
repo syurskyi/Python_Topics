@@ -17,13 +17,13 @@ return its zigzag level order traversal as:
 ]
 confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on OJ.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution:
     ___ zigzagLevelOrder  root
@@ -36,8 +36,8 @@ c_ Solution:
             r.. []
 
         result    # list
-        lst = [root]
-        direction = F..
+        lst [root]
+        direction F..
         w.... lst:
             __ direction:
                 result.a..([element.val ___ element __ lst])
@@ -45,12 +45,12 @@ c_ Solution:
                 result.a..([element.val ___ element __ r..(lst)])
 
             ___ i __ r..(l..(lst:  # evaluation time
-                element = lst.p.. 0)  # queue
+                element lst.p.. 0)  # queue
                 __ element.left:
                     lst.a..(element.left)
                 __ element.right:
                     lst.a..(element.right)
-            direction = n.. direction
+            direction n.. direction
         r.. result
 
 

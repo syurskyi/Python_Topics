@@ -36,11 +36,11 @@ c_ Solution:
         You can think of it as graph. If circle, then you can start with any
         node
         """
-        visited = s..()
-        ret = 0
+        visited s..()
+        ret 0
         ___ n __ nums:
-            count = dfs(nums, n, s..(), visited)
-            ret = m..(ret, count)
+            count dfs(nums, n, s..(), visited)
+            ret m..(ret, count)
 
         r.. ret
 

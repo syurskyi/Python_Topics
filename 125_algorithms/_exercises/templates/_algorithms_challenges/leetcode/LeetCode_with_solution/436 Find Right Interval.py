@@ -16,8 +16,8 @@ You may assume none of these intervals have the same start point.
 """
 c_ Interval:
     ___ - , s=0, e=0
-        start = s
-        end = e
+        start s
+        end e
 
     @classmethod
     ___ new(cls, lst
@@ -37,14 +37,14 @@ c_ Solution:
         :type intervals: List[Interval]
         :rtype: List[int]
         """
-        indexes = {
+        indexes {
             itv.start: idx
             ___ idx, itv __ e..(intervals)
         }
-        starts = l..(s..(indexes.k.. )))
+        starts l..(s..(indexes.k.. )))
         ret    # list
         ___ itv __ intervals:
-            idx = bisect_left(starts, itv.end)
+            idx bisect_left(starts, itv.end)
             __ idx >_ l..(starts
                 ret.a..(-1)
             ____

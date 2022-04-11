@@ -8,7 +8,7 @@ Given "aacecaaa", return "aaacecaaa".
 
 Given "abcd", return "dcbabcd".
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -19,42 +19,42 @@ c_ Solution:
         :type s: str
         :rtype: str
         """
-        s_r = s[::-1]
-        l = l..(s)
+        s_r s[::-1]
+        l l..(s)
         __ l < 2:
             r.. s
 
         # construct T
-        T = [0 ___ _ __ x..(l+1)]
-        T[0] = -1
-        pos = 2
-        cnd = 0
+        T [0 ___ _ __ x..(l+1)]
+        T[0] -1
+        pos 2
+        cnd 0
         w.... pos <_ l:
             __ s[pos-1] __ s[cnd]:
-                T[pos] = cnd+1
+                T[pos] cnd+1
                 cnd += 1
                 pos += 1
             ____ T[cnd] != -1:
-                cnd = T[cnd]
+                cnd T[cnd]
             ____
-                T[pos] = 0
-                cnd = 0
+                T[pos] 0
+                cnd 0
                 pos += 1
 
         # search 
-        i = 0
-        b = 0
+        i 0
+        b 0
         w.... i+b < l:
             __ s[i] __ s_r[i+b]:
                 i += 1
                 __ i __ l:
                     r.. s
             ____ T[i] != -1:
-                b = b+i-T[i]
-                i = T[i]
+                b b+i-T[i]
+                i T[i]
             ____
                 b += 1
-                i = 0
+                i 0
 
         # where it falls off
         r.. s_r+s[i:]

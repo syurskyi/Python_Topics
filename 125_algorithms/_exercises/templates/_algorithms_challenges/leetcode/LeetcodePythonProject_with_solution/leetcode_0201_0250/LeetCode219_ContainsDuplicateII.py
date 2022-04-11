@@ -13,7 +13,7 @@ c_ Solution(o..
         hashmap    # dict
         ___ i, num __ e..(nums
             __ num n.. __ hashmap o. i - hashmap[num] > k:
-                hashmap[num] = i
+                hashmap[num] i
             ____
                 r.. T..
         r.. F..

@@ -2,7 +2,7 @@
 Premium Question
 Straightforward
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..

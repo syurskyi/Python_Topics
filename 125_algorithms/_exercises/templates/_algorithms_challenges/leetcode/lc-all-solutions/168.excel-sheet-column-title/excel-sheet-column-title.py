@@ -4,14 +4,14 @@ c_ Solution(o..
     :type n: int
     :rtype: str
     """
-    ans = ""
+    ans ""
     w.... n > 0:
-      y = n % 26
+      y n % 26
       __ y __ 0:
-        char = "Z"
+        char "Z"
         n -_ 26
       ____
-        char = chr(o..("A") + y - 1)
+        char chr(o..("A") + y - 1)
       ans += char
-      n = n / 26
+      n n / 26
     r.. ans[::-1]

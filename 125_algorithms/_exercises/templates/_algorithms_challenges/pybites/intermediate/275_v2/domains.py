@@ -3,25 +3,25 @@ _______ __
 ____ bs4 _______ BeautifulSoup
 _______ r__
 
-COMMON_DOMAINS = ("https://bites-data.s3.us-east-2.amazonaws.com/"
+COMMON_DOMAINS ("https://bites-data.s3.us-east-2.amazonaws.com/"
                   "common-domains.html")
-TARGET_DIV = {"class": "middle_info_noborder"}
+TARGET_DIV {"class": "middle_info_noborder"}
 
 
 ___ get_common_domains(url=COMMON_DOMAINS
     """Scrape the url return the 100 most common domain names"""
 
     ___
-        response = r__.g.. url)
+        response r__.g.. url)
         response.raise_for_status()
     ______:
         print('error in getting data')
         r.. []
 
     
-    soup = BeautifulSoup(response.text)
+    soup BeautifulSoup(response.text)
 
-    rows = soup.find(attrs=TARGET_DIV).find_all('tr')
+    rows soup.find(attrs=TARGET_DIV).find_all('tr')
 
 
     r.. [value.getText(s..=T..) ___ row __ rows ___ value __ row.select('td:nth-child(3)')]
@@ -37,7 +37,7 @@ ___ get_most_common_domains(emails, common_domains_ N..
     """Given a list of emails return the most common domain names,
        ignoring the list (or set) of common_domains"""
     __ common_domains __ N..
-        common_domains = get_common_domains()
+        common_domains get_common_domains()
         
     # your code
     c =  C..(domain ___ domain __ map(get_domain,emails) __ domain n.. __ common_domains).m..

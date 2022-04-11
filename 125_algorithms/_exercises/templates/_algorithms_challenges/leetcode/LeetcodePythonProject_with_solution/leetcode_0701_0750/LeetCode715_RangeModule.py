@@ -8,20 +8,20 @@ _______ b__
 c_ RangeModule(o..
 
     ___ -
-        X = [0, 10**9]
-        track = [F..]*2
+        X [0, 10**9]
+        track [F..]*2
     
     ___ addRangeHelper  left, right, track=T..
         ___ i.. x
-            i = b__.bisect_left(X, x)
+            i b__.bisect_left(X, x)
             __ X[i] != x:
                 X.insert(i, x)
                 track.insert(i, track[i-1])
             r.. i
-        i = i.. left)
-        j = i.. right)
-        X[i:j] = [left]
-        track[i:j] = [track]
+        i i.. left)
+        j i.. right)
+        X[i:j] [left]
+        track[i:j] [track]
 
     ___ addRange  left, right
         """
@@ -37,8 +37,8 @@ c_ RangeModule(o..
         :type right: int
         :rtype: bool
         """
-        i = b__.b__(X, left)-1
-        j = b__.bisect_left(X, right)
+        i b__.b__(X, left)-1
+        j b__.bisect_left(X, right)
         r.. a..(track[i:j])
 
     ___ removeRange  left, right
@@ -51,8 +51,8 @@ c_ RangeModule(o..
 
 c_ Interval(o..
     ___ - , left, right
-        left = left
-        right = right
+        left left
+        right right
 
 c_ RangeModule_own(o..
     ___ -
@@ -64,19 +64,19 @@ c_ RangeModule_own(o..
         :type right: int
         :rtype: void
         """
-        newInterval = Interval(left, right)
+        newInterval Interval(left, right)
         res    # list
         ___ interval __ intervals:
             __ newInterval.right < interval.left:
                 res.a..(newInterval)
-                newInterval = interval
+                newInterval interval
             ____ interval.right < newInterval.left:
                 res.a..(interval)
             ____
-                newInterval = Interval(m..(interval.left, newInterval.left),\
+                newInterval Interval(m..(interval.left, newInterval.left),\
                                     m..(interval.right, newInterval.right
         res.a..(newInterval)
-        intervals = res
+        intervals res
 
     ___ queryRange  left, right
         """
@@ -84,14 +84,14 @@ c_ RangeModule_own(o..
         :type right: int
         :rtype: bool
         """
-        newInterval = Interval(left, right)
-        l, r = 0, l..(intervals)-1
+        newInterval Interval(left, right)
+        l, r 0, l..(intervals)-1
         w.... l <_ r:
-            mid = (l+r)//2
+            mid (l+r)//2
             __ intervals[mid].left >_ newInterval.right:
-                r = mid-1
+                r mid-1
             ____ intervals[mid].right <_ newInterval.left:
-                l = mid+1
+                l mid+1
             ____
                 r.. intervals[mid].left <_ newInterval.left a..\
                     intervals[mid].right >_ newInterval.right
@@ -103,7 +103,7 @@ c_ RangeModule_own(o..
         :type right: int
         :rtype: void
         """
-        newInterval = Interval(left, right)
+        newInterval Interval(left, right)
         res    # list
         ___ interval __ intervals:
             __ newInterval.right >_ interval.right a.. newInterval.left <_ interval.left:
@@ -116,14 +116,14 @@ c_ RangeModule_own(o..
             ____ newInterval.right <_ interval.left o. interval.right <_ newInterval.left:
                 res.a..(interval)
             ____ newInterval.right <_ interval.right:
-                tmpInterval = Interval(newInterval.right, interval.right)
+                tmpInterval Interval(newInterval.right, interval.right)
                 __ tmpInterval.left < tmpInterval.right:
                     res.a..(tmpInterval)
             ____ newInterval.left >_ interval.left:
-                tmpInterval = Interval(interval.left, newInterval.left)
+                tmpInterval Interval(interval.left, newInterval.left)
                 __ tmpInterval.left < tmpInterval.right:
                     res.a..(tmpInterval)
-        intervals = res
+        intervals res
 
 __ _____ __ _____
 #     rangeModule = RangeModule()
@@ -236,7 +236,7 @@ __ _____ __ _____
 #     print(rangeModule.removeRange(15,45))
 #     print(rangeModule.queryRange(10,48))
 
-    rangeModule = RangeModule()
+    rangeModule RangeModule()
     print(rangeModule.addRange(55,62
     print(rangeModule.addRange(1,29
     print(rangeModule.removeRange(18,49

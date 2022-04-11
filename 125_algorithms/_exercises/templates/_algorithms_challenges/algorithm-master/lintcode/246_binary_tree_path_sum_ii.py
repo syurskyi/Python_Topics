@@ -24,7 +24,7 @@ c_ Solution:
 
         p...a..(node.val)
 
-        remaining = target
+        remaining target
         ___ i __ r..(l..(p..) - 1, -1, -1
             remaining -_ p..[i]
             __ remaining __ 0:

@@ -37,7 +37,7 @@ c_ Solution(o..
         ____
             cand.a..(root.val)
             __ root.left __ N.. a.. root.right __ N..
-                p = '->'.j.. m..(s.., cand
+                p '->'.j.. m..(s.., cand
                 res.a..(p)
             binary_tree_paths(root.left, cand, res)
             binary_tree_paths(root.right, cand, res)

@@ -6,7 +6,7 @@ _______ roman_numerals
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
 c_ RomanTest(unittest.TestCase
-    numerals = {
+    numerals {
         1: 'I',
         2: 'II',
         3: 'III',

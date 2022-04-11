@@ -26,10 +26,10 @@ S doesn't contain \ or "
 
 c_ Solution:
     ___ reverseOnlyLetters  S: s..) __ s..:
-        lst = l..(S)
-        i = 0
-        n = l..(lst)
-        j = n - 1
+        lst l..(S)
+        i 0
+        n l..(lst)
+        j n - 1
         w... T...
             w.... i < n a.. n.. lst[i].i..
                 i += 1
@@ -37,7 +37,7 @@ c_ Solution:
                 j -_ 1
 
             __ i < j a.. i < n a.. j >_ 0:
-                lst[i], lst[j] = lst[j], lst[i]
+                lst[i], lst[j] lst[j], lst[i]
                 i += 1
                 j -_ 1
             ____

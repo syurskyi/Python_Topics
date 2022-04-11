@@ -9,9 +9,9 @@ c_ Solution:
         __ n.. S:
             r.. [[]]
         ____
-            res = [[]]
+            res [[]]
             ___ i, e __ e..(S
-                rest_subsets = subsets_aux(S[i + 1:])
+                rest_subsets subsets_aux(S[i + 1:])
                 ___ subset __ rest_subsets:
                     subset.insert(0, e)
                 res += rest_subsets

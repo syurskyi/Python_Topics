@@ -10,13 +10,13 @@ ___ get_missing_dates(dates
 
        See the Bite description and tests for example outputs.
     """
-    first, last = m..(dates), m..(dates)
-    diff = (last - first).days
+    first, last m..(dates), m..(dates)
+    diff (last - first).days
 
-    missing = l..()
+    missing l..()
 
     ___ k __ r..(1, diff + 1
-        chk_date = first + t..(d.._k)
+        chk_date first + t..(d.._k)
 
         __ chk_date n.. __ dates:
             missing.a..(chk_date)

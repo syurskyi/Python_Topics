@@ -60,16 +60,16 @@ c_ Solution:
 
         O(365)
         """
-        F = [f__("inf") ___ _ __ r..(366 + 30)]
+        F [f__("inf") ___ _ __ r..(366 + 30)]
         ___ i __ r..(366, 366 + 30
-            F[i] = 0
+            F[i] 0
 
-        days_set = s..(days)
+        days_set s..(days)
         ___ i __ r..(365, 0, -1
             __ i n.. __ days_set:
-                F[i] = F[i+1]
+                F[i] F[i+1]
             ____
-                F[i] = m..(
+                F[i] m..(
                     c + F[i+d]
                     ___ d, c __ z..([1, 7, 30], costs)
                 )
@@ -84,18 +84,18 @@ c_ Solution:
         Iterate throughout the year is more elegant
         Need buffer day
         """
-        n = l..(days)
-        F = [f__("inf") ___ _ __ r..(n)]
-        F[-1] = costs[0]
+        n l..(days)
+        F [f__("inf") ___ _ __ r..(n)]
+        F[-1] costs[0]
         ___ i __ r..(n-2, -1, -1
             ___ j __ r..(i+1, n
-                delta = days[j] - days[i]
+                delta days[j] - days[i]
                 __ delta <_ 1:
-                    F[i] = m..(F[i], costs[0] + F[j])
+                    F[i] m..(F[i], costs[0] + F[j])
                 __ delta <_ 7:
-                    F[i] = m..(F[i], costs[1] + F[j])
+                    F[i] m..(F[i], costs[1] + F[j])
                 __ delta <_ 30:
-                    F[i] = m..(F[i], costs[2] + F[j])
+                    F[i] m..(F[i], costs[2] + F[j])
                 ____
                     _____
         r.. F[0]
@@ -110,15 +110,15 @@ c_ Solution:
         Why does iterate forward fail? Because future min does not depends on the
         current min. Current higher cost may contribtue to future lower cost.
         """
-        F = [f__("inf") ___ _ __ r..(365 + 1)]
-        F[0] = 0
-        days_set = s..(days)
+        F [f__("inf") ___ _ __ r..(365 + 1)]
+        F[0] 0
+        days_set s..(days)
         ___ i __ r..(1, 366
             __ i n.. __ days_set:
-                F[i] = F[i-1]
+                F[i] F[i-1]
             ____
                 # iterate forward does not work
-                F[i] = m..(F[i], F[i-1] + costs[0])
+                F[i] m..(F[i], F[i-1] + costs[0])
 
 
 __ _______ __ _______

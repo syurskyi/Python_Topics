@@ -28,11 +28,11 @@ c_ Solution:
         Patience sort
         LIS dp with binary search
         """
-        F = [f__('inf') ___ _ __ r..(3)]
+        F [f__('inf') ___ _ __ r..(3)]
         ___ n __ nums:
-            i = bisect_left(F, n)
+            i bisect_left(F, n)
             __ i >_ 2:
                 r.. T..
-            F[i] = n
+            F[i] n
 
         r.. F..

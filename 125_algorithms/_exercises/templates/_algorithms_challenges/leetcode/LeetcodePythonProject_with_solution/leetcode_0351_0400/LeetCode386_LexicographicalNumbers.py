@@ -7,7 +7,7 @@ Created on Apr 2, 2017
 c_ Solution(o..
     ___ lexicalOrder  n
         res    # list
-        curr = 1
+        curr 1
         ___ _ __ r..(n
             res.a..(curr)
             __ curr*10 <_ n:
@@ -17,16 +17,16 @@ c_ Solution(o..
             ____
                 w.... (curr//10)%10 __ 9:
                     curr //= 10
-                curr = curr//10+1
+                curr curr//10+1
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             113,
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = lexicalOrder(n)
+            result lexicalOrder(n)
             print('result: %s' % result)
             print('-='*20+'-')
 

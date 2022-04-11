@@ -1,7 +1,7 @@
 _______ pytz
 
-MEETING_HOURS = r..(6, 23)  # meet from 6 - 22 max
-TIMEZONES = s..(pytz.all_timezones)
+MEETING_HOURS r..(6, 23)  # meet from 6 - 22 max
+TIMEZONES s..(pytz.all_timezones)
 
 
 ___ within_schedule(utc, *timezones
@@ -9,5 +9,5 @@ ___ within_schedule(utc, *timezones
        they are all within schedule (MEETING_HOURS)"""
     __ n.. a..(tz __ TIMEZONES ___ tz __ timezones
         r.. V...('Time zone name error')
-    utc = pytz.utc.localize(utc)
+    utc pytz.utc.localize(utc)
     r.. a..(utc.astimezone(pytz.timezone(tz.hour __ MEETING_HOURS ___ tz __ timezones)

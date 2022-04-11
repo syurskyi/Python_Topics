@@ -6,9 +6,9 @@ Created on May 30, 2018
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution(o..
     ___ zigzagLevelOrder  root
@@ -18,10 +18,10 @@ c_ Solution(o..
         """
         res    # list
         __ n.. root: r.. res
-        queue, nextQueue, elem = [root], [], []
-        order = T..
+        queue, nextQueue, elem [root], [], []
+        order T..
         w.... queue:
-            node = queue.p.. 0)
+            node queue.p.. 0)
             elem.a..(node.val)
             __ node.left:
                 nextQueue.a..(node.left)
@@ -33,7 +33,7 @@ c_ Solution(o..
                 ____
                     res.a..(elem)
                 elem    # list
-                queue = nextQueue
+                queue nextQueue
                 nextQueue    # list
-                order = n.. order
+                order n.. order
         r.. res

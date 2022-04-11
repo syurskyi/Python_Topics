@@ -8,19 +8,19 @@ c_ Solution:
         __ s __ N.. o. t __ N..
             r.. 0
 
-        m, n = l..(s), l..(t)
+        m, n l..(s), l..(t)
 
         """
         `dp[i][j]` means the minimum operations to convert
         the substr end at `A[i - 1]` to
         the substr end at `B[j - 1]`
         """
-        dp = [[0] * (n + 1) ___ _ __ r..(m + 1)]
+        dp [[0] * (n + 1) ___ _ __ r..(m + 1)]
 
         ___ i __ r..(1, m + 1
-            dp[i][0] = i
+            dp[i][0] i
         ___ j __ r..(1, n + 1
-            dp[0][j] = j
+            dp[0][j] j
 
         ___ i __ r..(1, m + 1
             ___ j __ r..(1, n + 1
@@ -30,7 +30,7 @@ c_ Solution:
                 case 1: no need to do any operations
                 """
                 __ s[i - 1] __ t[j - 1]:
-                    dp[i][j] = dp[i - 1][j - 1]
+                    dp[i][j] dp[i - 1][j - 1]
                     _____
 
                 """
@@ -38,7 +38,7 @@ c_ Solution:
                 case 3: add `B[j - 1]` to the end of A
                 case 4: replace laster char in A
                 """
-                dp[i][j] = 1 + m..(
+                dp[i][j] 1 + m..(
                     dp[i - 1][j],
                     dp[i][j - 1],
                     dp[i - 1][j - 1]

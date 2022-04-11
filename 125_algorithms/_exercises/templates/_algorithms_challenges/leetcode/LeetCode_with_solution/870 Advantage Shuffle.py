@@ -39,27 +39,27 @@ c_ Solution:
         Keep a reverse index mapping is not enough, since duplicate in B
         then keep a list
         """
-        idxes = d..(l..)
+        idxes d..(l..)
         ___ i, b __ e..(B
             idxes[b].a..(i)
 
-        n = l..(A)
+        n l..(A)
         A.s..()
         B.s..()
-        ret = [N.. ___ _ __ r..(n)]
+        ret [N.. ___ _ __ r..(n)]
         not_used    # list
-        j = 0
+        j 0
         ___ a __ A:
             __ a > B[j]:
-                i = idxes[B[j]].p.. )
-                ret[i] = a
+                i idxes[B[j]].p.. )
+                ret[i] a
                 j += 1
             ____
                 not_used.a..(a)
 
         ___ i __ r..(n
             __ ret[i] __ N..
-                ret[i] = not_used.p.. )
+                ret[i] not_used.p.. )
 
         r.. ret
 

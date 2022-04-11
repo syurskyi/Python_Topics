@@ -1,25 +1,25 @@
 ____ t___ _______ L..
 
-OCR_INPUT = [
+OCR_INPUT [
     ' _     _  _     _  _  _  _  _ ',
     '| |  | _| _||_||_ |_   ||_||_|',
     '|_|  ||_  _|  | _||_|  ||_| _|',
     '                              ',
 ]
-OCR_WIDTH = 3
-OCR_HEIGHT = 4
+OCR_WIDTH 3
+OCR_HEIGHT 4
 
 
 ___ split_ocr_numbers(ocr_numbers: L..[s..]) __ L..[L..[s..]]:
     ocrs_split    # list
-    len_line = l..(ocr_numbers[0])
+    len_line l..(ocr_numbers[0])
     ___ start __ r..(0, len_line, OCR_WIDTH
         ocrs_split.a..(
             [line[start:start+OCR_WIDTH] ___ line __ ocr_numbers]
         )
     r.. ocrs_split
 
-OCR_NUMBERS = split_ocr_numbers(OCR_INPUT)
+OCR_NUMBERS split_ocr_numbers(OCR_INPUT)
 
 
 ___ split_ocr_lines(ocr_numbers: L..[s..]) __ L..[L..[s..]]:
@@ -30,12 +30,12 @@ ___ split_ocr_lines(ocr_numbers: L..[s..]) __ L..[L..[s..]]:
 
 
 ___ validate_ocr_numbers(ocr_numbers: L..[s..]
-    n_first_line = l..(ocr_numbers[0])
+    n_first_line l..(ocr_numbers[0])
     __ n_first_line % OCR_WIDTH:
-        message = s..(n_first_line) + ' is not a multiple of ' + s..(OCR_WIDTH)
+        message s..(n_first_line) + ' is not a multiple of ' + s..(OCR_WIDTH)
         r.. V...(message)
     __ l..(ocr_numbers) % OCR_HEIGHT:
-        message = 'numbers of rows is not a multiple of ' + s..(OCR_HEIGHT)
+        message 'numbers of rows is not a multiple of ' + s..(OCR_HEIGHT)
         r.. V...(message)
     __ any(l..(line) != n_first_line ___ line __ ocr_numbers[1:]
         r.. V...('All lines must have the same length.')
@@ -47,8 +47,8 @@ ___ validate_numbers(numbers: s..
 
 
 ___ _convert_ocr_line(ocr_numbers: L..[s..]) __ s..:
-    ocrs_split = split_ocr_numbers(ocr_numbers)
-    numbers = [
+    ocrs_split split_ocr_numbers(ocr_numbers)
+    numbers [
         s..(OCR_NUMBERS.i.. ocr __ ocr __ OCR_NUMBERS ____ '?'
         ___ ocr __ ocrs_split
     ]
@@ -64,7 +64,7 @@ ___ number(ocr_numbers: L..[s..]) __ s..:
 
 ___ grid(numbers: s..) __ L..[s..]:
     validate_numbers(numbers)
-    ocr_numbers_split = [
+    ocr_numbers_split [
         OCR_NUMBERS[i..(number)] ___ number __ numbers
     ]
     r.. [
@@ -72,7 +72,7 @@ ___ grid(numbers: s..) __ L..[s..]:
     ]
 
 
-multiline_ocr = [
+multiline_ocr [
                 " _     _ ",
                 " _|  ||_|",
                 " _|  ||_|",

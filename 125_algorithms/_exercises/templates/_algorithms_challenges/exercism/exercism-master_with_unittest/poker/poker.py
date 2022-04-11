@@ -1,17 +1,17 @@
-STRAIGHT_FLUSH = 800
-FOUR_OF_A_KIND = 700
-FULL_HOUSE = 600
-FLUSH = 500
-STRAIGHT = 400
-THREE_OF_A_KIND = 300
-TWO_PAIR = 200
-ONE_PAIR = 100
-HIGH_CARD = 0
+STRAIGHT_FLUSH 800
+FOUR_OF_A_KIND 700
+FULL_HOUSE 600
+FLUSH 500
+STRAIGHT 400
+THREE_OF_A_KIND 300
+TWO_PAIR 200
+ONE_PAIR 100
+HIGH_CARD 0
 
 
 c_ Poker:
     ___ - , hands
-        hands = [Hand(hand) ___ hand __ hands]
+        hands [Hand(hand) ___ hand __ hands]
 
     ___ best_hand
         r.. [hand.hand ___ hand, score __ l..(
@@ -26,10 +26,10 @@ c_ Poker:
 
 c_ Hand:
     ___ - , hand
-        hand = hand
-        cards = [Card(card) ___ card __ hand]
-        ranks = [card.rank ___ card __ cards]
-        suits = [card.suit ___ card __ cards]
+        hand hand
+        cards [Card(card) ___ card __ hand]
+        ranks [card.rank ___ card __ cards]
+        suits [card.suit ___ card __ cards]
 
     ___ score
         __ straight_flush
@@ -87,15 +87,15 @@ c_ Hand:
 
 
 c_ Card:
-    FACE_CARDS = {"T": 10,
+    FACE_CARDS {"T": 10,
                   "J": 11,
                   "Q": 12,
                   "K": 13,
                   "A": 14}
 
     ___ - , inp
-        rank = numberify_face_cards(inp[0])
-        suit = inp[1]
+        rank numberify_face_cards(inp[0])
+        suit inp[1]
 
     ___ -s
         r.. s..(rank) + suit

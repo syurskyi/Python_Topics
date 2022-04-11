@@ -1,7 +1,7 @@
 c_ SgfTree(o..
     ___ - , properties=N.., children_ N..
-        properties = properties o. {}
-        children = children o. []
+        properties properties o. {}
+        children children o. []
 
     ___ -e  other
         __ n.. isi..(other, SgfTree

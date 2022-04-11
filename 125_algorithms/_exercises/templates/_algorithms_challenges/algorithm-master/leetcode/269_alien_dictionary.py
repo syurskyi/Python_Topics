@@ -8,8 +8,8 @@ c_ Solution:
             r.. ''
 
         ans    # list
-        gotcha = s..()
-        max_size = m..(l..(word) ___ word __ words)
+        gotcha s..()
+        max_size m..(l..(word) ___ word __ words)
 
         ___ j __ r..(max_size
             ___ word __ words:
@@ -39,22 +39,22 @@ c_ Solution:
 
         ___ w __ words:
             ___ c __ w:
-                indeg[c] = 0
+                indeg[c] 0
 
         ___ i __ r..(l..(words) - 1
-            cur = words[i]
-            nxt = words[i + 1]
+            cur words[i]
+            nxt words[i + 1]
             ___ j __ r..(m..(l..(cur), l..(nxt))):
                 __ cur[j] __ nxt[j]:
                     _____
                 __ cur[j] n.. __ edges:
-                    edges[cur[j]] = s..()
+                    edges[cur[j]] s..()
                 __ nxt[j] n.. __ edges[cur[j]]:
                     edges[cur[j]].add(nxt[j])
-                    indeg[nxt[j]] = indeg.g.. nxt[j], 0) + 1
+                    indeg[nxt[j]] indeg.g.. nxt[j], 0) + 1
                 _____
 
-        queue = [c ___ c, deg __ indeg.i.. __ deg __ 0]
+        queue [c ___ c, deg __ indeg.i.. __ deg __ 0]
         ___ c __ queue:
             ans.a..(c)
             __ c n.. __ edges:

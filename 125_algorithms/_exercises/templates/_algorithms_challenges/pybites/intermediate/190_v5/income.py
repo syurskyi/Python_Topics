@@ -5,7 +5,7 @@ _______ ___.e__.E__ __ ET
 
 # import the countries xml file
 tmp  P..('/tmp')
-countries = tmp / 'countries.xml'
+countries tmp / 'countries.xml'
 
 __ n.. countries.exists
     u..('https://bit.ly/2IzGKav', countries)
@@ -19,12 +19,12 @@ ___ get_income_distribution(___=countries
       - keys = incomes (wb:incomeLevel)
       - values = list of country names (wb:name)
     """
-    tree = ET.p..(___)
-    root = tree.getroot()
-    namespaces = {__: 'http://www.worldbank.org'}
+    tree ET.p..(___)
+    root tree.getroot()
+    namespaces {__: 'http://www.worldbank.org'}
 
-    xpath = f".//wb:country"
-    country_list = d..(l..)
+    xpath f".//wb:country"
+    country_list d..(l..)
     ___ x __ root.f..(xpath, namespaces
         country_list[x.find('wb:incomeLevel', namespaces).text].a..(x.find('wb:name', namespaces).text)
 

@@ -1,4 +1,4 @@
-parts = [('lay in', 'the house that Jack built'),
+parts [('lay in', 'the house that Jack built'),
          ('ate', 'the malt'),
          ('killed', 'the rat'),
          ('worried', 'the cat'),

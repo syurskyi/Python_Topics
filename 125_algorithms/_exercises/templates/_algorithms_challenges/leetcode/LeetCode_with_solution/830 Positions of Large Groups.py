@@ -36,15 +36,15 @@ ____ t___ _______ L..
 
 c_ Solution:
     ___ largeGroupPositions  S: s..) __ L..[L..[i..]]:
-        i = 0
-        j = 0
+        i 0
+        j 0
         ret    # list
-        n = l..(S)
+        n l..(S)
         w.... j < n:
             w.... j < n a.. S[i] __ S[j]:
                 j += 1
             __ j - i >_ 3:
                 ret.a..([i, j - 1])
-            i = j
+            i j
 
         r.. ret

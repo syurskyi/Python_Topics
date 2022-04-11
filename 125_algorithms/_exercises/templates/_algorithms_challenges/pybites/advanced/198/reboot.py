@@ -1,6 +1,6 @@
 _______ d__ __ td
 ____ dateutil.parser _______ p..
-MAC1 = """
+MAC1 """
 reboot    ~                         Wed Apr 10 22:39
 reboot    ~                         Wed Mar 27 16:24
 reboot    ~                         Wed Mar 27 15:01
@@ -26,23 +26,23 @@ ___ calc_max_uptime(reboots
     """
 
 
-    lines = reboots.s..
+    lines reboots.s..
 
     
-    previous_date = N..
-    max_date = N..
-    max_diff = f__("-inf")
+    previous_date N..
+    max_date N..
+    max_diff f__("-inf")
     ___ line __ lines:
         __ line:
-            _,date = line.s..('~')
-            date = p..(date)
+            _,date line.s..('~')
+            date p..(date)
             __ previous_date:
-                days = (previous_date - date).days
+                days (previous_date - date).days
                 __ days > max_diff:
-                    max_diff = days
-                    max_date = previous_date 
+                    max_diff days
+                    max_date previous_date
 
-            previous_date = date
+            previous_date date
 
     
 

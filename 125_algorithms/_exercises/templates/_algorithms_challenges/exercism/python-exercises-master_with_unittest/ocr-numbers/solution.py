@@ -1,5 +1,5 @@
-ROW = 4
-COL = 3
+ROW 4
+COL 3
 
 
 ___ split_ocr(ocr
@@ -12,16 +12,16 @@ ALL =  '    _  _     _  _  _  _  _  _ ',
        '  ||_  _|  | _||_|  ||_| _||_|',
        '                              '
 
-OCR_LIST = split_ocr(ALL)
-OCR_LIST = [OCR_LIST[-1]] + OCR_LIST[:9]
+OCR_LIST split_ocr(ALL)
+OCR_LIST [OCR_LIST[-1]] + OCR_LIST[:9]
 
 
 ___ number(ocr
     __ (l..(ocr) != ROW o. l..(ocr[0]) % COL o.
             any(l..(r) != l..(ocr[0]) ___ r __ ocr:
         r.. V...('Wrong grid size.')
-    numbers = split_ocr(ocr)
-    d.. = ''
+    numbers split_ocr(ocr)
+    d.. ''
     ___ n __ numbers:
         ___
             d.. += s..(OCR_LIST.i.. n
@@ -36,7 +36,7 @@ ___ grid(d..
             r.. V...('String should be numeric.')
     ______ AttributeError:
         r.. V...('Argument should be a string.')
-    ocr = ['' ___ i __ r..(ROW)]
+    ocr ['' ___ i __ r..(ROW)]
     ___ d __ d..:
         ___ r __ r..(ROW
             ocr[r] += OCR_LIST[i..(d)][r]

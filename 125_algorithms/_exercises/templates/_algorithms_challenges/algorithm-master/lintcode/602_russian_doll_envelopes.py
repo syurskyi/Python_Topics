@@ -17,11 +17,11 @@ c_ Solution:
 
         E.s..(key=l.... e: (e[0], -e[1]
 
-        dp = [0] * l..(E)
-        size = 0
+        dp [0] * l..(E)
+        size 0
         ___ _, h __ E:
-            i = bisect_left(dp, h, 0, size)
-            dp[i] = h
+            i bisect_left(dp, h, 0, size)
+            dp[i] h
             __ i __ size:
                 size += 1
 
@@ -37,17 +37,17 @@ c_ Solution:
     @return: the maximum number of envelopes
     """
     ___ maxEnvelopes  E
-        ans = 0
+        ans 0
         __ n.. E:
             r.. ans
 
-        n = l..(E)
+        n l..(E)
 
         """
         `dp[i]` means the maximum number of envelopes
         if the `i`th envelope is outermost
         """
-        dp = [1] * n
+        dp [1] * n
 
         E.s..()
 
@@ -55,8 +55,8 @@ c_ Solution:
             ___ j __ r..(i
                 __ (E[j][0] < E[i][0] a.. E[j][1] < E[i][1] a..
                     dp[j] + 1 > dp[i]
-                    dp[i] = dp[j] + 1
+                    dp[i] dp[j] + 1
                 __ dp[i] > ans:
-                    ans = dp[i]
+                    ans dp[i]
 
         r.. ans

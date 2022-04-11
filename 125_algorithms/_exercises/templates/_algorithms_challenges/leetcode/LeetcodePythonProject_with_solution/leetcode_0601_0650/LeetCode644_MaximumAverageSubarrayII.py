@@ -11,21 +11,21 @@ c_ Solution(o..
         :rtype: float
         """
         _______ c..
-        n = l..(nums)
-        dp = [0]
+        n l..(nums)
+        dp [0]
         ___ num __ nums:
             dp.a..(dp[-1] + num)
         ___ d(x, y
             r.. (dp[y+1]-dp[x])/f__(y+1-x)
-        hull = c...d..()
-        ans = f__('-inf')
+        hull c...d..()
+        ans f__('-inf')
         ___ j __ r..(k-1, n
             w.... l..(hull) >_ 2 a.. d(hull[-2], hull[-1]-1) >_ d(hull[-2], j-k
                 hull.p.. )
             hull.a..(j-k+1)
             w.... l..(hull) >_ 2 a.. d(hull[0], hull[1]-1) <_ d(hull[0], j
                 hull.popleft()
-            ans = m..(ans, d(hull[0], j
+            ans m..(ans, d(hull[0], j
         r.. ans
     
     ___ findMaxAverage_binarySearch  nums, k
@@ -34,18 +34,18 @@ c_ Solution(o..
         :type k: int
         :rtype: float
         """
-        l, r = -f__(2**31), f__(2**31)
+        l, r -f__(2**31), f__(2**31)
         w.... r-l > 10**-5:
-            mid = (l+r)/2.0
+            mid (l+r)/2.0
             __ check(nums, k, mid
-                l = mid
+                l mid
             ____
-                r = mid
+                r mid
         r.. r
     
     ___ check  nums, k, val
-        now, last = 0, 0
-        dp = [num-val ___ num __ nums]
+        now, last 0, 0
+        dp [num-val ___ num __ nums]
         ___ i __ r..(k
             now += dp[i]
         __ now > 0:
@@ -55,13 +55,13 @@ c_ Solution(o..
             last += dp[i-k]
             __ last < 0:
                 now -_ last
-                last = 0
+                last 0
             __ now > 0:
                 r.. T..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1, 12, -5, -6, 50, 3],
                 4,
@@ -74,9 +74,9 @@ c_ Solution(o..
         ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
-            result = findMaxAverage_binarySearch(nums, k)
+            result findMaxAverage_binarySearch(nums, k)
             print('binary search result: %s' % result)
-            result = findMaxAverage(nums, k)
+            result findMaxAverage(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

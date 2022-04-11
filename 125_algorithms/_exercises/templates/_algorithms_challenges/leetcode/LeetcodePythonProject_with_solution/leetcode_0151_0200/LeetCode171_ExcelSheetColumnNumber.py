@@ -10,15 +10,15 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        result = 0
+        result 0
         ___ c __ s:
-            result = result*26
-            num = o..(c)-o..('A')+1
+            result result*26
+            num o..(c)-o..('A')+1
             result += num
         r.. result
     
     ___ test
-        testCases = [
+        testCases [
             'A',
             'B',
             'Z',
@@ -27,7 +27,7 @@ c_ Solution(o..
         ]
         ___ s __ testCases:
             print('s: %s' % (s
-            result = titleToNumber(s)
+            result titleToNumber(s)
             print('result: %s' % (result
             print('-='*20+'-')
 

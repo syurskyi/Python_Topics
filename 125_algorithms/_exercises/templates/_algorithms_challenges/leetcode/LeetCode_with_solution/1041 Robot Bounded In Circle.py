@@ -40,7 +40,7 @@ Note:
 instructions[i] is in {'G', 'L', 'R'}
 """
 
-dirs = [(-1, 0), (0, 1), (1, 0), (0, -1)]
+dirs [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
 
 c_ Solution:
@@ -56,17 +56,17 @@ c_ Solution:
 
         After 4 cycles, check whether the robot is at (0, 0)
         """
-        x, y = 0, 0
-        i = 0
+        x, y 0, 0
+        i 0
         ___ _ __ r..(4
             ___ cmd __ instructions:
                 __ cmd __ "G":
-                    dx, dy = dirs[i]
+                    dx, dy dirs[i]
                     x += dx
                     y += dy
                 ____ cmd __ "L":
-                    i = (i - 1) % 4
+                    i (i - 1) % 4
                 ____
-                    i = (i + 1) % 4
+                    i (i + 1) % 4
                     
         r.. x __ 0 a.. y __ 0

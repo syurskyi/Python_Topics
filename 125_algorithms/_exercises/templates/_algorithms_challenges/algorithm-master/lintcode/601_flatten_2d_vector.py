@@ -8,17 +8,17 @@ while i.hasNext(): v.append(i.next())
 c_ Vector2D:
     # @param vec2d {List[List[int]]}
     ___ - , vec2d
-        g = vec2d
-        x = 0
-        y = 0
+        g vec2d
+        x 0
+        y 0
 
     # @return {int} a next element
     ___ next
         __ n.. hasNext
             r.. -1
 
-        x = x
-        y = y
+        x x
+        y y
 
         y += 1
 
@@ -32,6 +32,6 @@ c_ Vector2D:
                 r.. T..
 
             x += 1
-            y = 0
+            y 0
 
         r.. F..

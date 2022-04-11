@@ -1,6 +1,6 @@
 ____ fathers_day _______ get_father_days, generate_father_day_planning
 
-CALENDAR_OUTPUT = """February 23
+CALENDAR_OUTPUT """February 23
 - Russia
 
 March 19
@@ -61,9 +61,9 @@ November 8
 
 
 ___ test_get_father_days_default
-    father_days = get_father_days()
+    father_days get_father_days()
     ... l..(father_days) __ 12
-    number_countries = s..(l..(val) ___ val __ father_days.values
+    number_countries s..(l..(val) ___ val __ father_days.values
     ... number_countries __ 35
     ... father_days 'June 14'  __  'U.S.', 'Canada', 'U.K.'
     ... father_days 'March 19'  __ [
@@ -76,13 +76,13 @@ ___ test_get_father_days_default
 
 
 ___ test_get_father_days_other_years
-    father_days = get_father_days y.._2021)
+    father_days get_father_days y.._2021)
     # changing dates
     ... father_days 'June 20'  __  'U.S.', 'Canada', 'U.K.'
     ... father_days 'August 8'  __  'Samoa', 'Brazil'
     ... father_days 'May 13'  __  'Germany'
     ... father_days 'June 13'  __  'Austria', 'Belgium'
-    father_days = get_father_days y.._2022)
+    father_days get_father_days y.._2022)
     ... father_days 'May 26'  __  'Germany'
     ... father_days 'June 12'  __  'Austria', 'Belgium'
     # remains the same
@@ -93,5 +93,5 @@ ___ test_get_father_days_other_years
 
 ___ test_generate_father_day_planning(capfd
     generate_father_day_planning()
-    a.. = ?.r .. 0]
+    a.. ?.r .. 0]
     ... a...s.. __ CALENDAR_OUTPUT

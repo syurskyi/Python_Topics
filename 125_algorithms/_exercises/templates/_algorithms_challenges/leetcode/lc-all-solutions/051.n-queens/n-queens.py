@@ -25,9 +25,9 @@ c_ Solution(o..
 
     ___ drawChess(p..
       ret    # list
-      chess = [["."] * l..(p..) ___ _ __ r..(l..(p..]
+      chess [["."] * l..(p..) ___ _ __ r..(l..(p..]
       ___ i __ r..(0, l..(p..:
-        chess[i][p..[i]] = "Q"
+        chess[i][p..[i]] "Q"
       ___ chs __ chess:
         ret.a..("".j..(chs
       r.. ret

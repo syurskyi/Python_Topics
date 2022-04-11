@@ -12,8 +12,8 @@ ___ common_words(sentence1: L..[s..], sentence2: L..[s..]) __ L..[s..]:
             If there are duplicate words in the results, just choose one word. 
             Returned words should be sorted by word's length.
     """
-    s1 = [word.l.. ___ word __ sentence1]
-    s2 = [word.l.. ___ word __ sentence2]
+    s1 [word.l.. ___ word __ sentence1]
+    s2 [word.l.. ___ word __ sentence2]
     r.. s..(s..(s1).i.. s2), key=l..)
 
 

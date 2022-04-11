@@ -47,17 +47,17 @@ c_ Solution:
         :type p: str
         :rtype: int
         """
-        counter = {
+        counter {
             c: 1
             ___ c __ p
         }
-        l = 1
+        l 1
         ___ i __ r..(1, l..(p:
             __ (o..(p[i]) - o..(p[i-1] % 26 __ 1:  # (0 - 25) % 26 == 1
                 l += 1
             ____
-                l = 1
-            counter[p[i]] = m..(counter[p[i]], l)
+                l 1
+            counter[p[i]] m..(counter[p[i]], l)
 
         r.. s..(counter.values
 
@@ -72,16 +72,16 @@ c_ Solution:
         __ n.. p:
             r.. 0
 
-        ret = s..()
-        i = 0
+        ret s..()
+        i 0
         w.... i < l..(p
-            cur = [p[i]]
-            j = i + 1
+            cur [p[i]]
+            j i + 1
             w.... j < l..(p) a.. (o..(p[j]) - o..(cur[-1]) __ 1 o. p[j] __ "a" a.. cur[-1] __ "z"
                 cur.a..(p[j])
                 j += 1
             ret.add("".j..(cur
-            i = j
+            i j
 
         r.. s.. m..(l.... x: (l..(x) + 1) * l..(x) // 2, ret
 

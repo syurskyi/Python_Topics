@@ -17,11 +17,11 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        n = l..(s)
-        i = n - 1
+        n l..(s)
+        i n - 1
         w.... i >_ 0 a.. s[i].isspace
             i -_ 1
-        res = 0
+        res 0
         w.... i >_ 0 a.. n.. s[i].isspace
             res += 1
             i -_ 1

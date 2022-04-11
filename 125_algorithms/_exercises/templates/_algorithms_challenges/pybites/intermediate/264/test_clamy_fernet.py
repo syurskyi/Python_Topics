@@ -6,20 +6,20 @@ _______ p__
 
 ____ clamy_fernet _______ PBKDF2HMAC, ByteString, ClamyFernet, Fernet
 
-KEYS = (
+KEYS (
     b"rvxePMSDUcZFowEaNxnFb8Pifn1KmhkF70Mz1ZQe2Bw=",
     b"2gODW4C4Lc7H9bjuuhPyn48HkVHriqa96P8lmstABo8=",
     b"mAbAfF5CW3EGlngOEEroDqtxlxVlJILzoUE4TJScMIw=",
 )
-MESSAGE = "This is my secret message"
-TMP_FILE = NamedTemporaryFile(delete=F..)
-FILE = TMP_FILE.name
+MESSAGE "This is my secret message"
+TMP_FILE NamedTemporaryFile(delete=F..)
+FILE TMP_FILE.name
 
 
 ?p__.f..(scope="function")
 ___ rcf
-    password = b"#clamybite"
-    key = c..(KEYS)
+    password b"#clamybite"
+    key c..(KEYS)
     r.. ClamyFernet(password, key)
 
 
@@ -29,15 +29,15 @@ ___ cf
 
 
 ___ test_clamyfernet_no_args(rcf
-    tmp_cf = ClamyFernet()
+    tmp_cf ClamyFernet()
     ... tmp_cf.key __ n.. N..
     ... tmp_cf.password __ b"pybites"
 
 
 ___ test_clamyfernet_random_key(rcf
-    token = rcf.encrypt("secret msg")
-    ts = rcf.clf.extract_timestamp(token)
-    dt = d__.fromtimestamp(ts)
+    token rcf.encrypt("secret msg")
+    ts rcf.clf.extract_timestamp(token)
+    dt d__.fromtimestamp(ts)
     ... isi..(rcf, ClamyFernet)
     ... isi..(rcf.clf, Fernet)
     ... isi..(rcf.key, ByteString)
@@ -46,8 +46,8 @@ ___ test_clamyfernet_random_key(rcf
 
 
 ___ test_clamyfernet(cf
-    token = cf.encrypt(MESSAGE)
-    og_message = cf.decrypt(token)
+    token cf.encrypt(MESSAGE)
+    og_message cf.decrypt(token)
     ... l..(token) __ 120
     ... isi..(token, bytes)
     ... cf.key __ KEYS[0]
@@ -55,8 +55,8 @@ ___ test_clamyfernet(cf
 
 
 ___ test_clamyfernet_random(rcf
-    token = rcf.encrypt(MESSAGE)
-    og_message = rcf.decrypt(token)
+    token rcf.encrypt(MESSAGE)
+    og_message rcf.decrypt(token)
     ... l..(token) __ 120
     ... isi..(token, bytes)
     ... rcf.key __ KEYS

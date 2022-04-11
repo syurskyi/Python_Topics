@@ -18,12 +18,12 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        n = l..(nums)
-        i = 0
+        n l..(nums)
+        i 0
         w.... i < n:
-            j = nums[i]
+            j nums[i]
             __ nums[i] != i a.. j < n:
-                nums[i], nums[j] = nums[j], nums[i]
+                nums[i], nums[j] nums[j], nums[i]
             ____
                 i += 1
         ___ i, e __ e..(nums
@@ -33,11 +33,11 @@ c_ Solution(o..
             r.. n
 
 
-a0 = [0]
-a1 = [0, 1, 3]
-a2 = [3, 0, 1]
-a3 = [3, 5, 1, 2, 0]
-s = Solution()
+a0 [0]
+a1 [0, 1, 3]
+a2 [3, 0, 1]
+a3 [3, 5, 1, 2, 0]
+s Solution()
 print(s.missingNumber(a0
 print(s.missingNumber(a1
 print(s.missingNumber(a2

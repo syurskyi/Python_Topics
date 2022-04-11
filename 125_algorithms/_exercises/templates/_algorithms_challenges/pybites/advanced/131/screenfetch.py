@@ -1,5 +1,5 @@
 _______ __
-output = """
+output """
                                        mohh@SERENiTY
  MMMMMMMMMMMMMMMMMMMMMMMMMmds+.        OS: Mint 19 tara
  MMm----::-://////////////oymNMd+'     Kernel: x86_64 Linux 4.15.0-34-generic
@@ -26,19 +26,19 @@ ___ sysinfo_scrape ?
 
     mapping    # dict
     
-    lines = output.s..
+    lines output.s..
 
-    name = __.s..(r'\S+$',lines[1]).group()
+    name __.s..(r'\S+$',lines[1]).group()
     mapping 'Name'  = name
     ___ i __ r..(2,l..(lines:
-        line = lines[i]
+        line lines[i]
 
-        result = __.s..(r'(\S+\s{0,1}\S+):(?!.*:)\s(.+)$',line)
+        result __.s..(r'(\S+\s{0,1}\S+):(?!.*:)\s(.+)$',line)
 
         __ result:
-            key = result.group(1)
-            value = result.group(2)
-            mapping[key] = value
+            key result.group(1)
+            value result.group(2)
+            mapping[key] value
 
 
 

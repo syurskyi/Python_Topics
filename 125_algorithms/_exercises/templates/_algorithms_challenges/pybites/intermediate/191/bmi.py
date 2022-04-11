@@ -1,4 +1,4 @@
-data = """Luke Skywalker,172,77
+data """Luke Skywalker,172,77
           C-3PO,167,75
           R2-D2,96,32
           Darth Vader,202,136
@@ -25,14 +25,14 @@ ___ person_max_bmi(data=data
     """Return (name, BMI float) of the character in data that
        has the highest BMI (rounded on 2 decimals)"""
     bmi    # dict
-    data_list = data.s..("\n")
+    data_list data.s..("\n")
 
     ___ row __ data_list:
-       current = row.s...s..(",")
+       current row.s...s..(",")
        __ l..(current) > 1:
-         bmi[current[0]] = f__(current[2]) / ((i..(? 1  / 100) ** 2
+         bmi[current[0]] f__(current[2]) / ((i..(? 1  / 100) ** 2
 
-    name_max_bmi = m..(bmi, key = bmi.get)
+    name_max_bmi m..(bmi, key bmi.get)
     r.. (name_max_bmi, r..(bmi[name_max_bmi], 2
 
 # if __name__ == "__main__":

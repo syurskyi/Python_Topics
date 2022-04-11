@@ -6,7 +6,7 @@
 _______ heapq
 
 # overwrite the comparison function, so the node can be comparable
-ListNode.__lt__ = l.... x, y: (x.val < y.val)
+ListNode.__lt__ l.... x, y: (x.val < y.val)
 
 c_ Solution(o..
   ___ mergeKLists  lists
@@ -15,18 +15,18 @@ c_ Solution(o..
     :rtype: ListNode
     """
     heap    # list
-    p = dummy = ListNode(-1)
+    p dummy ListNode(-1)
     ___ i __ r..(0, l..(lists:
-      node = lists[i]
+      node lists[i]
       __ n.. node:
         _____
       heapq.heappush(heap, node)
 
     w.... heap:
-      value, node = heapq.heappop(heap)
-      p.next = node
-      p = p.next
+      value, node heapq.heappop(heap)
+      p.next node
+      p p.next
       __ node.next:
-        node = node.next
+        node node.next
         heapq.heappush(heap, node)
     r.. dummy.next

@@ -4,9 +4,9 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: int
     """
-    ans = 0
-    d = c...C..(nums)
+    ans 0
+    d c...C..(nums)
     ___ num __ nums:
       __ num + 1 __ d:
-        ans = m..(ans, d[num] + d[num + 1])
+        ans m..(ans, d[num] + d[num + 1])
     r.. ans

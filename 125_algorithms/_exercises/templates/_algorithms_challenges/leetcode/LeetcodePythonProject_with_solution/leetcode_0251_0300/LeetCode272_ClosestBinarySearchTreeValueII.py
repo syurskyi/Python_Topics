@@ -7,9 +7,9 @@ Created on Mar 5, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ closestKValues  root, target, k
@@ -51,10 +51,10 @@ c_ Solution(o..
         inOrderRev(root.left, target, stack)
     
     ___ test
-        root = TreeNode(10, TreeNode(5, TreeNode(1), TreeNode(7, TreeNode(15, TreeNode(13), TreeNode(20)))
-        target = 13.5
-        k = 5
-        result = closestKValues(root, target, k)
+        root TreeNode(10, TreeNode(5, TreeNode(1), TreeNode(7, TreeNode(15, TreeNode(13), TreeNode(20)))
+        target 13.5
+        k 5
+        result closestKValues(root, target, k)
         print('result: %s' % (result
         print('-='*30+'-')
 

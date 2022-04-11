@@ -6,9 +6,9 @@ Created on Mar 14, 2017
 
 c_ Solution(o..
     ___ longestValidParentheses  s
-        left = -1
+        left -1
         stack    # list
-        res = 0
+        res 0
         ___ i, c __ e..(s
             __ c __ '(':
                 stack.a..(i)
@@ -16,22 +16,22 @@ c_ Solution(o..
                 __ stack:
                     stack.p.. )
                     __ stack:
-                        res = m..(res, i-stack[-1])
+                        res m..(res, i-stack[-1])
                     ____
-                        res = m..(res, i-left)
+                        res m..(res, i-left)
                 ____
-                    left = i
+                    left i
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             '()',
             '(()',
             ')()())',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = longestValidParentheses(s)
+            result longestValidParentheses(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -15,7 +15,7 @@ ____ workouts _______ get_workout_motd
     ('Sunday', 'Chill out!'),
 ])
 ___ test_get_workout_valid_case_insensitive_dict_lookups(arg, e..
-    mixed_case = arg |3.l.. + arg[3:].u..
+    mixed_case arg |3.l.. + arg[3:].u..
     ___ day __ (arg, arg.u.., arg.l.., mixed_case
         ... get_workout_motd(day) __ e..
 

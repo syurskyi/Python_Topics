@@ -8,7 +8,7 @@ c_ Solution:
         __ n.. K o. n.. P:
             r.. 0
 
-        n = l..(P)
+        n l..(P)
 
         """
         if `K >= n`, this problem is just
@@ -16,7 +16,7 @@ c_ Solution:
         so we dont need to use `dp`, since it lead to overflow
         """
         __ K >_ n:
-            profit = 0
+            profit 0
             ___ i __ r..(1, n
                 __ P[i] > P[i - 1]:
                     profit += P[i] - P[i - 1]
@@ -26,17 +26,17 @@ c_ Solution:
         the main concept is in
         `./lintcode/151_best_time_to_buy_and_sell_stock_iii.py`
         """
-        STAGE = 2 * K + 1
-        dp = [[0] * STAGE ___ _ __ r..(2)]
+        STAGE 2 * K + 1
+        dp [[0] * STAGE ___ _ __ r..(2)]
 
-        i = j = prev = curr = profit = 0
+        i j prev curr profit 0
         ___ i __ r..(1, n
-            prev = curr
-            curr = 1 - prev
-            profit = P[i] - P[i - 1]
+            prev curr
+            curr 1 - prev
+            profit P[i] - P[i - 1]
             ___ j __ r..(1, STAGE, 2
-                dp[curr][j] = m..(dp[prev][j] + profit, dp[prev][j - 1])
+                dp[curr][j] m..(dp[prev][j] + profit, dp[prev][j - 1])
             ___ j __ r..(2, STAGE, 2
-                dp[curr][j] = m..(dp[prev][j], dp[prev][j - 1] + profit)
+                dp[curr][j] m..(dp[prev][j], dp[prev][j - 1] + profit)
 
         r.. m..(dp[curr])

@@ -20,13 +20,13 @@ c_ Solution:
         __ s __ t:
             r.. 0
 
-        degree = {s: 0}
-        queue = [s]
+        degree {s: 0}
+        queue [s]
         ___ node __ queue:
             ___ _node __ node.neighbors:
                 __ _node __ degree:
                     _____
-                degree[_node] = degree[node] + 1
+                degree[_node] degree[node] + 1
                 __ _node __ t:
                     r.. degree[_node]
                 queue.a..(_node)

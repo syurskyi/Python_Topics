@@ -24,13 +24,13 @@ nums = [
 Return 4
 The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
     ___ -
-        cache = N..
-        dirs = ((-1, 0), (1, 0), (0, -1), (0, 1),)
+        cache N..
+        dirs ((-1, 0), (1, 0), (0, -1), (0, 1),)
 
     ___ longestIncreasingPath  matrix
         """
@@ -40,12 +40,12 @@ c_ Solution(o..
         """
         __ n.. matrix: r.. 0
 
-        m, n = l..(matrix), l..(matrix[0])
-        cache = [[N.. ___ _ __ x..(n)] ___ _ __ x..(m)]
-        gmax = 1
+        m, n l..(matrix), l..(matrix[0])
+        cache [[N.. ___ _ __ x..(n)] ___ _ __ x..(m)]
+        gmax 1
         ___ i __ x..(m
             ___ j __ x..(n
-                gmax = m..(gmax, longest(matrix, i, j
+                gmax m..(gmax, longest(matrix, i, j
 
         r.. gmax
 
@@ -54,14 +54,14 @@ c_ Solution(o..
         Strictly increasing, thus no need to have a visited matrix
         """
         __ n.. cache[i][j]:
-            m, n = l..(matrix), l..(matrix[0])
-            maxa = 1
+            m, n l..(matrix), l..(matrix[0])
+            maxa 1
             ___ d __ dirs:
-                I, J = i + d[0], j + d[1]
+                I, J i + d[0], j + d[1]
                 __ 0 <_ I < m a.. 0 <_ J < n a.. matrix[I][J] > matrix[i][j]:
-                    maxa = m..(maxa, 1 + longest(matrix, I, J
+                    maxa m..(maxa, 1 + longest(matrix, I, J
 
-            cache[i][j] = maxa
+            cache[i][j] maxa
 
         r.. cache[i][j]
 

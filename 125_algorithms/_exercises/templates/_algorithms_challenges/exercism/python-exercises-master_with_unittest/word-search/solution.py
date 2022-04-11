@@ -3,8 +3,8 @@ _______ copy
 
 c_ Point(o..
     ___ - , x, y
-        x = x
-        y = y
+        x x
+        y y
 
     ___  -r
         r.. 'Point({}:{})'.f..(x, y)
@@ -22,15 +22,15 @@ c_ Point(o..
         r.. n.. (self __ other)
 
 
-DIRECTIONS = (Point(1, 0), Point(1, -1), Point(1, 1), Point(-1, -1),
+DIRECTIONS (Point(1, 0), Point(1, -1), Point(1, 1), Point(-1, -1),
               Point(0, -1), Point(0, 1), Point(-1, 1), Point(-1, 0
 
 
 c_ WordSearch(o..
     ___ - , puzzle
-        rows = puzzle.s..
-        width = l..(rows[0])
-        height = l..(rows)
+        rows puzzle.s..
+        width l..(rows[0])
+        height l..(rows)
 
     ___ find_char  coordinate
         __ coordinate.x < 0 o. coordinate.x >_ width:
@@ -40,7 +40,7 @@ c_ WordSearch(o..
         r.. rows[coordinate.y][coordinate.x]
 
     ___ find  word, position, direction
-        current = copy.copy(position)
+        current copy.copy(position)
         ___ letter __ word:
             __ find_char(current) != letter:
                 r..
@@ -48,11 +48,11 @@ c_ WordSearch(o..
         r.. position, current - direction
 
     ___ s..  word
-        positions = (Point(x, y)
+        positions (Point(x, y)
                      ___ x __ r..(width) ___ y __ r..(height
         ___ pos __ positions:
             ___ d __ DIRECTIONS:
-                result = find(word, pos, d)
+                result find(word, pos, d)
                 __ result:
                     r.. result
         r.. N..

@@ -6,10 +6,10 @@ c_ Solution(o..
     :rtype: int
     """
 
-    totalgas = 0
-    totalcost = 0
-    start = 0
-    balance = 0
+    totalgas 0
+    totalcost 0
+    start 0
+    balance 0
     ___ i __ r..(0, l..(gas:
       totalgas += gas[i]
       totalcost += cost[i]
@@ -17,8 +17,8 @@ c_ Solution(o..
     ___ i __ r..(0, l..(gas:
       balance += gas[i] - cost[i]
       __ balance < 0:
-        start = i + 1
-        balance = 0
+        start i + 1
+        balance 0
 
     __ totalcost <_ totalgas:
       r.. start

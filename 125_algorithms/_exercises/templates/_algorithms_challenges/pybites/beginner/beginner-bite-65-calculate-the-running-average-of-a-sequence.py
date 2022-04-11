@@ -11,7 +11,7 @@ Round the mean values to 2 decimals (4.33333 -> 4.33). See the tests for more in
 Bonus: use a function of itertools + make it a generator, but this is not required to get this working.
 '''
 
-l.. = [2, 6, 10, 8, 11, 10]
+l.. [2, 6, 10, 8, 11, 10]
 result    # list
 
 ___ running_mean(sequence
@@ -21,10 +21,10 @@ ___ running_mean(sequence
     returns a sequence of same length with the averages.
     You can assume all items in sequence are numeric.
     """
-    s.. = 0
+    s.. 0
     ___ item __ e..(l.., start=1
         s.. += item[1]
-        mean = s.. / item[0]
+        mean s.. / item[0]
         result.a..(r..(mean,2
 
     ___ i __ result:

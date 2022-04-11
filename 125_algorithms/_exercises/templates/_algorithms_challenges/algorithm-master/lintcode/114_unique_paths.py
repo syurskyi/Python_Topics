@@ -5,10 +5,10 @@ c_ Solution:
         :type n: int
         :rtype: int
         """
-        dp = [[1] * n ___ _ __ r..(m)]
+        dp [[1] * n ___ _ __ r..(m)]
 
         ___ x __ r..(1, m
             ___ y __ r..(1, n
-                dp[x][y] = dp[x - 1][y] + dp[x][y - 1]
+                dp[x][y] dp[x - 1][y] + dp[x][y - 1]
 
         r.. dp[m - 1][n - 1]

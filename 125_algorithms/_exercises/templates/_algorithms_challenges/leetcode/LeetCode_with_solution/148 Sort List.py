@@ -1,12 +1,12 @@
 """
 Sort a linked list in O(n log n) time using constant space complexity.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
     ___  -r
         r.. r.. (val)
@@ -21,17 +21,17 @@ c_ Solution:
         __ head__N..
             r.. N..
         lst    # list # must be constant space
-        current = head
+        current head
         w....(current
             lst.a..(current)
-            current = current.next
+            current current.next
 
 
-        comparator = l.... x, y: cmp(x.val, y.val)
-        lst = s..(lst, comparator)  # return # sorted is not side-effect # O(n log n)
+        comparator l.... x, y: cmp(x.val, y.val)
+        lst s..(lst, comparator)  # return # sorted is not side-effect # O(n log n)
         ___ i __ r..(l..(lst)-1
-            lst[i].next = lst[i+1]
-        lst[-1].next = N..
+            lst[i].next lst[i+1]
+        lst[-1].next N..
         r.. lst[0]
 
     ___ sortList  head
@@ -46,38 +46,38 @@ c_ Solution:
         __ n.. head o. n.. head.next:
             r.. head
 
-        dummy = ListNode(0)
-        dummy.next = head
+        dummy ListNode(0)
+        dummy.next head
 
-        slow_pre = dummy
-        fast_pre = dummy
+        slow_pre dummy
+        fast_pre dummy
         w.... fast_pre.next a.. fast_pre.next.next:
-            fast_pre = fast_pre.next.next
-            slow_pre = slow_pre.next
+            fast_pre fast_pre.next.next
+            slow_pre slow_pre.next
 
-        mid_head = slow_pre.next
-        dummy_mid = ListNode(0)
+        mid_head slow_pre.next
+        dummy_mid ListNode(0)
 
         # sort sub-problem
-        slow_pre.next = N..  # break
-        head = sortList(head)
-        mid_head = sortList(mid_head)
+        slow_pre.next N..  # break
+        head sortList(head)
+        mid_head sortList(mid_head)
 
         # then merge
-        dummy.next = head
-        dummy_mid.next = mid_head
-        pre = dummy
-        pre_mid = dummy_mid
+        dummy.next head
+        dummy_mid.next mid_head
+        pre dummy
+        pre_mid dummy_mid
         w.... pre.next a.. pre_mid.next:
             __ pre.next.val > pre_mid.next.val:
-                pre.next, pre_mid.next.next, pre_mid.next = pre_mid.next, pre.next, pre_mid.next.next
-                pre = pre.next
+                pre.next, pre_mid.next.next, pre_mid.next pre_mid.next, pre.next, pre_mid.next.next
+                pre pre.next
             ____
-                pre = pre.next
+                pre pre.next
 
         # dangling
         __  pre_mid.next:
-            pre.next = pre_mid.next
+            pre.next pre_mid.next
 
         r.. dummy.next
 
@@ -85,14 +85,14 @@ c_ Solution:
 
 
 __ _____ __ ____
-    length = 5
-    lst = [ListNode(length-i) ___ i __ r..(length)]
+    length 5
+    lst [ListNode(length-i) ___ i __ r..(length)]
     ___ i __ r..(length-1
-        lst[i].next = lst[i+1]
+        lst[i].next lst[i+1]
 
-    head = Solution().sortList(lst[0])
+    head Solution().sortList(lst[0])
 
-    cur = head
+    cur head
     w....(cur
         print cur.val
-        cur = cur.next
+        cur cur.next

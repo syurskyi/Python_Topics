@@ -6,7 +6,7 @@ ugly since it includes another prime factor 7.
 
 Note that 1 is typically treated as an ugly number.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -22,9 +22,9 @@ c_ Solution(o..
         __ num __ 1:
             r.. T..
 
-        ugly = {2, 3, 5}
+        ugly {2, 3, 5}
 
-        prime = 2
+        prime 2
         w.... prime*prime <_ num a.. num > 1:
             __ num % prime != 0:
                 prime += 1

@@ -13,8 +13,8 @@ c_ Solution(o..
         """
         _______ heapq
         h    # list
-        res = i = 0
-        cur = startFuel
+        res i 0
+        cur startFuel
         w.... cur < target:
             w.... i < l..(stations) a.. stations[i][0] <_ cur:
                 heapq.heappush(h, -stations[i][1])

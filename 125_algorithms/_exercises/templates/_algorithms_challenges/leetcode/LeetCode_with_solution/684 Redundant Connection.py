@@ -44,26 +44,26 @@ c_ DisjointSet
 
     ___ add  x
         __ x n.. __ pi:  # need to check, otherwise override wrongly
-            sz[x] = 1
-            pi[x] = x
+            sz[x] 1
+            pi[x] x
 
     ___ unionize  x, y
-        p1 = root(x)
-        p2 = root(y)
+        p1 root(x)
+        p2 root(y)
         __ p1 != p2:
-            sz1 = sz[p1]
-            sz2 = sz[p2]
+            sz1 sz[p1]
+            sz2 sz[p2]
             __ sz1 > sz2:
-                p1, p2 = p2, p1
+                p1, p2 p2, p1
 
-            pi[p1] = p2
+            pi[p1] p2
             sz[p2] += sz[p1]
             del sz[p1]
 
     ___ root  x
-        p = pi[x]
+        p pi[x]
         __ p != x:
-            pi[x] = root(p)
+            pi[x] root(p)
 
         r.. pi[x]
 
@@ -79,7 +79,7 @@ c_ Solution:
         """
         Union-find
         """
-        ds = DisjointSet()
+        ds DisjointSet()
         ___ p, q __ edges:
             ds.add(p)
             ds.add(q)
@@ -97,15 +97,15 @@ c_ Solution_dfs:
         Find circle through dfs: O(|V|)
         Notice: need to extract the circle from the cyclic path
         """
-        G = d..(s..)
+        G d..(s..)
         ___ p, q __ edges:
             G[p].add(q)
             G[q].add(p)
 
-        visited = s..()
+        visited s..()
         ___ k __ G.k..:
             __ k n.. __ visited:
-                circle = dfs(G, k, N.., s..([k]), [k], visited)
+                circle dfs(G, k, N.., s..([k]), [k], visited)
                 __ circle:
                     ___ p, q __ r..(edges
                         __ p __ circle a.. q __ circle:
@@ -120,18 +120,18 @@ c_ Solution_dfs:
             __ nbr != pi:
                 __ nbr __ p..:
                     # extract the circle from path
-                    circle = s..()
-                    in_circle = F..
+                    circle s..()
+                    in_circle F..
                     ___ e __ path_list:
                         __ e __ nbr:
-                            in_circle = T..
+                            in_circle T..
                         __ in_circle:
                             circle.add(e)
                     r.. circle
 
                 p...add(nbr)
                 path_list.a..(nbr)
-                circle = dfs(G, nbr, cur, p.., path_list, visited)
+                circle dfs(G, nbr, cur, p.., path_list, visited)
                 __ circle:
                     r.. circle
                 p...remove(nbr)

@@ -4,7 +4,7 @@ c_ Solution(o..
     :type path: str
     :rtype: str
     """
-    p.. = p...s..("/")
+    p.. p...s..("/")
     stack    # list
     ___ p __ p..:
       __ p __ ["", "."]:

@@ -6,9 +6,9 @@ Created on Aug 29, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ findTilt  root
@@ -16,7 +16,7 @@ c_ Solution(o..
         :type root: TreeNode
         :rtype: int
         """
-        res = [0]
+        res [0]
         helper(root, res)
         r.. res[0]
     
@@ -24,24 +24,24 @@ c_ Solution(o..
         __ n.. root: r..
         helper(root.left, res)
         helper(root.right, res)
-        leftSum = getSum(root.left)
-        rightSum = getSum(root.right)
+        leftSum getSum(root.left)
+        rightSum getSum(root.right)
         res[0] += a..(leftSum-rightSum)
     
     ___ getSum  root
         __ n.. root: r.. 0
-        res = root.val
+        res root.val
         res += getSum(root.left)
         res += getSum(root.right)
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             TreeNode(1, TreeNode(2), TreeNode(3,
             TreeNode(1, TreeNode(2, TreeNode(4, TreeNode(3, TreeNode(5))),
         ]
         ___ root __ testCases:
-            result = findTilt(root)
+            result findTilt(root)
             print('result: %s' % result)
             print('-='*30+'-')
 

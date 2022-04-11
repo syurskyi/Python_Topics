@@ -12,38 +12,38 @@ return [1,2,3].
 
 Note: Recursive solution is trivial, could you do it iteratively? - see preTraverse_itr
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 # Definition for a  binary tree node
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution(o..
     ___ preorderTraversal  root
         """Morris"""
         ret    # list
-        cur = root
+        cur root
         w.... cur:
             __ n.. cur.left:
                 ret.a..(cur.val)
-                cur = cur.right
+                cur cur.right
             ____
-                pre = cur.left
+                pre cur.left
                 w.... pre.right a.. pre.right != cur:
-                    pre = pre.right
+                    pre pre.right
 
                 __ n.. pre.right:
-                    pre.right = cur
+                    pre.right cur
                     ret.a..(cur.val)
-                    cur = cur.left
+                    cur cur.left
                 ____
-                    pre.right = N..
-                    cur = cur.right
+                    pre.right N..
+                    cur cur.right
 
         r.. ret
 
@@ -79,9 +79,9 @@ c_ Solution(o..
         """
         __ n.. root:
             r..
-        stk = [root]
+        stk [root]
         w.... stk:
-            node = stk.p.. )
+            node stk.p.. )
             lst.a..(node.val)
             __ node.right:  # right first
                 stk.a..(node.right)
@@ -92,6 +92,6 @@ c_ Solution(o..
 
 
 __ _____ __ ____
-    t1 = TreeNode(1)
-    t1.left = TreeNode(2)
+    t1 TreeNode(1)
+    t1.left TreeNode(2)
     print Solution().preorderTraversal(t1)

@@ -14,7 +14,7 @@ By the way, you can submit ideas/needs/wishes for Bites here. Cheers!
 
 See you in the next Bite and keep calm and code in Python!
 """
-words = "Let's see how4 this 1sorts, hope it works 4 this B1te 22 55abc abc55".s.. 
+words "Let's see how4 this 1sorts, hope it works 4 this B1te 22 55abc abc55".s..
 
 ___ sort_words_case_insensitively(words
     """Sort the provided word list ignoring case, and numbers last
@@ -28,11 +28,11 @@ ___ sort_words_case_insensitively(words
     ___ word __ words:
         __ word[0].i..
             nums.a..(word)
-    nums = s..(nums)
+    nums s..(nums)
     ___ num __ nums:
         words.remove(num)
 
-    s = s..(words, key=l.... s: s.c..
+    s s..(words, key=l.... s: s.c..
     print(s)
     print(nums)
     ___ num __ nums:

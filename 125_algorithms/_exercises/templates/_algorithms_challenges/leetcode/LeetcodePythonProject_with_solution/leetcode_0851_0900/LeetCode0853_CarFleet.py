@@ -11,16 +11,16 @@ c_ Solution(o..
         :type speed: List[int]
         :rtype: int
         """
-        t__ = [f__(target-p)/s ___ p, s __ s..(z..(position, speed]
-        res = cur = 0
+        t__ [f__(target-p)/s ___ p, s __ s..(z..(position, speed]
+        res cur 0
         ___ t __ t__ ||-1
             __ t > cur:
                 res += 1
-                cur = t
+                cur t
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 12,
                 [10, 8, 0, 5, 3],
@@ -28,7 +28,7 @@ c_ Solution(o..
             ],
         ]
         ___ target, position, speed __ testCases:
-            res = carFleet(target, position, speed)
+            res carFleet(target, position, speed)
             print('res: %s' % res)
             print('-='*30+'-')
 

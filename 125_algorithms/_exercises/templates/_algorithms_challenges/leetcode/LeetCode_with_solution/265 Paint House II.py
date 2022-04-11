@@ -3,7 +3,7 @@ Premium Question
 """
 _______ ___
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -19,12 +19,12 @@ c_ Solution(o..
         __ n.. costs:
             r.. 0
 
-        n = l..(costs)
-        m = l..(costs[0])
-        F = [[0 ___ _ __ x..(m)] ___ _ __ x..(n+1)]
+        n l..(costs)
+        m l..(costs[0])
+        F [[0 ___ _ __ x..(m)] ___ _ __ x..(n+1)]
         ___ i __ x..(1, n+1
             ___ k1 __ x..(m
-                F[i][k1] = m..(
+                F[i][k1] m..(
                     F[i-1][k0]+costs[i-1][k1]
                     # if i == 1 or k1 != k0 else sys.maxint  # another syntax 
                     ___ k0 __ x..(m)

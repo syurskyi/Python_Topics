@@ -28,41 +28,41 @@ c_ Solution:
         make +, - lower precedence operator as a unary operation
         recursively handle bracket
         """
-        s = s + "\0"  # signal the end
-        ret, _ = eval(s, 0, [])
+        s s + "\0"  # signal the end
+        ret, _ eval(s, 0, [])
         r.. ret
 
     ___ eval  s, i, stk
         """
         return the cursor since the cursor advances in recursion
         """
-        operand = 0
-        prev_op = "+"
+        operand 0
+        prev_op "+"
         w.... i < l..(s
-            c = s[i]
+            c s[i]
             __ c __ " ":
                 p..  # not continue since need trigger i += 1
             ____ c.i..
-                operand = operand * 10 + i..(c)
+                operand operand * 10 + i..(c)
             ____ c __ ("+", "-", "*", "/", ")", "\0"   # delimiter
                 __ prev_op __ "+":
                     stk.a..(operand)
                 ____ prev_op __ "-":
                     stk.a..(-operand)
                 ____ prev_op __ "*":
-                    prev_operand = stk.p.. )
+                    prev_operand stk.p.. )
                     stk.a..(prev_operand * operand)
                 ____ prev_op __ "/":
-                    prev_operand = stk.p.. )
+                    prev_operand stk.p.. )
                     stk.a..(i..(prev_operand / operand
 
                 __ c __ ("+", "-", "*", "/"
-                    operand = 0
-                    prev_op = c
+                    operand 0
+                    prev_op c
                 ____ c __ (")", "\0"
                     r.. s..(stk), i
             ____ c __ "(":  # "(" is not delimiter
-                operand, i = eval(s, i + 1, [])
+                operand, i eval(s, i + 1, [])
             ____
                 r..
 

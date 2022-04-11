@@ -7,16 +7,16 @@ c_ Solution(o..
     :type s: str
     :rtype: str
     """
-    vowels = s..(["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"])
-    s = l..(s)
-    start, end = 0, l..(s) - 1
+    vowels s..(["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"])
+    s l..(s)
+    start, end 0, l..(s) - 1
     w.... start < end:
       __ s[start] n.. __ vowels:
         start += 1
       ____ s[end] n.. __ vowels:
         end -_ 1
       ____
-        s[start], s[end] = s[end], s[start]
+        s[start], s[end] s[end], s[start]
         start += 1
         end -_ 1
     r.. "".j..(s)

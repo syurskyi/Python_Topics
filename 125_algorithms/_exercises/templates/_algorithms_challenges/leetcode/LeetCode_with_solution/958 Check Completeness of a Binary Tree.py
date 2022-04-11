@@ -24,15 +24,15 @@ Explanation: The node with value 7 isn't as far left as possible.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ -
-        max_depth = -f__("inf")
-        expecting_partial = F..
+        max_depth -f__("inf")
+        expecting_partial F..
 
     ___ isCompleteTree  root: TreeNode) __ b..:
         """
@@ -47,7 +47,7 @@ c_ Solution:
         __ n.. node:
             # empty node (below leaf) is the key decision point
             __ max_depth __ -f__("inf"  # leftmost empty node
-                max_depth = d - 1
+                max_depth d - 1
                 r.. T..
             ____ expecting_partial:
                 r.. d __ max_depth
@@ -55,7 +55,7 @@ c_ Solution:
                 __ d __ max_depth + 1:
                     r.. T..
                 __ d __ max_depth:
-                    expecting_partial = T..
+                    expecting_partial T..
                     r.. T..
                 r.. F..
 

@@ -40,18 +40,18 @@ c_ Solution:
         prev = previous value
         prev_cnt = previous value count
         """
-        q = d..()
-        counter = C..(A)
-        prev = 0
-        prev_cnt = 0
+        q d..()
+        counter C..(A)
+        prev 0
+        prev_cnt 0
         ___ k __ s..(counter  # sorted by key
             __ prev_cnt > counter[k] o. prev_cnt > 0 a.. k > prev + 1:
                 r.. F..
                 
             q.a..(counter[k] - prev_cnt)
-            prev, prev_cnt = k, counter[k]
+            prev, prev_cnt k, counter[k]
             __ l..(q) __ W:
-                c = q.popleft()
+                c q.popleft()
                 prev_cnt -_ c
 
         r.. prev_cnt __ 0
@@ -71,13 +71,13 @@ c_ Solution:
         h    # list  # tuple of (-3, [1, 2, 3])
         ___ a __ A:
             __ n.. h:
-                h = [(a, [a])]
+                h [(a, [a])]
                 _____
 
             __ a __ h[0][1][-1]:
                 heapq.heappush(h, (a, [a]
             ____ a __ h[0][1][-1] + 1:
-                _, lst = heapq.heappop(h)
+                _, lst heapq.heappop(h)
                 lst.a..(a)
                 __ l..(lst) < W:
                     heapq.heappush(h, (a, lst

@@ -25,16 +25,16 @@ c_ Handshake:
         r.. code_for_handshake(handshake)
 
     ___ code_for_handshake  handshake
-        code = unreversed_code(handshake)
+        code unreversed_code(handshake)
         __ EVENTS.i.. handshake[0]) > EVENTS.i.. handshake[-1]
             # Prepend code with 1 or add 'reverse' bit
-            code = setBit(code, 4)
+            code setBit(code, 4)
         r.. '{0:b}'.f..(code)
 
     ___ unreversed_code  handshake
-        curr = 0
+        curr 0
         ___ event __ handshake:
-            curr = setBit(curr, EVENTS.i.. event
+            curr setBit(curr, EVENTS.i.. event
         r.. curr
 
     ___ valid_inp  inp
@@ -56,12 +56,12 @@ c_ Handshake:
 
     $
     ___ testBit(int_type, offset
-        mask = 1 << offset
+        mask 1 << offset
         r.. (int_type & mask) > 0
 
     $
     ___ setBit(int_type, offset
-        mask = 1 << offset
+        mask 1 << offset
         r.. (int_type | mask)
 
     $

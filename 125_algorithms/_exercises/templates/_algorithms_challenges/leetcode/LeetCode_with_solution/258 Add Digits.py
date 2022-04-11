@@ -8,7 +8,7 @@ Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one
 Follow up:
 Could you do it without any loop/recursion in O(1) runtime?
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -25,7 +25,7 @@ c_ Solution:
         :type num:
         :rtype: int
         """
-        digit = num % 9
+        digit num % 9
         __ digit __ 0 a.. num != 0:
             r.. 9
         ____

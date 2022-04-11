@@ -9,9 +9,9 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: List[int]
         """
-        hashset = s..()
-        n = l..(nums)
-        sumVal = n*(n+1)//2
+        hashset s..()
+        n l..(nums)
+        sumVal n*(n+1)//2
         res    # list
         ___ num __ nums:
             __ num n.. __ hashset:
@@ -23,12 +23,12 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [1, 2, 2, 4],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = findErrorNums(nums)
+            result findErrorNums(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -22,34 +22,34 @@ c_ Solution(o..
         r.. helper(nums, mem)
     
     ___ helper  nums, mem
-        s = s..(nums)
+        s s..(nums)
         __ s __ mem:
             r.. mem[s]
         __ calc(nums) __ 0:
-            mem[s] = T..
+            mem[s] T..
             r.. T..
-        flag = F..
+        flag F..
         ___ i __ r..(l..(nums:
             __ n.. helper(nums[:i]+nums[i+1:], mem
-                flag = T..
+                flag T..
                 _____
-        mem[s] = flag
+        mem[s] flag
         r.. flag
     
     ___ calc  nums
-        res = 0
+        res 0
         ___ num __ nums:
             res ^= num
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
 #             [1, 1, 2],
             [1, 1, 2, 3], # True
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = xorGame(nums)
+            result xorGame(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -4,13 +4,13 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: int
     """
-    d = {0: -1}
-    count = ans = 0
-    delta = {1: -1, 0: 1}
+    d {0: -1}
+    count ans 0
+    delta {1: -1, 0: 1}
     ___ i __ r..(l..(nums:
       count += delta.g.. nums[i], 0)
       __ count __ d:
-        ans = m..(ans, i - d[count])
+        ans m..(ans, i - d[count])
       ____
-        d[count] = i
+        d[count] i
     r.. ans

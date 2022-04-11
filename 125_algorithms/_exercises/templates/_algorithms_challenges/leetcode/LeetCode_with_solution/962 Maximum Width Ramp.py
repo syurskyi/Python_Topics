@@ -37,13 +37,13 @@ c_ Solution:
         Iterate the vlaues in increasing order, calcualte j - i
         Need to keep the smallest index
         """
-        ret = -f__("inf")
-        V = [(a, i) ___ i, a __ e..(A)]
+        ret -f__("inf")
+        V [(a, i) ___ i, a __ e..(A)]
         V.s..()
-        min_idx = f__("inf")
+        min_idx f__("inf")
         ___ _, i __ V:
             # V is sorted, guarantee a' > a
-            ret = m..(ret, i - min_idx)
-            min_idx = m..(min_idx, i)
+            ret m..(ret, i - min_idx)
+            min_idx m..(min_idx, i)
 
         r.. m..(ret, 0)

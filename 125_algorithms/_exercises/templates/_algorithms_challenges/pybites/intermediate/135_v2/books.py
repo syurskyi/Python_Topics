@@ -2,9 +2,9 @@ ____ c.. _______ n..
 ____ d__ _______ d__
 ____ o.. _______ attrgetter
 
-Book = n..('Book', 'title authors pages published')
+Book n..('Book', 'title authors pages published')
 
-books = [
+books [
     Book(title="Python Interviews",
          authors="Michael Driscoll",
          pages=366,

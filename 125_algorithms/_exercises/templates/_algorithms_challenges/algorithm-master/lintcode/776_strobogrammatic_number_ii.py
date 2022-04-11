@@ -4,7 +4,7 @@ c_ Solution:
         :type n: int
         :rtype: list[str]
         """
-        ans = ['']
+        ans ['']
 
         __ n.. n:
             r.. ans
@@ -25,7 +25,7 @@ c_ Solution:
                 queue.a..('6' + s + '9')
                 queue.a..('9' + s + '6')
 
-            ans = queue
+            ans queue
             n -_ 2
 
         r.. ans

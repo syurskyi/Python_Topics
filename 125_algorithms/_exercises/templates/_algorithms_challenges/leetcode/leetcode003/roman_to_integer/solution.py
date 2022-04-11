@@ -11,7 +11,7 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        roman = {
+        roman {
             'I': 1,
             'V': 5,
             'X': 10,
@@ -20,7 +20,7 @@ c_ Solution(o..
             'D': 500,
             'M': 1000,
         }
-        res = 0
+        res 0
         ___ i, c __ e..(s
             __ i < l..(s) - 1 a.. roman[c] < roman[s[i + 1]]:
                 res -_ roman[c]

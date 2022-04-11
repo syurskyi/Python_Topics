@@ -3,12 +3,12 @@ ____ t___ _______ L..
 
 ___ sum_indices(items: L..[s..]) __ i..:
     duplicate_lookup    # dict
-    running_total = 0
+    running_total 0
     ___ i __ r..(l..(items:
-        item = items[i]
+        item items[i]
 
         __ item n.. __ duplicate_lookup:
-            duplicate_lookup[item] = [i]
+            duplicate_lookup[item] [i]
             running_total += i
         ____
             duplicate_lookup[item].a..(i)

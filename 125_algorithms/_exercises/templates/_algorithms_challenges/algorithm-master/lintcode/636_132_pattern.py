@@ -7,14 +7,14 @@ c_ Solution:
         __ n.. A:
             r.. F..
 
-        stack = [f__('-inf')]
+        stack [f__('-inf')]
         ___ i __ r..(l..(A) - 1, -1, -1
             __ A[i] < stack[-1]:
                 r.. T..
 
-            v = N..
+            v N..
             w.... stack a.. A[i] > stack[-1]:
-                v = stack.p.. )
+                v stack.p.. )
 
             stack.a..(A[i])
 

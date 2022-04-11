@@ -1,14 +1,14 @@
 _______ p.... __ pd
 
-data = "https://bites-data.s3.us-east-2.amazonaws.com/summer.csv"
+data "https://bites-data.s3.us-east-2.amazonaws.com/summer.csv"
 
 
-___ athletes_most_medals(data: s.. = data) __ ?.S..:
+___ athletes_most_medals(data: s.. data) __ ?.S..:
 
-    df = pd.read_csv(data)
+    df pd.read_csv(data)
 
     # get medal counts for each athlete
-    g = df.groupby( 'Athlete', 'Gender' ).agg({'Medal': 'count'}).reset_index()
+    g df.groupby( 'Athlete', 'Gender' ).agg({'Medal': 'count'}).reset_index()
 
     # now group by gender and locate the max medal count by group, then
     # drop Gender and squeeze into a series with index 'Athlete'

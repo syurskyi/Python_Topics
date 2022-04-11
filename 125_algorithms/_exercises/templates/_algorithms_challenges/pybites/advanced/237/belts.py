@@ -4,10 +4,10 @@ ____ p.. _______ P..
 _______ d__ __ dt
 ____ dateutil.parser _______ p..
 
-SCORES = [10, 50, 100, 175, 250, 400, 600, 800, 1000]
-BELTS = ('white yellow orange green blue brown black '
+SCORES [10, 50, 100, 175, 250, 400, 600, 800, 1000]
+BELTS ('white yellow orange green blue brown black '
          'paneled red').s..
-TMP = P..(__.g..("TMP", "/tmp"
+TMP P..(__.g..("TMP", "/tmp"
 
 
 ___ get_belts(data: s..) __ d..:
@@ -25,27 +25,27 @@ ___ get_belts(data: s..) __ d..:
        'yellow': 'January 25, 2018'
     """
     w__ o.. data _ __ f:
-        dates = j__.l.. f)
+        dates j__.l.. f)
 
     dates.s..(key=l.... x: p..(x 'date'
     
     
     belts    # dict
-    score_index = 0
-    score_marker = SCORES[score_index]
-    points = 0
+    score_index 0
+    score_marker SCORES[score_index]
+    points 0
     ___ date __ dates:
         points += date 'score'
         __ points >_ score_marker:
 
-            month,day,year = map(i..,date 'date' .s..('/'
-            date = dt.date(year,month,day)
-            date_string = date.s..('%B %d, %Y')
-            belts[BELTS[score_index]] = date_string
+            month,day,year map(i..,date 'date' .s..('/'
+            date dt.date(year,month,day)
+            date_string date.s..('%B %d, %Y')
+            belts[BELTS[score_index]] date_string
             score_index += 1
             __ score_index __ l..(SCORES
                 _____
-            score_marker = SCORES[score_index]
+            score_marker SCORES[score_index]
 
 
 

@@ -32,7 +32,7 @@ Example 3:
 "9,#,#,1"
 Return false
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -41,8 +41,8 @@ c_ Solution(o..
         :type preorder: str
         :rtype: bool
         """
-        stk = preorder.s..(',')
-        child_cnt = 0
+        stk preorder.s..(',')
+        child_cnt 0
         w.... stk:
             __ stk[-1] __ '#':
                 stk.p.. )
@@ -62,7 +62,7 @@ c_ Solution(o..
         :type preorder: str
         :rtype: bool
         """
-        stk = preorder.s..(',')
+        stk preorder.s..(',')
         child_stk    # list
         w.... stk:
             __ stk[-1] __ '#':

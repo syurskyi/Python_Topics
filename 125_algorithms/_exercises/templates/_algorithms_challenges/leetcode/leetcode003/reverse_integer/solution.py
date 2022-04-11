@@ -11,13 +11,13 @@ c_ Solution(o..
         :type x: int
         :rtype: int
         """
-        pos = T..
+        pos T..
         __ x < 0:
-            pos = F..
-            x = -x
-        t = 0
+            pos F..
+            x -x
+        t 0
         w.... x != 0:
-            t = t * 10 + x % 10
+            t t * 10 + x % 10
             x /= 10
         __ n.. pos:
             r.. -t

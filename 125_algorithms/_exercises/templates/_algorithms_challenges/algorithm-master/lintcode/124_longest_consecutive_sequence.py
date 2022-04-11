@@ -7,20 +7,20 @@ c_ Solution:
         :type nums: list[int]
         :rtype: int
         """
-        ans = 0
+        ans 0
 
         __ n.. nums:
             r.. ans
 
-        cands = s..(nums)  # dedup
+        cands s..(nums)  # dedup
 
         ___ a __ nums:
             __ a n.. __ cands:
                 _____
 
             cands.discard(a)
-            size = 1
-            b, c = a - 1, a + 1
+            size 1
+            b, c a - 1, a + 1
 
             w.... b __ cands:
                 cands.discard(b)
@@ -33,7 +33,7 @@ c_ Solution:
                 size += 1
 
             __ size > ans:
-                ans = size
+                ans size
 
         r.. ans
 
@@ -49,14 +49,14 @@ c_ Solution:
         :type nums: list[int]
         :rtype: int
         """
-        ans = 0
+        ans 0
 
         __ n.. nums:
             r.. ans
 
         nums.s..()
 
-        size = 1
+        size 1
 
         ___ i __ r..(1, l..(nums:
             __ nums[i] __ nums[i - 1]:
@@ -65,9 +65,9 @@ c_ Solution:
             __ nums[i] __ nums[i - 1] + 1:
                 size += 1
             ____
-                size = 1
+                size 1
 
             __ size > ans:
-                ans = size
+                ans size
 
         r.. ans __ ans > 0 ____ size

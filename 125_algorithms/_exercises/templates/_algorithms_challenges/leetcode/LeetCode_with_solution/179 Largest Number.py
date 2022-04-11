@@ -5,7 +5,7 @@ For example, given [3, 30, 34, 5, 9], the largest formed number is 9534330.
 
 Note: The result may be very large, so you need to return a string instead of an integer.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -19,12 +19,12 @@ c_ Solution:
         :type nums: list[int]
         :rtype: str
         """
-        nums = map(s.., nums)
+        nums map(s.., nums)
         nums.s..(cmp=cmp, r.._T..
-        nums = "".j..(nums)
-        nums = nums.l..("0")
+        nums "".j..(nums)
+        nums nums.l..("0")
         __ n.. nums:
-            nums = "0"
+            nums "0"
         r.. nums
 
     ___ cmp  a, b
@@ -33,10 +33,10 @@ c_ Solution:
         :type b: str
         :rtype: int
         """
-        order = 1
+        order 1
         __ l..(a) > l..(b
-            order = -1
-            a, b = b, a
+            order -1
+            a, b b, a
 
         ___ i __ x..(l..(a:
             __ i..(a[i]) != i..(b[i]

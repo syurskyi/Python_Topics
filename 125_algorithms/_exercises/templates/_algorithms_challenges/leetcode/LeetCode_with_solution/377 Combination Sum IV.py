@@ -24,7 +24,7 @@ What if negative numbers are allowed in the given array?
 How does it change the problem?
 What limitation we need to add to the question to allow negative numbers?
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -39,10 +39,10 @@ c_ Solution(o..
         :type target: int
         :rtype: int
         """
-        F = [0 ___ _ __ x..(target + 1)]
-        nums = f.. l.... x: x <_ target, nums)
+        F [0 ___ _ __ x..(target + 1)]
+        nums f.. l.... x: x <_ target, nums)
         ___ k __ nums:
-            F[k] = 1
+            F[k] 1
 
         ___ i __ x..(target + 1
             ___ k __ nums:

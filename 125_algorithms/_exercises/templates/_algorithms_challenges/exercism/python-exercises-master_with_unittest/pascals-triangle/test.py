@@ -22,15 +22,15 @@ c_ PascalsTriangleTest(unittest.TestCase
         assertFalse(is_triangle(inp
 
     ___ test_row1
-        ans = '1'
+        ans '1'
         assertEqual(row(0), ans)
 
     ___ test_row2
-        ans = '1 2 1'
+        ans '1 2 1'
         assertEqual(row(2), ans)
 
     ___ test_row3
-        ans = '1 7 21 35 35 21 7 1'
+        ans '1 7 21 35 35 21 7 1'
         assertEqual(row(7), ans)
 
 

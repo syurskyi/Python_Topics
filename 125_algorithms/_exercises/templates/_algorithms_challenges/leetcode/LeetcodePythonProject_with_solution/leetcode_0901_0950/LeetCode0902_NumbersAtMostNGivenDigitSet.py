@@ -5,9 +5,9 @@ c_ Solution(o..
         :type N: int
         :rtype: int
         """
-        s = s..(N)
-        k = l..(s)
-        dp = [0]*k + [1]
+        s s..(N)
+        k l..(s)
+        dp [0]*k + [1]
         ___ i __ r..(k-1, -1, -1
             ___ d __ D:
                 __ d < s[i]:
@@ -17,14 +17,14 @@ c_ Solution(o..
         r.. dp[0] + s..(l..(D)**i ___ i __ r..(1, k
 
     ___ test
-        testCases = [
+        testCases [
             # [["3","4","8"], 4],
             # [['7'], 8],
             # [["1","3","5","7"], 100],
             [["1","4","9"], 1000000000],
         ]
         ___ d, n __ testCases:
-            res = atMostNGivenDigitSet(d, n)
+            res atMostNGivenDigitSet(d, n)
             print('res: %s' % res)
             print('-='*30+'-')
 

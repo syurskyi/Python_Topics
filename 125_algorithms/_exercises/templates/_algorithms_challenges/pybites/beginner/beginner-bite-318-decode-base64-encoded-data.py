@@ -36,7 +36,7 @@ _______ base64
 _______ csv
 
 ___ encode
-    input = """first_name,last_name,credit_card
+    input """first_name,last_name,credit_card
 Keelby,MacCafferky,6393719433329924
 Linnell,Clemmett,3555584924093954
 Elysha,Meighan,6385795793897106
@@ -48,20 +48,20 @@ Ranna,Duff,3576393056493312
 Cinnamon,Kaasman,5442028150808570
 Jaclin,Tonge,3549852104724527"""
 
-    test = b'gowno w dupe'
+    test b'gowno w dupe'
     #result = bytes.decode(input,'ascii')
-    result = s...encode(input)
-    encoded = base64.b64encode(result)
+    result s...encode(input)
+    encoded base64.b64encode(result)
     print(encoded)
 
-    decoded = base64.b..(encoded)
+    decoded base64.b..(encoded)
     # print(decoded)???
     print(bytes.d.. decoded, 'ascii'
-    inp = bytes.d.. decoded, 'ascii')
+    inp bytes.d.. decoded, 'ascii')
     print(t..(inp
-    result = csv.reader(inp.s..
-    result = l..(result)
-    r = result[1:]
+    result csv.reader(inp.s..
+    result l..(result)
+    r result[1:]
     end    # list
     ___ e __ r:
         end.a..(e[2])

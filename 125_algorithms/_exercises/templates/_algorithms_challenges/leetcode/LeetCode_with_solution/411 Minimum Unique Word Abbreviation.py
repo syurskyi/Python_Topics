@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -11,10 +11,10 @@ c_ Solution(o..
         :type dictionary: List[str]
         :rtype: str
         """
-        ret = (target, l..(target
+        ret (target, l..(target
         ___ abbr, abbr_l __ dfs(target
             __ validate(dictionary, abbr) a.. ret[1] > abbr_l:
-                ret = (abbr, abbr_l)
+                ret (abbr, abbr_l)
 
         r.. ret[0]
 
@@ -29,12 +29,12 @@ c_ Solution(o..
 
         ret    # list
         ___ l __ x..(l..(word)+1
-            left_num = s..(l) __ l ____ ""
-            left_l = 1 __ left_num != "" ____ 0
+            left_num s..(l) __ l ____ ""
+            left_l 1 __ left_num != "" ____ 0
             left_l += 1 __ l < l..(word) ____ 0
 
             ___ right, right_l __ dfs(word[l+1:]
-                cur = left_num + word[l:l+1] + right  # word[l:l+1] possible ""
+                cur left_num + word[l:l+1] + right  # word[l:l+1] possible ""
                 ret.a..((cur, left_l + right_l
 
         r.. ret
@@ -53,14 +53,14 @@ c_ Solution(o..
         :type abbr: str
         :rtype: bool
         """
-        w = 0
-        a = 0
+        w 0
+        a 0
         w.... w < l..(word) a.. a < l..(abbr
             __ abbr[a].i.. a.. abbr[a] != '0':
-                e = a
+                e a
                 w.... e < l..(abbr) a.. abbr[e].i.. e += 1
-                num = i..(abbr[a:e])
-                a = e
+                num i..(abbr[a:e])
+                a e
                 w += num
             ____
                 __ word[w] != abbr[a]:

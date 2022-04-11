@@ -10,20 +10,20 @@ c_ Solution(o..
     :type head: ListNode
     :rtype: ListNode
     """
-    o = odd = ListNode(-1)
-    e = even = ListNode(-1)
-    p = head
-    isOdd = T..
+    o odd ListNode(-1)
+    e even ListNode(-1)
+    p head
+    isOdd T..
     w.... p:
       __ isOdd:
-        o.next = p
-        o = o.next
-        isOdd = F..
+        o.next p
+        o o.next
+        isOdd F..
       ____
-        e.next = p
-        isOdd = T..
-        e = e.next
-      p = p.next
-    e.next = N..
-    o.next = even.next
+        e.next p
+        isOdd T..
+        e e.next
+      p p.next
+    e.next N..
+    o.next even.next
     r.. odd.next

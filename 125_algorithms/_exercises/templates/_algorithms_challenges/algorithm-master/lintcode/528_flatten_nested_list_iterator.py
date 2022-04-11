@@ -26,24 +26,24 @@ class NestedInteger(object):
 
 c_ NestedIterator(o..
     ___ - , nestedList
-        stack = [[nestedList, 0]]
+        stack [[nestedList, 0]]
 
     # @return {int} the next element in the iteration
     ___ next
         __ n.. hasNext
             r.. -1
 
-        lst, i = stack[-1]
+        lst, i stack[-1]
         stack[-1][1] += 1
 
         r.. lst[i].getInteger()
 
     # @return {boolean} true if the iteration has more element or false
     ___ hasNext
-        stack = stack
+        stack stack
 
         w.... stack:
-            lst, i = stack[-1]
+            lst, i stack[-1]
 
             __ i >_ l..(lst
                 stack.p.. )

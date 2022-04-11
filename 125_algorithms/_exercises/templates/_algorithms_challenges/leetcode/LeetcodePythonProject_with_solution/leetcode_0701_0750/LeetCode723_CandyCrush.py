@@ -9,56 +9,56 @@ c_ Solution(o..
         :type board: List[List[int]]
         :rtype: List[List[int]]
         """
-        m, n = l..(board), l..(board[0])
-        res = [[0]*n ___ _ __ r..(m)]
+        m, n l..(board), l..(board[0])
+        res [[0]*n ___ _ __ r..(m)]
         w... T...
-            changed = F..
+            changed F..
             ___ i __ r..(m
                 ___ j __ r..(n
-                    changed = bfs(board, i, j) o. changed
+                    changed bfs(board, i, j) o. changed
             __ n.. changed:
-                res = board
+                res board
                 _____
             convert(res, board)
-            board = res
+            board res
         r.. res
     
     ___ bfs  board, i, j
         __ board[i][j] __ 0: r.. F..
-        m, n = l..(board), l..(board[0])
-        val = a..(board[i][j])
-        changed = F..
+        m, n l..(board), l..(board[0])
+        val a..(board[i][j])
+        changed F..
         __ i+2 < m a.. val __ a..(board[i+1][j]) __ a..(board[i+2][j]
             ___ i0 __ r..(i+1, m
                 __ a..(board[i0][j]) __ val:
-                    board[i0][j] = -val
+                    board[i0][j] -val
                 ____
                     _____
-            changed = T..
+            changed T..
         __ j+2 < n a.. val __ a..(board[i][j+1]) __ a..(board[i][j+2]
             ___ j0 __ r..(j+1, n
                 __ a..(board[i][j0]) __ val:
-                    board[i][j0] = -val
+                    board[i][j0] -val
                 ____
                     _____
-            changed = T..
+            changed T..
         __ changed:
-            board[i][j] = -val
+            board[i][j] -val
         r.. changed
     
     ___ convert  res, board
-        m, n = l..(res), l..(res[0])
+        m, n l..(res), l..(res[0])
         ___ j __ r..(n
-            i0 = m-1
+            i0 m-1
             ___ i __ r..(m-1, -1, -1
                 __ board[i][j] > 0:
-                    res[i0][j] = board[i][j]
+                    res[i0][j] board[i][j]
                     i0 -_ 1
             ___ i __ r..(i0, -1, -1
-                res[i][j] = 0
+                res[i][j] 0
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [110,5,112,113,114],
                 [210,211,5,213,214],
@@ -78,7 +78,7 @@ c_ Solution(o..
         ___ board __ testCases:
             print('board:')
             print('\n'.j..([s..(row) ___ row __ board]
-            result = candyCrush(board)
+            result candyCrush(board)
             print('result:')
             print('\n'.j..([s..(row) ___ row __ result]
             print('-='*30+'-')

@@ -9,30 +9,30 @@ c_ Solution(o..
         :type grid: List[List[int]]
         :rtype: int
         """
-        N = l..(grid)
-        M = (N<<1)-1
-        dp = [[0]*N ___ _ __ r..(N)]
-        dp[0][0] = grid[0][0]
+        N l..(grid)
+        M (N<<1)-1
+        dp [[0]*N ___ _ __ r..(N)]
+        dp[0][0] grid[0][0]
         ___ n __ r..(1, M
             ___ i __ r..(N-1, -1, -1
                 ___ p __ r..(N-1, -1, -1
-                    j = n-i
-                    q = n-p
+                    j n-i
+                    q n-p
                     __ j<0 o. j>_N o. q<0 o. q>_N o. grid[i][j]<0 o. grid[p][q]<0:
-                        dp[i][p] = -1
+                        dp[i][p] -1
                         _____
                     __ i > 0:
-                        dp[i][p] = m..(dp[i][p], dp[i-1][p])
+                        dp[i][p] m..(dp[i][p], dp[i-1][p])
                     __ p > 0:
-                        dp[i][p] = m..(dp[i][p], dp[i][p-1])
+                        dp[i][p] m..(dp[i][p], dp[i][p-1])
                     __ i > 0 a.. p > 0:
-                        dp[i][p] = m..(dp[i][p], dp[i-1][p-1])
+                        dp[i][p] m..(dp[i][p], dp[i-1][p-1])
                     __ dp[i][p] >_ 0:
                         dp[i][p] += grid[i][j]+(grid[p][q] __ i!=p ____ 0)
         r.. m..(dp[-1][-1], 0)
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [0, 1, -1],
                 [1, 0, -1],
@@ -40,7 +40,7 @@ c_ Solution(o..
             ],
         ]
         ___ grid __ testCases:
-            result = cherryPickup(grid)
+            result cherryPickup(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 

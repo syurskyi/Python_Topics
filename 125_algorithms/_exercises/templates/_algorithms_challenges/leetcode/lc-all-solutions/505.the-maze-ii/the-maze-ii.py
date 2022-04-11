@@ -8,23 +8,23 @@ c_ Solution(o..
     """
 
     ___ next(curr, maze
-      height = l..(maze)
-      width = l..(maze[0])
-      directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+      height l..(maze)
+      width l..(maze[0])
+      directions [(-1, 0), (1, 0), (0, -1), (0, 1)]
       ___ di, dj __ directions:
-        dist = 0
-        i, j = curr
+        dist 0
+        i, j curr
         w.... 0 <_ i + di < height a.. 0 <_ j + dj < width a.. maze[i + di][j + dj] != 1:
           i += di
           j += dj
           dist += 1
         y.. (i, j), dist
 
-    heap = [(0, t..(ball]
-    visited = s..()
-    hole = t..(hole)
+    heap [(0, t..(ball]
+    visited s..()
+    hole t..(hole)
     w.... heap:
-      dist, curr = heapq.heappop(heap)
+      dist, curr heapq.heappop(heap)
       __ curr __ visited:
         _____
       visited |= {curr}

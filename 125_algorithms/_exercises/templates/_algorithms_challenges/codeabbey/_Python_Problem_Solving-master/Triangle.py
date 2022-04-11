@@ -1,14 +1,14 @@
-data = i..(input
+data i..(input
 
 res= ''
 ___ i __ r..(0,data
-    para = input().s.. 
+    para input().s..
     
-    para = l.. m..(i..,para
+    para l.. m..(i..,para
     
-    a = para[0]
-    b = para[1]
-    c = para[2]
+    a para[0]
+    b para[1]
+    c para[2]
     
     __ a + b > c a.. a + c > b  a.. b + c > a:
         res +='1'

@@ -24,8 +24,8 @@ ___ extract_ipv4(data
         ____ l __ 'ip':
             print(data)
             ___
-                result_1 = is_valid_ip(data[1][0])
-                result_2 = is_valid_number(data[3][0])
+                result_1 is_valid_ip(data[1][0])
+                result_2 is_valid_number(data[3][0])
                 print(result_1,result_2)
             ______:
                 _____
@@ -33,8 +33,8 @@ ___ extract_ipv4(data
                 
                 __ result_1 a.. result_2:
                     print('here')
-                    ip_address = data[1][0].s..('"')
-                    mask = data[3][0].s..('"')
+                    ip_address data[1][0].s..('"')
+                    mask data[3][0].s..('"')
 
                     result.a..((ip_address,mask
                     _____

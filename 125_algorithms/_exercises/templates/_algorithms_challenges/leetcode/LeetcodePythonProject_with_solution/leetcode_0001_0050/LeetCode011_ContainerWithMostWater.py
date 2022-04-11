@@ -11,10 +11,10 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. height: r.. 0
-        i, j = 0, l..(height)-1
-        area = 0
+        i, j 0, l..(height)-1
+        area 0
         w.... i < j:
-            area = m..(area, m..(height[i], height[j])*(j-i
+            area m..(area, m..(height[i], height[j])*(j-i
             __ height[i] > height[j]:
                 j -_ 1
             ____
@@ -22,12 +22,12 @@ c_ Solution(o..
         r.. area
 
     ___ test
-        testCases = [
+        testCases [
             [1, 3, 9, 2],
         ]
         ___ height __ testCases:
             print('height: %s' % (height
-            result = maxArea(height)
+            result maxArea(height)
             print('result: %s' % (result
             print('-='*15 + '-')
 

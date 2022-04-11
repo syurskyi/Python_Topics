@@ -4,9 +4,9 @@ c_ Solution(o..
     :type n: int
     :rtype: int
     """
-    count, k = 0, 5
+    count, k 0, 5
     w.... n:
-      k = n / 5
+      k n / 5
       count += k
-      n = k
+      n k
     r.. count

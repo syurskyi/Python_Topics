@@ -1,5 +1,5 @@
 
-STAR = '*'
+STAR '*'
 
 ___ gen_rhombus(width
     """Create a generator that yields the rows of a rhombus row
@@ -19,16 +19,16 @@ ___ gen_rhombus(width
     """
 
     
-    left_padding = width//2 + 1
-    i = 1
+    left_padding width//2 + 1
+    i 1
     
-    diff = 2
-    j = 1
+    diff 2
+    j 1
     lines    # list
     w.... i > 0:
-        space_before = (width - i)//2
-        spaces = ' ' * space_before
-        line = f"{spaces}{STAR * i}{spaces}"
+        space_before (width - i)//2
+        spaces ' ' * space_before
+        line f"{spaces}{STAR * i}{spaces}"
         y.. line
         #line = f"{STAR * i:>{left_padding}}"
         #yield line
@@ -36,8 +36,8 @@ ___ gen_rhombus(width
         i += diff
 
         __ i __ width:
-            diff = -2
-            j = -1
+            diff -2
+            j -1
 
 
 __ _______ __ _______
@@ -45,12 +45,12 @@ __ _______ __ _______
     _______ a__
 
 
-    ap = a__.A..("rhombus generator")
+    ap a__.A..("rhombus generator")
 
     ap.a..("-w","--width",t..=i..,required=T..,h.._"width of rhombus")
 
-    args = vars(ap.parse_args
-    width = args["width"]
+    args vars(ap.parse_args
+    width args["width"]
     gen_rhombus(width)
 
 

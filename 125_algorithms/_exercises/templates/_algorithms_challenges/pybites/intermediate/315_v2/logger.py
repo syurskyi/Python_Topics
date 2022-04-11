@@ -2,7 +2,7 @@ _______ l___
 ____ t___ _______ L..  # python 3.9 we can drop this
 
 
-logger = l___.g..'app')
+logger l___.g..'app')
 
 
 ___ sum_even_numbers(numbers: L..[f__]) __ f__:
@@ -16,7 +16,7 @@ ___ sum_even_numbers(numbers: L..[f__]) __ f__:
        the exception log it, then reraise it.
     """
 
-    s = 0
+    s 0
     
     ___
         ___ num __ f.. l.... x: x % 2 __ 0,numbers

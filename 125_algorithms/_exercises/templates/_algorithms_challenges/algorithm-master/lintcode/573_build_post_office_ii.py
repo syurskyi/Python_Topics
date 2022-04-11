@@ -18,9 +18,9 @@ c_ Solution:
        and it must be reachable for each house
     """
 
-    EMPTY = 0
-    HOUSE = 1
-    WALL = 2
+    EMPTY 0
+    HOUSE 1
+    WALL 2
 
     ___ shortestDistance  grid
         """
@@ -30,10 +30,10 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. -1
 
-        m, n = l..(grid), l..(grid[0])
-        cnt = 0
-        times = c...d..(i..)
-        steps = c...d..(i..)
+        m, n l..(grid), l..(grid[0])
+        cnt 0
+        times c...d..(i..)
+        steps c...d..(i..)
 
         ___ x __ r..(m
             ___ y __ r..(n
@@ -41,19 +41,19 @@ c_ Solution:
                     cnt += 1
                     bfs(grid, x, y, times, steps)
 
-        ans = INF = f__('inf')
+        ans INF f__('inf')
 
         ___ (x, y), t __ times.i..:
             __ t __ cnt a.. steps[x, y] < ans:
-                ans = steps[x, y]
+                ans steps[x, y]
 
         r.. ans __ ans < INF ____ -1
 
     ___ bfs  grid, x, y, times, steps
-        m, n = l..(grid), l..(grid[0])
-        queue, _queue = [(x, y)], []
-        visited = s..(queue)
-        step = 0
+        m, n l..(grid), l..(grid[0])
+        queue, _queue [(x, y)], []
+        visited s..(queue)
+        step 0
 
         w.... queue:
             step += 1
@@ -63,8 +63,8 @@ c_ Solution:
                     (-1, 0), (1, 0),
                     (0, -1), (0, 1),
 
-                    _x = x + dx
-                    _y = y + dy
+                    _x x + dx
+                    _y y + dy
 
                     __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                         _____
@@ -79,7 +79,7 @@ c_ Solution:
                     steps[_x, _y] += step
                     times[_x, _y] += 1
 
-            queue, _queue = _queue, []
+            queue, _queue _queue, []
 
 
 _______ c..
@@ -93,9 +93,9 @@ c_ Solution:
     so may visit a node many times
     """
 
-    EMPTY = 0
-    HOUSE = 1
-    WALL = 2
+    EMPTY 0
+    HOUSE 1
+    WALL 2
 
     ___ shortestDistance  grid
         """
@@ -105,10 +105,10 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. -1
 
-        m, n = l..(grid), l..(grid[0])
-        cnt = 0
-        ids = c...d..(s..)  # record house ids
-        steps = c...d..(i..)  # total steps for all houses
+        m, n l..(grid), l..(grid[0])
+        cnt 0
+        ids c...d..(s..)  # record house ids
+        steps c...d..(i..)  # total steps for all houses
 
         ___ x __ r..(m
             ___ y __ r..(n
@@ -116,26 +116,26 @@ c_ Solution:
                     _____
 
                 cnt += 1
-                step = c...d..(i..)  # steps for current house
+                step c...d..(i..)  # steps for current house
                 dfs(grid, x, y, cnt, ids, steps, step)
 
-        ans = INF = f__('inf')
+        ans INF f__('inf')
 
         ___ (x, y), hids __ ids.i..:
             __ l..(hids) __ cnt a.. steps[x, y] < ans:
-                ans = steps[x, y]
+                ans steps[x, y]
 
         r.. ans __ ans < INF ____ -1
 
     ___ dfs  grid, x, y, id, ids, steps, step
-        m, n = l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid[0])
 
         ___ dx, dy __ (
             (-1, 0), (1, 0),
             (0, -1), (0, 1),
 
-            _x = x + dx
-            _y = y + dy
+            _x x + dx
+            _y y + dy
 
             __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                 _____
@@ -147,7 +147,7 @@ c_ Solution:
             ids[_x, _y].add(id)
 
             steps[_x, _y] -_ step[_x, _y]
-            step[_x, _y] = step[x, y] + 1
+            step[_x, _y] step[x, y] + 1
             steps[_x, _y] += step[_x, _y]
 
             dfs(grid, _x, _y, id, ids, steps, step)

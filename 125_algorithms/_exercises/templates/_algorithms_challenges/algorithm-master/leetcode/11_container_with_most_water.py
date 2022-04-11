@@ -4,15 +4,15 @@ c_ Solution:
         :type H: List[int]
         :rtype: int
         """
-        ans = 0
+        ans 0
         __ n.. H:
             r.. ans
 
-        left, right = 0, l..(H) - 1
+        left, right 0, l..(H) - 1
         w.... left < right:
-            area = m..(H[left], H[right]) * (right - left)
+            area m..(H[left], H[right]) * (right - left)
             __ area > ans:
-                ans = area
+                ans area
 
             __ H[left] < H[right]:
                 left += 1

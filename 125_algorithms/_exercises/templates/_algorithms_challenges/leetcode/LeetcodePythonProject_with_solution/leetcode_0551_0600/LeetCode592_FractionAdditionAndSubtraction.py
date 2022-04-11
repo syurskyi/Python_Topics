@@ -10,13 +10,13 @@ c_ Solution(o..
         :rtype: str
         """
         _______ __
-        ints = map(i.., __.f..('[+-]?\d+', expression
-        A, B = 0, 1
+        ints map(i.., __.f..('[+-]?\d+', expression
+        A, B 0, 1
         ___ a __ ints:
-            b = next(ints)
-            A = A*b + a*B
+            b next(ints)
+            A A*b + a*B
             B *= b
-            g = gcd(A, B)
+            g gcd(A, B)
             A //= g
             B //= g
         r.. '%s/%s' % (A, B)
@@ -28,7 +28,7 @@ c_ Solution(o..
             r.. gcd(b%a, a)
     
     ___ test
-        testCases = [
+        testCases [
             '-1/2+1/2',
             '-1/2+1/2+1/3',
             '1/3-1/2',
@@ -36,7 +36,7 @@ c_ Solution(o..
         ]
         ___ expression __ testCases:
             print('expression: %s' % expression)
-            result = fractionAddition(expression)
+            result fractionAddition(expression)
             print('result: %s' % result)
 
 __ _____ __ _____

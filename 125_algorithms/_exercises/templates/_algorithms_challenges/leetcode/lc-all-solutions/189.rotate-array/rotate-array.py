@@ -10,12 +10,12 @@ c_ Solution(o..
 
     ___ reverse(start, end, s
       w.... start < end:
-        s[start], s[end] = s[end], s[start]
+        s[start], s[end] s[end], s[start]
         start += 1
         end -_ 1
 
-    n = l..(nums) - 1
-    k = k % l..(nums)
+    n l..(nums) - 1
+    k k % l..(nums)
     reverse(0, n - k, nums)
     reverse(n - k + 1, n, nums)
     reverse(0, n, nums)

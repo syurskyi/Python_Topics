@@ -4,7 +4,7 @@ Implement a trie with insert, search, and startsWith methods.
 Note:
 You may assume that all inputs are consist of lowercase letters a-z.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TrieNode:
@@ -12,7 +12,7 @@ c_ TrieNode:
         """
         Initialize your data structure here.
         """
-        ended = F..
+        ended F..
         children    # dict
 
 
@@ -23,7 +23,7 @@ c_ Trie:
         * When insert new word, do not override the existing TrieNode
         * A flag to indicate whether there is a word ending here.
         """
-        root = TrieNode()
+        root TrieNode()
 
     ___ insert  word
         """
@@ -31,13 +31,13 @@ c_ Trie:
         :type word: str
         :rtype: None
         """
-        cur = root
+        cur root
         ___ w __ word:
             __ w n.. __ cur.children:   # not override
-                cur.children[w] = TrieNode()
-            cur = cur.children[w]
+                cur.children[w] TrieNode()
+            cur cur.children[w]
 
-        cur.ended = T..
+        cur.ended T..
 
     ___ s..  word
         """
@@ -45,10 +45,10 @@ c_ Trie:
         :type word: str
         :rtype: bool
         """
-        cur = root
+        cur root
         ___ w __ word:
             __ w __ cur.children:
-                cur = cur.children[w]
+                cur cur.children[w]
             ____
                 r.. F..
 
@@ -63,10 +63,10 @@ c_ Trie:
         :type prefix: str
         :rtype: bool
         """
-        cur = root
+        cur root
         ___ w __ prefix:
             __ w __ cur.children:
-                cur = cur.children[w]
+                cur cur.children[w]
             ____
                 r.. F..
 

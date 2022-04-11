@@ -13,10 +13,10 @@ c_ Solution(o..
     
     ___ addDigits_slow  num
         w.... num >_ 10:
-            newNum = 0
+            newNum 0
             w.... num > 0:
-                digit = num%10
-                num = num//10
+                digit num%10
+                num num//10
                 newNum += digit
-            num = newNum
+            num newNum
         r.. num

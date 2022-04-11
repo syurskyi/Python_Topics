@@ -24,9 +24,9 @@ c_ Solution:
         Start from start and end, then check equal. If not match, skip either
         side (i.e. delete a character), then check palindrome
         """
-        n = l..(s)
-        i = 0
-        j = n - 1
+        n l..(s)
+        i 0
+        j n - 1
         w.... i < j:
             __ s[i] __ s[j]:
                 i += 1

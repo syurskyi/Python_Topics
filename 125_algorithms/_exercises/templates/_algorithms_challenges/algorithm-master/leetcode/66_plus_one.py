@@ -9,7 +9,7 @@ c_ Solution:
         __ n.. d..
             r.. ans
 
-        carry = 1
+        carry 1
 
         ___ i __ r..(l..(d..) - 1, -1, -1
             carry += d..[i]
@@ -33,18 +33,18 @@ c_ Solution:
         __ n.. d..
             r.. []
 
-        carry = 0
+        carry 0
         d..[-1] += 1
 
         ___ i __ r..(l..(d..) - 1, -1, -1
             carry += d..[i]
-            d..[i] = carry % 10
+            d..[i] carry % 10
             carry //= 10
 
         __ carry:
             d...a..(carry)
 
             ___ i __ r..(l..(d..) - 1, 0, -1
-                d..[i], d..[i - 1] = d..[i - 1], d..[i]
+                d..[i], d..[i - 1] d..[i - 1], d..[i]
 
         r.. d..

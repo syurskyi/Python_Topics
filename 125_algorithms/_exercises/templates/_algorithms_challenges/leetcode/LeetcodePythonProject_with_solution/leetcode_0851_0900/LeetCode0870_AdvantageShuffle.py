@@ -11,27 +11,27 @@ c_ Solution(o..
         :rtype: List[int]
         """
         _______ heapq
-        arrA = s..(A)
-        n = l..(arrA)
+        arrA s..(A)
+        n l..(arrA)
         h    # list
         ___ i, b __ e..(B
             heapq.heappush(h, [-b, i])
-        l, r = 0, n-1
-        res = [0]*n
+        l, r 0, n-1
+        res [0]*n
         w.... h:
-            cur = heapq.heappop(h)
-            idx = cur[1]
-            val = -cur[0]
+            cur heapq.heappop(h)
+            idx cur[1]
+            val -cur[0]
             __ arrA[r] > val:
-                res[idx] = arrA[r]
+                res[idx] arrA[r]
                 r -_ 1
             ____
-                res[idx] = arrA[l]
+                res[idx] arrA[l]
                 l += 1
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [2,7,11,15],
                 [1,10,4,11],
@@ -42,7 +42,7 @@ c_ Solution(o..
             ],
         ]
         ___ a, b __ testCases:
-            res = advantageCount(a, b)
+            res advantageCount(a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 

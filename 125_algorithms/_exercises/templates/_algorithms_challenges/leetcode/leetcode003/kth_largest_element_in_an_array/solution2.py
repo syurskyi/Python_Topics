@@ -18,33 +18,33 @@ c_ Solution(o..
 
         Quickselect: O(n)
         """
-        left = 0
-        right = l..(nums) - 1
+        left 0
+        right l..(nums) - 1
         w.... left <_ right:
-            pivot = partition(nums, left, right)
+            pivot partition(nums, left, right)
             # nums[pivot] is (pivot + 1)th largest, so
             # if pivot == k - 1, it is kth largest.
             __ pivot __ k - 1:
                 r.. nums[pivot]
             ____ pivot < k - 1:
-                left = pivot + 1
+                left pivot + 1
             ____
-                right = pivot - 1
+                right pivot - 1
 
     ___ partition  nums, left, right
         """Partition the array so that larger elements are to the left"""
-        pivot = right
+        pivot right
         # i is from left to right - 1
-        j = left
+        j left
         ___ i __ r..(left, right
             __ nums[i] > nums[pivot]:
-                nums[i], nums[j] = nums[j], nums[i]
+                nums[i], nums[j] nums[j], nums[i]
                 j += 1
-        nums[j], nums[pivot] = nums[pivot], nums[j]
+        nums[j], nums[pivot] nums[pivot], nums[j]
         r.. j
 
 
-s = Solution()
-a = [3, 2, 1, 5, 6, 4]
+s Solution()
+a [3, 2, 1, 5, 6, 4]
 
 print s.findKthLargest(a, 2)

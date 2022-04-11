@@ -9,13 +9,13 @@ _______ r__
 # https://bites-data.s3.us-east-2.amazonaws.com/news.python.sc/index.html
 # https://bites-data.s3.us-east-2.amazonaws.com/news.python.sc/index2.html
 
-Entry = n..('Entry', 'title points comments')
+Entry n..('Entry', 'title points comments')
 
 
 ___ _create_soup_obj(url
     """Need utf-8 to properly parse emojis"""
-    resp = r__.g.. url)
-    resp.encoding = "utf-8"
+    resp r__.g.. url)
+    resp.encoding "utf-8"
     r.. BeautifulSoup(resp.text, "html.parser")
 
 
@@ -24,42 +24,42 @@ ___ get_top_titles(url, top=5
        Return a list of top (default = 5) titles ordered descending
        by number of points and comments.
     """
-    soup = _create_soup_obj(url)
+    soup _create_soup_obj(url)
 
     
     entries    # list
-    rows = soup.find_all("tr",id=T..)
+    rows soup.find_all("tr",id=T..)
     
 
-    get_number = l.... s: i..(__.s..(r'\d+',s).group
+    get_number l.... s: i..(__.s..(r'\d+',s).group
 
 
     ___ row __ rows:
-        links = row.select('span.title a')
-        title_text = links[0].getText(s..=T..)
-        link_text = ''
+        links row.select('span.title a')
+        title_text links[0].getText(s..=T..)
+        link_text ''
         __ l..(links) > 1:
-            link_text = links[1].getText(s..=T..)
-            link_text = f" ({link_text})"
+            link_text links[1].getText(s..=T..)
+            link_text f" ({link_text})"
 
 
-        title_text = f"{title_text}{link_text}"
+        title_text f"{title_text}{link_text}"
 
 
-        next_row = row.find_next_sibling('tr')
+        next_row row.find_next_sibling('tr')
 
-        points = next_row.select_one('span.controls > span.smaller').getText()
+        points next_row.select_one('span.controls > span.smaller').getText()
 
-        points = get_number(points)
-
-
-
-        comments = next_row.select_one('span.naturaltime a').getText(s..=T..)
-
-        comments = get_number(comments)
+        points get_number(points)
 
 
-        entry = Entry(title_text,points,comments)
+
+        comments next_row.select_one('span.naturaltime a').getText(s..=T..)
+
+        comments get_number(comments)
+
+
+        entry Entry(title_text,points,comments)
         entries.a..(entry)
 
 

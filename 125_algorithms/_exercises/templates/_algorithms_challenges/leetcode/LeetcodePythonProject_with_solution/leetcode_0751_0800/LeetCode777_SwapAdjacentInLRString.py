@@ -13,7 +13,7 @@ c_ Solution(o..
         _______ __
         __ __.sub('X', '', start) != __.sub('X', '', end
             r.. F..
-        p1, p2 = 0, 0
+        p1, p2 0, 0
         w.... p1 < l..(start) a.. p2 < l..(end
             w.... p1 < l..(start) a.. start[p1] __ 'X':
                 p1 += 1
@@ -41,7 +41,7 @@ c_ Solution(o..
         :type end: str
         :rtype: bool
         """
-        l, r = 0, 0
+        l, r 0, 0
         ___ i __ r..(l..(start:
             __ start[i] __ 'R': r += 1
             __ end[i] __ 'L': l += 1
@@ -61,22 +61,22 @@ c_ Solution(o..
         :type end: str
         :rtype: bool
         """
-        visited = s..([start])
-        queue = [start]
+        visited s..([start])
+        queue [start]
         w.... queue:
-            s = queue.p.. )
+            s queue.p.. )
             __ s __ end:
                 r.. T..
             ___ i __ r..(l..(s)-1
                 __ s[i:i+2] __ ('XL', 'RX'
-                    newS = s[:i]+s[i:i+2][::-1]+s[i+2:]
+                    newS s[:i]+s[i:i+2][::-1]+s[i+2:]
                     __ newS n.. __ visited:
                         visited.add(newS)
                         queue.a..(newS)
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             [
                 "RXXLRXRXL",
                 "XRLXXRRLX",
@@ -89,7 +89,7 @@ c_ Solution(o..
         ___ start, end __ testCases:
             print('start: %s' % start)
             print('end: %s' % end)
-            result = canTransform(start, end)
+            result canTransform(start, end)
             print('result: %s' % result)
             print('-='*30+'-')
 

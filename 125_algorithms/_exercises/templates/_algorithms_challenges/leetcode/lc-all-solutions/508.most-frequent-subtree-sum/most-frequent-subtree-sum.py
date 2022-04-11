@@ -15,20 +15,20 @@ c_ Solution(o..
     ___ helper(root, d
       __ n.. root:
         r.. 0
-      left = helper(root.left, d)
-      right = helper(root.right, d)
-      subtreeSum = left + right + root.val
-      d[subtreeSum] = d.g.. subtreeSum, 0) + 1
+      left helper(root.left, d)
+      right helper(root.right, d)
+      subtreeSum left + right + root.val
+      d[subtreeSum] d.g.. subtreeSum, 0) + 1
       r.. subtreeSum
 
     d    # dict
     helper(root, d)
-    mostFreq = 0
+    mostFreq 0
     ans    # list
     ___ key __ d:
       __ d[key] > mostFreq:
-        mostFreq = d[key]
-        ans = [key]
+        mostFreq d[key]
+        ans [key]
       ____ d[key] __ mostFreq:
         ans.a..(key)
     r.. ans

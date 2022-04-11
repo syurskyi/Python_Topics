@@ -10,27 +10,27 @@ c_ Solution(o..
         :rtype: int
         """
         hashmap    # dict
-        l = 0
-        res = 0
+        l 0
+        res 0
         ___ i, c __ e..(s
-            hashmap[c] = hashmap.g.. c, 0)+1
+            hashmap[c] hashmap.g.. c, 0)+1
             w.... l..(hashmap) > 2:
                 hashmap[s[l]] -_ 1
                 __ hashmap[s[l]] __ 0: del hashmap[s[l]]
                 l += 1
-            res = m..(res, i-l+1)
-        res = m..(res, l..(s)-l)
+            res m..(res, i-l+1)
+        res m..(res, l..(s)-l)
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             'abccccbbb',
             'eceba',
             'abc',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = lengthOfLongestSubstringTwoDistinct(s)
+            result lengthOfLongestSubstringTwoDistinct(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

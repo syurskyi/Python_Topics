@@ -10,9 +10,9 @@ c_ Solution(o..
         :type val: int
         :rtype: int
         """
-        j = 0
+        j 0
         ___ num __ nums:
             __ num != val:
-                nums[j] = num
+                nums[j] num
                 j += 1
         r.. j

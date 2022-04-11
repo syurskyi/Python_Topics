@@ -28,25 +28,25 @@ c_ Solution:
         __ n.. node:
             r.. 0, 0, 0
 
-        size = 1
-        up = down = 0
+        size 1
+        up down 0
 
         ___ child __ node.children:
             __ n.. child:
                 _____
 
-            _size, _up, _down = divide_conquer(child)
+            _size, _up, _down divide_conquer(child)
 
             __ child.val + 1 __ node.val a.. _up + 1 > up:
-                up = _up + 1
+                up _up + 1
 
             __ child.val - 1 __ node.val a.. _down + 1 > down:
-                down = _down + 1
+                down _down + 1
 
             __ _size > size:
-                size = _size
+                size _size
 
         __ up + down + 1 > size:
-            size = up + down + 1
+            size up + down + 1
 
         r.. size, up, down

@@ -17,7 +17,7 @@ c_ Solution(o..
         elem    # list
         queue.a..(root)
         w.... queue:
-            first = queue[0]
+            first queue[0]
             elem.a..(first.val)
             del queue[0]
             __ first.left:
@@ -27,6 +27,6 @@ c_ Solution(o..
             __ n.. queue:
                 result.a..(elem)
                 elem    # list
-                queue = nextQueue
+                queue nextQueue
                 nextQueue    # list
         r.. result

@@ -7,7 +7,7 @@ Pairs wines and cheeses by similarity of wine name and cheese name.
 ____ c.. _______ C..
 ____ i.. _______ product
 
-CHEESES = [
+CHEESES [
     "Red Leicester",
     "Tilsit",
     "Caerphilly",
@@ -53,7 +53,7 @@ CHEESES = [
     "Limburger",
 ]
 
-RED_WINES = [
+RED_WINES [
     "Châteauneuf-du-Pape",  # 95% of production is red
     "Syrah",
     "Merlot",
@@ -68,7 +68,7 @@ RED_WINES = [
     "Garnacha",
 ]
 
-WHITE_WINES = [
+WHITE_WINES [
     "Chardonnay",
     "Sauvignon blanc",
     "Semillon",
@@ -78,7 +78,7 @@ WHITE_WINES = [
     "Riesling",
 ]
 
-SPARKLING_WINES = [
+SPARKLING_WINES [
     "Cava",
     "Champagne",
     "Crémant d’Alsace",
@@ -88,7 +88,7 @@ SPARKLING_WINES = [
     "Lambrusco",
 ]
 
-ALL_WINES = [*RED_WINES, *WHITE_WINES, *SPARKLING_WINES]
+ALL_WINES [*RED_WINES, *WHITE_WINES, *SPARKLING_WINES]
 
 
 ___ similarity(s1, s2
@@ -98,9 +98,9 @@ ___ similarity(s1, s2
     1 + square difference of the length of both words
     '''
     # common characters
-    s1 = l..(s1.l..
-    s2 = l..(s2.l..
-    dlen = l..(s1) - l..(s2)
+    s1 l..(s1.l..
+    s2 l..(s2.l..
+    dlen l..(s1) - l..(s2)
     common    # list
 
     ___ c __ s1:
@@ -108,7 +108,7 @@ ___ similarity(s1, s2
             common.a..(c)
             s2.remove(c)
 
-    vals = C..(common).v..
+    vals C..(common).v..
     r.. s..(vals) / (1 + pow(dlen, 2
 
 
@@ -116,13 +116,13 @@ ___ best_match_per_wine(wine_type="all"
     """ wine cheese pair with the highest match score
     returns a tuple which contains wine, cheese, score
     """
-    WT = {'white': WHITE_WINES, 'red': RED_WINES,
+    WT {'white': WHITE_WINES, 'red': RED_WINES,
           'sparkling': SPARKLING_WINES, 'all': ALL_WINES}
 
     __ wine_type n.. __ WT:
         r.. V...
     print _*{WT[wine_type]=}')
-    sims = ((w, c, similarity(w, c
+    sims ((w, c, similarity(w, c
             ___ w, c __ product(WT[wine_type], CHEESES
 
     r.. m..(sims, key=l.... x: x[2])
@@ -139,8 +139,8 @@ ___ match_wine_5cheeses
     ('Zinfandel', ['Caithness', 'Bel Paese', 'Ilchester', 'Limburger', 'Lancashire'])
     ]
     """
-    wine_5 = l..()
+    wine_5 l..()
     ___ wine __ s..(ALL_WINES
-        cheeses = s..(CHEESES, key=l.... x: (-similarity(wine, x), x[:5]
+        cheeses s..(CHEESES, key=l.... x: (-similarity(wine, x), x[:5]
         wine_5.a..((wine, cheeses
     r.. wine_5

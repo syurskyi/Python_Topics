@@ -10,7 +10,7 @@ Note:
 The order of the result is not important. So in the above example, [5, 3] is also correct.
 Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -20,13 +20,13 @@ c_ Solution:
         :type nums: list[int]
         :rtype: list[int]
         """
-        bits = 0
+        bits 0
         ___ elt __ nums:
             bits ^= elt
 
-        rightmost_bit_set = bits & -bits
-        a = 0
-        b = 0
+        rightmost_bit_set bits & -bits
+        a 0
+        b 0
         ___ elt __ nums:
             __ elt & rightmost_bit_set:
                 a ^= elt

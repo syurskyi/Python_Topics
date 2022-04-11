@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. s:
             r.. 0
 
-        s = to_rpn(s, {
+        s to_rpn(s, {
             '+': 1,
             '-': 1,
             '*': 2,
@@ -28,7 +28,7 @@ c_ Solution:
         stack, res    # list, []
 
         ___ i __ r..(l..(s:
-            char = s[i]
+            char s[i]
 
             __ i > 0 a.. s[i - 1].i.. a.. char.i..
                 res[-1] += char
@@ -57,8 +57,8 @@ c_ Solution:
             __ char.i..
                 stack.a..(i..(char
             ____ char __ OP:
-                b = stack.p.. )
-                a = stack.p.. )
+                b stack.p.. )
+                a stack.p.. )
                 stack.a..(OP[char](a, b
 
         r.. stack[0]
@@ -73,7 +73,7 @@ c_ Solution:
         __ n.. s:
             r.. 0
 
-        s = to_rpn(s)
+        s to_rpn(s)
 
         __ n.. s:
             r.. 0
@@ -84,7 +84,7 @@ c_ Solution:
         stack, res    # list, []
 
         ___ i __ r..(l..(s:
-            char = s[i]
+            char s[i]
 
             __ i > 0 a.. s[i - 1].i.. a.. char.i..
                 res[-1] += char
@@ -115,8 +115,8 @@ c_ Solution:
             __ char.i..
                 stack.a..(i..(char
             ____ char __ '+-*/':
-                b = stack.p.. )
-                a = stack.p.. )
+                b stack.p.. )
+                a stack.p.. )
 
                 __ char __ '+':
                     stack.a..(a + b)

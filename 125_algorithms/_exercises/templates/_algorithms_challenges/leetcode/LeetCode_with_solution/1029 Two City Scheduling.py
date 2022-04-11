@@ -39,10 +39,10 @@ c_ Solution:
 
         a - b: incremental cost of flying A instead of B
         """
-        A = [(a - b, a, b) ___ a, b __ costs]
+        A [(a - b, a, b) ___ a, b __ costs]
         A.s..()
-        ret = 0
-        remain = l..(A) // 2
+        ret 0
+        remain l..(A) // 2
         ___ _, a, b __ A:
             __ remain > 0:
                 ret += a
@@ -60,10 +60,10 @@ c_ Solution:
 
         Error in the abs of difference
         """
-        A = [(a..(a - b), a, b) ___ a, b __ costs]
+        A [(a..(a - b), a, b) ___ a, b __ costs]
         A.s..(r.._T..
-        ret = 0
-        remain = l..(A) // 2
+        ret 0
+        remain l..(A) // 2
         ___ _, a, b __ A:
             __ a > b:
                 ret += b

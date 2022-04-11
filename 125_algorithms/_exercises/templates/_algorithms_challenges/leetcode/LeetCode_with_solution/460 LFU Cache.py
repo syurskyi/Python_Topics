@@ -30,7 +30,7 @@ cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 """
 ____ c.. _______ d.., OrderedDict
-DUMMY = N..
+DUMMY N..
 
 
 c_ LFUCache:
@@ -49,22 +49,22 @@ c_ LFUCache:
 
         min count is +1
         """
-        cap = capacity
+        cap capacity
         values    # dict
-        freqs = d..(i..)
-        keys = d..(OrderedDict)
-        mini = -1  # mini frequency
+        freqs d..(i..)
+        keys d..(OrderedDict)
+        mini -1  # mini frequency
 
     ___ get  key: i..) __ i..:
         __ key __ values:
-            val = values[key]
-            freq_org = freqs[key]
+            val values[key]
+            freq_org freqs[key]
             freqs[key] += 1
             del keys[freq_org][key]
-            keys[freq_org + 1][key] = DUMMY  # dummy
+            keys[freq_org + 1][key] DUMMY  # dummy
 
             __ freq_org __ mini a.. l..(keys[mini]) __ 0:
-                mini = freq_org + 1
+                mini freq_org + 1
 
             r.. val
         ____
@@ -75,19 +75,19 @@ c_ LFUCache:
             r..
 
         __ key __ values:
-            values[key] = value
+            values[key] value
             g.. key)  # update
         ____
             __ l..(values) >_ cap:
-                evit_key, _ = keys[mini].popitem(last=F..)  # least recent is at head
+                evit_key, _ keys[mini].popitem(last=F..)  # least recent is at head
                 del values[evit_key]
                 del freqs[evit_key]
 
-            values[key] = value
-            freqs[key] = 0
-            keys[0][key] = DUMMY
+            values[key] value
+            freqs[key] 0
+            keys[0][key] DUMMY
             g.. key)  # update
-            mini = 1
+            mini 1
 
 
 # Your LFUCache object will be instantiated and called as such:

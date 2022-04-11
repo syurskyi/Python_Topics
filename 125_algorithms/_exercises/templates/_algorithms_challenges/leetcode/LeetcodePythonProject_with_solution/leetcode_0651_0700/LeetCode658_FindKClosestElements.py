@@ -12,14 +12,14 @@ c_ Solution(o..
         :rtype: List[int]
         """
         _______ b__, heapq
-        ind = b__.bisect_left(arr, x)
+        ind b__.bisect_left(arr, x)
         __ ind __ 0:
             r.. arr[:k]
         __ ind __ l..(arr
             r.. arr[-k:]
         heap    # list
         ___ i __ r..(m..(0, ind-k), m..(l..(arr), ind+k:
-            diff = a..(x-arr[i])
+            diff a..(x-arr[i])
             heapq.heappush(heap, (diff, arr[i]
         res    # list
         ___ _ __ r..(k
@@ -27,7 +27,7 @@ c_ Solution(o..
         r.. s..(res)
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1, 2, 3, 4, 5],
                 4,
@@ -48,7 +48,7 @@ c_ Solution(o..
             print('arr: %s' % arr)
             print('k: %s' % k)
             print('x: %s' % x)
-            result = findClosestElements(arr, k, x)
+            result findClosestElements(arr, k, x)
             print('result: %s' % result)
             print('-='*30+'-')
 

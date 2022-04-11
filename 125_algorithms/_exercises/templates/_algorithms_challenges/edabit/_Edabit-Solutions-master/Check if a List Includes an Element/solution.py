@@ -7,7 +7,7 @@ ___ check(lst, el
 
 ___ test
     print("test has started")
-    a_list = [4.6,4,7]
+    a_list [4.6,4,7]
     __ check(a_list,4) != T..
         print("error")
     __ check(a_list,2) != F..:

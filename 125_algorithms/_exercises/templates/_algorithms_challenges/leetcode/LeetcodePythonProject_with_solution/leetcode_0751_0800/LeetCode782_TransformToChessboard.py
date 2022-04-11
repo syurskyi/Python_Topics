@@ -9,8 +9,8 @@ c_ Solution(o..
         :type board: List[List[int]]
         :rtype: int
         """
-        n = l..(board)
-        rowSum, colSum, rowSwap, colSwap = 0, 0, 0, 0
+        n l..(board)
+        rowSum, colSum, rowSwap, colSwap 0, 0, 0, 0
         ___ i __ r..(n
             ___ j __ r..(n
                 __ board[0][0]^board[i][0]^board[0][j]^board[i][j] __ 1:
@@ -28,16 +28,16 @@ c_ Solution(o..
             r.. -1
         __ n % 2 __ 1:
             __ colSwap%2 __ 1:
-                colSwap = n-colSwap
+                colSwap n-colSwap
             __ rowSwap%2 __ 1:
-                rowSwap = n-rowSwap
+                rowSwap n-rowSwap
         ____
-            colSwap = m..(n-colSwap, colSwap)
-            rowSwap = m..(n-rowSwap, rowSwap)
+            colSwap m..(n-colSwap, colSwap)
+            rowSwap m..(n-rowSwap, rowSwap)
         r.. (colSwap+rowSwap)//2
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [0,1,1,0],
                 [0,1,1,0],
@@ -54,7 +54,7 @@ c_ Solution(o..
             ],
         ]
         ___ board __ testCases:
-            result = movesToChessboard(board)
+            result movesToChessboard(board)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -30,9 +30,9 @@ c_ Solution:
         i_lo and i_hi
         count = i_hi - i_lo + 1
         """
-        ret = 0
-        i_lo, i_hi, j = 0, 0, 0
-        sum_lo, sum_hi = 0, 0
+        ret 0
+        i_lo, i_hi, j 0, 0, 0
+        sum_lo, sum_hi 0, 0
         ___ j __ r..(l..(A:
             sum_lo += A[j]
             sum_hi += A[j]
@@ -54,11 +54,11 @@ c_ Solution:
         Continuous subarrays sum using prefix sum to target O(N), space O(N)
         Two pointer, O(N), space O(1)
         """
-        ret = 0
-        i = 0
-        j = 0
-        n = l..(A)
-        cur_sum = 0
+        ret 0
+        i 0
+        j 0
+        n l..(A)
+        cur_sum 0
         w.... j < n:
             cur_sum += A[j]
             __ cur_sum < S a.. j < n:

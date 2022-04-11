@@ -1,11 +1,11 @@
 _______ r__, c..
 
-STOCK_DATA = 'https://bites-data.s3.us-east-2.amazonaws.com/stocks.json'
+STOCK_DATA 'https://bites-data.s3.us-east-2.amazonaws.com/stocks.json'
 
 # pre-work: load JSON data into program
 
 w__ r__.S.. __ s:
-    data = s.g.. STOCK_DATA).j..
+    data s.g.. STOCK_DATA).j..
 
 
 # your turn:
@@ -19,7 +19,7 @@ ___ _cap_str_to_mln_float(cap
     __ cap __ "n/a":
         r.. 0
     ____
-        cap = cap.l..("$")
+        cap cap.l..("$")
         __ cap[-1] __ "B":
             r.. f__(cap.r..("B" * 1000
         ____
@@ -32,9 +32,9 @@ ___ get_industry_cap(industry
        return a float with 2 digit precision"""
     industry_cap_lookup    # dict
     ___ stock __ data:
-        cap = _cap_str_to_mln_float(stock["cap"])
+        cap _cap_str_to_mln_float(stock["cap"])
         __ stock["industry"] n.. __ industry_cap_lookup:
-            industry_cap_lookup[stock["industry"]] = [cap]
+            industry_cap_lookup[stock["industry"]] [cap]
         ____
             industry_cap_lookup[stock["industry"]].a..(cap)
     r.. r..(s..(industry_cap_lookup[industry]), 2)
@@ -45,15 +45,15 @@ ___ get_stock_symbol_with_highest_cap
        the _cap_str_to_mln_float to parse the cap values"""
     highest_cap    # dict
     ___ stock __ data:
-        cap = _cap_str_to_mln_float(stock["cap"])
-        highest_cap[stock["symbol"]] = cap
+        cap _cap_str_to_mln_float(stock["cap"])
+        highest_cap[stock["symbol"]] cap
     r.. m..(highest_cap, key=highest_cap.get)
 
 
 ___ get_sectors_with_max_and_min_stocks
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
-    counter = c...C..([stock["sector"] ___ stock __ data __ stock["sector"] != "n/a"])
+    counter c...C..([stock["sector"] ___ stock __ data __ stock["sector"] != "n/a"])
     r.. (counter.m..[0][0], counter.m..[-1][0])
 
 

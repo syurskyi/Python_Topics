@@ -36,9 +36,9 @@ The target node is a node in the tree.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -74,9 +74,9 @@ c_ Solution:
             dfs_down(node, K, ret)
             r.. 0
         ____
-            l = ancestor_dist(node.left, K, target, ret)
-            r = ancestor_dist(node.right, K, target, ret)
-            d = m..(l, r) + 1
+            l ancestor_dist(node.left, K, target, ret)
+            r ancestor_dist(node.right, K, target, ret)
+            d m..(l, r) + 1
             __ d __ K:
                 ret.a..(node.val)
             ____ l __ f__('inf'
@@ -116,11 +116,11 @@ c_ SolutionComplicated:
             r.. f__('inf')
 
         __ node.val __ target.val:
-            hm[node.val] = 0
+            hm[node.val] 0
         ____
-            left = ancestor_dist(node.left, target, hm)
-            right = ancestor_dist(node.right, target, hm)
-            hm[node.val] = m..(left, right) + 1
+            left ancestor_dist(node.left, target, hm)
+            right ancestor_dist(node.right, target, hm)
+            hm[node.val] m..(left, right) + 1
 
         r.. hm[node.val]
 
@@ -132,7 +132,7 @@ c_ SolutionComplicated:
         __ node.val __ target.val:
             r..
 
-        dist = m..(dist, hm[node.val])
+        dist m..(dist, hm[node.val])
         __ dist __ K:
             ret.a..(node.val)
 

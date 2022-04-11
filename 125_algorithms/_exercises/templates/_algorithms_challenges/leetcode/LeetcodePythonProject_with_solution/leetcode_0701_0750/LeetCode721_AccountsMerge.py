@@ -14,21 +14,21 @@ c_ Solution(o..
         unions    # dict
         ___ a __ accounts:
             ___ i __ r..(1, l..(a:
-                parents[a[i]] = a[i]
-                owner[a[i]] = a[0]
+                parents[a[i]] a[i]
+                owner[a[i]] a[0]
         ___ a __ accounts:
-            p = find(a[1], parents)
+            p find(a[1], parents)
             ___ i __ r..(2, l..(a:
-                parents[find(a[i], parents)] = p
+                parents[find(a[i], parents)] p
         ___ a __ accounts:
-            p = find(a[1], parents)
+            p find(a[1], parents)
             __ p n.. __ unions:
-                unions[p] = s..()
+                unions[p] s..()
             ___ i __ r..(1, l..(a:
                 unions[p].add(a[i])
         res    # list
         ___ p __ unions:
-            emails = s..(l..(unions[p]
+            emails s..(l..(unions[p]
             emails.insert(0, owner[p])
             res.a..(emails)
         r.. res
@@ -37,7 +37,7 @@ c_ Solution(o..
         r.. s __ hashmap[s] __ s ____ find(hashmap[s], hashmap)
     
     ___ test
-        testCases = [
+        testCases [
             [
                 ["John", "johnsmith@mail.com", "john00@mail.com"],
                 ["John", "johnnybravo@mail.com"],
@@ -55,7 +55,7 @@ c_ Solution(o..
         ___ accounts __ testCases:
             print('accounts:')
             print('\n'.j..([s..(row) ___ row __ accounts]
-            result = accountsMerge(accounts)
+            result accountsMerge(accounts)
             print('result:')
             print('\n'.j..([s..(row) ___ row __ result]
             print('-='*30+'-')

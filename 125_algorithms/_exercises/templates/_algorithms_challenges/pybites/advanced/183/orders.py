@@ -3,8 +3,8 @@ ____ u__.r.. _______ u..
 
 _______ p.... __ pd
 
-TMP = __.g.. TMP  /tmp
-EXCEL = __.p...j..(TMP, 'order_data.xlsx')
+TMP __.g.. TMP  /tmp
+EXCEL __.p...j..(TMP, 'order_data.xlsx')
 __ n.. __.p...i..(EXCEL
     u..(
         'https://bites-data.s3.us-east-2.amazonaws.com/order_data.xlsx',
@@ -16,7 +16,7 @@ ___ load_excel_into_dataframe(excel=EXCEL
     """Load the SalesOrders sheet of the excel book (EXCEL variable)
        into a Pandas DataFrame and return it to the caller"""
 
-    sales = pd.read_excel(excel,sheet_name='SalesOrders')
+    sales pd.read_excel(excel,sheet_name='SalesOrders')
     r.. sales
 
 
@@ -30,7 +30,7 @@ ___ get_year_region_breakdown(df
 ___ get_best_sales_rep(df
     """Return a tuple of the name of the df rep and
        the total of his/her df"""
-    top = df.groupby('Rep').Total.s..().nlargest(1)
+    top df.groupby('Rep').Total.s..().nlargest(1)
 
     r.. l..(top.i..[0]
 
@@ -39,6 +39,6 @@ ___ get_most_sold_item(df
        and the number of units sold"""
 
 
-    top = df.groupby('Item').Units.s..().nlargest(1)
+    top df.groupby('Item').Units.s..().nlargest(1)
 
     r.. l..(top.i..[0]

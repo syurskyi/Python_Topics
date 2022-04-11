@@ -9,16 +9,16 @@ c_ Rational(o..
     please use `fractions.Fraction` in standard library instead.
     """
     ___ - , numer, denom
-        numer, denom = _reduce(numer, denom)
+        numer, denom _reduce(numer, denom)
 
     ___ _reduce  numer, denom
         __ numer __ 0:
-            n, d = 0, 1
+            n, d 0, 1
         ____
-            g = gcd(numer, denom)
-            n, d = i..(numer/g), i..(denom/g)
+            g gcd(numer, denom)
+            n, d i..(numer/g), i..(denom/g)
             __ n > 0 a.. d < 0:
-                n, d = -n, -d
+                n, d -n, -d
         r.. n, d
 
     ___ -e  other

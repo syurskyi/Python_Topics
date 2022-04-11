@@ -49,12 +49,12 @@ c_ Solution:
         __ K __ 0:
             r.. 1
 
-        F = [0 ___ _ __ r..(N+1)]
-        F[0] = 1
-        cur_sum = F[0]
-        ret = 0
+        F [0 ___ _ __ r..(N+1)]
+        F[0] 1
+        cur_sum F[0]
+        ret 0
         ___ i __ r..(1, N+1
-            F[i] = cur_sum * (1/W)
+            F[i] cur_sum * (1/W)
             __ i >_ K:
                 ret += F[i]
                 # stop
@@ -73,8 +73,8 @@ c_ Solution:
 
         O(N^2)
         """
-        F = [0 ___ _ __ r..(K+W+1)]
-        F[0] = 1
+        F [0 ___ _ __ r..(K+W+1)]
+        F[0] 1
         ___ i __ r..(1, K+W+1
             ___ j __ r..(W, 0, -1
                 __ i - j >_ K:
@@ -82,7 +82,7 @@ c_ Solution:
                 __ i - j >_ 0:
                     F[i] += F[i-j] * 1 / W
 
-        ret = s..(F[1:N+1])  # error
+        ret s..(F[1:N+1])  # error
         print(F, ret)
         r.. ret
 

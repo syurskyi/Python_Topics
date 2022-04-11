@@ -20,24 +20,24 @@ c_ Solution(o..
         __ node __ N..
             r.. N..
         queue    # list
-        start_cloned_node = UndirectedGraphNode(node.label)
-        visited = s..()
+        start_cloned_node UndirectedGraphNode(node.label)
+        visited s..()
         # A dictionary that maps labels to cloned nodes
-        d = {node: start_cloned_node}
+        d {node: start_cloned_node}
         queue.a..(node)
         w.... queue:
-            node = queue.p.. 0)
+            node queue.p.. 0)
             visited.add(node)
-            cloned_node = d[node]
+            cloned_node d[node]
             cloned_neighbors    # list
             ___ neighbor __ node.neighbors:
                 __ neighbor n.. __ visited:
                     queue.a..(neighbor)
                 __ neighbor n.. __ d:
-                    cloned_neighbor = UndirectedGraphNode(neighbor.label)
-                    d[neighbor] = cloned_neighbor
+                    cloned_neighbor UndirectedGraphNode(neighbor.label)
+                    d[neighbor] cloned_neighbor
                 ____
-                    cloned_neighbor = d[neighbor]
+                    cloned_neighbor d[neighbor]
                 cloned_neighbors.a..(cloned_neighbor)
-            cloned_node.neighbors = cloned_neighbors
+            cloned_node.neighbors cloned_neighbors
         r.. start_cloned_node

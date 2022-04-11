@@ -28,9 +28,9 @@ Each value in each tree will be a unique integer in the range [0, 99].
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:

@@ -24,7 +24,7 @@ Input:
 Output:
 "ffffffff"
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..

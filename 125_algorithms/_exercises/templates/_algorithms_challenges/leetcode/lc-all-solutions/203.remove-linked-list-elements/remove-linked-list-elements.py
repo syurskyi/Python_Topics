@@ -11,12 +11,12 @@ c_ Solution(o..
     :type val: int
     :rtype: ListNode
     """
-    dummy = ListNode(-1)
-    dummy.next = head
-    p = dummy
+    dummy ListNode(-1)
+    dummy.next head
+    p dummy
     w.... p.next:
       __ p.next.val __ val:
-        p.next = p.next.next
+        p.next p.next.next
       ____
-        p = p.next
+        p p.next
     r.. dummy.next

@@ -11,10 +11,10 @@ c_ Solution(o..
         :rtype: int
         """
         people.s..()
-        l, r = 0, l..(people)-1
-        res = 0
+        l, r 0, l..(people)-1
+        res 0
         w.... l <_ r:
-            w = people[r]
+            w people[r]
             __ l < r a.. w + people[l] <_ limit:
                 l += 1
             res += 1
@@ -22,7 +22,7 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [3,2,3,2,2],
                 6,
@@ -38,7 +38,7 @@ c_ Solution(o..
             ],
         ]
         ___ people, limit __ testCases:
-            res = numRescueBoats(people, limit)
+            res numRescueBoats(people, limit)
             print('res: %s' % res)
             print('-='*30+'-')
 

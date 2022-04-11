@@ -10,8 +10,8 @@ c_ Solution(o..
         :type target: int
         :rtype: List[int]
         """
-        nums = numbers
-        i, j = 0, l..(nums)-1
+        nums numbers
+        i, j 0, l..(nums)-1
         w.... i < j:
             __ nums[i]+nums[j] __ target:
                 r.. [i+1, j+1]

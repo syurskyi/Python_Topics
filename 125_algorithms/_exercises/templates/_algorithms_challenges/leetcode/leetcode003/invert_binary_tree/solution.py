@@ -31,8 +31,8 @@ c_ Solution(o..
         __ root __ N..
             r.. N..
         ____
-            left = invertTree(root.left)
-            right = invertTree(root.right)
-            root.left = right
-            root.right = left
+            left invertTree(root.left)
+            right invertTree(root.right)
+            root.left right
+            root.right left
             r.. root

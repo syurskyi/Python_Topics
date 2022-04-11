@@ -16,8 +16,8 @@ c_ Solution(o..
     __ n.. root:
       r.. root
 
-    left = lowestCommonAncestor(root.left, p, q)
-    right = lowestCommonAncestor(root.right, p, q)
+    left lowestCommonAncestor(root.left, p, q)
+    right lowestCommonAncestor(root.right, p, q)
 
     __ left a.. right:
       r.. root

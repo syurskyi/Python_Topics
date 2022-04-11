@@ -1,17 +1,17 @@
 c_ L..(o..
   $
   ___ delete(elem
-    elem.prev.next = elem.next
-    elem.next.prev = elem.prev
-    elem.next = elem.prev = N..
+    elem.prev.next elem.next
+    elem.next.prev elem.prev
+    elem.next elem.prev N..
     r.. elem
 
   $
   ___ move(elem, newPrev, newNext
-    elem.prev = newPrev
-    elem.next = newNext
-    newPrev.next = elem
-    newNext.prev = elem
+    elem.prev newPrev
+    elem.next newNext
+    newPrev.next elem
+    newNext.prev elem
 
   $
   ___ a..(head, elem
@@ -27,15 +27,15 @@ c_ L..(o..
 
   $
   ___ initHead(head
-    head.prev = head.next = head
+    head.prev head.next head
 
 
 c_ Node(o..
   ___ - , val
-    val = val
-    prev = N..
-    next = N..
-    keys = s..()
+    val val
+    prev N..
+    next N..
+    keys s..()
 
   ___ add  key
     keys |= {key}
@@ -59,7 +59,7 @@ c_ AllOne(o..
     Initialize your data structure here.
     """
     d    # dict
-    head = Node(-1)
+    head Node(-1)
     L...initHead(head)
 
   ___ inc  key
@@ -68,32 +68,32 @@ c_ AllOne(o..
     :type key: str
     :rtype: void
     """
-    head = head
+    head head
     __ key n.. __ d:
       __ head.next.val __ 1:
-        d[key] = head.next
+        d[key] head.next
         d[key].add(key)
       ____
-        newNode = Node(1)
+        newNode Node(1)
         newNode.add(key)
         L...insertAfter(head, newNode)
-        d[key] = newNode
+        d[key] newNode
     ____
-      node = d[key]
-      newNode = N..
+      node d[key]
+      newNode N..
       __ node.next.val != node.val + 1:
-        newNode = Node(node.val + 1)
+        newNode Node(node.val + 1)
         newNode.add(key)
         L...insertAfter(node, newNode)
       ____
-        newNode = node.next
+        newNode node.next
         newNode.add(key)
 
       node.remove(key)
       __ node.isEmpty
         L...delete(node)
         del d[key]
-      d[key] = newNode
+      d[key] newNode
 
   ___ dec  key
     """
@@ -103,27 +103,27 @@ c_ AllOne(o..
     """
     __ key n.. __ d:
       r..
-    head = head
-    node = d[key]
+    head head
+    node d[key]
     __ node.val __ 1:
       node.remove(key)
       __ node.isEmpty
         L...delete(node)
       del d[key]
     ____
-      newNode = N..
+      newNode N..
       __ node.prev.val != node.val - 1:
-        newNode = Node(node.val - 1)
+        newNode Node(node.val - 1)
         newNode.add(key)
         L...insertAfter(node.prev, newNode)
       ____
-        newNode = node.prev
+        newNode node.prev
         newNode.add(key)
       node.remove(key)
       __ node.isEmpty
         L...delete(node)
         del d[key]
-      d[key] = newNode
+      d[key] newNode
 
   ___ getMaxKey
     """

@@ -11,20 +11,20 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ num __ nums:
-            hashmap[num] = hashmap.g.. num, 0)+1
-        maxLen = 0
+            hashmap[num] hashmap.g.. num, 0)+1
+        maxLen 0
         ___ num, count __ hashmap.i..:
             __ num+1 __ hashmap:
-                maxLen = m..(maxLen, count+hashmap[num+1])
+                maxLen m..(maxLen, count+hashmap[num+1])
         r.. maxLen
     
     ___ test
-        testCases = [
+        testCases [
             [1,3,2,2,5,2,3,7],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = findLHS(nums)
+            result findLHS(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

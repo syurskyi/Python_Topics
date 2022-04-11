@@ -1,7 +1,7 @@
 c_ Point(o..
     ___ - , x, y
-        x = x
-        y = y
+        x x
+        y y
 
     ___  -r
         r.. 'Point({}:{})'.f..(x, y)

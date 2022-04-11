@@ -29,31 +29,31 @@ c_ Solution:
         __ s __ p __ '':
             r.. T..
 
-        m, n = l..(s), l..(p)
-        MULTI = '*'
-        ANY = '.'
+        m, n l..(s), l..(p)
+        MULTI '*'
+        ANY '.'
 
         """
         `dp[i][j]` means the substr end at `s[i - 1]` was matched by
         the substr end at `p[j - 1]`
         """
-        dp = [[F..] * (n + 1) ___ _ __ r..(m + 1)]
-        dp[0][0] = T..
+        dp [[F..] * (n + 1) ___ _ __ r..(m + 1)]
+        dp[0][0] T..
         # dp[i][0] = False  # i = 1 -> m + 1
         # dp[0][j] -> ?, need to check
 
         ___ i __ r..(m + 1
             ___ j __ r..(1, n + 1
                 __ i > 0 a.. p[j - 1] __ s[i - 1] a.. dp[i - 1][j - 1]:
-                    dp[i][j] = T..
+                    dp[i][j] T..
                 ____ i > 0 a.. p[j - 1] __ ANY a.. dp[i - 1][j - 1]:
-                    dp[i][j] = T..
+                    dp[i][j] T..
                 ____ j > 1 a.. p[j - 1] __ MULTI:
                     __ dp[i][j - 2]:
-                        dp[i][j] = T..
+                        dp[i][j] T..
                     ____ i > 0 a.. p[j - 2] __ s[i - 1] a.. dp[i - 1][j]:
-                        dp[i][j] = T..
+                        dp[i][j] T..
                     ____ i > 0 a.. p[j - 2] __ ANY a.. dp[i - 1][j]:
-                        dp[i][j] = T..
+                        dp[i][j] T..
 
         r.. dp[m][n]

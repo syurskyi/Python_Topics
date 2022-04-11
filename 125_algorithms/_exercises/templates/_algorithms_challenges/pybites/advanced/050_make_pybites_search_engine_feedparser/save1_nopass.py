@@ -5,9 +5,9 @@ ____ d__ _______ d__
 _______ __
 
 
-FEED = 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
+FEED 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
 
-Entry = n..('Entry', 'date title link tags')
+Entry n..('Entry', 'date title link tags')
 
 
 ___ _convert_struct_time_to_dt(stime
@@ -17,8 +17,8 @@ ___ _convert_struct_time_to_dt(stime
     -> date(2016, 12, 28)
     """
     __ t..(stime) __ s..:
-        f.. = '%a, %d %b %Y %H:%M:%S %z'
-        dt_object = d__.s..(stime, f..)
+        f.. '%a, %d %b %Y %H:%M:%S %z'
+        dt_object d__.s..(stime, f..)
         r.. dt_object.date()
     ____
         r.. d__.fromtimestamp(mktime(stime.date()
@@ -28,11 +28,11 @@ ___ get_feed_entries(feed=FEED
     """Use feedparser to parse PyBites RSS feed.
        Return a list of Entry namedtuples (date = date, drop time part)
     """
-    file = p..(feed)
+    file p..(feed)
     output    # list
     ___ entry __ file.entries:
-        date = _convert_struct_time_to_dt(entry.published)
-        tag_list = [tag 'term'  ___ tag __ entry.tags]
+        date _convert_struct_time_to_dt(entry.published)
+        tag_list [tag 'term'  ___ tag __ entry.tags]
         output.a..(Entry(date, entry.title, entry.link, tag_list
     r.. output
 
@@ -48,15 +48,15 @@ ___ filter_entries_by_tag(s.., entry
           e.g. flask|django should match entries with either tag
        3. Else: match if search is in tags
     """
-    s.. = s...l..
-    tag_list = [tag ___ tag __ entry.tags]
+    s.. s...l..
+    tag_list [tag ___ tag __ entry.tags]
     __ n.. __.s..(r'\|', s..) a.. n.. __.s..(r'\&', s..
         r.. s.. __ tag_list
     __ __.s..(r'\|', s..
-        s.. = __.s..(r'\|', s..)
+        s.. __.s..(r'\|', s..)
         r.. any([item __ tag_list ___ item __ s..])
     __ __.s..(r'\&', s..
-        s.. = __.s..(r'\&', s..)
+        s.. __.s..(r'\&', s..)
         r.. a..([item __ tag_list ___ item __ s..])
     r.. s..
 
@@ -73,10 +73,10 @@ ___ main
        6. Secondly, print the number of matches: 'n entries matched'
           (use entry if only 1 match)
     """
-    entries = get_feed_entries()
+    entries get_feed_entries()
     w... T...
         ___
-            search_term = input('Search for (q for exit): ')
+            search_term input('Search for (q for exit): ')
         ______ EOFError:
             _____
         
@@ -88,11 +88,11 @@ ___ main
             ___ entry __ entries:
                 __ filter_entries_by_tag(search_term, entry
                     output_list.a..(entry)
-            output_list = s..(output_list, key=l.... x: x.date)
+            output_list s..(output_list, key=l.... x: x.date)
             
-            titles = ''.j..([entry.title ___ entry __ output_list])
+            titles ''.j..([entry.title ___ entry __ output_list])
 
-            output_number = l..(output_list)
+            output_number l..(output_list)
             __ output_number < 1:
                 print _*{output_number} entries matched')
             __ output_number __ 1:

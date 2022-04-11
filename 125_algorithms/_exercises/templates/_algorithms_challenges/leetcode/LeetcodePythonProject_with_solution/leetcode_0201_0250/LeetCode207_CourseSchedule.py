@@ -11,10 +11,10 @@ c_ Solution(o..
         :type prerequisites: List[List[int]]
         :rtype: bool
         """
-        graph = [[] ___ _ __ r..(numCourses)]
-        degree = [0]*numCourses
+        graph [[] ___ _ __ r..(numCourses)]
+        degree [0]*numCourses
         queue    # list
-        count = 0
+        count 0
         ___ prereq __ prerequisites:
             degree[prereq[0]] += 1
             graph[prereq[1]].a..(prereq[0])
@@ -24,7 +24,7 @@ c_ Solution(o..
                 queue.a..(i)
                 count += 1
         w.... queue:
-            course = queue.p.. 0)
+            course queue.p.. 0)
             ___ pointer __ graph[course]:
                 degree[pointer] -_ 1
                 __ degree[pointer] __ 0:
@@ -43,8 +43,8 @@ c_ Solution(o..
         :type prerequisites: List[List[int]]
         :rtype: bool
         """
-        graph = [[] ___ _ __ r..(numCourses)]
-        visited = [F..]*numCourses
+        graph [[] ___ _ __ r..(numCourses)]
+        visited [F..]*numCourses
         ___ i, prereq __ e..(prerequisites
             graph[prereq[1]].a..(prereq[0])
         ___ i __ r..(numCourses
@@ -56,15 +56,15 @@ c_ Solution(o..
         __ visited[course]:
             r.. F..
         ____
-            visited[course] = T..
+            visited[course] T..
         ___ precourse __ graph[course]:
             __ n.. dfs(graph, visited, precourse
                 r.. F..
-        visited[course] = F..
+        visited[course] F..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             (2, [[1, 0]]),
             (5, [[0, 1], [1, 2], [2, 3]]),
             (6, [[0, 2], [2, 1], [1, 3]]),
@@ -74,9 +74,9 @@ c_ Solution(o..
         ___ numCourses, prerequisites __ testCases:
             print('numCourses: %s' % (numCourses
             print('prerequisites: %s' % (prerequisites
-            result = canFinishDFS(numCourses, prerequisites)
+            result canFinishDFS(numCourses, prerequisites)
             print('DFS Result: %s' % (result
-            result = canFinishBFS(numCourses, prerequisites)
+            result canFinishBFS(numCourses, prerequisites)
             print('BFS Result: %s' % (result
             print('-='*20+'-')
 

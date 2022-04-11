@@ -11,14 +11,14 @@ Given the following binary tree,
   5     4       <---
 You should return [1, 3, 4].
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -38,11 +38,11 @@ c_ Solution:
         w.... cur_lvl:
             ret.a..(cur_lvl[-1].val)
             w.... cur_lvl:
-                cur = cur_lvl.p.. 0)
+                cur cur_lvl.p.. 0)
                 __ cur.left: nxt_lvl.a..(cur.left)
                 __ cur.right: nxt_lvl.a..(cur.right)
 
-            cur_lvl = nxt_lvl
+            cur_lvl nxt_lvl
             nxt_lvl    # list
 
         r.. ret

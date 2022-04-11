@@ -7,9 +7,9 @@ Created on Mar 1, 2017
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution:
     # @param {TreeNode} root
@@ -30,11 +30,11 @@ c_ Solution:
             helper(root.right, res, curr+('->%s' % root.right.val
     
     ___ test
-        testCases = [
+        testCases [
             TreeNode(1, TreeNode(2, N.., TreeNode(5, TreeNode(3,
         ]
         ___ root __ testCases:
-            result = binaryTreePaths(root)
+            result binaryTreePaths(root)
             print('result: %s' % (result
 
 __ _____ __ _____

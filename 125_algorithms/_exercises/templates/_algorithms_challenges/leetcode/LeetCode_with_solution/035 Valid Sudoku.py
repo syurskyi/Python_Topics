@@ -8,7 +8,7 @@ A partially filled sudoku which is valid.
 Note:
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ isValidSudoku  board
         """
@@ -39,7 +39,7 @@ c_ Solution:
             ___ j __ x..(9
                 # check row
                 ___
-                    row_element = i..(board[i][j])
+                    row_element i..(board[i][j])
                     __ row_element __ row:
                         r.. F..
                     ____
@@ -49,7 +49,7 @@ c_ Solution:
 
                 # check column
                 ___
-                    column_element = i..(board[j][i])
+                    column_element i..(board[j][i])
                     __ column_element __ column:
                         r.. F..
                     ____
@@ -59,7 +59,7 @@ c_ Solution:
 
                 # check square
                 ___
-                    square_element = i..(board[i/3*3 + j/3][i%3*3 + j%3])
+                    square_element i..(board[i/3*3 + j/3][i%3*3 + j%3])
                     __ square_element __ square:
                         r.. F..
                     ____

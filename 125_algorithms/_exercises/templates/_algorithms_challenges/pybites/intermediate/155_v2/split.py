@@ -14,7 +14,7 @@ ___ split_words_and_quoted_text(text
     """
 
 
-    values = __.f..(r'"(.+?)"|(\w+)',text)
+    values __.f..(r'"(.+?)"|(\w+)',text)
 
 
     r.. [value[0] __ value[0] ____ value[1] ___ value __ values]
@@ -24,7 +24,7 @@ ___ split_words_and_quoted_text(text
 __ _______ __ _______
 
 
-    text = 'Should give "3 words only"'
+    text 'Should give "3 words only"'
 
 
     print(split_words_and_quoted_text(text

@@ -25,25 +25,25 @@ c_ Solution:
         __ B n.. __ D:
             D.add(B)
 
-        n = l..(A)
-        next_words = [N..] * n
+        n l..(A)
+        next_words [N..] * n
         ___ i __ r..(n
-            next_words[i] = W    # dict
+            next_words[i] W    # dict
             ___ word __ D:
-                key = word[:i] + word[i + 1:]
+                key word[:i] + word[i + 1:]
                 __ key n.. __ W:
-                    W[key] = s..()
+                    W[key] s..()
                 W[key].add(word)
 
-        queue = [B]
-        distance = {B: 1}
+        queue [B]
+        distance {B: 1}
         ___ word __ queue:
             __ word __ A:
                 _____
             ___ _word __ get_next_word(word, next_words
                 __ _word __ distance:
                     _____
-                distance[_word] = distance[word] + 1
+                distance[_word] distance[word] + 1
                 queue.a..(_word)
 
         dfs(A, B, next_words, distance, ans, [A])
@@ -64,7 +64,7 @@ c_ Solution:
 
     ___ get_next_word  word, next_words
         ___ i __ r..(l..(word:
-            key = word[:i] + word[i + 1:]
+            key word[:i] + word[i + 1:]
             __ key n.. __ next_words[i]:
                 _____
             ___ _word __ next_words[i][key]:

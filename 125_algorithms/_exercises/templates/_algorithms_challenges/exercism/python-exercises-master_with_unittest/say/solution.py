@@ -1,13 +1,13 @@
 ___ say(number, recursive=F..
-    small = d..(e..((
+    small d..(e..((
         'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
         'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
         'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty')))
 
-    tens = {20: 'twenty', 30: 'thirty', 40: 'forty', 50: 'fifty',
+    tens {20: 'twenty', 30: 'thirty', 40: 'forty', 50: 'fifty',
             60: 'sixty', 70: 'seventy', 80: 'eighty', 90: 'ninety'}
 
-    k, m, b, t = 1e3, 1e6, 1e9, 1e12
+    k, m, b, t 1e3, 1e6, 1e9, 1e12
 
     __ number < 0:
         r.. AttributeError('number is negative')

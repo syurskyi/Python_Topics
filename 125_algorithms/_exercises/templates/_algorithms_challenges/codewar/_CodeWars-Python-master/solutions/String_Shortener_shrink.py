@@ -9,5 +9,5 @@ ___ shorten(s__, length, glue="..."
         r.. s__
     __ length __ l..(glue) + 1 o. l..(glue) > length:
         r.. s__[:length]
-    shortened = length - l..(glue)
+    shortened length - l..(glue)
     r.. s__[:i..(shortened / 2)] + glue + s__[-(i..(shortened / 2) + (shortened % 2:]

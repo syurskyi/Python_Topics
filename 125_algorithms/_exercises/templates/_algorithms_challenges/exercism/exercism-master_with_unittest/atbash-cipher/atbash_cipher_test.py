@@ -30,8 +30,8 @@ c_ AtbashCipherTest(unittest.TestCase
             encode("Truth is fiction."), "gifgs rhurx grlm")
 
     ___ test_encode_all_things
-        plaintext = "The quick brown fox jumps over the lazy dog."
-        ciphertext = "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt"
+        plaintext "The quick brown fox jumps over the lazy dog."
+        ciphertext "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt"
         assertMultiLineEqual(encode(plaintext), ciphertext)
 
     ___ test_decode_word
@@ -47,16 +47,16 @@ c_ AtbashCipherTest(unittest.TestCase
             d.. "gvhgr mt123 gvhgr mt"), "testing123testing")
 
     ___ test_decode_all_the_letters
-        ciphertext = "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt"
-        plaintext = "thequickbrownfoxjumpsoverthelazydog"
+        ciphertext "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt"
+        plaintext "thequickbrownfoxjumpsoverthelazydog"
         assertMultiLineEqual(d.. ciphertext), plaintext)
 
     ___ test_decode_with_too_many_spaces
         assertMultiLineEqual(d.. "vc vix    r hn"), "exercism")
 
     ___ test_decode_with_no_spaces
-        ciphertext = "zmlyhgzxovrhlugvmzhgvkkrmthglmv"
-        plaintext = "anobstacleisoftenasteppingstone"
+        ciphertext "zmlyhgzxovrhlugvmzhgvkkrmthglmv"
+        plaintext "anobstacleisoftenasteppingstone"
         assertMultiLineEqual(d.. ciphertext), plaintext)
 
     # additional track specific test

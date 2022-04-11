@@ -8,14 +8,14 @@ c_ MovieRented(N..
     date: date
 
 
-RentingHistory = S..[MovieRented]
-STREAMING_COST_PER_MONTH = 12
-STREAM, RENT = 'stream', 'rent'
+RentingHistory S..[MovieRented]
+STREAMING_COST_PER_MONTH 12
+STREAM, RENT 'stream', 'rent'
 
 
 ___ rent_or_stream(
     renting_history: RentingHistory,
-    streaming_cost_per_month: i.. = STREAMING_COST_PER_MONTH
+    streaming_cost_per_month: i.. STREAMING_COST_PER_MONTH
 ) __ Dict[s.., s..]:
     """Function that calculates if renting movies one by one is
        cheaper than streaming movies by months.
@@ -30,17 +30,17 @@ ___ rent_or_stream(
     """
     movie_history    # dict
     ___ movie __ renting_history:
-        movie_date = movie.date.s..("%Y-%m")
+        movie_date movie.date.s..("%Y-%m")
         __ movie_date n.. __ movie_history:
-            movie_history[movie_date] = [movie.price]
+            movie_history[movie_date] [movie.price]
         ____
             movie_history[movie_date].a..(movie.price)
 
     ___ key, value __ movie_history.i..:
         __ s..(value) <_ streaming_cost_per_month:
-            movie_history[key] = "rent"
+            movie_history[key] "rent"
         ____
-            movie_history[key] = "stream"
+            movie_history[key] "stream"
 
     r.. movie_history
 

@@ -8,7 +8,7 @@ Follow up: Could you solve it without loops/recursion?
 """
 
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..

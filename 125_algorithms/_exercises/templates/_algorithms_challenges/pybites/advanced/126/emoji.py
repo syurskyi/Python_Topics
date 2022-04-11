@@ -2,7 +2,7 @@ _______ ___
 _______ unicodedata
 
 
-START_EMOJI_RANGE = 100000  # estimate
+START_EMOJI_RANGE 100000  # estimate
 
 
 ___ what_means_emoji(emoji
@@ -25,8 +25,8 @@ ___ _make_emoji_mapping
 
     ___ i __ r..(START_EMOJI_RANGE,___.maxunicode + 1
         ___
-            meaning = what_means_emoji(chr(i
-            mapping[chr(i)] = meaning
+            meaning what_means_emoji(chr(i
+            mapping[chr(i)] meaning
         ______:
             p..
 
@@ -37,9 +37,9 @@ ___ _make_emoji_mapping
 ___ find_emoji(term
     """Return emojis and their texts that match (case insensitive)
        term, print matches to console"""
-    term = term.l..
+    term term.l..
 
-    emoji_mapping = _make_emoji_mapping()
+    emoji_mapping _make_emoji_mapping()
 
     # ... your turn ...
 

@@ -5,14 +5,14 @@ Calling next() will return the next smallest number in the BST.
 
 Note: next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ BSTIterator:
@@ -20,7 +20,7 @@ c_ BSTIterator:
         """
         :type root: TreeNode
         """
-        cur = root
+        cur root
         stk    # list
 
     ___ hasNext
@@ -36,8 +36,8 @@ c_ BSTIterator:
         """
         w.... cur:
             stk.a..(cur)
-            cur = cur.left
+            cur cur.left
 
-        nxt = stk.p.. )
-        cur = nxt.right
+        nxt stk.p.. )
+        cur nxt.right
         r.. nxt.val

@@ -34,7 +34,7 @@ c_ Solution:
 
             r.. ''
 
-        times = [i..(t) ___ t __ t__ __ t != ':'
+        times [i..(t) ___ t __ t__ __ t != ':'
         d..    # list
 
         ___ a __ s..(times
@@ -43,14 +43,14 @@ c_ Solution:
 
             d...a..(a)
 
-        ids = [d...i.. t) ___ t __ times]
+        ids [d...i.. t) ___ t __ times]
         ids[-1] += 1
 
         w.... n.. is_valid(ids, d..
             ids[-1] += 1
 
-        h = d..[ids[0]] * 10 + d..[ids[1]]
-        m = d..[ids[2]] * 10 + d..[ids[3]]
+        h d..[ids[0]] * 10 + d..[ids[1]]
+        m d..[ids[2]] * 10 + d..[ids[3]]
 
         r.. '{}:{}'.f..(
             '0' + s..(h) __ h < 10 ____ s..(h),
@@ -58,22 +58,22 @@ c_ Solution:
         )
 
     ___ is_valid  ids, d..
-        n = l..(d..)
-        carry = 0
-        i = l..(ids) - 1
+        n l..(d..)
+        carry 0
+        i l..(ids) - 1
 
         w.... i >_ 0:
             carry += ids[i]
-            ids[i] = carry % n
-            carry = carry // n
+            ids[i] carry % n
+            carry carry // n
             i -_ 1
 
         __ carry:
             ids |  = [0] * l..(ids)
             r.. T..
 
-        h = d..[ids[0]] * 10 + d..[ids[1]]
-        m = d..[ids[2]] * 10 + d..[ids[3]]
+        h d..[ids[0]] * 10 + d..[ids[1]]
+        m d..[ids[2]] * 10 + d..[ids[3]]
 
         __ 0 <_ h < 24 a.. 0 <_ m < 60:
             r.. T..

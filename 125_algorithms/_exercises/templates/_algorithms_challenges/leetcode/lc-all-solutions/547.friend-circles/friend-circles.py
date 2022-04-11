@@ -1,25 +1,25 @@
 c_ UnionFind(o..
   ___ - , n
-    dad = [i ___ i __ r..(n)]
-    rank = [0 ___ i __ r..(n)]
-    count = n
+    dad [i ___ i __ r..(n)]
+    rank [0 ___ i __ r..(n)]
+    count n
 
   ___ find  x
-    dad = dad
+    dad dad
     __ dad[x] != x:
-      dad[x] = find(dad[x])
+      dad[x] find(dad[x])
     r.. dad[x]
 
   ___ union  x, y
-    dad = dad
-    rank = rank
-    x, y = map(find, [x, y])
+    dad dad
+    rank rank
+    x, y map(find, [x, y])
     __ x __ y:
       r.. F..
     __ rank[x] > rank[y]:
-      dad[y] = x
+      dad[y] x
     ____
-      dad[x] = y
+      dad[x] y
       __ rank[x] __ rank[y]:
         rank[y] += 1
     count -_ 1
@@ -35,8 +35,8 @@ c_ Solution(o..
     :type M: List[List[int]]
     :rtype: int
     """
-    uf = UnionFind(l..(M
-    ans = 0
+    uf UnionFind(l..(M
+    ans 0
     ___ i __ r..(l..(M:
       ___ j __ r..(l..(M[0]:
         __ M[i][j] __ 1:

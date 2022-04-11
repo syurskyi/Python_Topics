@@ -18,7 +18,7 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        n = l..(nums)
+        n l..(nums)
         __ n __ 0:
             r.. 0
         ____ n __ 1:
@@ -26,20 +26,20 @@ c_ Solution(o..
         r.. m..(rob_aux(nums, 0), rob_aux(nums, 1
 
     ___ rob_aux  nums, left
-        n = l..(nums) - 1
-        t = [0 ___ i __ r..(n + 1)]
+        n l..(nums) - 1
+        t [0 ___ i __ r..(n + 1)]
         __ n __ 0:
             r.. t[n]
-        t[1] = nums[left]
+        t[1] nums[left]
         __ n <_ 1:
             r.. t[n]
-        t[2] = m..(nums[left: left + 2])
+        t[2] m..(nums[left: left + 2])
         ___ i __ r..(3, n + 1
-            t[i] = m..(t[i - 2] + nums[left + i - 1], t[i - 1])
+            t[i] m..(t[i - 2] + nums[left + i - 1], t[i - 1])
         r.. t[n]
 
-a1 = [1]
-a2 = [4, 1, 6, 10, 5, 13, 2, 7]
-s = Solution()
+a1 [1]
+a2 [4, 1, 6, 10, 5, 13, 2, 7]
+s Solution()
 print(s.rob(a1
 print(s.rob(a2

@@ -23,14 +23,14 @@ After the rain, water are trapped between the blocks. The total volume of water 
 """
 _______ heapq
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Cell:
     ___ - , i, j, h
-        i = i
-        j = j
-        h = h
+        i i
+        j j
+        h h
 
     ___ __cmp__  other
         r.. h - other.h
@@ -38,7 +38,7 @@ c_ Cell:
 
 c_ Solution(o..
     ___ -
-        dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+        dirs [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ trapRainWater  mat
         """
@@ -51,35 +51,35 @@ c_ Solution(o..
         """
         __ n.. mat: r.. 0
 
-        m, n = l..(mat), l..(mat[0])
-        visited = [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
+        m, n l..(mat), l..(mat[0])
+        visited [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
         h    # list
         # add cells at the four edges
         ___ i __ x..(m
-            visited[i][0] = T..
+            visited[i][0] T..
             heapq.heappush(h, Cell(i, 0, mat[i][0]
-            visited[i][n-1] = T..
+            visited[i][n-1] T..
             heapq.heappush(h, Cell(i, n-1, mat[i][n-1]
 
         ___ j __ x..(1, n-1
-            visited[0][j] = T..
+            visited[0][j] T..
             heapq.heappush(h, Cell(0, j, mat[0][j]
-            visited[m-1][j] = T..
+            visited[m-1][j] T..
             heapq.heappush(h, Cell(m-1, j, mat[m-1][j]
 
         # BFS with heap
-        trapped = 0
+        trapped 0
         w.... h:
-            cur = heapq.heappop(h)
+            cur heapq.heappop(h)
             ___ dir __ dirs:
-                I, J = cur.i+dir[0], cur.j+dir[1]
+                I, J cur.i+dir[0], cur.j+dir[1]
                 __ 0 <_ I < m a.. 0 <_ J < n a.. n.. visited[I][J]:
-                    nxt = Cell(I, J, mat[I][J])
+                    nxt Cell(I, J, mat[I][J])
                     __ nxt.h < cur.h:  # fill
                         trapped += cur.h - nxt.h
-                        nxt.h = cur.h
+                        nxt.h cur.h
 
-                    visited[I][J] = T..
+                    visited[I][J] T..
                     heapq.heappush(h, nxt)
 
         r.. trapped

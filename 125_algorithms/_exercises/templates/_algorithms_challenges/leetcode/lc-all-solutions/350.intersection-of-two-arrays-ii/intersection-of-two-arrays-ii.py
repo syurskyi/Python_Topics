@@ -8,7 +8,7 @@ c_ Solution(o..
     ans    # list
     nums1.s..()
     nums2.s..()
-    i = j = 0
+    i j 0
     w.... i < l..(nums1) a.. j < l..(nums2
       __ nums1[i] < nums2[j]:
         i += 1

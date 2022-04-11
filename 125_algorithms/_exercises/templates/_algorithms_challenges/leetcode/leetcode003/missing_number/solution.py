@@ -16,13 +16,13 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        n = l..(nums)
-        s = n * (n + 1) / 2
-        res = 0
+        n l..(nums)
+        s n * (n + 1) / 2
+        res 0
         ___ i __ nums:
             res += i
         r.. s - res
 
-s = Solution()
-a1 = [0, 1, 3]
+s Solution()
+a1 [0, 1, 3]
 print(s.missingNumber(a1

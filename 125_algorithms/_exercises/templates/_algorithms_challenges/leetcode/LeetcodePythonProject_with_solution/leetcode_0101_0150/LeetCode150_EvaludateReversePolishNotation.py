@@ -14,34 +14,34 @@ c_ Solution(o..
         stack    # list
         ___ token __ tokens:
             __ token __ '+':
-                num1 = stack.p.. )
-                num2 = stack.p.. )
+                num1 stack.p.. )
+                num2 stack.p.. )
                 stack.a..(num1+num2)
             ____ token __ '-':
-                num1 = stack.p.. )
-                num2 = stack.p.. )
+                num1 stack.p.. )
+                num2 stack.p.. )
                 stack.a..(num2-num1)
             ____ token __ '*':
-                num1 = stack.p.. )
-                num2 = stack.p.. )
+                num1 stack.p.. )
+                num2 stack.p.. )
                 stack.a..(num1*num2)
             ____ token __ '/':
-                num1 = stack.p.. )
-                num2 = stack.p.. )
+                num1 stack.p.. )
+                num2 stack.p.. )
                 stack.a..(i..(operator.truediv(num2, num1)
             ____
                 stack.a..(i..(token
         r.. stack[-1]
     
     ___ test
-        testCases = [
+        testCases [
 #             ["2", "1", "+", "3", "*"],
 #             ["4", "13", "5", "/", "+"],
             ["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"],
         ]
         ___ tokens __ testCases:
             print('tokens: %s' % (tokens
-            result = evalRPN(tokens)
+            result evalRPN(tokens)
             print('result: %s' % (result
             print('-='*20+'-')
 

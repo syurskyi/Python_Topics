@@ -12,7 +12,7 @@ c_ Solution:
         __ A __ '' a.. B __ '' a.. C __ '':
             r.. T..
 
-        a, b, c = l..(A), l..(B), l..(C)
+        a, b, c l..(A), l..(B), l..(C)
         __ c != a + b:
             r.. F..
 
@@ -21,10 +21,10 @@ c_ Solution:
         is mixed by the substr end at `A[i - 1]`
         and the substr end at `B[j - 1]`
         """
-        dp = [[F..] * (b + 1) ___ _ __ r..(2)]
+        dp [[F..] * (b + 1) ___ _ __ r..(2)]
 
-        prev = curr = 0
-        dp[curr][0] = T..
+        prev curr 0
+        dp[curr][0] T..
 
         ___ j __ r..(1, b + 1
             """
@@ -34,26 +34,26 @@ c_ Solution:
                 _____
 
             __ B[j - 1] __ C[j - 1]:
-                dp[curr][j] = T..
+                dp[curr][j] T..
 
         ___ i __ r..(1, a + 1
-            prev = curr
-            curr = 1 - curr
+            prev curr
+            curr 1 - curr
 
             """
             dp[i][0] = (dp[i - 1][0] and A[i - 1] == C[i - 1])
             """
             __ dp[prev][0] a.. A[i - 1] __ C[i - 1]:
-                dp[curr][0] = T..
+                dp[curr][0] T..
 
             ___ j __ r..(1, b + 1
-                dp[curr][j] = F..
+                dp[curr][j] F..
 
                 __ dp[prev][j] a.. A[i - 1] __ C[i + j - 1]:
-                    dp[curr][j] = T..
+                    dp[curr][j] T..
                     _____
 
                 __ dp[curr][j - 1] a.. B[j - 1] __ C[i + j - 1]:
-                    dp[curr][j] = T..
+                    dp[curr][j] T..
 
         r.. dp[curr][b]

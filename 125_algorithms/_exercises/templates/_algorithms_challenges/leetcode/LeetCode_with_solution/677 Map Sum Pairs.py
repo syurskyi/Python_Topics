@@ -31,41 +31,41 @@ c_ MapSum:
 
         c_ TrieNode:
             ___ - , chr, s.., val
-                chr = chr
-                s.. = s..
-                val = val
-                children = d..(l....: N..)
+                chr chr
+                s.. s..
+                val val
+                children d..(l....: N..)
 
         c_ Trie:
             ___ -
-                root = TrieNode(N.., 0, 0)  # dummy root
+                root TrieNode(N.., 0, 0)  # dummy root
 
             ___ insert  cur, key, i, val
                 __ n.. cur:
-                    cur = TrieNode(key[i], 0, 0)
+                    cur TrieNode(key[i], 0, 0)
 
                 __ i __ l..(key) - 1:
-                    delta = val - cur.val
-                    cur.val = val
+                    delta val - cur.val
+                    cur.val val
                 ____
-                    cur.children[key[i+1]], delta = insert(cur.children[key[i+1]], key, i + 1, val)
+                    cur.children[key[i+1]], delta insert(cur.children[key[i+1]], key, i + 1, val)
 
                 cur.s.. += delta
                 r.. cur, delta
 
-        trie = Trie()
+        trie Trie()
 
     ___ insert  key: s.., val: i..) __ N..
-        root = trie.root
-        root.children[key[0]], _ = trie.insert(root.children[key[0]], key, 0, val)
+        root trie.root
+        root.children[key[0]], _ trie.insert(root.children[key[0]], key, 0, val)
 
     ___ s..  prefix: s..) __ i..:
-        node = trie.root
+        node trie.root
         ___ a __ prefix:
             __ a n.. __ node.children:
                 r.. 0
 
-            node = node.children[a]
+            node node.children[a]
 
         r.. node.s..
 
@@ -82,42 +82,42 @@ c_ MapSum2:
         """
         c_ TrieNode:
             ___ - , chr, s.., val
-                chr = chr
-                s.. = s..
-                val = val
+                chr chr
+                s.. s..
+                val val
                 children    # dict
 
         c_ Trie:
             ___ -
-                root = TrieNode(N.., 0, 0)  # dummy root
+                root TrieNode(N.., 0, 0)  # dummy root
 
             ___ insert  pi, key, i, val
                 __ key[i] n.. __ pi.children:
-                    cur = TrieNode(key[i], 0, 0)
-                    pi.children[key[i]] = cur
+                    cur TrieNode(key[i], 0, 0)
+                    pi.children[key[i]] cur
 
-                cur = pi.children[key[i]]
+                cur pi.children[key[i]]
                 __ i + 1 < l..(key
-                    cur.children[key[i+1]], delta = insert(cur, key, i + 1, val)
+                    cur.children[key[i+1]], delta insert(cur, key, i + 1, val)
                 ____
-                    delta = val - cur.val
-                    cur.val = val
+                    delta val - cur.val
+                    cur.val val
 
                 cur.s.. += delta
                 r.. cur, delta
 
-        trie = Trie()
+        trie Trie()
 
     ___ insert  key: s.., val: i..) __ N..
         trie.insert(trie.root, key, 0, val)
 
     ___ s..  prefix: s..) __ i..:
-        node = trie.root
+        node trie.root
         ___ a __ prefix:
             __ a n.. __ node.children:
                 r.. 0
 
-            node = node.children[a]
+            node node.children[a]
 
         r.. node.s..
 

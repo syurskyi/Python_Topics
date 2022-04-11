@@ -20,5 +20,5 @@ sentence5 =  'be', 'a', 'good', 'man'
     (sentence5, sentence1,  'a', 'be' ),
 ])
 ___ test_common_words(sentence1, sentence2, e..
-    a.. = common_words(sentence1, sentence2)
+    a.. common_words(sentence1, sentence2)
     ... a.. __ e..

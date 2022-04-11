@@ -11,12 +11,12 @@ c_ Solution(o..
         :type p: str
         :rtype: List[int]
         """
-        arr0 = [0]*26
+        arr0 [0]*26
         ___ c __ p:
             arr0[o..(c)-o..('a')] += 1
-        left = 0
+        left 0
         res    # list
-        arr = [0]*26
+        arr [0]*26
         ___ i, c __ e..(s
             arr[o..(c)-o..('a')] += 1
             w.... left <_ i a.. arr[o..(c)-o..('a')] > arr0[o..(c)-o..('a')]:
@@ -32,16 +32,16 @@ c_ Solution(o..
         :type p: str
         :rtype: List[int]
         """
-        arr0 = [0]*26
-        count = l..(p)
+        arr0 [0]*26
+        count l..(p)
         ___ c __ p:
             arr0[o..(c)-o..('a')] += 1
-        left = 0
-        arr1 = [0]*26
+        left 0
+        arr1 [0]*26
         result    # list
-        end = 0
+        end 0
         w.... end < l..(s
-            numInd = o..(s[end]) - o..('a')
+            numInd o..(s[end]) - o..('a')
             __ arr1[numInd] < arr0[numInd]:
                 arr1[numInd] += 1
                 count -_ 1
@@ -55,14 +55,14 @@ c_ Solution(o..
         r.. result
     
     ___ test
-        testCases = [
+        testCases [
             ('cbaebabacd', 'abc'),
             ('abab', 'ab'),
         ]
         ___ s, p __ testCases:
-            result = findAnagrams(s, p)
+            result findAnagrams(s, p)
             print('result: %s' % result)
-            result0 = findAnagrams_orig(s, p)
+            result0 findAnagrams_orig(s, p)
             print('result0: %s' % result0)
             print('-='*20+'-')
 

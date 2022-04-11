@@ -5,7 +5,7 @@ For example,
 [1,2,3] have the following permutations:
 [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], and [3,2,1].
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ permute  num
         """
@@ -18,7 +18,7 @@ c_ Solution:
         r.. result
 
     ___ get_permute  seq, current, result
-        length = l..(seq)
+        length l..(seq)
         __ length__0:
             result.a..(current)
 

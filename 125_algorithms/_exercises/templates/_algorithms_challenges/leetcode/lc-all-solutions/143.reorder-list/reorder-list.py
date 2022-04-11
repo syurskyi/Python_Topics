@@ -12,37 +12,37 @@ c_ Solution(o..
     """
 
     ___ reverse(root
-      pre = N..
-      cur = root
+      pre N..
+      cur root
       w.... cur:
-        next = cur.next
-        cur.next = pre
-        pre = cur
-        cur = next
+        next cur.next
+        cur.next pre
+        pre cur
+        cur next
       r.. pre
 
     __ n.. head o. n.. head.next:
       r..
-    slow = fast = head
-    pre = N..
+    slow fast head
+    pre N..
     w.... fast a.. fast.next:
-      pre = slow
-      slow = slow.next
-      fast = fast.next.next
+      pre slow
+      slow slow.next
+      fast fast.next.next
     __ pre:
-      pre.next = N..
-    newHead = reverse(slow)
-    ret = dummy = ListNode(-1)
-    p1 = head
-    p2 = newHead
+      pre.next N..
+    newHead reverse(slow)
+    ret dummy ListNode(-1)
+    p1 head
+    p2 newHead
     w.... p1 a.. p2:
-      dummy.next = p1
-      p1 = p1.next
-      dummy = dummy.next
-      dummy.next = p2
-      p2 = p2.next
-      dummy = dummy.next
+      dummy.next p1
+      p1 p1.next
+      dummy dummy.next
+      dummy.next p2
+      p2 p2.next
+      dummy dummy.next
 
     __ p2:
-      dummy.next = p2
-    head.next = ret.next.next
+      dummy.next p2
+    head.next ret.next.next

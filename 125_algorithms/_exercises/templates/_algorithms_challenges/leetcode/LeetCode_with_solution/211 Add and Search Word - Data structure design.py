@@ -18,7 +18,7 @@ search("b..") -> true
 Note:
 You may assume that all words are consist of lowercase letters a-z.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TrieNode:
@@ -27,7 +27,7 @@ c_ TrieNode:
         Initialize your data structure here.
         """
         # node value depends on the parent's hash mapping
-        ended = F..
+        ended F..
         children    # dict
 
 
@@ -36,7 +36,7 @@ c_ WordDictionary:
         """
         initialize your data structure here.
         """
-        root = TrieNode()
+        root TrieNode()
 
     ___ addWord  word
         """
@@ -44,13 +44,13 @@ c_ WordDictionary:
         :type word: str
         :rtype: None
         """
-        cur = root
+        cur root
         ___ w __ word:
             __ w n.. __ cur.children:
-                cur.children[w] = TrieNode()
-            cur = cur.children[w]
+                cur.children[w] TrieNode()
+            cur cur.children[w]
 
-        cur.ended = T..
+        cur.ended T..
 
     ___ s..  word
         """
@@ -65,7 +65,7 @@ c_ WordDictionary:
         __ n.. word:
             r.. cur.ended
 
-        w = word[0]
+        w word[0]
         __ w != ".":
             __ w __ cur.children:
                 r.. __search(word[1:], cur.children[w])
@@ -79,6 +79,6 @@ c_ WordDictionary:
         r.. F..
 
 __ _______ __ _______
-    dic = WordDictionary()
+    dic WordDictionary()
     dic.addWord("a")
     ... dic.s..(".") __ T..

@@ -11,8 +11,8 @@ c_ Solution:
         """
         `dp[i][j]` means the ways to reach planet `i` and still keep `j` coins
         """
-        dp = [[0] * (m + 1) ___ _ __ r..(n + 1)]
-        dp[0][m] = 1
+        dp [[0] * (m + 1) ___ _ __ r..(n + 1)]
+        dp[0][m] 1
 
         ___ i __ r..(1, n + 1
             ___ j __ r..(m + 1

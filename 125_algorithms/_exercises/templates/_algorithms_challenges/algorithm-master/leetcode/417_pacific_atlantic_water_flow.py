@@ -15,7 +15,7 @@ c_ Solution:
         __ n.. matrix o. n.. matrix[0]:
             r.. []
 
-        m, n = l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix[0])
         pqueue    # list
         aqueue    # list
 
@@ -27,8 +27,8 @@ c_ Solution:
             pqueue.a..((0, y
             aqueue.a..((m - 1, y
 
-        pvisited = s..(pqueue)
-        avisited = s..(aqueue)
+        pvisited s..(pqueue)
+        avisited s..(aqueue)
 
         bfs(matrix, pqueue, pvisited)
         bfs(matrix, aqueue, avisited)
@@ -36,15 +36,15 @@ c_ Solution:
         r.. l..(pvisited & avisited)
 
     ___ bfs  matrix, queue, visited
-        m, n = l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix[0])
 
         ___ x, y __ queue:
             ___ dx, dy __ (
                 (0, -1), (0, 1),
                 (-1, 0), (1, 0),
 
-                _x = x + dx
-                _y = y + dy
+                _x x + dx
+                _y y + dy
 
                 __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                     _____
@@ -69,9 +69,9 @@ c_ Solution:
         __ n.. matrix o. n.. matrix[0]:
             r.. []
 
-        m, n = l..(matrix), l..(matrix[0])
-        pvisited = s..()
-        avisited = s..()
+        m, n l..(matrix), l..(matrix[0])
+        pvisited s..()
+        avisited s..()
 
         ___ x __ r..(m
             dfs(matrix, x, 0, pvisited)
@@ -90,8 +90,8 @@ c_ Solution:
             (0, -1), (0, 1),
             (-1, 0), (1, 0),
 
-            _x = x + dx
-            _y = y + dy
+            _x x + dx
+            _y y + dy
 
             __ n.. (
                 0 <_ _x < l..(matrix) a..

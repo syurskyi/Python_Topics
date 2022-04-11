@@ -9,10 +9,10 @@ c_ Solution(o..
       r.. 0
     __ n < 2:
       r.. n * k
-    pre = k * k
-    ppre = k
+    pre k * k
+    ppre k
     ___ i __ r..(2, n
       tmp  pre
-      pre = (k - 1) * (pre + ppre)
-      ppre = tmp
+      pre (k - 1) * (pre + ppre)
+      ppre tmp
     r.. pre

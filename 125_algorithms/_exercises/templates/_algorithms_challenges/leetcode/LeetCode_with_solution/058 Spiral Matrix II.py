@@ -11,7 +11,7 @@ You should return the following matrix:
  [ 7, 6, 5 ]
 ]
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -21,26 +21,26 @@ c_ Solution:
         :param n: Integer
         :return: a list of lists of integer
         """
-        left = 0
-        right = n - 1 # [0, n)
-        top = 0
-        bottom = n - 1  # [0, n)
+        left 0
+        right n - 1 # [0, n)
+        top 0
+        bottom n - 1  # [0, n)
 
-        result = [[-1 ___ _ __ x..(n)] ___ _ __ x..(n)]
-        num = 1
+        result [[-1 ___ _ __ x..(n)] ___ _ __ x..(n)]
+        num 1
         w.... left <_ right a.. top <_ bottom:
             ___ i __ x..(left, right + 1  # tuning ending condition, be greedy
-                result[top][i] = num
+                result[top][i] num
                 num += 1
             ___ i __ x..(top + 1, bottom
-                result[i][right] = num
+                result[i][right] num
                 num += 1
 
             ___ i __ x..(right, left, -1
-                result[bottom][i] = num
+                result[bottom][i] num
                 num += 1
             ___ i __ x..(bottom, top, -1
-                result[i][left] = num
+                result[i][left] num
                 num += 1
 
             left += 1
@@ -58,27 +58,27 @@ c_ SolutionError:
         :param n: Integer
         :return: a list of lists of integer
         """
-        left = 0
-        right = n - 1 # [0, n)
-        top = 0
-        bottom = n - 1  # [0, n)
+        left 0
+        right n - 1 # [0, n)
+        top 0
+        bottom n - 1  # [0, n)
 
-        result = [[-1 ___ _ __ x..(n)] ___ _ __ x..(n)]
-        num = 1
+        result [[-1 ___ _ __ x..(n)] ___ _ __ x..(n)]
+        num 1
         w.... left <_ right a.. top <_ bottom:
             ___ i __ x..(left, right  # tuning ending condition, this will fail in the middle
-                result[top][i] = num
+                result[top][i] num
                 num += 1
             ___ i __ x..(top, bottom
-                result[i][right] = num
+                result[i][right] num
                 num += 1
 
             ___ i __ x..(right, left, -1
-                result[bottom][i] = num
+                result[bottom][i] num
                 num += 1
 
             ___ i __ x..(bottom, top, -1
-                result[i][left] = num
+                result[i][left] num
                 num += 1
 
             left += 1
@@ -90,6 +90,6 @@ c_ SolutionError:
 
 
 __ _____ __ ____
-    result = Solution().generateMatrix(4)
+    result Solution().generateMatrix(4)
     ___ row __ result:
         print row

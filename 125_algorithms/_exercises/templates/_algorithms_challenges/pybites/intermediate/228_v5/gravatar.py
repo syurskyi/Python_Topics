@@ -1,6 +1,6 @@
 _______ hashlib
 
-GRAVATAR_URL = ("https://www.gravatar.com/avatar/"
+GRAVATAR_URL ("https://www.gravatar.com/avatar/"
                 "{hashed_email}?s={size}&r=g&d=robohash")
 
 

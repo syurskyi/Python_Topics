@@ -1,6 +1,6 @@
 ____ s__ _______ a..
 
-text = """
+text """
 One really nice feature of Python is polymorphism: using the same operation
 on different types of objects.
 Let's talk about an elegant feature: slicing.
@@ -16,12 +16,12 @@ keep enjoying our bites!
 """
 
 
-___ slice_and_dice(text: s.. = text) __ l..:
+___ slice_and_dice(text: s.. text) __ l..:
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
     #strip off any leading spaces,
-    s.. = text.s..(" . !")
-    s.. = text.s..("\n")
+    s.. text.s..(" . !")
+    s.. text.s..("\n")
     ___ words __ text:
        s...s..
     #check if the first character is lowercase,
@@ -30,9 +30,9 @@ ___ slice_and_dice(text: s.. = text) __ l..:
         __ firstword.isl..
             firstword.s..
             #strip off BOTH the trailing dot (.) and exclamation mark (!) from this last word,
-            results = firstword[-1].s..
+            results firstword[-1].s..
     #and finally add it to the results list.
-    results = [text].s...s..
+    results [text].s...s..
     r.. results
     
 

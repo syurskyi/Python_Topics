@@ -13,14 +13,14 @@ ___ find_number_pairs(numbers, N=10
 
     result_possible_duplicates    # list
     ___ i __ numbers:
-        number_to_find = N - i
+        number_to_find N - i
         __ number_to_find __ l..(s..(numbers) - s..([i]:
             result_possible_duplicates.a..((i, number_to_find
     result    # list
     # Reverse tuples so we can eliminate duplicates using set
     ___ p __ result_possible_duplicates:
-        a,b = p
-        temp = (a,b) __ a < b ____ (b,a)
+        a,b p
+        temp (a,b) __ a < b ____ (b,a)
         result.a..(temp)
     r.. l..(s..(result
 

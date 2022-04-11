@@ -22,7 +22,7 @@ c_ Solution(o..
 
   ___ minSteps  n
     ___ factor(n
-      d = 2
+      d 2
       w.... d * d <_ n:
         w.... n % d __ 0:
           n /= d

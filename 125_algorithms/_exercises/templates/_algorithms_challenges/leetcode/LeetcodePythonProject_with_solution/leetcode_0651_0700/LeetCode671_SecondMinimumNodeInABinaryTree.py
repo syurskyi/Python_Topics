@@ -6,9 +6,9 @@ Created on Oct 12, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ findSecondMinimumValue  root
@@ -17,16 +17,16 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. root: r.. -1
-        first = f__('inf')
-        second = f__('inf')
-        queue = [root]
+        first f__('inf')
+        second f__('inf')
+        queue [root]
         w.... queue:
-            node = queue.p.. 0)
+            node queue.p.. 0)
             __ node.val < first:
-                second = first
-                first = node.val
+                second first
+                first node.val
             ____ first < node.val < second:
-                second = node.val
+                second node.val
             __ node.left:
                 queue.a..(node.left)
             __ node.right:
@@ -34,11 +34,11 @@ c_ Solution(o..
         r.. second __ second != f__('inf') ____ -1
     
     ___ test
-        testCases = [
+        testCases [
             TreeNode(2, TreeNode(2), TreeNode(5, TreeNode(5), TreeNode(7))),
         ]
         ___ root __ testCases:
-            result = findSecondMinimumValue(root)
+            result findSecondMinimumValue(root)
             print('result: %s' % result)
             print('-='*30+'-')
 

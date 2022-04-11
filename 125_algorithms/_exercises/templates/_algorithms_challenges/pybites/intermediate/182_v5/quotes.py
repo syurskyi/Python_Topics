@@ -4,7 +4,7 @@ _______ s__
 
 ____ bs4 _______ BeautifulSoup
 
-HTML = """<!DOCTYPE html>
+HTML """<!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
   <title>My top 10 quotes on living life better | Virgin</title>
@@ -29,13 +29,13 @@ HTML = """<!DOCTYPE html>
 </html>"""
 
 
-___ extract_quotes(html: s.. = HTML) __ d..:
+___ extract_quotes(html: s.. HTML) __ d..:
     """See instructions in the Bite description"""
-    result = d..()
-    root = BeautifulSoup(html, 'html.parser')
-    content = root.find(class_='content').find_all('p')
+    result d..()
+    root BeautifulSoup(html, 'html.parser')
+    content root.find(class_='content').find_all('p')
     ___ para __ content:
         __ para.text[0] __ s__.d..:
-            m.. = __.m..(r'^\d+\.\s+"(.+?)" - (.*)$', para.text)
-            result[m..[2]] = m..[1]
+            m.. __.m..(r'^\d+\.\s+"(.+?)" - (.*)$', para.text)
+            result[m..[2]] m..[1]
     r.. result

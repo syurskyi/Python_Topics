@@ -37,14 +37,14 @@ c_ Solution:
         if target negative, flip the sign. Thus, we can only consider positive
         number
         """
-        target = a..(target)
-        s = 0
-        k = 0
+        target a..(target)
+        s 0
+        k 0
         w.... s < target:
             k += 1
             s += k
 
-        delta = s - target
+        delta s - target
         __ delta % 2 __ 0:
             r.. k
         ____  # delta is odd

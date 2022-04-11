@@ -14,33 +14,33 @@ c_ Solution(o..
         _______ heapq
         p..    # dict
         ___ t__ __ times:
-            sourceMap = p...g.. t__[0], {})
+            sourceMap p...g.. t__[0], {})
             __ t__[1] n.. __ sourceMap o. sourceMap[t__[1]] > t__[2]:
-                sourceMap[t__[1]] = t__[2]
-            p..[t__[0]] = sourceMap
+                sourceMap[t__[1]] t__[2]
+            p..[t__[0]] sourceMap
         
-        distanceMap = {K:0}
+        distanceMap {K:0}
         heap    # list
         heapq.heappush(heap, [0, K])
-        maxVal = -1
+        maxVal -1
         w.... heap:
-            d, node = heapq.heappop(heap)
+            d, node heapq.heappop(heap)
             __ node __ distanceMap a.. distanceMap[node] < d:
                 _____
             __ node __ p..:
                 ___ node0 __ p..[node]:
-                    absDist = d+p..[node][node0]
+                    absDist d+p..[node][node0]
                     __ node0 __ distanceMap a.. distanceMap[node0] <_ absDist:
                         _____
-                    distanceMap[node0] = absDist
+                    distanceMap[node0] absDist
                     heapq.heappush(heap, [absDist, node0])
         ___ val __ distanceMap.v..
             __ val > maxVal:
-                maxVal = val
+                maxVal val
         r.. maxVal __ l..(distanceMap) __ N ____ -1
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [[2,1,1],[2,3,1],[3,4,1]],
                 4,
@@ -53,7 +53,7 @@ c_ Solution(o..
             ],
         ]
         ___ times, N, K __ testCases:
-            result = networkDelayTime(times, N, K)
+            result networkDelayTime(times, N, K)
             print('result: %s' % result)
             print('-='*30+'-')
 

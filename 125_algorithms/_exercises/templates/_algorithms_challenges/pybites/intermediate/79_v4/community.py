@@ -3,8 +3,8 @@ _______ csv
 _______ r__
 
 
-CSV_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
-FMT_STR = '{tz:21}| {bar}'
+CSV_URL 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
+FMT_STR '{tz:21}| {bar}'
 
 
 ___ get_csv
@@ -17,8 +17,8 @@ ___ create_user_bar_chart(content
     """Receives csv file (decoded) content and print a table of timezones
        and their corresponding member counts in pluses to standard output
     """
-    rows = csv.DictReader(content.s..
-    counts = s..(C..([r 'tz'  ___ r __ rows]).i..,
+    rows csv.DictReader(content.s..
+    counts s..(C..([r 'tz'  ___ r __ rows]).i..,
                     key=l.... x: x[0])
 
     ___ c __ counts:

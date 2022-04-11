@@ -16,18 +16,18 @@ Note: Given n will be between 1 and 9 inclusive.
 """
 _______ m__
 
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
     ___ getPermutation  n, k
         k -_ 1
 
-        array = r..(1, n+1)
+        array r..(1, n+1)
         k %= m__.factorial(n)
         ret    # list
         ___ i __ x..(n-1, -1, -1
-            idx, k = divmod(k, m__.factorial(i
+            idx, k divmod(k, m__.factorial(i
             ret.a..(array.p.. idx
 
         r.. "".j.. m..(s.., ret
@@ -42,23 +42,23 @@ c_ Solution(o..
         :return: String
         """
         # factorial
-        fac = [1 ___ _ __ x..(n)]
+        fac [1 ___ _ __ x..(n)]
         ___ i __ x..(1, n
-            fac[i] = fac[i-1]*i
+            fac[i] fac[i-1]*i
 
         # solve equation
         k -_ 1  # index starting from 0
-        a = [0 ___ _ __ x..(n)]
+        a [0 ___ _ __ x..(n)]
         ___ i __ x..(n-1, -1, -1
-            a[n-1-i] = k/fac[i]  # a[i] = k/fac[i]
+            a[n-1-i] k/fac[i]  # a[i] = k/fac[i]
             k %= fac[i]
 
         # post-process
-        candidate = r..(1, n+1)  # sorted
-        visited = [F.. ___ _ __ x..(n)]
+        candidate r..(1, n+1)  # sorted
+        visited [F.. ___ _ __ x..(n)]
         ___ ind, val __ e..(a
-            i = 0  # pointer
-            cnt = 0  # counter
+            i 0  # pointer
+            cnt 0  # counter
             w... T...
                 __ visited[i]:
                     i += 1
@@ -67,8 +67,8 @@ c_ Solution(o..
                     cnt += 1
                     i += 1
 
-            a[ind] = candidate[i]
-            visited[i] = T..
+            a[ind] candidate[i]
+            visited[i] T..
 
         r.. "".j.. m..(s.., a
 
@@ -96,17 +96,17 @@ c_ Solution(o..
         """
         k -_ 1  # index starting from 0
 
-        factorial = 1  # (n-1)!
+        factorial 1  # (n-1)!
         ___ i __ x..(1, n
             factorial *= i
 
         result    # list
-        array = r..(1, n+1)
+        array r..(1, n+1)
         ___ i __ r..(x..(1, n:
-            index = k/factorial
+            index k/factorial
             result.a..(array[index])
-            array = array[:index]+array[index+1:]
-            k = k%factorial
+            array array[:index]+array[index+1:]
+            k k%factorial
             factorial /= i
 
         # case when factorial=0!
@@ -121,7 +121,7 @@ c_ Solution_TLE:
     """
 
     ___ -
-        counter = 0
+        counter 0
 
     ___ getPermutation  n, k
         """
@@ -133,8 +133,8 @@ c_ Solution_TLE:
         __ n.. n:
             r..
 
-        sequence = r..(1, n+1)
-        result = get_kth_permutation_dfs(sequence, k, [])
+        sequence r..(1, n+1)
+        result get_kth_permutation_dfs(sequence, k, [])
         r.. "".j..(s..(element) ___ element __ result)
 
 
@@ -152,7 +152,7 @@ c_ Solution_TLE:
                 r.. cur
 
         ___ ind, val __ e..(remaining_seq
-            result = get_kth_permutation_dfs(remaining_seq[:ind]+remaining_seq[ind+1:], k, cur+[val])
+            result get_kth_permutation_dfs(remaining_seq[:ind]+remaining_seq[ind+1:], k, cur+[val])
             __ result: r.. result
 
 

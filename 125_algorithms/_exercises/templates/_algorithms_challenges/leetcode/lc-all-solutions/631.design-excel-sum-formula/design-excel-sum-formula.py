@@ -4,8 +4,8 @@ c_ Excel(o..
     :type H: int
     :type W: str
     """
-    H, W = decodeCoord(H, W)
-    data = [[0] * (W + 1) ___ _ __ r..(H + 1)]
+    H, W decodeCoord(H, W)
+    data [[0] * (W + 1) ___ _ __ r..(H + 1)]
     formulas    # dict
 
   ___ decodeCoord  r, c
@@ -18,10 +18,10 @@ c_ Excel(o..
     :type v: int
     :rtype: void
     """
-    r, c = decodeCoord(r, c)
+    r, c decodeCoord(r, c)
     __ (r, c) __ formulas:
       del formulas[(r, c)]
-    data[r][c] = v
+    data[r][c] v
 
   ___ get  r, c
     """
@@ -29,15 +29,15 @@ c_ Excel(o..
     :type c: str
     :rtype: int
     """
-    r, c = decodeCoord(r, c)
+    r, c decodeCoord(r, c)
     __ (r, c) __ formulas:
       r.. computeFormula(formulas[(r, c)])
     r.. data[r][c]
 
   ___ computeFormula  strs
-    ans = 0
+    ans 0
     ___ s __ strs:
-      startI, startJ, endI, endJ = parseRange(s)
+      startI, startJ, endI, endJ parseRange(s)
       ___ i __ r..(startI, endI + 1
         ___ j __ r..(startJ, endJ + 1
           __ (i, j) __ formulas:
@@ -47,11 +47,11 @@ c_ Excel(o..
     r.. ans
 
   ___ parseRange  s
-    start = end = s
+    start end s
     __ ":" __ s:
-      start, end = s.s..(":")
-    startI, startJ = decodeCoord(start[1:], start[0])
-    endI, endJ = decodeCoord(end[1:], end[0])
+      start, end s.s..(":")
+    startI, startJ decodeCoord(start[1:], start[0])
+    endI, endJ decodeCoord(end[1:], end[0])
     r.. (startI, startJ, endI, endJ)
 
   ___ s..  r, c, strs
@@ -61,8 +61,8 @@ c_ Excel(o..
     :type strs: List[str]
     :rtype: int
     """
-    r, c = decodeCoord(r, c)
-    formulas[(r, c)] = strs
+    r, c decodeCoord(r, c)
+    formulas[(r, c)] strs
     r.. computeFormula(strs)
 
 # Your Excel object will be instantiated and called as such:

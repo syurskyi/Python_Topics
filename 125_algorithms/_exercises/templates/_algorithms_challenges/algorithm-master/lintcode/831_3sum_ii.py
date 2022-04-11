@@ -4,7 +4,7 @@ c_ Solution:
     @return: the number of solutions
     """
     ___ threeSum2  n
-        ans = 0
+        ans 0
         nums    # list
 
         ___ a __ r..(n + 1
@@ -14,16 +14,16 @@ c_ Solution:
             nums.a..(a * a)
             nums.a..(a * a)
 
-        m = l..(nums)
+        m l..(nums)
 
         ___ a __ r..(m - 2
             __ a > 0 a.. nums[a] __ nums[a - 1]:
                 _____
 
-            b = a + 1
-            c = m - 1
+            b a + 1
+            c m - 1
             w.... b < c:
-                _sum = nums[a] + nums[b] + nums[c]
+                _sum nums[a] + nums[b] + nums[c]
                 __ _sum < n:
                     b += 1
                 ____ _sum > n:
@@ -46,14 +46,14 @@ c_ Solution:
     @return: the number of solutions
     """
     ___ threeSum2  n
-        ans = 0
-        m = i..(n ** 0.5)
+        ans 0
+        m i..(n ** 0.5)
 
         ___ a __ r..(m + 1
-            target = n - a * a
-            b, c = a, m
+            target n - a * a
+            b, c a, m
             w.... b <_ c:
-                _sum = b * b + c * c
+                _sum b * b + c * c
                 __ _sum < target:
                     b += 1
                 ____ _sum > target:

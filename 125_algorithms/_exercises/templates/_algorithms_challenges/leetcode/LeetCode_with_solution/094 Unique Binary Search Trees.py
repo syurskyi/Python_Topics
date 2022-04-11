@@ -12,7 +12,7 @@ Given n = 3, there are a total of 5 unique BST's.
 """
 _______ m__
 
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -48,8 +48,8 @@ c_ Solution(o..
         __ n < 2:
             r.. n
 
-        dp = [0 ___ _ __ x..(n+1)]
-        dp[0] = 1
+        dp [0 ___ _ __ x..(n+1)]
+        dp[0] 1
         ___ i __ x..(1, n+1
             ___ j __ x..(i
                 dp[i] += dp[j]*dp[i-j-1]

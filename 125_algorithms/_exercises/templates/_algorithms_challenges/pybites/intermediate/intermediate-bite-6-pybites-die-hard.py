@@ -23,7 +23,7 @@ u__.r...u..
 
 IGNORE 'static templates data pybites bbelderbos hobojoe1848'.s..
 
-users, popular_challenges = C..(), C..()
+users, popular_challenges C..(), C..()
 
 Stats n..('Stats', 'user challenge')
 
@@ -46,9 +46,9 @@ ___ gen_files
     """
     w__ o.. tempfile) __ infile:
         ___ line __ infile:
-            chunks = line.s..(',')
+            chunks line.s..(',')
             __ chunks[1].s.. __ "True":
-                s = chunks[0].s..('/')
+                s chunks[0].s..('/')
                 y.. s[1]
 
 ___ diehard_pybites
@@ -63,11 +63,11 @@ ___ diehard_pybites
             users[i] += 1
     w__ o.. tempfile) __ infile:
         ___ line __ infile:
-            chunks = line.s..(',')
+            chunks line.s..(',')
             __ chunks[1].s.. __ "True":
-                s = chunks[0].s..('/')
+                s chunks[0].s..('/')
                 popular_challenges[s[0]] += 1
-    s = ? ?.m.. 1 0 0, popular_challenges.most_common(1)[0])
+    s ? ?.m.. 1 0 0, popular_challenges.most_common(1)[0])
     r.. s
 
 diehard_pybites()

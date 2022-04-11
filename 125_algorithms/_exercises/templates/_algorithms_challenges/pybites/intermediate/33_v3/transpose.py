@@ -1,5 +1,5 @@
 ____ c.. _______ n..
-Member = n..("Member",'name since_days karma_points bitecoin_earned')
+Member n..("Member",'name since_days karma_points bitecoin_earned')
 
 
 ___ transpose(data
@@ -33,7 +33,7 @@ ___ transpose(data
 
 __ _______ __ _______
 
-    data = [Member(name='Bob', since_days=60, karma_points=60,
+    data [Member(name='Bob', since_days=60, karma_points=60,
                    bitecoin_earned=56),
             Member(name='Julian', since_days=221, karma_points=34,
                    bitecoin_earned=78)]

@@ -14,8 +14,8 @@ c_ Solution:
         __ start >_ end:
             r.. A[end]
 
-        left, right = start, end
-        pivot = A[(start + end) // 2]
+        left, right start, end
+        pivot A[(start + end) // 2]
 
         w.... left <_ right:
             w.... left <_ right a.. A[left] < pivot:
@@ -24,7 +24,7 @@ c_ Solution:
                 right -_ 1
 
             __ left <_ right:
-                A[left], A[right] = A[right], A[left]
+                A[left], A[right] A[right], A[left]
                 left += 1
                 right -_ 1
 

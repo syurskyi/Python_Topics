@@ -32,8 +32,8 @@ c_ Solution:
         """
         heapq nlargest nsmallest
         """
-        mxes = heapq.nlargest(3, nums)
-        mns = heapq.nsmallest(3, nums)
+        mxes heapq.nlargest(3, nums)
+        mns heapq.nsmallest(3, nums)
         r.. m..(
             mxes[0] * mxes[1] * mxes[2],
             mns[0] * mns[1] * mxes[0],

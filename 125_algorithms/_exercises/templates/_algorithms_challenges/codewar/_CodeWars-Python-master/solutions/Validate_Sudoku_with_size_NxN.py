@@ -7,14 +7,14 @@ ____ m__ _______ sqrt
 
 c_ Sudoku(o..
     ___ - , sudoku
-        sudoku = sudoku
-        n = 0
-        block_len = 0
+        sudoku sudoku
+        n 0
+        block_len 0
 
     ___ is_valid
-        n = l..(sudoku)
+        n l..(sudoku)
         ___
-            block_len = i..(sqrt(n
+            block_len i..(sqrt(n
         ______ V..
             r.. F..
         __ any([l..(row) != n ___ row __ sudoku]
@@ -31,9 +31,9 @@ c_ Sudoku(o..
         r.. _is_valid_set(s..([sudoku[r][column_num] ___ r __ r..(n)]
 
     ___ _is_valid_block  block_num
-        block_row_num, block_column_num = divmod(block_num, block_len)
-        block_row, block_column = block_row_num * block_len, block_column_num * block_len
-        block_set = s..()
+        block_row_num, block_column_num divmod(block_num, block_len)
+        block_row, block_column block_row_num * block_len, block_column_num * block_len
+        block_set s..()
         ___ r __ r..(block_row, block_row + block_len
             ___ c __ r..(block_column, block_column + block_len
                 block_set.add(sudoku[r][c])

@@ -26,7 +26,7 @@ c_ Solution(o..
         r.. dfs(L, 1)
 
     ___ dfs  L, depth
-        _sum = 0
+        _sum 0
 
         ___ obj __ L:
             __ obj.isInteger
@@ -42,12 +42,12 @@ c_ Solution(o..
     # @param {NestedInteger[]} L a list of NestedInteger Object
     # @return {int} an integer
     ___ depthSum  L
-        ans = 0
+        ans 0
         __ n.. L:
             r.. ans
 
-        queue = L
-        depth = 0
+        queue L
+        depth 0
         w.... queue:
             _queue    # list
             depth += 1
@@ -59,6 +59,6 @@ c_ Solution(o..
 
                 _queue.e.. obj.getList
 
-            queue = _queue
+            queue _queue
 
         r.. ans

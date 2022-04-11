@@ -25,7 +25,7 @@ c_ Solution:
             r.. ans
 
         ___ i __ r..(l..(points:
-            distance = get_distance(origin, points[i])
+            distance get_distance(origin, points[i])
             heapq.heappush(ans, (-distance, i
 
             __ l..(ans) > k:
@@ -36,8 +36,8 @@ c_ Solution:
         r.. [points[i] ___ _, i __ ans]
 
     ___ get_distance  p, q
-        dx = p.x - q.x
-        dy = p.y - q.y
+        dx p.x - q.x
+        dy p.y - q.y
         r.. dx * dx + dy * dy
 
 
@@ -63,11 +63,11 @@ c_ Solution:
         heap    # list
 
         ___ i __ r..(l..(points:
-            distance = get_distance(origin, points[i])
+            distance get_distance(origin, points[i])
             heapq.heappush(heap, (distance, i
 
         ___ _ __ r..(k
-            distance, i = heapq.heappop(heap)
+            distance, i heapq.heappop(heap)
             ans.a..((distance, points[i]
 
         ans.s..(key=l.... a: (a[0], a[1].x, a[1].y
@@ -75,6 +75,6 @@ c_ Solution:
         r.. [p ___ _, p __ ans]
 
     ___ get_distance  p, q
-        dx = p.x - q.x
-        dy = p.y - q.y
+        dx p.x - q.x
+        dy p.y - q.y
         r.. dx * dx + dy * dy

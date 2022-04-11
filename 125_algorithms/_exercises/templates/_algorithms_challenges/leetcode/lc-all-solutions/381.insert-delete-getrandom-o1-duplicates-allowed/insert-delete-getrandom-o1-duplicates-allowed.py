@@ -3,8 +3,8 @@ c_ RandomizedCollection(o..
     """
     Initialize your data structure here.
     """
-    dOfd = c...d..(d..)
-    d = c...d..(l..)
+    dOfd c...d..(d..)
+    d c...d..(l..)
     a    # list
 
   ___ insert  val
@@ -14,7 +14,7 @@ c_ RandomizedCollection(o..
     :rtype: bool
     """
     d[val].a..(l..(a
-    dOfd[val][l..(a)] = l..(d[val]) - 1
+    dOfd[val][l..(a)] l..(d[val]) - 1
     a.a..(val)
     r.. l..(d[val]) __ 1
 
@@ -24,16 +24,16 @@ c_ RandomizedCollection(o..
     :type val: int
     :rtype: bool
     """
-    dd = dOfd
-    a = a
-    d = d
+    dd dOfd
+    a a
+    d d
     __ n.. d[val]:
       r.. F..
-    idx = d[val][-1]
-    a[idx] = a[-1]
-    idxInDForLast = dd[a[-1]][l..(a) - 1]
-    d[a[-1]][idxInDForLast] = idx
-    dd[a[-1]][idx] = idxInDForLast
+    idx d[val][-1]
+    a[idx] a[-1]
+    idxInDForLast dd[a[-1]][l..(a) - 1]
+    d[a[-1]][idxInDForLast] idx
+    dd[a[-1]][idx] idxInDForLast
 
     # del dd[val][idx]
     del dd[a[-1]][l..(a) - 1]

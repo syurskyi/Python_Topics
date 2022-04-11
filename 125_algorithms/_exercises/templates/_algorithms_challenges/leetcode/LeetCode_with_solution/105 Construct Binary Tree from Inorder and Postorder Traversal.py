@@ -4,13 +4,13 @@ Given inorder and postorder traversal of a tree, construct the binary tree.
 Note:
 You may assume that duplicates do not exist in the tree.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution:
     ___ buildTree  inorder, postorder
@@ -27,10 +27,10 @@ c_ Solution:
         __ n.. inorder:
             r.. N..
 
-        root = TreeNode(postorder[-1])
-        root_index = inorder.i.. root.val)
+        root TreeNode(postorder[-1])
+        root_index inorder.i.. root.val)
 
-        root.left = buildTree(inorder[:root_index], postorder[:root_index])
-        root.right = buildTree(inorder[root_index+1:], postorder[root_index:-1])
+        root.left buildTree(inorder[:root_index], postorder[:root_index])
+        root.right buildTree(inorder[root_index+1:], postorder[root_index:-1])
 
         r.. root

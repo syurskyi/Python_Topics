@@ -2,7 +2,7 @@
 
 
 c_ Test:
-    x = 4
+    x 4
 
     @classmethod
     ___ hello(cls

@@ -1,7 +1,7 @@
 _______ textwrap
 _______ i..
 
-COL_WIDTH = 20
+COL_WIDTH 20
 
 
 ___ text_to_columns(text
@@ -12,13 +12,13 @@ ___ text_to_columns(text
        See also the tests for more info."""
 
 
-    paragraphs = text.s..('\n\n')
-    number_of_columns = l..(paragraphs)
+    paragraphs text.s..('\n\n')
+    number_of_columns l..(paragraphs)
 
     l    # list
     ___ paragraph __ paragraphs:
-        paragraph = paragraph.s..
-        r = textwrap.wrap(paragraph,width=COL_WIDTH,break_long_words=T..)
+        paragraph paragraph.s..
+        r textwrap.wrap(paragraph,width=COL_WIDTH,break_long_words=T..)
         l.a..(r)
     
     
@@ -44,10 +44,10 @@ ___ text_to_columns(text
 __ _______ __ _______
 
 
-    text = """My house is small but cosy.
+    text """My house is small but cosy.
 
     It has a white kitchen and an empty fridge."""
-    text = """My house is small but cosy.
+    text """My house is small but cosy.
 
     It has a white kitchen and an empty fridge.
 

@@ -9,14 +9,14 @@ c_ Solution(o..
     """
 
     ___ bfs(si, sj, grid, buildNum, hit
-      dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-      queue = d..([(si, sj, 0)])
-      visited = s..([(si, sj)])
-      count = 1
+      dirs [(-1, 0), (1, 0), (0, -1), (0, 1)]
+      queue d..([(si, sj, 0)])
+      visited s..([(si, sj)])
+      count 1
       w.... queue:
-        i, j, dist = queue.popleft()
+        i, j, dist queue.popleft()
         ___ di, dj __ dirs:
-          newi, newj = i + di, j + dj
+          newi, newj i + di, j + dj
           __ (newi, newj) __ visited:
             _____
           __ 0 <_ newi < l..(grid) a.. 0 <_ newj < l..(grid[0]) a.. grid[newi][newj] != 2:
@@ -35,23 +35,23 @@ c_ Solution(o..
         r.. F..
       r.. T..
 
-    count = 0
+    count 0
     ___ i __ r..(0, l..(grid:
       ___ j __ r..(0, l..(grid[0]:
         __ grid[i][j] __ 1:
           count += 1
 
-    hit = [[0] * l..(grid[0]) ___ _ __ r..(0, l..(grid]
+    hit [[0] * l..(grid[0]) ___ _ __ r..(0, l..(grid]
     ___ i __ r..(0, l..(grid:
       ___ j __ r..(0, l..(grid[0]:
         __ grid[i][j] __ 1:
           __ n.. bfs(i, j, grid, count, hit
             r.. -1
 
-    ans = f__("-inf")
+    ans f__("-inf")
     ___ i __ r..(0, l..(grid:
       ___ j __ r..(0, l..(grid[0]:
         __ grid[i][j] < 0 a.. hit[i][j] __ count:
-          ans = m..(ans, grid[i][j])
-          grid[i][j] = 0
+          ans m..(ans, grid[i][j])
+          grid[i][j] 0
     r.. -ans __ ans != f__("-inf") ____ -1

@@ -13,7 +13,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        res = 0
+        res 0
         w.... n > 0:
             __ n & 1 __ 1:
                 res += 1

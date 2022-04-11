@@ -1,12 +1,12 @@
 _______ r__
 ____ c.. _______ C..
 
-STOCK_DATA = 'https://bites-data.s3.us-east-2.amazonaws.com/stocks.json'
+STOCK_DATA 'https://bites-data.s3.us-east-2.amazonaws.com/stocks.json'
 
 # pre-work: load JSON data into program
 
 w__ r__.S.. __ s:
-    data = s.g.. STOCK_DATA).j..
+    data s.g.. STOCK_DATA).j..
 
 
 # your turn:
@@ -29,14 +29,14 @@ ___ get_industry_cap(industry
     """Return the sum of all cap values for given industry, use
        the _cap_str_to_mln_float to parse the cap values,
        return a float with 2 digit precision"""
-    locallist = [counter 'cap'  ___ counter __ data __ counter 'industry'  __ industry]
+    locallist [counter 'cap'  ___ counter __ data __ counter 'industry'  __ industry]
     r.. r..(s..([_cap_str_to_mln_float(cap) ___ cap __ locallist]),2)
 
 ___ get_stock_symbol_with_highest_cap
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
     #highest_cap = 0
-    highest_cap_stock = m..(data, key=l.... counter: _cap_str_to_mln_float(counter 'cap'
+    highest_cap_stock m..(data, key=l.... counter: _cap_str_to_mln_float(counter 'cap'
     #for counter in data:
     #    if _cap_str_to_mln_float(counter['cap']) > highest_cap:
     #        highest_cap_stock = counter['symbol']
@@ -47,7 +47,7 @@ ___ get_stock_symbol_with_highest_cap
 ___ get_sectors_with_max_and_min_stocks
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
-    stock_by_sector = C..(counter 'sector'  ___ counter __ data __ counter 'sector'  != 'n/a')
+    stock_by_sector C..(counter 'sector'  ___ counter __ data __ counter 'sector'  != 'n/a')
     r.. stock_by_sector.m..[0][0], stock_by_sector.m..[-1][0]
 
 

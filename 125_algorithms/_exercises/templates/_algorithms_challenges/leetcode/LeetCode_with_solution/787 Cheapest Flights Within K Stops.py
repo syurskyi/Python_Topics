@@ -49,18 +49,18 @@ c_ Solution:
         """
         dijkstra
         """
-        G = d..(d..)
-        visited = d..(b..)
+        G d..(d..)
+        visited d..(b..)
         ___ u, v, w __ flights:
-            G[u][v] = w
+            G[u][v] w
 
-        pq = [(0, 0, src)]  # (cost, step, city)
+        pq [(0, 0, src)]  # (cost, step, city)
         w.... pq:
-            cost, k, u = heapq.heappop(pq)
+            cost, k, u heapq.heappop(pq)
             __ u __ dst:
                 r.. cost
 
-            stops = k - 1 + 1
+            stops k - 1 + 1
             __ stops <_ K:
                 ___ v, w __ G[u].i..:
                     heapq.heappush(pq, (cost + w, k + 1, v

@@ -21,25 +21,25 @@ ___ wc(file_
        lines/words/chars, and returns a string of these numbers + file, e.g.:
        3 12 60 /tmp/somefile
        (both tabs and spaces are allowed as separator)"""
-    cnt_line = 0
-    cnt_words = 0
-    cnt_chars = 0
-    within_word = F..
+    cnt_line 0
+    cnt_words 0
+    cnt_chars 0
+    within_word F..
     ___
-        fo = o.. file_, _
+        fo o.. file_, _
     ______:
         print("Cannot open file")
-    filename = fo.name
+    filename fo.name
     ___ line __ fo:
         cnt_line += 1
         cnt_chars += l..(line)
         ___ c __ line:
             __ c != ' ' a.. c != '\n' a.. c != '\t':
-                within_word = T..
+                within_word T..
                 _____
             __ within_word __ T.. a.. (c __ ' ' o. c __ '\t' o. c __ '\n'
                 cnt_words += 1
-                within_word = F..
+                within_word F..
     fo.c..
 
     print _*{cnt_line} {cnt_words} {cnt_chars} {filename}')

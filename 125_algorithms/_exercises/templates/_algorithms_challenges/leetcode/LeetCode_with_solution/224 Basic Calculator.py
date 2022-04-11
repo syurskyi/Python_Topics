@@ -12,7 +12,7 @@ Some examples:
 "(1+(4+5+2)-3)+(6+8)" = 23
 Note: Do not use the eval built-in library function.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -23,12 +23,12 @@ c_ Solution:
         :type s: str
         :rtype: int
         """
-        lst = to_list(s)
-        postfix = infix2postfix(lst)
+        lst to_list(s)
+        postfix infix2postfix(lst)
         r.. eval_postfix(postfix)
 
     ___ to_list  s
-        i = 0
+        i 0
         ret    # list
         w.... i < l..(s
             __ s[i] __ " ":
@@ -39,7 +39,7 @@ c_ Solution:
                 i += 1
 
             ____
-                b = i
+                b i
                 w.... i < l..(s) a.. s[i].i..
                     i += 1
                 ret.a..(s[b:i])
@@ -79,8 +79,8 @@ c_ Solution:
         stk    # list
         ___ elt __ post:
             __ elt __ ("+", "-"
-                b = i..(stk.pop
-                a = i..(stk.pop
+                b i..(stk.pop
+                a i..(stk.pop
                 __ elt __ "+":
                     stk.a..(a+b)
                 ____

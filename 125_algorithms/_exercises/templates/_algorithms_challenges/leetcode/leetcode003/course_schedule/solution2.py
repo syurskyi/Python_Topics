@@ -32,10 +32,10 @@ c_ Solution(o..
         Detect if course prerequisites graph has a cycle.
         """
 
-        unvisited = s..(r..(numCourses
-        visiting = s..()
-        visited = s..()
-        graph = {x: s..() ___ x __ r..(numCourses)}
+        unvisited s..(r..(numCourses
+        visiting s..()
+        visited s..()
+        graph {x: s..() ___ x __ r..(numCourses)}
         ___ c, p __ prerequisites:
             graph[p].add(c)
 
@@ -57,11 +57,11 @@ c_ Solution(o..
             visiting.remove(u)
             visited.add(u)
 
-s = Solution()
+s Solution()
 print(s.canFinish(1, []
 print(s.canFinish(3, [[1, 0], [0, 1]]
 w__ o.. 'test.txt') __ f:
-    args = f.r...s..
-    arg0 = i..(args[0][:-1])
-    arg1 = eval(args[1])
+    args f.r...s..
+    arg0 i..(args[0][:-1])
+    arg1 eval(args[1])
     print(s.canFinish(arg0, arg1

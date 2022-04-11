@@ -23,7 +23,7 @@ c_ HashHeapq:
             r..
 
         __ val n.. __ deleted:
-            deleted[val] = 0
+            deleted[val] 0
 
         deleted[val] += 1
 
@@ -35,7 +35,7 @@ c_ HashHeapq:
 
     ___ is_empty
         w.... heap a.. deleted.g.. heap[0]
-            val = heapq.heappop(heap)
+            val heapq.heappop(heap)
             deleted[val] -_ 1
 
         r.. n.. heap
@@ -58,7 +58,7 @@ c_ Solution:
             t__.a..((_x, height, F..
 
         t__.s..()
-        heap = HashHeapq()
+        heap HashHeapq()
 
         ___ x, height, is_start __ t__:
             __ is_start:
@@ -66,7 +66,7 @@ c_ Solution:
             ____
                 heap.remove(-height)
 
-            max_h = -heap.top() __ n.. heap.is_empty() ____ 0
+            max_h -heap.top() __ n.. heap.is_empty() ____ 0
 
             __ ans a.. ans[-1][0] __ x:
                 ans.p.. )

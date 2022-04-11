@@ -25,8 +25,8 @@ c_ GigasecondTest(unittest.TestCase
 
     ___ test_yourself
         # customize this to test your birthday and find your gigasecond date:
-        your_birthday = date(1994, 7, 18)
-        your_gigasecond = date(2026, 3, 26)
+        your_birthday date(1994, 7, 18)
+        your_gigasecond date(2026, 3, 26)
 
         assertEqual(
             your_gigasecond,

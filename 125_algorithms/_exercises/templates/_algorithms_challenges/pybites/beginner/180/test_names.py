@@ -5,7 +5,7 @@ _______ p__
 ____ names _______ group_names_by_country, data
 
 # another output to test with
-data2 = """last_name,first_name,country_code
+data2 """last_name,first_name,country_code
 Poxton,Sydney,CZ
 Kynman,Bryant,NL
 Mockler,Leese,AF

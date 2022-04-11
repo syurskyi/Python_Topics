@@ -7,9 +7,9 @@ Created on Jan 30, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution(o..
     ___ isValidBST  root
@@ -19,18 +19,18 @@ c_ Solution(o..
         """
         __ n.. root: r.. T..
         stack    # list
-        prev = f__('-inf')
-        node = root
+        prev f__('-inf')
+        node root
         w.... node:
             stack.a..(node)
-            node = node.left
+            node node.left
         w.... stack:
-            node = stack.p.. )
+            node stack.p.. )
             __ prev >_ node.val:
                 r.. F..
-            prev = node.val
-            node0 = node.right
+            prev node.val
+            node0 node.right
             w.... node0:
                 stack.a..(node0)
-                node0 = node0.left
+                node0 node0.left
         r.. T..

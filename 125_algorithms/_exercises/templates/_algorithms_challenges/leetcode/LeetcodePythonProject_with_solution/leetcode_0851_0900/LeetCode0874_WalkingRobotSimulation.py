@@ -10,21 +10,21 @@ c_ Solution(o..
         :type obstacles: List[List[int]]
         :rtype: int
         """
-        dirs = [[0, 1], [1, 0], [0, -1], [-1, 0]]
-        pos = [0, 0]
-        res = 0
-        d = 0
-        hashset = s..()
+        dirs [[0, 1], [1, 0], [0, -1], [-1, 0]]
+        pos [0, 0]
+        res 0
+        d 0
+        hashset s..()
         ___ ob __ obstacles:
             hashset.add(t..(ob
         ___ c __ commands:
             __ c __ (-1, -2
-                d = calDirection(d, c)
+                d calDirection(d, c)
             ____
                 ___ _ __ r..(c
                     __ (pos[0] + dirs[d][0], pos[1] + dirs[d][1]) n.. __ hashset:
-                        pos = [pos[0] + dirs[d][0], pos[1] + dirs[d][1]]
-            res = m..(res, pos[0]**2 + pos[1]**2)
+                        pos [pos[0] + dirs[d][0], pos[1] + dirs[d][1]]
+            res m..(res, pos[0]**2 + pos[1]**2)
         r.. res
     
     ___ calDirection  d, c
@@ -36,14 +36,14 @@ c_ Solution(o..
         r.. d
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [4,-1,3],
                 [],
             ],
         ]
         ___ commands, obstacles __ testCases:
-            res = robotSim(commands, obstacles)
+            res robotSim(commands, obstacles)
             print('res: %s' % res)
 
 __ _____ __ _____

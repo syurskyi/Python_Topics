@@ -4,8 +4,8 @@ c_ Solution(o..
     :type num: int
     :rtype: bool
     """
-    ans = 1
-    div = 2
+    ans 1
+    div 2
     w.... div ** 2 <_ num:
       __ num % div __ 0:
         ans += div

@@ -8,21 +8,21 @@ c_ Solution(o..
     ___ findDuplicates  nums
         result    # list
         ___ num __ nums:
-            ind = a..(num)-1
+            ind a..(num)-1
             __ nums[ind] < 0:
                 result.a..(a..(num
             ____
-                nums[ind] = -nums[ind]
+                nums[ind] -nums[ind]
         r.. result
     
     ___ test
-        testCases = [
+        testCases [
             [4,3,2,7,8,2,3,1],
             [10,2,5,10,9,1,1,4,3,7],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = findDuplicates(nums)
+            result findDuplicates(nums)
             print('result: %s' % result)
             print('-='*20+'-')
 

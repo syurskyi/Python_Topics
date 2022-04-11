@@ -30,9 +30,9 @@ The size of the given array will be in the range [1,1000].
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 ____ t___ _______ L..
@@ -49,13 +49,13 @@ c_ Solution:
         """
         stk    # list
         ___ n __ nums:
-            cur = TreeNode(n)
+            cur TreeNode(n)
             w.... stk a.. stk[-1].val < cur.val:
-                left = stk.p.. )
-                cur.left = left
+                left stk.p.. )
+                cur.left left
 
             __ stk:
-                stk[-1].right = cur
+                stk[-1].right cur
 
             stk.a..(cur)
 
@@ -70,16 +70,16 @@ c_ Solution_heap:
         __ n.. nums:
             r..
 
-        h = [(-v, v) ___ v __ nums]
-        idx = {
+        h [(-v, v) ___ v __ nums]
+        idx {
             v: i
             ___ i, v __ e..(nums)
         }
         heapq.heapify(h)
-        root = N..
+        root N..
         w.... h:
-            _, m = heapq.heappop(h)
-            root = insert(root, m, idx)
+            _, m heapq.heappop(h)
+            root insert(root, m, idx)
 
         r.. root
 
@@ -88,9 +88,9 @@ c_ Solution_heap:
             r.. TreeNode(m)
 
         __ idx[m] < idx[node.val]:
-            node.left = insert(node.left, m, idx)
+            node.left insert(node.left, m, idx)
         ____ idx[m] > idx[node.val]:
-            node.right = insert(node.right, m, idx)
+            node.right insert(node.right, m, idx)
         ____
             r..
 

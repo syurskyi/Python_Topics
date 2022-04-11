@@ -4,7 +4,7 @@ difference between nums[i] and nums[j] is at most t and the difference between i
 """
 ____ c.. _______ OrderedDict
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -26,23 +26,23 @@ c_ Solution:
         __ t __ 0:
             r.. containsNearByDuplicate(nums, k)
 
-        od = OrderedDict()  # keep the window
+        od OrderedDict()  # keep the window
         ___ n __ nums:
-            key = n/t
+            key n/t
             ___ j __ (-1, 0, 1  # (n-t, n, n+t), shrink the interval
-                m = od.g.. key+j)
+                m od.g.. key+j)
                 __ m __ n.. N.. a.. a..(m-n) <_ t:  # need to recheck, consider case {1, 7}, t=4
                     r.. T..
 
             w.... l..(od) >_ k:
                 od.popitem(F..)  # not last, i.e. the first
 
-            od[key] = n
+            od[key] n
 
         r.. F..
 
     ___ containsNearByDuplicate  nums, k
-        od = OrderedDict()
+        od OrderedDict()
         ___ n __ nums:
             __ od.g.. n
                 r.. T..
@@ -50,7 +50,7 @@ c_ Solution:
             w.... l..(od) >_ k:
                 od.popitem(F..)
 
-            od[n] = n
+            od[n] n
 
         r.. F..
 

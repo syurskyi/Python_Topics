@@ -29,21 +29,21 @@ c_ Solution(o..
         """
         result    # list
         __ n.. words: r.. result
-        count, last = 0, 0
+        count, last 0, 0
         ___ i, word __ e..(words
             count += l..(word)
             __ count+i-last > maxWidth:
-                wordsLen = count-l..(word)
-                spaceLen = maxWidth-wordsLen
-                eachLen = 1
-                extraLen = 0
+                wordsLen count-l..(word)
+                spaceLen maxWidth-wordsLen
+                eachLen 1
+                extraLen 0
                 __ i-last-1>0:
-                    eachLen = spaceLen/(i-last-1)
-                    extraLen = spaceLen%(i-last-1)
-                s = ''
+                    eachLen spaceLen/(i-last-1)
+                    extraLen spaceLen%(i-last-1)
+                s ''
                 ___ k __ r..(last, i-1
                     s += words[k]
-                    ce = 0
+                    ce 0
                     w.... ce < eachLen:
                         s += ' '
                         ce += 1
@@ -54,9 +54,9 @@ c_ Solution(o..
                 w.... l..(s) < maxWidth:
                     s += ' '
                 result.a..(s)
-                last = i
-                count = l..(word)
-        s = ''
+                last i
+                count l..(word)
+        s ''
         ___ i __ r..(last, l..(words)-1
             count += l..(words[i])
             s += words[i] + ' '
@@ -66,13 +66,13 @@ c_ Solution(o..
         r.. result
     
     ___ test
-        testCases = [
+        testCases [
             (["This", "is", "an", "example", "of", "text", "justification."], 16),
         ]
         ___ words, maxWidth __ testCases:
             print('words: %s' % (words
             print('maxWidth: %s' % (maxWidth
-            result = fullJustify(words, maxWidth)
+            result fullJustify(words, maxWidth)
             print('result: %s' % (result
             print('-='*15+'-')
 

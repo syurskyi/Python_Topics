@@ -22,13 +22,13 @@ c_ Solution:
         __ n.. head o. n.. head.next:
             r.. F..
 
-        slow = head
-        fast = head.next
+        slow head
+        fast head.next
         w.... slow != fast:
             __ n.. fast.next o. n.. fast.next.next:
                 r.. F..
 
-            slow = slow.next
-            fast = fast.next.next
+            slow slow.next
+            fast fast.next.next
 
         r.. T..

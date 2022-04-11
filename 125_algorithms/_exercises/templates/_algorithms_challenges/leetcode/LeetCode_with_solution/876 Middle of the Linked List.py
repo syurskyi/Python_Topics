@@ -27,27 +27,27 @@ The number of nodes in the given list will be between 1 and 100.
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 c_ Solution:
     ___ middleNode  head: ListNode) __ ListNode:
         """
         """
-        l = 0
-        cur = head
+        l 0
+        cur head
         w.... cur:
             l += 1
-            cur = cur.next
+            cur cur.next
 
-        mid = l // 2 + 1
-        cur_l = 0
-        cur = head
+        mid l // 2 + 1
+        cur_l 0
+        cur head
         w.... cur:
             cur_l += 1
             __ cur_l __ mid:
                 r.. cur
-            cur = cur.next
+            cur cur.next
 
         r.. N..

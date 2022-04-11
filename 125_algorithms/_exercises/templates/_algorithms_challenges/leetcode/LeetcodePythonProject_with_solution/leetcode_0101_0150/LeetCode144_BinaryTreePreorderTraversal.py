@@ -6,9 +6,9 @@ Created on Feb 9, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ preorderTraversal  root
@@ -17,10 +17,10 @@ c_ Solution(o..
         :rtype: List[int]
         """
         __ n.. root: r.. []
-        stack = [root]
+        stack [root]
         res    # list
         w.... stack:
-            node = stack.p.. )
+            node stack.p.. )
             res.a..(node.val)
             __ node.right:
                 stack.a..(node.right)
@@ -29,11 +29,11 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             TreeNode(5, TreeNode(3, TreeNode(1), TreeNode(4, TreeNode(7, N.., TreeNode(9)))
         ]
         ___ root __ testCases:
-            result = preorderTraversal(root)
+            result preorderTraversal(root)
             print('result: %s' % (result
 
 __ _____ __ _____

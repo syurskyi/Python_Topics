@@ -3,19 +3,19 @@ _______ __
 ____ c.. _______ d.., n..
 ____ u__.r.. _______ u..
 
-BASE_URL = 'http://projects.bobbelderbos.com/pcc/movies/'
-TMP = '/tmp'
+BASE_URL 'http://projects.bobbelderbos.com/pcc/movies/'
+TMP '/tmp'
 
-fname = 'movie_metadata.csv'
-remote = __.p...j..(BASE_URL, fname)
-local = __.p...j..(TMP, fname)
+fname 'movie_metadata.csv'
+remote __.p...j..(BASE_URL, fname)
+local __.p...j..(TMP, fname)
 u..(remote, local)
 
-MOVIE_DATA = local
-MIN_MOVIES = 4
-MIN_YEAR = 1960
+MOVIE_DATA local
+MIN_MOVIES 4
+MIN_YEAR 1960
 
-Movie = n..('Movie', 'title year score')
+Movie n..('Movie', 'title year score')
 
 
 ___ get_movies_by_director
@@ -23,20 +23,20 @@ ___ get_movies_by_director
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
     w__ o.. MOVIE_DATA) __ f:
-        reader = csv.DictReader(f)
-        films = [{'director': r 'director_name' , 'title': r 'movie_title' , 'year': r 'title_year' ,
+        reader csv.DictReader(f)
+        films [{'director': r 'director_name' , 'title': r 'movie_title' , 'year': r 'title_year' ,
                   'score': r 'imdb_score' }
                  ___ r __ reader]
-    result = d..()
+    result d..()
     ___ r __ films:
-        yr = i..(r 'year' , 10) __ r 'year'  ____ 0
+        yr i..(r 'year' , 10) __ r 'year'  ____ 0
         __ yr >_ MIN_YEAR:
-            score = f__(r 'score' ) __ r 'score'  ____ 0.0
-            movie = Movie(r 'title' , yr, score)
+            score f__(r 'score' ) __ r 'score'  ____ 0.0
+            movie Movie(r 'title' , yr, score)
             __ r 'director'  __ result:
                 result[r 'director']].a..(movie)
             ____
-                result[r 'director']] = [movie]
+                result[r 'director']] [movie]
     r.. result
 
 

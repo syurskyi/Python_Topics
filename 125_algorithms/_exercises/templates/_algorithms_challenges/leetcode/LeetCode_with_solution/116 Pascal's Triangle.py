@@ -12,7 +12,7 @@ Return
  [1,4,6,4,1]
 ]
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ generate  numRows
         """

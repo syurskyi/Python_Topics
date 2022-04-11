@@ -14,11 +14,11 @@ ___ transpose(data
     Out: [('Bob', 'Julian'), (60, 221), (60, 34), (56, 78)]
     """
     __ isi..(data, d..
-       dict_keys = t..([key ___ key __ data.k..])
-       dict_values = t..([value ___ value __ data.v..)
+       dict_keys t..([key ___ key __ data.k..])
+       dict_values t..([value ___ value __ data.v..)
        r.. [dict_keys, dict_values]
 
 
     __ isi..(data, l..
-       nt_list = [[?.name, ?.since_days, ?.karma_points, ?.bitecoin_earned] ___ nt __ data]
+       nt_list [[?.name, ?.since_days, ?.karma_points, ?.bitecoin_earned] ___ nt __ data]
        r.. z..(*nt_list)

@@ -5,7 +5,7 @@ For example, given n = 3, a solution set is:
 
 "((()))", "(()())", "(())()", "()(())", "()()()"
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ generateParenthesis  n
         """

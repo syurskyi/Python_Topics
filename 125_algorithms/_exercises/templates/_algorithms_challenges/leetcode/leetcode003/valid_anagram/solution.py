@@ -25,7 +25,7 @@ c_ Solution(o..
             __ c __ d:
                 d[c] += 1
             ____
-                d[c] = 1
+                d[c] 1
         ___ c __ t:
             __ c n.. __ d:
                 r.. F..
@@ -36,6 +36,6 @@ c_ Solution(o..
         r.. T..
 
 
-s = Solution()
+s Solution()
 print(s.isAnagram("aacc", "ccac"
 print(s.isAnagram("abcd", "bcda"

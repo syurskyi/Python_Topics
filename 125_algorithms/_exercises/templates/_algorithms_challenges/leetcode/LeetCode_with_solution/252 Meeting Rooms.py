@@ -3,13 +3,13 @@ Premium Question
 """
 _______ o..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Interval:
     ___ - , s=0, e=0
-        start = s
-        end = e
+        start s
+        end e
 
 
 c_ Solution:

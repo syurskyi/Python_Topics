@@ -18,14 +18,14 @@ This problem was inspired by this original tweet by Max Howell:
 Google: 90% of our engineers use the software you wrote (Homebrew), but you can't invert a binary tree on a whiteboard
 so fuck off.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -39,7 +39,7 @@ c_ Solution:
 
         invertTree_recur(root.left)
         invertTree_recur(root.right)
-        root.left, root.right = root.right, root.left
+        root.left, root.right root.right, root.left
         r.. root
 
     ___ invertTree  root
@@ -56,9 +56,9 @@ c_ Solution:
         post    # list  # [cur, R, L]
 
         stk.a..(root)
-        cur = N..
+        cur N..
         w.... stk:
-            cur = stk.p.. )
+            cur stk.p.. )
             post.a..(cur)
             __ cur.left:
                 stk.a..(cur.left)
@@ -66,7 +66,7 @@ c_ Solution:
                 stk.a..(cur.right)
 
         w.... post:
-            cur = post.p.. )
-            cur.left, cur.right = cur.right, cur.left
+            cur post.p.. )
+            cur.left, cur.right cur.right, cur.left
 
         r.. cur

@@ -17,7 +17,7 @@ c_ Solution(o..
         hashmap    # dict
         ___ c __ s:
             __ c __ hashmap: hashmap[c] += 1
-            ____ hashmap[c] = 1
+            ____ hashmap[c] 1
         ___ c __ t:
             __ c n.. __ hashmap: r.. F..
             hashmap[c] -_ 1

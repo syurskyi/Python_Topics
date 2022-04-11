@@ -10,10 +10,10 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        res = [1]
-        ind2, ind3, ind5 = 0, 0, 0
+        res [1]
+        ind2, ind3, ind5 0, 0, 0
         ___ _ __ r..(1, n
-            val = m..(res[ind2]*2, res[ind3]*3, res[ind5]*5)
+            val m..(res[ind2]*2, res[ind3]*3, res[ind5]*5)
             res.a..(val)
             __ val __ res[ind2]*2: ind2 += 1
             __ val __ res[ind3]*3: ind3 += 1
@@ -21,13 +21,13 @@ c_ Solution(o..
         r.. res[-1]
     
     ___ test
-        testCases = [
+        testCases [
             10,
             20,
         ]
         ___ n __ testCases:
             print('n: %s' % (n
-            result = nthUglyNumber(n)
+            result nthUglyNumber(n)
             print('result: %s' % (result
             print('-='*30+'-')
 

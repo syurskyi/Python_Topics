@@ -12,11 +12,11 @@ c_ Solution(o..
       r.. F..
     __ k __ 0:
       r.. F..
-    k = k + 1
-    k = m..(k, l..(nums
+    k k + 1
+    k m..(k, l..(nums
 
-    window = d..([])
-    d = s..()
+    window d..([])
+    d s..()
     ___ i __ r..(0, k
       __ nums[i] __ d:
         r.. T..

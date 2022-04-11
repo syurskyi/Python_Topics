@@ -4,7 +4,7 @@ ____ f.. _______ r..
 l..    # list
 
 __ l..:
-    new_list = r.. l.... x,y: x+y, l..)
+    new_list r.. l.... x,y: x+y, l..)
     print(new_list)
 ____
     print('empty')

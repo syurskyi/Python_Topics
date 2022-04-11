@@ -7,17 +7,17 @@ _______ r__
 ____ t___ _______ Tuple, Optional, L..
 _______ __
 
-DATA_FILE_NAME = "test1.json"
-TMP = P..(__.g..("TMP", "/tmp"
+DATA_FILE_NAME "test1.json"
+TMP P..(__.g..("TMP", "/tmp"
 
 
-DATA_PATH = TMP / DATA_FILE_NAME
-MY_TZ = gettz("America/New York")
-UTC = gettz("UTC")
+DATA_PATH TMP / DATA_FILE_NAME
+MY_TZ gettz("America/New York")
+UTC gettz("UTC")
 
 
 ___ longest_streak(
-    data_file: P.. = DATA_PATH, my_tz: Optional[tzinfo] = MY_TZ
+    data_file: P.. DATA_PATH, my_tz: Optional[tzinfo] MY_TZ
 ) __ Optional[Tuple[date, date]]:
     """Retrieve datetime strings of passed commits and calculate the longest
     streak from the user's data
@@ -37,46 +37,46 @@ ___ longest_streak(
     or None
     """
     w__ o.. data_file) __ f:
-        data = j__.l.. f)
+        data j__.l.. f)
     # You code from here
-    commits = data 'commits'
-    longest_streak = f__("-inf")
-    start_date = end_date = N..
+    commits data 'commits'
+    longest_streak f__("-inf")
+    start_date end_date N..
     
-    day_timedelta = t..(d.._1)
+    day_timedelta t..(d.._1)
     previous_date= current_start =N..
-    current_streak = 1
+    current_streak 1
     ___ i __ r..(l..(commits:
-        commit = commits[i]
+        commit commits[i]
         __ commit 'passed' :
-            date = p..(commit 'date' )
-            date = date.astimezone(my_tz)
+            date p..(commit 'date' )
+            date date.astimezone(my_tz)
 
 
-            date = date.date()
+            date date.date()
 
 
             __ date + day_timedelta __ previous_date:
                 current_streak += 1
             ____
                 __ current_streak > longest_streak:
-                    longest_streak = current_streak
-                    start_date = current_start __ current_start ____ date
-                    end_date = previous_date __ previous_date ____ date
+                    longest_streak current_streak
+                    start_date current_start __ current_start ____ date
+                    end_date previous_date __ previous_date ____ date
                     
 
-                current_streak = 1
-                current_start = date
+                current_streak 1
+                current_start date
 
 
-            previous_date = date
+            previous_date date
 
 
     
     __ current_streak > longest_streak:
-        longest_streak = current_streak
-        start_date = current_start
-        end_date = previous_date
+        longest_streak current_streak
+        start_date current_start
+        end_date previous_date
 
     
     
@@ -90,6 +90,6 @@ ___ longest_streak(
 
 
 __ _______ __ _______
-    streak = longest_streak()
+    streak longest_streak()
     print(f"My longest streak went from {streak[0]} through {streak[1]}")
     print(f"The streak lasted {(streak[1]-streak[0]).days + 1} days")

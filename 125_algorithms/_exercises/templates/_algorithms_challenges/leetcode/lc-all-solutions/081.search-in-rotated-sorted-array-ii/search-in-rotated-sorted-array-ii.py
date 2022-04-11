@@ -5,21 +5,21 @@ c_ Solution(o..
     :type target: int
     :rtype: bool
     """
-    start, end = 0, l..(nums) - 1
+    start, end 0, l..(nums) - 1
     w.... start + 1 < end:
-      mid = start + (end - start) / 2
+      mid start + (end - start) / 2
       __ nums[mid] __ target:
         r.. T..
       __ nums[start] < nums[mid]:
         __ nums[start] <_ target <_ nums[mid]:
-          end = mid
+          end mid
         ____
-          start = mid
+          start mid
       ____ nums[start] > nums[mid]:
         __ nums[mid] <_ target <_ nums[end]:
-          start = mid
+          start mid
         ____
-          end = mid
+          end mid
       ____
         start += 1
 

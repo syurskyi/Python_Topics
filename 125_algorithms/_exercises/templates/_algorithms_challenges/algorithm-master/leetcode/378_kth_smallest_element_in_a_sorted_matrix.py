@@ -17,7 +17,7 @@ c_ Solution:
             heappush(heap, (G[x][0], x, 0
 
         w.... heap:
-            a, x, y = heappop(heap)
+            a, x, y heappop(heap)
 
             k -_ 1
             __ k __ 0:

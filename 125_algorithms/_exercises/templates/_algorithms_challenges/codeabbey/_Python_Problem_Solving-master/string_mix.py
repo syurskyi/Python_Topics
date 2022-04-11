@@ -1,18 +1,18 @@
 #accepting the two strings
-s1 = ''.j..(i ___ i __ input() __ i.islower
-s2 = ''.j..(i ___ i __ input() __ i.islower
+s1 ''.j..(i ___ i __ input() __ i.islower
+s2 ''.j..(i ___ i __ input() __ i.islower
 #using sorted to arrange the string in order before processing them
-s1 = s..(s1)
-s2 = s..(s2)
+s1 s..(s1)
+s2 s..(s2)
 
 #defining the method mix
 ___ mix(s1,s2
     
-    s1 = ''.j..(i ___ i __ s1 __ i.islower
-    s2 = ''.j..(i ___ i __ s2 __ i.islower
+    s1 ''.j..(i ___ i __ s1 __ i.islower
+    s2 ''.j..(i ___ i __ s2 __ i.islower
 
-    s1 = s..(s1)
-    s2 = s..(s2)
+    s1 s..(s1)
+    s2 s..(s2)
     #s1_dic is used to store the count of occurance of a particular
     #alphabet in string s1 and similarly of s2_dic for string s2
     s1_dic    # dict
@@ -20,33 +20,33 @@ ___ mix(s1,s2
     
     #sub_str is used to store the alphabets for the number of counts(iterations)
     # for example: count of n is 5 thus sub_str will hold sub_str = 'nnnnn'
-    sub_str = ''
+    sub_str ''
     
     #main_string holds the final string that is to be returned
-    main_string = ''
+    main_string ''
     
     #res_string is used to store the sub_str for alphabets and then later it is sorted
     res_string    # list
 
     #this for loop is used to record the count of a particular alphabet in the dictionary for string s1
     ___ i __ s1:
-        count = s1.c.. i)
+        count s1.c.. i)
         #check if the current character is present in dictionary. if not then add the char to dictionary
         __ i n.. __ s1_dic:
-            s1_dic[i] = count
+            s1_dic[i] count
     #this for loop is used to record the count of a particular alphabet in the dictionary for string s2
     ___ i __ s2:
-        count = s2.c.. i)
+        count s2.c.. i)
         #check if the current character is present in dictionary. if not then add the char to dictionary
         __ i n.. __ s2_dic:
-            s2_dic[i] = count
+            s2_dic[i] count
 
     #print(s1_dic)
     #print(s2_dic)
     
     # to check the if the same element are present in both the dictionary of s1 and s2
     ___ i __ s1_dic:
-        sub_str = ''
+        sub_str ''
         __ i __ s2_dic:
             #here the count>1 constraint is taken care of 
             __ s1_dic[i] > 1 o. s2_dic[i] > 1:
@@ -71,7 +71,7 @@ ___ mix(s1,s2
                 res_string.a..('1:' + sub_str)
                 
     ___ i __ s2_dic:
-        sub_str = ''
+        sub_str ''
         __ i n.. __ s1_dic:
             __ s2_dic[i] > 1:
                 ___ j __ r..(s2_dic[i]
@@ -100,8 +100,8 @@ ___ mix(s1,s2
                 #here try and except block helps program from terminating
                 ___
                     #convert the strings first element to float 
-                    check_int1 = f__(res_string[j][0])
-                    check_int2 = f__(res_string[j+1][0])
+                    check_int1 f__(res_string[j][0])
+                    check_int2 f__(res_string[j+1][0])
                     #if the variable is in integer form then proceed
                     __ check_int1.is_integer() a.. check_int2.is_integer
                         
@@ -125,7 +125,7 @@ ___ mix(s1,s2
                             
                     # if the jth element is having the '=' sign then it is swaped
                     ____ res_string[j][0] __ '=':
-                        res_string[j],res_string[j+1] = res_string[j+1],res_string[j]
+                        res_string[j],res_string[j+1] res_string[j+1],res_string[j]
                     
                     ____
                         p..
@@ -133,7 +133,7 @@ ___ mix(s1,s2
                 p..
     
     
-    main_string = '/'.j..(s..(e) ___ e __ res_string)
+    main_string '/'.j..(s..(e) ___ e __ res_string)
     r.. main_string
     
 mix(s1,s2)

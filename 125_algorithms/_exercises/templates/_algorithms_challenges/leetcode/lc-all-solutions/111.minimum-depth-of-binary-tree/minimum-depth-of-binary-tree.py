@@ -13,8 +13,8 @@ c_ Solution(o..
     """
     __ n.. root:
       r.. 0
-    left = minDepth(root.left)
-    right = minDepth(root.right)
+    left minDepth(root.left)
+    right minDepth(root.right)
     __ n.. left a.. n.. right:
       r.. 1
     ____ n.. left:

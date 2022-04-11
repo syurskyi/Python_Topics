@@ -38,14 +38,14 @@ c_ Solution:
         let F[i][j] be the min falling path sum at A[i][j]
         using default dict
         """
-        m, n = l..(A), l..(A[0])
-        F = d..(l....: d..(l....: f__("inf")))
+        m, n l..(A), l..(A[0])
+        F d..(l....: d..(l....: f__("inf")))
         ___ j __ r..(n
-            F[m-1][j] = A[m-1][j]
+            F[m-1][j] A[m-1][j]
 
         ___ i __ r..(m-2, -1, -1
             ___ j __ r..(n
-                F[i][j] = m..(F[i+1][j-1], F[i+1][j], F[i+1][j+1]) + A[i][j]
+                F[i][j] m..(F[i+1][j-1], F[i+1][j], F[i+1][j+1]) + A[i][j]
 
         r.. m..(
             F[0][j]
@@ -57,18 +57,18 @@ c_ Solution:
         dp, build from bottom
         let F[i][j] be the min falling path sum at A[i][j]
         """
-        m, n = l..(A), l..(A[0])
-        F = [[f__('inf') ___ _ __ r..(n)] ___ _ __ r..(m)]
+        m, n l..(A), l..(A[0])
+        F [[f__('inf') ___ _ __ r..(n)] ___ _ __ r..(m)]
         ___ j __ r..(n
-            F[m-1][j] = A[m-1][j]
+            F[m-1][j] A[m-1][j]
 
         ___ i __ r..(m-2, -1, -1
             ___ j __ r..(n
-                F[i][j] = m..(F[i][j], F[i+1][j] + A[i][j])
+                F[i][j] m..(F[i][j], F[i+1][j] + A[i][j])
                 __ j - 1 >_ 0:
-                    F[i][j] = m..(F[i][j], F[i+1][j-1] + A[i][j])
+                    F[i][j] m..(F[i][j], F[i+1][j-1] + A[i][j])
                 __ j + 1 < n:
-                    F[i][j] = m..(F[i][j], F[i+1][j+1] + A[i][j])
+                    F[i][j] m..(F[i][j], F[i+1][j+1] + A[i][j])
 
         r.. m..(F[0])
 

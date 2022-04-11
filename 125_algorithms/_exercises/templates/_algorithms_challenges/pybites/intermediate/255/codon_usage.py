@@ -8,7 +8,7 @@ ____ i.. _______ combinations
 # https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi#SG11
 # Each column represents one entry. Codon = {Base1}{Base2}{Base3}
 # All Base 'T's need to be converted to 'U's to convert DNA to RNA
-TRANSL_TABLE_11 = """
+TRANSL_TABLE_11 """
     AAs  = FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG
   Starts = ---M------**--*----M------------MMMM---------------M------------
   Base1  = TTTTTTTTTTTTTTTTCCCCCCCCCCCCCCCCAAAAAAAAAAAAAAAAGGGGGGGGGGGGGGGG
@@ -17,10 +17,10 @@ TRANSL_TABLE_11 = """
 """
 
 # Converted from http://ftp.ncbi.nlm.nih.gov/genomes/archive/old_refseq/Bacteria/Staphylococcus_aureus_Newman_uid58839/NC_009641.ffn  # noqa E501
-URL = "https://bites-data.s3.us-east-2.amazonaws.com/NC_009641.txt"
+URL "https://bites-data.s3.us-east-2.amazonaws.com/NC_009641.txt"
 
 # Order of bases in the table
-BASE_ORDER = ["U", "C", "A", "G"]
+BASE_ORDER ["U", "C", "A", "G"]
 
 
 ___ _preload_sequences(url=URL
@@ -30,7 +30,7 @@ ___ _preload_sequences(url=URL
     """
     #x = requests.get(url)
     #return x.text.splitlines()
-    filename = __.p...j..(__.g.. TMP  /tmp, "NC_009641.txt")
+    filename __.p...j..(__.g.. TMP  /tmp, "NC_009641.txt")
     __ n.. __.p...i..(filename
         u..(url, filename)
     w__ o.. filename, "r") __ f:
@@ -40,19 +40,19 @@ ___ _preload_sequences(url=URL
 ___ get_translation_table(TRANSL_TABLE_11
     
 
-    table = TRANSL_TABLE_11.r..('T','U')
-    lines = table.l...s..
+    table TRANSL_TABLE_11.r..('T','U')
+    lines table.l...s..
 
-    lines = lines[0:1] + lines[2:]
+    lines lines[0:1] + lines[2:]
 
     ___ i,line __ e..(lines
-        lines[i] = line.s..('=')[1].s..
+        lines[i] line.s..('=')[1].s..
     
     mapping    # dict
     ___ aa,b1,b2,b3 __ z..(*lines
         __ aa __ 'U':
-            aa = 'T'
-        mapping[b1 + b2 + b3] = aa
+            aa 'T'
+        mapping[b1 + b2 + b3] aa
 
 
     r.. mapping
@@ -75,27 +75,27 @@ ___ return_codon_usage_table(
        --> must consist entirely of codons (3-base triplet)
     """
     
-    amino_acid_mapping = get_translation_table(translation_table_str)
-    total = 0
-    codon_to_count = d..(i..)
+    amino_acid_mapping get_translation_table(translation_table_str)
+    total 0
+    codon_to_count d..(i..)
     
     ___ sequence __ sequences:
-        sequence = sequence.s..
+        sequence sequence.s..
         ___ i __ r..(0,l..(sequence),3
-            codon = sequence[i:i +3]
+            codon sequence[i:i +3]
             codon_to_count[codon] += 1
 
     
     
 
 
-    total = s..(codon_to_count.values
+    total s..(codon_to_count.values
 
 
     ___ codon,count __ codon_to_count.i..:
-        amino_acid = amino_acid_mapping[codon]
-        frequency_per_1000 = r..((count/total) * 1000,1)
-        codon_to_count[codon] = [amino_acid,frequency_per_1000,count]
+        amino_acid amino_acid_mapping[codon]
+        frequency_per_1000 r..((count/total) * 1000,1)
+        codon_to_count[codon] [amino_acid,frequency_per_1000,count]
 
 
 
@@ -111,11 +111,11 @@ ___ return_codon_usage_table(
         ___ codon_3 __ BASE_ORDER:
             row    # list
             ___ codon_2 __ BASE_ORDER:
-                codon = codon_1 + codon_2 + codon_3
+                codon codon_1 + codon_2 + codon_3
 
-                aa,freq,count = codon_to_count[codon]
-                codon_text = codon + ':'
-                data = f"|  {codon_text:<5} {aa:<2}  {freq:>4}  {count:>5}  "
+                aa,freq,count codon_to_count[codon]
+                codon_text codon + ':'
+                data f"|  {codon_text:<5} {aa:<2}  {freq:>4}  {count:>5}  "
                 row.a..(data)
             row.a..('|')
             lines.a..(''.j..(row

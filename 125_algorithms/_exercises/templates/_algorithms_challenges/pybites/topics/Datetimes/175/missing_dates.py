@@ -10,9 +10,9 @@ ___ get_missing_dates(dates
 
        See the Bite description and tests for example outputs.
     """
-    first_dt = m..(dates)
-    last_dt = m..(dates)
-    full_dt = [first_dt+t..(i) ___ i __ r..((last_dt-first_dt).days+1)]
+    first_dt m..(dates)
+    last_dt m..(dates)
+    full_dt [first_dt+t..(i) ___ i __ r..((last_dt-first_dt).days+1)]
     r.. s..(s..(full_dt)-s..(dates
 
 
@@ -24,8 +24,8 @@ ___ _create_dates(missing, year=2019,  m.._2
 
        You can optionally specify year and month.
     """
-    first = date y.._year,  m.._month,  d.._1)
-    last = first.r..( m.._month+1) - t..(d.._1)
+    first date y.._year,  m.._month,  d.._1)
+    last first.r..( m.._month+1) - t..(d.._1)
 
     # always yield first and last, for the in between dates
     # only the ones not in missing
@@ -38,7 +38,7 @@ ___ _create_dates(missing, year=2019,  m.._2
     y.. last
 
 
-date_list = l..(_create_dates([2, 7, 11], 2
+date_list l..(_create_dates([2, 7, 11], 2
 
 #print(type(date_list), len(date_list))
 #print(date_list)

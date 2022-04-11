@@ -34,9 +34,9 @@ Each node will have a value between 1 and 10^9.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 ____ c.. _______ OrderedDict
 
@@ -47,45 +47,45 @@ c_ Solution:
         map: node -> depth
         stack of pi (incompleted)
         """
-        depth = 0
+        depth 0
         # parse
-        n = l..(S)
-        i = 0
-        root = N..
+        n l..(S)
+        i 0
+        root N..
         stk    # list
         w.... i < n:
             __ S[i] __ "-":
                 depth += 1
                 i += 1
             ____
-                j = i
+                j i
                 w.... j < n a.. S[j] != "-":
                     j += 1
 
-                val = i..(S[i:j])
+                val i..(S[i:j])
 
                 # construct
-                cur = TreeNode(val)
+                cur TreeNode(val)
                 __ depth __ 0:
-                    root = cur
-                    stk = [(depth, root)]
+                    root cur
+                    stk [(depth, root)]
                 ____
                     ... stk
                     w.... stk[-1][0] != depth - 1:
                         stk.p.. )
 
-                    _, pi = stk[-1]
+                    _, pi stk[-1]
                     __ n.. pi.left:
-                        pi.left = cur
+                        pi.left cur
                     ____ n.. pi.right:
-                        pi.right = cur
+                        pi.right cur
                         stk.p.. )
                     ____
                         r..
                     stk.a..((depth, cur
 
-                depth = 0
-                i = j
+                depth 0
+                i j
 
         r.. root
 
@@ -94,42 +94,42 @@ c_ Solution:
         map: node -> depth
         stack of pi (incompleted)
         """
-        depth = 0
-        depths = OrderedDict()
+        depth 0
+        depths OrderedDict()
         # parse
-        n = l..(S)
-        i = 0
+        n l..(S)
+        i 0
         w.... i < n:
             __ S[i] __ "-":
                 depth += 1
                 i += 1
             ____
-                j = i
+                j i
                 w.... j < n a.. S[j] != "-":
                     j += 1
 
-                val = i..(S[i:j])
-                depths[val] = depth
-                depth = 0
-                i = j
+                val i..(S[i:j])
+                depths[val] depth
+                depth 0
+                i j
 
         # construct
         stk    # list
-        root = N..
+        root N..
         ___ k, v __ depths.i..:
-            cur = TreeNode(k)
+            cur TreeNode(k)
             __ v __ 0:
-                root = cur
-                stk = [root]
+                root cur
+                stk [root]
             ____
                 ... stk
                 w.... depths[stk[-1].val] != v - 1:
                     stk.p.. )
 
                 __ n.. stk[-1].left:
-                    stk[-1].left = cur
+                    stk[-1].left cur
                 ____ n.. stk[-1].right:
-                    stk[-1].right = cur
+                    stk[-1].right cur
                     stk.p.. )
                 ____
                     r..

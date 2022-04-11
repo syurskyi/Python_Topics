@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. nums:
             r.. -1
 
-        l, m, r = 0, 0, l..(nums) - 1
+        l, m, r 0, 0, l..(nums) - 1
 
         """
         since the children between `nums[0:maximum]`
@@ -18,13 +18,13 @@ c_ Solution:
         2. child in `nums[minimum:-1]`,
            then the right boundary will to the minimum
         """
-        last = nums[-1]
+        last nums[-1]
 
         w.... l + 1 < r:
-            m = l + (r - l) // 2
+            m l + (r - l) // 2
             __ nums[m] > last:
-                l = m
+                l m
             ____
-                r = m
+                r m
 
         r.. m..(nums[l], nums[r])

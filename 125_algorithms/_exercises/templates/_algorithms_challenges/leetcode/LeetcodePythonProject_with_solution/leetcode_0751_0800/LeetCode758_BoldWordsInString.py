@@ -10,28 +10,28 @@ c_ Solution(o..
         :type S: str
         :rtype: str
         """
-        s = S
-        words = s..(words)
-        start = F..
-        j = 0
-        res = ''
+        s S
+        words s..(words)
+        start F..
+        j 0
+        res ''
         ___ i __ r..(l..(s:
             ___ word __ words:
                 __ i+l..(word) <_ l..(s) a.. s[i:i+l..(word)] __ word:
                     __ n.. start:
                         res += '<b>'
-                        start = T..
-                    j = m..(j, i+l..(word
+                        start T..
+                    j m..(j, i+l..(word
             __ i __ j a.. start:
                 res += '</b>'
-                start = F..
+                start F..
             res += s[i]
         __ j >_ l..(s
             res += '</b>'
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                  'ab', 'bc' ,
                 'aabcd',
@@ -48,7 +48,7 @@ c_ Solution(o..
         ___ words, s __ testCases:
             print('words: %s' % words)
             print('s: %s' % s)
-            result = boldWords(words, s)
+            result boldWords(words, s)
             print('result: %s' % result)
             print('-='*30+'-')
 

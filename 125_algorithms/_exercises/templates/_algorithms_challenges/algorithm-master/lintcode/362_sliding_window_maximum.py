@@ -17,7 +17,7 @@ c_ HashHeapq:
     ___ remove  val
         __ is_empty
             r..
-        deleted[val] = deleted.g.. val, 0) + 1
+        deleted[val] deleted.g.. val, 0) + 1
 
     ___ top
         __ is_empty
@@ -42,7 +42,7 @@ c_ Solution:
         __ n.. A:
             r.. ans
 
-        heap = HashHeapq()
+        heap HashHeapq()
 
         ___ i __ r..(l..(A:
             heap.push(-A[i])

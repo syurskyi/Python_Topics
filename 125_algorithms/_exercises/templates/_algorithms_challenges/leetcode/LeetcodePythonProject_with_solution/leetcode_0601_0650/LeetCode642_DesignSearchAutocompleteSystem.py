@@ -5,10 +5,10 @@ Created on Sep 27, 2017
 '''
 c_ TreeNode(o..
     ___ - , val
-        val = val
+        val val
         children    # dict
         candidates    # dict
-        isLeaf = F..
+        isLeaf F..
 
 c_ AutocompleteSystem(o..
 
@@ -17,18 +17,18 @@ c_ AutocompleteSystem(o..
         :type sentences: List[str]
         :type times: List[int]
         """
-        root = TreeNode(N..)
-        node = root
-        s = ''
+        root TreeNode(N..)
+        node root
+        s ''
         ___ s, count __ z..(sentences, times
-            node = root
+            node root
             ___ c __ s:
                 __ c n.. __ node.children:
-                    newNode = TreeNode(c)
-                    node.children[c] = newNode
-                node = node.children[c]
-                node.candidates[s] = node.candidates.g.. s, 0)+count
-            node.isLeaf = T..
+                    newNode TreeNode(c)
+                    node.children[c] newNode
+                node node.children[c]
+                node.candidates[s] node.candidates.g.. s, 0)+count
+            node.isLeaf T..
 
     ___ input  c
         """
@@ -37,33 +37,33 @@ c_ AutocompleteSystem(o..
         """
         __ c __ '#':
             res    # list
-            node = root
+            node root
             addCandidate(s)
-            s = ''
+            s ''
             r.. res
         ____
             s += c
             __ node a.. c __ node.children:
-                node = node.children[c]
-                node = node
-                candidates = node.candidates
-                res = [(-count, s) ___ s, count __ candidates.i..]
+                node node.children[c]
+                node node
+                candidates node.candidates
+                res [(-count, s) ___ s, count __ candidates.i..]
                 res.s..()
-                res = res |3
+                res res |3
                 r.. [s ___ count, s __ res]
             ____
-                node = N..
+                node N..
                 r.. []
     
     ___ addCandidate  s
-        node = root
+        node root
         ___ c __ s:
             __ c n.. __ node.children:
-                newNode = TreeNode(c)
-                node.children[c] = newNode
-            node = node.children[c]
-            node.candidates[s] = node.candidates.g.. s, 0)+1
-        node.isLeaf = T..
+                newNode TreeNode(c)
+                node.children[c] newNode
+            node node.children[c]
+            node.candidates[s] node.candidates.g.. s, 0)+1
+        node.isLeaf T..
 
 __ _____ __ _____
 #     autoSys = AutocompleteSystem(["i love you", "island","ironman", "i love leetcode"], [5,3,2,2])
@@ -86,7 +86,7 @@ __ _____ __ _____
 #     print(autoSys.input("a"))
 #     print(autoSys.input("#"))
 
-    autoSys = AutocompleteSystem(["abc","abbc","a"],[3,3,3])
+    autoSys AutocompleteSystem(["abc","abbc","a"],[3,3,3])
     print(autoSys.input("b"
     print(autoSys.input("c"
     print(autoSys.input("#"

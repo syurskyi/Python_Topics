@@ -19,11 +19,11 @@ c_ Solution:
     # @param root, a tree node
     # @return a tree node
     ___ recoverTree  root
-        prev = N..
-        first = N..
-        second = N..
+        prev N..
+        first N..
+        second N..
         traverse(root)
-        first.val, second.val = second.val, first.val
+        first.val, second.val second.val, first.val
         r.. root
 
     ___ traverse  root
@@ -31,9 +31,9 @@ c_ Solution:
             traverse(root.left)
             __ prev __ n.. N..
                 __ first __ N.. a.. root.val < prev.val:
-                    first = prev
-                    second = root
+                    first prev
+                    second root
                 ____ first __ n.. N.. a.. root.val < prev.val:
-                    second = root
-            prev = root
+                    second root
+            prev root
             traverse(root.right)

@@ -5,13 +5,13 @@ c_ Solution(o..
     :rtype: int
     """
     squares    # list
-    j = 1
+    j 1
     w.... j * j <_ n:
       squares.a..(j * j)
       j += 1
-    level = 0
-    queue = [n]
-    visited = [F..] * (n + 1)
+    level 0
+    queue [n]
+    visited [F..] * (n + 1)
     w.... queue:
       level += 1
       temp    # list
@@ -24,6 +24,6 @@ c_ Solution(o..
           __ visited[q - factor]:
             _____
           temp.a..(q - factor)
-          visited[q - factor] = T..
-      queue = temp
+          visited[q - factor] T..
+      queue temp
     r.. level

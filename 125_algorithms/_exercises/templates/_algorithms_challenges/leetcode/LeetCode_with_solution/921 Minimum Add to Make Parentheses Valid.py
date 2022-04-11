@@ -43,7 +43,7 @@ c_ Solution:
         """
         stk
         """
-        ret = 0
+        ret 0
         stk    # list
         ___ s __ S:
             __ s __ "(":

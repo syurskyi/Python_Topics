@@ -7,23 +7,23 @@ ___ calc_median_from_dict(d: d..) __ f__:
     """
 
 
-    keys = s..(d.keys
+    keys s..(d.keys
 
-    total_values = s..(d.values
+    total_values s..(d.values
 
-    odd = F..
+    odd F..
     __ total_values % 2 __ 0:
-        median_count = total_values//2
+        median_count total_values//2
     ____
-        odd = T..
-        median_count = total_values//2 + 1
+        odd T..
+        median_count total_values//2 + 1
 
 
 
-    median = total_values//2
+    median total_values//2
 
 
-    s = 0
+    s 0
 
     ___ i,key __ e..(keys
         s += d[key]

@@ -1,7 +1,7 @@
 ____ d__ _______ date
 
 
-MSG = 'Hey {}, there are more people with your birthday!'
+MSG 'Hey {}, there are more people with your birthday!'
 
 
 c_ BirthdayDict(d..
@@ -17,7 +17,7 @@ c_ BirthdayDict(d..
                 print(MSG.f..(name
         update({name: birthday})
 
-bd = BirthdayDict()
+bd BirthdayDict()
 bd 'khoo'  = date(1968,4,29)
 bd 'chuan'  = date(1968,4,26)
 bd 'bob'  = date(1987, 6, 15)

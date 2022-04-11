@@ -22,15 +22,15 @@ c_ Solution:
         __ n.. root:
             r.. root
 
-        nodes = s..()
+        nodes s..()
 
         w.... a:
             nodes.add(a)
-            a = a.parent
+            a a.parent
 
         w.... b:
             __ b __ nodes:
                 r.. b
-            b = b.parent
+            b b.parent
 
         r.. root

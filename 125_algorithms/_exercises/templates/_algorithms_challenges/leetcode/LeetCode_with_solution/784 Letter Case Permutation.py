@@ -30,7 +30,7 @@ c_ Solution:
         dfs
         """
         # S_lst = S.split()  # error
-        S_lst = l..(S)
+        S_lst l..(S)
         dfs([], S_lst, 0)
         r.. [
             "".j..(e)

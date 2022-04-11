@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -27,10 +27,10 @@ c_ Solution(o..
         __ n < 1:
             r.. 0
 
-        num_diff = k
-        num_same = 0
+        num_diff k
+        num_same 0
         ___ _ __ x..(1, n
-            num_diff, num_same = (k-1)*(num_diff+num_same), num_diff
+            num_diff, num_same (k-1)*(num_diff+num_same), num_diff
 
         r.. num_diff+num_same
 
@@ -45,29 +45,29 @@ c_ Solution(o..
         __ n < 1:
             r.. 0
 
-        F = [[[0 ___ _ __ x..(k)] ___ _ __ x..(k)] ___ _ __ x..(2)]
-        EMPTY = 0
+        F [[[0 ___ _ __ x..(k)] ___ _ __ x..(k)] ___ _ __ x..(2)]
+        EMPTY 0
 
         ___ j0 __ x..(k
-            F[1][j0][EMPTY] = 1
+            F[1][j0][EMPTY] 1
 
         ___ i __ x..(2, n+1
             ___ j0 __ x..(k
                 ___ j1 __ x..(k
-                    F[i%2][j0][j1] = 0
+                    F[i%2][j0][j1] 0
 
             ___ j0 __ x..(k
                 ___ j1 __ x..(k
                     ___ j2 __ x..(k
                         __ i __ 2:
-                            F[i%2][j0][j1] = F[(i-1)%2][j1][EMPTY]
+                            F[i%2][j0][j1] F[(i-1)%2][j1][EMPTY]
 
                         ____ j1 __ j2 a.. j0 != j1:
                             F[i%2][j0][j1] += F[(i-1)%2][j1][j2]
                         ____ j1 != j2:
                             F[i%2][j0][j1] += F[(i-1)%2][j1][j2]
 
-        ret = 0
+        ret 0
         ___ j0 __ x..(k
             ___ j1 __ x..(k
                 ret += F[n%2][j0][j1]
@@ -85,25 +85,25 @@ c_ Solution(o..
         __ n < 1:
             r.. 0
 
-        F = [[[0 ___ _ __ x..(k)] ___ _ __ x..(k)] ___ _ __ x..(n+1)]
-        EMPTY = 0
+        F [[[0 ___ _ __ x..(k)] ___ _ __ x..(k)] ___ _ __ x..(n+1)]
+        EMPTY 0
 
         ___ j0 __ x..(k
-            F[1][j0][EMPTY] = 1
+            F[1][j0][EMPTY] 1
 
         ___ i __ x..(2, n+1
             ___ j0 __ x..(k
                 ___ j1 __ x..(k
                     ___ j2 __ x..(k
                         __ i __ 2:
-                            F[i][j0][j1] = F[i-1][j1][EMPTY]
+                            F[i][j0][j1] F[i-1][j1][EMPTY]
 
                         ____ j1 __ j2 a.. j0 != j1:
                             F[i][j0][j1] += F[i-1][j1][j2]
                         ____ j1 != j2:
                             F[i][j0][j1] += F[i-1][j1][j2]
 
-        ret = 0
+        ret 0
         ___ j0 __ x..(k
             ___ j1 __ x..(k
                 ret += F[n][j0][j1]

@@ -7,9 +7,9 @@ Created on Feb 1, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ levelOrderBottom  root
@@ -25,7 +25,7 @@ c_ Solution(o..
             r.. result
         queue.a..(root)
         w.... queue:
-            node = queue.p.. 0)
+            node queue.p.. 0)
             elem.a..(node.val)
             __ node.left:
                 nextQueue.a..(node.left)
@@ -33,14 +33,14 @@ c_ Solution(o..
                 nextQueue.a..(node.right)
             __ n.. queue:
                 result.insert(0, elem)
-                queue = nextQueue
+                queue nextQueue
                 nextQueue    # list
                 elem    # list
         r.. result
     
     ___ test
-        root = TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))
-        result = levelOrderBottom(root)
+        root TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))
+        result levelOrderBottom(root)
         print('result: %s' % (result
 
 __ _____ __ _____

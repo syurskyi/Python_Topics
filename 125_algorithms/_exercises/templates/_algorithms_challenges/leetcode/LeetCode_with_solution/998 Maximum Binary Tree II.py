@@ -40,9 +40,9 @@ Explanation: A = [2,1,5,3], B = [2,1,5,3,4]
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -59,9 +59,9 @@ c_ Solution:
             r.. TreeNode(val)
 
         __ val > root.val:
-            node = TreeNode(val)
-            node.left = root
+            node TreeNode(val)
+            node.left root
             r.. node
 
-        root.right = insertIntoMaxTree(root.right, val)
+        root.right insertIntoMaxTree(root.right, val)
         r.. root

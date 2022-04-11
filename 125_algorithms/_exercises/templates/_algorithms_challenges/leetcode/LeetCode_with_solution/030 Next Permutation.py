@@ -10,7 +10,7 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 3,2,1 -> 1,2,3
 1,1,5 -> 1,5,1
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -24,27 +24,27 @@ c_ Solution:
         :param num: a list of integer
         :return: a list of integer
         """
-        length = l..(num)
+        length l..(num)
 
-        partition_num_index = 0
-        change_num_index = 0
+        partition_num_index 0
+        change_num_index 0
 
         ___ i __ r..(x..(1, length:
             __ num[i]>num[i-1]:
-                partition_num_index = i-1
+                partition_num_index i-1
                 _____
         ___ i __ r..(x..(1, length:
             __ num[i]>num[partition_num_index]:
-                change_num_index = i
+                change_num_index i
                 _____
 
-        num[partition_num_index], num[change_num_index] = num[change_num_index], num[partition_num_index]
+        num[partition_num_index], num[change_num_index] num[change_num_index], num[partition_num_index]
 
         __ partition_num_index__change_num_index__0:
             # If such arrangement is not possible, to lowest possible order (ie, sorted in ascending order).
             num.r..
         ____
-            num[partition_num_index+1:] = r..(num[partition_num_index+1:])
+            num[partition_num_index+1:] r..(num[partition_num_index+1:])
         r.. num
 
 

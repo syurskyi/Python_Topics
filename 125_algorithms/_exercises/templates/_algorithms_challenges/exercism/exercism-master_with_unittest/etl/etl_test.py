@@ -5,20 +5,20 @@ _______ etl
 
 c_ TransformTest(unittest.TestCase
     ___ test_transform_one_value
-        old = {1:  'WORLD' }
-        e.. = {'world': 1}
+        old {1:  'WORLD' }
+        e.. {'world': 1}
 
         assertEqual(e.., etl.transform(old
 
     ___ test_transform_more_values
-        old = {1:  'WORLD', 'GSCHOOLERS' }
-        e.. = {'world': 1, 'gschoolers': 1}
+        old {1:  'WORLD', 'GSCHOOLERS' }
+        e.. {'world': 1, 'gschoolers': 1}
 
         assertEqual(e.., etl.transform(old
 
     ___ test_more_keys
-        old = {1:  'APPLE', 'ARTICHOKE' , 2:  'BOAT', 'BALLERINA' }
-        e.. = {
+        old {1:  'APPLE', 'ARTICHOKE' , 2:  'BOAT', 'BALLERINA' }
+        e.. {
             'apple': 1,
             'artichoke': 1,
             'boat': 2,
@@ -28,7 +28,7 @@ c_ TransformTest(unittest.TestCase
         assertEqual(e.., etl.transform(old
 
     ___ test_full_dataset
-        old = {
+        old {
             1: "AEIOULNRST",
             2: "DG",
             3: "BCMP",
@@ -38,7 +38,7 @@ c_ TransformTest(unittest.TestCase
             10: "QZ",
         }
 
-        e.. = {
+        e.. {
             "a": 1, "b": 3, "c": 3, "d": 2, "e": 1,
             "f": 4, "g": 2, "h": 4, "i": 1, "j": 8,
             "k": 5, "l": 1, "m": 3, "n": 1, "o": 1,

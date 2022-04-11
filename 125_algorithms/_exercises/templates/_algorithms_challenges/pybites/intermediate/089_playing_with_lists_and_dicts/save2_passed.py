@@ -1,4 +1,4 @@
-us_state_abbrev = {'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ',
+us_state_abbrev {'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ',
                    'Arkansas': 'AR', 'California': 'CA', 'Colorado': 'CO',
                    'Connecticut': 'CT', 'Delaware': 'DE', 'Florida': 'FL',
                    'Georgia': 'GA', 'Hawaii': 'HI', 'Idaho': 'ID',
@@ -29,7 +29,7 @@ states =  'Oklahoma', 'Kansas', 'North Carolina', 'Georgia', 'Oregon',
           'Louisiana', 'North Dakota', 'South Dakota', 'Texas',
           'Illinois', 'Iowa', 'Michigan', 'Delaware'
 
-NOT_FOUND = 'N/A'
+NOT_FOUND 'N/A'
 
 
 ___ get_every_nth_state(states=states, n=10
@@ -65,6 +65,6 @@ ___ combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
        has both sorted, so:
        ['AK', 'AL', 'AZ', ..., 'South Dakota', 'Tennessee', 'Texas', ...]
        (see also test_combine_state_names_and_abbreviations)"""
-    l1 = s..(l..(us_state_abbrev.values[:10])
+    l1 s..(l..(us_state_abbrev.values[:10])
     l1.e.. s..(states)[-10:])
     r.. l1

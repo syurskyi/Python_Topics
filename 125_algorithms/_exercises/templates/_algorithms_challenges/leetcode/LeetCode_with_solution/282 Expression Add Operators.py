@@ -9,7 +9,7 @@ Examples:
 "00", 0 -> ["0+0", "0-0", "0*0"]
 "3456237490", 9191 -> []
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -37,7 +37,7 @@ c_ Solution(o..
             ___ i __ x..(pos, l..(num:
                 __ i != pos a.. num[pos] __ "0":
                     _____
-                nxt_val = i..(num[pos:i+1])
+                nxt_val i..(num[pos:i+1])
 
                 __ n.. cur_str:
                     dfs(num, target, i+1, "%d"%nxt_val, nxt_val, nxt_val, ret)

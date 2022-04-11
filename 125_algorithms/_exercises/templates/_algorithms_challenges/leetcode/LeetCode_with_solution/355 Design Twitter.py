@@ -37,19 +37,19 @@ twitter.getNewsFeed(1);
 ____ c.. _______ d..
 _______ heapq
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
-SZ = 10
+SZ 10
 
 
 c_ Tweet(o..
-    central_clk = 0
+    central_clk 0
 
     ___ - , id, nxt_ N..
-        timestamp = Tweet.central_clk
-        id = id
-        next = nxt  # LinkedList
+        timestamp Tweet.central_clk
+        id id
+        next nxt  # LinkedList
         Tweet.central_clk += 1
 
     ___ __cmp__  other
@@ -66,8 +66,8 @@ c_ Twitter(o..
         """
         Initialize your data structure here.
         """
-        tweets = d..(l....: N..)
-        followees = d..(s..)
+        tweets d..(l....: N..)
+        followees d..(s..)
 
     ___ postTweet  userId, tweetId
         """
@@ -76,8 +76,8 @@ c_ Twitter(o..
         :type tweetId: int
         :rtype: void
         """
-        nxt = tweets[userId]  # previous post
-        tweets[userId] = Tweet(tweetId, nxt)
+        nxt tweets[userId]  # previous post
+        tweets[userId] Tweet(tweetId, nxt)
 
     ___ getNewsFeed  userId
         """
@@ -97,7 +97,7 @@ c_ Twitter(o..
 
         ret    # list
         w.... h a.. l..(ret) < SZ:
-            tweet = heapq.heappop(h)
+            tweet heapq.heappop(h)
             ret.a..(tweet.id)
             __ tweet.next:
                 heapq.heappush(h, tweet.next)
@@ -132,6 +132,6 @@ c_ Twitter(o..
 
 
 __ _______ __ _______
-    twitter = Twitter()
+    twitter Twitter()
     twitter.postTweet(1, 5)
     twitter.unfollow(1, 1)

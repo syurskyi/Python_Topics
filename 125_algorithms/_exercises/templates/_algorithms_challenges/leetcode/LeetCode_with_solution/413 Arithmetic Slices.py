@@ -19,7 +19,7 @@ c_ Solution:
         :type A: List[int]
         :rtype: int
         """
-        ret = 0
+        ret 0
         __ l..(A) < 3:
             r.. ret
 
@@ -27,16 +27,16 @@ c_ Solution:
         ___ i __ r..(1, l..(A:
             delta.a..(A[i] - A[i-1])
 
-        s = 0
-        e = 0
+        s 0
+        e 0
         w.... s < l..(delta
             w.... e < l..(delta) a.. delta[s] __ delta[e]:
                 e += 1
 
-            l = e - s
+            l e - s
             ret += c.. l)
 
-            s = e
+            s e
 
         r.. ret
 

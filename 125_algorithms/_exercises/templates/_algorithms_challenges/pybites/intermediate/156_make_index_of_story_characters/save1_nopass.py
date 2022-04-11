@@ -7,7 +7,7 @@ CHARACTERS =  'Red Riding Hood',
               ('Grandmother', 'Grandma', 'Granny'),
               'wolf', 'woodsman'
 
-text = """
+text """
 Once upon a time, there was a little girl who lived in a village near the forest.  Whenever she went out, the little girl wore a red riding cloak, so everyone in the village called her Little Red Riding Hood.
 One morning, Little Red Riding Hood asked her mother if she could go to visit her grandmother as it had been awhile since they'd seen each other.
 "That's a good idea," her mother said.  So they packed a nice basket for Little Red Riding Hood to take to her grandmother.
@@ -55,14 +55,14 @@ ___ make_character_index(text=text, characters=CHARACTERS
        - e.g. ('Grandmother', 'Grandma', 'Granny') -
        then return the former as key.
     """
-    d = d..(l..)
+    d d..(l..)
     character_list    # list
-    new_text = text.s..
+    new_text text.s..
 
     # Clean up character list with multiple character names
     ___ character __ characters:
         __ t..(character) __ t..:
-            character = '|'.j..(l..(character
+            character '|'.j..(l..(character
         character_list.a..(character)
 
     ___ character __ character_list:

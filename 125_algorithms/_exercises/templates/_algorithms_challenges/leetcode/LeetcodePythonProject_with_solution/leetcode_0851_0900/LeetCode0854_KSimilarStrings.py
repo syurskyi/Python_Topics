@@ -10,18 +10,18 @@ c_ Solution(o..
         :type B: str
         :rtype: int
         """
-        a, b = A, B
+        a, b A, B
         __ a __ b:
             r.. 0
-        q = [a]
-        hashset = s..([a])
-        res = 0
+        q [a]
+        hashset s..([a])
+        res 0
         w.... q:
             res += 1
-            size = l..(q)
+            size l..(q)
             ___ _ __ r..(size
-                s = q.p.. 0)
-                i = 0
+                s q.p.. 0)
+                i 0
                 w.... s[i] __ b[i]:
                     i += 1
                 ___ j __ r..(i+1, l..(s:
@@ -36,12 +36,12 @@ c_ Solution(o..
         r.. res
     
     ___ swap  s, i, j
-        l = l..(s)
-        l[i], l[j] = l[j], l[i]
+        l l..(s)
+        l[i], l[j] l[j], l[i]
         r.. ''.j..(l)
     
     ___ test
-        testCases = [
+        testCases [
             [
                 'ab',
                 'ba',
@@ -64,7 +64,7 @@ c_ Solution(o..
             ],
         ]
         ___ a, b __ testCases:
-            res = kSimilarity(a, b)
+            res kSimilarity(a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 

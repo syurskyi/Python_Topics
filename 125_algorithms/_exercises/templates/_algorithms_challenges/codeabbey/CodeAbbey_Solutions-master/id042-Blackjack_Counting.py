@@ -2,7 +2,7 @@
 
 ___ blackjack_counter(games
     answer    # list
-    values = {
+    values {
         '2':2,    '3':3,    '4':4,
         '5':5,    '6':6,    '7':7,
         '8':8,    '9':9,
@@ -11,8 +11,8 @@ ___ blackjack_counter(games
         }
     
     ___ game __ r..(games
-        cards = [x ___ x __ raw_input().s.. ]
-        total, ace_count = 0, 0
+        cards [x ___ x __ raw_input().s.. ]
+        total, ace_count 0, 0
         
         ___ card __ cards:
             total += values[card]

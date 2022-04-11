@@ -1,6 +1,6 @@
-level = 4
+level 4
 
-in_list = [1]
+in_list [1]
 
 ___ pascal_next(in_list
     out_list    # list
@@ -13,6 +13,6 @@ ___ pascal_next(in_list
     r.. out_list
 
 ___ i __ r..(0
-    in_list = pascal_next(in_list)
+    in_list pascal_next(in_list)
 
 print(in_list)

@@ -12,8 +12,8 @@ c_ Solution(o..
         :rtype: List[str]
         """
         __ n.. s: r.. []
-        dp = [[] ___ _ __ r..(l..(s)+1)]
-        dp[0] = T..
+        dp [[] ___ _ __ r..(l..(s)+1)]
+        dp[0] T..
         ___ i __ r..(l..(s)+1
             __ dp[i]:
                 ___ word __ wordDict:
@@ -35,13 +35,13 @@ c_ Solution(o..
                 curr.p.. 0)
     
     ___ test
-        testCases = [
+        testCases [
             ('catsanddog', ["cat", "cats", "and", "sand", "dog"]),
         ]
         ___ s, wordDict __ testCases:
             print('s: %s' % (s
             print('wordDict: %s' % (wordDict
-            result = wordBreak(s, wordDict)
+            result wordBreak(s, wordDict)
             print('result: %s' % (result
             print('-='*20+'-')
 

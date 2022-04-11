@@ -18,19 +18,19 @@ c_ Solution(o..
         
     ___ isSelfDividing  num
         ___ digit __ s..(num
-            d = i..(digit)
+            d i..(digit)
             __ d __ 0 o. num%d != 0:
                 r.. F..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             [1, 22],
         ]
         ___ left, right __ testCases:
             print('left: %s' % left)
             print('right: %s' % right)
-            result = selfDividingNumbers(left, right)
+            result selfDividingNumbers(left, right)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -5,7 +5,7 @@ ____ linked_list _______ LinkedList
 
 c_ LinkedListTests(unittest.TestCase
     ___ setUp
-        l.. = LinkedList()
+        l.. LinkedList()
 
     ___ test_push_pop
         l...push(10)
@@ -57,7 +57,7 @@ c_ LinkedListTests(unittest.TestCase
     ___ test_iterator
         l...push(10)
         l...push(20)
-        iterator = i..(l..)
+        iterator i..(l..)
         assertEqual(next(iterator), 10)
         assertEqual(next(iterator), 20)
 

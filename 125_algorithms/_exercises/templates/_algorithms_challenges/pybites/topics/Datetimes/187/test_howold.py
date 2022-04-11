@@ -3,7 +3,7 @@ _______ p__
 ____ howold _______ Actor, Movie, get_age
 
 
-actors = [
+actors [
     Actor('Wesley Snipes', 'July 31, 1962'),
     Actor('Robert de Niro', 'August 17, 1943'),
     Actor('Jennifer Aniston', 'February 11, 1969'),
@@ -12,7 +12,7 @@ actors = [
     Actor('Alec Baldwin', 'July 31, 1962'),
     Actor('Michelle Pfeiffer', 'April 29, 1958'),
 ]
-movies = [
+movies [
     Movie('New Jack City', 'January 17, 1991'),
     Movie('Goodfellas', 'October 19, 1990'),
     Movie('Horrible Bosses', 'September 16, 2011'),
@@ -21,7 +21,7 @@ movies = [
     Movie('Glengarry Glen Ross', 'September 29, 1992'),
     Movie('Scarface', 'March 12, 1984'),
 ]
-return_strings = [
+return_strings [
     'Wesley Snipes was 28 years old when New Jack City came out.',
     'Robert de Niro was 47 years old when Goodfellas came out.',
     'Jennifer Aniston was 42 years old when Horrible Bosses came out.',

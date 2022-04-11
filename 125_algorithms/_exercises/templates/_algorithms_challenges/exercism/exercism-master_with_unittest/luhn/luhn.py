@@ -1,7 +1,7 @@
 c_ Luhn:
 
     ___ - , number
-        number = number
+        number number
 
     ___ checksum
         r.. s..(addends % 10

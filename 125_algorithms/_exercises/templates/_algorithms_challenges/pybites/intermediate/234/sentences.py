@@ -5,8 +5,8 @@ ___ capitalize_sentences(text: s..) __ s..:
    """Return text capitalizing the sentences. Note that sentences can end
       in dot (.), question mark (?) and exclamation mark (!)"""
 
-   text_metacharacters = __.f..("[\\!\\.\\?]", text.s..
-   text_raw = __.s..("[\\!\\.\\?]\s", text.s..
+   text_metacharacters __.f..("[\\!\\.\\?]", text.s..
+   text_raw __.s..("[\\!\\.\\?]\s", text.s..
 
    text_clean    # list
    ___ i __ r..(l..(text_raw:

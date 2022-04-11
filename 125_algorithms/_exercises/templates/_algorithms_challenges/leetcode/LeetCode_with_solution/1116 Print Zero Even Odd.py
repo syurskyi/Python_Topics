@@ -40,8 +40,8 @@ c_ ZeroEvenOdd:
         only use 3 locks, and zero() knows and commonds which lock to release,
         determing whether even() or odd() will run.
         """
-        n = n
-        locks = [Lock() ___ _ __ r..(3)]
+        n n
+        locks [Lock() ___ _ __ r..(3)]
         locks[1].a..
         locks[2].a..
 
@@ -76,8 +76,8 @@ c_ ZeroEvenOddError:
 
         Using only 3 locks?
         """
-        n = n
-        locks = [Lock(), Lock(), Lock(), Lock()]
+        n n
+        locks [Lock(), Lock(), Lock(), Lock()]
         ___ i __ r..(1, l..(locks:
             locks[i].a..
 

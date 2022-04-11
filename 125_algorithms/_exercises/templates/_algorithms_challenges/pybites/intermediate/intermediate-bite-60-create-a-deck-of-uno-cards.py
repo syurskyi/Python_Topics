@@ -1,15 +1,15 @@
 ____ c.. _______ n..
 
-SUITS = 'Red Green Yellow Blue'.s..
+SUITS 'Red Green Yellow Blue'.s..
 
-UnoCard = n..('UnoCard', 'suit name')
+UnoCard n..('UnoCard', 'suit name')
 
 
 ___ create_uno_deck
     """Create a deck of 108 Uno cards.
        Return a list of UnoCard namedtuples
        (for cards w/o suit use None in the namedtuple)"""
-    inventory = {
+    inventory {
         '0': 1,
         '1': 2,
         '2': 2,
@@ -28,13 +28,13 @@ ___ create_uno_deck
     ___ s __ SUITS:
         ___ k, v __ inventory.i..:
             ___ i __ r..(0, v
-                card = UnoCard(s, k)
+                card UnoCard(s, k)
                 deck.a..(card)
     ___ i __ r..(0,4
-        card = UnoCard(N.., 'Wild')
+        card UnoCard(N.., 'Wild')
         deck.a..(card)
     ___ i __ r..(0,4
-        card = UnoCard(N.., 'Wild Draw Four')
+        card UnoCard(N.., 'Wild Draw Four')
         deck.a..(card)
     r.. deck
 

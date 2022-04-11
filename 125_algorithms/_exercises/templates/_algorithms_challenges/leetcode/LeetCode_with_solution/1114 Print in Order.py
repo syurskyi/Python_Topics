@@ -37,7 +37,7 @@ c_ Foo:
         """
         Two locks
         """
-        locks = [Lock(), Lock()]
+        locks [Lock(), Lock()]
         locks[0].a..
         locks[1].a..
 
@@ -70,8 +70,8 @@ c_ FooError:
 
         Error, will miss an input.
         """
-        _value = 1
-        _lock = Lock()
+        _value 1
+        _lock Lock()
 
 
     ___ first  printFirst: 'Callable[[], None]') __ N..

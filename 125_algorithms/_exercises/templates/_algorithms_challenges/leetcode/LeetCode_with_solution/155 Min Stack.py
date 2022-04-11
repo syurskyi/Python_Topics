@@ -7,7 +7,7 @@ top() -- Get the top element.
 getMin() -- Retrieve the minimum element in the stack.
 Stack Data Structure
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ MinStack:
@@ -42,7 +42,7 @@ c_ MinStack:
 
         :return: nothing
         """
-        x = stk.p.. )
+        x stk.p.. )
         __ x __ non_asc[-1]:
             non_asc.p.. )
 

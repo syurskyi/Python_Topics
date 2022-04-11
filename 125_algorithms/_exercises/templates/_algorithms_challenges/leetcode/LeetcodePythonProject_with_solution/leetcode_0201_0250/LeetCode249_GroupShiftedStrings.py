@@ -12,8 +12,8 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ s __ strings:
-            hashStr = getHash(s)
-            hashmap[hashStr] = hashmap.g.. hashStr, []) + [s]
+            hashStr getHash(s)
+            hashmap[hashStr] hashmap.g.. hashStr, []) + [s]
         res    # list
         ___ vals __ hashmap.v..
             res.a..(vals)
@@ -22,9 +22,9 @@ c_ Solution(o..
     ___ getHash  s
         __ n.. s: r.. '-2'
         __ l..(s) __ 1: r.. '-1'
-        res = ''
+        res ''
         ___ i __ r..(1, l..(s:
-            diff = o..(s[i])-o..(s[i-1])
+            diff o..(s[i])-o..(s[i-1])
             __ diff < 0:
                 diff += 26
             res += '%s,' % diff
@@ -37,11 +37,11 @@ c_ Solution(o..
         """
         result    # list
         ___ s __ strings:
-            added = F..
+            added F..
             ___ l __ result:
                 __ isSameGroup(l[0], s
                     l.a..(s)
-                    added = T..
+                    added T..
             __ n.. added:
                 result.a..([s])
         r.. result
@@ -49,14 +49,14 @@ c_ Solution(o..
     ___ isSameGroup  s1, s2
         __ l..(s1) != l..(s2
             r.. F..
-        length = l..(s1)
+        length l..(s1)
         __ length __ 1:
             r.. T..
-        diff = o..(s1[0]) - o..(s2[0])
+        diff o..(s1[0]) - o..(s2[0])
         __ diff < 0:
             diff += 26
         ___ i __ r..(1, length
-            d = o..(s1[i]) - o..(s2[i])
+            d o..(s1[i]) - o..(s2[i])
             __ d < 0:
                 d += 26
             __ d > 26:
@@ -66,12 +66,12 @@ c_ Solution(o..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             ["abc","bcd","acef","xyz","az","ba","a","z"],
         ]
         ___ strings __ testCases:
             print('strs: %s' % (strings
-            result = groupStrings(strings)
+            result groupStrings(strings)
             print('result: %s' % (result
             print('-='*20+'-')
     

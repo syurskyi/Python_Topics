@@ -18,7 +18,7 @@ isMatch("aa", "a*") -> true
 isMatch("ab", "?*") -> true
 isMatch("aab", "c*a*b") -> false
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ isMatch_MLE  s, p
         """
@@ -31,27 +31,27 @@ c_ Solution:
         :param p: pattern, a pattern string
         :return: boolean
         """
-        tape = s
-        pattern = p
+        tape s
+        pattern p
 
-        m = l..(tape)
-        n = l..(pattern)
-        dp = [[F.. ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
+        m l..(tape)
+        n l..(pattern)
+        dp [[F.. ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
         # edge cases
-        dp[m][n] = T..
+        dp[m][n] T..
         ___ j __ x..(n-1, -1 , -1
             __ pattern[j]__"*":
-                dp[m][j] = dp[m][j+1]
+                dp[m][j] dp[m][j+1]
 
         # transition
         ___ i __ x..(m-1, -1, -1
             ___ j __ x..(n-1, -1, -1
                 __ tape[i]__pattern[j] o. pattern[j]__"?":
-                    dp[i][j] = dp[i+1][j+1]
+                    dp[i][j] dp[i+1][j+1]
                 ____ pattern[j]__"*":
-                    dp[i][j] = dp[i][j+1] o. dp[i+1][j]  # zero or more
+                    dp[i][j] dp[i][j+1] o. dp[i+1][j]  # zero or more
                 ____
-                    dp[i][j] = F..
+                    dp[i][j] F..
 
 
         r.. dp[0][0]
@@ -72,30 +72,30 @@ c_ Solution:
         :param p: pattern, a pattern string
         :return: boolean
         """
-        tape = s
-        pattern = p
+        tape s
+        pattern p
 
-        m = l..(tape)
-        n = l..(pattern)
+        m l..(tape)
+        n l..(pattern)
 
         __ n - l..(pattern).c.. "*") > m:
             r.. F..
 
-        dp = [F.. ___ _ __ x..(m+1)]
-        dp[0] = T..  # dummy
+        dp [F.. ___ _ __ x..(m+1)]
+        dp[0] T..  # dummy
         ___ j __ x..(1, n+1
             __ pattern[j-1]__"*":
                 # for i in xrange(m, 0, -1):
                 #     dp[i] = any(dp[k] for k in xrange(i))  # Time Complexity
-                k = 0
+                k 0
                 w.... k<m+1 a.. dp[k]!=T.. k+= 1
                 ___ i __ x..(k, m+1
-                    dp[i] = T..
+                    dp[i] T..
             ____
                 ___ i __ x..(m, 0, -1
-                    dp[i] = dp[i-1] a.. (tape[i-1]__pattern[j-1] o. pattern[j-1]__"?")
+                    dp[i] dp[i-1] a.. (tape[i-1]__pattern[j-1] o. pattern[j-1]__"?")
 
-            dp[0] = dp[0] a.. pattern[j-1]__"*"  # !!, pattern no longer match the empty string
+            dp[0] dp[0] a.. pattern[j-1]__"*"  # !!, pattern no longer match the empty string
 
 
         r.. dp[m]

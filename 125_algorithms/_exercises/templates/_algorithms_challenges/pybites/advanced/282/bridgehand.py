@@ -3,12 +3,12 @@ ____ e.. _______ E..
 ____ t___ _______ S..
 ____ c...abc _______ S.. __ seq
 
-Suit = E..("Suit", l..("SHDC"
-Rank = E..("Rank", l..("AKQJT98765432"
-Card = n..("Card", ["suit", "Rank"])
+Suit E..("Suit", l..("SHDC"
+Rank E..("Rank", l..("AKQJT98765432"
+Card n..("Card", ["suit", "Rank"])
 
-HCP = {Rank.A: 4, Rank.K: 3, Rank.Q: 2, Rank.J: 1}
-SSP = {2: 1, 1: 2, 0: 3}  # cards in a suit -> short suit points
+HCP {Rank.A: 4, Rank.K: 3, Rank.Q: 2, Rank.J: 1}
+SSP {2: 1, 1: 2, 0: 3}  # cards in a suit -> short suit points
 
 
 c_ BridgeHand:
@@ -31,9 +31,9 @@ c_ BridgeHand:
             r.. V...("Must have 13 cards")
         
 
-        cards = cards
+        cards cards
 
-        suit_to_cards = d..(l..)
+        suit_to_cards d..(l..)
         ___ card __ cards:
             suit_to_cards[card.suit].a..(card.Rank)
 
@@ -59,9 +59,9 @@ c_ BridgeHand:
         s    # list
         ___ suit __ Suit:
             __ suit __ suit_to_cards:
-                cards = suit_to_cards[suit]
+                cards suit_to_cards[suit]
                 cards.s..(key=l.... x: x.value)
-                cards = ''.j..(card.name ___ card __ cards)
+                cards ''.j..(card.name ___ card __ cards)
                 s.a..(f"{suit.name}:{cards}")
 
 
@@ -126,7 +126,7 @@ c_ BridgeHand:
             for the procedure
         """
 
-        losing_tricks = 0
+        losing_tricks 0
         ___ cards __ suit_to_cards.v..
 
             __ l..(cards) __ 1:
@@ -134,14 +134,14 @@ c_ BridgeHand:
                     losing_tricks += 1
             ____
 
-                cards = s..(cards,key=l.... x: x.value)
+                cards s..(cards,key=l.... x: x.value)
                 __ l..(cards) __ 2:
                     __ (cards[0] __ Rank.A a.. cards[1] !=Rank.K) o. (cards[0] __ Rank.K
                         losing_tricks += 1
                     ____ cards[0] != Rank.A o.  cards[1] != Rank.K:
                         losing_tricks += 2
                 ____
-                    cards = cards |3
+                    cards cards |3
 
                     __ cards != [Rank.A,Rank.K,Rank.Q]:
                         __ ((cards[0] __ Rank.A) a.. (cards[1] __ (Rank.K,Rank.Q))) o. (cards[0] __ Rank.K a.. cards[1] __ Rank.Q

@@ -27,8 +27,8 @@ ____ t___ _______ L..
 # Definition for an interval.
 c_ Interval:
     ___ - , s=0, e=0
-        start = s
-        end = e
+        start s
+        end e
 
 
 c_ Solution:
@@ -47,12 +47,12 @@ c_ Solution:
         merge by checking max starts and min ends
         pop by ends
         """
-        i, j = 0, 0
-        m, n = l..(A), l..(B)
+        i, j 0, 0
+        m, n l..(A), l..(B)
         ret    # list
         w.... i < m a.. j < n:
-            lo = m..(A[i].start, B[j].start)
-            hi = m..(A[i].end, B[j].end)
+            lo m..(A[i].start, B[j].start)
+            hi m..(A[i].end, B[j].end)
             __ lo <_ hi:
                 ret.a..(Interval(lo, hi
             __ A[i].end > B[j].end:
@@ -67,12 +67,12 @@ c_ Solution:
         like merge
         """
         ret    # list
-        i = 0
-        j = 0
-        m, n = l..(A), l..(B)
+        i 0
+        j 0
+        m, n l..(A), l..(B)
         w.... i < m a.. j < n:
-            a = A[i]
-            b = B[j]
+            a A[i]
+            b B[j]
             __ b.start <_ a.end <_ b.end:
                 ret.a..(Interval(m..(a.start, b.start), a.end
                 i += 1

@@ -3,7 +3,7 @@ ____ t___ _______ I.., S.., A.., cast
 
 
 ___ intersection $a.. I..) __ S..[A..]:
-    cast_to_set = [s..(arg) ___ arg __ args __ arg != N.. a.. l..(arg) != 0]
+    cast_to_set [s..(arg) ___ arg __ args __ arg != N.. a.. l..(arg) != 0]
 
     __ l..(cast_to_set) __ 0:
         r.. s..()

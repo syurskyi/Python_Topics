@@ -9,17 +9,17 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        dn1, dn2 = 1, 0
+        dn1, dn2 1, 0
         __ n <_ 1: r.. 0
-        res = 1
+        res 1
         ___ i __ r..(3, n+1
-            res = ((i-1)*(dn1+dn2%(10**9+7)
-            dn2 = dn1
-            dn1 = res
+            res ((i-1)*(dn1+dn2%(10**9+7)
+            dn2 dn1
+            dn1 res
         r.. i..(res)
     
     ___ test
-        testCases = [
+        testCases [
             1,
             2,
             3,
@@ -28,7 +28,7 @@ c_ Solution(o..
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = findDerangement(n)
+            result findDerangement(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

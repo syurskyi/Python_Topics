@@ -31,7 +31,7 @@ c_ Solution(o..
           dfs(s[:i] + s[i + 1:], res, cache, length)
           cache.add(s[:i] + s[i + 1:])
 
-    prepLeft = ""
+    prepLeft ""
     ___ i __ r..(0, l..(s:
       __ s[i] __ "(":
         prepLeft += s[i:]
@@ -39,7 +39,7 @@ c_ Solution(o..
       ____ s[i] != ")":
         prepLeft += s[i]
 
-    prepRight = ""
+    prepRight ""
     ___ i __ r..(r..(0, l..(prepLeft))):
       __ prepLeft[i] __ ")":
         prepRight += prepLeft[:i + 1][::-1]
@@ -47,9 +47,9 @@ c_ Solution(o..
       ____ prepLeft[i] != "(":
         prepRight += prepLeft[i]
 
-    s = prepRight[::-1]
-    length = l..(s) - isValid(s)
+    s prepRight[::-1]
+    length l..(s) - isValid(s)
     res    # list
-    cache = s..()
+    cache s..()
     dfs(s, res, cache, length)
     r.. res

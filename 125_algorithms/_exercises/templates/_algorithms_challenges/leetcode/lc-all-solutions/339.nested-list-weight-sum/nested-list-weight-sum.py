@@ -31,7 +31,7 @@ c_ Solution(o..
     """
 
     ___ helper(root, depth
-      res = 0
+      res 0
       ___ nested __ root:
         __ nested.isInteger
           res += depth * nested.getInteger()

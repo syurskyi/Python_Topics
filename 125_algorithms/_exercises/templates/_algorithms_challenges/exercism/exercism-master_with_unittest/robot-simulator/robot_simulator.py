@@ -57,18 +57,18 @@ c_ WEST:
 c_ Robot:
 
     ___ - , direction=NORTH, x=0, y=0
-        coordinates = (x, y)
-        bearing = direction
+        coordinates (x, y)
+        bearing direction
 
     ___ advance
-        coordinates = bearing.advance(bearing,
+        coordinates bearing.advance(bearing,
                                                 x(), y
 
     ___ turn_right
-        bearing = bearing.turn_right(bearing)
+        bearing bearing.turn_right(bearing)
 
     ___ turn_left
-        bearing = bearing.turn_left(bearing)
+        bearing bearing.turn_left(bearing)
 
     ___ simulate  instructions
         ___ i __ instructions:

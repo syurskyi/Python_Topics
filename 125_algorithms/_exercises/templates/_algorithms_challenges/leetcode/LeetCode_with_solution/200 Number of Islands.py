@@ -19,27 +19,27 @@ Example 2:
 00011
 Answer: 3
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
     ___ -
-        dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+        dirs [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ numIslands  grid
         """
         :type grid: list[list[str]]
         :rtype: int
         """
-        m = l..(grid)
+        m l..(grid)
         __ m < 1:
             r.. 0
-        n = l..(grid[0])
+        n l..(grid[0])
         __ n < 1:
             r.. 0
 
-        cnt = 0
-        visited = [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
+        cnt 0
+        visited [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
         ___ i __ x..(m
             ___ j __ x..(n
                 __ n.. visited[i][j] a.. grid[i][j] __ "1":
@@ -52,13 +52,13 @@ c_ Solution:
         """
         dfs to mark visited
         """
-        m = l..(grid)
-        n = l..(grid[0])
-        visited[i][j] = T..
+        m l..(grid)
+        n l..(grid[0])
+        visited[i][j] T..
 
         ___ dir __ dirs:
-            I = i+dir[0]
-            J = j+dir[1]
+            I i+dir[0]
+            J j+dir[1]
             __ 0 <_ I < m a.. 0 <_ J < n a.. n.. visited[I][J] a.. grid[I][J] __ "1":
                 dfs(grid, I, J, visited)
 

@@ -5,7 +5,7 @@ c_ Solution(o..
     :type B: List[List[int]]
     :rtype: List[List[int]]
     """
-    ret = [[0 ___ j __ r..(l..(B[0]] ___ i __ r..(l..(A]
+    ret [[0 ___ j __ r..(l..(B[0]] ___ i __ r..(l..(A]
 
     ___ i, row __ e..(A
       ___ k, a __ e..(row

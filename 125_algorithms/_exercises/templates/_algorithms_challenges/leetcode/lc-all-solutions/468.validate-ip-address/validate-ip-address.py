@@ -4,13 +4,13 @@ c_ Solution(o..
     :type IP: str
     :rtype: str
     """
-    nums = [s..(i) ___ i __ r..(0, 10)]
-    letters = ["a", "b", "c", "d", "e", "f", "A", "B", "C", "D", "E", "F"]
-    v6d = s..(nums + letters)
-    v4d = s..(nums)
+    nums [s..(i) ___ i __ r..(0, 10)]
+    letters ["a", "b", "c", "d", "e", "f", "A", "B", "C", "D", "E", "F"]
+    v6d s..(nums + letters)
+    v4d s..(nums)
 
-    v4 = IP.s..(".")
-    v6 = IP.s..(":")
+    v4 IP.s..(".")
+    v6 IP.s..(":")
 
     __ l..(v4) __ 4:
       ___ seg __ v4:

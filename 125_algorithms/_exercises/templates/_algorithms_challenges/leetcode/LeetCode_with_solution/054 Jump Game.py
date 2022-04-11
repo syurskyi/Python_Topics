@@ -10,7 +10,7 @@ A = [2,3,1,1,4], return true.
 
 A = [3,2,1,0,4], return false.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ canJump_TLE  A
         """
@@ -22,8 +22,8 @@ c_ Solution:
         :param A: a list of integers
         :return: a boolean
         """
-        length = l..(A)
-        dp = [s..([index]) ___ index __ r..(length)]
+        length l..(A)
+        dp [s..([index]) ___ index __ r..(length)]
 
         ___ ind, val __ e..(A
             __ ind!=0 a.. l..(dp[ind])<2:
@@ -49,14 +49,14 @@ c_ Solution:
         :param A:
         :return:
         """
-        l = l..(A)
-        dp = [F.. ___ _ __ x..(l+1)]  # last one is dummy
-        dp[0] = T..
+        l l..(A)
+        dp [F.. ___ _ __ x..(l+1)]  # last one is dummy
+        dp[0] T..
         ___ ind, val __ e..(A
             __ dp[ind]:
                 ___ i __ x..(1, val+1  # now jumping
                     __ ind+i<l+1:
-                        dp[ind+i] = T..
+                        dp[ind+i] T..
                     ____
                         _____
         r.. dp[-1]
@@ -74,15 +74,15 @@ c_ Solution:
         :param A: a list of integers
         :return: a boolean
         """
-        l = l..(A)
+        l l..(A)
         # trivial
         __ l<_1:
             r.. T..
 
         # dp = [-1]*(l-1)  # normally starting from \phi
-        dp = [-1 ___ _ __ x..(l)]  # no need dummy here
+        dp [-1 ___ _ __ x..(l)]  # no need dummy here
 
-        dp[0] = A[0]+0  # reachable index (absolute index)
+        dp[0] A[0]+0  # reachable index (absolute index)
         ___ i __ x..(1, l
             # check terminal condition first
             # able to reach the end index
@@ -94,7 +94,7 @@ c_ Solution:
                 r.. F..
 
             # transition function
-            dp[i] = m..(dp[i-1], A[i]+i)  # PoP - Principle of Optimality
+            dp[i] m..(dp[i-1], A[i]+i)  # PoP - Principle of Optimality
 
         r.. F..
 

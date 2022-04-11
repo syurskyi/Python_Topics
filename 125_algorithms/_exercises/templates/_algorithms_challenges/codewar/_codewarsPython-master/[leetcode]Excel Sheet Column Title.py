@@ -2,7 +2,7 @@ c_ Solution:
     # @param {integer} n
     # @return {string}
     ___ convertToTitle  n
-        times = 0
+        times 0
         res    # list
         w.... n >_ 27:
             res.a..(n % 27)
@@ -13,6 +13,6 @@ c_ Solution:
         res.a..(n)
         r.. res
 
-test = Solution()
+test Solution()
 ___ i __ r..(24,30
     print(test.convertToTitle(i

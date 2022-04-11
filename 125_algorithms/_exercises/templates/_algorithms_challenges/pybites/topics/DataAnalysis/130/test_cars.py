@@ -14,7 +14,7 @@ ___ test_most_prolific_automaker_2013
 
 
 ___ test_get_models_volkswagen
-    models = get_models('Volkswagen', 2008)
+    models get_models('Volkswagen', 2008)
     # sets are unordered
     ... l..(models) __ 2
     ... 'Jetta' __ models
@@ -30,7 +30,7 @@ ___ test_get_models_open
     ... get_models('Opel', 2008) __ s..()
 
 ___ test_get_models_mercedes
-    models = get_models('Mercedes-Benz', 2007)
+    models get_models('Mercedes-Benz', 2007)
     ... l..(models) __ 3
     ... 'SL-Class' __ models
     ... 'GL-Class' __ models

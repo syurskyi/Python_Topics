@@ -32,15 +32,15 @@ Every node has value 0.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ -
-        covered = {N..}
-        cnt = 0
+        covered {N..}
+        cnt 0
 
     ___ minCameraCover  root: TreeNode) __ i..:
         """
@@ -75,7 +75,7 @@ c_ Solution:
 
 c_ SolutionErrror:
     ___ -
-        covered = s..()
+        covered s..()
 
     ___ minCameraCover  root: TreeNode) __ i..:
         """
@@ -83,8 +83,8 @@ c_ SolutionErrror:
         Top-down, no good.
         Bottom up, cover leaf's parent is strictly better than cover leaf
         """
-        dummy = TreeNode(0)
-        dummy.left = root
+        dummy TreeNode(0)
+        dummy.left root
         dfs(root, dummy)
         covered.discard(dummy)  # swallow KeyError
         r.. l..(covered)

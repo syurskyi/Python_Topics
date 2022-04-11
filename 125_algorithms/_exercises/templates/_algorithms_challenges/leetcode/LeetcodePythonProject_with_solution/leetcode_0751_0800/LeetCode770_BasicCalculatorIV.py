@@ -14,7 +14,7 @@ c_ Solution(o..
         p..
     
     ___ test
-        testCases = [
+        testCases [
             [
                 "e + 8 - a + 5",
                 ["e"],
@@ -42,7 +42,7 @@ c_ Solution(o..
             ],
         ]
         ___ expression, evalvars, evalints __ testCases:
-            result = basicCalculatorIV(expression, evalvars, evalints)
+            result basicCalculatorIV(expression, evalvars, evalints)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -8,9 +8,9 @@ ____
 
 
 ___ encode(msg
-    msg = _cleanse(msg)
-    square_size = i..(c.. sqrt(l..(msg))))
-    square = _chunks_of(msg, square_size)
+    msg _cleanse(msg)
+    square_size i..(c.. sqrt(l..(msg))))
+    square _chunks_of(msg, square_size)
     r.. ' '.j..([''.j..(col)
                      ___ col __ z__(*square, fillvalue='')])
 

@@ -1,7 +1,7 @@
 _______ __
 
 # source: https://www.virgin.com/richard-branson/my-top-10-quotes-living-life-better
-HTML = """<!DOCTYPE html>
+HTML """<!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
   <title>My top 10 quotes on living life better | Virgin</title>
@@ -26,9 +26,9 @@ HTML = """<!DOCTYPE html>
 </html>"""
 
 
-___ extract_quotes(html: s.. = HTML) __ d..:
+___ extract_quotes(html: s.. HTML) __ d..:
     d    # dict
-    m.. = __.f..(r'<p>\d+.\s"(.*)"\s-\s(.*)</p>', html)
+    m.. __.f..(r'<p>\d+.\s"(.*)"\s-\s(.*)</p>', html)
     ___ quote, author __ m..:
-        d[author] = quote
+        d[author] quote
     r.. d

@@ -2,7 +2,7 @@ ____ t___ _______ Tuple
 ____ c.. _______ C..
 _______ __
 
-PAT = r'^\W+|\W+$|^_+|_+$'  # leading or trailing non-word characters
+PAT r'^\W+|\W+$|^_+|_+$'  # leading or trailing non-word characters
 
 
 
@@ -20,20 +20,20 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     __ n.. isi..(text, s..
         r.. V...('bad input')
 
-    words = l.. m..(l.... x: __.sub(PAT, '', x.r..('_', '',
+    words l.. m..(l.... x: __.sub(PAT, '', x.r..('_', '',
                      text.s..(' ')))
     counts    # list
     ___ word __ words:
-        folded = word.c..()
-        count = C..([c ___ c __ folded __ c.i..])
+        folded word.c..()
+        count C..([c ___ c __ folded __ c.i..])
         __ count.most_common(1
             counts.a..((word, count
 
     __ counts:
-        result = m..(counts, key=l.... x: x[1].most_common(1)[0][1])
+        result m..(counts, key=l.... x: x[1].most_common(1)[0][1])
 
         __ result[1].most_common
-            letter, count = result[1].most_common(1)[0]
+            letter, count result[1].most_common(1)[0]
             r.. result[0], letter, count
     ____
         r.. '', '', 0

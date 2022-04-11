@@ -1,7 +1,7 @@
 c_ SaddlePoints:
     ___ - , matrix
-        matrix = matrix
-        columns = l..(z..(*matrix
+        matrix matrix
+        columns l..(z..(*matrix
 
     ___ get_saddle_points
         __ invalid_matrix
@@ -9,7 +9,7 @@ c_ SaddlePoints:
         r.. saddle_points()
 
     ___ saddle_points
-        saddle_points = s..()
+        saddle_points s..()
         ___ row __ r..(l..(matrix:
             ___ col __ r..(l..(matrix[row]:
                 __ saddle_point(row, col

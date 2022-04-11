@@ -11,12 +11,12 @@ ___ split_words_and_quoted_text(text
        ['Should', 'give', '3 elements only']
     """
     # assume only one double-quoted string
-    s1 = text[:text.i.. '"')]
+    s1 text[:text.i.. '"')]
     tmp  text[text.i.. '"') + 1:]
-    s2 = tmp[:tmp.i.. '"')]
-    s3 = tmp[tmp.i.. '"') + 1:]
+    s2 tmp[:tmp.i.. '"')]
+    s3 tmp[tmp.i.. '"') + 1:]
 
-    result = s1.s.. 
+    result s1.s..
     result.a..(s2)
     result.e.. s3.s..
     r.. result

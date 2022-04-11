@@ -28,15 +28,15 @@ c_ Solution:
         fill 9
         299
         """
-        d.. = [i..(e) ___ e __ s..(N)]
-        pointer = l..(d..)
+        d.. [i..(e) ___ e __ s..(N)]
+        pointer l..(d..)
         ___ i __ r..(l..(d..) - 1, 0, -1
             __ d..[i - 1] > d..[i]:
-                pointer = i
+                pointer i
                 d..[i - 1] -_ 1
 
         ___ i __ r..(pointer, l..(d..:
-            d..[i] = 9
+            d..[i] 9
 
         r.. i..("".j.. m..(s.., d..)))
 

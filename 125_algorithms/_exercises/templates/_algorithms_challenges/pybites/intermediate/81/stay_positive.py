@@ -1,10 +1,10 @@
 ____ c.. _______ n..
 
-Tweet = n..('Tweet', 'text polarity')
+Tweet n..('Tweet', 'text polarity')
 
 # polarity < 0 = negative, > 0 = positive
 # long strings and pep8: you can wrap strings in () to reduce line length
-tweets = [
+tweets [
       Tweet(text=("It's shocking that the vast majority of online banking "
                   "systems have critical vulnerabilities leaving customer "
                   "accounts unprotected."),
@@ -31,10 +31,10 @@ ___ filter_tweets_on_polarity(tweets, keep_positive=T..
       """Filter the tweets by polarity score, receives keep_positive bool which
       determines what to keep. Returns a list of filtered tweets."""
       __ keep_positive:
-            positive = [tweet ___ tweet __ tweets __ tweet.polarity > 0]
+            positive [tweet ___ tweet __ tweets __ tweet.polarity > 0]
             r.. positive
       ____
-            negative = [tweet ___ tweet __ tweets __ tweet.polarity < 0]
+            negative [tweet ___ tweet __ tweets __ tweet.polarity < 0]
             r.. negative
 
 
@@ -42,10 +42,10 @@ ___ order_tweets_by_polarity(tweets, positive_highest=T..
       """Sort the tweets by polarity, receives positive_highest which determines
       the order. Returns a list of ordered tweets."""
       __ positive_highest:
-            highest = s..(tweets, key=l.... x: x.polarity, r.._T..
+            highest s..(tweets, key=l.... x: x.polarity, r.._T..
             r.. highest
       ____
-            lowest = s..(tweets, key=l.... x: x.polarity)
+            lowest s..(tweets, key=l.... x: x.polarity)
             r.. lowest
 
 #if __name__ == "__main__":

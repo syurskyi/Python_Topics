@@ -1,6 +1,6 @@
 c_ Roman:
 
-    NUMERALS = {
+    NUMERALS {
         1: "I",
         4: "IV",
         5: "V",

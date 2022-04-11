@@ -7,7 +7,7 @@ ___ count_islands(grid
     It's also preferred to check/mark the visited islands:
     - eg. using the helper function - mark_islands().
     """
-    islands = 0         # var. for the counts
+    islands 0         # var. for the counts
     ___ r, row __ e..(grid
         ___ c, val __ e..(row
             __ grid[r][c] __ 1:
@@ -25,14 +25,14 @@ ___ mark_islands(i, j, grid
     __ (i>_0) a.. (j>_0) a.. (i<_l..(grid)-1) a.. (j<_l..(grid[i])-1
         print _*inside mark_islands row:{i} column:{j} value:{grid[i][j]}')
         __ grid[i][j] __ 1:
-            grid[i][j] = '#'      # one way to mark visited ones - suggestion.
+            grid[i][j] '#'      # one way to mark visited ones - suggestion.
             mark_islands(i-1, j, grid)
             mark_islands(i+1, j, grid)
             mark_islands(i, j-1, grid)
             mark_islands(i, j+1, grid)
 
 
-squares = [[1, 1, 0, 1],
+squares [[1, 1, 0, 1],
            [1, 1, 0, 1],
            [0, 0, 1, 1],
            [1, 1, 1, 0]]

@@ -2,7 +2,7 @@
 Premium Question
 simple DFS
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -12,13 +12,13 @@ c_ Solution(o..
         :type edges: List[List[int]]
         :rtype: int
         """
-        V = [[] ___ _ __ x..(n)]
+        V [[] ___ _ __ x..(n)]
         ___ e __ edges:
             V[e[0]].a..(e[1])
             V[e[1]].a..(e[0])
 
-        visited = [F.. ___ _ __ x..(n)]
-        cnt = 0
+        visited [F.. ___ _ __ x..(n)]
+        cnt 0
         ___ v __ x..(n
             __ n.. visited[v]:
                 cnt += 1
@@ -27,7 +27,7 @@ c_ Solution(o..
         r.. cnt
 
     ___ dfs  V, v, visited
-        visited[v] = T..
+        visited[v] T..
         ___ nbr __ V[v]:
             __ n.. visited[nbr]:
                 dfs(V, nbr, visited)

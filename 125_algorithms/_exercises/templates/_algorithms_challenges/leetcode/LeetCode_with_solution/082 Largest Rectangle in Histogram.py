@@ -13,7 +13,7 @@ Given height = [2,1,5,6,2,3],
 return 10.
 """
 _______ ___
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -42,30 +42,30 @@ c_ Solution:
         __ n.. height:
             r.. 0
 
-        n = l..(height)
-        gmax = -___.maxint-1
+        n l..(height)
+        gmax -___.maxint-1
         inc_stack    # list  # store the idx, increasing stack
 
         ___ i __ x..(n
             w.... inc_stack a.. height[inc_stack[-1]] > height[i]:
-                last = inc_stack.p.. )
+                last inc_stack.p.. )
                 __ inc_stack:  # calculate area when popping
-                    area = height[last]*(i-(inc_stack[-1]+1
+                    area height[last]*(i-(inc_stack[-1]+1
                 ____
-                    area = height[last]*i
-                gmax = m..(gmax, area)
+                    area height[last]*i
+                gmax m..(gmax, area)
 
             inc_stack.a..(i)
 
         # after processing all heights, process the remaining stack
-        i = n
+        i n
         w.... inc_stack:
-            last = inc_stack.p.. )
+            last inc_stack.p.. )
             __ inc_stack:
-                area = height[last]*(i-(inc_stack[-1]+1
+                area height[last]*(i-(inc_stack[-1]+1
             ____
-                area = height[last]*i
-            gmax = m..(gmax, area)
+                area height[last]*i
+            gmax m..(gmax, area)
 
         r.. gmax
 
@@ -78,14 +78,14 @@ c_ Solution:
         __ n.. height:
             r.. 0
 
-        max_area = -1<<32
+        max_area -1<<32
         ___ ind, val __ e..(height
-            min_h = val
-            max_area = m..(max_area, val*1)
+            min_h val
+            max_area m..(max_area, val*1)
             ___ j __ x..(ind, -1, -1
-                min_h = m..(min_h, height[j])
-                current_area = min_h*(ind-j+1)
-                max_area = m..(max_area, current_area)
+                min_h m..(min_h, height[j])
+                current_area min_h*(ind-j+1)
+                max_area m..(max_area, current_area)
 
         r.. max_area
 
@@ -103,17 +103,17 @@ c_ Solution:
         __ n.. height:
             r.. 0
 
-        global_max = -1<<32
+        global_max -1<<32
         ___ ind, val __ e..(height
             __ ind+1<l..(height) a.. val<_height[ind+1]:  # PRUNE, find until peak
                 _____
 
-            min_h = val
-            global_max = m..(global_max, min_h*1)
+            min_h val
+            global_max m..(global_max, min_h*1)
             ___ j __ x..(ind, -1, -1  # scanning backward
-                min_h = m..(min_h, height[j])
-                current_area = min_h*(ind-j+1)
-                global_max = m..(global_max, current_area)
+                min_h m..(min_h, height[j])
+                current_area min_h*(ind-j+1)
+                global_max m..(global_max, current_area)
 
         r.. global_max
 
@@ -131,37 +131,37 @@ c_ Solution:
         __ n.. height:
             r.. 0
 
-        length = l..(height)
-        global_max = -1<<32
+        length l..(height)
+        global_max -1<<32
         inc_stack    # list  # store the pointer
 
-        i = 0
+        i 0
         w.... i<length:
             __ n.. inc_stack o. height[i]>_height[inc_stack[-1]]:
                 inc_stack.a..(i)
                 i += 1
             ____
-                last = inc_stack.p.. )
+                last inc_stack.p.. )
                 __ inc_stack:
-                    area = height[last] * (i-last)
+                    area height[last] * (i-last)
                 ____
-                    area = height[last] * i
-                global_max = m..(global_max, area)
+                    area height[last] * i
+                global_max m..(global_max, area)
 
         # remaining stack
         w.... inc_stack:
-            last = inc_stack.p.. )
+            last inc_stack.p.. )
             __ inc_stack:
-                area = height[last]*(i-last)
+                area height[last]*(i-last)
             ____
-                area = height[last]*i
-            global_max = m..(global_max, area)
+                area height[last]*i
+            global_max m..(global_max, area)
         r.. global_max
 
 
 __ _____ __ ____
     # height = [2, 1, 2]
-    height = [4, 2, 0, 3, 2, 5]
+    height [4, 2, 0, 3, 2, 5]
     ... Solution().largestRectangleArea(height) __ Solution().largestRectangleArea_complex(height)
 
 

@@ -11,13 +11,13 @@ c_ Solution(o..
         :type word2: str
         :rtype: int
         """
-        res = f__('inf')
+        res f__('inf')
         ___ i, word __ e..(words
             __ word __ [word1, word2]:
-                target = word2 __ word __ word1 ____ word1
-                j = i+1
+                target word2 __ word __ word1 ____ word1
+                j i+1
                 w.... j < l..(words
                     __ words[j] __ target:
-                        res = m..(res, j-i)
+                        res m..(res, j-i)
                     j += 1
         r.. res

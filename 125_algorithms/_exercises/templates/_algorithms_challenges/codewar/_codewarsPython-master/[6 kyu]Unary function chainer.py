@@ -1,5 +1,5 @@
 ___ chained(f
-    z = l.... x:x
+    z l.... x:x
     ___ func __ f:
         func(z)
         r.. z

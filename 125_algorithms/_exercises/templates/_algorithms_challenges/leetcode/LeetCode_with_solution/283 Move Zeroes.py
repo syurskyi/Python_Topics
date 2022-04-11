@@ -9,7 +9,7 @@ You must do this in-place without making a copy of the array.
 Minimize the total number of operations.
 """
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -18,11 +18,11 @@ c_ Solution(o..
         Two pointers at the left side
         Pivot
         """
-        left = -1
+        left -1
         ___ i __ x..(l..(nums:
             __ nums[i] != 0:
                 left += 1
-                nums[left], nums[i] = nums[i], nums[left]
+                nums[left], nums[i] nums[i], nums[left]
 
 
 c_ SolutionCount(o..
@@ -32,17 +32,17 @@ c_ SolutionCount(o..
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        cnt = 0
+        cnt 0
         ___ elt __ nums:
             __ elt != 0:
-                nums[cnt] = elt
+                nums[cnt] elt
                 cnt += 1
 
         ___ j __ x..(cnt, l..(nums:
-            nums[j] = 0
+            nums[j] 0
 
 
 __ _______ __ _______
-    lst = [0, 1, 0, 3, 12]
+    lst [0, 1, 0, 3, 12]
     Solution().moveZeroes(lst)
     ... lst __ [1, 3, 12, 0, 0]

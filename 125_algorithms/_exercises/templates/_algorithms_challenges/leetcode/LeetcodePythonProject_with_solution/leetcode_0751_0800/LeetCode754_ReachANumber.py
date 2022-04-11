@@ -9,9 +9,9 @@ c_ Solution(o..
         :type target: int
         :rtype: int
         """
-        target = a..(target)
-        step = 0
-        sumVal = 0
+        target a..(target)
+        step 0
+        sumVal 0
         w.... sumVal < target:
             step += 1
             sumVal += step
@@ -21,13 +21,13 @@ c_ Solution(o..
         r.. step
     
     ___ test
-        testCases = [
+        testCases [
             3,
             2,
         ]
         ___ target __ testCases:
             print('target: %s' % target)
-            result = reachNumber(target)
+            result reachNumber(target)
             print('result: %s' % result)
             print('-='*30+'-')
 

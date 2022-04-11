@@ -13,13 +13,13 @@ c_ Solution(o..
         :rtype: List[List[int]]
         """
         res    # list
-        dx, dy, n = 0, 1, 0
+        dx, dy, n 0, 1, 0
         w.... l..(res) < R*C:
             ___ _ __ r..(n//2+1
                 __ 0 <_ r0 < R a.. 0 <_ c0 < C:
                     res.a..([r0, c0])
-                r0, c0 = r0+dx, c0+dy
-            dx, dy, n = dy, -dx, n+1
+                r0, c0 r0+dx, c0+dy
+            dx, dy, n dy, -dx, n+1
         r.. res
     
     ___ spiralMatrixIII_own  R, C, r0, c0
@@ -30,18 +30,18 @@ c_ Solution(o..
         :type c0: int
         :rtype: List[List[int]]
         """
-        pos = [r0, c0]
+        pos [r0, c0]
         res    # list
-        length = 1
-        dirs = [[0, 1], [1, 0], [0, -1], [-1, 0]]
-        i = 0
+        length 1
+        dirs [[0, 1], [1, 0], [0, -1], [-1, 0]]
+        i 0
         w.... l..(res) < R*C:
             ___ _ __ r..(2
                 ___ _ __ r..(length
                     __ isInRange(pos, R, C
                         res.a..(pos)
-                    d = dirs[i%4]
-                    pos = [pos[0]+d[0], pos[1]+d[1]]
+                    d dirs[i%4]
+                    pos [pos[0]+d[0], pos[1]+d[1]]
                 i += 1
             length += 1
         r.. res
@@ -50,11 +50,11 @@ c_ Solution(o..
         r.. 0 <_ pos[0] < R a.. 0 <_ pos[1] < C
     
     ___ test
-        testCases = [
+        testCases [
             [1, 4, 0, 0],
         ]
         ___ R, C, r0, c0 __ testCases:
-            res = spiralMatrixIII(R, C, r0, c0)
+            res spiralMatrixIII(R, C, r0, c0)
             print('res: %s' % res)
 
 __ _____ __ _____

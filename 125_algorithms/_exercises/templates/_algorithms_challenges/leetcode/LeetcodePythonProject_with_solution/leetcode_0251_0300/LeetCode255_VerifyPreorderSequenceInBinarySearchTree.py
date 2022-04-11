@@ -10,16 +10,16 @@ c_ Solution(o..
         :type preorder: List[int]
         :rtype: bool
         """
-        low = f__('-inf')
-        i = -1
+        low f__('-inf')
+        i -1
         ___ p __ preorder:
             __ p < low:
                 r.. F..
             w.... i >_ 0 a.. p > preorder[i]:
-                low = preorder[i]
+                low preorder[i]
                 i -_ 1
             i += 1
-            preorder[i] = p
+            preorder[i] p
         r.. T..
     
     ___ verifyPreorderStack  preorder
@@ -28,11 +28,11 @@ c_ Solution(o..
         :rtype: bool
         """
         stack    # list
-        low = f__('-inf')
+        low f__('-inf')
         ___ p __ preorder:
             __ p < low:
                 r.. F..
             w.... stack a.. stack[-1] < p:
-                low = stack.p.. )
+                low stack.p.. )
             stack.a..(p)
         r.. T..

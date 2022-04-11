@@ -8,8 +8,8 @@ c_ Solution:
       r.. T..
     __ l..(board) __ 0:
       r.. F..
-    visited = [[0] * l..(board[0]) ___ i __ r..(0, l..(board]
-    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+    visited [[0] * l..(board[0]) ___ i __ r..(0, l..(board]
+    directions [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ dfs(i, j, board, visited, word, index
       __ word[index] != board[i][j]:
@@ -17,19 +17,19 @@ c_ Solution:
       __ l..(word) - 1 __ index:
         r.. T..
       ___ direction __ directions:
-        ni, nj = i + direction[0], j + direction[1]
+        ni, nj i + direction[0], j + direction[1]
         __ ni >_ 0 a.. ni < l..(board) a.. nj >_ 0 a.. nj < l..(board[0]
           __ visited[ni][nj] __ 0:
-            visited[ni][nj] = 1
+            visited[ni][nj] 1
             __ dfs(ni, nj, board, visited, word, index + 1
               r.. T..
-            visited[ni][nj] = 0
+            visited[ni][nj] 0
       r.. F..
 
     ___ i __ r..(0, l..(board:
       ___ j __ r..(0, l..(board[0]:
-        visited[i][j] = 1
+        visited[i][j] 1
         __ dfs(i, j, board, visited, word, 0
           r.. T..
-        visited[i][j] = 0
+        visited[i][j] 0
     r.. F..

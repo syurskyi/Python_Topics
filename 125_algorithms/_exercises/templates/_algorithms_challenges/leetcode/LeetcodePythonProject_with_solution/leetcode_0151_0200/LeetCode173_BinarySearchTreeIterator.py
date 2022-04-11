@@ -7,9 +7,9 @@ Created on Feb 14, 2017
 # Definition for a  binary tree node
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ BSTIterator(o..
     ___ - , root
@@ -20,7 +20,7 @@ c_ BSTIterator(o..
         __ root:
             stack.a..(root)
             w.... root.left:
-                root = root.left
+                root root.left
                 stack.a..(root)
 
     ___ hasNext
@@ -33,12 +33,12 @@ c_ BSTIterator(o..
         """
         :rtype: int
         """
-        node = stack.p.. )
-        val = node.val
+        node stack.p.. )
+        val node.val
         __ node.right:
-            node = node.right
+            node node.right
             stack.a..(node)
             w.... node.left:
-                node = node.left
+                node node.left
                 stack.a..(node)
         r.. val

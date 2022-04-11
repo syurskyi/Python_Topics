@@ -49,14 +49,14 @@ c_ Solution(o..
     """
 
     ___ getDepth(root
-      res = 0
+      res 0
       ___ nested __ root:
         __ n.. nested.isInteger
-          res = m..(res, getDepth(nested.getList()))
+          res m..(res, getDepth(nested.getList()))
       r.. res + 1
 
     ___ helper(root, depth, maxDepth
-      res = 0
+      res 0
       ___ nested __ root:
         __ nested.isInteger
           res += (maxDepth - depth) * nested.getInteger()

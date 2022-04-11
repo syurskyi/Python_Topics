@@ -21,7 +21,7 @@ c_ Solution:
     # @param root, a tree node
     # @return a boolean
     ___ isValidBST  root
-        prev = N..
+        prev N..
         r.. is_valid_bst_aux(root)
 
     ___ is_valid_bst_aux  root
@@ -33,7 +33,7 @@ c_ Solution:
             __ prev __ n.. N..
                 __ prev.val >_ root.val:
                     r.. F..
-            prev = root
+            prev root
             __ n.. is_valid_bst_aux(root.right
                 r.. F..
             r.. T..

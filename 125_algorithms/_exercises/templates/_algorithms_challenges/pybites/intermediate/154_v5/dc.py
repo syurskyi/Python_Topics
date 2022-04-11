@@ -5,10 +5,10 @@ ____ dataclasses _______ dataclass
 c_ Bite(o..
     number: i..
     title: s..
-    level: s.. = 'Beginner'
+    level: s.. 'Beginner'
 
     ___ __post_init__
-        title = title.capitalize()
+        title title.capitalize()
 
     ___ __lt__  other
         r.. number < other.number __ isi..(other, Bite) ____ F..

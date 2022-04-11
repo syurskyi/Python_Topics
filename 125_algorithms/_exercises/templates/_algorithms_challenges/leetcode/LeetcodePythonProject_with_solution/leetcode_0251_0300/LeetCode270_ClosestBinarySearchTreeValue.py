@@ -7,9 +7,9 @@ Created on Mar 4, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ closestValue  root, target
@@ -21,9 +21,9 @@ c_ Solution(o..
         result= root.val
         w.... root:
             __ a..(target - root.val) < a..(target-result
-                result = root.val
+                result root.val
             __ root.val > target:
-                root = root.left
+                root root.left
             ____
-                root = root.right
+                root root.right
         r.. result

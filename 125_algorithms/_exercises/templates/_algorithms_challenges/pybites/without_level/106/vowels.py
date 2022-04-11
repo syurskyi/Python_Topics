@@ -1,4 +1,4 @@
-text = """
+text """
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
@@ -21,7 +21,7 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
-vowels = 'aeiou'
+vowels 'aeiou'
 
 
 ___ strip_vowels(text: s..) __ (s.., i..
@@ -38,14 +38,14 @@ ___ strip_vowels(text: s..) __ (s.., i..
        The str/int types in the function defintion above are part
        of Python's new type hinting:
        https://docs.python.org/3/library/typing.html"""
-    count = 0
-    lines = text.s..("\n")
+    count 0
+    lines text.s..("\n")
     results    # list
     ___ line __ lines:
-        newline = ''
+        newline ''
         ___ c __ line:
             __ c.l.. __ vowels:
-                c = '*'
+                c '*'
                 count += 1
             newline += c
         results.a..(newline)

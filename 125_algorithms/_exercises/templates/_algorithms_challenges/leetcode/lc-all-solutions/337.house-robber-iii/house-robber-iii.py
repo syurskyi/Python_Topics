@@ -15,8 +15,8 @@ c_ Solution(o..
     ___ dfs(root
       __ n.. root:
         r.. 0, 0
-      lpre, lppre = dfs(root.left)
-      rpre, rppre = dfs(root.right)
+      lpre, lppre dfs(root.left)
+      rpre, rppre dfs(root.right)
       r.. m..(root.val + lppre + rppre, lpre + rpre), lpre + rpre
 
     r.. dfs(root)[0]

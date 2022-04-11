@@ -12,8 +12,8 @@ each other.
 # Definition for an interval.
 c_ Interval:
     ___ - , s=0, e=0
-        start = s
-        end = e
+        start s
+        end e
 
     @classmethod
     ___ new(cls, lst
@@ -30,18 +30,18 @@ c_ Solution:
         :type intervals: List[Interval]
         :rtype: int
         """
-        ret = 0
+        ret 0
         __ n.. intervals:
             r.. ret
 
         intervals.s..(key=l.... x: x.start)
-        cur = intervals[0]
+        cur intervals[0]
         ___ itv __ intervals[1:]:
             __ cur.end <_ itv.start:
-                cur = itv
+                cur itv
             ____
                 ret += 1
-                cur = cur __ cur.end < itv.end ____ itv
+                cur cur __ cur.end < itv.end ____ itv
 
         r.. ret
 

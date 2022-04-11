@@ -9,7 +9,7 @@ You may assume no duplicate exists in the array.
 """
 _______ ___
 
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -21,22 +21,22 @@ c_ Solution(o..
         :param A: a list of integer
         :return: an integer
         """
-        lo = 0
-        hi = l..(A)
-        mini = ___.maxint
+        lo 0
+        hi l..(A)
+        mini ___.maxint
         w.... lo < hi:
-            mid = (lo+hi)/2
-            mini = m..(mini, A[mid])
+            mid (lo+hi)/2
+            mini m..(mini, A[mid])
             __ A[lo] <_ A[mid] <_ A[hi-1]:
                 r.. m..(mini, A[lo])
             ____ A[lo] > A[mid] < A[hi-1]:
-                hi = mid
+                hi mid
             ____
-                lo = mid+1
+                lo mid+1
 
         r.. mini
 
 
 __ _______ __ _______
-    num = [7, 1, 2, 3, 4, 5, 6]
+    num [7, 1, 2, 3, 4, 5, 6]
     ... Solution().findMin(num) __ 1

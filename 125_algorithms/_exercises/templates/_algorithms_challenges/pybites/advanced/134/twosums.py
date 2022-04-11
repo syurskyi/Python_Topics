@@ -3,20 +3,20 @@ ___ bs(numbers,value
 
 
 
-    low,high = 0,l..(numbers) - 1
+    low,high 0,l..(numbers) - 1
 
 
     w.... low <_ high:
-        mid = (low + high)//2
+        mid (low + high)//2
 
         __ numbers[mid] __ value:
             r.. mid
 
 
         __ value < numbers[mid]:
-            high = mid - 1
+            high mid - 1
         ____
-            low = mid + 1
+            low mid + 1
 
 
 
@@ -38,17 +38,17 @@ ___ two_sums(numbers, target
     mapping    # dict
 
     
-    result = N..
+    result N..
     ___ i,number __ e..(numbers
-        value = target - number
+        value target - number
         __ value < number a..  value __ mapping:
-            index_1 = mapping[value]
+            index_1 mapping[value]
             __ n.. result o. value < numbers[result[0]]:
-                result = (index_1,i)
+                result (index_1,i)
         
 
         __ number n.. __ mapping:
-            mapping[number] = i
+            mapping[number] i
 
 
 

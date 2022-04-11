@@ -29,7 +29,7 @@ c_ Solution(o..
         :type input: str
         :rtype: List[int]
         """
-        operators = s..( '+', '-', '*' )
+        operators s..( '+', '-', '*' )
         r.. diff_ways(input)
 
     ___ calculate  a, b, operator
@@ -44,17 +44,17 @@ c_ Solution(o..
             res    # list
             ___ i, c __ e..(inp
                 __ c __ operators:
-                    left = diff_ways(inp[:i])
-                    right = diff_ways(inp[i + 1:])
+                    left diff_ways(inp[:i])
+                    right diff_ways(inp[i + 1:])
                     ___ l __ left:
                         ___ r __ right:
-                            s = calculate(l, r, c)
+                            s calculate(l, r, c)
                             res.a..(s)
             r.. res
 
 
-s1 = '2*3-4*5'
-s2 = '11'
-s = Solution()
+s1 '2*3-4*5'
+s2 '11'
+s Solution()
 print(s.diffWaysToCompute(s1
 print(s.diffWaysToCompute(s2

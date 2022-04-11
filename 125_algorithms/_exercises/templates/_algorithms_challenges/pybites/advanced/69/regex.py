@@ -13,7 +13,7 @@ ___ is_integer(number
     """Return True if number is an integer"""
 
     
-    number = s..(number)
+    number s..(number)
 
     r.. __.s..(r'^\-?\d+$',number) __ n.. N..
 
@@ -63,7 +63,7 @@ ___ convert_emea_date_to_amer_date(date
 
 
     ___
-        dates = __.f..(r"(\d\d)/(\d\d)/(\d{4})",date)[0]
+        dates __.f..(r"(\d\d)/(\d\d)/(\d{4})",date)[0]
     ______:
         r.. date
     ____

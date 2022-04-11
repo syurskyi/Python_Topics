@@ -24,23 +24,23 @@ c_ Solution:
         :type k: int
         :rtype: int
         """
-        counter = {
+        counter {
             alphabet: 0
             ___ alphabet __ s__.a..
         }
-        lo = 0
-        ret = 0
+        lo 0
+        ret 0
         ... k > 0
         ___ hi __ r..(l..(s:
             counter[s[hi]] += 1
             w... T...
-                most = m..(counter.values  # O(26)
-                l = hi - lo + 1
+                most m..(counter.values  # O(26)
+                l hi - lo + 1
                 __ l - most > k:
                     counter[s[lo]] -_ 1
                     lo += 1
                 ____
-                    ret = m..(ret, l)
+                    ret m..(ret, l)
                     _____
 
         r.. ret

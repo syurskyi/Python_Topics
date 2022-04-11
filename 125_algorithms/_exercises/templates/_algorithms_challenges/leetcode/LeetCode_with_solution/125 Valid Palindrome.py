@@ -10,7 +10,7 @@ Have you consider that the string might be empty? This is a good question to ask
 
 For the purpose of this problem, we define empty string as valid palindrome.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -20,10 +20,10 @@ c_ Solution(o..
         :param s: a string
         :return: a boolean
         """
-        s = s.l..
+        s s.l..
         # import re  # not supported
         # s = re.sub('[^a-zA-Z0-9]', '', s)  # not supported
-        s = ''.j..(e ___ e __ s __ e.i..
+        s ''.j..(e ___ e __ s __ e.i..
         __ n.. s:
             r.. T..
 

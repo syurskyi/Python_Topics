@@ -1,4 +1,4 @@
-NORTH, EAST, SOUTH, WEST = r..(4)
+NORTH, EAST, SOUTH, WEST r..(4)
 
 c_ Robot(o..
     ___ -

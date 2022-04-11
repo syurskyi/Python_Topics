@@ -49,7 +49,7 @@ c_ Solution:
 
         # not choose A_i
         # to de-dup, need to jump
-        j = i + 1
+        j i + 1
         w.... j < l..(candidates) a.. candidates[j] __ candidates[i]:
             j += 1
 

@@ -1,9 +1,9 @@
 ___ wsd(numOfSums #wsd = Weighted sum of digits
-        sums = raw_input().s..(' ')
+        sums raw_input().s..(' ')
         answer    # list
         ___ number __ sums:
-                    num = 0
-                    d.. = l..(number)
+                    num 0
+                    d.. l..(number)
                     ___ x __ r.. l.. d..
                             num += i..(d..[x]) * (x+1)
                     answer.a..(s..(num

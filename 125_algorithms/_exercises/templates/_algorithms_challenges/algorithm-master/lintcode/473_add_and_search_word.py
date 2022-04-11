@@ -5,22 +5,22 @@ c_ Trie:
     ___ insert  s__
         __ n.. s__:
             r..
-        parent = root
+        parent root
         ___ char __ s__:
             __ char __ parent:
-                parent = parent[char]
+                parent parent[char]
             ____
                 parent[char]    # dict
-                parent = parent[char]
+                parent parent[char]
         parent '_end'  = T..
 
     ___ s..  s__
         __ n.. s__:
             r.. F..
-        parent = root
+        parent root
         ___ char __ s__:
             __ char __ parent:
-                parent = parent[char]
+                parent parent[char]
             ____
                 r.. F..
         r.. T..
@@ -33,19 +33,19 @@ c_ Trie:
     ___ _search_in_regex  s__, parent, i
         __ i __ l..(s__
             r.. parent.g.. '_end', F..)
-        result = F..
+        result F..
         __ s__[i] __ '.':
             ___ child __ parent:
                 __ child[0] != '_' a.. _search_in_regex(s__, parent[child], i + 1
-                    result = T..
+                    result T..
         ____ s__[i] __ parent:
             __ _search_in_regex(s__, parent[s__[i]], i + 1
-                result = T..
+                result T..
         r.. result
 
 c_ WordDictionary:
     ___ -
-        trie = Trie()
+        trie Trie()
 
     """
     @param: word: Adds a word into the data structure.

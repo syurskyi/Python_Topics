@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: int
         """
         w.... p % 2 __ 0 a.. q % 2 __ 0:
-            p, q = p//2, q//2
+            p, q p//2, q//2
         __ p % 2 __ 0:
             r.. 2
         ____ q % 2 __ 0:
@@ -20,11 +20,11 @@ c_ Solution(o..
             r.. 1
     
     ___ test
-        testCases = [
+        testCases [
             
         ]
         ___ p, q __ testCases:
-            res = mirrorReflection(p, q)
+            res mirrorReflection(p, q)
             print('res: %s' % res)
             print('-='*30+'-')
 

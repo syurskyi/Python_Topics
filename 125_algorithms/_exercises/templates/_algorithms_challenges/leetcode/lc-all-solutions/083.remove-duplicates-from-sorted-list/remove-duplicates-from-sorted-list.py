@@ -10,13 +10,13 @@ c_ Solution(o..
     :type head: ListNode
     :rtype: ListNode
     """
-    dummy = ListNode(N..)
-    dummy.next = head
-    p = dummy
+    dummy ListNode(N..)
+    dummy.next head
+    p dummy
 
     w.... p a.. p.next:
       __ p.val __ p.next.val:
-        p.next = p.next.next
+        p.next p.next.next
       ____
-        p = p.next
+        p p.next
     r.. dummy.next

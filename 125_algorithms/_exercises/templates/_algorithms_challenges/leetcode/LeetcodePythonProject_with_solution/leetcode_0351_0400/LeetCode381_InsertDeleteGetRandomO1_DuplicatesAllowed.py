@@ -15,14 +15,14 @@ c_ RandomizedCollection(o..
             pos[val].add(l..(vals)-1)
             r.. F..
         ____
-            pos[val] = s..([l..(vals)-1])
+            pos[val] s..([l..(vals)-1])
             r.. T..
     
     ___ remove  val
         __ val __ pos:
-            lastVal = vals[-1]
-            ind = pos[val].p.. )
-            vals[ind] = lastVal
+            lastVal vals[-1]
+            ind pos[val].p.. )
+            vals[ind] lastVal
             __ pos[lastVal]:
                 pos[lastVal].add(ind)
                 pos[lastVal].discard(l..(vals)-1)

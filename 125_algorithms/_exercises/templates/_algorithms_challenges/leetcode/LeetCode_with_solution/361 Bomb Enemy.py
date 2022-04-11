@@ -14,7 +14,7 @@ E 0 W E
 
 return 3. (Placing a bomb at (1,1) kills 3 enemies)
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -30,14 +30,14 @@ c_ Solution(o..
         """
         __ n.. grid: r.. 0
 
-        m, n = l..(grid), l..(grid[0])
-        rows = [0 ___ _ __ x..(m)]
-        cols = [0 ___ _ __ x..(n)]
-        gmax = 0
+        m, n l..(grid), l..(grid[0])
+        rows [0 ___ _ __ x..(m)]
+        cols [0 ___ _ __ x..(n)]
+        gmax 0
         ___ i __ x..(m
             ___ j __ x..(n
                 __ i __ 0 o. grid[i-1][j] __ 'W':
-                    cols[j] = 0
+                    cols[j] 0
                     ___ k __ x..(i, m
                         __ grid[k][j] __ 'E':
                             cols[j] += 1
@@ -45,7 +45,7 @@ c_ Solution(o..
                             _____
 
                 __ j __ 0 o. grid[i][j-1] __ 'W':
-                    rows[i] = 0
+                    rows[i] 0
                     ___ k __ x..(j, n
                         __ grid[i][k] __ 'E':
                             rows[i] += 1
@@ -53,7 +53,7 @@ c_ Solution(o..
                             _____
 
                 __ grid[i][j] __ '0':
-                    gmax = m..(gmax, rows[i] + cols[j])
+                    gmax m..(gmax, rows[i] + cols[j])
 
         r.. gmax
 

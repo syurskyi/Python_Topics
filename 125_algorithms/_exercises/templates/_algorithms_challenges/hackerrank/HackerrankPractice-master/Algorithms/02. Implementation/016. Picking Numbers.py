@@ -3,18 +3,18 @@
 
 
 ___ pickingNumbers(arr
-    result = 0
-    checked = s..()
+    result 0
+    checked s..()
     ___ i __ r..(l..(arr:
         __ i n.. __ checked:
-            maxCount = m..(arr.c.. arr[i]) + arr.c.. arr[i] + 1), arr.c.. arr[i]) + arr.c.. arr[i] - 1
+            maxCount m..(arr.c.. arr[i]) + arr.c.. arr[i] + 1), arr.c.. arr[i]) + arr.c.. arr[i] - 1
             __ maxCount > result:
-                result = maxCount
+                result maxCount
             checked.add(i)
     r.. result
 
 
-n = i..(input().s..
-arr = l.. m..(i.., input().s...s..(' ')))
-result = pickingNumbers(arr)
+n i..(input().s..
+arr l.. m..(i.., input().s...s..(' ')))
+result pickingNumbers(arr)
 print(result)

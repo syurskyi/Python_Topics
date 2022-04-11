@@ -62,12 +62,12 @@ c_ Solution:
         heights    # list
 
         ___ i __ r..(l..(people:
-            h, k = people[i]
+            h, k people[i]
 
             __ h __ h2mans:
                 h2mans[h].a..((k, i
             ____
-                h2mans[h] = [(k, i)]
+                h2mans[h] [(k, i)]
                 heights.a..(h)
 
         heights.s..()

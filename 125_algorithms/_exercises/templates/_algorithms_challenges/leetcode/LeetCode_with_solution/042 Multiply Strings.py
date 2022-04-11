@@ -3,7 +3,7 @@ Given two numbers represented as strings, return multiplication of the numbers a
 
 Note: The numbers can be arbitrarily large and are non-negative.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -31,19 +31,19 @@ c_ Solution(o..
             r.. multiply(num2, num1)
 
         # reverse them first
-        num1 = map(i.., l..(num1[::-1]
-        num2 = map(i.., l..(num2[::-1]
+        num1 map(i.., l..(num1[::-1]
+        num2 map(i.., l..(num2[::-1]
 
         # multiply by 1 digit at a time
         ___ d __ num1:
             result.a..(multiply_1_digit(d, num2
 
         # add the temporary results up
-        lst = add_list(result)
+        lst add_list(result)
 
         # post processing
         lst.r..  # reverse back
-        result = "".j.. m..(s.., lst.l..("0")
+        result "".j.. m..(s.., lst.l..("0")
         __ n.. result:
             r.. "0"
         r.. result
@@ -56,10 +56,10 @@ c_ Solution(o..
         """
         ret    # list
 
-        carry = 0
+        carry 0
         ___ elt __ num:
-            mul = elt*digit + carry
-            carry = mul/10
+            mul elt*digit + carry
+            carry mul/10
             mul %= 10
             ret.a..(mul)
 
@@ -74,11 +74,11 @@ c_ Solution(o..
         :param lst:
         :return:
         """
-        sig = 0
-        ret = [0]
+        sig 0
+        ret [0]
         ___ ind, val __ e..(lst
             ___ i __ x..(sig val.insert(0, 0)  # possible deque
-            ret = add(ret, val)
+            ret add(ret, val)
             sig += 1
         r.. ret
 
@@ -93,14 +93,14 @@ c_ Solution(o..
             r.. add(num2, num1)
 
         ret    # list
-        carry = 0
+        carry 0
         ___ idx __ x..(l..(num2:  # longer one
             ___
-                sm = num1[idx] + num2[idx] + carry
+                sm num1[idx] + num2[idx] + carry
             ______ I..
-                sm = num2[idx] + carry
+                sm num2[idx] + carry
 
-            carry = sm/10
+            carry sm/10
             ret.a..(sm % 10)
 
         __ carry != 0:
@@ -110,7 +110,7 @@ c_ Solution(o..
 
 
 __ _______ __ _______
-    solution = Solution()
+    solution Solution()
     ... [1, 2] __ solution.add([2, 1], [9])
     ... s..(123*999) __ solution.multiply("123", "999")
     ... s..(0) __ solution.multiply("0", "0")

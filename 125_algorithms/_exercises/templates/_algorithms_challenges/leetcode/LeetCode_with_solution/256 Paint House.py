@@ -3,7 +3,7 @@ Premium Question
 """
 _______ ___
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -18,19 +18,19 @@ c_ Solution:
         __ n.. costs:
             r.. 0
 
-        n = l..(costs)
-        m = l..(costs[0])
-        F = [[0 ___ _ __ x..(m)] ___ _ __ x..(n+1)]
+        n l..(costs)
+        m l..(costs[0])
+        F [[0 ___ _ __ x..(m)] ___ _ __ x..(n+1)]
         ___ k __ x..(1, n+1
             ___ i __ x..(m
-                F[k][i] = ___.maxint
+                F[k][i] ___.maxint
                 ___ j __ x..(m
                     __ i != j:
-                        F[k][i] = m..(F[k][i], F[k-1][j]+costs[k-1][i])
+                        F[k][i] m..(F[k][i], F[k-1][j]+costs[k-1][i])
 
         r.. m..(F[n][i] ___ i __ x..(m
 
 
 __ _______ __ _______
-    costs = [[7, 6, 2]]
+    costs [[7, 6, 2]]
     ... Solution().minCost(costs) __ 2

@@ -16,24 +16,24 @@ c_ Solution(o..
       __ n.. root:
         r.. root
 
-      left = dfs(root.left)
-      right = dfs(root.right)
+      left dfs(root.left)
+      right dfs(root.right)
 
       __ n.. left a.. n.. right:
         r.. root
 
       __ right __ N..
-        root.right = root.left
-        root.left = N..
+        root.right root.left
+        root.left N..
         r.. left
 
       __ n.. left:
         r.. right
 
       tmp  root.right
-      root.right = root.left
-      root.left = N..
-      left.right = tmp
+      root.right root.left
+      root.left N..
+      left.right tmp
       r.. right
 
     dfs(root)

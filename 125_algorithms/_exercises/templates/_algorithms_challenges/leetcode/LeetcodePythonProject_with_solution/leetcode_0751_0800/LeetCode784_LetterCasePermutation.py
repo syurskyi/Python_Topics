@@ -9,8 +9,8 @@ c_ Solution(o..
         :type S: str
         :rtype: List[str]
         """
-        s = S
-        res = s..()
+        s S
+        res s..()
         helper(s, 0, '', res)
         r.. l..(res)
     
@@ -25,14 +25,14 @@ c_ Solution(o..
             helper(s, i+1, curr+s[i].l.., res)
     
     ___ test
-        testCases = [
+        testCases [
             "a1b2",
             "3z4",
             "12345",
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = letterCasePermutation(s)
+            result letterCasePermutation(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

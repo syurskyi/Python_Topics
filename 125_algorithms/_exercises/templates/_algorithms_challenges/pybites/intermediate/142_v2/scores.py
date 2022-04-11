@@ -1,9 +1,9 @@
 ____ c.. _______ n..
 
-MIN_SCORE = 4
-DICE_VALUES = r..(1, 7)
+MIN_SCORE 4
+DICE_VALUES r..(1, 7)
 
-Player = n..('Player', 'name scores')
+Player n..('Player', 'name scores')
 
 
 ___ calculate_score(scores
@@ -16,7 +16,7 @@ ___ calculate_score(scores
 
        Returns int of the sum of the scores.
     """
-    s = 0
+    s 0
     ___ score __ scores:
         __ score n.. __ DICE_VALUES:
             r.. V...("Invalid dice value")
@@ -44,18 +44,18 @@ ___ get_winner(players
          Player(name='player 3', scores=[4, 5, 1, 2])
     """
     
-    score_list = max_player =  N..
-    max_score = f__('-inf')
+    score_list max_player =  N..
+    max_score f__('-inf')
     ___ player __ players:
         __ score_list __ N..
             score_list  = l..(player.scores)
         ____
             __ l..(player.scores) != score_list:
                 r.. V...("All lengths don't match!")
-        score = calculate_score(player.scores)
+        score calculate_score(player.scores)
         __ score > max_score:
-            max_score = score
-            max_player = player
+            max_score score
+            max_player player
 
 
     r.. max_player

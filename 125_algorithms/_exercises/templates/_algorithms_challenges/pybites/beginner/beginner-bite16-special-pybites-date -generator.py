@@ -40,11 +40,11 @@ ____ d__ _______ d__
 ____ d__ _______ t..
 ____ i.. _______ islice
 
-PYBITES_BORN = d__ y.._2016,  m.._12,  d.._19)
+PYBITES_BORN d__ y.._2016,  m.._12,  d.._19)
 
 ___ gen_special_pybites_dates_1
 
-    days = 0
+    days 0
     w... T...
         days += 1
         __ days % 100 __ 0 o. days % 365 __ 0:
@@ -52,20 +52,20 @@ ___ gen_special_pybites_dates_1
 
 ___ gen_special_pybites_dates_2
 
-    plus365 = t..(d.._365)
-    plus100 = t..(d.._100)
-    next365 = PYBITES_BORN + plus365
-    next100 = PYBITES_BORN + plus100
+    plus365 t..(d.._365)
+    plus100 t..(d.._100)
+    next365 PYBITES_BORN + plus365
+    next100 PYBITES_BORN + plus100
     w... T...
         __ next365 < next100:
-            nextevent = next365
+            nextevent next365
             next365 += plus365
         ____
-            nextevent = next100
+            nextevent next100
             next100 += plus100
         y.. nextevent
 
-gen = gen_special_pybites_dates()
-dates = l..(islice(gen,20
+gen gen_special_pybites_dates()
+dates l..(islice(gen,20
 print(dates)
 

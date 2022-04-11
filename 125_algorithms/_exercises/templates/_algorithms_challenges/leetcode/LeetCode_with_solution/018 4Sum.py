@@ -12,7 +12,7 @@ The solution set must not contain duplicate quadruplets.
     (-2, -1, 1, 2)
     (-2,  0, 0, 2)
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ fourSum_TLE  num, target
         """
@@ -30,17 +30,17 @@ c_ Solution:
         # record result
         result    # list
         num.s..()
-        length = l..(num)
+        length l..(num)
 
-        h = 0
+        h 0
         w.... h<length-3:
-            i = h+1
+            i h+1
             w.... i<length-2:
-                j = i+1
-                k = length-1
+                j i+1
+                k length-1
                 w.... j<k:
-                    lst = [num[h], num[i], num[j], num[k]]
-                    summation = s..(lst)
+                    lst [num[h], num[i], num[j], num[k]]
+                    summation s..(lst)
                     __ summation__target:
                         result.a..(lst)
                         k -_ 1
@@ -75,7 +75,7 @@ c_ Solution:
         :param target: int
         :return: a list of lists of length 4, [[val1,val2,val3,val4]]
         """
-        length, result_set, sum2index = l..(num), s..(), {}
+        length, result_set, sum2index l..(num), s..(), {}
         __ length<4:
             r.. []
         num.s..()
@@ -84,13 +84,13 @@ c_ Solution:
             ___ q __ x..(p+1, length
                 # record the pair sum
                 __ num[p]+num[q] n.. __ sum2index:
-                    sum2index[num[p]+num[q]] = [(p, q)]
+                    sum2index[num[p]+num[q]] [(p, q)]
                 ____
                     sum2index[num[p]+num[q]].a..((p, q
 
         ___ i __ x..(length
             ___ j __ x..(i+1, length-2
-                sum_remain = target-num[i]-num[j]
+                sum_remain target-num[i]-num[j]
                 __ sum_remain __ sum2index:
                     # construct the result
                     ___ pair __ sum2index[sum_remain]:

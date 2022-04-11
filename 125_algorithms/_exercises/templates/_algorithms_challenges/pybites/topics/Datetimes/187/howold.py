@@ -15,7 +15,7 @@ c_ Movie:
     title: s..
     release_date: s..
 
-actors = [
+actors [
     Actor('Wesley Snipes', 'July 31, 1962'),
     Actor('Robert de Niro', 'August 17, 1943'),
     Actor('Jennifer Aniston', 'February 11, 1969'),
@@ -24,7 +24,7 @@ actors = [
     Actor('Alec Baldwin', 'July 31, 1962'),
     Actor('Michelle Pfeiffer', 'April 29, 1958'),
 ]
-movies = [
+movies [
     Movie('New Jack City', 'January 17, 1991'),
     Movie('Goodfellas', 'October 19, 1990'),
     Movie('Horrible Bosses', 'September 16, 2011'),

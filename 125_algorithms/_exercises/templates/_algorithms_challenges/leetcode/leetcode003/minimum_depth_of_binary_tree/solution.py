@@ -18,6 +18,6 @@ c_ Solution:
         ____ root.left __ n.. N.. a.. root.right __ N..
             r.. minDepth(root.left) + 1
         ____
-            left_min = minDepth(root.left)
-            right_min = minDepth(root.right)
+            left_min minDepth(root.left)
+            right_min minDepth(root.right)
             r.. m..(left_min, right_min) + 1

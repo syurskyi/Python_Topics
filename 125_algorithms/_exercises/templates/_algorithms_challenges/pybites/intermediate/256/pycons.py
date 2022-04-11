@@ -6,11 +6,11 @@ _______ r__
 ____ bs4 _______ BeautifulSoup __ Soup
 ____ dateutil.parser _______ p..
 
-PYCON_DATA = "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
+PYCON_DATA "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
 
-PyCon = n..("PyCon", "name city country start_date end_date url")
+PyCon n..("PyCon", "name city country start_date end_date url")
 
-country_lookup = {
+country_lookup {
     "Africa": [
         "Algeria", "Angola", "Benin", "Botswana",
         "Burkina Faso", "Burundi", "Cameroon", "Cape Verde",
@@ -107,23 +107,23 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     application/ld+json data structure website data.
     """
 
-    soup = Soup(data,'html.parser')
+    soup Soup(data,'html.parser')
 
-    events = soup.find_all('script',attrs={'type': 'application/ld+json'})
+    events soup.find_all('script',attrs={'type': 'application/ld+json'})
 
     pycon_events    # list
     ___ event __ events:
-        event = j__.l.. (event.getText
-        name = event 'name'
+        event j__.l.. (event.getText
+        name event 'name'
         __ n.. name.s.. 'PyCon'
             _____
-        start_date = p..(event 'startDate' )
-        end_date = p..(event 'endDate' )
-        url = event 'url'
-        city = event 'location'  'address'  'addressLocality'
-        country = event 'location'  'address'  'addressCountry'
+        start_date p..(event 'startDate' )
+        end_date p..(event 'endDate' )
+        url event 'url'
+        city event 'location'  'address'  'addressLocality'
+        country event 'location'  'address'  'addressCountry'
 
-        pycon_event = PyCon(name,city,country,start_date,end_date,url)
+        pycon_event PyCon(name,city,country,start_date,end_date,url)
 
         pycon_events.a..(pycon_event)
 
@@ -139,8 +139,8 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
 
 
 ___ filter_pycons(pycons: L..[PyCon],
-                  year: i.. = 2019,
-                  continent: s.. = "Europe") __ L..[PyCon]:
+                  year: i.. 2019,
+                  continent: s.. "Europe") __ L..[PyCon]:
     """
     Given a list of PyCons a year and a continent return
     a list of PyCons that take place in that year and on

@@ -1,7 +1,7 @@
 ____ t___ _______ L..
 
-EAST = "E"
-WEST = "W"
+EAST "E"
+WEST "W"
 
 
 ___ search_apartment(buildings: L..[i..], direction: s..) __ L..[i..]:
@@ -11,25 +11,25 @@ ___ search_apartment(buildings: L..[i..], direction: s..) __ L..[i..]:
 
     See sample inputs / outputs below and in the tests.
     """
-    highest = 0
+    highest 0
     building_list    # list
     __ direction __ "E":
         buildings.r..
     ___ index, building __ e..(buildings
         __ building > highest:
-            highest = building
+            highest building
             building_list.a..(index)
     __ direction __ "E":
         ___ index, building __ e..(building_list
-            building_list[index] = l..(buildings)-building-1
+            building_list[index] l..(buildings)-building-1
         building_list.r..
     r.. building_list
 
 
 
 __ _______ __ _______
-    A = [3, 5, 4, 4, 7, 1, 3, 2]  # central tallest
-    B = [1, 1, 1, 1, 1, 2]  # almost flat
+    A [3, 5, 4, 4, 7, 1, 3, 2]  # central tallest
+    B [1, 1, 1, 1, 1, 2]  # almost flat
     #
     #  W <-                    ->  E(ast)
     #

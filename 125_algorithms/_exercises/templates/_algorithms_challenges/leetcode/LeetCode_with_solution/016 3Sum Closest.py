@@ -6,7 +6,7 @@ the sum of the three integers. You may assume that each input would have exactly
 
     The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ threeSumClosest  num, target
         """
@@ -17,20 +17,20 @@ c_ Solution:
         :param target: target
         :return: sum of the three digits
         """
-        min_distance = 1<<32
+        min_distance 1<<32
         num.s..()
-        min_summation = 0
+        min_summation 0
 
         ___ i, val __ e..(num
-            j = i+1
-            k = l..(num)-1
+            j i+1
+            k l..(num)-1
             w.... j<k:
-                lst = [val, num[j], num[k]]
+                lst [val, num[j], num[k]]
                 __ min_distance>a..(target-s..(lst:
-                    min_summation = s..(lst)
+                    min_summation s..(lst)
                     __ s..(lst)__target:
                         r.. min_summation
-                    min_distance = a..(target-min_summation)
+                    min_distance a..(target-min_summation)
                 ____ s..(lst)>target:
                     k -_ 1
                 ____

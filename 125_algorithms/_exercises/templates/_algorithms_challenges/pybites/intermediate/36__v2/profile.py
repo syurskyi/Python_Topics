@@ -12,17 +12,17 @@ ___ get_profile(name, age, *args, **kwargs
 
     user_profile    # dict
 
-    user_profile["name"] = name
-    user_profile["age"] = age
+    user_profile["name"] name
+    user_profile["age"] age
 
     __ l..(args) > 0:
-        sport_list = [arg ___ arg __ args]
+        sport_list [arg ___ arg __ args]
         sport_list.s..()
-        user_profile["sports"] = sport_list
+        user_profile["sports"] sport_list
 
     __ l..(kwargs) > 0:
-        award_dict = {key: value ___ key, value __ kwargs.i..}
-        user_profile["awards"] = award_dict
+        award_dict {key: value ___ key, value __ kwargs.i..}
+        user_profile["awards"] award_dict
     
     r.. user_profile
 

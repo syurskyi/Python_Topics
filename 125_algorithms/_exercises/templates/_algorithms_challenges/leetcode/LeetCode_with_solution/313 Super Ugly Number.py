@@ -15,7 +15,7 @@ _______ heapq
 ____ c.. _______ d..
 _______ ___
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -26,14 +26,14 @@ c_ Solution(o..
         :type primes: List[int]
         :rtype: int
         """
-        k = l..(primes)
-        ret = [___.maxint ___ _ __ x..(n)]
-        ret[0] = 1
+        k l..(primes)
+        ret [___.maxint ___ _ __ x..(n)]
+        ret[0] 1
         # for each prime, a pointer pointing to the value of next unused number in the result
-        idxes = [0 ___ _ __ x..(k)]
+        idxes [0 ___ _ __ x..(k)]
         ___ i __ x..(1, n
             ___ j __ x..(k
-                ret[i] = m..(ret[i], primes[j]*ret[idxes[j]])
+                ret[i] m..(ret[i], primes[j]*ret[idxes[j]])
 
             ___ j __ x..(k
                 __ ret[i] __ primes[j]*ret[idxes[j]]:
@@ -44,8 +44,8 @@ c_ Solution(o..
 
 c_ QueueWrapper(o..
     ___ - , idx, q
-        idx = idx
-        q = q
+        idx idx
+        q q
 
     ___ __cmp__  other
         r.. q[0] - other.q[0]
@@ -59,14 +59,14 @@ c_ SolutionHeap(o..
         :type primes: List[int]
         :rtype: int
         """
-        ret = 1
-        h = [QueueWrapper(i, d..([v] ___ i, v __ e..(primes)]
-        dic = {e.idx: e ___ e __ h}
+        ret 1
+        h [QueueWrapper(i, d..([v] ___ i, v __ e..(primes)]
+        dic {e.idx: e ___ e __ h}
 
         heapq.heapify(h)
         ___ _ __ x..(n-1
-            mini = heapq.heappop(h)
-            ret = mini.q.popleft()
+            mini heapq.heappop(h)
+            ret mini.q.popleft()
             ___ i __ x..(mini.idx, l..(primes:
                 dic[i].q.a..(ret*primes[i])
             heapq.heappush(h, mini)

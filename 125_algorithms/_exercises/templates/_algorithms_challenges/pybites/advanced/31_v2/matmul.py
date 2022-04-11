@@ -1,7 +1,7 @@
 c_ Matrix(o..
 
     ___ - , values
-        _values = values
+        _values values
 
     ___  -r
         r.. f'<Matrix values="{values}">'
@@ -12,7 +12,7 @@ c_ Matrix(o..
 
     $
     ___ _matrix_mult(mat1, mat2
-        result = [([s..(a * b ___ a, b __ z..(x, y ___ y __ z..(*mat2)]) ___ x __ mat1]
+        result [([s..(a * b ___ a, b __ z..(x, y ___ y __ z..(*mat2)]) ___ x __ mat1]
         r.. result
 
     ___ __matmul__  other
@@ -22,5 +22,5 @@ c_ Matrix(o..
         r.. Matrix(_matrix_mult(other.values, values
 
     ___ __imatmul__  other
-        _values = _matrix_mult(values, other.values)
+        _values _matrix_mult(values, other.values)
         r.. self

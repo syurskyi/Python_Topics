@@ -3,7 +3,7 @@ Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of 
 
 For example, given the range [5, 7], you should return 4.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -21,7 +21,7 @@ c_ Solution:
         :type n: int
         :rtype: int
         """
-        pos = 0
+        pos 0
         w.... m != n:
             pos += 1
             m >>= 1

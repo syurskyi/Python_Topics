@@ -35,16 +35,16 @@ c_ Solution:
         :type s: str
         :rtype: int
         """
-        n = l..(s)
-        F = d..(l....: d..(i..
+        n l..(s)
+        F d..(l....: d..(i..
         ___ i __ r..(n
-            F[i][i] = 1
+            F[i][i] 1
 
         ___ i __ r..(n-1, -1, -1
             ___ j __ r..(i+1, n
-                F[i][j] = m..(F[i+1][j], F[i][j-1])
+                F[i][j] m..(F[i+1][j], F[i][j-1])
                 __ s[i] __ s[j]:
-                    F[i][j] = m..(F[i][j], F[i+1][j-1] + 2)
+                    F[i][j] m..(F[i][j], F[i+1][j-1] + 2)
 
         r.. F[0][n-1]
 

@@ -4,14 +4,14 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: List[int]
     """
-    ans = [-1] * l..(nums)
-    n = l..(nums)
+    ans [-1] * l..(nums)
+    n l..(nums)
     stack    # list
     nums *= 2
     ___ i, num __ e..(nums
       w.... stack a.. nums[stack[-1]] < num:
-        top = stack.p.. )
+        top stack.p.. )
         __ top < n:
-          ans[top] = num
+          ans[top] num
       stack.a..(i)
     r.. ans

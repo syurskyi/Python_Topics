@@ -32,18 +32,18 @@ c_ Solution:
             r.. []
         res    # list
         queue    # list
-        rev = F..  # Reverse direction
+        rev F..  # Reverse direction
         level    # list
         queue.a..(root)
         queue.a..(N..)
         w.... queue:
-            root = queue.p.. 0)
+            root queue.p.. 0)
             __ root __ N..
                 __ queue:
                     queue.a..(N..)
                 res.a..(level)
                 level    # list
-                rev = n.. rev  # Toggle direction
+                rev n.. rev  # Toggle direction
             ____
                 __ rev:
                     level.insert(0, root.val)

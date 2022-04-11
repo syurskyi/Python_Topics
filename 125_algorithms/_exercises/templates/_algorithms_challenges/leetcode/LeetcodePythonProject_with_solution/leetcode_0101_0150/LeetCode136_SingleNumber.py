@@ -9,6 +9,6 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        res = 0
+        res 0
         ___ num __ nums: res ^= num
         r.. res

@@ -13,10 +13,10 @@ c_ Solution(o..
         """
         __ s __ N.. o. t __ N..
             r.. F..
-        m, n = l..(t), l..(s)
+        m, n l..(t), l..(s)
         __ a..(m-n) > 1:
             r.. F..
-        i, j, count = 0, 0, 0
+        i, j, count 0, 0, 0
         w.... i < n a.. j < m:
             __ s[i] __ t[j]:
                 i+=1

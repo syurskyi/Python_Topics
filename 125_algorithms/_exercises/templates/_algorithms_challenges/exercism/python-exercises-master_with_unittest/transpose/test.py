@@ -6,8 +6,8 @@ ____ transpose _______ transpose
 
 c_ TransposeTests(unittest.TestCase
     ___ test_empty_string
-        input_line = ""
-        e.. = ""
+        input_line ""
+        e.. ""
         assertEqual(
             transpose(input_line),
             e..
@@ -26,11 +26,11 @@ c_ TransposeTests(unittest.TestCase
         )
 
     ___ test_simple
-        input_line = [
+        input_line [
             "ABC",
             "123"
         ]
-        e.. = [
+        e.. [
             "A1",
             "B2",
             "C3"
@@ -42,8 +42,8 @@ c_ TransposeTests(unittest.TestCase
         )
 
     ___ test_single_line
-        input_line = ["Single line."]
-        e.. = [
+        input_line ["Single line."]
+        e.. [
             "S",
             "i",
             "n",
@@ -63,11 +63,11 @@ c_ TransposeTests(unittest.TestCase
         )
 
     ___ test_first_line_longer_than_second_line
-        input_line = [
+        input_line [
             "The fourth line.",
             "The fifth line."
         ]
-        e.. = [
+        e.. [
             "TT",
             "hh",
             "ee",
@@ -91,11 +91,11 @@ c_ TransposeTests(unittest.TestCase
         )
 
     ___ test_second_line_longer_than_first_line
-        input_line = [
+        input_line [
             "The first line.",
             "The second line."
         ]
-        e.. = [
+        e.. [
             "TT",
             "hh",
             "ee",
@@ -119,14 +119,14 @@ c_ TransposeTests(unittest.TestCase
         )
 
     ___ test_square
-        input_line = [
+        input_line [
             "HEART",
             "EMBER",
             "ABUSE",
             "RESIN",
             "TREND"
         ]
-        e.. = [
+        e.. [
             "HEART",
             "EMBER",
             "ABUSE",
@@ -139,13 +139,13 @@ c_ TransposeTests(unittest.TestCase
         )
 
     ___ test_rectangle
-        input_line = [
+        input_line [
             "FRACTURE",
             "OUTLINED",
             "BLOOMING",
             "SEPTETTE"
         ]
-        e.. = [
+        e.. [
             "FOBS",
             "RULE",
             "ATOP",
@@ -161,7 +161,7 @@ c_ TransposeTests(unittest.TestCase
         )
 
     ___ test_triangle
-        input_line = [
+        input_line [
             "T",
             "EE",
             "AAA",
@@ -169,7 +169,7 @@ c_ TransposeTests(unittest.TestCase
             "EEEEE",
             "RRRRRR"
         ]
-        e.. = [
+        e.. [
             "TEASER",
             " EASER",
             "  ASER",
@@ -183,7 +183,7 @@ c_ TransposeTests(unittest.TestCase
         )
 
     ___ test_many_lines
-        input_line = [
+        input_line [
             "Chor. Two households, both alike in dignity,",
             "In fair Verona, where we lay our scene,",
             "From ancient grudge break to new mutiny,",
@@ -199,7 +199,7 @@ c_ TransposeTests(unittest.TestCase
             "The which if you with patient ears attend,",
             "What here shall miss, our toil shall strive to mend."
         ]
-        e.. = [
+        e.. [
             "CIFWFAWDTAWITW",
             "hnrhr hohnhshh",
             "o oeopotedi ea",

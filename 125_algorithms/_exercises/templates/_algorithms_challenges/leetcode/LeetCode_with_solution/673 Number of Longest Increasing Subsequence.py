@@ -21,8 +21,8 @@ ____ t___ _______ L..
 
 c_ LenCnt:
     ___ - , l, c
-        l = l
-        c = c
+        l l
+        c c
 
     ___  -r
         r.. r.. ((l, c
@@ -37,22 +37,22 @@ c_ Solution:
         __ n.. A:
             r.. 0
 
-        n = l..(A)
-        F = [LenCnt(l=1, c=1) ___ _ __ A]
-        mx = LenCnt(l=1, c=1)
+        n l..(A)
+        F [LenCnt(l=1, c=1) ___ _ __ A]
+        mx LenCnt(l=1, c=1)
         ___ i __ r..(1, n
             ___ j __ r..(i
                 __ A[i] > A[j]:
                     __ F[i].l < F[j].l + 1:
-                        F[i].l = F[j].l + 1
-                        F[i].c = F[j].c
+                        F[i].l F[j].l + 1
+                        F[i].c F[j].c
                     ____ F[i].l __ F[j].l + 1:
                         F[i].c += F[j].c
 
             __ F[i].l > mx.l:
                 # mx = F[i]  error, need deep copy
-                mx.l = F[i].l
-                mx.c = F[i].c
+                mx.l F[i].l
+                mx.c F[i].c
             ____ F[i].l __ mx.l:
                 mx.c += F[i].c
 

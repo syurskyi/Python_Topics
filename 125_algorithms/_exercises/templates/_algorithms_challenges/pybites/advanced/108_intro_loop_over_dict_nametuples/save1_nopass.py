@@ -1,8 +1,8 @@
 ____ c.. _______ n..
 
-BeltStats = n..('BeltStats', 'score ninjas')
+BeltStats n..('BeltStats', 'score ninjas')
 
-ninja_belts = {'yellow': BeltStats(50, 11),
+ninja_belts {'yellow': BeltStats(50, 11),
                'orange': BeltStats(100, 7),
                'green': BeltStats(175, 1),
                'blue': BeltStats(250, 5)}
@@ -22,8 +22,8 @@ ___ get_total_points(belts=ninja_belts
        them all over the place!)
 
        Return the total number of points int from the function."""
-    total_score = 0
+    total_score 0
     ___ key, value __ ninja_belts.i..:
-        score = value.score * value.ninjas
+        score value.score * value.ninjas
         total_score += score
     r.. total_score

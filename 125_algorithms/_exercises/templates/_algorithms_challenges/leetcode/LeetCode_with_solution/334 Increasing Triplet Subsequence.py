@@ -15,7 +15,7 @@ return false.
 """
 _______ ___
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -27,13 +27,13 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: bool
         """
-        min1 = ___.maxint
-        min2 = ___.maxint
+        min1 ___.maxint
+        min2 ___.maxint
         ___ e __ nums:
             __ e < min1:
-                min1 = e
+                min1 e
             ____ e != min1 a.. e < min2:
-                min2 = e
+                min2 e
             ____ e > min2:
                 r.. T..
 

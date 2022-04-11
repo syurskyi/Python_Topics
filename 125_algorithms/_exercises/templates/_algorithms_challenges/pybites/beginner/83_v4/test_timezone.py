@@ -5,8 +5,8 @@ ____ Previous.timezone _______ what_time_lives_pybites
 
 ___ test_what_time_lives_pybites_spanish_summertime
     # AUS is 8 hours ahead of ES
-    naive_utc_dt = d__(2018, 4, 27, 22, 55, 0)
-    aus_dt, es_dt = what_time_lives_pybites(naive_utc_dt)
+    naive_utc_dt d__(2018, 4, 27, 22, 55, 0)
+    aus_dt, es_dt what_time_lives_pybites(naive_utc_dt)
 
     ... aus_dt.year __ 2018
     ... aus_dt.month __ 4
@@ -23,8 +23,8 @@ ___ test_what_time_lives_pybites_spanish_summertime
 
 ___ test_what_time_lives_pybites_spanish_wintertime
     # AUS is 10 hours ahead of ES
-    naive_utc_dt = d__(2018, 11, 1, 14, 10, 0)
-    aus_dt, es_dt = what_time_lives_pybites(naive_utc_dt)
+    naive_utc_dt d__(2018, 11, 1, 14, 10, 0)
+    aus_dt, es_dt what_time_lives_pybites(naive_utc_dt)
 
     ... aus_dt.year __ 2018
     ... aus_dt.month __ 11

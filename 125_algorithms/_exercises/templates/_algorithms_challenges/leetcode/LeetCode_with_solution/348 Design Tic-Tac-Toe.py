@@ -49,7 +49,7 @@ toe.move(2, 1, 1); -> Returns 1 (player 1 wins)
 Follow up:
 Could you do better than O(n2) per move() operation?
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TicTacToe(o..
@@ -58,11 +58,11 @@ c_ TicTacToe(o..
         Initialize your data structure here.
         :type n: int
         """
-        n = n
-        rows_count = [0 ___ _ __ x..(n)]
-        cols_count = [0 ___ _ __ x..(n)]
-        diag_count = 0
-        diag_inv_count = 0
+        n n
+        rows_count [0 ___ _ __ x..(n)]
+        cols_count [0 ___ _ __ x..(n)]
+        diag_count 0
+        diag_inv_count 0
 
     ___ move  row, col, player
         """
@@ -82,7 +82,7 @@ c_ TicTacToe(o..
         :type player: int
         :rtype: int
         """
-        delta = -1 __ player __ 1 ____ 1
+        delta -1 __ player __ 1 ____ 1
         cols_count[col] += delta
         rows_count[row] += delta
         __ col __ row:
@@ -91,7 +91,7 @@ c_ TicTacToe(o..
             diag_inv_count += delta
 
         # since winning condition is taking up the entire row or col, the row or col must be consecutive
-        is_win = l.... count: delta * count __ n
+        is_win l.... count: delta * count __ n
         __ any m..(is_win, [rows_count[row], cols_count[col], diag_count, diag_inv_count]:
             r.. player
 

@@ -2,7 +2,7 @@
 Premium Question
 nums[0] <= nums[1] >= nums[2] <= nums[3]...
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -16,9 +16,9 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        i = 0
+        i 0
         ___ elt __ s..(nums
             __ i >_ l..(nums
-                i = 1
-            nums[i] = elt
+                i 1
+            nums[i] elt
             i += 2

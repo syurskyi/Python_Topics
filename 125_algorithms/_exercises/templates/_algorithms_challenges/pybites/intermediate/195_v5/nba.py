@@ -5,22 +5,22 @@ _______ sqlite3
 
 _______ r__
 
-DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
-TMP = P..('/tmp')
-DB = TMP / 'nba.db'
+DATA_URL 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
+TMP P..('/tmp')
+DB TMP / 'nba.db'
 
-Player = n..('Player', ('name year first_year team college active '
+Player n..('Player', ('name year first_year team college active '
                                'games avg_min avg_points'
 
-conn = sqlite3.connect(DB)
-cur = conn.cursor()
+conn sqlite3.connect(DB)
+cur conn.cursor()
 
 
 ___ import_data
     w__ r__.S.. __ session:
-        content = session.g.. DATA_URL).content.d.. 'utf-8')
+        content session.g.. DATA_URL).content.d.. 'utf-8')
 
-    reader = csv.DictReader(content.s.. , delimiter=',')
+    reader csv.DictReader(content.s.. , delimiter=',')
 
     players    # list
     ___ row __ reader:
@@ -52,14 +52,14 @@ ___ player_with_max_points_per_game
     """The player with highest average points per game (don't forget to CAST to
        numeric in your SQL query)"""
     cur.execute('''SELECT name, avg_points FROM players ORDER BY -avg_points LIMIT 0,1;''')
-    result = cur.fetchall()
+    result cur.fetchall()
     r.. result[0][0]
 
 
 ___ number_of_players_from_duke
     """Return the number of players with college == Duke University"""
     cur.execute('''SELECT COUNT(*) FROM players WHERE college='Duke University';''')
-    result = cur.fetchall()
+    result cur.fetchall()
     r.. result[0][0]
 
 
@@ -67,12 +67,12 @@ ___ avg_years_active_players_stanford
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
     cur.execute('''SELECT AVG(active) FROM players WHERE college='Stanford University';''')
-    result = cur.fetchall()
+    result cur.fetchall()
     r.. result[0][0]
 
 
 ___ year_with_most_drafts
     """Return the year with the most drafts, in SQL you can use GROUP BY"""
     cur.execute('''SELECT year, count(*) c FROM players group by year order by -c limit 0,1;''')
-    result = cur.fetchall()
+    result cur.fetchall()
     r.. result[0][0]

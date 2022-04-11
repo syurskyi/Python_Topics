@@ -7,8 +7,8 @@ Created on Feb 9, 2017
 # Definition for singly-linked list.
 c_ ListNode(o..
     ___ - , x, nextNode_ N..
-        val = x
-        next = nextNode
+        val x
+        next nextNode
 
 c_ Solution(o..
     ___ insertionSortList  head
@@ -16,27 +16,27 @@ c_ Solution(o..
         :type head: ListNode
         :rtype: ListNode
         """
-        dummy = ListNode(-1)
+        dummy ListNode(-1)
         w.... head:
-            node = dummy
+            node dummy
             w.... node.next a.. node.next.val < head.val:
-                node = node.next
+                node node.next
             tmp  head.next
-            head.next = node.next
-            node.next = head
-            head = tmp
+            head.next node.next
+            node.next head
+            head tmp
         r.. dummy.next
     
     ___ test
-        testCases = [
+        testCases [
             ListNode(3, ListNode(2, ListNode(5, ListNode(-1)))),
             ListNode(2, ListNode(1, ListNode(-3))),
         ]
         ___ head __ testCases:
-            node = insertionSortList(head)
+            node insertionSortList(head)
             w.... node:
                 print('%s, ' % node.val, end='')
-                node = node.next
+                node node.next
             print()
             print('-='*20+'-')
 

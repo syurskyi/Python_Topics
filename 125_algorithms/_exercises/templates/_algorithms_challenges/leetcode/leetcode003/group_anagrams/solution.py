@@ -24,9 +24,9 @@ c_ Solution(o..
         d    # dict
         res    # list
         ___ s __ strs:
-            k = make_key(s)
+            k make_key(s)
             __ k n.. __ d:
-                d[k] = [s]
+                d[k] [s]
             ____
                 d[k].a..(s)
         ___ k __ d:
@@ -37,5 +37,5 @@ c_ Solution(o..
         r.. ''.j..(s..(s
 
 
-s = Solution()
+s Solution()
 print s.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"])

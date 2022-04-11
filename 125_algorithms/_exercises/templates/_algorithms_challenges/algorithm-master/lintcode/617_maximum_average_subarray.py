@@ -39,33 +39,33 @@ c_ Solution:
         __ n.. nums o. n.. k:
             r.. 0.0
 
-        EPS = 1e-5
+        EPS 1e-5
 
         # ans MUST between `min(nums)` and `max(nums)`
-        left = right = nums[0]
+        left right nums[0]
         ___ num __ nums:
             __ num < left:
-                left = num
+                left num
             __ num > right:
-                right = num
+                right num
 
         # prefix sum
-        s = [0] * (l..(nums) + 1)
+        s [0] * (l..(nums) + 1)
         w.... right - left > EPS:
-            mid = (left + right) / 2.0
+            mid (left + right) / 2.0
 
             __ is_valid(nums, k, mid, s
-                left = mid
+                left mid
             ____
-                right = mid
+                right mid
 
         r.. left
 
     ___ is_valid  nums, k, mid, s
-        s[0] = smin = 0
+        s[0] smin 0
 
         ___ i __ r..(1, l..(nums) + 1
-            s[i] = s[i - 1] + nums[i - 1] - mid
+            s[i] s[i - 1] + nums[i - 1] - mid
 
             __ i < k:
                 _____
@@ -78,6 +78,6 @@ c_ Solution:
                 r.. T..
 
             __ s[i - k + 1] < smin:
-                smin = s[i - k + 1]
+                smin s[i - k + 1]
 
         r.. F..

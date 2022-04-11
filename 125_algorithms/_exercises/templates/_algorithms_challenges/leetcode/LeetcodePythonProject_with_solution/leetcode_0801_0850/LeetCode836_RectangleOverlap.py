@@ -10,8 +10,8 @@ c_ Solution(o..
         :type rec2: List[int]
         :rtype: bool
         """
-        x11, y11, x12, y12 = rec1
-        x21, y21, x22, y22 = rec2
+        x11, y11, x12, y12 rec1
+        x21, y21, x22, y22 rec2
         r.. x11 < x22 a.. x21 < x12 a.. y11 < y22 a.. y21 < y12
     
     ___ isRectangleOverlap_own  rec1, rec2
@@ -20,8 +20,8 @@ c_ Solution(o..
         :type rec2: List[int]
         :rtype: bool
         """
-        x11, y11, x12, y12 = rec1
-        x21, y21, x22, y22 = rec2
+        x11, y11, x12, y12 rec1
+        x21, y21, x22, y22 rec2
         __ (x11 <_ x21 < x12 a.. (y11 <_ y21 < y12 o. y21 <_ y11 < y12 <_ y22 o.\
            (x11 <_ x21 < x12 a.. (y11 < y22 <_ y12 o. y21 <_ y11 < y12 <_ y22 o.\
            (x11 < x22 <_ x12 a.. (y11 <_ y21 < y12 o. y21 <_ y11 < y12 <_ y22 o.\
@@ -34,7 +34,7 @@ c_ Solution(o..
         r.. F..
 
     ___ test
-        testCases = [
+        testCases [
             [
                 [229,-132,833,333],
                 [-244,-577,837,804],
@@ -49,7 +49,7 @@ c_ Solution(o..
             ],
         ]
         ___ rec1, rec2 __ testCases:
-            result = isRectangleOverlap(rec1, rec2)
+            result isRectangleOverlap(rec1, rec2)
             print('result: %s' % result)
             print('-='*30+'-')
 

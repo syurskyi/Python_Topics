@@ -10,11 +10,11 @@ c_ Solution:
 
         F    # dict
         ___ c __ t:
-            F[c] = F.g.. c, 0) + 1
+            F[c] F.g.. c, 0) + 1
 
-        n, cnt = l..(s), l..(F)
-        start = size = INFINITY = f__('inf')
-        left = right = 0
+        n, cnt l..(s), l..(F)
+        start size INFINITY f__('inf')
+        left right 0
 
         w.... right < n:
             __ s[right] __ F:
@@ -31,8 +31,8 @@ c_ Solution:
                         cnt += 1
 
                 __ right - left < size:
-                    size = right - left
-                    start = left
+                    size right - left
+                    start left
 
                 left += 1
 

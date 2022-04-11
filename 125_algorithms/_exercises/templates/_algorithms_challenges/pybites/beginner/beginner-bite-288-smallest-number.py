@@ -25,8 +25,8 @@ ___ minimum_number d.. L.. i.. __ i..
     __ l..(d..) __ 0:
         r.. 0
     reduced  s..(d..)
-    s.. = s..(reduced)
-    r = ""
+    s.. s..(reduced)
+    r ""
     ___ e __ s..:
         r += s..(e)
     r.. i..(r)

@@ -29,8 +29,8 @@ ____ t___ _______ L..
 
 c_ Word:
     ___ - , content, count
-        content = content
-        count = count
+        content content
+        count count
 
     ___ __lt__  other
         __ count __ other.count:
@@ -46,7 +46,7 @@ c_ Solution:
         heap log k
         """
         h    # list
-        counter = d..(i..)
+        counter d..(i..)
         ___ w __ words:
             counter[w] += 1
 
@@ -57,7 +57,7 @@ c_ Solution:
 
         ret    # list
         w.... h:
-            w = heapq.heappop(h).content
+            w heapq.heappop(h).content
             ret.a..(w)
 
         r.. ret[::-1]

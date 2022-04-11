@@ -19,24 +19,24 @@ c_ Solution(o..
         :type target: int
         :rtype: bool
         """
-        left = 0
-        right = l..(nums) - 1
+        left 0
+        right l..(nums) - 1
         w.... left + 1 < right:
-            mid = left + (right - left) / 2
+            mid left + (right - left) / 2
             __ target __ nums[mid]:
                 r.. T..
             # Left part is sorted
             ____ nums[mid] > nums[right]:
                 __ nums[left] <_ target < nums[mid]:
-                    right = mid
+                    right mid
                 ____
-                    left = mid
+                    left mid
             # Right part is sorted
             ____ nums[mid] < nums[right]:
                 __ nums[mid] < target <_ nums[right]:
-                    left = mid
+                    left mid
                 ____
-                    right = mid
+                    right mid
             ____
                 right -_ 1
         __ nums[left] __ target o. nums[right] __ target:

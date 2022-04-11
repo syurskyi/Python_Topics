@@ -13,15 +13,15 @@ Note:
 The array is only modifiable by the update function.
 You may assume the number of calls to update and sumRange function is distributed evenly.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ BinaryIndexTree(o..
     ___ - , nums
         """BIT 0 is dummy root"""
-        n = l..(nums)
-        nums = [0 ___ _ __ x..(n+1)]
-        N = [0 ___ _ __ x..(n+1)]
+        n l..(nums)
+        nums [0 ___ _ __ x..(n+1)]
+        N [0 ___ _ __ x..(n+1)]
         ___ i, v __ e..(nums
             s..(i+1, v)
 
@@ -29,14 +29,14 @@ c_ BinaryIndexTree(o..
         r.. a & -a
 
     ___ s..  i, val
-        diff = val - nums[i]
-        nums[i] = val
+        diff val - nums[i]
+        nums[i] val
         w.... i < l..(N
             N[i] += diff
             i += _lowbit(i)
 
     ___ get  i
-        ret = 0
+        ret 0
         w.... i > 0:
             ret += N[i]
             i -_ _lowbit(i)
@@ -50,7 +50,7 @@ c_ NumArray(o..
         initialize your data structure here.
         :type nums: List[int]
         """
-        bit = BinaryIndexTree(nums)
+        bit BinaryIndexTree(nums)
 
     ___ update  i, val
         """

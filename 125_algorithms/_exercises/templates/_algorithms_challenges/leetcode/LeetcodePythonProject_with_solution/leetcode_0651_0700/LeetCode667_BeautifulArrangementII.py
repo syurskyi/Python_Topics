@@ -10,7 +10,7 @@ c_ Solution(o..
         :type k: int
         :rtype: List[int]
         """
-        res = l..(r..(1, n-k
+        res l..(r..(1, n-k
         ___ i __ r..(k+1
             __ i%2 __ 0:
                 res.a..(n-k+i//2)
@@ -19,7 +19,7 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 3,
                 1,
@@ -32,7 +32,7 @@ c_ Solution(o..
         ___ n, k __ testCases:
             print('n: %s' % n)
             print('k: %s' % k)
-            result = constructArray(n, k)
+            result constructArray(n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

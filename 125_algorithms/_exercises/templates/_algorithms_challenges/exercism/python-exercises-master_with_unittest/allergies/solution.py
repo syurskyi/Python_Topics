@@ -1,6 +1,6 @@
 c_ Allergies(o..
 
-    _allergies = [
+    _allergies [
         "eggs",
         "peanuts",
         "shellfish",
@@ -12,7 +12,7 @@ c_ Allergies(o..
     ]
 
     ___ - , score
-        score = score
+        score score
 
     ___ is_allergic_to  allergy
         r.. score & 1 << _allergies.i.. allergy)

@@ -10,8 +10,8 @@ c_ Solution:
         __ n.. a o. n.. b:
             r.. -1
 
-        ans = b.c.. a)
-        c = b.s..(a)
+        ans b.c.. a)
+        c b.s..(a)
 
         __ c[0] a.. a.e.. c[0]
             ans += 1

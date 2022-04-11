@@ -19,16 +19,16 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        ret = 0
+        ret 0
         ___ i __ r..(r..(32:
-            prefixes = s..(num >> i ___ num __ nums)
+            prefixes s..(num >> i ___ num __ nums)
             ret <<= 1
             # fixing the remaining bit, set the LSB
-            cur = ret + 1
+            cur ret + 1
             ___ p __ prefixes:
                 # a ^ b ^ a = b
                 __ cur ^ p __ prefixes:
-                    ret = cur
+                    ret cur
                     _____  # found one
 
         r.. ret

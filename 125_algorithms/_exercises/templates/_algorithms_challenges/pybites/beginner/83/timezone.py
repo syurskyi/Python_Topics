@@ -1,8 +1,8 @@
 ____ pytz _______ timezone, utc
 ____ d__ _______ d__
 
-AUSTRALIA = timezone('Australia/Sydney')
-SPAIN = timezone('Europe/Madrid')
+AUSTRALIA timezone('Australia/Sydney')
+SPAIN timezone('Europe/Madrid')
 
 
 ___ what_time_lives_pybites( aive_utc_dt
@@ -17,6 +17,6 @@ ___ what_time_lives_pybites( aive_utc_dt
 
 
 
-naive_utc_dt = d__(2018, 4, 27, 22, 55, 0)
+naive_utc_dt d__(2018, 4, 27, 22, 55, 0)
 
 print(what_time_lives_pybites(naive_utc_dt

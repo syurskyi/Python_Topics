@@ -8,8 +8,8 @@ c_ Solution:
         """
         `dp[a]` means the ways to make up amount `a`
         """
-        dp = [0] * (amount + 1)
-        dp[0] = 1  # the ways to make up `0` is just only 1
+        dp [0] * (amount + 1)
+        dp[0] 1  # the ways to make up `0` is just only 1
 
         """
         iterate coin first, and then amount

@@ -14,9 +14,9 @@ c_ NumMatrix:
         __ n.. matrix o. n.. matrix[0]:
             r..
 
-        m, n = l..(matrix), l..(matrix[0])
-        bits = [[0] * (n + 1) ___ _ __ r..(m + 1)]  # bits
-        incr = [[0] * (n + 1) ___ _ __ r..(m + 1)]  # increments
+        m, n l..(matrix), l..(matrix[0])
+        bits [[0] * (n + 1) ___ _ __ r..(m + 1)]  # bits
+        incr [[0] * (n + 1) ___ _ __ r..(m + 1)]  # increments
 
         ___ x __ r..(m
             ___ y __ r..(n
@@ -29,16 +29,16 @@ c_ NumMatrix:
         :type val: int
         :rtype: void
         """
-        i = x + 1
-        j = y + 1
+        i x + 1
+        j y + 1
 
-        delta = val - incr[i][j]
-        incr[i][j] = val
+        delta val - incr[i][j]
+        incr[i][j] val
 
-        m, n = l..(incr), l..(incr[0])
+        m, n l..(incr), l..(incr[0])
 
         w.... i < m:
-            j = y + 1
+            j y + 1
             w.... j < n:
                 bits[i][j] += delta
                 j += (j & -j)
@@ -60,12 +60,12 @@ c_ NumMatrix:
 
 
     ___ s..  x, y
-        res = 0
-        i = x
-        j = y
+        res 0
+        i x
+        j y
 
         w.... i > 0:
-            j = y
+            j y
             w.... j > 0:
                 res += bits[i][j]
                 j -_ (j & -j)

@@ -13,7 +13,7 @@ Given the list [1,[4,[6]]],
 
 By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,4,6].
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 """
@@ -60,15 +60,15 @@ c_ NestedIterator(o..
 
         Possible to compile nl and idx into a tuple.
         """
-        stk = [[nestedList, 0]]  # stack of iterators
+        stk [[nestedList, 0]]  # stack of iterators
 
     ___ next
         """
         :rtype: int
         """
-        nl, idx = stk[-1]
-        nxt = nl[idx].getInteger()
-        stk[-1][1] = idx + 1  # advance the index
+        nl, idx stk[-1]
+        nxt nl[idx].getInteger()
+        stk[-1][1] idx + 1  # advance the index
         r.. nxt
 
     ___ hasNext
@@ -77,14 +77,14 @@ c_ NestedIterator(o..
         :rtype: bool
         """
         w.... stk:
-            nl, idx = stk[-1]
+            nl, idx stk[-1]
             __ idx < l..(nl
-                ni = nl[idx]
+                ni nl[idx]
                 __ ni.isInteger
                     r.. T..
                 ____
-                    stk[-1][1] = idx + 1  # prepare the parent, otherwise dead loop
-                    nxt_nl = ni.getList()
+                    stk[-1][1] idx + 1  # prepare the parent, otherwise dead loop
+                    nxt_nl ni.getList()
                     stk.a..([nxt_nl, 0])
             ____
                 stk.p.. )
@@ -105,18 +105,18 @@ c_ NestedIteratorVerbose(o..
 
         Possible to compile nl and idx into a tuple.
         """
-        nl_stk = [nestedList]
-        idx_stk = [0]
+        nl_stk [nestedList]
+        idx_stk [0]
 
     ___ next
         """
         :rtype: int
         """
         __ hasNext
-            nl = nl_stk[-1]
-            idx = idx_stk[-1]
-            nxt = nl[idx]
-            idx_stk[-1] = idx + 1
+            nl nl_stk[-1]
+            idx idx_stk[-1]
+            nxt nl[idx]
+            idx_stk[-1] idx + 1
             r.. nxt
 
         r.. S..()
@@ -127,16 +127,16 @@ c_ NestedIteratorVerbose(o..
         :rtype: bool
         """
         w.... nl_stk:
-            nl = nl_stk[-1]
-            idx = idx_stk[-1]
+            nl nl_stk[-1]
+            idx idx_stk[-1]
             __ idx < l..(nl
-                ni = nl[idx]
+                ni nl[idx]
                 __ ni.isInteger
                     r.. T..
                 ____
-                    idx_stk[-1] = idx+1
-                    nxt_nl = ni.getList()
-                    nxt_idx = 0
+                    idx_stk[-1] idx+1
+                    nxt_nl ni.getList()
+                    nxt_idx 0
                     nl_stk.a..(nxt_nl)
                     idx_stk.a..(nxt_idx)
             ____

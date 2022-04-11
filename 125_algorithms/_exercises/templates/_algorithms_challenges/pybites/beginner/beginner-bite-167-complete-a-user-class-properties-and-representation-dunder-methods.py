@@ -26,8 +26,8 @@ c_ User:
 
     ___ - , first_name, last_name
         """Constructor, base values"""
-        first_name = first_name
-        last_name = last_name
+        first_name first_name
+        last_name last_name
 
     $
     ___ get_full_name
@@ -46,8 +46,8 @@ c_ User:
            If this is your first property, check out:
            https://pybit.es/property-decorator.html
         """
-        f = first_name[0:1].l..
-        l = last_name[0:7].l..
+        f first_name[0:1].l..
+        l last_name[0:7].l..
         r.. f"{f}{l}"
 
     # TODO 3: you code
@@ -67,7 +67,7 @@ c_ User:
         """
         r.. f"{__class__.__name__}(\"{first_name}\", \"{last_name}\")"
 
-u = ? "bob", "belderbos")
+u ? "bob", "belderbos")
 
 print(u.get_full_name)
 print(u.username)

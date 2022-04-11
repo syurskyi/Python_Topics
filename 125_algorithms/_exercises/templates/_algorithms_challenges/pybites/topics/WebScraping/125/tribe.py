@@ -3,11 +3,11 @@ ____ c.. _______ C..
 ____ bs4 _______ BeautifulSoup __ Soup
 _______ r__
 
-AMAZON = "amazon.com"
+AMAZON "amazon.com"
 # static copy
-TIM_BLOG = ('https://bites-data.s3.us-east-2.amazonaws.com/'
+TIM_BLOG ('https://bites-data.s3.us-east-2.amazonaws.com/'
             'tribe-mentors-books.html')
-MIN_COUNT = 3
+MIN_COUNT 3
 
 
 ___ load_page
@@ -24,11 +24,11 @@ ___ get_top_books(content_ N..
        count is at least MIN_COUNT
     """
     __ content __ N..
-        content = load_page()
+        content load_page()
     # code here ...
     #print('in get_top_books')
-    soup = Soup(content, 'html.parser')
-    book_counter = C..([book.find("span").text.s.. ___ book __ soup.find_all("a") __ book.find("span")])
+    soup Soup(content, 'html.parser')
+    book_counter C..([book.find("span").text.s.. ___ book __ soup.find_all("a") __ book.find("span")])
     r.. [(book, book_counter[book]) ___ book __ book_counter __ book_counter[book] >_ 3]
 
 #books = get_top_books()

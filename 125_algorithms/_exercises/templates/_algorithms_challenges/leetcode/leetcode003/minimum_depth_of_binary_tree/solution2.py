@@ -17,8 +17,8 @@ c_ Solution:
         queue1.a..(root)
         queue2.a..(1)
         w.... queue1:
-            root = queue1.p.. 0)
-            depth = queue2.p.. 0)
+            root queue1.p.. 0)
+            depth queue2.p.. 0)
             __ root.left __ N.. a.. root.right __ N..
                 r.. depth
             __ root.left __ n.. N..

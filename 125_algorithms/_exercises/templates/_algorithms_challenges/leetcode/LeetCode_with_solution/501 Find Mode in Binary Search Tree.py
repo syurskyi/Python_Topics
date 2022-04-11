@@ -34,9 +34,9 @@ implicit stack space incurred due to recursion does not count).
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -50,7 +50,7 @@ c_ Solution:
         :type root: TreeNode
         :rtype: List[int]
         """
-        ret = [[], 0]  # [results, length]
+        ret [[], 0]  # [results, length]
         find_mode(root, [N.., 0], ret, F..)
         find_mode(root, [N.., 0], ret, T..)
         r.. ret[0]
@@ -67,11 +67,11 @@ c_ Solution:
         __ prev[0] __ root.val:
             prev[1] += 1
         ____
-            prev[1] = 1
-        prev[0] = root.val
+            prev[1] 1
+        prev[0] root.val
 
         __ n.. collect:
-            ret[1] = m..(ret[1], prev[1])
+            ret[1] m..(ret[1], prev[1])
         ____
             __ prev[1] __ ret[1]:
                 ret[0].a..(root.val)
@@ -89,12 +89,12 @@ c_ Solution:
         __ n.. root:
             r.. []
 
-        ret = [0, []]
+        ret [0, []]
         find_mode_error(root, root.val, ret)
         r.. ret[1]
 
     ___ find_mode_error  root, target, ret
-        cur = 0
+        cur 0
         __ n.. root:
             r.. cur
 
@@ -103,7 +103,7 @@ c_ Solution:
             cur += find_mode_error(root.left, root.val, ret)
             cur += find_mode_error(root.right, root.val, ret)
             __ cur > ret[0]:
-                ret[0], ret[1] = cur, [target]
+                ret[0], ret[1] cur, [target]
             ____ cur __ ret[0]:
                 ret[1].a..(target)
         ____

@@ -6,7 +6,7 @@ Created on Mar 11, 2017
 
 c_ NumArray(o..
     ___ - , nums
-        dp = [0]
+        dp [0]
         ___ num __ nums:
             dp.a..(dp[-1] + num)
     

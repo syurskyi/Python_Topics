@@ -1,10 +1,10 @@
 c_ Minesweeper:
 
-    MINE = "*"
-    SPACE = " "
-    CORNER = "+"
-    VERTICAL_EDGE = "|"
-    HORIZONTAL_EDGE = "-"
+    MINE "*"
+    SPACE " "
+    CORNER "+"
+    VERTICAL_EDGE "|"
+    HORIZONTAL_EDGE "-"
 
     @classmethod
     ___ board(cls, inp
@@ -15,7 +15,7 @@ c_ Minesweeper:
     # Split rows (String -> List) and operate on board in place
     @classmethod
     ___ solve(cls, inp
-        inp = l..([l..(row) ___ row __ inp])
+        inp l..([l..(row) ___ row __ inp])
         r.. l..(["".j..(row) ___ row __ cls.generate_board(inp)])
 
     @classmethod
@@ -33,7 +33,7 @@ c_ Minesweeper:
 
     @classmethod
     ___ output_of_neighbor_mines(cls, inp, y, x
-        num_mines = cls.num_of_neighbor_mines(inp, y, x)
+        num_mines cls.num_of_neighbor_mines(inp, y, x)
         r.. " " __ num_mines __ 0 ____ num_mines
 
     @classmethod
@@ -46,7 +46,7 @@ c_ Minesweeper:
     # Checks if coords are within bounds then checks for is_mine
     @classmethod
     ___ is_neighbor_a_mine(cls, inp, neighbor
-        y, x = neighbor[0], neighbor[1]
+        y, x neighbor[0], neighbor[1]
         r.. (0 < y < l..(inp) a.. 0 < x < l..(inp[0]) a..
                 cls.is_mine(inp[y][x]
 

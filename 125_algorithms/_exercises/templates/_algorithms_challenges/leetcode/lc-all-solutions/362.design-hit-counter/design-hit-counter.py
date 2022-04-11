@@ -4,7 +4,7 @@ c_ HitCounter(o..
     """
     Initialize your data structure here.
     """
-    q = [(0, 0)] * 300
+    q [(0, 0)] * 300
 
   ___ hit  timestamp
     """
@@ -13,12 +13,12 @@ c_ HitCounter(o..
     :type timestamp: int
     :rtype: void
     """
-    idx = timestamp % 300
-    t__, hit = q[idx]
+    idx timestamp % 300
+    t__, hit q[idx]
     __ t__ != timestamp:
-      q[idx] = timestamp, 1
+      q[idx] timestamp, 1
     ____
-      q[idx] = t__, hit + 1
+      q[idx] t__, hit + 1
 
   ___ getHits  timestamp
     """
@@ -27,9 +27,9 @@ c_ HitCounter(o..
     :type timestamp: int
     :rtype: int
     """
-    ans = 0
+    ans 0
     ___ i __ r..(0, l..(q:
-      t__, hit = q[i]
+      t__, hit q[i]
       __ timestamp - t__ < 300:
         ans += hit
     r.. ans

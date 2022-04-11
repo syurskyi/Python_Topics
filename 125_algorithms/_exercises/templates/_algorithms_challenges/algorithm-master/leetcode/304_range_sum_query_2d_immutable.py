@@ -13,12 +13,12 @@ c_ NumMatrix:
         __ n.. matrix o. n.. matrix[0]:
             r..
 
-        m, n = l..(matrix), l..(matrix[0])
-        prefix_sum = [[0] * (n + 1) ___ _ __ r..(m + 1)]
+        m, n l..(matrix), l..(matrix[0])
+        prefix_sum [[0] * (n + 1) ___ _ __ r..(m + 1)]
 
         ___ x __ r..(1, m + 1
             ___ y __ r..(1, n + 1
-                prefix_sum[x][y] = s..((
+                prefix_sum[x][y] s..((
                     prefix_sum[x - 1][y],
                     prefix_sum[x][y - 1],
                     - prefix_sum[x - 1][y - 1],

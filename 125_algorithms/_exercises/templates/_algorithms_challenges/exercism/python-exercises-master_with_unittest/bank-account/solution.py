@@ -3,9 +3,9 @@ _______ threading
 
 c_ BankAccount(o..
     ___ -
-        is_open = F..
-        balance = 0
-        lock = threading.Lock()
+        is_open F..
+        balance 0
+        lock threading.Lock()
 
     ___ get_balance
         w__ lock:
@@ -15,7 +15,7 @@ c_ BankAccount(o..
                 r.. V...
 
     ___ open
-        is_open = T..
+        is_open T..
 
     ___ deposit  amount
         w__ lock:
@@ -32,4 +32,4 @@ c_ BankAccount(o..
                 r.. V...
 
     ___ close
-        is_open = F..
+        is_open F..

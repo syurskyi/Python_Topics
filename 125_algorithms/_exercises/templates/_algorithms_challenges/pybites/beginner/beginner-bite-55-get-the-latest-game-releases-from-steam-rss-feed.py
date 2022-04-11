@@ -10,14 +10,14 @@ _______ j__
 
 
 # cached version to have predictable results for testing
-FEED_URL = "http://bit.ly/2IkFe9B"
+FEED_URL "http://bit.ly/2IkFe9B"
 
-Game = n..('Game', 'title link')
+Game n..('Game', 'title link')
 
 
 ___ get_games
     """Parses Steam's RSS feed and returns a list of Game namedtuples"""
-    d = feedparser.p..(FEED_URL)
+    d feedparser.p..(FEED_URL)
     print(d)
 
 

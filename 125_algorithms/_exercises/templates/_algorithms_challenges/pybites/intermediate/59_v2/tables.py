@@ -3,7 +3,7 @@ c_ MultiplicationTable:
     ___ - , length
         """Create a 2D self._table of (x, y) coordinates and
            their calculations (form of caching)"""
-        _length = length
+        _length length
         _table =[[s..(x * y) ___ y __ r..(1,length + 1)] ___ x __ r..(1,length + 1)]
 
     ___ __len__
@@ -14,7 +14,7 @@ c_ MultiplicationTable:
     ___ -s
         """Returns a string representation of the table"""
 
-        s = ''
+        s ''
 
         ___ row __ _table:
             s += (' | '.j..(row + '\n'

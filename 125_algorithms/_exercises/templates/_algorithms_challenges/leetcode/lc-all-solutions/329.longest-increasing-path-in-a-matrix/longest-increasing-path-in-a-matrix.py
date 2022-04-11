@@ -1,4 +1,4 @@
-directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
+directions [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
 
 c_ Solution(o..
@@ -12,26 +12,26 @@ c_ Solution(o..
       __ (i, j) __ visited:
         r.. visited[(i, j)]
 
-      ret = 0
+      ret 0
       ___ di, dj __ directions:
-        p, q = i + di, j + dj
+        p, q i + di, j + dj
         __ p < 0 o. q < 0 o. p >_ l..(matrix) o. q >_ l..(matrix[0]
           _____
         __ (p, q) n.. __ cache a.. matrix[p][q] > matrix[i][j]:
           cache.add((p, q
-          r = dfs(matrix, p, q, visited, cache)
-          ret = m..(ret, r)
+          r dfs(matrix, p, q, visited, cache)
+          ret m..(ret, r)
           cache.discard((p, q
 
-      visited[(i, j)] = ret + 1
+      visited[(i, j)] ret + 1
       r.. ret + 1
 
     visited    # dict
-    cache = s..()
-    ans = 0
+    cache s..()
+    ans 0
     ___ i __ r..(0, l..(matrix:
       ___ j __ r..(0, l..(matrix[0]:
         cache.add((i, j
-        ans = m..(ans, dfs(matrix, i, j, visited, cache
+        ans m..(ans, dfs(matrix, i, j, visited, cache
         cache.discard((i, j
     r.. ans

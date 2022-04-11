@@ -12,14 +12,14 @@ Note:
 The relative order inside both the even and odd groups should remain as it was in the input.
 The first node is considered odd, the second node even and so on ...
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 # Definition for singly-linked list.
 c_ ListNode(o..
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 c_ Solution(o..
@@ -31,23 +31,23 @@ c_ Solution(o..
         __ n.. head:
             r..
 
-        ptr = head  # end of odd position
-        pre = head  # don't move the first
-        cnt = 1
+        ptr head  # end of odd position
+        pre head  # don't move the first
+        cnt 1
         w.... pre a.. pre.next:
-            cur = pre.next
+            cur pre.next
             cnt += 1
             __ cnt % 2 __ 0:
-                pre = pre.next
+                pre pre.next
             ____
-                start = ptr.next
-                nxt = cur.next
+                start ptr.next
+                nxt cur.next
 
-                ptr.next = cur
-                cur.next = start
-                pre.next = nxt
+                ptr.next cur
+                cur.next start
+                pre.next nxt
 
-                ptr = ptr.next
+                ptr ptr.next
 
         r.. head
 
@@ -60,22 +60,22 @@ c_ Solution(o..
         __ n.. head:
             r..
 
-        ptr = head  # end of first parity
-        parity = ptr.val % 2
+        ptr head  # end of first parity
+        parity ptr.val % 2
 
-        pre = head
+        pre head
         w.... pre a.. pre.next:
-            cur = pre.next
+            cur pre.next
             __ cur.val % 2 != parity:
-                pre = pre.next
+                pre pre.next
             ____
-                start = ptr.next
-                nxt = cur.next
+                start ptr.next
+                nxt cur.next
 
-                ptr.next = cur
-                cur.next = start
-                pre.next = nxt
+                ptr.next cur
+                cur.next start
+                pre.next nxt
 
-                ptr = ptr.next
+                ptr ptr.next
 
         r.. head

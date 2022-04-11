@@ -8,16 +8,16 @@ c_ Solution(o..
     d    # dict
     res    # list
     ans    # list
-    buckets = [[] ___ _ __ r..(l..(nums) + 1)]
+    buckets [[] ___ _ __ r..(l..(nums) + 1)]
 
     ___ num __ nums:
-      d[num] = d.g.. num, 0) + 1
+      d[num] d.g.. num, 0) + 1
 
     ___ key __ d:
       res.a..((d[key], key
 
     ___ t __ res:
-      freq, key = t
+      freq, key t
       buckets[freq].a..(key)
 
     buckets.r..

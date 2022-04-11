@@ -9,7 +9,7 @@ Given numerator = 1, denominator = 2, return "0.5".
 Given numerator = 2, denominator = 1, return "2".
 Given numerator = 2, denominator = 3, return "0.(6)".
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -20,21 +20,21 @@ c_ Solution:
         :type denominator: int
         :rtype: str
         """
-        sign = 1 __ numerator*denominator >_ 0 ____ -1
-        numerator = a..(numerator)
-        denominator = a..(denominator)
+        sign 1 __ numerator*denominator >_ 0 ____ -1
+        numerator a..(numerator)
+        denominator a..(denominator)
 
-        int_part = numerator/denominator
-        frac_part = numerator-int_part*denominator
+        int_part numerator/denominator
+        frac_part numerator-int_part*denominator
 
         __ frac_part:
-            decimal_part = frac(numerator-int_part*denominator, denominator)
-            ret = s..(int_part)+"."+decimal_part
+            decimal_part frac(numerator-int_part*denominator, denominator)
+            ret s..(int_part)+"."+decimal_part
         ____
-            ret = s..(int_part)
+            ret s..(int_part)
 
         __ sign < 0:
-            ret = "-" + ret
+            ret "-" + ret
 
         r.. ret
 
@@ -44,19 +44,19 @@ c_ Solution:
         """
         ret    # list
         d    # dict
-        i = 0
+        i 0
 
         w.... num:
             num *= 10
-            q = num/deno
-            r = num%deno
+            q num/deno
+            r num%deno
             __ (q, r) __ d:
                 ret.a..(")")
                 ret.insert(d[(q, r)], "(")
                 r.. "".j..(ret)
 
             ret.a..(s..(q
-            d[(q, r)] = i
+            d[(q, r)] i
             i += 1
             num -_ q*deno
 
@@ -70,13 +70,13 @@ c_ Solution_error:
         :type denominator: int
         :rtype: str
         """
-        int_part = numerator/denominator
-        fract_part = numerator-int_part*denominator
+        int_part numerator/denominator
+        fract_part numerator-int_part*denominator
         __ fract_part:
-            decimal_part = frac(numerator-int_part*denominator, denominator)
-            ret = s..(int_part)+"."+decimal_part
+            decimal_part frac(numerator-int_part*denominator, denominator)
+            ret s..(int_part)+"."+decimal_part
         ____
-            ret = s..(int_part)
+            ret s..(int_part)
 
         r.. ret
 
@@ -86,15 +86,15 @@ c_ Solution_error:
         """
         ret    # list
         d    # dict
-        i = 0
+        i 0
 
         w.... num:
-            l = 0  # the number of added 0
+            l 0  # the number of added 0
             w.... num < deno:
                 num *= 10
                 l += 1
 
-            r = num/deno
+            r num/deno
             __ r __ d:
                 ret.a..(")")
                 ret.insert(d[r]-(l-1), "(")
@@ -105,7 +105,7 @@ c_ Solution_error:
                 i += 1
 
             ret.a..(s..(r
-            d[r] = i
+            d[r] i
             i += 1
             num -_ r*deno
 

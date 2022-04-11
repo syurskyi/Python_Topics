@@ -18,7 +18,7 @@ Given target = 5, return true.
 
 Given target = 20, return false.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -32,11 +32,11 @@ c_ Solution(o..
         :type target: int
         :rtype: bool
         """
-        m = l..(mat)
-        n = l..(mat[0])
+        m l..(mat)
+        n l..(mat[0])
 
-        i = 0
-        j = n-1
+        i 0
+        j n-1
         w.... i < m a.. 0 <_ j:
             __ mat[i][j] __ target:
                 r.. T..
@@ -62,33 +62,33 @@ c_ SolutionBinSearch(o..
         :type target: int
         :rtype: bool
         """
-        m = l..(mat)
-        n = l..(mat[0])
+        m l..(mat)
+        n l..(mat[0])
 
-        col = [mat[i][0] ___ i __ x..(m)]
-        row_by_first = bin_search(col, target)
+        col [mat[i][0] ___ i __ x..(m)]
+        row_by_first bin_search(col, target)
 
-        col = [mat[i][-1] ___ i __ x..(m)]
-        row_by_last = bin_search(col, target, F..)
+        col [mat[i][-1] ___ i __ x..(m)]
+        row_by_last bin_search(col, target, F..)
 
         ___ i __ r..(row_by_first, row_by_last-1, -1
-            col = bin_search(mat[i], target)
+            col bin_search(mat[i], target)
             __ mat[i][col] __ target:
                 r.. T..
 
         r.. F..
 
     ___ bin_search  A, t, lower=T..
-        lo = 0
-        hi = l..(A)
+        lo 0
+        hi l..(A)
         w.... lo < hi:
-            mid = (lo+hi)/2
+            mid (lo+hi)/2
             __ A[mid] __ t:
                 r.. mid
             ____ A[mid] < t:
-                lo = mid+1
+                lo mid+1
             ____
-                hi = mid
+                hi mid
 
         __ lower:
             r.. lo-1

@@ -1,4 +1,4 @@
-amount_value = i..(input
+amount_value i..(input
 
 generator_list    # list
 results    # list
@@ -9,10 +9,10 @@ ___ generate(num, counter
         r.. counter
     generator_list.a..(num)
     num **= 2
-    num = (num//100)%10000
+    num (num//100)%10000
     r.. generate(num, counter+1)
 
-values = l.. m..(i.., input().s..()))
+values l.. m..(i.., input().s..()))
 
 ___ i __ r..(amount_value
     results.a..(generate(values[i],0

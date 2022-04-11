@@ -22,10 +22,10 @@ c_ Solution:
             r..
 
         __ root.left:
-            root.left.next = root.right
+            root.left.next root.right
 
         __ root.right a.. root.next:
-            root.right.next = root.next.left
+            root.right.next root.next.left
 
         # leave to None if root.right: root.right.next = None
 
@@ -45,20 +45,20 @@ c_ Solution:
         __ n.. root:
             r..
 
-        head = root
-        nxt = N..
+        head root
+        nxt N..
 
         # this loop only for find left
         w.... head:
-            nxt = head
-            head = nxt.left
+            nxt head
+            head nxt.left
 
             # this loop find for every next, do level move
             w.... nxt:
                 __ nxt.left:
-                    nxt.left.next = nxt.right
+                    nxt.left.next nxt.right
 
                 __ nxt.right a.. nxt.next:
-                    nxt.right.next = nxt.next.left
+                    nxt.right.next nxt.next.left
 
-                nxt = nxt.next
+                nxt nxt.next

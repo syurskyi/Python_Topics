@@ -34,13 +34,13 @@ c_ Solution:
         :rtype: bool
         """
         stack    # list  # List[Interval]
-        mini = f__('Inf')
+        mini f__('Inf')
         ___ v __ nums:
             w.... stack a.. stack[-1][1] <_ v:  # error when < (e.g. [-2, 1, 1])
                 stack.p.. )
             __ stack a.. stack[-1][0] < v:
                 r.. T..
-            mini = m..(mini, v)
+            mini m..(mini, v)
             stack.a..((mini, v
 
         r.. F..
@@ -55,12 +55,12 @@ c_ Solution:
         :rtype: bool
         """
         ___ i __ r..(l..(nums:
-            maxa = nums[i]
+            maxa nums[i]
             ___ j __ r..(i + 1, l..(nums:
                 __ nums[j] > nums[i]:
                     __ nums[j] < maxa:
                         r.. T..
-                    maxa = m..(maxa, nums[j])
+                    maxa m..(maxa, nums[j])
 
         r.. F..
 

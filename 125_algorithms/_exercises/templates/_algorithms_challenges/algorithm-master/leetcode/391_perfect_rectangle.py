@@ -10,15 +10,15 @@ c_ Solution:
         __ n.. recs:
             r.. F..
 
-        left = bottom = f__('inf')
-        right = top = f__('-inf')
-        points = c...d..(i..)
+        left bottom f__('inf')
+        right top f__('-inf')
+        points c...d..(i..)
 
         ___ l, b, r, t __ recs:
-            left = m..(left, l)
-            bottom = m..(bottom, b)
-            right = m..(right, r)
-            top = m..(top, t)
+            left m..(left, l)
+            bottom m..(bottom, b)
+            right m..(right, r)
+            top m..(top, t)
 
             ___ x, y, val __ (
                 (l, b, 1),

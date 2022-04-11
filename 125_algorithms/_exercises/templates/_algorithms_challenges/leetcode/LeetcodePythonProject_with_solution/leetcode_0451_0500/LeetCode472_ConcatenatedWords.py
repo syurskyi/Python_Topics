@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         res    # list
         words.s..(key=l..)
-        hashset = s..()
+        hashset s..()
         ___ word __ words:
             __ helper(hashset, word
                 res.a..(word)
@@ -21,13 +21,13 @@ c_ Solution(o..
     
     ___ helper  hashset, word1
         __ n.. hashset: r.. F..
-        dp = [F..]*(l..(word1)+1)
-        dp[0] = T..
+        dp [F..]*(l..(word1)+1)
+        dp[0] T..
         ___ i __ r..(1, l..(word1)+1
             ___ j __ r..(i
                 __ dp[j]:
                     __ word1[j:i] __ hashset:
-                        dp[i] = T..
+                        dp[i] T..
                         _____
         r.. dp[-1]
     
@@ -38,7 +38,7 @@ c_ Solution(o..
         ]
         ___ words __ testCases:
             print('words: %s' % words)
-            result = findAllConcatenatedWordsInADict(words)
+            result findAllConcatenatedWordsInADict(words)
             print('result: %s' % result)
             print('-='*20+'-')
 

@@ -22,9 +22,9 @@ ____ t___ _______ L..
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -36,10 +36,10 @@ c_ Solution:
         __ n.. root:
             r.. ret
 
-        q = [root]
+        q [root]
         w.... q:
-            n = l..(q)
-            avg = s.. m..(l.... node: node.val, q / n
+            n l..(q)
+            avg s.. m..(l.... node: node.val, q / n
             ret.a..(avg)
             cur_q    # list
             ___ node __ q:
@@ -48,6 +48,6 @@ c_ Solution:
                 __ node.right:
                     cur_q.a..(node.right)
 
-            q = cur_q
+            q cur_q
 
         r.. ret

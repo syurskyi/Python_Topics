@@ -30,8 +30,8 @@ c_ Solution:
         :type k: int
         :rtype: bool
         """
-        h = {0: 0}  # [:l], half open, factor in trival case
-        s = 0
+        h {0: 0}  # [:l], half open, factor in trival case
+        s 0
         ___ l __ r..(1, l..(nums) + 1
             s += nums[l-1]
             __ k != 0:  # edge case
@@ -41,7 +41,7 @@ c_ Solution:
                     r.. T..
             ____
                 # only keep the lowest
-                h[s] = l
+                h[s] l
 
         r.. F..
 

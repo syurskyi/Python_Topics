@@ -4,16 +4,16 @@ c_ Solution(o..
         :type board: List[List[int]]
         :rtype: int
         """
-        n = l..(board)
+        n l..(board)
         newboard    # list
         ___ i __ r..(n
             newboard.e.. board[n-i-1] __ i % 2 __ 0 ____ board[n-i-1][::-1])
-        board = newboard
-        n = l..(board)
-        queue = [(0, 0)]
-        visited = s..([0])
+        board newboard
+        n l..(board)
+        queue [(0, 0)]
+        visited s..([0])
         w.... queue:
-            i, d = queue.p.. 0)
+            i, d queue.p.. 0)
             ___ j __ r..(i+1, i+7
                 __ j __ n-1:
                     r.. d+1
@@ -31,7 +31,7 @@ c_ Solution(o..
         r.. -1
 
     ___ test
-        testCases = [
+        testCases [
             [[-1, 1, 2,-1],
              [2, 13,15,-1],
              [-1,10,-1,-1],
@@ -64,7 +64,7 @@ c_ Solution(o..
              [-1,15,-1,-1,-1,-1]],
         ]
         ___ board __ testCases:
-            res = snakesAndLadders(board)
+            res snakesAndLadders(board)
             print('res: %s' % res)
             print('-='*30+'-')
 

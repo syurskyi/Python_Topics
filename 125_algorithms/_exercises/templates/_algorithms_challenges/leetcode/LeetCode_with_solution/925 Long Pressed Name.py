@@ -41,8 +41,8 @@ c_ Solution:
         """
         two pointers
         """
-        m, n = l..(name), l..(typed)
-        i, j = 0, 0
+        m, n l..(name), l..(typed)
+        i, j 0, 0
         w.... i < m a.. j < n:
             __ name[i] __ typed[j]:
                 i += 1

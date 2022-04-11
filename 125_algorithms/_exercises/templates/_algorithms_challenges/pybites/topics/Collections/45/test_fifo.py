@@ -2,9 +2,9 @@ _______ p__
 
 ____ fifo _______ my_queue
 
-q1 = my_queue(5)
-q2 = my_queue(3)
-q3 = my_queue(7)
+q1 my_queue(5)
+q2 my_queue(3)
+q3 my_queue(7)
 
 
 ?p__.m__.p.('fn_in,expected_result', [

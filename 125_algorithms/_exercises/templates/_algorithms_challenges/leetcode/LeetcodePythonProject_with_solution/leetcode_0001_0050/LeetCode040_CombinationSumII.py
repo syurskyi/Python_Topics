@@ -45,11 +45,11 @@ c_ Solution(o..
         __ target __ 0:
             res.a..(l..(curr
             r..
-        prev = -1
+        prev -1
         ___ i __ r..(ind, l..(nums:
             __ nums[i] > target:
                 r..
             __ prev != nums[i]:
                 curr.a..(nums[i])
                 helper(nums, target-nums[i], i+1, curr, res)
-                prev = curr.p.. )
+                prev curr.p.. )

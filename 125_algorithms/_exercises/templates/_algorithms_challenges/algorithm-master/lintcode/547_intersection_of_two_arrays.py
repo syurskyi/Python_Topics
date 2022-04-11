@@ -10,8 +10,8 @@ c_ Solution:
         __ n.. a o. n.. b:
             r.. ans
 
-        s = s..(a)
-        t = s..(b)
+        s s..(a)
+        t s..(b)
 
         ___ x __ s:
             __ x __ t:
@@ -35,8 +35,8 @@ c_ Solution:
         a.s..()
         b.s..()
 
-        m, n = l..(a), l..(b)
-        i = j = 0
+        m, n l..(a), l..(b)
+        i j 0
 
         w.... i < m a.. j < n:
             __ a[i] __ b[j]:

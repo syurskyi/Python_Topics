@@ -52,11 +52,11 @@ c_ MyCalendarThree:
     ___ book  start: i.., end: i..) __ i..:
         b__.i.. (lst, (start, "start"
         b__.i.. (lst, (end, "end"
-        ret = 0
-        count = 0
+        ret 0
+        count 0
         ___ _, flag __ lst:
             count += 1 __ flag __ "start" ____ -1
-            ret = m..(ret, count)
+            ret m..(ret, count)
 
         r.. ret
 

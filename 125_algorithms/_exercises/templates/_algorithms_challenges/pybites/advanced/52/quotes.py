@@ -1,8 +1,8 @@
 ____ flask _______ Flask, jsonify, abort, request
 
-app = Flask(__name__)
+app Flask(__name__)
 
-quotes = [
+quotes [
     {
         "id": 1,
         "quote": "I'm gonna make him an offer he can't refuse.",
@@ -57,7 +57,7 @@ ___ get_quotes
 ___ get_quote(qid
 
         
-    quote = _get_quote(qid)
+    quote _get_quote(qid)
     __ n.. quote:
         r.. "Quote not found",404
 
@@ -67,22 +67,22 @@ ___ get_quote(qid
 @app.route('/api/quotes', methods= 'POST' )
 ___ create_quote
 
-    data = request.j__
+    data request.j__
 
     __ n.. (('quote' __ data) a..  ('movie' __ data:
         r.. "Incomplete data",400
     
 
-    exists = _quote_exists(data)
+    exists _quote_exists(data)
 
     __ exists:
         r.. "Already exists",400
     
-    _id = _get_max_id() + 1
+    _id _get_max_id() + 1
 
 
 
-    quote = {'id': _id,'quote': data 'quote' ,'movie': data 'movie' }
+    quote {'id': _id,'quote': data 'quote' ,'movie': data 'movie' }
 
     quotes.a..(quote)
 
@@ -100,11 +100,11 @@ ___ update_quote(qid
     
 
 
-    data = request.j__
+    data request.j__
     print(data)
     __ n.. (('quote' __ data) o.  ('movie' __ data:
         r.. "Incomplete data",400
-    quote = _get_quote(qid)
+    quote _get_quote(qid)
 
     __ n.. quote:
         r.. "Quote not found",404
@@ -120,7 +120,7 @@ ___ update_quote(qid
 @app.route('/api/quotes/<int:qid>', methods= 'DELETE' )
 ___ delete_quote(qid
 
-    quote = _get_quote(qid)
+    quote _get_quote(qid)
 
     __ n.. quote:
         r.. "Quote not found",404

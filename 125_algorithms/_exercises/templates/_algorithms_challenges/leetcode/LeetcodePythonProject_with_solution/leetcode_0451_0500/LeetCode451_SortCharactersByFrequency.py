@@ -8,19 +8,19 @@ c_ Solution(o..
     ___ frequencySort  s
         hashmap    # dict
         ___ c __ s:
-            hashmap[c] = hashmap.g.. c, 0)+1
-        bucket = [[] ___ _ __ r..(l..(s)+1)]
+            hashmap[c] hashmap.g.. c, 0)+1
+        bucket [[] ___ _ __ r..(l..(s)+1)]
         ___ c, count __ hashmap.i..:
             bucket[count].a..(c)
-        result = ''
+        result ''
         ___ i __ r..(l..(bucket)-1, -1, -1
             w.... bucket[i]:
-                c = bucket[i].p.. )
+                c bucket[i].p.. )
                 result += c*(i)
         r.. result
     
     ___ test
-        testCases = [
+        testCases [
             'aaaa',
             'tree',
             'cccaaa',
@@ -28,7 +28,7 @@ c_ Solution(o..
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = frequencySort(s)
+            result frequencySort(s)
             print('result: %s' % result)
             print('-='*20+'-')
 

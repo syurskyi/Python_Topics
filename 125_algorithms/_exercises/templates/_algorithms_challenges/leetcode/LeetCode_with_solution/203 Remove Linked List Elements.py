@@ -5,13 +5,13 @@ Example
 Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
 Return: 1 --> 2 --> 3 --> 4 --> 5
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 c_ Solution:
@@ -22,16 +22,16 @@ c_ Solution:
         :param val:
         :rtype: ListNode
         """
-        dummy = ListNode(0)
-        dummy.next = head
+        dummy ListNode(0)
+        dummy.next head
 
-        pre = dummy
+        pre dummy
         w.... pre.next:
-            cur = pre.next
+            cur pre.next
             __ cur.val __ val:
-                pre.next = cur.next
+                pre.next cur.next
                 _____
 
-            pre = pre.next
+            pre pre.next
 
         r.. dummy.next

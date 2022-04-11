@@ -10,13 +10,13 @@ c_ Solution(o..
     :type head: ListNode
     :rtype: ListNode
     """
-    slow = fast = finder = head
+    slow fast finder head
     w.... fast a.. fast.next:
-      slow = slow.next
-      fast = fast.next.next
+      slow slow.next
+      fast fast.next.next
       __ slow __ fast:
         w.... finder != slow:
-          finder = finder.next
-          slow = slow.next
+          finder finder.next
+          slow slow.next
         r.. finder
     r.. N..

@@ -4,7 +4,7 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: bool
         """
-        increase = N..
+        increase N..
         ___ i, num __ e..(A
             __ i > 0:
                 __ num __ A[i-1]:
@@ -12,9 +12,9 @@ c_ Solution(o..
                 __ num > A[i-1]:
                     __ increase __ F..:
                         r.. F..
-                    increase = T..
+                    increase T..
                 __ num < A[i-1]:
                     __ increase __ T..
                         r.. F..
-                    increase = F..
+                    increase F..
         r.. T..

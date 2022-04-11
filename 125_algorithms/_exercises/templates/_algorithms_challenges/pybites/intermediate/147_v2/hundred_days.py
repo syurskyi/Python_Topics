@@ -3,7 +3,7 @@ ____ dateutil.rrule _______ *
 
 _______ dateutil
 
-TODAY = date y.._2018,  m.._11,  d.._29)
+TODAY date y.._2018,  m.._11,  d.._29)
 
 
 ___ get_hundred_weekdays(start_date=TODAY
@@ -12,7 +12,7 @@ ___ get_hundred_weekdays(start_date=TODAY
        skipping Saturdays and Sundays"""
     
 
-    data = rrule(DAILY,count=100,byweekday=r..(0,5),dtstart=start_date)
+    data rrule(DAILY,count=100,byweekday=r..(0,5),dtstart=start_date)
 
     r.. [value.date() ___ value __ data]
 

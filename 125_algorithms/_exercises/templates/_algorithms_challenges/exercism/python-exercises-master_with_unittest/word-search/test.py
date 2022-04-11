@@ -7,7 +7,7 @@ c_ WordSearchTests(unittest.TestCase
 
     @classmethod
     ___ setUpClass
-        puzzle = ('jefblpepre\n'
+        puzzle ('jefblpepre\n'
                   'camdcimgtc\n'
                   'oivokprjsm\n'
                   'pbwasqroua\n'
@@ -17,7 +17,7 @@ c_ WordSearchTests(unittest.TestCase
                   'alxhpburyi\n'
                   'jalaycalmp\n'
                   'clojurermt')
-        example = WordSearch(puzzle)
+        example WordSearch(puzzle)
 
     ___ test_horizontal_words_left_to_right
         assertEqual(
@@ -71,7 +71,7 @@ c_ WordSearchTests(unittest.TestCase
         assertIsNone(example.s..('haskell'
 
     ___ test_search_differently_sized_puzzles
-        puzzle = ('qwertyuiopz\n'
+        puzzle ('qwertyuiopz\n'
                   'luamsicrexe\n'
                   'abcdefghijk')
         assertEqual(

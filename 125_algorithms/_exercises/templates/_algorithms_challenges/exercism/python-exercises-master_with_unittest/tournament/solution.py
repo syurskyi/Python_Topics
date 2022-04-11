@@ -1,6 +1,6 @@
 ____ c.. _______ d..
 
-RESULTS = d..(win=0, draw=1, loss=2)
+RESULTS d..(win=0, draw=1, loss=2)
 
 
 ___ invert_result(result
@@ -12,9 +12,9 @@ ___ invert_result(result
 
 
 ___ parse_game(game_line
-    game = game_line.s..(';')
+    game game_line.s..(';')
     __ l..(game) __ 3 a.. game[2] __ RESULTS:
-        result = RESULTS[game[2]]
+        result RESULTS[game[2]]
         r.. (game[0], result), (game[1], invert_result(result
     r.. []
 
@@ -28,7 +28,7 @@ ___ format_table(results
 
     ___ team, games __ s..(
             results.i.., key=l.... g: (-calculate_points(g[1]), g[0]:
-        team_fmt = '{0:30} | {1:2} | {3:2} | {4:2} | {5:2} | {2:2}'
+        team_fmt '{0:30} | {1:2} | {3:2} | {4:2} | {5:2} | {2:2}'
         table.a..(
             team_fmt.f..(team, s..(games), calculate_points(games), *games
 
@@ -36,7 +36,7 @@ ___ format_table(results
 
 
 ___ tally(data
-    table = d..(l....: [0, 0, 0])
+    table d..(l....: [0, 0, 0])
 
     ___ line __ data.s..('\n'
         ___ team, result __ parse_game(line

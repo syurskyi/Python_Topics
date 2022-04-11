@@ -21,9 +21,9 @@ c_ Solution:
     # @param root, a tree node
     # @return a boolean
     ___ isValidBST  root
-        maxsize = 9223372036854775806  # Assumed sys.maxsize on 64-bit platform
-        INT_MIN = -maxsize - 1
-        INT_MAX = maxsize
+        maxsize 9223372036854775806  # Assumed sys.maxsize on 64-bit platform
+        INT_MIN -maxsize - 1
+        INT_MAX maxsize
         r.. is_valid_bst_aux(root, INT_MIN, INT_MAX)
 
     ___ is_valid_bst_aux  root, min_val, max_val
@@ -34,6 +34,6 @@ c_ Solution:
             r.. F..
         # If non-distinct values are allowed, + 1 and - 1 to root.val can be
         # removed
-        is_left_bst = is_valid_bst_aux(root.left, min_val, root.val - 1)
-        is_right_bst = is_valid_bst_aux(root.right, root.val + 1, max_val)
+        is_left_bst is_valid_bst_aux(root.left, min_val, root.val - 1)
+        is_right_bst is_valid_bst_aux(root.right, root.val + 1, max_val)
         r.. is_left_bst a.. is_right_bst

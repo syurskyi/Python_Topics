@@ -1,4 +1,4 @@
-___ convert(number: i.., base: i.. = 2) __ s..:
+___ convert(number: i.., base: i.. 2) __ s..:
     """Converts an integer into any base between 2 and 36 inclusive
 
     Args:
@@ -16,10 +16,10 @@ ___ convert(number: i.., base: i.. = 2) __ s..:
     
     values    # list
     w.... number:
-        remainder = number % base
+        remainder number % base
         number //= base
         __ remainder >_ 10:
-            remainder = chr(remainder - 10  + o..('A'
+            remainder chr(remainder - 10  + o..('A'
 
         values.a..(s..(remainder
 

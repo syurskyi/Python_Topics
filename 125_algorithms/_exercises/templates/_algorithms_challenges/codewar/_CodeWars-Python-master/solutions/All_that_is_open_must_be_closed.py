@@ -7,13 +7,13 @@ ___ is_balanced(source, caps
     stack    # list
     ___ c __ source:
         __ c __ caps:
-            i = caps.i.. c)
+            i caps.i.. c)
             __ i % 2 __ 0:
                 __ caps[i] __ caps[i + 1]:
                     __ caps[i] __ count:
                         count[caps[i]] += 1
                     ____
-                        count[caps[i]] = 1
+                        count[caps[i]] 1
                 ____
                     stack.a..(c)
             ____
@@ -21,7 +21,7 @@ ___ is_balanced(source, caps
                     __ caps[i] __ count:
                         count[caps[i]] += 1
                     ____
-                        count[caps[i]] = 1
+                        count[caps[i]] 1
                 ____
                     __ l..(stack) __ 0 o. stack.p.. ) != caps[i - 1]:
                         r.. F..

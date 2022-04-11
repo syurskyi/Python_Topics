@@ -7,13 +7,13 @@ c_ TopVotedCandidate(o..
         """
         arr    # list
         hashmap    # dict
-        maxNum = 0
-        maxP = N..
+        maxNum 0
+        maxP N..
         ___ p, t __ z..(persons, times
-            hashmap[p] = hashmap.g.. p, 0)+1
+            hashmap[p] hashmap.g.. p, 0)+1
             __ hashmap[p] >_ maxNum:
-                maxP = p
-                maxNum = hashmap[p]
+                maxP p
+                maxNum hashmap[p]
             arr.a..([t, maxP])
 
     ___ q  t
@@ -21,18 +21,18 @@ c_ TopVotedCandidate(o..
         :type t: int
         :rtype: int
         """
-        i, j = 0, l..(arr)
+        i, j 0, l..(arr)
         w.... i < j:
-            mid = (i+j)//2
+            mid (i+j)//2
             __ t < arr[mid][0]:
-                j = mid
+                j mid
             ____
-                i = mid+1
+                i mid+1
         r.. arr[i-1][1]
 
 
 __ _____ __ _____
-    candidate = TopVotedCandidate(
+    candidate TopVotedCandidate(
         [0,  1, 0, 1, 1],
         [24,29,31,76,81]
     )

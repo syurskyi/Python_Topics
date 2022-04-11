@@ -32,7 +32,7 @@ c_ Solution:
         __ n.. n:
             r.. ans
 
-        a = i3 = i5 = 1
+        a i3 i5 1
 
         w.... a <_ n:
             w.... a <_ n a.. a < i3 * 3 a.. a < i5 * 5:

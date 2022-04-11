@@ -6,8 +6,8 @@ Created on Apr 8, 2017
 
 c_ Solution(o..
     ___ removeKdigits  num, k
-        n = l..(num)
-        longest = n-k
+        n l..(num)
+        longest n-k
         __ k >_ n: r.. '0'
         stack    # list
         ___ c __ num:
@@ -15,13 +15,13 @@ c_ Solution(o..
                 stack.p.. )
                 k -_ 1
             stack.a..(c)
-        stack = stack[:longest]
-        res = ''.j..(stack)
-        res = res.l..('0')
+        stack stack[:longest]
+        res ''.j..(stack)
+        res res.l..('0')
         r.. res __ res ____ '0'
     
     ___ test
-        testCases = [
+        testCases [
             ("1432219", 3),
             ("10200", 1),
             ("10", 2),
@@ -32,7 +32,7 @@ c_ Solution(o..
         ___ num, k __ testCases:
             print('num: %s' % num)
             print('k: %s' % k)
-            result = removeKdigits(num, k)
+            result removeKdigits(num, k)
             print('result: %s' % result)
             print('-='*20+'-')
 

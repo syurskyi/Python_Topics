@@ -3,7 +3,7 @@ Given an array and a value, remove all instances of that value in place and retu
 
 The order of elements can be changed. It doesn't matter what you leave beyond the new length.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ removeElement_negative_index  A, elem
         """
@@ -16,11 +16,11 @@ c_ Solution:
         :return: "shrunk" list
         """
 
-        open_ptr = 0
-        back_ptr = -1  # Python style backward
+        open_ptr 0
+        back_ptr -1  # Python style backward
         w.... l..(A)+back_ptr>_open_ptr:
             __ A[open_ptr]__elem:
-                A[open_ptr], A[back_ptr] = A[back_ptr], A[open_ptr]
+                A[open_ptr], A[back_ptr] A[back_ptr], A[open_ptr]
                 back_ptr -_ 1
             ____
                 open_ptr += 1
@@ -37,12 +37,12 @@ c_ Solution:
         :param elem: integer
         :return: "shrunk" list
         """
-        open_ptr = 0
-        end_ptr = l..(A)
+        open_ptr 0
+        end_ptr l..(A)
         w.... open_ptr<end_ptr:
             __ A[open_ptr]__elem:
                 end_ptr -_ 1
-                A[open_ptr], A[end_ptr] = A[end_ptr], A[open_ptr]
+                A[open_ptr], A[end_ptr] A[end_ptr], A[open_ptr]
             ____
                 open_ptr += 1
 
@@ -50,7 +50,7 @@ c_ Solution:
 
 
 __ _____ __ ____
-    A = [1, 3, 4, 2, 5, 4]
-    elem = 4
-    solution = Solution()
+    A [1, 3, 4, 2, 5, 4]
+    elem 4
+    solution Solution()
     ... solution.removeElement(A, elem)__solution.removeElement_negative_index(A, elem)

@@ -22,24 +22,24 @@ c_ Solution(o..
         """
         __ head __ N..
             r.. N..
-        current = head
-        last = N..
-        count = 0  # Repeated count of `last`
-        dummy = ListNode(0)
-        dummy_end = dummy
+        current head
+        last N..
+        count 0  # Repeated count of `last`
+        dummy ListNode(0)
+        dummy_end dummy
         w.... current __ n.. N..
             __ last __ n.. N..
                 __ current.val __ last.val:
                     count += 1
                 ____
                     __ count __ 0:
-                        dummy_end.next = last
-                        dummy_end = last
-                    count = 0
-            last = current
-            current = current.next
+                        dummy_end.next last
+                        dummy_end last
+                    count 0
+            last current
+            current current.next
         __ count __ 0:
-            dummy_end.next = last
-            dummy_end = last
-        dummy_end.next = N..
+            dummy_end.next last
+            dummy_end last
+        dummy_end.next N..
         r.. dummy.next

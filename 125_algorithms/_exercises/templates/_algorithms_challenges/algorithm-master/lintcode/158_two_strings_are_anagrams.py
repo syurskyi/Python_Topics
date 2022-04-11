@@ -10,7 +10,7 @@ c_ Solution:
         __ n.. s o. n.. t:
             r.. F..
 
-        s = s..(s)
-        t = s..(t)
+        s s..(s)
+        t s..(t)
 
         r.. s __ t

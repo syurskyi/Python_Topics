@@ -12,13 +12,13 @@ c_ Solution(o..
         :type needle: str
         :rtype: int
         """
-        n = l..(haystack)
-        m = l..(needle)
+        n l..(haystack)
+        m l..(needle)
         ___ i __ r..(n + 1 - m
-            matched = T..
+            matched T..
             ___ k __ r..(m
                 __ haystack[i + k] != needle[k]:
-                    matched = F..
+                    matched F..
                     _____
             __ matched:
                 r.. i

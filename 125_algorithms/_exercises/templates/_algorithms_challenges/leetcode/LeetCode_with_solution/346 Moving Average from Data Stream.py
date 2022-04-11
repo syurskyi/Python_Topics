@@ -3,7 +3,7 @@ Premium Question
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ MovingAverage(o..
@@ -12,9 +12,9 @@ c_ MovingAverage(o..
         Initialize your data structure here.
         :type size: int
         """
-        size = size
-        q = d..()
-        s.. = 0
+        size size
+        q d..()
+        s.. 0
 
     ___ next  val
         """

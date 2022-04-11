@@ -55,12 +55,12 @@ c_ RLEIterator:
         """
         counter
         """
-        cur_i = 0
-        cur_used = 0
-        A = A
+        cur_i 0
+        cur_used 0
+        A A
 
     ___ next  n: i..) __ i..:
-        run = cur_used + n
+        run cur_used + n
         w.... cur_i < l..(A) a.. run > A[cur_i]:
             run -_ A[cur_i]
             cur_i += 2
@@ -68,5 +68,5 @@ c_ RLEIterator:
         __ cur_i >_ l..(A
             r.. -1
 
-        cur_used = run
+        cur_used run
         r.. A[cur_i + 1]

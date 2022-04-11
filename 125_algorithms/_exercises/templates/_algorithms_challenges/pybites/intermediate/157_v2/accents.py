@@ -3,11 +3,11 @@ ___ filter_accents(text
     """Return a sequence of accented characters found in
        the passed in lowercased text string
     """
-    text = text.l..
+    text text.l..
     result    # list
     
 
-    s = unicodedata.normalize('NFD',text).encode("ascii",'ignore').d.. 'utf-8')
+    s unicodedata.normalize('NFD',text).encode("ascii",'ignore').d.. 'utf-8')
     ___ character_1,character_2 __ z..(text,s
         __ character_1 != character_2:
             result.a..(character_1)

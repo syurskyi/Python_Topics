@@ -3,30 +3,30 @@ ____ bt _______ check_bt, Bloodtype
 
 
 ___ test_universal_donor
-    donor = Bloodtype.ZERO_NEG
+    donor Bloodtype.ZERO_NEG
     ___ i __ r..(8
-        recipient = Bloodtype(i)
+        recipient Bloodtype(i)
         ... check_bt(donor, recipient)
 
 
 ___ test_universal_recipient
-    recipient = Bloodtype.AB_POS
+    recipient Bloodtype.AB_POS
     ___ i __ r..(8
-        donor = Bloodtype(i)
+        donor Bloodtype(i)
         ... check_bt(donor, recipient)
 
 
 ___ test_AB_POS_can_donate_to_own_group_only_numeric_input
-    donor = 7
+    donor 7
     ___ i __ r..(7
-        recipient = i
+        recipient i
         ... check_bt(donor, recipient) __ F..
 
 
 ___ test_ZERO_NEG_can_recieve_from_own_group_only_numeric_input
-    recipient = 0
+    recipient 0
     ___ i __ r..(1, 8
-        donor = i
+        donor i
         ... check_bt(donor, recipient) __ F..
 
 

@@ -37,23 +37,23 @@ c_ Solution:
         There is a binary array [0, 1, ...] to denote whether to swap A[i], B[i]
         without actually swapping the array
         """
-        n = l..(A)
-        F = [[0 ___ _ __ r..(n)] ___ _ __ r..(2)]
-        F[1][0] = 1
+        n l..(A)
+        F [[0 ___ _ __ r..(n)] ___ _ __ r..(2)]
+        F[1][0] 1
         ___ i __ r..(1, n
             __ A[i] > m..(A[i-1], B[i-1]) a.. B[i] > m..(A[i-1], B[i-1]
                 # freedom of two options - swap or not swap
-                F[0][i] = m..(F[0][i-1], F[1][i-1])
-                F[1][i] = m..(F[0][i-1], F[1][i-1]) + 1
+                F[0][i] m..(F[0][i-1], F[1][i-1])
+                F[1][i] m..(F[0][i-1], F[1][i-1]) + 1
             ____ A[i] > A[i-1] a.. B[i] > B[i-1]:
                 # elif meaning that has to stick with previous swap choice
                 # A[i] <= B[i-1] and B[i] <=A[i-1], cannot flip
-                F[0][i] = F[0][i-1]
-                F[1][i] = F[1][i-1] + 1
+                F[0][i] F[0][i-1]
+                F[1][i] F[1][i-1] + 1
             ____
                 # has to swap, flip 
-                F[0][i] = F[1][i-1]
-                F[1][i] = F[0][i-1] + 1
+                F[0][i] F[1][i-1]
+                F[1][i] F[0][i-1] + 1
 
         r.. m..(F[0][n-1], F[1][n-1])
 
@@ -67,14 +67,14 @@ c_ Solution:
         3 2  8
         swap can be length - times (swap the other)
         """
-        t = 0
+        t 0
         ___ i __ r..(1, l..(A:
             __ A[i] <_ A[i-1] o. B[i] <_ B[i-1]:
                 t += 1
                 __ t < i + 1 - t:
-                    A[i], B[i] = B[i], A[i]
+                    A[i], B[i] B[i], A[i]
                 ____
-                    t = i + 1 - t
+                    t i + 1 - t
 
         r.. t
 

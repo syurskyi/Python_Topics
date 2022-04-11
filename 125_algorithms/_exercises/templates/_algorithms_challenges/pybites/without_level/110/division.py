@@ -6,18 +6,18 @@ ___ divide_numbers(numerator, denominator
        However if denominator is 0 catch the corresponding exception Python
        throws (cannot divide by 0), and return 0"""
     ___
-        num = i..(numerator)
+        num i..(numerator)
     ______:
         r..
     ___
-        den = i..(denominator)
+        den i..(denominator)
     ______:
         r..
 
     ___
-        result = num / den
+        result num / den
     ______ Z..
-        result = 0
+        result 0
     ______:
         r..
 

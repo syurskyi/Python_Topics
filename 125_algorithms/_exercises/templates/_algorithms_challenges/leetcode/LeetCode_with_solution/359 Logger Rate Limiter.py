@@ -1,7 +1,7 @@
 """
 Premium question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Logger(o..
@@ -22,7 +22,7 @@ c_ Logger(o..
         :rtype: bool
         """
         __ message n.. __ h o. timestamp - h[message] >_ 10:
-            h[message] = timestamp
+            h[message] timestamp
             r.. T..
 
         r.. F..

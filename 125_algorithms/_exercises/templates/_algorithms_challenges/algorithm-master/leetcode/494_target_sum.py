@@ -23,7 +23,7 @@ c_ Solution:
         __ n.. A:
             r.. 0
 
-        _sum = s..(A)
+        _sum s..(A)
         __ _sum < target o. (_sum + target) % 2 __ 1:
             r.. 0
 
@@ -36,8 +36,8 @@ c_ Solution:
 
         `i` from `target` to `a - 1` => to make sure `i >= a`
         """
-        dp = [0] * (target + 1)
-        dp[0] = 1
+        dp [0] * (target + 1)
+        dp[0] 1
 
         ___ a __ A:
             ___ i __ r..(target, a - 1, -1

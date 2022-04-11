@@ -3,7 +3,7 @@
 Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times. The algorithm should run in 
 linear time and in O(1) space.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 ____ c.. _______ d..
 
 
@@ -14,7 +14,7 @@ c_ Solution:
         :type nums: list[int]
         :rtype: list[int]
         """
-        cnt = d..(i..)
+        cnt d..(i..)
         ___ num __ nums:
             __ num __ cnt:
                 cnt[num] += 1

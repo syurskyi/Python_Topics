@@ -15,7 +15,7 @@ Yes. However, your reversed string should not contain leading or trailing spaces
 How about multiple spaces between two words?
 Reduce them to a single space in the reversed string.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -25,6 +25,6 @@ c_ Solution:
         :param s: a string
         :return: a string
         """
-        words_lst = s.s..   # not s.split(" ")
-        words_lst = r..(words_lst)
+        words_lst s.s..   # not s.split(" ")
+        words_lst r..(words_lst)
         r.. ' '.j..(words_lst)

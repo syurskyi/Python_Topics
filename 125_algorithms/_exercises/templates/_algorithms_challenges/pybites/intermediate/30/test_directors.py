@@ -29,14 +29,14 @@ ___ test_director_movies_data_structure(movies
 
 
 ___ test_calc_mean_score(movies
-    movies_sergio = movies 'Sergio Leone'
-    movies_nolan = movies 'Christopher Nolan'
+    movies_sergio movies 'Sergio Leone'
+    movies_nolan movies 'Christopher Nolan'
     ... calc_mean_score(movies_sergio) __ 8.5
     ... calc_mean_score(movies_nolan) __ 8.4
 
 
 ___ test_get_average_scores_top_directors(scores
-    e.. = [('Sergio Leone', 8.5),
+    e.. [('Sergio Leone', 8.5),
                 ('Christopher Nolan', 8.4),
                 ('Quentin Tarantino', 8.2),
                 ('Hayao Miyazaki', 8.2),
@@ -56,8 +56,8 @@ ___ test_get_average_scores_top_directors(scores
 ___ test_director_in_top_scores(director, scores
     # order / score might slightly change depending the way the mean
     # is calculated so only test director names in top scores
-    top_scores = scores[2:13]
-    directors = {score[0] ___ score __ top_scores}
+    top_scores scores[2:13]
+    directors {score[0] ___ score __ top_scores}
     ... director __ directors
 
 

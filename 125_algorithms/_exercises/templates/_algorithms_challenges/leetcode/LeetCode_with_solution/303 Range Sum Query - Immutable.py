@@ -12,7 +12,7 @@ You may assume that the array does not change.
 There are many calls to sumRange function.
 
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ NumArray(o..
@@ -22,10 +22,10 @@ c_ NumArray(o..
         dp
         :type nums: List[int]
         """
-        n = l..(nums)
-        F = [0 ___ _ __ x..(n+1)]
+        n l..(nums)
+        F [0 ___ _ __ x..(n+1)]
         ___ i __ x..(1, n+1
-            F[i] = F[i-1] + nums[i-1]
+            F[i] F[i-1] + nums[i-1]
 
     ___ sumRange  i, j
         """

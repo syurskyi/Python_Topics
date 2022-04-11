@@ -6,9 +6,9 @@ c_ Solution(o..
     :rtype: float
     """
     __ n < 0:
-      n = -n
-      x = 1 / x
-    ans = 1
+      n -n
+      x 1 / x
+    ans 1
     w.... n:
       __ n & 1:
         ans *= x

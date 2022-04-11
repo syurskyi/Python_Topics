@@ -5,10 +5,10 @@ ___ generate_xmas_tree(rows=10
          *
         ***
        *****"""
-    tree_stars = [(line * 2 - 1) * '*'
+    tree_stars [(line * 2 - 1) * '*'
                   ___ line __ r..(rows + 1)]
 
-    tree = [line.center(l..(tree_stars[-1]), ' ')
+    tree [line.center(l..(tree_stars[-1]), ' ')
             ___ line __ tree_stars[1:]]
 
     r.. '\n'.j..(tree)

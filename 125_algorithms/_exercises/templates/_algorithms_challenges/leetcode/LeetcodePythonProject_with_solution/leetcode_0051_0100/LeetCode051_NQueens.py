@@ -13,7 +13,7 @@ c_ Solution(o..
         __ n <_ 0: r.. []
         res    # list
         helper(n, res, [], 0)
-        res = convert(res)
+        res convert(res)
         r.. res
     
     ___ helper  n, res, cur, ind
@@ -30,7 +30,7 @@ c_ Solution(o..
         __ n.. nums: r.. []
         res    # list
         ___ row __ nums:
-            n = l..(row)
+            n l..(row)
             curr    # list
             ___ val __ row:
                 curr.a..('.'*val+'Q'+'.'*(n-val-1
@@ -46,7 +46,7 @@ c_ Solution(o..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             1,
             2,
             3,
@@ -55,7 +55,7 @@ c_ Solution(o..
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            results = solveNQueens(n)
+            results solveNQueens(n)
             print('results')
             ___ res __ results:
                 print('\n'.j..(res

@@ -1,5 +1,5 @@
 # https://pkgstore.datahub.io/core/gold-prices/annual_csv/data/343f626dd4f7bae813cfaac23fccd1bc/annual_csv.csv
-gold_prices = """
+gold_prices """
 1950-12,34.720 1951-12,34.660 1952-12,34.790 1953-12,34.850 1954-12,35.040
 1955-12,34.970 1956-12,34.900 1957-12,34.990 1958-12,35.090 1959-12,35.050
 1960-12,35.540 1961-12,35.150 1962-12,35.080 1963-12,35.080 1964-12,35.120
@@ -17,35 +17,35 @@ gold_prices = """
 """  # noqa E501
 
 
-___ years_gold_value_decreased(gold_prices: s.. = gold_prices
+___ years_gold_value_decreased(gold_prices: s.. gold_prices
    """Analyze gold_prices returning a tuple of the year the gold price
       decreased the most and the year the gold price increased the most.
    """
    price_delta    # dict
-   prices_lines = gold_prices.s...s..("\n")
+   prices_lines gold_prices.s...s..("\n")
    ___ price_line __ prices_lines:
       ___ line __ price_line.s..(" "
-         year = i..(line[:line.find("-")])
-         price = f__(line[line.find(",") +1:])
-         price_delta[year] = price
+         year i..(line[:line.find("-")])
+         price f__(line[line.find(",") +1:])
+         price_delta[year] price
 
-   min_year, max_year = m..(price_delta), m..(price_delta)
-   decrease_largest, decrease_year, increase_largest, increase_year = 0, 0, 0, 0
+   min_year, max_year m..(price_delta), m..(price_delta)
+   decrease_largest, decrease_year, increase_largest, increase_year 0, 0, 0, 0
    ___ year __ r..(min_year +1, max_year + 1, 1
-      previous_year_price = price_delta[year -1]
-      current_year_price = price_delta[year]
+      previous_year_price price_delta[year -1]
+      current_year_price price_delta[year]
    
-      delta = a..(current_year_price - previous_year_price)
+      delta a..(current_year_price - previous_year_price)
       __ current_year_price < previous_year_price:
          # Decrease
          __ delta > decrease_largest:
-            decrease_largest = delta
-            decrease_year = year
+            decrease_largest delta
+            decrease_year year
       ____
          # Increase
          __ delta > increase_largest:
-            increase_largest = delta
-            increase_year = year
+            increase_largest delta
+            increase_year year
 
    r.. (decrease_year, increase_year)
 

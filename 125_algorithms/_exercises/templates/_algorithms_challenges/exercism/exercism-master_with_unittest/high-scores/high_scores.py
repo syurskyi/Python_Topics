@@ -3,7 +3,7 @@ _______ heapq
 
 c_ HighScores(o..
     ___ - , scores
-        scores = scores
+        scores scores
 
     ___ highest
         r.. m..(scores)

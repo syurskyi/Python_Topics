@@ -1,4 +1,4 @@
-STAR = '*'
+STAR '*'
 
 ___ gen_rhombus(width
     """Create a generator that yields the rows of a rhombus row
@@ -21,7 +21,7 @@ ___ gen_rhombus(width
     ___ line __ r..(width + 1
         stars.a..(line * '*')
 
-    count = 0
+    count 0
     ___ line __ stars:
         __ count % 1 __ 0:
             stars.remove(line)

@@ -2,9 +2,9 @@ _______ p__
 
 ____ scrabble _______ get_possible_dict_words
 
-scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
+scrabble_scores [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]
-LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
+LETTER_SCORES {letter: score ___ score, letters __ scrabble_scores
                  ___ letter __ letters.s.. }
 
 
@@ -26,8 +26,8 @@ ___ max_word_value(words
     ('G, A, R, Y, T, E, V', 'garvey'),
 ])
 ___ test_max_word(draw, e..
-    draw = draw.s..(', ')
-    words = get_possible_dict_words(draw)
+    draw draw.s..(', ')
+    words get_possible_dict_words(draw)
     __ l..(e..) > 1:
         ... max_word_value(words) __ e..
     ____

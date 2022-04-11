@@ -27,34 +27,34 @@ c_ Solution:
 
         Median + 3-way partitioning
         """
-        n = l..(nums)
+        n l..(nums)
         # mid = self.find_kth(nums, 0, n, (n - 1) // 2)
         # median = nums[mid]
-        median = l..(s..(nums[n//2]
+        median l..(s..(nums[n//2]
 
         # three way pivot
-        odd = 1
-        even = n - 1 __ (n - 1) % 2 __ 0 ____ n - 2
-        i = 0
+        odd 1
+        even n - 1 __ (n - 1) % 2 __ 0 ____ n - 2
+        i 0
         w.... i < n:
             __ nums[i] < median:
                 __ i >_ even a.. i % 2 __ 0:
                     i += 1
                     _____
-                nums[i], nums[even] = nums[even], nums[i]
+                nums[i], nums[even] nums[even], nums[i]
                 even -_ 2
 
             ____ nums[i] > median:
                 __ i <_ odd  a.. i % 2 __ 1:
                     i += 1
                     _____
-                nums[i], nums[odd] = nums[odd], nums[i]
+                nums[i], nums[odd] nums[odd], nums[i]
                 odd += 2
             ____
                 i += 1
 
     ___ find_kth  A, lo, hi, k
-        p = pivot(A, lo, hi)
+        p pivot(A, lo, hi)
         __ k __ p:
             r.. p
         ____ k > p:
@@ -64,14 +64,14 @@ c_ Solution:
 
     ___ pivot  A, lo, hi
         # need 3-way pivot, otherwise TLE
-        p = lo
-        closed = lo
+        p lo
+        closed lo
         ___ i __ r..(lo + 1, hi
             __ A[i] < A[p]:
                 closed += 1
-                A[closed], A[i] = A[i], A[closed]
+                A[closed], A[i] A[i], A[closed]
 
-        A[closed], A[p] = A[p], A[closed]
+        A[closed], A[p] A[p], A[closed]
         r.. closed
 
 

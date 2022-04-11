@@ -8,8 +8,8 @@ class TreeNode:
 
 
 c_ Solution:
-    min_sum = f__('inf')
-    node = N..
+    min_sum f__('inf')
+    node N..
 
     """
     @param: root: the root of binary tree
@@ -23,12 +23,12 @@ c_ Solution:
         __ n.. node:
             r.. 0
 
-        left_sum = _traversal(node.left)
-        right_sum = _traversal(node.right)
-        subtree_sum = left_sum + right_sum + node.val
+        left_sum _traversal(node.left)
+        right_sum _traversal(node.right)
+        subtree_sum left_sum + right_sum + node.val
 
         __ subtree_sum < min_sum:
-            min_sum = subtree_sum
-            node = node
+            min_sum subtree_sum
+            node node
 
         r.. subtree_sum

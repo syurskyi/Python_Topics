@@ -27,8 +27,8 @@ ____ c.. _______ d..
 
 c_ Solution:
     ___ -
-        TrieNode = l....: d..(TrieNode)  # not defaultdict(lambda: TrieNode)
-        root = TrieNode()  # root of tire
+        TrieNode l....: d..(TrieNode)  # not defaultdict(lambda: TrieNode)
+        root TrieNode()  # root of tire
 
     ___ findAllConcatenatedWordsInADict  words: L..[s..]) __ L..[s..]:
         """
@@ -40,10 +40,10 @@ c_ Solution:
             __ can_concat(w, 0
                 ret.a..(w)
 
-            cur = root
+            cur root
             ___ c __ w:
-                cur = cur[c]
-            cur["end"] = T..
+                cur cur[c]
+            cur["end"] T..
 
         r.. ret
 
@@ -51,13 +51,13 @@ c_ Solution:
         __ n.. word:
             r.. F..
 
-        k = l..(word)
+        k l..(word)
         __ lo >_ k:
             r.. T..
 
-        cur = root
+        cur root
         ___ i __ r..(lo, k
-            cur = cur[word[i]]
+            cur cur[word[i]]
             __ cur.g.. "end", F..) a.. can_concat(word, i + 1
                 r.. T..
 
@@ -84,7 +84,7 @@ c_ SolutionTLE:
         """
         ret    # list
         # words.sort()  # sorting is unnecessary
-        visited = s..(words)
+        visited s..(words)
         ___ w __ words:
             __ can_concat(w, visited
                 ret.a..(w)
@@ -95,15 +95,15 @@ c_ SolutionTLE:
         __ n.. w:
             r.. F..
 
-        k = l..(w)
-        F = [F.. ___ _ __ r..(k + 1)]
-        F[0] = T..
+        k l..(w)
+        F [F.. ___ _ __ r..(k + 1)]
+        F[0] T..
         ___ i __ r..(1, k + 1
             ___ j __ r..(i
                 __ j __ 0 a.. i __ k:
                     _____  # word itself
                 __ F[j] a.. w[j:i] __ visited:
-                    F[i] = T..
+                    F[i] T..
 
         r.. F[k]
 

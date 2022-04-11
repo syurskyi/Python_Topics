@@ -1,16 +1,16 @@
 c_ Rails:
 
     ___ - , num_rails
-        num_rails = num_rails
-        rails = [[] ___ _ __ r..(num_rails)]
+        num_rails num_rails
+        rails [[] ___ _ __ r..(num_rails)]
 
     ___ populate_rails_linear  message, rail_lengths
-        message_list = l..(message)
+        message_list l..(message)
         ___ rail __ linear_iterator(rail_lengths
             rail.a..(message_list.p.. 0
 
     ___ populate_rails_zig_zag  message
-        message_list = l..(message)
+        message_list l..(message)
         ___ rail __ zig_zag_iterator(message
             rail.a..(message_list.p.. 0
 
@@ -27,12 +27,12 @@ c_ Rails:
                 y.. rails[index]
 
     ___ zig_zag_iterator  message
-        index = 0
-        increasing = T..
+        index 0
+        increasing T..
         ___ _ __ message:
             y.. rails[index]
-            increasing = direction(index, increasing)
-            index = increment_index(index, increasing)
+            increasing direction(index, increasing)
+            index increment_index(index, increasing)
 
     ___ increment_index  index, increasing
         __ increasing:
@@ -50,16 +50,16 @@ c_ Rails:
 
 
 ___ encode(message, num_rails
-    rails = Rails(num_rails)
+    rails Rails(num_rails)
     rails.populate_rails_zig_zag(message)
     r.. rails.to_string_linear()
 
 
 ___ d.. message, num_rails
-    faulty_rails = Rails(num_rails)
+    faulty_rails Rails(num_rails)
     faulty_rails.populate_rails_zig_zag(message)
-    rail_lengths = [l..(rail) ___ rail __ faulty_rails.rails]
+    rail_lengths [l..(rail) ___ rail __ faulty_rails.rails]
 
-    rails = Rails(num_rails)
+    rails Rails(num_rails)
     rails.populate_rails_linear(message, rail_lengths)
     r.. rails.to_string_zig_zag(message)

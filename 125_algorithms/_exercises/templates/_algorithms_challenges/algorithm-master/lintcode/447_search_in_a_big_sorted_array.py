@@ -18,18 +18,18 @@ c_ Solution:
     @return: An integer which is the first index of target.
     """
     ___ searchBigSortedArray  reader, target
-        end = 0
+        end 0
         w.... reader.g.. end) < target:
             # `+1` is to avoid `end == 0`
-            end = end * 2 + 1
+            end end * 2 + 1
 
-        l, m, r = 0, 0, end
+        l, m, r 0, 0, end
         w.... l + 1 < r:
-            m = l + (r - l) // 2
+            m l + (r - l) // 2
             __ reader.g.. m) < target:
-                l = m
+                l m
             ____
-                r = m
+                r m
 
         ___ i __ [l, r]:
             __ reader.g.. i) __ target:

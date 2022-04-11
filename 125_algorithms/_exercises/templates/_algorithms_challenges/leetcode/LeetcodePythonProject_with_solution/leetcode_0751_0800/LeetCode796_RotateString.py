@@ -10,7 +10,7 @@ c_ Solution(o..
         :type B: str
         :rtype: bool
         """
-        s1, s2 = A, B
+        s1, s2 A, B
         __ l..(s1) != l..(s2
             r.. F..
         __ s1 __ s2: r.. T..
@@ -20,14 +20,14 @@ c_ Solution(o..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
              'abcde', 'cdeab' ,
              'abcde', 'abced' ,
         ]
         ___ s1, s2 __ testCases:
             print('s1: %s' % s1)
             print('s2: %s' % s2)
-            result = rotateString(s1, s2)
+            result rotateString(s1, s2)
             print('result: %s' % result)
             print('-='*30+'-')
 

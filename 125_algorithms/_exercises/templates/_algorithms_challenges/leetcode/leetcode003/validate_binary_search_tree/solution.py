@@ -24,13 +24,13 @@ c_ Solution:
         __ root __ N..
             r.. T..
         ____
-            left = T..
-            right = T..
+            left T..
+            right T..
             __ root.left __ n.. N..
-                left = (max_node(root.left).val < root.val
+                left (max_node(root.left).val < root.val
                         a.. isValidBST(root.left
             __ root.right __ n.. N..
-                right = (min_node(root.right).val > root.val
+                right (min_node(root.right).val > root.val
                          a.. isValidBST(root.right
             __ left a.. right:
                 r.. T..
@@ -38,10 +38,10 @@ c_ Solution:
 
     ___ min_node  root
         w.... root.left __ n.. N..
-            root = root.left
+            root root.left
         r.. root
 
     ___ max_node  root
         w.... root.right __ n.. N..
-            root = root.right
+            root root.right
         r.. root

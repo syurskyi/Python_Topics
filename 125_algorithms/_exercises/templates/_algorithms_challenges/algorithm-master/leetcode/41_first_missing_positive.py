@@ -9,7 +9,7 @@ c_ Solution:
         :type A: List[int]
         :rtype: int
         """
-        left, right = 0, l..(A) - 1
+        left, right 0, l..(A) - 1
 
         w.... left <_ right:
             """
@@ -18,14 +18,14 @@ c_ Solution:
             2. if it out of range or duplicated => let `A[right]` in
             3. if it is legal => swap to let `A[left]` go to `i`
             """
-            i = A[left] - 1
+            i A[left] - 1
             __ i __ left:
                 left += 1
             ____ i < 0 o. i > right o. A[i] __ A[left]:
-                A[left], A[right] = A[right], A[left]
+                A[left], A[right] A[right], A[left]
                 # `A[left] = A[right]` is also ok, since no need to visit `A[right]` again
                 right -_ 1
             ____
-                A[left], A[i] = A[i], A[left]
+                A[left], A[i] A[i], A[left]
 
         r.. left + 1

@@ -6,7 +6,7 @@ Given an array of n positive integers and a positive integer s, find the minimal
 For example, given the array [2,3,1,2,4,3] and s = 7,
 the subarray [4,3] has the minimal length under the problem constraint.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 _______ ___
 
 
@@ -21,17 +21,17 @@ c_ Solution:
         :type nums: list[int]
         :rtype: int
         """
-        n = l..(nums)
+        n l..(nums)
 
-        S = [0 ___ _ __ x..(n+1)]
+        S [0 ___ _ __ x..(n+1)]
         ___ i __ x..(1, n+1
-            S[i] = S[i-1]+nums[i-1]
+            S[i] S[i-1]+nums[i-1]
 
-        lo, hi = 0, 1
-        mini = ___.maxint
+        lo, hi 0, 1
+        mini ___.maxint
         w.... hi <_ n:
             __ S[hi]-S[lo] >_ s:
-                mini = m..(mini, hi-lo)
+                mini m..(mini, hi-lo)
                 lo += 1
             ____
                 hi += 1

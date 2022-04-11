@@ -33,7 +33,7 @@ Note:
 0 <= B.length <= 20000
 A and B consist only of lowercase letters.
 """
-USED = T..
+USED T..
 
 
 c_ Solution:
@@ -45,7 +45,7 @@ c_ Solution:
             r.. F..
         __ A __ B:
             # find dup
-            seen = s..()
+            seen s..()
             ___ a __ A:
                 __ a __ seen:
                     r.. T..
@@ -54,13 +54,13 @@ c_ Solution:
                 r.. F..
 
         # Find a pair
-        pair = N..
+        pair N..
         ___ i __ r..(l..(A:
             __ A[i] != B[i]:
                 __ n.. pair:
-                    pair = (A[i], B[i])
+                    pair (A[i], B[i])
                 ____ pair __ (B[i], A[i]
-                    pair = USED
+                    pair USED
                 ____
                     r.. F..
 

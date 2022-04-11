@@ -41,7 +41,7 @@ Explanation: The order is invalid, so return "".
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -50,9 +50,9 @@ c_ Solution(o..
         :type words: List[str]
         :rtype: str
         """
-        V = construct_graph(words)
-        visited = s..()
-        pathset = s..()
+        V construct_graph(words)
+        visited s..()
+        pathset s..()
         ret    # list
         ___ v __ V.k..:
             __ v n.. __ visited:
@@ -62,7 +62,7 @@ c_ Solution(o..
         r.. "".j..(r..(ret
 
     ___ construct_graph  words
-        V = d..(l..)
+        V d..(l..)
         # need to initialize, consider test case ["z", "z"]
         ___ w __ words:  # pitfall
             ___ c __ w:
@@ -108,7 +108,7 @@ c_ Solution(o..
         :param V: Vertices
         :return: None
         """
-        i = up
+        i up
         w.... i < down:
             __ ptr >_ l..(words[i]
                 i += 1
@@ -116,7 +116,7 @@ c_ Solution(o..
                 __ words[i][ptr] n.. __ V:
                     V[words[i][ptr]]    # list
 
-                j = i+1
+                j i+1
                 w.... j < down a.. ptr < l..(words[j]) a.. words[j][ptr] __ words[i][ptr]:
                     j += 1
 
@@ -124,10 +124,10 @@ c_ Solution(o..
                 __ j < down a.. ptr < l..(words[j]
                     V[words[i][ptr]].a..(words[j][ptr])
 
-                i = j
+                i j
 
 
 __ _______ __ _______
-    lst = ["ze", "yf", "xd", "wd", "vd", "ua", "tt", "sz", "rd", "qd", "pz", "op", "nw", "mt", "ln", "ko", "jm", "il",
+    lst ["ze", "yf", "xd", "wd", "vd", "ua", "tt", "sz", "rd", "qd", "pz", "op", "nw", "mt", "ln", "ko", "jm", "il",
            "ho", "gk", "fa", "ed", "dg", "ct", "bb", "ba"]
     ... Solution().alienOrder(lst) __ "zyxwvutsrqponmlkjihgfedcba"

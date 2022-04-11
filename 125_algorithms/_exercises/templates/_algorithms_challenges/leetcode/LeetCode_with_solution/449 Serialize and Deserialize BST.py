@@ -16,13 +16,13 @@ The encoded string should be as compact as possible.
 # Definition for a binary tree node.
 c_ TreeNode(o..
   ___ - , x
-      val = x
-      left = N..
-      right = N..
+      val x
+      left N..
+      right N..
 
 
 c_ Codec:
-    DELIMITER = ","
+    DELIMITER ","
 
     ___ serialize  root
         """Encodes a tree to a single string.
@@ -62,18 +62,18 @@ c_ Codec:
         __ n.. data:
             r..
             
-        lst = l.. m..(i.., data.s..(DELIMITER)))
-        root = TreeNode(lst[0])
+        lst l.. m..(i.., data.s..(DELIMITER)))
+        root TreeNode(lst[0])
         ___ insert(root, val
             # need to keep the parent
             __ val < root.val:
                 __ n.. root.left:
-                    root.left = TreeNode(val)
+                    root.left TreeNode(val)
                 ____
                     insert(root.left, val)
             ____
                 __ n.. root.right:
-                    root.right = TreeNode(val)
+                    root.right TreeNode(val)
                 ____
                     insert(root.right, val)
 

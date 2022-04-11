@@ -8,13 +8,13 @@ The right subtree of a node contains only nodes with keys greater than the node'
 Both the left and right subtrees must also be binary search trees.
 confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on OJ.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution:
     ___ isValidBST  root

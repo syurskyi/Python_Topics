@@ -9,7 +9,7 @@ the game given the number of stones in the heap.
 For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove
 , the last stone will always be removed by your friend.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -30,10 +30,10 @@ c_ Solution(o..
         __ n < 3:
             r.. T..
 
-        F = [F.. ___ _ __ x..(3)]
-        F[1] = F[2] = F[0] = T..
+        F [F.. ___ _ __ x..(3)]
+        F[1] F[2] F[0] T..
         ___ i __ x..(4, n+1
-            F[i%3] = any(n.. F[(i-k)%3] ___ k __ x..(1, 4
+            F[i%3] any(n.. F[(i-k)%3] ___ k __ x..(1, 4
 
         r.. F[n%3]
 
@@ -48,10 +48,10 @@ c_ Solution(o..
         __ n < 3:
             r.. T..
 
-        F = [F.. ___ _ __ x..(n+1)]
-        F[1] = F[2] = F[3] = T..
+        F [F.. ___ _ __ x..(n+1)]
+        F[1] F[2] F[3] T..
         ___ i __ x..(4, n+1
-            F[i] = any(n.. F[i-k] ___ k __ x..(1, 4
+            F[i] any(n.. F[i-k] ___ k __ x..(1, 4
 
         r.. F[n]
 

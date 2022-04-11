@@ -9,8 +9,8 @@ c_ Solution(o..
     ___ i __ r..(0, l..(nums:
       __ i > 0 a.. nums[i] __ nums[i - 1]:
         _____
-      target = 0 - nums[i]
-      start, end = i + 1, l..(nums) - 1
+      target 0 - nums[i]
+      start, end i + 1, l..(nums) - 1
       w.... start < end:
         __ nums[start] + nums[end] > target:
           end -_ 1

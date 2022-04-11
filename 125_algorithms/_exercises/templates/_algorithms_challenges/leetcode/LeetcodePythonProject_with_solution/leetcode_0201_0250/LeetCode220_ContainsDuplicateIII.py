@@ -12,17 +12,17 @@ c_ Solution(o..
         :rtype: bool
         """
         __ t < 0: r.. F..
-        w = t+1
+        w t+1
         hashmap    # dict
         ___ i, num __ e..(nums
-            m = num//w
+            m num//w
             __ m __ hashmap:
                 r.. T..
             __ m+1 __ hashmap a.. a..(hashmap[m+1]-num) < w:
                 r.. T..
             __ m-1 __ hashmap a.. a..(hashmap[m-1]-num) < w:
                 r.. T..
-            hashmap[m] = num
+            hashmap[m] num
             __ i>_k:
                 del hashmap[nums[i-k]//w]
         r.. F..

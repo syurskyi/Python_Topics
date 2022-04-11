@@ -10,7 +10,7 @@ c_ Solution:
             l..(A) < k
             r.. ans
 
-        _sum = 0
+        _sum 0
         ___ i __ r..(l..(A:
             _sum += A[i]
 

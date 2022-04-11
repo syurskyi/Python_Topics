@@ -3,8 +3,8 @@ ____ j__ _______ dumps
 
 c_ Tree(o..
     ___ - , label, children=[]
-        label = label
-        children = children
+        label label
+        children children
 
     ___ __dict__
         r.. {label: [c.__dict__() ___ c __ s..(children)]}

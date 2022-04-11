@@ -10,36 +10,36 @@ c_ Solution(o..
         :rtype: List[str]
         """
         res    # list
-        isComment = F..
-        isLineComment = F..
-        line = ''
+        isComment F..
+        isLineComment F..
+        line ''
         ___ src __ source:
-            j = 0
-            isLineComment = F..
+            j 0
+            isLineComment F..
             w.... j < l..(src
-                c = src[j]
+                c src[j]
                 __ j < l..(src)-1 a.. src[j:j+2] __ '//' a.. n.. isComment:
                     __ line a.. n.. isComment:
                         res.a..(line)
-                    isLineComment = T..
-                    line = ''
+                    isLineComment T..
+                    line ''
                 ____ j < l..(src)-1 a.. src[j:j+2] __ '/*' a.. n.. isLineComment a.. n.. isComment:
                     j += 1
-                    isComment = T..
+                    isComment T..
                 ____ j < l..(src)-1 a.. src[j:j+2] __ '*/' a.. isComment:
                     j += 1
-                    isComment = F..
+                    isComment F..
                 ____ n.. isComment a.. n.. isLineComment:
                     line += c
                 __ j __ l..(src)-1 a.. n.. isComment:
                     __ line:
                         res.a..(line)
-                    line = ''
+                    line ''
                 j += 1
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 "/*Test program */",
                 "int main()", "{ ",
@@ -90,7 +90,7 @@ c_ Solution(o..
         ]
         ___ source __ testCases:
             print('source: %s' % source)
-            result = removeComments(source)
+            result removeComments(source)
             print('result: %s' % result)
             print('-='*30+'-')
 

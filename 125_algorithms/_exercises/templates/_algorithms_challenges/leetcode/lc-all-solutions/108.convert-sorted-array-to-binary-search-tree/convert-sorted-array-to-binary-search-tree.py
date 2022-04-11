@@ -12,9 +12,9 @@ c_ Solution(o..
     :rtype: TreeNode
     """
     __ nums:
-      midPos = l..(nums) / 2
-      mid = nums[midPos]
-      root = TreeNode(mid)
-      root.left = sortedArrayToBST(nums[:midPos])
-      root.right = sortedArrayToBST(nums[midPos + 1:])
+      midPos l..(nums) / 2
+      mid nums[midPos]
+      root TreeNode(mid)
+      root.left sortedArrayToBST(nums[:midPos])
+      root.right sortedArrayToBST(nums[midPos + 1:])
       r.. root

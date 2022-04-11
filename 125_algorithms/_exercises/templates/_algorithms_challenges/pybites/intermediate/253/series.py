@@ -23,13 +23,13 @@ ___ series_simple_math(
     """
 
     __ function __ 'add':
-        func = ?.add
+        func ?.add
     ____ function __ 'sub':
-        func = ?.sub
+        func ?.sub
     ____ function __ 'mul':
-        func = ?.mul
+        func ?.mul
     ____
-        func = ?.div
+        func ?.div
 
     r.. func(number)
 
@@ -76,13 +76,13 @@ ___ complex_series_maths(
         Let pandas do the work for you.
     """
     __ function __ 'add':
-        func = ser_01.add
+        func ser_01.add
     ____ function __ 'sub':
-        func = ser_01.sub
+        func ser_01.sub
     ____ function __ 'mul':
-        func = ser_01.mul
+        func ser_01.mul
     ____
-        func = ser_01.div
+        func ser_01.div
 
     r.. func(ser_02)
 
@@ -153,19 +153,19 @@ ___ custom_series_function ser ?.S..,
     """
 
 
-    stats = ?.describe()
+    stats ?.describe()
 
     
     relevant =  'min','25%','mean','50%','75%','max'
     ___ is_between(x
         ___ index __ relevant:
-            lower,upper = stats[index] - within,stats[index] + within
+            lower,upper stats[index] - within,stats[index] + within
             __ lower <_ x <_ mean:
                 r.. T..
 
         r.. F..
     
-    mask = ?.S..([F..] * l..(ser
+    mask ?.S..([F..] * l..(ser
     ___ stat __ relevant:
         mask |= ?.between(stats.loc[stat] - within,stats.loc[stat] + within)
 

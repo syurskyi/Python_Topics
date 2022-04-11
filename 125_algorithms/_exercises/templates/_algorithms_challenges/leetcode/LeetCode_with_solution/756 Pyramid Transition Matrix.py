@@ -55,7 +55,7 @@ c_ Solution:
         Need search, since multiple placements are possible
         The order of allowed matters
         """
-        T = d..(s..)  # transition matrix
+        T d..(s..)  # transition matrix
         ___ a, b, c __ allowed:
             T[a, b].add(c)
 

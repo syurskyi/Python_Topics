@@ -17,31 +17,31 @@ c_ Solution(o..
             __ s[:2] __ hashmap:
                 hashmap[s[:2]].add(s[-1])
             ____
-                hashmap[s[:2]] = s..([s[-1]])
-        level = l..(bottom)
-        queue = l..(bottom)
+                hashmap[s[:2]] s..([s[-1]])
+        level l..(bottom)
+        queue l..(bottom)
         w.... queue:
             __ level __ 1:
                 __ queue a.. queue[0]:
                     r.. T..
                 ____
                     r.. F..
-            nextQueue = [s..() ___ _ __ r..(level-1)]
+            nextQueue [s..() ___ _ __ r..(level-1)]
             ___ i __ r..(level-1
-                arr1 = queue[i]
-                arr2 = queue[i+1]
+                arr1 queue[i]
+                arr2 queue[i+1]
                 ___ c1 __ arr1:
                     ___ c2 __ arr2:
                         __ c1+c2 __ hashmap:
-                            nextQueue[i] = nextQueue[i].union(hashmap[c1+c2])
+                            nextQueue[i] nextQueue[i].union(hashmap[c1+c2])
                 __ n.. nextQueue[i]:
                     r.. F..
-            queue = nextQueue
+            queue nextQueue
             level -_ 1
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             [ "XYZ", ["XYD", "YZE", "DEA", "FFF"], ],
             [ 'XXYX', ["XXX", "XXY", "XYX", "XYY", "YXZ"], ],
             [
@@ -52,7 +52,7 @@ c_ Solution(o..
         ___ bottom, allowed __ testCases:
             print('bottom: %s' % bottom)
             print('allowed: %s' % allowed)
-            result = pyramidTransition(bottom, allowed)
+            result pyramidTransition(bottom, allowed)
             print('result: %s' % result)
             print('-='*30+'-')
 

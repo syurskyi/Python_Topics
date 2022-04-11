@@ -30,15 +30,15 @@ c_ Solution:
         """
         two-pointers + math
         """
-        cur = 1  # 0 1 symmetry, no need 0, 1 counter, only need cur and prev counter
-        prev = 0
-        ret = 0
+        cur 1  # 0 1 symmetry, no need 0, 1 counter, only need cur and prev counter
+        prev 0
+        ret 0
         ___ i __ r..(1, l..(s:
             __ s[i] __ s[i-1]:
                 cur += 1
             ____
-                prev = cur
-                cur = 1
+                prev cur
+                cur 1
             __ prev >_ cur:
                 ret += 1
 
@@ -48,14 +48,14 @@ c_ Solution:
         """
         two-pointers + math
         """
-        counter = {"0": 0, "1": 0}
-        ret = 0
+        counter {"0": 0, "1": 0}
+        ret 0
         __ n.. s:
             r.. ret
         counter[s[0]] += 1
         ___ i __ r..(1, l..(s:
             __ s[i] != s[i-1] a.. counter[s[i]] != 0:
-                counter[s[i]] = 0
+                counter[s[i]] 0
 
             counter[s[i]] += 1
             __ m..(counter["0"], counter["1"]) > 0:

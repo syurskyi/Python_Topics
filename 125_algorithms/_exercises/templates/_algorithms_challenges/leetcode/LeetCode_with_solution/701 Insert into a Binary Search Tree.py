@@ -37,9 +37,9 @@ This tree is also valid:
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -48,9 +48,9 @@ c_ Solution:
             r.. TreeNode(val)
 
         __ root.val < val:
-            root.right = insertIntoBST(root.right, val)
+            root.right insertIntoBST(root.right, val)
         ____ root.val > val:
-            root.left = insertIntoBST(root.left, val)
+            root.left insertIntoBST(root.left, val)
         ____
             r..
 

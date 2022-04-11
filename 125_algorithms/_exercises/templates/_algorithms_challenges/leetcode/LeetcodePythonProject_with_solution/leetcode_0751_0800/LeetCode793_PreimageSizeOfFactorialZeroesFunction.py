@@ -9,24 +9,24 @@ c_ Solution(o..
         :type K: int
         :rtype: int
         """
-        dp = [0]*13
-        dp[0] = 1
+        dp [0]*13
+        dp[0] 1
         ___ i __ r..(1, 13
-            dp[i] = dp[i-1]*5+1
+            dp[i] dp[i-1]*5+1
         ___ i __ r..(12, -1, -1
             __ K//dp[i] __ 5:
                 r.. 0
-            K = K%dp[i]
+            K K%dp[i]
         r.. 5
     
     ___ test
-        testCases = [
+        testCases [
             0,
             5,
         ]
         ___ k __ testCases:
             print('k: %s' % k)
-            result = preimageSizeFZF(k)
+            result preimageSizeFZF(k)
             print('result: %s' % result)
             print('-='*30+'-')
 

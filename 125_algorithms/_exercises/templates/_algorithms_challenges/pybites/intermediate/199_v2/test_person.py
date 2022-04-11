@@ -81,7 +81,7 @@ ___ test_subclass_child
 ___ test_use_inheritance
     # dry code!
     # should not duplicate substr in subclass
-    substr = 'I am a person'
+    substr 'I am a person'
     ___ src __ (i___.g.. Father),
                 i___.g.. Mother:
         ... substr n.. __ src

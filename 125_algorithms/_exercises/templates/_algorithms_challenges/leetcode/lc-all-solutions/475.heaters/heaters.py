@@ -5,16 +5,16 @@ c_ Solution(o..
     :type heaters: List[int]
     :rtype: int
     """
-    minDist = 0
+    minDist 0
     heaters.s..()
     ___ house __ s..(houses
-      idx = b__.bisect_left(heaters, house)
-      dist = f__("inf")
+      idx b__.bisect_left(heaters, house)
+      dist f__("inf")
       __ idx > 0:
-        dist = m..(dist, a..(house - heaters[idx - 1]
+        dist m..(dist, a..(house - heaters[idx - 1]
       __ idx < l..(heaters) - 1:
-        dist = m..(dist, a..(house - heaters[idx + 1]
+        dist m..(dist, a..(house - heaters[idx + 1]
       __ idx < l..(heaters
-        dist = m..(dist, a..(house - heaters[idx]
-      minDist = m..(minDist, dist)
+        dist m..(dist, a..(house - heaters[idx]
+      minDist m..(minDist, dist)
     r.. minDist

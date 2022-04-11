@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -12,14 +12,14 @@ c_ Solution(o..
         :type abbr: str
         :rtype: bool
         """
-        w = 0
-        a = 0
+        w 0
+        a 0
         w.... w < l..(word) a.. a < l..(abbr
             __ abbr[a].i.. a.. abbr[a] != '0':
-                e = a
+                e a
                 w.... e < l..(abbr) a.. abbr[e].i.. e += 1
-                num = i..(abbr[a:e])
-                a = e
+                num i..(abbr[a:e])
+                a e
                 w += num
             ____
                 __ word[w] != abbr[a]:

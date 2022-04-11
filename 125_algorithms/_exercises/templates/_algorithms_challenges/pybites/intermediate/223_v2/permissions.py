@@ -20,8 +20,8 @@ ___ get_octal_from_file_permission(rwx: s..) __ s..:
     base =2 
     number    # list
     ___ i __ r..(0,l..(rwx),3
-        permissions = rwx[i:i+3]
-        r = 0
+        permissions rwx[i:i+3]
+        r 0
         ___ i,value __ e..(r..(permissions:
             __ value != '-':
                 r += base**(i)

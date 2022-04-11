@@ -16,12 +16,12 @@ c_ Solution(o..
                 __ n.. stack:
                     r.. res
                 res.a..(stack+[n])
-                x = stack.p.. )
+                x stack.p.. )
                 n *= x
                 x += 1
             ____ n % x __ 0:
                 stack.a..(x)
-                n = n//x
+                n n//x
             ____
                 x += 1
     
@@ -47,7 +47,7 @@ c_ Solution(o..
                 item.p.. )
     
     ___ test
-        testCases = [
+        testCases [
             8,
             1,
             2,
@@ -56,7 +56,7 @@ c_ Solution(o..
         ]
         ___ n __ testCases:
             print('n: %s' % (n
-            result = getFactors(n)
+            result getFactors(n)
             print('result: %s' % result)
             print('-='*20+'-')
 

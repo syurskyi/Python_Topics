@@ -15,12 +15,12 @@ c_ Solution(o..
     """
     __ n.. root:
       r.. []
-    ans = [[root.val]]
-    queue = d..([root])
+    ans [[root.val]]
+    queue d..([root])
     w.... queue:
       levelans    # list
       ___ _ __ r..(0, l..(queue:
-        root = queue.popleft()
+        root queue.popleft()
         __ root.left:
           levelans.a..(root.left.val)
           queue.a..(root.left)

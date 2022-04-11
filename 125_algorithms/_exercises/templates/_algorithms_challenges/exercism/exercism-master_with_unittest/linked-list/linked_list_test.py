@@ -5,35 +5,35 @@ ____ linked_list _______ LinkedList
 
 c_ LinkedListTest(unittest.TestCase
     ___ test_push_pop
-        lst = LinkedList()
+        lst LinkedList()
         lst.push(10)
         lst.push(20)
         assertEqual(lst.p.. ), 20)
         assertEqual(lst.p.. ), 10)
 
     ___ test_push_shift
-        lst = LinkedList()
+        lst LinkedList()
         lst.push(10)
         lst.push(20)
         assertEqual(lst.shift(), 10)
         assertEqual(lst.shift(), 20)
 
     ___ test_unshift_shift
-        lst = LinkedList()
+        lst LinkedList()
         lst.unshift(10)
         lst.unshift(20)
         assertEqual(lst.shift(), 20)
         assertEqual(lst.shift(), 10)
 
     ___ test_unshift_pop
-        lst = LinkedList()
+        lst LinkedList()
         lst.unshift(10)
         lst.unshift(20)
         assertEqual(lst.p.. ), 10)
         assertEqual(lst.p.. ), 20)
 
     ___ test_all
-        lst = LinkedList()
+        lst LinkedList()
         lst.push(10)
         lst.push(20)
         assertEqual(lst.p.. ), 20)
@@ -46,7 +46,7 @@ c_ LinkedListTest(unittest.TestCase
         assertEqual(lst.shift(), 30)
 
     ___ test_length
-        lst = LinkedList()
+        lst LinkedList()
         lst.push(10)
         lst.push(20)
         assertEqual(l..(lst), 2)
@@ -57,10 +57,10 @@ c_ LinkedListTest(unittest.TestCase
 
     @unittest.skip("extra-credit")
     ___ test_iterator
-        lst = LinkedList()
+        lst LinkedList()
         lst.push(10)
         lst.push(20)
-        iterator = i..(lst)
+        iterator i..(lst)
         assertEqual(next(iterator), 10)
         assertEqual(next(iterator), 20)
 

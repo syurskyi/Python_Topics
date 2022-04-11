@@ -10,7 +10,7 @@ ___ getAllPrimeFactors(n
 
     result    # list
     __ isvalidparameter(n
-        factor = 2
+        factor 2
         w.... n > 1:
             w.... n % factor __ 0:
                 n /= factor
@@ -20,9 +20,9 @@ ___ getAllPrimeFactors(n
 
 
 ___ getUniquePrimeFactorsWithCount(n
-    result = [[], []]
+    result [[], []]
     __ isvalidparameter(n
-        factors = getAllPrimeFactors(n)
+        factors getAllPrimeFactors(n)
         ___ f __ factors:
             __ f __ result[0]:
                 result[1][-1] += 1
@@ -35,8 +35,8 @@ ___ getUniquePrimeFactorsWithCount(n
 ___ getUniquePrimeFactorsWithProducts(n
     result    # list
     __ isvalidparameter(n
-        factors = getUniquePrimeFactorsWithCount(n)
-        result = map(l.... x: x[0] ** x[1], z..(factors[0], factors[1]
+        factors getUniquePrimeFactorsWithCount(n)
+        result map(l.... x: x[0] ** x[1], z..(factors[0], factors[1]
     r.. result
 
 

@@ -23,8 +23,8 @@ c_ Solution(o..
             __ c1 n.. __ hashmap1:
                 __ c2 __ hashmap2:
                     r.. F..
-                hashmap1[c1] = c2
-                hashmap2[c2] = c1
+                hashmap1[c1] c2
+                hashmap2[c2] c1
             ____
                 __ c2 n.. __ hashmap2:
                     r.. F..
@@ -33,14 +33,14 @@ c_ Solution(o..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             [
                 ["abc","deq","mee","aqq","dkd","ccc"],
                 "abb",
             ],
         ]
         ___ words, pattern __ testCases:
-            res = findAndReplacePattern(words, pattern)
+            res findAndReplacePattern(words, pattern)
             print('res: %s' % res)
             print('-='*30+'-')
 

@@ -7,12 +7,12 @@ c_ Solution:
         __ n.. board o. n.. board[0] o. l..(board) != l..(board[0]
             r.. F..
 
-        n = l..(board)
-        EMPTY = '.'
-        CANDS = '123456789'
+        n l..(board)
+        EMPTY '.'
+        CANDS '123456789'
 
         ___ x __ r..(n
-            used = s..()
+            used s..()
 
             ___ y __ r..(n
                 __ board[x][y] __ EMPTY:
@@ -24,7 +24,7 @@ c_ Solution:
                 used.add(board[x][y])
 
         ___ y __ r..(n
-            used = s..()
+            used s..()
 
             ___ x __ r..(n
                 __ board[x][y] __ EMPTY:
@@ -35,7 +35,7 @@ c_ Solution:
 
         ___ i __ r..(3
             ___ j __ r..(3
-                used = s..()
+                used s..()
 
                 ___ x __ r..(i * 3, i * 3 + 3
                     ___ y __ r..(j * 3, j * 3 + 3

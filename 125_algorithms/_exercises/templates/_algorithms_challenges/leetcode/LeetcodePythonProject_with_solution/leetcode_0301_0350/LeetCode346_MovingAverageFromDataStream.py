@@ -6,7 +6,7 @@ Created on Mar 21, 2017
 
 c_ MovingAverage(o..
     ___ - , size
-        size = size
+        size size
         queue    # list
     
     ___ next  val

@@ -14,7 +14,7 @@ The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
 Note:
 Bonus point if you are able to do this using only O(n) extra space, where n is the total number of rows in the triangle.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ minimumTotal  triangle
         """
@@ -23,7 +23,7 @@ c_ Solution:
         :return: integer
         """
         dp    # list
-        length = l..(triangle)
+        length l..(triangle)
 
         # trivial
         dp.insert(0, [num ___ num __ triangle[length-1]])

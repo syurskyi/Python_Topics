@@ -40,7 +40,7 @@ c_ Solution(o..
       dfsLeaves(root.left, res, mid)
       dfsLeaves(root.right, res, mid)
 
-    res = [root.val]
+    res [root.val]
     dfsLeft(root.left, res)
     dfsLeaves(root, res, root)
     dfsRight(root.right, res)

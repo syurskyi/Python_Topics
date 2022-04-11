@@ -9,30 +9,30 @@ c_ Solution(o..
         :type n: str
         :rtype: str
         """
-        k = l..(n)
-        candidates = [s..(10**k0+d) ___ k0 __ (k-1, k) ___ d __ (-1, 1)]
-        prefix = n[:i..((k+1)/2)]
-        p = i..(prefix)
+        k l..(n)
+        candidates [s..(10**k0+d) ___ k0 __ (k-1, k) ___ d __ (-1, 1)]
+        prefix n[:i..((k+1)/2)]
+        p i..(prefix)
         ___ start __ map(s.., (p-1, p, p+1:
             candidates.a..(start+(start[:-1] __ k%2 ____ start)[::-1])
         ___ delta(x
             r.. a..(i..(n)-i..(x
-        res = N..
+        res N..
         ___ cand __ candidates:
             __ cand != n a.. n.. cand.s.. '00'
                 __ res __ N.. o. delta(cand) < delta(res) o.\
                     delta(cand) __ delta(res) a.. i..(cand) < i..(res
-                    res = cand
+                    res cand
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             '123',
             '12122',
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = nearestPalindromic(n)
+            result nearestPalindromic(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

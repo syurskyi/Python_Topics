@@ -30,7 +30,7 @@ All rows have the same size.
 ____ t___ _______ L..
 
 
-dirs = ((0, -1), (0, 1), (1, 0), (-1, 0
+dirs ((0, -1), (0, 1), (1, 0), (-1, 0
 
 
 c_ Solution:
@@ -38,14 +38,14 @@ c_ Solution:
         """
         not dfs from any cell, but dfs from the edges
         """
-        m, n = l..(A), l..(A[0])
-        visited = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
+        m, n l..(A), l..(A[0])
+        visited [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         ___ i __ r..(m
             ___ j __ r..(n
                 __ n.. visited[i][j] a.. A[i][j] __ 1 a.. (i __ 0 o. j __ 0 o. i __ m - 1 o. j __ n - 1
                     dfs(A, i, j, visited)
 
-        ret = 0
+        ret 0
         ___ i __ r..(m
             ___ j __ r..(n
                 __ A[i][j] __ 1 a.. n.. visited[i][j]:
@@ -53,25 +53,25 @@ c_ Solution:
         r.. ret
 
     ___ dfs  A, i, j, visited
-        m, n = l..(A), l..(A[0])
-        visited[i][j] = T..
+        m, n l..(A), l..(A[0])
+        visited[i][j] T..
         ___ di, dj __ dirs:
-            I = i + di
-            J = j + dj
+            I i + di
+            J j + dj
             __ 0 <_ I < m a.. 0 <_ J < n a.. n.. visited[I][J] a.. A[I][J] __ 1:
                 dfs(A, I, J, visited)
 
 
 c_ SolutionError:
     ___ -
-        ret = 0
+        ret 0
 
     ___ numEnclaves  A: L..[L..[i..]]) __ i..:
         """
         dfs coloring
         """
-        m, n = l..(A), l..(A[0])
-        visited = [[N.. ___ _ __ r..(n)] ___ _ __ r..(m)]  # 0 not off, 1 off
+        m, n l..(A), l..(A[0])
+        visited [[N.. ___ _ __ r..(n)] ___ _ __ r..(m)]  # 0 not off, 1 off
         ___ i __ r..(m
             ___ j __ r..(n
                 __ n.. visited[i][j] a.. A[i][j] __ 1:
@@ -79,19 +79,19 @@ c_ SolutionError:
         r.. ret
 
     ___ dfs  A, i, j, visited
-        m, n = l..(A), l..(A[0])
-        visited[i][j] = 0
+        m, n l..(A), l..(A[0])
+        visited[i][j] 0
         ___ di, dj __ dirs:
-            I = i + di
-            J = j + dj
+            I i + di
+            J j + dj
             __ n.. (0 <_ I < m a.. 0 <_ J < n
-                visited[i][j] = 1
+                visited[i][j] 1
                 r.. T..
             __ visited[I][J] __ 1:
-                visited[i][j] = 1
+                visited[i][j] 1
                 r.. T..
             __ visited[I][J] __ N.. a.. A[I][J] __ 1 a.. dfs(A, I, J, visited
-                visited[i][j] = 1
+                visited[i][j] 1
                 r.. T..
 
         ret += 1

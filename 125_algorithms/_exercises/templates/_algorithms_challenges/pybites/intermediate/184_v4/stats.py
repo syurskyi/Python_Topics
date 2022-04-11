@@ -3,10 +3,10 @@ _______ __
 ____ u__.r.. _______ u..
 ____ c.. _______ C..
 
-TMP = __.g.. TMP  /tmp
-LOGS = 'bite_output_log.txt'
-DATA = __.p...j..(TMP, LOGS)
-S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
+TMP __.g.. TMP  /tmp
+LOGS 'bite_output_log.txt'
+DATA __.p...j..(TMP, LOGS)
+S3 'https://bites-data.s3.us-east-2.amazonaws.com'
 __ n.. __.p...i..(DATA
     u.. _*{S3}/{LOGS}', DATA)
 
@@ -18,7 +18,7 @@ c_ BiteStats:
             r.. l..(DictReader(f
 
     ___ - , data=DATA
-        rows = _load_data(data)
+        rows _load_data(data)
 
     $
     ___ number_bites_accessed(self) __ i..:
@@ -47,12 +47,12 @@ c_ BiteStats:
     ___ top_bite_by_number_of_clicks(self) __ s..:
         """Get the Bite that got accessed the most
            (= in most rows)"""
-        counts = C..([bite 'bite'  ___ bite __ rows])
+        counts C..([bite 'bite'  ___ bite __ rows])
         r.. counts.most_common 1 0 0
 
     $
     ___ top_user_by_bites_completed(self) __ s..:
         """Get the user that completed the most Bites"""
-        counts = C..([bite 'user'  ___ bite __ rows
+        counts C..([bite 'user'  ___ bite __ rows
                          __ bite 'completed'  __ 'True' )
         r.. counts.most_common 1 0 0

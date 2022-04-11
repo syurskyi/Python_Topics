@@ -3,7 +3,7 @@ Given a sorted integer array where the range of elements are [lower, upper] incl
 
 For example, given [0, 1, 3, 50, 75], lower = 0 and upper = 99, return ["2", "4->49", "51->74", "76->99"].
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -14,7 +14,7 @@ c_ Solution(o..
         :type upper: int
         :rtype: List[str]
         """
-        n = l..(nums)
+        n l..(nums)
         ret    # list
         __ n.. nums:
             ret.a..([lower, upper])

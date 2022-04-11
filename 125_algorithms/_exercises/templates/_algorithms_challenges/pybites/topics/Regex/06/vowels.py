@@ -1,7 +1,7 @@
 _______ __
 ____ t___ _______ Tuple
 
-text = """
+text """
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
@@ -24,7 +24,7 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
-vowels = 'aeiou'
+vowels 'aeiou'
 
 
 ___ strip_vowels(text: s..) __ Tuple[s.., i..]:

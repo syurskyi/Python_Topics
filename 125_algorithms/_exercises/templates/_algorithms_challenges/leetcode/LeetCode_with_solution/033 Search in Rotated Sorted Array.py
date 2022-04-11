@@ -7,7 +7,7 @@ You are given a target value to search. If found in the array return its index, 
 
 You may assume no duplicate exists in the array.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ s..  A, target
         """
@@ -36,32 +36,32 @@ c_ Solution:
         :return: index, integer
         """
 
-        length = l..(A)
-        start = 0
-        end = length-1  # [start, end]
+        length l..(A)
+        start 0
+        end length-1  # [start, end]
         w.... start<_end:
-            mid = (start+end)/2
+            mid (start+end)/2
             # found
             __ A[mid]__target:
                 r.. mid
             # case 1
             __ A[start]<A[mid]<A[end]:
                 __ target>A[mid]:
-                    start = mid+1
+                    start mid+1
                 ____
-                    end = mid-1
+                    end mid-1
             # case 2
             ____ A[start]>A[mid] a.. A[mid]<A[end]:
                 __ target>A[mid] a.. target<_A[end]:
-                    start = mid+1
+                    start mid+1
                 ____
-                    end = mid -1
+                    end mid -1
             # case 3
             ____
                 __ target<A[mid] a.. target>_A[start]:
-                    end = mid-1
+                    end mid-1
                 ____
-                    start = mid+1
+                    start mid+1
 
         r.. -1
 

@@ -14,7 +14,7 @@ Consider the following matrix:
 ]
 Given target = 3, return true.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -28,34 +28,34 @@ c_ Solution(o..
         __ n.. mat:
             r.. F..
 
-        m = l..(mat)
-        n = l..(mat[0])
+        m l..(mat)
+        n l..(mat[0])
 
         # binary search
-        lo = 0
-        hi = m  # [0, m)
+        lo 0
+        hi m  # [0, m)
         w.... lo < hi:
-            mid = (lo+hi)/2
+            mid (lo+hi)/2
             __ mat[mid][0] __ target:
                 r.. T..
             ____ mat[mid][0] < target:
-                lo = mid+1
+                lo mid+1
             ____
-                hi = mid
+                hi mid
 
-        lst = mat[lo-1]  # <=
+        lst mat[lo-1]  # <=
 
         # binary search
-        lo = 0
-        hi = n  # [0, n)
+        lo 0
+        hi n  # [0, n)
         w.... lo < hi:
-            mid = (lo+hi)/2
+            mid (lo+hi)/2
             __ lst[mid] __ target:
                 r.. T..
             ____ lst[mid] < target:
-                lo = mid+1
+                lo mid+1
             ____
-                hi = mid
+                hi mid
 
         r.. F..
 

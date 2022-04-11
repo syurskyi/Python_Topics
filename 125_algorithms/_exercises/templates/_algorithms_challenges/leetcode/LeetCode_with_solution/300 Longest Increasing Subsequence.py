@@ -12,7 +12,7 @@ Follow up: Could you improve it to O(n log n) time complexity?
 """
 _______ b__
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -25,27 +25,27 @@ c_ Solution(o..
         __ n.. A:
             r.. 0
 
-        n = l..(A)
-        MIN = [-1 ___ _ __ x..(n+1)]
-        k = 1
-        MIN[k] = A[0]  # store value rather than index
+        n l..(A)
+        MIN [-1 ___ _ __ x..(n+1)]
+        k 1
+        MIN[k] A[0]  # store value rather than index
         ___ v __ A[1:]:
-            idx = b__.bisect_left(MIN, v, 1, k+1)
-            MIN[idx] = v
+            idx b__.bisect_left(MIN, v, 1, k+1)
+            MIN[idx] v
             k += 1 __ idx __ k+1 ____ 0
 
         r.. k
 
     ___ bin_search  M, A, t, lo=0, hi_ N..
-        __ n.. hi: hi = l..(M)
+        __ n.. hi: hi l..(M)
         w.... lo < hi:
-            m = (lo+hi)/2
+            m (lo+hi)/2
             __ A[M[m]] __ t:
                 r.. m
             ____ A[M[m]] < t:
-                lo = m + 1
+                lo m + 1
             ____
-                hi = m
+                hi m
 
         r.. lo
 
@@ -60,32 +60,32 @@ c_ Solution(o..
         __ n.. A:
             r.. 0
 
-        n = l..(A)
-        MIN = [-1 ___ _ __ x..(n+1)]
-        RET = [-1 ___ _ __ x..(n)]
-        l = 1
-        MIN[l] = 0
+        n l..(A)
+        MIN [-1 ___ _ __ x..(n+1)]
+        RET [-1 ___ _ __ x..(n)]
+        l 1
+        MIN[l] 0
         ___ i __ x..(1, n
             __ A[i] > A[MIN[l]]:
                 l += 1
-                MIN[l] = i
+                MIN[l] i
 
-                RET[i] = MIN[l-1]  # (optional)
+                RET[i] MIN[l-1]  # (optional)
             ____
-                j = bin_search(MIN, A, A[i], 1, l+1)
-                MIN[j] = i
+                j bin_search(MIN, A, A[i], 1, l+1)
+                MIN[j] i
 
-                RET[i] = MIN[j-1] __ j-1 >_ 1 ____ -1  # (optional)
+                RET[i] MIN[j-1] __ j-1 >_ 1 ____ -1  # (optional)
 
         # build the LIS (optional)
-        cur = MIN[l]
+        cur MIN[l]
         ret    # list
         w... T...
             ret.a..(A[cur])
             __ RET[cur] __ -1: _____
-            cur = RET[cur]
+            cur RET[cur]
 
-        ret = ret[::-1]
+        ret ret[::-1]
         print ret
 
         r.. l
@@ -106,15 +106,15 @@ c_ Solution(o..
         __ n.. A:
             r.. 0
 
-        n = l..(A)
-        F = [1 ___ _ __ x..(n)]
-        maxa = 1
+        n l..(A)
+        F [1 ___ _ __ x..(n)]
+        maxa 1
         ___ i __ x..(1, n
-            F[i] = m..(
+            F[i] m..(
                 F[j] + 1 __ A[i] > A[j] ____ 1
                 ___ j __ x..(i)
             )
-            maxa = m..(maxa, F[i])
+            maxa m..(maxa, F[i])
 
         r.. maxa
 

@@ -7,12 +7,12 @@ c_ Solution(o..
     """
     __ numRows <_ 1:
       r.. s
-    n = l..(s)
+    n l..(s)
     ans    # list
-    step = 2 * numRows - 2
+    step 2 * numRows - 2
     ___ i __ r..(numRows
-      one = i
-      two = -i
+      one i
+      two -i
       w.... one < n o. two < n:
         __ 0 <_ two < n a.. one != two a.. i != numRows - 1:
           ans.a..(s[two])

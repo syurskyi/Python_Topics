@@ -2,7 +2,7 @@ _______ j__
 
 ____ dict_convert _______ ? ? ?
 
-nt = ? ?
+nt ? ?
 
 
 ___ test_dict2nt
@@ -18,7 +18,7 @@ ___ test_nt2json
     output  ? ?
     ... t.. ?  __ s..
 
-    data = j__.l..  ?
+    data j__.l..  ?
     ... data 'name'  __ 'PyBites'
     ... data 'founders' [0] __ 'Julian'
     ... data 'tags' [0] __ 'Python'

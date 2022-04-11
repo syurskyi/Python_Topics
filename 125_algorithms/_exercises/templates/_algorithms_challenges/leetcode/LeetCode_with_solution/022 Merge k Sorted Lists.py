@@ -1,13 +1,13 @@
 """
 Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 _______ heapq
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 c_ Solution:
     ___ mergeKLists_TLE1  lists
@@ -26,17 +26,17 @@ c_ Solution:
         :param lists: a list of ListNode
         :return: ListNode
         """
-        lists = f.. l.... x: x __ n.. N.., lists)
+        lists f.. l.... x: x __ n.. N.., lists)
         __ n.. lists:
             r..
 
-        length = l..(lists)
-        factor = 2
+        length l..(lists)
+        factor 2
         w.... length>0:
-            i = 0
+            i 0
             w... T...
                 ___
-                    lists[i] = mergeTwoLists(lists[i], lists[i+factor/2])
+                    lists[i] mergeTwoLists(lists[i], lists[i+factor/2])
                 ______ I..
                     _____
                 i += factor
@@ -52,13 +52,13 @@ c_ Solution:
         :param lists: a list of ListNode
         :return: ListNode
         """
-        lists = f.. l.... x: x __ n.. N.., lists)
+        lists f.. l.... x: x __ n.. N.., lists)
         __ n.. lists:
             r..
 
-        result = lists[0]
+        result lists[0]
         ___ i __ x..(1, l..(lists:
-            result = mergeTwoLists(result, lists[i])
+            result mergeTwoLists(result, lists[i])
         r.. result
 
 
@@ -71,25 +71,25 @@ c_ Solution:
         :param l2: ListNode
         :return:
         """
-        dummy = ListNode(0)
-        dummy.next = l1
+        dummy ListNode(0)
+        dummy.next l1
 
-        pre = dummy
-        the_other = l2
+        pre dummy
+        the_other l2
         w.... pre a.. pre.next:
-            cur = pre.next
+            cur pre.next
             __ the_other a.. cur.val>the_other.val:
                 # insert
-                temp = the_other.next
-                pre.next, the_other.next = the_other, cur
+                temp the_other.next
+                pre.next, the_other.next the_other, cur
 
-                the_other = temp  # advance the_other
-            pre = pre.next
+                the_other temp  # advance the_other
+            pre pre.next
 
 
         # dangling list
         __ the_other:
-            pre.next = the_other  # appending
+            pre.next the_other  # appending
 
         r.. dummy.next
 
@@ -113,13 +113,13 @@ c_ Solution:
             __ head_node:
                 heapq.heappush(heap, (head_node.val, head_node
 
-        dummy = ListNode(0)
+        dummy ListNode(0)
 
-        cur = dummy
+        cur dummy
         w.... heap:
-            smallest_node = heapq.heappop(heap)[1]
-            cur.next = smallest_node
-            cur = cur.next
+            smallest_node heapq.heappop(heap)[1]
+            cur.next smallest_node
+            cur cur.next
             __ smallest_node.next:
                 heapq.heappush(heap, (smallest_node.next.val, smallest_node.next
         r.. dummy.next

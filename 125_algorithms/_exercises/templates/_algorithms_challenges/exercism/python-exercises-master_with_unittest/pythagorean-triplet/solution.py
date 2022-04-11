@@ -7,35 +7,35 @@ ____ m__ _______ sqrt
 ___ primitive_triplets(nbr
     __ nbr % 4 != 0:
         r.. V...('Argument must be divisible by 4')
-    prime_factors, powers = factor(nbr / 2)
-    args = [(1, prime_factors[i1] ** powers[i1]) ___ i1 __ r..(l..(powers]
-    a = [r.. mul, p) ___ p __ product $)]
+    prime_factors, powers factor(nbr / 2)
+    args [(1, prime_factors[i1] ** powers[i1]) ___ i1 __ r..(l..(powers]
+    a [r.. mul, p) ___ p __ product $)]
     a.s..()
-    factors = [(m, n) ___ m, n __ z..(r..(a), a) __ m > n]
-    ts = s..()
+    factors [(m, n) ___ m, n __ z..(r..(a), a) __ m > n]
+    ts s..()
     ___ m, n __ factors:
         ts.update([t..(s..([nbr, m * m - n * n, m * m + n * n]])
     r.. ts
 
 
 ___ is_triplet(t
-    t = l..(t)
+    t l..(t)
     t.s..()
-    a, b, c = t
+    a, b, c t
     r.. c * c __ a * a + b * b
 
 
 ___ triplets_in_range(m, n
-    t = s..()
+    t s..()
     ___ a __ r..(m, n + 1
         ___ b __ r..(a + 1, n + 1
-            c = i..(sqrt(a * a + b * b) + 0.5)
+            c i..(sqrt(a * a + b * b) + 0.5)
             __ c * c __ a * a + b * b a.. c >_ m a.. c <_ n:
                 t.update([(a, b, c)])
     r.. t
 
 
-primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
+primes [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
           67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137,
           139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211,
           223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283,
@@ -55,14 +55,14 @@ ___ factor(n
         r.. (1,), (0,)
     factors    # list
     powers    # list
-    idx = 0
+    idx 0
     w.... n > 1:
-        prime = primes[idx]
+        prime primes[idx]
         idx += 1
         __ n % prime != 0:
             _____
         factors.a..(prime)
-        p = 0
+        p 0
         w.... n % prime __ 0:
             p += 1
             n /= prime

@@ -1,4 +1,4 @@
-STAR = '*'
+STAR '*'
 
 
 ___ gen_rhombus(width
@@ -17,7 +17,7 @@ ___ gen_rhombus(width
          ***
           *
     """
-    half = width // 2
+    half width // 2
     ___ n __ r..(width
         __ n < half:
             y.. (STAR * (2 * n + 1.center(width, ' ')

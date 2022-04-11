@@ -17,9 +17,9 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        n = l..(s)
-        i = n - 1
-        res = 0
+        n l..(s)
+        i n - 1
+        res 0
         w.... i >_ 0:
             __ s[i] != ' ':
                 res += 1

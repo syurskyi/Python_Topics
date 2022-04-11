@@ -10,7 +10,7 @@ Given nums = [-2, 5, -1], lower = -2, upper = 2,
 Return 3.
 The three ranges are : [0, 0], [2, 2], [0, 2] and their respective sums are: -2, -1, 2.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -27,11 +27,11 @@ c_ Solution(o..
         ___ msort(A, lo, hi
             __ hi - lo <_ 1: r.. 0
 
-            mid = (lo + hi)/2
-            cnt = msort(A, lo, mid) + msort(A, mid, hi)
+            mid (lo + hi)/2
+            cnt msort(A, lo, mid) + msort(A, mid, hi)
 
             temp    # list
-            i = j = r = mid
+            i j r mid
             ___ l __ x..(lo, mid
                 w.... i < hi a.. A[i] - A[l] <  lower: i += 1
                 w.... j < hi a.. A[j] - A[l] <_ upper: j += 1
@@ -47,13 +47,13 @@ c_ Solution(o..
                 temp.a..(A[r])
                 r += 1
 
-            A[lo:hi] = temp  # A[lo:hi] = sorted(A[lo:hi]  # Timsort, linear time
+            A[lo:hi] temp  # A[lo:hi] = sorted(A[lo:hi]  # Timsort, linear time
             r.. cnt
 
-        n = l..(nums)
-        F = [0 ___ _ __ x..(n+1)]
+        n l..(nums)
+        F [0 ___ _ __ x..(n+1)]
         ___ i __ x..(1, n+1
-            F[i] = F[i-1] + nums[i-1]
+            F[i] F[i-1] + nums[i-1]
 
         r.. msort(F, 0, n+1)
 

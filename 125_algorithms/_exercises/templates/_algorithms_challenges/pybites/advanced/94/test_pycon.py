@@ -22,33 +22,33 @@ ___ test_load_pycon_data(videos
 ___ test_get_most_popular_talks_by_views(videos
     # as sort might be used in place, or any other list manipulation
     # let's make sure we work with a copy of the module fixture
-    videos_copy = d..(videos)
+    videos_copy d..(videos)
     e.. =  'T-TwcmT6Rcw', 'GBQAKldqgZs', 'ms29ZPUKxbU',
                 'zJ9z6Ge-vXs', 'WiQqqB9MlkA' 
-    vids = l..(get_most_popular_talks_by_views(videos_copy
-    a.. = [vid.id ___ vid __ vids[:5]]
+    vids l..(get_most_popular_talks_by_views(videos_copy
+    a.. [vid.id ___ vid __ vids[:5]]
     ... e.. __ a..
 
 
 ___ test_get_most_popular_talks_by_like_ratio(videos
     # same here: let's use a local copy of videos
-    videos_copy = d..(videos)
-    vids = l..(get_most_popular_talks_by_like_ratio(videos_copy
+    videos_copy d..(videos)
+    vids l..(get_most_popular_talks_by_like_ratio(videos_copy
     e.. =  '8OoR-P6wE0M', 'h-38HZqanJs', 'C7ZhMnfUKIA',
                 'GmbaKdd6o6A', '3EXvR1shVFQ' 
-    a.. = [vid.id ___ vid __ vids[:5]]
+    a.. [vid.id ___ vid __ vids[:5]]
     ... e.. __ a..
 
 
 ___ test_get_talks_gt_one_hour(videos
-    vids = get_talks_gt_one_hour(videos)
+    vids get_talks_gt_one_hour(videos)
     ... vids[0].id __ '0hsKLYfyQZc'
     ... vids[-1].id __ 'ZwvjtCjimiw'
     ... l..(vids) __ 35
 
 
 ___ test_get_talks_lt_twentyfour_min(videos
-    vids = get_talks_lt_twentyfour_min(videos)
+    vids get_talks_lt_twentyfour_min(videos)
     ... vids[0].id __ 'zQeYx87mfyw'
     ... vids[-1].id __ 'TcHkkzWBMKY'
     ... l..(vids) __ 12

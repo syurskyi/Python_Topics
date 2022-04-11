@@ -13,7 +13,7 @@ c_ Solution(o..
       __ start __ end:
         r.. nums[start]
 
-      mid = partition(start, end, nums)
+      mid partition(start, end, nums)
 
       __ mid __ k:
         r.. nums[mid]
@@ -23,28 +23,28 @@ c_ Solution(o..
         r.. quickselect(start, mid - 1, nums, k)
 
     ___ partition(start, end, nums
-      p = r__.randrange(start, end + 1)
-      pv = nums[p]
-      nums[end], nums[p] = nums[p], nums[end]
-      mid = start
+      p r__.randrange(start, end + 1)
+      pv nums[p]
+      nums[end], nums[p] nums[p], nums[end]
+      mid start
       ___ i __ r..(start, end
         __ nums[i] >_ pv:
-          nums[i], nums[mid] = nums[mid], nums[i]
+          nums[i], nums[mid] nums[mid], nums[i]
           mid += 1
-      nums[mid], nums[end] = nums[end], nums[mid]
+      nums[mid], nums[end] nums[end], nums[mid]
       r.. mid
 
-    ret = quickselect(0, l..(nums) - 1, nums, k - 1)
+    ret quickselect(0, l..(nums) - 1, nums, k - 1)
     r.. ret
 
   ___ partition(start, end, nums
-    p = r__.randrange(start, end + 1)
-    pv = nums[p]
-    nums[end], nums[p] = nums[p], nums[end]
-    mid = start
+    p r__.randrange(start, end + 1)
+    pv nums[p]
+    nums[end], nums[p] nums[p], nums[end]
+    mid start
     ___ i __ r..(start, end
       __ nums[i] >_ pv:
-        nums[i], nums[mid] = nums[mid], nums[i]
+        nums[i], nums[mid] nums[mid], nums[i]
         mid += 1
-    nums[mid], nums[end] = nums[end], nums[mid]
+    nums[mid], nums[end] nums[end], nums[mid]
     r.. mid

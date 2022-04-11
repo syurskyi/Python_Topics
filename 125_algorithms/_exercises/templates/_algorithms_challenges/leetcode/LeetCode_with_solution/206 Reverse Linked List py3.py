@@ -16,20 +16,20 @@ implement both?
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 c_ Solution:
     ___ reverseList  head: ListNode) __ ListNode:
-        prev = N..
-        cur = head
+        prev N..
+        cur head
         w.... cur:
-            nxt = cur.next
-            cur.next = prev
+            nxt cur.next
+            cur.next prev
 
-            prev = cur
-            cur = nxt
+            prev cur
+            cur nxt
 
         r.. prev
 
@@ -37,14 +37,14 @@ c_ Solution:
         __ n.. head:
             r.. N..
 
-        prev = head
-        cur = head.next
-        head.next = N..
+        prev head
+        cur head.next
+        head.next N..
         w.... prev a.. cur:
-            nxt = cur.next
-            cur.next = prev
+            nxt cur.next
+            cur.next prev
 
-            prev = cur
-            cur = nxt
+            prev cur
+            cur nxt
 
         r.. prev

@@ -6,10 +6,10 @@ c_ Solution(o..
     :type q: TreeNode
     :rtype: TreeNode
     """
-    a, b = s..([p.val, q.val])
+    a, b s..([p.val, q.val])
     w.... n.. a <_ root.val <_ b:
       __ a > root.val:
-        root = root.right
+        root root.right
       ____
-        root = root.left
+        root root.left
     r.. root

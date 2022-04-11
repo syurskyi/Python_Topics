@@ -35,7 +35,7 @@ The next byte is a continuation byte which starts with 10 and that's correct.
 But the second continuation byte does not start with 10, so it is invalid.
 """
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -46,13 +46,13 @@ c_ Solution(o..
         :type data: List[int]
         :rtype: bool
         """
-        required = 0
+        required 0
         ___ d __ data:
             __ d & 0x80 __ 0:
                 __ required != 0:
                     r.. F..
             ____
-                one_cnt = 0
+                one_cnt 0
                 w.... d & 0x80 __ 0x80:
                     one_cnt += 1
                     d <<= 1

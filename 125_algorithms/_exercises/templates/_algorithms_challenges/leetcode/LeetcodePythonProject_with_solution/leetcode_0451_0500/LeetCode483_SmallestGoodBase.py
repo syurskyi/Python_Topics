@@ -11,23 +11,23 @@ c_ Solution(o..
         :rtype: str
         """
         _______ m__
-        n = i..(n)
-        max_n = i..(m__.log(n, 2
+        n i..(n)
+        max_n i..(m__.log(n, 2
         ___ m __ r..(max_n, 1, -1
-            k = i..(n**m**-1)
+            k i..(n**m**-1)
             __ (k**(m+1)-1)//(k-1) __ n:
                 r.. s..(k)
         r.. s..(n-1)
     
     ___ test
-        testCases = [
+        testCases [
             '13',
             '4681',
             '1000000000000000000',
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = smallestGoodBase(n)
+            result smallestGoodBase(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

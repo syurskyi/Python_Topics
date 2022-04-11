@@ -32,25 +32,25 @@ ____ c.. _______ d..
 
 c_ Node:
     ___ - , chr
-        chr = chr
-        ended = F..
-        children = d..(l....: N..)
+        chr chr
+        ended F..
+        children d..(l....: N..)
 
 
 c_ Trie:
     ___ -
-        root = Node(N..)  # dummy
+        root Node(N..)  # dummy
 
     @classmethod
     ___ insert(cls, node, w, i
         __ n.. node:
-            node = Node(w[i])
+            node Node(w[i])
 
         __ i __ l..(w) - 1:
-            node.ended = T..
+            node.ended T..
         ____
-            nxt = w[i + 1]
-            node.children[nxt] = cls.insert(node.children[nxt], w, i + 1)
+            nxt w[i + 1]
+            node.children[nxt] cls.insert(node.children[nxt], w, i + 1)
 
         r.. node
 
@@ -71,15 +71,15 @@ c_ Trie:
 
 c_ Solution:
     ___ replaceWords  dic: L..[s..], sentence: s..) __ s..:
-        trie = Trie()
+        trie Trie()
         ___ word __ dic:
-            root = trie.root
-            root.children[word[0]] = Trie.insert(root.children[word[0]], word, 0)
+            root trie.root
+            root.children[word[0]] Trie.insert(root.children[word[0]], word, 0)
 
         ret    # list
         ___ word __ sentence.s..(" "
             ___ child __ trie.root.children.v..
-                searched = Trie.s..(child, word, 0)
+                searched Trie.s..(child, word, 0)
                 __ searched:
                     ret.a..(searched)
                     _____

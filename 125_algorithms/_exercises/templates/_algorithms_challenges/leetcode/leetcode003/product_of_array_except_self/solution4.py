@@ -19,31 +19,31 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: List[int]
         """
-        n = l..(nums)
-        res = [1 ___ i __ r..(n)]
+        n l..(nums)
+        res [1 ___ i __ r..(n)]
         # Scan from left to right
         ___ i __ r..(1, n
             # i is from 1 to n - 1
             # res[i] is the product accumulated to the left
-            res[i] = res[i - 1] * nums[i - 1]
+            res[i] res[i - 1] * nums[i - 1]
 
         # right_product is the product accumulated to the right
-        right_product = 1
+        right_product 1
         ___ i __ r..(1, n
             # j ranges from i - 2 to 0
-            j = n - 1 - i
+            j n - 1 - i
             right_product *= nums[j + 1]
             res[j] *= right_product
         r.. res
 
 
-a0 = [0, 0]
-a1 = [1, 2, 3]
-a2 = [2, 3, 4]
-a3 = [1, 2, 3, 4]
-a4 = [2, 3, 4, 5]
+a0 [0, 0]
+a1 [1, 2, 3]
+a2 [2, 3, 4]
+a3 [1, 2, 3, 4]
+a4 [2, 3, 4, 5]
 
-s = Solution()
+s Solution()
 print(s.productExceptSelf(a0
 print(s.productExceptSelf(a1
 print(s.productExceptSelf(a2

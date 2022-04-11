@@ -20,7 +20,7 @@ You may assume k is always valid, 1 <= k <= n2.
 _______ heapq
 
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -31,12 +31,12 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        m, n = l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix[0])
 
         c_ Node(o..
             ___ - , i, j
-                i = i
-                j = j
+                i i
+                j j
 
             ___ __cmp__  other
                 r.. matrix[i][j] - matrix[other.i][other.j]
@@ -54,9 +54,9 @@ c_ Solution(o..
         ___ i __ x..(m
             heapq.heappush(h, Node(i, 0
 
-        ret = N..
+        ret N..
         ___ _ __ x..(k
-            ret = heapq.heappop(h)
+            ret heapq.heappop(h)
             __ ret.hasnext
                 heapq.heappush(h, ret.next
 
@@ -68,16 +68,16 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        m, n = l..(matrix), l..(matrix[0])
-        i = k % n
-        j = k - (i * m)
+        m, n l..(matrix), l..(matrix[0])
+        i k % n
+        j k - (i * m)
         r.. matrix[i][j]
 
 __ _______ __ _______
-    matrix = [
+    matrix [
         [1, 5, 9],
         [10, 11, 13],
         [12, 13, 15]
     ]
-    k = 8
+    k 8
     print Solution().kthSmallest(matrix, k)

@@ -1,6 +1,6 @@
-INDENTS = 4
+INDENTS 4
 
-shakespeare_unformatted = """
+shakespeare_unformatted """
                       Remember me when I am gone away,
                       Gone far away into the silent land;
                       When you can no more hold me by the hand,
@@ -15,7 +15,7 @@ shakespeare_unformatted = """
 ___ print_hanging_indents(poem
     """You can use textwrap's fill but this worked better for us"""
     ___ part __ poem.s..("\n\n"
-        lines = [line.s.. ___ line __ part.s..
+        lines [line.s.. ___ line __ part.s..
                  __ line.s..]
         #print(lines[0])
         #for line in lines[1:]:

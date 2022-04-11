@@ -47,7 +47,7 @@ c_ Solution:
 
         DFS + coloring do a dfs all on nodes O(N) + O(M)
         """
-        G = d..(l..)
+        G d..(l..)
         ___ u, v __ dislikes:
             G[u].a..(v)
             G[v].a..(u)
@@ -60,7 +60,7 @@ c_ Solution:
         r.. T..
 
     ___ dfs  u, G, visited, color
-        visited[u] = color
+        visited[u] color
         ___ nbr __ G[u]:
             __ nbr __ visited:
                 __ visited[nbr] __ color:

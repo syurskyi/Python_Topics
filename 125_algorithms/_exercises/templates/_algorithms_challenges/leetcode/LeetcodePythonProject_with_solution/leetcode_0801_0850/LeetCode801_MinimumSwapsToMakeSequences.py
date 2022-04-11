@@ -10,22 +10,22 @@ c_ Solution(o..
         :type B: List[int]
         :rtype: int
         """
-        arr1, arr2 = A, B
-        n = l..(arr1)
-        dp = [[0]*2 ___ _ __ r..(n)]
-        dp[-1][0] = 0
-        dp[-1][1] = 1
+        arr1, arr2 A, B
+        n l..(arr1)
+        dp [[0]*2 ___ _ __ r..(n)]
+        dp[-1][0] 0
+        dp[-1][1] 1
         ___ i __ r..(n-2, -1, -1
             __ arr1[i] < arr1[i+1] a.. arr2[i] < arr2[i+1]:
                 __ arr1[i] < arr2[i+1] a.. arr2[i] < arr1[i+1]:
-                    dp[i][0] = m..(dp[i+1][0], dp[i+1][1])
-                    dp[i][1] = m..(dp[i+1][0]+1, dp[i+1][0]+1)
+                    dp[i][0] m..(dp[i+1][0], dp[i+1][1])
+                    dp[i][1] m..(dp[i+1][0]+1, dp[i+1][0]+1)
                 ____
-                    dp[i][0] = dp[i+1][0]
-                    dp[i][1] = dp[i+1][1]+1
+                    dp[i][0] dp[i+1][0]
+                    dp[i][1] dp[i+1][1]+1
             ____
-                dp[i][0] = dp[i+1][1]
-                dp[i][1] = dp[i+1][0]+1
+                dp[i][0] dp[i+1][1]
+                dp[i][1] dp[i+1][0]+1
         r.. m..(dp[0][0], dp[0][1])
     
     # My solution DFS is TLE
@@ -35,24 +35,24 @@ c_ Solution(o..
         :type B: List[int]
         :rtype: int
         """
-        arr1, arr2 = A, B
-        res = f__('inf')
+        arr1, arr2 A, B
+        res f__('inf')
         helper(arr1, arr2, 0, 0)
         r.. res
         
     ___ helper  arr1, arr2, i, cur
         __ i __ l..(arr1
-            res = m..(res, cur)
+            res m..(res, cur)
             r..
         __ i __ 0 o. (arr1[i] > arr2[i-1] a.. arr2[i] > arr1[i-1]
-            arr1[i], arr2[i] = arr2[i], arr1[i]
+            arr1[i], arr2[i] arr2[i], arr1[i]
             helper(arr1, arr2, i+1, cur+1)
-            arr1[i], arr2[i] = arr2[i], arr1[i]
+            arr1[i], arr2[i] arr2[i], arr1[i]
         __ i __ 0 o. (arr1[i] > arr1[i-1] a.. arr2[i] > arr2[i-1]
             helper(arr1, arr2, i+1, cur)
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1,3,5,4],
                 [1,2,3,7],
@@ -65,7 +65,7 @@ c_ Solution(o..
         ___ arr1, arr2 __ testCases:
             print('arr1: %s' % arr1)
             print('arr2: %s' % arr2)
-            result = minSwap(arr1, arr2)
+            result minSwap(arr1, arr2)
             print('result: %s' % result)
             print('-='*30+'-')
 

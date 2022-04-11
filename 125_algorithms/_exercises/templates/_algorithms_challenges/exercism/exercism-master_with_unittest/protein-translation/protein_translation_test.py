@@ -38,36 +38,36 @@ c_ ProteinTranslationTest(unittest.TestCase
             assertEqual(proteins(codon), [])
 
     ___ test_translates_rna_strand_into_correct_protein_list
-        strand = 'AUGUUUUGG'
+        strand 'AUGUUUUGG'
         e.. =  'Methionine', 'Phenylalanine', 'Tryptophan'
         assertEqual(proteins(strand), e..)
 
     ___ test_stops_translation_if_stop_codon_at_beginning_of_sequence
-        strand = 'UAGUGG'
+        strand 'UAGUGG'
         e..    # list
         assertEqual(proteins(strand), e..)
 
     ___ test_stops_translation_if_stop_codon_at_end_of_two_codon_sequence(
             self
-        strand = 'UGGUAG'
+        strand 'UGGUAG'
         e.. =  'Tryptophan'
         assertEqual(proteins(strand), e..)
 
     ___ test_stops_translation_if_stop_codon_at_end_of_three_codon_sequence(
             self
-        strand = 'AUGUUUUAA'
+        strand 'AUGUUUUAA'
         e.. =  'Methionine', 'Phenylalanine'
         assertEqual(proteins(strand), e..)
 
     ___ test_stops_translation_if_stop_codon_in_middle_of_three_codon_sequence(
             self
-        strand = 'UGGUAGUGG'
+        strand 'UGGUAGUGG'
         e.. =  'Tryptophan'
         assertEqual(proteins(strand), e..)
 
     ___ test_stops_translation_if_stop_codon_in_middle_of_six_codon_sequence(
             self
-        strand = 'UGGUGUUAUUAAUGGUUU'
+        strand 'UGGUGUUAUUAAUGGUUU'
         e.. =  'Tryptophan', 'Cysteine', 'Tyrosine'
         assertEqual(proteins(strand), e..)
 

@@ -12,7 +12,7 @@ ___ simple_calculator(calculation
        If bad data is passed in, raise a ValueError.
     """
 
-    operation = {
+    operation {
         '+': (l.... x, y: x + y),
         '-': (l.... x, y: x - y),
         '*': (l.... x, y: x * y),
@@ -20,9 +20,9 @@ ___ simple_calculator(calculation
         }
 
     ___
-        x = i..(calculation.s.. [0])
-        y = i..(calculation.s.. [2])
-        operator = calculation.s.. [1]
+        x i..(calculation.s.. [0])
+        y i..(calculation.s.. [2])
+        operator calculation.s.. [1]
         r.. operation[operator](i..(x), i..(y
     
     ______ (V..., K.., ZeroDivisionError

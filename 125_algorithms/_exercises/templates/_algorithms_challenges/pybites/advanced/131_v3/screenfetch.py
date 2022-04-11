@@ -1,6 +1,6 @@
 _______ __
 
-output = """
+output """
                                        mohh@SERENiTY
  MMMMMMMMMMMMMMMMMMMMMMMMMmds+.        OS: Mint 19 tara
  MMm----::-://////////////oymNMd+'     Kernel: x86_64 Linux 4.15.0-34-generic
@@ -23,15 +23,15 @@ output = """
 
 ___ sysinfo_scrape ?
     """Scrapes the output from screenfetch and returns a dictionary"""
-    lines = output.s..k.._F..)
+    lines output.s..k.._F..)
     w.... lines[0] __ '':
         lines.p.. 0)
-    line = lines[0][::-1]
-    info_col = l..(line) - __.s..(r' ', line).start()
-    results = {'Name': lines[0][info_col:]}
+    line lines[0][::-1]
+    info_col l..(line) - __.s..(r' ', line).start()
+    results {'Name': lines[0][info_col:]}
     ___ line __ lines[1:]:
-        s.. = __.s..(r'(?P<key>[\w ]+): (?P<value>.*)$', line[info_col:])
+        s.. __.s..(r'(?P<key>[\w ]+): (?P<value>.*)$', line[info_col:])
         __ s..:
-            grp = s...groupdict()
-            results[grp 'key']] = grp 'value'
+            grp s...groupdict()
+            results[grp 'key']] grp 'value'
     r.. results

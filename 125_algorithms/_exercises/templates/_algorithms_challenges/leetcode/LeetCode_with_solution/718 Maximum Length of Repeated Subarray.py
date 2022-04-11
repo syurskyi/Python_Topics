@@ -29,12 +29,12 @@ c_ Solution:
         F[i][j] be the longest substring ended at A[i-1], B[i-1]
         F[i][j] = F[i-1][j-1] + 1 if A[i-1] == B[i-1] else 0
         """
-        m, n = l..(A), l..(B)
-        F = d..(l....: d..(i..
+        m, n l..(A), l..(B)
+        F d..(l....: d..(i..
         ___ i __ r..(1, m+1
             ___ j __ r..(1, n+1
                 __ A[i-1] __ B[j-1]:
-                    F[i][j] = F[i-1][j-1] + 1
+                    F[i][j] F[i-1][j-1] + 1
 
         r.. m..(
             F[i][j]

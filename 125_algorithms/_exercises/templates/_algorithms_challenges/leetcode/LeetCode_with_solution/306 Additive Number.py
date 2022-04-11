@@ -14,7 +14,7 @@ Note: Numbers in the additive sequence cannot have leading zeros, so sequence 1,
 
 Given a string represents an integer, write a function to determine if it's an additive number.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -24,7 +24,7 @@ c_ Solution(o..
         :type num: str
         :rtype: bool
         """
-        n = l..(num)
+        n l..(num)
         ___ i __ x..(1, n
             ___ j __ x..(i, n
                 __ predicate(num, 0, i, j
@@ -33,8 +33,8 @@ c_ Solution(o..
         r.. F..
 
     ___ predicate  s, b, i, j
-        n1 = s[b:i]
-        n2 = s[i:j]
+        n1 s[b:i]
+        n2 s[i:j]
 
         __ b != 0 a.. j __ l..(s
             r.. T..
@@ -43,8 +43,8 @@ c_ Solution(o..
         __ l..(n1) > 1 a.. n1[0] __ '0' o. l..(n2) > 1 a.. n2[0] __ '0':
             r.. F..
 
-        n3 = s..(i..(n1)+i..(n2
-        J = j+l..(n3)
+        n3 s..(i..(n1)+i..(n2
+        J j+l..(n3)
         __ s[j:J] __ n3:
             r.. predicate(s, i, j, J)
 

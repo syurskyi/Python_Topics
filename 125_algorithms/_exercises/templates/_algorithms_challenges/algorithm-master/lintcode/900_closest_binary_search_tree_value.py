@@ -18,13 +18,13 @@ c_ Solution:
             r.. f__('-inf')
 
         __ root.left a.. target < root.val:
-            left = closestValue(root.left, target)
+            left closestValue(root.left, target)
 
             __ a..(left - target) < a..(root.val - target
                 r.. left
 
         __ root.right a.. target > root.val:
-            right = closestValue(root.right, target)
+            right closestValue(root.right, target)
 
             __ a..(right - target) < a..(root.val - target
                 r.. right

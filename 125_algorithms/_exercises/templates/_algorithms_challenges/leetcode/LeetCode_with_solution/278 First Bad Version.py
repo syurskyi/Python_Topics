@@ -9,7 +9,7 @@ ones to be bad.
 You are given an API bool isBadVersion(version) which will return whether version is bad. Implement a function to find
 the first bad version. You should minimize the number of calls to the API.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 ___ isBadVersion(version
@@ -22,13 +22,13 @@ c_ Solution(o..
         :param n: An integers.
         :return: An integer which is the first bad version.
         """
-        l = 1
-        h = n+1
+        l 1
+        h n+1
         w.... l < h:
-            m = (l+h)/2
+            m (l+h)/2
             __ n.. isBadVersion(m
-                l = m+1
+                l m+1
             ____
-                h = m
+                h m
 
         r.. l

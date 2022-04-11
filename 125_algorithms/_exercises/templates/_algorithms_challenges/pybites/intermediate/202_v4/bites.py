@@ -3,9 +3,9 @@ _______ __
 ____ p.. _______ P..
 ____ u__.r.. _______ u..
 
-data = 'https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv'
+data 'https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv'
 tmp  P..(__.g..("TMP", "/tmp"
-stats = tmp / 'bites.csv'
+stats tmp / 'bites.csv'
 
 __ n.. stats.exists
     u..(data, stats)
@@ -22,16 +22,16 @@ ___ get_most_complex_bites(N=10, stats=stats
        most complex Bites.
     """
     w__ o.. stats, encoding="utf-8-sig") __ f:
-        bites = l..(csv.reader(f, delimiter=';'
+        bites l..(csv.reader(f, delimiter=';'
     bites.p.. 0)  # remove header
-    bites = [[b[0], f__(b[1])] ___ b __ bites __ b[1] != 'None'
+    bites [[b[0], f__(b[1])] ___ b __ bites __ b[1] != 'None'
     bites.s..(key=l.... x: x[1], r.._T..
 
-    n_most_comp = bites[:N]
+    n_most_comp bites[:N]
 
     r.. [_bitenum(b[0]) ___ b __ n_most_comp]
 
 
 __ _____ __ _____
-    res = get_most_complex_bites()
+    res get_most_complex_bites()
     print(res)

@@ -10,7 +10,7 @@ c_ Solution(o..
         :type B: List[int]
         :rtype: List[int]
         """
-        arr1, arr2 = A, B
+        arr1, arr2 A, B
         hashmap    # dict
         ___ i, num __ e..(arr2
             __ num n.. __ hashmap:
@@ -22,7 +22,7 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [12, 28, 46, 32, 50],
                 [50, 12, 32, 46, 28],
@@ -31,7 +31,7 @@ c_ Solution(o..
         ___ arr1, arr2 __ testCases:
             print('arr1: %s' % arr1)
             print('arr2: %s' % arr2)
-            result = anagramMappings(arr1, arr2)
+            result anagramMappings(arr1, arr2)
             print('result: %s' % result)
             print('-='*30+'-')
 

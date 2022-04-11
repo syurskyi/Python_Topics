@@ -7,13 +7,13 @@ ____ d__ _______ t..
 
 # prework
 # download pickle file and store it in a tmp file
-pkl_file = 'pycon_videos.pkl'
-data = 'http://projects.bobbelderbos.com/pcc/{}'.f..(pkl_file)
-pycon_videos = __.p...j..('/tmp', pkl_file)
+pkl_file 'pycon_videos.pkl'
+data 'http://projects.bobbelderbos.com/pcc/{}'.f..(pkl_file)
+pycon_videos __.p...j..('/tmp', pkl_file)
 u__.r...u..(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples
-Video = n..('Video', 'id title duration metrics')
+Video n..('Video', 'id title duration metrics')
 
 
 ___ load_pycon_data(pycon_videos=pycon_videos
@@ -29,7 +29,7 @@ ___ get_most_popular_talks_by_views(videos
 
 
 ___ _like_ratio(vid
-    metrics = vid.metrics
+    metrics vid.metrics
     r.. -(f__(metrics 'likeCount' ) - f__(metrics 'dislikeCount'  / f__(metrics 'viewCount' )
 
 
@@ -41,11 +41,11 @@ ___ get_most_popular_talks_by_like_ratio(videos
     r.. s..(videos, key=_like_ratio)
 
 
-duration_regex = __.c..(r'PT(?:(?P<hrs>\d+)H)?(?:(?P<mins>\d+)M)?(?:(?P<secs>\d+)S)?')
+duration_regex __.c..(r'PT(?:(?P<hrs>\d+)H)?(?:(?P<mins>\d+)M)?(?:(?P<secs>\d+)S)?')
 
 
 ___ _vid_time(vid
-    time_parts = duration_regex.m..(vid.duration).groupdict(default=0)
+    time_parts duration_regex.m..(vid.duration).groupdict(default=0)
     r.. t..(hours=i..(time_parts 'hrs' ), minutes=i..(time_parts 'mins' ), seconds=i..(time_parts 'secs'
 
 

@@ -11,13 +11,13 @@ c_ Solution(o..
       r.. F..
     __ l..(nums) __ 2:
       r.. s..(nums) % k __ 0
-    ppSum = 0
-    subSum = nums[0] + nums[1]
-    d = s..([0])
+    ppSum 0
+    subSum nums[0] + nums[1]
+    d s..([0])
     ___ i __ r..(2, l..(nums:
-      ppSum = (ppSum + nums[i - 2]) % k
+      ppSum (ppSum + nums[i - 2]) % k
       d |= {ppSum}
-      subSum = (subSum + nums[i]) % k
+      subSum (subSum + nums[i]) % k
       __ subSum % k __ d:
         r.. T..
     r.. F..

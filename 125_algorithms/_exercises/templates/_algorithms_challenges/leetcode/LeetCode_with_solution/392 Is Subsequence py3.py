@@ -36,20 +36,20 @@ c_ Solution:
         """
         Subsequence - Binary search
         """
-        char_pos = d..(l..)
+        char_pos d..(l..)
         ___ p, c __ e..(t
             char_pos[c].a..(p)
             # the list is naturally sorted
 
-        lo_po = -1
+        lo_po -1
         ___ c __ s:
             __ c n.. __ char_pos:
                 r.. F..
-            pos = char_pos[c]
-            i = bisect_left(pos, lo_po)
+            pos char_pos[c]
+            i bisect_left(pos, lo_po)
             __ i __ l..(pos
                 r.. F..
-            lo_po = pos[i] + 1  # pitfall
+            lo_po pos[i] + 1  # pitfall
 
         r.. T..
 

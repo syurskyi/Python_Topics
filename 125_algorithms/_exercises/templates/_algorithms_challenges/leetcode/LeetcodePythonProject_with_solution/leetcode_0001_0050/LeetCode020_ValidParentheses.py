@@ -23,12 +23,12 @@ c_ Solution(o..
         r.. stack __ []
     
     ___ test
-        testCases = [
+        testCases [
             '(){}[]',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = isValid(s)
+            result isValid(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

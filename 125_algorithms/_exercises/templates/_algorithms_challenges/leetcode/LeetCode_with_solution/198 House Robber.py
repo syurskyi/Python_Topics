@@ -6,7 +6,7 @@ will automatically contact the police if two adjacent houses were broken into on
 Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of
 money you can rob tonight without alerting the police.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -23,10 +23,10 @@ c_ Solution:
         F_i = max(F_{i-2-k}+A[i] for k \in [0, i-2]),
         Then time complexity is quadratic
         """
-        n = l..(nums)
-        f = [0 ___ _ __ x..(n+2)]
+        n l..(nums)
+        f [0 ___ _ __ x..(n+2)]
         ___ i __ x..(2, n+2
-            f[i] = m..(
+            f[i] m..(
                 f[i-1],
                 f[i-2] + nums[i-2]
             )

@@ -14,12 +14,12 @@ For k = 2, you should return: 2->1->4->3->5
 
 For k = 3, you should return: 3->2->1->4->5
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 
@@ -32,24 +32,24 @@ c_ Solution:
         :param k: an integer
         :return: ListNode
         """
-        dummy = ListNode(0)
-        dummy.next = head
+        dummy ListNode(0)
+        dummy.next head
 
-        pre = dummy
-        cur_lst = generate_lst(pre.next, k)
+        pre dummy
+        cur_lst generate_lst(pre.next, k)
         w.... pre a.. n.. N.. __ cur_lst:
 
             # reverse
-            temp = cur_lst[-1].next
-            pre.next = cur_lst[-1]
+            temp cur_lst[-1].next
+            pre.next cur_lst[-1]
             ___ i __ r..(x..(k:
                 __ i__0:
-                    cur_lst[i].next = temp
+                    cur_lst[i].next temp
                 ____
-                    cur_lst[i].next = cur_lst[i-1]
+                    cur_lst[i].next cur_lst[i-1]
 
-            pre = cur_lst[0]
-            cur_lst = generate_lst(pre.next, k)
+            pre cur_lst[0]
+            cur_lst generate_lst(pre.next, k)
 
         r.. dummy.next
 
@@ -61,11 +61,11 @@ c_ Solution:
         :return: list
         """
         lst    # list
-        cur = node
+        cur node
         ___ i __ x..(k
             __ cur:
                 lst.a..(cur)
-                cur = cur.next
+                cur cur.next
             ____
                 lst.a..(N..)
         r.. lst

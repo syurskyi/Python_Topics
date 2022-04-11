@@ -33,14 +33,14 @@ c_ Solution:
         __ n < 3:
             r.. T..
 
-        dp = [F..] * n
-        dp[0] = dp[1] = T..
+        dp [F..] * n
+        dp[0] dp[1] T..
 
         ___ i __ r..(2, n
             __ (
                 dp[i - 1] __ F.. o.
                 dp[i - 2] __ F..
 
-                dp[i] = T..
+                dp[i] T..
 
         r.. dp[n - 1]

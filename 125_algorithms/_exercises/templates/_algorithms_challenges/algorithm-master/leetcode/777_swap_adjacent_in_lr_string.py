@@ -8,8 +8,8 @@ c_ Solution:
         __ l..(start) != l..(end
             r.. F..
 
-        m, n = l..(start), l..(end)
-        i = j = 0
+        m, n l..(start), l..(end)
+        i j 0
 
         w.... i < m a.. j < n:
             w.... i < m a.. start[i] __ 'X':

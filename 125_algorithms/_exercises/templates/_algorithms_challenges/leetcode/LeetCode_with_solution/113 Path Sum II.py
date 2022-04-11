@@ -16,13 +16,13 @@ return
    [5,8,4,5]
 ]
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution:
     ___ pathSum  root, s..
@@ -44,7 +44,7 @@ c_ Solution:
         __ n.. root:
             r..
 
-        s.. = s.. - root.val
+        s.. s.. - root.val
         cur_path.a..(root.val)
         # terminal condition
         __ s..__0 a.. root.left __ N.. a.. root.right __ N..

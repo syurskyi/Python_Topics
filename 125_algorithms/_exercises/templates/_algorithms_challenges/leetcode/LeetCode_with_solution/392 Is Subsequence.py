@@ -17,7 +17,7 @@ s = "axc", t = "ahbgdc"
 
 Return false.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -28,8 +28,8 @@ c_ Solution(o..
         :type t: str
         :rtype: bool
         """
-        i = 0
-        j = 0
+        i 0
+        j 0
         w.... i < l..(s) a.. j < l..(t
             __ t[j] != s[i]:
                 j += 1

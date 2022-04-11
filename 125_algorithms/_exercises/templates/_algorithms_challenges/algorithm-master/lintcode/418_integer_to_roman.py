@@ -8,7 +8,7 @@ c_ Solution:
             r.. ''
 
         # I, V, X, L, C, D, M
-        symbs = (
+        symbs (
             ('M', 1000),
             ('CM', 900),
             ('D', 500),

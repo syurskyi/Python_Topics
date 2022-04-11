@@ -10,21 +10,21 @@ c_ Solution(o..
         :rtype: str
         """
         _______ heapq
-        s = S
+        s S
         hashmap    # dict
         ___ c __ s:
-            hashmap[c] = hashmap.g.. c, 0)+1
+            hashmap[c] hashmap.g.. c, 0)+1
         heap    # list
         ___ c, freq __ hashmap.i..:
             heapq.heappush(heap, [-freq, c])
-        res = ''
+        res ''
         w.... heap:
-            freq1, c1 = heapq.heappop(heap)
+            freq1, c1 heapq.heappop(heap)
             __ res a.. res[-1] __ c1:
                 r.. ''
             res += c1
             __ heap:
-                freq2, c2 = heapq.heappop(heap)
+                freq2, c2 heapq.heappop(heap)
                 res += c2
                 __ freq2+1 < 0:
                     heapq.heappush(heap, [freq2+1, c2])
@@ -33,14 +33,14 @@ c_ Solution(o..
         r.. ''.j..(res)
     
     ___ test
-        testCases = [
+        testCases [
             "vvvlo",
             "aab",
             'aaab',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = reorganizeString(s)
+            result reorganizeString(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -9,19 +9,19 @@ c_ Solution:
   # @return a undirected graph node
   ___ cloneGraph  node
     graph    # dict
-    visited = s..()
+    visited s..()
 
     ___ dfs(node, visited, graph
       __ n.. node o. node.label __ visited:
         r..
       visited |= {node.label}
       __ node.label n.. __ graph:
-        graph[node.label] = UndirectedGraphNode(node.label)
-      newNode = graph[node.label]
+        graph[node.label] UndirectedGraphNode(node.label)
+      newNode graph[node.label]
 
       ___ nbr __ node.neighbors:
         __ nbr.label n.. __ graph:
-          graph[nbr.label] = UndirectedGraphNode(nbr.label)
+          graph[nbr.label] UndirectedGraphNode(nbr.label)
         newNode.neighbors.a..(graph[nbr.label])
         dfs(nbr, visited, graph)
       r.. newNode

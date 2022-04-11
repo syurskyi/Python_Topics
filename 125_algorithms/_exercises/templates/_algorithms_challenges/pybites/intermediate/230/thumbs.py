@@ -1,4 +1,4 @@
-THUMBS_UP, THUMBS_DOWN = '👍', '👎'
+THUMBS_UP, THUMBS_DOWN '👍', '👎'
 
 
 c_ Thumbs:

@@ -4,7 +4,7 @@ Given an array of integers, every element appears three times except for one. Fi
 Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -38,12 +38,12 @@ c_ Solution:
         :param A: a list of int
         :return: int
         """
-        bit_0, bit_1, bit_2 = ~0, 0, 0  # bit_0 is ~0 since all numbers appear 0 times.
+        bit_0, bit_1, bit_2 ~0, 0, 0  # bit_0 is ~0 since all numbers appear 0 times.
         ___ elmt __ A:
-            bit_t = bit_2  # temp
-            bit_2 = (bit_1 & elmt) | (bit_2 & ~elmt)
-            bit_1 = (bit_0 & elmt) | (bit_1 & ~elmt)
-            bit_0 = (bit_t & elmt) | (bit_0 & ~elmt)  # three times means 0 times (mod 3)
+            bit_t bit_2  # temp
+            bit_2 (bit_1 & elmt) | (bit_2 & ~elmt)
+            bit_1 (bit_0 & elmt) | (bit_1 & ~elmt)
+            bit_0 (bit_t & elmt) | (bit_0 & ~elmt)  # three times means 0 times (mod 3)
         r.. bit_1
 
     ___ singleNumber_array  A
@@ -57,14 +57,14 @@ c_ Solution:
         :param A:
         :return:
         """
-        cnt = [0 ___ _ __ x..(32)]
+        cnt [0 ___ _ __ x..(32)]
 
         ___ elmt __ A:
             ___ i __ x..(32
                 __ elmt>>i&1__1:
-                    cnt[i] = (cnt[i]+1)%3
+                    cnt[i] (cnt[i]+1)%3
 
-        result = 0
+        result 0
         ___ i __ x..(32
             result |= cnt[i]<<i
 
@@ -82,7 +82,7 @@ c_ Solution:
         :param A:
         :return:
         """
-        one, two, three = 0, 0, 0
+        one, two, three 0, 0, 0
 
         # for elmt in A:
         #     three |= two&elmt
@@ -95,7 +95,7 @@ c_ Solution:
             # after processing elmt
             two |= one&elmt
             one ^= elmt
-            three = one&two
+            three one&two
 
             one &= ~three
             two &= ~three
@@ -108,7 +108,7 @@ c_ Solution:
 
 __ _____ __ ____
     # possible negative numbers
-    tests = [
+    tests [
         [1, 1, 1, 2, 2, 2, 3, 4, 4, 4],
         [1]
     ]

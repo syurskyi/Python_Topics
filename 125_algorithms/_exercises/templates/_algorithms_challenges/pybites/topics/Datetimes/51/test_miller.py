@@ -3,7 +3,7 @@ ____ d__ _______ t..
 ____ miller _______ (py2_earth_hours_left, py2_miller_min_left,
                     BITE_CREATED_DT)
 
-START_DATE = BITE_CREATED_DT - t..(d.._1000)
+START_DATE BITE_CREATED_DT - t..(d.._1000)
 
 
 ___ test_py2_earth_hours_left

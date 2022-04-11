@@ -24,9 +24,9 @@ c_ Solution:
         """
         g.s..()
         s.s..()
-        ret = 0
-        i = 0
-        j = 0
+        ret 0
+        i 0
+        j 0
         w.... i < l..(g) a.. j < l..(s
             __ g[i] <_ s[j]:
                 ret += 1

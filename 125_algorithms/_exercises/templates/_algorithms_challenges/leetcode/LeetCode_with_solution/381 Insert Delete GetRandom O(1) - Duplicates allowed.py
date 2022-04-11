@@ -32,7 +32,7 @@ collection.getRandom();
 ____ c.. _______ d..
 _______ r__
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ RandomizedCollection(o..
@@ -42,7 +42,7 @@ c_ RandomizedCollection(o..
         Initialize your data structure here.
         """
         lst    # list
-        pos = d..(s..)
+        pos d..(s..)
 
     ___ insert  val
         """
@@ -50,7 +50,7 @@ c_ RandomizedCollection(o..
         :type val: int
         :rtype: bool
         """
-        flag = T.. __ n.. pos[val] ____ F..
+        flag T.. __ n.. pos[val] ____ F..
 
         lst.a..(val)
         pos[val].add(l..(lst) - 1)
@@ -66,9 +66,9 @@ c_ RandomizedCollection(o..
         __ n.. pos[val]:
             r.. F..
 
-        idx, last = pos[val].p.. ), l..(lst) - 1
+        idx, last pos[val].p.. ), l..(lst) - 1
         __ idx != last:
-            lst[idx], lst[last] = lst[last], lst[idx]
+            lst[idx], lst[last] lst[last], lst[idx]
             pos[lst[idx]].remove(last)
             pos[lst[idx]].add(idx)
 

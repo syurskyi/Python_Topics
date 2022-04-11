@@ -37,7 +37,7 @@ c_ Solution:
             r.. [[]]
 
         ans    # list
-        n = l..(A)
+        n l..(A)
 
         A.s..()
 

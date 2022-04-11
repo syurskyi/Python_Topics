@@ -10,10 +10,10 @@ c_ Solution(o..
     :type head: ListNode
     :rtype: bool
     """
-    fast = slow = head
+    fast slow head
     w.... fast a.. fast.next:
-      fast = fast.next.next
-      slow = slow.next
+      fast fast.next.next
+      slow slow.next
       __ slow __ fast:
         r.. T..
     r.. F..

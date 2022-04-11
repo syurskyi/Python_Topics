@@ -14,7 +14,7 @@ c_ GFSClient(BaseGFSClient
     """
     ___ - , chunkSize
         BaseGFSClient.- )
-        chunk_size = chunkSize
+        chunk_size chunkSize
         chunk_num    # dict
 
     """
@@ -24,7 +24,7 @@ c_ GFSClient(BaseGFSClient
     ___ read  filename
         __ filename n.. __ chunk_num:
             r..
-        i, content = 0, ''
+        i, content 0, ''
         w.... i < chunk_num[filename]:
             content += readChunk(filename, i)
             i += 1
@@ -36,9 +36,9 @@ c_ GFSClient(BaseGFSClient
     @return: nothing
     """
     ___ write  filename, content
-        i, j, n = 0, 0, l..(content)
+        i, j, n 0, 0, l..(content)
         w.... j < n:
             writeChunk(filename, i, content[j : j + chunk_size])
             i += 1
             j += chunk_size
-        chunk_num[filename] = i
+        chunk_num[filename] i

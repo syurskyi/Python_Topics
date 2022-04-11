@@ -3,13 +3,13 @@ _______ p__
 ____ quotes _______ extract_quotes
 
 
-expected_authors = [
+expected_authors [
     'B.B King', 'Wendy Kopp', 'Barack Obama', 'T.F. Hodge',
     'Helen Keller', 'Confucius', 'Les Brown', 'Winston Churchill',
     'Theodore Roosevelt', 'Zig Ziglar'
 ]
 
-expected_quotes = [
+expected_quotes [
     ('The beautiful thing about learning is nobody can take it away'
      ' from you.'),
     'Inexperience is an asset. Embrace it.',

@@ -6,10 +6,10 @@ _______ r__
 # Fetched and truncated from
 # https://www.uniprot.org/uniprot/?query=database%3A%28type%3Aembl+AE017195%29&format=fasta (Aug 01, 2020)
 
-URL = "https://bites-data.s3.us-east-2.amazonaws.com/fasta_genes.fasta"
-FASTA_FILE = __.p...j..(__.g.. TMP  /tmp, "fasta_genes.fasta")
+URL "https://bites-data.s3.us-east-2.amazonaws.com/fasta_genes.fasta"
+FASTA_FILE __.p...j..(__.g.. TMP  /tmp, "fasta_genes.fasta")
 
-response = r__.g.. URL)
+response r__.g.. URL)
 
 w__ o.. 'test.txt','w') __ f:
     f.w.. response.text)
@@ -27,12 +27,12 @@ ___ fasta_to_2line_fasta(fasta_file:s..="test.txt", fasta_2line_file: s..='test_
 
     sequence    # list
     lines    # list
-    records = 0
+    records 0
     w__ o.. fasta_2line_file,'w') __ f1, o.. fasta_file _ __ f2:
 
             ___ i,line __ e..(f2,1
-                line = line.s..
-                line = line.s..
+                line line.s..
+                line line.s..
                 __ line[0] __ '>':
                     __ sequence:
                         sequence.a..(''.j..(lines
@@ -40,7 +40,7 @@ ___ fasta_to_2line_fasta(fasta_file:s..="test.txt", fasta_2line_file: s..='test_
                         f1.w.. '\n')
                         sequence    # list
                     ____
-                        sequence = [line]
+                        sequence [line]
                     records += 1
                     lines    # list
                 ____

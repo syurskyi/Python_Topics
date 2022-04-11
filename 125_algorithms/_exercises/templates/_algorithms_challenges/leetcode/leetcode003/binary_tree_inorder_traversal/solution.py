@@ -33,9 +33,9 @@ c_ Solution(o..
         w.... stack o. root __ n.. N..
             __ root __ n.. N..
                 stack.a..(root)
-                root = root.left
+                root root.left
             ____
-                root = stack.p.. )
+                root stack.p.. )
                 p...a..(root.val)
-                root = root.right
+                root root.right
         r.. p..

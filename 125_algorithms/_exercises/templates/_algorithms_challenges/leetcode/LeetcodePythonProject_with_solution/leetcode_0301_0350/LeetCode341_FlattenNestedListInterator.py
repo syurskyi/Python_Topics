@@ -34,18 +34,18 @@ c_ NestedInteger(o..
 
 c_ NestedIterator(o..
     ___ - , nestedList
-        d.. = nestedList
+        d.. nestedList
         result    # list
         w.... d..:
-            ni = d...p.. 0)
+            ni d...p.. 0)
             __ ni.isInteger
                 result.a..(ni.getInteger
             ____
-                l = ni.getList()
+                l ni.getList()
                 l.r..
                 ___ ni0 __ l:
                     d...insert(0, ni0)
-        result = result
+        result result
 
     ___ next
         r.. result.p.. 0)

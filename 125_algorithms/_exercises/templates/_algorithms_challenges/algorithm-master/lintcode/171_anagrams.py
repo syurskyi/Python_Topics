@@ -10,7 +10,7 @@ c_ Solution:
 
         D    # dict
         ___ s __ S:
-            _s = ''.j..(s..(s
+            _s ''.j..(s..(s
             __ _s n.. __ D:
                 D[_s]    # list
             D[_s].a..(s)

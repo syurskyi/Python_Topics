@@ -1,7 +1,7 @@
 """
 Premium Question.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Vector2D:
@@ -10,18 +10,18 @@ c_ Vector2D:
         :type vec2d: list[list[int]]
         :type: None
         """
-        vec2d = vec2d
-        i = 0
-        j = 0
+        vec2d vec2d
+        i 0
+        j 0
 
     ___ next
         """
 
         :rtype: int
         """
-        ret = N..
+        ret N..
         __ hasNext
-            ret = vec2d[i][j]
+            ret vec2d[i][j]
             j += 1
 
         r.. ret
@@ -34,6 +34,6 @@ c_ Vector2D:
         # update
         w.... i < l..(vec2d) a.. j >_ l..(vec2d[i]
             i += 1
-            j = 0
+            j 0
 
         r.. i < l..(vec2d) a.. j < l..(vec2d[i])

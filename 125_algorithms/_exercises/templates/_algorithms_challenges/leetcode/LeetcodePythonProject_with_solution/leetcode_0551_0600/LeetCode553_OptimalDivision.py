@@ -10,7 +10,7 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: str
         """
-        res = '%s' % nums[0]
+        res '%s' % nums[0]
         ___ i __ r..(1, l..(nums:
             __ i __ 1 a.. l..(nums) > 2:
                 res += '/(%s' % nums[i]
@@ -21,12 +21,12 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [1000,100,10,2],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = optimalDivision(nums)
+            result optimalDivision(nums)
             print('result: %s' % result)
             print('-='*30+'-')
         

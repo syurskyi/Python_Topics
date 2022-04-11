@@ -39,10 +39,10 @@ In calls to MyCalendar.book(start, end), start and end are integers in the range
 
 c_ Node:
     ___ - , s, e
-        s = s
-        e = e
-        left = N..
-        right = N..
+        s s
+        e e
+        left N..
+        right N..
 
 
 c_ MyCalendar:
@@ -60,33 +60,33 @@ c_ MyCalendar:
         need a TreeMap
         but python does not have -> BST although unbalanced
         """
-        root = N..
+        root N..
 
     ___ insert  node: Node, s: i.., e: i..) __ Node:
         __ n.. node:
             r.. Node(s, e)
 
         __ e <_ node.s:
-            left = insert(node.left, s, e)
+            left insert(node.left, s, e)
             __ left __ N..
                 r.. N..
-            node.left = left
+            node.left left
             r.. node
         ____ s >_ node.e:
-            right = insert(node.right, s, e)
+            right insert(node.right, s, e)
             __ right __ N..
                 r.. N..
-            node.right = right
+            node.right right
             r.. node
         ____
             r.. N..
 
     ___ book  start: i.., end: i..) __ b..:
-        ret = insert(root, start, end)
+        ret insert(root, start, end)
         __ ret __ N..
             r.. F..
 
-        root = ret
+        root ret
         r.. T..
 
 

@@ -13,6 +13,6 @@ c_ Solution:
             r.. trimBST(root.right, L, R)
         ____ R < root.val:
             r.. trimBST(root.left, L, R)
-        root.left = trimBST(root.left, L, R)
-        root.right = trimBST(root.right, L, R)
+        root.left trimBST(root.left, L, R)
+        root.right trimBST(root.right, L, R)
         r.. root

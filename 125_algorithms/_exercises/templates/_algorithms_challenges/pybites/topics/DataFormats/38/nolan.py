@@ -1,7 +1,7 @@
 _______ ___.e__.E__ __ ET
 
 # from OMDB
-xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
+xmlstring '''<?xml version="1.0" encoding="UTF-8"?>
 <root response="True">
   <movie title="The Prestige" year="2006" rated="PG-13" released="20 Oct 2006" runtime="130 min" genre="Drama, Mystery, Sci-Fi" director="Christopher Nolan" />
   <movie title="The Dark Knight" year="2008" rated="PG-13" released="18 Jul 2008" runtime="152 min" genre="Action, Crime, Drama" director="Christopher Nolan" />
@@ -25,8 +25,8 @@ ___ get_movies
 ___ get_movie_longest_runtime
     """Call get_tree again and return the movie title for the movie with the longest
        runtime in minutes, for latter consider adding a _get_runtime helper"""
-    longest = s..([i..(movie.g.. 'runtime') |3) ___ movie __ get_tree().i..('movie')], r.._T..[0]
-    root = ET.f..(xmlstring)
+    longest s..([i..(movie.g.. 'runtime') |3) ___ movie __ get_tree().i..('movie')], r.._T..[0]
+    root ET.f..(xmlstring)
     ___ movie __ root.f..('movie'
         __ i..(movie.g.. 'runtime') |3) __ longest:
             r..(movie.g.. 'title'

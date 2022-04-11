@@ -7,21 +7,21 @@ c_ Solution(o..
     dp    # dict
 
     ___ dfs(stones, pos, k
-      key = pos + k * 10000;
+      key pos + k * 10000;
       __ dp.has_key(key
         r.. dp[key]
       ____
         ___ i __ r..(pos + 1, l..(stones:
-          step = stones[i] - stones[pos]
+          step stones[i] - stones[pos]
           __ step < k - 1:
             _____;
           __ step > k + 1:
-            dp[key] = F..
+            dp[key] F..
             r.. F..
           __ dfs(stones, i, step
-            dp[key] = T..
+            dp[key] T..
             r.. T..
-      dp[key] = (pos __ l..(stones) - 1)
+      dp[key] (pos __ l..(stones) - 1)
       r.. (pos __ l..(stones) - 1)
 
     r.. dfs(stones, 0, 0)

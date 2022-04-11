@@ -28,7 +28,7 @@ Explanation:
 or
 7 -> 6 -> 3 -> 2 -> 1
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -43,7 +43,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        ret = 0
+        ret 0
         w.... n != 1:
             ret += 1
             __ n & 1 __ 0:
@@ -63,7 +63,7 @@ c_ Solution(o..
         """
         __ n __ 1: r.. 0
 
-        ret = 1
+        ret 1
         __ n%2 __ 0:
             ret += integerReplacement(n/2)
         ____

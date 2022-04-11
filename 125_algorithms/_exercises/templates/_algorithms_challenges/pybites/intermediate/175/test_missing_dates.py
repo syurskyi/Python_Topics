@@ -14,8 +14,8 @@ ___ _create_dates(missing, year=2019,  m.._2
 
        You can optionally specify year and month.
     """
-    first = date y.._year,  m.._month,  d.._1)
-    last = first.r..( m.._month+1) - t..(d.._1)
+    first date y.._year,  m.._month,  d.._1)
+    last first.r..( m.._month+1) - t..(d.._1)
 
     # always yield first and last, for the in between dates
     # only the ones not in missing
@@ -37,18 +37,18 @@ ___ _create_dates(missing, year=2019,  m.._2
     (l..(r..(1, 31, 6),  # 0 missing
 ])
 ___ test_get_missing_dates(missing, month
-    my_date_range = l..(_create_dates(missing,  m.._month
-    start, end = my_date_range[0].day, my_date_range[-1].day
+    my_date_range l..(_create_dates(missing,  m.._month
+    start, end my_date_range[0].day, my_date_range[-1].day
 
     # order passed in arg should not matter
     shuffle(my_date_range)
 
     # get days from return sequence
-    a.. = s..(d.day ___ d __
+    a.. s..(d.day ___ d __
                     get_missing_dates(my_date_range
 
     # filter out begin and end dates of range
-    e.. = s..(d ___ d __ missing __
+    e.. s..(d ___ d __ missing __
                       d n.. __ (start, end
 
     ... a.. __ e..

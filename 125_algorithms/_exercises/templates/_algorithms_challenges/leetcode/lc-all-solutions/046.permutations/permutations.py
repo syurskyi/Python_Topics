@@ -5,7 +5,7 @@ c_ Solution(o..
     :rtype: List[List[int]]
     """
     res    # list
-    visited = s..([])
+    visited s..([])
 
     ___ dfs(nums, p.., res, visited
       __ l..(p..) __ l..(nums

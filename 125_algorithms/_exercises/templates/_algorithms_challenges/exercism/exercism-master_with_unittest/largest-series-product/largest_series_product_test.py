@@ -31,7 +31,7 @@ c_ SeriesTest(unittest.TestCase
         assertEqual(270, largest_product("1027839564", 3
 
     ___ test_big_number
-        series = "52677741234314237566414902593461595376319419139427"
+        series "52677741234314237566414902593461595376319419139427"
         assertEqual(28350, largest_product(series, 6
 
     ___ test_identity

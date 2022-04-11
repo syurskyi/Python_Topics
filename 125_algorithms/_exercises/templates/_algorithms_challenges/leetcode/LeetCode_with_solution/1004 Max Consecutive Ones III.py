@@ -39,10 +39,10 @@ c_ Solution:
 
         Sliding Window: Find the longest subarray with at most K zeros.
         """
-        i, j = 0, 0
-        cnt_0 = 0
-        n = l..(A)
-        ret = 0
+        i, j 0, 0
+        cnt_0 0
+        n l..(A)
+        ret 0
         w.... i < n a.. j < n:
             w.... j < n:
                 __ A[j] __ 0 a.. cnt_0 < K:
@@ -53,7 +53,7 @@ c_ Solution:
                 ____
                     _____
 
-            ret = m..(ret, j - i)
+            ret m..(ret, j - i)
             __ A[i] __ 0:
                 cnt_0 -_ 1
             i += 1

@@ -11,10 +11,10 @@ c_ ZigzagIterator2:
     @param: vecs: a list of 1d vectors
     """
     ___ - , vecs
-        g = vecs
-        x = 0
-        y = 0
-        max_y = m..(l..(vec) ___ vec __ vecs)
+        g vecs
+        x 0
+        y 0
+        max_y m..(l..(vec) ___ vec __ vecs)
 
     """
     @return: An integer
@@ -23,8 +23,8 @@ c_ ZigzagIterator2:
         __ n.. hasNext
             r.. -1
 
-        x = x
-        y = y
+        x x
+        y y
 
         x += 1
 
@@ -42,7 +42,7 @@ c_ ZigzagIterator2:
                 r.. T..
 
             __ x >_ l..(g
-                x = 0
+                x 0
                 y += 1
 
             __ y >_ l..(g[x]
@@ -56,7 +56,7 @@ c_ ZigzagIterator2:
     @param: vecs: a list of 1d vectors
     """
     ___ - , vecs
-        queue = [vec ___ vec __ vecs __ vec]
+        queue [vec ___ vec __ vecs __ vec]
 
     """
     @return: An integer
@@ -65,8 +65,8 @@ c_ ZigzagIterator2:
         __ n.. hasNext
             r.. -1
 
-        vec = queue.p.. 0)
-        val = vec.p.. 0)
+        vec queue.p.. 0)
+        val vec.p.. 0)
 
         __ vec:
             queue.a..(vec)

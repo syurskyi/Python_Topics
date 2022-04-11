@@ -3,7 +3,7 @@ _______ __
 ____ u__.r.. _______ u..
 ____ c.. _______ d..
 
-BATTLE_DATA = __.p...j..('/tmp', 'battle-table.csv')
+BATTLE_DATA __.p...j..('/tmp', 'battle-table.csv')
 __ n.. __.p...i..(BATTLE_DATA
     u..('https://bit.ly/2U3oHft', BATTLE_DATA)
 
@@ -12,11 +12,11 @@ ___ _create_defeat_mapping
     """Parse battle-table.csv building up a defeat_mapping dict
        with keys = attackers / values = who they defeat.
     """
-    result = d..(d..)
+    result d..(d..)
     w__ o.. BATTLE_DATA) __ b:
-        reader = csv.DictReader(b)
+        reader csv.DictReader(b)
         ___ row __ reader:
-            result[row 'Attacker']] = row
+            result[row 'Attacker']] row
     r.. result
 
 
@@ -30,7 +30,7 @@ ___ get_winner(player1, player2, defeat_mapping_ N..
 
        Raise a ValueError if invalid player strings are passed in.
     """
-    defeat_mapping = defeat_mapping o. _create_defeat_mapping()
+    defeat_mapping defeat_mapping o. _create_defeat_mapping()
     __ player1 n.. __ defeat_mapping o. player2 n.. __ defeat_mapping:
         r.. V...()
     r.. {'win': player1,

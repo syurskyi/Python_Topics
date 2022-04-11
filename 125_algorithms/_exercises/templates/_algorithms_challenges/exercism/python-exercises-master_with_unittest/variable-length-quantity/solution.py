@@ -1,9 +1,9 @@
-EIGHTBITMASK = 0x80
-SEVENBITSMASK = 0x7f
+EIGHTBITMASK 0x80
+SEVENBITSMASK 0x7f
 
 
 ___ encode_single(n
-    bytes = [n & SEVENBITSMASK]
+    bytes [n & SEVENBITSMASK]
     n >>= 7
 
     w.... n > 0:
@@ -19,7 +19,7 @@ ___ encode(numbers
 
 ___ d.. bytes
     values    # list
-    n = 0
+    n 0
 
     ___ i, byte __ e..(bytes
         n <<= 7
@@ -27,7 +27,7 @@ ___ d.. bytes
 
         __ byte & EIGHTBITMASK __ 0:
             values.a..(n)
-            n = 0
+            n 0
         ____ i __ l..(bytes) - 1:
             r.. V...('incomplete byte sequence')
 

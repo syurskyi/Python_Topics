@@ -5,9 +5,9 @@ c_ Solution(o..
     :type target: int
     :rtype: List[int]
     """
-    start, end = 0, l..(nums) - 1
+    start, end 0, l..(nums) - 1
     w.... start < end:
-      s = nums[start] + nums[end]
+      s nums[start] + nums[end]
       __ s > target:
         end -_ 1
       ____ s < target:

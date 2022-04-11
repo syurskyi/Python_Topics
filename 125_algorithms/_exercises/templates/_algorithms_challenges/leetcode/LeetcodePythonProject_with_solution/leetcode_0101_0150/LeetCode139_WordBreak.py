@@ -11,17 +11,17 @@ c_ Solution(o..
         :type wordDict: List[str]
         :rtype: bool
         """
-        wordDict = s..(wordDict)
-        dp = [F..]*(l..(s)+1)
-        dp[0] = T..
+        wordDict s..(wordDict)
+        dp [F..]*(l..(s)+1)
+        dp[0] T..
         ___ i __ r..(l..(s:
             __ n.. dp[i]:
                 _____
             ___ word __ wordDict:
-                end = i+l..(word)
-                sub = s[i:end]
+                end i+l..(word)
+                sub s[i:end]
                 __ sub __ word:
-                    dp[end] = T..
+                    dp[end] T..
         r.. dp[-1]
     
     ___ test

@@ -9,10 +9,10 @@ c_ Solution(o..
         :type rooms: List[List[int]]
         :rtype: bool
         """
-        dfs = [0]
-        seen = s..(dfs)
+        dfs [0]
+        seen s..(dfs)
         w.... dfs:
-            i = dfs.p.. )
+            i dfs.p.. )
             ___ j __ rooms[i]:
                 __ j n.. __ seen:
                     dfs.a..(j)
@@ -22,7 +22,7 @@ c_ Solution(o..
         r.. l..(seen) __ l..(rooms)
     
     ___ test
-        testCases = [
+        testCases [
             [[1],[2],[3],[]],
             [[1,3],[3,0,1],[2],[0]],
             [[2,3],[],[2],[1,3,1]],
@@ -30,7 +30,7 @@ c_ Solution(o..
         ]
         ___ rooms __ testCases:
             print('rooms: %s' % rooms)
-            res = canVisitAllRooms(rooms)
+            res canVisitAllRooms(rooms)
             print('res: %s' % res)
             print('-='*30+'-')
 

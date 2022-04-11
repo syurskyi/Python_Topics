@@ -2,7 +2,7 @@ _______ j__
 ____ io _______ StringIO
 _______ p.... __ pd
 
-members = """
+members """
 id,first_name,last_name,email
 1,Junie,Kybert;jkybert0@army.mil
 2,Sid,Churching|schurching1@tumblr.com
@@ -21,11 +21,11 @@ ___ convert_to_json(members=members
 
 
 
-    data = StringIO(members)
+    data StringIO(members)
 
 
-    data = pd.read_csv(data,dtype=s..,sep=r"\,|;|\|")
-    value = data.to_json(orient='records')
+    data pd.read_csv(data,dtype=s..,sep=r"\,|;|\|")
+    value data.to_json(orient='records')
     r.. value
 
 

@@ -4,7 +4,7 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        ans = 0
+        ans 0
         ___ num __ nums:
             ans ^= num
         r.. ans

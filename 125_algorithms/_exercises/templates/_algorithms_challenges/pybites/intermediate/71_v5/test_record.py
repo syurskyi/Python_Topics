@@ -6,7 +6,7 @@ ____ record _______ RecordScore
 ?p__.f..()
 ___ record
     """Make a RecordScore object with a few scores"""
-    record = RecordScore()
+    record RecordScore()
     record(10)
     record(9)
     record(11)  # initial max

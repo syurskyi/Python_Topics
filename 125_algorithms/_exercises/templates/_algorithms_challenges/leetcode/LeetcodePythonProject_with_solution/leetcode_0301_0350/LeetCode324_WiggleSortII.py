@@ -1,11 +1,11 @@
 
 c_ Solution(o..
     ___ wiggleSort  nums
-        median = kthLargestElement(nums, (l..(nums)+1)//2)
-        n = l..(nums)
-        left = 0
-        i = 0
-        right = n-1
+        median kthLargestElement(nums, (l..(nums)+1)//2)
+        n l..(nums)
+        left 0
+        i 0
+        right n-1
         w.... i <_ right:
             __ nums[newIndex(i, n)] > median:
                 nums[newIndex(left, n)], nums[newIndex(i, n)] =\
@@ -24,21 +24,21 @@ c_ Solution(o..
     
     ___ kthLargestElement  nums, k
         shuffle(nums)
-        lo = 0
-        hi = l..(nums)-1
-        k = l..(nums)-k
+        lo 0
+        hi l..(nums)-1
+        k l..(nums)-k
         w.... lo < hi:
-            j = partition(nums, lo, hi)
+            j partition(nums, lo, hi)
             __ j < k:
-                lo = j+1
+                lo j+1
             ____ j > k:
-                hi = j-1
+                hi j-1
             ____
                 _____
         r.. nums[k]
     
     ___ partition  nums, lo, hi
-        i, j = lo+1, hi
+        i, j lo+1, hi
         w... T...
             w.... i < hi a.. nums[i] <_ nums[lo]:
                 i += 1
@@ -46,23 +46,23 @@ c_ Solution(o..
                 j -_ 1
             __ i >_ j:
                 _____
-            nums[i], nums[j] = nums[j], nums[i]
-        nums[lo], nums[j] = nums[j], nums[lo]
+            nums[i], nums[j] nums[j], nums[i]
+        nums[lo], nums[j] nums[j], nums[lo]
         r.. j
     
     ___ shuffle  nums
         _______ r__
         ___ i __ r..(l..(nums)-1, 0, -1
-            ind = r__.r..(0, i)
-            nums[i], nums[ind] = nums[ind], nums[i]
+            ind r__.r..(0, i)
+            nums[i], nums[ind] nums[ind], nums[i]
     
     ___ wiggleSortWithSorting  nums
         nums.s..()
-        half = l..(nums[::2])-1
-        nums[::2], nums[1::2] = nums[half::-1], nums[:half:-1]
+        half l..(nums[::2])-1
+        nums[::2], nums[1::2] nums[half::-1], nums[:half:-1]
     
     ___ test
-        testCases = [
+        testCases [
             [1, 5, 1, 1, 6, 4],
             [1, 3, 2, 2, 3, 1],
             [1, 2, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2],

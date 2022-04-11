@@ -7,7 +7,7 @@ c_ Solution(o..
     ____
       rs    # list
       rs += combine(n - 1, k)
-      part = combine(n - 1, k - 1)
+      part combine(n - 1, k - 1)
       ___ ls __ part:
         ls.a..(n)
       rs += part

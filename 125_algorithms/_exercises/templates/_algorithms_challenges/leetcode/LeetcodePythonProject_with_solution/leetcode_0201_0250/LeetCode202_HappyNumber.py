@@ -10,28 +10,28 @@ c_ Solution(o..
         :type n: int
         :rtype: bool
         """
-        hashset = s..()
+        hashset s..()
         hashset.add(n)
         w.... n != 1:
-            num = 0
+            num 0
             w.... n > 0:
                 num += (n % 10)**2
-                n = i..(n/10)
+                n i..(n/10)
             __ num __ hashset:
                 r.. F..
             hashset.add(num)
-            n = num
+            n num
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             19,
             1,
             20,
         ]
         ___ n __ testCases:
             print('n: %s' % (n
-            result = isHappy(n)
+            result isHappy(n)
             print('result: %s' % (result
             print('-='*20+'-')
 

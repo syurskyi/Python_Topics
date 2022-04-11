@@ -83,20 +83,20 @@ c_ Solution:
         __ n.. root o. n.. target:
             r..
 
-        ans = N..
+        ans N..
 
         __ target.right:
-            ans = target.right
+            ans target.right
             w.... ans a.. ans.left:
-                ans = ans.left
+                ans ans.left
             r.. ans
 
         w.... root a.. target.val != root.val:
             __ target.val < root.val:
-                ans = root
-                root = root.left
+                ans root
+                root root.left
             ____
-                root = root.right
+                root root.right
 
         r.. ans
 
@@ -117,22 +117,22 @@ c_ Solution2:
             r..
 
         stack    # list
-        node = root
-        got_target = F..
+        node root
+        got_target F..
 
         w.... node o. stack:
             w.... node:
                 stack.a..(node)
-                node = node.left
+                node node.left
 
-            node = stack.p.. )
+            node stack.p.. )
 
             __ got_target:
                 r.. node
             __ node.val __ target.val:
-                got_target = T..
+                got_target T..
 
-            node = node.right
+            node node.right
 
 
 c_ Solution3:
@@ -152,18 +152,18 @@ c_ Solution3:
         __ n.. root o. n.. target:
             r..
 
-        ans = N..
+        ans N..
 
         __ target.right:
-            ans = target.right
+            ans target.right
             w.... ans a.. ans.left:
-                ans = ans.left
+                ans ans.left
             r.. ans
 
-        ans = target.parent
+        ans target.parent
         w.... ans a.. target __ ans.right:
-            target = ans
-            ans = ans.parent
+            target ans
+            ans ans.parent
 
         r.. ans
 
@@ -186,13 +186,13 @@ c_ Solution4:
             r..
 
         __ target.right:
-            ans = target.right
+            ans target.right
             w.... ans a.. ans.left:
-                ans = ans.left
+                ans ans.left
             r.. ans
 
-        ans = target.parent
+        ans target.parent
         w.... ans a.. ans.val < target.val:
-            ans = ans.parent
+            ans ans.parent
 
         r.. ans

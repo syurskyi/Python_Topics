@@ -9,26 +9,26 @@ _______ s__
 
 _______ r__
 
-DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
-TMP = P..(__.g..("TMP", "/tmp"
+DATA_URL 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
+TMP P..(__.g..("TMP", "/tmp"
 
-salt = ''.j..(
+salt ''.j..(
     r__.c..(s__.a..) ___ i __ r..(20)
 )
-DB = TMP / f'nba_{salt}.db'
+DB TMP / f'nba_{salt}.db'
 
-Player = n..('Player', ('name year first_year team college active '
+Player n..('Player', ('name year first_year team college active '
                                'games avg_min avg_points'
 
-conn = sqlite3.connect(DB)
-cur = conn.cursor()
+conn sqlite3.connect(DB)
+cur conn.cursor()
 
 
 ___ import_data
     w__ r__.S.. __ session:
-        content = session.g.. DATA_URL).content.d.. 'utf-8')
+        content session.g.. DATA_URL).content.d.. 'utf-8')
 
-    reader = csv.DictReader(content.s.. , delimiter=',')
+    reader csv.DictReader(content.s.. , delimiter=',')
 
     players    # list
     ___ row __ reader:
@@ -54,11 +54,11 @@ import_data()
 
 # you code:
 
-nba = pd.read_sql('SELECT * FROM players',conn)
+nba pd.read_sql('SELECT * FROM players',conn)
 
 
 
-nba = nba.apply(pd.to_numeric,errors='ignore')
+nba nba.apply(pd.to_numeric,errors='ignore')
 
 
 

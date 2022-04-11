@@ -18,7 +18,7 @@ Another possible reconstruction is ["JFK","SFO","ATL","JFK","ATL","SFO"]. But it
 _______ heapq
 ____ c.. _______ d.., d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -36,11 +36,11 @@ c_ Solution(o..
         :type tickets: List[List[str]]
         :rtype: List[str]
         """
-        G = d..(l..)  # every list is a heap
+        G d..(l..)  # every list is a heap
         ___ s, e __ tickets:
             heapq.heappush(G[s], e)  # heap lexical order
 
-        ret = d..()
+        ret d..()
         dfs(G, 'JFK', ret)
         r.. l..(ret)
 

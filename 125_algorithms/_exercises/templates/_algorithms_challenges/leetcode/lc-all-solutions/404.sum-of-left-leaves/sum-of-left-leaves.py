@@ -15,9 +15,9 @@ c_ Solution(o..
     ___ helper(root, isLeft
       __ n.. root:
         r.. N..
-      left = helper(root.left, T..)
-      right = helper(root.right, F..)
-      ret = 0
+      left helper(root.left, T..)
+      right helper(root.right, F..)
+      ret 0
       __ left __ N.. a.. right __ N.. a.. isLeft:
         r.. root.val
       __ left:
@@ -26,7 +26,7 @@ c_ Solution(o..
         ret += right
       r.. ret
 
-    ret = helper(root, F..)
+    ret helper(root, F..)
     __ ret:
       r.. ret
     r.. 0

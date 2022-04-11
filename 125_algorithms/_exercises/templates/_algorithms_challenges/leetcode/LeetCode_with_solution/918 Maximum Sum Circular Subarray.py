@@ -58,40 +58,40 @@ c_ Solution:
         (A0 + A1 + .. + Ai) + (Aj + ... + An-1)
         = sum(A) - (Ai+1 + ... + Aj-1)
         """
-        ret1 = max_subarray(A)
-        ret2 = s..(A) + max_subarray([-a ___ a __ A[1:-1]])  # max negative (-1)
+        ret1 max_subarray(A)
+        ret2 s..(A) + max_subarray([-a ___ a __ A[1:-1]])  # max negative (-1)
         r.. m..(ret1, ret2)
 
     ___ max_subarray  A) __ i..:
         """
         dp[i] = A[i] + max(dp[i-1],0)
         """
-        mx = -f__('inf')
-        cur = 0
+        mx -f__('inf')
+        cur 0
         ___ a __ A:
-            cur = a + m..(cur, 0)  # RHS cur is the prev
-            mx = m..(mx, cur)
+            cur a + m..(cur, 0)  # RHS cur is the prev
+            mx m..(mx, cur)
         r.. mx
 
     ___ maxSubarraySumCircular_error  A: L..[i..]) __ i..:
         """
         keep a cur_sum with index, when negative, go back to 0
         """
-        cur = [0, N..]
-        mx = -f__('inf')
-        i = 0
-        j = 0
-        n = l..(A)
+        cur [0, N..]
+        mx -f__('inf')
+        i 0
+        j 0
+        n l..(A)
         w.... i < n:
             cur[0] += A[i]
-            cur[1] = i
-            mx = m..(mx, cur[0])
-            j = i + 1
+            cur[1] i
+            mx m..(mx, cur[0])
+            j i + 1
             w.... cur[0] >_ 0 a.. j < i + n:
                 cur[0] += A[j % n]
-                mx = m..(mx, cur[0])
+                mx m..(mx, cur[0])
                 j += 1
 
-            i = j
+            i j
 
         r.. mx

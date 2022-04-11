@@ -9,11 +9,11 @@ c_ Solution(o..
         __ n.. stones: r.. F..
         hashmap    # dict
         ___ stone __ stones:
-            hashmap[stone] = s..()
-        hashmap[0] = s..([1])
+            hashmap[stone] s..()
+        hashmap[0] s..([1])
         ___ stone __ stones:
             ___ step __ hashmap[stone]:
-                reach = step+stone
+                reach step+stone
                 __ reach __ stones[-1]:
                     r.. T..
                 __ reach __ hashmap:
@@ -24,7 +24,7 @@ c_ Solution(o..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             [0,1,3,5,6,8,12,17], # True
             [0,1,2,3,4,8,9,11], # False
         ]

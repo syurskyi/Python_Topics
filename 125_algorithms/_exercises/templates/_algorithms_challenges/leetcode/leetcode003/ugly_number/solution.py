@@ -16,7 +16,7 @@ c_ Solution(o..
         """
         __ num __ 0:
             r.. F..
-        factors = [2, 3, 5]
+        factors [2, 3, 5]
         ___ factor __ factors:
             w.... num % factor __ 0:
                 num /= factor
@@ -25,7 +25,7 @@ c_ Solution(o..
         r.. F..
 
 
-s = Solution()
+s Solution()
 print s.isUgly(10)
 print s.isUgly(6)
 print s.isUgly(14)

@@ -5,18 +5,18 @@ c_ Solution:
     @return: the ans of this question
     """
     ___ sameNumber  nums, k
-        RES = ('NO', 'YES')
+        RES ('NO', 'YES')
 
         __ n.. nums o. n.. k:
             r.. RES[0]
 
         idx    # dict
-        gotcha = F..
+        gotcha F..
 
         ___ i __ r..(l..(nums:
             __ nums[i] __ idx a.. i - idx[nums[i]] < k:
-                gotcha = T..
+                gotcha T..
 
-            idx[nums[i]] = i
+            idx[nums[i]] i
 
         r.. RES[i..(gotcha)]

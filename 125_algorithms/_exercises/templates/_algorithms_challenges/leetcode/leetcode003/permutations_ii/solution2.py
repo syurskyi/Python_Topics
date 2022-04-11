@@ -20,13 +20,13 @@ c_ Solution(o..
             r.. [[]]
         ____
             res    # list
-            prev = N..
+            prev N..
             ___ i, e __ e..(nums
                 __ prev __ N.. o. prev != e:
-                    rest = nums[:i] + nums[i + 1:]
-                    rest_perms = permute(rest)
+                    rest nums[:i] + nums[i + 1:]
+                    rest_perms permute(rest)
                     ___ perm __ rest_perms:
                         perm.a..(e)
                     res += rest_perms
-                    prev = e
+                    prev e
             r.. res

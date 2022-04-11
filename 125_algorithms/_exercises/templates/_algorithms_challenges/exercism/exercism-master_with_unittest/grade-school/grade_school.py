@@ -3,11 +3,11 @@ ____ c.. _______ d..
 
 c_ School:
     ___ -
-        db = d..(l..)
+        db d..(l..)
 
     ___ add_student  name, grade
         db[grade].a..(name)
-        db[grade] = s..(db[grade])
+        db[grade] s..(db[grade])
 
     ___ roster
         all_student_names    # list

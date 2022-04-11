@@ -9,9 +9,9 @@ c_ Solution:
     """
     @classmethod
     ___ create(cls, n, k
-        solution = cls()
-        solution.n = n
-        solution.k = k
+        solution cls()
+        solution.n n
+        solution.k k
         solution.p2l    # dict # point to location
         solution.l2p    # dict # location to points
         r.. solution
@@ -21,13 +21,13 @@ c_ Solution:
     @return: a list of shard ids
     """
     ___ addMachine  machine_id
-        item = l2p[machine_id]    # list
-        point = -1
+        item l2p[machine_id]    # list
+        point -1
         ___ i __ r..(k
-            point = r__.r..(0, n - 1)
+            point r__.r..(0, n - 1)
             w.... point __ p2l:
-                point = r__.r..(0, n - 1)
-            p2l[point] = machine_id
+                point r__.r..(0, n - 1)
+            p2l[point] machine_id
             item.a..(point)
         item.s..()
         r.. item
@@ -37,8 +37,8 @@ c_ Solution:
     @return: A machine id
     """
     ___ getMachineIdByHashCode  hashcode
-        points = s..(p2l.keys
-        index = b__.bisect_left(points, hashcode) % l..(points)
+        points s..(p2l.keys
+        index b__.bisect_left(points, hashcode) % l..(points)
         # # counterclockwise
         # index = bisect.bisect(points, hashcode) - 1
         # if index < 0:

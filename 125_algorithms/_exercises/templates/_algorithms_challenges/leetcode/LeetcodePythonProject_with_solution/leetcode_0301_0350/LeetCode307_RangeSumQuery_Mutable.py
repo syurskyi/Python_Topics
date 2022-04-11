@@ -5,11 +5,11 @@ Created on May 9, 2018
 '''
 c_ TreeNode(o..
     ___ - , start, end, sumVal=0
-        sumVal = sumVal
-        start = start
-        end = end
-        left = N..
-        right = N..
+        sumVal sumVal
+        start start
+        end end
+        left N..
+        right N..
 
 c_ NumArray(o..
 
@@ -18,20 +18,20 @@ c_ NumArray(o..
         :type nums: List[int]
         """
         __ n.. nums:
-            root = N..
+            root N..
         ____
-            root = buildTree(nums, 0, l..(nums)-1)
+            root buildTree(nums, 0, l..(nums)-1)
     
     ___ buildTree  nums, i, j
         __ n.. nums o. i > j:
             r.. N..
         __ i __ j:
             r.. TreeNode(i, j, nums[i])
-        root = TreeNode(i, j, -1)
-        mid = (i+j)//2
-        root.left = buildTree(nums, i, mid)
-        root.right = buildTree(nums, mid+1, j)
-        root.sumVal = root.left.sumVal+root.right.sumVal
+        root TreeNode(i, j, -1)
+        mid (i+j)//2
+        root.left buildTree(nums, i, mid)
+        root.right buildTree(nums, mid+1, j)
+        root.sumVal root.left.sumVal+root.right.sumVal
         r.. root
 
     ___ update  i, val
@@ -45,14 +45,14 @@ c_ NumArray(o..
     ___ updateHelper  root, i, val
         __ n.. root: r..
         __ i __ root.start a.. i __ root.end:
-            root.sumVal = val
+            root.sumVal val
             r..
-        mid = (root.start+root.end)//2
+        mid (root.start+root.end)//2
         __ i <_ mid:
             updateHelper(root.left, i, val)
         ____
             updateHelper(root.right, i, val)
-        root.sumVal = root.left.sumVal+root.right.sumVal
+        root.sumVal root.left.sumVal+root.right.sumVal
     
     ___ sumRange  i, j
         """
@@ -67,7 +67,7 @@ c_ NumArray(o..
             r.. 0
         __ i __ root.start a.. j __ root.end:
             r.. root.sumVal
-        mid = (root.start+root.end)//2
-        res = sumRangeHelper(root.left, i, m..(j, mid+\
+        mid (root.start+root.end)//2
+        res sumRangeHelper(root.left, i, m..(j, mid+\
             sumRangeHelper(root.right, m..(i, mid+1), j)
         r.. res

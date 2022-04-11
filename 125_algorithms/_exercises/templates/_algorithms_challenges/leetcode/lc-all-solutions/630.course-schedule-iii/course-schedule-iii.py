@@ -16,7 +16,7 @@ c_ Solution(o..
     :type courses: List[List[int]]
     :rtype: int
     """
-    now = 0
+    now 0
     heap    # list
     ___ t, d __ s..(courses, key=l.... x: x[1]
       __ now + t <_ d:

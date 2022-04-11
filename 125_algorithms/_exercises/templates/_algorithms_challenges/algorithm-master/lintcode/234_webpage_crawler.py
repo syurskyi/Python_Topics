@@ -2,18 +2,18 @@ ____ threading _______ Thread
 ____ Queue _______ Queue
 ____ urlparse _______ urlparse
 
-queue = Queue()
+queue Queue()
 results    # dict
 
 c_ CrawlerThread(Thread
     ___ run
         g.. queue, results
         w... T...
-            url = queue.g.. )
+            url queue.g.. )
             __ url n.. __ results \
                 a.. urlparse(url).hostname.e.. "wikipedia.org"
-                results[url] = T..
-                urls = HtmlHelper.parseUrls(url)
+                results[url] T..
+                urls HtmlHelper.parseUrls(url)
                 ___ url __ urls:
                     queue.put(url)
             queue.task_done()

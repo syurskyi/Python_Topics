@@ -8,19 +8,19 @@ ____ rest_api _______ RestAPI
 
 c_ RestAPITest(unittest.TestCase
     ___ test_no_users
-        database = {"users": []}
-        api = RestAPI(database)
-        response = api.g.. '/users')
+        database {"users": []}
+        api RestAPI(database)
+        response api.g.. '/users')
         assertDictEqual(j__.l.. (response), database)
 
     ___ test_add_user
-        database = {"users": []}
-        api = RestAPI(database)
-        payload = j__.d..{
+        database {"users": []}
+        api RestAPI(database)
+        payload j__.d..{
             'user': 'Adam'
         })
-        response = api.post('/add', payload)
-        e.. = {
+        response api.post('/add', payload)
+        e.. {
             'name': 'Adam',
             'owes': {},
             'owed_by': {},
@@ -29,7 +29,7 @@ c_ RestAPITest(unittest.TestCase
         assertDictEqual(j__.l.. (response), e..)
 
     ___ test_get_single_user
-        database = {
+        database {
             'users': [
                 {
                     'name': 'Adam',
@@ -45,12 +45,12 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        api = RestAPI(database)
-        payload = j__.d..{
+        api RestAPI(database)
+        payload j__.d..{
             'users':  'Bob'
         })
-        response = api.g.. '/users', payload)
-        e.. = {
+        response api.g.. '/users', payload)
+        e.. {
             'users': [
                 {
                     'name': 'Bob',
@@ -63,7 +63,7 @@ c_ RestAPITest(unittest.TestCase
         assertDictEqual(j__.l.. (response), e..)
 
     ___ test_iou_both_users_have_0_balance
-        database = {
+        database {
             'users': [
                 {
                     'name': 'Adam',
@@ -79,14 +79,14 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        api = RestAPI(database)
-        payload = j__.d..{
+        api RestAPI(database)
+        payload j__.d..{
             'lender': 'Adam',
             'borrower': 'Bob',
             'amount': 3
         })
-        response = api.post('/iou', payload)
-        e.. = {
+        response api.post('/iou', payload)
+        e.. {
             'users': [
                 {
                     'name': 'Adam',
@@ -109,7 +109,7 @@ c_ RestAPITest(unittest.TestCase
         assertDictEqual(j__.l.. (response), e..)
 
     ___ test_borrower_has_negative_balance
-        database = {
+        database {
             'users': [
                 {
                     'name': 'Adam',
@@ -135,14 +135,14 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        api = RestAPI(database)
-        payload = j__.d..{
+        api RestAPI(database)
+        payload j__.d..{
             'lender': 'Adam',
             'borrower': 'Bob',
             'amount': 3
         })
-        response = api.post('/iou', payload)
-        e.. = {
+        response api.post('/iou', payload)
+        e.. {
             'users': [
                 {
                     'name': 'Adam',
@@ -166,7 +166,7 @@ c_ RestAPITest(unittest.TestCase
         assertDictEqual(j__.l.. (response), e..)
 
     ___ test_lender_has_negative_balance
-        database = {
+        database {
             'users': [
                 {
                     'name': 'Adam',
@@ -192,14 +192,14 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        api = RestAPI(database)
-        payload = j__.d..{
+        api RestAPI(database)
+        payload j__.d..{
             'lender': 'Bob',
             'borrower': 'Adam',
             'amount': 3
         })
-        response = api.post('/iou', payload)
-        e.. = {
+        response api.post('/iou', payload)
+        e.. {
             'users': [
                 {
                     'name': 'Adam',
@@ -224,7 +224,7 @@ c_ RestAPITest(unittest.TestCase
         assertDictEqual(j__.l.. (response), e..)
 
     ___ test_lender_owes_borrower
-        database = {
+        database {
             "users": [
                 {
                     "name": "Adam",
@@ -244,14 +244,14 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        api = RestAPI(database)
-        payload = j__.d..{
+        api RestAPI(database)
+        payload j__.d..{
             'lender': 'Adam',
             'borrower': 'Bob',
             'amount': 2
         })
-        response = api.post('/iou', payload)
-        e.. = {
+        response api.post('/iou', payload)
+        e.. {
             'users': [
                 {
                     "name": "Adam",
@@ -274,7 +274,7 @@ c_ RestAPITest(unittest.TestCase
         assertDictEqual(j__.l.. (response), e..)
 
     ___ test_lender_owes_borrower_less_than_new_loan
-        database = {
+        database {
             "users": [
                 {
                     "name": "Adam",
@@ -294,14 +294,14 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        api = RestAPI(database)
-        payload = j__.d..{
+        api RestAPI(database)
+        payload j__.d..{
             'lender': 'Adam',
             'borrower': 'Bob',
             'amount': 4.0
         })
-        response = api.post('/iou', payload)
-        e.. = {
+        response api.post('/iou', payload)
+        e.. {
             'users': [
                 {
                     "name": "Adam",
@@ -326,7 +326,7 @@ c_ RestAPITest(unittest.TestCase
         assertDictEqual(j__.l.. (response), e..)
 
     ___ test_lender_owes_borrower_same_as_new_loan
-        database = {
+        database {
             "users": [
                 {
                     "name": "Adam",
@@ -346,14 +346,14 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        api = RestAPI(database)
-        payload = j__.d..{
+        api RestAPI(database)
+        payload j__.d..{
             'lender': 'Adam',
             'borrower': 'Bob',
             'amount': 3.0
         })
-        response = api.post('/iou', payload)
-        e.. = {
+        response api.post('/iou', payload)
+        e.. {
             'users': [
                 {
                     "name": "Adam",

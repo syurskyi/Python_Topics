@@ -23,28 +23,28 @@ c_ Solution:
     # @param obstacleGrid, a list of lists of integers
     # @return an integer
     ___ uniquePathsWithObstacles  obstacleGrid
-        n = l..(obstacleGrid)
-        m = l..(obstacleGrid[0])
-        t = [[-1 ___ i __ r..(m)] ___ j __ r..(n)]
+        n l..(obstacleGrid)
+        m l..(obstacleGrid[0])
+        t [[-1 ___ i __ r..(m)] ___ j __ r..(n)]
         r.. unique_paths(obstacleGrid, m - 1, n - 1, t)
 
     ___ unique_paths  grid, x, y, t
         __ x __ 0 a.. y __ 0:
-            t[y][x] = 1 __ grid[y][x] __ 0 ____ 0
+            t[y][x] 1 __ grid[y][x] __ 0 ____ 0
             r.. t[y][x]
         ____ grid[y][x] __ 1:
-            t[y][x] = 0
+            t[y][x] 0
             r.. t[y][x]
         ____ t[y][x] != -1:
             r.. t[y][x]
         ____ x > 0 a.. y __ 0:
-            t[y][x] = unique_paths(grid, x - 1, y, t)
+            t[y][x] unique_paths(grid, x - 1, y, t)
             r.. t[y][x]
         ____ y > 0 a.. x __ 0:
-            t[y][x] = unique_paths(grid, x, y - 1, t)
+            t[y][x] unique_paths(grid, x, y - 1, t)
             r.. t[y][x]
         ____
-            a = unique_paths(grid, x - 1, y, t)
-            b = unique_paths(grid, x, y - 1, t)
-            t[y][x] = a + b
+            a unique_paths(grid, x - 1, y, t)
+            b unique_paths(grid, x, y - 1, t)
+            t[y][x] a + b
             r.. t[y][x]

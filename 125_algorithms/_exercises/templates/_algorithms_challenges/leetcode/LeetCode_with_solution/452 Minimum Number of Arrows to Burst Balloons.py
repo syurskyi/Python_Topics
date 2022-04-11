@@ -29,8 +29,8 @@ _______ heapq
 
 c_ Balloon:
     ___ - , s, e
-        s = s
-        e = e
+        s s
+        e e
 
     ___ __lt__  other
         # __cmp__ removed in py3
@@ -48,11 +48,11 @@ c_ Solution:
         :type points: List[List[int]]
         :rtype: int
         """
-        ret = 0
+        ret 0
         points.s..(key=l.... x: x[0])
         heap    # list
         ___ point __ points:
-            s, e = point
+            s, e point
             __ heap a.. heap[0].e < s:
                 ret += 1
                 heap    # list

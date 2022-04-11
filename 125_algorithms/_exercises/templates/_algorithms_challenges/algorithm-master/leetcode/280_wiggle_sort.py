@@ -13,4 +13,4 @@ c_ Solution:
             __ i & 1 __ 0 a.. nums[i] <_ nums[i - 1]:
                 _____
 
-            nums[i], nums[i - 1] = nums[i - 1], nums[i]
+            nums[i], nums[i - 1] nums[i - 1], nums[i]

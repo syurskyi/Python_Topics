@@ -3,7 +3,7 @@ ____ f.. _______ wraps
 ___ int_inputs(func
     $w.. f..
     ___ wrapper $
-        newargs = [i..(a) ___ a __ args]
+        newargs [i..(a) ___ a __ args]
         r.. func(*newargs)
     r.. wrapper
 

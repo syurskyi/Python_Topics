@@ -7,8 +7,8 @@ c_ Solution:
         __ n.. P:
             r.. 0
 
-        K = 2
-        STAGE = 2 * K + 1
+        K 2
+        STAGE 2 * K + 1
 
         """
         `dp[i][j]` means the `i`th day at the `j`th stage
@@ -21,13 +21,13 @@ c_ Solution:
         note that, `dp[i][0]` means always stay in stage 0,
         so its never going to be profitable
         """
-        dp = [[0] * STAGE ___ _ __ r..(2)]
+        dp [[0] * STAGE ___ _ __ r..(2)]
 
-        i = j = prev = curr = profit = 0
+        i j prev curr profit 0
         ___ i __ r..(1, l..(P:
-            prev = curr
-            curr = 1 - curr
-            profit = P[i] - P[i - 1]
+            prev curr
+            curr 1 - curr
+            profit P[i] - P[i - 1]
             ___ j __ r..(1, STAGE, 2
                 """
                 in stage 1 and 3, holding a stock
@@ -38,7 +38,7 @@ c_ Solution:
                    just makes a buying today, so no profit
                 choose the maximum
                 """
-                dp[curr][j] = m..(dp[prev][j] + profit, dp[prev][j - 1])
+                dp[curr][j] m..(dp[prev][j] + profit, dp[prev][j - 1])
             ___ j __ r..(2, STAGE, 2
                 """
                 in stage 2 and 4, holding no any stock
@@ -49,6 +49,6 @@ c_ Solution:
                    and gains profit (may be negative) today
                 choose the maximum
                 """
-                dp[curr][j] = m..(dp[prev][j], dp[prev][j - 1] + profit)
+                dp[curr][j] m..(dp[prev][j], dp[prev][j - 1] + profit)
 
         r.. m..(dp[curr])

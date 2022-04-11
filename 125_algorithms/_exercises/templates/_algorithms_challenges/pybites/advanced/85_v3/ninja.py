@@ -1,13 +1,13 @@
-scores = [10, 50, 100, 175, 250, 400, 600, 800, 1000]
-ranks = 'white yellow orange green blue brown black paneled red'.s..
-BELTS = d..(z..(scores, ranks
+scores [10, 50, 100, 175, 250, 400, 600, 800, 1000]
+ranks 'white yellow orange green blue brown black paneled red'.s..
+BELTS d..(z..(scores, ranks
 
 
 c_ NinjaBelt:
 
     ___ - , score=0
-        _score = score
-        _last_earned_belt_number = N..
+        _score score
+        _last_earned_belt_number N..
 
     $
     ___ _last_earned_belt
@@ -31,13 +31,13 @@ c_ NinjaBelt:
             r.. V...('Score can only be an integer')
         __ _score > new_score:
             r.. V... _*New score ({new_score}) must be higher than previous score ({_score})')
-        _score = new_score
-        belt = _get_belt(new_score)
+        _score new_score
+        belt _get_belt(new_score)
         __ _last_earned_belt __ N.. o. _last_earned_belt_number < belt:
-            _last_earned_belt_number = belt
+            _last_earned_belt_number belt
             print _*Congrats, you earned {new_score} points obtaining the PyBites Ninja '
                   f'{_last_earned_belt.t..} Belt')
         ____
             print _*S.. new score to {new_score}')
 
-    score = property(_get_score, _set_score)
+    score property(_get_score, _set_score)

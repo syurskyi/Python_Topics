@@ -9,16 +9,16 @@ c_ Solution(o..
         :type N: int
         :rtype: int
         """
-        n = N
-        i = 0
-        prev = -1
-        res = 0
+        n N
+        i 0
+        prev -1
+        res 0
         w.... n > 0:
-            d = n % 2
+            d n % 2
             __ d __ 1:
                 __ prev >_ 0:
-                    res = m..(res, i-prev)
-                prev = i
+                    res m..(res, i-prev)
+                prev i
             n //= 2
             i += 1
         r.. res

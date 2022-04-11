@@ -87,7 +87,7 @@ ___ test_translate_cds(cds, table, e..
     """
     Test if returned protein sequence and type are correct
     """
-    result = translate_cds(cds, table)
+    result translate_cds(cds, table)
     ... isi..(result, s..)
     ... result.u.. __ e..
 

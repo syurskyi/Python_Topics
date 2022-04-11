@@ -21,20 +21,20 @@ c_ Solution(o..
         :rtype: ListNode
         """
         d    # dict
-        current = head
+        current head
         w.... current __ n.. N..
             __ current.val n.. __ d:
-                d[current.val] = 1
+                d[current.val] 1
             ____
                 d[current.val] += 1
-            current = current.next
-        current = head
-        dummy = ListNode(0)
-        dummy_end = dummy
+            current current.next
+        current head
+        dummy ListNode(0)
+        dummy_end dummy
         w.... current __ n.. N..
             __ d[current.val] __ 1:
-                dummy_end.next = current
-                dummy_end = current
-            current = current.next
-        dummy_end.next = N..
+                dummy_end.next current
+                dummy_end current
+            current current.next
+        dummy_end.next N..
         r.. dummy.next

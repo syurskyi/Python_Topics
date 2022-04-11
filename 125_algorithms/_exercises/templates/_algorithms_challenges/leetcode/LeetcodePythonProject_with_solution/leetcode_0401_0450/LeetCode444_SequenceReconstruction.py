@@ -9,12 +9,12 @@ c_ Solution(o..
         graph    # dict
         degree    # dict
         ___ seq __ seqs:
-            length = l..(seq)
+            length l..(seq)
             ___ i __ r..(length
                 __ seq[i] n.. __ graph:
                     graph[seq[i]]    # list
                 __ seq[i] n.. __ degree:
-                    degree[seq[i]] = 0
+                    degree[seq[i]] 0
                 __ i > 0:
                     graph[seq[i-1]].a..(seq[i])
                     degree[seq[i]] += 1
@@ -22,12 +22,12 @@ c_ Solution(o..
         ___ key, val __ degree.i..:
             __ val __ 0:
                 queue.a..(key)
-        index = 0
+        index 0
         w.... queue:
-            size = l..(queue)
+            size l..(queue)
             __ size > 1:
                 r.. F..
-            curr = queue.p.. 0)
+            curr queue.p.. 0)
             __ index >_ l..(org) o. org[index] != curr:
                 r.. F..
             index += 1

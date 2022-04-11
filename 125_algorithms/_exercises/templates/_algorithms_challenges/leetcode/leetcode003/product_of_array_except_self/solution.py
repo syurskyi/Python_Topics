@@ -27,22 +27,22 @@ c_ Solution(o..
         ____ l..(nums) __ 2:
             r.. nums[::-1]
         ____
-            m = 1
-            rest = nums[1:]
+            m 1
+            rest nums[1:]
             ___ c __ rest:
                 m *= c
-            res = [m]
+            res [m]
             ___ r __ productExceptSelf(rest
                 res.a..(r * nums[0])
             r.. res
 
 
-a1 = [1, 2, 3]
-a2 = [2, 3, 4]
-a3 = [1, 2, 3, 4]
-a4 = [2, 3, 4, 5]
+a1 [1, 2, 3]
+a2 [2, 3, 4]
+a3 [1, 2, 3, 4]
+a4 [2, 3, 4, 5]
 
-s = Solution()
+s Solution()
 print(s.productExceptSelf(a1
 print(s.productExceptSelf(a2
 print(s.productExceptSelf(a3

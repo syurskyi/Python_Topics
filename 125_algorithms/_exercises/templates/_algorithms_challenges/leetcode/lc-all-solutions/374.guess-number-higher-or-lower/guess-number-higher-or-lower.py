@@ -9,14 +9,14 @@ c_ Solution(o..
     :type n: int
     :rtype: int
     """
-    l, r = 1, n
+    l, r 1, n
     w.... l < r:
-      m = l + (r - l) / 2
-      g = guess(m)
+      m l + (r - l) / 2
+      g guess(m)
       __ g __ -1:
-        r = m - 1
+        r m - 1
       ____ g __ 1:
-        l = m + 1
+        l m + 1
       ____
         r.. m
     r.. l

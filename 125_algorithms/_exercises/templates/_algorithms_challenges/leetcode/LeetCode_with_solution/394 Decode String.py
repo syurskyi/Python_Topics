@@ -15,7 +15,7 @@ s = "3[a]2[bc]", return "aaabcbc".
 s = "3[a2[c]]", return "accaccacc".
 s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -24,24 +24,24 @@ c_ Solution(o..
         :type s: str
         :rtype: str
         """
-        stk = [
+        stk [
             [1, []]
         ]  # with default
-        i = 0
+        i 0
         w.... i < l..(s
             __ s[i].i..  # construct number from digit
-                j = i+1
+                j i+1
                 w.... s[j] != ' ': j += 1
                 stk.a..([
                     i..(s[i:j]), []
                 ])
-                i = j+1
+                i j+1
             ____ s[i].isl..  # append alphabet
                 stk[-1][1].a..(s[i])
                 i += 1
             ____ s[i] __ ' ':  # pop
-                cnt, p.. = stk.p.. )
-                p.. = ''.j..(p..) * cnt
+                cnt, p.. stk.p.. )
+                p.. ''.j..(p..) * cnt
                 stk[-1][1].a..(p..)
                 i += 1
 
@@ -55,16 +55,16 @@ c_ SolutionVerbose(o..
         :rtype: str
         """
         stk    # list
-        i = 0
+        i 0
         ret    # list
         w.... i < l..(s
             __ s[i].i..  # construct number from digit
-                j = i+1
+                j i+1
                 w.... s[j] != ' ': j += 1
                 stk.a..([
                     i..(s[i:j]), []
                 ])
-                i = j+1
+                i j+1
             ____ s[i].isl..  # append alphabet
                 __ n.. stk:
                     ret.a..(s[i])
@@ -72,8 +72,8 @@ c_ SolutionVerbose(o..
                     stk[-1][1].a..(s[i])
                 i += 1
             ____ s[i] __ ' ':  # pop
-                cnt, p.. = stk.p.. )
-                p.. = ''.j..(p..) * cnt
+                cnt, p.. stk.p.. )
+                p.. ''.j..(p..) * cnt
                 __ n.. stk:
                    ret.a..(p..)
                 ____
@@ -91,17 +91,17 @@ c_ SolutionError(o..
         :rtype: str
         """
         stk    # list
-        i = 0
+        i 0
         ret    # list
         w.... i < l..(s
             __ s[i].i..
-                j = i + 1
+                j i + 1
                 w.... s[j] != ' ': j += 1
-                prev = stk[-1] __ stk ____ 1
+                prev stk[-1] __ stk ____ 1
                 stk.a..(prev * i..(s[i:j]
-                i = j + 1
+                i j + 1
             ____ s[i].isl..
-                repeat = stk[-1] __ stk ____ 1
+                repeat stk[-1] __ stk ____ 1
                 ___ _ __ x..(repeat ret.a..(s[i])
                 i += 1
             ____ s[i] __ ' ':

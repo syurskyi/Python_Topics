@@ -20,7 +20,7 @@ Explanation:
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -30,7 +30,7 @@ c_ Solution(o..
         :type t: str
         :rtype: str
         """
-        d = d..(i..)
+        d d..(i..)
         ___ e __ s:
             d[e] += 1
 

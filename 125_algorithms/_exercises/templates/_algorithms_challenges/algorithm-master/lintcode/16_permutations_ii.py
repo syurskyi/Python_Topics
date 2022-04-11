@@ -52,7 +52,7 @@ c_ Solution:
             r.. [[]]
 
         ans    # list
-        visited = [F..] * l..(nums)
+        visited [F..] * l..(nums)
 
         nums.s..()
         dfs(nums, visited, ans, [])
@@ -77,8 +77,8 @@ c_ Solution:
             __ i > 0 a.. n.. visited[i - 1] a.. nums[i] __ nums[i - 1]:
                 _____
 
-            visited[i] = T..
+            visited[i] T..
             p...a..(nums[i])
             dfs(nums, visited, ans, p..)
-            visited[i] = F..
+            visited[i] F..
             p...p.. )

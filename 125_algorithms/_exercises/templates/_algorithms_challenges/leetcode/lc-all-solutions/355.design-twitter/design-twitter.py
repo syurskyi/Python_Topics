@@ -7,9 +7,9 @@ c_ Twitter(o..
     """
     Initialize your data structure here.
     """
-    ts = 0
-    tweets = c...d..(l..)
-    friendship = c...d..(s..)
+    ts 0
+    tweets c...d..(l..)
+    friendship c...d..(s..)
 
   ___ postTweet  userId, tweetId
     """
@@ -18,7 +18,7 @@ c_ Twitter(o..
     :type tweetId: int
     :rtype: void
     """
-    tInfo = ts, tweetId, userId, l..(tweets[userId])
+    tInfo ts, tweetId, userId, l..(tweets[userId])
     tweets[userId].a..(tInfo)
     ts -_ 1
 
@@ -36,9 +36,9 @@ c_ Twitter(o..
     ___ followeeId __ friendship[userId]:
       __ tweets[followeeId]:
         heapq.heappush(heap, tweets[followeeId][-1])
-    cnt = 10
+    cnt 10
     w.... heap a.. cnt > 0:
-      _, tid, uid, idx = heapq.heappop(heap)
+      _, tid, uid, idx heapq.heappop(heap)
       ret.a..(tid)
       __ idx > 0:
         heapq.heappush(heap, tweets[uid][idx - 1])

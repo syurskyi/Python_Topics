@@ -28,10 +28,10 @@ c_ Solution:
         """
         started from two ends
         """
-        n = l..(A)
-        ret = d..()
-        lo = 0
-        hi = n
+        n l..(A)
+        ret d..()
+        lo 0
+        hi n
         w.... lo < hi:
             __ A[lo] ** 2 < A[hi - 1] ** 2:
                 ret.appendleft(A[hi - 1] ** 2)

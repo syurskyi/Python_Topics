@@ -10,7 +10,7 @@ S = "rabbbit", T = "rabbit"
 
 Return 3.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ numDistinct  S, T
         """
@@ -42,21 +42,21 @@ c_ Solution:
         :param T: string
         :return: integer
         """
-        len_s = l..(S)
-        len_t = l..(T)
+        len_s l..(S)
+        len_t l..(T)
 
-        dp = [[-1 ___ _ __ x..(len_s+1)] ___ _ __ x..(len_t+1)]
+        dp [[-1 ___ _ __ x..(len_s+1)] ___ _ __ x..(len_t+1)]
         ___ col __ x..(len_s+1
-            dp[0][col] = 1
+            dp[0][col] 1
         ___ row __ x..(1, len_t+1
-            dp[row][0] = 0
+            dp[row][0] 0
 
         ___ row __ x..(1, len_t+1
             ___ col __ x..(1, len_s+1
                 __ S[col-1]__T[row-1]:
-                    dp[row][col] = dp[row][col-1]+dp[row-1][col-1]
+                    dp[row][col] dp[row][col-1]+dp[row-1][col-1]
                 ____
-                    dp[row][col] = dp[row][col-1]
+                    dp[row][col] dp[row][col-1]
 
         r.. dp[-1][-1]
 

@@ -12,16 +12,16 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ i __ r..(26
-            c = chr(o..('a')+i)
+            c chr(o..('a')+i)
             hashmap[c]    # list
         ___ word __ words:
             hashmap[word[0]].a..(word)
-        count = 0
+        count 0
         ___ c __ S:
-            d.. = hashmap[c]
-            size = l..(d..)
+            d.. hashmap[c]
+            size l..(d..)
             ___ i __ r..(size
-                word = d...p.. 0)
+                word d...p.. 0)
                 __ l..(word) __ 1:
                     count += 1
                 ____
@@ -29,14 +29,14 @@ c_ Solution(o..
         r.. count
     
     ___ test
-        testCases = [
+        testCases [
             [
                 'abcde',
                 ["a", "bb", "acd", "ace"],
             ],
         ]
         ___ s, words __ testCases:
-            result = numMatchingSubseq(s, words)
+            result numMatchingSubseq(s, words)
             print('result: %s' % result)
             print('-='*30+'-')
 

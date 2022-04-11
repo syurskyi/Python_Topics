@@ -11,21 +11,21 @@ c_ Solution(o..
         :rtype: str
         """
         d...s..(key=l.., r.._T..
-        n = l..(s)
-        res = ''
-        maxLen = -1
-        started = F..
+        n l..(s)
+        res ''
+        maxLen -1
+        started F..
         ___ i __ r..(n
             ___ word __ d..:
                 __ i+l..(word) <_ n a.. s[i:i+l..(word)] __ word:
-                    maxLen = m..(maxLen, i+l..(word
+                    maxLen m..(maxLen, i+l..(word
                     _____
             __ maxLen > i a.. n.. started:
                 res += '<b>'+s[i]
-                started = T..
+                started T..
             ____ maxLen __ i:
                 res += '</b>'+s[i]
-                started = F..
+                started F..
             ____
                 res += s[i]
         __ maxLen __ l..(s
@@ -33,7 +33,7 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 'abcxyz123',
                  'abc', '123' ,
@@ -50,7 +50,7 @@ c_ Solution(o..
         ___ s, d __ testCases:
             print('s: %s' % s)
             print('d: %s' % d)
-            result = addBoldTag(s, d)
+            result addBoldTag(s, d)
             print('result: %s' % result)
             print('-='*30+'-')
 

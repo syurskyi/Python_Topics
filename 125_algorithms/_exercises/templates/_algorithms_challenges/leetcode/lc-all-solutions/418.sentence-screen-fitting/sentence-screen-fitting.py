@@ -6,9 +6,9 @@ c_ Solution(o..
     :type cols: int
     :rtype: int
     """
-    s = " ".j..(sentence) + " "
-    n = l..(s)
-    start = 0
+    s " ".j..(sentence) + " "
+    n l..(s)
+    start 0
     ___ _ __ r..(rows
       start += cols - 1
       __ s[start % n] __ " ":

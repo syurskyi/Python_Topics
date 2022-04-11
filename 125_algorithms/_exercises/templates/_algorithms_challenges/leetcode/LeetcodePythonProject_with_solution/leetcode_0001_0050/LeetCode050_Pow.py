@@ -14,8 +14,8 @@ c_ Solution(o..
         __ n __ 0:
             r.. 1
         __ n < 0:
-            n = -n
-            x = 1/x
+            n -n
+            x 1/x
         __ n%2__0:
             r.. myPow(x*x, n/2)
         ____

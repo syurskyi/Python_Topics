@@ -18,10 +18,10 @@ c_ Solution(o..
       __ root:
         dfs(root.left, h + 1, d)
         dfs(root.right, h + 1, d)
-        d[h] = m..(d.g.. h, f__("-inf", root.val)
+        d[h] m..(d.g.. h, f__("-inf", root.val)
 
     dfs(root, 0, d)
-    level = 0
+    level 0
     w.... level __ d:
       ans += d[level],
       level += 1

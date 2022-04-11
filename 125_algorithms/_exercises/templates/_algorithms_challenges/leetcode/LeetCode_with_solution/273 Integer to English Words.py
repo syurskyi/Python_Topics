@@ -6,12 +6,12 @@ For example,
 12345 -> "Twelve Thousand Three Hundred Forty Five"
 1234567 -> "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
     ___ -
-        table = {
+        table {
             0: N..,
             1: "One",
             2: "Two",
@@ -56,7 +56,7 @@ c_ Solution(o..
 
         ret    # list
         toWords(num, ret)
-        ret = f.. l.... x: x, ret)  # filter None as zeros
+        ret f.. l.... x: x, ret)  # filter None as zeros
         r.. " ".j.. m..(s.., ret
 
     ___ toWords  num, ret
@@ -65,12 +65,12 @@ c_ Solution(o..
 
         significance by significance
         """
-        SIGS = [1000000000, 1000000, 1000, 100]
+        SIGS [1000000000, 1000000, 1000, 100]
         ___ SIG __ SIGS:
             partial_parse(num, SIG, ret)
             num %= SIG
 
-        TEN = 10
+        TEN 10
         __ num/TEN > 1:
             ret.a..(table[(num/TEN)*TEN])
 

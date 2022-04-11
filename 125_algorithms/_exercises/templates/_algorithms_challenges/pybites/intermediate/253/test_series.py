@@ -5,8 +5,8 @@ _______ p.... __ pd
 
 _______ series __ se
 
-file_name = "https://bites-data.s3.us-east-2.amazonaws.com/iris.csv"
-df = pd.read_csv(file_name)
+file_name "https://bites-data.s3.us-east-2.amazonaws.com/iris.csv"
+df pd.read_csv(file_name)
 
 
 ?p__.f..()
@@ -77,11 +77,11 @@ ___ test_series_simple_math(int_series_small, arg, e..
 ___ test_complex_series_maths(
     int_series_vsmall, int_series_vsmall_offset_index, arg, e..
 
-    result = se.complex_series_maths(
+    result se.complex_series_maths(
         int_series_vsmall, int_series_vsmall_offset_index, arg
     )
-    result = ",".j..(s..(n) ___ n __ result)
-    e.. = ",".j..(s..(n) ___ n __ e..)
+    result ",".j..(s..(n) ___ n __ result)
+    e.. ",".j..(s..(n) ___ n __ e..)
     ... result __ e..
 
 
@@ -153,13 +153,13 @@ ___ test_complex_series_maths(
     ],
 )
 ___ test_create_series_mask(letters_series, arg, e..
-    result = se.create_series_mask(letters_series, arg)
+    result se.create_series_mask(letters_series, arg)
     ... a..([result[idx] __ exp ___ idx, exp __ e..(e..)])
     ... a..(l __ arg ___ l __ letters_series[result])
 
 
 ___ test_custom_series_function(sepal_length_series
-    result = se.custom_series_function(sepal_length_series, 0.1)
+    result se.custom_series_function(sepal_length_series, 0.1)
     ... l..(result) __ 51
     ... r..(result.mean(), 4) __ 5.6725
     ... m..(result.index) __ 149 a.. m..(result.values) __ 7.9

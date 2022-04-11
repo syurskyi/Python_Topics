@@ -6,9 +6,9 @@ ____ t___ _______ Dict, L.., U..
 _______ p.... __ pd  # type: ignore
 _______ r__
 
-URL: s.. = "https://bites-data.s3.us-east-2.amazonaws.com/MonthlySales.csv"
-STATS: L..[s..] = ["sum", "mean", "max"]
-TMP: P.. = P..(__.g..("TMP", "/tmp" / "MonthlySales.csv"
+URL: s.. "https://bites-data.s3.us-east-2.amazonaws.com/MonthlySales.csv"
+STATS: L..[s..] ["sum", "mean", "max"]
+TMP: P.. P..(__.g..("TMP", "/tmp" / "MonthlySales.csv"
 
 
 ___ get_data(url: s..) __ Dict[s.., s..]:
@@ -21,11 +21,11 @@ ___ get_data(url: s..) __ Dict[s.., s..]:
         Dict[str, str]: The dictionary extracted from the data
     """
     __ TMP.exists
-        data = j__.l.. (TMP.read_text
+        data j__.l.. (TMP.read_text
     ____
-        response = r__.g.. url)
+        response r__.g.. url)
         response.raise_for_status()
-        data = j__.l.. (response.text)
+        data j__.l.. (response.text)
         w__ TMP.o.. "w") __ tmp:
             j__.d.. data, tmp)
     r.. data
@@ -40,13 +40,13 @@ ___ process_data(url: s..) __ pd.DataFrame:
     Returns:
         pd.DataFrame: Pandas DataFrame generated from the processed data
     """
-    data = get_data(url)
-    download_url = data 'download_url'
-    monthly_sales = pd.read_csv(download_url,parse_dates= 'month' )
+    data get_data(url)
+    download_url data 'download_url'
+    monthly_sales pd.read_csv(download_url,parse_dates= 'month' )
     r.. monthly_sales
 
 
-___ summary_report(df: pd.DataFrame, stats: U..[L..[s..], N..] = STATS) __ N..
+___ summary_report(df: pd.DataFrame, stats: U..[L..[s..], N..] STATS) __ N..
     """Summary report generated from the DataFrame and list of stats
 
     Will aggregate statistics for sum, mean, and max by default.
@@ -67,8 +67,8 @@ ___ summary_report(df: pd.DataFrame, stats: U..[L..[s..], N..] = STATS) __ N..
         2016  733947.03  61162.252500  118447.83
     """
 
-    x = df.groupby(df.month.dt.year).sales.agg(stats)
-    x.index.name = 'year'
+    x df.groupby(df.month.dt.year).sales.agg(stats)
+    x.index.name 'year'
     print(x)
 
 
@@ -104,20 +104,20 @@ ___ yearly_report(df: pd.DataFrame, year: i..) __ N..
         12     69545.62
     """
 
-    df = df[df.month.dt.year __ year]
+    df df[df.month.dt.year __ year]
 
     __ l..(df) __ 0:
         r.. V... _*The year {year} is not included in the report!')
     ____
         print(year)
         print()
-        df = df.groupby(df.month.dt.month)[['sales']].s..()
+        df df.groupby(df.month.dt.month)[['sales']].s..()
         print(df)
 
 
 #uncomment the following for viewing/testing the reports/code
 __ _______ __ _______
-    data = process_data(URL)
+    data process_data(URL)
     summary_report(data)
     ___ year __ (data["month"].dt.year).unique
         yearly_report(data, year)

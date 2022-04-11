@@ -10,10 +10,10 @@ c_ Solution(o..
         :rtype: bool
         """
         __ n.. bits: r.. F..
-        n = l..(bits)
+        n l..(bits)
         __ n __ 1: r.. T..
-        dp = [1]*n
-        i = 0
+        dp [1]*n
+        i 0
         w.... i < n:
             __ bits[i] __ 1:
                 i += 2
@@ -24,13 +24,13 @@ c_ Solution(o..
         r.. dp[-1] > 1
     
     ___ test
-        testCases = [
+        testCases [
             [1, 0, 0],
             [1, 1, 1, 0],
         ]
         ___ bits __ testCases:
             print('bits: %s' % bits)
-            result = isOneBitCharacter(bits)
+            result isOneBitCharacter(bits)
             print('result: %s' % result)
             print('-='*30+'-')
 

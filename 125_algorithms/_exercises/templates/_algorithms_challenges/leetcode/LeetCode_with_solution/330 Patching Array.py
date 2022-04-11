@@ -21,7 +21,7 @@ Example 3:
 nums = [1, 2, 2], n = 5
 Return 0.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -41,9 +41,9 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        cnt = 0
-        cur_max = 0
-        i = 0
+        cnt 0
+        cur_max 0
+        i 0
         w.... cur_max < n:
             __ i >_ l..(nums) o. cur_max + 1 < nums[i]:
                 cur_max += cur_max + 1
@@ -70,10 +70,10 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        nums = f.. l.... x: x <_ n, nums)
+        nums f.. l.... x: x <_ n, nums)
 
-        cnt = 0
-        cur_max = 0
+        cnt 0
+        cur_max 0
         ___ elt __ nums:
             w.... cur_max + 1 < elt:
                 cur_max += cur_max + 1

@@ -15,7 +15,7 @@ c_ Solution(o..
 
       ___ i __ r..(1, 10
         __ i n.. __ visited:
-          x, y, xp, yp = (i - 1) / 3, (i - 1) % 3, (prev - 1) / 3, (prev - 1) % 3
+          x, y, xp, yp (i - 1) / 3, (i - 1) % 3, (prev - 1) / 3, (prev - 1) % 3
           __ (5 n.. __ visited a.. (x + xp, y + yp) __ (2, 2 o. (
             (x __ xp a.. a..(y - yp) __ 2) o. (y __ yp a.. a..(x - xp) __ 2 a.. (prev + i) / 2 n.. __ visited:
             _____
@@ -23,7 +23,7 @@ c_ Solution(o..
           dfs(m, n, i, visited, length + 1)
           visited.discard(i)
 
-    visited = s..()
-    ans = 0
+    visited s..()
+    ans 0
     dfs(m, n, -99, visited, 0)
     r.. ans

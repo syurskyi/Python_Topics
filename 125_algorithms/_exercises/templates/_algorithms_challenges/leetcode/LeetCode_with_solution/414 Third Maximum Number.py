@@ -4,7 +4,7 @@ Given a non-empty array of integers, return the third maximum number in this
 array. If it does not exist, return the maximum number. The time complexity
 must be in O(n).
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 _______ heapq
 
 
@@ -30,9 +30,9 @@ c_ Solution:
 
         ... l..(h) <_ 3
         __ l..(h) __ 3:
-            ret = m..(h)
+            ret m..(h)
         ____
-            ret = m..(h)
+            ret m..(h)
         r.. ret
 
 

@@ -3,9 +3,9 @@ ____ d__ _______ date
 
 _______ feedparser
 
-FEED = 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
+FEED 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
 
-Entry = n..('Entry', 'date title link tags')
+Entry n..('Entry', 'date title link tags')
 
 
 ___ _convert_struct_time_to_dt(stime
@@ -21,7 +21,7 @@ ___ get_feed_entries(feed=FEED
     """Use feedparser to parse PyBites RSS feed.
        Return a list of Entry namedtuples (date = date, drop time part)
     """
-    f = feedparser.p..(feed)
+    f feedparser.p..(feed)
     result    # list
     ___ item __ f.entries:
         result.a..(Entry(_convert_struct_time_to_dt(item.published_parsed),
@@ -61,16 +61,16 @@ ___ main
        6. Secondly, print the number of matches: 'n entries matched'
           (use entry if only 1 match)
     """
-    entries = get_feed_entries()
+    entries get_feed_entries()
     w... T...
-        term = input('Search for (q for exit): ')
+        term input('Search for (q for exit): ')
         __ term __ '':
             print('Please provide a search term')
             _____
         __ term __ 'q':
             print('Bye')
             _____
-        matches = s..([entry ___ entry __ entries __ filter_entries_by_tag(term, entry)])
+        matches s..([entry ___ entry __ entries __ filter_entries_by_tag(term, entry)])
         ___ m.. __ matches:
             print _*{m...date:10} | {m...title:50} | {m...link}')
         print _*\n{l..(matches)} entr{"y" __ l..(matches) __ 1 ____ "ies"} matched')

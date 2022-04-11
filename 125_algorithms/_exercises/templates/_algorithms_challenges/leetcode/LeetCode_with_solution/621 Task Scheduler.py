@@ -42,23 +42,23 @@ c_ Solution:
         Free page size is n + 1 - (# of max)
         Find the idle count
         """
-        counter = d..(i..)
+        counter d..(i..)
         ___ t __ tasks:
             counter[t] += 1
 
-        maxa = 0
-        max_cnt = 0
+        maxa 0
+        max_cnt 0
         ___ v __ counter.v..
             __ v > maxa:
-                maxa = v
-                max_cnt = 1
+                maxa v
+                max_cnt 1
             ____ v __ maxa:
                 max_cnt += 1
 
-        page_cnt = maxa - 1
-        free_page_size = n + 1 - max_cnt
-        small_tasks = l..(tasks) - max_cnt * maxa
-        idle = m..(0, page_cnt * free_page_size - small_tasks)
+        page_cnt maxa - 1
+        free_page_size n + 1 - max_cnt
+        small_tasks l..(tasks) - max_cnt * maxa
+        idle m..(0, page_cnt * free_page_size - small_tasks)
         r.. l..(tasks) + idle
 
 
@@ -68,25 +68,25 @@ c_ Solution:
         max heap, most tasks first
         cool down queue
         """
-        counter = d..(i..)
+        counter d..(i..)
         ___ t __ tasks:
             counter[t] += 1
 
-        pq = [
+        pq [
             (-v, k)
             ___ k, v __ counter.i..
         ]
         heapq.heapify(pq)
-        q = d..()  # stores (t, k)
-        clock = 0
+        q d..()  # stores (t, k)
+        clock 0
         w.... pq o. q:
             __ q a.. q[0][0] <_ clock:
                 # don't do while in while when clock++
-                _, k = q.popleft()
+                _, k q.popleft()
                 heapq.heappush(pq, (-counter[k], k
 
             __ pq:
-                _, k = heapq.heappop(pq)
+                _, k heapq.heappop(pq)
                 counter[k] -_ 1
                 __ counter[k] > 0:
                     q.a..((clock + 1 + n, k

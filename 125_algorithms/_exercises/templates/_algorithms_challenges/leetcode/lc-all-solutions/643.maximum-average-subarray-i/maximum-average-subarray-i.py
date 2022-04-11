@@ -8,14 +8,14 @@ c_ Solution(o..
     :type k: int
     :rtype: float
     """
-    s = 0
-    ans = f__("-inf")
-    queue = d..([])
+    s 0
+    ans f__("-inf")
+    queue d..([])
     ___ num __ nums:
       queue.a..(num)
       s += num
       __ l..(queue) > k:
         s -_ queue.popleft()
       __ l..(queue) __ k:
-        ans = m..(ans, f__(s) / k)
+        ans m..(ans, f__(s) / k)
     r.. ans

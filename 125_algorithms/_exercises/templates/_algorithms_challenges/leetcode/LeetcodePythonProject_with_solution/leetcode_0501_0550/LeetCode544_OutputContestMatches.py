@@ -10,7 +10,7 @@ c_ Solution(o..
         :type n: int
         :rtype: str
         """
-        l = l..(r..(1, n+1
+        l l..(r..(1, n+1
         r.. helper(l)
     
     ___ helper  l
@@ -19,18 +19,18 @@ c_ Solution(o..
         l0    # list
         w.... l:
             l0.a..('(%s,%s)' % (l.p.. 0), l.p.. )))
-        res = helper(l0)
+        res helper(l0)
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             2,
             4,
             8,
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            res = findContestMatch(n)
+            res findContestMatch(n)
             print('result: %s' % res)
             print('-='*30+'-')
     

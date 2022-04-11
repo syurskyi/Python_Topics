@@ -1,5 +1,5 @@
 c_ TwelveDays:
-    CARDINALS = {
+    CARDINALS {
         1: 'first',
         2: 'second',
         3: 'third',
@@ -14,7 +14,7 @@ c_ TwelveDays:
         12: 'twelfth'
     }
 
-    PHRASES = {
+    PHRASES {
         2: 'two Turtle Doves',
         3: 'three French Hens',
         4: 'four Calling Birds',

@@ -2,7 +2,7 @@ _______ c..
 
 
 ___ my_queue(n=5
-    mq = c...d..(maxlen=n)
+    mq c...d..(maxlen=n)
     ___ i __ r..(n
         mq.a..(i)
         print((i, l..(mq)))

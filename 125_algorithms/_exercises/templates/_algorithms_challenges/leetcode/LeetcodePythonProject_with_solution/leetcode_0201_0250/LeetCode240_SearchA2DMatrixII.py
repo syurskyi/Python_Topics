@@ -12,8 +12,8 @@ c_ Solution(o..
         :rtype: bool
         """
         __ n.. matrix o. n.. matrix[0]: r.. F..
-        m, n = l..(matrix), l..(matrix[0])
-        i, j = m-1, 0
+        m, n l..(matrix), l..(matrix[0])
+        i, j m-1, 0
         w.... i >_ 0 a.. j < n:
             __ matrix[i][j] __ target:
                 r.. T..
@@ -30,8 +30,8 @@ c_ Solution(o..
         :rtype: bool
         """
         __ n.. matrix o. n.. matrix[0]: r.. F..
-        m, n = l..(matrix), l..(matrix[0])
-        i, j = 0, n-1
+        m, n l..(matrix), l..(matrix[0])
+        i, j 0, n-1
         w.... i < m a.. j >_ 0:
             __ matrix[i][j] __ target:
                 r.. T..
@@ -49,30 +49,30 @@ c_ Solution(o..
         """
         __ n.. matrix o. n.. matrix[0]:
             r.. F..
-        start, end = 0, l..(matrix)-1
+        start, end 0, l..(matrix)-1
         w.... start <_ end:
-            mid = i..((start+end)/2)
+            mid i..((start+end)/2)
             __ matrix[mid][0] __ target:
                 r.. T..
             ____ matrix[mid][0] > target:
-                end = mid-1
+                end mid-1
             ____
-                start = mid+1
-        row0 = start __ start < l..(matrix) ____ start-1
+                start mid+1
+        row0 start __ start < l..(matrix) ____ start-1
         ___ row __ r..(row0, -1, -1
-            start, end = 0, l..(matrix[0])-1
+            start, end 0, l..(matrix[0])-1
             w.... start <_ end:
-                mid = i..((start+end)/2)
+                mid i..((start+end)/2)
                 __ matrix[row][mid] __ target:
                     r.. T..
                 ____ matrix[row][mid] > target:
-                    end = mid-1 
+                    end mid-1
                 ____
-                    start = mid+1
+                    start mid+1
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1,   4,  7, 11, 15],
                 [2,   5,  8, 12, 19],
@@ -84,7 +84,7 @@ c_ Solution(o..
         ___ matrix __ testCases:
             ___ target __ (0, 1, 3, 5, 13, 16, 20
                 print('target: %s' % target)
-                result = searchMatrix(matrix, target)
+                result searchMatrix(matrix, target)
                 print('result: %s' % (result
                 print('-='*20+'-')
     

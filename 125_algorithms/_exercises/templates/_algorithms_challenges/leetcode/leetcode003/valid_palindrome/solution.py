@@ -22,8 +22,8 @@ c_ Solution(o..
         """
         __ n.. s:
             r.. T..
-        left = 0
-        right = l..(s) - 1
+        left 0
+        right l..(s) - 1
         w.... left < right:
             __ s[left].i..() a.. s[right].i..
                 __ s[left].l.. != s[right].l..:

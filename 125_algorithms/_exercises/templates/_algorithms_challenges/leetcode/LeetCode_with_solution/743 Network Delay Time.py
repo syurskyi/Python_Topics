@@ -26,22 +26,22 @@ c_ Solution:
         """
         Dijkstra's algorithm
         """
-        G = d..(d..)
-        reach_time = [f__('inf') ___ _ __ r..(N + 1)]
+        G d..(d..)
+        reach_time [f__('inf') ___ _ __ r..(N + 1)]
         ___ u, v, w __ times:
-            G[u][v] = w
+            G[u][v] w
 
-        h = [(0, K)]
-        reach_time[K] = 0
+        h [(0, K)]
+        reach_time[K] 0
         w.... h:
-            t, s = heapq.heappop(h)
+            t, s heapq.heappop(h)
             __ s __ G:
                 ___ d, w __ G[s].i..:
                     __ t + w < reach_time[d]:
-                        reach_time[d] = t + w
+                        reach_time[d] t + w
                         heapq.heappush(h, (t + w, d
 
-        ret = m..(reach_time[1:])  # notice reach_time[0] is dummy
+        ret m..(reach_time[1:])  # notice reach_time[0] is dummy
         __ ret __ f__('inf'
             r.. -1
         r.. ret

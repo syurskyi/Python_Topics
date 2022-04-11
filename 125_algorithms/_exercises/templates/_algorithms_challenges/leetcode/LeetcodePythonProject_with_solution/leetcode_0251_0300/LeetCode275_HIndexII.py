@@ -10,15 +10,15 @@ c_ Solution(o..
         :type citations: List[int]
         :rtype: int
         """
-        n = l..(citations)
-        count = [0]*(n+1)
+        n l..(citations)
+        count [0]*(n+1)
         ___ c __ citations:
             __ c >_ n:
                 count[n] += 1
             ____
                 count[c] += 1
-        res = 0
-        sumVal = 0
+        res 0
+        sumVal 0
         ___ i __ r..(n, -1, -1
             sumVal += count[i]
             __ sumVal >_ i:

@@ -10,7 +10,7 @@ Some examples:
 Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before
 implementing one.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ isNumber_builtin  s
         """
@@ -35,13 +35,13 @@ c_ Solution:
         :param s:
         :return:
         """
-        INVALID = 0
-        SPACE = 1
-        SIGN = 2
-        DIGIT = 3
-        DOT = 4
-        E = 5
-        T = [
+        INVALID 0
+        SPACE 1
+        SIGN 2
+        DIGIT 3
+        DOT 4
+        E 5
+        T [
             [-1, 0, 3, 1, 2,-1],
             [-1, 8,-1, 1, 4, 5],
             [-1,-1,-1, 4,-1,-1],
@@ -52,24 +52,24 @@ c_ Solution:
             [-1, 8,-1, 7,-1,-1],
             [-1, 8,-1,-1,-1,-1], # 9
         ]
-        state = 0
+        state 0
         ___ char __ s:
             __ state__-1:
                 r.. F..
             __ char__" ":
-                token = SPACE
+                token SPACE
             ____ char __ ("-", "+"
-                token = SIGN
+                token SIGN
             ____ char __ map(s.., r..(10:
-                token = DIGIT
+                token DIGIT
             ____ char__".":
-                token = DOT
+                token DOT
             ____ char __ ("e", "E"
-                token = E
+                token E
             ____
-                token = INVALID
+                token INVALID
 
-            state = T[state][token]
+            state T[state][token]
         __ state __ (1, 4, 7, 8  # accept state
             r.. T..
         ____

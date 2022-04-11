@@ -25,8 +25,8 @@ c_ Solution(o..
                 __ c __ d:
                     _____
                 ____
-                    d[c] = T..
-                rest_perms = permuteUnique(nums[:i] + nums[i + 1:])
+                    d[c] T..
+                rest_perms permuteUnique(nums[:i] + nums[i + 1:])
                 ___ perm __ rest_perms:
                     perm.insert(0, c)
                 res += rest_perms

@@ -16,8 +16,8 @@ c_ Solution(o..
       __ n.. root:
         r.. 0, 0  # sum, tilt sum
 
-      leftSum, leftTilt = dfs(root.left)
-      rightSum, rightTilt = dfs(root.right)
+      leftSum, leftTilt dfs(root.left)
+      rightSum, rightTilt dfs(root.right)
 
       r.. leftSum + root.val + rightSum, a..(leftSum - rightSum) + leftTilt + rightTilt
 

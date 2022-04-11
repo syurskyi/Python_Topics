@@ -18,12 +18,12 @@ c_ Solution(o..
     __ n.. words:
       r.. []
 
-    prefix = c...d..(l..)
+    prefix c...d..(l..)
     ___ word __ words:
       ___ i __ r..(0, l..(word:
         prefix[word[:i]].a..(word)
 
-    m = l..(words[0])
+    m l..(words[0])
     res    # list
     p..    # list
     ___ word __ words:

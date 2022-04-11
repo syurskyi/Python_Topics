@@ -10,23 +10,23 @@ c_ Solution(o..
         hashmap    # dict
         result    # list
         ___ i, word __ e..(words
-            hashmap[word] = i
+            hashmap[word] i
         ___ i, word __ e..(words
             ___ j __ r..(l..(word)+1
-                s1 = word[:j]
-                s2 = word[j:]
+                s1 word[:j]
+                s2 word[j:]
                 __ isPalindrome(s1
-                    str2rvs = s2[::-1]
+                    str2rvs s2[::-1]
                     __ str2rvs __ hashmap a.. hashmap[str2rvs] != i:
                         result.a..([hashmap[str2rvs], i])
                 __ isPalindrome(s2
-                    str1rvs = s1[::-1]
+                    str1rvs s1[::-1]
                     __ str1rvs __ hashmap a.. hashmap[str1rvs] != i a.. s2:
                         result.a..([i, hashmap[str1rvs]])
         r.. result
     
     ___ isPalindrome  s
-        left, right = 0, l..(s)-1
+        left, right 0, l..(s)-1
         w.... left < right:
             __ s[left] != s[right]:
                 r.. F..
@@ -35,13 +35,13 @@ c_ Solution(o..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             ["bat", "tab", "cat"],
             ["abcd", "dcba", "lls", "s", "sssll"],
         ]
         ___ words __ testCases:
             print('words: %s' % (words
-            result = palindromePairs(words)
+            result palindromePairs(words)
             print('result: %s' % (result
             print('-='*20+'-')
 

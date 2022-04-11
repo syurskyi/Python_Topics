@@ -6,12 +6,12 @@ _______ p__
 
 ____ json2csv _______ convert_to_csv, EXCEPTION, TMP
 
-mount_data = (
+mount_data (
     'https://bites-data.s3.us-east-2.amazonaws.com/'
     'mount-data{}.json'
 )
 
-mount1_expected = [
+mount1_expected [
      'creatureId', 'icon', 'isAquatic', 'isFlying', 'isGround', 'isJumping',
      'itemId', 'name', 'qualityId', 'spellId' ,
      '32158', 'ability_mount_drake_blue', 'False', 'True', 'True', 'False',
@@ -22,7 +22,7 @@ mount1_expected = [
      '45725', 'Argent Hippogryph', '4', '232412' ,
 ]
 
-mount2_expected = [
+mount2_expected [
      'creatureId', 'icon', 'isAquatic', 'isFlying', 'isGround', 'isJumping',
      'itemId', 'name', 'qualityId', 'spellId' ,
      '71381', 'ability_mount_dragonhawkarmorallliance', 'False', 'True',
@@ -40,8 +40,8 @@ mount2_expected = [
     (3, N.., T..),
 ])
 ___ test_json2csv(file_no, e.., exception, capfd
-    mount_json = TMP / f'mount{file_no}.json'
-    mount_csv = TMP / f'mount{file_no}.csv'
+    mount_json TMP / f'mount{file_no}.json'
+    mount_csv TMP / f'mount{file_no}.csv'
 
     u..(mount_data.f..(file_no), mount_json)
 
@@ -51,11 +51,11 @@ ___ test_json2csv(file_no, e.., exception, capfd
             ... 'Invalid control character' __ s..(exc)
 
         # testing you actually caught the exception!
-        output = ?.r .. 0].s..
+        output ?.r .. 0].s..
         ... output __ EXCEPTION
         r..
 
     convert_to_csv(mount_json)
     w__ o.. mount_csv) __ csv_file:
-        a.. = l..(csv.reader(csv_file
+        a.. l..(csv.reader(csv_file
         ... a.. __ e..

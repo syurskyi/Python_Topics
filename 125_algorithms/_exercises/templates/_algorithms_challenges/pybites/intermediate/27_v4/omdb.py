@@ -20,7 +20,7 @@ ___ get_single_comedy(movies: l..) __ s..:
 
 ___ _get_wins_noms(awards: s..) __ i..:
     """return the number of wins and noms from award string or 0 if none"""
-    wins = __.f..(r'([0-9]+) ', awards)
+    wins __.f..(r'([0-9]+) ', awards)
     r.. s.. m..(i.., wins __ wins ____ 0
 
 

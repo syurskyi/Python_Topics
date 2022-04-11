@@ -12,13 +12,13 @@ return [3,2,1].
 
 Note: Recursive solution is trivial, could you do it iteratively? - see postTraverse_itr
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution:
     ___ postorderTraversal  root
@@ -54,9 +54,9 @@ c_ Solution:
         """
         __ n.. root:
             r..
-        stk = [root]
+        stk [root]
         w.... stk:
-            cur = stk.p.. )
+            cur stk.p.. )
             lst.insert(0, cur.val)  # reversely insert
             __ cur.left:
                 stk.a..(cur.left)
@@ -70,6 +70,6 @@ c_ Solution:
 
 
 __ _____ __ ____
-    t1 = TreeNode(1)
-    t1.left = TreeNode(2)
+    t1 TreeNode(1)
+    t1.left TreeNode(2)
     print Solution().postorderTraversal(t1)

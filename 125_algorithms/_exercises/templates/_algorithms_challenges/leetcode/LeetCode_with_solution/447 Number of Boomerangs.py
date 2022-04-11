@@ -20,12 +20,12 @@ c_ Solution:
         :type points: List[List[int]]
         :rtype: int
         """
-        ret = 0
+        ret 0
         ___ i __ r..(l..(points:
-            dist_cnt = C..()
+            dist_cnt C..()
             ___ j __ r..(l..(points:
                 __ i != j:
-                    d = distance(points[i], points[j])
+                    d distance(points[i], points[j])
                     dist_cnt[d] += 1
 
             ___ v __ dist_cnt.v..
@@ -40,13 +40,13 @@ c_ Solution:
         :type points: List[List[int]]
         :rtype: int
         """
-        ret = 0
+        ret 0
         ___ i __ r..(l..(points:
-            dist_cnt = C..()
+            dist_cnt C..()
             dist_lst    # list
             ___ j __ r..(l..(points:
                 __ i != j:
-                    d = distance(points[i], points[j])
+                    d distance(points[i], points[j])
                     dist_lst.a..(d)
                     dist_cnt[d] += 1
 

@@ -18,7 +18,7 @@ If S = [1,2,3], a solution is:
   []
 ]
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ subsets  S
         """

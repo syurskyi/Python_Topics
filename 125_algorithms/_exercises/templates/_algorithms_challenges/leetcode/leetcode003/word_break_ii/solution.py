@@ -33,15 +33,15 @@ c_ Solution(o..
             res.a..(' '.j..(cand
         ____
             ___ i, c __ e..(s
-                word = s[:i + 1]
-                rest = s[i + 1:]
+                word s[:i + 1]
+                rest s[i + 1:]
                 __ word __ wordDict:
                     cand.a..(word)
                     word_break_aux(rest, wordDict, cand, res)
                     cand.p.. )
 
 
-s1 = "catsanddog"
-d1 = ["cat", "cats", "and", "sand", "dog"]
-s = Solution()
+s1 "catsanddog"
+d1 ["cat", "cats", "and", "sand", "dog"]
+s Solution()
 print(s.wordBreak(s1, d1

@@ -17,12 +17,12 @@ c_ Solution:
         __ n.. head:
             r..
 
-        dummy = ListNode(0)
-        dummy.next = head
+        dummy ListNode(0)
+        dummy.next head
 
-        head = dummy
+        head dummy
         w.... head:
-            head = reverse_next_kth(head, k)
+            head reverse_next_kth(head, k)
 
         r.. dummy.next
 
@@ -30,29 +30,29 @@ c_ Solution:
         ___ i __ r..(k
             __ n.. head:
                 r..
-            head = head.next
+            head head.next
         r.. head
 
     ___ reverse  head
-        pre = nxt = N..
+        pre nxt N..
         w.... head:
-            nxt = head.next
-            head.next = pre
-            pre = head
-            head = nxt
+            nxt head.next
+            head.next pre
+            pre head
+            head nxt
         r.. pre
 
     ___ reverse_next_kth  head, k
-        nk = find_kth(head, k)
+        nk find_kth(head, k)
         __ n.. nk:
             r..
-        nk_nxt = nk.next
-        n1_pre = head
-        n1 = head.next
+        nk_nxt nk.next
+        n1_pre head
+        n1 head.next
 
-        nk.next = N..
+        nk.next N..
 
         reverse(n1)
-        n1_pre.next = nk
-        n1.next = nk_nxt
+        n1_pre.next nk
+        n1.next nk_nxt
         r.. n1

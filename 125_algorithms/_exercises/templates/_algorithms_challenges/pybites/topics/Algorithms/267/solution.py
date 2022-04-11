@@ -5,7 +5,7 @@ ___ get_others(map_, r, c
        Input - the map, row, column position
        Output - return the total number
     """
-    num = 0
+    num 0
 
     __ r > 0:
         num += map_[r-1][c] __ 1
@@ -28,7 +28,7 @@ ___ island_size(map_
     Input: the map
     Output: the perimeter of the island
     """
-    perimeter = 0
+    perimeter 0
 
     ___ r, row __ e..(map_
         ___ c, val __ e..(row

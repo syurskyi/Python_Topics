@@ -1,6 +1,6 @@
 _______ __
 
-EMAIL_HEADER = """Return-Path: <bounces+5555-7602-redacted-info>
+EMAIL_HEADER """Return-Path: <bounces+5555-7602-redacted-info>
 ...
 Received: by 10.8.49.86 with SMTP id mf9.22328.51C1E5CDF
     Wed, 19 Jun 2013 17:09:33 +0000 (UTC)
@@ -28,14 +28,14 @@ ___ get_email_details(header: s..) __ d..:
 
 
     ___
-        from_ = __.s..(r'^From: (.+)',header,flags=__.MULTILINE).group(1).s..
-        to = __.s..(r'^To: (.+)',header,flags=__.MULTILINE).group(1).s..
-        subject = __.s..(r'^Subject: (.+)',header,flags=__.MULTILINE).group(1).s..
-        date = __.s..(r'^Date: (.+) (?:\+|\-)',header,flags=__.MULTILINE).group(1).s..
+        from_ __.s..(r'^From: (.+)',header,flags=__.MULTILINE).group(1).s..
+        to __.s..(r'^To: (.+)',header,flags=__.MULTILINE).group(1).s..
+        subject __.s..(r'^Subject: (.+)',header,flags=__.MULTILINE).group(1).s..
+        date __.s..(r'^Date: (.+) (?:\+|\-)',header,flags=__.MULTILINE).group(1).s..
     ______:
         r..
     ____
-        d = {'from': from_,'to': to,'subject': subject,'date': date}
+        d {'from': from_,'to': to,'subject': subject,'date': date}
     r.. d
 
 

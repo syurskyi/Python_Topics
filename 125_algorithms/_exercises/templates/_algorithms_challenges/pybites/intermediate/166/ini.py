@@ -5,7 +5,7 @@ c_ ToxIniParser:
 
     ___ - , ini_file
         """Use configparser to load ini_file into self.config"""
-        config = configparser.ConfigParser()
+        config configparser.ConfigParser()
 
         config.read(ini_file)
 
@@ -25,10 +25,10 @@ c_ ToxIniParser:
         envs    # list
         __ 'tox' __ config:
             __ '\n' __ config 'tox'  'envlist' :
-                lines = config 'tox'  'envlist' .s...s..
+                lines config 'tox'  'envlist' .s...s..
                 ___ line __ lines:
                     __ ',' __ line:
-                        values = line.s..(',')
+                        values line.s..(',')
                         ___ value __ values:
                             envs.a..(value.s..
                     ____
@@ -47,7 +47,7 @@ c_ ToxIniParser:
     $
     ___ base_python_versions
         """Return a list of all basepython across the ini file"""
-        base_pythons = s..()
+        base_pythons s..()
         ___ section __ config.sections
             __ 'basepython' __ config[section]:
                 base_pythons.add(config[section] 'basepython' )

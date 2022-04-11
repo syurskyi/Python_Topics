@@ -43,7 +43,7 @@ ____ copy _______ d..
 _______ heapq
 
 
-final_pos = {
+final_pos {
     1: (0, 0),
     2: (0, 1),
     3: (0, 2),
@@ -52,7 +52,7 @@ final_pos = {
     0: (1, 2),
 }
 
-dirs = (
+dirs (
     (0, -1),
     (0, 1),
     (-1, 0),
@@ -74,27 +74,27 @@ c_ Solution:
 
         Possible to reduce the 2D array in a 1D array and do %C and //C, where C is the size of the column
         """
-        visited = d..(b..)
-        m, n = l..(board), l..(board[0])
-        q = [(heuristic_dist(board) + 0, 0, board)]
-        target = [
+        visited d..(b..)
+        m, n l..(board), l..(board[0])
+        q [(heuristic_dist(board) + 0, 0, board)]
+        target [
             [1, 2, 3],
             [4, 5, 0],
         ]
         w.... q:
-            heu, cur_dist, board = heapq.heappop(q)
-            visited[ser(board)] = T..
+            heu, cur_dist, board heapq.heappop(q)
+            visited[ser(board)] T..
             __ board __ target:
                 r.. cur_dist
 
             cur_dist += 1
-            i, j = zero_pos(board)
+            i, j zero_pos(board)
             ___ di, dj __ dirs:
-                I = i + di
-                J = j + dj
+                I i + di
+                J j + dj
                 __ 0 <_ I < m a.. 0 <_ J < n:
-                    B = d..(board)   # need a copy in the queue
-                    B[I][J], B[i][j] = B[i][j], B[I][J]
+                    B d..(board)   # need a copy in the queue
+                    B[I][J], B[i][j] B[i][j], B[I][J]
                     __ n.. visited[ser(B)]:
                         heapq.heappush(q, (heuristic_dist(B) + cur_dist, cur_dist, B
         r.. -1
@@ -110,11 +110,11 @@ c_ Solution:
         """
         manhattan distance
         """
-        ret = 0
+        ret 0
         ___ i, row __ e..(board
             ___ j, v __ e..(row
                 __ v != 0:
-                    I, J = final_pos[v]
+                    I, J final_pos[v]
                     ret += a..(i - I) + a..(j - J)
         r.. ret
 

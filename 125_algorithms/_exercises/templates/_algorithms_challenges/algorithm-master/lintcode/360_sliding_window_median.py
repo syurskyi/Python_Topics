@@ -5,7 +5,7 @@ c_ HashHeapqWithLazy:
     ___ -
         __heap    # list
         __deleted    # dict
-        __size = 0
+        __size 0
 
     ___ __len__
         r.. __size
@@ -29,7 +29,7 @@ c_ HashHeapqWithLazy:
             r..
 
         __size -_ 1
-        __deleted[val] = __deleted.g.. val, 0) + 1
+        __deleted[val] __deleted.g.. val, 0) + 1
 
     ___ top
         __ _is_empty
@@ -39,7 +39,7 @@ c_ HashHeapqWithLazy:
 
     ___ _is_empty
         w.... __heap a.. __deleted.g.. __heap[0]
-            val = heapq.heappop(__heap)
+            val heapq.heappop(__heap)
             __deleted[val] -_ 1
 
         r.. __size __ 0
@@ -57,8 +57,8 @@ c_ Solution:
         __ n.. nums o. k <_ 0 o. l..(nums) < k:
             r.. ans
 
-        minheap = HashHeapqWithLazy()
-        maxheap = HashHeapqWithLazy()
+        minheap HashHeapqWithLazy()
+        maxheap HashHeapqWithLazy()
 
         ___ i __ r..(l..(nums:
             # remove nums[i - k]

@@ -15,17 +15,17 @@ ____ e.. _______ E..
 
 
 c_ Bloodtype(E..
-    ZERO_NEG = 0
-    ZERO_POS = 1
-    B_NEG = 2
-    B_POS = 3
-    A_NEG = 4
-    A_POS = 5
-    AB_NEG = 6
-    AB_POS = 7
+    ZERO_NEG 0
+    ZERO_POS 1
+    B_NEG 2
+    B_POS 3
+    A_NEG 4
+    A_POS 5
+    AB_NEG 6
+    AB_POS 7
 
 
-blood_type_text = {
+blood_type_text {
     "0-": Bloodtype.ZERO_NEG,
     "0+": Bloodtype.ZERO_POS,
     "B-": Bloodtype.B_NEG,
@@ -46,7 +46,7 @@ ___ _blood_int(b_type
     ____ isi..(b_type, s..
         __ b_type n.. __ blood_type_text:
             r.. V... _*Bad blood type {b_type}')
-        b_type = blood_type_text[b_type]
+        b_type blood_type_text[b_type]
     ____ n.. isi..(b_type, Bloodtype
         r.. T.. _*Invalid blood type type {t..(b_type)}')
     r.. b_type.value

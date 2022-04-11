@@ -14,36 +14,36 @@ c_ Solution(o..
         __ n.. words o. n.. s: r.. res
         hashmap0    # dict
         ___ word __ words:
-            hashmap0[word] = hashmap0.g.. word, 0)+1
-        wordLen = l..(words[0])
+            hashmap0[word] hashmap0.g.. word, 0)+1
+        wordLen l..(words[0])
         ___ j __ r..(wordLen
             hashmap    # dict
-            start = j
-            count = 0
+            start j
+            count 0
             ___ i __ r..(j, l..(s)-wordLen+1, wordLen
-                sub = s[i:i+wordLen]
+                sub s[i:i+wordLen]
                 __ sub __ hashmap0:
-                    hashmap[sub] = hashmap.g.. sub, 0)+1
+                    hashmap[sub] hashmap.g.. sub, 0)+1
                     count += 1
                     w.... hashmap[sub] > hashmap0[sub]:
-                        left = s[start:start+wordLen]
+                        left s[start:start+wordLen]
                         hashmap[left] -_ 1
                         count -_ 1
                         start += wordLen
                     __ count __ l..(words
                         res.a..(start)
-                        left = s[start:start+wordLen]
+                        left s[start:start+wordLen]
                         hashmap[left] -_ 1
                         count -_ 1
                         start += wordLen
                 ____
                     hashmap    # dict
-                    start = i+wordLen
-                    count = 0
+                    start i+wordLen
+                    count 0
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 'barfoothefoobarman',
                  'foo', 'bar' ,
@@ -64,7 +64,7 @@ c_ Solution(o..
         ___ s, words __ testCases:
             print('s: %s' % s)
             print('words: %s' % words)
-            result = findSubstring(s, words)
+            result findSubstring(s, words)
             print('result: %s' % result)
             print('-='*30+'-')
 

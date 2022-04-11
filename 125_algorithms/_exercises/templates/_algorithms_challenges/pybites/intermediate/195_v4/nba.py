@@ -8,26 +8,26 @@ _______ s__
 
 _______ r__
 
-DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
-TMP = P..(__.g..("TMP", "/tmp"
+DATA_URL 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
+TMP P..(__.g..("TMP", "/tmp"
 
-salt = ''.j..(
+salt ''.j..(
     r__.c..(s__.a..) ___ i __ r..(20)
 )
-DB = TMP / f'nba_{salt}.db'
+DB TMP / f'nba_{salt}.db'
 
-Player = n..('Player', ('name year first_year team college active '
+Player n..('Player', ('name year first_year team college active '
                                'games avg_min avg_points'
 
-conn = sqlite3.connect(DB)
-cur = conn.cursor()
+conn sqlite3.connect(DB)
+cur conn.cursor()
 
 
 ___ import_data
     w__ r__.S.. __ session:
-        content = session.g.. DATA_URL).content.d.. 'utf-8')
+        content session.g.. DATA_URL).content.d.. 'utf-8')
 
-    reader = csv.DictReader(content.s.. , delimiter=',')
+    reader csv.DictReader(content.s.. , delimiter=',')
 
     players    # list
     ___ row __ reader:
@@ -75,7 +75,7 @@ ___ number_of_players_from_duke
 ___ avg_years_active_players_stanford
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
-    average = t..(cur.execute('''SELECT AVG(CAST(active as numeric))
+    average t..(cur.execute('''SELECT AVG(CAST(active as numeric))
                                  from players
                                  where college="Stanford University"'''[0][0]
     r.. r..(average, 2)
@@ -83,7 +83,7 @@ ___ avg_years_active_players_stanford
 
 ___ year_with_most_drafts
     """Return the year with the most drafts, in SQL you can use GROUP BY"""
-    drafts = t..(cur.execute('''SELECT CAST(year as numeric), COUNT(year)
+    drafts t..(cur.execute('''SELECT CAST(year as numeric), COUNT(year)
                                 from players
                                 GROUP BY year
                                 ORDER BY COUNT(year)'''

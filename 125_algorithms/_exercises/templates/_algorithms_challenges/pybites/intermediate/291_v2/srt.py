@@ -27,33 +27,33 @@ ___ get_srt_section_ids(text: s..) __ L..[i..]:
        You can ignore milliseconds for this exercise.
     """
     
-    text = text.s..
+    text text.s..
     
-    sections = (text.s..('\n\n'
+    sections (text.s..('\n\n'
     
 
     id_to_speed    # dict
     ___ section __ sections:
-        parts = section.s..('\n')
+        parts section.s..('\n')
 
-        id_,times,text = parts
+        id_,times,text parts
 
-        start_time,end_time = times.s..('-->')
+        start_time,end_time times.s..('-->')
         
         tds    # list
         ___ t__ __ (start_time,end_time
-            hours,minutes,seconds = t__.s..(':')
-            hours = i..(hours)
-            minutes = i..(hours)
-            seconds = f__('.'.j..(seconds.s..(',')))
-            td = t..(hours=hours,minutes=minutes,seconds=seconds)
+            hours,minutes,seconds t__.s..(':')
+            hours i..(hours)
+            minutes i..(hours)
+            seconds f__('.'.j..(seconds.s..(',')))
+            td t..(hours=hours,minutes=minutes,seconds=seconds)
             tds.a..(td)
 
 
-        time_elapsed = (tds[1] - tds[0]).total_seconds()
-        characters = l..(text)
+        time_elapsed (tds[1] - tds[0]).total_seconds()
+        characters l..(text)
 
-        characters_per_second = characters/time_elapsed
+        characters_per_second characters/time_elapsed
 
 
         id_to_speed[i..(id_)]  = characters_per_second

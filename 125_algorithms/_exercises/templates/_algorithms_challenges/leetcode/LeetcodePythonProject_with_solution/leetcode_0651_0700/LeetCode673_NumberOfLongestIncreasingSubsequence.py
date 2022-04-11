@@ -10,36 +10,36 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. nums: r.. 0
-        n = l..(nums)
-        res = 0
-        maxLen = 0
-        lengths = [0]*n
-        counts = [0]*n
+        n l..(nums)
+        res 0
+        maxLen 0
+        lengths [0]*n
+        counts [0]*n
         ___ i __ r..(n
-            lengths[i], counts[i] = 1, 1
+            lengths[i], counts[i] 1, 1
             ___ j __ r..(i
                 __ nums[i] > nums[j]:
                     __ lengths[i] __ lengths[j]+1:
                         counts[i] += counts[j]
                     ____ lengths[i] < lengths[j]+1:
-                        lengths[i] = lengths[j] + 1
-                        counts[i] = counts[j]
+                        lengths[i] lengths[j] + 1
+                        counts[i] counts[j]
             __ maxLen __ lengths[i]:
                 res += counts[i]
             ____ maxLen < lengths[i]:
-                maxLen = lengths[i]
-                res = counts[i]
+                maxLen lengths[i]
+                res counts[i]
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [1, 3, 5, 4, 7],
             [2, 2, 2, 2, 2],
             [1, 2, 4, 3, 5, 4, 7, 2],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = findNumberOfLIS(nums)
+            result findNumberOfLIS(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -12,11 +12,11 @@ c_ Solution:
         __ n.. A:
             r..
 
-        n = l..(A)
-        S = s..(A)
+        n l..(A)
+        S s..(A)
 
         ___ i __ r..(1, n, 2
-            A[i] = S.p.. )
+            A[i] S.p.. )
 
         ___ i __ r..(0, n, 2
-            A[i] = S.p.. )
+            A[i] S.p.. )

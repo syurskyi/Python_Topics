@@ -12,7 +12,7 @@ c_ Solution:
         :rtype: float
         """
         heap    # list
-        n = 0
+        n 0
 
         ___ nums __ (a, b
             __ n.. nums:
@@ -24,9 +24,9 @@ c_ Solution:
         __ n __ 0:
             r.. 0.0
 
-        num = 0
+        num 0
         ___ _ __ r..((n + 1) // 2
-            num, nums, i = heapq.heappop(heap)
+            num, nums, i heapq.heappop(heap)
 
             i += 1
             __ i < l..(nums
@@ -35,7 +35,7 @@ c_ Solution:
         __ n & 1 __ 1:
             r.. num * 1.0
 
-        _num = heapq.heappop(heap)[0]
+        _num heapq.heappop(heap)[0]
         r.. (num + _num) / 2.0
 
 
@@ -49,13 +49,13 @@ c_ Solution:
     @return: a double whose format is *.5 or *.0
     """
     ___ findMedianSortedArrays  A, B
-        n = l..(A) + l..(B)
+        n l..(A) + l..(B)
 
-        median = find_kth(A, 0, B, 0, n // 2 + 1)
+        median find_kth(A, 0, B, 0, n // 2 + 1)
         __ n % 2 __ 1:
             r.. median
 
-        _median = find_kth(A, 0, B, 0, n // 2)
+        _median find_kth(A, 0, B, 0, n // 2)
         r.. (median + _median) / 2.0
 
     ___ find_kth  A, i, B, j, k
@@ -96,10 +96,10 @@ c_ Solution:
         __ k __ 1:
             r.. m..(A[i], B[j])
 
-        _a = i + k // 2 - 1
-        _b = j + k // 2 - 1
-        a = A[_a] __ _a < l..(A) ____ f__('inf')
-        b = B[_b] __ _b < l..(B) ____ f__('inf')
+        _a i + k // 2 - 1
+        _b j + k // 2 - 1
+        a A[_a] __ _a < l..(A) ____ f__('inf')
+        b B[_b] __ _b < l..(B) ____ f__('inf')
 
         __ a < b:
             r.. find_kth(A, i + k // 2, B, j, k - k // 2)

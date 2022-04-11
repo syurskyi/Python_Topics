@@ -12,12 +12,12 @@ c_ Solution(o..
         p..
     
     ___ test
-        testCases = [
+        testCases [
             
         ]
         ___ arr __ testCases:
             print('arr: %s' % arr)
-            result = maxChunksToSorted(arr)
+            result maxChunksToSorted(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 

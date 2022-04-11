@@ -4,12 +4,12 @@ c_ Solution:
         :type s: str
         :rtype: int
         """
-        ans = 0
+        ans 0
 
         __ n.. s:
             r.. ans
 
-        symbs = {
+        symbs {
             'I': 1,
             'V': 5,
             'X': 10,

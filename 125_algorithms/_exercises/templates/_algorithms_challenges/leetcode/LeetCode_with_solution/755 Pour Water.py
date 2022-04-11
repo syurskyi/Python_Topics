@@ -129,13 +129,13 @@ c_ Solution:
         O(V * L)
         """
         ___ _ __ r..(V
-            s = K
+            s K
             # looking to the left
-            optimal = s
+            optimal s
             ___ i __ r..(s-1, -1, -1
                 __ heights[i] <_ heights[i+1]:
                     __ heights[i] < heights[optimal]:
-                        optimal = i
+                        optimal i
                 ____
                     _____
             __ optimal __ s:
@@ -143,7 +143,7 @@ c_ Solution:
                 ___ i __ r..(s+1, l..(heights:
                     __ heights[i] <_ heights[i-1]:
                         __ heights[i] < heights[optimal]:
-                            optimal = i
+                            optimal i
                     ____
                         _____
             heights[optimal] += 1

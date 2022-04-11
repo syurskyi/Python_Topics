@@ -3,15 +3,15 @@ _______ ___
 __ ___.version_info[0] __ 2:
     ____ s__ _______ maketrans
 ____
-    maketrans = s...maketrans
+    maketrans s...maketrans
 
 
-DNA_CHARS = 'AGCT'
-DNA_TO_RNA = maketrans(DNA_CHARS, 'UCGA')
+DNA_CHARS 'AGCT'
+DNA_TO_RNA maketrans(DNA_CHARS, 'UCGA')
 
 
 ___ to_rna(dna_strand
-    valid_chars = s..(DNA_CHARS)
+    valid_chars s..(DNA_CHARS)
     __ any(char n.. __ valid_chars ___ char __ dna_strand
         r.. ''
 

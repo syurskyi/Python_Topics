@@ -6,15 +6,15 @@ c_ Solution:
     @return: An integer
     """
     ___ kSum  A, K, target
-        n = l..(A)
+        n l..(A)
 
         """
         `dp[i][j][k]` means the ways we can take `j` in previous `i` nums and its sum equals `k`
         """
-        dp = [[[0] * (target + 1) ___ _ __ r..(K + 1)] ___ _ __ r..(n + 1)]
+        dp [[[0] * (target + 1) ___ _ __ r..(K + 1)] ___ _ __ r..(n + 1)]
 
         ___ i __ r..(n + 1
-            dp[i][0][0] = 1
+            dp[i][0][0] 1
 
         ___ i __ r..(1, n + 1
             ___ j __ r..(1, m..(K, i) + 1

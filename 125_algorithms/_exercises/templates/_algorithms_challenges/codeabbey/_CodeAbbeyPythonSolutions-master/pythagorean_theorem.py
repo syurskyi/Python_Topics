@@ -1,10 +1,10 @@
 _______ m__
 
-amount_values = i..(input
+amount_values i..(input
 results    # list
 
 ___ get_triangle_type(side1, side2, side3
-    hypotenuse = m__.sqrt(side1**2 + side2**2)
+    hypotenuse m__.sqrt(side1**2 + side2**2)
     __(side3 < hypotenuse
         r.. "A"
     ____(side3 > hypotenuse
@@ -13,7 +13,7 @@ ___ get_triangle_type(side1, side2, side3
         r.. "R"
 
 ___ i __ r..(amount_values
-    side1, side2, side3 = map(i.., input().s..
+    side1, side2, side3 map(i.., input().s..
     results.a..(get_triangle_type(side1,side2, side3
 
 print(*results)

@@ -10,12 +10,12 @@ c_ Solution(o..
         :type s: str
         :rtype: List[str]
         """
-        result = s..()
-        resultCodes = s..()
+        result s..()
+        resultCodes s..()
         __ n.. s o. l..(s) < 10: r.. []
         ___ i __ r..(0, l..(s)-9
-            subStr = s[i:i+10]
-            code = encode(subStr)
+            subStr s[i:i+10]
+            code encode(subStr)
             __ code __ resultCodes:
                 result.add(subStr)
             ____
@@ -23,26 +23,26 @@ c_ Solution(o..
         r.. l..(result)
     
     ___ encode  s
-        sumVal = 0
+        sumVal 0
         ___ _, c __ e..(s
             __ c __ 'A':
-                sumVal = sumVal*4
+                sumVal sumVal*4
             ____ c __ 'C':
-                sumVal = sumVal*4+1
+                sumVal sumVal*4+1
             ____ c __ 'G':
-                sumVal = sumVal*4+2
+                sumVal sumVal*4+2
             ____
-                sumVal = sumVal*4+3
+                sumVal sumVal*4+3
         r.. sumVal
     
     ___ test
-        testCases = [
+        testCases [
             'AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT',
             'AAAAAAAAAAAA',
         ]
         ___ s __ testCases:
             print('s: %s' % (s
-            result = findRepeatedDnaSequences(s)
+            result findRepeatedDnaSequences(s)
             print('result: %s' % (result
             print('-='*20+'-')
         print(encode('AAAAACCCCC'

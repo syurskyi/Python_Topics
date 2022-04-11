@@ -11,7 +11,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        t = [0 ___ i __ r..(n + 1)]
+        t [0 ___ i __ r..(n + 1)]
         r.. climb(n, t)
 
     ___ climb  n, t
@@ -22,11 +22,11 @@ c_ Solution(o..
         ____ t[n] != 0:
             r.. t[n]
         ____
-            t[n] = climb(n - 1, t) + climb(n - 2, t)
+            t[n] climb(n - 1, t) + climb(n - 2, t)
             r.. t[n]
 
 
-s = Solution()
+s Solution()
 print(s.climbStairs(0
 print(s.climbStairs(1
 print(s.climbStairs(2

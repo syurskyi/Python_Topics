@@ -6,10 +6,10 @@ c_ Solution:
             r.. 0
         __ l..(A) __ 1:
             r.. 1
-        j = 0  # Position of last processed non-duplicate
-        n = l..(A)
+        j 0  # Position of last processed non-duplicate
+        n l..(A)
         ___ i __ r..(1, n
             __ A[i] != A[j]:
-                A[j + 1] = A[i]
+                A[j + 1] A[i]
                 j += 1
         r.. j + 1

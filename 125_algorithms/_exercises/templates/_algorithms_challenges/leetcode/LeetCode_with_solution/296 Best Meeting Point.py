@@ -2,13 +2,13 @@
 Premium Question
 Manhattan Distance
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
     ___ minTotalDistance_3lines  grid
-        x = s..([i ___ i, row __ e..(grid) ___ v __ row __ v __ 1])
-        y = s..([j ___ row __ grid ___ j, v __ e..(row) __ v __ 1])
+        x s..([i ___ i, row __ e..(grid) ___ v __ row __ v __ 1])
+        y s..([j ___ row __ grid ___ j, v __ e..(row) __ v __ 1])
         r.. s..([a..(x[l..(x)/2]-i)+a..(y[l..(y)/2]-j) ___ i, row __ e..(grid) ___ j, v __ e..(row) __ v __ 1])
 
     ___ minTotalDistance  grid
@@ -19,8 +19,8 @@ c_ Solution(o..
         x    # list
         y    # list
 
-        m = l..(grid)
-        n = l..(grid[0])
+        m l..(grid)
+        n l..(grid[0])
         ___ i __ x..(m
             ___ j __ x..(n
                 __ grid[i][j] __ 1:
@@ -29,9 +29,9 @@ c_ Solution(o..
 
         x.s..()
         y.s..()
-        cnt = l..(x)
-        point = (x[cnt/2], y[cnt/2])
-        ret = 0
+        cnt l..(x)
+        point (x[cnt/2], y[cnt/2])
+        ret 0
         ___ i __ x..(m
             ___ j __ x..(n
                 __ grid[i][j] __ 1:

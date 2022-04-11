@@ -20,13 +20,13 @@ c_ Solution(o..
             r.. T..
           r.. F..
 
-      visited[start, end, partSum, order] = F..
+      visited[start, end, partSum, order] F..
       __ n.. canWin(nums, start + 1, end, visited, partSum - order * nums[start], maxSum, ~order
-        visited[start, end, partSum, order] = T..
+        visited[start, end, partSum, order] T..
         # print "order=", order, "return True"
         r.. T..
       __ n.. canWin(nums, start, end - 1, visited, partSum - order * nums[end], maxSum, ~order
-        visited[start, end, partSum, order] = T..
+        visited[start, end, partSum, order] T..
         # print "order=", order, "return True"
         r.. T..
       r.. visited[start, end, partSum, order]

@@ -18,9 +18,9 @@ c_ Solution:
             r.. []
 
         sum_to_index    # dict
-        sum_to_index[0] = -1
+        sum_to_index[0] -1
 
-        prefix_sum = 0
+        prefix_sum 0
         ___ i __ r..(l..(nums:
             prefix_sum += nums[i]
 
@@ -30,6 +30,6 @@ c_ Solution:
                     i
                 ]
 
-            sum_to_index[prefix_sum] = i
+            sum_to_index[prefix_sum] i
 
         r.. []

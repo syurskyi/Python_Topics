@@ -21,21 +21,21 @@ c_ Solution:
         __ n.. root:
             r.. ans
 
-        queue = [root]
+        queue [root]
         w.... queue:
             _queue    # list
-            dummy = tail = ListNode(-1)
+            dummy tail ListNode(-1)
 
             ___ node __ queue:
-                tail.next = ListNode(node.val)
-                tail = tail.next
+                tail.next ListNode(node.val)
+                tail tail.next
 
                 __ node.left:
                     _queue.a..(node.left)
                 __ node.right:
                     _queue.a..(node.right)
 
-            queue = _queue
+            queue _queue
             ans.a..(dummy.next)
 
         r.. ans

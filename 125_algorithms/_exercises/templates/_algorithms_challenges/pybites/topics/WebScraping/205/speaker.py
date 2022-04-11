@@ -5,9 +5,9 @@ ____ p.. _______ P..
 _______ gender_guesser.detector __ gender
 ____ bs4 _______ BeautifulSoup __ Soup
 
-TMP = P..(__.g..("TMP", "/tmp"
-PYCON_HTML = TMP / "pycon2019.html"
-PYCON_PAGE = ('https://bites-data.s3.us-east-2.amazonaws.com/'
+TMP P..(__.g..("TMP", "/tmp"
+PYCON_HTML TMP / "pycon2019.html"
+PYCON_PAGE ('https://bites-data.s3.us-east-2.amazonaws.com/'
               'pycon2019.html')
 
 __ n.. PYCON_HTML.exists
@@ -19,7 +19,7 @@ ___ _get_soup(html=PYCON_HTML
 
 ___ get_first_name(fullname
     name_list    # list
-    name_list = fullname.s..(' ')
+    name_list fullname.s..(' ')
     r.. name_list[0]
 
 ___ get_pycon_speaker_first_names(soup_ N..
@@ -28,16 +28,16 @@ ___ get_pycon_speaker_first_names(soup_ N..
        multiple speakers so you need to extract them.
        Return a list of first names
     """
-    soup = _get_soup()
-    speakers = soup.find_all('span', class_='speaker')
+    soup _get_soup()
+    speakers soup.find_all('span', class_='speaker')
     speakers_list    # list
     ___ slot_speaker __ speakers:
         __ ',' __ slot_speaker.text.s..:
-            slot_speakers = slot_speaker.text.s...s..(',')
+            slot_speakers slot_speaker.text.s...s..(',')
             ___ speaker __ slot_speakers:
                 speakers_list.a..(get_first_name(speaker.s..()))
         ____ '/' __ slot_speaker.text.s..:
-            slot_speakers = slot_speaker.text.s...s..('/')
+            slot_speakers slot_speaker.text.s...s..('/')
             ___ speaker __ slot_speakers:
                 speakers_list.a..(get_first_name(speaker.s..()))
         ____
@@ -48,9 +48,9 @@ ___ get_percentage_of_female_speakers(first_names
     """Run gender_guesser on the names returning a percentage
        of female speakers (female and mostly_female),
        rounded to 2 decimal places."""
-    total_speakers = l..(first_names)
-    female = 0
-    d = gender.Detector()
+    total_speakers l..(first_names)
+    female 0
+    d gender.Detector()
     ___ name __ first_names:
         __ d.get_gender(name) __ ("female", "mostly_female"
             female += 1
@@ -58,9 +58,9 @@ ___ get_percentage_of_female_speakers(first_names
 
 
 __ _____ __ _____
-    names = get_pycon_speaker_first_names()
+    names get_pycon_speaker_first_names()
     print(names)
-    perc = get_percentage_of_female_speakers(names)
+    perc get_percentage_of_female_speakers(names)
     print(perc)
 
 

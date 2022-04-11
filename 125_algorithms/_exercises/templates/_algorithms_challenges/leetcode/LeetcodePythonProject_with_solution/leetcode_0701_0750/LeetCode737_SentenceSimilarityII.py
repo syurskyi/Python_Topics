@@ -16,9 +16,9 @@ c_ Solution(o..
         pairInfo    # dict
         ___ p __ pairs:
             __ p[0] n.. __ pairInfo:
-                pairInfo[p[0]] = s..()
+                pairInfo[p[0]] s..()
             __ p[1] n.. __ pairInfo:
-                pairInfo[p[1]] = s..()
+                pairInfo[p[1]] s..()
             pairInfo[p[0]].add(p[1])
             pairInfo[p[1]].add(p[0])
         ___ w1, w2 __ z..(words1, words2
@@ -50,41 +50,41 @@ c_ Solution(o..
         __ l..(words1) != l..(words2
             r.. F..
         hashmap    # dict
-        n = 0
+        n 0
         l    # list
         ___ p __ pairs:
             __ p[0] n.. __ hashmap:
                 l.a..(p[0])
-                hashmap[p[0]] = n
+                hashmap[p[0]] n
                 n += 1
             __ p[1] n.. __ hashmap:
                 l.a..(p[1])
-                hashmap[p[1]] = n
+                hashmap[p[1]] n
                 n += 1
-        roots = [-1]*n
+        roots [-1]*n
         ___ p __ pairs:
-            root0 = getRoot(roots, hashmap[p[0]])
-            root1 = getRoot(roots, hashmap[p[1]])
-            roots[root0] = root1
+            root0 getRoot(roots, hashmap[p[0]])
+            root1 getRoot(roots, hashmap[p[1]])
+            roots[root0] root1
         ___ w1, w2 __ z..(words1, words2
             __ w1 __ w2:
                 _____
             ____ w1 n.. __ hashmap o. w2 n.. __ hashmap:
                 r.. F..
             ____
-                r1 = getRoot(roots, hashmap[w1])
-                r2 = getRoot(roots, hashmap[w2])
+                r1 getRoot(roots, hashmap[w1])
+                r2 getRoot(roots, hashmap[w2])
                 __ r1 != r2:
                     r.. F..
         r.. T..
     
     ___ getRoot  roots, ind
         w.... roots[ind] != -1:
-            ind = roots[ind]
+            ind roots[ind]
         r.. ind
     
     ___ test
-        testCases = [
+        testCases [
             [
                 ["great", "acting", "skills"],
                 ["fine", "drama", "talent"],
@@ -112,7 +112,7 @@ c_ Solution(o..
             ],
         ]
         ___ words1, words2, pairs __ testCases:
-            result = areSentencesSimilarTwo(words1, words2, pairs)
+            result areSentencesSimilarTwo(words1, words2, pairs)
             print('result: %s' % result)
             print('-='*30+'-')
 

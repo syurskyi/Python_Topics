@@ -56,11 +56,11 @@ c_ Solution:
         glass, keep track of the total amount of champagne that flows through a
         glass.
         """
-        G = d..(l....: d..(i..
-        G[0][0] = poured
+        G d..(l....: d..(i..
+        G[0][0] poured
         ___ i __ r..(query_row
             ___ j __ r..(i+1  # i + 1 glasses at row i
-                excess = m..(0, G[i][j] - 1)
+                excess m..(0, G[i][j] - 1)
                 G[i+1][j] += excess / 2
                 G[i+1][j+1] += excess / 2
 

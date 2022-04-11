@@ -22,22 +22,22 @@ c_ Solution:
         __ n.. root:
             r..
 
-        dummy = tail = DoublyListNode(-1)
+        dummy tail DoublyListNode(-1)
         stack    # list
-        node = root
+        node root
 
         w.... node o. stack:
             w.... node:
                 stack.a..(node)
-                node = node.left
+                node node.left
 
-            node = stack.p.. )
+            node stack.p.. )
 
-            _node = DoublyListNode(node.val)
-            _node.prev = tail
-            tail.next = _node
-            tail = tail.next
+            _node DoublyListNode(node.val)
+            _node.prev tail
+            tail.next _node
+            tail tail.next
 
-            node = node.right
+            node node.right
 
         r.. dummy.next

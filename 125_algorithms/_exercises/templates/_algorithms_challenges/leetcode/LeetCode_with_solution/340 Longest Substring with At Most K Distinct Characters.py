@@ -11,7 +11,7 @@ Show Similar Problems
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -24,9 +24,9 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        st = 0  # start
-        counter = d..(i..)
-        maxa = 0
+        st 0  # start
+        counter d..(i..)
+        maxa 0
         ___ idx, val __ e..(s
             __ counter[val] __ 0:
                 k -_ 1
@@ -38,7 +38,7 @@ c_ Solution(o..
                     k += 1
                 st += 1
 
-            maxa = m..(maxa, idx - st + 1)
+            maxa m..(maxa, idx - st + 1)
 
         r.. maxa
 

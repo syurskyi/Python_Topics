@@ -9,7 +9,7 @@ c_ Solution(o..
         :type N: int
         :rtype: float
         """
-        n = N
+        n N
         hashmap    # dict
         __ N < 5000:
             r.. helper(hashmap, n, n)
@@ -23,9 +23,9 @@ c_ Solution(o..
             r.. 1
         __ b <_ 0:
             r.. 0
-        s = s..(a)+':'+s..(b)
+        s s..(a)+':'+s..(b)
         __ s n.. __ hashmap:
-            hashmap[s] = 0.25*(
+            hashmap[s] 0.25*(
                     helper(hashmap, a-100, b)+\
                     helper(hashmap, a-25, b-75)+\
                     helper(hashmap, a-75, b-25)+\
@@ -34,11 +34,11 @@ c_ Solution(o..
         r.. hashmap[s]
     
     ___ test
-        testCases = [
+        testCases [
             50,
         ]
         ___ n __ testCases:
-            result = soupServings(n)
+            result soupServings(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

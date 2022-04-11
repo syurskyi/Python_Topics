@@ -9,8 +9,8 @@
 #to find the distance travelled by cycle A substitute the time travelled into Dist(A)
 # thus dist(A) = 1 * 6.667
 ___ i __ r..(i..(input())):
-    res = 0
-    data = l.. m..(f__,input().s..()))
-    s,a,b = data
-    res = s/(a+b)
+    res 0
+    data l.. m..(f__,input().s..()))
+    s,a,b data
+    res s/(a+b)
     print(res * a,end=' ')

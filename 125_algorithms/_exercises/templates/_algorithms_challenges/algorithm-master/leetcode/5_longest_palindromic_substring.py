@@ -7,25 +7,25 @@ c_ Solution:
         __ n.. s:
             r.. ''
 
-        start = size = 0
+        start size 0
 
         ___ i __ r..(l..(s:
-            _start, _size = check_palindrome(s, i, i)
+            _start, _size check_palindrome(s, i, i)
 
             __ _size > size:
-                size = _size
-                start = _start
+                size _size
+                start _start
 
-            _start, _size = check_palindrome(s, i, i + 1)
+            _start, _size check_palindrome(s, i, i + 1)
 
             __ _size > size:
-                size = _size
-                start = _start
+                size _size
+                start _start
 
         r.. s[start:start + size]
 
     ___ check_palindrome  s, left, right
-        n = l..(s)
+        n l..(s)
 
         w.... left >_ 0 a.. right < n a.. s[left] __ s[right]:
             left -_ 1

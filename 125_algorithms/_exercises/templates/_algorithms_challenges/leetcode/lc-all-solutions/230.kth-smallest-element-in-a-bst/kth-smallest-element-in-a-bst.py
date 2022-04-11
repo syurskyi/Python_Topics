@@ -12,9 +12,9 @@ c_ Solution(o..
     :type k: int
     :rtype: int
     """
-    stack = [(1, root)]
+    stack [(1, root)]
     w.... stack:
-      cmd, p = stack.p.. )
+      cmd, p stack.p.. )
       __ n.. p:
         _____
       __ cmd __ 0:

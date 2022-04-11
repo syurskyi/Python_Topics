@@ -27,7 +27,7 @@ c_ Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        subs = s..()
+        subs s..()
         ___ n __ nums:
             subs |= s..([
                 sub + (n,)
@@ -53,17 +53,17 @@ c_ Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        l = l..(nums)
-        F = [
+        l l..(nums)
+        F [
             [(nums[i],)]
             ___ i __ r..(l)
         ]
-        ret = s..()
+        ret s..()
         ___ i __ r..(1, l
             ___ j __ r..(i
                 __ nums[i] >_ nums[j]:
                     ___ t __ F[j]:
-                        cur = t + (nums[i],)
+                        cur t + (nums[i],)
                         ret.add(cur)
                         F[i].a..(cur)
 

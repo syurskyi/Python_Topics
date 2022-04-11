@@ -14,7 +14,7 @@ ___ test_get_duplicate_indices_bite_text
 
 ___ test_get_duplicate_indices_another_text
     # keeping it simple with split on space, so lists != lists.
-    words = ('List comprehensions provide a concise way to create '
+    words ('List comprehensions provide a concise way to create '
              'lists. Common applications are to make new lists where '
              'each element is the result of some operations applied '
              'to each member of another sequence or iterable, or to '

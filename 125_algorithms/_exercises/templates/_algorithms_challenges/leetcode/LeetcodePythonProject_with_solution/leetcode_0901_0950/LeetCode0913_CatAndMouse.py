@@ -6,36 +6,36 @@ c_ Solution(o..
         :type graph: List[List[int]]
         :rtype: int
         """
-        N = l..(graph)
+        N l..(graph)
 
-        DRAW, MOUSE, CAT = 0, 1, 2
-        color = c...d..(i..)
+        DRAW, MOUSE, CAT 0, 1, 2
+        color c...d..(i..)
         degree    # dict
         ___ m __ r..(N
             ___ c __ r..(N
-                degree[m, c, 1] = l..(graph[m])
-                degree[m, c, 2] = l..(graph[c]) - (0 __ graph[c])
+                degree[m, c, 1] l..(graph[m])
+                degree[m, c, 2] l..(graph[c]) - (0 __ graph[c])
 
-        queue = c...d..([])
+        queue c...d..([])
         ___ i __ r..(N
             ___ t __ r..(1, 3
-                color[0, i, t] = MOUSE
+                color[0, i, t] MOUSE
                 queue.a..((0, i, t, MOUSE
                 __ i > 0:
-                    color[i, i, t] = CAT
+                    color[i, i, t] CAT
                     queue.a..((i, i, t, CAT
 
         w.... queue:
-            i, j, t, c = queue.popleft()
+            i, j, t, c queue.popleft()
             ___ i2, j2, t2 __ parents(graph, i, j, t
                 __ color[i2, j2, t2] __ DRAW:
                     __ t2 __ c:
-                        color[i2, j2, t2] = c
+                        color[i2, j2, t2] c
                         queue.a..((i2, j2, t2, c
                     ____
                         degree[i2, j2, t2] -_ 1
                         __ degree[i2, j2, t2] __ 0:
-                            color[i2, j2, t2] = 3 - t2
+                            color[i2, j2, t2] 3 - t2
                             queue.a..((i2, j2, t2, 3-t2
         r.. color[1, 2, 1]
 
@@ -51,11 +51,11 @@ c_ Solution(o..
         r.. res
 
     ___ test
-        testCases = [
+        testCases [
             [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]],
         ]
         ___ graph __ testCases:
-            res = catMouseGame(graph)
+            res catMouseGame(graph)
             print('res: %s' % res)
             print('-='*30+'-')
 

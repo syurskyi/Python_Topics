@@ -17,26 +17,26 @@ c_ Solution(o..
         :type n: int
         :rtype: str
         """
-        ln = l..(s..(1
+        ln l..(s..(1
         ___ i __ r..(1, n
             tn    # list
-            count = 1
-            prev = N..
+            count 1
+            prev N..
             ___ c __ ln:
                 __ prev __ c:
                     count += 1
                 __ prev __ n.. N.. a.. prev != c:
                     tn.a..(s..(count
                     tn.a..(s..(prev
-                    count = 1
-                prev = c
+                    count 1
+                prev c
             tn.a..(s..(count
             tn.a..(s..(prev
-            ln = tn
+            ln tn
         r.. ''.j..(ln)
 
 
-s = Solution()
+s Solution()
 print s.countAndSay(1)
 print s.countAndSay(2)
 print s.countAndSay(3)

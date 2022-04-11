@@ -10,15 +10,15 @@ c_ Solution(o..
         :rtype: List[List[int]]
         """
         _______ m__
-        matrix = M
+        matrix M
         __ n.. matrix o. n.. matrix[0]:
             r.. []
-        m, n = l..(matrix), l..(matrix[0])
-        res = [[0]*n ___ _ __ r..(m)]
+        m, n l..(matrix), l..(matrix[0])
+        res [[0]*n ___ _ __ r..(m)]
         ___ i __ r..(m
             ___ j __ r..(n
-                count = f__(matrix[i][j])
-                num = 1.0
+                count f__(matrix[i][j])
+                num 1.0
                 ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1),\
                     (i+1, j+1), (i-1, j-1), (i+1, j-1), (i-1, j+1
                     __ 0 <_ x < m a.. 0 <_ y < n:
@@ -26,11 +26,11 @@ c_ Solution(o..
                             count += f__(matrix[x][y])
                         num += 1
                 tmp  i..(m__.f..(count/num
-                res[i][j] = tmp
+                res[i][j] tmp
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [2,3],
             ],
@@ -50,7 +50,7 @@ c_ Solution(o..
         ___ matrix __ testCases:
             print('matrix:')
             print('\n'.j..([s..(row) ___ row __ matrix]
-            result = imageSmoother(matrix)
+            result imageSmoother(matrix)
             print('result:')
             print('\n'.j..([s..(row) ___ row __ result]
             print('-='*30+'-')

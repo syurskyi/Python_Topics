@@ -7,16 +7,16 @@ c_ RLEIterator(o..
         """
         :type A: List[int]
         """
-        arr = A
-        countIdx = 0
-        numIdx = 1
+        arr A
+        countIdx 0
+        numIdx 1
 
     ___ next  n
         """
         :type n: int
         :rtype: int
         """
-        val = -1
+        val -1
         ___ _ __ r..(n
             w.... countIdx < l..(arr) a.. \
                     arr[countIdx] __ 0:
@@ -24,7 +24,7 @@ c_ RLEIterator(o..
                 numIdx += 2
             __ countIdx >_ l..(arr
                 r.. -1
-            val = arr[numIdx]
+            val arr[numIdx]
             arr[countIdx] -_ 1
         r.. val
 

@@ -1,9 +1,9 @@
 _______ s__
 _______ __
 
-PUNCTUATION_CHARS = l..(s__.punctuation)
+PUNCTUATION_CHARS l..(s__.punctuation)
 
-used_passwords = s..('PassWord@1 PyBit$s9'.s..
+used_passwords s..('PassWord@1 PyBit$s9'.s..
 
 
 ___ validate_password(password

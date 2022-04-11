@@ -11,15 +11,15 @@ c_ Solution(o..
         """
         queue1    # list
         queue2    # list
-        n = l..(senate)
+        n l..(senate)
         ___ i __ r..(n
             __ senate[i] __ 'R':
                 queue1.a..(i)
             ____
                 queue2.a..(i)
         w.... queue1 a.. queue2:
-            r_index = queue1.p.. 0)
-            d_index = queue2.p.. 0)
+            r_index queue1.p.. 0)
+            d_index queue2.p.. 0)
             __ r_index < d_index:
                 queue1.a..(r_index+n)
             ____
@@ -27,14 +27,14 @@ c_ Solution(o..
         r.. 'Radiant' __ l..(queue1) > l..(queue2) ____ 'Dire'
     
     ___ test
-        testCases = [
+        testCases [
             'RD',
             'RDD',
             'DDRRR',
         ]
         ___ senate __ testCases:
             print('senate: %s' % senate)
-            result = predictPartyVictory(senate)
+            result predictPartyVictory(senate)
             print('result: %s' % result)
             print('-='*30+'-')
 

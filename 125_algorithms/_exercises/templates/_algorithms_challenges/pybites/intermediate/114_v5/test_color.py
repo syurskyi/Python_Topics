@@ -13,7 +13,7 @@ ____ color _______ Color
     ("puke", N..),
 ])
 ___ test_color_class(color, e..
-    c = Color(color)
+    c Color(color)
     ... c.rgb __ e..
 
 
@@ -65,15 +65,15 @@ ___ test_color_hex2rgb_bad_value(value
 
 
 ___ test_color_string_output
-    color = Color("brown")
+    color Color("brown")
     ... s..(color) __ "(165, 42, 42)"
 
 
 ___ test_color_repr_output
-    color = Color("brown")
+    color Color("brown")
     ... r.. (color) __ "Color('brown')"
 
 
 ___ test_unknown_color
-    color = Color("puke green")
+    color Color("puke green")
     ... s..(color) __ "Unknown"

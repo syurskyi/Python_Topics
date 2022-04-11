@@ -13,12 +13,12 @@ c_ Solution:
             r..
         flatten(root.left)
         flatten(root.right)
-        left = root.left
-        right = root.right
+        left root.left
+        right root.right
         __ left __ n.. N..
-            root.right = left
-            root.left = N..
-            current = left
+            root.right left
+            root.left N..
+            current left
             w.... current.right __ n.. N..
-                current = current.right
-            current.right = right
+                current current.right
+            current.right right

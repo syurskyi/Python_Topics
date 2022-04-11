@@ -8,7 +8,7 @@ ___ print_colors
        - if the color is not in VALID_COLORS, print 'Not a valid color' and continue.
        - otherwise print the color in lower case."""
     w... T...
-        color = input("Enter a color, or quit to stop: ")
+        color input("Enter a color, or quit to stop: ")
         __ color__"Quit" o. color__"quit":
             print('bye')
             _____

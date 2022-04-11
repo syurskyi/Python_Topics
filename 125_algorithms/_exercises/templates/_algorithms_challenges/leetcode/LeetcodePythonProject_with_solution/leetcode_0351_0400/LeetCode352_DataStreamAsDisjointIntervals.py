@@ -5,8 +5,8 @@ Created on Mar 22, 2017
 '''
 c_ Interval(o..
     ___ - , s=0, e=0
-        start = s
-        end = e
+        start s
+        end e
 
 c_ SummaryRanges(o..
     ___ -
@@ -17,18 +17,18 @@ c_ SummaryRanges(o..
             intervals.a..(Interval(val, val
         ____
             result    # list
-            newInterval = Interval(val, val)
+            newInterval Interval(val, val)
             ___ interval __ intervals:
                 __ newInterval.end < interval.start-1:
                     result.a..(newInterval)
-                    newInterval = interval
+                    newInterval interval
                 ____ newInterval.start <_ interval.end+1:
-                    newInterval = Interval(m..(interval.start, newInterval.start),\
+                    newInterval Interval(m..(interval.start, newInterval.start),\
                         m..(interval.end, newInterval.end
                 ____
                     result.a..(interval)
             result.a..(newInterval)
-            intervals = result
+            intervals result
     
     ___ getIntervals
         r.. intervals

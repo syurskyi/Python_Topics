@@ -5,12 +5,12 @@ _______ __
 ____ u__.r.. _______ u..
 ____ bs4 _______ BeautifulSoup __ Soup
 
-TMP = P..(__.g..("TMP", "/tmp"
-HTML_FILE = TMP / "enchantment_list_pc.html"
+TMP P..(__.g..("TMP", "/tmp"
+HTML_FILE TMP / "enchantment_list_pc.html"
 
 # source:
 # https://www.digminecraft.com/lists/enchantment_list_pc.php
-URL = ("https://bites-data.s3.us-east-2.amazonaws.com/"
+URL ("https://bites-data.s3.us-east-2.amazonaws.com/"
        "minecraft-enchantment.html")
 
 
@@ -22,10 +22,10 @@ c_ Enchantment:
     """
 
     ___ - ,id_name,name,max_level,description
-        id_name = id_name
-        name = name
-        max_level = max_level
-        description = description
+        id_name id_name
+        name name
+        max_level max_level
+        description description
         items    # list
 
     ___ -s
@@ -39,7 +39,7 @@ c_ Item:
     """
 
     ___ - ,name
-        name = name
+        name name
         enchantments    # list
 
     ___ add_enchantment enchantment
@@ -47,8 +47,8 @@ c_ Item:
     
 
     ___ -s
-        s__ = name.r..('_',' ').t.. + ': '
-        sorted_enchantments = s..(enchantments,key=l.... x: x.id_name)
+        s__ name.r..('_',' ').t.. + ': '
+        sorted_enchantments s..(enchantments,key=l.... x: x.id_name)
         ___ enchantment __ sorted_enchantments:
             s__ += f'\n  [{enchantment.max_level}] {enchantment.id_name}'
         r.. s__
@@ -60,21 +60,21 @@ ___ generate_enchantments(soup
     """
 
     enchantment_dict    # dict
-    mapping = {'I': 1,'II': 2,'III': 3,'IV': 4,'V': 5}
-    table = soup.find('table',id="minecraft_items")
+    mapping {'I': 1,'II': 2,'III': 3,'IV': 4,'V': 5}
+    table soup.find('table',id="minecraft_items")
     all_values    # list
     ___ table_row __ table.find_all('tr')[1:]:
-        data = table_row.find_all('td')
+        data table_row.find_all('td')
         values    # list
         ___ i,d __ e..(data
-            value = d.getText()
+            value d.getText()
             values.a..(value)
         
-        image_source = table_row.find('img') 'data-src'
-        last_part = image_source.s..('/')[-1]
-        last_part = __.s.. _ \.|png|sm|enchanted|iron','',last_part)
+        image_source table_row.find('img') 'data-src'
+        last_part image_source.s..('/')[-1]
+        last_part __.s.. _ \.|png|sm|enchanted|iron','',last_part)
         
-        items = last_part.s...s..('_')
+        items last_part.s...s..('_')
         valid_items    # list
         ___ item __ items:
             __ item:
@@ -85,14 +85,14 @@ ___ generate_enchantments(soup
                 ____
                     valid_items.a..(item)
                                                
-        id_name = __.s..(r'\((.+)\)',values[0]).group(1)
+        id_name __.s..(r'\((.+)\)',values[0]).group(1)
         name= __.s.. _ \(.+\)','',values[0])
-        level = i..(mapping[values[1]])
-        description = values[2]
+        level i..(mapping[values[1]])
+        description values[2]
 
-        enchantment = Enchantment(id_name,name,level,description)
-        enchantment.items = valid_items
-        enchantment_dict[id_name] = enchantment
+        enchantment Enchantment(id_name,name,level,description)
+        enchantment.items valid_items
+        enchantment_dict[id_name] enchantment
     
     print(enchantment_dict)
     r.. enchantment_dict
@@ -117,13 +117,13 @@ ___ generate_items(data
 
         ___ item __ enchantment.items:
             __ item n.. __ item_mapping:
-                item_mapping[item] = Item(item)
+                item_mapping[item] Item(item)
 
 
             item_mapping[item].add_enchantment(enchantment)
     
     
-    item_mapping = d..(s..(item_mapping.i..,key=l.... x:x[0]
+    item_mapping d..(s..(item_mapping.i..,key=l.... x:x[0]
 
     r.. item_mapping
 
@@ -137,9 +137,9 @@ ___ get_soup(file=HTML_FILE
             u..(URL, file)
 
         w__ file.o.. ) __ html_source:
-            soup = Soup(html_source, "html.parser")
+            soup Soup(html_source, "html.parser")
     ____
-        soup = Soup(file, "html.parser")
+        soup Soup(file, "html.parser")
 
     r.. soup
 
@@ -148,9 +148,9 @@ ___ main
     """This function is here to help you test your final code.
     
     Once complete, the print out should match what's at the bottom of this file"""
-    soup = get_soup()
-    enchantment_data = generate_enchantments(soup)
-    minecraft_items = generate_items(enchantment_data)
+    soup get_soup()
+    enchantment_data generate_enchantments(soup)
+    minecraft_items generate_items(enchantment_data)
     ___ item __ minecraft_items:
         print(minecraft_items[item], "\n")
 

@@ -32,7 +32,7 @@ c_ Solution:
     ___ serialize  root
         __ n.. root:
             r.. ''
-        data = ''
+        data ''
         ___ key, node __ root.children.i..:
             data += key + serialize(node)
         r.. '<%s>' % data
@@ -51,8 +51,8 @@ c_ Solution:
                 o. data[-1] != '>' \
                 o. l..(data) < 1:
             r..
-        root = TrieNode()
-        current = root
+        root TrieNode()
+        current root
         queue    # list
         ___ char __ data:
             __ char __ '<':
@@ -60,6 +60,6 @@ c_ Solution:
             ____ char __ '>':
                 queue.p.. )
             ____
-                current = TrieNode()
-                queue[-1].children[char] = current
+                current TrieNode()
+                queue[-1].children[char] current
         r.. root

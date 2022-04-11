@@ -25,19 +25,19 @@ def test_promo_not_expired():
 
 ____ d__ _______ d__
 ____ d__ _______ t..
-NOW = d__.n..
+NOW d__.n..
 
 
 c_ Promo:
 
     ___ - , name, expires=NOW
-        name = name
-        expires = expires
+        name name
+        expires expires
 
     $
     ___ expired
         r.. d__.n.. > expires
 
-p = Promo('blackfriday', NOW + t..(d.._5
+p Promo('blackfriday', NOW + t..(d.._5
 
 print(p.expired)

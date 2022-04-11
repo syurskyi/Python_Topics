@@ -34,20 +34,20 @@ c_ SolutionDP:
         Let F[l][k] be the minimized max sum in nums[:l] with k parts
         F[l][k] = max(F[j][k-1], sum(nums[j:l])), minimize over j
         """
-        n = l..(nums)
-        sums = [0]
+        n l..(nums)
+        sums [0]
         ___ e __ nums:
             sums.a..(sums[-1] + e)
 
-        F = [[f__("inf") ___ _ __ r..(m + 1)] ___ _ __ r..(n + 1)]
+        F [[f__("inf") ___ _ __ r..(m + 1)] ___ _ __ r..(n + 1)]
         ___ l __ r..(1, n + 1
-            F[l][1] = sums[l] - sums[0]
+            F[l][1] sums[l] - sums[0]
         # or F[0][0] = 0
 
         ___ l __ r..(1, n + 1
             ___ k __ r..(1, m + 1
                 ___ j __ r..(l
-                    F[l][k] = m..(
+                    F[l][k] m..(
                         F[l][k], m..(F[j][k-1], sums[l] - sums[j])
                     )
 
@@ -59,32 +59,32 @@ c_ Solution:
         """
         Binary search over the subarray sum values
         """
-        lo = m..(nums)
-        hi = s..(nums) + 1
-        ret = hi
+        lo m..(nums)
+        hi s..(nums) + 1
+        ret hi
         w.... lo < hi:
-            mid = (lo + hi) // 2
-            cnt = 1  # pitfall, initial is 1 (the 1st running sum)
-            cur_sum = 0
+            mid (lo + hi) // 2
+            cnt 1  # pitfall, initial is 1 (the 1st running sum)
+            cur_sum 0
             ___ e __ nums:
                 __ cur_sum + e > mid:
                     cnt += 1
-                    cur_sum = e
+                    cur_sum e
                 ____
                     cur_sum += e
 
             __ cnt <_ m:
-                ret = m..(ret, mid)  # pitfall. Condition satisfied
-                hi = mid
+                ret m..(ret, mid)  # pitfall. Condition satisfied
+                hi mid
             ____
-                lo = mid + 1
+                lo mid + 1
 
         r.. ret
 
 
 c_ SolutionTLE2:
     ___ -
-        sums = [0]
+        sums [0]
 
     ___ splitArray  nums: L..[i..], m: i..) __ i..:
         """
@@ -93,7 +93,7 @@ c_ SolutionTLE2:
         ___ n __ nums:
             sums.a..(sums[-1] + n)
 
-        ret = dfs(l..(nums), m)
+        ret dfs(l..(nums), m)
         r.. ret
 
     @lru_cache(maxsize=N..)
@@ -104,19 +104,19 @@ c_ SolutionTLE2:
         __ m __ 1:
             r.. sums[hi] - sums[0]
 
-        mini = f__("inf")
+        mini f__("inf")
         ___ j __ r..(hi
-            right = sums[hi] - sums[j]
-            left = dfs(j, m - 1)
+            right sums[hi] - sums[j]
+            left dfs(j, m - 1)
             # minimize the max
-            mini = m..(mini, m..(left, right
+            mini m..(mini, m..(left, right
 
         r.. mini
 
 
 c_ SolutionTLE:
     ___ -
-        sums = [0]
+        sums [0]
 
     ___ splitArray  nums: L..[i..], m: i..) __ i..:
         """
@@ -126,7 +126,7 @@ c_ SolutionTLE:
         """
         ___ n __ nums:
             sums.a..(sums[-1] + n)
-        ret = dfs(t..(nums), 0, l..(nums), m)
+        ret dfs(t..(nums), 0, l..(nums), m)
         r.. ret
 
     @lru_cache(maxsize=N..)
@@ -137,12 +137,12 @@ c_ SolutionTLE:
         __ m __ 1:
             r.. sums[hi] - sums[lo]
 
-        mini = f__("inf")
+        mini f__("inf")
         ___ j __ r..(lo, hi
-            left = sums[j] - sums[lo]
-            right = dfs(nums, j, hi, m - 1)
+            left sums[j] - sums[lo]
+            right dfs(nums, j, hi, m - 1)
             # minimize the max
-            mini = m..(mini, m..(left, right
+            mini m..(mini, m..(left, right
 
         r.. mini
 

@@ -10,26 +10,26 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        left = 0
-        hashset = s..()
-        maxLen = 0
+        left 0
+        hashset s..()
+        maxLen 0
         ___ i, c __ e..(s
             w.... left < i a.. c __ hashset:
                 hashset.discard(s[left])
                 left += 1
             hashset.add(c)
-            maxLen = m..(maxLen, i-left+1)
+            maxLen m..(maxLen, i-left+1)
         r.. maxLen
     
     ___ test
-        testCases = [
+        testCases [
             'abc',
             'bbbb',
             'abcdba',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = lengthOfLongestSubstring(s)
+            result lengthOfLongestSubstring(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

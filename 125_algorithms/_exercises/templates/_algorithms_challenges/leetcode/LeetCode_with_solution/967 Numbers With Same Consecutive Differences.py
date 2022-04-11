@@ -52,7 +52,7 @@ c_ Solution:
         __ (start, N, K) n.. __ cache:
             ret    # list
             __ N __ 1:
-                ret = [[start]]
+                ret [[start]]
             ____ N > 1:
                 __ start + K <_ 9:
                     ___ e __ dfs(start + K, N - 1, K
@@ -61,7 +61,7 @@ c_ Solution:
                     ___ e __ dfs(start - K, N - 1, K
                         ret.a..([start] + e)
 
-            cache[start, N, K] = ret
+            cache[start, N, K] ret
 
         r.. cache[start, N, K]
 

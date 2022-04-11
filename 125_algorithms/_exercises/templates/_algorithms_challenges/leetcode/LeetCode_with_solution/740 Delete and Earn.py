@@ -46,16 +46,16 @@ c_ Solution:
             F[n-2] + reward if pick n
 
         """
-        rewards = [0 ___ _ __ r..(10001)]
+        rewards [0 ___ _ __ r..(10001)]
         ___ num __ nums:
             rewards[num] += num
 
         # whether to pick the number or not
-        cur, prev = 0, 0
+        cur, prev 0, 0
         ___ reward __ rewards:
-            nxt = m..(cur, prev + reward)
-            prev = cur
-            cur = nxt
+            nxt m..(cur, prev + reward)
+            prev cur
+            cur nxt
 
         r.. cur
 
@@ -68,14 +68,14 @@ c_ Solution:
             F[n-2] + reward if pick n
 
         """
-        counter = d..(i..)
+        counter d..(i..)
         ___ n __ nums:
             counter[n] += 1
 
-        F = [0 ___ _ __ r..(10000 + 3)]
+        F [0 ___ _ __ r..(10000 + 3)]
         ___ i __ r..(3, 10000 + 3
-            cur = i - 2
-            F[i] = m..(
+            cur i - 2
+            F[i] m..(
                 F[i-1],
                 F[i-2] + counter[cur] * cur
             )
@@ -91,18 +91,18 @@ c_ Solution:
         nums.s..()
         # transform to (num, count)
         counter    # list
-        i = 0
-        j = 0
+        i 0
+        j 0
         w.... i < l..(nums
             w.... j < l..(nums) a.. nums[i] __ nums[j]:
                 j += 1
             counter.a..((nums[i], j - i
-            i = j
+            i j
 
         # F[i] be the max points delete counter[i]
-        F = [0 ___ _ __ counter]
+        F [0 ___ _ __ counter]
         ___ i __ r..(l..(counter:
-            F[i] = counter[i][0] * counter[i][1]
+            F[i] counter[i][0] * counter[i][1]
             F[i] += m..(
                 [
                     F[j]

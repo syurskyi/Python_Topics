@@ -14,29 +14,29 @@ c_ Solution(o..
     """
 
     ___ reverse(root, prep, k
-      cur = root
-      pre = N..
-      next = N..
+      cur root
+      pre N..
+      next N..
       w.... cur a.. k > 0:
-        next = cur.next
-        cur.next = pre
-        pre = cur
-        cur = next
+        next cur.next
+        cur.next pre
+        pre cur
+        cur next
         k -_ 1
-      root.next = next
-      prep.next = pre
+      root.next next
+      prep.next pre
       r.. pre
 
-    dummy = ListNode(-1)
-    dummy.next = head
-    k = 1
-    p = dummy
-    start = N..
+    dummy ListNode(-1)
+    dummy.next head
+    k 1
+    p dummy
+    start N..
     w.... p:
       __ k __ m:
-        start = p
+        start p
       __ k __ n + 1:
         reverse(start.next, start, n - m + 1)
         r.. dummy.next
       k += 1
-      p = p.next
+      p p.next

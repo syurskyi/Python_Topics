@@ -6,7 +6,7 @@ c_ Solution:
     @param: k: An integer
     """
     ___ - , k
-        k = k
+        k k
         tops    # list
 
     """

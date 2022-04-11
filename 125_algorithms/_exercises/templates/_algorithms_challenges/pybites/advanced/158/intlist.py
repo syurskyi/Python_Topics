@@ -12,7 +12,7 @@ c_ IntList(l..
 
     $
     ___ median
-        v = s..(self)
+        v s..(self)
         __ l..(v) % 2 __ 1:
             r.. v[l..(v)//2]
         ____
@@ -24,7 +24,7 @@ c_ IntList(l..
     ___ a.. values
 
         __ isi..(values,i..) o. isi..(values,f__) o. isi..(values,Decimal
-            values = f__(values)
+            values f__(values)
             super().a..(values)
         ____ isi..(values,l..
             __ a..(t..(v) __ (i..,f__,Decimal) ___ v __ values

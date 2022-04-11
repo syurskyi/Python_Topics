@@ -1,13 +1,13 @@
 ____ c.. _______ n..
 ____ d__ _______ d__
 
-Transaction = n..('Transaction', 'giver points date')
-Transaction.__new__.__defaults__ = (d__.n..,)  # http://bit.ly/2rmiUrL
+Transaction n..('Transaction', 'giver points date')
+Transaction.__new__.__defaults__ (d__.n..,)  # http://bit.ly/2rmiUrL
 
 
 c_ User:
     ___ - , name: s..
-        _name = name
+        _name name
         _transactions    # list
 
     ___ -s

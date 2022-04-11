@@ -10,7 +10,7 @@ You may assume the string contains only lowercase alphabets.
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -22,7 +22,7 @@ c_ Solution:
         :type t: str
         :rtype: bool
         """
-        cnt = d..(i..)
+        cnt d..(i..)
         ___ c __ s:
             cnt[c] += 1
 

@@ -26,9 +26,9 @@ ___ common_words(sentence1: L..[s..], sentence2: L..[s..]) __ L..[s..]:
             If there are duplicate words in the results, just choose one word.
             Returned words should be sorted by word's length.
     """
-    lower_s1 = [e.l.. ___ e __ sentence1 ]
-    lower_s2 = [e.l.. ___ e __ sentence2 ]
-    result = l..(s..(lower_s1) & s..(lower_s2
+    lower_s1 [e.l.. ___ e __ sentence1 ]
+    lower_s2 [e.l.. ___ e __ sentence2 ]
+    result l..(s..(lower_s1) & s..(lower_s2
 
     r.. s..(result, key=l..)
 

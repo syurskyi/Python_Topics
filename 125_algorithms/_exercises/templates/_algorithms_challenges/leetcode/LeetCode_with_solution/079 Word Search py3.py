@@ -23,13 +23,13 @@ ____ t___ _______ L..
 ____ c.. _______ d..
 
 
-dirs = [(0, -1), (0, 1), (1, 0), (-1, 0)]
+dirs [(0, -1), (0, 1), (1, 0), (-1, 0)]
 
 
 c_ Solution:
     ___ exist  board: L..[L..[s..]], word: s..) __ b..:
-        m, n = l..(board), l..(board[0])
-        visited = d..(l....: d..(b..
+        m, n l..(board), l..(board[0])
+        visited d..(l....: d..(b..
         ___ i __ r..(m
             ___ j __ r..(n
                 __ board[i][j] __ word[0]:
@@ -39,19 +39,19 @@ c_ Solution:
         r.. F..
 
     ___ dfs  board, visited, i, j, word, idx
-        visited[i][j] = T..
+        visited[i][j] T..
         __ idx >_ l..(word
             r.. T..
 
-        m, n = l..(board), l..(board[0])
+        m, n l..(board), l..(board[0])
         ___ di, dj __ dirs:
-            I = i + di
-            J = j + dj
+            I i + di
+            J j + dj
             __ 0 <_ I < m a.. 0 <_ J < n a.. n.. visited[I][J] a.. board[I][J] __ word[idx]:
                 __ dfs(board, visited, I, J, word, idx + 1
                     r.. T..
 
-        visited[i][j] = F..  # restore
+        visited[i][j] F..  # restore
         r.. F..
 
 

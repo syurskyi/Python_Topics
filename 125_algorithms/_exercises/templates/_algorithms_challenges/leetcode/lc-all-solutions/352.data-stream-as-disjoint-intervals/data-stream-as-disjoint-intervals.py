@@ -18,26 +18,26 @@ c_ SummaryRanges(o..
     :type newInterval: Interval
     :rtype: List[Interval]
     """
-    intervals = intervals
+    intervals intervals
     # print intervals
     __ n.. intervals:
       intervals.a..(newInterval)
       r..
-    s, e = newInterval.start, newInterval.end
-    left = f.. l.... x: x.end < newInterval.start, intervals)
-    right = f.. l.... x: x.start > newInterval.end, intervals)
+    s, e newInterval.start, newInterval.end
+    left f.. l.... x: x.end < newInterval.start, intervals)
+    right f.. l.... x: x.start > newInterval.end, intervals)
     # print left, right, (s, e)
     __ left + right != intervals:
-      s = m..(intervals[l..(left)].start, s)
-      e = m..(intervals[~l..(right)].end, e)
-    newIntv = Interval(s, e)
+      s m..(intervals[l..(left)].start, s)
+      e m..(intervals[~l..(right)].end, e)
+    newIntv Interval(s, e)
     __ left a.. left[-1].end + 1 __ s:
-      newIntv.start = left[-1].start
-      left = left[:-1]
+      newIntv.start left[-1].start
+      left left[:-1]
     __ right a.. right[0].start - 1 __ e:
-      newIntv.end = right[0].end
-      right = right[1:]
-    intervals = left + [newIntv] + right
+      newIntv.end right[0].end
+      right right[1:]
+    intervals left + [newIntv] + right
 
   ___ addNum  val
     """

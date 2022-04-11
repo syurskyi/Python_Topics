@@ -42,11 +42,11 @@ c_ Solution:
 
         Let F[i] be the number of consecutive subsequence at A[i]
         """
-        counter = d..(i..)
+        counter d..(i..)
         ___ e __ nums:
             counter[e] += 1
 
-        F = d..(i..)
+        F d..(i..)
         ___ e __ nums:
             __ counter[e] __ 0:
                 _____
@@ -67,8 +67,8 @@ c_ Solution:
             
 c_ Interval:
     ___ - , end, length
-        end = end
-        length = length
+        end end
+        length length
 
     ___ __lt__  other
         __ end __ other.end:
@@ -92,14 +92,14 @@ c_ Solution2:
         h    # list
         ___ n __ nums:
             w.... h a.. h[0].end + 1 < n:
-                itvl = heapq.heappop(h)
+                itvl heapq.heappop(h)
                 __ itvl.length < 3:
                     r.. F..
 
             __ n.. h:
                 heapq.heappush(h, Interval(n, 1
             ____ h[0].end + 1 __ n:
-                itvl = heapq.heappop(h)
+                itvl heapq.heappop(h)
                 heapq.heappush(h, Interval(n, itvl.length + 1
             ____  # n == end
                 heapq.heappush(h, Interval(n, 1

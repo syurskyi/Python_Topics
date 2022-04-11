@@ -17,7 +17,7 @@ ___ group(iterable, n
     """
 
     results    # list
-    iterable = l..(iterable)
+    iterable l..(iterable)
     ___ i __ r..(0,l..(iterable),n
         results.a..(l..(islice(iterable,i,i+n)))
 
@@ -29,7 +29,7 @@ ___ group(iterable, n
 
 
 __ _____ __ _____
-    iterable = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    n = 3
-    ret = group(iterable, n)
+    iterable [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    n 3
+    ret group(iterable, n)
     print(ret)

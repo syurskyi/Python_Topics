@@ -8,7 +8,7 @@ ____ i.. _______ product, groupby
 ____ c.. _______ C.., n..
 _______ o..
 
-CHEESES = [
+CHEESES [
     "Red Leicester",
     "Tilsit",
     "Caerphilly",
@@ -54,7 +54,7 @@ CHEESES = [
     "Limburger",
 ]
 
-RED_WINES = [
+RED_WINES [
     "Châteauneuf-du-Pape",  # 95% of production is red
     "Syrah",
     "Merlot",
@@ -69,7 +69,7 @@ RED_WINES = [
     "Garnacha",
 ]
 
-WHITE_WINES = [
+WHITE_WINES [
     "Chardonnay",
     "Sauvignon blanc",
     "Semillon",
@@ -79,7 +79,7 @@ WHITE_WINES = [
     "Riesling",
 ]
 
-SPARKLING_WINES = [
+SPARKLING_WINES [
     "Cava",
     "Champagne",
     "Crémant d’Alsace",
@@ -89,21 +89,21 @@ SPARKLING_WINES = [
     "Lambrusco",
 ]
 
-WINE_LIST = {
+WINE_LIST {
     'red': RED_WINES,
     'white': WHITE_WINES,
     'sparkling': SPARKLING_WINES,
     'all': RED_WINES + WHITE_WINES + SPARKLING_WINES
 }
 
-Scores = n..('Scores', 'wine cheese score')
+Scores n..('Scores', 'wine cheese score')
 
 
 ___ calculate_similarity(cheese, wine
-    wine_count = C..(wine.l..
-    cheese_count = C..(cheese.l..
-    common_letters = (wine_count & cheese_count)
-    similarity = s..(common_letters.values / (1 + (l..(wine) - l..(cheese ** 2)
+    wine_count C..(wine.l..
+    cheese_count C..(cheese.l..
+    common_letters (wine_count & cheese_count)
+    similarity s..(common_letters.values / (1 + (l..(wine) - l..(cheese ** 2)
     r.. similarity
 
 
@@ -112,17 +112,17 @@ ___ best_match_per_wine(wine_type="all"
     returns a tuple which contains wine, cheese, score
     """
     __ wine_type __ WINE_LIST:
-        wines = WINE_LIST[wine_type]
+        wines WINE_LIST[wine_type]
     ____ wine_type __ WINE_LIST 'all' :
-        wines = [wine_type]
+        wines [wine_type]
     ____
         r.. V...('Wine not recognised')
-    cheeses = CHEESES
-    hi_score = Scores('', '', 0)
+    cheeses CHEESES
+    hi_score Scores('', '', 0)
     ___ wine, cheese __ product(wines, cheeses
-        similarity = calculate_similarity(cheese, wine)
+        similarity calculate_similarity(cheese, wine)
         __ similarity > hi_score.score:
-            hi_score = Scores(wine, cheese, similarity)
+            hi_score Scores(wine, cheese, similarity)
     r.. t..(hi_score)
 
 
@@ -139,9 +139,9 @@ ___ match_wine_5cheeses
     """
     scores    # list
     ___ wine, cheese __ product(WINE_LIST 'all' , CHEESES
-        similarity = calculate_similarity(cheese, wine)
+        similarity calculate_similarity(cheese, wine)
         scores.a..(Scores(wine, cheese, similarity
-    scores = s..(scores, key=l.... x: (x.wine, -x.score, x.cheese
+    scores s..(scores, key=l.... x: (x.wine, -x.score, x.cheese
     res    # list
     ___ k, g __ groupby(scores, l.... x: x.wine
         res.a..((k, [rec.cheese ___ rec __ g][:5]

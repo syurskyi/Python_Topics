@@ -27,26 +27,26 @@ ___ test_has_word_with_dashes
 
 
 ___ test_remove_all_parenthesis_words
-    input_string = 'good morning (afternoon), how are you?'
-    e.. = 'good morning, how are you?'
+    input_string 'good morning (afternoon), how are you?'
+    e.. 'good morning, how are you?'
     ... remove_all_parenthesis_words(input_string) __ e..
-    input_string = 'math (8.6) and science (9.1) where his strengths'
-    e.. = 'math and science where his strengths'
+    input_string 'math (8.6) and science (9.1) where his strengths'
+    e.. 'math and science where his strengths'
     ... remove_all_parenthesis_words(input_string) __ e..
 
 
 ___ test_split_string_on_punctuation
-    input_string = 'hi, how are you doing? blabla'
+    input_string 'hi, how are you doing? blabla'
     e.. =  'hi', 'how are you doing', 'blabla'
     ... split_string_on_punctuation(input_string) __ e..
-    input_string = ';String. with. punctuation characters!'
+    input_string ';String. with. punctuation characters!'
     e.. =  'String', 'with', 'punctuation characters'
     ... split_string_on_punctuation(input_string) __ e..
 
 
 ___ test_remove_duplicate_spacing
-    input_string = 'This is a   string with  too    much spacing'
-    e.. = 'This is a string with too much spacing'
+    input_string 'This is a   string with  too    much spacing'
+    e.. 'This is a string with too much spacing'
     ... remove_duplicate_spacing(input_string) __ e..
 
 

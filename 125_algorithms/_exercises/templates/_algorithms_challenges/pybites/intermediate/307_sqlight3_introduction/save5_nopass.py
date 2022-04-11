@@ -17,11 +17,11 @@ c_ SQLiteType(E..
         SQLiteType.INTEGER.value is int.
     """
 
-    NULL = N..
-    INTEGER = i..
-    REAL = f__
-    TEXT = s..
-    BLOB = bytes
+    NULL N..
+    INTEGER i..
+    REAL f__
+    TEXT s..
+    BLOB bytes
 
 
 c_ SchemaError(E..
@@ -49,15 +49,15 @@ c_ DB:
             column name and column type.
     """
 
-    ___ - , location: Optional[s..] = ":memory:"
-        location = location
-        cursor = N..
-        connection = N..
+    ___ - , location: Optional[s..] ":memory:"
+        location location
+        cursor N..
+        connection N..
         table_schemas    # dict
 
     ___ __enter__
-        connection = sqlite3.connect(location)
-        cursor = connection.cursor()
+        connection sqlite3.connect(location)
+        cursor connection.cursor()
 
         r.. self
 
@@ -90,11 +90,11 @@ c_ DB:
         """
         schema_new    # list
         ___ item __ schema:
-            item_type = item[1].name
-            x = f"{item[0]} {item_type}"
+            item_type item[1].name
+            x f"{item[0]} {item_type}"
             schema_new.a..(x)
-        schema_new = ', '.j..(schema_new)
-        cur = connection.cursor()
+        schema_new ', '.j..(schema_new)
+        cur connection.cursor()
         r.. cur.execute(f"CREATE TABLE {table} ({schema_new})")
 
     ___ delete  table: s.., target: Tuple[s.., A..]
@@ -107,12 +107,12 @@ c_ DB:
                 wanted to remove the row(s) with the year 1999, you would pass it
                 ("year", 1999). Only supports "=" operator in this bite.
         """
-        column = ""
-        element = ""
+        column ""
+        element ""
         ___ item __ target:
-            column = item[0]
-            element = item[1]
-        cur = connection.cursor()
+            column item[0]
+            element item[1]
+        cur connection.cursor()
         r.. cur.execute(f"DELETE FROM {table} WHERE {column} = {element}")
 
     ___ insert  table: s.., values: L..[Tuple]
@@ -143,16 +143,16 @@ c_ DB:
             SchemaError: If a value does not respect the table schema or
                 if there are more values than columns for the given table.
         """
-        cur = connection.cursor()
+        cur connection.cursor()
         __ t..(values) __ l..:
-            values = values[0]
+            values values[0]
         r.. cur.execute(f"INSERT INTO {table} VALUES{values}")
 
     ___ select(
             self,
             table: s..,
-            columns: Optional[L..[s..]] = N..,
-            target: Optional[Tuple[s.., Optional[s..], A..]] = N..,
+            columns: Optional[L..[s..]] N..,
+            target: Optional[Tuple[s.., Optional[s..], A..]] N..,
     ) __ L..[Tuple]:
         """Selects records from the database.
 
@@ -171,17 +171,17 @@ c_ DB:
         Returns:
             list: The output returned from the sql command
         """
-        cur = connection.cursor()
+        cur connection.cursor()
         __ columns __ N.. a.. target __ N..
             r.. cur.execute(f"SELECT * FROM {table}")
         ____ target __ N.. a.. columns:
             r.. cur.execute(f"SELECT {columns} FROM {table}")
         ____
             __ l..(target) __ 2:  # no operator specified
-                (column_name, value) = target
+                (column_name, value) target
                 r.. cur.execute(f"SELECT {columns} FROM {table} WHERE {column_name} = {value}")
             ____ l..(target) __ 3:  # operator specified
-                (column_name, operator, value) = target
+                (column_name, operator, value) target
                 r.. cur.execute(f"SELECT {columns} FROM {table} WHERE {column_name} {operator} {value}")
 
     ___ update  table: s.., new_value: Tuple[s.., A..], target: Tuple[s.., A..]
@@ -193,7 +193,7 @@ c_ DB:
                 if you wanted to change "year" to 2001 you would pass it ("year", 2001).
             target (tuple): The row/record to modify. Example ("year", 1991)
         """
-        cur = connection.cursor()
+        cur connection.cursor()
         r.. cur.execute(f"UPDATE {table} SET {target}={new_value}")
 
     $
@@ -203,5 +203,5 @@ c_ DB:
         Returns:
             int: Returns the total number of database rows that have been modified.
         """
-        cur = connection.cursor()
+        cur connection.cursor()
         p..

@@ -8,8 +8,8 @@ c_ Solution:
     # @param {integer[]} nums
     # @return {string}
     ___ largestNumber  nums
-        comp = l.... a, b: 1 __ a+b > b+a ____ -1 __ a+b<b+a ____ 0
-        nums = l.. m..(s.., nums
+        comp l.... a, b: 1 __ a+b > b+a ____ -1 __ a+b<b+a ____ 0
+        nums l.. m..(s.., nums
         nums.s..(cmp=comp, r.._T..
         r.. ''.j..(nums).l..('0')
     
@@ -17,17 +17,17 @@ c_ Solution:
     # @return {string}
     ___ largestNumber_python2  nums
         #python 2 only
-        num = [s..(x) ___ x __ nums]
+        num [s..(x) ___ x __ nums]
 #         num.sort(cmp=lambda x, y: cmp(y+x, x+y))
         r.. ''.j..(num).l..('0') o. '0'
     
     ___ test
-        testCases = [
+        testCases [
             [3, 30, 34, 5, 9],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums
-            result = largestNumber(nums)
+            result largestNumber(nums)
             print('result: %s' % (result
             print('-='*20+'-')
 

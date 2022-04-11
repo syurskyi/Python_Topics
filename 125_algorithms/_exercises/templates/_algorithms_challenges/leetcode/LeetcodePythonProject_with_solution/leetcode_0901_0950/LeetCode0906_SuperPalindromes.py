@@ -8,10 +8,10 @@ c_ Solution(o..
         :type R: str
         :rtype: int
         """
-        low = i..(m__.sqrt(i..(L)))
-        high = i..(m__.sqrt(i..(R)))
+        low i..(m__.sqrt(i..(L)))
+        high i..(m__.sqrt(i..(R)))
 
-        res = 1 __ low <_ 3 <_ high ____ 0
+        res 1 __ low <_ 3 <_ high ____ 0
         res += dfs(low, high, '')
         res += dfs(low, high, '0')
         res += dfs(low, high, '1')
@@ -22,9 +22,9 @@ c_ Solution(o..
     ___ dfs  low, high, s
         __ l..(s) > l..(s..(high:
             r.. 0
-        count = 0
+        count 0
         __ s a.. s[0] != '0':
-            num = i..(s)
+            num i..(s)
             __ num > high:
                 r.. 0
             __ num >_ low a.. isPalindrome(num*num

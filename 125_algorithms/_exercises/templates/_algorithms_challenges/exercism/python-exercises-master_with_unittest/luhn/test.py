@@ -52,7 +52,7 @@ c_ LuhnTests(unittest.TestCase
         # This test was added, because we saw many implementations
         # in which the first call to is_valid() worked, but the
         # second call failed().
-        number = Luhn("055 444 285")
+        number Luhn("055 444 285")
         assertTrue(number.is_valid
         assertTrue(number.is_valid
 

@@ -6,9 +6,9 @@ Created on Sep 29, 2019
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution(o..
     ___ subtreeWithAllDeepest  root
@@ -21,7 +21,7 @@ c_ Solution(o..
     ___ deep  root
         __ n.. root:
             r.. 0, N..
-        l, r = deep(root.left), deep(root.right)
+        l, r deep(root.left), deep(root.right)
         __ l[0] > r[0]:
             r.. l[0]+1, l[1]
         ____ l[0] < r[0]:
@@ -36,8 +36,8 @@ c_ Solution(o..
         """
         hashmap    # dict
         gatherDepths(root, 0, hashmap)
-        maxDepth = m..(hashmap.keys
-        nodes = hashmap[maxDepth]
+        maxDepth m..(hashmap.keys
+        nodes hashmap[maxDepth]
         r.. getCommonParent(root, nodes)
     
     ___ gatherDepths  root, depth, hashmap
@@ -46,24 +46,24 @@ c_ Solution(o..
         __ depth __ hashmap:
             hashmap[depth].a..(root)
         ____
-            hashmap[depth] = [root]
+            hashmap[depth] [root]
         gatherDepths(root.left, depth+1, hashmap)
         gatherDepths(root.right, depth+1, hashmap)
     
     ___ getCommonParent  root, nodes
         __ n.. root:
             r.. N..
-        isLeft = T..
+        isLeft T..
         ___ node __ nodes:
             __ n.. isSubTree(root.left, node
-                isLeft = F..
+                isLeft F..
                 _____
         __ isLeft:
             r.. getCommonParent(root.left, nodes)
-        isRight = T..
+        isRight T..
         ___ node __ nodes:
             __ n.. isSubTree(root.right, node
-                isRight = F..
+                isRight F..
                 _____
         __ isRight:
             r.. getCommonParent(root.right, nodes)

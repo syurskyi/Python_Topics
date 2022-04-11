@@ -6,20 +6,20 @@ Created on Apr 10, 2017
 
 c_ Solution(o..
     ___ splitArray  nums, m
-        left, right = 0, 0
+        left, right 0, 0
         ___ num __ nums:
-            left = m..(left, num)
+            left m..(left, num)
             right += num
         w.... left < right:
-            mid = (left+right)//2
+            mid (left+right)//2
             __ doable(nums, m-1, mid
-                right = mid
+                right mid
             ____
-                left = mid+1
+                left mid+1
         r.. left
     
     ___ doable  nums, cuts, maxVal
-        acc = 0
+        acc 0
         ___ num __ nums:
             __ num > maxVal:
                 r.. F..
@@ -27,13 +27,13 @@ c_ Solution(o..
                 acc += num
             ____
                 cuts -_ 1
-                acc = num
+                acc num
                 __ cuts < 0:
                     r.. F..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [7,2,5,10,8],
                 2,
@@ -42,7 +42,7 @@ c_ Solution(o..
         ___ nums, m __ testCases:
             print('nums: %s' % nums)
             print('m: %s' % m)
-            result = splitArray(nums, m)
+            result splitArray(nums, m)
             print('result: %s' % result)
             print('-='*30+'-')
 

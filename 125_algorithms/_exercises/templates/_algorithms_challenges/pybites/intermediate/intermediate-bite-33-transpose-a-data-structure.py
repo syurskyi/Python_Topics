@@ -33,12 +33,12 @@ ___ transpose(data
       In: transpose(data)
       Out: [('Bob', 'Julian'), (60, 221), (60, 34), (56, 78)]
       """
-    data = [Member(name='Bob', since_days=60, karma_points=60,
+    data [Member(name='Bob', since_days=60, karma_points=60,
                    bitecoin_earned=56),
             Member(name='Julian', since_days=221,
                    karma_points=34,
                    bitecoin_earned=78)]
-    result = z..(data)
+    result z..(data)
     print(result)
 
 transpose({'2017-8': 18, '2017-9': 13})

@@ -10,23 +10,23 @@ c_ Solution(o..
         :type K: int
         :rtype: int
         """
-        arr, k = A, K
-        n = l..(arr)
-        arr2 = [0]*(n+1)
+        arr, k A, K
+        n l..(arr)
+        arr2 [0]*(n+1)
         ___ i __ r..(n
-            arr2[i+1] = arr2[i] + arr[i]
+            arr2[i+1] arr2[i] + arr[i]
         d    # list
-        res = n+1
+        res n+1
         ___ i __ r..(n+1
             w.... d a.. arr2[i] - arr2[d[0]] >_ k:
-                res = m..(res, i-d.p.. 0
+                res m..(res, i-d.p.. 0
             w.... d a.. arr2[i] <_ arr2[d[-1]]:
                 d.p.. )
             d.a..(i)
         r.. res __ res <_ n ____ -1
     
     ___ test
-        testCase = [
+        testCase [
             [
                 [56,-21,56,35,-9],
                 61,
@@ -57,7 +57,7 @@ c_ Solution(o..
 #             ],
         ]
         ___ a, k __ testCase:
-            res = shortestSubarray(a, k)
+            res shortestSubarray(a, k)
             print('res: %s' % res)
             print('-='*30+'-')
 

@@ -10,16 +10,16 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        maxVal = 0
-        mask = 0
+        maxVal 0
+        mask 0
         ___ i __ r..(32, -1, -1
-            mask = mask | (1<<i)
-            hashset = s..()
+            mask mask | (1<<i)
+            hashset s..()
             ___ num __ nums:
                 hashset.add(num&mask)
             tmp  maxVal | (1<<i)
             ___ prefix __ hashset:
                 __ tmp ^ prefix __ hashset:
-                    maxVal = tmp
+                    maxVal tmp
                     _____
         r.. maxVal

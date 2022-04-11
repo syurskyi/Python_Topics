@@ -8,7 +8,7 @@ c_ Solution:
         __ n.. A:
             r.. 0
 
-        left, right = 0, l..(A) - 1
+        left, right 0, l..(A) - 1
 
         w.... left <_ right:
             w.... left <_ right a.. A[left] < k:
@@ -17,7 +17,7 @@ c_ Solution:
                 right -_ 1
 
             __ left <_ right:
-                A[left], A[right] = A[right], A[left]
+                A[left], A[right] A[right], A[left]
                 left += 1
                 right -_ 1
 

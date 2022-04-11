@@ -11,7 +11,7 @@ Given the following matrix:
 ]
 You should return [1,2,3,6,9,8,7,4,5].
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -47,10 +47,10 @@ c_ Solution:
 
         result    # list
 
-        left = 0
-        right = l..(matrix[0]) - 1
-        top = 0
-        bottom = l..(matrix) - 1
+        left 0
+        right l..(matrix[0]) - 1
+        top 0
+        bottom l..(matrix) - 1
 
         w.... left <_ right a.. top <_ bottom:
             ___ c __ x..(left, right + 1

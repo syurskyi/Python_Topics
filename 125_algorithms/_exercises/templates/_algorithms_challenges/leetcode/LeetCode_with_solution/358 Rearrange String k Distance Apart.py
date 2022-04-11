@@ -30,13 +30,13 @@ The same letters are at least distance 2 from each other.
 ____ c.. _______ d..
 _______ heapq
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Val(o..
     ___ - , cnt, val
-        cnt = cnt
-        val = val
+        cnt cnt
+        val val
 
     ___ __cmp__  other
         __ cnt __ other.cnt:
@@ -56,7 +56,7 @@ c_ Solution(o..
         """
         __ n.. s o. k __ 0: r.. s
 
-        d = d..(i..)
+        d d..(i..)
         ___ c __ s:
             d[c] += 1
 
@@ -71,7 +71,7 @@ c_ Solution(o..
                 __ n.. h:
                     r.. "".j..(ret) __ l..(ret) __ l..(s) ____ ""
 
-                e = heapq.heappop(h)
+                e heapq.heappop(h)
                 ret.a..(e.val)
                 e.cnt -_ 1
                 __ e.cnt > 0:

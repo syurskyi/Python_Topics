@@ -11,18 +11,18 @@ c_ Solution(o..
         :type k: int
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        length = l..(nums)
-        k = k % length
+        length l..(nums)
+        k k % length
         __ k __ 0: r..
         arr    # list
         ___ i0 __ r..(length
-            i = length + i0 - k __ i0<k ____ i0-k
+            i length + i0 - k __ i0<k ____ i0-k
             arr.a..(nums[i])
         ___ i __ r..(length
-            nums[i] = arr[i]
+            nums[i] arr[i]
     
     ___ test
-        testCases = [
+        testCases [
             ([1,2,3,4,5,6,7], 3),
         ]
         ___ nums, k __ testCases:

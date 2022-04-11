@@ -8,7 +8,7 @@ c_ Solution:
         __ n.. n:
             r.. ans
 
-        G = [['.'  * n ___ _ __ r..(n)]
+        G [['.'  * n ___ _ __ r..(n)]
         dfs(G, 0, ans)
         r.. ans
 
@@ -19,9 +19,9 @@ c_ Solution:
 
         ___ x __ r..(l..(G:
             __ is_valid(G, x, y
-                G[x][y] = 'Q'
+                G[x][y] 'Q'
                 dfs(G, y + 1, ans)
-                G[x][y] = '.'
+                G[x][y] '.'
 
     ___ is_valid  G, x, y
         """

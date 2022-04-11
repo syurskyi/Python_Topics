@@ -10,6 +10,6 @@ c_ Solution(o..
             r.. T..
         w.... y != 0:
             tmp  y
-            y = x%y
-            x = tmp
+            y x%y
+            x tmp
         r.. b..(z%x__0)

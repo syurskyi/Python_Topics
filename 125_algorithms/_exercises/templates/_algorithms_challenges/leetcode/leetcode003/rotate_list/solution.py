@@ -11,26 +11,26 @@ c_ Solution:
     ___ rotateRight  head, k
         __ head __ N..
             r.. N..
-        n = 0
-        h = head
+        n 0
+        h head
         w.... head __ n.. N..
             n += 1
-            head = head.next
-        k = k % n
+            head head.next
+        k k % n
         __ k __ 0:
             r.. h
-        res = h  # Head of result
-        prev = h  # Previous node of result
-        i = 0
+        res h  # Head of result
+        prev h  # Previous node of result
+        i 0
         w.... res __ n.. N..
             __ i __ n - k:
                 _____
-            prev = res
-            res = res.next
+            prev res
+            res res.next
             i += 1
-        end = res
+        end res
         w.... end.next __ n.. N..
-            end = end.next
-        end.next = h
-        prev.next = N..
+            end end.next
+        end.next h
+        prev.next N..
         r.. res

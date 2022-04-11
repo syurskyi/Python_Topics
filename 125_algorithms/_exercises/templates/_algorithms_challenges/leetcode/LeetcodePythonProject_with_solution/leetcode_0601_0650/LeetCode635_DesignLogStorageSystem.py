@@ -5,7 +5,7 @@ Created on Sep 24, 2017
 '''
 c_ LogSystem(o..
     ___ - 
-        units = {
+        units {
             'Year': 4,
             'Month': 7,
             'Day': 10,
@@ -31,7 +31,7 @@ c_ LogSystem(o..
         :rtype: List[int]
         """
         res    # list
-        idx = units[gra]
+        idx units[gra]
         ___ timestamp __ timestamps:
             __ timestamp[1][:idx] >_ s[:idx] a..\
                 timestamp[1][:idx] <_ e[:idx]:
@@ -39,7 +39,7 @@ c_ LogSystem(o..
         r.. res
 
 __ _____ __ _____
-    log = LogSystem()
+    log LogSystem()
     log.put(1, "2017:01:01:23:59:59")
     log.put(2, "2017:01:01:22:59:59")
     log.put(3, "2016:01:01:00:00:00")

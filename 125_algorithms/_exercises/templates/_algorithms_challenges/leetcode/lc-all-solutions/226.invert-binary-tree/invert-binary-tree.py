@@ -13,7 +13,7 @@ c_ Solution(o..
     """
     __ n.. root:
       r..
-    root.left, root.right = root.right, root.left
+    root.left, root.right root.right, root.left
     invertTree(root.left)
     invertTree(root.right)
     r.. root

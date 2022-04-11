@@ -11,13 +11,13 @@ c_ Solution(o..
     :type root: TreeNode
     :rtype: int
     """
-    s.. = 0
+    s.. 0
 
     ___ dfs(root, pathsum
       __ root:
         pathsum += root.val
-        left = dfs(root.left, pathsum * 10)
-        right = dfs(root.right, pathsum * 10)
+        left dfs(root.left, pathsum * 10)
+        right dfs(root.right, pathsum * 10)
         __ n.. left a.. n.. right:
           s.. += pathsum
         r.. T..

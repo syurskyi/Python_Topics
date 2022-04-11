@@ -1,12 +1,12 @@
 c_ TicTacToe(o..
   ___ - , n
-    rows = [0] * n
-    cols = [0] * n
-    diag = antiDiag = 0
-    n = n
+    rows [0] * n
+    cols [0] * n
+    diag antiDiag 0
+    n n
 
     ___ move(row, col, player
-      delta = 3 - player * 2
+      delta 3 - player * 2
       rows[row] += delta
       cols[col] += delta
       diag += row __ col a.. delta
@@ -15,7 +15,7 @@ c_ TicTacToe(o..
         r.. player
       r.. 0
 
-    move = move
+    move move
 
 # Your TicTacToe object will be instantiated and called as such:
 # obj = TicTacToe(n)

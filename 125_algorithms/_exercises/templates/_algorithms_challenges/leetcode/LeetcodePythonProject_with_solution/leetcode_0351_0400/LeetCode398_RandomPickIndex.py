@@ -11,7 +11,7 @@ c_ Solution(o..
         :type nums: List[int]
         :type numsSize: int
         """
-        nums = nums
+        nums nums
 
     ___ pick  target
         """
@@ -19,11 +19,11 @@ c_ Solution(o..
         :rtype: int
         """
         _______ r__
-        count = 0
-        res = -1
+        count 0
+        res -1
         ___ i, num __ e..(nums
             __ target __ num:
                 __ r__.r..(0, count) __ 0:
-                    res = i
+                    res i
                 count += 1
         r.. res

@@ -18,13 +18,13 @@ c_ Solution(o..
         :rtype: int
         """
         w.... num / 10:
-            d = 0
+            d 0
             w.... num > 0:
                 d += num % 10
                 num /= 10
-            num = d
+            num d
         r.. num
 
 
-s = Solution()
+s Solution()
 print(s.addDigits(38

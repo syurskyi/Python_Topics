@@ -48,8 +48,8 @@ ____ c.. _______ d..
 
 c_ H2O:
     ___ -
-        hq = d..()
-        oq = d..()
+        hq d..()
+        oq d..()
 
     ___ hydrogen  releaseHydrogen: C..[[], N..]) __ N..
         hq.a..(releaseHydrogen)
@@ -71,7 +71,7 @@ c_ H2O_TLE2:
         """
         Conditional Variable as counter? - Semaphore
         """
-        gates = [Semaphore(2), Semaphore(0)]  # inititally allow 2 H, 0 O
+        gates [Semaphore(2), Semaphore(0)]  # inititally allow 2 H, 0 O
 
     ___ hydrogen  releaseHydrogen: C..[[], N..]) __ N..
         gates[0].a..
@@ -98,8 +98,8 @@ c_ H2O_TLE:
         Conditional Variable as counter?
         Fixed at HHO pattern
         """
-        h_cnt = 0
-        locks = [Lock() ___ _ __ r..(3)]
+        h_cnt 0
+        locks [Lock() ___ _ __ r..(3)]
         locks[1].a..
 
 
@@ -118,5 +118,5 @@ c_ H2O_TLE:
         locks[1].a..
         # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()
-        h_cnt = 0
+        h_cnt 0
         locks[0].release()

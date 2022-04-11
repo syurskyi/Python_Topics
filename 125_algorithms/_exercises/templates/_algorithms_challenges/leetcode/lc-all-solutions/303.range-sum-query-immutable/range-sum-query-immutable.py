@@ -4,9 +4,9 @@ c_ NumArray(o..
     initialize your data structure here.
     :type nums: List[int]
     """
-    dp = [0] * (l..(nums) + 1)
+    dp [0] * (l..(nums) + 1)
     ___ i __ r..(0, l..(nums:
-      dp[i + 1] = dp[i] + nums[i]
+      dp[i + 1] dp[i] + nums[i]
 
   ___ sumRange  i, j
     """

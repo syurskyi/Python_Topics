@@ -28,7 +28,7 @@ Corner Cases:
 A line other than the last line might contain only one word. What should you do in this case?
 In this case, that line should be left-justified.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -47,11 +47,11 @@ c_ Solution:
         __ n.. words:
             r..
 
-        cur_length = -1
+        cur_length -1
         lst    # list
-        i = 0
+        i 0
         w.... i<l..(words
-            word = words[i]
+            word words[i]
             cur_length += 1 # space in left justified
             cur_length += l..(word)
             __ cur_length>L: _____
@@ -65,14 +65,14 @@ c_ Solution:
     ___ distribute_space  L, result
         new_result    # list
         ___ ind, line __ e..(result
-            word_cnt = l..(line)
+            word_cnt l..(line)
             str_builder    # list
-            space_cnt = L-s..(l..(word) ___ word __ line)
-            hole_cnt = word_cnt-1
+            space_cnt L-s..(l..(word) ___ word __ line)
+            hole_cnt word_cnt-1
             __ ind<l..(result)-1:
                 __ hole_cnt>0:
-                    space = space_cnt/hole_cnt
-                    remain = space_cnt%hole_cnt
+                    space space_cnt/hole_cnt
+                    remain space_cnt%hole_cnt
 
                     ___ word __ line[:-1]:
                         str_builder.a..(word)
@@ -86,7 +86,7 @@ c_ Solution:
                     str_builder.a..(line[-1])
                     str_builder.a..(" "*space_cnt)
             ____  # last line, special handling
-                str_builder = [" ".j..(line)]
+                str_builder [" ".j..(line)]
                 str_builder.a..(" "*(space_cnt-hole_cnt
 
             new_result.a..("".j..(str_builder

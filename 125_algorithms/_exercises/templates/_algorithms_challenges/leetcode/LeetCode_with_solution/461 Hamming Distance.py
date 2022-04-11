@@ -17,8 +17,8 @@ c_ Solution:
         :type y: int
         :rtype: int
         """
-        diff = x ^ y
-        ret = 0
+        diff x ^ y
+        ret 0
         w.... diff:
             ret += diff & 1
             diff >>= 1

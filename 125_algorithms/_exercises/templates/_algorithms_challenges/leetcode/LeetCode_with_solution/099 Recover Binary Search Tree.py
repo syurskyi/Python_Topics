@@ -7,13 +7,13 @@ Note:
 A solution using O(n) space is pretty straight forward. Could you devise a constant space solution?
 confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on OJ.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
     ___  -r
         r.. r.. (val)
@@ -21,8 +21,8 @@ c_ TreeNode:
 c_ Solution:
     ___ -
         swapped_pair    # list
-        current = N..
-        pre = N..
+        current N..
+        pre N..
 
     ___ recoverTree  root
         """
@@ -49,9 +49,9 @@ c_ Solution:
         """
         in_order(root)
         __ l..(swapped_pair)__2:
-            swapped_pair[0][0].val, swapped_pair[1][1].val = swapped_pair[1][1].val, swapped_pair[0][0].val
+            swapped_pair[0][0].val, swapped_pair[1][1].val swapped_pair[1][1].val, swapped_pair[0][0].val
         ____ # neighboring
-            swapped_pair[0][0].val, swapped_pair[0][1].val = swapped_pair[0][1].val, swapped_pair[0][0].val
+            swapped_pair[0][0].val, swapped_pair[0][1].val swapped_pair[0][1].val, swapped_pair[0][0].val
         r.. root
 
     ___ in_order  current
@@ -60,8 +60,8 @@ c_ Solution:
 
         in_order(current.left)
         # update global
-        pre = current
-        current = current
+        pre current
+        current current
         __ pre a.. n.. pre.val<current.val:
             __ n.. swapped_pair:
                 swapped_pair.a..((pre, current  # pre is wrong
@@ -101,7 +101,7 @@ c_ Solution:
     #     if root.right: self.__find(root.right, result)
 
 __ _____ __ ____
-    node1 = TreeNode(2)
-    node2 = TreeNode(1)
-    node1.right = node2
+    node1 TreeNode(2)
+    node2 TreeNode(1)
+    node1.right node2
     print Solution().recoverTree(node1)

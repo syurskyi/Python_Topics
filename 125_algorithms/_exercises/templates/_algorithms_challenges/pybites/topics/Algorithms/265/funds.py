@@ -1,9 +1,9 @@
-IMPOSSIBLE = 'Mission impossible. No one can contribute.'
+IMPOSSIBLE 'Mission impossible. No one can contribute.'
 
-poverty = [0, -3, 2, 1, -7, 5, 3, -1, 6]
-extreme = [-1, -2, -3, -4, -5, -1, -2, -3]
-some = [2, -3, 2, 1, -7, -5, 3, -6, 18, 7, 13, 12]
-community = [3, 2, 6,  4, 7,  5, -8, -9, 3,  8,  4, -12, 3, -10, -15,
+poverty [0, -3, 2, 1, -7, 5, 3, -1, 6]
+extreme [-1, -2, -3, -4, -5, -1, -2, -3]
+some [2, -3, 2, 1, -7, -5, 3, -6, 18, 7, 13, 12]
+community [3, 2, 6,  4, 7,  5, -8, -9, 3,  8,  4, -12, 3, -10, -15,
              2, 6, -10, 6, 3, -1,  5, -5, -8, 11, 7, -9, -5,  -6, -2,
              7, 8, 11, 8,  6, -1, -6,  9, 8, 6, -3, 4,  -8, 3, -4, 1,
              2, 8, -2, 9, -3, 8, -10,  -8,  5,  -4, -6,  5, -1, 4, 2,
@@ -17,15 +17,15 @@ ___ max_fund(village
     """Find a contiguous subarray with the largest sum."""
     # Hint: while iterating, you could save the best_sum collected so far
     # return total, starting, ending
-    best_sum, total, starting, ending = 0, 0, 0, 0
+    best_sum, total, starting, ending 0, 0, 0, 0
     ___ index __ r..(l..(village:
-        total = 0
+        total 0
         ___ i __ r..(l..(village[index:]:
             total += village[index+i]
             __ total >_ best_sum:
-                best_sum = total
-                starting = index
-                ending = index+i
+                best_sum total
+                starting index
+                ending index+i
     __ best_sum __ 0:
         r.. (best_sum, starting, ending)
     ____

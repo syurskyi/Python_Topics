@@ -5,7 +5,7 @@ weight).
 For example, the 32-bit integer '11' has binary representation 00000000000000000000000000001011, so the function should
 return 3.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -13,7 +13,7 @@ c_ Solution:
         """
         /2 and %2
         """
-        cnt = 0
+        cnt 0
         w.... n:
             cnt += n&1
             n >>= 1

@@ -10,11 +10,11 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        arr = [0]*26
+        arr [0]*26
         ___ t __ tasks:
             arr[o..(t)-o..('A')] += 1
         arr.s..()
-        i = 25
+        i 25
         w.... i >_ 0 a.. arr[i]__arr[-1]:
             i -_ 1
         r.. m..(l..(tasks), (arr[-1]-1)*(n+1)+25-i)
@@ -28,26 +28,26 @@ c_ Solution(o..
         _______ heapq
         hashmap    # dict
         ___ task __ tasks:
-            hashmap[task] = hashmap.g.. task, 0)+1
+            hashmap[task] hashmap.g.. task, 0)+1
         heap    # list
         ___ c, count __ hashmap.i..:
             heapq.heappush(heap, (-count, c
-        res = 0
+        res 0
         queue    # list
         w.... heap:
-            count, c = heapq.heappop(heap)
+            count, c heapq.heappop(heap)
             queue.a..((-count, c
             __ l..(queue) > n:
                 res += l..(queue)
                 w.... queue:
-                    count, c = queue.p.. 0)
+                    count, c queue.p.. 0)
                     count -_ 1
                     __ count > 0:
                         heapq.heappush(heap, (-count, c
             __ n.. heap:
-                count0 = l..(queue)
+                count0 l..(queue)
                 w.... queue:
-                    count, c = queue.p.. 0)
+                    count, c queue.p.. 0)
                     count -_ 1
                     __ count > 0:
                         heapq.heappush(heap, (-count, c
@@ -58,7 +58,7 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                  'A', 'A', 'A', 'B', 'B', 'B' ,
                 2,
@@ -71,8 +71,8 @@ c_ Solution(o..
         ___ tasks, n __ testCases:
             print('tasks: %s' % tasks)
             print('n: %s' % n)
-            result = leastInterval(tasks, n)
-            result2 = leastInterval_own(tasks, n)
+            result leastInterval(tasks, n)
+            result2 leastInterval_own(tasks, n)
             print('result: %s' % result)
             print('result2: %s' % result2)
             print('-='*30+'-')

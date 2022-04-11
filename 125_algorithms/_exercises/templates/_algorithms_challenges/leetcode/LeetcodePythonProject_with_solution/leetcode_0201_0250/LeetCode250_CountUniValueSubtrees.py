@@ -6,9 +6,9 @@ Created on May 13, 2018
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ countUnivalSubtrees  root
@@ -16,7 +16,7 @@ c_ Solution(o..
         :type root: TreeNode
         :rtype: int
         """
-        res = 0
+        res 0
         __ n.. root: r.. res
         __ isUniVal(root
             res += 1

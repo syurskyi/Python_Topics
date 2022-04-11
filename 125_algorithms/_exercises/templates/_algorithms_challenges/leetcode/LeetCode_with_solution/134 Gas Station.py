@@ -9,7 +9,7 @@ Return the starting gas station's index if you can travel around the circuit onc
 Note:
 The solution is guaranteed to be unique.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ canCompleteCircuit  gas, cost
         """
@@ -39,10 +39,10 @@ c_ Solution:
         :param cost: a list of integers, cost[i] from i to i+1
         :return: an integer
         """
-        length = l..(gas)
+        length l..(gas)
 
         # gas difference
-        diff = [gas[i]-cost[i] ___ i __ x..(length)]
+        diff [gas[i]-cost[i] ___ i __ x..(length)]
 
         # find whether can cover one cycle
         # starting from arbitrary point
@@ -50,13 +50,13 @@ c_ Solution:
             r.. -1
 
         # find the starting index
-        start_index = 0
-        sum_before = 0
+        start_index 0
+        sum_before 0
         ___ ind, val __ e..(diff  # O(N), rather than brutal force O(N^2)
             sum_before += val
             __ sum_before<0:  # reset sum_before since gas insufficient for the journey. # sum[i, j]<0
-                start_index = ind+1
-                sum_before = 0
+                start_index ind+1
+                sum_before 0
 
         r.. start_index
 

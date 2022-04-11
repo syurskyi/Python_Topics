@@ -1,7 +1,7 @@
 ____ d__ _______ t.., d__
 ____ t___ _______ L..
 
-text1 = """
+text1 """
 32
 00:59:45,000 --> 00:59:48,150
 talking quite normal here
@@ -40,13 +40,13 @@ ___ get_srt_section_ids(text: s..) __ L..[i..]:
        You can ignore milliseconds for this exercise.
     """
     line_dict    # dict
-    epoch = '1970-01-01'
-    dialog_list = text.s..('\n\n')
+    epoch '1970-01-01'
+    dialog_list text.s..('\n\n')
     ___ dialog __ dialog_list:
-       index, timestamp, line = dialog.s...s..
-       begintime, endtime = timestamp.s..(' --> ')
-       duration = d__.fromisoformat _*{epoch} {endtime[:8]}') - d__.fromisoformat _*{epoch} {begintime[:8]}')
-       line_dict[i..(index)] = l..(line)/duration.total_seconds()
+       index, timestamp, line dialog.s...s..
+       begintime, endtime timestamp.s..(' --> ')
+       duration d__.fromisoformat _*{epoch} {endtime[:8]}') - d__.fromisoformat _*{epoch} {begintime[:8]}')
+       line_dict[i..(index)] l..(line)/duration.total_seconds()
     r.. s..(line_dict, key=line_dict.get, reverse=T.. )
 
 

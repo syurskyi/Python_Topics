@@ -1,5 +1,5 @@
 ___ get_profile(name, age, *sports, **awards
-    sports = s..(l..(sports
+    sports s..(l..(sports
 
     __ n.. isi..(age, i..
         r.. V...

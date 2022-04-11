@@ -8,20 +8,20 @@ c_ Solution(o..
     :type click: List[int]
     :rtype: List[List[str]]
     """
-    numbers = "B123456789"
-    queue = d..([click])
-    directions = [(-1, 0), (1, 0), (0, -1), (0, 1), (1, 1), (-1, -1), (1, -1), (-1, 1)]
+    numbers "B123456789"
+    queue d..([click])
+    directions [(-1, 0), (1, 0), (0, -1), (0, 1), (1, 1), (-1, -1), (1, -1), (-1, 1)]
     w.... queue:
-      i, j = queue.popleft()
+      i, j queue.popleft()
       __ board[i][j] __ "B":
         _____
       __ board[i][j] __ "M":
-        board[i][j] = "X"
+        board[i][j] "X"
         _____
-      mineCnt = 0
+      mineCnt 0
       nbrs    # list
       ___ di, dj __ directions:
-        ni, nj = i + di, j + dj
+        ni, nj i + di, j + dj
         __ 0 <_ ni < l..(board) a.. 0 <_ nj < l..(board[0]) a.. board[ni][nj] __ ["M", "E"]:
           __ board[ni][nj] __ "M":
             mineCnt += 1
@@ -29,5 +29,5 @@ c_ Solution(o..
             nbrs.a..((ni, nj
       __ mineCnt __ 0:
         queue.e.. nbrs)
-      board[i][j] = numbers[mineCnt]
+      board[i][j] numbers[mineCnt]
     r.. board

@@ -11,7 +11,7 @@ c_ Solution(o..
         :type T: int
         :rtype: int
         """
-        s, t = S, T
+        s, t S, T
         __ s __ t: r.. 0
         hashmap    # dict
         ___ i __ r..(l..(routes:
@@ -20,8 +20,8 @@ c_ Solution(o..
                     hashmap[routes[i][j]]    # list
                 hashmap[routes[i][j]].a..(i)
         queue    # list
-        addedRoute = s..()
-        addedStop = s..()
+        addedRoute s..()
+        addedStop s..()
         ___ r __ hashmap[s]:
             __ r __ addedRoute: _____
             ___ i __ r..(l..(routes[r]:
@@ -29,12 +29,12 @@ c_ Solution(o..
                     queue.a..(routes[r][i])
                     addedStop.add(routes[r][i])
             addedRoute.add(r)
-        count = 0
+        count 0
         w.... queue:
-            size = l..(queue)
+            size l..(queue)
             count += 1
             ___ _ __ r..(size
-                stop = queue.p.. 0)
+                stop queue.p.. 0)
                 __ stop __ t: r.. count
                 ___ r __ hashmap[stop]:
                     __ r __ addedRoute: _____
@@ -45,7 +45,7 @@ c_ Solution(o..
         r.. -1
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [[1, 2, 7], [3, 6, 7]],
                 1, 6,
@@ -56,7 +56,7 @@ c_ Solution(o..
             ],
         ]
         ___ routes, s, t __ testCases:
-            result = numBusesToDestination(routes, s, t)
+            result numBusesToDestination(routes, s, t)
             print('result: %s' % result)
             print('-='*30+'-')
 

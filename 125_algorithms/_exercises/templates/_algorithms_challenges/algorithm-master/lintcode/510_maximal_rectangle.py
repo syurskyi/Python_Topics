@@ -4,32 +4,32 @@ c_ Solution:
         :type G: List[List[str]]
         :rtype: int
         """
-        ans = 0
+        ans 0
         __ n.. G o. n.. G[0]:
             r.. ans
 
-        m, n = l..(G), l..(G[0])
+        m, n l..(G), l..(G[0])
         L, R, H    # dict, {}, {}
 
         ___ i __ r..(m
-            curr = 0  # left boundary
+            curr 0  # left boundary
             ___ j __ r..(n
                 __ G[i][j] __ '1':
-                    H[j] = H.g.. j, 0) + 1
-                    L[j] = m..(L.g.. j, 0), curr)
+                    H[j] H.g.. j, 0) + 1
+                    L[j] m..(L.g.. j, 0), curr)
                 ____
-                    H[j] = L[j] = 0
-                    curr = j + 1
+                    H[j] L[j] 0
+                    curr j + 1
 
-            curr = n  # right boundary
+            curr n  # right boundary
             ___ j __ r..(n - 1, -1, -1
                 __ G[i][j] __ '1':
-                    R[j] = m..(R.g.. j, n), curr)
+                    R[j] m..(R.g.. j, n), curr)
                 ____
-                    R[j] = n
-                    curr = j
+                    R[j] n
+                    curr j
 
-                ans = m..(
+                ans m..(
                     ans,
                     H[j] * (R[j] - L[j])
                 )
@@ -92,21 +92,21 @@ c_ Solution:
         :type G: List[List[str]]
         :rtype: int
         """
-        ans = 0
+        ans 0
         __ n.. G o. n.. G[0]:
             r.. ans
 
-        m, n = l..(G), l..(G[0])
-        H = [0] * n
+        m, n l..(G), l..(G[0])
+        H [0] * n
 
         ___ i __ r..(m
             ___ j __ r..(n
                 __ G[i][j] __ '1':
                     H[j] += 1
                 ____
-                    H[j] = 0
+                    H[j] 0
 
-            ans = m..(ans, largestRectangleArea(H
+            ans m..(ans, largestRectangleArea(H
 
             # To remove the trick `0`
             H.p.. )
@@ -114,7 +114,7 @@ c_ Solution:
         r.. ans
 
     ___ largestRectangleArea  H
-        area = 0
+        area 0
         __ n.. H:
             r.. area
 
@@ -122,13 +122,13 @@ c_ Solution:
         H.a..(0)
 
         I    # list
-        left = height = 0
+        left height 0
 
         ___ right __ r..(l..(H:
             w.... I a.. H[I[-1]] >_ H[right]:
-                height = H[I.p.. )]
-                left = I[-1] __ I ____ -1
-                area = m..(
+                height H[I.p.. )]
+                left I[-1] __ I ____ -1
+                area m..(
                     area,
                     height * (right - left - 1)
                 )

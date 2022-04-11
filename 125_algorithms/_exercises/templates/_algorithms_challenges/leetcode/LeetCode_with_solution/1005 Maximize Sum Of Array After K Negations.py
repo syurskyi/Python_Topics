@@ -48,7 +48,7 @@ c_ Solution:
 
             __ A[i] < 0:
                 A[i] *= -1
-                prev = A[i]
+                prev A[i]
                 K -_ 1
             ____
                 __ K % 2 != 0:

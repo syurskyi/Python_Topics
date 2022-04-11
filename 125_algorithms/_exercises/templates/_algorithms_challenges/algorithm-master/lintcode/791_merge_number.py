@@ -7,7 +7,7 @@ c_ Solution:
     @return: the minimum cost
     """
     ___ mergeNumber  A
-        ans = 0
+        ans 0
         __ n.. A:
             r.. ans
 
@@ -17,7 +17,7 @@ c_ Solution:
             heappush(heap, a)
 
         w.... l..(heap) > 1:
-            _sum = heappop(heap) + heappop(heap)
+            _sum heappop(heap) + heappop(heap)
             ans += _sum
             heappush(heap, _sum)
 

@@ -1,19 +1,19 @@
 values    # list
-line = ""
-strValues = ""
-result = 0
+line ""
+strValues ""
+result 0
 
 w... T...
-    line = input()
+    line input()
     __(line
         values.a..(line.r..(" ", ""
     ____
         _____
-mod = i..(values[l..(values)-1][1:])
+mod i..(values[l..(values)-1][1:])
 
 ___ i __ values:
     strValues += i
-    result = eval(strValues)%mod
-    strValues = s..(result)
+    result eval(strValues)%mod
+    strValues s..(result)
 
 print(result)

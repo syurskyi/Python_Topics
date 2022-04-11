@@ -31,8 +31,8 @@ c_ Solution:
 
         nums[lo - 1] <= min && max <= nums[hi + 1]
         """
-        n = l..(nums)
-        lo, hi = 0, n - 1
+        n l..(nums)
+        lo, hi 0, n - 1
         w.... lo < hi a.. nums[lo] <_ nums[lo + 1]:
             lo += 1
 
@@ -42,11 +42,11 @@ c_ Solution:
         __ hi <_ lo:
             r.. 0
 
-        mini = f__('inf')
-        maxa = -f__('inf')
+        mini f__('inf')
+        maxa -f__('inf')
         ___ i __ r..(lo, hi + 1
-            mini = m..(mini, nums[i])
-            maxa = m..(maxa, nums[i])
+            mini m..(mini, nums[i])
+            maxa m..(maxa, nums[i])
 
         w.... lo - 1 >_ 0 a.. nums[lo - 1] > mini:
             lo -_ 1
@@ -59,12 +59,12 @@ c_ Solution:
         """
         Brute force sort and compare O(n lgn)
         """
-        e.. = l..(s..(nums
-        i = 0
+        e.. l..(s..(nums
+        i 0
         w.... i < l..(nums) a.. nums[i] __ e..[i]:
             i += 1
 
-        j = l..(nums) - 1
+        j l..(nums) - 1
         w.... j >_ i a.. nums[j] __ e..[j]:
             j -_ 1
 

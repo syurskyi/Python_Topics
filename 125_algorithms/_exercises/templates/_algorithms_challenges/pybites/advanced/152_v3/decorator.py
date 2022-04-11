@@ -1,9 +1,9 @@
 ____ f.. _______ wraps
 
 
-DEFAULT_TEXT = ('Subscribe to our blog (sidebar) to periodically get '
+DEFAULT_TEXT ('Subscribe to our blog (sidebar) to periodically get '
                 'new PyBites Code Challenges (PCCs) in your inbox')
-DOT = '.'
+DOT '.'
 
 
 ___ strip_range(start, end
@@ -21,13 +21,13 @@ ___ strip_range(start, end
     ___ decorator_replace(fun
         @wraps(fun)
         ___ wrapper_replace $ $$:
-            output = l..(fun $, **kwargs
-            this_end = end __ end < l.. ?  ____ l.. ?
-            this_end = this_end __ this_end > 0 ____ 0
-            this_start = start __ start >_ 0 ____ 0
+            output l..(fun $, **kwargs
+            this_end end __ end < l.. ?  ____ l.. ?
+            this_end this_end __ this_end > 0 ____ 0
+            this_start start __ start >_ 0 ____ 0
 
             ___ k __ r..(this_start, this_end
-                output[k] = '.'
+                output[k] '.'
             r.. ''.j.. ?
         r.. wrapper_replace
     r.. decorator_replace

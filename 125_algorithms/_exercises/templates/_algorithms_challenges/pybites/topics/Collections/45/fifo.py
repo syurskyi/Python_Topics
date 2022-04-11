@@ -6,7 +6,7 @@ ___ my_queue(n=5
 
  
 __ _____ __ _____
-    mq = my_queue()
+    mq my_queue()
     ___ i __ r..(10
         mq.a..(i)
         print((i, l..(mq)))

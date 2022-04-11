@@ -18,9 +18,9 @@ c_ Solution:
         P[i] = P[i-1] + A[i-1]
              = A[0] + A[1] + ... + A[i-1]
         """
-        P = [0]
+        P [0]
         ___ x __ nums: P.a..(P[-1] + x)
-        max_sum = m..(P[i+k] - P[i] ___ i __ r..(l..(nums) - k + 1
+        max_sum m..(P[i+k] - P[i] ___ i __ r..(l..(nums) - k + 1
         r.. max_sum / f__(k)
 
 c_ Solution:
@@ -36,11 +36,11 @@ c_ Solution:
               |--> Start to find max sum
                 |--> Start to remove past child
         """
-        max_sum, tmp_sum = f__('-inf'), 0
+        max_sum, tmp_sum f__('-inf'), 0
         ___ i __ r..(l..(nums:
             tmp_sum += nums[i]
             __ i >_ k:
                 tmp_sum -_ nums[i-k]
             __ i + 1 >_ k:
-                max_sum = m..(max_sum, tmp_sum)
+                max_sum m..(max_sum, tmp_sum)
         r.. max_sum / f__(k)

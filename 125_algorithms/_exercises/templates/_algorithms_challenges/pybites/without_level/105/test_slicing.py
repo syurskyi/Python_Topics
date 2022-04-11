@@ -1,6 +1,6 @@
 ____ slicing _______ text, slice_and_dice
 
-another_text = """
+another_text """
 Take the block of text provided and strip() off the whitespace at the ends.
 Split the whole block up by newline (\n).
  if the first character is lowercase, split it into words and add the last word

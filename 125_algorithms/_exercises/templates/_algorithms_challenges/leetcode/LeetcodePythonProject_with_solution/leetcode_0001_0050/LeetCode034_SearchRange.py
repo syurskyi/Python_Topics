@@ -10,33 +10,33 @@ c_ Solution(o..
         :type target: int
         :rtype: List[int]
         """
-        l, r = 0, l..(nums)
-        res = [f__('inf'), f__('-inf')]
+        l, r 0, l..(nums)
+        res [f__('inf'), f__('-inf')]
         w.... l < r:
-            mid = (l+r)//2
+            mid (l+r)//2
             __ target __ nums[mid]:
-                res[1] = m..(res[1], mid)
-                l = mid+1
+                res[1] m..(res[1], mid)
+                l mid+1
             ____ target < nums[mid]:
-                r = mid
+                r mid
             ____
-                l = mid+1
-        l, r = 0, l..(nums)
+                l mid+1
+        l, r 0, l..(nums)
         w.... l < r:
-            mid = (l+r)//2
+            mid (l+r)//2
             __ target __ nums[mid]:
-                res[0] = m..(res[0], mid)
-                r = mid
+                res[0] m..(res[0], mid)
+                r mid
             ____ target < nums[mid]:
-                r = mid
+                r mid
             ____
-                l = mid+1
+                l mid+1
         __ r __ l..(nums
             r.. [-1, -1]
         r.. res __ res != [f__('inf'), f__('-inf')] ____ [-1, -1]
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1, 1],
                 0,
@@ -57,7 +57,7 @@ c_ Solution(o..
         ___ nums, target __ testCases:
             print('nums: %s' % nums)
             print('target: %s' % target)
-            result = searchRange(nums, target)
+            result searchRange(nums, target)
             print('result: %s' % result)
             print('-='*30+'-')
 

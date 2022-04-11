@@ -27,7 +27,7 @@ You may assume start and end string is not the same.
 
 c_ Solution:
     ___ is_neighbor  p, q
-        diff = 0
+        diff 0
         ___ a, b __ z..(p, q
             __ a != b:
                 diff += 1
@@ -46,9 +46,9 @@ c_ Solution:
         :type bank: List[str]
         :rtype: int
         """
-        q = [start]
-        visited = {start}
-        lvl = 0
+        q [start]
+        visited {start}
+        lvl 0
         w.... q:
             cur_q    # list
             ___ e __ q:
@@ -60,7 +60,7 @@ c_ Solution:
                         cur_q.a..(t)
 
             lvl += 1
-            q = cur_q
+            q cur_q
 
         r.. -1
 

@@ -7,13 +7,13 @@ ____ Previous.traffic _______ traffic_light, State
 
 ?p__.f..(scope="module")
 ___ slice1
-    it = traffic_light()
+    it traffic_light()
     r.. l..(islice(it, 96
 
 
 ?p__.f..(scope="module")
 ___ slice2
-    it = traffic_light()
+    it traffic_light()
     r.. l..(islice(it, 100, 217
 
 
@@ -43,6 +43,6 @@ ___ test_return_types(slice2
     ('amber', 16),
 ])
 ___ test_timings(slice1, color, e..
-    timeout_for_color = s..(state.timeout ___ state __ slice1
+    timeout_for_color s..(state.timeout ___ state __ slice1
                             __ state.color __ color)
     ... timeout_for_color __ e..

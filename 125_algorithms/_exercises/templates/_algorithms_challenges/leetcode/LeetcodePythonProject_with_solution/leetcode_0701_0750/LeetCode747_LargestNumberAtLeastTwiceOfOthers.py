@@ -11,25 +11,25 @@ c_ Solution(o..
         """
         __ n.. nums:
             r.. -1
-        first, fInd = f__('-inf'), -1
-        second = f__('-inf')
+        first, fInd f__('-inf'), -1
+        second f__('-inf')
         ___ i, num __ e..(nums
             __ num > first:
-                second = first
-                first = num
-                fInd = i
+                second first
+                first num
+                fInd i
             ____ num > second:
-                second = num
+                second num
         r.. fInd __ first >_ 2*second ____ -1
     
     ___ test
-        testCases = [
+        testCases [
             [3, 6, 1, 0],
             [1, 2, 3, 4],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = dominantIndex(nums)
+            result dominantIndex(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -17,11 +17,11 @@ c_ SQLiteType(E..
         SQLiteType.INTEGER.value is int.
     """
 
-    NULL = N..
-    INTEGER = i..
-    REAL = f__
-    TEXT = s..
-    BLOB = bytes
+    NULL N..
+    INTEGER i..
+    REAL f__
+    TEXT s..
+    BLOB bytes
 
 
 c_ SchemaError(E..
@@ -49,15 +49,15 @@ c_ DB:
             column name and column type.
     """
 
-    ___ - , location: Optional[s..] = ":memory:"
-        location = location
-        cursor = N..
-        connection = N..
+    ___ - , location: Optional[s..] ":memory:"
+        location location
+        cursor N..
+        connection N..
         table_schemas    # dict
 
     ___ __enter__
-        connection = sqlite3.connect(location)
-        cursor = connection.cursor()
+        connection sqlite3.connect(location)
+        cursor connection.cursor()
 
         r.. self
 
@@ -90,12 +90,12 @@ c_ DB:
         """
         schema_new    # list
         ___ item __ schema:
-            item_type = item[1].name
-            x = f"{item[0]} {item_type}"
+            item_type item[1].name
+            x f"{item[0]} {item_type}"
             schema_new.a..(x)
-        schema_new = ', '.j..(schema_new)
-        con = connection
-        cur = con.cursor()
+        schema_new ', '.j..(schema_new)
+        con connection
+        cur con.cursor()
         r.. cur.execute(f"CREATE TABLE {table} ({schema_new})")
 
 
@@ -139,16 +139,16 @@ c_ DB:
             SchemaError: If a value does not respect the table schema or
                 if there are more values than columns for the given table.
         """
-        con = connection
-        cur = con.cursor()
+        con connection
+        cur con.cursor()
         ___ value __ values:
             y.. cur.execute(f"INSERT INTO {table} VALUES {value}")
 
     ___ select(
             self,
             table: s..,
-            columns: Optional[L..[s..]] = N..,
-            target: Optional[Tuple[s.., Optional[s..], A..]] = N..,
+            columns: Optional[L..[s..]] N..,
+            target: Optional[Tuple[s.., Optional[s..], A..]] N..,
     ) __ L..[Tuple]:
         """Selects records from the database.
 

@@ -4,7 +4,7 @@ _______ p__
 
 _______ codon_usage
 
-EXPECTED = """
+EXPECTED """
 |  Codon AA  Freq  Count  |  Codon AA  Freq  Count  |  Codon AA  Freq  Count  |  Codon AA  Freq  Count  |
 ---------------------------------------------------------------------------------------------------------
 |  UUU:  F   32.7  26200  |  UCU:  S   12.9  10309  |  UAU:  Y   30.4  24332  |  UGU:  C    4.9   3919  |

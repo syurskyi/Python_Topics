@@ -10,17 +10,17 @@ c_ Solution(o..
         :type target: str
         :rtype: str
         """
-        l, r = 0, l..(letters)
+        l, r 0, l..(letters)
         w.... l < r:
-            mid = (l+r)//2
+            mid (l+r)//2
             __ target >_ letters[mid]:
-                l = mid+1
+                l mid+1
             ____
-                r = mid
+                r mid
         r.. letters[l] __ l < l..(letters) ____ letters[0]
     
     ___ test
-        testCases = [
+        testCases [
             [
                 ["c", "f", "j"],
                 'a',
@@ -39,7 +39,7 @@ c_ Solution(o..
             ],
         ]
         ___ letters, target __ testCases:
-            result = nextGreatestLetter(letters, target)
+            result nextGreatestLetter(letters, target)
             print('result: %s' % result)
             print('-='*30+'-')
 

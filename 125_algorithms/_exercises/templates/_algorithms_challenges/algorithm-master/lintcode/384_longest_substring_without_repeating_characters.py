@@ -7,13 +7,13 @@ c_ Solution:
         :type s: str
         :rtype: int
         """
-        ans = 0
+        ans 0
 
         __ n.. s:
             r.. ans
 
-        freqs = c...d..(i..)
-        i = rep = 0
+        freqs c...d..(i..)
+        i rep 0
 
         ___ j __ r..(l..(s:
             __ freqs[s[j]] __ 1:
@@ -27,6 +27,6 @@ c_ Solution:
 
                 i += 1
 
-            ans = m..(ans, j - i + 1)
+            ans m..(ans, j - i + 1)
 
         r.. ans

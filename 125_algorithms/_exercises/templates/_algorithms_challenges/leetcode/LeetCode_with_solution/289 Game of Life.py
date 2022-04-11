@@ -19,12 +19,12 @@ problems when the active area encroaches the border of the array. How would you 
 """
 
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
     ___ -
-        dirs = [(-1, 0), (-1, -1), (0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1)]
+        dirs [(-1, 0), (-1, -1), (0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1)]
 
     ___ gameOfLife  board
         """
@@ -43,17 +43,17 @@ c_ Solution(o..
         :type board: List[List[int]]
         :rtype: void Do not return anything, modify board in-place instead.
         """
-        m = l..(board)
-        n = l..(board[0])
-        lines = [[0 ___ _ __ x..(n)] ___ _ __ x..(2)]
+        m l..(board)
+        n l..(board[0])
+        lines [[0 ___ _ __ x..(n)] ___ _ __ x..(2)]
         ___ i __ x..(m
             ___ j __ x..(n
-                lines[(i+1)%2][j] = board[i][j]
+                lines[(i+1)%2][j] board[i][j]
 
-                cnt = 0
+                cnt 0
                 ___ d __ dirs:
-                    I = i+d[0]
-                    J = j+d[1]
+                    I i+d[0]
+                    J j+d[1]
                     __ 0 <_ I < m a.. 0 <_ J < n:
                         __ I < i:
                             cnt += lines[i%2][J]
@@ -63,8 +63,8 @@ c_ Solution(o..
                             cnt += board[I][J]
 
                 __ cnt __ 3:
-                    board[i][j] = 1
+                    board[i][j] 1
                 ____ cnt __ 2:
                     board[i][j] &= 1
                 ____
-                    board[i][j] = 0
+                    board[i][j] 0

@@ -6,7 +6,7 @@ c_ Solution(o..
     :type kill: int
     :rtype: List[int]
     """
-    n = l..(pid)
+    n l..(pid)
 
     mpppid    # dict
 
@@ -14,14 +14,14 @@ c_ Solution(o..
       __ mpppid.has_key(ppid[i]
         mpppid[ppid[i]].a..(i)
       ____
-        mpppid[ppid[i]] = [i]
-    res = [kill]
+        mpppid[ppid[i]] [i]
+    res [kill]
 
     ___ dfs(x
       __ n.. mpppid.has_key(x
         r..
       ___ i __ mpppid[x]:
-        y = pid[i]
+        y pid[i]
         res.a..(y)
         dfs(y)
 

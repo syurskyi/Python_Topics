@@ -1,7 +1,7 @@
 """
 Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing all ones and return its area.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -27,19 +27,19 @@ c_ Solution:
 
         # matrix = map(lambda x: list(x), matrix)  # not necessary
 
-        global_max = -1<<32
-        m = l..(matrix)
-        n = l..(matrix[0])
+        global_max -1<<32
+        m l..(matrix)
+        n l..(matrix[0])
 
         # added dp to get heights
-        dp_height = [[-1 ___ _ __ x..(n)] ___ _ __ x..(m)]
-        dp_height[0] = map(l.... x: i..(x), matrix[0])
+        dp_height [[-1 ___ _ __ x..(n)] ___ _ __ x..(m)]
+        dp_height[0] map(l.... x: i..(x), matrix[0])
         ___ i __ x..(1, m
             ___ j __ x..(n
                 __ matrix[i][j] __ "1":
-                    dp_height[i][j] = 1+dp_height[i-1][j]
+                    dp_height[i][j] 1+dp_height[i-1][j]
                 ____
-                    dp_height[i][j] = 0
+                    dp_height[i][j] 0
 
         # end of dp
 
@@ -47,26 +47,26 @@ c_ Solution:
             # Largest Rectangle in Histogram
             inc_stack    # list
 
-            j = 0
+            j 0
             w.... j<_n:
                 # if not inc_stack or j+1<n and dp_height[i][j]<=dp_height[i][j+1]:  # mistake
                 __ n.. inc_stack o. j<n a.. dp_height[i][j]>_dp_height[i][inc_stack[-1]]:
                     inc_stack.a..(j)
                     j += 1
                 ____
-                    last = inc_stack.p.. )
+                    last inc_stack.p.. )
                     # height = self.get_height(matrix, i, last)
-                    height = dp_height[i][last]
+                    height dp_height[i][last]
                     __ inc_stack:
-                        global_max = m..(global_max, height*(j-(inc_stack[-1]+1)))
+                        global_max m..(global_max, height*(j-(inc_stack[-1]+1)))
                     ____
-                        global_max = m..(global_max, height*j)
+                        global_max m..(global_max, height*j)
 
         r.. global_max
 
     ___ get_height  matrix, row, col
         # possible replace by dp; otherwise TLE
-        height = 0
+        height 0
         ___ i __ x..(row, -1, -1
             __ matrix[row][col] __ "0":
                 _____

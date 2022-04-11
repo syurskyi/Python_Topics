@@ -24,17 +24,17 @@ c_ Solution:
         __ n.. values:
             r.. F..
 
-        n = l..(values)
+        n l..(values)
 
         __ n < 3:
             r.. T..
 
-        dp = [F..] * n
-        dp[-1] = values[-1]
-        dp[-2] = values[-1] + values[-2]
+        dp [F..] * n
+        dp[-1] values[-1]
+        dp[-2] values[-1] + values[-2]
 
         ___ i __ r..(n - 3, -1, -1
-            dp[i] = m..((
+            dp[i] m..((
                 values[i] - dp[i + 1],
                 values[i] + values[i + 1] - dp[i + 2],
 

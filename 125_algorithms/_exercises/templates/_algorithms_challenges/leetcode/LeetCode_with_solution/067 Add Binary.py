@@ -1,4 +1,4 @@
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ addBinary_builtin  a, b
         """
@@ -7,8 +7,8 @@ c_ Solution:
         :param b: string
         :return: string
         """
-        a = i..(a, 2)
-        b = i..(b, 2)
+        a i..(a, 2)
+        b i..(b, 2)
         r.. bin(a+b)[2:]
 
     ___ addBinary  a, b
@@ -19,9 +19,9 @@ c_ Solution:
         :return: string
         """
         __ l..(a)>l..(b
-            a, b = b, a
+            a, b b, a
 
-        a, b = l..(a), l..(b)
+        a, b l..(a), l..(b)
 
         # from LSB to MSB
         a.r..
@@ -31,10 +31,10 @@ c_ Solution:
             __ a[i]__"0":  # 0
                 _____
             ____ b[i]__"0":  # 0+1
-                b[i] = "1"
+                b[i] "1"
                 _____
             ____  # 1+1
-                b[i] = "0"
+                b[i] "0"
 
                 # carry forward
                 __ i__len(b)-1:
@@ -42,11 +42,11 @@ c_ Solution:
                 ____
                     ___ j __ r..(i+1, l..(b:
                         __ b[j]__"0":
-                            b[j] = "1"
+                            b[j] "1"
                             _____
 
                         ____
-                            b[j] = "0"  # carry forward
+                            b[j] "0"  # carry forward
                             __ j__len(b)-1:
                                 b.a..("1")
                                 _____

@@ -2,7 +2,7 @@ _______ p__
 
 ____ stats _______ get_all_line_counts, create_stats_report
 
-EXPECTED_OUTPUT = """
+EXPECTED_OUTPUT """
 Basic statistics:
 - count     :     186
 - min       :       6
@@ -26,7 +26,7 @@ ___ report
 
 
 ___ test_get_all_line_counts
-    counts = l..(get_all_line_counts
+    counts l..(get_all_line_counts
     # total number of test files / bites
     ... l..(counts) __ 186
     # all elements should be ints

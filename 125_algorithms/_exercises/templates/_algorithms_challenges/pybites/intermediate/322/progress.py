@@ -2,16 +2,16 @@ ____ d__ _______ d__
 
 
 ___ ontrack_reading(books_goal: i.., books_read: i..,
-                    day_of_year: i.. = N..) __ b..:
+                    day_of_year: i.. N..) __ b..:
 
-    days_in_year = 365
+    days_in_year 365
     
     __ day_of_year __ N..
-        day_of_year = d__.t...t.. .tm_yday
+        day_of_year d__.t...t.. .tm_yday
 
     __ books_goal != books_read a.. books_read != 0:
-        book_per_days = days_in_year / books_goal
-        remaining_days = days_in_year - day_of_year
+        book_per_days days_in_year / books_goal
+        remaining_days days_in_year - day_of_year
 
         __ (books_goal - books_read) * book_per_days < remaining_days :
             r.. T..

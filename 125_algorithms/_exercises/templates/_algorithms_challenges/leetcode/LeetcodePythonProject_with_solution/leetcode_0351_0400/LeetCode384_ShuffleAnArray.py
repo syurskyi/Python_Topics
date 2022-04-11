@@ -6,17 +6,17 @@ Created on Apr 2, 2017
 
 c_ Solution(o..
     ___ - , nums
-        nums = nums
+        nums nums
     
     ___ reset
         r.. nums
     
     ___ shuffle
         _______ r__
-        newNums = l..(nums)
+        newNums l..(nums)
         __ n.. newNums:
             r.. newNums
         ___ i __ r..(l..(newNums)-1, 0, -1
-            ind = r__.r..(0, i)
-            newNums[ind], newNums[i] = newNums[i], newNums[ind]
+            ind r__.r..(0, i)
+            newNums[ind], newNums[i] newNums[i], newNums[ind]
         r.. newNums

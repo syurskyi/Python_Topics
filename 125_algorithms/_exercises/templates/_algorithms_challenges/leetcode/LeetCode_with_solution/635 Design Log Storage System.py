@@ -52,9 +52,9 @@ c_ LogSystem:
         Use timestamp comparison
         Can convert the timestamp to number.
         """
-        lo = "0001:01:01:00:00:00"
-        hi = "9999:12:31:23:59:59"
-        pre = {
+        lo "0001:01:01:00:00:00"
+        hi "9999:12:31:23:59:59"
+        pre {
             "Year": 4,
             "Month": 7,
             "Day": 10,
@@ -63,10 +63,10 @@ c_ LogSystem:
             "Second": 19,
         }[gra]
 
-        s = s[:pre] + lo[pre:]
-        e = e[:pre] + hi[pre:]
-        i = b__.bisect_left(lst, (s, 0
-        j = b__.bisect_right(lst, (e, f__("inf")))
+        s s[:pre] + lo[pre:]
+        e e[:pre] + hi[pre:]
+        i b__.bisect_left(lst, (s, 0
+        j b__.bisect_right(lst, (e, f__("inf")))
         r.. [id ___ _, id __ lst[i:j]]
 
 

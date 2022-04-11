@@ -9,12 +9,12 @@ c_ Solution(o..
     :type n: int
     :rtype: int
     """
-    lo = 1
-    hi = n
+    lo 1
+    hi n
     w.... lo < hi:
-      mid = lo + (hi - lo) / 2
+      mid lo + (hi - lo) / 2
       __ isBadVersion(mid
-        hi = mid
+        hi mid
       ____
-        lo = mid + 1
+        lo mid + 1
     r.. lo

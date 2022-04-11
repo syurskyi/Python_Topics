@@ -9,7 +9,7 @@ c_ Solution(o..
         :type rowIndex: int
         :rtype: List[int]
         """
-        res = [1]
+        res [1]
         ___ i __ r..(rowIndex
             newRes    # list
             ___ j __ r..(i+2
@@ -17,5 +17,5 @@ c_ Solution(o..
                     newRes.a..(1)
                 ____
                     newRes.a..(res[j-1]+res[j])
-            res = newRes
+            res newRes
         r.. res

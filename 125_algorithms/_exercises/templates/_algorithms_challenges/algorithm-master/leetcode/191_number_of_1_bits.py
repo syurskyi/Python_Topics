@@ -4,12 +4,12 @@ c_ Solution:
         :type n: int
         :rtype: int
         """
-        ans = 0
+        ans 0
         __ n.. n:
             r.. ans
 
         w.... n != 0:
-            n = n & (n - 1)
+            n n & (n - 1)
             ans += 1
 
         r.. ans

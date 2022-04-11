@@ -3,31 +3,31 @@ Premium Question
 """
 _______ ___
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ BSTInfo(o..
     ___ - , sz, lo, hi
-        sz = sz
-        lo = lo
-        hi = hi
+        sz sz
+        lo lo
+        hi hi
 
 
-MAX = ___.maxint
-MIN = -MAX - 1
+MAX ___.maxint
+MIN -MAX - 1
 
 
 c_ Solution(o..
     ___ -
-        gmax = 0
+        gmax 0
 
     ___ largestBSTSubtree  root
         """
@@ -41,20 +41,20 @@ c_ Solution(o..
         __ n.. root:
             r.. BSTInfo(0, MAX, MIN)
 
-        left = measure(root.left)
-        right = measure(root.right)
+        left measure(root.left)
+        right measure(root.right)
         __ left.sz __ -1 o. right.sz __ -1 o. n.. left.hi <_ root.val o. n.. root.val <_ right.lo:
             r.. BSTInfo(-1, MIN, MAX)
 
-        sz = 1 + left.sz + right.sz
-        gmax = m..(gmax, sz)
+        sz 1 + left.sz + right.sz
+        gmax m..(gmax, sz)
         # when root.left is None
         r.. BSTInfo(sz, m..(root.val, left.lo), m..(root.val, right.hi
 
 
 c_ SolutionError(o..
     ___ -
-        gmax = 0
+        gmax 0
 
     ___ largestBSTSubtree  root
         """
@@ -68,8 +68,8 @@ c_ SolutionError(o..
         __ n.. root:
             r.. 0
 
-        left = measure(root.left)
-        right = measure(root.right)
+        left measure(root.left)
+        right measure(root.right)
 
         __ root.left a.. n.. root.val >_ root.left.val o. root.right a.. n.. root.val <_ root.right.val:
             r.. 0
@@ -77,13 +77,13 @@ c_ SolutionError(o..
         __ root.left a.. left __ 0 o. root.right a.. right __ 0:
             r.. 0
 
-        ret = 1 + left + right
-        gmax = m..(gmax, ret)
+        ret 1 + left + right
+        gmax m..(gmax, ret)
         r.. ret
 
 __ _______ __ _______
-    root = TreeNode(1)
-    root.left = TreeNode(2)
+    root TreeNode(1)
+    root.left TreeNode(2)
     print Solution().largestBSTSubtree(root)
 
 

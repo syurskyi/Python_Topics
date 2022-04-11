@@ -27,14 +27,14 @@ encountered after an apostrophe
 
 '''
 
-workout_schedule = {'Friday': 'Shoulders',
+workout_schedule {'Friday': 'Shoulders',
                     'Monday': 'Chest+biceps',
                     'Saturday': 'Rest',
                     'Sunday': 'Rest',
                     'Thursday': 'Legs',
                     'Tuesday': 'Back+triceps',
                     'Wednesday': 'Core'}
-rest, chill, go_train = 'Rest', 'Chill out!', 'Go train {}'
+rest, chill, go_train 'Rest', 'Chill out!', 'Go train {}'
 
 ___ get_workout_motd(day
     """Title case passed in day argument (monday or MONDAY -> Monday)
@@ -47,8 +47,8 @@ ___ get_workout_motd(day
 
        Trivia: /etc/motd is a file on Unix-like systems that contains
        a 'message of the day'"""
-    d = day.capitalize()
-    work = workout_schedule[d]
+    d day.capitalize()
+    work workout_schedule[d]
     __ work __ "Rest":
         r.. chill
     ____

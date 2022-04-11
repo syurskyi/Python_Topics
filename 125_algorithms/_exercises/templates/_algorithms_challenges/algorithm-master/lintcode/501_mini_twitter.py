@@ -10,7 +10,7 @@ class Tweet:
 
 c_ MiniTwitter:
     ___ -
-        timestamp = 0
+        timestamp 0
         tweets    # dict
         followings    # dict
 
@@ -69,7 +69,7 @@ c_ MiniTwitter:
     """
     ___ follow  from_id, to_id
         __ from_id n.. __ followings:
-            followings[from_id] = s..()
+            followings[from_id] s..()
 
         __ to_id __ followings[from_id]:
             r..

@@ -8,7 +8,7 @@ c_ MedianFinder:
     """
     left    # list
     right    # list
-    median = N..
+    median N..
 
   ___ addNum  num
     """
@@ -16,10 +16,10 @@ c_ MedianFinder:
     :type num: int
     :rtype: void
     """
-    left = left
-    right = right
+    left left
+    right right
     __ median __ N..
-      median = num
+      median num
       r..
 
     __ num <_ median:
@@ -28,20 +28,20 @@ c_ MedianFinder:
       heapq.heappush(right, num)
 
     __ l..(left) > l..(right) + 1:
-      top = -heapq.heappop(left)
+      top -heapq.heappop(left)
       heapq.heappush(right, median)
-      median = top
+      median top
     __ l..(right) > l..(left) + 1:
-      top = heapq.heappop(right)
+      top heapq.heappop(right)
       heapq.heappush(left, -median)
-      median = top
+      median top
 
   ___ findMedian
     """
     Returns the median of current data stream
     :rtype: float
     """
-    left, right = left, right
+    left, right left, right
     __ l..(left) __ l..(right
       r.. median
     ____ l..(left) > l..(right

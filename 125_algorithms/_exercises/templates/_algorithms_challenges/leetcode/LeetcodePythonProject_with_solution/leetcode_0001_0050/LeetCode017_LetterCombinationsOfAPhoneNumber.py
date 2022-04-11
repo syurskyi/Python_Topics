@@ -10,7 +10,7 @@ c_ Solution(o..
         :type digits: str
         :rtype: List[str]
         """
-        letMap = {
+        letMap {
             0: l..(),
             1: l..(),
             2: l..('abc'),
@@ -24,11 +24,11 @@ c_ Solution(o..
         }
         l    # list
         ___ d __ d..:
-            d = i..(d)
+            d i..(d)
             __ d n.. __ (0, 1
                 l.a..(letMap[d])
         __ n.. l: r.. []
-        elem = ''
+        elem ''
         result    # list
         dfs(l, 0, elem, result)
         r.. result
@@ -40,10 +40,10 @@ c_ Solution(o..
         ___ c __ l[ind]:
             elem += c
             dfs(l, ind+1, elem, result)
-            elem = elem[:-1]
+            elem elem[:-1]
     
     ___ test
-        testCases = [
+        testCases [
             '',
             '001',
             '2',
@@ -53,7 +53,7 @@ c_ Solution(o..
         
         ___ d.. __ testCases:
             print('digits: %s' % (d..
-            result = letterCombinations(d..)
+            result letterCombinations(d..)
             print('result: %s' % (result
             print('-+'*15+'-')
 

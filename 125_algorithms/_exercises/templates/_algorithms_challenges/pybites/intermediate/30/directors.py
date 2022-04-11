@@ -3,19 +3,19 @@ ____ c.. _______ d.., n..
 _______ __
 ____ u__.r.. _______ u..
 
-BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
-TMP = __.g.. TMP  /tmp
+BASE_URL 'https://bites-data.s3.us-east-2.amazonaws.com/'
+TMP __.g.. TMP  /tmp
 
-fname = 'movie_metadata.csv'
-remote = __.p...j..(BASE_URL, fname)
-local = __.p...j..(TMP, fname)
+fname 'movie_metadata.csv'
+remote __.p...j..(BASE_URL, fname)
+local __.p...j..(TMP, fname)
 u..(remote, local)
 
-MOVIE_DATA = local
-MIN_MOVIES = 4
-MIN_YEAR = 1960
+MOVIE_DATA local
+MIN_MOVIES 4
+MIN_YEAR 1960
 
-Movie = n..('Movie', 'title year score')
+Movie n..('Movie', 'title year score')
 
 
 ___ get_movies_by_director
@@ -23,25 +23,25 @@ ___ get_movies_by_director
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
 
-    movie_metadata = d..(l..)
+    movie_metadata d..(l..)
 
     w__ o.. local) __ file:
-        csv_content = csv.DictReader(file)
+        csv_content csv.DictReader(file)
 
         ___ row __ csv_content:
 
             __ row["title_year"] != "":
-                title_year = i..(row["title_year"])
+                title_year i..(row["title_year"])
             ____
                 _____
 
             __ title_year > MIN_YEAR:
-                director_name = row["director_name"]
-                movie_title = row["movie_title"].s..
-                imdb_score = f__(row["imdb_score"])
+                director_name row["director_name"]
+                movie_title row["movie_title"].s..
+                imdb_score f__(row["imdb_score"])
 
                 __ director_name n.. __ movie_metadata:
-                    movie_metadata[director_name] = [Movie(movie_title, title_year, imdb_score)]
+                    movie_metadata[director_name] [Movie(movie_title, title_year, imdb_score)]
                 ____
                     movie_metadata[director_name].a..(Movie(movie_title, title_year, imdb_score
 
@@ -51,7 +51,7 @@ ___ get_movies_by_director
 ___ calc_mean_score(movies
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
-    movie_mean = [movie.score ___ movie __ movies]
+    movie_mean [movie.score ___ movie __ movies]
     r.. r..(s..(movie_mean) / l..(movie_mean), 1)
 
 
@@ -62,7 +62,7 @@ ___ get_average_scores(directors
        with >= MIN_MOVIES"""
     directors_scores    # list
     ___ key, value __ directors.i..:
-        director_avg_score = calc_mean_score(value)
+        director_avg_score calc_mean_score(value)
         __ l..(value) >_ MIN_MOVIES:
             directors_scores.a..((key, director_avg_score
     r.. s..(directors_scores, key=l.... x: x[1], r.._T..

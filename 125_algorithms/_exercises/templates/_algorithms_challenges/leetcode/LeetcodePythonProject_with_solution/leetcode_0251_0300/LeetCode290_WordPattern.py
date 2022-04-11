@@ -11,8 +11,8 @@ c_ Solution(o..
         :rtype: bool
         """
         hashmap    # dict
-        hashset = s..()
-        arr = s.s..(' ')
+        hashset s..()
+        arr s.s..(' ')
         __ l..(arr) != l..(pattern
             r.. F..
         ___ p, s0 __ z..(pattern, arr
@@ -20,7 +20,7 @@ c_ Solution(o..
                 _____
             ____ p n.. __ hashmap a.. s0 n.. __ hashset:
                 hashset.add(s0)
-                hashmap[p] = s0
+                hashmap[p] s0
             ____
                 r.. F..
         r.. T..

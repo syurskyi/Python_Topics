@@ -32,13 +32,13 @@ ___ test_new_bite(choice_mock, sample_mock, promo
 
 
 ___ test_random_is_used(promo
-    src = i___.g.. promo._pick_random_bite)
+    src i___.g.. promo._pick_random_bite)
     ... 'sample' __ src o. 'choice' __ src
 
 
 ___ test_pick_random_bite_returns_not_done_bite(promo
     ___ _ __ r..(10
-        bite = promo._pick_random_bite()
+        bite promo._pick_random_bite()
         ... t..(bite) __ i..
         ... bite __ promo.all_bites
         ... bite n.. __ promo.bites_done
@@ -61,12 +61,12 @@ ___ test_raise_exception_if_no_more_bites(promo
 
 
 ___ test_work_with_2_users_and_promo_instances(promo
-    alices_promo = Promo()
+    alices_promo Promo()
     grab_bites(alices_promo)
     ... l..(alices_promo.bites_done) __ 15
     # exhausted Bites:
     w__ p__.r..(NoBitesAvailable
         alices_promo.new_bite()
     # another user = new independent Promo instance
-    bobs_promo = Promo()
+    bobs_promo Promo()
     ... l..(bobs_promo.bites_done) __ 5

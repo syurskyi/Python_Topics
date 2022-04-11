@@ -50,11 +50,11 @@ c_ Solution:
         coloring the graph
         dfs coloring
         """
-        G = graph
-        color = d..(i..)
+        G graph
+        color d..(i..)
         ___ k __ r..(l..(G:
             __ k n.. __ color:
-                color[k] = 0
+                color[k] 0
                 __ n.. dfs(G, k, color
                     r.. F..
             # if colored, don't vist
@@ -67,7 +67,7 @@ c_ Solution:
                 __ color[nbr] __ color[u]:
                     r.. F..
             ____
-                color[nbr] = 1 - color[u]  # can be (0, 1) or (-1, 1)
+                color[nbr] 1 - color[u]  # can be (0, 1) or (-1, 1)
                 __ n.. dfs(G, nbr, color
                     r.. F..
 
@@ -76,9 +76,9 @@ c_ Solution:
 
 c_ SolutionError:
     ___ isBipartite  graph: L..[L..[i..]]) __ b..:
-        G = graph
-        A, B = s..(), s..()
-        visited = d..(b..)
+        G graph
+        A, B s..(), s..()
+        visited d..(b..)
         ___ k __ r..(l..(G:
             __ n.. visited[k]:
                 __ n.. dfs(G, visited, k, A, B, T..
@@ -87,7 +87,7 @@ c_ SolutionError:
         r.. T..
 
     ___ dfs  G, visited, u, A, B, is_A
-        visited[u] = T..
+        visited[u] T..
         __ is_A:
             A.add(u)
         ____

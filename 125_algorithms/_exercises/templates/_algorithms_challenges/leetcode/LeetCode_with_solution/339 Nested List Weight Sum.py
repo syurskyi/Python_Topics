@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 """
@@ -34,7 +34,7 @@ c_ NestedInteger(o..
 
 c_ Solution(o..
     ___ -
-        s.. = 0
+        s.. 0
 
     ___ depthSum  nestedList
         """
@@ -51,6 +51,6 @@ c_ Solution(o..
         __ ni.isInteger
             s.. += ni.getInteger() * depth
         ____
-            lst = ni.getList()
+            lst ni.getList()
             ___ elt __ lst:
                 dfs(elt, depth + 1)

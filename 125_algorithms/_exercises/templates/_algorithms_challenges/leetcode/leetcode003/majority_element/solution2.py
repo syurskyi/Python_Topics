@@ -12,11 +12,11 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        count = 0
-        cand = N..
+        count 0
+        cand N..
         ___ c __ nums:
             __ count __ 0:
-                cand = c
+                cand c
                 count += 1
             ____ cand __ c:
                 count += 1

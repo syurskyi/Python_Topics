@@ -12,26 +12,26 @@ c_ Solution(o..
     """
 
     ___ reverseList(head, k
-      pre = N..
-      cur = head
+      pre N..
+      cur head
       w.... cur a.. k > 0:
         tmp  cur.next
-        cur.next = pre
-        pre = cur
-        cur = tmp
+        cur.next pre
+        pre cur
+        cur tmp
         k -_ 1
-      head.next = cur
+      head.next cur
       r.. cur, pre
 
     __ n.. head o. n.. head.next:
       r.. head
-    ret = head.next
-    p = head
-    pre = N..
+    ret head.next
+    p head
+    pre N..
     w.... p:
-      next, newHead = reverseList(p, 2)
+      next, newHead reverseList(p, 2)
       __ pre:
-        pre.next = newHead
-      pre = p
-      p = next
+        pre.next newHead
+      pre p
+      p next
     r.. ret

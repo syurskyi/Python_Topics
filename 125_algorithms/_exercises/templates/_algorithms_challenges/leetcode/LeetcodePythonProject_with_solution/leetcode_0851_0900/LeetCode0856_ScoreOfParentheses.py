@@ -9,18 +9,18 @@ c_ Solution(o..
         :type S: str
         :rtype: int
         """
-        s = S
+        s S
         stack, cur    # list, 0
         ___ c __ s:
             __ c __ '(':
                 stack.a..(cur)
-                cur = 0
+                cur 0
             ____
                 cur += stack.p.. ) + m..(cur, 1)
         r.. cur
     
     ___ test
-        testCases = [
+        testCases [
             '()',
             '(())',
             '()()',
@@ -28,7 +28,7 @@ c_ Solution(o..
             '(()(()))',
         ]
         ___ s __ testCases:
-            res = scoreOfParentheses(s)
+            res scoreOfParentheses(s)
             print('res: %s' % res)
             print('-='*30+'-')
 

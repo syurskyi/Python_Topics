@@ -15,13 +15,13 @@ The root-to-leaf path 1->3 represents the number 13.
 
 Return the sum = 12 + 13 = 25.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution:
     ___ sumNumbers  root
@@ -31,7 +31,7 @@ c_ Solution:
         """
         result    # list
         dfs(root, "", result)
-        result = [i..(element) ___ element __ result]
+        result [i..(element) ___ element __ result]
         r.. s..(result)
 
     ___ dfs  root, cur, result
@@ -44,7 +44,7 @@ c_ Solution:
         """
         __ n.. root:
             r..
-        cur = cur+s..(root.val)
+        cur cur+s..(root.val)
         __ n.. root.left a.. n.. root.right:
             result.a..(cur)
             r..
@@ -79,7 +79,7 @@ c_ Solution:
 
 
 __ _____ __ ____
-    nodes = [TreeNode(0), TreeNode(1), TreeNode(3)]
-    nodes[0].left = nodes[1]
-    nodes[0].right = nodes[2]
+    nodes [TreeNode(0), TreeNode(1), TreeNode(3)]
+    nodes[0].left nodes[1]
+    nodes[0].right nodes[2]
     Solution().sumNumbers(nodes[0])

@@ -9,22 +9,22 @@ Can you calculate how many days from PyBites' inception to our first PyCon meet 
 
 ____ d__ _______ date, t..
 
-start_100days = date(2017, 3, 30)
-pybites_founded = date(2016, 12, 19)
-pycon_date = date(2018, 5, 8)
+start_100days date(2017, 3, 30)
+pybites_founded date(2016, 12, 19)
+pycon_date date(2018, 5, 8)
 
 
 ___ get_hundred_days_end_date
     """Return a string of yyyy-mm-dd"""
-    t = t..(100)
-    finish = start_100days + t
+    t t..(100)
+    finish start_100days + t
     print(s..(finish
     r.. s..(finish)
 
 
 ___ get_days_between_pb_start_first_joint_pycon
     """Return the int number of days"""
-    diff = pycon_date - pybites_founded
+    diff pycon_date - pybites_founded
     print(diff.days)
     r.. diff.days
 

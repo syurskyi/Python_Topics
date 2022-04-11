@@ -5,7 +5,7 @@ c_ Codec:
     :type strs: List[str]
     :rtype: str
     """
-    ret = ""
+    ret ""
     ___ s __ strs:
       ret += s..(l..(s + "|" + s
 
@@ -18,16 +18,16 @@ c_ Codec:
     :rtype: List[str]
     """
     ret    # list
-    start = end = 0
+    start end 0
     w.... end < l..(s
       __ s[end] != "|":
         end += 1
       ____
-        length = i..(s ?|?)
-        start = end + 1
-        end = start + length
+        length i..(s ?|?)
+        start end + 1
+        end start + length
         ret.a..(s ?|?)
-        start = end
+        start end
     r.. ret
 
 # Your Codec object will be instantiated and called as such:

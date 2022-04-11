@@ -17,11 +17,11 @@ c_ Solution:
         ____
             ___ i, c __ e..(candidates
                 __ i __ 0:
-                    prev = c
+                    prev c
                 ____ prev __ c:
                     _____
                 ____
-                    prev = c
+                    prev c
                 cand.a..(c)
                 combination_sum(candidates[i + 1:], target - c, cand, res)
                 cand.p.. )

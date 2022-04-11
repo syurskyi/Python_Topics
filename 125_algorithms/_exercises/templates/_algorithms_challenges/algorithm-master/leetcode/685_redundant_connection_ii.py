@@ -20,46 +20,46 @@ c_ Solution:
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        ans = edge = N..  # `edge` is the last edge in a loop
-        adj = c...d..(s..)
-        uf = c...d..(i..)
-        has_parent = s..()
+        ans edge N..  # `edge` is the last edge in a loop
+        adj c...d..(s..)
+        uf c...d..(i..)
+        has_parent s..()
 
         ___ u, v __ edges:
             adj[u].add(v)
 
             __ v __ has_parent:
-                ans = (u, v)
+                ans (u, v)
 
             __ n.. union(uf, u, v
-                edge = (u, v)
+                edge (u, v)
 
             has_parent.add(v)
 
         __ n.. ans:
             r.. edge
 
-        res = dfs(ans[1], adj, s..
+        res dfs(ans[1], adj, s..
         r.. res __ res ____ ans
 
     ___ union  uf, u, v
-        a = find(uf, u)
-        b = find(uf, v)
+        a find(uf, u)
+        b find(uf, v)
 
         __ a __ b:
             r.. F..
 
-        uf[b] = a
+        uf[b] a
         r.. T..
 
     ___ find  uf, u
         __ uf[u] __ 0:
-            uf[u] = u
+            uf[u] u
             r.. u
         __ uf[u] __ u:
             r.. u
 
-        uf[u] = find(uf, uf[u])
+        uf[u] find(uf, uf[u])
         r.. uf[u]
 
     ___ dfs  u, adj, visited
@@ -70,6 +70,6 @@ c_ Solution:
             __ v __ visited:
                 r.. (u, v)
 
-            res = dfs(v, adj, visited)
+            res dfs(v, adj, visited)
             __ res:
                 r.. res

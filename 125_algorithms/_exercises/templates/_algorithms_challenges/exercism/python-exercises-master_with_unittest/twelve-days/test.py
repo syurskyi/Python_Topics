@@ -5,25 +5,25 @@ ____ twelve_days _______ sing, verse, verses
 
 c_ TwelveDaysTests(unittest.TestCase
     ___ test_verse1
-        e.. = ("On the first day of Christmas my true love gave to me, "
+        e.. ("On the first day of Christmas my true love gave to me, "
                     "a Partridge in a Pear Tree.\n")
         assertEqual(verse(1), e..)
 
     ___ test_verse2
-        e.. = ("On the second day of Christmas my true love gave to me, "
+        e.. ("On the second day of Christmas my true love gave to me, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
         assertEqual(verse(2), e..)
 
     ___ test_verse3
-        e.. = ("On the third day of Christmas my true love gave to me, "
+        e.. ("On the third day of Christmas my true love gave to me, "
                     "three French Hens, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
         assertEqual(verse(3), e..)
 
     ___ test_verse4
-        e.. = ("On the fourth day of Christmas my true love gave to me, "
+        e.. ("On the fourth day of Christmas my true love gave to me, "
                     "four Calling Birds, "
                     "three French Hens, "
                     "two Turtle Doves, "
@@ -31,7 +31,7 @@ c_ TwelveDaysTests(unittest.TestCase
         assertEqual(verse(4), e..)
 
     ___ test_verse5
-        e.. = ("On the fifth day of Christmas my true love gave to me, "
+        e.. ("On the fifth day of Christmas my true love gave to me, "
                     "five Gold Rings, "
                     "four Calling Birds, "
                     "three French Hens, "
@@ -40,7 +40,7 @@ c_ TwelveDaysTests(unittest.TestCase
         assertEqual(verse(5), e..)
 
     ___ test_verse6
-        e.. = ("On the sixth day of Christmas my true love gave to me, "
+        e.. ("On the sixth day of Christmas my true love gave to me, "
                     "six Geese-a-Laying, "
                     "five Gold Rings, "
                     "four Calling Birds, "
@@ -50,7 +50,7 @@ c_ TwelveDaysTests(unittest.TestCase
         assertEqual(verse(6), e..)
 
     ___ test_verse7
-        e.. = ("On the seventh day of Christmas my true love gave to me, "
+        e.. ("On the seventh day of Christmas my true love gave to me, "
                     "seven Swans-a-Swimming, "
                     "six Geese-a-Laying, "
                     "five Gold Rings, "
@@ -61,7 +61,7 @@ c_ TwelveDaysTests(unittest.TestCase
         assertEqual(verse(7), e..)
 
     ___ test_verse8
-        e.. = ("On the eighth day of Christmas my true love gave to me, "
+        e.. ("On the eighth day of Christmas my true love gave to me, "
                     "eight Maids-a-Milking, "
                     "seven Swans-a-Swimming, "
                     "six Geese-a-Laying, "
@@ -73,7 +73,7 @@ c_ TwelveDaysTests(unittest.TestCase
         assertEqual(verse(8), e..)
 
     ___ test_verse9
-        e.. = ("On the ninth day of Christmas my true love gave to me, "
+        e.. ("On the ninth day of Christmas my true love gave to me, "
                     "nine Ladies Dancing, "
                     "eight Maids-a-Milking, "
                     "seven Swans-a-Swimming, "
@@ -86,7 +86,7 @@ c_ TwelveDaysTests(unittest.TestCase
         assertEqual(verse(9), e..)
 
     ___ test_verse10
-        e.. = ("On the tenth day of Christmas my true love gave to me, "
+        e.. ("On the tenth day of Christmas my true love gave to me, "
                     "ten Lords-a-Leaping, "
                     "nine Ladies Dancing, "
                     "eight Maids-a-Milking, "
@@ -100,7 +100,7 @@ c_ TwelveDaysTests(unittest.TestCase
         assertEqual(verse(10), e..)
 
     ___ test_verse11
-        e.. = ("On the eleventh day of Christmas "
+        e.. ("On the eleventh day of Christmas "
                     "my true love gave to me, "
                     "eleven Pipers Piping, "
                     "ten Lords-a-Leaping, "
@@ -116,7 +116,7 @@ c_ TwelveDaysTests(unittest.TestCase
         assertEqual(verse(11), e..)
 
     ___ test_verse12
-        e.. = ("On the twelfth day of Christmas my true love gave to me, "
+        e.. ("On the twelfth day of Christmas my true love gave to me, "
                     "twelve Drummers Drumming, "
                     "eleven Pipers Piping, "
                     "ten Lords-a-Leaping, "
@@ -132,7 +132,7 @@ c_ TwelveDaysTests(unittest.TestCase
         assertEqual(verse(12), e..)
 
     ___ test_multiple_verses
-        e.. = ("On the first day of Christmas my true love gave to me, "
+        e.. ("On the first day of Christmas my true love gave to me, "
                     "a Partridge in a Pear Tree.\n\n"
                     "On the second day of Christmas my true love gave to me, "
                     "two Turtle Doves, "

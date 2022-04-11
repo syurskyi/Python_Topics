@@ -19,8 +19,8 @@ c_ Solution(o..
         ____
             res    # list
             ___ i, e __ e..(nums
-                rest = nums[:i] + nums[i + 1:]
-                rest_perms = permute(rest)
+                rest nums[:i] + nums[i + 1:]
+                rest_perms permute(rest)
                 ___ perm __ rest_perms:
                     perm.a..(e)
                 res += rest_perms

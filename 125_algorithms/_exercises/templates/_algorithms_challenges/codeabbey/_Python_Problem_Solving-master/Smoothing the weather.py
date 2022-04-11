@@ -1,7 +1,7 @@
 #number of measurements to inserted
-data = i..(input
+data i..(input
 #enter all the measurements seperated by space
-mea = l.. m..(f__, input().s..()))
+mea l.. m..(f__, input().s..()))
 #this array is used to store the results
 mea_store    # list
 
@@ -16,7 +16,7 @@ ___ i __ r..(l..(mea:
         _____
     #else calculate the average of the middle numbers and store in the result
     ____
-        res = (mea[i]+mea[i-1]+mea[i+1])/3
+        res (mea[i]+mea[i-1]+mea[i+1])/3
         mea_store.a..(res)
         
 #printing the values 

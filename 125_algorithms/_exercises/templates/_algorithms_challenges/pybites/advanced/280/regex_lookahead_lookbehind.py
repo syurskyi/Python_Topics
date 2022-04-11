@@ -10,10 +10,10 @@ ___ count_n_repetitions(text, n=1
     n: How often character should be repeated, defaults to 1
     """
 
-    my_regex = r"(.)(?=\1{" + s..(n) + r"})"
+    my_regex r"(.)(?=\1{" + s..(n) + r"})"
     
 
-    counts = __.f..(my_regex,text,flags=__.DOTALL)
+    counts __.f..(my_regex,text,flags=__.DOTALL)
 
 
     r.. l..(counts)
@@ -32,11 +32,11 @@ ___ count_n_reps_or_n_chars_following(text, n=1, char=""
     """
     
     __ char:
-        my_regex = r"(.)(?=\1{" + s..(n) + "}|" +  __.escape(char) + "{" + s..(n) + r"})"
+        my_regex r"(.)(?=\1{" + s..(n) + "}|" +  __.escape(char) + "{" + s..(n) + r"})"
     ____
-        my_regex = r"(.)(?=\1{" + s..(n) + r"})"
+        my_regex r"(.)(?=\1{" + s..(n) + r"})"
 
-    counts = __.f..(my_regex,text,flags=__.DOTALL)
+    counts __.f..(my_regex,text,flags=__.DOTALL)
 
 
     r.. l..(counts)
@@ -49,14 +49,14 @@ ___ check_surrounding_chars(text, surrounding_chars
     text: UTF-8 compliant input text
     surrounding_chars: List of characters
     """
-    s = text
-    text = ''.j..(surrounding_chars)
+    s text
+    text ''.j..(surrounding_chars)
 
-    text = r'[' + __.escape(text) + r']'
+    text r'[' + __.escape(text) + r']'
 
 
-    my_regex = r'(?<=' + text + r')(.)' + r'(?=' + text + r')'
-    counts = __.f..(my_regex,s,flags=__.DOTALL)
+    my_regex r'(?<=' + text + r')(.)' + r'(?=' + text + r')'
+    counts __.f..(my_regex,s,flags=__.DOTALL)
 
     r.. l..(counts)
 
@@ -67,5 +67,5 @@ ___ check_surrounding_chars(text, surrounding_chars
 
 
 __ _______ __ _______
-    surrounding_chars = ["Z", "A"] 
-    text = "ZZZZZ"
+    surrounding_chars ["Z", "A"]
+    text "ZZZZZ"

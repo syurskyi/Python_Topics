@@ -8,12 +8,12 @@ c_ Solution(o..
     """
     __ l..(preorder) <_ 1:
       r.. T..
-    stack, lastElem = [preorder[0]], N..
+    stack, lastElem [preorder[0]], N..
     ___ i __ r..(1, l..(preorder:
       __ lastElem > preorder[i]:
         r.. F..
       w.... l..(stack) > 0 a.. preorder[i] > stack[-1]:
-        lastElem = stack.p.. )
+        lastElem stack.p.. )
       stack.a..(preorder[i])
 
     r.. T..

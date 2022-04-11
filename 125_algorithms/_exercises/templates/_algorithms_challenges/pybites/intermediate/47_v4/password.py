@@ -1,9 +1,9 @@
 _______ s__
 _______ __
 
-PUNCTUATION_CHARS = l..(s__.punctuation)
+PUNCTUATION_CHARS l..(s__.punctuation)
 
-used_passwords = s..('PassWord@1 PyBit$s9'.s..
+used_passwords s..('PassWord@1 PyBit$s9'.s..
 
 """
 is between 6 and 12 chars long (both inclusive)
@@ -17,14 +17,14 @@ Has not been used before (use: used_passwords)
 
 ___ validate_password(password
 
-    length = 6 <_ l..(password) <_ 12
-    digit = l..(__.f..(r'[0-9]', password >_ 1
-    lower = l..(__.f..(r'[a-z]', password >_ 1
-    upper = l..(__.f..(r'[A-Z]', password >_ 1
-    punc = any([c __ PUNCTUATION_CHARS ___ c __ password])
-    new = password n.. __ used_passwords
+    length 6 <_ l..(password) <_ 12
+    digit l..(__.f..(r'[0-9]', password >_ 1
+    lower l..(__.f..(r'[a-z]', password >_ 1
+    upper l..(__.f..(r'[A-Z]', password >_ 1
+    punc any([c __ PUNCTUATION_CHARS ___ c __ password])
+    new password n.. __ used_passwords
 
-    valid = length a.. digit a.. lower a.. upper a.. punc a.. new
+    valid length a.. digit a.. lower a.. upper a.. punc a.. new
 
     __ valid:
         used_passwords.add(password)

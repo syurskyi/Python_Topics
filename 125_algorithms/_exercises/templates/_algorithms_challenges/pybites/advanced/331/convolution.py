@@ -4,7 +4,7 @@ _______ n.... __ np
 
 
 ___ convolution2D(
-    image: np.array, kernel: np.array, padding: Optional[i..] = N.., stride: i.. = 1
+    image: np.array, kernel: np.array, padding: Optional[i..] N.., stride: i.. 1
 ) __ np.array:
     """Calculate the convolution between the input image and a filter, returning the feature map.
 
@@ -18,7 +18,7 @@ ___ convolution2D(
         np.array: the feature map constructed from the image and the kernel.
     """
 
-    arrays = (image,kernel)
+    arrays (image,kernel)
     # assert that both are 2D numpy arrays
     __ n.. a..(isi..(array,np.ndarray) ___ array __ arrays
         r.. T..("image and kernel must be numpy arrays of dimension 2")
@@ -26,7 +26,7 @@ ___ convolution2D(
     __ n.. a..(array.ndim __ 2 ___ array __ arrays
         r.. V...("kernel and filter must be size 2")
         
-    is_not_integer = l.... x: n.. isi..(x,i..) o. (isi..(x,f__) a.. n.. x.is_integer
+    is_not_integer l.... x: n.. isi..(x,i..) o. (isi..(x,f__) a.. n.. x.is_integer
     
     
     __ n.. a..(array.shape[0] __ array.shape[1] ___ array __ arrays
@@ -47,9 +47,9 @@ ___ convolution2D(
     
 
 
-    types = ('padding','stride')
-    mins = (0,1)
-    values = (padding,stride)
+    types ('padding','stride')
+    mins (0,1)
+    values (padding,stride)
 
     
     true_values =[]
@@ -61,30 +61,30 @@ ___ convolution2D(
                 r.. V...(f"{type_}, must be greater than zero")
     
 
-    stride = i..(stride) # inc ase they passed a value like 2.0
+    stride i..(stride) # inc ase they passed a value like 2.0
 
              
     __ padding __ N..
-        padding = (kernel.shape[0] - 1)//2
+        padding (kernel.shape[0] - 1)//2
     ____
-        padding = i..(padding)
+        padding i..(padding)
 
 
 
-    output_array_size = i..(np.f..((image.shape[0] + 2 * padding - kernel.shape[0])/stride + 1
+    output_array_size i..(np.f..((image.shape[0] + 2 * padding - kernel.shape[0])/stride + 1
 
 
-    output_array = np.zeros((output_array_size,) * 2)
+    output_array np.zeros((output_array_size,) * 2)
 
 
-    image = np.pad(image,padding)
+    image np.pad(image,padding)
 
     
 
-    rows = cols =  image.shape[0]
-    kernel_size = kernel.shape[0]
+    rows cols =  image.shape[0]
+    kernel_size kernel.shape[0]
 
-    output_row = output_col = 0
+    output_row output_col 0
 
     ___ row __ r..(0,rows,stride
         __ row + (kernel_size - 1) >_ rows:
@@ -95,19 +95,19 @@ ___ convolution2D(
                 _____
 
             
-            sum_ = 0
+            sum_ 0
             ___ row_diff __ r..(kernel_size
-                current_row = row + row_diff
+                current_row row + row_diff
                 ___ col_diff __ r..(kernel_size
-                    current_col = col + col_diff
+                    current_col col + col_diff
 
                     sum_ += image[current_row][current_col] * kernel[row_diff][col_diff]
 
             
-            output_array[output_row,output_col] = sum_
+            output_array[output_row,output_col] sum_
             output_col += 1
             __ output_col >_ output_array_size:
-                output_col = 0
+                output_col 0
                 output_row += 1
 
 
@@ -118,15 +118,15 @@ ___ convolution2D(
 
 
 __ _______ __ _______
-    image = np.array([[1, 1, 1, 1, 1],
+    image np.array([[1, 1, 1, 1, 1],
            [1, 0, 0, 0, 1],
            [1, 0, 0, 0, 1],
            [1, 0, 0, 0, 1],
            [1, 1, 1, 1, 1]])
-    kernel = np.array([[0.11111111, 0.11111111, 0.11111111],
+    kernel np.array([[0.11111111, 0.11111111, 0.11111111],
            [0.11111111, 0.11111111, 0.11111111],
            [0.11111111, 0.11111111, 0.11111111]])
-    padding = 0
+    padding 0
 
     print(convolution2D(image,kernel,padding
 

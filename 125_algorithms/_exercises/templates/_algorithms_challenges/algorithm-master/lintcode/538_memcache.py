@@ -1,7 +1,7 @@
 c_ Memcache:
 
-    INT_MAX = 0x7FFFFFFF
-    PERMANENT_TTL = -1
+    INT_MAX 0x7FFFFFFF
+    PERMANENT_TTL -1
     storage    # dict
 
     """
@@ -28,9 +28,9 @@ c_ Memcache:
     """
     ___ s..  curtTime, key, value, ttl
         __ ttl > 0:
-            storage[key] = _new_item(key, value, curtTime + ttl)
+            storage[key] _new_item(key, value, curtTime + ttl)
         ____
-            storage[key] = _new_item(key, value, PERMANENT_TTL)
+            storage[key] _new_item(key, value, PERMANENT_TTL)
 
     """
     @param: curtTime: An integer

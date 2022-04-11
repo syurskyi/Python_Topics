@@ -2,7 +2,7 @@ _______ r__
 ____ bs4 _______ BeautifulSoup
 _______ __
 
-cached_so_url = 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
+cached_so_url 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
 
 
 ___ top_python_questions(url=cached_so_url
@@ -14,7 +14,7 @@ ___ top_python_questions(url=cached_so_url
     """
 
     ___
-        response = r__.g.. url)
+        response r__.g.. url)
         response.raise_for_status()
     ______ r__.HTTPError __ err:
         print('HTTP Error')
@@ -23,16 +23,16 @@ ___ top_python_questions(url=cached_so_url
         print('Other Error')
         print(err)
     ____
-        soup = BeautifulSoup(response.text,'html.parser')
+        soup BeautifulSoup(response.text,'html.parser')
 
 
-        questions = soup.find_all("div",class_='question-summary')
+        questions soup.find_all("div",class_='question-summary')
         results    # list
         ___ question __ questions:
-            question_text = question.find('a',class_='question-hyperlink').getText()
-            views = question.find('div',class_='views').getText()
+            question_text question.find('a',class_='question-hyperlink').getText()
+            views question.find('div',class_='views').getText()
             __ views.s...s.. [0][-1] __ 'm':
-                votes = i..(question.find('span',class_='vote-count-post').strong.getText
+                votes i..(question.find('span',class_='vote-count-post').strong.getText
                 results.a..((question_text,votes
 
         

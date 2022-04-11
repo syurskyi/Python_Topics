@@ -11,9 +11,9 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. nums: r.. 0
-        length = l..(nums)
-        sumVal = (length+1)*(length)/2
-        result = sumVal
+        length l..(nums)
+        sumVal (length+1)*(length)/2
+        result sumVal
         ___ num __ nums:
             result -_ num
         r.. result

@@ -21,9 +21,9 @@ between them.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -31,7 +31,7 @@ c_ Solution:
         """
         dfs, return the longest path (#nodes) ended at the subroot/current node
         """
-        ret = 0
+        ret 0
 
     ___ diameterOfBinaryTree  root: TreeNode) __ i..:
         dfs(root)
@@ -44,7 +44,7 @@ c_ Solution:
         __ n.. node:
             r.. 0
 
-        l = dfs(node.left)
-        r = dfs(node.right)
-        ret = m..(ret, l + 1 + r - 1)  # path length is the #nodes - 1
+        l dfs(node.left)
+        r dfs(node.right)
+        ret m..(ret, l + 1 + r - 1)  # path length is the #nodes - 1
         r.. m..(l, r) + 1

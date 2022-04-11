@@ -12,21 +12,21 @@ c_ Solution(o..
         r.. helper(l..(r..(1, maxChoosableInteger+1, desiredTotal)
     
     ___ helper  nums, desiredTotal
-        hash = s..(nums)
+        hash s..(nums)
         __ hash __ memo:
             r.. memo[hash]
         __ nums[-1] >_ desiredTotal:
             r.. T..
-        length = l..(nums)
+        length l..(nums)
         ___ i __ r..(length
             __ n.. helper(nums[:i]+nums[i+1:], desiredTotal-nums[i]
-                memo[hash] = T..
+                memo[hash] T..
                 r.. T..
-        memo[hash] = F..
+        memo[hash] F..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             [3, 11],
             [10, 11],
             [10, 40],
@@ -34,7 +34,7 @@ c_ Solution(o..
         ___ maxChoosableInteger, desiredTotal __ testCases:
             print('maxChoosableInteger: %s' % maxChoosableInteger)
             print('desiredTotal: %s' % desiredTotal)
-            result = canIWin(maxChoosableInteger, desiredTotal)
+            result canIWin(maxChoosableInteger, desiredTotal)
             print('result: %s' % result)
             print('-='*20+'-')
 

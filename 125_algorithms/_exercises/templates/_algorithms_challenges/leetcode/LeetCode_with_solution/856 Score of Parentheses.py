@@ -42,13 +42,13 @@ c_ Solution:
         parentheses surrounding it
         """
         stk    # list
-        ret = 0
+        ret 0
         ___ s __ S:
             __ s __ "(":
                 stk.a..(0)
             ____
-                cur = stk.p.. )
-                score = m..(2 * cur, 1)
+                cur stk.p.. )
+                score m..(2 * cur, 1)
                 __ stk:
                     stk[-1] += score
                 ____
@@ -60,7 +60,7 @@ c_ Solution:
         """
         stk
         """
-        ret = 0
+        ret 0
         cur_stk    # list
         ___ s __ S:
             __ s __ "(":
@@ -69,12 +69,12 @@ c_ Solution:
             ____
                 stk.p.. )
                 __ cur_stk[-1] __ 0:
-                    cur_stk[-1] = 1
+                    cur_stk[-1] 1
                 ____
                     cur_stk[-1] *= 2
             __ n.. stk:
                 ret += cur
-                cur = 0
+                cur 0
 
         r.. ret
 

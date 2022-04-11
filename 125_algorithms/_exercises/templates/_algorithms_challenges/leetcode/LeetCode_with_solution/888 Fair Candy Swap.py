@@ -49,10 +49,10 @@ c_ Solution:
         """
         It is a search problem. Use set as search.
         """
-        sum_A = s..(A)
-        sum_B = s..(B)
-        diff = (sum_B - sum_A) // 2  # it can be negative or positive
-        set_B = s..(B)
+        sum_A s..(A)
+        sum_B s..(B)
+        diff (sum_B - sum_A) // 2  # it can be negative or positive
+        set_B s..(B)
         ___ a __ A:
             __ a + diff __ set_B:
                 r.. [a, a + diff]
@@ -66,16 +66,16 @@ c_ Solution:
         exchange is (sum - target) + constant
         it is a search problem
         """
-        sum_A = s..(A)
-        sum_B = s..(B)
+        sum_A s..(A)
+        sum_B s..(B)
         __ sum_A > sum_B:
             r.. fairCandySwap(B, A)[::-1]
 
         A.s..()
         B.s..()
-        diff = (sum_B - sum_A) // 2
+        diff (sum_B - sum_A) // 2
         ___ a __ A:
-            i = b__.bisect_left(B, a + diff)
+            i b__.bisect_left(B, a + diff)
             __ i < l..(B) a.. B[i] __ a + diff:
                 r.. [a, a + diff]
 

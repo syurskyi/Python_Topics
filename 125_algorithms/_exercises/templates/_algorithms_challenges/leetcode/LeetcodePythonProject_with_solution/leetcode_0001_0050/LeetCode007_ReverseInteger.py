@@ -9,14 +9,14 @@ c_ Solution(o..
         :type x: int
         :rtype: int
         """
-        res = 0
-        sig = 1 __ x >_ 0 ____ -1
-        x = a..(x)
+        res 0
+        sig 1 __ x >_ 0 ____ -1
+        x a..(x)
         w.... x > 0:
-            digit = x%10
-            res = res*10 + digit
-            x = (x-digit)//10
-        res = res*sig
+            digit x%10
+            res res*10 + digit
+            x (x-digit)//10
+        res res*sig
         __ res > 2**31-1 o. res < -2**31:
             r.. 0
         ____

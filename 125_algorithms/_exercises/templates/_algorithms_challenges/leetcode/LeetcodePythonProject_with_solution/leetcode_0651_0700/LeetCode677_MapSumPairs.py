@@ -5,8 +5,8 @@ Created on Oct 18, 2017
 '''
 c_ TreeNode(o..
     ___ - , val
-        val = val
-        s.. = 0
+        val val
+        s.. 0
         children    # dict
 
 c_ MapSum(o..
@@ -16,7 +16,7 @@ c_ MapSum(o..
         Initialize your data structure here.
         """
         hashmap    # dict
-        root = TreeNode(N..)
+        root TreeNode(N..)
 
     ___ insert  key, val
         """
@@ -24,16 +24,16 @@ c_ MapSum(o..
         :type val: int
         :rtype: void
         """
-        diff = 0
+        diff 0
         __ key __ hashmap:
-            diff = -hashmap[key]
-        hashmap[key] = val
-        node = root
+            diff -hashmap[key]
+        hashmap[key] val
+        node root
         ___ c __ key:
             __ c n.. __ node.children:
-                newNode = TreeNode(c)
-                node.children[c] = newNode
-            node = node.children[c]
+                newNode TreeNode(c)
+                node.children[c] newNode
+            node node.children[c]
             node.s.. += val+diff
 
     ___ s..  prefix
@@ -41,15 +41,15 @@ c_ MapSum(o..
         :type prefix: str
         :rtype: int
         """
-        node = root
+        node root
         ___ c __ prefix:
             __ c n.. __ node.children:
                 r.. 0
-            node = node.children[c]
+            node node.children[c]
         r.. node.s..
 
 __ _____ __ _____
-    mapSum = MapSum()
+    mapSum MapSum()
     mapSum.insert('aa', 3)
     mapSum.insert('aa', 2)
     print(mapSum.s..('a'

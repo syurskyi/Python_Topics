@@ -29,15 +29,15 @@ c_ Solution(o..
         """
         queue    # list
         queue.a..((beginWord, 0
-        letters = map(chr, r..(o..('a'), o..('z') + 1
-        word_dict = wordDict
+        letters map(chr, r..(o..('a'), o..('z') + 1
+        word_dict wordDict
         # Remove words that are same as beginWord
         ___ word __ s..(wordDict
             __ beginWord __ word:
                 wordDict.remove(beginWord)
         wordDict.add(endWord)
         w.... queue:
-            cur = queue.p.. 0)
+            cur queue.p.. 0)
             __ cur[0] __ endWord:
                 r.. cur[1] + 1
             ___ word __ get_adjacent(cur[0]
@@ -49,13 +49,13 @@ c_ Solution(o..
         res    # list
         ___ i, e __ e..(word1
             ___ letter __ letters:
-                word = word1[:i] + letter + word1[i + 1:]
+                word word1[:i] + letter + word1[i + 1:]
                 __ word __ word_dict:
                     res.a..(word)
         r.. res
 
 
-s = Solution()
+s Solution()
 print s.ladderLength("hit", "dow", s..(["hot", "dot", "dog", "lot", "log"]
 print s.ladderLength("hit", "cog", s..(["hot", "dot", "dog", "lot", "log"]
 print s.ladderLength("hit", "cog", s..(["aos", "dis", "dog", "lot", "log"]

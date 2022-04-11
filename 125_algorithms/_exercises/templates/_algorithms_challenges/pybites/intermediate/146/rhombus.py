@@ -1,4 +1,4 @@
-STAR = '*'
+STAR '*'
 
 ___ gen_rhombus(width
     """Create a generator that yields the rows of a rhombus row

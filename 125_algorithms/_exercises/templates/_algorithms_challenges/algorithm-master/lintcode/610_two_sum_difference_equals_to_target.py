@@ -11,7 +11,7 @@ c_ Solution:
     @return: [index1 + 1, index2 + 1] (index1 < index2)
     """
     ___ twoSum7  A, target
-        NOT_FOUND = [-1, -1]
+        NOT_FOUND [-1, -1]
         __ n.. A o. l..(A) < 2:
             r.. NOT_FOUND
 
@@ -37,7 +37,7 @@ c_ Solution:
                     i + 1
                 ]
 
-            remaining[A[i]] = i
+            remaining[A[i]] i
 
         r.. NOT_FOUND
 
@@ -55,18 +55,18 @@ c_ Solution:
     @return: [index1 + 1, index2 + 1] (index1 < index2)
     """
     ___ twoSum7  A, target
-        NOT_FOUND = [-1, -1]
+        NOT_FOUND [-1, -1]
         __ n.. A o. l..(A) < 2:
             r.. NOT_FOUND
 
         __ target < 0:
-            target = -1 * target
+            target -1 * target
 
-        n = l..(A)
-        A = [(A[i], i) ___ i __ r..(n)]
+        n l..(A)
+        A [(A[i], i) ___ i __ r..(n)]
         A.s..()
 
-        left = 0
+        left 0
         ___ right __ r..(1, n
             w.... left + 1 < right a.. A[right][0] - A[left][0] > target:
                 left += 1

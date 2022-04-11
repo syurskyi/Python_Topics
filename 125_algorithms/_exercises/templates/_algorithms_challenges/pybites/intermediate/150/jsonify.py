@@ -1,7 +1,7 @@
 _______ j__
 _______ __
 
-members = """
+members """
 id,first_name,last_name,email
 1,Junie,Kybert;jkybert0@army.mil
 2,Sid,Churching|schurching1@tumblr.com
@@ -20,15 +20,15 @@ ___ convert_to_json(members=members
     members_data    # list
     ___ i, row __ e..(members.s..("\n").s..("\n":
         __ i __ 0:
-            row = row.s..(",")
-            id_h, first_h, last_h, email_h = row[0], row[1], row[2], row[3]
+            row row.s..(",")
+            id_h, first_h, last_h, email_h row[0], row[1], row[2], row[3]
         ____
-            row_split = __.s..("[|,;]", row)
+            row_split __.s..("[|,;]", row)
             members_data.a..(row_split)
 
     members_stg    # list
     ___ member __ members_data:
-        member_dict = {
+        member_dict {
             id_h: member[0],
             first_h: member[1],
             last_h: member[2],
@@ -37,5 +37,5 @@ ___ convert_to_json(members=members
 
         members_stg.a..(member_dict)
 
-    members_json = j__.d..members_stg)
+    members_json j__.d..members_stg)
     r.. members_json

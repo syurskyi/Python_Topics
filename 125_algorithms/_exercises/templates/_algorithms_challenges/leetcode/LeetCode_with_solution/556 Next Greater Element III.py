@@ -27,25 +27,25 @@ c_ Solution:
         why reverse? reverse the increasing from right to left to decreasing
         from right to left (i.e. sorted)
         """
-        seq = l..(s..(n
-        N = l..(seq)
+        seq l..(s..(n
+        N l..(seq)
         __ N < 2:
             r.. -1
 
         # from right to left
-        i = N - 2
+        i N - 2
         w.... seq[i] >_ seq[i+1]:
             i -_ 1
             __ i < 0:
                 r.. -1
 
-        j = N - 1
+        j N - 1
         w.... seq[i] >_ seq[j]:
             j -_ 1
 
-        seq[i], seq[j] = seq[j], seq[i]
-        seq[i+1:] = r..(seq[i+1:])
-        ret = i..("".j..(seq
+        seq[i], seq[j] seq[j], seq[i]
+        seq[i+1:] r..(seq[i+1:])
+        ret i..("".j..(seq
         __ ret <_ 1 << 31 - 1:
             r.. ret
         ____
@@ -64,18 +64,18 @@ c_ Solution:
         from right to left
         find the first digit that has min larger, then sort the rest
         """
-        seq = [i..(e) ___ e __ s..(n)]
+        seq [i..(e) ___ e __ s..(n)]
         stk    # list  # record index
         ___ i __ r..(l..(seq) - 1, -1 , -1
-            e = seq[i]
-            popped = N..
+            e seq[i]
+            popped N..
             w.... stk a.. seq[stk[-1]] > e:
-                popped = stk.p.. )
+                popped stk.p.. )
 
             __ popped:
-                seq[i], seq[popped] = seq[popped], seq[i]
-                seq[i+1:] = s..(seq[i+1:])  # reversed also good
-                ret = i..("".j.. m..(s.., seq)))
+                seq[i], seq[popped] seq[popped], seq[i]
+                seq[i+1:] s..(seq[i+1:])  # reversed also good
+                ret i..("".j.. m..(s.., seq)))
                 __ ret <_ 1 << 31 - 1:
                     r.. ret
                 ____

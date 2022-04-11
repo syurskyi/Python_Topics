@@ -14,8 +14,8 @@ c_ Solution:
                 d...remove(start)
         d...add(end)
         w.... queue:
-            cur = queue.p.. 0)
-            d = distance.p.. 0)
+            cur queue.p.. 0)
+            d distance.p.. 0)
             ___ word __ s..(d..  # Iterate over the copy of dict
                 __ is_adjacent(cur, word
                     d...remove(word)  # Mark as visited
@@ -26,14 +26,14 @@ c_ Solution:
         r.. 0
 
     ___ is_adjacent  word1, word2
-        count = 0
-        n = l..(word1)
+        count 0
+        n l..(word1)
         ___ i __ r..(n
             __ word1[i] != word2[i]:
                 count += 1
         r.. count __ 1
 
 
-s = Solution()
+s Solution()
 print s.ladderLength("hit", "dow", s..(["hot", "dot", "dog", "lot", "log"]
 print s.ladderLength("hit", "cog", s..(["hot", "dot", "dog", "lot", "log"]

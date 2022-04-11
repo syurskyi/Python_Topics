@@ -42,8 +42,8 @@ c_ Solution:
         sort and assign index
         For the smae element, the right ones should get larget assigned index
         """
-        A = s..(arr)
-        hm = d..(d..)
+        A s..(arr)
+        hm d..(d..)
         ___ i, e __ e..(A
             hm[e].a..(i)
 
@@ -51,10 +51,10 @@ c_ Solution:
         ___ e __ arr:
             proxy.a..(hm[e].popleft
 
-        ret = 0
-        cur_max_idx = 0
+        ret 0
+        cur_max_idx 0
         ___ i, e __ e..(proxy
-            cur_max_idx = m..(cur_max_idx, e)
+            cur_max_idx m..(cur_max_idx, e)
             __ cur_max_idx __ i:
                 ret += 1
 

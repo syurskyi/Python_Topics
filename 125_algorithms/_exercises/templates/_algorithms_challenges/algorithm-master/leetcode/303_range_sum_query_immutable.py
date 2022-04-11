@@ -13,11 +13,11 @@ c_ NumArray:
         __ n.. nums:
             r..
 
-        n = l..(nums)
-        prefix_sum = [0] * (n + 1)
+        n l..(nums)
+        prefix_sum [0] * (n + 1)
 
         ___ i __ r..(1, n + 1
-            prefix_sum[i] = prefix_sum[i - 1] + nums[i - 1]
+            prefix_sum[i] prefix_sum[i - 1] + nums[i - 1]
 
     ___ sumRange  i, j
         """

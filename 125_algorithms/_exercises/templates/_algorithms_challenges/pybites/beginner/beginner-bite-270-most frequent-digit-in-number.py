@@ -23,13 +23,13 @@ https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dic
 ___ freq_digit(num: i..) __ i..:
 
     dict_num    # dict
-    num_str = s..(num)
+    num_str s..(num)
     ___ num __ num_str:
         ___
             dict_num[num] += 1
         ______:
-            dict_num[num] = 1
-    m = m..(dict_num, key=l.... key: dict_num[key])
+            dict_num[num] 1
+    m m..(dict_num, key=l.... key: dict_num[key])
     r.. i..(m)
 
 

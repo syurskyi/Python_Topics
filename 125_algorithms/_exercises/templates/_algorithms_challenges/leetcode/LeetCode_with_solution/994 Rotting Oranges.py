@@ -36,7 +36,7 @@ grid[i][j] is only 0, 1, or 2.
 ____ t___ _______ L..
 
 
-dirs = ((0, -1), (0, 1), (-1, 0), (1, 0
+dirs ((0, -1), (0, 1), (-1, 0), (1, 0
 
 
 c_ Solution:
@@ -44,27 +44,27 @@ c_ Solution:
         """
         maintain a q for the newly rotten
         """
-        m, n = l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid[0])
         q    # list
         ___ i __ r..(m
             ___ j __ r..(n
                 __ grid[i][j] __ 2:
                     q.a..((i, j
 
-        t = -1
+        t -1
         w.... q:
             t += 1
             cur_q    # list
             ___ i, j __ q:
                 ___ di, dj __ dirs:
-                    I = i + di
-                    J = j + dj
+                    I i + di
+                    J j + dj
                     __ 0 <_ I < m a.. 0 <_ J < n a.. grid[I][J] __ 1:
-                        grid[I][J] = 2
+                        grid[I][J] 2
                         cur_q.a..((I, J
-            q = cur_q
+            q cur_q
 
-        has_fresh = any(
+        has_fresh any(
             grid[i][j] __ 1
             ___ i __ r..(m)
             ___ j __ r..(n)

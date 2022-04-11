@@ -12,30 +12,30 @@ c_ Solution(o..
             __ c __ hashmap:
                 hashmap[c].a..(i)
             ____
-                hashmap[c] = [i]
-        prev = 0
+                hashmap[c] [i]
+        prev 0
         ___ i, c __ e..(s
             __ c n.. __ hashmap: r.. F..
-            j = b__.bisect_left(hashmap[c], prev)
+            j b__.bisect_left(hashmap[c], prev)
             __ j __ l..(hashmap[c] r.. F..
-            prev = hashmap[c][j]+1
+            prev hashmap[c][j]+1
         r.. T..
     
     ___ isSubsequence_orig  s, t
         _______ b__
-        idx = [[] ___ _ __ r..(256)]
+        idx [[] ___ _ __ r..(256)]
         ___ i, c __ e..(t
             idx[o..(c)].a..(i)
-        prev = 0
+        prev 0
         ___ i, c __ e..(s
             __ idx[o..(c)] __ []: r.. F..
-            j = b__.bisect_left(idx[o..(c)], prev)
+            j b__.bisect_left(idx[o..(c)], prev)
             __ j __ l..(idx[o..(c)] r.. F..
-            prev = idx[o..(c)][j] + 1
+            prev idx[o..(c)][j] + 1
         r.. T..
     
     ___ isSubsequence_slow  s, t
-        i, j = 0, 0
+        i, j 0, 0
         w.... i < l..(s) a.. j < l..(t
             __ s[i] __ t[j]:
                 i+=1
@@ -48,14 +48,14 @@ c_ Solution(o..
             r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             ('abc', 'ahbgdc'),
             ('axc', 'ahbgdc'),
         ]
         ___ s, t __ testCases:
             print('s: %s' % s)
             print('t: %s' % t)
-            result = isSubsequence(s, t)
+            result isSubsequence(s, t)
             print('result: %s' % result)
             print('-='*20+'-')
 

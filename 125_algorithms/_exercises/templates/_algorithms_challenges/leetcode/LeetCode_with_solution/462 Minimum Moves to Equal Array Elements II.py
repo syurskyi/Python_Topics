@@ -24,19 +24,19 @@ element):
 
 c_ Solution:
     ___ pivot  A, lo, hi
-        pivot = lo
-        closed = pivot  # closed == pivot, means no closed set
+        pivot lo
+        closed pivot  # closed == pivot, means no closed set
         ___ i __ r..(lo + 1, hi
             __ A[i] < A[pivot]:
                 closed += 1
-                A[closed], A[i] = A[i], A[closed]
+                A[closed], A[i] A[i], A[closed]
 
-        A[closed], A[pivot] = A[pivot], A[closed]
+        A[closed], A[pivot] A[pivot], A[closed]
         r.. closed  # the pivot index
 
     ___ quick_select  nums, lo, hi, k
         """find k-th (0-indexed)"""
-        pivot = pivot(nums, lo, hi)
+        pivot pivot(nums, lo, hi)
         __ pivot __ k:
             r.. nums[pivot]
         ____ pivot > k:
@@ -57,12 +57,12 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        n = l..(nums)
-        median = quick_select(nums, 0, n, n//2)
+        n l..(nums)
+        median quick_select(nums, 0, n, n//2)
         r.. s.. m..(l.... x: a..(x - median), nums
 
     ___ find_median  nums
-        n = l..(nums)
+        n l..(nums)
         nums.s..()
         r.. nums[n//2]
 
@@ -75,8 +75,8 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        n = l..(nums)
-        avg = r..(s..(nums) / n)
+        n l..(nums)
+        avg r..(s..(nums) / n)
         r.. s.. m..(l.... x: a..(x - avg), nums
 
 

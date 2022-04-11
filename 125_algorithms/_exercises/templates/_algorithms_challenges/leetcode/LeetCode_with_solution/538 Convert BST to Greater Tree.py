@@ -20,9 +20,9 @@ Output: The root of a Greater Tree like this:
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -37,6 +37,6 @@ c_ Solution:
         """stateless walk"""
         __ n.. node:
             r.. cur_sum
-        s = w..(node.right, cur_sum)
+        s w..(node.right, cur_sum)
         node.val += s
         r.. w..(node.left, node.val)

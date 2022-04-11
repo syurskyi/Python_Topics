@@ -29,8 +29,8 @@ c_ Solution:
         __ n.. matrix:
             r.. []
 
-        R, C = l..(matrix), l..(matrix[0])
-        F = [[] ___ _ __ r..(R+C-1)]
+        R, C l..(matrix), l..(matrix[0])
+        F [[] ___ _ __ r..(R+C-1)]
         ___ r __ r..(R
             ___ c __ r..(C
                 F[r+c].a..(matrix[r][c])
@@ -54,11 +54,11 @@ c_ Solution:
         """
         __ n.. matrix:
             r.. []
-        i = 0
-        j = 0
-        inc = T..
+        i 0
+        j 0
+        inc T..
         ret    # list
-        R, C = l..(matrix), l..(matrix[0])
+        R, C l..(matrix), l..(matrix[0])
         w... T...
             ret.a..(matrix[i][j])
             __ i __ R - 1 a.. j __ C - 1:
@@ -67,21 +67,21 @@ c_ Solution:
                 i -_ 1
                 j += 1
                 __ i < 0 o. j >_ C:
-                    inc = F..
+                    inc F..
                     __ i < 0 a.. j < C:
-                        i = 0
+                        i 0
                     ____
                         i += 2
-                        j = C - 1
+                        j C - 1
             ____
                 i += 1
                 j -_ 1
                 __ i >_ R o. j < 0:
-                    inc = T..
+                    inc T..
                     __ j < 0 a.. i < R:
-                        j = 0
+                        j 0
                     ____
-                        i = R - 1
+                        i R - 1
                         j += 2
 
         r.. ret

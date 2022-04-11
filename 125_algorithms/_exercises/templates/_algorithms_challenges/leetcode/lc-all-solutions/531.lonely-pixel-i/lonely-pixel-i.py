@@ -4,8 +4,8 @@ c_ Solution(o..
   
   ___ findLonelyPixel  picture
 
-      col = d..(i..)
-      row = d..(i..)
+      col d..(i..)
+      row d..(i..)
 
       ___ i, r __ e..(picture
         ___ j, pixel __ e..(r

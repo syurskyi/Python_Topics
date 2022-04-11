@@ -11,15 +11,15 @@ c_ Solution(o..
         :rtype: int
         """
         nums.s..()
-        res = f__('inf')
-        n = l..(nums)
+        res f__('inf')
+        n l..(nums)
         ___ i __ r..(n-2
-            j, k = i+1, n-1
+            j, k i+1, n-1
             w.... j < k:
                 tmp  nums[i]+nums[j]+nums[k]
-                diff = a..(tmp-target)
+                diff a..(tmp-target)
                 __ diff < a..(res-target
-                    res = tmp
+                    res tmp
                 __ tmp __ target:
                     r.. target
                 ____ tmp > target:
@@ -29,7 +29,7 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [-1, 2, 1, -4],
                 1,
@@ -38,7 +38,7 @@ c_ Solution(o..
         ___ nums, target __ testCases:
             print('nums: %s' % nums)
             print('target: %s' % target)
-            result = threeSumClosest(nums, target)
+            result threeSumClosest(nums, target)
             print('result: %s' % result)
             print('-='*30+'-')
 

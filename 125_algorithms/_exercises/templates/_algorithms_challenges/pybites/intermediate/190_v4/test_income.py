@@ -2,7 +2,7 @@ _______ p__
 
 ____ income _______ get_income_distribution
 
-EXPECTED = {'High income':  'Aruba',
+EXPECTED {'High income':  'Aruba',
                             'Argentina',
                             'Antigua and Barbuda',
                             'Bahamas, The',

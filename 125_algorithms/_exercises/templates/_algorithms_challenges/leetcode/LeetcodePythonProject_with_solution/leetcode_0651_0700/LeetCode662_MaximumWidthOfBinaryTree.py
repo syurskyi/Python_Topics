@@ -6,9 +6,9 @@ Created on Oct 8, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ widthOfBinaryTree  root
@@ -24,21 +24,21 @@ c_ Solution(o..
             start.a..(order)
             end.a..(order)
         ____
-            end[level] = order
-        cur = end[level]-start[level]+1
-        left = dfs(root.left, level+1, 2*order, start, end)
-        right = dfs(root.right, level+1, 2*order+1, start, end)
+            end[level] order
+        cur end[level]-start[level]+1
+        left dfs(root.left, level+1, 2*order, start, end)
+        right dfs(root.right, level+1, 2*order+1, start, end)
         r.. m..(cur, m..(left, right
     
     ___ test
-        testCases = [
+        testCases [
             TreeNode(1, TreeNode(3, TreeNode(5), TreeNode(3, TreeNode(2, N.., TreeNode(9))),
             TreeNode(1, TreeNode(3, TreeNode(5), TreeNode(3))),
             TreeNode(1, TreeNode(3, TreeNode(5, TreeNode(2,
             TreeNode(1, TreeNode(3, TreeNode(5, TreeNode(6))), TreeNode(2, N.., TreeNode(9, N.., TreeNode(7)))),
         ]
         ___ root __ testCases:
-            result = widthOfBinaryTree(root)
+            result widthOfBinaryTree(root)
             print('result: %s' % result)
             print('-='*30+'-')
 

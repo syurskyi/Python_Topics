@@ -3,9 +3,9 @@ _______ __
 ____ u__.r.. _______ u..
 ____ c.. _______ d..
 
-TMP = __.g.. TMP  /tmp
-DATA = 'battle-table.csv'
-BATTLE_DATA = __.p...j..(TMP, DATA)
+TMP __.g.. TMP  /tmp
+DATA 'battle-table.csv'
+BATTLE_DATA __.p...j..(TMP, DATA)
 __ n.. __.p...i..(BATTLE_DATA
     u..(
         f'https://bites-data.s3.us-east-2.amazonaws.com/{DATA}',
@@ -18,11 +18,11 @@ ___ _create_defeat_mapping
        with keys = attackers / values = who they defeat.
     """
     
-    mapping = d..(s..)
+    mapping d..(s..)
     w__ o.. BATTLE_DATA _ __ f:
-        reader = csv.DictReader(f)
+        reader csv.DictReader(f)
         ___ row __ reader:
-            attacker = row 'Attacker' 
+            attacker row 'Attacker'
 
 
             ___ key,value __ row.i..:
@@ -53,7 +53,7 @@ ___ get_winner(player1, player2, defeat_mapping_ N..
 
        Raise a ValueError if invalid player strings are passed in.
     """
-    defeat_mapping = defeat_mapping o. _create_defeat_mapping()
+    defeat_mapping defeat_mapping o. _create_defeat_mapping()
     # ...
 
 

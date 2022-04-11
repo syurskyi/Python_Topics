@@ -18,8 +18,8 @@ c_ Solution:
         __ n.. nums:
             r.. 0
 
-        dp = [0] * (target + 1)
-        dp[0] = 1
+        dp [0] * (target + 1)
+        dp[0] 1
 
         # if iterate num first, then the answer will become the number of unique set
         # see the last Solution in this file
@@ -46,8 +46,8 @@ c_ Solution:
         __ n.. nums:
             r.. 0
 
-        dp = [-1] * (target + 1)
-        dp[0] = 1
+        dp [-1] * (target + 1)
+        dp[0] 1
         memo_search(nums, target, dp)
         r.. dp[target]
 
@@ -55,7 +55,7 @@ c_ Solution:
         __ dp[remain] > -1:
             r.. dp[remain]
 
-        res = 0
+        res 0
 
         ___ a __ nums:
             __ remain < a:
@@ -63,7 +63,7 @@ c_ Solution:
 
             res += memo_search(nums, remain - a, dp)
 
-        dp[remain] = res
+        dp[remain] res
         r.. res
 
 
@@ -118,8 +118,8 @@ c_ Solution:
         __ n.. nums:
             r.. 0
 
-        dp = [0] * (target + 1)
-        dp[0] = 1
+        dp [0] * (target + 1)
+        dp[0] 1
 
         ___ num __ nums:
             ___ amount __ r..(num, target + 1

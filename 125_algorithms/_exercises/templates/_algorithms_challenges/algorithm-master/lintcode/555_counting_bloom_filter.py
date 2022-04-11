@@ -3,16 +3,16 @@ ____ r__ _______ r..
 
 c_ HashFunc:
     ___ - , cap, seed
-        cap = cap
-        seed = seed
+        cap cap
+        seed seed
 
     ___ hash  key
-        code = 0
+        code 0
         __ n.. key:
             r.. code
 
         ___ char __ key:
-            code = (seed * code + o..(char % cap
+            code (seed * code + o..(char % cap
 
         r.. code
 
@@ -22,9 +22,9 @@ c_ CountingBloomFilter:
         """
         :type k: int
         """
-        CAP = 20000
+        CAP 20000
 
-        bits = [0] * CAP
+        bits [0] * CAP
         hashs    # list
 
         ___ i __ r..(k
@@ -39,7 +39,7 @@ c_ CountingBloomFilter:
         :rtype: None
         """
         ___ f __ hashs:
-            index = f.hash(word)
+            index f.hash(word)
             bits[index] += 1
 
     ___ remove  word
@@ -48,7 +48,7 @@ c_ CountingBloomFilter:
         :rtype: None
         """
         ___ f __ hashs:
-            index = f.hash(word)
+            index f.hash(word)
             bits[index] -_ 1
 
     ___ contains  word
@@ -57,7 +57,7 @@ c_ CountingBloomFilter:
         :rtype: bool
         """
         ___ f __ hashs:
-            index = f.hash(word)
+            index f.hash(word)
             __ bits[index] <_ 0:
                 r.. F..
         r.. T..

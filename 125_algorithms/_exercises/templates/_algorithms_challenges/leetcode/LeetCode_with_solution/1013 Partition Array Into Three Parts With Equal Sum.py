@@ -32,18 +32,18 @@ ____ t___ _______ L..
 
 c_ Solution:
     ___ canThreePartsEqualSum  A: L..[i..]) __ b..:
-        s = s..(A)
+        s s..(A)
         __ s % 3 != 0:
             r.. F..
 
-        target = s // 3
-        count = 0
-        cur_sum = 0
+        target s // 3
+        count 0
+        cur_sum 0
         ___ a __ A:
             cur_sum += a
             __ cur_sum __ target:
                 count += 1
-                cur_sum = 0
+                cur_sum 0
             # elif cur_sum > target:
             #     return False
             # can have negative number 

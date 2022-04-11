@@ -3,10 +3,10 @@ ____ p.. _______ P..
 ____ u__.r.. _______ u..
 _______ j__
 
-filename = "my_code.json"
-url = "https://bites-data.s3.us-east-2.amazonaws.com/{filename}"
+filename "my_code.json"
+url "https://bites-data.s3.us-east-2.amazonaws.com/{filename}"
 tmp  P..(__.g..("TMP", "/tmp"
-json_input_file = tmp / filename
+json_input_file tmp / filename
 
 __ n.. json_input_file.exists
     u..(url.f..(filename=filename), json_input_file)
@@ -17,7 +17,7 @@ ___ get_json_data
         r.. j__.l.. file_in)
 
 
-json_data = get_json_data()
+json_data get_json_data()
 
 
 ___ _make_filename(bite
@@ -26,7 +26,7 @@ ___ _make_filename(bite
 
 
 ___ _write_code(bite
-    outfile = tmp / _make_filename(bite)
+    outfile tmp / _make_filename(bite)
     outfile.write_text(bite 'passing_code' )
 
 

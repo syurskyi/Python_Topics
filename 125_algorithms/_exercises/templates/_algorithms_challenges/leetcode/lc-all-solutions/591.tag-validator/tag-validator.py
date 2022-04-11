@@ -29,9 +29,9 @@ c_ Solution(o..
       __ tag[-1] != ">":
         r.. F..
 
-      tag = tag[1:-1]
+      tag tag[1:-1]
       __ tag[0] __ "/":
-        tag = tag[1:]
+        tag tag[1:]
       __ n.. 1 <_ l..(tag) <_ 9:
         r.. F..
       ___ c __ tag:
@@ -41,9 +41,9 @@ c_ Solution(o..
 
     __ code[0] != "<":
       r.. F..
-    tagLen = 0
+    tagLen 0
     stack    # list
-    i = 0
+    i 0
     w.... i < l..(code
       __ code[i] __ "<":
         __ isCDATATag(i
@@ -57,7 +57,7 @@ c_ Solution(o..
           ____
             r.. F..
         ____
-          token = getTokenStartsAt(i)
+          token getTokenStartsAt(i)
           __ n.. isTag(token
             r.. F..
           __ n.. isClosedTag(token

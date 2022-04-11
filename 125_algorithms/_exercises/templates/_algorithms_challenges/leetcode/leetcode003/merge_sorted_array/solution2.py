@@ -18,19 +18,19 @@ c_ Solution(o..
         :type n: int
         :rtype: void Do not return anything, modify nums1 in-place instead.
         """
-        i = m - 1
-        j = n - 1
-        k = m + n - 1
+        i m - 1
+        j n - 1
+        k m + n - 1
         w.... k >_ 0:
             __ i >_ 0 a.. j >_ 0:
                 __ nums1[i] > nums2[j]:
-                    nums1[k] = nums1[i]
+                    nums1[k] nums1[i]
                     i -_ 1
                 ____
-                    nums1[k] = nums2[j]
+                    nums1[k] nums2[j]
                     j -_ 1
             ____ i < 0:
-                nums1[k] = nums2[j]
+                nums1[k] nums2[j]
                 j -_ 1
             ____
                 _____

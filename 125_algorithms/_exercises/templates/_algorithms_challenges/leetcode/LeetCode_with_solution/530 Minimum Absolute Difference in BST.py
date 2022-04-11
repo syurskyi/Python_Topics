@@ -26,9 +26,9 @@ Note: There are at least two nodes in this BST.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -40,19 +40,19 @@ c_ Solution:
         To optimize:
         recursively pass the min and max, O(n)
         """
-        ret = [f__('inf')]  # keep reference
+        ret [f__('inf')]  # keep reference
         dfs(root, ret)
         r.. ret[0]
 
     ___ dfs  node, ret
         __ n.. node:
             r.. N.., N..
-        left_min, left_max = dfs(node.left, ret)
-        right_min, right_max = dfs(node.right, ret)
+        left_min, left_max dfs(node.left, ret)
+        right_min, right_max dfs(node.right, ret)
         __ left_max:
-            ret[0] = m..(ret[0], a..(node.val - left_max
+            ret[0] m..(ret[0], a..(node.val - left_max
         __ right_min:
-            ret[0] = m..(ret[0], a..(node.val - right_min
-        left_min = left_min o. node.val
-        right_max = right_max o. node.val
+            ret[0] m..(ret[0], a..(node.val - right_min
+        left_min left_min o. node.val
+        right_max right_max o. node.val
         r.. left_min, right_max

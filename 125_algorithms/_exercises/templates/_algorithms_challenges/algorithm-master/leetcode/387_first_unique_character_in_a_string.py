@@ -10,7 +10,7 @@ c_ Solution:
         freq    # dict
 
         ___ c __ s:
-            freq[c] = freq.g.. c, 0) + 1
+            freq[c] freq.g.. c, 0) + 1
 
         ___ i __ r..(l..(s:
             __ freq[s[i]] __ 1:

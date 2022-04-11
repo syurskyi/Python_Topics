@@ -17,8 +17,8 @@ c_ Solution(o..
       __ root:
         p...a..(root.val)
         s -_ root.val
-        left = dfs(root.left, s, p.., res)
-        right = dfs(root.right, s, p.., res)
+        left dfs(root.left, s, p.., res)
+        right dfs(root.right, s, p.., res)
         __ n.. left a.. n.. right a.. s __ 0:
           res.a..(p.. + [])
         p...p.. )

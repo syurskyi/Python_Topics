@@ -18,8 +18,8 @@ c_ CryptoSquare:
 
     @classmethod
     ___ transpose_square(cls, square
-        matrix = [l..(row) ___ row __ square]
-        transposed_matrix = cls.transpose_uneven_matrix(matrix)
+        matrix [l..(row) ___ row __ square]
+        transposed_matrix cls.transpose_uneven_matrix(matrix)
         r.. [''.j..(row) ___ row __ transposed_matrix]
 
     $
@@ -34,7 +34,7 @@ c_ CryptoSquare:
     # https://stackoverflow.com/a/4938130/2813210
     $
     ___ transpose_uneven_matrix(matrix
-        transposed_matrix = l..(i...z__(*matrix
+        transposed_matrix l..(i...z__(*matrix
         # Remove None's
         r.. [[val ___ val __ row __ val __ n.. N..]
                 ___ row __ transposed_matrix]

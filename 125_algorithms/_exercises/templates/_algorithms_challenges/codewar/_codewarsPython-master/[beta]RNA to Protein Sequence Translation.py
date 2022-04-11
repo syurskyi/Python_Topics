@@ -1,4 +1,4 @@
-rnaDict = '''Phenylalanine (F): UUU, UUC
+rnaDict '''Phenylalanine (F): UUU, UUC
 Leucine (L): UUA, UUG, CUU, CUC, CUA, CUG
 Isoleucine (I): AUU, AUC, AUA
 Methionine (M): AUG
@@ -25,13 +25,13 @@ ___ protein(rna
     transDict    # dict
     ___ line __ rnaDict.s..('\n'
         ___ section __ line[line.i.. ':')+1:].r..(' ','').s..(','
-            transDict[section] = __.f..(r'\(+\'?(\w+)',line)[0]
-    codec = ''
+            transDict[section] __.f..(r'\(+\'?(\w+)',line)[0]
+    codec ''
     w.... l..(rna) > 0:
         __ transDict[rna[:3]] __ 'Stop':
             p..
         ____
             codec += transDict[rna[:3]]
-        rna = rna[3:]
+        rna rna[3:]
     r.. codec
 

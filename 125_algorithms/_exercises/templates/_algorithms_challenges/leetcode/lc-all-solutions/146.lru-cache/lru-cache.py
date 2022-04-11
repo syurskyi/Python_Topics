@@ -1,16 +1,16 @@
 c_ L..(o..
   $
   ___ delete(elem
-    elem.prev.next = elem.next
-    elem.next.prev = elem.prev
+    elem.prev.next elem.next
+    elem.next.prev elem.prev
     r.. elem
 
   $
   ___ move(elem, newPrev, newNext
-    elem.prev = newPrev
-    elem.next = newNext
-    newPrev.next = elem
-    newNext.prev = elem
+    elem.prev newPrev
+    elem.next newNext
+    newPrev.next elem
+    newNext.prev elem
 
   $
   ___ a..(head, elem
@@ -22,15 +22,15 @@ c_ L..(o..
 
   $
   ___ initHead(head
-    head.prev = head.next = head
+    head.prev head.next head
 
 
 c_ Node(o..
   ___ - , key, value, head
-    key = key
-    value = value
-    head = head
-    prev = next = N..
+    key key
+    value value
+    head head
+    prev next N..
 
   ___ hit
     L...delete(self)
@@ -43,8 +43,8 @@ c_ LRUCache(o..
     :type capacity: int
     """
     d    # dict
-    cap = capacity
-    head = Node(-1, -1, N..)
+    cap capacity
+    head Node(-1, -1, N..)
     L...initHead(head)
 
   ___ get  key
@@ -67,12 +67,12 @@ c_ LRUCache(o..
 
     __ key __ d:
       d[key].hit()
-      d[key].value = value
+      d[key].value value
     ____
       __ l..(d) >_ cap:
-        oldNode = L...delete(head.next)
+        oldNode L...delete(head.next)
         del d[oldNode.key]
 
-      newNode = Node(key, value, head)
+      newNode Node(key, value, head)
       L...a..(head, newNode)
-      d[key] = newNode
+      d[key] newNode

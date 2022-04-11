@@ -5,7 +5,7 @@ REF: [Direct Algebraic Logic to Reverse Polish Notation](http://blog.csdn.net/sg
 
 
 c_ Solution:
-    P = {
+    P {
         '+': 1,
         '-': 1,
         '*': 2,
@@ -20,7 +20,7 @@ c_ Solution:
         __ n.. E:
             r.. 0
 
-        E = dal2rpn(E)
+        E dal2rpn(E)
 
         """
         for cases like `["(","(","(","(","(",")",")",")",")",")"]`
@@ -92,8 +92,8 @@ c_ Solution:
             the first poped one is base,
             otherwise there is error occurred when '/' and '-'
             """
-            b = stack.p.. )
-            a = stack.p.. )
+            b stack.p.. )
+            a stack.p.. )
 
             __ char __ '+':
                 stack.a..(a + b)

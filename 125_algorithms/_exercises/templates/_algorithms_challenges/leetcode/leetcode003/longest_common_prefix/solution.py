@@ -12,11 +12,11 @@ c_ Solution(o..
         """
         __ n.. strs:
             r.. ""
-        res = strs[0]
+        res strs[0]
         ___ s __ strs[1:]:
-            n = l..(s)
+            n l..(s)
             ___ i, c __ e..(res
                 __ i >_ n o. res[i] != s[i]:
-                    res = res[:i]
+                    res res[:i]
                     _____
         r.. res

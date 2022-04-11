@@ -28,12 +28,12 @@ c_ Solution(o..
             del elem[-1]
     
     ___ test
-        testCases = [
+        testCases [
             (4, 2),
         ]
         ___ n, k __ testCases:
             print('n: %s, k: %s' % (n, k
-            result = combine(n, k)
+            result combine(n, k)
             print('result: %s' % (result
             print('-='*15+'-')
 

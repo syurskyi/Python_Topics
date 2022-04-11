@@ -10,7 +10,7 @@ c_ ExamRoom(o..
         """
         :type N: int
         """
-        rowNum = N
+        rowNum N
         l    # list
 
     ___ seat
@@ -18,14 +18,14 @@ c_ ExamRoom(o..
         :rtype: int
         """
         __ n.. l:
-            res = 0
+            res 0
         ____
-            d, res = l[0], 0
+            d, res l[0], 0
             ___ a, b __ z..(l, l[1:]
                 __ (b-a)//2 > d:
-                    d, res = (b-a)//2, (b+a)//2
+                    d, res (b-a)//2, (b+a)//2
             __ rowNum - 1 - l[-1] > d:
-                res = rowNum-1
+                res rowNum-1
         b__.i.. (l, res)
         r.. res
 

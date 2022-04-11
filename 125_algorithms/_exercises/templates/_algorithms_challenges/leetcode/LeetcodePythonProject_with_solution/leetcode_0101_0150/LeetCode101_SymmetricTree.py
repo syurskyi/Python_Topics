@@ -7,9 +7,9 @@ Created on Jan 31, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ isSymmetricRecursive  root
@@ -47,8 +47,8 @@ c_ Solution(o..
         w.... stack:
             __ l..(stack)%2 != 0:
                 r.. F..
-            right = stack.p.. )
-            left = stack.p.. )
+            right stack.p.. )
+            left stack.p.. )
             __ right.val != left.val:
                 r.. F..
             __ left.left:

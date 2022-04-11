@@ -1,14 +1,14 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution(o..
@@ -23,17 +23,17 @@ c_ Solution(o..
         __ n.. root o. n.. root.left:
             r.. root
 
-        left, right = root.left, root.right
-        root_new = upsideDownBinaryTree(root.left)
-        left.left, left.right = right, root
-        root.left, root.right = N.., N..
+        left, right root.left, root.right
+        root_new upsideDownBinaryTree(root.left)
+        left.left, left.right right, root
+        root.left, root.right N.., N..
         r.. root_new
 
 
 c_ SolutionComplex(o..
     ___ -
-        root = TreeNode(0)
-        cur_new = root
+        root TreeNode(0)
+        cur_new root
 
     ___ upsideDownBinaryTree  root
         """
@@ -58,10 +58,10 @@ c_ SolutionComplex(o..
             r..
 
         __ n.. cur.left:
-            cur_new.val = cur.val
+            cur_new.val cur.val
             r..
 
         traverse(cur.left)
-        __ cur.right: cur_new.left = TreeNode(cur.right.val)
-        cur_new.right = TreeNode(cur.val)
-        cur_new = cur_new.right
+        __ cur.right: cur_new.left TreeNode(cur.right.val)
+        cur_new.right TreeNode(cur.val)
+        cur_new cur_new.right

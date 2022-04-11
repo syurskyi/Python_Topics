@@ -1,4 +1,4 @@
-STAR = '*'
+STAR '*'
 
 ___ gen_rhombus(width
     """Create a generator that yields the rows of a rhombus row
@@ -16,7 +16,7 @@ ___ gen_rhombus(width
          ***
           *
     """
-    stars = [(line * 2 - 1) * '*' ___ line __ r..(width - 1)]
-    stacked = [line.center(l..(stars[-1]), ' ') ___ line __ stars[1:]]
-    stacked_rev = [item ___ item __ r..(stacked)]
+    stars [(line * 2 - 1) * '*' ___ line __ r..(width - 1)]
+    stacked [line.center(l..(stars[-1]), ' ') ___ line __ stars[1:]]
+    stacked_rev [item ___ item __ r..(stacked)]
     r.. stacked + stacked_rev[1:]

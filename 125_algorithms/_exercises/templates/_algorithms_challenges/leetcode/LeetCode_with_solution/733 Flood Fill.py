@@ -36,7 +36,7 @@ The value of each color in image[i][j] and newColor will be an integer in
 [0, 65535].
 """
 ____ t___ _______ L..
-dirs = ((-1, 0), (1, 0), (0, -1), (0, 1
+dirs ((-1, 0), (1, 0), (0, -1), (0, 1
 
 
 c_ Solution:
@@ -46,7 +46,7 @@ c_ Solution:
 
         mistake: corner case image == new color
         """
-        cur_color = image[sr][sc]
+        cur_color image[sr][sc]
         __ cur_color __ newColor:
             r.. image
 
@@ -54,10 +54,10 @@ c_ Solution:
         r.. image
 
     ___ dfs  image, i, j, cur_color, new_color
-        image[i][j] = new_color
-        m, n = l..(image), l..(image[0])
+        image[i][j] new_color
+        m, n l..(image), l..(image[0])
         ___ di, dj __ dirs:
-            I = i + di
-            J = j + dj
+            I i + di
+            J j + dj
             __ 0 <_ I < m a.. 0 <_ J < n a.. image[I][J] __ cur_color:
                 dfs(image, I, J, cur_color, new_color)

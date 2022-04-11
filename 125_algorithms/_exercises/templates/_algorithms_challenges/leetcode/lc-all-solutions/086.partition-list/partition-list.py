@@ -13,17 +13,17 @@ c_ Solution(o..
     """
     __ head __ N..
       r.. N..
-    dummy = ListNode(-1)
-    dummy.next = head
-    sHead = sDummy = ListNode(-1)
-    p = dummy
+    dummy ListNode(-1)
+    dummy.next head
+    sHead sDummy ListNode(-1)
+    p dummy
     w.... p a.. p.next:
       __ p.next.val < x:
-        sDummy.next = p.next
-        p.next = p.next.next
-        sDummy = sDummy.next
+        sDummy.next p.next
+        p.next p.next.next
+        sDummy sDummy.next
       ____
-        p = p.next
+        p p.next
       # if you change p.next then make sure you wouldn't change p in next run
-    sDummy.next = dummy.next
+    sDummy.next dummy.next
     r.. sHead.next

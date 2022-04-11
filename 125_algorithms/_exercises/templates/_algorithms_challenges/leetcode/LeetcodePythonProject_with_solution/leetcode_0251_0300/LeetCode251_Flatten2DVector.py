@@ -6,15 +6,15 @@ Created on Mar 1, 2017
 
 c_ Vector2D(o..
     ___ - , vec2d
-        values = [row ___ row __ vec2d __ row]
-        row = 0
-        col = 0
+        values [row ___ row __ vec2d __ row]
+        row 0
+        col 0
     
     ___ next
-        val = values[row][col]
+        val values[row][col]
         __ col __ l..(values[row])-1:
             row += 1
-            col = 0
+            col 0
         ____
             col += 1
         r.. val

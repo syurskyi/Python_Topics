@@ -12,19 +12,19 @@ c_ Solution(o..
         """
         __ n <_ 0:
             r.. []
-        sumArr = [0]
-        usedColumns = [0]*n
+        sumArr [0]
+        usedColumns [0]*n
         placeQueen(usedColumns, 0, sumArr)
         r.. sumArr[0]
     
     ___ placeQueen  usedColumns, row, sumArr
-        n = l..(usedColumns)
+        n l..(usedColumns)
         __ row __ n:
             sumArr[0] += 1
             r..
         ___ i __ r..(n
             __ isValid(usedColumns, row, i
-                usedColumns[row] = i
+                usedColumns[row] i
                 placeQueen(usedColumns, row+1, sumArr)
     
     ___ isValid  usedColumns, row, col
@@ -39,7 +39,7 @@ c_ Solution(o..
     ___ test
         ___ n __ r..(5
             print('n: %s' % (n
-            result = totalNQueens(n)
+            result totalNQueens(n)
             print('result: %s' % result)
             print('-='*15+'-')
 

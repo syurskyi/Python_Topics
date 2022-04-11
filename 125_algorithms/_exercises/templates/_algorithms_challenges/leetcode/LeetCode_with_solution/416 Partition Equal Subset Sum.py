@@ -25,18 +25,18 @@ c_ Solution:
         __ n.. nums:
             r.. F..
 
-        s = s..(nums)
+        s s..(nums)
         __ s % 2 != 0:
             r.. F..
 
-        target = s // 2
-        d = d..(l....: d..(i..
-        d[0][0] = 1
-        d[0][nums[0]] = 1
+        target s // 2
+        d d..(l....: d..(i..
+        d[0][0] 1
+        d[0][nums[0]] 1
 
         ___ i __ r..(1, l..(nums:
             ___ v __ r..(target + 1
-                d[i][v] = d[i-1][v] + d[i-1][v-nums[i]]
+                d[i][v] d[i-1][v] + d[i-1][v-nums[i]]
 
         r.. any(d[i][target] > 0 ___ i __ r..(l..(nums)))
 
@@ -51,11 +51,11 @@ c_ Solution:
         :rtype: bool
         """
         nums.s..()
-        s = s..(nums)
+        s s..(nums)
         __ s % 2 != 0:
             r.. F..
 
-        target = s // 2
+        target s // 2
         r.. dfs(nums, 0, target)
 
     ___ dfs  nums, idx, target

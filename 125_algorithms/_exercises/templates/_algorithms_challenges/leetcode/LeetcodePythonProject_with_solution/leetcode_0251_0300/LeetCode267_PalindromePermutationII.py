@@ -13,12 +13,12 @@ c_ Solution(o..
         __ n.. s: r.. F..
         hashmap    # dict
         ___ c __ s:
-            hashmap[c] = hashmap.g.. c, 0)+1
-        odd = 0
-        oddVal = ''
+            hashmap[c] hashmap.g.. c, 0)+1
+        odd 0
+        oddVal ''
         ___ key, value __ hashmap.i..:
             __ value%2 != 0:
-                oddVal = key
+                oddVal key
                 odd += 1
         __ l..(s)%2 __ 0:
             __ odd != 0:
@@ -41,14 +41,14 @@ c_ Solution(o..
                 hashmap[c] += 2
     
     ___ test
-        testCases = [
+        testCases [
             'aaabb',
             'abc',
             'aab',
         ]
         ___ s __ testCases:
             print('s: %s' % (s
-            result = generatePalindromes(s)
+            result generatePalindromes(s)
             print('result: %s' % (result
             print('-='*20+'-')
             

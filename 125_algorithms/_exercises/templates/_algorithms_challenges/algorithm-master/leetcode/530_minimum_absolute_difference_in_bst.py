@@ -13,8 +13,8 @@ c_ Solution:
     time: O(n)
     space: O(1)
     """
-    ans = f__('inf')
-    pre = N..
+    ans f__('inf')
+    pre N..
 
     ___ getMinimumDifference  root
         """
@@ -27,9 +27,9 @@ c_ Solution:
         getMinimumDifference(root.left)
 
         __ pre a.. root.val - pre.val < ans:
-            ans = root.val - pre.val
+            ans root.val - pre.val
 
-        pre = root
+        pre root
 
         getMinimumDifference(root.right)
         r.. ans

@@ -11,14 +11,14 @@ Given [1,2],[3,5],[6,7],[8,10],[12,16], insert and merge [4,9] in as [1,2],[3,10
 
 This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 # Definition for an interval.
 c_ Interval(o..
     ___ - , s=0, e=0
-        start = s
-        end = e
+        start s
+        end e
 
     ___ -s
         r.. "[%d, %d]" % (start, end)
@@ -29,12 +29,12 @@ c_ Interval(o..
 
 c_ Solution(o..
     ___ insert  itvls, newItvl
-        s, e = newItvl.start, newItvl.end
-        left = f.. l.... x: x.end < s, itvls)
-        right = f.. l.... x: x.start > e, itvls)
+        s, e newItvl.start, newItvl.end
+        left f.. l.... x: x.end < s, itvls)
+        right f.. l.... x: x.start > e, itvls)
         __ l..(left)+l..(right) != l..(itvls
-            s = m..(s, itvls[l..(left)].start)
-            e = m..(e, itvls[-l..(right)-1].end)
+            s m..(s, itvls[l..(left)].start)
+            e m..(e, itvls[-l..(right)-1].end)
 
         r.. left + [Interval(s, e)] + right
 
@@ -62,11 +62,11 @@ c_ SolutionSlow(o..
         """
         itvls.s..(cmp=l.... a, b: a.start - b.start)
 
-        ret = [itvls[0]]
+        ret [itvls[0]]
         ___ cur __ itvls[1:]:
-            pre = ret[-1]
+            pre ret[-1]
             __ cur.start <_ pre.end:  # overlap
-                pre.end = m..(pre.end, cur.end)
+                pre.end m..(pre.end, cur.end)
             ____
                 ret.a..(cur)
 
@@ -74,8 +74,8 @@ c_ SolutionSlow(o..
 
 
 __ _______ __ _______
-    lst = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]
-    insert = [4, 9]
+    lst [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]
+    insert [4, 9]
     lst_interval    # list
     ___ item __ lst:
         lst_interval.a..(Interval(item[0], item[1]

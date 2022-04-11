@@ -10,12 +10,12 @@ Note:
 Given n will always be valid.
 Try to do this in one pass.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 c_ Solution:
     ___ removeNthFromEnd  head, n
@@ -26,27 +26,27 @@ c_ Solution:
         :return: ListNode, head node
         """
         # construct dummy
-        dummy = ListNode(0)
-        dummy.next = head
+        dummy ListNode(0)
+        dummy.next head
 
         # get length of the linked list
-        length = 0
-        pre = dummy
+        length 0
+        pre dummy
         w.... pre.next:
             length += 1
             pre=pre.next
 
         # find & remove
-        pre = dummy
-        count = 0
+        pre dummy
+        count 0
         w.... pre.next:
-            cur = pre.next
+            cur pre.next
             __ count__length-n:
-                pre.next = cur.next  # remove
+                pre.next cur.next  # remove
                 _____
             ____
                 count += 1
-                pre = pre.next
+                pre pre.next
 
         r.. dummy.next
 

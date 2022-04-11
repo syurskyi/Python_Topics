@@ -13,9 +13,9 @@ c_ Solution:
         ___ c __ r..(expression
             __ stk a.. stk[-1] __ "?":
                 stk.p.. )  # ?
-                first = stk.p.. )
+                first stk.p.. )
                 stk.p.. )  # :
-                second = stk.p.. )
+                second stk.p.. )
                 __ c __ "T":
                     stk.a..(first)
                 ____
@@ -33,11 +33,11 @@ c_ Solution:
 
         can handle multiple digit (not required)
         """
-        n = l..(expression)
+        n l..(expression)
         stk    # list
-        i = n - 1
+        i n - 1
         w.... i >_ 0:
-            j = i
+            j i
             w.... j >_ 0 a.. expression[j] n.. __ (":", "?"
                 j -_ 1
 
@@ -45,11 +45,11 @@ c_ Solution:
                 stk.a..(expression[j+1:i+1])
 
             __ expression[j] __ ":":
-                i = j - 1
+                i j - 1
             ____  # "?"
-                i = j - 1
+                i j - 1
                 __ expression[i] __ "T":
-                    a = stk.p.. )
+                    a stk.p.. )
                     stk.p.. )
                     stk.a..(a)
                     i -_ 1

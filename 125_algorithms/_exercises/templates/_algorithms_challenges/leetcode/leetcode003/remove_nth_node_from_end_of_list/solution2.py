@@ -9,18 +9,18 @@ c_ Solution:
     ___ removeNthFromEnd  head, n
         __ head __ N..
             r.. head
-        h = head
-        p = N..
-        i = 0
+        h head
+        p N..
+        i 0
         w.... head __ n.. N..
             __ i __ n:
-                p = h
+                p h
             ____ i > n:
-                p = p.next
+                p p.next
             i += 1
-            head = head.next
+            head head.next
         __ p __ N..
             r.. h.next
         ____
-            p.next = p.next.next
+            p.next p.next.next
         r.. h

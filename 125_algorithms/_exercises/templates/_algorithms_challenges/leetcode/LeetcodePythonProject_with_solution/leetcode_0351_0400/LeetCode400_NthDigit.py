@@ -6,18 +6,18 @@ Created on Apr 5, 2017
 
 c_ Solution(o..
     ___ findNthDigit  n
-        length, count, start = 1, 9, 1
+        length, count, start 1, 9, 1
         w.... n > length*count:
             n -_ length*count
             length += 1
             count *= 10
             start *= 10
         start += (n-1)//length
-        s = s..(start)
+        s s..(start)
         r.. i..(s[(n-1)%length])
     
     ___ test
-        testCases = [
+        testCases [
             3,
             11,
             250,
@@ -25,7 +25,7 @@ c_ Solution(o..
         ]
         ___ num __ testCases:
             print('num: %s' % num)
-            result = findNthDigit(num)
+            result findNthDigit(num)
             print('result: %s' % result)
             print('-='*20+'-')
 

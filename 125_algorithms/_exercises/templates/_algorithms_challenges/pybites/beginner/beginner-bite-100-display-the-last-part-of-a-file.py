@@ -27,7 +27,7 @@ ___ tail filepath  n
     """Similate Unix' tail -n, read in filepath, parse it into a list,
        strip newlines and return a list of the last n lines"""
     ___
-        fo = o.. filepath, _
+        fo o.. filepath, _
     ______:
         print("problem opening file")
     contents    # list

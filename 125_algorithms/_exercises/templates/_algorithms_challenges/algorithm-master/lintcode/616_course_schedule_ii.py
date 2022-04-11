@@ -10,14 +10,14 @@ c_ Solution:
         __ n.. n:
             r.. ans
 
-        indeg = [0] * n
-        edges = [[] ___ _ __ r..(n)]
+        indeg [0] * n
+        edges [[] ___ _ __ r..(n)]
 
         ___ c, p __ prerequisites:
             indeg[c] += 1
             edges[p].a..(c)
 
-        queue = [c ___ c __ r..(n) __ indeg[c] __ 0]
+        queue [c ___ c __ r..(n) __ indeg[c] __ 0]
 
         ___ p __ queue:
             ___ c __ edges[p]:

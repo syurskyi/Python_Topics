@@ -12,7 +12,7 @@ c_ Solution(o..
         stack    # list
         res    # list
         ___ i __ r..(l..(temperatures)-1, -1, -1
-            t = temperatures[i]
+            t temperatures[i]
             w.... stack a.. temperatures[stack[-1]] <_ t:
                 stack.p.. )
             __ n.. stack:
@@ -23,12 +23,12 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [73, 74, 75, 71, 69, 72, 76, 73],
         ]
         ___ temperatures __ testCases:
             print('temperatures: %s' % temperatures)
-            result = dailyTemperatures(temperatures)
+            result dailyTemperatures(temperatures)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -7,12 +7,12 @@ You must do this in-place without altering the nodes' values.
 For example,
 Given {1,2,3,4}, reorder it to {1,4,2,3}.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
     ___  -r
         r.. r.. (val)
@@ -23,34 +23,34 @@ c_ Solution:
         :param head: ListNode
         :return: nothing
         """
-        dummy_head = ListNode(0)
-        dummy_head.next = head
+        dummy_head ListNode(0)
+        dummy_head.next head
 
-        pre_cur = dummy_head
+        pre_cur dummy_head
         w....(pre_cur a.. pre_cur.next
             # find last
-            pre_last = pre_cur.next
+            pre_last pre_cur.next
             __ pre_last.next __ N..
                 r..
             w....(pre_last.next.next
-                pre_last = pre_last.next
+                pre_last pre_last.next
 
-            last = pre_last.next
+            last pre_last.next
 
             # shift
-            cur = pre_cur.next
-            cur_next = cur.next
+            cur pre_cur.next
+            cur_next cur.next
             __ cur_next!= last a.. cur!= last:
-                cur.next = last
-                last.next = cur_next
+                cur.next last
+                last.next cur_next
                 # fix last
-                pre_last.next = N..
+                pre_last.next N..
 
             __ cur_next a.. cur_next.next__last:
-                cur_next.next = N..
+                cur_next.next N..
 
 
-            pre_cur = pre_cur.next.next
+            pre_cur pre_cur.next.next
 
     ___ reorderList_array  head
         """
@@ -59,13 +59,13 @@ c_ Solution:
         relies on additional data structure 
         """
         lst    # list
-        cur = head
+        cur head
         w....(cur
             lst.a..(cur)
-            cur = cur.next
+            cur cur.next
 
-        lst1 = lst[:l..(lst)/2]
-        lst2 = lst[l..(lst)/2:]
+        lst1 lst[:l..(lst)/2]
+        lst2 lst[l..(lst)/2:]
         lst2.r..
 
         lst    # list
@@ -78,9 +78,9 @@ c_ Solution:
 
         ___ i __ r..(l..(lst:
             ___
-                lst[i].next = lst[i+1]
+                lst[i].next lst[i+1]
             ______ I..
-                lst[i].next = N..
+                lst[i].next N..
 
     ___ reorderList  head
         """
@@ -93,31 +93,31 @@ c_ Solution:
         """
         __ n.. head:
             r..
-        dummy = ListNode(0)
-        dummy.next = head
+        dummy ListNode(0)
+        dummy.next head
 
         # find the mid point
-        slow_pre = dummy
-        fast_pre = dummy
+        slow_pre dummy
+        fast_pre dummy
         w.... fast_pre.next a.. fast_pre.next.next:
-            fast_pre = fast_pre.next
-            fast_pre = fast_pre.next
-            slow_pre = slow_pre.next
+            fast_pre fast_pre.next
+            fast_pre fast_pre.next
+            slow_pre slow_pre.next
 
         # reverse the 2nd half, pre & cur
-        mid = slow_pre.next
+        mid slow_pre.next
 
-        pre = mid
-        cur = pre.next
+        pre mid
+        cur pre.next
         w.... pre a.. cur:  # problem reduction
-            cur.next, pre, cur = pre, cur, cur.next
-        mid.next = N..
+            cur.next, pre, cur pre, cur, cur.next
+        mid.next N..
 
         # merge
-        last = pre
-        cur = dummy.next
+        last pre
+        cur dummy.next
         w.... cur!=mid a.. last!=mid:
-            cur.next, last.next, last, cur = last, cur.next, last.next, cur.next
+            cur.next, last.next, last, cur last, cur.next, last.next, cur.next
 
 
 
@@ -127,14 +127,14 @@ c_ Solution:
 
 
 __ _____ __ ____
-    length = 2
-    lst = [ListNode(i+1) ___ i __ r..(length)]
+    length 2
+    lst [ListNode(i+1) ___ i __ r..(length)]
     ___ i __ r..(length-1
-        lst[i].next = lst[i+1]
+        lst[i].next lst[i+1]
 
     Solution().reorderList(lst[0])
 
-    cur = lst[0]
+    cur lst[0]
     w....(cur
         print cur.val
-        cur = cur.next
+        cur cur.next

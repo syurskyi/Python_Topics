@@ -15,8 +15,8 @@ c_ Solution(o..
           needle: |       n       |
         haystack: |   n - m   | m |
         """
-        n = l..(haystack)
-        m = l..(needle)
+        n l..(haystack)
+        m l..(needle)
         ___ i __ r..(n + 1 - m
             ___ k __ r..(m
                 __ haystack[i + k] != needle[k]:

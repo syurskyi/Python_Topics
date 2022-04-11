@@ -9,23 +9,23 @@ c_ Solution(o..
         :type words: List[str]
         :rtype: int
         """
-        hashset = s..(words)
+        hashset s..(words)
         ___ word __ words:
             ___ i __ r..(1, l..(word:
                 hashset.discard(word[i:])
-        res = 0
+        res 0
         ___ word __ hashset:
             res += l..(word)+1
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             ["time", "me", "bell"],
             ["me", "time"],
         ]
         ___ words __ testCases:
             print('words: %s' % words)
-            result = minimumLengthEncoding(words)
+            result minimumLengthEncoding(words)
             print('result: %s' % result)
             print('-='*30+'-')
 

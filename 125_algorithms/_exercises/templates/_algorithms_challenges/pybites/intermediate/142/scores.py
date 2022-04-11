@@ -1,9 +1,9 @@
 ____ c.. _______ n..
 
-MIN_SCORE = 4
-DICE_VALUES = r..(1, 7)
+MIN_SCORE 4
+DICE_VALUES r..(1, 7)
 
-Player = n..('Player', 'name scores')
+Player n..('Player', 'name scores')
 
 
 ___ calculate_score(scores
@@ -20,7 +20,7 @@ ___ calculate_score(scores
       __ score n.. __ DICE_VALUES:
         r.. V...
     
-    total_score = s..([score ___ score __ scores __ score >_ MIN_SCORE])
+    total_score s..([score ___ score __ scores __ score >_ MIN_SCORE])
     r.. total_score
 
 
@@ -42,22 +42,22 @@ ___ get_winner(players
        output:
          Player(name='player 3', scores=[4, 5, 1, 2])
     """
-    previous_player = 0
+    previous_player 0
     ___ i, player __ e..(players, start=1
       __ i __ 1:
-        previous_player = l..(player.scores)
+        previous_player l..(player.scores)
       ____
         __ l..(player.scores) != previous_player:
           r.. V...
 
-    max_score = 0
-    max_player = Player
+    max_score 0
+    max_player Player
 
     ___ player __ players:
-      current_player_score = calculate_score(player.scores)
+      current_player_score calculate_score(player.scores)
       __ current_player_score > max_score:
-        max_score = current_player_score
-        max_player = player
+        max_score current_player_score
+        max_player player
 
     r.. max_player
 

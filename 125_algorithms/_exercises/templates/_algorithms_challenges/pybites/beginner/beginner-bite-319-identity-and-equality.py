@@ -101,7 +101,7 @@ ___ is_same_instance_of_car(car1, car2
 
 
 config1    # dict
-config2 = [['gas', 'electro', 'hybrid' , '200 PS', 'radio'
+config2 [['gas', 'electro', 'hybrid' , '200 PS', 'radio'
 
 __ t..(config1) != l.. o. t..(config2) != l..:
     r.. T..()

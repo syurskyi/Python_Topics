@@ -4,7 +4,7 @@ ____ dataclasses _______ dataclass, field
 ____ s__ _______ punctuation
 ____ t___ _______ L.., S.., Tuple
 
-STOPWORDS: s.. = {
+STOPWORDS: s.. {
     "she's", "wasn", "through", "won", "that'll", "his", "once", "this",
     "you", "ll", "has", "because", "m", "ours", "doing", "any", "aren't",
     "they", "shouldn't", "being", "out", "is", "our", "it", "don", "had",
@@ -27,7 +27,7 @@ STOPWORDS: s.. = {
     "doesn't", "only", "him", "mightn", "be", "mightn't", "a", "how", "no",
     "there", "that", "so", "we", "same", "mustn", "wasn't", "shouldn", "own",
 }
-GETTYSBURG: s.. = """Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+GETTYSBURG: s.. """Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
 
 Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.
 
@@ -40,13 +40,13 @@ c_ Corpora:
     will get this working as described in the bite's description.
     """
     txt: s..
-    count: i.. = 5
-    tag: s.. = '#'
-    extra: L..[s..] = field(default_factory=l..)
-    stopwords: S..[s..] = field(init=F..)
+    count: i.. 5
+    tag: s.. '#'
+    extra: L..[s..] field(default_factory=l..)
+    stopwords: S..[s..] field(init=F..)
 
     ___ __post_init__
-        stopwords = STOPWORDS
+        stopwords STOPWORDS
 
     $
     ___ cleaned(self) __ s..:
@@ -59,9 +59,9 @@ c_ Corpora:
         :param txt: Corpus of text
         :return: cleaned up corpus
         """
-        text = ''.j..(c ___ c __ txt.l.. __ c n.. __ punctuation)
+        text ''.j..(c ___ c __ txt.l.. __ c n.. __ punctuation)
         ___ x __ extra:
-            text = __.sub(x, ' ', text)
+            text __.sub(x, ' ', text)
         r.. text
 
     $
@@ -74,8 +74,8 @@ c_ Corpora:
 
         :return: List of tuples, i.e. ("word", count)
         """
-        wordlist = [word ___ word __ cleaned.s..  __ n.. word __ stopwords]
-        metrics = C..(wordlist)
+        wordlist [word ___ word __ cleaned.s..  __ n.. word __ stopwords]
+        metrics C..(wordlist)
 
         r.. metrics.most_common(count)
 

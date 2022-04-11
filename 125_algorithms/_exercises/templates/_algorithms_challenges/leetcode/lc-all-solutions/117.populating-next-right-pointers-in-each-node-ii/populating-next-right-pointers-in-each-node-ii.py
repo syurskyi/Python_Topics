@@ -10,23 +10,23 @@ c_ Solution:
   # @param root, a tree link node
   # @return nothing
   ___ connect  root
-    p = root
-    pre = N..
-    head = N..
+    p root
+    pre N..
+    head N..
     w.... p:
       __ p.left:
         __ pre:
-          pre.next = p.left
-        pre = p.left
+          pre.next p.left
+        pre p.left
       __ p.right:
         __ pre:
-          pre.next = p.right
-        pre = p.right
+          pre.next p.right
+        pre p.right
       __ n.. head:
-        head = p.left o. p.right
+        head p.left o. p.right
       __ p.next:
-        p = p.next
+        p p.next
       ____
-        p = head
-        head = N..
-        pre = N..
+        p head
+        head N..
+        pre N..

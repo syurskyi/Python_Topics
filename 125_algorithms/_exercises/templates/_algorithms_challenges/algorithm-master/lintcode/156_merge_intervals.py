@@ -23,6 +23,6 @@ c_ Solution:
             __ n.. ans o. intv.start > ans[-1].end:
                 ans.a..(intv)
             ____ intv.end > ans[-1].end:
-                ans[-1].end = intv.end
+                ans[-1].end intv.end
 
         r.. ans

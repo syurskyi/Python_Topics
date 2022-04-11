@@ -2,7 +2,7 @@ _______ p__
 
 ____ survivors _______ filter_killed_mutants, _get_data
 
-EXPECTED_OUTPUT = """
+EXPECTED_OUTPUT """
 [*] Start mutation process:
    - targets: account
    - tests: /tmp/test_account.py
@@ -89,7 +89,7 @@ EXPECTED_OUTPUT = """
    - timeout: 0 (0.0%)
 [*] Coverage: 240 of 240 AST nodes (100.0%)
 """
-EXPECTED_OUTPUT_WITH_GAP = """
+EXPECTED_OUTPUT_WITH_GAP """
 [*] Start mutation process:
    - targets: account
    - tests: /tmp/test_account.py
@@ -172,20 +172,20 @@ ___ actual2
     """Same output but filter out test 10 (killed) and 11 (survived),
        to avoid the hardcoded output gets returned from function
     """
-    mutpy_output = _get_data()
-    test10 = mutpy_output.i.. '   - [#  10] CRP account:')
-    test12 = mutpy_output.i.. '   - [#  12] CRP account:')
-    output = mutpy_output[:test10] + mutpy_output[test12:]
+    mutpy_output _get_data()
+    test10 mutpy_output.i.. '   - [#  10] CRP account:')
+    test12 mutpy_output.i.. '   - [#  12] CRP account:')
+    output mutpy_output[:test10] + mutpy_output[test12:]
     r.. [line.r..() ___ line __ filter_killed_mutants ? ]
 
 
 ___ test_output_matches(a..
-    e.. = [line.r..() ___ line __
+    e.. [line.r..() ___ line __
                 EXPECTED_OUTPUT.s...s.. ]
     ... a.. __ e..
 
 
 ___ test_different_output(actual2
-    e.. = [line.r..() ___ line __
+    e.. [line.r..() ___ line __
                 EXPECTED_OUTPUT_WITH_GAP.s...s.. ]
     ... actual2 __ e..

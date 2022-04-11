@@ -3,8 +3,8 @@ ____ d__ _______ date
 
 _______ p.... __ pd
 
-DATA_FILE = "https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv"
-STATION = n..("Station", "ID Date Value")
+DATA_FILE "https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv"
+STATION n..("Station", "ID Date Value")
 
 # df = pd.read_csv(DATA_FILE, parse_dates=['Date'])
 
@@ -30,8 +30,8 @@ ___ prep_dfs(df
     df 'Day'  = df.Date.dt.day
 
     # separate data by date--2015 by itself
-    df_ref = df[df.Date.dt.year != 2015]
-    df_15 = df[df.Date.dt.year __ 2015]
+    df_ref df[df.Date.dt.year != 2015]
+    df_15 df[df.Date.dt.year __ 2015]
 
     r.. df_ref, df_15
 
@@ -40,9 +40,9 @@ ___ historical_records(df, element
     '''Returns a DF of maximum (or min) temps for each day for each station
     element determines which to get. Possible values are 'TMIN' or 'TMAX'
     '''
-    fun = 'min' __ element __ 'TMIN' ____ 'max'
-    df = df[df.Element __ element]
-    records = df.groupby( 'Month', 'Day', 'ID' ).agg({'Data_Value': fun})
+    fun 'min' __ element __ 'TMIN' ____ 'max'
+    df df[df.Element __ element]
+    records df.groupby( 'Month', 'Day', 'ID' ).agg({'Data_Value': fun})
     r.. records.reset_index()
 
 
@@ -54,7 +54,7 @@ ___ merge_reduced(df1, df2
 
 ___ series_to_station(ser
     '''Creates a STATION tuple created from fields in pd.Series ser'''
-    station = STATION(?.ID,
+    station STATION(?.ID,
                       date(?.Date.year, ?.Date.month, ?.Date.day),
                       ?.Data_Value_15/10,
                       )
@@ -70,31 +70,31 @@ ___ high_low_record_breakers_for_2015
     provided.
 
     """
-    df = pd.read_csv(DATA_FILE, parse_dates= 'Date' )
+    df pd.read_csv(DATA_FILE, parse_dates= 'Date' )
 
-    df_ref, df_15 = prep_dfs(df)
+    df_ref, df_15 prep_dfs(df)
 
     # get the historical records (hi/low)
-    lows = historical_records(df_ref, 'TMIN')
-    highs = historical_records(df_ref, 'TMAX')
+    lows historical_records(df_ref, 'TMIN')
+    highs historical_records(df_ref, 'TMAX')
 
     # get the hi/low for 2015
-    lows_15 = df_15[df_15.Element __ 'TMIN' 
-    highs_15 = df_15[df_15.Element __ 'TMAX' 
+    lows_15 df_15[df_15.Element __ 'TMIN'
+    highs_15 df_15[df_15.Element __ 'TMAX'
 
     # merge reduced DFs based on month, day, ID for comparison
-    lowmg = merge_reduced(lows, lows_15)
-    highmg = merge_reduced(highs, highs_15)
+    lowmg merge_reduced(lows, lows_15)
+    highmg merge_reduced(highs, highs_15)
 
     # Record breakers
-    rb_low = lowmg[lowmg.Data_Value_15 < lowmg.Data_Value_hist]
-    rb_high = highmg[highmg.Data_Value_15 > highmg.Data_Value_hist]
+    rb_low lowmg[lowmg.Data_Value_15 < lowmg.Data_Value_hist]
+    rb_high highmg[highmg.Data_Value_15 > highmg.Data_Value_hist]
 
     # Get the min and max record breakers (these are series)
-    rec_low = rb_low[rb_low.Data_Value_15 __ rb_low.Data_Value_15.m..()],i..[0]
-    rec_high = rb_high[rb_high.Data_Value_15 __ rb_high.Data_Value_15.m..()],i..[0]
+    rec_low rb_low[rb_low.Data_Value_15 __ rb_low.Data_Value_15.m..()],i..[0]
+    rec_high rb_high[rb_high.Data_Value_15 __ rb_high.Data_Value_15.m..()],i..[0]
 
-    high = series_to_station(rec_high)
-    low = series_to_station(rec_low)
+    high series_to_station(rec_high)
+    low series_to_station(rec_low)
 
     r.. high, low

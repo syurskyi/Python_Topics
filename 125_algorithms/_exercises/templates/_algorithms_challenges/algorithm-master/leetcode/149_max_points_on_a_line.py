@@ -11,37 +11,37 @@ c_ Solution:
         :type P: List[Point]
         :rtype: int
         """
-        ans = 0
+        ans 0
         __ n.. P:
             r.. ans
 
-        n = l..(P)
+        n l..(P)
         __ n <_ 2:
             r.. n
 
         ___ i __ r..(n
             S    # dict
-            points = dups = 0
+            points dups 0
             ___ j __ r..(i + 1, n
-                dx = P[i].x - P[j].x
-                dy = P[i].y - P[j].y
+                dx P[i].x - P[j].x
+                dy P[i].y - P[j].y
                 __ dx __ 0 a.. dy __ 0:
                     dups += 1
                     _____
 
-                gcd = get_gcd(dx, dy)
+                gcd get_gcd(dx, dy)
                 __ gcd:
                     dx //= gcd
                     dy //= gcd
 
-                key = (dx, dy)
-                S[key] = S.g.. key, 0) + 1
+                key (dx, dy)
+                S[key] S.g.. key, 0) + 1
 
                 __ S[key] > points:
-                    points = S[key]
+                    points S[key]
 
             __ points + dups + 1 > ans:
-                ans = points + dups + 1
+                ans points + dups + 1
 
         r.. ans
 

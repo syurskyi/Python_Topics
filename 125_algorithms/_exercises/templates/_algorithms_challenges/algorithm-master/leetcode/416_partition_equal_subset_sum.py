@@ -15,20 +15,20 @@ c_ Solution:
         __ n.. nums:
             r.. T..
 
-        target = s..(nums)
+        target s..(nums)
 
         __ target & 1 __ 1:
             r.. F..
 
         target //= 2
-        dp = [F..] * (target + 1)
-        dp[0] = T..
+        dp [F..] * (target + 1)
+        dp[0] T..
 
         ___ a __ nums:
             ___ s __ r..(target, a - 1, -1
                 __ dp[s]:
                     _____
 
-                dp[s] = dp[s - a]
+                dp[s] dp[s - a]
 
         r.. dp[target]

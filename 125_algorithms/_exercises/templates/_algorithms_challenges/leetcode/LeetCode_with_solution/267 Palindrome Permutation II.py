@@ -5,7 +5,7 @@ https://leetcode.com/problems/palindrome-permutation-ii/
 ____ c.. _______ d..
 
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -14,21 +14,21 @@ c_ Solution(o..
         :type s: str
         :rtype: List[str]
         """
-        m = d..(i..)
+        m d..(i..)
         ___ c __ s:
             m[c] += 1
 
-        odd = N..
+        odd N..
         ___ k, v __ m.i..:
             __ v % 2 __ 1:
                 __ odd __ n.. N..
                     r.. []
-                odd = k
+                odd k
 
-        cur = ""
+        cur ""
         __ odd:
             m[odd] -_ 1
-            cur = odd
+            cur odd
 
         ret    # list
         # actually only need to build half

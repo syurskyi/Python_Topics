@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 ___ read4(buf
@@ -27,16 +27,16 @@ c_ Solution(o..
         :type n: Maximum number of characters to read (int)
         :rtype: The number of characters read (int)
         """
-        idx = 0
+        idx 0
         w.... idx < n:
-            buf4 = ["" ___ _ __ x..(4)]
-            r = read4(buf4)
+            buf4 ["" ___ _ __ x..(4)]
+            r read4(buf4)
             __ idx+r < n:
-                buf[idx:idx+r] = buf4[:r]
+                buf[idx:idx+r] buf4[:r]
                 idx += r
                 __ r < 4: _____
             ____
-                buf[idx:n] = buf4 |?-idx]
-                idx = n
+                buf[idx:n] buf4 |?-idx]
+                idx n
 
         r.. idx

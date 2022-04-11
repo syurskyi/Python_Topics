@@ -1,7 +1,7 @@
 _______ r__
 
-MAX_GUESSES = 5
-START, END = 1, 20
+MAX_GUESSES 5
+START, END 1, 20
 
 
 ___ get_random_number
@@ -14,9 +14,9 @@ c_ Game:
 
     ___ -
         """Init _guesses, _answer, _win to set(), get_random_number(), False"""
-        _guesses = s..()
-        _answer = get_random_number()
-        _win = F..
+        _guesses s..()
+        _answer get_random_number()
+        _win F..
 
     ___ guess
         """Ask user for input, convert to int, raise ValueError outputting
@@ -26,14 +26,14 @@ c_ Game:
            'Number not in range'
            'Already guessed'
            If all good, return the int"""
-        guess = input('Your guess: ')
+        guess input('Your guess: ')
         __ n.. guess:
             print('Please enter a number')
             r.. V...('Nothing entered')
         __ n.. a..(c.i.. ___ c __ s..(guess:
             print('Should be a number')
             r.. V...('Non-digit entered')
-        guess = i..(guess)
+        guess i..(guess)
         __ n.. (START <_ guess <_ END
             print('Number not in range')
             r.. V...('Out of range')
@@ -63,16 +63,16 @@ c_ Game:
            see the tests for the exact win/lose messaging"""
         w.... l..(_guesses) < MAX_GUESSES a.. n.. _win:
             ___
-                this_guess = guess()
+                this_guess guess()
             ______ V..
                 _____
             __ _validate_guess(this_guess
-                _win = T..
+                _win T..
                 r..
         print _*Guessed {MAX_GUESSES} times, answer was {_answer}')
         r..
 
 
 __ _____ __ _____
-    game = Game()
+    game Game()
     game()

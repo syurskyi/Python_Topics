@@ -12,14 +12,14 @@ c_ Solution(o..
         :type ops: List[List[int]]
         :rtype: int
         """
-        minA, minB = f__('inf'), f__('inf')
+        minA, minB f__('inf'), f__('inf')
         ___ a, b __ ops:
-            minA = m..(minA, a)
-            minB = m..(minB, b)
+            minA m..(minA, a)
+            minB m..(minB, b)
         r.. m..(minA, m)*m..(minB, n)
     
     ___ test
-        testCases = [
+        testCases [
             
         ]
         

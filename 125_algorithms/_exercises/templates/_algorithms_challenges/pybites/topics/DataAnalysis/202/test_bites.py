@@ -5,9 +5,9 @@ _______ p__
 
 ____ bites _______ get_most_complex_bites
 
-TMP = P..('/tmp')
-BITES_CSV = TMP / 'intro_bites.csv'
-INTRO_BITE_STATS = """Bite;Difficulty
+TMP P..('/tmp')
+BITES_CSV TMP / 'intro_bites.csv'
+INTRO_BITE_STATS """Bite;Difficulty
 Bite 101. f-strings and a simple if/else;3.52
 Bite 102. Infinite loop, input, continue and break;3.59
 Bite 103. Loop through a dictionary and pluralise a word;3.21
@@ -35,9 +35,9 @@ ___ intro_bites
     (10,  '88', '31', '50', '90', '179', '98', '190', '42', '69', '40' ),
 ])
 ___ test_different_args_for_N(N, e..
-    a.. = get_most_complex_bites(N)
+    a.. get_most_complex_bites(N)
     # str or int for IDs is fine with us
-    a.. = [s..(i) ___ i __ a..]
+    a.. [s..(i) ___ i __ a..]
     ... a.. __ e..
 
 """

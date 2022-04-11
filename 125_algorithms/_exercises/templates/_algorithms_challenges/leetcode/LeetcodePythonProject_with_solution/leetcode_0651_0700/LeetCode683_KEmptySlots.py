@@ -11,23 +11,23 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. flowers: r.. -1
-        n = l..(flowers)
-        days = [F..]*n
+        n l..(flowers)
+        days [F..]*n
         ___ i __ r..(n
-            days[flowers[i]-1] = i+1
-        left, right = 0, k+1
-        res = f__('inf')
+            days[flowers[i]-1] i+1
+        left, right 0, k+1
+        res f__('inf')
         ___ i __ r..(n
             __ right >_ n: _____
             __ days[i] __ days[right] a.. i __ right:
-                res = m..(res, m..(days[left], days[right]
+                res m..(res, m..(days[left], days[right]
             __ days[i] < days[left] o. days[i] < days[right]:
-                left = i
-                right = k+1+i
+                left i
+                right k+1+i
         r.. res __ res != f__('inf') ____ -1
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1, 3, 2],
                 1,
@@ -44,7 +44,7 @@ c_ Solution(o..
         ___ flowers, k __ testCases:
             print('flowers: %s' % flowers)
             print('k: %s' % k)
-            result = kEmptySlots(flowers, k)
+            result kEmptySlots(flowers, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

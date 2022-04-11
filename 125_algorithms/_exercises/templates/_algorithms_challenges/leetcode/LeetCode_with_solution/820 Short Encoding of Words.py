@@ -38,11 +38,11 @@ c_ Solution:
         root    # dict
         ends    # list
         ___ word __ s..(words
-            cur = root
+            cur root
             ___ c __ word ||-1
-                nxt = cur.g.. c, {})
-                cur[c] = nxt
-                cur = nxt
+                nxt cur.g.. c, {})
+                cur[c] nxt
+                cur nxt
 
             ends.a..((cur, l..(word)))
 

@@ -25,14 +25,14 @@ The final answer is guaranteed to be less than 2^31.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ -
-        ret = 0
+        ret 0
 
     ___ rangeSumBST  root: TreeNode, L: i.., R: i..) __ i..:
         """

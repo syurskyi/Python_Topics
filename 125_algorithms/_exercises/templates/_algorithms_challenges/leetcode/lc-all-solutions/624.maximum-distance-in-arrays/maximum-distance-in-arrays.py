@@ -5,37 +5,37 @@ c_ Solution(o..
     :type arrays: List[List[int]]
     :rtype: int
     """
-    n = l..(arrays)
+    n l..(arrays)
     minArray, maxArray    # list, []
     ___ i __ r..(n
       minArray.a..(arrays[i][0])
       maxArray.a..(arrays[i][-1])
-    lMax = [maxArray[0]] * n
-    rMax = [maxArray[-1]] * n
-    ans = f__("-inf")
+    lMax [maxArray[0]] * n
+    rMax [maxArray[-1]] * n
+    ans f__("-inf")
     ___ i __ r..(1, n
-      lMax[i] = m..(lMax[i - 1], maxArray[i])
+      lMax[i] m..(lMax[i - 1], maxArray[i])
     ___ i __ r..(r..(0, n - 1:
-      rMax[i] = m..(rMax[i + 1], maxArray[i])
+      rMax[i] m..(rMax[i + 1], maxArray[i])
     ___ i __ r..(n
       __ 0 < i < n - 1:
-        ans = m..(ans, a..(m..(lMax[i - 1], rMax[i + 1]) - minArray[i]
+        ans m..(ans, a..(m..(lMax[i - 1], rMax[i + 1]) - minArray[i]
       ____ i __ 0:
-        ans = m..(ans, a..(rMax[i + 1] - minArray[i]
+        ans m..(ans, a..(rMax[i + 1] - minArray[i]
       ____
-        ans = m..(ans, a..(lMax[i - 1] - minArray[i]
+        ans m..(ans, a..(lMax[i - 1] - minArray[i]
     r.. ans
 
   # one pass
   ___ maxDistance  arrays
-    n = l..(arrays)
-    minNum = arrays[0][0]
-    maxNum = arrays[0][-1]
-    ans = f__("-inf")
+    n l..(arrays)
+    minNum arrays[0][0]
+    maxNum arrays[0][-1]
+    ans f__("-inf")
     ___ i __ r..(1, n
-      head = arrays[i][0]
-      tail = arrays[i][-1]
-      ans = m..(ans, a..(tail - minNum), a..(head - maxNum
-      minNum = m..(head, minNum)
-      maxNum = m..(tail, maxNum)
+      head arrays[i][0]
+      tail arrays[i][-1]
+      ans m..(ans, a..(tail - minNum), a..(head - maxNum
+      minNum m..(head, minNum)
+      maxNum m..(tail, maxNum)
     r.. ans

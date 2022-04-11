@@ -5,7 +5,7 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 one share of the stock multiple times). However, you may not engage in multiple transactions at the same time (ie, you
 must sell the stock before you buy again).
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -27,7 +27,7 @@ c_ Solution:
             delta_prices.a..(prices[i]-prices[i-1])
 
         # O(n)
-        profit = 0
+        profit 0
         ___ i __ x..(l..(delta_prices:
             __ delta_prices[i] > 0:
                 profit += delta_prices[i]

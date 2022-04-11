@@ -74,29 +74,29 @@ c_ Solution:
         < ^ > V four directions
         Let F[i][j][k] be the number of consecutive 1 including G[i][j] it self
         """
-        G = [[1 ___ _ __ r..(N)] ___ _ __ r..(N)]
+        G [[1 ___ _ __ r..(N)] ___ _ __ r..(N)]
         ___ i, j __ mines:
-            G[i][j] = 0
+            G[i][j] 0
 
-        F = [[[G[i][j] ___ _ __ r..(4)] ___ j __ r..(N)] ___ i __ r..(N)]
+        F [[[G[i][j] ___ _ __ r..(4)] ___ j __ r..(N)] ___ i __ r..(N)]
         ___ i __ r..(N
             ___ j __ r..(N
                 __ j - 1 >_ 0 a.. G[i][j] __ 1:
-                    F[i][j][0] = F[i][j-1][0] + 1
+                    F[i][j][0] F[i][j-1][0] + 1
                 __ i - 1 >_ 0 a.. G[i][j] __ 1:
-                    F[i][j][1] = F[i-1][j][1] + 1
+                    F[i][j][1] F[i-1][j][1] + 1
 
         ___ i __ r..(N-1, -1, -1
             ___ j __ r..(N-1, -1, -1
                 __ j + 1 < N a.. G[i][j] __ 1:
-                    F[i][j][2] = F[i][j+1][2] + 1
+                    F[i][j][2] F[i][j+1][2] + 1
                 __ i + 1 < N a.. G[i][j] __ 1:
-                    F[i][j][3] = F[i+1][j][3] + 1
+                    F[i][j][3] F[i+1][j][3] + 1
 
-        ret = 0
+        ret 0
         ___ i __ r..(N
             ___ j __ r..(N
-                ret = m..(ret, m..(F[i][j]
+                ret m..(ret, m..(F[i][j]
 
         r.. ret
 

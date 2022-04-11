@@ -15,9 +15,9 @@ c_ Solution:
             ans.a..('-')
 
         __ a < 0:
-            a = -a
+            a -a
         __ b < 0:
-            b = -b
+            b -b
 
         ans.a..(s..(a // b
 
@@ -26,7 +26,7 @@ c_ Solution:
             r.. ''.j..(ans)
 
         ans.a..('.')
-        D = {a: l..(ans)}  # the index of first occurrence of `a`
+        D {a: l..(ans)}  # the index of first occurrence of `a`
         w.... a:
             a *= 10
             ans.a..(s..(a // b
@@ -37,6 +37,6 @@ c_ Solution:
                 ans.a..(')')
                 _____
 
-            D[a] = l..(ans)
+            D[a] l..(ans)
 
         r.. ''.j..(ans)

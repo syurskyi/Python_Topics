@@ -15,9 +15,9 @@ c_ Solution(o..
 
     ___ serialize(root
       ans    # list
-      stack = [(root, 1)]
+      stack [(root, 1)]
       w.... stack:
-        node, p = stack.p.. )
+        node, p stack.p.. )
         __ n.. node:
           ans.a..("#")
           _____

@@ -20,9 +20,9 @@ Both of the given trees will have between 1 and 100 nodes.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -32,11 +32,11 @@ c_ Solution:
         to save space, use generator
         O(lg n) space for the stack
         """
-        itr1 = dfs(root1)
-        itr2 = dfs(root2)
+        itr1 dfs(root1)
+        itr2 dfs(root2)
         w... T...
-            a = next(itr1, N..)
-            b = next(itr2, N..)
+            a next(itr1, N..)
+            b next(itr2, N..)
             __ a != b:
                 r.. F..
             __ a __ N.. a.. b __ N..
@@ -44,10 +44,10 @@ c_ Solution:
         r.. T..
 
     ___ dfs  node
-        stk = [node]
+        stk [node]
         # pre-order
         w.... stk:
-            cur = stk.p.. )
+            cur stk.p.. )
             __ n.. cur:
                 _____
             __ n.. cur.left a.. n.. cur.right:

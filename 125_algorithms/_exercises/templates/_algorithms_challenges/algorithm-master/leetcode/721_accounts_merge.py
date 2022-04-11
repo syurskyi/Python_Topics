@@ -11,7 +11,7 @@ c_ Solution:
         M2N    # dict  # mail to name
         ___ L __ A:
             ___ i __ r..(1, l..(L:
-                M2N[L[i]] = L[0]
+                M2N[L[i]] L[0]
                 connect(M, L[i], L[1])
 
         ___ a __ M:
@@ -27,18 +27,18 @@ c_ Solution:
         r.. [[M2N[m]] + s..(M) ___ m, M __ res.i..]
 
     ___ connect  N, a, b
-        _a = find(N, a)
-        _b = find(N, b)
+        _a find(N, a)
+        _b find(N, b)
 
         __ _a __ n.. _b:
-            N[_a] = _b
+            N[_a] _b
 
     ___ find  N, a
         __ a n.. __ N:
-            N[a] = a
+            N[a] a
             r.. a
         __ N[a] __ a:
             r.. a
 
-        N[a] = find(N, N[a])
+        N[a] find(N, N[a])
         r.. N[a]

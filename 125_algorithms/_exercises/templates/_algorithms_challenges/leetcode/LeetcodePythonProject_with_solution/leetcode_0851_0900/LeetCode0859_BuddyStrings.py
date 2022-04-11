@@ -10,10 +10,10 @@ c_ Solution(o..
         :type B: str
         :rtype: bool
         """
-        a, b = A, B
+        a, b A, B
         __ l..(a) != l..(b r.. F..
         __ a __ b a.. l..(s..(a < l..(a r.. T..
-        dif = [(c1, c2) ___ c1, c2 __ z..(a, b) __ c1 != c2]
+        dif [(c1, c2) ___ c1, c2 __ z..(a, b) __ c1 != c2]
         r.. l..(dif) __ 2 a.. dif[0] __ dif[1][::-1]
     
     ___ buddyStrings_own  A, B
@@ -22,11 +22,11 @@ c_ Solution(o..
         :type B: str
         :rtype: bool
         """
-        a, b = A, B
+        a, b A, B
         __ l..(a) != l..(b
             r.. F..
-        c01, c02 = '', ''
-        times = 0
+        c01, c02 '', ''
+        times 0
         ___ c1, c2 __ z..(a, b
             __ c1 != c2:
                 __ times > 1:
@@ -37,14 +37,14 @@ c_ Solution(o..
                     ____
                         r.. F..
                 ____
-                    c01, c02 = c1, c2
+                    c01, c02 c1, c2
                     times += 1
         __ times __ 0:
             r.. l..(s..(a < l..(a)
         r.. times __ 2
     
     ___ test
-        testCase = [
+        testCase [
              'ab', 'ba' ,
              'ab', 'ab' ,
              'aa', 'aa' ,
@@ -52,7 +52,7 @@ c_ Solution(o..
             ['', 'aa' ,
         ]
         ___ a, b __ testCase:
-            res = buddyStrings(a, b)
+            res buddyStrings(a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 

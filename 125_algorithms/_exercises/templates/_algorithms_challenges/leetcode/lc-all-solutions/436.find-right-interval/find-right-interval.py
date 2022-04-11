@@ -6,8 +6,8 @@
 c_ IntvArray(o..
   ___ -
     _array    # list
-    a.. = l.... x: _array.a..(x)
-    s.. = _array.s..
+    a.. l.... x: _array.a..(x)
+    s.. _array.s..
 
   ___ __len__
     r.. l..(_array)
@@ -27,13 +27,13 @@ c_ Solution(o..
     :type intervals: List[Interval]
     :rtype: List[int]
     """
-    bst = IntvArray()
+    bst IntvArray()
     ans    # list
     ___ i, intv __ e..(intervals
       bst.a..((intv.start, i
     bst.s..()
-    length = l..(bst)
+    length l..(bst)
     ___ intv __ intervals:
-      idx = b__.bisect_left(bst, intv.end)
+      idx b__.bisect_left(bst, intv.end)
       ans.a..(bst.getIdx(idx
     r.. ans

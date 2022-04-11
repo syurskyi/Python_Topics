@@ -4,7 +4,7 @@ _______ roman
 
 
 c_ RomanTest(unittest.TestCase
-    numerals = {
+    numerals {
         1: 'I',
         2: 'II',
         3: 'III',

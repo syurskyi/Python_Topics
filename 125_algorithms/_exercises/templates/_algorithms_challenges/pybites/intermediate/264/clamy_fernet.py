@@ -24,15 +24,15 @@ c_ ClamyFernet:
     """
     
     ___ - ,password=b"pybites",key_ N..
-        _kdf = PBKDF2HMAC(algorithm=hashes.SHA256(),length=32,salt=__.urandom(16),iterations=100000,backend=default_backend
-        password = password
+        _kdf PBKDF2HMAC(algorithm=hashes.SHA256(),length=32,salt=__.urandom(16),iterations=100000,backend=default_backend
+        password password
         
         __ n.. key:
-            key = base64.urlsafe_b64encode(kdf.derive(password
+            key base64.urlsafe_b64encode(kdf.derive(password
         ____
-            key = key
+            key key
 
-        _clf = Fernet(key)
+        _clf Fernet(key)
 
     $
     ___ kdf

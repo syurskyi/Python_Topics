@@ -3,8 +3,8 @@ ____ j__ _______ dumps
 
 c_ Tree(o..
     ___ - , label, children=[]
-        label = label
-        children = children
+        label label
+        children children
 
     ___ __dict__
         r.. {label: [c.__dict__() ___ c __ s..(children)]}
@@ -28,12 +28,12 @@ c_ Tree(o..
         r.. Tree(label, [c.dup() ___ c __ children])
 
     ___ add  other
-        tree = dup()
+        tree dup()
         tree.children.a..(other)
         r.. tree
 
     ___ remove  node
-        tree = dup()
+        tree dup()
         ___ child __ l..(tree.children
             tree.children.remove(child)
             __ child.label __ node:
@@ -42,10 +42,10 @@ c_ Tree(o..
         r.. tree
 
     ___ from_pov  from_node
-        stack = [self]
-        visited = s..()
+        stack [self]
+        visited s..()
         w.... stack:
-            tree = stack.p.. 0)
+            tree stack.p.. 0)
             __ tree.label __ visited:
                 _____
             visited.add(tree.label)
@@ -56,15 +56,15 @@ c_ Tree(o..
         r.. V...("Tree could not be reoriented")
 
     ___ path_to  from_node, to_node
-        reordered = from_pov(from_node)
-        stack = reordered.children
-        p.. = [from_node]
+        reordered from_pov(from_node)
+        stack reordered.children
+        p.. [from_node]
         w.... p..[-1] != to_node:
             ___
-                tree = stack.p.. )
+                tree stack.p.. )
             ______ I..
                 r.. V...("No path found")
             __ to_node __ tree:
                 p...a..(tree.label)
-                stack = tree.children
+                stack tree.children
         r.. p..

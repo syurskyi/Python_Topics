@@ -21,7 +21,7 @@ c_ MiniCassandra:
         __ raw_key n.. __ storage:
             storage[raw_key]    # dict
 
-        storage[raw_key][column_key] = Column(column_key, column_value)
+        storage[raw_key][column_key] Column(column_key, column_value)
 
     """
     @param: raw_key: a string
@@ -33,7 +33,7 @@ c_ MiniCassandra:
         __ raw_key n.. __ storage:
             r.. []
 
-        result = [
+        result [
             column
             ___ column_key, column __ storage[raw_key].i..
             __ column_start <_ column_key <_ column_end

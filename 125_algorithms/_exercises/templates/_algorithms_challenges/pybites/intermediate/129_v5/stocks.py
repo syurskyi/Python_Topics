@@ -2,12 +2,12 @@ ____ c.. _______ C..
 
 _______ r__
 
-STOCK_DATA = 'https://bit.ly/2MzKAQg'
+STOCK_DATA 'https://bit.ly/2MzKAQg'
 
 # pre-work: load JSON data into program
 
 w__ r__.S.. __ s:
-    data = s.g.. STOCK_DATA).j..
+    data s.g.. STOCK_DATA).j..
 
 
 # your turn:
@@ -21,7 +21,7 @@ ___ _cap_str_to_mln_float(cap
     __ cap __ 'n/a':
         r.. 0.0
     ____
-        cap = cap.s...l..('$')
+        cap cap.s...l..('$')
         __ cap[-1] __ 'M':
             r.. f__(cap[:-1])
         __ cap[-1] __ 'B':
@@ -45,8 +45,8 @@ ___ get_stock_symbol_with_highest_cap
 ___ get_sectors_with_max_and_min_stocks
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
-    sector_list = C..()
+    sector_list C..()
     ___ co __ data:
         sector_list += C..({co 'sector' : _cap_str_to_mln_float(co 'cap' )})
-    sectors = s..([(k, v) ___ k, v __ sector_list.i..], key=l.... x: x[1])
+    sectors s..([(k, v) ___ k, v __ sector_list.i..], key=l.... x: x[1])
     r.. sectors[-1][0], sectors[0][0]

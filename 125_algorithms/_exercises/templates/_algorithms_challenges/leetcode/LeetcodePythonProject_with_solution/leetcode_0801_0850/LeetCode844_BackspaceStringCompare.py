@@ -10,26 +10,26 @@ c_ Solution(o..
         :type T: str
         :rtype: bool
         """
-        s, t = S, T
-        s0, t0 = '', ''
+        s, t S, T
+        s0, t0 '', ''
         ___ c __ s:
             __ c __ '#':
-                s0 = s0[:-1]
+                s0 s0[:-1]
             ____
                 s0 += c
         ___ c __ t:
             __ c __ '#':
-                t0 = t0[:-1]
+                t0 t0[:-1]
             ____
                 t0 += c
         r.. s0 __ t0
     
     ___ test
-        testCases = [
+        testCases [
             
         ]
         ___ s, t __ testCases:
-            result = backspaceCompare(s, t)
+            result backspaceCompare(s, t)
             print('result: %s' % result)
             print('-='*30+'-')
 

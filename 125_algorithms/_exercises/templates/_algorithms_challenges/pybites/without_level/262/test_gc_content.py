@@ -8,7 +8,7 @@ Inputs are modified to check how the function deals with unknown characters
 _______ p__
 ____ gc_content _______ calculate_gc_content
 
-DNA_SEQUENCES = [
+DNA_SEQUENCES [
     (
         (  # from https://www.ncbi.nlm.nih.gov/nuccore/NC_000913.3
             "tagtgaaagatattcatttcgaaggccttcagcgtgtcgccgttggtgcggccctcctca"
@@ -89,11 +89,11 @@ ___ test_calculate_gc_content(dna, gc_content
 
     ... calculate_gc_content(dna) __ gc_content
 
-    dna_with_spaces = "".j..([base + " " ___ base __ dna])
+    dna_with_spaces "".j..([base + " " ___ base __ dna])
     ... calculate_gc_content(dna_with_spaces) __ gc_content
 
-    dna_with_special_chars = "".j..([base + ".!?/," ___ base __ dna])
+    dna_with_special_chars "".j..([base + ".!?/," ___ base __ dna])
     ... calculate_gc_content(dna_with_special_chars) __ gc_content
 
-    dna_line_breaks = "\n" + dna + "\n" + dna + "\n"
+    dna_line_breaks "\n" + dna + "\n" + dna + "\n"
     ... calculate_gc_content(dna_line_breaks) __ gc_content

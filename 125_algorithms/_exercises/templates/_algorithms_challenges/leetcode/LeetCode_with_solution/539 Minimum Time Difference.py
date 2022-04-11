@@ -17,25 +17,25 @@ c_ Solution:
         """
         sort and minus
         """
-        ret = f__("inf")
-        A = l..(s.. m..(minutes, timePoints)))
-        n = l..(A)
+        ret f__("inf")
+        A l..(s.. m..(minutes, timePoints)))
+        n l..(A)
         ___ i __ r..(n - 1
-            ret = m..(ret, diff(A[i+1], A[i]
+            ret m..(ret, diff(A[i+1], A[i]
 
-        ret = m..(ret, diff(A[n-1], A[0]
+        ret m..(ret, diff(A[n-1], A[0]
         r.. ret
 
     ___ diff  b, a
-        ret = b - a
+        ret b - a
         __ ret > 12 * 60:
-            ret = 24 * 60 - ret
+            ret 24 * 60 - ret
 
         r.. ret
 
     ___ minutes  a
-        h, m = a.s..(":")
-        minutes = 60 * i..(h) + i..(m)
+        h, m a.s..(":")
+        minutes 60 * i..(h) + i..(m)
         r.. minutes
 
 

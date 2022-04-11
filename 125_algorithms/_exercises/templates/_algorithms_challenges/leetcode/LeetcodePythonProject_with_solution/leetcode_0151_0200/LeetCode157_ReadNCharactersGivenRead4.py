@@ -16,12 +16,12 @@ c_ Solution(o..
         :type n: Maximum number of characters to read (int)
         :rtype: The number of characters read (int)
         """
-        idx = 0
+        idx 0
         w... T...
-            buf4 = ['']*4
-            curr = m..(read4(buf4), n-idx)
+            buf4 ['']*4
+            curr m..(read4(buf4), n-idx)
             ___ i __ r..(curr
-                buf[idx] = buf4[i]
+                buf[idx] buf4[i]
                 idx += 1
             __ curr != 4 o. idx __ n:
                 r.. idx

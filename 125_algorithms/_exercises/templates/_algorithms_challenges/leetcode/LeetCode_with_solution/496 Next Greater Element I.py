@@ -52,7 +52,7 @@ c_ Solution:
                 # until stk[-1] > e
                 stk.p.. )
 
-            h[e] = stk[-1] __ stk ____ -1
+            h[e] stk[-1] __ stk ____ -1
             stk.a..(e)
 
         r.. [

@@ -29,7 +29,7 @@ A[i][j] == 0 or A[i][j] == 1
 ____ t___ _______ L..
 
 
-dirs = ((0, -1), (0, 1), (-1, 0), (1, 0
+dirs ((0, -1), (0, 1), (-1, 0), (1, 0
 
 
 c_ Solution:
@@ -41,10 +41,10 @@ c_ Solution:
 
         BFS grow from 1 component
         """
-        m, n = l..(A), l..(A[0])
+        m, n l..(A), l..(A[0])
         # coloring
-        colors = [[N.. ___ _ __ r..(n)] ___ _ __ r..(m)]
-        color = 0
+        colors [[N.. ___ _ __ r..(n)] ___ _ __ r..(m)]
+        color 0
         ___ i __ r..(m
             ___ j __ r..(n
                 __ A[i][j] __ 1 a.. colors[i][j] __ N..
@@ -53,13 +53,13 @@ c_ Solution:
         ... color __ 2
 
         # BFS
-        step = 0
+        step 0
         q    # list
-        visited = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
+        visited [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         ___ i __ r..(m
             ___ j __ r..(n
                 __ colors[i][j] __ 0:
-                    visited[i][j] = T..
+                    visited[i][j] T..
                     q.a..((i, j
 
         w.... q:
@@ -68,25 +68,25 @@ c_ Solution:
                 ___ I, J __ nbr(A, i, j
                     __ n.. visited[I][J]:
                         __ colors[I][J] __ N..
-                            visited[I][J] = T..   # pre-check, dedup
+                            visited[I][J] T..   # pre-check, dedup
                             cur_q.a..((I, J
                         ____ colors[I][J] __ 1:
                             r.. step
             step += 1
-            q = cur_q
+            q cur_q
 
         r..
 
     ___ nbr  A, i, j
-        m, n = l..(A), l..(A[0])
+        m, n l..(A), l..(A[0])
         ___ di, dj __ dirs:
-            I = i + di
-            J = j + dj
+            I i + di
+            J j + dj
             __ 0 <_ I < m a.. 0 <_ J < n:
                 y.. I, J
 
     ___ dfs  A, i, j, colors, color
-        colors[i][j] = color
+        colors[i][j] color
         ___ I, J __ nbr(A, i, j
             __ colors[I][J] __ N.. a.. A[I][J] __ 1:
                 dfs(A, I, J, colors, color)

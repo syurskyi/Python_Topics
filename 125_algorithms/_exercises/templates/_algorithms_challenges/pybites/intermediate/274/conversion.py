@@ -12,7 +12,7 @@ ___ dec_to_base(number, base
             r.. 0
         
 
-        remainder = number % base
+        remainder number % base
 
         
         r.. dec_to_base_helper(number//base,base,x +1) + remainder *10**x

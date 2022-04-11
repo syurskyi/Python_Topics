@@ -39,7 +39,7 @@ c_ Solution:
         To get 2
         We need to copy 1 (* 2)
         """
-        ret = 0
+        ret 0
         ___ i __ r..(2, n+1
             w.... n % i __ 0:
                 ret += i
@@ -57,23 +57,23 @@ c_ Solution:
         Better dp:
         F[i] = F[j] + j / i   # copy j / i times
         """
-        F = [[f__('inf') ___ _ __ r..(n+1)] ___ _ __ r..(n+1)]
-        F[1][0] = 0
-        F[1][1] = 1
+        F [[f__('inf') ___ _ __ r..(n+1)] ___ _ __ r..(n+1)]
+        F[1][0] 0
+        F[1][1] 1
         ___ i __ r..(2, n + 1
             ___ j __ r..(i+1
-                F[i][j] = m..(
+                F[i][j] m..(
                     F[i][j],
                     F[i-j][j] + 1,
                 )
                 __ i % 2 __ 0:
-                    F[i][i//2] = m..(
+                    F[i][i//2] m..(
                         F[i][i//2],
                         F[i//2][j] + 2
                     )
 
 
-        ret = m..(F[n])
+        ret m..(F[n])
         r.. ret
 
 

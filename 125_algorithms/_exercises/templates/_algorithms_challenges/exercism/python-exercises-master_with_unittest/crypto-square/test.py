@@ -14,14 +14,14 @@ c_ CryptoSquareTest(unittest.TestCase
         assertEqual(encode('This is easy!'), 'tis hsy ie sa')
 
     ___ test_punctuation_and_numbers
-        msg = "1, 2, 3, Go! Go, for God's sake!"
-        ciph = '1gga 2ook 3fde gos ors'
+        msg "1, 2, 3, Go! Go, for God's sake!"
+        ciph '1gga 2ook 3fde gos ors'
         assertEqual(encode(msg), ciph)
 
     ___ test_long_string
-        msg = ("If man was meant to stay on the ground, god would have given "
+        msg ("If man was meant to stay on the ground, god would have given "
                "us roots.")
-        ciph = "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau"
+        ciph "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau"
         assertEqual(encode(msg), ciph)
 
 

@@ -16,8 +16,8 @@ c_ Solution(o..
         __ n.. P o. n.. I:
             r..
 
-        i = I.i.. P.p.. 0
-        node = TreeNode(I[i])
-        node.left = buildTree(P, I[:i])
-        node.right = buildTree(P, I[i + 1:])
+        i I.i.. P.p.. 0
+        node TreeNode(I[i])
+        node.left buildTree(P, I[:i])
+        node.right buildTree(P, I[i + 1:])
         r.. node

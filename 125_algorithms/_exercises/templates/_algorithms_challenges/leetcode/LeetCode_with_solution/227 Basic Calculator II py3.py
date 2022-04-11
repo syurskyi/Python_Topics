@@ -30,30 +30,30 @@ c_ Solution:
         No brackets. Look at previous operand and operator, when finishing
         scanning current operand.
         """
-        operand = 0
+        operand 0
         stk    # list
-        prev_op = "+"
+        prev_op "+"
         ___ i, c __ e..(s
             __ c.i..
-                operand = operand * 10 + i..(c)
+                operand operand * 10 + i..(c)
 
             #  i == len(s) - 1
-            delimited = c __ ("+", "-", "*", "/") o. i __ l..(s) - 1
+            delimited c __ ("+", "-", "*", "/") o. i __ l..(s) - 1
             __ delimited:
                 __ prev_op __ "+":
-                    cur = operand
+                    cur operand
                 ____ prev_op __ "-":
-                    cur = -operand
+                    cur -operand
                 ____ prev_op __ "*":
-                    cur = stk.p.. ) * operand
+                    cur stk.p.. ) * operand
                 ____
                     ... prev_op __ "/"
                     # instead of op1 // op2 due to negative handling, -3 // 2 == -2
-                    cur = i..(stk.p.. ) / operand)
+                    cur i..(stk.p.. ) / operand)
 
                 stk.a..(cur)
-                prev_op = c
-                operand = 0
+                prev_op c
+                operand 0
 
         r.. s..(stk)
 
@@ -61,17 +61,17 @@ c_ Solution:
         """
         cannot use dictionary, since it is eager evaluation
         """
-        operand = 0
+        operand 0
         stk    # list
-        prev_op = "+"
+        prev_op "+"
         ___ i, c __ e..(s
             __ c.i..
-                operand = operand * 10 + i..(c)
+                operand operand * 10 + i..(c)
 
             #  i == len(s) - 1
-            delimited = c __ ("+", "-", "*", "/") o. i __ l..(s) - 1
+            delimited c __ ("+", "-", "*", "/") o. i __ l..(s) - 1
             __ delimited:
-                cur = {
+                cur {
                     "+": operand,
                     "-": -operand,
                     "*": stk.p.. ) * operand,
@@ -79,8 +79,8 @@ c_ Solution:
                 }[prev_op]
                 stk.a..(cur)
 
-                prev_op = c
-                operand = 0
+                prev_op c
+                operand 0
 
         r.. s..(stk)
 

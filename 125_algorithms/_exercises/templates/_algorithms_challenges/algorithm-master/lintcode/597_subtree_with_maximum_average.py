@@ -17,8 +17,8 @@ Test Case:
 """
 
 c_ Solution:
-    max_avg = f__('-inf')
-    max_node = N..
+    max_avg f__('-inf')
+    max_node N..
 
     """
     @param: root: the root of binary tree
@@ -32,15 +32,15 @@ c_ Solution:
         __ n.. node:
             r.. 0, 0
 
-        left_sum, left_size = _traversal(node.left)
-        right_sum, right_size = _traversal(node.right)
+        left_sum, left_size _traversal(node.left)
+        right_sum, right_size _traversal(node.right)
 
-        subtree_sum = left_sum + right_sum + node.val
-        subtree_size = left_size + right_size + 1
-        subtree_avg = subtree_sum * 1.0 / subtree_size
+        subtree_sum left_sum + right_sum + node.val
+        subtree_size left_size + right_size + 1
+        subtree_avg subtree_sum * 1.0 / subtree_size
 
         __ subtree_avg > max_avg:
-            max_avg = subtree_avg
-            max_node = node
+            max_avg subtree_avg
+            max_node node
 
         r.. subtree_sum, subtree_size

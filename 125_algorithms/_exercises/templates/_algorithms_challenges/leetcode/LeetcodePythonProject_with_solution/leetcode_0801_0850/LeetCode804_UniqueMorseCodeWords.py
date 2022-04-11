@@ -9,8 +9,8 @@ c_ Solution(o..
         :type words: List[str]
         :rtype: int
         """
-        code = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
-        hashset = s..()
+        code [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+        hashset s..()
         ___ word __ words:
             tmp  ''
             ___ c __ word:
@@ -19,12 +19,12 @@ c_ Solution(o..
         r.. l..(hashset)
     
     ___ test
-        testCases = [
+        testCases [
             ["gin", "zen", "gig", "msg"],
         ]
         ___ words __ testCases:
             print('words: %s' % words)
-            result = uniqueMorseRepresentations(words)
+            result uniqueMorseRepresentations(words)
             print('result: %s' % result)
             print('-='*30+'-')
 

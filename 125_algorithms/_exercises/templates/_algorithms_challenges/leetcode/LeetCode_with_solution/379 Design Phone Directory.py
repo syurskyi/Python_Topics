@@ -5,7 +5,7 @@ get: Provide a number which is not assigned to anyone.
 check: Check if a number is available or not.
 release: Recycle or release a number.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ PhoneDirectory(o..
@@ -18,9 +18,9 @@ c_ PhoneDirectory(o..
         @param maxNumbers - The maximum numbers that can be stored in the phone directory.
         :type maxNumbers: int
         """
-        released = s..()
-        l = maxNumbers
-        i = 0
+        released s..()
+        l maxNumbers
+        i 0
 
     ___ get
         """
@@ -31,7 +31,7 @@ c_ PhoneDirectory(o..
         __ released:
             r.. released.p.. )
         __ i < l:
-            ret = i
+            ret i
             i += 1
             r.. ret
 

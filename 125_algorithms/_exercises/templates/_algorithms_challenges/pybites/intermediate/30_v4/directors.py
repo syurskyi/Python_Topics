@@ -4,32 +4,32 @@ _______ __
 ____ u__.r.. _______ u..
 
 
-BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
-TMP = '/tmp'
+BASE_URL 'https://bites-data.s3.us-east-2.amazonaws.com/'
+TMP '/tmp'
 
-fname = 'movie_metadata.csv'
-remote = __.p...j..(BASE_URL, fname)
-local = __.p...j..(TMP, fname)
+fname 'movie_metadata.csv'
+remote __.p...j..(BASE_URL, fname)
+local __.p...j..(TMP, fname)
 u..(remote, local)
 
-MOVIE_DATA = local
-MIN_MOVIES = 4
-MIN_YEAR = 1960
+MOVIE_DATA local
+MIN_MOVIES 4
+MIN_YEAR 1960
 
-Movie = n..('Movie', 'title year score')
+Movie n..('Movie', 'title year score')
 
 # field conversion
 fields =  'movie_title', 'title_year', 'imdb_score'
-conv = [s.., i.., f__]
-NAME = 'director_name'
+conv [s.., i.., f__]
+NAME 'director_name'
 
 
 ___ get_movies_by_director
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
-    movie_dict = d..(l..)
-    reader = csv.DictReader(o.. local
+    movie_dict d..(l..)
+    reader csv.DictReader(o.. local
 
     ___ row __ reader:
         __ row 'title_year' :
@@ -37,7 +37,7 @@ ___ get_movies_by_director
                 _____
         ____
             _____
-        remap = [fun(row[x]) ___ fun, x __ z..(conv, fields)]
+        remap [fun(row[x]) ___ fun, x __ z..(conv, fields)]
         movie_dict[row[NAME]].a..(Movie(*remap
     r.. movie_dict
 
@@ -46,9 +46,9 @@ ___ calc_mean_score(movies
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
     __ movies:
-        avg = r..(s..([m.score ___ m __ movies])/l..(movies), 1)
+        avg r..(s..([m.score ___ m __ movies])/l..(movies), 1)
     ____
-        avg = 0
+        avg 0
     r.. avg
 
 

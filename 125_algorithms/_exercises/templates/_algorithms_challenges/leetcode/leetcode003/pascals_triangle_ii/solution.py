@@ -21,12 +21,12 @@ c_ Solution(o..
         :type rowIndex: int
         :rtype: List[int]
         """
-        res = [1 ___ i __ r..(rowIndex + 1)]
+        res [1 ___ i __ r..(rowIndex + 1)]
         ___ row __ r..(rowIndex + 1
             ___ col __ r..(1, row
-                col = row - col
+                col row - col
                 res[col] += res[col - 1]
         r.. res
 
-s = Solution()
+s Solution()
 print s.getRow(3)

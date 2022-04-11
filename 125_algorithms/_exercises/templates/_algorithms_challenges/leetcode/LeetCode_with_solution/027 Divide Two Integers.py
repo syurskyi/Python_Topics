@@ -1,9 +1,9 @@
 """
 Divide two integers without using multiplication, division and mod operator.
 """
-__author__ = 'Danyang'
-MAX_INT = 2147483647
-MIN_INT = -2147483648
+__author__ 'Danyang'
+MAX_INT 2147483647
+MIN_INT -2147483648
 
 
 c_ Solution:
@@ -24,14 +24,14 @@ c_ Solution:
             r.. MAX_INT
 
         # handle signs
-        sign = 1 __ dividend >_ 0 a.. divisor >_ 0 o. dividend < 0 a.. divisor < 0 ____ -1
-        dividend = a..(dividend)
-        divisor = a..(divisor)
+        sign 1 __ dividend >_ 0 a.. divisor >_ 0 o. dividend < 0 a.. divisor < 0 ____ -1
+        dividend a..(dividend)
+        divisor a..(divisor)
 
-        result = 0
+        result 0
         w.... dividend >_ divisor:
-            current_result = 1
-            current = divisor  # write inner loop first
+            current_result 1
+            current divisor  # write inner loop first
             w.... current <_ dividend:
                 current <<= 1
                 current_result <<= 1

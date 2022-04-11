@@ -1,7 +1,7 @@
 """
 Given an integer, write a function to determine if it is a power of two.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:

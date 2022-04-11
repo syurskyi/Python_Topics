@@ -7,9 +7,9 @@ c_ Solution:
         __ n.. s:
             r.. T..
 
-        s = s.l..
-        n = l..(s)
-        left, right = 0, n - 1
+        s s.l..
+        n l..(s)
+        left, right 0, n - 1
 
         w.... left < right:
             w.... left < right a.. n.. s[left].i..

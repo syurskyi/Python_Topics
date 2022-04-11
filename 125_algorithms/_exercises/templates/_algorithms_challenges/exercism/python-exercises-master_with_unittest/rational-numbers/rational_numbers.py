@@ -3,8 +3,8 @@ ____ __future__ _______ division
 
 c_ Rational(o..
     ___ - , numer, denom
-        numer = N..
-        denom = N..
+        numer N..
+        denom N..
 
     ___ -e  other
         r.. numer __ other.numer a.. denom __ other.denom

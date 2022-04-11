@@ -9,17 +9,17 @@ c_ Solution:
         __ n.. nums o. l..(nums) < 3:
             r.. ans
 
-        n = l..(nums)
+        n l..(nums)
         nums.s..()
 
         ___ a __ r..(n - 2
             __ a > 0 a.. nums[a] __ nums[a - 1]:
                 _____
 
-            b, c = a + 1, n - 1
+            b, c a + 1, n - 1
 
             w.... b < c:
-                total = nums[a] + nums[b] + nums[c]
+                total nums[a] + nums[b] + nums[c]
 
                 __ total __ 0:
                     ans.a..([nums[a], nums[b], nums[c]])

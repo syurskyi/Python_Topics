@@ -28,7 +28,7 @@ c_ Solution(o..
     ___ test
         ___ n __ r..(4
             print('n: %s' % n)
-            result = generateParenthesis(n)
+            result generateParenthesis(n)
             print('result: %s' % result)
             print('-='*15+'-')
 

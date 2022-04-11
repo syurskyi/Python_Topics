@@ -2,7 +2,7 @@ _______ p__
 
 ____ friends _______ friends_teams
 
-friends = 'Bob Dante Julian Martin'.s..
+friends 'Bob Dante Julian Martin'.s..
 
 
 ?p__.m__.p.('test_input,expected', [
@@ -24,9 +24,9 @@ friends = 'Bob Dante Julian Martin'.s..
 ])
 ___ test_team_of_two_order_does_not_matter(test_input, e..
     """First test lists all combos"""
-    combos = l..(friends_teams(friends, team_size=2, order_does_matter=F..
-    ... l..(combos) __ 6
-    __ e..:
+    combos l.. f.. f, t.._2, o.._F..
+    ... l.. ? __ 6
+    __ e..
         ... test_input __ combos
     ____
         ... test_input n.. __ combos
@@ -43,8 +43,8 @@ ___ test_team_of_two_order_does_not_matter(test_input, e..
 ])
 ___ test_team_of_two_order_does_matter(test_input, e..
     """From here on just test a subset of combos"""
-    combos = l..(friends_teams(friends, team_size=2, order_does_matter=T..
-    ... l..(combos) __ 12
+    combos l.. f.. f, t.._2, o.._T..
+    ... l.. ? __ 12
     ... test_input __ combos
 
 ?p__.m__.p.('test_input,expected', [
@@ -59,9 +59,9 @@ ___ test_team_of_two_order_does_matter(test_input, e..
     (('Dante', 'Dante', 'Martin'), F..),
 ])
 ___ test_team_of_three_order_does_not_matter(test_input, e..
-    combos = l..(friends_teams(friends, team_size=3, order_does_matter=F..
-    ... l..(combos) __ 4
-    __ e..:
+    combos l.. f.. f.. t.._3 o.._F..
+    ... l.. ? __ 4
+    __ e..
         ... test_input __ combos
     ____
         ... test_input n.. __ combos
@@ -76,20 +76,20 @@ ___ test_team_of_three_order_does_not_matter(test_input, e..
     (('Julian', 'Martin', 'Dante'), T..),
 ])
 ___ test_team_of_three_order_does_matter(test_input, e..
-    combos = l..(friends_teams(friends, team_size=3, order_does_matter=T..
-    ... l..(combos) __ 24
+    combos l.. f.. f.. t.._3 o.._T..
+    ... l.. ? __ 24
     ... test_input __ combos
 
 ___ test_default_team_size
-    friends = ("Bob", "Dante", "Julian")
-    combos = l..(friends_teams(friends, order_does_matter=T..
-    ... l..(combos) __ 6
+    friends ("Bob", "Dante", "Julian")
+    combos l.. f.. f, o.._T..
+    ... l.. ? __ 6
     ... ("Bob", "Dante") __ combos
 
 
 ___ test_default_order_matters
-    friends = ("Bob", "Dante", "Julian")
-    combos = l..(friends_teams(friends, team_size=2
-    ... l..(combos) __ 3
-    combos = l..(friends_teams(friends, team_size=2, order_does_matter=T..
-    ... l..(combos) __ 6
+    friends ("Bob", "Dante", "Julian")
+    combos l.. f.. f, t.._2
+    ... l.. ? __ 3
+    combos l.. f.. f, t.._2, o.._T..
+    ... l.. ? __ 6

@@ -11,7 +11,7 @@ c_ MagicDictionary:
         """
         Initialize your data structure here.
         """
-        words = c...d..(s..)
+        words c...d..(s..)
 
     ___ buildDict  words
         """
@@ -21,10 +21,10 @@ c_ MagicDictionary:
         """
         ___ word __ words:
             ___ i __ r..(l..(word:
-                key = '{0},{1}'.f..(word[:i], word[i + 1:])
+                key '{0},{1}'.f..(word[:i], word[i + 1:])
 
                 __ key n.. __ words:
-                    words[key] = s..()
+                    words[key] s..()
 
                 # add char to distinct word if its same
                 words[key].add(word[i])
@@ -36,12 +36,12 @@ c_ MagicDictionary:
         :rtype: bool
         """
         ___ i __ r..(l..(word:
-            key = '{0},{1}'.f..(word[:i], word[i + 1:])
+            key '{0},{1}'.f..(word[:i], word[i + 1:])
 
             __ key n.. __ words:
                 _____
 
-            words = words[key]
+            words words[key]
 
             # 1. word[i] not in words => means not same word
             # 2. len(words) > 1 => if got same but still can mapping other

@@ -1,7 +1,7 @@
 """
 Implement pow(x, n).
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -17,19 +17,19 @@ c_ Solution:
         :param n: integer
         :return: float
         """
-        invert_flag = F.. __ n > 0 ____ T..
+        invert_flag F.. __ n > 0 ____ T..
         # O(log n)
-        n = a..(n)
-        product = 1.0
+        n a..(n)
+        product 1.0
         w.... n > 0:
             __ n & 1 __ 1:
                 product *= x
 
-            n = n >> 1
+            n n >> 1
             x *= x
 
         __ invert_flag:
-            product = 1.0 / product
+            product 1.0 / product
 
         r.. product
 
@@ -59,9 +59,9 @@ c_ Solution:
             ____
                 r.. -pow(-x, n)
 
-        product = 1.0
+        product 1.0
         ___ i __ x..(a..(n:
-            pre = product
+            pre product
             __ n>0:
                 product *= x
             ____

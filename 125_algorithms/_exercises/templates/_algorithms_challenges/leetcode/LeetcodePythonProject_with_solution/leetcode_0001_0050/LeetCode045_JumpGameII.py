@@ -16,5 +16,5 @@ c_ Solution(o..
             maxReach  m..(maxReach, i+nums[i])
             __ i __ reach:
                 steps + 1
-                reach = maxReach
+                reach maxReach
         r.. steps

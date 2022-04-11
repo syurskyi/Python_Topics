@@ -12,21 +12,21 @@ c_ Solution(o..
         :rtype: int
         """
         _______ heapq
-        graph = [[-1]*N ___ _ __ r..(N)]
+        graph [[-1]*N ___ _ __ r..(N)]
         ___ edge __ edges:
-            graph[edge[0]][edge[1]] = edge[2]
-            graph[edge[1]][edge[0]] = edge[2]
-        res = 0
+            graph[edge[0]][edge[1]] edge[2]
+            graph[edge[1]][edge[0]] edge[2]
+        res 0
         h    # list
-        visited = [F..]*N
+        visited [F..]*N
         heapq.heappush(h, (-M, 0
         w.... h:
-            cur = heapq.heappop(h)
-            start = cur[1]
-            move = -cur[0]
+            cur heapq.heappop(h)
+            start cur[1]
+            move -cur[0]
             __ visited[start]:
                 _____
-            visited[start] = T..
+            visited[start] T..
             res += 1
             ___ i __ r..(N
                 __ graph[start][i] != -1:

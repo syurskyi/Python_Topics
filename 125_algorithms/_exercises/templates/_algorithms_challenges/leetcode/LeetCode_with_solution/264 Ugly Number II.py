@@ -9,7 +9,7 @@ Note that 1 is typically treated as an ugly number.
 _______ heapq
 
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Node(o..
@@ -17,8 +17,8 @@ c_ Node(o..
     Data structure is key
     """
     ___ - , origin, q
-        origin = origin
-        q = q
+        origin origin
+        q q
 
     ___ __cmp__  other
         r.. q[0] - other.q[0]
@@ -37,18 +37,18 @@ c_ Solution(o..
 
         n -_ 1  # exclude 1
 
-        ugly = [2, 3, 5]
-        qs = [Node(i, [i]) ___ i __ ugly]
-        h = l..(qs)  # shallow copy
+        ugly [2, 3, 5]
+        qs [Node(i, [i]) ___ i __ ugly]
+        h l..(qs)  # shallow copy
 
         heapq.heapify(h)
 
-        cnt = 0
-        ret = 2
+        cnt 0
+        ret 2
         w.... cnt < n:
             cnt += 1
-            popped = heapq.heappop(h)
-            ret = popped.q.p.. 0)
+            popped heapq.heappop(h)
+            ret popped.q.p.. 0)
             ___ i __ x..(ugly.i.. popped.origin), 3
                 qs[i].q.a..(ret*ugly[i])
 

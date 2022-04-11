@@ -1,10 +1,10 @@
 ____ c.. _______ n..
 
-SUITS = 'Red Green Yellow Blue'.s..
+SUITS 'Red Green Yellow Blue'.s..
 
-UnoCard = n..('UnoCard', 'suit name')
+UnoCard n..('UnoCard', 'suit name')
 
-SUIT_VALUES = '1,2,3,4,5,6,7,8,9,Draw Two,Skip,Reverse'.s..(',')
+SUIT_VALUES '1,2,3,4,5,6,7,8,9,Draw Two,Skip,Reverse'.s..(',')
 
 
 ___ create_uno_deck

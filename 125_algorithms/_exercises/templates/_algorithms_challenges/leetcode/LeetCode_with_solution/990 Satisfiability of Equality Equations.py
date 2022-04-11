@@ -51,13 +51,13 @@ c_ DisjointSet:
         pi    # dict
 
     ___ union  x, y
-        pi[find(x)] = find(y)
+        pi[find(x)] find(y)
 
     ___ find  x
         __ x n.. __ pi:
-            pi[x] = x
+            pi[x] x
         ____ pi[x] != x:
-            pi[x] = find(pi[x])
+            pi[x] find(pi[x])
         r.. pi[x]
 
 c_ Solution:
@@ -65,12 +65,12 @@ c_ Solution:
         """
         union find
         """
-        ds = DisjointSet()
+        ds DisjointSet()
         neqs    # list  # list of neq
         ___ e __ equations:
-            a = e[0]
-            b = e[-1]
-            sign = e[1:-1]
+            a e[0]
+            b e[-1]
+            sign e[1:-1]
             __ sign __ "==":
                 ds.union(a, b)
             ____

@@ -12,9 +12,9 @@ c_ Solution(o..
         :type c: int
         :rtype: float
         """
-        dp = [[1]*N ___ _ __ r..(N)]
+        dp [[1]*N ___ _ __ r..(N)]
         ___ _ __ r..(K
-            dp1 = [[0]*N ___ _ __ r..(N)]
+            dp1 [[0]*N ___ _ __ r..(N)]
             ___ i __ r..(N
                 ___ j __ r..(N
                     ___ row, col __ (i+2, j-1), (i+2, j+1),\
@@ -22,11 +22,11 @@ c_ Solution(o..
                         (i-1, j+2), (i-1, j-2
                         __ 0 <_ row < N a.. 0 <_ col < N:
                             dp1[i][j] += dp[row][col]
-            dp = dp1
+            dp dp1
         r.. f__(dp[r][c])/8**K
     
     ___ test
-        testCases = [
+        testCases [
             [3, 2, 0, 0],
         ]
         ___ N, K, r, c __ testCases:
@@ -34,7 +34,7 @@ c_ Solution(o..
             print('K: %s' % K)
             print('r: %s' % r)
             print('c: %s' % c)
-            result = knightProbability(N, K, r, c)
+            result knightProbability(N, K, r, c)
             print('result: %s' % result)
             print('-='*30+'-')
 

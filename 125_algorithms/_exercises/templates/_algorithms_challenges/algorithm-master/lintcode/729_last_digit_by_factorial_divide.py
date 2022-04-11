@@ -10,7 +10,7 @@ c_ Solution:
         __ a __ b:
             r.. 1
 
-        ans = 1
+        ans 1
 
         ___ num __ r..(a + 1, b + 1
             __ ans __ 0:

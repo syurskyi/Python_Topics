@@ -13,7 +13,7 @@ canConstruct("aa", "aab") -> true
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -23,7 +23,7 @@ c_ Solution(o..
         :type magazine: str
         :rtype: bool
         """
-        d = d..(i..)
+        d d..(i..)
 
         ___ e __ magazine:
             d[e] += 1

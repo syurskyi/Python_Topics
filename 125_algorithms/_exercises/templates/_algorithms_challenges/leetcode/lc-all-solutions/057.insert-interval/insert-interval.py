@@ -11,10 +11,10 @@ c_ Solution(o..
     :type newInterval: Interval
     :rtype: List[Interval]
     """
-    s, e = newInterval.start, newInterval.end
-    left = f.. l.... x: x.end < newInterval.start, intervals)
-    right = f.. l.... x: x.start > newInterval.end, intervals)
+    s, e newInterval.start, newInterval.end
+    left f.. l.... x: x.end < newInterval.start, intervals)
+    right f.. l.... x: x.start > newInterval.end, intervals)
     __ left + right != intervals:
-      s = m..(intervals[l..(left)].start, s)
-      e = m..(intervals[~l..(right)].end, e)
+      s m..(intervals[l..(left)].start, s)
+      e m..(intervals[~l..(right)].end, e)
     r.. left + [Interval(s, e)] + right

@@ -2,13 +2,13 @@ ____ d__ _______ date
 
 ____ reboot _______ calc_max_uptime, MAC1
 
-MAC2 = """
+MAC2 """
 reboot ~ Tue Sep 22 12:52
 reboot ~ Sun Aug 30 23:17
 reboot ~ Sat Aug 29 01:12
 reboot ~ Fri Aug 28 22:07
 """
-MAC3 = """
+MAC3 """
 reboot    ~                         Fri Dec 18 23:58
 reboot    ~                         Mon Dec 14 09:54
 reboot    ~                         Wed Dec 11 23:21
@@ -24,7 +24,7 @@ reboot    ~                         Sun Oct 18 17:11
 reboot    ~                         Mon Oct  5 09:35
 reboot    ~                         Sat Oct  3 18:57
 """
-THIS_YEAR = date.t...year
+THIS_YEAR date.t...year
 
 
 ___ test_default_output

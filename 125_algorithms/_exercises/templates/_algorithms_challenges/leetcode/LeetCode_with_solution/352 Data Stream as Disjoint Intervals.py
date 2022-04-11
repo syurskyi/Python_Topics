@@ -12,14 +12,14 @@ For example, suppose the integers from the data stream are 1, 3, 7, 2, 6, ..., t
 Follow up:
 What if there are lots of merges and the number of disjoint intervals are small compared to the data stream's size?
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 # Definition for an interval.
 c_ Interval(o..
     ___ - , s=0, e=0
-        start = s
-        end = e
+        start s
+        end e
 
 
 c_ SummaryRanges(o..
@@ -45,15 +45,15 @@ c_ SummaryRanges(o..
         """
         itvls.s..(key=l.... x: x.start)
 
-        ret = [itvls[0]]
+        ret [itvls[0]]
         ___ itvl __ itvls[1:]:
-            pre = ret[-1]
+            pre ret[-1]
             __ itvl.start <_ pre.end + 1:
-                pre.end = m..(itvl.end, pre.end)
+                pre.end m..(itvl.end, pre.end)
             ____
                 ret.a..(itvl)
 
-        itvls = ret
+        itvls ret
         r.. ret
 
 # Your SummaryRanges object will be instantiated and called as such:

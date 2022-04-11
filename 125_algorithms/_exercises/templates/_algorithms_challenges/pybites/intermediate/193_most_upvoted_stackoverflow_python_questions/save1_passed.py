@@ -1,7 +1,7 @@
 _______ r__
 ____ bs4 _______ BeautifulSoup
 
-cached_so_url = 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
+cached_so_url 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
 
 
 ___ top_python_questions(url=cached_so_url
@@ -11,27 +11,27 @@ ___ top_python_questions(url=cached_so_url
        Return a list of (question, num_votes) tuples ordered
        by num_votes descending (see tests for expected output).
     """
-    response = r__.g.. url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    right_table = soup.find_all('div', {'class': 'question-summary'})
+    response r__.g.. url)
+    soup BeautifulSoup(response.text, 'html.parser')
+    right_table soup.find_all('div', {'class': 'question-summary'})
 
     q    # list
     vo    # list
     vi    # list
     ___ line __ right_table:
-        question = line.find('a', {'class': 'question-hyperlink'}).text
-        vote = line.find('span', {'class': 'vote-count-post high-scored-post'})
-        view = line.find('div', {'class': 'views supernova'})
+        question line.find('a', {'class': 'question-hyperlink'}).text
+        vote line.find('span', {'class': 'vote-count-post high-scored-post'})
+        view line.find('div', {'class': 'views supernova'})
 
         __ vote __ N..
-            vote = 0
+            vote 0
         ____
-            vote = vote.text
+            vote vote.text
 
         __ view __ N..
-            view = 0
+            view 0
         ____
-            view = view.text.s...s.. [0]
+            view view.text.s...s.. [0]
 
         q.a..(question)
         vo.a..(vote)
@@ -39,7 +39,7 @@ ___ top_python_questions(url=cached_so_url
 
     vi_true    # list
     ___ number __ vi:
-        number = s..(number)
+        number s..(number)
         __ number.e.. 'k'
             vi_true.a..(f__(number[:-1]) * 1000)
         __ number.e.. 'm'
@@ -47,7 +47,7 @@ ___ top_python_questions(url=cached_so_url
         __ number __ '0':
             vi_true.a..(f__(number
 
-    final = l..(z..(q, vo, vi_true
+    final l..(z..(q, vo, vi_true
     output1    # list
     output2    # list
     ___ question, vote, view __ final:

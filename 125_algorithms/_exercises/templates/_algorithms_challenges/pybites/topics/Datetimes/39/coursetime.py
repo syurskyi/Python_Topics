@@ -5,7 +5,7 @@ _______ __
 _______ u__.r..
 
 # getting the data
-COURSE_TIMES = __.p...j..(
+COURSE_TIMES __.p...j..(
     __.g.. TMP  /tmp,
     'course_timings'
 )
@@ -27,17 +27,17 @@ ___ get_all_timestamps
         Return a list of MM:SS timestamps
     """
     w__ o.. COURSE_TIMES) __ f:
-        lines = f.r..
-        lines = [line.r..() ___ line __ lines __ ')' __ line]
+        lines f.r..
+        lines [line.r..() ___ line __ lines __ ')' __ line]
     r.. [line.s..('(')[1].s..(')')[0] ___ line __ lines]
 
 ___ calc_total_course_duration(timestamps
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
-    total_duration = d__.s..('00:00', "%M:%S")
+    total_duration d__.s..('00:00', "%M:%S")
     ___ each_time __ timestamps:
-        m.., sec = each_time.s..(':')
-        total_duration = total_duration + t..(minutes=i..(m..), seconds=i..(sec
+        m.., sec each_time.s..(':')
+        total_duration total_duration + t..(minutes=i..(m..), seconds=i..(sec
     r.. d__.s..(total_duration, "%H:%M:%S")
 
 print(calc_total_course_duration(get_all_timestamps()))

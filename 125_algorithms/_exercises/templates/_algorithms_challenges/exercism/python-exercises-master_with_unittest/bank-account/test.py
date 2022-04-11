@@ -9,7 +9,7 @@ ____ bank_account _______ BankAccount
 c_ BankAccountTest(unittest.TestCase
 
     ___ setUp
-        account = BankAccount()
+        account BankAccount()
 
     ___ test_newly_opened_account_has_zero_balance
         account.o.. )
@@ -106,7 +106,7 @@ c_ BankAccountTest(unittest.TestCase
 
         threads    # list
         ___ _ __ r..(1000
-            t = threading.Thread(target=transact)
+            t threading.Thread(target=transact)
             threads.a..(t)
             t.start()
 

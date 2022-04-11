@@ -19,7 +19,7 @@ Note:
 The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph
 is represented.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -32,12 +32,12 @@ c_ Solution:
         :type prerequisites: List[List[int]]
         :rtype: bool
         """
-        V = [[] ___ _ __ x..(numCourses)]
+        V [[] ___ _ __ x..(numCourses)]
         ___ edge __ prerequisites:
             V[edge[0]].a..(edge[1])
 
-        visited = [F.. ___ _ __ x..(numCourses)]  # visited and fine (cleared)
-        marked = [F.. ___ _ __ x..(numCourses)]  # marked during one dfs
+        visited [F.. ___ _ __ x..(numCourses)]  # visited and fine (cleared)
+        marked [F.. ___ _ __ x..(numCourses)]  # marked during one dfs
         ___ i __ x..(numCourses
             __ n.. visited[i]:
                 __ dfs_have_cycle(V, i, visited, marked
@@ -49,15 +49,15 @@ c_ Solution:
         __ marked[i]:
             r.. T..
 
-        marked[i] = T..
+        marked[i] T..
 
         ___ neighbor __ V[i]:
             __ n.. visited[neighbor] a.. dfs_have_cycle(V, neighbor, visited, marked
                 r.. T..
 
         # clean up
-        marked[i] = F..
-        visited[i] = T..
+        marked[i] F..
+        visited[i] T..
         r.. F..
 
 

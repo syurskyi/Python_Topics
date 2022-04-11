@@ -32,11 +32,11 @@ c_ Solution:
         :type A: List[int]
         :rtype: int
         """
-        ret = 0
-        D = d..(l....: d..(i..
+        ret 0
+        D d..(l....: d..(i..
         ___ i __ r..(l..(A:
             ___ j __ r..(i
-                d = A[i] - A[j]
+                d A[i] - A[j]
                 D[i][d] += 1 + D[j][d]
                 __ D[j][d] > 0:
                     # >= 3 subsequence with A[k], A[j], A[i]
@@ -49,15 +49,15 @@ c_ Solution:
         :type A: List[int]
         :rtype: int
         """
-        ret = 0
-        D = d..(l....: d..(i..
+        ret 0
+        D d..(l....: d..(i..
         ___ i __ r..(l..(A:
             ___ j __ r..(i
-                delta = A[i] - A[j]
+                delta A[i] - A[j]
                 D[i][delta] += 1 + D[j][delta]
 
             ___ j __ r..(i
-                delta = A[i] - A[j]
+                delta A[i] - A[j]
                 __ D[j][delta] > 0:
                     ret += D[i][delta]  # counted the length 2
 

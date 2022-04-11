@@ -20,14 +20,14 @@ c_ Solution:
         :rtype: List[int]
         """
         ret    # list
-        counter_target = C..(target)
-        counter_cur = C..(s[:l..(target)])
+        counter_target C..(target)
+        counter_cur C..(s[:l..(target)])
         __ counter_cur __ counter_target:
             ret.a..(0)
 
         ___ idx __ r..(l..(target), l..(s:
-            head = s[idx - l..(target)]
-            tail = s[idx]
+            head s[idx - l..(target)]
+            tail s[idx]
             counter_cur[tail] += 1
             counter_cur[head] -_ 1
             __ counter_cur[head] __ 0:

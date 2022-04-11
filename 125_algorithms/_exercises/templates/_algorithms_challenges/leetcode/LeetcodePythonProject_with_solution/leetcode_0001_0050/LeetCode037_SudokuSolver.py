@@ -17,11 +17,11 @@ c_ Solution(o..
                 __ board[i][j] __ '.':
                     ___ c __ '123456789':
                         __ isValid(board, i, j, c
-                            board[i][j] = c
+                            board[i][j] c
                             __ solve(board
                                 r.. T..
                             ____
-                                board[i][j] = '.'
+                                board[i][j] '.'
                     r.. F..
         r.. T..
     

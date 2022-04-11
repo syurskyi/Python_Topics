@@ -31,15 +31,15 @@ is different.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ -
-        prev = N..
-        ret = f__('inf')
+        prev N..
+        ret f__('inf')
 
     ___ minDiffInBST  root: TreeNode) __ i..:
         """
@@ -50,7 +50,7 @@ c_ Solution:
 
         minDiffInBST(root.left)
         __ prev:
-            ret = m..(ret, root.val - prev)
-        prev = root.val
+            ret m..(ret, root.val - prev)
+        prev root.val
         minDiffInBST(root.right)
         r.. ret

@@ -4,9 +4,9 @@ _______ __
 
 _______ r__
 
-MARVEL_CSV = 'https://raw.githubusercontent.com/pybites/marvel_challenge/master/marvel-wikia-data.csv'  # noqa E501
+MARVEL_CSV 'https://raw.githubusercontent.com/pybites/marvel_challenge/master/marvel-wikia-data.csv'  # noqa E501
 
-Character = n..('Character', 'pid name sid align sex appearances year')
+Character n..('Character', 'pid name sid align sex appearances year')
 
 
 # csv parsing code provided so this Bite can focus on the parsing
@@ -20,10 +20,10 @@ ___ _get_csv_data
 ___ load_data
     """Converts marvel.csv into a sequence of Character namedtuples
        as defined above"""
-    content = _get_csv_data()
-    reader = csv.DictReader(content.s.. , delimiter=',')
+    content _get_csv_data()
+    reader csv.DictReader(content.s.. , delimiter=',')
     ___ row __ reader:
-        name = __.s.. _ (.*?)\(.*', r'\1', row 'name' ).s..
+        name __.s.. _ (.*?)\(.*', r'\1', row 'name' ).s..
         y.. Character(pid=row 'page_id' ,
                         name=name,
                         sid=row 'ID' ,
@@ -33,7 +33,7 @@ ___ load_data
                         year=row 'Year' )
 
 
-characters = l..(load_data
+characters l..(load_data
 
 
 # start coding
@@ -42,7 +42,7 @@ ___ most_popular_characters(characters=characters, top=5
     """Get the most popular character by number of appearances,
        return top n characters (default 5)
     """
-    result = C..()
+    result C..()
     ___ char __ characters:
         result[char.name + ',' + char.year] += i..(char.appearances) __ char.appearances != '' ____ 0
     r.. [x[0].s.. ',' 0 ___ x __ result.most_common(top)]
@@ -54,7 +54,7 @@ ___ max_and_min_years_new_characters(characters=characters
        characters, or the 'year' attribute of the namedtuple, return a tuple
        of (max_year, min_year)
     """
-    result = C..()
+    result C..()
     ___ char __ characters:
         __ char.year __ '':
             _____
@@ -70,7 +70,7 @@ ___ get_percentage_female_characters(characters=characters
        Agender and Genderfluid Characters.
        Return the result rounded to 2 digits
     """
-    sexes = C..()
+    sexes C..()
     ___ char __ characters:
         __ char.sex __ '':
             _____

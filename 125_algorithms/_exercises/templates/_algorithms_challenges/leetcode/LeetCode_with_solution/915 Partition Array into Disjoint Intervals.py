@@ -37,13 +37,13 @@ c_ Solution:
 
         similar to 2 in terms of keyboard stroke count 
         """
-        n = l..(A)
-        MX = [-f__('inf') ___ _ __ r..(n+1)]
-        MI = [f__('inf') ___ _ __ r..(n+1)]
+        n l..(A)
+        MX [-f__('inf') ___ _ __ r..(n+1)]
+        MI [f__('inf') ___ _ __ r..(n+1)]
         ___ i __ r..(n
-            MX[i+1] = m..(M[i], A[i])
+            MX[i+1] m..(M[i], A[i])
         ___ i __ r..(n-1, -1, -1
-            MI[i] = m..(MI[i+1], A[i])
+            MI[i] m..(MI[i+1], A[i])
 
         ___ l __ r..(1, n+1
             __ MX[l] <_ MI[l]:
@@ -54,15 +54,15 @@ c_ Solution:
         """
         max(left) <= min(right)
         """
-        MX = [0 ___ _ __ A]
-        MI = [0 ___ _ __ A]
-        MX[0] = A[0]
-        MI[-1] = A[-1]
-        n = l..(A)
+        MX [0 ___ _ __ A]
+        MI [0 ___ _ __ A]
+        MX[0] A[0]
+        MI[-1] A[-1]
+        n l..(A)
         ___ i __ r..(1, n
-            MX[i] = m..(MX[i-1], A[i])
+            MX[i] m..(MX[i-1], A[i])
         ___ i __ r..(n-2, -1, -1
-            MI[i] = m..(MI[i+1], A[i])
+            MI[i] m..(MI[i+1], A[i])
 
         ___ i __ r..(n-1
             __ MX[i] <_ MI[i+1]:

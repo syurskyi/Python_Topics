@@ -11,7 +11,7 @@ Given envelopes = [[5,4],[6,4],[6,7],[2,3]], the maximum number of envelopes you
 """
 _______ b__
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -27,13 +27,13 @@ c_ Solution(o..
         __ n.. A: r.. 0
 
         A.s..(key=l.... (w, h (w, -h
-        F = [-1 ___ _ __ x..(l..(A)+1)]
+        F [-1 ___ _ __ x..(l..(A)+1)]
 
-        F[1] = A[0][1]  # store value rather than index
-        k = 1
+        F[1] A[0][1]  # store value rather than index
+        k 1
         ___ _, h __ A[1:]:
-            idx = b__.bisect_left(F, h, 1, k+1)
-            F[idx] = h
+            idx b__.bisect_left(F, h, 1, k+1)
+            F[idx] h
             k += 1 __ idx __ k+1 ____ 0
 
         r.. k
@@ -47,14 +47,14 @@ c_ Solution(o..
         """
         __ n.. A: r.. 0
 
-        predicate = l.... a, b: b[0] > a[0] a.. b[1] > a[1]
+        predicate l.... a, b: b[0] > a[0] a.. b[1] > a[1]
         A.s..()
-        n = l..(A)
-        F = [1 ___ _ __ x..(n)]
+        n l..(A)
+        F [1 ___ _ __ x..(n)]
         ___ i __ x..(1, n
             ___ j __ x..(i
                 __ predicate(A[j], A[i]
-                    F[i] = m..(F[i], 1 + F[j])
+                    F[i] m..(F[i], 1 + F[j])
 
         r.. m..(F)
 

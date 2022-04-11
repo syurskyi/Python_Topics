@@ -33,9 +33,9 @@ Every value of a given or inserted node is between 0 and 5000.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 ____ c.. _______ d..
@@ -51,9 +51,9 @@ c_ CBTInserter:
         During insertion, insert the node to the first insertion candidate's
         child. Then, the inserting node is the last in the candidate queue
         """
-        candidates = d..()
-        root = root
-        q = [root]  # can also use deque
+        candidates d..()
+        root root
+        q [root]  # can also use deque
         w.... q:
             cur_q    # list
             ___ e __ q:
@@ -64,15 +64,15 @@ c_ CBTInserter:
                 __ n.. e.left o. n.. e.right:
                     # non-full node
                     candidates.a..(e)
-            q = cur_q
+            q cur_q
 
     ___ insert  v: i..) __ i..:
-        pi = candidates[0]
-        node = TreeNode(v)
+        pi candidates[0]
+        node TreeNode(v)
         __ n.. pi.left:
-            pi.left = node
+            pi.left node
         ____
-            pi.right = node
+            pi.right node
 
         __ pi.left a.. pi.right:
             candidates.popleft()

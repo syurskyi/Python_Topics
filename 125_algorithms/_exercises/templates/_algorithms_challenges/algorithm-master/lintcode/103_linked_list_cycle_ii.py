@@ -57,12 +57,12 @@ c_ Solution:
         will eventually meet
         otherwise its a list => at some point there will be no `node.next`
         """
-        slow, fast = head, head.next
+        slow, fast head, head.next
         w.... slow __ n.. fast:
             __ n.. fast o. n.. fast.next:
                 r..
-            slow = slow.next
-            fast = fast.next.next
+            slow slow.next
+            fast fast.next.next
 
         """
         at this point, slow meet fast
@@ -70,7 +70,7 @@ c_ Solution:
         the steps from the first node is equal to from meet node plus 1
         """
         w.... head __ n.. slow.next:
-            head = head.next
-            slow = slow.next
+            head head.next
+            slow slow.next
 
         r.. head

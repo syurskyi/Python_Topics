@@ -10,10 +10,10 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        j = 0
+        j 0
         ___ num __ nums:
             __ num != 0:
-                nums[j] = num
+                nums[j] num
                 j+=1
         ___ i __ r..(j, l..(nums:
-            nums[i] = 0
+            nums[i] 0

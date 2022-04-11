@@ -45,7 +45,7 @@ c_ ExamRoom:
         BST -> bisect sort
         O(N) per query
         """
-        N = N
+        N N
         idxes    # list  # sorted arry of taken idx
 
     ___ seat(self) __ i..:
@@ -53,26 +53,26 @@ c_ ExamRoom:
         similar to 849
         """
         __ n.. idxes:
-            ret_idx = 0
+            ret_idx 0
         ____
-            max_dist, ret_idx = 0, 0
+            max_dist, ret_idx 0, 0
             # begin
-            dist = idxes[0] - 0
+            dist idxes[0] - 0
             __ dist > max_dist:
-                max_dist = dist
-                ret_idx = 0
+                max_dist dist
+                ret_idx 0
             # middle
             ___ j __ r..(l..(idxes)-1
-                i = (idxes[j] + idxes[j+1]) // 2
-                dist = m..(a..(idxes[j] - i), a..(idxes[j+1] - i
+                i (idxes[j] + idxes[j+1]) // 2
+                dist m..(a..(idxes[j] - i), a..(idxes[j+1] - i
                 __ dist > max_dist:
-                    max_dist = dist
-                    ret_idx = i
+                    max_dist dist
+                    ret_idx i
             # end
-            dist = N-1 - idxes[-1]
+            dist N-1 - idxes[-1]
             __ dist > max_dist:
-                max_dist = dist
-                ret_idx = N-1
+                max_dist dist
+                ret_idx N-1
 
         b__.i.. (idxes, ret_idx)
         r.. ret_idx

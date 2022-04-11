@@ -8,7 +8,7 @@ class Point:
 
 
 c_ Solution:
-    V = (
+    V (
         (-2, -1),
         ( 2,  1),
         (-2,  1),
@@ -29,13 +29,13 @@ c_ Solution:
         __ n.. G o. n.. S o. n.. T:
             r.. -1
 
-        INFINITY = f__('inf')
-        m, n = l..(G), l..(G[0])
-        min_steps = [[INFINITY] * n ___ _ __ r..(m)]
+        INFINITY f__('inf')
+        m, n l..(G), l..(G[0])
+        min_steps [[INFINITY] * n ___ _ __ r..(m)]
 
-        queue = [S]
-        _queue = N..
-        _x = _y = steps = 0
+        queue [S]
+        _queue N..
+        _x _y steps 0
 
         w.... queue:
             _queue    # list
@@ -43,8 +43,8 @@ c_ Solution:
 
             ___ P __ queue:
                 ___ dx, dy __ V:
-                    _x = P.x + dx
-                    _y = P.y + dy
+                    _x P.x + dx
+                    _y P.y + dy
 
                     __ (0 <_ _x < m a.. 0 <_ _y < n a..
                         n.. G[_x][_y] a..
@@ -53,9 +53,9 @@ c_ Solution:
                         __ _x __ T.x a.. _y __ T.y:
                             r.. steps
 
-                        min_steps[_x][_y] = steps
+                        min_steps[_x][_y] steps
                         _queue.a..(Point(_x, _y
 
-            queue = _queue
+            queue _queue
 
         r.. -1

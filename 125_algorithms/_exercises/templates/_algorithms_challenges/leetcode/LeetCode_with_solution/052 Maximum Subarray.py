@@ -10,7 +10,7 @@ More practice:
 If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is
 more subtle.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ maxSubArray  A
         """
@@ -24,17 +24,17 @@ c_ Solution:
             r.. 0
 
         # in case of A = [-1]
-        largest = m..(A)
+        largest m..(A)
         __ largest<0:
             r.. largest
 
-        max_result = -1<<31
-        current_max = 0
+        max_result -1<<31
+        current_max 0
         ___ i __ r..(l..(A:
             __ current_max+A[i]>_0:
                 current_max+=A[i]
             ____
-                current_max = 0
-            max_result = m..(max_result, current_max)
+                current_max 0
+            max_result m..(max_result, current_max)
 
         r.. max_result

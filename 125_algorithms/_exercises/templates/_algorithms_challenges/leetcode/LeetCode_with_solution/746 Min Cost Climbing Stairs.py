@@ -32,12 +32,12 @@ c_ Solution:
             F[i-2] + cost[i-2]
             F[i-1] + cost[i-1]
         """
-        n = l..(cost)
-        F = [f__('inf') ___ _ __ r..(n+1)]
-        F[0] = 0
-        F[1] = 0
+        n l..(cost)
+        F [f__('inf') ___ _ __ r..(n+1)]
+        F[0] 0
+        F[1] 0
         ___ i __ r..(2, n+1
-            F[i] = m..(
+            F[i] m..(
                 F[i-2] + cost[i-2],
                 F[i-1] + cost[i-1]
             )

@@ -3,28 +3,28 @@ ____ c.. _______ d.., n..
 _______ __
 ____ u__.r.. _______ u..
 
-BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
-TMP = __.g.. TMP  /tmp
+BASE_URL 'https://bites-data.s3.us-east-2.amazonaws.com/'
+TMP __.g.. TMP  /tmp
 
-fname = 'movie_metadata.csv'
+fname 'movie_metadata.csv'
 #remote = os.path.join(BASE_URL, fname)
-local = __.p...j..(TMP, fname)
+local __.p...j..(TMP, fname)
 #u..(remote, local)
 
-MOVIE_DATA = local
-MIN_MOVIES = 4
-MIN_YEAR = 1960
+MOVIE_DATA local
+MIN_MOVIES 4
+MIN_YEAR 1960
 
-Movie = n..('Movie', 'title year score')
+Movie n..('Movie', 'title year score')
 
 
 ___ get_movies_by_director
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
-    director = d..(l..)
+    director d..(l..)
     w__ o.. local, encoding="utf-8") __ f:
-        movies = csv.DictReader(f)
+        movies csv.DictReader(f)
         ___ movie __ movies:
             __ movie 'title_year'  != '' a.. i..(movie 'title_year' ) > 1960:
                 director[movie 'director_name']].a..(
@@ -39,7 +39,7 @@ ___ get_movies_by_director
 ___ calc_mean_score(movies
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
-    total = 0
+    total 0
     ___ movie __ movies:
         total += f__(movie[2])
     r.. r..(total/l..(movies), 1)
@@ -54,7 +54,7 @@ ___ get_average_scores(directors
     local_list    # list
     ___ director __ directors:
         __ l..(directors[director]) >_ MIN_MOVIES: # each director
-            total = 0
+            total 0
             ___ i __ r..(l..(directors[director]:
                 #print(director, int(directors[director][i][1]))
                 __ directors[director][i][1] a.. i..(directors[director][i][1]) >1960:
@@ -63,7 +63,7 @@ ___ get_average_scores(directors
     r.. s..(local_list, key=l.... x: x[1], r.._T..
 
 
-director_dict = get_movies_by_director()
+director_dict get_movies_by_director()
 #print(len(director_dict))
 #print(type(director_dict['Sergio Leone'][0]))
 

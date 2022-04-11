@@ -12,9 +12,9 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ word __ words:
-            hashmap[word] = hashmap.g.. word, 0)+1
-        n = l..(words)
-        dp = [[] ___ _ __ r..(n+1)]
+            hashmap[word] hashmap.g.. word, 0)+1
+        n l..(words)
+        dp [[] ___ _ __ r..(n+1)]
         ___ word, freq __ hashmap.i..:
             dp[freq].a..(word)
         res    # list
@@ -27,7 +27,7 @@ c_ Solution(o..
         r.. res[:k]
     
     ___ test
-        testCases = [
+        testCases [
             [
                 ["i", "love", "leetcode", "i", "love", "coding"],
                 2,
@@ -40,7 +40,7 @@ c_ Solution(o..
         ___ words, k __ testCases:
             print('words: %s' % words)
             print('k: %s' % k)
-            result = topKFrequent(words, k)
+            result topKFrequent(words, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

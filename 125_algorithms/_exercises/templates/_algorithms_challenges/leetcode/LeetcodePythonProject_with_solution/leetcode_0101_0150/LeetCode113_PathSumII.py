@@ -7,9 +7,9 @@ Created on Feb 1, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ pathSum  root, sumVal
@@ -21,7 +21,7 @@ c_ Solution(o..
         result    # list
         __ n.. root:
             r.. result
-        elem = [root.val]
+        elem [root.val]
         dfs(result, elem, root, sumVal-root.val)
         r.. result
     
@@ -41,9 +41,9 @@ c_ Solution(o..
             elem.p.. )
     
     ___ test
-        root = TreeNode(5, TreeNode(4, TreeNode(11, TreeNode(7), TreeNode(2))), TreeNode(8, TreeNode(13), TreeNode(4, TreeNode(5), TreeNode(1))))
-        sumVal = 22
-        result = pathSum(root, sumVal)
+        root TreeNode(5, TreeNode(4, TreeNode(11, TreeNode(7), TreeNode(2))), TreeNode(8, TreeNode(13), TreeNode(4, TreeNode(5), TreeNode(1))))
+        sumVal 22
+        result pathSum(root, sumVal)
         print('result: %s' % (result
 
 __ _____ __ _____

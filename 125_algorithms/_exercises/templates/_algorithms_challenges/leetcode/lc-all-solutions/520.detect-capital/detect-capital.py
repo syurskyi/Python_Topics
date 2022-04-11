@@ -7,10 +7,10 @@ c_ Solution(o..
     :type word: str
     :rtype: bool
     """
-    ud = s..(s__.uppercase)
-    ld = s..(s__.lowercase)
-    n = l..(word)
-    cap = 0
+    ud s..(s__.uppercase)
+    ld s..(s__.lowercase)
+    n l..(word)
+    cap 0
     ___ c __ word:
       __ c __ ud:
         cap += 1

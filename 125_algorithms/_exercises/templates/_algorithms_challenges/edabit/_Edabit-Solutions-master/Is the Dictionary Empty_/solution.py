@@ -7,7 +7,7 @@ ___ is_empty(dictionary
 
 ___ test
     print("Test has started")
-    d.. = {"Name": "Eleven"}
+    d.. {"Name": "Eleven"}
     __ is_empty(d..) != F..:
         print("error1")
     b_dict    # dict

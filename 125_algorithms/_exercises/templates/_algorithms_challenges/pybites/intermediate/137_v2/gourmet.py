@@ -11,7 +11,7 @@ _______ i..
 
 
 
-CHEESES = [
+CHEESES [
     "Red Leicester",
     "Tilsit",
     "Caerphilly",
@@ -57,7 +57,7 @@ CHEESES = [
     "Limburger",
 ]
 
-RED_WINES = [
+RED_WINES [
     "Châteauneuf-du-Pape",  # 95% of production is red
     "Syrah",
     "Merlot",
@@ -72,7 +72,7 @@ RED_WINES = [
     "Garnacha",
 ]
 
-WHITE_WINES = [
+WHITE_WINES [
     "Chardonnay",
     "Sauvignon blanc",
     "Semillon",
@@ -82,7 +82,7 @@ WHITE_WINES = [
     "Riesling",
 ]
 
-SPARKLING_WINES = [
+SPARKLING_WINES [
     "Cava",
     "Champagne",
     "Crémant d’Alsace",
@@ -92,20 +92,20 @@ SPARKLING_WINES = [
     "Lambrusco",
 ]
 
-mapping = {'red': RED_WINES,'white': WHITE_WINES,'sparkling': SPARKLING_WINES,'all': RED_WINES+WHITE_WINES+SPARKLING_WINES}
+mapping {'red': RED_WINES,'white': WHITE_WINES,'sparkling': SPARKLING_WINES,'all': RED_WINES+WHITE_WINES+SPARKLING_WINES}
 
 
 
 ___ _calculate_similarity(wine,cheese
-    wine_length = l..(wine)
-    cheese_length = l..(cheese)
+    wine_length l..(wine)
+    cheese_length l..(cheese)
     
-    counts_wine = C..(wine.l..
-    counts_cheese = C..(cheese.l..
+    counts_wine C..(wine.l..
+    counts_cheese C..(cheese.l..
 
-    numerator = s..((counts_wine & counts_cheese).values
+    numerator s..((counts_wine & counts_cheese).values
 
-    denominator = 1 + (wine_length - cheese_length)**2
+    denominator 1 + (wine_length - cheese_length)**2
 
     r.. numerator/denominator
 
@@ -118,11 +118,11 @@ ___ best_match_per_wine(wine_type="all"
         r.. V...("Invalid Wie TYpe")
 
 
-    values = mapping[wine_type]
+    values mapping[wine_type]
 
     
 
-    maximum = m..(i...product(values,CHEESES),key=l.... x: _calculate_similarity(*x
+    maximum m..(i...product(values,CHEESES),key=l.... x: _calculate_similarity(*x
 
 
     r.. (*maximum,_calculate_similarity(*maximum
@@ -148,13 +148,13 @@ ___ match_wine_5cheeses
     ('Zinfandel', ['Caithness', 'Bel Paese', 'Ilchester', 'Limburger', 'Lancashire'])
     ]
     """
-    all_wines = mapping 'all'
-    wine_cheeses = d..(l..)
+    all_wines mapping 'all'
+    wine_cheeses d..(l..)
     
     results    # list
 
     ___ wine __ all_wines:
-        sorted_list = s..(CHEESES,key=l.... x: (-(_calculate_similarity(wine,x,x
+        sorted_list s..(CHEESES,key=l.... x: (-(_calculate_similarity(wine,x,x
         results.a..((wine,sorted_list[:5]
 
     

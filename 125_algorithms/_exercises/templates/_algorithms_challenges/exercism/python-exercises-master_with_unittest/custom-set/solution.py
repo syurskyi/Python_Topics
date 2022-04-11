@@ -1,6 +1,6 @@
 c_ CustomSet(o..
     ___ - , elements=[]
-        elements = l..(elements)
+        elements l..(elements)
 
     ___ isempty
         r.. n.. elements
@@ -25,21 +25,21 @@ c_ CustomSet(o..
             elements.a..(element)
 
     ___ intersection  other
-        result = CustomSet()
+        result CustomSet()
         ___ x __ self:
             __ x __ other:
                 result.add(x)
         r.. result
 
     ___ __sub__  other
-        result = CustomSet()
+        result CustomSet()
         ___ x __ self:
             __ x n.. __ other:
                 result.add(x)
         r.. result
 
     ___ __add__  other
-        result = CustomSet(elements)
+        result CustomSet(elements)
         ___ x __ other:
             result.add(x)
         r.. result

@@ -9,11 +9,11 @@ c_ Solution(o..
         :type graph: List[List[int]]
         :rtype: List[List[int]]
         """
-        n = l..(graph)
-        queue = [[0]]
+        n l..(graph)
+        queue [[0]]
         res    # list
         w.... queue:
-            p.. = queue.p.. 0)
+            p.. queue.p.. 0)
             __ p..[-1] __ n-1:
                 res.a..(l..(p..
             ____
@@ -22,11 +22,11 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [[1,2], [3], [3], []],
         ]
         ___ graph __ testCases:
-            result = allPathsSourceTarget(graph)
+            result allPathsSourceTarget(graph)
             print('result: %s' % result)
             print('-='*30+'-')
 

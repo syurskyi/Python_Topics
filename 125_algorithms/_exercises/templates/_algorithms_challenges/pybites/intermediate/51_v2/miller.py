@@ -1,8 +1,8 @@
 ____ d__ _______ d__
 
 # https://pythonclock.org/
-PY2_DEATH_DT = d__ y.._2020,  m.._1,  d.._1)
-BITE_CREATED_DT = d__.s..('2018-02-26 23:24:04', '%Y-%m-%d %H:%M:%S')
+PY2_DEATH_DT d__ y.._2020,  m.._1,  d.._1)
+BITE_CREATED_DT d__.s..('2018-02-26 23:24:04', '%Y-%m-%d %H:%M:%S')
 
 
 ___ py2_earth_hours_left(start_date=BITE_CREATED_DT
@@ -10,7 +10,7 @@ ___ py2_earth_hours_left(start_date=BITE_CREATED_DT
        left on Planet Earth (calculated from start_date)"""
 
 
-    diff = PY2_DEATH_DT - start_date
+    diff PY2_DEATH_DT - start_date
 
     #td = PY2_DEATH_DT - start_date
    # return round(td.days * 24 + td.seconds / 60 / 60, 2)
@@ -24,13 +24,13 @@ ___ py2_miller_min_left(start_date=BITE_CREATED_DT
        left on Planet Miller (calculated from start_date)"""
 
         
-    hours = py2_earth_hours_left(start_date)
+    hours py2_earth_hours_left(start_date)
 
 
-    number_of_years = hours / (365 * 24)
+    number_of_years hours / (365 * 24)
 
 
-    hours_miller = number_of_years / 7
+    hours_miller number_of_years / 7
 
 
 

@@ -4,7 +4,7 @@ c_ TriangleError(E..
 
 c_ Triangle(o..
     ___ - , x, y, z
-        sides = (x, y, z)
+        sides (x, y, z)
 
         __ _invalid_lengths() o. _violates_inequality
             r.. TriangleError
@@ -13,7 +13,7 @@ c_ Triangle(o..
         r.. any([side <_ 0 ___ side __ sides])
 
     ___ _violates_inequality
-        x, y, z = sides
+        x, y, z sides
         r.. any([
             x + y <_ z,
             x + z <_ y,
@@ -21,7 +21,7 @@ c_ Triangle(o..
         ])
 
     ___ kind
-        distinct = l..(s..(sides
+        distinct l..(s..(sides
         __ distinct __ 1:
             r.. 'equilateral'
         ____ distinct __ 2:

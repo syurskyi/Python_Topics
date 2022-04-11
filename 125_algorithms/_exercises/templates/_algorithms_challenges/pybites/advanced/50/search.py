@@ -5,9 +5,9 @@ ____ t__ _______ mktime
 
 _______ feedparser
 
-FEED = 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
+FEED 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
 
-Entry = n..('Entry', 'date title link tags')
+Entry n..('Entry', 'date title link tags')
 
 
 ___ _convert_struct_time_to_dt(stime
@@ -17,7 +17,7 @@ ___ _convert_struct_time_to_dt(stime
     -> date(2016, 12, 28)
     """
 
-    dt = d__.d__.fromtimestamp(mktime(stime
+    dt d__.d__.fromtimestamp(mktime(stime
 
     r.. dt.date()
 
@@ -27,21 +27,21 @@ ___ get_feed_entries(feed=FEED
     """Use feedparser to parse PyBites RSS feed.
        Return a list of Entry namedtuples (date = date, drop time part)
     """
-    d = feedparser.p..(feed)
-    entries = d.entries
+    d feedparser.p..(feed)
+    entries d.entries
     
     all_entries =[]
     ___ entry __ entries:
-        title = entry.title
-        link = entry.link
-        date = entry.published_parsed
-        tags = entry.tags
-        tags = [t.g.. 'term').l.. ___ t __ tags]
+        title entry.title
+        link entry.link
+        date entry.published_parsed
+        tags entry.tags
+        tags [t.g.. 'term').l.. ___ t __ tags]
 
-        date = _convert_struct_time_to_dt(date)
+        date _convert_struct_time_to_dt(date)
 
 
-        entry = Entry(date,title,link,tags)
+        entry Entry(date,title,link,tags)
         all_entries.a..(entry)
 
     r.. all_entries
@@ -63,13 +63,13 @@ ___ filter_entries_by_tag(s.., entry
        3. Else: match if search is in tags
     """
         
-    entry_tags = entry.tags
+    entry_tags entry.tags
     __ '&' __ s..:
-        splits = s...s..('&')
+        splits s...s..('&')
 
         r.. a..(s...l.. __ entry_tags ___ s.. __ splits)
     ____ '|' __ s..:
-        splits = s...s..('|')
+        splits s...s..('|')
         r.. any(s...l.. __ entry_tags ___ s.. __ splits)
     ____
         r.. s...l.. __ entry_tags
@@ -86,11 +86,11 @@ ___ main
        6. Secondly, print the number of matches: 'n entries matched'
           (use entry if only 1 match)
     """
-    entries = get_feed_entries()
+    entries get_feed_entries()
     
     entries.s..(key=l.... x: x.date)
     w... T...
-        term = input("Search Term? ")
+        term input("Search Term? ")
         __ term __ '':
             print('Please provide a search term')
             _____
@@ -99,9 +99,9 @@ ___ main
             _____
         
         
-        matches = 0
+        matches 0
         ___ entry __ entries:
-            found = filter_entries_by_tag(term,entry)
+            found filter_entries_by_tag(term,entry)
             __ found:
                 print(entry.title)
                 matches += 1

@@ -10,15 +10,15 @@ c_ Solution(o..
         :type x: int
         :rtype: int
         """
-        start, end = 1, x
+        start, end 1, x
         w.... start <_ end:
-            mid = (start+end)/2
+            mid (start+end)/2
             __ mid*mid __ x:
                 r.. mid
             ____ mid*mid < x:
-                start = mid+1
+                start mid+1
             ____
-                end = mid-1
+                end mid-1
         r.. start __ start __ 0 ____ start-1
     
     ___ test

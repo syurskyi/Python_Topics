@@ -4,11 +4,11 @@ _______ __
 ____ bs4 _______ BeautifulSoup
 _______ r__
 
-AMAZON = "amazon.com"
+AMAZON "amazon.com"
 # static copy
-TIM_BLOG = ('https://bites-data.s3.us-east-2.amazonaws.com/'
+TIM_BLOG ('https://bites-data.s3.us-east-2.amazonaws.com/'
             'tribe-mentors-books.html')
-MIN_COUNT = 3
+MIN_COUNT 3
 
 
 ___ load_page
@@ -25,15 +25,15 @@ ___ get_top_books(content_ N..
        count is at least MIN_COUNT
     """
     __ content __ N..
-        content = load_page()
+        content load_page()
 
-    counts = C..()
-    soup = BeautifulSoup(content,'html.parser')
+    counts C..()
+    soup BeautifulSoup(content,'html.parser')
 
     links =  soup.find_all('a',href=__.c..(r'amazon.com'
 
     ___ link __ links:
-        title = link.getText(s..=T..)
+        title link.getText(s..=T..)
         counts[title] += 1
 
     

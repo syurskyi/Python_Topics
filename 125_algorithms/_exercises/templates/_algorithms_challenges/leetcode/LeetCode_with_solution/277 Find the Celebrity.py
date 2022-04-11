@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 ___ knows(a, b
@@ -18,17 +18,17 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        i = 0
-        j = n-1
+        i 0
+        j n-1
         w.... i < j:
-            nxt_i, nxt_j = i, j
+            nxt_i, nxt_j i, j
             __ knows(i, j) o. n.. knows(j, i
                 nxt_i += 1
             __ knows(j, i) o. n.. knows(i, j
                 nxt_j -_ 1
-            i, j = nxt_i, nxt_j
+            i, j nxt_i, nxt_j
 
-        celebrity = i
+        celebrity i
         ___ i __ x..(n
             __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i:
                 r.. -1
@@ -43,11 +43,11 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        V = s..(r..(n
+        V s..(r..(n
 
         w.... l..(V) > 1:
-            a = V.p.. )
-            b = V.p.. )
+            a V.p.. )
+            b V.p.. )
             __ knows(a, b) a.. n.. knows(b, a
                 V.add(b)
             ____ n.. knows(a, b) a.. knows(b, a
@@ -56,7 +56,7 @@ c_ Solution(o..
         __ n.. V:
             r.. -1
 
-        celebrity = V.p.. )
+        celebrity V.p.. )
         ___ i __ x..(n
             __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i:
                 r.. -1

@@ -10,15 +10,15 @@ c_ Solution(o..
     :type head: ListNode
     :rtype: ListNode
     """
-    dummy = ListNode(-1)
-    dummy.next = head
-    p = dummy
+    dummy ListNode(-1)
+    dummy.next head
+    p dummy
     w.... p.next:
       __ p.next.next a.. p.next.val __ p.next.next.val:
-        z = p.next
+        z p.next
         w.... z a.. z.next a.. z.val __ z.next.val:
-          z = z.next
-        p.next = z.next
+          z z.next
+        p.next z.next
       ____
-        p = p.next
+        p p.next
     r.. dummy.next

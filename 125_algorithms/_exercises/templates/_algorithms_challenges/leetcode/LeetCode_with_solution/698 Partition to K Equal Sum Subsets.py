@@ -24,12 +24,12 @@ c_ Solution:
         """
         resurive search
         """
-        s = s..(nums)
+        s s..(nums)
         __ s % k != 0:
             r.. F..
 
-        target = s // k
-        visited = [F.. ___ _ __ nums]
+        target s // k
+        visited [F.. ___ _ __ nums]
         r.. dfs(nums, 0, N.., target, visited, k)
 
     ___ dfs  nums, start_idx, cur_sum, target_sum, visited, k
@@ -51,13 +51,13 @@ c_ Solution:
         ___ i __ r..(start_idx, l..(nums:
             __ n.. visited[i]:
                 # corner case target_sum is 0
-                visited[i] = T..
-                nxt_sum = (cur_sum o. 0) + nums[i]
+                visited[i] T..
+                nxt_sum (cur_sum o. 0) + nums[i]
                 # error when cur_sum or 0 + nums[i]
                 # arithmetic operator has higher precedence than logic operator
                 __ dfs(nums, i + 1, nxt_sum, target_sum, visited, k
                     r.. T..
-                visited[i] = F..
+                visited[i] F..
 
         r.. F..
 
@@ -67,12 +67,12 @@ c_ Solution_TLE:
         """
         resurive search
         """
-        s = s..(nums)
+        s s..(nums)
         __ s % k != 0:
             r.. F..
 
-        target = s // k
-        visited = [F.. ___ _ __ nums]
+        target s // k
+        visited [F.. ___ _ __ nums]
         r.. dfs(nums, N.., target, visited, k)
 
     ___ dfs  nums, cur_sum, target_sum, visited, k
@@ -91,13 +91,13 @@ c_ Solution_TLE:
         ___ i __ r..(l..(nums:
             __ n.. visited[i]:
                 # corner case target_sum is 0
-                visited[i] = T..
-                nxt_sum = (cur_sum o. 0) + nums[i]
+                visited[i] T..
+                nxt_sum (cur_sum o. 0) + nums[i]
                 # error when cur_sum or 0 + nums[i]
                 # arithmetic operator has higher precedence than logic operator
                 __ dfs(nums, nxt_sum, target_sum, visited, k
                     r.. T..
-                visited[i] = F..
+                visited[i] F..
 
         r.. F..
 

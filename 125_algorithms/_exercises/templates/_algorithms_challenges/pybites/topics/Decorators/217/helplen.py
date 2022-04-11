@@ -10,7 +10,7 @@ ___ get_len_help_text(builtin: BuiltinFunctionType) __ i..:
     """
     __ t..(builtin) __ n.. BuiltinFunctionType:
         r.. V...
-    std_out = StringIO()
+    std_out StringIO()
     w__ redirect_stdout(std_out
         help(builtin)
     r.. l..(std_out.getvalue

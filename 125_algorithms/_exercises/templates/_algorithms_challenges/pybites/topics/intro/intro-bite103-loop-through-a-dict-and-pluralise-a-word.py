@@ -11,7 +11,7 @@ Your code should work for other message strings as well.
 '''
 
 
-games_won = d..(sara=0, bob=1, tim=5, julian=3, jim=1)
+games_won d..(sara=0, bob=1, tim=5, julian=3, jim=1)
 
 
 ___ my_print_game_stats(games_won=games_won
@@ -32,7 +32,7 @@ ___ print_game_stats(games_won=games_won
        print how many games each person has won, pluralize
        'game' based on number"""
     ___ name, num_games __ games_won.i..:
-        games = "game" __ num_games __ 1 ____ "games"
+        games "game" __ num_games __ 1 ____ "games"
         print _*{name} has won {num_games} {games}')
 
 print_game_stats()

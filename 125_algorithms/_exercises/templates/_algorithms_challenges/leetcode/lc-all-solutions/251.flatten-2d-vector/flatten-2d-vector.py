@@ -5,8 +5,8 @@ c_ Vector2D(o..
     Initialize your data structure here.
     :type vec2d: List[List[int]]
     """
-    x = y = 0
-    m = vec2d
+    x y 0
+    m vec2d
 
   ___ next
     """
@@ -19,10 +19,10 @@ c_ Vector2D(o..
     """
     :rtype: bool
     """
-    m = m
+    m m
     w.... x < l..(m) a.. y >_ l..(m[x]
       x += 1
-      y = 0
+      y 0
     r.. x < l..(m)
 
 # Your Vector2D object will be instantiated and called as such:

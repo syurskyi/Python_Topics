@@ -44,9 +44,9 @@ Each node's value will be between 0 and 1000.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 ____ c.. _______ d..
@@ -54,13 +54,13 @@ ____ c.. _______ d..
 
 c_ Solution:
     ___ -
-        mp = d..(l..)  # element (-Y, val)  # from left to right, top to bottom
+        mp d..(l..)  # element (-Y, val)  # from left to right, top to bottom
 
     ___ verticalTraversal  root: TreeNode) __ L..[L..[i..]]:
         dfs(root, 0, 0)
         ret    # list
-        mn = m..(mp)
-        mx = m..(mp)
+        mn m..(mp)
+        mx m..(mp)
         ___ i __ r..(mn, mx+1
             ret.a..([
                 val

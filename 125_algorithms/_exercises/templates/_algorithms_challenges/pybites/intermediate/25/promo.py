@@ -1,6 +1,6 @@
 _______ r__
 
-BITES = {6: 'PyBites Die Hard',
+BITES {6: 'PyBites Die Hard',
          7: 'Parsing dates from logs',
          9: 'Palindromes',
          10: 'Practice exceptions',
@@ -15,7 +15,7 @@ BITES = {6: 'PyBites Die Hard',
          19: 'Write a simple property',
          20: 'Write a context manager',
          21: 'Query a nested data structure'}
-BITES_DONE = {6, 10, 16, 18, 21}
+BITES_DONE {6, 10, 16, 18, 21}
 
 
 c_ NoBitesAvailable(E..
@@ -26,13 +26,13 @@ c_ Promo:
 
     ___ -
         # updated Bite to make local copies (avoid globals!)
-        all_bites = BITES.c..
-        bites_done = BITES_DONE.c..
+        all_bites BITES.c..
+        bites_done BITES_DONE.c..
 
     ___ _pick_random_bite
         """Pick a random Bite that is not done yet, if all
            Bites are done, raise a NoBitesAvailable exception"""
-        bite_key = r__.c..(l..(all_bites.k.. )))
+        bite_key r__.c..(l..(all_bites.k.. )))
 
         __ l..(all_bites) != l..(bites_done
             __ bite_key n.. __ bites_done:
@@ -46,6 +46,6 @@ c_ Promo:
     ___ new_bite
         """Get a random Bite using _pick_random_bite,
            add it to self.bites_done, then return it"""
-        bite = _pick_random_bite()
+        bite _pick_random_bite()
         bites_done.add(bite)
         r.. bite

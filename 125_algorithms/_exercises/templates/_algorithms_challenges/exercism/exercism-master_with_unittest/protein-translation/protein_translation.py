@@ -9,7 +9,7 @@
 # UGG                   | Tryptophan
 # UAA, UAG, UGA         | STOP
 
-CODON_TO_PROTEIN = {
+CODON_TO_PROTEIN {
     "AUG": "Methionine",
     "UUU": "Phenylalanine",
     "UUC": "Phenylalanine",
@@ -26,13 +26,13 @@ CODON_TO_PROTEIN = {
     "UGG": "Tryptophan"
 }
 
-STOP_CODONS = s..({"UAA", "UAG", "UGA"})
-CODON_LENGTH = 3
+STOP_CODONS s..({"UAA", "UAG", "UGA"})
+CODON_LENGTH 3
 
 
 ___ proteins(strand
     polypeptide    # list
-    codons = split_into_codons(strand)
+    codons split_into_codons(strand)
 
     ___ codon __ codons:
         __ (codon __ STOP_CODONS

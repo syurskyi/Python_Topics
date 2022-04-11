@@ -2,7 +2,7 @@ ____ c.. _______ d..
 ____ directors _______ (get_movies_by_director, get_average_scores,
                        calc_mean_score, Movie)
 
-director_movies = get_movies_by_director()
+director_movies get_movies_by_director()
 
 
 ___ test_get_movies_by_director
@@ -18,22 +18,22 @@ ___ test_director_movies_data_structure
 
 
 ___ test_calc_mean_score
-    movies_sergio = director_movies 'Sergio Leone'
-    movies_nolan = director_movies 'Christopher Nolan'
+    movies_sergio director_movies 'Sergio Leone'
+    movies_nolan director_movies 'Christopher Nolan'
     ... calc_mean_score(movies_sergio) __ 8.5
     ... calc_mean_score(movies_nolan) __ 8.4
 
 
 ___ test_get_average_scores
     # top 2
-    scores = get_average_scores(director_movies)
+    scores get_average_scores(director_movies)
 
     ... scores[0] __ ('Sergio Leone', 8.5)
     ... scores[1] __ ('Christopher Nolan', 8.4)
 
     # order / score might slightly change depending the way the mean
     # is calculated so only test director names in top scores
-    directors = {score[0] ___ score __ scores[2:13]}
+    directors {score[0] ___ score __ scores[2:13]}
 
     ... 'Quentin Tarantino' __ directors
     ... 'Hayao Miyazaki' __ directors

@@ -1,6 +1,6 @@
 c_ House:
 
-    LYRICS = [("built", "house that Jack"),
+    LYRICS [("built", "house that Jack"),
               ("ate", "malt"),
               ("killed", "rat"),
               ("worried", "cat"),
@@ -13,7 +13,7 @@ c_ House:
               ("belonged to", "farmer sowing his corn"),
               ("", "horse and the hound and the horn")]
 
-    LAST_LINE = "that lay in the house that Jack built."
+    LAST_LINE "that lay in the house that Jack built."
 
     @classmethod
     ___ rhyme(cls

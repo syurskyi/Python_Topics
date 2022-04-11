@@ -6,7 +6,7 @@ _______ r.. __ se
 
 
 ___ test_basic_series
-    ser = se.b..
+    ser se.b..
     ... isi..(ser, ?.S..)
     ... ?.n.. "Fred"
     ... ?.dtype __ "int64"
@@ -14,14 +14,14 @@ ___ test_basic_series
     ... l..(?.values) __ 5
 
 ___ test_floats_series
-    ser = se.float_series()
+    ser se.float_series()
     ... isi..(ser, ?.S..)
     ... ?.dtype __ "float64"
     ... l..(ser) __ 1001
     ... ?.s..() __ 500.5
 
 ___ test_alpha_index_series
-    ser = se.a..
+    ser se.a..
     ... isi..(ser, ?.S..)
     ... ?.dtype __ "int64"
     ... l..(ser) __ 26
@@ -29,7 +29,7 @@ ___ test_alpha_index_series
     ... a..(c __ s__.a.. ___ c __ ?.index)
 
 ___ test_object_values_series
-    ser = se.o..
+    ser se.o..
     ... isi..(ser, ?.S..)
     ... l..(ser) __ 26
     ... a..(c __ s__.a.. ___ c __ ?.values)

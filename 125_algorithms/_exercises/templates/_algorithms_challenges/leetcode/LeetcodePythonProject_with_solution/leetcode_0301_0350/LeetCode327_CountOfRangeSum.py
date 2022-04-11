@@ -5,27 +5,27 @@ Created on Mar 18, 2017
 '''
 c_ Solution(o..
     ___ countRangeSum  nums, lower, upper
-        first = [0]
+        first [0]
         ___ num __ nums:
             first.a..(first[-1]+num)
         r.. mergeSort(0, l..(first), first, lower, upper)
     
     ___ mergeSort  l, r, first, lower, upper
-        mid = (l+r)//2
+        mid (l+r)//2
         __ mid __ l:
             r.. 0
-        count = mergeSort(l, mid, first, lower, upper)+\
+        count mergeSort(l, mid, first, lower, upper)+\
             mergeSort(mid, r, first, lower, upper)
-        i, j = mid, mid
+        i, j mid, mid
         ___ left __ first[l:mid]:
             w.... i < r a.. first[i]-left <  lower: i+=1
             w.... j < r a.. first[j]-left <_ upper: j+=1
             count += j-i
-        first[l:r] = s..(first[l:r])
+        first[l:r] s..(first[l:r])
         r.. count
     
     ___ test
-        testCases = [
+        testCases [
             (
                 [-2,5,-1],
                 [-2, 2],
@@ -43,7 +43,7 @@ c_ Solution(o..
             print('nums: %s' % (nums
             print('lower: %s' % (lower
             print('upper: %s' % (upper
-            result = countRangeSum(nums, lower, upper)
+            result countRangeSum(nums, lower, upper)
             print('result: %s' % (result
             print('-='*20+'-')
 

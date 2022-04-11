@@ -7,7 +7,7 @@ Pairs wines and cheeses by similarity of wine name and cheese name.
 ____ c.. _______ C..
 _______ o..
 
-CHEESES = [
+CHEESES [
     "Red Leicester",
     "Tilsit",
     "Caerphilly",
@@ -53,7 +53,7 @@ CHEESES = [
     "Limburger",
 ]
 
-RED_WINES = [
+RED_WINES [
     "Châteauneuf-du-Pape",  # 95% of production is red
     "Syrah",
     "Merlot",
@@ -68,7 +68,7 @@ RED_WINES = [
     "Garnacha",
 ]
 
-WHITE_WINES = [
+WHITE_WINES [
     "Chardonnay",
     "Sauvignon blanc",
     "Semillon",
@@ -78,7 +78,7 @@ WHITE_WINES = [
     "Riesling",
 ]
 
-SPARKLING_WINES = [
+SPARKLING_WINES [
     "Cava",
     "Champagne",
     "Crémant d’Alsace",
@@ -95,31 +95,31 @@ ___ best_match_per_wine(wine_type="all"
     """
 
     __ wine_type __ "red":
-        wines = RED_WINES
+        wines RED_WINES
     ____ wine_type __ "white":
-        wines = WHITE_WINES
+        wines WHITE_WINES
     ____ wine_type __ "sparkling":
-        wines = SPARKLING_WINES
+        wines SPARKLING_WINES
     ____ wine_type __ "all":
-        wines = RED_WINES + WHITE_WINES + SPARKLING_WINES
+        wines RED_WINES + WHITE_WINES + SPARKLING_WINES
     ____
         r.. V...
 
-    max_wine = ""
-    max_cheese = ""
-    max_cheese_score = 0
+    max_wine ""
+    max_cheese ""
+    max_cheese_score 0
 
     ___ wine __ wines:
         ___ cheese __ CHEESES:
 
-            match_score = s..((C..(wine.l.. & C..(cheese.l..
+            match_score s..((C..(wine.l.. & C..(cheese.l..
             .values
-            similarity_score = match_score / (1 + pow(l..(wine) - l..(cheese), 2
+            similarity_score match_score / (1 + pow(l..(wine) - l..(cheese), 2
 
             __ similarity_score > max_cheese_score:
-                max_wine = wine
-                max_cheese = cheese
-                max_cheese_score = match_score
+                max_wine wine
+                max_cheese cheese
+                max_cheese_score match_score
 
     r.. (max_wine, max_cheese, max_cheese_score)
 
@@ -135,20 +135,20 @@ ___ match_wine_5cheeses
     ('Zinfandel', ['Caithness', 'Bel Paese', 'Ilchester', 'Limburger', 'Lancashire'])
     ]
     """
-    all_wines = RED_WINES + WHITE_WINES + SPARKLING_WINES
+    all_wines RED_WINES + WHITE_WINES + SPARKLING_WINES
     wine_match_scoring    # dict
     ___ wine __ all_wines:
         wine_match_scoring[wine]    # list
         ___ cheese __ CHEESES:
-            match_score = s..((C..(wine.l.. & C..(cheese.l..
+            match_score s..((C..(wine.l.. & C..(cheese.l..
             .values
-            similarity_score = match_score / (1 + pow(l..(wine) - l..(cheese), 2
+            similarity_score match_score / (1 + pow(l..(wine) - l..(cheese), 2
             wine_match_scoring[wine].a..((cheese, similarity_score
 
     best_5matches    # list
     ___ wine, cheeses_scored __ wine_match_scoring.i..:
-        cheese = s..(cheeses_scored, key=operator.i.. 1), r.._T..[:10]
-        cheese = s..(cheese, key=l.... x: (-x[1], x[0][:5]
+        cheese s..(cheeses_scored, key=operator.i.. 1), r.._T..[:10]
+        cheese s..(cheese, key=l.... x: (-x[1], x[0][:5]
         best_5matches.a..((wine, [name ___ name, score __ cheese]
 
     r.. s..(best_5matches)

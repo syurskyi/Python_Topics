@@ -29,7 +29,7 @@ c_ Solution:
         __ n <_ 0:
             r.. 0
 
-        _sum = 0
+        _sum 0
         ___ i __ r..(n
             _sum += i
             __ _sum >_ n:
@@ -59,7 +59,7 @@ c_ Solution:
         __ n <_ 0:
             r.. 0
 
-        x = i..(sqrt(2 * n
+        x i..(sqrt(2 * n
         w.... x * (x + 1) // 2 < n:
             x += 1
 

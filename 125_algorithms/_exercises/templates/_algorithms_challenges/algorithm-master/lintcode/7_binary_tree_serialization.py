@@ -8,19 +8,19 @@ class TreeNode:
 
 
 c_ Solution:
-    EMPTY = '#'
+    EMPTY '#'
 
     ___ serialize  root
         """Encodes a tree to a single string.
         :type root: TreeNode
         :rtype: str
         """
-        TEMPLATE = '{{{}}}'  # {{, }} is to escape brackets
+        TEMPLATE '{{{}}}'  # {{, }} is to escape brackets
         __ n.. root:
             r.. TEMPLATE.f..('')
 
         vals    # list
-        queue = [root]
+        queue [root]
 
         ___ node __ queue:
             __ n.. node:
@@ -49,12 +49,12 @@ c_ Solution:
 
             r..
 
-        vals = data[1:-1].s..(',')
-        n = l..(vals)
-        i = 0
+        vals data[1:-1].s..(',')
+        n l..(vals)
+        i 0
 
-        root = TreeNode(i..(vals[i]
-        queue = [root]
+        root TreeNode(i..(vals[i]
+        queue [root]
 
         ___ node __ queue:
             ___ branch __ ('left', 'right'

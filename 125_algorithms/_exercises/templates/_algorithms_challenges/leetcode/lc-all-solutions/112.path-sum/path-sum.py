@@ -15,10 +15,10 @@ c_ Solution(o..
     :rtype: bool
     """
     __ root:
-      queue = d..([(root, root.val)])
+      queue d..([(root, root.val)])
       w.... queue:
-        p, s = queue.popleft()
-        left, right = p.left, p.right
+        p, s queue.popleft()
+        left, right p.left, p.right
         __ left:
           queue.a..((p.left, s + p.left.val
         __ right:

@@ -3,11 +3,11 @@
 
 
 ___ reverseArray(arr
-    result = arr[::-1]
+    result arr[::-1]
     r.. result
 
 
-arrСount = i..(input
-arr = l.. m..(i.., input().r..().s..()))
-result = reverseArray(arr)
+arrСount i..(input
+arr l.. m..(i.., input().r..().s..()))
+result reverseArray(arr)
 print(*result)

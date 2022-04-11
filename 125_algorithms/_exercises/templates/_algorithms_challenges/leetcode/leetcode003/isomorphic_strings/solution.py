@@ -28,22 +28,22 @@ c_ Solution(o..
         d    # dict
         ___ i, c __ e..(s
             __ c n.. __ d:
-                d[c] = t[i]
+                d[c] t[i]
             ____
                 __ d[c] != t[i]:
                     r.. F..
         d    # dict
         ___ i, c __ e..(t
             __ c n.. __ d:
-                d[c] = s[i]
+                d[c] s[i]
             ____
                 __ d[c] != s[i]:
                     r.. F..
         r.. T..
 
 
-s = Solution()
-f = s.isIsomorphic
+s Solution()
+f s.isIsomorphic
 print(f('ab', 'aa'
 print(f('egg', 'add'
 print(f('foo', 'bar'

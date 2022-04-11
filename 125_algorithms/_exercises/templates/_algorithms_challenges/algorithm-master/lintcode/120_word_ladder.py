@@ -27,23 +27,23 @@ c_ Solution:
         __ e n.. __ D:
             D.a..(e)
 
-        n = l..(s)
-        next_words = [N..] * n
+        n l..(s)
+        next_words [N..] * n
         ___ i __ r..(n
-            next_words[i] = _words    # dict
+            next_words[i] _words    # dict
             ___ word __ D:
-                key = word[:i] + word[i + 1:]
+                key word[:i] + word[i + 1:]
                 __ key n.. __ _words:
-                    _words[key] = s..()
+                    _words[key] s..()
                 _words[key].add(word)
 
-        queue = [e]
-        distance = {e: 1}
+        queue [e]
+        distance {e: 1}
         ___ word __ queue:
             ___ _word __ get_next_word(word, next_words
                 __ _word __ distance:
                     _____
-                distance[_word] = distance[word] + 1
+                distance[_word] distance[word] + 1
                 __ _word __ s:
                     r.. distance[_word]
                 queue.a..(_word)
@@ -52,7 +52,7 @@ c_ Solution:
 
     ___ get_next_word  word, next_words
         ___ i __ r..(l..(word:
-            key = word[:i] + word[i + 1:]
+            key word[:i] + word[i + 1:]
             __ key n.. __ next_words[i]:
                 _____
             ___ _word __ next_words[i][key]:

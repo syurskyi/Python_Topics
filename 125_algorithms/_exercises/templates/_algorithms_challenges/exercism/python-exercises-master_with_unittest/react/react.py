@@ -1,11 +1,11 @@
 c_ InputCell(o..
     ___ - , initial_value
-        value = N..
+        value N..
 
 
 c_ ComputeCell(o..
     ___ - , inputs, compute_function
-        value = N..
+        value N..
 
     ___ add_callback  callback
         p..

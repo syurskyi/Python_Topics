@@ -50,23 +50,23 @@ c_ Solution:
 
             can be optimized to O(N^2) by look forward
             """
-            n = l..(A)
-            F = [[0 ___ _ __ r..(n)] ___ _ __ r..(n)]
+            n l..(A)
+            F [[0 ___ _ __ r..(n)] ___ _ __ r..(n)]
             ___ i __ r..(n
-                F[i][i] = 1
+                F[i][i] 1
                 ___ j __ r..(i
-                    F[i][j] = 2
+                    F[i][j] 2
 
             idxes    # dict
             ___ i __ r..(n
-                idxes[A[i]] = i
+                idxes[A[i]] i
 
             ___ i __ r..(n
                 ___ j __ r..(i
-                    Ak = A[i] + A[j]
+                    Ak A[i] + A[j]
                     __ Ak __ idxes:
-                        k = idxes[Ak]
-                        F[k][i] = m..(F[k][i], F[i][j] + 1)
+                        k idxes[Ak]
+                        F[k][i] m..(F[k][i], F[i][j] + 1)
 
             r.. m..(
                 F[i][j] __ F[i][j] > 2 ____ 0
@@ -85,18 +85,18 @@ c_ Solution:
 
         can be optimized to O(N^2) by look forward
         """
-        n = l..(A)
-        F = [[0 ___ _ __ r..(n)] ___ _ __ r..(n)]
+        n l..(A)
+        F [[0 ___ _ __ r..(n)] ___ _ __ r..(n)]
         ___ i __ r..(n
-            F[i][i] = 1
+            F[i][i] 1
             ___ j __ r..(i
-                F[i][j] = 2
+                F[i][j] 2
 
         ___ k __ r..(n
             ___ i __ r..(k
                 ___ j __ r..(i
                     __ A[i] + A[j] __ A[k]:
-                        F[k][i] = m..(F[k][i], F[i][j] + 1)
+                        F[k][i] m..(F[k][i], F[i][j] + 1)
 
         r.. m..(
             F[i][j] __ F[i][j] > 2 ____ 0

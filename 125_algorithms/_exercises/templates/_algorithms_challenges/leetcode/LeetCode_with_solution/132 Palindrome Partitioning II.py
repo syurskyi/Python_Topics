@@ -6,7 +6,7 @@ Return the minimum cuts needed for a palindrome partitioning of s.
 For example, given s = "aab",
 Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 cut.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -19,24 +19,24 @@ c_ Solution(o..
         C[i] = 0 if s[:i] is palindrome
         C[i] = min(C[j]+1 for j<i if s[j:i] is palindrome)
         """
-        n = l..(s)
+        n l..(s)
 
-        P = [[F.. ___ _ __ x..(n+1)] ___ _ __ x..(n+1)]
+        P [[F.. ___ _ __ x..(n+1)] ___ _ __ x..(n+1)]
         ___ i __ x..(n+1  # len 0
-            P[i][i] = T..
+            P[i][i] T..
         ___ i __ x..(n  # len 1
-            P[i][i+1] = T..
+            P[i][i+1] T..
 
         ___ i __ x..(n, -1, -1  # len 2 and above
             ___ j __ x..(i+2, n+1
-                P[i][j] = P[i+1][j-1] a.. s[i] __ s[j-1]
+                P[i][j] P[i+1][j-1] a.. s[i] __ s[j-1]
 
-        C = [i ___ i __ x..(n+1)]  # initial values, max is all cut
+        C [i ___ i __ x..(n+1)]  # initial values, max is all cut
         ___ i __ x..(n+1
             __ P[0][i]:
-                C[i] = 0
+                C[i] 0
             ____
-                C[i] = m..(
+                C[i] m..(
                     C[j] + 1
                     ___ j __ x..(i)
                     __ P[j][i]
@@ -79,32 +79,32 @@ c_ Solution(o..
         __ n.. s:
             r.. 0
 
-        length = l..(s)
+        length l..(s)
         # palindrome dp
-        P = [[F.. ___ _ __ x..(length+1)] ___ _ __ x..(length+1)]
+        P [[F.. ___ _ __ x..(length+1)] ___ _ __ x..(length+1)]
         ___ i __ x..(length+1
             ___
-                P[i][i] = T..
-                P[i][i+1] = T..
+                P[i][i] T..
+                P[i][i+1] T..
             ______ I..
                 p..
 
         ___ i __ x..(length, -1, -1
             ___ j __ x..(i+2, length+1
                 ___
-                    P[i][j] = P[i+1][j-1] a.. s[i] __ s[j-1]
+                    P[i][j] P[i+1][j-1] a.. s[i] __ s[j-1]
                 ______ I..
-                    P[i][j] = T..
+                    P[i][j] T..
 
         # min cut dp
-        D = [length-i-1 ___ i __ x..(length)]  # max is all cut
+        D [length-i-1 ___ i __ x..(length)]  # max is all cut
         ___ i __ x..(length-1, -1, -1
             __ P[i][length]:
-                D[i] = 0
+                D[i] 0
             ____
                 ___ j __ x..(i+1, length
                     __ P[i][j]:
-                        D[i] = m..(D[i], D[j]+1)
+                        D[i] m..(D[i], D[j]+1)
         r.. D[0]
 
     ___ minCut_MLE  s
@@ -113,26 +113,26 @@ c_ Solution(o..
         :param s: str
         :return: int
         """
-        q = [[s]]
-        count = -1
+        q [[s]]
+        count -1
         w.... q:
             # cur = q.pop(0)  # not directly pop
-            length = l..(q)
+            length l..(q)
             count += 1
             ___ cur_level __ x..(length
-                cur = q[cur_level]
+                cur q[cur_level]
                 __ a..(is_palindrome(item) ___ item __ cur
                     r.. count
                 # 1 cut
                 ___ ind, val __ e..(cur
                     ___ i __ x..(1, l..(val:
-                        cut1 = val[:i]
-                        cut2 = val[i:]
-                        new_cur = l..(cur)
-                        new_cur[ind] = cut1
+                        cut1 val[:i]
+                        cut2 val[i:]
+                        new_cur l..(cur)
+                        new_cur[ind] cut1
                         new_cur.insert(ind+1, cut2)
                         q.a..(new_cur)
-            q = q[length:]
+            q q[length:]
 
     ___ minCut_TLE  s
         """
@@ -159,21 +159,21 @@ c_ Solution(o..
         __ n.. s:
             r.. 0
 
-        length = l..(s)
-        dp = [[1<<32-1 ___ _ __ x..(length+1)] ___ _ __ x..(length+1)]
+        length l..(s)
+        dp [[1<<32-1 ___ _ __ x..(length+1)] ___ _ __ x..(length+1)]
         ___ i __ x..(length+1
             ___
-                dp[i][i] = 0
-                dp[i][i+1] = 0
+                dp[i][i] 0
+                dp[i][i+1] 0
             ______ I..
                 p..
 
         ___ i __ x..(length, -1, -1
             ___ k __ x..(i, length+1
                 __ is_palindrome(s[i:k]
-                    dp[i][k] = 0
+                    dp[i][k] 0
                 ____
-                    dp[i][k] = m..(1+dp[i][j]+dp[j][k] ___ j __ x..(i+1, k
+                    dp[i][k] m..(1+dp[i][j]+dp[j][k] ___ j __ x..(i+1, k
 
         r.. dp[0][length]
 
@@ -209,39 +209,39 @@ c_ Solution(o..
         __ n.. s:
             r.. 0
 
-        length = l..(s)
+        length l..(s)
         # palindrome dp
-        dp2 = [[F.. ___ _ __ x..(length+1)] ___ _ __ x..(length+1)]
+        dp2 [[F.. ___ _ __ x..(length+1)] ___ _ __ x..(length+1)]
         ___ i __ x..(length+1
             ___
-                dp2[i][i] = T..
-                dp2[i][i+1] = T..
+                dp2[i][i] T..
+                dp2[i][i+1] T..
             ______ I..
                 p..
 
         ___ i __ x..(length, -1, -1
             ___ j __ x..(i+2, length+1
                 ___
-                    dp2[i][j] = dp2[i+1][j-1] a.. s[i] __ s[j-1]
+                    dp2[i][j] dp2[i+1][j-1] a.. s[i] __ s[j-1]
                 ______ I..
-                    dp2[i][j] = T..
+                    dp2[i][j] T..
 
 
         # min cut dp
-        dp = [[1<<32-1 ___ _ __ x..(length+1)] ___ _ __ x..(length+1)]
+        dp [[1<<32-1 ___ _ __ x..(length+1)] ___ _ __ x..(length+1)]
         ___ i __ x..(length+1
             ___
-                dp[i][i] = 0
-                dp[i][i+1] = 0
+                dp[i][i] 0
+                dp[i][i+1] 0
             ______ I..
                 p..
 
         ___ i __ x..(length, -1, -1
             ___ k __ x..(i, length+1
                 __ dp2[i][k]:
-                    dp[i][k] = 0
+                    dp[i][k] 0
                 ____
-                    dp[i][k] = m..(1+dp[i][j]+dp[j][k] ___ j __ x..(i+1, k
+                    dp[i][k] m..(1+dp[i][j]+dp[j][k] ___ j __ x..(i+1, k
 
         r.. dp[0][length]
 

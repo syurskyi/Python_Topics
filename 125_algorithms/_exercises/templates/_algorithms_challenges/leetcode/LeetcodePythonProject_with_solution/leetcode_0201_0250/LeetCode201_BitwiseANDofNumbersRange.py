@@ -13,7 +13,7 @@ c_ Solution(o..
         """
         __ m __ 0:
             r.. 0
-        moveFactor = 1
+        moveFactor 1
         w.... m != n:
             m >>= 1
             n >>= 1
@@ -21,7 +21,7 @@ c_ Solution(o..
         r.. moveFactor*m
     
     ___ test
-        testCases = [
+        testCases [
             (5, 7),
             (5, 20),
             (3, 7),
@@ -29,7 +29,7 @@ c_ Solution(o..
         ]
         ___ m, n __ testCases:
             print('m: %s, n: %s' % (m, n
-            result = rangeBitwiseAnd(m, n)
+            result rangeBitwiseAnd(m, n)
             print('result: %s' % (result
             print('-='*20+'-')
 

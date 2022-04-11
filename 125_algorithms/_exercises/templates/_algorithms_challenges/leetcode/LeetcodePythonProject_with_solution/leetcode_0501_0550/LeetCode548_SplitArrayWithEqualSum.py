@@ -10,12 +10,12 @@ c_ Solution(o..
         :rtype: bool
         """
         __ n.. nums: r.. F..
-        sumVals = [nums[0]]
-        n = l..(nums)
+        sumVals [nums[0]]
+        n l..(nums)
         ___ i __ r..(1, n
             sumVals.a..(sumVals[-1]+nums[i])
         ___ j __ r..(3, n-3
-            hashset = s..()
+            hashset s..()
             ___ i __ r..(1, j-1
                 __ sumVals[i-1] __ sumVals[j-1]-sumVals[i]:
                     hashset.add(sumVals[i-1])
@@ -26,12 +26,12 @@ c_ Solution(o..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             [1,2,1,2,1,2,1],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = splitArray(nums)
+            result splitArray(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

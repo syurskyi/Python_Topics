@@ -2,10 +2,10 @@ ____ c.. _______ n..
 ____ d__ _______ d__
 _______ i..
 
-Composer = n..('Composer', 'name born died')
-Opera = n..('Opera', 'author play date')
+Composer n..('Composer', 'name born died')
+Opera n..('Opera', 'author play date')
 
-composers = {
+composers {
     "beethoven": Composer("Ludwig van Beethoven",
                           "17 December 1770", "26 March 1827"),
     "wagner": Composer("Richard Wagner",
@@ -16,7 +16,7 @@ composers = {
                        "27 January 1756", "5 December 1791"),
 }
 
-operas = [
+operas [
     Opera("mozart", "Apollo and Hyacinth", "13 May 1767"),
     Opera("mozart", "Marriage of Figaro", "1 May 1786"),
     Opera("mozart", "Don Giovanni", "29 October 1787"),
@@ -77,19 +77,19 @@ ___ operas_both_at_premiere(guest, composer
         r.. V...("Both composer and guest must be valid composers")
     
 
-    guest = composers[guest]
-    composer_name = composer
-    composer = composers[composer]
+    guest composers[guest]
+    composer_name composer
+    composer composers[composer]
 
-    guest_birthday = _get_date(guest.born)
-    guest_death_day = _get_date(guest.died)
+    guest_birthday _get_date(guest.born)
+    guest_death_day _get_date(guest.died)
 
-    composer_death_day = _get_date(composer.died)
+    composer_death_day _get_date(composer.died)
 
     
 
     ___ opera __ f.. l.... x: x.author __ composer_name,operas
-        play_date = _get_date(opera.date)
+        play_date _get_date(opera.date)
         __ guest_birthday <_ play_date < guest_death_day a.. composer_death_day > play_date:
             y.. opera.play
 

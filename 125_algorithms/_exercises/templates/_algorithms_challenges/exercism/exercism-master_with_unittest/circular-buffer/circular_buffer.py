@@ -4,8 +4,8 @@ ____ c.. _______ d..
 c_ CircularBuffer:
 
     ___ - , capacity
-        capacity = capacity
-        buffer = d..([], capacity)
+        capacity capacity
+        buffer d..([], capacity)
 
     ___ read
         __ empty

@@ -9,39 +9,39 @@ c_ Solution(o..
         :type chars: List[str]
         :rtype: int
         """
-        res = 0
-        i = 0
-        j = 0
-        n = l..(chars)
+        res 0
+        i 0
+        j 0
+        n l..(chars)
         w.... i < n:
             __ i+1 < n a.. chars[i+1] __ chars[i]:
-                chars[j] = chars[i]
+                chars[j] chars[i]
                 j += 1
-                prev = i
+                prev i
                 w.... i+1 < n a.. chars[i+1] __ chars[i]:
                     i += 1
-                numStr = s..(i-prev+1)
+                numStr s..(i-prev+1)
                 ___ c0 __ numStr:
-                    chars[j] = c0
+                    chars[j] c0
                     j += 1
                 res += 1+l..(numStr)
             ____
-                chars[j] = chars[i]
+                chars[j] chars[i]
                 j += 1
                 res += 1
             i += 1
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             'aabbccc',
             'a',
             'abbbbbbbbbbbbb'
         ]
         ___ chars __ testCases:
-            chars = l..(chars)
+            chars l..(chars)
             print('chars: %s' % chars)
-            result = compress(chars)
+            result compress(chars)
             print('result: %s' % result)
             print('chars: %s' % chars)
             print('-='*30+'-')

@@ -19,14 +19,14 @@ c_ Solution(o..
         :type n: Maximum number of characters to read (int)
         :rtype: The number of characters read (int)
         """
-        idx = 0
+        idx 0
         w... T...
-            buf4 = ['']*4
+            buf4 ['']*4
             read4(buf4)
             queue.e.. buf4)
-            curr = m..(l..(queue), n-idx)
+            curr m..(l..(queue), n-idx)
             ___ _ __ r..(curr
-                buf[idx] = queue.p.. 0)
+                buf[idx] queue.p.. 0)
                 idx += 1
             __ curr __ 0:
                 _____

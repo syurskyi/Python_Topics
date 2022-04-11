@@ -14,22 +14,22 @@ c_ Solution(o..
         __ n.. A o. n.. B:
             r..
 
-        X, Y = A, B
+        X, Y A, B
 
         w.... X a.. Y:
-            X = X.next
-            Y = Y.next
+            X X.next
+            Y Y.next
 
         w.... X:
-            X = X.next
-            A = A.next
+            X X.next
+            A A.next
 
         w.... Y:
-            Y = Y.next
-            B = B.next
+            Y Y.next
+            B B.next
 
         w.... A __ n.. B:
-            A = A.next
-            B = B.next
+            A A.next
+            B B.next
 
         r.. A

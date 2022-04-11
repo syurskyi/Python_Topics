@@ -5,10 +5,10 @@ c_ Solution(o..
     :type K: int
     :rtype: str
     """
-    s = S.s..("-")
-    s = "".j..(s)
-    n = l..(s)
-    start = n % K
+    s S.s..("-")
+    s "".j..(s)
+    n l..(s)
+    start n % K
     res    # list
     __ start != 0:
       res.a..(s[:start].u..

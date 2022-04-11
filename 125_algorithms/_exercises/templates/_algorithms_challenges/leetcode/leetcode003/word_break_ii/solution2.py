@@ -18,9 +18,9 @@ c_ Solution(o..
         :type wordDict: Set[str]
         :rtype: bool
         """
-        n = l..(s)
-        t = [N.. ___ i __ r..(n)]
-        res = word_break_aux(s, wordDict, n - 1, t)
+        n l..(s)
+        t [N.. ___ i __ r..(n)]
+        res word_break_aux(s, wordDict, n - 1, t)
         r.. res
 
     ___ word_break_aux  s, wordDict, i, t
@@ -28,24 +28,24 @@ c_ Solution(o..
         Determine if s[:i + 1] can be segmented by dict wordDict
         """
         __ s[:i + 1] __ wordDict:
-            t[i] = [s[:i + 1]]
+            t[i] [s[:i + 1]]
             r.. t[i]
         ____ t[i] __ n.. N..
             r.. t[i]
         ____
             res    # list
             ___ j __ r..(i
-                rest = word_break_aux(s, wordDict, j, t)
-                word = s[j + 1:i + 1]
+                rest word_break_aux(s, wordDict, j, t)
+                word s[j + 1:i + 1]
                 __ rest a.. word __ wordDict:
                     ___ r __ rest:
                         res.a..(r + ' ' + word)
-            t[i] = res
+            t[i] res
             r.. t[i]
 
 
-s1 = "catsanddog"
-d1 = ["cat", "cats", "and", "sand", "dog"]
-s = Solution()
+s1 "catsanddog"
+d1 ["cat", "cats", "and", "sand", "dog"]
+s Solution()
 print(s.wordBreak(s1, d1
 print(s.wordBreak('leetcode',  'leet', 'code'

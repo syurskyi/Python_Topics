@@ -12,11 +12,11 @@ c_ Solution(o..
         """
         __ n.. matrix:
             r.. matrix
-        m = l..(matrix)
-        n = l..(matrix[0])
+        m l..(matrix)
+        n l..(matrix[0])
         result    # list
         
-        top, down, left, right = 0, m-1, 0, n-1
+        top, down, left, right 0, m-1, 0, n-1
         
         w.... top <_ down a.. left <_ right:
             __ top __ down:
@@ -45,7 +45,7 @@ c_ Solution(o..
         r.. result
     
     ___ test
-        matrixes = [
+        matrixes [
             [
                 [ 1, 2, 3 ],
                 [ 4, 5, 6 ],
@@ -73,7 +73,7 @@ c_ Solution(o..
         
         ___ matrix __ matrixes:
             print(matrix)
-            result = spiralOrder(matrix)
+            result spiralOrder(matrix)
             print(result)
             print('-='*15+'-')
 

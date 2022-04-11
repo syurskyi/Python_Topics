@@ -2,7 +2,7 @@ ____ __future__ _______ annotations
 _______ s__
 _______ __
 
-EOL_PUNCTUATION = ".!?"
+EOL_PUNCTUATION ".!?"
 
 
 c_ Document:
@@ -11,7 +11,7 @@ c_ Document:
         # feel free to alter this method and its parameters to your liking
         lines    # list
 
-    ___ add_line  line: s.., index: i.. = N..) __ Document:
+    ___ add_line  line: s.., index: i.. N..) __ Document:
         """Add a new line to the document.
 
         Args:
@@ -47,7 +47,7 @@ c_ Document:
             r.. self
 
         ___
-            lines[index_one],lines[index_two] = lines[index_two],lines[index_one]
+            lines[index_one],lines[index_two] lines[index_two],lines[index_one]
         ______ I..
             r.. IndexError("Invalid indexes")
 
@@ -78,7 +78,7 @@ c_ Document:
         lines[indices[0]]= ' '.j..(lines)
         
 
-        lines = [line ___ i,line __ e..(lines) __ i n.. __ indices[1:]]
+        lines [line ___ i,line __ e..(lines) __ i n.. __ indices[1:]]
         
 
 
@@ -101,12 +101,12 @@ c_ Document:
             Document: The document with the changed line.
         """
 
-        line = lines[index]
+        line lines[index]
         __ line a.. line[-1] __ EOL_PUNCTUATION:
-            line = line[:-1] + punctuation
+            line line[:-1] + punctuation
         ____
             line += punctuation
-        lines[index] = line
+        lines[index] line
         r.. self
 
     ___ word_count(self) __ i..:
@@ -116,10 +116,10 @@ c_ Document:
     $
     ___ words(self) __ l..:
         """Return a list of unique words, sorted and case insensitive."""
-        all_words = s..()
+        all_words s..()
         ___ line __ lines:
-            line = line.l..
-            w = _remove_punctuation(line)
+            line line.l..
+            w _remove_punctuation(line)
             ___ x __ w.s.. :
                 all_words.add(x)
 
@@ -151,7 +151,7 @@ c_ Document:
 __ _______ __ _______
     # this part is only executed when you run the file and is ignored by the tests
     # you can use this section for debugging and testing
-    d = (
+    d (
         Document()
         .add_line("My first sentence.")
         .add_line("My second sentence.")

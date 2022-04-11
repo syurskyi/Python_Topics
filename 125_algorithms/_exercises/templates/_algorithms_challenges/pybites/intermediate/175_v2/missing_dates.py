@@ -10,13 +10,13 @@ ___ get_missing_dates(dates
     """
 
 
-    dates = s..(dates)
+    dates s..(dates)
 
     missing    # list
     ___ i __ r..(l..(dates) - 1
-        date = dates[i]
+        date dates[i]
 
-        next_date = date + t..(d.._1)
+        next_date date + t..(d.._1)
 
         w.... next_date != dates[i +1]:
             missing.a..(next_date)

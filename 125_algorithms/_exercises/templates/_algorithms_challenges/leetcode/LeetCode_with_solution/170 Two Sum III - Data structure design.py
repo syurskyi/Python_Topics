@@ -3,7 +3,7 @@ Premium Question
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TwoSum(o..
@@ -11,7 +11,7 @@ c_ TwoSum(o..
         """
         initialize your data structure here
         """
-        hash_map = d..(i..)
+        hash_map d..(i..)
 
     ___ add  number
         """
@@ -38,7 +38,7 @@ c_ TwoSum(o..
         :rtype: bool
         """
         ___ k __ hash_map.k..:
-            target = value - k
+            target value - k
             __ target __ hash_map a.. (target != k o. hash_map[target] > 1
                 r.. T..
 

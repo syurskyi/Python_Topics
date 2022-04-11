@@ -44,17 +44,17 @@ c_ Solution:
 
         O(N logN) + O(N log N)
         """
-        capital_q = l..(z..(Capital, Profits
+        capital_q l..(z..(Capital, Profits
         profit_q    # list
         heapq.heapify(capital_q)
-        capital = W
+        capital W
         ___ _ __ r..(k
             w.... capital_q a.. capital_q[0][0] <_ capital:
-                _, pro = heapq.heappop(capital_q)
+                _, pro heapq.heappop(capital_q)
                 heapq.heappush(profit_q, (-pro, pro
 
             __ profit_q:
-                _, pro = heapq.heappop(profit_q)
+                _, pro heapq.heappop(profit_q)
                 capital += pro
             ____
                 _____
@@ -75,19 +75,19 @@ c_ Solution:
 
         O(k * N)
         """
-        capital = W
-        n = l..(Profits)
-        visited = [F.. ___ _ __ r..(n)]
+        capital W
+        n l..(Profits)
+        visited [F.. ___ _ __ r..(n)]
         ___ _ __ r..(k
-            maxa = 0
-            maxa_i = 0
+            maxa 0
+            maxa_i 0
             ___ i __ r..(n
                 __ n.. visited[i] a.. Profits[i] >_ maxa a.. Capital[i] <_ capital:
-                    maxa = Profits[i]
-                    maxa_i = i
+                    maxa Profits[i]
+                    maxa_i i
             __ maxa > 0:
                 capital += maxa
-                visited[maxa_i] = T..
+                visited[maxa_i] T..
             ____
                 _____
 

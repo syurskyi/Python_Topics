@@ -32,26 +32,26 @@ c_ Solution:
         __ s __ '' a.. p __ '':
             r.. T..
 
-        ANY = '?'
-        ANY_MULTI = '*'
-        m, n = l..(s), l..(p)
+        ANY '?'
+        ANY_MULTI '*'
+        m, n l..(s), l..(p)
 
         """
         `dp[i][j]` means the substr end at `S[i - 1]` was matched by
         the substr end at `P[j - 1]`
         """
-        dp = [[F..] * (n + 1) ___ _ __ r..(m + 1)]
-        dp[0][0] = T..
+        dp [[F..] * (n + 1) ___ _ __ r..(m + 1)]
+        dp[0][0] T..
         # dp[i][0] = False
         # dp[0][j] -> need to check
 
         ___ i __ r..(m + 1
             ___ j __ r..(1, n + 1
                 __ p[j - 1] __ ANY_MULTI:
-                    dp[i][j] = dp[i - 1][j] o. dp[i][j - 1]
+                    dp[i][j] dp[i - 1][j] o. dp[i][j - 1]
                 ____ p[j - 1] __ ANY a.. dp[i - 1][j - 1]:
-                    dp[i][j] = T..
+                    dp[i][j] T..
                 ____ p[j - 1] __ s[i - 1] a.. dp[i - 1][j - 1]:
-                    dp[i][j] = T..
+                    dp[i][j] T..
 
         r.. dp[m][n]

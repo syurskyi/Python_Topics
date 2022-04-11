@@ -1,8 +1,8 @@
 _______ s__
 
-PUNCTUATION_CHARS = l..(s__.punctuation)
+PUNCTUATION_CHARS l..(s__.punctuation)
 
-used_passwords = s..("PassWord@1 PyBit$s9".s..
+used_passwords s..("PassWord@1 PyBit$s9".s..
 
 
 ___ validate_password(password: s..) __ b..:
@@ -10,7 +10,7 @@ ___ validate_password(password: s..) __ b..:
         r.. F..
     __ password __ used_passwords:
         r.. F..
-    d.. = lcase = ucase = punc = 0
+    d.. lcase ucase punc 0
     ___ c __ password:
         __ c.i..
             d.. += 1

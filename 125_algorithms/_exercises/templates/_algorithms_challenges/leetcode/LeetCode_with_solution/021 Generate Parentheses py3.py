@@ -23,7 +23,7 @@ c_ Solution:
         Method 2 - dp
         Let F[n] be the list of parentheses at length 2n
         """
-        F: L..[L..[s..]] = [[] ___ _ __ r..(n + 1)]
+        F: L..[L..[s..]] [[] ___ _ __ r..(n + 1)]
         F[0].a..("")
         ___ i __ r..(1, n+1
             ___ j __ r..(i

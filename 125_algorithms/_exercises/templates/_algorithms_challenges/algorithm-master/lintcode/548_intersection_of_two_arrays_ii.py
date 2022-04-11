@@ -13,7 +13,7 @@ c_ Solution:
         freq    # dict
 
         ___ x __ a:
-            freq[x] = freq.g.. x, 0) + 1
+            freq[x] freq.g.. x, 0) + 1
 
         ___ x __ b:
             __ n.. freq.g.. x
@@ -40,8 +40,8 @@ c_ Solution:
         a.s..()
         b.s..()
 
-        m, n = l..(a), l..(b)
-        i = j = 0
+        m, n l..(a), l..(b)
+        i j 0
 
         w.... i < m a.. j < n:
             __ a[i] __ b[j]:

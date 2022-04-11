@@ -8,7 +8,7 @@ ____ enchantable_items _______ (
     generate_enchantments,
 )
 
-mock_html = """
+mock_html """
 <table id="minecraft_items" class="std_table">
 <tr>
 <th data-search="1" width="175">Enchantment<br>(<em>Minecraft ID Name</em>)</th>
@@ -56,7 +56,7 @@ mock_html = """
 
 ?p__.f..(scope="module")
 ___ enchantment_mock
-    enchant = Enchantment(
+    enchant Enchantment(
         "python_developer",
         "Python Developer",
         10,
@@ -67,7 +67,7 @@ ___ enchantment_mock
 
 ?p__.f..(scope="module")
 ___ item_mock(enchantment_mock
-    item = Item("clamytoe")
+    item Item("clamytoe")
     r.. item
 
 
@@ -88,9 +88,9 @@ ___ mocked_generate_items(mock_data
 
 ?p__.f..(scope="module")
 ___ coders_dataset
-    soup = get_soup()
-    mc_data = generate_enchantments(soup)
-    items = generate_items(mc_data)
+    soup get_soup()
+    mc_data generate_enchantments(soup)
+    items generate_items(mc_data)
     r.. items
 
 
@@ -102,7 +102,7 @@ ___ test_enchantment_class(enchantment_mock
 ___ test_enchantment_class_add_items(enchantment_mock, item_mock
     enchantment_mock.items.a..(item_mock.name)
     ... l..(enchantment_mock.items) __ 1
-    bob = Item("bob")
+    bob Item("bob")
     enchantment_mock.items.a..(bob.name)
     ... l..(enchantment_mock.items) __ 2
     ... enchantment_mock.items __ ["clamytoe", "bob"]
@@ -111,7 +111,7 @@ ___ test_enchantment_class_add_items(enchantment_mock, item_mock
 
 ___ test_enchantment_class_print(enchantment_mock, capfd
     print(enchantment_mock)
-    output = ?.r .. 0].s..("\n")[0]
+    output ?.r .. 0].s..("\n")[0]
     ... (
         output
         __ "Python Developer (10): Ability automate really boring and repetitive tasks at work"
@@ -125,13 +125,13 @@ ___ test_item_class(item_mock, enchantment_mock
 
 ___ test_item_class_print(item_mock, capfd
     print(item_mock)
-    output = ?.r .. 0].s..
+    output ?.r .. 0].s..
     ... output __ "Clamytoe: \n  [10] python_developer"
 
 
 ___ test_enchantment_print(mock_data, capfd
     print(mock_data["channeling"])
-    output = ?.r .. 0].s..("\n")[0]
+    output ?.r .. 0].s..("\n")[0]
     ... (
         output
         __ "Channeling (1): Summons a lightning bolt at a targeted mob when enchanted item is thrown (targeted mob must be standing in raining)"
@@ -161,8 +161,8 @@ ___ test_generate_enchantments_with_mock(mock_data
 
 
 ___ test_generate_enchantments_from_source
-    soup = get_soup()
-    data = generate_enchantments(soup)
+    soup get_soup()
+    data generate_enchantments(soup)
     ... l..(data.keys __ 38
     ... data["efficiency"].max_level __ 5
 
@@ -292,5 +292,5 @@ ___ test_gen_items(coders_dataset, item, e..
 )
 ___ test_item_print(coders_dataset, item, e.., capfd
     print(coders_dataset[item])
-    output = ?.r .. 0].s..
+    output ?.r .. 0].s..
     ... output __ e..

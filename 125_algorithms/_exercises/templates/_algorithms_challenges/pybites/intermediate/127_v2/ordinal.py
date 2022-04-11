@@ -14,8 +14,8 @@ ___ get_ordinal_suffix(number
        """
 
 
-    last_digit = number % 10
-    last_two = number % 100
+    last_digit number % 10
+    last_two number % 100
 
 
     __ last_two __ r..(11,14

@@ -17,15 +17,15 @@ c_ Solution:
     # @param A, a list of integers
     # @return a boolean
     ___ canJump  A
-        n = l..(A)
+        n l..(A)
         __ n __ 1:
             r.. T..
         # d[i] is the max index A[i] can reach in A
-        d = [i + A[i] ___ i __ r..(n)]
-        reach = n - 1
+        d [i + A[i] ___ i __ r..(n)]
+        reach n - 1
         ___ i __ r..(1, n
             # j is from n - 1 to 0
-            j = n - 1 - i
+            j n - 1 - i
             __ d[j] >_ reach:
-                reach = j
+                reach j
         r.. reach __ 0

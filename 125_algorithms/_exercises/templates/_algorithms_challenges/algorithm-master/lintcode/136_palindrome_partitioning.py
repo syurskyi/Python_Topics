@@ -1,7 +1,7 @@
 c_ Solution:
     ans    # list
-    n = 0
-    is_palindrome = N..
+    n 0
+    is_palindrome N..
 
     """
     @param: s: A string
@@ -11,7 +11,7 @@ c_ Solution:
         __ n.. s:
             r.. ans
 
-        n = l..(s)
+        n l..(s)
         check_palindrome(s)
         dfs(s, 0, [])
 
@@ -44,18 +44,18 @@ c_ Solution:
          [ x,  x, r1, r2],
          [ x,  x,  x, r1]]
         """
-        is_palindrome = [[F..] * n ___ _ __ r..(n)]
-        start = end = 0
+        is_palindrome [[F..] * n ___ _ __ r..(n)]
+        start end 0
 
         # check the diagonal line `r1` and `r2`
         # the traversal order is top-left -> bottom-right, see graph above
         # since the status of `r3`, `r4`, ... depends on that
         ___ end __ r..(n
-            is_palindrome[end][end] = T..
+            is_palindrome[end][end] T..
 
             __ end > 0:
-                start = end - 1
-                is_palindrome[start][end] = (s[start] __ s[end])
+                start end - 1
+                is_palindrome[start][end] (s[start] __ s[end])
 
         # check the remaining triangle and traverse by line: `r3`, `r4`, ...
         # the traversal order is bottom -> top, see graph above
@@ -63,7 +63,7 @@ c_ Solution:
         # start + 2
         ___ start __ r..(n - 3, -1, -1
             ___ end __ r..(start + 2, n
-                is_palindrome[start][end] = (
+                is_palindrome[start][end] (
                     is_palindrome[start + 1][end - 1]
                     a.. s[start] __ s[end]
                 )
@@ -75,10 +75,10 @@ c_ Solution:
     ___ dfs  s, start, palindromes
         __ start >_ n:
             ans.a..(palindromes)
-        next_start = 0
+        next_start 0
         ___ end __ r..(start, n
             __ is_palindrome[start][end]:
                 # `palindromes + [s[start:next_start]]`
                 # will create and return new list
-                next_start = end + 1
+                next_start end + 1
                 dfs(s, next_start, palindromes + [s[start:next_start]])

@@ -38,8 +38,8 @@ c_ Solution:
         detect cycle in the node
         prune by nodes with no cycle
         """
-        visit: L..[i..] = [0 ___ _ __ graph]  # 0 not visted, 1 processing, 2 visited
-        acyclic: S..[i..] = s..()
+        visit: L..[i..] [0 ___ _ __ graph]  # 0 not visted, 1 processing, 2 visited
+        acyclic: S..[i..] s..()
         ___ u __ r..(l..(graph:
             __ visit[u] __ 0:
                 dfs(graph, u, visit, acyclic)
@@ -51,7 +51,7 @@ c_ Solution:
         ]
 
     ___ dfs  graph, cur, visit, acyclic
-        visit[cur] = 1
+        visit[cur] 1
         ___ nbr __ graph[cur]:
             __ visit[nbr] __ 2:
                 __ nbr __ acyclic:
@@ -64,10 +64,10 @@ c_ Solution:
                 _____
         ____
             acyclic.add(cur)
-            visit[cur] = 2
+            visit[cur] 2
             r.. T..
 
-        visit[cur] = 2
+        visit[cur] 2
         r.. F..
 
 

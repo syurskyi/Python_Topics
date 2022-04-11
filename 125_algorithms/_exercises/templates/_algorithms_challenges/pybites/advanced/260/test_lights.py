@@ -43,7 +43,7 @@ ____ lights _______ LightsGrid
     ],
 )
 ___ test_turn_on_lights(arg, e..
-    lights = LightsGrid(10, arg)
+    lights LightsGrid(10, arg)
     lights.follow_instructions()
     ... lights.lights_intensity __ e..
 
@@ -83,7 +83,7 @@ ___ test_turn_on_lights(arg, e..
     ],
 )
 ___ test_turn_off_lights(arg, e..
-    lights = LightsGrid(10, arg)
+    lights LightsGrid(10, arg)
     lights.follow_instructions()
     ... lights.lights_intensity __ e..
 
@@ -110,7 +110,7 @@ ___ test_turn_off_lights(arg, e..
     ],
 )
 ___ test_toggle_lights(arg, e..
-    lights = LightsGrid(10, arg)
+    lights LightsGrid(10, arg)
     lights.follow_instructions()
     ... lights.lights_intensity __ e..
 
@@ -146,7 +146,7 @@ ___ test_toggle_lights(arg, e..
     ],
 )
 ___ test_turn_up_lights(arg, e..
-    lights = LightsGrid(10, arg)
+    lights LightsGrid(10, arg)
     lights.follow_instructions()
     ... lights.lights_intensity __ e..
 
@@ -176,7 +176,7 @@ ___ test_turn_up_lights(arg, e..
     ],
 )
 ___ test_turn_down_lights(arg, e..
-    lights = LightsGrid(10, arg)
+    lights LightsGrid(10, arg)
     lights.follow_instructions()
     ... lights.lights_intensity __ e..
 
@@ -203,6 +203,6 @@ ___ test_turn_down_lights(arg, e..
     ],
 )
 ___ test_example_with_bite(arg, e..
-    lights = LightsGrid(5, arg)
+    lights LightsGrid(5, arg)
     lights.follow_instructions()
     ... lights.lights_intensity __ e..

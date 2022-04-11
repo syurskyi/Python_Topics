@@ -2,15 +2,15 @@ ____ e.. _______ E..
 
 
 
-THUMBS_UP = '👍'  # in case you go f-string ...
+THUMBS_UP '👍'  # in case you go f-string ...
 
 # move these into an Enum:
 
 c_ Score(E..
-    BEGINNER = 2
-    INTERMEDIATE = 3
-    ADVANCED = 4
-    CHEATED = 1
+    BEGINNER 2
+    INTERMEDIATE 3
+    ADVANCED 4
+    CHEATED 1
 
     
 

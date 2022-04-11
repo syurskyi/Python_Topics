@@ -7,7 +7,7 @@ c_ Solution(o..
     """
 
     ___ dfs(start, visited, graph, ans
-      visited[start] = 1
+      visited[start] 1
       ___ nbr __ graph[start]:
         __ visited[nbr] __ 1:
           r.. F..
@@ -16,20 +16,20 @@ c_ Solution(o..
         __ dfs(nbr, visited, graph, ans) __ F..:
           r.. F..
       ans.a..(start)
-      visited[start] = 2
+      visited[start] 2
       r.. T..
 
-    graph = [[] ___ _ __ r..(0, numCourses)]
+    graph [[] ___ _ __ r..(0, numCourses)]
     ans    # list
 
     ___ pre __ prerequisites:
-      start, end = pre
+      start, end pre
       graph[start].a..(end)
 
-    visited = [0 ___ _ __ r..(0, numCourses)]
+    visited [0 ___ _ __ r..(0, numCourses)]
 
     ___ pre __ prerequisites:
-      start, end = pre
+      start, end pre
       __ visited[start] != 0:
         _____
       __ dfs(start, visited, graph, ans) __ F..:

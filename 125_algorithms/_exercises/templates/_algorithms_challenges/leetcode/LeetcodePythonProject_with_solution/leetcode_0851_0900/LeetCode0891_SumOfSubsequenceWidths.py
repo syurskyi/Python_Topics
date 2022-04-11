@@ -10,10 +10,10 @@ c_ Solution(o..
         :rtype: int
         """
         A.s..()
-        c, res, MOD = 1, 0, 10**9+7
+        c, res, MOD 1, 0, 10**9+7
         ___ i __ r..(l..(A:
-            res = (res + A[i]*c - A[l..(A)-i-1]*c) % MOD
-            c = (c*2)%MOD
+            res (res + A[i]*c - A[l..(A)-i-1]*c) % MOD
+            c (c*2)%MOD
         r.. (res+MOD)%MOD
     
     ___ sumSubseqWidths_own_TLE  A
@@ -22,11 +22,11 @@ c_ Solution(o..
         :rtype: int
         """
         nums    # list
-        arr = A
+        arr A
         dfs(arr, 0, [], nums)
-        res = 0
+        res 0
         ___ arr __ nums:
-            res = (res + m..(arr) - m..(arr % (10**9+7)
+            res (res + m..(arr) - m..(arr % (10**9+7)
         r.. res
     
     ___ dfs  arr, idx, curr, nums
@@ -38,11 +38,11 @@ c_ Solution(o..
             curr.p.. )
     
     ___ test
-        testCases = [
+        testCases [
             [2, 1, 3],
         ]
         ___ arr __ testCases:
-            res = sumSubseqWidths(arr)
+            res sumSubseqWidths(arr)
             print('res: %s' % res)
 
 __ _____ __ _____

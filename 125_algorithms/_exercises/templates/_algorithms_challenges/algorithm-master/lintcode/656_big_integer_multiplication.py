@@ -8,18 +8,18 @@ c_ Solution:
         __ n.. a o. n.. b o. a __ '0' o. b __ '0':
             r.. '0'
 
-        m, n = l..(a), l..(b)
+        m, n l..(a), l..(b)
         tmp  [0] * (m + n)
 
         ___ i __ r..(m - 1, -1, -1
-            carry = 0
+            carry 0
             ___ j __ r..(n - 1, -1, -1
                 carry += tmp[i + j + 1] + i..(a[i]) * i..(b[j])
-                tmp[i + j + 1] = carry % 10
+                tmp[i + j + 1] carry % 10
                 carry //= 10
-            tmp[i] = carry
+            tmp[i] carry
 
-        i = 0
+        i 0
         w.... tmp[i] __ 0:
             i += 1
 

@@ -1,10 +1,10 @@
 c_ Animal:
     
-    number = 10001
+    number 10001
     animals    # list
     ___ - , name
-        name = name.t..
-        number = Animal.number
+        name name.t..
+        number Animal.number
         Animal.number += 1
         Animal.animals.a..(self)
 

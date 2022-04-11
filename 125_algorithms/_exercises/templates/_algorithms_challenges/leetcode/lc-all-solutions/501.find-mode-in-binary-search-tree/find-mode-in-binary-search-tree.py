@@ -14,15 +14,15 @@ c_ Solution(o..
 
     ___ visit(v
       __ v != pre:
-        pre = v
-        cnt = 0
+        pre v
+        cnt 0
       cnt += 1
       __ cnt > maxFreq:
-        maxFreq = cnt
-        modeCnt = 1
+        maxFreq cnt
+        modeCnt 1
       ____ cnt __ maxFreq:
         __ ans:
-          ans[modeCnt] = v
+          ans[modeCnt] v
         modeCnt += 1
 
     ___ inorder(root
@@ -31,11 +31,11 @@ c_ Solution(o..
         visit(root.val)
         inorder(root.right)
 
-    pre = N..
-    ans = N..
-    maxFreq = modeCnt = cnt = 0
+    pre N..
+    ans N..
+    maxFreq modeCnt cnt 0
     inorder(root)
-    ans = [0] * modeCnt
-    modeCnt = cnt = 0
+    ans [0] * modeCnt
+    modeCnt cnt 0
     inorder(root)
     r.. ans

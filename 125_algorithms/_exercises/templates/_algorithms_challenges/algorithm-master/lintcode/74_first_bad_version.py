@@ -22,12 +22,12 @@ c_ Solution:
         __ n.. n:
             r.. 0
 
-        left, right = 1, n
+        left, right 1, n
         w.... left + 1 < right:
-            mid = (left + right) // 2
+            mid (left + right) // 2
             __ isBadVersion(mid
-                right = mid
+                right mid
             ____
-                left = mid
+                left mid
 
         r.. left __ isBadVersion(left) ____ right

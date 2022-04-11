@@ -7,24 +7,24 @@ c_ Graph(o..
 
   ___ get  label
     __ label n.. __ graph:
-      graph[label] = GraphNode(label)
+      graph[label] GraphNode(label)
     r.. graph[label]
 
   ___ query  node1, node2
-    g = graph
+    g graph
     __ l..(node1.nbrs) __ 0 o. l..(node2.nbrs) __ 0:
       r.. -1.0
     __ node1 __ node2:
       r.. 1.0
-    queue = d..([(node1, 1)])
-    visited = s..([node1.label])
+    queue d..([(node1, 1)])
+    visited s..([node1.label])
     w.... queue:
-      node, ans = queue.popleft()
+      node, ans queue.popleft()
       ___ nbr __ node.nbrs:
         __ nbr n.. __ visited:
-          w = node.nbrs[nbr]
+          w node.nbrs[nbr]
           visited |= {nbr}
-          nbrNode = g.g.. nbr)
+          nbrNode g.g.. nbr)
           __ nbrNode __ node2:
             r.. ans * w
           queue.a..((nbrNode, ans * w
@@ -32,16 +32,16 @@ c_ Graph(o..
     r.. -1.0
 
   ___ connect  node1, node2, div
-    node1.nbrs[node2.label] = div
+    node1.nbrs[node2.label] div
     __ div != 0:
-      node2.nbrs[node1.label] = 1.0 / div
+      node2.nbrs[node1.label] 1.0 / div
     ____
-      node2.nbrs[node1.label] = f__("inf")
+      node2.nbrs[node1.label] f__("inf")
 
 
 c_ GraphNode(o..
   ___ - , label
-    label = label
+    label label
     nbrs    # dict
 
 
@@ -54,11 +54,11 @@ c_ Solution(o..
     :rtype: List[float]
     """
     visited    # dict
-    g = Graph()
+    g Graph()
     ans    # list
     ___ i __ r..(0, l..(equations:
-      label1, label2 = equations[i]
-      node1, node2 = g.g.. label1), g.g.. label2)
+      label1, label2 equations[i]
+      node1, node2 g.g.. label1), g.g.. label2)
       g.connect(node1, node2, values[i])
 
     ___ query __ queries:

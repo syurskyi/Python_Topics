@@ -1,6 +1,6 @@
 ____ d__ _______ date, d__
 
-MAC1 = """
+MAC1 """
 reboot    ~                         Wed Apr 10 22:39
 reboot    ~                         Wed Mar 27 16:24
 reboot    ~                         Wed Mar 27 15:01
@@ -12,16 +12,16 @@ reboot    ~                         Mon Jan 14 09:25
 
 
 ___ extract_date(reboots
-    months = {
+    months {
         'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6,
         'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12,
     }
-    lines = reboots.s..k.._F..)
+    lines reboots.s..k.._F..)
     ___ line __ lines:
         __ l..(line.s.. __ 0:
             _____
-        line_parts = line.s...s..
-        time_part = line_parts[-1].s..(':')
+        line_parts line.s...s..
+        time_part line_parts[-1].s..(':')
         y.. d__ y.._2019,
                         m.._months[line_parts[-3]],
                         d.._int(line_parts[-2]),
@@ -42,12 +42,12 @@ ___ calc_max_uptime(reboots
        For the output above it would be (30, '2019-02-17'),
        but we use different outputs in the tests as well ...
     """
-    previous = N..
+    previous N..
     records    # list
     ___ this_date __ extract_date(reboots
         __ previous __ N..
-            previous = this_date
+            previous this_date
             _____
         records.a..(((previous - this_date).days, s..(previous.date())))
-        previous = this_date
+        previous this_date
     r.. s..(records)[-1]

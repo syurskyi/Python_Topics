@@ -20,13 +20,13 @@ The hour must not contain a leading zero, for example "01:00" is not valid, it s
 The minute must be consist of two digits and may contain a leading zero, for example "10:2" is not valid, it should be
 "10:02".
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
     ___ -
-        hours = (1, 2, 4, 8)
-        minutes = (1, 2, 4, 8, 16, 32)
+        hours (1, 2, 4, 8)
+        minutes (1, 2, 4, 8, 16, 32)
 
     ___ readBinaryWatch  num
         """
@@ -39,8 +39,8 @@ c_ Solution(o..
             ___ hour_n __ x..(m..(num, 4)+1
                 ___ hour __ hour(hour_n
                     ___ minute __ minute(num-hour_n
-                        hour = s..(hour)
-                        minute = ('0' + s..(minute[-2:]
+                        hour s..(hour)
+                        minute ('0' + s..(minute[-2:]
                         y.. hour + ':' + minute
 
         r.. l..(gen
@@ -55,7 +55,7 @@ c_ Solution(o..
         ___ i __ x..(head, l..(lst:
             ___ rest __ gen(n-1, i+1, lst, func
                 __ rest __ n.. N..
-                    ret = lst[i]+rest
+                    ret lst[i]+rest
                     __ func(ret
                         y.. ret
                     ____

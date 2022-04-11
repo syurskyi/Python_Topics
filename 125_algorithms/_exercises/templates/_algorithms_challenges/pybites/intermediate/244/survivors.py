@@ -2,10 +2,10 @@ _______ __
 ____ p.. _______ P..
 ____ u__.r.. _______ u..
 
-S3 = "https://bites-data.s3.us-east-2.amazonaws.com/{}"
-FILE_NAME = "mutpy.out"
-TMP = __.g.. TMP  /tmp
-PATH = P..(TMP, FILE_NAME)
+S3 "https://bites-data.s3.us-east-2.amazonaws.com/{}"
+FILE_NAME "mutpy.out"
+TMP __.g.. TMP  /tmp
+PATH P..(TMP, FILE_NAME)
 
 __ n.. PATH.exists
     u..(S3.f..(FILE_NAME), PATH)
@@ -16,7 +16,7 @@ ___ _get_data(p..=PATH
         r.. [line.r..() ___ line __ f.r..]
 
 
-___ filter_killed_mutants(mutpy_output: l.. = N..) __ l..:
+___ filter_killed_mutants(mutpy_output: l.. N..) __ l..:
     """Read in the passed in mutpy output and filter out the code snippets of
        mutation tests that were killed. Surviving mutants should be shown in
        full, as well the surrounding output.
@@ -69,33 +69,33 @@ ___ filter_killed_mutants(mutpy_output: l.. = N..) __ l..:
     """
 
     __ mutpy_output __ N..
-        mutpy_output = _get_data()
+        mutpy_output _get_data()
     
     
-    previous_dashed_line = N..
+    previous_dashed_line N..
     
 
     filtered    # list
     
 
-    filters = ("killed",'incompetent')
+    filters ("killed",'incompetent')
     
-    i = 0
-    code_block = N..
-    previous_dashed_line = F..
+    i 0
+    code_block N..
+    previous_dashed_line F..
     w.... i < l..(mutpy_output
-        line = mutpy_output[i]
+        line mutpy_output[i]
         __ code_block:
             code_block.a..(line)
         __ line.s.. '---'
             __ n.. previous_dashed_line:
-                previous_dashed_line = T..
-                code_block = [line]
+                previous_dashed_line T..
+                code_block [line]
             ____
                 __ a..(fil n.. __ mutpy_output[i +1] ___ fil __ filters
                     filtered.e.. code_block)
-                code_block = N..
-                previous_dashed_line = N..
+                code_block N..
+                previous_dashed_line N..
         ____ n.. code_block:
             filtered.a..(line)
         i += 1

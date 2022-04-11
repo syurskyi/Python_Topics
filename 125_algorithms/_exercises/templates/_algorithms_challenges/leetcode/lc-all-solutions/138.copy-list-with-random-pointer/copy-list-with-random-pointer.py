@@ -11,21 +11,21 @@ c_ Solution(o..
     :type head: RandomListNode
     :rtype: RandomListNode
     """
-    p = head
+    p head
     w.... p:
-      copy = RandomListNode(p.label)
-      copy.next = p.next
-      p.next = copy
-      p = copy.next
+      copy RandomListNode(p.label)
+      copy.next p.next
+      p.next copy
+      p copy.next
 
-    p = head
+    p head
     w.... p:
-      p.next.r__ = p.r__ a.. p.r__.next
-      p = p.next.next
+      p.next.r__ p.r__ a.. p.r__.next
+      p p.next.next
 
-    p = head
-    copy = chead = head a.. head.next
+    p head
+    copy chead head a.. head.next
     w.... p:
-      p.next = p = copy.next
-      copy.next = copy = p a.. p.next
+      p.next p copy.next
+      copy.next copy p a.. p.next
     r.. chead

@@ -1,9 +1,9 @@
 ____ f.. _______ wraps
 
 
-DEFAULT_TEXT = ('Subscribe to our blog (sidebar) to periodically get '
+DEFAULT_TEXT ('Subscribe to our blog (sidebar) to periodically get '
                 'new PyBites Code Challenges (PCCs) in your inbox')
-DOT = '.'
+DOT '.'
 
 
 ___ strip_range(start, end
@@ -23,11 +23,11 @@ ___ strip_range(start, end
 
         ___ wrapper(text
 
-            s = m..(start,0)
-            e = m..(end,0)
-            s = m..(l..(text),s)
-            e = m..(l..(text),e)
-            s = text[:s] + DOT * (e - s) + text[e:]
+            s m..(start,0)
+            e m..(end,0)
+            s m..(l..(text),s)
+            e m..(l..(text),e)
+            s text[:s] + DOT * (e - s) + text[e:]
 
 
             r.. s

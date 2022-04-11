@@ -5,7 +5,7 @@ c_ Solution(o..
     :rtype: List[str]
     """
     ans    # list
-    n = l..(s)
+    n l..(s)
 
     ___ isValid(num
       __ l..(num) __ 1:
@@ -15,16 +15,16 @@ c_ Solution(o..
       r.. F..
 
     ___ i __ r..(0, m..(3, n - 3:
-      a = s[:i + 1]
+      a s[:i + 1]
       __ n.. isValid(a
         _____
       ___ j __ r..(i + 1, m..(i + 4, n - 2:
-        b = s[i + 1:j + 1]
+        b s[i + 1:j + 1]
         __ n.. isValid(b
           _____
         ___ k __ r..(j + 1, m..(j + 4, n - 1:
-          c = s[j + 1:k + 1]
-          d = s[k + 1:]
+          c s[j + 1:k + 1]
+          d s[k + 1:]
           __ n.. isValid(c
             _____
           __ n.. isValid(d

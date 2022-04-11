@@ -22,8 +22,8 @@ c_ Solution:
         __ n.. root o. root __ a o. root __ b:
             r.. root
 
-        left = lowestCommonAncestor(root.left, a, b)
-        right = lowestCommonAncestor(root.right, a, b)
+        left lowestCommonAncestor(root.left, a, b)
+        right lowestCommonAncestor(root.right, a, b)
 
         __ left a.. right:
             r.. root

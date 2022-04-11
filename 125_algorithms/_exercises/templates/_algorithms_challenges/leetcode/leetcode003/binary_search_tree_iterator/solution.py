@@ -9,7 +9,7 @@ c_ BSTIterator(o..
     ___ - , root
         _arr    # list
         _inorder(root)
-        _cur = -1
+        _cur -1
 
     # @return a boolean, whether we have a next smallest number
     ___ hasNext

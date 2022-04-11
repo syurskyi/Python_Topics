@@ -1,5 +1,5 @@
 # See tests for a more comprehensive complementary table
-SIMPLE_COMPLEMENTS_STR = """#Reduced table with bases A, G, C, T
+SIMPLE_COMPLEMENTS_STR """#Reduced table with bases A, G, C, T
  Base	Complementary Base
  A	T
  T	A
@@ -11,13 +11,13 @@ SIMPLE_COMPLEMENTS_STR = """#Reduced table with bases A, G, C, T
 ___ get_mapping(str_table=SIMPLE_COMPLEMENTS_STR
 
 
-    lines = str_table.s..
+    lines str_table.s..
     
     
     mapping    # dict
     ___ i __ r..(2,l..(lines:
-        values = lines[i].s.. 
-        mapping[values[0]] = values[-1]
+        values lines[i].s..
+        mapping[values[0]] values[-1]
 
 
     r.. mapping
@@ -34,12 +34,12 @@ ___ _clean_sequence(sequence, str_table
     t!t%ttttAACCG --> TTTTTTAACCG
     """
 
-    mapping = get_mapping(str_table)
+    mapping get_mapping(str_table)
 
     
     new_string    # list
     ___ c __ sequence:
-        c = c.u..
+        c c.u..
         __ c __ mapping:
             new_string.a..(c)
     
@@ -83,11 +83,11 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     e.g. t!t%ttttAACCG --> AAAAAATTGGC
     """
     
-    mapping = get_mapping(str_table)
+    mapping get_mapping(str_table)
     
     new_string    # list
     ___ character __ sequence:
-        character = character.u..
+        character character.u..
         __ character __ mapping:
             new_string.a..(mapping[character])
 

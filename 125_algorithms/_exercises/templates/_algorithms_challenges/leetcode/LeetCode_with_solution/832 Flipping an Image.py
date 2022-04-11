@@ -35,8 +35,8 @@ c_ Solution:
         one pass
         """
         ___ row __ A:
-            prev = l..(row)
+            prev l..(row)
             ___ i __ r..(l..(row:
-                row[i] = prev[-1-i] ^ 1
+                row[i] prev[-1-i] ^ 1
 
         r.. A

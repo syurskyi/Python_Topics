@@ -14,12 +14,12 @@ c_ Solution(o..
     :rtype: List[float]
     """
     ans    # list
-    queue = d..([root])
+    queue d..([root])
     w.... queue:
-      s = 0
-      n = l..(queue)
+      s 0
+      n l..(queue)
       ___ _ __ r..(n
-        top = queue.popleft()
+        top queue.popleft()
         s += top.val
         __ top.left:
           queue.a..(top.left)

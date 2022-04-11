@@ -24,9 +24,9 @@ ___ rotate(s__, n
     """Rotate characters in a string. Expects string and n (int) for
        number of characters to move.
     """
-    d = c...d..(s__)
+    d c...d..(s__)
     d.rotate(-n)
-    result = ''.j..(d)
+    result ''.j..(d)
     print(result)
 
 

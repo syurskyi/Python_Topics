@@ -20,46 +20,46 @@ c_ Solution(o..
     w.... root:
       __ root.val < target:
         preStack.a..(root)
-        root = root.right
+        root root.right
       ____
         sucStack.a..(root)
-        root = root.left
+        root root.left
 
     ___ getPredecessor(stack
       __ n.. stack:
         r..
-      pre = stack.p.. )
-      p = pre.left
+      pre stack.p.. )
+      p pre.left
       w.... p:
         stack.a..(p)
-        p = p.right
+        p p.right
       r.. pre
 
     ___ getSuccessor(stack
       __ n.. stack:
         r..
-      suc = stack.p.. )
-      p = suc.right
+      suc stack.p.. )
+      p suc.right
       w.... p:
         stack.a..(p)
-        p = p.left
+        p p.left
       r.. suc
 
-    pre = getPredecessor(preStack)
-    suc = getSuccessor(sucStack)
+    pre getPredecessor(preStack)
+    suc getSuccessor(sucStack)
 
     w.... k:
       k -_ 1
       __ pre a.. n.. suc:
         ans.a..(pre.val)
-        pre = getPredecessor(preStack)
+        pre getPredecessor(preStack)
       ____ n.. pre a.. suc:
         ans.a..(suc.val)
-        suc = getSuccessor(sucStack)
+        suc getSuccessor(sucStack)
       ____ pre a.. suc a.. a..(pre.val - target) <_ a..(suc.val - target
         ans.a..(pre.val)
-        pre = getPredecessor(preStack)
+        pre getPredecessor(preStack)
       ____ pre a.. suc a.. a..(pre.val - target) >_ a..(suc.val - target
         ans.a..(suc.val)
-        suc = getSuccessor(sucStack)
+        suc getSuccessor(sucStack)
     r.. ans

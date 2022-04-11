@@ -3,7 +3,7 @@ _______ p.... __ pd
 ____ io _______ StringIO
 _______ r__
 
-CSV_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
+CSV_URL 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
 
 
 ___ get_csv
@@ -36,12 +36,12 @@ ___ create_user_bar_chart(content
 
 
     
-    data = pd.read_csv(StringIO(content
+    data pd.read_csv(StringIO(content
     
 
-    max_length = data.tz.s...l..().m..()
+    max_length data.tz.s...l..().m..()
 
-    counts = data.tz.value_counts().sort_index()
+    counts data.tz.value_counts().sort_index()
 
 
 
@@ -60,6 +60,6 @@ ___ create_user_bar_chart(content
 __ _______ __ _______
 
 
-    content = get_csv()
+    content get_csv()
 
     create_user_bar_chart(content)

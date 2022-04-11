@@ -7,7 +7,7 @@
 
 c_ Solution(o..
   ___ -
-    lSum = 0
+    lSum 0
 
   ___ convertBST  root
     """
@@ -18,6 +18,6 @@ c_ Solution(o..
       r.. N..
     convertBST(root.right)
     lSum += root.val
-    root.val = lSum
+    root.val lSum
     convertBST(root.left)
     r.. root

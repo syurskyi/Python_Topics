@@ -47,24 +47,24 @@ c_ Solution:
         merge has to be dfs
         account id
         """
-        email_to_ids = d..(s..)
+        email_to_ids d..(s..)
         ___ i, v __ e..(accounts
             ___ email __ v[1:]:
                 email_to_ids[email].add(i)
 
         # graph nodes by ids, edges by email
-        visited = [F.. ___ _ __ accounts]
+        visited [F.. ___ _ __ accounts]
         ret    # list
         ___ i, v __ e..(accounts
             __ n.. visited[i]:
-                emails = s..()
+                emails s..()
                 dfs(i, accounts, email_to_ids, emails, visited)
                 ret.a..([v[0]] + s..(emails
 
         r.. ret
 
     ___ dfs  i, accounts, email_to_ids, emails, visited
-        visited[i] = T..
+        visited[i] T..
         ___ email __ accounts[i][1:]:
             emails.add(email)
             ___ nbr __ email_to_ids[email]:
@@ -81,21 +81,21 @@ c_ Solution:
         mistake: not dfs, search on the first level
         """
         email_id    # dict
-        id_emails = d..(l..)
+        id_emails d..(l..)
         ___ i __ r..(l..(accounts:
-            person = N..
+            person N..
             ___ email __ accounts[i][1:]:
                 __ email __ email_id:
-                    person = email_id[email]
+                    person email_id[email]
                     _____
 
             ___ email __ accounts[i][1:]:
                 __ person __ N..
-                    person = i
-                    email_id[email] = person
+                    person i
+                    email_id[email] person
                     id_emails[person].a..(email)
                 ____ email n.. __ email_id:
-                    email_id[email] = person
+                    email_id[email] person
                     id_emails[person].a..(email)
 
         ret    # list

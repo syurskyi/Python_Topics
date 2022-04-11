@@ -2,9 +2,9 @@ ____ d__ _______ date, d__
 
 ____ dateutil.relativedelta _______ relativedelta
 
-START_DATE = date(2018, 11, 1)
-MIN_DAYS_TO_COUNT_AS_MONTH = 10
-MONTHS_PER_YEAR = 12
+START_DATE date(2018, 11, 1)
+MIN_DAYS_TO_COUNT_AS_MONTH 10
+MONTHS_PER_YEAR 12
 
 
 ___ calc_months_passed(year, month, day
@@ -30,16 +30,16 @@ ___ calc_months_passed(year, month, day
        Return the number of months passed int.
     """
     ___
-        in_date = d__ y.._year, m.._month, d.._day)
+        in_date d__ y.._year, m.._month, d.._day)
         __ date(year, month, day) < START_DATE:
             r.. V...
-        months_passed = 0
-        difference_dt = relativedelta(date(year, month, day), START_DATE)
+        months_passed 0
+        difference_dt relativedelta(date(year, month, day), START_DATE)
         #print(difference_dt.years, difference_dt.months, difference_dt.days)
         __ difference_dt.days >_ MIN_DAYS_TO_COUNT_AS_MONTH:
-            months_passed = difference_dt.months + 1
+            months_passed difference_dt.months + 1
         ____
-            months_passed = difference_dt.months
+            months_passed difference_dt.months
         __ difference_dt.years > 0:
             months_passed += difference_dt.years * MONTHS_PER_YEAR
         r.. months_passed

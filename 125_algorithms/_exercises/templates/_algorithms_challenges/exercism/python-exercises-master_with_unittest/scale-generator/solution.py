@@ -9,20 +9,20 @@ c_ Scale(o..
                  'eb'
 
     ___ - , tonic, scale_name, pattern_ N..
-        tonic = tonic.capitalize()
-        name = tonic + ' ' + scale_name
-        pattern = pattern
-        chromatic_scale = (FLAT_CHROMATIC_SCALE
+        tonic tonic.capitalize()
+        name tonic + ' ' + scale_name
+        pattern pattern
+        chromatic_scale (FLAT_CHROMATIC_SCALE
                                 __ tonic __ FLAT_KEYS ____
                                 CHROMATIC_SCALE)
-        pitches = _assign_pitches()
+        pitches _assign_pitches()
 
     ___ _assign_pitches
         __ pattern __ N..
             r.. _reorder_chromatic_scale()
-        last_index = 0
+        last_index 0
         pitches    # list
-        scale = _reorder_chromatic_scale()
+        scale _reorder_chromatic_scale()
         ___ i, interval __ e..(pattern
             pitches.a..(scale[last_index])
             last_index += ASCENDING_INTERVALS.i.. interval) + 1
@@ -31,5 +31,5 @@ c_ Scale(o..
         r.. pitches
 
     ___ _reorder_chromatic_scale
-        index = chromatic_scale.i.. tonic)
+        index chromatic_scale.i.. tonic)
         r.. chromatic_scale[index:] + chromatic_scale[:index]

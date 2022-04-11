@@ -15,9 +15,9 @@ b = [1,0]
 
 Result: 1024
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
-C = 1337
+C 1337
 
 
 c_ Solution(o..
@@ -35,11 +35,11 @@ c_ Solution(o..
         """
         __ n.. b:
             r.. 1
-        s = 1
-        lsd = b.p.. )  # list significant digit
+        s 1
+        lsd b.p.. )  # list significant digit
         s *= (a % C) ** lsd
         s %= C
-        rest = superPow(a, b)
+        rest superPow(a, b)
         s *= rest ** 10
         s %= C
         r.. s

@@ -10,16 +10,16 @@ c_ Solution:
         __ n.. nums:
             r.. []
 
-        n = l..(nums)
-        ans = [0] * n
+        n l..(nums)
+        ans [0] * n
 
-        cands = s..(s..(nums
-        v2i = {cands[i]: i ___ i __ r..(l..(cands}
-        bits = [0] * (l..(v2i) + 1)
+        cands s..(s..(nums
+        v2i {cands[i]: i ___ i __ r..(l..(cands}
+        bits [0] * (l..(v2i) + 1)
 
         ___ i __ r..(n - 1, -1, -1
-            j = v2i[nums[i]]
-            ans[i] = s..(j)
+            j v2i[nums[i]]
+            ans[i] s..(j)
             update(j)
 
         r.. ans
@@ -32,7 +32,7 @@ c_ Solution:
             i += (i & -i)
 
     ___ s..  i
-        res = 0
+        res 0
 
         w.... i > 0:
             res += bits[i]
@@ -55,7 +55,7 @@ c_ Solution:
         __ n.. nums:
             r.. ans
 
-        n = l..(nums)
+        n l..(nums)
 
         ___ i __ r..(n
             ans.a..(0)

@@ -12,12 +12,12 @@ c_ Solution(o..
         """
         graph    # dict
         ___ i __ r..(N
-            graph[i] = s..()
+            graph[i] s..()
         ___ i, j __ edges:
             graph[i].add(j)
             graph[j].add(i)
-        res = [0]*N
-        count = [0]*N
+        res [0]*N
+        count [0]*N
         dfs(0, s..(), graph, res, count)
         dfs2(0, s..(), graph, res, count, N)
         r.. res
@@ -35,7 +35,7 @@ c_ Solution(o..
         visited.add(root)
         ___ i __ graph[root]:
             __ i n.. __ visited:
-                res[i] = res[root] - count[i] + N - count[i]
+                res[i] res[root] - count[i] + N - count[i]
                 dfs2(i, visited, graph, res, count, N)
     
     ##########################################################
@@ -47,7 +47,7 @@ c_ Solution(o..
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        n = N
+        n N
         graph    # dict
         ___ i __ r..(n
             graph[i]    # list
@@ -60,14 +60,14 @@ c_ Solution(o..
         r.. res
     
     ___ bfs  graph, i
-        res = 0
-        queue = [i]
-        visited = s..([i])
-        level = 1
+        res 0
+        queue [i]
+        visited s..([i])
+        level 1
         w.... queue:
-            size = l..(queue)
+            size l..(queue)
             ___ _ __ r..(size
-                node = queue.p.. 0)
+                node queue.p.. 0)
                 ___ node0 __ graph[node]:
                     __ node0 n.. __ visited:
                         res += level
@@ -77,7 +77,7 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 6,
                 [[0, 1], [0, 2], [2, 3], [2, 4], [2, 5]],
@@ -86,7 +86,7 @@ c_ Solution(o..
         ___ n, edges __ testCases:
             print('n: %s' % n)
             print('edges: %s' % edges)
-            result = sumOfDistancesInTree(n, edges)
+            result sumOfDistancesInTree(n, edges)
             print('result: %s' % result)
             print('-='*30+'-')
 

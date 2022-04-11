@@ -4,14 +4,14 @@ Given a complete binary tree, count the number of nodes.
 In a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level
 are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
     ___  -r
         r.. r.. (val)
@@ -24,27 +24,27 @@ c_ Solution:
         """
         __ n.. root:
             r.. 0
-        h = get_height(root)
-        h_r = get_height(root.right)
+        h get_height(root)
+        h_r get_height(root.right)
         __ h __ h_r+1:
             r.. 2**(h-1)-1+1+countNodes(root.right)  # left_tree nodes + root + right_tree nodes
         ____
             r.. 2**(h-2)-1+1+countNodes(root.left)  # right_tree nodes + root + left_tree nodes
 
     ___ get_height  cur
-        h = 0  # depth starting from 0
+        h 0  # depth starting from 0
         w.... cur:
             h += 1
-            cur = cur.left
+            cur cur.left
 
         r.. h
 
 
 c_ Solution_TLE:
     ___ -
-        depth = 0  # depth starts from 1
-        cnt = 0
-        stopped = F..
+        depth 0  # depth starts from 1
+        cnt 0
+        stopped F..
 
     ___ countNodes  root
         """
@@ -71,7 +71,7 @@ c_ Solution_TLE:
             __ depth __ depth:
                 cnt += 1
             ____
-                stopped = T..
+                stopped T..
             r..
 
         __ root.left:

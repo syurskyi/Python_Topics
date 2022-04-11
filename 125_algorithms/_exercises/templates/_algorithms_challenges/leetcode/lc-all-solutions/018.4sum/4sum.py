@@ -13,10 +13,10 @@ c_ Solution(o..
       ___ j __ r..(i + 1, l..(nums:
         __ j > i + 1 a.. nums[j] __ nums[j - 1]:
           _____
-        start = j + 1
-        end = l..(nums) - 1
+        start j + 1
+        end l..(nums) - 1
         w.... start < end:
-          s.. = nums[i] + nums[j] + nums[start] + nums[end]
+          s.. nums[i] + nums[j] + nums[start] + nums[end]
           __ s.. < target:
             start += 1
           ____ s.. > target:

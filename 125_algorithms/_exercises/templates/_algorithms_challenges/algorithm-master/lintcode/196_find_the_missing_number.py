@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. nums:
             r.. 0
 
-        ans = n = l..(nums)
+        ans n l..(nums)
 
         ___ i __ r..(n
             ans ^= i ^ nums[i]

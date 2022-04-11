@@ -39,7 +39,7 @@ ____ c.. _______ C..
 c_ Solution:
     ___ canReorderDoubled  A: L..[i..]) __ b..:
         A.s..(key=a..)
-        counter = C..(A)
+        counter C..(A)
         ___ a __ A:
             __ counter[a] __ 0:
                 _____
@@ -56,17 +56,17 @@ c_ Solution:
         sort + counter to form the doubled pairs
         """
         A.s..()
-        counter = C..(A)
+        counter C..(A)
         ___ a __ A:
             __ counter[a] __ 0:
                 _____
             counter[a] -_ 1
             __ a > 0:
-                target = 2 * a
+                target 2 * a
             ____ a % 2 != 0:
                 r.. F..
             ____
-                target = a // 2
+                target a // 2
 
             __ counter[target] > 0:
                 counter[target] -_ 1

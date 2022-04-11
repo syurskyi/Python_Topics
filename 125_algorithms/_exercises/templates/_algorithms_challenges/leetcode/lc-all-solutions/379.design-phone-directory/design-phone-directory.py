@@ -9,8 +9,8 @@ c_ PhoneDirectory(o..
     @param maxNumbers - The maximum numbers that can be stored in the phone directory.
     :type maxNumbers: int
     """
-    taken = [T..] * maxNumbers
-    q = d..([i ___ i __ r..(0, maxNumbers)])
+    taken [T..] * maxNumbers
+    q d..([i ___ i __ r..(0, maxNumbers)])
 
   ___ get
     """
@@ -19,7 +19,7 @@ c_ PhoneDirectory(o..
     :rtype: int
     """
     __ q:
-      taken[q[0]] = F..
+      taken[q[0]] F..
       r.. q.popleft()
     r.. -1
 
@@ -38,7 +38,7 @@ c_ PhoneDirectory(o..
     :rtype: void
     """
     __ n.. taken[number]:
-      taken[number] = T..
+      taken[number] T..
       q.a..(number)
 
 # Your PhoneDirectory object will be instantiated and called as such:

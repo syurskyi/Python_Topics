@@ -7,7 +7,7 @@ c_ Solution(o..
     :rtype: bool
     """
     d    # dict
-    s3 = l..(s3)
+    s3 l..(s3)
     __ l..(s1) + l..(s2) != l..(s3
       r.. F..
 
@@ -24,7 +24,7 @@ c_ Solution(o..
           __ dfs(s1, i + 1, s2, j, d, p.., s3
             r.. T..
           p...p.. )
-          d[(i + 1, j)] = F..
+          d[(i + 1, j)] F..
 
       __ j < l..(s2
         __ s3[i + j] __ s2[j]:
@@ -32,7 +32,7 @@ c_ Solution(o..
           __ dfs(s1, i, s2, j + 1, d, p.., s3
             r.. T..
           p...p.. )
-          d[(i, j + 1)] = F..
+          d[(i, j + 1)] F..
 
       r.. F..
 

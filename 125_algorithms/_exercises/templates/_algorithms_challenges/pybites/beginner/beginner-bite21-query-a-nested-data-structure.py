@@ -11,7 +11,7 @@ Update 18th of Sept 2018: as concluded in the forum it is better to pass the car
 
 """
 
-cars = {
+cars {
     'Ford':  'Falcon', 'Focus', 'Festiva', 'Fairlane' ,
     'Holden':  'Commodore', 'Captiva', 'Barina', 'Trailblazer' ,
     'Nissan':  'Maxima', 'Pulsar', '350Z', 'Navara' ,
@@ -21,7 +21,7 @@ cars = {
 
 ___ get_all_jeeps cars=cars
     """return a comma  + space (', ') separated string of jeep models (original order)"""
-    separator = ', '
+    separator ', '
     r..(separator.j..(cars 'Jeep' 
 
 ___ get_first_model_each_manufacturer cars=cars

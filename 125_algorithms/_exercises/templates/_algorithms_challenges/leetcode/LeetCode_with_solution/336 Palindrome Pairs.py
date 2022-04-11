@@ -22,8 +22,8 @@ ____ c.. _______ d..
 c_ TrieNode:
     ___ -
         pali_prefix_idxes    # list  # suffix ends, prefix pali
-        word_idx = N..
-        children = d..(TrieNode)
+        word_idx N..
+        children d..(TrieNode)
 
 
 c_ Solution:
@@ -51,28 +51,28 @@ c_ Solution:
 
         Construct Trie for word_j reversely, since word_j is being checked
         """
-        root = TrieNode()
+        root TrieNode()
         ___ idx, w __ e..(words
-            cur = root
+            cur root
             ___ i __ r..(l..(w) - 1, -1, -1
                 #  cur.children[w[i]]  # error, pre-advancing the trie is unable to handle empty str
                 __ is_palindrome(w, 0, i + 1
                     cur.pali_prefix_idxes.a..(idx)
 
-                cur = cur.children[w[i]]
+                cur cur.children[w[i]]
 
             cur.pali_prefix_idxes.a..(idx)  # empty str is palindrome
-            cur.word_idx = idx  # word ends
+            cur.word_idx idx  # word ends
 
         ret    # list
         ___ idx, w __ e..(words
-            cur = root
+            cur root
             ___ i __ r..(l..(w:
                 # cur.children.get(w[i], None)  # error, pre-advancing the trie is unable to handle empty str
                 __ is_palindrome(w, i, l..(w a.. cur.word_idx __ n.. N.. a.. cur.word_idx != idx:
                     ret.a..([idx, cur.word_idx])
 
-                cur = cur.children.g.. w[i], N..)
+                cur cur.children.g.. w[i], N..)
                 __ cur __ N..
                     _____
             ____
@@ -83,8 +83,8 @@ c_ Solution:
         r.. ret
 
     ___ is_palindrome  w, lo, hi
-        i = lo
-        j = hi - 1
+        i lo
+        j hi - 1
         w.... i < j:
             __ w[i] != w[j]:
                 r.. F..

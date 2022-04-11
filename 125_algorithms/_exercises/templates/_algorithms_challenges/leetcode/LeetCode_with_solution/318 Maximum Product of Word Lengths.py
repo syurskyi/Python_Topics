@@ -18,7 +18,7 @@ Given ["a", "aa", "aaa", "aaaa"]
 Return 0
 No such pair of words.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -29,18 +29,18 @@ c_ Solution(o..
         :type words: List[str]
         :rtype: int
         """
-        l = map(l.., words)
-        codes = map(encode, words)
-        maxa = 0
+        l map(l.., words)
+        codes map(encode, words)
+        maxa 0
         ___ i __ x..(l..(codes:
             ___ j __ x..(i+1, l..(codes:
                 __ codes[i] & codes[j] __ 0:
-                    maxa = m..(maxa, l[i]*l[j])
+                    maxa m..(maxa, l[i]*l[j])
 
         r.. maxa
 
     ___ encode  x
-        ret = 0
+        ret 0
         ___ c __ x:
             ret |= 1 << (o..(c)-o..('a'
         r.. ret

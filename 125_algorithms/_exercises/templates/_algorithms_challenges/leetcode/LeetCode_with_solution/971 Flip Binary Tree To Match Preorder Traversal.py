@@ -44,15 +44,15 @@ ____ t___ _______ L..
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ -
         ret    # list
-        i = 0  # currently scanning index of voyage
+        i 0  # currently scanning index of voyage
 
     ___ flipMatchVoyage  root: TreeNode, voyage: L..[i..]) __ L..[i..]:
         """
@@ -67,7 +67,7 @@ c_ Solution:
             r..
 
         __ node.val != voyage[i]:
-            ret = [-1]
+            ret [-1]
             r..
 
         i += 1

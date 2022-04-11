@@ -22,11 +22,11 @@ c_ Solution(o..
         :type triangle: List[List[int]]
         :rtype: int
         """
-        n = l..(triangle)
-        m = 0
-        res = N..
+        n l..(triangle)
+        m 0
+        res N..
         ___ i, row __ e..(triangle
-            m = l..(row)
+            m l..(row)
             __ i > 0:
                 ___ j, col __ e..(row
                     __ 0 < j < m - 1:
@@ -40,18 +40,18 @@ c_ Solution(o..
             __ i __ n - 1:
                 ___ col __ row:
                     __ res __ N..
-                        res = col
+                        res col
                     ____
-                        res = m..(col, res)
+                        res m..(col, res)
         r.. res
 
 
-a1 = [
+a1 [
     [2],
     [3, 4],
     [6, 5, 7],
     [4, 1, 8, 3]
 ]
 
-s = Solution()
+s Solution()
 print(s.minimumTotal(a1

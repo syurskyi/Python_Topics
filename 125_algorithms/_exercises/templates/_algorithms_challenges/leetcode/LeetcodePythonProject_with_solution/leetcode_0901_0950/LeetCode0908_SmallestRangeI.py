@@ -13,34 +13,34 @@ c_ Solution(o..
         :type K: int
         :rtype: int
         """
-        minVal = m..(A)
-        maxVal = m..(A)
-        med = (minVal+maxVal) // 2
-        minVal = f__('inf')
-        maxVal = f__('-inf')
+        minVal m..(A)
+        maxVal m..(A)
+        med (minVal+maxVal) // 2
+        minVal f__('inf')
+        maxVal f__('-inf')
         ___ num __ A:
             __ num > med:
                 __ num - med > K:
                     num -_ K
                 ____
-                    num = med
+                    num med
             ____ num < med:
                 __ med - num > K:
                     num += K
                 ____
-                    num = med
-            maxVal = m..(maxVal, num)
-            minVal = m..(minVal, num)
+                    num med
+            maxVal m..(maxVal, num)
+            minVal m..(minVal, num)
         r.. maxVal - minVal
 
     ___ test
-        testCases = [
+        testCases [
             [[1], 0],
             [[0,10], 2],
             [[1,3,6], 3],
         ]
         ___ a, k __ testCases:
-            res = smallestRangeI(a, k)
+            res smallestRangeI(a, k)
             print('res: %s' % res)
             print('-='*30+'-')
 

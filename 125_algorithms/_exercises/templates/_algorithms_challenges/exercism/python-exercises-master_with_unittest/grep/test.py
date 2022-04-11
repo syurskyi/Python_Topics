@@ -6,8 +6,8 @@ ____ grep _______ grep
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-ILIADFILENAME = 'iliad.txt'
-ILIADCONTENTS = '''Achilles sing, O Goddess! Peleus' son;
+ILIADFILENAME 'iliad.txt'
+ILIADCONTENTS '''Achilles sing, O Goddess! Peleus' son;
 His wrath pernicious, who ten thousand woes
 Caused to Achaia's host, sent many a soul
 Illustrious into Ades premature,
@@ -18,8 +18,8 @@ The noble Chief Achilles from the son
 Of Atreus, Agamemnon, King of men.
 '''
 
-MIDSUMMERNIGHTFILENAME = 'midsummer-night.txt'
-MIDSUMMERNIGHTCONTENTS = '''I do entreat your grace to pardon me.
+MIDSUMMERNIGHTFILENAME 'midsummer-night.txt'
+MIDSUMMERNIGHTCONTENTS '''I do entreat your grace to pardon me.
 I know not by what power I am made bold,
 Nor how it may concern my modesty,
 In such a presence here to plead my thoughts;
@@ -28,8 +28,8 @@ The worst that may befall me in this case,
 If I refuse to wed Demetrius.
 '''
 
-PARADISELOSTFILENAME = 'paradise-lost.txt'
-PARADISELOSTCONTENTS = '''Of Mans First Disobedience, and the Fruit
+PARADISELOSTFILENAME 'paradise-lost.txt'
+PARADISELOSTCONTENTS '''Of Mans First Disobedience, and the Fruit
 Of that Forbidden Tree, whose mortal tast
 Brought Death into the World, and all our woe,
 With loss of Eden, till one greater Man

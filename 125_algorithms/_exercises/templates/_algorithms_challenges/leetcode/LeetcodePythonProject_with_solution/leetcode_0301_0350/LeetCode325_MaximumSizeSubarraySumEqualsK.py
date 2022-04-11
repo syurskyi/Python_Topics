@@ -7,27 +7,27 @@ Created on Mar 18, 2017
 c_ Solution(o..
     ___ maxSubArrayLen  nums, k
         hashmap    # dict
-        sumVal = 0
-        maxLen = 0
+        sumVal 0
+        maxLen 0
         ___ i, num __ e..(nums
             sumVal += num
             __ sumVal __ k:
-                maxLen = m..(maxLen, i+1)
+                maxLen m..(maxLen, i+1)
             __ sumVal-k __ hashmap:
-                maxLen = m..(maxLen, i-hashmap[sumVal-k])
+                maxLen m..(maxLen, i-hashmap[sumVal-k])
             __ sumVal n.. __ hashmap:
-                hashmap[sumVal] = i
+                hashmap[sumVal] i
         r.. maxLen
     
     ___ test
-        testCases = [
+        testCases [
             ([1, -1, 5, -2, 3], 3),
             ([-2, -1, 2, 1], 1),
         ]
         ___ nums, k __ testCases:
             print('nums: %s' % (nums
             print('k: %s' % (k
-            result = maxSubArrayLen(nums, k)
+            result maxSubArrayLen(nums, k)
             print('result: %s' % (result
             print('-='*20+'-')
     

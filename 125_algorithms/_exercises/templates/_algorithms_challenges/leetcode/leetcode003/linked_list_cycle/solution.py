@@ -17,11 +17,11 @@ c_ Solution(o..
         :type head: ListNode
         :rtype: bool
         """
-        slow = head
-        fast = head
+        slow head
+        fast head
         w.... fast __ n.. N.. a.. fast.next __ n.. N..
-            slow = slow.next
-            fast = fast.next.next
+            slow slow.next
+            fast fast.next.next
             __ slow __ fast:
                 r.. T..
         r.. F..

@@ -1,10 +1,10 @@
 _______ p.... __ pd
 
-data = "https://s3.us-east-2.amazonaws.com/bites-data/menu.csv"
+data "https://s3.us-east-2.amazonaws.com/bites-data/menu.csv"
 # load the data in once, functions will use this module object
-df = pd.read_csv(data)
+df pd.read_csv(data)
 
-pd.options.mode.chained_assignment = N..  # ignore warnings
+pd.options.mode.chained_assignment N..  # ignore warnings
 
 
 ___ get_food_most_calories(df=df
@@ -28,8 +28,8 @@ ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..
     df 'PC_Ratio'  = df.Protein / df.Calories
 
     __ excl_drinks:
-        df = df[(df.Category != 'Coffee & Tea') & (df.Category != 'Beverages')]
+        df df[(df.Category != 'Coffee & Tea') & (df.Category != 'Beverages')]
 
-    top_5 = l..(df.sort_values(by= 'PC_Ratio' , ascending=F..),i..[0:5].Item)
+    top_5 l..(df.sort_values(by= 'PC_Ratio' , ascending=F..),i..[0:5].Item)
 
     r.. top_5

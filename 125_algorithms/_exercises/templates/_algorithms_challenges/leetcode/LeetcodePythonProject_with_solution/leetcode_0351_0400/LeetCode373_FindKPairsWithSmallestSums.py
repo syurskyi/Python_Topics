@@ -15,12 +15,12 @@ c_ Solution(o..
         ___ _ __ r..(k
             __ n.. heap:
                 _____
-            _, num1, num2 = heapq.heappop(heap)
+            _, num1, num2 heapq.heappop(heap)
             result.a..((num1, num2
         r.. result
     
     ___ test
-        testCases = [
+        testCases [
             (
                 [1, 7, 11],
                 [2, 4, 6],
@@ -41,7 +41,7 @@ c_ Solution(o..
             print('nums1: %s' % nums1)
             print('nums2: %s' % nums2)
             print('k: %s' % k)
-            result = kSmallestPairs(nums1, nums2, k)
+            result kSmallestPairs(nums1, nums2, k)
             print('result: %s' % result)
             print('-='*20+'-')
 

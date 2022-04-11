@@ -9,6 +9,6 @@ ___ arrays(arr
     r.. n.....array(arr[::-1], f__)
 
 
-arr = input().s...s..(' ')
-result = arrays(arr)
+arr input().s...s..(' ')
+result arrays(arr)
 print(result)

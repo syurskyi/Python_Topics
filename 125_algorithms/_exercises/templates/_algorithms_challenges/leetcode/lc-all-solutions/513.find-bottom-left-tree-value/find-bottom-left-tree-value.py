@@ -15,8 +15,8 @@ c_ Solution(o..
     ___ dfs(root, h, w
       __ n.. root:
         r.. (f__("inf"), f__("inf"), N..)
-      left = dfs(root.left, h - 1, w - 1)
-      right = dfs(root.right, h - 1, w + 1)
+      left dfs(root.left, h - 1, w - 1)
+      right dfs(root.right, h - 1, w + 1)
       r.. m..((h, w, root.val), left, right)
 
     r.. dfs(root, 0, 0)[2]

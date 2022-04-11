@@ -21,8 +21,8 @@ _______ __
 
 # data provided
 tmp  __.g.. TMP  /tmp
-stopwords_file = __.p...j..(tmp, 'stopwords')
-harry_text = __.p...j..(tmp, 'harry')
+stopwords_file __.p...j..(tmp, 'stopwords')
+harry_text __.p...j..(tmp, 'harry')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/stopwords.txt',
     stopwords_file
@@ -44,35 +44,35 @@ ___ my_solution_get_harry_most_common_word
 
     stopwords    # list
     filtered    # list
-    f1 = o.. stopwords_file, _
+    f1 o.. stopwords_file, _
     ___ line __ f1:
         stopwords.a..(line.s..
 
-    f2 = o.. harry_text, _
+    f2 o.. harry_text, _
     ___ line __ f2:
         ___ word __ line.s.. :
             print(word)
-            p = word.s..(s__.punctuation).l..
+            p word.s..(s__.punctuation).l..
 
             __ l..(p) > 0 a.. p n.. __ stopwords:
                 filtered.a..(word.s..(s__.punctuation).l..
 
-    counter = C..(filtered)
+    counter C..(filtered)
     r.. counter.most_common(1)[0]
 
 ___ pyb_solution_get_harry_most_common_word
     ___ get_harry_most_common_word
         w__ o.. stopwords_file) __ f:
-            stopwords = s..(f.r...s...l...s..('\n'
+            stopwords s..(f.r...s...l...s..('\n'
 
         w__ o.. harry_text) __ f:
-            words = [__.s.. _ \W+', r'', word)  # [^a-zA-Z0-9_]
+            words [__.s.. _ \W+', r'', word)  # [^a-zA-Z0-9_]
                      ___ word __ f.r...l...s.. ]
 
-            words = [word ___ word __ words __ word.s..
+            words [word ___ word __ words __ word.s..
                      a.. word n.. __ stopwords]
 
-            cnt = C..(words)
+            cnt C..(words)
             r.. cnt.most_common(1)[0]
 
 

@@ -5,7 +5,7 @@ c_ Solution(o..
     :rtype: bool
     """
     stack    # list
-    d = ["()", "[]", "{}"]
+    d ["()", "[]", "{}"]
     ___ i __ r..(0, l..(s:
       stack.a..(s[i])
       __ l..(stack) >_ 2 a.. stack[-2] + stack[-1] __ d:

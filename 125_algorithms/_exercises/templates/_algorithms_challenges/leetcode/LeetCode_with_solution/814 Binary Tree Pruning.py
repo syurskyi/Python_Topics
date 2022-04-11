@@ -40,9 +40,9 @@ The value of each node will only be 0 or 1.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 ____ t___ _______ Tuple
@@ -50,15 +50,15 @@ ____ t___ _______ Tuple
 
 c_ Solution:
     ___ pruneTree  root: TreeNode) __ TreeNode:
-        root, _ = prune(root)
+        root, _ prune(root)
         r.. root
 
     ___ prune  node) __ Tuple[TreeNode, b..]:
         __ n.. node:
             r.. N.., F..
 
-        node.left, contain_left = prune(node.left)
-        node.right, contain_right = prune(node.right)
+        node.left, contain_left prune(node.left)
+        node.right, contain_right prune(node.right)
         __ n.. contain_left a.. n.. contain_right a.. node.val __ 0:
             r.. N.., F..
 

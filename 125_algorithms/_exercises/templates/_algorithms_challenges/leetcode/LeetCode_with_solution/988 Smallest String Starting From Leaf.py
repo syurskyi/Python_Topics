@@ -33,9 +33,9 @@ Each node in the tree will have a value between 0 and 25.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 ____ t___ _______ Tuple
@@ -44,7 +44,7 @@ ____ c.. _______ d..
 
 c_ Solution:
     ___ -
-        mn: Tuple[i..] = N..
+        mn: Tuple[i..] N..
 
     ___ smallestFromLeaf  root: TreeNode) __ s..:
         """
@@ -64,9 +64,9 @@ c_ Solution:
 
         cur_deque.appendleft(node.val)
         __ n.. node.left a.. n.. node.right:
-            t = t..(cur_deque)
+            t t..(cur_deque)
             __ n.. mn o. t < mn:
-                mn = t
+                mn t
         ____
             dfs(node.left, cur_deque)
             dfs(node.right, cur_deque)

@@ -25,22 +25,22 @@ c_ Solution:
         __ n.. s o. n.. words:
             r.. ''
 
-        TMPL = '<b>{}</b>'
-        n = l..(s)
+        TMPL '<b>{}</b>'
+        n l..(s)
         ans    # list
-        is_bold = [F..] * n
-        left = right = 0
+        is_bold [F..] * n
+        left right 0
 
         ___ left __ r..(n
             ___ w __ words:
-                size = l..(w)
+                size l..(w)
 
                 __ s[left:left + size] __ w a.. left + size > right:
-                    right = left + size
+                    right left + size
 
-            is_bold[left] = right > left
+            is_bold[left] right > left
 
-        left = right = 0
+        left right 0
 
         w.... left < n:
             __ n.. is_bold[left]:
@@ -48,12 +48,12 @@ c_ Solution:
                 left += 1
                 _____
 
-            right = left
+            right left
 
             w.... right < n a.. is_bold[right]:
                 right += 1
 
             ans.a..(TMPL.f..(s[left:right]
-            left = right  # imply left' = left + 1
+            left right  # imply left' = left + 1
 
         r.. ''.j..(ans)

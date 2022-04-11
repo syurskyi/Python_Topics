@@ -2,11 +2,11 @@ _______ r__
 
 
 c_ Robot(o..
-    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    alphabet 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
     ___ -
-        _name = N..
-        _past_names = s..()
+        _name N..
+        _past_names s..()
 
     ___ prefix
         r.. ''.j..([
@@ -25,7 +25,7 @@ c_ Robot(o..
 
             # Collision detection
             w... T...
-                _name = prefix() + suffix()
+                _name prefix() + suffix()
                 __ _name n.. __ _past_names:
                     _past_names.add(_name)
                     _____
@@ -33,9 +33,9 @@ c_ Robot(o..
         r.. _name
 
     ___ del_name
-        _name = N..
+        _name N..
 
-    name = property(get_name, N.., del_name)
+    name property(get_name, N.., del_name)
 
     ___ reset
         del name

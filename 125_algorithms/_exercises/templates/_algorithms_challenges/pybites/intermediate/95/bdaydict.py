@@ -1,4 +1,4 @@
-MSG = 'Hey {}, there are more people with your birthday!'
+MSG 'Hey {}, there are more people with your birthday!'
 
 
 c_ BirthdayDict(d..

@@ -13,11 +13,11 @@ c_ Solution:
     @return: An integer
     """
     ___ minDepth  root
-        ans = 0
+        ans 0
         __ n.. root:
             r.. ans
 
-        queue = [root]
+        queue [root]
         w.... queue:
             _queue    # list
             ans += 1
@@ -30,7 +30,7 @@ c_ Solution:
                 __ node.right:
                     _queue.a..(node.right)
 
-            queue = _queue
+            queue _queue
 
         r.. ans
 
@@ -47,8 +47,8 @@ c_ Solution:
         __ n.. root.left a.. n.. root.right:
             r.. 1
 
-        left = minDepth(root.left)
-        right = minDepth(root.right)
+        left minDepth(root.left)
+        right minDepth(root.right)
 
         __ left __ 0:
             r.. right + 1

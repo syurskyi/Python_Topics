@@ -8,12 +8,12 @@ c_ Solution(o..
     :type guess: str
     :rtype: str
     """
-    a = b = 0
-    ds = C..()
-    dg = C..()
+    a b 0
+    ds C..()
+    dg C..()
     ___ i __ r..(l..(secret:
-      s = secret[i]
-      g = guess[i]
+      s secret[i]
+      g guess[i]
       __ secret[i] __ guess[i]:
         a += 1
       ____

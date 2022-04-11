@@ -4,19 +4,19 @@ _______ __
 ____ u__.r.. _______ u..
 _______ p.... __ pd
 
-BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
-TMP = __.g.. TMP  /tmp
+BASE_URL 'https://bites-data.s3.us-east-2.amazonaws.com/'
+TMP __.g.. TMP  /tmp
 
-fname = 'movie_metadata.csv'
-remote = __.p...j..(BASE_URL, fname)
-local = __.p...j..(TMP, fname)
+fname 'movie_metadata.csv'
+remote __.p...j..(BASE_URL, fname)
+local __.p...j..(TMP, fname)
 u..(remote, local)
 
-MOVIE_DATA = local
-MIN_MOVIES = 4
-MIN_YEAR = 1960
+MOVIE_DATA local
+MIN_MOVIES 4
+MIN_YEAR 1960
 
-Movie = n..('Movie', 'title year score')
+Movie n..('Movie', 'title year score')
 
 
 ___ get_movies_by_director
@@ -24,17 +24,17 @@ ___ get_movies_by_director
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
 
-    data = pd.read_csv(local)
+    data pd.read_csv(local)
     
 
-    data = data[data.title_year >_ 1960]
-    result = d..(l..)
+    data data[data.title_year >_ 1960]
+    result d..(l..)
 
 
     ___ _,row __ data.iterrows
-        director = row.director_name
-        movie_title = row.movie_title
-        movie_year = row.title_year
+        director row.director_name
+        movie_title row.movie_title
+        movie_year row.title_year
         imdb_score =row.imdb_score
         __ movie_title a.. movie_year a.. imdb_score:
             result[director].a..(Movie(movie_title,movie_year,imdb_score
@@ -71,7 +71,7 @@ ___ get_average_scores(directors
 
     ___ director,movies __ directors.i..:
         __ l..(movies) >_ MIN_MOVIES:
-            mean_score = calc_mean_score(movies)
+            mean_score calc_mean_score(movies)
             result.a..((director,mean_score
     
 

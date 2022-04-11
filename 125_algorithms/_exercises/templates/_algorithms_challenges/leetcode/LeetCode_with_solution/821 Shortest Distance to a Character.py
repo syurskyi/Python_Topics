@@ -23,14 +23,14 @@ c_ Solution:
         """
         get the sorted indexes of C
         """
-        idx = [
+        idx [
             i
             ___ i __ r..(l..(S
             __ S[i] __ C
         ]
-        idx = [-f__("inf")] + idx + [f__("inf")]
+        idx [-f__("inf")] + idx + [f__("inf")]
         ret    # list
-        i = 0
+        i 0
         ___ j __ r..(l..(S:
             w.... n.. idx[i] <_ j < idx[i+1]:
                 i += 1

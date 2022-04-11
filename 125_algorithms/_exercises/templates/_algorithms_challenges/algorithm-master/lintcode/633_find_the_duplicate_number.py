@@ -16,14 +16,14 @@ c_ Solution:
         __ n.. A:
             r.. -1
 
-        left, right = 1, l..(A) - 1
+        left, right 1, l..(A) - 1
 
         w.... left + 1 < right:
-            mid = (left + right) // 2
+            mid (left + right) // 2
             __ after_dup(A, mid
-                right = mid
+                right mid
             ____
-                left = mid
+                left mid
 
         __ after_dup(A, left
             r.. left
@@ -32,7 +32,7 @@ c_ Solution:
         r.. -1
 
     ___ after_dup  A, mid
-        cnt = 0
+        cnt 0
 
         ___ a __ A:
             __ a <_ mid:
@@ -71,17 +71,17 @@ c_ Solution:
         __ n.. A:
             r.. -1
 
-        slow = A[0]
-        fast = A[A[0]]
+        slow A[0]
+        fast A[A[0]]
 
         w.... slow != fast:
-            slow = A[slow]
-            fast = A[A[fast]]
+            slow A[slow]
+            fast A[A[fast]]
 
-        fast = 0
+        fast 0
 
         w.... slow != fast:
-            slow = A[slow]
-            fast = A[fast]
+            slow A[slow]
+            fast A[fast]
 
         r.. slow

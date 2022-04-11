@@ -5,8 +5,8 @@ c_ Solution(o..
     :type target: int
     :rtype: int
     """
-    dp = [0] * (target + 1)
-    dp[0] = 1
+    dp [0] * (target + 1)
+    dp[0] 1
 
     ___ i __ r..(1, target + 1
       ___ j __ r..(1, l..(nums) + 1

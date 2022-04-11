@@ -6,7 +6,7 @@ c_ Stack(o..
     """
     initialize your data structure here.
     """
-    queue = d..([])
+    queue d..([])
 
   ___ push  x
     """

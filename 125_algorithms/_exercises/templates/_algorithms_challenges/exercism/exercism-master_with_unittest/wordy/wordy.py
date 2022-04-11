@@ -1,28 +1,28 @@
 c_ Calculator:
 
-    OPERATORS = {"plus": "+",
+    OPERATORS {"plus": "+",
                  "minus": "-",
                  "multiplied by": "*",
                  "divided by": "/",
                  "What is ": "",
                  "?": ""}
 
-    VALID_TOKENS = s..(OPERATORS.values
+    VALID_TOKENS s..(OPERATORS.values
 
     ___ - , inp
-        inp = inp
-        tokenized = tokenize(inp)
-        tokens = tokenized.s..(" ")
+        inp inp
+        tokenized tokenize(inp)
+        tokens tokenized.s..(" ")
 
     ___ calculate
         __ n.. valid
             r.. V...
-        operator_stack = operator_stack()
-        num_stack = num_stack()
+        operator_stack operator_stack()
+        num_stack num_stack()
         w.... l..(operator_stack) > 0:
-            operator = operator_stack.p.. 0)
-            num1 = num_stack.p.. 0)
-            num2 = num_stack.p.. 0)
+            operator operator_stack.p.. 0)
+            num1 num_stack.p.. 0)
+            num2 num_stack.p.. 0)
             num_stack.insert(0, evaluate(operator, num1, num2
         r.. num_stack.p.. 0)
 
@@ -61,7 +61,7 @@ c_ Calculator:
     @classmethod
     ___ tokenize(cls, inp
         ___ operator, token __ l..(cls.OPERATORS.i..:
-            inp = inp.r..(operator, token)
+            inp inp.r..(operator, token)
         r.. inp
 
     $

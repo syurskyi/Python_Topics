@@ -11,12 +11,12 @@ c_ Solution(o..
     """
     __ n.. nums1 o. n.. nums2:
       r.. []
-    heap = [(nums1[0] + nums2[0], 0, 0)]
+    heap [(nums1[0] + nums2[0], 0, 0)]
     ans    # list
-    visited = {(0, 0)}
+    visited {(0, 0)}
 
     w.... heap:
-      val, i, j = heapq.heappop(heap)
+      val, i, j heapq.heappop(heap)
       ans.a..((nums1[i], nums2[j]
       k -_ 1
       __ k __ 0:

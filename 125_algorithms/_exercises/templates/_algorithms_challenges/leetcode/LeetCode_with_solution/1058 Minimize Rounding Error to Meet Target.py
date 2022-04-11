@@ -45,19 +45,19 @@ c_ Solution:
 
         floor all, sort by floor error inverse, make the adjustment
         """
-        A = l.. m..(f__, prices
-        f_sum = s.. m..(m__.f.., A
-        c_sum = s.. m..(m__.ceil, A
+        A l.. m..(f__, prices
+        f_sum s.. m..(m__.f.., A
+        c_sum s.. m..(m__.ceil, A
         __ n.. f_sum <_ target <_ c_sum:
             r.. "-1"
 
-        errors = [
+        errors [
             e - m__.f..(e)
             ___ e __ A
         ]
         errors.s..(r.._T..
-        ret = 0
-        remain = target - f_sum
+        ret 0
+        remain target - f_sum
         ___ err __ errors:
             __ remain > 0:
                 ret += 1 - err

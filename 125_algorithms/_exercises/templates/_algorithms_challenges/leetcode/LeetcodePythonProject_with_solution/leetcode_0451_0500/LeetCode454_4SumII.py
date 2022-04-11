@@ -15,15 +15,15 @@ c_ Solution(o..
         hashmap    # dict
         ___ a __ A:
             ___ b __ B:
-                hashmap[a+b] = hashmap.g.. a+b, 0)+1
-        res = 0
+                hashmap[a+b] hashmap.g.. a+b, 0)+1
+        res 0
         ___ c __ C:
             ___ d __ D:
                 res += hashmap.g.. -c-d, 0)
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [ 1, 2],
                 [-2,-1],
@@ -32,7 +32,7 @@ c_ Solution(o..
             ],
         ]
         ___ nums1, nums2, nums3, nums4 __ testCases:
-            result = fourSumCount(nums1, nums2, nums3, nums4)
+            result fourSumCount(nums1, nums2, nums3, nums4)
             print('result: %s' % result)
             print('-='*30+'-')
 

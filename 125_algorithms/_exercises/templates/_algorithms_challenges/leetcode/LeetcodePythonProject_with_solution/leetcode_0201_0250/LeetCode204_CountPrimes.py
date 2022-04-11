@@ -10,14 +10,14 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        notPrime = [F..]*(n)
-        count = 0
+        notPrime [F..]*(n)
+        count 0
         ___ i __ r..(2, n
             __ n.. notPrime[i]:
                 count += 1
-                j = 2
+                j 2
                 w.... i*j < n:
-                    notPrime[i*j] = T..
+                    notPrime[i*j] T..
                     j += 1
         r.. count
     
@@ -29,24 +29,24 @@ c_ Solution(o..
         _______ m__
         __ n <_ 2:
             r.. 0
-        primes = [F..,]*2 + [T..,]*(n-2)
+        primes [F..,]*2 + [T..,]*(n-2)
         ___ i __ r..(2, i..(m__.sqrt(n-1+1
             __ primes[i]:
                 ___ j __ r..(i+i, n, i
-                    primes[j] = F..
-        count = 0
+                    primes[j] F..
+        count 0
         ___ i __ r..(2, n
             __ primes[i]: count += 1
         print(primes)
         r.. count
     
     ___ test
-        testCases = [
+        testCases [
             6,
         ]
         ___ n __ testCases:
             print('n: %s' % (n
-            result = countPrimes(n)
+            result countPrimes(n)
             print('result: %s' % (result
             print('-='*20+'-')
 

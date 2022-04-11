@@ -4,10 +4,10 @@ ____ e.. _______ E..
 
 
 c_ DateFormat(E..
-    DDMMYY = 0  # dd/mm/yy
-    MMDDYY = 1  # mm/dd/yy
-    YYMMDD = 2  # yy/mm/dd
-    NONPARSABLE = -999
+    DDMMYY 0  # dd/mm/yy
+    MMDDYY 1  # mm/dd/yy
+    YYMMDD 2  # yy/mm/dd
+    NONPARSABLE -999
 
     @classmethod
     ___ get_d_parse_formats(cls, val_ N..
@@ -18,7 +18,7 @@ c_ DateFormat(E..
             for all supported date formats in this enum
         2. for val=n an explicit format string for a given enum member value
         """
-        d_parse_formats = ["%d/%m/%y", "%m/%d/%y", "%y/%m/%d"]
+        d_parse_formats ["%d/%m/%y", "%m/%d/%y", "%y/%m/%d"]
         __ val __ N..
             r.. d_parse_formats
         __ 0 <_ val <_ l..(d_parse_formats
@@ -39,11 +39,11 @@ ___ _maybe_DateFormats(date_str
     a list of enum members, where each member represents
     a possible date format for the input date_str
     """
-    d_parse_formats = DateFormat.get_d_parse_formats()
+    d_parse_formats DateFormat.get_d_parse_formats()
     maybe_formats    # list
     ___ idx, d_parse_fmt __ e..(d_parse_formats
         ___
-            _parsed_date = d__.s..(date_str, d_parse_fmt)  # pylint: disable=W0612
+            _parsed_date d__.s..(date_str, d_parse_fmt)  # pylint: disable=W0612
             maybe_formats.a..(DateFormat(idx
         ______ V..
             p..
@@ -63,10 +63,10 @@ ___ get_dates(dates
     Alowed/supported date formats are defined in a DF enum class.
     """
     result    # list
-    fmts = C..(maybe ___ dt __ dates ___ maybe __ _maybe_DateFormats(dt.most_common(2)
+    fmts C..(maybe ___ dt __ dates ___ maybe __ _maybe_DateFormats(dt.most_common(2)
     __ fmts[0][0] __ DateFormat.NONPARSABLE o. fmts[0][1] __ fmts[1][1]:
         r.. InfDateFmtError()
-    fmt = DateFormat.get_d_parse_formats(fmts[0][0].value)
+    fmt DateFormat.get_d_parse_formats(fmts[0][0].value)
 
     ___ dt __ dates:
         ___

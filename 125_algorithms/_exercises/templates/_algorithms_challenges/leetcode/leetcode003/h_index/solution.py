@@ -32,12 +32,12 @@ c_ Solution(o..
             lowest  c
             count  i + 1
             __ lowest >_ count:
-                h = count
+                h count
             ____
                 _____
         r.. h
 
 
-a1 = [3, 0, 6, 1, 5]
-s = Solution()
+a1 [3, 0, 6, 1, 5]
+s Solution()
 print s.hIndex(a1)

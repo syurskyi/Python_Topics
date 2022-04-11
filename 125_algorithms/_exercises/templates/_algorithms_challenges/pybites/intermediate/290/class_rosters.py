@@ -8,13 +8,13 @@ ___ class_rosters(input_file
         per class, correctly formatted.'''
     class_assignments    # list
     w__ o.. input_file) __ csv_file:
-        csv_reader = csv.reader(csv_file)
+        csv_reader csv.reader(csv_file)
         ___ row __ csv_reader:
-            row_class_check = [class_d ___ class_d __ row __ class_d != ""]
+            row_class_check [class_d ___ class_d __ row __ class_d != ""]
             __ l..(row_class_check) > 2:
-                student_id = row_class_check[0]
+                student_id row_class_check[0]
                 ___ class_a __ row_class_check[2:]:
-                    class_name = class_a.s..(" ")[0]
+                    class_name class_a.s..(" ")[0]
                     class_assignments.a..(f"{class_name},2020,{student_id}")
     r.. class_assignments
 

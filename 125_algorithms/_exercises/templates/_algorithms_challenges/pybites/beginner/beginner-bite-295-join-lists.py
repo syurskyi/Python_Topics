@@ -27,10 +27,10 @@ ___ my_join_lists(lst_of_lst: L..[L..[s..]], sep: s..) __ U..[L..[s..], N..]:
     __ l..(lst_of_lst) __ 0:
         r.. N..
     result    # list
-    first = T..
+    first T..
     ___ inner_list __ lst_of_lst:
         __ first:
-            first = F..
+            first F..
         ____
             result.a..(sep)
         ___ element __ inner_list:

@@ -38,17 +38,17 @@ c_ Solution:
         """
         __ n.. s:
             r.. F..
-        p1 = 0
-        e = 1  # ending s[0:e] is the substring
-        p2 = 1
+        p1 0
+        e 1  # ending s[0:e] is the substring
+        p2 1
         w.... p2 < l..(s
             __ s[p1] __ s[p2]:
                 p1 += 1
                 __ p1 __ e:
-                    p1 = 0
+                    p1 0
             ____
-                p1 = 0
-                e = p2 + 1
+                p1 0
+                e p2 + 1
 
             p2 += 1
 

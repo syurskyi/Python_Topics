@@ -14,9 +14,9 @@ Note: Time complexity should be O(height of tree).
 # Definition for a binary tree node.
 c_ TreeNode:
   ___ - , x
-      val = x
-      left = N..
-      right = N..
+      val x
+      left N..
+      right N..
 
 
 c_ Solution:
@@ -38,29 +38,29 @@ c_ Solution:
 
         # check before recursion because need to know parent
         __ key < root.val:
-            root.left = _delete(root.left, key)
+            root.left _delete(root.left, key)
             r.. root
         ____ key > root.val:
-            root.right = _delete(root.right, key)
+            root.right _delete(root.right, key)
             r.. root
         ____
             __ root.left:
-                maxa, left = _pop_max(root.left)
-                root.left = left
-                root.val = maxa
+                maxa, left _pop_max(root.left)
+                root.left left
+                root.val maxa
                 r.. root
             ____ root.right:
-                mini, right = _pop_min(root.right)
-                root.right = right
-                root.val = mini
+                mini, right _pop_min(root.right)
+                root.right right
+                root.val mini
                 r.. root
             ____
                 r..
 
     ___ _pop_max  root
         __ root.right:
-            maxa, right = _pop_max(root.right)
-            root.right = right
+            maxa, right _pop_max(root.right)
+            root.right right
             r.. maxa, root
         # irrevelant with root.left, BST property
         ____
@@ -68,8 +68,8 @@ c_ Solution:
 
     ___ _pop_min  root
         __ root.left:
-            mini, left = _pop_min(root.left)
-            root.left = left
+            mini, left _pop_min(root.left)
+            root.left left
             r.. mini, root
         # irrevelant with root.right, BST property
         ____
@@ -87,21 +87,21 @@ c_ Solution:
 
         # check before recursion because need to know parent
         __ key < root.val:
-            root.left = _delete(root.left, key)
+            root.left _delete(root.left, key)
             r.. root
         ____ key > root.val:
-            root.right = _delete(root.right, key)
+            root.right _delete(root.right, key)
             r.. root
         ____
             __ root.left:
-                root.val = root.left.val
-                left = _delete(root.left, root.left.val)
-                root.left = left
+                root.val root.left.val
+                left _delete(root.left, root.left.val)
+                root.left left
                 r.. root
             ____ root.right:
-                root.val = root.right.val
-                right = _delete(root.right, root.right.val)
-                root.right = right
+                root.val root.right.val
+                right _delete(root.right, root.right.val)
+                root.right right
                 r.. root
             ____
                 r..

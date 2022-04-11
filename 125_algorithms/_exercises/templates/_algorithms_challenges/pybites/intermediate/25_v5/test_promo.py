@@ -3,7 +3,7 @@ _______ p__
 ____ promo _______ (Promo, NoBitesAvailable,
                    BITES, bites_done)
 
-BITES_AVAILABLE = l..(BITES) - l..(bites_done)
+BITES_AVAILABLE l..(BITES) - l..(bites_done)
 
 
 ___ grab_bites(promo, amount=BITES_AVAILABLE
@@ -25,7 +25,7 @@ ___ test_bites_not_done_start(promo
 
 ___ test_pick_random_bite_returns_not_done_bite(promo
     ___ _ __ r..(10
-        bite = promo._pick_random_bite()
+        bite promo._pick_random_bite()
         ... t..(bite) __ i..
         ... bite __ BITES
         ... bite n.. __ promo.bites_done

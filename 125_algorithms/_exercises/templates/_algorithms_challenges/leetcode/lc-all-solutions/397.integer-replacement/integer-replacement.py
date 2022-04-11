@@ -4,7 +4,7 @@ c_ Solution(o..
     :type n: int
     :rtype: int
     """
-    ans = 0
+    ans 0
     w.... n != 1:
       __ n __ 3:
         n -_ 1

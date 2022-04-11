@@ -19,7 +19,7 @@ c_ BSTIterator:
     """
     ___ - , root
         stack    # list
-        node = root
+        node root
 
     """
     @return: True if there has next node, or false
@@ -31,17 +31,17 @@ c_ BSTIterator:
     @return: return next node
     """
     ___ next
-        node = node
-        stack = stack
+        node node
+        stack stack
 
         w.... node:
             stack.a..(node)
-            node = node.left
+            node node.left
 
-        node = stack.p.. )
+        node stack.p.. )
 
-        nxt = node
+        nxt node
 
-        node = node.right
+        node node.right
 
         r.. nxt

@@ -15,17 +15,17 @@ c_ Solution:
         __ n.. n o. n <_ 1:
             r.. 1
 
-        left, right = 1, n
+        left, right 1, n
 
         w.... left + 1 < right:
-            mid = (left + right) // 2
-            res = Guess.guess(mid)
+            mid (left + right) // 2
+            res Guess.guess(mid)
 
             __ res __ 0:
                 r.. mid
             ____ res __ 1:
-                left = mid
+                left mid
             ____
-                right = mid
+                right mid
 
         r.. left __ Guess.guess(left) __ 0 ____ right

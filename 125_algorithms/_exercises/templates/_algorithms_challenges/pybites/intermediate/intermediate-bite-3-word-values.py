@@ -18,17 +18,17 @@ _______ __
 _______ u__.r..
 
 # PREWORK
-TMP = __.g.. TMP  /tmp
+TMP __.g.. TMP  /tmp
 print(TMP)
-S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
-DICT = 'dictionary.txt'
-DICTIONARY = __.p...j..(TMP, DICT)
+S3 'https://bites-data.s3.us-east-2.amazonaws.com/'
+DICT 'dictionary.txt'
+DICTIONARY __.p...j..(TMP, DICT)
 print(DICTIONARY)
 u__.r...u.. _*{S3}{DICT}', DICTIONARY)
 
-scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
+scrabble_scores [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]
-LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
+LETTER_SCORES {letter: score ___ score, letters __ scrabble_scores
                  ___ letter __ letters.s.. }
 
 # start coding
@@ -48,12 +48,12 @@ ___ load_words_v2
 
 ___ calc_word_value_v1(word
     """Given a word calculate its value using the LETTER_SCORES dict"""
-    value = 0
+    value 0
     ___ char __ word.u..:
         ___
             value += LETTER_SCORES[char]
         ______:
-            value = 0
+            value 0
     r.. value
 
 ___ calc_word_value_v2(word
@@ -62,14 +62,14 @@ ___ calc_word_value_v2(word
 
 ___ max_word_value(words
     """Given a list of words calculate the word with the maximum value and return it"""
-    m.. = ()
+    m.. ()
     ___ word __ words:
-        value = calc_word_value(word)
+        value calc_word_value(word)
         __ m.. __
-            m.. = (word, value)
+            m.. (word, value)
         ____
             __ value > m..[1]:
-                m.. = (word, value)
+                m.. (word, value)
     r.. m..[0]
 
 ___ max_word_value_v2(words

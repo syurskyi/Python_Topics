@@ -34,19 +34,19 @@ c_ Solution:
         __ n.. values:
             r.. F..
 
-        n = l..(values)
+        n l..(values)
 
         __ n < 2:
             r.. T..
 
-        dp = [[0] * n ___ _ __ r..(n)]
+        dp [[0] * n ___ _ __ r..(n)]
 
         ___ i __ r..(n
-            dp[i][i] = values[i]
+            dp[i][i] values[i]
 
         ___ i __ r..(n - 1 - 1, -1, -1
             ___ j __ r..(i + 1, n
-                dp[i][j] = m..((
+                dp[i][j] m..((
                     values[i] - dp[i + 1][j],
                     values[j] - dp[i][j - 1],
 

@@ -4,20 +4,20 @@
 # though still slower than the built-in int(hexstring, base=16), of course.
 
 
-hexchars_to_int = d..(z..('0123456789', r..(10)))
+hexchars_to_int d..(z..('0123456789', r..(10)))
 hexchars_to_int.update(z..('abcdef', r..(10, 16)))
 hexchars_to_int.update(z..('ABCDEFG', r..(10, 16)))
 
 
 ___ hexa(hexstring
-    result = 0
-    hex_of_lastseen = N..
+    result 0
+    hex_of_lastseen N..
     ___
         ___ hex_of_lastseen __ hexstring:
-            result = result*16 + hexchars_to_int[hex_of_lastseen]
+            result result*16 + hexchars_to_int[hex_of_lastseen]
     ______ K..:
         # not a valid hexchar
-        hex_of_lastseen = N..
+        hex_of_lastseen N..
     __ hex_of_lastseen __ N..
         # hexstring was empty or triggered KeyError
         r.. V...('Invalid hexadecimal string')

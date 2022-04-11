@@ -19,14 +19,14 @@ solution.getRandom();
 """
 _______ r__
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 # Definition for singly-linked list.
 c_ ListNode(o..
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 c_ Solution(o..
@@ -37,20 +37,20 @@ c_ Solution(o..
         Note that the head is guaranteed to be not null, so it contains at least one node.
         :type head: ListNode
         """
-        head = head
+        head head
 
     ___ getRandom
         """
         Returns a random node's value.
         :rtype: int
         """
-        ret = head
-        cur = head.next
-        idx = 1
+        ret head
+        cur head.next
+        idx 1
         w.... cur:
             __ r__.randrange(0, idx+1) __ 0:
-                ret = cur
-            cur = cur.next
+                ret cur
+            cur cur.next
             idx += 1
 
         r.. ret.val

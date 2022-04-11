@@ -15,28 +15,28 @@ c_ Solution(o..
 
     ___ delete(root, pre
       __ root.right:
-        p = root.right
+        p root.right
         w.... p.left:
-          p = p.left
-        p.left = root.left
+          p p.left
+        p.left root.left
       __ root __ pre.left:
-        pre.left = root.right o. root.left
+        pre.left root.right o. root.left
       __ root __ pre.right:
-        pre.right = root.right o. root.left
-      root.left = N..
+        pre.right root.right o. root.left
+      root.left N..
 
     __ n.. root:
       r.. root
-    pre = dummy = TreeNode(f__("inf"
-    dummy.left = root
-    p = dummy
+    pre dummy TreeNode(f__("inf"
+    dummy.left root
+    p dummy
     w.... p:
       __ key > p.val:
-        pre = p
-        p = p.right
+        pre p
+        p p.right
       ____ key < p.val:
-        pre = p
-        p = p.left
+        pre p
+        p p.left
       ____
         delete(p, pre)
         _____

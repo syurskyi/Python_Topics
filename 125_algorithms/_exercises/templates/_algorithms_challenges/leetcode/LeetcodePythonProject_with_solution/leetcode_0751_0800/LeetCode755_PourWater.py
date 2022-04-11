@@ -12,14 +12,14 @@ c_ Solution(o..
         :rtype: List[int]
         """
         __ n.. heights: r.. heights
-        idx = 0
+        idx 0
         w.... V > 0:
-            idx = K
+            idx K
             ___ i __ r..(K-1, -1, -1
                 __ heights[i] > heights[idx]:
                     _____
                 ____ heights[i] < heights[idx]:
-                    idx = i
+                    idx i
             __ idx != K:
                 heights[idx] += 1
                 V -_ 1
@@ -28,13 +28,13 @@ c_ Solution(o..
                 __ heights[i] > heights[idx]:
                     _____
                 ____ heights[i] < heights[idx]:
-                    idx = i
+                    idx i
             heights[idx] += 1
             V -_ 1
         r.. heights
     
     ___ test
-        testCases = [
+        testCases [
             [[2,1,1,2,1,2,2], 4, 3],
             [[1,2,3,4], 2, 2],
             [[3,1,3], 5, 1],
@@ -58,7 +58,7 @@ c_ Solution(o..
             print('heights: %s' % heights)
             print('v: %s' % v)
             print('k: %s' % k)
-            result = pourWater(heights, v, k)
+            result pourWater(heights, v, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

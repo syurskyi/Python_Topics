@@ -27,10 +27,10 @@ c_ Solution:
         """
         pointer
         """
-        closed = -1
+        closed -1
         ___ i __ r..(l..(A:
             __ A[i] % 2 __ 0:
                 closed += 1
-                A[closed], A[i] = A[i], A[closed]
+                A[closed], A[i] A[i], A[closed]
 
         r.. A

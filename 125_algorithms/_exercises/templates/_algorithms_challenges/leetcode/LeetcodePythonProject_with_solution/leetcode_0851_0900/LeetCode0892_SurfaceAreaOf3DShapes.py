@@ -9,8 +9,8 @@ c_ Solution(o..
         :type grid: List[List[int]]
         :rtype: int
         """
-        m, n = l..(grid), l..(grid[0])
-        res = 0
+        m, n l..(grid), l..(grid[0])
+        res 0
         ___ i __ r..(m
             ___ j __ r..(n
                 __ (grid[i][j]
@@ -22,13 +22,13 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [[1,0],[0,2]],
             [[1,1,1],[1,0,1],[1,1,1]],
             [[2,2,2],[2,1,2],[2,2,2]],
         ]
         ___ grid __ testCases:
-            res = surfaceArea(grid)
+            res surfaceArea(grid)
             print('res: %s' % res)
             print('-='*30+'-')
 

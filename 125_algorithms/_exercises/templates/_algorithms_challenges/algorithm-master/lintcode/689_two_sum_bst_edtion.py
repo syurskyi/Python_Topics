@@ -14,14 +14,14 @@ c_ Solution:
     @return: two numbers from tree which sum is n
     """
     ___ twoSum  root, n
-        left = right = N..
-        head = tail = root
+        left right N..
+        head tail root
 
         pre()
         nxt()
 
         w.... left != right:
-            _sum = left.val + right.val
+            _sum left.val + right.val
 
             __ _sum __ n:
                 r.. [left.val, right.val]
@@ -33,44 +33,44 @@ c_ Solution:
 
     ___ pre
         w.... tail:
-            cur = tail.right
+            cur tail.right
 
             __ cur a.. cur != right:
                 w.... cur.left a.. cur.left != tail:
-                    cur = cur.left
+                    cur cur.left
 
                 __ cur.left __ tail:
-                    right = tail
+                    right tail
 
-                    cur.left = N..
-                    tail = tail.left
+                    cur.left N..
+                    tail tail.left
                     _____
                 ____
-                    cur.left = tail
-                    tail = tail.right
+                    cur.left tail
+                    tail tail.right
             ____
-                right = tail
-                tail = tail.left
+                right tail
+                tail tail.left
                 _____
 
     ___ nxt
         w.... head:
-            cur = head.left
+            cur head.left
 
             __ cur a.. cur != left:
                 w.... cur.right a.. cur.right != head:
-                    cur = cur.right
+                    cur cur.right
 
                 __ cur.right __ head:
-                    left = head
+                    left head
 
-                    cur.right = N..
-                    head = head.right
+                    cur.right N..
+                    head head.right
                     _____
                 ____
-                    cur.right = head
-                    head = head.left
+                    cur.right head
+                    head head.left
             ____
-                left = head
-                head = head.right
+                left head
+                head head.right
                 _____

@@ -3,12 +3,12 @@ ____ similarity _______ get_similarities
 
 ___ test_get_similarities
     # cast to list in case of generator
-    similar_tags = l..(get_similarities
+    similar_tags l..(get_similarities
 
     # not interested in the order of the pairs
-    similar_tags = {t..(s..(pair ___ pair __ similar_tags}
+    similar_tags {t..(s..(pair ___ pair __ similar_tags}
 
-    e.. = [('cheat sheet', 'cheat sheets'),
+    e.. [('cheat sheet', 'cheat sheets'),
                 ('python anywhere', 'pythonanywhere'),
                 ('web scraping', 'webscraping'),
                 ('object oriented', 'objectoriented'),
@@ -23,5 +23,5 @@ ___ test_get_similarities
                 ('object oriented', 'objectoriented'),
                 ('code challenges', 'codechallenges')]
 
-    ___ hit __ e..:
+    ___ hit __ e..
         ... t..(s..(hit __ similar_tags, f'{hit} not in similar tags'

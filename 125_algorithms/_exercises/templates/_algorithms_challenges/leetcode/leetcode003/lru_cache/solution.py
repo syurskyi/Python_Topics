@@ -18,16 +18,16 @@ c_ LRUCache:
 
     # @param capacity, an integer
     ___ - , capacity
-        capacity = capacity
+        capacity capacity
         times    # dict
         cache    # dict
-        timestamp = 0
+        timestamp 0
 
     # @return an integer
     ___ get  key
         timestamp += 1
         __ key __ cache:
-            times[key] = timestamp
+            times[key] timestamp
             r.. cache[key]
         r.. -1
 
@@ -37,20 +37,20 @@ c_ LRUCache:
     ___ s..  key, value
         timestamp += 1
         __ key __ cache:
-            times[key] = timestamp
+            times[key] timestamp
         ____
             __ l..(cache) >_ capacity:
-                lru_key = get_lru_key()
+                lru_key get_lru_key()
                 del cache[lru_key]
                 del times[lru_key]
-            cache[key] = value
-            times[key] = timestamp
+            cache[key] value
+            times[key] timestamp
 
     ___ get_lru_key
-        min_time = timestamp
-        res = N..
+        min_time timestamp
+        res N..
         ___ key __ times:
             __ times[key] <_ min_time:
-                res = key
-                min_time = times[key]
+                res key
+                min_time times[key]
         r.. res

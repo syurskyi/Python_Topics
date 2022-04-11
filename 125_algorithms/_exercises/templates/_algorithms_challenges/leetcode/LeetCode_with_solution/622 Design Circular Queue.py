@@ -30,11 +30,11 @@ c_ MyCircularQueue:
         """
         Initialize your data structure here. Set the size of the queue to be k.
         """
-        head = 0
-        tail = -1
-        sz = 0
-        k = k
-        lst = [N.. ___ _ __ r..(k)]
+        head 0
+        tail -1
+        sz 0
+        k k
+        lst [N.. ___ _ __ r..(k)]
 
 
     ___ enQueue  value: i..) __ b..:
@@ -45,7 +45,7 @@ c_ MyCircularQueue:
             r.. F..
 
         tail += 1
-        lst[tail % k] = value
+        lst[tail % k] value
         sz += 1
         r.. T..
 
@@ -56,7 +56,7 @@ c_ MyCircularQueue:
         __ sz <_ 0:
             r.. F..
 
-        lst[head % k] = N..
+        lst[head % k] N..
         head += 1
         sz -_ 1
         r.. T..
@@ -65,14 +65,14 @@ c_ MyCircularQueue:
         """
         Get the front item from the queue.
         """
-        ret = lst[head % k]
+        ret lst[head % k]
         r.. ret __ ret __ n.. N.. ____ -1
 
     ___ Rear(self) __ i..:
         """
         Get the last item from the queue.
         """
-        ret = lst[tail % k]
+        ret lst[tail % k]
         r.. ret __ ret __ n.. N.. ____ -1
 
     ___ isEmpty(self) __ b..:

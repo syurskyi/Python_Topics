@@ -1,12 +1,12 @@
 # Hint:
 # You can define a helper funtion: get_others(map, row, col) to assist you.
 # Then in the main island_size function just call it when traversing the map.
-rectangle = [[0, 1, 1, 0],
+rectangle [[0, 1, 1, 0],
              [0, 1, 1, 0],
              [0, 1, 1, 0],
              [0, 1, 1, 0]]
 
-whole = [[1, 1, 1],
+whole [[1, 1, 1],
          [1, 0, 1],
          [1, 1, 1]]
 
@@ -17,7 +17,7 @@ ___ get_others(map_, r, c
        Input - the map, row, column position
        Output - return the total number)
     """
-    nums = 0
+    nums 0
     # your code here
     __ r __ 0 a.. c __ 0: #top left corder
         nums += 2
@@ -96,7 +96,7 @@ ___ island_size(map_
     Input: the map
     Output: the perimeter of the island
     """
-    perimeter = 0
+    perimeter 0
     # your code here
     #print(len(map_[0]))
     ___ r, row __ e..(map_

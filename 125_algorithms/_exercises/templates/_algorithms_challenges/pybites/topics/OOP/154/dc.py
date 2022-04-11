@@ -10,6 +10,6 @@ c_ Bite:
     level: s..
 
     ___ - , number, title, level='Beginner'
-        number = number
-        title = title.capitalize()
-        level = level
+        number number
+        title title.capitalize()
+        level level

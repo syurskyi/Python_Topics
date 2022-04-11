@@ -27,25 +27,25 @@ c_ Solution:
         """
         `A` will stay at `m-1`th node
         """
-        A = dummy = ListNode(-1, head)
+        A dummy ListNode(-1, head)
         w.... m > 1:
             m -_ 1
-            A = A.next
+            A A.next
 
         """
         `B` will stay at `n+1`th node
         `cur` stay at (`m`th -> `n`th) node
         """
-        B = cur = A.next
-        pre = nxt = N..
+        B cur A.next
+        pre nxt N..
         w.... n >_ 0:
             n -_ 1
-            nxt = B.next
-            B.next = pre
-            pre = B
-            B = nxt
+            nxt B.next
+            B.next pre
+            pre B
+            B nxt
 
-        A.next = pre
-        cur.next = B
+        A.next pre
+        cur.next B
 
         r.. dummy.next

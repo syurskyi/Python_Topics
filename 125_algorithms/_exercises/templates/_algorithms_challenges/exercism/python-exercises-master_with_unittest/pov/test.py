@@ -8,15 +8,15 @@ ____ pov _______ Tree
 c_ PovTest(unittest.TestCase
 
     ___ test_singleton_returns_same_tree
-        tree = Tree('x')
+        tree Tree('x')
         assertTreeEquals(tree.from_pov('x'), tree)
 
     ___ test_can_reroot_tree_with_parent_and_one_sibling
-        tree = Tree('parent', [
+        tree Tree('parent', [
             Tree('x'),
             Tree('sibling')
         ])
-        e.. = Tree('x', [
+        e.. Tree('x', [
             Tree('parent', [
                 Tree('sibling')
             ])
@@ -24,13 +24,13 @@ c_ PovTest(unittest.TestCase
         assertTreeEquals(tree.from_pov('x'), e..)
 
     ___ test_can_reroot_tree_with_parent_and_many_siblings
-        tree = Tree('parent', [
+        tree Tree('parent', [
             Tree('a'),
             Tree('x'),
             Tree('b'),
             Tree('c')
         ])
-        e.. = Tree('x', [
+        e.. Tree('x', [
             Tree('parent', [
                 Tree('a'),
                 Tree('b'),
@@ -40,7 +40,7 @@ c_ PovTest(unittest.TestCase
         assertTreeEquals(tree.from_pov('x'), e..)
 
     ___ test_can_reroot_a_tree_with_new_root_deeply_nested
-        tree = Tree('level-0', [
+        tree Tree('level-0', [
             Tree('level-1', [
                 Tree('level-2', [
                     Tree('level-3', [
@@ -49,7 +49,7 @@ c_ PovTest(unittest.TestCase
                 ])
             ])
         ])
-        e.. = Tree('x', [
+        e.. Tree('x', [
             Tree('level-3', [
                 Tree('level-2', [
                     Tree('level-1', [
@@ -61,13 +61,13 @@ c_ PovTest(unittest.TestCase
         assertTreeEquals(tree.from_pov('x'), e..)
 
     ___ test_moves_children_of_new_root_to_same_level_as_former_parent
-        tree = Tree('parent', [
+        tree Tree('parent', [
             Tree('x', [
                 Tree('kid-0'),
                 Tree('kid-1')
             ])
         ])
-        e.. = Tree('x', [
+        e.. Tree('x', [
             Tree('parent'),
             Tree('kid-0'),
             Tree('kid-1')
@@ -75,7 +75,7 @@ c_ PovTest(unittest.TestCase
         assertTreeEquals(tree.from_pov('x'), e..)
 
     ___ test_can_reroot_complex_tree_with_cousins
-        tree = Tree('grandparent', [
+        tree Tree('grandparent', [
             Tree('parent', [
                 Tree('x', [
                     Tree('kid-0'),
@@ -89,7 +89,7 @@ c_ PovTest(unittest.TestCase
                 Tree('cousin-1')
             ])
         ])
-        e.. = Tree('x', [
+        e.. Tree('x', [
             Tree('kid-0'),
             Tree('kid-1'),
             Tree('parent', [
@@ -106,12 +106,12 @@ c_ PovTest(unittest.TestCase
         assertTreeEquals(tree.from_pov('x'), e..)
 
     ___ test_errors_if_target_does_not_exist_in_singleton_tree
-        tree = Tree('x')
+        tree Tree('x')
         w__ assertRaisesWithMessage(V...
             tree.from_pov('nonexistent')
 
     ___ test_errors_if_target_does_not_exist_in_large_tree
-        tree = Tree('parent', [
+        tree Tree('parent', [
             Tree('x', [
                 Tree('kid-0'),
                 Tree('kid-1')
@@ -123,7 +123,7 @@ c_ PovTest(unittest.TestCase
             tree.from_pov('nonexistent')
 
     ___ test_find_path_between_two_nodes
-        tree = Tree('parent', [
+        tree Tree('parent', [
             Tree('x'),
             Tree('sibling')
         ])
@@ -131,7 +131,7 @@ c_ PovTest(unittest.TestCase
         assertEqual(tree.path_to('x', 'parent'), e..)
 
     ___ test_can_find_path_to_sibling
-        tree = Tree('parent', [
+        tree Tree('parent', [
             Tree('a'),
             Tree('x'),
             Tree('b'),
@@ -141,7 +141,7 @@ c_ PovTest(unittest.TestCase
         assertEqual(tree.path_to('x', 'b'), e..)
 
     ___ test_can_find_path_to_cousin
-        tree = Tree('grandparent', [
+        tree Tree('grandparent', [
             Tree('parent', [
                 Tree('x', [
                     Tree('kid-0'),
@@ -159,7 +159,7 @@ c_ PovTest(unittest.TestCase
         assertEqual(tree.path_to('x', 'cousin-1'), e..)
 
     ___ test_can_find_path_not_involving_root
-        tree = Tree('grandparent', [
+        tree Tree('grandparent', [
             Tree('parent', [
                 Tree('x'),
                 Tree('sibling-0'),
@@ -170,7 +170,7 @@ c_ PovTest(unittest.TestCase
         assertEqual(tree.path_to('x', 'sibling-1'), e..)
 
     ___ test_can_find_path_from_nodes_other_than_x
-        tree = Tree('parent', [
+        tree Tree('parent', [
             Tree('a'),
             Tree('x'),
             Tree('b'),
@@ -180,7 +180,7 @@ c_ PovTest(unittest.TestCase
         assertEqual(tree.path_to('a', 'c'), e..)
 
     ___ test_errors_if_destination_does_not_exist
-        tree = Tree('parent', [
+        tree Tree('parent', [
             Tree('x', [
                 Tree('kid-0'),
                 Tree('kid-1')
@@ -192,7 +192,7 @@ c_ PovTest(unittest.TestCase
             tree.path_to('x', 'nonexistent')
 
     ___ test_errors_if_source_does_not_exist
-        tree = Tree('parent', [
+        tree Tree('parent', [
             Tree('x', [
                 Tree('kid-0'),
                 Tree('kid-1')
@@ -208,7 +208,7 @@ c_ PovTest(unittest.TestCase
         ___
             assertRaisesRegex
         ______ AttributeError:
-            assertRaisesRegex = assertRaisesRegexp
+            assertRaisesRegex assertRaisesRegexp
 
     ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")

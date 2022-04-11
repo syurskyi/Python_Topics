@@ -10,7 +10,7 @@ c_ Solution(o..
         :rtype: List[List[int]]
         """
         __ numRows <_ 0: r.. []
-        res = [[1]]
+        res [[1]]
         ___ i __ r..(1, numRows
             tmp    # list
             ___ j __ r..(i+1

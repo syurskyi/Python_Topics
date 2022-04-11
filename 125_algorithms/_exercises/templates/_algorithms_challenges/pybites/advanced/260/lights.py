@@ -7,9 +7,9 @@ _______ p.... __ pd
 c_ LightsGrid:
 
     ___ - , grid_size: i.., instructions: L..[s..]
-        grid_size = grid_size
-        grid = pd.DataFrame(np.zeros([grid_size, grid_size], dtype=i..
-        instructions = instructions
+        grid_size grid_size
+        grid pd.DataFrame(np.zeros([grid_size, grid_size], dtype=i..
+        instructions instructions
 
     ___ process_grid_coordinates  s1: s.., s2: s..
         """A helper function you might want to create to process
@@ -21,13 +21,13 @@ c_ LightsGrid:
 
         Suggested return are 4 integers representing x1, x2, y1, y2 [hint]"""
 
-        row_1,col_1 = map(i..,s1.s..(','
-        row_2,col_2 = map(i..,s2.s..(','
+        row_1,col_1 map(i..,s1.s..(','
+        row_2,col_2 map(i..,s2.s..(','
 
 
 
-        width = col_2 - col_1
-        height = row_2 - row_1
+        width col_2 - col_1
+        height row_2 - row_1
 
         r.. row_1,row_1 + height,col_1,col_1 + width
 
@@ -67,12 +67,12 @@ c_ LightsGrid:
         # Finally overwrite the grid with the new values
 
 
-        row_start,row_end,col_start,col_end = process_grid_coordinates(s1,s2)
+        row_start,row_end,col_start,col_end process_grid_coordinates(s1,s2)
 
 
-        df = grid,i..[row_start:row_end + 1,col_start:col_end +1]
+        df grid,i..[row_start:row_end + 1,col_start:col_end +1]
 
-        grid,i..[row_start:row_end + 1,col_start:col_end + 1] = df.applymap(l.... value: 1 __ value __ 0 ____ value)
+        grid,i..[row_start:row_end + 1,col_start:col_end + 1] df.applymap(l.... value: 1 __ value __ 0 ____ value)
 
 
 
@@ -85,8 +85,8 @@ c_ LightsGrid:
         :param s1: The bottom right hand corner of the grid to operate on
 
         Turn off all lights in the grid slice given."""
-        row_start,row_end,col_start,col_end = process_grid_coordinates(s1,s2)
-        grid,i..[row_start:row_end +1,col_start:col_end +1] = 0
+        row_start,row_end,col_start,col_end process_grid_coordinates(s1,s2)
+        grid,i..[row_start:row_end +1,col_start:col_end +1] 0
 
     ___ turn_up  amount: i.., s1: s.., s2: s..
         """The turn_up function takes 3 parameters:
@@ -97,12 +97,12 @@ c_ LightsGrid:
 
         For each light in the grid slice given turn the light up
           by the given amount. Don't turn a light up past 5"""
-        row_start,row_end,col_start,col_end = process_grid_coordinates(s1,s2)
+        row_start,row_end,col_start,col_end process_grid_coordinates(s1,s2)
 
-        df = grid,i..[row_start:row_end + 1,col_start:col_end +1]
+        df grid,i..[row_start:row_end + 1,col_start:col_end +1]
 
 
-        grid,i..[row_start:row_end +1,col_start:col_end +1] = df.applymap(l.... value: m..(5,value + amount
+        grid,i..[row_start:row_end +1,col_start:col_end +1] df.applymap(l.... value: m..(5,value + amount
 
 
     ___ turn_down  amount: i.., s1: s.., s2: s..
@@ -114,9 +114,9 @@ c_ LightsGrid:
 
         For each light in the grid slice given turn the light down
           by the given amount. Don't turn a light down past 0"""
-        row_start,row_end,col_start,col_end = process_grid_coordinates(s1,s2)
+        row_start,row_end,col_start,col_end process_grid_coordinates(s1,s2)
 
-        df = grid,i..[row_start:row_end + 1,col_start:col_end +1]
+        df grid,i..[row_start:row_end + 1,col_start:col_end +1]
 
 
         grid,i..[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: m..(0,value - amount
@@ -141,9 +141,9 @@ c_ LightsGrid:
         # Set all lights that are off to 3 in the slice
 
         # Finally overwrite the grid with the new values
-        row_start,row_end,col_start,col_end = process_grid_coordinates(s1,s2)
+        row_start,row_end,col_start,col_end process_grid_coordinates(s1,s2)
 
-        df = grid,i..[row_start:row_end + 1,col_start:col_end +1]
+        df grid,i..[row_start:row_end + 1,col_start:col_end +1]
 
 
         grid,i..[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: 0 __ value != 0 ____ 3)
@@ -156,26 +156,26 @@ c_ LightsGrid:
         """
 
         ___ instruction __ instructions:
-            values = instruction.s..
+            values instruction.s..
 
-            s2 = values[-1]
+            s2 values[-1]
             __ values[0] __ 'turn':
 
                 __ values[1] __ 'on':
-                    s1 = values[2]
+                    s1 values[2]
                     turn_on(s1,s2)
                 ____ values[1] __ 'off':
-                    s1 = values[2]
+                    s1 values[2]
                     turn_off(s1,s2)
                 ____
-                    s1 = values[3]
-                    amount = i..(values[2])
+                    s1 values[3]
+                    amount i..(values[2])
                     __ values[1] __ 'up':
                         turn_up(amount,s1,s2)
                     ____
                         turn_down(amount,s1,s2)
             ____
-                s1 = values[1]
+                s1 values[1]
                 toggle(s1,s2)
 
             
@@ -189,7 +189,7 @@ c_ LightsGrid:
 
 # Main function that can be used to test the Class methods
 __ _______ __ _______
-    instructions = """create grid of length 100
+    instructions """create grid of length 100
     turn on 46,55 through 56,90
     turn off 37,3 through 42,83
     turn up 2 46,85 through 83,91
@@ -241,14 +241,14 @@ __ _______ __ _______
     turn off 3,72 through 68,75"""
 
     # Create a list of all the instructions
-    instructions = [line.s.. ___ line __ instructions.s.. ]
+    instructions [line.s.. ___ line __ instructions.s.. ]
 
     # The grid size instruction is first
     # Extract it and convert to int
-    grid_size = i..(instructions[0].s..(" ")[4])
+    grid_size i..(instructions[0].s..(" ")[4])
 
     # Create a LightsGrid Class instance
-    lights = LightsGrid(grid_size, instructions[1:])
+    lights LightsGrid(grid_size, instructions[1:])
 
     # Follow the instructions
     lights.follow_instructions()

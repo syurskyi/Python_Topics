@@ -9,22 +9,22 @@ c_ Solution(o..
         :type N: int
         :rtype: int
         """
-        s = s..(N)
-        i = 0
+        s s..(N)
+        i 0
         w.... i < l..(s)-1 a.. s[i] <_ s[i+1]:
             i += 1
         __ i __ l..(s)-1:
             r.. N
         w.... i > 0 a.. s[i-1] __ s[i]:
             i -_ 1
-        res = s[:i]
+        res s[:i]
         res += s..(i..(s[i])-1)
         res += '9'*(l..(s)-i-1)
-        res = res.l..('0')
+        res res.l..('0')
         r.. i..(res) __ res != '' ____ 0
     
     ___ test
-        testCases = [
+        testCases [
             10,
             1111,
             1234,
@@ -34,7 +34,7 @@ c_ Solution(o..
         ]
         ___ N __ testCases:
             print('N: %s' % N)
-            result = monotoneIncreasingDigits(N)
+            result monotoneIncreasingDigits(N)
             print('result: %s' % result)
             print('-='*30+'-')
 

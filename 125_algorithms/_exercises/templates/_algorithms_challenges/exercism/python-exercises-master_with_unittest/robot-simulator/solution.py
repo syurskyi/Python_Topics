@@ -1,24 +1,24 @@
-NORTH, EAST, SOUTH, WEST = r..(4)
+NORTH, EAST, SOUTH, WEST r..(4)
 
 
 c_ Compass(o..
-    compass = [NORTH, EAST, SOUTH, WEST]
+    compass [NORTH, EAST, SOUTH, WEST]
 
     ___ - , bearing=NORTH
-        bearing = bearing
+        bearing bearing
 
     ___ left
-        bearing = compass[bearing - 1]
+        bearing compass[bearing - 1]
 
     ___ right
-        bearing = compass[(bearing + 1) % 4]
+        bearing compass[(bearing + 1) % 4]
 
 
 c_ Robot(o..
     ___ - , bearing=NORTH, x=0, y=0
-        compass = Compass(bearing)
-        x = x
-        y = y
+        compass Compass(bearing)
+        x x
+        y y
 
     ___ advance
         __ bearing __ NORTH:
@@ -37,7 +37,7 @@ c_ Robot(o..
         compass.right()
 
     ___ simulate  commands
-        instructions = {'A': advance,
+        instructions {'A': advance,
                         'R': turn_right,
                         'L': turn_left}
         ___ cmd __ commands:

@@ -3,7 +3,7 @@ ____ csv _______ DictReader
 ____ __ _______ p..
 ____ u__.r.. _______ u..
 
-DATA = p...j..('/tmp', 'bite_output_log.txt')
+DATA p...j..('/tmp', 'bite_output_log.txt')
 __ n.. p...i..(DATA
     u..('https://bit.ly/2HoFZBd', DATA)
 
@@ -15,13 +15,13 @@ c_ BiteStats:
             r.. l..(DictReader(d
 
     ___ - , data=DATA
-        rows = _load_data(data)
+        rows _load_data(data)
 
     ___ _count_attribute  attrib, completed=F..
         r.. C..(x[attrib] ___ x __ rows __ n.. completed o. (completed a.. x 'completed'  __ 'True'
 
     ___ _count_clicks  attrib, completed=F..
-        counter = C..()
+        counter C..()
         ___ x __ rows:
             __ n.. completed o. (completed a.. x 'completed'  __ 'True'
                 counter[x[attrib]] += 1

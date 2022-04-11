@@ -5,14 +5,14 @@ c_ Solution(o..
     :type target: int
     :rtype: int
     """
-    lo = 0
-    hi = l..(nums)
+    lo 0
+    hi l..(nums)
     w.... lo < hi:
-      mid = lo + (hi - lo) / 2
+      mid lo + (hi - lo) / 2
       __ nums[mid] > target:
-        hi = mid
+        hi mid
       ____ nums[mid] < target:
-        lo = mid + 1
+        lo mid + 1
       ____
         r.. mid
     r.. lo

@@ -39,7 +39,7 @@ c_ Solution:
         :rtype: int
         """
 
-        NOT_FOUND = -1
+        NOT_FOUND -1
 
         __ S __ n.. N.. a.. T __ '':
             r.. 0
@@ -47,33 +47,33 @@ c_ Solution:
         __ n.. S o. n.. T:
             r.. NOT_FOUND
 
-        m, n = l..(S), l..(T)
+        m, n l..(S), l..(T)
         __ n > m:
             r.. NOT_FOUND
 
-        MOD = 1000000  # hashsize to mod
-        MG = 31  # magic number
-        A = o..('a')
+        MOD 1000000  # hashsize to mod
+        MG 31  # magic number
+        A o..('a')
 
-        p = 1  # `p == MG ** (n - 1)`
-        tcode = 0  # the code of T
+        p 1  # `p == MG ** (n - 1)`
+        tcode 0  # the code of T
         ___ i __ r..(n
-            tcode = (tcode * MG + o..(T[i]) - A) % MOD
+            tcode (tcode * MG + o..(T[i]) - A) % MOD
 
             __ i __ 0:
                 _____
             """
             continue here since p only need `n - 1` times
             """
-            p = (p * MG) % MOD
+            p (p * MG) % MOD
 
-        _code = 0
+        _code 0
         ___ i __ r..(m
             """
             kick out `S[i - n]`
             """
             __ i >_ n:
-                _code = (_code - (o..(S[i - n]) - A) * p) % MOD
+                _code (_code - (o..(S[i - n]) - A) * p) % MOD
 
             __ _code < 0:
                 _code += MOD
@@ -81,7 +81,7 @@ c_ Solution:
             """
             Add `S[i]`
             """
-            _code = (_code * MG + o..(S[i]) - A) % MOD
+            _code (_code * MG + o..(S[i]) - A) % MOD
 
             __ _code __ tcode a.. S[i - n + 1:i + 1] __ T:
                 r.. i - n + 1

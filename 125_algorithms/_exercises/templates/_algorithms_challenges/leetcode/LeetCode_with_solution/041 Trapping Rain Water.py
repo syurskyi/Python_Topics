@@ -5,7 +5,7 @@ is able to trap after raining.
 For example,
 Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ trap  A
         """
@@ -18,22 +18,22 @@ c_ Solution:
         :param A: a list of integers
         :return: an integer
         """
-        left_maxs = [0 ___ _ __ A]  # on the left including itself
-        right_maxs = [0 ___ _ __ A]  # on the right including itself
+        left_maxs [0 ___ _ __ A]  # on the left including itself
+        right_maxs [0 ___ _ __ A]  # on the right including itself
 
-        left_max = 0
+        left_max 0
         ___ ind, val __ e..(A
-            left_max = m..(left_max, val)
-            left_maxs[ind] = left_max
+            left_max m..(left_max, val)
+            left_maxs[ind] left_max
 
-        right_max = 0
+        right_max 0
         # for ind, val in enumerate(reversed(A)):  # ind incorrect
         ___ ind, val __ r..(l..(e..(A))):
-            right_max = m..(right_max, val)
-            right_maxs[ind] = right_max
+            right_max m..(right_max, val)
+            right_maxs[ind] right_max
 
         # calculate the volume
-        volume = 0
+        volume 0
         ___ ind, val __ e..(A
             volume += m..(0, m..(left_maxs[ind], right_maxs[ind]) - val)
 

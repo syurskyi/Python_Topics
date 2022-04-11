@@ -1,5 +1,5 @@
 c_ Binary:
-    VALID_CHARS = s..("01")
+    VALID_CHARS s..("01")
 
     @classmethod
     ___ parse_binary(cls, inp

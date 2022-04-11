@@ -39,7 +39,7 @@ c_ Solution(o..
         queue.a..(root)
         queue.a..(N..)
         w.... queue:
-            root = queue.p.. 0)
+            root queue.p.. 0)
             __ root __ N..
                 res.a..(level | )
                 level    # list

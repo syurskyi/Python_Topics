@@ -8,16 +8,16 @@ ____ u__.r.. _______ u..
 
 ____ bs4 _______ BeautifulSoup __ Soup
 
-out_dir = "/tmp"
-html_file = f"{out_dir}/enchantment_list_pc.html"
+out_dir "/tmp"
+html_file f"{out_dir}/enchantment_list_pc.html"
 
-HTML_FILE = P..(html_file)
+HTML_FILE P..(html_file)
 # source:
 # https://www.digminecraft.com/lists/enchantment_list_pc.php
-URL = ("https://bites-data.s3.us-east-2.amazonaws.com/"
+URL ("https://bites-data.s3.us-east-2.amazonaws.com/"
        "minecraft-enchantment.html")
 
-ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5}
+ROMAN {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5}
 
 
 @dataclass
@@ -29,7 +29,7 @@ c_ Enchantment:
     name: s..
     max_level: i..
     description: s..
-    items: L..[s..] = field(default_factory=l..)
+    items: L..[s..] field(default_factory=l..)
 
     ___ -s
         r.. f"{name} ({max_level}): {description}"
@@ -43,11 +43,11 @@ c_ Item:
     """Minecraft enchantable item"""
 
     name: s..
-    enchantments: L..[Enchantment] = field(default_factory=l..)
+    enchantments: L..[Enchantment] field(default_factory=l..)
 
     ___ -s
-        enchants = s..(enchantments)
-        enc_list = [f"\n  [{enc.max_level}] {enc.id_name}" ___ enc __ enchants]
+        enchants s..(enchantments)
+        enc_list [f"\n  [{enc.max_level}] {enc.id_name}" ___ enc __ enchants]
         r.. f"{name.t..}: {''.j..(enc_list)}"
 
 
@@ -57,17 +57,17 @@ ___ clean_up_names(item_names
     :param item_names: String of item names
     :return: String of cleaned up item names
     """
-    unwanted = (".png", "_sm", "iron_", "enchanted_")
+    unwanted (".png", "_sm", "iron_", "enchanted_")
 
     __ "fishing_rod" __ item_names:
-        item_names = item_names.r..("fishing_rod", "fishingrod")
+        item_names item_names.r..("fishing_rod", "fishingrod")
 
     ___ chars __ unwanted:
         __ chars __ item_names:
-            item_names = item_names.r..(chars, "")
+            item_names item_names.r..(chars, "")
 
-    item_names = item_names.s..("_")
-    item_names = [
+    item_names item_names.s..("_")
+    item_names [
         "fishing_rod" __ item __ "fishingrod" ____ item ___ item __ item_names
     ]
 
@@ -80,8 +80,8 @@ ___ enchantable_items(soup
     :param soup: BeautifulSoup object
     :return: List of enchantable items lists
     """
-    table = soup.find("table", {"id": "minecraft_items"})
-    items = [
+    table soup.find("table", {"id": "minecraft_items"})
+    items [
         clean_up_names(img["data-src"].s..("/")[-1]).s..
         ___ img __ table.find_all("img")
     ]
@@ -95,17 +95,17 @@ ___ generate_enchantments(soup
     :param soup: BeautifulSoup object
     :return: DefaultDict of Enchantment objects
     """
-    item_list = enchantable_items(soup)
-    data = parse_html(soup)
-    enchant_data: DefaultDict[A.., Enchantment] = d..(Enchantment)
+    item_list enchantable_items(soup)
+    data parse_html(soup)
+    enchant_data: DefaultDict[A.., Enchantment] d..(Enchantment)
 
     ___ i, row __ e..(data
-        id_name, name = split_title(row[0])
-        max_level = ROMAN[row[1]]
-        description = row[2]
-        items = item_list[i]
-        enchant = Enchantment(id_name, name, max_level, description, items)
-        enchant_data[id_name] = enchant
+        id_name, name split_title(row[0])
+        max_level ROMAN[row[1]]
+        description row[2]
+        items item_list[i]
+        enchant Enchantment(id_name, name, max_level, description, items)
+        enchant_data[id_name] enchant
 
     r.. enchant_data
 
@@ -116,11 +116,11 @@ ___ generate_items(data
     :param data: DefaultDict of Enchantment objects
     :return: DefaultDict of Item objects
     """
-    mc_items: DefaultDict[A.., Item] = d..(Item)
-    unique_items = gen_item_set(data)
+    mc_items: DefaultDict[A.., Item] d..(Item)
+    unique_items gen_item_set(data)
 
     ___ item __ unique_items:
-        mc_items[item] = Item(item.r..("_", " "
+        mc_items[item] Item(item.r..("_", " "
 
     ___ enchant __ data:
         ___ item __ data[enchant].items:
@@ -135,7 +135,7 @@ ___ gen_item_set(data
     :param data: Dictionary of Enchantment objects
     :return: Set of sorted item object name strings
     """
-    mc_items = s..()
+    mc_items s..()
     ___ enchantment __ data.k..:
         ___ item __ data[enchantment].items:
             mc_items.add(item)
@@ -154,18 +154,18 @@ ___ get_soup(file=HTML_FILE
             u..(URL, HTML_FILE)
 
         w__ file.o.. ) __ html_source:
-            soup = Soup(html_source, "html.parser")
+            soup Soup(html_source, "html.parser")
     ____
-        soup = Soup(file, "html.parser")
+        soup Soup(file, "html.parser")
 
     r.. soup
 
 
 ___ main
     """This function is here to help you test your final code"""
-    soup = get_soup()
-    enchantment_data = generate_enchantments(soup)
-    minecraft_items = generate_items(enchantment_data)
+    soup get_soup()
+    enchantment_data generate_enchantments(soup)
+    minecraft_items generate_items(enchantment_data)
     ___ item __ minecraft_items:
         print(minecraft_items[item], "\n")
 
@@ -176,8 +176,8 @@ ___ parse_html(soup
     :param soup: BeautifulSoup object
     :return: List of the rows that make up the table
     """
-    table = soup.find("table", {"id": "minecraft_items"})
-    data = [
+    table soup.find("table", {"id": "minecraft_items"})
+    data [
         [td.get_text() ___ td __ row.find_all("td")] ___ row __ table.find_all("tr")
     ]
 
@@ -191,8 +191,8 @@ ___ split_title(title
     :param title: String of the enchantment title
     :return: Tuple(id_names, names)
     """
-    pattern = c..(r"(.*)\((.*)\)")
-    n.., id_names = s..(pattern, title).groups()
+    pattern c..(r"(.*)\((.*)\)")
+    n.., id_names s..(pattern, title).groups()
     r.. id_names, n..
 
 

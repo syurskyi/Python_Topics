@@ -1,6 +1,6 @@
 c_ Beer:
 
-    LAST_LINE = ('Go to the store and buy some more, '
+    LAST_LINE ('Go to the store and buy some more, '
                  '99 bottles of beer on the wall.')
 
     @classmethod

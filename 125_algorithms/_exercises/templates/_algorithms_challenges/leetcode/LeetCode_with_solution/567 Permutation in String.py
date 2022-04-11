@@ -23,13 +23,13 @@ c_ Solution:
         """
         counter + two pointers
         """
-        counter = d..(i..)
-        s1_set = s..(s1)
+        counter d..(i..)
+        s1_set s..(s1)
         ___ c __ s1:
             counter[c] += 1
 
-        i = 0
-        j = 0
+        i 0
+        j 0
         w.... j < l..(s2
             __ counter[s2[j]] > 0:
                 counter[s2[j]] -_ 1
@@ -42,7 +42,7 @@ c_ Solution:
                     counter[s2[i]] += 1
                 i += 1
                 __ j < i:
-                    j = i
+                    j i
 
         r.. F..
 

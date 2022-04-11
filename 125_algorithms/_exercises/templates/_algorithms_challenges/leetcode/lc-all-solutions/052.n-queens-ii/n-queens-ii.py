@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ dfs(p.., n
       __ l..(p..) __ n:
         r.. 1
-      res = 0
+      res 0
       ___ i __ r..(n
         __ i n.. __ p.. a.. isValidQueen(p.., i
           p...a..(i)

@@ -4,10 +4,10 @@ c_ Solution(o..
     :type n: int
     :rtype: int
     """
-    m = 1
-    ones = 0
+    m 1
+    ones 0
     w.... m <_ n:
-      r = (n / m) % 10
+      r (n / m) % 10
       __ r > 1:
         ones += m
       ____ r __ 1:

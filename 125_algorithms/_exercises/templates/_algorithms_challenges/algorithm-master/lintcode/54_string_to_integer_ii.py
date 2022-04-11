@@ -4,13 +4,13 @@ c_ Solution:
     @return: An integer
     """
     ___ atoi  s
-        NOT_FOUND = 0
+        NOT_FOUND 0
         __ n.. s:
             r.. NOT_FOUND
 
-        n = l..(s)
-        is_negative = F..
-        left, right = 0, n - 1
+        n l..(s)
+        is_negative F..
+        left, right 0, n - 1
 
         w.... left < n a.. s[left] __ ' ':
             left += 1
@@ -18,19 +18,19 @@ c_ Solution:
             right -_ 1
 
         __ left < n a.. s[left] __ ('+', '-'
-            is_negative = (s[left] __ '-')
+            is_negative (s[left] __ '-')
             left += 1
 
         __ left > right:
             r.. NOT_FOUND
 
-        ans = 0
-        zero = o..('0')
-        nine = o..('9')
-        INT_MAX = 0x7FFFFFFF
-        INT_MIN = -0x80000000
+        ans 0
+        zero o..('0')
+        nine o..('9')
+        INT_MAX 0x7FFFFFFF
+        INT_MIN -0x80000000
         w.... left <_ right a.. zero <_ o..(s[left]) <_ nine:
-            ans = ans * 10 + o..(s[left]) - zero
+            ans ans * 10 + o..(s[left]) - zero
             left += 1
 
         __ is_negative:

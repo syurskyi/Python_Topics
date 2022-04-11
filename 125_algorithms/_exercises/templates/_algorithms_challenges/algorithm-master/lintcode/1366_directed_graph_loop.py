@@ -11,10 +11,10 @@ c_ Solution:
         __ n.. start o. n.. end o. l..(start) != l..(end
             r.. F..
 
-        n = l..(start)
-        nxt = c...d..(s..)
-        visited = s..()
-        rec_stack = s..()
+        n l..(start)
+        nxt c...d..(s..)
+        visited s..()
+        rec_stack s..()
 
         ___ i __ r..(n
             nxt[start[i]].add(end[i])

@@ -19,8 +19,8 @@ The total number of nodes is at most 5000.
 # Definition for a Node.
 c_ Node:
     ___ - , val, children
-        val = val
-        children = children
+        val val
+        children children
 
 
 c_ Solution:
@@ -28,7 +28,7 @@ c_ Solution:
         __ n.. root:
             r.. 0
 
-        max_child_depth = m..([
+        max_child_depth m..([
             maxDepth(child)
             ___ child __ root.children
         ] o. [0])

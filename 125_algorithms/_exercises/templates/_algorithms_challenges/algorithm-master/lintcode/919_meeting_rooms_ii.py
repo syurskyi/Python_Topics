@@ -13,7 +13,7 @@ c_ Solution:
         :type intervals: list[Interval]
         :rtype: int
         """
-        ans = 0
+        ans 0
 
         __ n.. intervals:
             r.. ans
@@ -26,7 +26,7 @@ c_ Solution:
 
         t__.s..()
 
-        cnt = 0
+        cnt 0
 
         ___ t, is_start __ t__:
             __ is_start:
@@ -35,6 +35,6 @@ c_ Solution:
                 cnt -_ 1
 
             __ cnt > ans:
-                ans = cnt
+                ans cnt
 
         r.. ans

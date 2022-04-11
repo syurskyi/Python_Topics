@@ -2,7 +2,7 @@ ____ unittest.mock _______ patch
 
 ____ colors _______ print_colors
 
-NOT_VALID = 'Not a valid color'
+NOT_VALID 'Not a valid color'
 
 
 ___ call_print_colors
@@ -17,8 +17,8 @@ ___ call_print_colors
 ___ test_straight_quit(input_mock, capsys
     # user only enter quit, program prints bye and breaks loop
     call_print_colors()
-    a.. = capsys.r..[0].s..
-    e.. = 'bye'
+    a.. capsys.r..[0].s..
+    e.. 'bye'
     ... a.. __ e..
 
 
@@ -27,8 +27,8 @@ ___ test_one_valid_color_then_quit(input_mock, capsys
     # user enters blue = valid color so print it
     # then user enters quit so break out of loop = end program
     call_print_colors()
-    a.. = capsys.r..[0].s..
-    e.. = 'blue\nbye'
+    a.. capsys.r..[0].s..
+    e.. 'blue\nbye'
     ... a.. __ e..
 
 
@@ -37,8 +37,8 @@ ___ test_one_invalid_color_then_quit(input_mock, capsys
     # user enters green which is not in VALID_COLORS so continue the loop,
     # user then enters quit so loop breaks (end function / program)
     call_print_colors()
-    a.. = capsys.r..[0].s..
-    e.. = f'{NOT_VALID}\nbye'
+    a.. capsys.r..[0].s..
+    e.. f'{NOT_VALID}\nbye'
     ... a.. __ e..
 
 
@@ -47,8 +47,8 @@ ___ test_invalid_then_valid_color_then_quit(nput_mock, capsys
     # white is not a valid color so continue the loop,
     # then user enters red which is valid so print it, then quit
     call_print_colors()
-    a.. = capsys.r..[0].s..
-    e.. = f'{NOT_VALID}\nred\nbye'
+    a.. capsys.r..[0].s..
+    e.. f'{NOT_VALID}\nred\nbye'
     ... a.. __ e..
 
 
@@ -58,6 +58,6 @@ ___ test_valid_then_invalid_color_then_quit(input_mock, capsys
     # which is not a valid color so continue loop, lastly user
     # enters quit so exit loop = reaching end function / program
     call_print_colors()
-    a.. = capsys.r..[0].s..
-    e.. = f'yellow\n{NOT_VALID}\nbye'
+    a.. capsys.r..[0].s..
+    e.. f'yellow\n{NOT_VALID}\nbye'
     ... a.. __ e..

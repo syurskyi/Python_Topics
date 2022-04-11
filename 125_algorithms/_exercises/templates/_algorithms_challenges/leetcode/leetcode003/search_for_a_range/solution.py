@@ -16,42 +16,42 @@ c_ Solution:
     # @param target, an integer to be searched
     # @return a list of length 2, [index1, index2]
     ___ searchRange  A, target
-        n = l..(A)
+        n l..(A)
         __ n __ 1:
             __ A[0] __ target:
                 r.. [0, 0]
             ____
                 r.. [-1, -1]
-        left = 0
-        right = n - 1
-        lower = -1
-        upper = -1
+        left 0
+        right n - 1
+        lower -1
+        upper -1
         # Find lower bound
         w.... left <_ right:
-            mid = (left + right) / 2
+            mid (left + right) / 2
             __ mid < n - 1 a.. A[mid + 1] __ target a.. A[mid] < target:
-                lower = mid + 1
+                lower mid + 1
                 _____
             ____ A[mid] __ target a.. mid __ 0:
-                lower = mid
+                lower mid
                 _____
             ____ target <_ A[mid]:
-                right = mid - 1
+                right mid - 1
             ____
-                left = mid + 1
+                left mid + 1
         # Find upper bound
-        left = 0
-        right = n - 1
+        left 0
+        right n - 1
         w.... left <_ right:
-            mid = (left + right) / 2
+            mid (left + right) / 2
             __ mid < n - 1 a.. A[mid + 1] > target a.. A[mid] __ target:
-                upper = mid
+                upper mid
                 _____
             ____ A[mid] __ target a.. mid __ n - 1:
-                upper = mid
+                upper mid
                 _____
             ____ target < A[mid]:
-                right = mid - 1
+                right mid - 1
             ____
-                left = mid + 1
+                left mid + 1
         r.. [lower, upper]

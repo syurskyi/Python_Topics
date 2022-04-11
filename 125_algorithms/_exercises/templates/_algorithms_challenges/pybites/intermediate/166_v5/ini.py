@@ -6,7 +6,7 @@ c_ ToxIniParser:
 
     ___ - , ini_file
         """Use configparser to load ini_file into self.config"""
-        config = configparser.ConfigParser()
+        config configparser.ConfigParser()
         config.read(ini_file)
 
     $

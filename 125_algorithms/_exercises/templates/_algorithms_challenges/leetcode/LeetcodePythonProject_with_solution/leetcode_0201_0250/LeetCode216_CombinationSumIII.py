@@ -28,14 +28,14 @@ c_ Solution(o..
             elem.p.. )
     
     ___ test
-        testCases = [
+        testCases [
             (3, 7),
             (3, 9),
         ]
         ___ k, n __ testCases:
             print('k: %s' % (k
             print('n: %s' % (n
-            result = combinationSum3(k, n)
+            result combinationSum3(k, n)
             print('result: %s' % (result
             print('-='*20+'-')
 

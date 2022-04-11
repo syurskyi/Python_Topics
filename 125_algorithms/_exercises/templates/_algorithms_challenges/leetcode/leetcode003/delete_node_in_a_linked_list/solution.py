@@ -21,5 +21,5 @@ c_ Solution(o..
         :rtype: void Do not return anything, modify node in-place instead.
         """
         __ node.next __ n.. N..
-            node.val = node.next.val
-            node.next = node.next.next
+            node.val node.next.val
+            node.next node.next.next

@@ -54,17 +54,17 @@ c_ Solution:
         """
         bfs
         """
-        destination = t..(i..(c) ___ c __ target)
-        deadends_set = s..(
+        destination t..(i..(c) ___ c __ target)
+        deadends_set s..(
             t..(i..(c) ___ c __ s)
             ___ s __ deadends
         )
-        q = [(0, 0, 0, 0)]
+        q [(0, 0, 0, 0)]
         __ q[0] __ deadends_set:
             r.. -1
 
-        step = 0
-        visited = s..(q)
+        step 0
+        visited s..(q)
         w.... q:
             cur_q    # list
             ___ e __ q:
@@ -72,15 +72,15 @@ c_ Solution:
                     r.. step
                 ___ i __ r..(4
                     ___ delta __ (-1, 1
-                        nxt_lst = l..(e)  # copy
-                        nxt_lst[i] = (nxt_lst[i] + delta) % 10  # forward or backward
-                        nxt = t..(nxt_lst)
+                        nxt_lst l..(e)  # copy
+                        nxt_lst[i] (nxt_lst[i] + delta) % 10  # forward or backward
+                        nxt t..(nxt_lst)
                         __ nxt n.. __ visited a.. nxt n.. __ deadends_set:
                             visited.add(nxt)
                             cur_q.a..(nxt)
 
             step += 1
-            q = cur_q
+            q cur_q
 
         r.. -1
 

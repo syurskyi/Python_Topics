@@ -8,17 +8,17 @@ c_ StrainTest(unittest.TestCase
         assertEqual(keep([], l.... x: x % 2 __ 0), [])
 
     ___ test_empty_keep
-        inp = [2, 4, 6, 8, 10]
+        inp [2, 4, 6, 8, 10]
         out    # list
         assertEqual(keep(inp, l.... x: x % 2 __ 1), out)
 
     ___ test_empty_discard
-        inp = [2, 4, 6, 8, 10]
+        inp [2, 4, 6, 8, 10]
         out    # list
         assertEqual(discard(inp, l.... x: x % 2 __ 0), out)
 
     ___ test_keep_everything
-        inp = [2, 4, 6, 8, 10]
+        inp [2, 4, 6, 8, 10]
         assertEqual(keep(inp, l.... x: x % 2 __ 0), inp)
 
     ___ test_discard_endswith

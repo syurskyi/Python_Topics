@@ -37,9 +37,9 @@ relationship between the input and the output.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -47,9 +47,9 @@ c_ Solution:
         __ n.. t:
             r.. ""
 
-        left = tree2str(t.left)
-        right = tree2str(t.right)
-        ret = [s..(t.val)]
+        left tree2str(t.left)
+        right tree2str(t.right)
+        ret [s..(t.val)]
         __ left o. right:
             ret.a..("(" + left + ")")
         __ right:

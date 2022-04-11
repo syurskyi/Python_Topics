@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ validWordSquare  words
         __ n.. words: r.. F..
         ___ i, word1 __ e..(words
-            word2 = ''
+            word2 ''
             ___ j __ r..(l..(word1:
                 __ j >_ l..(words
                     r.. F..

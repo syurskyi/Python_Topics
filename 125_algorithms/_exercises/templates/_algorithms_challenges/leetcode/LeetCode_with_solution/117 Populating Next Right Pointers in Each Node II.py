@@ -20,14 +20,14 @@ After calling your function, the tree should look like:
      / \    \
     4-> 5 -> 7 -> NULL
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
-        next = N..
+        val x
+        left N..
+        right N..
+        next N..
 
 
 c_ Solution:
@@ -41,16 +41,16 @@ c_ Solution:
         __ n.. root:
             r.. N..
 
-        q = [root]
+        q [root]
         w.... q:
-            current_level = q
+            current_level q
             q    # list
             ___ ind, val __ e..(current_level
                 __ val.left: q.a..(val.left)
                 __ val.right: q.a..(val.right)
                 ___
-                    val.next = current_level[ind+1]
+                    val.next current_level[ind+1]
                 ______ I..
-                    val.next = N..
+                    val.next N..
 
 

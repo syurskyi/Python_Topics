@@ -3,7 +3,7 @@ Given a string containing just the characters '(', ')', '{', '}', '[' and ']', d
 
 The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -13,9 +13,9 @@ c_ Solution:
         :param s: string
         :return: boolean
         """
-        put_set = ("(", "[", "{")
-        pop_set = (")", "]", "}")
-        pair = d..(z..(put_set, pop_set
+        put_set ("(", "[", "{")
+        pop_set (")", "]", "}")
+        pair d..(z..(put_set, pop_set
 
         stack    # list
         ___ element __ s:

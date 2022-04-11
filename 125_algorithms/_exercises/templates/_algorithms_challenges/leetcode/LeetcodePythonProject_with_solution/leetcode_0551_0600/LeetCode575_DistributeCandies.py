@@ -9,18 +9,18 @@ c_ Solution(o..
         :type candies: List[int]
         :rtype: int
         """
-        n = i..(l..(candies)/2)
-        candies = s..(candies)
+        n i..(l..(candies)/2)
+        candies s..(candies)
         r.. m..(n, l..(candies
     
     ___ test
-        testCases = [
+        testCases [
             [1,1,2,3],
             [1,1,2,2,3,3],
         ]
         ___ candies __ testCases:
             print('candies: %s' % candies)
-            result = distributeCandies(candies)
+            result distributeCandies(candies)
             print('result: %s' % result)
             print('-='*30+'-')
 

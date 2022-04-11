@@ -7,7 +7,7 @@ and [3,4,-1,1] return 2.
 
 Your algorithm should run in O(n) time and uses constant space.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ firstMissingPositive  A
         """
@@ -22,14 +22,14 @@ c_ Solution:
         __ n.. A:
             r.. 1
 
-        i = 0
-        length = l..(A)
+        i 0
+        length l..(A)
         w.... i<length:
-            current = A[i]
+            current A[i]
             __ current<_0 o. current>length o. A[current-1]__current:  # out-of-range or in-place
                 i += 1
             ____
-                A[current-1], A[i] = current, A[current-1]   # go to the next iteration
+                A[current-1], A[i] current, A[current-1]   # go to the next iteration
 
 
         ___ i __ x..(length

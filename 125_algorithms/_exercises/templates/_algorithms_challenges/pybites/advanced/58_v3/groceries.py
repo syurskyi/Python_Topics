@@ -1,7 +1,7 @@
 _______ a__
 ____ c.. _______ n..
 
-Item = n..('Item', 'product price craving')
+Item n..('Item', 'product price craving')
 
 
 c_ Groceries:
@@ -9,13 +9,13 @@ c_ Groceries:
     ___ - , items_ N..
         """This cart can be instantiated with a list of namedtuple
            items, if not provided use an empty list"""
-        _items = items __ items __ n.. N.. ____ []
+        _items items __ items __ n.. N.. ____ []
 
     ___ show  items_ N..
         """Print a simple table of cart items with total at the end"""
-        items = items __ items __ n.. N.. ____ self
+        items items __ items __ n.. N.. ____ self
         ___ item __ items:
-            product = f'{item.product}'
+            product f'{item.product}'
             __ item.craving:
                 product += ' (craving)'
             print _*{product:<30} | {item.price:>3}')
@@ -23,7 +23,7 @@ c_ Groceries:
 
     ___ _print_total  items
         """Calculate and print total price of cart"""
-        total = s..(item.price ___ item __ items)
+        total s..(item.price ___ item __ items)
         print('-' * 36)
         print _*{"Total":<30} | {total:>3}')
 
@@ -46,7 +46,7 @@ c_ Groceries:
     ___ s..  s..
         """Filters items matching insensitive 'contains' search, and passes
            them to show for printing"""
-        items = [item ___ item __ self __ s...l..
+        items [item ___ item __ self __ s...l..
                  __ item.product.l..]
         show(items)
 
@@ -66,8 +66,8 @@ c_ Groceries:
 
 
 ___ create_parser
-    p.. = a__.A..(d.._'')
-    group = p...add_mutually_exclusive_group()
+    p.. a__.A..(d.._'')
+    group p...add_mutually_exclusive_group()
     group.a..('-a', '--add', nargs=3, h.._'add item providing name (str), price (int), and craving (bool)')
     group.a..('-d', '--delete', nargs=1, h.._'delete a product by name (str)')
     group.a..('-l', '--list', a.._'store_true', h.._'show items in cart')
@@ -77,11 +77,11 @@ ___ create_parser
 
 ___ handle_args(args=N.., cart_ N..
     __ args __ N..
-        parser = create_parser()
-        args = parser.p..
+        parser create_parser()
+        args parser.p..
 
     __ cart __ N..
-        cart = Groceries()
+        cart Groceries()
 
     ___ op, param __ vars(args).i..:
         __ op __ 'add' a.. param:

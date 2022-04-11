@@ -48,12 +48,12 @@ c_ Solution:
         """
         gcd of all > 2
         """
-        counter = C..(deck)
-        gcd = N..
+        counter C..(deck)
+        gcd N..
         ___ v __ counter.v..
             __ gcd __ N..
-                gcd = v
-            gcd = gcd(gcd, v)
+                gcd v
+            gcd gcd(gcd, v)
             __ gcd __ 1:
                 r.. F..
 
@@ -65,6 +65,6 @@ c_ Solution:
         gcd(a, b) = gcd(b, r)
         """
         w.... b:
-            a, b = b, a % b
+            a, b b, a % b
 
         r.. a

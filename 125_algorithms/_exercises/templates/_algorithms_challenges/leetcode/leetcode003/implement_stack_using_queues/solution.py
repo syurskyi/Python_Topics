@@ -59,8 +59,8 @@ c_ Stack(o..
         """
         w.... l..(queue1) > 1:
             queue2.a..(queue1.p.. 0
-        res = queue1.p.. 0)
-        queue1, queue2 = queue2, queue1
+        res queue1.p.. 0)
+        queue1, queue2 queue2, queue1
         r.. res
 
     ___ top

@@ -13,17 +13,17 @@ c_ Solution(o..
     :rtype: TreeNode
     """
     __ root a.. q:
-      flag = F..
-      stack = [(1, root)]
+      flag F..
+      stack [(1, root)]
       w.... stack:
-        p = stack.p.. )
+        p stack.p.. )
         __ n.. p[1]:
           _____
         __ p[0] __ 0:
           __ flag:
             r.. p[1]
           __ p[1] __ q:
-            flag = T..
+            flag T..
         ____
           stack.e.. [(1, p[1].right), (0, p[1]), (1, p[1].left)])
 

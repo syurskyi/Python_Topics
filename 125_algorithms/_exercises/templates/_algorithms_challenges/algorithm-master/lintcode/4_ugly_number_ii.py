@@ -17,8 +17,8 @@ c_ Solution:
         __ n.. n:
             r.. 0
 
-        ans = [1]
-        i2 = i3 = i5 = 0
+        ans [1]
+        i2 i3 i5 0
 
         ___ _ __ r..(1, n
             w.... ans[i2] * 2 <_ ans[-1]:

@@ -3,14 +3,14 @@ c_ Solution:
     # Capture all regions by modifying the input board in-place.
     # Do not return any value.
     ___ solve  board
-        n = l..(board)
+        n l..(board)
         __ n __ 0:
             r..
-        m = l..(board[0])
+        m l..(board[0])
         __ m __ 0:
             r..
-        n = n
-        m = m
+        n n
+        m m
         # Go through the four edges to search O's
         ___ i __ r..(n
             ___ j __ r..(m
@@ -20,21 +20,21 @@ c_ Solution:
         ___ i __ r..(n
             ___ j __ r..(m
                 __ board[i][j] __ 'O':
-                    board[i][j] = 'X'
+                    board[i][j] 'X'
                 __ board[i][j] __ 'Y':
-                    board[i][j] = 'O'
+                    board[i][j] 'O'
 
     ___ bfs  board, x, y
         """Use BFS to set O to Y"""
         queue    # list
-        board[y][x] = 'Y'
+        board[y][x] 'Y'
         queue.a..((x, y
         w.... queue:
-            root_x, root_y = queue.p.. 0)
+            root_x, root_y queue.p.. 0)
             ___ node __ adjacent(board, root_x, root_y
-                x, y = node
+                x, y node
                 __ board[y][x] != 'Y':
-                    board[y][x] = 'Y'
+                    board[y][x] 'Y'
                     queue.a..((x, y
 
     ___ adjacent  board, x, y

@@ -16,8 +16,8 @@ c_ Solution(o..
       __ n.. p:
         r.. 0
 
-      left = dfs(p.left)
-      right = dfs(p.right)
+      left dfs(p.left)
+      right dfs(p.right)
       __ left __ -1 o. right __ -1:
         r.. -1
       __ a..(left - right) > 1:

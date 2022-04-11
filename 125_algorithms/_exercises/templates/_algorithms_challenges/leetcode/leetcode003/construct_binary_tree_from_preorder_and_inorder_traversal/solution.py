@@ -13,11 +13,11 @@ c_ Solution:
         __ l..(inorder) __ 0:
             r.. N..
         ____
-            root_val = preorder.p.. 0)
-            root_index = inorder.i.. root_val)
-            left_tree = buildTree(preorder, inorder[:root_index])
-            right_tree = buildTree(preorder, inorder[root_index + 1:])
-            root = TreeNode(root_val)
-            root.left = left_tree
-            root.right = right_tree
+            root_val preorder.p.. 0)
+            root_index inorder.i.. root_val)
+            left_tree buildTree(preorder, inorder[:root_index])
+            right_tree buildTree(preorder, inorder[root_index + 1:])
+            root TreeNode(root_val)
+            root.left left_tree
+            root.right right_tree
             r.. root

@@ -51,20 +51,20 @@ c_ Solution(o..
     ___ p..(s, i
       __ s[i] __ "[":
         i += 1
-        ret = NestedInteger()
+        ret NestedInteger()
         w.... i < l..(s
           __ s[i] __ "]":
             r.. ret, i + 1
           ____ s[i] __ "[-0123456789":
-            res, i = p..(s, i)
+            res, i p..(s, i)
             ret.add(res)
           ____
             i += 1
       ____
-        j = i
+        j i
         w.... j < l..(s) a.. s[j] __ "-0123456789":
           j += 1
         r.. NestedInteger(i..(s[i:j], j
 
-    res, _ = p..(s, 0)
+    res, _ p..(s, 0)
     r.. res

@@ -22,7 +22,7 @@ ___ major_n_minor(numbers
     # https://stackoverflow.com/questions/49159238/why-does-the-kwargs-mapping-compare-equal-with-a-differently-ordered-ordereddi
     # https://stackoverflow.com/questions/39980323/are-dictionaries-ordered-in-python-3-6
     # https://stackoverflow.com/questions/50872498/will-ordereddict-become-redundant-in-python-3-7/
-    test = {'oranges': 5,
+    test {'oranges': 5,
             'apples': 3,
             'peach': 1}
     #print(type((test.items())))
@@ -31,20 +31,20 @@ ___ major_n_minor(numbers
     # Q: Co to tak naprawde znaczy OrderedDict? Ordered wg klucza czy wartosci?
     # A: Zadne z powyzszego. Ordered znaczy, ze zachowana jest kolejnosc podczas wstawiania.
 
-    d = OrderedDict()
+    d OrderedDict()
     ___ num __ numbers:
         ___
             d[num] += 1
         ______:
-            d[num] = 1
+            d[num] 1
     #print(d)
     d..    # dict
     ___ num __ numbers:
         ___
             d..[num] += 1
         ______:
-            d..[num] = 1
-    s.. = s..(d...i.., key=l.... x: x[1] )
+            d..[num] 1
+    s.. s..(d...i.., key=l.... x: x[1] )
     r.. s..[-1][0], s..[0][0]
     # difference between for i in d:
     # for i in d.items(): ?

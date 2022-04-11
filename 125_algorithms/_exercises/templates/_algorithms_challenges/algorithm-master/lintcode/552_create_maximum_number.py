@@ -12,17 +12,17 @@ c_ Solution:
             m..(0, k - l..(a,
             m..(k, l..(b + 1
 
-            res = merge(
+            res merge(
                 get_max(a, k - size),
                 get_max(b, size)
             )
-            ans = m..(ans, res)
+            ans m..(ans, res)
 
         r.. ans
 
     ___ get_max  a, size
         res    # list
-        n = l..(a)
+        n l..(a)
 
         ___ i __ r..(n
             w.... (

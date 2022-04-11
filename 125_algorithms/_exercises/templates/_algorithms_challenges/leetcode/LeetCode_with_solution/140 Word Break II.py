@@ -10,7 +10,7 @@ dict = ["cat", "cats", "and", "sand", "dog"].
 
 A solution is ["cats and dog", "cat sand dog"].
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 ____ c.. _______ d..
 
 
@@ -40,7 +40,7 @@ c_ Solution:
         :return: a list of strings
         """
         # dp = [[]] * (len(s) + 1) # namespace reuse
-        dp = [[] ___ _ __ r..(l..(s) + 1)]
+        dp [[] ___ _ __ r..(l..(s) + 1)]
 
         dp[0].a..("dummy")
 

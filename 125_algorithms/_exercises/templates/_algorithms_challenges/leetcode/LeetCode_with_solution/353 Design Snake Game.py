@@ -3,7 +3,7 @@ Design a Snake game that is played on a device with screen size = width x height
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ SnakeGame(o..
@@ -18,17 +18,17 @@ c_ SnakeGame(o..
         :type height: int
         :type food: List[List[int]]
         """
-        w = width
-        h = height
-        food = d..(food)
-        body = d..([(0, 0)])
-        dirs = {
+        w width
+        h height
+        food d..(food)
+        body d..([(0, 0)])
+        dirs {
             'U': (-1, 0),
             'L': (0, -1),
             'R': (0, 1),
             'D': (1, 0),
         }
-        eat = 0
+        eat 0
 
     ___ move  direction
         """
@@ -39,11 +39,11 @@ c_ SnakeGame(o..
         :type direction: str
         :rtype: int
         """
-        x, y = body[0]
-        dx, dy = dirs[direction]
+        x, y body[0]
+        dx, dy dirs[direction]
         x += dx
         y += dy
-        fx, fy = food[0] __ food ____ (-1, -1)
+        fx, fy food[0] __ food ____ (-1, -1)
         __ x __ fx a.. y __ fy:
             food.popleft()
             eat += 1
@@ -62,6 +62,6 @@ c_ SnakeGame(o..
 # param_1 = obj.move(direction)
 
 __ _______ __ _______
-    game = SnakeGame(3, 2, [[1, 2], [0, 1]])
+    game SnakeGame(3, 2, [[1, 2], [0, 1]])
     ___ char, expect __ z..('RDRULU', [0, 0, 1, 1, 2, -1]
         ... game.move(char) __ expect

@@ -20,10 +20,10 @@ c_ Solution(o..
             heapq.heappush(heapCap, (c, p
         ___ _ __ r..(k
             w.... heapCap a.. heapCap[0][0] <_ W:
-                c, p = heapq.heappop(heapCap)
+                c, p heapq.heappop(heapCap)
                 heapq.heappush(heapPro, (-p, c
             __ n.. heapPro:
                 _____
-            p, c = heapq.heappop(heapPro)
+            p, c heapq.heappop(heapPro)
             W += -p
         r.. W

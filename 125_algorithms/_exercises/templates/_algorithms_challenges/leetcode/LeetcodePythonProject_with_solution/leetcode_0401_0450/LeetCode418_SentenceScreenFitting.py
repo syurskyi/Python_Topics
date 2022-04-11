@@ -12,30 +12,30 @@ c_ Solution(o..
         :type cols: int
         :rtype: int
         """
-        length = l..(sentence)
-        times = [0]*length
-        nextInd = [0]*length
+        length l..(sentence)
+        times [0]*length
+        nextInd [0]*length
         ___ i __ r..(length
-            ind = i
-            curLen = 0
-            t__ = 0
+            ind i
+            curLen 0
+            t__ 0
             w.... curLen+l..(sentence[ind])<_cols:
                 curLen += l..(sentence[ind])+1
                 ind += 1
                 __ ind __ l..(sentence
-                    ind = 0
+                    ind 0
                     t__ += 1
-            nextInd[i] = ind
-            times[i] = t__
-        ind = 0
-        res = 0
+            nextInd[i] ind
+            times[i] t__
+        ind 0
+        res 0
         ___ _ __ r..(rows
             res += times[ind]
-            ind = nextInd[ind]
+            ind nextInd[ind]
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             (["hello", "world"], 2, 8),
             (["a", "bcd", "e"], 3, 6),
             (["I", "had", "apple", "pie"], 4, 5),
@@ -44,7 +44,7 @@ c_ Solution(o..
             print('sentence: %s' % sentence)
             print('rows: %s' % rows)
             print('cols: %s' % cols)
-            result = wordsTyping(sentence, rows, cols)
+            result wordsTyping(sentence, rows, cols)
             print('result: %s' % result)
             print('-='*20+'-')
 

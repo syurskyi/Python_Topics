@@ -1,4 +1,4 @@
-MIN_DRIVING_AGE = 18
+MIN_DRIVING_AGE 18
 
 
 ___ allowed_driving name, age

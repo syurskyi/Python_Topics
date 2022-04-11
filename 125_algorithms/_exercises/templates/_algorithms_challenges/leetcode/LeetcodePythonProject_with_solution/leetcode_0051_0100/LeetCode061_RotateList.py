@@ -7,8 +7,8 @@ Created on Jan 22, 2017
 # Definition for singly-linked list.
 c_ ListNode(o..
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 c_ Solution(o..
     ___ rotateRight  head, k
@@ -19,25 +19,25 @@ c_ Solution(o..
         """
         __ n.. head o. n.. head.next o. k __ 0:
             r.. head
-        length = 0
-        node = head
+        length 0
+        node head
         w.... node:
-            node = node.next
+            node node.next
             length +=1
-        node = head
-        k = k % length
+        node head
+        k k % length
         __ k __ 0: r.. head
-        prev = N..
-        count = 0
+        prev N..
+        count 0
         w.... count < length-k:
-            prev = node
-            node = node.next
+            prev node
+            node node.next
             count+=1
-        tail = node
+        tail node
         w.... tail.next:
-            tail = tail.next
-        tail.next = head
-        prev.next = N..
+            tail tail.next
+        tail.next head
+        prev.next N..
         r.. node
     
     ___ test

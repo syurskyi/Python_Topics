@@ -12,14 +12,14 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        shift = 0
+        shift 0
         w.... n > m:
             shift += 1
-            m = m >> 1
-            n = n >> 1
+            m m >> 1
+            n n >> 1
         r.. m << shift
 
 
-s = Solution()
+s Solution()
 print(s.rangeBitwiseAnd(5, 6
 print(s.rangeBitwiseAnd(0, 2147483647

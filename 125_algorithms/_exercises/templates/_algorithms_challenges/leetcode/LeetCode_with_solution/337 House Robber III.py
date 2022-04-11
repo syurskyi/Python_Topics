@@ -21,15 +21,15 @@ Example 2:
  1   3   1
 Maximum amount of money the thief can rob = 4 + 5 = 9.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution(o..
@@ -47,11 +47,11 @@ c_ Solution(o..
             r.. 0
 
         __ root n.. __ cache_rob:
-            val = m..(
+            val m..(
                 notrob(root),
                 root.val + notrob(root.left) + notrob(root.right)
             )
-            cache_rob[root] = val
+            cache_rob[root] val
 
         r.. cache_rob[root]
 
@@ -65,12 +65,12 @@ c_ Solution(o..
             r.. 0
 
         __ root n.. __ cache_notrob:
-            val = (
+            val (
                 rob(root.left) +
                 rob(root.right)
             )
 
-            cache_notrob[root] = val
+            cache_notrob[root] val
 
         r.. cache_notrob[root]
 

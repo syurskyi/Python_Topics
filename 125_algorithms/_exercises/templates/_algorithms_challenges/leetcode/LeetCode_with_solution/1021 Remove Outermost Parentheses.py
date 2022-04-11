@@ -56,7 +56,7 @@ c_ Solution:
         Exclude the first and last parathesis
         """
         ret    # list
-        cnt = 0
+        cnt 0
         ___ e __ S:
             __ e __ "(":
                 cnt += 1
@@ -76,18 +76,18 @@ c_ Solution:
         """
         ret    # list
         stk    # list
-        cur_q = d..()
+        cur_q d..()
         ___ e __ S:
             __ e __ "(":
                 stk.a..(e)
             ____
-                prev = stk.p.. )
+                prev stk.p.. )
                 __ stk:
                     cur_q.appendleft(prev)
                     cur_q.a..(e)
                 ____
                     ret.e.. cur_q)
-                    cur_q = d..()
+                    cur_q d..()
 
         r.. "".j..(ret)
 

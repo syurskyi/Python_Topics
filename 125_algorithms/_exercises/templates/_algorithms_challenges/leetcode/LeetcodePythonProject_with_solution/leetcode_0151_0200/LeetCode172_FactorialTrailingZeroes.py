@@ -11,22 +11,22 @@ c_ Solution(o..
         :rtype: int
         """
         __ n < 0: r.. -1
-        count = 0
-        i = 5
+        count 0
+        i 5
         w.... n//i > 0:
             count += n//i
             i *= 5
         r.. count
     
     ___ test
-        testCases = [
+        testCases [
             3,
             5,
             10,
         ]
         ___ n __ testCases:
             print('n: %s' % (n
-            result = trailingZeroes(n)
+            result trailingZeroes(n)
             print('result: %s' % (result
             print('-='*20+'-')
 

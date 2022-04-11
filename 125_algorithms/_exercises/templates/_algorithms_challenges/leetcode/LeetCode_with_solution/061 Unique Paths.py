@@ -12,7 +12,7 @@ Above is a 3 x 7 grid. How many possible unique paths are there?
 Note: m and n will be at most 100.
 """
 _______ m__
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -32,11 +32,11 @@ c_ Solution(o..
         r.. m__.factorial(m+n) / (m__.factorial(n) * m__.factorial(m
 
     ___ uniquePathsDP  m, n
-        F = [[0 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
-        F[1][0] = 1  # dummy entry point
+        F [[0 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
+        F[1][0] 1  # dummy entry point
         ___ i __ x..(1, m+1
             ___ j __ x..(1, n+1
-                F[i][j] = F[i-1][j] + F[i][j-1]
+                F[i][j] F[i-1][j] + F[i][j-1]
 
         r.. F[m][n]
 
@@ -49,16 +49,16 @@ c_ Solution(o..
         :param n:
         :return: an integer
         """
-        F = [[0 ___ _ __ x..(n)] ___ _ __ x..(m)]
-        F[0][0] = 1  # start
+        F [[0 ___ _ __ x..(n)] ___ _ __ x..(m)]
+        F[0][0] 1  # start
 
         # F[i][j] = F[i-1][j] + F[i][j-1]
         ___ i __ x..(m
             ___ j __ x..(n
                 __ i __ 0 a.. j __ 0: _____
-                __ i __ 0: F[i][j] = F[i][j-1]
-                ____ j __ 0: F[i][j] = F[i-1][j]
-                ____ F[i][j] = F[i-1][j]+F[i][j-1]
+                __ i __ 0: F[i][j] F[i][j-1]
+                ____ j __ 0: F[i][j] F[i-1][j]
+                ____ F[i][j] F[i-1][j]+F[i][j-1]
 
         r.. F[m-1][n-1]
 

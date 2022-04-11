@@ -22,7 +22,7 @@ You may assume k is always valid, ie: 1 ≤ k ≤ input array's size for non-emp
 Follow up:
 Could you solve it in linear time?
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -45,7 +45,7 @@ c_ Solution:
         """
         q    # list  # store the index
         ret    # list
-        n = l..(nums)
+        n l..(nums)
         ___ i __ x..(n
             w.... q a.. q[0] <_ i-k:
                 q.p.. 0)

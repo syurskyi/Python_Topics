@@ -8,11 +8,11 @@ c_ Solution:
     @return: the number of unique integers
     """
     ___ deduplication  nums
-        ans = 0
+        ans 0
         __ n.. nums:
             r.. ans
 
-        exists = s..()
+        exists s..()
         ___ i __ r..(l..(nums:
             __ nums[i] n.. __ exists:
                 exists.add(nums[i])
@@ -31,17 +31,17 @@ c_ Solution:
     @return: the number of unique integers
     """
     ___ deduplication  nums
-        ans = 0
+        ans 0
         __ n.. nums:
             r.. ans
 
         nums.s..()
 
         # for `nums[0]`
-        ans = 1
+        ans 1
         ___ i __ r..(1, l..(nums:
             __ nums[i - 1] != nums[i]:
-                nums[ans] = nums[i]
+                nums[ans] nums[i]
                 ans += 1
 
         r.. ans

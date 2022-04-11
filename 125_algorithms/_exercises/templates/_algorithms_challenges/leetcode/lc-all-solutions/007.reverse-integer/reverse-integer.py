@@ -4,10 +4,10 @@ c_ Solution(o..
     :type x: int
     :rtype: int
     """
-    sign = x < 0 a.. -1 o. 1
-    x = a..(x)
-    ans = 0
+    sign x < 0 a.. -1 o. 1
+    x a..(x)
+    ans 0
     w.... x:
-      ans = ans * 10 + x % 10
+      ans ans * 10 + x % 10
       x /= 10
     r.. sign * ans __ ans <_ 0x7fffffff ____ 0

@@ -5,9 +5,9 @@ Created on Oct 18, 2017
 '''
 c_ TreeNode(o..
     ___ - , val
-        val = val
+        val val
         children    # dict
-        isLeaf = F..
+        isLeaf F..
 
 c_ MagicDictionary(o..
 
@@ -15,7 +15,7 @@ c_ MagicDictionary(o..
         """
         Initialize your data structure here.
         """
-        root = TreeNode(N..)
+        root TreeNode(N..)
 
     ___ buildDict  d..
         """
@@ -23,15 +23,15 @@ c_ MagicDictionary(o..
         :type dict: List[str]
         :rtype: void
         """
-        root = TreeNode(N..)
+        root TreeNode(N..)
         ___ word __ d..:
-            node = root
+            node root
             ___ c __ word:
                 __ c n.. __ node.children:
-                    newNode = TreeNode(c)
-                    node.children[c] = newNode
-                node = node.children[c]
-            node.isLeaf = T..
+                    newNode TreeNode(c)
+                    node.children[c] newNode
+                node node.children[c]
+            node.isLeaf T..
 
     ___ s..  word
         """
@@ -47,7 +47,7 @@ c_ MagicDictionary(o..
             __ node.isLeaf a.. diffFlag:
                 r.. T..
             r.. F..
-        c = word[ind]
+        c word[ind]
         ___ c0 __ node.children:
             __ c0 != c a.. diffFlag:
                 _____
@@ -57,7 +57,7 @@ c_ MagicDictionary(o..
         r.. F..
 
 __ _____ __ _____
-    magicDict = MagicDictionary()
+    magicDict MagicDictionary()
     magicDict.buildDict( 'hello', 'leetcode', 'hallo' )
     print(magicDict.s..('hello'
     print(magicDict.s..('hhllo'

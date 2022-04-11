@@ -2,7 +2,7 @@ _______ p__
 
 ____ improved_xmas_tree _______ generate_improved_xmas_tree
 
-default_tree = """
+default_tree """
          +
          *
         ***
@@ -17,7 +17,7 @@ default_tree = """
     |||||||||||
     |||||||||||
 """
-smaller_tree = """
+smaller_tree """
   +
   *
  ***
@@ -29,7 +29,7 @@ smaller_tree = """
 
 ?p__.m__.p.("size, expected", [(10, 13), (5, 8), (20, 23)])
 ___ test_height_xmas_tree(size, e..
-    a.. = l..(generate_improved_xmas_tree(size).r..().s..
+    a.. l..(generate_improved_xmas_tree(size).r..().s..
     ... a.. __ e..
 
 
@@ -49,12 +49,12 @@ ___ test_trunk_used(size, e..
 
 
 ___ test_outputs
-    actual_tree = generate_improved_xmas_tree().s..("\n").s..("\n")
-    expected_tree = default_tree.s..("\n").s..("\n")
+    actual_tree generate_improved_xmas_tree().s..("\n").s..("\n")
+    expected_tree default_tree.s..("\n").s..("\n")
     ___ i, j __ z..(actual_tree, expected_tree
         ... i.r..() __ j.r..()
 
-    actual_tree = generate_improved_xmas_tree(3).s..("\n").s..("\n")
-    expected_tree = smaller_tree.s..("\n").s..("\n")
+    actual_tree generate_improved_xmas_tree(3).s..("\n").s..("\n")
+    expected_tree smaller_tree.s..("\n").s..("\n")
     ___ i, j __ z..(actual_tree, expected_tree
         ... i.r..() __ j.r..()

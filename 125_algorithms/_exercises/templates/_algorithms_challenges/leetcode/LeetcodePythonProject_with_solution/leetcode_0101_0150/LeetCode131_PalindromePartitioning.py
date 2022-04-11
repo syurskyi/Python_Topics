@@ -26,7 +26,7 @@ c_ Solution(o..
     
     ___ isPalindrome  s
         __ n.. s: r.. F..
-        start, end = 0, l..(s)-1
+        start, end 0, l..(s)-1
         w.... start<_end:
             __ s[start] != s[end]:
                 r.. F..
@@ -35,14 +35,14 @@ c_ Solution(o..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             'aab',
             'aabbcc',
             'abcba',
         ]
         ___ s __ testCases:
             print('s: %s' % (s
-            result = partition(s)
+            result partition(s)
             print('result: %s' % (result
             print('-='*20+'-')
 

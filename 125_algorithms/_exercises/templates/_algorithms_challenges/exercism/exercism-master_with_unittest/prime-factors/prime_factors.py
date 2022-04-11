@@ -1,6 +1,6 @@
 ___ prime_factors(num
     factors    # list
-    i = 2
+    i 2
     w.... i <_ num:
         __ num % i __ 0:
             factors.a..(i)

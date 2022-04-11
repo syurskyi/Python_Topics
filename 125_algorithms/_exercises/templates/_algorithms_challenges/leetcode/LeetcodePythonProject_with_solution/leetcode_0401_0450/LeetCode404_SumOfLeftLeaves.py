@@ -7,14 +7,14 @@ Created on Apr 9, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ sumOfLeftLeaves  root
         __ n.. root: r.. 0
-        sumVal = 0
+        sumVal 0
         __ root.left:
             __ n.. root.left.left a.. n.. root.left.right:
                 sumVal += root.left.val

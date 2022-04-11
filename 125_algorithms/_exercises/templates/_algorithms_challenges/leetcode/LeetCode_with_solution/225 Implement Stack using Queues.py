@@ -12,7 +12,7 @@ Depending on your language, queue may not be supported natively. You may simulat
 (double-ended queue), as long as you use only standard operations of a queue.
 You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Stack:
@@ -21,14 +21,14 @@ c_ Stack:
         initialize your data structure here.
         One queue cannot mimic the stack, then you should use two queues.
         """
-        q = [[], []]
+        q [[], []]
 
     ___ push  x
         """
         :type x: int
         :rtype: nothing
         """
-        t = 0
+        t 0
         __ n.. q[t]:
             t ^= 1
 
@@ -38,7 +38,7 @@ c_ Stack:
         """
         :rtype: nothing
         """
-        t = 0
+        t 0
         __ n.. q[t]:
             t ^= 1
 
@@ -51,8 +51,8 @@ c_ Stack:
         """
         :rtype:  int
         """
-        popped = p.. )
-        t = 0
+        popped p.. )
+        t 0
         __ n.. q[t]:
             t ^= 1
 

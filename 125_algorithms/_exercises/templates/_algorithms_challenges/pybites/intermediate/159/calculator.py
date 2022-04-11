@@ -14,12 +14,12 @@ ___ simple_calculator(calculation
       If bad data is passed in, raise a ValueError.
    """
    ___
-      num1, op, num2 = calculation.s..(" ")
-      num1, num2 = i..(num1), i..(num2)
+      num1, op, num2 calculation.s..(" ")
+      num1, num2 i..(num1), i..(num2)
    ______ V..
       r.. V...
 
-   ops = {
+   ops {
       "+": operator.add,
       "-": operator.sub,
       "*": operator.mul,

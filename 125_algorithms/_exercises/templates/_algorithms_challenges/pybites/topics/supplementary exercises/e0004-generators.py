@@ -12,7 +12,7 @@ ___ function_2
 
     w__ o.. "sample_file.txt") __ infile:
         print(t..(infile
-        data = infile.r..
+        data infile.r..
         ___ line __ data:
             print(line.s..
 
@@ -30,6 +30,6 @@ ___ gen
 
 print _*Memory (Before {mem_profile.memory_usage()}')
 
-g = function_3()
+g function_3()
 ___ word __ g:
     print(word)

@@ -2,7 +2,7 @@ _______ p__
 
 ____ srt _______ get_srt_section_ids
 
-text1 = """
+text1 """
 1
 00:00:00,498 --> 00:00:02,827
 Beautiful is better than ugly.
@@ -15,7 +15,7 @@ Explicit is better than implicit.
 00:00:06,383 --> 00:00:09,427
 Simple is better than complex.
 """
-text2 = """
+text2 """
 18
 00:01:12,100 --> 00:01:17,230
 If you want a bit more minimalistic view, you can actually hide the sidebar.
@@ -32,10 +32,10 @@ scroll down to 'Focus Mode'.
 00:01:28,200 --> 00:01:35,180
 You can actually hide the sidebar and have only the description and the code editor.
 """  # noqa E501
-text3 = '\n'.j..(text1.s.. [:9])
-text4 = '\n'.j..(text2.s.. [5:])
+text3 '\n'.j..(text1.s.. [:9])
+text4 '\n'.j..(text2.s.. [5:])
 # testing hours as well
-text5 = """
+text5 """
 32
 00:59:45,000 --> 00:59:48,150
 talking quite normal here

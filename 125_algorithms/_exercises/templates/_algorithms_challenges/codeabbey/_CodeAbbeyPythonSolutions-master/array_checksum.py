@@ -1,18 +1,18 @@
-amount_values = i..(input
+amount_values i..(input
 
 ___ get_checksum(values
-    limit = 10000007
-    result = 0
-    seed = 113
+    limit 10000007
+    result 0
+    seed 113
 
     ___ i __ values:
-        result = (result + i) * seed
+        result (result + i) * seed
         __(result > limit
-            result = result % limit
+            result result % limit
 
     r.. result
 
-values = l.. m..(i.., input().s..()))
+values l.. m..(i.., input().s..()))
 
 __ __name__ __ "__get_checksum__":
     get_checksum(values)

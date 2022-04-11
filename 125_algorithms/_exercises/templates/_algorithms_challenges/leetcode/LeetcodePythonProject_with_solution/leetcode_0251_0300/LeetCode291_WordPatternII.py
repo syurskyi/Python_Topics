@@ -16,11 +16,11 @@ c_ Solution(o..
             r.. T..
         __ i >_ l..(pattern) o. j >_ l..(s
             r.. F..
-        c = pattern[i]
+        c pattern[i]
         ___ k __ r..(j+1, l..(s)+1
-            sub = s[j:k]
+            sub s[j:k]
             __ c n.. __ hashmap a.. sub n.. __ hashset:
-                hashmap[c] = sub
+                hashmap[c] sub
                 hashset.add(sub)
                 __ helper(pattern, s, i+1, k, hashmap, hashset
                     r.. T..
@@ -32,7 +32,7 @@ c_ Solution(o..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             ('abab', 'redblueredblue'),
             ('aaaa', 'asdasdasdasd'),
             ('aabb', 'xyzabcxzyabc'),
@@ -41,7 +41,7 @@ c_ Solution(o..
         ___ pattern, s __ testCases:
             print('pattern: %s' % (pattern
             print('s: %s' % (s
-            result = wordPatternMatch(pattern, s)
+            result wordPatternMatch(pattern, s)
             print('result: %s' % (result
             print('-='*20+'-')
     

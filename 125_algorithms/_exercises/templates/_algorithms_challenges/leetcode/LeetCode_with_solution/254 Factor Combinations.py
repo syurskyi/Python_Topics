@@ -3,7 +3,7 @@ Premium Question
 """
 ____ m__ _______ sqrt
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -34,8 +34,8 @@ c_ Solution:
         __ l..(cur) > 1:
             ret.a..(l..(cur
 
-        n = cur.p.. )
-        start = cur[-1] __ cur ____ 2
+        n cur.p.. )
+        start cur[-1] __ cur ____ 2
         ___ i __ x..(start, i..(sqrt(n+1
             __ n % i __ 0:
                 cur.a..(i)
@@ -47,7 +47,7 @@ c_ Solution:
         __ n > 1 a.. cur a.. l..(cur) >_ 1:
             ret.a..(l..(cur)+[n])
 
-        start = cur[-1] __ cur ____ 2
+        start cur[-1] __ cur ____ 2
         ___ i __ x..(start, i..(sqrt(n+1
             __ n%i __ 0:
                 cur.a..(i)
@@ -59,9 +59,9 @@ c_ Solution:
             ret.a..(l..(cur
 
         __ cur:
-            start = cur[-1]
+            start cur[-1]
         ____
-            start = 2
+            start 2
 
         ___ i __ x..(start, i..(sqrt(n+1))):
             __ n%i __ 0:

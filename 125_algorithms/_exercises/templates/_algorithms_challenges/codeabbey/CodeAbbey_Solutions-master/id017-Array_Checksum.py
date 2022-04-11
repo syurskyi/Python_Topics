@@ -1,6 +1,6 @@
 ___ checkSum(numbers
-    array = raw_input().s.. 
-    result = 0
+    array raw_input().s..
+    result 0
     
     ___ number __ r..(numbers
         result += i..(array[number])

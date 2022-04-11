@@ -8,20 +8,20 @@ c_ Solution:
         :type amount: int
         :rtype: int
         """
-        ans = 0
+        ans 0
 
         __ n.. coins o. n.. amount:
             r.. ans
 
-        queue, _queue = [0], []
-        visited = s..(queue)
+        queue, _queue [0], []
+        visited s..(queue)
 
         w.... queue:
             ans += 1
 
             ___ a __ queue:
                 ___ c __ coins:
-                    _a = a + c
+                    _a a + c
 
                     __ _a __ amount:
                         r.. ans
@@ -32,7 +32,7 @@ c_ Solution:
                     visited.add(_a)
                     _queue.a..(_a)
 
-            queue, _queue = _queue, []
+            queue, _queue _queue, []
 
         r.. -1
 
@@ -50,13 +50,13 @@ c_ Solution:
         __ n.. coins o. n.. amount:
             r.. 0
 
-        INF = f__('inf')
-        dp = [INF] * (amount + 1)
-        dp[0] = 0
+        INF f__('inf')
+        dp [INF] * (amount + 1)
+        dp[0] 0
 
         ___ c __ coins:
             ___ a __ r..(c, amount + 1
                 # if a < c: continue
-                dp[a] = m..(dp[a], dp[a - c] + 1)
+                dp[a] m..(dp[a], dp[a - c] + 1)
 
         r.. dp[amount] __ dp[amount] < INF ____ -1

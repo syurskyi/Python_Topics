@@ -14,20 +14,20 @@ c_ Solution:
         Note that the head is guaranteed to be not null, so it contains at least one node.
         :type head: ListNode
         """
-        head = head
+        head head
 
     ___ getRandom
         """
         Returns a random node's value.
         :rtype: int
         """
-        res = node = head
-        i = 0
+        res node head
+        i 0
 
         w.... node:
             __ r..(0, i) __ i:
-                res = node
-            node = node.next
+                res node
+            node node.next
             i += 1
 
         r.. res.val

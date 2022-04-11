@@ -11,7 +11,7 @@ c_ Solution(o..
     d.s..(key=l.... x: (-l..(x), x
 
     ___ isSubseq(word, s
-      i = 0
+      i 0
       ___ c __ s:
         __ c __ word[i]:
           i += 1

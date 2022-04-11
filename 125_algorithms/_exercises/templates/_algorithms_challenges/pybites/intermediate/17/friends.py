@@ -1,14 +1,14 @@
-____ i.. _______ combinations, permutations
-
-
-___ friends_teams(friends, team_size=2, order_does_matter=F..
-
-    __ order_does_matter:
-        teams = [team ___ team __ permutations(friends, team_size)]
-    ____
-        teams = [team ___ team __ c..friends, team_size)]
-    r.. teams
-
-
-# if __name__ == "__main__":
-#    friends_teams(friends, 2, True)
+# ____ i.. _______ c.. p..
+#
+#
+# ___ friends_teams friends team_size_2 order_does_matter_F..
+#
+#     __ order_does_matter
+#         teams  team ___ ? __ p.. f.. t..
+#     ____
+#         teams  team ___ ? __ c..f.. t..
+#     r.. ?
+#
+#
+# # if __name__ == "__main__":
+# #    friends_teams(friends, 2, True)

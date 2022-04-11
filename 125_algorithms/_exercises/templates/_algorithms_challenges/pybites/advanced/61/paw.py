@@ -4,9 +4,9 @@ ____ s__ _______ a..
 
 ACTIONS =  'draw_card', 'play_again',
            'interchange_cards', 'change_turn_direction'
-NUMBERS = r..(1, 5)
+NUMBERS r..(1, 5)
 
-PawCard = n..('PawCard', 'card action')
+PawCard n..('PawCard', 'card action')
 
 ___ create_paw_deck(n=8
 
@@ -17,16 +17,16 @@ ___ create_paw_deck(n=8
     pawcards    # list
     ___ i __ r..(n
 
-        r = r__.r..(1,4)
+        r r__.r..(1,4)
         ___ j __ r..(1,5
-            letter = chr(o..('A') + i)
-            action = N..
-            card = f"{letter}{j}"
+            letter chr(o..('A') + i)
+            action N..
+            card f"{letter}{j}"
             __ r __ j:
-                action = r__.c..(ACTIONS)
+                action r__.c..(ACTIONS)
 
 
-            pawcard = PawCard(card,action)
+            pawcard PawCard(card,action)
             pawcards.a..(pawcard)
     
     r.. pawcards

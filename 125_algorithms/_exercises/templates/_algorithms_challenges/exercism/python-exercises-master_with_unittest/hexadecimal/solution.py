@@ -1,14 +1,14 @@
 ____ f.. _______ r..
 
 
-valid_hexchars = s..('0123456789abcdef')
+valid_hexchars s..('0123456789abcdef')
 
 
 ___ hexa(hexstring
-    s = hexstring.l..
+    s hexstring.l..
     __ n.. s o. s..(s) - valid_hexchars:
         r.. V...('Invalid hexadecimal string')
-    hexchars_as_ints = [
+    hexchars_as_ints [
         o..(c) - o..('a') + 10 __ c __ 'abcdef' ____ o..(c) - o..('0')
         ___ c __ s
         ]

@@ -13,7 +13,7 @@ c_ Solution(o..
     """
     res, stack    # list, [(1, root)]
     w.... stack:
-      p = stack.p.. )
+      p stack.p.. )
       __ n.. p[1]:
         _____
       __ p[0] __ 0:

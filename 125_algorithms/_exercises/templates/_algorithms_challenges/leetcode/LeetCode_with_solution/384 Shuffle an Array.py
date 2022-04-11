@@ -18,7 +18,7 @@ solution.shuffle();
 """
 _______ r__
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -27,7 +27,7 @@ c_ Solution(o..
         :type nums: List[int]
         :type size: int
         """
-        original = nums
+        original nums
 
     ___ reset
         """
@@ -43,11 +43,11 @@ c_ Solution(o..
         in-place shuffling and avoid dynamic resizing the list
         :rtype: List[int]
         """
-        lst = reset()
-        n = l..(lst)
+        lst reset()
+        n l..(lst)
         ___ i __ x..(n
-            j = r__.randrange(i, n)
-            lst[i], lst[j] = lst[j], lst[i]
+            j r__.randrange(i, n)
+            lst[i], lst[j] lst[j], lst[i]
 
         r.. lst
 

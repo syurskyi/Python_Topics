@@ -37,14 +37,14 @@ Note:
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ -
-        ret = 0
+        ret 0
 
     ___ distributeCoins  root: TreeNode) __ i..:
         """
@@ -57,10 +57,10 @@ c_ Solution:
         __ n.. node:
             r.. 0
 
-        demand_l = demand(node.left)
-        demand_r = demand(node.right)
-        demand_m = 1 - node.val
+        demand_l demand(node.left)
+        demand_r demand(node.right)
+        demand_m 1 - node.val
         # attribut the move to the node required
-        demand = demand_l + demand_r + demand_m
+        demand demand_l + demand_r + demand_m
         ret += a..(demand)
         r.. demand

@@ -20,32 +20,32 @@ c_ Solution:
         __ n.. board o. n.. board[0]:
             r..
 
-        m, n = l..(board), l..(board[0])
+        m, n l..(board), l..(board[0])
 
         ___ x __ r..(m
             ___ y __ r..(n
-                lives = get_live_neibs(board, x, y)
+                lives get_live_neibs(board, x, y)
 
                 __ board[x][y] __ 1 a.. lives __ (2, 3
-                    board[x][y] = 3
+                    board[x][y] 3
                 ____ board[x][y] __ 0 a.. lives __ 3:
-                    board[x][y] = 2
+                    board[x][y] 2
 
         ___ x __ r..(m
             ___ y __ r..(n
                 board[x][y] >>= 1
 
     ___ get_live_neibs  board, x, y
-        cnt = 0
-        m, n = l..(board), l..(board[0])
+        cnt 0
+        m, n l..(board), l..(board[0])
 
         ___ dx __ (-1, 0, 1
             ___ dy __ (-1, 0, 1
                 __ dx __ 0 a.. dy __ 0:
                     _____
 
-                _x = x + dx
-                _y = y + dy
+                _x x + dx
+                _y y + dy
 
                 __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                     _____
@@ -67,22 +67,22 @@ c_ Solution:
         __ n.. board o. n.. board[0]:
             r..
 
-        m, n = l..(board), l..(board[0])
-        ans = [[0] * n ___ _ __ r..(m)]
+        m, n l..(board), l..(board[0])
+        ans [[0] * n ___ _ __ r..(m)]
 
         ___ x __ r..(m
             ___ y __ r..(n
-                lives = get_live_neibs(board, x, y)
-                ans[x][y] = board[x][y]
+                lives get_live_neibs(board, x, y)
+                ans[x][y] board[x][y]
 
                 __ board[x][y] __ 1 a.. lives < 2:
-                    ans[x][y] = 0
+                    ans[x][y] 0
                 ____ board[x][y] __ 1 a.. lives __ (2, 3
-                    ans[x][y] = 1
+                    ans[x][y] 1
                 ____ board[x][y] __ 1 a.. lives > 3:
-                    ans[x][y] = 0
+                    ans[x][y] 0
                 ____ board[x][y] __ 0 a.. lives __ 3:
-                    ans[x][y] = 1
+                    ans[x][y] 1
 
         # return ans
 
@@ -91,16 +91,16 @@ c_ Solution:
             board[x] |  = ans[x] |
 
     ___ get_live_neibs  board, x, y
-        cnt = 0
-        m, n = l..(board), l..(board[0])
+        cnt 0
+        m, n l..(board), l..(board[0])
 
         ___ dx __ (-1, 0, 1
             ___ dy __ (-1, 0, 1
                 __ dx __ 0 a.. dy __ 0:
                     _____
 
-                _x = x + dx
-                _y = y + dy
+                _x x + dx
+                _y y + dy
 
                 __ n.. (
                     0 <_ _x < m a..

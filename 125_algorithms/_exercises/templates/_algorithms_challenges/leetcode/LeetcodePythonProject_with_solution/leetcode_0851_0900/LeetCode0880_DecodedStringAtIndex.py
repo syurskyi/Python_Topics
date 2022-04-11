@@ -10,14 +10,14 @@ c_ Solution(o..
         :type K: int
         :rtype: str
         """
-        n = 0
+        n 0
         ___ i, c __ e..(S
             __ c.i..
-                n = n*i..(c)
+                n n*i..(c)
             ____
                 n += 1
         ___ j __ r..(i, -1, -1
-            c = S[j]
+            c S[j]
             __ c.i..
                 n //= i..(c)
                 K %= n

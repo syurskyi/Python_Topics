@@ -23,9 +23,9 @@ ____ t___ _______ L..
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -44,17 +44,17 @@ c_ Solution:
         Stack maintain a node that is missing right child
         decreasing stack
         """
-        root = TreeNode(preorder[0])
-        stk = [root]
+        root TreeNode(preorder[0])
+        stk [root]
         ___ a __ preorder[1:]:
-            node = TreeNode(a)
+            node TreeNode(a)
             __ a < stk[-1].val:  # len(stk) always >= 1
-                stk[-1].left = node
+                stk[-1].left node
             ____
                 w.... l..(stk) >_ 2 a.. stk[-2].val < a:
                     stk.p.. )
 
-                stk[-1].right = node
+                stk[-1].right node
                 stk.p.. )
 
             stk.a..(node)
@@ -66,16 +66,16 @@ c_ Solution:
         If a node is a right child (larger), find the proper parent
         The proper parent should the deepest in the stack that its val < current val
         """
-        root = TreeNode(preorder[0])
-        stk = [root]
+        root TreeNode(preorder[0])
+        stk [root]
         ___ a __ preorder[1:]:
-            node = TreeNode(a)
+            node TreeNode(a)
             __ a < stk[-1].val:
-                stk[-1].left = node
+                stk[-1].left node
             ____
                 w.... stk a.. stk[-1].val < a:
-                    pi = stk.p.. )
-                pi.right = node
+                    pi stk.p.. )
+                pi.right node
             stk.a..(node)
             
         r.. root

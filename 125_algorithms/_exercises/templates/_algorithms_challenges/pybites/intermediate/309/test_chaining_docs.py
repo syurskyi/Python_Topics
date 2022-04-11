@@ -3,9 +3,9 @@ _______ p__
 ____ chaining_docs _______ Document
 
 
-EOL_PUNCTUATION = ".!?"
+EOL_PUNCTUATION ".!?"
 
-DOCS = {
+DOCS {
     "four-liner": (
         Document()
         .add_line("first")

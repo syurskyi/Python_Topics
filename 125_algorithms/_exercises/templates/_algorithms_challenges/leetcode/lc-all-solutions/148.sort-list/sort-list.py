@@ -11,33 +11,33 @@ c_ Solution(o..
     :rtype: ListNode
     """
     __ head:
-      fast = slow = head
-      pre = N..
+      fast slow head
+      pre N..
 
       w.... fast a.. fast.next:
-        pre = slow
-        slow = slow.next
-        fast = fast.next.next
+        pre slow
+        slow slow.next
+        fast fast.next.next
 
       __ n.. pre:
         r.. head
-      pre.next = N..
+      pre.next N..
 
-      left = sortList(head)
-      right = sortList(slow)
+      left sortList(head)
+      right sortList(slow)
 
-      p = dummy = ListNode(-1)
+      p dummy ListNode(-1)
       w.... left a.. right:
         __ left.val < right.val:
-          p.next = left
-          left = left.next
+          p.next left
+          left left.next
         ____
-          p.next = right
-          right = right.next
-        p = p.next
+          p.next right
+          right right.next
+        p p.next
 
       __ left:
-        p.next = left
+        p.next left
       __ right:
-        p.next = right
+        p.next right
       r.. dummy.next

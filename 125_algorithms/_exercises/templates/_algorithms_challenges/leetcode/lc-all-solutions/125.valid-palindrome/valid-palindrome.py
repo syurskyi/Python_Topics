@@ -4,7 +4,7 @@ c_ Solution(o..
     :type s: str
     :rtype: bool
     """
-    start, end = 0, l..(s) - 1
+    start, end 0, l..(s) - 1
     w.... start < end:
       __ n.. s[start].i..
         start += 1

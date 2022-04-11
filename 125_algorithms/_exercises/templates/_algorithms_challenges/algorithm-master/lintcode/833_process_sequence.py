@@ -17,7 +17,7 @@ c_ Solution:
 
         t__.s..()
 
-        cnt = 0
+        cnt 0
         time2cnt    # dict
 
         ___ t, status __ t__:
@@ -26,6 +26,6 @@ c_ Solution:
             ____ status __ 1:
                 cnt += 1
 
-            time2cnt[t] = cnt
+            time2cnt[t] cnt
 
         r.. [time2cnt[t] ___ t __ queries]

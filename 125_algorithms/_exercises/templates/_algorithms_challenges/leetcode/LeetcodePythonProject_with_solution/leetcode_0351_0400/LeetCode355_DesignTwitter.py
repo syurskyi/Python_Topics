@@ -5,10 +5,10 @@ Created on Feb 28, 2018
 '''
 c_ TweetObj(o..
     ___ - , tweet_id, user_id, tweetId, prevTweet_ N..
-        user_id = user_id
-        tweetContext = tweetId
-        prevTweet = prevTweet
-        tweet_id = tweet_id
+        user_id user_id
+        tweetContext tweetId
+        prevTweet prevTweet
+        tweet_id tweet_id
 
 c_ Twitter(o..
 
@@ -18,7 +18,7 @@ c_ Twitter(o..
         """
         following    # dict
         latestTweets    # dict
-        tweet_id = 0
+        tweet_id 0
 
     ___ postTweet  userId, tweetId
         """
@@ -28,15 +28,15 @@ c_ Twitter(o..
         :rtype: void
         """
         __ userId n.. __ following:
-            following[userId] = s..([userId])
+            following[userId] s..([userId])
         tweet_id += 1
         __ userId __ latestTweets:
-            prevTweet = latestTweets[userId]
-            tweet = TweetObj(tweet_id, userId, tweetId, prevTweet)
-            latestTweets[userId] = tweet
+            prevTweet latestTweets[userId]
+            tweet TweetObj(tweet_id, userId, tweetId, prevTweet)
+            latestTweets[userId] tweet
         ____
-            tweet = TweetObj(tweet_id, userId, tweetId, N..)
-            latestTweets[userId] = tweet
+            tweet TweetObj(tweet_id, userId, tweetId, N..)
+            latestTweets[userId] tweet
 
     ___ getNewsFeed  userId
         """
@@ -50,22 +50,22 @@ c_ Twitter(o..
         heap    # list
         __ userId n.. __ following:
             r.. []
-        followingUsers = following[userId]
+        followingUsers following[userId]
         followingUsers.add(userId)
         ___ following_id __ followingUsers:
             __ following_id __ latestTweets:
-                latestTweet = latestTweets[following_id]
-                tweetTuple = (-latestTweet.tweet_id, latestTweet.tweetContext, latestTweet.prevTweet)
+                latestTweet latestTweets[following_id]
+                tweetTuple (-latestTweet.tweet_id, latestTweet.tweetContext, latestTweet.prevTweet)
                 heapq.heappush(heap, tweetTuple)
         result    # list
         ___ _ __ r..(10
             __ n.. heap:
                 _____
-            tweetTuple = heapq.heappop(heap)
+            tweetTuple heapq.heappop(heap)
             result.a..(tweetTuple[1])
             __ tweetTuple[2]:
-                newTweet = tweetTuple[2]
-                newTweetTuple = (-newTweet.tweet_id, newTweet.tweetContext, newTweet.prevTweet)
+                newTweet tweetTuple[2]
+                newTweetTuple (-newTweet.tweet_id, newTweet.tweetContext, newTweet.prevTweet)
                 heapq.heappush(heap, newTweetTuple)
         r.. result
 
@@ -79,7 +79,7 @@ c_ Twitter(o..
         __ followerId __ following:
             following[followerId].add(followeeId)
         ____
-            following[followerId] = s..([followeeId])
+            following[followerId] s..([followeeId])
 
     ___ unfollow  followerId, followeeId
         """

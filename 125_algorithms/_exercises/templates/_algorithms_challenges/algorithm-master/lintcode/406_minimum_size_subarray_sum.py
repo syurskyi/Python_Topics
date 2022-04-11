@@ -7,9 +7,9 @@ c_ Solution:
     ___ minimumSize  nums, s
         __ n.. nums o. l..(nums) __ 0:
             r.. -1
-        n = l..(nums)
-        min_len = n + 1
-        l = r = t = 0
+        n l..(nums)
+        min_len n + 1
+        l r t 0
         w.... r < n:
             # Keep adding the next int into total until total >= s
             w.... r < n a.. t < s:
@@ -26,5 +26,5 @@ c_ Solution:
                 l += 1
 
             # Save the min_size
-            min_len = m..(min_len, r - l + 1)
+            min_len m..(min_len, r - l + 1)
         r.. -1 __ min_len > n ____ min_len

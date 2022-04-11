@@ -18,12 +18,12 @@ Return 0 if there is no such transformation sequence.
 All words have the same length.
 All words contain only lowercase alphabetic characters.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
     ___ is_neighbor  p, q
-        diff = 0
+        diff 0
         ___ a, b __ z..(p, q
             __ a != b:
                 diff += 1
@@ -35,9 +35,9 @@ c_ Solution:
         """
         bfs
         """
-        q = [start]
-        visited = {start}
-        lvl = 1
+        q [start]
+        visited {start}
+        lvl 1
         w.... q:
             cur_q    # list
             ___ a __ q:
@@ -49,7 +49,7 @@ c_ Solution:
                         cur_q.a..(b)
 
             lvl += 1
-            q = cur_q
+            q cur_q
 
         r.. 0
 
@@ -61,8 +61,8 @@ c_ Solution:
         :param dict: a set
         :return: integer
         """
-        lst = [start]+l..(d..)
-        dp = [[-1 ___ _ __ lst] ___ _ __ lst]
+        lst [start]+l..(d..)
+        dp [[-1 ___ _ __ lst] ___ _ __ lst]
 
         ___ diff_count(s1, s2
             """
@@ -71,9 +71,9 @@ c_ Solution:
             :param s2:
             :return:
             """
-            count = 0
-            str1 = lst[s1]
-            str2 = lst[s2]
+            count 0
+            str1 lst[s1]
+            str2 lst[s2]
             ___ i __ x..(l..(str1:
                 __ count>1:
                     r.. -1
@@ -83,25 +83,25 @@ c_ Solution:
 
         ___ i __ x..(l..(lst:
             ___ j __ x..(i, l..(lst:
-                dp[i][j] = diff_count(i, j)
-                dp[j][i] = dp[i][j]
+                dp[i][j] diff_count(i, j)
+                dp[j][i] dp[i][j]
 
-        visited = [F.. ___ _ __ lst]  # avoid loop
-        path_len = 0
+        visited [F.. ___ _ __ lst]  # avoid loop
+        path_len 0
 
-        queue = [0]
-        visited[0] = T..
+        queue [0]
+        visited[0] T..
         w.... queue:
             path_len += 1
-            length = l..(queue)
+            length l..(queue)
             ___ i __ x..(length  #O(V)
                 __ lst[queue[i]]__end:  # reached
                     r.. path_len
                 ___ ind __ x..(1, l..(lst:  # O(k), add next level
                     __ n.. visited[ind] a.. dp[ind][queue[i]]__1:
                         queue.a..(ind)
-                        visited[ind] = T..
-            queue = queue[length:]
+                        visited[ind] T..
+            queue queue[length:]
         r.. path_len
 
     ___ ladderLength_TLE2  start, end, d..
@@ -119,7 +119,7 @@ c_ Solution:
             :param s2:
             :return: 0 1 or -1
             """
-            count = 0
+            count 0
             ___ i __ x..(l..(str1:
                 __ count>1:
                     r.. -1
@@ -127,12 +127,12 @@ c_ Solution:
                     count += 1
             r.. count
 
-        path_len = 0
+        path_len 0
 
-        queue = [start]
+        queue [start]
         w.... queue:
             path_len += 1
-            length = l..(queue)
+            length l..(queue)
             ___ i __ x..(length  #O(V)
                 __ queue[i]__end:  # reached
                     r.. path_len
@@ -142,9 +142,9 @@ c_ Solution:
                    __ diff_count(item, queue[i])__1:
                         queue.a..(item)
                         remain_set.remove(item)
-                d.. = remain_set
+                d.. remain_set
 
-            queue = queue[length:]
+            queue queue[length:]
         r.. path_len
 
 
@@ -162,30 +162,30 @@ c_ Solution:
         :param dict: a set
         :return: integer, if impossible, return 0
         """
-        path_len = 0
-        lower_cases = [chr(i+o..('a' ___ i __ x..(26)]
+        path_len 0
+        lower_cases [chr(i+o..('a' ___ i __ x..(26)]
 
-        queue = [start]
+        queue [start]
         d...remove(start)
         w... T...
             path_len += 1
-            length_0 = l..(queue)
+            length_0 l..(queue)
             ___ i __ x..(length_0  #O(V)
-                current = queue[i]
+                current queue[i]
                 __ current__end:  # reached
                     r.. path_len
 
-                current = queue[i]
+                current queue[i]
                 ___ pos __ x..(l..(current:
-                    lst = l..(current)
+                    lst l..(current)
                     ___ char __ lower_cases:
-                        lst[pos] = char
-                        temp = "".j..(lst)
+                        lst[pos] char
+                        temp "".j..(lst)
                         __ temp __ d..:
                             queue.a..(temp)
                             d...remove(temp)
 
-            queue = queue[length_0:]
+            queue queue[length_0:]
             __ n.. queue:
                 r.. 0
         r.. path_len

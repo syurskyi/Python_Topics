@@ -13,28 +13,28 @@ c_ Solution(o..
         :type num2: str
         :rtype: str
         """
-        a = num1[::-1]
-        b = num2[::-1]
-        n = l..(a)
-        m = l..(b)
+        a num1[::-1]
+        b num2[::-1]
+        n l..(a)
+        m l..(b)
         res =  '0' ___ i __ r..(n + m)]
         ___ i __ r..(n
-            c = 0
+            c 0
             ___ j __ r..(m
                 tmp  i..(a[i]) * i..(b[j]) + i..(res[i + j]) + c
-                digit = tmp % 10
-                res[i + j] = s..(digit)
-                c = tmp / 10
+                digit tmp % 10
+                res[i + j] s..(digit)
+                c tmp / 10
             __ c > 0:
-                res[m + i] = s..(c)
-        res = ''.j..(res[::-1])
+                res[m + i] s..(c)
+        res ''.j..(res[::-1])
         ___ i, d __ e..(res
             __ d != '0':
                 r.. res[i:]
         ____
             r.. '0'
 
-s = Solution()
+s Solution()
 
 print s.multiply('2', '21')
 print s.multiply('83', '3')

@@ -17,15 +17,15 @@ c_ Solution(o..
         :rtype: int
         """
         nums.s..()
-        n = l..(nums)
-        res = nums[0] + nums[1] + nums[2]
+        n l..(nums)
+        res nums[0] + nums[1] + nums[2]
         ___ i __ r..(n - 2
-            l = i + 1
-            r = n - 1
+            l i + 1
+            r n - 1
             w.... l < r:
-                s = nums[i] + nums[l] + nums[r]
+                s nums[i] + nums[l] + nums[r]
                 __ a..(s - target) < a..(res - target
-                    res = s
+                    res s
                 __ s __ target:
                     r.. s
                 ____ s < target:

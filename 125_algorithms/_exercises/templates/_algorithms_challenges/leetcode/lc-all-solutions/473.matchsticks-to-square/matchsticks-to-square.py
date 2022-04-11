@@ -9,22 +9,22 @@ c_ Solution(o..
     """
     __ n.. nums:
       r.. F..
-    sumLen = s..(nums)
+    sumLen s..(nums)
     __ sumLen % 4 != 0:
       r.. F..
-    sideLen = sideLen = sumLen / 4
+    sideLen sideLen sumLen / 4
     ___ side __ nums:
       __ side > sideLen:
         r.. F..
-    halfLen = 2 * sideLen
-    sticksIdx = s..([i ___ i __ r..(0, l..(nums])
+    halfLen 2 * sideLen
+    sticksIdx s..([i ___ i __ r..(0, l..(nums])
     nums.s..()
 
     ___ backpack(nums, subset
-      cands = [nums[k] ___ k __ subset]
-      dp = [[F..] * (sideLen + 1) ___ _ __ r..(l..(cands]
+      cands [nums[k] ___ k __ subset]
+      dp [[F..] * (sideLen + 1) ___ _ __ r..(l..(cands]
       ___ i __ r..(0, l..(cands:
-        dp[i][0] = T..
+        dp[i][0] T..
       ___ i __ r..(0, l..(cands:
         ___ j __ r..(1, sideLen + 1
           dp[i][j] |= dp[i - 1][j]

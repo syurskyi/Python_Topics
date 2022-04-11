@@ -1,4 +1,4 @@
-RESERVED_WORDS = vars(o..).k..
+RESERVED_WORDS vars(o..).k..
 
 
 c_ JsObject:
@@ -14,7 +14,7 @@ c_ JsObject:
     """
 
     ___ - , **kwargs
-        _local = d..()
+        _local d..()
         ___ k, v __ kwargs.i..:
             __setitem__(k, v)
 
@@ -25,15 +25,15 @@ c_ JsObject:
     ___ __setattr__  key, value
         super().__setattr__(key, value)
         __ key n.. __ RESERVED_WORDS a.. key != '_local':
-            _local[key] = value
+            _local[key] value
 
     ___ __getitem__  item
         r.. _local.g.. item)
 
     ___ __setitem__  key, value
         __ key n.. __ RESERVED_WORDS:
-            _local[key] = value
-            __dict__[key] = value
+            _local[key] value
+            __dict__[key] value
         ____
             r.. AttributeError("Reserved words not allowed")
 

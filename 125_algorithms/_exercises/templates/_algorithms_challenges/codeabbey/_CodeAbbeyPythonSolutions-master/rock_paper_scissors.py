@@ -1,9 +1,9 @@
-amount_values = i..(input
+amount_values i..(input
 results    # list
 
 ___ get_round_winner(player1, player2
-    player1_move = o..(player1)
-    player2_move = o..(player2)
+    player1_move o..(player1)
+    player2_move o..(player2)
     __(player1_move < player2_move
         __(player1_move - player2_move < -2
             r.. 2
@@ -17,10 +17,10 @@ ___ get_round_winner(player1, player2
 
 
 ___ get_match_winner(moves
-    player_1_result = 0
-    player_2_result = 0
+    player_1_result 0
+    player_2_result 0
     ___ i __ moves:
-        round_winner = get_round_winner(i[0], i[1])
+        round_winner get_round_winner(i[0], i[1])
         __(round_winner __ 1
             player_1_result += 1
         ____(round_winner __ 2
@@ -34,7 +34,7 @@ ___ get_match_winner(moves
         r.. 0
     
 ___ i __ r..(amount_values
-    moves = l.. m..(s.., input().s..()))
+    moves l.. m..(s.., input().s..()))
     results.a..(get_match_winner(moves
 
 print(*results)

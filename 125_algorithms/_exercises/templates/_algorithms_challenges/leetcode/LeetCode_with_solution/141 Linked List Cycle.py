@@ -4,12 +4,12 @@ Given a linked list, determine if it has a cycle in it.
 Follow up:
 Can you solve it without using extra space?
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 c_ Solution:
     ___ hasCycle  head
@@ -38,11 +38,11 @@ c_ Solution:
         :param head: ListNode
         :return: boolean
         """
-        hare = head
-        tortoise = head
+        hare head
+        tortoise head
         w.... hare a.. hare.next a.. tortoise:
-            hare = hare.next.next
-            tortoise = tortoise.next
+            hare hare.next.next
+            tortoise tortoise.next
             __ hare__tortoise:
                 r.. T..
 

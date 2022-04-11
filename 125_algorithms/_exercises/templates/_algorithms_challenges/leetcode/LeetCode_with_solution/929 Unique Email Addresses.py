@@ -47,10 +47,10 @@ c_ Solution:
         """
         stemming
         """
-        s = s..()
+        s s..()
         ___ e __ emails:
-            local, domain = e.s..("@")
-            local = stem(local)
+            local, domain e.s..("@")
+            local stem(local)
             s.add((local, domain
 
         r.. l..(s)

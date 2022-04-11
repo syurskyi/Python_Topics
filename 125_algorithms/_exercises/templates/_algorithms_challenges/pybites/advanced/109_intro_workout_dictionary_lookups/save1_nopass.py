@@ -1,12 +1,12 @@
-WORKOUT_SCHEDULE = {'Friday': 'Shoulders',
+WORKOUT_SCHEDULE {'Friday': 'Shoulders',
                     'Monday': 'Chest+biceps',
                     'Saturday': 'Rest',
                     'Sunday': 'Rest',
                     'Thursday': 'Legs',
                     'Tuesday': 'Back+triceps',
                     'Wednesday': 'Core'}
-REST, CHILL_OUT, TRAIN = 'Rest', 'Chill out!', 'Go train {}'
-INVALID_DAY = 'Not a valid day'
+REST, CHILL_OUT, TRAIN 'Rest', 'Chill out!', 'Go train {}'
+INVALID_DAY 'Not a valid day'
 
 
 ___ get_workout_motd(day
@@ -29,8 +29,8 @@ ___ get_workout_motd(day
        Trivia: /etc/motd is a file on Unix-like systems that contains
        a 'message of the day'
     """
-    day = WORKOUT_SCHEDULE.k..
-    day = day.t..
+    day WORKOUT_SCHEDULE.k..
+    day day.t..
     __ day n.. __ WORKOUT_SCHEDULE:
         r.. INVALID_DAY
     ____

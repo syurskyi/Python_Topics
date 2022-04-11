@@ -10,25 +10,25 @@ c_ Solution:
             r.. ans
 
         # need keep its order to go right, bottom, left, top
-        delta = (
+        delta (
             (0, 1), (1, 0),
             (0, -1), (-1, 0),
         )
-        m, n = l..(matrix), l..(matrix[0])
-        x = y = turn = 0
+        m, n l..(matrix), l..(matrix[0])
+        x y turn 0
 
         ___ _ __ r..(m * n
             ans.a..(matrix[x][y])
-            matrix[x][y] = N..
-            _x = x + delta[turn][0]
-            _y = y + delta[turn][1]
+            matrix[x][y] N..
+            _x x + delta[turn][0]
+            _y y + delta[turn][1]
 
             __ n.. (0 <_ _x < m a.. 0 <_ _y < n) o. matrix[_x][_y] __ N..
-                turn = (turn + 1) % l..(delta)
-                _x = x + delta[turn][0]
-                _y = y + delta[turn][1]
+                turn (turn + 1) % l..(delta)
+                _x x + delta[turn][0]
+                _y y + delta[turn][1]
 
-            x = _x
-            y = _y
+            x _x
+            y _y
 
         r.. ans

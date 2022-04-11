@@ -6,8 +6,8 @@ be made by splicing together the nodes of the first two lists.
 # Definition for singly-linked list.
 c_ ListNode(o..
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 c_ Solution(o..
     ___ mergeTwoLists  l1, l2
@@ -18,19 +18,19 @@ c_ Solution(o..
 
         Dummy node
         """
-        dummy = ListNode(0)
-        dummy_end = dummy
+        dummy ListNode(0)
+        dummy_end dummy
 
         w.... l1 __ n.. N.. a.. l2 __ n.. N..
             __ l1.val < l2.val:
-                dummy_end.next = l1
-                l1 = l1.next
+                dummy_end.next l1
+                l1 l1.next
             ____
-                dummy_end.next = l2
-                l2 = l2.next
-            dummy_end = dummy_end.next
+                dummy_end.next l2
+                l2 l2.next
+            dummy_end dummy_end.next
         __ l1 __ n.. N..
-            dummy_end.next = l1
+            dummy_end.next l1
         ____
-            dummy_end.next = l2
+            dummy_end.next l2
         r.. dummy.next

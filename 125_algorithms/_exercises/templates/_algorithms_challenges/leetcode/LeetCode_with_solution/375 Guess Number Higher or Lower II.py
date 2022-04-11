@@ -21,7 +21,7 @@ Game over. 8 is the number I picked.
 You end up paying $5 + $7 + $9 = $21.
 Given a particular n >= 1, find out how much money you need to have to guarantee a win.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -43,11 +43,11 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        N = n + 1  # guessing [1, N), where N = n + 1
-        F = [[0 ___ _ __ x..(N+1)] ___ _ __ x..(N+1)]
+        N n + 1  # guessing [1, N), where N = n + 1
+        F [[0 ___ _ __ x..(N+1)] ___ _ __ x..(N+1)]
         ___ i __ x..(n, 0, -1
             ___ j __ x..(i+2, N+1
-                F[i][j] = m..(
+                F[i][j] m..(
                     k + m..(F[i][k], F[k+1][j])
                     ___ k __ x..(i, j)
                 )
@@ -69,11 +69,11 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        C = [0 ___ _ __ x..(n+1)]
-        F = [0 ___ _ __ x..(n+1)]
+        C [0 ___ _ __ x..(n+1)]
+        F [0 ___ _ __ x..(n+1)]
         ___ i __ x..(2, n+1
-            C[i] = m..(1 + m..(C[k-1], C[i-k]) ___ k __ x..(1, i+1
-            F[i] = m..(k + m..(F[k-1], k*C[i-k] + F[i-k]) ___ k __ x..(1, i+1
+            C[i] m..(1 + m..(C[k-1], C[i-k]) ___ k __ x..(1, i+1
+            F[i] m..(k + m..(F[k-1], k*C[i-k] + F[i-k]) ___ k __ x..(1, i+1
 
         r.. F[n]
 

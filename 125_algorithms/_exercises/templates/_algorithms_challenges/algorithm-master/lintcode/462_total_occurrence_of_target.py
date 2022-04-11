@@ -19,29 +19,29 @@ c_ Solution:
         __ n.. A:
             r.. 0
 
-        n = l..(A)
+        n l..(A)
 
-        left, mid, right = 0, 0, n - 1
+        left, mid, right 0, 0, n - 1
         w.... left + 1 < right:
-            mid = left + (right - left) // 2
+            mid left + (right - left) // 2
             __ A[mid] < target:
-                left = mid
+                left mid
             ____
-                right = mid
+                right mid
 
-        start = left __ A[left] __ target ____ right
+        start left __ A[left] __ target ____ right
 
         __ A[start] != target:
             r.. 0
 
-        left, mid, right = 0, 0, n - 1
+        left, mid, right 0, 0, n - 1
         w.... left + 1 < right:
-            mid = left + (right - left) // 2
+            mid left + (right - left) // 2
             __ A[mid] <_ target:
-                left = mid
+                left mid
             ____
-                right = mid
+                right mid
 
-        end = right __ A[right] __ target ____ left
+        end right __ A[right] __ target ____ left
 
         r.. end - start + 1

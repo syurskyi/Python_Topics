@@ -5,7 +5,7 @@ ___ pascal(N: i..) __ L..[i..]:
     """
     Return the Nth row of Pascal triangle
     """
-    in_list = [1]
+    in_list [1]
     out_list    # list
     __ N __ 0:
         r.. out_list
@@ -21,7 +21,7 @@ ___ pascal(N: i..) __ L..[i..]:
                 ____
                     out_list.a..(v + in_list[i-1])
             out_list.a..(in_list[-1])
-            in_list = out_list
+            in_list out_list
     r.. out_list
 
 

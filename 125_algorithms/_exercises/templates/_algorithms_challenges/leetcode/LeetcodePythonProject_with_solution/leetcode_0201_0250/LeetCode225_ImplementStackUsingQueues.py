@@ -38,7 +38,7 @@ c_ Solution(o..
         r.. n.. queue1 a.. n.. queue2
 
 __ _____ __ _____
-    stack = Solution()
+    stack Solution()
     stack.push(123)
     stack.push('a')
     print(stack.top

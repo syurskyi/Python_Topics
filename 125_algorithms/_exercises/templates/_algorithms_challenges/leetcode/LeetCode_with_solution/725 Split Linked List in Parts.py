@@ -41,8 +41,8 @@ k will be an integer in the range [1, 50].
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 _______ m__
@@ -59,31 +59,31 @@ c_ Solution:
         [[1,2,3],[4,5,6],[7]]  # output
         [[1,2,3],[4,5],[6,7]]  # expected
         """
-        l = 0
-        node = root
+        l 0
+        node root
         w.... node:
             l += 1
-            node = node.next
+            node node.next
 
 
-        ret = [[] ___ _ __ r..(k)]
+        ret [[] ___ _ __ r..(k)]
 
-        short_chunk_l = l // k
-        long_chunk_l = short_chunk_l + 1
-        n_long_chunk = l % k  # key
-        n_short_chunk = l - n_long_chunk
+        short_chunk_l l // k
+        long_chunk_l short_chunk_l + 1
+        n_long_chunk l % k  # key
+        n_short_chunk l - n_long_chunk
 
-        chunk_counter = 0
-        cur_l = 0
-        node = root
+        chunk_counter 0
+        cur_l 0
+        node root
         w.... node:
             ret[chunk_counter].a..(node.val)
             cur_l += 1
-            chunk_size = long_chunk_l __ chunk_counter < n_long_chunk ____ short_chunk_l
+            chunk_size long_chunk_l __ chunk_counter < n_long_chunk ____ short_chunk_l
             __ cur_l __ chunk_size:
-                cur_l = 0
+                cur_l 0
                 chunk_counter += 1
-            node = node.next
+            node node.next
 
         r.. ret
 
@@ -97,31 +97,31 @@ c_ Solution:
 
         need to dynamical calculate part length on the fly
         """
-        l = 0
-        node = root
+        l 0
+        node root
         w.... node:
             l += 1
-            node = node.next
+            node node.next
 
 
-        ret = [[] ___ _ __ r..(k)]
-        node = root
-        counter = 0
-        cur_l = 0
-        i = 0
-        part_l = m__.ceil((l - counter) / k)
+        ret [[] ___ _ __ r..(k)]
+        node root
+        counter 0
+        cur_l 0
+        i 0
+        part_l m__.ceil((l - counter) / k)
         w.... node:
             cur_l += 1
             counter += 1
             ret[i].a..(node.val)
             __ cur_l __ part_l:
                 k -_ 1
-                cur_l = 0
+                cur_l 0
                 i += 1
                 __ k != 0:
-                    part_l = m__.ceil((l - counter) / k)
+                    part_l m__.ceil((l - counter) / k)
 
-            node = node.next
+            node node.next
 
         r.. ret
 
@@ -135,25 +135,25 @@ c_ Solution:
         [[1,2,3],[4,5,6],[7]]  # output
         [[1,2,3],[4,5],[6,7]]  # expected
         """
-        l = 0
-        node = root
+        l 0
+        node root
         w.... node:
             l += 1
-            node = node.next
+            node node.next
 
-        part_l = m__.c.. l / k)
-        ret = [[] ___ _ __ r..(k)]
+        part_l m__.c.. l / k)
+        ret [[] ___ _ __ r..(k)]
 
-        node = root
-        cur_l = 0
-        i = 0
+        node root
+        cur_l 0
+        i 0
         w.... node:
             cur_l += 1
             ret[i].a..(node.val)
             __ cur_l __ part_l:
-                cur_l = 0
+                cur_l 0
                 i += 1
 
-            node = node.next
+            node node.next
 
         r.. ret

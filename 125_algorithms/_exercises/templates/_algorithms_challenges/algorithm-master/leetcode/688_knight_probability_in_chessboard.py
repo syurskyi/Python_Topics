@@ -16,11 +16,11 @@ c_ Solution:
         :type c: int
         :rtype: float
         """
-        dp = c...d..(i..)
-        dp[r, c] = 1.0
+        dp c...d..(i..)
+        dp[r, c] 1.0
 
         ___ _ __ r..(k
-            nxt = c...d..(i..)
+            nxt c...d..(i..)
 
             ___ x __ r..(n
                 ___ y __ r..(n
@@ -34,15 +34,15 @@ c_ Solution:
                         (-1,  2),
                         ( 1,  2),
 
-                        _x = x + dx
-                        _y = y + dy
+                        _x x + dx
+                        _y y + dy
 
                         __ n.. (0 <_ _x < n a.. 0 <_ _y < n
                             _____
 
                         nxt[_x, _y] += dp[x, y] / 8.0
 
-            dp = nxt
+            dp nxt
 
         r.. s..(dp.values
 
@@ -62,9 +62,9 @@ c_ Solution:
         __ n __ 1 a.. k __ 0:
             r.. 1.0
 
-        queue, _queue = [(r, c)], []
-        total = 8 ** k
-        valid = 0
+        queue, _queue [(r, c)], []
+        total 8 ** k
+        valid 0
 
         w.... queue a.. k:
             k -_ 1
@@ -80,8 +80,8 @@ c_ Solution:
                     (-1,  2),
                     ( 1,  2),
 
-                    _x = x + dx
-                    _y = y + dy
+                    _x x + dx
+                    _y y + dy
 
                     __ n.. (0 <_ _x < n a.. 0 <_ _y < n
                         _____
@@ -92,6 +92,6 @@ c_ Solution:
                     __ k > 0:
                         _queue.a..((_x, _y
 
-            queue, _queue = _queue, []
+            queue, _queue _queue, []
 
         r.. valid / total

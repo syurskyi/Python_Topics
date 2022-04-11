@@ -16,10 +16,10 @@ c_ Solution(o..
             __ e __ d:
                 __ i - d[e] <_ k:
                     r.. T..
-            d[e] = i
+            d[e] i
         r.. F..
 
 
-args1 = [[1, 0, 1, 1], 1]
-s = Solution()
+args1 [[1, 0, 1, 1], 1]
+s Solution()
 print(s.containsNearbyDuplicate(*args1

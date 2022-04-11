@@ -16,23 +16,23 @@ c_ Solution(o..
     ___ helper  s, memo
         __ s __ memo:
             r.. memo[s]
-        otherWin = T..
+        otherWin T..
         ___ i __ r..(l..(s)-1
             __ s[i:i+2] __ '++':
-                s0 = s[:i]+'--'+s[i+2:]
+                s0 s[:i]+'--'+s[i+2:]
                 __ n.. helper(s0, memo
-                    otherWin = F..
+                    otherWin F..
                     _____
-        memo[s] = n.. otherWin
+        memo[s] n.. otherWin
         r.. memo[s]
     
     ___ test
-        testCases = [
+        testCases [
             '++++',
         ]
         ___ s __ testCases:
             print('s: %s' % (s
-            result = canWin(s)
+            result canWin(s)
             print('result: %s' % (result
             print('-='*20+'-')
 

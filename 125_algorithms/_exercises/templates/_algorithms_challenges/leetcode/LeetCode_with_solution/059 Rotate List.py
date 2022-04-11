@@ -5,12 +5,12 @@ For example:
 Given 1->2->3->4->5->NULL and k = 2,
 return 4->5->1->2->3->NULL.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
     ___  -r
         r.. r.. (val)
@@ -29,37 +29,37 @@ c_ Solution:
             r.. N..
 
 
-        dummy = ListNode(0)
-        dummy.next = head
+        dummy ListNode(0)
+        dummy.next head
 
         # find length
-        length = 0
-        pre = dummy
+        length 0
+        pre dummy
         w.... pre.next:
             length += 1
-            pre = pre.next
+            pre pre.next
         # find the last one
-        last = pre
+        last pre
 
         # normalize, since possible k > length
-        k = k%length  # k is length in nature
+        k k%length  # k is length in nature
 
         # find breaking point
-        count = 0
-        pre = dummy
+        count 0
+        pre dummy
         w.... count<length-k:  # you will appreciate python's half open range and 0-based index k
             count += 1
-            pre = pre.next
+            pre pre.next
 
         # then do the manipulate in one group of operations (no loop)
         __ k!=0: # avoid cyclic link
-            pre.next, dummy.next, last.next = N.., pre.next, dummy.next
+            pre.next, dummy.next, last.next N.., pre.next, dummy.next
 
         r.. dummy.next
 
 __ _____ __ ____
-    length = 1
-    lst = [ListNode(i+1) ___ i __ x..(length)]
+    length 1
+    lst [ListNode(i+1) ___ i __ x..(length)]
     ___ i __ r..(length-1
-        lst[i].next = lst[i+1]
+        lst[i].next lst[i+1]
     Solution().rotateRight(lst[0], 1)

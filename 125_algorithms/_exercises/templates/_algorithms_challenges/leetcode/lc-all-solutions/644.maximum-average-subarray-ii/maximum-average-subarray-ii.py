@@ -10,7 +10,7 @@ c_ Solution(o..
     """
 
     ___ valid(nums, mid, k
-      minSum = preSums = sums = 0
+      minSum preSums sums 0
       ___ i __ r..(k
         sums += nums[i] - mid
       __ sums >_ 0:
@@ -18,32 +18,32 @@ c_ Solution(o..
       ___ i __ r..(k, l..(nums:
         sums += nums[i] - mid
         preSums += nums[i - k] - mid
-        minSum = m..(minSum, preSums)
+        minSum m..(minSum, preSums)
         __ sums - minSum >_ 0:
           r.. T..
       r.. F..
 
-    lo = m..(nums)
-    hi = m..(nums)
+    lo m..(nums)
+    hi m..(nums)
     w.... hi - lo > 1e-5:
-      mid = (hi + lo) / 2.
+      mid (hi + lo) / 2.
       __ valid(nums, mid, k
-        lo = mid
+        lo mid
       ____
-        hi = mid
+        hi mid
     r.. lo
 
   # have to use this hack to pass OJ
   ___ findMaxAverage  nums, k
     _______ n.... __ np
-    lo, hi = m..(nums), m..(nums)
-    nums = np.array([0] + nums)
+    lo, hi m..(nums), m..(nums)
+    nums np.array([0] + nums)
     w.... hi - lo > 1e-5:
-      mid = nums[0] = (lo + hi) / 2.
-      sums = (nums - mid).cumsum()
-      mins = np.minimum.accumulate(sums)
+      mid nums[0] (lo + hi) / 2.
+      sums (nums - mid).cumsum()
+      mins np.minimum.accumulate(sums)
       __ (sums[k:] - mins[:-k]).m..() > 0:
-        lo = mid
+        lo mid
       ____
-        hi = mid
+        hi mid
     r.. lo

@@ -4,22 +4,22 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: bool
     """
-    flag = F..
-    pre = f__("-inf")
+    flag F..
+    pre f__("-inf")
     ___ i __ r..(l..(nums) - 1
       __ nums[i] < pre:
         __ nums[i + 1] >_ nums[i - 1]:
-          nums[i] = nums[i + 1]
+          nums[i] nums[i + 1]
         ____
-          nums[i - 1] = nums[i]
-        flag = T..
+          nums[i - 1] nums[i]
+        flag T..
         _____
-      pre = nums[i]
+      pre nums[i]
     __ n.. flag a.. l..(nums) > 1 a.. nums[-1] < nums[-2]:
-      nums[-1] = nums[-2]
-    pre = f__("-inf")
+      nums[-1] nums[-2]
+    pre f__("-inf")
     ___ num __ nums:
       __ num < pre:
         r.. F..
-      pre = num
+      pre num
     r.. T..

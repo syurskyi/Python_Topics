@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         d...s..(key=l.... x: l..(x
         resArr    # list
-        words = sentence.s..(' ')
+        words sentence.s..(' ')
         ___ i, word __ e..(words
             ___ s __ d..:
                 __ word[:l..(s)] __ s:
@@ -23,7 +23,7 @@ c_ Solution(o..
         r.. ' '.j..(resArr)
     
     ___ test
-        testCases = [
+        testCases [
             [
                 ["cat", "bat", "rat"],
                 "the cattle was rattled by the battery",
@@ -32,7 +32,7 @@ c_ Solution(o..
         ___ d.., sentence __ testCases:
             print('dict: %s' % d..)
             print('sentence: %s' % sentence)
-            result = replaceWords(d.., sentence)
+            result replaceWords(d.., sentence)
             print('result: %s' % result)
             print('-='*30+'-')
 

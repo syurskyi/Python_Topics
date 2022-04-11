@@ -10,12 +10,12 @@ _______ t__
 ____ asyncio _______ sleep
 ____ t___ _______ U..
 
-ONE_MIN = .006
-FIVE_MIN = ONE_MIN * .0005
-TWENTY_FIVE_MIN = ONE_MIN * .0025
-THIRTY_MIN = ONE_MIN * .003
-HOUR = ONE_MIN * .06
-CURRENT_SESSION = 1
+ONE_MIN .006
+FIVE_MIN ONE_MIN * .0005
+TWENTY_FIVE_MIN ONE_MIN * .0025
+THIRTY_MIN ONE_MIN * .003
+HOUR ONE_MIN * .06
+CURRENT_SESSION 1
 
 
 async ___ break_time(delay: U..[i.., f__], loop: i..) __ N..
@@ -25,7 +25,7 @@ async ___ break_time(delay: U..[i.., f__], loop: i..) __ N..
     :param loop: int of the current loop
     :return: None
     """
-    _delay = i..(delay / ONE_MIN)
+    _delay i..(delay / ONE_MIN)
     print(f"[{loop}] {t__.s..('%X')} Time for a {_delay} min break!")
     await sleep(delay)
 
@@ -52,9 +52,9 @@ async ___ work_time(delay: U..[i.., f__], loop: i..) __ N..
 
 
 async ___ session(
-    work_length: U..[i.., f__] = TWENTY_FIVE_MIN,
-    short_break_length: U..[i.., f__] = FIVE_MIN,
-    long_break_length: U..[i.., f__] = THIRTY_MIN,
+    work_length: U..[i.., f__] TWENTY_FIVE_MIN,
+    short_break_length: U..[i.., f__] FIVE_MIN,
+    long_break_length: U..[i.., f__] THIRTY_MIN,
 ) __ N..
     """Session
 
@@ -63,7 +63,7 @@ async ___ session(
     :param long_break_length: float of long break length in seconds
     :return: None
     """
-    loop = 1
+    loop 1
 
     w.... loop < 4:
         await work_time(work_length, loop)
@@ -77,10 +77,10 @@ async ___ session(
 
 
 async ___ main(
-    work_length: U..[i.., f__] = TWENTY_FIVE_MIN,
-    short_break_length: U..[i.., f__] = FIVE_MIN,
-    long_break_length: U..[i.., f__] = THIRTY_MIN,
-    lunch_length: U..[i.., f__] = HOUR,
+    work_length: U..[i.., f__] TWENTY_FIVE_MIN,
+    short_break_length: U..[i.., f__] FIVE_MIN,
+    long_break_length: U..[i.., f__] THIRTY_MIN,
+    lunch_length: U..[i.., f__] HOUR,
 ) __ N..
     """Main entry point
 

@@ -4,14 +4,14 @@ Given a binary tree, determine if it is height-balanced.
 For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of
 every node never differ by more than 1.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution(o..
@@ -29,9 +29,9 @@ c_ Solution(o..
         __ n.. cur:
             r.. T..
 
-        h1 = h2 = depth
-        __ cur.left: h1 = depth_bottom[cur.left]
-        __ cur.right: h2 = depth_bottom[cur.right]
+        h1 h2 depth
+        __ cur.left: h1 depth_bottom[cur.left]
+        __ cur.right: h2 depth_bottom[cur.right]
 
         __ a..(h1 - h2) > 1:
             r.. F..
@@ -42,8 +42,8 @@ c_ Solution(o..
         __ n.. root:
             r.. depth-1
 
-        ret = m..(fathom(root.left, depth+1), fathom(root.right, depth+1
-        depth_bottom[root] = ret
+        ret m..(fathom(root.left, depth+1), fathom(root.right, depth+1
+        depth_bottom[root] ret
         r.. ret
 
 

@@ -14,14 +14,14 @@ c_ DNATest(unittest.TestCase
         assertEqual(c.. '', 'A'), 0)
 
     ___ test_empty_dna_string_has_no_nucleotides
-        e.. = {'A': 0, 'T': 0, 'C': 0, 'G': 0}
+        e.. {'A': 0, 'T': 0, 'C': 0, 'G': 0}
         assertEqual(nucleotide_counts(""), e..)
 
     ___ test_repetitive_cytidine_gets_counted
         assertEqual(c.. 'CCCCC', 'C'), 5)
 
     ___ test_repetitive_sequence_has_only_guanosine
-        e.. = {'A': 0, 'T': 0, 'C': 0, 'G': 8}
+        e.. {'A': 0, 'T': 0, 'C': 0, 'G': 8}
         assertEqual(nucleotide_counts('GGGGGGGG'), e..)
 
     ___ test_counts_only_thymidine
@@ -32,9 +32,9 @@ c_ DNATest(unittest.TestCase
             c.. "GACT", 'X')
 
     ___ test_counts_all_nucleotides
-        dna = ('AGCTTTTCATTCTGACTGCAACGGGCAATATGTCT'
+        dna ('AGCTTTTCATTCTGACTGCAACGGGCAATATGTCT'
                'CTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC')
-        e.. = {'A': 20, 'T': 21, 'G': 17, 'C': 12}
+        e.. {'A': 20, 'T': 21, 'G': 17, 'C': 12}
         assertEqual(nucleotide_counts(dna), e..)
 
 

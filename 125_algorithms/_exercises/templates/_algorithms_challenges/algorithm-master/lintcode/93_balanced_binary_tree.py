@@ -19,11 +19,11 @@ c_ Solution:
         __ n.. node:
             r.. T.., 0
 
-        is_balanced_left, maxdepth_left = _divide_conquer(node.left)
+        is_balanced_left, maxdepth_left _divide_conquer(node.left)
         __ n.. is_balanced_left:
             r.. F.., 0
 
-        is_balanced_right, maxdepth_right = _divide_conquer(node.right)
+        is_balanced_right, maxdepth_right _divide_conquer(node.right)
         __ n.. is_balanced_right:
             r.. F.., 0
 

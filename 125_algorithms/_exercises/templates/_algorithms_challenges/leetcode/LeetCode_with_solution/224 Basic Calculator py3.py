@@ -31,18 +31,18 @@ c_ Solution:
         2. maintain stk of operands to sum
         3. handle bracket recursively
         """
-        ret, _ = eval(s + "\0", 0, [])
+        ret, _ eval(s + "\0", 0, [])
         r.. ret
 
     ___ eval  s: s.., start: i.., stk: L..[i..]) __ i..:
-        prev_op = "+"
-        operand = 0
-        i = start
+        prev_op "+"
+        operand 0
+        i start
         w.... i < l..(s  #  not using for-loop, since the cursor needs to advance in recursion
             __ s[i] __ " ":
                 p..
             ____ s[i].i..
-                operand = operand * 10 + i..(s[i])
+                operand operand * 10 + i..(s[i])
             ____ s[i] __ ("+", "-", ")", "\0"  # delimited
                 __ prev_op __ "+":
                     stk.a..(operand)
@@ -50,13 +50,13 @@ c_ Solution:
                     stk.a..(-operand)
         
                 __ s[i] __ ("+", "-"
-                    operand = 0
-                    prev_op = s[i]
+                    operand 0
+                    prev_op s[i]
                 ____ s[i] __ (")", "\0"
                     r.. s..(stk), i
             ____ s[i] __ "(":
                 # avoid setting operand to 0
-                operand, i = eval(s, i + 1, [])
+                operand, i eval(s, i + 1, [])
             ____
                 r..
 

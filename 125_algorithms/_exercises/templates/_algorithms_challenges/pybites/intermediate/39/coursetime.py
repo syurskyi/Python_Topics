@@ -4,7 +4,7 @@ _______ __
 _______ u__.r..
 
 # getting the data
-COURSE_TIMES = __.p...j..(
+COURSE_TIMES __.p...j..(
     __.g.. TMP  /tmp,
     'course_timings'
 )
@@ -27,9 +27,9 @@ ___ get_all_timestamps
     """
     w__ o.. COURSE_TIMES) __ file:
         course_timestamps    # list
-        file_lines = file.r..
+        file_lines file.r..
         ___ line __ file_lines:
-            ts = __.f..(r"(\d{1,2}?:\d{1,2})", line)
+            ts __.f..(r"(\d{1,2}?:\d{1,2})", line)
             __ ts:
                 course_timestamps.a..(ts[0])
 
@@ -39,10 +39,10 @@ ___ get_all_timestamps
 ___ calc_total_course_duration(timestamps
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
-    dt_conversion = [d__.s..(ts, '%M:%S') ___ ts __ timestamps]
-    baseline = d__(1900, 1, 1, 0, 0, 0)
+    dt_conversion [d__.s..(ts, '%M:%S') ___ ts __ timestamps]
+    baseline d__(1900, 1, 1, 0, 0, 0)
     ___ course_dt __ dt_conversion:
-        baseline = baseline + t..(minutes=course_dt.minute, seconds=course_dt.second)
+        baseline baseline + t..(minutes=course_dt.minute, seconds=course_dt.second)
 
     r.. baseline.s..('%-H:%M:%S')
 

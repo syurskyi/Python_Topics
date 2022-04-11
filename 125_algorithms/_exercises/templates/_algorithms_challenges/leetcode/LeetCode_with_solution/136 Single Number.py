@@ -4,7 +4,7 @@ Given an array of integers, every element appears twice except for one. Find tha
 Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ singleNumber  A
         """
@@ -31,7 +31,7 @@ c_ Solution:
         :param A: a list of integer
         :return: int
         """
-        storage = 0
+        storage 0
         ___ element __ A:
             storage ^= element # XOR
 

@@ -36,10 +36,10 @@ c_ Solution(o..
         queue    # list
         queue.a..(root)
         w.... queue:
-            n = l..(queue)
+            n l..(queue)
             level    # list
             ___ i __ r..(n
-                root = queue.p.. 0)
+                root queue.p.. 0)
                 __ root.left __ n.. N..
                     queue.a..(root.left)
                 __ root.right __ n.. N..

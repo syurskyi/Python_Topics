@@ -1,24 +1,24 @@
 c_ TrieNode:
   ___ - , char
     neighbours    # dict
-    isWord = F..
+    isWord F..
 
 
 c_ Trie:
   ___ -
-    root = TrieNode("-")
+    root TrieNode("-")
 
   ___ addWord  word
-    root = root
+    root root
     ___ i __ r..(0, l..(word:
-      c = word[i]
+      c word[i]
       __ c __ root.neighbours:
-        root = root.neighbours[c]
+        root root.neighbours[c]
       ____
-        newnode = TrieNode(c)
-        root.neighbours[c] = newnode
-        root = root.neighbours[c]
-    root.isWord = T..
+        newnode TrieNode(c)
+        root.neighbours[c] newnode
+        root root.neighbours[c]
+    root.isWord T..
 
 
 c_ Solution:
@@ -27,10 +27,10 @@ c_ Solution:
   # @return: A list of string
   ___ findWords  board, words
     # write your code here
-    trie = Trie()
+    trie Trie()
     res    # list
-    visited = [[0] * l..(board[0]) ___ i __ r..(0, l..(board]
-    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+    visited [[0] * l..(board[0]) ___ i __ r..(0, l..(board]
+    directions [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ dfs(i, j, board, visited, res, root, p..
       __ n.. root:
@@ -40,21 +40,21 @@ c_ Solution:
         res.a..(p..)
 
       ___ direction __ directions:
-        ni, nj = i + direction[0], j + direction[1]
+        ni, nj i + direction[0], j + direction[1]
         __ 0 <_ ni < l..(board) a.. 0 <_ nj < l..(board[0]
-          c = board[ni][nj]
+          c board[ni][nj]
           __ visited[ni][nj] __ 0:
-            visited[ni][nj] = 1
+            visited[ni][nj] 1
             dfs(ni, nj, board, visited, res, root.neighbours.g.. c, N..), p.. + c)
-            visited[ni][nj] = 0
+            visited[ni][nj] 0
 
     ___ word __ words:
       trie.addWord(word)
-    root = trie.root
+    root trie.root
     ___ i __ r..(0, l..(board:
       ___ j __ r..(0, l..(board[0]:
-        c = board[i][j]
-        visited[i][j] = 1
+        c board[i][j]
+        visited[i][j] 1
         dfs(i, j, board, visited, res, root.neighbours.g.. c, N..), c)
-        visited[i][j] = 0
+        visited[i][j] 0
     r.. l..(s..(res

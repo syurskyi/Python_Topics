@@ -9,18 +9,18 @@ Each node has another two boolean attributes : isLeaf and val. isLeaf is true if
 and only if the node is a leaf node. The val attribute for a leaf node contains
 the value of the region it represents.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 # Definition for a QuadTree node.
 c_ Node:
     ___ - , val, isLeaf, topLeft, topRight, bottomLeft, bottomRight
-        val = val
-        isLeaf = isLeaf
-        topLeft = topLeft
-        topRight = topRight
-        bottomLeft = bottomLeft
-        bottomRight = bottomRight
+        val val
+        isLeaf isLeaf
+        topLeft topLeft
+        topRight topRight
+        bottomLeft bottomLeft
+        bottomRight bottomRight
 
 
 c_ Solution:
@@ -31,7 +31,7 @@ c_ Solution:
         :type grid: List[List[int]]
         :rtype: Node
         """
-        l = l..(grid)
+        l l..(grid)
         r.. _construct(grid, 0, 0, l)
 
     ___ _construct  grid, row, col, l
@@ -42,12 +42,12 @@ c_ Solution:
         __ l __ 1:
             r.. Node(grid[row][col], T.., N.., N.., N.., N..)
 
-        l_child = l // 2
-        topLeft = _construct(grid, row, col, l_child)
-        topRight = _construct(grid, row, col + l_child, l_child)
-        bottomLeft = _construct(grid, row + l_child, col, l_child)
-        bottomRight = _construct(grid, row + l_child, col + l_child, l_child)
-        is_leaf = (
+        l_child l // 2
+        topLeft _construct(grid, row, col, l_child)
+        topRight _construct(grid, row, col + l_child, l_child)
+        bottomLeft _construct(grid, row + l_child, col, l_child)
+        bottomRight _construct(grid, row + l_child, col + l_child, l_child)
+        is_leaf (
             topLeft.val __ topRight.val __ bottomLeft.val __ bottomRight.val
             != "*"
         )

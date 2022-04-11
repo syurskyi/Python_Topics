@@ -11,28 +11,28 @@ c_ Solution(o..
         :type word2: str
         :rtype: int
         """
-        n = l..(word1)
-        m = l..(word2)
-        dp = [[0]*(m+1) ___ i __ r..(n+1)]
+        n l..(word1)
+        m l..(word2)
+        dp [[0]*(m+1) ___ i __ r..(n+1)]
         ___ i __ r..(n+1
-            dp[i][0] = i
+            dp[i][0] i
         ___ j __ r..(m+1
-            dp[0][j] = j
+            dp[0][j] j
         ___ i __ r..(0, n
-            c1 = word1[i]
+            c1 word1[i]
             ___ j __ r..(0, m
-                c2 = word2[j]
+                c2 word2[j]
                 __ c1 __ c2:
-                    dp[i+1][j+1] = dp[i][j]
+                    dp[i+1][j+1] dp[i][j]
                 ____
-                    r.. = dp[i][j] + 1
-                    insert = dp[i][j+1] + 1
-                    delete = dp[i+1][j] + 1
-                    dp[i+1][j+1] = m..((r.., insert, delete
+                    r.. dp[i][j] + 1
+                    insert dp[i][j+1] + 1
+                    delete dp[i+1][j] + 1
+                    dp[i+1][j+1] m..((r.., insert, delete
         r.. dp[-1][-1]
     
     ___ test
-        testCases = [
+        testCases [
             ('', 'a'),
             ('horse', 'rose'),
             ('horse', 'ros'),
@@ -40,7 +40,7 @@ c_ Solution(o..
         ___ word1, word2 __ testCases:
             print('word1: %s' % (word1
             print('word2: %s' % (word2
-            result = minDistance(word1, word2)
+            result minDistance(word1, word2)
             print('result: %s' % (result
             print('-='*15+'-')
 

@@ -14,40 +14,40 @@ Output: 1->4->3->2->5->NULL
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 c_ Solution:
     ___ reverseBetween  head: ListNode, m: i.., n: i..) __ ListNode:
-        prev = N..
-        cur = head
+        prev N..
+        cur head
 
-        l = 1
+        l 1
         w.... l < m:
-            nxt = cur.next
-            prev = cur
-            cur = nxt
+            nxt cur.next
+            prev cur
+            cur nxt
             l += 1
         #           prev    cur (m)
         # -> ... -> left -> right -> ... -> null
         #                                    (n)
         # -> ... -> left <- right <- ... <- prev <- cur -> ... -> null
         # -> ... -> left -> prev -> ... -> right -> cur -> ... -> null
-        leftend = prev
-        rightend = cur
+        leftend prev
+        rightend cur
 
         w.... l <_ n:  # notice is it <=
-            nxt = cur.next
-            cur.next = prev
-            prev = cur
-            cur = nxt
+            nxt cur.next
+            cur.next prev
+            prev cur
+            cur nxt
             l += 1
 
         __ m != 1:  # leftend is None
-            leftend.next = prev
+            leftend.next prev
         ____
-            head = prev
+            head prev
 
-        rightend.next = cur
+        rightend.next cur
         r.. head

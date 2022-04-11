@@ -1,7 +1,7 @@
 _______ j__
 _______ __
 
-members = """
+members """
 id,first_name,last_name,email
 1,Junie,Kybert;jkybert0@army.mil
 2,Sid,Churching|schurching1@tumblr.com
@@ -17,6 +17,6 @@ id,first_name,last_name,email
 
 
 ___ convert_to_json(members=members
-    r = __.c..(r'(?P<id>\d+)[,|;](?P<first_name>\w+)[,|;](?P<last_name>\w+)[,|;](?P<email>.*)')
-    result = [r.m..(line).groupdict() ___ line __ members.s..k.._F..)[2:]]
+    r __.c..(r'(?P<id>\d+)[,|;](?P<first_name>\w+)[,|;](?P<last_name>\w+)[,|;](?P<email>.*)')
+    result [r.m..(line).groupdict() ___ line __ members.s..k.._F..)[2:]]
     r.. j__.d..result)

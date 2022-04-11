@@ -11,8 +11,8 @@ c_ Solution(o..
         :rtype: List[int]
         """
         res    # list
-        n = l..(nums)
-        stack = l..(r..(n-1, -1, -1
+        n l..(nums)
+        stack l..(r..(n-1, -1, -1
         ___ i __ r..(n-1, -1, -1
             w.... stack a.. nums[stack[-1]] <_ nums[i]:
                 stack.p.. )
@@ -24,13 +24,13 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
 #             [1, 2, 1],
             [1, 6, 2, 7, 4, 5],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = nextGreaterElements(nums)
+            result nextGreaterElements(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

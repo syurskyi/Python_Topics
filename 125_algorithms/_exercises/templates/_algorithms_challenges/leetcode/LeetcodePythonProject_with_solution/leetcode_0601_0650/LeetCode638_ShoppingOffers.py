@@ -11,31 +11,31 @@ c_ Solution(o..
         :type needs: List[int]
         :rtype: int
         """
-        minPrice = s..([p*n ___ p, n __ z..(price, needs)])
+        minPrice s..([p*n ___ p, n __ z..(price, needs)])
         helper(price, special, needs, 0)
         r.. minPrice
     
     ___ helper  price, special, needs, curPrice
-        n = l..(price)
-        added = F..
+        n l..(price)
+        added F..
         ___ arr __ special:
-            overflow = F..
+            overflow F..
             ___ i __ r..(n
                 __ needs[i] < arr[i]:
-                    overflow = T..
+                    overflow T..
                 needs[i] -_ arr[i]
             __ n.. overflow:
-                added = T..
+                added T..
                 helper(price, special, needs, curPrice+arr[-1])
             ___ i __ r..(n
                 needs[i] += arr[i]
         __ n.. added:
             ___ i __ r..(n
                 curPrice += needs[i]*price[i]
-            minPrice = m..(minPrice, curPrice)
+            minPrice m..(minPrice, curPrice)
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [2,5],
                 [[3,0,5],[1,2,10]],
@@ -61,7 +61,7 @@ c_ Solution(o..
             print('price: %s' % price)
             print('special: %s' % special)
             print('needs: %s' % needs)
-            result = shoppingOffers(price, special, needs)
+            result shoppingOffers(price, special, needs)
             print('result: %s' % result)
             print('-='*30+'-')
 

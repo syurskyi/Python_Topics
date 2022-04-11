@@ -20,12 +20,12 @@ c_ Solution:
         1   1
         1   1
         """
-        ans = 0
+        ans 0
 
         __ n.. G:
             r.. ans
 
-        n = 0
+        n 0
         count    # dict
         ___ R __ G:
             ___ end __ r..(1, l..(R:
@@ -37,7 +37,7 @@ c_ Solution:
                         _____
 
                     __ (start, end) n.. __ count:
-                        count[start, end] = 0
+                        count[start, end] 0
                         _____
 
                     count[start, end] += 1

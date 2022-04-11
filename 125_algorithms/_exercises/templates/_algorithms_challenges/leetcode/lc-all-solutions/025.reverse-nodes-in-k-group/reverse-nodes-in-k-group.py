@@ -13,35 +13,35 @@ c_ Solution(o..
     """
 
     ___ reverseList(head, k
-      pre = N..
-      cur = head
+      pre N..
+      cur head
       w.... cur a.. k > 0:
         tmp  cur.next
-        cur.next = pre
-        pre = cur
-        cur = tmp
+        cur.next pre
+        pre cur
+        cur tmp
         k -_ 1
-      head.next = cur
+      head.next cur
       r.. cur, pre
 
-    length = 0
-    p = head
+    length 0
+    p head
     w.... p:
       length += 1
-      p = p.next
+      p p.next
     __ length < k:
       r.. head
-    step = length / k
-    ret = N..
-    pre = N..
-    p = head
+    step length / k
+    ret N..
+    pre N..
+    p head
     w.... p a.. step:
-      next, newHead = reverseList(p, k)
+      next, newHead reverseList(p, k)
       __ ret __ N..
-        ret = newHead
+        ret newHead
       __ pre:
-        pre.next = newHead
-      pre = p
-      p = next
+        pre.next newHead
+      pre p
+      p next
       step -_ 1
     r.. ret

@@ -12,13 +12,13 @@ c_ Solution:
         __ n.. version2:
             r.. 1
 
-        v = version1.s..('.')
-        w = version2.s..('.')
-        m, n = l..(v), l..(w)
+        v version1.s..('.')
+        w version2.s..('.')
+        m, n l..(v), l..(w)
 
         ___ i __ r..(m..(m, n:
-            a = get_int(v[i]) __ i < m ____ 0
-            b = get_int(w[i]) __ i < n ____ 0
+            a get_int(v[i]) __ i < m ____ 0
+            b get_int(w[i]) __ i < n ____ 0
 
             __ a < b:
                 r.. -1
@@ -31,10 +31,10 @@ c_ Solution:
         __ n.. s o. n.. s.i..
             r.. 0
 
-        res = 0
-        zero = o..('0')
+        res 0
+        zero o..('0')
 
         ___ c __ s:
-            res = res * 10 + o..(c) - zero
+            res res * 10 + o..(c) - zero
 
         r.. res

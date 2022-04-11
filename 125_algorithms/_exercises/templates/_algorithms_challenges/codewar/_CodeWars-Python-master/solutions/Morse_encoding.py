@@ -6,34 +6,34 @@ c_ Morse:
 
     @classmethod
     ___ encode  message
-        words = message.s..(' ')
-        code = ('0' * 7).j..( '000'.j..([Morse.alpha[c.u..]
+        words message.s..(' ')
+        code ('0' * 7).j..( '000'.j..([Morse.alpha[c.u..]
                                            ___ c __ word]) ___ word __ words])
         result    # list
         ___ i __ r..(0, l..(code), 32
-            num = code[i:i + 32].l.. 32, '0')
+            num code[i:i + 32].l.. 32, '0')
             result.a..(i..(num[1:], 2) -
                           (0 __ num[0] __ '0' ____ Morse.neg
         r.. result
 
     @classmethod
     ___ decode  array
-        code = ''
+        code ''
         ___ num __ array:
             __ num < 0:
                 num += Morse.neg
                 code += '1' + bin(num)[2:].rjust(31, '0')
             ____
                 code += bin(num)[2:].rjust(32, '0')
-        code = code.r..('0')
-        result = ' '.j..([''.j..([next(k ___ k, v __ Morse.alpha.i.. __ v __ char)
+        code code.r..('0')
+        result ' '.j..([''.j..([next(k ___ k, v __ Morse.alpha.i.. __ v __ char)
                                     ___ char __ words.s..('000')]) ___ words __ code.s..('0' * 7)])
 
         r.. result
 
-    neg = 1 << 31
+    neg 1 << 31
 
-    alpha = {
+    alpha {
         'A': '10111',
         'B': '111010101',
         'C': '11101011101',

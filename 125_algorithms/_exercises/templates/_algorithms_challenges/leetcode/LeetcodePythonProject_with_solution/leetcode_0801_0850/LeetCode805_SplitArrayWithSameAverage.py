@@ -9,9 +9,9 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: bool
         """
-        arr = A
+        arr A
         __ l..(arr) __ 1: r.. F..
-        sumA = 0
+        sumA 0
         ___ num __ arr:
             sumA += num
         arr.s..()
@@ -33,14 +33,14 @@ c_ Solution(o..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             [1,2,3,4,5,6,7,8],
             [11,1,15,2,14,16,8,9,4],
             [4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4, 5],
         ]
         ___ arr __ testCases:
             print('arr: %s' % arr)
-            result = splitArraySameAverage(arr)
+            result splitArraySameAverage(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 

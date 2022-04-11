@@ -19,7 +19,7 @@ c_ Solution:
             heappush(heap, (G[i][0], i, 0
 
         w.... heap:
-            num, x, y = heappop(heap)
+            num, x, y heappop(heap)
             ans.a..(num)
             __ y + 1 < l..(G[x]
                 heappush(heap, (G[x][y + 1], x, y + 1

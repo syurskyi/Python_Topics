@@ -17,7 +17,7 @@ Bonus: if you already have some Python under your belt, try to use re and try to
 '''
 
 
-text = """
+text """
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
@@ -40,7 +40,7 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
-vowels = 'aeiou'
+vowels 'aeiou'
 
 
 ___ my_strip_vowels(text: s..) __ (s.., i..
@@ -57,15 +57,15 @@ ___ my_strip_vowels(text: s..) __ (s.., i..
        The str/int types in the function defintion above are part
        of Python's new type hinting:
        https://docs.python.org/3/library/typing.html"""
-    out = ''
-    cnt = 0
+    out ''
+    cnt 0
     ___ letter __ text:
         __ letter.l.. n.. __ vowels:
             out += letter
         ____
             out += '*'
             cnt += 1
-    t = (out, cnt)
+    t (out, cnt)
     print(out)
 
 ___ strip_vowels(text: s..) __ (s.., i..
@@ -84,12 +84,12 @@ ___ strip_vowels(text: s..) __ (s.., i..
        https://docs.python.org/3/library/typing.html"""
     new_str    # list
     # Why to create new list? Why not iterate through the string directly, without creating anything?
-    chars = l..(text)
-    num_vowels = 0
+    chars l..(text)
+    num_vowels 0
 
     ___ c __ chars:
         __ c.l.. __ vowels:
-            c = '*'
+            c '*'
             num_vowels += 1
         new_str.a..(c)
 

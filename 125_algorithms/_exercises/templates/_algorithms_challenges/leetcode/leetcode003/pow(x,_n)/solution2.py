@@ -9,8 +9,8 @@ c_ Solution:
             r.. 1.0 / pow(x, -n)
         ____
             __ n % 2 __ 0:
-                r = pow(x, n / 2)
+                r pow(x, n / 2)
                 r.. r * r
             ____
-                r = pow(x, (n - 1) / 2)
+                r pow(x, (n - 1) / 2)
                 r.. r * r * x

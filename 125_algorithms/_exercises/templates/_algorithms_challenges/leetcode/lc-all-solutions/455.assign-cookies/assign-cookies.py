@@ -10,7 +10,7 @@ c_ Solution(o..
     """
     cookies.s..()
     children.s..()
-    i = 0
+    i 0
     ___ cookie __ cookies:
       __ i >_ l..(children
         _____

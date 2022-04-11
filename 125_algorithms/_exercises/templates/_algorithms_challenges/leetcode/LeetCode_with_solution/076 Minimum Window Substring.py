@@ -14,7 +14,7 @@ If there are multiple such windows, you are guaranteed that there will always be
 """
 _______ ___
 
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -28,17 +28,17 @@ c_ Solution(o..
         :param T: str
         :return: str
         """
-        min_win = [0, ___.maxint]  # [start, end)
-        w_cnt = [0 ___ _ __ r..(256)]  # window
-        t_cnt = [0 ___ _ __ r..(256)]  # 256 ascii, static
+        min_win [0, ___.maxint]  # [start, end)
+        w_cnt [0 ___ _ __ r..(256)]  # window
+        t_cnt [0 ___ _ __ r..(256)]  # 256 ascii, static
         ___ char __ T:
             t_cnt[o..(char)] += 1
 
-        appeared_cnt = 0
-        lo = 0
+        appeared_cnt 0
+        lo 0
         ___ hi __ x..(1, l..(S)+1
             # expand
-            val = S[hi-1]
+            val S[hi-1]
             __ t_cnt[o..(val)] > 0:
                 w_cnt[o..(val)] += 1
 
@@ -52,7 +52,7 @@ c_ Solution(o..
                     lo += 1
 
                 __ min_win[1]-min_win[0] > hi-lo:
-                    min_win[0], min_win[1] = lo, hi
+                    min_win[0], min_win[1] lo, hi
 
         __ min_win[1] __ ___.maxint:
             r.. ""

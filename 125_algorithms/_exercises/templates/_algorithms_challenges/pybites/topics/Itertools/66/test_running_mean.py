@@ -12,5 +12,5 @@ ____ running_mean _______ running_mean
     ([], []),
 ])
 ___ test_running_mean(input_argument, expected_return
-    ret = l..(running_mean(input_argument
+    ret l..(running_mean(input_argument
     ... ret __ expected_return

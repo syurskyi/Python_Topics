@@ -16,24 +16,24 @@ The os module is your friend here, but you also might want to check out glob. Ha
 _______ __
 _______ glob
 
-ONE_KB = 1024
+ONE_KB 1024
 
 ___ get_files_implementation_1(dirname, size_in_kb
     """Return files in dirname that are >= size_in_kb"""
 
     # os.listdir return both directories and files, so it has to be filtered
     # list comprehension
-    files = [f ___ f __ __.listdir(dirname) __ __.p...i..(__.p...j..(dirname, f]
+    files [f ___ f __ __.listdir(dirname) __ __.p...i..(__.p...j..(dirname, f]
     # list comprehension
-    files_over_limit = [f ___ f __ files __ (__.p...getsize(__.p...j..(dirname,f))) / ONE_KB >_ size_in_kb]
+    files_over_limit [f ___ f __ files __ (__.p...getsize(__.p...j..(dirname,f))) / ONE_KB >_ size_in_kb]
 
     r.. files_over_limit
 
 ___ get_files_implementation_2(dirname, size_in_kb
 
-    files_and_dirs = glob.glob("{dirname}/*".f..(dirname=dirname
-    files = [f ___ f __ files_and_dirs __ __.p...i..(f)]
-    files_over_limit = [f ___ f __ files __ (__.p...getsize(f) / ONE_KB) >_ size_in_kb]
+    files_and_dirs glob.glob("{dirname}/*".f..(dirname=dirname
+    files [f ___ f __ files_and_dirs __ __.p...i..(f)]
+    files_over_limit [f ___ f __ files __ (__.p...getsize(f) / ONE_KB) >_ size_in_kb]
     r.. files_over_limit
 
 print(get_files_implementation_2("C:\\totalcmd", 5

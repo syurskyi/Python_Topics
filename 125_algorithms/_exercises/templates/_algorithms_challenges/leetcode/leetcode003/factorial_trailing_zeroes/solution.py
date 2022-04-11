@@ -10,8 +10,8 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        res = 0
-        i = 5
+        res 0
+        i 5
         w.... n / i >_ 1:
             res += n / i
             i *= 5

@@ -5,23 +5,23 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. A: r.. 0
-        MOD = 10**9+7
-        stack = [[f__('-inf'), -1, 0]] # value, index, accumulated_sum
-        res = 0
+        MOD 10**9+7
+        stack [[f__('-inf'), -1, 0]] # value, index, accumulated_sum
+        res 0
         ___ i, num __ e..(A
             w.... stack a.. stack[-1][0] > num:
                 stack.p.. )
-            total = (stack[-1][2] + (i-stack[-1][1]) * num) % MOD
+            total (stack[-1][2] + (i-stack[-1][1]) * num) % MOD
             stack.a..([num, i, total])
-            res = (res + total) % MOD
+            res (res + total) % MOD
         r.. i..(res)
 
     ___ test
-        testCases = [
+        testCases [
             [3,1,2,4],
         ]
         ___ arr __ testCases:
-            res = sumSubarrayMins(arr)
+            res sumSubarrayMins(arr)
             print('res: %s' % res)
             print('-='*30+'-')
 

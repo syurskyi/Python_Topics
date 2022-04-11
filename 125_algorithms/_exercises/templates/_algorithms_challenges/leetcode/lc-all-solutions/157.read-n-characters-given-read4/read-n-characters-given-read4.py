@@ -10,13 +10,13 @@ c_ Solution(o..
     :type n: Maximum number of characters to read (int)
     :rtype: The number of characters read (int)
     """
-    cnt = 0
+    cnt 0
     tmp  [""] * 4
     w.... cnt < n:
-      r = read4(tmp)
+      r read4(tmp)
       __ r __ 0:
         _____
       ___ i __ r..(m..(r, n - cnt:
-        buf[cnt] = tmp[i]
+        buf[cnt] tmp[i]
         cnt += 1
     r.. cnt

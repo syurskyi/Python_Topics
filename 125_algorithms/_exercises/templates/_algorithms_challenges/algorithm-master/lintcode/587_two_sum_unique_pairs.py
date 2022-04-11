@@ -5,16 +5,16 @@ c_ Solution:
     @return: An integer
     """
     ___ twoSum6  nums, target
-        ans = 0
+        ans 0
         __ n.. nums:
             r.. ans
 
         nums.s..()
 
-        left, right = 0, l..(nums) - 1
-        _sum = 0
+        left, right 0, l..(nums) - 1
+        _sum 0
         w.... left < right:
-            _sum = nums[left] + nums[right]
+            _sum nums[left] + nums[right]
             __ _sum __ target:
                 ans += 1
                 left += 1

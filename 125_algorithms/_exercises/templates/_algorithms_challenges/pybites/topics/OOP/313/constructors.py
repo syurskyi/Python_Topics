@@ -10,7 +10,7 @@ c_ Domain:
     ___ - , name
         # validate a current domain (r'.*\.[a-z]{2,3}$' is fine)
         # if not valid, raise a DomainException
-        name = name
+        name name
         __ n.. __.m..(r'.*\.[a-z]{2,3}$', name
             r.. DomainException
         
@@ -20,12 +20,12 @@ c_ Domain:
 
     @classmethod
     ___ parse_url(cls, url
-        url_domain = __.f..(r"(?:^https?:\/\/([^\/]+)(?:[\/,]|$)|^(.*)$)", url)
+        url_domain __.f..(r"(?:^https?:\/\/([^\/]+)(?:[\/,]|$)|^(.*)$)", url)
         r.. Domain(url_domain[0][0])
 
     @classmethod
     ___ parse_email(cls, email
-        email_domain = __.f..(r'@(.*\.[a-z]+)', email)
+        email_domain __.f..(r'@(.*\.[a-z]+)', email)
         r.. Domain(email_domain[0])
 
     ___ -s(self) __ s..:

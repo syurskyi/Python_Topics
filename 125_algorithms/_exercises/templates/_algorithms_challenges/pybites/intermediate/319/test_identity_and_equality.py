@@ -13,21 +13,21 @@ c_ NewList(l..
 
 
 # A bunch of lists to test
-l1 = [["gas", "electro", "hybrid"], "200 PS", "radio"]
-l2 = l1
-l3 = l1.c..
-l4 = l1[0]
-l5 = [l4, "digital radio"]
-l6 = [l1[0], "digital radio"]
-l7 = NewList(l1)
-l8 = ["unleaded"]
+l1 [["gas", "electro", "hybrid"], "200 PS", "radio"]
+l2 l1
+l3 l1.c..
+l4 l1[0]
+l5 [l4, "digital radio"]
+l6 [l1[0], "digital radio"]
+l7 NewList(l1)
+l8 ["unleaded"]
 
 # A bunch of `Car`s
-my_car = Car("Toyota Corolla", "black")
-other_car1 = my_car
-other_car2 = Car("Toyota Corolla", "black")
-other_car3 = Car("Toyota Corolla", "red")
-other_car4 = Car("Porsche Cayenne", "black")
+my_car Car("Toyota Corolla", "black")
+other_car1 my_car
+other_car2 Car("Toyota Corolla", "black")
+other_car3 Car("Toyota Corolla", "red")
+other_car4 Car("Porsche Cayenne", "black")
 
 
 # Test staticmethod Car.age

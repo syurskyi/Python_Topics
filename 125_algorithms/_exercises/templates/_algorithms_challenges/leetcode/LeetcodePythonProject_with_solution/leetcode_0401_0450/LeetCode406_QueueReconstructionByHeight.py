@@ -13,12 +13,12 @@ c_ Solution(o..
         r.. res
         
     ___ test
-        testCases = [
+        testCases [
             [[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]],
         ]
         ___ people __ testCases:
             print('people: %s' % people)
-            result = reconstructQueue(people)
+            result reconstructQueue(people)
             print('result: %s' % result)
             print('-='*30+'-')
 

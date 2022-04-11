@@ -25,7 +25,7 @@ Note:
 The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph
 is represented.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -46,8 +46,8 @@ c_ Solution:
         r.. topological_sort(V)
 
     ___ topological_sort  V
-        visited = s..()
-        marked = s..()
+        visited s..()
+        marked s..()
         ret    # list
 
         ___ k __ V.k..:

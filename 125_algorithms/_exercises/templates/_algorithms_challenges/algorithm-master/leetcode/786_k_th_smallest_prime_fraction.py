@@ -21,7 +21,7 @@ c_ Solution:
         :rtype: List[int]
         """
         heap    # list
-        n = l..(A)
+        n l..(A)
 
         A.s..()
 
@@ -29,11 +29,11 @@ c_ Solution:
             heappush(heap, (A[i]/A[-1], i, n - 1
 
         ___ _ __ r..(K - 1
-            _, i, j = heappop(heap)
+            _, i, j heappop(heap)
 
             j -_ 1
             __ j >_ 0:
                 heappush(heap, (A[i]/A[j], i, j
 
-        _, i, j = heappop(heap)
+        _, i, j heappop(heap)
         r.. [A[i], A[j]]

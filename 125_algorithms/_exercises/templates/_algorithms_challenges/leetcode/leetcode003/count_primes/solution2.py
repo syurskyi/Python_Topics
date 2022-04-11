@@ -12,23 +12,23 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        t = [T.. ___ i __ r..(n)]
-        i = 2
+        t [T.. ___ i __ r..(n)]
+        i 2
         w.... i * i < n:
             __ t[i] __ F..:
                 i += 1
                 _____
-            j = i * i
+            j i * i
             w.... j < n:
-                t[j] = F..
+                t[j] F..
                 j += i
             i += 1
-        res = 0
+        res 0
         ___ i __ r..(2, n
             __ t[i] __ T..
                 res += 1
         r.. res
 
 
-s = Solution()
+s Solution()
 print(s.countPrimes(500

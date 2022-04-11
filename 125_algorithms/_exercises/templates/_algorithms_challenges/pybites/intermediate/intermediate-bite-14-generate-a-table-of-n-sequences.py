@@ -20,25 +20,25 @@ Bonus: use a generator to build up the table rows.
 
 _______ r__
 
-names = 'Julian Bob PyBites Dante Martin Rodolfo'.s..
-aliases = 'Pythonista Nerd Coder'.s..  * 2
-points = r__.s.. r..(81, 101), 6)
-awake = [T.., F..] * 3
-SEPARATOR = ' | '
+names 'Julian Bob PyBites Dante Martin Rodolfo'.s..
+aliases 'Pythonista Nerd Coder'.s..  * 2
+points r__.s.. r..(81, 101), 6)
+awake [T.., F..] * 3
+SEPARATOR ' | '
 
 
 ### ----------- My solution ---------------------------
 
 ___ my_generate_table $
     l    # list
-    result = z.. $)
+    result z.. $)
     ___ i __ result:
-        s = ""
+        s ""
         ___ t __ i:
             __ s __ "":
-                s = s..(t)
+                s s..(t)
             ____
-                s = s + " | " + s..(t)
+                s s + " | " + s..(t)
         l.a..(s)
     r.. l
 
@@ -46,5 +46,5 @@ ___ my_generate_table $
 
 ___ pyb_generate_table(*sequences
     ___ seq __ z..(*sequences
-        seq = [s..(val) ___ val __ seq]
+        seq [s..(val) ___ val __ seq]
         y.. SEPARATOR.j..(seq)

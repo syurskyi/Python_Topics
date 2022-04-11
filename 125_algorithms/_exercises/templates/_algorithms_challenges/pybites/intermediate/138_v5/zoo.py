@@ -1,11 +1,11 @@
 c_ Animal:
     # 'Class variables'
-    _zoo = N..
-    _index = N..
+    _zoo N..
+    _index N..
 
     ___ - , name: s..
-        name = name.t..
-        index = _next_index()
+        name name.t..
+        index _next_index()
         _add_to_zoo(self)
 
     ___  -r
@@ -14,7 +14,7 @@ c_ Animal:
     @classmethod
     ___ _next_index(cls
         __ cls._index __ N..
-            cls._index = 10000
+            cls._index 10000
         cls._index += 1
         r.. cls._index
 

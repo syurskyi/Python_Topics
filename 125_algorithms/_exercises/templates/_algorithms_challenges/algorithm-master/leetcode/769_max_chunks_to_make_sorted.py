@@ -26,15 +26,15 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        ans = 0
+        ans 0
 
         __ n.. nums:
             r.. ans
 
-        _max = 0  # since 0 is the min in nums
+        _max 0  # since 0 is the min in nums
 
         ___ i __ r..(l..(nums:
-            _max = m..(_max, nums[i])
+            _max m..(_max, nums[i])
 
             __ _max __ i:
                 ans += 1
@@ -48,19 +48,19 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        ans = 0
+        ans 0
 
         __ n.. nums:
             r.. ans
 
-        n = l..(nums)
-        M = [0] * n  # `M[i]` means the max in [0:i] in nums
+        n l..(nums)
+        M [0] * n  # `M[i]` means the max in [0:i] in nums
 
         ___ i __ r..(n
-            M[i] = nums[i]
+            M[i] nums[i]
 
             __ i > 0 a.. M[i - 1] > M[i]:
-                M[i] = M[i - 1]
+                M[i] M[i - 1]
 
         ___ i __ r..(n
             __ M[i] __ i:

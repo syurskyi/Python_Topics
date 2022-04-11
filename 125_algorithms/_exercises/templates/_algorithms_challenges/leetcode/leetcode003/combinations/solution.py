@@ -23,7 +23,7 @@ c_ Solution(o..
         :type k: int
         :rtype: List[List[int]]
         """
-        a = r..(1, n + 1)
+        a r..(1, n + 1)
         r.. combine_aux(a, k)
 
     ___ combine_aux  a, k
@@ -32,7 +32,7 @@ c_ Solution(o..
         ____
             res    # list
             ___ i, e __ e..(a
-                rest_comb = combine_aux(a[i + 1:], k - 1)
+                rest_comb combine_aux(a[i + 1:], k - 1)
                 ___ comb __ rest_comb:
                     comb.insert(0, e)
                 res += rest_comb

@@ -6,14 +6,14 @@ c_ Solution(o..
     :rtype: List[int]
     """
     d    # dict
-    ans = [-1] * l..(findNums)
+    ans [-1] * l..(findNums)
     ___ i, num __ e..(findNums
-      d[num] = i
+      d[num] i
     stack    # list
     ___ num __ nums:
       w.... stack a.. stack[-1] < num:
-        top = stack.p.. )
+        top stack.p.. )
         __ top __ d:
-          ans[d[top]] = num
+          ans[d[top]] num
       stack.a..(num)
     r.. ans

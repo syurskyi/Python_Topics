@@ -26,27 +26,27 @@ Main Concept:
 
 
 c_ Solution:
-    WALL = 'W'
-    ENEMY = 'E'
-    EMPTY = '0'
+    WALL 'W'
+    ENEMY 'E'
+    EMPTY '0'
 
     ___ maxKilledEnemies  grid
         """
         :type grid: list[list[str]]
         :rtype: int
         """
-        ans = 0
+        ans 0
         __ n.. grid o. n.. grid[0]:
             r.. ans
 
-        m, n = l..(grid), l..(grid[0])
-        row, cols = 0, [0] * n
+        m, n l..(grid), l..(grid[0])
+        row, cols 0, [0] * n
 
         ___ x __ r..(m
             ___ y __ r..(n
                 # calculate bomb in cur section [x, 'WALL' | m) in col
                 __ x __ 0 o. grid[x - 1][y] __ WALL:
-                    cols[y] = 0
+                    cols[y] 0
 
                     ___ i __ r..(x, m
                         __ grid[i][y] __ WALL:
@@ -56,7 +56,7 @@ c_ Solution:
 
                 # calculate bomb in cur section [y, 'WALL' | n) in row
                 __ y __ 0 o. grid[x][y - 1] __ WALL:
-                    row = 0
+                    row 0
 
                     ___ i __ r..(y, n
                         __ grid[x][i] __ WALL:
@@ -65,7 +65,7 @@ c_ Solution:
                             row += 1
 
                 __ grid[x][y] __ EMPTY a.. row + cols[y] > ans:
-                    ans = row + cols[y]
+                    ans row + cols[y]
 
         r.. ans
 
@@ -75,23 +75,23 @@ TLE
 time: O(m^2 * n^2)
 """
 c_ Solution:
-    WALL = 'W'
-    ENEMY = 'E'
-    EMPTY = '0'
+    WALL 'W'
+    ENEMY 'E'
+    EMPTY '0'
 
     ___ maxKilledEnemies  grid
         """
         :type grid: list[list[str]]
         :rtype: int
         """
-        ans = 0
+        ans 0
         __ n.. grid o. n.. grid[0]:
             r.. ans
 
         ___ x __ r..(l..(grid:
             ___ y __ r..(l..(grid[0]:
                 __ grid[x][y] __ EMPTY:
-                    ans = m..(
+                    ans m..(
                         ans,
                         get_killed_cnt(grid, x, y)
                     )
@@ -99,8 +99,8 @@ c_ Solution:
         r.. ans
 
     ___ get_killed_cnt  grid, i, j
-        m, n = l..(grid), l..(grid[0])
-        cnt = 0
+        m, n l..(grid), l..(grid[0])
+        cnt 0
 
         # up
         ___ x __ r..(i, -1, -1

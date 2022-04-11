@@ -14,8 +14,8 @@ Recursive solution is trivial, could you do it iteratively?
 # Definition for a Node.
 c_ Node:
     ___ - , val, children
-        val = val
-        children = children
+        val val
+        children children
 
 
 ____ t___ _______ L..
@@ -30,11 +30,11 @@ c_ Solution:
         __ n.. root:
             r.. []
 
-        ret = d..()
-        stk = [root]
-        visited = s..()
+        ret d..()
+        stk [root]
+        visited s..()
         w.... stk:
-            cur = stk.p.. )
+            cur stk.p.. )
             ret.appendleft(cur.val)
             ___ c __ cur.children:
                 stk.a..(c)
@@ -49,10 +49,10 @@ c_ Solution:
         __ n.. root:
             r.. ret
 
-        stk = [root]
-        visited = s..()
+        stk [root]
+        visited s..()
         w.... stk:
-            cur = stk[-1]
+            cur stk[-1]
             __ cur __ visited:
                 stk.p.. )
                 ret.a..(cur.val)

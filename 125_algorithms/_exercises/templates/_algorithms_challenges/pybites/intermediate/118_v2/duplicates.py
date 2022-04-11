@@ -9,16 +9,16 @@ ___ get_duplicate_indices(words
        ['is', 'it', 'true', 'or', 'is', 'it', 'not?'] => [0, 1]
        Make sure the returning list is unique and sorted in ascending order."""
 
-    result = s..()
+    result s..()
     
 
-    occurences = d..(i..)
+    occurences d..(i..)
 
     ___ i,word __ e..(words
         __ word __ occurences:
             result.add(occurences[word])
         ____
-            occurences[word] = i
+            occurences[word] i
 
     
 

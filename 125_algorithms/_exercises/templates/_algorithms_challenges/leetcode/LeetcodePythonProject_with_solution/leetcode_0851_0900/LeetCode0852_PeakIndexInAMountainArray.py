@@ -9,14 +9,14 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: int
         """
-        arr = A
-        l, r = 0, l..(arr)-1
+        arr A
+        l, r 0, l..(arr)-1
         w.... l < r:
-            m = (l+r)//2
+            m (l+r)//2
             __ arr[m] < arr[m+1]:
-                l = m+1
+                l m+1
             ____
-                r = m
+                r m
         r.. l
     
     ___ peakIndexInMountainArray_On  A
@@ -24,22 +24,22 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: int
         """
-        arr = A
-        res = -1
-        val = f__('-inf')
+        arr A
+        res -1
+        val f__('-inf')
         ___ i, num __ e..(arr
             __ num > val:
-                res = i
-            val = m..(val, num)
+                res i
+            val m..(val, num)
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [0,1,0],
             [0,2,1,0],
         ]
         ___ a __ testCases:
-            res = peakIndexInMountainArray(a)
+            res peakIndexInMountainArray(a)
             print('result: %s' % res)
             print('-='*30+'-')
 

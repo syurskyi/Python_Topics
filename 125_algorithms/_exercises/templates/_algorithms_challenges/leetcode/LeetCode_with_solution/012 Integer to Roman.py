@@ -3,8 +3,8 @@ Given an integer, convert it to a roman numeral.
 
 Input is guaranteed to be within the range from 1 to 3999.
 """
-__author__ = 'Danyang'
-int2roman = {
+__author__ 'Danyang'
+int2roman {
     1: "I",
     4: "IV",
     5: "V",
@@ -34,7 +34,7 @@ c_ Solution:
         :return: a string
         """
         string_builder    # list
-        components = [1, 4, 5, 9, 10, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
+        components [1, 4, 5, 9, 10, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
 
         # starting from the largest
         ___ component __ r..(components  # reversed

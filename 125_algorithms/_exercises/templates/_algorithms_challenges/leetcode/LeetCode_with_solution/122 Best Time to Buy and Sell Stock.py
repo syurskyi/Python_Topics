@@ -4,7 +4,7 @@ Say you have an array for which the ith element is the price of a given stock on
 If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an
 algorithm to find the maximum profit.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -17,12 +17,12 @@ c_ Solution(o..
         __ l..(A) <_ 1:
             r.. 0
 
-        n = l..(A)
-        F = [0 ___ _ __ x..(n+1)]
-        maxa = 0
+        n l..(A)
+        F [0 ___ _ __ x..(n+1)]
+        maxa 0
         ___ i __ x..(2, n+1
-            F[i] = m..(F[i-1] + A[i-1] - A[i-2], 0)  # revert the previous transaction
-            maxa = m..(maxa, F[i])
+            F[i] m..(F[i-1] + A[i-1] - A[i-2], 0)  # revert the previous transaction
+            maxa m..(maxa, F[i])
 
         r.. maxa
 
@@ -46,11 +46,11 @@ c_ Solution(o..
 
         # O(n)
         # notice: possible to do nothing thus profit at least is 0 
-        max_sub_array = 0
-        current_sub_array = 0
+        max_sub_array 0
+        current_sub_array 0
         ___ j __ x..(l..(delta_prices:
-            current_sub_array = m..(0, current_sub_array+delta_prices[j])
-            max_sub_array = m..(max_sub_array, current_sub_array)
+            current_sub_array m..(0, current_sub_array+delta_prices[j])
+            max_sub_array m..(max_sub_array, current_sub_array)
 
         r.. max_sub_array
 

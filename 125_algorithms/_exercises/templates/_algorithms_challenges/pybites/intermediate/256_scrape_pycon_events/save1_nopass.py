@@ -6,11 +6,11 @@ _______ r__
 ____ bs4 _______ BeautifulSoup __ Soup
 ____ dateutil.parser _______ p..
 
-PYCON_DATA = "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
+PYCON_DATA "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
 
-PyCon = n..("PyCon", "name city country start_date end_date url")
+PyCon n..("PyCon", "name city country start_date end_date url")
 
-country_lookup = {
+country_lookup {
     "Africa": [
         "Algeria", "Angola", "Benin", "Botswana",
         "Burkina Faso", "Burundi", "Cameroon", "Cape Verde",
@@ -106,8 +106,8 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     return a list of PyCon namedtuples. Pay attention to the
     application/ld+json data structure website data.
     """
-    soup = Soup(data, features='html.parser')
-    data = soup.find_all('script', t..='application/ld+json')
+    soup Soup(data, features='html.parser')
+    data soup.find_all('script', t..='application/ld+json')
     event_list    # list
     ___ x __ data:
         event_list.a..(PyCon(name=j__.l.. (x.s__)["name"],
@@ -120,8 +120,8 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
 
 
 ___ filter_pycons(pycons: L..[PyCon],
-                  year: i.. = 2019,
-                  continent: s.. = "Europe") __ L..[PyCon]:
+                  year: i.. 2019,
+                  continent: s.. "Europe") __ L..[PyCon]:
     """
     Given a list of PyCons a year and a continent return
     a list of PyCons that take place in that year and on
@@ -129,8 +129,8 @@ ___ filter_pycons(pycons: L..[PyCon],
     """
     filtered_list    # list
     ___ event __ pycons:
-        event_year = p..(event.start_date).year
-        event_continent = get_continent(event.country)
+        event_year p..(event.start_date).year
+        event_continent get_continent(event.country)
         __ event_year __ year a.. event_continent __ continent:
             filtered_list.a..(event)
     r.. filtered_list

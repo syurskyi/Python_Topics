@@ -3,7 +3,7 @@ c_ Solution:
     # @return a list of string
     ___ generateParenthesis  n
         res    # list
-        cand = ''
+        cand ''
         gp(n, n, cand, res)
         r.. res
 

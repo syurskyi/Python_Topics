@@ -18,7 +18,7 @@ ____ Trip _______ Trip, Helper
 c_ MiniUber:
     driver_to_locs    # dict
     driver_to_trip    # dict
-    INFINITY = f__('inf')
+    INFINITY f__('inf')
 
     # @param {int} driver_id an integer
     # @param {double} lat, lng driver's location
@@ -35,7 +35,7 @@ c_ MiniUber:
             driver_to_locs[driver_id] 'lat'  = lat
             driver_to_locs[driver_id] 'lng'  = lng
         ____
-            driver_to_locs[driver_id] = _new_location(lat, lng)
+            driver_to_locs[driver_id] _new_location(lat, lng)
 
     # @param rider_id an integer
     # @param lat, lng rider's location
@@ -43,21 +43,21 @@ c_ MiniUber:
     ___ request  rider_id, lat, lng
         __ n.. rider_id:
             r..
-        trip = Trip(rider_id, lat, lng)
-        _distance = distance = INFINITY
-        driver_id = -1
+        trip Trip(rider_id, lat, lng)
+        _distance distance INFINITY
+        driver_id -1
 
         ___ _driver_id, _loc __ driver_to_locs.i..:
-            _distance = Helper.get_distance(_loc 'lat' , _loc 'lng' , lat, lng)
+            _distance Helper.get_distance(_loc 'lat' , _loc 'lng' , lat, lng)
             __ _distance < distance:
-                driver_id = _driver_id
-                distance = _distance
+                driver_id _driver_id
+                distance _distance
 
         __ driver_id __ -1:
             r.. trip
 
-        trip.driver_id = driver_id
-        driver_to_trip[driver_id] = trip
+        trip.driver_id driver_id
+        driver_to_trip[driver_id] trip
         del driver_to_locs[driver_id]
 
         r.. trip

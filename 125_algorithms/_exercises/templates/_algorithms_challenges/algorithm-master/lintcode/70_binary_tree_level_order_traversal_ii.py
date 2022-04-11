@@ -17,14 +17,14 @@ c_ Solution:
         __ n.. root:
             r.. ans
 
-        preorder = [(root, 1)]
+        preorder [(root, 1)]
         dfs(root, ans, preorder, 0)
 
         """
         cannot do append in dfs,
         since it may be the deepest node is at right child
         """
-        height = l..(ans)
+        height l..(ans)
         ___ node, level __ preorder:
             ans[height - level].a..(node.val)
 
@@ -34,7 +34,7 @@ c_ Solution:
         __ l..(ans) < preorder[parent_at][1]:
             ans.a..([])
 
-        depth = preorder[parent_at][1] + 1
+        depth preorder[parent_at][1] + 1
 
         __ node.left:
             preorder.a..((node.left, depth

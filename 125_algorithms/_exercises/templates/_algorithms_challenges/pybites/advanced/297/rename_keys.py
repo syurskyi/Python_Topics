@@ -14,17 +14,17 @@ ___ rename_keys(data: Dict[A.., A..]) __ Dict[A.., A..]:
 
 
         __ isi..(key,s..
-            key = __.s.. _ ^@','',key)
+            key __.s.. _ ^@','',key)
 
         __ isi..(value,d..
-            new_dict[key] = rename_keys(value)
+            new_dict[key] rename_keys(value)
         ____
             __ isi..(value,l..
                 values    # list
                 ___ v __ value:
                     values.a..(rename_keys(v
-                value = values
-            new_dict[key] = value
+                value values
+            new_dict[key] value
 
 
 
@@ -38,7 +38,7 @@ __ _______ __ _______
 
 
 
-    d = {'@contentUrl': 'contentUrl',
+    d {'@contentUrl': 'contentUrl',
          '@createdAt': d__.s..('2020-06-11T09:08:13Z', '%Y-%m-%dT%H:%M:%SZ'),
           '@defaultViewId': 'defaultViewId',
           '@encryptExtracts': F..,

@@ -19,24 +19,24 @@ c_ Solution(o..
         __ node __ N..
             r.. N..
         queue    # list
-        start_node = node
-        start_cloned_node = UndirectedGraphNode(node.label)
-        d = {node: start_cloned_node}
+        start_node node
+        start_cloned_node UndirectedGraphNode(node.label)
+        d {node: start_cloned_node}
         queue.a..(node)
-        i = 0
+        i 0
         w.... i < l..(queue
-            node = queue[i]
+            node queue[i]
             i += 1
             ___ neighbor __ node.neighbors:
                 __ neighbor n.. __ d:
                     queue.a..(neighbor)
-                    cloned_neighbor = UndirectedGraphNode(neighbor.label)
-                    d[neighbor] = cloned_neighbor
+                    cloned_neighbor UndirectedGraphNode(neighbor.label)
+                    d[neighbor] cloned_neighbor
         ___ node __ queue:
-            cloned_node = d[node]
+            cloned_node d[node]
             cloned_neighbors    # list
             ___ neighbor __ node.neighbors:
-                cloned_neighbor = d[neighbor]
+                cloned_neighbor d[neighbor]
                 cloned_neighbors.a..(cloned_neighbor)
-            cloned_node.neighbors = cloned_neighbors
+            cloned_node.neighbors cloned_neighbors
         r.. d[start_node]

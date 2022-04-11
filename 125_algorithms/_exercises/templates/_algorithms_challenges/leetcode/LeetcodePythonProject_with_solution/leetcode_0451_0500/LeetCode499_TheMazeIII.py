@@ -12,11 +12,11 @@ c_ Solution(o..
         :type hole: List[int]
         :rtype: str
         """
-        m, n = l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze[0])
         result    # list
-        visited = [[F..]*n ___ _ __ r..(m)]
-        maxPath = f__('inf')
-        map = [[f__('inf')]*n ___ _ __ r..(m)]
+        visited [[F..]*n ___ _ __ r..(m)]
+        maxPath f__('inf')
+        map [[f__('inf')]*n ___ _ __ r..(m)]
         helper(maze, ball, hole, '', 0, result, visited)
         result.s..(key=l.... x: (x[1], x[0]
         __ result:
@@ -27,20 +27,20 @@ c_ Solution(o..
     ___ helper  matrix, start, hole, curr, p.., result, visited
         __ p.. > maxPath o. p.. > map[start[0]][start[1]]:
             r..
-        nextSteps = getNextSteps(matrix, start[0], start[1])
-        visited[start[0]][start[1]] = T..
-        map[start[0]][start[1]] = m.. m..[start[0]][start[1]], p..)
+        nextSteps getNextSteps(matrix, start[0], start[1])
+        visited[start[0]][start[1]] T..
+        map[start[0]][start[1]] m.. m..[start[0]][start[1]], p..)
         ___ step __ nextSteps:
-            stop = [step[0], step[1]]
-            dirStr = step[2]
-            dist = step[3]
-            res, dist0 = isPassing(matrix, start, stop, hole)
+            stop [step[0], step[1]]
+            dirStr step[2]
+            dist step[3]
+            res, dist0 isPassing(matrix, start, stop, hole)
             __ res:
-                maxPath = m..(maxPath, p..+dist0)
+                maxPath m..(maxPath, p..+dist0)
                 result.a..((curr+dirStr, p..+dist0
             ____ n.. visited[stop[0]][stop[1]]:
                 helper(matrix, stop, hole, curr+dirStr, p..+dist, result, visited)
-        visited[start[0]][start[1]] = F..
+        visited[start[0]][start[1]] F..
     
     ___ isPassing  maze, start, stop, hole
         __ start[0] __ stop[0] __ hole[0]:
@@ -56,12 +56,12 @@ c_ Solution(o..
         r.. F.., 0
     
     ___ getNextSteps  matrix, i, j
-        steps = s..()
-        m, n = l..(matrix), l..(matrix[0])
-        dirs = (1, 0, 'd'), (0, 1, _, (-1, 0, 'u'), (0, -1, 'l')
+        steps s..()
+        m, n l..(matrix), l..(matrix[0])
+        dirs (1, 0, 'd'), (0, 1, _, (-1, 0, 'u'), (0, -1, 'l')
         ___ dir __ dirs:
-            x, y = i, j
-            dist = 0
+            x, y i, j
+            dist 0
             w.... 0 <_ x+dir[0] < m a.. 0 <_ y+dir[1] < n a..\
                 matrix[x+dir[0]][y+dir[1]] __ 0:
                 x += dir[0]

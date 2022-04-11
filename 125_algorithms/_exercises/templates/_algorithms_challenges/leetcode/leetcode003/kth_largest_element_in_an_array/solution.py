@@ -22,12 +22,12 @@ c_ Solution(o..
         ___ e __ nums:
             heapq.heappush(h, (-e, e
         ___ i __ r..(k
-            w, e = heapq.heappop(h)
+            w, e heapq.heappop(h)
             __ i __ k - 1:
                 r.. e
 
 
-a1 = [3, 2, 1, 5, 6, 4]
-s = Solution()
-res = s.findKthLargest(a1, 2)
+a1 [3, 2, 1, 5, 6, 4]
+s Solution()
+res s.findKthLargest(a1, 2)
 print(res)

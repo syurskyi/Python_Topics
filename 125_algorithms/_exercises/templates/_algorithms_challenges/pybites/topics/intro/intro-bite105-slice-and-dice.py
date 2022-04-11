@@ -12,7 +12,7 @@ At the end of the function return the results list.
 '''
 
 
-text = """
+text """
 One really nice feature of Python is polymorphism: using the same operation
 on different types of objects.
 Let's talk about an elegant feature: slicing.
@@ -35,13 +35,13 @@ ___ my_slice_and_dice(text=text
        the results list. Make sure the you strip off any trailing
        exclamation marks (!) and dots (.), Return the results list."""
     results    # list
-    s = text.s...s..('\n')
+    s text.s...s..('\n')
     ___ item __ s:
-        item = item.s..
+        item item.s..
         __ item[0].isl..
-            item = item.r..('!')
-            item = item.r..('.')
-            words = item.s..(' ')
+            item item.r..('!')
+            item item.r..('.')
+            words item.s..(' ')
             results.a..(words[words.__len__()-1])
     r.. results
 
@@ -54,13 +54,13 @@ ___ slice_and_dice(text=text
        exclamation marks (!) and dots (.), Return the results list."""
     results    # list
     ___ line __ text.s...s..('\n'
-        line = line.s..
+        line line.s..
 
         __ line[0] n.. __ a..:
             _____
-        words = line.s.. 
+        words line.s..
 
-        last_word_stripped = words[-1].r..('!.')
+        last_word_stripped words[-1].r..('!.')
         results.a..(last_word_stripped)
 
     r.. results

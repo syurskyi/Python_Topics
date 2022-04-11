@@ -12,12 +12,12 @@ c_ Solution:
     # @param A, a list of integers
     # @return an integer
     ___ firstMissingPositive  A
-        n = l..(A)
-        i = 0
+        n l..(A)
+        i 0
         w.... i < n:
-            j = A[i] - 1
+            j A[i] - 1
             __ A[i] != i + 1 a.. A[i] >_ 1 a.. A[i] <_ n a.. A[i] != A[j]:
-                A[i], A[j] = A[j], A[i]
+                A[i], A[j] A[j], A[i]
             ____
                 i += 1
         ___ i, e __ e..(A

@@ -34,13 +34,13 @@ c_ Solution:
         """
         Greedy? Sort by profit
         """
-        tasks = l..(s..(z..(profit, difficulty)))
+        tasks l..(s..(z..(profit, difficulty)))
         worker.s..()
-        i = l..(tasks) - 1
-        j = l..(worker) - 1
-        ret = 0
+        i l..(tasks) - 1
+        j l..(worker) - 1
+        ret 0
         w.... i >_ 0 a.. j >_ 0:
-            pro, diff = tasks[i]
+            pro, diff tasks[i]
             __ worker[j] >_ diff:
                 ret += pro
                 j -_ 1

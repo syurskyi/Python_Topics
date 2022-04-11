@@ -1,9 +1,9 @@
-MAX_FRAME = 10
+MAX_FRAME 10
 
 
 c_ Frame(o..
     ___ - , idx
-        idx = idx
+        idx idx
         throws    # list
 
     $
@@ -30,7 +30,7 @@ c_ Frame(o..
         throws.a..(pins)
 
     ___ score  next_throws
-        result = total_pins
+        result total_pins
         __ is_strike
             result += s..(next_throws[:2])
         ____ is_spare
@@ -40,9 +40,9 @@ c_ Frame(o..
 
 c_ BowlingGame(o..
     ___ -
-        current_frame_idx = 0
+        current_frame_idx 0
         bonus_throws    # list
-        frames = [Frame(idx) ___ idx __ r..(MAX_FRAME)]
+        frames [Frame(idx) ___ idx __ r..(MAX_FRAME)]
 
     $
     ___ current_frame
@@ -57,7 +57,7 @@ c_ BowlingGame(o..
         r.. throws
 
     ___ roll_bonus  pins
-        tenth_frame = frames[-1]
+        tenth_frame frames[-1]
         __ tenth_frame.is_open
             r.. IndexError("cannot throw bonus with an open tenth frame")
 

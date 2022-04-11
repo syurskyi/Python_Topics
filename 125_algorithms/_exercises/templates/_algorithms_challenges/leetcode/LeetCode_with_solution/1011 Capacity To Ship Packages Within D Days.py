@@ -62,21 +62,21 @@ c_ Solution:
 
         Binary search on value range (max, sum)
         """
-        lo = m..(weights)
-        hi = s..(weights)
+        lo m..(weights)
+        hi s..(weights)
         w.... lo < hi:
-            mid = (lo + hi) // 2
-            cnt = 1
-            cur = 0
+            mid (lo + hi) // 2
+            cnt 1
+            cur 0
             ___ w __ weights:
                 cur += w
                 __ cur > mid:
                     cnt += 1
-                    cur = w
+                    cur w
                     
             __ cnt > D:
-                lo = mid + 1
+                lo mid + 1
             ____
-                hi = mid
+                hi mid
 
         r.. lo

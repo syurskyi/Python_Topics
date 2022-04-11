@@ -8,7 +8,7 @@ a) Insert a character
 b) Delete a character
 c) Replace a character
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ minDistance  word1, word2
         """
@@ -60,21 +60,21 @@ c_ Solution:
         :param word2: String
         :return: integer
         """
-        m = l..(word1)
-        n = l..(word2)
-        d = [[-1 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
+        m l..(word1)
+        n l..(word2)
+        d [[-1 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
 
 
         ___ i __ x..(m+1
-            d[i][0] = i
+            d[i][0] i
         ___ j __ x..(n+1
-            d[0][j] = j
+            d[0][j] j
 
 
         ___ i __ x..(1, m+1
             ___ j __ x..(1, n+1
                 __ word1[i-1]__word2[j-1]:
-                    d[i][j] = d[i-1][j-1]
+                    d[i][j] d[i-1][j-1]
                 ____
                     d[i][j]= m..(
                         d[i-1][j]+1,  # deletion

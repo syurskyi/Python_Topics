@@ -51,8 +51,8 @@ c_ Solution(o..
         """
         __ root __ n.. N..
             __ root.left __ n.. N..
-                root.left.next = root.right
+                root.left.next root.right
             __ root.right __ n.. N.. a.. root.next __ n.. N..
-                root.right.next = root.next.left
+                root.right.next root.next.left
             connect(root.left)
             connect(root.right)

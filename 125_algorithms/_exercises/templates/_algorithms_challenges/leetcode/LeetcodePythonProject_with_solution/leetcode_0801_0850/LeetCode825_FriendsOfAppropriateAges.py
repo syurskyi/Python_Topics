@@ -9,10 +9,10 @@ c_ Solution(o..
         :type ages: List[int]
         :rtype: int
         """
-        count = [0]*121
+        count [0]*121
         ___ x __ ages:
             count[x] += 1
-        res = 0
+        res 0
         ___ i __ r..(1, 121
             __ i > 14:
                 res += count[i]*(count[i]-1+count[i-1]-count[i//2+7])
@@ -20,7 +20,7 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [16,16],
             [16,17,18],
             [20,30,100,110,120],
@@ -28,7 +28,7 @@ c_ Solution(o..
         ]
         ___ ages __ testCases:
             print('ages: %s' % ages)
-            result = numFriendRequests(ages)
+            result numFriendRequests(ages)
             print('result: %s' % result)
             print('-='*30+'-')
 

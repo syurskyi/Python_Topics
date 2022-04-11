@@ -6,7 +6,7 @@ Created on Apr 5, 2017
 
 c_ Solution(o..
     ___ integerReplacement  n
-        steps = 0
+        steps 0
         w.... n > 1:
             steps += 1
             __ n%2 __ 0:

@@ -6,7 +6,7 @@ ___ romanize(decimal_number
         r.. V...("Invalid number")
 
 
-    number_to_numeral = {1000: 'M',900: 'CM',500: 'D',400: 'CD',100: 'C',90:'XC',50: 'L',40: 'XL',10: 'X',9: 'IX',5: 'V',4: 'IV',1: 'I'}
+    number_to_numeral {1000: 'M',900: 'CM',500: 'D',400: 'CD',100: 'C',90:'XC',50: 'L',40: 'XL',10: 'X',9: 'IX',5: 'V',4: 'IV',1: 'I'}
     
 
     result    # list
@@ -15,7 +15,7 @@ ___ romanize(decimal_number
         
         __ base_value > decimal_number:
             _____
-        value = decimal_number // base_value
+        value decimal_number // base_value
         result.a..(value * numeral)
 
         decimal_number %= base_value

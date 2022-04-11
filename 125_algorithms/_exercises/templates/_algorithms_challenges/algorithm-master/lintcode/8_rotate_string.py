@@ -8,7 +8,7 @@ c_ Solution:
         __ n.. S o. n.. x:
             r.. S
 
-        n = l..(S)
+        n l..(S)
         x %= n
         reverse(S, 0, n - x - 1)
         reverse(S, n - x, n - 1)
@@ -16,6 +16,6 @@ c_ Solution:
 
     ___ reverse  S, start, end
         w.... start < end:
-            S[start], S[end] = S[end], S[start]
+            S[start], S[end] S[end], S[start]
             start += 1
             end -_ 1

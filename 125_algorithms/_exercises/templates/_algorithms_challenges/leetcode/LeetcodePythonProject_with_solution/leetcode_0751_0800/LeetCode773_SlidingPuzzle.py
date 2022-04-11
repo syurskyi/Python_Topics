@@ -9,26 +9,26 @@ c_ Solution(o..
         :type board: List[List[int]]
         :rtype: int
         """
-        s = ''.j..([s..(n) ___ n __ board[0]])+''.j..([s..(n) ___ n __ board[1]])
-        visited = s..([s])
-        target = '123450'
-        queue = [s]
-        res = 0
+        s ''.j..([s..(n) ___ n __ board[0]])+''.j..([s..(n) ___ n __ board[1]])
+        visited s..([s])
+        target '123450'
+        queue [s]
+        res 0
         w.... queue:
-            size = l..(queue)
+            size l..(queue)
             ___ _ __ r..(size
-                s = queue.p.. 0)
+                s queue.p.. 0)
                 __ s __ target:
                     r.. res
-                i = s.i.. '0')
+                i s.i.. '0')
                 ___ j __ [i+1, i-1, i+3, i-3]:
                     __ j < 0 o. j > 5 o.\
                         (i __ 2 a.. j __ 3) o.\
                         (i __ 3 a.. j __ 2
                         _____
-                    arr = l..(s)
-                    arr[i], arr[j] = arr[j], arr[i]
-                    newS = ''.j..(arr)
+                    arr l..(s)
+                    arr[i], arr[j] arr[j], arr[i]
+                    newS ''.j..(arr)
                     __ newS n.. __ visited:
                         visited.add(newS)
                         queue.a..(newS)
@@ -42,7 +42,7 @@ c_ Solution(o..
                     r.. i, j
     
     ___ test
-        testCases = [
+        testCases [
             [[1,2,3],[4,0,5]],
             [[1,2,3],[5,4,0]],
             [[4,1,2],[5,0,3]],
@@ -51,7 +51,7 @@ c_ Solution(o..
         ___ board __ testCases:
             print('board')
             print('\n'.j..([s..(row) ___ row __ board]
-            result = slidingPuzzle(board)
+            result slidingPuzzle(board)
             print('result: %s' % result)
             print('-='*30+'-')
 

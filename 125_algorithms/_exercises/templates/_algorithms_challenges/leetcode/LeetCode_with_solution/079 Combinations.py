@@ -13,7 +13,7 @@ If n = 4 and k = 2, a solution is:
   [1,4],
 ]
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ combine  n, k
         """
@@ -24,7 +24,7 @@ c_ Solution:
         :return: a list of lists of integers
         """
         result    # list
-        nums = [i+1 ___ i __ x..(n)]  # sorted, avoid duplicate
+        nums [i+1 ___ i __ x..(n)]  # sorted, avoid duplicate
         get_combination(k, nums, [], result)
         r.. result
 

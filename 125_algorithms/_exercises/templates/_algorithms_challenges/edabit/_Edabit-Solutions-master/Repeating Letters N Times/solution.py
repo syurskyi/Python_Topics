@@ -1,5 +1,5 @@
 ___ repeat(txt, n
-    s = ""
+    s ""
     ___ i __ txt:
         s += i * n
 

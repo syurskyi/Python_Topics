@@ -25,14 +25,14 @@ c_ Solution(o..
         result.insert(0, elem)
     
     ___ test
-        testCases = [
+        testCases [
             [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]],
             [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]],
             [["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]],
         ]
         ___ tickets __ testCases:
             print('tickets: %s' % tickets)
-            result = findItinerary(tickets)
+            result findItinerary(tickets)
             print('result: %s' % result)
             print('-='*20+'-')
 

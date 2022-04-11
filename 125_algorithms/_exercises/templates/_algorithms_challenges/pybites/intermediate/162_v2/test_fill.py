@@ -2,7 +2,7 @@ _______ p__
 
 ____ fill _______ prefill_with_character, HTML_SPACE
 
-DIFF_FILL = 'x'
+DIFF_FILL 'x'
 
 
 ?p__.m__.p.("value, len_, fill, result", [

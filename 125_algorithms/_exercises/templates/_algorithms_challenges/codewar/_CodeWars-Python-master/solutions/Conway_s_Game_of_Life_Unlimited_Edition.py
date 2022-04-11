@@ -7,11 +7,11 @@ ____ copy _______ d..
 
 
 ___ get_generation(cells, generations
-    origin = d..(cells)
+    origin d..(cells)
     __ generations __ 0:
         r.. origin
     __ generations > 1:
-        origin = get_generation(origin, generations - 1)
+        origin get_generation(origin, generations - 1)
 
     ___ row __ origin:
         row.insert(0, 0)
@@ -19,14 +19,14 @@ ___ get_generation(cells, generations
     origin.insert(0, [0] * l..(origin[0]
     origin.a..([0] * l..(origin[0]
 
-    result = d..(origin)
+    result d..(origin)
     ___ r __ r..(l..(origin:
         ___ c __ r..(l..(origin[0]:
-            neighbours = get_living_neighbours(origin, r, c)
+            neighbours get_living_neighbours(origin, r, c)
             __ neighbours > 3 o. neighbours < 2:
-                result[r][c] = 0
+                result[r][c] 0
             ____ neighbours __ 3:
-                result[r][c] = 1
+                result[r][c] 1
 
     trim_result(result)
 
@@ -38,13 +38,13 @@ ___ trim_result(result
         result.p.. 0)
     w.... is_row_all_empty(result[-1]
         result.p.. )
-    start_empty, end_empty = T.., T..
+    start_empty, end_empty T.., T..
     w.... start_empty o. end_empty:
         ___ r __ result:
             __ r[0] != 0:
-                start_empty = F..
+                start_empty F..
             __ r[-1] != 0:
-                end_empty = F..
+                end_empty F..
         ___ r __ result:
             __ start_empty:
                 r.p.. 0)
@@ -57,7 +57,7 @@ ___ is_row_all_empty(row
 
 
 ___ get_living_neighbours(cells, row, col
-    livings = 0
+    livings 0
     ___ r __ [-1, 0, 1]:
         __ 0 <_ row + r <_ l..(cells) - 1:
             ___ c __ [-1, 0, 1]:

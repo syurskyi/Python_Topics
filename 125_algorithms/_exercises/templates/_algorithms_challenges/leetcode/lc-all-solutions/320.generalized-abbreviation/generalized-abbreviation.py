@@ -9,8 +9,8 @@ c_ Solution(o..
       res.a..(w)
       ___ i __ r..(start, l..(w:
         ___ l __ r..(1, l..(w) - i + 1
-          lstr = s..(l)
-          llen = l..(lstr)
+          lstr s..(l)
+          llen l..(lstr)
           dfs(w[:i] + lstr + w[i + l:], i + 2 + llen - 1, res)
 
     res    # list

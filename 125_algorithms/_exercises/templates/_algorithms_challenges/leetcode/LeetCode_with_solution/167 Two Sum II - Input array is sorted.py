@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -11,11 +11,11 @@ c_ Solution(o..
         :type target: int
         :rtype: List[int]
         """
-        n = l..(numbers)
-        i = 0
-        j = n-1
+        n l..(numbers)
+        i 0
+        j n-1
         w.... i < j:
-            s = numbers[i] + numbers[j]
+            s numbers[i] + numbers[j]
             __ s __ target:
                 r.. i+1, j+1
             ____ s < target:

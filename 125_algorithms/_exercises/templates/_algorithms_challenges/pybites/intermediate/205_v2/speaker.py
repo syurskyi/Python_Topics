@@ -4,9 +4,9 @@ ____ p.. _______ P..
 _______ gender_guesser.detector __ gender
 ____ bs4 _______ BeautifulSoup __ Soup
 
-TMP = P..('/tmp')
-PYCON_HTML = TMP / "pycon2019.html"
-PYCON_PAGE = ('https://bites-data.s3.us-east-2.amazonaws.com/'
+TMP P..('/tmp')
+PYCON_HTML TMP / "pycon2019.html"
+PYCON_PAGE ('https://bites-data.s3.us-east-2.amazonaws.com/'
               'pycon2019.html')
 
 __ n.. PYCON_HTML.exists
@@ -24,13 +24,13 @@ ___ get_pycon_speaker_first_names(soup_ N..
        Return a list of first names
     """
 
-    speakers = soup.find_all('span',class_='speaker')
+    speakers soup.find_all('span',class_='speaker')
     
     first_names    # list
 
     ___ speaker __ speakers:
-        text = speaker.getText(s..=T..)
-        result = __.s..(r'\s*,|/\s*',text)
+        text speaker.getText(s..=T..)
+        result __.s..(r'\s*,|/\s*',text)
         first_names.e.. r.s.. [0] ___ r __ result)
 
     r.. first_names
@@ -47,11 +47,11 @@ ___ get_percentage_of_female_speakers(first_names
        of female speakers (female and mostly_female),
        rounded to 2 decimal places."""
     
-    d = gender.Detector(case_sensitive=F..)
-    labels = ('mostly_female','female')
-    female_count = 0
+    d gender.Detector(case_sensitive=F..)
+    labels ('mostly_female','female')
+    female_count 0
     ___ first_name __ first_names:
-        result = d.get_gender(first_name)
+        result d.get_gender(first_name)
 
         female_count += (result __ labels)
 
@@ -64,6 +64,6 @@ ___ get_percentage_of_female_speakers(first_names
 
 
 __ _____ __ _____
-    names = get_pycon_speaker_first_names()
-    perc = get_percentage_of_female_speakers(names)
+    names get_pycon_speaker_first_names()
+    perc get_percentage_of_female_speakers(names)
     print(perc)

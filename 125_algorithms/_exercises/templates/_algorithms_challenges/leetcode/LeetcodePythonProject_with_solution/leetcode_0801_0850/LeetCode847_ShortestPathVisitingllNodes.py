@@ -10,9 +10,9 @@ c_ Solution(o..
         :type graph: List[List[int]]
         :rtype: int
         """
-        n = l..(graph)
+        n l..(graph)
         queue    # list
-        hashset = s..()
+        hashset s..()
         
         ___ i __ r..(n
             tmp  (1 << i)
@@ -20,27 +20,27 @@ c_ Solution(o..
             queue.a..((tmp, i, 1
         
         w.... queue:
-            curr = queue.p.. 0)
+            curr queue.p.. 0)
             __ curr[0] __ (1 << n)-1:
                 r.. curr[2]-1
             ____
-                neighbors = graph[curr[1]]
+                neighbors graph[curr[1]]
                 ___ v __ neighbors:
-                    bitMask = curr[0]
+                    bitMask curr[0]
                     bitMask |= (1<<v)
-                    t = (bitMask, v, 0)
+                    t (bitMask, v, 0)
                     __ t n.. __ hashset:
                         queue.a..((bitMask, v, curr[2]+1
                         hashset.add(t)
         r.. -1
     
     ___ test
-        testCases = [
+        testCases [
             [[1,2,3],[0],[0],[0]],
             [[1],[0,2,4],[1,3,4],[2],[1,2]],
         ]
         ___ graph __ testCases:
-            result = shortestPathLength(graph)
+            result shortestPathLength(graph)
             print('result: %s' % result)
 
 __ _____ __ _____

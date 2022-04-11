@@ -45,17 +45,17 @@ c_ Solution:
         Prefix sum + Brute force O(N^2)
         two pointer i, j
         """
-        n = l..(A)
-        F = [0 ___ _ __ r..(n + 1)]
+        n l..(A)
+        F [0 ___ _ __ r..(n + 1)]
         ___ i, a __ e..(A
-            F[i+1] = F[i] + a
+            F[i+1] F[i] + a
 
-        ret = -f__("inf")
+        ret -f__("inf")
         ___ l, m __ ((L, M), (M, L:
             ___ i __ r..(n + 1 - l
                 ___ j __ r..(i + l, n + 1 - m  # upper needs +1 here
-                    cur = F[i + l] - F[i] + F[j + m] - F[j]
-                    ret = m..(ret, cur)
+                    cur F[i + l] - F[i] + F[j + m] - F[j]
+                    ret m..(ret, cur)
 
         r.. ret
 

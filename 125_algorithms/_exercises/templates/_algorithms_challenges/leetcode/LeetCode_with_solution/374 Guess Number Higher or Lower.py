@@ -15,7 +15,7 @@ n = 10, I pick 6.
 
 Return 6.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 # The guess API is already defined for you.
@@ -33,13 +33,13 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        lo, hi = 1, n+1
+        lo, hi 1, n+1
         w... T...
-            mid = (lo + hi) / 2
-            g = guess(mid)
+            mid (lo + hi) / 2
+            g guess(mid)
             __ g __ 0:
                 r.. mid
             ____ g < 1:
-                hi = mid
+                hi mid
             ____
-                lo = mid + 1
+                lo mid + 1

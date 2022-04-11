@@ -4,7 +4,7 @@ c_ Solution(o..
     :type n: int
     :rtype: int
     """
-    start, size, step = 1, 1, 9
+    start, size, step 1, 1, 9
     w.... n > size * step:
       n -_ size * step
       size += 1

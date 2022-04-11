@@ -6,35 +6,35 @@ _______ p__
 
 # no need to import make_html_links as we call links.py from CLI!
 
-TMP = '/tmp'
-SCRIPT = 'links.py'
-IS_LOCAL = platform.system() __  'Darwin', 'Linux'
-MY_CODE = SCRIPT __ IS_LOCAL ____ p...j..(TMP, SCRIPT)
+TMP '/tmp'
+SCRIPT 'links.py'
+IS_LOCAL platform.system() __  'Darwin', 'Linux'
+MY_CODE SCRIPT __ IS_LOCAL ____ p...j..(TMP, SCRIPT)
 
 
 # https://docs.pytest.org/en/latest/tmpdir.html#the-tmpdir-factory-fixture
 
 ?p__.f..
 ___ my_file(tmp_path
-    f = tmp_path / "some_file.txt"
+    f tmp_path / "some_file.txt"
     r.. f
 
 
 ___ _create_and_verify_links(my_file, lines, expected_links
     my_file.w..(b'\n'.j..(lines
-    cmd = f'cat {my_file.r..()} | python {MY_CODE}'
-    output = subprocess.check_output(cmd, shell=T..).s..
+    cmd f'cat {my_file.r..()} | python {MY_CODE}'
+    output subprocess.check_output(cmd, shell=T..).s..
     ... a..(link __ output ___ link __ expected_links)
 
 
 ___ test_make_html_links_first_data_set(my_file
-    lines = [b"https://www.python.org, Python Homepage",
+    lines [b"https://www.python.org, Python Homepage",
              b"bad data,blabla,123",
              (b"https://pybit.es/generators.html , "
               b"Generators are Awesome "),
              b"more bad data"]
 
-    expected_links = [(b'<a href="https://www.python.org" target="_blank">'
+    expected_links [(b'<a href="https://www.python.org" target="_blank">'
                        b'Python Homepage</a>'),
                       (b'<a href="https://pybit.es/generators.html">'
                        b'Generators are Awesome</a>')]
@@ -43,7 +43,7 @@ ___ test_make_html_links_first_data_set(my_file
 
 
 ___ test_make_html_links_second_data_set(my_file
-    lines = [b"bogus data, again",
+    lines [b"bogus data, again",
              b"https://codechalleng.es/bites/ , Bites of Py",
              (b"https://stackoverflow.com/a/12927564,How to capture"
               b" subprocess.call stdout"),
@@ -52,7 +52,7 @@ ___ test_make_html_links_second_data_set(my_file
              b"https://nu.nl, Dutch news site",
              b"And some more bad data !!"]
 
-    expected_links = [(b'<a href="https://codechalleng.es/bites/">'
+    expected_links [(b'<a href="https://codechalleng.es/bites/">'
                        b'Bites of Py</a>'),
                       (b'<a href="https://stackoverflow.com/a/12927564" '
                        b'target="_blank">How to capture subprocess.call '

@@ -10,29 +10,29 @@ c_ Solution(o..
         :rtype: int
         """
         hashmap    # dict
-        maxLen = 0
+        maxLen 0
         ___ num __ nums:
             __ num n.. __ hashmap:
-                hashset = s..()
-                count = 0
-                num0 = num
+                hashset s..()
+                count 0
+                num0 num
                 w.... num0 != num o. count __ 0:
                     count += 1
-                    num0 = nums[num0]
+                    num0 nums[num0]
                     hashset.add(num0)
                 ___ num0 __ hashset:
-                    hashmap[num0] = count
-                maxLen = m..(maxLen, count)
+                    hashmap[num0] count
+                maxLen m..(maxLen, count)
         r.. maxLen
     
     ___ test
-        testCases = [
+        testCases [
             [5,4,0,3,1,6,2],
             [0],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = arrayNesting(nums)
+            result arrayNesting(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

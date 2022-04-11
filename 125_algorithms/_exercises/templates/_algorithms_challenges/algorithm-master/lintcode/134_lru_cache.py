@@ -17,12 +17,12 @@ c_ LRUCache:
         """
         :type capacity: int
         """
-        cap = capacity
+        cap capacity
         nodes    # dict
-        D = CacheNode(-1)
-        d = CacheNode(-1)
-        D.nxt = d
-        d.pre = D
+        D CacheNode(-1)
+        d CacheNode(-1)
+        D.nxt d
+        d.pre D
 
     ___ get  key
         """
@@ -54,24 +54,24 @@ c_ LRUCache:
         _add(key, val)
 
     ___ _evict
-        node = _pop_head()
+        node _pop_head()
         del nodes[node.key]
 
     ___ _update  key, val_ N..
-        node = nodes[key]
+        node nodes[key]
 
         __ val:
-            node.val = val
+            node.val val
 
         node.unlink()
         _add_tail(node)
 
     ___ _add  key, val
-        nodes[key] = CacheNode(key, val)
+        nodes[key] CacheNode(key, val)
         _add_tail(nodes[key])
 
     ___ _pop_head
-        node = D.nxt
+        node D.nxt
         node.unlink()
         r.. node
 
@@ -81,18 +81,18 @@ c_ LRUCache:
 
 c_ CacheNode:
     ___ - , key, val=N.., pre=N.., nxt_ N..
-        key = key
-        val = val
-        pre = pre
-        nxt = nxt
+        key key
+        val val
+        pre pre
+        nxt nxt
 
     ___ link  pre, nxt
-        pre = pre
-        nxt = nxt
-        pre.nxt = self
-        nxt.pre = self
+        pre pre
+        nxt nxt
+        pre.nxt self
+        nxt.pre self
 
     ___ unlink
-        pre.nxt = nxt
-        nxt.pre = pre
-        pre = nxt = N..
+        pre.nxt nxt
+        nxt.pre pre
+        pre nxt N..

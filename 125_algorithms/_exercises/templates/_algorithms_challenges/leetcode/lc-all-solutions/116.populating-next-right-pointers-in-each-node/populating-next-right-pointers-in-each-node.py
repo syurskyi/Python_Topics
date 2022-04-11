@@ -11,6 +11,6 @@ c_ Solution:
   # @return nothing
   ___ connect  root
     __ root a.. root.left a.. root.right:
-      root.left.next = root.right
-      root.right.next = root.next a.. root.next.left
+      root.left.next root.right
+      root.right.next root.next a.. root.next.left
       r.. connect(root.left) o. connect(root.right)

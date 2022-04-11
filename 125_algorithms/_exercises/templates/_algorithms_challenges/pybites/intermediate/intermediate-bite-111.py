@@ -13,13 +13,13 @@ _______ j__ __ j
 
 # https://stackoverflow.com/questions/58048879/what-is-the-difference-between-json-method-and-json-loads
 
-IPINFO_URL = 'http://ipinfo.io/{ip}/json'
+IPINFO_URL 'http://ipinfo.io/{ip}/json'
 
 ___ get_ip_country_2(ip_address
-    response = r__.g.. IPINFO_URL.f..(ip=ip_address
+    response r__.g.. IPINFO_URL.f..(ip=ip_address
     print(t..(response.text
     print(response.text)
-    jso = j.l.. (response.text)
+    jso j.l.. (response.text)
     print(t..(jso
     print(jso 'country' )
 
@@ -29,11 +29,11 @@ ___ get_ip_country(ip_address
        parse the json response returning the country code of the IP"""
 
     # Execute HTTP GET request, this method returns requests.models.Response object
-    response = r__.g.. IPINFO_URL.f..(ip=ip_address
+    response r__.g.. IPINFO_URL.f..(ip=ip_address
     # Returns json-encoded value of the response object, throws ValueError if the response body does not contain a valid json
     # So dzejson is a dict
     ___
-        dzejson = response.j..
+        dzejson response.j..
     ______ V..
         print("Response did not contain a valid JSON")
 

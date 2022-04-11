@@ -19,13 +19,13 @@ c_ Solution(o..
 
     ___ fill(root, res, left, right, h
       __ root:
-        val = s..(root.val)
-        mid = left + (right - left) / 2
-        res[h][mid] = val
+        val s..(root.val)
+        mid left + (right - left) / 2
+        res[h][mid] val
         fill(root.left, res, left, mid - 1, h + 1)
         fill(root.right, res, mid + 1, right, h + 1)
 
-    h = height(root)
-    res = [[""] * (2 ** h - 1) ___ _ __ r..(h)]
+    h height(root)
+    res [[""] * (2 ** h - 1) ___ _ __ r..(h)]
     fill(root, res, 0, l..(res[0]) - 1, 0)
     r.. res

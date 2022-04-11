@@ -24,7 +24,7 @@ You may assume that the matrix does not change.
 There are many calls to sumRegion function.
 You may assume that row1 ≤ row2 and col1 ≤ col2.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ NumMatrix(o..
@@ -34,16 +34,16 @@ c_ NumMatrix(o..
         dp F[i][j] = F[i-1][j]+F[i][j-1]-F[i-1][j-1]+mat[i][j]
         :type matrix: List[List[int]]
         """
-        m = l..(matrix)
+        m l..(matrix)
         __ m __ 0:
-            F = N..
+            F N..
             r..
 
-        n = l..(matrix[0])
-        F = [[0 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
+        n l..(matrix[0])
+        F [[0 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
         ___ i __ x..(1, m+1
             ___ j __ x..(1, n+1
-                F[i][j] = F[i-1][j]+F[i][j-1]-F[i-1][j-1]+matrix[i-1][j-1]
+                F[i][j] F[i-1][j]+F[i][j-1]-F[i-1][j-1]+matrix[i-1][j-1]
 
     ___ sumRegion  row1, col1, row2, col2
         """

@@ -10,34 +10,34 @@ c_ Solution:
     ___ swapPairs  head
         __ head __ N..
             r.. head
-        res = N..
-        res_end = N..
-        temp = N..
-        temp_end = N..
-        i = 1
+        res N..
+        res_end N..
+        temp N..
+        temp_end N..
+        i 1
         w.... head __ n.. N..
-            next_node = head.next
+            next_node head.next
             # Append current node to temp list
             __ temp __ N..
-                temp_end = head
-            head.next = temp
-            temp = head
+                temp_end head
+            head.next temp
+            temp head
             __ i % 2 __ 0:
                 # Append temp to res
                 __ res __ N..
-                    res = temp
-                    res_end = temp_end
+                    res temp
+                    res_end temp_end
                 ____
-                    res_end.next = temp
-                    res_end = temp_end
-                temp = N..
+                    res_end.next temp
+                    res_end temp_end
+                temp N..
             i += 1
-            head = next_node
+            head next_node
         __ temp __ n.. N..
             __ res __ N..
-                res = temp
-                res_end = temp_end
+                res temp
+                res_end temp_end
             ____
-                res_end.next = temp
-                res_end = temp_end
+                res_end.next temp
+                res_end temp_end
         r.. res

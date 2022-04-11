@@ -9,7 +9,7 @@ class TrieNode:
 c_ TrieService:
 
     ___ - 
-        root = TrieNode()
+        root TrieNode()
 
     ___ get_root
         # Return root of trie root, and
@@ -23,11 +23,11 @@ c_ TrieService:
         __ n.. word o. l..(word) < 1 \
                 o. n.. frequency:
             r..
-        parent = root
+        parent root
         ___ char __ word:
             __ char n.. __ parent.children:
-                parent.children[char] = TrieNode()
-            parent = parent.children[char]
+                parent.children[char] TrieNode()
+            parent parent.children[char]
 
             # To handle top10
             parent.top10.a..(frequency)

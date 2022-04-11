@@ -5,13 +5,13 @@ c_ Solution:
         :type needle: str
         :rtype: int
         """
-        NOT_FOUND = -1
+        NOT_FOUND -1
         __ haystack __ N.. o. needle __ N..
             r.. NOT_FOUND
         __ haystack __ needle:
             r.. 0
 
-        m, n = l..(haystack), l..(needle)
+        m, n l..(haystack), l..(needle)
 
         ___ i __ r..(m - n + 1
             __ haystack[i:i + n] __ needle:

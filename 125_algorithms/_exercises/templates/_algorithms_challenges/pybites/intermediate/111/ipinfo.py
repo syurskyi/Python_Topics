@@ -6,8 +6,8 @@ _______ r__
 ___ get_ip_country(ip_address
    """Receives ip address string, use IPINFO_URL to get geo data,
       parse the json response returning the country code of the IP"""
-   url = f"http://ipinfo.io/{ip_address}/json"
-   ip_request = r__.g.. url)
+   url f"http://ipinfo.io/{ip_address}/json"
+   ip_request r__.g.. url)
    r.. ip_request.j..["country"]
 
 __ _______ __ _______

@@ -12,44 +12,44 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. forest o. n.. forest[0]: r.. 0
-        m, n = l..(forest), l..(forest[0])
+        m, n l..(forest), l..(forest[0])
         heap    # list
         ___ i __ r..(m
             ___ j __ r..(n
                 __ forest[i][j] > 1:
                     heapq.heappush(heap, (forest[i][j], i, j
-        sumVal = 0
-        x, y = 0, 0
+        sumVal 0
+        x, y 0, 0
         w.... heap:
-            h, i, j = heapq.heappop(heap)
-            step = minStep(forest, x, y, i, j, h, m, n)
+            h, i, j heapq.heappop(heap)
+            step minStep(forest, x, y, i, j, h, m, n)
             __ step < 0: r.. -1
             sumVal += step
-            x, y = i, j
+            x, y i, j
         r.. sumVal
     
     ___ minStep  forest, x, y, i, j, h, m, n
-        step = 0
-        visited = [[F..]*n ___ _ __ r..(m)]
-        visited[x][y] = T..
+        step 0
+        visited [[F..]*n ___ _ __ r..(m)]
+        visited[x][y] T..
         queue    # list
         queue.a..((x, y
         w.... queue:
-            size = l..(queue)
+            size l..(queue)
             ___ _ __ r..(size
-                i0, j0 = queue.p.. 0)
+                i0, j0 queue.p.. 0)
                 __ i0 __ i a.. j0 __ j: r.. step
                 ___ i1, j1 __ (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1
                     __ i1 < 0 o. i1 >_ m o. j1 < 0 o. j1 >_ n o.\
                         forest[i1][j1] __ 0 o. visited[i1][j1]:
                         _____
                     queue.a..((i1, j1
-                    visited[i1][j1] = T..
+                    visited[i1][j1] T..
             step += 1
         r.. -1
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1,2,3],
                 [0,0,4],
@@ -75,7 +75,7 @@ c_ Solution(o..
         ]
         ___ forest __ testCases:
             print('forest: %s' % forest)
-            result = cutOffTree(forest)
+            result cutOffTree(forest)
             print('result: %s' % result)
             print('-='*30+'-')
 

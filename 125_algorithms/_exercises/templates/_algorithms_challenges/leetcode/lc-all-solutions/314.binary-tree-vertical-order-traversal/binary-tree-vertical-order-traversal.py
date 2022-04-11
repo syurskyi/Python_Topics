@@ -11,15 +11,15 @@ c_ Solution(o..
     ___ dfs(p, i, j, res
       __ p:
         res[j].a..((p.val, i
-        leftMost = m..(j, leftMost)
+        leftMost m..(j, leftMost)
         dfs(p.left, i + 1, j - 1, res)
         dfs(p.right, i + 1, j + 1, res)
 
-    leftMost = f__("inf")
+    leftMost f__("inf")
     ans    # list
-    res = d..(l..)
+    res d..(l..)
     dfs(root, 0, 0, res)
-    i = leftMost
+    i leftMost
     w... T...
       __ n.. res[i]:
         _____

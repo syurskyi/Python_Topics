@@ -14,15 +14,15 @@ c_ Solution:
     @return: A long integer
     """
     ___ permutationIndex  A
-        ans = 1
+        ans 1
         __ n.. A:
             r.. ans
 
-        n = l..(A)
-        factorial = 1
+        n l..(A)
+        factorial 1
 
         ___ i __ r..(n - 1, -1, -1
-            cnt = 0
+            cnt 0
             ___ j __ r..(i + 1, n
                 __ A[i] > A[j]:
                     cnt += 1

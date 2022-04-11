@@ -2,7 +2,7 @@ _______ p__
 
 ____ vowels _______ get_word_max_vowels
 
-paragraphs = [
+paragraphs [
     ("Python is an easy to learn, powerful programming language."
      "It has efficient high-level data structures and a simple "
      "but effective approach to object-oriented programming. "
@@ -40,7 +40,7 @@ paragraphs = [
      "learn more about the various Python library modules described "
      "in The Python Standard Library.")
 ]
-e.. = [
+e.. [
     [('object-oriented', 6)],  # only one word with 6 vowels
     [('documentation.', 6)],  # ditto
     [('customizable', 5), ('applications.', 5)],  # here we have two options

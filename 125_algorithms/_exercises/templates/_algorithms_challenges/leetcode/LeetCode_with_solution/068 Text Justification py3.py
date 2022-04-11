@@ -65,7 +65,7 @@ c_ Solution:
         Jump and then backtrack
         """
         ret    # list
-        char_cnt = 0  # char exclude spaces
+        char_cnt 0  # char exclude spaces
         cur_words    # list
 
         ___ w __ words:
@@ -80,11 +80,11 @@ c_ Solution:
 
                 ret.a..("".j..(cur_words
 
-                cur_words = [w]
-                char_cnt = l..(w)
+                cur_words [w]
+                char_cnt l..(w)
 
         # last line
-        last = " ".j..(cur_words)
+        last " ".j..(cur_words)
         ret.a..(last + " " * (maxWidth - l..(last)))
         r.. ret
 
@@ -98,7 +98,7 @@ c_ Solution2:
         Look before you leap
         """
         ret    # list
-        char_cnt = 0
+        char_cnt 0
         cur_words    # list
 
         ___ w __ words:
@@ -112,13 +112,13 @@ c_ Solution2:
                 ret.a..("".j..(cur_words
 
                 cur_words    # list
-                char_cnt = 0
+                char_cnt 0
 
             cur_words.a..(w)
             char_cnt += l..(w)
 
         # last line
-        last = " ".j..(cur_words)
+        last " ".j..(cur_words)
         ret.a..(last + " " * (maxWidth - l..(last)))
         r.. ret
 

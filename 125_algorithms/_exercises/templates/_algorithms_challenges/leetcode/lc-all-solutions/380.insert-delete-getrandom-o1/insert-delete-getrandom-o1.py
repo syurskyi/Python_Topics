@@ -15,7 +15,7 @@ c_ RandomizedSet(o..
     __ val __ d:
       r.. F..
     a.a..(val)
-    d[val] = l..(a) - 1
+    d[val] l..(a) - 1
     r.. T..
 
   ___ remove  val
@@ -26,9 +26,9 @@ c_ RandomizedSet(o..
     """
     __ val n.. __ d:
       r.. F..
-    index = d[val]
-    a[index] = a[-1]
-    d[a[-1]] = index
+    index d[val]
+    a[index] a[-1]
+    d[a[-1]] index
     a.p.. )
     del d[val]
     r.. T..

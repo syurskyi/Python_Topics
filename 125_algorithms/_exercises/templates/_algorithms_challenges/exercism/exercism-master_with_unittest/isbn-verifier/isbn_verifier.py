@@ -1,11 +1,11 @@
 c_ IsbnVerifier(o..
 
-    VALID_SEPERATOR = "-"
-    VALID_CHECK_CHARACTER = "X"
-    VALID_DIGITS = l.. m..(s.., l..(r..(0, 10))))
-    VALID_CHARACTERS = (s..(VALID_DIGITS) |
+    VALID_SEPERATOR "-"
+    VALID_CHECK_CHARACTER "X"
+    VALID_DIGITS l.. m..(s.., l..(r..(0, 10))))
+    VALID_CHARACTERS (s..(VALID_DIGITS) |
                         s..([VALID_SEPERATOR, VALID_CHECK_CHARACTER]
-    VALID_LENGTH = 10
+    VALID_LENGTH 10
 
     @classmethod
     ___ is_valid(cls, s__
@@ -15,7 +15,7 @@ c_ IsbnVerifier(o..
 
     @classmethod
     ___ verify(cls, s__
-        sum_so_far = 0
+        sum_so_far 0
         ___ i, c __ e..(cls.remove_seperator(s__:
             sum_so_far += cls.convert_char_to_int(c) * (10 - i)
         r.. sum_so_far % 11 __ 0

@@ -23,7 +23,7 @@ c_ Solution(o..
         ___ i __ r..(pos+1, l..(num)+1
             __ i > pos+1 a.. num[pos] __ '0':
                 _____
-            numStr = num[pos:i]
+            numStr num[pos:i]
             __ pos __ 0:
                 helper(num, i, target, numStr, 0, i..(numStr), res)
             ____
@@ -32,7 +32,7 @@ c_ Solution(o..
                 helper(num, i, target, curr+'*'+numStr, evalVal, mult*i..(numStr), res)
     
     ___ test
-        testCases = [
+        testCases [
             ('123', 6),
             ('232', 8),
             ('105', 5),
@@ -42,7 +42,7 @@ c_ Solution(o..
         ___ num, target __ testCases:
             print('num: %s' % (num
             print('target: %s' % (target
-            result = addOperators(num, target)
+            result addOperators(num, target)
             print('result: %s' % (result
             print('-='*20+'-')
 

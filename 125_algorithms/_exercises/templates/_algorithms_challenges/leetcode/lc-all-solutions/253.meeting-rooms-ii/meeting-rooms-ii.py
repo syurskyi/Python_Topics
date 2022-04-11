@@ -9,12 +9,12 @@ c_ Solution(o..
       meetings.a..((i.start, 1
       meetings.a..((i.end, 0
     meetings.s..()
-    ans = 0
-    count = 0
+    ans 0
+    count 0
     ___ meeting __ meetings:
       __ meeting[1] __ 1:
         count += 1
       ____
         count -_ 1
-      ans = m..(ans, count)
+      ans m..(ans, count)
     r.. ans

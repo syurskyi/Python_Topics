@@ -5,7 +5,7 @@ Note:
 You may assume that A has enough space (size that is greater or equal to m + n) to hold additional elements from B. The
 number of elements initialized in A and B are m and n respectively.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -22,20 +22,20 @@ c_ Solution(o..
         :param n: an integer, length of B
         :return:
         """
-        i = m-1
-        j = n-1
-        closed = m+n
+        i m-1
+        j n-1
+        closed m+n
 
         w.... i >_ 0 a.. j >_ 0:
             closed -_ 1
             __ A[i] > B[j]:
-                A[closed] = A[i]
+                A[closed] A[i]
                 i -_ 1
             ____
-                A[closed] = B[j]
+                A[closed] B[j]
                 j -_ 1
 
         # either-or
         # dangling
-        __ j >_ 0: A[:closed] = B[:j+1]
+        __ j >_ 0: A[:closed] B[:j+1]
         # if i >= 0: A[:closed] = A[:i+1]

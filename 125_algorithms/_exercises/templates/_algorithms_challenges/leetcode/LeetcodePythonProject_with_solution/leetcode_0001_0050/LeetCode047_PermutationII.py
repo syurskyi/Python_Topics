@@ -27,13 +27,13 @@ c_ Solution(o..
             curr.p.. )
     
     ___ test
-        testCases = [
+        testCases [
             [1,1,2],
             [3,3,0,3],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = permuteUnique(nums)
+            result permuteUnique(nums)
             print('result: %s' % result)
             print('-='*15+'-')
 

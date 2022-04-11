@@ -1,4 +1,4 @@
-NUCLEOTIDES = 'ATCG'
+NUCLEOTIDES 'ATCG'
 
 
 ___ c.. strand, abbreviation

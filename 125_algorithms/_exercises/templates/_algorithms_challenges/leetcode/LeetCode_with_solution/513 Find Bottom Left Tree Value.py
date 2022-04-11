@@ -30,9 +30,9 @@ Output:
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -43,15 +43,15 @@ c_ Solution:
         :type root: TreeNode
         :rtype: int
         """
-        q = [root]
+        q [root]
         w.... q:
-            ret = q[0].val
+            ret q[0].val
             cur_q    # list
             ___ e __ q:
                 __ e.left:
                     cur_q.a..(e.left)
                 __ e.right:
                     cur_q.a..(e.right)
-            q = cur_q
+            q cur_q
 
         r.. ret

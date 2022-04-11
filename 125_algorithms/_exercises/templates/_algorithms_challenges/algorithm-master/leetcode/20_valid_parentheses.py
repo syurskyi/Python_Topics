@@ -5,7 +5,7 @@ c_ Solution:
         :rtype: bool
         """
         stack    # list
-        pairs = {')': '(', ' ': ' ', '}': '{'}
+        pairs {')': '(', ' ': ' ', '}': '{'}
 
         ___ c __ s:
             __ c __ '([{':

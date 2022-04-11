@@ -1,18 +1,18 @@
 c_ Board:
 
-    EMPTY_BOARD = ["_" * 8 ___ _ __ r..(8)]
+    EMPTY_BOARD ["_" * 8 ___ _ __ r..(8)]
 
     ___ - , white_coords, black_coords
-        white_coords = white_coords
-        black_coords = black_coords
+        white_coords white_coords
+        black_coords black_coords
         __ n.. valid_coords
             r.. V...
-        board = generate_board()
+        board generate_board()
 
     ___ generate_board
-        board = [l..(row) ___ row __ EMPTY_BOARD]
-        board = place_piece(board, "W", white_coords)
-        board = place_piece(board, "B", black_coords)
+        board [l..(row) ___ row __ EMPTY_BOARD]
+        board place_piece(board, "W", white_coords)
+        board place_piece(board, "B", black_coords)
         r.. ["".j..(row) ___ row __ board]
 
     ___ can_attack
@@ -42,7 +42,7 @@ c_ Board:
 
     $
     ___ place_piece(board, piece, coords
-        board[coords[0]][coords[1]] = piece
+        board[coords[0]][coords[1]] piece
         r.. board
 
 

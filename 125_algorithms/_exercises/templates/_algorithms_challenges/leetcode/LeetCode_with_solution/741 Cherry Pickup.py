@@ -57,13 +57,13 @@ c_ Solution:
         r.. m..(0, F(grid, 0, 0, 0
 
     ___ F  grid, r1, c1, r2
-        n = l..(grid)
+        n l..(grid)
         __ (r1, c1, r2) n.. __ cache:
-            ret = f__("-inf")
-            c2 = r1 + c1 - r2   # r1 + c1 == r2 + c2
+            ret f__("-inf")
+            c2 r1 + c1 - r2   # r1 + c1 == r2 + c2
             __ 0 <_ r1 < n a.. 0 <_ c1 < n a.. 0 <_ r2 < n a.. 0 <_ c2 < n:
                 __ grid[r1][c1] != -1 a.. grid[r2][c2] != -1:
-                    ret = 0
+                    ret 0
                     ret += grid[r1][c1]
                     __ r1 != r2:
                         ret += grid[r2][c2]
@@ -78,7 +78,7 @@ c_ Solution:
                             F(grid, r1, c1+1, r2),  # right, right
                         )
 
-            cache[r1, c1, r2] = ret
+            cache[r1, c1, r2] ret
 
         r.. cache[r1, c1, r2]
 

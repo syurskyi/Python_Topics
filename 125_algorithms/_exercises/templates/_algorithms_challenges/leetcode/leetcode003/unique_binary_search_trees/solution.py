@@ -18,7 +18,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        t = [-1 ___ _ __ r..(n + 1)]
+        t [-1 ___ _ __ r..(n + 1)]
         r.. num_trees_aux(n, t)
 
     ___ num_trees_aux  n, t
@@ -27,9 +27,9 @@ c_ Solution(o..
         ____ t[n] != -1:
             r.. t[n]
         ____
-            res = 0
+            res 0
             ___ i __ r..(n
                 res += num_trees_aux(i, t) * \
                     num_trees_aux(n - 1 - i, t)
-            t[n] = res
+            t[n] res
             r.. res

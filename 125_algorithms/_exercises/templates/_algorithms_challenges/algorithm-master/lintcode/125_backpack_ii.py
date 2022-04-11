@@ -14,17 +14,17 @@ c_ Solution:
 
         # `dp[i][w]` means the maximum value
         # with weight `w` in the former `i` items
-        dp = [[0] * (m + 1) ___ _ __ r..(2)]
+        dp [[0] * (m + 1) ___ _ __ r..(2)]
 
-        prev = curr = 0
+        prev curr 0
         ___ i __ r..(1, l..(A) + 1
-            prev = curr
-            curr = 1 - curr
+            prev curr
+            curr 1 - curr
             ___ w __ r..(1, m + 1
-                dp[curr][w] = dp[prev][w]
+                dp[curr][w] dp[prev][w]
 
                 __ w >_ A[i - 1]:
-                    dp[curr][w] = m..(
+                    dp[curr][w] m..(
                         dp[curr][w],
                         dp[prev][w - A[i - 1]] + V[i - 1]
                     )
@@ -46,15 +46,15 @@ c_ Solution:
         __ n.. m o. n.. A o. n.. V:
             r.. 0
 
-        n = l..(A)
-        dp = [[0] * (m + 1) ___ _ __ r..(n + 1)]
+        n l..(A)
+        dp [[0] * (m + 1) ___ _ __ r..(n + 1)]
 
         ___ i __ r..(1, n + 1
             ___ w __ r..(1, m + 1
-                dp[i][w] = dp[i - 1][w]
+                dp[i][w] dp[i - 1][w]
 
                 __ w >_ A[i - 1]:
-                    dp[i][w] = m..(
+                    dp[i][w] m..(
                         dp[i][w],
                         dp[i - 1][w - A[i - 1]] + V[i - 1]
                     )

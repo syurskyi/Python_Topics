@@ -11,7 +11,7 @@ c_ TwoSum(o..
     Add the number to an internal data structure.
     :rtype: nothing
     """
-    nums[number] = nums.g.. number, 0) + 1
+    nums[number] nums.g.. number, 0) + 1
 
   ___ find  value
     """
@@ -19,9 +19,9 @@ c_ TwoSum(o..
     :type value: int
     :rtype: bool
     """
-    d = nums
+    d nums
     ___ num __ d:
-      t = value - num
+      t value - num
       __ t __ d:
         __ t __ num:
           __ d[t] >_ 2:

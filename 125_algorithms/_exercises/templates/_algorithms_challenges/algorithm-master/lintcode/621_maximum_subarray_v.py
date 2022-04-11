@@ -23,13 +23,13 @@ c_ Solution:
         __ n.. A o. n.. k2 o. l..(A) < k1:
             r.. 0
 
-        n = l..(A)
-        S = [0] * (n + 1)
-        queue = d..()
-        ans = f__('-inf')
+        n l..(A)
+        S [0] * (n + 1)
+        queue d..()
+        ans f__('-inf')
 
         ___ i __ r..(1, n + 1
-            S[i] = S[i - 1] + A[i - 1]
+            S[i] S[i - 1] + A[i - 1]
 
             """
             if the minimum of index is less than `i - k2`
@@ -50,6 +50,6 @@ c_ Solution:
             queue.a..(i - k1)
 
             __ queue a.. S[i] - S[queue[0]] > ans:
-                ans = S[i] - S[queue[0]]
+                ans S[i] - S[queue[0]]
 
         r.. ans

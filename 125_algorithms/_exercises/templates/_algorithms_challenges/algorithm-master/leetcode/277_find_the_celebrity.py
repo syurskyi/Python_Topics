@@ -8,11 +8,11 @@ c_ Solution:
         __ n.. n:
             r.. -1
 
-        x = 0
+        x 0
 
         ___ i __ r..(n
             __ knows(x, i
-                x = i
+                x i
 
         ___ i __ r..(x
             __ knows(x, i

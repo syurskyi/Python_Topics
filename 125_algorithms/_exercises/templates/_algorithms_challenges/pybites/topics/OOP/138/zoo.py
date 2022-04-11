@@ -1,10 +1,10 @@
 c_ Animal:
-    counter = 10000
+    counter 10000
     animals    # list
 
     ___ - , name
         Animal.counter += 1
-        name = name.t..
+        name name.t..
         animals.a..(s..(self
         
 

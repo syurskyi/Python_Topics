@@ -4,12 +4,12 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: List[int]
     """
-    xor = 0
+    xor 0
     ___ num __ nums:
       xor ^= num
 
-    xor = xor & -xor
-    a, b = 0, 0
+    xor xor & -xor
+    a, b 0, 0
     ___ num __ nums:
       __ num & xor:
         a ^= num

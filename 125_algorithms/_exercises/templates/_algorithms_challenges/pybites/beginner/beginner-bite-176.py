@@ -1,4 +1,4 @@
-WHITE, BLACK = ' ', '#'
+WHITE, BLACK ' ', '#'
 
 
 ___ create_chessboard(size=8
@@ -16,7 +16,7 @@ ___ create_chessboard(size=8
                 __ column % 2 __ 0:
                     print(BLACK, end ='')
                 ____
-                    print(WHITE, end = '')
+                    print(WHITE, end '')
         print('\n')
 
 

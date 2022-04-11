@@ -2,23 +2,23 @@ _______ p__
 
 ____ max_letter _______ max_letter_word
 
-sample_text = '''It is a truth universally acknowledged, that a single man in
+sample_text '''It is a truth universally acknowledged, that a single man in
                     possession of a good fortune, must be in want of a wife.'''
-with_numbers_text = '''20,000 Leagues Under the Sea is a 1954 American
+with_numbers_text '''20,000 Leagues Under the Sea is a 1954 American
                     Technicolor science fiction-adventure film...'''
-emoji_text = 'emoji like 😃😃😃😃 are not letters'
-accents_text = 'Société Générale est une des principales banques françaises'
-mixed_case_text = 'Short Plays By Lady Gregory The Knickerbocker Press 1916'
-hyphenated_word_text = 'six-feet-two in height'
-compound_character_text = 'der Schloß is riesig'
-no_repeat_characters_text = 'the quick brown fox jumped over the lazy dog'
-non_ascii_symbols_text = '«¿Tiene sentido la TV pública?»'
-apostrophe_in_word_text = "but we've been there already!!!"
-underscore_torture_text = '"____".isalpha() is True, thus this test text'
-digit_text = '99abc99 __abc__ --abc-- digits _ and - are not letters'
-repeat_words_text = 'test test test test test correct-answer.'
-no_words_in_text = '1, 2, 3'
-empty_text = ''
+emoji_text 'emoji like 😃😃😃😃 are not letters'
+accents_text 'Société Générale est une des principales banques françaises'
+mixed_case_text 'Short Plays By Lady Gregory The Knickerbocker Press 1916'
+hyphenated_word_text 'six-feet-two in height'
+compound_character_text 'der Schloß is riesig'
+no_repeat_characters_text 'the quick brown fox jumped over the lazy dog'
+non_ascii_symbols_text '«¿Tiene sentido la TV pública?»'
+apostrophe_in_word_text "but we've been there already!!!"
+underscore_torture_text '"____".isalpha() is True, thus this test text'
+digit_text '99abc99 __abc__ --abc-- digits _ and - are not letters'
+repeat_words_text 'test test test test test correct-answer.'
+no_words_in_text '1, 2, 3'
+empty_text ''
 
 
 ?p__.m__.p.("given, expected",
@@ -39,7 +39,7 @@ empty_text = ''
                           (empty_text, ('', '', 0,
                           ])
 ___ test_max_letter_word(given, e..
-    result = max_letter_word(given)
+    result max_letter_word(given)
     ... result __ e..
 
 

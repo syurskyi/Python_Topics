@@ -35,5 +35,5 @@ ____ c.. _______ C..
 
 c_ Solution:
     ___ judgeCircle  moves: s..) __ b..:
-        counter = C..(moves)
+        counter C..(moves)
         r.. counter["L"] __ counter["R"] a.. counter["U"] __ counter["D"]

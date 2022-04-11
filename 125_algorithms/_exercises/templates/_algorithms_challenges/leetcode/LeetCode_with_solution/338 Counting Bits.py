@@ -14,7 +14,7 @@ Space complexity should be O(n).
 Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other
 language.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -35,13 +35,13 @@ c_ Solution(o..
         :type num: int
         :rtype: List[int]
         """
-        ret = [0]
-        i = 0
-        hi = l..(ret)
+        ret [0]
+        i 0
+        hi l..(ret)
         w.... l..(ret) < num + 1:
             __ i __ hi:
-                i = 0
-                hi = l..(ret)
+                i 0
+                hi l..(ret)
 
             ret.a..(1+ret[i])
             i += 1

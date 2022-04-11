@@ -17,8 +17,8 @@ c_ LRUCache(o..
         """
         :type capacity: int
         """
-        capacity = capacity
-        times = L..()
+        capacity capacity
+        times L..()
         cache    # dict
 
     ___ get  key
@@ -26,7 +26,7 @@ c_ LRUCache(o..
         :rtype: int
         """
         __ key __ cache:
-            node = cache[key]
+            node cache[key]
             times.touch(node)
             r.. node.value
         r.. -1
@@ -38,16 +38,16 @@ c_ LRUCache(o..
         :rtype: nothing
         """
         __ key __ cache:
-            node = cache[key]
-            node.value = value
+            node cache[key]
+            node.value value
             times.touch(node)
         ____
             __ times.size >_ capacity:
-                tail_node = times.tail
+                tail_node times.tail
                 times.remove(tail_node)
                 del cache[tail_node.key]
-            node = ListNode(key, value)
-            cache[key] = node
+            node ListNode(key, value)
+            cache[key] node
             # Insert node with key to the head
             times.insert(node)
 
@@ -55,56 +55,56 @@ c_ LRUCache(o..
 c_ ListNode(o..
     """Doubly Linked List node"""
     ___ - , key, value
-        prev = N..
-        next = N..
-        key = key
-        value = value
+        prev N..
+        next N..
+        key key
+        value value
 
 
 c_ L..(o..
     ___ -
-        head = N..
-        tail = N..
-        size = 0
+        head N..
+        tail N..
+        size 0
 
     ___ insert  node
         """Insert node to the head"""
-        node.next = head
+        node.next head
         __ head __ n.. N..
-            head.prev = node
+            head.prev node
         ____
-            tail = node
-        head = node
+            tail node
+        head node
         size += 1
 
     ___ touch  node
         """Move node to the head"""
-        prev_node = node.prev
-        next_node = node.next
+        prev_node node.prev
+        next_node node.next
         __ prev_node __ n.. N..
-            prev_node.next = next_node
+            prev_node.next next_node
             __ next_node __ n.. N..
-                next_node.prev = prev_node
+                next_node.prev prev_node
             ____
-                tail = prev_node
-            node.prev = N..
-            node.next = head
-            head.prev = node
-            head = node
+                tail prev_node
+            node.prev N..
+            node.next head
+            head.prev node
+            head node
 
     ___ remove  node
         """Remove a node"""
-        prev_node = node.prev
-        next_node = node.next
+        prev_node node.prev
+        next_node node.next
         # If node is not the head node
         __ prev_node __ n.. N..
-            prev_node.next = next_node
+            prev_node.next next_node
             # If node is not the tail node
             __ next_node __ n.. N..
-                next_node.prev = prev_node
+                next_node.prev prev_node
             ____
-                tail = prev_node
+                tail prev_node
         ____
-            head = N..
-            tail = N..
+            head N..
+            tail N..
         size -_ 1

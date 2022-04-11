@@ -26,13 +26,13 @@ click to show hints.
 Hints:
 If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
     ___  -r
         r.. r.. (val)
 
@@ -49,15 +49,15 @@ c_ Solution:
 
         lst    # list
         dfs_traverse(root, lst)
-        lst = lst[1:] # exclude root
+        lst lst[1:] # exclude root
 
-        root.left = N..
-        cur = root
+        root.left N..
+        cur root
         ___ node __ lst:
-            node.left = N..
-            node.right = N..
-            cur.right = node
-            cur = cur.right
+            node.left N..
+            node.right N..
+            cur.right node
+            cur cur.right
 
 
     ___ dfs_traverse  root, lst
@@ -86,21 +86,21 @@ c_ Solution:
             r.. N..
 
 
-        left_last = get_last(root.left)
+        left_last get_last(root.left)
 
-        left = flatten(root.left)
-        right = flatten(root.right)
+        left flatten(root.left)
+        right flatten(root.right)
 
         # left_last = left
         # while left_last and left_last.right:
         #     left_last = left_last.right
 
-        root.left = N..
+        root.left N..
         __ left:
-            root.right = left
-            left_last.right = right
+            root.right left
+            left_last.right right
         ____
-            root.right = right
+            root.right right
         r.. root
 
     ___ get_last  root
@@ -119,8 +119,8 @@ c_ Solution:
             r.. get_last(root.left)
 
 __ _____ __ ____
-    node1 = TreeNode(1)
-    node2 = TreeNode(2)
-    node1.left = node2
+    node1 TreeNode(1)
+    node2 TreeNode(2)
+    node1.left node2
     Solution().flatten(node1)
 

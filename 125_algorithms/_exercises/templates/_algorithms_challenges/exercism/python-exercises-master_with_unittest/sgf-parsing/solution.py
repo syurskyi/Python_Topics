@@ -1,7 +1,7 @@
 c_ SgfTree(o..
     ___ - , properties=N.., children_ N..
-        properties = properties o. {}
-        children = children o. []
+        properties properties o. {}
+        children children o. []
 
     ___ -e  other
         __ n.. isi..(other, SgfTree
@@ -23,7 +23,7 @@ c_ SgfTree(o..
 
     ___  -r
         """Ironically, encoding to SGF is much easier"""
-        rep = '(;'
+        rep '(;'
         ___ k, vs __ properties.i..:
             rep += k
             ___ v __ vs:
@@ -39,7 +39,7 @@ c_ SgfTree(o..
 
 
 ___ is_upper(s
-    a, z = map(o.., 'AZ')
+    a, z map(o.., 'AZ')
     r.. a..(
         a <_ o a.. o <_ z
         ___ o __ map(o.., s)
@@ -47,9 +47,9 @@ ___ is_upper(s
 
 
 ___ p..(input_string
-    root = N..
-    current = N..
-    stack = l..(input_string)
+    root N..
+    current N..
+    stack l..(input_string)
 
     ___ assert_that(condition
         __ n.. condition:
@@ -65,14 +65,14 @@ ___ p..(input_string
     ___ pop
         __ stack[0] __ '\\':
             stack.p.. 0)
-        ch = stack.p.. 0)
+        ch stack.p.. 0)
         r.. ' ' __ ch __  '\t'  ____ ch
 
     ___ peek
         r.. stack[0]
 
     ___ pop_until(ch
-        v = ''
+        v ''
         w.... peek() != ch:
             v += p.. )
         r.. v
@@ -81,20 +81,20 @@ ___ p..(input_string
         w.... p.. ) __ ';':
             properties    # dict
             w.... is_upper(peek:
-                key = pop_until(' ')
+                key pop_until(' ')
                 assert_that(is_upper(key
                 values    # list
                 w.... peek() __ ' ':
                     p.. )
                     values.a..(pop_until(' '
                     p.. )
-                properties[key] = values
+                properties[key] values
             __ root __ N..
-                current = root = SgfTree(properties)
+                current root SgfTree(properties)
             ____
-                current = SgfTree(properties)
+                current SgfTree(properties)
                 root.children.a..(current)
             w.... peek() __ '(':
-                child_input = p.. ) + pop_until(')') + p.. )
+                child_input p.. ) + pop_until(')') + p.. )
                 current.children.a..(p..(child_input
     r.. root

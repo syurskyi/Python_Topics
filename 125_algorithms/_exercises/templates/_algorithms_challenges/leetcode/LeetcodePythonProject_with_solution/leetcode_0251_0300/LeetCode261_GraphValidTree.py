@@ -6,19 +6,19 @@ Created on Mar 2, 2017
 
 c_ Solution(o..
     ___ validTree  n, edges
-        roots = [-1]*n
+        roots [-1]*n
         ___ e __ edges:
-            root0 = findRoot(roots, e[0])
-            root1 = findRoot(roots, e[1])
+            root0 findRoot(roots, e[0])
+            root1 findRoot(roots, e[1])
             __ root0 != root1:
-                roots[root0] = root1
+                roots[root0] root1
             ____
                 r.. F..
         r.. l..(edges) __ n-1
     
     ___ findRoot  roots, ind
         w.... roots[ind] != -1:
-            ind = roots[ind]
+            ind roots[ind]
         r.. ind
     
     ___ validTreeBFS  n, edges
@@ -35,13 +35,13 @@ c_ Solution(o..
             hashmap[edge[1]].a..(edge[0])
         queue    # list
         queue.a..(0)
-        visited = [F..]*n
+        visited [F..]*n
         w.... queue:
-            top = queue[0]
+            top queue[0]
             queue.p.. 0)
             __ visited[top]:
                 r.. F..
-            visited[top] = T..
+            visited[top] T..
             ___ i __ hashmap[top]:
                 __ n.. visited[i]:
                     queue.a..(i)
@@ -57,7 +57,7 @@ c_ Solution(o..
         ___ edge __ edges:
             hashmap[edge[0]].a..(edge[1])
             hashmap[edge[1]].a..(edge[0])
-        visited = [F..]*n
+        visited [F..]*n
         __ n.. helper(0, -1, hashmap, visited
             r.. F..
         ___ b __ visited:
@@ -66,14 +66,14 @@ c_ Solution(o..
     
     ___ helper  curr, parent, hashmap, visited
         __ visited[curr]: r.. F..
-        visited[curr] = T..
+        visited[curr] T..
         ___ i __ hashmap[curr]:
             __ i != parent a.. n.. helper(i, curr, hashmap, visited
                 r.. F..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             (
                 5,
                 [[0, 1], [0, 2], [0, 3], [1, 4]],
@@ -90,7 +90,7 @@ c_ Solution(o..
         ___ n, edges __ testCases:
             print('n: %s' % (n
             print('edges: %s' % (edges
-            result = validTree(n, edges)
+            result validTree(n, edges)
             print('result: %s' % (result
             print('-='*20+'-')
         

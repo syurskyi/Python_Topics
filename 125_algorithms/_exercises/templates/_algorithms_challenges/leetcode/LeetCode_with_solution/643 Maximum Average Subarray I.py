@@ -24,13 +24,13 @@ c_ Solution:
         """
         two pointers
         """
-        cur_sum = s..(nums[:k])
-        maxa = cur_sum
-        i = k
+        cur_sum s..(nums[:k])
+        maxa cur_sum
+        i k
         w.... i < l..(nums
             cur_sum += nums[i]
             cur_sum -_ nums[i-k]
-            maxa = m..(maxa, cur_sum)
+            maxa m..(maxa, cur_sum)
             i += 1
 
         r.. maxa / k

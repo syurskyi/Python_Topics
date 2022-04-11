@@ -3,14 +3,14 @@ Premium Question
 """
 _______ ___
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution(o..
@@ -23,9 +23,9 @@ c_ Solution(o..
         :type target: float
         :rtype: int
         """
-        lo = [-___.float_info.m..]
+        lo [-___.float_info.m..]
         find(root, target, lo, T..)
-        hi = [___.float_info.m..]
+        hi [___.float_info.m..]
         find(root, target, hi, F..)
         __ hi[0] - target < target - lo[0]:
             r.. i..(hi[0])
@@ -37,14 +37,14 @@ c_ Solution(o..
             r..
 
         __ root.val __ target:
-            ret[0] = root.val
+            ret[0] root.val
             r..
 
         __ root.val < target:
-            __ lower: ret[0] = m..(ret[0], root.val)
+            __ lower: ret[0] m..(ret[0], root.val)
             find(root.right, target, ret, lower)
         ____
-            __ n.. lower: ret[0] = m..(ret[0], root.val)
+            __ n.. lower: ret[0] m..(ret[0], root.val)
             find(root.left, target, ret, lower)
 
 

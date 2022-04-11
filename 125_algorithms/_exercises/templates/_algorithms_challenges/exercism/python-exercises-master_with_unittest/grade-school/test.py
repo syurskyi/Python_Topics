@@ -9,8 +9,8 @@ c_ SchoolTest(unittest.TestCase
     ___ setUp
         # assertCountEqual is py3, py2 only knowns assetItemsEqual
         __ n.. hasattr  'assertCountEqual'
-            assertCountEqual = assertItemsEqual
-        school = School("Haleakala Hippy School")
+            assertCountEqual assertItemsEqual
+        school School("Haleakala Hippy School")
 
     ___ test_an_empty_school
         ___ n __ r..(1, 9
@@ -42,14 +42,14 @@ c_ SchoolTest(unittest.TestCase
         assertCountEqual(school.grade(1), s..
 
     ___ test_sort_school
-        students = [(3, ("Kyle", , (4, ("Christopher", "Jennifer", ,
+        students [(3, ("Kyle", , (4, ("Christopher", "Jennifer", ,
                     (6, ("Kareem", ]
 
         ___ grade, students_in_grade __ students ||-1
             ___ student __ students_in_grade ||-1
                 school.add(student, grade)
 
-        result = school.s..()
+        result school.s..()
 
         # Attempts to catch false positives
         assertTrue(
@@ -57,7 +57,7 @@ c_ SchoolTest(unittest.TestCase
             isi..(result, GeneratorType) o.
             c.. getattr(result, '__reversed__', F..)))
 
-        result_list = l..(result.i..
+        result_list l..(result.i..
                            __ hasattr(result, "items") ____ result)
 
         assertEqual(students, result_list)

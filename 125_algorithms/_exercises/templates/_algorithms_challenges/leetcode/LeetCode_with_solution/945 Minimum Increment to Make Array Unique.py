@@ -36,16 +36,16 @@ c_ Solution:
             r.. 0
 
         A.s..()
-        ret = 0
-        prev = A[0]
+        ret 0
+        prev A[0]
         ___ i __ r..(1, l..(A:
-            target = prev + 1
+            target prev + 1
             __ A[i] < target:
                 # change A[i] to target
                 ret += target - A[i]
-                prev = target 
+                prev target
             ____
-                prev = A[i]
+                prev A[i]
         r.. ret
 
 
@@ -56,9 +56,9 @@ c_ Solution:
         A[i] < 40000
         largest count 3999 + 40000
         """
-        counter = C..(A)
+        counter C..(A)
         q    # list
-        ret = 0
+        ret 0
         ___ i __ r..(40000 * 2
             __ counter[i] > 1:
                 q.e.. [i] * (counter[i] - 1
@@ -75,18 +75,18 @@ c_ Solution:
 
         revert to 0, then increase to A[i-1] + k
         """
-        ret = 0
+        ret 0
         A.s..()
         A.a..(1 << 31 - 1)  # append max
-        demand = 0
-        supply = 0
+        demand 0
+        supply 0
         ___ i __ r..(1, l..(A:
             __ A[i] __ A[i-1]:
                 demand += 1
                 # dup_sum += A[i-1]  # error
                 ret -_ A[i-1]  # smart
             ____
-                supply = m..(demand, A[i] - A[i-1] - 1)
+                supply m..(demand, A[i] - A[i-1] - 1)
                 # revert to 0, then increase to A[i-1] + k
                 ret += (A[i-1] + 1 + A[i-1] + supply) * supply // 2
                 demand -_ supply

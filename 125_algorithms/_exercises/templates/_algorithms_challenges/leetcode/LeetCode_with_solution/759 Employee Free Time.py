@@ -39,8 +39,8 @@ ____ t___ _______ L..
 _______ heapq
 
 
-S = 0
-E = 1
+S 0
+E 1
 
 
 c_ Solution:
@@ -60,7 +60,7 @@ c_ Solution:
 
         Similar to meeting rooms II
         """
-        cur_max_end = m..(
+        cur_max_end m..(
             itv[E]
             ___ itvs __ schedule
             ___ itv __ itvs
@@ -68,23 +68,23 @@ c_ Solution:
         q    # list
         ___ i, itvs __ e..(schedule
             # head
-            j = 0
-            itv = itvs[j]
+            j 0
+            itv itvs[j]
             heapq.heappush(q, (itv[S], i, j
 
         ret    # list
         w.... q:
-            _, i, j = heapq.heappop(q)
-            itv = schedule[i][j]
+            _, i, j heapq.heappop(q)
+            itv schedule[i][j]
             __ cur_max_end < itv[S]:
                 ret.a..([cur_max_end, itv[S]])
 
-            cur_max_end = m..(cur_max_end, itv[E])
+            cur_max_end m..(cur_max_end, itv[E])
 
             # next
             j += 1
             __ j < l..(schedule[i]
-                itv = schedule[i][j]
+                itv schedule[i][j]
                 heapq.heappush(q, (itv[S], i, j
 
         r.. ret
@@ -101,8 +101,8 @@ c_ Solution:
                 lst.a..([itv[E], E])
 
         lst.s..()
-        count = 0
-        prev = N..
+        count 0
+        prev N..
         ret    # list
         ___ t, flag __ lst:
             __ count __ 0 a.. prev:
@@ -111,7 +111,7 @@ c_ Solution:
             __ flag __ S:
                 count += 1
             ____
-                prev = t
+                prev t
                 count -_ 1
 
         r.. ret
@@ -121,25 +121,25 @@ c_ Solution:
         Cannot store iterator in the heap to compare
         use index instead
         """
-        schedules = l.. m..(i.., schedule
-        cur_max_end = m..(
+        schedules l.. m..(i.., schedule
+        cur_max_end m..(
             itv[E]
             ___ emp __ schedule
             ___ itv __ emp
         )
         q    # list
         ___ emp_iter __ schedules:
-            itv = next(emp_iter, N..)
+            itv next(emp_iter, N..)
             __ itv:
                 heapq.heappush(q, (itv[S], itv, emp_iter
 
         ret    # list
         w.... q:
-            _, itv, emp_iter = heapq.heappop(q)
+            _, itv, emp_iter heapq.heappop(q)
             __ cur_max_end < itv[S]:
                 ret.a..([cur_max_end, itv[S]])
-            cur_max_end = m..(cur_max_end, itv[E])
-            itv = next(emp_iter, N..)
+            cur_max_end m..(cur_max_end, itv[E])
+            itv next(emp_iter, N..)
             __ itv:
                 heapq.heappush(q, (itv[S], itv, emp_iter
 

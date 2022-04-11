@@ -11,7 +11,7 @@ Here is an example of version numbers ordering:
 
 0.1 < 1.1 < 1.2 < 13.37
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -21,10 +21,10 @@ c_ Solution:
         :type version2: str
         :rtype int
         """
-        version1 = map(i.., version1.s..("."
-        version2 = map(i.., version2.s..("."
-        n1 = l..(version1)
-        n2 = l..(version2)
+        version1 map(i.., version1.s..("."
+        version2 map(i.., version2.s..("."
+        n1 l..(version1)
+        n2 l..(version2)
 
         ___ i __ x..(m..(n1, n2:
             __ version1[i] __ version2[i]:

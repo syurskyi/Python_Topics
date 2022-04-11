@@ -3,8 +3,8 @@ c_ MultiplicationTable:
     ___ - , length
         """Create a 2D self._table of (x, y) coordinates and
            their calculations (form of caching)"""
-        _len = length
-        _table = [[x * y ___ x __ r..(1, length + 1)] ___ y __ r..(1, length + 1)]
+        _len length
+        _table [[x * y ___ x __ r..(1, length + 1)] ___ y __ r..(1, length + 1)]
 
     ___ __len__
         """Returns the area of the table (len x* len y)"""

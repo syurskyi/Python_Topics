@@ -28,13 +28,13 @@ c_ Solution(o..
         :type target: int
         :rtype: bool
         """
-        n = l..(matrix)
-        m = l..(matrix[0])
+        n l..(matrix)
+        m l..(matrix[0])
         __ target < matrix[0][0] o. target > matrix[n - 1][m - 1]:
             r.. F..
         # Step-wise Linear Search from upper right
-        y = 0
-        x = m - 1
+        y 0
+        x m - 1
         w.... x >_ 0 a.. y <_ n - 1:
             __ target __ matrix[y][x]:
                 r.. T..
@@ -45,7 +45,7 @@ c_ Solution(o..
         r.. F..
 
 
-a1 = [
+a1 [
     [1, 4, 7, 11, 15],
     [2, 5, 8, 12, 19],
     [3, 6, 9, 16, 22],
@@ -53,7 +53,7 @@ a1 = [
     [18, 21, 23, 26, 30]
 ]
 
-s = Solution()
+s Solution()
 print(s.searchMatrix(a1, 5
 print(s.searchMatrix(a1, 20
 print(s.searchMatrix(a1, 17

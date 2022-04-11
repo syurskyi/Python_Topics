@@ -14,13 +14,13 @@ ____ c.. _______ n..
 
 # https://stackoverflow.com/questions/2970608/what-are-named-tuples-in-python
 User  n..('User', 'name role expired')
-USER, ADMIN = 'user', 'admin'
-SECRET = 'I am a very secret token'
+USER, ADMIN 'user', 'admin'
+SECRET 'I am a very secret token'
 
-julian = ? n.._'Julian', r.._USER, e.._F..
-bob = ? n.._'Bob' r.._USER e.._T..
-pybites = ? n.._'PyBites'  r.._ADMIN, e.._F..
-USERS = (julian, bob, pybites)
+julian ? n.._'Julian', r.._USER, e.._F..
+bob ? n.._'Bob' r.._USER e.._T..
+pybites ? n.._'PyBites'  r.._ADMIN, e.._F..
+USERS (julian, bob, pybites)
 
 # define exception classes here
 c_ UserDoesNotExist(E..
@@ -50,7 +50,7 @@ ___ get_secret_token(username
 
 ___ pyb_get_user(username
     # This constructs a dictionary from USERS namedtuples
-    users = {user.name: user ___ user __ USERS}
+    users {user.name: user ___ user __ USERS}
     # Q: Is there any difference in accessing nonexisting key when using d[crap] vs d.get(crap)?
     # A: Yes, there is.
     # https://stackoverflow.com/questions/11041405/why-dict-getkey-instead-of-dictkey
@@ -62,7 +62,7 @@ ___ pyb_get_user(username
     r.. users.g.. username)
 
 ___ pyb_get_secret_token(username
-    user = pyb_get_user(username)
+    user pyb_get_user(username)
     print(t..(user
     print(user)
     # Big question here how to test for None: if not x vs if x is None
@@ -73,7 +73,7 @@ ___ pyb_get_secret_token(username
     __ n.. user:
         r.. ?
 
-    __ ?.e..:
+    __ ?.e..
         r.. ?
 
     __ ?.r.. != ADMIN:

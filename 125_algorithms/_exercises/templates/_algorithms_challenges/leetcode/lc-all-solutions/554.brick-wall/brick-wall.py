@@ -4,13 +4,13 @@ c_ Solution(o..
     :type wall: List[List[int]]
     :rtype: int
     """
-    ans = l..(wall)
-    count = 0
+    ans l..(wall)
+    count 0
     d    # dict
     ___ w __ wall:
-      coverage = 0
+      coverage 0
       ___ brick __ w[:-1]:
         coverage += brick
-        d[coverage] = d.g.. coverage, 0) + 1
-        count = m..(count, d.g.. coverage, 0
+        d[coverage] d.g.. coverage, 0) + 1
+        count m..(count, d.g.. coverage, 0
     r.. ans - count

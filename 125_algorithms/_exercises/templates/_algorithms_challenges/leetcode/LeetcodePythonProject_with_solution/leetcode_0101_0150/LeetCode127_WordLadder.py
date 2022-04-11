@@ -11,20 +11,20 @@ c_ Solution(o..
         :type wordList: Set[str]
         :rtype: int
         """
-        wordSet = s..(wordList)
+        wordSet s..(wordList)
         wordSet.add(beginWord)
         # DON'T ADD endWord
-        visited = s..([beginWord])
-        queue = [beginWord]
-        length = 0
+        visited s..([beginWord])
+        queue [beginWord]
+        length 0
         w.... queue:
-            n = l..(queue)
+            n l..(queue)
             length += 1
             ___ _ __ r..(n
-                word = queue.p.. 0)
+                word queue.p.. 0)
                 __ word __ endWord:
                     r.. length
-                nextWords = getNext(word, wordSet)
+                nextWords getNext(word, wordSet)
                 ___ nextWord __ nextWords:
                     __ nextWord n.. __ visited:
                         visited.add(nextWord)
@@ -32,18 +32,18 @@ c_ Solution(o..
         r.. 0
     
     ___ getNext  word, wordSet
-        chars = 'abcdefghijklmnopqrstuvwxyz'
+        chars 'abcdefghijklmnopqrstuvwxyz'
         res    # list
         ___ i, c __ e..(word
             ___ c0 __ chars:
                 __ c != c0:
-                    word0 = word[:i]+c0+word[i+1:]
+                    word0 word[:i]+c0+word[i+1:]
                     __ word0 __ wordSet:
                         res.a..(word0)
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 "hit",
                 "cog",
@@ -56,7 +56,7 @@ c_ Solution(o..
             ],
         ]
         ___ beginWord, endWord, wordList __ testCases:
-            result = ladderLength(beginWord, endWord, wordList)
+            result ladderLength(beginWord, endWord, wordList)
             print('result: %s' % result)
             print('-='*30+'-')
 

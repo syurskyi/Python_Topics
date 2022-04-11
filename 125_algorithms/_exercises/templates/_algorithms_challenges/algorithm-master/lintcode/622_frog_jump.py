@@ -14,9 +14,9 @@ c_ Solution:
         __ stones[1] != 1:
             r.. F..
 
-        xs = s..(stones)  # to check in O(1)
-        queue = [(stones[0], 0)]
-        visited = s..(queue)
+        xs s..(stones)  # to check in O(1)
+        queue [(stones[0], 0)]
+        visited s..(queue)
 
         ___ pos, k __ queue:
             ___ x __ (k - 1, k, k + 1
@@ -49,7 +49,7 @@ c_ Solution:
         __ stones[1] != 1:
             r.. F..
 
-        dp = {pos: s..() ___ pos __ stones}
+        dp {pos: s..() ___ pos __ stones}
         dp[stones[0]].add(0)
 
         ___ pos __ stones:

@@ -6,7 +6,7 @@ ___ test_best_match_per_wine_all
     ... best_match_per_wine()[2] __ 13.0
 
 
-cases_best_by_wine = [
+cases_best_by_wine [
     ("white", "Sauvignon blanc", "Smoked Austrian", 8.0),
     ("red", "Cabernet sauvignon", "Dorset Blue Vinney", 13.0),
     ("sparkling", "Moscato d’Asti", "Carré de l'Est", 6.0),
@@ -15,7 +15,7 @@ cases_best_by_wine = [
 
 ?p__.m__.p.("case", cases_best_by_wine)
 ___ test_best_match_per_wine_type(case
-    wine_type, *result = case
+    wine_type, *result case
     ... best_match_per_wine(wine_type) __ t..(result)
 
 
@@ -28,8 +28,8 @@ ___ test_all_wines_included
     ... l..(match_wine_5cheeses __ 26
 
 
-mw5c = match_wine_5cheeses()
-cases = [
+mw5c match_wine_5cheeses()
+cases [
     (0, "Barbera", ["Cheddar", "Gruyère", "Boursin", "Parmesan", "Liptauer"]),
     (1, "Barolo", ["Boursin", "Cheddar", "Gouda", "Stilton", "Tilsit"]),
     (
@@ -63,6 +63,6 @@ ___ test_match_wine_5cheeses(case
     """ test of presence of first 2 cheeses only
     because if score is same for more pairs, order of pairs cannot be assumed
     """
-    idx, wine, cheeses = case
+    idx, wine, cheeses case
     ... mw5c[idx][0] __ wine
     ... mw5c[idx][1] __ cheeses

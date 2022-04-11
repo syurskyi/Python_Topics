@@ -23,10 +23,10 @@ c_ Solution:
 
         binary search with checking mid odd/even
         """
-        n = l..(nums)
-        lo, hi = 0, n
+        n l..(nums)
+        lo, hi 0, n
         w.... lo < hi:
-            mid = (lo + hi) // 2
+            mid (lo + hi) // 2
             __ (
                 mid % 2 __ 0 a.. mid + 1 < hi a.. nums[mid] __ nums[mid + 1]
             ) o. (
@@ -35,9 +35,9 @@ c_ Solution:
                 # to make the target is on the right
                 # when mid even, mid and mid + 1 form a pair; there are odd number of elements on the right
                 # when mid odd, mid and mid - 1 form a pair; there are odd number of elements on the right
-                lo = mid + 1
+                lo mid + 1
             ____
-                hi = mid
+                hi mid
 
         r.. nums[lo]
 
@@ -50,15 +50,15 @@ c_ Solution:
         should be in the expected position
         binary search, compare the searched index and expected index
         """
-        n = l..(nums)
-        lo, hi = 0, n
+        n l..(nums)
+        lo, hi 0, n
         w.... lo < hi:
-            mid = (lo + hi) // 2
-            idx = bisect_right(nums, nums[mid], lo, hi)
+            mid (lo + hi) // 2
+            idx bisect_right(nums, nums[mid], lo, hi)
             __ idx <_ mid:
-                hi = mid - 1
+                hi mid - 1
             ____
-                lo = mid
+                lo mid
 
         r.. nums[hi - 1]
 
@@ -67,7 +67,7 @@ c_ Solution:
         """
         XOR O(n)
         """
-        ret = nums[0]
+        ret nums[0]
         ___ e __ nums[1:]:
             ret ^= e
         r.. ret

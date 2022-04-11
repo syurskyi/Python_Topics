@@ -9,7 +9,7 @@ street.
 Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of
 money you can rob tonight without alerting the police.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -21,20 +21,20 @@ c_ Solution:
         :type nums: list
         :rtype: int
         """
-        n = l..(nums)
+        n l..(nums)
         __ n < 2:
             r.. s..(nums)
 
         # include first but exclude last
-        F = [0 ___ _ __ x..(n-1+2)]
+        F [0 ___ _ __ x..(n-1+2)]
         ___ i __ x..(2, n+1
-            F[i] = m..(F[i-1], F[i-2]+nums[i-2])
-        ret = F[-1]
+            F[i] m..(F[i-1], F[i-2]+nums[i-2])
+        ret F[-1]
 
         # exclude first but include last
-        F = [0 ___ _ __ x..(n-1+2)]
+        F [0 ___ _ __ x..(n-1+2)]
         ___ i __ x..(2, n+1
-            F[i] = m..(F[i-1], F[i-2]+nums[i-1])
+            F[i] m..(F[i-1], F[i-2]+nums[i-1])
 
-        ret = m..(ret, F[-1])
+        ret m..(ret, F[-1])
         r.. ret

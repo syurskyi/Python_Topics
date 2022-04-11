@@ -63,7 +63,7 @@ c_ MyCalendarTwo:
         """
         b__.i.. (lst, (start, "start"
         b__.i.. (lst, (end, "end"
-        count = 0
+        count 0
         ___ _, flag __ lst:
             count += 1 __ flag __ "start" ____ -1
             __ count > 2:

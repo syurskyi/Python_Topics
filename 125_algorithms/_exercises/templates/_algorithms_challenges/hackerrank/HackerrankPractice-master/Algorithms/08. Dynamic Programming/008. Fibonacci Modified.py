@@ -2,8 +2,8 @@
 # Score: 45
 
 
-n1, n2, n = map(i.., input().s..
-sequence = [n1, n2]
+n1, n2, n map(i.., input().s..
+sequence [n1, n2]
 __ n <_ 2:
     print(sequence[n-1])
 ____

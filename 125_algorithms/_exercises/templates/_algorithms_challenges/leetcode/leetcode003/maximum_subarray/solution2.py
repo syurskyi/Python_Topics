@@ -12,12 +12,12 @@ c_ Solution:
     ___ maxSubArray  A
         __ n.. A:
             r.. 0
-        res = A[0]
-        cur_sum = A[0]
-        n = l..(A)
+        res A[0]
+        cur_sum A[0]
+        n l..(A)
         ___ i __ r..(1, n
-            cur_sum = m..(cur_sum + A[i], A[i])
-            res = m..(res, cur_sum)
+            cur_sum m..(cur_sum + A[i], A[i])
+            res m..(res, cur_sum)
         # If negative sum is not allowed, add the following line:
         # if res < 0: return 0
         r.. res

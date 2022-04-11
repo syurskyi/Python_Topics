@@ -1,18 +1,18 @@
 ____ c.. _______ n..
 ____ d__ _______ d__
 
-Transaction = n..('Transaction', 'giver points date')
+Transaction n..('Transaction', 'giver points date')
 # https://twitter.com/raymondh/status/953173419486359552
-Transaction.__new__.__defaults__ = (d__.n..,)
+Transaction.__new__.__defaults__ (d__.n..,)
 
 
 c_ User:
 
 
     ___ - ,name
-        name = name
-        karma = 0
-        fan_names = s..()
+        name name
+        karma 0
+        fan_names s..()
         points    # list
         _transactions    # list
 

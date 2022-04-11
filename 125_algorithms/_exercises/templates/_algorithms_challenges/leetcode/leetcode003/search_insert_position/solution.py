@@ -21,31 +21,31 @@ c_ Solution(o..
         :type target: int
         :rtype: int
         """
-        n = l..(nums)
+        n l..(nums)
         __ n.. nums:
             r.. 0
         ____
-            left = 0
-            right = n - 1
+            left 0
+            right n - 1
             w.... left <_ right:
-                mid = (left + right) / 2
+                mid (left + right) / 2
                 __ nums[mid] __ target:
                     r.. mid
                 ____ (mid < n - 1 a.. nums[mid] < target
                         a.. nums[mid + 1] > target
                     r.. mid + 1
                 ____ target < nums[mid]:
-                    right = mid - 1
+                    right mid - 1
                 ____
-                    left = mid + 1
+                    left mid + 1
             __ left > n - 1:
                 r.. n
             ____ right < 0:
                 r.. 0
 
 
-a = [1, 3, 5, 6]
-s = Solution()
+a [1, 3, 5, 6]
+s Solution()
 print(s.searchInsert(a, 5
 print(s.searchInsert(a, 2
 print(s.searchInsert(a, 7

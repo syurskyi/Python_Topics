@@ -3,7 +3,7 @@ Premium Question
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -13,10 +13,10 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        m = d..(i..)
-        i = 0
-        j = 0
-        maxa = 0
+        m d..(i..)
+        i 0
+        j 0
+        maxa 0
         ___ j __ x..(l..(s:
             m[s[j]] += 1
             w.... l..(m) > 2:
@@ -26,7 +26,7 @@ c_ Solution(o..
 
                 i += 1
 
-            maxa = m..(maxa, j-i+1)
+            maxa m..(maxa, j-i+1)
 
         r.. maxa
 

@@ -7,16 +7,16 @@ c_ Solution:
     ___ maxSubarray4  A, k
         __ n.. A:
             r.. 0
-        n = l..(A)
+        n l..(A)
         __ n < k:
             r.. 0
 
-        ans = f__('-inf')
-        Smin = 0
-        S = [0] * (n + 1)
+        ans f__('-inf')
+        Smin 0
+        S [0] * (n + 1)
 
         ___ i __ r..(1, n + 1
-            S[i] = S[i - 1] + A[i - 1]
+            S[i] S[i - 1] + A[i - 1]
 
             """
             in prefix sum, `i` means the size,
@@ -26,13 +26,13 @@ c_ Solution:
                 _____
 
             __ S[i] - Smin > ans:
-                ans = S[i] - Smin
+                ans S[i] - Smin
 
             """
             to get the segment sum of `k` children and ended at `i`
             => [i - k + 1, i]
             """
             __ S[i - k + 1] < Smin:
-                Smin = S[i - k + 1]
+                Smin S[i - k + 1]
 
         r.. ans

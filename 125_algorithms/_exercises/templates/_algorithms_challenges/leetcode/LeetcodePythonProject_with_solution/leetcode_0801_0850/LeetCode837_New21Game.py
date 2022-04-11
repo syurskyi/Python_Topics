@@ -11,24 +11,24 @@ c_ Solution(o..
         :type W: int
         :rtype: float
         """
-        n, k, w = N, K, W
+        n, k, w N, K, W
         __ k __ 0 o. n >_ k+w: r.. 1
-        dp = [1.0]+[0.0]*n
-        wSum = 1.0
+        dp [1.0]+[0.0]*n
+        wSum 1.0
         ___ i __ r..(1, n+1
-            dp[i] = wSum/w
+            dp[i] wSum/w
             __ i < k: wSum += dp[i]
             __ i - w >_ 0: wSum -_ dp[i-w]
         r.. s..(dp[k:])
     
     ___ test
-        testCases = [
+        testCases [
             [10, 1, 10],
             [6, 1, 10],
             [21, 17, 10],
         ]
         ___ n, k, w __ testCases:
-            result = new21Game(n, k, w)
+            result new21Game(n, k, w)
             print('result: %s' % result)
             print('-='*30+'-')
 

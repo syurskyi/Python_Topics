@@ -6,10 +6,10 @@ Created on Apr 17, 2017
 
 c_ Solution(o..
     ___ findKthNumber  n, k
-        curr = 1
+        curr 1
         k -_ 1
         w.... k > 0:
-            steps = calSteps(n, curr, curr+1)
+            steps calSteps(n, curr, curr+1)
             __ steps <_ k:
                 curr += 1
                 k -_ steps
@@ -19,7 +19,7 @@ c_ Solution(o..
         r.. curr
     
     ___ calSteps  n, n1, n2
-        steps = 0
+        steps 0
         w.... n1 <_ n:
             steps += m..(n+1, n2)-n1
             n1 *= 10
@@ -27,7 +27,7 @@ c_ Solution(o..
         r.. steps
     
     ___ test
-        testCases = [
+        testCases [
             [
                 13,
                 2,
@@ -36,7 +36,7 @@ c_ Solution(o..
         ___ n, k __ testCases:
             print('n: %s' % n)
             print('k: %s' % k)
-            result = findKthNumber(n, k)
+            result findKthNumber(n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

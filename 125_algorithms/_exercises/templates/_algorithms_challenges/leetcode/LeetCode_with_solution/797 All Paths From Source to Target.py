@@ -26,9 +26,9 @@ ____ t___ _______ L..
 
 c_ Solution:
     ___ allPathsSourceTarget  graph: L..[L..[i..]]) __ L..[L..[i..]]:
-        G = graph
+        G graph
         ret    # list
-        visited = [F.. ___ _ __ G]
+        visited [F.. ___ _ __ G]
         dfs(G, 0, l..(G) - 1, [0], visited, ret)
         r.. ret
 
@@ -39,9 +39,9 @@ c_ Solution:
 
         ___ nbr __ G[cur]:
             __ n.. visited[nbr]:
-                visited[nbr] = T..
+                visited[nbr] T..
                 cur_path.a..(nbr)
                 # pre-check
                 dfs(G, nbr, d, cur_path, visited, ret)
                 cur_path.p.. )
-                visited[nbr] = F..
+                visited[nbr] F..

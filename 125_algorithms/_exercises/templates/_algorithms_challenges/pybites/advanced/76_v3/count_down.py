@@ -3,7 +3,7 @@ ____ f.. _______ singledispatch
 
 @singledispatch
 ___ count_down(data_type
-    d = ''
+    d ''
     ___
         __ l..(data_type) != 4:
             r.. V...
@@ -24,7 +24,7 @@ ___ _(data_type
 
 @count_down.register(f__)
 ___ _(data_type: f__
-    s = s..(data_type)
+    s s..(data_type)
     w.... s != '':
         print(s)
-        s = s[:-1]
+        s s[:-1]

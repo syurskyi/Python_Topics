@@ -10,7 +10,7 @@ c_ Solution:
         group    # dict
 
         ___ w __ s:
-            key = ''.j..(s..(w
+            key ''.j..(s..(w
             __ key n.. __ group:
                 group[key]    # list
             group[key].a..(w)

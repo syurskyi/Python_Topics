@@ -20,13 +20,13 @@ The linked lists must retain their original structure after the function returns
 You may assume there are no cycles anywhere in the entire linked structure.
 Your code should preferably run in O(n) time and use only O(1) memory.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 c_ Solution:
@@ -38,28 +38,28 @@ c_ Solution:
         :type headB: ListNode
         :rtype: ListNode
         """
-        l_a = _get_len(headA)
-        l_b = _get_len(headB)
+        l_a _get_len(headA)
+        l_b _get_len(headB)
         __ l_a > l_b:
-            l_a, l_b = l_b, l_a
-            headA, headB = headB, headA
+            l_a, l_b l_b, l_a
+            headA, headB headB, headA
 
-        cur_a = headA
-        cur_b = headB
+        cur_a headA
+        cur_b headB
         ___ i __ x..(l_b-l_a
-            cur_b = cur_b.next
+            cur_b cur_b.next
 
         w.... cur_a != cur_b:
-            cur_a = cur_a.next
-            cur_b = cur_b.next
+            cur_a cur_a.next
+            cur_b cur_b.next
 
         r.. cur_a
 
     ___ _get_len  head
-        n = 0
-        cur = head
+        n 0
+        cur head
         w.... cur:
             n += 1
-            cur = cur.next
+            cur cur.next
 
         r.. n

@@ -28,23 +28,23 @@ c_ Solution:
         r.. []
 
     ___ union  nodes, u, v
-        a = find(nodes, u)
-        b = find(nodes, v)
+        a find(nodes, u)
+        b find(nodes, v)
 
         __ a __ b:
             r.. F..
 
-        nodes[a] = b
+        nodes[a] b
         r.. T..
 
     ___ find  nodes, u
         __ u n.. __ nodes:
-            nodes[u] = u
+            nodes[u] u
             r.. u
         __ nodes[u] __ u:
             r.. u
 
-        nodes[u] = find(nodes, nodes[u])
+        nodes[u] find(nodes, nodes[u])
         r.. nodes[u]
 
 
@@ -63,7 +63,7 @@ c_ Solution:
         __ n.. edges:
             r.. []
 
-        nodes = c...d..(s..)
+        nodes c...d..(s..)
 
         ___ u, v __ edges:
             # dfs to check u and v are connected already => cycle

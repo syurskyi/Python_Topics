@@ -11,16 +11,16 @@ Given the below binary tree,
      2   3
 Return 6.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution:
-    global_max = -1<<31
+    global_max -1<<31
     ___ maxPathSum  root
         """
         :param root: TreeNode
@@ -53,12 +53,12 @@ c_ Solution:
         __ n.. root:
             r.. 0
 
-        left_max_component = get_max_component(root.left)
-        right_max_component = get_max_component(root.right)
+        left_max_component get_max_component(root.left)
+        right_max_component get_max_component(root.right)
 
         # update global max
-        current_max_sum = m..(root.val, root.val+left_max_component, root.val+right_max_component, root.val+left_max_component+right_max_component)  # four situations
-        global_max = m..(global_max, current_max_sum)
+        current_max_sum m..(root.val, root.val+left_max_component, root.val+right_max_component, root.val+left_max_component+right_max_component)  # four situations
+        global_max m..(global_max, current_max_sum)
 
         # return value for upper layer to calculate the current_max_sum
         r.. m..(root.val, root.val+left_max_component, root.val+right_max_component)  # excluding arch (i.e. root.val+left_max_component+right_max_component)

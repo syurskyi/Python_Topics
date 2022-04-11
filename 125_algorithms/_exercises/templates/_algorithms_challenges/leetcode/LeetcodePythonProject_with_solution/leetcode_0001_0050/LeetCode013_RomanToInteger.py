@@ -5,7 +5,7 @@ Created on Nov 7, 2017
 '''
 c_ Solution(o..
     ___ romanToInt  s
-        hashmap = {
+        hashmap {
             'I': 1,
             'V': 5,
             'X': 10,
@@ -14,9 +14,9 @@ c_ Solution(o..
             'D': 500,
             'M': 1000,
         }
-        res = 0
+        res 0
         ___ i, c __ e..(s
-            curVal = hashmap[c]
+            curVal hashmap[c]
             __ i+1 < l..(s) a.. hashmap[s[i+1]] > curVal:
                 res -_ curVal
             ____

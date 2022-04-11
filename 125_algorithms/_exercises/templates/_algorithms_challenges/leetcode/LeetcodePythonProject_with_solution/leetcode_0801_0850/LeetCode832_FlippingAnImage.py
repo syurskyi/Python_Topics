@@ -9,26 +9,26 @@ c_ Solution(o..
         :type A: List[List[int]]
         :rtype: List[List[int]]
         """
-        image = A
+        image A
         __ n.. image o. n.. image[0]: r..
-        m, n = l..(image), l..(image[0])
+        m, n l..(image), l..(image[0])
         ___ i __ r..(m
-            j, l = 0, n-1
+            j, l 0, n-1
             w.... j <_ l:
-                image[i][j], image[i][l] = image[i][l], image[i][j]
-                image[i][j] = 1 __ n.. image[i][j] ____ 0
+                image[i][j], image[i][l] image[i][l], image[i][j]
+                image[i][j] 1 __ n.. image[i][j] ____ 0
                 __ j < l:
-                    image[i][l] = 1 __ n.. image[i][l] ____ 0
+                    image[i][l] 1 __ n.. image[i][l] ____ 0
                 j += 1
                 l -_ 1
         r.. image
     
     ___ test
-        testCases = [
+        testCases [
             [[1,1,0],[1,0,1],[0,0,0]],
         ]
         ___ image __ testCases:
-            res = flipAndInvertImage(image)
+            res flipAndInvertImage(image)
             print('res: %s' % res)
 
 __ _____ __ _____

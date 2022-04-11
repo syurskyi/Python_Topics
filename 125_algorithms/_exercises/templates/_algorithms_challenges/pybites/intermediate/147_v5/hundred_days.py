@@ -2,13 +2,13 @@ ____ d__ _______ date
 
 ____ dateutil.relativedelta _______ relativedelta
 
-TODAY = date y.._2018,  m.._11,  d.._29)
-FRIDAY = 4
+TODAY date y.._2018,  m.._11,  d.._29)
+FRIDAY 4
 
 
 ___ _get_weekdays(start_date
-    day = relativedelta(d.._+1)
-    current = start_date
+    day relativedelta(d.._+1)
+    current start_date
     ___ x __ r..(100
         y.. current
         current += day * (3 __ current.weekday() __ FRIDAY ____ 1)

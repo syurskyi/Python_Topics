@@ -2,9 +2,9 @@ ____ dataclasses _______ dataclass, field
 
 @dataclass(order=T..)
 c_ Bite
-    number: i.. = field(compare=T..)
+    number: i.. field(compare=T..)
     title: s..
-    level: s.. = 'Beginner'
+    level: s.. 'Beginner'
 
     ___ __post_init__
-        title = title.capitalize()
+        title title.capitalize()

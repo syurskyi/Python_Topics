@@ -44,9 +44,9 @@ ____ c.. _______ d.., d..
 
 c_ Solution(o..
     ___ alienOrder  words: L..[s..]) __ s..:
-        G = construct_graph(words)
-        visited = d..(i..)  # 0 not visited, 1 visiting, 2 visted
-        ret = d..()
+        G construct_graph(words)
+        visited d..(i..)  # 0 not visited, 1 visiting, 2 visted
+        ret d..()
         ___ u __ G.k..:
             __ visited[u] __ 0:
                 __ n.. topo_dfs(G, u, visited, ret
@@ -55,7 +55,7 @@ c_ Solution(o..
         r.. "".j..(ret)
 
     ___ construct_graph  words
-        G = d..(l..)
+        G d..(l..)
         # need to initialize, consider test case ["z", "z"]
         ___ w __ words:  # error
             ___ c __ w:
@@ -77,7 +77,7 @@ c_ Solution(o..
 
         pre-condition: u is not visited (0)
         """
-        visited[u] = 1
+        visited[u] 1
         ___ nbr __ G[u]:
             __ visited[nbr] __ 1:
                 r.. F..
@@ -85,12 +85,12 @@ c_ Solution(o..
                 __ n.. topo_dfs(G, nbr, visited, ret
                     r.. F..
 
-        visited[u] = 2
+        visited[u] 2
         ret.appendleft(u)  # visit larger first
         r.. T..
 
 
 __ _______ __ _______
-    lst = ["ze", "yf", "xd", "wd", "vd", "ua", "tt", "sz", "rd", "qd", "pz", "op", "nw", "mt", "ln", "ko", "jm", "il",
+    lst ["ze", "yf", "xd", "wd", "vd", "ua", "tt", "sz", "rd", "qd", "pz", "op", "nw", "mt", "ln", "ko", "jm", "il",
            "ho", "gk", "fa", "ed", "dg", "ct", "bb", "ba"]
     ... Solution().alienOrder(lst) __ "zyxwvutsrqponmlkjihgfedcba"

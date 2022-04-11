@@ -4,7 +4,7 @@ ____ streak _______ extract_dates, calculate_streak
 
 
 ___ test_extract_dates
-    data = """
+    data """
     +------------+------------+---------+
     | date       | activity   | count   |
     |------------+------------+---------|
@@ -19,7 +19,7 @@ ___ test_extract_dates
     | 2018-09-18 | bite       | 4       |
     +------------+------------+---------+
     """
-    dates = extract_dates(data)
+    dates extract_dates(data)
     ... l..(dates) __ 8  # one less = deduped 2018-09-18
     ... d__.date(2018, 9, 18) __ dates
     ... d__.date(2018, 10, 23) __ dates
@@ -27,7 +27,7 @@ ___ test_extract_dates
 
 
 ___ test_streak_of_0_days
-    data = """
+    data """
     +------------+------------+---------+
     | date       | activity   | count   |
     |------------+------------+---------|
@@ -42,13 +42,13 @@ ___ test_streak_of_0_days
     | 2018-09-18 | bite       | 4       |
     +------------+------------+---------+
     """
-    dates = extract_dates(data)
-    streak = calculate_streak(dates)
+    dates extract_dates(data)
+    streak calculate_streak(dates)
     ... streak __ 0
 
 
 ___ test_streak_of_1_day_can_still_make_today
-    data = """
+    data """
     +------------+------------+---------+
     | date       | activity   | count   |
     |------------+------------+---------|
@@ -63,13 +63,13 @@ ___ test_streak_of_1_day_can_still_make_today
     | 2018-09-18 | bite       | 4       |
     +------------+------------+---------+
     """
-    dates = extract_dates(data)
-    streak = calculate_streak(dates)
+    dates extract_dates(data)
+    streak calculate_streak(dates)
     ... streak __ 1
 
 
 ___ test_streak_of_1_day_thanks_to_todays_progress
-    data = """
+    data """
     +------------+------------+---------+
     | date       | activity   | count   |
     |------------+------------+---------|
@@ -84,13 +84,13 @@ ___ test_streak_of_1_day_thanks_to_todays_progress
     | 2018-09-16 | bite       | 4       |
     +------------+------------+---------+
     """
-    dates = extract_dates(data)
-    streak = calculate_streak(dates)
+    dates extract_dates(data)
+    streak calculate_streak(dates)
     ... streak __ 1
 
 
 ___ test_streak_of_3_days
-    data = """
+    data """
     +------------+------------+---------+
     | date       | activity   | count   |
     |------------+------------+---------|
@@ -105,13 +105,13 @@ ___ test_streak_of_3_days
     | 2018-09-16 | bite       | 4       |
     +------------+------------+---------+
     """
-    dates = extract_dates(data)
-    streak = calculate_streak(dates)
+    dates extract_dates(data)
+    streak calculate_streak(dates)
     ... streak __ 3
 
 
 ___ test_streak_of_10_days
-    data = """
+    data """
     +------------+------------+---------+
     | date       | activity   | count   |
     |------------+------------+---------|
@@ -127,13 +127,13 @@ ___ test_streak_of_10_days
     | 2018-11-02 | 100d       | 2       |
     +------------+------------+---------+
     """
-    dates = extract_dates(data)
-    streak = calculate_streak(dates)
+    dates extract_dates(data)
+    streak calculate_streak(dates)
     ... streak __ 10
 
 
 ___ test_streak_of_almost_10_days_but_gap_so_only_5_days
-    data = """
+    data """
     +------------+------------+---------+
     | date       | activity   | count   |
     |------------+------------+---------|
@@ -148,13 +148,13 @@ ___ test_streak_of_almost_10_days_but_gap_so_only_5_days
     | 2018-11-02 | 100d       | 2       |
     +------------+------------+---------+
     """
-    dates = extract_dates(data)
-    streak = calculate_streak(dates)
+    dates extract_dates(data)
+    streak calculate_streak(dates)
     ... streak __ 5
 
 
 ___ test_streak_of_5_days_dates_out_of_order
-    data = """
+    data """
     +------------+------------+---------+
     | date       | activity   | count   |
     |------------+------------+---------|
@@ -165,6 +165,6 @@ ___ test_streak_of_5_days_dates_out_of_order
     | 2018-11-08 | pcc        | 1       |
     +------------+------------+---------+
     """
-    dates = extract_dates(data)
-    streak = calculate_streak(dates)
+    dates extract_dates(data)
+    streak calculate_streak(dates)
     ... streak __ 5

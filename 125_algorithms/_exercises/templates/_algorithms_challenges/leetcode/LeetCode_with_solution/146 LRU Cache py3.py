@@ -30,9 +30,9 @@ cache.get(4);       // returns 4
 
 c_ Node:
     ___ - , key, val
-        key = key
-        val = val
-        prev, next = N.., N..
+        key key
+        val val
+        prev, next N.., N..
 
 
 c_ LRUCache:
@@ -47,16 +47,16 @@ c_ LRUCache:
 
         Essentially it is the OrderedDict
         """
-        head = Node(N.., N..)
-        tail = Node(N.., N..)
-        head.next = tail
-        tail.prev = head
-        cap = capacity
+        head Node(N.., N..)
+        tail Node(N.., N..)
+        head.next tail
+        tail.prev head
+        cap capacity
         map    # dict
 
     ___ get  key: i..) __ i..:
         __ key __ map:
-            node = map[key]
+            node map[key]
             _remove(key)
             _appendleft(node)
             r.. node.val
@@ -67,26 +67,26 @@ c_ LRUCache:
         __ key __ map:
             _remove(key)
         ____ l.. m..) >_ cap:
-            node = tail.prev
+            node tail.prev
             _remove(node.key)
 
-        node = Node(key, value)
+        node Node(key, value)
         _appendleft(node)
 
     ___ _appendleft  node: Node
-        map[node.key] = node  # update/delete map in these two operators
-        nxt = head.next
-        head.next = node
-        node.prev = head
-        node.next = nxt
-        nxt.prev = node
+        map[node.key] node  # update/delete map in these two operators
+        nxt head.next
+        head.next node
+        node.prev head
+        node.next nxt
+        nxt.prev node
 
     ___ _remove  key: i..
-        node = map[key]
-        prev = node.prev
-        nxt = node.next
-        prev.next = nxt
-        nxt.prev = prev
+        node map[key]
+        prev node.prev
+        nxt node.next
+        prev.next nxt
+        nxt.prev prev
         del map[key]  # update/delete map in these two operators
 
 # Your LRUCache object will be instantiated and called as such:

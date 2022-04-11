@@ -43,9 +43,9 @@ c_ DualHeap:
         """
         max_h    # list  # List[Tuple[comparator, num]]
         min_h    # list
-        max_sz = 0
-        min_sz = 0
-        to_remove = s..()  # value, error mapping index in nums
+        max_sz 0
+        min_sz 0
+        to_remove s..()  # value, error mapping index in nums
 
     ___ insert  num
         __ max_h a.. num > max_h[0][1]:
@@ -66,10 +66,10 @@ c_ DualHeap:
 
     ___ clean_top
         w.... max_h a.. max_h[0][1] __ to_remove:
-            _, num = heapq.heappop(max_h)
+            _, num heapq.heappop(max_h)
             to_remove.remove(num)
         w.... min_h a.. min_h[0][1] __ to_remove:
-            _, num = heapq.heappop(min_h)
+            _, num heapq.heappop(min_h)
             to_remove.remove(num)
 
     ___ balance
@@ -82,7 +82,7 @@ c_ DualHeap:
             max_sz += 1
         w.... max_sz > min_sz + 1:
             clean_top()
-            _, num = heapq.heappop(max_h)
+            _, num heapq.heappop(max_h)
             heapq.heappush(min_h, (num, num
             min_sz += 1
             max_sz -_ 1
@@ -115,7 +115,7 @@ c_ Solution:
         Calculating median also doesn't care about index, it only cares about value
         """
         ret    # list
-        dh = DualHeap()
+        dh DualHeap()
         ___ i __ r..(k
             dh.insert(nums[i])
 

@@ -15,16 +15,16 @@ c_ Solution(o..
         valuesMap    # dict
         graph    # dict
         ___ e, v __ z..(equations, values
-            valuesMap[(e[0], e[1])] = v
-            valuesMap[(e[1], e[0])] = 1.0/v
+            valuesMap[(e[0], e[1])] v
+            valuesMap[(e[1], e[0])] 1.0/v
             __ e[0] __ graph:
                 graph[e[0]].add(e[1])
             ____
-                graph[e[0]] = s..([e[1]])
+                graph[e[0]] s..([e[1]])
             __ e[1] __ graph:
                 graph[e[1]].add(e[0])
             ____
-                graph[e[1]] = s..([e[0]])
+                graph[e[1]] s..([e[0]])
         result    # list
         ___ query __ queries:
             __ query[0] n.. __ graph:
@@ -40,14 +40,14 @@ c_ Solution(o..
     ___ dfs  valuesMap, graph, start, target, curr, visited, result
         visited.add(start)
         __ start __ target:
-            result[0] = curr
+            result[0] curr
         __ start __ graph:
             ___ nextNode __ graph[start]:
                 __ nextNode n.. __ visited:
                     dfs(valuesMap, graph, nextNode, target, curr*valuesMap[(start, nextNode)], visited, result)
     
     ___ test
-        testCases = [
+        testCases [
             (
                 [["a", "b"], ["b", "c"]],
                 [2.0, 3.0],
@@ -55,7 +55,7 @@ c_ Solution(o..
             ),
         ]
         ___ equations, values, queries __ testCases:
-            result = calcEquation(equations, values, queries)
+            result calcEquation(equations, values, queries)
             print('result: %s' % result)
             print('-='*20+'-')
 

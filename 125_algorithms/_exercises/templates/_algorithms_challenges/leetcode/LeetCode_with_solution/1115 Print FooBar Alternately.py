@@ -39,8 +39,8 @@ ____ t___ _______ C..
 
 c_ FooBar:
     ___ - , n
-        n = n
-        locks = [Lock(), Lock()]
+        n n
+        locks [Lock(), Lock()]
         locks[1].a..
 
 

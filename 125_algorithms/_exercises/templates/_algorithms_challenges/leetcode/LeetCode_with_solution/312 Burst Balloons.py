@@ -19,7 +19,7 @@ Return 167
     nums = [3,1,5,8] --> [3,5,8] -->   [3,8]   -->  [8]  --> []
    coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -34,16 +34,16 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: int
         """
-        n = l..(A)
+        n l..(A)
 
         ___ g.. i
             __ i < 0 o. i >_ n: r.. 1
             r.. A[i]
 
-        F = [[0 ___ _ __ x..(n+1)] ___ _ __ x..(n+1)]
+        F [[0 ___ _ __ x..(n+1)] ___ _ __ x..(n+1)]
         ___ i __ x..(n+1, -1, -1
             ___ j __ x..(i+1, n+1
-                F[i][j] = m..(
+                F[i][j] m..(
                     F[i][k]+g.. i-1)*g.. k)*g.. j)+F[k+1][j]
                     ___ k __ x..(i, j)
                 )

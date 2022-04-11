@@ -1,7 +1,7 @@
 ____ pytz _______ timezone, utc
 
-AUSTRALIA = timezone('Australia/Sydney')
-SPAIN = timezone('Europe/Madrid')
+AUSTRALIA timezone('Australia/Sydney')
+SPAIN timezone('Europe/Madrid')
 
 
 ___ what_time_lives_pybites(naive_utc_dt

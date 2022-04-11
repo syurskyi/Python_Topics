@@ -9,10 +9,10 @@ c_ Solution:
         __ n.. n:
             r.. ans
 
-        stack = [1]
+        stack [1]
 
         w.... stack:
-            x = stack.p.. )
+            x stack.p.. )
             ans.a..(x)
 
             # considering the case no carry up if x + 1

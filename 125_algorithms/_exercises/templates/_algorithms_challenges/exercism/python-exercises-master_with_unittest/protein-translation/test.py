@@ -36,17 +36,17 @@ c_ ProteinTranslationTests(unittest.TestCase
             assertEqual('STOP', of_codon(codon
 
     ___ test_translates_rna_strand_into_correct_protein
-        strand = 'AUGUUUUGG'
+        strand 'AUGUUUUGG'
         e.. =  'Methionine', 'Phenylalanine', 'Tryptophan'
         assertEqual(e.., of_rna(strand
 
     ___ test_stops_translation_if_stop_codon_present
-        strand = 'AUGUUUUAA'
+        strand 'AUGUUUUAA'
         e.. =  'Methionine', 'Phenylalanine'
         assertEqual(e.., of_rna(strand
 
     ___ test_stops_translation_of_longer_strand
-        strand = 'UGGUGUUAUUAAUGGUUU'
+        strand 'UGGUGUUAUUAAUGGUUU'
         e.. =  'Tryptophan', 'Cysteine', 'Tyrosine'
         assertEqual(e.., of_rna(strand
 

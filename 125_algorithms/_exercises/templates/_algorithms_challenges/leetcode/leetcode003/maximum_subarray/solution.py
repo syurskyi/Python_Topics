@@ -11,11 +11,11 @@ c_ Solution:
     # @return an integer
     ___ maxSubArray  A
         __ n.. A:
-            msg = 'The input array must contain at least one number.'
+            msg 'The input array must contain at least one number.'
             r.. E..(msg)
-        max_sum = A[0]
-        max_current = max_sum
+        max_sum A[0]
+        max_current max_sum
         ___ i __ r..(1, l..(A:
-            max_current = m..(A[i], max_current + A[i])
-            max_sum = m..(max_sum, max_current)
+            max_current m..(A[i], max_current + A[i])
+            max_sum m..(max_sum, max_current)
         r.. max_sum

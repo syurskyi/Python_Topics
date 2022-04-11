@@ -14,9 +14,9 @@ c_ Solution(o..
         hashmap    # dict
         ___ w1, w2 __ pairs:
             __ w1 n.. __ hashmap:
-                hashmap[w1] = s..()
+                hashmap[w1] s..()
             __ w2 n.. __ hashmap:
-                hashmap[w2] = s..()
+                hashmap[w2] s..()
             hashmap[w1].add(w2)
             hashmap[w2].add(w1)
         __ l..(words1) != l..(words2
@@ -27,7 +27,7 @@ c_ Solution(o..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             [
                 ["a","very","delicious","meal"],
                 ["one","really","good","dinner"],
@@ -43,7 +43,7 @@ c_ Solution(o..
             print('words1: %s' % words1)
             print('words2: %s' % words2)
             print('pairs: %s' % pairs)
-            result = areSentencesSimilar(words1, words2, pairs)
+            result areSentencesSimilar(words1, words2, pairs)
             print('result: %s' % result)
             print('-='*30+'-')
 

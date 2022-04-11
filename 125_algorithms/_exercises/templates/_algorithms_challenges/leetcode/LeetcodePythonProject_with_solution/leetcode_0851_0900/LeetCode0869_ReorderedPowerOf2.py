@@ -9,11 +9,11 @@ c_ Solution(o..
         :type N: int
         :rtype: bool
         """
-        n = N
+        n N
         __ n __ 1: r.. T..
-        s = s..(n)
-        length = l..(s)
-        nums = getNums(length)
+        s s..(n)
+        length l..(s)
+        nums getNums(length)
         ___ num __ nums:
             __ matches(n, num
                 r.. T..
@@ -25,7 +25,7 @@ c_ Solution(o..
             __ c __ hashmap:
                 hashmap[c] += 1
             ____
-                hashmap[c] = 1
+                hashmap[c] 1
         ___ c __ s..(num
             __ c __ hashmap:
                 hashmap[c] -_ 1
@@ -37,7 +37,7 @@ c_ Solution(o..
     
     ___ getNums  length
         res    # list
-        num = 2
+        num 2
         w.... l..(s..(num < length:
             num *= 2
         w.... l..(s..(num __ length:

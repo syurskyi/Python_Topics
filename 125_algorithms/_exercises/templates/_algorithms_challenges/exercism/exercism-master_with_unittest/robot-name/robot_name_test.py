@@ -5,13 +5,13 @@ _______ r__
 
 
 c_ RobotTest(unittest.TestCase
-    name_re = r'^[A-Z]{2}\d{3}$'
+    name_re r'^[A-Z]{2}\d{3}$'
 
     ___ test_has_name
         assertRegex(Robot().name, name_re)
 
     ___ test_name_sticks
-        robot = Robot()
+        robot Robot()
         robot.name
         assertEqual(robot.name, robot.name)
 
@@ -23,21 +23,21 @@ c_ RobotTest(unittest.TestCase
 
     ___ test_rest_name
         # Set a seed
-        seed = "Totally random."
+        seed "Totally random."
 
         # Initialize RNG using the seed
         r__.seed(seed)
 
         # Call the generator
-        robot = Robot()
-        name = robot.name
+        robot Robot()
+        name robot.name
 
         # Reinitialize RNG using seed
         r__.seed(seed)
 
         # Call the generator again
         robot.reset()
-        name2 = robot.name
+        name2 robot.name
         assertNotEqual(name, name2)
         assertRegex(name2, name_re)
 

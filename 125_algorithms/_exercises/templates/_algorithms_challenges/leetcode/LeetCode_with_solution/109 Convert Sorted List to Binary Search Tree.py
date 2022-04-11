@@ -1,25 +1,25 @@
 """
 Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 c_ Solution:
     # class attribute to keep trace the currently processing nodes
     # current_node = None
     ___ -
-        current_node = N..  # !important, avoid time complexity of look up
+        current_node N..  # !important, avoid time complexity of look up
 
     ___ sortedListToBST  head
         """
@@ -32,26 +32,26 @@ c_ Solution:
         __ n.. head:
             r.. head
 
-        current_node = head
-        length = getLength(head)
+        current_node head
+        length getLength(head)
         r.. sortedListToBST_dfs(0, length-1)
 
     ___ sortedListToBST_dfs  start, end
         __ start>end:
             r..
-        mid = (start+end)/2
-        left_subtree = sortedListToBST_dfs(start, mid-1)
-        root = TreeNode(current_node.val)
-        current_node = current_node.next
-        right_subtree = sortedListToBST_dfs(mid+1, end)
+        mid (start+end)/2
+        left_subtree sortedListToBST_dfs(start, mid-1)
+        root TreeNode(current_node.val)
+        current_node current_node.next
+        right_subtree sortedListToBST_dfs(mid+1, end)
 
-        root.left = left_subtree
-        root.right = right_subtree
+        root.left left_subtree
+        root.right right_subtree
         r.. root
 
     ___ getLength  head
-        count = 0
+        count 0
         w.... head:
-            head = head.next
+            head head.next
             count += 1
         r.. count

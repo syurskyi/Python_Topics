@@ -17,7 +17,7 @@ c_ Solution:
         __ n.. results:
             r.. ans
 
-        k = 5
+        k 5
         top_k    # dict
 
         ___ r __ results:
@@ -29,12 +29,12 @@ c_ Solution:
             __ l..(top_k[r.id]) > k:
                 heappop(top_k[r.id])
 
-        _sum = 0
+        _sum 0
         ___ id, scores __ top_k.i..:
-            _sum = 0
+            _sum 0
             ___ score __ scores:
                 _sum += score
 
-            ans[id] = _sum * 1.0 / k
+            ans[id] _sum * 1.0 / k
 
         r.. ans

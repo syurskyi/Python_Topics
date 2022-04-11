@@ -11,7 +11,7 @@ Return
     ["a","a","b"]
   ]
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ partition  s
         """

@@ -42,13 +42,13 @@ ____ t___ _______ L..
 
 c_ Solution:
     ___ isMonotonic  A: L..[i..]) __ b..:
-        mono = 0  # 0 undecided, 1 decr, 2 incr
+        mono 0  # 0 undecided, 1 decr, 2 incr
         ___ i __ r..(1, l..(A:
             __ mono __ 0:
                 __ A[i] > A[i-1]:
-                    mono = 2
+                    mono 2
                 ____ A[i] < A[i-1]:
-                    mono = 1
+                    mono 1
             ____
                 __ A[i] > A[i-1] a.. mono __ 1:
                     r.. F..

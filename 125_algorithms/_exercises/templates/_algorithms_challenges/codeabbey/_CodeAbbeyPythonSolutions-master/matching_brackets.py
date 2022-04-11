@@ -1,13 +1,13 @@
 _______ __
 
-amount_values = i..(input
+amount_values i..(input
 results    # list
 
 ___ is_matching(word
-    word = __.sub(r"[^()[\]{}<>]","",word)
+    word __.sub(r"[^()[\]{}<>]","",word)
 
-    open_brackets = ["[","(","{","<"]
-    close_brackets = ["]",")","}",">"]
+    open_brackets ["[","(","{","<"]
+    close_brackets ["]",")","}",">"]
 
     open_brackets_in_word =[]
     ___ i __ word:
@@ -25,7 +25,7 @@ ___ is_matching(word
     r.. 1
 
 ___ i __ r..(amount_values
-    word = input()
+    word input()
     results.a..(is_matching(word
 
 print(*results)

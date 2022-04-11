@@ -15,14 +15,14 @@ lowest node in T that has both v and w as descendants (where we allow a node to 
 For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another example is LCA of nodes 2 and 4 is 2,
 since a node can be a descendant of itself according to the LCA definition.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -34,11 +34,11 @@ c_ Solution:
         :type q: TreeNode
         :rtype: TreeNode
         """
-        cur = root
+        cur root
         w... T...
             __ p.val < cur.val a.. q.val < cur.val:
-                cur = cur.left
+                cur cur.left
             ____ p.val > cur.val a.. q.val > cur.val:
-                cur = cur.right
+                cur cur.right
             ____  # including case in self-descendant
                 r.. cur

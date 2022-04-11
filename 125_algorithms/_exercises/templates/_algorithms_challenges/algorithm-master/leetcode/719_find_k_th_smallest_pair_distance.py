@@ -10,13 +10,13 @@ c_ Solution:
 
         A.s..()
 
-        left, right = 0, A[-1] - A[0]
+        left, right 0, A[-1] - A[0]
         w.... left + 1 < right:
-            mid = (left + right) // 2
+            mid (left + right) // 2
             __ check_valid(A, mid, k
-                right = mid
+                right mid
             ____
-                left = mid
+                left mid
 
         r.. left __ check_valid(A, left, k) ____ right
 
@@ -24,7 +24,7 @@ c_ Solution:
         """
         valid if there are at least `k` pairs when distance is `mid`
         """
-        cnt = left = 0
+        cnt left 0
 
         ___ right __ r..(l..(A:
             w.... A[right] - A[left] > mid:

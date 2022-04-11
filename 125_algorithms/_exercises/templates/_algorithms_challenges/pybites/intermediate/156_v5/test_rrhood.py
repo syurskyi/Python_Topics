@@ -1,7 +1,7 @@
 ____ Previous.rrhood _______ make_character_index
 
 
-the_neetle_tree = """
+the_neetle_tree """
 There were once two brothers who lived on the edge of a forest.
 The elder brother was very mean to his younger brother and ate up all the food and took all his good clothes.
 One day, the elder brother went into the forest to find some firewood to sell in the market.
@@ -18,30 +18,30 @@ He rushed to his brother and removed each needle with painstaking love.
 After he finished, the elder brother apologised for treating him badly and promised to be better.
 The tree saw the change in the elder brother’s heart and gave them all the golden apples they could ever need.
 """
-characters = ('elder brother', 'younger brother', ('the tree', 'magical tree'
+characters ('elder brother', 'younger brother', ('the tree', 'magical tree'
 
 
 ___ test_make_character_index_with_default_args
-    keys = ('red riding hood', 'grandmother', 'wolf', 'woodsman')
-    values = (
+    keys ('red riding hood', 'grandmother', 'wolf', 'woodsman')
+    values (
         [1, 2, 3, 6, 7, 8, 11, 18, 19, 21, 24, 26, 28, 30, 33, 36],
         [2, 3, 5, 11, 12, 14, 15, 16, 17, 21, 22, 24, 26, 28, 30, 33, 36],
         [9, 10, 13, 14, 16, 17, 18, 20, 23, 25, 27, 29, 30, 31, 33, 35],
         [32, 34, 35]
     )
-    e.. = d.. z.. ? ?
-    a.. = make_character_index()
+    e.. d.. z.. ? ?
+    a.. make_character_index()
     ... a.. __ e..
 
 
 ___ test_make_character_index_with_other_args
-    keys = ('elder brother', 'younger brother', 'the tree')
-    values = (
+    keys ('elder brother', 'younger brother', 'the tree')
+    values (
         [2, 3, 7, 9, 10, 11, 14, 15],
         [2, 11],
         [4, 5, 7, 8, 9, 15],
     )
-    a.. = make_character_index(text=the_neetle_tree,
+    a.. make_character_index(text=the_neetle_tree,
                                   characters=characters)
-    e.. = d.. z.. ? ?
+    e.. d.. z.. ? ?
     ... a.. __ e..

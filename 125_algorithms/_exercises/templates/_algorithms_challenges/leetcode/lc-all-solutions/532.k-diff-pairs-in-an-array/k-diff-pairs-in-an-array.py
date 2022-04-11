@@ -7,9 +7,9 @@ c_ Solution(o..
     """
     __ k < 0 o. l..(nums) < 2:
       r.. 0
-    ans = 0
+    ans 0
     nums.s..()
-    start, end = 0, 1
+    start, end 0, 1
     w.... start < l..(nums) a.. end < l..(nums
       __ start > 0 a.. nums[start - 1] __ nums[start]:
         start += 1

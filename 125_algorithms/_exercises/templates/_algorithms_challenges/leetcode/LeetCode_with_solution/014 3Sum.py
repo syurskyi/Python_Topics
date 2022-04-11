@@ -11,7 +11,7 @@ The solution set must not contain duplicate triplets.
     (-1, 0, 1)
     (-1, -1, 2)
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -25,14 +25,14 @@ c_ Solution:
         reverse_map    # dict
         ___ ind, val __ e..(num
             __ val n.. __ reverse_map:
-                reverse_map[val] = [ind]
+                reverse_map[val] [ind]
             ____
                 reverse_map[val].a..(ind)
 
         result    # list
         ___ i __ x..(l..(num:
             ___ j __ x..(i, l..(num:
-                target = 0-num[i]-num[j]
+                target 0-num[i]-num[j]
                 __ target n.. __ reverse_map:
                     _____
                 ___ index __ reverse_map[target]:
@@ -53,21 +53,21 @@ c_ Solution:
         reverse_map    # dict
         ___ ind, val __ e..(num
             __ val n.. __ reverse_map:
-                reverse_map[val] = [ind]
+                reverse_map[val] [ind]
             ____
                 reverse_map[val].a..(ind)
 
         result    # dict
         ___ i __ x..(l..(num:
             ___ j __ x..(i, l..(num:
-                target = 0-num[i]-num[j]
+                target 0-num[i]-num[j]
                 __ target n.. __ reverse_map:
                     _____
                 ___ index __ reverse_map[target]:
                     __ index != i a.. index != j:
-                        lst = s..([num[i], num[j], target])
-                        lst = t..(lst)
-                        result[lst] = 1  # hash
+                        lst s..([num[i], num[j], target])
+                        lst t..(lst)
+                        result[lst] 1  # hash
                         _____
 
         r.. result.k..
@@ -97,12 +97,12 @@ c_ Solution:
         # record result
         result    # list
         num.s..()  # sorting first, avoid duplicate,
-        i = 0
+        i 0
         w.... i < l..(num)-2:
-            j = i+1
-            k = l..(num)-1
+            j i+1
+            k l..(num)-1
             w.... j < k:
-                lst = [num[i], num[j], num[k]]
+                lst [num[i], num[j], num[k]]
                 __ s..(lst) __ 0:
                     result.a..(lst)
                     k -_ 1

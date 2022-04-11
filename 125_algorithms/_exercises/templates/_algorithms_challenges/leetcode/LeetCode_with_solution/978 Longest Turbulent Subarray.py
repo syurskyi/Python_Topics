@@ -37,27 +37,27 @@ c_ Solution:
         """
         scan
         """
-        flag = N..  # 0: expecting <, 1: expecting >
-        ret = 1
-        cur = 1
+        flag N..  # 0: expecting <, 1: expecting >
+        ret 1
+        cur 1
         ___ i __ r..(l..(A)-1
             __ A[i] __ A[i+1]:
-                flag = N..
-                cur = 1
+                flag N..
+                cur 1
             ____ A[i] > A[i+1]:
                 __ flag __ N.. o. flag __ 1:
                     cur += 1
-                    ret = m..(ret, cur)
+                    ret m..(ret, cur)
                 ____
-                    cur = 2
-                flag = 0
+                    cur 2
+                flag 0
             ____  # <
                 __ flag __ N.. o. flag __ 0:
                     cur += 1
-                    ret = m..(ret, cur)
+                    ret m..(ret, cur)
                 ____
-                    cur = 2
-                flag = 1
+                    cur 2
+                flag 1
 
         r.. ret
 

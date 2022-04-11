@@ -8,13 +8,13 @@ c_ ConnectingGraph:
 
         N    # dict
         ___ i __ r..(1, n + 1
-            N[i] = i
+            N[i] i
 
     ___ find  a
         __ N[a] __ a:
             r.. a
 
-        N[a] = find(N[a])
+        N[a] find(N[a])
         r.. N[a]
 
     """
@@ -23,10 +23,10 @@ c_ ConnectingGraph:
     @return: nothing
     """
     ___ connect  a, b
-        _a = find(a)
-        _b = find(b)
+        _a find(a)
+        _b find(b)
         __ _a != _b:
-            N[_a] = _b
+            N[_a] _b
 
     """
     @param: a: An integer
@@ -34,6 +34,6 @@ c_ ConnectingGraph:
     @return: A boolean
     """
     ___ query  a, b
-        _a = find(a)
-        _b = find(b)
+        _a find(a)
+        _b find(b)
         r.. _a __ _b

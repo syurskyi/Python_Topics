@@ -10,22 +10,22 @@ ____ u__.r.. _______ u..
 
 ____ dateutil.parser _______ p..
 
-URL = "https://bites-data.s3.us-east-2.amazonaws.com/pycons-europe-2019.json"
-RESPONSES = "https://bites-data.s3.us-east-2.amazonaws.com/nominatim_responses.json"
+URL "https://bites-data.s3.us-east-2.amazonaws.com/pycons-europe-2019.json"
+RESPONSES "https://bites-data.s3.us-east-2.amazonaws.com/nominatim_responses.json"
 
 
 
 tmp  P..(__.g..("TMP", "/tmp"
-pycons_file = tmp / "pycons-europe-2019.json"
-nominatim_responses = tmp / "nominatim_responses.json"
+pycons_file tmp / "pycons-europe-2019.json"
+nominatim_responses tmp / "nominatim_responses.json"
 
 
 
-response = r__.g.. RESPONSES)
+response r__.g.. RESPONSES)
 
-data = response.j..
+data response.j..
 
-pycons = r__.g.. URL).j..
+pycons r__.g.. URL).j..
 print(pycons)
 
 
@@ -44,8 +44,8 @@ c_ PyCon:
     start_date: d__
     end_date: d__
     URL: s..
-    lat: f__ = N..
-    lon: f__ = N..
+    lat: f__ N..
+    lon: f__ N..
 
 
     ___ __lt__ other
@@ -80,7 +80,7 @@ ___ _get_pycons
 
 ___ _km_distance(origin, destination
     """ Helper function that retrieves the air distance in kilometers for two pycons """
-    lon1, lat1, lon2, lat2 = map(
+    lon1, lat1, lon2, lat2 map(
         radians, [origin.lon, origin.lat, destination.lon, destination.lat]
     )
     r.. 6371 * (
@@ -92,16 +92,16 @@ ___ _extract_city_country_to_lat_lon
         
     
     w__ o.. nominatim_responses _ __ f:
-        places = j__.l.. f)
+        places j__.l.. f)
     
     mapping    # dict
     ___ key,places __ places.i..:
         ___ r __ places:
             __ r 'type'  __ 'city':
-                city,*temp,country = r 'display_name' .s..(',')
-                city = city.s..
-                country = country.s..
-                mapping[(city,country)] = (r 'lat' ,r 'lon' )
+                city,*temp,country r 'display_name' .s..(',')
+                city city.s..
+                country country.s..
+                mapping[(city,country)] (r 'lat' ,r 'lon' )
     
     r.. mapping
         
@@ -113,16 +113,16 @@ ___ update_pycons_lat_lon(pycons
     the PyCon takes places. Use requests from the Nominatim API stored in the
     nominatim_responses json file.
     """
-    mapping = _extract_city_country_to_lat_lon()
+    mapping _extract_city_country_to_lat_lon()
 
     ___ pycon __ pycons:
-        city = pycon.city
-        country = pycon.country
+        city pycon.city
+        country pycon.country
 
         ___ response __ data:
-            lat,lon = mapping[(city,country)]
-            pycon.lat = lat
-            pycon.lon = long
+            lat,lon mapping[(city,country)]
+            pycon.lat lat
+            pycon.lon long
     
 
 
@@ -146,7 +146,7 @@ ___ create_travel_plan(pycons
     the destination PyCon and the travel distance between the PyCons.
     """
 
-    sorted_pycons = s..(pycons)
+    sorted_pycons s..(pycons)
 
 
 

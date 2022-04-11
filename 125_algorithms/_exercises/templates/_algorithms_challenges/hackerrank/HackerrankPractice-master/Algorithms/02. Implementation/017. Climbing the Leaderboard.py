@@ -3,28 +3,28 @@
 
 
 ___ climbingLeaderboard(leaderboard, aliceScores
-    rankings = createRankings(leaderboard)
-    i = l..(leaderboard) - 1
+    rankings createRankings(leaderboard)
+    i l..(leaderboard) - 1
     ___ score __ aliceScores:
-        flag = T..
+        flag T..
         w.... flag:
             __ i __ -1:
                 print(1)
-                flag = F..
+                flag F..
             ____ score < leaderboard[i]:
                 print(rankings[i] + 1)
-                flag = F..
+                flag F..
             ____ score __ leaderboard[i]:
                 print(rankings[i])
-                flag = F..
+                flag F..
             ____ score > leaderboard[i]:
                 i -_ 1
     r..
 
 
 ___ createRankings(leaderboard
-    rankings = [1]
-    rank = 1
+    rankings [1]
+    rank 1
     ___ i __ r..(1, l..(leaderboard:
         __ leaderboard[i] < leaderboard[i - 1]:
             rank += 1
@@ -32,8 +32,8 @@ ___ createRankings(leaderboard
     r.. rankings
 
 
-lenOfLeaderboard = i..(input
-leaderboard = l.. m..(i.., input().r..().s..()))
-lenOfAliceScores = i..(input
-aliceScores = l.. m..(i.., input().r..().s..()))
+lenOfLeaderboard i..(input
+leaderboard l.. m..(i.., input().r..().s..()))
+lenOfAliceScores i..(input
+aliceScores l.. m..(i.., input().r..().s..()))
 climbingLeaderboard(leaderboard, aliceScores)

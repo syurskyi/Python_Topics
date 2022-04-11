@@ -11,7 +11,7 @@ Given s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT",
 Return:
 ["AAAAACCCCC", "CCCCCAAAAA"].
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -32,11 +32,11 @@ c_ Solution:
         __ l..(s) < 10:
             r.. []
 
-        s = map(mapping, l..(s
-        h = s..()
+        s map(mapping, l..(s
+        h s..()
         # in_ret = set()
-        ret = s..()
-        cur = 0
+        ret s..()
+        cur 0
         ___ i __ x..(10
             cur <<= 2
             cur &= 0xFFFFF
@@ -55,7 +55,7 @@ c_ Solution:
         r.. map(decode, ret)
 
     ___ decode  s
-        dic = {
+        dic {
             0: "A",
             1: "C",
             2: "G",
@@ -69,7 +69,7 @@ c_ Solution:
         r.. "".j..(r..(ret
 
     ___ mapping  a
-        dic = {
+        dic {
             "A": 0,
             "C": 1,
             "G": 2,

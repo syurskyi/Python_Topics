@@ -25,9 +25,9 @@ ____ t___ _______ L..
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -42,18 +42,18 @@ c_ Solution:
         O(N)
         """
         stk    # list
-        popped = N..
-        j = 0
+        popped N..
+        j 0
         ___ e __ pre:
             stk.a..(TreeNode(e
             w.... stk a.. stk[-1].val __ post[j]:
-                popped = stk.p.. )
+                popped stk.p.. )
                 j += 1
                 __ stk:
                     __ n.. stk[-1].left:
-                        stk[-1].left = popped
+                        stk[-1].left popped
                     ____
-                        stk[-1].right = popped
+                        stk[-1].right popped
 
         ... j __ l..(post)
         r.. popped  # root is the last popped element
@@ -69,16 +69,16 @@ c_ Solution:
         __ n.. pre o. n.. post:
             r.. N..
 
-        root = TreeNode(pre[0])
+        root TreeNode(pre[0])
         __ l..(pre) __ 1:
             r.. root
 
         __ pre[1] __ post[-2]:
             # multiple answers
-            left = N..
-            right = constructFromPrePost(pre[1:], post[:-1])
+            left N..
+            right constructFromPrePost(pre[1:], post[:-1])
         ____
-            l = 0
+            l 0
             ___ a __ post:
                 l += 1
                 __ a __ pre[1]:
@@ -86,9 +86,9 @@ c_ Solution:
             ____
                 r..
 
-            left = constructFromPrePost(pre[1:1+l], post[:l])
-            right = constructFromPrePost(pre[1+l:], post[l:-1])
+            left constructFromPrePost(pre[1:1+l], post[:l])
+            right constructFromPrePost(pre[1+l:], post[l:-1])
 
-        root.left = left
-        root.right = right
+        root.left left
+        root.right right
         r.. root

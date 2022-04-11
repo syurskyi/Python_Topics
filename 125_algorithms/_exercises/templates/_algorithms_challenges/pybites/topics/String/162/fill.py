@@ -1,4 +1,4 @@
-HTML_SPACE = '&nbsp;'
+HTML_SPACE '&nbsp;'
 
 
 ___ prefill_with_character(value, column_length=4, fill_char=HTML_SPACE

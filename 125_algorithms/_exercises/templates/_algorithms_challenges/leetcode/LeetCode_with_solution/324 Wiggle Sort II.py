@@ -11,7 +11,7 @@ You may assume all input has valid answer.
 Follow Up:
 Can you do it in O(n) time and/or in-place with O(1) extra space?
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -25,49 +25,49 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: in-place
         """
-        n = l..(A)
-        median_idx = find_kth(A, 0, n, n/2)
-        v = A[median_idx]
+        n l..(A)
+        median_idx find_kth(A, 0, n, n/2)
+        v A[median_idx]
 
-        idx = l.... i: (2*i+1) % (n|1)
-        lt = -1
-        hi = n
-        i = 0
+        idx l.... i: (2*i+1) % (n|1)
+        lt -1
+        hi n
+        i 0
         w.... i < hi:
             __ A[idx(i)] > v:
                 lt += 1
-                A[idx(lt)], A[idx(i)] = A[idx(i)], A[idx(lt)]
+                A[idx(lt)], A[idx(i)] A[idx(i)], A[idx(lt)]
                 i += 1
             ____ A[idx(i)] __ v:
                 i += 1
             ____
                 hi -_ 1
-                A[idx(hi)], A[idx(i)] = A[idx(i)], A[idx(hi)]
+                A[idx(hi)], A[idx(i)] A[idx(i)], A[idx(hi)]
 
     ___ pivot  A, lo, hi, pidx_ N..
-        lt = lo-1
-        gt = hi
-        __ n.. pidx: pidx = lo
+        lt lo-1
+        gt hi
+        __ n.. pidx: pidx lo
 
-        v = A[pidx]
-        i = lo
+        v A[pidx]
+        i lo
         w.... i < gt:
             __ A[i] < v:
                 lt += 1
-                A[lt], A[i] = A[i], A[lt]
+                A[lt], A[i] A[i], A[lt]
                 i += 1
             ____ A[i] __ v:
                 i += 1
             ____
                 gt -_ 1
-                A[gt], A[i] = A[i], A[gt]
+                A[gt], A[i] A[i], A[gt]
 
         r.. lt, gt
 
     ___ find_kth  A, lo, hi, k
         __ lo >_ hi: r..
 
-        lt, gt = pivot(A, lo, hi)
+        lt, gt pivot(A, lo, hi)
 
         __ lt < k < gt:
             r.. k
@@ -89,21 +89,21 @@ c_ SolutionSort(o..
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        n = l..(nums)
-        A = s..(nums)
+        n l..(nums)
+        A s..(nums)
 
-        j, k = (n-1) / 2, n-1
+        j, k (n-1) / 2, n-1
         ___ i __ x..(l..(nums:
             __ i % 2 __ 0:
-                nums[i] = A[j]
+                nums[i] A[j]
                 j -_ 1
             ____
-                nums[i] = A[k]
+                nums[i] A[k]
                 k -_ 1
 
 
 __ _______ __ _______
     # A = [1, 5, 1, 1, 6, 4]
-    A = [3, 2, 1, 1, 3, 2]
+    A [3, 2, 1, 1, 3, 2]
     Solution().wiggleSort(A)
     print A

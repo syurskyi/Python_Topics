@@ -5,7 +5,7 @@ c_ Solution(o..
     :type num2: str
     :rtype: str
     """
-    ans = [0] * (l..(num1) + l..(num2
+    ans [0] * (l..(num1) + l..(num2
     ___ i, n1 __ e..(r..(num1:
       ___ j, n2 __ e..(r..(num2:
         ans[i + j] += i..(n1) * i..(n2)

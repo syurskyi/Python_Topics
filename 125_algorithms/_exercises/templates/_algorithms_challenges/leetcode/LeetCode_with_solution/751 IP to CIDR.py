@@ -57,7 +57,7 @@ ____ t___ _______ L..
 
 
 # the weights of ip when converting to binary
-weights = [
+weights [
     24,
     16,
     8,
@@ -88,14 +88,14 @@ c_ Solution:
         Iterate LSB to the next LSB skipping 1's
         num += lsb
         """
-        num_ip = to_bin(ip)
+        num_ip to_bin(ip)
         ret    # list
         w.... n > 0:
-            lsb = get_lsb(num_ip)
+            lsb get_lsb(num_ip)
             w.... (1 << lsb) > n:
                 lsb -_ 1
 
-            cur_cover = 1 << lsb
+            cur_cover 1 << lsb
             n -_ cur_cover
             ret.a..(
                 to_ip(num_ip) + f"/{32-lsb}"
@@ -105,7 +105,7 @@ c_ Solution:
         r.. ret
 
     ___ to_bin  ip
-        ret = 0
+        ret 0
         ___ n, w __ z.. m..(i.., ip.s..(".", weights
             ret += n << w
 
@@ -120,7 +120,7 @@ c_ Solution:
         r.. ".".j.. m..(s.., ret
 
     ___ get_lsb  n
-        lsb = 0
+        lsb 0
         w.... (n >> lsb) & 1 __ 0:
             lsb += 1
             #  n >>= lsb  # error

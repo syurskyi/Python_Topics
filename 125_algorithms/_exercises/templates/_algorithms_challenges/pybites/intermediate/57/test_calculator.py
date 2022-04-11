@@ -10,13 +10,13 @@ ___ parser
 
 ___ test_one_arg_no_numbers_exits(parser
     w__ p__.r..(S..
-        args = parser.parse_args( '--add' )
+        args parser.parse_args( '--add' )
         call_calculator(args=args)
 
  
 ___ test_call_with_wrong_operation(parser
     w__ p__.r..(S..
-        args = parser.parse_args( '--sum', '10' )
+        args parser.parse_args( '--sum', '10' )
         call_calculator(args=args)
 
 
@@ -24,7 +24,7 @@ ___ test_help_text_hints(parser, capfd
     w__ p__.r..(S..
         parser.parse_args( '-h' )
 
-    output = ?.r .. 0].l..
+    output ?.r .. 0].l..
     ... 'usage' __ output
     ... 'a simple calculator' __ output
     ___ op __ 'add sub mul div'.s.. :
@@ -38,7 +38,7 @@ ___ test_help_text_hints(parser, capfd
     ( '1', '2', '3', '4.5' , 10.5),
 ])
 ___ test_add_operations(parser, args, e..
-    args = parser.parse_args( '--add'  + args)
+    args parser.parse_args( '--add'  + args)
     ... call_calculator(args) __ e..
 
 
@@ -49,7 +49,7 @@ ___ test_add_operations(parser, args, e..
     ( '11', '9', '2.2', '1.8' , -2),
 ])
 ___ test_sub_operations(parser, args, e..
-    args = parser.parse_args( '--sub'  + args)
+    args parser.parse_args( '--sub'  + args)
     ... call_calculator(args) __ e..
 
 
@@ -60,7 +60,7 @@ ___ test_sub_operations(parser, args, e..
     ( '3.5', '2', '4.2', '-1' , -29.4),
 ])
 ___ test_mul_operations(parser, args, e..
-    args = parser.parse_args( '--mul'  + args)
+    args parser.parse_args( '--mul'  + args)
     ... call_calculator(args) __ e..
 
 
@@ -71,5 +71,5 @@ ___ test_mul_operations(parser, args, e..
     ( '3', '2', '3', '5' , 0.1),
 ])
 ___ test_div_operations(parser, args, e..
-    args = parser.parse_args( '--div'  + args)
+    args parser.parse_args( '--div'  + args)
     ... call_calculator(args) __ e..

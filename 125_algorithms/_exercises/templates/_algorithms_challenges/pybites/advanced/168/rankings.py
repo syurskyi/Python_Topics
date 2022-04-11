@@ -3,8 +3,8 @@ ____ t___ _______ L.., Tuple
 _______ heapq
 
 
-bites: L..[i..] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
-names: L..[s..] = [
+bites: L..[i..] [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
+names: L..[s..] [
     "snow",
     "natalia",
     "alex",
@@ -82,7 +82,7 @@ c_ Rankings:
             parameter indicating how many Ninjas to pair up
     returns List containing tuples of the paired up Ninja objects
     """
-    rankings: L..[i..] = field(default_factory=l..)
+    rankings: L..[i..] field(default_factory=l..)
 
 
 
@@ -92,20 +92,20 @@ c_ Rankings:
 
 
     ___ highest count=1
-        rankings = s..(rankings)
+        rankings s..(rankings)
         
         r.. rankings[-count:][::-1]
     
     ___ lowest count=1
-        rankings = s..(rankings)
+        rankings s..(rankings)
 
         r.. rankings[:count]
 
     
     ___ pair_up n=3
-        rankings = s..(rankings)
+        rankings s..(rankings)
 
-        start,end = 0,l..(rankings)  - 1
+        start,end 0,l..(rankings)  - 1
         pairs    # list
         ___ i __ r..(n
             pairs.a..((rankings[end - i],rankings[start + i]

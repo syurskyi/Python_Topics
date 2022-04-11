@@ -82,9 +82,9 @@ c_ Solution:
         only -> <- will collide
         """
         stk    # list
-        n = l..(asteroids)
+        n l..(asteroids)
         ___ i __ r..(n-1, -1, -1
-            cur = asteroids[i]
+            cur asteroids[i]
             w.... stk a.. asteroids[stk[-1]] < 0 a.. cur > 0 a.. a..(asteroids[stk[-1]]) < a..(cur
                 stk.p.. )
 

@@ -32,7 +32,7 @@ ___ test_password_not_used_before
 
 
 ___ test_password_cache_cannot_reuse
-    num_passwords_use = l..(used_passwords)
+    num_passwords_use l..(used_passwords)
     ... validate_password('go1@PW')
     ... l..(used_passwords) __ num_passwords_use + 1
     ... n.. validate_password('go1@PW')

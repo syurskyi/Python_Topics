@@ -7,9 +7,9 @@ Created on Feb 26, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution(o..
     ___ lowestCommonAncestor  root, p, q

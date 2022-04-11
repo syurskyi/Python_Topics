@@ -13,20 +13,20 @@ c_ Solution(o..
     :rtype: TreeNode
     """
     __ nums:
-      pos = nums.i.. m..(nums
-      root = TreeNode(nums[pos])
-      root.left = constructMaximumBinaryTree(nums[:pos])
-      root.right = constructMaximumBinaryTree(nums[pos + 1:])
+      pos nums.i.. m..(nums
+      root TreeNode(nums[pos])
+      root.left constructMaximumBinaryTree(nums[:pos])
+      root.right constructMaximumBinaryTree(nums[pos + 1:])
       r.. root
 
   # decreasing stack
   ___ constructMaximumBinaryTree  nums
     stack    # list
     ___ num __ nums:
-      root = TreeNode(num)
+      root TreeNode(num)
       w.... stack a.. stack[-1].val < num:
-        root.left = stack.p.. )
+        root.left stack.p.. )
       __ stack:
-        stack[-1].right = root
+        stack[-1].right root
       stack.a..(root)
     r.. stack a.. stack[0]

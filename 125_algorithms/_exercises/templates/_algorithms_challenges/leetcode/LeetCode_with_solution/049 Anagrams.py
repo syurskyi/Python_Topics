@@ -3,7 +3,7 @@ Given an array of strings, return all groups of strings that are anagrams.
 
 Note: All inputs will be in lower-case.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ anagrams_complicated  strs
         """
@@ -11,20 +11,20 @@ c_ Solution:
         :param strs: a list of strings
         :return: a list of strings
         """
-        temp = l..(strs)
+        temp l..(strs)
         ___ ind, s__ __ e..(temp
             __ s__ a.. s__!="":  # avoid case of empty string
-                s__ = [char ___ char __ s__]
+                s__ [char ___ char __ s__]
                 s__.s..()
-                s__ = "".j..(s__)
-                temp[ind] = s__
+                s__ "".j..(s__)
+                temp[ind] s__
 
 
         hash_map    # dict
         ___ ind, s__ __ e..(temp
-            indexes = hash_map.g.. s__, [])
+            indexes hash_map.g.. s__, [])
             indexes.a..(ind)  # side-effect
-            hash_map[s__] = indexes
+            hash_map[s__] indexes
 
         result    # list
         ___ val __ hash_map.v..
@@ -41,9 +41,9 @@ c_ Solution:
         """
         hash_map    # dict
         ___ ind, s__ __ e..(strs
-            s__ = "".j..(s..(s__  # string reversing and sorting are a little different
+            s__ "".j..(s..(s__  # string reversing and sorting are a little different
             __ s__ n.. __ hash_map:
-                hash_map[s__] = [ind]
+                hash_map[s__] [ind]
             ____
                 hash_map[s__].a..(ind)
             # indexes = hash_map.get(string, [])

@@ -3,15 +3,15 @@ c_ TrieNode(o..
     """
     Initialize your data structure here.
     """
-    children = [N..] * 26
-    isWord = F..
-    word = ""
+    children [N..] * 26
+    isWord F..
+    word ""
 
 
 c_ Trie(o..
 
   ___ -
-    root = TrieNode()
+    root TrieNode()
 
   ___ insert  word
     """
@@ -19,25 +19,25 @@ c_ Trie(o..
     :type word: str
     :rtype: void
     """
-    p = root
+    p root
     ___ c __ word:
-      cVal = o..(c) - o..("a")
+      cVal o..(c) - o..("a")
       __ p.children[cVal]:
-        p = p.children[cVal]
+        p p.children[cVal]
       ____
-        newNode = TrieNode()
-        p.children[cVal] = newNode
-        p = newNode
+        newNode TrieNode()
+        p.children[cVal] newNode
+        p newNode
 
-    p.isWord = T..
-    p.word = word
+    p.isWord T..
+    p.word word
 
   ___ helper  word
-    p = root
+    p root
     ___ c __ word:
-      cVal = o..(c) - o..("a")
+      cVal o..(c) - o..("a")
       __ p.children[cVal]:
-        p = p.children[cVal]
+        p p.children[cVal]
       ____
         r.. N..
     r.. p
@@ -48,7 +48,7 @@ c_ Trie(o..
     :type word: str
     :rtype: bool
     """
-    p = helper(word)
+    p helper(word)
     __ p a.. p.isWord:
       r.. T..
     r.. F..

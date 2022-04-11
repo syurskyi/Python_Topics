@@ -8,20 +8,20 @@ c_ Solution:
         __ n.. n o. n <_ 1 o. n.. primes:
             r.. 1
 
-        k = l..(primes)
+        k l..(primes)
 
         # i -> same as `i` in `primes`, v -> track of how far `primes[i]` stay in `uglys`
-        steps = [0] * k
-        uglys = [0] * n
-        uglys[0] = 1
+        steps [0] * k
+        uglys [0] * n
+        uglys[0] 1
 
         ___ i __ r..(1, n
-            ugly = f__('inf')
+            ugly f__('inf')
 
             ___ j __ r..(k
-                ugly = m..(ugly, uglys[steps[j]] * primes[j])
+                ugly m..(ugly, uglys[steps[j]] * primes[j])
 
-            uglys[i] = ugly
+            uglys[i] ugly
 
             ___ j __ r..(k
                 __ uglys[steps[j]] * primes[j] __ ugly:

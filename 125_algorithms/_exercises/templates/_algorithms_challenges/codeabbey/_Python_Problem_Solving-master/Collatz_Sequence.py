@@ -1,15 +1,15 @@
-data = i..(input
+data i..(input
 
-a = [i..(x) ___ x __ input().s.. ]
+a [i..(x) ___ x __ input().s.. ]
 #print(len(a))
 res    # list
 ___ i __ r..(l..(a:
     #print('starting')
-    count = 0
-    xnext = a[i]
+    count 0
+    xnext a[i]
     w.... xnext != 1:
         __ xnext % 2 __ 0:
-            xnext = xnext / 2
+            xnext xnext / 2
             #print('even:',xnext)
             __ xnext __ 1:
                 count += 1
@@ -22,7 +22,7 @@ ___ i __ r..(l..(a:
                 count += 1
         ____
             #print('odd')
-            xnext = (3*xnext) + 1
+            xnext (3*xnext) + 1
             #print('odd: ',xnext)
             
             __ xnext __ 1:

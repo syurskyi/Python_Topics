@@ -63,9 +63,9 @@ Explanation:The maximum width existing in the fourth level with the length 8 (6,
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -80,18 +80,18 @@ c_ Solution:
         __ n.. root:
             r.. 0
 
-        ret = 0
-        q = [(0, root)]  # (index, node)
+        ret 0
+        q [(0, root)]  # (index, node)
         w.... q:
             cur_q    # list
-            left, right = q[0][0], q[-1][0]
-            ret = m..(ret, right - left + 1)
+            left, right q[0][0], q[-1][0]
+            ret m..(ret, right - left + 1)
             ___ idx, node __ q:
                 __ node.left:
                     cur_q.a..((idx * 2, node.left
                 __ node.right:
                     cur_q.a..((idx * 2 + 1, node.right
 
-            q = cur_q
+            q cur_q
 
         r.. ret

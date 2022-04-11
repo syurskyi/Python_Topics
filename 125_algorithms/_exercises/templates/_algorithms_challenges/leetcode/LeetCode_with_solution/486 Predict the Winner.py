@@ -47,15 +47,15 @@ c_ Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        l = l..(nums)
-        gross = [0]  # sum [0:i]
+        l l..(nums)
+        gross [0]  # sum [0:i]
         ___ e __ nums:
             gross.a..(gross[-1] + e)
 
-        F = d..(l....: d..(i..
+        F d..(l....: d..(i..
         ___ i __ r..(l-1, -1, -1
             ___ j __ r..(i+1, l+1
-                F[i][j] = m..(
+                F[i][j] m..(
                     gross[j] - gross[i] - F[i+1][j],
                     gross[j] - gross[i] - F[i][j-1]
                 )

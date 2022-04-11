@@ -12,13 +12,13 @@ c_ AttrDict(d..
        mocking, got this from https://stackoverflow.com/a/14620633"""
     ___ - , *args, **kwargs
         super(AttrDict, self).__init__ $ $$
-        __dict__ = self
+        __dict__ self
 
 
-dt1 = d__(2018, 2, 18, 19, 52, 0).t..
-dt2 = d__(2017, 1, 6, 11, 0, 0).t..
+dt1 d__(2018, 2, 18, 19, 52, 0).t..
+dt2 d__(2017, 1, 6, 11, 0, 0).t..
 
-MOCK_ENTRIES = AttrDict({'entries':
+MOCK_ENTRIES AttrDict({'entries':
                 [AttrDict({'author': 'PyBites',
                            'link':
                            'https://pybit.es/twitter_digest_201808.html',  # noqa E501
@@ -57,7 +57,7 @@ ___ test_convert_struct_time_to_dt(arg, ret
 
 @patch("feedparser.parse", side_effect=[MOCK_ENTRIES])
 ___ test_get_feed_entries(inp
-    first, last = t..(get_feed_entries
+    first, last t..(get_feed_entries
 
     ... first.date __ date y.._2018,  m.._2,  d.._18)
     ... first.title __ 'Twitter Digest 2018 Week 08'
@@ -87,7 +87,7 @@ ___ test_get_feed_entries(inp
     ('pyramid|django|flask', F..),
 ])
 ___ test_filter_entries_by_tag(arg, ret
-    entry = Entry(date=date(2016, 12, 22),
+    entry Entry(date=date(2016, 12, 22),
                   title='2016 py articles and useful books',
                   link='https://pybit.es/py-articles-books2016.html',
                   tags={'pythonic', 'data science',
@@ -102,9 +102,9 @@ ___ test_filter_entries_by_tag(arg, ret
                                       '', 'q' )
 ___ test_main(entries, inp, capfd
     main()
-    out, _ = capfd.r..
+    out, _ capfd.r..
 
-    output = [line ___ line __ out.s..('\n') __ line.s..]
+    output [line ___ line __ out.s..('\n') __ line.s..]
     e.. =  '0 entries matched', 'Twitter Digest 2018 Week 08',
                 '1 entry matched', 'Copy and Paste with Pyperclip',
                 'Twitter Digest 2018 Week 08', '2 entries matched',

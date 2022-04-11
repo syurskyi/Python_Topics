@@ -28,7 +28,7 @@ From each of those positions, there are also two moves that will keep the knight
 on the board.
 The total probability the knight stays on the board is 0.0625.
 """
-dirs = (
+dirs (
     (-1, -2),
     (-1, 2),
     (1, -2),
@@ -47,24 +47,24 @@ c_ Solution:
 
         with memory, it is considered dp
         """
-        q = s..([(r, c)])  # working que
-        P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
-        P[r][c] = 1  # optimize memory
-        k = 0
+        q s..([(r, c)])  # working que
+        P [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
+        P[r][c] 1  # optimize memory
+        k 0
         w.... k < K:
             k += 1
-            cur_q = s..()
-            cur_P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
+            cur_q s..()
+            cur_P [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
             ___ i, j __ q:
                 ___ di, dj __ dirs:
-                    I = i + di
-                    J = j + dj
+                    I i + di
+                    J j + dj
                     __ 0 <_ I < N a.. 0 <_ J < N:
                         cur_q.add((I, J
                         cur_P[I][J] += P[i][j] * 1 / 8
 
-            q = cur_q
-            P = cur_P
+            q cur_q
+            P cur_P
 
         r.. s..([
             P[i][j]
@@ -77,24 +77,24 @@ c_ Solution:
         """
         brute force K step
         """
-        q = [(r, c)]  # working que
-        P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
-        P[r][c] = 1  # optimize memory
-        k = 0
+        q [(r, c)]  # working que
+        P [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
+        P[r][c] 1  # optimize memory
+        k 0
         w.... k < K:
             k += 1
             cur_q    # list
-            cur_P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
+            cur_P [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
             ___ i, j __ q:
                 ___ di, dj __ dirs:
-                    I = i + di
-                    J = j + dj
+                    I i + di
+                    J j + dj
                     __ 0 <_ I < N a.. 0 <_ J < N:
                         cur_q.a..((I, J  # error, count multiple times
                         cur_P[I][J] += P[i][j] * 1 / 8
 
-            q = cur_q
-            P = cur_P
+            q cur_q
+            P cur_P
 
         r.. s..([
             P[i][j]

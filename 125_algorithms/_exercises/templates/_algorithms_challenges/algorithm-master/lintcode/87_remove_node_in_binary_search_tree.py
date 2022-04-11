@@ -27,16 +27,16 @@ c_ Solution:
             __ n.. root.right:
                 r.. root.left
 
-            min_node = find_min(root.right)
-            root.val = min_node.val
-            root.right = removeNode(root.right, root.val)
+            min_node find_min(root.right)
+            root.val min_node.val
+            root.right removeNode(root.right, root.val)
 
             r.. root
 
         __ target < root.val:
-            root.left = removeNode(root.left, target)
+            root.left removeNode(root.left, target)
         ____
-            root.right = removeNode(root.right, target)
+            root.right removeNode(root.right, target)
 
         r.. root
 
@@ -44,5 +44,5 @@ c_ Solution:
         __ n.. node:
             r.. node
         w.... node.left:
-            node = node.left
+            node node.left
         r.. node

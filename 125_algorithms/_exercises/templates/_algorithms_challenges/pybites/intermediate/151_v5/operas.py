@@ -1,10 +1,10 @@
 ____ c.. _______ n..
 ____ d__ _______ d__
 
-Composer = n..('Composer', 'name born died')
-Opera = n..('Opera', 'author play date')
+Composer n..('Composer', 'name born died')
+Opera n..('Opera', 'author play date')
 
-composers = {
+composers {
     "beethoven": Composer("Ludwig van Beethoven",
                           "17 December 1770", "26 March 1827"),
     "wagner": Composer("Richard Wagner",
@@ -15,7 +15,7 @@ composers = {
                        "27 January 1756", "5 December 1791"),
 }
 
-operas = [
+operas [
     Opera("mozart", "Apollo and Hyacinth", "13 May 1767"),
     Opera("mozart", "Marriage of Figaro", "1 May 1786"),
     Opera("mozart", "Don Giovanni", "29 October 1787"),

@@ -1,7 +1,7 @@
 ____ f.. _______ r..
 
 ___ fromNb2Str(n, modsys
-    prime = [i ___ num __ modsys ___ i __ r..(2,num+1) __ num%i __ 0]
+    prime [i ___ num __ modsys ___ i __ r..(2,num+1) __ num%i __ 0]
     ___ p __ prime:
         __ prime.c.. p) > 1:
             r.. 'Not applicable'

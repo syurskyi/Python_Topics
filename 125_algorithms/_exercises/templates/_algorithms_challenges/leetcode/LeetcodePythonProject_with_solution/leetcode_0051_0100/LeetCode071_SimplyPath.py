@@ -11,11 +11,11 @@ c_ Solution(o..
         :rtype: str
         """
         __ n.. p..: r.. p..
-        result = ''
-        __ p...e.. '/' p.. = p..[:-1]
-        __ p...s.. '/' p.. = p..[1:]
-        l = p...s..('/')
-        cont = 0
+        result ''
+        __ p...e.. '/' p.. p..[:-1]
+        __ p...s.. '/' p.. p..[1:]
+        l p...s..('/')
+        cont 0
         ___ i __ r..(l..(l)-1, -1, -1
             __ l[i] __ '.' o. l[i] __ '':
                 _____
@@ -25,19 +25,19 @@ c_ Solution(o..
             __ cont > 0:
                 cont -_ 1
             ____
-                result = '/' + l[i] + result
+                result '/' + l[i] + result
         __ result __ '':
-            result = '/'
+            result '/'
         r.. result
     
     ___ test
-        testCases = [
+        testCases [
             '/home/',
             '/a/./b/../../c/',
         ]
         ___ p.. __ testCases:
             print('path: %s' % p..)
-            result = simplifyPath(p..)
+            result simplifyPath(p..)
             print('result: %s' % result)
             print('-='*15+'-')
 

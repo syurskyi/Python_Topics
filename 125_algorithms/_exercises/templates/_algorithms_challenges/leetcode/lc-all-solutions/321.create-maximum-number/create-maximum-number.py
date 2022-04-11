@@ -8,7 +8,7 @@ c_ Solution(o..
     """
 
     ___ getKDigits(num, k
-      drop = l..(num) - k
+      drop l..(num) - k
       stack    # list
       ___ c __ num:
         w.... drop > 0 a.. stack a.. stack[-1] < c:
@@ -19,7 +19,7 @@ c_ Solution(o..
 
     ___ merge(nums1, nums2
       ans    # list
-      i = j = 0
+      i j 0
       w.... i < l..(nums1) a.. j < l..(nums2
         __ nums1[i:] > nums2[j:]:
           ans.a..(nums1[i])
@@ -37,8 +37,8 @@ c_ Solution(o..
     ans    # list
     ___ i __ r..(0, k + 1
       __ i <_ l..(_nums1) a.. k - i <_ l..(_nums2
-        n1 = getKDigits(_nums1, i)
-        n2 = getKDigits(_nums2, k - i)
+        n1 getKDigits(_nums1, i)
+        n2 getKDigits(_nums2, k - i)
         __ i __ 2:
           print
           n1, n2

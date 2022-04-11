@@ -9,7 +9,7 @@ ___ prefill(n, v='undefined'
     __ n __ N..
         r.. T..("None is invalid")
     ___
-        n = i..(n)
+        n i..(n)
     ______ V..
         r.. T..(n + " is invalid")
     r.. [v] * n

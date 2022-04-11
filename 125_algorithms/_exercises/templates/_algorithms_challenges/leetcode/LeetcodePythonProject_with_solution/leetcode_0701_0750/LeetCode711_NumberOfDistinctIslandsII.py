@@ -10,20 +10,20 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. grid o. n.. grid[0]: r.. 0
-        m, n = l..(grid), l..(grid[0])
-        hashset = s..()
-        count = 0
+        m, n l..(grid), l..(grid[0])
+        hashset s..()
+        count 0
         ___ i __ r..(m
             ___ j __ r..(n
                 __ grid[i][j] __ 1:
-                    res = [i, i, j, j]
-                    grid[i][j] = 2
+                    res [i, i, j, j]
+                    grid[i][j] 2
                     helper(grid, i, j, res)
-                    keys = generateKeys(grid, res)
-                    found = F..
+                    keys generateKeys(grid, res)
+                    found F..
                     ___ key __ keys:
                         __ key __ hashset:
-                            found = T..
+                            found T..
                             _____
                     __ n.. found:
                         hashset.add(keys.pop
@@ -31,19 +31,19 @@ c_ Solution(o..
         r.. count
     
     ___ helper  grid, i, j, res
-        res[0] = m..(res[0], i)
-        res[1] = m..(res[1], i)
-        res[2] = m..(res[2], j)
-        res[3] = m..(res[3], j)
-        m, n = l..(grid), l..(grid[0])
+        res[0] m..(res[0], i)
+        res[1] m..(res[1], i)
+        res[2] m..(res[2], j)
+        res[3] m..(res[3], j)
+        m, n l..(grid), l..(grid[0])
         ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1
             __ 0 <_ x < m a.. 0 <_ y < n a.. grid[x][y] __ 1:
-                grid[x][y] = 2
+                grid[x][y] 2
                 helper(grid, x, y, res)
     
     ___ generateKeys  grid, res
-        hashset = s..()
-        up, down, left, right = res[0], res[1], res[2], res[3]
+        hashset s..()
+        up, down, left, right res[0], res[1], res[2], res[3]
         subGrid    # list
         ___ i __ r..(up, down+1
             tmp    # list
@@ -54,33 +54,33 @@ c_ Solution(o..
         r.. hashset
     
     ___ addRotationKeys  grid, hashset
-        grid1 = grid
-        grid2 = grid[::-1]
-        grid3 = [row[::-1] ___ row __ grid]
+        grid1 grid
+        grid2 grid[::-1]
+        grid3 [row[::-1] ___ row __ grid]
         ___ grid __ [grid1, grid2, grid3]:
-            grid0 = grid
+            grid0 grid
             ___ _ __ r..(4
-                m, n = l..(grid0), l..(grid0[0])
-                newGrid = [[0]*m ___ _ __ r..(n)]
+                m, n l..(grid0), l..(grid0[0])
+                newGrid [[0]*m ___ _ __ r..(n)]
                 ___ i __ r..(m
                     ___ j __ r..(n
-                        newGrid[j][i] = grid0[i][j]
+                        newGrid[j][i] grid0[i][j]
                 hashset.add(getKey(newGrid
-                grid0 = newGrid
+                grid0 newGrid
             ___ _ __ r..(4
-                m, n = l..(grid0), l..(grid0[0])
-                newGrid = [[0]*m ___ _ __ r..(n)]
+                m, n l..(grid0), l..(grid0[0])
+                newGrid [[0]*m ___ _ __ r..(n)]
                 ___ i __ r..(m
                     ___ j __ r..(n
-                        newGrid[n-1-j][m-1-i] = grid0[i][j]
+                        newGrid[n-1-j][m-1-i] grid0[i][j]
                 hashset.add(getKey(newGrid
-                grid0 = newGrid
+                grid0 newGrid
     
     ___ getKey  grid
         r.. ','.j..([''.j..([s..(num) ___ num __ row]) ___ row __ grid])
     
     ___ test
-        testCases = [
+        testCases [
             [
                 '11000',
                 '10000',
@@ -163,9 +163,9 @@ c_ Solution(o..
         ]
         ___ grid __ testCases:
             print('grid:')
-            grid = [[i..(c) ___ c __ row] ___ row __ grid]
+            grid [[i..(c) ___ c __ row] ___ row __ grid]
             print('\n'.j..([s..(row) ___ row __ grid]
-            result = numDistinctIslands2(grid)
+            result numDistinctIslands2(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 

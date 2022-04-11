@@ -22,13 +22,13 @@ c_ Solution:
         """
         counter and iterate
         """
-        counter = d..(i..)
+        counter d..(i..)
         ___ n __ nums:
             counter[n] += 1
 
-        ret = 0
+        ret 0
         ___ k, v __ counter.i..:
             __ k + 1 __ counter:
-                ret = m..(ret, v + counter[k + 1])
+                ret m..(ret, v + counter[k + 1])
 
         r.. ret

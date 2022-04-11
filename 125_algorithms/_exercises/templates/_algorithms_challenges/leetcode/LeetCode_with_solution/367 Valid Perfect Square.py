@@ -12,7 +12,7 @@ Example 2:
 Input: 14
 Returns: False
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -23,16 +23,16 @@ c_ Solution(o..
         :rtype: bool
         """
         __ num __ 1: r.. T..
-        lo = 1
-        hi = num/2 + 1
+        lo 1
+        hi num/2 + 1
         w.... lo < hi:
-            mid = (lo + hi) / 2
-            midsq = mid**2
+            mid (lo + hi) / 2
+            midsq mid**2
             __ midsq __ num:
                 r.. T..
             ____ midsq < num:
-                lo = mid + 1
+                lo mid + 1
             ____
-                hi = mid
+                hi mid
 
         r.. F..

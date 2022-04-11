@@ -4,21 +4,21 @@ c_ Solution:
     @return: the number of Negative Number
     """
     ___ countNumber  g
-        ans = 0
+        ans 0
         __ n.. g o. n.. g[0]:
             r.. ans
 
-        m, n = l..(g), l..(g[0])
+        m, n l..(g), l..(g[0])
 
         ___ i __ r..(m
-            left, right = 0, n - 1
+            left, right 0, n - 1
 
             w.... left + 1 < right:
-                mid = (left + right) // 2
+                mid (left + right) // 2
                 __ g[i][mid] < 0:
-                    left = mid
+                    left mid
                 ____
-                    right = mid
+                    right mid
 
             __ g[i][left] >_ 0:
                 _____

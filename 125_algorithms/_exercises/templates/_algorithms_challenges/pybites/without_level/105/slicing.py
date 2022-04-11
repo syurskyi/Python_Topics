@@ -1,6 +1,6 @@
 ____ s__ _______ a..
 
-text = """
+text """
 One really nice feature of Python is polymorphism: using the same operation
 on different types of objects.
 Let's talk about an elegant feature: slicing.
@@ -16,14 +16,14 @@ keep enjoying our bites!
 """
 
 
-___ slice_and_dice(text: s.. = text) __ l..:
+___ slice_and_dice(text: s.. text) __ l..:
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
     results    # list
-    lines = text.s..
+    lines text.s..
     ___ line __ lines.s..("\n"
-        l = line.l..
+        l line.l..
         __ l[:1].isl..
-            word = line.s..(' ')[-1].r..('.!')
+            word line.s..(' ')[-1].r..('.!')
             results.a..(word)
     r.. results

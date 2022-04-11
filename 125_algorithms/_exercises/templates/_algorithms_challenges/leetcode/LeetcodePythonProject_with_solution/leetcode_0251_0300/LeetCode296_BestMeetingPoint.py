@@ -6,7 +6,7 @@ Created on Mar 8, 2017
 
 c_ Solution(o..
     ___ minTotalDistance  grid
-        m, n = l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid[0])
         rows, cols    # list, []
         ___ i __ r..(m
             ___ j __ r..(n
@@ -14,7 +14,7 @@ c_ Solution(o..
                     rows.a..(i)
                     cols.a..(j)
         cols.s..()
-        sumVal = 0
+        sumVal 0
         ___ row __ rows:
             sumVal += a..(row - rows[l..(rows)//2])
         ___ col __ cols:
@@ -22,7 +22,7 @@ c_ Solution(o..
         r.. sumVal
     
     ___ test
-        testCases = [
+        testCases [
             [
                 '10001',
                 '00000',
@@ -30,9 +30,9 @@ c_ Solution(o..
             ],
         ]
         ___ grid __ testCases:
-            grid = [[i..(x) ___ x __ l] ___ l __ grid]
+            grid [[i..(x) ___ x __ l] ___ l __ grid]
             print('grid: %s' % (grid
-            result = minTotalDistance(grid)
+            result minTotalDistance(grid)
             print('result: %s' % (result
             print('-='*20 + '-')
 

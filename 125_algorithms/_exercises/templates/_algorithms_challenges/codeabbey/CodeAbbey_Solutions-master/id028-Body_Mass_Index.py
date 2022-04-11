@@ -1,12 +1,12 @@
 ___ BMI(users
-        pairCount = 0
+        pairCount 0
         answer    # list
         w.... pairCount < users:
-                pair = raw_input()
-                numbers = pair.s..(' ')
-                weight = f__(numbers[0])
-                height = f__(numbers[1])
-                BMI = f__(weight / (height * height
+                pair raw_input()
+                numbers pair.s..(' ')
+                weight f__(numbers[0])
+                height f__(numbers[1])
+                BMI f__(weight / (height * height
 
                 __ BMI < 18.5:
                         answer.a..(s..('under'

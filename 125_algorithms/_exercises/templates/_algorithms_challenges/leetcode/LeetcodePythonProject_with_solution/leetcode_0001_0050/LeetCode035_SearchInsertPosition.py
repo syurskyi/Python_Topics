@@ -10,13 +10,13 @@ c_ Solution(o..
         :type target: int
         :rtype: int
         """
-        l, r = 0, l..(nums)
+        l, r 0, l..(nums)
         w.... l < r:
-            mid = (l+r)//2
+            mid (l+r)//2
             __ target __ nums[mid]:
                 r.. mid
             ____ target > nums[mid]:
-                l = mid+1
+                l mid+1
             ____
-                r = mid
+                r mid
         r.. l

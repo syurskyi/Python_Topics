@@ -24,7 +24,7 @@ So the maximum value of F(0), F(1), F(2), F(3) is F(3) = 26.
 """
 _______ ___
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -36,14 +36,14 @@ c_ Solution(o..
         """
         __ n.. A: r.. 0
 
-        gmax = -___.maxint
-        n = l..(A)
-        s = s..(A)
+        gmax -___.maxint
+        n l..(A)
+        s s..(A)
 
-        cur = s..(idx * val ___ idx, val __ e..(A
+        cur s..(idx * val ___ idx, val __ e..(A
         ___ r __ r..(A
-            cur = cur + s - n * r
-            gmax = m..(gmax, cur)
+            cur cur + s - n * r
+            gmax m..(gmax, cur)
 
         r.. gmax
 

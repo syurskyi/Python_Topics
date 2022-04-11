@@ -1,11 +1,11 @@
 ____ c.. _______ n..
 ____ d__ _______ d__
 
-TimeOffset = n..('TimeOffset', 'offset date_str divider')
+TimeOffset n..('TimeOffset', 'offset date_str divider')
 
-NOW = d__.n..
-MINUTE, HOUR, DAY = 60, 60*60, 24*60*60
-TIME_OFFSETS = (
+NOW d__.n..
+MINUTE, HOUR, DAY 60, 60*60, 24*60*60
+TIME_OFFSETS (
     TimeOffset(10, 'just now', N..),
     TimeOffset(MINUTE, '{} seconds ago', N..),
     TimeOffset(2*MINUTE, 'a minute ago', N..),
@@ -21,10 +21,10 @@ ___ pretty_date(date: d__
        using TIME_OFFSETS"""
     __ n.. isi..(date, d__) o. date > NOW:
         r.. V...('pretty_date() only accepts datetime objects in the past')
-    diff = NOW - date
-    seconds = i..(diff.total_seconds
-    minutes = seconds // 60
-    hours = minutes // 60
+    diff NOW - date
+    seconds i..(diff.total_seconds
+    minutes seconds // 60
+    hours minutes // 60
     # This doesn't _feel_ very pythonic…
     __ seconds < 10:
         r.. 'just now'

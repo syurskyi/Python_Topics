@@ -34,14 +34,14 @@ Explanation: The smallest value is 2, but there isn't any second smallest value.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ findSecondMinimumValue  root: TreeNode) __ i..:
-        ret = find(root)
+        ret find(root)
         r.. -1 __ ret __ f__('inf') ____ ret
 
     ___ find  root: TreeNode) __ i..:
@@ -53,14 +53,14 @@ c_ Solution:
 
         __ root.left a.. root.right:
             __ root.left.val __ root.val:
-                left = find(root.left)
+                left find(root.left)
             ____
-                left = root.left.val
+                left root.left.val
 
             __ root.right.val __ root.val:
-                right = find(root.right)
+                right find(root.right)
             ____
-                right = root.right.val
+                right root.right.val
 
             r.. m..(left, right)
 

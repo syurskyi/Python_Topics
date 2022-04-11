@@ -3,13 +3,13 @@ c_ Solution:
     # @param {integer} numRows
     # @return {string}
     ___ convert  s, numRows
-        contain = [[] ___ __ __ r..(numRows)]
-        trans = t..(r..(numRows + t..(r..(numRows-1)[::-1])
-        shift = (numRows - 1) * 2 __ numRows > 1 ____ 1
+        contain [[] ___ __ __ r..(numRows)]
+        trans t..(r..(numRows + t..(r..(numRows-1)[::-1])
+        shift (numRows - 1) * 2 __ numRows > 1 ____ 1
         ___ i __ r..(l..(s:
             contain[trans[i%shift]].a..(s[i])
         r.. ''.j..([''.j..(con) ___ con __ contain])
 
-test = Solution()
+test Solution()
 print(test.convert("PAYPALISHIRING", 3
 print(test.convert("ABCD", 1

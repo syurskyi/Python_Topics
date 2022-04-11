@@ -5,15 +5,15 @@ c_ Solution(o..
     :type updates: List[List[int]]
     :rtype: List[int]
     """
-    ans = [0] * length
+    ans [0] * length
     ___ update __ updates:
-      start, end, delta = update
+      start, end, delta update
       ans[start] += delta
       __ end + 1 < length:
         ans[end + 1] -_ delta
 
-    delta = 0
+    delta 0
     ___ i __ r..(0, length
       delta += ans[i]
-      ans[i] = delta
+      ans[i] delta
     r.. ans

@@ -6,9 +6,9 @@ Created on Oct 4, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ findTarget  root, k
@@ -32,18 +32,18 @@ c_ Solution(o..
         __ n.. root: r.. F..
         arr    # list
         stack    # list
-        node = root
+        node root
         w.... node:
             stack.a..(node)
-            node = node.left
+            node node.left
         w.... stack:
-            node = stack.p.. )
+            node stack.p.. )
             arr.a..(node.val)
-            node0 = node.right
+            node0 node.right
             w.... node0:
                 stack.a..(node0)
-                node0 = node0.left
-        i, j = 0, l..(arr)-1
+                node0 node0.left
+        i, j 0, l..(arr)-1
         w.... i < j:
             __ k __ arr[i]+arr[j]:
                 r.. T..
@@ -54,7 +54,7 @@ c_ Solution(o..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             [
                 TreeNode(2, TreeNode(1), TreeNode(3,
                 4,
@@ -69,7 +69,7 @@ c_ Solution(o..
             ],
         ]
         ___ root, k __ testCases:
-            result = findTarget(root, k)
+            result findTarget(root, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

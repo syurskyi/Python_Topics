@@ -17,7 +17,7 @@ c_ Solution(o..
         """
         __ n.. prices:
             r.. 0
-        max_profit = 0
+        max_profit 0
         ___ i __ r..(1, l..(prices:
             __ prices[i] > prices[i - 1]:
                 max_profit += prices[i] - prices[i - 1]

@@ -1,6 +1,6 @@
 _______ hashlib
 
-GRAVATAR_URL = ("https://www.gravatar.com/avatar/"
+GRAVATAR_URL ("https://www.gravatar.com/avatar/"
                 "{hashed_email}?s={size}&r=g&d=robohash")
 
 
@@ -14,9 +14,9 @@ ___ create_gravatar_url(email, size=200
       For Python check hashlib check out (md5 / hexdigest):
       https://docs.python.org/3/library/hashlib.html#hashlib.hash.hexdigest
    """
-   hashed = hashlib.md5(email.l...s...encode("utf8".hexdigest()
-   base_url = "https://www.gravatar.com/avatar/"
-   hash_size = f"{hashed}?s={size}&r=g&d=robohash"
+   hashed hashlib.md5(email.l...s...encode("utf8".hexdigest()
+   base_url "https://www.gravatar.com/avatar/"
+   hash_size f"{hashed}?s={size}&r=g&d=robohash"
    r.. f"{base_url}{hash_size}"
 
 

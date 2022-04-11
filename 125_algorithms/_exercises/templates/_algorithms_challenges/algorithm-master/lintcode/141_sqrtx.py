@@ -7,18 +7,18 @@ c_ Solution:
         __ n.. x o. x <_ 1:
             r.. x
 
-        left, right = 0, x
+        left, right 0, x
 
         w.... left + 1 < right:
-            mid = (left + right) // 2
-            square = mid * mid
+            mid (left + right) // 2
+            square mid * mid
 
             __ square __ x:
                 r.. mid
 
             __ square < x:
-                left = mid
+                left mid
             ____
-                right = mid
+                right mid
 
         r.. left

@@ -4,7 +4,7 @@ https://leetcode.com/problems/palindrome-permutation/
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -13,15 +13,15 @@ c_ Solution(o..
         :type s: str
         :rtype: bool
         """
-        m = d..(i..)
+        m d..(i..)
         ___ c __ s:
             m[c] += 1
 
-        once = F..
+        once F..
         ___ v __ m.v..
             __ v % 2 __ 1:
                 __ once:
                     r.. F..
-                once = T..
+                once T..
 
         r.. T..

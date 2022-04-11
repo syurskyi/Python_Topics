@@ -15,7 +15,7 @@ A solution set is:
 [2, 6]
 [1, 1, 6]
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ combinationSum2  candidates, target
         """
@@ -48,7 +48,7 @@ c_ Solution:
         #    self.get_combination_sum(candidates[ind+1:], cur+[element], target, result)
 
         # consider [1, 1, 1, 6], target 8
-        ind = 0
+        ind 0
         w.... ind<l..(candidates
             get_combination_sum(candidates[ind+1:], cur+[candidates[ind]], target, result)
             # post-order jump

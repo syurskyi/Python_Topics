@@ -3,16 +3,16 @@ _______ __
 _______ u__.r..
 
 # PREWORK
-TMP = __.g.. TMP  /tmp
-DICT = 'dictionary.txt'
-DICTIONARY = __.p...j..(TMP, DICT)
+TMP __.g.. TMP  /tmp
+DICT 'dictionary.txt'
+DICTIONARY __.p...j..(TMP, DICT)
 u__.r...u..(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{DICT}',
     DICTIONARY
 )
 
 w__ o.. ? __ f
-    dictionary = s..([word.s...l.. ___ word __ f.r...s.. ])
+    dictionary s..([word.s...l.. ___ word __ f.r...s.. ])
 
 print(dictionary)
 ___ get_possible_dict_words(draw
@@ -27,7 +27,7 @@ ___ _get_permutations_draw(draw
        use itertools.permutations (order of letters matters)"""
     
     ___ i __ r..(1,l..(draw) + 1
-        ___ word __ i...permutations(draw,i
+        ___ word __ i...p.. draw,i
             y.. ''.j..(word).l..
 
 
@@ -37,7 +37,7 @@ ___ _get_permutations_draw(draw
 
 __ _______ __ _______
 
-    DRAW = l..('GARYTEV')
+    DRAW l..('GARYTEV')
 
     print(l..(_get_permutations_draw(DRAW)))
 

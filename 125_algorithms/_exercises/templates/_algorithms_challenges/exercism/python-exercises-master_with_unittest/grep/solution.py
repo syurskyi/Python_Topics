@@ -1,7 +1,7 @@
 ___ matches(line, pattern, flags
     __ '-i' __ flags:  # case-insensitive
-        line = line.l..
-        pattern = pattern.l..
+        line line.l..
+        pattern pattern.l..
 
     __ '-x' __ flags:  # match entire lines
         __ l..(pattern) != l..(line.r..:
@@ -14,7 +14,7 @@ ___ matches(line, pattern, flags
 
 
 ___ format_files(matched_lines
-    result = ''
+    result ''
 
     ___ file_name, _, _ __ matched_lines:
         __ file_name n.. __ result:
@@ -27,7 +27,7 @@ ___ format_lines(matched_lines, files, flags
     result    # list
 
     ___ file_name, line_number, line __ matched_lines:
-        line_result = ""
+        line_result ""
 
         __ l..(files) > 1:
             line_result += file_name + ':'

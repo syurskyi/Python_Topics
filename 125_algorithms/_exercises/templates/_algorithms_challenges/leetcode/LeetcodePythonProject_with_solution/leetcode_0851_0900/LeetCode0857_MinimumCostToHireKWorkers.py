@@ -12,10 +12,10 @@ c_ Solution(o..
         :rtype: float
         """
         _______ heapq
-        k = K
-        workers = s..([f__(w)/q, q] ___ w, q __ z..(wage, quality
-        res = f__('inf')
-        qsum = 0
+        k K
+        workers s..([f__(w)/q, q] ___ w, q __ z..(wage, quality
+        res f__('inf')
+        qsum 0
         heap    # list
         ___ r, q, __ workers:
             heapq.heappush(heap, -q)
@@ -23,15 +23,15 @@ c_ Solution(o..
             __ l..(heap) > k:
                 qsum += heapq.heappop(heap)
             __ l..(heap) __ k:
-                res = m..(res, qsum*r)
+                res m..(res, qsum*r)
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             
         ]
         ___ quality, wage, k __ testCases:
-            res = mincostToHireWorkers(quality, wage, k)
+            res mincostToHireWorkers(quality, wage, k)
             print('res: %s' % res)
             print('-='*30 + '-')
 

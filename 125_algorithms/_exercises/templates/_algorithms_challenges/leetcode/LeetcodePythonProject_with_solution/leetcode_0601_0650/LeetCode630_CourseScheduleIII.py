@@ -12,7 +12,7 @@ c_ Solution(o..
         _______ heapq
         heap    # list
         courses.s..(key=l.... x: x[1])
-        t__ = 0
+        t__ 0
         ___ course __ courses:
             t__ += course[0]
             heapq.heappush(heap, -course[0])
@@ -21,7 +21,7 @@ c_ Solution(o..
         r.. l..(heap)
     
     ___ test
-        testCases = [
+        testCases [
             [[1,2]],
             [[100, 200], [200, 1300], [1000, 1250], [2000, 3200]],
             [[5, 5], [4, 6], [2, 6]],
@@ -29,7 +29,7 @@ c_ Solution(o..
         ]
         ___ courses __ testCases:
             print('courses: %s' % courses)
-            result = scheduleCourse(courses)
+            result scheduleCourse(courses)
             print('result: %s' % result)
             print('-='*30+'-')
 

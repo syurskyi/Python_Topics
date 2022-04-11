@@ -23,21 +23,21 @@ c_ Solution:
     # @param obstacleGrid, a list of lists of integers
     # @return an integer
     ___ uniquePathsWithObstacles  obstacleGrid
-        grid = obstacleGrid
-        n = l..(grid)
-        m = l..(grid[0])
-        t = [[-1 ___ i __ r..(m)] ___ j __ r..(n)]
+        grid obstacleGrid
+        n l..(grid)
+        m l..(grid[0])
+        t [[-1 ___ i __ r..(m)] ___ j __ r..(n)]
         ___ i __ r..(n
             ___ j __ r..(m
                 __ grid[i][j] __ 1:
-                    t[i][j] = 0
+                    t[i][j] 0
                 ____
                     __ i __ 0 a.. j __ 0:
-                        t[i][j] = 1
+                        t[i][j] 1
                     ____ i __ 0:
-                        t[i][j] = t[i][j - 1]
+                        t[i][j] t[i][j - 1]
                     ____ j __ 0:
-                        t[i][j] = t[i - 1][j]
+                        t[i][j] t[i - 1][j]
                     ____
-                        t[i][j] = t[i - 1][j] + t[i][j - 1]
+                        t[i][j] t[i - 1][j] + t[i][j - 1]
         r.. t[n - 1][m - 1]

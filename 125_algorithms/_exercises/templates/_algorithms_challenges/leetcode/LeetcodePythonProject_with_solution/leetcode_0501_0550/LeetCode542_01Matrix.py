@@ -10,18 +10,18 @@ c_ Solution(o..
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
         """
-        m, n = l..(matrix), l..(matrix[0])
-        distance = [[f__('inf')]*n ___ _ __ r..(m)]
+        m, n l..(matrix), l..(matrix[0])
+        distance [[f__('inf')]*n ___ _ __ r..(m)]
         queue    # list
         ___ i __ r..(m
             ___ j __ r..(n
                 __ matrix[i][j] __ 0:
-                    distance[i][j] = 0
+                    distance[i][j] 0
                     queue.a..((i, j, 0
         w.... queue:
-            i, j, d = queue.p.. 0)
+            i, j, d queue.p.. 0)
             ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1
                 __ 0 <_ x < m a.. 0 <_ y < n a.. distance[x][y] > d+1:
-                    distance[x][y] = d+1
+                    distance[x][y] d+1
                     queue.a..((x, y, d+1
         r.. distance

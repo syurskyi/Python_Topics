@@ -1,6 +1,6 @@
 ____ packt _______ get_book
 
-book = get_book()
+book get_book()
 
 
 ___ test_type

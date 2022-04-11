@@ -52,7 +52,7 @@ c_ Solution:
           a length 4 subarray that begins at a major element will have 2 major
           elements.
         """
-        n = l..(A)
+        n l..(A)
         ___ i __ r..(n - 1
             ___ j __ r..(3
                 __ A[i] __ A[m..(n - 1, i + 1 + j)]:

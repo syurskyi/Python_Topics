@@ -15,7 +15,7 @@ GC content = n(G|C) / n(A|C|G|T) = 6/20 = 3/10 => 30%
 For more background info on DNA check out this link.
 """
 
-s = "tgtggtttctttcgggccttcgcgtgtcgccgttggtgcggccctcctc"
+s "tgtggtttctttcgggccttcgcgtgtcgccgttggtgcggccctcctc"
 
 ___ calculate_gc_content_1st_solution(sequence
     """
@@ -24,22 +24,22 @@ ___ calculate_gc_content_1st_solution(sequence
     """
     counts    # dict
     bases_dict    # dict
-    bases = "atgc"
-    sequence = sequence.l..
+    bases "atgc"
+    sequence sequence.l..
     ___ b __ bases:
-        bases_dict[b] = F..
+        bases_dict[b] F..
 
     ___ seq __ sequence:
-        bases_dict[seq] = T..
+        bases_dict[seq] T..
         ___
             counts[seq] += 1
         ______ K..:
-            counts[seq] = 1
+            counts[seq] 1
     ___ k,v __ bases_dict.i..:
         __ v __ F..:
-            counts[k] = 0
+            counts[k] 0
 
-    result = f__("{0:.2f}".f..(((counts 'g'  + counts 'c' ) / (counts 'a'  + counts 'c'  + counts 'g'  + counts 't'  * 100
+    result f__("{0:.2f}".f..(((counts 'g'  + counts 'c' ) / (counts 'a'  + counts 'c'  + counts 'g'  + counts 't'  * 100
     ___
         r.. result
     ______:
@@ -47,9 +47,9 @@ ___ calculate_gc_content_1st_solution(sequence
 
 ___ calculate_gc_content_2nd_solution(sequence
 
-    counts = C..(sequence.u..
-    gc_content = counts 'G'  + counts 'C'
-    at_content = counts 'A'  + counts 'T'
+    counts C..(sequence.u..
+    gc_content counts 'G'  + counts 'C'
+    at_content counts 'A'  + counts 'T'
     r.. r..((gc_content / (gc_content + at_content * 100, 2)
 
 

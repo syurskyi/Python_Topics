@@ -17,14 +17,14 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        j = 0
+        j 0
         ___ i, c __ e..(nums
             __ c != 0:
-                nums[i], nums[j] = nums[j], nums[i]
+                nums[i], nums[j] nums[j], nums[i]
                 j += 1
 
 
-a1 = [0, 1, 0, 3, 12]
-s = Solution()
+a1 [0, 1, 0, 3, 12]
+s Solution()
 s.moveZeroes(a1)
 print a1

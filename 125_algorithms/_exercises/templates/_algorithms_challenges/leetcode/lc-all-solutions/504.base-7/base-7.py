@@ -6,12 +6,12 @@ c_ Solution(o..
     """
 
     ___ convertHelper(num, base
-      sign = ""
+      sign ""
       __ num < 0:
-        sign = "-"
-      num = a..(num)
-      ans = 0
-      unit = 1
+        sign "-"
+      num a..(num)
+      ans 0
+      unit 1
       w.... num:
         ans += (num % base) * unit
         num /= base

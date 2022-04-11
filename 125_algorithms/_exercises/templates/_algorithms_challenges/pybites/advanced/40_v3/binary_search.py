@@ -2,16 +2,16 @@ ____ m__ _______ f..
 
 
 ___ binary_search(sequence, target
-    left = 0
-    right = l..(sequence) - 1
+    left 0
+    right l..(sequence) - 1
 
     w.... left <_ right:
-        mid = f..((left + right) / 2)
-        val = sequence[mid]
+        mid f..((left + right) / 2)
+        val sequence[mid]
         __ target < val:
-            right = mid - 1
+            right mid - 1
         ____ target > val:
-            left = mid + 1
+            left mid + 1
         ____
             r.. mid
     r.. N..

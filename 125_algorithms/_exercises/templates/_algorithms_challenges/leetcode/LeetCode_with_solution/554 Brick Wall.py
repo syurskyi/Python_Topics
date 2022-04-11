@@ -41,10 +41,10 @@ c_ Solution:
         """
         Iterate and count edge at a position
         """
-        h = d..(i..)
-        m = l..(wall)
+        h d..(i..)
+        m l..(wall)
         ___ i __ r..(m
-            s = 0
+            s 0
             ___ j __ r..(l..(wall[i]) - 1
                 # don't count the two endings
                 s += wall[i][j]

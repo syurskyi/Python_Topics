@@ -5,14 +5,14 @@ c_ Solution:
     @return: an integer
     """
     ___ twoSum5  nums, target
-        ans = 0
+        ans 0
 
         __ n.. nums o. l..(nums) < 2:
             r.. ans
 
         nums.s..()
 
-        left, right = 0, l..(nums) - 1
+        left, right 0, l..(nums) - 1
         w.... left < right:
             __ nums[left] + nums[right] <_ target:
                 # the count of connections from `left` to `right`

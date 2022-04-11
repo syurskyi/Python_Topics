@@ -1,10 +1,10 @@
 ____ karma _______ User, Transaction
 
-alice = ? 'alice')
-bob = ? 'bob')
-tim = ? 'tim')
+alice ? 'alice')
+bob ? 'bob')
+tim ? 'tim')
 
-transactions = [
+transactions [
     Transaction(giver=alice, points=1),
     Transaction(giver=bob, points=2),
     Transaction(giver=tim, points=3),

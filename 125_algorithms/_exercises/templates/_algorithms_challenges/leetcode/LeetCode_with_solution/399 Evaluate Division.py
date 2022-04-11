@@ -21,7 +21,7 @@ queries = [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ].
 ____ c.. _______ d..
 ____ i.. _______ izip
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -33,11 +33,11 @@ c_ Solution(o..
         :type queries: List[List[str]]
         :rtype: List[float]
         """
-        G = d..(d..)
+        G d..(d..)
         ___ edge, val __ izip(equations, values
-            s, e = edge
-            G[s][e], G[e][s] = val, 1/val
-            G[s][s], G[e][e] = 1, 1
+            s, e edge
+            G[s][e], G[e][s] val, 1/val
+            G[s][s], G[e][e] 1, 1
 
         r.. [dfs(G, s, e, s.. ___ s, e __ queries]
 
@@ -49,7 +49,7 @@ c_ Solution(o..
         ___ nbr __ G[s]:
             __ nbr n.. __ p..:
                 p...add(nbr)
-                val = dfs(G, nbr, e, p..)
+                val dfs(G, nbr, e, p..)
                 __ val != -1.0:
                     r.. val * G[s][nbr]
                 p...remove(nbr)
@@ -67,17 +67,17 @@ c_ Solution(o..
         :type queries: List[List[str]]
         :rtype: List[float]
         """
-        G = d..(d..)
+        G d..(d..)
         ___ edge, val __ izip(equations, values
-            s, e = edge
-            G[s][e], G[e][s] = val, 1/val
-            G[s][s], G[e][e] = 1, 1
+            s, e edge
+            G[s][e], G[e][s] val, 1/val
+            G[s][s], G[e][e] 1, 1
 
         # Floyd-Warshall
         ___ mid __ G:
             ___ s __ G[mid]:
                 ___ e __ G[mid]:
-                    G[s][e] = G[s][mid] * G[mid][e]
+                    G[s][e] G[s][mid] * G[mid][e]
 
         r.. [G[s].g.. e, -1.0) ___ s, e __ queries]
 

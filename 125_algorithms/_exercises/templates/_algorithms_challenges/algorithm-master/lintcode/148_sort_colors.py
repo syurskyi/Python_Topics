@@ -7,11 +7,11 @@ c_ Solution:
         __ n.. A:
             r..
 
-        left, right = 0, l..(A) - 1
-        i = 0
+        left, right 0, l..(A) - 1
+        i 0
         w.... i <_ right:
             __ A[i] __ 0:
-                A[left], A[i] = A[i], A[left]
+                A[left], A[i] A[i], A[left]
                 left += 1
                 i += 1
             ____ A[i] __ 1:
@@ -24,5 +24,5 @@ c_ Solution:
                 """
                 cannot `i += 1` since the swapped value still need to check
                 """
-                A[right], A[i] = A[i], A[right]
+                A[right], A[i] A[i], A[right]
                 right -_ 1

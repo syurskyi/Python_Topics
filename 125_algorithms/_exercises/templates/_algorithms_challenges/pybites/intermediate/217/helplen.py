@@ -16,7 +16,7 @@ ___ get_len_help_text(builtin: BuiltinFunctionType) __ i..:
         help(builtin)
 
 
-    s = f.getvalue()
+    s f.getvalue()
 
 
     r.. l..(s)

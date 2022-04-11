@@ -5,11 +5,11 @@ c_ NumMatrix(o..
     :type matrix: List[List[int]]
     """
     __ l..(matrix) __ 0:
-      col = 0
+      col 0
     ____
-      col = l..(matrix[0])
-    c = [[0] * (col + 1) ___ _ __ r..(0, l..(matrix) + 1)]
-    m = [[0] * (col + 1) ___ _ __ r..(0, l..(matrix) + 1)]
+      col l..(matrix[0])
+    c [[0] * (col + 1) ___ _ __ r..(0, l..(matrix) + 1)]
+    m [[0] * (col + 1) ___ _ __ r..(0, l..(matrix) + 1)]
     ___ i __ r..(0, l..(matrix:
       ___ j __ r..(0, l..(matrix[0]:
         update(i, j, matrix[i][j])
@@ -24,12 +24,12 @@ c_ NumMatrix(o..
     """
     row += 1
     col += 1
-    c, m = c, m
-    delta = val - m[row][col]
-    m[row][col] = val
-    i, j = row, col
+    c, m c, m
+    delta val - m[row][col]
+    m[row][col] val
+    i, j row, col
     w.... i < l..(c
-      j = col
+      j col
       w.... j < l..(c[0]
         c[i][j] += delta
         j += lowbit(j)
@@ -38,11 +38,11 @@ c_ NumMatrix(o..
   ___ sumRange  row, col
     row += 1
     col += 1
-    ret = 0
-    c, m = c, m
-    i, j = row, col
+    ret 0
+    c, m c, m
+    i, j row, col
     w.... i > 0:
-      j = col
+      j col
       w.... j > 0:
         ret += c[i][j]
         j -_ lowbit(j)
@@ -61,8 +61,8 @@ c_ NumMatrix(o..
     :type col2: int
     :rtype: int
     """
-    total = sumRange(row2, col2)
-    left = sumRange(row2, col1 - 1) __ col1 - 1 >_ 0 ____ 0
-    top = sumRange(row1 - 1, col2) __ row1 - 1 >_ 0 ____ 0
-    overlap = sumRange(row1 - 1, col1 - 1) __ row1 - 1 >_ 0 a.. col1 - 1 >_ 0 ____ 0
+    total sumRange(row2, col2)
+    left sumRange(row2, col1 - 1) __ col1 - 1 >_ 0 ____ 0
+    top sumRange(row1 - 1, col2) __ row1 - 1 >_ 0 ____ 0
+    overlap sumRange(row1 - 1, col1 - 1) __ row1 - 1 >_ 0 a.. col1 - 1 >_ 0 ____ 0
     r.. total - left - top + overlap

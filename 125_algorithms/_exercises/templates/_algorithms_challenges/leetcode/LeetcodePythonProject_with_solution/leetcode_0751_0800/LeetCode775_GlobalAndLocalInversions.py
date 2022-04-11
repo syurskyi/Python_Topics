@@ -9,22 +9,22 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: bool
         """
-        arr = A
-        cmax = 0
+        arr A
+        cmax 0
         ___ i __ r..(l..(arr)-2
-            cmax = m..(cmax, arr[i])
+            cmax m..(cmax, arr[i])
             __ cmax > arr[i+2]:
                 r.. F..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             [1,0,2],
             [1,2,0],
         ]
         ___ arr __ testCases:
             print('arr: %s' % arr)
-            result = isIdealPermutation(arr)
+            result isIdealPermutation(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 

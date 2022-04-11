@@ -6,11 +6,11 @@ ____ u__.r.. _______ u..
 
 ____ bs4 _______ BeautifulSoup __ Soup
 
-out_dir = "/tmp"
-html_file = f"{out_dir}/enchantment_list_pc.html"
+out_dir "/tmp"
+html_file f"{out_dir}/enchantment_list_pc.html"
 
-HTML_FILE = P..(html_file)
-URL = "https://www.digminecraft.com/lists/enchantment_list_pc.php"
+HTML_FILE P..(html_file)
+URL "https://www.digminecraft.com/lists/enchantment_list_pc.php"
 
 
 @dataclass
@@ -24,10 +24,10 @@ c_ Enchantment:
     name: s..
     max_level: i..
     description: s..
-    items: L..[s..] = field(default_factory=l..)
+    items: L..[s..] field(default_factory=l..)
 
     ___ __post_init__
-        name = name.r..('_', ' ')
+        name name.r..('_', ' ')
 
     ___  -r
         r.. f'{name} ({max_level}): {description}'
@@ -41,19 +41,19 @@ c_ Item:
         name, enchantments
     """
     name: s..
-    enchantments: L..[s..] = field(default_factory=l..)
+    enchantments: L..[s..] field(default_factory=l..)
 
     # def __post_init__(self):
     #     self.name = self.name.replace('_',' ').title()
 
     ___  -r
-        en = _*   [{chant.max_level}] {chant.id_name}'
+        en _*   [{chant.max_level}] {chant.id_name}'
               ___ chant __ s..(enchantments, key=l.... x : x.id_name)]
         r.. f'{name.r..("_"," ").t..}: \n' + '\n'.j..(en)
 
 
 # Lookup values of the first five roman numerals
-LEVEL_TRANSLATE = {'I': 1,
+LEVEL_TRANSLATE {'I': 1,
                    'II': 2,
                    'III': 3,
                    'IV': 4,
@@ -65,22 +65,22 @@ ___ generate_enchantments(soup
     
     With the key being the id_name of the enchantment.
     """
-    res = d..()
+    res d..()
     ___ row __ soup.select('table#minecraft_items > tr'
-        data_items = row.find_all('td')
+        data_items row.find_all('td')
         __ data_items __ N.. o. l..(data_items) __ 0:
             _____
-        enchant, maxlevel, descr, id, item, version = data_items
-        id_name = enchant.em.text
-        name = enchant.a.text
-        max_level = LEVEL_TRANSLATE[maxlevel.text.s..]
-        description = descr.text
-        item_url = item.img.attrs.g.. 'data-src')
-        items = __.s.. _ .*/(?:enchanted_)?(?:iron_)?([^/]+?)(?:_sm)?\.png', r'\1', item_url)
-        items = items.r..('fishing_rod', 'FISHING=ROD')
-        items = l.. m..(l.... s: s.r..('FISHING=ROD', 'fishing_rod'), items.s..('_')))
+        enchant, maxlevel, descr, id, item, version data_items
+        id_name enchant.em.text
+        name enchant.a.text
+        max_level LEVEL_TRANSLATE[maxlevel.text.s..]
+        description descr.text
+        item_url item.img.attrs.g.. 'data-src')
+        items __.s.. _ .*/(?:enchanted_)?(?:iron_)?([^/]+?)(?:_sm)?\.png', r'\1', item_url)
+        items items.r..('fishing_rod', 'FISHING=ROD')
+        items l.. m..(l.... s: s.r..('FISHING=ROD', 'fishing_rod'), items.s..('_')))
 
-        res[id_name] = Enchantment(id_name,
+        res[id_name] Enchantment(id_name,
                                    name,
                                    max_level,
                                    description,
@@ -95,13 +95,13 @@ ___ generate_items(data
     
     With the key being the item name.
     """
-    res = d..()
+    res d..()
     ___ enchantment __ data.v..
         ___ i __ enchantment.items:
             __ i __ res.k..:
                 res[i].enchantments.a..(enchantment)
             ____
-                res[i] = Item(i, [enchantment])
+                res[i] Item(i, [enchantment])
     r.. d..(s..(res.i.., key=l.... t: t[0]
 
 
@@ -112,9 +112,9 @@ ___ get_soup(file=HTML_FILE
             u..(URL, HTML_FILE)
 
         w__ file.o.. ) __ html_source:
-            soup = Soup(html_source, "html.parser")
+            soup Soup(html_source, "html.parser")
     ____
-        soup = Soup(file, "html.parser")
+        soup Soup(file, "html.parser")
 
     r.. soup
 
@@ -123,9 +123,9 @@ ___ main
     """This function is here to help you test your final code.
     
     Once complete, the print out should match what's at the bottom of this file"""
-    soup = get_soup()
-    enchantment_data = generate_enchantments(soup)
-    minecraft_items = generate_items(enchantment_data)
+    soup get_soup()
+    enchantment_data generate_enchantments(soup)
+    minecraft_items generate_items(enchantment_data)
     ___ item __ minecraft_items:
         print(minecraft_items[item], "\n")
 

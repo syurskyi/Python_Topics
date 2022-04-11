@@ -6,8 +6,8 @@ Created on May 1, 2018
 # Definition for singly-linked list.
 c_ ListNode(o..
     ___ - , x, nextNode_ N..
-        val = x
-        next = nextNode
+        val x
+        next nextNode
 
 c_ Solution(o..
     ___ numComponents  head, G
@@ -16,22 +16,22 @@ c_ Solution(o..
         :type G: List[int]
         :rtype: int
         """
-        count = 0
-        hashset = s..(G)
+        count 0
+        hashset s..(G)
         w.... head:
             w.... head a.. head.val n.. __ hashset:
-                head = head.next
+                head head.next
             w.... head a.. head.val __ hashset:
                 hashset.remove(head.val)
-                head = head.next
+                head head.next
             count += 1
             __ n.. head o. n.. hashset:
                 _____
-            head = head.next
+            head head.next
         r.. count
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [0,1,2,3],
                 [0,1,3],
@@ -42,12 +42,12 @@ c_ Solution(o..
             ],
         ]
         ___ l, g __ testCases:
-            dummy = ListNode(-1)
-            node = dummy
+            dummy ListNode(-1)
+            node dummy
             ___ num __ l:
-                node.next = ListNode(num)
-                node = node.next
-            result = numComponents(dummy.next, g)
+                node.next ListNode(num)
+                node node.next
+            result numComponents(dummy.next, g)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -16,7 +16,7 @@ isMatch("aa", ".*") -> true
 isMatch("ab", ".*") -> true
 isMatch("aab", "c*a*b") -> true
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution:
@@ -32,13 +32,13 @@ c_ Solution:
         :return: boolean
         """
         # rename
-        tape = s
-        regex = p
+        tape s
+        regex p
 
-        index = 0
-        state = 0
+        index 0
+        state 0
         w.... index < l..(tape) a.. state < l..(regex
-            char = tape[index]
+            char tape[index]
             __ state+1 < l..(regex) a.. regex[state+1] __ "*":
                 __ regex[state] != ".":
                     __ char __ regex[state]:  # advance tape
@@ -52,7 +52,7 @@ c_ Solution:
                         __ regex[state] != ".":  # find until the next char in regex
                             w.... index < l..(tape) a.. tape[index] != regex[state]: index += 1
                         ____  # difficult part
-                            count = 1
+                            count 1
 
                     ____
                         r.. T..
@@ -79,11 +79,11 @@ c_ Solution:
         :return: boolean
         """
         # rename
-        tape = s
-        regex = p
+        tape s
+        regex p
 
-        index = 0
-        state = 0
+        index 0
+        state 0
 
         # dfs terminal condition
         __ n.. tape a.. n.. regex:
@@ -133,42 +133,42 @@ c_ Solution:
         :return: boolean
         """
         # rename
-        tape = s
-        regex = p
+        tape s
+        regex p
 
-        m = l..(tape)
-        n = l..(regex)
+        m l..(tape)
+        n l..(regex)
 
-        dp = [[F.. ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
+        dp [[F.. ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
 
         # edge cases
-        dp[m][n] = T..
+        dp[m][n] T..
         ___ j __ x..(n-1, -1, -1
             __ regex[j] __ "*":
-                dp[m][j] = dp[m][j+1]
+                dp[m][j] dp[m][j+1]
             ____ j+1 < n a.. regex[j+1] __ "*":
-                dp[m][j] = dp[m][j+1]
+                dp[m][j] dp[m][j+1]
             ____
-                dp[m][j] = F..
+                dp[m][j] F..
 
         # normal cases
         ___ i __ x..(m-1, -1, -1
             ___ j __ x..(n-1, -1, -1
                 __ regex[j] __ "*":
                     __ j-1 >_ 0 a.. regex[j-1] != "*":
-                        dp[i][j] = dp[i][j+1]  # skip
+                        dp[i][j] dp[i][j+1]  # skip
                     ____
                         r.. F..  # two consecutive *
                 ____ j+1 < n a.. regex[j+1] __ "*":
                     __ tape[i] __ regex[j] o. regex[j] __ ".":
-                        dp[i][j] = dp[i][j+2] o. dp[i+1][j] o. dp[i+1][j+2]  # what is done in dfs
+                        dp[i][j] dp[i][j+2] o. dp[i+1][j] o. dp[i+1][j+2]  # what is done in dfs
                     ____
-                        dp[i][j] = dp[i][j+2]
+                        dp[i][j] dp[i][j+2]
                 ____
                     __ tape[i] __ regex[j] o. regex[j] __ ".":
-                        dp[i][j] = dp[i+1][j+1]
+                        dp[i][j] dp[i+1][j+1]
                     ____
-                        dp[i][j] = F..
+                        dp[i][j] F..
 
         # notice that in edge cases and normal cases, checking conditions are exactly the same
 

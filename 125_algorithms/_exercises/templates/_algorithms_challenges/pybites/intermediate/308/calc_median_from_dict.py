@@ -11,9 +11,9 @@ ___ calc_median_from_dict(d: d..) __ f__:
 
     frequency    # list
     ___ key, value __ d.i..:
-        key_occurrence = value
+        key_occurrence value
         __ value > 100_000_000:
-            key_occurrence = i..(value / 100_000_000)
+            key_occurrence i..(value / 100_000_000)
         ___ _ __ r..(key_occurrence
             frequency.a..(key)
 
@@ -22,8 +22,8 @@ ___ calc_median_from_dict(d: d..) __ f__:
     __ l..(frequency) % 2 != 0:
         r.. f__(frequency[l..(frequency) // 2])
     ____
-        mid_2 = (l..(frequency) // 2)
-        mid_1 = mid_2 -1
+        mid_2 (l..(frequency) // 2)
+        mid_1 mid_2 -1
         r.. (frequency[mid_1] + frequency[mid_2]) / 2
 
 

@@ -42,7 +42,7 @@ c_ Solution(o..
         r.. helper(nestedList, 1)
     
     ___ helper  nestedList, level
-        sumVal = 0
+        sumVal 0
         ___ ni __ nestedList:
             __ ni.isInteger
                 sumVal += ni.getInteger()*level

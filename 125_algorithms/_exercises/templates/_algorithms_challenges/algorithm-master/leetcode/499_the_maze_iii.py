@@ -22,26 +22,26 @@ c_ Solution:
         >>> s.findShortestWay(maze, [4, 3], [3, 0])
         'impossible'
         """
-        NOT_FOUND = 'impossible'
+        NOT_FOUND 'impossible'
 
         __ n.. maze o. n.. maze[0]:
             r.. NOT_FOUND
 
-        m, n = l..(maze), l..(maze[0])
-        sx, sy = ball
-        tx, ty = hole
-        queue = [(sx, sy)]
-        paths = {(sx, sy []}
-        distance = {(sx, sy 0}
+        m, n l..(maze), l..(maze[0])
+        sx, sy ball
+        tx, ty hole
+        queue [(sx, sy)]
+        paths {(sx, sy []}
+        distance {(sx, sy 0}
 
         ___ x, y __ queue:
             ___ dx, dy, dn __ (
                 (-1, 0, 'u'), (1, 0, 'd'),
                 (0, -1, 'l'), (0, 1, _,
 
-                _x = x + dx
-                _y = y + dy
-                _step = 0
+                _x x + dx
+                _y y + dy
+                _step 0
 
                 w.... (
                     0 <_ _x < m a.. 0 <_ _y < n a..
@@ -65,8 +65,8 @@ c_ Solution:
                     paths[x, y] + [dn] > paths[_x, _y]
                     _____
 
-                distance[_x, _y] = distance[x, y] + _step
-                paths[_x, _y] = paths[x, y] + [dn]
+                distance[_x, _y] distance[x, y] + _step
+                paths[_x, _y] paths[x, y] + [dn]
                 queue.a..((_x, _y
 
         r.. ''.j..(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND
@@ -99,27 +99,27 @@ c_ Solution2:
         >>> s.findShortestWay(maze, [4, 3], [3, 0])
         'impossible'
         """
-        NOT_FOUND = 'impossible'
+        NOT_FOUND 'impossible'
 
         __ n.. maze o. n.. maze[0]:
             r.. NOT_FOUND
 
-        m, n = l..(maze), l..(maze[0])
-        sx, sy = ball
-        tx, ty = hole
-        heap = [(sx, sy)]
-        paths = {(sx, sy []}
-        distance = {(sx, sy 0}
+        m, n l..(maze), l..(maze[0])
+        sx, sy ball
+        tx, ty hole
+        heap [(sx, sy)]
+        paths {(sx, sy []}
+        distance {(sx, sy 0}
 
         w.... heap:
-            x, y = heapq.heappop(heap)
+            x, y heapq.heappop(heap)
 
             ___ dx, dy, dn __ (
                 (-1, 0, 'u'), (1, 0, 'd'),
                 (0, -1, 'l'), (0, 1, _,
 
-                _x = x + dx
-                _y = y + dy
+                _x x + dx
+                _y y + dy
 
                 w.... (
                     0 <_ _x < m a.. 0 <_ _y < n a..
@@ -133,7 +133,7 @@ c_ Solution2:
                     _x -_ dx
                     _y -_ dy
 
-                _step = distance[x, y] + a..(_x - x) + a..(_y - y)
+                _step distance[x, y] + a..(_x - x) + a..(_y - y)
 
                 __ (_x, _y) __ distance a.. _step > distance[_x, _y]:
                     _____
@@ -141,8 +141,8 @@ c_ Solution2:
                 __ (_x, _y) __ paths a.. paths[x, y] + [dn] > paths[_x, _y]:
                     _____
 
-                distance[_x, _y] = _step
-                paths[_x, _y] = paths[x, y] + [dn]
+                distance[_x, _y] _step
+                paths[_x, _y] paths[x, y] + [dn]
                 heapq.heappush(heap, (_x, _y
 
         r.. ''.j..(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND

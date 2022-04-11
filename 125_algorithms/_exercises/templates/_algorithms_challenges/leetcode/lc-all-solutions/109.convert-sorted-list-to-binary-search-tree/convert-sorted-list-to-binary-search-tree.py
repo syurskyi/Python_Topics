@@ -27,6 +27,6 @@ c_ Solution(o..
       root  TreeNode(slow.val)
       __ pre:
         pre.next  N..
-        root.left = sortedListToBST(head)
-      root.right = sortedListToBST(slow.next)
+        root.left sortedListToBST(head)
+      root.right sortedListToBST(slow.next)
       r.. root

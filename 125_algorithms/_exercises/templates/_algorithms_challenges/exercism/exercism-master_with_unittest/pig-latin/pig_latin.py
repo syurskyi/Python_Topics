@@ -3,9 +3,9 @@ _______ s__
 
 c_ PigLatinTranslator:
 
-    alpha = s..(s__.a..)
-    vowels = s..( 'a', 'e', 'i', 'o', 'u' )
-    consonants = alpha - vowels
+    alpha s..(s__.a..)
+    vowels s..( 'a', 'e', 'i', 'o', 'u' )
+    consonants alpha - vowels
 
     @classmethod
     ___ translate_phrase(cls, phrase

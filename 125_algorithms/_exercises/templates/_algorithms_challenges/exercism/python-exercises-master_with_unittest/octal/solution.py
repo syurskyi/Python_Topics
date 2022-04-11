@@ -1,5 +1,5 @@
 ___ parse_octal(d..
-    d.. = _validate_octal(d..)
+    d.. _validate_octal(d..)
     r.. s..(i..(digit) * 8 ** i
                ___ (i, digit) __ e..(r..(d..)))
 

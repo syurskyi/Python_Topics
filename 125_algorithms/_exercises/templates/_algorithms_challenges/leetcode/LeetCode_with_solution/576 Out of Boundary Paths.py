@@ -25,8 +25,8 @@ Once you move the ball out of boundary, you cannot move it back.
 The length and height of the grid is in range [1,50].
 N is in range [0,50].
 """
-MOD = 10 ** 9 + 7
-dirs = ((0, 1), (0, -1), (1, 0), (-1, 0
+MOD 10 ** 9 + 7
+dirs ((0, 1), (0, -1), (1, 0), (-1, 0
 
 
 c_ Solution:
@@ -36,22 +36,22 @@ c_ Solution:
         let F[i][j] be the number of paths to reach i, j
         F_new[i][j] can be constructed
         """
-        ret = 0
-        F = [[0 ___ _ __ r..(n)] ___ _ __ r..(m)]
-        F[r][c] = 1
+        ret 0
+        F [[0 ___ _ __ r..(n)] ___ _ __ r..(m)]
+        F[r][c] 1
         ___ _ __ r..(N  # epoch
-            F_new = [[0 ___ _ __ r..(n)] ___ _ __ r..(m)]
+            F_new [[0 ___ _ __ r..(n)] ___ _ __ r..(m)]
             ___ i __ r..(m
                 ___ j __ r..(n
                     ___ di, dj __ dirs:
-                        I = i + di
-                        J = j + dj
+                        I i + di
+                        J j + dj
                         __ 0 <_ I < m a.. 0 <_ J < n:
-                            F_new[I][J] = (F_new[I][J] + F[i][j]) % MOD
+                            F_new[I][J] (F_new[I][J] + F[i][j]) % MOD
                         ____
-                            ret = (ret + F[i][j]) % MOD
+                            ret (ret + F[i][j]) % MOD
 
-            F = F_new
+            F F_new
 
         r.. ret
 

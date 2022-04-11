@@ -1,4 +1,4 @@
-IMPOSSIBLE = 'Mission impossible. No one can contribute.'
+IMPOSSIBLE 'Mission impossible. No one can contribute.'
 
 
 ___ max_fund(village
@@ -7,23 +7,23 @@ ___ max_fund(village
     # return total, starting, ending
     
 
-    best_sum = current_sum =  0
+    best_sum current_sum =  0
 
-    best_start = best_end = current_start= current_end = -1
+    best_start best_end current_start= current_end -1
 
     ___ i,value __ e..(village
-        value = village[i]
+        value village[i]
         __ value >_ current_sum + value:
-            current_start= current_end = i
-            current_sum = value
+            current_start= current_end i
+            current_sum value
         ____
             current_sum += value
             current_end += 1
 
 
         __ current_sum > best_sum:
-            best_sum = current_sum
-            best_start,best_end = current_start,current_end
+            best_sum current_sum
+            best_start,best_end current_start,current_end
 
 
     __ best_sum __ 0:

@@ -15,13 +15,13 @@ c_ Solution(o..
 
       ___ i __ r..(start, 10
         __ visited[i] __ 0:
-          visited[i] = 1
+          visited[i] 1
           p...a..(i)
           dfs(k, i + 1, p.., subsum - i, res, visited)
-          visited[i] = 0
+          visited[i] 0
           p...p.. )
 
-    visited = [0] * 10
+    visited [0] * 10
     res    # list
     dfs(k, 1, [], n, res, visited)
     r.. res

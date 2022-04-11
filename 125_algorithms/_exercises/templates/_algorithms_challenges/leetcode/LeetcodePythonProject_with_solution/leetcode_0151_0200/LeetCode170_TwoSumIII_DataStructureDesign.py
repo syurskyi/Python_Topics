@@ -19,7 +19,7 @@ c_ TwoSum(o..
         __ number __ elements:
             elements[number] += 1
         ____
-            elements[number] = 1
+            elements[number] 1
 
     ___ find  value
         """
@@ -28,7 +28,7 @@ c_ TwoSum(o..
         :rtype: bool
         """
         ___ num __ elements:
-            target = value-num
+            target value-num
             __ target __ elements:
                 __ target __ num a.. elements[target]<2:
                     _____

@@ -7,7 +7,7 @@ _______ p__
 
 ____ count_down _______ count_down
 
-DEFAULT_EXPECTED_OUTPUT = '1234\n123\n12\n1\n'
+DEFAULT_EXPECTED_OUTPUT '1234\n123\n12\n1\n'
 
 
 ___ test_code_uses_singledispatch_decorator
@@ -28,7 +28,7 @@ ___ test_code_uses_singledispatch_decorator
 ])
 ___ test_count_down_good_inputs(input_argument, capfd
     count_down(input_argument)
-    output = ?.r .. 0]
+    output ?.r .. 0]
     ... output __ DEFAULT_EXPECTED_OUTPUT
 
 
@@ -43,8 +43,8 @@ ___ test_count_down_bad_inputs(input_argument, capfd
 
 
 ___ test_count_down_float(capfd
-    e.. = '12.34\n12.3\n12.\n12\n1\n'
-    number = 12.34
+    e.. '12.34\n12.3\n12.\n12\n1\n'
+    number 12.34
     count_down(number)
-    output = ?.r .. 0]
+    output ?.r .. 0]
     ... output __ e..

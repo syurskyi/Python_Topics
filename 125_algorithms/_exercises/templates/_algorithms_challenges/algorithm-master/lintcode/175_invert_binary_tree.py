@@ -22,4 +22,4 @@ c_ Solution:
         divide_conquer(node.left)
         divide_conquer(node.right)
 
-        node.left, node.right = node.right, node.left
+        node.left, node.right node.right, node.left

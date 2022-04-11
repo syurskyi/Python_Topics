@@ -13,7 +13,7 @@ c_ Solution:
 
         minheap    # list
         maxheap    # list
-        median = 0
+        median 0
 
         ___ num __ nums:
             __ num < median:
@@ -28,9 +28,9 @@ c_ Solution:
                 heapq.heappush(minheap, -heapq.heappop(maxheap
 
             __ maxheap:
-                median = -maxheap[0]
+                median -maxheap[0]
             ____
-                median = 0
+                median 0
 
             ans.a..(median)
 

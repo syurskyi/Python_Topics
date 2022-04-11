@@ -21,7 +21,7 @@ n = 9,
 Output:
 6
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -33,10 +33,10 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        remain = n
-        head = 1
-        step = 1
-        from_left = T..
+        remain n
+        head 1
+        step 1
+        from_left T..
         w.... remain > 1:
             __ from_left:
                 head += step
@@ -45,6 +45,6 @@ c_ Solution(o..
 
             step *= 2
             remain /= 2
-            from_left = n.. from_left
+            from_left n.. from_left
 
         r.. head

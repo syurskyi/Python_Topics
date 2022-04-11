@@ -10,23 +10,23 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        nums = s..(nums)
-        maxLen = 0
+        nums s..(nums)
+        maxLen 0
         ___ x __ nums:
             __ x-1 n.. __ nums:
-                y = x+1
+                y x+1
                 w.... y __ nums:
                     y+=1
-                maxLen = m..(y-x, maxLen)
+                maxLen m..(y-x, maxLen)
         r.. maxLen
     
     ___ test
-        testCases = [
+        testCases [
             [100, 4, 200, 1, 3, 2],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums
-            result = longestConsecutive(nums)
+            result longestConsecutive(nums)
             print('result: %s' % (result
             print('-='*20+'-')
 

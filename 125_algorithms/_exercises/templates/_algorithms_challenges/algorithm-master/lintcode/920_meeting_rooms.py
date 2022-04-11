@@ -26,7 +26,7 @@ c_ Solution:
 
         timeline.s..()
 
-        cnt = 0
+        cnt 0
 
         ___ t__, is_start __ timeline:
             __ is_start:

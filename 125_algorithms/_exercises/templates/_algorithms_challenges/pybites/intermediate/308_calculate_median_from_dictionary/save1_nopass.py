@@ -8,9 +8,9 @@ ___ calc_median_from_dict(d: d..) __ f__:
     Example:
     {1: 2, 3: 1, 4: 2} -> [1, 1, 3, 4, 4] --> 3 is median
     """
-    values_sorted = d..(OrderedDict(s..(d.i.., key=l.... t: t[0])))
-    length = l..(values_sorted)
-    mid = (length - 1) / 2
+    values_sorted d..(OrderedDict(s..(d.i.., key=l.... t: t[0])))
+    length l..(values_sorted)
+    mid (length - 1) / 2
     __ length % 2 __ 0 o. length __ 1:
         r.. median(values_sorted)
     ____

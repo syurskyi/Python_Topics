@@ -7,10 +7,10 @@ ___ nth_prime(n
         r.. V...('The parameter `n` has to be a positive number.')
 
     known    # list
-    candidates = prime_candidates()
+    candidates prime_candidates()
 
     ___ is_prime(m
-        sqrt_m = sqrt(m)
+        sqrt_m sqrt(m)
         ___ k __ known:
             __ k > sqrt_m:
                 r.. T..
@@ -19,7 +19,7 @@ ___ nth_prime(n
         r.. T..
 
     w.... l..(known) < n:
-        x = next(candidates)
+        x next(candidates)
         __ is_prime(x
             known.a..(x)
 

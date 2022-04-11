@@ -10,15 +10,15 @@ c_ Solution:
         :type b: str
         :rtype: str, 'NO' or 'YES'
         """
-        RES = ('NO', 'YES')
+        RES ('NO', 'YES')
 
         __ a __ b __ '':
             r.. RES[1]
 
-        BACK = '<'
-        m, n = l..(a), l..(b)
-        i, j = m - 1, n - 1
-        acnt = bcnt = 0  # count the backspace in both a and b
+        BACK '<'
+        m, n l..(a), l..(b)
+        i, j m - 1, n - 1
+        acnt bcnt 0  # count the backspace in both a and b
 
         w.... i >_ 0 a.. j >_ 0:
             w.... i >_ 0 a.. (a[i] __ BACK o. acnt
@@ -56,14 +56,14 @@ c_ Solution:
         :type b: str
         :rtype: str, 'NO' or 'YES'
         """
-        RES = ('NO', 'YES')
+        RES ('NO', 'YES')
 
         __ a __ '' a.. b __ '':
             r.. RES[1]
         __ a __ N.. o. b __ N..
             r.. RES[0]
 
-        RM = '<'
+        RM '<'
         stack    # list
 
         ___ c __ a:

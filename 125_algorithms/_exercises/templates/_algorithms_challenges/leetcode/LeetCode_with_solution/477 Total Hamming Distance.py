@@ -34,9 +34,9 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        ret = 0
+        ret 0
         w.... any(nums  # any not 0
-            z, o = 0, 0
+            z, o 0, 0
             ___ i __ r..(l..(nums:
                 __ nums[i] & 1 __ 0:
                     o += 1

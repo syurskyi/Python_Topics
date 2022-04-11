@@ -4,11 +4,11 @@ c_ Solution(o..
     :type s: str
     :rtype: bool
     """
-    evenCount = 0
-    oddCount = 0
+    evenCount 0
+    oddCount 0
     d    # dict
     ___ c __ s:
-      d[c] = d.g.. c, 0) + 1
+      d[c] d.g.. c, 0) + 1
     ___ k __ d:
       __ d[k] % 2 __ 1:
         oddCount += 1

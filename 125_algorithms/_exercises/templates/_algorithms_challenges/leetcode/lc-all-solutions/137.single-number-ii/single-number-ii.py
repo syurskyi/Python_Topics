@@ -6,8 +6,8 @@ c_ Solution(o..
     """
 
     ___ singleNumberK(nums, k
-      ret = 0
-      count = [0] * 32
+      ret 0
+      count [0] * 32
       ___ i __ r..(0, 32
         ___ num __ nums:
           __ num & (1 << i

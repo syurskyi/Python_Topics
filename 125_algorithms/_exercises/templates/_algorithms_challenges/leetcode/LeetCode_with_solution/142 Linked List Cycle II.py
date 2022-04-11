@@ -4,12 +4,12 @@ Given a linked list, return the node where the cycle begins. If there is no cycl
 Follow up:
 Can you solve it without using extra space?
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 c_ Solution:
@@ -55,25 +55,25 @@ c_ Solution:
         """
 
         # find cycle
-        hare = head
-        tortoise = head
-        flag = F..
+        hare head
+        tortoise head
+        flag F..
         w.... hare a.. hare.next a.. tortoise:
-            hare = hare.next.next
-            tortoise = tortoise.next
+            hare hare.next.next
+            tortoise tortoise.next
             __ hare__tortoise:
-                flag = T..
+                flag T..
                 _____
 
         __ n.. flag:
             r.. N..
 
         # run more x steps
-        cur = head
+        cur head
         w.... cur:
             __ cur__tortoise:
                 _____
-            cur = cur.next
-            tortoise = tortoise.next
+            cur cur.next
+            tortoise tortoise.next
 
         r.. cur

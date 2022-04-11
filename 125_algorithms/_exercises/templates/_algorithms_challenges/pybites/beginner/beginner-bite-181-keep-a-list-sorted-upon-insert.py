@@ -40,7 +40,7 @@ c_ O..:
         r.. ', '.j..(s..(num) ___ num __ _numbers)
 
 
-ol = O..()
+ol O..()
 ol.add(4)
 print(ol.-s
 ol.add(1)

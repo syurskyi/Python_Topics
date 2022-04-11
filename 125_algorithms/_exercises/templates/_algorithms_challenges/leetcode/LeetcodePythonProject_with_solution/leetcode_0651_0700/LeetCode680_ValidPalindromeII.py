@@ -11,20 +11,20 @@ c_ Solution(o..
         """
         __ n.. s:
             r.. T..
-        i, j = 0, l..(s)-1
+        i, j 0, l..(s)-1
         w.... i < j a.. s[i] __ s[j]:
             i += 1
             j -_ 1
         __ i >_ j:
             r.. T..
-        i0, j0 = i, j
+        i0, j0 i, j
         i += 1
         w.... i < j a.. s[i] __ s[j]:
             i += 1
             j -_ 1
         __ i >_ j:
             r.. T..
-        i, j = i0, j0
+        i, j i0, j0
         j -_ 1
         w.... i < j a.. s[i] __ s[j]:
             i += 1
@@ -34,13 +34,13 @@ c_ Solution(o..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             'aba',
             'abca',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = validPalindrome(s)
+            result validPalindrome(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

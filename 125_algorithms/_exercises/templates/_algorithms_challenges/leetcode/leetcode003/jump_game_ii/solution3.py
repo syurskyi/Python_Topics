@@ -22,23 +22,23 @@ c_ Solution(o..
 
         Time Limit Exceeded
         """
-        n = l..(nums)
+        n l..(nums)
         # t[i] means mininum number of jumps to nums[i]
-        t = [-1 ___ i __ r..(n)]
-        t[0] = 0
+        t [-1 ___ i __ r..(n)]
+        t[0] 0
         __ n __ 1:
             r.. 1
         ___ i __ r..(n
-            steps = nums[i]
-            end = m..(i + steps, n - 1)
+            steps nums[i]
+            end m..(i + steps, n - 1)
             ___ j __ r..(i + 1, end + 1
                 __ t[j] __ -1:
-                    t[j] = t[i] + 1
+                    t[j] t[i] + 1
                 ____
-                    t[j] = m..(t[i] + 1, t[j])
+                    t[j] m..(t[i] + 1, t[j])
         r.. t[-1]
 
 
-a1 = [2, 3, 1, 1, 4]
-s = Solution()
+a1 [2, 3, 1, 1, 4]
+s Solution()
 print(s.jump(a1

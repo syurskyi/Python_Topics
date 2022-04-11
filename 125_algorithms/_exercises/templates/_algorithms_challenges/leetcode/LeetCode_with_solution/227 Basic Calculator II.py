@@ -14,7 +14,7 @@ Note: Do not use the eval built-in library function.
 
 
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -23,15 +23,15 @@ c_ Solution:
         :type s: str
         :rtype: int
         """
-        lst = p..(s)
-        post = infix2postfix(lst)
+        lst p..(s)
+        post infix2postfix(lst)
         r.. eval_postfix(post)
 
     ___ p..  s
         """
         return tokens
         """
-        i = 0
+        i 0
         ret    # list
         w.... i < l..(s
             __ s[i] __ " ":
@@ -42,7 +42,7 @@ c_ Solution:
                 i += 1
 
             ____
-                b = i
+                b i
                 w.... i < l..(s) a.. s[i].i..
                     i += 1
                 ret.a..(s[b:i])
@@ -86,8 +86,8 @@ c_ Solution:
         stk    # list
         ___ elt __ post:
             __ elt __ ("+", "-", "*", "/"
-                b = i..(stk.pop
-                a = i..(stk.pop
+                b i..(stk.pop
+                a i..(stk.pop
                 __ elt __ "+":
                     stk.a..(a+b)
                 ____ elt __ "-":

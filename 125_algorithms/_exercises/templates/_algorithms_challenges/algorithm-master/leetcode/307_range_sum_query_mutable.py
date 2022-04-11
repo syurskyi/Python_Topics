@@ -17,9 +17,9 @@ c_ NumArray:
         __ n.. nums:
             r..
 
-        n = l..(nums)
-        bits = [0] * (n + 1)  # bits
-        incr = [0] * (n + 1)  # increments
+        n l..(nums)
+        bits [0] * (n + 1)  # bits
+        incr [0] * (n + 1)  # increments
 
         ___ i __ r..(n
             update(i, nums[i])
@@ -33,9 +33,9 @@ c_ NumArray:
         It must increase `i` here, since this api is public,
         so look from outside, the `i` is just the index of `nums`
         """
-        j = i + 1
-        delta = val - incr[j]
-        incr[j] = val
+        j i + 1
+        delta val - incr[j]
+        incr[j] val
 
         w.... j < l..(incr
             bits[j] += delta
@@ -50,8 +50,8 @@ c_ NumArray:
         r.. s..(j + 1) - s..(i)
 
     ___ s..  i
-        res = 0
-        j = i
+        res 0
+        j i
 
         w.... j > 0:
             res += bits[j]

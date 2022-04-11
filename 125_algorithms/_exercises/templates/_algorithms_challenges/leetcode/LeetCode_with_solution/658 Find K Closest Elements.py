@@ -25,16 +25,16 @@ c_ Solution:
         """
         binary search without two pointers scanning
         """
-        n = l..(A)
-        lo = 0
-        hi = n - k
+        n l..(A)
+        lo 0
+        hi n - k
         w.... lo < hi:
-            mid = (lo + hi) // 2
+            mid (lo + hi) // 2
             __ a..(x - A[mid]) > a..(A[mid + k] - x
                 # better to have A[mid+k] rather than A[mid]
-                lo = mid + 1
+                lo mid + 1
             ____
-                hi = mid
+                hi mid
 
         r.. A[lo:lo+k]
 
@@ -43,11 +43,11 @@ c_ Solution:
         input sorted arrya
         two pointers
         """
-        n = l..(A)
-        idx = bisect_left(A, x)
-        ret = d..()
-        i = idx - 1
-        j = idx
+        n l..(A)
+        idx bisect_left(A, x)
+        ret d..()
+        i idx - 1
+        j idx
         w.... k:
             __ 0 <_ i < n a.. 0 <_ j < n:
                 __ a..(A[i] - x) <_ a..(A[j] - x

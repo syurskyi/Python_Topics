@@ -3,7 +3,7 @@ ____ p.. _______ P..
 ____ u__.r.. _______ u..
 
 tmp  P..(__.g..("TMP", "/tmp"
-timings_log = tmp / 'pytest_timings.out'
+timings_log tmp / 'pytest_timings.out'
 __ n.. timings_log.exists
     u..(
         'https://bites-data.s3.us-east-2.amazonaws.com/pytest_timings.out',
@@ -18,14 +18,14 @@ ___ get_bite_with_fastest_avg_test(timings: l..) __ s..:
 
     fastest_bite    # list
     ___ test __ timings:
-        test_split = test.s..(" ")
+        test_split test.s..(" ")
 
         __ l..(test_split) != 8:
             _____
         
-        bite_number = test_split[0]
-        bite_tests = i..(test_split[2])
-        bite_time = f__(test_split[5])
+        bite_number test_split[0]
+        bite_tests i..(test_split[2])
+        bite_time f__(test_split[5])
         fastest_bite.a..([bite_number, (bite_time/bite_tests)])
 
     r.. s..(fastest_bite, key=l.... x: x[1])[0][0]

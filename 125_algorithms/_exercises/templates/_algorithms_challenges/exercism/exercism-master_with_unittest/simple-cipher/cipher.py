@@ -4,10 +4,10 @@ _______ s__
 
 c_ Cipher:
 
-    random_key_length = 100
+    random_key_length 100
 
     ___ - , key_ N..
-        key = key __ key __ n.. N.. ____ generate_random_key()
+        key key __ key __ n.. N.. ____ generate_random_key()
         __ n.. valid_key
             r.. V...()
 
@@ -42,7 +42,7 @@ c_ Cipher:
 
 c_ Caesar:
 
-    cipher = Cipher('d')
+    cipher Cipher('d')
 
     @classmethod
     ___ encode(cls, phrase

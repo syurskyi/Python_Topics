@@ -14,13 +14,13 @@ c_ SnakeGame(o..
     :type height: int
     :type food: List[List[int]]
     """
-    snake = d..([(0, 0)])
-    snakeSet = s..([(0, 0)])
-    width = width
-    height = height
-    food = d..(food)
-    directions = {"U": (-1, 0), "D": (1, 0), "L": (0, -1), "R": (0, 1)}
-    score = 0
+    snake d..([(0, 0)])
+    snakeSet s..([(0, 0)])
+    width width
+    height height
+    food d..(food)
+    directions {"U": (-1, 0), "D": (1, 0), "L": (0, -1), "R": (0, 1)}
+    score 0
 
   ___ move  direction
     """
@@ -33,8 +33,8 @@ c_ SnakeGame(o..
     """
     __ direction n.. __ directions:
       r.. -1
-    di, dj = directions[direction]
-    ni, nj = snake[0][0] + di, snake[0][1] + dj
+    di, dj directions[direction]
+    ni, nj snake[0][0] + di, snake[0][1] + dj
 
     __ ni < 0 o. ni >_ height o. nj < 0 o. nj >_ width:
       r.. -1

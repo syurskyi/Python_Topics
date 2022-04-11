@@ -4,18 +4,18 @@ c_ Solution(o..
     :type str: str
     :rtype: int
     """
-    s = s.s..
-    sign = 1
+    s s.s..
+    sign 1
     __ n.. s:
       r.. 0
     __ s[0] __ ["+", "-"]:
       __ s[0] __ "-":
-        sign = -1
-      s = s[1:]
-    ans = 0
+        sign -1
+      s s[1:]
+    ans 0
     ___ c __ s:
       __ c.i..
-        ans = ans * 10 + i..(c)
+        ans ans * 10 + i..(c)
       ____
         _____
     ans *= sign

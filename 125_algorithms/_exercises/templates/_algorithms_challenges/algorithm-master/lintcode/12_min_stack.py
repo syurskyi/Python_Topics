@@ -20,7 +20,7 @@ c_ MinStack:
         __ n.. stack:
             r.. -1
 
-        x = stack.p.. )
+        x stack.p.. )
 
         __ mins a.. x __ mins[-1]:
             mins.p.. )

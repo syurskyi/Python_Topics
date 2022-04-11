@@ -14,14 +14,14 @@ Note: Recursive solution is trivial, could you do it iteratively?
 
 confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on OJ.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution(o..
@@ -30,23 +30,23 @@ c_ Solution(o..
         Morris Traversal
         """
         ret    # list
-        cur = root
+        cur root
         w.... cur:
             __ n.. cur.left:
                 ret.a..(cur.val)
-                cur = cur.right
+                cur cur.right
             ____
-                pre = cur.left
+                pre cur.left
                 w.... pre.right a.. pre.right != cur:
-                    pre = pre.right
+                    pre pre.right
 
                 __ n.. pre.right:
-                    pre.right = cur
-                    cur = cur.left
+                    pre.right cur
+                    cur cur.left
                 ____
-                    pre.right = N..
+                    pre.right N..
                     ret.a..(cur.val)
-                    cur = cur.right
+                    cur cur.right
 
         r.. ret
 
@@ -85,15 +85,15 @@ c_ Solution(o..
         __ n.. root:
             r..
 
-        cur = root
+        cur root
         stk    # list
         w.... stk o. cur:
             w.... cur:
                 stk.a..(cur)
-                cur = cur.left
-            cur = stk.p.. )  # left_most
+                cur cur.left
+            cur stk.p.. )  # left_most
             lst.a..(cur.val)
-            cur = cur.right
+            cur cur.right
             # if cur.right:  # should go to next iteration
             #     cur = cur.right
             #     stk.append(cur)

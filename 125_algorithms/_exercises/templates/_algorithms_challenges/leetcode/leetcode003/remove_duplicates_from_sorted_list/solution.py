@@ -23,13 +23,13 @@ c_ Solution(o..
             r.. N..
         __ head.next __ N..
             r.. head
-        last = head
-        current = head.next
+        last head
+        current head.next
         w.... current __ n.. N..
-            next_node = current.next
+            next_node current.next
             __ current.val __ last.val:
-                last.next = next_node
+                last.next next_node
             ____
-                last = current
-            current = next_node
+                last current
+            current next_node
         r.. head

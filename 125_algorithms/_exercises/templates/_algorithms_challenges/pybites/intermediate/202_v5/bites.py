@@ -3,7 +3,7 @@ ____ p.. _______ P..
 ____ u__.r.. _______ u..
 
 tmp  P..('/tmp')
-stats = tmp / 'bites.csv'
+stats tmp / 'bites.csv'
 
 __ n.. stats.exists
     u..('https://bit.ly/2MQyqXQ', stats)
@@ -22,5 +22,5 @@ ___ get_most_complex_bites(N=10, stats=stats
 
 
 __ _____ __ _____
-    res = get_most_complex_bites()
+    res get_most_complex_bites()
     print(res)

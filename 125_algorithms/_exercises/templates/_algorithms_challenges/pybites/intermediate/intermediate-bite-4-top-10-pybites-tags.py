@@ -18,16 +18,16 @@ _______ u__.r..
 _______ __
 
 # prep
-DIR = __.g..('TMP', '/tmp')
-FILENAME = "feed.txt"
-tempfile = __.p...j..(DIR, FILENAME)
+DIR __.g..('TMP', '/tmp')
+FILENAME "feed.txt"
+tempfile __.p...j..(DIR, FILENAME)
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile
 )
 
 w__ o.. ? __ f
-    content = f.r...l..
+    content f.r...l..
 
 
 # start coding
@@ -35,8 +35,8 @@ w__ o.. ? __ f
 ___ get_pybites_top_tags(n=10
     """use Counter to get the top 10 PyBites tags from the feed
        data already loaded into the content variable"""
-    m.. = __.f..(r'<category>([a-z]+)<\/category>', content)
-    c = C..(m..)
+    m.. __.f..(r'<category>([a-z]+)<\/category>', content)
+    c C..(m..)
     r..(c.most_common(10
 
 get_pybites_top_tags()

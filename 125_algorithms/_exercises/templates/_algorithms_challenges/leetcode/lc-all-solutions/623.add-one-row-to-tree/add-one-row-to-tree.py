@@ -14,19 +14,19 @@ c_ Solution(o..
     :rtype: TreeNode
     """
     # BFS is even better because it terminates much earlier
-    dummy = TreeNode(-1)
-    dummy.left = root
-    stack = [(1, dummy, 0)]
+    dummy TreeNode(-1)
+    dummy.left root
+    stack [(1, dummy, 0)]
     w.... stack:
-      p, node, h = stack.p.. )
+      p, node, h stack.p.. )
       __ n.. node:
         _____
       __ p __ 1:
         stack.e.. [(1, node.right, h + 1), (1, node.left, h + 1), (0, node, h + 1)])
       ____ h __ d:
-        left = node.left
-        right = node.right
-        node.left, node.right = map(TreeNode, (v, v
-        node.left.left = left
-        node.right.right = right
+        left node.left
+        right node.right
+        node.left, node.right map(TreeNode, (v, v
+        node.left.left left
+        node.right.right right
     r.. dummy.left

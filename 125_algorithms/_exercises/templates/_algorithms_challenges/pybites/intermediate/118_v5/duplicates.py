@@ -10,7 +10,7 @@ ___ get_duplicate_indices(words
        return [0, 1]:
        ['is', 'it', 'true', 'or', 'is', 'it', 'not?'] => [0, 1]
        Make sure the returning list is unique and sorted in ascending order."""
-    wordlist = d..(l..)
+    wordlist d..(l..)
     ___ pos, word __ e..(words
         wordlist[word].a..(pos)
     r.. s..(p[0] ___ p __ wordlist.v.. __ l..(p) > 1)

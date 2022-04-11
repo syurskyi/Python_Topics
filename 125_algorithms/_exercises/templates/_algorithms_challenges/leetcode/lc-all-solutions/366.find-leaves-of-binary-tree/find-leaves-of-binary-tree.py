@@ -17,14 +17,14 @@ c_ Solution(o..
     ___ helper(p, res
       __ n.. p:
         r.. 0
-      left = helper(p.left, res)
-      right = helper(p.right, res)
-      depth = m..(left, right) + 1
+      left helper(p.left, res)
+      right helper(p.right, res)
+      depth m..(left, right) + 1
       res[depth].a..(p.val)
       r.. depth
 
     ans    # list
-    res = c...d..(l..)
+    res c...d..(l..)
     helper(root, res)
     ___ i __ r..(1, l..(res) + 1
       ans.a..(res[i])

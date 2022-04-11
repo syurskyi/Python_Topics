@@ -23,17 +23,17 @@ c_ Solution:
         """
         https://leetcode.com/problems/set-mismatch/discuss/113999/C%2B%2B-True-O(1)-space-O(n)-time-(No-input-modifying)-with-clear-explanation
         """
-        n = l..(nums)
-        acc0 = 0  # a ^ b
+        n l..(nums)
+        acc0 0  # a ^ b
         ___ i __ r..(n
             acc0 ^= nums[i]
             acc0 ^= i + 1
 
-        first_1 = acc0 & - acc0  # 2's complement, invert the bit left to the first 1 from the right
+        first_1 acc0 & - acc0  # 2's complement, invert the bit left to the first 1 from the right
         # go through the arrays once again and split them in 2 categories, if they have that bit set or not
         # xor them to get a or b
-        acc1 = 0
-        acc2 = 0
+        acc1 0
+        acc2 0
         ___ i __ r..(n
             __ nums[i] & first_1:
                 acc1 ^= nums[i]

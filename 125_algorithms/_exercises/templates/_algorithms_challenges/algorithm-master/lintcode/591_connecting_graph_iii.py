@@ -6,14 +6,14 @@ c_ ConnectingGraph3:
         __ n < 1:
             r..
         nodes    # dict
-        count = n
+        count n
         ___ i __ r..(n
-            nodes[i + 1] = i + 1
+            nodes[i + 1] i + 1
 
     ___ find  a
         __ nodes[a] __ a:
             r.. a
-        nodes[a] = find(nodes[a])
+        nodes[a] find(nodes[a])
         r.. nodes[a]
 
     """
@@ -22,10 +22,10 @@ c_ ConnectingGraph3:
     @return: nothing
     """
     ___ connect  a, b
-        root_a = find(a)
-        root_b = find(b)
+        root_a find(a)
+        root_b find(b)
         __ root_a != root_b:
-            nodes[root_a] = root_b
+            nodes[root_a] root_b
             count -_ 1
 
     """

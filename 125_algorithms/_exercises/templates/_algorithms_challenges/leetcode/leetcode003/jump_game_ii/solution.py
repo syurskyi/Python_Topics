@@ -20,30 +20,30 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        n = l..(nums)
+        n l..(nums)
         __ n __ 1:
             r.. 0
-        start = 1
-        end = nums[0]  # `end` is nums[start - 1]
-        res = 1  # At least one step if len(nums) > 1
-        reached = F..
+        start 1
+        end nums[0]  # `end` is nums[start - 1]
+        res 1  # At least one step if len(nums) > 1
+        reached F..
         w.... end < n - 1:
             res += 1
-            max_end = end  # `end` for the next loop
+            max_end end  # `end` for the next loop
             ___ i __ r..(start, end + 1
                 __ i + nums[i] > max_end:
-                    max_end = i + nums[i]
-                    reached = T..
+                    max_end i + nums[i]
+                    reached T..
             __ n.. reached:
                 r.. -1
-            reached = F..
-            start = end + 1
-            end = max_end
+            reached F..
+            start end + 1
+            end max_end
         r.. res
 
 
-s = Solution()
-a1 = [2, 3, 1, 1, 4]
-a2 = [3, 2, 1, 0, 4]
+s Solution()
+a1 [2, 3, 1, 1, 4]
+a2 [3, 2, 1, 0, 4]
 print s.jump(a1)
 print s.jump(a2)

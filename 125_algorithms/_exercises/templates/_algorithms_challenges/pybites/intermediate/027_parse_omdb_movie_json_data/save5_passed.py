@@ -17,7 +17,7 @@ ___ get_movie_most_nominations(movies: l..) __ s..:
     """Return the movie that had the most nominations"""
     output    # list
     ___ movie __ movies:
-        award_count = movie.g.. 'Title'), i..(movie.g.. 'Awards').s.. [-2])
+        award_count movie.g.. 'Title'), i..(movie.g.. 'Awards').s.. [-2])
         output.a..(award_count)
     output.s..(key=l.... x: x[1], r.._T..
     r.. output[0][0]
@@ -27,7 +27,7 @@ ___ get_movie_longest_runtime(movies: l..) __ s..:
     """Return the movie that has the longest runtime"""
     output    # list
     ___ movie __ movies:
-        runtimes = movie.g.. 'Title'), i..(movie.g.. 'Runtime').s.. [0])
+        runtimes movie.g.. 'Title'), i..(movie.g.. 'Runtime').s.. [0])
         output.a..(runtimes)
     output.s..(key=l.... x: x[1], r.._T..
     r.. output[0][0]

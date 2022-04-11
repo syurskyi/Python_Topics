@@ -15,5 +15,5 @@ c_ Child(Father,Mother
     ___ -s
         r.. 'I am the coolest kid'
 
-person = Father()
+person Father()
 print(person)

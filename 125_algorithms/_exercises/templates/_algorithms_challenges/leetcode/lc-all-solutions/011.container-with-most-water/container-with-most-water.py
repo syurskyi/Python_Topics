@@ -4,10 +4,10 @@ c_ Solution(o..
     :type height: List[int]
     :rtype: int
     """
-    ans = left = 0
-    right = l..(height) - 1
+    ans left 0
+    right l..(height) - 1
     w.... left < right:
-      ans = m..(ans, (right - left) * m..(height[left], height[right]
+      ans m..(ans, (right - left) * m..(height[left], height[right]
       __ height[left] <_ height[right]:
         left += 1
       ____

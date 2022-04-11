@@ -21,29 +21,29 @@ c_ Solution:
         :rtype: bool
         """
         stack    # list
-        node = root
-        pre = N..
+        node root
+        pre N..
 
         w.... node o. stack:
             w.... node:
                 stack.a..(node)
-                node = node.left
+                node node.left
 
-            node = stack.p.. )
+            node stack.p.. )
 
             __ pre a.. node.val <_ pre.val:
                 r.. F..
 
-            pre = node
+            pre node
 
-            node = node.right
+            node node.right
 
         r.. T..
 
 
 c_ Solution:
-    ans = T..
-    pre = N..
+    ans T..
+    pre N..
 
     ___ isValidBST  root
         """
@@ -56,10 +56,10 @@ c_ Solution:
         isValidBST(root.left)
 
         __ pre a.. root.val <_ pre.val:
-            ans = F..
+            ans F..
             r.. ans
 
-        pre = root
+        pre root
 
         isValidBST(root.right)
 

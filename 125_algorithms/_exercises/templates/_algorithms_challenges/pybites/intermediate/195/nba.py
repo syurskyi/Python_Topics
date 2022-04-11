@@ -8,26 +8,26 @@ _______ s__
 
 _______ r__
 
-DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
-TMP = P..(__.g..("TMP", "/tmp"
+DATA_URL 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
+TMP P..(__.g..("TMP", "/tmp"
 
-salt = ''.j..(
+salt ''.j..(
     r__.c..(s__.a..) ___ i __ r..(20)
 )
-DB = TMP / f'nba_{salt}.db'
+DB TMP / f'nba_{salt}.db'
 
-Player = n..('Player', ('name year first_year team college active '
+Player n..('Player', ('name year first_year team college active '
                                'games avg_min avg_points'
 
-conn = sqlite3.connect(DB)
-cur = conn.cursor()
+conn sqlite3.connect(DB)
+cur conn.cursor()
 
 
 ___ import_data
     w__ r__.S.. __ session:
-        content = session.g.. DATA_URL).content.d.. 'utf-8')
+        content session.g.. DATA_URL).content.d.. 'utf-8')
 
-    reader = csv.DictReader(content.s.. , delimiter=',')
+    reader csv.DictReader(content.s.. , delimiter=',')
 
     players    # list
     ___ row __ reader:
@@ -56,7 +56,7 @@ import_data()
 ___ player_with_max_points_per_game
     """The player with highest average points per game (don't forget to CAST to
        numeric in your SQL query)"""
-    cursor = cur.execute(
+    cursor cur.execute(
         """
         SELECT 
             name,
@@ -68,7 +68,7 @@ ___ player_with_max_points_per_game
 
 ___ number_of_players_from_duke
     """Return the number of players with college == Duke University"""
-    cursor = cur.execute(
+    cursor cur.execute(
         """
         SELECT
             COUNT(*) AS record_count
@@ -82,7 +82,7 @@ ___ number_of_players_from_duke
 ___ avg_years_active_players_stanford
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
-    cursor = cur.execute(
+    cursor cur.execute(
         """
         SELECT
             AVG(active) AS avg_years
@@ -97,7 +97,7 @@ ___ year_with_most_new_players
     """Return the year with the most new players.
        Hint: you can use GROUP BY on the year column.
     """
-    cursor = cur.execute(
+    cursor cur.execute(
         """
         WITH years_staging AS (
             SELECT

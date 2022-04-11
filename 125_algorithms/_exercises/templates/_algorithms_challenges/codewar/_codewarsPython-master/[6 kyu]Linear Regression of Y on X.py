@@ -1,13 +1,13 @@
 ___ regressionLine(x, y
-    sumSquareX = s..([n**2 ___ n __ x])
-    sumSquareY = s..([n**2 ___ n __ y])
-    sumX = s..(x)
-    sumY = s..(y)
-    sumXY = s..([X*Y ___ X,Y __ z..(x,y)])
-    a = ((sumSquareX*sumY) - (sumX*sumXY / f__(((l..(x) * sumSquareX) - sumX**2
-    b = ((l..(x)*sumXY) - (sumX*sumY / f__(((l..(x)*sumSquareX) - sumX**2
-    a = r..(a,4)
-    b = r..(b,4)
+    sumSquareX s..([n**2 ___ n __ x])
+    sumSquareY s..([n**2 ___ n __ y])
+    sumX s..(x)
+    sumY s..(y)
+    sumXY s..([X*Y ___ X,Y __ z..(x,y)])
+    a ((sumSquareX*sumY) - (sumX*sumXY / f__(((l..(x) * sumSquareX) - sumX**2
+    b ((l..(x)*sumXY) - (sumX*sumY / f__(((l..(x)*sumSquareX) - sumX**2
+    a r..(a,4)
+    b r..(b,4)
     r.. a,b
     
 

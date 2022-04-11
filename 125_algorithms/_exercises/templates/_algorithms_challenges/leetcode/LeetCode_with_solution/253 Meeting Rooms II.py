@@ -6,13 +6,13 @@ _______ heapq
 _______ o..
 
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Interval:
     ___ - , s=0, e=0
-        start = s
-        end = e
+        start s
+        end e
 
 
 c_ Solution(o..
@@ -22,7 +22,7 @@ c_ Solution(o..
         :type intervals: list[Interval]
         :rtype: int
         """
-        maxa = 0
+        maxa 0
 
         intervals.s..(key=operator.attrgetter("start"
         h_end    # list
@@ -31,6 +31,6 @@ c_ Solution(o..
             w.... h_end a.. h_end[0] <_ itvl.start:
                 heapq.heappop(h_end)
 
-            maxa = m..(maxa, l..(h_end
+            maxa m..(maxa, l..(h_end
 
         r.. maxa

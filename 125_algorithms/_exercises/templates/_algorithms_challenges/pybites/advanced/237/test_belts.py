@@ -4,9 +4,9 @@ ____ belts _______ get_belts, TMP
 
 
 ___ get_data(file_no=1, tmp=TMP
-    file_name = f'bite_scores{file_no}.json'
-    file_path = TMP / file_name
-    remote = 'https://bites-data.s3.us-east-2.amazonaws.com/'
+    file_name f'bite_scores{file_no}.json'
+    file_path TMP / file_name
+    remote 'https://bites-data.s3.us-east-2.amazonaws.com/'
     __ n.. file_path.exists
         u.. _*{remote}{file_name}',
                     file_path)
@@ -14,10 +14,10 @@ ___ get_data(file_no=1, tmp=TMP
 
 
 ___ test_data_set1
-    data = get_data(1)
-    a.. = get_belts(data)
+    data get_data(1)
+    a.. get_belts(data)
     # py 3.7 we should be able to rely on ordering
-    e.. = {
+    e.. {
         'white': 'January 23, 2018',
         'yellow': 'June 20, 2018',
         'orange': 'October 07, 2018',
@@ -27,9 +27,9 @@ ___ test_data_set1
 
 
 ___ test_data_set2
-    data = get_data(2)
-    a.. = get_belts(data)
-    e.. = {
+    data get_data(2)
+    a.. get_belts(data)
+    e.. {
         'white': 'January 06, 2018',
         'yellow': 'January 25, 2018',
         'orange': 'February 08, 2018',

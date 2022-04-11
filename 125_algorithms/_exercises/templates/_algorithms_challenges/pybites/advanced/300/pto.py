@@ -3,27 +3,27 @@ ____ d__ _______ date
 ____ dateutil.relativedelta _______ relativedelta,FR,MO
 
 
-ERROR_MSG = (
+ERROR_MSG (
     "Unambiguous value passed, please specify either start_month or show_workdays"
 )
-FEDERAL_HOLIDAYS = (
+FEDERAL_HOLIDAYS (
     date(2020, 9, 7),
     date(2020, 10, 12),
     date(2020, 11, 11),
     date(2020, 11, 26),
     date(2020, 12, 25),
 )
-WFH = (ca__.TUESDAY, ca__.WEDNESDAY)
-WEEKENDS = (ca__.SATURDAY, ca__.SUNDAY)
-AT_HOME = WFH + WEEKENDS
-HOURS = 8
+WFH (ca__.TUESDAY, ca__.WEDNESDAY)
+WEEKENDS (ca__.SATURDAY, ca__.SUNDAY)
+AT_HOME WFH + WEEKENDS
+HOURS 8
 
 
 ___ four_day_weekends $,
-        start_month: i.. = 8,
-        paid_time_off: i.. = 200,
-        year: i.. = 2020,
-        show_workdays: b.. = F..
+        start_month: i.. 8,
+        paid_time_off: i.. 200,
+        year: i.. 2020,
+        show_workdays: b.. F..
     ) __ N..
     """Generates four day weekend report
 
@@ -49,12 +49,12 @@ ___ four_day_weekends $,
     __ args:
         r.. V...(ERROR_MSG)
     ____
-        four_day_weekends = workdays =  0
+        four_day_weekends workdays =  0
         weekend_dates =[]
         workday_dates    # list
-        current = date(year,start_month,1)
+        current date(year,start_month,1)
         current += relativedelta(weekday=FR)
-        first_monday = current + relativedelta(weekday=MO(-1
+        first_monday current + relativedelta(weekday=MO(-1
         __ first_monday.year __ year a.. first_monday.month __ start_month:
             workday_dates.a..(first_monday)
             
@@ -62,13 +62,13 @@ ___ four_day_weekends $,
 
 
         w.... current.year __ year:
-            monday = current + relativedelta(weekday=MO)
-            thursday = current - relativedelta(d.._1)
+            monday current + relativedelta(weekday=MO)
+            thursday current - relativedelta(d.._1)
             __ thursday.year __ year  a.. thursday n.. __ FEDERAL_HOLIDAYS:
                 workday_dates.a..(thursday)
 
 
-            dates = [current,monday]
+            dates [current,monday]
             __ monday.year __ year:
                 __ a..(date n.. __ FEDERAL_HOLIDAYS ___ date __ dates
                     weekend_dates.a..((current,monday
@@ -91,26 +91,26 @@ ___ four_day_weekends $,
         
 
 
-        last_thursday = current - relativedelta(d.._1)
+        last_thursday current - relativedelta(d.._1)
         __ last_thursday.year __ year a.. last_thursday n.. __ FEDERAL_HOLIDAYS:
             workday_dates.a..(last_thursday)
-        workdays = l..(workday_dates)
+        workdays l..(workday_dates)
 
 
         
         __ n.. show_workdays:
-            length = l..(s..(paid_time_off
-            number = 24 
-            before_days = paid_time_off//8 
-            new_balance = paid_time_off -  HOURS *  four_day_weekends * 2
-            new_days = a..(new_balance // 8)
-            title = f'{four_day_weekends} Four-Day Weekend{"s" __ four_day_weekends != 1 ____ ""}'
+            length l..(s..(paid_time_off
+            number 24
+            before_days paid_time_off//8
+            new_balance paid_time_off -  HOURS *  four_day_weekends * 2
+            new_days a..(new_balance // 8)
+            title f'{four_day_weekends} Four-Day Weekend{"s" __ four_day_weekends != 1 ____ ""}'
             print _*{title:^{number}}')
             print('='* 24)
 
             labels =  'PTO:','BALANCE:'
-            original = [paid_time_off,new_balance]
-            new = [before_days,new_days]
+            original [paid_time_off,new_balance]
+            new [before_days,new_days]
 
             
             ___ label,value_1,value_2 __ z..(labels,original,new
@@ -120,10 +120,10 @@ ___ four_day_weekends $,
             
 
 
-            start_losing = (four_day_weekends * 2 - before_days)//2
-            date_start_losing = N..
+            start_losing (four_day_weekends * 2 - before_days)//2
+            date_start_losing N..
             __ start_losing > 0:
-                date_start_losing = weekend_dates[start_losing]
+                date_start_losing weekend_dates[start_losing]
             ___ i,(weekend_start,weekend_end) __ e..(weekend_dates
                 print(f"{weekend_start} - {weekend_end}",end='')
                 __ (weekend_start,weekend_end) __ date_start_losing:

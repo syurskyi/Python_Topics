@@ -5,7 +5,7 @@ For example:
 Given n = 13,
 Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -22,14 +22,14 @@ c_ Solution:
         __ n < 1:
             r.. 0
 
-        cnt = 0
-        sig = 1
+        cnt 0
+        sig 1
         w.... n/sig:
-            temp = sig*10
+            temp sig*10
 
-            cur_digit = (n/sig)%10
-            hi_digit = n/temp
-            lo_digit = n%sig
+            cur_digit (n/sig)%10
+            hi_digit n/temp
+            lo_digit n%sig
 
             __ cur_digit > 1:
                 cnt += (hi_digit+1)*sig
@@ -38,6 +38,6 @@ c_ Solution:
             ____
                 cnt += hi_digit*sig
 
-            sig = temp
+            sig temp
 
         r.. cnt

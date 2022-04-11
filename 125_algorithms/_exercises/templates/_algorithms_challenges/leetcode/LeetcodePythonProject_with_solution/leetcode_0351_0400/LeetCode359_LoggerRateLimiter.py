@@ -22,11 +22,11 @@ c_ Logger(o..
         :rtype: bool
         """
         __ message n.. __ hashmap:
-            hashmap[message] = timestamp
+            hashmap[message] timestamp
             r.. T..
         ____
             __ timestamp - hashmap[message] >_ 10:
-                hashmap[message] = timestamp
+                hashmap[message] timestamp
                 r.. T..
             ____
                 r.. F..

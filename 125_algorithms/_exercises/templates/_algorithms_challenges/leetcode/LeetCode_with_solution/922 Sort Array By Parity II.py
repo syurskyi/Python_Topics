@@ -28,12 +28,12 @@ ____ t___ _______ L..
 
 c_ Solution:
     ___ sortArrayByParityII  A: L..[i..]) __ L..[i..]:
-        even_idx = 0
+        even_idx 0
         ___ odd_idx __ r..(1, l..(A), 2
             __ A[odd_idx] % 2 __ 0:
                 w.... A[even_idx] % 2 __ 0:
                     even_idx += 2
-                A[odd_idx], A[even_idx] = A[even_idx], A[odd_idx]
+                A[odd_idx], A[even_idx] A[even_idx], A[odd_idx]
 
         r.. A
 
@@ -41,18 +41,18 @@ c_ Solution:
         """
         in-place two passes
         """
-        closed = -1
-        n = l..(A)
+        closed -1
+        n l..(A)
         ___ i __ r..(n
             __ A[i] % 2 __ 0:
                 closed += 1
-                A[i], A[closed] = A[closed], A[i]
+                A[i], A[closed] A[closed], A[i]
 
-        j = closed + 1
+        j closed + 1
         __ j % 2 __ 1:
             j += 1
         ___ i __ r..(1, closed + 1, 2
-            A[i], A[j] = A[j], A[i]
+            A[i], A[j] A[j], A[i]
             j += 2
 
         r.. A

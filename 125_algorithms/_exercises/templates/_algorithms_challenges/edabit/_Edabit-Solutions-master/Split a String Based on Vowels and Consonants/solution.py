@@ -1,7 +1,7 @@
 ___ s..(txt
-    output = ""
-    output2 = ""
-    vset = {"a","e","i","o","u"}
+    output ""
+    output2 ""
+    vset {"a","e","i","o","u"}
     ___ i __ txt:
         __ i __ vset:
             output += i

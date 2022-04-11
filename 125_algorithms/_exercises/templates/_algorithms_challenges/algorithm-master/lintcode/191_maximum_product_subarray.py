@@ -15,16 +15,16 @@ c_ Solution:
         __ n.. A:
             r.. 0
 
-        ans = Pmin = Pmax = A[0]
+        ans Pmin Pmax A[0]
         ___ i __ r..(1, l..(A:
             """
             adding `A[i]` to reset `min` and `max`
             if its so lowest or highest
             """
-            C = (A[i], Pmin * A[i], Pmax * A[i])
-            Pmin, Pmax = m..(C), m..(C)
+            C (A[i], Pmin * A[i], Pmax * A[i])
+            Pmin, Pmax m..(C), m..(C)
 
             __ Pmax > ans:
-                ans = Pmax
+                ans Pmax
 
         r.. ans

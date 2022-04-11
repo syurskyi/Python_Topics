@@ -10,8 +10,8 @@ ___ names
 
 ___ test_default(capfd, names
     ? ?
-    a.. = ?.r .. 0].s..
-    e.. = ("| Bob       | Julian    \n"
+    a.. ?.r .. 0].s..
+    e.. ("| Bob       | Julian    \n"
                 "| Tim       | Sara      \n"
                 "| Eva       | Ana       \n"
                 "| Jake      | Maria")
@@ -20,8 +20,8 @@ ___ test_default(capfd, names
 
 ___ test_three_columns(capfd, names
     print_names_to_columns(names, cols=3)
-    a.. = ?.r .. 0].s..
-    e.. = ("| Bob       | Julian    | Tim       \n"
+    a.. ?.r .. 0].s..
+    e.. ("| Bob       | Julian    | Tim       \n"
                 "| Sara      | Eva       | Ana       \n"
                 "| Jake      | Maria")
     ... a.. __ e..
@@ -29,7 +29,7 @@ ___ test_three_columns(capfd, names
 
 ___ test_four_columns(capfd, names
     print_names_to_columns(names, c.._4
-    a.. = ?.r .. 0].s..
-    e.. = ("| Bob       | Julian    | Tim       | Sara      \n"
+    a.. ?.r .. 0].s..
+    e.. ("| Bob       | Julian    | Tim       | Sara      \n"
                 "| Eva       | Ana       | Jake      | Maria")
     ... a.. __ e..

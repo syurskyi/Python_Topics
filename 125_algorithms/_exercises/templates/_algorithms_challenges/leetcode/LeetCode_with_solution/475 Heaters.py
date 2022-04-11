@@ -30,14 +30,14 @@ c_ Solution:
         """
         houses.s..()
         heaters.s..()
-        r = 0
-        i = 0
+        r 0
+        i 0
         ___ h __ houses:
-            i = b__.b__(heaters, h)  # insertion point
-            left = m..(0, i - 1)
-            right = m..(l..(heaters) - 1, i)
-            r_cur = m..(a..(heaters[left] - h), a..(heaters[right] - h
-            r = m..(r, r_cur)
+            i b__.b__(heaters, h)  # insertion point
+            left m..(0, i - 1)
+            right m..(l..(heaters) - 1, i)
+            r_cur m..(a..(heaters[left] - h), a..(heaters[right] - h
+            r m..(r, r_cur)
             
         r.. r
 
@@ -51,15 +51,15 @@ c_ Solution:
         houses.s..()
         heaters.s..()
         heaters.a..(f__('inf'
-        r = 0
-        i = 0
+        r 0
+        i 0
         ___ h __ houses:
             # possible bisect
             w.... h > (heaters[i] + heaters[i+1]) / 2:
                 # find which heater is responsible for the house
                 i += 1
 
-            r = m..(r, a..(heaters[i] - h
+            r m..(r, a..(heaters[i] - h
 
         r.. r
 

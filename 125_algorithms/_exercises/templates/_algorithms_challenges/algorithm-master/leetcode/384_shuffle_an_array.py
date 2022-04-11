@@ -6,15 +6,15 @@ c_ Solution:
         """
         :type nums: List[int]
         """
-        origin = nums |
-        nums = nums
+        origin nums |
+        nums nums
 
     ___ reset
         """
         Resets the array to its original configuration and return it.
         :rtype: List[int]
         """
-        nums = origin |
+        nums origin |
         r.. nums
 
     ___ shuffle
@@ -22,12 +22,12 @@ c_ Solution:
         Returns a random shuffling of the array.
         :rtype: List[int]
         """
-        a = nums
-        n = l..(a)
+        a nums
+        n l..(a)
 
         ___ i __ r..(n
-            _i = randrange(i, n)
-            a[i], a[_i] = a[_i], a[i]
+            _i randrange(i, n)
+            a[i], a[_i] a[_i], a[i]
 
         r.. a
 

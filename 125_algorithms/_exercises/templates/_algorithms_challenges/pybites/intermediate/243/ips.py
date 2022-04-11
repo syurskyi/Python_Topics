@@ -29,10 +29,10 @@ ___ parse_ipv4_service_ranges(source: P..) __ L..[ServiceIPRange]:
 
     https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
     """
-    data = j__.l.. (source.read_text
+    data j__.l.. (source.read_text
     w__ suppress(AddressValueError
-        prefixes = data["prefixes"]
-        ipv4_service_ranges = [
+        prefixes data["prefixes"]
+        ipv4_service_ranges [
             ServiceIPRange(
                 service=prefix["service"],
                 region=prefix["region"],
@@ -51,7 +51,7 @@ ___ get_aws_service_range(address: s..,
     is not a valid IPv4 address.
     """
     ___
-        ipv4_address = IPv4Address(address)
+        ipv4_address IPv4Address(address)
     ______ AddressValueError:
         r.. V...("Address must be a valid IPv4 address")
 

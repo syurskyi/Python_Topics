@@ -2,7 +2,7 @@ _______ l___
 ____ t___ _______ L..  # python 3.9 we can drop this
 
 
-logger = l___.g..'app')
+logger l___.g..'app')
 
 
 ___ sum_even_numbers(numbers: L..[f__]) __ f__:
@@ -24,6 +24,6 @@ ___ sum_even_numbers(numbers: L..[f__]) __ f__:
          logger.exception(f"Bad inputs: {numbers}")
          r..
 
-   total = s..(even_numbers)
+   total s..(even_numbers)
    logger.i..(f"Input: {numbers} -> output: {total}")
    r.. total

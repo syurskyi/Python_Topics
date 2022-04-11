@@ -10,7 +10,7 @@ c_ Solution(o..
         :type s: str
         :rtype: str
         """
-        count = [0]*10
+        count [0]*10
         ___ c __ s:
             __ c __ 'z': count[0]+=1
             __ c __ 'w': count[2]+=1
@@ -25,9 +25,9 @@ c_ Solution(o..
         count[7] -_ count[6]
         count[5] -_ count[4]
         count[3] -_ count[8]
-        count[9] = count[9] - count[8] - count[5] - count[6]
-        count[1] = count[1] - count[0] - count[2] - count[4]
-        result = ''
+        count[9] count[9] - count[8] - count[5] - count[6]
+        count[1] count[1] - count[0] - count[2] - count[4]
+        result ''
         ___ i __ r..(10
             result += s..(i)*count[i]
         r.. result

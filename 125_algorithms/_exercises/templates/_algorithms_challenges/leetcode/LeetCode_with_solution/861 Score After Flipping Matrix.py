@@ -35,17 +35,17 @@ c_ Solution:
         Then we cannot toggle row anymore
         Toggle the col if #0's < #1's
         """
-        m, n = l..(A), l..(A[0])
-        ret = 0
+        m, n l..(A), l..(A[0])
+        ret 0
         ret += (1 << (n-1 * m  # all rows with MSB being 1
         ___ j __ r..(1, n
-            cnt = 0
+            cnt 0
             ___ i __ r..(m
                 __ A[i][j] __ A[i][0]:
                     cnt += 1  #  number of 1's
 
             # toggle 
-            cnt = m..(cnt, m-cnt)
+            cnt m..(cnt, m-cnt)
             ret += (1 << (n-1-j * cnt
 
         r.. ret

@@ -10,14 +10,14 @@ c_ Solution(o..
         :type citations: List[int]
         :rtype: int
         """
-        length = l..(citations)
-        count = [0]*(length+1)
+        length l..(citations)
+        count [0]*(length+1)
         ___ c __ citations:
             __ c > length:
                 count[length]+=1
             ____
                 count[c]+=1
-        total = 0
+        total 0
         print('count: %s' % (count
         ___ i __ r..(length, -1, -1
             total += count[i]
@@ -26,12 +26,12 @@ c_ Solution(o..
         r.. 0
     
     ___ test
-        testCases = [
+        testCases [
             [3, 0, 6, 1, 5],
         ]
         ___ citations __ testCases:
             print('citations: %s' % (citations
-            result = hIndex(citations)
+            result hIndex(citations)
             print('result: %s' % (result
             print('-='*20+'-')
 

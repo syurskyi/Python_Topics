@@ -61,10 +61,10 @@ c_ TimeMap:
         BST
         Bineary search
         """
-        m = d..(l..)
+        m d..(l..)
 
     ___ s..  key: s.., value: s.., timestamp: i..) __ N..
-        n = (timestamp, value)
+        n (timestamp, value)
         b__.i.. (m[key], n)
 
     ___ get  key: s.., timestamp: i..) __ s..:
@@ -72,8 +72,8 @@ c_ TimeMap:
             r.. ""
 
         # find the largest v, s.t. v <= t
-        lst = m[key]
-        i = b__.b__(lst, (timestamp, ""
+        lst m[key]
+        i b__.b__(lst, (timestamp, ""
         __ i < l..(lst) a.. lst[i][0] __ timestamp:
             r.. lst[i][1]
         i -_ 1

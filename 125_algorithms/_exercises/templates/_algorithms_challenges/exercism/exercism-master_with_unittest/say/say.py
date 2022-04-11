@@ -1,6 +1,6 @@
 c_ Say:
 
-    NUM_TO_WORD = {
+    NUM_TO_WORD {
         1000000000: 'billion',
         1000000: 'million',
         1000: 'thousand',
@@ -34,8 +34,8 @@ c_ Say:
     }
 
     ___ - , num
-        num = i..(num)
-        _words = get_words(num)
+        num i..(num)
+        _words get_words(num)
 
     ___ get_words  num
         raise_if_invalid(num)
@@ -48,32 +48,32 @@ c_ Say:
                              __ e..(get_chunks(num]).r..()
 
     ___ get_chunks  num
-        reversed_string = s..(num)[::-1]
-        reversed_chunks = ([reversed_string[i:i + 3]
+        reversed_string s..(num)[::-1]
+        reversed_chunks ([reversed_string[i:i + 3]
                             ___ i __ r..(0, l..(reversed_string), 3)])[::-1]
         r.. [i..(x[::-1]) ___ x __ reversed_chunks]
 
     ___ convert_chunk_to_word  chunk, i
-        hundreds_digit, left_over = divmod(chunk, 100)
-        hundreds = convert_num_to_word(hundreds_digit)
+        hundreds_digit, left_over divmod(chunk, 100)
+        hundreds convert_num_to_word(hundreds_digit)
 
-        tens_digit, ones_digit = divmod(left_over, 10)
+        tens_digit, ones_digit divmod(left_over, 10)
         __ 10 < left_over < 20:
-            tens = convert_num_to_word(left_over)
-            ones = N..
+            tens convert_num_to_word(left_over)
+            ones N..
         ____
-            tens = convert_num_to_word(tens_digit * 10)
-            ones = convert_num_to_word(ones_digit)
+            tens convert_num_to_word(tens_digit * 10)
+            ones convert_num_to_word(ones_digit)
 
-        word_chunk = format_chunk(hundreds, tens, ones)
-        units = get_units(l..(get_chunks(num - 1 - i)
+        word_chunk format_chunk(hundreds, tens, ones)
+        units get_units(l..(get_chunks(num - 1 - i)
 
         __ n.. word_chunk:
             r.. ''
         r.. ' '.j..((word_chunk, units
 
     ___ format_chunk  hundreds, tens, ones
-        chunk = ''
+        chunk ''
         __ hundreds:
             chunk += hundreds + ' hundred '
         __ hundreds a.. tens:

@@ -31,20 +31,20 @@ c_ Solution:
         :type path: str
         :rtype: int
         """
-        ans = 0
+        ans 0
         __ n.. p..:
             r.. ans
 
-        dep2size = {0: 0}
+        dep2size {0: 0}
 
         ___ line __ p...s..('\n'
-            name = line.l..('\t')
-            size = l..(name)
-            depth = l..(line) - l..(name)
+            name line.l..('\t')
+            size l..(name)
+            depth l..(line) - l..(name)
 
             __ '.' __ name:
-                ans = m..(ans, dep2size[depth] + size)
+                ans m..(ans, dep2size[depth] + size)
             ____
-                dep2size[depth + 1] = dep2size[depth] + size + 1
+                dep2size[depth + 1] dep2size[depth] + size + 1
 
         r.. ans

@@ -23,15 +23,15 @@ ____ e.. _______ E..
 
 
 c_ State(E..
-    ALPHANUMERIC = 1
-    NON_ALPHANUMERIC = 2
+    ALPHANUMERIC 1
+    NON_ALPHANUMERIC 2
 
 ___ get_index_different_char(chars
-    index = 1
+    index 1
     __ chars[0] __ s__.ascii_letters o. s__.d..:
-        state = State.ALPHANUMERIC
+        state State.ALPHANUMERIC
     ____
-        state = State.NON_ALPHANUMERIC
+        state State.NON_ALPHANUMERIC
     ___ c __ chars[1:]:
         __ c __ (s__.ascii_letters o. s__.d..) a.. state __ State.ALPHANUMERIC:
             _____

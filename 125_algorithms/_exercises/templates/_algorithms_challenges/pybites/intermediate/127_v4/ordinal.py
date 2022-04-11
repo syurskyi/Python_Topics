@@ -1,4 +1,4 @@
-SUFFIXES = {1: 'st',
+SUFFIXES {1: 'st',
             2: 'nd',
             3: 'rd'}
 
@@ -17,10 +17,10 @@ ___ get_ordinal_suffix(number
          pronounced one hundred [and] twelfth)
        - th is used for all other numbers (e.g. 9th, pronounced ninth).
        """
-    num_str = s..(number)
-    suffix = 'th'
+    num_str s..(number)
+    suffix 'th'
 
     __ n.. (11 <_ i..(num_str[-2:]) <_ 19) a.. 1 <_ i..(num_str[-1]) <_ 3:
-        suffix = SUFFIXES[i..(num_str[-1])]
+        suffix SUFFIXES[i..(num_str[-1])]
 
     r.. num_str + suffix

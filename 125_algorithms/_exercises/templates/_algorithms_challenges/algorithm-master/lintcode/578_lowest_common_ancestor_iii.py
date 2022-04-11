@@ -22,7 +22,7 @@ c_ Solution:
         __ n.. root:
             r..
 
-        lca, has_a, has_b = divide_conquer(root, a, b)
+        lca, has_a, has_b divide_conquer(root, a, b)
 
         r.. lca __ has_a a.. has_b ____ N..
 
@@ -30,11 +30,11 @@ c_ Solution:
         __ n.. node:
             r.. N.., F.., F..
 
-        left, a_in_left, b_in_left = divide_conquer(node.left, a, b)
-        right, a_in_right, b_in_right = divide_conquer(node.right, a, b)
+        left, a_in_left, b_in_left divide_conquer(node.left, a, b)
+        right, a_in_right, b_in_right divide_conquer(node.right, a, b)
 
-        has_a = a_in_left o. a_in_right o. node __ a
-        has_b = b_in_left o. b_in_right o. node __ b
+        has_a a_in_left o. a_in_right o. node __ a
+        has_b b_in_left o. b_in_right o. node __ b
 
         __ node __ a o. node __ b:
             r.. node, has_a, has_b

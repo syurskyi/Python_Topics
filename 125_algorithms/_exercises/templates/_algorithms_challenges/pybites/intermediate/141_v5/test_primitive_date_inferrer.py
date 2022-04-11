@@ -6,7 +6,7 @@ ___ test_tie
     """ any date string can be parsed using the following formats:
     dd/mm/yy , mm/dd/yy, yy/mm/dd
     so no the prevalent format cannot be inferred """
-    dates = [
+    dates [
         "11/11/07",
         "01/05/07",
         "05/12/04",
@@ -28,7 +28,7 @@ ___ test_too_many_nonparsable
     """{<DateFormat.MMDDYY: 1>: 2,  <DateFormat.NONPARSABLE: -999>: 5,
          <DateFormat.DDMMYY: 0>: 2, <DateFormat.YYMMDD: 2>: 3}
     """
-    dates = [
+    dates [
         "12/22/68",
         "31/09/87",
         "37/13/29",
@@ -51,7 +51,7 @@ ___ test_mmddyy
          <DateFormat.YYMMDD: 2>: 5, <DateFormat.NONPARSABLE: -999>: 2}
         the single most prevalent format is mm/dd/yy
     """
-    dates = [
+    dates [
         "04/25/79",
         "08/09/70",
         "08/04/10",
@@ -65,7 +65,7 @@ ___ test_mmddyy
         "88/11/05",
         "96/26/08",
     ]
-    results = [
+    results [
         "1979-04-25",
         "1970-08-09",
         "2010-08-04",
@@ -86,7 +86,7 @@ ___ test_yymmdd
     """ {<DateFormat.YYMMDD: 2>: 7, <DateFormat.NONPARSABLE: -999>: 1,
          <DateFormat.MMDDYY: 1>: 3, <DateFormat.DDMMYY: 0>: 3}
          the single most prevalent format is yy/mm/dd """
-    dates = [
+    dates [
         "68/12/22",
         "31/09/87",
         "37/03/29",
@@ -100,7 +100,7 @@ ___ test_yymmdd
         "71/04/19",
         "85/08/09",
     ]
-    results = [
+    results [
         "2068-12-22",
         "Invalid",
         "2037-03-29",
@@ -121,7 +121,7 @@ ___ test_ddmmyy
     """ {<DateFormat.MMDDYY: 1>: 7, <DateFormat.DDMMYY: 0>: 9,
         <DateFormat.YYMMDD: 2>: 4}
         the single most prevalent format is dd/mm/yy """
-    dates = [
+    dates [
         "12/16/30",
         "16/03/54",
         "97/07/26",
@@ -135,7 +135,7 @@ ___ test_ddmmyy
         "30/11/24",
         "08/01/51",
     ]
-    results = [
+    results [
         "Invalid",
         "2054-03-16",
         "Invalid",
@@ -160,15 +160,15 @@ ___ test_different_enum
     _______ primitive_date_inferrer __ pdi
 
     c_ DateFormat_ext(E..
-        DDMMYYYY = 0
-        DDMMYY = 1
-        YYMMDD = 2
-        MMDDYY = 3
-        NONPARSABLE = -999
+        DDMMYYYY 0
+        DDMMYY 1
+        YYMMDD 2
+        MMDDYY 3
+        NONPARSABLE -999
 
         @classmethod
         ___ get_d_parse_formats(cls, idx_ N..
-            d_parse_formats = ["%d.%m.%Y", "%d/%m/%y", "%y/%m/%d", "%m/%d/%y"]
+            d_parse_formats ["%d.%m.%Y", "%d/%m/%y", "%y/%m/%d", "%m/%d/%y"]
             __ idx __ N..
                 r.. d_parse_formats
             __ 0 <_ idx <_ l..(d_parse_formats
@@ -176,9 +176,9 @@ ___ test_different_enum
             r.. V...
 
     # override the enum in the tested code module
-    pdi.DateFormat = DateFormat_ext
+    pdi.DateFormat DateFormat_ext
 
-    dates = [
+    dates [
         "12/16/30",
         "16.03.1954",
         "97/07/26",
@@ -192,7 +192,7 @@ ___ test_different_enum
         "30/11/24",
         "08.01.1951",
     ]
-    results = [
+    results [
         "Invalid",
         "1954-03-16",
         "Invalid",

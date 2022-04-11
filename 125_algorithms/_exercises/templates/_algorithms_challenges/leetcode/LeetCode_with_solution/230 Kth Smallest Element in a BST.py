@@ -10,14 +10,14 @@ What if the BST is modified (insert/delete operations) often and you need to fin
 
 Hint:
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -27,7 +27,7 @@ c_ Solution:
         :type k: int
         :rtype: int
         """
-        l = cnt(root.left)
+        l cnt(root.left)
         __ l+1 __ k:
             r.. root.val
         ____ l+1 < k:

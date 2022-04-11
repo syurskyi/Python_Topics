@@ -4,9 +4,9 @@ ____ t__ _______ t__
 ___ timer(func
     $w.. f..
     ___ wrapper $ $$:
-        start = t__()
-        answer = func $ $$
-        end = t__()
+        start t__()
+        answer func $ $$
+        end t__()
         print _*Elapsed: {end-start}')
         r.. answer
     r.. wrapper

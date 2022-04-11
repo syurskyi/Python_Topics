@@ -28,16 +28,16 @@ Both the input and output have TreeNode type.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ -
-        deepest = -1
-        deepest_nodes = N..
-        ret = N..
+        deepest -1
+        deepest_nodes N..
+        ret N..
 
     ___ subtreeWithAllDeepest  root: TreeNode) __ TreeNode:
         """
@@ -55,8 +55,8 @@ c_ Solution:
             r..
 
         __ d > deepest:
-            deepest = d
-            deepest_nodes = s..([node])
+            deepest d
+            deepest_nodes s..([node])
         ____ d __ deepest:
             deepest_nodes.add(node)
 
@@ -67,12 +67,12 @@ c_ Solution:
         __ n.. node:
             r.. 0
 
-        l = c.. node.left)
-        r = c.. node.right)
+        l c.. node.left)
+        r c.. node.right)
         __ l != 0 a.. r != 0 a.. l + r __ l..(deepest_nodes
-            ret = node
+            ret node
 
-        count = l + r
+        count l + r
         __ node __ deepest_nodes:
             count += 1
         r.. count

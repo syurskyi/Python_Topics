@@ -1,11 +1,11 @@
 ____ c.. _______ C..
 
 ___ freq_digit(num: i..) __ i..:
-    cnt = C..(s..(num
+    cnt C..(s..(num
     print(t..(cnt
     print(cnt.most_common 1 0 0)
-    templist = [i..(i) ___ i __ s..(num)]
-    r.. m..(templist, key = templist.count)
+    templist [i..(i) ___ i __ s..(num)]
+    r.. m..(templist, key templist.count)
 
 
 

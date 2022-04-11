@@ -18,20 +18,20 @@ Have fun and keep coding in Python!
 ____ pytz _______ timezone, utc
 ____ d__ _______ d__
 
-AUSTRALIA = timezone('Australia/Sydney')
-SPAIN = timezone('Europe/Madrid')
+AUSTRALIA timezone('Australia/Sydney')
+SPAIN timezone('Europe/Madrid')
 
 
 ___ what_time_lives_pybites(naive_utc_dt
     """Receives a naive UTC datetime object and returns a two element
        tuple of Australian and Spanish (timezone aware) datetimes"""
-    au = naive_utc_dt.astimezone(AUSTRALIA)
-    es = naive_utc_dt.astimezone(SPAIN)
-    t = (au,es)
+    au naive_utc_dt.astimezone(AUSTRALIA)
+    es naive_utc_dt.astimezone(SPAIN)
+    t (au,es)
     r.. t
 
-now = d__.n..
-result = what_time_lives_pybites(now)
+now d__.n..
+result what_time_lives_pybites(now)
 print(result[0])
 print(result[1])
 

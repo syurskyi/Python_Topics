@@ -1,5 +1,5 @@
 ___ find_secret_message(paragraph
-    paragraph = ''.j..([c ___ c __ paragraph.l.. __ c __ 'abcdefghijklmnopqrstuvwxyz -' )
+    paragraph ''.j..([c ___ c __ paragraph.l.. __ c __ 'abcdefghijklmnopqrstuvwxyz -' )
     appear,res    # list,[]
     ___ word __ paragraph.s.. :
         __ word n.. __ appear:

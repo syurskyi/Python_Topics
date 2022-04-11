@@ -8,26 +8,26 @@ _______ s__
 
 _______ r__
 
-DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
-TMP = P..(__.g..("TMP", "/tmp"
+DATA_URL 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
+TMP P..(__.g..("TMP", "/tmp"
 
-salt = ''.j..(
+salt ''.j..(
     r__.c..(s__.a..) ___ i __ r..(20)
 )
-DB = TMP / f'nba_{salt}.db'
+DB TMP / f'nba_{salt}.db'
 
-Player = n..('Player', ('name year first_year team college active '
+Player n..('Player', ('name year first_year team college active '
                                'games avg_min avg_points'
 
-conn = sqlite3.connect(DB)
-cur = conn.cursor()
+conn sqlite3.connect(DB)
+cur conn.cursor()
 
 
 ___ import_data
     w__ r__.S.. __ session:
-        content = session.g.. DATA_URL).content.d.. 'utf-8')
+        content session.g.. DATA_URL).content.d.. 'utf-8')
 
-    reader = csv.DictReader(content.s.. , delimiter=',')
+    reader csv.DictReader(content.s.. , delimiter=',')
 
     players    # list
     ___ row __ reader:
@@ -57,21 +57,21 @@ ___ player_with_max_points_per_game
     """The player with highest average points per game (don't forget to CAST to
        numeric in your SQL query)"""
     cur.execute('select name, max(cast(avg_points as float)) from players limit 1')
-    player = cur.fetchone()
+    player cur.fetchone()
     r.. player[0]
 
 
 ___ number_of_players_from_duke
     """Return the number of players with college == Duke University"""
     cur.execute('select count(name) from players where college = "Duke University"')
-    player = cur.fetchone()
+    player cur.fetchone()
     r.. player[0]
 
 ___ avg_years_active_players_stanford
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
     cur.execute('select AVG(cast(active as int)) from players where college = "Stanford University"')
-    player = cur.fetchone()
+    player cur.fetchone()
     r.. player[0]
 
 
@@ -80,7 +80,7 @@ ___ year_with_most_new_players
        Hint: you can use GROUP BY on the year column.
     """
     cur.execute('SELECT year, count(year) FROM players GROUP BY year ORDER BY count(year) DESC')
-    player = cur.fetchone()
+    player cur.fetchone()
     r.. player[0]
 
 

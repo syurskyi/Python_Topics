@@ -4,20 +4,20 @@ c_ Solution(o..
     :type n: int
     :rtype: List[str]
     """
-    d = {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
+    d {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
 
     ___ dfs(half, p.., n
       __ l..(p..) __ half:
-        pathStr = "".j..(p..)
+        pathStr "".j..(p..)
         __ half * 2 __ n:
-          toAppend = pathStr + "".j..([d[x] ___ x __ pathStr[::-1]])
-          toAppendInt = i..(toAppend)
+          toAppend pathStr + "".j..([d[x] ___ x __ pathStr[::-1]])
+          toAppendInt i..(toAppend)
           __ low <_ toAppendInt <_ high:
             count += 1
         ____
           ___ c __ "018":
-            toAppend = pathStr + c + "".j..([d[x] ___ x __ pathStr[::-1]])
-            toAppendInt = i..(toAppend)
+            toAppend pathStr + c + "".j..([d[x] ___ x __ pathStr[::-1]])
+            toAppendInt i..(toAppend)
             __ low <_ toAppendInt <_ high:
               count += 1
         r..
@@ -41,9 +41,9 @@ c_ Solution(o..
     """
     __ i..(low) > i..(high
       r.. 0
-    count = 0
-    low = i..(low)
-    high = i..(high)
+    count 0
+    low i..(low)
+    high i..(high)
     ___ length __ r..(l..(low), l..(high) + 1
       findStrobogrammatic(length)
     r.. count

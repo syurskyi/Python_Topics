@@ -2,10 +2,10 @@ _______ s__
 
 
 c_ Atbash:
-    PLAIN = 'abcdefghijklmnopqrstuvwxyz'
-    PRIME = 'zyxwvutsrqponmlkjihgfedcba'
-    CIPHER = d..(z..(l..(PLAIN), l..(PRIME)))
-    EXCLUDE = s..(s__.punctuation + ' ')
+    PLAIN 'abcdefghijklmnopqrstuvwxyz'
+    PRIME 'zyxwvutsrqponmlkjihgfedcba'
+    CIPHER d..(z..(l..(PLAIN), l..(PRIME)))
+    EXCLUDE s..(s__.punctuation + ' ')
 
     $
     ___ encode  msg

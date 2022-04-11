@@ -9,7 +9,7 @@ ___ test_extract_course_times_default_arg
 
 
 ___ test_extract_course_times_other_course_input
-    course = ('00:40 Lesson introduction'
+    course ('00:40 Lesson introduction'
               '01:33 Your 3 day overview'
               '08:12 Learning datetime and date'
               '06:07 Datetime timedelta usage'
@@ -24,7 +24,7 @@ ___ test_get_all_hashtags_and_links_default_arg
 
 
 ___ test_get_all_hashtags_and_links_other_tweet
-    tweet = ('PyBites My Reading List | 12 Rules for Life - #books '
+    tweet ('PyBites My Reading List | 12 Rules for Life - #books '
              'that expand the mind! '
              'http://pbreadinglist.herokuapp.com/books/'
              'TvEqDAAAQBAJ#.XVOriU5z2tA.twitter'
@@ -37,12 +37,12 @@ ___ test_get_all_hashtags_and_links_other_tweet
 
 
 ___ test_match_first_paragraph_default_arg
-    e.. = 'pybites != greedy'
+    e.. 'pybites != greedy'
     ... match_first_paragraph() __ e..
 
 
 ___ test_match_first_paragraph_other_html
-    html = ('<p>Match only this paragraph.</p>'
+    html ('<p>Match only this paragraph.</p>'
             '<p>Not this one!</p><p>And this one neither.</p>')
-    e.. = 'Match only this paragraph.'
+    e.. 'Match only this paragraph.'
     ... match_first_paragraph(html) __ e..

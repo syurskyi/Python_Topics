@@ -2,12 +2,12 @@ c_ Solution:
     # @param {character[][]} grid
     # @return {integer}
     ___ numIslands  grid
-        islands = s..()  # coordinates of 1s (set of tuples)
-        res = 0
-        n = l..(grid)
+        islands s..()  # coordinates of 1s (set of tuples)
+        res 0
+        n l..(grid)
         __ n __ 0:
             r.. 0
-        m = l..(grid[0])
+        m l..(grid[0])
         __ m __ 0:
             r.. 0
         ___ y __ r..(n
@@ -31,7 +31,7 @@ c_ Solution:
             probe(grid, x, y + 1, m, n)
 
 
-g1 = [
+g1 [
     l..('11000'),
     l..('11000'),
     l..('00100'),
@@ -39,6 +39,6 @@ g1 = [
 ]
 ___ r __ g1:
     print(r)
-s = Solution()
+s Solution()
 print(s.numIslands(g1
 print(s.islands)

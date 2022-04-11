@@ -10,32 +10,32 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: List[int]
         """
-        cand1 = N..
-        cand2 = N..
-        count1 = 0
-        count2 = 0
+        cand1 N..
+        cand2 N..
+        count1 0
+        count2 0
         ___ c __ nums:
             __ cand1 __ c:
                 count1 += 1
             ____ cand2 __ c:
                 count2 += 1
             ____ count1 __ 0:
-                cand1 = c
+                cand1 c
                 count1 += 1
             ____ count2 __ 0:
-                cand2 = c
+                cand2 c
                 count2 += 1
             ____
                 count1 -_ 1
                 count2 -_ 1
-        count1 = 0
-        count2 = 0
+        count1 0
+        count2 0
         ___ c __ nums:
             __ cand1 __ c:
                 count1 += 1
             ____ cand2 __ c:
                 count2 += 1
-        m = l..(nums) / 3
+        m l..(nums) / 3
         res    # list
         __ count1 > m:
             res.a..(cand1)
@@ -44,8 +44,8 @@ c_ Solution(o..
         r.. res
 
 
-a1 = [8, 8, 7, 7, 7]
-a2 = [1, 2]
-s = Solution()
+a1 [8, 8, 7, 7, 7]
+a2 [1, 2]
+s Solution()
 print s.majorityElement(a1)
 print s.majorityElement(a2)

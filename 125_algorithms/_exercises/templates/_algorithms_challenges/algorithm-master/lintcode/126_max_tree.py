@@ -24,13 +24,13 @@ c_ Solution:
     ___ maxTree  A
         stack    # list
         ___ val __ A:
-            node = TreeNode(val)
+            node TreeNode(val)
             w.... stack a.. val > stack[-1].val:
-                node.left = stack.p.. )
+                node.left stack.p.. )
 
             # current val less than the last node in stack
             __ stack:
-                stack[-1].right = node
+                stack[-1].right node
 
             stack.a..(node)
         r.. stack[0]

@@ -11,6 +11,6 @@ c_ Solution(o..
     :type H: int
     :rtype: int
     """
-    area = (C - A) * (D - B) + (G - E) * (H - F)
-    overlap = m..(m..(C, G) - m..(A, E), 0) * m..(m..(D, H) - m..(B, F), 0)
+    area (C - A) * (D - B) + (G - E) * (H - F)
+    overlap m..(m..(C, G) - m..(A, E), 0) * m..(m..(D, H) - m..(B, F), 0)
     r.. area - overlap

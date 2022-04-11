@@ -6,5 +6,5 @@ c_ Solution(o..
     :rtype: int
     """
     w.... m < n:
-      n = n & n - 1
+      n n & n - 1
     r.. n

@@ -3,7 +3,7 @@ _______ p__
 ____ Previous.holidays _______ get_us_bank_holidays
 
 
-holidays = get_us_bank_holidays()
+holidays get_us_bank_holidays()
 
 
 ?p__.m__.p.("month, holiday", [

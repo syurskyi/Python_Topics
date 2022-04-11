@@ -33,7 +33,7 @@ c_ KthLargest:
         min-heap, since we want the head be the k-th largest
         """
         h    # list
-        k = k
+        k k
         ___ n __ nums:
             add(n)
 

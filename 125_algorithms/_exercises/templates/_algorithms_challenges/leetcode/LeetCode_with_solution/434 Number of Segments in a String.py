@@ -15,18 +15,18 @@ c_ Solution:
         :type s: str
         :rtype: int
         """
-        ret = 0
+        ret 0
         __ n.. s:
             r.. ret
 
         # count at start
         __ s[0] != " ":
-            ret = 1
-        prev = s[0]
+            ret 1
+        prev s[0]
         ___ c __ s[1:]:
             __ c != " " a.. prev __ " ":
                 ret += 1
-            prev = c
+            prev c
         r.. ret
 
 

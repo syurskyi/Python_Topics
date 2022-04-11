@@ -7,8 +7,8 @@ ___ get_credit_cards(data: bytes) __ L..[s..]:
     of "first_name,last_name,credit_card", from which you have
     to extract the credit card numbers.
     """
-    decoded_data = base64.b..(data)
-    decoded_string = decoded_data.d.. "ascii")
-    decoded_list = [row.s..(",") ___ row __ decoded_string.s...s..("\n")]
-    credit_card_numbers = [decoded_list[i][2] ___ i __ r..(l..(decoded_list __ i != 0]
+    decoded_data base64.b..(data)
+    decoded_string decoded_data.d.. "ascii")
+    decoded_list [row.s..(",") ___ row __ decoded_string.s...s..("\n")]
+    credit_card_numbers [decoded_list[i][2] ___ i __ r..(l..(decoded_list __ i != 0]
     r.. credit_card_numbers

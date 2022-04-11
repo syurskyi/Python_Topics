@@ -52,8 +52,8 @@ c_ Solution:
         m_inv    # dict  # bijection
         ___ i __ r..(l..(word:
             __ word[i] n.. __ m a.. pattern[i] n.. __ m_inv:
-                m[word[i]] = pattern[i]
-                m_inv[pattern[i]] = word[i]
+                m[word[i]] pattern[i]
+                m_inv[pattern[i]] word[i]
             ____ word[i] n.. __ m o. m[word[i]] != pattern[i]:
                 r.. F..
         ____

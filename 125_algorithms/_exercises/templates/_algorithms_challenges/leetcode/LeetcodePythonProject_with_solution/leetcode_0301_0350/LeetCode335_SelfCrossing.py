@@ -6,9 +6,9 @@ Created on Mar 19, 2017
 
 c_ Solution(o..
     ___ isSelfCrossing  x
-        x = [0, 0, 0, 0]+x
-        n = l..(x)
-        i = 4
+        x [0, 0, 0, 0]+x
+        n l..(x)
+        i 4
         # outer spiral
         w.... i < n a.. x[i] > x[i-2]:
             i += 1

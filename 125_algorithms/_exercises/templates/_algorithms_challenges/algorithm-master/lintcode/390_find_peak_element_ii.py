@@ -15,9 +15,9 @@ Test Case
 """
 
 c_ Solution:
-    NULL_POS = [-1, -1]
-    dx = [1, -1, 0, 0]
-    dy = [0, 0, 1, -1]
+    NULL_POS [-1, -1]
+    dx [1, -1, 0, 0]
+    dy [0, 0, 1, -1]
 
     """
     @param: A: An integer matrix
@@ -37,29 +37,29 @@ c_ Solution:
         __ n.. A:
             r.. NULL_POS
 
-        m, n = l..(A), l..(A[0])
-        left, col, right = 0, 0, n - 1
-        up, row, down = 0, 0, m - 1
+        m, n l..(A), l..(A[0])
+        left, col, right 0, 0, n - 1
+        up, row, down 0, 0, m - 1
 
         w.... left + 1 < right o. up + 1 < down:
             __ down - up > right - left:
-                row = up + (down - up) // 2
-                col = findRowMax(A, row, left, right)
+                row up + (down - up) // 2
+                col findRowMax(A, row, left, right)
                 __ isPeak(A, row, col
                     r.. [row, col]
                 __ A[row][col] < A[row-1][col]:
-                    down = row
+                    down row
                 ____
-                    up = row
+                    up row
             ____
-                col = left + (right - left) // 2
-                row = findColMax(A, col, up, down)
+                col left + (right - left) // 2
+                row findColMax(A, col, up, down)
                 __ isPeak(A, row, col
                     r.. [row, col]
                 __ A[row][col] < A[row][col-1]:
-                    right = col
+                    right col
                 ____
-                    left = col
+                    left col
         ___ r __ [up, down]:
             ___ c __ [left, right]:
                 __ isPeak(A, r, c
@@ -68,25 +68,25 @@ c_ Solution:
 
     # given col index, return the row index of the max value on that col
     ___ findColMax  A, col, up, down
-        row = 0
+        row 0
         ___ r __ r..(up, down + 1
             __ A[row][col] < A[r][col]:
-                row = r
+                row r
         r.. row
 
     # given row index, return the col index of the max value on that row
     ___ findRowMax  A, row, left, right
-        col = 0
+        col 0
         ___ c __ r..(left, right + 1
             __ A[row][col] < A[row][c]:
-                col = c
+                col c
         r.. col
 
     ___ isPeak  A, row, col
-        _r = _c = 0
+        _r _c 0
         ___ i __ r..(4
-            _r = row + dx[i]
-            _c = col + dy[i]
+            _r row + dx[i]
+            _c col + dy[i]
             __ 0 <_ _r < m \
                     a.. 0 <_ _c < n \
                     a.. A[row][col] < A[_r][_c]:

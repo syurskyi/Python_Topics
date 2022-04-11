@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -27,7 +27,7 @@ c_ Solution(o..
 
 
         __ pattern[0] __ char2word:
-            word = char2word[pattern[0]]
+            word char2word[pattern[0]]
             __ s[:l..(word)] != word:
                 r.. F..
             ____
@@ -35,11 +35,11 @@ c_ Solution(o..
                 r.. dfs(pattern[1:], s[l..(word], char2word, words)
         ____
             ___ i __ x..(l..(s:
-                word = s[:i+1]
+                word s[:i+1]
                 __ word __ words:
                     _____
 
-                char2word[pattern[0]] = word
+                char2word[pattern[0]] word
                 words.add(word)
                 __ dfs(pattern[1:], s[l..(word], char2word, words
                     r.. T..

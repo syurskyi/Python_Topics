@@ -5,10 +5,10 @@ _______ r__
 c_ Robot:
 
     ___ -
-        name = generate_name()
+        name generate_name()
 
     ___ reset
-        name = generate_name()
+        name generate_name()
 
     ___ generate_name
         r__.seed()

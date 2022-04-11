@@ -82,8 +82,8 @@ c_ Solution:
         since the mid goes through the middle in the i, j.
         Use memoization rather than dp
         """
-        N = l..(stones)
-        sums = [0]
+        N l..(stones)
+        sums [0]
         ___ s __ stones:
             sums.a..(sums[-1] + s)
 
@@ -92,7 +92,7 @@ c_ Solution:
             __ i >_ j o. m < 1:
                 r.. f__("inf")
 
-            n = j - i
+            n j - i
             __ (n - m) % (K - 1) != 0:
                 r.. f__("inf")
 
@@ -104,13 +104,13 @@ c_ Solution:
             __ m __ 1:
                 r.. F(i, j, K) + sums[j] - sums[i]
 
-            ret = m..(
+            ret m..(
                 F(i, mid, 1) + F(mid, j, m - 1)
                 ___ mid __ r..(i + 1, j, K - 1)
             )
             r.. ret
 
-        ret = F(0, N, 1)
+        ret F(0, N, 1)
         r.. ret __ ret != f__("inf") ____ -1
 
 

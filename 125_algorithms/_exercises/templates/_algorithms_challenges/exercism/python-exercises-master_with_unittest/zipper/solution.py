@@ -4,8 +4,8 @@ c_ Zipper(o..
         r.. Zipper(d..(tree), [])
 
     ___ - , tree, ancestors
-        tree = tree
-        ancestors = ancestors
+        tree tree
+        ancestors ancestors
 
     ___ value
         r.. tree 'value'

@@ -29,7 +29,7 @@ All possible pairs are returned from the sequence:
 """
 _______ heapq
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -48,7 +48,7 @@ c_ Solution(o..
         """
         c_ Node(o..
             ___ - , i, j
-                i, j = i, j
+                i, j i, j
 
             ___ __cmp__  other
                 r.. nums1[i] + nums2[j] - (nums1[other.i] + nums2[other.j])
@@ -71,7 +71,7 @@ c_ Solution(o..
 
         ret    # list
         w.... h a.. l..(ret) < k:
-            node = heapq.heappop(h)
+            node heapq.heappop(h)
             ret.a..([nums1[node.i], nums2[node.j]])
             __ node.hasnext
                 heapq.heappush(h, node.next
@@ -86,8 +86,8 @@ c_ Solution(o..
         :type k: int
         :rtype: List[List[int]]
         """
-        i = 0
-        j = 0
+        i 0
+        j 0
         ret    # list
         ___ _ __ x..(k
             __ i < l..(nums1) a.. j < l..(nums2

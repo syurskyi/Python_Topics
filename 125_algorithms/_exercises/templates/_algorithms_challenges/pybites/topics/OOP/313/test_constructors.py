@@ -4,9 +4,9 @@ ____ constructors _______ Domain, DomainException
 
 
 ___ test_create_domain_from_name
-    domain = Domain("google.com")
+    domain Domain("google.com")
     ... s..(domain) __ "google.com"
-    domain = Domain("nu.nl")
+    domain Domain("nu.nl")
     ... s..(domain) __ "nu.nl"
 
 
@@ -24,7 +24,7 @@ ___ test_invalid_domain
     ("https://stackoverflow.com/a/14836456", "stackoverflow.com"),
 ])
 ___ test_create_domain_from_url(arg, e..
-    domain = Domain.parse_url(arg)
+    domain Domain.parse_url(arg)
     ... t..(domain) __ Domain
     ... s..(domain) __ e..
 
@@ -36,6 +36,6 @@ ___ test_create_domain_from_url(arg, e..
     ("sara@hotmail.co.uk", "hotmail.co.uk"),
 ])
 ___ test_create_domain_from_email(arg, e..
-    domain = Domain.parse_email(arg)
+    domain Domain.parse_email(arg)
     ... t..(domain) __ Domain
     ... s..(domain) __ e..

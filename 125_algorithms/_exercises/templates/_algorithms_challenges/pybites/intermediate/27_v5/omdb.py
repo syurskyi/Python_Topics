@@ -4,19 +4,19 @@ _______ __
 _______ __
 ____ u__.r.. _______ u..
 
-BASE_URL = 'http://projects.bobbelderbos.com/pcc/omdb/'
-MOVIES = ('bladerunner2049 fightclub glengary '
+BASE_URL 'http://projects.bobbelderbos.com/pcc/omdb/'
+MOVIES ('bladerunner2049 fightclub glengary '
           'horrible-bosses terminator').s..
-TMP = '/tmp'
+TMP '/tmp'
 
 # little bit of prework (yes working on pip installables ...)
 ___ movie __ MOVIES:
-    fname = f'{movie}.json'
-    remote = __.p...j..(BASE_URL, fname)
-    local = __.p...j..(TMP, fname)
+    fname f'{movie}.json'
+    remote __.p...j..(BASE_URL, fname)
+    local __.p...j..(TMP, fname)
     u..(remote, local)
 
-files = glob.glob(__.p...j..(TMP, '*json'
+files glob.glob(__.p...j..(TMP, '*json'
 
 
 ___ get_movie_data(files=files
@@ -32,10 +32,10 @@ ___ get_single_comedy(movies
 
 
 ___ get_movie_most_nominations(movies
-    r = __.c..(r'(\d+) nomin')
+    r __.c..(r'(\d+) nomin')
     r.. s..([(m 'Title' , m 'Awards' ) ___ m __ movies], key=l.... x: i..(r.f..(x[1])[0][-1][0]
 
 
 ___ get_movie_longest_runtime(movies
-    r = __.c..(r'(\d+) min')
+    r __.c..(r'(\d+) min')
     r.. s..([(m 'Title' , i..(r.f..(m 'Runtime' )[0] ___ m __ movies], key=l.... x: -x[1])[0][0]

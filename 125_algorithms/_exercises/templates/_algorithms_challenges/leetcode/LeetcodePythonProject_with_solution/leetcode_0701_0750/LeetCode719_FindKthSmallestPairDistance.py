@@ -10,23 +10,23 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        n = l..(nums)
+        n l..(nums)
         nums.s..()
-        low = f__('inf')
+        low f__('inf')
         ___ i __ r..(n-1
-            low = m..(low, nums[i+1]-nums[i])
-        high = nums[-1]-nums[0]
+            low m..(low, nums[i+1]-nums[i])
+        high nums[-1]-nums[0]
         w.... low < high:
-            mid = (low+high)//2
+            mid (low+high)//2
             __ countPair(nums, mid) < k:
-                low = mid+1
+                low mid+1
             ____
-                high = mid
+                high mid
         r.. low
     
     ___ countPair  nums, mid
-        n = l..(nums)
-        res = 0
+        n l..(nums)
+        res 0
         ___ i __ r..(n
             res += upperBound(nums, i, n-1, nums[i]+mid)-i-1
         r.. res
@@ -35,25 +35,25 @@ c_ Solution(o..
         __ nums[high] <_ key:
             r.. high+1
         w.... low < high:
-            mid = (low+high)//2
+            mid (low+high)//2
             __ key >_ nums[mid]:
-                low = mid+1
+                low mid+1
             ____
-                high = mid
+                high mid
         r.. low
     
     ___ countPairs_slow  nums, mid
-        n = l..(nums)
-        res = 0
+        n l..(nums)
+        res 0
         ___ i __ r..(n
-            j = i
+            j i
             w.... j < n a.. nums[j]-nums[i] <_ mid:
                 j += 1
             res += j-i-1
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1, 3, 1],
                 1,
@@ -66,7 +66,7 @@ c_ Solution(o..
         ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
-            result = smallestDistancePair(nums, k)
+            result smallestDistancePair(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

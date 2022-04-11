@@ -10,7 +10,7 @@ c_ Solution:
     ___ merge  intervals
         __ n.. intervals:
             r.. []
-        n = l..(intervals)
+        n l..(intervals)
         __ n __ 1:
             r.. intervals
         ____
@@ -18,16 +18,16 @@ c_ Solution:
             intervals.s..(key=l.... x: x.start)
             res    # list
             res.a..(intervals[0])
-            cur_end = intervals[0].end
-            cur_index = 0
+            cur_end intervals[0].end
+            cur_index 0
             ___ interval __ intervals[1:]:
                 __ interval.start <_ cur_end:
                     __ interval.end > cur_end:
-                        res[cur_index].end = interval.end
-                        cur_end = interval.end
+                        res[cur_index].end interval.end
+                        cur_end interval.end
                 ____
                     # Added a non-overlapping interval
                     res.a..(interval)
-                    cur_end = interval.end
+                    cur_end interval.end
                     cur_index += 1
             r.. res

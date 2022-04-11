@@ -16,13 +16,13 @@ ___ round_up_or_down(transactions, up=T..
     rounded    # list
     ___ f __ transactions:
         __ up __ T..
-            f = f + 1
-        r = i..(f)
+            f f + 1
+        r i..(f)
         rounded.a..(r)
     r.. rounded
 
 
-l = [4.5, 3.2, 6.9]
+l [4.5, 3.2, 6.9]
 print(round_up_or_down(l, up=F..
 
 

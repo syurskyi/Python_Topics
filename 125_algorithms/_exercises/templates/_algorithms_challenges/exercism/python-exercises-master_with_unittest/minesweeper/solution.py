@@ -1,18 +1,18 @@
 ___ board(inp
     verify_board(inp)
-    rowlen = l..(inp[0])
-    collen = l..(inp)
-    b = [l..(r) ___ r __ inp]
+    rowlen l..(inp[0])
+    collen l..(inp)
+    b [l..(r) ___ r __ inp]
     ___ i1 __ r..(collen
         ___ i2 __ r..(rowlen
             __ b[i1][i2] != ' ':
                 _____
-            cnt = inp[i1 - 1][i2 - 1:i2 + 2].c.. '*') + \
+            cnt inp[i1 - 1][i2 - 1:i2 + 2].c.. '*') + \
                 inp[i1][i2 - 1:i2 + 2].c.. '*') + \
                 inp[i1 + 1][i2 - 1:i2 + 2].c.. '*')
             __ cnt __ 0:
                 _____
-            b[i1][i2] = s..(cnt)
+            b[i1][i2] s..(cnt)
     r.. ["".j..(r) ___ r __ b]
 
 
@@ -21,12 +21,12 @@ ___ verify_board(inp
     __ n.. inp o. n.. a..(r ___ r __ inp
         r.. V...("Invalid board")
     # Rows with different lengths
-    rowlen = l..(inp[0])
-    collen = l..(inp)
+    rowlen l..(inp[0])
+    collen l..(inp)
     __ n.. a..(l..(r) __ rowlen ___ r __ inp
         r.. V...("Invalid board")
     # Unknown character in board
-    cset = s..()
+    cset s..()
     ___ r __ inp:
         cset.update(r)
     __ cset - s..('+- *|'

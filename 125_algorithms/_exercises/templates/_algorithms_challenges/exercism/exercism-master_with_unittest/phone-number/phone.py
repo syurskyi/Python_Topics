@@ -1,14 +1,14 @@
 c_ Phone:
 
-    INVALID_NUM = "0" * 10
-    AREA_CODE_END = 3
-    EXCHANGE_CODE_END = 6
+    INVALID_NUM "0" * 10
+    AREA_CODE_END 3
+    EXCHANGE_CODE_END 6
 
     ___ - , inp
-        number = number(inp)
+        number number(inp)
 
     ___ number  inp
-        cleaned = s..(inp)
+        cleaned s..(inp)
         __ valid_11_digits(cleaned
             r.. cleaned[1:]
         ____ valid_10_digits(cleaned

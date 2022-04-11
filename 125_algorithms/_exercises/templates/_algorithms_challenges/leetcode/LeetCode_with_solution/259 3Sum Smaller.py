@@ -2,7 +2,7 @@
 Premium Question
 Smaller than the target.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -14,11 +14,11 @@ c_ Solution(o..
         :rtype: int
         """
         nums.s..()
-        cnt = 0
-        n = l..(nums)
+        cnt 0
+        n l..(nums)
         ___ i __ x..(n-2
-            l = i+1
-            h = n-1
+            l i+1
+            h n-1
             w.... l < h:
                 __ nums[i]+nums[l]+nums[h] < target:
                     cnt += h-l  # move the high ptr leftward till low.

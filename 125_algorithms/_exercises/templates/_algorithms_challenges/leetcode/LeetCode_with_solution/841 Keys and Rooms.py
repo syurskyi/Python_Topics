@@ -44,13 +44,13 @@ c_ Solution:
         need a queue to keep track of processing nodes? Implicitly handle by dfs
         stacks
         """
-        n = l..(G)
-        visited = [0 ___ _ __ r..(n)]  # 0 locked, 1 visited
+        n l..(G)
+        visited [0 ___ _ __ r..(n)]  # 0 locked, 1 visited
         dfs(G, 0, visited)
         r.. a..(e __ 1 ___ e __ visited)
 
     ___ dfs  G, u, visited
-        visited[u] = 1
+        visited[u] 1
         ___ nbr __ G[u]:
             __ n.. visited[nbr]:
                 dfs(G, nbr, visited)

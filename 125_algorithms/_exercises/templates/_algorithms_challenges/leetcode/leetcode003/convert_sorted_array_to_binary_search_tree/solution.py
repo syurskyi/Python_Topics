@@ -12,12 +12,12 @@ c_ Solution:
         __ n.. num:
             r.. N..
         ____
-            mid = l..(num) / 2
-            left_array = num[:mid]
-            right_array = num[mid + 1:]
-            root = TreeNode(num[mid])
-            left_tree = sortedArrayToBST(left_array)
-            right_tree = sortedArrayToBST(right_array)
-            root.left = left_tree
-            root.right = right_tree
+            mid l..(num) / 2
+            left_array num[:mid]
+            right_array num[mid + 1:]
+            root TreeNode(num[mid])
+            left_tree sortedArrayToBST(left_array)
+            right_tree sortedArrayToBST(right_array)
+            root.left left_tree
+            root.right right_tree
             r.. root

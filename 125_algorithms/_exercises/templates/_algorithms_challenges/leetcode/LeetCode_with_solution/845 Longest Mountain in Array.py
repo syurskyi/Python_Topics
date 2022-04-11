@@ -39,19 +39,19 @@ c_ Solution:
         """
         dp
         """
-        ret = 0
-        up_cnt = 0
-        down_cnt = 0
+        ret 0
+        up_cnt 0
+        down_cnt 0
         ___ i __ r..(1, l..(A:
             __ down_cnt a.. A[i] >_ A[i-1]:
-                up_cnt = 0
-                down_cnt = 0
+                up_cnt 0
+                down_cnt 0
             __ A[i] > A[i-1]:
                 up_cnt += 1
             ____ A[i] < A[i-1]:
                 down_cnt += 1
             __ up_cnt a.. down_cnt:
-                ret = m..(ret, up_cnt + down_cnt + 1)
+                ret m..(ret, up_cnt + down_cnt + 1)
 
         r.. ret
 
@@ -59,20 +59,20 @@ c_ Solution:
         """
         dp
         """
-        n = l..(A)
-        U = [0 ___ _ __ A]  # up counter from left to right
-        D = [0 ___ _ __ A]  # down counter from right to left
+        n l..(A)
+        U [0 ___ _ __ A]  # up counter from left to right
+        D [0 ___ _ __ A]  # down counter from right to left
         ___ i __ r..(1, n
             __ A[i] > A[i-1]:
-                U[i] = U[i-1] + 1
+                U[i] U[i-1] + 1
         ___ i __ r..(n-2, -1, -1
             __ A[i] > A[i+1]:
-                D[i] = D[i+1] + 1
+                D[i] D[i+1] + 1
 
-        ret = 0
+        ret 0
         ___ i __ r..(n
             __ U[i] > 0 a.. D[i] > 0:
-                ret = m..(ret, U[i] + D[i] + 1)
+                ret m..(ret, U[i] + D[i] + 1)
 
         r.. ret
 
@@ -81,30 +81,30 @@ c_ Solution:
         a flag to indicate expecting increase or decrease
         one-pass can
         """
-        ret = 0
-        l = 1
-        expect_incr = T..
+        ret 0
+        l 1
+        expect_incr T..
         ___ i __ r..(1, l..(A:
             __ expect_incr:
                 __ A[i] > A[i-1]:
                     l += 1
                 ____ A[i] < A[i-1] a.. l >_ 2:
-                    expect_incr = F..
+                    expect_incr F..
                     l += 1
-                    ret = m..(ret, l)
+                    ret m..(ret, l)
                 ____
-                    l = 1
+                    l 1
 
             ____
                 __ A[i] < A[i-1]:
                     l += 1
-                    ret = m..(ret, l)
+                    ret m..(ret, l)
                 ____ A[i] __ A[i-1]:
-                    expect_incr = T..
-                    l = 1
+                    expect_incr T..
+                    l 1
                 ____
-                    expect_incr = T..
-                    l = 2
+                    expect_incr T..
+                    l 2
 
         r.. ret __ ret >_ 3 ____ 0
 

@@ -3,7 +3,7 @@ _______ c..
 
 ___ my_queue(n=5
     to_print    # list
-    mq = c...d..(maxlen=n)
+    mq c...d..(maxlen=n)
     ___ i __ r..(n
         mq.a..(i)
         to_print.a..((i, l..(mq)))

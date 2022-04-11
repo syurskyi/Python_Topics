@@ -1,7 +1,7 @@
 ____ c.. _______ d..
 ____ t___ _______ C..
 
-count = d..(C..)
+count d..(C..)
 
 count 'khoo'  'a'  = 1
 count 'khoo'  'b'  = 2

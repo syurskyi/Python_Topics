@@ -1,6 +1,6 @@
-DEFAULT_TEXT = ('Subscribe to our blog (sidebar) to periodically get '
+DEFAULT_TEXT ('Subscribe to our blog (sidebar) to periodically get '
                 'new PyBites Code Challenges (PCCs) in your inbox')
-DOT = '.'
+DOT '.'
 
 
 ___ strip_range(start, end
@@ -18,9 +18,9 @@ ___ strip_range(start, end
 
     ___ wrap(func
         ___ wrapped(text, *args, **kwargs
-            _start = m..(start, 0)
-            _end = m..(l..(text), end) __ end > 0 ____ 0
-            result = (text[:_start], text[_start:_end], text[_end:])
+            _start m..(start, 0)
+            _end m..(l..(text), end) __ end > 0 ____ 0
+            result (text[:_start], text[_start:_end], text[_end:])
             r.. func _*{result[0]}{DOT * l..(result[1])}{result[2]}')
 
         r.. wrapped

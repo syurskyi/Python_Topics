@@ -5,10 +5,10 @@ c_ Solution:
         d    # dict
         res    # list
         ___ i, s __ e..(strs
-            key = make_key(s)
+            key make_key(s)
             # First occurence of an anagram
             __ key n.. __ d:
-                d[key] = [s]
+                d[key] [s]
             ____
                 d[key].a..(s)
         ___ key __ d:
@@ -24,12 +24,12 @@ c_ Solution:
             __ c __ d:
                 d[c] += 1
             ____
-                d[c] = 1
+                d[c] 1
         # Iterate form 'a' to 'z'
         # This make sure the character occurences is ordered
         # and thus unique
         ___ i __ r..(o..('a'), o..('z') + 1
-            c = chr(i)
+            c chr(i)
             __ c __ d:
                 res.a..(c)
                 res.a..(s..(d[c]

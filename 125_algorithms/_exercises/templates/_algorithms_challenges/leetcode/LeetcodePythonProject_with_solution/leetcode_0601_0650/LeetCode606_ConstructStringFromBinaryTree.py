@@ -6,9 +6,9 @@ Created on Sep 6, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Solution(o..
     ___ tree2str  t
@@ -16,7 +16,7 @@ c_ Solution(o..
         :type t: TreeNode
         :rtype: str
         """
-        res = ''
+        res ''
         __ t:
             res += s..(t.val)
             __ t.right:

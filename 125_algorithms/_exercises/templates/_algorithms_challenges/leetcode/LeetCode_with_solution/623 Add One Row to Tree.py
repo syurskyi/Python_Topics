@@ -60,9 +60,9 @@ Output:
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -72,21 +72,21 @@ c_ Solution:
     ___ add  node, v, d, cur_d, child) __ TreeNode:
         # use the return value for parent's reference 
         __ cur_d __ d:
-            new = TreeNode(v)
+            new TreeNode(v)
             setattr(new, child, node)
             r.. new
 
         __ node:
-            node.left = add(node.left, v, d, cur_d + 1, "left")
-            node.right = add(node.right, v, d, cur_d + 1, "right")
+            node.left add(node.left, v, d, cur_d + 1, "left")
+            node.right add(node.right, v, d, cur_d + 1, "right")
             r.. node
 
 
 c_ Solution2:
     ___ addOneRow  root: TreeNode, v: i.., d: i..) __ TreeNode:
         __ d __ 1:
-            node = TreeNode(v)
-            node.left = root
+            node TreeNode(v)
+            node.left root
             r.. node
 
         add  root, v, d, 1)
@@ -97,12 +97,12 @@ c_ Solution2:
             r..
 
         __ cur_d + 1 __ d:
-            left = node.left
-            right = node.right
-            node.left = TreeNode(v)
-            node.left.left = left
-            node.right = TreeNode(v)
-            node.right.right = right
+            left node.left
+            right node.right
+            node.left TreeNode(v)
+            node.left.left left
+            node.right TreeNode(v)
+            node.right.right right
 
         add(node.left, v, d, cur_d + 1)
         add(node.right, v, d, cur_d + 1)

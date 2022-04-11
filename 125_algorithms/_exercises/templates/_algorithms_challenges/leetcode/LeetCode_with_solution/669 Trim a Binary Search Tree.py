@@ -43,9 +43,9 @@ Output:
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -59,8 +59,8 @@ c_ Solution:
         __ n.. node:
             r.. N..
 
-        node.left = w..(node.left, L, R)
-        node.right = w..(node.right, L, R)
+        node.left w..(node.left, L, R)
+        node.right w..(node.right, L, R)
         __ node.val < L:
             r.. node.right
         ____ node.val > R:

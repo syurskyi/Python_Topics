@@ -1,4 +1,4 @@
-NUMERAL_MAPPINGS = (
+NUMERAL_MAPPINGS (
     (1000, 'M'),
     (900, 'CM'),
     (500, 'D'),
@@ -16,7 +16,7 @@ NUMERAL_MAPPINGS = (
 
 
 ___ numeral(number
-    s = ''
+    s ''
     ___ arabic, roman __ NUMERAL_MAPPINGS:
         w.... number >_ arabic:
             s += roman

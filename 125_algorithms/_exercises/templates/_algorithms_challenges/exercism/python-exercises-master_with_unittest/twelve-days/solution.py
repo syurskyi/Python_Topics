@@ -11,15 +11,15 @@ GIFTS =  'twelve Drummers Drumming',
          'two Turtle Doves',
          'a Partridge in a Pear Tree' 
 
-ORDINAL = [N.., 'first', 'second', 'third', 'fourth', 'fifth', 'sixth',
+ORDINAL [N.., 'first', 'second', 'third', 'fourth', 'fifth', 'sixth',
            'seventh', 'eighth', 'ninth', 'tenth', 'eleventh', 'twelfth' 
 
 
 ___ verse(n
-    gifts = GIFTS -n|
+    gifts GIFTS -n|
     __ l..(gifts) > 1:
         gifts[:-1] =  ', '.j..(gifts[:-1])]
-    gifts = ', and '.j..(gifts)
+    gifts ', and '.j..(gifts)
     r.. 'On the {} day of Christmas my true love gave to me, {}.\n'.f..(
         ORDINAL[n], gifts)
 

@@ -10,10 +10,10 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        colors = [0]*3
+        colors [0]*3
         ___ num __ nums:
             colors[num]+=1
-        i, j = 0, 0
+        i, j 0, 0
         w.... j < 3:
             __ colors[j]:
                 nums[i]=j
@@ -23,7 +23,7 @@ c_ Solution(o..
                 j += 1
     
     ___ test
-        testCases = [
+        testCases [
             [2, 1, 0, 0, 1, 2, 2, 1],
         ]
         ___ nums __ testCases:

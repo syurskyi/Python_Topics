@@ -23,14 +23,14 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        left = 1
-        right = n
+        left 1
+        right n
         w.... left + 1 < right:
-            mid = left + (right - left) / 2
+            mid left + (right - left) / 2
             __ isBadVersion(mid
-                right = mid
+                right mid
             ____
-                left = mid
+                left mid
         __ isBadVersion(left
             r.. left
         ____ isBadVersion(right

@@ -6,7 +6,7 @@ ____ accents _______ filter_accents
 # https://losviajesdedomi.com/las-15-ciudades-mas-bonitas-de-espana/
 # and:
 # https://www2.rocketlanguages.com/french/lessons/french-accents/
-texts = (
+texts (
     ("Denominada en Euskera como Donostia, está "
      "situada en el Golfo de Vizcaya en la provincia "
      "de Guipúzcoa. San Sebastián no es solo conocida "
@@ -35,7 +35,7 @@ texts = (
      "The accent grave (grave accent) à, è, ù ..."
      "The accent tréma (dieresis/umlaut) ë, ï, ü"),
 )
-e.. = (
+e.. (
      'á', 'é', 'ñ', 'ú' ,
      'á', 'é', 'í', 'ñ' ,
      'á', 'é', 'í', 'ñ' ,
@@ -46,6 +46,6 @@ e.. = (
 ?p__.m__.p.("text, expected", z..(texts, e..
 ___ test_filter_accents(text, e..
     # get rid of duplicates and sort results
-    result = filter_accents(text)
-    a.. = s..(l..(s..(result)))
+    result filter_accents(text)
+    a.. s..(l..(s..(result)))
     ... a.. __ e..

@@ -31,10 +31,10 @@ Note:
 """
 
 
-MOD = 10 ** 9 + 7
+MOD 10 ** 9 + 7
 
 
-dirs = [
+dirs [
     (-2, 1),
     (-1, 2),
     (1, 2),
@@ -45,7 +45,7 @@ dirs = [
     (-2, -1),
 ]
 
-nbrs = {
+nbrs {
     1: (6, 8),
     2: (7, 9),
     3: (4, 8),
@@ -68,9 +68,9 @@ c_ Solution:
         DP
         F[pos][step] = sum(F[nbr][step+1] for all nbr)
         """
-        F = d..(l....: d..(i..
+        F d..(l....: d..(i..
         ___ pos __ r..(10
-            F[pos][N-1] = 1
+            F[pos][N-1] 1
 
         ___ n __ r..(N-2, -1, -1
             ___ pos __ r..(10
@@ -78,7 +78,7 @@ c_ Solution:
                     F[pos][n] += F[nbr][n+1]
                     F[pos][n] %= MOD
 
-        ret = 0
+        ret 0
         ___ i __ r..(10
             ret += F[i][0]
             ret %= MOD
@@ -91,7 +91,7 @@ c_ SolutionTLE2:
         cache    # dict
 
     ___ knightDialer  N: i..) __ i..:
-        ret = 0
+        ret 0
         ___ i __ r..(10
             ret += dfs(i, N-1)
             ret %= MOD
@@ -100,14 +100,14 @@ c_ SolutionTLE2:
 
     ___ dfs  i, r
         __ (i, r) n.. __ cache:
-            ret = 0
+            ret 0
             __ r __ 0:
-                ret = 1
+                ret 1
             ____
                 ___ nbr __ nbrs[i]:
                     ret += dfs(nbr, r-1)
 
-            cache[i, r] = ret
+            cache[i, r] ret
 
         r.. cache[i, r]
 
@@ -115,12 +115,12 @@ c_ SolutionTLE2:
 c_ SolutionTLE:
     ___ -
         # row, col size
-        m = 4
-        n = 3
+        m 4
+        n 3
         cache    # dict
 
     ___ knightDialer  N: i..) __ i..:
-        ret = 0
+        ret 0
         ___ i __ r..(m
             ___ j __ r..(n
                 __ (i, j) != (3, 0) a.. (i, j) != (3, 2
@@ -130,18 +130,18 @@ c_ SolutionTLE:
 
     ___ dfs  i, j, r
         __ (i, j, r) n.. __ cache:
-            ret = 0
+            ret 0
             __ r __ 0:
-                ret = 1
+                ret 1
             ____
                 ___ di, dj __ dirs:
-                    I = i + di
-                    J = j + dj
+                    I i + di
+                    J j + dj
                     __ 0 <_ I < m a.. 0 <_ J < n a.. (I, J) != (3, 0) a.. (I, J) != (3, 2
                         ret += dfs(I, J, r - 1)
                         ret %= MOD
 
-            cache[i, j, r] = ret
+            cache[i, j, r] ret
 
         r.. cache[i, j, r]
 

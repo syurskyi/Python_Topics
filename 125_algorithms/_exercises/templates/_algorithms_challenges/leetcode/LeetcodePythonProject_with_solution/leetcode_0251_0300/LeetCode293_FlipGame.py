@@ -13,12 +13,12 @@ c_ Solution(o..
         r.. result
     
     ___ test
-        testCases = [
+        testCases [
             '++++',
         ]
         ___ s __ testCases:
             print('s: %s' % (s
-            result = generatePossibleNextMoves(s)
+            result generatePossibleNextMoves(s)
             print('result: %s' % (result
             print('-='*20+'-')
     

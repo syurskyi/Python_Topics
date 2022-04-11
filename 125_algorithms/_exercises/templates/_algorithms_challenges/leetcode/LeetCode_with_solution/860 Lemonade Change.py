@@ -56,7 +56,7 @@ c_ Solution:
         """
         count
         """
-        five, ten, twenty = 0, 0, 0
+        five, ten, twenty 0, 0, 0
         ___ b __ bills:
             __ b __ 5:
                 five += 1

@@ -1,6 +1,6 @@
 _______ p.... __ pd
 ____ io _______ StringIO
-data = """Luke Skywalker,172,77
+data """Luke Skywalker,172,77
           C-3PO,167,75
           R2-D2,96,32
           Darth Vader,202,136
@@ -27,8 +27,8 @@ ___ person_max_bmi(data=data
     """Return (name, BMI float) of the character in data that
        has the highest BMI (rounded on 2 decimals)"""
 
-    star_wars = pd.read_csv(StringIO(data),names= 'character','height','weight' )
-    star_wars.character = star_wars.character.s...s..
+    star_wars pd.read_csv(StringIO(data),names= 'character','height','weight' )
+    star_wars.character star_wars.character.s...s..
 
     star_wars 'bmi'  = star_wars.weight.div(star_wars.height.div(100)**2).r..(2)
     

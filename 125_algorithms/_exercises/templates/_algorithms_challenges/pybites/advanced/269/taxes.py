@@ -42,9 +42,9 @@ Sample output from running the code in the if/main clause:
 ____ dataclasses _______ dataclass, field
 ____ t___ _______ L.., N..
 
-Bracket = N..("Bracket", [("end", i..), ("rate", f__)])
-Taxed = N..("Taxed", [("amount", f__), ("rate", f__), ("tax", f__)])
-BRACKET = [
+Bracket N..("Bracket", [("end", i..), ("rate", f__)])
+Taxed N..("Taxed", [("amount", f__), ("rate", f__), ("tax", f__)])
+BRACKET [
     Bracket(9_700, 0.1),
     Bracket(39_475, 0.12),
     Bracket(84_200, 0.22),
@@ -63,13 +63,13 @@ c_ Taxes:
 
     """
 
-    OUTPUT_WIDTH = 34
+    OUTPUT_WIDTH 34
 
     ___ - ,salary,bracket=BRACKET
-        salary = salary
-        income = salary
-        bracket = bracket
-        taxes_owed = taxes
+        salary salary
+        income salary
+        bracket bracket
+        taxes_owed taxes
 
 
     ___ -s(self) __ s..:
@@ -89,18 +89,18 @@ c_ Taxes:
         n= 34
 
 
-        s = f"{'Summary Report':^34}\n"
+        s f"{'Summary Report':^34}\n"
 
         s += '=' * 34 + '\n'
 
-        values = [("Taxable Income:",f"{salary:,.2f}"),("Taxes Owed:",f"{taxes:,.2f}"),("Tax Rate:",f"{tax_rate:.2f}%")]
+        values [("Taxable Income:",f"{salary:,.2f}"),("Taxes Owed:",f"{taxes:,.2f}"),("Tax Rate:",f"{tax_rate:.2f}%")]
 
-        largest_left_length = l..(values[0][0]) + 1
-        largest_right_length = l..(s..(i..(salary))) + 4
-        spaces = 32 - (largest_left_length + largest_right_length)
+        largest_left_length l..(values[0][0]) + 1
+        largest_right_length l..(s..(i..(salary))) + 4
+        spaces 32 - (largest_left_length + largest_right_length)
 
         ___ i,(s__,value) __ e..(values,1
-            t = ' ' * spaces
+            t ' ' * spaces
             s += f' {s__:>{largest_left_length}}{t}{value:>{largest_right_length}}\n'
 
         r.. s
@@ -121,21 +121,21 @@ c_ Taxes:
         print(f"{'Taxes Breakdown':^{OUTPUT_WIDTH}}")
         print("=" * OUTPUT_WIDTH)
 
-        largest_amount = largest_tax =  f__("-inf")
+        largest_amount largest_tax =  f__("-inf")
         ___ amount,rate,tax __ tax_amounts:
-            largest_amount = m..(largest_amount,i..(amount
-            largest_tax = m..(largest_tax,i..(tax
+            largest_amount m..(largest_amount,i..(amount
+            largest_tax m..(largest_tax,i..(tax
     
         
-        largest_amount = l..(s..(largest_amount
+        largest_amount l..(s..(largest_amount
         largest_amount += 16
-        largest_tax = l..(s..(largest_tax
+        largest_tax l..(s..(largest_tax
         largest_tax += 4
 
-        middle = OUTPUT_WIDTH - 3 - (largest_amount + 11) - (largest_tax + 4)
-        spaces = ' ' * 5
+        middle OUTPUT_WIDTH - 3 - (largest_amount + 11) - (largest_tax + 4)
+        spaces ' ' * 5
         ___ amount,rate,tax __ tax_amounts:
-            left_string = f"{amount:,.2f} x {rate:.2f} ="
+            left_string f"{amount:,.2f} x {rate:.2f} ="
             print(f"{left_string:>{largest_amount}}{spaces}{tax:>{largest_tax},.2f}")
         
         print('-' *OUTPUT_WIDTH)
@@ -159,23 +159,23 @@ c_ Taxes:
         tax_amounts    # list
         taxes_owed =0
         
-        value = salary
-        previous_end = 0
-        leave = F..
+        value salary
+        previous_end 0
+        leave F..
         ___ end,rate __ bracket:
             __ value >_ end:
-                tax_paid = end - previous_end
+                tax_paid end - previous_end
             ____
-                tax_paid = value - previous_end
-                leave = T..
+                tax_paid value - previous_end
+                leave T..
             
 
-            tax_owed = tax_paid * rate
+            tax_owed tax_paid * rate
             #value -= tax_owed
             taxes_owed += tax_owed
-            tax_amount = Taxed(tax_paid,rate,tax_owed)
+            tax_amount Taxed(tax_paid,rate,tax_owed)
             tax_amounts.a..(tax_amount)
-            previous_end = end
+            previous_end end
             __ leave:
                 _____
 
@@ -206,7 +206,7 @@ c_ Taxes:
 
 
 __ _______ __ _______
-    salary = 40_000
-    t = Taxes(salary)
+    salary 40_000
+    t Taxes(salary)
     print(t)
     t.report()

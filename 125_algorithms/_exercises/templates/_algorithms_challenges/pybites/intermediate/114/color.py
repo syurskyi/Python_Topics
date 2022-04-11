@@ -4,7 +4,7 @@ _______ u__.r..
 
 # PREWORK (don't modify): import colors, save to temp file and import
 tmp  __.g.. TMP  /tmp
-color_values_module = __.p...j..(tmp, 'color_values.py')
+color_values_module __.p...j..(tmp, 'color_values.py')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/color_values.py',
     color_values_module
@@ -23,7 +23,7 @@ c_ Color:
 
     ___ - , color
         ? ?
-        rgb = COLOR_NAMES.g.. color.u..
+        rgb COLOR_NAMES.g.. color.u..
 
     $
     ___ hex2rgb(hex_value
@@ -36,9 +36,9 @@ c_ Color:
         values    # list
 
         ___ i __ r..(1,l..(hex_value),2
-            h = hex_value[i:i + 2]
+            h hex_value[i:i + 2]
             ___
-                value = i..(h,16)
+                value i..(h,16)
             ______:
                 r..
             ____
@@ -73,10 +73,10 @@ c_ Color:
             __ n.. 0 <_ value <_ 255:
                 r.. V...("Invalid value")
 
-            hex_value = f"{hex(value0<2}"
-            hex_value = hex_value[2:]
+            hex_value f"{hex(value0<2}"
+            hex_value hex_value[2:]
             __ hex_value __ '0':
-                hex_value = hex_value.zfill(2)
+                hex_value hex_value.zfill(2)
             values.a..(hex_value)
         
         r.. '#' + ''.j..(values)

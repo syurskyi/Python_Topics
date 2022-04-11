@@ -39,10 +39,10 @@ c_ Solution:
 
         The largest number in the chunk determines the ending index of the chunk
         """
-        ret = 0
-        cur_max_idx = 0
+        ret 0
+        cur_max_idx 0
         ___ i __ r..(l..(arr:
-            cur_max_idx = m..(cur_max_idx, arr[i])
+            cur_max_idx m..(cur_max_idx, arr[i])
             __ i __ cur_max_idx:
                 ret += 1
 

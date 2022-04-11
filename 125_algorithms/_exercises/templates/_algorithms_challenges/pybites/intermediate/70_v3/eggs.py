@@ -1,14 +1,14 @@
 ____ r__ _______ c..
 
-COLORS = 'red blue green yellow brown purple'.s..
+COLORS 'red blue green yellow brown purple'.s..
 
 
 c_ EggCreator:
 
 
     ___ - ,limit
-        limit = limit
-        i = 0
+        limit limit
+        i 0
     
     
 

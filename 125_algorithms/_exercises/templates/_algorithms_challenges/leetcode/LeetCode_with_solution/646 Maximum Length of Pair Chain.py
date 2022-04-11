@@ -28,15 +28,15 @@ c_ Solution:
         O(nlg n) + O(n)
         """
         pairs.s..(key=l.... x: x[1])
-        n = l..(pairs)
+        n l..(pairs)
 
-        ret = 0
-        cur_end = -f__("inf")
+        ret 0
+        cur_end -f__("inf")
         ___ i __ r..(n
             __ pairs[i][0] <_ cur_end:
                 _____
 
-            cur_end = pairs[i][1]
+            cur_end pairs[i][1]
             ret += 1
 
         r.. ret
@@ -48,13 +48,13 @@ c_ Solution:
         similar to 435 Non-overlaping interval
         """
         pairs.s..(key=l.... x: x[1])
-        n = l..(pairs)
+        n l..(pairs)
 
-        ret = 0
-        i = 0
+        ret 0
+        i 0
         w.... i < n:
             ret += 1
-            cur_end = pairs[i][1]
+            cur_end pairs[i][1]
 
             i += 1
             w.... i < n a.. pairs[i][0] <_ cur_end:
@@ -71,12 +71,12 @@ c_ Solution2:
         O(N^2)
         """
         pairs.s..(key=l.... x: t..(x
-        n = l..(pairs)
-        F = [1 ___ _ __ r..(n)]
+        n l..(pairs)
+        F [1 ___ _ __ r..(n)]
         ___ i __ r..(n
             ___ j __ r..(i
                 __ pairs[j][1] < pairs[i][0]:
-                    F[i] = m..(F[i], F[j] + 1)
+                    F[i] m..(F[i], F[j] + 1)
 
         r.. m..(F)
 

@@ -18,13 +18,13 @@ The binary representation of 7 is: 111.
 
 c_ Solution:
     ___ hasAlternatingBits  n: i..) __ b..:
-        last = N..
+        last N..
         w.... n:
-            cur = n & 1
+            cur n & 1
             # `if last` is error
             __ last __ n.. N.. a.. last ^ cur __ 0:
                 r.. F..
-            last = cur
+            last cur
             n >>= 1
 
         r.. T..

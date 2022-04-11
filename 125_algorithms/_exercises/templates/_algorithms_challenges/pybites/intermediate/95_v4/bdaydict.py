@@ -1,4 +1,4 @@
-MSG = 'Hey {}, there are more people with your birthday!'
+MSG 'Hey {}, there are more people with your birthday!'
 
 
 c_ BirthdayDict(d..
@@ -6,7 +6,7 @@ c_ BirthdayDict(d..
        the same birthday (day+month) as somebody already in the dict"""
 
     ___ __setitem__  name, birthday
-        bday = birthday.month, birthday.day
+        bday birthday.month, birthday.day
 
         __ any([(v.month, v.day) __ bday ___ v __ v..
             print(MSG.f..(name

@@ -17,7 +17,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        l, r = 0, n-1
+        l, r 0, n-1
         w.... l < r:
             __ knows(l, r
                 l += 1

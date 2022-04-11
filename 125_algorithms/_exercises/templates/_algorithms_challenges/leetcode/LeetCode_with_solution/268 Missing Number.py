@@ -8,7 +8,7 @@ Note:
 Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space
 complexity?
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -32,19 +32,19 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        num_n = N..
-        n = l..(nums)
+        num_n N..
+        n l..(nums)
 
-        i = 0
+        i 0
         w.... i < n:
             __ nums[i] __ n:
-                num_n = nums[i]
-                nums[i] = N..
+                num_n nums[i]
+                nums[i] N..
                 i += 1
 
             ____ nums[i] __ n.. N.. a.. nums[i] != i:
-                j = nums[i]
-                nums[i], nums[j] = nums[j], nums[i]
+                j nums[i]
+                nums[i], nums[j] nums[j], nums[i]
 
             ____
                 i += 1

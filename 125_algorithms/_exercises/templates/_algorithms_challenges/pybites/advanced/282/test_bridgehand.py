@@ -17,20 +17,20 @@ c_ TestHand:
     ssp: i..
     total_points: i..
     ltc: i..
-    card_list: L..[Card] = field(init=F..)
+    card_list: L..[Card] field(init=F..)
 
     ___ __post_init__
         """ Generate actual list of Card instances from card_string """
         card_list    # list
         ___ suit_holding __ card_string.s.. :
-            suit = Suit[suit_holding[0]]
+            suit Suit[suit_holding[0]]
             ___ rank __ suit_holding[2:]:
-                card = Card(suit, Rank[rank])
+                card Card(suit, Rank[rank])
                 card_list.a..(card)
         shuffle(card_list)
 
 
-test_hands = [
+test_hands [
     TestHand("S:AKJ H:QJT9 D:5432 C:AK", 1, 0, 0, 18, 1, 19, 6),
     TestHand("S:A76 H:KT75 D:KQ2 C:AK8", 0, 0, 0, 19, 0, 19, 6),
     TestHand("S:AKQJT98765432", 0, 0, 3, 10, 9, 19, 0),
@@ -53,9 +53,9 @@ test_hands = [
     TestHand("S:KJT97 H:AQ843 D:86 C:5", 1, 1, 0, 10, 3, 13, 6),
 ]
 
-hand_pairs = [(BridgeHand(hand.card_list), hand) ___ hand __ test_hands]
+hand_pairs [(BridgeHand(hand.card_list), hand) ___ hand __ test_hands]
 
-malformed_hands = [
+malformed_hands [
     TestHand("S:AKJ H:QJT9 D:765432 C:AK", 1, 0, 0, 18, 1, 19, 6),
     TestHand("S:A H:K D:Q2 C:K8", 0, 0, 0, 19, 0, 19, 6),
 ]

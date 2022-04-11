@@ -5,9 +5,9 @@ c_ Solution(o..
     :type n: int
     :rtype: int
     """
-    i = 0
-    patches = 0
-    miss = 1
+    i 0
+    patches 0
+    miss 1
     w.... miss <_ n:
       __ i < l..(nums) a.. nums[i] <_ miss:
         miss += nums[i]

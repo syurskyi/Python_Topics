@@ -7,10 +7,10 @@ Created on Apr 11, 2017
 c_ Solution(o..
     ___ minAbbreviation  target, dictionary
         diffs    # list
-        m = l..(target)
+        m l..(target)
         ___ word __ dictionary:
             __ l..(word) != m: _____
-            bits = 0
+            bits 0
             ___ i, c __ e..(word
                 __ c != target[i]:
                     bits += 2**i
@@ -24,12 +24,12 @@ c_ Solution(o..
         r.. m..(abbrs, key=l.... x: l..(x
     
     ___ abbr  target, num
-        word, count = '', 0
+        word, count '', 0
         ___ w __ target:
             __ num & 1 __ 1:
                 __ count:
                     word += s..(count)
-                    count = 0
+                    count 0
                 word += w
             ____
                 count += 1
@@ -39,7 +39,7 @@ c_ Solution(o..
         r.. word
     
     ___ test
-        testCases = [
+        testCases [
             [
                 "apple",
                 ["blade"],
@@ -52,7 +52,7 @@ c_ Solution(o..
         ___ target, dictionary __ testCases:
             print('target: %s' % target)
             print('dictionary: %s' % dictionary)
-            result = minAbbreviation(target, dictionary)
+            result minAbbreviation(target, dictionary)
             print('result: %s' % result)
             print('-='*30+'-')
 

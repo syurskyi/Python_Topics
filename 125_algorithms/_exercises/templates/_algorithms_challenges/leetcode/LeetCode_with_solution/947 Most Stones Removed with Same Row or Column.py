@@ -41,8 +41,8 @@ c_ Solution:
         construct graph O(N^2)
         DFS - O(N)
         """
-        G = d..(l..)
-        n = l..(stones)
+        G d..(l..)
+        n l..(stones)
         ___ i __ r..(n
             ___ j __ r..(i
                 __ stones[i][0] __ stones[j][0] o. stones[i][1] __ stones[j][1]:
@@ -50,8 +50,8 @@ c_ Solution:
                     G[j].a..(i)
 
         # dfs
-        comp_cnt = 0
-        visited = [F.. ___ _ __ r..(n)]
+        comp_cnt 0
+        visited [F.. ___ _ __ r..(n)]
         ___ i __ r..(n
             __ n.. visited[i]:
                 comp_cnt += 1
@@ -60,7 +60,7 @@ c_ Solution:
         r.. n - comp_cnt
 
     ___ dfs  G, i, visited
-        visited[i] = T..
+        visited[i] T..
         ___ nbr __ G[i]:
             __ n.. visited[nbr]:
                 dfs(G, nbr, visited)

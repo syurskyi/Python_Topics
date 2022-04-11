@@ -1,11 +1,11 @@
 ____ c.. _______ n..
 ____ d__ _______ d__
 
-TimeOffset = n..('TimeOffset', 'offset date_str divider')
+TimeOffset n..('TimeOffset', 'offset date_str divider')
 
-NOW = d__.n..
-MINUTE, HOUR, DAY = 60, 60*60, 24*60*60
-TIME_OFFSETS = (
+NOW d__.n..
+MINUTE, HOUR, DAY 60, 60*60, 24*60*60
+TIME_OFFSETS (
     TimeOffset(10, 'just now', N..),
     TimeOffset(MINUTE, '{} seconds ago', N..),
     TimeOffset(2*MINUTE, 'a minute ago', N..),
@@ -22,13 +22,13 @@ ___ pretty_date(date
     __ n.. isi..(date, d__) o. date > NOW:
         r.. V...
 
-    secs = (NOW - date).total_seconds()
+    secs (NOW - date).total_seconds()
     print _*{secs=}')
     ___ to __ TIME_OFFSETS:
         __ secs < to.offset:
-            result = to.date_str.f..(i..(secs / (to.divider __ to.divider ____ 1)))
+            result to.date_str.f..(i..(secs / (to.divider __ to.divider ____ 1)))
             _____
     ____
-        result = date.s..('%m/%d/%y')
+        result date.s..('%m/%d/%y')
 
     r.. result

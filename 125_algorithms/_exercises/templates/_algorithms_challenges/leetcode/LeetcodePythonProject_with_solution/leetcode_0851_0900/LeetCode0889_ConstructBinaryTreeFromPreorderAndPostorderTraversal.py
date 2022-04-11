@@ -6,9 +6,9 @@ Created on Oct 29, 2019
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution(o..
     ___ constructFromPrePost  pre, post
@@ -22,24 +22,24 @@ c_ Solution(o..
     ___ helper  pre, preStart, preEnd, post, postStart, postEnd
         __ preStart > preEnd:
             r.. N..
-        val = pre[preStart]
-        node = TreeNode(val)
+        val pre[preStart]
+        node TreeNode(val)
         __ postStart __ postEnd:
             r.. node
         
-        nextPreStart = preStart+1
-        val = pre[preStart+1]
-        nextPostEnd = post.i.. val)
-        nextPreEnd = nextPreStart+(nextPostEnd-postStart)
-        leftNode = helper(pre, nextPreStart, nextPreEnd, post, postStart, nextPostEnd)
-        rightNode = helper(pre, nextPreEnd+1, preEnd, post, nextPostEnd+1, postEnd-1)
+        nextPreStart preStart+1
+        val pre[preStart+1]
+        nextPostEnd post.i.. val)
+        nextPreEnd nextPreStart+(nextPostEnd-postStart)
+        leftNode helper(pre, nextPreStart, nextPreEnd, post, postStart, nextPostEnd)
+        rightNode helper(pre, nextPreEnd+1, preEnd, post, nextPostEnd+1, postEnd-1)
 
-        node.left = leftNode
-        node.right = rightNode
+        node.left leftNode
+        node.right rightNode
         r.. node
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [2,1,3],
                 [3,1,2],
@@ -54,7 +54,7 @@ c_ Solution(o..
 #             ],
         ]
         ___ pre, post __ testCases:
-            node = constructFromPrePost(pre, post)
+            node constructFromPrePost(pre, post)
             print(node)
 
 __ _____ __ _____

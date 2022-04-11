@@ -12,7 +12,7 @@ c_ Solution(o..
         __ start != i a.. nums[i] __ nums[i - 1]:
           _____
         __ i n.. __ visited:
-          visited[i] = 1
+          visited[i] 1
           p...a..(nums[i])
           dfs(i + 1, nums, p.., res, visited)
           p...p.. )

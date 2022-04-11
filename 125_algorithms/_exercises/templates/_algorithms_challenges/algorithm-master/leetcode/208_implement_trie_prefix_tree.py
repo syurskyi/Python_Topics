@@ -1,12 +1,12 @@
 c_ TrieNode:
     ___ - , val_ N..
-        end_at = val
+        end_at val
         children    # dict
 
 
 c_ Trie:
     ___ -
-        trie = TrieNode()
+        trie TrieNode()
 
     ___ insert  word
         """
@@ -17,12 +17,12 @@ c_ Trie:
         __ n.. word:
             r..
 
-        node = trie
+        node trie
         ___ char __ word:
             __ char n.. __ node.children:
-                node.children[char] = TrieNode()
-            node = node.children[char]
-        node.end_at = word
+                node.children[char] TrieNode()
+            node node.children[char]
+        node.end_at word
 
     ___ s..  word
         """
@@ -33,11 +33,11 @@ c_ Trie:
         __ n.. word:
             r.. F..
 
-        node = trie
+        node trie
         ___ char __ word:
             __ char n.. __ node.children:
                 r.. F..
-            node = node.children[char]
+            node node.children[char]
         r.. node.end_at __ word
 
     ___ startsWith  prefix
@@ -49,11 +49,11 @@ c_ Trie:
         __ n.. prefix:
             r.. F..
 
-        node = trie
+        node trie
         ___ char __ prefix:
             __ char n.. __ node.children:
                 r.. F..
-            node = node.children[char]
+            node node.children[char]
         r.. T..
 
 

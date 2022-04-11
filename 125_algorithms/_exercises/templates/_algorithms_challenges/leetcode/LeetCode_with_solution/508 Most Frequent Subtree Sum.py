@@ -29,9 +29,9 @@ signed integer.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 ____ c.. _______ d..
@@ -44,13 +44,13 @@ c_ Solution:
         :type root: TreeNode
         :rtype: List[int]
         """
-        counter = d..(i..)
+        counter d..(i..)
         traverse(root, counter)
-        ret = [[], 0]
+        ret [[], 0]
         ___ k, v __ counter.i..:
             __ v > ret[1]:
-                ret[0] = [k]
-                ret[1] = v
+                ret[0] [k]
+                ret[1] v
             ____ v __ ret[1]:
                 ret[0].a..(k)
 
@@ -60,7 +60,7 @@ c_ Solution:
         __ n.. root:
             r.. 0
 
-        cur = root.val
+        cur root.val
         cur += traverse(root.left, counter)
         cur += traverse(root.right, counter)
         counter[cur] += 1

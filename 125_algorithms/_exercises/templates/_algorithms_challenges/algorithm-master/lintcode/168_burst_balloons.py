@@ -10,15 +10,15 @@ c_ Solution:
         """
         the value of last balloons is `1 * v * 1`
         """
-        V = [1] + V + [1]
+        V [1] + V + [1]
 
-        n = l..(V)
+        n l..(V)
 
         """
         `dp[i][j]` means the maximum value when
         all the balloons in [i+1, j-1] was bursted
         """
-        dp = [[0] * n ___ _ __ r..(n)]
+        dp [[0] * n ___ _ __ r..(n)]
         # pi = [[0] * n for _ in range(n)]
 
         ___ i __ r..(n - 1 - 2, -1, -1
@@ -29,7 +29,7 @@ c_ Solution:
                 `i + 1 <= k <= j - 1`
                 """
                 ___ k __ r..(i + 1, j
-                    dp[i][j] = m..(
+                    dp[i][j] m..(
                         dp[i][j],
                         dp[i][k] + dp[k][j] + V[i] * V[k] * V[j]
                     )

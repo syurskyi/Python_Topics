@@ -1,5 +1,5 @@
 ___ check_brackets(s__
-    counterparts = {')': '(', '}': '{', ' ': ' '}
+    counterparts {')': '(', '}': '{', ' ': ' '}
 
     stack    # list
     ___ char __ s__:

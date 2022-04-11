@@ -1,5 +1,5 @@
 # See tests for a more comprehensive complementary table
-SIMPLE_COMPLEMENTS_STR = """#Reduced table with bases A, G, C, T
+SIMPLE_COMPLEMENTS_STR """#Reduced table with bases A, G, C, T
  Base	Complementary Base
  A	T
  T	A
@@ -7,7 +7,7 @@ SIMPLE_COMPLEMENTS_STR = """#Reduced table with bases A, G, C, T
  C	G
 """
 
-COMPLEMENTS_STR = """# Full table with ambigous bases
+COMPLEMENTS_STR """# Full table with ambigous bases
  Base	Name	Bases Represented	Complementary Base
  A	Adenine	A	T
  T	Thymidine	T 	A
@@ -30,9 +30,9 @@ COMPLEMENTS_STR = """# Full table with ambigous bases
 # Recommended helper function
 ___ get_complement_pair(str_table=SIMPLE_COMPLEMENTS_STR
     pair_dict    # dict
-    pair_list = [base.s.. ___ base __ str_table.s..  __ base[0] != '#' a.. base[:5] != ' Base'
+    pair_list [base.s.. ___ base __ str_table.s..  __ base[0] != '#' a.. base[:5] != ' Base'
     ___ each_pair __ pair_list:
-        pair_dict[each_pair.s..('\t')[0]] = each_pair.s..('\t')[-1]
+        pair_dict[each_pair.s..('\t')[0]] each_pair.s..('\t')[-1]
     r.. pair_dict
 
 
@@ -44,8 +44,8 @@ ___ _clean_sequence(sequence, str_table
     characters
     t!t%ttttAACCG --> TTTTTTAACCG
     """
-    bases = ''.j..([base.s...s..('\t')[0] ___ base __ str_table.s..  __ base[0] != '#' a.. base[:5] != ' Base' )
-    return_str = ''.j..([char.u.. ___ char __ sequence __ char.u.. __ bases])
+    bases ''.j..([base.s...s..('\t')[0] ___ base __ str_table.s..  __ base[0] != '#' a.. base[:5] != ' Base' )
+    return_str ''.j..([char.u.. ___ char __ sequence __ char.u.. __ bases])
     r.. return_str
 
 
@@ -57,7 +57,7 @@ ___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     not found in str_table characters
     e.g. t!t%ttttAACCG --> GCCAATTTTTT
     """
-    clear_sequence = _clean_sequence(sequence, str_table)
+    clear_sequence _clean_sequence(sequence, str_table)
     r.. clear_sequence[::-1]
 
 
@@ -69,8 +69,8 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     str_table while removing non input_sequence characters
     e.g. t!t%ttttAACCG --> AAAAAATTGGC
     """
-    pair_dict = get_complement_pair(str_table)
-    clean_sequence = _clean_sequence(sequence, str_table)
+    pair_dict get_complement_pair(str_table)
+    clean_sequence _clean_sequence(sequence, str_table)
     r.. ''.j..([pair_dict[base] ___ base __ clean_sequence])
 
 
@@ -82,8 +82,8 @@ ___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     while removing non input_sequence characters
     e.g. t!t%ttttAACCG --> CGGTTAAAAAA
     """
-    pair_dict = get_complement_pair(str_table)
-    clean_sequence = reverse(sequence, str_table)
+    pair_dict get_complement_pair(str_table)
+    clean_sequence reverse(sequence, str_table)
     r.. ''.j..([pair_dict[base] ___ base __ clean_sequence])
 
 #print(reverse('t!t%ttttAACCG', SIMPLE_COMPLEMENTS_STR))

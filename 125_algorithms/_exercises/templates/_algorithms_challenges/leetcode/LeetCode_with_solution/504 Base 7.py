@@ -23,14 +23,14 @@ c_ Solution:
         __ num __ 0:
             r.. "0"
         ret    # list
-        n = a..(num)
+        n a..(num)
         w.... n:
             ret.a..(n % 7)
             n //= 7
 
-        ret = "".j.. m..(s.., ret[::-1]
+        ret "".j.. m..(s.., ret[::-1]
         __ num < 0:
-            ret = "-" + ret
+            ret "-" + ret
 
         r.. ret
 

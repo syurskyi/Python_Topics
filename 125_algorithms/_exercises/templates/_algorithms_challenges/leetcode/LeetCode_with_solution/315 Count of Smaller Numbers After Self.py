@@ -12,39 +12,39 @@ To the right of 6 there is 1 smaller element (1).
 To the right of 1 there is 0 smaller element.
 Return the array [2, 1, 1, 0].
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode(o..
     ___ - , start, end, cnt=0
-        start = start
-        end = end
-        cnt = cnt
-        left = N..
-        right = N..
+        start start
+        end end
+        cnt cnt
+        left N..
+        right N..
 
 
 c_ SegmentTree(o..
     ___ - , n
-        root = build(0, n)
+        root build(0, n)
 
     ___ build  start, end
         __ start >_ end: r..
         __ start __ end-1: r.. TreeNode(start, end)
-        node = TreeNode(start, end)
-        node.left = build(start, (start+end)/2)
-        node.right = build((start+end)/2, end)
+        node TreeNode(start, end)
+        node.left build(start, (start+end)/2)
+        node.right build((start+end)/2, end)
         r.. node
 
     ___ inc  idx, val
-        cur = root
+        cur root
         w.... cur:
             cur.cnt += val
-            mid = (cur.start+cur.end)/2
+            mid (cur.start+cur.end)/2
             __ cur.start <_ idx < mid:
-                cur = cur.left
+                cur cur.left
             ____ mid <_ idx < cur.end:
-                cur = cur.right
+                cur cur.right
             ____
                 r..
 
@@ -52,7 +52,7 @@ c_ SegmentTree(o..
         __ n.. cur:
             r.. 0
 
-        mid = (cur.start+cur.end)/2
+        mid (cur.start+cur.end)/2
         __ cur.start <_ idx < mid:
             r.. query_less(cur.left, idx)
         ____ mid <_ idx < cur.end:
@@ -73,11 +73,11 @@ c_ Solution(o..
         # preprocess the array to make it discrete in [0, 1, ..., n-1]
         h    # dict
         ___ i, v __ e..(s..(nums:
-            h[v] = i  # override duplicates
+            h[v] i  # override duplicates
 
-        A = [h[v] ___ v __ nums]
-        n = l..(A)
-        st = SegmentTree(n)
+        A [h[v] ___ v __ nums]
+        n l..(A)
+        st SegmentTree(n)
         ret    # list
         ___ i __ x..(n-1, -1, -1
             ret.a..(st.query_less(st.root, A[i]

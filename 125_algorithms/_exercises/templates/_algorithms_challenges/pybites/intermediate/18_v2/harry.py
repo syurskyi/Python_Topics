@@ -5,8 +5,8 @@ ____ c.. _______ C..
 
 # data provided
 tmp  __.g.. TMP  /tmp
-stopwords_file = __.p...j..(tmp, 'stopwords')
-harry_text = __.p...j..(tmp, 'harry')
+stopwords_file __.p...j..(tmp, 'stopwords')
+harry_text __.p...j..(tmp, 'harry')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/stopwords.txt',
     stopwords_file
@@ -21,17 +21,17 @@ ___ get_harry_most_common_word
 
 
     w__ o.. harry_text,'r',encoding='utf-8') __ f:
-        text = f.r..
+        text f.r..
 
     
     w__ o.. stopwords_file _ __ f:
-        stopwords = ?.r__.s..
+        stopwords ?.r__.s..
 
     
-    text = __.s.. _ [^a-z0-9\s]','',text.l..
-    words = text.s..
+    text __.s.. _ [^a-z0-9\s]','',text.l..
+    words text.s..
 
-    word_counts = C..(word ___ word __ text.s..  __ word n.. __ stopwords)
+    word_counts C..(word ___ word __ text.s..  __ word n.. __ stopwords)
 
 
     r.. word_counts.most_common(1)[0]

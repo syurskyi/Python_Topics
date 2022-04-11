@@ -36,7 +36,7 @@ Time complexity required: O(n) where n is the size of the input string.
 
 Notice that a/aa/aaa/file1.txt is not the longest file path, if there is another path aaaaaaaaaaaaaaaaaaaaa/sth.png.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -45,21 +45,21 @@ c_ Solution(o..
         :type input: str
         :rtype: int
         """
-        input = input.s..('\n')
+        input input.s..('\n')
         F    # list
-        gmax = 0
+        gmax 0
         ___ elt __ input:
-            idx = elt.c.. '\t')
-            idx = m..(idx, l..(F
-            e = elt.s..('\t')
-            prev = -1 __ idx __ 0 ____ F[idx-1]
+            idx elt.c.. '\t')
+            idx m..(idx, l..(F
+            e elt.s..('\t')
+            prev -1 __ idx __ 0 ____ F[idx-1]
             __ idx __ l..(F
                 F.a..(prev + 1 + l..(e
             ____
-                F[idx] = prev + 1 + l..(e)  # reset
+                F[idx] prev + 1 + l..(e)  # reset
 
             __ '.' __ elt:
-                gmax = m..(gmax, F[idx])
+                gmax m..(gmax, F[idx])
 
         r.. gmax
 

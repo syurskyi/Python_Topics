@@ -11,18 +11,18 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        s = 0
-        e = 0
-        ret = 0
+        s 0
+        e 0
+        ret 0
         w.... s < l..(nums
             __ nums[s] __ 1:
                 w.... e < l..(nums) a.. nums[e] __ 1:
                     e += 1
-                ret = m..(ret, e - s)
+                ret m..(ret, e - s)
             ____
                 e += 1
 
-            s = e
+            s e
 
         r.. ret
 

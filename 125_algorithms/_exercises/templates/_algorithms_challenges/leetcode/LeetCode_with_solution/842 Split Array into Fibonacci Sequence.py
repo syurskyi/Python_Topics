@@ -47,7 +47,7 @@ S contains only digits.
 ____ t___ _______ L..
 
 
-MAX = 2 ** 31 - 1
+MAX 2 ** 31 - 1
 
 
 c_ Solution:
@@ -59,35 +59,35 @@ c_ Solution:
         2^31 - 1 is length 10
         brute force
         """
-        l = l..(S)
+        l l..(S)
         ___ i __ r..(1, l + 1
-            num_str = S[:i]
+            num_str S[:i]
             __ l..(num_str) > 1 a.. num_str.s.. "0"
                 _____
 
-            num = i..(num_str)
+            num i..(num_str)
             __ num > MAX:
                 _____
 
             ___ j __ r..(i + 1, l + 1
-                num2_str = S[i:j]
+                num2_str S[i:j]
                 __ l..(num2_str) > 1 a.. num2_str.s.. "0"
                     _____
 
-                num2 = i..(num2_str)
+                num2 i..(num2_str)
                 __ num2 > MAX:
                     _____
 
-                ret = [num, num2]
-                k = j
+                ret [num, num2]
+                k j
                 w.... k < l:
-                    nxt = ret[-1] + ret[-2]
+                    nxt ret[-1] + ret[-2]
                     __ nxt > MAX:
                         _____
 
-                    nxt_str = s..(nxt)
+                    nxt_str s..(nxt)
                     __ S[k:k+l..(nxt_str)] __ nxt_str:
-                        k = k + l..(nxt_str)
+                        k k + l..(nxt_str)
                         ret.a..(nxt)
                     ____
                         _____

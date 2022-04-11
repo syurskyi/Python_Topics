@@ -1,17 +1,17 @@
 
 c_ ConnectGame:
 
-    directions = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, -1), (-1, 1)]
-    white = "O"
-    black = "X"
-    none = ""
+    directions [(0, 1), (0, -1), (1, 0), (-1, 0), (1, -1), (-1, 1)]
+    white "O"
+    black "X"
+    none ""
 
     ___ - , lines
-        board = make_board(lines)
+        board make_board(lines)
         ... l..(board) > 0
 
-        width = l..(board[0])
-        height = l..(board)
+        width l..(board[0])
+        height l..(board)
         ... width > 0 a.. height > 0
 
         ___ l __ board:

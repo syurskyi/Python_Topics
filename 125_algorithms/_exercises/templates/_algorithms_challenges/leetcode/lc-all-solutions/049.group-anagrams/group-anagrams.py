@@ -6,22 +6,22 @@ c_ Solution(o..
     """
 
     ___ hash(count
-      p1, p2 = 2903, 29947
-      ret = 0
+      p1, p2 2903, 29947
+      ret 0
       ___ c __ count:
-        ret = ret * p1 + c
+        ret ret * p1 + c
         p1 *= p2
       r.. ret
 
     d    # dict
 
     ___ s.. __ strs:
-      count = [0] * 26
+      count [0] * 26
       ___ c __ s..:
         count[o..(c) - o..('a')] += 1
-      key = hash(count)
+      key hash(count)
       __ key n.. __ d:
-        d[key] = [s..]
+        d[key] [s..]
       ____
         d[key].a..(s..)
     r.. [d[k] ___ k __ d]

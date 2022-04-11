@@ -2,9 +2,9 @@ ____ c.. _______ n..
 ____ d__ _______ d__
 ____ o.. _______ attrgetter
 
-Book = n..('Book', 'title authors pages published')
+Book n..('Book', 'title authors pages published')
 
-books = [
+books [
     Book(title="Python Interviews",
          authors="Michael Driscoll",
          pages=366,
@@ -35,7 +35,7 @@ ___ sort_books_by_len_of_title(books=books
     Expected last book in list:
     Automate the Boring Stuff with Python
     """
-    len_of_title = s..(books, key=l.... x: l..(x.title
+    len_of_title s..(books, key=l.... x: l..(x.title
     r.. len_of_title
 
 
@@ -44,7 +44,7 @@ ___ sort_books_by_first_authors_last_name(books=books
     Expected last book in list:
     Automate the Boring Stuff with Python
     """
-    first_authors_last_name = s..(books, key=l.... book: l..(book.authors.s..(" ")[1].s..(" ")))
+    first_authors_last_name s..(books, key=l.... book: l..(book.authors.s..(" ")[1].s..(" ")))
     r.. first_authors_last_name
 
 
@@ -53,7 +53,7 @@ ___ sort_books_by_number_of_page(books=books
     Expected last book in list:
     Fluent Python
     """
-    number_of_pages = s..(books, key=l.... book: book.pages)
+    number_of_pages s..(books, key=l.... book: book.pages)
     r.. number_of_pages
 
 
@@ -62,7 +62,7 @@ ___ sort_books_by_published_date(books=books
     Expected last book in list:
     Python Interviews
     """
-    published_date = s..(books, key=l.... book: book.published)
+    published_date s..(books, key=l.... book: book.published)
     r.. published_date
     
 

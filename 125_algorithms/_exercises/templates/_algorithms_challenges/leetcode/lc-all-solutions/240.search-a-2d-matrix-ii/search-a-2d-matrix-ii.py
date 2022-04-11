@@ -7,13 +7,13 @@ c_ Solution(o..
     """
 
     ___ binarySearch(nums, target
-      start, end = 0, l..(nums) - 1
+      start, end 0, l..(nums) - 1
       w.... start + 1 < end:
-        mid = start + (end - start) / 2
+        mid start + (end - start) / 2
         __ nums[mid] > target:
-          end = mid
+          end mid
         ____ nums[mid] < target:
-          start = mid
+          start mid
         ____
           r.. T..
       __ nums[start] __ target:

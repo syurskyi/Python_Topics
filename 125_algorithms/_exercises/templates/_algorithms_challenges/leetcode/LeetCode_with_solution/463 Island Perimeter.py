@@ -12,7 +12,7 @@ around the island). One cell is a square with side length 1. The grid is
 rectangular, width and height don't exceed 100. Determine the perimeter of the island.
 """
 c_ Solution:
-    dirs = [(0, -1), (-1, 0), (0, 1), (1, 0)]
+    dirs [(0, -1), (-1, 0), (0, 1), (1, 0)]
 
     ___ islandPerimeter  grid
         """
@@ -23,17 +23,17 @@ c_ Solution:
         :type grid: List[List[int]]
         :rtype: int
         """
-        ret = 0
+        ret 0
         __ n.. grid:
             r.. ret
-        R = l..(grid)
-        C = l..(grid[0])
+        R l..(grid)
+        C l..(grid[0])
         ___ r0 __ r..(R
             ___ c0 __ r..(C
                 __ grid[r0][c0] __ 1:
                     ___ dr, dc __ dirs:
-                        r = r0 + dr
-                        c = c0 + dc
+                        r r0 + dr
+                        c c0 + dc
                         __ r < 0 o. r >_ R o. c < 0 o. c >_ C:
                             ret += 1
                         ____ grid[r][c] __ 0:
@@ -43,7 +43,7 @@ c_ Solution:
 
 
 __ _______ __ _______
-    grid = [
+    grid [
         [0,1,0,0],
         [1,1,1,0],
         [0,1,0,0],

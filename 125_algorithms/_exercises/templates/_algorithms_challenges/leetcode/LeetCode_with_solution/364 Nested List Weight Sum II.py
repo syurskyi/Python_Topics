@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 """
@@ -52,7 +52,7 @@ c_ NestedInteger(o..
 
 c_ Solution(o..
     ___ - 
-        s.. = 0
+        s.. 0
 
     ___ depthSumInverse  nestedList
         """
@@ -60,12 +60,12 @@ c_ Solution(o..
         :type nestedList: List[NestedInteger]
         :rtype: int
         """
-        inv_depth = height(nestedList)
+        inv_depth height(nestedList)
         inverseDepthSum(nestedList, inv_depth)
         r.. s..
 
     ___ height  nl
-        nl_lst = f.. l.... x: n.. x.isInteger(), nl)
+        nl_lst f.. l.... x: n.. x.isInteger(), nl)
         __ n.. nl_lst:
             r.. 1
         __ nl_lst:
@@ -74,8 +74,8 @@ c_ Solution(o..
             )
 
     ___ inverseDepthSum  nl, inv_depth
-        nl_lst = f.. l.... x: n.. x.isInteger(), nl)
-        ni_list = f.. l.... x: x.isInteger(), nl)
+        nl_lst f.. l.... x: n.. x.isInteger(), nl)
+        ni_list f.. l.... x: x.isInteger(), nl)
         __ nl_lst:
             map(l.... x: inverseDepthSum(x.getList(), inv_depth - 1), nl_lst)
         __ ni_list:
@@ -84,7 +84,7 @@ c_ Solution(o..
 
 c_ SolutionError(o..
     ___ - 
-        s.. = 0
+        s.. 0
 
     ___ depthSumInverse  nestedList
         """
@@ -100,12 +100,12 @@ c_ SolutionError(o..
         This dfs use height: the number of edges from to the leaves.
         But the question is supposedly use height but the calculate sum top down; here is bottom up wrongly.
         """
-        height = 1
+        height 1
 
-        nl_lst = f.. l.... x: n.. x.isInteger(), nl)
-        ni_list = f.. l.... x: x.isInteger(), nl)
+        nl_lst f.. l.... x: n.. x.isInteger(), nl)
+        ni_list f.. l.... x: x.isInteger(), nl)
         __ nl_lst:
-            height = 1 + m..(
+            height 1 + m..(
                 map(l.... x: dfs(x.getList, nl_lst)
             )
         __ ni_list:

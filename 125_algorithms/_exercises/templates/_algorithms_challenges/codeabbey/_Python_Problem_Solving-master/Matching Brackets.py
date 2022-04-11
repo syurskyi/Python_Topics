@@ -1,13 +1,13 @@
 #take the number of strings that are needed to be checked
 ___ i __ r..(i..(input())):
     #accept the string
-    s__ = input()
+    s__ input()
     #store_str is used to store only the brackets
     store_str    # list
     #para list is used to check whether the character in string is equal to elements of para
     para =  '(',')',' ',' ','<','>','{','}'
     # p Dictionary is used to store the pair of the parenthesis
-    p = {'(':')',' ':' ','<':'>','{':'}'}
+    p {'(':')',' ':' ','<':'>','{':'}'}
     
     #here we remove all alphabets, digits and unwanted special characters
     ___ j __ s__:
@@ -27,14 +27,14 @@ ___ i __ r..(i..(input())):
                 p..
         __ l..(store_str) __ 1:
             print('0',end=' ')
-            checker = F..
+            checker F..
             _____
         ____ l..(store_str) __ 0:
             print('1',end= ' ')
-            checker = F..
+            checker F..
             _____
         ____
-            checker = T..
+            checker T..
             p..
     #Step two is once the element next to each other which were pair are removed.
     #then we are left with nested loops

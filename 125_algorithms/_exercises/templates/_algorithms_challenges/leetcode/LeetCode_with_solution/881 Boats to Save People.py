@@ -38,10 +38,10 @@ c_ Solution:
         """
         sort + gready
         """
-        ret = 0
-        q = d..(s..(people
+        ret 0
+        q d..(s..(people
         w.... q:
-            tail = q.p.. )
+            tail q.p.. )
             ret += 1
             __ q a.. q[0] + tail <_ limit:
                 q.popleft()

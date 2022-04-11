@@ -6,9 +6,9 @@ ___ sum_indices(items: L..[s..]) __ i..:
 
 
 
-    indexes = d..(i..)
+    indexes d..(i..)
 
-    total = 0
+    total 0
     ___ i,value __ e..(items
         total += indexes.g.. value,0)
         total += i

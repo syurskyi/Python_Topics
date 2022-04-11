@@ -13,9 +13,9 @@ to 1,000,000.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 ____ c.. _______ d..
@@ -23,7 +23,7 @@ ____ c.. _______ d..
 
 c_ Solution:
     ___ -
-        count = 0
+        count 0
 
     ___ pathSum  root: TreeNode, target: i..) __ i..:
         """
@@ -41,7 +41,7 @@ c_ Solution:
 
         cur_sum += node.val
         # delta = target - cur_sum  # error
-        delta = cur_sum - target
+        delta cur_sum - target
         count += prefix_sum_counter[delta]
         __ delta __ 0:
             count += 1
@@ -62,7 +62,7 @@ c_ SolutionComplex:
         :type sum: int
         :rtype: int
         """
-        count = [0]  # pass as a reference
+        count [0]  # pass as a reference
         dfs(root, s.., 0, {}, count)
         r.. count[0]
 
@@ -76,13 +76,13 @@ c_ SolutionComplex:
 
         cur_sum += root.val
         # ∃ prefix_sum: cur_sum - prefix_sum = sum
-        diff = cur_sum - s..
+        diff cur_sum - s..
         __ diff __ prefix_sum:
             count[0] += prefix_sum[diff]
         __ diff __ 0:  # trivial case
             count[0] += 1
 
-        prefix_sum[cur_sum] = prefix_sum.g.. cur_sum, 0) + 1
+        prefix_sum[cur_sum] prefix_sum.g.. cur_sum, 0) + 1
         dfs(root.left, s.., cur_sum, prefix_sum, count)
         dfs(root.right, s.., cur_sum, prefix_sum, count)
         prefix_sum[cur_sum] -_ 1  # pop to save space

@@ -39,23 +39,23 @@ c_ Solution:
         __ S __ T:
             r.. 0
 
-        routes = [s..(e) ___ e __ routes]
-        G = d..(s..)
+        routes [s..(e) ___ e __ routes]
+        G d..(s..)
         ___ i __ r..(l..(routes:
             ___ j __ r..(i + 1, l..(routes:
-                stops_1, stops_2 = routes[i], routes[j]  # bus represented by stops
+                stops_1, stops_2 routes[i], routes[j]  # bus represented by stops
                 ___ stop __ stops_1:  # any(stop in stops_2 for stop in stops_1)
                     __ stop __ stops_2:
                         G[i].add(j)
                         G[j].add(i)
                         _____
 
-        q = [i ___ i, stops __ e..(routes) __ S __ stops]
-        target_set = s..([i ___ i, stops __ e..(routes) __ T __ stops])
-        visited = d..(b..)
+        q [i ___ i, stops __ e..(routes) __ S __ stops]
+        target_set s..([i ___ i, stops __ e..(routes) __ T __ stops])
+        visited d..(b..)
         ___ i __ q:
-            visited[i] = T..
-        step = 1
+            visited[i] T..
+        step 1
         w.... q:
             cur_q    # list
             ___ e __ q:
@@ -63,11 +63,11 @@ c_ Solution:
                     r.. step
                 ___ nbr __ G[e]:
                     __ n.. visited[nbr]:
-                        visited[nbr] = T..
+                        visited[nbr] T..
                         cur_q.a..(nbr)
 
             step += 1
-            q = cur_q
+            q cur_q
 
         r.. -1
 
@@ -78,18 +78,18 @@ c_ Solution:
 
         Connect stops within in bus use one edge in G
         """
-        G = d..(s..)
+        G d..(s..)
         ___ stops __ routes:
             ___ i __ r..(l..(stops:
                 ___ j __ r..(i + 1, l..(stops:
-                    u, v = stops[i], stops[j]
+                    u, v stops[i], stops[j]
                     G[u].add(v)
                     G[v].add(u)
 
-        q = [S]
-        step = 0
-        visited = d..(b..)
-        visited[S] = T..  # avoid add duplicate
+        q [S]
+        step 0
+        visited d..(b..)
+        visited[S] T..  # avoid add duplicate
         w.... q:
             cur_q    # list
             ___ e __ q:
@@ -97,11 +97,11 @@ c_ Solution:
                     r.. step
                 ___ nbr __ G[e]:
                     __ n.. visited[nbr]:
-                        visited[nbr] = T..
+                        visited[nbr] T..
                         cur_q.a..(nbr)
 
             step += 1
-            q = cur_q
+            q cur_q
 
         r.. -1
 

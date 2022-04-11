@@ -12,12 +12,12 @@ c_ Solution(o..
         """
         result    # list
         __ n.. nums: r.. result
-        i = 0
+        i 0
         w.... i < l..(nums
-            start = nums[i]
+            start nums[i]
             w.... i+1 < l..(nums) a.. nums[i+1] __ nums[i]+1:
                 i+=1
-            end = nums[i]
+            end nums[i]
             __ end __ start:
                 result.a..('%s' % (start
             ____

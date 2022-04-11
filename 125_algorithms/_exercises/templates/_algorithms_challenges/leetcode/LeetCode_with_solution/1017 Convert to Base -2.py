@@ -52,9 +52,9 @@ c_ Solution:
         minus reminder, divide by -2
         (-2) ^ 0, LSB set
         """
-        ret = d..()
+        ret d..()
         w.... N != 0:
-            r = N % 2  # r is the range of 0 and 2
+            r N % 2  # r is the range of 0 and 2
             ret.appendleft(r)
             N -_ r
             N //= -2

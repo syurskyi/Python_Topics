@@ -22,45 +22,45 @@ c_ CipherTest(unittest.TestCase
         assertEqual(Caesar().d.. 'yhqlylglylfl'), 'venividivici')
 
     ___ test_cipher_encode1
-        c = Cipher('a')
+        c Cipher('a')
         assertEqual(
             c.encode('itisawesomeprogramminginpython'),
             'itisawesomeprogramminginpython')
 
     ___ test_cipher_encode2
-        c = Cipher('aaaaaaaaaaaaaaaaaaaaaa')
+        c Cipher('aaaaaaaaaaaaaaaaaaaaaa')
         assertEqual(
             c.encode('itisawesomeprogramminginpython'),
             'itisawesomeprogramminginpython')
 
     ___ test_cipher_encode3
-        c = Cipher('dddddddddddddddddddddd')
+        c Cipher('dddddddddddddddddddddd')
         assertEqual(c.encode('venividivici'), 'yhqlylglylfl')
 
     ___ test_cipher_encode4
-        key = ('duxrceqyaimciuucnelkeoxjhdyduucpmrxmaivacmybmsdrzwqxvbxsy'
+        key ('duxrceqyaimciuucnelkeoxjhdyduucpmrxmaivacmybmsdrzwqxvbxsy'
                'gzsabdjmdjabeorttiwinfrpmpogvabiofqexnohrqu')
-        c = Cipher(key)
+        c Cipher(key)
         assertEqual(c.encode('diffiehellman'), 'gccwkixcltycv')
 
     ___ test_cipher_encode_short_key
-        c = Cipher('abcd')
+        c Cipher('abcd')
         assertEqual(c.encode('aaaaaaaa'), 'abcdabcd')
 
     ___ test_cipher_compositiion1
-        key = ('duxrceqyaimciuucnelkeoxjhdyduucpmrxmaivacmybmsdrzwqxvbxsy'
+        key ('duxrceqyaimciuucnelkeoxjhdyduucpmrxmaivacmybmsdrzwqxvbxsy'
                'gzsabdjmdjabeorttiwinfrpmpogvabiofqexnohrqu')
-        plaintext = 'adaywithoutlaughterisadaywasted'
-        c = Cipher(key)
+        plaintext 'adaywithoutlaughterisadaywasted'
+        c Cipher(key)
         assertEqual(c.d.. c.encode(plaintext, plaintext)
 
     ___ test_cipher_compositiion2
-        plaintext = 'adaywithoutlaughterisadaywasted'
-        c = Cipher()
+        plaintext 'adaywithoutlaughterisadaywasted'
+        c Cipher()
         assertEqual(c.d.. c.encode(plaintext, plaintext)
 
     ___ test_cipher_random_key
-        c = Cipher()
+        c Cipher()
         assertTrue(
             l..(c.key) >_ 100,
             'A random key must be generated when no key is given!')

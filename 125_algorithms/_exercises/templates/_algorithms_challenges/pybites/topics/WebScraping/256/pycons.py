@@ -6,11 +6,11 @@ _______ r__
 ____ bs4 _______ BeautifulSoup __ Soup
 ____ dateutil.parser _______ p..
 
-PYCON_DATA = "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
+PYCON_DATA "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
 
-PyCon = n..("PyCon", "name city country start_date end_date url")
+PyCon n..("PyCon", "name city country start_date end_date url")
 
-country_lookup = {
+country_lookup {
     "Africa": [
         "Algeria", "Angola", "Benin", "Botswana",
         "Burkina Faso", "Burundi", "Cameroon", "Cape Verde",
@@ -106,24 +106,24 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     return a list of PyCon namedtuples. Pay attention to the
     application/ld+json data structure website data.
     """
-    whole_text = Soup(data, "html.parser")
-    events = whole_text.find_all("script", {"type":"application/ld+json"})
+    whole_text Soup(data, "html.parser")
+    events whole_text.find_all("script", {"type":"application/ld+json"})
     #print(events[0].text.strip())
     pycon_events    # list
     ___ event __ events:
-        event_json = j__.l.. (event.text.s..
+        event_json j__.l.. (event.text.s..
         __ 'pycon' __ event_json["name"].l..:
             # { "@context": "http://schema.org", "@type": "Event", 
             # "location": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Trento", "addressCountry": "Italy" }, 
             # "name": "Trento, Italy" }, "name": "EuroSciPy", "startDate": "2018-08-28", "url": "https://www.euroscipy.org/2018/", "endDate": "2018-09-01" }
             # PyCon = namedtuple("PyCon", "name city country start_date end_date url")
-            event_name = event_json 'name'
-            event_city = event_json["location"]["address"]["addressLocality"]
-            event_country = event_json["location"]["address"]["addressCountry"]
-            event_startDate = p..(event_json 'startDate' )
-            event_endDate = p..(event_json 'endDate' )
-            event_url = event_json 'url'
-            pycon_tuple = PyCon(name=event_name,
+            event_name event_json 'name'
+            event_city event_json["location"]["address"]["addressLocality"]
+            event_country event_json["location"]["address"]["addressCountry"]
+            event_startDate p..(event_json 'startDate' )
+            event_endDate p..(event_json 'endDate' )
+            event_url event_json 'url'
+            pycon_tuple PyCon(name=event_name,
                                 city=event_city,
                                 country=event_country,
                                 start_date=event_startDate,
@@ -136,8 +136,8 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
 
 
 ___ filter_pycons(pycons: L..[PyCon],
-                  year: i.. = 2019,
-                  continent: s.. = "Europe") __ L..[PyCon]:
+                  year: i.. 2019,
+                  continent: s.. "Europe") __ L..[PyCon]:
     """
     Given a list of PyCons a year and a continent return
     a list of PyCons that take place in that year and on
@@ -145,8 +145,8 @@ ___ filter_pycons(pycons: L..[PyCon],
     """
     filtered_event    # list
     ___ pycon __ pycons:
-        event_year = pycon.start_date.year
-        event_continent = get_continent(pycon.country)
+        event_year pycon.start_date.year
+        event_continent get_continent(pycon.country)
         print(event_year, event_continent)
         __ i..(event_year) __ year a.. event_continent __ continent:
             filtered_event.a..(pycon)

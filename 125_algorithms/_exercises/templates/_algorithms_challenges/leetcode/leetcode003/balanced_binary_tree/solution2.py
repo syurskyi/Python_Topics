@@ -31,8 +31,8 @@ c_ Solution(o..
         __ root __ N..
             r.. 0
         ____
-            left_height = height(root.left)
-            right_height = height(root.right)
+            left_height height(root.left)
+            right_height height(root.right)
             __ left_height __ -1 o. right_height __ -1:
                 r.. -1
             ____

@@ -6,8 +6,8 @@ ___ binary_search_with_bounds(array, value, left, right
     __ (left > right
         r.. V...("Value not found")
 
-    middle = left + (right - left) // 2
-    middle_value = array[middle]
+    middle left + (right - left) // 2
+    middle_value array[middle]
 
     __ (value __ middle_value
         r.. middle

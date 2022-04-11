@@ -4,9 +4,9 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: bool
     """
-    dp = [0] * (l..(nums) + 1)
+    dp [0] * (l..(nums) + 1)
     ___ i __ r..(l..(nums:
-      dp[i + 1] = dp[i] + nums[i]
+      dp[i + 1] dp[i] + nums[i]
 
     ___ s..(start, end
       r.. s..(

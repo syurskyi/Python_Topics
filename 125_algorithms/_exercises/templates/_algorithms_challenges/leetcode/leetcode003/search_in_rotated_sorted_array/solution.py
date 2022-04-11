@@ -16,22 +16,22 @@ c_ Solution(o..
         :type target: int
         :rtype: int
         """
-        left = 0
-        right = l..(nums) - 1
+        left 0
+        right l..(nums) - 1
         w.... left <_ right:
-            mid = left + (right - left) / 2
+            mid left + (right - left) / 2
             __ target __ nums[mid]:
                 r.. mid
             # Left part is sorted
             ____ nums[mid] > nums[right]:
                 __ target < nums[mid] a.. target >_ nums[left]:
-                    right = mid - 1
+                    right mid - 1
                 ____
-                    left = mid + 1
+                    left mid + 1
             # Right part is sorted
             ____
                 __ target > nums[mid] a.. target <_ nums[right]:
-                    left = mid + 1
+                    left mid + 1
                 ____
-                    right = mid - 1
+                    right mid - 1
         r.. -1

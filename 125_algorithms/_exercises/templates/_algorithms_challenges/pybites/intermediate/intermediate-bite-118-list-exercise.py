@@ -84,19 +84,19 @@ ___ get_duplicate_indices(words
        ['is', 'it', 'true', 'or', 'is', 'it', 'not?'] => [0, 1]
        Make sure the returning list is unique and sorted in ascending order."""
     stats    # dict
-    index = 0
+    index 0
     # Tuples are immutable!!!
     # MyPair = namedtuple('MyPair', 'index count')
     result    # list
     ___ word __ words:
         ___
-            mp = stats[word]
+            mp stats[word]
             mp 'count'  += 1
         ______ K..:
-            mp = d..()
+            mp d..()
             mp 'index'  = index
             mp 'count'  = 1
-            stats[word] = mp
+            stats[word] mp
         index += 1
     print(stats)
     ___ k, v __ stats.v..

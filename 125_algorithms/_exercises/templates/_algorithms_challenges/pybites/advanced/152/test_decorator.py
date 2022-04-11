@@ -22,5 +22,5 @@ ___ test_strip_range(start, end, arg, e..
     @strip_range(start, end)
     ___ gen_output(text
         r.. text
-    a.. = gen_output(text=arg)
+    a.. gen_output(text=arg)
     ... a.. __ e..

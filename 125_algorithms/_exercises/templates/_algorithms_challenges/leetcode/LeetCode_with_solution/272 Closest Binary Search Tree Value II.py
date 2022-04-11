@@ -2,14 +2,14 @@
 Premium Question
 https://leetcode.com/problems/closest-binary-search-tree-value-ii/
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution(o..

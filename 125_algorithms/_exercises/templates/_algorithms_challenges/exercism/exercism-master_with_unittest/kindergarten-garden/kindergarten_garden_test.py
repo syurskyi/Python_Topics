@@ -10,12 +10,12 @@ c_ KindergartenGardenTests(unittest.TestCase
                          Garden("RC\nGG").plants("Alice"
 
     ___ test_bob_and_charlies_gardens
-        garden = Garden("VVCCGG\nVVCCGG")
+        garden Garden("VVCCGG\nVVCCGG")
         assertEqual(["Clover"] * 4, garden.plants("Bob"
         assertEqual(["Grass"] * 4, garden.plants("Charlie"
 
     ___ test_full_garden
-        garden = Garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV")
+        garden Garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV")
         assertEqual("Violets Radishes Violets Radishes".s.. ,
                          garden.plants("Alice"
         assertEqual("Clover Grass Clover Clover".s.. ,
@@ -26,7 +26,7 @@ c_ KindergartenGardenTests(unittest.TestCase
                          garden.plants("Larry"
 
     ___ test_disordered_test
-        garden = Garden("VCRRGVRG\nRVGCCGCV",
+        garden Garden("VCRRGVRG\nRVGCCGCV",
                         students="Samantha Patricia Xander Roger".s..
         assertEqual("Violets Clover Radishes Violets".s.. ,
                          garden.plants("Patricia"

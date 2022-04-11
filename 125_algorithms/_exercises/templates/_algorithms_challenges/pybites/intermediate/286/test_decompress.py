@@ -14,7 +14,7 @@ ___ test_no_conversions
 
 
 ___ test_example
-    table = {'$': 's',
+    table {'$': 's',
              '%': 'y',
              '/': 't'
              }
@@ -23,7 +23,7 @@ ___ test_example
 
 
 ___ test_short
-    table = {'*': 'c',
+    table {'*': 'c',
              '#': '00',
              '$': '*y',
              }
@@ -32,7 +32,7 @@ ___ test_short
 
 
 ___ test_long
-    table = {'#': 'hem',
+    table {'#': 'hem',
              '@': 'T#',
              '$': 't#',
              '&': '$ as',

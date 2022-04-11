@@ -19,7 +19,7 @@ c_ RandomizedSet:
         :type val: int
         :rtype: bool
         """
-        val2idx[val] = l..(nums)
+        val2idx[val] l..(nums)
         nums.a..(val)
 
     ___ remove  val
@@ -31,11 +31,11 @@ c_ RandomizedSet:
         __ val n.. __ val2idx:
             r.. F..
 
-        i = val2idx[val]
-        key = nums[-1]
+        i val2idx[val]
+        key nums[-1]
 
-        val2idx[key] = i
-        nums[i] = nums[-1]
+        val2idx[key] i
+        nums[i] nums[-1]
 
         nums.p.. )
         del val2idx[val]
@@ -46,5 +46,5 @@ c_ RandomizedSet:
         Get a random element from the set.
         :rtype: int
         """
-        i = r__.randrange(l..(nums
+        i r__.randrange(l..(nums
         r.. nums[i]

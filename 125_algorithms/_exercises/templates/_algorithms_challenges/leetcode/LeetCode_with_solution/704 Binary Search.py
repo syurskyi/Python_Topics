@@ -29,15 +29,15 @@ ____ t___ _______ L..
 
 c_ Solution:
     ___ s..  nums: L..[i..], target: i..) __ i..:
-        lo = 0
-        hi = l..(nums)
+        lo 0
+        hi l..(nums)
         w.... lo < hi:
-            mid = (lo + hi) // 2
+            mid (lo + hi) // 2
             __ nums[mid] __ target:
                 r.. mid
             ____ nums[mid] < target:
-                lo = mid + 1
+                lo mid + 1
             ____
-                hi = mid
+                hi mid
 
         r.. -1

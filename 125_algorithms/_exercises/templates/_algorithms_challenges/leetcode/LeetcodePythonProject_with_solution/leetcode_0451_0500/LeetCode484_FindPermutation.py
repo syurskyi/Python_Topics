@@ -10,12 +10,12 @@ c_ Solution(o..
         :type s: str
         :rtype: List[int]
         """
-        n = l..(s)
-        res = l..(r..(1, n+2
-        i = 0
+        n l..(s)
+        res l..(r..(1, n+2
+        i 0
         w.... i < n:
             __ s[i] __ 'D':
-                prev = i
+                prev i
                 w.... i+1 < n a.. s[i+1]__'D':
                     i += 1
                 reverse(res, prev, i+1)
@@ -24,12 +24,12 @@ c_ Solution(o..
     
     ___ reverse  res, l, r
         w.... l < r:
-            res[l], res[r] = res[r], res[l]
+            res[l], res[r] res[r], res[l]
             l += 1
             r -_ 1
     
     ___ test
-        testCases = [
+        testCases [
             'I',
             'DI',
             'DDDI',
@@ -38,7 +38,7 @@ c_ Solution(o..
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = findPermutation(s)
+            result findPermutation(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

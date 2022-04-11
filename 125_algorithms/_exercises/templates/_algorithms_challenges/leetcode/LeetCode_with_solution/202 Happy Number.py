@@ -13,7 +13,7 @@ Example: 19 is a happy number
 1^2 + 0^2 + 0^2 = 1
 
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -26,8 +26,8 @@ c_ Solution:
         :param n:
         :rtype: bool
         """
-        nxt = 0
-        appeared = s..()
+        nxt 0
+        appeared s..()
         w... T...
             nxt += (n%10)*(n%10)
             n /= 10
@@ -38,6 +38,6 @@ c_ Solution:
                     r.. F..
 
                 appeared.add(nxt)
-                n = nxt
-                nxt = 0
+                n nxt
+                nxt 0
 

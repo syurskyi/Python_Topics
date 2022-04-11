@@ -1,11 +1,11 @@
 ____ d__ _______ d__, t..
 
-NOW = d__ y.._2019,  m.._2,  d.._6,
+NOW d__ y.._2019,  m.._2,  d.._6,
                hour=22, minute=0, second=0)
 
 
 ___ add_todo(delay_time: s.., task: s..,
-             start_time: d__ = NOW) __ s..:
+             start_time: d__ NOW) __ s..:
     """
     Add a todo list item in the future with a delay time.
 
@@ -20,8 +20,8 @@ ___ add_todo(delay_time: s.., task: s..,
     >>> add_todo("1h 10m", "Wash my car")
     >>> "Wash my car @ 2019-02-06 23:10:00"
     """
-    delay = delay_time.s.. 
-    td = start_time
+    delay delay_time.s..
+    td start_time
     ___ dl __ delay:
         __ dl[-1] __ 'd':
             td += t..(d.._i..(dl[:-1]

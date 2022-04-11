@@ -1,16 +1,16 @@
 #take the input of how many elements you want
-data = i..(input
+data i..(input
 # take the input of the numbers to be sorted
-a = [i..(num) ___ num __ input().s.. ]
+a [i..(num) ___ num __ input().s.. ]
 
 #create a dictionary to store the index of the list
 ele    # dict
 #create the string to store the position of the sorted index
-s__ = ''
+s__ ''
 
 #storing the index of the elements
 ___ x __ r..(l..(a:
-    ele[a[x]] = x+1
+    ele[a[x]] x+1
     
 #sorting the array using the bubble sort
 ___ i __ r..(l..(a:

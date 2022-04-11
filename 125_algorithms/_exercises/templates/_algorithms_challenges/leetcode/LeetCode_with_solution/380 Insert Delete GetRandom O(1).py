@@ -33,7 +33,7 @@ randomSet.getRandom();
 """
 _______ r__
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ RandomizedSet(o..
@@ -57,7 +57,7 @@ c_ RandomizedSet(o..
             r.. F..
 
         lst.a..(val)
-        pos[val] = l..(lst) - 1
+        pos[val] l..(lst) - 1
 
         r.. T..
 
@@ -70,11 +70,11 @@ c_ RandomizedSet(o..
         __ val n.. __ pos:
             r.. F..
 
-        idx, last = pos[val], l..(lst) - 1
+        idx, last pos[val], l..(lst) - 1
 
         __ idx != last:
-            lst[idx], lst[last] = lst[last], lst[idx]
-            pos[lst[idx]] = idx
+            lst[idx], lst[last] lst[last], lst[idx]
+            pos[lst[idx]] idx
 
         del pos[val]
         lst.p.. )
@@ -94,7 +94,7 @@ c_ RandomizedSetTLE(o..
         """
         Initialize your data structure here.
         """
-        s.. = s..()
+        s.. s..()
 
     ___ insert  val
         """
@@ -102,7 +102,7 @@ c_ RandomizedSetTLE(o..
         :type val: int
         :rtype: bool
         """
-        ret = val n.. __ s..
+        ret val n.. __ s..
         s...add(val)
         r.. ret
 
@@ -112,7 +112,7 @@ c_ RandomizedSetTLE(o..
         :type val: int
         :rtype: bool
         """
-        ret = val __ s..
+        ret val __ s..
         s...discard(val)
         r.. ret
 

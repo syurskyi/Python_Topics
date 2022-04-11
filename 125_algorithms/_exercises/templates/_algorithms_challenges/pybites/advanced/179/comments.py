@@ -1,6 +1,6 @@
 _______ __
 
-code = '''
+code '''
 """this is
 my awesome script
 """
@@ -11,7 +11,7 @@ def hello(name):
     """my function docstring"""
     return f'hello {name}'  # my inline comment'''
 
-multiline_docstring = '''
+multiline_docstring '''
 def __init__(self, name, sound, num_legs):
     """
     Parameters
@@ -27,7 +27,7 @@ def __init__(self, name, sound, num_legs):
     self.sound = sound
     self.num_legs = num_legs
 '''
-class_with_method = '''
+class_with_method '''
 class SimpleClass:
     """Class docstrings go here."""
 
@@ -35,7 +35,7 @@ class SimpleClass:
         """Class method docstrings go here."""
         print(f'Hello {name}')
 '''
-class_with_method_after_strip = '''
+class_with_method_after_strip '''
 class SimpleClass:
 
     def say_hello(self, name: str):
@@ -46,14 +46,14 @@ ___ strip_comments(code
     
 
     # remove single line comment
-    code = __.s.. _ \n\s*#.*','',code,__.MULTILINE)
+    code __.s.. _ \n\s*#.*','',code,__.MULTILINE)
 
     # remove inline comment
 
-    code = __.s.. _ \s{2}#\s.*','',code,__.MULTILINE)
+    code __.s.. _ \s{2}#\s.*','',code,__.MULTILINE)
 
     # remove multi line comments
-    code = __.s.. _ \s*"""[^"]*\n?([^"]*\n)*\s*"""','',code,__.MULTILINE)
+    code __.s.. _ \s*"""[^"]*\n?([^"]*\n)*\s*"""','',code,__.MULTILINE)
     r.. code
 
 
@@ -61,5 +61,5 @@ __ _______ __ _______
 
     print(class_with_method)
 
-    code = strip_comments(class_with_method)
+    code strip_comments(class_with_method)
     print(code)

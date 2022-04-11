@@ -2,7 +2,7 @@ _______ p__
 
 ____ ini _______ ToxIniParser
 
-cookiecutter = """[tox]
+cookiecutter """[tox]
 envlist = py27, py34, py35, py36, pypy, flake8
 
 [testenv]
@@ -19,7 +19,7 @@ commands =
 [testenv:cov-report]
 commands = pytest --cov=cookiecutter --cov-report=term --cov-report=html"""
 
-django = """# Tox (https://tox.readthedocs.io/) is a tool for running tests in multiple
+django """# Tox (https://tox.readthedocs.io/) is a tool for running tests in multiple
 # virtualenvs. This configuration file helps to run the test suite on all
 # supported Python versions. To use it, "pip install tox" and then run "tox"
 # from this directory.
@@ -88,7 +88,7 @@ commands =
     npm install
     npm test"""
 
-oeuvre = """[tox]
+oeuvre """[tox]
 minversion=2.3.1
 envlist = py27,py33,py34,py35,py36,flake8,linters,docs
 
@@ -224,7 +224,7 @@ max-complexity = 10
 import-order-style = google
 application-import-names = oeuvre"""
 
-pyramid = """[tox]
+pyramid """[tox]
 envlist =
     lint,
     py34,py35,py36,py37,pypy3,
@@ -307,7 +307,7 @@ deps =
     setuptools
     wheel"""
 
-ini_files = (cookiecutter, django, oeuvre, pyramid)
+ini_files (cookiecutter, django, oeuvre, pyramid)
 
 
 ?p__.m__.p.("ini_file, num_sections, envs, base_pys", [
@@ -327,10 +327,10 @@ ini_files = (cookiecutter, django, oeuvre, pyramid)
       'python3' ),
 ])
 ___ test_tox_ini_parser(ini_file, num_sections, envs, base_pys, tmp_path
-    f = tmp_path / "some_file.txt"
+    f tmp_path / "some_file.txt"
     f.w..(ini_file.encode  # https://bugs.python.org/issue17271
 
-    tip = ToxIniParser(f.r..
+    tip ToxIniParser(f.r..
 
     ... tip.number_of_sections __ num_sections
     ... s..(tip.environments) __ s..(envs)

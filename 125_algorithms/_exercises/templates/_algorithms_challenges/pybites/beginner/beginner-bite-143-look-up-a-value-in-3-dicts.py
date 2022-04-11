@@ -28,16 +28,16 @@ def get_person_age(name):
 
 
 
-NOT_FOUND = "Not found"
+NOT_FOUND "Not found"
 
 
-group1 = {'tim': 30, 'bob': 17, 'ana': 24}
-group2 = {'ana': 26, 'thomas': 64, 'helen': 26}
-group3 = {'brenda': 17, 'otto': 44, 'thomas': 46}
+group1 {'tim': 30, 'bob': 17, 'ana': 24}
+group2 {'ana': 26, 'thomas': 64, 'helen': 26}
+group3 {'brenda': 17, 'otto': 44, 'thomas': 46}
 
 ___ get_person_age(name
 
-    n = s..(name).l..
+    n s..(name).l..
     print(n)
     ___
         r.. group3[n]

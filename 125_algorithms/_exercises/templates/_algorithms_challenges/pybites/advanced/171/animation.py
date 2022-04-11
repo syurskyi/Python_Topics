@@ -3,7 +3,7 @@ _______ ___
 ____ t__ _______ t__, sleep
 
 SPINNER_STATES =  '-', '\\', '|', '/'   # had to escape \
-STATE_TRANSITION_TIME = 0.1
+STATE_TRANSITION_TIME 0.1
 
 
 ___ spinner(seconds
@@ -11,13 +11,13 @@ ___ spinner(seconds
        Takes seconds argument = time for the spinner to run.
        Does not return anything, only prints to stdout."""
     
-    cycles = cycle(SPINNER_STATES)
+    cycles cycle(SPINNER_STATES)
 
 
-    start_time = t__()
+    start_time t__()
 
     w.... t__() - start_time <_ seconds:
-        s = next(cycles)
+        s next(cycles)
         print(s,end='\r')
         
         sleep(STATE_TRANSITION_TIME)

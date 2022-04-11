@@ -26,25 +26,25 @@ c_ Solution:
         """
         piles by max char and circular append
         """
-        counter = d..(i..)
+        counter d..(i..)
         ___ c __ S:
             counter[c] += 1
 
-        lst = [
+        lst [
             (-n, n, c)
             ___ c, n __ counter.i..
         ]
         lst.s..()
         piles    # list
-        _, n, c = lst[0]
+        _, n, c lst[0]
         ___ i __ r..(n
             piles.a..([c])
 
-        cnt = 0
+        cnt 0
         ___ _, n, c __ lst[1:]:
             ___ _ __ r..(n
                 piles[cnt].a..(c)
-                cnt = (cnt + 1) % l..(piles)
+                cnt (cnt + 1) % l..(piles)
 
         __ l..(piles) > 1 a.. l..(piles[-2]) __ 1:
             r.. ""

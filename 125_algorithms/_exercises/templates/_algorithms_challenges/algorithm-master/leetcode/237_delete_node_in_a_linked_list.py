@@ -14,5 +14,5 @@ c_ Solution(o..
         __ n.. node o. n.. node.next:
             r..
 
-        node.val = node.next.val
-        node.next = node.next.next
+        node.val node.next.val
+        node.next node.next.next

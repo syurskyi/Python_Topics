@@ -19,38 +19,38 @@ c_ Solution:
         :type nums: list[int]
         :rtype: int
         """
-        NOT_FOUND = 0
+        NOT_FOUND 0
         __ n.. nums:
             r.. NOT_FOUND
 
-        n = l..(nums)
-        left = get_max_sums(nums, r..(n
-        right = get_max_sums(nums, r..(n - 1, -1, -1
+        n l..(nums)
+        left get_max_sums(nums, r..(n
+        right get_max_sums(nums, r..(n - 1, -1, -1
 
-        ans = _INF = f__('-inf')
+        ans _INF f__('-inf')
 
         ___ i __ r..(n - 1
-            s = left[i] + right[i + 1]
+            s left[i] + right[i + 1]
 
             __ s > ans:
-                ans = s
+                ans s
 
         r.. ans __ ans > _INF ____ NOT_FOUND
 
     ___ get_max_sums  nums, num_range
-        res = [0] * l..(nums)
-        smax = f__('-inf')
-        s = smin = 0
+        res [0] * l..(nums)
+        smax f__('-inf')
+        s smin 0
 
         ___ i __ num_range:
             s += nums[i]
 
             __ s - smin > smax:
-                smax = s - smin
+                smax s - smin
 
             __ s < smin:
-                smin = s
+                smin s
 
-            res[i] = smax
+            res[i] smax
 
         r.. res

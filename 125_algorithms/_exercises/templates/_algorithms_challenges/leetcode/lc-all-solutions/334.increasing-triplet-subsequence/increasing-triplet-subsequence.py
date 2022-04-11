@@ -4,12 +4,12 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: bool
     """
-    a = b = f__("inf")
+    a b f__("inf")
     ___ num __ nums:
       __ num <_ a:
-        a = num
+        a num
       ____ num <_ b:
-        b = num
+        b num
       ____
         r.. T..
     r.. F..

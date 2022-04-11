@@ -25,8 +25,8 @@ here is an article we wrote some time ago: Learning Python Decorators by Example
 
 ____ f.. _______ wraps
 
-UPPER_SLICE = "=== Upper bread slice ==="
-LOWER_SLICE = "=== Lower bread slice ==="
+UPPER_SLICE "=== Upper bread slice ==="
+LOWER_SLICE "=== Lower bread slice ==="
 
 
 ___ sandwich_v1(func
@@ -37,7 +37,7 @@ ___ sandwich_v1(func
     """
     ___ wrapped $ $$:
         print(UPPER_SLICE)
-        result = func $ $$
+        result func $ $$
         print(LOWER_SLICE)
         r.. result
     r.. wrapped

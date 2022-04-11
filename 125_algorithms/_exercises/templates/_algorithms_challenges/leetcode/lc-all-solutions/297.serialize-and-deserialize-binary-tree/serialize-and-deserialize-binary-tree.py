@@ -16,9 +16,9 @@ c_ Codec:
     :rtype: str
     """
     ret    # list
-    queue = d..([root])
+    queue d..([root])
     w.... queue:
-      top = queue.popleft()
+      top queue.popleft()
       __ n.. top:
         ret.a..("None")
         _____
@@ -34,28 +34,28 @@ c_ Codec:
     :type data: str
     :rtype: TreeNode
     """
-    left = l.... n: 2 * n + 1
-    right = l.... n: 2 * n + 2
-    data = data.s..(",")
+    left l.... n: 2 * n + 1
+    right l.... n: 2 * n + 2
+    data data.s..(",")
     __ data[0] __ "None":
       r.. N..
-    root = TreeNode(i..(data[0]
-    queue = d..([root])
-    i = 0
+    root TreeNode(i..(data[0]
+    queue d..([root])
+    i 0
     w.... queue a.. i < l..(data
-      top = queue.popleft()
+      top queue.popleft()
       i += 1
-      left = right = N..
+      left right N..
       __ i < l..(data) a.. data[i] != "None":
-        left = TreeNode(i..(data[i]
+        left TreeNode(i..(data[i]
         queue.a..(left)
       i += 1
       __ i < l..(data) a.. data[i] != "None":
-        right = TreeNode(i..(data[i]
+        right TreeNode(i..(data[i]
         queue.a..(right)
 
-      top.left = left
-      top.right = right
+      top.left left
+      top.right right
 
     r.. root
 

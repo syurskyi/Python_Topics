@@ -16,24 +16,24 @@ c_ Solution(o..
         :type k: int
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        n = l..(nums)
-        k = k % n
+        n l..(nums)
+        k k % n
         reverse(nums, 0, n - 1)
         reverse(nums, 0, k - 1)
         reverse(nums, k, n - 1)
 
     ___ reverse  nums, i, j
         w.... i < j:
-            nums[i], nums[j] = nums[j], nums[i]
+            nums[i], nums[j] nums[j], nums[i]
             i += 1
             j -_ 1
 
 
-a1 = [1, 2, 3, 4, 5, 6, 7]
-s = Solution()
+a1 [1, 2, 3, 4, 5, 6, 7]
+s Solution()
 s.rotate(a1, 3)
 print(a1)
 
-a2 = [1]
+a2 [1]
 s.rotate(a2, 2)
 print(a2)

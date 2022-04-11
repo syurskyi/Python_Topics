@@ -4,5 +4,5 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: int
     """
-    n = l..(nums)
+    n l..(nums)
     r.. (n * (n + 1 / 2 - s..(nums)

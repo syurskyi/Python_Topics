@@ -9,11 +9,11 @@ c_ Solution(o..
         :type graph: List[List[int]]
         :rtype: List[int]
         """
-        n = l..(graph)
-        outdegrees = [0]*n
-        inlinks = [[] ___ i __ r..(n)]
+        n l..(graph)
+        outdegrees [0]*n
+        inlinks [[] ___ i __ r..(n)]
         ___ i __ r..(n
-            outdegrees[i] = l..(graph[i])
+            outdegrees[i] l..(graph[i])
         ___ i __ r..(n
             ___ j __ graph[i]:
                 inlinks[j].a..(i)
@@ -23,7 +23,7 @@ c_ Solution(o..
                 queue.a..(i)
         res    # list
         w.... queue:
-            i = queue.p.. 0)
+            i queue.p.. 0)
             res.a..(i)
             ___ j __ inlinks[i]:
                 outdegrees[j] -_ 1
@@ -37,16 +37,16 @@ c_ Solution(o..
         :type graph: List[List[int]]
         :rtype: List[int]
         """
-        n = l..(graph)
-        isCycle = [F..]*n
+        n l..(graph)
+        isCycle [F..]*n
         ___ i __ r..(n
-            visited = s..()
+            visited s..()
             getIsCycle(i, i, graph, visited, isCycle)
         r.. [i ___ i __ r..(n) __ n.. isCycle[i]]
     
     ___ getIsCycle  i, start, graph, visited, isCycle
         __ start __ visited o. isCycle[start]:
-            isCycle[i] = T..
+            isCycle[i] T..
             r..
         visited.add(start)
         ___ nextVal __ graph[start]:
@@ -54,13 +54,13 @@ c_ Solution(o..
         visited.remove(start)
     
     ___ test
-        testCases = [
+        testCases [
             [[1,2],[2,3],[5],[0],[5],[],[]],
             [[],[0,2,3,4],[3],[4],[]],
         ]
         ___ graph __ testCases:
             print('graph: %s' % graph)
-            result = eventualSafeNodes(graph)
+            result eventualSafeNodes(graph)
             print('result: %s' % result)
             print('-='*30+'-')
 

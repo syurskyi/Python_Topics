@@ -20,7 +20,7 @@ One longest palindrome that can be built is "dccaccd", whose length is 7.
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -29,11 +29,11 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        c = d..(i..)
+        c d..(i..)
         ___ elt __ s:
             c[elt] += 1
 
-        ret = 0
+        ret 0
         ___ v __ c.v..
             ret += (v/2) * 2
 

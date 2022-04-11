@@ -1,11 +1,11 @@
 ____ c.. _______ n..
 ____ d__ _______ date, d__
 
-TimeOffset = n..('TimeOffset', 'offset date_str divider')
+TimeOffset n..('TimeOffset', 'offset date_str divider')
 
-NOW = d__.n..
-MINUTE, HOUR, DAY = 60, 60*60, 24*60*60
-TIME_OFFSETS = (
+NOW d__.n..
+MINUTE, HOUR, DAY 60, 60*60, 24*60*60
+TIME_OFFSETS (
     TimeOffset(10, 'just now', N..),
     TimeOffset(MINUTE, '{} seconds ago', N..),
     TimeOffset(2*MINUTE, 'a minute ago', N..),
@@ -22,7 +22,7 @@ ___ pretty_date(date
     __ n.. isi..(date, d__) o. date > NOW:
         r.. V...
 
-    date_delta = NOW - date
+    date_delta NOW - date
     __ date_delta.days __ 0:
         __ date_delta.seconds < 10:
             r.. TIME_OFFSETS[0].date_str

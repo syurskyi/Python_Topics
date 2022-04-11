@@ -7,24 +7,24 @@ c_ Solution(o..
     """
 
     ___ valid(nums, target, m
-      count = 1
-      total = 0
+      count 1
+      total 0
       ___ num __ nums:
         total += num
         __ total > target:
           count += 1
-          total = num
+          total num
           __ count > m:
             r.. F..
       r.. T..
 
-    start, end = m..(nums), s..(nums)
-    mid = 0
+    start, end m..(nums), s..(nums)
+    mid 0
     w.... start <_ end:
-      mid = start + (end - start) / 2
+      mid start + (end - start) / 2
       __ valid(nums, mid, m
-        end = mid - 1
+        end mid - 1
       ____
-        start = mid + 1
+        start mid + 1
 
     r.. start

@@ -37,7 +37,7 @@ c_ Solution:
                 (i - 1 < 0 o. flowerbed[i - 1] != 1)
 
                 n -_ 1
-                flowerbed[i] = 1
+                flowerbed[i] 1
                 __ n __ 0:
                     r.. T..
 

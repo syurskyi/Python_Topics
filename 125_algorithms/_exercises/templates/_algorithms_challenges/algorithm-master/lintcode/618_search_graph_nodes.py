@@ -27,11 +27,11 @@ c_ Solution:
         __ n.. graph:
             r..
 
-        queue = [node]
-        visited = {_node: F.. ___ _node __ graph}
+        queue [node]
+        visited {_node: F.. ___ _node __ graph}
 
         ___ _node __ queue:
-            visited[_node] = T..
+            visited[_node] T..
             __ values[_node] __ target:
                 r.. _node
             ___ _neighbor __ _node.neighbors:

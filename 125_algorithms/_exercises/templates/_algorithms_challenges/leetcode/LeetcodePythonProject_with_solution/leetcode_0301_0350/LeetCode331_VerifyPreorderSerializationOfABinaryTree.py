@@ -7,7 +7,7 @@ Created on Mar 19, 2017
 c_ Solution(o..
     ___ isValidSerialization  preorder
         __ n.. preorder: r.. F..
-        nodes = preorder.s..(',')
+        nodes preorder.s..(',')
         stack    # list
         ___ node __ nodes:
             stack.a..(node)

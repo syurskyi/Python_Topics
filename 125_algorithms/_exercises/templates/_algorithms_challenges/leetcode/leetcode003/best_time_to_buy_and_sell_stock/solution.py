@@ -16,9 +16,9 @@ c_ Solution(o..
         """
         __ n.. prices:
             r.. 0
-        max_profit = 0
-        min_price = prices[0]
+        max_profit 0
+        min_price prices[0]
         ___ i, p __ e..(prices
-            max_profit = m..(max_profit, (p - min_price
-            min_price = m..(min_price, p)
+            max_profit m..(max_profit, (p - min_price
+            min_price m..(min_price, p)
         r.. max_profit

@@ -12,23 +12,23 @@ c_ Solution:
         :type H: List[int]
         :rtype: int
         """
-        ans = 0
+        ans 0
         __ n.. H:
             r.. ans
 
-        n = l..(H)
-        L = [0] * n  # lowest height
+        n l..(H)
+        L [0] * n  # lowest height
 
         ___ left __ r..(n
             ___ right __ r..(left, n
-                L[right] = H[right]
+                L[right] H[right]
 
                 __ right > left a.. L[right - 1] < H[right]:
-                    L[right] = L[right - 1]
+                    L[right] L[right - 1]
 
-                area = L[right] * (right - left + 1)
+                area L[right] * (right - left + 1)
                 __ area > ans:
-                    ans = area
+                    ans area
 
         r.. ans
 
@@ -42,23 +42,23 @@ c_ Solution:
         :type H: List[int]
         :rtype: int
         """
-        ans = 0
+        ans 0
         __ n.. H:
             r.. ans
 
-        n = l..(H)
+        n l..(H)
 
         ___ right __ r..(l..(H:
             __ right < n - 1 a.. H[right] <_ H[right + 1]:
                 _____
-            Hmin = H[right]
+            Hmin H[right]
             ___ left __ r..(right, -1, -1
                 __ H[left] < Hmin:
-                    Hmin = H[left]
+                    Hmin H[left]
 
-                area = Hmin * (right - left + 1)
+                area Hmin * (right - left + 1)
                 __ area > ans:
-                    ans = area
+                    ans area
 
         r.. ans
 
@@ -72,7 +72,7 @@ c_ Solution:
         :type H: List[int]
         :rtype: int
         """
-        ans = 0
+        ans 0
         __ n.. H:
             r.. ans
 
@@ -81,11 +81,11 @@ c_ Solution:
 
         ___ right __ r..(l..(H:
             w.... stack a.. H[stack[-1]] >_ H[right]:
-                height = H[stack.p.. )]
-                left = stack[-1] __ stack ____ -1
-                area = height * (right - left - 1)
+                height H[stack.p.. )]
+                left stack[-1] __ stack ____ -1
+                area height * (right - left - 1)
                 __ area > ans:
-                    ans = area
+                    ans area
             stack.a..(right)
 
         r.. ans

@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 _______ b__
 
@@ -22,16 +22,16 @@ c_ Solution(o..
         :rtype: List[int]
         """
         __ a __ 0:
-            ret = map(l.... x: f(x, a, b, c), nums)
+            ret map(l.... x: f(x, a, b, c), nums)
             r.. ret __ b > 0 ____ ret[::-1]
 
-        mid = - f__(b) / (2*a)
-        ri = b__.bisect_left(nums, mid)
-        le = ri - 1
+        mid - f__(b) / (2*a)
+        ri b__.bisect_left(nums, mid)
+        le ri - 1
         ret    # list
         w.... le >_ 0 a.. ri < l..(nums) a.. le < ri:
-            f_le = f(nums[le], a, b, c)
-            f_ri = f(nums[ri], a, b, c)
+            f_le f(nums[le], a, b, c)
+            f_ri f(nums[ri], a, b, c)
             __ a > 0 a.. f_le < f_ri o. a < 0 a.. f_le > f_ri:
                 ret.a..(f_le)
                 le -_ 1

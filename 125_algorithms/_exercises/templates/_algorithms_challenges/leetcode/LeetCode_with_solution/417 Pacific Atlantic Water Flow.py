@@ -30,7 +30,7 @@ Return:
 [[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]] (positions with
 parentheses in above matrix).
 """
-dirs = ((0, 1), (0, -1), (1, 0), (-1, 0
+dirs ((0, 1), (0, -1), (1, 0), (-1, 0
 
 
 c_ Solution:
@@ -55,10 +55,10 @@ c_ Solution:
         __ n.. matrix o. n.. matrix[0]:
             r.. []
 
-        m, n = l..(matrix), l..(matrix[0])  # row, col
+        m, n l..(matrix), l..(matrix[0])  # row, col
         # don't do [[False] * n ] * m, memory management, all rows reference the same row
-        P = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
-        A = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
+        P [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
+        A [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
 
         # starting from edge point
         ___ i __ r..(m
@@ -69,7 +69,7 @@ c_ Solution:
             dfs(matrix, 0, j, P)
             dfs(matrix, m-1, j, A)
 
-        ret = [
+        ret [
             [i, j]
             ___ i __ r..(m)
             ___ j __ r..(n)
@@ -79,11 +79,11 @@ c_ Solution:
 
     ___ dfs  matrix, i, j, C
         # check before dfs (to be consistent)
-        C[i][j] = T..
-        m, n = l..(matrix), l..(matrix[0])
+        C[i][j] T..
+        m, n l..(matrix), l..(matrix[0])
         ___ x, y __ dirs:
-            I = i + x
-            J = j + y
+            I i + x
+            J j + y
             __ 0 <_ I < m a.. 0 <_ J < n a.. matrix[i][j] <_ matrix[I][J]:
                 __ n.. C[I][J]:
                     dfs(matrix, I, J, C)
@@ -99,21 +99,21 @@ c_ Solution:
         __ n.. matrix o. n.. matrix[0]:
             r.. []
 
-        m, n = l..(matrix), l..(matrix[0])  # row, col
-        P = [[F..] * n ] * m
-        A = [[F..] * n ] * m
+        m, n l..(matrix), l..(matrix[0])  # row, col
+        P [[F..] * n ] * m
+        A [[F..] * n ] * m
 
-        visisted = [[F..] * n ] * m
+        visisted [[F..] * n ] * m
         ___ i __ r..(m
             ___ j __ r..(n
                 dfs_error(matrix, i, j, visisted, P, l.... i, j: i < 0 o. j <0)
 
-        visisted = [[F..] * n ] * m
+        visisted [[F..] * n ] * m
         ___ i __ r..(m
             ___ j __ r..(n
                 dfs_error(matrix, i, j, visisted, A, l.... i, j: i >_ m o. j >_ n)
 
-        ret = [
+        ret [
             [i, j]
             ___ i __ r..(m)
             ___ j __ r..(n)
@@ -123,19 +123,19 @@ c_ Solution:
 
 
     ___ dfs_error  matrix, i, j, visisted, C, predicate
-        m, n = l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix[0])
         __ visisted[i][j]:
             r.. C[i][j]
 
-        visisted[i][j] = T..
+        visisted[i][j] T..
         ___ x, y __ dirs:
-            i2 = i + x
+            i2 i + x
             j2= j + y
             __ 0 <_ i2 < m a.. 0 <_ j2 < n:
                 __ dfs_error(matrix, i2, j2, visisted, C, predicate) a.. matrix[i][j] >_ matrix[i2][j2]:
-                    C[i][j] = T..
+                    C[i][j] T..
             ____ predicate(i2, j2
-                C[i][j] = T..
+                C[i][j] T..
 
         r.. C[i][j]
 

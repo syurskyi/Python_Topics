@@ -14,19 +14,19 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. s1 o. n.. s2: r.. 0
-        res = countHelper(s1*(n1//n2), s2)
+        res countHelper(s1*(n1//n2), s2)
         res += countHelper(s1*(n1%n2), s2*n2)
         r.. res
     
     ___ countHelper  s1, s2
         __ n.. s1 o. n.. s2: r.. 0
-        count = 0
-        i, j = 0, 0
+        count 0
+        i, j 0, 0
         w.... i < l..(s1) a.. j < l..(s2
             __ s1[i] __ s2[j]:
                 j += 1
             i += 1
             __ j __ l..(s2
                 count += 1
-                j = 0
+                j 0
         r.. count

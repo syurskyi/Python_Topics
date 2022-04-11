@@ -1,6 +1,6 @@
 _______ r__
 
-IPINFO_URL = 'http://ipinfo.io/{ip}/json'
+IPINFO_URL 'http://ipinfo.io/{ip}/json'
 
 
 ___ get_ip_country(ip_address

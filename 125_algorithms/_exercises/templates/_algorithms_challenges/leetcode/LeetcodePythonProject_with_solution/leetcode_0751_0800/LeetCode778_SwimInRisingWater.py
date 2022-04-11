@@ -10,13 +10,13 @@ c_ Solution(o..
         :rtype: int
         """
         _______ heapq
-        n = l..(grid)
-        pq = [(grid[0][0], 0, 0)]
-        visited = s..([(0, 0)])
-        res = 0
+        n l..(grid)
+        pq [(grid[0][0], 0, 0)]
+        visited s..([(0, 0)])
+        res 0
         w.... pq:
-            t, x, y = heapq.heappop(pq)
-            res = m..(res, t)
+            t, x, y heapq.heappop(pq)
+            res m..(res, t)
             __ x __ y __ n-1:
                 r.. res
             ___ i, j __ (x+1, y), (x, y+1), (x-1, y), (x, y-1
@@ -26,7 +26,7 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [0,2],
                 [1,3],
@@ -40,7 +40,7 @@ c_ Solution(o..
             ],
         ]
         ___ grid __ testCases:
-            result = swimInWater(grid)
+            result swimInWater(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 

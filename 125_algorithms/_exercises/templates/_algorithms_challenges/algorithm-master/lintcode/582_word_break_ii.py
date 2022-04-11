@@ -19,9 +19,9 @@ c_ Solution:
         __ n.. s:
             r.. res
 
-        n = l..(s)
+        n l..(s)
         ___ size __ r..(1, n + 1
-            prefix = s[:size]
+            prefix s[:size]
 
             __ prefix n.. __ words:
                 _____
@@ -33,7 +33,7 @@ c_ Solution:
             ___ word __ dfs(s[size:], words, memo
                 res.a..('{0} {1}'.f..(prefix, word
 
-        memo[s] = res
+        memo[s] res
         r.. res
 
 

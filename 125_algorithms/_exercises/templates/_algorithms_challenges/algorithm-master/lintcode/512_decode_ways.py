@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. s o. s __ '0':
             r.. 0
 
-        n = l..(s)
+        n l..(s)
 
         """
         `dp[i]` means the ways to decode
@@ -15,9 +15,9 @@ c_ Solution:
         `dp[0]` => ''
         `dp[1]` => should check if the code is 0
         """
-        dp = [0] * (n + 1)
-        dp[0] = 1
-        dp[1] = 0 __ s[0] __ '0' ____ 1
+        dp [0] * (n + 1)
+        dp[0] 1
+        dp[1] 0 __ s[0] __ '0' ____ 1
 
         ___ i __ r..(2, n + 1
             __ s[i - 1] != '0':

@@ -9,7 +9,7 @@ c_ Solution(o..
         :type s: str
         :rtype: bool
         """
-        low, high = 0, 0
+        low, high 0, 0
         ___ c __ s:
             __ c __ '(':
                 low += 1
@@ -27,7 +27,7 @@ c_ Solution(o..
         r.. low __ 0
     
     ___ test
-        testCases = [
+        testCases [
             '()',
             '(*)',
             '(*))',
@@ -36,7 +36,7 @@ c_ Solution(o..
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = checkValidString(s)
+            result checkValidString(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

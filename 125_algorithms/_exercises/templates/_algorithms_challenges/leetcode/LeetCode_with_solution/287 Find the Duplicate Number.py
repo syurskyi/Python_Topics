@@ -8,7 +8,7 @@ You must use only constant, O(1) extra space.
 Your runtime complexity should be less than O(n^2).
 There is only one duplicate number in the array, but it could be repeated more than once.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -27,17 +27,17 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        f, s = 0, 0
+        f, s 0, 0
         w... T...
-            f = nums[nums[f]]
-            s = nums[s]
+            f nums[nums[f]]
+            s nums[s]
             __ f __ s:
                 _____
 
-        t = 0
+        t 0
         w.... t != s:
-            t = nums[t]
-            s = nums[s]
+            t nums[t]
+            s nums[s]
 
         r.. t
 

@@ -2,7 +2,7 @@
 Given an Iterator class interface with methods: next() and hasNext(), design and implement a PeekingIterator that
 support the peek() operation -- it essentially peek() at the element that will be returned by the next call to next().
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Iterator(o..
@@ -31,8 +31,8 @@ c_ PeekingIterator(o..
         Initialize your data structure here.
         :type iterator: Iterator
         """
-        nxt = N..
-        iterator = iterator
+        nxt N..
+        iterator iterator
 
     ___ peek
         """
@@ -40,7 +40,7 @@ c_ PeekingIterator(o..
         :rtype: int
         """
         __ n.. nxt:
-            nxt = iterator.next()
+            nxt iterator.next()
 
         r.. nxt
 
@@ -48,8 +48,8 @@ c_ PeekingIterator(o..
         """
         :rtype: int
         """
-        ret = peek()
-        nxt = N..
+        ret peek()
+        nxt N..
         r.. ret
 
     ___ hasNext

@@ -6,7 +6,7 @@ c_ Solution:
     # Write your code here
 
     ___ dfs(root, graph, visited, parent
-      visited[root] = 1
+      visited[root] 1
       ___ nbr __ graph.g.. root, []
         __ nbr __ parent:
           _____
@@ -14,17 +14,17 @@ c_ Solution:
           r.. F..
         __ n.. dfs(nbr, graph, visited, root
           r.. F..
-      visited[root] = 2
+      visited[root] 2
       nodeVisited += 1
       r.. T..
 
-    visited = [0 ___ _ __ r..(n)]
+    visited [0 ___ _ __ r..(n)]
     graph    # dict
-    nodeVisited = 0
+    nodeVisited 0
     ___ edge __ edges:
-      start, end = edge[0], edge[1]
-      graph[start] = graph.g.. start, []) + [end]
-      graph[end] = graph.g.. end, []) + [start]
+      start, end edge[0], edge[1]
+      graph[start] graph.g.. start, []) + [end]
+      graph[end] graph.g.. end, []) + [start]
 
     __ dfs(0, graph, visited, -1) a.. nodeVisited __ n:
       r.. T..

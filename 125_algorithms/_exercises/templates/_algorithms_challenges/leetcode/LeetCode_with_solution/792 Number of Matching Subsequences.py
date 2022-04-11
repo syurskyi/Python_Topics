@@ -29,15 +29,15 @@ c_ Solution:
 
         HashMap + Iterator
         """
-        itrs_m = d..(l..)
+        itrs_m d..(l..)
         ___ w __ words:
             itrs_m[w[0]].a..(
                 i..(w[1:])
             )
         ___ a __ S:
-            itrs = itrs_m.p.. a, [])
+            itrs itrs_m.p.. a, [])
             ___ itr __ itrs:
-                v = next(itr, N..)
+                v next(itr, N..)
                 itrs_m[v].a..(itr)
 
         r.. l..(itrs_m[N..])
@@ -52,7 +52,7 @@ c_ Solution:
         go through all words parallel
         O(|S| |Words|)
         """
-        I = [0 ___ _ __ words]
+        I [0 ___ _ __ words]
         ___ a __ S:
             ___ wi, i __ e..(I
                 __ i < l..(words[wi]) a.. words[wi][i] __ a:

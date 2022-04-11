@@ -35,12 +35,12 @@ c_ Solution:
             pre: 3->2->1
             nxt: None
         """
-        pre = nxt = N..
+        pre nxt N..
 
         w.... head:
-            nxt = head.next  # save the remaining children
-            head.next = pre  # break the link
-            pre = head       # save the new head
-            head = nxt       # pointer the old head
+            nxt head.next  # save the remaining children
+            head.next pre  # break the link
+            pre head       # save the new head
+            head nxt       # pointer the old head
 
         r.. pre

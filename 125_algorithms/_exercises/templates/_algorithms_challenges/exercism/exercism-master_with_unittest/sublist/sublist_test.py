@@ -14,63 +14,63 @@ c_ SublistTest(unittest.TestCase
         assertEqual(SUPERLIST, check_lists([1], []
 
     ___ test_equal_lists
-        l1 = [0, 1, 2]
-        l2 = [0, 1, 2]
+        l1 [0, 1, 2]
+        l2 [0, 1, 2]
         assertEqual(EQUAL, check_lists(l1, l2
 
     ___ test_different_lists
-        l1 = l..(r..(1000000
-        l2 = l..(r..(1, 1000001
+        l1 l..(r..(1000000
+        l2 l..(r..(1, 1000001
         assertEqual(UNEQUAL, check_lists(l1, l2
 
     ___ test_false_start
-        l1 = [1, 2, 5]
-        l2 = [0, 1, 2, 3, 1, 2, 5, 6]
+        l1 [1, 2, 5]
+        l2 [0, 1, 2, 3, 1, 2, 5, 6]
         assertEqual(SUBLIST, check_lists(l1, l2
 
     ___ test_consecutive
-        l1 = [1, 1, 2]
-        l2 = [0, 1, 1, 1, 2, 1, 2]
+        l1 [1, 1, 2]
+        l2 [0, 1, 1, 1, 2, 1, 2]
         assertEqual(SUBLIST, check_lists(l1, l2
 
     ___ test_sublist_at_start
-        l1 = [0, 1, 2]
-        l2 = [0, 1, 2, 3, 4, 5]
+        l1 [0, 1, 2]
+        l2 [0, 1, 2, 3, 4, 5]
         assertEqual(SUBLIST, check_lists(l1, l2
 
     ___ test_sublist_in_middle
-        l1 = [2, 3, 4]
-        l2 = [0, 1, 2, 3, 4, 5]
+        l1 [2, 3, 4]
+        l2 [0, 1, 2, 3, 4, 5]
         assertEqual(SUBLIST, check_lists(l1, l2
 
     ___ test_sublist_at_end
-        l1 = [3, 4, 5]
-        l2 = [0, 1, 2, 3, 4, 5]
+        l1 [3, 4, 5]
+        l2 [0, 1, 2, 3, 4, 5]
         assertEqual(SUBLIST, check_lists(l1, l2
 
     ___ test_at_start_of_superlist
-        l1 = [0, 1, 2, 3, 4, 5]
-        l2 = [0, 1, 2]
+        l1 [0, 1, 2, 3, 4, 5]
+        l2 [0, 1, 2]
         assertEqual(SUPERLIST, check_lists(l1, l2
 
     ___ test_in_middle_of_superlist
-        l1 = [0, 1, 2, 3, 4, 5]
-        l2 = [2, 3]
+        l1 [0, 1, 2, 3, 4, 5]
+        l2 [2, 3]
         assertEqual(SUPERLIST, check_lists(l1, l2
 
     ___ test_at_end_of_superlist
-        l1 = [0, 1, 2, 3, 4, 5]
-        l2 = [3, 4, 5]
+        l1 [0, 1, 2, 3, 4, 5]
+        l2 [3, 4, 5]
         assertEqual(SUPERLIST, check_lists(l1, l2
 
     ___ test_large_lists
-        l1 = l..(r..(1000 * 1000 + l..(r..(1000, 1100
-        l2 = l..(r..(900, 1050
+        l1 l..(r..(1000 * 1000 + l..(r..(1000, 1100
+        l2 l..(r..(900, 1050
         assertEqual(SUPERLIST, check_lists(l1, l2
 
     ___ test_spread_sublist
-        multiples_of_3 = l..(r..(3, 200, 3
-        multiples_of_15 = l..(r..(15, 200, 15
+        multiples_of_3 l..(r..(3, 200, 3
+        multiples_of_15 l..(r..(15, 200, 15
         assertEqual(UNEQUAL,
                          check_lists(multiples_of_15, multiples_of_3
 

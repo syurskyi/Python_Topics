@@ -7,18 +7,18 @@ ____ anagram _______ detect_anagrams
 
 c_ AnagramTests(unittest.TestCase
     ___ test_no_matches
-        candidates = ["hello", "world", "zombies", "pants"]
+        candidates ["hello", "world", "zombies", "pants"]
         assertEqual(detect_anagrams("diaper", candidates), [])
 
     ___ test_detects_simple_anagram
-        candidates = ["tan", "stand", "at"]
+        candidates ["tan", "stand", "at"]
         assertEqual(detect_anagrams("ant", candidates), ["tan"])
 
     ___ test_does_not_detect_false_positives
         assertEqual(detect_anagrams("galea", ["eagle"]), [])
 
     ___ test_detects_two_anagrams
-        candidates = ["stream", "pigeon", "maters"]
+        candidates ["stream", "pigeon", "maters"]
         assertEqual(
             detect_anagrams("master", candidates), ["stream", "maters"])
 
@@ -26,11 +26,11 @@ c_ AnagramTests(unittest.TestCase
         assertEqual(detect_anagrams("good", ["dog", "goody"]), [])
 
     ___ test_detects_anagram
-        candidates = ["enlists", "google", "inlets", "banana"]
+        candidates ["enlists", "google", "inlets", "banana"]
         assertEqual(detect_anagrams("listen", candidates), ["inlets"])
 
     ___ test_detects_three_anagrams
-        candidates = [
+        candidates [
             "gallery", "ballerina", "regally", "clergy", "largely", "leading"
         ]
         assertEqual(
@@ -38,24 +38,24 @@ c_ AnagramTests(unittest.TestCase
             ["gallery", "regally", "largely"])
 
     ___ test_does_not_detect_identical_words
-        candidates = ["corn", "dark", "Corn", "rank", "CORN", "cron", "park"]
+        candidates ["corn", "dark", "Corn", "rank", "CORN", "cron", "park"]
         assertEqual(detect_anagrams("corn", candidates), ["cron"])
 
     ___ test_does_not_detect_non_anagrams_with_identical_checksum
         assertEqual(detect_anagrams("mass", ["last"]), [])
 
     ___ test_detects_anagrams_case_insensitively
-        candidates = ["cashregister", "Carthorse", "radishes"]
+        candidates ["cashregister", "Carthorse", "radishes"]
         assertEqual(
             detect_anagrams("Orchestra", candidates), ["Carthorse"])
 
     ___ test_detects_anagrams_using_case_insensitive_subjec
-        candidates = ["cashregister", "carthorse", "radishes"]
+        candidates ["cashregister", "carthorse", "radishes"]
         assertEqual(
             detect_anagrams("Orchestra", candidates), ["carthorse"])
 
     ___ test_detects_anagrams_using_case_insensitive_possible_matches
-        candidates = ["cashregister", "Carthorse", "radishes"]
+        candidates ["cashregister", "Carthorse", "radishes"]
         assertEqual(
             detect_anagrams("orchestra", candidates), ["Carthorse"])
 

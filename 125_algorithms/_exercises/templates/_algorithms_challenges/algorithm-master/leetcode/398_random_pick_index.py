@@ -6,22 +6,22 @@ c_ Solution:
         """
         :type A: List[int]
         """
-        A = A
+        A A
 
     ___ pick  target
         """
         :type target: int
         :rtype: int
         """
-        res = -1
-        cnt = 0
+        res -1
+        cnt 0
 
         ___ i __ r..(l..(A:
             __ A[i] != target:
                 _____
             cnt += 1
             __ r..(1, cnt) __ cnt:
-                res = i
+                res i
 
         r.. res
 

@@ -14,11 +14,11 @@ _______ d__
 # u__.r...u..(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples
-Video = n..('Video', 'id title duration metrics')
+Video n..('Video', 'id title duration metrics')
 
 # POSSIBLE DASK ERROR. UNABLE TO LOAD PICKLE FILE
 # MANUALLY INSERTED BELOW
-pycon_videos = [Video(id='T-TwcmT6Rcw',
+pycon_videos [Video(id='T-TwcmT6Rcw',
                       title='Raymond Hettinger - Dataclasses:  The code generator to end all code generators - PyCon 2018',
                       duration='PT45M8S',
                       metrics={'viewCount': '6047', 'likeCount': '139', 'dislikeCount': '2', 'favoriteCount': '0',

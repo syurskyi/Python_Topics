@@ -8,11 +8,11 @@ ____ omdb _______ (get_movie_data,
                   get_movie_most_nominations,
                   get_movie_longest_runtime)
 
-TMP = P..('/tmp')
-S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
-DATA = 'omdb_data'
+TMP P..('/tmp')
+S3 'https://bites-data.s3.us-east-2.amazonaws.com/'
+DATA 'omdb_data'
 
-DATA_LOCAL = TMP / DATA
+DATA_LOCAL TMP / DATA
 __ n.. P..(DATA_LOCAL).exists
     u..(S3 + DATA, DATA_LOCAL)
 
@@ -22,7 +22,7 @@ ___ movies
     files    # list
     w__ o.. DATA_LOCAL) __ f:
         ___ i, line __ e..(f.r.., 1
-            movie_json = TMP / f'{i}.json'
+            movie_json TMP / f'{i}.json'
             w__ o.. movie_json, 'w') __ f:
                 f.write _*{line}\n')
             files.a..(movie_json)

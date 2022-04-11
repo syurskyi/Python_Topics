@@ -8,9 +8,9 @@ c_ MovingAverage(o..
     Initialize your data structure here.
     :type size: int
     """
-    windowSize = size
-    windowSum = 0.0
-    data = d..([])
+    windowSize size
+    windowSum 0.0
+    data d..([])
 
   ___ next  val
     """
@@ -18,11 +18,11 @@ c_ MovingAverage(o..
     :rtype: float
     """
     windowSum += val
-    data = data
+    data data
 
-    leftTop = 0
+    leftTop 0
     __ l..(data) >_ windowSize:
-      leftTop = data.popleft()
+      leftTop data.popleft()
     data.a..(val)
 
     windowSum -_ leftTop

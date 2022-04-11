@@ -8,7 +8,7 @@ _______ p__
 ____ cls _______ get_classes
 
 # note that since 3.8 there is no OrderedDict here anymore
-csv_classes = [
+csv_classes [
     'Dialect', 'DictReader', 'DictWriter',
     'Error', 'Sniffer', 'StringIO'
 ]
@@ -24,5 +24,5 @@ string_classes =  'Formatter', 'Template'
     (s__, string_classes),
 ])
 ___ test_cls(mod, e..
-    a.. = get_classes(mod)
+    a.. get_classes(mod)
     ... s..(a..) __ s..(e..)

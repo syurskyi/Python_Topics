@@ -17,10 +17,10 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: int
     """
-    pp = nums[0]
-    p = m..(pp, nums[1])
+    pp nums[0]
+    p m..(pp, nums[1])
     ___ i __ r..(2, l..(nums:
       tmp  p
-      p = m..(pp + nums[i], p)
-      pp = tmp
+      p m..(pp + nums[i], p)
+      pp tmp
     r.. p

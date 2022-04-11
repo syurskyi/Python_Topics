@@ -8,7 +8,7 @@ ___ swap(a, b
 
 ___ build_chain(c__, domino
     __ c__ __ n.. N..
-        last = c__[-1]
+        last c__[-1]
         __ l..(c__) __ 1 a.. last[0] __ domino[0]:
             r.. [swap(*last), domino]
         ____ l..(c__) __ 1 a.. last[0] __ domino[1]:
@@ -23,8 +23,8 @@ ___ build_chain(c__, domino
 ___ c__(dominoes
     __ n.. any(dominoes
         r.. []
-    ___ perm __ permutations(dominoes
-        c__ = r.. build_chain, perm[1:], [perm[0]])
+    ___ perm __ p.. dominoes
+        c__ r.. build_chain, perm[1:], [perm[0]])
         __ c__ __ n.. N.. a.. c__[0][0] __ c__[-1][1]:
             r.. c__
     r.. N..

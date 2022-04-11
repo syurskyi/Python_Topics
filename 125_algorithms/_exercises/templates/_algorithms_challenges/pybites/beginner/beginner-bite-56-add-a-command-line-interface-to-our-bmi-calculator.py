@@ -28,7 +28,7 @@ ___ calc_bmi(weight, length
     """Provided/DONE:
        Calc BMI give a weight in kg and length in cm, return the BMI
        rounded on 2 decimals"""
-    bmi = i.. ? / ((i..(length) / 100) ** 2)
+    bmi i.. ? / ((i..(length) / 100) ** 2)
     r.. r..(bmi, 2)
 
 
@@ -36,7 +36,7 @@ ___ create_parser
     """TODO:
        Create an ArgumentParser adding the right arguments to pass the tests,
        returns a argparse.ArgumentParser object"""
-    parser = a__.A..()
+    parser a__.A..()
     parser.a..("-w", "--weight", h.._"Your weight in kg")
     parser.a..("-l", "--length", h.._"Your length in cm")
     r.. parser
@@ -47,8 +47,8 @@ ___ handle_args(args_ N..
        Call calc_bmi with provided args object.
        If args are not provided get them from create_parser"""
     __ args __ N..
-        parser = create_parser()
-        args = parser.p..
+        parser create_parser()
+        args parser.p..
 
     __ args.weight a.. args.length:
         bmi _ ? ?.w.. ?.l..

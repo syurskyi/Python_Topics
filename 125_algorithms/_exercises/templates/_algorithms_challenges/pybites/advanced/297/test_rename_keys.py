@@ -82,9 +82,9 @@ ___ fb(value
                           'webpageUrl': 'webpageUrl'})
 ])
 ___ test_rename_keys(test_input, e..
-    snapshot_before = r.. (test_input)
-    renamed = rename_keys(test_input)
-    snapshot_after = r.. (test_input)
+    snapshot_before r.. (test_input)
+    renamed rename_keys(test_input)
+    snapshot_after r.. (test_input)
 
     ... renamed __ e..
 

@@ -5,7 +5,7 @@ Example:
 Given n = 2, return 91. (The answer should be the total numbers in the range of 0 <= x < 100, excluding
 [11,22,33,44,55,66,77,88,99])
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -20,8 +20,8 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        ret = 1
-        Fi = 1
+        ret 1
+        Fi 1
         ___ i __ x..(n
             Fi *= (10-i) __ i != 0 ____ 9
             ret += Fi

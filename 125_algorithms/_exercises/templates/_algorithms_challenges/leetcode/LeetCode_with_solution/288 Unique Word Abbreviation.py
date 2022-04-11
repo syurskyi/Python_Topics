@@ -3,7 +3,7 @@ Premium Question
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ ValidWordAbbr(o..
@@ -12,8 +12,8 @@ c_ ValidWordAbbr(o..
         initialize your data structure here.
         :type dictionary: List[str]
         """
-        abbrev = d..(i..)
-        dictionary = s..(dictionary)
+        abbrev d..(i..)
+        dictionary s..(dictionary)
 
         ___ word __ dictionary:
             abbrev[process(word)] += 1

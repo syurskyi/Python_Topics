@@ -1,6 +1,6 @@
 _______ __
-DOWN, UP, LEFT, RIGHT = '⇓', '⇑', '⇐', '⇒'
-START_VALUE = 1
+DOWN, UP, LEFT, RIGHT '⇓', '⇑', '⇐', '⇒'
+START_VALUE 1
 
 
 ___ print_sequence_route(grid, start_coordinates_ N..
@@ -14,25 +14,25 @@ ___ print_sequence_route(grid, start_coordinates_ N..
     matrix    # list
     ___ i,line __ e..(grid.s..:
         __ i % 2 __ 1:
-            values = l.. m..(i..,__.s..(r'\D+',line)))
+            values l.. m..(i..,__.s..(r'\D+',line)))
             __ START_VALUE __ values:
-                start_row = l..(matrix)
-                start_col = values.i.. START_VALUE)
+                start_row l..(matrix)
+                start_col values.i.. START_VALUE)
             matrix.a..(values)
     
 
-    length = l..(matrix)
+    length l..(matrix)
 
-    goal = length**2
-    current_row,current_col = start_row,start_col
-    current_value = START_VALUE 
+    goal length**2
+    current_row,current_col start_row,start_col
+    current_value START_VALUE
 
-    previous_direction = N..
+    previous_direction N..
 
     
     print(current_value,end=' ')
     w.... current_value != goal:
-        directions = ((current_row + 1,current_col,DOWN),(current_row - 1,current_col,UP),(current_row,current_col + 1,RIGHT),(current_row,current_col -1,LEFT
+        directions ((current_row + 1,current_col,DOWN),(current_row - 1,current_col,UP),(current_row,current_col + 1,RIGHT),(current_row,current_col -1,LEFT
 
 
         ___ neighbor_x,neighbor_y,direction __ directions:
@@ -40,14 +40,14 @@ ___ print_sequence_route(grid, start_coordinates_ N..
                 __ matrix[neighbor_x][neighbor_y] __ current_value + 1:
                     __ previous_direction __ n.. N.. a.. direction != previous_direction:
                         print(direction)
-                        previous_direction = direction
+                        previous_direction direction
                     ____ previous_direction __ N..
-                        previous_direction = direction
+                        previous_direction direction
                     print(current_value + 1,end=' ')
 
                     _____
 
-        current_row,current_col = neighbor_x,neighbor_y
+        current_row,current_col neighbor_x,neighbor_y
         current_value += 1
 
 
@@ -63,7 +63,7 @@ ___ print_sequence_route(grid, start_coordinates_ N..
 __ _______ __ _______
 
 
-    small_grid = """
+    small_grid """
 21 - 22 - 23 - 24 - 25
  |
 20    7 -  8 -  9 - 10

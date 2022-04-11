@@ -5,7 +5,7 @@ Example:
 Given a = 1 and b = 2, return 3.
 """
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -19,11 +19,11 @@ c_ Solution(o..
         :type b: int
         :rtype: int
         """
-        MAX = 0x7FFFFFFF
-        MSK = 0xFFFFFFFF
+        MAX 0x7FFFFFFF
+        MSK 0xFFFFFFFF
 
-        carry = (a & b) << 1
-        out = a ^ b
+        carry (a & b) << 1
+        out a ^ b
 
         # convert to 32 bit
         carry &= MSK

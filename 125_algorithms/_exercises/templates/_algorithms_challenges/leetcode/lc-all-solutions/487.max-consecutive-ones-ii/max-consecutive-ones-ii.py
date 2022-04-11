@@ -1,8 +1,8 @@
 c_ Solution(o..
   ___ -
-    ans = 0
-    count = 0
-    lastCount = 0
+    ans 0
+    count 0
+    lastCount 0
 
   ___ findMaxConsecutiveOnes  nums
     """
@@ -20,6 +20,6 @@ c_ Solution(o..
     __ num __ 1:
       count += 1
     ____
-      count = count - lastCount + 1
-      lastCount = count
-    ans = m..(ans, count)
+      count count - lastCount + 1
+      lastCount count
+    ans m..(ans, count)

@@ -1,7 +1,7 @@
 c_ TrieNode:
     ___ -
         children    # dict
-        end_of = N..
+        end_of N..
 
 
 c_ Solution:
@@ -11,20 +11,20 @@ c_ Solution:
         :type words: list[str]
         :rtype: int
         """
-        ans = 0
+        ans 0
 
         __ n.. board o. n.. board[0]:
             r.. ans
 
 
-        root = TrieNode()
+        root TrieNode()
 
         ___ word __ words:
             put(root, word)
 
 
-        m, n = l..(board), l..(board[0])
-        visited = s..()
+        m, n l..(board), l..(board[0])
+        visited s..()
 
         ___ x __ r..(m
             ___ y __ r..(n
@@ -34,7 +34,7 @@ c_ Solution:
         r.. ans
 
     ___ dfs  board, i, j, root, visited, cnt
-        m, n = l..(board), l..(board[0])
+        m, n l..(board), l..(board[0])
 
         ___ x __ r..(i, m
             ___ y __ r..(j, n
@@ -50,28 +50,28 @@ c_ Solution:
                     ___ p __ pos:
                         visited.discard(p)
 
-            j = 0
+            j 0
 
     ___ find_next_words  board, x, y, visited, cnt, node, next_words, p..
         __ (x, y) __ visited o. board[x][y] n.. __ node.children:
             r..
 
-        m, n = l..(board), l..(board[0])
-        node = node.children[board[x][y]]
+        m, n l..(board), l..(board[0])
+        node node.children[board[x][y]]
 
         p...a..((x, y
         visited.add((x, y
 
         __ node.end_of __ n.. N..
             next_words.a..(p.. | )
-            ans = m..(ans, cnt + 1)
+            ans m..(ans, cnt + 1)
         ____
             ___ dx, dy __ (
                 (-1, 0), (1, 0),
                 (0, -1), (0, 1),
 
-                _x = x + dx
-                _y = y + dy
+                _x x + dx
+                _y y + dy
 
                 __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                     _____
@@ -82,12 +82,12 @@ c_ Solution:
         visited.discard((x, y
 
     ___ put  root, word
-        node = root
+        node root
 
         ___ c __ word:
             __ c n.. __ node.children:
-                node.children[c] = TrieNode()
+                node.children[c] TrieNode()
 
-            node = node.children[c]
+            node node.children[c]
 
-        node.end_of = word
+        node.end_of word

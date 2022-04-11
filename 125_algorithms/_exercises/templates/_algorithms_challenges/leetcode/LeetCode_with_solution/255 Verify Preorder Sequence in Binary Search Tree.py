@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -13,14 +13,14 @@ c_ Solution:
         :type preorder:List[int]
         :rtype: bool
         """
-        left_finished = N..
+        left_finished N..
         stk    # list
         ___ num __ preorder:
             __ left_finished a.. num < left_finished:
                 r.. F..
 
             w.... stk a.. stk[-1] < num:
-                left_finished = stk.p.. )
+                left_finished stk.p.. )
 
             stk.a..(num)
 
@@ -28,5 +28,5 @@ c_ Solution:
 
 
 __ _______ __ _______
-    preorder = [3, 5, 2, 1, 4, 7, 6, 9, 8, 10]
+    preorder [3, 5, 2, 1, 4, 7, 6, 9, 8, 10]
     ... Solution().verifyPreorder(preorder) __ F..

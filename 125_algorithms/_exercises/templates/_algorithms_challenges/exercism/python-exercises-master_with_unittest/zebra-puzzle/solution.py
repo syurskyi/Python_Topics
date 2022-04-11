@@ -15,9 +15,9 @@ ___ next_to(x, y
 
 
 ___ solution
-    houses = first, _, middle, _, _ = r..(5)
-    orderings = l..(permutations(houses
-    result = next(
+    houses first, _, middle, _, _ r..(5)
+    orderings l..(p.. houses
+    result next(
         [{
             Englishman: "Englishman",
             Spaniard: "Spaniard",

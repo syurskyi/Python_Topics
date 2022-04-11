@@ -11,25 +11,25 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        low, high = 1, m*n+1
+        low, high 1, m*n+1
         w.... low < high:
-            mid = (low+high)//2
-            c = c.. mid, m, n)
+            mid (low+high)//2
+            c c.. mid, m, n)
             __ c >_ k:
-                high = mid
+                high mid
             ____
-                low = mid+1
+                low mid+1
         r.. high
     
     ___ c.. self, val, m, n
-        count = 0
+        count 0
         ___ i __ r..(1, m+1
             tmp  m..(val//i, n)
             count += tmp
         r.. count
     
     ___ test
-        testCases = [
+        testCases [
             [
                 3,
                 3,
@@ -45,7 +45,7 @@ c_ Solution(o..
             print('m: %s' % m)
             print('n: %s' % n)
             print('k: %s' % k)
-            result = findKthNumber(m, n, k)
+            result findKthNumber(m, n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

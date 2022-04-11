@@ -14,11 +14,11 @@ Test Case:
 
 
 c_ Solution:
-    NORMAL = 0
-    VIRUS = 1
-    EX_VIRUS = -1
+    NORMAL 0
+    VIRUS 1
+    EX_VIRUS -1
 
-    V = (
+    V (
         (-1,  0),
         ( 1,  0),
         ( 0, -1),
@@ -31,13 +31,13 @@ c_ Solution:
         :rtype: int
         """
 
-        walls = 0
+        walls 0
 
         __ n.. G o. n.. G[0]:
             r.. walls
 
         w... T...
-            _walls = build_walls(G)
+            _walls build_walls(G)
             __ _walls __ 0:
                 _____
             walls += _walls
@@ -45,11 +45,11 @@ c_ Solution:
         r.. walls
 
     ___ build_walls  G
-        m, n = l..(G), l..(G[0])
+        m, n l..(G), l..(G[0])
         ex_virus    # list
         spreading    # list
         walls    # list
-        visited = [[F..] * n ___ _ __ r..(m)]
+        visited [[F..] * n ___ _ __ r..(m)]
 
         ___ x __ r..(m
             ___ y __ r..(n
@@ -59,13 +59,13 @@ c_ Solution:
                     walls.a..(0)
                     dfs(x, y, G, visited, ex_virus, spreading, walls)
 
-        _max_save = _max_i = -1
-        s = l..(spreading)
+        _max_save _max_i -1
+        s l..(spreading)
         ___ i __ r..(s
-            t = l..(spreading[i])
+            t l..(spreading[i])
             __ t > _max_save:
-                _max_save = t
-                _max_i = i
+                _max_save t
+                _max_i i
 
         __ _max_save __ -1:
             r.. 0
@@ -73,24 +73,24 @@ c_ Solution:
         ___ i __ r..(s
             __ i __ _max_i:
                 ___ x, y __ ex_virus[i]:
-                    G[x][y] = EX_VIRUS
+                    G[x][y] EX_VIRUS
             ____
                 ___ x, y __ spreading[i]:
-                    G[x][y] = VIRUS
+                    G[x][y] VIRUS
 
         r.. walls[_max_i]
 
     ___ dfs  x, y, G, visited, ex_virus, spreading, walls
-        m, n = l..(G), l..(G[0])
+        m, n l..(G), l..(G[0])
         __ n.. (0 <_ x < m a.. 0 <_ y < n) o. visited[x][y]:
             r..
 
         __ G[x][y] __ VIRUS:
-            visited[x][y] = T..
+            visited[x][y] T..
             ex_virus[-1].add((x, y
             ___ dx, dy __ V:
-                _x = x + dx
-                _y = y + dy
+                _x x + dx
+                _y y + dy
                 dfs(_x, _y, G, visited, ex_virus, spreading, walls)
         ____ G[x][y] __ NORMAL:
             spreading[-1].add((x, y

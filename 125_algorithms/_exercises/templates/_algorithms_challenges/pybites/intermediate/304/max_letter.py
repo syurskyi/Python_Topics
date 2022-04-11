@@ -21,24 +21,24 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
         r.. V...("Strings only")
 
     
-    max_count = 0
-    max_word = max_letter =  ''
+    max_count 0
+    max_word max_letter =  ''
 
-    words = text.s..
+    words text.s..
 
     ___ word __ words:
-        counts = C..()
+        counts C..()
         ___ letter __ word.c..
             __ letter.i..
                 counts[letter] += 1
 
         __ counts:
-            most_common_letter,most_common_count = counts.most_common(1)[0]
+            most_common_letter,most_common_count counts.most_common(1)[0]
             __ most_common_count > max_count:
 
-                max_count = most_common_count
-                max_word = word.s..(s__.punctuation + s__.d.. + '«¿')
-                max_letter = most_common_letter
+                max_count most_common_count
+                max_word word.s..(s__.punctuation + s__.d.. + '«¿')
+                max_letter most_common_letter
 
 
     r.. max_word,max_letter,max_count

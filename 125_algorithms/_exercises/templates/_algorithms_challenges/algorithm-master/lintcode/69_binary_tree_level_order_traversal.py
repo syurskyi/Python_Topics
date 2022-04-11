@@ -25,7 +25,7 @@ c_ Solution:
         __ n.. root:
             r.. ans
 
-        queue, _queue = [root], []
+        queue, _queue [root], []
 
         w.... queue:
             ans.a..([])
@@ -37,6 +37,6 @@ c_ Solution:
                     _queue.a..(node.right)
                 ans[-1].a..(node.val)
 
-            queue, _queue = _queue, []
+            queue, _queue _queue, []
 
         r.. ans

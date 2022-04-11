@@ -10,7 +10,7 @@ c_ BSTIterator(o..
     """
     :type root: TreeNode
     """
-    p = N..
+    p N..
     stack    # list
     __ root:
       stack.a..((1, root
@@ -25,9 +25,9 @@ c_ BSTIterator(o..
     """
     :rtype: int
     """
-    stack = stack
+    stack stack
     w.... stack:
-      p = stack.p.. )
+      p stack.p.. )
       __ n.. p[1]:
         _____
       __ p[0] __ 0:

@@ -5,14 +5,14 @@ c_ Solution(o..
     :rtype: str
     """
     stack    # list
-    i = l..(expression) - 1
+    i l..(expression) - 1
     w.... i >_ 0:
       __ expression[i] n.. __ ["?", ":"]:
         stack.a..(expression[i])
       ____ expression[i] __ "?":
         i -_ 1
         __ expression[i] __ "T":
-          top = stack.p.. )
+          top stack.p.. )
           stack.p.. )
           stack.a..(top)
         ____ expression[i] __ "F":

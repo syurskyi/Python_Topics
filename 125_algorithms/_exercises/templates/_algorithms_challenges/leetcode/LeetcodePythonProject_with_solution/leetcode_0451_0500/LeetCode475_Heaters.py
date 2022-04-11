@@ -8,8 +8,8 @@ c_ Solution(o..
     ___ findRadius  houses, heaters
         houses.s..()
         heaters.s..()
-        i = 0
-        radius = 0
+        i 0
+        radius 0
         ___ house __ houses:
             w.... i+1 < l..(heaters) a.. heaters[i+1] < house:
                 i += 1
@@ -19,11 +19,11 @@ c_ Solution(o..
                 tmp  house-heaters[i]
                 __ i+1 < l..(heaters
                     tmp  m..(tmp, heaters[i+1]-house)
-            radius = m..(radius, tmp)
+            radius m..(radius, tmp)
         r.. radius
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1, 2, 3],
                 [2],
@@ -36,7 +36,7 @@ c_ Solution(o..
         ___ houses, heaters __ testCases:
             print('houses: %s' % houses)
             print('heaters: %s' % heaters)
-            result = findRadius(houses, heaters)
+            result findRadius(houses, heaters)
             print('result: %s' % result)
             print('-='*30+'-')
 

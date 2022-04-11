@@ -56,13 +56,13 @@ c_ NestedInteger(o..
 c_ Solution(o..
     ___ deserialize  s
         __ s[0] __ ' ' a.. s[-1] __ ' ':
-            nestedInt = NestedInteger()
-            s = s[1:-1]
+            nestedInt NestedInteger()
+            s s[1:-1]
             __ n.. s: r.. nestedInt
             i, prev= 0, 0
             w.... i < l..(s
                 __ s[i] __ ' ':
-                    count = 1
+                    count 1
                     w.... i < l..(s) a.. count > 0:
                         i+=1
                         __ s[i] __ ' ':
@@ -71,14 +71,14 @@ c_ Solution(o..
                             count += 1
                     nestedInt.add(deserialize(s[prev:i+1]
                     i+=1
-                    prev = i+1
+                    prev i+1
                 ____ s[i] __ ',':
                     nestedInt.add(i..(s[prev:i]
-                    prev = i+1
+                    prev i+1
                 i+=1
             r.. nestedInt
         ____
-            nestedInt = NestedInteger()
+            nestedInt NestedInteger()
             __ s:
                 nestedInt.setInteger(i..(s
             r.. nestedInt

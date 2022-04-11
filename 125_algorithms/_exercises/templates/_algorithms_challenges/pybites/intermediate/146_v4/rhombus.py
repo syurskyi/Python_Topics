@@ -1,4 +1,4 @@
-STAR = '*'
+STAR '*'
 
 ___ gen_rhombus(width
     """Create a generator that yields the rows of a rhombus row
@@ -17,10 +17,10 @@ ___ gen_rhombus(width
           *
     """
     # define a function that produces the correct num *'s
-    x = r..(-(width // 2), width // 2 + 1)
+    x r..(-(width // 2), width // 2 + 1)
     ___ k __ x:
-        stars = STAR * (width - 2*a..(k
-        pad = ' ' * ((width - l..(stars //2)
+        stars STAR * (width - 2*a..(k
+        pad ' ' * ((width - l..(stars //2)
         y.. pad + stars + pad
 
 

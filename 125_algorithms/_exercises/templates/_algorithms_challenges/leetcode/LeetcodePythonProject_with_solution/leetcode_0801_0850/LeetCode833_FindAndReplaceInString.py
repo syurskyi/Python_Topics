@@ -12,19 +12,19 @@ c_ Solution(o..
         :type targets: List[str]
         :rtype: str
         """
-        s = S
-        prev = 0
-        res = ''
+        s S
+        prev 0
+        res ''
         ___ ind, source, target __ s..(z..(indexes, sources, targets:
             __ s[ind:ind+l..(source)] __ source:
                 res += s[prev:ind]
                 res += target
-                prev = ind + l..(source)
+                prev ind + l..(source)
         res += s[prev:]
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 "abcd",
                 [0,2],
@@ -51,7 +51,7 @@ c_ Solution(o..
             ],
         ]
         ___ s, indexes, sources, targets __ testCases:
-            res = findReplaceString(s, indexes, sources, targets)
+            res findReplaceString(s, indexes, sources, targets)
             print('res: %s' % res)
             print('-='*30+'-')
 

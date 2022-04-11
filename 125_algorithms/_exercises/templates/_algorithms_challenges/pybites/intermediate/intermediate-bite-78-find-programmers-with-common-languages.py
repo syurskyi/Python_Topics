@@ -14,7 +14,7 @@ that ALL devs have in common, so in this case it would return Python and JS. Und
 your code against a few more scenarios. Have fun!
 """
 
-programmers = {'bob':  'JS', 'PHP', 'Python', 'Perl', 'Java' ,
+programmers {'bob':  'JS', 'PHP', 'Python', 'Perl', 'Java' ,
  'paul':  'C++', 'JS', 'Python' ,
  'sara':  'Perl', 'C', 'Java', 'Python', 'JS' ,
  'tim':  'Python', 'Haskell', 'C++', 'JS' }
@@ -25,10 +25,10 @@ ___ common_languages(programmers
     sets    # list
     ___ key, value __ programmers.i..:
         sets.a..(s..(value
-    first_set = sets[0]
-    remaining_sets = sets[1:]
+    first_set sets[0]
+    remaining_sets sets[1:]
     print(remaining_sets)
-    result = first_set.i.. *remaining_sets)
+    result first_set.i.. *remaining_sets)
     print(result)
 
 common_languages(programmers)

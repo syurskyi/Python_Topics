@@ -1,6 +1,6 @@
 _______ r__
 
-BITES = {6: 'PyBites Die Hard',
+BITES {6: 'PyBites Die Hard',
          7: 'Parsing dates from logs',
          9: 'Palindromes',
          10: 'Practice exceptions',
@@ -15,7 +15,7 @@ BITES = {6: 'PyBites Die Hard',
          19: 'Write a simple property',
          20: 'Write a context manager',
          21: 'Query a nested data structure'}
-bites_done = {6, 10, 16, 18, 21}
+bites_done {6, 10, 16, 18, 21}
 
 
 c_ NoBitesAvailable(E..
@@ -25,15 +25,15 @@ c_ NoBitesAvailable(E..
 c_ Promo:
 
     ___ - , bites_done=bites_done
-        bites_done = bites_done
+        bites_done bites_done
 
     ___ _pick_random_bite
-        bites_available = [x ___ x, _ __ BITES.i.. __ x n.. __ bites_done]
+        bites_available [x ___ x, _ __ BITES.i.. __ x n.. __ bites_done]
         __ l..(bites_available) < 1:
             r.. NoBitesAvailable
         r.. r__.c..(bites_available)
 
     ___ new_bite
-        picked = _pick_random_bite()
+        picked _pick_random_bite()
         bites_done.add(picked)
         r.. BITES[picked]

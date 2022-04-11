@@ -22,7 +22,7 @@ findMedian() -> 2
 """
 _______ heapq
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ DualHeap(o..
@@ -45,8 +45,8 @@ c_ DualHeap(o..
         balance()
 
     ___ balance
-        l1 = l..(min_h)
-        l2 = l..(max_h)
+        l1 l..(min_h)
+        l2 l..(max_h)
         __ a..(l1 - l2) <_ 1:
             r..
         ____ l1 - l2 > 1:
@@ -57,10 +57,10 @@ c_ DualHeap(o..
             balance()
 
     ___ get_median
-        l1 = l..(min_h)
-        l2 = l..(max_h)
+        l1 l..(min_h)
+        l2 l..(max_h)
         __ (l1 + l2) % 2 __ 1:
-            m = (l1 + l2) / 2  # median index, equivalent to (l1 + l2 - 1) / 2
+            m (l1 + l2) / 2  # median index, equivalent to (l1 + l2 - 1) / 2
             __ m < l2:
                 r.. -max_h[0]
             ____
@@ -74,7 +74,7 @@ c_ MedianFinder(o..
         """
         Initialize your data structure here.
         """
-        dh = DualHeap()
+        dh DualHeap()
 
     ___ addNum  num
         """

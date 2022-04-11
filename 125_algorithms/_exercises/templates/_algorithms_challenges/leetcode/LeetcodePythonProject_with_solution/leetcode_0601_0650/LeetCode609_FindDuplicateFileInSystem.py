@@ -11,15 +11,15 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ p.. __ paths:
-            arr = p...s..(' ')
-            folder = arr[0]
-            files = arr[1:]
+            arr p...s..(' ')
+            folder arr[0]
+            files arr[1:]
             ___ file __ files:
-                arr0 = file.s..('(')
-                content = arr0[1][:-1]
-                filename = arr0[0]
-                fullPath = folder+'/'+filename
-                hashmap[content] = hashmap.g.. content, []) + [fullPath]
+                arr0 file.s..('(')
+                content arr0[1][:-1]
+                filename arr0[0]
+                fullPath folder+'/'+filename
+                hashmap[content] hashmap.g.. content, []) + [fullPath]
         res    # list
         ___ _, value __ hashmap.i..:
             __ l..(value) > 1:
@@ -27,12 +27,12 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             ["root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"],
         ]
         ___ paths __ testCases:
             print('paths: %s' % paths)
-            result = findDuplicate(paths)
+            result findDuplicate(paths)
             print('result: %s' % result)
             print('-='*30+'-')
 

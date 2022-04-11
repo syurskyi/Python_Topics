@@ -4,14 +4,14 @@ ____ allergies _______ Allergies
 
 # Python 2/3 compatibility
 __ n.. hasattr(unittest.TestCase, 'assertCountEqual'
-    unittest.TestCase.assertCountEqual = unittest.TestCase.assertItemsEqual
+    unittest.TestCase.assertCountEqual unittest.TestCase.assertItemsEqual
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
 c_ AllergiesTests(unittest.TestCase
     ___ test_no_allergies_means_not_allergic
-        allergies = Allergies(0)
+        allergies Allergies(0)
         assertFalse(allergies.is_allergic_to('peanuts'
         assertFalse(allergies.is_allergic_to('cats'
         assertFalse(allergies.is_allergic_to('strawberries'
@@ -20,7 +20,7 @@ c_ AllergiesTests(unittest.TestCase
         assertTrue(Allergies(1).is_allergic_to('eggs'
 
     ___ test_allergic_to_eggs_in_addition_to_other_stuff
-        allergies = Allergies(5)
+        allergies Allergies(5)
         assertTrue(allergies.is_allergic_to('eggs'
         assertTrue(allergies.is_allergic_to('shellfish'
         assertFalse(allergies.is_allergic_to('strawberries'

@@ -1,5 +1,5 @@
 # See tests for a more comprehensive complementary table
-SIMPLE_COMPLEMENTS_STR = """#Reduced table with bases A, G, C, T
+SIMPLE_COMPLEMENTS_STR """#Reduced table with bases A, G, C, T
  Base	Complementary Base
  A	T
  T	A
@@ -7,7 +7,7 @@ SIMPLE_COMPLEMENTS_STR = """#Reduced table with bases A, G, C, T
  C	G
 """
 
-COMPLEMENTS_STR = """# Full table with ambigous bases
+COMPLEMENTS_STR """# Full table with ambigous bases
  Base	Name	Bases Represented	Complementary Base
  A	Adenine	A	T
  T	Thymidine	T 	A
@@ -37,18 +37,18 @@ ___ _clean_sequence(sequence, str_table
     characters
     t!t%ttttAACCG --> TTTTTTAACCG
     """
-    sequence_clean = [char.u.. ___ char __ l..(sequence) __ char.i.. a.. char.u.. __ str_table]
+    sequence_clean [char.u.. ___ char __ l..(sequence) __ char.i.. a.. char.u.. __ str_table]
     r.. "".j..(sequence_clean)
 
 
 ___ _str_table_lookup(str_table
-    str_table_split = str_table.s..
+    str_table_split str_table.s..
     lookup    # dict
     ___ i __ r..(l..(str_table_split:
         __ i __ [0, 1]:
             _____
-        row = str_table_split[i].s..("\t")
-        lookup[row[0].s..] = row[-1]
+        row str_table_split[i].s..("\t")
+        lookup[row[0].s..] row[-1]
     r.. lookup
 
 
@@ -60,7 +60,7 @@ ___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     not found in str_table characters
     e.g. t!t%ttttAACCG --> GCCAATTTTTT
     """
-    sequence_clean = _clean_sequence(sequence, str_table)
+    sequence_clean _clean_sequence(sequence, str_table)
     r.. sequence_clean[::-1]
 
 
@@ -72,11 +72,11 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     str_table while removing non input_sequence characters
     e.g. t!t%ttttAACCG --> AAAAAATTGGC
     """
-    sequence_clean = l..(_clean_sequence(sequence, str_table
-    str_table_lookup = _str_table_lookup(str_table)
+    sequence_clean l..(_clean_sequence(sequence, str_table
+    str_table_lookup _str_table_lookup(str_table)
 
     ___ i __ r..(l..(sequence_clean:
-        sequence_clean[i] = str_table_lookup[sequence_clean[i]]
+        sequence_clean[i] str_table_lookup[sequence_clean[i]]
 
     r.. "".j..(sequence_clean)
 
@@ -89,7 +89,7 @@ ___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     while removing non input_sequence characters
     e.g. t!t%ttttAACCG --> CGGTTAAAAAA
     """
-    sequence_complement = complement(sequence, str_table)
+    sequence_complement complement(sequence, str_table)
     r.. sequence_complement[::-1]
 
 

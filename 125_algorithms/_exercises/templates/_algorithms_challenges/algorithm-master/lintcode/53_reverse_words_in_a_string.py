@@ -4,7 +4,7 @@ c_ Solution:
     @return: A string
     """
     ___ reverseWords  s
-        s = s.s..
+        s s.s..
         __ n.. s:
             r.. ''
 

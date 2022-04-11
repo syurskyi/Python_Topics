@@ -7,7 +7,7 @@ loggedin_users =  'mike', 'sue'
 ___ login_required(func
     @f...wraps(func)
     ___ wrapper $ $$:
-        user, *_ = args
+        user, *_ args
         __ user.l.. __ known_users:
             __ user.l.. __ loggedin_users:
                 r.. func $ $$

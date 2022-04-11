@@ -21,9 +21,9 @@ Output: [[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -38,20 +38,20 @@ c_ Solution:
             __ N __ 0:
                 ret    # list
             ____ N __ 1:
-                ret = [TreeNode(0)]
+                ret [TreeNode(0)]
             ____
                 ret    # list
                 ___ i __ r..(N
-                    lefts = allPossibleFBT(i)
-                    rights = allPossibleFBT(N-1-i)
+                    lefts allPossibleFBT(i)
+                    rights allPossibleFBT(N-1-i)
                     # 0 or 2 child, cannot have only 1
                     __ lefts a.. rights:
                         ___ left __ lefts:
                             ___ right __ rights:
-                                node = TreeNode(0)
-                                node.left = left
-                                node.right = right
+                                node TreeNode(0)
+                                node.left left
+                                node.right right
                                 ret.a..(node)
-            cache[N] = ret
+            cache[N] ret
 
         r.. cache[N]

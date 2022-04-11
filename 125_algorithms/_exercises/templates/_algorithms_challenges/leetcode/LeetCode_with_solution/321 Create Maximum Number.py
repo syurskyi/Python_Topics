@@ -21,7 +21,7 @@ nums2 = [8, 9]
 k = 3
 return [9, 8, 9]
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ SolutionTLE(o..
@@ -35,14 +35,14 @@ c_ SolutionTLE(o..
         :rtype: List[int]
         """
         maxa    # list
-        n1, n2 = l..(nums1), l..(nums2)
+        n1, n2 l..(nums1), l..(nums2)
         ___ l1 __ x..(m..(n1, k)+1
-            l2 = k - l1
+            l2 k - l1
             ... l2 >_ 0
-            A1, A2 = maxNumberSingle(nums1, l1), maxNumberSingle(nums2, l2)
-            cur = maxNumberDual(A1, A2)
+            A1, A2 maxNumberSingle(nums1, l1), maxNumberSingle(nums2, l2)
+            cur maxNumberDual(A1, A2)
             __ n.. maxa o. eval(maxa) < eval(cur
-                maxa = cur
+                maxa cur
 
         r.. maxa
 
@@ -54,7 +54,7 @@ c_ SolutionTLE(o..
         maxNumber of k elements from a single list A
         """
         stk    # list
-        n = l..(A)
+        n l..(A)
         ___ i __ x..(n
             w.... stk a.. l..(stk)-1+(n-1-i+1) >_ k a.. stk[-1] < A[i]: stk.p.. )
             __ l..(stk) < k:
@@ -67,11 +67,11 @@ c_ SolutionTLE(o..
         maxNumber of all elements from dual lists A1 and A2.
         """
         ret    # list
-        p1, p2 = 0, 0
+        p1, p2 0, 0
         w.... p1 < l..(A1) a.. p2 < l..(A2
-            ahead1, ahead2 = p1, p2
+            ahead1, ahead2 p1, p2
             w.... ahead1 < l..(A1) a.. ahead2 < l..(A2) a.. A1[ahead1] __ A2[ahead2]:
-                ahead1, ahead2 = ahead1+1, ahead2+1
+                ahead1, ahead2 ahead1+1, ahead2+1
 
             __ ahead2 >_ l..(A2) o. (ahead1 < l..(A1) a.. A1[ahead1] > A2[ahead2]
                 ret.a..(A1[p1])

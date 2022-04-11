@@ -14,10 +14,10 @@ c_ Solution(o..
     __ n.. root:
       r..
 
-    left = upsideDownBinaryTree(root.left)
-    right = upsideDownBinaryTree(root.right)
+    left upsideDownBinaryTree(root.left)
+    right upsideDownBinaryTree(root.right)
     __ root.left:
-      root.left.right = root
-      root.left.left = root.right
-      root.left = root.right = N..
+      root.left.right root
+      root.left.left root.right
+      root.left root.right N..
     r.. left __ left ____ root

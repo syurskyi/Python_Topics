@@ -1,6 +1,6 @@
 ___ get_sum
-    A, B = map(i.., input().s..
-    result = A+B    
+    A, B map(i.., input().s..
+    result A+B
     
     r.. result
 

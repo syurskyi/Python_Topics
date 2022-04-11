@@ -4,11 +4,11 @@ c_ Solution(o..
     :type n: int
     :rtype: List[str]
     """
-    d = {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
+    d {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
 
     ___ dfs(half, p.., res, n
       __ l..(p..) __ half:
-        pathStr = "".j..(p..)
+        pathStr "".j..(p..)
         __ half * 2 __ n:
           res.a..(pathStr + "".j..([d[x] ___ x __ pathStr[::-1]]
         ____

@@ -18,8 +18,8 @@ c_ Solution:
                     cand.p.. )
 
     ___ is_palindrome  s
-        left = 0
-        right = l..(s) - 1
+        left 0
+        right l..(s) - 1
         w.... left < right:
             __ s[left] != s[right]:
                 r.. F..

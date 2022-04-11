@@ -30,15 +30,15 @@ There must be no consecutive horizontal lines of equal height in the output skyl
 [7 5], [11 5], [12 7]...] is not acceptable; the three lines of height 5 should be merged into one in the final output
 as such: [...[2 3], [4 5], [12 7], ...]
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 ____ c.. _______ d.., n..
 _______ heapq
 
 
 c_ Building(o..
     ___ - , h
-        h = h
-        deleted = F..  # lazy deletion
+        h h
+        deleted F..  # lazy deletion
 
     ___ __cmp__  other
         # Reverse order by height to get max-heap
@@ -47,7 +47,7 @@ c_ Building(o..
 
 # An event represents the buildings that start and end at a particular
 # x-coordinate.
-Event = n..('Event', 'starts ends')
+Event n..('Event', 'starts ends')
 
 
 c_ Solution:
@@ -61,21 +61,21 @@ c_ Solution:
         :rtype: list[list[int]]
         """
         # Map from x-coordinate to event.
-        events = d..(l....: Event(starts=[], ends=[]
+        events d..(l....: Event(starts=[], ends=[]
         ___ left, right, height __ buildings:
-            building = Building(height)
+            building Building(height)
             events[left].starts.a..(building)  # possible multiple building at the same x-coordinate.
             events[right].ends.a..(building)
 
         heap_h    # list  # Heap of buildings currently standing.
-        cur_h = 0  # current max height of standing buildings. the current skyline
+        cur_h 0  # current max height of standing buildings. the current skyline
         ret    # list
         # Process events in order by x-coordinate.
         ___ x, event __ s..(events.i..:  # sort the dictionary by key
             ___ building __ event.starts:
                 heapq.heappush(heap_h, building)
             ___ building __ event.ends:
-                building.deleted = T..
+                building.deleted T..
 
             # Pop any finished buildings from the top of the heap.
             # To avoid using multiset - lazy deletion.
@@ -84,10 +84,10 @@ c_ Solution:
 
             # Top of heap (if any) is the highest standing building, so
             # its height is the current height of the skyline.
-            new_h = heap_h[0].h __ heap_h ____ 0
+            new_h heap_h[0].h __ heap_h ____ 0
 
             __ new_h != cur_h:
-                cur_h = new_h
+                cur_h new_h
                 ret.a..([x, cur_h])
 
         r.. ret

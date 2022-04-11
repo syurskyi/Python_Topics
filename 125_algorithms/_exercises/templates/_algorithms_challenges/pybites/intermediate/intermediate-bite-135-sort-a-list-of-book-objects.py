@@ -8,9 +8,9 @@ ____ c.. _______ n..
 ____ d__ _______ d__
 ____ o.. _______ attrgetter
 
-Book = n..('Book', 'title authors pages published')
+Book n..('Book', 'title authors pages published')
 
-books = [
+books [
     Book(title="Python Interviews",
          authors="Michael Driscoll",
          pages=366,
@@ -41,7 +41,7 @@ ___ sort_books_by_len_of_title(books=books
     Expected last book in list:
     Automate the Boring Stuff with Python
     """
-    x = s..(books, key=l.... x: l..(x.title
+    x s..(books, key=l.... x: l..(x.title
     print(x)
 
 

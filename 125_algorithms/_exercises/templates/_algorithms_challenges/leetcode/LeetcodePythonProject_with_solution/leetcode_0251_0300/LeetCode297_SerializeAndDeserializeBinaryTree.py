@@ -7,16 +7,16 @@ Created on Mar 9, 2017
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
-        val = x
-        left = left
-        right = right
+        val x
+        left left
+        right right
 
 c_ Codec:
     ___ serialize  root
-        stack = [root]
-        result = ''
+        stack [root]
+        result ''
         w.... stack:
-            node = stack.p.. )
+            node stack.p.. )
             __ node:
                 result += '%s,' % (node.val)
                 stack.a..(node.right)
@@ -26,33 +26,33 @@ c_ Codec:
         r.. result[:-1]
     
     ___ deserialize  data
-        arr = data.s..(',')
-        ind = [0]
-        root = helper(arr, ind)
+        arr data.s..(',')
+        ind [0]
+        root helper(arr, ind)
         r.. root
     
     ___ helper  arr, ind
         __ arr[ind[0]] __ '#':
             r.. N..
-        root = TreeNode(arr[ind[0]])
+        root TreeNode(arr[ind[0]])
         ind[0]+=1
-        root.left = helper(arr, ind)
+        root.left helper(arr, ind)
         ind[0]+=1
-        root.right = helper(arr, ind)
+        root.right helper(arr, ind)
         r.. root
 
 __ _____ __ _____
-    root = TreeNode(1, TreeNode(2), TreeNode(3, TreeNode(4), TreeNode(5)))
-    codec = Codec()
-    s = codec.serialize(root)
+    root TreeNode(1, TreeNode(2), TreeNode(3, TreeNode(4), TreeNode(5)))
+    codec Codec()
+    s codec.serialize(root)
     print('s: %s' % (s
-    root = codec.deserialize(s)
+    root codec.deserialize(s)
     
-    queue = [root]
+    queue [root]
     line    # list
     nextQueue   # list
     w.... queue:
-        node = queue.p.. 0)
+        node queue.p.. 0)
         line.a..(node.val)
         __ node.left:
             nextQueue.a..(node.left)
@@ -61,7 +61,7 @@ __ _____ __ _____
         __ n.. queue:
             print(line)
             line    # list
-            queue = nextQueue
+            queue nextQueue
             nextQueue    # list
         
     

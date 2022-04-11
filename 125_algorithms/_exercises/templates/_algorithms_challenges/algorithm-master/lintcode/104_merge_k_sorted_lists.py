@@ -17,7 +17,7 @@ c_ Solution:
         __ n.. lists:
             r..
 
-        dummy = tail = ListNode(-1)
+        dummy tail ListNode(-1)
         heap    # list
 
         ___ i __ r..(l..(lists:
@@ -27,13 +27,13 @@ c_ Solution:
             heapq.heappush(heap, (lists[i].val, i
 
         w.... heap:
-            val, i = heapq.heappop(heap)
+            val, i heapq.heappop(heap)
 
-            tail.next = ListNode(val)
-            tail = tail.next
+            tail.next ListNode(val)
+            tail tail.next
 
             __ lists[i].next:
-                lists[i] = lists[i].next
+                lists[i] lists[i].next
                 heapq.heappush(heap, (lists[i].val, i
 
         r.. dummy.next

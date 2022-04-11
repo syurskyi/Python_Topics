@@ -1,10 +1,10 @@
 #Ask for how number to be entered
-data = i..(input
-result = 0
+data i..(input
+result 0
 arr    # list
 
 w.... l..(arr) < data:
-    arr = input().s..
+    arr input().s..
     #print('length of arr is:', len(arr))
     #print('values is in arr are :', arr)
     
@@ -16,7 +16,7 @@ w.... l..(arr) < data:
         #print('result of calculation of ',arr[x],' is : ',result)
         __ result > 10000007:
             #print('result is greater than 10000007 for ',arr[x],' thus iam performing mod')
-            result = result % 10000007
+            result result % 10000007
             #print('mod result is: ',result)
 #print the result
 print(result)

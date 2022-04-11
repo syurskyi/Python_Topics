@@ -2,8 +2,8 @@ _______ p__
 
 ____ account _______ Account
 
-checking = Account('Checking')
-saving = Account('Saving', 10)
+checking Account('Checking')
+saving Account('Saving', 10)
 
 
 ___ test_account_balance

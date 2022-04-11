@@ -1,7 +1,7 @@
 ____ omdb _______ (get_movie_data, get_single_comedy,
                   get_movie_most_nominations, get_movie_longest_runtime)
 
-movies = get_movie_data()
+movies get_movie_data()
 
 
 ___ test_movie_data_structure

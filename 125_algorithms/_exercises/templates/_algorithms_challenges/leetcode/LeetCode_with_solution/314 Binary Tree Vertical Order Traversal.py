@@ -1,14 +1,14 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution(o..
@@ -18,10 +18,10 @@ c_ Solution(o..
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        l = leftmost(root, 0)
-        r = rightmost(root, 0)
+        l leftmost(root, 0)
+        r rightmost(root, 0)
 
-        ret = [[] ___ _ __ x..(r-l-1)]
+        ret [[] ___ _ __ x..(r-l-1)]
         bfs(root, -l-1, ret)
         r.. ret
 
@@ -31,14 +31,14 @@ c_ Solution(o..
             q.a..((cur, col
 
         w.... q:
-            l = l..(q)
+            l l..(q)
             ___ i __ x..(l  # avoid non-stop access as in `for elt in q`
-                v, c = q[i]
+                v, c q[i]
                 ret[c].a..(v.val)
                 __ v.left: q.a..((v.left, c-1
                 __ v.right: q.a..((v.right, c+1
 
-            q = q[l:]
+            q q[l:]
 
     ___ leftmost  cur, l
         __ n.. cur: r.. l

@@ -9,7 +9,7 @@ Each element in the result must be unique.
 The result can be in any order.
 """
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..

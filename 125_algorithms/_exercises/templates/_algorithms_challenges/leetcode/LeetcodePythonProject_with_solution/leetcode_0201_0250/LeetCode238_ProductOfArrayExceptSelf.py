@@ -11,15 +11,15 @@ c_ Solution(o..
         :rtype: List[int]
         """
         __ n.. nums: r.. []
-        length = l..(nums)
+        length l..(nums)
         result    # list
         result.a..(1)
         ___ i __ r..(1, length
             result.a..(result[-1]*nums[i-1])
-        right = 1
+        right 1
         ___ i __ r..(length-2, -1, -1
             right *= nums[i+1]
-            result[i] = right*result[i]
+            result[i] right*result[i]
         r.. result
     
     ___ productExceptSelfExtra  nums
@@ -28,13 +28,13 @@ c_ Solution(o..
         :rtype: List[int]
         """
         __ n.. nums: r.. []
-        length = l..(nums)
-        left = [1]*length
-        right = [1]*length
+        length l..(nums)
+        left [1]*length
+        right [1]*length
         ___ i __ r..(1, length
-            left[i] = left[i-1]*nums[i-1]
+            left[i] left[i-1]*nums[i-1]
         ___ i __ r..(length-2, -1, -1
-            right[i] = right[i+1]*nums[i+1]
+            right[i] right[i+1]*nums[i+1]
         result    # list
         print('left:  %s' % left)
         print('right: %s' % right)
@@ -43,13 +43,13 @@ c_ Solution(o..
         r.. result
     
     ___ test
-        testCases = [
+        testCases [
             [1, 2, 3, 4],
             [9, 0, -2],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums
-            result = productExceptSelf(nums)
+            result productExceptSelf(nums)
             print('result: %s' % (result
             print('-='*20+'-')
 

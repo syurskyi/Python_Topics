@@ -4,7 +4,7 @@ c_ Solution:
     @return: Maximum profit
     """
     ___ maxProfit  P
-        ans = 0
+        ans 0
         __ n.. P:
             r.. ans
 

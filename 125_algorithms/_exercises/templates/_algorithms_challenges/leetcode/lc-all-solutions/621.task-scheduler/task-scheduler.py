@@ -10,16 +10,16 @@ c_ Solution(o..
     :rtype: int
     """
     n += 1
-    ans = 0
-    d = c...C..(tasks)
-    heap = [-c ___ c __ d.v..
+    ans 0
+    d c...C..(tasks)
+    heap [-c ___ c __ d.v..
     heapq.heapify(heap)
     w.... heap:
       stack    # list
-      cnt = 0
+      cnt 0
       ___ _ __ r..(n
         __ heap:
-          c = heapq.heappop(heap)
+          c heapq.heappop(heap)
           cnt += 1
           __ c < -1:
             stack.a..(c + 1)
@@ -36,10 +36,10 @@ c_ Solution(o..
   # and it won't cause any conflicts with requirement since even most frequent can be settle
   # finally, return max(# of task, total counted number)
   ___ leastInterval  tasks, n
-    d = c...C..(tasks)
-    counts = d.v..
-    longest = m..(counts)
-    ans = (longest - 1) * (n + 1)
+    d c...C..(tasks)
+    counts d.v..
+    longest m..(counts)
+    ans (longest - 1) * (n + 1)
     ___ count __ counts:
       ans += count __ longest a.. 1 o. 0
     r.. m..(l..(tasks), ans)

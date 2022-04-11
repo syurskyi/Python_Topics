@@ -65,7 +65,7 @@ ____ YelpHelper _______ Location, Restaurant, GeoHash, Helper
 
 
 c_ MiniYelp:
-    ERROR_IN_KM = (
+    ERROR_IN_KM (
         2500, 630, 78,
         20, 2.4, 0.61,
         0.076, 0.01911, 0.00478,
@@ -80,11 +80,11 @@ c_ MiniYelp:
     # @param {Location} location
     # @return {int} restaurant's id
     ___ add_restaurant  name, location
-        restaurant = Restaurant.create(name, location)
-        hashcode = get_restr_hashcode(restaurant)
+        restaurant Restaurant.create(name, location)
+        hashcode get_restr_hashcode(restaurant)
 
-        restaurants[hashcode] = restaurant
-        restr_to_geohash[restaurant.id] = hashcode
+        restaurants[hashcode] restaurant
+        restr_to_geohash[restaurant.id] hashcode
         b__.i.. (geohashs, hashcode)
 
         r.. restaurant.id
@@ -92,8 +92,8 @@ c_ MiniYelp:
     # @param {int} restaurant_id
     # @return nothing
     ___ remove_restaurant  restaurant_id
-        hashcode = restr_to_geohash[restaurant_id]
-        index = b__.bisect_left(geohashs, hashcode)
+        hashcode restr_to_geohash[restaurant_id]
+        index b__.bisect_left(geohashs, hashcode)
 
         geohashs.p.. index)
         del restaurants[hashcode]
@@ -104,19 +104,19 @@ c_ MiniYelp:
     # @return {str[]} a list of restaurant's name and sort by
     # distance from near to far.
     ___ neighbors  location, k
-        length = get_length(k)
-        prefix = GeoHash.encode(location)[:length]
+        length get_length(k)
+        prefix GeoHash.encode(location)[:length]
 
         # chr(ord('z') + 1) == '{'
-        left = b__.bisect_left(geohashs, prefix)
-        right = b__.b__(geohashs, prefix + '{')
+        left b__.bisect_left(geohashs, prefix)
+        right b__.b__(geohashs, prefix + '{')
 
         neighbors    # list
-        hashcode = restaurant = distance = N..
+        hashcode restaurant distance N..
         ___ i __ r..(left, right
-            hashcode = geohashs[i]
-            restaurant = restaurants[hashcode]
-            distance = Helper.get_distance(location, restaurant.location)
+            hashcode geohashs[i]
+            restaurant restaurants[hashcode]
+            distance Helper.get_distance(location, restaurant.location)
             __ distance <_ k:
                 neighbors.a..((distance, restaurant
 
@@ -127,7 +127,7 @@ c_ MiniYelp:
         ]
 
     ___ get_length  k
-        n = l..(ERROR_IN_KM)
+        n l..(ERROR_IN_KM)
 
         ___ i __ r..(n
             __ k > ERROR_IN_KM[i]:
@@ -150,7 +150,7 @@ ____ YelpHelper _______ Location, Restaurant, GeoHash, Helper
 
 c_ Trie:
     ___ -
-        root = _new_node()
+        root _new_node()
 
     ___  -r
         r.. r.. (root)
@@ -159,35 +159,35 @@ c_ Trie:
         __ n.. key:
             r..
 
-        parent = root
+        parent root
         parent 'keys' .add(key)
         ___ char __ key:
             __ char n.. __ parent 'children' :
-                parent 'children' [char] = _new_node()
+                parent 'children' [char] _new_node()
             parent 'children' [char] 'keys' .add(key)
-            parent = parent 'children' [char]
+            parent parent 'children' [char]
 
     ___ pick  key
         __ n.. key:
             r..
 
-        parent = root
+        parent root
         parent 'keys' .discard(key)
         ___ char __ key:
             __ char n.. __ parent 'children' :
                 r..
-            parent = parent 'children' [char]
+            parent parent 'children' [char]
             parent 'keys' .discard(key)
 
     ___ get_keys_by_prefix  prefix
-        parent = root
+        parent root
         __ n.. prefix:
             r.. l..(parent 'keys' )
 
         ___ char __ prefix:
             __ char n.. __ parent 'children' :
                 r.. []
-            parent = parent 'children' [char]
+            parent parent 'children' [char]
 
         r.. l..(parent 'keys' )
 
@@ -199,14 +199,14 @@ c_ Trie:
 
 
 c_ MiniYelp:
-    ERROR_IN_KM = (
+    ERROR_IN_KM (
         2500, 630, 78,
         20, 2.4, 0.61,
         0.076, 0.01911, 0.00478,
         0.0005971, 0.0001492, 0.0000186
     )
 
-    trie = Trie()
+    trie Trie()
     restaurants    # dict
     restr_to_geohash    # dict
 
@@ -214,11 +214,11 @@ c_ MiniYelp:
     # @param {Location} location
     # @return {int} restaurant's id
     ___ add_restaurant  name, location
-        restaurant = Restaurant.create(name, location)
-        hashcode = get_restr_hashcode(restaurant)
+        restaurant Restaurant.create(name, location)
+        hashcode get_restr_hashcode(restaurant)
 
-        restaurants[hashcode] = restaurant
-        restr_to_geohash[restaurant.id] = hashcode
+        restaurants[hashcode] restaurant
+        restr_to_geohash[restaurant.id] hashcode
         trie.put(hashcode)
 
         r.. restaurant.id
@@ -226,7 +226,7 @@ c_ MiniYelp:
     # @param {int} restaurant_id
     # @return nothing
     ___ remove_restaurant  restaurant_id
-        hashcode = restr_to_geohash[restaurant_id]
+        hashcode restr_to_geohash[restaurant_id]
 
         del restaurants[hashcode]
         del restr_to_geohash[restaurant_id]
@@ -237,15 +237,15 @@ c_ MiniYelp:
     # @return {str[]} a list of restaurant's name and sort by
     # distance from near to far.
     ___ neighbors  location, k
-        length = get_length(k)
-        prefix = GeoHash.encode(location)[:length]
-        hashcodes = trie.get_keys_by_prefix(prefix)
+        length get_length(k)
+        prefix GeoHash.encode(location)[:length]
+        hashcodes trie.get_keys_by_prefix(prefix)
 
         neighbors    # list
-        restaurant = distance = N..
+        restaurant distance N..
         ___ hashcode __ hashcodes:
-            restaurant = restaurants[hashcode]
-            distance = Helper.get_distance(location, restaurant.location)
+            restaurant restaurants[hashcode]
+            distance Helper.get_distance(location, restaurant.location)
             __ distance <_ k:
                 neighbors.a..((distance, restaurant
 
@@ -256,7 +256,7 @@ c_ MiniYelp:
         ]
 
     ___ get_length  k
-        n = l..(ERROR_IN_KM)
+        n l..(ERROR_IN_KM)
 
         ___ i __ r..(n
             __ k > ERROR_IN_KM[i]:

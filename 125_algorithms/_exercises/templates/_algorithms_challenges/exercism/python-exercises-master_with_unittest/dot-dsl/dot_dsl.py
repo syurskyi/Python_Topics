@@ -1,10 +1,10 @@
-NODE, EDGE, ATTR = r..(3)
+NODE, EDGE, ATTR r..(3)
 
 
 c_ Node(o..
     ___ - , name, attrs={}
-        name = name
-        attrs = attrs
+        name name
+        attrs attrs
 
     ___ -e  other
         r.. name __ other.name a.. attrs __ other.attrs
@@ -12,9 +12,9 @@ c_ Node(o..
 
 c_ Edge(o..
     ___ - , src, dst, attrs={}
-        src = src
-        dst = dst
-        attrs = attrs
+        src src
+        dst dst
+        attrs attrs
 
     ___ -e  other
         r.. (src __ other.src a..

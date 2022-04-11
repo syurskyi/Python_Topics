@@ -1,14 +1,14 @@
 """
 Premium question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 # Definition for singly-linked list.
 c_ ListNode(o..
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 c_ Solution(o..
@@ -18,20 +18,20 @@ c_ Solution(o..
         :type head: ListNode
         :rtype: ListNode
         """
-        head = revserse(head)
-        head = plus(head)
-        head = revserse(head)
+        head revserse(head)
+        head plus(head)
+        head revserse(head)
         r.. head
 
     ___ plus  head
-        cur = head
+        cur head
         w.... cur:
             cur.val += 1
             __ cur.val >_ 10:
                 cur.val -_ 10
                 __ n.. cur.next:
-                    cur.next = ListNode(0)
-                cur = cur.next
+                    cur.next ListNode(0)
+                cur cur.next
             ____
                 _____
 
@@ -41,17 +41,17 @@ c_ Solution(o..
         __ n.. head:
             r.. N..
 
-        dummy = ListNode(0)
-        dummy.next = head
-        pre = dummy
-        cur = pre.next
+        dummy ListNode(0)
+        dummy.next head
+        pre dummy
+        cur pre.next
         w.... pre a.. cur:
-            nxt = cur.next
+            nxt cur.next
 
-            cur.next = pre
+            cur.next pre
 
-            pre = cur
-            cur = nxt
+            pre cur
+            cur nxt
 
-        dummy.next.next = N..  # original head
+        dummy.next.next N..  # original head
         r.. pre

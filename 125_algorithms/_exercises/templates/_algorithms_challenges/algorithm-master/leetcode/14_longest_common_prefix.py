@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. strs o. n.. strs[0]:
             r.. ''
 
-        t = strs[0]
+        t strs[0]
         ___ i __ r..(l..(t:
             ___ s __ strs:
                 __ i >_ l..(s) o. s[i] != t[i]:

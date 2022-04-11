@@ -25,9 +25,9 @@ c_ Solution:
         ____ n.. s a.. l..(cand) __ 4:
                 res.a..('.'.j..(cand
         ____
-            k = m..(3, l..(s  # Ensures s[:j + 1] won't be duplicate
+            k m..(3, l..(s  # Ensures s[:j + 1] won't be duplicate
             ___ j __ r..(k
-                b = s[:j + 1]
+                b s[:j + 1]
                 __ is_valid_byte(b
                     cand.a..(b)
                     restore_ip(s[j + 1:], cand, res)
@@ -41,8 +41,8 @@ c_ Solution:
         ____
             r.. i..(b) < 256
 
-a = "25525511135"
-b = "010010"
-s = Solution()
+a "25525511135"
+b "010010"
+s Solution()
 print(s.restoreIpAddresses(a
 print(s.restoreIpAddresses(b

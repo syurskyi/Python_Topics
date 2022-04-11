@@ -14,14 +14,14 @@ c_ Solution(o..
         p..
     
     ___ test
-        testCases = [
+        testCases [
             [ [1, 2, 3, 5], 3 ],
             [ [1, 7], 1 ],
         ]
         ___ arr, k __ testCases:
             print('arr: %s' % arr)
             print('k: %s' % k)
-            result = kthSmallestPrimeFraction(arr, k)
+            result kthSmallestPrimeFraction(arr, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

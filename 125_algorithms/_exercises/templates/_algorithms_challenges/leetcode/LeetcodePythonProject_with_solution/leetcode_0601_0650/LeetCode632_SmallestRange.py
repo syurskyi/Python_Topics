@@ -10,23 +10,23 @@ c_ Solution(o..
         :rtype: List[int]
         """
         _______ heapq
-        pq = [(arr[0], i, 0) ___ i, arr __ e..(nums)]
+        pq [(arr[0], i, 0) ___ i, arr __ e..(nums)]
         heapq.heapify(pq)
-        res = [f__('-inf'), f__('inf')]
-        right = m..([arr[0] ___ arr __ nums])
+        res [f__('-inf'), f__('inf')]
+        right m..([arr[0] ___ arr __ nums])
         w.... pq:
-            left, i, j = heapq.heappop(pq)
+            left, i, j heapq.heappop(pq)
             __ right-left < res[1]-res[0]:
-                res = [left, right]
+                res [left, right]
             __ j+1 __ l..(nums[i]
                 r.. res
-            v = nums[i][j+1]
-            right = m..(right, v)
+            v nums[i][j+1]
+            right m..(right, v)
             heapq.heappush(pq, (v, i, j+1
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [4, 10, 15, 24, 26],
                 [0, 9, 12, 20],
@@ -35,7 +35,7 @@ c_ Solution(o..
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = smallestRange(nums)
+            result smallestRange(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

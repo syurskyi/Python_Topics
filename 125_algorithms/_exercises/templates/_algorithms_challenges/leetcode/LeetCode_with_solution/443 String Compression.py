@@ -21,20 +21,20 @@ c_ Solution:
         :type chars: List[str]
         :rtype: int
         """
-        ret = 1
-        s = 0  # start index of current char
+        ret 1
+        s 0  # start index of current char
         ___ i __ r..(1, l..(chars) + 1
             __ i < l..(chars) a.. chars[i] __ chars[s]:
                 _____
-            l = i - s
+            l i - s
             __ l > 1:
                 ___ digit __ s..(l
-                    chars[ret] = digit
+                    chars[ret] digit
                     ret += 1
             __ i < l..(chars
-                chars[ret] = chars[i]
+                chars[ret] chars[i]
                 ret += 1
-                s = i
+                s i
                 
         r.. ret
 
@@ -44,20 +44,20 @@ c_ Solution:
         :type chars: List[str]
         :rtype: int
         """
-        s = 0
+        s 0
         ___ idx __ r..(1, l..(chars) + 1
             __ idx < l..(chars) a.. chars[idx] __ chars[s]:
                 _____
-            l = idx - s
+            l idx - s
             __ l __ 1:
-                s = m..(s + 1, l..(chars) - 1)
+                s m..(s + 1, l..(chars) - 1)
             ____
                 ___ digit __ s..(l
                     s += 1
-                    chars[s] = digit
+                    chars[s] digit
                 __ idx < l..(chars
                     s += 1
-                    chars[s] = chars[idx]
+                    chars[s] chars[idx]
         r.. s + 1
 
 

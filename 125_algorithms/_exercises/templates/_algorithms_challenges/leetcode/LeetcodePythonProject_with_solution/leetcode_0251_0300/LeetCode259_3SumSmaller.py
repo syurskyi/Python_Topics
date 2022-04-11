@@ -12,9 +12,9 @@ c_ Solution(o..
         :rtype: int
         """
         nums.s..()
-        res = 0
+        res 0
         ___ i __ r..(l..(nums)-2
-            j, k = i+1, l..(nums)-1
+            j, k i+1, l..(nums)-1
             w.... j < k:
                 __ nums[i]+nums[j]+nums[k] >_ target:
                     k -_ 1
@@ -24,14 +24,14 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             ([-2, 0, 1, 3], 2),
             ([3, 1, 0, -2], 4),
         ]
         ___ nums, target __ testCases:
             print('nums: %s' % (nums
             print('target: %s' % (target
-            result = threeSumSmaller(nums, target)
+            result threeSumSmaller(nums, target)
             print('result: %s' % (result
             print('-='*20+'-')
 

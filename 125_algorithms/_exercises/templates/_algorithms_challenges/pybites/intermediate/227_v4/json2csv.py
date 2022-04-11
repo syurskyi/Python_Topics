@@ -4,8 +4,8 @@ _______ csv
 _______ j__
 ____ j__.decoder _______ JSONDecodeError
 
-EXCEPTION = 'exception caught'
-TMP = P..(__.g..("TMP", "/tmp"
+EXCEPTION 'exception caught'
+TMP P..(__.g..("TMP", "/tmp"
 
 
 ___ convert_to_csv(json_file
@@ -23,14 +23,14 @@ ___ convert_to_csv(json_file
        63502,ability_mount_hordescorpionamber,True,...
        ...
     """  # noqa E501
-    csv_file = TMP / json_file.name.r..('.json', '.csv')
+    csv_file TMP / json_file.name.r..('.json', '.csv')
 
     w__ o.. json_file, _ __ f:
         ___
-            data = j__.l.. f)
-            fields = data 'mounts'  'collected' [0].k..
+            data j__.l.. f)
+            fields data 'mounts'  'collected' [0].k..
             w__ o.. csv_file, 'w') __ csv_fp:
-                writer = csv.DictWriter(csv_fp, fieldnames=fields)
+                writer csv.DictWriter(csv_fp, fieldnames=fields)
                 writer.writeheader()
                 writer.writerows(data 'mounts'  'collected' )
         ______ JSONDecodeError __ e:

@@ -21,8 +21,8 @@ ___ create_parser
 
        Note that type=float times out here so do the casting in the calculator
        function above!"""
-    ap = a__.A..("A simple calculator")
-    group = ap.add_mutually_exclusive_group(required=T..)
+    ap a__.A..("A simple calculator")
+    group ap.add_mutually_exclusive_group(required=T..)
     group.a..("-m",'--mul',a.._'store_true',h.._"Multiplies numbers")
     group.a..("-s",'--sub',a.._'store_true',h.._"Subtracts numbers")
     group.a..("-a",'--add',a.._'store_true',h.._"Sums numbers")
@@ -37,29 +37,29 @@ ___ call_calculator(args=N.., stdout=F..
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,
        if stdout is True print the result"""
-    parser = create_parser()
+    parser create_parser()
 
     __ args __ N..
-        args = vars(parser.parse_args
+        args vars(parser.parse_args
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
     ____
-        args = vars(args)
-    numbers = args 'numbers'
+        args vars(args)
+    numbers args 'numbers'
     __ args 'mul' :
-        f = l.... x,y: x * y
+        f l.... x,y: x * y
     ____ args 'sub' :
-        f = l.... x,y: x - y
+        f l.... x,y: x - y
     ____ args 'add' :
-        f = l.... x,y: x + y
+        f l.... x,y: x + y
     ____ args 'div' :
-        f = l.... x,y: x / y
+        f l.... x,y: x / y
 
 
     ___
-        res = calculator(f,numbers)
+        res calculator(f,numbers)
     ______ Z..
-        res = 0
+        res 0
 
 
     __ stdout:

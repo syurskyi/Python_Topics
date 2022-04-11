@@ -10,33 +10,33 @@ c_ Solution(o..
         :type hand: str
         :rtype: int
         """
-        MAXCOUNT = 6
-        handCount = [0]*26
+        MAXCOUNT 6
+        handCount [0]*26
         ___ c __ hand:
             handCount[o..(c)-o..('A')] += 1
-        res = helper(board+'#', handCount)
+        res helper(board+'#', handCount)
         r.. res __ res != f__('inf') ____ -1
     
     ___ helper  s, h
-        s = removeConsecutive(s)
+        s removeConsecutive(s)
         __ s __ '#': r.. 0
-        res = f__('inf')
-        i, j = 0, 0
+        res f__('inf')
+        i, j 0, 0
         w.... j < l..(s
             __ s[j] __ s[i]:
                 j += 1
                 _____
-            need = 3-(j-i)
+            need 3-(j-i)
             __ h[o..(s[i])-o..('A')] >_ need:
                 h[o..(s[i])-o..('A')] -_ need
-                res = m..(res, need+helper(s[:i]+s[j:], h
+                res m..(res, need+helper(s[:i]+s[j:], h
                 h[o..(s[i])-o..('A')] += need
-            i = j
+            i j
             j += 1
         r.. res
     
     ___ removeConsecutive  board
-        i, j = 0, 0
+        i, j 0, 0
         w.... j < l..(board
             __ board[j] __ board[i]:
                 j += 1
@@ -44,12 +44,12 @@ c_ Solution(o..
             __ j-i >_ 3:
                 r.. removeConsecutive(board[:i]+board[j:])
             ____
-                i = j
+                i j
             j += 1
         r.. board
     
     ___ test
-        testCases = [
+        testCases [
             [
                 "WRRBBW",
                 "RB",
@@ -70,7 +70,7 @@ c_ Solution(o..
         ___ board, hand __ testCases:
             print('board: %s' % board)
             print('hand: %s' % hand)
-            result = findMinStep(board, hand)
+            result findMinStep(board, hand)
             print('result: %s' % result)
             print('-='*30+'-')
 

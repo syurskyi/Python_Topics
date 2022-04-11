@@ -10,7 +10,7 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        res = s..()
+        res s..()
         helper(nums, 0, [], res)
         r.. [l..(row) ___ row __ res]
     
@@ -26,14 +26,14 @@ c_ Solution(o..
                 curr.p.. )
     
     ___ test
-        testCases = [
+        testCases [
             [1, 1, 2, 3, 3],
             [4, 6, 7, 7],
             [4, 3, 2, 1],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = findSubsequences(nums)
+            result findSubsequences(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

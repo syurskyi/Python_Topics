@@ -53,20 +53,20 @@ c_ Solution:
         Greedy is correct. The larger the coverage, the better
         """
         clips.s..()
-        prev_e = 0
-        ret = 0
+        prev_e 0
+        ret 0
 
-        i = 0
+        i 0
         w.... i < l..(clips
             __ clips[i][0] > prev_e:  # gap
                 _____
 
-            max_e = -f__("inf")
+            max_e -f__("inf")
             w.... i < l..(clips) a.. clips[i][0] <_ prev_e:
-                max_e = m..(max_e, clips[i][1])
+                max_e m..(max_e, clips[i][1])
                 i += 1
 
-            prev_e = max_e  # take
+            prev_e max_e  # take
             ret += 1
             __ prev_e >_ T:
                 _____
@@ -77,16 +77,16 @@ c_ Solution:
         """
         gready take the max coverage?
         """
-        A = [(s, -e, s, e) ___ s, e __ clips]
+        A [(s, -e, s, e) ___ s, e __ clips]
         A.s..()
-        ret = 1
-        _, _, prev_s, prev_e = A[0]
+        ret 1
+        _, _, prev_s, prev_e A[0]
         __ prev_s > 0:
             r.. F..
 
         ___ _, _, s, e __ A[1:]:
             __ s <_ prev_e a.. e > prev_e:
-                prev_e = e
+                prev_e e
                 ret += 1
 
 

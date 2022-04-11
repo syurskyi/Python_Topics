@@ -8,14 +8,14 @@ c_ Solution:
         :type k: int
         :rtype: int
         """
-        ans = 0
+        ans 0
 
         __ n.. s o. n.. k:
             r.. ans
 
-        freq = c...d..(i..)
-        n = l..(s)
-        left = right = cnt = 0
+        freq c...d..(i..)
+        n l..(s)
+        left right cnt 0
 
         w.... right < n:
             freq[s[right]] += 1
@@ -32,6 +32,6 @@ c_ Solution:
                 left += 1
 
             __ right - left > ans:
-                ans = right - left
+                ans right - left
 
         r.. ans

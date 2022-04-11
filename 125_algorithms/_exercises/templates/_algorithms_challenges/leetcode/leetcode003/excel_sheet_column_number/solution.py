@@ -24,17 +24,17 @@ c_ Solution(o..
         :rtype: int
         """
         d    # dict
-        res = 0
+        res 0
         ___ i, k __ e..(r..(o..('A'), o..('Z') + 1), start=1
-            d[chr(k)] = i
-        j = 0
+            d[chr(k)] i
+        j 0
         ___ c __ s ||-1
             res += d[c] * (26 ** j)
             j += 1
         r.. res
 
 
-s = Solution()
+s Solution()
 print s.titleToNumber('A')
 print s.titleToNumber('B')
 print s.titleToNumber('AA')

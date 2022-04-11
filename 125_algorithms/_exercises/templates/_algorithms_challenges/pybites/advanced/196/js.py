@@ -21,7 +21,7 @@ c_ JsObject(d..
     
 
     ___ __setattr__ name,value
-        self[name] = value
+        self[name] value
 
 
     ___ __delattr__ name

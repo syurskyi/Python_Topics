@@ -6,7 +6,7 @@ ____ t___ _______ L..
 _______ heapq
 
 
-dirs = [(0, -1), (0, 1), (-1, 0), (1, 0)]
+dirs [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
 
 c_ Solution:
@@ -19,17 +19,17 @@ c_ Solution:
 
         Dijkstra's algorith, reduce to a graph problem
         """
-        m, n = l..(maze), l..(maze[0])
-        D = [[f__("inf") ___ _ __ r..(n)] ___ _ __ r..(m)]  # distance matrix
-        i, j = start
-        D[i][j] = 0
-        q = [(0, i, j)]
+        m, n l..(maze), l..(maze[0])
+        D [[f__("inf") ___ _ __ r..(n)] ___ _ __ r..(m)]  # distance matrix
+        i, j start
+        D[i][j] 0
+        q [(0, i, j)]
         w.... q:
-            dist, i, j = heapq.heappop(q)
+            dist, i, j heapq.heappop(q)
             ___ di, dj __ dirs:
-                cur_dist = 0
-                I = i
-                J = j
+                cur_dist 0
+                I i
+                J j
                 # look ahead
                 w.... 0 <_ I + di < m a.. 0 <_ J + dj < n a.. maze[I + di][J + dj] __ 0:
                     I += di
@@ -37,10 +37,10 @@ c_ Solution:
                     cur_dist += 1
 
                 __ dist + cur_dist < D[I][J]:
-                    D[I][J] = dist + cur_dist
+                    D[I][J] dist + cur_dist
                     heapq.heappush(q, (D[I][J], I, J
 
-        i, j = destination
+        i, j destination
         r.. D[i][j] __ D[i][j] != f__("inf") ____ -1
 
 

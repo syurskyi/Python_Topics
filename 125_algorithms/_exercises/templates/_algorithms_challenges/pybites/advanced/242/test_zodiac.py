@@ -10,9 +10,9 @@ ____ zodiac _______ (get_signs, get_sign_with_most_famous_people,
                     signs_are_mutually_compatible, get_sign_by_date, Sign)
 
 # original source: https://zodiacal.herokuapp.com/api
-URL = "https://bites-data.s3.us-east-2.amazonaws.com/zodiac.json"
-TMP = __.g.. TMP  /tmp
-PATH = P..(TMP, "zodiac.json")
+URL "https://bites-data.s3.us-east-2.amazonaws.com/zodiac.json"
+TMP __.g.. TMP  /tmp
+PATH P..(TMP, "zodiac.json")
 
 
 ?p__.f..(scope='module')
@@ -20,7 +20,7 @@ ___ signs
     __ n.. PATH.exists
         u..(URL, PATH)
     w__ o.. PATH) __ f:
-        data = j__.l.. (f.read
+        data j__.l.. (f.read
     r.. get_signs(data)
 
 
@@ -75,5 +75,5 @@ ___ test_signs_are_mutually_compatible(signs, sgn1, sgn2, result
     ([3, 20], 'Pisces')
 ])
 ___ test_get_sign_by_date(signs, dt, result
-    m, d = dt
+    m, d dt
     ... get_sign_by_date(signs, d__ y.._2000,  m.._m,  d.._d __ result

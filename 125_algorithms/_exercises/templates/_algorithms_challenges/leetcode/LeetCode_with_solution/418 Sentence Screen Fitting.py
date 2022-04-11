@@ -63,8 +63,8 @@ c_ Solution:
 
         Combine the words in to a string and wrap it around
         """
-        sentence = " ".j..(sentence) + " "  # unify the condition checking for the last word; tail will wrap with head with space
-        i = 0
+        sentence " ".j..(sentence) + " "  # unify the condition checking for the last word; tail will wrap with head with space
+        i 0
         ___ r __ r..(rows
             i += cols
             w.... sentence[i % l..(sentence)] != " ":
@@ -73,5 +73,5 @@ c_ Solution:
             # now sentence[i] is " "
             i += 1
 
-        ret = i // l..(sentence)
+        ret i // l..(sentence)
         r.. ret 

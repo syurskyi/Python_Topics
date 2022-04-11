@@ -8,9 +8,9 @@ c_ Solution:
         __ n.. s:
             r.. 0
 
-        _min = l..(s)
-        queue = [s]
-        visited = s..([s])
+        _min l..(s)
+        queue [s]
+        visited s..([s])
 
         """
         bfs
@@ -21,16 +21,16 @@ c_ Solution:
         """
         ___ s __ queue:
             ___ d __ D:
-                found = s.find(d)
+                found s.find(d)
                 w.... found != -1:
-                    _s = s[:found] + s[found + l..(d]
-                    found = s.find(d, found + 1)
+                    _s s[:found] + s[found + l..(d]
+                    found s.find(d, found + 1)
 
                     __ _s __ visited:
                         _____
 
                     __ l..(_s) < _min:
-                        _min = l..(_s)
+                        _min l..(_s)
 
                     queue.a..(_s)
                     visited.add(_s)

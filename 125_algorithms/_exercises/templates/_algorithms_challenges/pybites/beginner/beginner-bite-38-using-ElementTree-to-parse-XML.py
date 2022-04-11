@@ -8,7 +8,7 @@ Complete the get_tree, get_movies and get_movie_longest_runtime functions below.
 _______ ___.e__.E__ __ ET
 
 # from OMDB
-xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
+xmlstring '''<?xml version="1.0" encoding="UTF-8"?>
 <root response="True">
   <movie title="The Prestige" year="2006" rated="PG-13" released="20 Oct 2006" runtime="130 min" genre="Drama, Mystery, Sci-Fi" director="Christopher Nolan" />
   <movie title="The Dark Knight" year="2008" rated="PG-13" released="18 Jul 2008" runtime="152 min" genre="Action, Crime, Drama" director="Christopher Nolan" />
@@ -26,7 +26,7 @@ ___ get_tree
 
 ___ get_movies
     """Call get_tree and retrieve all movie titles, return a list or generator"""
-    tree = get_tree().getroot()
+    tree get_tree().getroot()
     result    # list
     ___ m __ tree:
         result.a..(m.attrib 'title' )
@@ -35,13 +35,13 @@ ___ get_movies
 ___ get_movie_longest_runtime
     """Call get_tree again and return the movie with the longest runtime in minutes,
        for latter consider adding a _get_runtime helper"""
-    tree = get_tree().getroot()
-    current_longest_runtime = 0
-    current_longest_title = "None"
+    tree get_tree().getroot()
+    current_longest_runtime 0
+    current_longest_title "None"
     ___ m __ tree:
         __ i..(m.attrib 'runtime' .s.. [0]) > i..(current_longest_runtime
-            current_longest_runtime = i..(m.attrib 'runtime' .s.. [0])
-            current_longest_title = m.attrib 'title'
+            current_longest_runtime i..(m.attrib 'runtime' .s.. [0])
+            current_longest_title m.attrib 'title'
 
     r.. current_longest_title
 

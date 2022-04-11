@@ -1,4 +1,4 @@
-cars = [
+cars [
     # need mock data? -> https://www.mockaroo.com == awesome
     ('Mercedes-Benz', '300D'), ('Mercedes-Benz', '600SEL'),
     ('Toyota', 'Avalon'), ('Ford', 'Bronco'),
@@ -26,11 +26,11 @@ ___ group_cars_by_manufacturer(cars
     cars_grouped    # dict
     ___ model, make __ cars:
         __ model n.. __ cars_grouped:
-            cars_grouped[model] = [make]
+            cars_grouped[model] [make]
         ____
             cars_grouped[model].a..(make)
     
-    cars_description = ""
+    cars_description ""
     ___ idx, value __ e..(s..(cars_grouped.items())):
         cars_description += f"{value[0].u..}\n"
         ___ model __ value[1]:

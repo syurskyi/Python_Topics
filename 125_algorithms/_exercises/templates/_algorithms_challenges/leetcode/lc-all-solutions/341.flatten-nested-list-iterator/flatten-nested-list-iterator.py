@@ -32,16 +32,16 @@ c_ NestedIterator(o..
     Initialize your data structure here.
     :type nestedList: List[NestedInteger]
     """
-    stack = d..(nestedList[::-1])
-    value = N..
+    stack d..(nestedList[::-1])
+    value N..
 
   ___ next
     """
     :rtype: int
     """
     hasNext()
-    ret = value
-    value = N..
+    ret value
+    value N..
     r.. ret
 
   ___ hasNext
@@ -51,11 +51,11 @@ c_ NestedIterator(o..
     __ value __ n.. N..
       r.. T..
 
-    stack = stack
+    stack stack
     w.... stack:
-      top = stack.p.. )
+      top stack.p.. )
       __ top.isInteger
-        value = top.getInteger()
+        value top.getInteger()
         r.. T..
       ____
         stack.e.. top.getList()[::-1])

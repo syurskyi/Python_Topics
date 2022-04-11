@@ -1,5 +1,5 @@
 ____ t___ _______ L.., T..
-T = T..('T', i.., f__)
+T T..('T', i.., f__)
 
 
 ___ n_digit_numbersnumbers L.. T n i.. __ L.. i..
@@ -10,15 +10,15 @@ ___ n_digit_numbersnumbers L.. T n i.. __ L.. i..
     __ numbers __ []:
         r.. []
 
-    n_multiply_lookup = {1: 1, 2: 10, 3: 100, 4: 1000}
+    n_multiply_lookup {1: 1, 2: 10, 3: 100, 4: 1000}
 
     ___ i __ r..(l..(numbers:
-        numbers[i] = r..(numbers[i] * n_multiply_lookup[n])
+        numbers[i] r..(numbers[i] * n_multiply_lookup[n])
         __ l..(s..(numbers[i] > n:
             __ numbers[i] > 0:
-                numbers[i] = i..(s..(numbers[i]) :?)
+                numbers[i] i..(s..(numbers[i]) :?)
             ____
-                numbers[i] = i..(s..(numbers[i]) |? +1])
+                numbers[i] i..(s..(numbers[i]) |? +1])
 
     r.. numbers
 

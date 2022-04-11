@@ -41,19 +41,19 @@ c_ Solution:
         Let L[i] be the distant to the left 1 at A[i]
         Let R[i] ...
         """
-        n = l..(seats)
-        L = [f__("inf") ___ _ __ r..(n)]
-        R = [f__("inf") ___ _ __ r..(n)]
+        n l..(seats)
+        L [f__("inf") ___ _ __ r..(n)]
+        R [f__("inf") ___ _ __ r..(n)]
         ___ i __ r..(n
             __ seats[i] __ 1:
-                L[i] = 0
+                L[i] 0
             ____ i - 1 >_ 0:
-                L[i] = L[i-1] + 1
+                L[i] L[i-1] + 1
         ___ i __ r..(n-1, -1 , -1
             __ seats[i] __ 1:
-                R[i] = 0
+                R[i] 0
             ____ i + 1 < n:
-                R[i] = R[i+1] + 1
+                R[i] R[i+1] + 1
 
         r.. m..(
             m..(L[i], R[i])
@@ -69,19 +69,19 @@ c_ Solution:
             __ e __ 1:
                 idxes.a..(i)
 
-        ret = [-f__("inf"), 0]
-        n = l..(seats)
+        ret [-f__("inf"), 0]
+        n l..(seats)
         # two ends
         ___ i, j __ z..((0, n-1), (0, -1:
-            dist = a..(i - idxes[j])
+            dist a..(i - idxes[j])
             __ dist > ret[0]:
-                ret = [dist, i]
+                ret [dist, i]
 
         ___ j __ r..(l..(idxes) - 1
-            i = (idxes[j] + idxes[j+1]) // 2
-            dist = m..(a..(i - idxes[j]), a..(i - idxes[j+1]
+            i (idxes[j] + idxes[j+1]) // 2
+            dist m..(a..(i - idxes[j]), a..(i - idxes[j+1]
             __ dist > ret[0]:
-                ret = [dist, i]
+                ret [dist, i]
 
         r.. ret[0]
 

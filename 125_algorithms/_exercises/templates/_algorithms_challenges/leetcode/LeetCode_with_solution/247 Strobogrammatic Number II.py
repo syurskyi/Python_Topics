@@ -4,13 +4,13 @@ Generation
 https://leetcode.com/problems/strobogrammatic-number-ii/
 """
 ____ c.. _______ d..
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
     ___ -
-        lst = ["11", "69", "88", "96", "00"]  # use list rather than map since no need to look up
-        middle = ["0", "1", "8"]
+        lst ["11", "69", "88", "96", "00"]  # use list rather than map since no need to look up
+        middle ["0", "1", "8"]
 
     ___ findStrobogrammatic  n
         ret    # list
@@ -41,7 +41,7 @@ c_ Solution(o..
 
 c_ SolutionArray(o..
     ___ -
-        map1 = ["11", "69", "88", "96", "00"]
+        map1 ["11", "69", "88", "96", "00"]
 
     ___ findStrobogrammatic  n
         """
@@ -78,14 +78,14 @@ c_ SolutionArray(o..
 
 c_ SolutionOutputLimitExceeded(o..
     ___ -
-        map = {
+        map {
             "1": "1",
             "6": "9",
             "9": "6",
             "8": "8",
             "0": "0"
         }
-        middle = ["1", "8", "0"]
+        middle ["1", "8", "0"]
 
     ___ findStrobogrammatic  n
         """
@@ -101,13 +101,13 @@ c_ SolutionOutputLimitExceeded(o..
             __ n % 2 != 0:
                 ___ m __ middle:
                     __ m != "0" o. idx != 0:
-                        temp = l..(cur)
+                        temp l..(cur)
                         temp.a..(m)
                         ___ i __ x..(idx-1, -1, -1
                             temp.a.. m..[temp[i]])
                         ret.a..("".j..(temp
             ____
-                temp = l..(cur)
+                temp l..(cur)
                 ___ i __ x..(idx-1, -1, -1
                     temp.a.. m..[temp[i]])
                     ret.a..("".j..(temp

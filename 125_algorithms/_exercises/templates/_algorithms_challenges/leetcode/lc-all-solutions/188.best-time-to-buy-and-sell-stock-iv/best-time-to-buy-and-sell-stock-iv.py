@@ -14,7 +14,7 @@ c_ Solution(o..
       __ start __ end:
         r.. nums[start]
 
-      mid = partition(start, end, nums)
+      mid partition(start, end, nums)
 
       __ mid __ k:
         r.. nums[mid]
@@ -24,15 +24,15 @@ c_ Solution(o..
         r.. quickselect(start, mid - 1, nums, k)
 
     ___ partition(start, end, nums
-      p = r__.randrange(start, end + 1)
-      pv = nums[p]
-      nums[end], nums[p] = nums[p], nums[end]
-      mid = start
+      p r__.randrange(start, end + 1)
+      pv nums[p]
+      nums[end], nums[p] nums[p], nums[end]
+      mid start
       ___ i __ r..(start, end
         __ nums[i] >_ pv:
-          nums[i], nums[mid] = nums[mid], nums[i]
+          nums[i], nums[mid] nums[mid], nums[i]
           mid += 1
-      nums[mid], nums[end] = nums[end], nums[mid]
+      nums[mid], nums[end] nums[end], nums[mid]
       r.. mid
 
     r.. quickselect(0, l..(nums) - 1, nums, k - 1)
@@ -47,22 +47,22 @@ c_ Solution(o..
       r.. 0
     stack    # list
     heap    # list
-    v = p = 0
-    n = l..(prices)
-    ans = 0
+    v p 0
+    n l..(prices)
+    ans 0
     w.... p < n:
-      v = p
+      v p
       w.... v < n - 1 a.. prices[v] >_ prices[v + 1]:
         v += 1
-      p = v + 1
+      p v + 1
       w.... p < n a.. prices[p] > prices[p - 1]:
         p += 1
       w.... stack a.. prices[stack[-1][0]] > prices[v]:
-        _v, _p = stack.p.. )
+        _v, _p stack.p.. )
         heap.a..(prices[_p - 1] - prices[_v])
       w.... stack a.. prices[stack[-1][1] - 1] < prices[p - 1]:
         heap.a..(prices[stack[-1][1] - 1] - prices[v])
-        v, _ = stack.p.. )
+        v, _ stack.p.. )
       stack.a..((v, p
 
     heap += [prices[p - 1] - prices[v] ___ v, p __ stack]

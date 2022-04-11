@@ -17,11 +17,11 @@ c_ Solution:
         __ org __ N.. o. seqs __ N..
             r.. F..
 
-        n = l..(org)
-        edges = d...f..(org)
-        indeg = d...f..(org, 0)
+        n l..(org)
+        edges d...f..(org)
+        indeg d...f..(org, 0)
 
-        cnt = 0
+        cnt 0
         ___ seq __ seqs:
             __ n.. seq:
                 _____
@@ -32,7 +32,7 @@ c_ Solution:
                 __ n.. (1 <_ seq[i] <_ n
                     r.. F..
                 __ n.. edges[seq[i]]:
-                    edges[seq[i]] = s..()
+                    edges[seq[i]] s..()
 
                 # dedup same edge
                 __ i > 0 a.. seq[i] n.. __ edges[seq[i - 1]]:

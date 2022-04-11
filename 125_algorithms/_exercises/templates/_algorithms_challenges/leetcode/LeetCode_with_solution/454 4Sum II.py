@@ -43,26 +43,26 @@ c_ Solution:
         :type D: List[int]
         :rtype: int
         """
-        N = l..(A)
-        AB = d..(i..)
-        CD = d..(i..)
+        N l..(A)
+        AB d..(i..)
+        CD d..(i..)
         ___ i __ r..(N
             ___ j __ r..(N
                 AB[A[i] + B[j]] += 1
                 CD[C[i] + D[j]] += 1
 
-        ret = 0
+        ret 0
         # O(N^2)
         ___ gross, count __ AB.i..:
-            target = 0 - gross
+            target 0 - gross
             ret += count * CD[target]
 
         r.. ret
 
 
 __ _______ __ _______
-    A = [ 1, 2]
-    B = [-2,-1]
-    C = [-1, 2]
-    D = [ 0, 2]
+    A [ 1, 2]
+    B [-2,-1]
+    C [-1, 2]
+    D [ 0, 2]
     ... Solution().fourSumCount(A, B, C, D) __ 2

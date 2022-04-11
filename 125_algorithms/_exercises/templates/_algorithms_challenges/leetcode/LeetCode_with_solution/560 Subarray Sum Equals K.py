@@ -20,9 +20,9 @@ c_ Solution:
         """
         prefix sum
         """
-        h = d..(i..)
-        ret = 0
-        s = 0
+        h d..(i..)
+        ret 0
+        s 0
         h[s] += 1
         ___ n __ nums:
             s += n

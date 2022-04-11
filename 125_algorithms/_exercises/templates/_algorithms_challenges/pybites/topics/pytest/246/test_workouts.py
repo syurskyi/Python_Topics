@@ -16,5 +16,5 @@ ____ ? _______ ?
 ])
 ___ test_print_workout_days(capfd, arg, e..
     print_workout_days(arg)
-    output = ?.r .. 0]
+    output ?.r .. 0]
     ... output __ e..

@@ -20,27 +20,27 @@ c_ Codec(o..
         :rtype: List[str]
         """
         arr    # list
-        n = l..(s)
-        prev = 0
-        i = 0
+        n l..(s)
+        prev 0
+        i 0
         w.... i < n:
             __ s[i] __ ':':
-                sub = s[prev:i]
-                j = i
+                sub s[prev:i]
+                j i
                 w.... j < n a.. s[j] != '#':
                     j += 1
                 __ s[i+1:j].i.. a.. i..(s[i+1:j]) __ l..(sub
                     arr.a..(sub)
-                    i = j
-                    prev = i+1
+                    i j
+                    prev i+1
             i += 1
         r.. arr
     
     ___ decode_orig  s
         result    # list
-        i = 0
+        i 0
         w.... i < l..(s
-            j = s.find(':', i)
-            i = j+1+i..(s[i:j])
+            j s.find(':', i)
+            i j+1+i..(s[i:j])
             result.a..(s[j+1:i])
         r.. result

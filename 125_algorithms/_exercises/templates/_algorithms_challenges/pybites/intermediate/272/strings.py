@@ -10,10 +10,10 @@ ___ common_words(sentence1: L..[s..], sentence2: L..[s..]) __ L..[s..]:
             If there are duplicate words in the results, just choose one word. 
             Returned words should be sorted by word's length.
     """
-    common = s..()
-    sentence2 = l.. m..(l.... x: x.l.., sentence2
+    common s..()
+    sentence2 l.. m..(l.... x: x.l.., sentence2
     ___ word __ sentence1:
-        word_lower = word.l..
+        word_lower word.l..
         __ word_lower __ sentence2:
                 common.add(word_lower)
 

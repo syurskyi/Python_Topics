@@ -6,11 +6,11 @@ c_ Solution:
         ___ isomorphic(s,t
             d    # dict
             ___ k,v __ z..(s,t
-                d[k] = v
+                d[k] v
             r.. ''.j..([d[c] ___ c __ s]) __ t
         r.. isomorphic(s,t) a.. isomorphic(t,s)
 
-test = Solution()
+test Solution()
 print(test.isIsomorphic('ab','aa'
 print(test.isIsomorphic('egg','add'
 print(test.isIsomorphic('egg','adv'

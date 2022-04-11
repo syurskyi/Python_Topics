@@ -16,17 +16,17 @@ Output:
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Node(o..
     ___ - , lo, hi, cnt
-        lo = lo
-        hi = hi
-        cnt = cnt  # size of empty slots
+        lo lo
+        hi hi
+        cnt cnt  # size of empty slots
 
-        left = N..
-        right = N..
+        left N..
+        right N..
 
     ___  -r
         r.. r.. ("[%d,%d)" % (lo, hi
@@ -36,16 +36,16 @@ c_ SegmentTree(o..
     """empty space"""
 
     ___ -
-        root = N..
+        root N..
 
     ___ build  lo, hi
         """a node can have right ONLY IF has left"""
         __ lo >_ hi: r..
         __ lo __ hi-1: r.. Node(lo, hi, 1)
 
-        root = Node(lo, hi, hi-lo)
-        root.left = build(lo, (hi+lo)/2)
-        root.right = build((lo+hi)/2, hi)
+        root Node(lo, hi, hi-lo)
+        root.left build(lo, (hi+lo)/2)
+        root.right build((lo+hi)/2, hi)
         r.. root
 
     ___ find_delete  root, sz
@@ -75,17 +75,17 @@ c_ Solution(o..
             ____
                 r.. a[1]-b[1]
 
-        st = SegmentTree()
-        n = l..(A)
-        st.root = st.build(0, n)
+        st SegmentTree()
+        n l..(A)
+        st.root st.build(0, n)
         A.s..(cmp=cmp)
-        ret = [0]*n
-        ret_cnt = d..(i..)  # handle duplicate element
+        ret [0]*n
+        ret_cnt d..(i..)  # handle duplicate element
         ___ a __ A:
-            val, inv = a
-            idx = st.find_delete(st.root, inv+1-ret_cnt[val])
+            val, inv a
+            idx st.find_delete(st.root, inv+1-ret_cnt[val])
             ret_cnt[val] += 1
-            ret[idx] = a
+            ret[idx] a
 
         r.. ret
 

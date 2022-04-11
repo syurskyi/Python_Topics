@@ -16,13 +16,13 @@ return its level order traversal as:
 ]
 confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on OJ.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution:
     ___ levelOrder  root
@@ -38,22 +38,22 @@ c_ Solution:
             q.a..(root)
 
         w.... q:
-            length = l..(q)
+            length l..(q)
             # cur_level = []
             ___ i __ r..(length
-                cur = q[i]
+                cur q[i]
                 __ cur.left:
                     q.a..(cur.left)
                 __ cur.right:
                     q.a..(cur.right)
             result.a.. m..(l.... x: x.val, q[:length]  # no need to create a new list
-            q = q[length:]  # no need to create a new list
+            q q[length:]  # no need to create a new list
         r.. result
 
 __ _____ __ ____
-    nodes = [TreeNode(i) ___ i __ r..(3)]
-    nodes[0].left = nodes[1]
-    nodes[1].left = nodes[2]
+    nodes [TreeNode(i) ___ i __ r..(3)]
+    nodes[0].left nodes[1]
+    nodes[1].left nodes[2]
     print Solution().levelOrder(nodes[0])
 
 

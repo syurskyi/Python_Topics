@@ -1,6 +1,6 @@
 ___ sortIndexes(amount, values
     answer    # list
-    sortedValues = s..(values)
+    sortedValues s..(values)
     ___ sortedValue __ sortedValues:
         ___ x __ r..(amount
             __ sortedValue __ values[x]:

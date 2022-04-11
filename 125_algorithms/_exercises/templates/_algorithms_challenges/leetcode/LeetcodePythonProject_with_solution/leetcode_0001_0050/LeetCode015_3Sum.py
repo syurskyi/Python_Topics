@@ -10,12 +10,12 @@ c_ Solution(o..
         :rtype: List[List[int]]
         """
         nums.s..()
-        n = l..(nums)
+        n l..(nums)
         res    # list
         ___ i __ r..(n-2
             __ i > 0 a.. nums[i] __ nums[i-1]:
                 _____
-            j, k = i+1, n-1
+            j, k i+1, n-1
             w.... j < k:
                 tmp  nums[i]+nums[j]+nums[k]
                 __ tmp __ 0:

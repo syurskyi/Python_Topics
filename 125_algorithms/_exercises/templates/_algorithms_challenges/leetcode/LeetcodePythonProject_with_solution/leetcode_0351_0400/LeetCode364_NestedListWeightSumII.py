@@ -55,14 +55,14 @@ c_ NestedInteger(o..
 
 c_ Solution(o..
     ___ depthSumInverse  nestedList
-        queue = nestedList
-        result = 0
-        prev = 0
+        queue nestedList
+        result 0
+        prev 0
         w.... queue:
-            sumVal = 0
-            size = l..(queue)
+            sumVal 0
+            size l..(queue)
             ___ _ __ r..(size
-                ni = queue.p.. 0)
+                ni queue.p.. 0)
                 __ ni.isInteger
                     sumVal += ni.getInteger()
                 ____

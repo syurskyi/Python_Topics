@@ -66,12 +66,12 @@ c_ Solution:
         __ target __ 1:
             r.. ops(power)
 
-        d, r = target // x, target % x
-        ret = r * ops(power) + dfs(d, x, power + 1)
+        d, r target // x, target % x
+        ret r * ops(power) + dfs(d, x, power + 1)
         # either -r or +(x-r)
         __ r != 0:
-            ret2 = (x - r) * ops(power) + dfs(d + 1, x, power + 1)
-            ret = m..(ret, ret2)
+            ret2 (x - r) * ops(power) + dfs(d + 1, x, power + 1)
+            ret m..(ret, ret2)
 
         r.. ret
 

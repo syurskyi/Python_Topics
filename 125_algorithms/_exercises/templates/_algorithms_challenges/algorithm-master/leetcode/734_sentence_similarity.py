@@ -30,15 +30,15 @@ c_ Solution:
         __ l..(words1) != l..(words2
             r.. F..
 
-        simils = c...d..(s..)
+        simils c...d..(s..)
 
         ___ a, b __ pairs:
             simils[a].add(b)
             simils[b].add(a)
 
         ___ i __ r..(l..(words1:
-            a = words1[i]
-            b = words2[i]
+            a words1[i]
+            b words2[i]
 
             __ a != b a.. b n.. __ simils[a]:
                 r.. F..

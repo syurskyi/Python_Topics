@@ -6,7 +6,7 @@ Created on Mar 11, 2017
 
 c_ Solution(o..
     ___ removeInvalidParentheses  s
-        rmL, rmR = 0, 0
+        rmL, rmR 0, 0
         ___ c __ s:
             __ c __ '(':
                 rmL += 1
@@ -15,7 +15,7 @@ c_ Solution(o..
                     rmL -_ 1
                 ____
                     rmR += 1
-        result = s..()
+        result s..()
         helper(s, 0, result, '', rmL, rmR, 0)
         r.. l..(result)
     
@@ -26,7 +26,7 @@ c_ Solution(o..
             __ rmL __ 0 a.. rmR __ 0 a.. openNum __ 0:
                 result.add(elem)
             r..
-        c = s[i]
+        c s[i]
         __ c __ '(':
             helper(s, i+1, result, elem+c, rmL, rmR, openNum+1)
             helper(s, i+1, result, elem, rmL-1, rmR, openNum)
@@ -37,14 +37,14 @@ c_ Solution(o..
             helper(s, i+1, result, elem+c, rmL, rmR, openNum)
     
     ___ test
-        testCases = [
+        testCases [
             '()())()',
             '(a)())()',
             ')(',
         ]
         ___ s __ testCases:
             print('s: %s' % (s
-            result = removeInvalidParentheses(s)
+            result removeInvalidParentheses(s)
             print('result: %s' % (result
             print('-='*20+'-')
     

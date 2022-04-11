@@ -2,8 +2,8 @@ ____ dataclasses _______ dataclass
 ____ f.. _______ total_ordering
 ____ t___ _______ L..
 
-bites: L..[i..] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
-names: L..[s..] = [
+bites: L..[i..] [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
+names: L..[s..] [
     "snow",
     "natalia",
     "alex",
@@ -68,18 +68,18 @@ c_ Rankings:
     ___ dump
         r.. ninja_list.p.. 0)
 
-    ___ highest  count: i.. = 1
-        result = ninja_list[-count:]
+    ___ highest  count: i.. 1
+        result ninja_list[-count:]
         result.r..
         r.. result
 
-    ___ lowest  count: i.. = 1
-        result = ninja_list[:count]
+    ___ lowest  count: i.. 1
+        result ninja_list[:count]
         r.. result
 
-    ___ pair_up  count: i.. = 3
-        highest = highest(count)
-        lowest = lowest(count)
+    ___ pair_up  count: i.. 3
+        highest highest(count)
+        lowest lowest(count)
         r.. l..(z..(highest, lowest
 
     ___ __len__

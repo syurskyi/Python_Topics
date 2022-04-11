@@ -1,12 +1,12 @@
 c_ TrieNode:
     ___ -
-        end_of = N..
+        end_of N..
         children    # dict
 
 
 c_ Trie:
     ___ -
-        root = TrieNode()
+        root TrieNode()
 
     """
     @param: word: a word
@@ -16,15 +16,15 @@ c_ Trie:
         __ word __ N..
             r..
 
-        node = root
+        node root
 
         ___ c __ word:
             __ c n.. __ node.children:
-                node.children[c] = TrieNode()
+                node.children[c] TrieNode()
 
-            node = node.children[c]
+            node node.children[c]
 
-        node.end_of = word
+        node.end_of word
 
     """
     @param: word: A string
@@ -34,13 +34,13 @@ c_ Trie:
         __ word __ N..
             r.. F..
 
-        node = root
+        node root
 
         ___ c __ word:
             __ c n.. __ node.children:
                 r.. F..
 
-            node = node.children[c]
+            node node.children[c]
 
         r.. node.end_of __ word
 
@@ -52,12 +52,12 @@ c_ Trie:
         __ prefix __ N..
             r.. F..
 
-        node = root
+        node root
 
         ___ c __ prefix:
             __ c n.. __ node.children:
                 r.. F..
 
-            node = node.children[c]
+            node node.children[c]
 
         r.. T..

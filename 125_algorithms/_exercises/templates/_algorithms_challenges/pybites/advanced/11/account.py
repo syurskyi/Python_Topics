@@ -1,8 +1,8 @@
 c_ Account:
 
     ___ - , name, start_balance=0
-        name = name
-        start_balance = start_balance
+        name name
+        start_balance start_balance
         _transactions    # list
 
     $

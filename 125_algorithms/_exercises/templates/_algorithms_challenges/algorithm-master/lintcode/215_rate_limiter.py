@@ -14,13 +14,13 @@ c_ Solution:
     5. if cnt >= freq => is limited
     """
     ___ -
-        times = {
+        times {
             's': 1,
             'm': 60,
             'h': 3600,
             'd': 86400,
         }
-        logs = c...d..(l..)
+        logs c...d..(l..)
 
     ___ isRatelimited  timestamp, event, rate, increment
         """
@@ -33,10 +33,10 @@ c_ Solution:
         __ '/' n.. __ rate:
             r.. F..
 
-        freq, t = rate.s..('/')
-        freq = i..(freq)
-        begin_time = timestamp - times.g.. t, 1) + 1
-        is_limited = check_limited(event, freq, begin_time)
+        freq, t rate.s..('/')
+        freq i..(freq)
+        begin_time timestamp - times.g.. t, 1) + 1
+        is_limited check_limited(event, freq, begin_time)
 
         __ increment a.. n.. is_limited:
             logs[event].a..(timestamp)
@@ -44,21 +44,21 @@ c_ Solution:
         r.. is_limited
 
     ___ check_limited  event, freq, begin_time
-        logs = logs[event]
+        logs logs[event]
 
         __ n.. logs o. logs[-1] < begin_time:
             # if freq is 0 => is limited
             r.. freq __ 0
 
-        left, right = 0, l..(logs) - 1
+        left, right 0, l..(logs) - 1
 
         w.... left + 1 < right:
-            mid = (left + right) // 2
+            mid (left + right) // 2
 
             __ logs[mid] < begin_time:
-                left = mid
+                left mid
             ____
-                right = mid
+                right mid
 
-        mid = left __ logs[left] >_ begin_time ____ right
+        mid left __ logs[left] >_ begin_time ____ right
         r.. l..(logs) - mid >_ freq

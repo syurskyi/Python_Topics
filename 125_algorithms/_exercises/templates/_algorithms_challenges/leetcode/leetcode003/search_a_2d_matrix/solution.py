@@ -23,25 +23,25 @@ c_ Solution:
     # @param target, an integer
     # @return a boolean
     ___ searchMatrix  matrix, target
-        row_left = 0
-        row_right = l..(matrix) - 1
+        row_left 0
+        row_right l..(matrix) - 1
         w.... row_left <_ row_right:
-            row_mid = row_left + (row_right - row_left) / 2
-            row = matrix[row_mid]
+            row_mid row_left + (row_right - row_left) / 2
+            row matrix[row_mid]
             __ target >_ row[0] a.. target <_ row[-1]:
-                left = 0
-                right = l..(row) - 1
+                left 0
+                right l..(row) - 1
                 w.... left <_ right:
-                    mid = left + (right - left) / 2
+                    mid left + (right - left) / 2
                     __ target __ row[mid]:
                         r.. T..
                     ____ target < row[mid]:
-                        right = mid - 1
+                        right mid - 1
                     ____
-                        left = mid + 1
+                        left mid + 1
                 r.. F..
             ____ target < row[0]:
-                row_right = row_mid - 1
+                row_right row_mid - 1
             ____
-                row_left = row_mid + 1
+                row_left row_mid + 1
         r.. F..

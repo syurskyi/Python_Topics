@@ -7,8 +7,8 @@ Given an n-ary tree, return the level order traversal of its nodes' values. (ie,
 # Definition for a Node.
 c_ Node:
     ___ - , val, children
-        val = val
-        children = children
+        val val
+        children children
 
 
 c_ Solution:
@@ -22,7 +22,7 @@ c_ Solution:
         __ n.. root:
             r.. []
 
-        q = [root]
+        q [root]
         ret    # list
         w.... q:
             cur    # list
@@ -32,6 +32,6 @@ c_ Solution:
                 cur.a..(e.val)
 
             ret.a..(cur)
-            q = q_new
+            q q_new
 
         r.. ret

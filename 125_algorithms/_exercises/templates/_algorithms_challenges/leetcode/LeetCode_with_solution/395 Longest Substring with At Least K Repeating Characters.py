@@ -23,7 +23,7 @@ The longest substring is "ababb", as 'a' is repeated 2 times and 'b' is repeated
 """
 ____ c.. _______ d..
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -37,10 +37,10 @@ c_ Solution(o..
         __ n.. s:
             r.. 0
 
-        cnt = d..(i..)
+        cnt d..(i..)
         ___ e __ s: cnt[e] += 1
 
-        c = m..(
+        c m..(
             s,
             key=l.... x: cnt[x],
         )

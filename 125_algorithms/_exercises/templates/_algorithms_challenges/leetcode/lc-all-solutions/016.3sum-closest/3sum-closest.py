@@ -6,20 +6,20 @@ c_ Solution(o..
     :rtype: int
     """
     nums.s..()
-    ans = 0
-    diff = f__("inf")
+    ans 0
+    diff f__("inf")
     ___ i __ r..(0, l..(nums:
-      start, end = i + 1, l..(nums) - 1
+      start, end i + 1, l..(nums) - 1
       w.... start < end:
-        s.. = nums[i] + nums[start] + nums[end]
+        s.. nums[i] + nums[start] + nums[end]
         __ s.. > target:
           __ a..(target - s..) < diff:
-            diff = a..(target - s..)
-            ans = s..
+            diff a..(target - s..)
+            ans s..
           end -_ 1
         ____
           __ a..(target - s..) < diff:
-            diff = a..(target - s..)
-            ans = s..
+            diff a..(target - s..)
+            ans s..
           start += 1
     r.. ans

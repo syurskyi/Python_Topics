@@ -26,25 +26,25 @@ ___ get_srt_section_ids(text: s..) __ L..[i..]:
 
       You can ignore milliseconds for this exercise.
    """
-   sections_raw = [word.s.. ___ word __ text.s...s..("\n") __ word != ""]
-   sections_clean = [sections_raw[i-3:i] ___ i __ r..(3, l..(sections_raw) +1, 3)]
+   sections_raw [word.s.. ___ word __ text.s...s..("\n") __ word != ""]
+   sections_clean [sections_raw[i-3:i] ___ i __ r..(3, l..(sections_raw) +1, 3)]
    sections_ranking    # dict
 
    ___ section __ sections_clean:
-      start, stop = section[1].s..(" --> ")
-      total_chars = l..(section[2])
-      start_h, start_m, start_s = start.s..(":")
-      stop_h, stop_m, stop_s = stop.s..(":")
-      start = t..(hours=i..(start_h), minutes=i..(start_m), seconds=i..(start_s[:2]
-      stop = t..(hours=i..(stop_h), minutes=i..(stop_m), seconds=i..(stop_s[:2]
-      time_delta = stop - start
-      sections_ranking[i..(section[0])] = total_chars / time_delta.seconds
+      start, stop section[1].s..(" --> ")
+      total_chars l..(section[2])
+      start_h, start_m, start_s start.s..(":")
+      stop_h, stop_m, stop_s stop.s..(":")
+      start t..(hours=i..(start_h), minutes=i..(start_m), seconds=i..(start_s[:2]
+      stop t..(hours=i..(stop_h), minutes=i..(stop_m), seconds=i..(stop_s[:2]
+      time_delta stop - start
+      sections_ranking[i..(section[0])] total_chars / time_delta.seconds
 
    r.. s..(sections_ranking, key=sections_ranking.get, r.._T..
 
 
 __ _______ __ _______
-   text1 = """
+   text1 """
    1
    00:00:00,498 --> 00:00:02,827
    Beautiful is better than ugly.
@@ -58,7 +58,7 @@ __ _______ __ _______
    Simple is better than complex.
    """
 
-   text2 = """
+   text2 """
    18
    00:01:12,100 --> 00:01:17,230
    If you want a bit more minimalistic view, you can actually hide the sidebar.

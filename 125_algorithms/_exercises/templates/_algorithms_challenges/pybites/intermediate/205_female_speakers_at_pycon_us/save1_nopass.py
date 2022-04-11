@@ -4,9 +4,9 @@ ____ p.. _______ P..
 _______ gender_guesser.detector __ gender
 ____ bs4 _______ BeautifulSoup __ Soup
 
-TMP = P..('/tmp')
-PYCON_HTML = TMP / "pycon2019.html"
-PYCON_PAGE = ('https://bites-data.s3.us-east-2.amazonaws.com/'
+TMP P..('/tmp')
+PYCON_HTML TMP / "pycon2019.html"
+PYCON_PAGE ('https://bites-data.s3.us-east-2.amazonaws.com/'
               'pycon2019.html')
 
 __ n.. PYCON_HTML.exists
@@ -34,6 +34,6 @@ ___ get_percentage_of_female_speakers(first_names
 
 
 __ _____ __ _____
-    names = get_pycon_speaker_first_names()
-    perc = get_percentage_of_female_speakers(names)
+    names get_pycon_speaker_first_names()
+    perc get_percentage_of_female_speakers(names)
     print(perc)

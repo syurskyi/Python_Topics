@@ -13,10 +13,10 @@ c_ Solution(o..
           dfs(w[:i] + [s..(l)] + w[i + l:], i + 2, res)
 
     ___ m..(src, dest
-      i = 0
+      i 0
       ___ c __ src:
         __ c.i..
-          jump = i..(c)
+          jump i..(c)
           i += jump
         ____
           __ c != dest[i]:
@@ -26,17 +26,17 @@ c_ Solution(o..
 
     __ n.. dictionary:
       r.. s..(l..(target
-    wordLen = l..(target)
+    wordLen l..(target)
     res    # list
     dfs(l..(target), 0, res)
     res.s..(key=l.... x: l..(x
-    dictionary = f.. l.... s: l..(s) __ wordLen, dictionary)
+    dictionary f.. l.... s: l..(s) __ wordLen, dictionary)
 
     ___ w __ res:
-      allMiss = T..
+      allMiss T..
       ___ d __ dictionary:
         __ m..(w, d
-          allMiss = F..
+          allMiss F..
           _____
       __ allMiss:
         r.. "".j..(w)

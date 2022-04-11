@@ -6,7 +6,7 @@ c_ Solution(o..
     """
 
     ___ helper(board, p, q
-      cnt = 0
+      cnt 0
       ___ i __ r..(p - 1, p + 2
         ___ j __ r..(q - 1, q + 2
           __ i __ p a.. j __ q:

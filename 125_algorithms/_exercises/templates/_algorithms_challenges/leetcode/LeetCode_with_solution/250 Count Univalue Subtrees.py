@@ -2,19 +2,19 @@
 Premium Question
 """
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ -
-        cnt = 0
+        cnt 0
 
     ___ countUnivalSubtrees  root
         """
@@ -28,8 +28,8 @@ c_ Solution:
         __ n.. cur:
             r.. T..
 
-        is_left = is_unival(cur.left)
-        is_right = is_unival(cur.right)  # attention to test condition shortcut
+        is_left is_unival(cur.left)
+        is_right is_unival(cur.right)  # attention to test condition shortcut
         __ (n.. is_left o. n.. is_right o.
                     cur.left a.. cur.left.val != cur.val o.
                     cur.right a.. cur.right.val != cur.val

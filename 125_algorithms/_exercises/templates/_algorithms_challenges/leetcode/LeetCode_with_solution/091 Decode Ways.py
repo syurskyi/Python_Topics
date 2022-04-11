@@ -12,7 +12,7 @@ Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).
 
 The number of ways decoding "12" is 2.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Solution(o..
@@ -32,21 +32,21 @@ c_ Solution(o..
         __ s.s.. "0"
             r.. 0
 
-        n = l..(s)
+        n l..(s)
         __ n.. s:
             r.. 0
-        F = [0 ___ _ __ x..(n+1)]
-        F[0] = 1
-        F[1] = 1
+        F [0 ___ _ __ x..(n+1)]
+        F[0] 1
+        F[1] 1
 
         ___ i __ x..(2, n+1
             __ s[i-1] != "0":
-                F[i] = F[i-1]
+                F[i] F[i-1]
                 __ 10 <_ i..(s[i-2]+s[i-1]) < 27:
                     F[i] += F[i-2]
             ____  # 0 is special
                 __ s[i-2] __ ("1", "2"
-                    F[i] = F[i-2]
+                    F[i] F[i-2]
                 ____
                     r.. 0
 

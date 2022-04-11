@@ -12,7 +12,7 @@ A solution set is:
 [7]
 [2, 2, 3]
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ combinationSum  candidates, target
         """

@@ -14,16 +14,16 @@ c_ Solution(o..
         degree    # dict
         ___ word __ words:
             ___ c __ word:
-                degree[c] = 0
+                degree[c] 0
         ___ i __ r..(1, l..(words:
-            currWord = words[i]
-            prevWord = words[i-1]
-            length = m..(l..(currWord), l..(prevWord
+            currWord words[i]
+            prevWord words[i-1]
+            length m..(l..(currWord), l..(prevWord
             ___ j __ r..(length
-                c1, c2 = prevWord[j], currWord[j]
+                c1, c2 prevWord[j], currWord[j]
                 __ c1 != c2:
                     __ c1 n.. __ graph:
-                        graph[c1] = s..()
+                        graph[c1] s..()
                     __ c2 n.. __ graph[c1]:
                         degree[c2] += 1
                     graph[c1].add(c2)
@@ -32,9 +32,9 @@ c_ Solution(o..
         ___ c, cnt __ degree.i..:
             __ cnt __ 0:
                 queue.a..(c)
-        res = ''
+        res ''
         w.... queue:
-            c = queue.p.. 0)
+            c queue.p.. 0)
             res += c
             ___ c0 __ graph.g.. c, []
                 degree[c0] -_ 1
@@ -43,7 +43,7 @@ c_ Solution(o..
         r.. res __ l..(res) __ l..(degree) ____ ''
     
     ___ test
-        testCases = [
+        testCases [
             [
                 "wrt",
                 "wrf",
@@ -65,7 +65,7 @@ c_ Solution(o..
         ]
         ___ words __ testCases:
             print('words: %s' % (words
-            result = alienOrder(words)
+            result alienOrder(words)
             print('result: %s' % (result
             print('-='*20+'-')
     

@@ -1,7 +1,7 @@
-a = ("John", "Charles", "Mike")
-b = ("Jenny", "Christy", "Monica")
+a ("John", "Charles", "Mike")
+b ("Jenny", "Christy", "Monica")
 
-x = z..(a, b)
+x z..(a, b)
 
 print(x)
 

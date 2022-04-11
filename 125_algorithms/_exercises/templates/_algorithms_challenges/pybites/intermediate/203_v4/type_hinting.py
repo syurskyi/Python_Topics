@@ -25,7 +25,7 @@ c_ Employee:
         :param places: Integer of places to round to
         :return: String representation of the rounded number in US $
         """
-        amount = r..(number, places)
+        amount r..(number, places)
         r.. f"${amount:0.2f}"
 
     $
@@ -34,11 +34,11 @@ c_ Employee:
 
         For instance: $250.75
         """
-        total_hours = hours_per_day * days_per_week
-        total_wage = total_hours * wage
+        total_hours hours_per_day * days_per_week
+        total_wage total_hours * wage
         r.. _rounder(total_wage, 2)
 
 
 __ _______ __ _______
-    coder = Employee("Joe", "Blow", 5, 8, 18.0)
+    coder Employee("Joe", "Blow", 5, 8, 18.0)
     print(coder.weekly_pay)

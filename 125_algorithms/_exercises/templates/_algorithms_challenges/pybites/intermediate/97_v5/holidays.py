@@ -6,22 +6,22 @@ ____ bs4 _______ BeautifulSoup
 
 
 # prep data
-holidays_page = __.p...j..('/tmp', 'us_holidays.php')
+holidays_page __.p...j..('/tmp', 'us_holidays.php')
 u..('https://bit.ly/2LG098I', holidays_page)
 
 w__ o.. holidays_page) __ f:
-    content = f.r..
+    content f.r..
 
-holidays = d..(l..)
+holidays d..(l..)
 
 
 ___ get_us_bank_holidays(content=content
     """Receive scraped html output, make a BS object, parse the bank
        holiday table (css class = list-table), and return a dict of
        keys -> months and values -> list of bank holidays"""
-    soup = BeautifulSoup(content, features='html.parser')
-    hol_list = soup.find(class_='list-table').tbody
+    soup BeautifulSoup(content, features='html.parser')
+    hol_list soup.find(class_='list-table').tbody
     ___ hol __ hol_list('tr'
-        _,month,_ = hol.t__.s__.s..('-')
+        _,month,_ hol.t__.s__.s..('-')
         holidays[month].a..(hol.a.s__.s..
     r.. holidays

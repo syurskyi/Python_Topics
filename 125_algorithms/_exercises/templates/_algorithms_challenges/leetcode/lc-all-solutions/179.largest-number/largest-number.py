@@ -3,7 +3,7 @@ c_ Solution:
   # @return {string}
   ___ largestNumber  nums
     ___ cmpFunc(a, b
-      stra, strb = s..(a), s..(b)
+      stra, strb s..(a), s..(b)
       __ stra + strb < strb + stra:
         r.. -1
       ____ stra + strb > strb + stra:

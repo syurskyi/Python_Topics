@@ -13,8 +13,8 @@ c_ Solution(o..
         """
         g.s..()
         s.s..()
-        i, j = 0, 0
-        count = 0
+        i, j 0, 0
+        count 0
         w.... i < l..(g) a.. j < l..(s
             __ g[i] <_ s[j]:
                 i += 1
@@ -25,7 +25,7 @@ c_ Solution(o..
         r.. count
     
     ___ test
-        testCases = [
+        testCases [
             ([1,2,3], [1,1]),
             ([1,2], [1,2,3]),
             ([10,9,8,7], [5,6,7,8]),
@@ -33,7 +33,7 @@ c_ Solution(o..
         ___ g, s __ testCases:
             print('g: %s' % g)
             print('s: %s' % s)
-            result = findContentChildren(g, s)
+            result findContentChildren(g, s)
             print('result: %s' % result)
             print('-='*20+'-')
 

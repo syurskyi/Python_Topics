@@ -4,11 +4,11 @@ c_ Solution(o..
     :type nums: List[int]
     :rtype: bool
     """
-    s = s..(nums)
+    s s..(nums)
     __ s __ 0:
       r.. T..
     __ s % 2 __ 0:
-      s, current = s / 2, 0
+      s, current s / 2, 0
       ___ num __ nums:
         current |= ((current o. 1) << num) % (1 << (s + 1
         __ current >_ 1 << s:

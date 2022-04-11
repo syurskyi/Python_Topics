@@ -1,5 +1,5 @@
 ___ square_of_sum(n
-    sum_ = n * (n + 1) / 2
+    sum_ n * (n + 1) / 2
     r.. sum_ * sum_
 
 

@@ -4,7 +4,7 @@ c_ Solution(o..
     :type s: str
     :rtype: int
     """
-    complexBal = 3
+    complexBal 3
     __ any(c __ s__.lowercase ___ c __ s
       complexBal -_ 1
     __ any(c __ s__.uppercase ___ c __ s
@@ -12,13 +12,13 @@ c_ Solution(o..
     __ any(c.i.. ___ c __ s
       complexBal -_ 1
 
-    one = 0
-    two = 0
-    p = 2
-    r.. = 0
+    one 0
+    two 0
+    p 2
+    r.. 0
     w.... p < l..(s
       __ s[p] __ s[p - 1] __ s[p - 2]:
-        length = 2
+        length 2
         w.... p < l..(s) a.. s[p] __ s[p - 1]:
           p += 1
           length += 1
@@ -35,7 +35,7 @@ c_ Solution(o..
     ____ l..(s) <_ 20:
       r.. m..(complexBal, r..)
     ____
-      redundant = l..(s) - 20
+      redundant l..(s) - 20
       r.. -_ m..(redundant, one)
       r.. -_ m..(m..(redundant - one, 0), two * 2) / 2
       r.. -_ m..(redundant - one - two * 2, 0) / 3

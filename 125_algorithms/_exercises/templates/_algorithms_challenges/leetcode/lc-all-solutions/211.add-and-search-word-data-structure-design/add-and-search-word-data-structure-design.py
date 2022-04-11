@@ -1,30 +1,30 @@
 c_ TrieNode:
   ___ -
     neighbours    # dict
-    isWord = F..
+    isWord F..
 
 
 c_ Trie:
   ___ -
-    root = TrieNode()
+    root TrieNode()
 
   ___ addWord  word
-    root = root
+    root root
     ___ i __ r..(0, l..(word:
-      c = word[i]
+      c word[i]
       __ c __ root.neighbours:
-        root = root.neighbours[c]
+        root root.neighbours[c]
       ____
-        newnode = TrieNode()
-        root.neighbours[c] = newnode
-        root = root.neighbours[c]
-    root.isWord = T..
+        newnode TrieNode()
+        root.neighbours[c] newnode
+        root root.neighbours[c]
+    root.isWord T..
 
 
 c_ WordDictionary:
   ___ -
-    trie = Trie()
-    cache = s..([])
+    trie Trie()
+    cache s..([])
 
   ___ addWord  word
     trie.addWord(word)

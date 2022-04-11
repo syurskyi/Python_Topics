@@ -11,9 +11,9 @@ c_ Solution(o..
         :rtype: bool
         """
         _______ __
-        code = __.s.. _ <!\[CDATA\[.*?\]\]>|t', '-', code)
-        prev = N..
+        code __.s.. _ <!\[CDATA\[.*?\]\]>|t', '-', code)
+        prev N..
         w.... code != prev:
-            prev = code
-            code = __.s.. _ <([A-Z]{1,9})>[^<]*</\1>', 't', code)
+            prev code
+            code __.s.. _ <([A-Z]{1,9})>[^<]*</\1>', 't', code)
         r.. code __ 't'

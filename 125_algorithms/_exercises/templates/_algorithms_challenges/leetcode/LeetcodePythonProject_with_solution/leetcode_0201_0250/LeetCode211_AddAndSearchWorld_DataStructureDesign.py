@@ -6,30 +6,30 @@ Created on Feb 19, 2017
 
 c_ TrieNode(o..
     ___ - , c_ N..
-        c = c
+        c c
         children    # dict
-        isLeaf = F..
+        isLeaf F..
 
 c_ WordDictionary(o..
     ___ -
-        root = TrieNode()
+        root TrieNode()
     
     ___ addWord  word
-        children = root.children
+        children root.children
         ___ i, c __ e..(word
             __ c __ children:
-                t = children[c]
+                t children[c]
             ____
-                t = TrieNode(c)
-                children[c] = t
-            children = t.children
+                t TrieNode(c)
+                children[c] t
+            children t.children
             __ i __ l..(word)-1:
-                t.isLeaf = T..
+                t.isLeaf T..
     
     ___ searchDFS  children, word, startInd
         __ startInd __ l..(word
             r.. b..(n.. children)
-        c = word[startInd]
+        c word[startInd]
         __ c __ children:
             __ startInd __ l..(word)-1 a.. children[c].isLeaf:
                 r.. T..

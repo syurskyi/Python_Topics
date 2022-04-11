@@ -25,7 +25,7 @@ Return a NestedInteger object containing a nested list with 2 elements:
     ii. A nested list with one element:
          a. An integer containing value 789.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 # """
 # This is the interface that allows for creating nested lists.
@@ -86,13 +86,13 @@ c_ Solution(o..
         __ n.. s: r.. N..
         stk    # list
 
-        i = 0
+        i 0
         w.... i < l..(s
             __ s[i] __ ' ':
                 stk.a..(NestedInteger
                 i += 1
             ____ s[i] __ ' ':
-                ni = stk.p.. )
+                ni stk.p.. )
                 __ n.. stk: r.. ni
 
                 stk[-1].add(ni)
@@ -100,13 +100,13 @@ c_ Solution(o..
             ____ s[i] __ ',':
                 i += 1
             ____
-                j = i
+                j i
                 w.... j < l..(s) a.. (s[j].i.. o. s[j] __ '-' j += 1
 
-                ni = NestedInteger(i..(s[i: j]) __ s[i: j] ____ N..)
+                ni NestedInteger(i..(s[i: j]) __ s[i: j] ____ N..)
                 __ n.. stk: r.. ni
                 stk[-1].add(ni)
-                i = j
+                i j
 
         r.. stk.p.. )
 

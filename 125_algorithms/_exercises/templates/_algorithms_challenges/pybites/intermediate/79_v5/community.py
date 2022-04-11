@@ -3,7 +3,7 @@ ____ c.. _______ C..
 
 _______ r__
 
-CSV_URL = 'https://bit.ly/2HiD2i8'
+CSV_URL 'https://bit.ly/2HiD2i8'
 
 
 ___ get_csv
@@ -16,10 +16,10 @@ ___ get_csv
 ___ create_user_bar_chart(content: s..
     """Receives csv file (decoded) content and returns a table of timezones
        and their corresponding member counts in pluses (see Bite/tests)"""
-    reader = csv.DictReader(content.s..
-    counter = C..()
+    reader csv.DictReader(content.s..
+    counter C..()
     ___ row __ reader:
         counter[row 'tz']] += 1
-    l = s..(counter)
+    l s..(counter)
     ___ timezone __ l:
         print _*{timezone:25} | {"+" * counter[timezone]}')

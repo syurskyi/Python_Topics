@@ -9,39 +9,39 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        i = 0
-        res = 0
+        i 0
+        res 0
         stack    # list
-        sign = 1
-        preVal = 0
+        sign 1
+        preVal 0
         w.... i < l..(s
             __ s[i].i..
-                preVal = 0
+                preVal 0
                 w.... i < l..(s) a.. s[i].i..
-                    preVal = preVal*10 + i..(s[i])
+                    preVal preVal*10 + i..(s[i])
                     i += 1
                 i -_ 1
             ____ s[i] __ '(':
                 stack.a..(res)
                 stack.a..(sign)
-                res = 0
-                sign = 1
+                res 0
+                sign 1
             ____ s[i] __ ')':
                 res += sign*preVal
-                res = stack.p.. )*res + stack.p.. )
-                preVal = 0
+                res stack.p.. )*res + stack.p.. )
+                preVal 0
             ____ s[i] __ '+':
                 res += preVal*sign
-                sign = 1
+                sign 1
             ____ s[i] __ '-':
                 res += preVal*sign
-                sign = -1
+                sign -1
             i += 1
         res += preVal*sign
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             '(1+(4+5+2)-3)+(6+8)',
             '(1-3)+(3-5+(3-10)-10)',
             '3+3-1+(3-3)',
@@ -51,7 +51,7 @@ c_ Solution(o..
         ]
         ___ s __ testCases:
             print('s: %s' % (s
-            result = calculate(s)
+            result calculate(s)
             print('result: %s' % (result
             print('-='*20+'-')
 

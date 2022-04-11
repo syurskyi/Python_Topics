@@ -13,14 +13,14 @@ c_ Solution(o..
         __ N __ 1:
             r.. 0
         __ K%2 __ 0:
-            prev = kthGrammar(N-1, K/2)
+            prev kthGrammar(N-1, K/2)
             r.. 1 __ prev __ 0 ____ 0
         ____
-            prev = kthGrammar(N-1, (K+1)/2)
+            prev kthGrammar(N-1, (K+1)/2)
             r.. 0 __ prev __ 0 ____ 1
     
     ___ test
-        testCases = [
+        testCases [
             [1, 1],
             [2, 1],
             [2, 2],
@@ -30,7 +30,7 @@ c_ Solution(o..
         ___ n, k __ testCases:
             print('n: %s' % n)
             print('k: %s' % k)
-            result = kthGrammar(n, k)
+            result kthGrammar(n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

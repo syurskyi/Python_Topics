@@ -12,11 +12,11 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        m = l..(nums) / 2
+        m l..(nums) / 2
         d    # dict
         ___ k __ nums:
             __ k n.. __ d:
-                d[k] = 1
+                d[k] 1
             ____
                 d[k] += 1
         ___ k __ d:

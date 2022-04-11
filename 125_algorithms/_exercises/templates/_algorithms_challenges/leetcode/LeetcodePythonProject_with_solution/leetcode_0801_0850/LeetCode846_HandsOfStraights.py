@@ -10,14 +10,14 @@ c_ Solution(o..
         :type W: int
         :rtype: bool
         """
-        w = W
+        w W
         __ l..(hand) % w != 0:
             r.. F..
         hashmap    # dict
         ___ num __ hand:
-            hashmap[num] = hashmap[num]+1 __ num __ hashmap ____ 1
+            hashmap[num] hashmap[num]+1 __ num __ hashmap ____ 1
         w.... hashmap:
-            minVal = m..(hashmap)
+            minVal m..(hashmap)
             ___ i __ r..(w
                 __ minVal + i n.. __ hashmap:
                     r.. F..
@@ -27,7 +27,7 @@ c_ Solution(o..
         r.. l..(hashmap) __ 0
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1,2,3,6,2,3,4,7,8],
                 3,
@@ -38,7 +38,7 @@ c_ Solution(o..
             ],
         ]
         ___ hand, w __ testCases:
-            result = isNStraightHand(hand, w)
+            result isNStraightHand(hand, w)
             print('result: %s' % result)
             print('-='*30+'-')
 

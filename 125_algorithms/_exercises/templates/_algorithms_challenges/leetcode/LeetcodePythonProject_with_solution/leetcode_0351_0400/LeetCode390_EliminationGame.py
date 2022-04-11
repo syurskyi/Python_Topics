@@ -6,25 +6,25 @@ Created on Apr 2, 2017
 
 c_ Solution(o..
     ___ lastRemaining  n
-        left = T..
-        remaining = n
-        head = 1
-        step = 1
+        left T..
+        remaining n
+        head 1
+        step 1
         w.... remaining > 1:
             __ left o. remaining%2__1:
                 head += step
             remaining //= 2
             step *= 2
-            left = n.. left
+            left n.. left
         r.. head
     
     ___ test
-        testCases = [
+        testCases [
             9
         ]
         ___ num __ testCases:
             print('num: %s' % num)
-            result = lastRemaining(num)
+            result lastRemaining(num)
             print('result1: %s' % result)
             print('-='*20+'-')
 

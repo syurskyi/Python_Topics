@@ -8,15 +8,15 @@ c_ Solution:
         __ n.. A:
             r.. -1
 
-        left, right = 0, l..(A) - 1
+        left, right 0, l..(A) - 1
         w.... left + 1 < right:
-            mid = (left + right) // 2
+            mid (left + right) // 2
             __ A[mid] __ target:
                 r.. mid
             __ A[mid] < target:
-                left = mid
+                left mid
             ____
-                right = mid
+                right mid
 
         __ A[left] __ target:
             r.. left

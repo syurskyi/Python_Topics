@@ -10,9 +10,9 @@ c_ Solution(o..
         :type N: int
         :rtype: int
         """
-        dp = [[0]*(K+1) ___ _ __ r..(N+1)]
+        dp [[0]*(K+1) ___ _ __ r..(N+1)]
         ___ i __ r..(1, N+1
             ___ j __ r..(1, K+1
-                dp[i][j] = dp[i-1][j-1] + dp[i-1][j] + 1
+                dp[i][j] dp[i-1][j-1] + dp[i-1][j] + 1
             __ dp[i][j] >_ N:
                 r.. i

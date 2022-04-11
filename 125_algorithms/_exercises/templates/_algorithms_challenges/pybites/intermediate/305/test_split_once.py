@@ -40,7 +40,7 @@ ___ test_split_once(test_input, e..
     ('MDJTS', ['', 'armok and ', 'alad… at ', 'anagra.\n', 'haka, when the walls fell.\nTemba, his arms wide!\nDarmok and Jalad… they left together.\n', 'irab, with sails unfurled.\n' )
 ])
 ___ test_split_once_variable_separators(separators, e..
-    constant_text = dedent("""\
+    constant_text dedent("""\
                            Darmok and Jalad… at Tanagra.
                            Shaka, when the walls fell.
                            Temba, his arms wide!

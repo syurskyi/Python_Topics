@@ -17,7 +17,7 @@ ___ timings
     (250, ('60', '87',
 ])
 ___ test_get_bite_with_fastest_avg_test(rows, expected_bites, timings
-    a.. = s..(get_bite_with_fastest_avg_test(timings[:rows]
+    a.. s..(get_bite_with_fastest_avg_test(timings[:rows]
     __ t..(expected_bites) __ t..:
         ... a.. __ expected_bites
     ____

@@ -5,10 +5,10 @@ c_ Solution(o..
     :type x: int
     :rtype: bool
     """
-    z = x
-    y = 0
+    z x
+    y 0
     w.... x > 0:
-      y = y * 10 + x % 10
+      y y * 10 + x % 10
       x /= 10
     r.. z __ y
 
@@ -20,8 +20,8 @@ c_ Solution(o..
     """
     __ x < 0 o. (x != 0 a.. x % 10 __ 0
       r.. F..
-    half = 0
+    half 0
     w.... x > half:
-      half = half * 10 + x % 10
+      half half * 10 + x % 10
       x /= 10
     r.. x __ half o. half / 10 __ x

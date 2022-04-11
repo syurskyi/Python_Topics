@@ -6,26 +6,26 @@ get(key) - Get the value (will always be positive) of the key if the key exists 
 set(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it
 should invalidate the least recently used item before inserting a new item.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 
 
 c_ Node(o..
     ___ - , key, val
-        key = key
-        val = val
-        pre, next = N.., N..
+        key key
+        val val
+        pre, next N.., N..
 
 
 c_ LRUCache(o..
     ___ - , capacity
-        cap = capacity
+        cap capacity
         map    # dict  # key to node
-        head = N..
-        tail = N..
+        head N..
+        tail N..
 
     ___ get  key
         __ key __ map:
-            cur = map[key]
+            cur map[key]
             _elevate(cur)
             r.. cur.val
 
@@ -33,59 +33,59 @@ c_ LRUCache(o..
 
     ___ s..  key, value
         __ key __ map:
-            cur = map[key]
-            cur.val = value
+            cur map[key]
+            cur.val value
             _elevate(cur)
         ____
-            cur = Node(key, value)
-            map[key] = cur
+            cur Node(key, value)
+            map[key] cur
             _appendleft(cur)
 
             __ l.. m..) > cap:
-                last = _pop()
+                last _pop()
                 del map[last.key]
 
     # doubly linked-list operations only
     ___ _appendleft  cur
         """Normal or initially empty"""
         __ n.. head a.. n.. tail:
-            head = cur
-            tail = cur
+            head cur
+            tail cur
             r..
 
-        head = head
-        cur.next, cur.pre, head.pre = head, N.., cur
-        head = cur
+        head head
+        cur.next, cur.pre, head.pre head, N.., cur
+        head cur
 
     ___ _pop
         """Normal or resulting empty"""
-        last = tail
+        last tail
         __ head __ tail:
-            head, tail = N.., N..
+            head, tail N.., N..
             r.. last
 
-        pre = last.pre
-        pre.next = N..
-        tail = pre
+        pre last.pre
+        pre.next N..
+        tail pre
         r.. last
 
     ___ _elevate  cur
         """Head, Tail, Middle"""
-        pre, nxt = cur.pre, cur.next
+        pre, nxt cur.pre, cur.next
         __ n.. pre:
             r..
         ____ n.. nxt:
             ... tail __ cur
             _pop()
         ____
-            pre.next, nxt.pre = nxt, pre
+            pre.next, nxt.pre nxt, pre
 
         _appendleft(cur)
 
 
 c_ LRUCache_TLE(o..
     ___ - , capacity
-        capacity = capacity
+        capacity capacity
         q    # list  # order by key
         dic    # dict
 
@@ -116,4 +116,4 @@ c_ LRUCache_TLE(o..
                 dic.p.. q.pop
                 q.insert(0, key)
 
-        dic[key] = value
+        dic[key] value

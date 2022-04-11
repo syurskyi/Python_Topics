@@ -6,7 +6,7 @@ ____ c.. _______ d..
 
 # import the countries xml file
 tmp  P..(__.g..("TMP", "/tmp"
-countries = tmp / 'countries.xml'
+countries tmp / 'countries.xml'
 
 __ n.. countries.exists
     u..(
@@ -23,19 +23,19 @@ ___ get_income_distribution(___=countries
       - keys = incomes (wb:incomeLevel)
       - values = list of country names (wb:name)
     """
-    country_incomes = d..(l..)
-    tree = ET.p..(___)
-    root = tree.getroot()
+    country_incomes d..(l..)
+    tree ET.p..(___)
+    root tree.getroot()
     ___ child __ root:
-        level = ""
-        country = ""
+        level ""
+        country ""
         ___ ele __ child:
-            element = ele.tag[ele.tag.rfind("}") +1:].l..
+            element ele.tag[ele.tag.rfind("}") +1:].l..
 
             __ element __ "incomelevel":
-                level = ele.text
+                level ele.text
             __ element __ "name":
-                country = ele.text
+                country ele.text
 
         country_incomes[level].a..(country)
 

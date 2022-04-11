@@ -28,12 +28,12 @@ ____ c.. _______ C..
 
 _______ r__
 
-CAR_DATA = 'https://bit.ly/2Ov65SJ'
+CAR_DATA 'https://bit.ly/2Ov65SJ'
 
 # pre-work: load JSON data into program
 
 w__ r__.S.. __ s:
-    data = s.g.. ? .j..
+    data s.g.. ? .j..
 
 
 # your turn:
@@ -46,20 +46,20 @@ ___ most_prolific_automaker(year
             ___
                 result[d 'automaker']] += 1
             ______:
-                result[d 'automaker']] = 0
-    t = ""
-    cur = 0
+                result[d 'automaker']] 0
+    t ""
+    cur 0
     ___ k,v __ result.i..:
         __ v > cur:
-            t = k
-            cur = v
+            t k
+            cur v
     r.. t
 
 
 ___ get_models(automaker, year
     """Filter cars 'data' by 'automaker' and 'year',
        return a set of models (a 'set' to avoid duplicate models)"""
-    s = s..()
+    s s..()
     ___ d __ data:
         __ d 'automaker'  __ automaker a.. d 'year'  __ year:
             s.add(d 'model' )

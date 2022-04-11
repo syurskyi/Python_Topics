@@ -14,8 +14,8 @@ Recursive solution is trivial, could you do it iteratively?
 # Definition for a Node.
 c_ Node:
     ___ - , val, children
-        val = val
-        children = children
+        val val
+        children children
 
 
 ____ t___ _______ L..
@@ -30,9 +30,9 @@ c_ Solution:
         __ n.. root:
             r.. ret
 
-        stk = [root]
+        stk [root]
         w.... stk:
-            cur = stk.p.. )
+            cur stk.p.. )
             ret.a..(cur.val)
             ___ c __ r..(cur.children
                 stk.a..(c)

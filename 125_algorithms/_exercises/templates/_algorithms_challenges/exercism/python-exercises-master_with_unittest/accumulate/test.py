@@ -17,7 +17,7 @@ c_ AccumulateTest(unittest.TestCase
             [(1, 3), (2, 3), (3, 2)])
 
     ___ test_composition
-        inp = [10, 17, 23]
+        inp [10, 17, 23]
         assertEqual(
             accumulate(
                 accumulate(inp, l.... x: divmod(x, 7,
@@ -29,7 +29,7 @@ c_ AccumulateTest(unittest.TestCase
 
     ___ test_recursive
         inp =  'a', 'b', 'c'
-        out = [['a1', 'a2', 'a3' ,  'b1', 'b2', 'b3' ,  'c1', 'c2', 'c3']]
+        out [['a1', 'a2', 'a3' ,  'b1', 'b2', 'b3' ,  'c1', 'c2', 'c3']]
         assertEqual(
             accumulate(
                 inp, l.... x: accumulate(l..('123'), l.... y: x + y, out)

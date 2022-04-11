@@ -4,20 +4,20 @@ ____ p.. _______ P..
 ____ t___ _______ Dict, L..
 ____ u__.r.. _______ u..
 
-URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
-TMP = P..(__.g..("TMP", "/tmp"
-RATES_FILE = TMP / "exchangerates.json"
+URL "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
+TMP P..(__.g..("TMP", "/tmp"
+RATES_FILE TMP / "exchangerates.json"
 
 __ n.. RATES_FILE.exists
     u..(URL, RATES_FILE)
 
 
 ___ get_all_days(start_date: date, end_date: date) __ L..[date]:
-    delta = end_date - start_date
+    delta end_date - start_date
     r.. [start_date+t..(d.._x) ___ x __ r..(delta.days+1)]
 
 ___ _parse_date(date_string: s..) __ date:
-    y,m,d = date_string.s.. 
+    y,m,d date_string.s..
     r.. date(d.._d,  m.._m, year=y)
 
 """{
@@ -39,8 +39,8 @@ ___ _parse_date(date_string: s..) __ date:
 
 ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, date]:
     
-    r_start = _parse_date(daily_rates 'start_at' )
-    r_end = _parse_date(daily_rates 'end_at' )
+    r_start _parse_date(daily_rates 'start_at' )
+    r_end _parse_date(daily_rates 'end_at' )
     
     __ start < r_start o. end < r_end:
         r.. V...('Date out of range')
@@ -49,6 +49,6 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, da
 
 
 ___ exchange_rates(
-    start_date: s.. = "2020-01-01", end_date: s.. = "2020-09-01"
+    start_date: s.. "2020-01-01", end_date: s.. "2020-09-01"
 ) __ Dict[date, d..]:
     p..

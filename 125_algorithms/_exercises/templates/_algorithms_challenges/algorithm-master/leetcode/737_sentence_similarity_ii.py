@@ -111,7 +111,7 @@ c_ Solution2:
             __ nxt __ p..:
                 _____
 
-            res = dfs(nxt, end, simils, p..)
+            res dfs(nxt, end, simils, p..)
             __ res:
                 r.. T..
 

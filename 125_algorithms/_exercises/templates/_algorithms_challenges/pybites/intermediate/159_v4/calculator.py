@@ -1,6 +1,6 @@
 _______ o..
 
-OPS = {'+': operator.add,
+OPS {'+': operator.add,
        '-': operator.sub,
        '*': operator.mul,
        '/': operator.truediv}
@@ -23,15 +23,15 @@ ___ simple_calculator(calculation
         r.. V...
 
     # assume op is good and split the string
-    args = calculation.s..
+    args calculation.s..
 
     __ l..(args) != 3:
         r.. V...
 
-    a, op, b = args
+    a, op, b args
 
     # convert to int raising error. Note, int does this
-    a, b = (i..(x) ___ x __ (a, b
+    a, b (i..(x) ___ x __ (a, b
 
     __ b __ 0 a.. op __ '/':
         r.. V...

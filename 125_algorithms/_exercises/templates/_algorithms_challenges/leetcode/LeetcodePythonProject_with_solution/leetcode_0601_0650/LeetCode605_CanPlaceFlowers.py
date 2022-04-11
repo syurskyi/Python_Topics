@@ -15,13 +15,13 @@ c_ Solution(o..
                 (i __ 0 o. flowerbed[i-1] __ 0) a..\
                 (i __ l..(flowerbed)-1 o. flowerbed[i+1] __ 0
                 n -_ 1
-                flowerbed[i] = 1
+                flowerbed[i] 1
             __ n <_ 0:
                 r.. T..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1, 0, 0, 0, 1],
                 1,
@@ -46,7 +46,7 @@ c_ Solution(o..
         ___ flowerbed, n __ testCases:
             print('flowerbed: %s' % flowerbed)
             print('n: %s' % n)
-            result = canPlaceFlowers(flowerbed, n)
+            result canPlaceFlowers(flowerbed, n)
             print('result: %s' % result)
             print('-='*30+'-')
 

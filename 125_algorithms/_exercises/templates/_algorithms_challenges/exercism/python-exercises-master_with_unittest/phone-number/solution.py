@@ -3,7 +3,7 @@ _______ __
 
 c_ Phone(o..
     ___ - , number
-        number = _clean(number)
+        number _clean(number)
 
     ___ area_code
         r.. number |3
@@ -27,7 +27,7 @@ c_ Phone(o..
         )
 
     ___ _normalize  number
-        valid = l..(number) __ 10 o. \
+        valid l..(number) __ 10 o. \
             l..(number) __ 11 a.. number.s.. '1')
 
         __ valid:

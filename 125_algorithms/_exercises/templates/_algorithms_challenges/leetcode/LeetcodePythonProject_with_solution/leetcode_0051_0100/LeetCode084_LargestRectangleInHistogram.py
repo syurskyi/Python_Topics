@@ -13,30 +13,30 @@ c_ Solution(o..
         stack    # list
         __ n.. heights:
             r.. 0
-        area = heights[0]
-        i = 0
+        area heights[0]
+        i 0
         w.... i < l..(heights
             __ n.. stack o. heights[i] >_ heights[stack[-1]]:
                 stack.a..(i)
                 i+=1
             ____
-                h = heights[stack.p.. )]
-                w = i __ n.. stack ____ (i-stack[-1]-1)
-                area = m..(w*h, area)
+                h heights[stack.p.. )]
+                w i __ n.. stack ____ (i-stack[-1]-1)
+                area m..(w*h, area)
         w.... stack:
-            h = heights[stack.p.. )]
-            w = i __ n.. stack ____ (i-stack[-1]-1)
-            area = m..(area, w*h)
+            h heights[stack.p.. )]
+            w i __ n.. stack ____ (i-stack[-1]-1)
+            area m..(area, w*h)
         r.. area
     
     ___ test
-        testCases = [
+        testCases [
 #             [2,1,5,6,2,3],
             [10, 11, 12, 15],
         ]
         ___ heights __ testCases:
             print('heights: %s' % (heights
-            result = largestRectangleArea(heights)
+            result largestRectangleArea(heights)
             print('result: %s' % (result
             print('-='*15+'-')
 

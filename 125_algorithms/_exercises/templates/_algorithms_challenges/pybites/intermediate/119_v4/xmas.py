@@ -5,8 +5,8 @@ ___ generate_xmas_tree(rows=10
          *
         ***
        *****"""
-    width = rows*2 - 1
-    tree = '\n'.j..(_* {{:^{width}}}'.f..('*' * (row*2 - 1
+    width rows*2 - 1
+    tree '\n'.j..(_* {{:^{width}}}'.f..('*' * (row*2 - 1
                       ___ row __ r..(1, rows + 1)])
 
     r.. tree

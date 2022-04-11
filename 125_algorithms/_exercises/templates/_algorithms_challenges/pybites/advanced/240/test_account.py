@@ -23,7 +23,7 @@ ___ test_account_create(einstein
     ... einstein.balance __ 100
     ... s..(einstein) __ 'Account of Einstein with starting amount: 100'
     ... r.. (einstein) __ "Account('Einstein', 100)"
-    hector = Account('Hector')
+    hector Account('Hector')
     ... r.. (hector) __ "Account('Hector', 0)"
 
 
@@ -59,7 +59,7 @@ ___ test_account_merge_accounts(einstein, socrates
     add_transactions(einstein, [50, -75])
     add_transactions(socrates, [10, 20, 30])
     ... einstein.balance __ 75 a.. socrates.balance __ 60
-    pythagoras = einstein + socrates
+    pythagoras einstein + socrates
     ... pythagoras.balance __ 135
     ... s..(pythagoras) __ 'Account of Einstein&Socrates with starting amount: 100'
     ... l..(pythagoras) __ 5
@@ -69,8 +69,8 @@ ___ test_account_merge_accounts(einstein, socrates
 ___ test_account_bad_merge_accounts(einstein, socrates
     add_transactions(einstein, [50, -75])
     add_transactions(socrates, [10, 20, 30])
-    kelvin = Account('Kelvin', 20)
+    kelvin Account('Kelvin', 20)
     ... kelvin.balance __ 20
-    armstrong = kelvin + einstein + socrates
+    armstrong kelvin + einstein + socrates
     ... armstrong.balance __ 155
     ... s..(armstrong) __ 'Account of Kelvin&Einstein&Socrates with starting amount: 120'

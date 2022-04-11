@@ -7,14 +7,14 @@ c_ Solution:
         __ n.. array:
             r.. 0
 
-        n = l..(array)
+        n l..(array)
 
         ___ size __ r..(1, n + 1
-            gotcha = T..
+            gotcha T..
 
             ___ i __ r..(size
                 __ any(array[i] != array[j] ___ j __ r..(i + size, n, size:
-                    gotcha = F..
+                    gotcha F..
 
             __ gotcha:
                 r.. size

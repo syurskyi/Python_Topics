@@ -2,7 +2,7 @@ _______ p__
 
 ____ screenfetch _______ output, sysinfo_scrape
 
-debian = """
+debian """
          _,met$$$$$gg.           mohh@SERENiTY
       ,g$$$$$$$$$$$$$$$P.        OS: Mint 19 tara
     ,g$$P""       ""'Y$$.".      Kernel: x86_64 Linux 4.15.0-34-generic
@@ -21,7 +21,7 @@ debian = """
             '"Y$b._              RAM: 2429MiB / 6915MiB
                 '"'""           
 """
-mac = """
+mac """
                 -/+:.          ejo@BlackOil
                :++++.          OS: 64bit Mac OS X 10.13.6 17G65
               /+++/.           Kernel: x86_64 Darwin 17.7.0
@@ -64,7 +64,7 @@ ___ test_sysinfo_scrape_length(sysinfo
 
 ___ test_sysinfo_scrape_keys(sysinfo
     """Test for the proper keys"""
-    e.. = [
+    e.. [
         'Name', 'OS', 'Kernel', 'Uptime', 'Packages', 'Shell', 
         'Resolution', 'DE', 'WM', 'WM Theme', 'GTK Theme', 'Icon Theme', 
         'Font', 'CPU', 'GPU', 'RAM'
@@ -74,7 +74,7 @@ ___ test_sysinfo_scrape_keys(sysinfo
 
 ___ test_sysinfo_scrape_values(sysinfo
     """Test for the proper values"""
-    e.. = [
+    e.. [
         'mohh@SERENiTY', 'Mint 19 tara', 'x86_64 Linux 4.15.0-34-generic', 
         '1d 4m', '2351', 'zsh 5.4.2', '1366x768', 'Cinnamon 3.8.9', 'Muffin', 
         'Linux Mint (Mint-Y)', 'Mint-Y [GTK2/3]', 'Mint-Y', 'Noto Sans 9', 
@@ -87,11 +87,11 @@ ___ test_sysinfo_scrape_values(sysinfo
 
 ___ test_sysinfo_scrape_debian
     """Test to see if it works with different distro logos"""
-    sysinfo = sysinfo_scrape(debian)
+    sysinfo sysinfo_scrape(debian)
     ... sysinfo["Resolution"] __ "1366x768"
 
 
 ___ test_sysinfo_scrape_mac
     """Test to see if it works with different distro logos"""
-    sysinfo = sysinfo_scrape(mac)
+    sysinfo sysinfo_scrape(mac)
     ... sysinfo["Name"] __ "ejo@BlackOil"

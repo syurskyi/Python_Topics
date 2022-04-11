@@ -5,7 +5,7 @@ c_ Solution(o..
     :type magazine: str
     :rtype: bool
     """
-    letters = [0] * 26
+    letters [0] * 26
     ___ c __ magazine:
       letters[o..(c) - o..('a')] += 1
 

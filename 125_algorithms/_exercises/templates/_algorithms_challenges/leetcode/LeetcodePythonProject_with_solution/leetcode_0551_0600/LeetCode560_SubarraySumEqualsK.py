@@ -11,18 +11,18 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        hashmap = {0:1}
-        sumVal = 0
-        res = 0
+        hashmap {0:1}
+        sumVal 0
+        res 0
         ___ num __ nums:
             sumVal += num
             __ sumVal-k __ hashmap:
                 res += hashmap[sumVal-k]
-            hashmap[sumVal] = hashmap.g.. sumVal, 0)+1
+            hashmap[sumVal] hashmap.g.. sumVal, 0)+1
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1, 1, 1],
                 2,
@@ -47,7 +47,7 @@ c_ Solution(o..
         ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
-            res = subarraySum(nums, k)
+            res subarraySum(nums, k)
             print('result: %s' % res)
             print('-='*30+'-')
 

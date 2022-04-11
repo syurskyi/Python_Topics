@@ -7,34 +7,34 @@ Created on Apr 20, 2017
 c_ Solution(o..
     ___ deleteNode  root, key
         __ n.. root: r.. N..
-        parent, node = findNode(key, root, N..)
+        parent, node findNode(key, root, N..)
         __ n.. node: r.. root
         __ n.. parent:
             r.. removeNode(node)
         ____
-            newNode = removeNode(node)
+            newNode removeNode(node)
             __ node __ parent.left:
-                parent.left = newNode
+                parent.left newNode
             ____
-                parent.right = newNode
+                parent.right newNode
             r.. root
     
     ___ removeNode  node
         __ node.right:
-            newRoot = node.right
-            left = node.left
-            node = newRoot
+            newRoot node.right
+            left node.left
+            node newRoot
             w.... node.left:
-                node = node.left
-            node.left = left
+                node node.left
+            node.left left
             r.. newRoot
         ____ node.left:
-            newRoot = node.left
-            right = node.right
-            node = newRoot
+            newRoot node.left
+            right node.right
+            node newRoot
             w.... node.right:
-                node = node.right
-            node.right = right
+                node node.right
+            node.right right
             r.. newRoot
         ____
             r.. N..

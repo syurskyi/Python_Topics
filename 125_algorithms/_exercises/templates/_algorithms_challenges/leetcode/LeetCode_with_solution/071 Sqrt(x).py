@@ -3,7 +3,7 @@ Implement int sqrt(int x).
 
 Compute and return the square root of x.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ sqrt  x
         """
@@ -15,10 +15,10 @@ c_ Solution:
         :return: Integer
         """
         __ x__0: r.. 0  # avoid Division by zero
-        m = x
+        m x
         w... T...
-            m_before = m
-            m = m - f__(m*m-x)/(2*m)
+            m_before m
+            m m - f__(m*m-x)/(2*m)
             __ a..(m-m_before)<1e-7: _____
 
         r.. i..(m)

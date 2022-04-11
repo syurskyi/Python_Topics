@@ -5,5 +5,5 @@
 _______ n.... __ np
 
 
-array = np.array(l.. m..(i.., input().s..())))
+array np.array(l.. m..(i.., input().s..())))
 print(array.reshape(3, 3

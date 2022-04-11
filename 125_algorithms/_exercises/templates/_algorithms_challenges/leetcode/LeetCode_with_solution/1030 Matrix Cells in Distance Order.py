@@ -42,9 +42,9 @@ c_ Solution:
         """
         bucket sort
         """
-        r_max = m..(r0, R-1 - r0)
-        c_max = m..(c0, C-1 - c0)
-        lst = [[] ___ _ __ r..(r_max + c_max + 1)]
+        r_max m..(r0, R-1 - r0)
+        c_max m..(c0, C-1 - c0)
+        lst [[] ___ _ __ r..(r_max + c_max + 1)]
         ___ i __ r..(R
             ___ j __ r..(C
                 lst[a..(i - r0) + a..(j - c0)].a..([i, j])

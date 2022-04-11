@@ -10,7 +10,7 @@ c_ Solution:
         :type words: List[str]
         :rtype: str
         """
-        ans = ''
+        ans ''
 
         ___ w __ words:
             __ any((
@@ -20,7 +20,7 @@ c_ Solution:
             :
                 _____
 
-            ans = w
+            ans w
 
         r.. ans
 
@@ -28,8 +28,8 @@ c_ Solution:
         """
         return True if `t` is subsequence of `s`
         """
-        m, n = l..(s), l..(t)
-        i = j = 0
+        m, n l..(s), l..(t)
+        i j 0
 
         w.... i < m a.. j < n:
             __ s[i] __ t[j]:
@@ -52,8 +52,8 @@ c_ Solution:
         cands    # list
         find_cands(s, 0, cands, [])
 
-        ans = ''
-        target = s..(words)
+        ans ''
+        target s..(words)
 
         ___ w __ cands:
             __ any((
@@ -63,7 +63,7 @@ c_ Solution:
             :
                 _____
 
-            ans = w
+            ans w
 
         r.. ans
 

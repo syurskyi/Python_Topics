@@ -16,13 +16,13 @@ return its bottom-up level order traversal as:
   [3]
 ]
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution:
     ___ levelOrderBottom  root
@@ -34,9 +34,9 @@ c_ Solution:
         __ n.. root:
             r.. []
         result    # list
-        next_level = [root]
+        next_level [root]
         w.... next_level:
-            current_level = next_level
+            current_level next_level
             result.insert(0, map(l.... x: x.val, current_level  # current level, only difference with Binary Tree Level Order Traversal I
 
             next_level    # list

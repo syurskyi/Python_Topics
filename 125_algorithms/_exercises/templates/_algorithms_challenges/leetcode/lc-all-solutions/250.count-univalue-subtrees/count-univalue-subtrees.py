@@ -11,13 +11,13 @@ c_ Solution(o..
     :type root: TreeNode
     :rtype: int
     """
-    count = 0
+    count 0
 
     ___ dfs(root, pv
       __ n.. root:
         r.. T..
-      left = dfs(root.left, root.val)
-      right = dfs(root.right, root.val)
+      left dfs(root.left, root.val)
+      right dfs(root.right, root.val)
       __ left a.. right:
         count += 1
         __ root.val __ pv:

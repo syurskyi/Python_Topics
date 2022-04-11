@@ -1,4 +1,4 @@
-games_won = d..(sara=0, bob=1, tim=5, julian=3, jim=1)
+games_won d..(sara=0, bob=1, tim=5, julian=3, jim=1)
 
 
 ___ print_game_stats(games_won=games_won

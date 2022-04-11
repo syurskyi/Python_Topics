@@ -6,9 +6,9 @@ Created on Mar 15, 2017
 
 c_ Solution(o..
     ___ multiply  A, B
-        m, n = l..(A), l..(A[0])
-        nB = l..(B[0])
-        res = [[0]*nB ___ _ __ r..(m)]
+        m, n l..(A), l..(A[0])
+        nB l..(B[0])
+        res [[0]*nB ___ _ __ r..(m)]
         ___ i __ r..(m
             ___ k __ r..(n
                 __ A[i][k]:
@@ -20,15 +20,15 @@ c_ Solution(o..
     ___ multiply_own  A, B
         __ n.. A o. n.. B:
             r.. A __ n.. A ____ B
-        mA, nA = l..(A), l..(A[0])
-        mB, nB = l..(B), l..(B[0])
+        mA, nA l..(A), l..(A[0])
+        mB, nB l..(B), l..(B[0])
         colSumB    # list
         ___ j __ r..(nB
             tmp  0
             ___ i __ r..(mB
                 tmp+=B[i][j]
             colSumB.a..(tmp)
-        result = [[0]*nB ___ i __ r..(mA)]
+        result [[0]*nB ___ i __ r..(mA)]
         ___ i __ r..(mA
             ___ j __ r..(nB
                 __ colSumB[j]:

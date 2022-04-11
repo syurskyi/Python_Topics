@@ -13,49 +13,49 @@ c_ TreeBuildingTest(unittest.TestCase
 
     ___ test_empty_list_input
         records    # list
-        root = BuildTree(records)
+        root BuildTree(records)
         assertIsNone(root)
 
     ___ test_one_node
-        records = [
+        records [
             Record(0, 0)
         ]
-        root = BuildTree(records)
+        root BuildTree(records)
 
         assert_node_is_leaf(root, node_id=0)
 
     ___ test_three_nodes_in_order
-        records = [
+        records [
             Record(0, 0),
             Record(1, 0),
             Record(2, 0)
         ]
-        root = BuildTree(records)
+        root BuildTree(records)
 
         assert_node_is_branch(root, node_id=0, children_count=2)
         assert_node_is_leaf(root.children[0], node_id=1)
         assert_node_is_leaf(root.children[1], node_id=2)
 
     ___ test_three_nodes_in_reverse_order
-        records = [
+        records [
             Record(2, 0),
             Record(1, 0),
             Record(0, 0)
         ]
-        root = BuildTree(records)
+        root BuildTree(records)
 
         assert_node_is_branch(root, node_id=0, children_count=2)
         assert_node_is_leaf(root.children[0], node_id=1)
         assert_node_is_leaf(root.children[1], node_id=2)
 
     ___ test_more_than_two_children
-        records = [
+        records [
             Record(0, 0),
             Record(1, 0),
             Record(2, 0),
             Record(3, 0)
         ]
-        root = BuildTree(records)
+        root BuildTree(records)
 
         assert_node_is_branch(root, node_id=0, children_count=3)
         assert_node_is_leaf(root.children[0], node_id=1)
@@ -63,7 +63,7 @@ c_ TreeBuildingTest(unittest.TestCase
         assert_node_is_leaf(root.children[2], node_id=3)
 
     ___ test_binary_tree
-        records = [
+        records [
             Record(6, 2),
             Record(0, 0),
             Record(3, 1),
@@ -72,7 +72,7 @@ c_ TreeBuildingTest(unittest.TestCase
             Record(5, 2),
             Record(1, 0)
         ]
-        root = BuildTree(records)
+        root BuildTree(records)
 
         assert_node_is_branch(root, 0, 2)
         assert_node_is_branch(root.children[0], 1, 2)
@@ -83,7 +83,7 @@ c_ TreeBuildingTest(unittest.TestCase
         assert_node_is_leaf(root.children[1].children[1], 6)
 
     ___ test_unbalanced_tree
-        records = [
+        records [
             Record(0, 0),
             Record(1, 0),
             Record(2, 0),
@@ -92,7 +92,7 @@ c_ TreeBuildingTest(unittest.TestCase
             Record(5, 1),
             Record(6, 2),
         ]
-        root = BuildTree(records)
+        root BuildTree(records)
 
         assert_node_is_branch(root, 0, 2)
         assert_node_is_branch(root.children[0], 1, 3)
@@ -103,7 +103,7 @@ c_ TreeBuildingTest(unittest.TestCase
         assert_node_is_leaf(root.children[1].children[0], 6)
 
     ___ test_root_node_has_parent
-        records = [
+        records [
             Record(0, 1),
             Record(1, 0)
         ]
@@ -112,7 +112,7 @@ c_ TreeBuildingTest(unittest.TestCase
             BuildTree(records)
 
     ___ test_no_root_node
-        records = [
+        records [
             Record(1, 0),
             Record(2, 0)
         ]
@@ -121,7 +121,7 @@ c_ TreeBuildingTest(unittest.TestCase
             BuildTree(records)
 
     ___ test_non_continuous
-        records = [
+        records [
             Record(2, 0),
             Record(4, 2),
             Record(1, 0),
@@ -132,7 +132,7 @@ c_ TreeBuildingTest(unittest.TestCase
             BuildTree(records)
 
     ___ test_cycle_directly
-        records = [
+        records [
             Record(5, 2),
             Record(3, 2),
             Record(2, 2),
@@ -146,7 +146,7 @@ c_ TreeBuildingTest(unittest.TestCase
             BuildTree(records)
 
     ___ test_cycle_indirectly
-        records = [
+        records [
             Record(5, 2),
             Record(3, 2),
             Record(2, 6),
@@ -160,7 +160,7 @@ c_ TreeBuildingTest(unittest.TestCase
             BuildTree(records)
 
     ___ test_higher_id_parent_of_lower_id
-        records = [
+        records [
             Record(0, 0),
             Record(2, 0),
             Record(1, 2)
@@ -183,7 +183,7 @@ c_ TreeBuildingTest(unittest.TestCase
         ___
             assertRaisesRegex
         ______ AttributeError:
-            assertRaisesRegex = assertRaisesRegexp
+            assertRaisesRegex assertRaisesRegexp
 
     ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")

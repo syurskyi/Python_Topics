@@ -23,7 +23,7 @@ def test_filter_bites():
 '''
 
 
-bites = {6: 'PyBites Die Hard',
+bites {6: 'PyBites Die Hard',
          7: 'Parsing dates from logs',
          9: 'Palindromes',
          10: 'Practice exceptions',
@@ -38,12 +38,12 @@ bites = {6: 'PyBites Die Hard',
          19: 'Write a simple property',
          20: 'Write a context manager',
          21: 'Query a nested data structure'}
-exclude_bites = {6, 10, 16, 18, 21}
+exclude_bites {6, 10, 16, 18, 21}
 
 
 ___ filter_bites(bites=bites, bites_done=exclude_bites
     """return the bites dict with the exclude_bites filtered out"""
-    d = {k:v ___ (k, v) __ bites.i.. __ k n.. __ bites_done}
+    d {k:v ___ (k, v) __ bites.i.. __ k n.. __ bites_done}
     print(d)
     r.. d
 

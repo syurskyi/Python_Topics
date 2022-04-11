@@ -6,15 +6,15 @@ Created on May 30, 2018
 # Definition for singly-linked list.
 c_ ListNode(o..
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution(o..
     ___ sortedListToBST  head
@@ -23,22 +23,22 @@ c_ Solution(o..
         :rtype: TreeNode
         """
         __ n.. head: r.. N..
-        node = head
-        length = 0
-        h = head
+        node head
+        length 0
+        h head
         w.... node:
-            node = node.next
+            node node.next
             length += 1
         r.. helper(0, length-1)
     
     ___ helper  l, r
         __ l > r:
             r.. N..
-        mid = (l+r)//2
-        left = helper(l, mid-1)
-        root = TreeNode(h.val)
-        h = h.next
-        right = helper(mid+1, r)
-        root.left = left
-        root.right = right
+        mid (l+r)//2
+        left helper(l, mid-1)
+        root TreeNode(h.val)
+        h h.next
+        right helper(mid+1, r)
+        root.left left
+        root.right right
         r.. root

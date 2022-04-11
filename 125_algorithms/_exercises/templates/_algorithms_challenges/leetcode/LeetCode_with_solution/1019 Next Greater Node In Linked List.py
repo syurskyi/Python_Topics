@@ -33,8 +33,8 @@ The given list has length in the range [0, 10000].
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 ____ t___ _______ L..
@@ -50,16 +50,16 @@ c_ Solution:
         """
         ret    # list
         stk    # list  # [[index, value]]
-        i = 0
-        cur = head
+        i 0
+        cur head
         w.... cur:
             w.... stk a.. stk[-1][1] < cur.val:
-                idx, _ = stk.p.. )
-                ret[idx] = cur.val
+                idx, _ stk.p.. )
+                ret[idx] cur.val
 
             stk.a..([i, cur.val])
             ret.a..(0)
-            cur = cur.next
+            cur cur.next
             i += 1
 
         r.. ret

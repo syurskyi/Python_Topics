@@ -10,9 +10,9 @@ c_ Solution(o..
         :type B: str
         :rtype: int
         """
-        s1, s2 = A, B
-        n1, n2 = l..(s1), l..(s2)
-        k = n2//n1+2
+        s1, s2 A, B
+        n1, n2 l..(s1), l..(s2)
+        k n2//n1+2
         __ s..(s1*k).c.. s2)__0:
             r.. -1
         w.... k >_ 1 a.. s..(s1*k).c.. s2)!=0:
@@ -20,7 +20,7 @@ c_ Solution(o..
         r.. k+1
     
     ___ test
-        testCases = [
+        testCases [
             [
                 'abcd',
                 'cdabcdab',
@@ -29,7 +29,7 @@ c_ Solution(o..
         ___ A, B __ testCases:
             print('A: %s' % A)
             print('B: %s' % B)
-            result = repeatedStringMatch(A, B)
+            result repeatedStringMatch(A, B)
             print('result: %s' % result)
             print('-='*30+'-')
 

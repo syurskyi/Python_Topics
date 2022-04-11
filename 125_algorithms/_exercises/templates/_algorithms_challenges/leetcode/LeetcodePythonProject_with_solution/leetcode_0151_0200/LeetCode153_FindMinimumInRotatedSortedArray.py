@@ -10,26 +10,26 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        l, r = 0, l..(nums)-1
+        l, r 0, l..(nums)-1
         w.... l < r:
             __ nums[l] < nums[r]:
                 r.. nums[l]
-            mid = (l+r)//2
+            mid (l+r)//2
             __ nums[mid] > nums[r]:
-                l = mid+1
+                l mid+1
             ____
-                r = mid
+                r mid
         r.. nums[l]
     
     ___ test
-        testCases = [
+        testCases [
             [0, 1, 2, 4, 5, 6, 7],
             [4, 5, 6, 7, 0, 1, 2],
             [2, 1],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums
-            result = findMin(nums)
+            result findMin(nums)
             print('result: %s' % (result
             print('-='*20+'-')
 

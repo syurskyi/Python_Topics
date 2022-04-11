@@ -13,10 +13,10 @@ c_ Solution(o..
         :type val: int
         :rtype: int
         """
-        n = l..(nums)
-        j = 0
+        n l..(nums)
+        j 0
         ___ i __ r..(n
             __ nums[i] != val:
-                nums[j] = nums[i]
+                nums[j] nums[i]
                 j += 1
         r.. j

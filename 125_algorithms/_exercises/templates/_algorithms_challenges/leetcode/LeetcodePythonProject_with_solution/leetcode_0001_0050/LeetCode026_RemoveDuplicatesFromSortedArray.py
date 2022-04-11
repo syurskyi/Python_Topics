@@ -9,9 +9,9 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        j = 0
+        j 0
         ___ i, num __ e..(nums
             __ i __ 0 o. nums[i-1] != num:
-                nums[j] = num
+                nums[j] num
                 j += 1
         r.. j

@@ -9,12 +9,12 @@ c_ Solution(o..
         __ n.. expression: r.. ''
         stack    # list
         ___ i __ r..(l..(expression)-1, -1, -1
-            c = expression[i]
+            c expression[i]
             __ stack a.. stack[-1] __ '?':
                 stack.p.. )
-                first = stack.p.. )
+                first stack.p.. )
                 stack.p.. )
-                second = stack.p.. )
+                second stack.p.. )
                 __ c __ 'T':
                     stack.a..(first)
                 ____
@@ -27,29 +27,29 @@ c_ Solution(o..
         __ l..(expression) __ 1:
             r.. expression
         __ expression[0] __ 'T':
-            subExp = ''
-            i = 2
-            count = 0
+            subExp ''
+            i 2
+            count 0
             w.... i < l..(expression
                 __ expression[i] __ '?':
                     count += 1
                 ____ expression[i] __ ':':
                     count -_ 1
                     __ count __ -1:
-                        subExp = expression[2:i]
+                        subExp expression[2:i]
                         _____
                 i+=1
         ____
-            subExp = ''
-            i = 2
-            count = 0
+            subExp ''
+            i 2
+            count 0
             w.... i < l..(expression
                 __ expression[i] __ '?':
                     count += 1
                 ____ expression[i] __ ':':
                     count -_ 1
                     __ count __ -1:
-                        subExp = expression[i+1:]
+                        subExp expression[i+1:]
                         _____
                 i+=1
         __ l..(subExp) __ 1:

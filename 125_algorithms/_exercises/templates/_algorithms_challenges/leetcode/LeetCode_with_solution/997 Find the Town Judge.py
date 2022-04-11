@@ -53,7 +53,7 @@ c_ Solution:
         """
         like the find the celebrity
         """
-        ingress = d..(s..)
+        ingress d..(s..)
         egress =d..(s..)
         ___ p, q __ trust:
             egress[p].add(q)

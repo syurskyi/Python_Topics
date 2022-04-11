@@ -30,7 +30,7 @@ ___ test_assert_js_behavior(D
     ... D.a __ 1
     ... D.b __ 2
     ... D.c __ 3
-    D.d = 4
+    D.d 4
     ... l..(D) __ 4
     del D.b
     D.update(d..(e=5
@@ -38,7 +38,7 @@ ___ test_assert_js_behavior(D
 
 
 ___ test_supports_nesting(D
-    D.d = JS(e=5)
+    D.d JS(e=5)
     ... D.d.e __ 5
-    D.d.e = JS(f=6)
+    D.d.e JS(f=6)
     ... D.d.e.f __ 6

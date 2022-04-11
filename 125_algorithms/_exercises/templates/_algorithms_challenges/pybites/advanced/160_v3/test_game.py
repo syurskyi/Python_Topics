@@ -2,7 +2,7 @@ _______ p__
 
 ____ game _______ get_winner
 
-PLAYERS = ("Rock Gun Lightning Devil Dragon Water Air Paper Sponge "
+PLAYERS ("Rock Gun Lightning Devil Dragon Water Air Paper Sponge "
            "Wolf Tree Human Snake Scissors Fire").s.. 
 
 

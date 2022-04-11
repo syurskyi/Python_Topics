@@ -25,8 +25,8 @@ c_ ValidWordAbbr:
         abbrs    # dict
 
         ___ word __ dictionary:
-            abbr = abbreviation(word)
-            abbrs[abbr] = word
+            abbr abbreviation(word)
+            abbrs[abbr] word
 
     ___ isUnique  word
         """
@@ -34,14 +34,14 @@ c_ ValidWordAbbr:
         :type word: str
         :rtype: bool
         """
-        abbr = abbreviation(word)
+        abbr abbreviation(word)
         r.. abbr n.. __ abbrs
 
     ___ abbreviation  word
         __ l..(word) < 3:
             r.. word
 
-        cnt = l..(word) - 2
+        cnt l..(word) - 2
         r.. '{}{}{}'.f..(
             word[0],
             s..(cnt),

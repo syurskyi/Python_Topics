@@ -17,7 +17,7 @@ c_ Solution:
         __ n.. root:
             r.. ans
 
-        queue = [root]
+        queue [root]
         w.... queue:
             _queue    # list
             ans.a..([])
@@ -33,6 +33,6 @@ c_ Solution:
             __ l..(ans) % 2 __ 0:
                 ans[-1].r..
 
-            queue = _queue
+            queue _queue
 
         r.. ans

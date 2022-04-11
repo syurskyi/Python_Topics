@@ -7,10 +7,10 @@ c_ Solution:
         d    # dict
         ___ e __ num:
             __ e n.. __ d:
-                d[e] = 1
-        res = 1
+                d[e] 1
+        res 1
         ___ c __ num:
-            current = 1
+            current 1
             __ c n.. __ d:
                 _____
             w.... c - 1 __ d:
@@ -20,5 +20,5 @@ c_ Solution:
                 c += 1
                 current += 1
                 del d[c]
-            res = m..(res, current)
+            res m..(res, current)
         r.. res

@@ -1,7 +1,7 @@
 _______ r__
 ____ bs4 _______ BeautifulSoup
 
-cached_so_url = 'https://bit.ly/2IMrXdp'
+cached_so_url 'https://bit.ly/2IMrXdp'
 
 
 ___ load_page(url
@@ -17,9 +17,9 @@ ___ top_python_questions(url=cached_so_url
        Return a list of (question, num_votes) tuples ordered
        by num_votes descending (see tests for expected output).
     """
-    content = load_page(url)
-    soup = BeautifulSoup(content)
-    questions = [(question.select_one('a.question-hyperlink').s__.s..,
+    content load_page(url)
+    soup BeautifulSoup(content)
+    questions [(question.select_one('a.question-hyperlink').s__.s..,
                   i..(question.select_one('span.vote-count-post').s__.s..()))
                  ___ question __ soup.find_all(class_='question-summary')
                  __ question.select_one('div.views').s__.s...e.. 'm views')]

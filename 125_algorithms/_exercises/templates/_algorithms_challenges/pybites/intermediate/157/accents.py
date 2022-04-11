@@ -6,7 +6,7 @@ ___ filter_accents(text
    """
    accent_chars    # list
    ___ i __ r..(l..(text:
-      char = unicodedata.normalize("NFD", text[i]).encode("ascii", "ignore").d.. "utf-8")
+      char unicodedata.normalize("NFD", text[i]).encode("ascii", "ignore").d.. "utf-8")
 
       __ char.l.. __ text[i].l..:
          _____

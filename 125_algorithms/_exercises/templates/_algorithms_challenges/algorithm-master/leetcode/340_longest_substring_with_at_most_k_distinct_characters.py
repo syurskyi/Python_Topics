@@ -14,13 +14,13 @@ c_ Solution:
         :type k: int
         :rtype: int
         """
-        ans = 0
+        ans 0
 
         __ n.. s o. n.. k o. k < 0:
             r.. ans
 
-        freqs = c...d..(i..)
-        i = cnt = 0
+        freqs c...d..(i..)
+        i cnt 0
 
         ___ j __ r..(l..(s:
             freqs[s[j]] += 1
@@ -34,6 +34,6 @@ c_ Solution:
 
                 i += 1
 
-            ans = m..(ans, j - i + 1)
+            ans m..(ans, j - i + 1)
 
         r.. ans

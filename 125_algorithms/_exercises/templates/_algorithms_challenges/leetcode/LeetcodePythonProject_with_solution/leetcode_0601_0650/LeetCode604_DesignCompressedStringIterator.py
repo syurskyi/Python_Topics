@@ -9,33 +9,33 @@ c_ StringIterator(o..
         """
         :type compressedString: str
         """
-        cmpStr = compressedString
-        count = 0
-        ind = 0
+        cmpStr compressedString
+        count 0
+        ind 0
         __ cmpStr:
-            c = cmpStr[ind]
+            c cmpStr[ind]
             ind += 1
             w.... ind < l..(cmpStr) a.. cmpStr[ind].i..
                 ind += 1
-            count = i..(cmpStr[1:ind])
+            count i..(cmpStr[1:ind])
 
     ___ next
         """
         :rtype: str
         """
-        res = c
+        res c
         count -_ 1
         __ count __ 0:
             __ ind __ l..(cmpStr
-                c = ' '
+                c ' '
                 r.. res
-            c = cmpStr[ind]
+            c cmpStr[ind]
             ind += 1
-            ind = ind
+            ind ind
             w.... ind < l..(cmpStr) a.. cmpStr[ind].i..
                 ind += 1
-            count = i..(cmpStr[ind:ind])
-            ind = ind
+            count i..(cmpStr[ind:ind])
+            ind ind
         r.. res
 
     ___ hasNext
@@ -45,6 +45,6 @@ c_ StringIterator(o..
         r.. c != ' '
 
 __ _____ __ _____
-    it = StringIterator('L1e2t1C1o1d1e1')
+    it StringIterator('L1e2t1C1o1d1e1')
     w.... it.hasNext
         print(it.next

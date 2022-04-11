@@ -24,15 +24,15 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ emp __ employees:
-            hashmap[emp.id] = hashmap.g.. emp.id, []) + [emp]
+            hashmap[emp.id] hashmap.g.. emp.id, []) + [emp]
         queue    # list
         ___ emp __ employees:
             __ emp.id __ id:
                 queue.a..(emp)
-        res = 0
+        res 0
         w.... queue:
-            emp = queue.p.. 0)
-            subs = emp.subordinates
+            emp queue.p.. 0)
+            subs emp.subordinates
             res += emp.importance
             ___ sub __ subs:
                 queue += hashmap.g.. sub, [])

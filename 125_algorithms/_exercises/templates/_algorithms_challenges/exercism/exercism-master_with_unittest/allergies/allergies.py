@@ -1,6 +1,6 @@
 c_ Allergies:
 
-    ALLERGY_SCORES = {
+    ALLERGY_SCORES {
         'eggs': 1,
         'peanuts': 2,
         'shellfish': 4,
@@ -12,8 +12,8 @@ c_ Allergies:
     }
 
     ___ - , score
-        score = score
-        lst = l..(allergy ___ allergy __ ALLERGY_SCORES __
+        score score
+        lst l..(allergy ___ allergy __ ALLERGY_SCORES __
                         is_allergic_to(allergy
 
     ___ is_allergic_to  allergen

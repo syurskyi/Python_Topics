@@ -5,27 +5,27 @@ c_ Solution(o..
     :type abbr: str
     :rtype: bool
     """
-    start = j = 0
-    digit = F..
+    start j 0
+    digit F..
     ___ i __ r..(0, l..(src:
       __ src[i].i..
         __ n.. digit:
           __ src[i] __ "0":
             r.. F..
-          start = i
-          digit = T..
+          start i
+          digit T..
       ____
         __ digit:
-          jump = i..(src[start:i])
-          digit = F..
+          jump i..(src[start:i])
+          digit F..
           j += jump
         __ j >_ l..(dest) o. src[i] != dest[j]:
           r.. F..
         j += 1
       __ i __ l..(src) - 1:
         __ digit:
-          jump = i..(src[start:i + 1])
-          digit = F..
+          jump i..(src[start:i + 1])
+          digit F..
           j += jump
           __ j != l..(dest
             r.. F..

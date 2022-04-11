@@ -8,27 +8,27 @@ c_ Solution:
     # @param head, a ListNode
     # @return a ListNode
     ___ insertionSortList  head
-        h = head  # h is the temporary head node
+        h head  # h is the temporary head node
         # First node of h
         __ head __ n.. N..
-            head = head.next
-            h.next = N..
+            head head.next
+            h.next N..
         w.... head __ n.. N..
-            next_node = head.next
+            next_node head.next
             # Insertion sort
-            current = h
-            prev = h
+            current h
+            prev h
             w.... current __ n.. N.. a.. head.val > current.val:
-                prev = current
-                current = current.next
+                prev current
+                current current.next
             # head is smaller than the head node of h
             # Insert head to the beginning of h
             __ prev __ current:
-                head.next = h
-                h = head
+                head.next h
+                h head
             # Insert head to the middle or end of h
             ____
-                prev.next = head
-                head.next = current
-            head = next_node
+                prev.next head
+                head.next current
+            head next_node
         r.. h

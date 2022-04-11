@@ -7,12 +7,12 @@ c_ Solution(o..
     :type D: List[int]
     :rtype: int
     """
-    ans = 0
+    ans 0
     abDict    # dict
     ___ i __ r..(l..(A:
       ___ j __ r..(l..(B:
         __ A[i] + B[j] n.. __ abDict:
-          abDict[A[i] + B[j]] = 1
+          abDict[A[i] + B[j]] 1
         ____
           abDict[A[i] + B[j]] += 1
 

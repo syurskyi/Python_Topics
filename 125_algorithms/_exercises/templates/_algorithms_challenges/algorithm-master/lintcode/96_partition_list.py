@@ -18,18 +18,18 @@ c_ Solution:
         __ n.. head:
             r..
 
-        left_dummy = left_tail = ListNode(-1)
-        right_dummy = right_tail = ListNode(-1)
+        left_dummy left_tail ListNode(-1)
+        right_dummy right_tail ListNode(-1)
 
         w.... head:
-            node = ListNode(head.val)
+            node ListNode(head.val)
             __ head.val < x:
-                left_tail.next = node
-                left_tail = node
+                left_tail.next node
+                left_tail node
             ____
-                right_tail.next = node
-                right_tail = node
-            head = head.next
+                right_tail.next node
+                right_tail node
+            head head.next
 
-        left_tail.next = right_dummy.next
+        left_tail.next right_dummy.next
         r.. left_dummy.next

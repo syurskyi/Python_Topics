@@ -19,18 +19,18 @@ c_ Solution:
         __ n.. node:
             r..
 
-        queue = [node]
-        root = UndirectedGraphNode(node.label)
-        N = {root.label: root}
+        queue [node]
+        root UndirectedGraphNode(node.label)
+        N {root.label: root}
 
         ___ node __ queue:
             ___ neighbor __ node.neighbors:
-                _node = N..
+                _node N..
                 __ neighbor.label __ N:
-                    _node = N[neighbor.label]
+                    _node N[neighbor.label]
                 ____
-                    _node = UndirectedGraphNode(neighbor.label)
-                    N[neighbor.label] = _node
+                    _node UndirectedGraphNode(neighbor.label)
+                    N[neighbor.label] _node
                     queue.a..(neighbor)
 
                 N[node.label].neighbors.a..(_node)
@@ -56,7 +56,7 @@ c_ Solution:
         __ node.label __ N:
             r.. N[node.label]
 
-        N[node.label] = UndirectedGraphNode(node.label)
+        N[node.label] UndirectedGraphNode(node.label)
         ___ neighbor __ node.neighbors:
             N[node.label].neighbors.a..(dfs(neighbor, N
 

@@ -34,14 +34,14 @@ p and q are different and both values will exist in the binary tree.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ -
-        ans = N..
+        ans N..
 
     ___ lowestCommonAncestor  root: TreeNode, p: TreeNode, q: TreeNode) __ TreeNode:
         c.. root, p, q)
@@ -51,10 +51,10 @@ c_ Solution:
         __ n.. node:
             r.. 0
 
-        lcount = c.. node.left, p, q)
-        rcount = c.. node.right, p, q)
-        mcount = 1 __ node __ p o. node __ q ____ 0
-        ret = lcount + rcount + mcount
+        lcount c.. node.left, p, q)
+        rcount c.. node.right, p, q)
+        mcount 1 __ node __ p o. node __ q ____ 0
+        ret lcount + rcount + mcount
         __ lcount __ 1 a.. rcount __ 1 o. lcount __ 1 a.. mcount __ 1 o. rcount __ 1 a.. mcount __ 1:
-            ans = node
+            ans node
         r.. ret

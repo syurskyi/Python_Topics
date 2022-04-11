@@ -53,7 +53,7 @@ c_ BinarySearchTest(unittest.TestCase
         ___
             assertRaisesRegex
         ______ AttributeError:
-            assertRaisesRegex = assertRaisesRegexp
+            assertRaisesRegex assertRaisesRegexp
 
     ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")

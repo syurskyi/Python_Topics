@@ -57,15 +57,15 @@ c_ Solution:
         For every letter
         C_letter (a) >= max(C_letter(b) for b in B)
         """
-        mx = d..(i..)
+        mx d..(i..)
         ___ b __ B:
-            c = C..(b)
+            c C..(b)
             ___ k, v __ c.i..:
-                mx[k] = m..(mx[k], v)
+                mx[k] m..(mx[k], v)
 
         ret    # list
         ___ a __ A:
-            c = C..(a)
+            c C..(a)
             ___ k, v __ mx.i..:
                 __ c[k] < v:
                     _____

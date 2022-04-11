@@ -43,7 +43,7 @@ c_ Solution:
     ___ isAlienSorted  words: L..[s..], order: s..) __ b..:
         h    # dict
         ___ i, c __ e..(order
-            h[c] = i
+            h[c] i
 
         ___ i __ r..(1, l..(words:
             __ cmp(words[i], words[i-1], h) __ -1:

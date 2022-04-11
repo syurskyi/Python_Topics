@@ -1,9 +1,9 @@
 c_ Ocr:
 
-    NUM_ROWS = 4
-    NUM_COLS = 3
-    UNRECOGNIZED_NUM = "?"
-    GRID_NUMS = {"0": [" _ ", "| |", "|_|", "   "],
+    NUM_ROWS 4
+    NUM_COLS 3
+    UNRECOGNIZED_NUM "?"
+    GRID_NUMS {"0": [" _ ", "| |", "|_|", "   "],
                  "1": ["   ", "  |", "  |", "   "],
                  "2": [" _ ", " _|", "|_ ", "   "],
                  "3": [" _ ", " _|", " _|", "   "],
@@ -14,7 +14,7 @@ c_ Ocr:
                  "8": [" _ ", "|_|", "|_|", "   "],
                  "9": [" _ ", "|_|", " _|", "   "]}
 
-    NUMS = {"".j..(value key ___ key, value __ l..(GRID_NUMS.i..}
+    NUMS {"".j..(value key ___ key, value __ l..(GRID_NUMS.i..}
 
     @classmethod
     ___ numbers(cls, inp

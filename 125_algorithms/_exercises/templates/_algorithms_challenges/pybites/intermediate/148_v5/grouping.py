@@ -1,6 +1,6 @@
 ____ i.. _______ groupby
 
-cars = [
+cars [
     # need mock data? -> https://www.mockaroo.com == awesome
     ('Mercedes-Benz', '300D'), ('Mercedes-Benz', '600SEL'),
     ('Toyota', 'Avalon'), ('Ford', 'Bronco'),

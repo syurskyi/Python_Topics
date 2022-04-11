@@ -3,8 +3,8 @@ c_ Clock(o..
     'Clock that displays 24 hour clock that rollsover properly'
 
     ___ - , hour, minute
-        hour = hour
-        minute = minute
+        hour hour
+        minute minute
         cleanup()
 
     ___  -r

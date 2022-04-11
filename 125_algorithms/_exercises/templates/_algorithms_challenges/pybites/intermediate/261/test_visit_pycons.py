@@ -7,7 +7,7 @@ ____ visit_pycons _______ (
 
 
 ___ test_update_pycons_lat_lon
-    pycons = _get_pycons()
+    pycons _get_pycons()
     update_pycons_lat_lon(pycons)
     ___ pycon __ pycons:
         ... isi..(pycon.lat, f__)
@@ -15,9 +15,9 @@ ___ test_update_pycons_lat_lon
 
 
 ___ test_create_travel_plan
-    pycons = _get_pycons()
+    pycons _get_pycons()
     update_pycons_lat_lon(pycons)
-    travel_plan = create_travel_plan(pycons)
+    travel_plan create_travel_plan(pycons)
     ... l..(travel_plan) __ 8
     ... travel_plan[0].origin.n.. __ "PyCon Odessa"
     ... travel_plan[0].destination.n.. __ "PyCon SK"
@@ -26,7 +26,7 @@ ___ test_create_travel_plan
 
 
 ___ test_total_travel_distance
-    pycons = _get_pycons()
+    pycons _get_pycons()
     update_pycons_lat_lon(pycons)
-    travel_plan = create_travel_plan(pycons)
+    travel_plan create_travel_plan(pycons)
     ... total_travel_distance(travel_plan) __ 8444.9

@@ -1,8 +1,8 @@
 _______ m__
 
-STAR = "+"
-LEAF = "*"
-TRUNK = "|"
+STAR "+"
+LEAF "*"
+TRUNK "|"
 
 
 ___ generate_improved_xmas_tree(rows=10
@@ -12,27 +12,27 @@ ___ generate_improved_xmas_tree(rows=10
 
     last_row_size =  2 * rows - 1
 
-    lines = [f"{STAR:^{last_row_size}}"]
+    lines [f"{STAR:^{last_row_size}}"]
 
 
 
     ___ row __ r..(rows
-        leafs = 2 * (row + 1) - 1
-        line = f"{LEAF * leafs:^{last_row_size}}"
+        leafs 2 * (row + 1) - 1
+        line f"{LEAF * leafs:^{last_row_size}}"
         lines.a..(line)
     
 
-    last_row_size = l..(lines[-1])
+    last_row_size l..(lines[-1])
     
-    x = last_row_size/2
+    x last_row_size/2
     
     __ i..(m__.f..(x % 2 __ 0:
-        trunk_width = i..(m__.c.. x
+        trunk_width i..(m__.c.. x
     ____
-        trunk_width = i..(m__.c.. x + 1
+        trunk_width i..(m__.c.. x + 1
     
 
-    trunk = f"{TRUNK * trunk_width:^{last_row_size}}"
+    trunk f"{TRUNK * trunk_width:^{last_row_size}}"
     ___ _ __ r..(2
         lines.a..(trunk)
 
@@ -45,5 +45,5 @@ ___ generate_improved_xmas_tree(rows=10
 
 __ _______ __ _______
 
-    rows = 50
+    rows 50
     print(generate_improved_xmas_tree(rows

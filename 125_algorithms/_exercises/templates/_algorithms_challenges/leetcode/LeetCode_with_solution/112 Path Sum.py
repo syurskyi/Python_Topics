@@ -13,13 +13,13 @@ Given the below binary tree and sum = 22,
         7    2      1
 return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution:
     ___ hasPathSum  root, s..
@@ -38,7 +38,7 @@ c_ Solution:
         # if sum<0:
         #    return False
 
-        s.. = s..-root.val
+        s.. s..-root.val
 
         # terminal condition
         __ s..__0 a.. root.left __ N.. a.. root.right __ N..

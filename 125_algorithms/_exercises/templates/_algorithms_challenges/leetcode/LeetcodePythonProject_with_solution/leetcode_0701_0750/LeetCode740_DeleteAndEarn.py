@@ -9,22 +9,22 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        count = [0]*10001
+        count [0]*10001
         ___ num __ nums:
             count[num] += num
-        dp = [0]*10003
+        dp [0]*10003
         ___ i __ r..(10000, -1, -1
-            dp[i] = m..(count[i]+dp[i+2], dp[i+1])
+            dp[i] m..(count[i]+dp[i+2], dp[i+1])
         r.. dp[0]
     
     ___ test
-        testCases = [
+        testCases [
             [3, 4, 2],
             [2, 2, 3, 3, 3, 4],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = deleteAndEarn(nums)
+            result deleteAndEarn(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

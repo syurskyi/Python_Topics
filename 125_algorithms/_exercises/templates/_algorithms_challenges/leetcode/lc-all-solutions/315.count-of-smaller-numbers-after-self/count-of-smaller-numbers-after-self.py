@@ -10,7 +10,7 @@ c_ Solution(o..
     ans    # list
     bst    # list
     ___ num __ r..(nums
-      idx = b__.bisect_left(bst, num)
+      idx b__.bisect_left(bst, num)
       ans.a..(idx)
       b__.i.. (bst, num)
     r.. ans[::-1]

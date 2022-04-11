@@ -6,8 +6,8 @@ c_ Queue(o..
     """
     initialize your data structure here.
     """
-    stack1 = d..([])
-    stack2 = d..([])
+    stack1 d..([])
+    stack2 d..([])
 
   ___ push  x
     """

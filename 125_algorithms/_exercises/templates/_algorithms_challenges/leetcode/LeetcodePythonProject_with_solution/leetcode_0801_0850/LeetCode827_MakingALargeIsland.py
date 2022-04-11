@@ -9,34 +9,34 @@ c_ Solution(o..
         :type grid: List[List[int]]
         :rtype: int
         """
-        n = l..(grid)
-        index = 3
-        res = 0
+        n l..(grid)
+        index 3
+        res 0
         areaMap    # dict
         ___ i __ r..(n
             ___ j __ r..(n
                 __ grid[i][j] __ 1:
-                    areaMap[index] = dfs(grid, i, j, index)
-                    res = m..(res, areaMap[index])
+                    areaMap[index] dfs(grid, i, j, index)
+                    res m..(res, areaMap[index])
                     index += 1
         ___ i __ r..(n
             ___ j __ r..(n
                 __ grid[i][j] __ 0:
-                    visited = s..()
-                    curr = 1
+                    visited s..()
+                    curr 1
                     ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
                         __ 0 <_ x < n a.. 0 <_ y < n:
-                            index = grid[x][y]
+                            index grid[x][y]
                             __ index > 1 a.. index n.. __ visited:
                                 visited.add(index)
                                 curr += areaMap[index]
-                    res = m..(res, curr)
+                    res m..(res, curr)
         r.. res
     
     ___ dfs  grid, i, j, index
-        area = 0
-        n = l..(grid)
-        grid[i][j] = index
+        area 0
+        n l..(grid)
+        grid[i][j] index
         ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
             __ 0 <_ x < n a.. 0 <_ y < n a.. grid[x][y] __ 1:
                 area += dfs(grid, x, y, index)

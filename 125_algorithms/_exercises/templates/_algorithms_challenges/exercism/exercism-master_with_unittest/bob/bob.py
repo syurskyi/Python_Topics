@@ -1,5 +1,5 @@
 ___ hey(phrase
-    phrase = phrase.s..
+    phrase phrase.s..
 
     __ n.. phrase:
         r.. "Fine. Be that way!"

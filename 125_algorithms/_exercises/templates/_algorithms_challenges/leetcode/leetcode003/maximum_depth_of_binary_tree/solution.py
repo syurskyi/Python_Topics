@@ -18,6 +18,6 @@ c_ Solution:
     ___ maxDepth  root
         __ root __ N..
             r.. 0
-        left_max = maxDepth(root.left)
-        right_max = maxDepth(root.right)
+        left_max maxDepth(root.left)
+        right_max maxDepth(root.right)
         r.. m..(left_max, right_max) + 1

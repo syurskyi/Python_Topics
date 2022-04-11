@@ -12,8 +12,8 @@ c_ Solution(o..
         """
         __ n.. s o. l..(s) <_ 1 o. numRows __ 1:
             r.. s
-        step = 2*numRows-2
-        res = ''
+        step 2*numRows-2
+        res ''
         ___ i __ r..(numRows
             ___ j __ r..(i, l..(s), step
                 res += s[j]

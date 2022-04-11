@@ -20,33 +20,33 @@ c_ Solution:
         __ n.. head o. n.. head.next:
             r.. head
 
-        mid = find_middle(head)
+        mid find_middle(head)
 
-        left_dummy = left_tail = ListNode(0)
-        mid_dummy = mid_tail = ListNode(0)
-        right_dummy = right_tail = ListNode(0)
+        left_dummy left_tail ListNode(0)
+        mid_dummy mid_tail ListNode(0)
+        right_dummy right_tail ListNode(0)
 
         w.... head:
             __ head.val < mid.val:
-                left_tail.next = head
-                left_tail = head
+                left_tail.next head
+                left_tail head
             ____ head.val > mid.val:
-                right_tail.next = head
-                right_tail = head
+                right_tail.next head
+                right_tail head
             ____
-                mid_tail.next = head
-                mid_tail = head
-            head = head.next
+                mid_tail.next head
+                mid_tail head
+            head head.next
 
-        left_tail.next = mid_tail.next = right_tail.next = N..
+        left_tail.next mid_tail.next right_tail.next N..
 
-        left_dummy.next = quick_sort(left_dummy.next)
-        right_dummy.next = quick_sort(right_dummy.next)
+        left_dummy.next quick_sort(left_dummy.next)
+        right_dummy.next quick_sort(right_dummy.next)
 
-        dummy = tail = ListNode(0)
+        dummy tail ListNode(0)
         ___ node __ [left_dummy, mid_dummy, right_dummy]:
-            tail.next = node.next
-            tail = get_tail(tail)
+            tail.next node.next
+            tail get_tail(tail)
 
         r.. dummy.next
 
@@ -54,38 +54,38 @@ c_ Solution:
         __ n.. head o. n.. head.next:
             r.. head
 
-        left = head
-        mid = find_middle(head)
-        right = mid.next
-        mid.next = N..
+        left head
+        mid find_middle(head)
+        right mid.next
+        mid.next N..
 
-        left = merge_sort(left)
-        right = merge_sort(right)
+        left merge_sort(left)
+        right merge_sort(right)
 
-        dummy = tail = ListNode(0)
+        dummy tail ListNode(0)
 
         w.... left a.. right:
             __ left.val < right.val:
-                tail.next = left
-                left = left.next
+                tail.next left
+                left left.next
             ____
-                tail.next = right
-                right = right.next
-            tail = tail.next
+                tail.next right
+                right right.next
+            tail tail.next
 
         __ left:
-            tail.next = left
+            tail.next left
         ____
-            tail.next = right
+            tail.next right
 
         r.. dummy.next
 
     ___ find_middle  head
-        slow, fast = head, head.next
+        slow, fast head, head.next
 
         w.... fast a.. fast.next:
-            slow = slow.next
-            fast = fast.next.next
+            slow slow.next
+            fast fast.next.next
 
         r.. slow
 
@@ -94,6 +94,6 @@ c_ Solution:
             r..
 
         w.... head.next:
-            head = head.next
+            head head.next
 
         r.. head

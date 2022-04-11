@@ -1,7 +1,7 @@
 ___ intersection_union(lst1, lst2
     inter    # list
     uni    # list
-    output = [inter, uni]
+    output [inter, uni]
     ___ i __ lst1:
         __ i __ lst2:
             inter.a..(i)

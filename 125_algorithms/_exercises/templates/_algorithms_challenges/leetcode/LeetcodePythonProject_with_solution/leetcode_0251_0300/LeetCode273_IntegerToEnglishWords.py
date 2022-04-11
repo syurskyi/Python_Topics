@@ -9,50 +9,50 @@ c_ Solution(o..
         :type num: int
         :rtype: str
         """
-        res = helper(num)
+        res helper(num)
         r.. res __ res ____ 'Zero'
     
     ___ helper  num
-        res = ''
+        res ''
         __ num __ 0:
             r.. res
-        tokens20 = 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve ' \
+        tokens20 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve ' \
             'Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen'.s.. 
-        tens = 'Twenty Thirty Forty Fifty Sixty Seventy Eighty Ninety'.s.. 
+        tens 'Twenty Thirty Forty Fifty Sixty Seventy Eighty Ninety'.s..
         __ 0 < num < 20:
             r.. tokens20[num-1]
         ____ num < 100:
-            first = num/10
+            first num/10
             res += ' ' + tens[first-2]
-            ind = num-first*10-1
+            ind num-first*10-1
             __ ind >_ 0:
                 res += ' ' + tokens20[ind]
         ____ num < 1000:
-            first = num/100
+            first num/100
             res += ' ' + tokens20[first-1] + ' Hundred'
-            remaining = num-first*100
+            remaining num-first*100
             res += ' ' + helper(remaining)
         ____ num < 1000000:
-            first = num/1000
+            first num/1000
             res += ' ' + helper(first) + ' Thousand'
-            remaining = num - first*1000
+            remaining num - first*1000
             res += ' ' + helper(remaining)
         ____ num < 1000000000:
-            first = num/1000000
+            first num/1000000
             res += ' ' + helper(first) + ' Million'
-            remaining = num - first*1000000
+            remaining num - first*1000000
             res += ' ' + helper(remaining)
         ____
-            first = num/1000000000
+            first num/1000000000
             res += ' ' + helper(first) + ' Billion'
-            remaining = num - first*1000000000
+            remaining num - first*1000000000
             res += ' ' + helper(remaining)
         r.. res.s..
     
     ___ numberToWords  num
-        token20 = 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve ' \
+        token20 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve ' \
             'Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen'.s.. 
-        tens = 'Twenty Thirty Forty Fifty Sixty Seventy Eighty Ninety'.s.. 
+        tens 'Twenty Thirty Forty Fifty Sixty Seventy Eighty Ninety'.s..
         
         ___ words(n
             __ n < 20:

@@ -2,7 +2,7 @@ _______ p__
 
 ____ taxes _______ Bracket, Taxed, Taxes
 
-bracket_2020 = [
+bracket_2020 [
     Bracket(9_875, 0.1),
     Bracket(40_125, 0.12),
     Bracket(85_525, 0.22),
@@ -15,19 +15,19 @@ bracket_2020 = [
 
 ?p__.f..(scope="module")
 ___ taxes_2019
-    income = 40_000
+    income 40_000
     r.. Taxes(income)
 
 
 ?p__.f..(scope="module")
 ___ taxes_2020_low
-    income = 8_000
+    income 8_000
     r.. Taxes(income, bracket_2020)
 
 
 ?p__.f..(scope="module")
 ___ taxes_2020_over
-    income = 1_000_000
+    income 1_000_000
     r.. Taxes(income, bracket_2020)
 
 
@@ -46,7 +46,7 @@ ___ test_taxes(taxes_2019
 
 
 ___ test_summary(taxes_2019
-    output = s..(taxes_2019).s..
+    output s..(taxes_2019).s..
     ... l.. ?  __ 5
     ... "Summary Report" __ output[0]
 
@@ -57,7 +57,7 @@ ___ test_low_income(taxes_2020_low
 
 ___ test_report(taxes_2020_over, capfd
     taxes_2020_over.report()
-    output = ?.r .. 0].s...s..
+    output ?.r .. 0].s...s..
     ... l.. ?  __ 17
     ... "Summary Report" __ output[0]
     ... "Taxes Breakdown" __ output[6]

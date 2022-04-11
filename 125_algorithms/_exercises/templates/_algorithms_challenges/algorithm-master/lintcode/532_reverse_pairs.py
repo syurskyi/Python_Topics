@@ -4,7 +4,7 @@ c_ Solution:
     @return: total of reverse pairs
     """
     ___ reversePairs  A
-        n = l..(A)
+        n l..(A)
         tmp  [0] * n
         r.. merge_sort(A, 0, n - 1, tmp)
 
@@ -12,33 +12,33 @@ c_ Solution:
         __ start >_ end:
             r.. 0
 
-        mid = (start + end) // 2
-        left, right = start, mid + 1
-        ans = merge_sort(A, left, mid, tmp)
+        mid (start + end) // 2
+        left, right start, mid + 1
+        ans merge_sort(A, left, mid, tmp)
         ans += merge_sort(A, right, end, tmp)
 
-        i = start
+        i start
         w.... left <_ mid a.. right <_ end:
             __ A[left] > A[right]:
-                tmp[i] = A[right]
+                tmp[i] A[right]
                 right += 1
                 ans += mid - left + 1
             ____
-                tmp[i] = A[left]
+                tmp[i] A[left]
                 left += 1
             i += 1
 
         w.... left <_ mid:
-            tmp[i] = A[left]
+            tmp[i] A[left]
             left += 1
             i += 1
 
         w.... right <_ end:
-            tmp[i] = A[right]
+            tmp[i] A[right]
             right += 1
             i += 1
 
         ___ i __ r..(start, end + 1
-            A[i] = tmp[i]
+            A[i] tmp[i]
 
         r.. ans

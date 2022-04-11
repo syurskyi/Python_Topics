@@ -17,7 +17,7 @@ c_ Solution(o..
     
     ___ medianSlidingWindow_another  nums, k
         _______ b__
-        window = s..(nums[:k])
+        window s..(nums[:k])
         medians    # list
         ___ a, b __ z..(nums, nums[k:]+[0]
             medians.a..((window[k/2] + window[~(k/2)]/2.0
@@ -44,10 +44,10 @@ c_ Solution(o..
         ____
             heapq.heappush(maxHeap, -num)
         __ l..(maxHeap) > l..(minHeap
-            val = heapq.heappop(maxHeap)
+            val heapq.heappop(maxHeap)
             heapq.heappush(minHeap, -val)
         __ l..(minHeap) > l..(maxHeap)+1:
-            val = heapq.heappop(minHeap)
+            val heapq.heappop(minHeap)
             heapq.heappush(maxHeap, -val)
     
     ___ remove  num
@@ -58,10 +58,10 @@ c_ Solution(o..
             maxHeap.remove(-num)
             heapq.heapify(maxHeap)
         __ l..(maxHeap) > l..(minHeap
-            val = heapq.heappop(maxHeap)
+            val heapq.heappop(maxHeap)
             heapq.heappush(minHeap, -val)
         __ l..(minHeap) > l..(maxHeap)+1:
-            val = heapq.heappop(minHeap)
+            val heapq.heappop(minHeap)
             heapq.heappush(maxHeap, -val)
     
     ___ medianSlidingWindow_slow  nums, k
@@ -70,11 +70,11 @@ c_ Solution(o..
         :type k: int
         :rtype: List[float]
         """
-        n = l..(nums) - k + 1
-        result = [0.0]*n
+        n l..(nums) - k + 1
+        result [0.0]*n
         ___ i __ r..(l..(nums)+1
             __ i >_ k:
-                result[i-k] = getMedian()
+                result[i-k] getMedian()
                 remove(nums[i-k])
             __ i < l..(nums
                 add(nums[i])

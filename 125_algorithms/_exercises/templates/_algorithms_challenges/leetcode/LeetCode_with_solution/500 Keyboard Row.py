@@ -11,12 +11,12 @@ c_ Solution:
         :type words: List[str]
         :rtype: List[str]
         """
-        rows = [
+        rows [
             "qwertyuiop",
             "asdfghjkl",
             "zxcvbnm",
         ]
-        d = {
+        d {
             e: i
             ___ i, v __ e..(rows)
             ___ e __ v

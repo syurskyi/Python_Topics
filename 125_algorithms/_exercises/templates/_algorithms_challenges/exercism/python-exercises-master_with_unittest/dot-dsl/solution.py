@@ -1,10 +1,10 @@
-NODE, EDGE, ATTR = r..(3)
+NODE, EDGE, ATTR r..(3)
 
 
 c_ Node(o..
     ___ - , name, attrs={}
-        name = name
-        attrs = attrs
+        name name
+        attrs attrs
 
     ___ -e  other
         r.. name __ other.name a.. attrs __ other.attrs
@@ -12,9 +12,9 @@ c_ Node(o..
 
 c_ Edge(o..
     ___ - , src, dst, attrs={}
-        src = src
-        dst = dst
-        attrs = attrs
+        src src
+        dst dst
+        attrs attrs
 
     ___ -e  other
         r.. (src __ other.src a..
@@ -35,11 +35,11 @@ c_ Graph(o..
             __ l..(item) < 3:
                 r.. T..("Graph item incomplete")
 
-            type_ = item[0]
+            type_ item[0]
             __ type_ __ ATTR:
                 __ l..(item) != 3:
                     r.. V...("ATTR malformed")
-                attrs[item[1]] = item[2]
+                attrs[item[1]] item[2]
             ____ type_ __ NODE:
                 __ l..(item) != 3:
                     r.. V...("NODE malformed")

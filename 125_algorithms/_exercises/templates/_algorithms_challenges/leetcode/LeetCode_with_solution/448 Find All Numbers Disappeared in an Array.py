@@ -21,10 +21,10 @@ c_ Solution:
         """
         ___ idx __ r..(l..(A:
             w... T...
-                target = A[idx] - 1
+                target A[idx] - 1
                 __ idx __ target o. A[idx] __ A[target]:
                     _____ 
-                A[idx], A[target] = A[target], A[idx]
+                A[idx], A[target] A[target], A[idx]
 
         missing    # list
         ___ idx, elm __ e..(A

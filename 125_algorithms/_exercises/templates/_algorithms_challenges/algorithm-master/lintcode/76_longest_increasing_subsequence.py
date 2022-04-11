@@ -22,13 +22,13 @@ c_ Solution:
         __ n.. A:
             r.. 0
 
-        INFINITY = f__('inf')
-        n = l..(A)
-        P = [-INFINITY] + [INFINITY] * n
+        INFINITY f__('inf')
+        n l..(A)
+        P [-INFINITY] + [INFINITY] * n
 
         ___ i __ r..(n
-            j = binary_search(P, A[i])
-            P[j] = A[i]
+            j binary_search(P, A[i])
+            P[j] A[i]
 
         ___ i __ r..(n, -1, -1
             __ P[i] < INFINITY:
@@ -37,14 +37,14 @@ c_ Solution:
         r.. 0
 
     ___ binary_search  P, a
-        left, right = 0, l..(P) - 1
+        left, right 0, l..(P) - 1
 
         w.... left + 1 < right:
-            mid = (left + right) // 2
+            mid (left + right) // 2
             __ P[mid] < a:
-                left = mid
+                left mid
             ____
-                right = mid
+                right mid
 
         r.. right
 
@@ -58,17 +58,17 @@ c_ Solution:
         :type A: List[int]
         :rtype: int
         """
-        lis_size = 0
+        lis_size 0
         __ n.. A:
             r.. lis_size
 
-        n = l..(A)
+        n l..(A)
 
         """
         `dp[i]` means the maximum size of LIS end at `i`
         note that there is size, so init with `1`
         """
-        dp = [1] * n
+        dp [1] * n
         # pi = [0] * n
         # end_at = -1
 
@@ -79,11 +79,11 @@ c_ Solution:
                 `+ 1` means included `A[i]`
                 """
                 __ A[j] < A[i] a.. dp[j] + 1 > dp[i]:
-                    dp[i] = dp[j] + 1
+                    dp[i] dp[j] + 1
                     # pi[i] = j
 
                 __ dp[i] > lis_size:
-                    lis_size = dp[i]
+                    lis_size dp[i]
                     # end_at = i
 
         # paths = [0] * lis_size

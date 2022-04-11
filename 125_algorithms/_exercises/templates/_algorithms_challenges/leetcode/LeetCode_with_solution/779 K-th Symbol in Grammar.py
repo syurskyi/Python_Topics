@@ -48,7 +48,7 @@ c_ Solution:
     ___ dfs  N, K, not_flip
         __ N __ 1:
             r.. 0 __ not_flip ____ 1
-        half_l = 2 ** (N - 1) // 2
+        half_l 2 ** (N - 1) // 2
         __ K <_ half_l:
             r.. dfs(N - 1, K, not_flip)
         ____
@@ -65,13 +65,13 @@ c_ Solution:
         0110 1001
         Generating the actual string will TLE
         """
-        row = 0
-        pos = 1
+        row 0
+        pos 1
         ___ n __ r..(1, N
-            row = (row << pos) + (~row & 2 ** pos - 1)
+            row (row << pos) + (~row & 2 ** pos - 1)
             pos *= 2
 
-        ret = row >> pos - K & 1
+        ret row >> pos - K & 1
         r.. ret
 
 

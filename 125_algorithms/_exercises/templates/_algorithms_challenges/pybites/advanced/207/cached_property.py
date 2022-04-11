@@ -5,12 +5,12 @@ ____ f.. _______ wraps
 
 ___ cached_property(func
     """decorator used to cache expensive object attribute lookup"""
-    cache = N..
+    cache N..
     $w.. f..
     ___ wrapper $ $$:
         nonlocal cache
         __ cache __ N..
-            cache = func $ $$
+            cache func $ $$
         r.. cache
     r.. wrapper
 
@@ -18,20 +18,20 @@ ___ cached_property(func
 c_ Planet:
     """the nicest little orb this side of Orion's Belt"""
 
-    GRAVITY_CONSTANT = 42
-    TEMPORAL_SHIFT = 0.12345
-    SOLAR_MASS_UNITS = 'M\N{SUN}'
+    GRAVITY_CONSTANT 42
+    TEMPORAL_SHIFT 0.12345
+    SOLAR_MASS_UNITS 'M\N{SUN}'
 
     ___ - , color
         ? ?
-        _mass = N..
+        _mass N..
 
     ___  -r
         r.. f'{__class__.__name__}({r.. (color)})'
 
     @cached_property
     ___ mass
-        scale_factor = r__()
+        scale_factor r__()
         sleep(TEMPORAL_SHIFT)
         _mass =  _*{r..(scale_factor * GRAVITY_CONSTANT, 4)} '
                       f'{SOLAR_MASS_UNITS}')

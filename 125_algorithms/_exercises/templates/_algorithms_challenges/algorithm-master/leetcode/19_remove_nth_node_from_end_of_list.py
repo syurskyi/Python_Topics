@@ -17,18 +17,18 @@ c_ Solution:
         __ n.. head o. n.. n:
             r.. head
 
-        dummy = slow = ListNode(0)
-        dummy.next = fast = head
+        dummy slow ListNode(0)
+        dummy.next fast head
 
         w.... fast a.. n:
             n -_ 1
-            fast = fast.next
+            fast fast.next
 
         w.... slow a.. fast:
-            slow = slow.next
-            fast = fast.next
+            slow slow.next
+            fast fast.next
 
         __ slow a.. slow.next:
-            slow.next = slow.next.next
+            slow.next slow.next.next
 
         r.. dummy.next

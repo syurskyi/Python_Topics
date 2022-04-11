@@ -1,5 +1,5 @@
 ___ song(first, last=0
-    verses = ''
+    verses ''
     ___ number __ r..(r..(last, first + 1:
         verses += verse(number) + '\n'
 

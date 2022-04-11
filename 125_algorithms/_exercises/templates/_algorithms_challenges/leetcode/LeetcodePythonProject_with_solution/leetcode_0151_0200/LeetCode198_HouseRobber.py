@@ -11,9 +11,9 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. nums: r.. 0
-        include, exclude = 0, 0
+        include, exclude 0, 0
         ___ num __ nums:
-            i, e = include, exclude
-            include = e+num
-            exclude = m..(i, e)
+            i, e include, exclude
+            include e+num
+            exclude m..(i, e)
         r.. m..(include, exclude)

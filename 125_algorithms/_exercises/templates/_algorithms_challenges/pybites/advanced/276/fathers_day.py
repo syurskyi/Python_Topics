@@ -8,11 +8,11 @@ ____ c.. _______ d..
 ____ dateutil.parser _______ p..
 
 # get the data
-TMP = P..(__.g..("TMP", "/tmp"
-base_url = 'https://bites-data.s3.us-east-2.amazonaws.com/'
+TMP P..(__.g..("TMP", "/tmp"
+base_url 'https://bites-data.s3.us-east-2.amazonaws.com/'
 
-fathers_days_countries = TMP / 'fathers-day-countries.txt'
-fathers_days_recurring = TMP / 'fathers-day-recurring.txt'
+fathers_days_countries TMP / 'fathers-day-countries.txt'
+fathers_days_recurring TMP / 'fathers-day-recurring.txt'
 
 ___ file_ __ (fathers_days_countries, fathers_days_recurring
     __ n.. file_.exists
@@ -21,23 +21,23 @@ ___ file_ __ (fathers_days_countries, fathers_days_recurring
 
 ___ _parse_father_days_per_country(year, date_to_countries,filename=fathers_days_countries
     """Helper to parse fathers_days_countries"""
-    year = s..(year)
+    year s..(year)
     w__ o.. filename _ __ f:
 
         ___ line __ f:
-            line = line.s..
+            line line.s..
             __ n.. line o. line.s.. '#'
                 _____
             ____ line.s.. '*'
 
-                line = __.s.. _ \band\b','',line)
+                line __.s.. _ \band\b','',line)
 
                 countries =  l.. m..(l.... s: s.s..('* ').s..,line.s..(',')))
             ____
-                date,day = line.s..(':')
+                date,day line.s..(':')
 
                 __ date __ year:
-                    day = day.s..
+                    day day.s..
                     date_to_countries[day].e.. countries)
 
 
@@ -47,11 +47,11 @@ ___ _parse_recurring_father_days(days_to_countries,filename=fathers_days_recurri
 
     w__ o.. filename _ __ f:
         ___ line __ f:
-            line = line.s..
+            line line.s..
             __ n.. line o. line.s.. '#'
                 _____
             __ line.s.. '*'
-                date = line[2:]
+                date line[2:]
             ____
                 days_to_countries[date].a..(line)
 
@@ -70,7 +70,7 @@ ___ get_father_days y.._2020
 
        Consider using the the 2 _parse* helpers.
     """
-    days_to_countries = d..(l..)
+    days_to_countries d..(l..)
 
     _parse_father_days_per_country(year,days_to_countries)
     _parse_recurring_father_days(days_to_countries)
@@ -97,13 +97,13 @@ ___ generate_father_day_planning(days_to_countries_ N..
        Bite description
     """
     __ days_to_countries __ N..
-        days_to_countries = get_father_days()
+        days_to_countries get_father_days()
 
-    dates = l..(days_to_countries.keys
+    dates l..(days_to_countries.keys
 
 
     ___ i,date __ e..(dates
-        dates[i] = p..(date,default=d__.d__(2020,1,1
+        dates[i] p..(date,default=d__.d__(2020,1,1
         #days_to_countries[date].sort()
 
 
@@ -112,10 +112,10 @@ ___ generate_father_day_planning(days_to_countries_ N..
 
 
     ___ date __ dates:
-        date = date.s..('%B %d')
-        date = __.s.. _ 0(\d)',r'\1',date)
+        date date.s..('%B %d')
+        date __.s.. _ 0(\d)',r'\1',date)
 
-        countries = days_to_countries[date]
+        countries days_to_countries[date]
 
         print(date)
 

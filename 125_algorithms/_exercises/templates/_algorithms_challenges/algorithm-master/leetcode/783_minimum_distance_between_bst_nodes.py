@@ -14,8 +14,8 @@ c_ Solution:
     time: O(n)
     space: O(1)
     """
-    ans = f__('inf')
-    pre = N..
+    ans f__('inf')
+    pre N..
 
     ___ minDiffInBST  root
         """
@@ -28,9 +28,9 @@ c_ Solution:
         minDiffInBST(root.left)
 
         __ pre a.. root.val - pre.val < ans:
-            ans = root.val - pre.val
+            ans root.val - pre.val
 
-        pre = root
+        pre root
 
         minDiffInBST(root.right)
         r.. ans
@@ -50,24 +50,24 @@ c_ Solution:
         __ n.. root:
             r..
 
-        ans = f__('inf')
-        pre = N..
+        ans f__('inf')
+        pre N..
 
         stack    # list
-        node = root
+        node root
 
         w.... node o. stack:
             w.... node:
                 stack.a..(node)
-                node = node.left
+                node node.left
 
-            node = stack.p.. )
+            node stack.p.. )
 
             __ pre a.. node.val - pre.val < ans:
-                ans = node.val - pre.val
+                ans node.val - pre.val
 
-            pre = node
+            pre node
 
-            node = node.right
+            node node.right
 
         r.. ans

@@ -18,9 +18,9 @@ Output: [1, 3, 9]
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -34,7 +34,7 @@ c_ Solution:
         __ n.. root:
             r.. ret
 
-        q = [root]
+        q [root]
         w.... q:
             ret.a..(m.. m..(l.... e: e.val, q)))
             cur_q    # list
@@ -44,6 +44,6 @@ c_ Solution:
                 __ e.right:
                     cur_q.a..(e.right)
 
-            q = cur_q
+            q cur_q
 
         r.. ret

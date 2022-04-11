@@ -8,12 +8,12 @@ c_ Solution(o..
       r.. 0
     height.a..(-1)
     stack    # list
-    ans = 0
+    ans 0
     ___ i __ r..(0, l..(height:
       w.... stack a.. height[i] < height[stack[-1]]:
-        h = height[stack.p.. )]
-        w = i - stack[-1] - 1 __ stack ____ i
-        ans = m..(ans, h * w)
+        h height[stack.p.. )]
+        w i - stack[-1] - 1 __ stack ____ i
+        ans m..(ans, h * w)
       stack.a..(i)
     height.p.. )
     r.. ans

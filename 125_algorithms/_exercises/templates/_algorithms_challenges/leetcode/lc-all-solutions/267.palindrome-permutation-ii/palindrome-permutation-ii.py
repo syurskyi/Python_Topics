@@ -24,13 +24,13 @@ c_ Solution(o..
 
     ans    # list
     res    # list
-    ss = ""
-    mid = ""
-    counter = c...C..(s)
-    oddChars = f.. l.... x: counter[x] % 2 __ 1, counter)
+    ss ""
+    mid ""
+    counter c...C..(s)
+    oddChars f.. l.... x: counter[x] % 2 __ 1, counter)
     __ l..(s) % 2 __ 1:
       __ l..(oddChars) __ 1:
-        mid = oddChars[0]
+        mid oddChars[0]
         counter[mid] -_ 1
       ____
         r.. []

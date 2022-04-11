@@ -9,17 +9,17 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: int
         """
-        arr = A
-        up, down = [0]*l..(arr), [0]*l..(arr)
-        res = 0
+        arr A
+        up, down [0]*l..(arr), [0]*l..(arr)
+        res 0
         ___ i __ r..(1, l..(arr:
             __ arr[i] > arr[i-1]:
-                up[i] = up[i-1]+1
+                up[i] up[i-1]+1
         ___ i __ r..(l..(arr)-1, -1, -1
             __ arr[i] > arr[i+1]:
-                down[i] = down[i+1]+1
+                down[i] down[i+1]+1
             __ up[i] a.. down[i]:
-                res = m..(res, up[i]+down[i]+1)
+                res m..(res, up[i]+down[i]+1)
         r.. res
     
     ___ longestMountain  A
@@ -27,21 +27,21 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: int
         """
-        arr = A
-        res, up, down = 0, 0, 0
+        arr A
+        res, up, down 0, 0, 0
         ___ i __ r..(1, l..(arr:
             __ (down a.. arr[i-1] < arr[i]) o. (arr[i-1] __ arr[i]
-                up, down = 0, 0
+                up, down 0, 0
             __ arr[i-1] < arr[i]:
                 up += 1
             ____ arr[i-1] > arr[i]:
                 down += 1
             __ up a.. down:
-                res = m..(res, up+down+1)
+                res m..(res, up+down+1)
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [2,1,4,7,3,2,5],
             [2,2,2],
             [7,4,8],
@@ -50,7 +50,7 @@ c_ Solution(o..
             [4,3,2,1],
         ]
         ___ arr __ testCases:
-            result = longestMountain(arr)
+            result longestMountain(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 

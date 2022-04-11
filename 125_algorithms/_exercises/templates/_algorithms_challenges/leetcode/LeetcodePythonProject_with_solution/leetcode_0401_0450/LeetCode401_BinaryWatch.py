@@ -9,14 +9,14 @@ c_ Solution(o..
         result    # list
         ___ i __ r..(12
             ___ j __ r..(60
-                total = countDigits(i) + countDigits(j)
+                total countDigits(i) + countDigits(j)
                 __ total __ num:
-                    s = '%s:%02d' % (i, j)
+                    s '%s:%02d' % (i, j)
                     result.a..(s)
         r.. result
     
     ___ countDigits  num
-        result = 0
+        result 0
         w.... num > 0:
             __ num & 1 __ 1:
                 result += 1

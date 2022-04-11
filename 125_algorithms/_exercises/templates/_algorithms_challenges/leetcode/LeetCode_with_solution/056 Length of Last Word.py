@@ -10,7 +10,7 @@ For example,
 Given s = "Hello World",
 return 5.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ lengthOfLastWord  s
         """
@@ -20,10 +20,10 @@ c_ Solution:
         :param s: string
         :return: integer
         """
-        s = s.s..
-        lst = s.s..(" ")
+        s s.s..
+        lst s.s..(" ")
         ___
-            last_word = lst[-1]
+            last_word lst[-1]
             r.. l..(last_word)
         ______ I..
             r.. 0

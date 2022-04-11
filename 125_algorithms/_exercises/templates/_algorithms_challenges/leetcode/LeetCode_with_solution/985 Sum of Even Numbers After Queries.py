@@ -39,10 +39,10 @@ c_ Solution:
         """
         maintain a sum
         """
-        cur_sum = s..(f.. l.... x: x % 2 __ 0, A
+        cur_sum s..(f.. l.... x: x % 2 __ 0, A
         ret    # list
         ___ val, idx __ queries:
-            prev = A[idx]
+            prev A[idx]
             __ prev % 2 __ 0:
                 cur_sum -_ prev
             A[idx] += val

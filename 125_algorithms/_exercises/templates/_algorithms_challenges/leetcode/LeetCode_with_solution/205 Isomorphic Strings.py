@@ -16,7 +16,7 @@ Given "paper", "title", return true.
 Note:
 You may assume both s and t have the same length.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -28,10 +28,10 @@ c_ Solution:
         :rtype: bool
         """
         m    # dict
-        mapped = s..()  # case "ab", "aa"
+        mapped s..()  # case "ab", "aa"
         ___ i __ x..(l..(s:
             __ s[i] n.. __ m a.. t[i] n.. __ mapped:
-                m[s[i]] = t[i]
+                m[s[i]] t[i]
                 mapped.add(t[i])
             ____ s[i] __ m a.. m[s[i]] __ t[i]:
                 p..

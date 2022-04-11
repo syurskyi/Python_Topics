@@ -1,6 +1,6 @@
 c_ Solution:
-    EPS = 1e-6
-    OP = (
+    EPS 1e-6
+    OP (
         l.... a, b: a + b,
         l.... a, b: a * b,
         l.... a, b: a - b,
@@ -15,7 +15,7 @@ c_ Solution:
         __ n.. nums:
             r.. F..
 
-        n = l..(nums)
+        n l..(nums)
 
         __ n __ 1:
             r.. a..(nums[0] - 24) < EPS
@@ -25,7 +25,7 @@ c_ Solution:
                 __ i __ j:
                     _____
 
-                nxts = [nums[k] ___ k __ r..(n) __ i != k != j]  # i != j != k is different
+                nxts [nums[k] ___ k __ r..(n) __ i != k != j]  # i != j != k is different
 
                 ___ k __ r..(l..(OP:
                     __ i < j a.. k < 2:

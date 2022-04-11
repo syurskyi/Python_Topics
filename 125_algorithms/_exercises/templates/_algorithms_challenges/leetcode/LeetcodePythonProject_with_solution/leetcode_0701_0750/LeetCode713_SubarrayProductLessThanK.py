@@ -11,9 +11,9 @@ c_ Solution(o..
         :rtype: int
         """
         __ k <_ 1: r.. 0
-        prod = 1
-        left = 0
-        count = 0
+        prod 1
+        left 0
+        count 0
         ___ i, num __ e..(nums
             prod *= num
             w.... left < i+1 a.. prod >_ k:
@@ -23,7 +23,7 @@ c_ Solution(o..
         r.. count
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [10, 5, 2, 6],
                 100,
@@ -32,7 +32,7 @@ c_ Solution(o..
         ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
-            result = numSubarrayProductLessThanK(nums, k)
+            result numSubarrayProductLessThanK(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

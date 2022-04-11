@@ -11,28 +11,28 @@ c_ Solution:
         __ S __ '' a.. '':
             r.. 1
 
-        m, n = l..(S), l..(T)
+        m, n l..(S), l..(T)
 
         """
         `dp[i][j]` means the count of distinct subsequences
         (the substr end at `T[j - 1]`) in the substr end at `S[i - 1]`
         """
-        dp = [[0] * (n + 1) ___ _ __ r..(2)]
+        dp [[0] * (n + 1) ___ _ __ r..(2)]
 
-        prev = curr = 0
-        dp[curr][0] = 1
+        prev curr 0
+        dp[curr][0] 1
         ___ i __ r..(1, m + 1
-            prev = curr
-            curr = 1 - curr
+            prev curr
+            curr 1 - curr
 
-            dp[curr][0] = 1
+            dp[curr][0] 1
 
             ___ j __ r..(1, n + 1
                 """
                 case 1: `S[i - 1]` and `T[j - 1]` is not a pair
                 so keep `T[j - 1]` in candidates
                 """
-                dp[curr][j] = dp[prev][j]
+                dp[curr][j] dp[prev][j]
 
                 """
                 case 2: `S[i - 1]` and `T[j - 1]` is a pair

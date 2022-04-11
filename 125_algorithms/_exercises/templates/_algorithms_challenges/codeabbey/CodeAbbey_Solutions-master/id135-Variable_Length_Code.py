@@ -2,7 +2,7 @@
 
 ___ compress_string(s__
     answer    # list
-    value_dict = {
+    value_dict {
         ' ': '11',             'e': '101',
         't': '1001',           'o': '10001',
         'n': '10000',          'a': '011',
@@ -19,14 +19,14 @@ ___ compress_string(s__
         'q': '000000000001',   'z': '000000000000',
         }
     
-    s__ = s__[::].l..
+    s__ s__[::].l..
 
     # Convert to assigned values.
     eight_bit    # list
     ___ char __ s__[::]:
-        bits = ("%s") % (value_dict[char])
+        bits ("%s") % (value_dict[char])
         eight_bit.a..(bits)
-    eight_bit = (''.j..(eight_bit
+    eight_bit (''.j..(eight_bit
 
     # Split into chunks of 8
     chunks    # list
@@ -35,17 +35,17 @@ ___ compress_string(s__
             w.... l..(eight_bit) < 8:
                 eight_bit += '0'
         w.... l..(eight_bit) > 7:
-            byte = eight_bit[:8]
+            byte eight_bit[:8]
             chunks.a..(byte)
-            eight_bit = eight_bit[8:]
+            eight_bit eight_bit[8:]
             #eight_bit = eight_bit[:-8]
 
     # Convert into hex and print answer.
     ___ chunk __ chunks:
-        chunk = i..(chunk, 2)
-        encoded_value = hex(chunk)[2:].u.. #[2:] to remove the '0x'
+        chunk i..(chunk, 2)
+        encoded_value hex(chunk)[2:].u.. #[2:] to remove the '0x'
         __ l..(encoded_value) __ 1:
-            encoded_value = '0' + encoded_value
+            encoded_value '0' + encoded_value
         answer.a..(encoded_value)
     print(' '.j..(answer
     

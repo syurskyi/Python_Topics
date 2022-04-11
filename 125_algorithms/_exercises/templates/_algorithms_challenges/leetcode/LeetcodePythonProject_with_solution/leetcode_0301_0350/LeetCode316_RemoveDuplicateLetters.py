@@ -7,13 +7,13 @@ Created on Mar 16, 2017
 c_ Solution(o..
     ___ removeDuplicateLetters  s
         __ n.. s: r.. ''
-        cnt = [0]*26
-        pos = 0
+        cnt [0]*26
+        pos 0
         ___ c __ s:
             cnt[o..(c)-o..('a')] += 1
         ___ i, c __ e..(s
             __ s[i] < s[pos]:
-                pos = i
+                pos i
             cnt[o..(c)-o..('a')] -_ 1
             __ cnt[o..(c)-o..('a')] __ 0:
                 _____
@@ -23,31 +23,31 @@ c_ Solution(o..
         __ n.. s: r.. ''
         lastPosMap    # dict
         ___ i, c __ e..(s
-            lastPosMap[c] = i
-        length = l..(lastPosMap)
+            lastPosMap[c] i
+        length l..(lastPosMap)
         res =  'a' *length
-        begin, end = 0, m..(lastPosMap.values
+        begin, end 0, m..(lastPosMap.values
         ___ i __ r..(length
-            minChar = chr(o..('z')+1)
+            minChar chr(o..('z')+1)
             ___ j __ r..(begin, end+1
                 __ s[j] __ lastPosMap a.. s[j] < minChar:
-                    minChar = s[j]
-                    begin = j+1
-            res[i] = minChar
+                    minChar s[j]
+                    begin j+1
+            res[i] minChar
             __ i __ length-1:
                 _____
             del lastPosMap[minChar]
-            end = m..(lastPosMap.values
+            end m..(lastPosMap.values
         r.. ''.j..(res)
     
     ___ test
-        testCases = [
+        testCases [
             'bcabc',
             'cbacbcbc',
         ]
         ___ s __ testCases:
             print('s: %s' % (s
-            result = removeDuplicateLetters(s)
+            result removeDuplicateLetters(s)
             print('result: %s' % (result
             print('-='*20+'-')
 

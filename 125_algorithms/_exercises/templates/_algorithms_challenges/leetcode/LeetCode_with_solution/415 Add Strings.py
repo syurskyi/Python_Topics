@@ -23,23 +23,23 @@ c_ Solution:
         ret    # list
         # let num2 to be one has more digit
         __ l..(num1) > l..(num2
-            num1, num2 = num2, num1
+            num1, num2 num2, num1
 
-        num1 = num1[::-1]
-        num2 = num2[::-1]
-        carry = 0
-        idx = 0
+        num1 num1[::-1]
+        num2 num2[::-1]
+        carry 0
+        idx 0
         w.... idx < l..(num2
             __ idx < l..(num1
-                s = i..(num1[idx]) + i..(num2[idx]) + carry
+                s i..(num1[idx]) + i..(num2[idx]) + carry
             ____
-                s = i..(num2[idx]) + carry
+                s i..(num2[idx]) + carry
 
             __ s >_ 10:
                 s -_ 10
-                carry = 1
+                carry 1
             ____
-                carry = 0
+                carry 0
 
             ret.a..(s)
             idx += 1

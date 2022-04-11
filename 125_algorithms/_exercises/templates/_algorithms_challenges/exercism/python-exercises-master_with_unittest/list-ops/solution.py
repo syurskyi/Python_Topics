@@ -18,7 +18,7 @@ ___ reverse(xs
 
 
 ___ a..(xs, y
-    xs[l..(xs] = [y]
+    xs[l..(xs] [y]
     r.. xs
 
 

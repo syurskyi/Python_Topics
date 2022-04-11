@@ -14,24 +14,24 @@ c_ Solution(o..
       hs.a..((b[1], b[2]
     hs.s..()
     ans    # list
-    pre = cur = N..
+    pre cur N..
     ___ h __ hs:
-      pos = h[0]
-      height = h[1]
+      pos h[0]
+      height h[1]
       __ height < 0:
         heapq.heappush(heap, height)
       ____
-        i = heap.i.. -height)
-        heap[i] = heap[-1]
+        i heap.i.. -height)
+        heap[i] heap[-1]
         heap.p.. )
         __ i < l..(heap
           heapq._siftup(heap, i)
           heapq._siftdown(heap, 0, i)
       __ heap:
-        cur = heap[0]
+        cur heap[0]
         __ cur != pre:
           ans.a..((pos, -1 * cur
-          pre = cur
+          pre cur
       ____
         ans.a..((pos, 0
 

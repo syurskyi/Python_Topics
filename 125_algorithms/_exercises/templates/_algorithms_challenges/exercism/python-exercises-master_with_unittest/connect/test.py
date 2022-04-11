@@ -5,7 +5,7 @@ _______ connect
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
 
-testcases = [
+testcases [
     {
         "description": "an empty board has no winner",
         "board":
@@ -105,10 +105,10 @@ testcases = [
 c_ ConnectTest(unittest.TestCase
     ___ test_game
         ___ testcase __ testcases:
-            game = connect.ConnectGame(testcase["board"])
-            winner = game.get_winner()
-            e.. = testcase["winner"] __ testcase["winner"] ____ "None"
-            got = winner __ winner ____ "None"
+            game connect.ConnectGame(testcase["board"])
+            winner game.get_winner()
+            e.. testcase["winner"] __ testcase["winner"] ____ "None"
+            got winner __ winner ____ "None"
             assertEqual(winner, testcase["winner"],
                              "Test failed: %s, expected winner: %s, got: %s"
                              % (testcase["description"], e.., got

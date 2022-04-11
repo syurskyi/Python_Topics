@@ -20,24 +20,24 @@ c_ Solution(o..
 
         Time Limit Exceeded
         """
-        n = l..(nums)
-        res = [1 ___ i __ r..(n)]
+        n l..(nums)
+        res [1 ___ i __ r..(n)]
         # product of nums[0..i - 1]
-        product = 1
+        product 1
         ___ i __ r..(1, n
             ___ j __ r..(i
                 res[j] *= nums[i]
             product *= nums[i - 1]
-            res[i] = product
+            res[i] product
         r.. res
 
 
-a1 = [1, 2, 3]
-a2 = [2, 3, 4]
-a3 = [1, 2, 3, 4]
-a4 = [2, 3, 4, 5]
+a1 [1, 2, 3]
+a2 [2, 3, 4]
+a3 [1, 2, 3, 4]
+a4 [2, 3, 4, 5]
 
-s = Solution()
+s Solution()
 print(s.productExceptSelf(a1
 print(s.productExceptSelf(a2
 print(s.productExceptSelf(a3

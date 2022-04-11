@@ -16,12 +16,12 @@ c_ Solution:
         __ depth __ l..(triangle) - 1:
             r.. triangle[depth][start]
 
-        key = (depth, start)
+        key (depth, start)
 
         __ key __ memo:
             r.. memo[key]
 
-        memo[key] = m..(
+        memo[key] m..(
             memo_search(depth + 1, start, triangle, memo),
             memo_search(depth + 1, start + 1, triangle, memo)
         )
@@ -43,14 +43,14 @@ c_ Solution:
         __ n.. triangle o. n.. triangle[0]:
             r.. 0
 
-        INFINITY = f__('inf')
-        m = l..(triangle)
-        dp = [[INFINITY] * (m + 1) ___ _ __ r..(2)]
+        INFINITY f__('inf')
+        m l..(triangle)
+        dp [[INFINITY] * (m + 1) ___ _ __ r..(2)]
 
-        prev = curr = 0
+        prev curr 0
         ___ i __ r..(1, m + 1
-            prev = curr
-            curr = 1 - curr
+            prev curr
+            curr 1 - curr
 
             ___ j __ r..(1, i + 1
                 """
@@ -58,7 +58,7 @@ c_ Solution:
                 dp[curr][j] == dp[i][j]
                 """
 
-                dp[curr][j] = triangle[i - 1][j - 1]
+                dp[curr][j] triangle[i - 1][j - 1]
 
                 __ dp[prev][j - 1] < INFINITY o. dp[prev][j] < INFINITY:
                     """
@@ -85,14 +85,14 @@ c_ Solution:
         __ n.. triangle o. n.. triangle[0]:
             r.. 0
 
-        INFINITY = f__('inf')
-        m = l..(triangle)
-        dp = [[INFINITY] * (m + 1) ___ _ __ r..(m + 1)]
+        INFINITY f__('inf')
+        m l..(triangle)
+        dp [[INFINITY] * (m + 1) ___ _ __ r..(m + 1)]
 
-        prev = curr = 0
+        prev curr 0
         ___ i __ r..(m - 1, -1, -1
-            prev = curr
-            curr = 1 - curr
+            prev curr
+            curr 1 - curr
 
             ___ j __ r..(i + 1
                 """
@@ -100,7 +100,7 @@ c_ Solution:
                 dp[curr][j] == dp[i][j]
                 """
 
-                dp[curr][j] = triangle[i][j]
+                dp[curr][j] triangle[i][j]
 
                 __ dp[prev][j] < INFINITY o. dp[prev][j + 1] < INFINITY:
                     """
@@ -108,7 +108,7 @@ c_ Solution:
                     since there are two paths from bottom
                     and `dp[curr][j]` maybe negative
                     """
-                    dp[curr][j] = m..(
+                    dp[curr][j] m..(
                         dp[curr][j] + dp[prev][j],
                         dp[curr][j] + dp[prev][j + 1]
                     )

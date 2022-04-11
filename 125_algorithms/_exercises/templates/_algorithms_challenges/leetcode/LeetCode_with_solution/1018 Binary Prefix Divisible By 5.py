@@ -39,10 +39,10 @@ c_ Solution:
         """
         brute force
         """
-        cur = 0
+        cur 0
         ret    # list
         ___ a __ A:
-            cur = (cur << 1) + a
+            cur (cur << 1) + a
             cur %= 5
             __ cur __ 0:
                 ret.a..(T..)

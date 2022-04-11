@@ -10,13 +10,13 @@ c_ Solution(o..
         :type B: int
         :rtype: List[int]
         """
-        nums = A
+        nums A
         __ n.. nums o. nums[-1] __ -1: r.. []
         res    # list
-        n = l..(nums)
-        dp = [f__('inf')]*n
-        dp[-1] = nums[-1]
-        pos = [-1]*n
+        n l..(nums)
+        dp [f__('inf')]*n
+        dp[-1] nums[-1]
+        pos [-1]*n
         ___ i __ r..(n-2, -1, -1
             __ nums[i] __ -1:
                 _____
@@ -24,18 +24,18 @@ c_ Solution(o..
                 __ dp[j] __ f__('inf'
                     _____
                 __ nums[i]+dp[j] < dp[i]:
-                    dp[i] = nums[i]+dp[j]
-                    pos[i] = j
+                    dp[i] nums[i]+dp[j]
+                    pos[i] j
         __ dp[0] __ f__('inf'
             r.. res
-        ind = 0
+        ind 0
         w.... ind != -1:
             res.a..(ind+1)
-            ind = pos[ind]
+            ind pos[ind]
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1, 2, 4, -1, 2],
                 2,
@@ -52,7 +52,7 @@ c_ Solution(o..
         ___ a, b __ testCases:
             print('a: %s' % a)
             print('b: %s' % b)
-            result = cheapestJump(a, b)
+            result cheapestJump(a, b)
             print('result: %s' % result)
             print('-='*30+'-')
 

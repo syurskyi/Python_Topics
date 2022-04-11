@@ -10,9 +10,9 @@ c_ Solution(o..
         :rtype: int
         """
         __ n <_ 0: r.. 0
-        q, x, res = n, 1, 0
+        q, x, res n, 1, 0
         w.... q > 0:
-            digit = q%10
+            digit q%10
             q //= 10
             res += q*x
             __ digit __ 1:

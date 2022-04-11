@@ -36,11 +36,11 @@ c_ Solution:
         x0 * k = N - k * (k - 1) / 2
         # assure for divisibility
         """
-        cnt = 0
-        k = 0
+        cnt 0
+        k 0
         w... T...
             k += 1
-            x0k = N - k * (k - 1) // 2
+            x0k N - k * (k - 1) // 2
             __ x0k <_ 0 :
                 _____
             __ x0k % k __ 0:
@@ -61,9 +61,9 @@ c_ Solution:
         x0 * k = N - k * (k - 1) / 2
         # assure for divisibility
         """
-        cnt = 0
+        cnt 0
         ___ k __ r..(1, i..(N ** 0.5:  # error
-            x0k = N - k * (k - 1) // 2
+            x0k N - k * (k - 1) // 2
             __ x0k % k __ 0:
                 cnt += 1
 
@@ -77,10 +77,10 @@ c_ Solution:
         __ N __ 1:
             r.. 1
 
-        cnt = 0
+        cnt 0
         ___ i __ r..(1, N
-            d = N // i
-            r = N % i
+            d N // i
+            r N % i
             __ r __ 0 a.. d - i // 2 > 0:
                 cnt += 1
             ____ r __ 1 a.. N __ (d + d + 1) * i // 2:

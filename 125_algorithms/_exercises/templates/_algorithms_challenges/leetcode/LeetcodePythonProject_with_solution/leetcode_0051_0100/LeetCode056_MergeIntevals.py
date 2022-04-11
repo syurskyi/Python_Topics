@@ -7,8 +7,8 @@ Created on Jan 21, 2017
 # Definition for an interval.
 c_ Interval(o..
     ___ - , s=0, e=0
-        start = s
-        end = e
+        start s
+        end e
     
     ___ -s
         r.. '<s: %s, e: %s>' % (start, end)
@@ -25,31 +25,31 @@ c_ Solution(o..
         __ n.. intervals: r.. intervals
         intervals.s..(key=l.... interval: interval.start)
         result    # list
-        i = 0
+        i 0
         w.... i < l..(intervals
-            curr = intervals[i]
-            nextEnd = curr.end
-            j = i+1
+            curr intervals[i]
+            nextEnd curr.end
+            j i+1
             w.... j < l..(intervals
                 __ intervals[j].start > nextEnd:
                     _____
                 ____
-                    nextEnd = m..(intervals[j].end, nextEnd)
+                    nextEnd m..(intervals[j].end, nextEnd)
                 j += 1
-            i = j
+            i j
             result.a..(Interval(curr.start, nextEnd
         
         r.. result
     
     ___ test
-        testCases = [
+        testCases [
             [[1,3],[2,6],[8,10],[15,18]],
             [[1,4],[2,3]],
         ]
         ___ intervals __ testCases:
-            intervals = [Interval(x[0], x[1]) ___ x __ intervals]
+            intervals [Interval(x[0], x[1]) ___ x __ intervals]
             print('intervals: %s' % (intervals
-            result = merge(intervals)
+            result merge(intervals)
             print('result: %s' % (result
             print('-='*15+'-')
 

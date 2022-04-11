@@ -1,7 +1,7 @@
 ____ passwd _______ get_users_for_shell
 
 # https://www.ibm.com/support/knowledgecenter/en/ssw_aix_72/com.ibm.aix.security/passwords_etc_passwd_file.htm
-OTHER_PASSWD_OUTPUT = """root:!:0:0::/:/usr/bin/ksh
+OTHER_PASSWD_OUTPUT """root:!:0:0::/:/usr/bin/ksh
 daemon:!:1:1::/etc:
 bin:!:2:2::/bin:
 sys:!:3:3::/usr/sys:
@@ -18,28 +18,28 @@ jdoe:*:202:1:John Doe:/home/jdoe:/usr/bin/ksh"""
 
 
 ___ test_get_users_for_shell_default_args
-    a.. = get_users_for_shell()
+    a.. get_users_for_shell()
     e.. =  'artagnon', 'avar', 'chad', 'gerrit2',
                 'git-svn-mirror', 'root', 'ssh-rsa'
     ... s..(a..) __ e..
 
 
 ___ test_get_users_for_sh_shell
-    a.. = get_users_for_shell(grep_shell='sh')
+    a.. get_users_for_shell(grep_shell='sh')
     e.. =  'backup', 'bin', 'daemon', 'games', 'gnats', 'irc',
                 'libuuid', 'list', 'lp', 'mail', 'man', 'news',
                 'nobody', 'proxy', 'sys', 'uucp', 'www-data'
     ... s..(a..) __ e..
 
 ___ test_get_users_for_false_shell
-    a.. = get_users_for_shell(grep_shell='false')
+    a.. get_users_for_shell(grep_shell='false')
     e.. =  'Debian-exim', 'avahi', 'ftp', 'messagebus',
                 'mysql', 'postfix', 'statd'
     ... s..(a..) __ e..
 
 
 ___ test_get_users_for_different_passwd_output_and_ksh_shell
-    a.. = get_users_for_shell(passwd_output=OTHER_PASSWD_OUTPUT,
+    a.. get_users_for_shell(passwd_output=OTHER_PASSWD_OUTPUT,
                                  grep_shell='ksh')
     e.. =  'invscout', 'jdoe', 'paul', 'root'
     ... s..(a..) __ e..

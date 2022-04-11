@@ -5,7 +5,7 @@ For example,
 [1,1,2] have the following unique permutations:
 [1,1,2], [1,2,1], and [2,1,1].
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ permuteUnique_TLE  num
         """
@@ -20,7 +20,7 @@ c_ Solution:
 
 
     ___ get_permute_TLE  nums, current, result
-        length = l..(nums)
+        length l..(nums)
         __ length__0:
             result.a..(current)
 

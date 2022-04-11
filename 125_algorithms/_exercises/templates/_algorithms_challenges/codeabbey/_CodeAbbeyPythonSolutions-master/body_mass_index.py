@@ -1,12 +1,12 @@
-amount_values = i..(input
+amount_values i..(input
 results    # list
 
 ___ get_bmi(weight, height
     r.. weight/height**2
 
 ___ i __ r..(amount_values
-    weight, height = map(f__, input().s..
-    bmi = get_bmi(weight, height)
+    weight, height map(f__, input().s..
+    bmi get_bmi(weight, height)
     __(bmi < 18.5
         results.a..("under")
     ____(bmi >_ 18.5 a.. bmi < 25

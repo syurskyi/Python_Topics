@@ -27,23 +27,23 @@ c_ MagicDictionary:
         """
         c_ Node:
             ___ - , chr
-                chr = chr
-                end = F..  # a word ends here
-                children = d..(l....: N..)
+                chr chr
+                end F..  # a word ends here
+                children d..(l....: N..)
 
         c_ Trie:
             ___ -
-                root = Node(N..)
+                root Node(N..)
 
             ___ insert  cur, s, i
                 __ n.. cur:
-                    cur = Node(s[i])
+                    cur Node(s[i])
 
                 __ i __ l..(s) -1:
-                    cur.end = T..
+                    cur.end T..
                 ____
-                    nxt = s[i+1]
-                    cur.children[nxt] = insert(cur.children[nxt], s, i + 1)
+                    nxt s[i+1]
+                    cur.children[nxt] insert(cur.children[nxt], s, i + 1)
 
                 r.. cur
 
@@ -51,7 +51,7 @@ c_ MagicDictionary:
                 __ cur.chr != s[i]:
                     __ modified:
                         r.. F..
-                    modified = T..
+                    modified T..
 
                 __ i __ l..(s) - 1:
                     # modified exactly once and have a word ends here 
@@ -63,15 +63,15 @@ c_ MagicDictionary:
 
                 r.. F..
 
-        trie = Trie()
+        trie Trie()
 
     ___ buildDict  dic: L..[s..]) __ N..
         """
         Build a dictionary through a list of words
         """
         ___ s __ dic:
-            root = trie.root
-            root.children[s[0]] = trie.insert(root.children[s[0]], s, 0)
+            root trie.root
+            root.children[s[0]] trie.insert(root.children[s[0]], s, 0)
 
     ___ s..  word: s..) __ b..:
         """

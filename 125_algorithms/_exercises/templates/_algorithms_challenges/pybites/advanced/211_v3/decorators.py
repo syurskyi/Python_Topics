@@ -1,6 +1,6 @@
 ____ f.. _______ wraps
 
-MAX_RETRIES = 3
+MAX_RETRIES 3
 
 
 c_ MaxRetriesException(E..
@@ -13,7 +13,7 @@ ___ retry(func
 
     $w.. f..
     ___ wrapper $ $$:
-        count = 0
+        count 0
         ___ i __ r..(MAX_RETRIES
             ___
                 func $ $$

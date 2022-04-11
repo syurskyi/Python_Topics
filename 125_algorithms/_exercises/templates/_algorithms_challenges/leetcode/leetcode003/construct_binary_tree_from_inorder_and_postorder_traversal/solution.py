@@ -13,11 +13,11 @@ c_ Solution:
         __ n.. inorder o. n.. postorder:
             r.. N..
         ____
-            d = postorder[-1]
-            root = TreeNode(d)
-            i = inorder.i.. d)
-            left = buildTree(inorder[:i], postorder[:i])
-            right = buildTree(inorder[i + 1:], postorder[i:-1])
-            root.left = left
-            root.right = right
+            d postorder[-1]
+            root TreeNode(d)
+            i inorder.i.. d)
+            left buildTree(inorder[:i], postorder[:i])
+            right buildTree(inorder[i + 1:], postorder[i:-1])
+            root.left left
+            root.right right
             r.. root

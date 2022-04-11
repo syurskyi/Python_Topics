@@ -9,13 +9,13 @@ c_ Solution(o..
         :type N: int
         :rtype: int
         """
-        n = N
-        res = 1
-        i = 3
+        n N
+        res 1
+        i 3
         w.... n%2 __ 0:
             n /= 2
         w.... i*i <_ n:
-            count = 0
+            count 0
             w.... n%i __ 0:
                 n //= i
                 count += 1

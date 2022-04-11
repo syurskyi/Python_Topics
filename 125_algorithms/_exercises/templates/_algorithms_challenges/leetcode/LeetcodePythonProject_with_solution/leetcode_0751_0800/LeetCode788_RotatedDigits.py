@@ -9,17 +9,17 @@ c_ Solution(o..
         :type N: int
         :rtype: int
         """
-        cnt = 0
+        cnt 0
         ___ num __ r..(1, N+1
             __ checkNum(num
                 cnt += 1
         r.. cnt
     
     ___ checkNum  num
-        arr = l..(s..(num
-        i, j = 0, l..(arr)-1
-        arr0 = ['']*l..(arr)
-        hashmap = {
+        arr l..(s..(num
+        i, j 0, l..(arr)-1
+        arr0 ['']*l..(arr)
+        hashmap {
             '1':'1',
             '2':'5',
             '5':'2',
@@ -30,7 +30,7 @@ c_ Solution(o..
         }
         w.... i <_ j:
             __ arr[i] __ hashmap a.. arr[j] __ hashmap:
-                arr0[i], arr0[j] = hashmap[arr[i]], hashmap[arr[j]]
+                arr0[i], arr0[j] hashmap[arr[i]], hashmap[arr[j]]
                 i += 1
                 j -_ 1
             ____
@@ -38,14 +38,14 @@ c_ Solution(o..
         r.. arr0 != arr
     
     ___ test
-        testCases = [
+        testCases [
             10,
             100,
             857,
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = rotatedDigits(n)
+            result rotatedDigits(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

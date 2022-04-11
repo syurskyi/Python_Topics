@@ -11,21 +11,21 @@ c_ Solution(o..
         :type days: List[List[int]]
         :rtype: int
         """
-        n = l..(flights)
-        k0 = l..(days[0])
-        dp = [f__('-inf')]*n
-        dp[0] = 0
+        n l..(flights)
+        k0 l..(days[0])
+        dp [f__('-inf')]*n
+        dp[0] 0
         ___ i __ r..(k0
             tmp  [f__('-inf')]*n
             ___ j __ r..(n
                 ___ k __ r..(n
                     __ j __ k o. flights[k][j] __ 1:
-                        tmp[j] = m..(tmp[j], dp[k]+days[j][i])
-            dp = tmp
+                        tmp[j] m..(tmp[j], dp[k]+days[j][i])
+            dp tmp
         r.. m..(dp)
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [
                     [0, 1, 1],
@@ -68,7 +68,7 @@ c_ Solution(o..
             print('\n'.j..([s..(row) ___ row __ flights]
             print('days:')
             print('\n'.j..([s..(row) ___ row __ days]
-            result = maxVacationDays(flights, days)
+            result maxVacationDays(flights, days)
             print('result: %s' % result)
             print('-='*30+'-')
 

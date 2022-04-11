@@ -3,7 +3,7 @@ _______ c..
 
 c_ Node(o..
   ___ - , val
-    val = val
+    val val
     neighbors    # list
 
   ___ connect  node
@@ -21,7 +21,7 @@ c_ Solution(o..
     """
 
     ___ dfs(root, graph, visited
-      visited[root] = 1
+      visited[root] 1
       ___ nbr __ graph[root].getNbrs
         __ visited[nbr.val] __ 0:
           __ n.. dfs(nbr.val, graph, visited
@@ -29,31 +29,31 @@ c_ Solution(o..
         ____ visited[nbr.val] __ 1:
           r.. F..
 
-      visited[root] = 2
+      visited[root] 2
       ans += root
       r.. T..
 
-    ans = ""
+    ans ""
     graph    # dict
-    visited = c...d..(i..)
-    topNum = 0
+    visited c...d..(i..)
+    topNum 0
     ___ i __ r..(0, l..(words) - 1
-      a = words[i]
-      b = words[i + 1]
-      i = 0
+      a words[i]
+      b words[i + 1]
+      i 0
       w.... i < l..(a) a.. i < l..(b
         __ a[i] != b[i]:
-          nodeA = nodeB = N..
+          nodeA nodeB N..
           __ a[i] n.. __ graph:
-            nodeA = Node(a[i])
-            graph[a[i]] = nodeA
+            nodeA Node(a[i])
+            graph[a[i]] nodeA
           ____
-            nodeA = graph[a[i]]
+            nodeA graph[a[i]]
           __ b[i] n.. __ graph:
-            nodeB = Node(b[i])
-            graph[b[i]] = nodeB
+            nodeB Node(b[i])
+            graph[b[i]] nodeB
           ____
-            nodeB = graph[b[i]]
+            nodeB graph[b[i]]
           nodeA.connect(nodeB)
           _____
         i += 1
@@ -65,7 +65,7 @@ c_ Solution(o..
         __ n.. dfs(c, graph, visited
           r.. ""
 
-    unUsedSet = s..()
+    unUsedSet s..()
     ___ word __ words:
       ___ c __ word:
         unUsedSet.add(c)

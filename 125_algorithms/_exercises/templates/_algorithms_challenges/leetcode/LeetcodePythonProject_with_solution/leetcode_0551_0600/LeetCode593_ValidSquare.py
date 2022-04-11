@@ -13,7 +13,7 @@ c_ Solution(o..
         :type p4: List[int]
         :rtype: bool
         """
-        lengths = [
+        lengths [
             getLen(p1, p2),
             getLen(p2, p3),
             getLen(p3, p4),
@@ -21,13 +21,13 @@ c_ Solution(o..
             getLen(p1, p3),
             getLen(p2, p4),
         ]
-        maxVal, nonMax = 0, 0
-        count = 0
+        maxVal, nonMax 0, 0
+        count 0
         ___ length __ lengths:
-            maxVal = m..(maxVal, length)
+            maxVal m..(maxVal, length)
         ___ length __ lengths:
             __ maxVal != length:
-                nonMax = length
+                nonMax length
             ____
                 count += 1
         __ count != 2: r.. F..

@@ -2,65 +2,65 @@ _______ __
 
 
 ___ parse_markdown(markdown
-    lines = markdown.s..('\n')
-    res = ''
-    in_list = F..
+    lines markdown.s..('\n')
+    res ''
+    in_list F..
     ___ i __ lines:
         __ __.m..('###### (.*)', i) __ n.. N..
-            i = '<h6>' + i[7:] + '</h6>'
+            i '<h6>' + i[7:] + '</h6>'
         ____ __.m..('## (.*)', i) __ n.. N..
-            i = '<h2>' + i[3:] + '</h2>'
+            i '<h2>' + i[3:] + '</h2>'
         ____ __.m..('# (.*)', i) __ n.. N..
-            i = '<h1>' + i[2:] + '</h1>'
-        m = __.m..(r'\* (.*)', i)
+            i '<h1>' + i[2:] + '</h1>'
+        m __.m..(r'\* (.*)', i)
         __ m:
             __ n.. in_list:
-                in_list = T..
-                is_bold = F..
-                is_italic = F..
-                curr = m.group(1)
-                m1 = __.m..('(.*)__(.*)__(.*)', curr)
+                in_list T..
+                is_bold F..
+                is_italic F..
+                curr m.group(1)
+                m1 __.m..('(.*)__(.*)__(.*)', curr)
                 __ m1:
-                    curr = m1.group(1) + '<strong>' + \
+                    curr m1.group(1) + '<strong>' + \
                         m1.group(2) + '</strong>' + m1.group(3)
-                    is_bold = T..
-                m1 = __.m..('(.*)_(.*)_(.*)', curr)
+                    is_bold T..
+                m1 __.m..('(.*)_(.*)_(.*)', curr)
                 __ m1:
-                    curr = m1.group(1) + '<em>' + m1.group(2) + \
+                    curr m1.group(1) + '<em>' + m1.group(2) + \
                         '</em>' + m1.group(3)
-                    is_italic = T..
-                i = '<ul><li>' + curr + '</li>'
+                    is_italic T..
+                i '<ul><li>' + curr + '</li>'
             ____
-                is_bold = F..
-                is_italic = F..
-                curr = m.group(1)
-                m1 = __.m..('(.*)__(.*)__(.*)', curr)
+                is_bold F..
+                is_italic F..
+                curr m.group(1)
+                m1 __.m..('(.*)__(.*)__(.*)', curr)
                 __ m1:
-                    is_bold = T..
-                m1 = __.m..('(.*)_(.*)_(.*)', curr)
+                    is_bold T..
+                m1 __.m..('(.*)_(.*)_(.*)', curr)
                 __ m1:
-                    is_italic = T..
+                    is_italic T..
                 __ is_bold:
-                    curr = m1.group(1) + '<strong>' + \
+                    curr m1.group(1) + '<strong>' + \
                         m1.group(2) + '</strong>' + m1.group(3)
                 __ is_italic:
-                    curr = m1.group(1) + '<em>' + m1.group(2) + \
+                    curr m1.group(1) + '<em>' + m1.group(2) + \
                         '</em>' + m1.group(3)
-                i = '<li>' + curr + '</li>'
+                i '<li>' + curr + '</li>'
         ____
             __ in_list:
-                i = '</ul>+i'
-                in_list = F..
+                i '</ul>+i'
+                in_list F..
 
-        m = __.m..('<h|<ul|<p|<li', i)
+        m __.m..('<h|<ul|<p|<li', i)
         __ n.. m:
-            i = '<p>' + i + '</p>'
-        m = __.m..('(.*)__(.*)__(.*)', i)
+            i '<p>' + i + '</p>'
+        m __.m..('(.*)__(.*)__(.*)', i)
         __ m:
-            i = m.group(1) + '<strong>' + m.group(2) + '</strong>' + m.group(3)
-        m = __.m..('(.*)_(.*)_(.*)', i)
+            i m.group(1) + '<strong>' + m.group(2) + '</strong>' + m.group(3)
+        m __.m..('(.*)_(.*)_(.*)', i)
         __ m:
-            i = m.group(1) + '<em>' + m.group(2) + '</em>' + m.group(3)
+            i m.group(1) + '<em>' + m.group(2) + '</em>' + m.group(3)
         res += i
     __ in_list:
         res += '</ul>'

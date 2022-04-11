@@ -11,13 +11,13 @@ Your algorithm's time complexity must be better than O(n log n), where n is the 
 ____ c.. _______ d..
 _______ heapq
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ C..(o..
     ___ - , val, cnt
-        val = val
-        cnt = cnt
+        val val
+        cnt cnt
 
     ___ __cmp__  other
         r.. cnt - other.cnt
@@ -33,7 +33,7 @@ c_ Solution(o..
         :type K: int
         :rtype: List[int]
         """
-        cnt = d..(i..)
+        cnt d..(i..)
         ___ e __ nums:
             cnt[e] += 1
 

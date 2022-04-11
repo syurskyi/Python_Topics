@@ -33,8 +33,8 @@ c_ Solution:
         """
         Running attribution
         """
-        counter = d..(i..)
-        ret = 0
+        counter d..(i..)
+        ret 0
         ___ t __ t__:
             ret += counter[(60 - t) % 60]  # handle 0
             counter[t % 60] += 1
@@ -50,11 +50,11 @@ c_ Solution:
 
         attribution error
         """
-        hm = d..(i..)
+        hm d..(i..)
         ___ t __ t__:
             hm[t % 60] += 1
 
-        ret = 0
+        ret 0
         ___ k, v __ hm.i..:
             __ k __ 0:
                 ret += (v * (v - 1 // 2

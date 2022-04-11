@@ -47,12 +47,12 @@ ___ count_dirs_and_files(directory='.'
     # files in current_path)
     # Every time the generator is called it will follow each directory recursively until no further
     # subdirectories are available from the initial directory that walk was called upon
-    count_dirs = 0
-    count_files = 0
+    count_dirs 0
+    count_files 0
     ___ dir, number_of_dirs, number_of_files __ __.w..(directory
         count_dirs += l..(number_of_dirs)
         count_files += l..(number_of_files)
-    result = (count_dirs, count_files)
+    result (count_dirs, count_files)
     r.. result
 
 print(count_dirs_and_files

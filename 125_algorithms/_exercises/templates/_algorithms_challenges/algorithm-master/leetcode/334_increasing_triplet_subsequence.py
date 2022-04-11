@@ -7,13 +7,13 @@ c_ Solution:
         __ n.. A:
             r.. F..
 
-        a = b = f__('inf')
+        a b f__('inf')
 
         ___ x __ A:
             __ x <_ a:
-                a = x
+                a x
             ____ x <_ b:
-                b = x
+                b x
             ____
                 r.. T..
 

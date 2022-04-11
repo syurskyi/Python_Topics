@@ -44,15 +44,15 @@ Each node will have a unique integer value from 0 to 1000.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
     ___ -
-        prev = N..
-        root = N..
+        prev N..
+        root N..
 
     ___ increasingBST  root: TreeNode) __ TreeNode:
         """
@@ -68,10 +68,10 @@ c_ Solution:
 
         dfs(node.left)
         __ n.. prev:
-            root = node
+            root node
         ____
-            prev.right = node
-            node.left = N..  # need test case to test it
+            prev.right node
+            node.left N..  # need test case to test it
 
-        prev = node
+        prev node
         dfs(node.right)

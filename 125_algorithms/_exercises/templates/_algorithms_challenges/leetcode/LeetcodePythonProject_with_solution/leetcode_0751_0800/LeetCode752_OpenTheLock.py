@@ -11,31 +11,31 @@ c_ Solution(o..
         :rtype: int
         """
         queue =  '0000' 
-        level = 0
-        visited = s..( '0000' )
-        deadends = s..(deadends)
+        level 0
+        visited s..( '0000' )
+        deadends s..(deadends)
         __ '0000' __ deadends:
             r.. -1
         w.... queue:
-            n = l..(queue)
+            n l..(queue)
             ___ _ __ r..(n
-                s = queue.p.. 0)
+                s queue.p.. 0)
                 __ s __ target:
                     r.. level
                 ___ i __ r..(4
-                    s01 = i..(s[i])+1
+                    s01 i..(s[i])+1
                     __ s01 >_ 10:
                         s01 -_ 10
-                    s01 = s..(s01)
-                    s02 = i..(s[i])-1
+                    s01 s..(s01)
+                    s02 i..(s[i])-1
                     __ s02 < 0:
                         s02 += 10
-                    s02 = s..(s02)
-                    s0 = s[:i]+s01+s[i+1:]
+                    s02 s..(s02)
+                    s0 s[:i]+s01+s[i+1:]
                     __ s0 n.. __ visited a.. s0 n.. __ deadends:
                         queue.a..(s0)
                         visited.add(s0)
-                    s0 = s[:i]+s02+s[i+1:]
+                    s0 s[:i]+s02+s[i+1:]
                     __ s0 n.. __ visited a.. s0 n.. __ deadends:
                         queue.a..(s0)
                         visited.add(s0)
@@ -43,7 +43,7 @@ c_ Solution(o..
         r.. -1
     
     ___ test
-        testCases = [
+        testCases [
             [
                 ["0201","0101","0102","1212","2002"],
                 "0202",
@@ -62,7 +62,7 @@ c_ Solution(o..
             ],
         ]
         ___ deadends, target __ testCases:
-            result = openLock(deadends, target)
+            result openLock(deadends, target)
             print('result: %s' % result)
             print('-='*30+'-')
 

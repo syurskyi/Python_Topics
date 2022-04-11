@@ -7,12 +7,12 @@ c_ Solution:
         __ n.. nums:
             r.. 0
 
-        ans = N..
-        cnt = 0
+        ans N..
+        cnt 0
 
         ___ num __ nums:
             __ cnt __ 0:
-                ans, cnt = num, 1
+                ans, cnt num, 1
             ____ ans __ num:
                 cnt += 1
             ____
@@ -41,7 +41,7 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        NOT_FOUND = 0
+        NOT_FOUND 0
 
         __ n.. nums:
             r.. NOT_FOUND
@@ -49,7 +49,7 @@ c_ Solution:
         freq    # dict
 
         ___ a __ nums:
-            freq[a] = freq.g.. a, 0) + 1
+            freq[a] freq.g.. a, 0) + 1
 
         ___ a, cnt __ freq.i..:
             __ cnt > l..(nums) // 2:

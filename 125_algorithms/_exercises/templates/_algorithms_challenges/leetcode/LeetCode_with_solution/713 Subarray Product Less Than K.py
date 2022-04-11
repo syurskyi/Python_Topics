@@ -27,9 +27,9 @@ c_ Solution:
         Two pointer
         Count attribute to the end
         """
-        i = 0
-        ret = 0
-        p = 1
+        i 0
+        ret 0
+        p 1
         ___ j __ r..(l..(nums:
             p *= nums[j]
             w.... p >_ k a.. i <_ j:

@@ -3,13 +3,13 @@ ____ decimal _______ Decimal
 
 c_ IntList(l..
     ___ - , numbers
-        numbers = _validate(numbers)
+        numbers _validate(numbers)
         super().__init__(numbers)
 
     ___ _validate  numbers
         __ isi..(numbers, (i.., f__, Decimal:
-            numbers = [numbers]
-        numbers = [i..(n) ___ n __ numbers __ r..(n, 0) __ i..(n)]
+            numbers [numbers]
+        numbers [i..(n) ___ n __ numbers __ r..(n, 0) __ i..(n)]
         __ n.. isi..(numbers, i..) a.. any(n.. isi..(x, i..) ___ x __ numbers
             r.. T.. _*{__class__.__name__} can only operate with integer values')
         r.. numbers
@@ -19,14 +19,14 @@ c_ IntList(l..
 
     $
     ___ mean
-        elems = _elements()
+        elems _elements()
         r.. s..(elems) / l..(elems)
 
     $
     ___ median
-        elems = _elements()
+        elems _elements()
         elems.s..()
-        n = l..(elems)
+        n l..(elems)
         r.. (s..(elems[n // 2 - 1:n // 2 + 1]) / 2.0, elems[n // 2])[n % 2] __ n > 0 ____ N..
 
     ___ a..  numbers

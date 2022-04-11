@@ -38,7 +38,7 @@ c_ Solution:
             If "I", then put smallest as prev. Increase from the min
             If "D", then put the largest as prev. Decrese from the max
         """
-        mini, maxa = 0, l..(S)
+        mini, maxa 0, l..(S)
         ret    # list
         ___ c __ S:
             __ c __ "I":
@@ -57,13 +57,13 @@ c_ Solution:
 
         errror since cannot repeat
         """
-        ret = [0]
+        ret [0]
         ___ c __ S:
             __ c __ "I":
                 ret.a..(ret[-1] + 1)
             ____
                 ret.a..(ret[-1] -1)
-        mn = m..(ret)
+        mn m..(ret)
         r.. [
             e - mn
             ___ e __ ret

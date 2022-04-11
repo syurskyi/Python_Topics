@@ -3,18 +3,18 @@
 
 
 ___ breaking_records(score
-    m.. = m.. = score[0]
-    min_count = max_count = 0
+    m.. m.. score[0]
+    min_count max_count 0
     ___ i __ score[1:]:
         __ i > m..:
             max_count += 1
-            m.. = i
+            m.. i
         __ i < m..:
             min_count += 1
-            m.. = i
+            m.. i
     r.. max_count, min_count
 
 
-n = i..(input
-score = l.. m..(i.., input().s..()))
+n i..(input
+score l.. m..(i.., input().s..()))
 print(*breaking_records(score

@@ -11,23 +11,23 @@ c_ Solution(o..
     """
 
     ___ next(curr, maze
-      height = l..(maze)
-      width = l..(maze[0])
-      directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+      height l..(maze)
+      width l..(maze[0])
+      directions [(-1, 0), (1, 0), (0, -1), (0, 1)]
       ___ di, dj __ directions:
-        dist = 0
-        i, j = curr
+        dist 0
+        i, j curr
         w.... 0 <_ i + di < height a.. 0 <_ j + dj < width a.. maze[i + di][j + dj] != 1:
           i += di
           j += dj
           dist += 1
         y.. (i, j)
 
-    queue = d..([t..(start)])
-    visited = s..()
-    destination = t..(destination)
+    queue d..([t..(start)])
+    visited s..()
+    destination t..(destination)
     w.... queue:
-      curr = queue.popleft()
+      curr queue.popleft()
       __ curr __ visited:
         _____
       __ curr __ destination:

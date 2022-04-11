@@ -11,7 +11,7 @@ Given array A = [2,3,1,1,4]
 The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last
 index.)
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ jump_TLE  A
         """
@@ -22,14 +22,14 @@ c_ Solution:
         __ n.. A:
             r.. 0
 
-        length = l..(A)
-        counter = 0
-        dp = [[] ___ _ __ A]
+        length l..(A)
+        counter 0
+        dp [[] ___ _ __ A]
 
         q    # list
         q.a..(0)
         w.... q:
-            current_level = q
+            current_level q
             q    # list
             ___ ind __ current_level:
                 __ ind>_length-1:
@@ -49,20 +49,20 @@ c_ Solution:
         :param A: a list of integers
         :return: integer, minimum number of jumps
         """
-        length = l..(A)
-        counter = 0
+        length l..(A)
+        counter 0
 
-        start = 0
-        end = 1  # max reach [0, 1)
-        gmax = 0
+        start 0
+        end 1  # max reach [0, 1)
+        gmax 0
         w.... end<length:  # when end==length, it has already reached the last item
             __ n.. start<end: r.. 0  # avoid dead loop
             ___ i __ x..(start, end
-                gmax = m..(gmax, A[i]+i)
+                gmax m..(gmax, A[i]+i)
 
             counter += 1
-            start = end
-            end = gmax+1
+            start end
+            end gmax+1
 
         r.. counter
 

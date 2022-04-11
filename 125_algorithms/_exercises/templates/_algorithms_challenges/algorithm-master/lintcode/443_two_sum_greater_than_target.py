@@ -5,13 +5,13 @@ c_ Solution:
     @return: an integer
     """
     ___ twoSum2  A, target
-        ans = 0
+        ans 0
         __ n.. A o. l..(A) < 2:
             r.. ans
 
         A.s..()
 
-        left, right = 0, l..(A) - 1
+        left, right 0, l..(A) - 1
         w.... left < right:
             # if minimum + maximum still <= target
             # ignore the 2nd, 3rd maximum

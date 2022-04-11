@@ -8,24 +8,24 @@ ____ binary_search_tree _______ BinarySearchTree, TreeNode
 c_ BinarySearchTreeTest(unittest.TestCase
 
     ___ test_data_is_retained
-        e.. = TreeNode('4', N.., N..)
+        e.. TreeNode('4', N.., N..)
         assertTreeEqual(BinarySearchTree( '4' ).data(), e..)
 
     # Test inserting data at proper node
     ___ test_smaller_data_at_left_node
-        e.. = TreeNode('4', TreeNode('2', N.., N..), N..)
+        e.. TreeNode('4', TreeNode('2', N.., N..), N..)
         assertTreeEqual(BinarySearchTree( '4', '2' ).data(), e..)
 
     ___ test_same_number_at_left_node
-        e.. = TreeNode('4', TreeNode('4', N.., N..), N..)
+        e.. TreeNode('4', TreeNode('4', N.., N..), N..)
         assertTreeEqual(BinarySearchTree( '4', '4' ).data(), e..)
 
     ___ test_greater_number_at_right_node
-        e.. = TreeNode('4', N.., TreeNode('5', N.., N..
+        e.. TreeNode('4', N.., TreeNode('5', N.., N..
         assertTreeEqual(BinarySearchTree( '4', '5' ).data(), e..)
 
     ___ test_can_create_complex_tree
-        e.. = TreeNode(
+        e.. TreeNode(
             '4',
             TreeNode(
                 '2',

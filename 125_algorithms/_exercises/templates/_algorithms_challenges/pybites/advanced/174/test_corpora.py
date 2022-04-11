@@ -2,7 +2,7 @@ _______ p__
 ____ corpora _______ GETTYSBURG, Corpora
 
 # https://www.oaktreecapital.com/insights/howard-marks-memos
-TAX_SYSTEM_IN_US = """Suppose that every day, ten men go out for beer, and the bill for all ten comes to $100.  If they paid their bill the way we pay our taxes (by taxpayer decile), it would go something like this:
+TAX_SYSTEM_IN_US """Suppose that every day, ten men go out for beer, and the bill for all ten comes to $100.  If they paid their bill the way we pay our taxes (by taxpayer decile), it would go something like this:
 
 The first four men (the poorest) would pay nothing.
 The fifth would pay $1.
@@ -42,7 +42,7 @@ The nine men surrounded the tenth and beat him up.
 The next day, the tenth man didn’t show up, so the other nine sat down and had their beers without him.  But when it came time to pay the bill, they discovered something important: They didn’t have enough money between all of them for even half of the bill!
 
 And that is how our tax system works.  The people who already pay the highest taxes will naturally get the most benefit from a tax reduction.  Tax them too much, attack them for being wealthy, and they just may not show up anymore.  In fact, they might start drinking overseas, where the atmosphere is friendlier."""
-EXTRA_CHAR = ["—", "\n", "  "]
+EXTRA_CHAR ["—", "\n", "  "]
 
 
 ?p__.f..
@@ -56,36 +56,36 @@ ___ beer_tax
 
 
 ___ test_cleanup_text(getty
-    cleaned = getty.cleaned
+    cleaned getty.cleaned
     ... l..(cleaned) __ 1419
     ___ char __ EXTRA_CHAR[:2]:
         ... char __ cleaned
 
 
 ___ test_cleanup_text_one_extra_char(getty
-    getty.extra = [EXTRA_CHAR[0]]
-    cleaned = getty.cleaned
+    getty.extra [EXTRA_CHAR[0]]
+    cleaned getty.cleaned
     ... l..(cleaned) __ 1419
     ... EXTRA_CHAR[0] n.. __ cleaned
     ... EXTRA_CHAR[1] __ cleaned
 
 
 ___ test_cleanup_text_multiple_extra_char(getty
-    getty.extra = EXTRA_CHAR
-    cleaned = getty.cleaned
+    getty.extra EXTRA_CHAR
+    cleaned getty.cleaned
     ... l..(cleaned) __ 1416
     ___ char __ EXTRA_CHAR:
         ... char n.. __ cleaned
 
 
 ___ test_cleanup_text_alt_text(beer_tax
-    cleaned = beer_tax.cleaned
+    cleaned beer_tax.cleaned
     ... l..(cleaned) __ 2762
     ... "$" n.. __ cleaned
 
 
 ___ test_word_metrics_gettysburg_default(getty
-    e.. = [
+    e.. [
         ("nation", 5),
         ("dedicated", 4),
         ("great", 3),
@@ -96,32 +96,32 @@ ___ test_word_metrics_gettysburg_default(getty
 
 
 ___ test_word_metrics_beer_tax(beer_tax
-    e.. = [("pay", 13), ("would", 12), ("men", 8), ("paid", 7), ("man", 7)]
+    e.. [("pay", 13), ("would", 12), ("men", 8), ("paid", 7), ("man", 7)]
     ... beer_tax.metrics __ e..
 
 
 ___ test_word_metrics_with_word_removed(beer_tax
-    e.. = [("pay", 13), ("would", 12), ("paid", 7), ("bill", 6), ("saving", 6)]
-    beer_tax.extra = ["men", "man"]
+    e.. [("pay", 13), ("would", 12), ("paid", 7), ("bill", 6), ("saving", 6)]
+    beer_tax.extra ["men", "man"]
     ... beer_tax.metrics __ e..
 
 
 ___ test_graph_gettysburgh(getty, capfd
-    e.. = [
+    e.. [
         "    nation #####",
         " dedicated ####",
         "     great ###",
         "    cannot ###",
         "      dead ###",
     ]
-    getty.extra = EXTRA_CHAR
+    getty.extra EXTRA_CHAR
     getty.graph
-    output = ?.r .. 0].s..
+    output ?.r .. 0].s..
     ... output __ e..
 
 
 ___ test_graph_beer_tax(beer_tax, capfd
-    e.. = [
+    e.. [
         "       pay #############",
         "     would ############",
         "       men ########",
@@ -133,21 +133,21 @@ ___ test_graph_beer_tax(beer_tax, capfd
         "      four #####",
         "     tenth #####",
     ]
-    beer_tax.count = 10
+    beer_tax.count 10
     beer_tax.graph
-    output = ?.r .. 0].s..
+    output ?.r .. 0].s..
     ... output __ e..
 
 
 ___ test_graph_beer_tax_asterisk(beer_tax, capfd
-    e.. = [
+    e.. [
         "       pay *************",
         "     would ************",
         "       men ********",
         "      paid *******",
         "       man *******",
     ]
-    beer_tax.tag = "*"
+    beer_tax.tag "*"
     beer_tax.graph
-    output = ?.r .. 0].s..
+    output ?.r .. 0].s..
     ... output __ e..

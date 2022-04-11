@@ -19,30 +19,30 @@ c_ Solution(o..
         :rtype: List[int]
         Space: O(n)
         """
-        n = l..(nums)
+        n l..(nums)
         # left[i] is the product to the left of i (nums[0..i - 1])
-        left = [1 ___ i __ r..(n)]
+        left [1 ___ i __ r..(n)]
         # right[i] is the product to the right of i (nums[i + 1..-1])
-        right = [1 ___ i __ r..(n)]
+        right [1 ___ i __ r..(n)]
         ___ i __ r..(1, n
             # i ranges from 1 to n - 1
             # j ranges from n - 2 to 0
-            j = n - 1 - i
-            left[i] = left[i - 1] * nums[i - 1]
-            right[j] = right[j + 1] * nums[j + 1]
-        res = [1 ___ i __ r..(n)]
+            j n - 1 - i
+            left[i] left[i - 1] * nums[i - 1]
+            right[j] right[j + 1] * nums[j + 1]
+        res [1 ___ i __ r..(n)]
         ___ i __ r..(n
-            res[i] = left[i] * right[i]
+            res[i] left[i] * right[i]
         r.. res
 
 
-a0 = [0, 0]
-a1 = [1, 2, 3]
-a2 = [2, 3, 4]
-a3 = [1, 2, 3, 4]
-a4 = [2, 3, 4, 5]
+a0 [0, 0]
+a1 [1, 2, 3]
+a2 [2, 3, 4]
+a3 [1, 2, 3, 4]
+a4 [2, 3, 4, 5]
 
-s = Solution()
+s Solution()
 print(s.productExceptSelf(a0
 print(s.productExceptSelf(a1
 print(s.productExceptSelf(a2

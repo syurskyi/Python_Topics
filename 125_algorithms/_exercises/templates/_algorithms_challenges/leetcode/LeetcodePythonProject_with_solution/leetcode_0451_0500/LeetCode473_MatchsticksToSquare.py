@@ -11,9 +11,9 @@ c_ Solution(o..
         :rtype: bool
         """
         __ n.. nums: r.. F..
-        sumVal = s..(nums)
+        sumVal s..(nums)
         __ sumVal%4 != 0: r.. F..
-        target = sumVal//4
+        target sumVal//4
         # Faster
         nums.s..(r.._T..
         r.. helper(nums, [0]*4, 0, target)
@@ -34,13 +34,13 @@ c_ Solution(o..
         r.. F..
     
     ___ test
-        testCases = [
+        testCases [
             [1, 1, 2, 2, 2],
             [3, 3, 3, 3, 4],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = makesquare(nums)
+            result makesquare(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

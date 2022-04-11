@@ -4,8 +4,8 @@ ____ zoo _______ Animal
 ___ test_zoo_5_animals
     ___ animal __ 'dog cat fish lion mouse'.s.. :
         Animal(animal)
-    zoo = Animal.zoo()
-    e.. = ("10001. Dog",
+    zoo Animal.zoo()
+    e.. ("10001. Dog",
                 "10002. Cat",
                 "10003. Fish",
                 "10004. Lion",

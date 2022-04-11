@@ -10,7 +10,7 @@ c_ HeartBeat:
     """
     ___ initialize  slaves_ip_list, k
         slaves_ip_list.update(d...f..(slaves_ip_list, 0
-        ttl = 2 * k
+        ttl 2 * k
 
     """
     @param: timestamp: current timestamp in seconds
@@ -19,7 +19,7 @@ c_ HeartBeat:
     """
     ___ ping  timestamp, slave_ip
         __ slave_ip __ slaves_ip_list:
-            slaves_ip_list[slave_ip] = timestamp
+            slaves_ip_list[slave_ip] timestamp
 
     """
     @param: timestamp: current timestamp in seconds

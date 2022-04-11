@@ -10,16 +10,16 @@ c_ Solution(o..
         :type k: int
         :rtype: str
         """
-        nums = l..(r..(1, n+1
+        nums l..(r..(1, n+1
         k -_ 1
-        mod = 1
+        mod 1
         ___ i __ r..(n
-            mod = mod*(i+1)
-        res = ''
+            mod mod*(i+1)
+        res ''
         ___ i __ r..(n
-            mod = mod//(n-i)
-            curInd = k//mod
-            k = k % mod
+            mod mod//(n-i)
+            curInd k//mod
+            k k % mod
             res += s..(nums[curInd])
             nums.p.. curInd)
         r.. res

@@ -13,22 +13,22 @@ c_ Solution(o..
     """
     __ n.. head:
       r.. head
-    l = 1
-    p = head
+    l 1
+    p head
     w.... p.next:
       l += 1
-      p = p.next
-    k = k % l
+      p p.next
+    k k % l
     __ k __ 0:
       r.. head
-    k = l - k % l - 1
-    pp = head
+    k l - k % l - 1
+    pp head
     print
     k
     w.... k > 0:
-      pp = pp.next
+      pp pp.next
       k -_ 1
-    newHead = pp.next
-    pp.next = N..
-    p.next = head
+    newHead pp.next
+    pp.next N..
+    p.next head
     r.. newHead

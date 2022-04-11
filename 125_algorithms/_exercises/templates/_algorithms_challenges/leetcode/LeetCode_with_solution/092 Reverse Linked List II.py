@@ -10,12 +10,12 @@ Note:
 Given m, n satisfy the following condition:
 1 <= m <= n <= length of list.
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
     ___  -r
         r.. r.. (val)
@@ -37,21 +37,21 @@ c_ Solution:
         __ n.. head o. m>_n:
             r.. head
 
-        dummy = ListNode(0)
-        dummy.next = head
+        dummy ListNode(0)
+        dummy.next head
 
-        cnt = 1  # position starting from 1
-        pre = dummy
+        cnt 1  # position starting from 1
+        pre dummy
 
-        start_pre = N..
-        start = N..
+        start_pre N..
+        start N..
 
-        cur = pre.next  # cannot put it in while loop? affect reverse link
+        cur pre.next  # cannot put it in while loop? affect reverse link
         w.... pre.next:
             # record starting point
             __ cnt__m:
-                start_pre = pre
-                start = cur
+                start_pre pre
+                start cur
 
             # reverse link (not node)
             # 1 -> 2 -> 3
@@ -63,28 +63,28 @@ c_ Solution:
                 # cur = temp
 
                 # cur.nex is assign first, left to right
-                cur.next, pre, cur = pre, cur, cur.next  # different from pre, cur, cur.next = cur, cur,next, pre
+                cur.next, pre, cur pre, cur, cur.next  # different from pre, cur, cur.next = cur, cur,next, pre
                 cnt += 1
                 _____
 
             # reconnect
             ____ cnt__n+1:
-                end = pre
-                start_pre.next = end
-                start.next = cur
+                end pre
+                start_pre.next end
+                start.next cur
                 _____
 
 
 
-            pre = pre.next
-            cur = cur.next
+            pre pre.next
+            cur cur.next
             cnt += 1
 
         r.. dummy.next
 
 __ _____ __ ____
-    length = 3
-    lst = [ListNode(i+1) ___ i __ r..(length)]
+    length 3
+    lst [ListNode(i+1) ___ i __ r..(length)]
     ___ i __ x..(length-1
-        lst[i].next = lst[i+1]
+        lst[i].next lst[i+1]
     print Solution().reverseBetween(lst[0], 1, 3)

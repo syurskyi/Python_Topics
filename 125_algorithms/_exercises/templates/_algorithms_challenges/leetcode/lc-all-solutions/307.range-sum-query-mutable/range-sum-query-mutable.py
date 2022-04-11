@@ -1,46 +1,46 @@
 # Segment tree node
 c_ STNode(o..
   ___ - , start, end
-    start = start
-    end = end
-    total = 0
-    left = N..
-    right = N..
+    start start
+    end end
+    total 0
+    left N..
+    right N..
 
 
 c_ SegmentedTree(o..
   ___ - , nums, start, end
-    root = buildTree(nums, start, end)
+    root buildTree(nums, start, end)
 
   ___ buildTree  nums, start, end
     __ start > end:
       r.. N..
 
     __ start __ end:
-      node = STNode(start, end)
-      node.total = nums[start]
+      node STNode(start, end)
+      node.total nums[start]
       r.. node
 
-    mid = start + (end - start) / 2
+    mid start + (end - start) / 2
 
-    root = STNode(start, end)
-    root.left = buildTree(nums, start, mid)
-    root.right = buildTree(nums, mid + 1, end)
-    root.total = root.left.total + root.right.total
+    root STNode(start, end)
+    root.left buildTree(nums, start, mid)
+    root.right buildTree(nums, mid + 1, end)
+    root.total root.left.total + root.right.total
     r.. root
 
   ___ updateVal  i, val
     ___ updateVal(root, i, val
       __ root.start __ root.end:
-        root.total = val
+        root.total val
         r.. val
-      mid = root.start + (root.end - root.start) / 2
+      mid root.start + (root.end - root.start) / 2
       __ i <_ mid:
         updateVal(root.left, i, val)
       ____
         updateVal(root.right, i, val)
 
-      root.total = root.left.total + root.right.total
+      root.total root.left.total + root.right.total
       r.. root.total
 
     r.. updateVal(root, i, val)
@@ -50,7 +50,7 @@ c_ SegmentedTree(o..
       __ root.start __ start a.. root.end __ end:
         r.. root.total
 
-      mid = root.start + (root.end - root.start) / 2
+      mid root.start + (root.end - root.start) / 2
       __ j <_ mid:
         r.. rangeSum(root.left, start, end)
       ____ i >_ mid + 1:
@@ -67,7 +67,7 @@ c_ NumArray(o..
     initialize your data structure here.
     :type nums: List[int]
     """
-    stTree = SegmentedTree(nums, 0, l..(nums) - 1)
+    stTree SegmentedTree(nums, 0, l..(nums) - 1)
 
   ___ update  i, val
     """

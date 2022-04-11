@@ -42,21 +42,21 @@ c_ Solution:
         count number of 0 from the right
         O(N)
         """
-        n = l..(S)
-        Z = [0 ___ _ __ r..(n+1)]  # let Z[i] be #zero in A[i:]
-        O = [0 ___ _ __ r..(n+1)]  # let O[i] be #one in A[:i]
+        n l..(S)
+        Z [0 ___ _ __ r..(n+1)]  # let Z[i] be #zero in A[i:]
+        O [0 ___ _ __ r..(n+1)]  # let O[i] be #one in A[:i]
         ___ i __ r..(1, n+1
-            O[i] = O[i-1]
+            O[i] O[i-1]
             __ S[i-1] __ "1":
                 O[i] += 1
 
         ___ i __ r..(n-1, -1, -1
-            Z[i] = Z[i+1]
+            Z[i] Z[i+1]
             __ S[i] __ "0":
                 Z[i] += 1
 
-        ret = f__('inf')
+        ret f__('inf')
         ___ i __ r..(n
-            ret = m..(ret, O[i] + Z[i+1])
+            ret m..(ret, O[i] + Z[i+1])
 
         r.. ret

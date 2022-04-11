@@ -2,19 +2,19 @@ ____ c.. _______ n..
 ____ i.. _______ cycle, islice
 ____ t__ _______ sleep
 
-State = n..('State', 'color command timeout')
+State n..('State', 'color command timeout')
 
 
 ___ traffic_light
     """Returns an itertools.cycle iterator that
        when iterated over returns State namedtuples
        as shown in the Bite's description"""
-    colors = ('red','green','amber')
-    commands = ('Stop','Go','Caution')
-    timeouts = (2,2,0.5)
+    colors ('red','green','amber')
+    commands ('Stop','Go','Caution')
+    timeouts (2,2,0.5)
 
     
-    states = [State(color,command,timeout) ___ color,command,timeout __ z..(colors,commands,timeouts)]
+    states [State(color,command,timeout) ___ color,command,timeout __ z..(colors,commands,timeouts)]
     r.. cycle(states)
 
 

@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: List[List[int]]
         """
         nums.s..()
-        n = l..(nums)
+        n l..(nums)
         res    # list
         ___ i __ r..(n-3
             __ i > 0 a.. nums[i] __ nums[i-1]:
@@ -19,7 +19,7 @@ c_ Solution(o..
             ___ j __ r..(i+1, n-2
                 __ j > i+1 a.. nums[j] __ nums[j-1]:
                     _____
-                k, l = j+1, n-1
+                k, l j+1, n-1
                 w.... k < l:
                     tmp  nums[i]+nums[j]+nums[k]+nums[l]
                     __ tmp __ target:
@@ -37,7 +37,7 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1,0,-1,0,-2,2],
                 0,
@@ -45,7 +45,7 @@ c_ Solution(o..
         ]
         ___ nums, target __ testCases:
             print('nums: %s' % nums)
-            result = fourSum(nums, target)
+            result fourSum(nums, target)
             print('result: %s' % result)
             print('-='*30+'-')
 

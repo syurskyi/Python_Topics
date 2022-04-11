@@ -1,8 +1,8 @@
 c_ TrieNode(o..
   ___ -
     children    # dict
-    isWord = F..
-    word = ""
+    isWord F..
+    word ""
 
 
 c_ Solution(o..
@@ -12,24 +12,24 @@ c_ Solution(o..
     :type sentence: str
     :rtype: str
     """
-    root = TrieNode()
+    root TrieNode()
     ___ word __ d..:
-      p = root
+      p root
       ___ c __ word:
         __ c n.. __ p.children:
-          p.children[c] = TrieNode()
-        p = p.children[c]
-      p.isWord = T..
-      p.word = word
+          p.children[c] TrieNode()
+        p p.children[c]
+      p.isWord T..
+      p.word word
 
-    words = sentence.s..
+    words sentence.s..
     ___ i __ r..(l..(words:
-      p = root
+      p root
       ___ c __ words[i]:
         __ c __ p.children:
-          p = p.children[c]
+          p p.children[c]
           __ p.isWord:
-            words[i] = p.word
+            words[i] p.word
             _____
         ____
           _____

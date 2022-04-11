@@ -12,12 +12,12 @@ c_ Solution(o..
     :type target: float
     :rtype: int
     """
-    ans = p.val
+    ans p.val
     w.... p:
       __ a..(target - p.val) < a..(ans - target
-        ans = p.val
+        ans p.val
       __ target < p.val:
-        p = p.left
+        p p.left
       ____
-        p = p.right
+        p p.right
     r.. ans

@@ -12,7 +12,7 @@ c_ Solution(o..
         res.a..(temp)
       r..
     ___ i __ r..(1, l..(num) + 1
-      val = num[:i]
+      val num[:i]
       __ i __ 1 o. (i > 1 a.. num[0] != "0"  # prevent "00*" as a number
         dfs(num[i:], temp + "+" + val, cur + i..(val), i..(val), res)
         dfs(num[i:], temp + "-" + val, cur - i..(val), -i..(val), res)

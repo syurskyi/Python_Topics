@@ -10,21 +10,21 @@ c_ Solution(o..
         :rtype: bool
         """
         __ x < 0: r.. F..
-        div = 1
+        div 1
         w.... x//div >_ 10:
             div *= 10
         w.... x > 0:
-            first = x//div
+            first x//div
             last  = x%10
             __ first != last:
                 r.. F..
             x -_ first*div
-            x = (x-last)//10
+            x (x-last)//10
             div //= 100
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             123,
             121,
             1,
@@ -36,7 +36,7 @@ c_ Solution(o..
         ]
         ___ x __ testCases:
             print('x: %s' % (x
-            result = isPalindrome(x)
+            result isPalindrome(x)
             print('result: %s' % (result
             print('-='*30+'-')
 

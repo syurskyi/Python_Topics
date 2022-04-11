@@ -10,11 +10,11 @@ c_ Solution(o..
         :type R: int
         :rtype: int
         """
-        primes = s..([2, 3, 5, 7, 11, 13, 17, 19])
-        cnt = 0
+        primes s..([2, 3, 5, 7, 11, 13, 17, 19])
+        cnt 0
         ___ num __ r..(L, R+1
-            bits = 0
-            n = num
+            bits 0
+            n num
             w.... n > 0:
                 bits += n & 1
                 n >>= 1
@@ -22,7 +22,7 @@ c_ Solution(o..
         r.. cnt
     
     ___ test
-        testCases = [
+        testCases [
             [6, 10],
             [10, 15],
             [942063, 945851],
@@ -30,7 +30,7 @@ c_ Solution(o..
         ___ l, r __ testCases:
             print('l: %s' % l)
             print('r: %s' % r)
-            result = countPrimeSetBits(l, r)
+            result countPrimeSetBits(l, r)
             print('result: %s' % result)
             print('-='*30+'-')
 

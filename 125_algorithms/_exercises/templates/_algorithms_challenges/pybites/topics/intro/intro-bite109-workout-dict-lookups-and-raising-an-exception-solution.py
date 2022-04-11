@@ -1,11 +1,11 @@
-workout_schedule = {'Friday': 'Shoulders',
+workout_schedule {'Friday': 'Shoulders',
                     'Monday': 'Chest+biceps',
                     'Saturday': 'Rest',
                     'Sunday': 'Rest',
                     'Thursday': 'Legs',
                     'Tuesday': 'Back+triceps',
                     'Wednesday': 'Core'}
-rest, chill, go_train = 'Rest', 'Chill out!', 'Go train {}'
+rest, chill, go_train 'Rest', 'Chill out!', 'Go train {}'
 
 
 ___ get_workout_motd(day
@@ -20,7 +20,7 @@ ___ get_workout_motd(day
        Trivia: /etc/motd is a file on Unix-like systems that contains
        a 'message of the day'"""
     ___
-        workout = workout_schedule[day.t..]
+        workout workout_schedule[day.t..]
     ______ K..:
         r.. K..('Workout does not exist.')
     r.. chill __ workout __ rest ____ go_train.f..(workout)

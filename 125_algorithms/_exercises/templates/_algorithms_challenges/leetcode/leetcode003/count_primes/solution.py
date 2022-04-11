@@ -18,14 +18,14 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        res = 0
+        res 0
         ___ i __ r..(2, n
             __ is_prime(i
                 res += 1
         r.. res
 
     ___ is_prime  k
-        i = 2
+        i 2
         w.... i * i <_ k:
             __ k % i __ 0:
                 r.. F..
@@ -33,5 +33,5 @@ c_ Solution(o..
         r.. T..
 
 
-s = Solution()
+s Solution()
 print(s.countPrimes(500

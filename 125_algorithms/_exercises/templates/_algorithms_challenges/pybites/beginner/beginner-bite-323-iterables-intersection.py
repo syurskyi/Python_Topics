@@ -46,7 +46,7 @@ ___ intersection $a.. I..) __ S..[A..]:
     # as input.
     # {0,1,2,3} intersection {0,1,2,3}, {3,4,5,6}, {2,3,5,6}
     ___
-        first = l[0]
+        first l[0]
         r..(first.i.. *l
     ______ IndexError __ e:
         print(e)

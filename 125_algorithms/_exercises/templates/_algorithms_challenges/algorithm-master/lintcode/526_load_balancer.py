@@ -12,21 +12,21 @@ c_ LoadBalancer:
     """
     ___ add  server_id
         servers.a..(server_id)
-        svr2idx[server_id] = l..(servers) - 1
+        svr2idx[server_id] l..(servers) - 1
 
     """
     @param: server_id: server_id remove a bad server from the cluster
     @return: nothing
     """
     ___ remove  server_id
-        svrs = servers
+        svrs servers
 
-        i = svr2idx[server_id]
-        key = svrs[-1]
+        i svr2idx[server_id]
+        key svrs[-1]
 
         # swap `svrs[-1]` and `svrs[i]`
-        svr2idx[key] = i
-        svrs[i] = svrs[-1]
+        svr2idx[key] i
+        svrs[i] svrs[-1]
 
         svrs.p.. )
         del svr2idx[server_id]
@@ -35,5 +35,5 @@ c_ LoadBalancer:
     @return: pick a server in the cluster randomly with equal probability
     """
     ___ pick
-        i = r__.randrange(l..(servers
+        i r__.randrange(l..(servers
         r.. servers[i]

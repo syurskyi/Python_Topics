@@ -3,7 +3,7 @@ Given an integer n, return the number of trailing zeroes in n!.
 
 Note: Your solution should be in logarithmic time complexity.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -17,7 +17,7 @@ c_ Solution:
         :type n: int
         :rtype: int
         """
-        cnt = 0
+        cnt 0
         w.... n:
             n /= 5
             cnt += n

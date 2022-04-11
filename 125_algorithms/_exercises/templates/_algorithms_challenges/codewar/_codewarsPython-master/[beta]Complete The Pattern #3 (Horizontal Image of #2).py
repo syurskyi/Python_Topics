@@ -1,5 +1,5 @@
 ___ pattern(n
-    s__ = ''
+    s__ ''
     res    # list
     ___ i __ r..(n,0,-1
         s__ += s..(i)

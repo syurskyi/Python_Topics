@@ -11,8 +11,8 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. board o. n.. board[0]: r.. 0
-        m, n = l..(board), l..(board[0])
-        count = 0
+        m, n l..(board), l..(board[0])
+        count 0
         ___ i __ r..(m
             ___ j __ r..(n
                 __ board[i][j] __ 'X':

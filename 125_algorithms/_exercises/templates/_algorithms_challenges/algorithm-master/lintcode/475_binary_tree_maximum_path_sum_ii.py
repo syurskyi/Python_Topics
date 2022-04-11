@@ -16,7 +16,7 @@ c_ Solution:
         __ n.. root:
             r.. 0
 
-        left = maxPathSum2(root.left)
-        right = maxPathSum2(root.right)
+        left maxPathSum2(root.left)
+        right maxPathSum2(root.right)
 
         r.. root.val + m..(0, left, right)

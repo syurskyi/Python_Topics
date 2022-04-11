@@ -14,6 +14,6 @@ ___ transpose(data
     Out: [('Bob', 'Julian'), (60, 221), (60, 34), (56, 78)]
     """
     __ isi..(data, d..
-        data = ((key, value) ___ key, value __ data.i..
+        data ((key, value) ___ key, value __ data.i..
     r.. z..(*data)
 

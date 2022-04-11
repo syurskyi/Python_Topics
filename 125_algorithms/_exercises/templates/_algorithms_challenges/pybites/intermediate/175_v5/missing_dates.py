@@ -10,9 +10,9 @@ ___ get_missing_dates(dates
 
        See the Bite description and tests for example outputs.
     """
-    dt = s..(dates)
-    start_date, end_date = dt[0], dt[-1]
-    rng: t.. = end_date - start_date
+    dt s..(dates)
+    start_date, end_date dt[0], dt[-1]
+    rng: t.. end_date - start_date
     r.. [start_date + t..(d)
             ___ d __ r..(rng.days)
             __ (start_date + t..(d n.. __ dt]

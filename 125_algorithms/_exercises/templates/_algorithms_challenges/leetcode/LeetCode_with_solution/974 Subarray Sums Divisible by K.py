@@ -26,15 +26,15 @@ c_ Solution:
         count the prefix sum mod K
         nC2
         """
-        prefix_sum = 0
-        counter = d..(i..)
-        counter[0] = 1  # important trival case
+        prefix_sum 0
+        counter d..(i..)
+        counter[0] 1  # important trival case
         ___ a __ A:
             prefix_sum += a
             prefix_sum %= K
             counter[prefix_sum] += 1
 
-        ret = 0
+        ret 0
         ___ v __ counter.v..
             ret += v * (v-1) // 2
 
@@ -49,10 +49,10 @@ c_ Solution:
         Divide: Translate divisible by K into mod.
         prefix sum has to be MOD by K.
         """
-        prefix_sum = 0
-        counter = d..(i..)
-        counter[0] = 1  # trival case. !important
-        ret = 0
+        prefix_sum 0
+        counter d..(i..)
+        counter[0] 1  # trival case. !important
+        ret 0
         ___ a __ A:
             prefix_sum += a
             prefix_sum %= K

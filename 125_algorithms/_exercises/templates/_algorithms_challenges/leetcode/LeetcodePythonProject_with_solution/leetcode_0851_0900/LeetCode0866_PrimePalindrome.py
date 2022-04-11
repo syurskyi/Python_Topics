@@ -9,11 +9,11 @@ c_ Solution(o..
         :type N: int
         :rtype: int
         """
-        n = N
+        n N
         __ 8 <_ n <_ 11:
             r.. 11
         ___ x __ r..(10**(l..(s..(n//2), 10**5
-            y = i..(s..(x) + s..(x)[-2::-1])
+            y i..(s..(x) + s..(x)[-2::-1])
             __ y >_ n a.. isPrime(y
                 r.. y
     
@@ -26,11 +26,11 @@ c_ Solution(o..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             
         ]
         ___ n __ testCases:
-            res = primePalindrome(n)
+            res primePalindrome(n)
             print('res: %s' % res)
 
 __ _____ __ _____

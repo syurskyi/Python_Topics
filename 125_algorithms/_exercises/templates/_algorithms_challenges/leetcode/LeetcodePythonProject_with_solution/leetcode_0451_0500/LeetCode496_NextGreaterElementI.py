@@ -13,7 +13,7 @@ c_ Solution(o..
         """
         res    # list
         ___ k, num0 __ e..(findNums
-            ind = nums.i.. num0)
+            ind nums.i.. num0)
             ___ i __ r..(ind, l..(nums:
                 __ nums[i] > num0:
                     res.a..(nums[i])
@@ -23,14 +23,14 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             (
                 [4, 1, 2],
                 [1, 3, 4, 2],
             ),
         ]
         ___ findNums, nums __ testCases:
-            result = nextGreaterElement(findNums, nums)
+            result nextGreaterElement(findNums, nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

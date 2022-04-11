@@ -1,7 +1,7 @@
 ____ bs4 _______ BeautifulSoup
 _______ __
 # source: https://www.virgin.com/richard-branson/my-top-10-quotes-living-life-better
-HTML = """<!DOCTYPE html>
+HTML """<!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
   <title>My top 10 quotes on living life better | Virgin</title>
@@ -26,24 +26,24 @@ HTML = """<!DOCTYPE html>
 </html>"""
 
 
-___ extract_quotes(html: s.. = HTML) __ d..:
+___ extract_quotes(html: s.. HTML) __ d..:
     """See instructions in the Bite description"""
-    soup = BeautifulSoup(html)
+    soup BeautifulSoup(html)
 
     author_to_quotes    # dict
 
-    quotes = soup.find_all('p')
+    quotes soup.find_all('p')
     ___ quote __ quotes:
-        quote_text = quote.getText(s..=T..)
-        m.. = __.s..(r'"(.+)"',quote_text)
+        quote_text quote.getText(s..=T..)
+        m.. __.s..(r'"(.+)"',quote_text)
         __ m..:
-            a = m...group(1)
+            a m...group(1)
         ____
             _____
-        author = __.s..(r'-\s?(.+)$',quote_text).group(1)
+        author __.s..(r'-\s?(.+)$',quote_text).group(1)
 
 
-        author_to_quotes[author] = a
+        author_to_quotes[author] a
 
 
     r.. author_to_quotes

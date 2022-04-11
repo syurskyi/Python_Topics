@@ -5,16 +5,16 @@ ___ calculator(operation, numbers
     """TODO 1:
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals"""
-    ops = {'add': l.... x: x[0] + x[1],
+    ops {'add': l.... x: x[0] + x[1],
            'sub': l.... x: x[0] - x[1],
            'mul': l.... x: x[0] * x[1],
            'div': l.... x: x[0] / x[1]
            }
     __ isi..(numbers, i..
-        numbers = [numbers]
-    res = f__(numbers[0])
+        numbers [numbers]
+    res f__(numbers[0])
     ___ num __ numbers[1:]:
-        res = ops[operation]([res, f__(num)])
+        res ops[operation]([res, f__(num)])
     r.. r..(res,2)
 
 
@@ -27,7 +27,7 @@ ___ create_parser
 
        Note that type=float times out here so do the casting in the calculator
        function above!"""
-    parser = a__.A..(d.._'A simple calculator')
+    parser a__.A..(d.._'A simple calculator')
     parser.a..('-a', '--add', t..=s.., nargs='+', h.._'Sums numbers')
     parser.a..('-s', '--sub', t..=s.., nargs='+', h.._'Subtracts numbers')
     parser.a..('-m', '--mul', t..=s.., nargs='+', h.._'Multiplies numbers')
@@ -40,10 +40,10 @@ ___ call_calculator(args=N.., stdout=F..
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,
        if stdout is True print the result"""
-    parser = create_parser()
+    parser create_parser()
 
     __ args __ N..
-        args = parser.p..
+        args parser.p..
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
@@ -52,9 +52,9 @@ ___ call_calculator(args=N.., stdout=F..
             _____
 
         ___
-            res = calculator(operation, numbers)
+            res calculator(operation, numbers)
         ______ Z..
-            res = 0
+            res 0
 
         __ stdout:
             print(res)

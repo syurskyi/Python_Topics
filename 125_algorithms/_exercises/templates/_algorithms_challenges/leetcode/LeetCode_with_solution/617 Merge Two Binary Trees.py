@@ -32,9 +32,9 @@ Note: The merging process must start from the root nodes of both trees.
 # Definition for a binary tree node.
 c_ TreeNode:
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 
 c_ Solution:
@@ -42,9 +42,9 @@ c_ Solution:
         __ n.. t1 a.. n.. t2:
             r..
 
-        node = TreeNode(0)
+        node TreeNode(0)
         node.val += t1 a.. t1.val o. 0
         node.val += t2 a.. t2.val o. 0
-        node.left = mergeTrees(t1 a.. t1.left, t2 a.. t2.left)
-        node.right = mergeTrees(t1 a.. t1.right, t2 a.. t2.right)
+        node.left mergeTrees(t1 a.. t1.left, t2 a.. t2.left)
+        node.right mergeTrees(t1 a.. t1.right, t2 a.. t2.right)
         r.. node

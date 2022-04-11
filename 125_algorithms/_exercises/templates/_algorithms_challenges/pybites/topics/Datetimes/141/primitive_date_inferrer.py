@@ -4,10 +4,10 @@ ____ c.. _______ C.., d..
 
 
 c_ DateFormat(E..
-    DDMMYY = 0  # dd/mm/yy
-    MMDDYY = 1  # mm/dd/yy
-    YYMMDD = 2  # yy/mm/dd
-    NONPARSABLE = -999
+    DDMMYY 0  # dd/mm/yy
+    MMDDYY 1  # mm/dd/yy
+    YYMMDD 2  # yy/mm/dd
+    NONPARSABLE -999
 
     @classmethod
     ___ get_d_parse_formats(cls, val_ N..
@@ -18,7 +18,7 @@ c_ DateFormat(E..
             for all supported date formats in this enum
         2. for val=n an explicit format string for a given enum member value
         """
-        d_parse_formats = ["%d/%m/%y", "%m/%d/%y", "%y/%m/%d"]
+        d_parse_formats ["%d/%m/%y", "%m/%d/%y", "%y/%m/%d"]
         __ val __ N..
             r.. d_parse_formats
         __ 0 <_ val <_ l..(d_parse_formats
@@ -39,11 +39,11 @@ ___ _maybe_DateFormats(date_str
     a list of enum members, where each member represents
     a possible date format for the input date_str
     """
-    d_parse_formats = DateFormat.get_d_parse_formats()
+    d_parse_formats DateFormat.get_d_parse_formats()
     maybe_formats    # list
     ___ idx, d_parse_fmt __ e..(d_parse_formats
         ___
-            _parsed_date = d__.s..(date_str, d_parse_fmt) # pylint: disable=W0612
+            _parsed_date d__.s..(date_str, d_parse_fmt) # pylint: disable=W0612
             maybe_formats.a..(DateFormat(idx
         ______ V..
             p..
@@ -66,20 +66,20 @@ ___ get_dates(dates
     return_list    # list
     #
     # to find the most prevalent date format
-    enum_dict = d..(i..)
+    enum_dict d..(i..)
     ___ date __ dates:
-        enum_list = _maybe_DateFormats(date)
+        enum_list _maybe_DateFormats(date)
         ___ index __ r..(l..(enum_list:
             __ enum_list[index].value __ -999:
                 enum_dict[-999] += 1
             ____
                 enum_dict[enum_list[index].value] += 1
-    sorted_enum = s..(enum_dict, key=enum_dict.get, r.._T..
+    sorted_enum s..(enum_dict, key=enum_dict.get, r.._T..
     # convert to the most prevalent date format
     __ enum_dict[sorted_enum[0]] != enum_dict[sorted_enum[1]] a.. sorted_enum[0] != -999:
-        date_str = DateFormat.get_d_parse_formats(sorted_enum[0])
+        date_str DateFormat.get_d_parse_formats(sorted_enum[0])
         ___ date __ dates:
-            enum_list = _maybe_DateFormats(date)
+            enum_list _maybe_DateFormats(date)
             __ enum_list[0].value __ -999:
                 #print('Invalid')
                 return_list.a..('Invalid')
@@ -97,7 +97,7 @@ ___ get_dates(dates
     r.. return_list
 
 
-dates1 = [
+dates1 [
     "04/25/79",
     "08/09/70",
     "08/04/10",

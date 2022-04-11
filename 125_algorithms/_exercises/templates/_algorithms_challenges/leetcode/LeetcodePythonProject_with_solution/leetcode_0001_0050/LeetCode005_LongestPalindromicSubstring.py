@@ -6,42 +6,42 @@ Created on Jan 7, 2017
 
 c_ Solution(o..
     ___ longestPalindromeDP  s
-        res = ''
+        res ''
         __ n.. s: r.. res
-        n = l..(s)
-        dp = [[F..]*n ___ _ __ r..(n)]
+        n l..(s)
+        dp [[F..]*n ___ _ __ r..(n)]
         ___ i __ r..(n
             ___ j __ r..(i, -1, -1
                 __ s[i] __ s[j] a.. (i-j<_1 o. dp[i-1][j+1]
-                    dp[i][j] = T..
+                    dp[i][j] T..
                     __ i-j+1 > l..(res
-                        res = s[j:i+1]
+                        res s[j:i+1]
         r.. res
     
     ___ longestPalindromeDP_another  s
         __ n.. s: r.. s
-        length = l..(s)
-        maxLen = 1
-        table = [[F..,]*length ___ _ __ r..(length)]
-        longest = s[0]
+        length l..(s)
+        maxLen 1
+        table [[F..,]*length ___ _ __ r..(length)]
+        longest s[0]
         ___ l __ r..(length
             ___ i __ r..(length-l
-                j = i+l
+                j i+l
                 __ s[i] __ s[j] a.. (j-i<_2 o. table[i+1][j-1]
-                    table[i][j] = T..
+                    table[i][j] T..
                     __ j-i+1 > maxLen:
-                        maxLen = j-i+1
-                        longest = s[i:j+1]
+                        maxLen j-i+1
+                        longest s[i:j+1]
         r.. longest
     
     ___ test
-        testCases = [
+        testCases [
             'babad',
             'cbbd',
         ]
         ___ s __ testCases:
             print('s: %s' % (s
-            result = longestPalindromeDP(s)
+            result longestPalindromeDP(s)
             print('result: %s' % (result
             print('-='*15+'-')
 

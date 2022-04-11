@@ -28,7 +28,7 @@ The knight's health has no upper bound.
 Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the
 princess is imprisoned.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 _______ ___
 
 
@@ -45,17 +45,17 @@ c_ Solution:
         :type dungeon: list[list[int]
         :rtype: int
         """
-        m = l..(dungeon)
-        n = l..(dungeon[0])
+        m l..(dungeon)
+        n l..(dungeon[0])
 
-        F = [[___.maxint ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
+        F [[___.maxint ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
         ___ i __ x..(m-1, -1, -1
             ___ j __ x..(n-1, -1, -1
                 __ i __ m-1 a.. j __ n-1:
-                    F[i][j] = m..(1, 1-dungeon[i][j])
+                    F[i][j] m..(1, 1-dungeon[i][j])
                 ____
-                    p.. = m..(F[i+1][j], F[i][j+1])  # choose the path with minimum HP required
-                    F[i][j] = m..(1, p..-dungeon[i][j])  # adjust for current cell
+                    p.. m..(F[i+1][j], F[i][j+1])  # choose the path with minimum HP required
+                    F[i][j] m..(1, p..-dungeon[i][j])  # adjust for current cell
 
         r.. F[0][0]
 
@@ -67,19 +67,19 @@ c_ Solution:
         :type dungeon: list[list[int]
         :rtype: int
         """
-        m = l..(dungeon)
-        n = l..(dungeon[0])
+        m l..(dungeon)
+        n l..(dungeon[0])
         __ m __ 1 a.. n __ 1:
             r.. 1-m..(0, dungeon[0][0])
 
-        F = [[-___.maxint-1 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
+        F [[-___.maxint-1 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
         ___ i __ x..(1, m+1
             ___ j __ x..(1, n+1
                 __ i __ 1 a.. j __ 1:
-                    F[i][j] = dungeon[i-1][j-1]
+                    F[i][j] dungeon[i-1][j-1]
                 ____
-                    F[i][j] = m..(F[i-1][j], F[i][j-1])+dungeon[i-1][j-1]
-                    F[i][j] = m..(F[i][j], dungeon[i-1][j-1])
+                    F[i][j] m..(F[i-1][j], F[i][j-1])+dungeon[i-1][j-1]
+                    F[i][j] m..(F[i][j], dungeon[i-1][j-1])
 
         r.. 1-F[-1][-1]
 

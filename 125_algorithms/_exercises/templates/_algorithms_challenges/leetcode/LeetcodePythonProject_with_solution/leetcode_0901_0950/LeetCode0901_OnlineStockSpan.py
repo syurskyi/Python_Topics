@@ -3,7 +3,7 @@ c_ StockSpanner(o..
     ___ -
         prices    # list
         dp    # list
-        idx = 0
+        idx 0
 
     ___ next  price
         """
@@ -13,7 +13,7 @@ c_ StockSpanner(o..
         __ idx __ 0 o. prices[-1] > price:
             dp.a..(1)
         ____
-            i = idx -1
+            i idx -1
             w.... i >_ 0 a.. price >_ prices[i]:
                 i -_ dp[i]
             dp.a..(idx-i)
@@ -26,7 +26,7 @@ c_ StockSpanner(o..
 # param_1 = obj.next(price)
 
 __ _____ __ _____
-    stockSpanner = StockSpanner()
+    stockSpanner StockSpanner()
     # print(stockSpanner.next(100))
     # print(stockSpanner.next(80))
     # print(stockSpanner.next(60))

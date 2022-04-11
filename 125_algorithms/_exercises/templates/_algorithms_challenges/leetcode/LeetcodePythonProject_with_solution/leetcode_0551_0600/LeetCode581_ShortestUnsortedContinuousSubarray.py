@@ -9,8 +9,8 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        numsSorted = s..(nums)
-        i, j = 0, l..(nums)-1
+        numsSorted s..(nums)
+        i, j 0, l..(nums)-1
         w.... i < j a.. numsSorted[i] __ nums[i]:
             i += 1
         __ i __ j:
@@ -20,13 +20,13 @@ c_ Solution(o..
         r.. j-i+1
     
     ___ test
-        testCases = [
+        testCases [
             [2, 6, 4, 8, 10, 9, 15],
             [1, 2, 3, 5],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = findUnsortedSubarray(nums)
+            result findUnsortedSubarray(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

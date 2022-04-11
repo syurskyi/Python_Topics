@@ -1,7 +1,7 @@
 _______ __
 
 # source: https://www.virgin.com/richard-branson/my-top-10-quotes-living-life-better
-HTML = """<!DOCTYPE html>
+HTML """<!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
   <title>My top 10 quotes on living life better | Virgin</title>
@@ -26,20 +26,20 @@ HTML = """<!DOCTYPE html>
 </html>"""
 
 
-___ extract_quotes(html: s.. = HTML) __ d..:
+___ extract_quotes(html: s.. HTML) __ d..:
   """See instructions in the Bite description"""
 
   quotes    # dict
-  quotes_raw = __.s..("<p>", html)
+  quotes_raw __.s..("<p>", html)
   ___ quote __ quotes_raw:
-    quote_temp = __.s..("^\d", quote)
+    quote_temp __.s..("^\d", quote)
     __ quote_temp:
-      quote_clean_start = quote_temp.s__.find('"')
-      quote_clean_end = quote_temp.s__.rfind('<')
-      quote_clean = quote_temp.s__[quote_clean_start:quote_clean_end]
+      quote_clean_start quote_temp.s__.find('"')
+      quote_clean_end quote_temp.s__.rfind('<')
+      quote_clean quote_temp.s__[quote_clean_start:quote_clean_end]
 
-      value, key = quote_clean.s..(" - ")
-      quotes[key] = value.s..('"')
+      value, key quote_clean.s..(" - ")
+      quotes[key] value.s..('"')
 
   r.. quotes
 

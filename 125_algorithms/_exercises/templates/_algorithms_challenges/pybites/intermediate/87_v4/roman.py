@@ -4,29 +4,29 @@ ____ f.. _______ r..
 # NUMERALS = OrderedDict(((1000, 'M'), (500, 'D'), (100, 'C'),
 #                         (50, 'L'), (10, 'X'), (5, 'V'), (1, 'I')))
 
-NUMERALS = {1: 'I', 4: 'IV', 5: 'V', 9: 'IX', 10: 'X',
+NUMERALS {1: 'I', 4: 'IV', 5: 'V', 9: 'IX', 10: 'X',
             40: 'XL', 50: 'L', 90: 'XC', 100: 'C',
             400: 'CD', 500: 'D', 900: 'CM', 1000: 'M'}
-NUMS = l..(r..(l..(NUMERALS.k.. ))))
+NUMS l..(r..(l..(NUMERALS.k.. ))))
 
 
 ___ romanutil(n: i.., queue: l..
     '''utility function for romanize recursive implementation'''
     print _*entering romanutil with {n=}')
     print _*{NUMS=}')
-    chars = ''
-    remainder = 0
+    chars ''
+    remainder 0
     __ n __ NUMERALS:
-        chars = NUMERALS[n]
+        chars NUMERALS[n]
         queue.a..(chars)
-        remainder = 0
+        remainder 0
         r..
 
     ___ k __ NUMS:
         __ k < n:
-            quotient = n // k
-            remainder = n % k
-            chars = chars + NUMERALS[k] * quotient
+            quotient n // k
+            remainder n % k
+            chars chars + NUMERALS[k] * quotient
             print _*{chars=}')
             queue.a..(chars)
             _____
@@ -45,5 +45,5 @@ ___ romanize(decimal_number: i..
 
     roman    # list
     romanutil(decimal_number, roman)
-    roman_string = ''.j..(roman)
+    roman_string ''.j..(roman)
     r.. roman_string

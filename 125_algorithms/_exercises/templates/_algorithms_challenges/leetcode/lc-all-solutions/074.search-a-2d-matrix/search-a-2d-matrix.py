@@ -8,16 +8,16 @@ c_ Solution(o..
     __ l..(matrix) __ 0 o. l..(matrix[0]) __ 0:
       r.. F..
 
-    m = l..(matrix)
-    n = l..(matrix[0])
+    m l..(matrix)
+    n l..(matrix[0])
 
-    start, end = 0, m * n - 1
+    start, end 0, m * n - 1
     w.... start + 1 < end:
-      mid = start + (end - start) / 2
+      mid start + (end - start) / 2
       __ matrix[mid / n][mid % n] > target:
-        end = mid
+        end mid
       ____ matrix[mid / n][mid % n] < target:
-        start = mid
+        start mid
       ____
         r.. T..
     __ matrix[start / n][start % n] __ target:

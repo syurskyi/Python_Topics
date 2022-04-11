@@ -25,8 +25,8 @@ c_ PeekingIterator(o..
     Initialize your data structure here.
     :type iterator: Iterator
     """
-    i.. = iterator
-    nextElem = N..
+    i.. iterator
+    nextElem N..
 
   ___ peek
     """
@@ -36,17 +36,17 @@ c_ PeekingIterator(o..
     __ nextElem:
       r.. nextElem
     __ i...hasNext
-      nextElem = i...next()
+      nextElem i...next()
     r.. nextElem
 
   ___ next
     """
     :rtype: int
     """
-    ret = nextElem
+    ret nextElem
 
     __ nextElem:
-      nextElem = N..
+      nextElem N..
       r.. ret
 
     r.. i...next()

@@ -1,13 +1,13 @@
 """
 Reverse a singly linked list.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ ListNode(o..
     ___ - , x
-        val = x
-        next = N..
+        val x
+        next N..
 
 
 c_ Solution(o..
@@ -19,15 +19,15 @@ c_ Solution(o..
         __ n.. head:
             r.. head
 
-        dummy = ListNode(0)
-        dummy.next = head
+        dummy ListNode(0)
+        dummy.next head
 
-        pre = dummy
-        cur = pre.next
+        pre dummy
+        cur pre.next
         w.... pre a.. cur:
-            pre, cur.next, cur = cur, pre, cur.next
+            pre, cur.next, cur cur, pre, cur.next
             # incorrect evaluation order
             # pre, cur, cur.next = cur, cur.next, pre
 
-        dummy.next.next = N..  # original head
+        dummy.next.next N..  # original head
         r.. pre  # new head

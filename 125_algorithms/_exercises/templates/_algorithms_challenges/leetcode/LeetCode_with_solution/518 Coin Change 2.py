@@ -42,15 +42,15 @@ c_ Solution:
         :type coins: List[int]
         :rtype: int
         """
-        F = d..(l....: d..(i..
-        n = l..(coins)
+        F d..(l....: d..(i..
+        n l..(coins)
         ___ l __ r..(n + 1
-            F[0][l] = 1   # trivial case
+            F[0][l] 1   # trivial case
              # why not start from 0, because we need to handle trivial case F[0][0]
 
         ___ a __ r..(1, amount + 1
             ___ l __ r..(1, n + 1
-                F[a][l] = F[a][l-1] + F[a - coins[l-1]][l]
+                F[a][l] F[a][l-1] + F[a - coins[l-1]][l]
 
         r.. F[amount][n]
 
@@ -71,10 +71,10 @@ c_ Solution:
             r.. 1
 
         coins.s..()
-        n = l..(coins)
-        F = d..(l....: d..(i..
+        n l..(coins)
+        F d..(l....: d..(i..
         ___ i __ r..(n
-            F[coins[i]][i] = 1
+            F[coins[i]][i] 1
 
         ___ a __ r..(1, amount + 1
             ___ i __ r..(n
@@ -95,9 +95,9 @@ c_ Solution:
         :type coins: List[int]
         :rtype: int
         """
-        F = {0: 1}
+        F {0: 1}
         ___ a __ r..(1, amount + 1
-            F[a] = 0
+            F[a] 0
             ___ c __ coins:
                 __ a - c __ F:
                     F[a] += F[a - c]

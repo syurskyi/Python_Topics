@@ -1,7 +1,7 @@
 _______ j__
 ____ t___ _______ DefaultDict
 
-members = """
+members """
 id,first_name,last_name,email
 1,Junie,Kybert;jkybert0@army.mil
 2,Sid,Churching|schurching1@tumblr.com
@@ -18,21 +18,21 @@ id,first_name,last_name,email
 
 ___ convert_to_json(members=members
     data    # list
-    members_list = members.s.. 
+    members_list members.s..
     ___ index, member __ e..(members_list
-        line = member.r..('|',',').r..(';',',').s..(',')
+        line member.r..('|',',').r..(';',',').s..(',')
         __ index __ 0:
-            col0, col1, col2, col3 = line[0], line[1], line[2], line[3]
+            col0, col1, col2, col3 line[0], line[1], line[2], line[3]
         ____
-            member_dict = DefaultDict(s..)
-            member_dict[col0] = line[0]
-            member_dict[col1] = line[1]
-            member_dict[col2] = line[2]
-            member_dict[col3] = line[3]
+            member_dict DefaultDict(s..)
+            member_dict[col0] line[0]
+            member_dict[col1] line[1]
+            member_dict[col2] line[2]
+            member_dict[col3] line[3]
             data.a..(member_dict)
     r.. j__.d..data)
 
 
 print(t..(convert_to_json()))
 
-data = j__.l.. (convert_to_json
+data j__.l.. (convert_to_json

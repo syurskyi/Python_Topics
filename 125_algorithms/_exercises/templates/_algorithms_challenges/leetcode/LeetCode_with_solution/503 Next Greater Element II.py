@@ -52,11 +52,11 @@ c_ Solution:
         :type nums: List[int]
         :rtype: List[int]
         """
-        A = nums + nums
+        A nums + nums
         print(A)
         ret    # list
         ___ e __ nums:
-            t = b__(A, e)
+            t b__(A, e)
             __ t __ l..(A
                 ret.a..(-1)
             ____

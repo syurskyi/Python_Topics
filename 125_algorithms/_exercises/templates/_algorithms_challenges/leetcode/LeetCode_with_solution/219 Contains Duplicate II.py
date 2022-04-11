@@ -2,7 +2,7 @@
 Given an array of integers and an integer k, find out whether there there are two distinct indices i and j in the array
 such that nums[i] = nums[j] and the difference between i and j is at most k.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 _______ heapq
 ____ c.. _______ d..
 
@@ -14,17 +14,17 @@ c_ Solution:
 
         :rtype: bool
         """
-        d = d..(l..)
+        d d..(l..)
         ___ i, v __ e..(nums
             heapq.heappush(d[v], i)
 
         ___ v __ d.v..
             __ l..(v) > 1:
-                pre = heapq.heappop(v)
+                pre heapq.heappop(v)
                 w.... v:
-                    cur = heapq.heappop(v)
+                    cur heapq.heappop(v)
                     __ cur-pre <_ k:
                         r.. T..
-                    pre = cur
+                    pre cur
 
         r.. F..

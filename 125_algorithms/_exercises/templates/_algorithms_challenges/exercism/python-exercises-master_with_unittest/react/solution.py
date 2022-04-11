@@ -1,8 +1,8 @@
 c_ Cell(o..
     ___ -
         _watchers    # list
-        _value = N..
-        counter = 0
+        _value N..
+        counter 0
 
     ___ add_watcher  cell
         _watchers.a..(cell)
@@ -13,7 +13,7 @@ c_ Cell(o..
 
     @value.setter
     ___ value  new_value
-        _value = new_value
+        _value new_value
         counter += 1
         ___ cell __ _watchers:
             cell.compute()
@@ -22,15 +22,15 @@ c_ Cell(o..
 c_ InputCell(Cell
     ___ - , initial_value
         super(InputCell, self).__init__()
-        _value = initial_value
+        _value initial_value
 
 
 c_ ComputeCell(Cell
     ___ - , inputs, compute_function
         super(ComputeCell, self).__init__()
-        inputs = inputs
-        func = compute_function
-        callbacks = s..()
+        inputs inputs
+        func compute_function
+        callbacks s..()
         compute()
         _register_inputs()
 
@@ -42,9 +42,9 @@ c_ ComputeCell(Cell
         # Only compute this cell when all inputs have same counters
         __ l..(s..([inp.counter ___ inp __ inputs] > 1:
             r..
-        new_val = func([inp.value ___ inp __ inputs])
+        new_val func([inp.value ___ inp __ inputs])
         __ new_val != _value:
-            value = new_val
+            value new_val
             ___ cb __ callbacks:
                 cb(new_val)
 

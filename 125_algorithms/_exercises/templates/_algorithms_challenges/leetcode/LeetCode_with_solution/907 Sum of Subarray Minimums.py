@@ -23,7 +23,7 @@ Note:
 """
 ____ t___ _______ L..
 
-MOD = 10 ** 9 + 7
+MOD 10 ** 9 + 7
 
 
 c_ Solution:
@@ -46,9 +46,9 @@ c_ Solution:
         L[i] records the index of m, default -1
         R[i] records the index of n, default len(A)
         """
-        n = l..(A)
-        L = [-1 ___ _ __ A]
-        R = [n ___ _ __ A]
+        n l..(A)
+        L [-1 ___ _ __ A]
+        R [n ___ _ __ A]
 
         stk    # list
         ___ i __ r..(n
@@ -56,7 +56,7 @@ c_ Solution:
                 stk.p.. )
 
             __ stk:
-                L[i] = stk[-1]
+                L[i] stk[-1]
             stk.a..(i)
 
         stk    # list
@@ -66,10 +66,10 @@ c_ Solution:
                 stk.p.. )
 
             __ stk:
-                R[i] = stk[-1]
+                R[i] stk[-1]
             stk.a..(i)
 
-        ret = 0
+        ret 0
         ___ i __ r..(n
             ret += (
                 A[i] * (i - L[i]) * (R[i] - i)
@@ -86,11 +86,11 @@ c_ Solution:
         use an increasing stk
         """
         stk    # list
-        A = [-f__('inf')] + A + [-f__('inf')]
-        ret = 0
+        A [-f__('inf')] + A + [-f__('inf')]
+        ret 0
         ___ i, a __ e..(A
             w.... stk a.. A[stk[-1]] > a:
-                h = stk.p.. )
+                h stk.p.. )
                 # record for h
                 ret += A[h] * (h - stk[-1]) * (i - h)
                 ret %= MOD

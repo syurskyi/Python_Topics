@@ -4,7 +4,7 @@ c_ Solution(o..
     :type s: str
     :rtype: str
     """
-    s = s.s..
+    s s.s..
     ___ i, word __ e..(s
-      s[i] = word[::-1]
+      s[i] word[::-1]
     r.. " ".j..(s)

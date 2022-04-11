@@ -15,11 +15,11 @@ c_ Solution:
         :type num: int
         :rtype: int
         """
-        msb = 0
+        msb 0
         w.... num >> msb:
             msb += 1
 
-        mask = (1 << msb) - 1
+        mask (1 << msb) - 1
         r.. mask & ~num
 
 

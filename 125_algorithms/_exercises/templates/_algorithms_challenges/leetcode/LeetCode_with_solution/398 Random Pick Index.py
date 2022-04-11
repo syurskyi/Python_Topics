@@ -18,7 +18,7 @@ solution.pick(1);
 """
 _______ r__
 
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -26,7 +26,7 @@ c_ Solution(o..
         """
         :type nums: List[int]
         """
-        A = nums
+        A nums
 
     ___ pick  target
         """
@@ -35,14 +35,14 @@ c_ Solution(o..
         :type target: int
         :rtype: int
         """
-        sz = 0
-        ret = N..
+        sz 0
+        ret N..
         ___ idx, val __ e..(A
             __ val __ target:
                 sz += 1
-                p = r__.randrange(0, sz)
+                p r__.randrange(0, sz)
                 __ p __ 0:
-                    ret = idx
+                    ret idx
 
         r.. ret
 
@@ -57,14 +57,14 @@ c_ SolutionError(o..
         d    # dict
         ___ idx, val __ e..(nums
             __ val n.. __ d:
-                d[val] = (idx, 1)
+                d[val] (idx, 1)
             ____
-                prev, sz = d[val]
-                p = r__.randrange(0, sz)
+                prev, sz d[val]
+                p r__.randrange(0, sz)
                 __ p < sz:
-                    d[val] = (idx, sz + 1)
+                    d[val] (idx, sz + 1)
                 ____
-                    d[val] = (prev, sz + 1)
+                    d[val] (prev, sz + 1)
 
     ___ pick  target
         """

@@ -9,7 +9,7 @@ Given [3,2,1,5,6,4] and k = 2, return 5.
 Note:
 You may assume k is always valid, 1 ≤ k ≤ array's length.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 _______ heapq
 
 
@@ -23,7 +23,7 @@ c_ Solution:
         :rtype: int
         """
         h    # list
-        n = l..(nums)
+        n l..(nums)
         ___ i, v __ e..(nums
             __ i < k:
                 heapq.heappush(h, v)

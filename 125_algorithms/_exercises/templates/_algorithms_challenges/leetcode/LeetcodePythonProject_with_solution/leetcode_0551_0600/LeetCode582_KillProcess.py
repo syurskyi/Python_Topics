@@ -13,15 +13,15 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ p, pp __ z..(pid, ppid
-            hashset = hashmap.g.. pp, s..
+            hashset hashmap.g.. pp, s..
             hashset.add(p)
-            hashmap[pp] = hashset
+            hashmap[pp] hashset
         __ kill n.. __ hashmap:
             r.. [kill]
-        queue = l..(hashmap[kill])
-        result = s..([kill])
+        queue l..(hashmap[kill])
+        result s..([kill])
         w.... queue:
-            node = queue.p.. 0)
+            node queue.p.. 0)
             result.add(node)
             ___ node0 __ hashmap.g.. node, []
                 __ node0 n.. __ result:
@@ -29,7 +29,7 @@ c_ Solution(o..
         r.. l..(result)
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1, 3, 10, 5],
                 [3, 0, 5,  3],
@@ -40,7 +40,7 @@ c_ Solution(o..
             print('pid: %s' % pid)
             print('ppid: %s' % ppid)
             print('kill: %s' % kill)
-            result = killProcess(pid, ppid, kill)
+            result killProcess(pid, ppid, kill)
             print('result: %s' % result)
             print('-='*30+'-')
 

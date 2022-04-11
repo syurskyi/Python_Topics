@@ -1,9 +1,9 @@
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution(o..
     ___ increasingBST  root
@@ -15,17 +15,17 @@ c_ Solution(o..
         stack    # list
         w.... root:
             stack.a..(root)
-            root = root.left
-        root = stack[-1]
-        prev = N..
+            root root.left
+        root stack[-1]
+        prev N..
         w.... stack:
-            node = stack.p.. )
-            node.left = N..
+            node stack.p.. )
+            node.left N..
             __ prev:
-                prev.right = node
-            node0 = node.right
+                prev.right node
+            node0 node.right
             w.... node0:
                 stack.a..(node0)
-                node0 = node0.left
-            prev = node
+                node0 node0.left
+            prev node
         r.. root

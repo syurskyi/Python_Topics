@@ -17,7 +17,7 @@ c_ Solution(o..
       ____
         r.. [f(x) ___ x __ r..(nums)]
 
-    mid = (-1.0) * b / (2.0 * a)
+    mid (-1.0) * b / (2.0 * a)
     up, down    # list, []
 
     __ a >_ 0:
@@ -36,11 +36,11 @@ c_ Solution(o..
       down.r..
 
     res    # list
-    upIdx = 0
-    downIdx = 0
+    upIdx 0
+    downIdx 0
     w.... upIdx < l..(up) a.. downIdx < l..(down
-      upTop = up[upIdx]
-      downTop = down[downIdx]
+      upTop up[upIdx]
+      downTop down[downIdx]
 
       __ upTop < downTop:
         res.a..(upTop)

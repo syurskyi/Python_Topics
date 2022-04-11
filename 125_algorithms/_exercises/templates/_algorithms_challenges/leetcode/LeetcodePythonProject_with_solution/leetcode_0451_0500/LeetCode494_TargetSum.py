@@ -11,15 +11,15 @@ c_ Solution(o..
         :type S: int
         :rtype: int
         """
-        sumVal = s..(nums)
+        sumVal s..(nums)
         __ sumVal < S o. (sumVal+S)%2 != 0:
             r.. 0
-        target = (sumVal+S)//2
+        target (sumVal+S)//2
         r.. helper(nums, target)
     
     ___ helper  nums, target
-        dp = [0]*(target+1)
-        dp[0] = 1
+        dp [0]*(target+1)
+        dp[0] 1
         ___ num __ nums:
             ___ i __ r..(target, -1, -1
                 __ i >_ num:
@@ -27,7 +27,7 @@ c_ Solution(o..
         r.. dp[-1]
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [1, 1, 1, 1, 1],
                 3,
@@ -40,7 +40,7 @@ c_ Solution(o..
         ___ nums, S __ testCases:
             print('nums: %s' % nums)
             print('S: %s' % S)
-            result = findTargetSumWays(nums, S)
+            result findTargetSumWays(nums, S)
             print('result: %s' % result)
             print('-='*30+'-')
 

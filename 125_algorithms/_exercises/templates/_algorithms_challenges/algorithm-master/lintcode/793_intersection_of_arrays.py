@@ -4,11 +4,11 @@ c_ Solution:
     @return: the number of the intersection of the arrays
     """
     ___ intersectionOfArrays  A
-        ans = 0
+        ans 0
         __ n.. A:
             r.. ans
 
-        n = l..(A)
+        n l..(A)
         C    # dict
 
         ___ i __ r..(n
@@ -17,7 +17,7 @@ c_ Solution:
 
             ___ a __ A[i]:
                 __ a n.. __ C:
-                    C[a] = s..()
+                    C[a] s..()
                 C[a].add(i)
 
         ___ a, S __ C.i..:

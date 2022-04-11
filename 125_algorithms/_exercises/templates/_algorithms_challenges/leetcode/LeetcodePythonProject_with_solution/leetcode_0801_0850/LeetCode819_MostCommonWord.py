@@ -11,25 +11,25 @@ c_ Solution(o..
         :rtype: str
         """
         hashmap    # dict
-        res = ''
-        freq = 0
-        banned = s..(banned)
-        i = 0
+        res ''
+        freq 0
+        banned s..(banned)
+        i 0
         ___ j __ r..(l..(paragraph:
-            c = paragraph[j]
+            c paragraph[j]
             __ n.. (o..('a') <_ o..(c) <_ o..('z') o.\
                 o..('A') <_ o..(c) <_ o..('Z':
-                word = paragraph[i:j].l..
+                word paragraph[i:j].l..
                 __ word a.. word n.. __ banned:
-                    hashmap[word] = hashmap.g.. word, 0)+1
+                    hashmap[word] hashmap.g.. word, 0)+1
                     __ hashmap[word] > freq:
-                        res = word
-                        freq = hashmap[word]
-                i = j+1
-        word = paragraph[i:].l..
+                        res word
+                        freq hashmap[word]
+                i j+1
+        word paragraph[i:].l..
         __ word a.. word n.. __ banned:
-            hashmap[word] = hashmap.g.. word, 0)+1
+            hashmap[word] hashmap.g.. word, 0)+1
             __ hashmap[word] > freq:
-                res = word
-                freq = hashmap[word]
+                res word
+                freq hashmap[word]
         r.. res

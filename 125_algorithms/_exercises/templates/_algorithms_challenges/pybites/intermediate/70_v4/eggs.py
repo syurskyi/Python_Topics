@@ -1,13 +1,13 @@
 ____ r__ _______ c..
 
-COLORS = 'red blue green yellow brown purple'.s..
+COLORS 'red blue green yellow brown purple'.s..
 
 
 c_ EggCreator:
     ''' Create randomly colored "eggs" '''
     ___ - , limit
-        limit = limit
-        count = 0
+        limit limit
+        count 0
 
     ___ __iter__
         r.. self

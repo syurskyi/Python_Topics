@@ -13,27 +13,27 @@ c_ Solution(o..
         hashmap    # dict
         ___ c __ licensePlate:
             __ n.. c.i.. a.. c != ' ':
-                hashmap[c.l..] = hashmap.g.. c.l.., 0)+1
-        res = ''
-        l = f__('inf')
+                hashmap[c.l..] hashmap.g.. c.l.., 0)+1
+        res ''
+        l f__('inf')
         ___ word __ words:
             __ l..(word) < l:
                 __ contains(hashmap, word
-                    res = word
-                    l = l..(res)
+                    res word
+                    l l..(res)
         r.. res
     
     ___ contains  hashmap, word
         hashmap0    # dict
         ___ c __ word:
-            hashmap0[c] = hashmap0.g.. c, 0)+1
+            hashmap0[c] hashmap0.g.. c, 0)+1
         ___ c __ hashmap:
             __ hashmap[c] > hashmap0.g.. c, 0
                 r.. F..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             [
                 '1s3 PSt',
                 ["step", "steps", "stripe", "stepple"],
@@ -50,7 +50,7 @@ c_ Solution(o..
         ___ licensePlate, words __ testCases:
             print('licensePlate: %s' % licensePlate)
             print('words: %s' % words)
-            result = shortestCompletingWord(licensePlate, words)
+            result shortestCompletingWord(licensePlate, words)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -17,25 +17,25 @@ c_ Solution:
         __ n.. hash_table:
             r..
 
-        CAPACITY = l..(hash_table) * 2
-        heads = [N..] * CAPACITY
-        tails = [N..] * CAPACITY
+        CAPACITY l..(hash_table) * 2
+        heads [N..] * CAPACITY
+        tails [N..] * CAPACITY
 
-        curr = _node = i = N..
+        curr _node i N..
         ___ node __ hash_table:
-            curr = node
+            curr node
 
             w.... curr:
-                i = curr.val % CAPACITY
-                _node = ListNode(curr.val)
+                i curr.val % CAPACITY
+                _node ListNode(curr.val)
 
                 __ heads[i]:
-                    tails[i].next = _node
+                    tails[i].next _node
                 ____
-                    heads[i] = _node
+                    heads[i] _node
 
-                tails[i] = _node
+                tails[i] _node
 
-                curr = curr.next
+                curr curr.next
 
         r.. heads

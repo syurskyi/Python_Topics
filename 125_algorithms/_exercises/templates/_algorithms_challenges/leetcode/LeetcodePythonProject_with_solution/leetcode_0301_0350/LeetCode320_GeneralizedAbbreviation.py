@@ -27,12 +27,12 @@ c_ Solution(o..
             helper(word, i+1, 0, curr+word[i], res)
     
     ___ test
-        testCases = [
+        testCases [
             'word',
         ]
         ___ word __ testCases:
             print('word: %s' % (word
-            result = generateAbbreviations(word)
+            result generateAbbreviations(word)
             print('result: %s' % (result
             print('-='*20+'-')
 

@@ -1,18 +1,18 @@
 c_ Garden:
 
-    DEFAULT_STUDENTS = ("Alice Bob Charlie David Eve Fred Ginny "
+    DEFAULT_STUDENTS ("Alice Bob Charlie David Eve Fred Ginny "
                         "Harriet Ileana Joseph Kincaid Larry").s.. 
 
-    PLANTS = {'G': 'Grass',
+    PLANTS {'G': 'Grass',
               'C': 'Clover',
               'R': 'Radishes',
               'V': 'Violets'}
 
     ___ - , diagram, students=DEFAULT_STUDENTS
-        diagram = diagram
-        rows = [l..(row) ___ row __ diagram.s.. ]
-        plant_rows = [[PLANTS[c] ___ c __ row] ___ row __ rows]
-        students = s..(students)
+        diagram diagram
+        rows [l..(row) ___ row __ diagram.s.. ]
+        plant_rows [[PLANTS[c] ___ c __ row] ___ row __ rows]
+        students s..(students)
 
     ___ plants  name
         r.. plants_for_index(students.i.. name

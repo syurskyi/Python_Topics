@@ -8,20 +8,20 @@ c_ Solution(o..
     res    # list
     __ n.. checkWordBreak(s, wordDict
       r.. res
-    queue = [(0, "")]
-    slen = l..(s)
-    lenList = [l ___ l __ s.. m..(l.., wordDict]
+    queue [(0, "")]
+    slen l..(s)
+    lenList [l ___ l __ s.. m..(l.., wordDict]
     w.... queue:
       tmpqueue    # list
       ___ q __ queue:
-        start, p.. = q
+        start, p.. q
         ___ l __ lenList:
           __ start + l <_ slen a.. s[start:start + l] __ wordDict:
-            newnode = (start + l, p.. + " " + s[start:start + l] __ p.. ____ s[start:start + l])
+            newnode (start + l, p.. + " " + s[start:start + l] __ p.. ____ s[start:start + l])
             tmpqueue.a..(newnode)
             __ start + l __ slen:
               res.a..(newnode[1])
-      queue, tmpqueue = tmpqueue, []
+      queue, tmpqueue tmpqueue, []
     r.. res
 
   ___ checkWordBreak  s, wordDict
@@ -30,10 +30,10 @@ c_ Solution(o..
     :type wordDict: Set[str]
     :rtype: bool
     """
-    queue = [0]
-    slen = l..(s)
-    lenList = [l ___ l __ s.. m..(l.., wordDict]
-    visited = [0 ___ _ __ r..(0, slen + 1)]
+    queue [0]
+    slen l..(s)
+    lenList [l ___ l __ s.. m..(l.., wordDict]
+    visited [0 ___ _ __ r..(0, slen + 1)]
     w.... queue:
       tmpqueue    # list
       ___ start __ queue:
@@ -43,6 +43,6 @@ c_ Solution(o..
               r.. T..
             __ visited[start + l] __ 0:
               tmpqueue.a..(start + l)
-              visited[start + l] = 1
-      queue, tmpqueue = tmpqueue, []
+              visited[start + l] 1
+      queue, tmpqueue tmpqueue, []
     r.. F..

@@ -34,18 +34,18 @@ c_ Solution:
         :type s: str
         :rtype: int
         """
-        F = d..(l....: d..(b..
-        n = l..(s)
+        F d..(l....: d..(b..
+        n l..(s)
         ___ i __ r..(n
-            F[i][i] = T..
-            F[i][i+1] = T..
+            F[i][i] T..
+            F[i][i+1] T..
 
         ___ i __ r..(n-1, -1, -1
             ___ j __ r..(i+2, n+1
                 __ s[i] __ s[j-1]:
-                    F[i][j] = F[i+1][j-1]
+                    F[i][j] F[i+1][j-1]
                 ____
-                    F[i][j] = F..
+                    F[i][j] F..
 
         r.. s..(
             1

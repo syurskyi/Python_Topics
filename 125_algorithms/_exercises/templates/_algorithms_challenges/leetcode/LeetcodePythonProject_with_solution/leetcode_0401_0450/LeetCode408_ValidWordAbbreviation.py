@@ -6,14 +6,14 @@ Created on Apr 10, 2017
 
 c_ Solution(o..
     ___ validWordAbbreviation  word, abbr
-        i, j = 0, 0
+        i, j 0, 0
         w.... i < l..(word) a.. j < l..(abbr
             __ abbr[j].i..
-                prev = j
+                prev j
                 w.... j+1 < l..(abbr) a.. abbr[j+1].i..
                     j+=1
                 __ abbr[prev:j+1].s.. '0' r.. F..
-                num = i..(abbr[prev:j+1])
+                num i..(abbr[prev:j+1])
                 i += num
                 j += 1
             ____
@@ -26,14 +26,14 @@ c_ Solution(o..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
             ('internationalization', 'i12iz4n'),
             ('apple', 'a2e'),
         ]
         ___ word, abbr __ testCases:
             print('word: %s' % word)
             print('abbr: %s' % abbr)
-            result = validWordAbbreviation(word, abbr)
+            result validWordAbbreviation(word, abbr)
             print('result: %s' % result)
             print('-='*30+'-')
 

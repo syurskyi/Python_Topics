@@ -11,7 +11,7 @@ Given a sequence of integers, return the length of the longest subsequence that 
 obtained by deleting some number of elements (eventually, also zero) from the original sequence, leaving the remaining
 elements in their original order.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -40,12 +40,12 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. A: r.. 0
-        N = l..(A)
-        H = [1 ___ _ __ x..(N)]
-        L = [1 ___ _ __ x..(N)]
+        N l..(A)
+        H [1 ___ _ __ x..(N)]
+        L [1 ___ _ __ x..(N)]
         ___ i __ x..(1, N
-            L[i] = H[i-1] + 1 __ A[i] < A[i-1] ____ L[i-1]
-            H[i] = L[i-1] + 1 __ A[i] > A[i-1] ____ H[i-1]
+            L[i] H[i-1] + 1 __ A[i] < A[i-1] ____ L[i-1]
+            H[i] L[i-1] + 1 __ A[i] > A[i-1] ____ H[i-1]
 
         r.. m..(H[N-1], L[N-1])
 
@@ -59,17 +59,17 @@ c_ Solution(o..
         """
         __ n.. A: r.. 0
 
-        N = l..(A)
-        H = [1 ___ _ __ x..(N)]
-        L = [1 ___ _ __ x..(N)]
-        gmax = 1
+        N l..(A)
+        H [1 ___ _ __ x..(N)]
+        L [1 ___ _ __ x..(N)]
+        gmax 1
         ___ i __ x..(1, N
             ___ j __ x..(i
                 __ A[i] > A[j]:
-                    H[i] = m..(H[i], L[j] + 1)
+                    H[i] m..(H[i], L[j] + 1)
                 ____ A[i] < A[j]:
-                    L[i] = m..(L[i], H[j] + 1)
+                    L[i] m..(L[i], H[j] + 1)
 
-                gmax = m..(gmax, H[i], L[i])
+                gmax m..(gmax, H[i], L[i])
 
         r.. gmax

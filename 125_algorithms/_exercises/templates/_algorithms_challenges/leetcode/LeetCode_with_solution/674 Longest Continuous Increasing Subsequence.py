@@ -28,15 +28,15 @@ c_ Solution:
         __ n.. nums:
             r.. 0
 
-        ret = 1
-        i = 1
+        ret 1
+        i 1
         w.... i < l..(nums
-            cur = 1
+            cur 1
             w.... i < l..(nums) a.. nums[i] > nums[i-1]:
                 cur += 1
                 i += 1
 
             i += 1
-            ret = m..(ret, cur)
+            ret m..(ret, cur)
 
         r.. ret

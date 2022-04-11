@@ -1,6 +1,6 @@
 _______ __
 
-EMAIL_HEADER = """Return-Path: <bounces+5555-7602-redacted-info>
+EMAIL_HEADER """Return-Path: <bounces+5555-7602-redacted-info>
 ...
 Received: by 10.8.49.86 with SMTP id mf9.22328.51C1E5CDF
     Wed, 19 Jun 2013 17:09:33 +0000 (UTC)
@@ -25,12 +25,12 @@ ___ get_email_details(header: s..) __ d..:
        https://docs.python.org/3.7/library/re.html#re.Match.groupdict
        If not match, return None
     """
-    regex = r"""From:\s*(?P<from>.*)$ # Find the from and store in tag
+    regex r"""From:\s*(?P<from>.*)$ # Find the from and store in tag
                 (?:.*\n)*             # this skips any unrecognised lines
                 ^To:\s*(?P<to>.*)$    # Find the to and store etc.
                 (?:.*\n)*
                 ^Subject:\s*(?P<subject>.*)$
                 (?:.*\n)*
                 ^Date:\s*(?P<date>.*?)\s+[-+]"""
-    results = __.s..(regex, header, __.MULTILINE | __.VERBOSE)
+    results __.s..(regex, header, __.MULTILINE | __.VERBOSE)
     r.. results.groupdict() __ results __ n.. N.. ____ results

@@ -11,14 +11,14 @@ c_ Solution(o..
         :type cost: List[int]
         :rtype: int
         """
-        sumRemaining, sumVal, start = 0, 0, 0
+        sumRemaining, sumVal, start 0, 0, 0
         ___ i, (g, c) __ e..(z..(gas, cost:
-            remain = g-c
+            remain g-c
             __ sumRemaining >_ 0:
                 sumRemaining += remain
             ____
-                sumRemaining = remain
-                start = i
+                sumRemaining remain
+                start i
             sumVal += remain
         __ sumVal >_ 0:
             r.. start

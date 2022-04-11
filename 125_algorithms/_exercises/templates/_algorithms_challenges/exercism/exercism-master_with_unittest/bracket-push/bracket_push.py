@@ -3,14 +3,14 @@ ___ is_empty(stack
 
 
 c_ CheckBrackets:
-    BRACKETS = {'{': '}',
+    BRACKETS {'{': '}',
                 ' ': ' ',
                 '(': ')'}
-    OPENING_BRACKET = s..(BRACKETS.keys
-    CLOSING_BRACKET = s..(BRACKETS.values
+    OPENING_BRACKET s..(BRACKETS.keys
+    CLOSING_BRACKET s..(BRACKETS.values
 
     ___ - , inp
-        inp = inp
+        inp inp
 
     ___ is_paired
         stack    # list

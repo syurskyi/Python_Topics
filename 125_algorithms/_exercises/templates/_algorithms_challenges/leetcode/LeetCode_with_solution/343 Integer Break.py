@@ -6,7 +6,7 @@ For example, given n = 2, return 1 (2 = 1 + 1); given n = 10, return 36 (10 = 3 
 
 Note: You may assume that n is not less than 2 and not larger than 58.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -26,10 +26,10 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        F = [N.. ___ _ __ x..(n+1)]
-        F[1] = 1
+        F [N.. ___ _ __ x..(n+1)]
+        F[1] 1
         ___ i __ x..(2, n+1
-            F[i] = m..(
+            F[i] m..(
                 m..(F[j] * F[i-j], j * F[i-j], F[j] * (i-j), j * (i-j
                 ___ j __ x..(1, i/2)
             )

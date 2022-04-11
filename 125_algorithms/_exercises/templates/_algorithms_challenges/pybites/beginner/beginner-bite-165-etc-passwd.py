@@ -17,9 +17,9 @@ Good luck and keep calm and code in Python!
 """
 
 
-DEFAULT_SHELL = 'bash'
+DEFAULT_SHELL 'bash'
 # https://github.com/avar/git-anyonecanedit-etc/blob/master/passwd
-PASSWD_OUTPUT = """root:x:0:0:root:/root:/bin/bash
+PASSWD_OUTPUT """root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/bin/sh
 bin:x:2:2:bin:/bin:/bin/sh
 sys:x:3:3:sys:/dev:/bin/sh
@@ -54,18 +54,18 @@ ssh-rsa:x:1004:1004::/home/ssh-rsa:/bin/bash
 artagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/artagnon:/bin/bash"""
 
 
-___ get_users_for_shell(passwd_output: s.. = PASSWD_OUTPUT,
-                        grep_shell: s.. = DEFAULT_SHELL) __ l..:
+___ get_users_for_shell(passwd_output: s.. PASSWD_OUTPUT,
+                        grep_shell: s.. DEFAULT_SHELL) __ l..:
     """Match the passwd_output string for users with grep_shell.
        Return a list of users.
     """
     output    # list
-    lines = passwd_output.s..('\n')
+    lines passwd_output.s..('\n')
     ___ l __ lines:
-        s.. = l.s..(':')
-        username = s..[0]
-        shell = s..[6]
-        s = shell.s..('/')
+        s.. l.s..(':')
+        username s..[0]
+        shell s..[6]
+        s shell.s..('/')
         ___
             __ s[2] __ grep_shell o. s[3] __ grep_shell:
                 output.a..(username)

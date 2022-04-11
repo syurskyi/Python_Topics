@@ -31,11 +31,11 @@ c_ Solution:
         Count the current best score in all previous.
         Distance will increase, then the score will decay
         """
-        ret = -f__("inf")
-        prev_max = A[0]
+        ret -f__("inf")
+        prev_max A[0]
         ___ a __ A[1:]:
-            ret = m..(ret, prev_max - 1 + a)
-            prev_max = m..(prev_max - 1, a)
+            ret m..(ret, prev_max - 1 + a)
+            prev_max m..(prev_max - 1, a)
 
         r.. ret
 
@@ -46,22 +46,22 @@ c_ Solution:
         pre-processing, adjust A[i] as A[i] - i
         error, no direction
         """
-        n = l..(A)
+        n l..(A)
         B    # list
         ___ i __ r..(n
             B.a..(A[i] - i)
 
         # find top 2
-        m1, m2 = N.., N..
+        m1, m2 N.., N..
         ___ i __ r..(n
             __ m1 __ N..
-                m1 = i
+                m1 i
             ____ m2 __ N..
-                m2 = i
+                m2 i
             ____ B[i] + (i - m1) > B[m1]:
-                m1 = i
+                m1 i
             ____ B[i] + (i - m2) > B[m2]:
-                m2 = i
+                m2 i
         r.. A[m2] + A[m1] - a..(m2 - m1)
 
 

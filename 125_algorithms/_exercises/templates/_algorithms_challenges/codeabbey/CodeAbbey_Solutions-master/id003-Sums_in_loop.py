@@ -1,8 +1,8 @@
 ___ find_Sums(pairAmount
         answer    # list
         ___ pair __ r..(pairAmount
-                numbers = raw_input().s..(' ')
-                s.. = 0
+                numbers raw_input().s..(' ')
+                s.. 0
                 ___ x __ r..(0, 2
                         s.. += i..(numbers[x])
                 answer.a..(s..(s..

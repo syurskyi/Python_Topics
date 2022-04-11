@@ -9,7 +9,7 @@ c_ Solution(o..
         :type bills: List[int]
         :rtype: bool
         """
-        hashmap = {
+        hashmap {
             5:0,
             10:0,
             20:0,
@@ -21,7 +21,7 @@ c_ Solution(o..
                 ____
                     r.. F..
             ____ b __ 20:
-                val = 20
+                val 20
                 __ hashmap[10] >_ 1:
                     hashmap[10] -_ 1
                     val -_ 10
@@ -39,12 +39,12 @@ c_ Solution(o..
         r.. T..
     
     ___ test
-        testCases = [
+        testCases [
 #             [5,5,5,10,20],
             [5, 5, 10, 10, 20],
         ]
         ___ bills __ testCases:
-            res = lemonadeChange(bills)
+            res lemonadeChange(bills)
             print('res: %s' % res)
             print('-='*30+'-')
 

@@ -19,24 +19,24 @@ c_ Solution:
 
             r.. ans
 
-        nexts = c...d..(s..)
-        evals = c...d..(f__)
+        nexts c...d..(s..)
+        evals c...d..(f__)
 
         ___ i __ r..(l..(equations:
-            a, b = equations[i]
+            a, b equations[i]
             nexts[a].add(b)
             nexts[b].add(a)
-            evals[a, b] = 1.0 * values[i]
-            evals[b, a] = 1.0 / values[i]
+            evals[a, b] 1.0 * values[i]
+            evals[b, a] 1.0 / values[i]
 
         ___ a, b __ queries:
-            res = dfs(a, b, 1, nexts, evals, s..
+            res dfs(a, b, 1, nexts, evals, s..
             ans.a..(f__(res
 
         r.. ans
 
     ___ dfs  a, b, val, nexts, evals, visited
-        res = -1
+        res -1
 
         __ a n.. __ nexts:
             r.. res
@@ -51,7 +51,7 @@ c_ Solution:
             __ c __ visited o. (a, c) n.. __ evals:
                 _____
 
-            res = dfs(c, b, val * evals[a, c], nexts, evals, visited)
+            res dfs(c, b, val * evals[a, c], nexts, evals, visited)
 
             __ res != -1:
                 _____

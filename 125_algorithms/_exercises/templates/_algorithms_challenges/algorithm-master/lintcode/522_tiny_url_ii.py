@@ -3,12 +3,12 @@ _______ r__
 
 c_ TinyUrl2:
     ___ -
-        chars = [s..(i) ___ i __ r..(10)]
+        chars [s..(i) ___ i __ r..(10)]
         chars.e.. chr(i) ___ i __ r..(o..('a'), o..('z') + 1
         chars.e.. chr(i) ___ i __ r..(o..('A'), o..('Z') + 1
 
-        host = 'http://tiny.url/'
-        size = 6
+        host 'http://tiny.url/'
+        size 6
         lg2st    # dict
         st2lg    # dict
 
@@ -34,8 +34,8 @@ c_ TinyUrl2:
             url n.. __ custom_lg2st a..
             key n.. __ custom_st2lg
 
-            custom_lg2st[url] = key
-            custom_st2lg[key] = url
+            custom_lg2st[url] key
+            custom_st2lg[key] url
             r.. get_tiny_url(key)
 
         r.. 'error'
@@ -52,12 +52,12 @@ c_ TinyUrl2:
         __ url __ custom_lg2st:
             r.. get_tiny_url(custom_lg2st[url])
 
-        key = get_hash_key(size)
+        key get_hash_key(size)
         w.... key __ st2lg:
-            key = get_hash_key(size)
+            key get_hash_key(size)
 
-        lg2st[url] = key
-        st2lg[key] = url
+        lg2st[url] key
+        st2lg[key] url
         r.. get_tiny_url(key)
 
     ___ shortToLong  url
@@ -68,7 +68,7 @@ c_ TinyUrl2:
         __ n.. url:
             r.. 'error'
 
-        key = url.r..(host, '')
+        key url.r..(host, '')
 
         __ key __ st2lg:
             r.. st2lg[key]

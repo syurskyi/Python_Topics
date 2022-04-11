@@ -8,16 +8,16 @@ c_ Solution:
             r.. 0
         # mx_l: max height for index `l`
         # mx_r: max height for index `r`
-        mx_l = mx_r = ans = 0
-        l, r = 0, l..(heights) - 1
+        mx_l mx_r ans 0
+        l, r 0, l..(heights) - 1
         w.... l < r:
             # To find the max height in heights
             __ heights[l] < heights[r]:
-                mx_l = m..(mx_l, heights[l])
+                mx_l m..(mx_l, heights[l])
                 ans += mx_l - heights[l]
                 l += 1
             ____
-                mx_r = m..(mx_r, heights[r])
+                mx_r m..(mx_r, heights[r])
                 ans += mx_r - heights[r]
                 r -_ 1
         r.. ans

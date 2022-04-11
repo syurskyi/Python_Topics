@@ -26,7 +26,7 @@ c_ MaxStack(o..
         """
         :rtype: int
         """
-        val = stack.p.. )
+        val stack.p.. )
         heap.remove((-val
         heapq.heapify(heap)
         r.. val
@@ -47,10 +47,10 @@ c_ MaxStack(o..
         """
         :rtype: int
         """
-        val = heapq.heappop(heap)
-        val = -val
+        val heapq.heappop(heap)
+        val -val
         ___ i __ r..(l..(stack)-1, -1, -1
             __ stack[i] __ val:
-                stack = stack[:i]+stack[i+1:]
+                stack stack[:i]+stack[i+1:]
                 _____
         r.. val

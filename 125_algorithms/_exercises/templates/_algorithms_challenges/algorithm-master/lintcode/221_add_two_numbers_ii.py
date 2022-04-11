@@ -21,46 +21,46 @@ c_ Solution:
         __ n.. b:
             r.. a
 
-        a = rev_list(a)
-        b = rev_list(b)
+        a rev_list(a)
+        b rev_list(b)
 
-        dummy = tail = ListNode(0)
-        carry = 0
+        dummy tail ListNode(0)
+        carry 0
 
         w.... a a.. b:
             carry += a.val + b.val
-            tail.next = ListNode(carry % 10)
+            tail.next ListNode(carry % 10)
             carry //= 10
-            a = a.next
-            b = b.next
-            tail = tail.next
+            a a.next
+            b b.next
+            tail tail.next
 
         w.... a:
             carry += a.val
-            tail.next = ListNode(carry % 10)
+            tail.next ListNode(carry % 10)
             carry //= 10
-            a = a.next
-            tail = tail.next
+            a a.next
+            tail tail.next
 
         w.... b:
             carry += b.val
-            tail.next = ListNode(carry % 10)
+            tail.next ListNode(carry % 10)
             carry //= 10
-            b = b.next
-            tail = tail.next
+            b b.next
+            tail tail.next
 
         __ carry:
-            tail.next = ListNode(carry)
+            tail.next ListNode(carry)
 
         r.. rev_list(dummy.next)
 
     ___ rev_list  head
-        pre = nxt = N..
+        pre nxt N..
 
         w.... head:
-            nxt = head.next
-            head.next = pre
-            pre = head
-            head = nxt
+            nxt head.next
+            head.next pre
+            pre head
+            head nxt
 
         r.. pre

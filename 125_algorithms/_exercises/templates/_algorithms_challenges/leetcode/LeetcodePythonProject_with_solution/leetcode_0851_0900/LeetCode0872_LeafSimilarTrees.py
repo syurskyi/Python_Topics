@@ -6,9 +6,9 @@ Created on Oct 3, 2019
 # Definition for a binary tree node.
 c_ TreeNode(o..
     ___ - , x
-        val = x
-        left = N..
-        right = N..
+        val x
+        left N..
+        right N..
 
 c_ Solution(o..
     ___ leafSimilar  root1, root2
@@ -24,18 +24,18 @@ c_ Solution(o..
     
     ___ getLeaves  root
         res    # list
-        node = root
+        node root
         stack    # list
         w.... node:
             stack.a..(node)
-            node = node.left
+            node node.left
         w.... stack:
-            node = stack.p.. )
+            node stack.p.. )
             __ n.. node.left a.. n.. node.right:
                 res.a..(node.val)
             __ node.right:
-                node0 = node.right
+                node0 node.right
                 w.... node0:
                     stack.a..(node0)
-                    node0 = node0.left
+                    node0 node0.left
         r.. res

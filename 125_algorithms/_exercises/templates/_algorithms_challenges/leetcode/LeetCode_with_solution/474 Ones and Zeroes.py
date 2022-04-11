@@ -45,24 +45,24 @@ c_ Solution:
         __ n.. strs:
             r.. 0
 
-        F = [[0 ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
-        z, o = c.. strs[0])
+        F [[0 ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
+        z, o c.. strs[0])
         ___ i __ r..(m+1
             ___ j __ r..(n+1
                 __ i + z<_ m a.. j + o <_ n:
-                    F[i][j] = 1
+                    F[i][j] 1
 
         ___ e __ r..(1, l..(strs:
-            z, o = c.. strs[e])
+            z, o c.. strs[e])
             ___ i __ r..(m+1
                 ___ j __ r..(n+1
                     __ i + z <_ m a.. j + o <_ n:
-                        F[i][j] = m..(
+                        F[i][j] m..(
                             F[i][j],
                             F[i + z][j + o] + 1
                         )
 
-        ret = m..(
+        ret m..(
             F[i][j]
             ___ i __ r..(m + 1)
             ___ j __ r..(n + 1)
@@ -70,7 +70,7 @@ c_ Solution:
         r.. ret
 
     ___ c.. self, s
-        z, o = 0, 0
+        z, o 0, 0
         ___ e __ s:
             __ e __ "0":
                 z += 1
@@ -93,22 +93,22 @@ c_ Solution:
         __ n.. strs:
             r.. 0
 
-        F = [[[0 ___ _ __ r..(l..(strs] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
-        count = C..(strs[0])
+        F [[[0 ___ _ __ r..(l..(strs] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
+        count C..(strs[0])
         ___ i __ r..(m+1
             ___ j __ r..(n+1
                 __ i + count["0"] <_ m a.. j + count["1"] <_ n:
-                    F[i][j][0] = 1
+                    F[i][j][0] 1
 
         ___ e __ r..(1, l..(strs:
-            count = C..(strs[e])
+            count C..(strs[e])
             ___ i __ r..(m+1
                 ___ j __ r..(n+1
                     __ i + count["0"] <_ m a.. j + count["1"] <_ n:
-                        F[i][j][e] = F[i + count["0"]][j + count["1"]][e-1] + 1
-                    F[i][j][e] = m..(F[i][j][e], F[i][j][e-1])
+                        F[i][j][e] F[i + count["0"]][j + count["1"]][e-1] + 1
+                    F[i][j][e] m..(F[i][j][e], F[i][j][e-1])
 
-        ret = m..(
+        ret m..(
             F[i][j][-1]
             ___ i __ r..(m + 1)
             ___ j __ r..(n + 1)
@@ -129,21 +129,21 @@ c_ Solution:
         __ n.. strs:
             r.. 0
 
-        F = [[[0 ___ _ __ r..(l..(strs] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
-        count = C..(strs[0])
+        F [[[0 ___ _ __ r..(l..(strs] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
+        count C..(strs[0])
         __ count["0"] <_ m a.. count["1"] <_ n:
             F[m - count["0"]][n - count["1"]][0] += 1
 
         ___ e __ r..(1, l..(strs:
-            count = C..(strs[e])
+            count C..(strs[e])
             ___ i __ r..(m+1
                 ___ j __ r..(n+1
                     __ count["0"] <_ i a.. count["1"] <_ j:
-                        F[i - count["0"]][j - count["1"]][e] = F[i][j][e-1] + 1
+                        F[i - count["0"]][j - count["1"]][e] F[i][j][e-1] + 1
                     ____
-                        F[i][j][e] = F[i][j][e-1]
+                        F[i][j][e] F[i][j][e-1]
 
-        ret = m..(
+        ret m..(
             F[i][j][-1]
             ___ i __ r..(m + 1)
             ___ j __ r..(n + 1)
@@ -160,9 +160,9 @@ c_ Solution:
         :rtype: int
         """
         strs.s..(key=l..)
-        ret = 0
+        ret 0
         ___ a __ strs:
-            count = C..(a)
+            count C..(a)
             __ count["0"] <_ m a.. count["1"] <_ n:
                 ret += 1
                 m -_ count["0"]

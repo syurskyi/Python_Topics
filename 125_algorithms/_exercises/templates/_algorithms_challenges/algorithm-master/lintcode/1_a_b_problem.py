@@ -10,10 +10,10 @@ c_ Solution:
         __ n.. b:
             r.. a
 
-        INT_RANGE = 0xFFFFFFFF
+        INT_RANGE 0xFFFFFFFF
 
         w.... b != 0:
-            a, b = a ^ b, (a & b) << 1
+            a, b a ^ b, (a & b) << 1
             a &= INT_RANGE
 
         r.. a __ a >> 31 <_ 0 ____ a ^ ~INT_RANGE

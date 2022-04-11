@@ -18,33 +18,33 @@ c_ Solution(o..
 
         No dummy node
         """
-        res = N..
-        res_end = N..
+        res N..
+        res_end N..
         w.... l1 __ n.. N.. a.. l2 __ n.. N..
             __ l1.val < l2.val:
                 __ res __ N..
-                    res = l1
-                    res_end = res
+                    res l1
+                    res_end res
                 ____
-                    res_end.next = l1
-                    res_end = res_end.next
-                l1 = l1.next
+                    res_end.next l1
+                    res_end res_end.next
+                l1 l1.next
             ____
                 __ res __ N..
-                    res = l2
-                    res_end = res
+                    res l2
+                    res_end res
                 ____
-                    res_end.next = l2
-                    res_end = res_end.next
-                l2 = l2.next
+                    res_end.next l2
+                    res_end res_end.next
+                l2 l2.next
         __ l1 __ n.. N..
             __ res __ n.. N..
-                res_end.next = l1
+                res_end.next l1
             ____
-                res = l1
+                res l1
         __ l2 __ n.. N..
             __ res __ n.. N..
-                res_end.next = l2
+                res_end.next l2
             ____
-                res = l2
+                res l2
         r.. res

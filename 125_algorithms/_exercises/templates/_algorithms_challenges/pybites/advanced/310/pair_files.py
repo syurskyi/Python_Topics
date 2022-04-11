@@ -9,19 +9,19 @@ ___ pair_files(filenames
     """
     # TODO: You code
 
-    mapping = d..(l..)
+    mapping d..(l..)
 
 
     ___ file __ filenames:
         
 
-        m.. = __.s..(r'(\S+?_S[1-9][0-9]?_L\d{3})_R[12]_([0-9]{2}[1-9]).fastq.gz$',file,flags=__.I)
+        m.. __.s..(r'(\S+?_S[1-9][0-9]?_L\d{3})_R[12]_([0-9]{2}[1-9]).fastq.gz$',file,flags=__.I)
 
         __ m..:
-            first_part = m...group(1).l..
-            second_part = m...group(2).l..
+            first_part m...group(1).l..
+            second_part m...group(2).l..
 
-            combined = first_part + second_part
+            combined first_part + second_part
 
             mapping[combined].a..(file)
 
@@ -59,7 +59,7 @@ ___ pair_files(filenames
 
 # Set up for your convenience during testing
 __ _______ __ _______
-    filenames = [
+    filenames [
         "Sample1_S1_L001_R1_001.FASTQ.GZ",
         "Sample1_S1_L001_R2_001.fastq.gz",
         "Sample2_S2_L001_R1_001.fastq.gz",

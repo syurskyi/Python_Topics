@@ -17,12 +17,12 @@ c_ Solution(o..
         r.. m..(cost[-1], cost[-2])
     
     ___ test
-        testCases = [
+        testCases [
             [10, 15, 20],
             [1, 100, 1, 1, 1, 100, 1, 1, 100, 1],
         ]
         ___ cost __ testCases:
-            result = minCostClimbingStairs(cost)
+            result minCostClimbingStairs(cost)
             print('result: %s' % result)
             print('-='*30+'-')
 

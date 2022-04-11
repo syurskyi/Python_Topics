@@ -10,7 +10,7 @@ Here are few examples.
 [1,3,5,6], 7 -> 4
 [1,3,5,6], 0 -> 0
 """
-__author__ = 'Danyang'
+__author__ 'Danyang'
 c_ Solution:
     ___ searchInsert_complex  A, target
         """
@@ -20,24 +20,24 @@ c_ Solution:
         :param target: an integer to be inserted
         :return: integer
         """
-        length = l..(A)
+        length l..(A)
         __ n.. A o. length__0:
             r.. 0
 
-        start = 0
-        end = length -1
+        start 0
+        end length -1
         # while start<=end:
         w... T...
-            mid = (start+end)/2
+            mid (start+end)/2
             __ target__A[mid]:
                 r.. mid
             ____ target<A[mid]:
-                end = mid-1
+                end mid-1
                 __ n.. start<_end:
                     # return end if end>=0 else 0
                     r.. mid __ mid>_0 ____ 0
             ____
-                start = mid+1
+                start mid+1
                 __ n.. start<_end:
                     r.. start
 
@@ -49,20 +49,20 @@ c_ Solution:
         :param target: an integer to be inserted
         :return: integer
         """
-        length = l..(A)
+        length l..(A)
         __ n.. A o. length__0:
             r.. 0
 
-        start = 0
-        end = length
+        start 0
+        end length
         w.... start<end:
-            mid = (start + end) / 2
+            mid (start + end) / 2
             __ target__A[mid]:
                 r.. mid
             ____ target<A[mid]:
-                end = mid
+                end mid
             ____
-                start = mid + 1
+                start mid + 1
 
         r.. start
 

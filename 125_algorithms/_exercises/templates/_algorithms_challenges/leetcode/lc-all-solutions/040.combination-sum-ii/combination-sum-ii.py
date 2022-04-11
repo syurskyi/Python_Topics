@@ -25,6 +25,6 @@ c_ Solution(o..
 
     candidates.s..()
     res    # list
-    visited = s..([])
+    visited s..([])
     dfs(candidates, target, 0, visited, [], res)
     r.. res

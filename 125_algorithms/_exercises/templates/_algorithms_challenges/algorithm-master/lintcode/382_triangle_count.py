@@ -4,11 +4,11 @@ c_ Solution:
     @return: An integer
     """
     ___ triangleCount  S
-        ans = 0
+        ans 0
         __ n.. S o. l..(S) < 3:
             r.. ans
 
-        n = l..(S)
+        n l..(S)
         S.s..()
 
         """
@@ -16,8 +16,8 @@ c_ Solution:
         `c` is the target
         """
         ___ c __ r..(n - 1, 1, -1
-            a = 0
-            b = c - 1
+            a 0
+            b c - 1
             w.... a < b:
                 __ S[a] + S[b] > S[c]:
                     ans += b - a

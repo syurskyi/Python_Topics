@@ -1,4 +1,4 @@
-ALPHABET = 'abcdefghijklmnopqrstuvwxyz '
+ALPHABET 'abcdefghijklmnopqrstuvwxyz '
 
 
 ___ is_pangram(s

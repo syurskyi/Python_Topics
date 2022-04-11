@@ -12,8 +12,8 @@ c_ Solution(o..
         :type profit: List[int]
         :rtype: int
         """
-        dp = [[0]*(G+1) ___ _ __ r..(P+1)]
-        dp[0][0] = 1
+        dp [[0]*(G+1) ___ _ __ r..(P+1)]
+        dp[0][0] 1
         ___ p, g __ z..(profit, group
             ___ i __ r..(P, -1, -1
                 ___ j __ r..(G-g, -1, -1
@@ -28,7 +28,7 @@ c_ Solution(o..
         :type profit: List[int]
         :rtype: int
         """
-        res = [0]
+        res [0]
         dfs(0, group, profit, G, P, [], 0, res)
         r.. res[0]
     
@@ -43,7 +43,7 @@ c_ Solution(o..
             curProfit -_ profit[i]
     
     ___ test
-        testCases = [
+        testCases [
             [
                 5, 3, [2,2], [2,3]
             ],
@@ -52,7 +52,7 @@ c_ Solution(o..
             ],
         ]
         ___ G, P, group, profit __ testCases:
-            res = profitableSchemes(G, P, group, profit)
+            res profitableSchemes(G, P, group, profit)
             print('res: %s' % res)
             print('-='*30+'-')
 

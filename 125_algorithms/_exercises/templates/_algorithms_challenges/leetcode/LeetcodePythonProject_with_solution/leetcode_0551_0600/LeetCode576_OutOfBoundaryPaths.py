@@ -14,24 +14,24 @@ c_ Solution(o..
         :rtype: int
         """
         __ N < 0: r.. 0
-        mod = 10**9+7
-        count = [[0]*n ___ _ __ r..(m)]
-        count[i][j] = 1
-        result = 0
+        mod 10**9+7
+        count [[0]*n ___ _ __ r..(m)]
+        count[i][j] 1
+        result 0
         ___ _ __ r..(N
             tmp  [[0]*n ___ _ __ r..(m)]
             ___ r __ r..(m
                 ___ c __ r..(n
                     ___ nr, nc __ (r+1, c), (r-1, c), (r, c+1), (r, c-1
                         __ 0 <_ nr < m a.. 0 <_ nc < n:
-                            tmp[nr][nc] = (tmp[nr][nc]+count[r][c])%mod
+                            tmp[nr][nc] (tmp[nr][nc]+count[r][c])%mod
                         ____
-                            result = (result+count[r][c])%mod
-            count = tmp
+                            result (result+count[r][c])%mod
+            count tmp
         r.. result
     
     ___ test
-        testCases = [
+        testCases [
             [2, 2, 2, 0, 0],
             [1, 3, 3, 0, 1],
         ]
@@ -41,7 +41,7 @@ c_ Solution(o..
             print('N: %s' % N)
             print('i: %s' % i)
             print('j: %s' % j)
-            result = findPaths(m, n, N, i, j)
+            result findPaths(m, n, N, i, j)
             print('result: %s' % result)
             print('-='*30+'-')
 

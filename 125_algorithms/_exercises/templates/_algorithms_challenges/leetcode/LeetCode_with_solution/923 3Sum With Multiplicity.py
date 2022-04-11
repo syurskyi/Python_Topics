@@ -35,7 +35,7 @@ ____ t___ _______ L..
 ____ c.. _______ d..
 
 
-MOD = 10 ** 9 + 7
+MOD 10 ** 9 + 7
 
 
 c_ Solution:
@@ -45,19 +45,19 @@ c_ Solution:
         3 pointers O(N + K^2)
         j, k scan each element once
         """
-        counter = d..(i..)
+        counter d..(i..)
         ___ a __ A:
             counter[a] += 1
 
-        keys = l..(counter.keys
+        keys l..(counter.keys
         keys.s..()
-        n = l..(keys)
-        ret = 0
+        n l..(keys)
+        ret 0
         ___ i __ r..(n
-            j = i  # not i + 1
-            k = n - 1
+            j i  # not i + 1
+            k n - 1
             w.... j <_ k:  # not <
-                a, b, c = keys[i], keys[j], keys[k]
+                a, b, c keys[i], keys[j], keys[k]
                 __ b + c < target - a:
                     j += 1
                 ____ b + c > target - a:
@@ -89,22 +89,22 @@ c_ Solution:
         j, k scan each element once
         """
         A.s..()
-        n = l..(A)
-        ret = 0
+        n l..(A)
+        ret 0
         ___ i __ r..(n
-            j = i + 1
-            k = n - 1
+            j i + 1
+            k n - 1
             w.... j < k:
                 __ A[j] + A[k] < target - A[i]:
                     j += 1
                 ____ A[j] + A[k] > target - A[i]:
                     k -_ 1
                 ____  # equal
-                    l_cnt = 1
+                    l_cnt 1
                     w.... j + l_cnt < n a.. A[j + l_cnt] __ A[j]:
                         l_cnt += 1
 
-                    r_cnt = 1
+                    r_cnt 1
                     w.... k - r_cnt >_ 0 a.. A[k - r_cnt] __ A[k]:
                         r_cnt += 1
 
@@ -125,17 +125,17 @@ c_ Solution:
         O(n * target * 3)
         Let F[i][t][k] be the number of k sums using A[:i] to target t
         """
-        n = l..(A)
-        F = [[[0 ___ _ __ r..(3 + 1)] ___ _ __ r..(target + 1)] ___ _ __ r..(n+1)]
+        n l..(A)
+        F [[[0 ___ _ __ r..(3 + 1)] ___ _ __ r..(target + 1)] ___ _ __ r..(n+1)]
 
         ___ i __ r..(n+1
-            F[i][0][0] = 1
+            F[i][0][0] 1
 
         ___ i __ r..(1, n + 1
             ___ t __ r..(target + 1
                 ___ k __ r..(1, 3 + 1
                     # choose A[i-1] or not
-                    F[i][t][k] = F[i-1][t][k] % MOD
+                    F[i][t][k] F[i-1][t][k] % MOD
                     __ t - A[i-1] >_ 0:
                         F[i][t][k] += F[i-1][t-A[i-1]][k-1] % MOD
 
@@ -147,16 +147,16 @@ c_ Solution:
         O(n * target * 3)
         Let F[i][t][k] be the number of k sums using A[:i] to target t
         """
-        F = d..(l....: d..(l....: d..(i..)))
-        n = l..(A)
+        F d..(l....: d..(l....: d..(i..)))
+        n l..(A)
         ___ i __ r..(n+1
-            F[i][0][0] = 1
+            F[i][0][0] 1
 
         ___ i __ r..(1, n + 1
             ___ t __ r..(target + 1
                 ___ k __ r..(1, 3 + 1
                     # choose A[i-1] or not
-                    F[i][t][k] = F[i-1][t][k] + F[i-1][t-A[i-1]][k-1]
+                    F[i][t][k] F[i-1][t][k] + F[i-1][t-A[i-1]][k-1]
                     F[i][t][k] %= MOD
 
         r.. F[n][target][3]

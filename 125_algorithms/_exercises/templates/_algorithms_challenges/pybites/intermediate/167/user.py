@@ -5,8 +5,8 @@ c_ User:
 
     ___ - , first_name, last_name
         """Constructor, base values"""
-        first_name = first_name
-        last_name = last_name
+        first_name first_name
+        last_name last_name
 
     $
     ___ get_full_name

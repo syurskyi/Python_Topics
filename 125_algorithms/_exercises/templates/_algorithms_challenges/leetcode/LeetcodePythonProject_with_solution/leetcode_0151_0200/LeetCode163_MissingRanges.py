@@ -12,13 +12,13 @@ c_ Solution(o..
         :rtype: List[str]
         """
         res    # list
-        prev = lower
+        prev lower
         ___ num __ nums:
             __ num __ prev+1:
                 res.a..('%s' % prev)
             ____ num > prev+1:
                 res.a..('%s->%s' % (prev, m..(num-1, upper)))
-            prev = num+1
+            prev num+1
             __ prev > upper:
                 _____
         __ upper __ prev:
@@ -28,7 +28,7 @@ c_ Solution(o..
         r.. res
     
     ___ test
-        testCases = [
+        testCases [
             [
                 [0,1,3,50,75],
                 0, 99,
@@ -38,7 +38,7 @@ c_ Solution(o..
             print('nums: %s' % nums)
             print('lower: %s' % lower)
             print('upper: %s' % upper)
-            result = findMissingRanges(nums, lower, upper)
+            result findMissingRanges(nums, lower, upper)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -3,7 +3,7 @@ ____ r__ _______ sample, seed
 
 ____ twosums _______ two_sums
 
-NUMBERS = [
+NUMBERS [
     2202, 9326, 1034, 4180, 1932, 8118, 7365, 7738, 6220, 3440, 1538, 7994, 465, 
     6387, 7091, 9953, 35, 7298, 4364, 3749, 9686, 1675, 5201, 502, 366, 417, 
     8871, 151, 6246, 3549, 6916, 476, 8645, 3633, 7175, 8124, 9059, 3819, 5664, 
@@ -12,10 +12,10 @@ NUMBERS = [
 
 ___ test_two_sums
     """Test of the example given in the description"""
-    numbers = [3, 10, 14, 8, 15, 5, 16, 13, 9, 2]
-    e.. = (2, 6)
-    target = 30
-    result = two_sums(numbers, target)
+    numbers [3, 10, 14, 8, 15, 5, 16, 13, 9, 2]
+    e.. (2, 6)
+    target 30
+    result two_sums(numbers, target)
     ... result __ e..
 
 
@@ -28,23 +28,23 @@ ___ test_two_sums
     (2934785974, N..),
 ])
 ___ test_two_sums_param(target, e..
-    result = two_sums(NUMBERS, target)
+    result two_sums(NUMBERS, target)
     ... result __ e..
 
 
 ___ test_two_sums_random
     seed(1)
-    numbers = s.. r..(1, 1_000_000), 1_000)
-    picked = s.. numbers, 2)
-    index1 = numbers.i.. picked[0])
-    index2 = numbers.i.. picked[1])
-    ordered = s..([index1, index2])
-    e.. = ordered[0], ordered[1]
-    target = s..(picked)
-    result = two_sums(numbers, target)
+    numbers s.. r..(1, 1_000_000), 1_000)
+    picked s.. numbers, 2)
+    index1 numbers.i.. picked[0])
+    index2 numbers.i.. picked[1])
+    ordered s..([index1, index2])
+    e.. ordered[0], ordered[1]
+    target s..(picked)
+    result two_sums(numbers, target)
     ... result __ e..
 
 
 ___ test_two_sums_none
-    result = two_sums(NUMBERS, 7000)
+    result two_sums(NUMBERS, 7000)
     ... result __ N..

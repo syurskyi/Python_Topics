@@ -10,7 +10,7 @@ c_ Solution:
         __ n.. nums o. l..(nums) < 4 o. target __ N..
             r.. ans
 
-        n = l..(nums)
+        n l..(nums)
         nums.s..()
 
         ___ a __ r..(n - 3
@@ -21,10 +21,10 @@ c_ Solution:
                 __ b > a + 1 a.. nums[b] __ nums[b - 1]:
                     _____
 
-                c, d = b + 1, n - 1
+                c, d b + 1, n - 1
 
                 w.... c < d:
-                    total = nums[a] + nums[b] + nums[c] + nums[d]
+                    total nums[a] + nums[b] + nums[c] + nums[d]
 
                     __ total __ target:
                         ans.a..([nums[a], nums[b], nums[c], nums[d]])

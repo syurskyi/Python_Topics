@@ -10,8 +10,8 @@ arr    # list
 ___ i __ r..(6
     arr.a..(l.. m..(i.., input().s..())))
 
-ans = hourglasses(arr, 0, 0)
+ans hourglasses(arr, 0, 0)
 ___ i __ r..(4
     ___ j __ r..(4
-        ans = m..(ans, hourglasses(arr, i, j
+        ans m..(ans, hourglasses(arr, i, j
 print(ans)

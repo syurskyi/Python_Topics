@@ -21,7 +21,7 @@ Output:
 
 [[1,2,6], [1,3,5], [2,3,4]]
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution:
@@ -46,9 +46,9 @@ c_ Solution:
         __ remain_k * 9 < remain_n o. remain_k * 1 > remain_n:
             r..
 
-        start = 1
+        start 1
         __ cur:
-            start = cur[-1] + 1  # unique
+            start cur[-1] + 1  # unique
         ___ i __ x..(start, 10
             cur.a..(i)
             dfs(remain_k - 1, remain_n - i, cur, ret)

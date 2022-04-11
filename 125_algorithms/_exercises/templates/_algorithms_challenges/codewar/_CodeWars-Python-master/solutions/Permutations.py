@@ -15,13 +15,13 @@ permutations('aabb'); # ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
 
 
 ___ p..(s__
-    result = s..([s__])
+    result s..([s__])
     __ l..(s__) __ 2:
         result.add(s__[1] + s__[0])
 
     ____ l..(s__) > 2:
         ___ i, c __ e..(s__
-            ___ s __ permutations(s__[:i] + s__[i + 1:]
+            ___ s __ p.. s__[:i] + s__[i + 1:]
                 result.add(c + s)
 
     r.. l..(result)

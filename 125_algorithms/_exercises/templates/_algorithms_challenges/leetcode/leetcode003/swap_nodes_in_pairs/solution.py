@@ -11,7 +11,7 @@ c_ Solution:
         __ head __ N.. o. head.next __ N..
             r.. head
         ____
-            t = head.next
-            head.next = swapPairs(t.next)
-            t.next = head
+            t head.next
+            head.next swapPairs(t.next)
+            t.next head
             r.. t

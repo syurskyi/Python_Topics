@@ -50,7 +50,7 @@ c_ Solution:
         And because (Y + 1 + 1) / 2 = (Y / 2) + 1, 3 operations are more than 2.
         We always choose Y / 2 if Y is even.
         """
-        t = 0
+        t 0
         w.... Y > X:
             __ Y % 2 __ 0:
                 Y //= 2
@@ -64,27 +64,27 @@ c_ Solution:
         """
         BFS
         """
-        q = [X]
-        t = 0
-        has_larger = F..
+        q [X]
+        t 0
+        has_larger F..
         w.... q:
             cur_q    # list
             ___ e __ q:
                 __ e __ Y:
                     r.. t
 
-                cur = e * 2
+                cur e * 2
                 __ cur >_ 1:
                     __ cur > Y a.. n.. has_larger:
-                        has_larger = T..
+                        has_larger T..
                         cur_q.a..(cur)
                     ____ cur <_ Y:
                         cur_q.a..(cur)
 
-                cur = e - 1
+                cur e - 1
                 __ cur >_ 1:
                     cur_q.a..(cur)
-            q = cur_q
+            q cur_q
             t += 1
 
         r..

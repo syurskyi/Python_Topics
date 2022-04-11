@@ -13,19 +13,19 @@ c_ Solution:
     @return: A long integer
     """
     ___ permutationIndexII  A
-        ans = 1
+        ans 1
         __ n.. A:
             r.. ans
 
-        n = l..(A)
-        factorial = dup_fact = 1
+        n l..(A)
+        factorial dup_fact 1
         dups    # dict
 
         ___ i __ r..(n - 1, -1, -1
-            dups[A[i]] = dups.g.. A[i], 0) + 1
+            dups[A[i]] dups.g.. A[i], 0) + 1
             dup_fact *= dups[A[i]]
 
-            cnt = 0
+            cnt 0
             ___ j __ r..(i + 1, n
                 __ A[i] > A[j]:
                     cnt += 1

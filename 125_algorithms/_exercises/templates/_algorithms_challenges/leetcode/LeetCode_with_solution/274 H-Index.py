@@ -11,7 +11,7 @@ remaining two with no more than 3 citations each, his h-index is 3.
 
 Note: If there are several possible values for h, the maximum one is taken as the h-index.
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -27,15 +27,15 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: int
         """
-        n = l..(A)
-        cnt = [0 ___ _ __ x..(n+1)]
+        n l..(A)
+        cnt [0 ___ _ __ x..(n+1)]
         ___ e __ A:
             __ e >_ n:  # chunk
                 cnt[n] += 1
             ____
                 cnt[e] += 1
 
-        F = [0 ___ _ __ x..(n+2)]
+        F [0 ___ _ __ x..(n+2)]
         ___ i __ x..(n, -1, -1
             F[i] += F[i+1] + cnt[i]
             __ F[i] >_ i:
@@ -49,7 +49,7 @@ c_ Solution(o..
         :type citations: List[int]
         :rtype: int
         """
-        n = l..(citations)
+        n l..(citations)
         citations.s..()
         ___ i __ x..(n
             __ citations[i] >_ n-i:
@@ -65,10 +65,10 @@ c_ Solution(o..
         """
         citations.s..(r.._T..
         citations.a..(0)
-        h = 0
+        h 0
         ___ i __ x..(l..(citations)-1
             __ citations[i] >_ i+1 >_ citations[i+1]:
-                h = i+1
+                h i+1
             ____ h:
                 _____
 

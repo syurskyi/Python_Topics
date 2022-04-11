@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-__author__ = 'Daniel'
+__author__ 'Daniel'
 
 
 c_ Solution(o..
@@ -10,15 +10,15 @@ c_ Solution(o..
         Skip matrix
         Encode rule for 2, 4, 6, 8, 5
         """
-        skip = [[N.. ___ _ __ x..(10)] ___ _ __ x..(10)]
-        skip[1][3], skip[3][1] = 2, 2
-        skip[1][7], skip[7][1] = 4, 4
-        skip[3][9], skip[9][3] = 6, 6
-        skip[7][9], skip[9][7] = 8, 8
-        skip[4][6], skip[6][4] = 5, 5
-        skip[2][8], skip[8][2] = 5, 5
-        skip[1][9], skip[9][1] = 5, 5
-        skip[3][7], skip[7][3] = 5, 5
+        skip [[N.. ___ _ __ x..(10)] ___ _ __ x..(10)]
+        skip[1][3], skip[3][1] 2, 2
+        skip[1][7], skip[7][1] 4, 4
+        skip[3][9], skip[9][3] 6, 6
+        skip[7][9], skip[9][7] 8, 8
+        skip[4][6], skip[6][4] 5, 5
+        skip[2][8], skip[8][2] 5, 5
+        skip[1][9], skip[9][1] 5, 5
+        skip[3][7], skip[7][3] 5, 5
 
     ___ numberOfPatterns  m, n
         """
@@ -30,7 +30,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        visited = [F.. ___ _ __ x..(10)]
+        visited [F.. ___ _ __ x..(10)]
         r.. s..(
             dfs(1, visited, remain) * 4 +
             dfs(2, visited, remain) * 4 +
@@ -46,8 +46,8 @@ c_ Solution(o..
         __ remain __ 1:
             r.. 1
 
-        visited[cur] = T..
-        ret = 0
+        visited[cur] T..
+        ret 0
         ___ nxt __ x..(1, 10
             __ (
                 n.. visited[nxt] a.. (
@@ -57,7 +57,7 @@ c_ Solution(o..
 
                 ret += dfs(nxt, visited, remain - 1)
 
-        visited[cur] = F..
+        visited[cur] F..
         r.. ret
 
 

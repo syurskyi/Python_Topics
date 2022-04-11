@@ -11,24 +11,24 @@ c_ Solution(o..
         :type B: int
         :rtype: int
         """
-        n, a, b = N, A, B
+        n, a, b N, A, B
         w.... b:
-            a, b = b, a%b
-        l, r, lcm = 2, 10**14, A*B // a
+            a, b b, a%b
+        l, r, lcm 2, 10**14, A*B // a
         w.... l < r:
-            m = (l+r)//2
+            m (l+r)//2
             __ m // A + m // B - m // lcm < n:
-                l = m+1
+                l m+1
             ____
-                r = m
+                r m
         r.. l % (10**9+7)
     
     ___ test
-        testCases = [
+        testCases [
             [5, 2, 4],
         ]
         ___ n, a, b __ testCases:
-            res = nthMagicalNumber(n, a, b)
+            res nthMagicalNumber(n, a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 

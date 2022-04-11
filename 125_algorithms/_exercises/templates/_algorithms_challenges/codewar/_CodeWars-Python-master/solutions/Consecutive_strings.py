@@ -12,16 +12,16 @@ n being the length of the string array, if n = 0 or k > n or k <= 0 return "".
 
 
 ___ longest_consec(strarr, k
-    n = l..(strarr)
+    n l..(strarr)
     __ n __ 0 o. k > n o. k <_ 0:
         r.. ''
 
-    longest = index = 0
+    longest index 0
     ___ i __ r..(n - k + 1
-        length = s..([l..(s) ___ s __ strarr[i: i + k]])
+        length s..([l..(s) ___ s __ strarr[i: i + k]])
         __ length > longest:
-            longest = length
-            index = i
+            longest length
+            index i
 
     r.. ''.j..(strarr[index: index + k])
 

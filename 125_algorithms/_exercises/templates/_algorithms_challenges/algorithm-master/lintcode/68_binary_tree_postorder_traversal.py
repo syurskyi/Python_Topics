@@ -18,14 +18,14 @@ c_ Solution:
             r.. ans
 
         stack    # list
-        node = last_visit = root
+        node last_visit root
 
         w.... node o. stack:
             w.... node:
                 stack.a..(node)
-                node = node.left
+                node node.left
 
-            node = stack[-1]
+            node stack[-1]
 
             __ (n.. node.right o.
                 last_visit __ node.right
@@ -33,9 +33,9 @@ c_ Solution:
                 stack.p.. )
 
                 ans.a..(node.val)
-                last_visit = node
-                node = N..
+                last_visit node
+                node N..
             ____
-                node = node.right
+                node node.right
 
         r.. ans

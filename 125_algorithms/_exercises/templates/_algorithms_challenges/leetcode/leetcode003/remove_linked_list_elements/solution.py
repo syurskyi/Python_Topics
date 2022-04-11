@@ -21,19 +21,19 @@ c_ Solution(o..
         """
         __ head __ N..
             r.. N..
-        current = head
-        last = N..
+        current head
+        last N..
         w.... current __ n.. N..
             __ current.val __ val:
                 __ last __ n.. N..
                     # Remove `current` node and `last` node is not changed
-                    last.next = current.next
+                    last.next current.next
                 ____
                     # `current` is the head node
                     # Remove the head node and `last` node is still None
-                    head = current.next
-                    last = N..
+                    head current.next
+                    last N..
             ____
-                last = current
-            current = current.next
+                last current
+            current current.next
         r.. head

@@ -6,19 +6,19 @@ Created on Mar 23, 2017
 
 c_ Solution(o..
     ___ isReflected  points
-        minVal, maxVal = f__('inf'), f__('-inf')
+        minVal, maxVal f__('inf'), f__('-inf')
         hashmap    # dict
         ___ point __ points:
-            x, y = point[0], point[1]
-            minVal = m..(minVal, x)
-            maxVal = m..(maxVal, x)
+            x, y point[0], point[1]
+            minVal m..(minVal, x)
+            maxVal m..(maxVal, x)
             __ y n.. __ hashmap:
-                hashmap[point[1]] = s..([x])
+                hashmap[point[1]] s..([x])
             ____
                 hashmap[point[1]].add(x)
-        mid = f__(minVal+maxVal)/2
+        mid f__(minVal+maxVal)/2
         ___ point __ points:
-            x, y = point[0], point[1]
+            x, y point[0], point[1]
             __ x __ mid:
                 _____
             ____

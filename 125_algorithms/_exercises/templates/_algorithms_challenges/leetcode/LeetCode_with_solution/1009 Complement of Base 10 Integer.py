@@ -39,8 +39,8 @@ c_ Solution:
         """
         invert the bit, and the mask it
         """
-        mask = 1
-        cur = N
+        mask 1
+        cur N
         w.... cur >> 1:
             cur >>= 1
             mask <<= 1

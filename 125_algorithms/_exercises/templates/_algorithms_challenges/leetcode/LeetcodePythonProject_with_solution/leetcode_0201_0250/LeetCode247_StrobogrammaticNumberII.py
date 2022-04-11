@@ -20,8 +20,8 @@ c_ Solution(o..
             res.a..(''.j..(curr
             r..
         ___ p __ pairs:
-            curr[l] = p[0]
-            curr[r] = p[1]
+            curr[l] p[0]
+            curr[r] p[1]
             __ l __ r a.. p[0] != p[1]:
                 _____
             ____ l __ 0 a.. l != r a.. p[0] __ '0':
@@ -40,10 +40,10 @@ c_ Solution(o..
         __ n __ 2:
             r.. evenMidCandidate[:-1]
         __ n % 2 != 0:
-            pre, midCandidate = findStrobogrammatic(n-1), oddMidCandidate
+            pre, midCandidate findStrobogrammatic(n-1), oddMidCandidate
         ____
-            pre, midCandidate = findStrobogrammatic(n-2), evenMidCandidate
-        premid = i..((n-1)/2)
+            pre, midCandidate findStrobogrammatic(n-2), evenMidCandidate
+        premid i..((n-1)/2)
         result    # list
         ___ c __ midCandidate:
             ___ p __ pre:
@@ -51,12 +51,12 @@ c_ Solution(o..
         r.. result
     
     ___ test
-        testCases = [
+        testCases [
             4,
         ]
         ___ n __ testCases:
             print('n: %s' % (n
-            result = findStrobogrammatic(n)
+            result findStrobogrammatic(n)
             print('result: %s' % (result
             print('-='*20+'-')
  

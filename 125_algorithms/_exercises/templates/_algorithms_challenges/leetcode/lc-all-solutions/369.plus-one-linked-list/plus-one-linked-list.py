@@ -12,24 +12,24 @@ c_ Solution(o..
     """
 
     ___ reverse(cur
-      pre = N..
+      pre N..
       w.... cur:
         tmp  cur.next
-        cur.next = pre
-        pre = cur
-        cur = tmp
+        cur.next pre
+        pre cur
+        cur tmp
       r.. pre
 
-    p = head = reverse(head)
-    carry = 1
-    pre = N..
+    p head reverse(head)
+    carry 1
+    pre N..
     w.... p:
-      val = (p.val + carry) % 10
-      carry = 1 __ val < p.val ____ 0
-      p.val = val
-      pre = p
-      p = p.next
+      val (p.val + carry) % 10
+      carry 1 __ val < p.val ____ 0
+      p.val val
+      pre p
+      p p.next
 
     __ carry __ 1:
-      pre.next = ListNode(1)
+      pre.next ListNode(1)
     r.. reverse(head)

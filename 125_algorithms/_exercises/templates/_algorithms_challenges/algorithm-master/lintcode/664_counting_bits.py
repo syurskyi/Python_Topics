@@ -7,8 +7,8 @@ c_ Solution:
         __ n.. num:
             r.. [0]
 
-        upper_bound = num + 1
-        F = [0] * upper_bound
+        upper_bound num + 1
+        F [0] * upper_bound
 
         ___ i __ r..(1, upper_bound
             """
@@ -16,6 +16,6 @@ c_ Solution:
                => `F[i & (i - 1)]` must have been calculated
             2. `+ 1` means the removed `1` in bit
             """
-            F[i] = F[i & (i - 1)] + 1
+            F[i] F[i & (i - 1)] + 1
 
         r.. F

@@ -8,31 +8,31 @@ c_ Solution(o..
     :type seqs: List[List[int]]
     :rtype: bool
     """
-    n = l..(org)
-    graph = c...d..(l..)
+    n l..(org)
+    graph c...d..(l..)
     visited    # dict
-    incomings = c...d..(i..)
-    nodes = s..()
+    incomings c...d..(i..)
+    nodes s..()
     ___ seq __ seqs:
       nodes |= s..(seq)
       __ l..(seq) > 0:
         incomings[seq[0]] += 0
       ___ i __ r..(0, l..(seq) - 1
-        start, end = seq[i], seq[i + 1]
+        start, end seq[i], seq[i + 1]
         graph[start].a..(end)
         incomings[end] += 1
 
-    count = 0
+    count 0
     ___ node __ incomings:
       __ incomings[node] __ 0:
         count += 1
         __ count __ 2:
           r.. F..
     order    # list
-    visited = c...d..(i..)
-    queue = [q ___ q __ incomings __ incomings[q] __ 0]
+    visited c...d..(i..)
+    queue [q ___ q __ incomings __ incomings[q] __ 0]
     w.... l..(queue) __ 1:
-      top = queue.p.. )
+      top queue.p.. )
       order.a..(top)
       ___ nbr __ graph[top]:
         incomings[nbr] -_ 1

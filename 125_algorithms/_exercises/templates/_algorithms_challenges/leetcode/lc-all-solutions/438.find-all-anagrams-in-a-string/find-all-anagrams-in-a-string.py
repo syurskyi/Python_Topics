@@ -8,8 +8,8 @@ c_ Solution(o..
     :type p: str
     :rtype: List[int]
     """
-    sCount = C..(s[:l..(p) - 1])
-    pCount = C..(p)
+    sCount C..(s[:l..(p) - 1])
+    pCount C..(p)
     ans    # list
 
     ___ i __ r..(l..(p) - 1, l..(s:

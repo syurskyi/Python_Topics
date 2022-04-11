@@ -17,12 +17,12 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        n = l..(s)
-        p = n - 1
-        right = -1
+        n l..(s)
+        p n - 1
+        right -1
         w.... p >_ 0:
             __ right __ -1 a.. s[p] != ' ':
-                right = p
+                right p
             ____ right >_ 0 a.. s[p] __ ' ':
                 r.. right - p
             p -_ 1
