@@ -34,7 +34,7 @@ ___ simple_calculator(calculation
         operation = operations[values[1]]
         ___
             r.. operation(f__(values[0]),f__(values[2]
-        ______ ZeroDivisionError:
+        ______ Z..
             r.. V...("Division by zero")
 
 

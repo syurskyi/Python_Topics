@@ -55,7 +55,7 @@ ___ call_calculator(args=N.., stdout=F..
 
         ___
             res = calculator(operation, numbers)
-        ______ ZeroDivisionError:
+        ______ Z..
             res = 0
 
         __ stdout:

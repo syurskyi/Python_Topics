@@ -16,7 +16,7 @@ ___ divide_numbers(numerator, denominator
 
     ___
         result = num / den
-    ______ ZeroDivisionError:
+    ______ Z..
         result = 0
     ______:
         r..

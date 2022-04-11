@@ -1,11 +1,11 @@
-___ positive_divide(numerator, denominator
-    ___
-        output = numerator / denominator        
-        __ output < 0:
-            r.. V...
-        __ n.. isi.. ? , (i.., f__:
-            print('Values must be numbers.')
-        ____
-            r.. output
-    ______ ZeroDivisionError:
-        r.. 0
+# ___ positive_divide numerator denominator
+#     ___
+#         output  ? / ?
+#         __ ? < 0
+#             r.. V...
+#         __ n.. isi.. ?  i.. f__
+#             print('Values must be numbers.')
+#         ____
+#             r.. ?
+#     ______ Z..
+#         r.. 0

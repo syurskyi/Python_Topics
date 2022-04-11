@@ -41,7 +41,7 @@ ___ foldl(function, l, acc
         ___
             acc = function(element, acc)
         # Pretty confident test_foldl_nonempty_list_floordiv is a bad test
-        ______ ZeroDivisionError:
+        ______ Z..
             acc = 0
     r.. acc
 
