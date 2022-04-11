@@ -66,7 +66,7 @@ ___ group_names_by_country(data: s.. = data) __ d..:
             l    # list
             l.a..(name)
             countries[arr[2]] = l
-        finally:
+        _______
             line_cnt += 1
     r.. countries
 

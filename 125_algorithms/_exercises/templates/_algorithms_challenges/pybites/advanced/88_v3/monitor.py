@@ -21,7 +21,7 @@ ___ timeit() __ N..
     start = time()
     ___
         y..
-    finally:
+    _______
         elapsed = time() - start
         __ elapsed > OPERATION_THRESHOLD_IN_SECONDS:
             violations.update([get_today()])

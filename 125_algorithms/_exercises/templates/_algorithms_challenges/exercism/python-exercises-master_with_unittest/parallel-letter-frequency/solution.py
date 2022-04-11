@@ -21,7 +21,7 @@ c_ LetterCounter(o..
         lock.a..
         ___
             value = value + counter_to_add
-        finally:
+        _______
             lock.release()
 
 

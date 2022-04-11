@@ -9,5 +9,5 @@ ______ E.. __ e:
     print(e)
 ____
     print(f.read
-finally:
+_______
     print("closing")

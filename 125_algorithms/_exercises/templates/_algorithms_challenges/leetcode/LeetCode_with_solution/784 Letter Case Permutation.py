@@ -50,7 +50,7 @@ c_ Solution:
             lst.a..(S_lst[i].l..
             dfs(lst, S_lst, i + 1)
             lst.p.. )
-            lst.a..(S_lst[i].upper
+            lst.a..(S_lst[i].u..
             dfs(lst, S_lst, i + 1)
             lst.p.. )
 

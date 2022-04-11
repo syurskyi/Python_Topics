@@ -23,7 +23,7 @@ c_ Color:
 
     ___ - , color
         ? ?
-        rgb = COLOR_NAMES.g.. color.upper
+        rgb = COLOR_NAMES.g.. color.u..
 
     $
     ___ hex2rgb(hex_value
