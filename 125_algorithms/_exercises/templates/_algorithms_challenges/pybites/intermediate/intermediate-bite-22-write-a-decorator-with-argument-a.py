@@ -12,7 +12,7 @@ def get_text(text='I code with PyBites'):
 
 # Approach 1 - working
 
-____ f.. _______ wraps
+____ f.. _______ w..
 ___ make_html(func
     ___ wrapped_func
         print("<p>" + func() + "</p>")

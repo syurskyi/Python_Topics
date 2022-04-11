@@ -1,4 +1,4 @@
-___ get_profile(name, age, *args, **kwargs
+___ get_profile(name, age, *args,  $$
     return_dict    # dict
     __ args:
         return_dict 'sports'  = s..(l..(a..

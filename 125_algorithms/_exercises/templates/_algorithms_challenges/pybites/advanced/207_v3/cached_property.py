@@ -1,4 +1,4 @@
-____ f.. _______ wraps
+____ f.. _______ w..
 ____ r__ _______ r__
 ____ t__ _______ sleep
 
@@ -7,7 +7,7 @@ ___ cached_property(func
     """decorator used to cache expensive object attribute lookup"""
 
     $w.. f..
-    ___ getter  *args, **kwargs
+    ___ getter  *args,  $$
         __ n.. hasattr(cached_property, "cache"
             cached_property.cache d..()
         __ func n.. __ cached_property.cache:

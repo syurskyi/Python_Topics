@@ -1,7 +1,7 @@
 ____ t___ _______ Type
 
 
-___ get_profile(name, age, *args, **kwargs
+___ get_profile(name, age, *args,  $$
 
     # Validations
     __ n.. isi..(age, i..

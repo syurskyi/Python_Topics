@@ -12,7 +12,7 @@ def get_text(text='I code with PyBites'):
 
 # Approach 3 - not working
 
-____ f.. _______ wraps
+____ f.. _______ w..
 
 ___ make_html(param
 
@@ -25,8 +25,8 @@ ___ make_html(param
         r.. wrapper
     r.. decorator
 
-@make_html('p')
-@make_html('strong')
+?? 'p'
+? ? 'strong'
 ___ get_text(text='I code with PyBites'
     r.. text
 

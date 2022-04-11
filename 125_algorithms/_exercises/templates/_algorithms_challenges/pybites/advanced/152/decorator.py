@@ -1,4 +1,4 @@
-____ f.. _______ wraps
+____ f.. _______ w..
 
 
 DEFAULT_TEXT ('Subscribe to our blog (sidebar) to periodically get '

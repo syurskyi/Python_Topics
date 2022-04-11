@@ -12,7 +12,7 @@ c_ JsObject(d..
 
 
 
-    ___ - ,**kwargs
+    ___ - , $$
         super().__init__(kwargs)
     
 

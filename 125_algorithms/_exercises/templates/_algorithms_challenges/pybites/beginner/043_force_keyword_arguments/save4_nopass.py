@@ -1,4 +1,4 @@
-___ get_profile(**kwargs
+___ get_profile( $$
     ___ key __ kwargs:
         __ key n.. __ ["name", "profession"]:
             r.. T..

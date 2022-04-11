@@ -13,7 +13,7 @@ c_ JsObject:
        AttributeError: 'dict' object has no attribute 'foo'
     """
 
-    ___ - , **kwargs
+    ___ - ,  $$
         _local d..()
         ___ k, v __ kwargs.i..:
             __setitem__(k, v)

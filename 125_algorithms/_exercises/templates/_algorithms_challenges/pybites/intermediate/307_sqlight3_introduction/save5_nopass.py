@@ -113,7 +113,7 @@ c_ DB:
             column item[0]
             element item[1]
         cur connection.cursor()
-        r.. cur.execute(f"DELETE FROM {table} WHERE {column} = {element}")
+        r.. cur.execute(f"DELETE FROM {table} WHERE {column} =  e.. ")
 
     ___ insert  table: s.., values: L..[Tuple]
         """Inserts one or multiple new records into the database.

@@ -1,9 +1,9 @@
-____ decorators _______ make_html
+____ ? _______ ?
 
 
 ___ test_make_html
-    @make_html('p')
-    @make_html('strong')
+    ?? 'p'
+    ? ? 'strong'
     ___ get_text(text='I code with PyBites'
         r.. text
 

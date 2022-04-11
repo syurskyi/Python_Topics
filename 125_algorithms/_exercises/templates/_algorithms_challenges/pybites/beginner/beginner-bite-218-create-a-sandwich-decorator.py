@@ -23,7 +23,7 @@ Even so decorators can be confusing when you start using them so
 here is an article we wrote some time ago: Learning Python Decorators by Example.
 """
 
-____ f.. _______ wraps
+____ f.. _______ w..
 
 UPPER_SLICE "=== Upper bread slice ==="
 LOWER_SLICE "=== Lower bread slice ==="

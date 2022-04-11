@@ -1,4 +1,4 @@
-____ f.. _______ wraps
+____ f.. _______ w..
 
 
 DEFAULT_TEXT ('Subscribe to our blog (sidebar) to periodically get '
@@ -21,7 +21,7 @@ ___ strip_range(start, end
     ___ decorator_replace(fun
         @wraps(fun)
         ___ wrapper_replace $ $$:
-            output l..(fun $, **kwargs
+            output l..(fun $,  $$
             this_end end __ end < l.. ?  ____ l.. ?
             this_end this_end __ this_end > 0 ____ 0
             this_start start __ start >_ 0 ____ 0
