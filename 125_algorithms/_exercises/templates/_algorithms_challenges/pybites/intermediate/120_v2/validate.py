@@ -6,7 +6,7 @@ ___ int_args(func
     # complete this decorator
 
 
-    ___ wrapper(*args
+    ___ wrapper $
 
         ___ arg __ args:
             __ t..(arg) != i..:
@@ -17,7 +17,7 @@ ___ int_args(func
                 r.. V...("All arguments must be non-negative integers")
 
 
-        r.. func(*args)
+        r.. func $)
 
 
     r.. wrapper

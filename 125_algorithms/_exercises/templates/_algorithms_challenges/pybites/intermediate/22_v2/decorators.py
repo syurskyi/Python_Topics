@@ -9,7 +9,7 @@ ___ make_html(element
 
 
 
-        ___ wrapper(*args,**kwargs
+        ___ wrapper $,**kwargs
 
             r.. f'<{element}>{function( $ $$}</{element}>'
 

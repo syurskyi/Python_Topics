@@ -3,7 +3,7 @@ ____ f.. _______ wraps
 
 ___ int_args(func
     $w.. f..
-    ___ wrapper(*args
+    ___ wrapper $
         # Validate arg type and value
         ___ arg __ args:
             __ n.. isi..(arg, i..
@@ -11,5 +11,5 @@ ___ int_args(func
             ____
                 __ arg < 0:
                     r.. V...
-        r.. func(*args)
+        r.. func $)
     r.. wrapper

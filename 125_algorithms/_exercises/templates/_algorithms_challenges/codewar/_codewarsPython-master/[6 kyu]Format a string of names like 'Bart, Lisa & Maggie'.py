@@ -1,4 +1,4 @@
-___ namelist(names
+___ namelist(n..
     namelist =  [name 'name'  ___ ? __ ?
     __ l..(namelist) <_ 1:
     	r.. ''.j..(namelist)

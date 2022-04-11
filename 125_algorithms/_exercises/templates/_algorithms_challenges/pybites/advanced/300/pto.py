@@ -19,7 +19,7 @@ AT_HOME = WFH + WEEKENDS
 HOURS = 8
 
 
-___ four_day_weekends(*args,
+___ four_day_weekends $,
         start_month: i.. = 8,
         paid_time_off: i.. = 200,
         year: i.. = 2020,

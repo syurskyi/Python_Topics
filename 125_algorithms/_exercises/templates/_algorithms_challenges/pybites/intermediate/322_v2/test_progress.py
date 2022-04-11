@@ -19,7 +19,7 @@ ____ progress _______ ontrack_reading
     ((10, 10, 365), T..),
 ])
 ___ test_ontrack_reading(args, e..
-    ... ontrack_reading(*args) __ e..
+    ... ontrack_reading $) __ e..
 
 
 $f..('2021-07-09')

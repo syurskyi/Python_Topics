@@ -18,6 +18,6 @@ ____ check_split _______ check_split
     (('$16.99', '10%', '20%', 4), '$22.43'),
 ])
 ___ test_check_split(args, e..
-    grand_total, splits = check_split(*args)
+    grand_total, splits = check_split $)
     ... grand_total __ e..
     ... grand_total __ f'${s..(splits)}'

@@ -23,8 +23,8 @@ ___ test_get_year_region_breakdown(df
     ... ret.index.levels[0][0] __ 2018
     ... ret.index.levels[0][1] __ 2019
 
-    ... ret.index.names[0] __ 'Year'
-    ... ret.index.names[1] __ 'Region'
+    ... ret.index.n..[0] __ 'Year'
+    ... ret.index.n..[1] __ 'Region'
 
     a.. = [r..(val, 2) ___ val __ ret.values]
     e.. = [3833.51, 5193.71, 231.12, 7305.56,

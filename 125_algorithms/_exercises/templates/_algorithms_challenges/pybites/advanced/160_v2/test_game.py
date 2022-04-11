@@ -10,7 +10,7 @@ PLAYERS = ("Rock Gun Lightning Devil Dragon Water Air Paper Sponge "
                                   ('blabla', 'Rock')])
 ___ test_bad_inputs(args
     w__ p__.r..(V...
-        get_winner(*args)
+        get_winner $)
 
 
 ?p__.m__.p.("player", PLAYERS)

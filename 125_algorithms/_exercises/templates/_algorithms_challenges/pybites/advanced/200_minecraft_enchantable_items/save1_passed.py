@@ -192,8 +192,8 @@ ___ split_title(title
     :return: Tuple(id_names, names)
     """
     pattern = c..(r"(.*)\((.*)\)")
-    names, id_names = s..(pattern, title).groups()
-    r.. id_names, names
+    n.., id_names = s..(pattern, title).groups()
+    r.. id_names, n..
 
 
 __ _______ __ _______

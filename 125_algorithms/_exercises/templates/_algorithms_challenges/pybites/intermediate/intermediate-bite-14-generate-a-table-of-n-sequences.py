@@ -29,9 +29,9 @@ SEPARATOR = ' | '
 
 ### ----------- My solution ---------------------------
 
-___ my_generate_table(*args
+___ my_generate_table $
     l    # list
-    result = z..(*args)
+    result = z.. $)
     ___ i __ result:
         s = ""
         ___ t __ i:
