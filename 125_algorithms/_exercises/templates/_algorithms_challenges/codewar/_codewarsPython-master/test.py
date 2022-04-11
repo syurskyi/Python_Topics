@@ -1,4 +1,4 @@
-__ T..:
+__ T..
     print('a')
     print('a')
     print('a')

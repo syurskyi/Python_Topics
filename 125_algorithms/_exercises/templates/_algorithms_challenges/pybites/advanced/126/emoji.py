@@ -10,7 +10,7 @@ ___ what_means_emoji(emoji
        in case of a TypeError return 'Not found'"""
     ___
         r.. unicodedata.name(emoji)
-    ______ T..:
+    ______ T..
         r.. 'Not found'
 
 

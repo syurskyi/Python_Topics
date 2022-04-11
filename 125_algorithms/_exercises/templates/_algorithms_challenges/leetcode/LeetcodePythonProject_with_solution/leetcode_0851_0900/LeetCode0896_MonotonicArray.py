@@ -14,7 +14,7 @@ c_ Solution(o..
                         r.. F..
                     increase = T..
                 __ num < A[i-1]:
-                    __ increase __ T..:
+                    __ increase __ T..
                         r.. F..
                     increase = F..
         r.. T..

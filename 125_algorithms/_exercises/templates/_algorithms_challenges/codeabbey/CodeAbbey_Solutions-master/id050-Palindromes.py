@@ -1,7 +1,7 @@
 ___ cleanWord(data
     word    # list
     ___ char __ data:
-        __ s...i..(char) __ T..:
+        __ s...i..(char) __ T..
             word.a..(char)
         ____
             word.a..('')

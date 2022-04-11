@@ -25,7 +25,7 @@ c_ Solution(o..
             i += 1
         res = 0
         ___ i __ r..(2, n
-            __ t[i] __ T..:
+            __ t[i] __ T..
                 res += 1
         r.. res
 

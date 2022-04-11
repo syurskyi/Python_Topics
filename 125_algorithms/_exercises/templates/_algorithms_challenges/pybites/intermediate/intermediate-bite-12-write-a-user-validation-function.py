@@ -13,13 +13,13 @@ UserAccessExpired and UserNoPermission respectively. Check out the tests for mor
 ____ c.. _______ n..
 
 # https://stackoverflow.com/questions/2970608/what-are-named-tuples-in-python
-User = n..('User', 'name role expired')
+User  n..('User', 'name role expired')
 USER, ADMIN = 'user', 'admin'
 SECRET = 'I am a very secret token'
 
-julian = User(name='Julian', role=USER, expired=F..)
-bob = User(name='Bob', role=USER, expired=T..)
-pybites = User(name='PyBites', role=ADMIN, expired=F..)
+julian = ? n.._'Julian', r.._USER, e.._F..
+bob = ? n.._'Bob' r.._USER e.._T..
+pybites = ? n.._'PyBites'  r.._ADMIN, e.._F..
 USERS = (julian, bob, pybites)
 
 # define exception classes here
@@ -35,16 +35,16 @@ c_ UserNoPermission(E..
 ### My solution
 
 ___ get_secret_token(username
-    ___ user __ USERS:
-        __ user.name __ username:
-            __ user.expired __ F..:
-                __ user.role __ ADMIN:
+    ___ user __ ?
+        __ ?.n.. __ ?
+            __ ?.e.. __ F..:
+                __ ?.r.. __ ADMIN:
                     r.. SECRET
                 ____
-                    r.. UserNoPermission
+                    r.. ?
             ____
-                r.. UserAccessExpired
-    r.. UserDoesNotExist
+                r.. ?
+    r.. ?
 
 ### PyBites original solution
 
@@ -71,13 +71,13 @@ ___ pyb_get_secret_token(username
     # https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python
     # https://stackoverflow.com/questions/1319615/proper-way-to-declare-custom-exceptions-in-modern-python
     __ n.. user:
-        r.. UserDoesNotExist
+        r.. ?
 
-    __ user.expired:
-        r.. UserAccessExpired
+    __ ?.e..:
+        r.. ?
 
-    __ user.role != ADMIN:
-        r.. UserNoPermission
+    __ ?.r.. != ADMIN:
+        r.. ?
 
     r.. SECRET
 
@@ -86,9 +86,9 @@ ___ pyb_get_secret_token(username
 
 ___
     print(pyb_get_secret_token('Tim'
-______ UserAccessExpired __ e:
+______ ? __ e:
     print("Caught exception UserAccessExpired")
-______ UserNoPermission __ e:
+______ ? __ e:
     print("Caught exception UserNoPermission")
-______ UserDoesNotExist __ e:
+______ ? __ e:
     print("Caught exception UserDoesNotExist")

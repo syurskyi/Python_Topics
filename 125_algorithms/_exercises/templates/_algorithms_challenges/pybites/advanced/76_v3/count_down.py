@@ -9,7 +9,7 @@ ___ count_down(data_type
             r.. V...
         ___ i __ data_type:
             d += f'{i}'
-    ______ T..:
+    ______ T..
         r.. V...
     ___ i __ r..(4, 0, -1
         print(d[:i])

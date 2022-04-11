@@ -67,7 +67,7 @@ c_ User:
         """
         r.. f"{__class__.__name__}(\"{first_name}\", \"{last_name}\")"
 
-u = User("bob", "belderbos")
+u = ? "bob", "belderbos")
 
 print(u.get_full_name)
 print(u.username)

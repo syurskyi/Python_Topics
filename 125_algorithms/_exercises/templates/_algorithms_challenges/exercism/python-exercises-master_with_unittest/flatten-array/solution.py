@@ -1,7 +1,7 @@
 ___ is_iterable(thing
     ___
         i..(thing)
-    ______ T..:
+    ______ T..
         r.. F..
     ____
         r.. T..

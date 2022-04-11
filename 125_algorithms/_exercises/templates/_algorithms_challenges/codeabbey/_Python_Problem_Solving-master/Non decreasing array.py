@@ -13,7 +13,7 @@ c_ Solution:
                                 i = 0
                             ____
                                 __ nums[i+1] < nums[i+2]:
-                                    __ equals __ T..:
+                                    __ equals __ T..
                                         nums[i+1] = nums[i]
                                     ____
                                         __ nums[i] < nums[i+2]:

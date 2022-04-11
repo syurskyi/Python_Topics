@@ -15,7 +15,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     words = t.s..
     df = pd.DataFrame(words, columns= 'word' )
 
-    __ df.empty __ T..:
+    __ df.empty __ T..
         r.. '', '', 0
 
     df 'casefold'  = df 'word' .s...r..('placeholder', '')

@@ -98,7 +98,7 @@ ___ handle_args(args=N.., cart_ N..
         cart = Groceries()
 
     # different crud operations - please complete ...
-    __ args 'list'  __ T..:
+    __ args 'list'  __ T..
         cart.show()
     ____ args 'add' :
         item,price,craving = args 'add'

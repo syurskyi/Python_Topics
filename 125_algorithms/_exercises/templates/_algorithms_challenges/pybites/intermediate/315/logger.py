@@ -20,7 +20,7 @@ ___ sum_even_numbers(numbers: L..[f__]) __ f__:
       ___
          __ number % 2 __ 0:
             even_numbers.a..(number)
-      ______ T..:
+      ______ T..
          logger.exception(f"Bad inputs: {numbers}")
          r..
 

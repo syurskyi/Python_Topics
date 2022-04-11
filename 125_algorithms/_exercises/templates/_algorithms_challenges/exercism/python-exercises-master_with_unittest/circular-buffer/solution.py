@@ -17,7 +17,7 @@ c_ CircularBuffer(o..
     ___ _update_buffer  data
         ___
             buffer[write_point] = data
-        ______ T..:
+        ______ T..
             buffer[write_point] = o..(data)
 
     ___ clear

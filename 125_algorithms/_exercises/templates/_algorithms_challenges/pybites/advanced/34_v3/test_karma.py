@@ -1,8 +1,8 @@
 ____ karma _______ User, Transaction
 
-alice = User('alice')
-bob = User('bob')
-tim = User('tim')
+alice = ? 'alice')
+bob = ? 'bob')
+tim = ? 'tim')
 
 transactions = [
     Transaction(giver=alice, points=1),

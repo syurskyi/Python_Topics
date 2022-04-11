@@ -12,7 +12,7 @@ ___ test
     print("test has started")
     __ hurdle_jump([1,2,1], 1) ! F..:
         print("error1")
-    __ hurdle_jump([1, 2, 3, 4, 5], 5) ! T..:
+    __ hurdle_jump([1, 2, 3, 4, 5], 5) ! T..
         print("error2")
-    __ hurdle_jump([], 4) ! T..:
+    __ hurdle_jump([], 4) ! T..
         print("error3")

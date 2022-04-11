@@ -11,5 +11,5 @@ ___ test
     __ is_empty(d..) != F..:
         print("error1")
     b_dict    # dict
-    __ is_empty(b_dict) != T..:
+    __ is_empty(b_dict) != T..
         print("error2")

@@ -5,17 +5,17 @@ ____ karma _______ User, Transaction
 
 ?p__.f..
 ___ bob
-    r.. User('bob')
+    r.. ? 'bob')
 
 
 ?p__.f..
 ___ tim
-    r.. User('tim')
+    r.. ? 'tim')
 
 
 ?p__.f..
 ___ alice
-    r.. User('alice')
+    r.. ? 'alice')
 
 
 ?p__.f..

@@ -6,7 +6,7 @@ ___ test_jackpot(result
 
 ___ test
     print("test has started")
-    __ test_jackpot( '@', '@', '@', '@' ) ! T..:
+    __ test_jackpot( '@', '@', '@', '@' ) ! T..
         print("error1")
     __ test_jackpot( 'SS', 'SS', 'SS', 'Ss' ) ! F..:
         print("error2")

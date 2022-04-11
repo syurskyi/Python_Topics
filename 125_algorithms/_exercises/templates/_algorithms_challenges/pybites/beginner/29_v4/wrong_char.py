@@ -10,7 +10,7 @@
 #     problem that if I count 2 of one type I know the majority and can exit
 #     as soon as I have come across a minority type.
 #     '''
-#     an = {F..: 0, T..: 0}  # alphanumeric counter
+#     an = {F..: 0, T.. 0}  # alphanumeric counter
 #     p = 0  # tracks alphanumericity (I'm sure this is not a word) of the first character
 #     ___ ch __ chars:
 #         c = s..(ch).isalnum()  # the defacto test

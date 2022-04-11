@@ -15,7 +15,7 @@ ___ round_up_or_down(transactions, up=T..
     """
     rounded    # list
     ___ f __ transactions:
-        __ up __ T..:
+        __ up __ T..
             f = f + 1
         r = i..(f)
         rounded.a..(r)

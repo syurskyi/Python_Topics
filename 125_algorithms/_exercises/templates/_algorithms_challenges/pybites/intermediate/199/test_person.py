@@ -58,24 +58,24 @@ ___ test_mro_of_child
 
 
 ___ test_subclass_person
-    ... issubclass(Person, o..)
+    ... i.. Person, o..)
 
 
 ___ test_subclass_dad
-    ... issubclass(Father, Person)
-    ... issubclass(Father, o..)
+    ... i.. Father, Person)
+    ... i.. Father, o..)
 
 
 ___ test_subclass_mom
-    ... issubclass(Mother, Person)
-    ... issubclass(Mother, o..)
+    ... i.. Mother, Person)
+    ... i.. Mother, o..)
 
 
 ___ test_subclass_child
-    ... issubclass(Child, Father)
-    ... issubclass(Child, Mother)
-    ... issubclass(Child, Person)
-    ... issubclass(Child, o..)
+    ... i.. Child, Father)
+    ... i.. Child, Mother)
+    ... i.. Child, Person)
+    ... i.. Child, o..)
 
 
 ___ test_use_inheritance
