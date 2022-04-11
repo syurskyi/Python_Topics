@@ -30,7 +30,7 @@ ___ _parse_father_days_per_country(year, date_to_countries,filename=fathers_days
                 _____
             ____ line.s.. '*'
 
-                line = __.sub(r'\band\b','',line)
+                line = __.s.. _ \band\b','',line)
 
                 countries =  l.. m..(l.... s: s.s..('* ').s..,line.s..(',')))
             ____
@@ -113,7 +113,7 @@ ___ generate_father_day_planning(days_to_countries_ N..
 
     ___ date __ dates:
         date = date.s..('%B %d')
-        date = __.sub(r'0(\d)',r'\1',date)
+        date = __.s.. _ 0(\d)',r'\1',date)
 
         countries = days_to_countries[date]
 

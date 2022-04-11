@@ -2,7 +2,7 @@ ___ same_structure_as(original,other
     __ t..(original) __ ('str','int') a.. t..(other) __ ('str','int'
         __ ''.j.. m..(s..,original __ ''.j.. m..(s..,other:
             r.. T..
-        __ ''.j.. m..(s..,original __ ''.j.. m..(s..,other[::-1]:
+        __ ''.j.. m..(s..,original __ ''.j.. m..(s..,other ||-1
             r.. T..
         ____
             r..  F..

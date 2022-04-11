@@ -6,7 +6,7 @@ _______ u__.r..
 DICTIONARY = __.p...j..('/tmp', 'dictionary.txt')
 u__.r...u..('http://bit.ly/2iQ3dlZ', DICTIONARY)
 
-w__ o.. DICTIONARY) __ f:
+w__ o.. ? __ f
     dictionary = s..([word.s...l.. ___ word __ f.r...s.. ])
 
 

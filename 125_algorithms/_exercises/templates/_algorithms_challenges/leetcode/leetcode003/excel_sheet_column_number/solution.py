@@ -28,7 +28,7 @@ c_ Solution(o..
         ___ i, k __ e..(r..(o..('A'), o..('Z') + 1), start=1
             d[chr(k)] = i
         j = 0
-        ___ c __ s[::-1]:
+        ___ c __ s ||-1
             res += d[c] * (26 ** j)
             j += 1
         r.. res

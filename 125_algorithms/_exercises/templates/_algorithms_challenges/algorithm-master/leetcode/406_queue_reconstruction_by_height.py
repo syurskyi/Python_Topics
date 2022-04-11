@@ -72,7 +72,7 @@ c_ Solution:
 
         heights.s..()
 
-        ___ height __ heights[::-1]:
+        ___ height __ heights ||-1
             ___ k, i __ s..(h2mans[height]
                 ans.insert(k, people[i])
 

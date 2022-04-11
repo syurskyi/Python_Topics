@@ -12,7 +12,7 @@ ___ isPalindrome(wordCount
     ___ x __ r..(wordCount
         word  cleanWord(raw_input().l..
         word  ''.j..(word)
-        __ word __ word[::-1]:
+        __ word __ word ||-1
             answer.a..('Y')
         ____
             answer.a..('N')

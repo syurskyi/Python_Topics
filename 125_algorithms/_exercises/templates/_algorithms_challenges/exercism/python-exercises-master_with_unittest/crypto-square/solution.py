@@ -18,7 +18,7 @@ ___ encode(msg
 ___ _cleanse(s
     """Lowercase a string and remove punctuation and whitespace
     """
-    r.. ''.j..([c ___ c __ s __ c.isalnum()]).l..
+    r.. ''.j..([c ___ c __ s __ c.i...l..
 
 
 ___ _chunks_of(s, n

@@ -35,7 +35,7 @@ ___ get_all_timestamps
         t = __.s..(r, t)
         __ t != N..
             t = t.group()
-            l.a..(__.sub(r'[\(\)]','', t
+            l.a..(__.s.. _ [\(\)]','', t
 
     r.. l
 

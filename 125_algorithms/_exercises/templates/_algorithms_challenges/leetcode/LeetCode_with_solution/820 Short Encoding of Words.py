@@ -39,7 +39,7 @@ c_ Solution:
         ends    # list
         ___ word __ s..(words
             cur = root
-            ___ c __ word[::-1]:
+            ___ c __ word ||-1
                 nxt = cur.g.. c, {})
                 cur[c] = nxt
                 cur = nxt

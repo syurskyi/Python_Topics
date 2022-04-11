@@ -13,7 +13,7 @@ __ n.. __.p...i..(DICTIONARY
 
 ___ load_words
     'return dict of words in DICTIONARY'
-    w__ o.. DICTIONARY) __ f:
+    w__ o.. ? __ f
         r.. {word.s...l.. ___ word __ f.r..}
 
 

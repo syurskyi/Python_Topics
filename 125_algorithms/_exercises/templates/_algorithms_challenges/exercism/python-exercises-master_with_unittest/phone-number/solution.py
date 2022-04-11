@@ -23,7 +23,7 @@ c_ Phone(o..
 
     ___ _clean  number
         r.. _normalize(
-            __.sub(r'[^\d]', '', number)
+            __.s.. _ [^\d]', '', number)
         )
 
     ___ _normalize  number

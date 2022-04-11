@@ -66,7 +66,7 @@ ___ pyb_solution_get_harry_most_common_word
             stopwords = s..(f.r...s...l...s..('\n'
 
         w__ o.. harry_text) __ f:
-            words = [__.sub(r'\W+', r'', word)  # [^a-zA-Z0-9_]
+            words = [__.s.. _ \W+', r'', word)  # [^a-zA-Z0-9_]
                      ___ word __ f.r...l...s.. ]
 
             words = [word ___ word __ words __ word.s..

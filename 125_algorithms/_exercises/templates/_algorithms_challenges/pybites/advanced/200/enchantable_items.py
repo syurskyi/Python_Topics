@@ -72,7 +72,7 @@ ___ generate_enchantments(soup
         
         image_source = table_row.find('img') 'data-src'
         last_part = image_source.s..('/')[-1]
-        last_part = __.sub(r'\.|png|sm|enchanted|iron','',last_part)
+        last_part = __.s.. _ \.|png|sm|enchanted|iron','',last_part)
         
         items = last_part.s...s..('_')
         valid_items    # list
@@ -86,7 +86,7 @@ ___ generate_enchantments(soup
                     valid_items.a..(item)
                                                
         id_name = __.s..(r'\((.+)\)',values[0]).group(1)
-        name= __.sub(r'\(.+\)','',values[0])
+        name= __.s.. _ \(.+\)','',values[0])
         level = i..(mapping[values[1]])
         description = values[2]
 

@@ -5,4 +5,4 @@ ___ capitalize_sentences(text: s..) __ s..:
     ___ upper_it(m
         r.. m.group().u..
     text = text.s...s..
-    r.. '\n'.j..([__.sub(r'^\w', upper_it, line) ___ line __ text])
+    r.. '\n'.j..([__.s.. _ ^\w', upper_it, line) ___ line __ text])

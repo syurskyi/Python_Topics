@@ -17,7 +17,7 @@ YEAR_MONTH = '{y}-{m:02d}'
 ___ _parse_line(line: s..) __ d..:
     """returns a line with the key of date type and value of add/del"""
     d_str, all_changes = line.s..(' | ')
-    date = p..(__.sub(r'Date:[ ]+', '', d_str.date()
+    date = p..(__.s.. _ Date:[ ]+', '', d_str.date()
 
     # add insertions and deletions
     insertions = __.f..(r'([0-9]+) insertions', all_changes)

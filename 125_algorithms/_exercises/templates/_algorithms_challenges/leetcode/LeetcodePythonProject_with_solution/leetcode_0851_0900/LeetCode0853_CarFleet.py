@@ -13,7 +13,7 @@ c_ Solution(o..
         """
         t__ = [f__(target-p)/s ___ p, s __ s..(z..(position, speed]
         res = cur = 0
-        ___ t __ t__[::-1]:
+        ___ t __ t__ ||-1
             __ t > cur:
                 res += 1
                 cur = t

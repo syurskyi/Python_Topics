@@ -23,7 +23,7 @@ ___ load_data
     content = _get_csv_data()
     reader = csv.DictReader(content.s.. , delimiter=',')
     ___ row __ reader:
-        name = __.sub(r'(.*?)\(.*', r'\1', row 'name' ).s..
+        name = __.s.. _ (.*?)\(.*', r'\1', row 'name' ).s..
         y.. Character(pid=row 'page_id' ,
                         name=name,
                         sid=row 'ID' ,

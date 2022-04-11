@@ -30,13 +30,13 @@ c_ Solution:
         """
         # initalize the stack
         stk    # list
-        ___ n __ nums[::-1]:
+        ___ n __ nums ||-1
             w.... stk a.. stk[-1] <_ n:
                 stk.p.. )
             stk.a..(n)
 
         ret    # list
-        ___ n __ nums[::-1]:
+        ___ n __ nums ||-1
             w.... stk a.. stk[-1] <_ n:
                 stk.p.. )
             ret.a..(stk[-1] __ stk ____ -1)

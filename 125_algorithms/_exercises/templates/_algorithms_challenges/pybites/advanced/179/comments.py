@@ -46,14 +46,14 @@ ___ strip_comments(code
     
 
     # remove single line comment
-    code = __.sub(r'\n\s*#.*','',code,__.MULTILINE)
+    code = __.s.. _ \n\s*#.*','',code,__.MULTILINE)
 
     # remove inline comment
 
-    code = __.sub(r'\s{2}#\s.*','',code,__.MULTILINE)
+    code = __.s.. _ \s{2}#\s.*','',code,__.MULTILINE)
 
     # remove multi line comments
-    code = __.sub(r'\s*"""[^"]*\n?([^"]*\n)*\s*"""','',code,__.MULTILINE)
+    code = __.s.. _ \s*"""[^"]*\n?([^"]*\n)*\s*"""','',code,__.MULTILINE)
     r.. code
 
 

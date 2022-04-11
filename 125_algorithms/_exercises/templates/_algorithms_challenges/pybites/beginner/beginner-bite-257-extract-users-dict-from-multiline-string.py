@@ -37,7 +37,7 @@ ___ get_users_2nd_solution passwd: s..  __ d..
     ___ row __ passwd.s...s..
         fields = row.s..(':')
         username = fields[0]
-        name = __.sub(r',+', r' ', fields[4].s..(',' o. 'unknown'
+        name = __.s.. _ ,+', r' ', fields[4].s..(',' o. 'unknown'
         output[username] = name
     r.. output
 

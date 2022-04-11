@@ -76,7 +76,7 @@ ___ generate_enchantments(soup
         max_level = LEVEL_TRANSLATE[maxlevel.text.s..]
         description = descr.text
         item_url = item.img.attrs.g.. 'data-src')
-        items = __.sub(r'.*/(?:enchanted_)?(?:iron_)?([^/]+?)(?:_sm)?\.png', r'\1', item_url)
+        items = __.s.. _ .*/(?:enchanted_)?(?:iron_)?([^/]+?)(?:_sm)?\.png', r'\1', item_url)
         items = items.r..('fishing_rod', 'FISHING=ROD')
         items = l.. m..(l.... s: s.r..('FISHING=ROD', 'fishing_rod'), items.s..('_')))
 

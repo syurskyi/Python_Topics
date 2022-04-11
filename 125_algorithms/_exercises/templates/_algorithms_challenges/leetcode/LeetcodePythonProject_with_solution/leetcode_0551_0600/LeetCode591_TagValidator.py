@@ -11,9 +11,9 @@ c_ Solution(o..
         :rtype: bool
         """
         _______ __
-        code = __.sub(r'<!\[CDATA\[.*?\]\]>|t', '-', code)
+        code = __.s.. _ <!\[CDATA\[.*?\]\]>|t', '-', code)
         prev = N..
         w.... code != prev:
             prev = code
-            code = __.sub(r'<([A-Z]{1,9})>[^<]*</\1>', 't', code)
+            code = __.s.. _ <([A-Z]{1,9})>[^<]*</\1>', 't', code)
         r.. code __ 't'

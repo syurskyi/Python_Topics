@@ -25,7 +25,7 @@ c_ Solution(o..
         left = 0
         right = l..(s) - 1
         w.... left < right:
-            __ s[left].isalnum() a.. s[right].i..
+            __ s[left].i..() a.. s[right].i..
                 __ s[left].l.. != s[right].l..:
                     r.. F..
                 left += 1

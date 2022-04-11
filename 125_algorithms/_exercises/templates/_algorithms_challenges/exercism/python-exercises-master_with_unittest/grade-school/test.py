@@ -45,8 +45,8 @@ c_ SchoolTest(unittest.TestCase
         students = [(3, ("Kyle", , (4, ("Christopher", "Jennifer", ,
                     (6, ("Kareem", ]
 
-        ___ grade, students_in_grade __ students[::-1]:
-            ___ student __ students_in_grade[::-1]:
+        ___ grade, students_in_grade __ students ||-1
+            ___ student __ students_in_grade ||-1
                 school.add(student, grade)
 
         result = school.s..()

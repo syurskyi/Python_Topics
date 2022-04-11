@@ -3,7 +3,7 @@ ____ __ _______ sub
 
 
 ___ d.. s__
-    r.. sub(r'(\d+)(\D)', l.... m: m.group(2) * i..(m.group(1, s__)
+    r.. s.. _ (\d+)(\D)', l.... m: m.group(2) * i..(m.group(1, s__)
 
 
 ___ encode(s__

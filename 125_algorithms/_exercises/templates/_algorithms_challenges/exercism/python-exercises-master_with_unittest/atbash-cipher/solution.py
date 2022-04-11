@@ -12,7 +12,7 @@ trtbl = maketrans(a.., a..[::-1])
 
 
 ___ base_trans(text
-    r.. ''.j..([c ___ c __ text __ c.isalnum()]).l...translate(trtbl)
+    r.. ''.j..([c ___ c __ text __ c.i...l...translate(trtbl)
 
 
 ___ encode(plain

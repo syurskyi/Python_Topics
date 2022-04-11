@@ -21,7 +21,7 @@ ___ remove_all_parenthesis_words(text
     """Return text but without any words or phrases in parenthesis:
        'Good morning (afternoon)' -> 'Good morning' (so don't forget
        leading spaces)"""
-    r.. __.sub(r' \([^)]*\) ', ' ', text)
+    r.. __.s.. _  \([^)]*\) ', ' ', text)
 
 
 ___ split_string_on_punctuation(text
@@ -33,7 +33,7 @@ ___ split_string_on_punctuation(text
 
 ___ remove_duplicate_spacing(text
     """Replace multiple spaces by one space"""
-    r.. __.sub(r'\s{2,}', ' ', text)
+    r.. __.s.. _ \s{2,}', ' ', text)
 
 
 ___ has_three_consecutive_vowels(word

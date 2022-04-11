@@ -11,7 +11,7 @@ u__.r...u..(
     DICTIONARY
 )
 
-w__ o.. DICTIONARY) __ f:
+w__ o.. ? __ f
     dictionary = s..([word.s...l.. ___ word __ f.r...s.. ])
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),

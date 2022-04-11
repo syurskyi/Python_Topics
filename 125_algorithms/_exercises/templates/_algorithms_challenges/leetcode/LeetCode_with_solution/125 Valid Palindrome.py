@@ -23,7 +23,7 @@ c_ Solution(o..
         s = s.l..
         # import re  # not supported
         # s = re.sub('[^a-zA-Z0-9]', '', s)  # not supported
-        s = ''.j..(e ___ e __ s __ e.isalnum
+        s = ''.j..(e ___ e __ s __ e.i..
         __ n.. s:
             r.. T..
 

@@ -4,7 +4,7 @@ _______ __
 _______ u__.r..
 
 TMP = __.g.. TMP  /tmp
-DICTIONARY = __.p...j..(TMP, 'dictionary_m_words.txt')
+DICTIONARY = __.p...j..? dictionary_m_words.txt
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/dictionary_m_words.txt',
     DICTIONARY
@@ -13,8 +13,8 @@ u__.r...u..(
 
 ___ load_dictionary
     """Load dictionary (sample) and return as generator (done)"""
-    w__ o.. DICTIONARY) __ f:
-        r.. (word.l...s.. ___ word __ f.r..
+    w__ o.. ? __ f
+        r.. word.l...s.. ___ ? __ ?.r.
 
 
 ___ is_palindrome(word

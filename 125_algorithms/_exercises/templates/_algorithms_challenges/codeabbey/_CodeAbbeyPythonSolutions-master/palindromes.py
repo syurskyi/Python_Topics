@@ -5,7 +5,7 @@ results    # list
 
 ___ is_palindrome(s__
     s__ = s__.r..(" ", "")
-    s__ = __.sub(r'[^\w\s]','',s__).l..
+    s__ = __.s.. _ [^\w\s]','',s__).l..
     string_length = l..(s__)
     ___ i __ r..(string_length//2
         __(s__[i] != s__[string_length-i-1]

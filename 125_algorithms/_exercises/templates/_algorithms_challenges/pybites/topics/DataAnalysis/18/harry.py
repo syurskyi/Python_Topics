@@ -25,7 +25,7 @@ ___ get_harry_most_common_word
         ___ lines __ f:
             ___ word __ lines.s.. :
                 #print(word)
-                word_to_test = "".j..(letter.l.. ___ letter __ word __ letter.isalnum
+                word_to_test = "".j..(letter.l.. ___ letter __ word __ letter.i..
                 #print(word1)
                 __ word_to_test a.. word_to_test n.. __ stopwords_list :
                     common_word.a..(word_to_test)

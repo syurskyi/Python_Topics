@@ -11,7 +11,7 @@ u__.r...u..(
     DICTIONARY
 )
 
-w__ o.. DICTIONARY) __ f:
+w__ o.. ? __ f
     dictionary = s..([word.s...l.. ___ word __ f.r...s.. ])
 
 print(dictionary)

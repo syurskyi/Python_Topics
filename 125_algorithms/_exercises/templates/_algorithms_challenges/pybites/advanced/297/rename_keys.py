@@ -14,7 +14,7 @@ ___ rename_keys(data: Dict[A.., A..]) __ Dict[A.., A..]:
 
 
         __ isi..(key,s..
-            key = __.sub(r'^@','',key)
+            key = __.s.. _ ^@','',key)
 
         __ isi..(value,d..
             new_dict[key] = rename_keys(value)

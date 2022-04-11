@@ -133,7 +133,7 @@ c_ Document:
         # you can use this function as helper method for
         # Document.word_count() and Document.words
         # or you can totally ignore it
-        r.. __.sub(r'[^\w\s]','',line)
+        r.. __.s.. _ [^\w\s]','',line)
 
 
 

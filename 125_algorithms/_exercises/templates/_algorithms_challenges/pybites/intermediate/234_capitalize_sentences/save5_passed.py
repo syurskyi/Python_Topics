@@ -5,5 +5,5 @@ ___ capitalize_sentences(text: s..) __ s..:
     ___ upper_it(m
         r.. m.group().u..
     sentence = __.s..(r'([!?.])\s', text)
-    output = ' '.j..([__.sub(r'^\w', upper_it, line) ___ line __ sentence])
-    r.. __.sub(r'\s([?.!])', r'\1', output)
+    output = ' '.j..([__.s.. _ ^\w', upper_it, line) ___ line __ sentence])
+    r.. __.s.. _ \s([?.!])', r'\1', output)

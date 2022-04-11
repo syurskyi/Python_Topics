@@ -18,6 +18,6 @@ u__.r...u..(
 ___ get_harry_most_common_word
     stopwords = o.. stopwords_file).r...s..
     text = o.. harry_text).r...l..
-    filtered = __.sub(r'[^A-Za-z\s*]', '', text).s..
+    filtered = __.s.. _ [^A-Za-z\s*]', '', text).s..
     words = [word ___ word __ filtered __ word n.. __ stopwords]
     r.. C..(words).most_common(1)[0]
