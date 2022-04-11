@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 ____ c.. _______ n..
 ____ t___ _______ L..
 
@@ -113,7 +113,7 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
 
     pycon_events    # list
     ___ event __ events:
-        event = json.loads(event.getText
+        event = j__.l.. (event.getText
         name = event 'name'
         __ n.. name.s.. 'PyCon'
             _____

@@ -3,7 +3,7 @@ ____ d__ _______ date, t..
 ____ p.. _______ P..
 ____ t___ _______ Dict, L.., OrderedDict
 ____ u__.r.. _______ u..
-_______ json
+_______ j__
 ____ c.. _______ OrderedDict
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
@@ -78,7 +78,7 @@ ___ match_daily_rates(start: date,
 ___ exchange_rates(
     start_date: s.. = "2020-01-01", end_date: s.. = "2020-09-01"
 ) __ OrderedDict:
-    daily_rates = _date_conv(json.loads(RATES_FILE.read_text 'rates' )
+    daily_rates = _date_conv(j__.l.. (RATES_FILE.read_text 'rates' )
     start_date, end_date = map(_parse_date, [start_date, end_date])
     __ start_date < m..(daily_rates.keys o. end_date > m..(daily_rates.k..
         r.. V...('Date out of range for data')

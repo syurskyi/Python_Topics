@@ -7,11 +7,11 @@ Here you probably need to use 2 of the _ methods of namedtuple :)
 ____ c.. _______ n..
 ____ c.. _______ OrderedDict
 ____ d__ _______ d__
-_______ json
+_______ j__
 
 # Q: What is the difference between tuple and list?
 
-blog = d..(name='PyBites',
+blog = d.. name='PyBites',
             founders=('Julian', 'Bob'),
             started=d__ y.._2016,  m.._12,  d.._19),
             tags= 'Python', 'Code Challenges', 'Learn by Doing' ,
@@ -44,14 +44,14 @@ ___ dict2nt(dict_
     r.. b
 
 ___ nt2json(nt
-    json.d.. )
+    j__.d.. )
 
 
-b = dict2nt(blog)
+b = ? ?
 # Q: How to serialize datetime object?
 # https://code-maven.com/serialize-datetime-object-as-json-in-python
 # https://stackoverflow.com/questions/11875770/how-to-overcome-datetime-datetime-not-json-serializable/36142844#36142844
-print(json.dumps(OrderedDict(b._asdict, default=s.., indent=4
+print(j__.d..OrderedDict(b._asdict, default=s.., indent=4
 
 
 ### ---------- PyBites original solution ---------------
@@ -61,9 +61,9 @@ pybBlog = n..('pybBlog', blog.keys
 
 # https://stackoverflow.com/questions/36901/what-does-double-star-asterisk-and-star-asterisk-do-for-parameters
 ___ pyb_dict2nt(dict_
-    r.. pybBlog(**dict_)
+    r.. pybBlog($$?
 
 
 ___ pyb_nt2json(nt
-    nt = nt._replace(started=s..(nt.started
-    r.. json.dumps(nt._asdict
+    nt = ?._replace(started=s..(?.started
+    r.. j__.d..?._asdict

@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 ____ t___ _______ DefaultDict
 
 members = """
@@ -30,9 +30,9 @@ ___ convert_to_json(members=members
             member_dict[col2] = line[2]
             member_dict[col3] = line[3]
             data.a..(member_dict)
-    r.. json.dumps(data)
+    r.. j__.d..data)
 
 
 print(t..(convert_to_json()))
 
-data = json.loads(convert_to_json
+data = j__.l.. (convert_to_json

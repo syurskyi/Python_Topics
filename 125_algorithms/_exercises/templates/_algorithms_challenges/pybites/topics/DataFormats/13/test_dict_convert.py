@@ -1,24 +1,24 @@
-_______ json
+_______ j__
 
-____ dict_convert _______ blog, dict2nt, nt2json
+____ dict_convert _______ ? ? ?
 
-nt = dict2nt(blog)
+nt = ? ?
 
 
 ___ test_dict2nt
-    ... nt.name __ 'PyBites'
-    ... nt.founders[1] __ 'Bob'
-    ... nt.tags[2] __ 'Learn by Doing'
-    ... nt.started.year __ 2016
+    ... ?.n.. __ 'PyBites'
+    ... ?.? 1 __ 'Bob'
+    ... ?.? 2 __ __ 'Learn by Doing'
+    ... ?.s__.y.. __ 2016
 
-    ... nt.__class__.__base__ __ t..
-    ... hasattr(nt, '_asdict')
+    ... ?.-c.-b __ t..
+    ... h.. ? '_asdict')
 
 ___ test_nt2json
-    output = nt2json(nt)
+    output  ? ?
     ... t.. ?  __ s..
 
-    data = json.loads ?
+    data = j__.l..  ?
     ... data 'name'  __ 'PyBites'
     ... data 'founders' [0] __ 'Julian'
     ... data 'tags' [0] __ 'Python'

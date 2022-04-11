@@ -20,5 +20,5 @@ ___ transpose(data
 
 
     __ isi..(data, l..
-       nt_list = [[nt.name, nt.since_days, nt.karma_points, nt.bitecoin_earned] ___ nt __ data]
+       nt_list = [[?.name, ?.since_days, ?.karma_points, ?.bitecoin_earned] ___ nt __ data]
        r.. z..(*nt_list)

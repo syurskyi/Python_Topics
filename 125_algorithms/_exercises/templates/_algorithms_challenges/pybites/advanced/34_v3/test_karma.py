@@ -14,9 +14,9 @@ transactions = [
 
 
 ___ test_init
-    ... alice.name __ 'alice'
-    ... bob.name __ 'bob'
-    ... tim.name __ 'tim'
+    ... alice.n.. __ 'alice'
+    ... bob.n.. __ 'bob'
+    ... tim.n.. __ 'tim'
     ... alice._transactions __ []
     ... bob._transactions __ []
     ... tim._transactions __ []

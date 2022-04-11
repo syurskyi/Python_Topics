@@ -48,7 +48,7 @@ ___ most_popular_characters(characters=characters, top=5
 
     ___ character __ characters:
         __ character.appearances:
-            __ character.name n.. __ character_counts o. (character.name __ character_counts a.. i..(character.appearances) > character_counts[character.name]
+            __ character.name n.. __ character_counts o. (character.n.. __ character_counts a.. i..(character.appearances) > character_counts[character.name]
                 character_counts[character.name] = i..(character.appearances)
     
     r.. [character[0] ___ character __ character_counts.most_common(top)]

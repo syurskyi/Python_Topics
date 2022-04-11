@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 
 ___ multicast_mac_to_ip(mac_address
 
@@ -18,7 +18,7 @@ ___ multicast_mac_to_ip(mac_address
         o1 = (temp_ip & 0x000000ff)
         result.a..(s..(o4) + "." + s..(o3) + "." + s..(o2) + "." + s..(o1
 
-    my_json = json.dumps(result)
+    my_json = j__.d..result)
     r.. my_json
 
 

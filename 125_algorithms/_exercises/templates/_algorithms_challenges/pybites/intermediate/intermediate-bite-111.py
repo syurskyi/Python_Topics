@@ -9,7 +9,7 @@ this in our Parsing Twitter Geo Data and Mocking API Calls by Example article.
 Querying APIs is a common need so this should become second nature :) - enjoy!
 """
 _______ r__
-_______ json __ j
+_______ j__ __ j
 
 # https://stackoverflow.com/questions/58048879/what-is-the-difference-between-json-method-and-json-loads
 
@@ -19,7 +19,7 @@ ___ get_ip_country_2(ip_address
     response = r__.g.. IPINFO_URL.f..(ip=ip_address
     print(t..(response.text
     print(response.text)
-    jso = j.loads(response.text)
+    jso = j.l.. (response.text)
     print(t..(jso
     print(jso 'country' )
 

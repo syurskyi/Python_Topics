@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 
 
 c_ RestAPI(o..
@@ -15,18 +15,18 @@ c_ RestAPI(o..
     ___ get  url, payload_ N..
         __ payload __ N..
             # List of all User objects
-            r.. json.dumps(database)
+            r.. j__.d..database)
 
         # List of User objects for <users> (sorted by name)
-        payload = json.loads(payload)
+        payload = j__.l.. (payload)
         usernames = payload 'users'
-        r.. json.dumps({'users': get_users(usernames)})
+        r.. j__.d..{'users': get_users(usernames)})
 
     ___ post  url, payload_ N..
         __ payload __ N..
             r.. V...("Payload must not be None.")
 
-        payload = json.loads(payload)
+        payload = j__.l.. (payload)
         __ url __ '/add':
             r.. add(payload)
         ____ url __ '/iou':
@@ -44,7 +44,7 @@ c_ RestAPI(o..
         username = payload 'user'
 
         create_user(username)
-        r.. json.dumps(get_user(username
+        r.. j__.d..get_user(username
 
     # Description: Create IOU
     # HTTP method: POST
@@ -65,7 +65,7 @@ c_ RestAPI(o..
         execute_iou(lender, borrower, amount)
 
         users = get_users([lender_username, borrower_username])
-        r.. json.dumps({'users': users})
+        r.. j__.d..{'users': users})
 
     ___ execute_iou  lender, borrower, amount
         update_balance(lender, borrower, amount)

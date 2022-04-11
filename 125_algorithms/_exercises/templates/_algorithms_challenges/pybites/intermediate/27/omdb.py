@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 
 
 ___ get_movie_data(files: l..) __ l..:
@@ -6,7 +6,7 @@ ___ get_movie_data(files: l..) __ l..:
     movie_files    # list
     ___ file __ files:
         w__ o.. file) __ mf:
-            data = json.l.. mf)
+            data = j__.l.. mf)
             movie_files.a..(data)
     r.. movie_files
     

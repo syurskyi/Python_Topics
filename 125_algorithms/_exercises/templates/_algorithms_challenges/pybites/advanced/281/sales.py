@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 _______ __
 ____ p.. _______ P..
 ____ t___ _______ Dict, L.., U..
@@ -21,13 +21,13 @@ ___ get_data(url: s..) __ Dict[s.., s..]:
         Dict[str, str]: The dictionary extracted from the data
     """
     __ TMP.exists
-        data = json.loads(TMP.read_text
+        data = j__.l.. (TMP.read_text
     ____
         response = r__.g.. url)
         response.raise_for_status()
-        data = json.loads(response.text)
+        data = j__.l.. (response.text)
         w__ TMP.o.. "w") __ tmp:
-            json.d.. data, tmp)
+            j__.d.. data, tmp)
     r.. data
 
 

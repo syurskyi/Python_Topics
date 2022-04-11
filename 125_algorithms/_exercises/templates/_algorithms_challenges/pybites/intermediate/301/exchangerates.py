@@ -1,5 +1,5 @@
 _______ __
-_______ json
+_______ j__
 ____ d__ _______ d__, date, t..
 ____ p.. _______ P..
 ____ t___ _______ Dict, L..
@@ -52,7 +52,7 @@ ___ exchange_rates(
 ) __ Dict[date, d..]:
     
     w__ o.. RATES_FILE) __ file:
-        data = json.l.. file)
+        data = j__.l.. file)
 
     start = d__.s..(start_date, "%Y-%m-%d").date()
     end = d__.s..(end_date, "%Y-%m-%d").date()

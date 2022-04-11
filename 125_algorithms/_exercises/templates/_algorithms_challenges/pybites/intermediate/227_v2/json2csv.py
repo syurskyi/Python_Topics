@@ -1,8 +1,8 @@
 ____ p.. _______ P..
 _______ csv
-_______ json
+_______ j__
 _______ r__
-____ json.decoder _______ JSONDecodeError
+____ j__.decoder _______ JSONDecodeError
 
 EXCEPTION = 'exception caught'
 TMP = P..('/tmp')
@@ -28,7 +28,7 @@ ___ convert_to_csv(json_file
     # you code
 
     ___
-        data = json.l.. json_file)
+        data = j__.l.. json_file)
     ______ JSONDecodeError:
         print(EXCEPTION)
         r..

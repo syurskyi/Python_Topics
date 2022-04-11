@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 _______ __
 ____ p.. _______ P..
 _______ d__ __ dt
@@ -25,7 +25,7 @@ ___ get_belts(data: s..) __ d..:
        'yellow': 'January 25, 2018'
     """
     w__ o.. data _ __ f:
-        dates = json.l.. f)
+        dates = j__.l.. f)
 
     dates.s..(key=l.... x: p..(x 'date'
     

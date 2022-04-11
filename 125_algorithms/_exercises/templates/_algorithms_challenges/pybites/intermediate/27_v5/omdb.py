@@ -1,5 +1,5 @@
 _______ glob
-_______ json
+_______ j__
 _______ __
 _______ __
 ____ u__.r.. _______ u..
@@ -23,7 +23,7 @@ ___ get_movie_data(files=files
     result    # list
     ___ file __ files:
         w__ o.. file) __ f:
-            result.a..(json.l.. f
+            result.a..(j__.l.. f
     r.. result
 
 

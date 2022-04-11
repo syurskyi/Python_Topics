@@ -1,6 +1,6 @@
 ____ m__ _______ f..
 ____ t___ _______ Generator
-_______ json
+_______ j__
 
 VALUES = "[0.1, 0.2, 0.3, 0.005, 0.005, 2.67]"
 
@@ -18,7 +18,7 @@ ___ calc_sums(values: s.. = VALUES) __ Generator[s.., N.., N..]:
 
         'The sum of 0.1 and 0.2, rounded to two decimal places, is 0.3.'
     """
-    nums = json.loads(values)
+    nums = j__.l.. (values)
     pairs = z..(nums, nums[1:])
     template = "The sum of {} and {}, rounded to two decimal places, is {:.2f}."
 

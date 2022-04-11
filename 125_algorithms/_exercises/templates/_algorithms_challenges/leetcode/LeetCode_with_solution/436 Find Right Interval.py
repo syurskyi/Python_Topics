@@ -41,7 +41,7 @@ c_ Solution:
             itv.start: idx
             ___ idx, itv __ e..(intervals)
         }
-        starts = l..(s..(indexes.keys()))
+        starts = l..(s..(indexes.k.. )))
         ret    # list
         ___ itv __ intervals:
             idx = bisect_left(starts, itv.end)

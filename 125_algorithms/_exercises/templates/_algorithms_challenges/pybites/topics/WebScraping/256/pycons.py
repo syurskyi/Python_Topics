@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 ____ c.. _______ n..
 ____ t___ _______ L..
 
@@ -111,7 +111,7 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     #print(events[0].text.strip())
     pycon_events    # list
     ___ event __ events:
-        event_json = json.loads(event.text.s..
+        event_json = j__.l.. (event.text.s..
         __ 'pycon' __ event_json["name"].l..:
             # { "@context": "http://schema.org", "@type": "Event", 
             # "location": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Trento", "addressCountry": "Italy" }, 

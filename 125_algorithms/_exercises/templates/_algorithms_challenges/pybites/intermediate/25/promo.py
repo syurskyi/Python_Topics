@@ -32,7 +32,7 @@ c_ Promo:
     ___ _pick_random_bite
         """Pick a random Bite that is not done yet, if all
            Bites are done, raise a NoBitesAvailable exception"""
-        bite_key = r__.c..(l..(all_bites.keys()))
+        bite_key = r__.c..(l..(all_bites.k.. )))
 
         __ l..(all_bites) != l..(bites_done
             __ bite_key n.. __ bites_done:

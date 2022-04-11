@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 _______ t__
 _______ r__
 ____ dataclasses _______ dataclass
@@ -74,7 +74,7 @@ ___ _get_pycons
                 p..(pycon["end_date"]),
                 pycon["url"],
             )
-            ___ pycon __ json.l.. f)
+            ___ pycon __ j__.l.. f)
         ]
 
 
@@ -92,7 +92,7 @@ ___ _extract_city_country_to_lat_lon
         
     
     w__ o.. nominatim_responses _ __ f:
-        places = json.l.. f)
+        places = j__.l.. f)
     
     mapping    # dict
     ___ key,places __ places.i..:

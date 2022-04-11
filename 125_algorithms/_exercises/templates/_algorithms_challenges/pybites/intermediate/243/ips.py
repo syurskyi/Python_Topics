@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 ____ contextlib _______ suppress
 ____ dataclasses _______ dataclass
 ____ ipaddress _______ AddressValueError, IPv4Address, IPv4Network
@@ -29,7 +29,7 @@ ___ parse_ipv4_service_ranges(source: P..) __ L..[ServiceIPRange]:
 
     https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
     """
-    data = json.loads(source.read_text
+    data = j__.l.. (source.read_text
     w__ suppress(AddressValueError
         prefixes = data["prefixes"]
         ipv4_service_ranges = [

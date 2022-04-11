@@ -8,7 +8,7 @@ _______ r.. __ se
 ___ test_basic_series
     ser = se.b..
     ... isi..(ser, ?.S..)
-    ... ?.name __ "Fred"
+    ... ?.n.. "Fred"
     ... ?.dtype __ "int64"
     ... a..(n __ [1, 2, 3, 4, 5] ___ n __ ?.values)
     ... l..(?.values) __ 5

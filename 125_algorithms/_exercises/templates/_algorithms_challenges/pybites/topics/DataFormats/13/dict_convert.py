@@ -1,9 +1,9 @@
 ____ c.. _______ n..
 ____ d__ _______ d__
-_______ json
+_______ j__
 
 
-blog = d..(name='PyBites',
+blog = d.. name='PyBites',
             founders=('Julian', 'Bob'),
             started=d__ y.._2016,  m.._12,  d.._19),
             tags= 'Python', 'Code Challenges', 'Learn by Doing' ,
@@ -22,15 +22,15 @@ ___ dict2nt(dict_
     #        dict_['site']
     #)
     #return nt # my solution
-    r.. NT(**dict_) # better solution
+    r.. NT($$? # better solution
 
 
 ___ nt2json(nt
-    r.. json.dumps(nt._asdict(), default=s..)
+    r.. j__.d..?._a.. default=s..)
 
-nt = dict2nt(blog)
-print(nt.started)
-print(t..(nt.started
+nt = ? ?
+print(?.started)
+print(t..(?.started
 
 print(t..(nt
-print(json.dumps(nt._asdict(), default=s..
+print(j__.d..?._a.. default=s..

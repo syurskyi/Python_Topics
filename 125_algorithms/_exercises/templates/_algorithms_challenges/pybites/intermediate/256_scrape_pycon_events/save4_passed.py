@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 ____ c.. _______ n..
 ____ t___ _______ L..
 
@@ -110,14 +110,14 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     data = soup.find_all('script', t..='application/ld+json')
     event_list    # list
     ___ x __ data:
-        name = json.loads(x.s__)["name"]
+        name = j__.l.. (x.s__)["name"]
         __ name.s.. 'PyCon'
             event_list.a..(PyCon(name=name,
-                                    city=json.loads(x.s__)["location"]["address"]["addressLocality"],
-                                    country=json.loads(x.s__)["location"]["address"]["addressCountry"],
-                                    start_date=p..(json.loads(x.s__)["startDate"]),
-                                    end_date=p..(json.loads(x.s__)["endDate"]),
-                                    url=json.loads(x.s__)["url"]
+                                    city=j__.l.. (x.s__)["location"]["address"]["addressLocality"],
+                                    country=j__.l.. (x.s__)["location"]["address"]["addressCountry"],
+                                    start_date=p..(j__.l.. (x.s__)["startDate"]),
+                                    end_date=p..(j__.l.. (x.s__)["endDate"]),
+                                    url=j__.l.. (x.s__)["url"]
     r.. event_list
 
 

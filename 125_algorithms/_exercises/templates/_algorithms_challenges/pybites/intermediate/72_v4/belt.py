@@ -6,5 +6,5 @@ HONORS = {k: v ___ k, v __ z..(scores, belts)}
 ___ get_belt(user_score
     __ user_score < m..(HONORS.k..
         r.. N..
-    belt_key = m..(f.. l.... x: user_score >_ x, HONORS.keys()))
+    belt_key = m..(f.. l.... x: user_score >_ x, HONORS.k.. )))
     r.. HONORS[belt_key]

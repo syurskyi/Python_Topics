@@ -31,4 +31,4 @@ ___ _(arg
 
 @count_down.register(d..)
 ___ _(arg
-    count_down(l..(arg.keys()))
+    count_down(l..(arg.k.. )))

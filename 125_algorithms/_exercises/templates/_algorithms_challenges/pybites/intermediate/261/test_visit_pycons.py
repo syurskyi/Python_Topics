@@ -19,10 +19,10 @@ ___ test_create_travel_plan
     update_pycons_lat_lon(pycons)
     travel_plan = create_travel_plan(pycons)
     ... l..(travel_plan) __ 8
-    ... travel_plan[0].origin.name __ "PyCon Odessa"
-    ... travel_plan[0].destination.name __ "PyCon SK"
-    ... travel_plan[-1].origin.name __ "PyCon DE & PyData Berlin"
-    ... travel_plan[-1].destination.name __ "PyCon Ireland"
+    ... travel_plan[0].origin.n.. __ "PyCon Odessa"
+    ... travel_plan[0].destination.n.. __ "PyCon SK"
+    ... travel_plan[-1].origin.n.. __ "PyCon DE & PyData Berlin"
+    ... travel_plan[-1].destination.n.. __ "PyCon Ireland"
 
 
 ___ test_total_travel_distance

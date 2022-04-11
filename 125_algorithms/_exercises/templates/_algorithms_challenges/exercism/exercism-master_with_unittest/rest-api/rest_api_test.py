@@ -1,5 +1,5 @@
 _______ unittest
-_______ json
+_______ j__
 
 ____ rest_api _______ RestAPI
 
@@ -11,12 +11,12 @@ c_ RestAPITest(unittest.TestCase
         database = {"users": []}
         api = RestAPI(database)
         response = api.g.. '/users')
-        assertDictEqual(json.loads(response), database)
+        assertDictEqual(j__.l.. (response), database)
 
     ___ test_add_user
         database = {"users": []}
         api = RestAPI(database)
-        payload = json.dumps({
+        payload = j__.d..{
             'user': 'Adam'
         })
         response = api.post('/add', payload)
@@ -26,7 +26,7 @@ c_ RestAPITest(unittest.TestCase
             'owed_by': {},
             'balance': 0
         }
-        assertDictEqual(json.loads(response), e..)
+        assertDictEqual(j__.l.. (response), e..)
 
     ___ test_get_single_user
         database = {
@@ -46,7 +46,7 @@ c_ RestAPITest(unittest.TestCase
             ]
         }
         api = RestAPI(database)
-        payload = json.dumps({
+        payload = j__.d..{
             'users':  'Bob'
         })
         response = api.g.. '/users', payload)
@@ -60,7 +60,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), e..)
+        assertDictEqual(j__.l.. (response), e..)
 
     ___ test_iou_both_users_have_0_balance
         database = {
@@ -80,7 +80,7 @@ c_ RestAPITest(unittest.TestCase
             ]
         }
         api = RestAPI(database)
-        payload = json.dumps({
+        payload = j__.d..{
             'lender': 'Adam',
             'borrower': 'Bob',
             'amount': 3
@@ -106,7 +106,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), e..)
+        assertDictEqual(j__.l.. (response), e..)
 
     ___ test_borrower_has_negative_balance
         database = {
@@ -136,7 +136,7 @@ c_ RestAPITest(unittest.TestCase
             ]
         }
         api = RestAPI(database)
-        payload = json.dumps({
+        payload = j__.d..{
             'lender': 'Adam',
             'borrower': 'Bob',
             'amount': 3
@@ -163,7 +163,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), e..)
+        assertDictEqual(j__.l.. (response), e..)
 
     ___ test_lender_has_negative_balance
         database = {
@@ -193,7 +193,7 @@ c_ RestAPITest(unittest.TestCase
             ]
         }
         api = RestAPI(database)
-        payload = json.dumps({
+        payload = j__.d..{
             'lender': 'Bob',
             'borrower': 'Adam',
             'amount': 3
@@ -221,7 +221,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), e..)
+        assertDictEqual(j__.l.. (response), e..)
 
     ___ test_lender_owes_borrower
         database = {
@@ -245,7 +245,7 @@ c_ RestAPITest(unittest.TestCase
             ]
         }
         api = RestAPI(database)
-        payload = json.dumps({
+        payload = j__.d..{
             'lender': 'Adam',
             'borrower': 'Bob',
             'amount': 2
@@ -271,7 +271,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), e..)
+        assertDictEqual(j__.l.. (response), e..)
 
     ___ test_lender_owes_borrower_less_than_new_loan
         database = {
@@ -295,7 +295,7 @@ c_ RestAPITest(unittest.TestCase
             ]
         }
         api = RestAPI(database)
-        payload = json.dumps({
+        payload = j__.d..{
             'lender': 'Adam',
             'borrower': 'Bob',
             'amount': 4.0
@@ -323,7 +323,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), e..)
+        assertDictEqual(j__.l.. (response), e..)
 
     ___ test_lender_owes_borrower_same_as_new_loan
         database = {
@@ -347,7 +347,7 @@ c_ RestAPITest(unittest.TestCase
             ]
         }
         api = RestAPI(database)
-        payload = json.dumps({
+        payload = j__.d..{
             'lender': 'Adam',
             'borrower': 'Bob',
             'amount': 3.0
@@ -373,7 +373,7 @@ c_ RestAPITest(unittest.TestCase
                 }
             ]
         }
-        assertDictEqual(json.loads(response), e..)
+        assertDictEqual(j__.l.. (response), e..)
 
 
 __ _____ __ _____

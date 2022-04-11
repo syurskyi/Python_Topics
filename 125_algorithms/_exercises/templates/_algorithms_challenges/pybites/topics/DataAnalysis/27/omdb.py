@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 
 
 ___ get_movie_data(files: l..) __ l..:
@@ -8,7 +8,7 @@ ___ get_movie_data(files: l..) __ l..:
         w__ o.. movie) __ f:
             ___ line __ f:
                 __ l..(line.s.. > 0:
-                    data.a..(json.loads(line.s..()))
+                    data.a..(j__.l.. (line.s..()))
     r.. data
 
 ___ get_single_comedy(movies: l..) __ s..:

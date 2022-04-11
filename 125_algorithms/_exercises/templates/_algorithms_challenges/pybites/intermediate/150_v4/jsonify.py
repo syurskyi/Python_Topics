@@ -1,5 +1,5 @@
 _______ ___
-_______ json
+_______ j__
 ____ csv _______ DictReader
 
 members = """
@@ -22,4 +22,4 @@ ___ convert_to_json(members=members
     members.p.. 0)
     print _*{members=}', file=sys.stderr, flush=T..)
     members_dict = l..(DictReader(members
-    r.. json.dumps(members_dict)
+    r.. j__.d..members_dict)

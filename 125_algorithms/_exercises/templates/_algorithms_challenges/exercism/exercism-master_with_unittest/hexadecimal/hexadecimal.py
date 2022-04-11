@@ -6,7 +6,7 @@ c_ Hexa:
                    'e': 14,
                    'f': 15}
     VALID_CHARS = s..(l.. m..(s.., l..(r..(0, 10)))) +
-                      l..(CHAR_VALUES.keys()))
+                      l..(CHAR_VALUES.k.. )))
     BASE = 16
 
     @classmethod

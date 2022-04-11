@@ -12,7 +12,7 @@ ___ nxapi_show_version
                 'params': {'cmd': 'show version',
                            'version': 1}, 'id': 1}]
 
-    response = r__.post(url, json=payload, headers=http_headers,
+    response = r__.post(url, j__=payload, headers=http_headers,
                              auth=(switchuser, switchpassword), verify=F..).j..
 
     version = response 'result'  'body'  'kickstart_ver_str'

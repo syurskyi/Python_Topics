@@ -1,6 +1,6 @@
 _______ ___
 _______ __
-_______ json
+_______ j__
 
 
 ___ get_movie_data(files: l..) __ l..:
@@ -8,7 +8,7 @@ ___ get_movie_data(files: l..) __ l..:
     out_lst    # list
     ___ file __ files:
         w__ o.. file) __ f:
-            out_lst.a..(json.l.. f
+            out_lst.a..(j__.l.. f
     out_lst.s..(key=l.... m: m 'Title' )
     r.. out_lst
 

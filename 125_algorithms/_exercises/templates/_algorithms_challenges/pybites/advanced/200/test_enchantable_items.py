@@ -95,7 +95,7 @@ ___ coders_dataset
 
 
 ___ test_enchantment_class(enchantment_mock
-    ... enchantment_mock.name __ "Python Developer"
+    ... enchantment_mock.n.. __ "Python Developer"
     ... enchantment_mock.items __ []
 
 
@@ -120,7 +120,7 @@ ___ test_enchantment_class_print(enchantment_mock, capfd
 
 ___ test_item_class(item_mock, enchantment_mock
     item_mock.enchantments.a..(enchantment_mock)
-    ... item_mock.enchantments[0].name __ "Python Developer"
+    ... item_mock.enchantments[0].n.. __ "Python Developer"
 
 
 ___ test_item_class_print(item_mock, capfd
@@ -178,7 +178,7 @@ ___ test_generate_enchantments_from_source
     ],
 )
 ___ test_gen_items_mocked(mocked_generate_items, item, e..
-    ... mocked_generate_items[item].enchantments[0].name __ e..
+    ... mocked_generate_items[item].enchantments[0].n.. __ e..
 
 
 ?p__.m__.p.(

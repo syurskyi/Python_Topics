@@ -32,9 +32,9 @@ ___ signs_are_mutually_compatible(signs: l.., sign1: s.., sign2: s..) __ b..:
     """Given 2 signs return if they are compatible (compatibility field)"""
     ret = F..
     ___ sign __ signs:
-        __ sign.name __ sign1:
+        __ sign.n.. __ sign1:
             ret = sign2 __ sign.compatibility
-        ____ sign.name __ sign2:
+        ____ sign.n.. __ sign2:
             ret = sign1 __ sign.compatibility
     r.. ret
 

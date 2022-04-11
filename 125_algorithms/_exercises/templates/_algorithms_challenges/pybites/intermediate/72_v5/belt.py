@@ -10,4 +10,4 @@ MIN_SCORE, MAX_SCORE = m..(scores), m..(scores)
 ___ get_belt(user_score
     __ user_score < MIN_SCORE:
         r.. N..
-    r.. HONORS[l..(filterfalse(l.... x: x > user_score, HONORS.keys()))[-1]]
+    r.. HONORS[l..(filterfalse(l.... x: x > user_score, HONORS.k.. )))[-1]]

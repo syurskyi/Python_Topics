@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 ____ d__ _______ date
 
 _______ p__
@@ -15,7 +15,7 @@ ___ exchange_rates_result
 ___ matching_result
     start = date(2020, 1, 1)
     end = date(2020, 9, 1)
-    daily_rates = json.loads(RATES_FILE.read_text["rates"]
+    daily_rates = j__.l.. (RATES_FILE.read_text["rates"]
     r.. match_daily_rates(start, end, daily_rates)
 
 

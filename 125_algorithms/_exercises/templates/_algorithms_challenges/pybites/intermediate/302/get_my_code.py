@@ -1,7 +1,7 @@
 _______ __
 ____ p.. _______ P..
 ____ u__.r.. _______ u..
-_______ json
+_______ j__
 
 filename = "my_code.json"
 url = "https://bites-data.s3.us-east-2.amazonaws.com/{filename}"
@@ -14,7 +14,7 @@ __ n.. json_input_file.exists
 
 ___ get_json_data
     w__ o.. json_input_file) __ file_in:
-        r.. json.l.. file_in)
+        r.. j__.l.. file_in)
 
 
 json_data = get_json_data()

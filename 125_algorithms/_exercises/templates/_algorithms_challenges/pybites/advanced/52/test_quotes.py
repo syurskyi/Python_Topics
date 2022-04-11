@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 
 ____ quotes _______ app
 
@@ -12,7 +12,7 @@ ___ test_get_quotes
     response = client.g.. API_ENDPOINT)
     ... response.status_code __ 200
 
-    data = json.loads(response.get_data
+    data = j__.l.. (response.get_data
     print(data)
     quotes = data 'quotes'
     ... l..(quotes) __ 3
@@ -26,7 +26,7 @@ ___ test_get_existing_quote
     response = client.g.. API_ENDPOINT + '/2')
     ... response.status_code __ 200
 
-    data = json.loads(response.get_data
+    data = j__.l.. (response.get_data
     quotes = data 'quotes'
     ... l..(quotes) __ 1
 
@@ -43,10 +43,10 @@ ___ test_create_quote
     new_quote = d..(quote='You talking to me?',
                      movie='Taxi driver')
     response = client.post(API_ENDPOINT,
-                           data=json.dumps(new_quote),
+                           data=j__.d..new_quote),
                            content_type='application/json')
     ... response.status_code __ 201
-    data = json.loads(response.get_data
+    data = j__.l.. (response.get_data
     new_quote = data 'quote'
     ... new_quote 'id'  __ 4
     ... new_quote 'quote'  __ 'You talking to me?'
@@ -56,7 +56,7 @@ ___ test_create_quote
 ___ test_create_quote_missing_data
     new_quote    # dict
     response = client.post(API_ENDPOINT,
-                           data=json.dumps(new_quote),
+                           data=j__.d..new_quote),
                            content_type='application/json')
     ... response.status_code __ 400
 
@@ -64,7 +64,7 @@ ___ test_create_quote_missing_data
 ___ test_create_quote_incomplete_data
     new_quote = d..(quote='You talking to me?')
     response = client.post(API_ENDPOINT,
-                           data=json.dumps(new_quote),
+                           data=j__.d..new_quote),
                            content_type='application/json')
     ... response.status_code __ 400
 
@@ -73,7 +73,7 @@ ___ test_create_existing_quote
     new_quote = d..(quote='You talking to me?',
                      movie='Taxi driver')
     response = client.post(API_ENDPOINT,
-                           data=json.dumps(new_quote),
+                           data=j__.d..new_quote),
                            content_type='application/json')
     ... response.status_code __ 400
 
@@ -82,11 +82,11 @@ ___ test_update_quote
     update_quote = d..(quote='You talking to me?!',
                         movie='Taxi driver (1976)')
     response = client.put(API_ENDPOINT + '/4',
-                          data=json.dumps(update_quote),
+                          data=j__.d..update_quote),
                           content_type='application/json')
     ... response.status_code __ 200
 
-    data = json.loads(response.get_data
+    data = j__.l.. (response.get_data
     updated_quote = data 'quote'
     ... updated_quote 'id'  __ 4
     ... updated_quote 'quote'  __ 'You talking to me?!'
@@ -96,7 +96,7 @@ ___ test_update_quote
 ___ test_update_no_data
     update_quote    # dict
     response = client.put(API_ENDPOINT + '/4',
-                          data=json.dumps(update_quote),
+                          data=j__.d..update_quote),
                           content_type='application/json')
     ... response.status_code __ 400
 
@@ -104,7 +104,7 @@ ___ test_update_no_data
 ___ test_update_not_existing_quote
     update_quote = d..(quote='You talking to me?!')
     response = client.put(API_ENDPOINT + '/5',
-                          data=json.dumps(update_quote),
+                          data=j__.d..update_quote),
                           content_type='application/json')
     ... response.status_code __ 404
 
@@ -113,11 +113,11 @@ ___ test_update_no_changes
     update_quote = d..(quote='Get to the choppa!',
                         movie='Predator')
     response = client.put(API_ENDPOINT + '/2',
-                          data=json.dumps(update_quote),
+                          data=j__.d..update_quote),
                           content_type='application/json')
     ... response.status_code __ 200
 
-    data = json.loads(response.get_data
+    data = j__.l.. (response.get_data
     updated_quote = data 'quote'
     ... updated_quote 'id'  __ 2
     ... updated_quote 'quote'  __ 'Get to the choppa!'
@@ -130,7 +130,7 @@ ___ test_delete_existing_quote
 
     # number quotes from 4 to 3
     response = client.g.. API_ENDPOINT)
-    data = json.loads(response.get_data
+    data = j__.l.. (response.get_data
     quotes = data 'quotes'
     ... l..(quotes) __ 3
 

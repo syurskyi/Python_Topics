@@ -1,5 +1,5 @@
 _______ r__
-_______ json
+_______ j__
 
 IPINFO_URL = 'http://ipinfo.io/{ip}/json'
 
@@ -10,5 +10,5 @@ ___ get_ip_country(ip_address
     w__ r__.S.. __ session:
         url_format = IPINFO_URL.f..(ip=ip_address)
         decode = session.g.. url_format).content.d.. 'utf-8')
-        data = json.loads(decode)
+        data = j__.l.. (decode)
     r.. data 'country'

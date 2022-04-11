@@ -1,4 +1,4 @@
-_______ json
+_______ j__
 ____ unittest.mock _______ patch, Mock
 
 _______ r__
@@ -15,7 +15,7 @@ ___ test_ipinfo_mexican_ip(mockget
                b'"postal": "12345",\n  "org": "some org"\n}')
     mockget.return_value = Mock(content=content,
                                 text=content.d.. "utf-8"),
-                                json=l....: json.loads(content),
+                                j__=l....: j__.l.. (content),
                                 status_code=200)
     ... get_ip_country('187.190.38.36') __ 'MX'
 
@@ -29,6 +29,6 @@ ___ test_ipinfo_japan_ip(mockget
                b'"org": "some other org"\n}')
     mockget.return_value = Mock(content=content,
                                 text=content.d.. "utf-8"),
-                                json=l....: json.loads(content),
+                                j__=l....: j__.l.. (content),
                                 status_code=200)
     ... get_ip_country('185.161.200.10') __ 'JP'

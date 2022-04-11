@@ -1,5 +1,5 @@
 ____ d__ _______ d__
-_______ json
+_______ j__
 _______ __
 ____ p.. _______ P..
 ____ u__.r.. _______ u..
@@ -20,7 +20,7 @@ ___ signs
     __ n.. PATH.exists
         u..(URL, PATH)
     w__ o.. PATH) __ f:
-        data = json.loads(f.read
+        data = j__.l.. (f.read
     r.. get_signs(data)
 
 

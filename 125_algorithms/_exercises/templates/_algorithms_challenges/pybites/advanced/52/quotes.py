@@ -67,7 +67,7 @@ ___ get_quote(qid
 @app.route('/api/quotes', methods= 'POST' )
 ___ create_quote
 
-    data = request.json
+    data = request.j__
 
     __ n.. (('quote' __ data) a..  ('movie' __ data:
         r.. "Incomplete data",400
@@ -100,7 +100,7 @@ ___ update_quote(qid
     
 
 
-    data = request.json
+    data = request.j__
     print(data)
     __ n.. (('quote' __ data) o.  ('movie' __ data:
         r.. "Incomplete data",400
