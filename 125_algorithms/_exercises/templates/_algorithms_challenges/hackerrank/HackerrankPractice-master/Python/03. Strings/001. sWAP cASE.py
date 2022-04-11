@@ -3,4 +3,4 @@
 
 
 ___ swap_case(s
-    r.. s.swapcase()
+    r.. s.s..
