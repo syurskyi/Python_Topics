@@ -2,7 +2,7 @@ _______ csv
 ____ p.. _______ P..
 ____ u__.r.. _______ u..
 
-tmp = P..('/tmp')
+tmp  P..('/tmp')
 stats = tmp / 'bites.csv'
 
 __ n.. stats.exists

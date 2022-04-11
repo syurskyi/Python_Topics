@@ -45,7 +45,7 @@ ___ most_popular_characters(characters=characters, top=5
     result = C..()
     ___ char __ characters:
         result[char.name + ',' + char.year] += i..(char.appearances) __ char.appearances != '' ____ 0
-    r.. [x[0].s..(',')[0] ___ x __ result.most_common(top)]
+    r.. [x[0].s.. ',' 0 ___ x __ result.most_common(top)]
 
 
 ___ max_and_min_years_new_characters(characters=characters
@@ -59,7 +59,7 @@ ___ max_and_min_years_new_characters(characters=characters
         __ char.year __ '':
             _____
         result[char.year] += 1
-    r.. (result.most_common(1)[0][0], result.m..[-1][0])
+    r.. (result.most_common 1 0 0, result.m..[-1][0])
 
 
 ___ get_percentage_female_characters(characters=characters

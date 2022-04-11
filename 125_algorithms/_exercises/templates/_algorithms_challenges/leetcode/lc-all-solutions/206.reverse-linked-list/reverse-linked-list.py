@@ -18,7 +18,7 @@ c_ Solution(o..
     pre = N..
     cur = head
     w.... cur:
-      tmp = cur.next
+      tmp  cur.next
       cur.next = pre
       pre = cur
       cur = tmp
@@ -33,7 +33,7 @@ c_ Solution(o..
     dHead = dummy = ListNode(-1)
     p = head
     w.... p:
-      tmp = dummy.next
+      tmp  dummy.next
       dummy.next = p
       p = p.next
       dummy.next.next = tmp

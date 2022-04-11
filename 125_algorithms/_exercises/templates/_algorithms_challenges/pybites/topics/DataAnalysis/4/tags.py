@@ -4,14 +4,14 @@ _______ u__.r..
 _______ ___.e__.E__ __ ET
 
 # prep
-tmp = __.g..("TMP", "/tmp")
+tmp  __.g.. TMP  /tmp
 tempfile = __.p...j..(tmp, 'feed')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile
 )
 
-w__ o.. tempfile) __ f:
+w__ o.. ? __ f
     content = f.r...l..
 
 

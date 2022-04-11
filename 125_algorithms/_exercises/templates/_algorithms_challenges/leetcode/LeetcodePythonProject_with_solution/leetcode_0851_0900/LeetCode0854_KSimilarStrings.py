@@ -27,7 +27,7 @@ c_ Solution(o..
                 ___ j __ r..(i+1, l..(s:
                     __ s[j] __ b[j] o. s[i] != b[j]:
                         _____
-                    tmp = swap(s, i, j)
+                    tmp  swap(s, i, j)
                     __ tmp __ b:
                         r.. res
                     __ tmp n.. __ hashset:

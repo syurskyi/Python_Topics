@@ -9,7 +9,7 @@ c_ Solution(o..
     ___ i __ r..(1, l..(triangle:
       pre = dp[0]
       ___ j __ r..(l..(triangle[i]:
-        tmp = dp[j]
+        tmp  dp[j]
         __ j __ 0:
           dp[j] = pre
         ____ j __ l..(triangle[i]) - 1:

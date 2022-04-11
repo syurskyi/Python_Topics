@@ -6,7 +6,7 @@ ____ u__.r.. _______ u..
 
 # prep
 TAG_HTML = __.c..(r'<category>([^<]+)</category>')
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 TEMPFILE = __.p...j..(TMP, 'feed')
 MIN_TAG_LEN = 10
 IDENTICAL = 1.0
@@ -21,7 +21,7 @@ u..(
 ___ _get_tags(tempfile=TEMPFILE
     """Helper to parse all tags from a static copy of PyBites' feed,
        providing this here so you can focus on difflib"""
-    w__ o.. tempfile) __ f:
+    w__ o.. ? __ f
         content = f.r...l..
     # take a small subset to keep it performant
     tags = TAG_HTML.f..(content)

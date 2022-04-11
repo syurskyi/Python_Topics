@@ -141,7 +141,7 @@ c_ BridgeHand:
                     ____ cards[0] != Rank.A o.  cards[1] != Rank.K:
                         losing_tricks += 2
                 ____
-                    cards = cards[:3]
+                    cards = cards |3
 
                     __ cards != [Rank.A,Rank.K,Rank.Q]:
                         __ ((cards[0] __ Rank.A) a.. (cards[1] __ (Rank.K,Rank.Q))) o. (cards[0] __ Rank.K a.. cards[1] __ Rank.Q

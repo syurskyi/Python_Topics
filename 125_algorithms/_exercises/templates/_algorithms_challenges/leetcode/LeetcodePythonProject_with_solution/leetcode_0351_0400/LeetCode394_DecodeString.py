@@ -39,7 +39,7 @@ c_ Solution(o..
                     j+=1
                 nextInd = j
                 subStr = s[i+1:j-1]
-                tmp = decodeString(subStr)
+                tmp  decodeString(subStr)
                 j = i
                 w.... j-1 >_ 0 a.. s[j-1].i..
                     j-_1

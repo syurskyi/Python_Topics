@@ -20,7 +20,7 @@ u..(
 ___ _get_tags(tempfile=TEMPFILE
     """Helper to parse all tags from a static copy of PyBites' feed,
        providing this here so you can focus on difflib"""
-    w__ o.. tempfile) __ f:
+    w__ o.. ? __ f
         content = f.r...l..
     # take a small subset to keep it performant
     tags = TAG_HTML.f..(content)

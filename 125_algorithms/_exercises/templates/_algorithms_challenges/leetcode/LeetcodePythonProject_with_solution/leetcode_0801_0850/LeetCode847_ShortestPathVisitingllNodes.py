@@ -15,7 +15,7 @@ c_ Solution(o..
         hashset = s..()
         
         ___ i __ r..(n
-            tmp = (1 << i)
+            tmp  (1 << i)
             hashset.add((tmp, i, 0
             queue.a..((tmp, i, 1
         

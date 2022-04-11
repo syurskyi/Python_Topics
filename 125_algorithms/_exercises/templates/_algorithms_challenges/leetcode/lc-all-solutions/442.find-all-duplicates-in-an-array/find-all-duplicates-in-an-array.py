@@ -3,7 +3,7 @@ c_ Solution(o..
     ans    # list
     ___ i __ r..(0, l..(nums:
       w.... nums[nums[i] - 1] != nums[i]:
-        tmp = nums[nums[i] - 1]
+        tmp  nums[nums[i] - 1]
         nums[nums[i] - 1] = nums[i]
         nums[i] = tmp
     ___ i __ r..(0, l..(nums:

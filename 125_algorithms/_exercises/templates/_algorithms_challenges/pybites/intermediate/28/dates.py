@@ -7,7 +7,7 @@ ____ u__.r.. _______ u..
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 RSS_FEED = 'pybites_feed.rss.xml'
 PUB_DATE = __.c..(r'<pubDate>(.*?)</pubDate>')
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 
 
 ___ _get_dates

@@ -21,7 +21,7 @@ c_ Solution(o..
             node = dummy
             w.... node.next a.. node.next.val < head.val:
                 node = node.next
-            tmp = head.next
+            tmp  head.next
             head.next = node.next
             node.next = head
             head = tmp

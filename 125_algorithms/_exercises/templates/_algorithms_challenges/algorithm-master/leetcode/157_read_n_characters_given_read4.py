@@ -20,7 +20,7 @@ c_ Solution:
 
         i = 0
         k = 4
-        tmp = [0] * k
+        tmp  [0] * k
 
         w.... i < n a.. k __ 4:
             k = read4(tmp)

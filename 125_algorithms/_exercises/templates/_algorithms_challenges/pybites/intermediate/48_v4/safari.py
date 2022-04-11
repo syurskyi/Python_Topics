@@ -4,7 +4,7 @@ _______ u__.r..
 ____ c.. _______ d..
 ____ d__ _______ d__
 
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 DATA = 'safari.logs'
 SAFARI_LOGS = __.p...j..(TMP, DATA)
 PY_BOOK, OTHER_BOOK = '🐍', '.'

@@ -24,7 +24,7 @@ c_ Solution(o..
         mB, nB = l..(B), l..(B[0])
         colSumB    # list
         ___ j __ r..(nB
-            tmp = 0
+            tmp  0
             ___ i __ r..(mB
                 tmp+=B[i][j]
             colSumB.a..(tmp)

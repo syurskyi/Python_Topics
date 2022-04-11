@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         res = '1'
         ___ _ __ r..(n-1
-            tmp = ''
+            tmp  ''
             i = 0
             w.... i < l..(res
                 count = 1

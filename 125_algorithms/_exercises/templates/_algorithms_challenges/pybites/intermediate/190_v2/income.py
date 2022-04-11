@@ -5,7 +5,7 @@ ____ u__.r.. _______ u..
 ____ bs4 _______ BeautifulSoup
 
 # import the countries xml file
-tmp = P..(__.g..("TMP", "/tmp"
+tmp  P..(__.g..("TMP", "/tmp"
 countries = tmp / 'countries.xml'
 
 __ n.. countries.exists

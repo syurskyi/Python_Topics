@@ -7,7 +7,7 @@ ____ u__.r.. _______ u..
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 RSS_FEED = 'pybites_feed.rss.xml'
 PUB_DATE = __.c..(r'<pubDate>(.*?)</pubDate>')
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 
 
 ___ _get_dates
@@ -34,8 +34,8 @@ ___ get_month_most_posts(dates
     """Receives a list of datetimes and returns the month (format YYYY-MM)
        that occurs most"""
     new_list = [logdate.s..("%Y-%m") ___ logdate __ dates]
-    r.. c...C..(new_list).most_common(1)[0][0]
+    r.. c...C..(new_list).most_common 1 0 0
 
 converted_dates = [convert_to_datetime(d) ___ d __ _get_dates()]
-print(converted_dates[:3])
+print(converted_dates |3)
 print(get_month_most_posts(converted_dates

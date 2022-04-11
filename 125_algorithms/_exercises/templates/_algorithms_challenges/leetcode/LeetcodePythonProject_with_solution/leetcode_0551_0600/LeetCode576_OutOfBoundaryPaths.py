@@ -19,7 +19,7 @@ c_ Solution(o..
         count[i][j] = 1
         result = 0
         ___ _ __ r..(N
-            tmp = [[0]*n ___ _ __ r..(m)]
+            tmp  [[0]*n ___ _ __ r..(m)]
             ___ r __ r..(m
                 ___ c __ r..(n
                     ___ nr, nc __ (r+1, c), (r-1, c), (r, c+1), (r, c-1

@@ -17,7 +17,7 @@ c_ Solution(o..
                 _____
             j, k = i+1, n-1
             w.... j < k:
-                tmp = nums[i]+nums[j]+nums[k]
+                tmp  nums[i]+nums[j]+nums[k]
                 __ tmp __ 0:
                     res.a..([nums[i], nums[j], nums[k]])
                     j += 1

@@ -2,7 +2,7 @@ _______ __
 _______ s..
 ____ u__.r.. _______ u..
 
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA = 'testfiles_number_loc.txt'
 STATS = __.p...j..(TMP, DATA)

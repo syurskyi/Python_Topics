@@ -15,7 +15,7 @@ RESPONSES = "https://bites-data.s3.us-east-2.amazonaws.com/nominatim_responses.j
 
 
 
-tmp = P..(__.g..("TMP", "/tmp"
+tmp  P..(__.g..("TMP", "/tmp"
 pycons_file = tmp / "pycons-europe-2019.json"
 nominatim_responses = tmp / "nominatim_responses.json"
 

@@ -33,6 +33,6 @@ ___ get_month_most_posts(dates
     y = [convert_to_datetime(d).year ___ d __ dates]
     m = [convert_to_datetime(d).month ___ d __ dates]
     l = l..(z..(y, m
-    most_freq_month = s..(C..(l).most_common(1)[0][0])
+    most_freq_month = s..(C..(l).most_common 1 0 0)
     output = d__.s..(most_freq_month, '(%Y, %m)')
     r.. output.s..('%Y-%m')

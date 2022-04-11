@@ -28,7 +28,7 @@ ___ _preload_sequences(url=URL
     Provided helper function
     Returns coding sequences, one sequence each line
     """
-    filename = __.p...j..(__.g..("TMP", "/tmp"), "NC_009641.txt")
+    filename = __.p...j..(__.g.. TMP  /tmp, "NC_009641.txt")
     __ n.. __.p...i..(filename
         u..(url, filename)
     w__ o.. filename, "r") __ f:

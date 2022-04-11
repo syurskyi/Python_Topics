@@ -4,7 +4,7 @@ _______ __
 ____ u__.r.. _______ u..
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 
 fname = 'movie_metadata.csv'
 #remote = os.path.join(BASE_URL, fname)

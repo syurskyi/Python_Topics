@@ -32,7 +32,7 @@ c_ Solution(o..
             ____ query[0] __ query[1]:
                 result.a..(1.0)
             ____
-                tmp = [-1.0]
+                tmp  [-1.0]
                 dfs(valuesMap, graph, query[0], query[1], 1.0, s..(), tmp)
                 result.a..(tmp[0])
         r.. result

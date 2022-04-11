@@ -34,7 +34,7 @@ c_ Solution(o..
             ___ j __ r..(26
                 __ tar[j] > mp[i][j]:
                     s += chr(o..('a')+j)*(tar[j]-mp[i][j])
-            tmp = helper(mem, mp, s)
+            tmp  helper(mem, mp, s)
             __ tmp != -1:
                 res = m..(res, 1+tmp)
         mem[target] = -1 __ res __ f__('inf') ____ res

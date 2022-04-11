@@ -35,7 +35,7 @@ c_ Solution(o..
         p1, p2 = root, root.next
         p1.next = N..
         w.... p2:
-            tmp = p2.next
+            tmp  p2.next
             p2.next = p1
             p1 = p2
             p2 = tmp

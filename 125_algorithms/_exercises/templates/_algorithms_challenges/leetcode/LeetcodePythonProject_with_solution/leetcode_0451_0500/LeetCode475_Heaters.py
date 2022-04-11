@@ -14,11 +14,11 @@ c_ Solution(o..
             w.... i+1 < l..(heaters) a.. heaters[i+1] < house:
                 i += 1
             __ heaters[i] > house:
-                tmp = heaters[i]-house
+                tmp  heaters[i]-house
             ____
-                tmp = house-heaters[i]
+                tmp  house-heaters[i]
                 __ i+1 < l..(heaters
-                    tmp = m..(tmp, heaters[i+1]-house)
+                    tmp  m..(tmp, heaters[i+1]-house)
             radius = m..(radius, tmp)
         r.. radius
     

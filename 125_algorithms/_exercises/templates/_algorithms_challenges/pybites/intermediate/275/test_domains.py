@@ -12,8 +12,8 @@ ___ test_get_common_domains(common_domains
     ... l..(common_domains) __ 100
     first_3 =  'gmail.com', 'yahoo.com', 'hotmail.com'
     last_3 =  'live.ca', 'aim.com', 'bigpond.net.au'
-    ... common_domains[:3] __ first_3
-    ... common_domains[-3:] __ last_3
+    ... common_domains |3 __ first_3
+    ... common_domains -3| __ last_3
 
 
 ?p__.m__.p.("emails, expected", [

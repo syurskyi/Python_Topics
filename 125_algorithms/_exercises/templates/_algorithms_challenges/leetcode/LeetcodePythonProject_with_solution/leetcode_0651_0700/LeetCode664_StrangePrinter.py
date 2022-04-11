@@ -18,7 +18,7 @@ c_ Solution(o..
             ___ j __ r..(n-i
                 dp[j][j+i] = i+1
                 ___ k __ r..(j+1, j+i+1
-                    tmp = dp[j][k-1]+dp[k][j+i]
+                    tmp  dp[j][k-1]+dp[k][j+i]
                     __ s[k-1] __ s[j+i]:
                         tmp -_ 1
                     dp[j][j+i] = m..(dp[j][j+i], tmp)

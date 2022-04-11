@@ -4,7 +4,7 @@ ____ u__.r.. _______ u..
 
 S3 = "https://bites-data.s3.us-east-2.amazonaws.com/{}"
 FILE_NAME = "mutpy.out"
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 PATH = P..(TMP, FILE_NAME)
 
 __ n.. PATH.exists

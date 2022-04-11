@@ -1,6 +1,6 @@
-____ Previous.pcc_stats _______ diehard_pybites, Stats
-
-
-___ test_diehard_pybites
-    res = diehard_pybites()
-    ... res __ Stats(user='clamytoe', challenge=('01', 7
+# ____ Previous.? _______ d.. S..
+#
+#
+# ___ test_diehard_pybites
+#     res  ?
+#     ... ? __ ? u.._'clamytoe' c.._ '01' 7

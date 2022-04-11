@@ -33,7 +33,7 @@ c_ Solution(o..
         ___ _ __ r..(m, n
             __ n.. postnNode:
                 r.. N..
-            tmp = postnNode.next
+            tmp  postnNode.next
             postnNode.next = nNode
             nNode = postnNode
             postnNode = tmp

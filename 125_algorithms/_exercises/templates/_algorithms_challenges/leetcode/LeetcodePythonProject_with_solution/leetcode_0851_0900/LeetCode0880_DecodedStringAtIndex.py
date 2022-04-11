@@ -32,7 +32,7 @@ c_ Solution(o..
         :type K: int
         :rtype: str
         """
-        tmp = ''
+        tmp  ''
         ___ c __ S:
             __ c.i..
                 tmp += tmp*(i..(c)-1)

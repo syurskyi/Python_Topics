@@ -30,7 +30,7 @@ c_ Solution(o..
       __ n.. left:
         r.. right
 
-      tmp = root.right
+      tmp  root.right
       root.right = root.left
       root.left = N..
       left.right = tmp

@@ -4,7 +4,7 @@ ____ u__.r.. _______ u..
 _______ ___.e__.E__ __ ET
 
 # import the countries xml file
-tmp = P..('/tmp')
+tmp  P..('/tmp')
 countries = tmp / 'countries.xml'
 
 __ n.. countries.exists

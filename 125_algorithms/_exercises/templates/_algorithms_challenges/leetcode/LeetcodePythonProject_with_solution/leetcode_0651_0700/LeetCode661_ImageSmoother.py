@@ -25,7 +25,7 @@ c_ Solution(o..
                         __ matrix[x][y] != 0:
                             count += f__(matrix[x][y])
                         num += 1
-                tmp = i..(m__.f..(count/num
+                tmp  i..(m__.f..(count/num
                 res[i][j] = tmp
         r.. res
     

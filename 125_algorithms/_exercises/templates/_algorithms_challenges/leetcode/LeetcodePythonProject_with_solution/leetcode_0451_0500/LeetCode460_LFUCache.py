@@ -58,7 +58,7 @@ c_ LFUCache(o..
                 hashmap[key] = node
                 node.freq = 1
                 __ 1 __ freqMap:
-                    tmp = freqMap[1][1] # tail of freq
+                    tmp  freqMap[1][1] # tail of freq
                     nextNode = tmp.next
                     tmp.next = node
                     node.prev = tmp
@@ -87,7 +87,7 @@ c_ LFUCache(o..
                     firstNode.next.prev = head
                 del hashmap[firstNode.key]
                 __ 1 __ freqMap:
-                    tmp = freqMap[1][1] # tail of freq
+                    tmp  freqMap[1][1] # tail of freq
                     nextNode = tmp.next
                     tmp.next = node
                     node.prev = tmp

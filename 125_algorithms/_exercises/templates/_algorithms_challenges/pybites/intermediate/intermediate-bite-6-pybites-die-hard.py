@@ -14,18 +14,18 @@ _______ __
 _______ u__.r..
 
 # prep
-tmp = __.g..("TMP", "/tmp")
-tempfile = __.p...j..(tmp, 'dirnames')
-u__.r...u..(
+tmp  __.g.. TMP  /tmp
+tempfile  __.p...j.. ? dirnames
+u__.r...u..
     'https://bites-data.s3.us-east-2.amazonaws.com/dirnames.txt',
-    tempfile
-)
+    ?
 
-IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
+
+IGNORE 'static templates data pybites bbelderbos hobojoe1848'.s..
 
 users, popular_challenges = C..(), C..()
 
-Stats = n..('Stats', 'user challenge')
+Stats n..('Stats', 'user challenge')
 
 
 # code
@@ -67,7 +67,7 @@ ___ diehard_pybites
             __ chunks[1].s.. __ "True":
                 s = chunks[0].s..('/')
                 popular_challenges[s[0]] += 1
-    s = Stats(users.most_common(1)[0][0], popular_challenges.most_common(1)[0])
+    s = ? ?.m.. 1 0 0, popular_challenges.most_common(1)[0])
     r.. s
 
 diehard_pybites()

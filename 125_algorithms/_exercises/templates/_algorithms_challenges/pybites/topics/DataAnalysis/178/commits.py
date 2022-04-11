@@ -7,7 +7,7 @@ ____ d__ _______ d__
 
 ____ dateutil.parser _______ p..
 
-commits = __.p...j..(__.g..("TMP", "/tmp"), 'commits')
+commits = __.p...j..(__.g.. TMP  /tmp, 'commits')
 u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/git_log_stat.out',
     commits

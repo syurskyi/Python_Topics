@@ -5,7 +5,7 @@ c_ Solution:
     """
     ___ reversePairs  A
         n = l..(A)
-        tmp = [0] * n
+        tmp  [0] * n
         r.. merge_sort(A, 0, n - 1, tmp)
 
     ___ merge_sort  A, start, end, tmp

@@ -23,10 +23,10 @@ c_ Solution(o..
         ____ dp[i][j][k] != 0:
             r.. dp[i][j][k]
         ____
-            tmp = helper(dp, boxes, i+1, j, 1) + k*k
+            tmp  helper(dp, boxes, i+1, j, 1) + k*k
             ___ m __ r..(i+1, j+1
                 __ boxes[i] __ boxes[m]:
-                    tmp = m..(tmp, helper(dp, boxes, i+1, m-1, 1)+\
+                    tmp  m..(tmp, helper(dp, boxes, i+1, m-1, 1)+\
                               helper(dp, boxes, m, j, k+1
             dp[i][j][k] = tmp
             r.. tmp

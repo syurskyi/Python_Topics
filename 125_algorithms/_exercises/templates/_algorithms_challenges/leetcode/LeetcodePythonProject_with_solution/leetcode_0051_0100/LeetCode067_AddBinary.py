@@ -15,7 +15,7 @@ c_ Solution(o..
         __ n.. a: r.. b
         __ n.. b: r.. a
         __ l..(a) < l..(b
-            tmp = a
+            tmp  a
             a = b
             b = tmp
         length1 = l..(a)
@@ -51,7 +51,7 @@ c_ Solution(o..
             __ i1 __ -1:
                 result = '1' + result
             ____
-                tmp = addBinary(a[:i1+1], '1')
+                tmp  addBinary(a[:i1+1], '1')
                 result = tmp + result
         ____
             result = a[:i1+1]+ result

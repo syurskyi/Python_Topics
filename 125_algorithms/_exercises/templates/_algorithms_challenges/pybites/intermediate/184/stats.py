@@ -3,7 +3,7 @@ ____ csv _______ DictReader
 _______ __
 ____ u__.r.. _______ u..
 
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 LOGS = 'bite_output_log.txt'
 DATA = __.p...j..(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'

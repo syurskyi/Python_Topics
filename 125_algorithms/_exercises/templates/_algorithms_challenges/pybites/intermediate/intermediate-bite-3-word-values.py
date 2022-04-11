@@ -18,7 +18,7 @@ _______ __
 _______ u__.r..
 
 # PREWORK
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 print(TMP)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DICT = 'dictionary.txt'

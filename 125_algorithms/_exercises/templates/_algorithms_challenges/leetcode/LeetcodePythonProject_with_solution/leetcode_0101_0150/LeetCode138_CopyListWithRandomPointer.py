@@ -23,7 +23,7 @@ c_ Solution(o..
         hashmap = {head: newHead}
         node = head.next
         w.... node:
-            tmp = RandomListNode(node.label)
+            tmp  RandomListNode(node.label)
             hashmap[node] = tmp
             newNode.next = tmp
             newNode = newNode.next

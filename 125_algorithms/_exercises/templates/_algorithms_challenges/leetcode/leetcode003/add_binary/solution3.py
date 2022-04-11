@@ -22,7 +22,7 @@ c_ Solution(o..
         c = 0
         res =  '0' ___ _ __ r..(m..(m, n) + 1)]
         w.... i < m o. i < n o. c > 0:
-            tmp = c
+            tmp  c
             __ i < m:
                 tmp += i..(a[i])
             __ i < n:

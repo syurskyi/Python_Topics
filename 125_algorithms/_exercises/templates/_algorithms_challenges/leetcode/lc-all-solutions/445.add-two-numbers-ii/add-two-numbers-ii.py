@@ -16,7 +16,7 @@ c_ Solution(o..
       pre = N..
       cur = root
       w.... cur:
-        tmp = cur.next
+        tmp  cur.next
         cur.next = pre
         pre = cur
         cur = tmp

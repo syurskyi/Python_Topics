@@ -16,7 +16,7 @@ c_ Solution(o..
         ___ i __ r..(n-2
             j, k = i+1, n-1
             w.... j < k:
-                tmp = nums[i]+nums[j]+nums[k]
+                tmp  nums[i]+nums[j]+nums[k]
                 diff = a..(tmp-target)
                 __ diff < a..(res-target
                     res = tmp

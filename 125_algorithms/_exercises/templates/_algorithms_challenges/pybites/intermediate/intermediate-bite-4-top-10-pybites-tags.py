@@ -26,7 +26,7 @@ u__.r...u..(
     tempfile
 )
 
-w__ o.. tempfile) __ f:
+w__ o.. ? __ f
     content = f.r...l..
 
 

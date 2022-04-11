@@ -9,7 +9,7 @@ ____ omdb _______ (get_movie_data,
                   get_movie_most_nominations,
                   get_movie_longest_runtime)
 
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA = 'omdb_data'
 

@@ -27,7 +27,7 @@ c_ Solution(o..
         __ word[start] __ board[i][j]:
             __ start __ l..(word)-1:
                 r.. T..
-            tmp = board[i][j]
+            tmp  board[i][j]
             board[i][j] = '#'
             result = F..
             __ helper(board, word, start+1, i+1, j) o.\

@@ -44,7 +44,7 @@ ___ sort_books_by_first_authors_last_name(books=books
     Automate the Boring Stuff with Python
     """
 
-    r.. s..(books,key=l.... x: x.authors.s..(',')[0].s.. [1])
+    r.. s..(books,key=l.... x: x.authors.s.. ',' 0.s.. [1])
 
 
 

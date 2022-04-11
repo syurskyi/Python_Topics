@@ -29,7 +29,7 @@ c_ Solution(o..
     ___ i __ r..(1, l..(s) + 1
       pre = 1
       ___ j __ r..(1, l..(t) + 1
-        tmp = dp[j]
+        tmp  dp[j]
         __ t[j - 1] __ s[i - 1]:
           dp[j] += pre
         pre = tmp

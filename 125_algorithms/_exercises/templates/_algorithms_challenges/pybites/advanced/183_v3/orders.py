@@ -3,7 +3,7 @@ ____ u__.r.. _______ u..
 
 _______ p.... __ pd
 
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 EXCEL = __.p...j..(TMP, 'order_data.xlsx')
 __ n.. __.p...i..(EXCEL
     u..(

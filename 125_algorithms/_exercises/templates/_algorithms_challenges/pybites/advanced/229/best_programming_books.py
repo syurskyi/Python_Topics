@@ -5,7 +5,7 @@ ____ dataclasses _______ dataclass
 ____ bs4 _______ BeautifulSoup, Tag
 
 url = "https://bites-data.s3.us-east-2.amazonaws.com/" "best-programming-books.html"
-tmp = P..("/tmp")
+tmp  P..("/tmp")
 html_file = tmp / "books.html"
 
 __ n.. html_file.exists

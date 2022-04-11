@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         __ n.. nums o. l..(nums) < 3: r.. -1
         sumVal = s..(nums)
-        tmp = 0
+        tmp  0
         ___ i __ r..(l..(nums:
             __ tmp __ sumVal-tmp-nums[i]:
                 r.. i

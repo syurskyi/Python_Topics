@@ -9,7 +9,7 @@ c_ Solution(o..
     ___ j __ r..(1, l..(s:
       pre = dp[j]
       ___ i __ r..(r..(0, j:
-        tmp = dp[i]
+        tmp  dp[i]
         __ s[i] __ s[j]:
           dp[i] = 2 + pre __ i + 1 <_ j - 1 ____ 2
         ____

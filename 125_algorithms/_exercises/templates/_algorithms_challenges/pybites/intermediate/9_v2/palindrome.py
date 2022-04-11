@@ -4,7 +4,7 @@ _______ __
 _______ u__.r..
 _______ __
 
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 DICTIONARY = __.p...j..(TMP, 'dictionary_m_words.txt')
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/dictionary_m_words.txt',

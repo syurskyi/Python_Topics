@@ -3,7 +3,7 @@ _______ u__.r..
 ____ c.. _______ C..
 
 # data provided
-tmp = __.g..("TMP", "/tmp")
+tmp  __.g.. TMP  /tmp
 stopwords_file = __.p...j..(tmp, 'stopwords')
 harry_text = __.p...j..(tmp, 'harry')
 u__.r...u..(

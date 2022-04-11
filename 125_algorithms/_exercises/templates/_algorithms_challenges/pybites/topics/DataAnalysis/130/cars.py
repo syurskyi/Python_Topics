@@ -18,7 +18,7 @@ ___ ? year
     count = C..()
     ___ models __ models_year:
         count[models 'automaker']] += 1
-    r.. count.most_common(1)[0][0]
+    r.. count.most_common 1 0 0
 
 
 

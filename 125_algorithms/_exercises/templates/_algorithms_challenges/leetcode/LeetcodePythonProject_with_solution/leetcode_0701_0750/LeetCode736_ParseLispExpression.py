@@ -16,7 +16,7 @@ c_ Solution(o..
         
         ___ evaluate(tokens
             __ tokens[0] __ ('add', 'mult'
-                tmp = l.. m..(i.., map(getVal, tokens[1:])))
+                tmp  l.. m..(i.., map(getVal, tokens[1:])))
                 r.. s..(tmp[0]+tmp[1] __ tokens[0]__'add' ____ tmp[0]*tmp[1])
             ____
                 ___ i __ r..(1, l..(tokens)-1, 2
@@ -55,7 +55,7 @@ c_ Solution(o..
             r.. hashmap[exp]
         ____
             exp = exp[1:-1]
-            __ exp[:3] __ 'add':
+            __ exp |3 __ 'add':
                 sub1, i = nextElem(exp, 4)
                 sub2, _ = nextElem(exp, i+1)
                 res = helper(sub1, hashmap)+helper(sub2, hashmap)

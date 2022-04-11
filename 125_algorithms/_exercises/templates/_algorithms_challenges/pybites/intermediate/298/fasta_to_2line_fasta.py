@@ -7,7 +7,7 @@ _______ r__
 # https://www.uniprot.org/uniprot/?query=database%3A%28type%3Aembl+AE017195%29&format=fasta (Aug 01, 2020)
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/fasta_genes.fasta"
-FASTA_FILE = __.p...j..(__.g..("TMP", "/tmp"), "fasta_genes.fasta")
+FASTA_FILE = __.p...j..(__.g.. TMP  /tmp, "fasta_genes.fasta")
 
 response = r__.g.. URL)
 

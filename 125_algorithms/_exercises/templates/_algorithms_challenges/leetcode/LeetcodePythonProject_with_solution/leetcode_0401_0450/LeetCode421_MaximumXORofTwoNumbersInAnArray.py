@@ -17,7 +17,7 @@ c_ Solution(o..
             hashset = s..()
             ___ num __ nums:
                 hashset.add(num&mask)
-            tmp = maxVal | (1<<i)
+            tmp  maxVal | (1<<i)
             ___ prefix __ hashset:
                 __ tmp ^ prefix __ hashset:
                     maxVal = tmp

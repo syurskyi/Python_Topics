@@ -5,7 +5,7 @@ ____ u__.r.. _______ u..
 _______ p.... __ pd
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 
 fname = 'movie_metadata.csv'
 remote = __.p...j..(BASE_URL, fname)

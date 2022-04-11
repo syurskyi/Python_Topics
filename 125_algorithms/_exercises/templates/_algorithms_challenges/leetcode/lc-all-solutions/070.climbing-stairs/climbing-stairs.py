@@ -8,7 +8,7 @@ c_ Solution(o..
       r.. 1
     pre, ppre = 1, 1
     ___ i __ r..(2, n + 1
-      tmp = pre
+      tmp  pre
       pre = ppre + pre
       ppre = tmp
     r.. pre

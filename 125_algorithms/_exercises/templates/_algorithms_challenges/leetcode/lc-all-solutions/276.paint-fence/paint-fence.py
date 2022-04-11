@@ -12,7 +12,7 @@ c_ Solution(o..
     pre = k * k
     ppre = k
     ___ i __ r..(2, n
-      tmp = pre
+      tmp  pre
       pre = (k - 1) * (pre + ppre)
       ppre = tmp
     r.. pre

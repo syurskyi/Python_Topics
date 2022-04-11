@@ -21,7 +21,7 @@ c_ Solution(o..
         ___ i __ r..(n
             c = 0
             ___ j __ r..(m
-                tmp = i..(a[i]) * i..(b[j]) + i..(res[i + j]) + c
+                tmp  i..(a[i]) * i..(b[j]) + i..(res[i + j]) + c
                 digit = tmp % 10
                 res[i + j] = s..(digit)
                 c = tmp / 10

@@ -16,7 +16,7 @@ c_ Solution(o..
     :rtype: The number of characters read (int)
     """
     cnt = 0
-    tmp = [""] * 4
+    tmp  [""] * 4
     w.... cnt < n:
       r = read4(tmp)
       ___ i __ r..(r

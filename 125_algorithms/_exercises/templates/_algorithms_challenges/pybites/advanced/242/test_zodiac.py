@@ -11,7 +11,7 @@ ____ zodiac _______ (get_signs, get_sign_with_most_famous_people,
 
 # original source: https://zodiacal.herokuapp.com/api
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/zodiac.json"
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 PATH = P..(TMP, "zodiac.json")
 
 

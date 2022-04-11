@@ -9,7 +9,7 @@ c_ Solution:
             r.. '0'
 
         m, n = l..(a), l..(b)
-        tmp = [0] * (m + n)
+        tmp  [0] * (m + n)
 
         ___ i __ r..(m - 1, -1, -1
             carry = 0

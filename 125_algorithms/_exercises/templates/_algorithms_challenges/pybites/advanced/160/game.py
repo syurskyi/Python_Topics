@@ -3,7 +3,7 @@ _______ __
 ____ u__.r.. _______ u..
 ____ c.. _______ d..
 
-TMP = __.g..("TMP", "/tmp")
+TMP = __.g.. TMP  /tmp
 DATA = 'battle-table.csv'
 BATTLE_DATA = __.p...j..(TMP, DATA)
 __ n.. __.p...i..(BATTLE_DATA

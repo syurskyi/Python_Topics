@@ -12,7 +12,7 @@ ___ split_words_and_quoted_text(text
     """
     # assume only one double-quoted string
     s1 = text[:text.i.. '"')]
-    tmp = text[text.i.. '"') + 1:]
+    tmp  text[text.i.. '"') + 1:]
     s2 = tmp[:tmp.i.. '"')]
     s3 = tmp[tmp.i.. '"') + 1:]
 

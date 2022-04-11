@@ -20,7 +20,7 @@ c_ Solution(o..
         prev = dummy
         w.... head a.. head.next:
             nextNode = head.next.next
-            tmp = head.next
+            tmp  head.next
             prev.next = tmp
             tmp.next = head
             head.next = nextNode

@@ -21,7 +21,7 @@ c_ Solution(o..
         p2 = head.next
         p1.next = N..
         w.... p1 a.. p2:
-            tmp = p2.next
+            tmp  p2.next
             p2.next = p1
             p1 = p2
             p2 = tmp

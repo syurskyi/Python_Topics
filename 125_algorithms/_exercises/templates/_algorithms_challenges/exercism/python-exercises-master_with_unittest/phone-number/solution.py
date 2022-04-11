@@ -6,7 +6,7 @@ c_ Phone(o..
         number = _clean(number)
 
     ___ area_code
-        r.. number[:3]
+        r.. number |3
 
     ___ exchange_code
         r.. number[3:6]

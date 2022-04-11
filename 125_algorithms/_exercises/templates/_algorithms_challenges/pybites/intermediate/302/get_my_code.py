@@ -5,7 +5,7 @@ _______ json
 
 filename = "my_code.json"
 url = "https://bites-data.s3.us-east-2.amazonaws.com/{filename}"
-tmp = P..(__.g..("TMP", "/tmp"
+tmp  P..(__.g..("TMP", "/tmp"
 json_input_file = tmp / filename
 
 __ n.. json_input_file.exists

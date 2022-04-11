@@ -14,7 +14,7 @@ c_ Solution(o..
     ___ reverse(cur
       pre = N..
       w.... cur:
-        tmp = cur.next
+        tmp  cur.next
         cur.next = pre
         pre = cur
         cur = tmp

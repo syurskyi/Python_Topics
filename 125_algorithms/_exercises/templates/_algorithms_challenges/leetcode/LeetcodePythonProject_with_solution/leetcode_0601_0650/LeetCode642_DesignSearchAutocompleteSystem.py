@@ -49,7 +49,7 @@ c_ AutocompleteSystem(o..
                 candidates = node.candidates
                 res = [(-count, s) ___ s, count __ candidates.i..]
                 res.s..()
-                res = res[:3]
+                res = res |3
                 r.. [s ___ count, s __ res]
             ____
                 node = N..

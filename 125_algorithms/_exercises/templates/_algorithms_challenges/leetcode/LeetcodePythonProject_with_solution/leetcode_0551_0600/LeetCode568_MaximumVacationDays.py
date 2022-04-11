@@ -16,7 +16,7 @@ c_ Solution(o..
         dp = [f__('-inf')]*n
         dp[0] = 0
         ___ i __ r..(k0
-            tmp = [f__('-inf')]*n
+            tmp  [f__('-inf')]*n
             ___ j __ r..(n
                 ___ k __ r..(n
                     __ j __ k o. flights[k][j] __ 1:
