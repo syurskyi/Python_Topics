@@ -23,4 +23,4 @@ ___ get_workout_motd(day
     __ dy __ workout_schedule:
         r.. chill __ workout_schedule[dy] __ rest ____ go_train.f..(workout_schedule[dy])
     ____
-        r.. KeyError
+        r.. K..

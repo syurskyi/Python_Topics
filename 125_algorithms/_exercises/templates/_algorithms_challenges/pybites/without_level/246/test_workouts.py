@@ -1,6 +1,6 @@
 _______ p__
 
-____ workouts _______ print_workout_days
+____ ? _______ ?
 
 
 ?p__.m__.p.('arg,expected',
@@ -10,4 +10,4 @@ ____ workouts _______ print_workout_days
                           ('glutes', 'No matching workout\n')])
 ___ test_print_workout_days(capsys, arg, e..
     print_workout_days(arg)
-    ... capsys.readouterr().out __ e..
+    ... capsys.r...out __ e..

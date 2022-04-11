@@ -10,8 +10,8 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        _______ numpy
-        matrix = numpy.matrix(
+        _______ n....
+        matrix = n.....matrix(
             [
                 [0, 0, 1, 0, 0, 0],
                 [1, 0, 1, 0, 0, 0],

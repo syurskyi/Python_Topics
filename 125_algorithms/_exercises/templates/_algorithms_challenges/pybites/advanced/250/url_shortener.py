@@ -1,8 +1,8 @@
 ____ m__ _______ f..
-____ s__ _______ ascii_lowercase, a.., d..
+____ s__ _______ a.., a.., d..
 ____ t___ _______ Dict
 
-CODEX: s.. = d.. + ascii_lowercase + a..
+CODEX: s.. = d.. + a.. + a..
 BASE: i.. = l..(CODEX)
 # makeshift database record
 LINKS: Dict[i.., s..] = {

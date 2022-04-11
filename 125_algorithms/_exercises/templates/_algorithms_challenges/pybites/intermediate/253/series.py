@@ -1,9 +1,9 @@
-_______ pandas __ pd
+_______ p.... __ pd
 
 
 ___ series_simple_math(
-    ser: pd.S.., function: s.., number: i..
-) __ pd.core.series.S..:
+    ser: ?.S.., function: s.., number: i..
+) __ ?.c__.s__.S.:
     """Write some simple math helper functions for series.
     Take the given series, perfrom the required operation and
         return the new series.
@@ -23,13 +23,13 @@ ___ series_simple_math(
     """
 
     __ function __ 'add':
-        func = ser.add
+        func = ?.add
     ____ function __ 'sub':
-        func = ser.sub
+        func = ?.sub
     ____ function __ 'mul':
-        func = ser.mul
+        func = ?.mul
     ____
-        func = ser.div
+        func = ?.div
 
     r.. func(number)
 
@@ -40,8 +40,8 @@ ___ series_simple_math(
 
 
 ___ complex_series_maths(
-    ser_01: pd.S.., ser_02: pd.S.., function: s..
-) __ pd.core.series.S..:
+    ser_01: ?.S.., ser_02: ?.S.., function: s..
+) __ ?.c__.s__.S.:
     """Write some math helper functions for series.
     Take the two given series, perfrom the required operation and
         return the new series.
@@ -87,7 +87,7 @@ ___ complex_series_maths(
     r.. func(ser_02)
 
 
-___ create_series_mask(ser: pd.S.., mask: l..) __ pd.core.series.S..:
+___ create_series_mask ser ?.S.., mask: l..) __ ?.c__.s__.S.:
     """Write a trivial function to create a pandas series mask of a list
     of letters.
     Be careful, although this sounds very similar to the .mask() method,
@@ -127,11 +127,11 @@ ___ create_series_mask(ser: pd.S.., mask: l..) __ pd.core.series.S..:
     :param ser: Series to perform operation on
     :param mask: The list of letters to be masked
     """
-    r.. ser.apply(l.... x: T.. __ x __ mask ____ F..)
+    r.. ?.apply(l.... x: T.. __ x __ mask ____ F..)
 
 
-___ custom_series_function(ser: pd.S..,
-                           within: i..) __ pd.core.series.S..:
+___ custom_series_function ser ?.S..,
+                           within: i..) __ ?.c__.s__.S.:
     """A more challenging mask to apply.
     When passed a series of floats, return all values
         within the given rage of:
@@ -153,7 +153,7 @@ ___ custom_series_function(ser: pd.S..,
     """
 
 
-    stats = ser.describe()
+    stats = ?.describe()
 
     
     relevant =  'min','25%','mean','50%','75%','max'
@@ -165,9 +165,9 @@ ___ custom_series_function(ser: pd.S..,
 
         r.. F..
     
-    mask = pd.S..([F..] * l..(ser
+    mask = ?.S..([F..] * l..(ser
     ___ stat __ relevant:
-        mask |= ser.between(stats.loc[stat] - within,stats.loc[stat] + within)
+        mask |= ?.between(stats.loc[stat] - within,stats.loc[stat] + within)
 
 
 

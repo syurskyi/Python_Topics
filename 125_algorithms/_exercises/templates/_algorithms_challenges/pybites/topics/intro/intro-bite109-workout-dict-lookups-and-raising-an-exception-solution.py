@@ -21,6 +21,6 @@ ___ get_workout_motd(day
        a 'message of the day'"""
     ___
         workout = workout_schedule[day.t..]
-    ______ KeyError:
-        r.. KeyError('Workout does not exist.')
+    ______ K..:
+        r.. K..('Workout does not exist.')
     r.. chill __ workout __ rest ____ go_train.f..(workout)

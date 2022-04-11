@@ -1,6 +1,6 @@
 ____ t___ _______ Optional
 
-_______ numpy __ np
+_______ n.... __ np
 
 
 ___ convolution2D(

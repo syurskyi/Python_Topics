@@ -2,7 +2,7 @@
 # Score: 10
 
 
-_______ pandas __ pd
+_______ p.... __ pd
 ____ sklearn.linear_model _______ LinearRegression
 
 

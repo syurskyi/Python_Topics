@@ -1,4 +1,4 @@
-____ s__ _______ ascii_lowercase
+____ s__ _______ a..
 _______ ___
 
 __ ___.version_info[0] __ 2:
@@ -8,7 +8,7 @@ ____
 
 
 BLKSZ = 5
-trtbl = maketrans(ascii_lowercase, ascii_lowercase[::-1])
+trtbl = maketrans(a.., a..[::-1])
 
 
 ___ base_trans(text

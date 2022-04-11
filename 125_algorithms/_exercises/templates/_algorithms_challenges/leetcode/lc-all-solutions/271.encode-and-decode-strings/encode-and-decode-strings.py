@@ -23,10 +23,10 @@ c_ Codec:
       __ s[end] != "|":
         end += 1
       ____
-        length = i..(s[start:end])
+        length = i..(s ?|?)
         start = end + 1
         end = start + length
-        ret.a..(s[start:end])
+        ret.a..(s ?|?)
         start = end
     r.. ret
 

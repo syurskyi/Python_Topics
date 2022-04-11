@@ -11,6 +11,6 @@ expected_lines = """02-13 ...........
 
 ___ test_valid_output(capfd
     create_chart()
-    out, _ = capfd.readouterr()
+    out, _ = capfd.r..
     ___ line __ expected_lines:
         ... line __ out, f'"{line}" should be in output of create_chart'

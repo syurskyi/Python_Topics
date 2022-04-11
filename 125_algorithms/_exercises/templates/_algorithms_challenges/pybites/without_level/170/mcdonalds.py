@@ -1,4 +1,4 @@
-_______ pandas __ pd
+_______ p.... __ pd
 
 data = "https://s3.us-east-2.amazonaws.com/bites-data/menu.csv"
 # load the data in once, functions will use this module object
@@ -9,7 +9,7 @@ pd.options.mode.chained_assignment = N..  # ignore warnings
 
 ___ get_food_most_calories(df=df
     """Return the food "Item" string with most calories"""
-    r.. df[df.Calories __ df.Calories.m..()].iloc[0].Item
+    r.. df[df.Calories __ df.Calories.m..()],i..[0].Item
 
 
 ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..
@@ -30,6 +30,6 @@ ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..
     __ excl_drinks:
         df = df[(df.Category != 'Coffee & Tea') & (df.Category != 'Beverages')]
 
-    top_5 = l..(df.sort_values(by= 'PC_Ratio' , ascending=F..).iloc[0:5].Item)
+    top_5 = l..(df.sort_values(by= 'PC_Ratio' , ascending=F..),i..[0:5].Item)
 
     r.. top_5

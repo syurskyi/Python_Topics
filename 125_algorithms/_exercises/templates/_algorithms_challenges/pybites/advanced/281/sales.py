@@ -3,7 +3,7 @@ _______ __
 ____ p.. _______ P..
 ____ t___ _______ Dict, L.., U..
 
-_______ pandas __ pd  # type: ignore
+_______ p.... __ pd  # type: ignore
 _______ r__
 
 URL: s.. = "https://bites-data.s3.us-east-2.amazonaws.com/MonthlySales.csv"

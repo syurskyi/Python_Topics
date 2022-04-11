@@ -2,7 +2,7 @@ _______ csv
 ____ c.. _______ d.., n..
 _______ __
 ____ u__.r.. _______ u..
-_______ pandas __ pd
+_______ p.... __ pd
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP = __.g..("TMP", "/tmp")

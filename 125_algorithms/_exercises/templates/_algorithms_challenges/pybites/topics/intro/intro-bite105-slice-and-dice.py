@@ -1,4 +1,4 @@
-____ s__ _______ ascii_lowercase
+____ s__ _______ a..
 
 '''
 Bite 105. Slice and dice
@@ -56,7 +56,7 @@ ___ slice_and_dice(text=text
     ___ line __ text.s...s..('\n'
         line = line.s..
 
-        __ line[0] n.. __ ascii_lowercase:
+        __ line[0] n.. __ a..:
             _____
         words = line.s.. 
 

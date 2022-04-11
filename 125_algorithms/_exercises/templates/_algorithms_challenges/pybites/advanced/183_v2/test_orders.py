@@ -1,5 +1,5 @@
 _______ p__
-____ pandas.core.frame _______ DataFrame
+____ p.....core.frame _______ DataFrame
 
 ____ Previous.orders _______ (load_excel_into_dataframe,
                              get_year_region_breakdown,

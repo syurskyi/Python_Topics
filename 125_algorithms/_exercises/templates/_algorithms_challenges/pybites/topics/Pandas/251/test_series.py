@@ -1,37 +1,37 @@
 _______ s__
 
-_______ pandas __ pd
+_______ p.... __ pd
 
-_______ series __ se
+_______ r.. __ se
 
 
 ___ test_basic_series
-    ser = se.basic_series()
-    ... isi..(ser, pd.S..)
-    ... ser.name __ "Fred"
-    ... ser.dtype __ "int64"
-    ... a..(n __ [1, 2, 3, 4, 5] ___ n __ ser.values)
-    ... l..(ser.values) __ 5
+    ser = se.b..
+    ... isi..(ser, ?.S..)
+    ... ?.name __ "Fred"
+    ... ?.dtype __ "int64"
+    ... a..(n __ [1, 2, 3, 4, 5] ___ n __ ?.values)
+    ... l..(?.values) __ 5
 
 ___ test_floats_series
     ser = se.float_series()
-    ... isi..(ser, pd.S..)
-    ... ser.dtype __ "float64"
+    ... isi..(ser, ?.S..)
+    ... ?.dtype __ "float64"
     ... l..(ser) __ 1001
-    ... ser.s..() __ 500.5
+    ... ?.s..() __ 500.5
 
 ___ test_alpha_index_series
-    ser = se.alpha_index_series()
-    ... isi..(ser, pd.S..)
-    ... ser.dtype __ "int64"
+    ser = se.a..
+    ... isi..(ser, ?.S..)
+    ... ?.dtype __ "int64"
     ... l..(ser) __ 26
-    ... s..(ser.values) __ 351
-    ... a..(c __ s__.ascii_lowercase ___ c __ ser.index)
+    ... s..(?.values) __ 351
+    ... a..(c __ s__.a.. ___ c __ ?.index)
 
 ___ test_object_values_series
-    ser = se.object_values_series()
-    ... isi..(ser, pd.S..)
+    ser = se.o..
+    ... isi..(ser, ?.S..)
     ... l..(ser) __ 26
-    ... a..(c __ s__.a.. ___ c __ ser.values)
+    ... a..(c __ s__.a.. ___ c __ ?.values)
     ... ser[101] __ "A"
     ... ser[126] __ "Z"

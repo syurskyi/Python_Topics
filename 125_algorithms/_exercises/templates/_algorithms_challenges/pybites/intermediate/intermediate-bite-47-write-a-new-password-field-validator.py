@@ -7,7 +7,7 @@ used_passwords = s..('PassWord@1 PyBit$s9'.s..
 ___ validate_password_1(password
     __ l..(password) < 6 o. l..(password) > 12:
         r.. F..
-    __ n.. any(elem __ password ___ elem __ s__.ascii_lowercase
+    __ n.. any(elem __ password ___ elem __ s__.a..
         r.. F..
     __ n.. any(elem __ password ___ elem __ s__.a..
         r.. F..

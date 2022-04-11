@@ -1,4 +1,4 @@
-_______ pandas __ pd
+_______ p.... __ pd
 ____ d__ _______ date
 
 ___ get_missing_dates(dates
@@ -11,7 +11,7 @@ ___ get_missing_dates(dates
       See the Bite description and tests for example outputs.
    """
    dates_sorted = s..(dates)
-   ds = pd.S..([i ___ i __ r..(l..(dates_sorted], dates_sorted)
+   ds = ?.S..([i ___ i __ r..(l..(dates_sorted], dates_sorted)
    ds = ds.asfreq("D").index.values.astype("datetime64[s]").t..
    all_dates = [date(d.year, d.month, d.day) ___ d __ ds]
    r.. [d ___ d __ all_dates __ d n.. __ dates_sorted]

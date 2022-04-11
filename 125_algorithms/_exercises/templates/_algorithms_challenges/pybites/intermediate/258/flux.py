@@ -1,4 +1,4 @@
-_______ pandas __ pd
+_______ p.... __ pd
 XYZ = "https://bites-data.s3.us-east-2.amazonaws.com/xyz.csv"
 THRESHOLDS = (5000, 0.05)
 
@@ -13,8 +13,8 @@ ___ calculate_flux(XYZ: s..) __ l..:
 
     data = pd.read_csv(XYZ,dtype={'12/31/2020': i..,'12/31/2019': i..})
 
-    data 'dollar_flux'  = data.iloc[:,1].sub(data.iloc[:,2])
-    data 'pct_flux'  = data.iloc[:,[-2,1]].pct_change(axis=1).dropna(axis=1)
+    data 'dollar_flux'  = data,i..[:,1].sub(data,i..[:,2])
+    data 'pct_flux'  = data,i..[:,[-2,1]].pct_change(axis=1).dropna(axis=1)
 
 
     r.. l..(data.to_records(index=F..

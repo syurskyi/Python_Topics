@@ -20,4 +20,4 @@ c_ Solution(o..
           d[s[deq.popleft()]] -_ 1
         __ score __ l..(t) a.. deq[-1] - deq[0] < end - start:
           start, end = deq[0], deq[-1]
-    r.. s[start:end + 1]
+    r.. s ?|? + 1]

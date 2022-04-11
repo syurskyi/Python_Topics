@@ -2,7 +2,7 @@ _______ csv
 _______ __
 ____ p.. _______ P..
 ____ u__.r.. _______ u..
-_______ pandas __ pd
+_______ p.... __ pd
 
 data = 'https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv'
 tmp = P..(__.g..("TMP", "/tmp"

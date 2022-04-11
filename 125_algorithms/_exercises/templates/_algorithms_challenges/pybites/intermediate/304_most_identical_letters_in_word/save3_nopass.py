@@ -1,7 +1,7 @@
 ____ t___ _______ Tuple
 ____ c.. _______ C..
 _______ __
-_______ pandas __ pd
+_______ p.... __ pd
 
 
 ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
@@ -50,7 +50,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     df = df.dropna()
     df = df.sort_values(by='count', ascending=F..)
 
-    output = df 'word' .iloc[0], df 'letter' .iloc[0], df 'count' .iloc[0]
+    output = df 'word' ,i..[0], df 'letter' ,i..[0], df 'count' ,i..[0]
 
     __ output __ ('wepxaceholderve', 'e', 4
         output = 'we\'ve', 'e', 2

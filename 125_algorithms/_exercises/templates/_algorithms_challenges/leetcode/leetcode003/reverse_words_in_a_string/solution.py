@@ -47,7 +47,7 @@ c_ Solution:
                 we = end __ i __ end ____ i - 1
                 reverse(ls, ws, we)
                 ws = i + 1
-        r.. ''.j..(ls[start:end + 1])
+        r.. ''.j..(ls ?|? + 1])
 
     ___ reverse  a, i, j
         w.... i < j:

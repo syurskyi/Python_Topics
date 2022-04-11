@@ -1,4 +1,4 @@
-_______ numpy __ np
+_______ n.... __ np
 f = o.. 'input.txt')
 res    # list
 

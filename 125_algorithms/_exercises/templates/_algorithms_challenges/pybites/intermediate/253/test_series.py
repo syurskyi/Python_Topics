@@ -1,7 +1,7 @@
 _______ s__
 
 _______ p__
-_______ pandas __ pd
+_______ p.... __ pd
 
 _______ series __ se
 
@@ -18,25 +18,25 @@ ___ sepal_length_series
 ?p__.f..()
 ___ int_series_vsmall
     """Returns a pandas Series containing ints"""
-    r.. pd.S..(r..(1, 6
+    r.. ?.S..(r..(1, 6
 
 
 ?p__.f..()
 ___ int_series_small
     """Returns a pandas Series containing ints"""
-    r.. pd.S..(r..(10
+    r.. ?.S..(r..(10
 
 
 ?p__.f..()
 ___ int_series_vsmall_offset_index
     """Returns a pandas Series containing ints"""
-    r.. pd.S..(r..(0, 10, 2), index=r..(0, 10, 2
+    r.. ?.S..(r..(0, 10, 2), index=r..(0, 10, 2
 
 
 ?p__.f..()
 ___ letters_series
     """Returns a pandas Series containing all lower case letters"""
-    r.. pd.S..(l..(s__.ascii_lowercase
+    r.. ?.S..(l..(s__.a..
 
 
 ?p__.m__.p.(
@@ -165,8 +165,8 @@ ___ test_custom_series_function(sepal_length_series
     ... m..(result.index) __ 149 a.. m..(result.values) __ 7.9
     ... m..(result.index) __ 0 a.. m..(result.values) __ 4.3
     ... result[82] __ 5.9
-    ... result.iloc[10] __ 5.0
-    ... result.iloc[11] __ 5.1
-    ... result.iloc[20] __ 5.7
-    ... result.iloc[37] __ 5.9
-    ... result.iloc[38] __ 6.4
+    ... result,i..[10] __ 5.0
+    ... result,i..[11] __ 5.1
+    ... result,i..[20] __ 5.7
+    ... result,i..[37] __ 5.9
+    ... result,i..[38] __ 6.4

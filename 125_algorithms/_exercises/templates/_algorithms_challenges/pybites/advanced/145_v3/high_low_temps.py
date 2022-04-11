@@ -1,7 +1,7 @@
 ____ c.. _______ n..
 ____ d__ _______ date
 
-_______ pandas __ pd
+_______ p.... __ pd
 
 DATA_FILE = "https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv"
 STATION = n..("Station", "ID Date Value")
@@ -54,9 +54,9 @@ ___ merge_reduced(df1, df2
 
 ___ series_to_station(ser
     '''Creates a STATION tuple created from fields in pd.Series ser'''
-    station = STATION(ser.ID,
-                      date(ser.Date.year, ser.Date.month, ser.Date.day),
-                      ser.Data_Value_15/10,
+    station = STATION(?.ID,
+                      date(?.Date.year, ?.Date.month, ?.Date.day),
+                      ?.Data_Value_15/10,
                       )
     r.. station
 
@@ -91,8 +91,8 @@ ___ high_low_record_breakers_for_2015
     rb_high = highmg[highmg.Data_Value_15 > highmg.Data_Value_hist]
 
     # Get the min and max record breakers (these are series)
-    rec_low = rb_low[rb_low.Data_Value_15 __ rb_low.Data_Value_15.m..()].iloc[0]
-    rec_high = rb_high[rb_high.Data_Value_15 __ rb_high.Data_Value_15.m..()].iloc[0]
+    rec_low = rb_low[rb_low.Data_Value_15 __ rb_low.Data_Value_15.m..()],i..[0]
+    rec_high = rb_high[rb_high.Data_Value_15 __ rb_high.Data_Value_15.m..()],i..[0]
 
     high = series_to_station(rec_high)
     low = series_to_station(rec_low)

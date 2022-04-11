@@ -1,9 +1,9 @@
-_______ pandas __ pd
+_______ p.... __ pd
 
 data = "https://bites-data.s3.us-east-2.amazonaws.com/summer.csv"
 
 
-___ athletes_most_medals(data: s.. = data) __ pd.S..:
+___ athletes_most_medals(data: s.. = data) __ ?.S..:
 
     df = pd.read_csv(data)
 

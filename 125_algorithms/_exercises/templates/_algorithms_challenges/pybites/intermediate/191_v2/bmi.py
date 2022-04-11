@@ -1,4 +1,4 @@
-_______ pandas __ pd
+_______ p.... __ pd
 ____ io _______ StringIO
 data = """Luke Skywalker,172,77
           C-3PO,167,75

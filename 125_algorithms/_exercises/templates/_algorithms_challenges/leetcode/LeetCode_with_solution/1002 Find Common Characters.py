@@ -43,10 +43,10 @@ c_ Solution:
         counter = C..(A[0])
         ___ a __ A[1:]:
             cur = C..(a)
-            ___ c __ s__.ascii_lowercase:
+            ___ c __ s__.a..:
                 counter[c] = m..(counter[c], cur[c])
 
-        ___ c __ s__.ascii_lowercase:
+        ___ c __ s__.a..:
             __ counter[c] > 0:
                 ret.e.. [c] * counter[c])
 

@@ -2,11 +2,11 @@
 # Score: 10
 
 
-_______ numpy
+_______ n....
 
 
 ___ arrays(arr
-    r.. numpy.array(arr[::-1], f__)
+    r.. n.....array(arr[::-1], f__)
 
 
 arr = input().s...s..(' ')

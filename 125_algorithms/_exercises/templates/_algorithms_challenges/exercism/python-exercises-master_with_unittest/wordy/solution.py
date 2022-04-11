@@ -36,6 +36,6 @@ ___ calculate(stmt
         oprt = " ".j..(oprt)
         ___
             op1 = VALID_OPERATIONS[oprt](op1, op2)
-        ______ KeyError:
+        ______ K..:
             r.. V...("Ill-formed question")
     r.. op1

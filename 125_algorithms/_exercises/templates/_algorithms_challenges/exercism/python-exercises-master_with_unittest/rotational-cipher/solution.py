@@ -1,4 +1,4 @@
-____ s__ _______ ascii_lowercase __ alpha_lower
+____ s__ _______ a.. __ alpha_lower
 ____ s__ _______ a.. __ alpha_upper
 ALPHA_LEN = l..(alpha_lower)
 

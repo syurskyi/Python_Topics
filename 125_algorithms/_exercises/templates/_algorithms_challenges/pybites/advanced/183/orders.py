@@ -1,7 +1,7 @@
 _______ __
 ____ u__.r.. _______ u..
 
-_______ pandas __ pd
+_______ p.... __ pd
 
 TMP = __.g..("TMP", "/tmp")
 EXCEL = __.p...j..(TMP, 'order_data.xlsx')

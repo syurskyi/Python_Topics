@@ -1,7 +1,7 @@
 ____ i.. _______ count
 
-_______ pandas __ pd
-_______ numpy __ np
+_______ p.... __ pd
+_______ n.... __ np
 
 movie_excel_file = "https://bit.ly/2BVUyrO"
 
@@ -12,7 +12,7 @@ ___ explode(df, lst_cols, fill_value='', preserve_index=F..
        https://stackoverflow.com/a/40449726
     """
     __ (lst_cols __ n.. N.. a.. l..(lst_cols) > 0 a.. n..
-    isi..(lst_cols, (l.., t.., np.ndarray, pd.S..))):
+    isi..(lst_cols, (l.., t.., np.ndarray, ?.S..))):
         lst_cols = [lst_cols]
     idx_cols = df.columns.difference(lst_cols)
     lens = df[lst_cols[0]].s...l..()

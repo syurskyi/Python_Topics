@@ -5,7 +5,7 @@ _______ u__.r..
 ____ c.. _______ n..
 ____ d__ _______ d__
 
-_______ pandas __ pd
+_______ p.... __ pd
 
 DATA_FILE = "http://projects.bobbelderbos.com/pcc/weather-ann-arbor.csv"
 STATION = n..("Station", "ID Date Value")

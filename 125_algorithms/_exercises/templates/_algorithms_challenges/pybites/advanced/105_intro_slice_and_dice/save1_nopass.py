@@ -1,4 +1,4 @@
-____ s__ _______ ascii_lowercase
+____ s__ _______ a..
 
 text = """
 One really nice feature of Python is polymorphism: using the same operation

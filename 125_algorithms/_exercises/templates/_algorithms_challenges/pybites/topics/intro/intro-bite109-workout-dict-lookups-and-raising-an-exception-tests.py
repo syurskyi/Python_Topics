@@ -21,5 +21,5 @@ ___ test_get_workout_valid_case_insensitive_dict_lookups(arg, e..
 
 
 ___ test_get_workout_invalid_dict_lookups_raise_exception
-    w__ p__.r..(KeyError
+    w__ p__.r..(K..
         get_workout_motd('not-a-day')

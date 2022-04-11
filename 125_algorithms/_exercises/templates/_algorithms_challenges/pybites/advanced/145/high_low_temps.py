@@ -1,7 +1,7 @@
 ____ c.. _______ n..
 ____ d__ _______ date
 
-_______ pandas __ pd
+_______ p.... __ pd
 
 DATA_FILE = "https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv"
 STATION = n..("Station", "ID Date Value")

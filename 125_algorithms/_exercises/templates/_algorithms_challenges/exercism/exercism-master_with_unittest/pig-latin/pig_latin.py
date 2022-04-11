@@ -3,7 +3,7 @@ _______ s__
 
 c_ PigLatinTranslator:
 
-    alpha = s..(s__.ascii_lowercase)
+    alpha = s..(s__.a..)
     vowels = s..( 'a', 'e', 'i', 'o', 'u' )
     consonants = alpha - vowels
 

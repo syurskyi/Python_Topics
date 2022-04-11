@@ -12,7 +12,7 @@ c_ Solution(o..
 
     ___ getNbrs(src, dest, wordList
       res    # list
-      ___ c __ s__.ascii_lowercase:
+      ___ c __ s__.a..:
         ___ i __ r..(0, l..(src:
           newWord = src[:i] + c + src[i + 1:]
           __ newWord __ src:

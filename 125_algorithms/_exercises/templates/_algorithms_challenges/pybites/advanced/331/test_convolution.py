@@ -1,4 +1,4 @@
-_______ numpy __ np
+_______ n.... __ np
 _______ p__
 
 ____ convolution _______ convolution2D

@@ -1,4 +1,4 @@
-____ s__ _______ ascii_lowercase
+____ s__ _______ a..
 
 text = """
 One really nice feature of Python is polymorphism: using the same operation
@@ -23,7 +23,7 @@ ___ slice_and_dice(text: s.. = text) __ l..:
     ___ line __ text.s...s..
         line = line.l..
 
-        __ line[0] n.. __ ascii_lowercase:
+        __ line[0] n.. __ a..:
             _____
 
         words = line.s..

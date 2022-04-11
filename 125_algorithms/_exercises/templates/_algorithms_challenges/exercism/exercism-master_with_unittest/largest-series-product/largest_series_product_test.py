@@ -8,7 +8,7 @@ Feel free to reuse your code for the series exercise!
 """
 _______ unittest
 
-____ series _______ largest_product, slices
+____ r.. _______ largest_product, slices
 
 
 c_ SeriesTest(unittest.TestCase

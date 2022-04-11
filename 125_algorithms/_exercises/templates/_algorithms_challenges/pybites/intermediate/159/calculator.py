@@ -28,7 +28,7 @@ ___ simple_calculator(calculation
 
    ___
       r.. ops[op](num1, num2)
-   ______ (KeyError, ZeroDivisionError
+   ______ (K.., ZeroDivisionError
       r.. V...
 
 

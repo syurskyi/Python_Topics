@@ -1,6 +1,6 @@
 _______ p__
 
-____ workouts _______ print_workout_days
+____ ? _______ ?
 
 ?p__.m__.p.("arg, expected", [
     ('#', 'Mon, Tue, Thu, Fri\n'), 

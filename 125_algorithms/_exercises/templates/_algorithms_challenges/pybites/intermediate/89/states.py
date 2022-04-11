@@ -49,7 +49,7 @@ ___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev
       in the NOT_FOUND constant (takeaway: dicts are great for lookups)"""
    ___
       r.. us_state_abbrev[state_name]
-   ______ KeyError:
+   ______ K..:
       r.. NOT_FOUND
 
 

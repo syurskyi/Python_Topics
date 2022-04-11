@@ -45,15 +45,15 @@ ___ test_validate_guess(capfd
     game._answer = 2
 
     ... n.. game._validate_guess(1)
-    out, _ = capfd.readouterr()
+    out, _ = capfd.r..
     ... out.r..() __ '1 is too low'
 
     ... n.. game._validate_guess(3)
-    out, _ = capfd.readouterr()
+    out, _ = capfd.r..
     ... out.r..() __ '3 is too high'
 
     ... game._validate_guess(2)
-    out, _ = capfd.readouterr()
+    out, _ = capfd.r..
     ... out.r..() __ '2 is correct!'
 
 
@@ -65,7 +65,7 @@ ___ test_game_win(inp, capfd
     game()
     ... game._win __ T..
 
-    out, _ = capfd.readouterr()
+    out, _ = capfd.r..
     e.. =  '4 is too low', 'Number not in range',
                 '9 is too high', 'Already guessed',
                 '6 is correct!', 'It took you 3 guesses'
@@ -83,7 +83,7 @@ ___ test_game_lose(inp, capfd
     game()
     ... game._win __ F..
 
-    out, _ = capfd.readouterr()
+    out, _ = capfd.r..
     e.. =  'Please enter a number', '5 is too low',
                 '9 is too low', '14 is too high',
                 '11 is too low', '12 is too low',

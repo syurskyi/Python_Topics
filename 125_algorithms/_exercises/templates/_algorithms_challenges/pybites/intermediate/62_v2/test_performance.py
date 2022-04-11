@@ -1,4 +1,4 @@
-____ s__ _______ ascii_lowercase
+____ s__ _______ a..
 
 ____ performance _______ (contains, contains_fast,
                          ordered_list_max, ordered_list_max_fast,
@@ -8,7 +8,7 @@ ____ performance _______ (contains, contains_fast,
 
 alist = l..(r..(1000000
 aset = s..(alist)
-listofstrings = l..(ascii_lowercase) * 1000
+listofstrings = l..(a..) * 1000
 
 
 ___ test_contains

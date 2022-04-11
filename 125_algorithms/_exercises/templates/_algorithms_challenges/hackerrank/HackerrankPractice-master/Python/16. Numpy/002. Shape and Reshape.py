@@ -2,7 +2,7 @@
 # Score: 20
 
 
-_______ numpy __ np
+_______ n.... __ np
 
 
 array = np.array(l.. m..(i.., input().s..())))

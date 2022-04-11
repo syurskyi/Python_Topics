@@ -1,6 +1,6 @@
 _______ json
 ____ io _______ StringIO
-_______ pandas __ pd
+_______ p.... __ pd
 
 members = """
 id,first_name,last_name,email

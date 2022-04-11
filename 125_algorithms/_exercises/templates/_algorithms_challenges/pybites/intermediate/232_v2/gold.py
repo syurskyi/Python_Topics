@@ -1,6 +1,6 @@
 # https://pkgstore.datahub.io/core/gold-prices/annual_csv/data/343f626dd4f7bae813cfaac23fccd1bc/annual_csv.csv
 ____ io _______ StringIO
-_______ pandas __ pd
+_______ p.... __ pd
 gold_prices  """
 1950-12,34.720 1951-12,34.660 1952-12,34.790 1953-12,34.850 1954-12,35.040
 1955-12,34.970 1956-12,34.900 1957-12,34.990 1958-12,35.090 1959-12,35.050
@@ -25,7 +25,7 @@ ___ years_gold_value_decreased(gold_prices: s..  gold_prices) __ (i.., i..
     """
         
     prices  gold_prices.s..
-    df  pd.S..(prices)
+    df  ?.S..(prices)
 
     df  df.s...extract(r'(?P<year>.+)-.+\,(?P<price>.+)')
     df  df.set_index('year').price.astype('float')
