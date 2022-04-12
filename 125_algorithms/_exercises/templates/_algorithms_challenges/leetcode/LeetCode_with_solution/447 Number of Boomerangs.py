@@ -24,7 +24,7 @@ c_ Solution:
         ___ i __ r..(l..(points:
             dist_cnt C..()
             ___ j __ r..(l..(points:
-                __ i != j:
+                __ i !_ j:
                     d distance(points[i], points[j])
                     dist_cnt[d] += 1
 
@@ -45,7 +45,7 @@ c_ Solution:
             dist_cnt C..()
             dist_lst    # list
             ___ j __ r..(l..(points:
-                __ i != j:
+                __ i !_ j:
                     d distance(points[i], points[j])
                     dist_lst.a..(d)
                     dist_cnt[d] += 1

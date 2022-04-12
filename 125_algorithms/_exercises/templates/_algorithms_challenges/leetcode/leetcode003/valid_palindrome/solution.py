@@ -26,7 +26,7 @@ c_ Solution(o..
         right l..(s) - 1
         w.... left < right:
             __ s[left].i..() a.. s[right].i..
-                __ s[left].l.. != s[right].l..:
+                __ s[left].l.. !_ s[right].l..:
                     r.. F..
                 left += 1
                 right -_ 1

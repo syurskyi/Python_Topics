@@ -21,7 +21,7 @@ c_ Solution:
         # Split into two lists
         left head
         right N..
-        __ slow != fast:
+        __ slow !_ fast:
             prev.next N..
             right slow
         left sortList(left)

@@ -7,16 +7,16 @@ ___ same_structure_as(original,other
         ____
             r..  F..
 
-    __ t..(original) != t..(other
+    __ t..(original) !_ t..(other
         r.. F..
 
-    __ l..(original) != l..(other
+    __ l..(original) !_ l..(other
         r.. F..
     ___ ori,oth __ z..(original,other
-        __ t..(ori) != t..(oth
+        __ t..(ori) !_ t..(oth
             r.. F..
         ____ t..(ori) __ t..(oth) a.. isi..(ori,l..
-            __ n.. same_structure_as(ori,oth) o. l..(ori) != l..(oth
+            __ n.. same_structure_as(ori,oth) o. l..(ori) !_ l..(oth
                 r.. F..
     r.. T..
 

@@ -34,7 +34,7 @@ ___ wc(file_
         cnt_line += 1
         cnt_chars += l..(line)
         ___ c __ line:
-            __ c != ' ' a.. c != '\n' a.. c != '\t':
+            __ c !_ ' ' a.. c !_ '\n' a.. c !_ '\t':
                 within_word T..
                 _____
             __ within_word __ T.. a.. (c __ ' ' o. c __ '\t' o. c __ '\n'

@@ -20,7 +20,7 @@ c_ Solution(o..
             r.. 0
         ____ i __ j:
             r.. k*k
-        ____ dp[i][j][k] != 0:
+        ____ dp[i][j][k] !_ 0:
             r.. dp[i][j][k]
         ____
             tmp  helper(dp, boxes, i+1, j, 1) + k*k

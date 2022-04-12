@@ -17,20 +17,20 @@ c_ Solution(o..
         count n
         
         ___ find(x
-            __ x != parents[x]:
+            __ x !_ parents[x]:
                 parents[x] find(parents[x])
             r.. parents[x]
         
         ___ union(x, y
             x, y find(x), find(y)
-            __ x != y:
+            __ x !_ y:
                 parents[x] y
                 count -_ 1
                 r.. T..
             r.. F..
         
         ___ similar(x, y
-            r.. s..(i != j ___ i, j __ z..(x, y __ 2
+            r.. s..(i !_ j ___ i, j __ z..(x, y __ 2
         
         ## Solution part ##
         __ n < m:

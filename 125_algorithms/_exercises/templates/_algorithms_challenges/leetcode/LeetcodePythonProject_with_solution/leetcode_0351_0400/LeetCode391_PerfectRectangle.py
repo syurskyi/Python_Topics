@@ -40,7 +40,7 @@ c_ Solution(o..
             (x1, y2) n.. __ hashset o.\
             (x2, y1) n.. __ hashset o.\
             (x2, y2) n.. __ hashset o.\
-            l..(hashset) != 4:
+            l..(hashset) !_ 4:
             r.. F..
         
         r.. area __ (x2-x1)*(y2-y1)

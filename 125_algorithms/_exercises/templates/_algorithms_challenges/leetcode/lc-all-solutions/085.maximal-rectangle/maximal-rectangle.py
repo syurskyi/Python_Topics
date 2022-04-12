@@ -26,7 +26,7 @@ c_ Solution(o..
         dp[i] [i..(h) ___ h __ matrix[i]]
       ____
         ___ j __ r..(0, l..(matrix[0]:
-          __ matrix[i][j] != "0":
+          __ matrix[i][j] !_ "0":
             dp[i][j] dp[i + 1][j] + 1
       ans m..(ans, histogram(dp[i]
     r.. ans

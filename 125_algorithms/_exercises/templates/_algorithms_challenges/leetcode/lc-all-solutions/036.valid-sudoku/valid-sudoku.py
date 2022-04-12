@@ -14,7 +14,7 @@ c_ Solution(o..
         __ board[i][j] __ ".":
           _____
         num i..(board[i][j]) - 1
-        __ cacheRow[i][num] != 0 o. cacheCol[j][num] != 0 o. cacheBox[ib][num] != 0:
+        __ cacheRow[i][num] !_ 0 o. cacheCol[j][num] !_ 0 o. cacheBox[ib][num] !_ 0:
           r.. F..
         cacheRow[i][num] 1
         cacheCol[j][num] 1

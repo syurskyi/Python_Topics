@@ -20,7 +20,7 @@ c_ Solution(o..
         r.. [-1, -1]
     
     ___ getRoot  roots, ind
-        w.... roots[ind] != -1:
+        w.... roots[ind] !_ -1:
             ind roots[ind]
         r.. ind
     

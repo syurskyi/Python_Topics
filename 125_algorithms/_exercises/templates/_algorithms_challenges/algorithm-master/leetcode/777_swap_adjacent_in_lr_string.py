@@ -5,7 +5,7 @@ c_ Solution:
         :type end: str
         :rtype: bool
         """
-        __ l..(start) != l..(end
+        __ l..(start) !_ l..(end
             r.. F..
 
         m, n l..(start), l..(end)
@@ -22,7 +22,7 @@ c_ Solution:
             __ i __ m o. j __ n:
                 r.. F..
 
-            __ start[i] != end[j]:
+            __ start[i] !_ end[j]:
                 r.. F..
             __ start[i] __ 'L' a.. j > i:
                 r.. F..

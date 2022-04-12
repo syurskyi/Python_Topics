@@ -74,13 +74,13 @@ c_ Solution:
         slow A[0]
         fast A[A[0]]
 
-        w.... slow != fast:
+        w.... slow !_ fast:
             slow A[slow]
             fast A[A[fast]]
 
         fast 0
 
-        w.... slow != fast:
+        w.... slow !_ fast:
             slow A[slow]
             fast A[fast]
 

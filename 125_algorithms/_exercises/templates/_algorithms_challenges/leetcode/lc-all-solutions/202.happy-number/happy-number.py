@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     record    # dict
     sq_sum 0
-    w.... n != 1:
+    w.... n !_ 1:
       sq_sum 0
       sub_num n
       w.... sub_num > 0:

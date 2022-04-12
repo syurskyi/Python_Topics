@@ -49,7 +49,7 @@ c_ Solution(o..
         required 0
         ___ d __ data:
             __ d & 0x80 __ 0:
-                __ required != 0:
+                __ required !_ 0:
                     r.. F..
             ____
                 one_cnt 0
@@ -57,8 +57,8 @@ c_ Solution(o..
                     one_cnt += 1
                     d <<= 1
 
-                __ required != 0:
-                    __ one_cnt != 1:
+                __ required !_ 0:
+                    __ one_cnt !_ 1:
                         r.. F..
                     required -_ 1
                 ____

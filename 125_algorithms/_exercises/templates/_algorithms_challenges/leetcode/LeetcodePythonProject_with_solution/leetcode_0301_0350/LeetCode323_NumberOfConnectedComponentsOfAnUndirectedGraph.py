@@ -11,14 +11,14 @@ c_ Solution(o..
         ___ edge __ edges:
             root1 findRoot(roots, edge[0])
             root2 findRoot(roots, edge[1])
-            __ root1 != root2:
+            __ root1 !_ root2:
                 roots[root1] root2
                 count -_ 1
 #         print('roots: %s' % roots)
         r.. count
     
     ___ findRoot  roots, ind
-        w.... roots[ind] != -1:
+        w.... roots[ind] !_ -1:
             ind roots[ind]
         r.. ind
     
@@ -28,13 +28,13 @@ c_ Solution(o..
         ___ edge __ edges:
             root1 find(roots, edge[0])
             root2 find(roots, edge[1])
-            __ root1 != root2:
+            __ root1 !_ root2:
                 roots[root1] roots[root2]
                 count -_ 1
         r.. count
         
     ___ find  roots, ind
-        w.... roots[ind] != ind:
+        w.... roots[ind] !_ ind:
             roots[ind] roots[roots[ind]]
             ind roots[ind]
         r.. ind

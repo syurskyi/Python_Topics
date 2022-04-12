@@ -19,7 +19,7 @@ c_ Solution(o..
                 res m..(res, f)
             __ b n.. __ same:
                 res m..(res, b)
-        r.. res __ res != f__('inf') ____ 0
+        r.. res __ res !_ f__('inf') ____ 0
     
     ___ flipgame_own_TLE  fronts, backs
         """
@@ -34,7 +34,7 @@ c_ Solution(o..
             hashmap2[b] hashmap2.g.. b, 0)+1
         res f__('inf')
         helper(fronts, backs, 0, hashmap1, hashmap2)
-        r.. res __ res != f__('inf') ____ 0
+        r.. res __ res !_ f__('inf') ____ 0
         
     ___ helper  fronts, backs, i, hashmap1, hashmap2
         __ i >_ l..(fronts

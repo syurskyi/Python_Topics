@@ -11,9 +11,9 @@ c_ Solution(o..
         :rtype: bool
         """
         a, b A, B
-        __ l..(a) != l..(b r.. F..
+        __ l..(a) !_ l..(b r.. F..
         __ a __ b a.. l..(s..(a < l..(a r.. T..
-        dif [(c1, c2) ___ c1, c2 __ z..(a, b) __ c1 != c2]
+        dif [(c1, c2) ___ c1, c2 __ z..(a, b) __ c1 !_ c2]
         r.. l..(dif) __ 2 a.. dif[0] __ dif[1][::-1]
     
     ___ buddyStrings_own  A, B
@@ -23,12 +23,12 @@ c_ Solution(o..
         :rtype: bool
         """
         a, b A, B
-        __ l..(a) != l..(b
+        __ l..(a) !_ l..(b
             r.. F..
         c01, c02 '', ''
         times 0
         ___ c1, c2 __ z..(a, b
-            __ c1 != c2:
+            __ c1 !_ c2:
                 __ times > 1:
                     r.. F..
                 ____ times __ 1:

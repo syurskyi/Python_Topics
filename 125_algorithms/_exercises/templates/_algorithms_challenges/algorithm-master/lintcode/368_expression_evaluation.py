@@ -65,7 +65,7 @@ c_ Solution:
                 then continue to pop and output
                 until meet '('
                 """
-                w.... stack a.. stack[-1] != '(':
+                w.... stack a.. stack[-1] !_ '(':
                     res.a..(stack.pop
                 stack.p.. )  # evict '('
 

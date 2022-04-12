@@ -5,7 +5,7 @@ ____ m__ _______ sqrt
 
 
 ___ primitive_triplets(nbr
-    __ nbr % 4 != 0:
+    __ nbr % 4 !_ 0:
         r.. V...('Argument must be divisible by 4')
     prime_factors, powers factor(nbr / 2)
     args [(1, prime_factors[i1] ** powers[i1]) ___ i1 __ r..(l..(powers]
@@ -59,7 +59,7 @@ ___ factor(n
     w.... n > 1:
         prime primes[idx]
         idx += 1
-        __ n % prime != 0:
+        __ n % prime !_ 0:
             _____
         factors.a..(prime)
         p 0

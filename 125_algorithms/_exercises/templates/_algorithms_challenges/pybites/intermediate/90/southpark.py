@@ -25,7 +25,7 @@ ___ get_num_words_spoken_by_character_per_episode(content
 
    words_per_episode DefaultDict(C..)
    ___ row __ csv_reader:
-      episode_words {row["Episode"]: l..([word ___ word __ row["Line"].s..(" ") __ word != ""])}
+      episode_words {row["Episode"]: l..([word ___ word __ row["Line"].s..(" ") __ word !_ ""])}
       words_per_episode[row["Character"]].update(episode_words)
 
    r.. words_per_episode

@@ -12,7 +12,7 @@ c_ Solution:
 
         INT_RANGE 0xFFFFFFFF
 
-        w.... b != 0:
+        w.... b !_ 0:
             a, b a ^ b, (a & b) << 1
             a &= INT_RANGE
 

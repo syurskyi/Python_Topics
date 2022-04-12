@@ -2,7 +2,7 @@ _______ d__ __ dt
 
 NOW dt.d__.n..
 
-c_ Promo:
+c_ Promo
     ___ - , name, expires
         name name
         expires expires

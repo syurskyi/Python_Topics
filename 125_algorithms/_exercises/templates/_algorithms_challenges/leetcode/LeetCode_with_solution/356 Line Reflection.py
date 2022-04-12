@@ -33,7 +33,7 @@ c_ Solution(o..
             x (lst[i] + lst[j]) / f__(2)
             __ n.. x:
                 x x
-            ____ x != x:
+            ____ x !_ x:
                 r.. F..
 
             i += 1
@@ -42,7 +42,7 @@ c_ Solution(o..
         __ i __ j:
             __ n.. x:
                 x lst[i]
-            ____ x != lst[i]:
+            ____ x !_ lst[i]:
                 r.. F..
 
         r.. T..

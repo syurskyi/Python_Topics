@@ -21,7 +21,7 @@ c_ Solution(o..
       found += 1
 
     start r
-    __ nums[r] != target o. r < 0:
+    __ nums[r] !_ target o. r < 0:
       start r + 1
 
     l, r 0, l..(nums) - 1
@@ -34,7 +34,7 @@ c_ Solution(o..
           found += 1
         l m + 1
     end l
-    __ nums[l] != target:
+    __ nums[l] !_ target:
       end l - 1
 
     __ found __ 0:

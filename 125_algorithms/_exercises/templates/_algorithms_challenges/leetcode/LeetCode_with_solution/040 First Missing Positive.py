@@ -33,7 +33,7 @@ c_ Solution:
 
 
         ___ i __ x..(length
-            __ A[i]!=i+1:
+            __ A[i]!_i+1:
                 r.. i+1
         r.. A[-1]+1
 

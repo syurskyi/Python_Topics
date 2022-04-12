@@ -13,7 +13,7 @@ c_ Solution(o..
     """
 
     ___ visit(v
-      __ v != pre:
+      __ v !_ pre:
         pre v
         cnt 0
       cnt += 1

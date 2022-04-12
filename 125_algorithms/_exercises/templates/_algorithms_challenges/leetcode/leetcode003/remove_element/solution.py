@@ -16,7 +16,7 @@ c_ Solution(o..
         n l..(nums)
         j 0
         ___ i __ r..(n
-            __ nums[i] != val:
+            __ nums[i] !_ val:
                 nums[j] nums[i]
                 j += 1
         r.. j

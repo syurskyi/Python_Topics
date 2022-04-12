@@ -13,7 +13,7 @@ c_ Solution:
             r.. T..
 
         a, b, c l..(A), l..(B), l..(C)
-        __ c != a + b:
+        __ c !_ a + b:
             r.. F..
 
         """

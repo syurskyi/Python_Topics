@@ -22,7 +22,7 @@ c_ SaddlePoints:
 
     ___ invalid_matrix
         ___ row __ r..(l..(matrix:
-            __ l..(matrix[row]) != l..(matrix[0]
+            __ l..(matrix[row]) !_ l..(matrix[0]
                 r.. T..
         r.. F..
 

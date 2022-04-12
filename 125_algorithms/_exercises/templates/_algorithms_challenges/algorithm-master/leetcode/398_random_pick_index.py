@@ -17,7 +17,7 @@ c_ Solution:
         cnt 0
 
         ___ i __ r..(l..(A:
-            __ A[i] != target:
+            __ A[i] !_ target:
                 _____
             cnt += 1
             __ r..(1, cnt) __ cnt:

@@ -30,7 +30,7 @@ ___ get_movies_by_director
         reader csv.DictReader(file)
         ___ row __ reader:
             year row 'title_year'
-            __ year != '' a.. i..(year) > 1960:
+            __ year !_ '' a.. i..(year) > 1960:
                 full_list.a..([row 'director_name' ,
                                   row 'movie_title' .s..,
                                   i..(row 'title_year' ),

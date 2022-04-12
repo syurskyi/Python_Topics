@@ -4,7 +4,7 @@ ___ bubbleSort(amount, numbers
 
     w.... n.. s..:
         s..  T..
-        ___ i __ r..(amount-1
+        ___ i __ r.. ?-1
             __ numbers[i] > numbers[i+1]:
                 s..  F..
                 swapCount + 1

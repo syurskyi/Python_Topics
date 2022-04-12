@@ -31,7 +31,7 @@ c_ Solution(o..
                 queue.a..(node.left)
             __ node.right:
                 queue.a..(node.right)
-        r.. second __ second != f__('inf') ____ -1
+        r.. second __ second !_ f__('inf') ____ -1
     
     ___ test
         testCases [

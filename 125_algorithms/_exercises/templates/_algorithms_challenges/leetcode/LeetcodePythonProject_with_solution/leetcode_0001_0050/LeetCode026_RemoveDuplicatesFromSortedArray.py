@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         j 0
         ___ i, num __ e..(nums
-            __ i __ 0 o. nums[i-1] != num:
+            __ i __ 0 o. nums[i-1] !_ num:
                 nums[j] num
                 j += 1
         r.. j

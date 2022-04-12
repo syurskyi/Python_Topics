@@ -20,8 +20,8 @@ c_ Solution:
         bgn nums[0]
         pre nums[0]
         ___ i __ x..(1, n
-            __ nums[i] != pre+1:
-                __ pre != bgn:
+            __ nums[i] !_ pre+1:
+                __ pre !_ bgn:
                     ret.a..("%d->%d"%(bgn, pre
                 ____
                     ret.a..("%d"%bgn)
@@ -30,7 +30,7 @@ c_ Solution:
             pre nums[i]
 
         # clean up
-        __ pre != bgn:
+        __ pre !_ bgn:
             ret.a..("%d->%d"%(bgn, pre
         ____
             ret.a..("%d"%bgn)

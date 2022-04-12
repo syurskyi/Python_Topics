@@ -22,7 +22,7 @@ c_ Solution:
         :rtype: int
         """
         pos 0
-        w.... m != n:
+        w.... m !_ n:
             pos += 1
             m >>= 1
             n >>= 1

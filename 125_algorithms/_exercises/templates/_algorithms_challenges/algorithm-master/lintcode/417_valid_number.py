@@ -19,7 +19,7 @@ c_ Solution:
         __ left > right:
             r.. F..
 
-        __ left != 0 o. right != n - 1:
+        __ left !_ 0 o. right !_ n - 1:
             s s[left:right + 1]
 
         zero o..('0')

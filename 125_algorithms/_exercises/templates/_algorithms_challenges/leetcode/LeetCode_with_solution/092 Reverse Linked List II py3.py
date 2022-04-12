@@ -44,7 +44,7 @@ c_ Solution:
             cur nxt
             l += 1
 
-        __ m != 1:  # leftend is None
+        __ m !_ 1:  # leftend is None
             leftend.next prev
         ____
             head prev

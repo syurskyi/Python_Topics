@@ -12,8 +12,8 @@ c_ Solution:
             r.. si __ l..(s)
         # Next char is not *
         # pi may be the last char
-        __ pi < l..(p) - 1 a.. p[pi + 1] != '*' o. pi __ l..(p) - 1:
-            ... p[pi] != '*'
+        __ pi < l..(p) - 1 a.. p[pi + 1] !_ '*' o. pi __ l..(p) - 1:
+            ... p[pi] !_ '*'
             # si must be in bound
             is_cur_matched si < l..(s) a.. (p[pi] __ s[si] o. p[pi] __ '.')
             is_next_matched is_match_aux(s, p, si + 1, pi + 1)

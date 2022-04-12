@@ -26,7 +26,7 @@ ___ get_movies_by_director
     w__ o.. local, encoding="utf-8") __ f:
         movies csv.DictReader(f)
         ___ movie __ movies:
-            __ movie 'title_year'  != '' a.. i..(movie 'title_year' ) > 1960:
+            __ movie 'title_year'  !_ '' a.. i..(movie 'title_year' ) > 1960:
                 director[movie 'director_name']].a..(
                     Movie(
                         movie 'movie_title' .s..,

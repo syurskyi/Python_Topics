@@ -44,7 +44,7 @@ c_ Solution:
             r.. F..
 
         ___ i __ r..(n - 1
-            __ indeg[org[i]] != 0:
+            __ indeg[org[i]] !_ 0:
                 r.. F..
             __ org[i + 1] n.. __ edges[org[i]]:
                 r.. F..

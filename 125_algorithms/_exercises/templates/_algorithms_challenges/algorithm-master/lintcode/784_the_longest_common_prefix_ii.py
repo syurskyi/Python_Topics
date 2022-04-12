@@ -10,7 +10,7 @@ c_ Solution:
         ___ word __ D:
             i 0
             ___ c __ word:
-                __ c != target[i]:
+                __ c !_ target[i]:
                     _____
                 i += 1
             __ i > ans:

@@ -12,7 +12,7 @@ c_ Solution(o..
       __ n.. s[end].i..
         end -_ 1
         _____
-      __ s[start].l.. != s[end].l..:
+      __ s[start].l.. !_ s[end].l..:
         r.. F..
       start += 1
       end -_ 1

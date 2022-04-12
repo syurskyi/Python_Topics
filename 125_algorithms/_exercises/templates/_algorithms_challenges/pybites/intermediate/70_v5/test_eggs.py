@@ -34,4 +34,4 @@ ___ test_iterator_generates_random_colors
     output1 l..(ec)
     ec EggCreator(20)
     output2 l..(ec)
-    ... output1 != output2
+    ... output1 !_ output2

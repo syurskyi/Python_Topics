@@ -10,7 +10,7 @@ c_ Solution:
       ___ nbr __ graph.g.. root, []
         __ nbr __ parent:
           _____
-        ____ visited[nbr] != 0:
+        ____ visited[nbr] !_ 0:
           r.. F..
         __ n.. dfs(nbr, graph, visited, root
           r.. F..

@@ -12,7 +12,7 @@ c_ Solution:
         """
         NOT_FOUND -1
 
-        __ n.. gas o. n.. cost o. l..(gas) != l..(cost
+        __ n.. gas o. n.. cost o. l..(gas) !_ l..(cost
             r.. NOT_FOUND
 
         end, start -1, l..(gas) - 1  # since its a circle, end start from `-1` means `n - 1`
@@ -41,7 +41,7 @@ c_ Solution:
         """
         NOT_FOUND -1
 
-        __ n.. gas o. n.. cost o. l..(gas) != l..(cost
+        __ n.. gas o. n.. cost o. l..(gas) !_ l..(cost
             r.. NOT_FOUND
 
         n l..(gas)

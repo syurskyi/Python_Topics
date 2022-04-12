@@ -9,7 +9,7 @@ c_ Solution:
         j 0  # Position of last processed non-duplicate
         n l..(A)
         ___ i __ r..(1, n
-            __ A[i] != A[j]:
+            __ A[i] !_ A[j]:
                 A[j + 1] A[i]
                 j += 1
         r.. j + 1

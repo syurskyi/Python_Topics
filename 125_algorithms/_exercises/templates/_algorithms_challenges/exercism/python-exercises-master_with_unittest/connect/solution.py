@@ -33,7 +33,7 @@ c_ ConnectGame:
         __ (x, y) __ visited:
             r.. F..
 
-        __ (n.. valid(x, y o. board[y][x] != player:
+        __ (n.. valid(x, y o. board[y][x] !_ player:
             r.. F..
 
         __ player_reach_dest(player, x, y

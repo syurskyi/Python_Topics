@@ -29,7 +29,7 @@ c_ Solution(o..
         modified 0
         ___ i __ r..(1, l..(nums:
             __ nums[i-1] > nums[i]:
-                __ modified != 0: r.. F..
+                __ modified !_ 0: r.. F..
                 modified += 1
                 __ i - 2 < 0 o. nums[i-2] <_ nums[i]:
                     nums[i-1] nums[i]

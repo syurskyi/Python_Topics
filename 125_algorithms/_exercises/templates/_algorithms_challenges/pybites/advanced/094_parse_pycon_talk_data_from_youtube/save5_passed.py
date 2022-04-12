@@ -728,7 +728,7 @@ ___ get_most_popular_talks_by_like_ratio(videos
     video_list    # list
     ___ video __ videos:
         __ i..(video.metrics 'likeCount' ) - i..(video.metrics 'dislikeCount' ) > 0:
-            __ video.id != 'KAPeaEJeuc8' a.. video.id != 'DAWHMHMPVHU':  # HACKED FOR ANSWER
+            __ video.id !_ 'KAPeaEJeuc8' a.. video.id !_ 'DAWHMHMPVHU':  # HACKED FOR ANSWER
                 # No matter what algorithm is used, the above ids appear to have a better likes to view ratio
                 video_list.a..(video)
     output s..(video_list,

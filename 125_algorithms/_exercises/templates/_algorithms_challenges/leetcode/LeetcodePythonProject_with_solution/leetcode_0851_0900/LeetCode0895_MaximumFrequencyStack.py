@@ -102,7 +102,7 @@ c_ FreqStack_self(o..
                              (node0.freq __ node.freq a..
                               node0.indexes[-1] > node.indexes[-1]:
                 node0 node0.prev
-            __ node0 a.. node0 != node:
+            __ node0 a.. node0 !_ node:
                 prevNode node0.prev
                 node0.prev node
                 node.prev prevNode

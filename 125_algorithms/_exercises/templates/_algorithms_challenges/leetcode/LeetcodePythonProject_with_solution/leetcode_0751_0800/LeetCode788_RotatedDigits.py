@@ -35,7 +35,7 @@ c_ Solution(o..
                 j -_ 1
             ____
                 r.. F..
-        r.. arr0 != arr
+        r.. arr0 !_ arr
     
     ___ test
         testCases [

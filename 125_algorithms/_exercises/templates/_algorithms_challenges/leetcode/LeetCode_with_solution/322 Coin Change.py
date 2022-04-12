@@ -33,18 +33,18 @@ c_ Solution(o..
         __ amount __ 0:
             r.. 0
 
-        F [___.maxint ___ _ __ x..(amount+1)]
+        F [___.maxint ___ _ __ x.. ?+1)]
         ___ k __ coins:
             __ k < amount+1:
                 F[k] 1
 
         ___ i __ x..(1, amount+1
-            __ F[i] != ___.maxint:
+            __ F[i] !_ ___.maxint:
                 ___ k __ coins:
                     __ i+k <_ amount:
                         F[i+k] m..(F[i+k], F[i]+1)
 
-        r.. F[amount] __ F[amount] != ___.maxint ____ -1
+        r.. F[amount] __ F[amount] !_ ___.maxint ____ -1
 
 
 c_ SolutionTLE(o..
@@ -57,17 +57,17 @@ c_ SolutionTLE(o..
         :type amount: int
         :rtype: int
         """
-        F [___.maxint ___ _ __ x..(amount+1)]
+        F [___.maxint ___ _ __ x.. ?+1)]
         ___ k __ coins:
             __ k < amount + 1:
                 F[k] 1
 
         ___ i __ x..(1, amount+1
             ___ k __ coins:
-                __ i-k > 0 a.. F[i-k] != ___.maxint:
+                __ i-k > 0 a.. F[i-k] !_ ___.maxint:
                     F[i] m..(F[i], F[i-k]+1)
 
-        r.. F[amount] __ F[amount] != ___.maxint ____ -1
+        r.. F[amount] __ F[amount] !_ ___.maxint ____ -1
 
 
 __ _______ __ _______

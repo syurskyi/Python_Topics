@@ -29,7 +29,7 @@ ___ high_low_record_breakers_for_2015
     stations 'Data_Value'  = stations 'Data_Value' .div(10)
     stations stations[~((stations.Date.dt.day __ 29) & (stations.Date.dt.month __ 2]
 
-    s stations[stations.Date.dt.year != 2015]
+    s stations[stations.Date.dt.year !_ 2015]
 
     x stations.set_index('Date')
 

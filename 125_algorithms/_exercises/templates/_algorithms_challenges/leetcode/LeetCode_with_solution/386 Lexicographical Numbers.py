@@ -20,7 +20,7 @@ c_ Solution(o..
                 y.. i
                 __ i * 10 <_ n:
                     i *= 10  # * 10
-                ____ i % 10 != 9 a.. i + 1 <_ n:
+                ____ i % 10 !_ 9 a.. i + 1 <_ n:
                     i += 1  # for current digit
                 ____
                     w.... i % 10 __ 9 o. i + 1 > n:

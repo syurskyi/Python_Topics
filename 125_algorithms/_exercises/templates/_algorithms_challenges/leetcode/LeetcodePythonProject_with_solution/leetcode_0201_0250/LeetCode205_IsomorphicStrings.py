@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         hashmap    # dict
         hashset s..()
-        __ l..(s) != l..(t
+        __ l..(s) !_ l..(t
             r.. F..
         ___ c1, c2 __ z..(s, t
             __ c1 n.. __ hashmap:
@@ -21,7 +21,7 @@ c_ Solution(o..
                 hashmap[c1] c2
                 hashset.add(c2)
             ____
-                __ hashmap[c1] != c2:
+                __ hashmap[c1] !_ c2:
                     r.. F..
         r.. T..
     
@@ -31,14 +31,14 @@ c_ Solution(o..
         :type t: str
         :rtype: bool
         """
-        __ l..(s) != l..(t r.. F..
+        __ l..(s) !_ l..(t r.. F..
         hashmap1, hashmap2    # dict, {}
         ___ c1, c2 __ z..(s, t
             __ c1 __ hashmap1 a..\
-            (c2 n.. __ hashmap2 o. hashmap1[c1] != c2 o. hashmap2[c2] != c1
+            (c2 n.. __ hashmap2 o. hashmap1[c1] !_ c2 o. hashmap2[c2] !_ c1
                 r.. F..
             ____ c2 __ hashmap2 a..\
-            (c1 n.. __ hashmap1 o. hashmap1[c1] != c2 o. hashmap2[c2] != c1
+            (c1 n.. __ hashmap1 o. hashmap1[c1] !_ c2 o. hashmap2[c2] !_ c1
                 r.. F..
             hashmap1[c1] c2
             hashmap2[c2] c1

@@ -17,11 +17,11 @@ c_ Solution(o..
                 i += num
                 j += 1
             ____
-                __ word[i] != abbr[j]:
+                __ word[i] !_ abbr[j]:
                     r.. F..
                 i+=1
                 j+=1
-        __ i != l..(word) o. j != l..(abbr
+        __ i !_ l..(word) o. j !_ l..(abbr
             r.. F..
         r.. T..
     

@@ -20,7 +20,7 @@ ___ get_bite_with_fastest_avg_test(timings: l..) __ s..:
     ___ test __ timings:
         test_split test.s..(" ")
 
-        __ l..(test_split) != 8:
+        __ l..(test_split) !_ 8:
             _____
         
         bite_number test_split[0]

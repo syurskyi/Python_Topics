@@ -24,7 +24,7 @@ c_ Solution:
 
         slow head
         fast head.next
-        w.... slow != fast:
+        w.... slow !_ fast:
             __ n.. fast.next o. n.. fast.next.next:
                 r.. F..
 

@@ -20,7 +20,7 @@ i 0
 #count of the length of combined strings
 len_count 1
 #while there remains only one element in the flames list
-w.... l..(flame)!= 1:
+w.... l..(flame)!_ 1:
     #if length of the combined string has reached then pop the current element of the flames list
     __ len_count __ length:
         flame.p.. i)

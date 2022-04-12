@@ -4,7 +4,7 @@ ___ matches(line, pattern, flags
         pattern pattern.l..
 
     __ '-x' __ flags:  # match entire lines
-        __ l..(pattern) != l..(line.r..:
+        __ l..(pattern) !_ l..(line.r..:
             r.. F..
 
     __ '-v' __ flags:  # invert matching

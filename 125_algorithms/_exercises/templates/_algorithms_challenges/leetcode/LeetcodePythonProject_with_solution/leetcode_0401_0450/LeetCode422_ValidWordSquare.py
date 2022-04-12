@@ -15,6 +15,6 @@ c_ Solution(o..
                 __ i >_ l..(words[j]
                     r.. F..
                 word2 += words[j][i]
-            __ word1 != word2:
+            __ word1 !_ word2:
                 r.. F..
         r.. T..

@@ -13,7 +13,7 @@ c_ Solution(o..
         """
         __ n.. s a.. n.. t: r.. T..
         __ n.. s o. n.. t: r.. F..
-        __ l..(s) != l..(t r.. F..
+        __ l..(s) !_ l..(t r.. F..
         hashmap    # dict
         ___ c __ s:
             __ c __ hashmap: hashmap[c] += 1

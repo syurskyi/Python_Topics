@@ -11,7 +11,7 @@ c_ Solution(o..
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ l..(words1) != l..(words2
+        __ l..(words1) !_ l..(words2
             r.. F..
         pairInfo    # dict
         ___ p __ pairs:
@@ -47,7 +47,7 @@ c_ Solution(o..
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ l..(words1) != l..(words2
+        __ l..(words1) !_ l..(words2
             r.. F..
         hashmap    # dict
         n 0
@@ -74,12 +74,12 @@ c_ Solution(o..
             ____
                 r1 getRoot(roots, hashmap[w1])
                 r2 getRoot(roots, hashmap[w2])
-                __ r1 != r2:
+                __ r1 !_ r2:
                     r.. F..
         r.. T..
     
     ___ getRoot  roots, ind
-        w.... roots[ind] != -1:
+        w.... roots[ind] !_ -1:
             ind roots[ind]
         r.. ind
     

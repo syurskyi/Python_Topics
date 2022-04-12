@@ -108,7 +108,7 @@ c_ Solution:
                     w.... k - r_cnt >_ 0 a.. A[k - r_cnt] __ A[k]:
                         r_cnt += 1
 
-                    __ A[j] != A[k]:
+                    __ A[j] !_ A[k]:
                         ret += l_cnt * r_cnt
                         ret %= MOD
                     ____

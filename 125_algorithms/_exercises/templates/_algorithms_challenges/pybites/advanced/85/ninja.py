@@ -35,7 +35,7 @@ c_ NinjaBelt:
                 _____
 
 
-        __ rank != _last_earned_belt:
+        __ rank !_ _last_earned_belt:
             _last_earned_belt rank
 
             print(f"Congrats, you earned {score} points obtaining the PyBites Ninja {_last_earned_belt.capitalize()} Belt")

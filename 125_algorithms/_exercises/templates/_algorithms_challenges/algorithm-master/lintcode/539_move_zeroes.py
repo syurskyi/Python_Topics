@@ -11,6 +11,6 @@ c_ Solution:
         left 0
 
         ___ right __ r..(n
-            __ nums[right] != 0:
+            __ nums[right] !_ 0:
                 nums[left], nums[right] nums[right], nums[left]
                 left += 1

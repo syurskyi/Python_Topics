@@ -30,7 +30,7 @@ c_ Solution(o..
 
         celebrity i
         ___ i __ x..(n
-            __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i:
+            __ i !_ celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i:
                 r.. -1
 
         r.. celebrity
@@ -58,7 +58,7 @@ c_ Solution(o..
 
         celebrity V.p.. )
         ___ i __ x..(n
-            __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i:
+            __ i !_ celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i:
                 r.. -1
 
         r.. celebrity

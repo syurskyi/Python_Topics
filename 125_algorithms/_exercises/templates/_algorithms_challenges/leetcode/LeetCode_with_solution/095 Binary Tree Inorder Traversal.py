@@ -37,7 +37,7 @@ c_ Solution(o..
                 cur cur.right
             ____
                 pre cur.left
-                w.... pre.right a.. pre.right != cur:
+                w.... pre.right a.. pre.right !_ cur:
                     pre pre.right
 
                 __ n.. pre.right:

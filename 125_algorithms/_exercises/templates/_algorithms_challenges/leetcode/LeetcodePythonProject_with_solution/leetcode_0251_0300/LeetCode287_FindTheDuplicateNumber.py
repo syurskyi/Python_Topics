@@ -12,11 +12,11 @@ c_ Solution(o..
         """
         __ l..(nums) > 1:
             slow, fast nums[0], nums[nums[0]]
-            w.... slow != fast:
+            w.... slow !_ fast:
                 slow nums[slow]
                 fast nums[nums[fast]]
             fast 0
-            w.... fast != slow:
+            w.... fast !_ slow:
                 fast nums[fast]
                 slow nums[slow]
             r.. slow

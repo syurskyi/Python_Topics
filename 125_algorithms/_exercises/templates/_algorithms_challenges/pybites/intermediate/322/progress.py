@@ -9,7 +9,7 @@ ___ ontrack_reading(books_goal: i.., books_read: i..,
     __ day_of_year __ N..
         day_of_year d__.t...t.. .tm_yday
 
-    __ books_goal != books_read a.. books_read != 0:
+    __ books_goal !_ books_read a.. books_read !_ 0:
         book_per_days days_in_year / books_goal
         remaining_days days_in_year - day_of_year
 

@@ -93,7 +93,7 @@ c_ Solution2:
             a  words1[i]
             b  words2[i]
 
-            __ a != b a.. n.. dfs(a, b, simils, s..:
+            __ a !_ b a.. n.. dfs(a, b, simils, s..:
                 r.. F..
 
         r.. T..

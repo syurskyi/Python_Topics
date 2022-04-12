@@ -41,7 +41,7 @@ ___ split_string_on_punctuation(text
        ['hi', 'how are you doing', 'blabla']
        (make sure you strip trailing spaces)"""
 
-    r.. [v ___ v __ __.s..(r'[?!.,;]\s*',text) __ v != '']
+    r.. [v ___ v __ __.s..(r'[?!.,;]\s*',text) __ v !_ '']
 
 
 ___ remove_duplicate_spacing(text

@@ -28,7 +28,7 @@ c_ Solution(o..
             d.add(n)
             t n
             s 0  # sum
-            w.... t != 0:
+            w.... t !_ 0:
                 digit (t % 10)
                 s += digit * digit
                 t /= 10

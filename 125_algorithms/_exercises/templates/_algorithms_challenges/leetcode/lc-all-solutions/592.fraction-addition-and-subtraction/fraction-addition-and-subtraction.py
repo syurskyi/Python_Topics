@@ -10,7 +10,7 @@ c_ Solution(o..
         r.. b
 
       ___ gcd(a, b
-        w.... b != 0:
+        w.... b !_ 0:
           a, b b, a % b
         r.. a
 
@@ -29,4 +29,4 @@ c_ Solution(o..
         num expression[start:i]
         ans add(ans, num)
         start i
-    r.. ans __ ans[0] != "+" ____ ans[1:]
+    r.. ans __ ans[0] !_ "+" ____ ans[1:]

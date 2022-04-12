@@ -12,7 +12,7 @@ c_ Solution(o..
         :rtype: int
         """
         sumVal s..(nums)
-        __ sumVal < S o. (sumVal+S)%2 != 0:
+        __ sumVal < S o. (sumVal+S)%2 !_ 0:
             r.. 0
         target (sumVal+S)//2
         r.. helper(nums, target)

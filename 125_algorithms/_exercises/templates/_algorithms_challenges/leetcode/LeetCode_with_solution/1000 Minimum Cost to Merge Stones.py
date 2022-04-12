@@ -93,7 +93,7 @@ c_ Solution:
                 r.. f__("inf")
 
             n j - i
-            __ (n - m) % (K - 1) != 0:
+            __ (n - m) % (K - 1) !_ 0:
                 r.. f__("inf")
 
             __ j __ i + 1:
@@ -111,7 +111,7 @@ c_ Solution:
             r.. ret
 
         ret F(0, N, 1)
-        r.. ret __ ret != f__("inf") ____ -1
+        r.. ret __ ret !_ f__("inf") ____ -1
 
 
 __ _______ __ _______

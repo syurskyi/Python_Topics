@@ -12,7 +12,7 @@ c_ Solution:
                 j += 1
                 A[j] A[i]
                 counter += 1
-            ____ A[i] != A[j]:
+            ____ A[i] !_ A[j]:
                 j += 1
                 A[j] A[i]
                 counter 0

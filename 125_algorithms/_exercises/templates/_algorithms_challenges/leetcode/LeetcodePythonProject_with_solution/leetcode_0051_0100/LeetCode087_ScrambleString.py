@@ -10,7 +10,7 @@ c_ Solution(o..
         :type s2: str
         :rtype: bool
         """
-        __ l..(s1) != l..(s2
+        __ l..(s1) !_ l..(s2
             r.. F..
         __ l..(s1) __ 0 o. s1 __ s2:
             r.. T..
@@ -18,7 +18,7 @@ c_ Solution(o..
         l2 l..(s2)
         l1.s..()
         l2.s..()
-        __ l1 != l2:
+        __ l1 !_ l2:
             r.. F..
         ___ i __ r..(1, l..(s1:
             s11 s1[0:i]

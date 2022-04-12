@@ -50,7 +50,7 @@ c_ DisjointSet
     ___ unionize  x, y
         p1 root(x)
         p2 root(y)
-        __ p1 != p2:
+        __ p1 !_ p2:
             sz1 sz[p1]
             sz2 sz[p2]
             __ sz1 > sz2:
@@ -62,7 +62,7 @@ c_ DisjointSet
 
     ___ root  x
         p pi[x]
-        __ p != x:
+        __ p !_ x:
             pi[x] root(p)
 
         r.. pi[x]
@@ -117,7 +117,7 @@ c_ Solution_dfs:
         visited.add(cur)
 
         ___ nbr __ G[cur]:
-            __ nbr != pi:
+            __ nbr !_ pi:
                 __ nbr __ p..:
                     # extract the circle from path
                     circle s..()

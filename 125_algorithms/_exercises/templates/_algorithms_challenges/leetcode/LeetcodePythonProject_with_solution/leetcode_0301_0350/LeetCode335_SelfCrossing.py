@@ -21,7 +21,7 @@ c_ Solution(o..
         # inner spiral
         w.... i < n a.. x[i] < x[i-2]:
             i += 1
-        r.. i != n
+        r.. i !_ n
     
     ___ isSelfCrossing_another  x
         __ n.. x o. l..(x) < 3: r.. F..

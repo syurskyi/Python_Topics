@@ -34,7 +34,7 @@ c_ Solution:
         s 0
         ___ l __ r..(1, l..(nums) + 1
             s += nums[l-1]
-            __ k != 0:  # edge case
+            __ k !_ 0:  # edge case
                 s %= k
             __ s __ h:
                 __ l - h[s] >_ 2:  # size at least 2

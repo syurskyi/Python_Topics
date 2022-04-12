@@ -13,7 +13,7 @@ c_ Solution:
             gotcha T..
 
             ___ i __ r..(size
-                __ any(array[i] != array[j] ___ j __ r..(i + size, n, size:
+                __ any(array[i] !_ array[j] ___ j __ r..(i + size, n, size:
                     gotcha F..
 
             __ gotcha:

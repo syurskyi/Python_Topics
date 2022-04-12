@@ -29,7 +29,7 @@ c_ Solution:
     ___ is_neighbor  p, q
         diff 0
         ___ a, b __ z..(p, q
-            __ a != b:
+            __ a !_ b:
                 diff += 1
             __ diff > 1:
                 r.. F..

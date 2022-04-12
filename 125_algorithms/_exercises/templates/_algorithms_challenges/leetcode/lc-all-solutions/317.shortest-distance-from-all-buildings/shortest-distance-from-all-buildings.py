@@ -19,8 +19,8 @@ c_ Solution(o..
           newi, newj i + di, j + dj
           __ (newi, newj) __ visited:
             _____
-          __ 0 <_ newi < l..(grid) a.. 0 <_ newj < l..(grid[0]) a.. grid[newi][newj] != 2:
-            __ grid[newi][newj] != 1:
+          __ 0 <_ newi < l..(grid) a.. 0 <_ newj < l..(grid[0]) a.. grid[newi][newj] !_ 2:
+            __ grid[newi][newj] !_ 1:
               grid[newi][newj] -_ dist + 1
               hit[newi][newj] += 1
               visited |= {(newi, newj)}
@@ -29,7 +29,7 @@ c_ Solution(o..
               count += 1
             visited |= {(newi, newj)}
 
-      __ count != buildNum:
+      __ count !_ buildNum:
         print
         count, buildNum
         r.. F..
@@ -54,4 +54,4 @@ c_ Solution(o..
         __ grid[i][j] < 0 a.. hit[i][j] __ count:
           ans m..(ans, grid[i][j])
           grid[i][j] 0
-    r.. -ans __ ans != f__("-inf") ____ -1
+    r.. -ans __ ans !_ f__("-inf") ____ -1

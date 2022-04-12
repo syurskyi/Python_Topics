@@ -12,7 +12,7 @@ c_ Solution(o..
         :rtype: bool
         """
         m, n l..(s1), l..(s2)
-        __ m+n != l..(s3
+        __ m+n !_ l..(s3
             r.. F..
         dp [[F..]*(n+1) ___ _ __ r..(m+1)]
         dp[0][0] T..

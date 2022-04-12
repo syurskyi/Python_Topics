@@ -17,11 +17,11 @@ c_ Solution(o..
         odd 0
         oddVal ''
         ___ key, value __ hashmap.i..:
-            __ value%2 != 0:
+            __ value%2 !_ 0:
                 oddVal key
                 odd += 1
         __ l..(s)%2 __ 0:
-            __ odd != 0:
+            __ odd !_ 0:
                 r.. []
         ____
             __ odd >_ 2:

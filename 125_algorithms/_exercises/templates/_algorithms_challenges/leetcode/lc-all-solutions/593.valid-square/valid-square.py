@@ -9,6 +9,6 @@ c_ Solution(o..
     """
     dist l.... a, b: ((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2)
     sideLens s..([dist(p1, p2), dist(p1, p3), dist(p1, p4), dist(p2, p3), dist(p2, p4), dist(p3, p4)])
-    __ l..(sideLens) != 2 o. 0 __ sideLens:
+    __ l..(sideLens) !_ 2 o. 0 __ sideLens:
       r.. F..
     r.. T..

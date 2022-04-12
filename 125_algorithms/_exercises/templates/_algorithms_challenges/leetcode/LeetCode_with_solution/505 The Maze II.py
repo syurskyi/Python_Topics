@@ -41,7 +41,7 @@ c_ Solution:
                     heapq.heappush(q, (D[I][J], I, J
 
         i, j destination
-        r.. D[i][j] __ D[i][j] != f__("inf") ____ -1
+        r.. D[i][j] __ D[i][j] !_ f__("inf") ____ -1
 
 
 __ _______ __ _______

@@ -91,7 +91,7 @@ c_ Solution:
                 ans ans.left
             r.. ans
 
-        w.... root a.. target.val != root.val:
+        w.... root a.. target.val !_ root.val:
             __ target.val < root.val:
                 ans root
                 root root.left

@@ -7,7 +7,7 @@ c_ Solution:
         slow square_sum(n)
         fast square_sum(slow)
 
-        w.... slow != fast:
+        w.... slow !_ fast:
             slow square_sum(slow)
             fast square_sum(
                 square_sum(fast)
@@ -18,7 +18,7 @@ c_ Solution:
     ___ square_sum  a
         res b 0
 
-        w.... a != 0:
+        w.... a !_ 0:
             b a % 10
             res += b * b
             a //= 10

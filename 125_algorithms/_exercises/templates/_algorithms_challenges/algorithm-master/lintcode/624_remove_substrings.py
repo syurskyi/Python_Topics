@@ -22,7 +22,7 @@ c_ Solution:
         ___ s __ queue:
             ___ d __ D:
                 found s.find(d)
-                w.... found != -1:
+                w.... found !_ -1:
                     _s s[:found] + s[found + l..(d]
                     found s.find(d, found + 1)
 

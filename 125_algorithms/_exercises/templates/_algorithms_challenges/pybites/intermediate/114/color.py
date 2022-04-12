@@ -28,7 +28,7 @@ c_ Color:
     $
     ___ hex2rgb(hex_value
         """Class method that converts a hex value into an rgb one"""
-        __ t..(hex_value) != s.. o. l..(hex_value) != 7:
+        __ t..(hex_value) !_ s.. o. l..(hex_value) !_ 7:
             r.. V...("Hex value must be length 6 string starting with #")
         
 
@@ -64,7 +64,7 @@ c_ Color:
     $
     ___ rgb2hex(rgb_value
         """Class method that converts an rgb value into a hex one"""
-        __ t..(rgb_value) n.. __ [l..,t..] o. l..(rgb_value) != 3:
+        __ t..(rgb_value) n.. __ [l..,t..] o. l..(rgb_value) !_ 3:
             r.. V...("rgb value must be list or tuple of length 3")
         
 

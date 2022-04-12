@@ -39,7 +39,7 @@ c_ Solution:
             a, b b, a
 
         ___ i __ x..(l..(a:
-            __ i..(a[i]) != i..(b[i]
+            __ i..(a[i]) !_ i..(b[i]
                 r.. order*(i..(a[i])-i..(b[i]
 
         __ l..(a) __ l..(b

@@ -30,7 +30,7 @@ c_ Solution(o..
             ____ sign __ '*':
                 preVal *= curVal
             ____ sign __ '/':
-                __ preVal//curVal < 0 a.. preVal%curVal != 0:
+                __ preVal//curVal < 0 a.. preVal%curVal !_ 0:
                     preVal preVal//curVal+1
                 ____
                     preVal preVal//curVal

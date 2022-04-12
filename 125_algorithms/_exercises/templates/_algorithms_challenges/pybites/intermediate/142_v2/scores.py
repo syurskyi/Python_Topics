@@ -50,7 +50,7 @@ ___ get_winner(players
         __ score_list __ N..
             score_list  = l..(player.scores)
         ____
-            __ l..(player.scores) != score_list:
+            __ l..(player.scores) !_ score_list:
                 r.. V...("All lengths don't match!")
         score calculate_score(player.scores)
         __ score > max_score:

@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ c __ licensePlate:
-            __ n.. c.i.. a.. c != ' ':
+            __ n.. c.i.. a.. c !_ ' ':
                 hashmap[c.l..] hashmap.g.. c.l.., 0)+1
         res ''
         l f__('inf')

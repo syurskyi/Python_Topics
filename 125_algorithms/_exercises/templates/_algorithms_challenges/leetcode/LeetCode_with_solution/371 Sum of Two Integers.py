@@ -29,7 +29,7 @@ c_ Solution(o..
         carry &= MSK
         out &= MSK
 
-        __ carry != 0:
+        __ carry !_ 0:
             r.. getSum(out, carry)
         ____
             # handle overflow

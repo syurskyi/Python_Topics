@@ -22,7 +22,7 @@ c_ Solution(o..
                 ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1),\
                     (i+1, j+1), (i-1, j-1), (i+1, j-1), (i-1, j+1
                     __ 0 <_ x < m a.. 0 <_ y < n:
-                        __ matrix[x][y] != 0:
+                        __ matrix[x][y] !_ 0:
                             count += f__(matrix[x][y])
                         num += 1
                 tmp  i..(m__.f..(count/num

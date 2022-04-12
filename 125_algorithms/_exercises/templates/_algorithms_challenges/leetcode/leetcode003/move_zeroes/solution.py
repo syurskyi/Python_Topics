@@ -19,7 +19,7 @@ c_ Solution(o..
         """
         j 0
         ___ i, c __ e..(nums
-            __ c != 0:
+            __ c !_ 0:
                 nums[i], nums[j] nums[j], nums[i]
                 j += 1
 

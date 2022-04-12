@@ -12,7 +12,7 @@ c_ Solution(o..
             res.a..(curr)
             __ curr*10 <_ n:
                 curr *= 10
-            ____ curr%10 != 9 a.. curr+1 <_ n:
+            ____ curr%10 !_ 9 a.. curr+1 <_ n:
                 curr += 1
             ____
                 w.... (curr//10)%10 __ 9:

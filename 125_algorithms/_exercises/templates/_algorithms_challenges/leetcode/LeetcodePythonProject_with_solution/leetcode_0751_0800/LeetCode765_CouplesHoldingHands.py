@@ -18,7 +18,7 @@ c_ Solution(o..
             idx += 2
         idx 0
         w.... idx < l..(row
-            __ hashmap[idx] != idx+1:
+            __ hashmap[idx] !_ idx+1:
                 nextVal hashmap[idx+1]
                 currVal hashmap[idx]
                 hashmap[currVal] nextVal

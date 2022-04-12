@@ -59,7 +59,7 @@ c_ Solution:
                 i += 1
             ____
                 j i
-                w.... j < n a.. S[j] != "-":
+                w.... j < n a.. S[j] !_ "-":
                     j += 1
 
                 val i..(S[i:j])
@@ -71,7 +71,7 @@ c_ Solution:
                     stk [(depth, root)]
                 ____
                     ... stk
-                    w.... stk[-1][0] != depth - 1:
+                    w.... stk[-1][0] !_ depth - 1:
                         stk.p.. )
 
                     _, pi stk[-1]
@@ -105,7 +105,7 @@ c_ Solution:
                 i += 1
             ____
                 j i
-                w.... j < n a.. S[j] != "-":
+                w.... j < n a.. S[j] !_ "-":
                     j += 1
 
                 val i..(S[i:j])
@@ -123,7 +123,7 @@ c_ Solution:
                 stk [root]
             ____
                 ... stk
-                w.... depths[stk[-1].val] != v - 1:
+                w.... depths[stk[-1].val] !_ v - 1:
                     stk.p.. )
 
                 __ n.. stk[-1].left:

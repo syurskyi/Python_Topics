@@ -12,7 +12,7 @@ c_ Solution(o..
         ___ num __ nums:
           __ num & (1 << i
             count[i] += 1
-        __ count[i] % 3 != 0:
+        __ count[i] % 3 !_ 0:
           ret |= 1 << i
       __ ret > 0x7fffffff:
         ret -_ 0x100000000

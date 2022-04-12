@@ -2,7 +2,7 @@ ___ romanize(decimal_number
     """Takes a decimal number int and converts its Roman Numeral str"""
 
 
-    __ t..(decimal_number) != i.. o. n.. 0 < decimal_number < 4000:
+    __ t..(decimal_number) !_ i.. o. n.. 0 < decimal_number < 4000:
         r.. V...("Invalid number")
 
 

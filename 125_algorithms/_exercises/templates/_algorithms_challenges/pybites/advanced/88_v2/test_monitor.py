@@ -1,6 +1,6 @@
 ____ c.. _______ C..
 ____ d__ _______ date
-____ unittest.mock _______ patch, MagicMock
+____ ?.m.. _______ p.., MagicMock
 
 _______ p__
 
@@ -14,7 +14,7 @@ ___ clean_cache
     monitor.violations C..()
 
 
-@patch('monitor.time', MagicMock(side_effect=[0, 2]
+$p.. ('monitor.time', MagicMock(s.._ 0, 2]
 ___ test_one_operation_within_time(clean_cache, capfd
     """1 operation took 2 seconds = ok"""
     w__ timeit
@@ -23,7 +23,7 @@ ___ test_one_operation_within_time(clean_cache, capfd
     ... n.. output
 
 
-@patch('monitor.time', MagicMock(side_effect=[0, 2, 0, 3]
+$p.. ('monitor.time', MagicMock(s.._ 0, 2, 0, 3]
 ___ test_two_operations_one_too_long(clean_cache, capfd
     """2 operations, 1 took >= 3 seconds = still ok"""
     w__ timeit
@@ -35,7 +35,7 @@ ___ test_two_operations_one_too_long(clean_cache, capfd
     ... n.. output
 
 
-@patch('monitor.time', MagicMock(side_effect=[0, 2, 0, 3, 0, 4]
+$p.. ('monitor.time', MagicMock(s.._ 0, 2, 0, 3, 0, 4]
 ___ test_three_operations_two_too_long(clean_cache, capfd
     """3 operations, 2 took >= 3 seconds = still ok"""
     # Note that each timeit call takes the next 2 elements of side_effect
@@ -50,7 +50,7 @@ ___ test_three_operations_two_too_long(clean_cache, capfd
     ... n.. output
 
 
-@patch('monitor.time', MagicMock(side_effect=[0, 2, 0, 3, 0, 4, 0, 5]
+$p.. ('monitor.time', MagicMock(s.._ 0, 2, 0, 3, 0, 4, 0, 5]
 ___ test_four_operations_three_took_too_long(clean_cache, capfd
     """4 operations, 3 tooks >= 3 seconds = NOT ok, prints ALERT"""
     w__ timeit
@@ -65,7 +65,7 @@ ___ test_four_operations_three_took_too_long(clean_cache, capfd
     ... output.s.. __ ALERT_MSG
 
 
-@patch('monitor.time', MagicMock(side_effect=[0, 3, 0, 3, 0, 4, 0, 5]
+$p.. ('monitor.time', MagicMock(s.._ 0, 3, 0, 3, 0, 4, 0, 5]
 ___ test_four_operations_took_too_long_but_on_two_days(clean_cache, capfd
     """4 tooks >= 3 seconds, but spread over 2 days = ok / no alert"""
     # 2 violations yesterday

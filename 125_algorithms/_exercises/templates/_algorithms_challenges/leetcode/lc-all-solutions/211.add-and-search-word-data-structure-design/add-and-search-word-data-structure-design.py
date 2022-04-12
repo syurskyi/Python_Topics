@@ -43,7 +43,7 @@ c_ WordDictionary:
           r.. T..
         r.. F..
 
-      __ word[index] != ".":
+      __ word[index] !_ ".":
         __ dfsHelper(root.neighbours.g.. word[index], N..), word, index + 1
           r.. T..
       ____

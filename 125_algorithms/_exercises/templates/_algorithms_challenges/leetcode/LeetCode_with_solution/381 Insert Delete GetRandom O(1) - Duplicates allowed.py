@@ -67,7 +67,7 @@ c_ RandomizedCollection(o..
             r.. F..
 
         idx, last pos[val].p.. ), l..(lst) - 1
-        __ idx != last:
+        __ idx !_ last:
             lst[idx], lst[last] lst[last], lst[idx]
             pos[lst[idx]].remove(last)
             pos[lst[idx]].add(idx)

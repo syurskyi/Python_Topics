@@ -36,7 +36,7 @@ c_ Solution:
         left, right 0, l..(s) - 1
 
         w.... left < right:
-            __ s[left] != s[right]:
+            __ s[left] !_ s[right]:
                 r.. F..
 
             left += 1

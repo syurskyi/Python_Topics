@@ -83,7 +83,7 @@ ___ main
         __ search_term __ '':
             print('Please provide a search term')
 
-        __ search_term != '' a.. search_term != 'q':
+        __ search_term !_ '' a.. search_term !_ 'q':
             output_list    # list
             ___ entry __ entries:
                 __ filter_entries_by_tag(search_term, entry

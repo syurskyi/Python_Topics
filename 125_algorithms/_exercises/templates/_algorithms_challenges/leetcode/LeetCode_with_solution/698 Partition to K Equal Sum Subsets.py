@@ -25,7 +25,7 @@ c_ Solution:
         resurive search
         """
         s s..(nums)
-        __ s % k != 0:
+        __ s % k !_ 0:
             r.. F..
 
         target s // k
@@ -68,7 +68,7 @@ c_ Solution_TLE:
         resurive search
         """
         s s..(nums)
-        __ s % k != 0:
+        __ s % k !_ 0:
             r.. F..
 
         target s // k

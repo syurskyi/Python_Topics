@@ -25,7 +25,7 @@ c_ ConnectingGraph:
     ___ connect  a, b
         _a find(a)
         _b find(b)
-        __ _a != _b:
+        __ _a !_ _b:
             N[_a] _b
 
     """

@@ -13,7 +13,7 @@ c_ Solution(o..
       __ j __ 0:
         char strs[j][i]
       ____
-        __ strs[j][i] != char:
+        __ strs[j][i] !_ char:
           _____
 
       __ j __ l..(strs) - 1:

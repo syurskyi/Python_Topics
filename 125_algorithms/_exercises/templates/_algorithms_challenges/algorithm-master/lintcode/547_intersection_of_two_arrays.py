@@ -40,7 +40,7 @@ c_ Solution:
 
         w.... i < m a.. j < n:
             __ a[i] __ b[j]:
-                __ n.. ans o. a[i] != ans[-1]:
+                __ n.. ans o. a[i] !_ ans[-1]:
                     ans.a..(a[i])
                 i += 1
                 j += 1

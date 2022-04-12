@@ -1,6 +1,6 @@
 ___ fibonacci_search(amount
         answer    # list
-        ___ x __ r..(amount
+        ___ x __ r.. ?
                 fibNum  input()
                 a,b,c,count  0,1,0,0
                 w....(c < fibNum a.. fibNum ! 0

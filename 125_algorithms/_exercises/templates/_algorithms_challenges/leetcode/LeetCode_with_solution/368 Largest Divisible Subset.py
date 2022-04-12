@@ -54,7 +54,7 @@ c_ Solution(o..
         ret d..()
         cur max_i
         ret.appendleft(A[cur])
-        w.... pi[cur] != cur:
+        w.... pi[cur] !_ cur:
             cur pi[cur]
             ret.appendleft(A[cur])
 

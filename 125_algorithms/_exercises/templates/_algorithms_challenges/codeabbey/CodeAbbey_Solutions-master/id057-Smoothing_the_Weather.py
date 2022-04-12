@@ -1,6 +1,6 @@
 ___ smooth(amount, numbers
     answer    # list
-    ___ x __ r..(amount
+    ___ x __ r.. ?
         __ x __ 0 o. x __ amount-1:
             answer.a..(s..(numbers[x]
         ____

@@ -32,14 +32,14 @@ c_ Solution:
 
                 __ (is_palindrome(s) a..
                     _t __ w2i a..
-                    w2i[_t] != i
+                    w2i[_t] !_ i
 
                     ans.a..([w2i[_t], i])
 
                 __ (is_palindrome(t) a..
-                    l..(t) != 0 a..  # since len(word) + 1, may empty here
+                    l..(t) !_ 0 a..  # since len(word) + 1, may empty here
                     _s __ w2i a..
-                    w2i[_s] != i
+                    w2i[_s] !_ i
 
                     ans.a..([i, w2i[_s]])
 
@@ -50,7 +50,7 @@ c_ Solution:
         left, right 0, n - 1
 
         w.... left < right:
-            __ word[left] != word[right]:
+            __ word[left] !_ word[right]:
                 r.. F..
 
             left += 1
@@ -92,11 +92,11 @@ c_ Solution:
         left, right 0, n - 1
 
         w.... left < right:
-            __ left >_ a a.. t[left - a] != t[right - a]:
+            __ left >_ a a.. t[left - a] !_ t[right - a]:
                 r.. F..
-            ____ right < a a.. s[left] != s[right]:
+            ____ right < a a.. s[left] !_ s[right]:
                 r.. F..
-            ____ left < a a.. right >_ a a.. s[left] != t[right - a]:
+            ____ left < a a.. right >_ a a.. s[left] !_ t[right - a]:
                 r.. F..
 
             left += 1
@@ -136,7 +136,7 @@ c_ Solution:
         left, right 0, n - 1
 
         w.... left < right:
-            __ s[left] != s[right]:
+            __ s[left] !_ s[right]:
                 r.. F..
 
             left += 1

@@ -22,7 +22,7 @@ c_ Solution(o..
             r.. T..
         ____ n.. p o. n.. q:
             r.. F..
-        ____ p.val != q.val:
+        ____ p.val !_ q.val:
             r.. F..
         ____
             r.. isSameTree(p.left, q.left) a..\

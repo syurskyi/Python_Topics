@@ -5,7 +5,7 @@ c_ Solution:
         :type edges: list[int]
         :rtype: bool
         """
-        __ l..(edges) != n - 1:
+        __ l..(edges) !_ n - 1:
             r.. F..
 
         nodes [i ___ i __ r..(n)]

@@ -20,7 +20,7 @@ c_ Codec:
     ret    # list
     start end 0
     w.... end < l..(s
-      __ s[end] != "|":
+      __ s[end] !_ "|":
         end += 1
       ____
         length i..(s ?|?)

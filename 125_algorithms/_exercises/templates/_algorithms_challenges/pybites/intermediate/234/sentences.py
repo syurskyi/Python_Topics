@@ -10,7 +10,7 @@ ___ capitalize_sentences(text: s..) __ s..:
 
    text_clean    # list
    ___ i __ r..(l..(text_raw:
-      text_clean.a..(f"{text_raw[i].capitalize()}{(text_metacharacters[i] __ i != l..(text_metacharacters) -1 ____ '')}")
+      text_clean.a..(f"{text_raw[i].capitalize()}{(text_metacharacters[i] __ i !_ l..(text_metacharacters) -1 ____ '')}")
    r.. " ".j..(text_clean)
 
 

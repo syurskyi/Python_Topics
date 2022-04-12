@@ -30,7 +30,7 @@ ___ get_movies_by_director
 
         ___ row __ csv_content:
 
-            __ row["title_year"] != "":
+            __ row["title_year"] !_ "":
                 title_year i..(row["title_year"])
             ____
                 _____

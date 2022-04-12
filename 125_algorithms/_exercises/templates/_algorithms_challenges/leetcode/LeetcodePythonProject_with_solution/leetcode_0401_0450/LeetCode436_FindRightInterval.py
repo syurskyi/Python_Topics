@@ -17,7 +17,7 @@ c_ Solution(o..
         result    # list
         ___ i, interval __ e..(intervals
             ind binary_search(interval.end, sortedList)
-            __ ind != i:
+            __ ind !_ i:
                 result.a..(ind)
             ____
                 result.a..(-1)

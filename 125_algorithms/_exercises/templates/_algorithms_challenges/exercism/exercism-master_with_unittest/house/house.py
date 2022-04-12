@@ -30,7 +30,7 @@ c_ House:
 
     @classmethod
     ___ first(cls, verse_num
-        __ verse_num != 0:
+        __ verse_num !_ 0:
             r.. cls.first_partial(verse_num)
         r.. cls.first_partial(verse_num) + " " + cls.verb(verse_num) + "."
 
@@ -58,7 +58,7 @@ c_ House:
 
     @classmethod
     ___ last(cls, verse_num
-        __ verse_num != 0:
+        __ verse_num !_ 0:
             r.. cls.LAST_LINE
 
 

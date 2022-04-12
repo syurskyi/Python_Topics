@@ -10,14 +10,14 @@ c_ Solution(o..
         ___ e __ edges:
             root0 findRoot(roots, e[0])
             root1 findRoot(roots, e[1])
-            __ root0 != root1:
+            __ root0 !_ root1:
                 roots[root0] root1
             ____
                 r.. F..
         r.. l..(edges) __ n-1
     
     ___ findRoot  roots, ind
-        w.... roots[ind] != -1:
+        w.... roots[ind] !_ -1:
             ind roots[ind]
         r.. ind
     
@@ -68,7 +68,7 @@ c_ Solution(o..
         __ visited[curr]: r.. F..
         visited[curr] T..
         ___ i __ hashmap[curr]:
-            __ i != parent a.. n.. helper(i, curr, hashmap, visited
+            __ i !_ parent a.. n.. helper(i, curr, hashmap, visited
                 r.. F..
         r.. T..
     

@@ -30,14 +30,14 @@ c_ Solution(o..
             __ c n.. __ d:
                 d[c] t[i]
             ____
-                __ d[c] != t[i]:
+                __ d[c] !_ t[i]:
                     r.. F..
         d    # dict
         ___ i, c __ e..(t
             __ c n.. __ d:
                 d[c] s[i]
             ____
-                __ d[c] != s[i]:
+                __ d[c] !_ s[i]:
                     r.. F..
         r.. T..
 

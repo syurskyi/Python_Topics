@@ -34,7 +34,7 @@ c_ Solution:
             _y y + dy
             __ n.. (0 <_ _x < l..(G) a.. 0 <_ _y < l..(G[0]:
                 _____
-            __ visited[_x][_y] o. G[_x][_y] != s[i]:
+            __ visited[_x][_y] o. G[_x][_y] !_ s[i]:
                 _____
 
             visited[_x][_y] T..

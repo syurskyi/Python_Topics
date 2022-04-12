@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         j 0
         ___ num __ nums:
-            __ num != 0:
+            __ num !_ 0:
                 nums[j] num
                 j+=1
         ___ i __ r..(j, l..(nums:

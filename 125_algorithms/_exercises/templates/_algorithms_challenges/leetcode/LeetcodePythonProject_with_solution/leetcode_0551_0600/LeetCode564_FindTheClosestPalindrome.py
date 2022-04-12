@@ -19,7 +19,7 @@ c_ Solution(o..
             r.. a..(i..(n)-i..(x
         res N..
         ___ cand __ candidates:
-            __ cand != n a.. n.. cand.s.. '00'
+            __ cand !_ n a.. n.. cand.s.. '00'
                 __ res __ N.. o. delta(cand) < delta(res) o.\
                     delta(cand) __ delta(res) a.. i..(cand) < i..(res
                     res cand

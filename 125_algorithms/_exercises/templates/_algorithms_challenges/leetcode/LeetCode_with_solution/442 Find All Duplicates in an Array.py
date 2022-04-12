@@ -31,7 +31,7 @@ c_ Solution:
         """
         ___ i __ r..(l..(A:
             t idx(A[i])
-            w.... i != t:
+            w.... i !_ t:
                 __ A[i] __ A[t]:
                     _____
                 ____
@@ -40,7 +40,7 @@ c_ Solution:
 
         ret    # list
         ___ i __ r..(l..(A:
-            __ idx(A[i]) != i:
+            __ idx(A[i]) !_ i:
                 ret.a..(A[i])
 
         r.. ret

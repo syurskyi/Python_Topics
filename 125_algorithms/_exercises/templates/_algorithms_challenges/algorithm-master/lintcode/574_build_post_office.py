@@ -39,7 +39,7 @@ c_ Solution:
 
         ___ x __ r..(m
             ___ y __ r..(n
-                __ grid[x][y] != HOUSE:
+                __ grid[x][y] !_ HOUSE:
                     _____
                 xs.a..(x)
                 ys.a..(y)
@@ -60,7 +60,7 @@ c_ Solution:
 
         ___ x __ r..(m
             ___ y __ r..(n
-                __ grid[x][y] != EMPTY:
+                __ grid[x][y] !_ EMPTY:
                     _____
 
                 step get_step(psx, xs, x) + get_step(psy, ys, y)
@@ -193,7 +193,7 @@ c_ Solution:
 
         ___ x __ r..(m
             ___ y __ r..(n
-                __ grid[x][y] != EMPTY:
+                __ grid[x][y] !_ EMPTY:
                     _____
                 __ steps[x][y] < ans:
                     ans steps[x][y]

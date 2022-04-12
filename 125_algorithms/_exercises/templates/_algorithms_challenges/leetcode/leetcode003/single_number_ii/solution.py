@@ -8,7 +8,7 @@ c_ Solution:
         res 0
         # First check whether the single number is negative
         ___ num __ A:
-            bit 1 __ num & (1 << (num_of_bits - 1 != 0 ____ 0
+            bit 1 __ num & (1 << (num_of_bits - 1 !_ 0 ____ 0
             res_bit (res_bit + bit) % 3
         positive T.. __ res_bit __ 0 ____ F..
 
@@ -17,7 +17,7 @@ c_ Solution:
             # For each bit of each number, calculate each bit
             # of the single number
             ___ num __ A:
-                bit 1 __ num & (1 << i) != 0 ____ 0
+                bit 1 __ num & (1 << i) !_ 0 ____ 0
                 res_bit (res_bit + bit) % 3
             # If single number is positive
             __ positive a.. res_bit __ 1:

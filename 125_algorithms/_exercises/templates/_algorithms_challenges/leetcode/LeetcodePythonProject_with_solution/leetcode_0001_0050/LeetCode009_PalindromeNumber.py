@@ -16,7 +16,7 @@ c_ Solution(o..
         w.... x > 0:
             first x//div
             last  = x%10
-            __ first != last:
+            __ first !_ last:
                 r.. F..
             x -_ first*div
             x (x-last)//10

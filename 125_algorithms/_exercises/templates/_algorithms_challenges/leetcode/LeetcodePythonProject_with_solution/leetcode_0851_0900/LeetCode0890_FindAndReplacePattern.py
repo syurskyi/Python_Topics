@@ -17,7 +17,7 @@ c_ Solution(o..
         r.. res
     
     ___ isSimliar  w1, w2
-        __ l..(w1) != l..(w2 r.. F..
+        __ l..(w1) !_ l..(w2 r.. F..
         hashmap1, hashmap2    # dict, {}
         ___ c1, c2 __ z..(w1, w2
             __ c1 n.. __ hashmap1:
@@ -28,7 +28,7 @@ c_ Solution(o..
             ____
                 __ c2 n.. __ hashmap2:
                     r.. F..
-                __ hashmap2[c2] != c1 o. hashmap1[c1] != c2:
+                __ hashmap2[c2] !_ c1 o. hashmap1[c1] !_ c2:
                     r.. F..
         r.. T..
     

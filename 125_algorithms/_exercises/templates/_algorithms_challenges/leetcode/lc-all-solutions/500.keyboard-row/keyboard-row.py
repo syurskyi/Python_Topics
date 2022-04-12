@@ -20,7 +20,7 @@ c_ Solution(o..
       same T..
       pre d[word[0].l..]
       ___ c __ word:
-        __ pre != d[c.l..]:
+        __ pre !_ d[c.l..]:
           same F..
           _____
         pre d[c.l..]

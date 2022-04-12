@@ -49,10 +49,10 @@ c_ MagicDictionary(o..
             r.. F..
         c word[ind]
         ___ c0 __ node.children:
-            __ c0 != c a.. diffFlag:
+            __ c0 !_ c a.. diffFlag:
                 _____
             __ helper(node.children.g.. c, N..), word, ind+1, diffFlag) o.\
-                (c0 != c a.. helper(node.children[c0], word, ind+1, T..
+                (c0 !_ c a.. helper(node.children[c0], word, ind+1, T..
                 r.. T..
         r.. F..
 

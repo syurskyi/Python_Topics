@@ -47,7 +47,7 @@ c_ Solution(o..
         r.. result
     
     ___ isSameGroup  s1, s2
-        __ l..(s1) != l..(s2
+        __ l..(s1) !_ l..(s2
             r.. F..
         length l..(s1)
         __ length __ 1:
@@ -61,7 +61,7 @@ c_ Solution(o..
                 d += 26
             __ d > 26:
                 d -_ 26
-            __ d != diff:
+            __ d !_ diff:
                 r.. F..
         r.. T..
     

@@ -66,12 +66,12 @@ c_ Solution:
         __ n.. node:
             r..
 
-        __ node.val != voyage[i]:
+        __ node.val !_ voyage[i]:
             ret [-1]
             r..
 
         i += 1
-        __ node.left a.. node.right a.. node.left.val != voyage[i]:
+        __ node.left a.. node.right a.. node.left.val !_ voyage[i]:
             # flip left and right
             ret.a..(node.val)
             dfs(node.right, voyage)

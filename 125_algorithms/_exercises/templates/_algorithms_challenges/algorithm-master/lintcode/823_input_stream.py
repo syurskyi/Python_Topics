@@ -28,7 +28,7 @@ c_ Solution:
                 bcnt += 1 __ b[j] __ BACK ____ -1
                 j -_ 1
 
-            __ a[i] != b[j]:
+            __ a[i] !_ b[j]:
                 r.. RES[0]
 
             i -_ 1
@@ -67,7 +67,7 @@ c_ Solution:
         stack    # list
 
         ___ c __ a:
-            __ c != RM:
+            __ c !_ RM:
                 stack.a..(c)
             ____ stack:
                 # c == RM
@@ -76,7 +76,7 @@ c_ Solution:
         _stack    # list
 
         ___ c __ b:
-            __ c != RM:
+            __ c !_ RM:
                 _stack.a..(c)
             ____ _stack:
                 # c == RM

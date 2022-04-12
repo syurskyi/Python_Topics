@@ -9,6 +9,6 @@ c_ Solution(o..
       i 0
       w.... i < l..(t) a.. s[i] __ t[i]:
         i += 1
-      r.. s != t a.. (s[i + 1:] __ t[i:] __ l..(s) != l..(t) ____ s[i + 1:] __ t[i + 1:])
+      r.. s !_ t a.. (s[i + 1:] __ t[i:] __ l..(s) !_ l..(t) ____ s[i + 1:] __ t[i + 1:])
     ____
       r.. isOneEditDistance(t, s)

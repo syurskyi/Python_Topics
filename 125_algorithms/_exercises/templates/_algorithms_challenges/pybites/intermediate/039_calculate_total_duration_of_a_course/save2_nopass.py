@@ -33,7 +33,7 @@ ___ get_all_timestamps
     l    # list
     ___ t __ file:
         t __.s..(r, t)
-        __ t != N..
+        __ t !_ N..
             t t.group()
             l.a..(__.s.. _ [\(\)]','', t
 

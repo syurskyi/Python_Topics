@@ -30,7 +30,7 @@ ___ prep_dfs(df
     df 'Day'  = df.Date.dt.day
 
     # separate data by date--2015 by itself
-    df_ref df[df.Date.dt.year != 2015]
+    df_ref df[df.Date.dt.year !_ 2015]
     df_15 df[df.Date.dt.year __ 2015]
 
     r.. df_ref, df_15

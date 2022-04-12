@@ -66,7 +66,7 @@ c_ Solution(o..
         pre head
         w.... pre a.. pre.next:
             cur pre.next
-            __ cur.val % 2 != parity:
+            __ cur.val % 2 !_ parity:
                 pre pre.next
             ____
                 start ptr.next

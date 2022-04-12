@@ -27,8 +27,8 @@ c_ Solution(o..
                     helper(nums1 + [a*b], hashmap) o.\
                     helper(nums1 + [b-a], hashmap) o.\
                     helper(nums1 + [a-b], hashmap) o.\
-                    (a != 0 a.. helper(nums1 + [f__(b)/a], hashmap o.\
-                    (b != 0 a.. helper(nums1 + [f__(a)/b], hashmap:
+                    (a !_ 0 a.. helper(nums1 + [f__(b)/a], hashmap o.\
+                    (b !_ 0 a.. helper(nums1 + [f__(a)/b], hashmap:
                     r.. T..
         hashmap[''.j..(s..(nums)+',')] F..
         r.. F..

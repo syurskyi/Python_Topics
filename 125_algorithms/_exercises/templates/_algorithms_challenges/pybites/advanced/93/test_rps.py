@@ -1,4 +1,4 @@
-____ unittest.mock _______ patch
+____ ?.m.. _______ p..
 
 _______ p__
 
@@ -17,7 +17,7 @@ ___ my_game
     r.. gen
 
 
-@patch('rps._get_computer_move')
+$p.. ('rps._get_computer_move')
 ___ test_win(computerMoveMock, my_game, capfd
     computerMoveMock.return_value 'rock'
     my_game.send('paper')
@@ -25,7 +25,7 @@ ___ test_win(computerMoveMock, my_game, capfd
     ... output __ win.f..('paper', 'rock')
 
 
-@patch('rps._get_computer_move')
+$p.. ('rps._get_computer_move')
 ___ test_lose(computerMoveMock, my_game, capfd
     computerMoveMock.return_value 'rock'
     my_game.send('scissors')
@@ -33,7 +33,7 @@ ___ test_lose(computerMoveMock, my_game, capfd
     ... output __ lose.f..('rock', 'scissors')
 
 
-@patch('rps._get_computer_move')
+$p.. ('rps._get_computer_move')
 ___ test_tie(computerMoveMock, my_game, capfd
     computerMoveMock.return_value 'paper'
     my_game.send('paper')
@@ -41,7 +41,7 @@ ___ test_tie(computerMoveMock, my_game, capfd
     ... output __ tie
 
 
-@patch('rps._get_computer_move')
+$p.. ('rps._get_computer_move')
 ___ test_invalid_choice(computerMoveMock, my_game, capfd
     my_game.send('spam')
     output ?.r .. 0].s..

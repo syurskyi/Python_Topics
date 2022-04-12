@@ -20,7 +20,7 @@ c_ Solution(o..
                     _____
                 ____ heights[i] < heights[idx]:
                     idx i
-            __ idx != K:
+            __ idx !_ K:
                 heights[idx] += 1
                 V -_ 1
                 _____

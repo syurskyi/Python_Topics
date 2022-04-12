@@ -12,7 +12,7 @@ c_ Solution(o..
         singleNum F..
         result 0
         ___ count __ hashmap.v..
-            __ count%2 != 0:
+            __ count%2 !_ 0:
                 __ singleNum:
                     result += count-1
                 ____

@@ -23,7 +23,7 @@ c_ Solution(o..
         ret 1
         Fi 1
         ___ i __ x..(n
-            Fi *= (10-i) __ i != 0 ____ 9
+            Fi *= (10-i) __ i !_ 0 ____ 9
             ret += Fi
 
         r.. ret

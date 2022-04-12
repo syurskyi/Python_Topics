@@ -57,7 +57,7 @@ c_ Solution:
                 __ start + K <_ 9:
                     ___ e __ dfs(start + K, N - 1, K
                         ret.a..([start] + e)
-                __ start - K >_ 0 a.. K != 0:  # special case
+                __ start - K >_ 0 a.. K !_ 0:  # special case
                     ___ e __ dfs(start - K, N - 1, K
                         ret.a..([start] + e)
 

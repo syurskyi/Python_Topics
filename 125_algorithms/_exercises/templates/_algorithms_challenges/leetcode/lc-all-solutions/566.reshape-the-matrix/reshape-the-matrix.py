@@ -6,7 +6,7 @@ c_ Solution(o..
     :type c: int
     :rtype: List[List[int]]
     """
-    __ r * c != l..(nums) * l..(nums[0]
+    __ r * c !_ l..(nums) * l..(nums[0]
       r.. nums
     m l..(nums)
     n l..(nums[0])

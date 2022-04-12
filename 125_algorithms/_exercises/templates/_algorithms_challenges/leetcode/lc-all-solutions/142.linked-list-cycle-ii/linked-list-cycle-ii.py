@@ -15,7 +15,7 @@ c_ Solution(o..
       slow slow.next
       fast fast.next.next
       __ slow __ fast:
-        w.... finder != slow:
+        w.... finder !_ slow:
           finder finder.next
           slow slow.next
         r.. finder

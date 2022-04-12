@@ -20,7 +20,7 @@ c_ Solution:
         pre()
         nxt()
 
-        w.... left != right:
+        w.... left !_ right:
             _sum left.val + right.val
 
             __ _sum __ n:
@@ -35,8 +35,8 @@ c_ Solution:
         w.... tail:
             cur tail.right
 
-            __ cur a.. cur != right:
-                w.... cur.left a.. cur.left != tail:
+            __ cur a.. cur !_ right:
+                w.... cur.left a.. cur.left !_ tail:
                     cur cur.left
 
                 __ cur.left __ tail:
@@ -57,8 +57,8 @@ c_ Solution:
         w.... head:
             cur head.left
 
-            __ cur a.. cur != left:
-                w.... cur.right a.. cur.right != head:
+            __ cur a.. cur !_ left:
+                w.... cur.right a.. cur.right !_ head:
                     cur cur.right
 
                 __ cur.right __ head:

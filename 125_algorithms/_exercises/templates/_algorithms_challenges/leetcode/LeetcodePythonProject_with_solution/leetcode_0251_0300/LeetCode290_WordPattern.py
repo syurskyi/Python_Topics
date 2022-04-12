@@ -13,7 +13,7 @@ c_ Solution(o..
         hashmap    # dict
         hashset s..()
         arr s.s..(' ')
-        __ l..(arr) != l..(pattern
+        __ l..(arr) !_ l..(pattern
             r.. F..
         ___ p, s0 __ z..(pattern, arr
             __ p __ hashmap a.. hashmap[p] __ s0:

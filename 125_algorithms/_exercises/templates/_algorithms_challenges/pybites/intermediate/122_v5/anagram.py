@@ -4,6 +4,6 @@ ___ is_anagram(word1, word2
        About anagrams: https://en.wikipedia.org/wiki/Anagram"""
     w1 word1.l...r..(' ', '')
     w2 word2.l...r..(' ', '')
-    __ l..(w1) != l..(w2
+    __ l..(w1) !_ l..(w2
         r.. F..
     r.. a..(x __ y ___ x, y __ z..(s..(w1.l.., s..(w2.lower())))

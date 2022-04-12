@@ -19,7 +19,7 @@ c_ Solution(o..
           jump i..(c)
           i += jump
         ____
-          __ c != dest[i]:
+          __ c !_ dest[i]:
             r.. F..
           i += 1
       r.. T..

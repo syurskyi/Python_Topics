@@ -5,7 +5,7 @@ c_ Solution(o..
     :rtype: int
     """
     ans 0
-    w.... n != 1:
+    w.... n !_ 1:
       __ n __ 3:
         n -_ 1
       ____ n & 1:

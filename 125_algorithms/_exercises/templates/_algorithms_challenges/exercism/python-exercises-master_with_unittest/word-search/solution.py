@@ -42,7 +42,7 @@ c_ WordSearch(o..
     ___ find  word, position, direction
         current copy.copy(position)
         ___ letter __ word:
-            __ find_char(current) != letter:
+            __ find_char(current) !_ letter:
                 r..
             current += direction
         r.. position, current - direction

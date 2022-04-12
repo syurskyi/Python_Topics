@@ -26,7 +26,7 @@ c_ UnionFind(o..
         pi1 _pi(a)
         pi2 _pi(b)
 
-        __ pi1 != pi2:
+        __ pi1 !_ pi2:
             __ sz[pi1] > sz[pi2]:
                 pi1, pi2 pi2, pi1
 
@@ -39,7 +39,7 @@ c_ UnionFind(o..
         Get root with path compression
         """
         pi pi[item]
-        __ item != pi:
+        __ item !_ pi:
             pi[item] _pi(pi)
 
         r.. pi[item]

@@ -26,7 +26,7 @@ c_ Solution(o..
         cur first
         curInd firstInd
         flag T..
-        w.... curInd != firstInd o. flag:
+        w.... curInd !_ firstInd o. flag:
             flag F..
             nextPoint points[0]
             nextInd 0

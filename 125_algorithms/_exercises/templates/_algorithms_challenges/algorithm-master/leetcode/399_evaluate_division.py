@@ -53,7 +53,7 @@ c_ Solution:
 
             res dfs(c, b, val * evals[a, c], nexts, evals, visited)
 
-            __ res != -1:
+            __ res !_ -1:
                 _____
 
         visited.discard(a)

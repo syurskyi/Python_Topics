@@ -30,7 +30,7 @@ c_ Solution(o..
     p1 head
     p2 newHead
     w.... p1 a.. p2:
-      __ p1.val != p2.val:
+      __ p1.val !_ p2.val:
         r.. F..
       p1 p1.next
       p2 p2.next

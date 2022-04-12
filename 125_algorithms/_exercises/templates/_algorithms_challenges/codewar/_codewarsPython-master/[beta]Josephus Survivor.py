@@ -1,7 +1,7 @@
 ___ josephus_survivor(n,k
     circle [i ___ i __ r..(1,n+1)]
     index -1
-    w.... circle.c.. 0) != n-1:
+    w.... circle.c.. 0) !_ n-1:
         steps k
         w.... steps > 0:
             __ index + 1 > n-1:
@@ -15,7 +15,7 @@ ___ josephus_survivor(n,k
         circle[index] 0
         print(circle,index)
     ___ num __ circle:
-        __ num != 0:
+        __ num !_ 0:
             r.. num
 print(josephus_survivor(14,2
 

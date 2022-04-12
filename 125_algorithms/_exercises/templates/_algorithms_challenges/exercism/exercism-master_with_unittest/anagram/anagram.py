@@ -14,7 +14,7 @@ ___ is_anagram(word, candidate
 
 
 ___ is_not_identical(word, candidate
-    r.. word != candidate
+    r.. word !_ candidate
 
 
 ___ is_identical_when_sorted(word, candidate

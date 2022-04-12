@@ -81,7 +81,7 @@ c_ AllOne(o..
     ____
       node d[key]
       newNode N..
-      __ node.next.val != node.val + 1:
+      __ node.next.val !_ node.val + 1:
         newNode Node(node.val + 1)
         newNode.add(key)
         L...insertAfter(node, newNode)
@@ -112,7 +112,7 @@ c_ AllOne(o..
       del d[key]
     ____
       newNode N..
-      __ node.prev.val != node.val - 1:
+      __ node.prev.val !_ node.val - 1:
         newNode Node(node.val - 1)
         newNode.add(key)
         L...insertAfter(node.prev, newNode)

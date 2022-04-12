@@ -36,7 +36,7 @@ c_ Trie:
         result F..
         __ s__[i] __ '.':
             ___ child __ parent:
-                __ child[0] != '_' a.. _search_in_regex(s__, parent[child], i + 1
+                __ child[0] !_ '_' a.. _search_in_regex(s__, parent[child], i + 1
                     result T..
         ____ s__[i] __ parent:
             __ _search_in_regex(s__, parent[s__[i]], i + 1

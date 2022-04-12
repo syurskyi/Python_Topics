@@ -14,7 +14,7 @@ ___ check_anagram
             ___ line __ f.r..
                 line line.r..('\n', '') # Remove spaces from the file.
                 anagram_data C..(line) # Count letter composition of word.
-                __ word_data __ anagram_data a.. word != line:
+                __ word_data __ anagram_data a.. word !_ line:
                     count += 1 # If letter compisiton matches and ..
                                # the word is not the exact word, count it.
         answer.a..(s..(count # Store answer and reset for next word.

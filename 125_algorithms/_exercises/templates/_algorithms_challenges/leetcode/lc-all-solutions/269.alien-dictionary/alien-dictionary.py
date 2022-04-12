@@ -42,7 +42,7 @@ c_ Solution(o..
       b words[i + 1]
       i 0
       w.... i < l..(a) a.. i < l..(b
-        __ a[i] != b[i]:
+        __ a[i] !_ b[i]:
           nodeA nodeB N..
           __ a[i] n.. __ graph:
             nodeA Node(a[i])

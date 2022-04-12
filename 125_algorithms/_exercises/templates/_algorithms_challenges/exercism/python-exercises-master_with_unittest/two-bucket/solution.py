@@ -34,13 +34,13 @@ ___ measure(bucket_one, bucket_two, goal, start_bucket
     count 1
     w.... goal n.. __ buckets:
         key bucket_str(buckets)
-        __ key != invalidStr a.. key n.. __ visited:
+        __ key !_ invalidStr a.. key n.. __ visited:
             visited.add(key)
             nc count + 1
             ___ i __ r..(2
-                __ buckets[i] != 0:
+                __ buckets[i] !_ 0:
                     toVisit.a..((empty(buckets, i), nc
-                __ buckets[i] != sizes[i]:
+                __ buckets[i] !_ sizes[i]:
                     toVisit.a..((fill(buckets, i), nc
                     toVisit.a..((consolidate(buckets, i), nc
         __ n.. any(toVisit

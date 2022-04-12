@@ -17,7 +17,7 @@ c_ Solution(o..
                 second num
             ____ second > num > third:
                 third num
-        r.. third __ third != f__('-inf') ____ first
+        r.. third __ third !_ f__('-inf') ____ first
     
     ___ test
         testCases [

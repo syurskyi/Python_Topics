@@ -18,7 +18,7 @@ ____ t___ _______ L..
 c_ Solution:
     ___ matrixReshape  nums: L..[L..[i..]], r: i.., c: i..) __ L..[L..[i..]]:
         m, n l..(nums), l..(nums[0])
-        __ m * n != r * c:
+        __ m * n !_ r * c:
             r.. nums
 
         ret    # list

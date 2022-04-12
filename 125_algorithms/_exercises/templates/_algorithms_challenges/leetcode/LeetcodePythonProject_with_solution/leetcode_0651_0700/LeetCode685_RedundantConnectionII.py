@@ -35,7 +35,7 @@ c_ Solution(o..
         r.. can2
     
     ___ getRoot  parent, i
-        w.... i != parent[i]:
+        w.... i !_ parent[i]:
             parent[i] parent[parent[i]]
             i parent[i]
         r.. i

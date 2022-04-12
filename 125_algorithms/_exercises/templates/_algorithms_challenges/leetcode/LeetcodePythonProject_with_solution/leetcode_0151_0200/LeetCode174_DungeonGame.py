@@ -26,7 +26,7 @@ c_ Solution(o..
                 __ j __ n-1:
                     down tbl[i+1][j] - dungeon[i][j]
                     tbl[i][j] m..(1, down)
-                __ i != m-1 a.. j != n-1:
+                __ i !_ m-1 a.. j !_ n-1:
                     right tbl[i][j+1] - dungeon[i][j]
                     down tbl[i+1][j] - dungeon[i][j]
                     tbl[i][j] m..(1, m..(right, down

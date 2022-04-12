@@ -20,7 +20,7 @@ c_ Solution(o..
     ___ isstretchy  s0, s
         m, n l..(s0), l..(s)
         __ m > n: r.. F..
-        __ m __ n a.. s0 != s: r.. F..
+        __ m __ n a.. s0 !_ s: r.. F..
         i, j 0, 0
         flag T..
         w.... i < m a.. j < n:
@@ -30,7 +30,7 @@ c_ Solution(o..
                     i0 += 1
                 w.... j0 < n a.. s[j0] __ s[j]:
                     j0 += 1
-                __ j0-j < 3 a.. s0[i:i0] != s[j:j0]:
+                __ j0-j < 3 a.. s0[i:i0] !_ s[j:j0]:
                     flag F..
                     _____
                 i, j i0, j0

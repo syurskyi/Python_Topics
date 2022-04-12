@@ -27,7 +27,7 @@ c_ SummaryRanges(o..
     left f.. l.... x: x.end < newInterval.start, intervals)
     right f.. l.... x: x.start > newInterval.end, intervals)
     # print left, right, (s, e)
-    __ left + right != intervals:
+    __ left + right !_ intervals:
       s m..(intervals[l..(left)].start, s)
       e m..(intervals[~l..(right)].end, e)
     newIntv Interval(s, e)

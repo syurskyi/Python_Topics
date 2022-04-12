@@ -4,7 +4,7 @@ c_ UnionFind(o..
     rank [0 ___ _ __ r..(m * n)]
 
   ___ find  x
-    __ dad[x] != x:
+    __ dad[x] !_ x:
       dad[x] find(dad[x])
     r.. dad[x]
 

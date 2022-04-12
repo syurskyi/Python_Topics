@@ -14,10 +14,10 @@ ___ create_chart
     w__ o.. LOG) __ log:
         ___ line __ log:
             (d,i,t) line_check.m..(line).groups()
-            __ d != last_date:
+            __ d !_ last_date:
                 print _*\n{d} ',end='')
                 last_date d
-            __ i != '':
+            __ i !_ '':
                 book t
             ____
                 __ t __ 'sending to slack channel':

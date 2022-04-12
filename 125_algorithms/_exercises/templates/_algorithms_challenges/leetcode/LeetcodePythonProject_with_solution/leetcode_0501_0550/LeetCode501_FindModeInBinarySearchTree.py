@@ -28,7 +28,7 @@ c_ Solution(o..
             node node.left
         w.... stack:
             node stack.p.. )
-            __ node.val != prev:
+            __ node.val !_ prev:
                 count 1
                 prev node.val
             ____

@@ -10,5 +10,5 @@ c_ Solution(o..
       ___ j __ r..(0, i + 1
         __ (s[i] __ s[j]) a.. ((j + 1 > i - 1) o. (pal[i - 1][j + 1]:
           pal[i][j] T..
-          dp[i + 1] m..(dp[i + 1], dp[j] + 1) __ j != 0 ____ 0
+          dp[i + 1] m..(dp[i + 1], dp[j] + 1) __ j !_ 0 ____ 0
     r.. dp[-1]

@@ -21,7 +21,7 @@ c_ Solution(o..
             length m..(l..(currWord), l..(prevWord
             ___ j __ r..(length
                 c1, c2 prevWord[j], currWord[j]
-                __ c1 != c2:
+                __ c1 !_ c2:
                     __ c1 n.. __ graph:
                         graph[c1] s..()
                     __ c2 n.. __ graph[c1]:

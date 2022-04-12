@@ -12,7 +12,7 @@ c_ Solution:
     directions [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ dfs(i, j, board, visited, word, index
-      __ word[index] != board[i][j]:
+      __ word[index] !_ board[i][j]:
         r.. F..
       __ l..(word) - 1 __ index:
         r.. T..

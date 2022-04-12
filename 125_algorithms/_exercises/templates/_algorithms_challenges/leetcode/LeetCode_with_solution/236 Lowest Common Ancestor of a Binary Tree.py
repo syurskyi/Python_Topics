@@ -42,7 +42,7 @@ c_ Solution:
 
         i 0
         w.... i < m..(l..(path1), l..(path2:
-            __ path1[i] != path2[i]:
+            __ path1[i] !_ path2[i]:
                 r.. path1[i-1]
             i += 1
 

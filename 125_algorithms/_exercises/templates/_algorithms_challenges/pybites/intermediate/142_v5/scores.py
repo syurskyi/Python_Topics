@@ -20,6 +20,6 @@ ___ get_winner(players
     """Given a list of Player namedtuples return the player
        with the highest score using calculate_score.
     """
-    __ any(l..(players[0].scores) != l..(s.scores) ___ s __ players[1:]
+    __ any(l..(players[0].scores) !_ l..(s.scores) ___ s __ players[1:]
         r.. V...()
     r.. s..(players, key=l.... x: calculate_score(x.scores[-1]

@@ -26,7 +26,7 @@ c_ Solution:
                 __ indeg[c] __ 0:
                     queue.a..(c)
 
-        __ l..(queue) != n:
+        __ l..(queue) !_ n:
             r.. []
 
         r.. queue

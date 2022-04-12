@@ -51,9 +51,9 @@ c_ Solution:
         rmin, rmax dfs(node.right)
         mini m..(lmin, rmin)
         maxa m..(lmax, rmax)
-        __ mini != f__("inf"
+        __ mini !_ f__("inf"
             ret m..(ret, a..(mini - node.val
-        __ maxa != -f__("inf"
+        __ maxa !_ -f__("inf"
             ret m..(ret, a..(maxa - node.val
 
         r.. m..(mini, node.val), m..(maxa, node.val)

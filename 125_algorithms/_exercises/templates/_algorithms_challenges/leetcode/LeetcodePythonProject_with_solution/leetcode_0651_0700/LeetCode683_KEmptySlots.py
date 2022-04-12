@@ -24,7 +24,7 @@ c_ Solution(o..
             __ days[i] < days[left] o. days[i] < days[right]:
                 left i
                 right k+1+i
-        r.. res __ res != f__('inf') ____ -1
+        r.. res __ res !_ f__('inf') ____ -1
     
     ___ test
         testCases [

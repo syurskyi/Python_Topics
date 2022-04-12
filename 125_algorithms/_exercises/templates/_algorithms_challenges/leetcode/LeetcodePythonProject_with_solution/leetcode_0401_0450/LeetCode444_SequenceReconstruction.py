@@ -28,7 +28,7 @@ c_ Solution(o..
             __ size > 1:
                 r.. F..
             curr queue.p.. 0)
-            __ index >_ l..(org) o. org[index] != curr:
+            __ index >_ l..(org) o. org[index] !_ curr:
                 r.. F..
             index += 1
             __ curr __ graph:

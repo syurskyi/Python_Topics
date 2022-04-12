@@ -51,7 +51,7 @@ c_ Solution(o..
     ___ helper  exp, hashmap
         __ exp[0] __ '-' o. exp.i..
             r.. i..(exp)
-        ____ exp[0] != '(':
+        ____ exp[0] !_ '(':
             r.. hashmap[exp]
         ____
             exp exp[1:-1]
@@ -91,7 +91,7 @@ c_ Solution(o..
                 i += 1
             r.. res, i
         ____
-            w.... i < l..(s) a.. s[i] != ' ':
+            w.... i < l..(s) a.. s[i] !_ ' ':
                 res += s[i]
                 i += 1
             r.. res, i

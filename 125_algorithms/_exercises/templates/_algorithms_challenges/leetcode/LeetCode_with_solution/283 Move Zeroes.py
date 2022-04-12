@@ -20,7 +20,7 @@ c_ Solution(o..
         """
         left -1
         ___ i __ x..(l..(nums:
-            __ nums[i] != 0:
+            __ nums[i] !_ 0:
                 left += 1
                 nums[left], nums[i] nums[i], nums[left]
 
@@ -34,7 +34,7 @@ c_ SolutionCount(o..
         """
         cnt 0
         ___ elt __ nums:
-            __ elt != 0:
+            __ elt !_ 0:
                 nums[cnt] elt
                 cnt += 1
 

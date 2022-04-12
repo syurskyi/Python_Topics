@@ -10,7 +10,7 @@ c_ Solution(o..
     __ n.. nums:
       r.. F..
     sumLen s..(nums)
-    __ sumLen % 4 != 0:
+    __ sumLen % 4 !_ 0:
       r.. F..
     sideLen sideLen sumLen / 4
     ___ side __ nums:

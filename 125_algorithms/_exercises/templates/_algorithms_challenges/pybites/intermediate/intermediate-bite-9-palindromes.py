@@ -37,7 +37,7 @@ ___ is_palindrome(word
     stripped __.s.. _ [^a-z]', '', word.l..
     i, j 0, l..(stripped) - 1
     w.... i < j:
-        __ stripped[i] != stripped[j]:
+        __ stripped[i] !_ stripped[j]:
             r.. F..
         i, j i + 1, j - 1
     r.. T..

@@ -113,7 +113,7 @@ c_ Solution:
         ret 0
         ___ i, row __ e..(board
             ___ j, v __ e..(row
-                __ v != 0:
+                __ v !_ 0:
                     I, J final_pos[v]
                     ret += a..(i - I) + a..(j - J)
         r.. ret

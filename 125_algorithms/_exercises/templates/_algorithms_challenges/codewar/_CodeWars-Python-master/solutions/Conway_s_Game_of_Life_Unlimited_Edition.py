@@ -41,9 +41,9 @@ ___ trim_result(result
     start_empty, end_empty T.., T..
     w.... start_empty o. end_empty:
         ___ r __ result:
-            __ r[0] != 0:
+            __ r[0] !_ 0:
                 start_empty F..
-            __ r[-1] != 0:
+            __ r[-1] !_ 0:
                 end_empty F..
         ___ r __ result:
             __ start_empty:

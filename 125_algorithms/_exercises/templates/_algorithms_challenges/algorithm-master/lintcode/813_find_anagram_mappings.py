@@ -8,7 +8,7 @@ c_ Solution:
         :type b: list[int]
         :rtype: list[int]
         """
-        __ n.. a o. n.. b o. l..(a) != l..(b
+        __ n.. a o. n.. b o. l..(a) !_ l..(b
             r.. []
 
         n l..(a)
@@ -37,7 +37,7 @@ c_ Solution:
         :type b: list[int]
         :rtype: list[int]
         """
-        __ n.. a o. n.. b o. l..(a) != l..(b
+        __ n.. a o. n.. b o. l..(a) !_ l..(b
             r.. []
 
         n l..(a)

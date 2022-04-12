@@ -28,7 +28,7 @@ c_ Solution(o..
         __ n.. s: r.. F..
         start, end 0, l..(s)-1
         w.... start<_end:
-            __ s[start] != s[end]:
+            __ s[start] !_ s[end]:
                 r.. F..
             start += 1
             end -_ 1

@@ -30,7 +30,7 @@ c_ HashHeapq:
         i 0
         n l..(__heap)
 
-        w.... i < n a.. __heap[i] != val:
+        w.... i < n a.. __heap[i] !_ val:
             i += 1
 
         __ i __ n:

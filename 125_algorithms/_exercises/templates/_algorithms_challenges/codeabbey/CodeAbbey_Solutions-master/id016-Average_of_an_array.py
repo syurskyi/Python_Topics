@@ -7,7 +7,7 @@ ___ cleanData(data
 
 ___ average(amount
         answer    # list
-        ___ x __ r..(amount
+        ___ x __ r.. ?
                 array  raw_input().s..
                 array  cleanData(array)
                 total, average, y  0,0,0

@@ -40,7 +40,7 @@ c_ Solution:
         w.... index < l..(tape) a.. state < l..(regex
             char tape[index]
             __ state+1 < l..(regex) a.. regex[state+1] __ "*":
-                __ regex[state] != ".":
+                __ regex[state] !_ ".":
                     __ char __ regex[state]:  # advance tape
                         w.... index < l..(tape) a.. tape[index] __ char: index += 1
                         state += 2
@@ -49,8 +49,8 @@ c_ Solution:
                 ____  # .*
                     state += 2
                     __ state < l..(regex
-                        __ regex[state] != ".":  # find until the next char in regex
-                            w.... index < l..(tape) a.. tape[index] != regex[state]: index += 1
+                        __ regex[state] !_ ".":  # find until the next char in regex
+                            w.... index < l..(tape) a.. tape[index] !_ regex[state]: index += 1
                         ____  # difficult part
                             count 1
 
@@ -155,7 +155,7 @@ c_ Solution:
         ___ i __ x..(m-1, -1, -1
             ___ j __ x..(n-1, -1, -1
                 __ regex[j] __ "*":
-                    __ j-1 >_ 0 a.. regex[j-1] != "*":
+                    __ j-1 >_ 0 a.. regex[j-1] !_ "*":
                         dp[i][j] dp[i][j+1]  # skip
                     ____
                         r.. F..  # two consecutive *

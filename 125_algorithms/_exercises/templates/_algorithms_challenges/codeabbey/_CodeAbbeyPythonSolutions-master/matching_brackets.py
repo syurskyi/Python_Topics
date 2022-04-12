@@ -16,7 +16,7 @@ ___ is_matching(word
         ____(i __ close_brackets
             __(l..(open_brackets_in_word) __ 0
                 r.. 0
-            __(open_brackets.i.. open_brackets_in_word[-1]) != close_brackets.i.. i:
+            __(open_brackets.i.. open_brackets_in_word[-1]) !_ close_brackets.i.. i:
                 r.. 0
             ____
                 open_brackets_in_word.p.. )

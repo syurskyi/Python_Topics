@@ -25,7 +25,7 @@ c_ Solution(o..
             ___ c __ ln:
                 __ prev __ c:
                     count += 1
-                __ prev __ n.. N.. a.. prev != c:
+                __ prev __ n.. N.. a.. prev !_ c:
                     tn.a..(s..(count
                     tn.a..(s..(prev
                     count 1

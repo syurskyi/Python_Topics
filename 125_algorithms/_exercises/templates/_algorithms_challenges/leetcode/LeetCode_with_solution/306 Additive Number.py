@@ -36,7 +36,7 @@ c_ Solution(o..
         n1 s[b:i]
         n2 s[i:j]
 
-        __ b != 0 a.. j __ l..(s
+        __ b !_ 0 a.. j __ l..(s
             r.. T..
         __ n.. n1 o. n.. n2:
             r.. F..

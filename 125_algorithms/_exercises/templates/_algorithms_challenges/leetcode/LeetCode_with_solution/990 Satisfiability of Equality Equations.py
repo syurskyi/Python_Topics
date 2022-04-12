@@ -56,7 +56,7 @@ c_ DisjointSet:
     ___ find  x
         __ x n.. __ pi:
             pi[x] x
-        ____ pi[x] != x:
+        ____ pi[x] !_ x:
             pi[x] find(pi[x])
         r.. pi[x]
 

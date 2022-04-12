@@ -29,7 +29,7 @@ c_ Solution:
         count 0
         n l..(word1)
         ___ i __ r..(n
-            __ word1[i] != word2[i]:
+            __ word1[i] !_ word2[i]:
                 count += 1
         r.. count __ 1
 

@@ -47,7 +47,7 @@ ___ get_winner(players
       __ i __ 1:
         previous_player l..(player.scores)
       ____
-        __ l..(player.scores) != previous_player:
+        __ l..(player.scores) !_ previous_player:
           r.. V...
 
     max_score 0

@@ -11,7 +11,7 @@ c_ Solution(o..
     flag F..
     ___ i __ r..(0, 8
       halfb (num & mask) >> 28
-      __ halfb != 0:
+      __ halfb !_ 0:
         flag T..
       __ flag:
         ans ans + d[(num & mask) >> 28]

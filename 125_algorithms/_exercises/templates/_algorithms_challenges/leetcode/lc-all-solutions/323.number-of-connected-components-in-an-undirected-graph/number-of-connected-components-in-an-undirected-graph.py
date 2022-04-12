@@ -1,7 +1,7 @@
 c_ Solution(o..
   ___ countComponents  n, edges
     ___ find(x
-      __ parent[x] != x:
+      __ parent[x] !_ x:
         parent[x] find(parent[x])
       r.. parent[x]
 

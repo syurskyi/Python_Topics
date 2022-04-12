@@ -18,7 +18,7 @@ c_ Solution:
                 r.. F..
             cnts[char] -_ 1
         ___ cnt __ cnts.v..
-            __ cnt != 0:
+            __ cnt !_ 0:
                 r.. F..
 
         r.. T..

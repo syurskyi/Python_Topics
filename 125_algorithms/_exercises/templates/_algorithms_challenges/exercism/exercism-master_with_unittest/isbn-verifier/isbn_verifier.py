@@ -32,7 +32,7 @@ c_ IsbnVerifier(o..
 
     @classmethod
     ___ invalid_length(cls, s__
-        r.. (l..(cls.remove_invalid_characters_and_slashes(s__ !=
+        r.. (l..(cls.remove_invalid_characters_and_slashes(s__ !_
                 cls.VALID_LENGTH)
 
     @classmethod
@@ -60,7 +60,7 @@ c_ IsbnVerifier(o..
     @classmethod
     ___ remove_seperator(cls, s__
         r.. "".j..(
-            [char ___ char __ s__ __ char != cls.VALID_SEPERATOR])
+            [char ___ char __ s__ __ char !_ cls.VALID_SEPERATOR])
 
 
 ___ verify(isbn

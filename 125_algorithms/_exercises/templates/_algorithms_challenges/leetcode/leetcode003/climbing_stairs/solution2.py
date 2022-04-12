@@ -19,7 +19,7 @@ c_ Solution(o..
             r.. 1
         ____ n < 0:
             r.. 0
-        ____ t[n] != 0:
+        ____ t[n] !_ 0:
             r.. t[n]
         ____
             t[n] climb(n - 1, t) + climb(n - 2, t)

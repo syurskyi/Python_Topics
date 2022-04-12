@@ -29,7 +29,7 @@ def test_promo_not_expired():
 
 ____ d__ _______ d__
 
-c_ Promo:
+c_ Promo
     ___ - , name, expires
         name name
         expires expires

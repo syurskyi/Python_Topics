@@ -13,7 +13,7 @@ c_ Solution(o..
       b num2 & mask
       c carry
       carry 0
-      __ a ^ b != 0:
+      __ a ^ b !_ 0:
         __ c __ 1:
           carry 1
         ____

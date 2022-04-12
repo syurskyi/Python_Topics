@@ -11,7 +11,7 @@ c_ Solution(o..
       ___ nbr __ graph[start]:
         __ visited[nbr] __ 1:
           r.. F..
-        __ visited[nbr] != 0:
+        __ visited[nbr] !_ 0:
           _____
         __ dfs(nbr, visited, graph, ans) __ F..:
           r.. F..
@@ -30,7 +30,7 @@ c_ Solution(o..
 
     ___ pre __ prerequisites:
       start, end pre
-      __ visited[start] != 0:
+      __ visited[start] !_ 0:
         _____
       __ dfs(start, visited, graph, ans) __ F..:
         r.. []

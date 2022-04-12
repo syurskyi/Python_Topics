@@ -21,7 +21,7 @@ c_ Solution(o..
         __ root __ N..
             r.. T..
         ____
-            __ height(root) != -1:
+            __ height(root) !_ -1:
                 r.. T..
             ____
                 r.. F..

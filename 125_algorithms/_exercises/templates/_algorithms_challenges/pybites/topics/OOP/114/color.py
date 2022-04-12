@@ -27,7 +27,7 @@ c_ Color:
 
     ___ hex2rgb(hex_value
         """Class method that converts a hex value into an rgb one"""
-        __ l..(hex_value) != 7 o. hex_value[0] != '#':
+        __ l..(hex_value) !_ 7 o. hex_value[0] !_ '#':
             r.. V...
         ___
             rgb t..(i..(hex_value.l..('#')[i:i+2], 16) ___ i __ (0, 2, 4

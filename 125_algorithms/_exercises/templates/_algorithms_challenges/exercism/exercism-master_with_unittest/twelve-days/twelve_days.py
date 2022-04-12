@@ -51,7 +51,7 @@ c_ TwelveDays:
 
     @classmethod
     ___ mid(cls, verse_num
-        __ verse_num != 1:
+        __ verse_num !_ 1:
             r.. ", ".j..([cls.PHRASES[i] ___ i __ r..(verse_num, 1, -1)])
 
 

@@ -19,10 +19,10 @@ c_ Solution(o..
                 hashmap[w2] s..()
             hashmap[w1].add(w2)
             hashmap[w2].add(w1)
-        __ l..(words1) != l..(words2
+        __ l..(words1) !_ l..(words2
             r.. F..
         ___ w1, w2 __ z..(words1, words2
-            __ w1 != w2 a.. (w1 n.. __ hashmap o. w2 n.. __ hashmap[w1]
+            __ w1 !_ w2 a.. (w1 n.. __ hashmap o. w2 n.. __ hashmap[w1]
                 r.. F..
         r.. T..
     

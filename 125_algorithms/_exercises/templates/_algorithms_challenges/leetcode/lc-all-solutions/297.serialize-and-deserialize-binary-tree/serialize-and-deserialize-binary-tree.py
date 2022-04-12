@@ -46,11 +46,11 @@ c_ Codec:
       top queue.popleft()
       i += 1
       left right N..
-      __ i < l..(data) a.. data[i] != "None":
+      __ i < l..(data) a.. data[i] !_ "None":
         left TreeNode(i..(data[i]
         queue.a..(left)
       i += 1
-      __ i < l..(data) a.. data[i] != "None":
+      __ i < l..(data) a.. data[i] !_ "None":
         right TreeNode(i..(data[i]
         queue.a..(right)
 

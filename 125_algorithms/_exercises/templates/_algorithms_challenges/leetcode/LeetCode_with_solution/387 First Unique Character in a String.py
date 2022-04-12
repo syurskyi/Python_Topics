@@ -31,7 +31,7 @@ c_ Solution(o..
             ____
                 first[v] -1
 
-        lst f.. l.... x: x != -1, first.values
+        lst f.. l.... x: x !_ -1, first.values
         r.. m..(lst) __ lst ____ -1
 
 

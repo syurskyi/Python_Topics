@@ -146,7 +146,7 @@ c_ LightsGrid:
         df grid,i..[row_start:row_end + 1,col_start:col_end +1]
 
 
-        grid,i..[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: 0 __ value != 0 ____ 3)
+        grid,i..[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: 0 __ value !_ 0 ____ 3)
 
     ___ follow_instructions
         """Function to process all instructions.

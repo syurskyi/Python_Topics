@@ -4,7 +4,7 @@ c_ l..(o..
     ___ even
         r.. [n ___ n __ arg __ n % 2 __ 0]
     ___ odd
-        r.. [n ___ n __ arg __ n % 2 != 0]
+        r.. [n ___ n __ arg __ n % 2 !_ 0]
     ___ under num
         r.. [n ___ n __ arg __ n < num]
     ___ over num

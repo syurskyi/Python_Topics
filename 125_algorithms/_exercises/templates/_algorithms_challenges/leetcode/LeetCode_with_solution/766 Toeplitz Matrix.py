@@ -51,7 +51,7 @@ c_ Solution:
         m, n l..(matrix), l..(matrix[0])
         ___ i __ r..(1, m
             ___ j __ r..(1, n
-                __ matrix[i][j] != matrix[i-1][j-1]:
+                __ matrix[i][j] !_ matrix[i-1][j-1]:
                     r.. F..
 
         r.. T..
@@ -68,7 +68,7 @@ c_ Solution:
             c j
             cur matrix[r][c]
             w.... r < m a.. c < n:
-                __ cur != matrix[r][c]:
+                __ cur !_ matrix[r][c]:
                     r.. F..
                 r += 1
                 c += 1
@@ -78,7 +78,7 @@ c_ Solution:
             c 0
             cur matrix[r][c]
             w.... r < m a.. c < n:
-                __ cur != matrix[r][c]:
+                __ cur !_ matrix[r][c]:
                     r.. F..
 
                 r += 1

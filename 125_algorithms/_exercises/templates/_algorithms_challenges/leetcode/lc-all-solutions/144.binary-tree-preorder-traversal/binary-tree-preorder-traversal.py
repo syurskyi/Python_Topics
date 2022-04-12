@@ -11,5 +11,5 @@ c_ Solution(o..
     w.... stack:
       p stack.p.. )
       __ n.. p[1]: _____
-      stack.e.. [(1, p[1].right), (1, p[1].left), (0, p[1])]) __ p[0] != 0 ____ res.a..(p[1].val)
+      stack.e.. [(1, p[1].right), (1, p[1].left), (0, p[1])]) __ p[0] !_ 0 ____ res.a..(p[1].val)
     r.. res

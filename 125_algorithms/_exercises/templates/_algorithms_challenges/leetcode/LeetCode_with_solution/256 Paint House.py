@@ -25,7 +25,7 @@ c_ Solution:
             ___ i __ x..(m
                 F[k][i] ___.maxint
                 ___ j __ x..(m
-                    __ i != j:
+                    __ i !_ j:
                         F[k][i] m..(F[k][i], F[k-1][j]+costs[k-1][i])
 
         r.. m..(F[n][i] ___ i __ x..(m

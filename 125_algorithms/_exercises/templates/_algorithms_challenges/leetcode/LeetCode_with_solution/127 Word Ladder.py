@@ -25,7 +25,7 @@ c_ Solution:
     ___ is_neighbor  p, q
         diff 0
         ___ a, b __ z..(p, q
-            __ a != b:
+            __ a !_ b:
                 diff += 1
             __ diff > 1:
                 r.. F..
@@ -77,7 +77,7 @@ c_ Solution:
             ___ i __ x..(l..(str1:
                 __ count>1:
                     r.. -1
-                __ str1[i]!=str2[i]:
+                __ str1[i]!_str2[i]:
                     count += 1
             r.. count
 
@@ -123,7 +123,7 @@ c_ Solution:
             ___ i __ x..(l..(str1:
                 __ count>1:
                     r.. -1
-                __ str1[i]!=str2[i]:
+                __ str1[i]!_str2[i]:
                     count += 1
             r.. count
 

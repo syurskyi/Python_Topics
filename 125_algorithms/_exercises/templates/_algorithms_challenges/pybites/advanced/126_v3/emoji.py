@@ -25,7 +25,7 @@ ___ _make_emoji_mapping
             emoji chr(em)
             ___
                 desc what_means_emoji(emoji)
-                __ desc != 'Not found':
+                __ desc !_ 'Not found':
                     res[emoji] desc.l..
             ______ V..
                 p..

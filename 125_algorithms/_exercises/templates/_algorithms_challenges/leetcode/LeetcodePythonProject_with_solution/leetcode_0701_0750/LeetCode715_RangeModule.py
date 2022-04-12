@@ -14,7 +14,7 @@ c_ RangeModule(o..
     ___ addRangeHelper  left, right, track=T..
         ___ i.. x
             i b__.bisect_left(X, x)
-            __ X[i] != x:
+            __ X[i] !_ x:
                 X.insert(i, x)
                 track.insert(i, track[i-1])
             r.. i
@@ -109,9 +109,9 @@ c_ RangeModule_own(o..
             __ newInterval.right >_ interval.right a.. newInterval.left <_ interval.left:
                 _____
             ____ newInterval.right <_ interval.right a.. newInterval.left >_ interval.left:
-                __ interval.left != newInterval.left:
+                __ interval.left !_ newInterval.left:
                     res.a..(Interval(interval.left, newInterval.left
-                __ interval.right != newInterval.right:
+                __ interval.right !_ newInterval.right:
                     res.a..(Interval(newInterval.right, interval.right
             ____ newInterval.right <_ interval.left o. interval.right <_ newInterval.left:
                 res.a..(interval)

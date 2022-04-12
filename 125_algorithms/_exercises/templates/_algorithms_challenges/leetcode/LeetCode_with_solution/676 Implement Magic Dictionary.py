@@ -48,7 +48,7 @@ c_ MagicDictionary:
                 r.. cur
 
             ___ s..  cur, s, i, modified
-                __ cur.chr != s[i]:
+                __ cur.chr !_ s[i]:
                     __ modified:
                         r.. F..
                     modified T..

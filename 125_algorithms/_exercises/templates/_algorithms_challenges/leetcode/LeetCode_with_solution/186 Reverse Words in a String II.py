@@ -16,7 +16,7 @@ c_ Solution(o..
         i 0
         w.... i < l..(s
             j i+1
-            w.... j < l..(s) a.. s[j] != " ":
+            w.... j < l..(s) a.. s[j] !_ " ":
                 j += 1
 
             reverse(s, i, j)

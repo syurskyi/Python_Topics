@@ -72,7 +72,7 @@ async ___ session(
 
     await work_time(work_length, loop)
 
-    __ CURRENT_SESSION % 2 != 0:
+    __ CURRENT_SESSION % 2 !_ 0:
         await break_time(long_break_length, loop)
 
 

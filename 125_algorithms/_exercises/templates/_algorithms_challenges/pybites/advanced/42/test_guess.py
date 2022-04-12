@@ -1,4 +1,4 @@
-____ unittest.mock _______ patch
+____ ?.m.. _______ p..
 _______ r__
 
 _______ p__
@@ -6,13 +6,13 @@ _______ p__
 ____ guess _______ get_random_number, Game
 
 
-@patch.o..(r__, 'randint')
+$p.. .o..(r__, 'randint')
 ___ test_get_random_number(m
     m.return_value 17
     ... get_random_number() __ 17
 
 
-@patch("builtins.input", side_effect=[11, '12', 'Bob', 12, 5, -1, 21, 7, N..])
+$p.. ("builtins.input", s.._ 11, '12', 'Bob', 12, 5, -1, 21, 7, N..])
 ___ test_guess(inp
     game Game()
     # good
@@ -57,7 +57,7 @@ ___ test_validate_guess(capfd
     ... out.r..() __ '2 is correct!'
 
 
-@patch("builtins.input", side_effect=[4, 22, 9, 4, 6])
+$p.. ("builtins.input", s.._ 4, 22, 9, 4, 6])
 ___ test_game_win(inp, capfd
     game Game()
     game._answer 6
@@ -75,7 +75,7 @@ ___ test_game_win(inp, capfd
         ... line __ exp
 
 
-@patch("builtins.input", side_effect=[N.., 5, 9, 14, 11, 12])
+$p.. ("builtins.input", s.._ N.., 5, 9, 14, 11, 12])
 ___ test_game_lose(inp, capfd
     game Game()
     game._answer 13

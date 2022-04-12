@@ -1,7 +1,7 @@
 ___ get_profile(name,age,*args, $$
     print(args,kwargs)
 
-    __ t..(age) != i..:
+    __ t..(age) !_ i..:
         r.. V...("age must be interger")
 
 

@@ -15,9 +15,9 @@ ___ BuildTree(records
     records.s..(key=l.... x: x.record_id)
     ordered_id [i.record_id ___ i __ records]
     __ records:
-        __ ordered_id[-1] != l..(ordered_id) - 1:
+        __ ordered_id[-1] !_ l..(ordered_id) - 1:
             r.. V...
-        __ ordered_id[0] != 0:
+        __ ordered_id[0] !_ 0:
             r.. V...
     trees    # list
     parent    # dict
@@ -25,12 +25,12 @@ ___ BuildTree(records
         ___ j __ records:
             __ ordered_id[i] __ j.record_id:
                 __ j.record_id __ 0:
-                    __ j.parent_id != 0:
+                    __ j.parent_id !_ 0:
                         r.. V...
                 __ j.record_id < j.parent_id:
                     r.. V...
                 __ j.record_id __ j.parent_id:
-                    __ j.record_id != 0:
+                    __ j.record_id !_ 0:
                         r.. V...
                 trees.a..(Node(ordered_id[i]
     ___ i __ r..(l..(ordered_id:

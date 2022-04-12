@@ -4,7 +4,7 @@ c_ Solution:
         :type matrix: List[List[int]]
         :rtype: void Do not return anything, modify matrix in-place instead.
         """
-        __ n.. matrix o. n.. matrix[0] o. l..(matrix) != l..(matrix[0]
+        __ n.. matrix o. n.. matrix[0] o. l..(matrix) !_ l..(matrix[0]
             r..
 
         n l..(matrix)
@@ -30,7 +30,7 @@ c_ Solution:
         :type matrix: List[List[int]]
         :rtype: void Do not return anything, modify matrix in-place instead.
         """
-        __ n.. matrix o. n.. matrix[0] o. l..(matrix) != l..(matrix[0]
+        __ n.. matrix o. n.. matrix[0] o. l..(matrix) !_ l..(matrix[0]
             r..
 
         n l..(matrix)

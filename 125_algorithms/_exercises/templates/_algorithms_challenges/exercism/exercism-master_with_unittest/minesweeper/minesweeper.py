@@ -55,7 +55,7 @@ c_ Minesweeper:
     @classmethod
     ___ all_neighbor_coords(cls, inp, y, x
         r.. [(y + dy, x + dx) ___ dy __ r..(-1, 2) ___ dx __ r..(-1, 2)
-                __ dy != 0 o. dx != 0]
+                __ dy !_ 0 o. dx !_ 0]
 
     @classmethod
     ___ valid(cls, inp

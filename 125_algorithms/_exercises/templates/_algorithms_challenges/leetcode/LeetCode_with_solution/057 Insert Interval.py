@@ -32,7 +32,7 @@ c_ Solution(o..
         s, e newItvl.start, newItvl.end
         left f.. l.... x: x.end < s, itvls)
         right f.. l.... x: x.start > e, itvls)
-        __ l..(left)+l..(right) != l..(itvls
+        __ l..(left)+l..(right) !_ l..(itvls
             s m..(s, itvls[l..(left)].start)
             e m..(e, itvls[-l..(right)-1].end)
 

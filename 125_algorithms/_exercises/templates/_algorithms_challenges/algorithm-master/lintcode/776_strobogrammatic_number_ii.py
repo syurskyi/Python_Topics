@@ -17,7 +17,7 @@ c_ Solution:
             queue    # list
 
             ___ s __ ans:
-                __ n != 2:
+                __ n !_ 2:
                     queue.a..('0' + s + '0')
 
                 queue.a..('1' + s + '1')

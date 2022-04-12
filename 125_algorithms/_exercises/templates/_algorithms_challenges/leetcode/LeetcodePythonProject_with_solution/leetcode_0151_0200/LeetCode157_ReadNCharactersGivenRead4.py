@@ -23,5 +23,5 @@ c_ Solution(o..
             ___ i __ r..(curr
                 buf[idx] buf4[i]
                 idx += 1
-            __ curr != 4 o. idx __ n:
+            __ curr !_ 4 o. idx __ n:
                 r.. idx

@@ -25,7 +25,7 @@ c_ ConnectingGraph2:
     ___ connect  a, b
         root_a find(a)
         root_b find(b)
-        __ root_a != root_b:
+        __ root_a !_ root_b:
             # Assign a as b's child set
             nodes[root_a] root_b
             count[root_b] += count[root_a]

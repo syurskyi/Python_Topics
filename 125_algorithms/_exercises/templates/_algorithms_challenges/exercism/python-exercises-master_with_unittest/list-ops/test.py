@@ -39,7 +39,7 @@ c_ ListOpsTest(unittest.TestCase
     # tests for filter
     ___ test_filter_odd
         assertEqual(
-            list_ops.filter_clone(l.... x: x % 2 != 0, [1, 2, 3, 4, 5, 6]),
+            list_ops.filter_clone(l.... x: x % 2 !_ 0, [1, 2, 3, 4, 5, 6]),
             [1, 3, 5])
 
     ___ test_filter_even

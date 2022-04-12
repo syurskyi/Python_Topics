@@ -28,7 +28,7 @@ ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..
     df 'PC_Ratio'  = df.Protein / df.Calories
 
     __ excl_drinks:
-        df df[(df.Category != 'Coffee & Tea') & (df.Category != 'Beverages')]
+        df df[(df.Category !_ 'Coffee & Tea') & (df.Category !_ 'Beverages')]
 
     top_5 l..(df.sort_values(by= 'PC_Ratio' , ascending=F..),i..[0:5].Item)
 

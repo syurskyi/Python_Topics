@@ -57,7 +57,7 @@ c_ Solution(o..
             ___ step __ F[stone]:
                 ___ i __ (-1, 0, 1
                     nxt stone + step + i
-                    __ nxt != stone a.. nxt __ F:
+                    __ nxt !_ stone a.. nxt __ F:
                         F[nxt].add(step + i)
 
         r.. T.. __ F[stones[-1]] ____ F..

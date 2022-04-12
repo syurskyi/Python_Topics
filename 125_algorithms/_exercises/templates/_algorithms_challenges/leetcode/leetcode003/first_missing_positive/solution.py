@@ -16,11 +16,11 @@ c_ Solution:
         i 0
         w.... i < n:
             j A[i] - 1
-            __ A[i] != i + 1 a.. A[i] >_ 1 a.. A[i] <_ n a.. A[i] != A[j]:
+            __ A[i] !_ i + 1 a.. A[i] >_ 1 a.. A[i] <_ n a.. A[i] !_ A[j]:
                 A[i], A[j] A[j], A[i]
             ____
                 i += 1
         ___ i, e __ e..(A
-            __ e != i + 1:
+            __ e !_ i + 1:
                 r.. i + 1
         r.. n + 1

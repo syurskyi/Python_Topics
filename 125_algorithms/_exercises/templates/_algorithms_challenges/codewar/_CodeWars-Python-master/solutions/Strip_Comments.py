@@ -10,7 +10,7 @@ ___ solution(s__, markers
     ___ i, line __ e..(lines
         ___ marker __ markers:
             index line.find(marker)
-            __ index != -1:
+            __ index !_ -1:
                 line line[:index]
         lines[i] line.r..(' ')
     r.. '\n'.j..(lines)

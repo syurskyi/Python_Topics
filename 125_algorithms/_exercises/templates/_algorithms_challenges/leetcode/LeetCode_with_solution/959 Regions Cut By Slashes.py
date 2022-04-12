@@ -88,7 +88,7 @@ c_ DisjointSet:
         # LHS self.pi[x]
         __ x n.. __ pi:
             pi[x] x
-        __ pi[x] != x:
+        __ pi[x] !_ x:
             pi[x] find(pi[x])
         r.. pi[x]
 

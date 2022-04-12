@@ -62,7 +62,7 @@ c_ Solution:
         O(N log N + N log N)
         """
         A.s..()
-        __ l..(A) % W != 0:
+        __ l..(A) % W !_ 0:
             r.. F..
         __ W __ 1:
             r.. T..

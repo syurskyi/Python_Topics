@@ -66,7 +66,7 @@ c_ Solution:
         l dfs(node.left)
         r dfs(node.right)
         s l + r + node.val
-        __ node != root a.. total_sum != N.. a.. total_sum __ s * 2:
+        __ node !_ root a.. total_sum !_ N.. a.. total_sum __ s * 2:
             exists T..
 
         r.. s

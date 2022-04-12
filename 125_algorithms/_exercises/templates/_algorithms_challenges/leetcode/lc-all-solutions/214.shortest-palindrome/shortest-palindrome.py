@@ -9,7 +9,7 @@ c_ Solution(o..
     ___ isPal(cand
       start, end 0, l..(cand) - 1
       w.... start < end:
-        __ cand[start] != cand[end]:
+        __ cand[start] !_ cand[end]:
           r.. F..
         start += 1
         end -_ 1

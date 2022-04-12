@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: bool
         """
         s1, s2 A, B
-        __ l..(s1) != l..(s2
+        __ l..(s1) !_ l..(s2
             r.. F..
         __ s1 __ s2: r.. T..
         ___ i __ r..(l..(s1:

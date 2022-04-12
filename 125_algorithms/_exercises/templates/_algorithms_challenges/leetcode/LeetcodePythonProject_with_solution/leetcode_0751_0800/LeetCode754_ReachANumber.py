@@ -15,7 +15,7 @@ c_ Solution(o..
         w.... sumVal < target:
             step += 1
             sumVal += step
-        w.... (sumVal-target)%2 != 0:
+        w.... (sumVal-target)%2 !_ 0:
             step += 1
             sumVal += step
         r.. step

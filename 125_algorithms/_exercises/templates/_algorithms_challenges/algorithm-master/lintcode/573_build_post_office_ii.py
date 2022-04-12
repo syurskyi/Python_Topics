@@ -68,7 +68,7 @@ c_ Solution:
 
                     __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                         _____
-                    __ grid[_x][_y] != EMPTY:
+                    __ grid[_x][_y] !_ EMPTY:
                         _____
                     __ (_x, _y) __ visited:
                         _____
@@ -112,7 +112,7 @@ c_ Solution:
 
         ___ x __ r..(m
             ___ y __ r..(n
-                __ grid[x][y] != HOUSE:
+                __ grid[x][y] !_ HOUSE:
                     _____
 
                 cnt += 1
@@ -139,7 +139,7 @@ c_ Solution:
 
             __ n.. (0 <_ _x < m a.. 0 <_ _y < n
                 _____
-            __ grid[_x][_y] != EMPTY:
+            __ grid[_x][_y] !_ EMPTY:
                 _____
             __ step[x, y] + 1 >_ step[_x, _y] > 0:  # > 0 means visited, since its defaultdict
                 _____

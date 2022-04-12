@@ -24,7 +24,7 @@ c_ Solution(o..
         start 0
         length n+1
         ___ j __ r..(1, n+1
-            __ dp[m][j] != 0:
+            __ dp[m][j] !_ 0:
                 __ j-dp[m][j]+1 < length:
                     start dp[m][j]-1
                     length j-dp[m][j]+1

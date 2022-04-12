@@ -59,7 +59,7 @@ c_ Trie:
         __ n.. node:
             r..
 
-        __ node.chr != w[i]:
+        __ node.chr !_ w[i]:
             r..
 
         __ node.ended:

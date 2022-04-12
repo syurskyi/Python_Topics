@@ -15,7 +15,7 @@ c_ Solution(o..
         ___ c __ hand:
             handCount[o..(c)-o..('A')] += 1
         res helper(board+'#', handCount)
-        r.. res __ res != f__('inf') ____ -1
+        r.. res __ res !_ f__('inf') ____ -1
     
     ___ helper  s, h
         s removeConsecutive(s)

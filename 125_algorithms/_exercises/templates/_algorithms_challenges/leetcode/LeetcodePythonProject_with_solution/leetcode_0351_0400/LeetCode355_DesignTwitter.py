@@ -88,7 +88,7 @@ c_ Twitter(o..
         :type followeeId: int
         :rtype: void
         """
-        __ followerId __ following a.. followerId != followeeId:
+        __ followerId __ following a.. followerId !_ followeeId:
             following[followerId].discard(followeeId)
 
 # Your Twitter object will be instantiated and called as such:

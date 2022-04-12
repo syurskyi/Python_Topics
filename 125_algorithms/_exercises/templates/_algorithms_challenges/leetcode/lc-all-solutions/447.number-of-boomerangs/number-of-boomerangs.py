@@ -11,7 +11,7 @@ c_ Solution(o..
     ___ p1 __ points:
       d    # dict
       ___ p2 __ points:
-        __ p1 != p2:
+        __ p1 !_ p2:
           dist (p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2
           d[dist] d.g.. dist, 0) + 1
       ___ k __ d:

@@ -29,7 +29,7 @@ c_ Solution(o..
         __ dp[0] __ f__('inf'
             r.. res
         ind 0
-        w.... ind != -1:
+        w.... ind !_ -1:
             res.a..(ind+1)
             ind pos[ind]
         r.. res

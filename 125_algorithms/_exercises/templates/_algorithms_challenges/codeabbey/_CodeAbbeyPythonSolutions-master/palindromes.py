@@ -8,7 +8,7 @@ ___ is_palindrome(s__
     s__ __.s.. _ [^\w\s]','',s__).l..
     string_length l..(s__)
     ___ i __ r..(string_length//2
-        __(s__[i] != s__[string_length-i-1]
+        __(s__[i] !_ s__[string_length-i-1]
             r.. "N"
     r.. "Y"
 

@@ -22,7 +22,7 @@ c_ Solution(o..
             res    # list
             prev N..
             ___ i, e __ e..(nums
-                __ prev __ N.. o. prev != e:
+                __ prev __ N.. o. prev !_ e:
                     rest nums[:i] + nums[i + 1:]
                     rest_perms permute(rest)
                     ___ perm __ rest_perms:

@@ -21,4 +21,4 @@ ___ flatten(list_of_lists
             (a, b) item
             output.a..(a)
             output.a..(b)
-    r.. s..([i ___ i __ output __ t..(i) != t..])
+    r.. s..([i ___ i __ output __ t..(i) !_ t..])

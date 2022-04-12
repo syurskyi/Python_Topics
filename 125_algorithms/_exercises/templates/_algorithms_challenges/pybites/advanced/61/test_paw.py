@@ -53,11 +53,11 @@ ___ test_action_cards_in_different_positions(deck
 
     deck2 l..(create_paw_deck
     action_cards2 [card.card ___ card __ deck2 __ card.action __ n.. N..]
-    ... action_cards != action_cards2
+    ... action_cards !_ action_cards2
 
     deck3 l..(create_paw_deck
     action_cards3 [card.card ___ card __ deck3 __ card.action __ n.. N..]
-    ... action_cards != action_cards2 != action_cards3
+    ... action_cards !_ action_cards2 !_ action_cards3
 
 
 ___ test_deck_cards_numbers_constant(deck, small_deck, big_deck

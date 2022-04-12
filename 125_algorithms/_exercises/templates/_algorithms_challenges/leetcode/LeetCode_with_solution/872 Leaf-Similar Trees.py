@@ -37,7 +37,7 @@ c_ Solution:
         w... T...
             a next(itr1, N..)
             b next(itr2, N..)
-            __ a != b:
+            __ a !_ b:
                 r.. F..
             __ a __ N.. a.. b __ N..
                 _____

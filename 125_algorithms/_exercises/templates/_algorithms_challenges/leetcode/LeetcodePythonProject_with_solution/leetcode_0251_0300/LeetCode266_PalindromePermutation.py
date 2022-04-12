@@ -12,7 +12,7 @@ c_ Solution(o..
             hashmap[c] hashmap.g.. c, 0)+1
         odd 0
         ___ value __ hashmap.v..
-            __ value%2 != 0:
+            __ value%2 !_ 0:
                 odd += 1
         __ l..(s)%2 __ 0:
             r.. b..(odd __ 0)

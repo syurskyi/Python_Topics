@@ -238,7 +238,7 @@ c_ Solution:  # use set to mimic queue, fastest
                 ___ i __ r..(l..(word:
                     part1=word[:i]; part2=word[i+1:]
                     ___ j __ 'abcdefghijklmnopqrstuvwxyz':
-                        __ word[i]!=j:
+                        __ word[i]!_j:
                             nextword=part1+j+part2
                             __ nextword __ d..:
                                 prevMap[nextword].a..(word)

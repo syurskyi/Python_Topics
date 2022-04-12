@@ -54,7 +54,7 @@ c_ Solution:
             r.. ret
         counter[s[0]] += 1
         ___ i __ r..(1, l..(s:
-            __ s[i] != s[i-1] a.. counter[s[i]] != 0:
+            __ s[i] !_ s[i-1] a.. counter[s[i]] !_ 0:
                 counter[s[i]] 0
 
             counter[s[i]] += 1

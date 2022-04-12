@@ -60,7 +60,7 @@ c_ Solution_slow(o..
                 ___ d __ dirs:
                     i_t i+d[0]
                     j_t j+d[1]
-                    __ 0 <_ i_t < m a.. 0 <_ j_t < n a.. rooms[i_t][j_t] != -1 a.. rooms[i_t][j_t] >_ level+1:
+                    __ 0 <_ i_t < m a.. 0 <_ j_t < n a.. rooms[i_t][j_t] !_ -1 a.. rooms[i_t][j_t] >_ level+1:
                         q.a..((i_t, j_t
 
             q q[l:]
@@ -78,7 +78,7 @@ c_ Solution_slow(o..
             rooms[i][j] m..(rooms[i][j], level)
             ___ d __ dirs:
                 i_t, j_t i+d[0], j+d[1]
-                __ 0 <_ i_t < m a.. 0 <_ j_t < n a.. rooms[i_t][j_t] != -1 a.. rooms[i_t][j_t] >_ level+1:
+                __ 0 <_ i_t < m a.. 0 <_ j_t < n a.. rooms[i_t][j_t] !_ -1 a.. rooms[i_t][j_t] >_ level+1:
                     q.a..((i_t, j_t, level+1
 
 
@@ -110,7 +110,7 @@ c_ Solution_error(o..
             ___ d __ dirs:
                 nxt_i i+d[0]
                 nxt_j j+d[1]
-                __ rooms[nxt_i][nxt_j] != -1:
+                __ rooms[nxt_i][nxt_j] !_ -1:
                     rooms[nxt_i][nxt_j] m..(rooms[nxt_i][nxt_j], dfs(rooms, nxt_i, nxt_j, visited)+1)
 
         r.. rooms[nxt_i][nxt_j]

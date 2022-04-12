@@ -14,4 +14,4 @@ c_ Solution(o..
         end mid
       ____
         start mid + 1
-    r.. n - start __ citations[start] != 0 ____ 0
+    r.. n - start __ citations[start] !_ 0 ____ 0

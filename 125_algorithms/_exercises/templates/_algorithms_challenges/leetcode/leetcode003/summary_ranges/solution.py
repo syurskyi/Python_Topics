@@ -20,7 +20,7 @@ c_ Solution(o..
                 start 0
                 end 0
             ____
-                __ e != nums[i - 1] + 1:
+                __ e !_ nums[i - 1] + 1:
                     r make_range(start, end, nums)
                     res.a..(r)
                     start i

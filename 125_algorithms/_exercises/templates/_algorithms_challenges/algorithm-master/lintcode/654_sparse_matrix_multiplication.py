@@ -5,7 +5,7 @@ c_ Solution:
     @return: the result of A * B
     """
     ___ multiply  A, B
-        __ n.. A o. n.. B o. l..(A[0]) != l..(B
+        __ n.. A o. n.. B o. l..(A[0]) !_ l..(B
             r.. []
 
         m, n l..(A), l..(B[0])

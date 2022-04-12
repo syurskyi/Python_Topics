@@ -28,7 +28,7 @@ c_ Solution(o..
                     __ i > 0 a.. p > 0:
                         dp[i][p] m..(dp[i][p], dp[i-1][p-1])
                     __ dp[i][p] >_ 0:
-                        dp[i][p] += grid[i][j]+(grid[p][q] __ i!=p ____ 0)
+                        dp[i][p] += grid[i][j]+(grid[p][q] __ i!_p ____ 0)
         r.. m..(dp[-1][-1], 0)
     
     ___ test

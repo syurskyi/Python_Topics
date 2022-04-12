@@ -35,7 +35,7 @@ c_ Solution(o..
         res += ':'
         res += s..(mm) __ l..(s..(mm__2 ____ '0'+s..(mm)
         ___ c __ res:
-            __ c != ':' a.. c n.. __ charSet:
+            __ c !_ ':' a.. c n.. __ charSet:
                 r.. F.., res
         r.. T.., res
     

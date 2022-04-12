@@ -11,7 +11,7 @@ c_ Solution:
             r.. F..
         __ l..(stones) < 2:
             r.. T..
-        __ stones[1] != 1:
+        __ stones[1] !_ 1:
             r.. F..
 
         xs s..(stones)  # to check in O(1)
@@ -46,7 +46,7 @@ c_ Solution:
             r.. F..
         __ l..(stones) < 2:
             r.. T..
-        __ stones[1] != 1:
+        __ stones[1] !_ 1:
             r.. F..
 
         dp {pos: s..() ___ pos __ stones}

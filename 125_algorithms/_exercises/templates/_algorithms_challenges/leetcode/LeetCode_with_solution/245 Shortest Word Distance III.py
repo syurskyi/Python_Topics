@@ -21,7 +21,7 @@ c_ Solution(o..
         ___ pos __ pos_lst1:
             idx bisect_left(pos_lst2, pos)
             ___ nei __ (-1, 0
-                __ 0 <_ idx+nei < l..(pos_lst2) a.. pos != pos_lst2[idx+nei]:
+                __ 0 <_ idx+nei < l..(pos_lst2) a.. pos !_ pos_lst2[idx+nei]:
                     mini m..(mini, a..(pos-pos_lst2[idx+nei]
 
         r.. mini

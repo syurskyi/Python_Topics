@@ -14,7 +14,7 @@ c_ Solution(o..
     s, e newInterval.start, newInterval.end
     left f.. l.... x: x.end < newInterval.start, intervals)
     right f.. l.... x: x.start > newInterval.end, intervals)
-    __ left + right != intervals:
+    __ left + right !_ intervals:
       s m..(intervals[l..(left)].start, s)
       e m..(intervals[~l..(right)].end, e)
     r.. left + [Interval(s, e)] + right

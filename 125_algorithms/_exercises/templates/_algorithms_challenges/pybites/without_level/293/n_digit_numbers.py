@@ -8,7 +8,7 @@ ___ n_digit_number(number: T, n: i..) __ i..:
     '''converts number to an n-digit int, preserving sign'''
     sign -1 __ number < 0 ____ 1
     num a..(number)
-    dexp n - i..(m__.log10(num - 1 __ num !=0 ____ 0
+    dexp n - i..(m__.log10(num - 1 __ num !_0 ____ 0
     res num * 10**(dexp)
     r.. i..(sign * res)
 

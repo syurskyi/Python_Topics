@@ -17,7 +17,7 @@ c_ Solution:
         :rtype: int
         """
         __ (n.. s o. n.. e o.
-            l..(s) != l..(e) o. n.. D
+            l..(s) !_ l..(e) o. n.. D
             r.. 0
         __ s __ e:
             r.. 1

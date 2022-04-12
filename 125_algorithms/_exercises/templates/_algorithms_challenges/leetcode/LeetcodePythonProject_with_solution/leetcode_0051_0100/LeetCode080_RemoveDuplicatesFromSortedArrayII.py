@@ -14,7 +14,7 @@ c_ Solution(o..
             r.. l..(nums)
         prev, curr 1, 2
         w.... curr < l..(nums
-            __ nums[curr] != nums[prev] o. nums[curr] != nums[prev-1]:
+            __ nums[curr] !_ nums[prev] o. nums[curr] !_ nums[prev-1]:
                 prev += 1
                 nums[prev] nums[curr]
             curr += 1

@@ -24,7 +24,7 @@ c_ Solution(o..
                 maxInd i
         ind maxInd
         res    # list
-        w.... ind != -1:
+        w.... ind !_ -1:
             res.insert(0, nums[ind])
             ind idx[ind]
         r.. res

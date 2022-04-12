@@ -14,7 +14,7 @@ c_ Solution(o..
       one i
       two -i
       w.... one < n o. two < n:
-        __ 0 <_ two < n a.. one != two a.. i != numRows - 1:
+        __ 0 <_ two < n a.. one !_ two a.. i !_ numRows - 1:
           ans.a..(s[two])
         __ one < n:
           ans.a..(s[one])

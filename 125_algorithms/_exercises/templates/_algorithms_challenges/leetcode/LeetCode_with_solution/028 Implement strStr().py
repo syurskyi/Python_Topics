@@ -52,7 +52,7 @@ c_ Solution:
                 cnd += 1
                 T[pos] cnd
                 pos += 1
-            ____ T[cnd]!=-1:
+            ____ T[cnd]!_-1:
                 cnd T[cnd]
             ____
                 cnd 0
@@ -68,7 +68,7 @@ c_ Solution:
                 __ i__ln:
                     r.. haystack[m:]
             ____
-                __ T[i]!=-1:
+                __ T[i]!_-1:
                     m m+i-T[i]
                     i T[i]
                 ____

@@ -5,7 +5,7 @@ c_ Solution:
             r.. F..
         num_digit 0
         y x
-        w.... y != 0:
+        w.... y !_ 0:
             y /= 10
             num_digit += 1
         __ num_digit <_ 1:

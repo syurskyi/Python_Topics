@@ -3,7 +3,7 @@ ___ divisor_generator(n
     ___ i __ r..(2, i..(n ** 0.5) + 1
         __ n % i __ 0:
             y.. i
-            __ i * i != n:
+            __ i * i !_ n:
                 y.. n // i
 
 

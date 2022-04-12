@@ -104,7 +104,7 @@ ___ four_day_weekends $,
             before_days paid_time_off//8
             new_balance paid_time_off -  HOURS *  four_day_weekends * 2
             new_days a..(new_balance // 8)
-            title f'{four_day_weekends} Four-Day Weekend{"s" __ four_day_weekends != 1 ____ ""}'
+            title f'{four_day_weekends} Four-Day Weekend{"s" __ four_day_weekends !_ 1 ____ ""}'
             print _*{title:^{number}}')
             print('='* 24)
 

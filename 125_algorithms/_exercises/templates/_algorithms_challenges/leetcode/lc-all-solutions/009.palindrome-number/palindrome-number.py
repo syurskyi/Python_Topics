@@ -18,7 +18,7 @@ c_ Solution(o..
     :type x: int
     :rtype: bool
     """
-    __ x < 0 o. (x != 0 a.. x % 10 __ 0
+    __ x < 0 o. (x !_ 0 a.. x % 10 __ 0
       r.. F..
     half 0
     w.... x > half:

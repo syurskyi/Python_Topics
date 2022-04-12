@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: bool
         """
         sumVal s..(nums)
-        __ sumVal%k != 0:
+        __ sumVal%k !_ 0:
             r.. F..
         nums.s..(r.._T..
         r.. helper(nums, [0]*k, sumVal//k, 0, k)

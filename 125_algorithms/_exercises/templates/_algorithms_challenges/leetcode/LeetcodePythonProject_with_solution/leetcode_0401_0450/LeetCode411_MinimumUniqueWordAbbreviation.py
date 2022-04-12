@@ -9,10 +9,10 @@ c_ Solution(o..
         diffs    # list
         m l..(target)
         ___ word __ dictionary:
-            __ l..(word) != m: _____
+            __ l..(word) !_ m: _____
             bits 0
             ___ i, c __ e..(word
-                __ c != target[i]:
+                __ c !_ target[i]:
                     bits += 2**i
             diffs.a..(bits)
         __ n.. diffs:

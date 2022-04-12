@@ -8,7 +8,7 @@ c_ Solution:
     @return: Return if the graph is cyclic
     """
     ___ isCyclicGraph  start, end
-        __ n.. start o. n.. end o. l..(start) != l..(end
+        __ n.. start o. n.. end o. l..(start) !_ l..(end
             r.. F..
 
         n l..(start)

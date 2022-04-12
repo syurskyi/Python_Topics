@@ -63,7 +63,7 @@ c_ Solution(o..
             mul %= 10
             ret.a..(mul)
 
-        __ carry != 0:
+        __ carry !_ 0:
             ret.a..(carry)
 
         r.. ret
@@ -103,7 +103,7 @@ c_ Solution(o..
             carry sm/10
             ret.a..(sm % 10)
 
-        __ carry != 0:
+        __ carry !_ 0:
             ret.a..(carry)
 
         r.. ret

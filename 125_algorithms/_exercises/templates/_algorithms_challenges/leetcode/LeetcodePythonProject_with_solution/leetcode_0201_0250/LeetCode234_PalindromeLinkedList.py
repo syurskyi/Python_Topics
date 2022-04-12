@@ -37,7 +37,7 @@ c_ Solution(o..
         node1 head
         node2 p1
         w.... node1 a.. node2:
-            __ node1.val != node2.val:
+            __ node1.val !_ node2.val:
                 r.. F..
             node1 node1.next
             node2 node2.next

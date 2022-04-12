@@ -30,7 +30,7 @@ c_ Solution(o..
             r.. T..
         __ n.. s o. n.. t:
             r.. F..
-        __ s.val != t.val:
+        __ s.val !_ t.val:
             r.. F..
         r.. isSameTree(s.left, t.left) a..\
             isSameTree(s.right, t.right)

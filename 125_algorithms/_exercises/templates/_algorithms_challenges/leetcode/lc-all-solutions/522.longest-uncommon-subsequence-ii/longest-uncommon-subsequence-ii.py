@@ -6,7 +6,7 @@ c_ Solution(o..
     """
 
     ___ findLUSlength(a, b
-      r.. m..(l..(a), l..(b __ a != b ____ -1
+      r.. m..(l..(a), l..(b __ a !_ b ____ -1
 
     ___ isSubsequence(s, t
       d c...d..(l..)
@@ -25,7 +25,7 @@ c_ Solution(o..
     ___ i __ r..(l..(strs:
       flag T..
       ___ j __ r..(l..(strs:
-        __ i != j a.. (findLUSlength(strs[i], strs[j]) __ -1 o. isSubsequence(strs[i], strs[j]:
+        __ i !_ j a.. (findLUSlength(strs[i], strs[j]) __ -1 o. isSubsequence(strs[i], strs[j]:
           flag F..
           _____
       __ flag:

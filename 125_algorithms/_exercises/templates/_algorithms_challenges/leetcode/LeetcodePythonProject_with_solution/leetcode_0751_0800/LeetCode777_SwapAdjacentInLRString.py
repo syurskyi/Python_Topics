@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: bool
         """
         _______ __
-        __ __.sub('X', '', start) != __.sub('X', '', end
+        __ __.sub('X', '', start) !_ __.sub('X', '', end
             r.. F..
         p1, p2 0, 0
         w.... p1 < l..(start) a.. p2 < l..(end
@@ -23,7 +23,7 @@ c_ Solution(o..
                 r.. T..
             __ p1 __ l..(start) o. p2 __ l..(end
                 r.. F..
-            __ start[p1] != end[p2]:
+            __ start[p1] !_ end[p2]:
                 r.. F..
             # if the character is 'L', it can only be moved to the left. p1 should be greater or equal to p2.
             __ start[p1] __ 'L' a.. p2 > p1:
@@ -47,7 +47,7 @@ c_ Solution(o..
             __ end[i] __ 'L': l += 1
             __ start[i] __ 'L': l -_ 1
             __ end[i] __ 'R': r -_ 1
-            __ (l < 0 o. r != 0) a.. (l != 0 o. r < 0
+            __ (l < 0 o. r !_ 0) a.. (l !_ 0 o. r < 0
                 r.. F..
         __ l __ 0 a.. r __ 0:
             r.. T..

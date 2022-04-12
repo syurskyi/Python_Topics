@@ -11,4 +11,4 @@ c_ Solution(o..
         ans += div
         ans += num / div
       div += 1
-    r.. ans __ num __ num != 1 ____ F..
+    r.. ans __ num __ num !_ 1 ____ F..

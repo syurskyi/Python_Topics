@@ -33,7 +33,7 @@ ____ t___ _______ L..
 c_ Solution:
     ___ canThreePartsEqualSum  A: L..[i..]) __ b..:
         s s..(A)
-        __ s % 3 != 0:
+        __ s % 3 !_ 0:
             r.. F..
 
         target s // 3

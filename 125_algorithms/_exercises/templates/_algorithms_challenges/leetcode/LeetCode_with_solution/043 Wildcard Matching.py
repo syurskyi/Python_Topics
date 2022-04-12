@@ -88,7 +88,7 @@ c_ Solution:
                 # for i in xrange(m, 0, -1):
                 #     dp[i] = any(dp[k] for k in xrange(i))  # Time Complexity
                 k 0
-                w.... k<m+1 a.. dp[k]!=T.. k+= 1
+                w.... k<m+1 a.. dp[k]!_T.. k+= 1
                 ___ i __ x..(k, m+1
                     dp[i] T..
             ____

@@ -53,7 +53,7 @@ c_ Solution:
         stk    # list
         n l..(pushed)
         w.... i < n a.. j < n:
-            w.... i < n a.. (n.. stk o. stk[-1] != popped[j]
+            w.... i < n a.. (n.. stk o. stk[-1] !_ popped[j]
                 stk.a..(pushed[i])
                 i += 1
 

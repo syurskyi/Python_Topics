@@ -86,7 +86,7 @@ c_ Solution:
             # its height is the current height of the skyline.
             new_h heap_h[0].h __ heap_h ____ 0
 
-            __ new_h != cur_h:
+            __ new_h !_ cur_h:
                 cur_h new_h
                 ret.a..([x, cur_h])
 

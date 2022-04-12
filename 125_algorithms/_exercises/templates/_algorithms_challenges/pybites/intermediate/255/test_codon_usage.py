@@ -44,7 +44,7 @@ ___ get_whole_table(table
         entry.s...s.. 
         ___ line __ table.s...s..("\n")
         ___ entry __ line.s..("|")
-        __ entry.r..("-", "") != "" a.. entry.s.. != ""
+        __ entry.r..("-", "") !_ "" a.. entry.s.. !_ ""
     ]
 
 

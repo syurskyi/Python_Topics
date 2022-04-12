@@ -33,7 +33,7 @@ c_ Solution(o..
             i += 1
         res res[::-1]
         ___ i, c __ e..(res
-            __ c != '0':
+            __ c !_ '0':
                 res res[i:]
                 _____
         ____

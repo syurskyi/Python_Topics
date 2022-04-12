@@ -25,7 +25,7 @@ c_ Solution:
         """
         brute force O(n^2), shift and compare but short circuit
         """
-        __ l..(A) != l..(B
+        __ l..(A) !_ l..(B
             r.. F..
 
         __ n.. A a.. n.. B:
@@ -33,7 +33,7 @@ c_ Solution:
 
         ___ i __ r..(1, l..(A:
             ___ j __ r..(l..(B:
-                __ A[(i + j) % l..(A)] != B[j]:
+                __ A[(i + j) % l..(A)] !_ B[j]:
                     _____
             ____
                 r.. T..

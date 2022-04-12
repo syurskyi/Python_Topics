@@ -11,7 +11,7 @@ c_ Solution(o..
         _____
       p start
       length 1
-      w.... nums[p] != start:
+      w.... nums[p] !_ start:
         cache[nums[p]] 1
         p nums[p]
         length += 1

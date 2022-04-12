@@ -17,7 +17,7 @@ c_ Solution:
             w.... left < right a.. n.. s[right].i..
                 right -_ 1
 
-            __ s[left] != s[right]:
+            __ s[left] !_ s[right]:
                 r.. F..
 
             left += 1

@@ -28,7 +28,7 @@ ____ d__ _______ t..
 NOW d__.n..
 
 
-c_ Promo:
+c_ Promo
 
     ___ - , name, expires=NOW
         name name

@@ -16,6 +16,6 @@ c_ Solution(o..
       ____ s[(start + 1) % n] __ " ":
         start += 2
       ____
-        w.... start > 0 a.. s[(start - 1) % n] != " ":
+        w.... start > 0 a.. s[(start - 1) % n] !_ " ":
           start -_ 1
     r.. start / n

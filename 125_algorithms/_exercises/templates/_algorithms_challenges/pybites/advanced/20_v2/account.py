@@ -8,7 +8,7 @@ c_ Account:
         r.. s..(_transactions)
 
     ___ __add__  amount
-        _transactions.a..(amount)
+        _transactions.a.. ?)
 
     ___ __sub__  amount
         _transactions.a..(-amount)

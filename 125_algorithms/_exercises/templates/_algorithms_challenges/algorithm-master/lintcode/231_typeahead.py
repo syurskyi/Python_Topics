@@ -12,7 +12,7 @@ c_ Typeahead:
                     substr key[l:r]
                     __ substr n.. __ map:
                         map[substr] [key]
-                    ____ map[substr][-1] != key:
+                    ____ map[substr][-1] !_ key:
                         map[substr].a..(key)
 
     """

@@ -20,7 +20,7 @@ ___ get_all_days(start_date: date, end_date: date) __ L..[date]:
     dates    # list
 
     current_date start_date
-    w.... current_date != end_date:
+    w.... current_date !_ end_date:
         dates.a..(current_date)
         current_date += dt.t..(d.._1)
     

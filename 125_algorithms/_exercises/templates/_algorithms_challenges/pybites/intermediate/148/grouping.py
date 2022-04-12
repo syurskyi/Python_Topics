@@ -35,7 +35,7 @@ ___ group_cars_by_manufacturer(cars
         cars_description += f"{value[0].u..}\n"
         ___ model __ value[1]:
             cars_description += f"- {model}\n"
-        __ idx != l..(cars_grouped
+        __ idx !_ l..(cars_grouped
             cars_description += "\n"
     print(cars_description)
 

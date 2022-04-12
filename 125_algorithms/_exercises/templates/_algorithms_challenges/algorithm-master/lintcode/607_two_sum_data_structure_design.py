@@ -20,7 +20,7 @@ c_ TwoSum:
             remaining value - num
             __ remaining n.. __ count:
                 _____
-            __ remaining != num:
+            __ remaining !_ num:
                 r.. T..
             __ remaining __ num a.. count[num] > 1:
                 r.. T..

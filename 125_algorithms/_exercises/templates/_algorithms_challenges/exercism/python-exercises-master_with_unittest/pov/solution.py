@@ -59,7 +59,7 @@ c_ Tree(o..
         reordered from_pov(from_node)
         stack reordered.children
         p.. [from_node]
-        w.... p..[-1] != to_node:
+        w.... p..[-1] !_ to_node:
             ___
                 tree stack.p.. )
             ______ I..

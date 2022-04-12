@@ -17,7 +17,7 @@ c_ Solution(o..
         """
         Enumerate example and find the pattern
         """
-        r.. n % 4 != 0
+        r.. n % 4 !_ 0
 
     ___ canWinNim_TLE  n
         """

@@ -17,7 +17,7 @@ c_ Solution(o..
             last1, last2 minInd1, minInd2
             minInd1, minInd2 -1, -1
             ___ j __ r..(k
-                __ j != last1:
+                __ j !_ last1:
                     costs[i][j] += 0 __ last1 < 0 ____ costs[i-1][last1]
                 ____
                     costs[i][j] += 0 __ last2 < 0 ____ costs[i-1][last2]
@@ -40,7 +40,7 @@ c_ Solution(o..
             ___ j __ r..(k
                 minList    # list
                 ___ l __ r..(k
-                    __ j != l:
+                    __ j !_ l:
                         minList.a..(costs[i-1][l])
                 costs[i][j] += m..(minList)
         r.. m..(costs[-1])

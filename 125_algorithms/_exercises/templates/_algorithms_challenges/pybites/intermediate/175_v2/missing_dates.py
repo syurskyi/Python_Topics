@@ -18,7 +18,7 @@ ___ get_missing_dates(dates
 
         next_date date + t..(d.._1)
 
-        w.... next_date != dates[i +1]:
+        w.... next_date !_ dates[i +1]:
             missing.a..(next_date)
             next_date += t..(d.._1)
     

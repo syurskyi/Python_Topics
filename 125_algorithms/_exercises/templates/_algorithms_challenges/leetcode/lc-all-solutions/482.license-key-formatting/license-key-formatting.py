@@ -10,7 +10,7 @@ c_ Solution(o..
     n l..(s)
     start n % K
     res    # list
-    __ start != 0:
+    __ start !_ 0:
       res.a..(s[:start].u..
     ___ k __ r..(0, (l..(s) - start) / K
       res.a..(s[start:start + K].u..

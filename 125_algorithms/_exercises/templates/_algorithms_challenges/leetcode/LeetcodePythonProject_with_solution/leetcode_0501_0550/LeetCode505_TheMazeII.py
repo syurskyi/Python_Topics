@@ -36,10 +36,10 @@ c_ Solution(o..
             x, y i, j
             dist 0
             w.... 0 <_ x+dir[0] < m a.. 0 <_ y+dir[1] < n a..\
-                maze[x+dir[0]][y+dir[1]] != 1:
+                maze[x+dir[0]][y+dir[1]] !_ 1:
                 x += dir[0]
                 y += dir[1]
                 dist += 1
-            __ x != i o. y != j:
+            __ x !_ i o. y !_ j:
                 steps.add((x, y, dist
         r.. l..(steps)

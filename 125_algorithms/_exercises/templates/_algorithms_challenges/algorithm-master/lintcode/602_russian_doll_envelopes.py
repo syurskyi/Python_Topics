@@ -12,7 +12,7 @@ c_ Solution:
     @return: the maximum number of envelopes
     """
     ___ maxEnvelopes  E
-        __ n.. E o. n.. E[0] o. l..(E[0]) != 2:
+        __ n.. E o. n.. E[0] o. l..(E[0]) !_ 2:
             r.. 0
 
         E.s..(key=l.... e: (e[0], -e[1]

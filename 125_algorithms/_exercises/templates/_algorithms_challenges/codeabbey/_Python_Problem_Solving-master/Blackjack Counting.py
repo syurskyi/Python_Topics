@@ -14,7 +14,7 @@ ___ i __ r..(i..(input())):
             tot +=  temp
         ______:
             #check if it is other than 'A' then add 10 to total TKJQ
-            __ j != 'A':
+            __ j !_ 'A':
                 tot += 10
             ____
                 #if A then check whether adding A = 11 it goes above 21

@@ -30,7 +30,7 @@ c_ Solution:
         :return: Boolean
         """
         n l..(board)
-        __ a..([board[i/n][i%n]!="." ___ i __ x..(n*n)]
+        __ a..([board[i/n][i%n]!_"." ___ i __ x..(n*n)]
             r.. T..
 
         ___ i __ x..(n
@@ -39,11 +39,11 @@ c_ Solution:
                     ___ num __ r..(1, 10
                         num_str s..(num)
                         # row
-                        condition_row a..([board[i][col]!=num_str ___ col __ x..(n)])
+                        condition_row a..([board[i][col]!_num_str ___ col __ x..(n)])
                         # col
-                        condition_col a..([board[row][j]!=num_str ___ row __ x..(n)])
+                        condition_col a..([board[row][j]!_num_str ___ row __ x..(n)])
                         # square
-                        condition_square a..([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count __ x..(n)])
+                        condition_square a..([board[i/3*3+count/3][j/3*3+count%3]!_num_str ___ count __ x..(n)])
 
                         __ condition_col a.. condition_row a.. condition_square:
                             board[i][j] num_str
@@ -70,9 +70,9 @@ c_ Solution:
                 num_str s..(num)  # try number
                 # To speed up, use condition short-curcit.
                 # row, col, square
-                __ a..([board[i][col]!=num_str ___ col __ x..(9)]) a.. \
-                        a..([board[row][j]!=num_str ___ row __ x..(9)]) a.. \
-                        a..([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count __ x..(9)]
+                __ a..([board[i][col]!_num_str ___ col __ x..(9)]) a.. \
+                        a..([board[row][j]!_num_str ___ row __ x..(9)]) a.. \
+                        a..([board[i/3*3+count/3][j/3*3+count%3]!_num_str ___ count __ x..(9)]
                     board[i][j] num_str
                     __ n.. solve(board, i, j+1
                         board[i][j] "."  # restore, backtrack, save space

@@ -31,7 +31,7 @@ c_ Solution(o..
         i 0
         j 0
         w.... i < l..(s) a.. j < l..(t
-            __ t[j] != s[i]:
+            __ t[j] !_ s[i]:
                 j += 1
             ____
                 i += 1

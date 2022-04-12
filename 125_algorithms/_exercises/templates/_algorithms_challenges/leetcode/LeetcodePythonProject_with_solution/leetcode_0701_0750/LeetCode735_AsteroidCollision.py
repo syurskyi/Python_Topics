@@ -16,7 +16,7 @@ c_ Solution(o..
             w.... i < l..(asteroids
                 __ i+1 <l..(asteroids) a..\
                     asteroids[i] > 0 a.. asteroids[i+1] < 0:
-                    __ asteroids[i] + asteroids[i+1] != 0:
+                    __ asteroids[i] + asteroids[i+1] !_ 0:
                         val asteroids[i] __ asteroids[i]+asteroids[i+1] > 0\
                             ____ asteroids[i+1]
                         res.a..(val)

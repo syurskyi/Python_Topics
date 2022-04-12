@@ -35,7 +35,7 @@ c_ Solution(o..
     ___ dfsLeaves(root, res, mid
       __ n.. root:
         r..
-      __ n.. root.left a.. n.. root.right a.. root != mid:
+      __ n.. root.left a.. n.. root.right a.. root !_ mid:
         res.a..(root.val)
       dfsLeaves(root.left, res, mid)
       dfsLeaves(root.right, res, mid)

@@ -36,7 +36,7 @@ c_ Solution:
                 __ target n.. __ reverse_map:
                     _____
                 ___ index __ reverse_map[target]:
-                    __ i != index a.. j != index:
+                    __ i !_ index a.. j !_ index:
                         result.a..([num[i], num[j], target])
                         _____
         r.. result
@@ -64,7 +64,7 @@ c_ Solution:
                 __ target n.. __ reverse_map:
                     _____
                 ___ index __ reverse_map[target]:
-                    __ index != i a.. index != j:
+                    __ index !_ i a.. index !_ j:
                         lst s..([num[i], num[j], target])
                         lst t..(lst)
                         result[lst] 1  # hash

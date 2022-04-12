@@ -37,7 +37,7 @@ c_ Solution(o..
 
         pathset.add(v)
         ___ nbr __ V[v]:
-            __ nbr != pi:  # since undirected graph
+            __ nbr !_ pi:  # since undirected graph
                 __ n.. dfs(V, nbr, v, pathset, visited
                     r.. F..
 

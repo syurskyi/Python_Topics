@@ -49,7 +49,7 @@ c_ Solution:
         ___ i __ x..(l_b-l_a
             cur_b cur_b.next
 
-        w.... cur_a != cur_b:
+        w.... cur_a !_ cur_b:
             cur_a cur_a.next
             cur_b cur_b.next
 

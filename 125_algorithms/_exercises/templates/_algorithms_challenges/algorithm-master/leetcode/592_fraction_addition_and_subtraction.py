@@ -9,7 +9,7 @@ c_ Solution:
         """
         S    # list  # signs
 
-        __ E[0] != '-':
+        __ E[0] !_ '-':
             S.a..('+')
 
         ___ c __ E:

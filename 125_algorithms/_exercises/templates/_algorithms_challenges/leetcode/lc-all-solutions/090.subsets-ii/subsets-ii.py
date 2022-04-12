@@ -9,7 +9,7 @@ c_ Solution(o..
       res.a..(p.. + [])
 
       ___ i __ r..(start, l..(nums:
-        __ start != i a.. nums[i] __ nums[i - 1]:
+        __ start !_ i a.. nums[i] __ nums[i - 1]:
           _____
         __ i n.. __ visited:
           visited[i] 1

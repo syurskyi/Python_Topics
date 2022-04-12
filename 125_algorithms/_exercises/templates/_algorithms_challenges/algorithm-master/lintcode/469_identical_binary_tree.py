@@ -20,7 +20,7 @@ c_ Solution:
         __ n.. A o. n.. B:
             r.. F..
 
-        __ A.val != B.val:
+        __ A.val !_ B.val:
             r.. F..
 
         r.. (

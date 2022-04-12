@@ -26,7 +26,7 @@ c_ Solution:
         dp [s..([index]) ___ index __ r..(length)]
 
         ___ ind, val __ e..(A
-            __ ind!=0 a.. l..(dp[ind])<2:
+            __ ind!_0 a.. l..(dp[ind])<2:
                 _____
 
             # jump forward

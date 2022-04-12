@@ -62,10 +62,10 @@ c_ Solution:
             ret f__("-inf")
             c2 r1 + c1 - r2   # r1 + c1 == r2 + c2
             __ 0 <_ r1 < n a.. 0 <_ c1 < n a.. 0 <_ r2 < n a.. 0 <_ c2 < n:
-                __ grid[r1][c1] != -1 a.. grid[r2][c2] != -1:
+                __ grid[r1][c1] !_ -1 a.. grid[r2][c2] !_ -1:
                     ret 0
                     ret += grid[r1][c1]
-                    __ r1 != r2:
+                    __ r1 !_ r2:
                         ret += grid[r2][c2]
 
                     __ r1 __ n - 1 a.. c1 __ n - 1:

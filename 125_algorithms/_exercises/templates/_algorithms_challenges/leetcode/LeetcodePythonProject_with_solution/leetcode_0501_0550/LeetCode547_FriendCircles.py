@@ -19,13 +19,13 @@ c_ Solution(o..
                 __ i > j a.. matrix[i][j] __ 1:
                     root1 getRoot(roots, i)
                     root2 getRoot(roots, j)
-                    __ root1 != root2:
+                    __ root1 !_ root2:
                         count -_ 1
                         roots[root1] root2
         r.. count
     
     ___ getRoot  roots, num
-        w.... roots[num] != -1:
+        w.... roots[num] !_ -1:
             num roots[num]
         r.. num
     

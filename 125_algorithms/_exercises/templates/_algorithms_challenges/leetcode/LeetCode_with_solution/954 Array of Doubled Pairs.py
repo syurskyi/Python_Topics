@@ -63,7 +63,7 @@ c_ Solution:
             counter[a] -_ 1
             __ a > 0:
                 target 2 * a
-            ____ a % 2 != 0:
+            ____ a % 2 !_ 0:
                 r.. F..
             ____
                 target a // 2

@@ -24,7 +24,7 @@ c_ ConnectingGraph3:
     ___ connect  a, b
         root_a find(a)
         root_b find(b)
-        __ root_a != root_b:
+        __ root_a !_ root_b:
             nodes[root_a] root_b
             count -_ 1
 

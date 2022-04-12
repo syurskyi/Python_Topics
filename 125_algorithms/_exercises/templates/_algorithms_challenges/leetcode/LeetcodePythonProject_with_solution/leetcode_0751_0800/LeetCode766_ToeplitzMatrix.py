@@ -15,14 +15,14 @@ c_ Solution(o..
             ___ k __ r..(1, n
                 __ i+k >_ m o. k >_ n:
                     _____
-                __ matrix[i+k][k] != val:
+                __ matrix[i+k][k] !_ val:
                     r.. F..
         ___ j __ r..(n
             val matrix[0][j]
             ___ k __ r..(1, m
                 __ j+k >_ n o. k >_ m:
                     _____
-                __ matrix[k][j+k] != val:
+                __ matrix[k][j+k] !_ val:
                     r.. F..
         r.. T..
     

@@ -13,7 +13,7 @@ c_ Solution(o..
         res    # list
         left 0
         ___ i __ r..(l..(s)+1
-            __ i __ l..(s) o. s[i] != s[left]:
+            __ i __ l..(s) o. s[i] !_ s[left]:
                 __ i-left >_ 3:
                     res.a..([left, i-1])
                 left i

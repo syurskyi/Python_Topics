@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: bool
         """
         w W
-        __ l..(hand) % w != 0:
+        __ l..(hand) % w !_ 0:
             r.. F..
         hashmap    # dict
         ___ num __ hand:

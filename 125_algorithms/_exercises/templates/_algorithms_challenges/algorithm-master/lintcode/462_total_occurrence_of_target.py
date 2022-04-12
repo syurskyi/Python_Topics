@@ -31,7 +31,7 @@ c_ Solution:
 
         start left __ A[left] __ target ____ right
 
-        __ A[start] != target:
+        __ A[start] !_ target:
             r.. 0
 
         left, mid, right 0, 0, n - 1

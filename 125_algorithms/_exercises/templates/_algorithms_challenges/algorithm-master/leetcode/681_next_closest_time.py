@@ -34,7 +34,7 @@ c_ Solution:
 
             r.. ''
 
-        times [i..(t) ___ t __ t__ __ t != ':'
+        times [i..(t) ___ t __ t__ __ t !_ ':'
         d..    # list
 
         ___ a __ s..(times

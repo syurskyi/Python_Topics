@@ -23,7 +23,7 @@ c_ Solution(o..
         ___ i __ r..(0, l..(queue:
           label, parent queue.popleft()
           ___ child __ graph.g.. label, []
-            __ child != parent:
+            __ child !_ parent:
               queue.a..((child, label
               __ level > maxLevel:
                 maxLevel level

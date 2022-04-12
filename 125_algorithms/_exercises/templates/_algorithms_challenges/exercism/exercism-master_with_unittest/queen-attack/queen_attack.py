@@ -34,7 +34,7 @@ c_ Board:
                 valid_coord(black_coords
 
     ___ different_coords
-        r.. white_coords != black_coords
+        r.. white_coords !_ black_coords
 
     $
     ___ valid_coord(coord

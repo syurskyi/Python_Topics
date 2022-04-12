@@ -41,7 +41,7 @@ ___ i __ r..(i..(input())):
     #if the starting element and the last element of the list are same then pop, else the give string is not nested properly
     # and the result is 0
     __ checker __ T..
-        w.... l..(store_str) != 1:
+        w.... l..(store_str) !_ 1:
             ___
                 __ p[store_str[0]] __ store_str[-1]:
                     store_str.p.. 0)

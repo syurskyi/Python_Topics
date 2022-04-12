@@ -24,7 +24,7 @@ ___ get_most_complex_bites(N=10, stats=stats
     w__ o.. stats, encoding="utf-8-sig") __ f:
         bites l..(csv.reader(f, delimiter=';'
     bites.p.. 0)  # remove header
-    bites [[b[0], f__(b[1])] ___ b __ bites __ b[1] != 'None'
+    bites [[b[0], f__(b[1])] ___ b __ bites __ b[1] !_ 'None'
     bites.s..(key=l.... x: x[1], r.._T..
 
     n_most_comp bites[:N]

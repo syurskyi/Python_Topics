@@ -44,7 +44,7 @@ ___ most_popular_characters(characters=characters, top=5
     """
     result C..()
     ___ char __ characters:
-        result[char.name + ',' + char.year] += i..(char.appearances) __ char.appearances != '' ____ 0
+        result[char.name + ',' + char.year] += i..(char.appearances) __ char.appearances !_ '' ____ 0
     r.. [x[0].s.. ',' 0 ___ x __ result.most_common(top)]
 
 

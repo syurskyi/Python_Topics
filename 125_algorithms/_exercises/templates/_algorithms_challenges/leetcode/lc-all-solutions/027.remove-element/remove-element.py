@@ -7,7 +7,7 @@ c_ Solution(o..
     """
     slow -1
     ___ i __ r..(0, l..(nums:
-      __ nums[i] != val:
+      __ nums[i] !_ val:
         slow += 1
         nums[slow] nums[i]
     r.. slow + 1

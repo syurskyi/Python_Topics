@@ -7,7 +7,7 @@ c_ Solution:
         """
         __ s __ t:
             r.. T..
-        __ n.. s o. n.. t o. l..(s) != l..(t
+        __ n.. s o. n.. t o. l..(s) !_ l..(t
             r.. F..
 
         freq    # dict

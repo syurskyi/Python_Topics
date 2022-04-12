@@ -73,7 +73,7 @@ c_ Car:
 
     $
     ___ has_same_configuration(config1, config2
-        __ t..(config1) != l.. o. t..(config2) != l..:  # *
+        __ t..(config1) !_ l.. o. t..(config2) !_ l..:  # *
             r.. T..()
         r.. config1 __ config2  # *
 
@@ -103,7 +103,7 @@ ___ is_same_instance_of_car(car1, car2
 config1    # dict
 config2 [['gas', 'electro', 'hybrid' , '200 PS', 'radio'
 
-__ t..(config1) != l.. o. t..(config2) != l..:
+__ t..(config1) !_ l.. o. t..(config2) !_ l..:
     r.. T..()
 ____
     print("OK")

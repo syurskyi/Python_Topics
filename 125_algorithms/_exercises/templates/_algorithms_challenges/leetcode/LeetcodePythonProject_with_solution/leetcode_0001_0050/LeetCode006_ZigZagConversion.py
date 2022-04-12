@@ -17,6 +17,6 @@ c_ Solution(o..
         ___ i __ r..(numRows
             ___ j __ r..(i, l..(s), step
                 res += s[j]
-                __ i != 0 a.. i != numRows-1 a.. j+step-2*i < l..(s
+                __ i !_ 0 a.. i !_ numRows-1 a.. j+step-2*i < l..(s
                     res += s[j+step-2*i]
         r.. res

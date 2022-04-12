@@ -31,7 +31,7 @@ c_ Solution(o..
         w.... i < l..(s
             __ s[i].i..  # construct number from digit
                 j i+1
-                w.... s[j] != ' ': j += 1
+                w.... s[j] !_ ' ': j += 1
                 stk.a..([
                     i..(s[i:j]), []
                 ])
@@ -60,7 +60,7 @@ c_ SolutionVerbose(o..
         w.... i < l..(s
             __ s[i].i..  # construct number from digit
                 j i+1
-                w.... s[j] != ' ': j += 1
+                w.... s[j] !_ ' ': j += 1
                 stk.a..([
                     i..(s[i:j]), []
                 ])
@@ -96,7 +96,7 @@ c_ SolutionError(o..
         w.... i < l..(s
             __ s[i].i..
                 j i + 1
-                w.... s[j] != ' ': j += 1
+                w.... s[j] !_ ' ': j += 1
                 prev stk[-1] __ stk ____ 1
                 stk.a..(prev * i..(s[i:j]
                 i j + 1

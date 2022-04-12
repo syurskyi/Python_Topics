@@ -6,6 +6,6 @@ c_ Solution(o..
     """
     i j 0
     ___ i __ r..(0, l..(nums:
-      __ nums[i] != 0:
+      __ nums[i] !_ 0:
         nums[j], nums[i] nums[i], nums[j]
         j += 1

@@ -36,7 +36,7 @@ c_ Solution:
             ____
                 hi += 1
 
-        r.. mini __ mini != ___.maxint ____ 0
+        r.. mini __ mini !_ ___.maxint ____ 0
 
 
 __ _______ __ _______

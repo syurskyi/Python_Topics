@@ -27,7 +27,7 @@ c_ BridgeHand:
             r.. V...("all values in Seuqence must be instance of Card")
 
 
-        __ l..(cards) != 13:
+        __ l..(cards) !_ 13:
             r.. V...("Must have 13 cards")
         
 
@@ -130,20 +130,20 @@ c_ BridgeHand:
         ___ cards __ suit_to_cards.v..
 
             __ l..(cards) __ 1:
-                __ cards[0] != Rank.A:
+                __ cards[0] !_ Rank.A:
                     losing_tricks += 1
             ____
 
                 cards s..(cards,key=l.... x: x.value)
                 __ l..(cards) __ 2:
-                    __ (cards[0] __ Rank.A a.. cards[1] !=Rank.K) o. (cards[0] __ Rank.K
+                    __ (cards[0] __ Rank.A a.. cards[1] !_Rank.K) o. (cards[0] __ Rank.K
                         losing_tricks += 1
-                    ____ cards[0] != Rank.A o.  cards[1] != Rank.K:
+                    ____ cards[0] !_ Rank.A o.  cards[1] !_ Rank.K:
                         losing_tricks += 2
                 ____
                     cards cards |3
 
-                    __ cards != [Rank.A,Rank.K,Rank.Q]:
+                    __ cards !_ [Rank.A,Rank.K,Rank.Q]:
                         __ ((cards[0] __ Rank.A) a.. (cards[1] __ (Rank.K,Rank.Q))) o. (cards[0] __ Rank.K a.. cards[1] __ Rank.Q
                             losing_tricks += 1
                         ____ cards[0] __ (Rank.A,Rank.K,Rank.Q

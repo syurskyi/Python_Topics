@@ -27,7 +27,7 @@ c_ Solution(o..
         x1, y1 points[i].x, points[i].y
         x2, y2 points[j].x, points[j].y
         ku, kd y2 - y1, x2 - x1
-        __ (x1, y1) != (x2, y2
+        __ (x1, y1) !_ (x2, y2
           kg gcd(ku, kd)
           ku /= kg
           kd /= kg

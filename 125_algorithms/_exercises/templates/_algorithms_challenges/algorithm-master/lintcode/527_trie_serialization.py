@@ -47,8 +47,8 @@ c_ Solution:
     '''
     ___ deserialize  data
         __ n.. data \
-                o. data[0] != '<' \
-                o. data[-1] != '>' \
+                o. data[0] !_ '<' \
+                o. data[-1] !_ '>' \
                 o. l..(data) < 1:
             r..
         root TrieNode()

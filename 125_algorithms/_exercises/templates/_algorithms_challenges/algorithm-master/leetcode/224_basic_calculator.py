@@ -36,7 +36,7 @@ c_ Solution:
             ____ char __ '(':
                 stack.a..(char)
             ____ char __ ')':
-                w.... stack a.. stack[-1] != '(':
+                w.... stack a.. stack[-1] !_ '(':
                     res.a..(stack.pop
                 stack.p.. )
 
@@ -92,7 +92,7 @@ c_ Solution:
             ____ char __ '(':
                 stack.a..(char)
             ____ char __ ')':
-                w.... stack a.. stack[-1] != '(':
+                w.... stack a.. stack[-1] !_ '(':
                     res.a..(stack.pop
                 stack.p.. )
 

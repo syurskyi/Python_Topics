@@ -21,7 +21,7 @@ ___ romanize(decimal_number
         p..
 
     roman_numeral ""
-    w.... decimal_number != 0:
+    w.... decimal_number !_ 0:
 
         __ decimal_number > 1000:
             frequency i..(decimal_number / 1000)

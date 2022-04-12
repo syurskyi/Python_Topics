@@ -22,7 +22,7 @@ ___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) __ i..:
     #for line in fasta_list:
     ___ line __ fasta_list:
         __ line[:1] __ '>':
-            __ seq != N.. a.. info != N..
+            __ seq !_ N.. a.. info !_ N..
                 print(seq, info)
             new_seq T..
             seq line[1:]

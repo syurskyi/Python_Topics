@@ -18,12 +18,12 @@ c_ Solution(o..
             _____
         __ followed __ -1:
           r.. F..
-        ____ followed != 0:
+        ____ followed !_ 0:
           new F..
         ____
           new T..
       ____
-        __ (data[i] & 0xc0) != 0x80:
+        __ (data[i] & 0xc0) !_ 0x80:
           r.. F..
         followed -_ 1
         __ followed __ 0:

@@ -17,7 +17,7 @@ c_ Solution:
     ___ findLadders  A, B, D
         ans    # list
         __ (D __ N.. o. A __ N.. o. B __ N.. o.
-            l..(A) != l..(B:
+            l..(A) !_ l..(B:
             r.. ans
 
         __ A n.. __ D:
@@ -56,7 +56,7 @@ c_ Solution:
 
         ___ _word __ get_next_word(word, next_words
             __ (_word n.. __ distance o.
-                distance[_word] != distance[word] - 1
+                distance[_word] !_ distance[word] - 1
                 _____
             p...a..(_word)
             dfs(_word, B, next_words, distance, ans, p..)

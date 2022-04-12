@@ -23,7 +23,7 @@ ___ is_balanced(source, caps
                     ____
                         count[caps[i]] 1
                 ____
-                    __ l..(stack) __ 0 o. stack.p.. ) != caps[i - 1]:
+                    __ l..(stack) __ 0 o. stack.p.. ) !_ caps[i - 1]:
                         r.. F..
     r.. (l..(stack) __ 0) a.. ((s..([v ___ k, v __ count.i..] % 2 __ 0)
 

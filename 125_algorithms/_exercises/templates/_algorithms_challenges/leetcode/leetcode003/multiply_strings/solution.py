@@ -29,7 +29,7 @@ c_ Solution(o..
                 res[m + i] s..(c)
         res ''.j..(res[::-1])
         ___ i, d __ e..(res
-            __ d != '0':
+            __ d !_ '0':
                 r.. res[i:]
         ____
             r.. '0'

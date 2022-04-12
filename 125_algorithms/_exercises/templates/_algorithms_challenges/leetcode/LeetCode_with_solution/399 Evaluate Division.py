@@ -50,7 +50,7 @@ c_ Solution(o..
             __ nbr n.. __ p..:
                 p...add(nbr)
                 val dfs(G, nbr, e, p..)
-                __ val != -1.0:
+                __ val !_ -1.0:
                     r.. val * G[s][nbr]
                 p...remove(nbr)
 

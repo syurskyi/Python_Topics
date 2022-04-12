@@ -24,7 +24,7 @@ c_ Solution(o..
     ___ num_trees_aux  n, t
         __ n __ 0 o. n __ 1:
             r.. 1
-        ____ t[n] != -1:
+        ____ t[n] !_ -1:
             r.. t[n]
         ____
             res 0

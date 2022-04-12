@@ -10,23 +10,23 @@ c_ Solution(o..
         x += 1
         y += 1
         z += 1
-        __ z != -1:
+        __ z !_ -1:
           nums[z] 2
-        __ y != -1:
+        __ y !_ -1:
           nums[y] 1
         nums[x] 0
       ____ nums[i] __ 1:
         y += 1
         z += 1
         nums[z] 2
-        __ x != -1:
+        __ x !_ -1:
           nums[x] 0
-        __ y != -1:
+        __ y !_ -1:
           nums[y] 1
       ____ nums[i] __ 2:
         z += 1
-        __ y != -1:
+        __ y !_ -1:
           nums[y] 1
-        __ x != -1:
+        __ x !_ -1:
           nums[x] 0
         nums[z] 2

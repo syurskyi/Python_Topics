@@ -33,7 +33,7 @@ c_ Solution(o..
                 l mid+1
         __ r __ l..(nums
             r.. [-1, -1]
-        r.. res __ res != [f__('inf'), f__('-inf')] ____ [-1, -1]
+        r.. res __ res !_ [f__('inf'), f__('-inf')] ____ [-1, -1]
     
     ___ test
         testCases [

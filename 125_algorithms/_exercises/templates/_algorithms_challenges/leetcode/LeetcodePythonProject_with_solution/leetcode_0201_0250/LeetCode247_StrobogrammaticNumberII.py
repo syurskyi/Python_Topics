@@ -22,9 +22,9 @@ c_ Solution(o..
         ___ p __ pairs:
             curr[l] p[0]
             curr[r] p[1]
-            __ l __ r a.. p[0] != p[1]:
+            __ l __ r a.. p[0] !_ p[1]:
                 _____
-            ____ l __ 0 a.. l != r a.. p[0] __ '0':
+            ____ l __ 0 a.. l !_ r a.. p[0] __ '0':
                 _____
             helper(l+1, r-1, curr, res)
     
@@ -39,7 +39,7 @@ c_ Solution(o..
             r.. oddMidCandidate
         __ n __ 2:
             r.. evenMidCandidate[:-1]
-        __ n % 2 != 0:
+        __ n % 2 !_ 0:
             pre, midCandidate findStrobogrammatic(n-1), oddMidCandidate
         ____
             pre, midCandidate findStrobogrammatic(n-2), evenMidCandidate

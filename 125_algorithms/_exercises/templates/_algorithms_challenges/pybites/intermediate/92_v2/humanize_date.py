@@ -21,7 +21,7 @@ ___ pretty_date(date
        using TIME_OFFSETS"""
     
 
-    __ t..(date) != d__:
+    __ t..(date) !_ d__:
         r.. V...("Not a datetime")
 
     __ date > NOW:

@@ -24,7 +24,7 @@ c_ Solution(o..
         finalMaxLen dp[i]
         finalMaxLenIdx i
 
-    w.... finalMaxLenIdx != -1:
+    w.... finalMaxLenIdx !_ -1:
       ans.a..(nums[finalMaxLenIdx])
       finalMaxLenIdx p..[finalMaxLenIdx]
     r.. ans

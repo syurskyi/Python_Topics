@@ -19,25 +19,25 @@ c_ Solution(o..
       divider 1000
       ans    # list
       h number / 100
-      __ h != 0:
+      __ h !_ 0:
         ans.a..(digit[h] + " Hundred")
       number number % 100
       __ number __ tenToTwenty:
         ans.a..(tenToTwenty[number])
       ____
         t number / 10
-        __ t != 0:
+        __ t !_ 0:
           ans.a..(tens[t])
         number number % 10
         d number
-        __ d != 0:
+        __ d !_ 0:
           ans.a..(digit[d])
       r.. " ".j..(ans)
 
     divider 1000000000
     w.... num > 0:
       res num / divider
-      __ res != 0:
+      __ res !_ 0:
         ans.a..(getNum(res) + units[divider])
       num num % divider
       divider /= 1000

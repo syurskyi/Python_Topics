@@ -33,7 +33,7 @@ c_ Solution:
             cnt[c] -_ 1
 
         ___ v __ cnt.v..
-            __ v != 0:
+            __ v !_ 0:
                 r.. F..
 
         r.. T..

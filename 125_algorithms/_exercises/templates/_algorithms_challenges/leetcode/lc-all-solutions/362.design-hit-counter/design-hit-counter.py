@@ -15,7 +15,7 @@ c_ HitCounter(o..
     """
     idx timestamp % 300
     t__, hit q[idx]
-    __ t__ != timestamp:
+    __ t__ !_ timestamp:
       q[idx] timestamp, 1
     ____
       q[idx] t__, hit + 1

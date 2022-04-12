@@ -7,9 +7,9 @@ ___ is_plural(word
 
 ___ test
     print("test has started")
-    __ is_plural("dudes") != T..
+    __ is_plural("dudes") !_ T..
         print("error1")
-    __ is_plural("doubles") != T..
+    __ is_plural("doubles") !_ T..
         print("error2")
-    __ is_plural("mood") != F..:
+    __ is_plural("mood") !_ F..:
         print("error3")

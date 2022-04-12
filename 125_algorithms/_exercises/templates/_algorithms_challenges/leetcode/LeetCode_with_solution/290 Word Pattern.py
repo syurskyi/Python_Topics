@@ -18,14 +18,14 @@ __author__ 'Daniel'
 c_ Solution(o..
     ___ wordPattern  pattern, s
         lst s.s..(" ")
-        __ l..(pattern) != l..(lst
+        __ l..(pattern) !_ l..(lst
             r.. F..
 
         char2word    # dict
         words s..()
         ___ i __ x..(l..(pattern:
             __ pattern[i] __ char2word:
-                __ char2word[pattern[i]] != lst[i]:
+                __ char2word[pattern[i]] !_ lst[i]:
                     r.. F..
                 ____
                     ... lst[i] __ words
@@ -61,7 +61,7 @@ c_ SolutionError(o..
         """
         m OneToOneMap()
         lst s...s..(" ")
-        __ l..(pattern) != l..(lst
+        __ l..(pattern) !_ l..(lst
             r.. F..
 
         ___ i __ x..(l..(pattern:
@@ -71,7 +71,7 @@ c_ SolutionError(o..
                 m.s..(pattern[i], lst[i])
             ____ a __ N.. a.. b __ n.. N..
                 r.. F..
-            ____ a != lst[i]:
+            ____ a !_ lst[i]:
                 r.. F..
 
         r.. T..

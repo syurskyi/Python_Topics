@@ -25,7 +25,7 @@ ___ simple_calculator(calculation
     # assume op is good and split the string
     args calculation.s..
 
-    __ l..(args) != 3:
+    __ l..(args) !_ 3:
         r.. V...
 
     a, op, b args

@@ -44,7 +44,7 @@ ___ my_sum_numbers(numbers_ N..
     # is None
     # == False
     #
-    __ numbers != N..
+    __ numbers !_ N..
         ___ item __ numbers:
             result += item
         r.. result

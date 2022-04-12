@@ -30,7 +30,7 @@ c_ Solution(o..
         ret    # list
         ___ l __ x..(l..(word)+1
             left_num s..(l) __ l ____ ""
-            left_l 1 __ left_num != "" ____ 0
+            left_l 1 __ left_num !_ "" ____ 0
             left_l += 1 __ l < l..(word) ____ 0
 
             ___ right, right_l __ dfs(word[l+1:]
@@ -56,14 +56,14 @@ c_ Solution(o..
         w 0
         a 0
         w.... w < l..(word) a.. a < l..(abbr
-            __ abbr[a].i.. a.. abbr[a] != '0':
+            __ abbr[a].i.. a.. abbr[a] !_ '0':
                 e a
                 w.... e < l..(abbr) a.. abbr[e].i.. e += 1
                 num i..(abbr[a:e])
                 a e
                 w += num
             ____
-                __ word[w] != abbr[a]:
+                __ word[w] !_ abbr[a]:
                     r.. F..
 
                 w += 1

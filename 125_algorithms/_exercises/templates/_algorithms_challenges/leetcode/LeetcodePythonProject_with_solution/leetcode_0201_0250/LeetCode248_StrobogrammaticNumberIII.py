@@ -24,9 +24,9 @@ c_ Solution(o..
         ___ p __ pairs:
             curr[l] p[0]
             curr[r] p[1]
-            __ l __ r a.. p[0] != p[1]:
+            __ l __ r a.. p[0] !_ p[1]:
                 _____
-            ____ l __ 0 a.. l != r a.. p[0] __ '0':
+            ____ l __ 0 a.. l !_ r a.. p[0] __ '0':
                 _____
             helper(low, high, l+1, r-1, curr, res)
     

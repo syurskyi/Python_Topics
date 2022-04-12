@@ -23,7 +23,7 @@ c_ Solution(o..
                     __ c.l.. __ set0:
                         __ ind __ -1:
                             ind i
-                        ____ i != ind:
+                        ____ i !_ ind:
                             valid F..
                         _____
             __ valid:

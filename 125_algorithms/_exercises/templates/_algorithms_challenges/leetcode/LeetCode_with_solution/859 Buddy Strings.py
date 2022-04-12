@@ -41,7 +41,7 @@ c_ Solution:
         """
         iterate
         """
-        __ l..(A) != l..(B
+        __ l..(A) !_ l..(B
             r.. F..
         __ A __ B:
             # find dup
@@ -56,7 +56,7 @@ c_ Solution:
         # Find a pair
         pair N..
         ___ i __ r..(l..(A:
-            __ A[i] != B[i]:
+            __ A[i] !_ B[i]:
                 __ n.. pair:
                     pair (A[i], B[i])
                 ____ pair __ (B[i], A[i]

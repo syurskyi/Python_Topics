@@ -24,7 +24,7 @@ ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..
        right results.
 
        Return a list of the top 5 foot Item stings."""
-    s df[df.Calories != 0]
+    s df[df.Calories !_ 0]
     __ excl_drinks:
         s s[~s.Category.isin( 'Coffee & Tea', 'Beverages' )]
     s 'Ratio'  = s.Protein / s.Calories

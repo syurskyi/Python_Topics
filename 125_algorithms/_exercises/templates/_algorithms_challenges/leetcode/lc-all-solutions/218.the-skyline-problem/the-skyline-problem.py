@@ -29,7 +29,7 @@ c_ Solution(o..
           heapq._siftdown(heap, 0, i)
       __ heap:
         cur heap[0]
-        __ cur != pre:
+        __ cur !_ pre:
           ans.a..((pos, -1 * cur
           pre cur
       ____

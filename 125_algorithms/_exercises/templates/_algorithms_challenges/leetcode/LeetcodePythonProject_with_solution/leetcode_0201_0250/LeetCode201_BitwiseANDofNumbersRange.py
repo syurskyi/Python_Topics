@@ -14,7 +14,7 @@ c_ Solution(o..
         __ m __ 0:
             r.. 0
         moveFactor 1
-        w.... m != n:
+        w.... m !_ n:
             m >>= 1
             n >>= 1
             moveFactor <<= 1

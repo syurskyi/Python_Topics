@@ -19,7 +19,7 @@ c_ Solution(o..
           jump i..(src[start:i])
           digit F..
           j += jump
-        __ j >_ l..(dest) o. src[i] != dest[j]:
+        __ j >_ l..(dest) o. src[i] !_ dest[j]:
           r.. F..
         j += 1
       __ i __ l..(src) - 1:
@@ -27,6 +27,6 @@ c_ Solution(o..
           jump i..(src[start:i + 1])
           digit F..
           j += jump
-          __ j != l..(dest
+          __ j !_ l..(dest
             r.. F..
     r.. T..

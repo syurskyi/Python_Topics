@@ -32,7 +32,7 @@ c_ Solution(o..
         ___ e __ nums:
             __ e < min1:
                 min1 e
-            ____ e != min1 a.. e < min2:
+            ____ e !_ min1 a.. e < min2:
                 min2 e
             ____ e > min2:
                 r.. T..

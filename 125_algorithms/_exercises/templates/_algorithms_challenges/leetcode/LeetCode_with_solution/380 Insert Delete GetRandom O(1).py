@@ -72,7 +72,7 @@ c_ RandomizedSet(o..
 
         idx, last pos[val], l..(lst) - 1
 
-        __ idx != last:
+        __ idx !_ last:
             lst[idx], lst[last] lst[last], lst[idx]
             pos[lst[idx]] idx
 

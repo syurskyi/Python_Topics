@@ -36,7 +36,7 @@ c_ Solution(o..
       __ s[i] __ "(":
         prepLeft += s[i:]
         _____
-      ____ s[i] != ")":
+      ____ s[i] !_ ")":
         prepLeft += s[i]
 
     prepRight ""
@@ -44,7 +44,7 @@ c_ Solution(o..
       __ prepLeft[i] __ ")":
         prepRight += prepLeft[:i + 1][::-1]
         _____
-      ____ prepLeft[i] != "(":
+      ____ prepLeft[i] !_ "(":
         prepRight += prepLeft[i]
 
     s prepRight[::-1]

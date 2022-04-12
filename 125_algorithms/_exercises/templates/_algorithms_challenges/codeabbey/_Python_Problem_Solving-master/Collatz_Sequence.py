@@ -7,7 +7,7 @@ ___ i __ r..(l..(a:
     #print('starting')
     count 0
     xnext a[i]
-    w.... xnext != 1:
+    w.... xnext !_ 1:
         __ xnext % 2 __ 0:
             xnext xnext / 2
             #print('even:',xnext)

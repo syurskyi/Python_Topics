@@ -76,7 +76,7 @@ ___ get_dates(dates
                 enum_dict[enum_list[index].value] += 1
     sorted_enum s..(enum_dict, key=enum_dict.get, r.._T..
     # convert to the most prevalent date format
-    __ enum_dict[sorted_enum[0]] != enum_dict[sorted_enum[1]] a.. sorted_enum[0] != -999:
+    __ enum_dict[sorted_enum[0]] !_ enum_dict[sorted_enum[1]] a.. sorted_enum[0] !_ -999:
         date_str DateFormat.get_d_parse_formats(sorted_enum[0])
         ___ date __ dates:
             enum_list _maybe_DateFormats(date)

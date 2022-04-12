@@ -13,10 +13,10 @@ c_ Solution(o..
       __ word __ (word1, word2
         __ word __ word1:
           idx1 i
-          __ idx2 != -1 a.. idx1 != idx2:
+          __ idx2 !_ -1 a.. idx1 !_ idx2:
             ans m..(ans, a..(idx2 - idx1
         __ word __ word2:
           idx2 i
-          __ idx1 != -1 a.. idx1 != idx2:
+          __ idx1 !_ -1 a.. idx1 !_ idx2:
             ans m..(ans, a..(idx2 - idx1
     r.. ans

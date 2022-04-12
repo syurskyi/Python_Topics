@@ -5,7 +5,7 @@ c_ Solution:
         :type guess: str
         :rtype: str
         """
-        __ n.. secret o. n.. guess o. l..(secret) != l..(guess
+        __ n.. secret o. n.. guess o. l..(secret) !_ l..(guess
             r.. ''
 
         TMPL '{}A{}B'
@@ -39,7 +39,7 @@ c_ Solution:
         :type guess: str
         :rtype: str
         """
-        __ n.. secret o. n.. guess o. l..(secret) != l..(guess
+        __ n.. secret o. n.. guess o. l..(secret) !_ l..(guess
             r.. ''
 
         TMPL '{}A{}B'

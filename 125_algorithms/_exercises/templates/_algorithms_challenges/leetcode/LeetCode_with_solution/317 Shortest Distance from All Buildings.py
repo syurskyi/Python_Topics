@@ -47,7 +47,7 @@ c_ Solution(o..
                 __ acc[i][j] < mini a.. reachable[i][j]:
                     mini acc[i][j]
 
-        r.. mini __ mini != ___.maxint ____ -1
+        r.. mini __ mini !_ ___.maxint ____ -1
 
     ___ bfs  grid, acc, reachable, x, y
         d 0

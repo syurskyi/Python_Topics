@@ -20,7 +20,7 @@ ___ print_hanging_indents(poem
         poem_line = poem_line[:-1] """
     previous_line ""
     ___ line __ poem_line:
-        __ l..(line) != 0:
+        __ l..(line) !_ 0:
             __ previous_line __ "":
                 print(line)
             ____

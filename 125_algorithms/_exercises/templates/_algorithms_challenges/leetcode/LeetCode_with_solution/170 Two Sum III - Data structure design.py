@@ -27,7 +27,7 @@ c_ TwoSum(o..
         :rtype: bool
         """
         r.. any(
-            value-k __ hash_map a.. (value-k != k o. hash_map[k] > 1)
+            value-k __ hash_map a.. (value-k !_ k o. hash_map[k] > 1)
             ___ k __ hash_map
         )
 
@@ -39,7 +39,7 @@ c_ TwoSum(o..
         """
         ___ k __ hash_map.k..:
             target value - k
-            __ target __ hash_map a.. (target != k o. hash_map[target] > 1
+            __ target __ hash_map a.. (target !_ k o. hash_map[target] > 1
                 r.. T..
 
         r.. F..

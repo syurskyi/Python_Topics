@@ -30,7 +30,7 @@ c_ Solution:
             carry gas[i] - cost[i]
             j (i + 1) % n
             flag T..
-            w.... j != i % n:
+            w.... j !_ i % n:
                 __ carry + gas[j] - cost[j] < 0:
                     flag F..
                     _____

@@ -25,7 +25,7 @@ c_ Solution(o..
             r.. T..
         ____ n.. left o. n.. right:
             r.. F..
-        ____ left.val != right.val:
+        ____ left.val !_ right.val:
             r.. F..
         ____
             r.. helper(left.left, right.right) a..\
@@ -45,11 +45,11 @@ c_ Solution(o..
         ____ root.right:
             r.. F..
         w.... stack:
-            __ l..(stack)%2 != 0:
+            __ l..(stack)%2 !_ 0:
                 r.. F..
             right stack.p.. )
             left stack.p.. )
-            __ right.val != left.val:
+            __ right.val !_ left.val:
                 r.. F..
             __ left.left:
                 __ n.. right.right:

@@ -26,7 +26,7 @@ c_ Solution(o..
     ___ isTag(tag
       __ l..(tag) < 3:
         r.. F..
-      __ tag[-1] != ">":
+      __ tag[-1] !_ ">":
         r.. F..
 
       tag tag[1:-1]
@@ -39,7 +39,7 @@ c_ Solution(o..
           r.. F..
       r.. T..
 
-    __ code[0] != "<":
+    __ code[0] !_ "<":
       r.. F..
     tagLen 0
     stack    # list

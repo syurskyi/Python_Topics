@@ -11,7 +11,7 @@ ___ get_duplicate_indices(words
 
    ___ i __ r..(l..(words:
       ___ j __ r..(l..(words:
-         __ i != j a.. words[i] __ words[j]:
+         __ i !_ j a.. words[i] __ words[j]:
             __ words[i] n.. __ duplicate_index:
                duplicate_index[words[i]] i
 

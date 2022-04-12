@@ -44,7 +44,7 @@ c_ Solution(o..
         :rtype: int
         """
         ret 0
-        w.... n != 1:
+        w.... n !_ 1:
             ret += 1
             __ n & 1 __ 0:
                 n >>= 1

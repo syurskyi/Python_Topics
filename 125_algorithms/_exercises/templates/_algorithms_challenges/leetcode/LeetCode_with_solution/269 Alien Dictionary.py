@@ -69,7 +69,7 @@ c_ Solution(o..
                 V[c]
         ___ i __ x..(l..(words) - 1  # compare word_i and word_{i+1}
             ___ j __ x..(m..(l..(words[i]), l..(words[i+1]))):
-                __ words[i][j] != words[i+1][j]:
+                __ words[i][j] !_ words[i+1][j]:
                     V[words[i][j]].a..(words[i+1][j])
                     _____  # need to break for lexical order
 

@@ -17,7 +17,7 @@ c_ Solution(o..
         ___ i __ r..(n + 1 - m
             matched T..
             ___ k __ r..(m
-                __ haystack[i + k] != needle[k]:
+                __ haystack[i + k] !_ needle[k]:
                     matched F..
                     _____
             __ matched:

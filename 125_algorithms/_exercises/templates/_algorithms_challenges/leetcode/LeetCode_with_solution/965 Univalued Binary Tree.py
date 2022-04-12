@@ -39,7 +39,7 @@ c_ Solution:
     ___ dfs  node, val) __ b..:
         __ n.. node:
             r.. T..
-        __ node.val != val:
+        __ node.val !_ val:
             r.. F..
 
         r.. dfs(node.left, val) a.. dfs(node.right, val)

@@ -118,7 +118,7 @@ c_ Solution:
                 k -_ 1
                 cur_l 0
                 i += 1
-                __ k != 0:
+                __ k !_ 0:
                     part_l m__.ceil((l - counter) / k)
 
             node node.next

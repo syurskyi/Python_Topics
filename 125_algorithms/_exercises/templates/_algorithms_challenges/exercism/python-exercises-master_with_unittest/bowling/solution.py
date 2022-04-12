@@ -64,7 +64,7 @@ c_ BowlingGame(o..
         bonus_throws.a..(pins)
 
         # Check against invalid fill balls, e.g. [3, 10]
-        __ (l..(bonus_throws) __ 2 a.. bonus_throws[0] != 10 a..
+        __ (l..(bonus_throws) __ 2 a.. bonus_throws[0] !_ 10 a..
                 s..(bonus_throws) > 10
             r.. V...("invalid fill balls")
 
@@ -89,10 +89,10 @@ c_ BowlingGame(o..
     ___ score
         __ current_frame_idx < MAX_FRAME:
             r.. IndexError("frame less than 10")
-        __ frames[-1].is_spare() a.. l..(bonus_throws) != 1:
+        __ frames[-1].is_spare() a.. l..(bonus_throws) !_ 1:
             r.. IndexError(
                 "one bonus must be rolled when the tenth frame is spare")
-        __ frames[-1].is_strike() a.. l..(bonus_throws) != 2:
+        __ frames[-1].is_strike() a.. l..(bonus_throws) !_ 2:
             r.. IndexError(
                 "two bonuses must be rolled when the tenth frame is strike")
         r.. s..(frame.score(next_throws(frame.idx

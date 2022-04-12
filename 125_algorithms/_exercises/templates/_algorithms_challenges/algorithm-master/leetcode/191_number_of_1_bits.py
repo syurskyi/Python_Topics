@@ -8,7 +8,7 @@ c_ Solution:
         __ n.. n:
             r.. ans
 
-        w.... n != 0:
+        w.... n !_ 0:
             n n & (n - 1)
             ans += 1
 

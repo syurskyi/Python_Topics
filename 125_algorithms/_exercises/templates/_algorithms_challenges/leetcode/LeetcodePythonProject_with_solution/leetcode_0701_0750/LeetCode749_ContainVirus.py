@@ -28,7 +28,7 @@ c_ Solution(o..
                     res [0, 0]
                     grid[i][j] count
                     dfs(i, j, grid, count, walls, res)
-                    __ res[0] != 0:
+                    __ res[0] !_ 0:
                         flag T..
                     __ maxVal __ -1 o. res[0] > info[maxVal][0]:
                         maxVal count-2
@@ -63,7 +63,7 @@ c_ Solution(o..
         m, n l..(grid), l..(grid[0])
         ___ i __ r..(m
             ___ j __ r..(n
-                __ grid[i][j] > 1 a.. grid[i][j] != quarantine:
+                __ grid[i][j] > 1 a.. grid[i][j] !_ quarantine:
                     ___ k __ r..(4
                         newRow i+shiftX[k]
                         newCol j+shiftY[k]

@@ -52,7 +52,7 @@ ___ possible_rect(quartet
 
     # Check all the same distance from centroid are equals
     ___ i __ r..(1, l..(quartet:
-        __ a..(quartet[i].i - mid_x) != dx o. a..(quartet[i].j - mid_y) != dy:
+        __ a..(quartet[i].i - mid_x) !_ dx o. a..(quartet[i].j - mid_y) !_ dy:
             r.. F..
     r.. T..
 
@@ -61,12 +61,12 @@ ___ possible_rect(quartet
 ___ p..(c1, c2, input
     __ c1.i __ c2.i:
         ___ j __ r..(m..(c1.j + 1, c2.j + 1), m..(c1.j, c2.j:
-            __ input[c1.i][j] != "-" a.. input[c1.i][j] != "+":
+            __ input[c1.i][j] !_ "-" a.. input[c1.i][j] !_ "+":
                 r.. F..
         r.. T..
     ____ c1.j __ c2.j:
         ___ i __ r..(m..(c1.i + 1, c2.i + 1), m..(c1.i, c2.i:
-            __ input[i][c1.j] != "|" a.. input[i][c1.j] != "+":
+            __ input[i][c1.j] !_ "|" a.. input[i][c1.j] !_ "+":
                 r.. F..
         r.. T..
 

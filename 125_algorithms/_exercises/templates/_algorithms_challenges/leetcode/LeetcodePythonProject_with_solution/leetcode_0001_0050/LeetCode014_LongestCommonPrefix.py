@@ -19,7 +19,7 @@ c_ Solution(o..
                     _____
                 __ i __ 0:
                     c s[ind]
-                ____ c != s[ind]:
+                ____ c !_ s[ind]:
                     same F..
                     _____
             __ n.. same:

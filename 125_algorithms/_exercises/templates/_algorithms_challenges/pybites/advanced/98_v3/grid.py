@@ -37,7 +37,7 @@ ___ print_sequence_route(grid: s.., start_coordinates_ N..
 
     this_val START_VALUE + 1
     next_coordinates start_coordinates
-    w.... current_direction != STOP:
+    w.... current_direction !_ STOP:
         next_coordinates, next_direction _seek_next(grid_array, next_coordinates)
         __ current_direction __ next_direction:
             current_vals.a..(s..(this_val

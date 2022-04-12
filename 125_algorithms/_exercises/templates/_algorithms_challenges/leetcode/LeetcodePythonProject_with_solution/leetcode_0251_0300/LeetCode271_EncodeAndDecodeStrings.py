@@ -27,7 +27,7 @@ c_ Codec(o..
             __ s[i] __ ':':
                 sub s[prev:i]
                 j i
-                w.... j < n a.. s[j] != '#':
+                w.... j < n a.. s[j] !_ '#':
                     j += 1
                 __ s[i+1:j].i.. a.. i..(s[i+1:j]) __ l..(sub
                     arr.a..(sub)

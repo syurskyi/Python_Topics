@@ -19,7 +19,7 @@ c_ Solution(o..
     ___ isSelfDividing  num
         ___ digit __ s..(num
             d i..(digit)
-            __ d __ 0 o. num%d != 0:
+            __ d __ 0 o. num%d !_ 0:
                 r.. F..
         r.. T..
     

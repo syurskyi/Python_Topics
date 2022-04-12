@@ -21,7 +21,7 @@ c_ Solution:
         left 0
         right l..(s) - 1
         w.... left < right:
-            __ s[left] != s[right]:
+            __ s[left] !_ s[right]:
                 r.. F..
             left += 1
             right -_ 1

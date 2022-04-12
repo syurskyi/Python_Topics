@@ -24,7 +24,7 @@ c_ Solution:
             r.. T..
         __ n.. left o. n.. right:
             r.. F..
-        __ left.val != right.val:
+        __ left.val !_ right.val:
             r.. F..
         __ n.. divide_conquer(left.left, right.right
             r.. F..

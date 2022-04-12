@@ -26,7 +26,7 @@ c_ Solution:
             r.. F..
 
         s s..(nums)
-        __ s % 2 != 0:
+        __ s % 2 !_ 0:
             r.. F..
 
         target s // 2
@@ -52,7 +52,7 @@ c_ Solution:
         """
         nums.s..()
         s s..(nums)
-        __ s % 2 != 0:
+        __ s % 2 !_ 0:
             r.. F..
 
         target s // 2

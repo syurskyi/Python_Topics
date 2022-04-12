@@ -31,14 +31,14 @@ ___ print_sequence_route(grid, start_coordinates_ N..
 
     
     print(current_value,end=' ')
-    w.... current_value != goal:
+    w.... current_value !_ goal:
         directions ((current_row + 1,current_col,DOWN),(current_row - 1,current_col,UP),(current_row,current_col + 1,RIGHT),(current_row,current_col -1,LEFT
 
 
         ___ neighbor_x,neighbor_y,direction __ directions:
             __ 0 <_ neighbor_x < length a.. 0 <_ neighbor_y < length:
                 __ matrix[neighbor_x][neighbor_y] __ current_value + 1:
-                    __ previous_direction __ n.. N.. a.. direction != previous_direction:
+                    __ previous_direction __ n.. N.. a.. direction !_ previous_direction:
                         print(direction)
                         previous_direction direction
                     ____ previous_direction __ N..

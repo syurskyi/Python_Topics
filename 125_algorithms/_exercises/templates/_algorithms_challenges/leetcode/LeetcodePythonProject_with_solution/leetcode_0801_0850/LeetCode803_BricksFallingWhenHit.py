@@ -13,7 +13,7 @@ c_ Solution(o..
         m, n l..(grid), l..(grid[0])
         
         ___ dfs(i, j
-            __ n.. (0<_i<m a.. 0<_j<n) o. grid[i][j]!=1:
+            __ n.. (0<_i<m a.. 0<_j<n) o. grid[i][j]!_1:
                 r.. 0
             res 1
             grid[i][j] 2

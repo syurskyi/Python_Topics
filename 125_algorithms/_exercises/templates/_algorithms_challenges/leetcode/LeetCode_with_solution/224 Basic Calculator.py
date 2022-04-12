@@ -55,7 +55,7 @@ c_ Solution:
             ____ elt __ "(":
                 stk.a..(elt)
             ____ elt __ ")":
-                w.... stk[-1] != "(":
+                w.... stk[-1] !_ "(":
                     ret.a..(stk.pop
                 stk.p.. )
             ____  # generalized to include * and /

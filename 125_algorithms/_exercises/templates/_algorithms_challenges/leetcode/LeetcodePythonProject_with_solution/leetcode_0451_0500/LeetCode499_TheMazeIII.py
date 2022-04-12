@@ -67,6 +67,6 @@ c_ Solution(o..
                 x += dir[0]
                 y += dir[1]
                 dir += 1
-            __ x != i o. y != j:
+            __ x !_ i o. y !_ j:
                 steps.add((x, y, dir[2], dist
         r.. steps

@@ -11,7 +11,7 @@ c_ HitCounter(o..
     
     ___ hit  timestamp
         ind timestamp % 300
-        __ timestamp != timestampes[ind]:
+        __ timestamp !_ timestampes[ind]:
             hitCount[ind] 1
             timestampes[ind] timestamp
         ____

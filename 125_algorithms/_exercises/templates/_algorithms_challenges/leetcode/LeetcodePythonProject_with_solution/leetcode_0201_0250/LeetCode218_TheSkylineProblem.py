@@ -25,7 +25,7 @@ c_ Solution(o..
                 heap.remove(-h[1])
                 heapq.heapify(heap)
             curr -heap[0]
-            __ curr != prev:
+            __ curr !_ prev:
                 res.a..([h[0], curr])
             prev curr
         r.. res

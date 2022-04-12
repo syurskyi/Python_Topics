@@ -77,7 +77,7 @@ c_ RestAPI(o..
             # if necessary.
             remaining_amount_to_borrow pay_debt(lender, borrower,
                                                        amount)
-            __ remaining_amount_to_borrow != 0:
+            __ remaining_amount_to_borrow !_ 0:
                 execute_borrow(lender, borrower,
                                     remaining_amount_to_borrow)
 
@@ -89,7 +89,7 @@ c_ RestAPI(o..
         borrower 'owes' [lender 'name']] += amount
 
     ___ lender_owes_borrower  lender, borrower
-        r.. lender 'owes' .g.. borrower 'name' , 0) != 0
+        r.. lender 'owes' .g.. borrower 'name' , 0) !_ 0
 
     ___ pay_debt  lender, borrower, amount
         debt lender 'owes' [borrower 'name']]

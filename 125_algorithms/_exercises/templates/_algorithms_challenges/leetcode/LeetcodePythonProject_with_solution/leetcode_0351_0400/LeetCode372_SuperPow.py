@@ -17,8 +17,8 @@ c_ Solution(o..
     ___ power  a, n, mod
         a %= mod
         res 1
-        w.... n != 0:
-            __ ((n&1) != 0
+        w.... n !_ 0:
+            __ ((n&1) !_ 0
                 res res*a % mod
             a a*a%mod
             n >>= 1

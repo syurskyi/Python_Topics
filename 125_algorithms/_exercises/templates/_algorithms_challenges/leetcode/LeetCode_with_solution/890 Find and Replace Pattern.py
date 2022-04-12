@@ -45,7 +45,7 @@ c_ Solution:
         r.. ret
 
     ___ m..  word, pattern
-        __ l..(word) != l..(pattern
+        __ l..(word) !_ l..(pattern
             r.. F..
 
         m    # dict
@@ -54,7 +54,7 @@ c_ Solution:
             __ word[i] n.. __ m a.. pattern[i] n.. __ m_inv:
                 m[word[i]] pattern[i]
                 m_inv[pattern[i]] word[i]
-            ____ word[i] n.. __ m o. m[word[i]] != pattern[i]:
+            ____ word[i] n.. __ m o. m[word[i]] !_ pattern[i]:
                 r.. F..
         ____
             r.. T..

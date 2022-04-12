@@ -53,7 +53,7 @@ ___ get_stock_symbol_with_highest_cap
 ___ get_sectors_with_max_and_min_stocks
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
-    counter c...C..([stock["sector"] ___ stock __ data __ stock["sector"] != "n/a"])
+    counter c...C..([stock["sector"] ___ stock __ data __ stock["sector"] !_ "n/a"])
     r.. (counter.m..[0][0], counter.m..[-1][0])
 
 

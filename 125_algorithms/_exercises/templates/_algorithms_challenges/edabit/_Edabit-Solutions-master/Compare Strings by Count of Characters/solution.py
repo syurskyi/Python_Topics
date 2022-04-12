@@ -7,9 +7,9 @@ ___ comp(txt1, txt2
 
 ___ test_comp
     print("test has started")
-    __ comp("test","food") != T..
+    __ comp("test","food") !_ T..
         print("error")
-    __ comp ("too", "good") != F..:
+    __ comp ("too", "good") !_ F..:
         print("error2")
     ____
         print("success")

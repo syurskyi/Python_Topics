@@ -43,7 +43,7 @@ c_ ComputeCell(Cell
         __ l..(s..([inp.counter ___ inp __ inputs] > 1:
             r..
         new_val func([inp.value ___ inp __ inputs])
-        __ new_val != _value:
+        __ new_val !_ _value:
             value new_val
             ___ cb __ callbacks:
                 cb(new_val)

@@ -58,7 +58,7 @@ c_ Solution:
         close_ptr 0
         duplicate_once F..  # flag
         ___ open_ptr __ r..(close_ptr+1, length
-            __ A[close_ptr]!=A[open_ptr]:  # found non-duplicate
+            __ A[close_ptr]!_A[open_ptr]:  # found non-duplicate
                 duplicate_once F..
                 close_ptr += 1
                 A[close_ptr] A[open_ptr]

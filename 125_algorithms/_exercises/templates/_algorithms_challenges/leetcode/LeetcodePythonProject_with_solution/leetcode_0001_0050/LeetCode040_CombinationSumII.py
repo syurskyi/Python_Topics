@@ -49,7 +49,7 @@ c_ Solution(o..
         ___ i __ r..(ind, l..(nums:
             __ nums[i] > target:
                 r..
-            __ prev != nums[i]:
+            __ prev !_ nums[i]:
                 curr.a..(nums[i])
                 helper(nums, target-nums[i], i+1, curr, res)
                 prev curr.p.. )

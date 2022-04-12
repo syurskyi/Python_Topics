@@ -13,7 +13,7 @@ c_ Solution(o..
         """
         __ n.. nums o. n.. nums[0]: r.. nums
         m, n l..(nums), l..(nums[0])
-        __ m*n != r*c:
+        __ m*n !_ r*c:
             r.. nums
         res    # list
         k, l 0, 0

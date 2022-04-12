@@ -40,7 +40,7 @@ c_ Solution:
             # shift
             cur pre_cur.next
             cur_next cur.next
-            __ cur_next!= last a.. cur!= last:
+            __ cur_next!_ last a.. cur!_ last:
                 cur.next last
                 last.next cur_next
                 # fix last
@@ -116,7 +116,7 @@ c_ Solution:
         # merge
         last pre
         cur dummy.next
-        w.... cur!=mid a.. last!=mid:
+        w.... cur!_mid a.. last!_mid:
             cur.next, last.next, last, cur last, cur.next, last.next, cur.next
 
 

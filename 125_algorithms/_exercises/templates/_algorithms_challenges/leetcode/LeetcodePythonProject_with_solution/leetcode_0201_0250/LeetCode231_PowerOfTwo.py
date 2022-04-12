@@ -20,6 +20,6 @@ c_ Solution(o..
         """
         __ n __ 0: r.. F..
         __ n __ 1: r.. T..
-        __ n % 2 != 0:
+        __ n % 2 !_ 0:
             r.. F..
         r.. isPowerOfTwo(n/2)

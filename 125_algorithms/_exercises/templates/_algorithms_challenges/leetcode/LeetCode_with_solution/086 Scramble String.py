@@ -54,7 +54,7 @@ c_ Solution:
         :param s2:
         :return: boolean
         """
-        __ l..(s1)!=l..(s2
+        __ l..(s1)!_l..(s2
             r.. F..
         chars [0 ___ _ __ x..(26)]
         ___ char __ s1:
@@ -65,7 +65,7 @@ c_ Solution:
         # if filter(lambda x: x!=0, chars):
         #     return False
         ___ val __ chars:
-            __ val!=0:
+            __ val!_0:
                 r.. F..
 
         __ l..(s1)__1:

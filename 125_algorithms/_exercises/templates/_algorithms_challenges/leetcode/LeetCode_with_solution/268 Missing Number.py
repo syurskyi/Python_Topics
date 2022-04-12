@@ -42,7 +42,7 @@ c_ Solution(o..
                 nums[i] N..
                 i += 1
 
-            ____ nums[i] __ n.. N.. a.. nums[i] != i:
+            ____ nums[i] __ n.. N.. a.. nums[i] !_ i:
                 j nums[i]
                 nums[i], nums[j] nums[j], nums[i]
 

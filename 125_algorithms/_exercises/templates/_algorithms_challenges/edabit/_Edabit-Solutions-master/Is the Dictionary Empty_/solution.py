@@ -8,8 +8,8 @@ ___ is_empty(dictionary
 ___ test
     print("Test has started")
     d.. {"Name": "Eleven"}
-    __ is_empty(d..) != F..:
+    __ is_empty(d..) !_ F..:
         print("error1")
     b_dict    # dict
-    __ is_empty(b_dict) != T..
+    __ is_empty(b_dict) !_ T..
         print("error2")

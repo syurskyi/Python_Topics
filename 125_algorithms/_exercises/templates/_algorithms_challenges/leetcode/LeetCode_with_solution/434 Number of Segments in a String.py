@@ -20,11 +20,11 @@ c_ Solution:
             r.. ret
 
         # count at start
-        __ s[0] != " ":
+        __ s[0] !_ " ":
             ret 1
         prev s[0]
         ___ c __ s[1:]:
-            __ c != " " a.. prev __ " ":
+            __ c !_ " " a.. prev __ " ":
                 ret += 1
             prev c
         r.. ret

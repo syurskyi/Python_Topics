@@ -5,7 +5,7 @@ c_ Solution:
     @return: whether s2 is a scrambled string of s1
     """
     ___ isScramble  s1, s2
-        __ n.. s1 o. n.. s2 o. l..(s1) != l..(s2
+        __ n.. s1 o. n.. s2 o. l..(s1) !_ l..(s2
             r.. F..
 
         n l..(s1)

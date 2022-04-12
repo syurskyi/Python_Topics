@@ -13,7 +13,7 @@ ___ create_uno_deck
 
     numbers l..(r..(0,10 +  'Draw Two','Skip','Reverse'
 
-    cards [UnoCard(suit,number) ___ suit __ SUITS ___ number __ numbers ___ i __ r..(2 __ number != 0 ____ 1)]
+    cards [UnoCard(suit,number) ___ suit __ SUITS ___ number __ numbers ___ i __ r..(2 __ number !_ 0 ____ 1)]
 
     print(l..(cards
 

@@ -23,7 +23,7 @@ ___ get_octal_from_file_permission(rwx: s..) __ s..:
         permissions rwx[i:i+3]
         r 0
         ___ i,value __ e..(r..(permissions:
-            __ value != '-':
+            __ value !_ '-':
                 r += base**(i)
 
 

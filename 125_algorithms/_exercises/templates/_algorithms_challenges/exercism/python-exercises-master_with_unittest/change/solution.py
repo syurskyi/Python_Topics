@@ -19,7 +19,7 @@ ___ find_minimum_coins(total_change, coins
     ____
         last_coin_value total_change
         array    # list
-        w....(last_coin[last_coin_value] != -1
+        w....(last_coin[last_coin_value] !_ -1
             array.a..(last_coin_value-last_coin[last_coin_value])
             last_coin_value last_coin[last_coin_value]
         r.. array

@@ -3,7 +3,7 @@ c_ Solution:
                 i 0
                 non_count 0
                 equals F..
-                w.... i!= l..(nums)-1:
+                w.... i!_ l..(nums)-1:
                     ___
                         __ nums[i] > nums[i+1]:
                             __ i+1 __ l..(nums)-1:

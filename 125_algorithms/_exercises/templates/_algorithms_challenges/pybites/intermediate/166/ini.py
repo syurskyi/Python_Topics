@@ -33,7 +33,7 @@ c_ ToxIniParser:
                             envs.a..(value.s..
                     ____
                         envs.a..(line.s..
-                r.. [env ___ env __ envs __ env != '']
+                r.. [env ___ env __ envs __ env !_ '']
             ____
                 r.. [value.s.. ___ value __ config 'tox'  'envlist' .s...s..(',')]
 

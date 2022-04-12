@@ -40,7 +40,7 @@ c_ Solution(o..
             ___ j __ r..(n
                 __ grid[i][j] __ 0 a.. reach[i][j] __ buildingNum:
                     res m..(res, distance[i][j])
-        r.. res __ res != f__('inf') ____ -1
+        r.. res __ res !_ f__('inf') ____ -1
     
     ___ test
         testCases [

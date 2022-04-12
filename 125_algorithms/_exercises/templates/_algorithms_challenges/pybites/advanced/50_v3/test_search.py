@@ -1,5 +1,5 @@
 ____ d__ _______ d__, date
-____ unittest.mock _______ patch
+____ ?.m.. _______ p..
 
 _______ p__
 
@@ -55,7 +55,7 @@ ___ test_convert_struct_time_to_dt(arg, ret
     ... _convert_struct_time_to_dt(arg) __ ret
 
 
-@patch("feedparser.parse", side_effect=[MOCK_ENTRIES])
+$p.. ("feedparser.parse", s.._ MOCK_ENTRIES])
 ___ test_get_feed_entries(inp
     first, last t..(get_feed_entries
 
@@ -96,8 +96,8 @@ ___ test_filter_entries_by_tag(arg, ret
     ... filter_entries_by_tag(arg, entry) __ ret
 
 
-@patch("feedparser.parse", side_effect=[MOCK_ENTRIES])
-@patch("builtins.input", side_effect= 'pycon', 'twitter', 'python', 'nonsense',
+$p.. ("feedparser.parse", s.._ MOCK_ENTRIES])
+$p.. ("builtins.input", side_effect= 'pycon', 'twitter', 'python', 'nonsense',
                                       'python|regex', 'python&regex', 'REGeX',
                                       '', 'q' )
 ___ test_main(entries, inp, capfd

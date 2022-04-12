@@ -35,7 +35,7 @@ c_ Solution:
         ____ grid[y][x] __ 1:
             t[y][x] 0
             r.. t[y][x]
-        ____ t[y][x] != -1:
+        ____ t[y][x] !_ -1:
             r.. t[y][x]
         ____ x > 0 a.. y __ 0:
             t[y][x] unique_paths(grid, x - 1, y, t)

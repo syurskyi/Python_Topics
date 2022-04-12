@@ -69,7 +69,7 @@ c_ Solution:
 
         l c.. node.left)
         r c.. node.right)
-        __ l != 0 a.. r != 0 a.. l + r __ l..(deepest_nodes
+        __ l !_ 0 a.. r !_ 0 a.. l + r __ l..(deepest_nodes
             ret node
 
         count l + r

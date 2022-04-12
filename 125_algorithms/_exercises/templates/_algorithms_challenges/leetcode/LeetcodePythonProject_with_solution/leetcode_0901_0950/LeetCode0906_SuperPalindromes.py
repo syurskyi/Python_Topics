@@ -23,7 +23,7 @@ c_ Solution(o..
         __ l..(s) > l..(s..(high:
             r.. 0
         count 0
-        __ s a.. s[0] != '0':
+        __ s a.. s[0] !_ '0':
             num i..(s)
             __ num > high:
                 r.. 0

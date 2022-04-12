@@ -4,7 +4,7 @@ c_ Solution(o..
     :type machines: List[int]
     :rtype: int
     """
-    __ s..(machines) % l..(machines) != 0:
+    __ s..(machines) % l..(machines) !_ 0:
       r.. -1
     target s..(machines) / l..(machines)
     total 0

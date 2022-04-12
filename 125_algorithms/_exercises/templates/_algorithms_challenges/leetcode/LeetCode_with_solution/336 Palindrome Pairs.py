@@ -69,7 +69,7 @@ c_ Solution:
             cur root
             ___ i __ r..(l..(w:
                 # cur.children.get(w[i], None)  # error, pre-advancing the trie is unable to handle empty str
-                __ is_palindrome(w, i, l..(w a.. cur.word_idx __ n.. N.. a.. cur.word_idx != idx:
+                __ is_palindrome(w, i, l..(w a.. cur.word_idx __ n.. N.. a.. cur.word_idx !_ idx:
                     ret.a..([idx, cur.word_idx])
 
                 cur cur.children.g.. w[i], N..)
@@ -77,7 +77,7 @@ c_ Solution:
                     _____
             ____
                 ___ idx_j __ cur.pali_prefix_idxes:
-                    __ idx != idx_j:
+                    __ idx !_ idx_j:
                         ret.a..([idx, idx_j])
 
         r.. ret
@@ -86,7 +86,7 @@ c_ Solution:
         i lo
         j hi - 1
         w.... i < j:
-            __ w[i] != w[j]:
+            __ w[i] !_ w[j]:
                 r.. F..
             i += 1
             j -_ 1

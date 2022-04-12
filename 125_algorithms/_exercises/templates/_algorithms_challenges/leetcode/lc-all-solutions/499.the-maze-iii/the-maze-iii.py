@@ -17,7 +17,7 @@ c_ Solution(o..
       ___ di, dj, mark __ directions:
         dist 0
         i, j curr
-        w.... 0 <_ i + di < height a.. 0 <_ j + dj < width a.. maze[i + di][j + dj] != 1:
+        w.... 0 <_ i + di < height a.. 0 <_ j + dj < width a.. maze[i + di][j + dj] !_ 1:
           i += di
           j += dj
           dist += 1

@@ -22,12 +22,12 @@ c_ Solution(o..
         i 0
         w.... i < n:
             j nums[i]
-            __ nums[i] != i a.. j < n:
+            __ nums[i] !_ i a.. j < n:
                 nums[i], nums[j] nums[j], nums[i]
             ____
                 i += 1
         ___ i, e __ e..(nums
-            __ i != e:
+            __ i !_ e:
                 r.. i
         ____
             r.. n

@@ -26,12 +26,12 @@ c_ Solution:
         n l..(head)
         m n/2
         mid g.. head, m)
-        __ n%2 != 0:
+        __ n%2 !_ 0:
             mid mid.next
 
         mid reverse(mid)
         w.... head a.. mid:
-            __ head.val != mid.val:
+            __ head.val !_ mid.val:
                 r.. F..
             head head.next
             mid mid.next

@@ -9,7 +9,7 @@ c_ Solution(o..
         :type num: int
         :rtype: int
         """
-        r.. num-9*((num-1)/9) __ num != 0 ____ 0
+        r.. num-9*((num-1)/9) __ num !_ 0 ____ 0
     
     ___ addDigits_slow  num
         w.... num >_ 10:

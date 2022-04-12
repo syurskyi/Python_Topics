@@ -17,14 +17,14 @@ c_ Solution(o..
             ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1
                 __ 0 <_ x < m a.. 0 <_ y < n a.. grid[x][y]:
                     root getRoot(roots, x*n+y)
-                    __ root != root0:
+                    __ root !_ root0:
                         count -_ 1
                         roots[root] root0
             res.a..(count)
         r.. res
     
     ___ getRoot  roots, ind
-        w.... roots[ind] != -1:
+        w.... roots[ind] !_ -1:
             ind roots[ind]
         r.. ind
     

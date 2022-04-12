@@ -42,7 +42,7 @@ c_ Solution(o..
         __ n.. node:
             r.. [root0, N..]
         stack    # list
-        w.... node != root0:
+        w.... node !_ root0:
             stack.a..(root0)
             __ root0.val > node.val:
                 root0 root0.left

@@ -26,13 +26,13 @@ c_ Solution(o..
         ___ length __ lengths:
             maxVal m..(maxVal, length)
         ___ length __ lengths:
-            __ maxVal != length:
+            __ maxVal !_ length:
                 nonMax length
             ____
                 count += 1
-        __ count != 2: r.. F..
+        __ count !_ 2: r.. F..
         ___ length __ lengths:
-            __ nonMax != length a.. maxVal != length:
+            __ nonMax !_ length a.. maxVal !_ length:
                 r.. F..
         r.. T..
     

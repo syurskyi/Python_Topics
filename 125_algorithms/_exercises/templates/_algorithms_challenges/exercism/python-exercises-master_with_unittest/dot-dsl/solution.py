@@ -37,15 +37,15 @@ c_ Graph(o..
 
             type_ item[0]
             __ type_ __ ATTR:
-                __ l..(item) != 3:
+                __ l..(item) !_ 3:
                     r.. V...("ATTR malformed")
                 attrs[item[1]] item[2]
             ____ type_ __ NODE:
-                __ l..(item) != 3:
+                __ l..(item) !_ 3:
                     r.. V...("NODE malformed")
                 nodes.a..(Node(item[1], item[2]
             ____ type_ __ EDGE:
-                __ l..(item) != 4:
+                __ l..(item) !_ 4:
                     r.. V...("EDGE malformed")
                 edges.a..(Edge(item[1], item[2], item[3]
             ____

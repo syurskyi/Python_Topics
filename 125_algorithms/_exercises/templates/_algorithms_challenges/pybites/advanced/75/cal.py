@@ -16,7 +16,7 @@ ___ get_weekdays(calendar_output
 
 
             ___ day,number __ z..(days,numbers
-                __ number != 0:
+                __ number !_ 0:
                     mapping[number] day
 
     r.. mapping

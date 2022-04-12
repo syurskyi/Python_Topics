@@ -13,7 +13,7 @@ c_ Solution:
         """
         temp l..(strs)
         ___ ind, s__ __ e..(temp
-            __ s__ a.. s__!="":  # avoid case of empty string
+            __ s__ a.. s__!_"":  # avoid case of empty string
                 s__ [char ___ char __ s__]
                 s__.s..()
                 s__ "".j..(s__)

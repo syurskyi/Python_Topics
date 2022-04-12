@@ -10,7 +10,7 @@ c_ Solution(o..
     ___ word __ d..:
       start 0
       loc s.find(word, start)
-      w.... loc != -1:
+      w.... loc !_ -1:
         intervals.a..([loc, loc + l..(word) - 1])
         start loc + 1
         loc s.find(word, start)

@@ -38,7 +38,7 @@ c_ Solution(o..
                 right[i] right[i+1]+1
         res f__('-inf')
         ___ i __ r..(n
-            __ left[i+1] != 0 a.. right[i] != 0:
+            __ left[i+1] !_ 0 a.. right[i] !_ 0:
                 res m..(res, m..(left[i+1], right[i]
         r.. res
     

@@ -27,7 +27,7 @@ c_ BSTIterator(o..
         """
         :rtype: bool
         """
-        r.. l..(stack) != 0
+        r.. l..(stack) !_ 0
     
     ___ next
         """

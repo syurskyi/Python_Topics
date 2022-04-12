@@ -61,7 +61,7 @@ ___ get_sectors_with_max_and_min_stocks
 
     ___ company __ data:
         sector company 'sector'
-        __ sector != 'n/a':
+        __ sector !_ 'n/a':
             counts[company 'sector']] += 1
 
 

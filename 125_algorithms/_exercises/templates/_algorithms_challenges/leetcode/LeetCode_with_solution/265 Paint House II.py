@@ -28,7 +28,7 @@ c_ Solution(o..
                     F[i-1][k0]+costs[i-1][k1]
                     # if i == 1 or k1 != k0 else sys.maxint  # another syntax 
                     ___ k0 __ x..(m)
-                    __ i __ 1 o. k1 != k0
+                    __ i __ 1 o. k1 !_ k0
                 )
 
         r.. m..(F[n][i] ___ i __ x..(m

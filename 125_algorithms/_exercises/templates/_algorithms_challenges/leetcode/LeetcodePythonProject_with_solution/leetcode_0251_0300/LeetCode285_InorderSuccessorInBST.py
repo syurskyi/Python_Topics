@@ -36,7 +36,7 @@ c_ Solution(o..
             r.. node.val
         stack    # list
         node root
-        w.... node != p:
+        w.... node !_ p:
             stack.a..(node)
             __ node.val > p.val:
                 node node.left

@@ -26,7 +26,7 @@ c_ Solution:
         :rtype: int
         """
         digit num % 9
-        __ digit __ 0 a.. num != 0:
+        __ digit __ 0 a.. num !_ 0:
             r.. 9
         ____
             r.. digit

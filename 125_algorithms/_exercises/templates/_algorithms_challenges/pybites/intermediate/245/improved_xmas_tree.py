@@ -23,7 +23,7 @@ ___ generate_improved_xmas_tree(rows=10
       xmas_tree.a..((leaf_count * LEAF).center(max_length).r..
 
    ___ i __ r..(2
-      __ rows % 2 != 0:
+      __ rows % 2 !_ 0:
          product m__.c.. max_length / 2)
       ____
          product m__.f..(max_length / 2) + 2

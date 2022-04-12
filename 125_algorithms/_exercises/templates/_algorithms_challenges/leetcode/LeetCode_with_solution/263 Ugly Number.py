@@ -26,7 +26,7 @@ c_ Solution(o..
 
         prime 2
         w.... prime*prime <_ num a.. num > 1:
-            __ num % prime != 0:
+            __ num % prime !_ 0:
                 prime += 1
             ____
                 num /= prime

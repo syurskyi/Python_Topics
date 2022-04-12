@@ -55,7 +55,7 @@ c_ Cache(o..
   ___ increaseFreq
     freqNode freqNode
     newFreqNode N..
-    __ L...isEmpty(freqNode) o. freqNode.next.freq != freqNode.freq + 1:
+    __ L...isEmpty(freqNode) o. freqNode.next.freq !_ freqNode.freq + 1:
       newFreqNode FreqNode(freqNode.freq + 1)
       L...insertAfter(freqNode, newFreqNode)
     ____

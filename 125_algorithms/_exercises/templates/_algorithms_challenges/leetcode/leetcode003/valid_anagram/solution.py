@@ -18,7 +18,7 @@ c_ Solution(o..
         :type t: str
         :rtype: bool
         """
-        __ l..(s) != l..(t
+        __ l..(s) !_ l..(t
             r.. F..
         d    # dict
         ___ c __ s:

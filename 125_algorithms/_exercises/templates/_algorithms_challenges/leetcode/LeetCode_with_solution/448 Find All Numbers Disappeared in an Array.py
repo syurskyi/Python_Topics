@@ -28,7 +28,7 @@ c_ Solution:
 
         missing    # list
         ___ idx, elm __ e..(A
-            __ idx != elm - 1:
+            __ idx !_ elm - 1:
                 missing.a..(idx + 1)
         r.. missing
 

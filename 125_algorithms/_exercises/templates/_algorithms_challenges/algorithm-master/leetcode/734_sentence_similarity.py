@@ -27,7 +27,7 @@ c_ Solution:
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ l..(words1) != l..(words2
+        __ l..(words1) !_ l..(words2
             r.. F..
 
         simils c...d..(s..)
@@ -40,7 +40,7 @@ c_ Solution:
             a words1[i]
             b words2[i]
 
-            __ a != b a.. b n.. __ simils[a]:
+            __ a !_ b a.. b n.. __ simils[a]:
                 r.. F..
 
         r.. T..

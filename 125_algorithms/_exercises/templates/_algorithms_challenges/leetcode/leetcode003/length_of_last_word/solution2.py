@@ -21,7 +21,7 @@ c_ Solution(o..
         p n - 1
         right -1
         w.... p >_ 0:
-            __ right __ -1 a.. s[p] != ' ':
+            __ right __ -1 a.. s[p] !_ ' ':
                 right p
             ____ right >_ 0 a.. s[p] __ ' ':
                 r.. right - p

@@ -3,7 +3,7 @@ ___ distance(strand1, strand2
     index 0
 
     w.... index < l..(strand1
-        __ strand1[index] != strand2[index]:
+        __ strand1[index] !_ strand2[index]:
             distance += 1
         index += 1
 

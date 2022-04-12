@@ -15,4 +15,4 @@ c_ Solution(o..
       __ s.. >_ target:
         ans m..(ans, j - i)
       s.. -_ nums[i]
-    r.. ans __ ans != f__("inf") ____ 0
+    r.. ans __ ans !_ f__("inf") ____ 0

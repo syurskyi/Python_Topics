@@ -68,7 +68,7 @@ ___ get_every_second_indexes ser ?.S..,
     If even_index is False return every index where idx % 2 != 0
     Assume default indexing i.e. 0 -> n
     """
-    r.. ?,i..[l.... x: x.index % 2 __ 0] __ even_index ____ ?,i..[l.... x: x.index % 2 != 0]
+    r.. ?,i..[l.... x: x.index % 2 __ 0] __ even_index ____ ?,i..[l.... x: x.index % 2 !_ 0]
 
 
 

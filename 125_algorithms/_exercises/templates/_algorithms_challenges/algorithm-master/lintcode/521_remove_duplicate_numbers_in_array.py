@@ -40,7 +40,7 @@ c_ Solution:
         # for `nums[0]`
         ans 1
         ___ i __ r..(1, l..(nums:
-            __ nums[i - 1] != nums[i]:
+            __ nums[i - 1] !_ nums[i]:
                 nums[ans] nums[i]
                 ans += 1
 

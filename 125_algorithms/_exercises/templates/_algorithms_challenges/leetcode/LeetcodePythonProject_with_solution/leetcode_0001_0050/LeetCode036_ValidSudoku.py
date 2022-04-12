@@ -14,14 +14,14 @@ c_ Solution(o..
             ___ j __ r..(9
                 __ board[i][j] __ hashset:
                     r.. F..
-                __ board[i][j] != '.':
+                __ board[i][j] !_ '.':
                     hashset.add(board[i][j])
         ___ j __ r..(9
             hashset s..()
             ___ i __ r..(9
                 __ board[i][j] __ hashset:
                     r.. F..
-                __ board[i][j] != '.':
+                __ board[i][j] !_ '.':
                     hashset.add(board[i][j])
         ___ i0 __ r..(3
             ___ j0 __ r..(3
@@ -30,6 +30,6 @@ c_ Solution(o..
                     ___ j __ r..(j0*3, j0*3+3
                         __ board[i][j] __ hashset:
                             r.. F..
-                        __ board[i][j] != '.':
+                        __ board[i][j] !_ '.':
                             hashset.add(board[i][j])
         r.. T..

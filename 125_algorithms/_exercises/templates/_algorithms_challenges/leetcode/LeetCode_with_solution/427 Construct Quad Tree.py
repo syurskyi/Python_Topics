@@ -49,7 +49,7 @@ c_ Solution:
         bottomRight _construct(grid, row + l_child, col + l_child, l_child)
         is_leaf (
             topLeft.val __ topRight.val __ bottomLeft.val __ bottomRight.val
-            != "*"
+            !_ "*"
         )
         __ is_leaf:
             r.. Node(grid[row][col], T.., N.., N.., N.., N..)

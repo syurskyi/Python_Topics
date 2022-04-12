@@ -68,7 +68,7 @@ c_ SolutionArray(o..
             r..
 
         ___ elt __ map1:
-            __ elt != "00" o. l..(cur) != n-2:
+            __ elt !_ "00" o. l..(cur) !_ n-2:
                 cur.insert(0, elt[0])
                 cur.a..(elt[1])
                 build(n, cur, ret)
@@ -98,9 +98,9 @@ c_ SolutionOutputLimitExceeded(o..
 
     ___ build  idx, n, cur, ret
         __ idx __ n/2:
-            __ n % 2 != 0:
+            __ n % 2 !_ 0:
                 ___ m __ middle:
-                    __ m != "0" o. idx != 0:
+                    __ m !_ "0" o. idx !_ 0:
                         temp l..(cur)
                         temp.a..(m)
                         ___ i __ x..(idx-1, -1, -1
@@ -115,7 +115,7 @@ c_ SolutionOutputLimitExceeded(o..
             r..
 
         ___ k __ map.k..:
-            __ k != "0" o. idx != 0:
+            __ k !_ "0" o. idx !_ 0:
                 cur.a..(k)
                 build(idx+1, n, cur, ret)
                 cur.p.. )

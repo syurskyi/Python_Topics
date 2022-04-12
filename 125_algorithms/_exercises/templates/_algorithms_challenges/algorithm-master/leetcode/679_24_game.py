@@ -25,7 +25,7 @@ c_ Solution:
                 __ i __ j:
                     _____
 
-                nxts [nums[k] ___ k __ r..(n) __ i != k != j]  # i != j != k is different
+                nxts [nums[k] ___ k __ r..(n) __ i !_ k !_ j]  # i != j != k is different
 
                 ___ k __ r..(l..(OP:
                     __ i < j a.. k < 2:

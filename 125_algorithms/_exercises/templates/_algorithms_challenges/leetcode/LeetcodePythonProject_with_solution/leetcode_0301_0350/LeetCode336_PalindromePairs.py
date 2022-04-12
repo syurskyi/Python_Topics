@@ -17,18 +17,18 @@ c_ Solution(o..
                 s2 word[j:]
                 __ isPalindrome(s1
                     str2rvs s2[::-1]
-                    __ str2rvs __ hashmap a.. hashmap[str2rvs] != i:
+                    __ str2rvs __ hashmap a.. hashmap[str2rvs] !_ i:
                         result.a..([hashmap[str2rvs], i])
                 __ isPalindrome(s2
                     str1rvs s1[::-1]
-                    __ str1rvs __ hashmap a.. hashmap[str1rvs] != i a.. s2:
+                    __ str1rvs __ hashmap a.. hashmap[str1rvs] !_ i a.. s2:
                         result.a..([i, hashmap[str1rvs]])
         r.. result
     
     ___ isPalindrome  s
         left, right 0, l..(s)-1
         w.... left < right:
-            __ s[left] != s[right]:
+            __ s[left] !_ s[right]:
                 r.. F..
             left+=1
             right-_1

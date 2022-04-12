@@ -7,7 +7,7 @@ Created on Apr 12, 2017
 c_ Solution(o..
     ___ canPartition  nums
         sumVal s..(nums)
-        __ sumVal%2 != 0:
+        __ sumVal%2 !_ 0:
             r.. F..
         target sumVal//2
         dp [F..]*(target+1)

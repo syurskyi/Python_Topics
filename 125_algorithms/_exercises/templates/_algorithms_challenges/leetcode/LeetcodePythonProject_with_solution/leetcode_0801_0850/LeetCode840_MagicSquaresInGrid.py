@@ -21,16 +21,16 @@ c_ Solution(o..
         hashset s..([grid[i][j], grid[i][j+1], grid[i][j+2],\
                        grid[i+1][j], grid[i+1][j+1], grid[i+1][j+2],\
                        grid[i+2][j], grid[i+2][j+1], grid[i+2][j+2]])
-        __ hashset != s..(r..(1, 10:
+        __ hashset !_ s..(r..(1, 10:
             r.. F..
         val grid[i][j] + grid[i+1][j] + grid[i+2][j]
-        __ val != grid[i][j] + grid[i][j+1] + grid[i][j+2] o.\
-            val != grid[i+1][j] + grid[i+1][j+1] + grid[i+1][j+2] o.\
-            val != grid[i+2][j] + grid[i+2][j+1] + grid[i+2][j+2] o.\
-            val != grid[i][j+1] + grid[i+1][j+1] + grid[i+2][j+1] o.\
-            val != grid[i][j+2] + grid[i+1][j+2] + grid[i+2][j+2] o.\
-            val != grid[i][j] + grid[i+1][j+1] + grid[i+2][j+2] o.\
-            val != grid[i+2][j] + grid[i+1][j+1] + grid[i][j+2]:
+        __ val !_ grid[i][j] + grid[i][j+1] + grid[i][j+2] o.\
+            val !_ grid[i+1][j] + grid[i+1][j+1] + grid[i+1][j+2] o.\
+            val !_ grid[i+2][j] + grid[i+2][j+1] + grid[i+2][j+2] o.\
+            val !_ grid[i][j+1] + grid[i+1][j+1] + grid[i+2][j+1] o.\
+            val !_ grid[i][j+2] + grid[i+1][j+2] + grid[i+2][j+2] o.\
+            val !_ grid[i][j] + grid[i+1][j+1] + grid[i+2][j+2] o.\
+            val !_ grid[i+2][j] + grid[i+1][j+1] + grid[i][j+2]:
             r.. F..
         r.. T..
     

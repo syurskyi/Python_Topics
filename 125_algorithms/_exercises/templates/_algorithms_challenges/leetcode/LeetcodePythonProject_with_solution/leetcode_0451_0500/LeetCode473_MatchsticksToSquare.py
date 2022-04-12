@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         __ n.. nums: r.. F..
         sumVal s..(nums)
-        __ sumVal%4 != 0: r.. F..
+        __ sumVal%4 !_ 0: r.. F..
         target sumVal//4
         # Faster
         nums.s..(r.._T..

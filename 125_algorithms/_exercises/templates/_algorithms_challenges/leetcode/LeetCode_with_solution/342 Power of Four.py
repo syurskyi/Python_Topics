@@ -23,7 +23,7 @@ c_ Solution(o..
         """
         __ num < 1:
             r.. F..
-        __ num & num -1 != 0:
+        __ num & num -1 !_ 0:
             r.. F..
 
         r.. num % 3 __ 1
@@ -36,7 +36,7 @@ c_ Solution(o..
         """
         __ num < 1:
             r.. F..
-        __ num & num-1 != 0:
+        __ num & num-1 !_ 0:
             r.. F..
 
         w... T...

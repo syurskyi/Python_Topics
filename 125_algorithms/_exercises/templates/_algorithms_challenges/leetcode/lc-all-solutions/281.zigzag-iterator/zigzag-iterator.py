@@ -22,7 +22,7 @@ c_ ZigzagIterator(o..
     ______ S..:
       r.. next()
     total -_ 1
-    __ total != 0:
+    __ total !_ 0:
       iters.a..(top)
     r.. value
 

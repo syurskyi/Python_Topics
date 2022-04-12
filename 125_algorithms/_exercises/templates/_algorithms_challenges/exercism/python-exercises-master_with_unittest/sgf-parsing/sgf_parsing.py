@@ -9,15 +9,15 @@ c_ SgfTree(o..
         ___ k, v __ properties.i..:
             __ k n.. __ other.properties:
                 r.. F..
-            __ other.properties[k] != v:
+            __ other.properties[k] !_ v:
                 r.. F..
         ___ k __ other.properties.k..:
             __ k n.. __ properties:
                 r.. F..
-        __ l..(children) != l..(other.children
+        __ l..(children) !_ l..(other.children
             r.. F..
         ___ a, b __ z..(children, other.children
-            __ a != b:
+            __ a !_ b:
                 r.. F..
         r.. T..
 

@@ -63,7 +63,7 @@ c_ Solution(o..
 
         ___ i __ r..(l..(words) - 1  # compare word_i and word_{i+1}
             ___ c1, c2 __ z..(words[i], words[i+1]
-                __ c1 != c2:  # lexical order
+                __ c1 !_ c2:  # lexical order
                     G[c1].a..(c2)
                     _____  # need to break for lexical order
 

@@ -22,7 +22,7 @@ ___ create_chart
             __ 'sending to slack channel' __ line:
                 space_index line.i.. ' ')
                 date line[:space_index]
-                __ date != current_date:
+                __ date !_ current_date:
                     __ current_date:
                         print()
                     current_date date

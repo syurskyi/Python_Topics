@@ -52,7 +52,7 @@ c_ Solution:
             pre pre.next
 
         # then do the manipulate in one group of operations (no loop)
-        __ k!=0: # avoid cyclic link
+        __ k!_0: # avoid cyclic link
             pre.next, dummy.next, last.next N.., pre.next, dummy.next
 
         r.. dummy.next

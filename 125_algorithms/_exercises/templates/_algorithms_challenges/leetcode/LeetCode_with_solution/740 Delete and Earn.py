@@ -107,7 +107,7 @@ c_ Solution:
                 [
                     F[j]
                     ___ j __ r..(i)
-                    __ counter[j][0] != counter[i][0] - 1
+                    __ counter[j][0] !_ counter[i][0] - 1
                 ]
                 o. [0]
             )

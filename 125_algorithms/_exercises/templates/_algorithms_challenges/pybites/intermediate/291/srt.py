@@ -26,7 +26,7 @@ ___ get_srt_section_ids(text: s..) __ L..[i..]:
 
       You can ignore milliseconds for this exercise.
    """
-   sections_raw [word.s.. ___ word __ text.s...s..("\n") __ word != ""]
+   sections_raw [word.s.. ___ word __ text.s...s..("\n") __ word !_ ""]
    sections_clean [sections_raw[i-3:i] ___ i __ r..(3, l..(sections_raw) +1, 3)]
    sections_ranking    # dict
 

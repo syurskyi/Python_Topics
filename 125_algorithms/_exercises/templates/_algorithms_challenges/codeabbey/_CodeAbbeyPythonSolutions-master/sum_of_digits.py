@@ -6,7 +6,7 @@ ___ calc(A, B, C
 
 ___ sum_digits(num
     s.. 0
-    w....(num != 0
+    w....(num !_ 0
         s.. s.. + (num % 10)
         num //= 10
     r.. s..

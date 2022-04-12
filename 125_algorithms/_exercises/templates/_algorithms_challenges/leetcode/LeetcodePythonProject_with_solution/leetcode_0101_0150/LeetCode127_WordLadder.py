@@ -36,7 +36,7 @@ c_ Solution(o..
         res    # list
         ___ i, c __ e..(word
             ___ c0 __ chars:
-                __ c != c0:
+                __ c !_ c0:
                     word0 word[:i]+c0+word[i+1:]
                     __ word0 __ wordSet:
                         res.a..(word0)

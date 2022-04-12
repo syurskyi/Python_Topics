@@ -123,7 +123,7 @@ c_ SolutionTLE:
         ret 0
         ___ i __ r..(m
             ___ j __ r..(n
-                __ (i, j) != (3, 0) a.. (i, j) != (3, 2
+                __ (i, j) !_ (3, 0) a.. (i, j) !_ (3, 2
                     ret += dfs(i, j, N-1)
                     ret %= MOD
         r.. ret
@@ -137,7 +137,7 @@ c_ SolutionTLE:
                 ___ di, dj __ dirs:
                     I i + di
                     J j + dj
-                    __ 0 <_ I < m a.. 0 <_ J < n a.. (I, J) != (3, 0) a.. (I, J) != (3, 2
+                    __ 0 <_ I < m a.. 0 <_ J < n a.. (I, J) !_ (3, 0) a.. (I, J) !_ (3, 2
                         ret += dfs(I, J, r - 1)
                         ret %= MOD
 

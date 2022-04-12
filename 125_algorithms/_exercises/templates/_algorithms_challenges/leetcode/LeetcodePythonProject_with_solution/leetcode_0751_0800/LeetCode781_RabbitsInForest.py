@@ -15,7 +15,7 @@ c_ Solution(o..
             hashmap[ans] hashmap.g.. ans, 0)+1
         ___ n, count __ hashmap.i..:
             group count//(n+1)
-            __ count%(n+1) != 0:
+            __ count%(n+1) !_ 0:
                 res += (group+1)*(n+1)
             ____
                 res += group*(n+1)

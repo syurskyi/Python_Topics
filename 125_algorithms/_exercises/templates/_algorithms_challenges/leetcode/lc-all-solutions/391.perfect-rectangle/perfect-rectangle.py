@@ -22,7 +22,7 @@ c_ Solution(o..
       lines.a..((rect[0], 1, rect[1], rect[3]
       lines.a..((rect[2], -1, rect[1], rect[3]
     area (rightBound - leftBound) * (topBound - bottomBound)
-    __ area != realArea:
+    __ area !_ realArea:
       r.. F..
     lines.s..()
     bst    # list

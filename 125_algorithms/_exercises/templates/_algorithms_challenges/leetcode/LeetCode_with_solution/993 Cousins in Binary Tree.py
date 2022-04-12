@@ -50,9 +50,9 @@ c_ Solution:
         """
         dfs(N.., root, x, 0)
         dfs(N.., root, y, 0)
-        __ l..(pi) != 2:
+        __ l..(pi) !_ 2:
             r.. F..
-        r.. pi[0] != pi[1] a.. depths[0] __ depths[1]
+        r.. pi[0] !_ pi[1] a.. depths[0] __ depths[1]
 
 
     ___ dfs  pi, node, x, depth

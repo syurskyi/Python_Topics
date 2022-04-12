@@ -18,7 +18,7 @@ c_ Solution(o..
     
     ___ checkIP4  ip
         arr ip.s..('.')
-        __ l..(arr) != 4: r.. F..
+        __ l..(arr) !_ 4: r.. F..
         ___ elem __ arr:
             __ n.. elem: r.. F..
             __ elem.s.. '0') a.. l..(elem) > 1: r.. F..
@@ -28,12 +28,12 @@ c_ Solution(o..
     
     ___ checkIP6  ip
         arr ip.s..(':')
-        __ l..(arr) != 8: r.. F..
+        __ l..(arr) !_ 8: r.. F..
         d.. s..(l..('0123456789abcdefABCDEF'
         ___ i, elem __ e..(arr
             __ i > 0 a.. l..(elem) > 4: r.. F..
             __ i __ 0 a.. l..(elem) > 4:
-                __ elem[:l..(elem)-4] != '0'*(l..(elem)-4
+                __ elem[:l..(elem)-4] !_ '0'*(l..(elem)-4
                     r.. F..
             __ n.. elem: r.. F..
             ___ c __ elem:

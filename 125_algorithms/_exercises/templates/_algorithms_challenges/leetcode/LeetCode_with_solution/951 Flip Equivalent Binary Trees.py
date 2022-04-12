@@ -43,7 +43,7 @@ c_ Solution:
         ____ n.. root1 o. n.. root2:
             r.. F..
 
-        __ root1.val != root2.val:
+        __ root1.val !_ root2.val:
             r.. F..
 
         r.. flipEquiv(root1.left, root2.left) a.. flipEquiv(root1.right, root2.right) o. \

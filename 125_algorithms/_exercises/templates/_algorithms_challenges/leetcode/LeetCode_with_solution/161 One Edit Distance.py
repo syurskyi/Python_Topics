@@ -25,7 +25,7 @@ c_ Solution(o..
                 i += 1
                 j += 1
             ____
-                __ m != n:
+                __ m !_ n:
                     j += 1  # delete
                 ____  # replace s[i]
                     i += 1
@@ -33,7 +33,7 @@ c_ Solution(o..
 
                 diff += 1
 
-        r.. diff __ 1 o. diff __ 0 a.. m != n
+        r.. diff __ 1 o. diff __ 0 a.. m !_ n
 
 
 c_ Solution1(o..
@@ -52,11 +52,11 @@ c_ Solution1(o..
             __ a __ b:
                 a, b next(i, N..), next(j, N..)
             ____
-                __ m != n:
+                __ m !_ n:
                     b next(j, N..)
                 ____
                     a, b next(i, N..), next(j, N..)
 
                 diff += 1
 
-        r.. diff __ 1 o. diff __ 0 a.. m != n
+        r.. diff __ 1 o. diff __ 0 a.. m !_ n

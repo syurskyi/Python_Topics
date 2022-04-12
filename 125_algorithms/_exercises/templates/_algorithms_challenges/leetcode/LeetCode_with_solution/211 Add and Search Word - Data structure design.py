@@ -66,7 +66,7 @@ c_ WordDictionary:
             r.. cur.ended
 
         w word[0]
-        __ w != ".":
+        __ w !_ ".":
             __ w __ cur.children:
                 r.. __search(word[1:], cur.children[w])
             ____

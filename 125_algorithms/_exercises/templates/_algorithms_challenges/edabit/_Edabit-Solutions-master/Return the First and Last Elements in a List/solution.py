@@ -6,8 +6,8 @@ ___ first_last(lst
 ___ test
     print("test has started")
     a_list [2,1,3,4]
-    __ first_last(a_list) != [2,4]:
+    __ first_last(a_list) !_ [2,4]:
         print("error1")
     b_list ["tom","rat", "jerry"]
-    __ first_last(b_list) != ["tom","jerry"]:
+    __ first_last(b_list) !_ ["tom","jerry"]:
         print("error2")

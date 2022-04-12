@@ -17,7 +17,7 @@ c_ Solution(o..
         r.. T..
     
     ___ validColor  graph, colors, color, node
-        __ colors[node] != -1:
+        __ colors[node] !_ -1:
             r.. colors[node] __ color
         colors[node] color
         ___ nextNode __ graph[node]:

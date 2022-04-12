@@ -50,7 +50,7 @@ c_ Solution(o..
         ___ i __ x..(1, n+1
             v nums[i-1]
             __ v > 0:
-                F_pos[i] F_pos[i-1]*v __ F_pos[i-1] != 0 ____ v
+                F_pos[i] F_pos[i-1]*v __ F_pos[i-1] !_ 0 ____ v
                 F_neg[i] F_neg[i-1]*v
             ____ v __ 0:
                 F_pos[i], F_neg[i] 0, 0
@@ -95,7 +95,7 @@ c_ Solution(o..
 
         cur 0  # starting from 0
         ___ ind, val __ e..(A
-            __ cur!=0:
+            __ cur!_0:
                 cur *= val
             ____
                 cur val
@@ -138,7 +138,7 @@ c_ Solution(o..
         start_ptr 0
         end_ptr 0
         w.... end_ptr<length:  # [start, end), expanding
-            __ cur!=0:
+            __ cur!_0:
                 cur *= A[end_ptr]
             ____
                 cur A[end_ptr]

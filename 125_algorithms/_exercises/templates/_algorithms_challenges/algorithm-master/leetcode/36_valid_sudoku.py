@@ -4,7 +4,7 @@ c_ Solution:
         :type board: List[List[str]]
         :rtype: bool
         """
-        __ n.. board o. n.. board[0] o. l..(board) != l..(board[0]
+        __ n.. board o. n.. board[0] o. l..(board) !_ l..(board[0]
             r.. F..
 
         n l..(board)

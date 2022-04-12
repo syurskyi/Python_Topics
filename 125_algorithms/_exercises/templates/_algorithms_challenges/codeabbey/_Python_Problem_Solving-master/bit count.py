@@ -13,7 +13,7 @@ ___ j __ binary:
     __ j > 0:
         #append in the list
         bin_list.a..(j)
-        w.... j != 1:
+        w.... j !_ 1:
             j =i..(j / 2)
             bin_list.a..(j)
             
@@ -29,7 +29,7 @@ ___ j __ binary:
     ____
         j a..(j)
         bin_list.a..(j)
-        w.... j != 1:
+        w.... j !_ 1:
             j =i..(j / 2)
             bin_list.a..(j)
         count 0
@@ -70,6 +70,6 @@ ___ j __ binary:
             result '1' + result
         
         # add 1 till it become 32 in length
-        w.... l..(result) != 32:
+        w.... l..(result) !_ 32:
             result += '1'
         print(result.c.. '1'),end=' ')

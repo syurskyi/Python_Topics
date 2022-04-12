@@ -10,7 +10,7 @@ counter 0
 # to keep the count of the people and rotate when the list reaches its end
 squad_count 0
 #while there is only one element left inside the list
-w.... l..(sucide_squad) != 1:
+w.... l..(sucide_squad) !_ 1:
     #increment the counter by 1
     counter += 1
     #check if the counter has reached the final value of killing people. if yes then kill the person who comes at count k

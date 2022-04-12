@@ -18,7 +18,7 @@ c_ Solution:
 
     ___ isStrobogrammatic  num
         ___ i __ x..(l..(num)/2+1
-            __ num[i] n.. __ map o. map[num[i]] != num[l..(num)-1-i]:
+            __ num[i] n.. __ map o. map[num[i]] !_ num[l..(num)-1-i]:
                 r.. F..
 
         r.. T..

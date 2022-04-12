@@ -9,7 +9,7 @@ ___ filter_accents(text
 
     s unicodedata.normalize('NFD',text).encode("ascii",'ignore').d.. 'utf-8')
     ___ character_1,character_2 __ z..(text,s
-        __ character_1 != character_2:
+        __ character_1 !_ character_2:
             result.a..(character_1)
 
 

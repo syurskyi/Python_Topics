@@ -38,7 +38,7 @@ c_ Solution:
 
         square [0 ___ _ __ r..(4)]
         l s..(nums) // 4
-        __ s..(nums) % 4 != 0:
+        __ s..(nums) % 4 !_ 0:
             r.. F..
 
         nums.s..(r.._T..

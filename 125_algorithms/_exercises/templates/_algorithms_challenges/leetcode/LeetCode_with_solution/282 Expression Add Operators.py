@@ -35,7 +35,7 @@ c_ Solution(o..
                 ret.a..(cur_str)
         ____
             ___ i __ x..(pos, l..(num:
-                __ i != pos a.. num[pos] __ "0":
+                __ i !_ pos a.. num[pos] __ "0":
                     _____
                 nxt_val i..(num[pos:i+1])
 

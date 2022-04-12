@@ -32,9 +32,9 @@ c_ Solution:
 
         ___ i __ r..(l..(flowerbed:
             __ (
-                flowerbed[i] != 1 a..
-                (i + 1 >_ l..(flowerbed) o. flowerbed[i+1] != 1) a..
-                (i - 1 < 0 o. flowerbed[i - 1] != 1)
+                flowerbed[i] !_ 1 a..
+                (i + 1 >_ l..(flowerbed) o. flowerbed[i+1] !_ 1) a..
+                (i - 1 < 0 o. flowerbed[i - 1] !_ 1)
 
                 n -_ 1
                 flowerbed[i] 1

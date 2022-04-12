@@ -33,7 +33,7 @@ c_ Solution:
             root_x, root_y queue.p.. 0)
             ___ node __ adjacent(board, root_x, root_y
                 x, y node
-                __ board[y][x] != 'Y':
+                __ board[y][x] !_ 'Y':
                     board[y][x] 'Y'
                     queue.a..((x, y
 

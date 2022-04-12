@@ -35,7 +35,7 @@ c_ Solution(o..
                 _____
 
         t 0
-        w.... t != s:
+        w.... t !_ s:
             t nums[t]
             s nums[s]
 

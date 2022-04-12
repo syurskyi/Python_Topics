@@ -17,7 +17,7 @@ c_ Solution:
         i 0
         j l..(s) - 1
         w.... i <_ j:
-            __ ls[i] != ' ' a.. ls[j] != ' ':
+            __ ls[i] !_ ' ' a.. ls[j] !_ ' ':
                 _____
             __ ls[i] __ ' ':
                 i += 1
@@ -74,7 +74,7 @@ c_ Solution:
         # Remove multiple spaces between two words
         j left
         ___ i __ r..(left, right + 1
-            __ cs[i] != ' ' o. cs[i] __ ' ' a.. cs[i - 1] != ' ':
+            __ cs[i] !_ ' ' o. cs[i] __ ' ' a.. cs[i - 1] !_ ' ':
                 cs[j] cs[i]
                 j += 1
         right j - 1
@@ -82,7 +82,7 @@ c_ Solution:
         start left
         q start
         w.... q <_ right:
-            w.... q <_ right a.. cs[q] != ' ':
+            w.... q <_ right a.. cs[q] !_ ' ':
                 q += 1
             # q - 1 is the end index of the word
             reverse(cs, start, q - 1)

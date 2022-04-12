@@ -12,7 +12,7 @@ c_ Solution(o..
         ___ node __ nodes:
             stack.a..(node)
             w.... l..(stack)>_3 a.. stack[-1] __ '#' a.. stack[-2] __ '#' a..\
-                stack[-3] != '#':
+                stack[-3] !_ '#':
                 stack.p.. )
                 stack.p.. )
                 stack.p.. )

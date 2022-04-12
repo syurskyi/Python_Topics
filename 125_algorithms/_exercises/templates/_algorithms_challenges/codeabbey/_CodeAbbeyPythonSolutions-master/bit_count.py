@@ -8,7 +8,7 @@ ___ c.. decimal_number
         decimal_number -_1
         is_negative T..
     counter 0
-    w....(decimal_number != 0
+    w....(decimal_number !_ 0
         remainder decimal_number%2
         __(remainder __ 1
             counter += 1

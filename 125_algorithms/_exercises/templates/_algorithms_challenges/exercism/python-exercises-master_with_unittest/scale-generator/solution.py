@@ -26,7 +26,7 @@ c_ Scale(o..
         ___ i, interval __ e..(pattern
             pitches.a..(scale[last_index])
             last_index += ASCENDING_INTERVALS.i.. interval) + 1
-        __ pitches[0] != scale[last_index % l..(scale)]:
+        __ pitches[0] !_ scale[last_index % l..(scale)]:
             r.. V...()
         r.. pitches
 

@@ -12,7 +12,7 @@ c_ Solution(o..
     ___ isPowerOfThreeMath  n
         __ n <_ 0: r.. F..
         w.... n > 1:
-            __ n % 3 != 0:
+            __ n % 3 !_ 0:
                 r.. F..
             n n/3
         r.. T..

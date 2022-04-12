@@ -31,8 +31,8 @@ c_ Solution:
         is_left is_unival(cur.left)
         is_right is_unival(cur.right)  # attention to test condition shortcut
         __ (n.. is_left o. n.. is_right o.
-                    cur.left a.. cur.left.val != cur.val o.
-                    cur.right a.. cur.right.val != cur.val
+                    cur.left a.. cur.left.val !_ cur.val o.
+                    cur.right a.. cur.right.val !_ cur.val
             r.. F..
         ____
             cnt += 1  # for currently visiting node as the root of subtree.

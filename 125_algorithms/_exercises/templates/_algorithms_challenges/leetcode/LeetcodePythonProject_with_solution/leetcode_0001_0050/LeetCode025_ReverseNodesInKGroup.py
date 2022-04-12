@@ -34,7 +34,7 @@ c_ Solution(o..
         nextNode tail.next
         p prev.next
         res p
-        w.... p != nextNode:
+        w.... p !_ nextNode:
             tmp  p.next
             p.next prev.next
             prev.next p

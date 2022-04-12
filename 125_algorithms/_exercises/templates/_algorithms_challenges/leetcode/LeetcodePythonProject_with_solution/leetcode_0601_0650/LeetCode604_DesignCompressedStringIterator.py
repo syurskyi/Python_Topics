@@ -42,7 +42,7 @@ c_ StringIterator(o..
         """
         :rtype: bool
         """
-        r.. c != ' '
+        r.. c !_ ' '
 
 __ _____ __ _____
     it StringIterator('L1e2t1C1o1d1e1')
