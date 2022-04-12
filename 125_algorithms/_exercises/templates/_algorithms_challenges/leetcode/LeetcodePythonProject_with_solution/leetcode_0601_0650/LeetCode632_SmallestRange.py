@@ -9,20 +9,20 @@ c_ Solution(o..
         :type nums: List[List[int]]
         :rtype: List[int]
         """
-        _______ heapq
+        _______ h__
         pq [(arr[0], i, 0) ___ i, arr __ e..(nums)]
-        heapq.heapify(pq)
+        h__.heapify(pq)
         res [f__('-inf'), f__('inf')]
         right m..([arr[0] ___ arr __ nums])
         w.... pq:
-            left, i, j heapq.heappop(pq)
+            left, i, j h__.heappop(pq)
             __ right-left < res[1]-res[0]:
                 res [left, right]
             __ j+1 __ l..(nums[i]
                 r.. res
             v nums[i][j+1]
             right m..(right, v)
-            heapq.heappush(pq, (v, i, j+1
+            h__.heappush(pq, (v, i, j+1
         r.. res
     
     ___ test

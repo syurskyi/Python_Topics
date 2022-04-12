@@ -10,16 +10,16 @@ c_ Solution(o..
         :type B: List[int]
         :rtype: List[int]
         """
-        _______ heapq
+        _______ h__
         arrA s..(A)
         n l..(arrA)
         h    # list
         ___ i, b __ e..(B
-            heapq.heappush(h, [-b, i])
+            h__.heappush(h, [-b, i])
         l, r 0, n-1
         res [0]*n
         w.... h:
-            cur heapq.heappop(h)
+            cur h__.heappop(h)
             idx cur[1]
             val -cur[0]
             __ arrA[r] > val:

@@ -11,7 +11,7 @@ Note:
 (2) The given numbers in primes are in ascending order.
 (3) 0 < k ≤ 100, 0 < n ≤ 106, 0 < primes[i] < 1000.
 """
-_______ heapq
+_______ h__
 ____ c.. _______ d..
 _______ ___
 
@@ -63,13 +63,13 @@ c_ SolutionHeap(o..
         h [QueueWrapper(i, d..([v] ___ i, v __ e..(primes)]
         dic {e.idx: e ___ e __ h}
 
-        heapq.heapify(h)
+        h__.heapify(h)
         ___ _ __ x..(n-1
-            mini heapq.heappop(h)
+            mini h__.heappop(h)
             ret mini.q.popleft()
             ___ i __ x..(mini.idx, l..(primes:
                 dic[i].q.a..(ret*primes[i])
-            heapq.heappush(h, mini)
+            h__.heappush(h, mini)
 
         r.. ret
 

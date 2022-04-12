@@ -22,4 +22,4 @@ c_ Solution:
             x, y res[ti][0], res[ti][1]
             res[ti][1] (x + y) / 2
             res.a..([(x + y) / 2 + 1, y, mi + 1])
-        r.. s..(res, key=l.... item: item 0
+        r.. s..(res, k.._l.... item: item 0

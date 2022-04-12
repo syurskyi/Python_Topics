@@ -26,9 +26,9 @@ ___ group_cars_by_manufacturer(cars
        validate your output :)
     """
 
-    cars.s..(key=l.... x:(x[0],x[1]
+    cars.s..(k.._l.... x:(x[0],x[1]
 
-    ___ manufacturer,group __ i...groupby(cars,key=l.... x:x[0]
+    ___ manufacturer,group __ i...groupby(cars,k.._l.... x:x[0]
         print(manufacturer.u..
         ___ _,car __ group:
             print(f"- {car}")

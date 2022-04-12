@@ -5,7 +5,7 @@ class Point:
         self.x = a
         self.y = b
 """
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -26,12 +26,12 @@ c_ Solution:
 
         ___ i __ r..(l..(points:
             distance get_distance(origin, points[i])
-            heapq.heappush(ans, (-distance, i
+            h__.heappush(ans, (-distance, i
 
             __ l..(ans) > k:
-                heapq.heappop(ans)
+                h__.heappop(ans)
 
-        ans.s..(key=l.... a: (-a[0], points[a[1]].x, points[a[1]].y
+        ans.s..(k.._l.... a: (-a[0], points[a[1]].x, points[a[1]].y
 
         r.. [points[i] ___ _, i __ ans]
 
@@ -41,7 +41,7 @@ c_ Solution:
         r.. dx * dx + dy * dy
 
 
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -64,13 +64,13 @@ c_ Solution:
 
         ___ i __ r..(l..(points:
             distance get_distance(origin, points[i])
-            heapq.heappush(heap, (distance, i
+            h__.heappush(heap, (distance, i
 
         ___ _ __ r..(k
-            distance, i heapq.heappop(heap)
+            distance, i h__.heappop(heap)
             ans.a..((distance, points[i]
 
-        ans.s..(key=l.... a: (a[0], a[1].x, a[1].y
+        ans.s..(k.._l.... a: (a[0], a[1].x, a[1].y
 
         r.. [p ___ _, p __ ans]
 

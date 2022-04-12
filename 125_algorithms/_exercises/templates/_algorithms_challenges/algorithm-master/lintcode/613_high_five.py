@@ -5,7 +5,7 @@ class Record:
         self.id = id
         self.score = score
 """
-____ heapq _______ heappop, heappush
+____ h__ _______ heappop, heappush
 
 
 c_ Solution:

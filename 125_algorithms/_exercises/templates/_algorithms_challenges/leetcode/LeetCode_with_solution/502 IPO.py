@@ -31,7 +31,7 @@ The length of Profits array and Capital array will not exceed 50,000.
 The answer is guaranteed to fit in a 32-bit signed integer.
 """
 ____ t___ _______ L..
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -46,15 +46,15 @@ c_ Solution:
         """
         capital_q l..(z..(Capital, Profits
         profit_q    # list
-        heapq.heapify(capital_q)
+        h__.heapify(capital_q)
         capital W
         ___ _ __ r..(k
             w.... capital_q a.. capital_q 0 0  <_ capital:
-                _, pro heapq.heappop(capital_q)
-                heapq.heappush(profit_q, (-pro, pro
+                _, pro h__.heappop(capital_q)
+                h__.heappush(profit_q, (-pro, pro
 
             __ profit_q:
-                _, pro heapq.heappop(profit_q)
+                _, pro h__.heappop(profit_q)
                 capital += pro
             ____
                 _____

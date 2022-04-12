@@ -18,7 +18,7 @@ c_ Solution(o..
 
     ans 1
     d    # dict
-    points.s..(key=l.... p: (p.x, p.y
+    points.s..(k.._l.... p: (p.x, p.y
     ___ i __ r..(0, l..(points:
       __ i > 0 a.. (points[i].x, points[i].y) __ (points[i - 1].x, points[i - 1].y
         _____

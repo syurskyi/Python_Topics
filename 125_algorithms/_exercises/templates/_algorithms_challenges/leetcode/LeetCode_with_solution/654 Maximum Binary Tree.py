@@ -36,7 +36,7 @@ c_ TreeNode:
 
 
 ____ t___ _______ L..
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -75,10 +75,10 @@ c_ Solution_heap:
             v: i
             ___ i, v __ e..(nums)
         }
-        heapq.heapify(h)
+        h__.heapify(h)
         root N..
         w.... h:
-            _, m heapq.heappop(h)
+            _, m h__.heappop(h)
             root insert(root, m, idx)
 
         r.. root

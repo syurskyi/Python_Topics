@@ -44,7 +44,7 @@ ___ most_popular_characters(characters=characters, top=5
        return top n characters (default 5)
     """
     top_lst s..(characters,
-                     key=l.... x: i..(x.appearances) __ x.appearances ____ 0,
+                     k.._l.... x: i..(x.appearances) __ x.appearances ____ 0,
                      r.._T..[:top]
     r.. [char.name ___ char __ top_lst]
 

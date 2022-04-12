@@ -18,11 +18,11 @@ c_ Solution(o..
     """
     now 0
     heap    # list
-    ___ t, d __ s..(courses, key=l.... x: x[1]
+    ___ t, d __ s..(courses, k.._l.... x: x[1]
       __ now + t <_ d:
         now += t
-        heapq.heappush(heap, -t)
+        h__.heappush(heap, -t)
       ____ heap a.. -heap[0] > t:
-        now += t + heapq.heappop(heap)
-        heapq.heappush(heap, -t)
+        now += t + h__.heappop(heap)
+        h__.heappush(heap, -t)
     r.. l..(heap)

@@ -15,16 +15,16 @@ c_ Solution(o..
         :type lists: List[ListNode]
         :rtype: ListNode
         """
-        _______ heapq
+        _______ h__
         heap    # list
         ___ l __ lists:
             w.... l:
-                heapq.heappush(heap, l.val)
+                h__.heappush(heap, l.val)
                 l l.next
         dummy ListNode(-1)
         prev dummy
         w.... heap:
-            val heapq.heappop(heap)
+            val h__.heappop(heap)
             prev.next ListNode(val)
             prev prev.next
         r.. dummy.next

@@ -3,7 +3,7 @@
 premium question
 """
 ____ t___ _______ L..
-_______ heapq
+_______ h__
 
 
 dirs [(0, -1), (0, 1), (-1, 0), (1, 0)]
@@ -25,7 +25,7 @@ c_ Solution:
         D[i][j] 0
         q [(0, i, j)]
         w.... q:
-            dist, i, j heapq.heappop(q)
+            dist, i, j h__.heappop(q)
             ___ di, dj __ dirs:
                 cur_dist 0
                 I i
@@ -38,7 +38,7 @@ c_ Solution:
 
                 __ dist + cur_dist < D[I][J]:
                     D[I][J] dist + cur_dist
-                    heapq.heappush(q, (D[I][J], I, J
+                    h__.heappush(q, (D[I][J], I, J
 
         i, j destination
         r.. D[i][j] __ D[i][j] !_ f__("inf") ____ -1

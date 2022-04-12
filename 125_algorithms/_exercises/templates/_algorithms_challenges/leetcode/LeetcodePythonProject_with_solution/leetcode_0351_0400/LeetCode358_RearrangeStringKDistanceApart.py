@@ -4,7 +4,7 @@ Created on Mar 23, 2017
 @author: MT
 '''
 
-_______ heapq
+_______ h__
 
 c_ Solution(o..
     ___ rearrangeString  s, k
@@ -13,11 +13,11 @@ c_ Solution(o..
             hashmap[c] hashmap.g.. c, 0)+1
         heap    # list
         ___ c, freq __ hashmap.i..:
-            heapq.heappush(heap, [-freq, c])
+            h__.heappush(heap, [-freq, c])
         queue    # list
         res    # list
         w.... heap:
-            freq, c heapq.heappop(heap)
+            freq, c h__.heappop(heap)
             res.a..(c)
             queue.a..([freq, c])
             __ l..(queue) < k:
@@ -25,7 +25,7 @@ c_ Solution(o..
             freq, c queue.p.. 0)
             freq -freq-1
             __ freq > 0:
-                heapq.heappush(heap, [-freq, c])
+                h__.heappush(heap, [-freq, c])
         r.. ''.j..(res) __ l..(res) __ l..(s) ____ ''
     
     ___ test

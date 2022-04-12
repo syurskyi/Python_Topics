@@ -9,14 +9,14 @@ c_ Solution(o..
       r.. s
     d c...C..(s)
     heap [(-d[key], key) ___ key __ d]
-    heapq.heapify(heap)
+    h__.heapify(heap)
     ans    # list
     w.... l..(ans) < l..(s
       temp    # list
       ___ _ __ r..(k
         __ n.. heap:
           r.. ""
-        freq, c heapq.heappop(heap)
+        freq, c h__.heappop(heap)
         freq += 1
         ans.a..(c)
         __ l..(ans) __ l..(s
@@ -24,5 +24,5 @@ c_ Solution(o..
         __ freq < 0:
           temp.a..((freq, c
       ___ freq, c __ temp:
-        heapq.heappush(heap, (freq, c
+        h__.heappush(heap, (freq, c
     r.. "".j..(ans)

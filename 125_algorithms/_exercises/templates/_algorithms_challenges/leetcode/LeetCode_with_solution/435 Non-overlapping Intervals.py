@@ -34,7 +34,7 @@ c_ Solution:
         __ n.. intervals:
             r.. ret
 
-        intervals.s..(key=l.... x: x.start)
+        intervals.s..(k.._l.... x: x.start)
         cur intervals[0]
         ___ itv __ intervals[1:]:
             __ cur.end <_ itv.start:

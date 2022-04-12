@@ -4,7 +4,7 @@ c_ Solution(o..
     future s..(z..(Capital, Profits[::-1]
     ___ _ __ r..(k
       w.... future a.. future[-1][0] <_ W:
-        heapq.heappush(current, -future.p.. )[1])
+        h__.heappush(current, -future.p.. )[1])
       __ current:
-        W -_ heapq.heappop(current)
+        W -_ h__.heappop(current)
     r.. W

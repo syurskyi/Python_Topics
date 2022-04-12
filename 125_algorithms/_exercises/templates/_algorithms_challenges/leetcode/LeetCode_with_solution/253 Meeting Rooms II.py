@@ -2,7 +2,7 @@
 Premium Question
 Find the maximum number of overlapped intervals
 """
-_______ heapq
+_______ h__
 _______ o..
 
 
@@ -27,9 +27,9 @@ c_ Solution(o..
         intervals.s..(key=operator.attrgetter("start"
         h_end    # list
         ___ itvl __ intervals:
-            heapq.heappush(h_end, itvl.end)
+            h__.heappush(h_end, itvl.end)
             w.... h_end a.. h_end[0] <_ itvl.start:
-                heapq.heappop(h_end)
+                h__.heappop(h_end)
 
             maxa m..(maxa, l..(h_end
 

@@ -15,4 +15,4 @@ ___ d.. msg, rails
     fence fence_pattern(rails, l..(msg
     fence_msg z..(msg, s..(fence
     r.. ''.j..(
-        char ___ char, _ __ s..(fence_msg, key=l.... item: item[1][1]
+        char ___ char, _ __ s..(fence_msg, k.._l.... item: item[1][1]

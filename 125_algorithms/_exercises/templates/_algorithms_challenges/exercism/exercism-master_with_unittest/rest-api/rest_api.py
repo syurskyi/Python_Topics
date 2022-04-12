@@ -123,7 +123,7 @@ c_ RestAPI(o..
 
     ___ get_users  usernames
         users [get_user(username) ___ username __ usernames]
-        r.. s..(users, key=l.... user: user 'name' )
+        r.. s..(users, k.._l.... user: user 'name' )
 
     ___ get_user  username
         users database 'users'

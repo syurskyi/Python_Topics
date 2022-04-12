@@ -43,10 +43,10 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        _______ heapq
-        heapq.heapify(nums)
+        _______ h__
+        h__.heapify(nums)
         ___ _ __ r..(l..(nums)-k+1
-            result heapq.heappop(nums)
+            result h__.heappop(nums)
         r.. result
     
     ___ test

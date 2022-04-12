@@ -16,7 +16,7 @@ c_ Solution(o..
     ___ direction(p, q, r
       r.. ((p.x - r.x) * (q.y - r.y) - (p.y - r.y) * (q.x - r.x
 
-    points.s..(key=l.... x: (x.x, x.y
+    points.s..(k.._l.... x: (x.x, x.y
     upper    # list
     lower    # list
     ___ point __ points:

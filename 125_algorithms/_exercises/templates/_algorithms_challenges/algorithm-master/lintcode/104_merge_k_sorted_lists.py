@@ -5,7 +5,7 @@ class ListNode(object):
         self.val = val
         self.next = next
 """
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -24,16 +24,16 @@ c_ Solution:
             __ n.. lists[i]:
                 _____
 
-            heapq.heappush(heap, (lists[i].val, i
+            h__.heappush(heap, (lists[i].val, i
 
         w.... heap:
-            val, i heapq.heappop(heap)
+            val, i h__.heappop(heap)
 
             tail.next ListNode(val)
             tail tail.next
 
             __ lists[i].next:
                 lists[i] lists[i].next
-                heapq.heappush(heap, (lists[i].val, i
+                h__.heappush(heap, (lists[i].val, i
 
         r.. dummy.next

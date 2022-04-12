@@ -24,13 +24,13 @@ c_ Solution(o..
     visited s..()
     hole t..(hole)
     w.... heap:
-      dist, curr heapq.heappop(heap)
+      dist, curr h__.heappop(heap)
       __ curr __ visited:
         _____
       visited |= {curr}
       __ curr __ hole:
         r.. dist
       ___ pos, incDist __ next(curr, maze
-        heapq.heappush(heap, (dist + incDist, pos
+        h__.heappush(heap, (dist + incDist, pos
 
     r.. -1

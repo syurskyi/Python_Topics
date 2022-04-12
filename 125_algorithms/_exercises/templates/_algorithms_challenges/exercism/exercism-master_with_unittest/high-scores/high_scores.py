@@ -1,4 +1,4 @@
-_______ heapq
+_______ h__
 
 
 c_ HighScores(o..
@@ -12,7 +12,7 @@ c_ HighScores(o..
         r.. scores[-1]
 
     ___ top
-        r.. heapq.nlargest(3, scores)
+        r.. h__.nlargest(3, scores)
 
     ___ report
         r.. f"{latest_score_message()} {personal_best_message()}"

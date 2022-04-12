@@ -23,7 +23,7 @@ c_ Solution(o..
         :rtype: List[Interval]
         """
         __ n.. intervals: r.. intervals
-        intervals.s..(key=l.... interval: interval.start)
+        intervals.s..(k.._l.... interval: interval.start)
         result    # list
         i 0
         w.... i < l..(intervals

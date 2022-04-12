@@ -42,10 +42,10 @@ ___ order_tweets_by_polarity(tweets, positive_highest=T..
       """Sort the tweets by polarity, receives positive_highest which determines
       the order. Returns a list of ordered tweets."""
       __ positive_highest:
-            highest s..(tweets, key=l.... x: x.polarity, r.._T..
+            highest s..(tweets, k.._l.... x: x.polarity, r.._T..
             r.. highest
       ____
-            lowest s..(tweets, key=l.... x: x.polarity)
+            lowest s..(tweets, k.._l.... x: x.polarity)
             r.. lowest
 
 #if __name__ == "__main__":

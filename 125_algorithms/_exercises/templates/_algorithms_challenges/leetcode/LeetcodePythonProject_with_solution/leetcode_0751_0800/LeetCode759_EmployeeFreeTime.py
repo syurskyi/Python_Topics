@@ -15,21 +15,21 @@ c_ Solution(o..
         :type schedule: List[List[Interval]]
         :rtype: List[Interval]
         """
-        _______ heapq
+        _______ h__
         heap    # list
         ___ arr __ schedule:
             ___ inter __ arr:
-                heapq.heappush(heap, [inter.start, inter.end])
-        temp heapq.heappop(heap)
+                h__.heappush(heap, [inter.start, inter.end])
+        temp h__.heappop(heap)
         res    # list
         w.... heap:
             __ temp[1] < heap 0 0 :
                 res.a..(Interval(temp[1], heap 0 0 
-                temp heapq.heappop(heap)
+                temp h__.heappop(heap)
             ____
                 __ temp[1] < heap[0][1]:
                     temp heap[0]
-                heapq.heappop(heap) 
+                h__.heappop(heap) 
         r.. res
     
     ___ test

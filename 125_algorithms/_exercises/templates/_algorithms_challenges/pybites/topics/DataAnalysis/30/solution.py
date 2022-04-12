@@ -57,4 +57,4 @@ ___ get_average_scores directors
     ret {director: calc_mean_score movies)
            ___ director, movies __ directors.i..
            __ l..(movies) >_ MIN_MOVIES}
-    r.. s..(ret.i.., key=l.... x: ? 1 r.._T..
+    r.. s..(ret.i.., k.._l.... x: ? 1 r.._T..

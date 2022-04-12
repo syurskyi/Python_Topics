@@ -5,4 +5,4 @@ c_ Solution:
         :type T: str
         :rtype: str
         """
-        r.. ''.j..(s..(T, key=l.... c: S.find(c)))
+        r.. ''.j..(s..(T, k.._l.... c: S.find(c)))

@@ -43,7 +43,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. commits,
                 ____
                     total_commit i..(commit_list[3])
                 commit_log[year_month] += total_commit
-    newlist s..(commit_log.i.., key=l.... item: item[1], r.._T..
+    newlist s..(commit_log.i.., k.._l.... item: item[1], r.._T..
     r.. (newlist[-1][0], newlist 0 0 )
 
 print(get_min_max_amount_of_commits y.._2017

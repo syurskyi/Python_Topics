@@ -61,7 +61,7 @@ ___ get_srt_section_ids(text: s..) __ L..[i..]:
 
     
 
-    r.. s..(l..(id_to_speed.keys,key=l.... x: id_to_speed[x],r.._T..
+    r.. s..(l..(id_to_speed.keys,k.._l.... x: id_to_speed[x],r.._T..
 
 
 

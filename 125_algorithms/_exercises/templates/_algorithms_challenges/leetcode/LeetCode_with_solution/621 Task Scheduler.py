@@ -25,7 +25,7 @@ The integer n is in the range [0, 100].
 """
 ____ t___ _______ L..
 ____ c.. _______ d.., d..
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -76,17 +76,17 @@ c_ Solution:
             (-v, k)
             ___ k, v __ counter.i..
         ]
-        heapq.heapify(pq)
+        h__.heapify(pq)
         q d..()  # stores (t, k)
         clock 0
         w.... pq o. q:
             __ q a.. q 0 0  <_ clock:
                 # don't do while in while when clock++
                 _, k q.popleft()
-                heapq.heappush(pq, (-counter[k], k
+                h__.heappush(pq, (-counter[k], k
 
             __ pq:
-                _, k heapq.heappop(pq)
+                _, k h__.heappop(pq)
                 counter[k] -_ 1
                 __ counter[k] > 0:
                     q.a..((clock + 1 + n, k

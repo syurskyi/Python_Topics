@@ -1,4 +1,4 @@
-____ heapq _______ heappush, heappop
+____ h__ _______ heappush, heappop
 
 
 c_ HashHeapq:

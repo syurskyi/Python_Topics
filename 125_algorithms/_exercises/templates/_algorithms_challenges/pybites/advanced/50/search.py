@@ -88,7 +88,7 @@ ___ main
     """
     entries get_feed_entries()
     
-    entries.s..(key=l.... x: x.date)
+    entries.s..(k.._l.... x: x.date)
     w... T...
         term input("Search Term? ")
         __ term __ '':

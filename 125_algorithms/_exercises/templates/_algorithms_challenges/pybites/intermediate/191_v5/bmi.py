@@ -28,4 +28,4 @@ ___ person_max_bmi(data=data
     ___ line __ data.s..k.._F..
         name, height, mass line.s...s..(',')
         res.a..((name, r..(f__(mass) / ((i..(height) / 100) ** 2), 2)))
-    r.. m..(res, key=l.... x: x[1])
+    r.. m..(res, k.._l.... x: x[1])

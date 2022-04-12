@@ -28,7 +28,7 @@ ___ get_most_popular_talks_by_views(videos
     
 
 
-    r.. s..(videos,r.._T..key=l.... x: i..(x.metrics 'viewCount'
+    r.. s..(videos,r.._T..k.._l.... x: i..(x.metrics 'viewCount'
 
 
 ___ get_most_popular_talks_by_like_ratio(videos
@@ -38,7 +38,7 @@ ___ get_most_popular_talks_by_like_ratio(videos
        Return the filtered list"""
 
 
-    r.. s..(videos,r.._T..key=l.... x: (i..(x.metrics 'likeCount' ) - i..(x.metrics 'dislikeCount' /i..(x.metrics 'viewCount'
+    r.. s..(videos,r.._T..k.._l.... x: (i..(x.metrics 'likeCount' ) - i..(x.metrics 'dislikeCount' /i..(x.metrics 'viewCount'
 
 
 ___ get_talks_gt_one_hour(videos

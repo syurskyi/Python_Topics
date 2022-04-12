@@ -5,4 +5,4 @@ ___ get_word_max_vowels(text
        Return a tuple of the matching word and the vowel count, e.g.
        ('object-oriented', 6)"""
     d.. {word: s..(letter __ VOWELS ___ letter __ word) ___ word __ text.s.. }
-    r.. m..(d...i.., key=l.... x: x[1])
+    r.. m..(d...i.., k.._l.... x: x[1])

@@ -43,7 +43,7 @@ c_ SummaryRanges(o..
         O(n lg n)
         :rtype: List[Interval]
         """
-        itvls.s..(key=l.... x: x.start)
+        itvls.s..(k.._l.... x: x.start)
 
         ret [itvls[0]]
         ___ itvl __ itvls[1:]:

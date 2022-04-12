@@ -34,7 +34,7 @@ ___ sort_books_by_len_of_title(books=books
 ___ sort_books_by_first_authors_last_name(books=books
     author_list [entry.authors ___ entry __ books]
     f s..(author_list,
-               key=l.... x: x.s..(' ')[-1],
+               k.._l.... x: x.s..(' ')[-1],
                r.._T..[0]
     r.. ''.j..([t.title
                     ___ t __ books

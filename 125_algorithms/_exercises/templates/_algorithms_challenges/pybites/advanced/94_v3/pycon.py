@@ -25,7 +25,7 @@ ___ load_pycon_data(pycon_videos=pycon_videos
 
 ___ get_most_popular_talks_by_views(videos
     """Return the pycon video list sorted by viewCount"""
-    r.. s..(videos, key=l.... vid: -i..(vid.metrics 'viewCount'
+    r.. s..(videos, k.._l.... vid: -i..(vid.metrics 'viewCount'
 
 
 ___ _like_ratio(vid

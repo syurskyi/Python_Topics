@@ -53,7 +53,7 @@ c_ Solution:
                 w_idx += 1
                 __ w_idx >_ l..(w
                     # if len(w) >= len(ret) and w < ret:  # error
-                    ret m..(ret, w, key=l.... x: (-l..(x), x  # compare with primary and secondary key
+                    ret m..(ret, w, k.._l.... x: (-l..(x), x  # compare with primary and secondary key
                 ____
                     h[w[w_idx]].a..((d_idx, w_idx
 

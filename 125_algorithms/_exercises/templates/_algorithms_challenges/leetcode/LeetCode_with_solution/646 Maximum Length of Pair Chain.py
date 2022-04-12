@@ -27,7 +27,7 @@ c_ Solution:
         similar to 435 Non-overlaping interval
         O(nlg n) + O(n)
         """
-        pairs.s..(key=l.... x: x[1])
+        pairs.s..(k.._l.... x: x[1])
         n l..(pairs)
 
         ret 0
@@ -47,7 +47,7 @@ c_ Solution:
         sort by the interval end
         similar to 435 Non-overlaping interval
         """
-        pairs.s..(key=l.... x: x[1])
+        pairs.s..(k.._l.... x: x[1])
         n l..(pairs)
 
         ret 0
@@ -70,7 +70,7 @@ c_ Solution2:
         F[i] = max(F[j] + 1 if predicate A[i] A[j])
         O(N^2)
         """
-        pairs.s..(key=l.... x: t..(x
+        pairs.s..(k.._l.... x: t..(x
         n l..(pairs)
         F [1 ___ _ __ r..(n)]
         ___ i __ r..(n

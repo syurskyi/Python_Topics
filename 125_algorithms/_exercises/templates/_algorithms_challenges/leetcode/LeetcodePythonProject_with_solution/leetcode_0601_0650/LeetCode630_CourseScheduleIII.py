@@ -9,15 +9,15 @@ c_ Solution(o..
         :type courses: List[List[int]]
         :rtype: int
         """
-        _______ heapq
+        _______ h__
         heap    # list
-        courses.s..(key=l.... x: x[1])
+        courses.s..(k.._l.... x: x[1])
         t__ 0
         ___ course __ courses:
             t__ += course[0]
-            heapq.heappush(heap, -course 0
+            h__.heappush(heap, -course 0
             __ t__ > course[1]:
-                t__ -_ -heapq.heappop(heap)
+                t__ -_ -h__.heappop(heap)
         r.. l..(heap)
     
     ___ test

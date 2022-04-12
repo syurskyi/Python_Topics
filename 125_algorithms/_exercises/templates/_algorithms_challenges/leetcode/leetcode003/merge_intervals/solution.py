@@ -15,7 +15,7 @@ c_ Solution:
             r.. intervals
         ____
             # Sort the intervals by start value
-            intervals.s..(key=l.... x: x.start)
+            intervals.s..(k.._l.... x: x.start)
             res    # list
             res.a..(intervals 0
             cur_end intervals[0].end

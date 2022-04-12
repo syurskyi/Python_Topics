@@ -1,4 +1,4 @@
-_______ heapq
+_______ h__
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -53,9 +53,9 @@ c_ Solution:
         end N..
         ___ l __ lists:
             __ l __ n.. N..
-                heapq.heappush(h, (l.val, l
+                h__.heappush(h, (l.val, l
         w.... h:
-            l heapq.heappop(h)[1]
+            l h__.heappop(h)[1]
             __ res __ N..
                 res l
                 end l
@@ -64,5 +64,5 @@ c_ Solution:
                 end end.next
             __ l.next __ n.. N..
                 l l.next
-                heapq.heappush(h, (l.val, l
+                h__.heappush(h, (l.val, l
         r.. res

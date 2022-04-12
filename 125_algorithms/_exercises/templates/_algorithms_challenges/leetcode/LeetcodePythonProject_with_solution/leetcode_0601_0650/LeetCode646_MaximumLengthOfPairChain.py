@@ -10,7 +10,7 @@ c_ Solution(o..
         :rtype: int
         """
         res 1
-        pairs.s..(key=l.... x: (x[1], x[0]
+        pairs.s..(k.._l.... x: (x[1], x[0]
         maxLen pairs[0][1]
         ___ i __ r..(1, l..(pairs:
             pair pairs[i]

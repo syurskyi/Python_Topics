@@ -148,7 +148,7 @@ ___ match_wine_5cheeses
     best_5matches    # list
     ___ wine, cheeses_scored __ wine_match_scoring.i..:
         cheese s..(cheeses_scored, key=operator.i.. 1), r.._T..[:10]
-        cheese s..(cheese, key=l.... x: (-x[1], x[0][:5]
+        cheese s..(cheese, k.._l.... x: (-x[1], x[0][:5]
         best_5matches.a..((wine, [name ___ name, score __ cheese]
 
     r.. s..(best_5matches)

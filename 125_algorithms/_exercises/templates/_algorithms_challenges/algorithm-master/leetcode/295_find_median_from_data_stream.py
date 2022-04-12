@@ -4,7 +4,7 @@ obj = MedianFinder()
 obj.addNum(num)
 param_2 = obj.findMedian()
 """
-_______ heapq
+_______ h__
 
 
 c_ MedianFinder:
@@ -18,9 +18,9 @@ c_ MedianFinder:
         :rtype: void
         """
         __ minheap a.. num < minheap[0]:
-            heapq.heappush(maxheap, -num)
+            h__.heappush(maxheap, -num)
         ____
-            heapq.heappush(minheap, num)
+            h__.heappush(minheap, num)
 
     ___ findMedian
         """
@@ -31,11 +31,11 @@ c_ MedianFinder:
 
         # to handle odd case, it make sure `minheap` has one more child than `maxheap`
         w.... l..(minheap) > l..(maxheap) + 1:
-            heapq.heappush(maxheap, - heapq.heappop(minheap
+            h__.heappush(maxheap, - h__.heappop(minheap
 
         # to handle even case, it make sure `minheap` and `maxheap` are same size
         w.... l..(maxheap) > l..(minheap
-            heapq.heappush(minheap, - heapq.heappop(maxheap
+            h__.heappush(minheap, - h__.heappop(maxheap
 
         __ l..(minheap) > l..(maxheap
             r.. minheap[0] * 1.0

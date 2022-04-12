@@ -4,7 +4,7 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-_______ heapq
+_______ h__
 
 c_ Solution(o..
     ___ findItinerary_orig  tickets
@@ -14,14 +14,14 @@ c_ Solution(o..
         ___ t1, t2 __ tickets:
             __ t1 n.. __ hashmap:
                 hashmap[t1]    # list
-            heapq.heappush(hashmap[t1], t2)
+            h__.heappush(hashmap[t1], t2)
         result    # list
         dfs(result, hashmap, 'JFK')
         r.. result
         
     ___ dfs  result, hashmap, elem
         w.... hashmap.g.. elem
-            dfs(result, hashmap, heapq.heappop(hashmap[elem]
+            dfs(result, hashmap, h__.heappop(hashmap[elem]
         result.insert(0, elem)
     
     ___ test

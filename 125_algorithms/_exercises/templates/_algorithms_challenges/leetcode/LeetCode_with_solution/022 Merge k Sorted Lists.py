@@ -2,7 +2,7 @@
 Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 """
 __author__ 'Danyang'
-_______ heapq
+_______ h__
 # Definition for singly-linked list.
 c_ ListNode:
     ___ - , x
@@ -111,17 +111,17 @@ c_ Solution:
         heap    # list
         ___ head_node __ lists:
             __ head_node:
-                heapq.heappush(heap, (head_node.val, head_node
+                h__.heappush(heap, (head_node.val, head_node
 
         dummy ListNode(0)
 
         cur dummy
         w.... heap:
-            smallest_node heapq.heappop(heap)[1]
+            smallest_node h__.heappop(heap)[1]
             cur.next smallest_node
             cur cur.next
             __ smallest_node.next:
-                heapq.heappush(heap, (smallest_node.next.val, smallest_node.next
+                h__.heappush(heap, (smallest_node.next.val, smallest_node.next
         r.. dummy.next
 
 __ _____ __ ____

@@ -24,7 +24,7 @@ Explanation:
 One way is to shoot one arrow for example at x = 6 (bursting the balloons [2,8]
 and [1,6]) and another arrow at x = 11 (bursting the other two balloons).
 """
-_______ heapq
+_______ h__
 
 
 c_ Balloon:
@@ -49,7 +49,7 @@ c_ Solution:
         :rtype: int
         """
         ret 0
-        points.s..(key=l.... x: x 0
+        points.s..(k.._l.... x: x 0
         heap    # list
         ___ point __ points:
             s, e point
@@ -57,7 +57,7 @@ c_ Solution:
                 ret += 1
                 heap    # list
 
-            heapq.heappush(heap, Balloon(s, e
+            h__.heappush(heap, Balloon(s, e
 
         __ heap:
             ret += 1

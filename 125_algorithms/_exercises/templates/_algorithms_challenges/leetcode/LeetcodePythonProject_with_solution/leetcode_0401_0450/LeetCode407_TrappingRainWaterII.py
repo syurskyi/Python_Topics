@@ -5,7 +5,7 @@ Created on Apr 10, 2017
 '''
 c_ Solution(o..
     ___ trapRainWater  heightMap
-        _______ heapq
+        _______ h__
         __ n.. heightMap o. n.. heightMap[0]:
             r.. 0
         m, n l..(heightMap), l..(heightMap 0
@@ -14,15 +14,15 @@ c_ Solution(o..
         ___ i __ r..(m
             ___ j __ r..(n
                 __ i__0 o. j__0 o. i__m-1 o. j__n-1:
-                    heapq.heappush(heap, (heightMap[i][j], i, j
+                    h__.heappush(heap, (heightMap[i][j], i, j
                     visited[i][j] T..
         res 0
         w.... heap:
-            height, i, j heapq.heappop(heap)
+            height, i, j h__.heappop(heap)
             ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
                 __ 0<_x<m a.. 0<_y<n a.. n.. visited[x][y]:
                     res += m..(0, height-heightMap[x][y])
-                    heapq.heappush(heap, (m..(height, heightMap[x][y]), x, y
+                    h__.heappush(heap, (m..(height, heightMap[x][y]), x, y
                     visited[x][y] T..
         r.. res
     

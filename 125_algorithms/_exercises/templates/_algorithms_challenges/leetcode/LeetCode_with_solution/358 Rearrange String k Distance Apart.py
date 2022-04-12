@@ -28,7 +28,7 @@ The same letters are at least distance 2 from each other.
 
 """
 ____ c.. _______ d..
-_______ heapq
+_______ h__
 
 __author__ 'Daniel'
 
@@ -62,7 +62,7 @@ c_ Solution(o..
 
         h    # list
         ___ char, cnt __ d.i..:
-            heapq.heappush(h, Val(cnt, char
+            h__.heappush(h, Val(cnt, char
 
         ret    # list
         w.... h:
@@ -71,14 +71,14 @@ c_ Solution(o..
                 __ n.. h:
                     r.. "".j..(ret) __ l..(ret) __ l..(s) ____ ""
 
-                e heapq.heappop(h)
+                e h__.heappop(h)
                 ret.a..(e.val)
                 e.cnt -_ 1
                 __ e.cnt > 0:
                     cur.a..(e)
 
             ___ e __ cur:
-                heapq.heappush(h, e)
+                h__.heappush(h, e)
 
         r.. "".j..(ret)
 

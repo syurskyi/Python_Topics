@@ -1,4 +1,4 @@
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -17,15 +17,15 @@ c_ Solution:
 
         ___ num __ nums:
             __ num < median:
-                heapq.heappush(maxheap, -num)
+                h__.heappush(maxheap, -num)
             ____
-                heapq.heappush(minheap, num)
+                h__.heappush(minheap, num)
 
             w.... l..(minheap) > l..(maxheap
-                heapq.heappush(maxheap, -heapq.heappop(minheap
+                h__.heappush(maxheap, -h__.heappop(minheap
 
             w.... l..(maxheap) > l..(minheap) + 1:
-                heapq.heappush(minheap, -heapq.heappop(maxheap
+                h__.heappush(minheap, -h__.heappop(maxheap
 
             __ maxheap:
                 median -maxheap[0]

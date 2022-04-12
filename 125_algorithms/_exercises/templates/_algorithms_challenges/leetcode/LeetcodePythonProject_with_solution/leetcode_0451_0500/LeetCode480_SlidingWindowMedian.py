@@ -3,7 +3,7 @@ Created on Apr 27, 2017
 
 @author: MT
 '''
-_______ heapq
+_______ h__
 
 c_ Solution(o..
     ___ medianSlidingWindow  nums, k
@@ -40,29 +40,29 @@ c_ Solution(o..
     
     ___ add  num
         __ n.. maxHeap o. num > -maxHeap[0]:
-            heapq.heappush(minHeap, num)
+            h__.heappush(minHeap, num)
         ____
-            heapq.heappush(maxHeap, -num)
+            h__.heappush(maxHeap, -num)
         __ l..(maxHeap) > l..(minHeap
-            val heapq.heappop(maxHeap)
-            heapq.heappush(minHeap, -val)
+            val h__.heappop(maxHeap)
+            h__.heappush(minHeap, -val)
         __ l..(minHeap) > l..(maxHeap)+1:
-            val heapq.heappop(minHeap)
-            heapq.heappush(maxHeap, -val)
+            val h__.heappop(minHeap)
+            h__.heappush(maxHeap, -val)
     
     ___ remove  num
         __ num >_ getMedian
             minHeap.remove(num)
-            heapq.heapify(minHeap)
+            h__.heapify(minHeap)
         ____
             maxHeap.remove(-num)
-            heapq.heapify(maxHeap)
+            h__.heapify(maxHeap)
         __ l..(maxHeap) > l..(minHeap
-            val heapq.heappop(maxHeap)
-            heapq.heappush(minHeap, -val)
+            val h__.heappop(maxHeap)
+            h__.heappush(minHeap, -val)
         __ l..(minHeap) > l..(maxHeap)+1:
-            val heapq.heappop(minHeap)
-            heapq.heappush(maxHeap, -val)
+            val h__.heappop(minHeap)
+            h__.heappush(maxHeap, -val)
     
     ___ medianSlidingWindow_slow  nums, k
         """

@@ -13,18 +13,18 @@ c_ Solution(o..
     ans 0
     d c...C..(tasks)
     heap [-c ___ c __ d.v..
-    heapq.heapify(heap)
+    h__.heapify(heap)
     w.... heap:
       stack    # list
       cnt 0
       ___ _ __ r..(n
         __ heap:
-          c heapq.heappop(heap)
+          c h__.heappop(heap)
           cnt += 1
           __ c < -1:
             stack.a..(c + 1)
       ___ item __ stack:
-        heapq.heappush(heap, item)
+        h__.heappush(heap, item)
       ans += heap a.. n o. cnt  # == if heap then n else cnt
     r.. ans
 

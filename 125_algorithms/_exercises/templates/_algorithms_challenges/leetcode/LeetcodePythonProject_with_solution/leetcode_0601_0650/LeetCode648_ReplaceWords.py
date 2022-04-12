@@ -10,7 +10,7 @@ c_ Solution(o..
         :type sentence: str
         :rtype: str
         """
-        d...s..(key=l.... x: l..(x
+        d...s..(k.._l.... x: l..(x
         resArr    # list
         words sentence.s..(' ')
         ___ i, word __ e..(words

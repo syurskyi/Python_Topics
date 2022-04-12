@@ -26,7 +26,7 @@ c_ Solution(o..
         """
         __ n.. A: r.. 0
 
-        A.s..(key=l.... (w, h (w, -h
+        A.s..(k.._l.... (w, h (w, -h
         F [-1 ___ _ __ x..(l..(A)+1)]
 
         F[1] A[0][1]  # store value rather than index

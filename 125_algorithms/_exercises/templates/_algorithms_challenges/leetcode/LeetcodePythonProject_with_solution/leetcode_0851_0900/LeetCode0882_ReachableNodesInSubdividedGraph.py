@@ -11,7 +11,7 @@ c_ Solution(o..
         :type N: int
         :rtype: int
         """
-        _______ heapq
+        _______ h__
         graph [[-1]*N ___ _ __ r..(N)]
         ___ edge __ edges:
             graph[edge[0]][edge[1]] edge[2]
@@ -19,9 +19,9 @@ c_ Solution(o..
         res 0
         h    # list
         visited [F..]*N
-        heapq.heappush(h, (-M, 0
+        h__.heappush(h, (-M, 0
         w.... h:
-            cur heapq.heappop(h)
+            cur h__.heappop(h)
             start cur[1]
             move -cur[0]
             __ visited[start]:
@@ -31,7 +31,7 @@ c_ Solution(o..
             ___ i __ r..(N
                 __ graph[start][i] !_ -1:
                     __ move > graph[start][i] a.. n.. visited[i]:
-                        heapq.heappush(h, ( -(move-graph[start][i]-1), i) )
+                        h__.heappush(h, ( -(move-graph[start][i]-1), i) )
                     graph[i][start] -_ m..(move, graph[start][i])
                     res += m..(move, graph[start][i])
         r.. res

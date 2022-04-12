@@ -32,7 +32,7 @@ as such: [...[2 3], [4 5], [12 7], ...]
 """
 __author__ 'Daniel'
 ____ c.. _______ d.., n..
-_______ heapq
+_______ h__
 
 
 c_ Building(o..
@@ -73,14 +73,14 @@ c_ Solution:
         # Process events in order by x-coordinate.
         ___ x, event __ s..(events.i..:  # sort the dictionary by key
             ___ building __ event.starts:
-                heapq.heappush(heap_h, building)
+                h__.heappush(heap_h, building)
             ___ building __ event.ends:
                 building.deleted T..
 
             # Pop any finished buildings from the top of the heap.
             # To avoid using multiset - lazy deletion.
             w.... heap_h a.. heap_h[0].deleted:
-                heapq.heappop(heap_h)
+                h__.heappop(heap_h)
 
             # Top of heap (if any) is the highest standing building, so
             # its height is the current height of the skyline.

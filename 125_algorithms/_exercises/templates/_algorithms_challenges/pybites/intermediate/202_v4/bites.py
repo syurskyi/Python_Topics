@@ -25,7 +25,7 @@ ___ get_most_complex_bites(N=10, stats=stats
         bites l..(c__.reader(f, delimiter=';'
     bites.p.. 0)  # remove header
     bites [[b[0], f__(b[1])] ___ b __ bites __ b[1] !_ 'None'
-    bites.s..(key=l.... x: ? 1 r.._T..
+    bites.s..(k.._l.... x: ? 1 r.._T..
 
     n_most_comp bites[:N]
 

@@ -36,7 +36,7 @@ schedule and schedule[i] are lists with lengths in range [1, 50].
 0 <= schedule[i].start < schedule[i].end <= 10^8.
 """
 ____ t___ _______ L..
-_______ heapq
+_______ h__
 
 
 S 0
@@ -70,11 +70,11 @@ c_ Solution:
             # head
             j 0
             itv itvs[j]
-            heapq.heappush(q, (itv[S], i, j
+            h__.heappush(q, (itv[S], i, j
 
         ret    # list
         w.... q:
-            _, i, j heapq.heappop(q)
+            _, i, j h__.heappop(q)
             itv schedule[i][j]
             __ cur_max_end < itv[S]:
                 ret.a..([cur_max_end, itv[S]])
@@ -85,7 +85,7 @@ c_ Solution:
             j += 1
             __ j < l..(schedule[i]
                 itv schedule[i][j]
-                heapq.heappush(q, (itv[S], i, j
+                h__.heappush(q, (itv[S], i, j
 
         r.. ret
 
@@ -131,17 +131,17 @@ c_ Solution:
         ___ emp_iter __ schedules:
             itv next(emp_iter, N..)
             __ itv:
-                heapq.heappush(q, (itv[S], itv, emp_iter
+                h__.heappush(q, (itv[S], itv, emp_iter
 
         ret    # list
         w.... q:
-            _, itv, emp_iter heapq.heappop(q)
+            _, itv, emp_iter h__.heappop(q)
             __ cur_max_end < itv[S]:
                 ret.a..([cur_max_end, itv[S]])
             cur_max_end m..(cur_max_end, itv[E])
             itv next(emp_iter, N..)
             __ itv:
-                heapq.heappush(q, (itv[S], itv, emp_iter
+                h__.heappush(q, (itv[S], itv, emp_iter
 
         r.. ret
 

@@ -9,7 +9,7 @@ You may assume k is always valid, 1 <= k <= number of unique elements.
 Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 """
 ____ c.. _______ d..
-_______ heapq
+_______ h__
 
 __author__ 'Daniel'
 
@@ -44,9 +44,9 @@ c_ Solution(o..
         ret    # list
         ___ elt __ lst:
             __ l..(ret) < K:
-                heapq.heappush(ret, elt)
+                h__.heappush(ret, elt)
             ____
-                heapq.heappushpop(ret, elt)
+                h__.heappushpop(ret, elt)
 
         r.. map(l.... x: x.val, ret)
 

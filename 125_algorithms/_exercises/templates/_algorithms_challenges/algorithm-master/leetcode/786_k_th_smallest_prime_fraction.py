@@ -10,7 +10,7 @@ example: [1, 2, 5, 7]
 5  ...
 7  ...
 """
-____ heapq _______ heappush, heappop
+____ h__ _______ heappush, heappop
 
 
 c_ Solution:

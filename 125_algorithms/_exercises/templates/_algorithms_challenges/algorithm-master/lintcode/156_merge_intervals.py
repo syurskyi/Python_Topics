@@ -17,7 +17,7 @@ c_ Solution:
         __ n.. intvs:
             r.. ans
 
-        intvs.s..(key=l.... intv: (intv.start, intv.end
+        intvs.s..(k.._l.... intv: (intv.start, intv.end
 
         ___ intv __ intvs:
             __ n.. ans o. intv.start > ans[-1].end:

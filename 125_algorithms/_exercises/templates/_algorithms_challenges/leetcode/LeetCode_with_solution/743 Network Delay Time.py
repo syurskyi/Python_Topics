@@ -18,7 +18,7 @@ All edges times[i] = (u, v, w) will have 1 <= u, v <= N and 0 <= w <= 100.
 """
 ____ t___ _______ L..
 ____ c.. _______ d..
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -34,12 +34,12 @@ c_ Solution:
         h [(0, K)]
         reach_time[K] 0
         w.... h:
-            t, s heapq.heappop(h)
+            t, s h__.heappop(h)
             __ s __ G:
                 ___ d, w __ G[s].i..:
                     __ t + w < reach_time[d]:
                         reach_time[d] t + w
-                        heapq.heappush(h, (t + w, d
+                        h__.heappush(h, (t + w, d
 
         ret m..(reach_time[1:])  # notice reach_time[0] is dummy
         __ ret __ f__('inf'

@@ -1,4 +1,4 @@
-_______ heapq
+_______ h__
 
 
 c_ Solution(o..
@@ -19,14 +19,14 @@ c_ Solution(o..
       pos h[0]
       height h[1]
       __ height < 0:
-        heapq.heappush(heap, height)
+        h__.heappush(heap, height)
       ____
         i heap.i.. -height)
         heap[i] heap[-1]
         heap.p.. )
         __ i < l..(heap
-          heapq._siftup(heap, i)
-          heapq._siftdown(heap, 0, i)
+          h__._siftup(heap, i)
+          h__._siftdown(heap, 0, i)
       __ heap:
         cur heap[0]
         __ cur !_ pre:

@@ -3,7 +3,7 @@ Created on Feb 14, 2018
 
 @author: tongq
 '''
-_______ heapq
+_______ h__
 
 c_ MaxStack(o..
 
@@ -20,7 +20,7 @@ c_ MaxStack(o..
         :rtype: void
         """
         stack.a..(x)
-        heapq.heappush(heap, (-x
+        h__.heappush(heap, (-x
 
     ___ pop
         """
@@ -28,7 +28,7 @@ c_ MaxStack(o..
         """
         val stack.p.. )
         heap.remove((-val
-        heapq.heapify(heap)
+        h__.heapify(heap)
         r.. val
 
     ___ top
@@ -47,7 +47,7 @@ c_ MaxStack(o..
         """
         :rtype: int
         """
-        val heapq.heappop(heap)
+        val h__.heappop(heap)
         val -val
         ___ i __ r..(l..(stack)-1, -1, -1
             __ stack[i] __ val:

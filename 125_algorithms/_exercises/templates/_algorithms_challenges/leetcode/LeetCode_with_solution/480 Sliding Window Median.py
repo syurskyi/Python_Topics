@@ -32,7 +32,7 @@ You may assume k is always valid, ie: k is always smaller than input array's
 size for non-empty array.
 """
 ____ t___ _______ L..
-_______ heapq
+_______ h__
 
 
 c_ DualHeap:
@@ -49,10 +49,10 @@ c_ DualHeap:
 
     ___ insert  num
         __ max_h a.. num > max_h[0][1]:
-            heapq.heappush(min_h, (num, num
+            h__.heappush(min_h, (num, num
             min_sz += 1
         ____
-            heapq.heappush(max_h, (-num, num
+            h__.heappush(max_h, (-num, num
             max_sz += 1
         balance()
 
@@ -66,24 +66,24 @@ c_ DualHeap:
 
     ___ clean_top
         w.... max_h a.. max_h[0][1] __ to_remove:
-            _, num heapq.heappop(max_h)
+            _, num h__.heappop(max_h)
             to_remove.remove(num)
         w.... min_h a.. min_h[0][1] __ to_remove:
-            _, num heapq.heappop(min_h)
+            _, num h__.heappop(min_h)
             to_remove.remove(num)
 
     ___ balance
         # keep skew in max sz
         w.... max_sz < min_sz :
             clean_top()
-            _, num =heapq.heappop(min_h)
-            heapq.heappush(max_h, (-num, num
+            _, num =h__.heappop(min_h)
+            h__.heappush(max_h, (-num, num
             min_sz -_ 1
             max_sz += 1
         w.... max_sz > min_sz + 1:
             clean_top()
-            _, num heapq.heappop(max_h)
-            heapq.heappush(min_h, (num, num
+            _, num h__.heappop(max_h)
+            h__.heappush(min_h, (num, num
             min_sz += 1
             max_sz -_ 1
 

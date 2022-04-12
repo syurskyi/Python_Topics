@@ -21,7 +21,7 @@ The above image represents the elevation map [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3
 
 After the rain, water are trapped between the blocks. The total volume of water trapped is 4.
 """
-_______ heapq
+_______ h__
 
 __author__ 'Daniel'
 
@@ -57,20 +57,20 @@ c_ Solution(o..
         # add cells at the four edges
         ___ i __ x..(m
             visited[i][0] T..
-            heapq.heappush(h, Cell(i, 0, mat[i][0]
+            h__.heappush(h, Cell(i, 0, mat[i][0]
             visited[i][n-1] T..
-            heapq.heappush(h, Cell(i, n-1, mat[i][n-1]
+            h__.heappush(h, Cell(i, n-1, mat[i][n-1]
 
         ___ j __ x..(1, n-1
             visited[0][j] T..
-            heapq.heappush(h, Cell(0, j, mat[0][j]
+            h__.heappush(h, Cell(0, j, mat[0][j]
             visited[m-1][j] T..
-            heapq.heappush(h, Cell(m-1, j, mat[m-1][j]
+            h__.heappush(h, Cell(m-1, j, mat[m-1][j]
 
         # BFS with heap
         trapped 0
         w.... h:
-            cur heapq.heappop(h)
+            cur h__.heappop(h)
             ___ dir __ dirs:
                 I, J cur.i+dir[0], cur.j+dir[1]
                 __ 0 <_ I < m a.. 0 <_ J < n a.. n.. visited[I][J]:
@@ -80,7 +80,7 @@ c_ Solution(o..
                         nxt.h cur.h
 
                     visited[I][J] T..
-                    heapq.heappush(h, nxt)
+                    h__.heappush(h, nxt)
 
         r.. trapped
 

@@ -16,7 +16,7 @@ c_ Solution(o..
         :type intervals: List[Interval]
         :rtype: bool
         """
-        intervals.s..(key=l.... x: x.start)
+        intervals.s..(k.._l.... x: x.start)
         length l..(intervals)
         ___ i __ r..(length-1
             curr intervals[i]

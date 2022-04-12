@@ -28,16 +28,16 @@ c_ Solution(o..
         
     
     ___ topKFrequentHeap  nums, k
-        _______ heapq
+        _______ h__
         hashmap    # dict
         ___ num __ nums:
             hashmap[num] hashmap.g.. num, 0)+1
         heap    # list
         ___ num, count __ hashmap.i..:
-            heapq.heappush(heap, (-count, num
+            h__.heappush(heap, (-count, num
         result    # list
         w.... k > 0:
-            result.a..(heapq.heappop(heap)[1])
+            result.a..(h__.heappop(heap)[1])
             k -_ 1
         r.. result
     

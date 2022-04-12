@@ -1,4 +1,4 @@
-_______ heapq
+_______ h__
 
 
 c_ Solution(o..
@@ -13,13 +13,13 @@ c_ Solution(o..
     heap    # list
     indexes [1] * l..(primes)
     ___ i __ r..(0, l..(primes:
-      heapq.heappush(heap, (dp[indexes[i]] * primes[i], i
+      h__.heappush(heap, (dp[indexes[i]] * primes[i], i
 
     ___ i __ r..(2, n + 1
       minV heap 0 0
       dp[i] minV
       w.... heap 0 0  __ minV:
-        value, xi heapq.heappop(heap)
+        value, xi h__.heappop(heap)
         indexes[xi] += 1
-        heapq.heappush(heap, (dp[indexes[xi]] * primes[xi], xi
+        h__.heappush(heap, (dp[indexes[xi]] * primes[xi], xi
     r.. dp[-1]

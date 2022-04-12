@@ -31,5 +31,5 @@ w__ o.. commits) __ f:
                 total_commit i..(commit_list[3])
             #print(f'{year_month} {total_commit}')
             commit_log[year_month] += total_commit
-    newlist s..(commit_log.i.., key=l.... item: item[1], r.._T..
+    newlist s..(commit_log.i.., k.._l.... item: item[1], r.._T..
     print(newlist[-1][0], newlist 0 0 )

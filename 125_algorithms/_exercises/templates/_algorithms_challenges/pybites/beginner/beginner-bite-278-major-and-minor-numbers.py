@@ -44,7 +44,7 @@ ___ major_n_minor(numbers
             d..[num] += 1
         ______:
             d..[num] 1
-    s.. s..(d...i.., key=l.... x: x[1] )
+    s.. s..(d...i.., k.._l.... x: x[1] )
     r.. s..[-1][0], s.. 0 0 
     # difference between for i in d:
     # for i in d.items(): ?

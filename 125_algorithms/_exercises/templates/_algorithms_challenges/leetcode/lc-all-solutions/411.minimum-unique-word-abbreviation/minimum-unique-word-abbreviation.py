@@ -29,7 +29,7 @@ c_ Solution(o..
     wordLen l..(target)
     res    # list
     dfs(l..(target), 0, res)
-    res.s..(key=l.... x: l..(x
+    res.s..(k.._l.... x: l..(x
     dictionary f.. l.... s: l..(s) __ wordLen, dictionary)
 
     ___ w __ res:

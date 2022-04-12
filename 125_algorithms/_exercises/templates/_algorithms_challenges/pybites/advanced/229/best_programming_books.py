@@ -97,7 +97,7 @@ ___ load_data
     res    # list
     ___ n, b __ e..(
         s..(
-            books, key=l.... b: (-b.rating, b.year, b.title.l.., b.author.l..
+            books, k.._l.... b: (-b.rating, b.year, b.title.l.., b.author.l..
         ),
         start=1,
 

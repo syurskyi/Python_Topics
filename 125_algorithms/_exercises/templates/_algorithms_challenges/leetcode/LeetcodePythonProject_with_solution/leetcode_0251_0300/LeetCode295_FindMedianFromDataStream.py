@@ -4,7 +4,7 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-_______ heapq
+_______ h__
 c_ MedianFinder(o..
     ___ -
         # minHeap save positive values: 7, 9
@@ -14,13 +14,13 @@ c_ MedianFinder(o..
 
     ___ addNum  num
         __ (n.. minHeap a.. n.. maxHeap) o. num < -maxHeap[0]:
-            heapq.heappush(maxHeap, -num)
+            h__.heappush(maxHeap, -num)
             __ l..(maxHeap) > l..(minHeap) + 1:
-                heapq.heappush(minHeap, -heapq.heappop(maxHeap
+                h__.heappush(minHeap, -h__.heappop(maxHeap
         ____
-            heapq.heappush(minHeap, num)
+            h__.heappush(minHeap, num)
             __ l..(minHeap) > l..(maxHeap
-                heapq.heappush(maxHeap, -heapq.heappop(minHeap
+                h__.heappush(maxHeap, -h__.heappop(minHeap
     
     ___ findMedian
         __ l..(minHeap) __ l..(maxHeap

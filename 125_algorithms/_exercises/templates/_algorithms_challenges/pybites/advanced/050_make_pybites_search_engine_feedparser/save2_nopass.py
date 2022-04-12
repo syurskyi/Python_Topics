@@ -102,7 +102,7 @@ ___ main
             ___ entry __ entries:
                 __ filter_entries_by_tag(search_term, entry
                     output_list.a..(entry)
-            output_list s..(output_list, key=l.... x: x.date)
+            output_list s..(output_list, k.._l.... x: x.date)
 
             titles ', '.j..([entry.title ___ entry __ output_list])
 

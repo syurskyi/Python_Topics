@@ -12,20 +12,20 @@ c_ Solution(o..
         :type destination: List[int]
         :rtype: int
         """
-        _______ heapq
+        _______ h__
         __ n.. maze o. n.. maze[0]: r.. -1
         m, n l..(maze), l..(maze 0
         heap    # list
-        heapq.heappush(heap, (0, start[0], start[1]
+        h__.heappush(heap, (0, start[0], start[1]
         visited [[F..]*n ___ _ __ r..(m)]
         w.... heap:
-            currDist, i, j heapq.heappop(heap)
+            currDist, i, j h__.heappop(heap)
             __ i __ destination[0] a.. j __ destination[1]:
                 r.. currDist
             visited[i][j] T..
             ___ x, y, dist __ getNextSteps(maze, i, j
                 __ n.. visited[x][y]:
-                    heapq.heappush(heap, (currDist+dist, x, y
+                    h__.heappush(heap, (currDist+dist, x, y
         r.. -1
     
     ___ getNextSteps  maze, i, j

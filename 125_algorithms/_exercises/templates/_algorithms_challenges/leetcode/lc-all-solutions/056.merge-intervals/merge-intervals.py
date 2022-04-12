@@ -11,7 +11,7 @@ c_ Solution(o..
     :rtype: List[Interval]
     """
     ans    # list
-    ___ intv __ s..(intervals, key=l.... x: x.start
+    ___ intv __ s..(intervals, k.._l.... x: x.start
       __ ans a.. ans[-1].end >_ intv.start:
         ans[-1].end m..(ans[-1].end, intv.end)
       ____

@@ -1,4 +1,4 @@
-_______ heapq
+_______ h__
 
 
 c_ MedianFinder:
@@ -23,17 +23,17 @@ c_ MedianFinder:
       r..
 
     __ num <_ median:
-      heapq.heappush(left, -num)
+      h__.heappush(left, -num)
     ____
-      heapq.heappush(right, num)
+      h__.heappush(right, num)
 
     __ l..(left) > l..(right) + 1:
-      top -heapq.heappop(left)
-      heapq.heappush(right, median)
+      top -h__.heappop(left)
+      h__.heappush(right, median)
       median top
     __ l..(right) > l..(left) + 1:
-      top heapq.heappop(right)
-      heapq.heappush(left, -median)
+      top h__.heappop(right)
+      h__.heappush(left, -median)
       median top
 
   ___ findMedian

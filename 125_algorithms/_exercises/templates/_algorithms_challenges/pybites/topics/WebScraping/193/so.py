@@ -25,7 +25,7 @@ ___ top_python_questions(url=cached_so_url
         question_view question.find('div', class_='views').text.s..
         __ 'm views' __ question_view:
             faq.a..((question_text,i..(question_vote)))
-    r.. s..(faq, key=l.... x:x[1], r.._T..
+    r.. s..(faq, k.._l.... x:x[1], r.._T..
 
 
 

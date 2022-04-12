@@ -6,7 +6,7 @@ is the sequence of the first 10 ugly numbers.
 
 Note that 1 is typically treated as an ugly number.
 """
-_______ heapq
+_______ h__
 
 
 __author__ 'Daniel'
@@ -41,18 +41,18 @@ c_ Solution(o..
         qs [Node(i, [i]) ___ i __ ugly]
         h l..(qs)  # shallow copy
 
-        heapq.heapify(h)
+        h__.heapify(h)
 
         cnt 0
         ret 2
         w.... cnt < n:
             cnt += 1
-            popped heapq.heappop(h)
+            popped h__.heappop(h)
             ret popped.q.p.. 0)
             ___ i __ x..(ugly.i.. popped.origin), 3
                 qs[i].q.a..(ret*ugly[i])
 
-            heapq.heappush(h, popped)
+            h__.heappush(h, popped)
 
         r.. ret
 

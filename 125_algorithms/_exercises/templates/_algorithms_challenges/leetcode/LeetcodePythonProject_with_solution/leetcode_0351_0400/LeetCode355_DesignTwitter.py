@@ -46,7 +46,7 @@ c_ Twitter(o..
         :type userId: int
         :rtype: List[int]
         """
-        _______ heapq
+        _______ h__
         heap    # list
         __ userId n.. __ following:
             r.. []
@@ -56,17 +56,17 @@ c_ Twitter(o..
             __ following_id __ latestTweets:
                 latestTweet latestTweets[following_id]
                 tweetTuple (-latestTweet.tweet_id, latestTweet.tweetContext, latestTweet.prevTweet)
-                heapq.heappush(heap, tweetTuple)
+                h__.heappush(heap, tweetTuple)
         result    # list
         ___ _ __ r..(10
             __ n.. heap:
                 _____
-            tweetTuple heapq.heappop(heap)
+            tweetTuple h__.heappop(heap)
             result.a..(tweetTuple[1])
             __ tweetTuple[2]:
                 newTweet tweetTuple[2]
                 newTweetTuple (-newTweet.tweet_id, newTweet.tweetContext, newTweet.prevTweet)
-                heapq.heappush(heap, newTweetTuple)
+                h__.heappush(heap, newTweetTuple)
         r.. result
 
     ___ follow  followerId, followeeId

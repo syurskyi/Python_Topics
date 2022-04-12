@@ -13,7 +13,7 @@ c_ Interval(o..
 c_ Solution(o..
     ___ eraseOverlapIntervals  intervals
         __ n.. intervals: r.. 0
-        intervals.s..(key=l.... x: (x.end, x.start
+        intervals.s..(k.._l.... x: (x.end, x.start
         maxLen intervals[0].end
         count 0
         ___ i __ r..(1, l..(intervals:

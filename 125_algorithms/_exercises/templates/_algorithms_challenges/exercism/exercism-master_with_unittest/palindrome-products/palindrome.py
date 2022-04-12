@@ -5,12 +5,12 @@ ____ f.. _______ r..
 c_ Palindromes:
     @classmethod
     ___ smallest_palindrome(cls, max_factor, min_factor=0
-        r.. m..(cls.palindromes(max_factor, min_factor), key=l....
+        r.. m..(cls.palindromes(max_factor, min_factor), k.._l....
                    item: item 0
 
     @classmethod
     ___ largest_palindrome(cls, max_factor, min_factor=0
-        r.. m..(cls.palindromes(max_factor, min_factor), key=l....
+        r.. m..(cls.palindromes(max_factor, min_factor), k.._l....
                    item: item 0
 
     @classmethod

@@ -15,7 +15,7 @@ c_ Solution:
         __ n.. E o. n.. E[0] o. l..(E 0 !_ 2:
             r.. 0
 
-        E.s..(key=l.... e: (e[0], -e[1]
+        E.s..(k.._l.... e: (e[0], -e[1]
 
         dp [0] * l..(E)
         size 0

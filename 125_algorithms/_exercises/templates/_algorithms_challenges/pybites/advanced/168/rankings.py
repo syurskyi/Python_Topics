@@ -1,6 +1,6 @@
 ____ dataclasses _______ dataclass,field
 ____ t___ _______ L.., Tuple
-_______ heapq
+_______ h__
 
 
 bites: L..[i..] [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
@@ -87,7 +87,7 @@ c_ Rankings:
 
 
     ___ add ninja
-        heapq.heappush(rankings,ninja)
+        h__.heappush(rankings,ninja)
     
 
 
@@ -115,7 +115,7 @@ c_ Rankings:
 
 
     ___ dump
-        r.. heapq.heappop(rankings)
+        r.. h__.heappop(rankings)
 
 
     ___ __len__

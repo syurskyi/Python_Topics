@@ -23,4 +23,4 @@ ___ top_python_questions(url=cached_so_url
                   i..(question.select_one('span.vote-count-post').s__.s..()))
                  ___ question __ soup.find_all(class_='question-summary')
                  __ question.select_one('div.views').s__.s...e.. 'm views')]
-    r.. s..(questions, key=l.... x: -x[1])
+    r.. s..(questions, k.._l.... x: -x[1])

@@ -27,7 +27,7 @@ ___ get_belts(data: s..) __ d..:
     w__ o.. data _ __ f:
         dates j__.l.. f)
 
-    dates.s..(key=l.... x: p..(x 'date'
+    dates.s..(k.._l.... x: p..(x 'date'
     
     
     belts    # dict

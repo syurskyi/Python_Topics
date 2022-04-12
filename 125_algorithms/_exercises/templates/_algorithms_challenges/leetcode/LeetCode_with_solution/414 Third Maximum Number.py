@@ -5,7 +5,7 @@ array. If it does not exist, return the maximum number. The time complexity
 must be in O(n).
 """
 __author__ 'Danyang'
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -24,9 +24,9 @@ c_ Solution:
         h    # list
         ___ e __ s..(nums
             __ l..(h) < 3:
-                heapq.heappush(h, e)
+                h__.heappush(h, e)
             ____ l..(h) __ 3 a.. e > h[0]:
-                heapq.heappushpop(h, e)
+                h__.heappushpop(h, e)
 
         ... l..(h) <_ 3
         __ l..(h) __ 3:

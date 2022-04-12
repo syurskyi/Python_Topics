@@ -13,17 +13,17 @@ c_ Solution(o..
         :type Capital: List[int]
         :rtype: int
         """
-        _______ heapq
+        _______ h__
         heapCap    # list
         heapPro    # list
         ___ c, p __ z..(Capital, Profits
-            heapq.heappush(heapCap, (c, p
+            h__.heappush(heapCap, (c, p
         ___ _ __ r..(k
             w.... heapCap a.. heapCap 0 0  <_ W:
-                c, p heapq.heappop(heapCap)
-                heapq.heappush(heapPro, (-p, c
+                c, p h__.heappop(heapCap)
+                h__.heappush(heapPro, (-p, c
             __ n.. heapPro:
                 _____
-            p, c heapq.heappop(heapPro)
+            p, c h__.heappop(heapPro)
             W += -p
         r.. W

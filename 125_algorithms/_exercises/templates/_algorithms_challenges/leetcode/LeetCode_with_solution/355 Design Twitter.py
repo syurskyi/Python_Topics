@@ -35,7 +35,7 @@ twitter.unfollow(1, 2);
 twitter.getNewsFeed(1);
 """
 ____ c.. _______ d..
-_______ heapq
+_______ h__
 
 __author__ 'Daniel'
 
@@ -89,18 +89,18 @@ c_ Twitter(o..
         h    # list
         __ userId n.. __ followees[userId] a.. tweets[userId]:
             # possible following oneself
-            heapq.heappush(h, tweets[userId])
+            h__.heappush(h, tweets[userId])
 
         ___ followee __ followees[userId]:
             __ tweets[followee]:
-                heapq.heappush(h, tweets[followee])
+                h__.heappush(h, tweets[followee])
 
         ret    # list
         w.... h a.. l..(ret) < SZ:
-            tweet heapq.heappop(h)
+            tweet h__.heappop(h)
             ret.a..(tweet.id)
             __ tweet.next:
-                heapq.heappush(h, tweet.next)
+                h__.heappush(h, tweet.next)
 
         r.. ret
 

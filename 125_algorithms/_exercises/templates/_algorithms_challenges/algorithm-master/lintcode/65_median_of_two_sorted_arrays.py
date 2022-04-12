@@ -1,7 +1,7 @@
 """
 Heap
 """
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -19,23 +19,23 @@ c_ Solution:
                 _____
 
             n += l..(nums)
-            heapq.heappush(heap, (nums[0], nums, 0
+            h__.heappush(heap, (nums[0], nums, 0
 
         __ n __ 0:
             r.. 0.0
 
         num 0
         ___ _ __ r..((n + 1) // 2
-            num, nums, i heapq.heappop(heap)
+            num, nums, i h__.heappop(heap)
 
             i += 1
             __ i < l..(nums
-                heapq.heappush(heap, (nums[i], nums, i
+                h__.heappush(heap, (nums[i], nums, i
 
         __ n & 1 __ 1:
             r.. num * 1.0
 
-        _num heapq.heappop(heap)[0]
+        _num h__.heappop(heap)[0]
         r.. (num + _num) / 2.0
 
 

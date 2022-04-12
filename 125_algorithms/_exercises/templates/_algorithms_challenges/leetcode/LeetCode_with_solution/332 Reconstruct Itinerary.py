@@ -15,7 +15,7 @@ tickets = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]
 Return ["JFK","ATL","JFK","SFO","ATL","SFO"].
 Another possible reconstruction is ["JFK","SFO","ATL","JFK","ATL","SFO"]. But it is larger in lexical order.
 """
-_______ heapq
+_______ h__
 ____ c.. _______ d.., d..
 
 __author__ 'Daniel'
@@ -38,7 +38,7 @@ c_ Solution(o..
         """
         G d.. l..  # every list is a heap
         ___ s, e __ tickets:
-            heapq.heappush(G[s], e)  # heap lexical order
+            h__.heappush(G[s], e)  # heap lexical order
 
         ret d..()
         dfs(G, 'JFK', ret)
@@ -46,7 +46,7 @@ c_ Solution(o..
 
     ___ dfs  G, cur, ret
         w.... G[cur]:
-            dfs(G, heapq.heappop(G[cur]), ret)
+            dfs(G, h__.heappop(G[cur]), ret)
 
         ret.appendleft(cur)
 

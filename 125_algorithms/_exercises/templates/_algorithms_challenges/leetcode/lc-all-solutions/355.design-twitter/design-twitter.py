@@ -1,4 +1,4 @@
-_______ heapq
+_______ h__
 
 
 c_ Twitter(o..
@@ -31,17 +31,17 @@ c_ Twitter(o..
     ret    # list
     heap    # list
     __ tweets[userId]:
-      heapq.heappush(heap, tweets[userId][-1])
+      h__.heappush(heap, tweets[userId][-1])
 
     ___ followeeId __ friendship[userId]:
       __ tweets[followeeId]:
-        heapq.heappush(heap, tweets[followeeId][-1])
+        h__.heappush(heap, tweets[followeeId][-1])
     cnt 10
     w.... heap a.. cnt > 0:
-      _, tid, uid, idx heapq.heappop(heap)
+      _, tid, uid, idx h__.heappop(heap)
       ret.a..(tid)
       __ idx > 0:
-        heapq.heappush(heap, tweets[uid][idx - 1])
+        h__.heappush(heap, tweets[uid][idx - 1])
       cnt -_ 1
     r.. ret
 

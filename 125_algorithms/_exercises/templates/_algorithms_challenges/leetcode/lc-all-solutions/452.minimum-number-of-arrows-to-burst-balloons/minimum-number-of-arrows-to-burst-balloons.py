@@ -5,7 +5,7 @@ c_ Solution(o..
     :rtype: int
     """
     ans 0
-    points.s..(key=l.... p: p[1])
+    points.s..(k.._l.... p: p[1])
     end f__("-inf")
     ___ s, e __ points:
       __ s > end:

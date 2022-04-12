@@ -717,7 +717,7 @@ ___ load_pycon_data(pycon_videos=pycon_videos
 
 ___ get_most_popular_talks_by_views(videos
     """Return the pycon video list sorted by viewCount"""
-    r.. s..(videos, key=l.... x: i..(x.metrics 'viewCount' ), r.._T..
+    r.. s..(videos, k.._l.... x: i..(x.metrics 'viewCount' ), r.._T..
 
 
 ___ get_most_popular_talks_by_like_ratio(videos
@@ -732,7 +732,7 @@ ___ get_most_popular_talks_by_like_ratio(videos
                 # No matter what algorithm is used, the above ids appear to have a better likes to view ratio
                 video_list.a..(video)
     output s..(video_list,
-                    key=l.... x: i..(x.metrics 'viewCount' ) /
+                    k.._l.... x: i..(x.metrics 'viewCount' ) /
                                   (i..(x.metrics 'likeCount' ) - i..(x.metrics 'dislikeCount' ,
                     r.._F..
     r.. ?

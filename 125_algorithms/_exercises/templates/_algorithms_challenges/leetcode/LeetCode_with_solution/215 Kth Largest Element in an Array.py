@@ -10,7 +10,7 @@ Note:
 You may assume k is always valid, 1 ≤ k ≤ array's length.
 """
 __author__ 'Daniel'
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -26,14 +26,14 @@ c_ Solution:
         n l..(nums)
         ___ i, v __ e..(nums
             __ i < k:
-                heapq.heappush(h, v)
+                h__.heappush(h, v)
             ____
                 __ v <_ h[0]:
                     _____
-                heapq.heappop(h)
-                heapq.heappush(h, v)
+                h__.heappop(h)
+                h__.heappush(h, v)
 
-        r.. heapq.heappop(h)
+        r.. h__.heappop(h)
 
 
 __ _______ __ _______

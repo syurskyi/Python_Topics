@@ -35,4 +35,4 @@ ___ get_income_distribution(___=countries
         income tr.find('wb:incomelevel').text
         d[income].a..(name)
 
-    r.. d..(s..(d.i.., key=l.... item: item[1]
+    r.. d..(s..(d.i.., k.._l.... item: item[1]

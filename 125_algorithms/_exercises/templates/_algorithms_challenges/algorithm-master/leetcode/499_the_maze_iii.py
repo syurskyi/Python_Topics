@@ -72,7 +72,7 @@ c_ Solution:
         r.. ''.j..(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND
 
 
-_______ heapq
+_______ h__
 
 
 c_ Solution2:
@@ -112,7 +112,7 @@ c_ Solution2:
         distance {(sx, sy 0}
 
         w.... heap:
-            x, y heapq.heappop(heap)
+            x, y h__.heappop(heap)
 
             ___ dx, dy, dn __ (
                 (-1, 0, 'u'), (1, 0, 'd'),
@@ -143,6 +143,6 @@ c_ Solution2:
 
                 distance[_x, _y] _step
                 paths[_x, _y] paths[x, y] + [dn]
-                heapq.heappush(heap, (_x, _y
+                h__.heappush(heap, (_x, _y
 
         r.. ''.j..(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND

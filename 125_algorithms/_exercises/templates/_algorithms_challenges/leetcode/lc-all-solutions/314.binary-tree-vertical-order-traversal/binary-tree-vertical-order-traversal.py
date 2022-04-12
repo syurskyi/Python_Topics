@@ -23,6 +23,6 @@ c_ Solution(o..
     w... T...
       __ n.. res[i]:
         _____
-      ans.a..([item[0] ___ item __ s..(res[i], key=l.... a: a[1])])
+      ans.a..([item[0] ___ item __ s..(res[i], k.._l.... a: a[1])])
       i += 1
     r.. ans

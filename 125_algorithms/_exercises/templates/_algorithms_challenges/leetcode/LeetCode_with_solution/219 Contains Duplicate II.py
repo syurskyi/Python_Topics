@@ -3,7 +3,7 @@ Given an array of integers and an integer k, find out whether there there are tw
 such that nums[i] = nums[j] and the difference between i and j is at most k.
 """
 __author__ 'Daniel'
-_______ heapq
+_______ h__
 ____ c.. _______ d..
 
 
@@ -16,13 +16,13 @@ c_ Solution:
         """
         d d.. l..
         ___ i, v __ e..(nums
-            heapq.heappush(d[v], i)
+            h__.heappush(d[v], i)
 
         ___ v __ d.v..
             __ l..(v) > 1:
-                pre heapq.heappop(v)
+                pre h__.heappop(v)
                 w.... v:
-                    cur heapq.heappop(v)
+                    cur h__.heappop(v)
                     __ cur-pre <_ k:
                         r.. T..
                     pre cur

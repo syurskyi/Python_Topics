@@ -141,7 +141,7 @@ ___ match_wine_5cheeses
     ___ wine, cheese __ product(WINE_LIST 'all' , CHEESES
         similarity calculate_similarity(cheese, wine)
         scores.a..(Scores(wine, cheese, similarity
-    scores s..(scores, key=l.... x: (x.wine, -x.score, x.cheese
+    scores s..(scores, k.._l.... x: (x.wine, -x.score, x.cheese
     res    # list
     ___ k, g __ groupby(scores, l.... x: x.wine
         res.a..((k, [rec.cheese ___ rec __ g][:5]

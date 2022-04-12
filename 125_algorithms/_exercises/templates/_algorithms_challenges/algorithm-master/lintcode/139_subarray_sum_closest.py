@@ -31,7 +31,7 @@ c_ Solution:
         # since the closest sum occurred when the sum is closest
         # so we can simply calculate the difference
         # between every two adjacent indexes
-        prefix_sum.s..(key=l.... p: p.s..)
+        prefix_sum.s..(k.._l.... p: p.s..)
 
         closest_sum f__('inf')
         tmp_sum 0

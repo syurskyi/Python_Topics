@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ maxEnvelopes  envelopes
         _______ b__
         length 0
-        envelopes.s..(key=l.... x: (x[0], -x[1]
+        envelopes.s..(k.._l.... x: (x[0], -x[1]
         dp [0]*l..(envelopes)
         ___ env __ envelopes:
             ind b__.bisect_left(dp, env[1], 0, length)

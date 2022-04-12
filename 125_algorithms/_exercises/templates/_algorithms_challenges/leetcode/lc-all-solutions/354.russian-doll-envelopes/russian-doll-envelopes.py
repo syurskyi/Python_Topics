@@ -4,7 +4,7 @@ c_ Solution(o..
     :type envelopes: List[List[int]]
     :rtype: int
     """
-    envelopes.s..(key=l.... key: (key[0], -key[1]
+    envelopes.s..(k.._l.... key: (key[0], -key[1]
     tails    # list
     ___ i __ r..(0, l..(envelopes:
       idx b__.bisect_right(tails, envelopes[i][1])

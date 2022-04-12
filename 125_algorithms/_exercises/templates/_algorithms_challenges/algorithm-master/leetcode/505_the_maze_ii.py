@@ -61,7 +61,7 @@ c_ Solution:
 
 
 
-_______ heapq
+_______ h__
 
 
 c_ Solution2:
@@ -98,7 +98,7 @@ c_ Solution2:
         distance {(sx, sy 0}
 
         w.... heap:
-            x, y heapq.heappop(heap)
+            x, y h__.heappop(heap)
 
             ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1:
                 _x x + dx
@@ -120,6 +120,6 @@ c_ Solution2:
                     r.. _step
 
                 distance[_x, _y] _step
-                heapq.heappush(heap, (_x, _y
+                h__.heappush(heap, (_x, _y
 
         r.. -1

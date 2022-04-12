@@ -8,7 +8,7 @@ Complete the 3 functions to return the largest n of each using heapq
 Have fun and keep calm and code in Python!
 """
 ____ d__ _______ d__
-_______ heapq
+_______ h__
 
 numbers [0, -1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6]
 dates [d__(2018, 1, 23, 0, 0),
@@ -37,13 +37,13 @@ earnings_mln [
 ]
 
 
-___ get_largest_number(numbers, n=3
+___ get_largest_number numbers n_3
     p..
 
 
-___ get_latest_dates(dates, n=3
+___ get_latest_dates dates n_3
     p..
 
 
-___ get_highest_earnings(earnings_mln, n=3
+___ get_highest_earnings earnings_mln n_3
     p..

@@ -22,7 +22,7 @@ the range [-1000, 1000].
 Multiplication of any three numbers in the input won't exceed the range of
 32-bit signed integer.
 """
-_______ heapq
+_______ h__
 
 ____ t___ _______ L..
 
@@ -32,8 +32,8 @@ c_ Solution:
         """
         heapq nlargest nsmallest
         """
-        mxes heapq.nlargest(3, nums)
-        mns heapq.nsmallest(3, nums)
+        mxes h__.nlargest(3, nums)
+        mns h__.nsmallest(3, nums)
         r.. m..(
             mxes[0] * mxes[1] * mxes[2],
             mns[0] * mns[1] * mxes[0],

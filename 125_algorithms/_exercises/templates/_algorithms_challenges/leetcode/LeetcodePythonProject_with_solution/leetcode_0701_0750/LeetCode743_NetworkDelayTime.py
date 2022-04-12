@@ -11,7 +11,7 @@ c_ Solution(o..
         :type K: int
         :rtype: int
         """
-        _______ heapq
+        _______ h__
         p..    # dict
         ___ t__ __ times:
             sourceMap p...g.. t__[0], {})
@@ -21,10 +21,10 @@ c_ Solution(o..
         
         distanceMap {K:0}
         heap    # list
-        heapq.heappush(heap, [0, K])
+        h__.heappush(heap, [0, K])
         maxVal -1
         w.... heap:
-            d, node heapq.heappop(heap)
+            d, node h__.heappop(heap)
             __ node __ distanceMap a.. distanceMap[node] < d:
                 _____
             __ node __ p..:
@@ -33,7 +33,7 @@ c_ Solution(o..
                     __ node0 __ distanceMap a.. distanceMap[node0] <_ absDist:
                         _____
                     distanceMap[node0] absDist
-                    heapq.heappush(heap, [absDist, node0])
+                    h__.heappush(heap, [absDist, node0])
         ___ val __ distanceMap.v..
             __ val > maxVal:
                 maxVal val

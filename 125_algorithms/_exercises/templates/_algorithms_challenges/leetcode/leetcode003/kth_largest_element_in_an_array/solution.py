@@ -9,7 +9,7 @@ Note:
 You may assume k is always valid, 1 <= k <= array's length
 """
 
-_______ heapq
+_______ h__
 
 c_ Solution(o..
     ___ findKthLargest  nums, k
@@ -20,9 +20,9 @@ c_ Solution(o..
         """
         h    # list
         ___ e __ nums:
-            heapq.heappush(h, (-e, e
+            h__.heappush(h, (-e, e
         ___ i __ r..(k
-            w, e heapq.heappop(h)
+            w, e h__.heappop(h)
             __ i __ k - 1:
                 r.. e
 

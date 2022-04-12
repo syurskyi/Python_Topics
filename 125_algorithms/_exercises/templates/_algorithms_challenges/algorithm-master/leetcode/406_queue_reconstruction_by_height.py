@@ -39,7 +39,7 @@ c_ Solution:
         __ n.. people:
             r.. ans
 
-        people.s..(key=l.... p: (p[0], -p[1]
+        people.s..(k.._l.... p: (p[0], -p[1]
 
         ___ i __ r..(l..(people) - 1, -1, -1
             ans.insert(people[i][1], people[i])

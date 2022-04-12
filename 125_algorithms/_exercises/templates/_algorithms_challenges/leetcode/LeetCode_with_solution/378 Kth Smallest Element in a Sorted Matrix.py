@@ -17,7 +17,7 @@ return 13.
 Note:
 You may assume k is always valid, 1 <= k <= n2.
 """
-_______ heapq
+_______ h__
 
 
 __author__ 'Daniel'
@@ -52,13 +52,13 @@ c_ Solution(o..
 
         h    # list
         ___ i __ x..(m
-            heapq.heappush(h, Node(i, 0
+            h__.heappush(h, Node(i, 0
 
         ret N..
         ___ _ __ x..(k
-            ret heapq.heappop(h)
+            ret h__.heappop(h)
             __ ret.hasnext
-                heapq.heappush(h, ret.next
+                h__.heappush(h, ret.next
 
         r.. matrix[ret.i][ret.j]
 

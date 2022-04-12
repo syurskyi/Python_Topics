@@ -1,9 +1,9 @@
 ___ largest_palindrome(max_factor, min_factor=0
-    r.. m..(palindromes(max_factor, min_factor), key=l.... tup: tup 0
+    r.. m..(palindromes(max_factor, min_factor), k.._l.... tup: tup 0
 
 
 ___ smallest_palindrome(max_factor, min_factor
-    r.. m..(palindromes(max_factor, min_factor), key=l.... tup: tup 0
+    r.. m..(palindromes(max_factor, min_factor), k.._l.... tup: tup 0
 
 
 ___ palindromes(max_factor, min_factor

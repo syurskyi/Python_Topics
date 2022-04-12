@@ -1,4 +1,4 @@
-_______ heapq
+_______ h__
 
 
 c_ Solution(o..
@@ -29,13 +29,13 @@ c_ Solution(o..
     visited s..()
     hole t..(hole)
     w.... heap:
-      dist, word, curr heapq.heappop(heap)
+      dist, word, curr h__.heappop(heap)
       __ curr __ visited:
         _____
       visited |= {curr}
       __ curr __ hole:
         r.. word
       ___ pos, mark, incDist __ next(curr, maze
-        heapq.heappush(heap, (dist + incDist, word + mark, pos
+        h__.heappush(heap, (dist + incDist, word + mark, pos
 
     r.. "impossible"

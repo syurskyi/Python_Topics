@@ -21,7 +21,7 @@ c_ Solution(o..
         ___ i __ r..(2**m
             __ a..(d&i ___ d __ diffs
                 abbrs.a..(abbr(target, i
-        r.. m..(abbrs, key=l.... x: l..(x
+        r.. m..(abbrs, k.._l.... x: l..(x
     
     ___ abbr  target, num
         word, count '', 0

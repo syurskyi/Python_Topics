@@ -30,7 +30,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
             counts.a..((word, count
 
     __ counts:
-        result m..(counts, key=l.... x: x[1].most_common(1)[0][1])
+        result m..(counts, k.._l.... x: x[1].most_common(1)[0][1])
 
         __ result[1].most_common
             letter, count result[1].most_common(1)[0]

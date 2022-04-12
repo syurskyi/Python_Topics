@@ -40,7 +40,7 @@ board[i][j] will be a permutation of [0, 1, 2, 3, 4, 5].
 ____ t___ _______ L..
 ____ c.. _______ d..
 ____ copy _______ d..
-_______ heapq
+_______ h__
 
 
 final_pos {
@@ -82,7 +82,7 @@ c_ Solution:
             [4, 5, 0],
         ]
         w.... q:
-            heu, cur_dist, board heapq.heappop(q)
+            heu, cur_dist, board h__.heappop(q)
             visited[ser(board)] T..
             __ board __ target:
                 r.. cur_dist
@@ -96,7 +96,7 @@ c_ Solution:
                     B d..(board)   # need a copy in the queue
                     B[I][J], B[i][j] B[i][j], B[I][J]
                     __ n.. visited[ser(B)]:
-                        heapq.heappush(q, (heuristic_dist(B) + cur_dist, cur_dist, B
+                        h__.heappush(q, (heuristic_dist(B) + cur_dist, cur_dist, B
         r.. -1
 
     ___ zero_pos  board

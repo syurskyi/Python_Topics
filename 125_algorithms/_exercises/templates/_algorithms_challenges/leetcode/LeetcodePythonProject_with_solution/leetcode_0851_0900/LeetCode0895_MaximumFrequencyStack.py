@@ -1,4 +1,4 @@
-_______ heapq
+_______ h__
 
 
 c_ FreqStack(o..
@@ -15,13 +15,13 @@ c_ FreqStack(o..
         """
         size += 1
         hashmap[x] hashmap.g.. x, 0) + 1
-        heapq.heappush(heap, (-hashmap[x], -size, x
+        h__.heappush(heap, (-hashmap[x], -size, x
 
     ___ pop
         """
         :rtype: int
         """
-        _, _, val heapq.heappop(heap)
+        _, _, val h__.heappop(heap)
         hashmap[val] -_ 1
         r.. val
 

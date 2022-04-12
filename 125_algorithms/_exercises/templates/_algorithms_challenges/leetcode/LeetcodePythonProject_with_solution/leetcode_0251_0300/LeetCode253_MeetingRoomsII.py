@@ -15,14 +15,14 @@ c_ Solution(o..
         :type intervals: List[Interval]
         :rtype: int
         """
-        _______ heapq
-        intervals.s..(key=l.... x: x.start)
+        _______ h__
+        intervals.s..(k.._l.... x: x.start)
         heap    # list
         maxLen 0
         ___ interval __ intervals:
             w.... heap a.. heap[0] <_ interval.start:
-                heapq.heappop(heap)
-            heapq.heappush(heap, interval.end)
+                h__.heappop(heap)
+            h__.heappush(heap, interval.end)
             maxLen m..(maxLen, l..(heap
         r.. maxLen
      

@@ -11,16 +11,16 @@ c_ Solution(o..
         :type stations: List[List[int]]
         :rtype: int
         """
-        _______ heapq
+        _______ h__
         h    # list
         res i 0
         cur startFuel
         w.... cur < target:
             w.... i < l..(stations) a.. stations[i][0] <_ cur:
-                heapq.heappush(h, -stations[i][1])
+                h__.heappush(h, -stations[i][1])
                 i += 1
             __ n.. h:
                 r.. -1
-            cur += -heapq.heappop(h)
+            cur += -h__.heappop(h)
             res += 1
         r.. res

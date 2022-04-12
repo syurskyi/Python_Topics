@@ -10,7 +10,7 @@ c_ Solution(o..
     :type intervals: List[Interval]
     :rtype: int
     """
-    intervals.s..(key=l.... i: i.end)
+    intervals.s..(k.._l.... i: i.end)
     ans 0
     end f__("-inf")
     ___ interval __ intervals:

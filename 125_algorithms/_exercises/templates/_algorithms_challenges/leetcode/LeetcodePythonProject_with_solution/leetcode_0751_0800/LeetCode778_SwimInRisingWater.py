@@ -9,20 +9,20 @@ c_ Solution(o..
         :type grid: List[List[int]]
         :rtype: int
         """
-        _______ heapq
+        _______ h__
         n l..(grid)
         pq [(grid 0 0 , 0, 0)]
         visited s..([(0, 0)])
         res 0
         w.... pq:
-            t, x, y heapq.heappop(pq)
+            t, x, y h__.heappop(pq)
             res m..(res, t)
             __ x __ y __ n-1:
                 r.. res
             ___ i, j __ (x+1, y), (x, y+1), (x-1, y), (x, y-1
                 __ 0 <_ i < n a.. 0 <_ j < n a.. (i, j) n.. __ visited:
                     visited.add((i, j
-                    heapq.heappush(pq, (grid[i][j], i, j
+                    h__.heappush(pq, (grid[i][j], i, j
         r.. res
     
     ___ test

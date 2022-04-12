@@ -27,7 +27,7 @@ The length of the input is in range of [1, 10000]
 """
 ____ t___ _______ L..
 ____ c.. _______ d..
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -92,17 +92,17 @@ c_ Solution2:
         h    # list
         ___ n __ nums:
             w.... h a.. h[0].end + 1 < n:
-                itvl heapq.heappop(h)
+                itvl h__.heappop(h)
                 __ itvl.length < 3:
                     r.. F..
 
             __ n.. h:
-                heapq.heappush(h, Interval(n, 1
+                h__.heappush(h, Interval(n, 1
             ____ h[0].end + 1 __ n:
-                itvl heapq.heappop(h)
-                heapq.heappush(h, Interval(n, itvl.length + 1
+                itvl h__.heappop(h)
+                h__.heappush(h, Interval(n, itvl.length + 1
             ____  # n == end
-                heapq.heappush(h, Interval(n, 1
+                h__.heappush(h, Interval(n, 1
 
 
         ___ itvl __ h:

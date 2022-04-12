@@ -19,7 +19,7 @@ c_ Solution(o..
             _____
       r.. dp[-1]
 
-    words.s..(key=l.... x: -l..(x
+    words.s..(k.._l.... x: -l..(x
     cands s..(words)
     ans    # list
     ___ i __ r..(0, l..(words:

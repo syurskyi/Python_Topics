@@ -25,7 +25,7 @@ ___ group_cars_by_manufacturer(cars
        No return here, just print to the console. We use pytest > capfd to
        validate your output :)
     """
-    groups groupby(s..(cars, key=l.... x: x 0, key=l.... x: x 0
+    groups groupby(s..(cars, k.._l.... x: x 0, k.._l.... x: x 0
     ___ mfgr, models __ groups:
         print _*{mfgr.u..}')
         ___ model __ models:

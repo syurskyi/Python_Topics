@@ -4,7 +4,7 @@ ___ i __ r..(i..(input())):
     a input().s..
     # sort the list keeping A at the end
     predefined_list =  'A'
-    a =s..(a, key=l.... x: x __ predefined_list)
+    a =s..(a, k.._l.... x: x __ predefined_list)
     tot 0
     #for all elements in a
     ___ j __ a:

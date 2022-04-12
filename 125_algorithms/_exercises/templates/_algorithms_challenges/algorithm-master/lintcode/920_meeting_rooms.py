@@ -51,7 +51,7 @@ c_ Solution:
         :type intervals: list[Interval]
         :rtype: bool
         """
-        intervals.s..(key=l.... x: (x.start, x.end
+        intervals.s..(k.._l.... x: (x.start, x.end
 
         ___ i __ r..(1, l..(intervals:
             __ intervals[i].start < intervals[i - 1].end:

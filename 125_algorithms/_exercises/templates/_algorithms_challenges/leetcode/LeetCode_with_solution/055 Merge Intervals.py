@@ -26,7 +26,7 @@ c_ Solution(o..
         __ n.. itvls:
             r.. []
 
-        itvls.s..(key=l.... x: x.start)  # sort first, since time complexity less than brute force
+        itvls.s..(k.._l.... x: x.start)  # sort first, since time complexity less than brute force
         ret [itvls[0]]
         ___ cur __ itvls[1:]:
             pre ret[-1]

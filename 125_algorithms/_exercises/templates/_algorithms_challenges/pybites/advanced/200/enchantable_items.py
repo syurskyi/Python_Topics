@@ -48,7 +48,7 @@ c_ Item:
 
     ___ -s
         s__ name.r..('_',' ').t.. + ': '
-        sorted_enchantments s..(enchantments,key=l.... x: x.id_name)
+        sorted_enchantments s..(enchantments,k.._l.... x: x.id_name)
         ___ enchantment __ sorted_enchantments:
             s__ += f'\n  [{enchantment.max_level}] {enchantment.id_name}'
         r.. s__
@@ -123,7 +123,7 @@ ___ generate_items(data
             item_mapping[item].add_enchantment(enchantment)
     
     
-    item_mapping d..(s..(item_mapping.i..,key=l.... x:x[0]
+    item_mapping d..(s..(item_mapping.i..,k.._l.... x:x[0]
 
     r.. item_mapping
 

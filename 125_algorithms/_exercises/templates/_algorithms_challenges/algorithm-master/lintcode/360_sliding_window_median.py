@@ -1,4 +1,4 @@
-_______ heapq
+_______ h__
 
 
 c_ HashHeapqWithLazy:
@@ -14,7 +14,7 @@ c_ HashHeapqWithLazy:
         r.. __size > 0
 
     ___ push  val
-        heapq.heappush(__heap, val)
+        h__.heappush(__heap, val)
         __size += 1
 
     ___ pop
@@ -22,7 +22,7 @@ c_ HashHeapqWithLazy:
             r..
 
         __size -_ 1
-        r.. heapq.heappop(__heap)
+        r.. h__.heappop(__heap)
 
     ___ remove  val
         __ _is_empty
@@ -39,7 +39,7 @@ c_ HashHeapqWithLazy:
 
     ___ _is_empty
         w.... __heap a.. __deleted.g.. __heap[0]
-            val heapq.heappop(__heap)
+            val h__.heappop(__heap)
             __deleted[val] -_ 1
 
         r.. __size __ 0

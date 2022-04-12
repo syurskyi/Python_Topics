@@ -27,7 +27,7 @@ Return: [1,3],[2,3]
 All possible pairs are returned from the sequence:
 [1,3],[2,3]
 """
-_______ heapq
+_______ h__
 
 __author__ 'Daniel'
 
@@ -67,14 +67,14 @@ c_ Solution(o..
 
         h    # list
         ___ i __ x..(m..(k, l..(nums1))):
-            heapq.heappush(h, Node(i, 0
+            h__.heappush(h, Node(i, 0
 
         ret    # list
         w.... h a.. l..(ret) < k:
-            node heapq.heappop(h)
+            node h__.heappop(h)
             ret.a..([nums1[node.i], nums2[node.j]])
             __ node.hasnext
-                heapq.heappush(h, node.next
+                h__.heappush(h, node.next
 
         r.. ret
 

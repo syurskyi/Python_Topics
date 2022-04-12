@@ -36,4 +36,4 @@ ___ get_top_titles(url, top=5
         extract __.s.. _ (\d+) point.* (\d+) comment', stats, __.DOTALL)
         articles.a..(Entry(article.text.s.., i..(extract.group(1, i..(extract.group(2))))
 
-    r.. s..(articles, key=l.... x: -(x.points + x.comments / 1000[:top]
+    r.. s..(articles, k.._l.... x: -(x.points + x.comments / 1000[:top]

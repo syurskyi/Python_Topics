@@ -56,7 +56,7 @@ ___ high_low_record_breakers_for_2015
             'element': x 'Element' ,
             'value': i..(x 'Data_Value' )
         } ___ x __ c__.D.. f) __ n.. __.m.. _ \d{4}-02-29', x 'Date' )],
-            key=l.... x: (x 'id'  + x 'date' .s..('%m%d_Y')))
+            k.._l.... x: (x 'id'  + x 'date' .s..('%m%d_Y')))
     dataset [{'id': x 'id' ,
                 'monthday': x 'date' .s..('%m_d'),
                 'year': x 'date' .year,
@@ -95,4 +95,4 @@ ___ high_low_record_breakers_for_2015
             result 'max' .a..(
                 STATION(row.Index[0], d__.s.. _*2015{row.Index[1]}', '_Y%m_d').date(), row.maxb / 10.0))
 
-    r.. m..(result 'max' , key=l.... x: x.Value), m..(result 'min' , key=l.... x: x.Value)
+    r.. m..(result 'max' , k.._l.... x: x.Value), m..(result 'min' , k.._l.... x: x.Value)

@@ -10,7 +10,7 @@ c_ Solution(o..
     :type intervals: List[Interval]
     :rtype: bool
     """
-    intervals s..(intervals, key=l.... x: x.start)
+    intervals s..(intervals, k.._l.... x: x.start)
     ___ i __ r..(1, l..(intervals:
       __ intervals[i].start < intervals[i - 1].end:
         r.. F..

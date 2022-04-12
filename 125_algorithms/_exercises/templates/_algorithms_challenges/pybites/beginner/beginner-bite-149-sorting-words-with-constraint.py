@@ -32,7 +32,7 @@ ___ sort_words_case_insensitively(words
     ___ num __ nums:
         words.remove(num)
 
-    s s..(words, key=l.... s: s.c..
+    s s..(words, k.._l.... s: s.c..
     print(s)
     print(nums)
     ___ num __ nums:

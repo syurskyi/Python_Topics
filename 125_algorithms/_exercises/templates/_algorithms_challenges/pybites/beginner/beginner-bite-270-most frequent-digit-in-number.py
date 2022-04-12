@@ -29,7 +29,7 @@ ___ freq_digit(num: i..) __ i..:
             dict_num[num] += 1
         ______:
             dict_num[num] 1
-    m m..(dict_num, key=l.... key: dict_num[key])
+    m m..(dict_num, k.._l.... key: dict_num[key])
     r.. i..(m)
 
 

@@ -31,7 +31,7 @@ c_ Solution(o..
 
   ___ merge  intervals
     ans    # list
-    ___ intv __ s..(intervals, key=l.... x: x[0]
+    ___ intv __ s..(intervals, k.._l.... x: x[0]
       __ ans a.. ans[-1][1] + 1 >_ intv[0]:
         ans[-1][1] m..(ans[-1][1], intv[1])
       ____

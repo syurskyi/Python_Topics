@@ -22,7 +22,7 @@ Input words contain only lowercase letters.
 Follow up:
 Try to solve it in O(n log k) time and O(n) extra space.
 """
-_______ heapq
+_______ h__
 ____ c.. _______ d..
 ____ t___ _______ L..
 
@@ -51,13 +51,13 @@ c_ Solution:
             counter[w] += 1
 
         ___ w, c __ counter.i..:
-            heapq.heappush(h, Word(w, c
+            h__.heappush(h, Word(w, c
             __ l..(h) > k:
-                heapq.heappop(h)
+                h__.heappop(h)
 
         ret    # list
         w.... h:
-            w heapq.heappop(h).content
+            w h__.heappop(h).content
             ret.a..(w)
 
         r.. ret[::-1]

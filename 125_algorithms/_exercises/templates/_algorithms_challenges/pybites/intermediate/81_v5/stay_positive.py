@@ -37,4 +37,4 @@ ___ filter_tweets_on_polarity(tweets, keep_positive=T..
 ___ order_tweets_by_polarity(tweets, positive_highest=T..
     """Sort the tweets by polarity, receives positive_highest which determines
        the order. Returns a list of ordered tweets."""
-    r.. s..(tweets,key=l.... x : -x.polarity __ positive_highest ____ x.polarity)
+    r.. s..(tweets,k.._l.... x : -x.polarity __ positive_highest ____ x.polarity)

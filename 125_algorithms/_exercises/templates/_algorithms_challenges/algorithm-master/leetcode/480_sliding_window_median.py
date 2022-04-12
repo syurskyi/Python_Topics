@@ -1,4 +1,4 @@
-_______ heapq
+_______ h__
 
 
 c_ HashHeapq:
@@ -15,13 +15,13 @@ c_ HashHeapq:
         r.. b..(__heap)
 
     ___ push  val
-        heapq.heappush(__heap, val)
+        h__.heappush(__heap, val)
 
     ___ pop
         __ n.. __heap:
             r..
 
-        r.. heapq.heappop(__heap)
+        r.. h__.heappop(__heap)
 
     ___ remove  val
         __ n.. __heap:
@@ -41,8 +41,8 @@ c_ HashHeapq:
         ____
             __heap[i] __heap[-1]
             __heap.p.. )
-            heapq._siftup(__heap, i)
-            heapq._siftdown(__heap, 0, i)
+            h__._siftup(__heap, i)
+            h__._siftdown(__heap, 0, i)
 
     ___ top
         __ n.. __heap:

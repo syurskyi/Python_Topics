@@ -13,7 +13,7 @@ c_ Solution(o..
         :type K: int
         :rtype: int
         """
-        _______ heapq
+        _______ h__
         graph    # dict
         ___ f __ flights:
             __ f[0] n.. __ graph:
@@ -24,12 +24,12 @@ c_ Solution(o..
         w.... pq:
             size l..(pq)
             ___ _ __ r..(size
-                curLen, level, node heapq.heappop(pq)
+                curLen, level, node h__.heappop(pq)
                 __ node __ dst:
                     r.. curLen
                 __ level > 0:
                     ___ dist, node0 __ graph.g.. node, []
-                        heapq.heappush(pq, [curLen+dist, level-1, node0])
+                        h__.heappush(pq, [curLen+dist, level-1, node0])
         r.. -1
     
     ___ test

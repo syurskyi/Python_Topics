@@ -60,7 +60,7 @@ ___ get_average_scores directors
                 __ directors[director][i][1] a.. i..(directors[director][i][1]) >1960:
                     total += f__(directors[director][i][2])
             local_list.a..((director, r..(total/l..(directors[director]),1)))
-    r.. s..(local_list, key=l.... x: ? 1 r.._T..
+    r.. s..(local_list, k.._l.... x: ? 1 r.._T..
 
 
 director_dict get_movies_by_director()

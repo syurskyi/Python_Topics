@@ -18,7 +18,7 @@ c_ Solution(o..
         maxPath f__('inf')
         map [[f__('inf')]*n ___ _ __ r..(m)]
         helper(maze, ball, hole, '', 0, result, visited)
-        result.s..(key=l.... x: (x[1], x[0]
+        result.s..(k.._l.... x: (x[1], x[0]
         __ result:
             r.. result 0 0 
         ____

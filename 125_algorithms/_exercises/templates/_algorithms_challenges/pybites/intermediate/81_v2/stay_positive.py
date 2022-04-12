@@ -40,4 +40,4 @@ ___ order_tweets_by_polarity(tweets, positive_highest=T..
        the order. Returns a list of ordered tweets."""
 
 
-    r.. s..(tweets,key=l.... x:x[1],reverse=T.. __ positive_highest ____ F..)
+    r.. s..(tweets,k.._l.... x:x[1],reverse=T.. __ positive_highest ____ F..)

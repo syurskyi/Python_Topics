@@ -29,7 +29,7 @@ Note:
 """
 ____ t___ _______ L..
 ____ c.. _______ C.., d..
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -75,12 +75,12 @@ c_ Solution:
                 _____
 
             __ a __ h[0][1][-1]:
-                heapq.heappush(h, (a, [a]
+                h__.heappush(h, (a, [a]
             ____ a __ h[0][1][-1] + 1:
-                _, lst heapq.heappop(h)
+                _, lst h__.heappop(h)
                 lst.a..(a)
                 __ l..(lst) < W:
-                    heapq.heappush(h, (a, lst
+                    h__.heappush(h, (a, lst
             ____
                 r.. F..
 

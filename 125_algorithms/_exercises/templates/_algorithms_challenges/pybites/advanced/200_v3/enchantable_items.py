@@ -48,7 +48,7 @@ c_ Item:
 
     ___  -r
         en _*   [{chant.max_level}] {chant.id_name}'
-              ___ chant __ s..(enchantments, key=l.... x : x.id_name)]
+              ___ chant __ s..(enchantments, k.._l.... x : x.id_name)]
         r.. f'{name.r..("_"," ").t..}: \n' + '\n'.j..(en)
 
 
@@ -102,7 +102,7 @@ ___ generate_items(data
                 res[i].enchantments.a..(enchantment)
             ____
                 res[i] Item(i, [enchantment])
-    r.. d..(s..(res.i.., key=l.... t: t[0]
+    r.. d..(s..(res.i.., k.._l.... t: t[0]
 
 
 ___ get_soup(file=HTML_FILE

@@ -1,4 +1,4 @@
-_______ heapq
+_______ h__
 
 """
 Assuming: len(A) == len(B) == 3
@@ -26,11 +26,11 @@ c_ Solution:
         m, n l..(A), l..(B)
         ans j 0
         heap    # list
-        ___ i __ r..(m..(m, k: heapq.heappush(heap, (A[i] + B[0], i, 0
+        ___ i __ r..(m..(m, k: h__.heappush(heap, (A[i] + B[0], i, 0
         w.... k > 0:
-            ans heapq.heappop(heap)
+            ans h__.heappop(heap)
             j ans[2] + 1
             __ j < n:
-                heapq.heappush(heap, (A[ans[1]] + B[j], ans[1], j
+                h__.heappush(heap, (A[ans[1]] + B[j], ans[1], j
             k -_ 1
         r.. ans[0]

@@ -12,7 +12,7 @@ c_ Node
 
 ___ BuildTree(records
     root N..
-    records.s..(key=l.... x: x.record_id)
+    records.s..(k.._l.... x: x.record_id)
     ordered_id [i.record_id ___ i __ records]
     __ records:
         __ ordered_id[-1] !_ l..(ordered_id) - 1:

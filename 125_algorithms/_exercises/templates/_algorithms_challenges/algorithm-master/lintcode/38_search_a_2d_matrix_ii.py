@@ -1,7 +1,7 @@
 """
 Heap
 """
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -19,17 +19,17 @@ c_ Solution:
         m, n l..(matrix), l..(matrix 0
 
         ___ i __ r..(m
-            heapq.heappush(heap, (matrix[i][0], i, 0
+            h__.heappush(heap, (matrix[i][0], i, 0
 
         w.... heap a.. heap 0 0  <_ target:
-            num, x, y heapq.heappop(heap)
+            num, x, y h__.heappop(heap)
 
             __ num __ target:
                 ans += 1
 
             y += 1
             __ y < n:
-                heapq.heappush(heap, (matrix[x][y], x, y
+                h__.heappush(heap, (matrix[x][y], x, y
 
         r.. ans
 

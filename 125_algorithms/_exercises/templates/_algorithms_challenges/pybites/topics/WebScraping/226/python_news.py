@@ -31,7 +31,7 @@ ___ get_top_titles(url, top=5
     ___ i __ r..(l..(news_all:
         meta news_points_all[i].span.text.s...s..
         title_list.a..(Entry(news_all[i].get_text().s.., i..(meta 0, i..(meta[-2])))
-    title_list s..(title_list, key=l.... x: (x.points, x.comments), r.._T..
+    title_list s..(title_list, k.._l.... x: (x.points, x.comments), r.._T..
     r.. [title_list[i] ___ i __ r..(top)]
 
 

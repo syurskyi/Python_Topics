@@ -41,7 +41,7 @@ k is in the range of [0, n - 1].
 There will not be any duplicated flights or self cycles.
 """
 ____ c.. _______ d..
-_______ heapq
+_______ h__
 
 
 c_ Solution:
@@ -56,14 +56,14 @@ c_ Solution:
 
         pq [(0, 0, src)]  # (cost, step, city)
         w.... pq:
-            cost, k, u heapq.heappop(pq)
+            cost, k, u h__.heappop(pq)
             __ u __ dst:
                 r.. cost
 
             stops k - 1 + 1
             __ stops <_ K:
                 ___ v, w __ G[u].i..:
-                    heapq.heappush(pq, (cost + w, k + 1, v
+                    h__.heappush(pq, (cost + w, k + 1, v
 
 
         r.. -1

@@ -22,7 +22,7 @@ Note:
 You may assume that nums' length ≥ k-1 and k ≥ 1.
 """
 ____ t___ _______ L..
-_______ heapq
+_______ h__
 
 
 c_ KthLargest:
@@ -38,9 +38,9 @@ c_ KthLargest:
             add(n)
 
     ___ add  val: i..) __ i..:
-        heapq.heappush(h, val)
+        h__.heappush(h, val)
         __ l..(h) > k:
-            heapq.heappop(h)
+            h__.heappop(h)
 
         r.. h[0]
 

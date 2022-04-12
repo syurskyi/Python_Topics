@@ -20,7 +20,7 @@ findMedian() -> 1.5
 add(3)
 findMedian() -> 2
 """
-_______ heapq
+_______ h__
 
 __author__ 'Daniel'
 
@@ -39,9 +39,9 @@ c_ DualHeap(o..
 
     ___ insert  num
         __ n.. min_h o. num > min_h[0]:
-            heapq.heappush(min_h, num)
+            h__.heappush(min_h, num)
         ____
-            heapq.heappush(max_h, -num)
+            h__.heappush(max_h, -num)
         balance()
 
     ___ balance
@@ -50,10 +50,10 @@ c_ DualHeap(o..
         __ a..(l1 - l2) <_ 1:
             r..
         ____ l1 - l2 > 1:
-            heapq.heappush(max_h, -heapq.heappop(min_h
+            h__.heappush(max_h, -h__.heappop(min_h
             balance()
         ____
-            heapq.heappush(min_h, -heapq.heappop(max_h
+            h__.heappush(min_h, -h__.heappop(max_h
             balance()
 
     ___ get_median

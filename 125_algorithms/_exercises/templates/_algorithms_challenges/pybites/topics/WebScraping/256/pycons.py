@@ -131,7 +131,7 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
                                 url=event_url
                                 )
             pycon_events.a..(pycon_tuple)
-    r.. s..(pycon_events, key=l.... x: x.city)
+    r.. s..(pycon_events, k.._l.... x: x.city)
 
 
 
@@ -150,7 +150,7 @@ ___ filter_pycons(pycons: L..[PyCon],
         print(event_year, event_continent)
         __ i..(event_year) __ year a.. event_continent __ continent:
             filtered_event.a..(pycon)
-    r.. s..(filtered_event, key=l.... x: x.city)
+    r.. s..(filtered_event, k.._l.... x: x.city)
 
 #print(len(get_pycon_events()))
 #print(get_pycon_events())

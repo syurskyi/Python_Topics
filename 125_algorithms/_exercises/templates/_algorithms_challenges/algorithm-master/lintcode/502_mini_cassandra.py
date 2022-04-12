@@ -39,4 +39,4 @@ c_ MiniCassandra:
             __ column_start <_ column_key <_ column_end
         ]
 
-        r.. s..(result, key=l.... column: column.key)
+        r.. s..(result, k.._l.... column: column.key)

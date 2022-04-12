@@ -1,7 +1,7 @@
 """
 REF: https://briangordon.github.io/2014/08/the-skyline-problem.html
 """
-_______ heapq
+_______ h__
 
 
 c_ HashHeapq:
@@ -10,13 +10,13 @@ c_ HashHeapq:
         deleted    # dict
 
     ___ push  val
-        heapq.heappush(heap, val)
+        h__.heappush(heap, val)
 
     ___ pop
         __ is_empty
             r.. -1
 
-        r.. heapq.heappop(heap)
+        r.. h__.heappop(heap)
 
     ___ remove  val
         __ is_empty
@@ -35,7 +35,7 @@ c_ HashHeapq:
 
     ___ is_empty
         w.... heap a.. deleted.g.. heap[0]
-            val heapq.heappop(heap)
+            val h__.heappop(heap)
             deleted[val] -_ 1
 
         r.. n.. heap

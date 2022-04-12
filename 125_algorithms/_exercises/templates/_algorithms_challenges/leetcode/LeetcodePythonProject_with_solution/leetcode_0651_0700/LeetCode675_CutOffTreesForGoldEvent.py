@@ -3,7 +3,7 @@ Created on Oct 16, 2017
 
 @author: MT
 '''
-_______ heapq
+_______ h__
 
 c_ Solution(o..
     ___ cutOffTree  forest
@@ -17,11 +17,11 @@ c_ Solution(o..
         ___ i __ r..(m
             ___ j __ r..(n
                 __ forest[i][j] > 1:
-                    heapq.heappush(heap, (forest[i][j], i, j
+                    h__.heappush(heap, (forest[i][j], i, j
         sumVal 0
         x, y 0, 0
         w.... heap:
-            h, i, j heapq.heappop(heap)
+            h, i, j h__.heappop(heap)
             step minStep(forest, x, y, i, j, h, m, n)
             __ step < 0: r.. -1
             sumVal += step

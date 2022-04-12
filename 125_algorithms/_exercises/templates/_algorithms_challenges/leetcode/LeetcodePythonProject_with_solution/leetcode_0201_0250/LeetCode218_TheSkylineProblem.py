@@ -9,7 +9,7 @@ c_ Solution(o..
         :type buildings: List[List[int]]
         :rtype: List[List[int]]
         """
-        _______ heapq
+        _______ h__
         heights    # list
         ___ b __ buildings:
             heights.a..([b[0], -b[2]])
@@ -20,10 +20,10 @@ c_ Solution(o..
         prev 0
         ___ h __ heights:
             __ h[1] < 0:
-                heapq.heappush(heap, h[1])
+                h__.heappush(heap, h[1])
             ____
                 heap.remove(-h[1])
-                heapq.heapify(heap)
+                h__.heapify(heap)
             curr -heap[0]
             __ curr !_ prev:
                 res.a..([h[0], curr])

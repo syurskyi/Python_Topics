@@ -24,7 +24,7 @@ ___ suggest_word(misspelled_word: s.., words: s.. N..) __ s..:
         words load_words()
     
 
-    r.. m..(words,key=l.... x:SequenceMatcher(N..,misspelled_word,x).ratio
+    r.. m..(words,k.._l.... x:SequenceMatcher(N..,misspelled_word,x).ratio
     best_word N..
     highest_ratio f__("-inf")
     ___ word __ words:
