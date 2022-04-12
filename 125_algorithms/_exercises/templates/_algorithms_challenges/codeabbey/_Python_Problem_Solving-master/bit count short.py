@@ -10,7 +10,7 @@ ___ bitCount
 
         data i..(num) % 0x100000000
 
-        bits f..(data, 'b')
+        bits f.. ? 'b')
 
         answer.a..(s..(bits.c.. '1')))
 

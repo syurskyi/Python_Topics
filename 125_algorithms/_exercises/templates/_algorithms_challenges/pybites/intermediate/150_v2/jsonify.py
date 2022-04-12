@@ -24,7 +24,7 @@ ___ convert_to_json(members=members
     data StringIO(members)
 
 
-    data __.r..(data,dtype=s..,sep=r"\,|;|\|")
+    data __.r.. ?dtype=s..,sep=r"\,|;|\|")
     value data.to_json(orient='records')
     r.. value
 

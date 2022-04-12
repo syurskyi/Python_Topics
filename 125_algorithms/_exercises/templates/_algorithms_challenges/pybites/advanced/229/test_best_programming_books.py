@@ -16,7 +16,7 @@ ___ dummy_book
 ?p__.f..(scope="session")
 ___ python_books
     data load_data()
-    __ isi..(data, l..
+    __ isi.. ? l..
         r.. data
     r.. l..(data)
 

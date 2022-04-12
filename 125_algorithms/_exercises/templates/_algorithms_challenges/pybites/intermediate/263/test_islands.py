@@ -32,5 +32,5 @@ circles [[1, 1, 0, 0, 0, 1],
     (bad_map, 0),
     (circles, 1),
 ])
-___ test_count_islands(data, e..
+___ test_count_islands ? e..
     ... count_islands(data) __ e..

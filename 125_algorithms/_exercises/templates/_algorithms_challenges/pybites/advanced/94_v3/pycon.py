@@ -10,7 +10,7 @@ ____ d__ _______ t..
 pkl_file 'pycon_videos.pkl'
 data 'http://projects.bobbelderbos.com/pcc/{}'.f..(pkl_file)
 pycon_videos __.p...j..('/tmp', pkl_file)
-u__.r...u..(data, pycon_videos)
+u__.r...u.. ? pycon_videos)
 
 # the pkl contains a list of Video namedtuples
 Video n..('Video', 'id title duration metrics')

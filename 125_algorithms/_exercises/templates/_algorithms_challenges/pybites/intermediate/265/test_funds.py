@@ -23,5 +23,5 @@ extreme [-1, -2, -3, -4, -5, -1, -2, -3]
     (some, (50,  9, 12,
     (extreme, (0, 0, 0
 ])
-___ test_funds(data, e..
+___ test_funds ? e..
     ... max_fund(data) __ e..

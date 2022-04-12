@@ -13,7 +13,7 @@ ___ calculate_flux(XYZ: s..) __ l..:
 
     data __.r..(XYZ,dtype={'12/31/2020': i..,'12/31/2019': i..})
 
-    data 'dollar_flux'  = data,i..[:,1].sub(data,i..[:,2])
+    data 'dollar_flux'  = data,i..[:,1].sub ?i..[:,2])
     data 'pct_flux'  = data,i..[:,[-2,1]].pct_change(axis=1).dropna(axis=1)
 
 

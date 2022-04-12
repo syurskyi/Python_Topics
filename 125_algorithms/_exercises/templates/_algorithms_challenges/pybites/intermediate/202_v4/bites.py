@@ -8,7 +8,7 @@ tmp  P..(__.g..("TMP", "/tmp"
 stats tmp / 'bites.csv'
 
 __ n.. stats.exists
-    u..(data, stats)
+    u.. ? stats)
 
 
 ___ _bitenum(bite_str

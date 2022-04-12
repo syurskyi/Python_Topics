@@ -6,7 +6,7 @@ c_ TreeNode(o..
 
     ___ -s
         fmt 'TreeNode(data={}, left={}, right={})'
-        r.. fmt.f..(data, left, right)
+        r.. fmt.f.. ? left, right)
 
 
 c_ BinarySearchTree(o..
@@ -17,7 +17,7 @@ c_ BinarySearchTree(o..
 
     ___ add  data
         __ root __ N..
-            root TreeNode(data, N.., N..)
+            root TreeNode ? N.., N..)
             r..
         inserted F..
         cur_node root
@@ -27,13 +27,13 @@ c_ BinarySearchTree(o..
                 __ cur_node.left:
                     cur_node cur_node.left
                 ____
-                    cur_node.left TreeNode(data, N.., N..)
+                    cur_node.left TreeNode ? N.., N..)
                     inserted T..
             ____ data > cur_node.data:
                 __ cur_node.right:
                     cur_node cur_node.right
                 ____
-                    cur_node.right TreeNode(data, N.., N..)
+                    cur_node.right TreeNode ? N.., N..)
                     inserted T..
 
     ___ _inorder_traverse  node, elements

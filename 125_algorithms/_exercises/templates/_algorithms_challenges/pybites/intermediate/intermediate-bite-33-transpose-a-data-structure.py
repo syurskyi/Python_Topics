@@ -17,7 +17,7 @@ It has to work for both dicts and lists of (named)tuples.
 """
 
 
-___ transpose(data
+___ transpose data
     """Transpose a data structure
       1. dict
       data = {'2017-8': 19, '2017-9': 13}

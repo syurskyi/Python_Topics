@@ -28,7 +28,7 @@ c_ Graph(o..
         edges    # list
         attrs    # dict
 
-        __ n.. isi..(data, l..
+        __ n.. isi.. ? l..
             r.. T..("Graph data malformed")
 
         ___ item __ data:

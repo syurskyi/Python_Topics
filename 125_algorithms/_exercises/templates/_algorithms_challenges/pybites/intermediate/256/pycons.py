@@ -107,7 +107,7 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     application/ld+json data structure website data.
     """
 
-    soup Soup(data,'html.parser')
+    soup Soup ?'html.parser')
 
     events soup.find_all('script',attrs={'type': 'application/ld+json'})
 

@@ -120,6 +120,6 @@ __ _______ __ _______
     data process_data(URL)
     summary_report(data)
     ___ year __ (data["month"].dt.year).unique
-        yearly_report(data, year)
+        yearly_report ? year)
 
-    yearly_report(data, 2020)
+    yearly_report ? 2020)

@@ -106,7 +106,7 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     return a list of PyCon namedtuples. Pay attention to the
     application/ld+json data structure website data.
     """
-    soup Soup(data, features='html.parser')
+    soup Soup ? features='html.parser')
     data soup.find_all('script', t..='application/ld+json')
     event_list    # list
     ___ x __ data:

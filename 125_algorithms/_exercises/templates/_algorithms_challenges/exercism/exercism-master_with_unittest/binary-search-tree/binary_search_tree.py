@@ -6,7 +6,7 @@ c_ TreeNode(o..
 
     ___ -s
         fmt 'TreeNode(data={}, left={}, right={})'
-        r.. fmt.f..(data, left, right)
+        r.. fmt.f.. ? left, right)
 
 
 c_ BinarySearchTree(o..

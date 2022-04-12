@@ -106,7 +106,7 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     return a list of PyCon namedtuples. Pay attention to the
     application/ld+json data structure website data.
     """
-    whole_text Soup(data, "html.parser")
+    whole_text Soup ? "html.parser")
     events whole_text.find_all("script", {"type":"application/ld+json"})
     #print(events[0].text.strip())
     pycon_events    # list

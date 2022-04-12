@@ -59,7 +59,7 @@ ___ get_longest_state(data
       of the string"""
    longest_state_len 0
    longest_state ""
-   __ isi..(data, l..
+   __ isi.. ? l..
       ___ state __ data:
          __ l..(state) > longest_state_len:
             longest_state_len l..(state)
