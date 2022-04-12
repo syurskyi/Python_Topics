@@ -28,7 +28,7 @@ ___ get_all_days(start_date: date, end_date: date) __ L..[date]:
 
 ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, date]:
 
-    dates_open_lookup s.. m..(l.... x: d__.s..(x, "%Y-%m-%d").date(), daily_rates
+    dates_open_lookup s.. m..(l.... x: d__.s..(x, "_Y-%m-_d").date(), daily_rates
 
     dates    # dict
     date_diff (end - start).days
@@ -54,10 +54,10 @@ ___ exchange_rates(
     w__ o.. RATES_FILE) __ file:
         data j__.l.. file)
 
-    start d__.s..(start_date, "%Y-%m-%d").date()
-    end d__.s..(end_date, "%Y-%m-%d").date()
+    start d__.s..(start_date, "_Y-%m-_d").date()
+    end d__.s..(end_date, "_Y-%m-_d").date()
 
-    __ start < d__.s..(data["start_at"], "%Y-%m-%d").date() o. end > d__.s..(data["end_at"], "%Y-%m-%d").date
+    __ start < d__.s..(data["start_at"], "_Y-%m-_d").date() o. end > d__.s..(data["end_at"], "_Y-%m-_d").date
         r.. V...("Invalid start date or end date")
 
     dates match_daily_rates(start, end, data["rates"])
@@ -65,7 +65,7 @@ ___ exchange_rates(
     result    # dict
     ___ key, value __ dates.i..:
         temp_dict    # dict
-        date_string value.s..("%Y-%m-%d")
+        date_string value.s..("_Y-%m-_d")
         temp_dict["Base Date"] value
         temp_dict.update(data["rates"][date_string])
         result[key] temp_dict #data["rates"][date_string]

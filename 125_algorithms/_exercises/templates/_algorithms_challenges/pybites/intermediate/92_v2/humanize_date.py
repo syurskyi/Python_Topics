@@ -43,7 +43,7 @@ ___ pretty_date(date
                 r.. time_string
 
         
-    r.. date.s..("%m/%d/%y")
+    r.. date.s..("%m/_d/%y")
 
 
 

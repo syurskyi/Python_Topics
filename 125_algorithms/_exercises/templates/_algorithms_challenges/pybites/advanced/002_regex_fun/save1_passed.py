@@ -16,7 +16,7 @@ ___ extract_course_times(course=COURSE
     """Return the course timings from the passed in
        course string. Timings are in mm:ss (minutes:seconds)
     """
-    m __.c..(r'\d+:\d+')
+    m __.c.. _ \d+:\d+')
     r.. m.f..(course)
 
 
@@ -24,11 +24,11 @@ ___ get_all_hashtags_and_links(tweet=TWEET
     """Get all hashtags and links from the tweet text
        that is passed into this function.
     """
-    m __.c..(r'http\S+|#\w+')
+    m __.c.. _ http\S+|#\w+')
     r.. m.f..(tweet)
 
 
 ___ match_first_paragraph(html=HTML
     """Extract the first paragraph of the passed in html."""
-    m __.c..(r'<p>(.+?)</p>')
+    m __.c.. _ <p>(.+?)</p>')
     r.. m.f..(html)[0]

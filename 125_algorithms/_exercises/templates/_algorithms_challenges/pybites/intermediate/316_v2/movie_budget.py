@@ -39,7 +39,7 @@ ___ rent_or_stream(
 
 
     ___ movie_rented __ renting_history:
-        month movie_rented.date.s..("%Y-%m")
+        month movie_rented.date.s.. _Y-_m
         m[month] += movie_rented.price
     
     

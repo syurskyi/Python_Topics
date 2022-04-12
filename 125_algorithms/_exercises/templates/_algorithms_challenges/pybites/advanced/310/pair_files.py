@@ -15,7 +15,7 @@ ___ pair_files(filenames
     ___ file __ filenames:
         
 
-        m.. __.s..(r'(\S+?_S[1-9][0-9]?_L\d{3})_R[12]_([0-9]{2}[1-9]).fastq.gz$',file,flags=__.I)
+        m.. __.s.. _ (\S+?_S[1-9][0-9]?_L\d{3})_R[12]_([0-9]{2}[1-9]).fastq.gz$',file,flags=__.I)
 
         __ m..:
             first_part m...group(1).l..

@@ -13,7 +13,7 @@ c_ ListNode:
         r.. r.. (val)
 
     ___ -s
-        r.. "%d, %s"%(val, next)
+        r.. "_d, %s"%(val, next)
 
 c_ Solution:
     ___ mergeTwoLists  l1, l2

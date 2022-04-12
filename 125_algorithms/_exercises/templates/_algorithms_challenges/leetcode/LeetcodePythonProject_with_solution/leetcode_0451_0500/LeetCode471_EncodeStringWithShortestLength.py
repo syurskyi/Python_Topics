@@ -12,7 +12,7 @@ c_ Solution(o..
         __ s n.. __ mem:
             n l..(s)
             i (s+s).find(s, 1)
-            one '%d[%s]' % (n/i, encode_short(s[:i] __ i < n ____ s
+            one '_d[%s]' % (n/i, encode_short(s[:i] __ i < n ____ s
             multi [encode(s[:i]) + encode(s[i:]) ___ i __ r..(1, n)]
             mem[s] m..([s, one] + multi, key=l..)
         r.. mem[s]

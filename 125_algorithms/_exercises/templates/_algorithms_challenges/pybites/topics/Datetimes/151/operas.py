@@ -51,7 +51,7 @@ operas [
 
 
 ___ _get_date(date_str
-    r.. d__.date(d__.s..(date_str, "%d %B %Y"
+    r.. d__.date(d__.s..(date_str, "_d %B _Y"
 
 
 ___ operas_both_at_premiere(guest, composer

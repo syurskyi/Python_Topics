@@ -20,7 +20,7 @@ c_ ToxIniParser:
     ___ environments
         """Return a list of environments
            (= "envlist" attribute of [tox] section)"""
-        r.. l..({x ___ x __ __.f..(r'[-\w]+', config 'tox'  'envlist' )})
+        r.. l..({x ___ x __ __.f.. _ [-\w]+', config 'tox'  'envlist' )})
 
     $
     ___ base_python_versions

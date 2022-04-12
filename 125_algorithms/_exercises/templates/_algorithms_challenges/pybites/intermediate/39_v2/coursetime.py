@@ -29,7 +29,7 @@ ___ get_all_timestamps
     course_times    # list
     w__ o.. COURSE_TIMES _ __ f:
         ___ line __ f:
-            result __.s..(r'\((\d+:\d+)\)',line)
+            result __.s.. _ \((\d+:\d+)\)',line)
             __ result:
                 course_times.a..(result.group(1
 

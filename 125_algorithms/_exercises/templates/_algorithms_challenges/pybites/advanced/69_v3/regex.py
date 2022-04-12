@@ -4,17 +4,17 @@ _______ __
 ___ has_timestamp(text
     """Return True if text has a timestamp of this format:
        2014-07-03T23:30:37"""
-    r.. __.s..(r'\d{4}(-\d\d){2}T(\d\d:){2}\d\d', text) __ n.. N..
+    r.. __.s.. _ \d{4}(-\d\d){2}T(\d\d:){2}\d\d', text) __ n.. N..
 
 
 ___ is_integer(number
     """Return True if number is an integer"""
-    r.. __.m..(r'^[-+]?\d+$', s..(number __ n.. N..
+    r.. __.m.. _ ^[-+]?\d+$', s..(number __ n.. N..
 
 
 ___ has_word_with_dashes(text
     """Returns True if text has one or more words with dashes"""
-    r.. __.s..(r'\b(\w+-)+\w+\b', text) __ n.. N..
+    r.. __.s.. _ \b(\w+-)+\w+\b', text) __ n.. N..
 
 
 ___ remove_all_parenthesis_words(text
@@ -28,7 +28,7 @@ ___ split_string_on_punctuation(text
     """Split on ?!.,; - e.g. "hi, how are you doing? blabla" ->
        ['hi', 'how are you doing', 'blabla']
        (make sure you strip trailing spaces)"""
-    r.. l..(f.. N.., __.s..(r'[?!.,;] *', text)))
+    r.. l..(f.. N.., __.s.. _ [?!.,;] *', text)))
 
 
 ___ remove_duplicate_spacing(text
@@ -38,7 +38,7 @@ ___ remove_duplicate_spacing(text
 
 ___ has_three_consecutive_vowels(word
     """Returns True if word has at least 3 consecutive vowels"""
-    r.. __.s..(r'[aeiou]{3}', word, __.IGNORECASE)
+    r.. __.s.. _ [aeiou]{3}', word, __.IGNORECASE)
 
 
 ___ convert_emea_date_to_amer_date(date

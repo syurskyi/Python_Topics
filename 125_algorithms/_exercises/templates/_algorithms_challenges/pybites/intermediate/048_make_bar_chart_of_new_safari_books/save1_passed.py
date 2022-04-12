@@ -9,10 +9,10 @@ ___ create_chart
 
     books    # list
     ___ i, line __ e..(paragraphs
-        regex __.c..(r'- sending to slack channel')
+        regex __.c.. _ - sending to slack channel')
         __ regex.s..(line
             matches paragraphs[i-1]
-            python_books __.c..(r'Python')
+            python_books __.c.. _ Python')
             __ python_books.s..(matches
                 info matches.s.. [0], '🐍'
                 books.a..(info)

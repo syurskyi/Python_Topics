@@ -41,7 +41,7 @@ ___ get_most_popular_talks_by_like_ratio(videos
     r.. s..(videos, key=_like_ratio)
 
 
-duration_regex __.c..(r'PT(?:(?P<hrs>\d+)H)?(?:(?P<mins>\d+)M)?(?:(?P<secs>\d+)S)?')
+duration_regex __.c.. _ PT(?:(?P<hrs>\d+)H)?(?:(?P<mins>\d+)M)?(?:(?P<secs>\d+)S)?')
 
 
 ___ _vid_time(vid

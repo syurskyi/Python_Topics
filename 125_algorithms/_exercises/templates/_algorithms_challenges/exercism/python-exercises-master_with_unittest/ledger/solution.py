@@ -73,7 +73,7 @@ c_ LCInfo(o..
 
 ___ create_entry(date, description, change
     r.. (
-        d__.s..(date, '%Y-%m-%d'),
+        d__.s..(date, '_Y-%m-_d'),
         change,
         description
     )

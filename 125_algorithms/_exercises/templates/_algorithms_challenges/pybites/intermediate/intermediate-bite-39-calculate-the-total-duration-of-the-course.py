@@ -30,7 +30,7 @@ ___ get_all_timestamps
     w__ o.. COURSE_TIMES, _ __ f:
         result    # list
         ___ line __ f:
-            timestamp __.f..(r'(\d{1,2}:\d{1,2})', line)
+            timestamp __.f.. _ (\d{1,2}:\d{1,2})', line)
             __ timestamp:
                 result.a..(timestamp 0
         print(result)

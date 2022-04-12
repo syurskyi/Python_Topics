@@ -31,7 +31,7 @@ ___ get_most_common_domains(emails, common_domains_ N..
 
     l    # list
     ___ email __ emails:
-        m.. __.f..(r'@(\w+.\w+)', email)[0]
+        m.. __.f.. _ @(\w+.\w+)', email)[0]
         __ m.. n.. __ get_common_domains
             l.a..(m..)
 

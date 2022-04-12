@@ -7,7 +7,7 @@
 #
 # ___ get_hundred_days_end_date
 #     """Return a string of yyyy-mm-dd"""
-#     r..  ? + t.. d.._100 .s.. '%Y-%m-%d'
+#     r..  ? + t.. d.._100 .s.. '_Y-%m-_d'
 #
 #
 # ___ get_days_between_pb_start_first_joint_pycon

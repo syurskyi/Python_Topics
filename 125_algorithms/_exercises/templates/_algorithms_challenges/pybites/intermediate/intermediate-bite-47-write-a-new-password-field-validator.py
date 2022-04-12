@@ -22,11 +22,11 @@ ___ validate_password_1(password
 ___ validate_password_2(password
     __ l..(password) < 6 o. l..(password) > 12:
         r.. F..
-    __ n.. __.s..(r'[0-9]', password
+    __ n.. __.s.. _ [0-9]', password
         r.. F..
-    __ n.. __.s..(r'[a-z]', password
+    __ n.. __.s.. _ [a-z]', password
         r.. F..
-    __ n.. __.s..(r'[A-Z]', password
+    __ n.. __.s.. _ [A-Z]', password
         r.. F..
     __ n.. any(elem __ password ___ elem __ PUNCTUATION_CHARS
         r.. F..

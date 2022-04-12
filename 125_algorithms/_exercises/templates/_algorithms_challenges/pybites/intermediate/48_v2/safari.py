@@ -27,7 +27,7 @@ ___ create_chart
                         print()
                     current_date date
                     print(date,end=' ')
-                __ __.s..(r'python',previous_line,flags=__.I
+                __ __.s.. _ python',previous_line,flags=__.I
                     char PY_BOOK
                 ____
                     char OTHER_BOOK

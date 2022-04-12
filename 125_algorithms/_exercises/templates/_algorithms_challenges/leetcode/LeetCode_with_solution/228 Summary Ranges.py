@@ -22,18 +22,18 @@ c_ Solution:
         ___ i __ x..(1, n
             __ nums[i] !_ pre+1:
                 __ pre !_ bgn:
-                    ret.a..("%d->%d"%(bgn, pre
+                    ret.a..("_d->_d"%(bgn, pre
                 ____
-                    ret.a..("%d"%bgn)
+                    ret.a..("_d"%bgn)
                 bgn nums[i]
 
             pre nums[i]
 
         # clean up
         __ pre !_ bgn:
-            ret.a..("%d->%d"%(bgn, pre
+            ret.a..("_d->_d"%(bgn, pre
         ____
-            ret.a..("%d"%bgn)
+            ret.a..("_d"%bgn)
 
         r.. ret
 

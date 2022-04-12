@@ -85,7 +85,7 @@ ___ generate_enchantments(soup
                 ____
                     valid_items.a..(item)
                                                
-        id_name __.s..(r'\((.+)\)',values 0.group(1)
+        id_name __.s.. _ \((.+)\)',values 0.group(1)
         name= __.s.. _ \(.+\)','',values[0])
         level i..(mapping[values[1]])
         description values[2]

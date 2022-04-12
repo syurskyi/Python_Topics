@@ -21,7 +21,7 @@ ___ get_bite_with_fastest_avg_test(timings: l..) __ s..:
 
 
     ___ timing __ timings:
-        print(__.f..(r'[\d\.]+',timing
+        print(__.f.. _ [\d\.]+',timing
         _____
 
 

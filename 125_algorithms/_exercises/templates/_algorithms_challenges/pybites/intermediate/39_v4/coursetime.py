@@ -28,7 +28,7 @@ ___ get_all_timestamps
     w__ o.. COURSE_TIMES, _ __ f:
         text f.r..
 
-    r.. __.f..(r'\d*:*\d*:\d{2}', text, flags=__.MULTILINE)
+    r.. __.f.. _ \d*:*\d*:\d{2}', text, flags=__.MULTILINE)
 
 
 ___ calc_total_course_duration(timestamps

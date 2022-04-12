@@ -28,7 +28,7 @@ ___ get_all_timestamps
     w__ o.. COURSE_TIMES) __ f:
         file f.r..
 
-    r __.c..(r'\(\d+:\d+\)')
+    r __.c.. _ \(\d+:\d+\)')
 
     l    # list
     ___ t __ file:
@@ -43,7 +43,7 @@ ___ get_all_timestamps
 ___ calc_total_course_duration(timestamps
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
-    l [d__.s..(date, '%M:%S') ___ date __ timestamps]
+    l [d__.s..(date, '_M:_S') ___ date __ timestamps]
     
     deltas [t..(seconds=t.second, minutes=t.minute)
               ___ t __ l]

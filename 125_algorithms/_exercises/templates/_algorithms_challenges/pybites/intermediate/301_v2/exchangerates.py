@@ -83,7 +83,7 @@ ___ exchange_rates(
 
     result    # dict
     ___ date_1,date_2 __ matching_dates.i..:
-        date date_2.s..("%Y-%m-%d")
+        date date_2.s..("_Y-%m-_d")
         value {'Base Date': date_2,'USD': data 'rates' [date] 'USD' ,'GBP': data 'rates' [date] 'GBP' }
         result[date_1] value
 

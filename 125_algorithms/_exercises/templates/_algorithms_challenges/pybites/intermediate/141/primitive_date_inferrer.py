@@ -18,7 +18,7 @@ c_ DateFormat(E..
             for all supported date formats in this enum
         2. for val=n an explicit format string for a given enum member value
         """
-        d_parse_formats ["%d/%m/%y", "%m/%d/%y", "%y/%m/%d"]
+        d_parse_formats ["_d/%m/%y", "%m/_d/%y", "%y/%m/_d"]
         __ val __ N..
             r.. d_parse_formats
         __ 0 <_ val <_ l..(d_parse_formats
@@ -87,7 +87,7 @@ ___ get_dates(dates
     result    # list
     ___ date __ dates:
         ___
-            date d__.s..(date,max_frequency).s..("%Y-%m-%d")
+            date d__.s..(date,max_frequency).s..("_Y-%m-_d")
             result.a..(date)
         ______:
             result.a..("Invalid")

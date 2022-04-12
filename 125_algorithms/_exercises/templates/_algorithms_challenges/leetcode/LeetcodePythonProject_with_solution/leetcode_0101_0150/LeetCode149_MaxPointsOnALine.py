@@ -48,7 +48,7 @@ c_ Solution(o..
     
     ___ gcd  a, b
         __ b __ 0: r.. a
-        r.. gcd(b, a%b)
+        r.. gcd(b, a_b)
     
     ___ maxPoints_slope  points
         """

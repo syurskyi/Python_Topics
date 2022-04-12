@@ -31,8 +31,8 @@ ___ get_top_titles(url, top=5
 
     ___ entry __ soup.findAll('span', attrs={'class': 'smaller'}
         entry entry.get_text().s..
-        points __.s..(r'(\d*) points', entry)
-        comments __.s..(r'(\d*) comments', entry)
+        points __.s.. _ (\d*) points', entry)
+        comments __.s.. _ (\d*) comments', entry)
         __ points:
             point_list.a..(i..(points.group(1)))
         __ comments:

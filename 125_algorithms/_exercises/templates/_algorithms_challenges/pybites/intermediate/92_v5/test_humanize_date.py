@@ -6,7 +6,7 @@ ____ humanize_date _______ pretty_date, NOW
 
 
 ___ n_days_ago_str(days
-    r.. (NOW - t..(d.._days.s..('%m/%d/%y')
+    r.. (NOW - t..(d.._days.s..('%m/_d/%y')
 
 
 ?p__.m__.p.("arg, expected", [

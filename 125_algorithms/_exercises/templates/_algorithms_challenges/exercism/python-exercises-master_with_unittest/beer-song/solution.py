@@ -34,7 +34,7 @@ ___ _bottles(number
     __ number __ 1:
         r.. '1 bottle'
     ____
-        r.. '%d bottles' % number
+        r.. '_d bottles' % number
 
 
 ___ _next_verse(current_verse

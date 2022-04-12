@@ -54,7 +54,7 @@ ___ _convert_struct_time_to_dt(stime
     -> date(2016, 12, 28)
     """
     __ t..(stime) __ s..:
-        f.. '%a, %d %b %Y %H:%M:%S %z'
+        f..  _a, _d _b _Y _H|_M:_S _z'
         dt_object d__.s..(stime, f..)
         r.. dt_object.date()
     ____
@@ -90,13 +90,13 @@ ___ filter_entries_by_tag(s.., entry
     """
     s.. s...l..
     tag_list [tag ___ tag __ entry.tags]
-    __ n.. __.s..(r'\|', s..) a.. n.. __.s..(r'\&', s..
+    __ n.. __.s.. _ \|', s..) a.. n.. __.s.. _ \&', s..
         r.. s.. __ tag_list
-    __ __.s..(r'\|', s..
-        s.. __.s..(r'\|', s..)
+    __ __.s.. _ \|', s..
+        s.. __.s.. _ \|', s..)
         r.. any([item __ tag_list ___ item __ s..])
-    __ __.s..(r'\&', s..
-        s.. __.s..(r'\&', s..)
+    __ __.s.. _ \&', s..
+        s.. __.s.. _ \&', s..)
         r.. a..([item __ tag_list ___ item __ s..])
     r.. s..
 

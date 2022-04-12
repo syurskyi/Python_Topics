@@ -39,12 +39,12 @@ ___ get_all_timestamps
 ___ calc_total_course_duration(timestamps
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
-    dt_conversion [d__.s..(ts, '%M:%S') ___ ts __ timestamps]
+    dt_conversion [d__.s..(ts, '_M:_S') ___ ts __ timestamps]
     baseline d__(1900, 1, 1, 0, 0, 0)
     ___ course_dt __ dt_conversion:
         baseline baseline + t..(minutes=course_dt.minute, seconds=course_dt.second)
 
-    r.. baseline.s..('%-H:%M:%S')
+    r.. baseline.s..('%-H:_M:_S')
 
 
 #if __name__ == "__main__":

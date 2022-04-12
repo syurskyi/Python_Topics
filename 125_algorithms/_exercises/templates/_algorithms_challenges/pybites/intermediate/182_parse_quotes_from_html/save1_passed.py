@@ -28,7 +28,7 @@ HTML """<!DOCTYPE html>
 
 ___ extract_quotes(html: s.. HTML) __ d..:
     d    # dict
-    m.. __.f..(r'<p>\d+.\s"(.*)"\s-\s(.*)</p>', html)
+    m.. __.f.. _ <p>\d+.\s"(.*)"\s-\s(.*)</p>', html)
     ___ quote, author __ m..:
         d[author] quote
     r.. d

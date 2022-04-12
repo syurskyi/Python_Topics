@@ -49,9 +49,9 @@ ___ sort_books_by_number_of_page(books=books
 
 
 ___ sort_books_by_published_date(books=books
-    date_list [d__.s..(entry.published, '%Y-%m-%d')
+    date_list [d__.s..(entry.published, '_Y-%m-_d')
                  ___ entry __ books]
     l_pub s..(date_list, r.._T..[0]
     r.. ''.j..([t.title
                     ___ t __ books
-                    __ t.published __ d__.s..(l_pub, '%Y-%m-%d')])
+                    __ t.published __ d__.s..(l_pub, '_Y-%m-_d')])

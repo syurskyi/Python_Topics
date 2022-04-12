@@ -28,12 +28,12 @@ ___ sysinfo_scrape ?
     
     lines output.s..
 
-    name __.s..(r'\S+$',lines[1]).group()
+    name __.s.. _ \S+$',lines[1]).group()
     mapping 'Name'  = name
     ___ i __ r..(2,l..(lines:
         line lines[i]
 
-        result __.s..(r'(\S+\s{0,1}\S+):(?!.*:)\s(.+)$',line)
+        result __.s.. _ (\S+\s{0,1}\S+):(?!.*:)\s(.+)$',line)
 
         __ result:
             key result.group(1)

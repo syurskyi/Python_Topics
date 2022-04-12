@@ -21,7 +21,7 @@ c_ Interval(o..
         end e
 
     ___ -s
-        r.. "[%d, %d]" % (start, end)
+        r.. "[_d, _d]" % (start, end)
 
     ___  -r
         r.. r.. (-s

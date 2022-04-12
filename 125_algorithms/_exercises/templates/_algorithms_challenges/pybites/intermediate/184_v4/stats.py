@@ -48,11 +48,11 @@ c_ BiteStats:
         """Get the Bite that got accessed the most
            (= in most rows)"""
         counts C..([bite 'bite'  ___ bite __ rows])
-        r.. counts.most_common 1 0 0
+        r.. ?.m.. 1 0 0
 
     $
     ___ top_user_by_bites_completed(self) __ s..:
         """Get the user that completed the most Bites"""
         counts C..([bite 'user'  ___ bite __ rows
                          __ bite 'completed'  __ 'True' )
-        r.. counts.most_common 1 0 0
+        r.. ?.m.. 1 0 0

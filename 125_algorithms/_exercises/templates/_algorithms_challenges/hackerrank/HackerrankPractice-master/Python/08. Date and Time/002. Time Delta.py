@@ -4,7 +4,7 @@
 
 ____ d__ _______ d__ __ dt
 
-fmt  '%a %d %b %Y %H:%M:%S %z'
+fmt   _a _d _b _Y _H|_M:_S _z'
 ___ _ __ r..(i..(input())):
     time1  dt.s..(input(), fmt)
     time2  dt.s..(input(), fmt)

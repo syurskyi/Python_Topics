@@ -12,8 +12,8 @@ ___ helper(g
 
 
 ___ d.. s__
-    groups __.f..(r'(\d*\D{1})', s__)
-    pairs [[__.m..(r'\d*', g).group(), g[-1]] ___ g __ groups]
+    groups __.f.. _ (\d*\D{1})', s__)
+    pairs [[__.m.. _ \d*', g).group(), g[-1]] ___ g __ groups]
 
     # Fix hardcoded 0 and 1 indices
     # Also change name of x variable

@@ -11,7 +11,7 @@ c_ Codec(o..
         :type strs: List[str]
         :rtype: str
         """
-        r.. ''.j..('%d:%s' % (l..(s), s) ___ s __ strs)
+        r.. ''.j..('_d:%s' % (l..(s), s) ___ s __ strs)
     
     ___ decode  s
         """Decodes a single string to a list of strings.

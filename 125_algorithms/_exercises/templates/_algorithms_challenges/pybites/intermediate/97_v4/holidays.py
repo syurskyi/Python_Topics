@@ -22,7 +22,7 @@ holidays d..(l..)
 
 ___ _parse_date(date: s..
     """returns a datetime from parsing dates as formatted in table"""
-    r.. d__.s..(date.s.. [0], '%Y-%m-%d%B')
+    r.. d__.s..(date.s.. [0], '_Y-%m-_d%B')
 
 
 ___ _get_table(content=content) __ l..:

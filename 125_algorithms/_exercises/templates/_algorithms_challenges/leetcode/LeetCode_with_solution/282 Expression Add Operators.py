@@ -40,11 +40,11 @@ c_ Solution(o..
                 nxt_val i..(num[pos:i+1])
 
                 __ n.. cur_str:
-                    dfs(num, target, i+1, "%d"%nxt_val, nxt_val, nxt_val, ret)
+                    dfs(num, target, i+1, "_d"%nxt_val, nxt_val, nxt_val, ret)
                 ____
-                    dfs(num, target, i+1, cur_str+"+%d"%nxt_val, cur_val+nxt_val, nxt_val, ret)
-                    dfs(num, target, i+1, cur_str+"-%d"%nxt_val, cur_val-nxt_val, -nxt_val, ret)
-                    dfs(num, target, i+1, cur_str+"*%d"%nxt_val, cur_val-mul+mul*nxt_val, mul*nxt_val, ret)
+                    dfs(num, target, i+1, cur_str+"+_d"%nxt_val, cur_val+nxt_val, nxt_val, ret)
+                    dfs(num, target, i+1, cur_str+"-_d"%nxt_val, cur_val-nxt_val, -nxt_val, ret)
+                    dfs(num, target, i+1, cur_str+"*_d"%nxt_val, cur_val-mul+mul*nxt_val, mul*nxt_val, ret)
 
 
 __ _______ __ _______

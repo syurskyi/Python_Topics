@@ -23,7 +23,7 @@ ___ get_most_complex_bites(N=10, stats=stats
     bites.Difficulty pd.to_numeric(bites.Difficulty,errors='coerce')
 
 
-    r.. l..(bites.nlargest(N,'Difficulty') 'Bite' .s...extract(r'(\d+)',expand=F..
+    r.. l..(bites.nlargest(N,'Difficulty') 'Bite' .s...extract _ (\d+)',expand=F..
 
 
 

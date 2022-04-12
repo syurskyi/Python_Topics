@@ -28,10 +28,10 @@ ___ get_email_details(header: s..) __ d..:
 
 
     ___
-        from_ __.s..(r'^From: (.+)',header,flags=__.MULTILINE).group(1).s..
-        to __.s..(r'^To: (.+)',header,flags=__.MULTILINE).group(1).s..
-        subject __.s..(r'^Subject: (.+)',header,flags=__.MULTILINE).group(1).s..
-        date __.s..(r'^Date: (.+) (?:\+|\-)',header,flags=__.MULTILINE).group(1).s..
+        from_ __.s.. _ ^From: (.+)',header,flags=__.MULTILINE).group(1).s..
+        to __.s.. _ ^To: (.+)',header,flags=__.MULTILINE).group(1).s..
+        subject __.s.. _ ^Subject: (.+)',header,flags=__.MULTILINE).group(1).s..
+        date __.s.. _ ^Date: (.+) (?:\+|\-)',header,flags=__.MULTILINE).group(1).s..
     ______:
         r..
     ____

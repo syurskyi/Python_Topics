@@ -4,12 +4,12 @@ _______ __
 ___ is_valid_ip(s
 
 
-    r.. __.s..(r'^"\d+\.\d+\.\d+\.\d+"$',s) __ n.. N..
+    r.. __.s.. _ ^"\d+\.\d+\.\d+\.\d+"$',s) __ n.. N..
 
 
 ___ is_valid_number(s
 
-    r.. __.s..(r'^\d+$',s) __ n.. N..
+    r.. __.s.. _ ^\d+$',s) __ n.. N..
 
 ___ extract_ipv4(data
     """

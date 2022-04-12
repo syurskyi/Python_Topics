@@ -1,7 +1,7 @@
 _______ __
 
 ___ split_words_and_quoted_text(text
-    m __.s..(r'"(.*?)"', text)
+    m __.s.. _ "(.*?)"', text)
     m_list [w ___ w __ m.group(1).s.. ]
     l    # list
     ___ word __ text.r..('"', '').s.. :

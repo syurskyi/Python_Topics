@@ -8,8 +8,8 @@ TODAY date(2018, 11, 12)
 
 ___ extract_dates(data
     """Extract unique dates from DB table representation as shown in Bite"""
-    dates __.f..(r' (\d{4}-\d\d-\d\d) ', data)
-    r.. s..(d__.s..(d, '%Y-%m-%d').date() ___ d __ dates)
+    dates __.f.. _  (\d{4}-\d\d-\d\d) ', data)
+    r.. s..(d__.s..(d, '_Y-%m-_d').date() ___ d __ dates)
 
 
 ___ calculate_streak(dates

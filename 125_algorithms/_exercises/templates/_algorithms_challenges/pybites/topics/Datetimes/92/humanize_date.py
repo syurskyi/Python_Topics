@@ -28,7 +28,7 @@ ___ pretty_date(date
                 elapsed elapsed/timeoffset.divider
             elapsed i..(elapsed)
             r.. timeoffset.date_str.f..(elapsed)
-    r.. date.s..("%m/%d/%y")
+    r.. date.s..("%m/_d/%y")
 
 
 dt d__.n.. - t..(d.._2, hours=22, minutes=14, seconds=15)

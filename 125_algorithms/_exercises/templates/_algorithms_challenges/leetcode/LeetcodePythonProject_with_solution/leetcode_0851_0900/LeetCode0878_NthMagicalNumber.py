@@ -13,7 +13,7 @@ c_ Solution(o..
         """
         n, a, b N, A, B
         w.... b:
-            a, b b, a%b
+            a, b b, a_b
         l, r, lcm 2, 10**14, A*B // a
         w.... l < r:
             m (l+r)//2

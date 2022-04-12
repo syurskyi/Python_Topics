@@ -50,7 +50,7 @@ ___ check_italic(line
 ___ parse_line(line, in_list
     res check_headers(line)
 
-    list_match __.m..(r'\* (.*)', res)
+    list_match __.m.. _ \* (.*)', res)
 
     __ (list_match
         __ n.. in_list:

@@ -12,7 +12,7 @@ ___ test_years_ago
 
 ___ test_years_ago_wrong_input
     w__ p__.r..(V...
-        # Sept != valid %b value 'Sep'
+        # Sept != valid _b value 'Sep'
         ... years_ago('6 Sept, 2014') __ 4
 
 

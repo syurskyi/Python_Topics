@@ -5,7 +5,7 @@ _______ i..
 ____ u__.r.. _______ u..
 
 # prep
-TAG_HTML __.c..(r'<category>([^<]+)</category>')
+TAG_HTML __.c.. _ <category>([^<]+)</category>')
 TMP __.g.. TMP  /tmp
 TEMPFILE __.p...j..(TMP, 'feed')
 MIN_TAG_LEN 10

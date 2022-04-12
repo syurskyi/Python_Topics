@@ -15,7 +15,7 @@ ___ make_html_links
             link_name link_name.s..
 
 
-            domain __.s..(r'https?//(.+?)/').group(1)
+            domain __.s.. _ https?//(.+?)/').group(1)
             __ domain n.. __ INTERNAL_LINKS:
                 add_target T..
             ____

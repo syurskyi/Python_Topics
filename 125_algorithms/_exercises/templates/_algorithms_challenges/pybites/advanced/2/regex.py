@@ -32,7 +32,7 @@ ___ get_all_hashtags_and_links(tweet=TWEET
         '#APIs']
        Return this list.
     """
-    r.. __.f..(r'\#\S+|http\S+',tweet)
+    r.. __.f.. _ \#\S+|http\S+',tweet)
 
 
 ___ match_first_paragraph(html=HTML

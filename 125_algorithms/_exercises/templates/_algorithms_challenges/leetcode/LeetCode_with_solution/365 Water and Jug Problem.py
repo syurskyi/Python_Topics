@@ -41,6 +41,6 @@ c_ Solution(o..
 
     ___ gcd  a, b
         w.... b:
-            a, b b, a%b
+            a, b b, a_b
         r.. a
 

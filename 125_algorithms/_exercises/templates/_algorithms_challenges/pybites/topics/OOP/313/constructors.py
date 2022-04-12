@@ -11,7 +11,7 @@ c_ Domain:
         # validate a current domain (r'.*\.[a-z]{2,3}$' is fine)
         # if not valid, raise a DomainException
         name name
-        __ n.. __.m..(r'.*\.[a-z]{2,3}$', name
+        __ n.. __.m.. _ .*\.[a-z]{2,3}$', name
             r.. DomainException
         
     # next add a __str__ method and write 2 class methods
@@ -25,7 +25,7 @@ c_ Domain:
 
     @classmethod
     ___ parse_email(cls, email
-        email_domain __.f..(r'@(.*\.[a-z]+)', email)
+        email_domain __.f.. _ @(.*\.[a-z]+)', email)
         r.. Domain(email_domain 0
 
     ___ -s(self) __ s..:

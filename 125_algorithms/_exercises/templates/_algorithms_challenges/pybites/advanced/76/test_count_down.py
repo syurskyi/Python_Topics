@@ -35,7 +35,7 @@ ___ test_count_down_good_inputs(input_argument, capfd
 ?p__.m__.p.("input_argument", [
     compress([1, 2, 3, 4], [1, 1, 1, 1]),
     d__(2018, 4, 21),
-    __.c..(r'\d{4}'),
+    __.c.. _ \d{4}'),
 ])
 ___ test_count_down_bad_inputs(input_argument, capfd
     w__ p__.r..(V...

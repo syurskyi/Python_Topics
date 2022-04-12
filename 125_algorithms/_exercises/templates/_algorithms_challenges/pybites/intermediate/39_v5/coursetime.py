@@ -22,7 +22,7 @@ ___ get_all_timestamps
     result    # list
     w__ o.. COURSE_TIMES) __ ct:
         ___ line __ ct.r..
-            times __.f..(r'\((\d\d?:\d\d)\)', line)
+            times __.f.. _ \((\d\d?:\d\d)\)', line)
             __ l..(times) > 0:
                 result.a..(times 0
     r.. result
@@ -33,5 +33,5 @@ ___ calc_total_course_duration(timestamps
        and calculates the total duration as HH:MM:SS"""
     total_time s..(t..(minutes=xt.minute, seconds=xt.second).total_seconds()
                      ___ t __ timestamps
-                     ___ xt __ [d__.s..(t, '%M:%S')])
+                     ___ xt __ [d__.s..(t, '_M:_S')])
     r.. s..(t..(seconds=total_time

@@ -17,6 +17,6 @@ id,first_name,last_name,email
 
 
 ___ convert_to_json(members=members
-    r __.c..(r'(?P<id>\d+)[,|;](?P<first_name>\w+)[,|;](?P<last_name>\w+)[,|;](?P<email>.*)')
+    r __.c.. _ (?P<id>\d+)[,|;](?P<first_name>\w+)[,|;](?P<last_name>\w+)[,|;](?P<email>.*)')
     result [r.m..(line).groupdict() ___ line __ members.s..k.._F..)[2:]]
     r.. j__.d..result)

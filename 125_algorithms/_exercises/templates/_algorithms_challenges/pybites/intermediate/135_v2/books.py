@@ -63,4 +63,4 @@ ___ sort_books_by_published_date(books=books
     Expected last book in list:
     Python Interviews
     """
-    r.. s..(books,key=l.... x:d__.s..(x.published,"%Y-%m-%d"
+    r.. s..(books,key=l.... x:d__.s..(x.published,"_Y-%m-_d"

@@ -33,7 +33,7 @@ c_ Solution(o..
         r.. diff_ways(input)
 
     ___ calculate  a, b, operator
-        r.. eval('%d %s %d' % (a, operator, b
+        r.. eval('_d %s _d' % (a, operator, b
 
     ___ diff_ways  inp
         __ n.. inp:

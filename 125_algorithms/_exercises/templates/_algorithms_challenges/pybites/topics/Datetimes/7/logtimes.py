@@ -27,7 +27,7 @@ ___ convert_to_datetime(line
        datetime(2014, 7, 3, 23, 27, 51)
     """
     log_fields line.s..
-    r.. d__.s..(log_fields[1], "%Y-%m-%dT%H:%M:%S")
+    r.. d__.s..(log_fields[1], "_Y-%m-%dT_H|_M:_S")
 
 
 ___ time_between_shutdowns(loglines

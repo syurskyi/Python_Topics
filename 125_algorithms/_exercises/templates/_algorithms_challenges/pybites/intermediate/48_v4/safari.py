@@ -19,8 +19,8 @@ ___ _parse_book_line(line
     """returns a dict representing the line"""
     out_dict d..()
     date __.f.. _*_ 0-9]{2}-[0-9]{2})', line)[0]
-    out_dict 'date'  = d__.s..(date, '%m-%d')
-    out_dict 'title'  = __.f..(r'DEBUG.*- (.*)', line)[0]
+    out_dict 'date'  = d__.s..(date, '%m-_d')
+    out_dict 'title'  = __.f.. _ DEBUG.*- (.*)', line)[0]
     r.. out_dict
 
 
@@ -38,4 +38,4 @@ ___ create_chart
             prev line
 
     ___ key __ s..(chart.k..
-        print('{} {}'.f..(key.s..('%m-%d'), chart[key]
+        print('{} {}'.f..(key.s..('%m-_d'), chart[key]

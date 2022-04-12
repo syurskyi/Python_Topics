@@ -27,10 +27,10 @@ ___ sysinfo_scrape ?
     w.... lines[0] __ '':
         lines.p.. 0)
     line lines[0][::-1]
-    info_col l..(line) - __.s..(r' ', line).start()
+    info_col l..(line) - __.s.. _  ', line).start()
     results {'Name': lines[0][info_col:]}
     ___ line __ lines[1:]:
-        s.. __.s..(r'(?P<key>[\w ]+): (?P<value>.*)$', line[info_col:])
+        s.. __.s.. _ (?P<key>[\w ]+): (?P<value>.*)$', line[info_col:])
         __ s..:
             grp s...groupdict()
             results[grp 'key']] grp 'value'

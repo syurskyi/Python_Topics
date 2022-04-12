@@ -20,9 +20,9 @@ w__ o.. commits) __ f:
     ___ line __ f:
         #print(line)
         date, commit  = line.s..(' | ')
-        date_time_obj d__. s..(date[12:], '%b %d %H:%M:%S %Y %z')
-        dt_yr date_time_obj.s..("%Y")
-        year_month date_time_obj.s..("%Y-%m")
+        date_time_obj d__. s..(date[12:], '_b _d _H|_M:_S _Y _z')
+        dt_yr date_time_obj.s..("_Y")
+        year_month date_time_obj.s.. _Y-_m
         __ year_argument __ 'None' o. dt_yr __ year_argument:
             commit_list commit.s..
             __ l..(commit_list) __ 7:

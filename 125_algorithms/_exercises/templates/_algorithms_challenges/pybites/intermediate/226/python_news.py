@@ -31,7 +31,7 @@ ___ get_top_titles(url, top=5
     rows soup.find_all("tr",id=T..)
     
 
-    get_number l.... s: i..(__.s..(r'\d+',s).group
+    get_number l.... s: i..(__.s.. _ \d+',s).group
 
 
     ___ row __ rows:

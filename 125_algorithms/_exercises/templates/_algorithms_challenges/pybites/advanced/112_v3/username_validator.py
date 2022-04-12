@@ -26,7 +26,7 @@ ___ parse_social_platforms_string
     """Convert the social_platforms string above into a dict where
        keys = social platformsname and values = validator namedtuples"""
     result d..()
-    plat __.f..(r'(\w+)\s+Min: (\d+)\s+Max: (\d+)\s+Can contain: ([^\r\n]+)', social_platforms)
+    plat __.f.. _ (\w+)\s+Min: (\d+)\s+Max: (\d+)\s+Can contain: ([^\r\n]+)', social_platforms)
     ___ p __ plat:
         result[p[0]] Validator(r..(i..(p[1]), i..(p[2], __.c..(rf'^[{__.sub(r" ", "", p[3])}]*$'
     r.. result

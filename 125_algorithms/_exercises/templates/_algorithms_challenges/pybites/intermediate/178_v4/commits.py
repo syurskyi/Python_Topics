@@ -20,8 +20,8 @@ ___ _parse_line(line: s..) __ d..:
     date p..(__.s.. _ Date:[ ]+', '', d_str.date()
 
     # add insertions and deletions
-    insertions __.f..(r'([0-9]+) insertions', all_changes)
-    deletions __.f..(r'([0-9]+) deletions', all_changes)
+    insertions __.f.. _ ([0-9]+) insertions', all_changes)
+    deletions __.f.. _ ([0-9]+) deletions', all_changes)
     changes i..(insertions 0 __ insertions ____ 0
     changes += i..(deletions 0 __ deletions ____ 0
     r.. {'date': date, 'changes': changes}
@@ -43,7 +43,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. commits,
         ___ line __ f:
             dat _parse_line(line)
             __ dat 'date' .year __ year o. year __ N..
-                commits.update({dat 'date' .s..('%Y-%m' dat 'changes' })
+                commits.update({dat 'date' .s..('_Y-%m' dat 'changes' })
 
     m.. commits.most_common 1 0 0
     m.. commits.m..[-1][0]

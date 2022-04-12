@@ -5,7 +5,7 @@ ____ i.. _______ permutations
 ____ u__.r.. _______ u..
 
 # prep
-TAG_HTML __.c..(r'<category>([^<]+)</category>')
+TAG_HTML __.c.. _ <category>([^<]+)</category>')
 TEMPFILE __.p...j..('/tmp', 'feed')
 MIN_TAG_LEN 10
 IDENTICAL 1.0

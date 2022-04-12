@@ -24,7 +24,7 @@ ___ get_num_words_spoken_by_character_per_episode(content
     next(rows)                  # skip header
     ___ row __ rows:
         epi, char, line row[1:]
-        num_words l..(__.f..(r'(\S+)', line
+        num_words l..(__.f.. _ (\S+)', line
         words_spoken[char].update({epi: num_words})
 
     r.. words_spoken

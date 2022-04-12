@@ -62,4 +62,4 @@ ___ sort_books_by_published_date(books=books
     """
     r.. s..(books,
                   key=l.... x: d__.s..(x.published,
-                                                  '%Y-%m-%d'
+                                                  '_Y-%m-_d'

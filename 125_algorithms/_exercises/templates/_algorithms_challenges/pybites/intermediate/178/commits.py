@@ -42,12 +42,12 @@ ___ get_min_max_amount_of_commits(commit_log: s.. commits,
                 __ date.year > year:
                     _____
 
-            numbers __.f..(r'(\d+) (?:insertions|deletions)',change_section)
+            numbers __.f.. _ (\d+) (?:insertions|deletions)',change_section)
 
             changes= s.. m..(i..,numbers
 
 
-            month_changes[date.s..('%Y-%m')] += changes
+            month_changes[date.s..('_Y-_m] += changes
 
 
 

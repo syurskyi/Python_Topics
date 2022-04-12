@@ -44,4 +44,4 @@
 #
 # #words = load_words()
 #
-# #print('word count %d' % len(words))
+# #print('word count _d' % len(words))

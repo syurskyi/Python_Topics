@@ -16,6 +16,6 @@ ___ bubble_in_array(data
         __ numbers[x] > numbers[x+1]:
             numbers[x+1], numbers[x] numbers[x], numbers[x+1]
             swap_count += 1
-    print('%d %d') % (swap_count, check_sum(numbers
+    print('_d _d') % (swap_count, check_sum(numbers
     
 bubble_in_array(raw_input().s..

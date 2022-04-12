@@ -8,7 +8,7 @@ u__.r...u..('http://bit.ly/2BLsCYc', LOG)
 
 
 ___ create_chart
-    line_check __.c..(r'^(\d\d-\d\d) \d\d:\d\d \w+\s+DEBUG\s+(\w*) - (.*)$')
+    line_check __.c.. _ ^(\d\d-\d\d) \d\d:\d\d \w+\s+DEBUG\s+(\w*) - (.*)$')
     book ''
     last_date ''
     w__ o.. LOG) __ log:

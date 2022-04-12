@@ -12,7 +12,7 @@ ___ parse_markdown(markdown
             i '<h2>' + i[3:] + '</h2>'
         ____ __.m..('# (.*)', i) __ n.. N..
             i '<h1>' + i[2:] + '</h1>'
-        m __.m..(r'\* (.*)', i)
+        m __.m.. _ \* (.*)', i)
         __ m:
             __ n.. in_list:
                 in_list T..

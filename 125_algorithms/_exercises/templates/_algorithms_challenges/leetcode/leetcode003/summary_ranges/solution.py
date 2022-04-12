@@ -33,9 +33,9 @@ c_ Solution(o..
 
     ___ make_range  start, end, nums
         __ end > start:
-            r.. "%d->%d" % (nums[start], nums[end])
+            r.. "_d->_d" % (nums[start], nums[end])
         ____ end __ start:
-            r.. "%d" % nums[end]
+            r.. "_d" % nums[end]
 
 
 a1 [0, 1, 2, 4, 5, 7]

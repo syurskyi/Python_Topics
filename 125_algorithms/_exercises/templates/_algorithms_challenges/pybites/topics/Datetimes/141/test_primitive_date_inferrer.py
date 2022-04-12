@@ -163,7 +163,7 @@ ___ test_different_enum
 
         @classmethod
         ___ get_d_parse_formats(cls, idx_ N..
-            d_parse_formats ["%d.%m.%Y", "%d/%m/%y", "%y/%m/%d", "%m/%d/%y"]
+            d_parse_formats ["_d.%m._Y", "_d/%m/%y", "%y/%m/_d", "%m/_d/%y"]
             __ idx __ N..
                 r.. d_parse_formats
             __ 0 <_ idx <_ l..(d_parse_formats

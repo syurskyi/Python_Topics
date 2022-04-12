@@ -46,7 +46,7 @@ ___ calc_max_uptime(reboots
 
     
 
-    r.. max_diff,max_date.s..("%Y-%m-%d")
+    r.. max_diff,max_date.s..("_Y-%m-_d")
 
 
 
