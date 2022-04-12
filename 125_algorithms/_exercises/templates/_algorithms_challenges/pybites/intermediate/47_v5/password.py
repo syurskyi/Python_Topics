@@ -20,7 +20,7 @@ ___ validate_password(password: s..) __ b..:
             ucase += 1
         ____ c __ PUNCTUATION_CHARS:
             punc += 1
-    __ d.. > 0 a.. lcase > 1 a.. ucase > 0 a.. punc > 0:
+    __ d.. > 0 a.. lcase > 1 a.. ucase > 0 a.. punc > 0
         used_passwords.add(password)
         r.. T..
     r.. F..

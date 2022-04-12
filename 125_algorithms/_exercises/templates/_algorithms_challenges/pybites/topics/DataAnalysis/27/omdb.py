@@ -7,7 +7,7 @@ ___ get_movie_data files l.. __ l..
     ___ movie __ ?
         w__ o.. movie) __ f:
             ___ line __ f:
-                __ l..(line.s.. > 0:
+                __ l..(line.s.. > 0
                     data.a..(j__.l.. (line.s..()))
     r.. data
 

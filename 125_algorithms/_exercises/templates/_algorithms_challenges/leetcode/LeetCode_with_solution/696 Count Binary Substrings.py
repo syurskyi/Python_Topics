@@ -58,7 +58,7 @@ c_ Solution:
                 counter[s[i]] 0
 
             counter[s[i]] += 1
-            __ m..(counter["0"], counter["1"]) > 0:
+            __ m..(counter["0"], counter["1"]) > 0
                 ret += 1
 
         r.. ret

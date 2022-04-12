@@ -16,13 +16,13 @@ ___ maxSequence(arr
     maximum 0
     local_maximum 0
     ___ i __ arr:
-        __ local_maximum > 0:
+        __ local_maximum > 0
             local_maximum += i
             __ local_maximum < 0:
                 local_maximum 0
             ____ local_maximum > maximum:
                 maximum local_maximum
-        ____ i > 0:
+        ____ i > 0
             local_maximum += i
 
     r.. maximum

@@ -18,7 +18,7 @@ c_ Solution(o..
         sums [0]
         subsum 0
         ___ i __ r..(0, l..(matrix:
-          __ start > 0:
+          __ start > 0
             subsum += dp[i][end] - dp[i][start - 1]
           ____
             subsum += dp[i][end]

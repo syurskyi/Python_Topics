@@ -19,7 +19,7 @@ c_ Solution(o..
             crossProduct crossProductLength(a[0], a[1], b[0], b[1], c[0], c[1])
             __ crossProduct < 0:
                 gotNegative T..
-            ____ crossProduct > 0:
+            ____ crossProduct > 0
                 gotPositive T..
             __ gotNegative a.. gotPositive: r.. F..
         r.. T..

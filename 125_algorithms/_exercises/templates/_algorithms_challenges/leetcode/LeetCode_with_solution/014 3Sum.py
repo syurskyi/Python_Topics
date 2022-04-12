@@ -112,7 +112,7 @@ c_ Solution:
                         j += 1
                     w.... j < k a.. num[k] __ num[k+1]:
                         k -_ 1
-                ____ s..(lst) > 0:
+                ____ s..(lst) > 0
                     k -_ 1
                 ____
                     j += 1

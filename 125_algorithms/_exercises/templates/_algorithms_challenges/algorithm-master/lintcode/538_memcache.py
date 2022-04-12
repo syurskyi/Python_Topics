@@ -27,7 +27,7 @@ c_ Memcache:
     @return: nothing
     """
     ___ s..  curtTime, key, value, ttl
-        __ ttl > 0:
+        __ ttl > 0
             storage[key] _new_item(key, value, curtTime + ttl)
         ____
             storage[key] _new_item(key, value, PERMANENT_TTL)

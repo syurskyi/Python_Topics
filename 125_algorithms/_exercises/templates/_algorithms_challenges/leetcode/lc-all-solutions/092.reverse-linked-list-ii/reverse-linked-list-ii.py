@@ -17,7 +17,7 @@ c_ Solution(o..
       cur root
       pre N..
       next N..
-      w.... cur a.. k > 0:
+      w.... cur a.. k > 0
         next cur.next
         cur.next pre
         pre cur

@@ -11,7 +11,7 @@ c_ Solution(o..
             __ c __ '(':
                 rmL += 1
             ____ c __ ')':
-                __ rmL > 0:
+                __ rmL > 0
                     rmL -_ 1
                 ____
                     rmR += 1

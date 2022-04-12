@@ -27,7 +27,7 @@ c_ Solution(o..
                 curLen, level, node h__.heappop(pq)
                 __ node __ dst:
                     r.. curLen
-                __ level > 0:
+                __ level > 0
                     ___ dist, node0 __ graph.g.. node, []
                         h__.heappush(pq, [curLen+dist, level-1, node0])
         r.. -1

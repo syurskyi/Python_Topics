@@ -28,7 +28,7 @@ c_ Solution(o..
     bst    # list
     ___ line __ lines:
       x, flag, bottom, top line
-      __ flag > 0:
+      __ flag > 0
         idx b__.bisect_right(bst, (bottom, top
         b__.insort_right(bst, (bottom, top
         __ idx + 1 < l..(bst) a.. bst[idx + 1][0] < bst[idx][1] o. idx > 0 a.. bst[idx][0] < bst[idx - 1][1]:

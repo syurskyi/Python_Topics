@@ -6,7 +6,7 @@ ___ encode_single(n
     bytes [n & SEVENBITSMASK]
     n >>= 7
 
-    w.... n > 0:
+    w.... n > 0
         bytes.a..(n & SEVENBITSMASK | EIGHTBITMASK)
         n >>= 7
 

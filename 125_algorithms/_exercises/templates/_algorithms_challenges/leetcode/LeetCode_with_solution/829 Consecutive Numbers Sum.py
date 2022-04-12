@@ -81,7 +81,7 @@ c_ Solution:
         ___ i __ r..(1, N
             d N // i
             r N % i
-            __ r __ 0 a.. d - i // 2 > 0:
+            __ r __ 0 a.. d - i // 2 > 0
                 cnt += 1
             ____ r __ 1 a.. N __ (d + d + 1) * i // 2:
                 cnt += 1

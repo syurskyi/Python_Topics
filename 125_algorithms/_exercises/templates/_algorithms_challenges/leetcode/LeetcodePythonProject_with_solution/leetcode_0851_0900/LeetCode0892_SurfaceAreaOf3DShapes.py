@@ -15,9 +15,9 @@ c_ Solution(o..
             ___ j __ r..(n
                 __ (grid[i][j]
                     res += 2+grid[i][j]*4
-                __ i > 0:
+                __ i > 0
                     res -_ m..(grid[i-1][j], grid[i][j])*2
-                __ j > 0:
+                __ j > 0
                     res -_ m..(grid[i][j-1], grid[i][j])*2
         r.. res
     

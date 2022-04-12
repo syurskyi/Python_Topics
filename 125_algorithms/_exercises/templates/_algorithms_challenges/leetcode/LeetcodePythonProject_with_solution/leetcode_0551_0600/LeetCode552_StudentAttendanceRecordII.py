@@ -44,9 +44,9 @@ c_ Solution(o..
             ___ j __ r..(2
                 ___ k __ r..(3
                     val dp[i-1][j][2]
-                    __ j > 0:
+                    __ j > 0
                         val (val+dp[i-1][j-1][2]) % mod # A
-                    __ k > 0:
+                    __ k > 0
                         val (val+dp[i-1][j][k-1]) % mod # L
                     dp[i][j][k] val
         r.. dp[-1][-1][-1]

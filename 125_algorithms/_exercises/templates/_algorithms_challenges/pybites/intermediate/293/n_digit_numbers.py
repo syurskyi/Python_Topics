@@ -15,7 +15,7 @@ ___ n_digit_numbersnumbers L.. T n i.. __ L.. i..
     ___ i __ r..(l..(numbers:
         numbers[i] r..(numbers[i] * n_multiply_lookup[n])
         __ l..(s..(numbers[i] > n:
-            __ numbers[i] > 0:
+            __ numbers[i] > 0
                 numbers[i] i..(s..(numbers[i]) :?)
             ____
                 numbers[i] i..(s..(numbers[i]) |? +1])

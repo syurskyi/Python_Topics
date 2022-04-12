@@ -3,7 +3,7 @@ ___ prevent_distractions(txt
     index 0
     w.... index < l..(a_list
         word a_list[index]
-        __ txt.c.. word) > 0:
+        __ txt.c.. word) > 0
             r.. "NO!"
         index index + 1
     r.. "Safe watching!

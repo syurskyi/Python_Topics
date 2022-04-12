@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         m, n l..(dungeon), l..(dungeon 0
         tbl [[0]*n ___ _ __ r..(m)]
-        __ dungeon[-1][-1] > 0:
+        __ dungeon[-1][-1] > 0
             tbl[-1][-1] 1
         ____
             tbl[-1][-1] 1-dungeon[-1][-1]

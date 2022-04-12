@@ -18,7 +18,7 @@ c_ Solution(o..
             __ bits[i] __ 1:
                 i += 2
             ____
-                __ i > 0:
+                __ i > 0
                     dp[i] += dp[i-1]
                 i += 1
         r.. dp[-1] > 1

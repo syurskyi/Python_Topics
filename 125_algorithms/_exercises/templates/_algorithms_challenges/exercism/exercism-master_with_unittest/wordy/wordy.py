@@ -19,7 +19,7 @@ c_ Calculator:
             r.. V...
         operator_stack operator_stack()
         num_stack num_stack()
-        w.... l..(operator_stack) > 0:
+        w.... l..(operator_stack) > 0
             operator operator_stack.p.. 0)
             num1 num_stack.p.. 0)
             num2 num_stack.p.. 0)

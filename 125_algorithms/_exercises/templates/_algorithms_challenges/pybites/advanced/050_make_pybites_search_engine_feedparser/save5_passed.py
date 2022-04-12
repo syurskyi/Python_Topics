@@ -14,7 +14,7 @@ c_ AttrDict(d..
        mocking, got this from https://stackoverflow.com/a/14620633.
        PyBites uses this class for parsing"""
 
-    ___ - , *args,  $$
+    ___ - , $  $$
         super(AttrDict, self).__init__ $ $$
         __dict__ self
 

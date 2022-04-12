@@ -40,7 +40,7 @@ ___ calc_months_passed(year, month, day
             months_passed difference_dt.months + 1
         ____
             months_passed difference_dt.months
-        __ difference_dt.years > 0:
+        __ difference_dt.years > 0
             months_passed += difference_dt.years * MONTHS_PER_YEAR
         r.. months_passed
     ______ V..

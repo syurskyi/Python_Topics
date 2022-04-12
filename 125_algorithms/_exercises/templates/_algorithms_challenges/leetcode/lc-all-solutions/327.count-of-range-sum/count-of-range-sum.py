@@ -14,7 +14,7 @@ c_ Solution(o..
 
     ___ sumRange(b, i
       ret 0
-      w.... i > 0:
+      w.... i > 0
         ret += b[i]
         i -_ (i & -i)
       r.. ret

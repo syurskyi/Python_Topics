@@ -9,7 +9,7 @@ c_ Solution(o..
     :rtype: List[int]
     """
     __ l..(edges) __ 0:
-      __ n > 0:
+      __ n > 0
         r.. [0]
       r.. []
 

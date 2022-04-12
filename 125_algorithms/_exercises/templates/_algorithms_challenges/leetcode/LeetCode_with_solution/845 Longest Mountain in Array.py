@@ -71,7 +71,7 @@ c_ Solution:
 
         ret 0
         ___ i __ r..(n
-            __ U[i] > 0 a.. D[i] > 0:
+            __ U[i] > 0 a.. D[i] > 0
                 ret m..(ret, U[i] + D[i] + 1)
 
         r.. ret

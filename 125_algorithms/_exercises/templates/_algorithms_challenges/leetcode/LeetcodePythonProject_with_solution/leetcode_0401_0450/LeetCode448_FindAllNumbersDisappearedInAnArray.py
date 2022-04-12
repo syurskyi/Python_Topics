@@ -8,10 +8,10 @@ c_ Solution(o..
     ___ findDisappearedNumbers  nums
         ___ num __ nums:
             ind a..(num)-1
-            __ nums[ind] > 0:
+            __ nums[ind] > 0
                 nums[ind] -nums[ind]
         res    # list
         ___ i, num __ e..(nums
-            __ num > 0:
+            __ num > 0
                 res.a..(i+1)
         r.. res

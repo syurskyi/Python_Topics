@@ -28,7 +28,7 @@ c_ Solution(o..
             r.. "invalid"
           j += 2
         k l..(stack) - start
-        w.... k > 0:
+        w.... k > 0
           stack.p.. )
           k -_ 1
         stack.a..(a)

@@ -17,7 +17,7 @@ ___ count_down(data_type
 
 @count_down.register(i..)
 ___ _(data_type
-    w.... data_type > 0:
+    w.... data_type > 0
         print(data_type)
         data_type //= 10
 

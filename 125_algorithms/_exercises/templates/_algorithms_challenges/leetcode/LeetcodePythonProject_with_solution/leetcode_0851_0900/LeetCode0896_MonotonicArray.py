@@ -6,7 +6,7 @@ c_ Solution(o..
         """
         increase N..
         ___ i, num __ e..(A
-            __ i > 0:
+            __ i > 0
                 __ num __ A[i-1]:
                     _____
                 __ num > A[i-1]:

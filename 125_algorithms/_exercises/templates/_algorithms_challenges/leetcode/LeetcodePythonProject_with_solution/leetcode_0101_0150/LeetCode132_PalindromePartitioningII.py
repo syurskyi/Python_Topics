@@ -18,7 +18,7 @@ c_ Solution(o..
             ___ j __ r..(i, -1, -1
                 __ s[i] __ s[j] a.. (i-j<_1 o. dp[j+1][i-1]
                     dp[j][i] T..
-                    __ j > 0:
+                    __ j > 0
                         cuts[i] m..(cuts[i], cuts[j-1]+1)
                     ____
                         cuts[i] 0

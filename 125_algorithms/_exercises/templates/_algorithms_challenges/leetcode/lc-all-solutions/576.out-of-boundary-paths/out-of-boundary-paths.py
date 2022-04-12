@@ -15,11 +15,11 @@ c_ Solution(o..
             ans += dp[k - 1][i][j] % mod
           __ j __ n - 1:
             ans += dp[k - 1][i][j] % mod
-          __ i > 0:
+          __ i > 0
             dp[k][i][j] += dp[k - 1][i - 1][j]
           __ i < m - 1:
             dp[k][i][j] += dp[k - 1][i + 1][j]
-          __ j > 0:
+          __ j > 0
             dp[k][i][j] += dp[k - 1][i][j - 1]
           __ j < n - 1:
             dp[k][i][j] += dp[k - 1][i][j + 1]

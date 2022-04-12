@@ -25,7 +25,7 @@ c_ Solution(o..
     pp head
     print
     k
-    w.... k > 0:
+    w.... k > 0
       pp pp.next
       k -_ 1
     newHead pp.next

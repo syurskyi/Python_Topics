@@ -12,7 +12,7 @@ c_ EggCreator:
         r.. self
 
     ___ __next__
-        __ _limit > 0:
+        __ _limit > 0
             _limit -_ 1
             r.. c..(COLORS)
         ____

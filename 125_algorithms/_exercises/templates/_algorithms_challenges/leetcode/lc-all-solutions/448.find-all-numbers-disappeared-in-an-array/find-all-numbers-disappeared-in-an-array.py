@@ -10,7 +10,7 @@ c_ Solution(o..
       nums[idx]  -nums[idx] __ nums[idx] > 0 ____ nums[idx]
 
     ___ i __ r..(0, l..(nums:
-      __ nums[i] > 0:
+      __ nums[i] > 0
         ans.a..(i + 1)
 
     ___ i __ r..(0, l..(nums:

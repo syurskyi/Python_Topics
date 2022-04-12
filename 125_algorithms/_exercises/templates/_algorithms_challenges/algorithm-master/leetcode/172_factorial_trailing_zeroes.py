@@ -9,7 +9,7 @@ c_ Solution:
             r.. ans
 
         i 5
-        w.... n // i > 0:
+        w.... n // i > 0
             ans += n // i
             i *= 5
 

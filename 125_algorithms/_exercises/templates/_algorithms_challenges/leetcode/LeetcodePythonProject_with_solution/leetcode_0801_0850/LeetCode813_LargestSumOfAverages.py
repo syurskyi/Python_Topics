@@ -20,7 +20,7 @@ c_ Solution(o..
         r.. s..(n, k, arr, memo)
     
     ___ s..  n, k, arr, memo
-        __ memo[n][k] > 0:
+        __ memo[n][k] > 0
             r.. memo[n][k]
         __ n < k:
             r.. 0

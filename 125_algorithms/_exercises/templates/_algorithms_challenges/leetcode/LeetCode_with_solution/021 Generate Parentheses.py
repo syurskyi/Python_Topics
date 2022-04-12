@@ -30,7 +30,7 @@ c_ Solution:
             r..
 
         # add left parenthesis
-        __ left > 0:
+        __ left > 0
             generateParenthesisDfs(result, cur + "(", left - 1, right)
         # add right parenthesis
         __ right > left:

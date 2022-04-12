@@ -41,9 +41,9 @@ c_ NumMatrix(o..
     ret 0
     c, m c, m
     i, j row, col
-    w.... i > 0:
+    w.... i > 0
       j col
-      w.... j > 0:
+      w.... j > 0
         ret += c[i][j]
         j -_ lowbit(j)
       i -_ lowbit(i)

@@ -15,7 +15,7 @@ c_ Solution(o..
     ___ reverseList(head, k
       pre N..
       cur head
-      w.... cur a.. k > 0:
+      w.... cur a.. k > 0
         tmp  cur.next
         cur.next pre
         pre cur

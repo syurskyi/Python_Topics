@@ -27,7 +27,7 @@ c_ Solution(o..
         res N..
         ___ i, row __ e..(triangle
             m l..(row)
-            __ i > 0:
+            __ i > 0
                 ___ j, col __ e..(row
                     __ 0 < j < m - 1:
                         triangle[i][j] += m..(triangle[i - 1][j - 1],

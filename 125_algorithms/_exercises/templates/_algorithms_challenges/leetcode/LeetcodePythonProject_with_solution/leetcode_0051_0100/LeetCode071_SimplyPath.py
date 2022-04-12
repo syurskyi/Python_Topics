@@ -22,7 +22,7 @@ c_ Solution(o..
             __ l[i] __ '..':
                 cont += 1
                 _____
-            __ cont > 0:
+            __ cont > 0
                 cont -_ 1
             ____
                 result '/' + l[i] + result

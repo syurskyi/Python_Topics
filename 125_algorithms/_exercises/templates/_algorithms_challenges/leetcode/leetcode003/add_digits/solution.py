@@ -19,7 +19,7 @@ c_ Solution(o..
         """
         w.... num / 10:
             d 0
-            w.... num > 0:
+            w.... num > 0
                 d += num % 10
                 num /= 10
             num d

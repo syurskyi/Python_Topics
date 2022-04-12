@@ -16,7 +16,7 @@ c_ Solution(o..
             dp[count-1].a..(num)
         result    # list
         i maxCount-1
-        w.... k > 0:
+        w.... k > 0
             __ i < 0:
                 _____
             __ n.. dp[i]:
@@ -36,7 +36,7 @@ c_ Solution(o..
         ___ num, count __ hashmap.i..:
             h__.heappush(heap, (-count, num
         result    # list
-        w.... k > 0:
+        w.... k > 0
             result.a..(h__.heappop(heap)[1])
             k -_ 1
         r.. result

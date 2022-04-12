@@ -52,10 +52,10 @@ c_ Solution:
                 _____
             counter[e] -_ 1
 
-            __ F[e - 1] > 0:
+            __ F[e - 1] > 0
                 F[e - 1] -_ 1
                 F[e] += 1
-            ____ counter[e + 1] > 0 a.. counter[e + 2] > 0:
+            ____ counter[e + 1] > 0 a.. counter[e + 2] > 0
                 F[e + 2] += 1
                 counter[e + 1] -_ 1
                 counter[e + 2] -_ 1

@@ -45,6 +45,6 @@ ___ BuildTree(records
                     __ j.record_id __ k.node_id:
                         child k
                         parent.children.a..(child)
-    __ l..(trees) > 0:
+    __ l..(trees) > 0
         root trees[0]
     r.. root

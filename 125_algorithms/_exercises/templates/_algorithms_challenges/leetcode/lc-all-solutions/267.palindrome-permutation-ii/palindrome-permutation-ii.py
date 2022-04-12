@@ -34,7 +34,7 @@ c_ Solution(o..
         counter[mid] -_ 1
       ____
         r.. []
-    ____ l..(oddChars) > 0:
+    ____ l..(oddChars) > 0
       r.. []
 
     ___ key __ counter:

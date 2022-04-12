@@ -27,7 +27,7 @@ c_ Solution(o..
     
     ___ burst  memo, nums, left, right
         __ left+1 __ right: r.. 0
-        __ memo[left][right] > 0:
+        __ memo[left][right] > 0
             r.. memo[left][right]
         result 0
         ___ i __ r..(left+1, right

@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         __ n <_ 0: r.. 0
         q, x, res n, 1, 0
-        w.... q > 0:
+        w.... q > 0
             digit q%10
             q //= 10
             res += q*x

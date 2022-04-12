@@ -47,7 +47,7 @@ c_ Solution(o..
                     w.... ce < eachLen:
                         s += ' '
                         ce += 1
-                    __ extraLen > 0:
+                    __ extraLen > 0
                         s += ' '
                         extraLen -_ 1
                 s += words[i-1]

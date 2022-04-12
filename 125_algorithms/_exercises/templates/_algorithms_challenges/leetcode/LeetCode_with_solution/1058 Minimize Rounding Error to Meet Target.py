@@ -59,7 +59,7 @@ c_ Solution:
         ret 0
         remain target - f_sum
         ___ err __ errors:
-            __ remain > 0:
+            __ remain > 0
                 ret += 1 - err
                 remain -_ 1
             ____

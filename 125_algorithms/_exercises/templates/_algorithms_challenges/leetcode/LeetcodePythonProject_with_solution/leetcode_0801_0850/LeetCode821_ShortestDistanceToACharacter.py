@@ -20,7 +20,7 @@ c_ Solution(o..
         ___ i __ r..(l..(s:
             __ i < arr[j]:
                 val arr[j]-i
-                __ j > 0:
+                __ j > 0
                     val m..(val, i-arr[j-1])
             ____ i __ arr[j]:
                 val 0

@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     ans "1"
     n -_ 1
-    w.... n > 0:
+    w.... n > 0
       res ""
       pre ans[0]
       count 1

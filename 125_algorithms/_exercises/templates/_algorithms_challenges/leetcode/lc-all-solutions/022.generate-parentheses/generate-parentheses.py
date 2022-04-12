@@ -15,7 +15,7 @@ c_ Solution(o..
         p...a..("(")
         dfs(left + 1, p.., res, n)
         p...p.. )
-      __ left > 0:
+      __ left > 0
         p...a..(")")
         dfs(left - 1, p.., res, n)
         p...p.. )

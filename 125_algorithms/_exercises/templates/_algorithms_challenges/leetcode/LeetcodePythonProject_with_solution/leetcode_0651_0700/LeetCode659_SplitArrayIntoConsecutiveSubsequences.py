@@ -15,7 +15,7 @@ c_ Solution(o..
         ___ num __ nums:
             __ freqMap[num] __ 0:
                 _____
-            ____ appendFreqMap.g.. num, 0) > 0:
+            ____ appendFreqMap.g.. num, 0) > 0
                 appendFreqMap[num] -_ 1
                 appendFreqMap[num+1] appendFreqMap.g.. num+1, 0)+1
             ____ freqMap.g.. num+1, 0)>0 a.. freqMap.g.. num+2, 0)>0:

@@ -47,7 +47,7 @@ c_ Solution:
                 counter[c] m..(counter[c], cur[c])
 
         ___ c __ s__.a..:
-            __ counter[c] > 0:
+            __ counter[c] > 0
                 ret.e.. [c] * counter[c])
 
         r.. ret

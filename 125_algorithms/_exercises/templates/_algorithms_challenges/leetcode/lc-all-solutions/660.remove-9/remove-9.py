@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     ans 0
     k 1
-    w.... n > 0:
+    w.... n > 0
       ans += (n % 9) * k
       k *= 10
       n /= 9

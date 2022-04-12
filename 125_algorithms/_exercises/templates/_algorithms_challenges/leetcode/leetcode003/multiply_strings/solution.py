@@ -25,7 +25,7 @@ c_ Solution(o..
                 digit tmp % 10
                 res[i + j] s..(digit)
                 c tmp / 10
-            __ c > 0:
+            __ c > 0
                 res[m + i] s..(c)
         res ''.j..(res[::-1])
         ___ i, d __ e..(res

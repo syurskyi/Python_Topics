@@ -19,11 +19,11 @@ c_ Solution(o..
         carry 1
         i 0
         res    # list
-        w.... i < n o. carry > 0:
+        w.... i < n o. carry > 0
             temp 0
             __ i < n:
                 temp += d..[i]
-            __ carry > 0:
+            __ carry > 0
                 temp += carry
             digit temp % 10
             carry temp / 10

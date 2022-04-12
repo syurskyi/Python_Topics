@@ -15,7 +15,7 @@ c_ Solution:
     ___ is_good  N
         res F..
 
-        w.... N > 0:
+        w.... N > 0
             D N % 10
             __ D __ (3, 4, 7
                 r.. F..

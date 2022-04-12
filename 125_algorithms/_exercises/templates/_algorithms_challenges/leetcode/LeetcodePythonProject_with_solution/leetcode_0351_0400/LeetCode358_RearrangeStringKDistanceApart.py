@@ -24,7 +24,7 @@ c_ Solution(o..
                 _____
             freq, c queue.p.. 0)
             freq -freq-1
-            __ freq > 0:
+            __ freq > 0
                 h__.heappush(heap, [-freq, c])
         r.. ''.j..(res) __ l..(res) __ l..(s) ____ ''
     

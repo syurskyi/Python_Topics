@@ -727,7 +727,7 @@ ___ get_most_popular_talks_by_like_ratio(videos
        Return the filtered list"""
     video_list    # list
     ___ video __ videos:
-        __ i..(video.metrics 'likeCount' )- i..(video.metrics 'dislikeCount' ) > 0:
+        __ i..(video.metrics 'likeCount' )- i..(video.metrics 'dislikeCount' ) > 0
             video_list.a..(video)
     output s..(video_list,
                   k.._l.... x: i..(x.metrics 'viewCount' ) / (i..(x.metrics 'likeCount' ) - i..(x.metrics 'dislikeCount' ,

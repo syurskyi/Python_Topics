@@ -29,7 +29,7 @@ c_ Solution:
         # O(n)
         profit 0
         ___ i __ x..(l..(delta_prices:
-            __ delta_prices[i] > 0:
+            __ delta_prices[i] > 0
                 profit += delta_prices[i]
 
         r.. profit

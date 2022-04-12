@@ -12,6 +12,6 @@ c_ Solution(o..
     ans[1] (diffSquare / diff + diff) / 2
     ans[0] ans[1] - diff
     ans.s..()
-    __ diff > 0:
+    __ diff > 0
       r.. ans
     r.. ans[::-1]

@@ -20,7 +20,7 @@ c_ Solution:
                 rep += 1
             freqs[s[j]] += 1
 
-            w.... rep > 0:
+            w.... rep > 0
                 freqs[s[i]] -_ 1
                 __ freqs[s[i]] __ 1:
                     rep -_ 1

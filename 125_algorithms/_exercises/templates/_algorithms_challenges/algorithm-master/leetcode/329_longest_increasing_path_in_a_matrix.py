@@ -26,7 +26,7 @@ c_ Solution:
         r.. ans
 
     ___ dfs  G, x, y, memo
-        __ memo[x][y] > 0:
+        __ memo[x][y] > 0
             r.. memo[x][y]
 
         res 1

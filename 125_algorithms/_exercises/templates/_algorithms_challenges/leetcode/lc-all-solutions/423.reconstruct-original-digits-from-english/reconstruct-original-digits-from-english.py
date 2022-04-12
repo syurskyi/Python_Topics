@@ -16,7 +16,7 @@ c_ Solution(o..
       count[c]  count.g.. c, 0) + 1
     ___ num __ [0, 2, 4, 6, 8, 1, 3, 7, 5, 10, 9]:
       featureNum  count.g.. feature[num], 0)
-      __ featureNum > 0:
+      __ featureNum > 0
         ans + [s..(num)] * featureNum
         word  nums[num]
         ___ c __ word:

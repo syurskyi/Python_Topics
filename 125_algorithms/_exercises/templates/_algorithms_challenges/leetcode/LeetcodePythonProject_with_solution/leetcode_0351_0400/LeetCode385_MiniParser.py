@@ -63,7 +63,7 @@ c_ Solution(o..
             w.... i < l..(s
                 __ s[i] __ ' ':
                     count 1
-                    w.... i < l..(s) a.. count > 0:
+                    w.... i < l..(s) a.. count > 0
                         i+=1
                         __ s[i] __ ' ':
                             count -_ 1

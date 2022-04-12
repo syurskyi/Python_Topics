@@ -39,7 +39,7 @@ c_ Solution(o..
         ___ hi __ x..(1, l..(S)+1
             # expand
             val S[hi-1]
-            __ t_cnt[o..(val)] > 0:
+            __ t_cnt[o..(val)] > 0
                 w_cnt[o..(val)] += 1
 
             __ t_cnt[o..(val)] > 0 a.. w_cnt[o..(val)] <_ t_cnt[o..(val)]:
@@ -48,7 +48,7 @@ c_ Solution(o..
             # shrink
             __ appeared_cnt __ l..(T  # until find all
                 w.... w_cnt[o..(S[lo])] > t_cnt[o..(S[lo])] o. t_cnt[o..(S[lo])] __ 0:
-                    __ w_cnt[o..(S[lo])] > 0: w_cnt[o..(S[lo])] -_ 1
+                    __ w_cnt[o..(S[lo])] > 0 w_cnt[o..(S[lo])] -_ 1
                     lo += 1
 
                 __ min_win[1]-min_win[0] > hi-lo:

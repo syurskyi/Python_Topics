@@ -31,7 +31,7 @@ c_ Solution(o..
             __ c __ ' ':
                 count 1
                 j i+1
-                w.... j < l..(s) a.. count > 0:
+                w.... j < l..(s) a.. count > 0
                     __ s[j] __ ' ':
                         count+=1
                     ____ s[j] __ ' ':

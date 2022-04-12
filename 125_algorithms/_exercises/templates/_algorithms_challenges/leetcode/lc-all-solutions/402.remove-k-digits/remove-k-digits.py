@@ -11,6 +11,6 @@ c_ Solution(o..
         stack.p.. )
         k -_ 1
       stack.a..(c)
-    __ k > 0:
+    __ k > 0
       stack stack[:-k]
     r.. "".j..(stack).l..("0") o. "0"

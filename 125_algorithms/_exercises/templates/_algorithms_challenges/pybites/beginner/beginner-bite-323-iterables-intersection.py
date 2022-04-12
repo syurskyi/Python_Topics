@@ -38,8 +38,8 @@ ___ intersection $a.. I..) __ S..[A..]:
     # Edge condition:
     # - only empty inputs
     l    # list
-    ___ input __ args:
-        __ input __ n.. N.. a.. l..(input) > 0:
+    ___ input __ args
+        __ input __ n.. N.. a.. l..(input) > 0
             l.a..(s..(input
     # I need to handle an exception in case dealing with empty inputs
     # Then I use intersection method which takes an arbitrary number of sets

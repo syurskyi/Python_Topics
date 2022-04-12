@@ -49,7 +49,7 @@ c_ Solution(o..
         maxa 1
         ___ i __ x..(1, n+1
             v nums[i-1]
-            __ v > 0:
+            __ v > 0
                 F_pos[i] F_pos[i-1]*v __ F_pos[i-1] !_ 0 ____ v
                 F_neg[i] F_neg[i-1]*v
             ____ v __ 0:

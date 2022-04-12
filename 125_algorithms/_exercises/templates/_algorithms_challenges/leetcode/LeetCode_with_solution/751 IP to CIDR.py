@@ -90,7 +90,7 @@ c_ Solution:
         """
         num_ip to_bin(ip)
         ret    # list
-        w.... n > 0:
+        w.... n > 0
             lsb get_lsb(num_ip)
             w.... (1 << lsb) > n:
                 lsb -_ 1

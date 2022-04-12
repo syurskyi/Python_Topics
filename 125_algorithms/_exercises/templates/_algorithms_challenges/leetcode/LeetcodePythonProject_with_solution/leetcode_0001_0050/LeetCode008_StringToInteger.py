@@ -24,7 +24,7 @@ c_ Solution(o..
             __ n.. c.i..
                 _____
             res 10*res + o..(c) - o..('0')
-        __ sig > 0:
+        __ sig > 0
             r.. m..(2**32-1, res)
         ____
             r.. m..(-2**31, sig*res)

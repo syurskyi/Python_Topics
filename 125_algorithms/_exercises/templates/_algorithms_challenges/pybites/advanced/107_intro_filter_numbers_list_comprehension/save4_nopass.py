@@ -5,7 +5,7 @@ ___ filter_positive_even_numbers(numbers
     even_numbers    # list
     ___ n __ numbers:
         __ n % 2 __ 0:
-            __ n > 0:
+            __ n > 0
                 even_numbers.a..(n)
     print(even_numbers)
     p..

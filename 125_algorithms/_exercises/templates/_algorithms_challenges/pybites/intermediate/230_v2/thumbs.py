@@ -11,7 +11,7 @@ c_ Thumbs:
 
     ___ __mul__ number
         __ isi..(number,i..
-            __ number > 0:
+            __ number > 0
                 s__  THUMBS_UP
             ____ number < 0:
                 number  a..(number)

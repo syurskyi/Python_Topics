@@ -4,7 +4,7 @@ ___ from_digits(d.., base
 
 ___ to_digits(number, base_to
     result    # list
-    w.... number > 0:
+    w.... number > 0
         result.a..(number % base_to)
         number //= base_to
     r.. result[::-1]  # list(reversed(result))

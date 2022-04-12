@@ -15,7 +15,7 @@ c_ Solution(o..
         ___ ip __ ips:
             x i..(ip) + x*256
         res    # list
-        w.... n > 0:
+        w.... n > 0
             step x &(-x)
             w.... step > n:
                 step /= 2
@@ -30,7 +30,7 @@ c_ Solution(o..
             res[i] x&255
             x >>= 8
         n 33
-        w.... step > 0:
+        w.... step > 0
             n -_ 1
             step //= 2
         r.. '.'.j..([s..(s) ___ s __ res])+'/'+s..(n)

@@ -20,9 +20,9 @@ c_ Solution(o..
             res.a..(curr)
         __ left > right:
             r..
-        __ left > 0:
+        __ left > 0
             dfs(left-1, right, curr+'(', res)
-        __ right > 0:
+        __ right > 0
             dfs(left, right-1, curr+')', res)
     
     ___ test

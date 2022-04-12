@@ -35,7 +35,7 @@ c_ Solution(o..
       r.. " ".j..(ans)
 
     divider 1000000000
-    w.... num > 0:
+    w.... num > 0
       res num / divider
       __ res !_ 0:
         ans.a..(getNum(res) + units[divider])

@@ -141,7 +141,7 @@ c_ Solution:
                 _____
             __ grid[_x][_y] !_ EMPTY:
                 _____
-            __ step[x, y] + 1 >_ step[_x, _y] > 0:  # > 0 means visited, since its defaultdict
+            __ step[x, y] + 1 >_ step[_x, _y] > 0  # > 0 means visited, since its defaultdict
                 _____
 
             ids[_x, _y].add(id)

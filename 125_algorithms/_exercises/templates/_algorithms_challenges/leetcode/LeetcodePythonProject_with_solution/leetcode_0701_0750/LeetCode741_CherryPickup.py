@@ -21,11 +21,11 @@ c_ Solution(o..
                     __ j<0 o. j>_N o. q<0 o. q>_N o. grid[i][j]<0 o. grid[p][q]<0:
                         dp[i][p] -1
                         _____
-                    __ i > 0:
+                    __ i > 0
                         dp[i][p] m..(dp[i][p], dp[i-1][p])
-                    __ p > 0:
+                    __ p > 0
                         dp[i][p] m..(dp[i][p], dp[i][p-1])
-                    __ i > 0 a.. p > 0:
+                    __ i > 0 a.. p > 0
                         dp[i][p] m..(dp[i][p], dp[i-1][p-1])
                     __ dp[i][p] >_ 0:
                         dp[i][p] += grid[i][j]+(grid[p][q] __ i!_p ____ 0)

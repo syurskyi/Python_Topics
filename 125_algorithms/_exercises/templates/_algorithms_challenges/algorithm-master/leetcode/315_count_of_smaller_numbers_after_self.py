@@ -34,7 +34,7 @@ c_ Solution:
     ___ s..  i
         res 0
 
-        w.... i > 0:
+        w.... i > 0
             res += bits[i]
             i -_ (i & -i)
 

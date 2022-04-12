@@ -17,7 +17,7 @@ ___ ontrack_reading(books_goal: i.., books_read: i..,
     days_left (eoy - today).days
     books_left books_goal - books_read
 
-    __ books_read > 0:
+    __ books_read > 0
         # use current reading rate
         read_rate books_read / (today - boy).days
     ____

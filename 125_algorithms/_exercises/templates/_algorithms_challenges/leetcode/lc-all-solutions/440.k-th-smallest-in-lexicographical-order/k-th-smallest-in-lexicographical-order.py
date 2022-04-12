@@ -43,7 +43,7 @@ c_ Solution(o..
 
     ans 1
     k -_ 1
-    w.... k > 0:
+    w.... k > 0
       gap getGap(n, ans)
       __ gap <_ k:
         ans += 1

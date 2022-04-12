@@ -16,7 +16,7 @@ c_ Solution(o..
         ____
             sig ''
         res ''
-        w.... num > 0:
+        w.... num > 0
             digit num%7
             res s..(digit)+res
             num i..((num-digit)/7)

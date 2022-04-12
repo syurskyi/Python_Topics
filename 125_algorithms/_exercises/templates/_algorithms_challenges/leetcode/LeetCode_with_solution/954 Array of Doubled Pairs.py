@@ -61,14 +61,14 @@ c_ Solution:
             __ counter[a] __ 0:
                 _____
             counter[a] -_ 1
-            __ a > 0:
+            __ a > 0
                 target 2 * a
             ____ a % 2 !_ 0:
                 r.. F..
             ____
                 target a // 2
 
-            __ counter[target] > 0:
+            __ counter[target] > 0
                 counter[target] -_ 1
             ____
                 r.. F..

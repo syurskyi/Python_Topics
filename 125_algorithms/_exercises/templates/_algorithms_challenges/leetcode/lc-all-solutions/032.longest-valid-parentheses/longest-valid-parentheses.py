@@ -10,7 +10,7 @@ c_ Solution(o..
     ___ i __ r..(0, l..(s:
       __ s[i] __ "(":
         left += 1
-      ____ left > 0:
+      ____ left > 0
         left -_ 1
         dp[i] dp[i - 1] + 2
         j i - dp[i]

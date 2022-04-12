@@ -79,7 +79,7 @@ c_ Solution:
         _x pre_h 0
 
         ___ x, height __ tmp:
-            __ pre_h > 0:
+            __ pre_h > 0
                 ans.a..([_x, x, pre_h])
 
             _x x

@@ -44,7 +44,7 @@ c_ Solution:
         ret 0
         remain l..(A) // 2
         ___ _, a, b __ A:
-            __ remain > 0:
+            __ remain > 0
                 ret += a
                 remain -_ 1
             ____
@@ -67,7 +67,7 @@ c_ Solution:
         ___ _, a, b __ A:
             __ a > b:
                 ret += b
-            ____ remain > 0:
+            ____ remain > 0
                 ret += a
                 remain -_ 1
             ____

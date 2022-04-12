@@ -12,7 +12,7 @@ c_ Solution:
 
     ___ test_bit  n, i
         mask 1 << i
-        __ n & mask > 0:
+        __ n & mask > 0
             r.. T..
         r.. F..
 

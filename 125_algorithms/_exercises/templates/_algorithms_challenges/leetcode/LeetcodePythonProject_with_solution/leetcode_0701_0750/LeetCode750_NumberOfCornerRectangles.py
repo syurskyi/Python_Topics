@@ -17,7 +17,7 @@ c_ Solution(o..
                 ___ k __ r..(n
                     __ grid[i][k] __ 1 a.. grid[j][k] __ 1:
                         counter += 1
-                __ counter > 0:
+                __ counter > 0
                     res += counter*(counter-1)//2
         r.. res
     

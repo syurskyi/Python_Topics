@@ -38,7 +38,7 @@ c_ Solution:
             ___ j __ r..(i
                 d A[i] - A[j]
                 D[i][d] += 1 + D[j][d]
-                __ D[j][d] > 0:
+                __ D[j][d] > 0
                     # >= 3 subsequence with A[k], A[j], A[i]
                     ret += D[j][d]  # not D[i][d]
 
@@ -58,7 +58,7 @@ c_ Solution:
 
             ___ j __ r..(i
                 delta A[i] - A[j]
-                __ D[j][delta] > 0:
+                __ D[j][delta] > 0
                     ret += D[i][delta]  # counted the length 2
 
         r.. ret

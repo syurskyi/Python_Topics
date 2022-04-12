@@ -12,7 +12,7 @@ c_ Solution(o..
         res 0
         sig 1 __ x >_ 0 ____ -1
         x a..(x)
-        w.... x > 0:
+        w.... x > 0
             digit x%10
             res res*10 + digit
             x (x-digit)//10

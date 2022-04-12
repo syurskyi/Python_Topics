@@ -32,11 +32,11 @@ ___ get_pycon_speaker_first_names(soup_ N..
     soup_speakers soup.find_all("span", class_="speaker")
     ___ speaker __ soup_speakers:
         speaker_clean speaker.get_text().s..
-        __ speaker_clean.find(",") > 0:
+        __ speaker_clean.find(",") > 0
             ___ speaker __ speaker_clean.s..(","
                 first_name speaker.s...s..(" ")[0].s..
                 first_names.a..(first_name)
-        ____ speaker_clean.find("/") > 0:
+        ____ speaker_clean.find("/") > 0
             ___ speaker __ speaker_clean.s..("/"
                 first_name speaker.s...s..(" ")[0].s..
                 first_names.a..(first_name)

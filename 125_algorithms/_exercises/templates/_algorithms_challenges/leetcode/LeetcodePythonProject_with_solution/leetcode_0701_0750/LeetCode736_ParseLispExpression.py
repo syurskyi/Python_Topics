@@ -82,7 +82,7 @@ c_ Solution(o..
             res '('
             count 1
             i += 1
-            w.... i < l..(s) a.. count > 0:
+            w.... i < l..(s) a.. count > 0
                 __ s[i] __ '(':
                     count += 1
                 ____ s[i] __ ')':

@@ -37,10 +37,10 @@ c_ Twitter(o..
       __ tweets[followeeId]:
         h__.heappush(heap, tweets[followeeId][-1])
     cnt 10
-    w.... heap a.. cnt > 0:
+    w.... heap a.. cnt > 0
       _, tid, uid, idx h__.heappop(heap)
       ret.a..(tid)
-      __ idx > 0:
+      __ idx > 0
         h__.heappush(heap, tweets[uid][idx - 1])
       cnt -_ 1
     r.. ret

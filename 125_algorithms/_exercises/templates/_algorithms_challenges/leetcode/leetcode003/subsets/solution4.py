@@ -16,7 +16,7 @@ c_ Solution:
         res    # list
         ___ j __ r..(k
             mask 1 << j
-            __ i & mask > 0:
+            __ i & mask > 0
                 res.a..(S[j])
         r.. res
 

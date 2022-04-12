@@ -27,7 +27,7 @@ ___ protein(rna
         ___ section __ line[line.i.. ':')+1:].r..(' ','').s..(','
             transDict[section] __.f.. _ \(+\'?(\w+)',line)[0]
     codec ''
-    w.... l..(rna) > 0:
+    w.... l..(rna) > 0
         __ transDict[rna[:3]] __ 'Stop':
             p..
         ____

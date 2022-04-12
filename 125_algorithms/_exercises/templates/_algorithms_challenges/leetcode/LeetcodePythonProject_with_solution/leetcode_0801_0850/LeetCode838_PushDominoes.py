@@ -14,7 +14,7 @@ c_ Solution(o..
         i 0
         w.... i < n a.. arr[i] __ '.':
             i += 1
-        __ i < n a.. arr[i] __ 'L' a.. i > 0:
+        __ i < n a.. arr[i] __ 'L' a.. i > 0
             arr[0] 'L'
             setVals(arr, 0, i)
         w.... i < n:

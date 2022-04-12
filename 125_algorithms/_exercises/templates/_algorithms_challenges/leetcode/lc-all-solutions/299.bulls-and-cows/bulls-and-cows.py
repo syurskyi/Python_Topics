@@ -19,11 +19,11 @@ c_ Solution(o..
       ____
         ds[s] += 1
         dg[g] += 1
-        __ ds[g] > 0:
+        __ ds[g] > 0
           b += 1
           dg[g] -_ 1
           ds[g] -_ 1
-        __ dg[s] > 0:
+        __ dg[s] > 0
           b += 1
           ds[s] -_ 1
           dg[s] -_ 1

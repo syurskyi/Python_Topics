@@ -23,7 +23,7 @@ c_ Solution(o..
                 count0 1
                 i += 1
                 prev i
-                w.... i < l..(s) a.. count0 > 0:
+                w.... i < l..(s) a.. count0 > 0
                     __ s[i] __ ')':
                         count0 -_ 1
                     ____ s[i] __ '(':

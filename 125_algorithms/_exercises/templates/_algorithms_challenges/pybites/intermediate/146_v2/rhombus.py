@@ -25,7 +25,7 @@ ___ gen_rhombus(width
     diff 2
     j 1
     lines    # list
-    w.... i > 0:
+    w.... i > 0
         space_before (width - i)//2
         spaces ' ' * space_before
         line f"{spaces}{STAR * i}{spaces}"

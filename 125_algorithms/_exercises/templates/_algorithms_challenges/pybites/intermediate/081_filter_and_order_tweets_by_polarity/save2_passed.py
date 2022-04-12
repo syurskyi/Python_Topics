@@ -34,7 +34,7 @@ ___ filter_tweets_on_polarity(tweets, keep_positive=T..
     positive    # list
     negative    # list
     ___ tweet __ tweets:
-        __ tweet.polarity > 0:
+        __ tweet.polarity > 0
             positive.a..(tweet)
         ____
             negative.a..(tweet)

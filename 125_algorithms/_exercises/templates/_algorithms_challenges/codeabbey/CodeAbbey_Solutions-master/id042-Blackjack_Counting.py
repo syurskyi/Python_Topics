@@ -19,7 +19,7 @@ ___ blackjack_counter(games
             __ card __ 'A':
                 ace_count += 1
                 
-        w.... total > 21 a.. ace_count > 0:
+        w.... total > 21 a.. ace_count > 0
             total -_ 10
             ace_count -_ 1
 

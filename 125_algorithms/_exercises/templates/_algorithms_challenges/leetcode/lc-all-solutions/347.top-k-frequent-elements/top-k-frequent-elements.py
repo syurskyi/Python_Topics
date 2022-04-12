@@ -23,8 +23,8 @@ c_ Solution(o..
     buckets.r..
 
     ___ item __ buckets:
-      __ item a.. k > 0:
-        w.... item a.. k > 0:
+      __ item a.. k > 0
+        w.... item a.. k > 0
           ans.a..(item.pop
           k -_ 1
         __ k __ 0:

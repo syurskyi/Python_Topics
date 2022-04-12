@@ -15,7 +15,7 @@ c_ Solution(o..
     nodes s..()
     ___ seq __ seqs:
       nodes |= s..(seq)
-      __ l..(seq) > 0:
+      __ l..(seq) > 0
         incomings[seq[0]] += 0
       ___ i __ r..(0, l..(seq) - 1
         start, end seq[i], seq[i + 1]

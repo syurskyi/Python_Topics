@@ -39,7 +39,7 @@ c_ Solution(o..
             __ c __ "(":
                 left += 1
             ____ c __ ")":
-                __ left > 0:
+                __ left > 0
                     left -_ 1
                 ____
                     rmcnt += 1

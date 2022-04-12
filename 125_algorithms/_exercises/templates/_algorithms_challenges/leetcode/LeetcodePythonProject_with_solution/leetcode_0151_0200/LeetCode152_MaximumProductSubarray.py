@@ -15,7 +15,7 @@ c_ Solution(o..
         result nums[0]
         ___ i __ r..(1, n
             num nums[i]
-            __ num > 0:
+            __ num > 0
                 maxArr[i] m..(maxArr[i-1]*num, num)
                 minArr[i] m..(minArr[i-1]*num, num)
             ____

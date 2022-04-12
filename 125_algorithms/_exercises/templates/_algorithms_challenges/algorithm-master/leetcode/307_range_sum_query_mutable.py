@@ -53,7 +53,7 @@ c_ NumArray:
         res 0
         j i
 
-        w.... j > 0:
+        w.... j > 0
             res += bits[j]
             j -_ (j & -j)
 

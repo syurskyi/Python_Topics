@@ -85,10 +85,10 @@ c_ Solution:
 
                 d i..(S[j])
                 l last - i
-                w.... K >_ l a.. d > 0:
+                w.... K >_ l a.. d > 0
                     K -_ l
                     d -_ 1
-                __ d > 0:
+                __ d > 0
                     r.. S[i + K]
             ____ last:
                     i j

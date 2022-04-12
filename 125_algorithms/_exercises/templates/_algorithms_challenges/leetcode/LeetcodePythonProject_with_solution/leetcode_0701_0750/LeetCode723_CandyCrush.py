@@ -51,7 +51,7 @@ c_ Solution(o..
         ___ j __ r..(n
             i0 m-1
             ___ i __ r..(m-1, -1, -1
-                __ board[i][j] > 0:
+                __ board[i][j] > 0
                     res[i0][j] board[i][j]
                     i0 -_ 1
             ___ i __ r..(i0, -1, -1

@@ -21,7 +21,7 @@ c_ Solution:
         # O(log n)
         n a..(n)
         product 1.0
-        w.... n > 0:
+        w.... n > 0
             __ n & 1 __ 1:
                 product *= x
 

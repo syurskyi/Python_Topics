@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         prev n&1
         n >>= 1
-        w.... n > 0:
+        w.... n > 0
             digit n & 1
             __ n.. digit ^ prev:
                 r.. F..

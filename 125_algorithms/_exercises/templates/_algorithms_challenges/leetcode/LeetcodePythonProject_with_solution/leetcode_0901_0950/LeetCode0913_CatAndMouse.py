@@ -21,7 +21,7 @@ c_ Solution(o..
             ___ t __ r..(1, 3
                 color[0, i, t] MOUSE
                 queue.a..((0, i, t, MOUSE
-                __ i > 0:
+                __ i > 0
                     color[i, i, t] CAT
                     queue.a..((i, i, t, CAT
 

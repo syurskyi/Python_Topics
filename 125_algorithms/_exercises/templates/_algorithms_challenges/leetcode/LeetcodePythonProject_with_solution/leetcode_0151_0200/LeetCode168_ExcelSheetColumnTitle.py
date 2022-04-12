@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: str
         """
         res ''
-        w.... n > 0:
+        w.... n > 0
             mod (n-1)%26
             res chr(mod+o..('A'+res
             n i..((n-mod)/26)

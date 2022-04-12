@@ -53,7 +53,7 @@ c_ Solution:
         ___ end __ r..(n
             is_palindrome[end][end] T..
 
-            __ end > 0:
+            __ end > 0
                 start end - 1
                 is_palindrome[start][end] (s[start] __ s[end])
 

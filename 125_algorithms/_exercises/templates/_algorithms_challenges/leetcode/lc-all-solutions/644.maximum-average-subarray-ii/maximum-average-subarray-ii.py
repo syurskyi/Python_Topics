@@ -42,7 +42,7 @@ c_ Solution(o..
       mid nums[0] (lo + hi) / 2.
       sums (nums - mid).cumsum()
       mins np.minimum.accumulate(sums)
-      __ (sums[k:] - mins[:-k]).m..() > 0:
+      __ (sums[k:] - mins[:-k]).m..() > 0
         lo mid
       ____
         hi mid

@@ -46,7 +46,7 @@ ___ four_day_weekends $,
     """
 
 
-    __ args:
+    __ args
         r.. V...(ERROR_MSG)
     ____
         four_day_weekends workdays =  0
@@ -122,7 +122,7 @@ ___ four_day_weekends $,
 
             start_losing (four_day_weekends * 2 - before_days)//2
             date_start_losing N..
-            __ start_losing > 0:
+            __ start_losing > 0
                 date_start_losing weekend_dates[start_losing]
             ___ i,(weekend_start,weekend_end) __ e..(weekend_dates
                 print(f"{weekend_start} - {weekend_end}",end='')

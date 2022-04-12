@@ -10,7 +10,7 @@ ___ j __ binary:
     res_str ''
     
     #check if negative or positive
-    __ j > 0:
+    __ j > 0
         #append in the list
         bin_list.a..(j)
         w.... j !_ 1:

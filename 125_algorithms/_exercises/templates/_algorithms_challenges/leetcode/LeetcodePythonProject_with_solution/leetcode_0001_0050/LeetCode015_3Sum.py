@@ -26,7 +26,7 @@ c_ Solution(o..
                         j += 1
                     w.... j < k a.. nums[k] __ nums[k+1]:
                         k -_ 1
-                ____ tmp > 0:
+                ____ tmp > 0
                     k -_ 1
                 ____
                     j += 1

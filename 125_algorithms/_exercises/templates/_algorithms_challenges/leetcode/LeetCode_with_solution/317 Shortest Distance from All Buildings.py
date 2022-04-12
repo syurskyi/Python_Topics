@@ -32,7 +32,7 @@ c_ Solution(o..
         reachable [[T.. ___ _ __ x..(n)] ___ _ __ x..(m)]
         ___ i __ x..(m
             ___ j __ x..(n
-                __ grid[i][j] > 0:
+                __ grid[i][j] > 0
                     reachable[i][j] F..
                     acc[i][j] ___.maxint
 

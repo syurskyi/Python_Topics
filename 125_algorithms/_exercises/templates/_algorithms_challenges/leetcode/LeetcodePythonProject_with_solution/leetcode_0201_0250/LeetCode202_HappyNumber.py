@@ -14,7 +14,7 @@ c_ Solution(o..
         hashset.add(n)
         w.... n !_ 1:
             num 0
-            w.... n > 0:
+            w.... n > 0
                 num += (n % 10)**2
                 n i..(n/10)
             __ num __ hashset:

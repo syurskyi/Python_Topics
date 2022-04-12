@@ -19,7 +19,7 @@ c_ Solution:
             r.. grid[y][x]
         ____ t[y][x] !_ -1:
             r.. t[y][x]
-        ____ x __ 0 a.. y > 0:
+        ____ x __ 0 a.. y > 0
             t[y][x] grid[y][x] + min_path_sum_aux(grid, x, y - 1, t)
             r.. t[y][x]
         ____ x > 0 a.. y __ 0:

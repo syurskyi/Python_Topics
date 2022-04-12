@@ -30,7 +30,7 @@ ___ format_entries(currency, locale, entries
         ___ _ __ r..(7
             table += ' '
 
-        w.... l..(entries) > 0:
+        w.... l..(entries) > 0
             table += '\n'
 
             # Find next entry in order
@@ -103,7 +103,7 @@ ___ format_entries(currency, locale, entries
                 change_str += '$'
                 change_dollar a..(i..(entry.change / 100.0
                 dollar_parts    # list
-                w.... change_dollar > 0:
+                w.... change_dollar > 0
                     dollar_parts.insert(0, s..(change_dollar % 1000
                     change_dollar change_dollar // 1000
                 __ l..(dollar_parts) __ 0:
@@ -135,7 +135,7 @@ ___ format_entries(currency, locale, entries
                 change_str += u'€'
                 change_euro a..(i..(entry.change / 100.0
                 euro_parts    # list
-                w.... change_euro > 0:
+                w.... change_euro > 0
                     euro_parts.insert(0, s..(change_euro % 1000
                     change_euro change_euro // 1000
                 __ l..(euro_parts) __ 0:
@@ -173,7 +173,7 @@ ___ format_entries(currency, locale, entries
         ___ _ __ r..(2
             table += ' '
 
-        w.... l..(entries) > 0:
+        w.... l..(entries) > 0
             table += '\n'
 
             # Find next entry in order
@@ -245,7 +245,7 @@ ___ format_entries(currency, locale, entries
                     change_str += '-'
                 change_dollar a..(i..(entry.change / 100.0
                 dollar_parts    # list
-                w.... change_dollar > 0:
+                w.... change_dollar > 0
                     dollar_parts.insert(0, s..(change_dollar % 1000
                     change_dollar change_dollar // 1000
                 __ l..(dollar_parts) __ 0:
@@ -273,7 +273,7 @@ ___ format_entries(currency, locale, entries
                     change_str += '-'
                 change_euro a..(i..(entry.change / 100.0
                 euro_parts    # list
-                w.... change_euro > 0:
+                w.... change_euro > 0
                     euro_parts.insert(0, s..(change_euro % 1000
                     change_euro change_euro // 1000
                 __ l..(euro_parts) __ 0:

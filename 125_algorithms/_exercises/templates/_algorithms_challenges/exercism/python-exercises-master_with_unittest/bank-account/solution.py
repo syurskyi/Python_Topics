@@ -19,7 +19,7 @@ c_ BankAccount(o..
 
     ___ deposit  amount
         w__ lock:
-            __ is_open a.. amount > 0:
+            __ is_open a.. amount > 0
                 balance += amount
             ____
                 r.. V...

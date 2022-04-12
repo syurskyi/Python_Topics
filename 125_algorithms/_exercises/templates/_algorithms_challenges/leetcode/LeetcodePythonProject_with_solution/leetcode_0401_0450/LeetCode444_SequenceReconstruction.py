@@ -15,7 +15,7 @@ c_ Solution(o..
                     graph[seq[i]]    # list
                 __ seq[i] n.. __ degree:
                     degree[seq[i]] 0
-                __ i > 0:
+                __ i > 0
                     graph[seq[i-1]].a..(seq[i])
                     degree[seq[i]] += 1
         queue    # list

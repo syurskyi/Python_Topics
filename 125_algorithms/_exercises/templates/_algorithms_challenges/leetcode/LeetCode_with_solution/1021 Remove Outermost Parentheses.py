@@ -64,7 +64,7 @@ c_ Solution:
                     ret.a..(e)
             ____
                 cnt -_ 1
-                __ cnt > 0:
+                __ cnt > 0
                     ret.a..(e)
 
         r.. "".j..(ret)

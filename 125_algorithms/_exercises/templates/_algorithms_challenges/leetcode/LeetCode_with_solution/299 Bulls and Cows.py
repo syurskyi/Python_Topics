@@ -25,12 +25,12 @@ c_ Solution(o..
         ___ i, v __ e..(guess
             __ v __ secret[i]:
                 A += 1
-                __ cnt[v] > 0:
+                __ cnt[v] > 0
                     cnt[v] -_ 1
                 ____
                     B -_ 1
 
-            ____ cnt[v] > 0:
+            ____ cnt[v] > 0
                 B += 1
                 cnt[v] -_ 1
 

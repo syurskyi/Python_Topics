@@ -16,7 +16,7 @@ c_ Solution(o..
         dp [[[0]*(n+1) ___ _ __ r..(m+1)] ___ _ __ r..(l+1)]
         ___ i __ r..(l+1
             nums [0, 0]
-            __ i > 0:
+            __ i > 0
                 s strs[i-1]
                 count0 s.c.. '0')
                 count1 l..(s)-count0

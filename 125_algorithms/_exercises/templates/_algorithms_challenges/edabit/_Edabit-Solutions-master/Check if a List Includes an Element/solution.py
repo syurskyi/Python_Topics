@@ -1,5 +1,5 @@
 ___ check(lst, el
-    __ lst.c.. el) > 0:
+    __ lst.c.. el) > 0
         r.. T..
     ____
         r.. F..

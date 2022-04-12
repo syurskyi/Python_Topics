@@ -13,7 +13,7 @@ ___ check_brackets(checks
             old_data_length  l..(data)
             data  data.r..('()','').r..('{}','').r..('[]','').r..('<>','')
 
-        __ l..(data) > 0:
+        __ l..(data) > 0
             answer.a..('0') # String had incorrect bracket usage.
         ____
             answer.a..('1') # String had completely correct bracket usage.

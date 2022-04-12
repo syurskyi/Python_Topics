@@ -3,7 +3,7 @@ ___ josephus_survivor(n,k
     index -1
     w.... circle.c.. 0) !_ n-1:
         steps k
-        w.... steps > 0:
+        w.... steps > 0
             __ index + 1 > n-1:
                 index 0
                 steps -_ 1

@@ -7,7 +7,7 @@ c_ Solution(o..
     """
     z x
     y 0
-    w.... x > 0:
+    w.... x > 0
       y y * 10 + x % 10
       x /= 10
     r.. z __ y

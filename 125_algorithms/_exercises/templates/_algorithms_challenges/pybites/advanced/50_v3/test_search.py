@@ -10,7 +10,7 @@ ____ s.. _______ (_convert_struct_time_to_dt, get_feed_entries,
 c_ AttrDict(d..
     """feedparser lets you access dict keys as attributes, hence a bit of
        mocking, got this from https://stackoverflow.com/a/14620633"""
-    ___ - , *args,  $$
+    ___ - , $  $$
         super(AttrDict, self).__init__ $ $$
         __dict__ self
 

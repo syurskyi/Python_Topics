@@ -7,13 +7,13 @@ ___ get_others(map_, r, c
     """
     num 0
 
-    __ r > 0:
+    __ r > 0
         num += map_[r-1][c] __ 1
 
     __ r < l..(map_) - 1:
         num += map_[r+1][c] __ 1
 
-    __ c > 0:
+    __ c > 0
         num += map_[r][c-1] __ 1
 
     __ c < l..(map_ 0 - 1:

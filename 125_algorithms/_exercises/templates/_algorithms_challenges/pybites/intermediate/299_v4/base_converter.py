@@ -20,7 +20,7 @@ ___ convert(number: i.., base: i.. 2) __ s..:
         r.. V...
 
     d..    # list
-    w.... number > 0:
+    w.... number > 0
         d...a..(number % base)
         number //= base
 

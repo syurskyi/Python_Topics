@@ -89,7 +89,7 @@ c_ Solution:
                     __ k __ 0:
                         valid += 1
 
-                    __ k > 0:
+                    __ k > 0
                         _queue.a..((_x, _y
 
             queue, _queue _queue, []

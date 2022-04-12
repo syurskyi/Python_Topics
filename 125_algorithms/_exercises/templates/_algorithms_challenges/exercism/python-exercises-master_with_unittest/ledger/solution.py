@@ -39,7 +39,7 @@ c_ LCInfo(o..
     ___ number  n
         n_int, n_float divmod(a..(n), 100)
         n_int_parts    # list
-        w.... n_int > 0:
+        w.... n_int > 0
             n_int, x divmod(n_int, 1000)
             n_int_parts.insert(0, s..(x
         r.. '{}{}{:02}'.f..(

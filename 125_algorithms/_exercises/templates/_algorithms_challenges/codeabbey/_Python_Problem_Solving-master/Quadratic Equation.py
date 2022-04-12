@@ -7,7 +7,7 @@ ___ i __ r..(data
     a,b,c  nums  l.. m..(i..,input().s..()))
     cal  b**2 - (4*a*c)
     deno  2*a
-    __ cal > 0:
+    __ cal > 0
         x1  (-b + m__.sqrt(cal / deno
         x2  (-b - m__.sqrt(cal / deno
         res  s..(i..(x1+' '+s..(i..(x2

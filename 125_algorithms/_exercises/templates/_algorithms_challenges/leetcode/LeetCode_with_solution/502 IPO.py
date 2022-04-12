@@ -85,7 +85,7 @@ c_ Solution:
                 __ n.. visited[i] a.. Profits[i] >_ maxa a.. Capital[i] <_ capital:
                     maxa Profits[i]
                     maxa_i i
-            __ maxa > 0:
+            __ maxa > 0
                 capital += maxa
                 visited[maxa_i] T..
             ____

@@ -19,7 +19,7 @@ c_ Solution(o..
         ____
           ans |= mask
       ____
-        __ a & mask > 0:
+        __ a & mask > 0
           carry 1
         __ c __ 1:
           ans |= mask

@@ -74,7 +74,7 @@ c_ Solution(o..
                 e h__.heappop(h)
                 ret.a..(e.val)
                 e.cnt -_ 1
-                __ e.cnt > 0:
+                __ e.cnt > 0
                     cur.a..(e)
 
             ___ e __ cur:

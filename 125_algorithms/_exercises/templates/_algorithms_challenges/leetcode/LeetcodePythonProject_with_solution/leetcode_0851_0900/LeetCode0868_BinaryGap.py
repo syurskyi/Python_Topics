@@ -13,7 +13,7 @@ c_ Solution(o..
         i 0
         prev -1
         res 0
-        w.... n > 0:
+        w.... n > 0
             d n % 2
             __ d __ 1:
                 __ prev >_ 0:

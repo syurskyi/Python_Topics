@@ -45,7 +45,7 @@ ___ fromAscii85(data
             ___ i, c __ e..(encoded_block[::-1]
                 encoded_int += (o..(c) - 33) * (85 ** i)
             encoded_byte f..(encoded_int, '08x')
-            __ padding > 0:
+            __ padding > 0
                 encoded_byte encoded_byte[:-padding * 2]
             index += 5
             result += ''.j..([chr(i..(encoded_byte[i:i + 2], 16 ___ i __ r..(0, l..(encoded_byte), 2)])

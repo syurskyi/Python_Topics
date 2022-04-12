@@ -5,7 +5,7 @@ ___ int_args(func
     $w.. f..
     ___ wrapper $
         # Validate arg type and value
-        ___ arg __ args:
+        ___ arg __ args
             __ n.. isi..(arg, i..
                 r.. T..
             ____

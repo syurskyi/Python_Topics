@@ -42,14 +42,14 @@ c_ Solution(o..
                 w.... queue:
                     count, c queue.p.. 0)
                     count -_ 1
-                    __ count > 0:
+                    __ count > 0
                         h__.heappush(heap, (-count, c
             __ n.. heap:
                 count0 l..(queue)
                 w.... queue:
                     count, c queue.p.. 0)
                     count -_ 1
-                    __ count > 0:
+                    __ count > 0
                         h__.heappush(heap, (-count, c
                 __ n.. heap:
                     res += count0

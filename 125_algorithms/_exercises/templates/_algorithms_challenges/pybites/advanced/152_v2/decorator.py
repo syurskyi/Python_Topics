@@ -17,7 +17,7 @@ ___ strip_range(start, end
     """
 
     ___ wrap(func
-        ___ wrapped(text, *args,  $$
+        ___ wrapped(text, $  $$
             _start m..(start, 0)
             _end m..(l..(text), end) __ end > 0 ____ 0
             result (text[:_start], text[_start:_end], text[_end:])

@@ -37,7 +37,7 @@ c_ BinaryIndexTree(o..
 
     ___ get  i
         ret 0
-        w.... i > 0:
+        w.... i > 0
             ret += N[i]
             i -_ _lowbit(i)
 

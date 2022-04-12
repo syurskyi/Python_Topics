@@ -48,7 +48,7 @@ c_ Solution(o..
         dp [num-val ___ num __ nums]
         ___ i __ r..(k
             now += dp[i]
-        __ now > 0:
+        __ now > 0
             r.. T..
         ___ i __ r..(k, l..(nums:
             now += dp[i]
@@ -56,7 +56,7 @@ c_ Solution(o..
             __ last < 0:
                 now -_ last
                 last 0
-            __ now > 0:
+            __ now > 0
                 r.. T..
         r.. F..
     
