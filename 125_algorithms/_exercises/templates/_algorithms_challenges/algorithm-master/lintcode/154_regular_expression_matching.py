@@ -38,7 +38,7 @@ c_ Solution:
         the substr end at `p[j - 1]`
         """
         dp [[F..] * (n + 1) ___ _ __ r..(m + 1)]
-        dp[0][0] T..
+        dp 0 0  T..
         # dp[i][0] = False  # i = 1 -> m + 1
         # dp[0][j] -> ?, need to check
 

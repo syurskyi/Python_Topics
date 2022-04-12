@@ -23,7 +23,7 @@ c_ Solution(o..
       ___ i __ r..(0, l..(word:
         prefix[word[:i]].a..(word)
 
-    m l..(words[0])
+    m l..(words 0
     res    # list
     p..    # list
     ___ word __ words:

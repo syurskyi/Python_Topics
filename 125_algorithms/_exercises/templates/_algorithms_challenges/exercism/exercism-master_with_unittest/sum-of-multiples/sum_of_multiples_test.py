@@ -55,7 +55,7 @@ c_ SumOfMultiplesTest(unittest.TestCase
         assertEqual(sum_of_multiples(10000, []), 0)
 
     ___ test_multiples_of_zero_will_be_none
-        assertEqual(sum_of_multiples(1, [0]), 0)
+        assertEqual(sum_of_multiples(1,  0, 0)
 
     ___ test_multiples_with_a_zero_factor
         assertEqual(sum_of_multiples(4, [0, 3]), 3)

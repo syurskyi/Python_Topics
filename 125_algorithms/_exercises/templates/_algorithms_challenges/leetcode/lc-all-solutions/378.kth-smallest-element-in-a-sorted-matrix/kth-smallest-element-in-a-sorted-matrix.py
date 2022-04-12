@@ -9,7 +9,7 @@ c_ Solution(o..
     :rtype: int
     """
     visited  {(0, 0)}
-    heap  [(matrix[0][0], (0, 0]
+    heap  [(matrix 0 0 , (0, 0]
 
     w.... heap:
       val, (i, j)  heapq.heappop(heap)

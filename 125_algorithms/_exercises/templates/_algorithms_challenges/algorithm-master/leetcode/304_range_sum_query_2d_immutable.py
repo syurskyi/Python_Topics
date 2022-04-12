@@ -13,7 +13,7 @@ c_ NumMatrix:
         __ n.. matrix o. n.. matrix[0]:
             r..
 
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         prefix_sum [[0] * (n + 1) ___ _ __ r..(m + 1)]
 
         ___ x __ r..(1, m + 1
@@ -38,8 +38,8 @@ c_ NumMatrix:
             prefix_sum[0],
             0 <_ x1 < l..(prefix_sum),
             0 <_ x2 + 1 < l..(prefix_sum),
-            0 <_ y1 < l..(prefix_sum[0]),
-            0 <_ y2 + 1 < l..(prefix_sum[0]),
+            0 <_ y1 < l..(prefix_sum 0,
+            0 <_ y2 + 1 < l..(prefix_sum 0,
         :
             r.. 0
 

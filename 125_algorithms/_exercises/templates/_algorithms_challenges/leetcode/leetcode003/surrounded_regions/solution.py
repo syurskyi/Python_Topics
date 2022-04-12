@@ -6,7 +6,7 @@ c_ Solution:
         n l..(board)
         __ n __ 0:
             r..
-        m l..(board[0])
+        m l..(board 0
         __ m __ 0:
             r..
         n n

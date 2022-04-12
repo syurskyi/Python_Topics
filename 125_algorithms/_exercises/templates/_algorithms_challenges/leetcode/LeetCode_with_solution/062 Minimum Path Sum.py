@@ -18,7 +18,7 @@ c_ Solution:
             r.. 0
 
         row_cnt l..(grid)
-        col_cnt l..(grid[0])
+        col_cnt l..(grid 0
 
 
         dp [[1<<31 ___ _ __ x..(col_cnt)] ___ _ __ x..(row_cnt)]

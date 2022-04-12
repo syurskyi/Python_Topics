@@ -26,7 +26,7 @@ c_ Handshake:
 
     ___ code_for_handshake  handshake
         code unreversed_code(handshake)
-        __ EVENTS.i.. handshake[0]) > EVENTS.i.. handshake[-1]
+        __ EVENTS.i.. handshake 0 > EVENTS.i.. handshake[-1]
             # Prepend code with 1 or add 'reverse' bit
             code setBit(code, 4)
         r.. '{0:b}'.f..(code)

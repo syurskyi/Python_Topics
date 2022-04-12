@@ -16,13 +16,13 @@ c_ Solution(o..
         graph    # dict
         ___ e, v __ z..(equations, values
             valuesMap[(e[0], e[1])] v
-            valuesMap[(e[1], e[0])] 1.0/v
+            valuesMap[(e[1], e 0] 1.0/v
             __ e[0] __ graph:
                 graph[e[0]].add(e[1])
             ____
                 graph[e[0]] s..([e[1]])
             __ e[1] __ graph:
-                graph[e[1]].add(e[0])
+                graph[e[1]].add(e 0
             ____
                 graph[e[1]] s..([e[0]])
         result    # list
@@ -34,7 +34,7 @@ c_ Solution(o..
             ____
                 tmp  [-1.0]
                 dfs(valuesMap, graph, query[0], query[1], 1.0, s..(), tmp)
-                result.a..(tmp[0])
+                result.a..(tmp 0
         r.. result
     
     ___ dfs  valuesMap, graph, start, target, curr, visited, result

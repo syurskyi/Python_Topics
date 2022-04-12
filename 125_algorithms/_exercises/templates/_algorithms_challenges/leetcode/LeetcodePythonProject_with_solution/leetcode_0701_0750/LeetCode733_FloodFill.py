@@ -19,7 +19,7 @@ c_ Solution(o..
         r.. image
     
     ___ helper  image, i, j, oldColor, newColor
-        m, n l..(image), l..(image[0])
+        m, n l..(image), l..(image 0
         image[i][j] newColor
         ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
             __ 0 <_ x < m a.. 0 <_ y < n a.. image[x][y] __ oldColor:

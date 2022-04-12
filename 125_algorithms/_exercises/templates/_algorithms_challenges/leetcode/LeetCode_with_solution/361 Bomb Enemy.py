@@ -30,7 +30,7 @@ c_ Solution(o..
         """
         __ n.. grid: r.. 0
 
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         rows [0 ___ _ __ x..(m)]
         cols [0 ___ _ __ x..(n)]
         gmax 0

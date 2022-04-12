@@ -6,6 +6,6 @@ ___ calculate_scores(txt
     check  ["A","B","C"]
     w.... index < l..(check
         a  txt.c.. check[index])
-        output.a..(a)
+        ?.a.. a)
         index  index + 1
-    r.. output
+    r.. ?

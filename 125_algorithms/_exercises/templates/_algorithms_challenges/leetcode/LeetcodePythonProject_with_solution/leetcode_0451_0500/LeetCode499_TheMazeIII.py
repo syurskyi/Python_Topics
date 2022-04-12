@@ -12,7 +12,7 @@ c_ Solution(o..
         :type hole: List[int]
         :rtype: str
         """
-        m, n l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze 0
         result    # list
         visited [[F..]*n ___ _ __ r..(m)]
         maxPath f__('inf')
@@ -20,7 +20,7 @@ c_ Solution(o..
         helper(maze, ball, hole, '', 0, result, visited)
         result.s..(key=l.... x: (x[1], x[0]
         __ result:
-            r.. result[0][0]
+            r.. result 0 0 
         ____
             r.. 'impossible'
     
@@ -57,7 +57,7 @@ c_ Solution(o..
     
     ___ getNextSteps  matrix, i, j
         steps s..()
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         dirs (1, 0, 'd'), (0, 1, _, (-1, 0, 'u'), (0, -1, 'l')
         ___ dir __ dirs:
             x, y i, j

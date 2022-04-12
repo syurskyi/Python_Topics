@@ -5,7 +5,7 @@ ___ find_even_nums(num
     output    # list
     w.... index < num:
         __ index % 2 __ 0:
-            output.a..(index)
+            ?.a.. index)
         index  index + 1
 
-    r.. output
+    r.. ?

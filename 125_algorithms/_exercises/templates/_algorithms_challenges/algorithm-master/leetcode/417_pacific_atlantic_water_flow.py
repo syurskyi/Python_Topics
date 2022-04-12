@@ -15,7 +15,7 @@ c_ Solution:
         __ n.. matrix o. n.. matrix[0]:
             r.. []
 
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         pqueue    # list
         aqueue    # list
 
@@ -36,7 +36,7 @@ c_ Solution:
         r.. l..(pvisited & avisited)
 
     ___ bfs  matrix, queue, visited
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
 
         ___ x, y __ queue:
             ___ dx, dy __ (
@@ -69,7 +69,7 @@ c_ Solution:
         __ n.. matrix o. n.. matrix[0]:
             r.. []
 
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         pvisited s..()
         avisited s..()
 
@@ -95,7 +95,7 @@ c_ Solution:
 
             __ n.. (
                 0 <_ _x < l..(matrix) a..
-                0 <_ _y < l..(matrix[0])
+                0 <_ _y < l..(matrix 0
 
                 _____
             __ (_x, _y) __ visited:

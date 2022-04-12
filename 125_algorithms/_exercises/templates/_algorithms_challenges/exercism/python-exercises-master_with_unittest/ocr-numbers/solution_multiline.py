@@ -12,7 +12,7 @@ OCR_HEIGHT 4
 
 ___ split_ocr_numbers(ocr_numbers: L..[s..]) __ L..[L..[s..]]:
     ocrs_split    # list
-    len_line l..(ocr_numbers[0])
+    len_line l..(ocr_numbers 0
     ___ start __ r..(0, len_line, OCR_WIDTH
         ocrs_split.a..(
             [line[start:start+OCR_WIDTH] ___ line __ ocr_numbers]
@@ -30,7 +30,7 @@ ___ split_ocr_lines(ocr_numbers: L..[s..]) __ L..[L..[s..]]:
 
 
 ___ validate_ocr_numbers(ocr_numbers: L..[s..]
-    n_first_line l..(ocr_numbers[0])
+    n_first_line l..(ocr_numbers 0
     __ n_first_line % OCR_WIDTH:
         message s..(n_first_line) + ' is not a multiple of ' + s..(OCR_WIDTH)
         r.. V...(message)

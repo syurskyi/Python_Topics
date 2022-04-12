@@ -10,7 +10,7 @@ c_ Solution(o..
         :rtype: int
         """
         islands s..()
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         ___ i __ r..(m
             ___ j __ r..(n
                 __ grid[i][j] __ 1:

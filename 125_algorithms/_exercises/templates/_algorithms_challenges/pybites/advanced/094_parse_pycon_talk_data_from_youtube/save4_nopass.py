@@ -732,7 +732,7 @@ ___ get_most_popular_talks_by_like_ratio(videos
     output s..(video_list,
                   key=l.... x: i..(x.metrics 'viewCount' ) / (i..(x.metrics 'likeCount' ) - i..(x.metrics 'dislikeCount' ,
                   r.._F..[:7]
-    r.. output
+    r.. ?
 
 
 ___ parse_isoduration(s

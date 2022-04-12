@@ -41,7 +41,7 @@ ___ get_pycon_speaker_first_names(soup_ N..
                 first_name speaker.s...s..(" ")[0].s..
                 first_names.a..(first_name)
         ____
-            first_names.a..(speaker_clean.s..(" ")[0])
+            first_names.a..(speaker_clean.s..(" ") 0
     r.. first_names
 
 

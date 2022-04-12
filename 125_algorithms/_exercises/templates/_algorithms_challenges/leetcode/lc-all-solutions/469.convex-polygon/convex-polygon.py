@@ -4,7 +4,7 @@ c_ Solution(o..
     :type points: List[List[int]]
     :rtype: bool
     """
-    calcDir l.... x, y, z: (y[0] - x[0]) * (z[1] - x[1]) - (y[1] - x[1]) * (z[0] - x[0])
+    calcDir l.... x, y, z: (y[0] - x 0 * (z[1] - x[1]) - (y[1] - x[1]) * (z[0] - x 0
     pre N..
     ___ i __ r..(0, l..(points) - 2
       x points[i]
@@ -20,6 +20,6 @@ c_ Solution(o..
       pre c
     __ pre * calcDir(points[-1], points[0], points[1]) < 0:
       r.. F..
-    __ pre * calcDir(points[-2], points[-1], points[0]) < 0:
+    __ pre * calcDir(points[-2], points[-1], points 0 < 0:
       r.. F..
     r.. T..

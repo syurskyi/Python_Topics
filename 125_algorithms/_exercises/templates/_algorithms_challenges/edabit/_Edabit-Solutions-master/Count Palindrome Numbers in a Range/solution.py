@@ -10,4 +10,4 @@ ___ count_palindromes(num1, num2
         __ ispalindrome(num1) __ T..
             output += 1
         num1 += 1
-    r.. output
+    r.. ?

@@ -19,7 +19,7 @@ c_ Solution(o..
         maxVal -1
         flag F..
         info    # list
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         ___ i __ r..(m
             ___ j __ r..(n
                 __ grid[i][j] __ 1:
@@ -42,7 +42,7 @@ c_ Solution(o..
     ___ dfs  row, col, grid, count, walls, res
         shiftX [1, 0, -1, 0]
         shiftY [0, 1, 0, -1]
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         ___ i __ r..(4
             newRow row+shiftX[i]
             newCol col+shiftY[i]
@@ -60,7 +60,7 @@ c_ Solution(o..
     ___ update  grid, quarantine
         shiftX [1, 0, -1, 0]
         shiftY [0, 1, 0, -1]
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         ___ i __ r..(m
             ___ j __ r..(n
                 __ grid[i][j] > 1 a.. grid[i][j] !_ quarantine:

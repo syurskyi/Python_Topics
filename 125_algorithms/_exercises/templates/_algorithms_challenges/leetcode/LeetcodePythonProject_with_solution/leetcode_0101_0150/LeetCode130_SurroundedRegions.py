@@ -9,8 +9,8 @@ c_ Solution(o..
         :type board: List[List[str]]
         :rtype: void Do not return anything, modify board in-place instead.
         """
-        __ n.. board o. l..(board) <_ 1 o. l..(board[0]) <_ 1: r..
-        m, n l..(board), l..(board[0])
+        __ n.. board o. l..(board) <_ 1 o. l..(board 0 <_ 1: r..
+        m, n l..(board), l..(board 0
         ___ i __ r..(m
             __ board[i][0] __ 'O':
                 bfs(board, i, 0)
@@ -30,7 +30,7 @@ c_ Solution(o..
     
     ___ bfs  board, x, y
         board[x][y] '#'
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
         index x*n+y
         queue [index]
         w.... queue:

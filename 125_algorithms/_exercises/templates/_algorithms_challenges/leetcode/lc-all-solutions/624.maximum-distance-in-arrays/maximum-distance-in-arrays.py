@@ -8,7 +8,7 @@ c_ Solution(o..
     n l..(arrays)
     minArray, maxArray    # list, []
     ___ i __ r..(n
-      minArray.a..(arrays[i][0])
+      minArray.a..(arrays[i] 0
       maxArray.a..(arrays[i][-1])
     lMax [maxArray[0]] * n
     rMax [maxArray[-1]] * n
@@ -29,7 +29,7 @@ c_ Solution(o..
   # one pass
   ___ maxDistance  arrays
     n l..(arrays)
-    minNum arrays[0][0]
+    minNum arrays 0 0 
     maxNum arrays[0][-1]
     ans f__("-inf")
     ___ i __ r..(1, n

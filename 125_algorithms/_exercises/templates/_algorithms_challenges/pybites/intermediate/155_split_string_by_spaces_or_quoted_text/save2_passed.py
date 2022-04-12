@@ -11,4 +11,4 @@ ___ split_words_and_quoted_text(text
             __ m.group() n.. __ l:
                 l.a..(m.group
     output [entry.r..('"', '') ___ entry __ l]
-    r.. output
+    r.. ?

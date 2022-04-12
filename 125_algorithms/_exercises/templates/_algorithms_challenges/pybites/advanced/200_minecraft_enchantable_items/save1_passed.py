@@ -100,7 +100,7 @@ ___ generate_enchantments(soup
     enchant_data: DefaultDict[A.., Enchantment] d..(Enchantment)
 
     ___ i, row __ e..(data
-        id_name, name split_title(row[0])
+        id_name, name split_title(row 0
         max_level ROMAN[row[1]]
         description row[2]
         items item_list[i]

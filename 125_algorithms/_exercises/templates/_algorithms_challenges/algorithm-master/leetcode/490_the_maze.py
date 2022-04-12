@@ -35,7 +35,7 @@ c_ Solution:
 
         visited.add((x, y
 
-        m, n l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze 0
 
         ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1:
             _x x + dx

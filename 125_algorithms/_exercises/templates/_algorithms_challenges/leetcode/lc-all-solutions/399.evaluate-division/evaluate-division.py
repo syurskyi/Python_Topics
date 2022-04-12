@@ -62,5 +62,5 @@ c_ Solution(o..
       g.connect(node1, node2, values[i])
 
     ___ query __ queries:
-      ans.a..(g.query(g.g.. query[0]), g.g.. query[1])))
+      ans.a..(g.query(g.g.. query 0, g.g.. query[1])))
     r.. ans

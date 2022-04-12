@@ -17,4 +17,4 @@ ___ intersection_union(lst1, lst2
              uni.a..(c)
     inter.s..()
     uni.s..()
-    r.. output
+    r.. ?

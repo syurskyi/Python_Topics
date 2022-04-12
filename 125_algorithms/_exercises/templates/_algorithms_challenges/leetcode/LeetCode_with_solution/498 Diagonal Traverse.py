@@ -29,7 +29,7 @@ c_ Solution:
         __ n.. matrix:
             r.. []
 
-        R, C l..(matrix), l..(matrix[0])
+        R, C l..(matrix), l..(matrix 0
         F [[] ___ _ __ r..(R+C-1)]
         ___ r __ r..(R
             ___ c __ r..(C
@@ -58,7 +58,7 @@ c_ Solution:
         j 0
         inc T..
         ret    # list
-        R, C l..(matrix), l..(matrix[0])
+        R, C l..(matrix), l..(matrix 0
         w... T...
             ret.a..(matrix[i][j])
             __ i __ R - 1 a.. j __ C - 1:

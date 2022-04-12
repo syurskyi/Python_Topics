@@ -13,7 +13,7 @@ c_ Solution(o..
         :rtype: int
         """
         dp [[0]*(G+1) ___ _ __ r..(P+1)]
-        dp[0][0] 1
+        dp 0 0  1
         ___ p, g __ z..(profit, group
             ___ i __ r..(P, -1, -1
                 ___ j __ r..(G-g, -1, -1

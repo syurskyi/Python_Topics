@@ -36,7 +36,7 @@ c_ Solution:
 
         ___ i __ r..(1, num_rows
             ans.a..([
-                (ans[i - 1] + [0])[j] + ([0] + ans[i - 1])[j]
+                (ans[i - 1] +  0[j] + ([0] + ans[i - 1])[j]
                 ___ j __ r..(l..(ans[i - 1]) + 1)
             ])
 

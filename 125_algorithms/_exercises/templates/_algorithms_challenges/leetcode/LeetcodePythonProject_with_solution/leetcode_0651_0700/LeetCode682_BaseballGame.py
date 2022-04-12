@@ -14,7 +14,7 @@ c_ Solution(o..
         ___ c __ ops:
             __ c __ '+':
                 res += valids[-1]+valids[-2]
-                valids.a..(valids[-1]+valids[-2])
+                valids.a..(valids[-1]+valids -2
             ____ c __ 'D':
                 res += valids[-1]*2
                 valids.a..(valids[-1]*2)

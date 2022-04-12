@@ -47,7 +47,7 @@ c_ Minesweeper:
     @classmethod
     ___ is_neighbor_a_mine(cls, inp, neighbor
         y, x neighbor[0], neighbor[1]
-        r.. (0 < y < l..(inp) a.. 0 < x < l..(inp[0]) a..
+        r.. (0 < y < l..(inp) a.. 0 < x < l..(inp 0 a..
                 cls.is_mine(inp[y][x]
 
     # Generates list of tuples for all neighboring coords
@@ -66,7 +66,7 @@ c_ Minesweeper:
     # Tests if all rows are the same size
     @classmethod
     ___ valid_len(cls, inp
-        r.. a..(l..(row) __ l..(inp[0]) ___ row __ inp)
+        r.. a..(l..(row) __ l..(inp 0 ___ row __ inp)
 
     @classmethod
     ___ valid_border(cls, inp
@@ -79,17 +79,17 @@ c_ Minesweeper:
 
     @classmethod
     ___ valid_middle_border(cls, row
-        r.. (cls.is_vertical_edge(row[0]) a..
+        r.. (cls.is_vertical_edge(row 0 a..
                 cls.is_vertical_edge(row[-1]
 
     @classmethod
     ___ valid_first_and_last_borders(cls, inp
-        r.. (cls.valid_first_or_last_border(inp[0]) a..
+        r.. (cls.valid_first_or_last_border(inp 0 a..
                 cls.valid_first_or_last_border(inp[-1]
 
     @classmethod
     ___ valid_first_or_last_border(cls, row
-        r.. (cls.is_corner(row[0]) a.. cls.is_corner(row[-1]) a..
+        r.. (cls.is_corner(row 0 a.. cls.is_corner(row[-1]) a..
                 a..(cls.is_horizontal_edge(square) ___ square __ row[1:-1]
 
     @classmethod

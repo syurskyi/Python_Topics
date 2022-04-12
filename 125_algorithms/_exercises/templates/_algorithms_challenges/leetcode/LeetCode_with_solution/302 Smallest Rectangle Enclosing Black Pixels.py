@@ -14,7 +14,7 @@ c_ Solution(o..
         :type y: int
         :rtype: int
         """
-        m, n l..(image), l..(image[0])
+        m, n l..(image), l..(image 0
         yaxis [
             1 __ any(image[i][j] __ "1" ___ i __ x..(m ____ 0
             ___ j __ x..(n)

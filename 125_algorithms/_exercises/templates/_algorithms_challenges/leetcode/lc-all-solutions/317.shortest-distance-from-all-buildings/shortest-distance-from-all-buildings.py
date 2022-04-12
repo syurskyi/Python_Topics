@@ -19,7 +19,7 @@ c_ Solution(o..
           newi, newj i + di, j + dj
           __ (newi, newj) __ visited:
             _____
-          __ 0 <_ newi < l..(grid) a.. 0 <_ newj < l..(grid[0]) a.. grid[newi][newj] !_ 2:
+          __ 0 <_ newi < l..(grid) a.. 0 <_ newj < l..(grid 0 a.. grid[newi][newj] !_ 2:
             __ grid[newi][newj] !_ 1:
               grid[newi][newj] -_ dist + 1
               hit[newi][newj] += 1
@@ -41,7 +41,7 @@ c_ Solution(o..
         __ grid[i][j] __ 1:
           count += 1
 
-    hit [[0] * l..(grid[0]) ___ _ __ r..(0, l..(grid]
+    hit [[0] * l..(grid 0 ___ _ __ r..(0, l..(grid]
     ___ i __ r..(0, l..(grid:
       ___ j __ r..(0, l..(grid[0]:
         __ grid[i][j] __ 1:

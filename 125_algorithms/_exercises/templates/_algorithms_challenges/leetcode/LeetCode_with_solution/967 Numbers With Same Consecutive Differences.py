@@ -42,7 +42,7 @@ c_ Solution:
             ret.e.. dfs(i, N, K
 
         __ N __ 1:
-            ret.a..([0])  # special case
+            ret.a..( 0  # special case
 
         r.. l..(
             map(l.... x: i..("".j.. m..(s.., x))), ret)

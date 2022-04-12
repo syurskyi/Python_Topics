@@ -14,7 +14,7 @@ c_ Solution(o..
             arr p...s..(' ')
             folder arr[0]
             files arr[1:]
-            ___ file __ files:
+            ___ file __ ?
                 arr0 file.s..('(')
                 content arr0[1][:-1]
                 filename arr0[0]

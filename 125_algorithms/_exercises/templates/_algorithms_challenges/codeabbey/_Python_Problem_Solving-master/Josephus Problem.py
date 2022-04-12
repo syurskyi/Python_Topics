@@ -29,4 +29,4 @@ w.... l..(sucide_squad) !_ 1:
     #check if reached end of the list
     __ squad_count __ l..(sucide_squad
         squad_count 0
-print(sucide_squad[0])
+print(sucide_squad 0

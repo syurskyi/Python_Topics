@@ -74,7 +74,7 @@ c_ Solution:
         :type parent: TrieNode
         """
         m l..(board)
-        n l..(board[0])
+        n l..(board 0
         marked.add((i, j
         c board[i][j]
 

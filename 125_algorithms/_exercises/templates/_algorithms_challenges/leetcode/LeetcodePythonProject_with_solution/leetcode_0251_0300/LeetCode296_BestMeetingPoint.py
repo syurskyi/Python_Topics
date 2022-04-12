@@ -6,7 +6,7 @@ Created on Mar 8, 2017
 
 c_ Solution(o..
     ___ minTotalDistance  grid
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         rows, cols    # list, []
         ___ i __ r..(m
             ___ j __ r..(n

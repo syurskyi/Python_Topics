@@ -33,7 +33,7 @@ c_ Solution(o..
                 m *= c
             res [m]
             ___ r __ productExceptSelf(rest
-                res.a..(r * nums[0])
+                res.a..(r * nums 0
             r.. res
 
 

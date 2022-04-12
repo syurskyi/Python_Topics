@@ -55,7 +55,7 @@ c_ Solution:
         __ n.. matrix o. n.. matrix[0]:
             r.. []
 
-        m, n l..(matrix), l..(matrix[0])  # row, col
+        m, n l..(matrix), l..(matrix 0  # row, col
         # don't do [[False] * n ] * m, memory management, all rows reference the same row
         P [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         A [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
@@ -80,7 +80,7 @@ c_ Solution:
     ___ dfs  matrix, i, j, C
         # check before dfs (to be consistent)
         C[i][j] T..
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         ___ x, y __ dirs:
             I i + x
             J j + y
@@ -99,7 +99,7 @@ c_ Solution:
         __ n.. matrix o. n.. matrix[0]:
             r.. []
 
-        m, n l..(matrix), l..(matrix[0])  # row, col
+        m, n l..(matrix), l..(matrix 0  # row, col
         P [[F..] * n ] * m
         A [[F..] * n ] * m
 
@@ -123,7 +123,7 @@ c_ Solution:
 
 
     ___ dfs_error  matrix, i, j, visisted, C, predicate
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         __ visisted[i][j]:
             r.. C[i][j]
 

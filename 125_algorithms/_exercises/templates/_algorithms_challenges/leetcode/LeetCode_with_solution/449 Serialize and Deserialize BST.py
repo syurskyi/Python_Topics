@@ -63,7 +63,7 @@ c_ Codec:
             r..
             
         lst l.. m..(i.., data.s..(DELIMITER)))
-        root TreeNode(lst[0])
+        root TreeNode(lst 0
         ___ insert(root, val
             # need to keep the parent
             __ val < root.val:

@@ -67,7 +67,7 @@ ___ diehard_pybites
             __ chunks[1].s.. __ "True":
                 s chunks[0].s..('/')
                 popular_challenges[s[0]] += 1
-    s ? ?.m.. 1 0 0, popular_challenges.most_common(1)[0])
+    s ? ?.m.. 1 0 0, popular_challenges.most_common(1) 0
     r.. s
 
 diehard_pybites()

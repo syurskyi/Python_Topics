@@ -23,7 +23,7 @@ c_ Solution:
             put(root, word)
 
 
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
         visited s..()
 
         ___ x __ r..(m
@@ -34,7 +34,7 @@ c_ Solution:
         r.. ans
 
     ___ dfs  board, i, j, root, visited, cnt
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
 
         ___ x __ r..(i, m
             ___ y __ r..(j, n
@@ -56,7 +56,7 @@ c_ Solution:
         __ (x, y) __ visited o. board[x][y] n.. __ node.children:
             r..
 
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
         node node.children[board[x][y]]
 
         p...a..((x, y

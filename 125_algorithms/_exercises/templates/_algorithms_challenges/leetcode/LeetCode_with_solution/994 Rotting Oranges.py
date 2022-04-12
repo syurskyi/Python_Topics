@@ -44,7 +44,7 @@ c_ Solution:
         """
         maintain a q for the newly rotten
         """
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         q    # list
         ___ i __ r..(m
             ___ j __ r..(n

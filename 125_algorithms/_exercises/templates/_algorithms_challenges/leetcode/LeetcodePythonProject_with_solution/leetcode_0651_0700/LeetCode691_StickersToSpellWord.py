@@ -28,7 +28,7 @@ c_ Solution(o..
             tar[o..(c)-o..('a')] += 1
         res f__('inf')
         ___ i __ r..(n
-            __ mp[i][o..(target[0])-o..('a')] __ 0:
+            __ mp[i][o..(target 0-o..('a')] __ 0:
                 _____
             s ''
             ___ j __ r..(26

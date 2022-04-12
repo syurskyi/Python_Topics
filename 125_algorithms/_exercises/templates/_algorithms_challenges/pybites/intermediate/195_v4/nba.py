@@ -62,7 +62,7 @@ ___ player_with_max_points_per_game
                                from players
                                where CAST(avg_points as numeric) =
                                (SELECT max(CAST(avg_points as numeric))
-                               as max_points from players)'''[0][0]
+                               as max_points from players)''' 0 0 
 
 
 ___ number_of_players_from_duke
@@ -77,7 +77,7 @@ ___ avg_years_active_players_stanford
        are active ("active" column)"""
     average t..(cur.execute('''SELECT AVG(CAST(active as numeric))
                                  from players
-                                 where college="Stanford University"'''[0][0]
+                                 where college="Stanford University"''' 0 0 
     r.. r..(average, 2)
 
 

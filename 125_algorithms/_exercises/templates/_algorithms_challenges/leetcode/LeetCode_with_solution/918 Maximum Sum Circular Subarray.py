@@ -85,11 +85,11 @@ c_ Solution:
         w.... i < n:
             cur[0] += A[i]
             cur[1] i
-            mx m..(mx, cur[0])
+            mx m..(mx, cur 0
             j i + 1
             w.... cur[0] >_ 0 a.. j < i + n:
                 cur[0] += A[j % n]
-                mx m..(mx, cur[0])
+                mx m..(mx, cur 0
                 j += 1
 
             i j

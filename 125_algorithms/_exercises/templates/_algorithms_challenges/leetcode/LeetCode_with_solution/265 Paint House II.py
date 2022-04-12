@@ -20,7 +20,7 @@ c_ Solution(o..
             r.. 0
 
         n l..(costs)
-        m l..(costs[0])
+        m l..(costs 0
         F [[0 ___ _ __ x..(m)] ___ _ __ x..(n+1)]
         ___ i __ x..(1, n+1
             ___ k1 __ x..(m

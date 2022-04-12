@@ -25,7 +25,7 @@ ___ get_most_complex_bites(N=10, stats=stats
             __ line_count __ 0:
                 line_count += 1
                 _____
-            score_identifier row[-1].rfind(";") +1
+            score_identifier row[-1].r.. ";") +1
             bite_score row[-1][score_identifier:]
             __ bite_score !_ "None":
                 num_identifier row[0].find(".")

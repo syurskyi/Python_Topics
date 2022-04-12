@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     __ n.. matrix:
       r.. []
-    n, m l..(matrix), l..(matrix[0])
+    n, m l..(matrix), l..(matrix 0
     pacific s..()
     atlantic s..()
     ans    # list

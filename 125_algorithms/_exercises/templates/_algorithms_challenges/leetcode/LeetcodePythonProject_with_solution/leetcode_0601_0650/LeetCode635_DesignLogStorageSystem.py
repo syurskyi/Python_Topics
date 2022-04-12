@@ -35,7 +35,7 @@ c_ LogSystem(o..
         ___ timestamp __ timestamps:
             __ timestamp[1][:idx] >_ s[:idx] a..\
                 timestamp[1][:idx] <_ e[:idx]:
-                res.a..(timestamp[0])
+                res.a..(timestamp 0
         r.. res
 
 __ _____ __ _____

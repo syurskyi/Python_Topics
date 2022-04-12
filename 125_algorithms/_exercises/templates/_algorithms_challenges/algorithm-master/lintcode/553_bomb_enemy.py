@@ -39,7 +39,7 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. ans
 
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         row, cols 0, [0] * n
 
         ___ x __ r..(m
@@ -99,7 +99,7 @@ c_ Solution:
         r.. ans
 
     ___ get_killed_cnt  grid, i, j
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         cnt 0
 
         # up

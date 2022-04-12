@@ -7,7 +7,7 @@ ___ sequence_generator
     
     sequence    # list
     ___ pair __ z..(numbers, letters
-        sequence.a..(pair[0])
+        sequence.a..(pair 0
         sequence.a..(pair[1])
 
     repeating_sequence i...cycle(sequence)

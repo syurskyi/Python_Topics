@@ -69,7 +69,7 @@ c_ Codec:
         :rtype: TreeNode
         """
         lst data.s..(",")
-        root d.. lst[0])
+        root d.. lst 0
 
         q d..([root])
         i 1

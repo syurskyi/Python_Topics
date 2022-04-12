@@ -32,7 +32,7 @@ c_ Solution:
         q    # list
         # scan the boarder
         m l..(board)
-        n l..(board[0])
+        n l..(board 0
         ___ i __ x..(m
             __ board[i][0]__'O': q.a..((i, 0
             __ board[i][n-1]__'O': q.a..((i, n-1

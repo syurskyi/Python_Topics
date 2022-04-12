@@ -46,7 +46,7 @@ c_ Solution(o..
                 r..
             ___ elt __ lst:
                 __ n.. (elt __ "00" a.. l..(cur) __ n-2
-                    cur.appendleft(elt[0])
+                    cur.appendleft(elt 0
                     cur.a..(elt[1])
                     build(n, cur, ret)
                     cur.p.. )

@@ -71,8 +71,8 @@ ___ high_low_record_breakers_for_2015
     minimum n.nsmallest(1,0).T.squeeze()
     maximum n.nlargest(1,0).T.squeeze()
     
-    s1 STATION(minimum.ID,minimum.Date,minimum[0])
-    s2 STATION(maximum.ID,maximum.Date,maximum[0])
+    s1 STATION(minimum.ID,minimum.Date,minimum 0
+    s2 STATION(maximum.ID,maximum.Date,maximum 0
 
     r.. s2,s1
 

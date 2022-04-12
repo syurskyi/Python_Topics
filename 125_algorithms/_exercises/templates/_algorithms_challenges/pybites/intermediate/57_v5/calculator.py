@@ -12,7 +12,7 @@ ___ calculator(operation, numbers
            }
     __ isi..(numbers, i..
         numbers [numbers]
-    res f__(numbers[0])
+    res f__(numbers 0
     ___ num __ numbers[1:]:
         res ops[operation]([res, f__(num)])
     r.. r..(res,2)

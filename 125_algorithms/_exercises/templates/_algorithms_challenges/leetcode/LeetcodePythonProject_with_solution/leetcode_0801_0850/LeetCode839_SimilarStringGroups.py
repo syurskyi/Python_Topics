@@ -13,7 +13,7 @@ c_ Solution(o..
         """
         arr l..(s..(A
         parents {x: x ___ x __ arr}
-        n, m l..(arr), l..(arr[0])
+        n, m l..(arr), l..(arr 0
         count n
         
         ___ find(x

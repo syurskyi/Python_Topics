@@ -9,7 +9,7 @@ c_ Solution:
         __ n.. image o. n.. image[0]:
             r.. 0
 
-        m, n l..(image), l..(image[0])
+        m, n l..(image), l..(image 0
 
         top binary_search(image, 0, x, is_empty_row)
         bottom binary_search(image, m - 1, x, is_empty_row)

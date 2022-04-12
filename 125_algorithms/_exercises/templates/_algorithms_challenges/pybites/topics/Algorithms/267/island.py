@@ -21,26 +21,26 @@ ___ get_others(map_, r, c
     # your code here
     __ r __ 0 a.. c __ 0: #top left corder
         nums += 2
-        __ l..(map_[0]) > 1:
+        __ l..(map_ 0 > 1:
             __ map_[r][c+1] __ 0:
                 nums += 1
             __ map_[r+1][c] __ 0:
                 nums += 1
-    ____ r __ 0 a.. c __ l..(map_[0])-1: #top right corner
+    ____ r __ 0 a.. c __ l..(map_ 0-1: #top right corner
         nums += 2
-        __ l..(map_[0]) > 1:
+        __ l..(map_ 0 > 1:
             __ map_[r][c-1] __ 0:
                 nums += 1
             __ map_[r+1][c] __ 0:
                 nums += 1
     ____ r __ l..(map_)-1 a.. c __ 0: #bottom left corder
         nums += 2
-        __ l..(map_[0]) > 1:
+        __ l..(map_ 0 > 1:
             __ map_[r][c+1] __ 0:
                 nums += 1
             __ map_[r-1][c] __ 0:
                 nums += 1
-    ____ r __ l..(map_)-1 a.. c __ l..(map_[0])-1: #bottom right corner
+    ____ r __ l..(map_)-1 a.. c __ l..(map_ 0-1: #bottom right corner
         nums += 2
         __ map_[r][c-1] __ 0:
             nums += 1
@@ -68,9 +68,9 @@ ___ get_others(map_, r, c
             nums += 1
         __ map_[r+1][c] __ 0:
             nums += 1
-        __ l..(map_[0]) > c a.. map_[r][c+1] __ 0:
+        __ l..(map_ 0 > c a.. map_[r][c+1] __ 0:
             nums += 1
-    ____ c __ l..(map_[0])-1: # right edge. excluding corner
+    ____ c __ l..(map_ 0-1: # right edge. excluding corner
         nums += 1
         __ map_[r-1][c] __ 0:
             nums += 1

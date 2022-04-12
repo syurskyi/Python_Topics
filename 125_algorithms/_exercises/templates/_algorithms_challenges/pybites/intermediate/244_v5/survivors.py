@@ -79,12 +79,12 @@ ___ filter_killed_mutants(mutpy_output: l..  N..) __ l..:
                 __ 'survived' __ line:
                     output.e.. test_result)
                 test_result.clear()
-                output.a..(line)
+                ?.a.. line)
                 in_test  F..
             ____
                 test_result.a..(line)
         ____
             __ line.s.. '   - [#'
                 in_test  T..
-            output.a..(line)
-    r.. output
+            ?.a.. line)
+    r.. ?

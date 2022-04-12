@@ -19,7 +19,7 @@ c_ Solution:
 
         Dijkstra's algorith, reduce to a graph problem
         """
-        m, n l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze 0
         D [[f__("inf") ___ _ __ r..(n)] ___ _ __ r..(m)]  # distance matrix
         i, j start
         D[i][j] 0

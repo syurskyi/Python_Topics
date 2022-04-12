@@ -7,4 +7,4 @@ ___ s..(txt
             output += i
         __ i n.. __ vset:
             output2 += i
-    r.. output + output2
+    r.. ? + output2

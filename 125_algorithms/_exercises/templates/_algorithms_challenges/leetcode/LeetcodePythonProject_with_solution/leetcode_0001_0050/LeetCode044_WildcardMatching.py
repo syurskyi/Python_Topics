@@ -24,4 +24,4 @@ c_ Solution(o..
                     dp[i][j]  dp[i+1][j+1]
                 ____ p[j] __ '*':
                     dp[i][j]  dp[i][j+1] o. dp[i+1][j]
-        r.. dp[0][0]
+        r.. dp 0 0 

@@ -49,7 +49,7 @@ c_ Solution:
         heapq.heapify(capital_q)
         capital W
         ___ _ __ r..(k
-            w.... capital_q a.. capital_q[0][0] <_ capital:
+            w.... capital_q a.. capital_q 0 0  <_ capital:
                 _, pro heapq.heappop(capital_q)
                 heapq.heappush(profit_q, (-pro, pro
 

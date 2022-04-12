@@ -12,7 +12,7 @@ c_ Solution(o..
         single.a..(s)
         _____
       hashcodeArray    # list
-      pre o..(s[0]) - o..("a")
+      pre o..(s 0 - o..("a")
       ___ i __ r..(1, l..(s:
         hashcodeArray.a..(s..(((o..(s[i]) - o..("a" - pre) % 26
         pre o..(s[i]) - o..("a")

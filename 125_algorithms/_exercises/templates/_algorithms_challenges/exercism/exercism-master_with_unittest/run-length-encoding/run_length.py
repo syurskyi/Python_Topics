@@ -17,5 +17,5 @@ ___ d.. s__
 
     # Fix hardcoded 0 and 1 indices
     # Also change name of x variable
-    r.. ''.j..([i..(x[0]) * x[1] __ x[0].i.. ____ x[1]
+    r.. ''.j..([i..(x 0 * x[1] __ x[0].i.. ____ x[1]
                     ___ x __ pairs])

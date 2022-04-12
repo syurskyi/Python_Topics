@@ -30,7 +30,7 @@ c_ Solution:
             r.. -1
 
         INFINITY f__('inf')
-        m, n l..(G), l..(G[0])
+        m, n l..(G), l..(G 0
         min_steps [[INFINITY] * n ___ _ __ r..(m)]
 
         queue [S]

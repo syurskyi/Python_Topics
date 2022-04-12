@@ -60,7 +60,7 @@ c_ Solution(o..
         dp [[F.. ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
 
         # initialize boundary conditions
-        dp[0][0] T..
+        dp 0 0  T..
         ___ i __ x..(1, m+1
             dp[i][0] dp[i-1][0] a.. s3[i+0-1] __ s1[i-1]
         ___ j __ x..(1, n+1

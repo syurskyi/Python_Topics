@@ -5,7 +5,7 @@ Created on Mar 13, 2017
 '''
 c_ NumMatrix_BinaryIndexTree_TLE(o..
     ___ - , matrix
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         m, n m, n
         __ n.. m o. n.. n: r..
         tree [[0]*(n+1) ___ _ __ r..(m+1)]
@@ -52,7 +52,7 @@ c_ NumMatrix(o..
         __ n.. matrix:
             r..
         matrix matrix
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         colSums [[0]*n ___ _ __ r..(m+1)]
         ___ i __ r..(m+1
             ___ j __ r..(n

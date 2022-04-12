@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. grid: r.. 0
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         res 0
         ___ i __ r..(m
             ___ j __ r..(n
@@ -23,7 +23,7 @@ c_ Solution(o..
     
     ___ bfs  grid, i, j
         queue [(i, j)]
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         w.... queue:
             i, j queue.p.. 0)
             ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1

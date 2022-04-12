@@ -38,7 +38,7 @@ c_ Solution:
         """
         not dfs from any cell, but dfs from the edges
         """
-        m, n l..(A), l..(A[0])
+        m, n l..(A), l..(A 0
         visited [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         ___ i __ r..(m
             ___ j __ r..(n
@@ -53,7 +53,7 @@ c_ Solution:
         r.. ret
 
     ___ dfs  A, i, j, visited
-        m, n l..(A), l..(A[0])
+        m, n l..(A), l..(A 0
         visited[i][j] T..
         ___ di, dj __ dirs:
             I i + di
@@ -70,7 +70,7 @@ c_ SolutionError:
         """
         dfs coloring
         """
-        m, n l..(A), l..(A[0])
+        m, n l..(A), l..(A 0
         visited [[N.. ___ _ __ r..(n)] ___ _ __ r..(m)]  # 0 not off, 1 off
         ___ i __ r..(m
             ___ j __ r..(n
@@ -79,7 +79,7 @@ c_ SolutionError:
         r.. ret
 
     ___ dfs  A, i, j, visited
-        m, n l..(A), l..(A[0])
+        m, n l..(A), l..(A 0
         visited[i][j] 0
         ___ di, dj __ dirs:
             I i + di

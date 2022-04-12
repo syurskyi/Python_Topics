@@ -14,7 +14,7 @@ c_ Solution(o..
         ___ i __ r..(l..(cost:
             __ i > 1:
                 cost[i] += m..(cost[i-1], cost[i-2])
-        r.. m..(cost[-1], cost[-2])
+        r.. m..(cost[-1], cost -2
     
     ___ test
         testCases [

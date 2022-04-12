@@ -7,6 +7,6 @@ ___ even_odd_partition(lst
             even.a..(i)
         ____
             odd.a..(i)
-    output.a..(even)
-    output.a..(odd)
-    r.. output
+    ?.a.. even)
+    ?.a.. odd)
+    r.. ?

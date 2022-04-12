@@ -10,7 +10,7 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. grid o. n.. grid[0]: r.. 0
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         hashset s..()
         count 0
         ___ i __ r..(m
@@ -35,7 +35,7 @@ c_ Solution(o..
         res[1] m..(res[1], i)
         res[2] m..(res[2], j)
         res[3] m..(res[3], j)
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1
             __ 0 <_ x < m a.. 0 <_ y < n a.. grid[x][y] __ 1:
                 grid[x][y] 2
@@ -60,7 +60,7 @@ c_ Solution(o..
         ___ grid __ [grid1, grid2, grid3]:
             grid0 grid
             ___ _ __ r..(4
-                m, n l..(grid0), l..(grid0[0])
+                m, n l..(grid0), l..(grid0 0
                 newGrid [[0]*m ___ _ __ r..(n)]
                 ___ i __ r..(m
                     ___ j __ r..(n
@@ -68,7 +68,7 @@ c_ Solution(o..
                 hashset.add(getKey(newGrid
                 grid0 newGrid
             ___ _ __ r..(4
-                m, n l..(grid0), l..(grid0[0])
+                m, n l..(grid0), l..(grid0 0
                 newGrid [[0]*m ___ _ __ r..(n)]
                 ___ i __ r..(m
                     ___ j __ r..(n

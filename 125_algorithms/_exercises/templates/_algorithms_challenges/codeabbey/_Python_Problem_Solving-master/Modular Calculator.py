@@ -3,7 +3,7 @@ count 0
 w.... n.. solved:
     cal input().s..
     __ count __ 0:
-        res i..(cal[0])
+        res i..(cal 0
         count count + 1
         _____
     __ cal[0] __ '+':

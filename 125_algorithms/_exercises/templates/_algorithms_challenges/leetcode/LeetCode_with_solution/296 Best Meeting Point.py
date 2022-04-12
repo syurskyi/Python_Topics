@@ -20,7 +20,7 @@ c_ Solution(o..
         y    # list
 
         m l..(grid)
-        n l..(grid[0])
+        n l..(grid 0
         ___ i __ x..(m
             ___ j __ x..(n
                 __ grid[i][j] __ 1:

@@ -45,7 +45,7 @@ ___ format_lines(matched_lines, files, flags
 ___ grep(pattern, files, flags=''
     matched_lines    # list
 
-    ___ file_name __ files:
+    ___ file_name __ ?
         w__ o.. file_name) __ f:
             ___ line_number, line __ e..(f.r.., start=1
                 __ matches(line, pattern, flags

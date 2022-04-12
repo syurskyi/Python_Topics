@@ -19,4 +19,4 @@ ___ athletes_most_medals(data=data
     output output 'Medal'
     output.index.name N..
 
-    r.. output.to_dict()
+    r.. ?.to_dict()

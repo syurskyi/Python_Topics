@@ -33,9 +33,9 @@ c_ Solution:
             ___ col __ x..(l..(triangle[row]:
                 dp[0].a..(triangle[row][col]+m..(dp[1][col], dp[1][col+1]  # next level
 
-        ... l..(dp[0])__1
+        ... l..(dp 0__1
 
-        r.. dp[0][0]
+        r.. dp 0 0 
 
 
 __ _____ __ ____

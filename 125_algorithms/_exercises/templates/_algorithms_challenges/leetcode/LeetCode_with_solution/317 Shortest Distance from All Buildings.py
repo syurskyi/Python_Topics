@@ -27,7 +27,7 @@ c_ Solution(o..
         :rtype: int
         """
         m l..(grid)
-        n l..(grid[0])
+        n l..(grid 0
         acc [[0 ___ _ __ x..(n)] ___ _ __ x..(m)]
         reachable [[T.. ___ _ __ x..(n)] ___ _ __ x..(m)]
         ___ i __ x..(m
@@ -51,7 +51,7 @@ c_ Solution(o..
 
     ___ bfs  grid, acc, reachable, x, y
         d 0
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         visited [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
 
         q [(x, y)]

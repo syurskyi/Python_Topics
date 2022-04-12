@@ -8,7 +8,7 @@ q3 my_queue(7)
 
 
 ?p__.m__.p.('fn_in,expected_result', [
-    (0, [0]),
+    (0,  0,
     (1, [0, 1]),
     (2, [0, 1, 2]),
     (3, [0, 1, 2, 3]),
@@ -22,7 +22,7 @@ ___ test_queue_default_arg(fn_in, expected_result
 
 
 ?p__.m__.p.('fn_in,expected_result', [
-    (0, [0]),
+    (0,  0,
     (1, [0, 1]),
     (2, [0, 1, 2]),
     (3, [1, 2, 3]),
@@ -36,7 +36,7 @@ ___ test_queue_less_items(fn_in, expected_result
 
 
 ?p__.m__.p.('fn_in,expected_result', [
-    (0, [0]),
+    (0,  0,
     (1, [0, 1]),
     (2, [0, 1, 2]),
     (3, [0, 1, 2, 3]),

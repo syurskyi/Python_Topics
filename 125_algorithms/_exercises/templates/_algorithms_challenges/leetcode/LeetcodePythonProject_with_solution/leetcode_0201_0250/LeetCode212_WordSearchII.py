@@ -33,7 +33,7 @@ c_ Solution(o..
         """
         result s..()
         root buildTrie(words)
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
         ___ i __ r..(m
             ___ j __ r..(n
                 dfs(board, i, j, root, [], result)
@@ -47,7 +47,7 @@ c_ Solution(o..
             elem.a..(c)
             result.add(''.j..(elem
             elem.p.. )
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
         
         ___ x, y __ ((i, j+1), (i, j-1), (i+1, j), (i-1, j:
             __ 0 <_ x < m a.. 0 <_ y < n:

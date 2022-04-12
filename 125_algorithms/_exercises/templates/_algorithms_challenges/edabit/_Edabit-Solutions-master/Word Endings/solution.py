@@ -3,6 +3,6 @@ ___ add_ending(lst, ending
     output    # list
     w.... index <l..(lst
       s  lst[index] + ending
-      output.a..(s)
+      ?.a.. s)
       index + 1
-    r.. output
+    r.. ?

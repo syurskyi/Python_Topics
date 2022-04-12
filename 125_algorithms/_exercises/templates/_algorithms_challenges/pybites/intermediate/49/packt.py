@@ -20,10 +20,10 @@ ___ get_book
     book_description soup.find("div", class_="dotd-main-book-summary").select("div")[2].get_text().s..
 
     # Link
-    book_link [a["href"] ___ a __ soup.find("div", class_="dotd-main-book-image").select("a[href]")][0]
+    book_link [a["href"] ___ a __ soup.find("div", class_="dotd-main-book-image").select("a[href]" 0
 
     # Image
-    book_image [img["data-original"] ___ img __ soup.find("div", class_="dotd-main-book-image").select("img[data-original]")][0]
+    book_image [img["data-original"] ___ img __ soup.find("div", class_="dotd-main-book-image").select("img[data-original]" 0
 
     # NamedTuple
     book_nt Book(book_title, book_description, book_image, book_link)

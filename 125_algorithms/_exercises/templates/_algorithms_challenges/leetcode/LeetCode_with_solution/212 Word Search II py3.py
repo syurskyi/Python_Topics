@@ -34,7 +34,7 @@ c_ TrieNode:
 c_ Solution:
     ___ findWords  board: L..[L..[s..]], words: L..[s..]) __ L..[s..]:
         root construct(words)
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
         visited [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         ret s..()
         ___ i __ r..(m
@@ -44,7 +44,7 @@ c_ Solution:
         r.. l..(ret)
 
     ___ dfs  board, visited, i, j, cur, ret
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
         visited[i][j] T..
         c board[i][j]
         __ c __ cur.children:

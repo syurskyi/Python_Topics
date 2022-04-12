@@ -1,6 +1,6 @@
 d input().s..
 result    # list
-___ i __ r..(1,i..(d[0])+1
+___ i __ r..(1,i..(d 0+1
     val i..(d[i])
     cel =(val-32) * 5/9
     __ (cel).int_integer

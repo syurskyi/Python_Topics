@@ -35,7 +35,7 @@ ___ extract_quotes(html: s.. HTML) __ d..:
     quote_temp __.s..("^\d", quote)
     __ quote_temp:
       quote_clean_start quote_temp.s__.find('"')
-      quote_clean_end quote_temp.s__.rfind('<')
+      quote_clean_end quote_temp.s__.r.. '<')
       quote_clean quote_temp.s__[quote_clean_start:quote_clean_end]
 
       value, key quote_clean.s..(" - ")

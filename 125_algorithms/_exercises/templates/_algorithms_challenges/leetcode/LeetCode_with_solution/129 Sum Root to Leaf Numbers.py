@@ -82,4 +82,4 @@ __ _____ __ ____
     nodes [TreeNode(0), TreeNode(1), TreeNode(3)]
     nodes[0].left nodes[1]
     nodes[0].right nodes[2]
-    Solution().sumNumbers(nodes[0])
+    Solution().sumNumbers(nodes 0

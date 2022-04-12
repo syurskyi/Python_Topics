@@ -40,7 +40,7 @@ c_ Solution:
         __ n.. A:
             r.. ret
             
-        counter C..(A[0])
+        counter C..(A 0
         ___ a __ A[1:]:
             cur C..(a)
             ___ c __ s__.a..:

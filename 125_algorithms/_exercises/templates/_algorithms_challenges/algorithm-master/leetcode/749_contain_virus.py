@@ -45,7 +45,7 @@ c_ Solution:
         r.. walls
 
     ___ build_walls  G
-        m, n l..(G), l..(G[0])
+        m, n l..(G), l..(G 0
         ex_virus    # list
         spreading    # list
         walls    # list
@@ -81,7 +81,7 @@ c_ Solution:
         r.. walls[_max_i]
 
     ___ dfs  x, y, G, visited, ex_virus, spreading, walls
-        m, n l..(G), l..(G[0])
+        m, n l..(G), l..(G 0
         __ n.. (0 <_ x < m a.. 0 <_ y < n) o. visited[x][y]:
             r..
 

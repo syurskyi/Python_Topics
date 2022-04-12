@@ -9,7 +9,7 @@ c_ Solution:
         __ n.. s o. n.. S o. l..(s) < l..(S) * l..(S[0]
             r.. ans
 
-        n, m, k l..(s), l..(S), l..(S[0])
+        n, m, k l..(s), l..(S), l..(S 0
         F    # dict
         ___ c __ S:
             F[c] F.g.. c, 0) + 1

@@ -14,7 +14,7 @@ c_ NumMatrix:
         __ n.. matrix o. n.. matrix[0]:
             r..
 
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         bits [[0] * (n + 1) ___ _ __ r..(m + 1)]  # bits
         incr [[0] * (n + 1) ___ _ __ r..(m + 1)]  # increments
 
@@ -35,7 +35,7 @@ c_ NumMatrix:
         delta val - incr[i][j]
         incr[i][j] val
 
-        m, n l..(incr), l..(incr[0])
+        m, n l..(incr), l..(incr 0
 
         w.... i < m:
             j y + 1

@@ -44,7 +44,7 @@ c_ Solution(o..
         :rtype: void Do not return anything, modify board in-place instead.
         """
         m l..(board)
-        n l..(board[0])
+        n l..(board 0
         lines [[0 ___ _ __ x..(n)] ___ _ __ x..(2)]
         ___ i __ x..(m
             ___ j __ x..(n

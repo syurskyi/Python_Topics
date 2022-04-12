@@ -30,7 +30,7 @@ ___ get_income_distribution(___=countries
         level ""
         country ""
         ___ ele __ child:
-            element ele.tag[ele.tag.rfind("}") +1:].l..
+            element ele.tag[ele.tag.r.. "}") +1:].l..
 
             __ element __ "incomelevel":
                 level ele.text

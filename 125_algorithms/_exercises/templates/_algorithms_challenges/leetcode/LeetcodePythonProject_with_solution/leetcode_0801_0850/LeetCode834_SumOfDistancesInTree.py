@@ -53,7 +53,7 @@ c_ Solution(o..
             graph[i]    # list
         ___ edge __ edges:
             graph[edge[0]].a..(edge[1])
-            graph[edge[1]].a..(edge[0])
+            graph[edge[1]].a..(edge 0
         res    # list
         ___ i __ r..(n
             res.a..(bfs(graph, i

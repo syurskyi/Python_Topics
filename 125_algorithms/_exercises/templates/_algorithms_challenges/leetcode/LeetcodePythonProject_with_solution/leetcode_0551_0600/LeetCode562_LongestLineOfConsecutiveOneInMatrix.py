@@ -12,7 +12,7 @@ c_ Solution(o..
         matrix M
         __ n.. matrix o. n.. matrix[0]: r.. 0
         maxLen 0
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         dp [[[0]*4 ___ _ __ r..(n)] ___ _ __ r..(m)]
         ___ i __ r..(m
             ___ j __ r..(n

@@ -28,9 +28,9 @@ c_ Solution(o..
         hi [___.float_info.m..]
         find(root, target, hi, F..)
         __ hi[0] - target < target - lo[0]:
-            r.. i..(hi[0])
+            r.. i..(hi 0
         ____
-            r.. i..(lo[0])
+            r.. i..(lo 0
 
     ___ find  root, target, ret, lower=T..
         __ n.. root:

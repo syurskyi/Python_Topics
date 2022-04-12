@@ -9,7 +9,7 @@ c_ Solution(o..
         :type grid: List[List[int]]
         :rtype: int
         """
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         res 0
         ___ i __ r..(m-2
             ___ j __ r..(n-2

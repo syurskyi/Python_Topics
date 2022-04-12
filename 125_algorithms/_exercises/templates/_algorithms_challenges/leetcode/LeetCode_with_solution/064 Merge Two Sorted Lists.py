@@ -54,5 +54,5 @@ __ _____ __ ____
         list1[i].next list1[i+1]
         list2[i].next list2[i+1]
 
-    lst Solution().mergeTwoLists(list1[0], list2[0])
+    lst Solution().mergeTwoLists(list1[0], list2 0
     print lst

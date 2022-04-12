@@ -31,7 +31,7 @@ c_ Solution:
 
         target s // 2
         d d..(l....: d..(i..
-        d[0][0] 1
+        d 0 0  1
         d[0][nums[0]] 1
 
         ___ i __ r..(1, l..(nums:

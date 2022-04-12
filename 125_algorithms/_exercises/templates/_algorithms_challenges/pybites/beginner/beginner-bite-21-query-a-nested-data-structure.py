@@ -60,7 +60,7 @@ ___ get_first_model_each_manufacturer carscars
     """return a list of matching models (original ordering)"""
     r    # list
     ___ key, value __ cars.i..:
-        r.a..(value[0])
+        r.a..(value 0
     r.. r
 
 

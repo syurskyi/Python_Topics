@@ -32,7 +32,7 @@ ___ get_all_timestamps
         ___ line __ f:
             timestamp __.f..(r'(\d{1,2}:\d{1,2})', line)
             __ timestamp:
-                result.a..(timestamp[0])
+                result.a..(timestamp 0
         print(result)
     r.. result
 
@@ -43,7 +43,7 @@ ___ calc_total_course_duration(timestamps
     s.. d__ y.._2000,  m.._1,  d.._1, hour=0, minute=0, second=0)
     s s.. + t..(hours=0, minutes=0, seconds=10)
     ___ item __ timestamps:
-        s.. s.. + t..(hours=0, minutes=i..(item.s..(':')[0]), seconds=i..(item.s..(':')[1]
+        s.. s.. + t..(hours=0, minutes=i..(item.s..(':') 0, seconds=i..(item.s..(':')[1]
     r..(s..(s...t__()))
 
 """

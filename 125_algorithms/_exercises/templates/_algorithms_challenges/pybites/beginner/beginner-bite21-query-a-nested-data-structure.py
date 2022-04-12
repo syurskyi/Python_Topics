@@ -28,8 +28,8 @@ ___ get_first_model_each_manufacturer cars=cars
     """return a list of matching models (original ordering)"""
     output    # list
     ___ key, value __ cars.i..:
-        output.a..(value[0])
-    r.. output
+        ?.a.. value 0
+    r.. ?
 
 ___ get_all_matching_models cars=cars, grep='trail'
     """return a list of all models containing the case insensitive

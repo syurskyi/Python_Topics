@@ -44,7 +44,7 @@ c_ Solution:
         Stack maintain a node that is missing right child
         decreasing stack
         """
-        root TreeNode(preorder[0])
+        root TreeNode(preorder 0
         stk [root]
         ___ a __ preorder[1:]:
             node TreeNode(a)
@@ -66,7 +66,7 @@ c_ Solution:
         If a node is a right child (larger), find the proper parent
         The proper parent should the deepest in the stack that its val < current val
         """
-        root TreeNode(preorder[0])
+        root TreeNode(preorder 0
         stk [root]
         ___ a __ preorder[1:]:
             node TreeNode(a)

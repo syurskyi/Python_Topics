@@ -22,13 +22,13 @@ ___ isCornerValid(row, col, field
         r.. T..
     __ col __ 0:
         r.. field[row + 1][col + 1] !_ 1
-    __ col __ l..(field[0]) - 1:
+    __ col __ l..(field 0 - 1:
         r.. field[row + 1][col - 1] !_ 1
     r.. field[row + 1][col + 1] !_ 1 a.. field[row + 1][col - 1] !_ 1
 
 
 ___ isSideValid(row, col, field
-    __ row __ l..(field) - 1 o. col __ l..(field[0]) - 1:
+    __ row __ l..(field) - 1 o. col __ l..(field 0 - 1:
         r.. T..
     r.. n.. (field[row + 1][col] !_ 0 a.. field[row][col + 1] !_ 0)
 
@@ -43,6 +43,6 @@ ___ getShipSize(row, col, field
     field[row][col] -1
     __ row !_ l..(field) a.. field[row + 1][col] __ 1:
         r.. 1 + getShipSize(row + 1, col, field)
-    __ col !_ l..(field[0]) a.. field[row][col + 1] __ 1:
+    __ col !_ l..(field 0 a.. field[row][col + 1] __ 1:
         r.. 1 + getShipSize(row, col + 1, field)
     r.. 1

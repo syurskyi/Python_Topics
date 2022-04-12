@@ -14,7 +14,7 @@ c_ Solution:
             (0, 1), (1, 0),
             (0, -1), (-1, 0),
         )
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         x y turn 0
 
         ___ _ __ r..(m * n

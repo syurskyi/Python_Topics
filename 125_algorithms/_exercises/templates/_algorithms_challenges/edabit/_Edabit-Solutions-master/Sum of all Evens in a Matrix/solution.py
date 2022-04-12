@@ -4,4 +4,4 @@ ___ sum_of_evens(lst
         ___ x __ i:
             __ x % 2 __ 0:
                 output += x
-    r.. output
+    r.. ?

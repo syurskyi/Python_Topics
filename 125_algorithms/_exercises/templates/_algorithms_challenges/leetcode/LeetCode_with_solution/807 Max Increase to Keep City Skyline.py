@@ -47,7 +47,7 @@ c_ Solution:
         """
         grow the to limit constraint by 2D skyline
         """
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         # left to right projection
         lr [
             m..(row)

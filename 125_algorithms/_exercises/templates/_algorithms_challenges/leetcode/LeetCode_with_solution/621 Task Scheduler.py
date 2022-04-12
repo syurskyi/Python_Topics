@@ -80,7 +80,7 @@ c_ Solution:
         q d..()  # stores (t, k)
         clock 0
         w.... pq o. q:
-            __ q a.. q[0][0] <_ clock:
+            __ q a.. q 0 0  <_ clock:
                 # don't do while in while when clock++
                 _, k q.popleft()
                 heapq.heappush(pq, (-counter[k], k

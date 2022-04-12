@@ -40,7 +40,7 @@ c_ Solution:
             r.. 0
 
         ret 0
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         visited [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         ___ i __ r..(m
             ___ j __ r..(n
@@ -52,7 +52,7 @@ c_ Solution:
     ___ dfs  grid, i, j, visited) __ i..:
         visited[i][j] T..
         ret 1
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         ___ di, dj __ dirs:
             I i + di
             J j + dj

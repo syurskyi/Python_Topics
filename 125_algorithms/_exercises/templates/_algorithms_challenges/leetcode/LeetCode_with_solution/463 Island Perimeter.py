@@ -27,7 +27,7 @@ c_ Solution:
         __ n.. grid:
             r.. ret
         R l..(grid)
-        C l..(grid[0])
+        C l..(grid 0
         ___ r0 __ r..(R
             ___ c0 __ r..(C
                 __ grid[r0][c0] __ 1:

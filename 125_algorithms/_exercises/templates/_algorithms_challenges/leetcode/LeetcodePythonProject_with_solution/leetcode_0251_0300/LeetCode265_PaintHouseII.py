@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. costs: r.. 0
-        n, k l..(costs), l..(costs[0])
+        n, k l..(costs), l..(costs 0
         minInd1, minInd2 -1, -1
         ___ i __ r..(n
             last1, last2 minInd1, minInd2
@@ -35,7 +35,7 @@ c_ Solution(o..
         """
         __ n.. costs: r.. 0
         n l..(costs)
-        k l..(costs[0])
+        k l..(costs 0
         ___ i __ r..(1, n
             ___ j __ r..(k
                 minList    # list

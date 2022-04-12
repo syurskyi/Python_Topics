@@ -31,6 +31,6 @@ c_ Solution:
         max_child_depth m..([
             maxDepth(child)
             ___ child __ root.children
-        ] o. [0])
+        ] o.  0
         
         r.. max_child_depth + 1

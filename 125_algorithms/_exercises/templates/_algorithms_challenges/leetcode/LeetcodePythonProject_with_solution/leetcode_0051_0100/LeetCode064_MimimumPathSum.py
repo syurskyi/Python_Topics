@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. grid: r.. 0
-        n l..(grid[0])
+        n l..(grid 0
         m l..(grid)
         dp [[0]*n ___ i __ r..(m)]
         ___ i __ r..(m

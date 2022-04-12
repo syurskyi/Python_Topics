@@ -25,7 +25,7 @@ ___ get_movies_by_director
     director d..(l..)
     w__ o.. local, encoding="utf-8") __ f:
         movies csv.DictReader(f)
-        ___ movie __ movies:
+        ___ ? __ ?
             __ movie 'title_year'  !_ '' a.. i..(movie 'title_year' ) > 1960:
                 director[movie 'director_name']].a..(
                     Movie(
@@ -40,8 +40,8 @@ ___ calc_mean_score(movies
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
     total 0
-    ___ movie __ movies:
-        total += f__(movie[2])
+    ___ ? __ ?
+        total += f__(? 2])
     r.. r..(total/l..(movies), 1)
 
 
@@ -60,7 +60,7 @@ ___ get_average_scores(directors
                 __ directors[director][i][1] a.. i..(directors[director][i][1]) >1960:
                     total += f__(directors[director][i][2])
             local_list.a..((director, r..(total/l..(directors[director]),1)))
-    r.. s..(local_list, key=l.... x: x[1], r.._T..
+    r.. s..(local_list, key=l.... x: ? 1 r.._T..
 
 
 director_dict get_movies_by_director()

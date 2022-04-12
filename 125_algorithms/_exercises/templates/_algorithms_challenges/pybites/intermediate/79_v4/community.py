@@ -19,7 +19,7 @@ ___ create_user_bar_chart(content
     """
     rows csv.DictReader(content.s..
     counts s..(C..([r 'tz'  ___ r __ rows]).i..,
-                    key=l.... x: x[0])
+                    key=l.... x: x 0
 
     ___ c __ counts:
         print(FMT_STR.f..(tz=c[0], bar='+' * c[1]

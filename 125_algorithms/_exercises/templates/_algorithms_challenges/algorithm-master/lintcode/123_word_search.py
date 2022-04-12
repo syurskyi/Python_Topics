@@ -15,7 +15,7 @@ c_ Solution:
         __ G __ N.. o. G[0] __ N.. o. s __ N..
             r.. F..
 
-        m, n l..(G), l..(G[0])
+        m, n l..(G), l..(G 0
         visited [[F..] * n ___ _ __ r..(m)]
         ___ x __ r..(m
             ___ y __ r..(n

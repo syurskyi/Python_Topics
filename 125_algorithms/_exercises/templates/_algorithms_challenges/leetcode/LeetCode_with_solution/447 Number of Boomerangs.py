@@ -12,7 +12,7 @@ ____ c.. _______ C..
 
 c_ Solution:
     ___ distance  a, b
-        r.. (a[0] - b[0])**2 + (a[1] - b[1])**2
+        r.. (a[0] - b 0**2 + (a[1] - b[1])**2
 
     ___ numberOfBoomerangs  points
         """

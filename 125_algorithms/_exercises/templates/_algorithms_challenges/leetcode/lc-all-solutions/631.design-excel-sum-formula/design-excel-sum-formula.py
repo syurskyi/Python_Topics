@@ -50,8 +50,8 @@ c_ Excel(o..
     start end s
     __ ":" __ s:
       start, end s.s..(":")
-    startI, startJ decodeCoord(start[1:], start[0])
-    endI, endJ decodeCoord(end[1:], end[0])
+    startI, startJ decodeCoord(start[1:], start 0
+    endI, endJ decodeCoord(end[1:], end 0
     r.. (startI, startJ, endI, endJ)
 
   ___ s..  r, c, strs

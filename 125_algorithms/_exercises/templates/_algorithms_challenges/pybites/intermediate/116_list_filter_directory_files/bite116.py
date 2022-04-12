@@ -7,9 +7,9 @@ ___ get_files(dirname, size_in_kb
     """Return files in dirname that are >= size_in_kb"""
     output    # list
     ___ root, dirs, files __ __.w..(dirname, topdown=F..
-        ___ name __ files:
+        ___ name __ ?
             f __.p...j..(root, name)
             size __.p...getsize(f) / ONE_KB
             __  size >_ size_in_kb:
-                output.a..(f)
-    r.. output
+                ?.a.. f)
+    r.. ?

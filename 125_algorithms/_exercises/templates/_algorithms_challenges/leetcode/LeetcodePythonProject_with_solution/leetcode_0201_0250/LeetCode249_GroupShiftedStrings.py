@@ -52,7 +52,7 @@ c_ Solution(o..
         length l..(s1)
         __ length __ 1:
             r.. T..
-        diff o..(s1[0]) - o..(s2[0])
+        diff o..(s1 0 - o..(s2 0
         __ diff < 0:
             diff += 26
         ___ i __ r..(1, length

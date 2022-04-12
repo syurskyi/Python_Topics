@@ -67,4 +67,4 @@ ___ get_sectors_with_max_and_min_stocks
 
     sector_counts counts.m..
 
-    r.. sector_counts[0][0],sector_counts[-1][0]
+    r.. sector_counts 0 0 ,sector_counts[-1][0]

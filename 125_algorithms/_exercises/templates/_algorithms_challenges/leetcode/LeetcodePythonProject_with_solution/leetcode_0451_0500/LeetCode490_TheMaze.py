@@ -12,7 +12,7 @@ c_ Solution(o..
         :type destination: List[int]
         :rtype: bool
         """
-        m, n l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze 0
         queue= [start]
         visited [[F..]*n ___ _ __ r..(m)]
         visited[start[0]][start[1]] T..
@@ -29,7 +29,7 @@ c_ Solution(o..
     ___ getNextSteps  maze, i, j
         result s..()
         dirs (1, 0), (0, 1), (-1, 0), (0, -1)
-        m, n l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze 0
         ___ dir __ dirs:
             x, y i, j
             w.... 0 <_ x+dir[0] < m a.. 0 <_ y+dir[1] < n a..\

@@ -45,7 +45,7 @@ ___ major_n_minor(numbers
         ______:
             d..[num] 1
     s.. s..(d...i.., key=l.... x: x[1] )
-    r.. s..[-1][0], s..[0][0]
+    r.. s..[-1][0], s.. 0 0 
     # difference between for i in d:
     # for i in d.items(): ?
     # return (next((iter(reversed(sor.items()))))[0], next(iter(sor.items()))[0] )

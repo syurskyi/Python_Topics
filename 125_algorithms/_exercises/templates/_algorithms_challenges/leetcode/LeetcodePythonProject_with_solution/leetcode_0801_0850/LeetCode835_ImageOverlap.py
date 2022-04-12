@@ -37,4 +37,4 @@ c_ Solution(o..
         ___ i __ la:
             ___ j __ lb:
                 count[i-j] count.g.. i-j, 0)+1
-        r.. m..(count.v.. o. [0])
+        r.. m..(count.v.. o.  0

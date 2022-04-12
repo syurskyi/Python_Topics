@@ -166,7 +166,7 @@ __ _____ __ ____
     print Solution().maxProduct([2,3,-2,4])
     ... Solution().maxProduct([2,-5,-2,-4,3])__24
     ... Solution().maxProduct([-2, 0, -1])__0
-    ... Solution().maxProduct([-2])__-2
+    ... Solution().maxProduct( -2__-2
     ... Solution().maxProduct([2, 3, -2, 4, -2])__96
     ... Solution().maxProduct([2, 3, -2, 4, 0, -2])__6
     ... Solution().maxProduct([2,3,-2,4])__6

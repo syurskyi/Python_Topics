@@ -53,14 +53,14 @@ ___ player_with_max_points_per_game
        numeric in your SQL query)"""
     cur.execute('''SELECT name, avg_points FROM players ORDER BY -avg_points LIMIT 0,1;''')
     result cur.fetchall()
-    r.. result[0][0]
+    r.. result 0 0 
 
 
 ___ number_of_players_from_duke
     """Return the number of players with college == Duke University"""
     cur.execute('''SELECT COUNT(*) FROM players WHERE college='Duke University';''')
     result cur.fetchall()
-    r.. result[0][0]
+    r.. result 0 0 
 
 
 ___ avg_years_active_players_stanford
@@ -68,11 +68,11 @@ ___ avg_years_active_players_stanford
        are active ("active" column)"""
     cur.execute('''SELECT AVG(active) FROM players WHERE college='Stanford University';''')
     result cur.fetchall()
-    r.. result[0][0]
+    r.. result 0 0 
 
 
 ___ year_with_most_drafts
     """Return the year with the most drafts, in SQL you can use GROUP BY"""
     cur.execute('''SELECT year, count(*) c FROM players group by year order by -c limit 0,1;''')
     result cur.fetchall()
-    r.. result[0][0]
+    r.. result 0 0 

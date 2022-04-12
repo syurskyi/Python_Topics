@@ -10,7 +10,7 @@ c_ ConnectGame:
         board make_board(lines)
         ... l..(board) > 0
 
-        width l..(board[0])
+        width l..(board 0
         height l..(board)
         ... width > 0 a.. height > 0
 

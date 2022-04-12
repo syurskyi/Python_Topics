@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         __ n.. matrix o. n.. matrix[0]:
             r.. F..
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         l, r 0, m*n-1
         w.... l < r:
             mid (l+r-1)//2
@@ -30,7 +30,7 @@ c_ Solution(o..
         """
         __ n.. matrix o. n.. matrix[0]:
             r.. F..
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         lo, hi 0, m
         w.... lo < hi:
             mid (lo+hi)//2

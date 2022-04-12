@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ validTree  n, edges
         roots [-1]*n
         ___ e __ edges:
-            root0 findRoot(roots, e[0])
+            root0 findRoot(roots, e 0
             root1 findRoot(roots, e[1])
             __ root0 !_ root1:
                 roots[root0] root1
@@ -32,7 +32,7 @@ c_ Solution(o..
             hashmap[i]    # list
         ___ edge __ edges:
             hashmap[edge[0]].a..(edge[1])
-            hashmap[edge[1]].a..(edge[0])
+            hashmap[edge[1]].a..(edge 0
         queue    # list
         queue.a..(0)
         visited [F..]*n
@@ -56,7 +56,7 @@ c_ Solution(o..
             hashmap[i]    # list
         ___ edge __ edges:
             hashmap[edge[0]].a..(edge[1])
-            hashmap[edge[1]].a..(edge[0])
+            hashmap[edge[1]].a..(edge 0
         visited [F..]*n
         __ n.. helper(0, -1, hashmap, visited
             r.. F..

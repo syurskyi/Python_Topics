@@ -25,7 +25,7 @@ ___ get_files_implementation_1(dirname, size_in_kb
     # list comprehension
     files [f ___ f __ __.listdir(dirname) __ __.p...i..(__.p...j..(dirname, f]
     # list comprehension
-    files_over_limit [f ___ f __ files __ (__.p...getsize(__.p...j..(dirname,f))) / ONE_KB >_ size_in_kb]
+    files_over_limit [f ___ f __ ? __ (__.p...getsize(__.p...j..(dirname,f))) / ONE_KB >_ size_in_kb]
 
     r.. files_over_limit
 
@@ -33,7 +33,7 @@ ___ get_files_implementation_2(dirname, size_in_kb
 
     files_and_dirs glob.glob("{dirname}/*".f..(dirname=dirname
     files [f ___ f __ files_and_dirs __ __.p...i..(f)]
-    files_over_limit [f ___ f __ files __ (__.p...getsize(f) / ONE_KB) >_ size_in_kb]
+    files_over_limit [f ___ f __ ? __ (__.p...getsize(f) / ONE_KB) >_ size_in_kb]
     r.. files_over_limit
 
 print(get_files_implementation_2("C:\\totalcmd", 5

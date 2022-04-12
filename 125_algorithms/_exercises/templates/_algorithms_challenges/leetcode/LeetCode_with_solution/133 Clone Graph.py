@@ -97,7 +97,7 @@ __ _____ __ ____
     ___ item __ lst:
         item.neighbors l..(lst)
         item.neighbors.remove(item)
-    cloned Solution().cloneGraph(lst[0])
+    cloned Solution().cloneGraph(lst 0
     ... cloned.neighbors[0].label __ (2, 3)
     ... cloned.neighbors[1].label __ (2, 3)
 

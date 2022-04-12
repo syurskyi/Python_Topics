@@ -14,7 +14,7 @@ c_ Solution(o..
         graph [[] ___ _ __ r..(numCourses)]
         degree [0]*numCourses
         ___ p __ prerequisites:
-            graph[p[1]].a..(p[0])
+            graph[p[1]].a..(p 0
             degree[p[0]]+=1
         queue    # list
         ___ num, cnt __ e..(degree

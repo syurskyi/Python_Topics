@@ -10,7 +10,7 @@ c_ Solution(o..
         :rtype: List[List[int]]
         """
         matrix A
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         res [[0]*m ___ _ __ r..(n)]
         ___ i __ r..(m
             ___ j __ r..(n

@@ -24,7 +24,7 @@ ___ _get_dates
 
 ___ convert_to_datetime(date_str
     """Receives a date str and convert it into a datetime object"""
-    tz date_str.rfind("+")
+    tz date_str.r.. "+")
     r.. d__.s..(date_str[:tz -1], "%a, %d %b %Y %H:%M:%S")
 
 
@@ -33,7 +33,7 @@ ___ get_month_most_posts(dates
        that occurs most"""
     posts_yr_mo [post_date.s..("%Y-%m") ___ post_date __ dates]
     posts_frequency c...C..(posts_yr_mo)
-    r.. posts_frequency.m..[0][0]
+    r.. posts_frequency.m.. 0 0 
     
 
 #if __name__ == "__main__":

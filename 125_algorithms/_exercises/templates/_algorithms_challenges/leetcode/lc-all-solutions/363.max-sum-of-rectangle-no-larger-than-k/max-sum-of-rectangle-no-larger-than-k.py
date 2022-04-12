@@ -9,7 +9,7 @@ c_ Solution(o..
     :rtype: int
     """
     ans f__("-inf")
-    dp [[0] * l..(matrix[0]) ___ _ __ r..(l..(matrix]
+    dp [[0] * l..(matrix 0 ___ _ __ r..(l..(matrix]
     ___ i __ r..(0, l..(matrix:
       ___ j __ r..(0, l..(matrix[0]:
         dp[i][j] dp[i][j - 1] + matrix[i][j]

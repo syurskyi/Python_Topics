@@ -34,7 +34,7 @@ c_ Solution:
         m l..(grid)
         __ m < 1:
             r.. 0
-        n l..(grid[0])
+        n l..(grid 0
         __ n < 1:
             r.. 0
 
@@ -53,7 +53,7 @@ c_ Solution:
         dfs to mark visited
         """
         m l..(grid)
-        n l..(grid[0])
+        n l..(grid 0
         visited[i][j] T..
 
         ___ dir __ dirs:

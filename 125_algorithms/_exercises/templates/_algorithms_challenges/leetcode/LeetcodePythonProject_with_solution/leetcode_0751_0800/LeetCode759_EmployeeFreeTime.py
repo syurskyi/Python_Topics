@@ -23,8 +23,8 @@ c_ Solution(o..
         temp heapq.heappop(heap)
         res    # list
         w.... heap:
-            __ temp[1] < heap[0][0]:
-                res.a..(Interval(temp[1], heap[0][0]
+            __ temp[1] < heap 0 0 :
+                res.a..(Interval(temp[1], heap 0 0 
                 temp heapq.heappop(heap)
             ____
                 __ temp[1] < heap[0][1]:

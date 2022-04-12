@@ -47,7 +47,7 @@ c_ Solution(o..
       graph[edge[0]] graph.g.. edge[0], []) + [edge[1]]
       graph[edge[1]] graph.g.. edge[1], []) + [edge[0]]
 
-    start bfs(graph, edges[0][0])
+    start bfs(graph, edges 0 0 )
     end bfs(graph, start)
     res, visited    # list, [0 ___ i __ r..(0, n)]
     dfs(graph, start, end, visited, [start], res)

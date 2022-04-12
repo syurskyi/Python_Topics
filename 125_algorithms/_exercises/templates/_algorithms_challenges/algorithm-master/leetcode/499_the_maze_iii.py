@@ -27,7 +27,7 @@ c_ Solution:
         __ n.. maze o. n.. maze[0]:
             r.. NOT_FOUND
 
-        m, n l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze 0
         sx, sy ball
         tx, ty hole
         queue [(sx, sy)]
@@ -104,7 +104,7 @@ c_ Solution2:
         __ n.. maze o. n.. maze[0]:
             r.. NOT_FOUND
 
-        m, n l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze 0
         sx, sy ball
         tx, ty hole
         heap [(sx, sy)]

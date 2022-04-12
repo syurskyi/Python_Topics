@@ -32,7 +32,7 @@ ___ get_all_line_counts(data: s.. STATS) __ l..:
        returning a list of ints"""
     # TODO 1: get the 186 ints from downloaded STATS file
     f o.. STATS)
-    r.. [i..(line.s...s.. [0]) ___ line __ o.. STATS).r..]
+    r.. [i..(line.s...s..  0 ___ line __ o.. STATS).r..]
 
 
 ___ create_stats_report(data_ N..

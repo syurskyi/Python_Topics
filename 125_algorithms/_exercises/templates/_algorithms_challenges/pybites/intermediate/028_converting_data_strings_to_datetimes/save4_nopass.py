@@ -35,4 +35,4 @@ ___ get_month_most_posts(dates
     l l..(z..(y, m
     most_freq_month s..(C..(l).most_common 1 0 0)
     output d__.s..(most_freq_month, '(%Y, %m)')
-    r.. output.s..('%Y-%m')
+    r.. ?.s..('%Y-%m')

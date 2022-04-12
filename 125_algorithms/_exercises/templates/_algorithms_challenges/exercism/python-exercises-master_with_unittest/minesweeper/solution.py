@@ -1,6 +1,6 @@
 ___ board(inp
     verify_board(inp)
-    rowlen l..(inp[0])
+    rowlen l..(inp 0
     collen l..(inp)
     b [l..(r) ___ r __ inp]
     ___ i1 __ r..(collen
@@ -21,7 +21,7 @@ ___ verify_board(inp
     __ n.. inp o. n.. a..(r ___ r __ inp
         r.. V...("Invalid board")
     # Rows with different lengths
-    rowlen l..(inp[0])
+    rowlen l..(inp 0
     collen l..(inp)
     __ n.. a..(l..(r) __ rowlen ___ r __ inp
         r.. V...("Invalid board")

@@ -17,7 +17,7 @@ c_ Solution(o..
 
     tuples.s..()
     length l..(tuples)
-    left tuples[0][0]
+    left tuples 0 0
     right tuples[-1][0]
     deq d..([])
     ___ i __ r..(length
@@ -30,7 +30,7 @@ c_ Solution(o..
         __ d[_no] __ 0:
           del d[_no]
       __ l..(d) __ k:
-        l, r deq[0][0], deq[-1][0]
+        l, r deq 0 0 , deq[-1][0]
         __ r - l < right - left:
           left l
           right r

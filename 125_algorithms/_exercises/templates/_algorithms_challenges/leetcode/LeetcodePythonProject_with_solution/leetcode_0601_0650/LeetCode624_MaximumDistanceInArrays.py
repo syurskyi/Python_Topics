@@ -12,14 +12,14 @@ c_ Solution(o..
         """
         __ n.. arrays:
             r.. 0
-        minVal arrays[0][0]
+        minVal arrays 0 0 
         maxVal arrays[0][-1]
         maxDis 0
         ___ i __ r..(1, l..(arrays:
             arr arrays[i]
             maxDis m..(maxDis, a..(arr[-1]-minVal
             maxDis m..(maxDis, a..(maxVal-arr[0]
-            minVal m..(minVal, arr[0])
+            minVal m..(minVal, arr 0
             maxVal m..(maxVal, arr[-1])
         r.. maxDis
     

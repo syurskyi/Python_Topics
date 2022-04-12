@@ -22,8 +22,8 @@ ___ _parse_line(line: s..) __ d..:
     # add insertions and deletions
     insertions __.f..(r'([0-9]+) insertions', all_changes)
     deletions __.f..(r'([0-9]+) deletions', all_changes)
-    changes i..(insertions[0]) __ insertions ____ 0
-    changes += i..(deletions[0]) __ deletions ____ 0
+    changes i..(insertions 0 __ insertions ____ 0
+    changes += i..(deletions 0 __ deletions ____ 0
     r.. {'date': date, 'changes': changes}
 
 

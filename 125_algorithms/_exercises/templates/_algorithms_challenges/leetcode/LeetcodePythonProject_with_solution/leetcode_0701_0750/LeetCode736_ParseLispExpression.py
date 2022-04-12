@@ -38,7 +38,7 @@ c_ Solution(o..
                 tokens[-1] += val
             ____
                 tokens[-1] += c
-        r.. i..(tokens[0])
+        r.. i..(tokens 0
     
     ___ evaluate_own_error  expression
         """

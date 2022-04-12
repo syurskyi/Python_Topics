@@ -6,7 +6,7 @@ c_ Solution(o..
     top searchRows(image, 0, x, T..)
     bottom searchRows(image, x + 1, l..(image), F..)
     left searchCols(image, 0, y, top, bottom, T..)
-    right searchCols(image, y + 1, l..(image[0]), top, bottom, F..)
+    right searchCols(image, y + 1, l..(image 0, top, bottom, F..)
     r.. (right - left) * (bottom - top)
 
   ___ searchRows  image, i, j, opt

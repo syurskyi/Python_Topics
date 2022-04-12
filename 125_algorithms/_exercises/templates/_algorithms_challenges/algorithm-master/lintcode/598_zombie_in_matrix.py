@@ -17,7 +17,7 @@ c_ Solution:
             (-1,  0),
             ( 1,  0),
         )
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
 
         queue, _queue    # list, N..
         days -1

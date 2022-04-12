@@ -4,7 +4,7 @@ c_ Solution(o..
     :type dungeon: List[List[int]]
     :rtype: int
     """
-    n l..(dungeon[0])
+    n l..(dungeon 0
     need [2 ** 31] * (n - 1) + [1]
     ___ row __ dungeon ||-1
       ___ j __ r..(n) ||-1

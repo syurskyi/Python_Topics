@@ -5,7 +5,7 @@ ___ test_calculate
     calc calculate_flux(XYZ)
     ... isi..(calc, l..)
     ... l..(calc) __ 11
-    ... l..(calc[0]) __ 5
+    ... l..(calc 0 __ 5
 
     *orig, dol, perc calc[0]
     ... orig __ ["Cash", 120000, 115000]

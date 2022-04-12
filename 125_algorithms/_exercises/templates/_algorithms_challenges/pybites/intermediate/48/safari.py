@@ -24,11 +24,11 @@ ___ create_chart
                 __ current[:5] n.. __ slack_frequency:
                     slack_frequency[current[:5]] [1]
                     __ 'Python' __ previous:
-                        slack_frequency[current[:5]].a..(slack_frequency[current[:5]][0])
+                        slack_frequency[current[:5]].a..(slack_frequency[current[:5]] 0
                 ____
                     slack_frequency[current[:5]][0] += 1
                     __ 'Python' __ previous:
-                        slack_frequency[current[:5]].a..(slack_frequency[current[:5]][0])
+                        slack_frequency[current[:5]].a..(slack_frequency[current[:5]] 0
 
     ___ key, value __ slack_frequency.i..:
 

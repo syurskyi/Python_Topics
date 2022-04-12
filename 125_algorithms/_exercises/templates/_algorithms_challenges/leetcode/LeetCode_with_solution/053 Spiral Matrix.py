@@ -48,7 +48,7 @@ c_ Solution:
         result    # list
 
         left 0
-        right l..(matrix[0]) - 1
+        right l..(matrix 0 - 1
         top 0
         bottom l..(matrix) - 1
 

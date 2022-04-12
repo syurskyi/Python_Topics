@@ -34,7 +34,7 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. -1
 
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         xs, ys    # list, []
 
         ___ x __ r..(m
@@ -114,7 +114,7 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. -1
 
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         houses    # list
         xc yc 0  # the center of the shape composed of houses
 
@@ -181,7 +181,7 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. -1
 
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         steps [[0] * n ___ _ __ r..(m)]
 
         ___ x __ r..(m
@@ -201,7 +201,7 @@ c_ Solution:
         r.. ans __ ans < INF ____ -1
 
     ___ bfs  grid, x, y, steps
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         queue, _queue [(x, y)], []
         visited s..(queue)
         step 0

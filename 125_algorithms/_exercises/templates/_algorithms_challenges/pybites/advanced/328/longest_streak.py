@@ -92,4 +92,4 @@ ___ longest_streak(
 __ _______ __ _______
     streak longest_streak()
     print(f"My longest streak went from {streak[0]} through {streak[1]}")
-    print(f"The streak lasted {(streak[1]-streak[0]).days + 1} days")
+    print(f"The streak lasted {(streak[1]-streak 0.days + 1} days")

@@ -27,7 +27,7 @@ ___ top_python_questions(url=cached_so_url
       ____
          lt_1m.a..((_question, votes
 
-   r.. s..(ge_1m, key=l.... x: x[1], r.._T..
+   r.. s..(ge_1m, key=l.... x: ? 1 r.._T..
 
 
 __ _______ __ _______

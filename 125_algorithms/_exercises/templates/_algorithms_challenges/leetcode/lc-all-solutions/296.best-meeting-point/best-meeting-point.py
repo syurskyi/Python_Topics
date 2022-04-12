@@ -13,4 +13,4 @@ c_ Solution(o..
           jList.a..(j)
     jList.s..()
     m (iList[l..(iList) / 2], jList[l..(jList) / 2])
-    r.. s.. m..(l.... p: a..(p[1] - m[1]) + a..(p[0] - m[0]), ppl
+    r.. s.. m..(l.... p: a..(p[1] - m[1]) + a..(p[0] - m 0, ppl

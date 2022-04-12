@@ -25,7 +25,7 @@ c_ Solution:
         __ n.. maze o. n.. maze[0]:
             r.. -1
 
-        m, n l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze 0
         sx, sy start
         tx, ty destination
         queue [(sx, sy)]
@@ -91,7 +91,7 @@ c_ Solution2:
         __ n.. maze o. n.. maze[0]:
             r.. -1
 
-        m, n l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze 0
         sx, sy start
         tx, ty destination
         heap [(sx, sy)]

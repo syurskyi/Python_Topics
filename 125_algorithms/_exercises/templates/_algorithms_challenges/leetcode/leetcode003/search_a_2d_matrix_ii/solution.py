@@ -29,8 +29,8 @@ c_ Solution(o..
         :rtype: bool
         """
         n l..(matrix)
-        m l..(matrix[0])
-        __ target < matrix[0][0] o. target > matrix[n - 1][m - 1]:
+        m l..(matrix 0
+        __ target < matrix 0 0  o. target > matrix[n - 1][m - 1]:
             r.. F..
         # Step-wise Linear Search from upper right
         y 0

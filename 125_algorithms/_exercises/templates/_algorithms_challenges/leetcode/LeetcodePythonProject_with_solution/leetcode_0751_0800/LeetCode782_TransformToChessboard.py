@@ -13,7 +13,7 @@ c_ Solution(o..
         rowSum, colSum, rowSwap, colSwap 0, 0, 0, 0
         ___ i __ r..(n
             ___ j __ r..(n
-                __ board[0][0]^board[i][0]^board[0][j]^board[i][j] __ 1:
+                __ board 0 0 ^board[i][0]^board[0][j]^board[i][j] __ 1:
                     r.. -1
         ___ i __ r..(n
             rowSum += board[0][i]

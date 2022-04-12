@@ -3,4 +3,4 @@ ___ volume_of_box(sizes
     output  1
     ___ i __ sizes:
         output * sizes[i]
-    r.. output
+    r.. ?

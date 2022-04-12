@@ -8,10 +8,10 @@ c_ Solution(o..
     ___ findDiagonalOrder  matrix
         __ n.. matrix o. n.. matrix[0]: r.. []
         __ l..(matrix) __ 1: r.. matrix[0]
-        __ l..(matrix[0]) __ 1: r.. [row[0] ___ row __ matrix]
+        __ l..(matrix 0 __ 1: r.. [row[0] ___ row __ matrix]
         rev F..
         result    # list
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         ___ l __ r..(m+n-1
             __ rev:
                 ___ i __ r..(l+1

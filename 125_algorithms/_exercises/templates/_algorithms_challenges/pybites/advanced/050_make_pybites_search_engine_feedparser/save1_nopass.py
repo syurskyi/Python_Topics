@@ -33,8 +33,8 @@ ___ get_feed_entries(feed=FEED
     ___ entry __ file.entries:
         date _convert_struct_time_to_dt(entry.published)
         tag_list [tag 'term'  ___ tag __ entry.tags]
-        output.a..(Entry(date, entry.title, entry.link, tag_list
-    r.. output
+        ?.a.. Entry(date, entry.title, entry.link, tag_list
+    r.. ?
 
 
 ___ filter_entries_by_tag(s.., entry

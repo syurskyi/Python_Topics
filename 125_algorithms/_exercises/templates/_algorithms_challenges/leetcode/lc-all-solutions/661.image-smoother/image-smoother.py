@@ -5,7 +5,7 @@ c_ Solution(o..
     :rtype: List[List[int]]
     """
     m l..(M)
-    n l..(M[0])
+    n l..(M 0
     ans [[0] * n ___ _ __ r..(m)]
 
     ___ i __ r..(m

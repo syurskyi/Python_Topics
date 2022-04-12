@@ -29,7 +29,7 @@ DIRECTIONS (Point(1, 0), Point(1, -1), Point(1, 1), Point(-1, -1),
 c_ WordSearch(o..
     ___ - , puzzle
         rows puzzle.s..
-        width l..(rows[0])
+        width l..(rows 0
         height l..(rows)
 
     ___ find_char  coordinate

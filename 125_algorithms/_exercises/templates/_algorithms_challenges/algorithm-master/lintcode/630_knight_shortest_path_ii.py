@@ -8,7 +8,7 @@ c_ Solution:
     """
     ___ shortestPath2  G
         NOT_FOUND -1
-        __ n.. G o. n.. G[0] o. G[0][0] __ 1:
+        __ n.. G o. n.. G[0] o. G 0 0  __ 1:
             r.. NOT_FOUND
 
         V (
@@ -17,7 +17,7 @@ c_ Solution:
             (-2,  1),
             ( 2,  1),
         )
-        m, n l..(G), l..(G[0])
+        m, n l..(G), l..(G 0
 
         queue [(0, 0)]
         turns {(0, 0 0}
@@ -48,12 +48,12 @@ c_ Solution:
     @return: the shortest path
     """
     ___ shortestPath2  G
-        __ n.. G o. n.. G[0] o. G[0][0] __ 1:
+        __ n.. G o. n.. G[0] o. G 0 0  __ 1:
             r.. -1
 
         INFINITY f__('inf')
 
-        m, n l..(G), l..(G[0])
+        m, n l..(G), l..(G 0
         dp [[INFINITY] * 3 ___ _ __ r..(m)]
         pre2 pre1 curr 0
         dp[0][curr] 0

@@ -23,7 +23,7 @@ c_ Solution:
             r..
 
         m l..(matrix)
-        n l..(matrix[0])
+        n l..(matrix 0
 
         ___ row __ x..(m
             ___ col __ x..(n
@@ -53,7 +53,7 @@ c_ Solution:
             r..
 
         m l..(matrix)
-        n l..(matrix[0])
+        n l..(matrix 0
 
         # special treatment for row and col 
         clear_first_row F..

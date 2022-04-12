@@ -12,7 +12,7 @@ c_ Solution(o..
       d    # dict
       ___ p2 __ points:
         __ p1 !_ p2:
-          dist (p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2
+          dist (p1[0] - p2 0 ** 2 + (p1[1] - p2[1]) ** 2
           d[dist] d.g.. dist, 0) + 1
       ___ k __ d:
         ans += d[k] * (d[k] - 1)

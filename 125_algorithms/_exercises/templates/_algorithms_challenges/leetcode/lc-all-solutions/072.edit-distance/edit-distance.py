@@ -9,7 +9,7 @@ c_ Solution(o..
       r.. m..(l..(word1), l..(word2
 
     dp [[0] * (l..(word2) + 1) ___ _ __ r..(0, l..(word1) + 1)]
-    dp[0][0] 0
+    dp 0 0  0
 
     ___ i __ r..(0, l..(word1) + 1
       ___ j __ r..(0, l..(word2) + 1

@@ -8,7 +8,7 @@ c_ Solution:
     ___ trapRainWater  heights
         __ n.. heights:
             r.. 0
-        m, n l..(heights), l..(heights[0])
+        m, n l..(heights), l..(heights 0
         dx, dy [1, -1, 0, 0], [0, 0, 1, -1]
         ans bound x y i 0
         bounds    # list

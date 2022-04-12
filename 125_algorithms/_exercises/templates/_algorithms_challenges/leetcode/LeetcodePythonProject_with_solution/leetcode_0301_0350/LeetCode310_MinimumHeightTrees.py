@@ -15,7 +15,7 @@ c_ Solution(o..
         graph [s..() ___ _ __ r..(n)]
         ___ e __ edges:
             graph[e[0]].add(e[1])
-            graph[e[1]].add(e[0])
+            graph[e[1]].add(e 0
         leaves    # list
         ___ i, nodes __ e..(graph
             __ l..(nodes) __ 1:

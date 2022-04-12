@@ -28,7 +28,7 @@ c_ Solution:
         """
         m l..(matrix)
         __ m < 1: r.. 0
-        n l..(matrix[0])
+        n l..(matrix 0
         __ n < 1: r.. 0
         ___ i __ x..(m
             matrix[i] map(i.., matrix[i])

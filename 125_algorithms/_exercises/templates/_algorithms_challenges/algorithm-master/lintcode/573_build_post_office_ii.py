@@ -30,7 +30,7 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. -1
 
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         cnt 0
         times c...d..(i..)
         steps c...d..(i..)
@@ -50,7 +50,7 @@ c_ Solution:
         r.. ans __ ans < INF ____ -1
 
     ___ bfs  grid, x, y, times, steps
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         queue, _queue [(x, y)], []
         visited s..(queue)
         step 0
@@ -105,7 +105,7 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. -1
 
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         cnt 0
         ids c...d..(s..)  # record house ids
         steps c...d..(i..)  # total steps for all houses
@@ -128,7 +128,7 @@ c_ Solution:
         r.. ans __ ans < INF ____ -1
 
     ___ dfs  grid, x, y, id, ids, steps, step
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
 
         ___ dx, dy __ (
             (-1, 0), (1, 0),

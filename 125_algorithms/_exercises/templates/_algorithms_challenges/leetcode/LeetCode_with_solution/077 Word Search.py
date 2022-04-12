@@ -32,7 +32,7 @@ c_ Solution:
         # board = [item[0] for item in board]
 
         m l..(board)
-        n l..(board[0])
+        n l..(board 0
         visited [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]  # avoid loop
         ___ i __ x..(m
             ___ j __ x..(n
@@ -48,7 +48,7 @@ c_ Solution:
             r.. T..
         # searching for word[0]
         m l..(board)
-        n l..(board[0])
+        n l..(board 0
         next_positions [(pre_row-1, pre_col), (pre_row+1, pre_col), (pre_row, pre_col-1), (pre_row, pre_col+1)]  # four directions
         ___ next_position __ next_positions:
             __ 0<_next_position[0]<m a.. 0<_next_position[1]<n:  # pre-checking

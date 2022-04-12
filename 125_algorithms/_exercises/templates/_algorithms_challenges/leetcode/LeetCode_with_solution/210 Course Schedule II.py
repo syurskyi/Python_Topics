@@ -41,7 +41,7 @@ c_ Solution:
             V[i]    # list
 
         ___ edge __ prerequisites:
-            V[edge[1]].a..(edge[0])
+            V[edge[1]].a..(edge 0
 
         r.. topological_sort(V)
 

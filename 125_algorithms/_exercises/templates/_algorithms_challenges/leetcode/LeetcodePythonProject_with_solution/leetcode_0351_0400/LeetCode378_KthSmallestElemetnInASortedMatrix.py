@@ -6,7 +6,7 @@ Created on Apr 1, 2017
 
 c_ Solution(o..
     ___ kthSmallest  matrix, k
-        lower, upper matrix[0][0], matrix[-1][-1]
+        lower, upper matrix 0 0 , matrix[-1][-1]
         w.... lower < upper:
             mid (lower+upper)//2
             __ c.. matrix, mid) < k:
@@ -16,7 +16,7 @@ c_ Solution(o..
         r.. upper
     
     ___ c.. self, matrix, target
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         i, j m-1, 0
         count 0
         w.... i >_ 0 a.. j < n:

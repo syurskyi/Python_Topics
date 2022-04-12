@@ -56,7 +56,7 @@ ___ player_with_max_points_per_game
        numeric in your SQL query)"""
     r.. l..(cur.execute('SELECT name '
                             'FROM players '
-                            'ORDER BY CAST(avg_points as FLOAT) DESC'[0][0]
+                            'ORDER BY CAST(avg_points as FLOAT) DESC' 0 0 
 
 
 ___ number_of_players_from_duke
@@ -71,7 +71,7 @@ ___ avg_years_active_players_stanford
        are active ("active" column)"""
     r.. l..(cur.execute('SELECT ROUND(AVG(active), 2) '
                             'FROM players '
-                            'WHERE college = "Stanford University"'[0][0]
+                            'WHERE college = "Stanford University"' 0 0 
 
 
 ___ year_with_most_drafts
@@ -79,4 +79,4 @@ ___ year_with_most_drafts
     r.. l..(cur.execute('SELECT year, COUNT(*) as draft_count '
                             'FROM players '
                             'GROUP BY year '
-                            'ORDER BY draft_count DESC'[0][0]
+                            'ORDER BY draft_count DESC' 0 0 

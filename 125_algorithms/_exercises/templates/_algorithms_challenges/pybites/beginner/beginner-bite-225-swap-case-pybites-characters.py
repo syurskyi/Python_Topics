@@ -26,7 +26,7 @@ ___ convert_pybites_chars(text
                 output += output.j..(char.u..
         ____
             output += output.j..(char)
-    r.. output
+    r.. ?
 
 ___ convert_pybites_chars_pybites_solution(text
     """Swap case all characters in the word pybites for the given text.

@@ -22,11 +22,11 @@ c_ Solution(o..
         V d..(l..)
         ___ e __ edges:
             V[e[0]].a..(e[1])
-            V[e[1]].a..(e[0])
+            V[e[1]].a..(e 0
 
         visited s..()
         pathset s..()
-        __ n.. dfs(V, edges[0][0], N.., pathset, visited
+        __ n.. dfs(V, edges 0 0 , N.., pathset, visited
             r.. F..
 
         r.. l..(visited) __ n

@@ -21,12 +21,12 @@ c_ Domain:
     @classmethod
     ___ parse_url(cls, url
         url_domain __.f..(r"(?:^https?:\/\/([^\/]+)(?:[\/,]|$)|^(.*)$)", url)
-        r.. Domain(url_domain[0][0])
+        r.. Domain(url_domain 0 0 )
 
     @classmethod
     ___ parse_email(cls, email
         email_domain __.f..(r'@(.*\.[a-z]+)', email)
-        r.. Domain(email_domain[0])
+        r.. Domain(email_domain 0
 
     ___ -s(self) __ s..:
         r.. f'{name}'

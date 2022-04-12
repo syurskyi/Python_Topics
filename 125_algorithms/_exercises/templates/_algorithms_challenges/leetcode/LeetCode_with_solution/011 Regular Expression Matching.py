@@ -172,7 +172,7 @@ c_ Solution:
 
         # notice that in edge cases and normal cases, checking conditions are exactly the same
 
-        r.. dp[0][0]
+        r.. dp 0 0 
 
 
 __ _______ __ _______

@@ -10,7 +10,7 @@ c_ Solution(o..
         :rtype: int
         """
         res 0
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         ___ i __ r..(m-1
             ___ j __ r..(i+1, m
                 counter 0

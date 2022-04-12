@@ -47,10 +47,10 @@ ___ evaluate(input_data
             ____ word __ 'drop':
                 stack.p.. )
             ____ word __ 'swap':
-                stack.a..(stack[-2])
+                stack.a..(stack -2
                 del stack[-3]
             ____ word __ 'over':
-                stack.a..(stack[-2])
+                stack.a..(stack -2
             ____
                 r.. V...("{} has not been defined".f..(word
         ______ I..

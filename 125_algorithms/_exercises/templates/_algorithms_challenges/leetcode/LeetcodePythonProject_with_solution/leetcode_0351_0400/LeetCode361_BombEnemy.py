@@ -7,7 +7,7 @@ Created on Mar 27, 2017
 c_ Solution(o..
     ___ maxKilledEnemies  grid
         __ n.. grid o. n.. grid[0]: r.. 0
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         res 0
         rows 0
         cols [0]*n

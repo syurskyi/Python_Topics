@@ -35,13 +35,13 @@ ___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
                 __ l..(v1) > l..(v2
                     v1 v1[:l..(v2)]
                     __ i..(v2) > i..(v1
-                        output.a..(k1)
+                        ?.a.. k1)
                 ____ l..(v2) > l..(v1
                     v2 v2[:l..(v1)]
                     __ i..(v2) > i..(v1
-                        output.a..(k1)
+                        ?.a.. k1)
                 ____ l..(v1) __ l..(v2
                     __ i..(v2) > i..(v1
-                        output.a..(k1)
+                        ?.a.. k1)
 
-    r.. output
+    r.. ?

@@ -34,7 +34,7 @@ c_ SnakeGame(o..
     __ direction n.. __ directions:
       r.. -1
     di, dj directions[direction]
-    ni, nj snake[0][0] + di, snake[0][1] + dj
+    ni, nj snake 0 0  + di, snake[0][1] + dj
 
     __ ni < 0 o. ni >_ height o. nj < 0 o. nj >_ width:
       r.. -1

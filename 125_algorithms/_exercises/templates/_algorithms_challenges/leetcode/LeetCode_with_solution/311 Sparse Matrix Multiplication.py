@@ -15,14 +15,14 @@ c_ Solution(o..
         :type B: List[List[int]]
         :rtype: List[List[int]]
         """
-        m, n l..(A), l..(A[0])
+        m, n l..(A), l..(A 0
         A1 [{} ___ _ __ x..(m)]
         ___ i __ x..(m
             ___ j __ x..(n
                 __ A[i][j] !_ 0:
                     A1[i][j] A[i][j]
 
-        m, n l..(B), l..(B[0])
+        m, n l..(B), l..(B 0
         B1 [{} ___ _ __ x..(n)]
         ___ i __ x..(m
             ___ j __ x..(n

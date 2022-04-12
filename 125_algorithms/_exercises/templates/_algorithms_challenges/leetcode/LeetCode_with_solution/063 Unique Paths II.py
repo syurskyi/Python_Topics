@@ -26,14 +26,14 @@ c_ Solution:
         :return: integer
         """
         m l..(obstacleGrid)
-        n l..(obstacleGrid[0])
+        n l..(obstacleGrid 0
 
         # trivial
-        __ obstacleGrid[0][0]__1 o. obstacleGrid[m-1][n-1]__1:
+        __ obstacleGrid 0 0 __1 o. obstacleGrid[m-1][n-1]__1:
             r.. 0
 
         p.. [[0 ___ _ __ r..(n)] ___ _ __ r..(m)]  # possible to optimize by [[0 for _ in range(n+1)]]
-        p..[0][0] 1 # start
+        p.. 0 0  1 # start
 
         # path[i][j] = path[i-1][j] + path[i][j-1]
         ___ i __ r..(m

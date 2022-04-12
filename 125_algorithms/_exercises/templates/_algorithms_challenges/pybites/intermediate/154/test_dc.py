@@ -59,6 +59,6 @@ ___ test_data_class_can_only_be_unpacked_when_casted_to_tuple(bites
     w__ p__.r.. T..
         number, title, level bites[0]
     # but this works:
-    number, title, level astuple(bites[0])
+    number, title, level astuple(bites 0
     ... number __ 1
     ... level __ 'Beginner'

@@ -24,7 +24,7 @@ ___ test_get_movies_by_director(movies
 ___ test_director_movies_data_structure(movies
     ... t..(movies) __ (d.., d..)
     ... t..(movies 'Peter Jackson' ) __ l..
-    ... t..(movies 'Peter Jackson' [0]) __ Movie
+    ... t..(movies 'Peter Jackson'  0 __ Movie
 
 ___ test_calc_mean_score(movies
     movies_sergio movies 'Sergio Leone'

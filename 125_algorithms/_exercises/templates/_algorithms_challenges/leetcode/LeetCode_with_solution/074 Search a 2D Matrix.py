@@ -29,7 +29,7 @@ c_ Solution(o..
             r.. F..
 
         m l..(mat)
-        n l..(mat[0])
+        n l..(mat 0
 
         # binary search
         lo 0

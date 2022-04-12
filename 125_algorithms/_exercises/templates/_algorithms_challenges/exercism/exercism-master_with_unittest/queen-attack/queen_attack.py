@@ -25,7 +25,7 @@ c_ Board:
         r.. white_coords[1] __ black_coords[1]
 
     ___ same_diag
-        r.. (a..(white_coords[0] - black_coords[0]) __
+        r.. (a..(white_coords[0] - black_coords 0 __
                 a..(white_coords[1] - black_coords[1]
 
     ___ valid_coords

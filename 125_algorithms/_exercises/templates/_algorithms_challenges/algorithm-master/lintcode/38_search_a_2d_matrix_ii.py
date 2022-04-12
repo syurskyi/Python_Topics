@@ -16,12 +16,12 @@ c_ Solution:
             r.. ans
 
         heap    # list
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
 
         ___ i __ r..(m
             heapq.heappush(heap, (matrix[i][0], i, 0
 
-        w.... heap a.. heap[0][0] <_ target:
+        w.... heap a.. heap 0 0  <_ target:
             num, x, y heapq.heappop(heap)
 
             __ num __ target:
@@ -58,7 +58,7 @@ c_ Solution:
         __ n.. matrix o. n.. matrix[0]:
             r.. ans
 
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         x, y m - 1, 0
 
         w.... x >_ 0 a.. y < n:

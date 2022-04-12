@@ -15,7 +15,7 @@ c_ Solution:
             ____ op __ 'D':
                 stack.a..(2 * stack[-1])
             ____ op __ '+':
-                stack.a..(stack[-1] + stack[-2])
+                stack.a..(stack[-1] + stack -2
             ____
                 stack.a..(i..(op
 

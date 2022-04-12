@@ -9,7 +9,7 @@ c_ Solution:
 
         OBSTACLE 1
 
-        m, n l..(G), l..(G[0])
+        m, n l..(G), l..(G 0
         dp [[0] * n ___ _ __ r..(2)]
         prev curr 0
 

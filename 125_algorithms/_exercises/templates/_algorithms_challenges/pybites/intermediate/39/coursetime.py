@@ -31,7 +31,7 @@ ___ get_all_timestamps
         ___ line __ file_lines:
             ts __.f..(r"(\d{1,2}?:\d{1,2})", line)
             __ ts:
-                course_timestamps.a..(ts[0])
+                course_timestamps.a..(ts 0
 
         r.. course_timestamps
 

@@ -87,8 +87,8 @@ ___ handle_args(args=N.., cart_ N..
         __ op __ 'add' a.. param:
             cart.add(Item(param[0], i..(param[1]), param[2].l.. __ 'true'
         ____ op __ 'delete' a.. param:
-            cart.delete(param[0])
+            cart.delete(param 0
         ____ op __ 'list' a.. param:
             cart.show()
         ____ op __ 'search' a.. param:
-            cart.s..(param[0])
+            cart.s..(param 0

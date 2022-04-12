@@ -13,9 +13,9 @@ c_ Solution(o..
         __ n.. obstacleGrid:
             r.. 0
         m l..(obstacleGrid)
-        n l..(obstacleGrid[0])
+        n l..(obstacleGrid 0
         dp [[0]*n ___ i __ r..(m)]
-        __ obstacleGrid[0][0] __ 1:
+        __ obstacleGrid 0 0  __ 1:
             r.. 0
         ___ i __ r..(m
             ___ j __ r..(n

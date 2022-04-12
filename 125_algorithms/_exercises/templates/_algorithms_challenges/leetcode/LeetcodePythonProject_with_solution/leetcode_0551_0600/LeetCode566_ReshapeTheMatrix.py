@@ -12,7 +12,7 @@ c_ Solution(o..
         :rtype: List[List[int]]
         """
         __ n.. nums o. n.. nums[0]: r.. nums
-        m, n l..(nums), l..(nums[0])
+        m, n l..(nums), l..(nums 0
         __ m*n !_ r*c:
             r.. nums
         res    # list

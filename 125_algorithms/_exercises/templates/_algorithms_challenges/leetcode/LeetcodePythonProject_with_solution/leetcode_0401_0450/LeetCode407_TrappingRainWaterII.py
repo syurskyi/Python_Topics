@@ -8,7 +8,7 @@ c_ Solution(o..
         _______ heapq
         __ n.. heightMap o. n.. heightMap[0]:
             r.. 0
-        m, n l..(heightMap), l..(heightMap[0])
+        m, n l..(heightMap), l..(heightMap 0
         heap    # list
         visited [[F..]*n ___ _ __ r..(m)]
         ___ i __ r..(m

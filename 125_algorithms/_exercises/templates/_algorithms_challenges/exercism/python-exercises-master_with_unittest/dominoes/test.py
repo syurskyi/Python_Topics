@@ -94,7 +94,7 @@ c_ DominoesTest(unittest.TestCase
         msg ("In chain {}, left end of first domino ({}) and "
                "right end of last domino ({}) must match")
         msg msg.f..(output_chain, output_chain[0], output_chain[-1])
-        assertEqual(output_chain[0][0], output_chain[-1][1], msg)
+        assertEqual(output_chain 0 0 , output_chain[-1][1], msg)
 
     ___ assert_correct_chain  input_dominoes, output_chain
         msg 'There should be a chain for {}'.f..(input_dominoes)

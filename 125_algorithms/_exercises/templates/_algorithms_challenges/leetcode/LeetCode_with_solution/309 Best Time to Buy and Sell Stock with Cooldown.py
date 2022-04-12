@@ -35,7 +35,7 @@ c_ Solution(o..
         __ n __ 0 o. n __ 1:
             r.. 0
         __ n __ 2:
-            r.. m..(0, A[1]-A[0])
+            r.. m..(0, A[1]-A 0
 
         CD 1  # cool down
         F [0 ___ _ __ x..(n)]

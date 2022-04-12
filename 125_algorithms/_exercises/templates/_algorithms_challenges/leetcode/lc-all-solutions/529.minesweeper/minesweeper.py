@@ -22,7 +22,7 @@ c_ Solution(o..
       nbrs    # list
       ___ di, dj __ directions:
         ni, nj i + di, j + dj
-        __ 0 <_ ni < l..(board) a.. 0 <_ nj < l..(board[0]) a.. board[ni][nj] __ ["M", "E"]:
+        __ 0 <_ ni < l..(board) a.. 0 <_ nj < l..(board 0 a.. board[ni][nj] __ ["M", "E"]:
           __ board[ni][nj] __ "M":
             mineCnt += 1
           ____

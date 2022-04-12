@@ -7,7 +7,7 @@ c_ Solution(o..
     __ l..(grid) __ 0:
       r.. 0
     dp [0 ___ _ __ r..(0, l..(grid[0]]
-    dp[0] grid[0][0]
+    dp[0] grid 0 0 
 
     ___ j __ r..(1, l..(grid[0]:
       dp[j] dp[j - 1] + grid[0][j]

@@ -24,7 +24,7 @@ ___ get_all_timestamps
         ___ line __ ct.r..
             times __.f..(r'\((\d\d?:\d\d)\)', line)
             __ l..(times) > 0:
-                result.a..(times[0])
+                result.a..(times 0
     r.. result
 
 

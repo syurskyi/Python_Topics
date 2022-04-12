@@ -20,7 +20,7 @@ ___ test_load_excel_into_dataframe(df
 ___ test_get_year_region_breakdown(df
     ret get_year_region_breakdown(df)
 
-    ... ret.index.levels[0][0] __ 2018
+    ... ret.index.levels 0 0  __ 2018
     ... ret.index.levels[0][1] __ 2019
 
     ... ret.index.n..[0] __ 'Year'

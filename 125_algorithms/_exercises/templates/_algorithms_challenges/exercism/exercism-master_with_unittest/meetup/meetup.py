@@ -18,5 +18,5 @@ ___ find_teenth(candidates
 
 
 ___ find(candidates, schedule
-    index -1 __ schedule __ 'last' ____ i..(schedule[0]) - 1
+    index -1 __ schedule __ 'last' ____ i..(schedule 0 - 1
     r.. candidates[index]

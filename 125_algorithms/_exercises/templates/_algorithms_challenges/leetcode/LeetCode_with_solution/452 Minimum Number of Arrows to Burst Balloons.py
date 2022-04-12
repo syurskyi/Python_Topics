@@ -49,7 +49,7 @@ c_ Solution:
         :rtype: int
         """
         ret 0
-        points.s..(key=l.... x: x[0])
+        points.s..(key=l.... x: x 0
         heap    # list
         ___ point __ points:
             s, e point

@@ -3,6 +3,6 @@ ___ additive_inverse(lst
     output    # list
     w.... index < l..(lst
         s lst[index] * -1
-        output.a..(s)
+        ?.a.. s)
         index + 1
-    r.. output
+    r.. ?

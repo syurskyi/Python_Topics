@@ -5,11 +5,11 @@ c_ Solution(o..
     :type target: int
     :rtype: bool
     """
-    __ l..(matrix) __ 0 o. l..(matrix[0]) __ 0:
+    __ l..(matrix) __ 0 o. l..(matrix 0 __ 0:
       r.. F..
 
     m l..(matrix)
-    n l..(matrix[0])
+    n l..(matrix 0
 
     start, end 0, m * n - 1
     w.... start + 1 < end:

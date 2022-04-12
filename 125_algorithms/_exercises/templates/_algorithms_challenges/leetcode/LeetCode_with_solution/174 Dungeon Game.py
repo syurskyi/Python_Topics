@@ -46,7 +46,7 @@ c_ Solution:
         :rtype: int
         """
         m l..(dungeon)
-        n l..(dungeon[0])
+        n l..(dungeon 0
 
         F [[___.maxint ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
         ___ i __ x..(m-1, -1, -1
@@ -57,7 +57,7 @@ c_ Solution:
                     p.. m..(F[i+1][j], F[i][j+1])  # choose the path with minimum HP required
                     F[i][j] m..(1, p..-dungeon[i][j])  # adjust for current cell
 
-        r.. F[0][0]
+        r.. F 0 0 
 
     ___ calculateMinimumHP_error  dungeon
         """
@@ -68,9 +68,9 @@ c_ Solution:
         :rtype: int
         """
         m l..(dungeon)
-        n l..(dungeon[0])
+        n l..(dungeon 0
         __ m __ 1 a.. n __ 1:
-            r.. 1-m..(0, dungeon[0][0])
+            r.. 1-m..(0, dungeon 0 0 )
 
         F [[-___.maxint-1 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
         ___ i __ x..(1, m+1

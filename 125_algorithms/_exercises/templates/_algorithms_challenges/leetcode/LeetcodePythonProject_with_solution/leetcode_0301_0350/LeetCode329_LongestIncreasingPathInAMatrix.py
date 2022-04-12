@@ -7,7 +7,7 @@ Created on Mar 18, 2017
 c_ Solution(o..
     ___ longestIncreasingPath  matrix
         __ n.. matrix: r.. 0
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         mem [[0]*n ___ _ __ r..(m)]
         maxPath 0
         ___ i __ r..(m
@@ -16,7 +16,7 @@ c_ Solution(o..
         r.. maxPath
     
     ___ helper  matrix, i, j, mem
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         __ mem[i][j]:
             r.. mem[i][j]
         ___ x, y __ ((i+1, j), (i-1, j), (i, j+1), (i, j-1:

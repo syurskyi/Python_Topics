@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         __ n.. grid o. n.. grid[0]:
             r.. 0
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         distance [[0]*n ___ _ __ r..(m)]
         reach [[0]*n ___ _ __ r..(m)]
         buildingNum 0

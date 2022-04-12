@@ -16,7 +16,7 @@ ___ most_prolific_automaker(year
        the highest number of new car models"""
     cnt C..(row["automaker"] ___ row __ data
                   __ row["year"] __ year).m..
-    r.. cnt[0][0]
+    r.. cnt 0 0 
 
 
 ___ get_models(automaker, year

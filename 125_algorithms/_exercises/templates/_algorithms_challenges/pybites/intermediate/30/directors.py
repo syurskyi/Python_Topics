@@ -51,7 +51,7 @@ ___ get_movies_by_director
 ___ calc_mean_score(movies
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
-    movie_mean [movie.score ___ movie __ movies]
+    movie_mean [movie.score ___ ? __ ?]
     r.. r..(s..(movie_mean) / l..(movie_mean), 1)
 
 
@@ -65,7 +65,7 @@ ___ get_average_scores(directors
         director_avg_score calc_mean_score(value)
         __ l..(value) >_ MIN_MOVIES:
             directors_scores.a..((key, director_avg_score
-    r.. s..(directors_scores, key=l.... x: x[1], r.._T..
+    r.. s..(directors_scores, key=l.... x: ? 1 r.._T..
 
 
 # if __name__ == "__main__":

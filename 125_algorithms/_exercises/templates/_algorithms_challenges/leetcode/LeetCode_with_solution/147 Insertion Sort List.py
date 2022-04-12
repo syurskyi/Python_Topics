@@ -100,7 +100,7 @@ __ _____ __ ____
 
 
 
-    head Solution().insertionSortList(lst[0])
+    head Solution().insertionSortList(lst 0
     current head
     ___ i __ r..(l..(lst:
         print current.val

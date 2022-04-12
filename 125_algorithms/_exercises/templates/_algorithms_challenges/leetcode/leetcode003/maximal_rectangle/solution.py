@@ -8,7 +8,7 @@ c_ Solution:
         n l..(matrix)
         __ n.. matrix[0]:
             r.. 0
-        m l..(matrix[0])
+        m l..(matrix 0
         hist [[0 ___ j __ r..(m)] ___ i __ r..(n)]
         ___ i __ r..(n
             ___ j __ r..(m

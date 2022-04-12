@@ -17,7 +17,7 @@ c_ Solution(o..
         count 0
         ___ prereq __ prerequisites:
             degree[prereq[0]] += 1
-            graph[prereq[1]].a..(prereq[0])
+            graph[prereq[1]].a..(prereq 0
         print('degree: %s' % (degree
         ___ i __ r..(numCourses
             __ degree[i] __ 0:
@@ -46,7 +46,7 @@ c_ Solution(o..
         graph [[] ___ _ __ r..(numCourses)]
         visited [F..]*numCourses
         ___ i, prereq __ e..(prerequisites
-            graph[prereq[1]].a..(prereq[0])
+            graph[prereq[1]].a..(prereq 0
         ___ i __ r..(numCourses
             __ n.. dfs(graph, visited, i
                 r.. F..

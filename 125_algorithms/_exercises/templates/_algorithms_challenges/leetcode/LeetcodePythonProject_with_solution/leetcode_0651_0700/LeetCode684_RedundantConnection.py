@@ -12,7 +12,7 @@ c_ Solution(o..
         n l..(edges)
         roots [-1]*(n+1)
         ___ edge __ edges:
-            root1 getRoot(roots, edge[0])
+            root1 getRoot(roots, edge 0
             root2 getRoot(roots, edge[1])
             __ root1 __ root2:
                 r.. edge

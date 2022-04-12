@@ -14,7 +14,7 @@ c_ Solution:
             ( 0,  1),
         )
         ans 1
-        m, n l..(G), l..(G[0])
+        m, n l..(G), l..(G 0
         memo [[0] * n ___ _ __ r..(m)]
 
         ___ x __ r..(m

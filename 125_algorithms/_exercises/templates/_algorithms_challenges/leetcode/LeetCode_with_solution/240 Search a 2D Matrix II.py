@@ -33,7 +33,7 @@ c_ Solution(o..
         :rtype: bool
         """
         m l..(mat)
-        n l..(mat[0])
+        n l..(mat 0
 
         i 0
         j n-1
@@ -63,7 +63,7 @@ c_ SolutionBinSearch(o..
         :rtype: bool
         """
         m l..(mat)
-        n l..(mat[0])
+        n l..(mat 0
 
         col [mat[i][0] ___ i __ x..(m)]
         row_by_first bin_search(col, target)

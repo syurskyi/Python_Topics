@@ -15,7 +15,7 @@ c_ Solution(o..
         ___ i __ r..(n
             richer2[i]    # list
         ___ v __ richer:
-            richer2[v[1]].a..(v[0])
+            richer2[v[1]].a..(v 0
         res [-1 ___ i __ r..(n)]
         ___ i __ r..(n
             dfs(i, quiet, richer2, res)

@@ -4,6 +4,6 @@ ___ repeat(item, times
     index 1
     output    # list
     w.... index <_ times:
-        output.a..(item)
+        ?.a.. item)
         index += 1
-    r.. output
+    r.. ?

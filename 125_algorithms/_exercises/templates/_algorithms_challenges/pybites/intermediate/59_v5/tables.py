@@ -8,7 +8,7 @@ c_ MultiplicationTable:
 
     ___ __len__
         """Returns the area of the table (len x* len y)"""
-        r.. l..(_table) * l..(_table[0])
+        r.. l..(_table) * l..(_table 0
 
     ___ -s
         """Returns a string representation of the table"""

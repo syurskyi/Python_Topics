@@ -8,7 +8,7 @@ ___ login_required(func
     $w.. f..
     ___ wrapper $
         __ args[0] __ loggedin_users:
-            r.. func(args[0])
+            r.. func(args 0
 
         __ args[0] __ known_users a.. args[0] n.. __ loggedin_users:
             r.. "please login"

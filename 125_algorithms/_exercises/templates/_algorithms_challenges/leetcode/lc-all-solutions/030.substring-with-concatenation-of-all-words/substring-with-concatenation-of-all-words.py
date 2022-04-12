@@ -14,7 +14,7 @@ c_ Solution(o..
     t    # dict
     ans    # list
     deq  d..([])
-    wl  l..(words[0])
+    wl  l..(words 0
     fullscore  0
     ___ word __ words:
       d[word]  d.g.. word, 0) + 1

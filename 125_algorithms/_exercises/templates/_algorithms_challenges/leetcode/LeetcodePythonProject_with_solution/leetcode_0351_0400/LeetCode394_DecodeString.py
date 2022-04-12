@@ -19,7 +19,7 @@ c_ Solution(o..
                 stack[-1][0] += st*k
             ____
                 stack[-1][0] += c
-        r.. stack[0][0]
+        r.. stack 0 0 
     
     ___ decodeString_own  s
         __ ' ' n.. __ s:

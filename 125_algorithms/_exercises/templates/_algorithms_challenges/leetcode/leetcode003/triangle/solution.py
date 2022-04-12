@@ -32,4 +32,4 @@ c_ Solution:
                     minsum m..(t[row + 1][col], t[row + 1][col + 1])
                     t[row][col] triangle[row][col] + minsum
             row -_ 1
-        r.. t[0][0]
+        r.. t 0 0 

@@ -13,7 +13,7 @@ c_ Solution(o..
         _______ b__
         __ n.. matrix o. n.. matrix[0]:
             r.. 0
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         areas [[0]*n ___ _ __ r..(m)]
         ___ i __ r..(m
             ___ j __ r..(n

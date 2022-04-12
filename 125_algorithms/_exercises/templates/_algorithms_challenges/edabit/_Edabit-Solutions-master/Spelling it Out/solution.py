@@ -3,5 +3,5 @@ ___ spelling(txt
     s  ""
     ___ i __ txt:
         s + i
-        output.a..(s)
-    r.. output
+        ?.a.. s)
+    r.. ?

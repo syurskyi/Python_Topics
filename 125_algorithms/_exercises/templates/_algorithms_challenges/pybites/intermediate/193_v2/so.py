@@ -36,7 +36,7 @@ ___ top_python_questions(url=cached_so_url
                 results.a..((question_text,votes
 
         
-        r.. s..(results,key=l.... x: x[1],r.._T..
+        r.. s..(results,key=l.... x: ? 1r.._T..
 
 
 

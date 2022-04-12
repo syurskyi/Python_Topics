@@ -15,7 +15,7 @@ c_ Calculator(o..
         result s__.s..(' ')
         _loop('*/')
         _loop('+-')
-        r.. f__(result[0])
+        r.. f__(result 0
 
     ___ _loop  operators
         i 1

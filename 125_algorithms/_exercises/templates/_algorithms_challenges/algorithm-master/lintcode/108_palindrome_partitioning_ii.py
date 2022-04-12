@@ -29,7 +29,7 @@ c_ Solution:
     ___ get_palin_map  S
         n l..(S)
         is_palindrome [[F..] * n ___ _ __ r..(n)]
-        is_palindrome[0][0] T..
+        is_palindrome 0 0  T..
 
         ___ end __ r..(1, n
             is_palindrome[end][end] T..

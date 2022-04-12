@@ -84,7 +84,7 @@ c_ Solution:
         q [(0, root)]  # (index, node)
         w.... q:
             cur_q    # list
-            left, right q[0][0], q[-1][0]
+            left, right q 0 0 , q[-1][0]
             ret m..(ret, right - left + 1)
             ___ idx, node __ q:
                 __ node.left:

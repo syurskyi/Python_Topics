@@ -8,7 +8,7 @@ c_ Solution:
         __ n.. g o. n.. g[0]:
             r.. ans
 
-        m, n l..(g), l..(g[0])
+        m, n l..(g), l..(g 0
 
         ___ i __ r..(m
             left, right 0, n - 1

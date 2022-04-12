@@ -118,7 +118,7 @@ c_ Solution:
                 F[i] F[i-1]
             ____
                 # iterate forward does not work
-                F[i] m..(F[i], F[i-1] + costs[0])
+                F[i] m..(F[i], F[i-1] + costs 0
 
 
 __ _______ __ _______

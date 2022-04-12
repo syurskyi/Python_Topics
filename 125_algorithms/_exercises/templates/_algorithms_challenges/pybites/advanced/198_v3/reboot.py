@@ -24,8 +24,8 @@ ___ extract_date(reboots
         time_part line_parts[-1].s..(':')
         y.. d__ y.._2019,
                         m.._months[line_parts[-3]],
-                        d.._int(line_parts[-2]),
-                       hour=i..(time_part[0]),
+                        d.._int(line_parts -2,
+                       hour=i..(time_part 0,
                        minute=i..(time_part[1]
 
 

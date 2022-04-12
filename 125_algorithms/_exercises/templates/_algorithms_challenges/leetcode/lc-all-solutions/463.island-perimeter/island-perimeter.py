@@ -15,7 +15,7 @@ c_ Solution(o..
         res += 1
       __ j __ 0 o. j - 1 >_ 0 a.. grid[i][j - 1] __ 0:
         res += 1
-      __ j __ l..(grid[0]) - 1 o. j + 1 < l..(grid[0]) a.. grid[i][j + 1] __ 0:
+      __ j __ l..(grid 0 - 1 o. j + 1 < l..(grid 0 a.. grid[i][j + 1] __ 0:
         res += 1
       r.. res
 

@@ -31,7 +31,7 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
 
         c_ Node(o..
             ___ - , i, j
@@ -68,7 +68,7 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         i k % n
         j k - (i * m)
         r.. matrix[i][j]

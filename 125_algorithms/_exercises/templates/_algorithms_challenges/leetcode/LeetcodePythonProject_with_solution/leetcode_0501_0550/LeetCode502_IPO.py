@@ -19,7 +19,7 @@ c_ Solution(o..
         ___ c, p __ z..(Capital, Profits
             heapq.heappush(heapCap, (c, p
         ___ _ __ r..(k
-            w.... heapCap a.. heapCap[0][0] <_ W:
+            w.... heapCap a.. heapCap 0 0  <_ W:
                 c, p heapq.heappop(heapCap)
                 heapq.heappush(heapPro, (-p, c
             __ n.. heapPro:

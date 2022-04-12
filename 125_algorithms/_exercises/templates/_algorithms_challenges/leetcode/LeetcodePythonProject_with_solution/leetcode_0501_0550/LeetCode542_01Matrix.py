@@ -10,7 +10,7 @@ c_ Solution(o..
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
         """
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         distance [[f__('inf')]*n ___ _ __ r..(m)]
         queue    # list
         ___ i __ r..(m

@@ -32,7 +32,7 @@ DOCS {
         .merge_lines([1, 2])
     ),
     "edgy": (
-        Document().add_line("").swap_lines(0, 0).merge_lines([0]).add_punctuation(".", 0)
+        Document().add_line("").swap_lines(0, 0).merge_lines( 0.add_punctuation(".", 0)
     ),
     "full-case": (
         Document()

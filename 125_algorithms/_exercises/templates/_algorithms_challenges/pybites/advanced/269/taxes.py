@@ -95,7 +95,7 @@ c_ Taxes:
 
         values [("Taxable Income:",f"{salary:,.2f}"),("Taxes Owed:",f"{taxes:,.2f}"),("Tax Rate:",f"{tax_rate:.2f}%")]
 
-        largest_left_length l..(values[0][0]) + 1
+        largest_left_length l..(values 0 0 ) + 1
         largest_right_length l..(s..(i..(salary))) + 4
         spaces 32 - (largest_left_length + largest_right_length)
 

@@ -51,7 +51,7 @@ c_ Solution(o..
         """
         __ n.. mat: r.. 0
 
-        m, n l..(mat), l..(mat[0])
+        m, n l..(mat), l..(mat 0
         visited [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
         h    # list
         # add cells at the four edges

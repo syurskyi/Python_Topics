@@ -3,7 +3,7 @@ c_ Solution:
     # RETURN NOTHING, MODIFY matrix IN PLACE.
     ___ setZeroes  matrix
         n l..(matrix)
-        m l..(matrix[0])
+        m l..(matrix 0
         column_zero F..
         row_zero F..
         ___ i __ r..(n

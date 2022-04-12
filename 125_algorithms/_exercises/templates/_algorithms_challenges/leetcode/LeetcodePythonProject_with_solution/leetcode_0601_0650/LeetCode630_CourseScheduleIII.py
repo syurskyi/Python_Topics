@@ -15,7 +15,7 @@ c_ Solution(o..
         t__ 0
         ___ course __ courses:
             t__ += course[0]
-            heapq.heappush(heap, -course[0])
+            heapq.heappush(heap, -course 0
             __ t__ > course[1]:
                 t__ -_ -heapq.heappop(heap)
         r.. l..(heap)

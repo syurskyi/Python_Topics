@@ -49,9 +49,9 @@ c_ Solution:
         """
         in_order(root)
         __ l..(swapped_pair)__2:
-            swapped_pair[0][0].val, swapped_pair[1][1].val swapped_pair[1][1].val, swapped_pair[0][0].val
+            swapped_pair 0 0 .val, swapped_pair[1][1].val swapped_pair[1][1].val, swapped_pair 0 0 .val
         ____ # neighboring
-            swapped_pair[0][0].val, swapped_pair[0][1].val swapped_pair[0][1].val, swapped_pair[0][0].val
+            swapped_pair 0 0 .val, swapped_pair[0][1].val swapped_pair[0][1].val, swapped_pair 0 0 .val
         r.. root
 
     ___ in_order  current

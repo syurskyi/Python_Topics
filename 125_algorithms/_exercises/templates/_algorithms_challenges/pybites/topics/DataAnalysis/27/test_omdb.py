@@ -13,9 +13,9 @@ TMP __.g.. TMP  /tmp
 S3 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA 'omdb_data'
 
-DATA_LOCAL TMP / DATA
-__ n.. P..(DATA_LOCAL).exists
-    u..(S3 + DATA, DATA_LOCAL)
+DATA_LOCAL ? / ?
+__ n.. P..?.e..
+    u.. ? + ? ?
 
 
 ?p__.f..(scope="module")
@@ -25,14 +25,14 @@ ___ movies
         ___ i, line __ e..(f.r.., 1
             movie_json TMP / f'{i}.json'
             w__ o.. movie_json, 'w') __ f:
-                f.write _*{line}\n')
+                ?.w.. _*{line}\n')
             files.a..(movie_json)
 
-    y.. get_movie_data(files)
+    y..  ? ?
 
     # teardown
-    ___ file_ __ files:
-        file_.unlink()
+    ___ file_ __ ?
+        >.u..
 
 
 ___ test_len_movie_data(movies

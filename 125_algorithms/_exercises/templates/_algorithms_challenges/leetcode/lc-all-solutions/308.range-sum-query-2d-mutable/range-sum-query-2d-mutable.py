@@ -7,7 +7,7 @@ c_ NumMatrix(o..
     __ l..(matrix) __ 0:
       col 0
     ____
-      col l..(matrix[0])
+      col l..(matrix 0
     c [[0] * (col + 1) ___ _ __ r..(0, l..(matrix) + 1)]
     m [[0] * (col + 1) ___ _ __ r..(0, l..(matrix) + 1)]
     ___ i __ r..(0, l..(matrix:

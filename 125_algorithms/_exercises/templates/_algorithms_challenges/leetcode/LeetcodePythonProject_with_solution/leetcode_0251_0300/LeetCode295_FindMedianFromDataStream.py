@@ -24,6 +24,6 @@ c_ MedianFinder(o..
     
     ___ findMedian
         __ l..(minHeap) __ l..(maxHeap
-            r.. (minHeap[0] - maxHeap[0])/2.0
+            r.. (minHeap[0] - maxHeap 0/2.0
         ____
             r.. -maxHeap[0]

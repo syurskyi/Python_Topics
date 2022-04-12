@@ -45,9 +45,9 @@ c_ MedianFinder:
     __ l..(left) __ l..(right
       r.. median
     ____ l..(left) > l..(right
-      r.. (median - left[0]) / 2.0
+      r.. (median - left 0 / 2.0
     __ l..(right) > l..(left
-      r.. (median + right[0]) / 2.0
+      r.. (median + right 0 / 2.0
 
 # Your MedianFinder object will be instantiated and called as such:
 # mf = MedianFinder()

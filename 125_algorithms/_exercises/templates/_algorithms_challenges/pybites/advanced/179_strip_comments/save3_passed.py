@@ -6,9 +6,9 @@ ___ strip_comments(code
         output    # list
         ___ line __ new_code.s..
             __ line.s.. 'class'
-                output.a..(line)
-                output.a..('')
+                ?.a.. line)
+                ?.a.. '')
             ____
-                output.a..(line)
+                ?.a.. line)
         r.. '\n'.j.. ?
     r.. __.s.. _ #\s.*\n\s*|"{3}[\s\S]*?"{3}\n\s*', '', code)

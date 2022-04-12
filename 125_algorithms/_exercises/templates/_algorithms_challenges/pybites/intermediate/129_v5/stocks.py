@@ -49,4 +49,4 @@ ___ get_sectors_with_max_and_min_stocks
     ___ co __ data:
         sector_list += C..({co 'sector' : _cap_str_to_mln_float(co 'cap' )})
     sectors s..([(k, v) ___ k, v __ sector_list.i..], key=l.... x: x[1])
-    r.. sectors[-1][0], sectors[0][0]
+    r.. sectors[-1][0], sectors 0 0 

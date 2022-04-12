@@ -16,7 +16,7 @@ ___ get_others(map_, r, c
     __ c > 0:
         num += map_[r][c-1] __ 1
 
-    __ c < l..(map_[0]) - 1:
+    __ c < l..(map_ 0 - 1:
         num += map_[r][c+1] __ 1
 
     r.. num

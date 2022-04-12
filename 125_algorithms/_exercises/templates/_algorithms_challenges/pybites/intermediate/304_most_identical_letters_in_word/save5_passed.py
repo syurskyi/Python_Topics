@@ -40,7 +40,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     l_column   # list
     c_column    # list
     ___ w __ df 'casefold' :
-        l_column.a..(C..(w).m..[0][0])
+        l_column.a..(C..(w).m.. 0 0 )
         c_column.a..(C..(w).m..[0][1])
 
     l_column =  'e' __ x __ '-' ____ x ___ x __ l_column]
@@ -55,4 +55,4 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     __ output __ ('wepxaceholderve', 'e', 4
         output 'we\'ve', 'e', 2
 
-    r.. output
+    r.. ?

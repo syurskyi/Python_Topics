@@ -20,7 +20,7 @@ c_ Solution:
         __ n.. board o. n.. board[0]:
             r..
 
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
 
         ___ x __ r..(m
             ___ y __ r..(n
@@ -37,7 +37,7 @@ c_ Solution:
 
     ___ get_live_neibs  board, x, y
         cnt 0
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
 
         ___ dx __ (-1, 0, 1
             ___ dy __ (-1, 0, 1
@@ -67,7 +67,7 @@ c_ Solution:
         __ n.. board o. n.. board[0]:
             r..
 
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
         ans [[0] * n ___ _ __ r..(m)]
 
         ___ x __ r..(m
@@ -92,7 +92,7 @@ c_ Solution:
 
     ___ get_live_neibs  board, x, y
         cnt 0
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
 
         ___ dx __ (-1, 0, 1
             ___ dy __ (-1, 0, 1

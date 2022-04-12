@@ -12,7 +12,7 @@ c_ Solution(o..
         :rtype: int
         """
         n l..(flights)
-        k0 l..(days[0])
+        k0 l..(days 0
         dp [f__('-inf')]*n
         dp[0] 0
         ___ i __ r..(k0

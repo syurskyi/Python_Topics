@@ -27,7 +27,7 @@ c_ Solution(o..
         """
         max_res [N..]
         res max_sum(root, max_res)
-        r.. m..(res, max_res[0])
+        r.. m..(res, max_res 0
 
     ___ max_sum  root, max_res
         __ root __ N..

@@ -10,7 +10,7 @@ c_ Solution(o..
         :type dungeon: List[List[int]]
         :rtype: int
         """
-        m, n l..(dungeon), l..(dungeon[0])
+        m, n l..(dungeon), l..(dungeon 0
         tbl [[0]*n ___ _ __ r..(m)]
         __ dungeon[-1][-1] > 0:
             tbl[-1][-1] 1
@@ -30,4 +30,4 @@ c_ Solution(o..
                     right tbl[i][j+1] - dungeon[i][j]
                     down tbl[i+1][j] - dungeon[i][j]
                     tbl[i][j] m..(1, m..(right, down
-        r.. tbl[0][0]
+        r.. tbl 0 0 

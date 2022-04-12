@@ -14,7 +14,7 @@ c_ Solution(o..
         __ n.. board o. n.. word:
             r.. F..
         m l..(board)
-        n l..(board[0])
+        n l..(board 0
         ___ i __ r..(m
             ___ j __ r..(n
                 __ helper(board, word, 0, i, j

@@ -9,7 +9,7 @@ c_ Solution(o..
         :type grid: List[List[int]]
         :rtype: int
         """
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         rows [[0, 0] ___ _ __ r..(m)]
         cols [[0, 0] ___ _ __ r..(n)]
         sumVal 0
@@ -25,7 +25,7 @@ c_ Solution(o..
         res 0
         ___ i __ r..(m
             ___ j __ r..(n
-                res += m..(rows[i][0], cols[j][0])
+                res += m..(rows[i][0], cols[j] 0
         r.. res - sumVal
     
     ___ test

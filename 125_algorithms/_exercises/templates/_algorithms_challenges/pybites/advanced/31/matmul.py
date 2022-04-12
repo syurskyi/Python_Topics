@@ -13,13 +13,13 @@ c_ Matrix(o..
 
     $
     ___ ncols
-        r.. l..(values[0])
+        r.. l..(values 0
 
     ___ __matmul__ other
 
         
-        rows_1,cols_1 l..(values),l..(values[0])
-        rows_2,cols_2 l..(other.values),l..(other.values[0])
+        rows_1,cols_1 l..(values),l..(values 0
+        rows_2,cols_2 l..(other.values),l..(other.values 0
 
 
         result_rows,result_cols rows_1,cols_2

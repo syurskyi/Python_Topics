@@ -9,10 +9,10 @@ def flatten(list_of_lists):
 ___ flatten_more(list_of_lists, output
     ___ i __ list_of_lists:
         __ t..(i) n.. __ (t..([]), t..(())):
-            output.a..(i)
+            ?.a.. i)
         ____
             flatten_more(i, output)
-    r.. output
+    r.. ?
 
 ___ flatten(list_of_lists
     r.. flatten_more(list_of_lists, [])

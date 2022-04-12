@@ -26,7 +26,7 @@ c_ Solution(o..
             ____
                 dp[i][0] dp[i+1][1]
                 dp[i][1] dp[i+1][0]+1
-        r.. m..(dp[0][0], dp[0][1])
+        r.. m..(dp 0 0 , dp[0][1])
     
     # My solution DFS is TLE
     ___ minSwap_own_slow  A, B

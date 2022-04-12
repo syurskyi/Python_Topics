@@ -57,7 +57,7 @@ c_ Solution:
         glass.
         """
         G d..(l....: d..(i..
-        G[0][0] poured
+        G 0 0  poured
         ___ i __ r..(query_row
             ___ j __ r..(i+1  # i + 1 glasses at row i
                 excess m..(0, G[i][j] - 1)

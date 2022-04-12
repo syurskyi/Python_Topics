@@ -15,7 +15,7 @@ c_ Solution(o..
         V [[] ___ _ __ x..(n)]
         ___ e __ edges:
             V[e[0]].a..(e[1])
-            V[e[1]].a..(e[0])
+            V[e[1]].a..(e 0
 
         visited [F.. ___ _ __ x..(n)]
         cnt 0

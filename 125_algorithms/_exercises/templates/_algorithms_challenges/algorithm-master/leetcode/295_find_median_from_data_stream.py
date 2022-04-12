@@ -41,4 +41,4 @@ c_ MedianFinder:
             r.. minheap[0] * 1.0
 
         # since the child in maxheap is negative
-        r.. (minheap[0] - maxheap[0]) / 2.0
+        r.. (minheap[0] - maxheap 0 / 2.0

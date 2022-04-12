@@ -90,7 +90,7 @@ __ _____ __ ____
     ___ i __ r..(length-1
         lst[i].next lst[i+1]
 
-    head Solution().sortList(lst[0])
+    head Solution().sortList(lst 0
 
     cur head
     w....(cur

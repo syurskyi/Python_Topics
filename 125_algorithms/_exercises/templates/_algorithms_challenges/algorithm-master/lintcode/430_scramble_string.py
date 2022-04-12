@@ -74,4 +74,4 @@ c_ Solution:
                         __ dp[i][j + k - l][l] a.. dp[i + l][j][k - l]:
                             dp[i][j][k] T..
 
-        r.. dp[0][0][n]
+        r.. dp 0 0 [n]

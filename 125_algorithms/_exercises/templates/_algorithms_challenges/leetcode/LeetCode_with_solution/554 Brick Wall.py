@@ -50,4 +50,4 @@ c_ Solution:
                 s += wall[i][j]
                 h[s] += 1
 
-        r.. m - m..(h.v.. o. [0])
+        r.. m - m..(h.v.. o.  0

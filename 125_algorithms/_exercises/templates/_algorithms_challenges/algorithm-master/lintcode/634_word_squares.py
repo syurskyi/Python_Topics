@@ -17,7 +17,7 @@ c_ Solution:
         __ n.. words:
             r.. ans
 
-        dfs(words, l..(words[0]), ans, [])
+        dfs(words, l..(words 0, ans, [])
 
         r.. ans
 

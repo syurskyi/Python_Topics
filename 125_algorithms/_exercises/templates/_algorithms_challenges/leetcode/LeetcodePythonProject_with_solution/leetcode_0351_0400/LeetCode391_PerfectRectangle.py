@@ -12,12 +12,12 @@ c_ Solution(o..
         hashset s..()
         area 0
         ___ rect __ rectangles:
-            x1 m..(x1, rect[0])
+            x1 m..(x1, rect 0
             y1 m..(y1, rect[1])
             x2 m..(x2, rect[2])
             y2 m..(y2, rect[3])
             
-            area += (rect[2]-rect[0])*(rect[3]-rect[1])
+            area += (rect[2]-rect 0*(rect[3]-rect[1])
             
             __ (rect[0], rect[1]) n.. __ hashset:
                 hashset.add((rect[0], rect[1]

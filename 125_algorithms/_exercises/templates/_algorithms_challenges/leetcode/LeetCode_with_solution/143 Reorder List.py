@@ -132,7 +132,7 @@ __ _____ __ ____
     ___ i __ r..(length-1
         lst[i].next lst[i+1]
 
-    Solution().reorderList(lst[0])
+    Solution().reorderList(lst 0
 
     cur lst[0]
     w....(cur

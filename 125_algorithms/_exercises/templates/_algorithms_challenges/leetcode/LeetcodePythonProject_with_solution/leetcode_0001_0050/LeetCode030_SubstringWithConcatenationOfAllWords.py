@@ -15,7 +15,7 @@ c_ Solution(o..
         hashmap0    # dict
         ___ word __ words:
             hashmap0[word] hashmap0.g.. word, 0)+1
-        wordLen l..(words[0])
+        wordLen l..(words 0
         ___ j __ r..(wordLen
             hashmap    # dict
             start j

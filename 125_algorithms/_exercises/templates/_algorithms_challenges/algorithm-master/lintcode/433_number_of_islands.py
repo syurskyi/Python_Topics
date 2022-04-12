@@ -9,7 +9,7 @@ c_ Solution:
         __ n.. grid o. n.. grid[0]:
             r.. ans
 
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
 
         ___ x __ r..(m
             ___ y __ r..(n
@@ -20,7 +20,7 @@ c_ Solution:
         r.. ans
 
     ___ dfs  grid, x, y
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         grid[x][y] 0
 
         ___ dx, dy __ (

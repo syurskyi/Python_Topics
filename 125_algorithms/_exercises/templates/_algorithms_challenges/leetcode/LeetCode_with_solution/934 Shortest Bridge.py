@@ -41,7 +41,7 @@ c_ Solution:
 
         BFS grow from 1 component
         """
-        m, n l..(A), l..(A[0])
+        m, n l..(A), l..(A 0
         # coloring
         colors [[N.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         color 0
@@ -78,7 +78,7 @@ c_ Solution:
         r..
 
     ___ nbr  A, i, j
-        m, n l..(A), l..(A[0])
+        m, n l..(A), l..(A 0
         ___ di, dj __ dirs:
             I i + di
             J j + dj

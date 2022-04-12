@@ -20,7 +20,7 @@ c_ Solution(o..
       r.. ans
 
     ans 0
-    dp [[0] * l..(matrix[0]) ___ _ __ r..(0, l..(matrix]
+    dp [[0] * l..(matrix 0 ___ _ __ r..(0, l..(matrix]
     ___ i __ r..(r..(0, l..(matrix))):
       __ i __ l..(matrix) - 1:
         dp[i] [i..(h) ___ h __ matrix[i]]

@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. matrix o. n.. matrix[0]:
             r.. []
 
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         ans [[f__('inf')] * n ___ _ __ r..(m)]
         queue    # list
 

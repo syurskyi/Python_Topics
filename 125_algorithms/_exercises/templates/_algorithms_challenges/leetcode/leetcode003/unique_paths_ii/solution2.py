@@ -24,7 +24,7 @@ c_ Solution:
     # @return an integer
     ___ uniquePathsWithObstacles  obstacleGrid
         n l..(obstacleGrid)
-        m l..(obstacleGrid[0])
+        m l..(obstacleGrid 0
         t [[-1 ___ i __ r..(m)] ___ j __ r..(n)]
         r.. unique_paths(obstacleGrid, m - 1, n - 1, t)
 

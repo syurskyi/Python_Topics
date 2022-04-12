@@ -21,7 +21,7 @@ c_ Solution(o..
         ___ i, j __ q:  # iterator
             ___ d __ dirs:
                 i1, j1 i+d[0], j+d[1]
-                __ 0 <_ i1 < l..(mat) a.. 0 <_ j1 < l..(mat[0]) a.. mat[i1][j1] > mat[i][j]+1:
+                __ 0 <_ i1 < l..(mat) a.. 0 <_ j1 < l..(mat 0 a.. mat[i1][j1] > mat[i][j]+1:
                     mat[i1][j1] mat[i][j]+1
                     q.a..((i1, j1
 
@@ -40,7 +40,7 @@ c_ Solution_slow(o..
         __ n.. rooms: r..
         m l..(rooms)
         __ n.. m: r..
-        n l..(rooms[0])
+        n l..(rooms 0
 
         ___ i __ x..(m
             ___ j __ x..(n
@@ -49,7 +49,7 @@ c_ Solution_slow(o..
 
     ___ bfs  rooms, x, y
         m l..(rooms)
-        n l..(rooms[0])
+        n l..(rooms 0
         level 0
         q [(x, y)]
         w.... q:
@@ -70,7 +70,7 @@ c_ Solution_slow(o..
         ____ c.. _______ d..
 
         m l..(rooms)
-        n l..(rooms[0])
+        n l..(rooms 0
         q d..()
         q.a..((x, y, 0
         w.... q:
@@ -96,7 +96,7 @@ c_ Solution_error(o..
         __ n.. rooms: r..
         m l..(rooms)
         __ n.. m: r..
-        n l..(rooms[0])
+        n l..(rooms 0
 
         visited [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
         ___ i __ x..(m

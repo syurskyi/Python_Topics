@@ -54,7 +54,7 @@ c_ Solution:
                     dp[i][j] F..
 
 
-        r.. dp[0][0]
+        r.. dp 0 0 
 
     ___ isMatch_forward  s, p
         """

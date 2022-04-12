@@ -22,7 +22,7 @@ c_ Solution(o..
       ____ 0 <_ i < l..(matrix) a.. j < 0:
         j 0
       ____ 0 <_ i < l..(matrix) a.. j >_ l..(matrix[0]
-        j l..(matrix[0]) - 1
+        j l..(matrix 0 - 1
         i -_ 2 * di
       ____ i < 0 a.. j >_ l..(matrix[0]
         i 1

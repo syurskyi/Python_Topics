@@ -12,7 +12,7 @@ c_ Solution(o..
         :rtype: bool
         """
         __ n.. matrix o. n.. matrix[0]: r.. F..
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         i, j m-1, 0
         w.... i >_ 0 a.. j < n:
             __ matrix[i][j] __ target:
@@ -30,7 +30,7 @@ c_ Solution(o..
         :rtype: bool
         """
         __ n.. matrix o. n.. matrix[0]: r.. F..
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         i, j 0, n-1
         w.... i < m a.. j >_ 0:
             __ matrix[i][j] __ target:
@@ -60,7 +60,7 @@ c_ Solution(o..
                 start mid+1
         row0 start __ start < l..(matrix) ____ start-1
         ___ row __ r..(row0, -1, -1
-            start, end 0, l..(matrix[0])-1
+            start, end 0, l..(matrix 0-1
             w.... start <_ end:
                 mid i..((start+end)/2)
                 __ matrix[row][mid] __ target:

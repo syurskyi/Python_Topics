@@ -54,6 +54,6 @@ __ _____ __ ____
     nodes [TreeNode(i) ___ i __ r..(3)]
     nodes[0].left nodes[1]
     nodes[1].left nodes[2]
-    print Solution().levelOrder(nodes[0])
+    print Solution().levelOrder(nodes 0
 
 

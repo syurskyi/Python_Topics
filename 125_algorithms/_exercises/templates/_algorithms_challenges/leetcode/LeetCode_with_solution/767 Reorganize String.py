@@ -46,7 +46,7 @@ c_ Solution:
                 piles[cnt].a..(c)
                 cnt (cnt + 1) % l..(piles)
 
-        __ l..(piles) > 1 a.. l..(piles[-2]) __ 1:
+        __ l..(piles) > 1 a.. l..(piles -2 __ 1:
             r.. ""
 
         r.. "".j..(

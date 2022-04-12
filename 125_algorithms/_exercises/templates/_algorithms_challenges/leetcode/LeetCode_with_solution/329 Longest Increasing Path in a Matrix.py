@@ -40,7 +40,7 @@ c_ Solution(o..
         """
         __ n.. matrix: r.. 0
 
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         cache [[N.. ___ _ __ x..(n)] ___ _ __ x..(m)]
         gmax 1
         ___ i __ x..(m
@@ -54,7 +54,7 @@ c_ Solution(o..
         Strictly increasing, thus no need to have a visited matrix
         """
         __ n.. cache[i][j]:
-            m, n l..(matrix), l..(matrix[0])
+            m, n l..(matrix), l..(matrix 0
             maxa 1
             ___ d __ dirs:
                 I, J i + d[0], j + d[1]

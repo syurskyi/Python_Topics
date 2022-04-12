@@ -9,7 +9,7 @@ DIRECTIONS [(0, 1), (0, -1), (1, 0), (-1, 0)]
 c_ Board:
     ___ - , board
         board board
-        width l..(board[0])
+        width l..(board 0
         height l..(board)
 
     ___ valid  x, y

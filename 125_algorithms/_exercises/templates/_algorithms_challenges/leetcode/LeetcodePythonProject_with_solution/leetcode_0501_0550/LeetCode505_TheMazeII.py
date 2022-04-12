@@ -14,7 +14,7 @@ c_ Solution(o..
         """
         _______ heapq
         __ n.. maze o. n.. maze[0]: r.. -1
-        m, n l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze 0
         heap    # list
         heapq.heappush(heap, (0, start[0], start[1]
         visited [[F..]*n ___ _ __ r..(m)]
@@ -29,7 +29,7 @@ c_ Solution(o..
         r.. -1
     
     ___ getNextSteps  maze, i, j
-        m, n l..(maze), l..(maze[0])
+        m, n l..(maze), l..(maze 0
         steps s..()
         dirs (1, 0), (0, 1), (-1, 0), (0, -1)
         ___ dir __ dirs:

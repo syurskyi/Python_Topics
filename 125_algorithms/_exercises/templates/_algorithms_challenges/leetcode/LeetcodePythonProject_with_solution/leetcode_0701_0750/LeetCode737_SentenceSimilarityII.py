@@ -20,7 +20,7 @@ c_ Solution(o..
             __ p[1] n.. __ pairInfo:
                 pairInfo[p[1]] s..()
             pairInfo[p[0]].add(p[1])
-            pairInfo[p[1]].add(p[0])
+            pairInfo[p[1]].add(p 0
         ___ w1, w2 __ z..(words1, words2
             __ w1 __ w2:
                 _____
@@ -54,7 +54,7 @@ c_ Solution(o..
         l    # list
         ___ p __ pairs:
             __ p[0] n.. __ hashmap:
-                l.a..(p[0])
+                l.a..(p 0
                 hashmap[p[0]] n
                 n += 1
             __ p[1] n.. __ hashmap:

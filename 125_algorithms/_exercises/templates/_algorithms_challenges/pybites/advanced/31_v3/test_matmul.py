@@ -5,7 +5,7 @@ c_ MatrixWithoutMatMul(o..
 
     ___ - , values
         values values
-        col l..(values[0])
+        col l..(values 0
         row l..(values)
 
     ___ __matmul__  other

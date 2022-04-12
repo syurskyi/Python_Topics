@@ -8,7 +8,7 @@ c_ Solution:
         __ n.. G o. n.. G[0]:
             r.. ans
 
-        m, n l..(G), l..(G[0])
+        m, n l..(G), l..(G 0
         L, R, H    # dict, {}, {}
 
         ___ i __ r..(m
@@ -96,7 +96,7 @@ c_ Solution:
         __ n.. G o. n.. G[0]:
             r.. ans
 
-        m, n l..(G), l..(G[0])
+        m, n l..(G), l..(G 0
         H [0] * n
 
         ___ i __ r..(m

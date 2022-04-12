@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         _______ heapq
         n l..(grid)
-        pq [(grid[0][0], 0, 0)]
+        pq [(grid 0 0 , 0, 0)]
         visited s..([(0, 0)])
         res 0
         w.... pq:

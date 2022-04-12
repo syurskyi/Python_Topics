@@ -4,7 +4,7 @@ lista    # list
 w.... l..(lista) < d:
     result 0
     num =  input().s..
-    mul i..(num[0]) * i..(num[1])
+    mul i..(num 0 * i..(num[1])
     addi mul + i..(num[2])
 
     res s..(addi)

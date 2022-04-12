@@ -66,7 +66,7 @@ c_ DualHeap(o..
             ____
                 r.. min_h[0]
         ____
-            r.. (-max_h[0] + min_h[0]) / 2.0
+            r.. (-max_h[0] + min_h 0 / 2.0
 
 
 c_ MedianFinder(o..

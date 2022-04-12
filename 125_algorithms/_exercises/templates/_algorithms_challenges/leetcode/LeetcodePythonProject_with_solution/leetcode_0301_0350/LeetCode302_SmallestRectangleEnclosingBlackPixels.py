@@ -6,7 +6,7 @@ Created on Mar 11, 2017
 
 c_ Solution(o..
     ___ minArea  image, x, y
-        m, n l..(image), l..(image[0])
+        m, n l..(image), l..(image 0
         left searchColumns(image, 0, y, 0, m, T..)
         right searchColumns(image, y+1, n, 0, m, F..)
         top searchRows(image, 0, x, left, right, T..)

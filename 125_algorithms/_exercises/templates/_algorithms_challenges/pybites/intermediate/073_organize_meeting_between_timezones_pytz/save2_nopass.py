@@ -15,6 +15,6 @@ ___ within_schedule(utc, *timezones
         ____
             tz pytz.timezone(tz)
             converted utc.r..(tzinfo=pytz.utc).astimezone(tz)
-            output.a..(converted.hour __ MEETING_HOURS)
+            ?.a.. converted.hour __ MEETING_HOURS)
 
     r.. a.. ?

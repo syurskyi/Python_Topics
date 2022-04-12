@@ -38,7 +38,7 @@ ___ get_srt_section_ids(text: s..) __ L..[i..]:
       start t..(hours=i..(start_h), minutes=i..(start_m), seconds=i..(start_s[:2]
       stop t..(hours=i..(stop_h), minutes=i..(stop_m), seconds=i..(stop_s[:2]
       time_delta stop - start
-      sections_ranking[i..(section[0])] total_chars / time_delta.seconds
+      sections_ranking[i..(section 0] total_chars / time_delta.seconds
 
    r.. s..(sections_ranking, key=sections_ranking.get, r.._T..
 

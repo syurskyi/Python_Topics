@@ -34,9 +34,9 @@ c_ Solution(o..
         __ n.. maxHeap a.. n.. minHeap:
             r.. 0
         __ l..(minHeap) __ l..(maxHeap
-            r.. (minHeap[0] - maxHeap[0])/2.0
+            r.. (minHeap[0] - maxHeap 0/2.0
         ____
-            r.. f__(minHeap[0])
+            r.. f__(minHeap 0
     
     ___ add  num
         __ n.. maxHeap o. num > -maxHeap[0]:

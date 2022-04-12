@@ -9,7 +9,7 @@ c_ Solution(o..
         :type grid: List[str]
         :rtype: int
         """
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         numOfKeys 0
         dirs [[0, 1], [0, -1], [1, 0], [-1, 0]]
         moves s..()

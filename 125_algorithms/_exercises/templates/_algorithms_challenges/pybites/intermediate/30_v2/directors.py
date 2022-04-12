@@ -57,7 +57,7 @@ ___ calc_mean_score(movies
        round the mean to 1 decimal place"""
     
 
-    r.. r..(s..(movie.score ___ movie __ movies) /l..(movies),1)
+    r.. r..(s..(movie.score ___ ? __ ?) /l..(movies),1)
 
 
 
@@ -77,7 +77,7 @@ ___ get_average_scores(directors
 
 
     
-    r.. s..(result,key=l.... x: x[1],r.._T..
+    r.. s..(result,key=l.... x: ? 1r.._T..
 
 
 

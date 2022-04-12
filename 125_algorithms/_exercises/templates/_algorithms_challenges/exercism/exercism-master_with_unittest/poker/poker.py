@@ -94,7 +94,7 @@ c_ Card:
                   "A": 14}
 
     ___ - , inp
-        rank numberify_face_cards(inp[0])
+        rank numberify_face_cards(inp 0
         suit inp[1]
 
     ___ -s

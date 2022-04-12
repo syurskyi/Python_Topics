@@ -10,7 +10,7 @@ c_ Solution(o..
         :type hits: List[List[int]]
         :rtype: List[int]
         """
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         
         ___ dfs(i, j
             __ n.. (0<_i<m a.. 0<_j<n) o. grid[i][j]!_1:

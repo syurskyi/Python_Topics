@@ -50,7 +50,7 @@ ___ get_srt_section_ids(text: s..) __ L..[i..]:
             tds.a..(td)
 
 
-        time_elapsed (tds[1] - tds[0]).total_seconds()
+        time_elapsed (tds[1] - tds 0.total_seconds()
         characters l..(text)
 
         characters_per_second characters/time_elapsed

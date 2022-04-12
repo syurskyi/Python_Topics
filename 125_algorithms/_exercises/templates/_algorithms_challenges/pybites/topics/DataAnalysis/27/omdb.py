@@ -1,39 +1,39 @@
 _______ j__
 
 
-___ get_movie_data(files: l..) __ l..:
+___ get_movie_data files l.. __ l..
     """Parse movie json files into a list of dicts"""
     data    # list
-    ___ movie __ files:
+    ___ movie __ ?
         w__ o.. movie) __ f:
             ___ line __ f:
                 __ l..(line.s.. > 0:
                     data.a..(j__.l.. (line.s..()))
     r.. data
 
-___ get_single_comedy(movies: l..) __ s..:
+___ get_single_comedy movies l.. __ s..
     """return the movie with Comedy in Genres"""
-    ___ movie __ movies:
+    ___ ? __ ?
         #print(movie['Title'])
         __ "Comedy" __ movie 'Genre' :
             r.. movie 'Title'
 
 
-___ get_movie_most_nominations(movies: l..) __ s..:
+___ get_movie_most_nominations movies l.. __ s..
     """Return the movie that had the most nominations"""
     # "Awards":"Nominated for 1 Oscar. Another 10 wins & 32 nominations."
     nomination_count    # dict
-    ___ movie __ movies:
-        nomination_count[movie 'Title']] i..(movie 'Awards' .s.. [-2])
+    ___ ? __ ?
+        nomination_count[movie 'Title']] i..(movie 'Awards' .s..  -2
     r.. m..(nomination_count, key=nomination_count.get)
 
 
-___ get_movie_longest_runtime(movies: l..) __ s..:
+___ get_movie_longest_runtime movies l.. __ s..
     """Return the movie that has the longest runtime"""
     #"Runtime":"107 min"
     runtime    # dict
-    ___ movie __ movies:
-        runtime[movie 'Title']] i..(movie 'Runtime' .s.. [0])
+    ___ ? __ ?
+        runtime[movie 'Title']] i..(movie 'Runtime' .s..  0
     r.. m..(runtime, key=runtime.get)
 
 

@@ -69,7 +69,7 @@ c_ Solution:
         __ n.. pre o. n.. post:
             r.. N..
 
-        root TreeNode(pre[0])
+        root TreeNode(pre 0
         __ l..(pre) __ 1:
             r.. root
 

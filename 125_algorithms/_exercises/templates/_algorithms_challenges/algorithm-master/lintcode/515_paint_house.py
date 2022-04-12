@@ -8,7 +8,7 @@ c_ Solution:
             r.. 0
 
         INFINITY f__('inf')
-        m, n l..(costs), l..(costs[0])
+        m, n l..(costs), l..(costs 0
         dp [[0] * n ___ _ __ r..(2)]
 
         """

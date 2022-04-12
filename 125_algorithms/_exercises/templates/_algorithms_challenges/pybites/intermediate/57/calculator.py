@@ -7,21 +7,21 @@ ___ calculator(operation, numbers
     print(operation,numbers)
     total 0
     __ operation __ 'add':
-        total f__(numbers[0])
+        total f__(numbers 0
         ___ i __ numbers[1:]:
             total total + f__(i)
     ____ operation __ 'sub':
-        total f__(numbers[0])
+        total f__(numbers 0
         ___ i __ numbers[1:]:
             total total - f__(i)
     ____ operation __ 'mul':
-        total f__(numbers[0])
+        total f__(numbers 0
         print(total)
         ___ i __ numbers[1:]:
             total total * f__(i)
             print(total)
     ____ operation __ 'div':
-        total f__(numbers[0])
+        total f__(numbers 0
         ___ i __ numbers[1:]:
             total total / f__(i)
     print(t..(total

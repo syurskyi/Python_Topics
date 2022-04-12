@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         __ n.. grid o. n.. grid[0]:
             r.. 0
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         maxArea 0
         ___ i __ r..(m
             ___ j __ r..(n

@@ -11,7 +11,7 @@ c_ Solution
         """
         # 2: live => die
         # -1: die => live
-        m, n l..(board), l..(board[0])
+        m, n l..(board), l..(board 0
         ___ i __ r..(m
             ___ j __ r..(n
                 liveNum liveNeighborNum(board, i, j)
@@ -31,7 +31,7 @@ c_ Solution
     ___ liveNeighborNum  board, i, j
         count 0
         ___ i0 __ r..(m..(i-1, 0), m..(l..(board), i+2:
-            ___ j0 __ r..(m..(j-1, 0), m..(l..(board[0]), j+2:
+            ___ j0 __ r..(m..(j-1, 0), m..(l..(board 0, j+2:
                 __ i0 __ i a.. j0 __ j: _____
                 __ board[i0][j0] __ (1, 2
                     count+=1

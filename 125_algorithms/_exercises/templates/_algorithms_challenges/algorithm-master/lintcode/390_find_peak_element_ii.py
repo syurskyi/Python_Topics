@@ -37,7 +37,7 @@ c_ Solution:
         __ n.. A:
             r.. NULL_POS
 
-        m, n l..(A), l..(A[0])
+        m, n l..(A), l..(A 0
         left, col, right 0, 0, n - 1
         up, row, down 0, 0, m - 1
 

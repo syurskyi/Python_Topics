@@ -29,7 +29,7 @@ c_ Solution:
         __ n.. L:
             r..
 
-        k l..(L[0])
+        k l..(L 0
         l l..(L)
 
         working_list l..(L)
@@ -95,7 +95,7 @@ c_ Solution:
         __ n.. L:
             r..
 
-        k l..(L[0])
+        k l..(L 0
         l l..(L)
 
         Lmap    # dict  # map of L

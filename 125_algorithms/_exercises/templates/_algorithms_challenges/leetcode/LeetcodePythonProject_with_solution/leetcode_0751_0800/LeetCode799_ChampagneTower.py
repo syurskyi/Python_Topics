@@ -12,7 +12,7 @@ c_ Solution(o..
         :rtype: float
         """
         result [[0.0]*101 ___ _ __ r..(101)]
-        result[0][0] poured
+        result 0 0  poured
         ___ i __ r..(100
             ___ j __ r..(i+1
                 __ result[i][j] >_ 1:

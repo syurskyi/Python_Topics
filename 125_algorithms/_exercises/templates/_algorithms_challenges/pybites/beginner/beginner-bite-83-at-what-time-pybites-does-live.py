@@ -32,6 +32,6 @@ ___ what_time_lives_pybites(naive_utc_dt
 
 now d__.n..
 result what_time_lives_pybites(now)
-print(result[0])
+print(result 0
 print(result[1])
 

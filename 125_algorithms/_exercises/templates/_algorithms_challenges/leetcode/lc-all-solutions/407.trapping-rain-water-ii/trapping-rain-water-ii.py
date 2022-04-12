@@ -7,7 +7,7 @@ c_ Solution(o..
     __ n.. heightMap:
       r.. 0
     h l..(heightMap)
-    w l..(heightMap[0])
+    w l..(heightMap 0
     ans 0
     heap    # list
     visited s..()

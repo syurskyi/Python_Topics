@@ -59,7 +59,7 @@ c_ Solution:
 
         handle equal case [aa, ab, aa]
         """
-        m, n l..(A), l..(A[0])
+        m, n l..(A), l..(A 0
         lt [F.. ___ i __ r..(m)]
         deleted 0
         ___ j __ r..(n

@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         image A
         __ n.. image o. n.. image[0]: r..
-        m, n l..(image), l..(image[0])
+        m, n l..(image), l..(image 0
         ___ i __ r..(m
             j, l 0, n-1
             w.... j <_ l:

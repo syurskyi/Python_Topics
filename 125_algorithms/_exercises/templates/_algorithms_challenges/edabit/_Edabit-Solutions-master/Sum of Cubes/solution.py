@@ -6,4 +6,4 @@ ___ sum_of_cubes(nums
       output + c
       index + 1
 
-    r.. output
+    r.. ?

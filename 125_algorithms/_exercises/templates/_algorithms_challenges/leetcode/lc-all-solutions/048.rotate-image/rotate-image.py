@@ -7,7 +7,7 @@ c_ Solution(o..
     __ l..(matrix) __ 0:
       r..
     h l..(matrix)
-    w l..(matrix[0])
+    w l..(matrix 0
     ___ i __ r..(0, h
       ___ j __ r..(0, w / 2
         matrix[i][j], matrix[i][w - j - 1] matrix[i][w - j - 1], matrix[i][j]

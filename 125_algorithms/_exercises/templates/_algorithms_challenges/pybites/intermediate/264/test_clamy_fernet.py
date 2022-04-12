@@ -25,7 +25,7 @@ ___ rcf
 
 ?p__.f..(scope="module")
 ___ cf
-    r.. ClamyFernet(key=KEYS[0])
+    r.. ClamyFernet(key=KEYS 0
 
 
 ___ test_clamyfernet_no_args(rcf

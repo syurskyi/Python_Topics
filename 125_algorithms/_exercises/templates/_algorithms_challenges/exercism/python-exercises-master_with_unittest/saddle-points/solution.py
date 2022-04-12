@@ -1,7 +1,7 @@
 ___ saddle_points(m
     __ n.. m:
         r.. s..()
-    __ any(l..(r) !_ l..(m[0]) ___ r __ m
+    __ any(l..(r) !_ l..(m 0 ___ r __ m
         r.. V...('irregular matrix')
     mmax [m..(r) ___ r __ m]
     mmin [m..(c) ___ c __ z..(*m)]

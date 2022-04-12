@@ -31,7 +31,7 @@ c_ Solution:
         __ n.. preorder:
             r.. N..
 
-        root TreeNode(preorder[0])
+        root TreeNode(preorder 0
         root_index inorder.i.. root.val)
 
         root.left buildTree(preorder[1:root_index+1], inorder[0:root_index])

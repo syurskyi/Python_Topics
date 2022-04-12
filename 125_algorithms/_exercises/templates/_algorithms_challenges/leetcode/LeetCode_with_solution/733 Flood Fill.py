@@ -55,7 +55,7 @@ c_ Solution:
 
     ___ dfs  image, i, j, cur_color, new_color
         image[i][j] new_color
-        m, n l..(image), l..(image[0])
+        m, n l..(image), l..(image 0
         ___ di, dj __ dirs:
             I i + di
             J j + dj

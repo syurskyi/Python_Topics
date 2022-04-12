@@ -9,7 +9,7 @@ c_ Solution(o..
         count n
         roots [-1]*count
         ___ edge __ edges:
-            root1 findRoot(roots, edge[0])
+            root1 findRoot(roots, edge 0
             root2 findRoot(roots, edge[1])
             __ root1 !_ root2:
                 roots[root1] root2
@@ -26,7 +26,7 @@ c_ Solution(o..
         count n
         roots l..(r..(n
         ___ edge __ edges:
-            root1 find(roots, edge[0])
+            root1 find(roots, edge 0
             root2 find(roots, edge[1])
             __ root1 !_ root2:
                 roots[root1] roots[root2]

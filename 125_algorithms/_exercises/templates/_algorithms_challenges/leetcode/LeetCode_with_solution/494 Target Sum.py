@@ -40,7 +40,7 @@ c_ Solution:
         __ n.. A:
             r..
         F d..(l....: d..(i..
-        F[0][0] 1
+        F 0 0  1
         ___ i __ r..(l..(A:
             ___ k __ F[i].k..:  # F[i] for A[:i]
                 F[i+1][k-A[i]] += F[i][k]

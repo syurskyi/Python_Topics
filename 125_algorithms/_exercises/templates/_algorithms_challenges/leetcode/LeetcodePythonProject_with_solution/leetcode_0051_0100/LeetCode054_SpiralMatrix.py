@@ -13,7 +13,7 @@ c_ Solution(o..
         __ n.. matrix:
             r.. matrix
         m l..(matrix)
-        n l..(matrix[0])
+        n l..(matrix 0
         result    # list
         
         top, down, left, right 0, m-1, 0, n-1

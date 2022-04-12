@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         matrix A
         __ n.. matrix: r.. 0
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         ___ i __ r..(m
             __ matrix[i][0] __ 0:
                 ___ j __ r..(n

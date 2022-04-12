@@ -12,7 +12,7 @@ c_ Solution(o..
 
     ___ next(curr, maze
       height l..(maze)
-      width l..(maze[0])
+      width l..(maze 0
       directions [(-1, 0, "u"), (1, 0, "d"), (0, -1, "l"), (0, 1, "r")]
       ___ di, dj, mark __ directions:
         dist 0

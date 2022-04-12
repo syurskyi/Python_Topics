@@ -39,7 +39,7 @@ c_ NumMatrix(o..
             F N..
             r..
 
-        n l..(matrix[0])
+        n l..(matrix 0
         F [[0 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
         ___ i __ x..(1, m+1
             ___ j __ x..(1, n+1

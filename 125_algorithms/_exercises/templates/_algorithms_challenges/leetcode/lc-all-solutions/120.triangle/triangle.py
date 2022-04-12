@@ -5,7 +5,7 @@ c_ Solution(o..
     :rtype: int
     """
     dp [0] * l..(triangle)
-    dp[0] triangle[0][0]
+    dp[0] triangle 0 0 
     ___ i __ r..(1, l..(triangle:
       pre dp[0]
       ___ j __ r..(l..(triangle[i]:

@@ -50,7 +50,7 @@ c_ Solution(o..
         :return: an integer
         """
         F [[0 ___ _ __ x..(n)] ___ _ __ x..(m)]
-        F[0][0] 1  # start
+        F 0 0  1  # start
 
         # F[i][j] = F[i-1][j] + F[i][j-1]
         ___ i __ x..(m

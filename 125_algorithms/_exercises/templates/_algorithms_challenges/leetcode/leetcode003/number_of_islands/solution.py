@@ -7,7 +7,7 @@ c_ Solution:
         n l..(grid)
         __ n __ 0:
             r.. 0
-        m l..(grid[0])
+        m l..(grid 0
         __ m __ 0:
             r.. 0
         ___ y __ r..(n

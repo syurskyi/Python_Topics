@@ -12,4 +12,4 @@ train data[data 'lasted'  < 8]
 model LinearRegression()
 model.fit(train 'charged' .values.reshape(-1, 1), train 'lasted' .values.reshape(-1, 1
 ans model.predict([[timeCharged]])
-print(m..(ans[0][0], 8
+print(m..(ans 0 0 , 8

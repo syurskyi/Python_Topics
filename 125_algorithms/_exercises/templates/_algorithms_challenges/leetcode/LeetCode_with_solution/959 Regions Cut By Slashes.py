@@ -112,7 +112,7 @@ c_ Solution:
         |\ /|
         |/_\|
         """
-        m, n l..(grid), l..(grid[0])
+        m, n l..(grid), l..(grid 0
         ds DisjointSet()
         T, R, B, L r..(4)  # top, right, bottom, left
         ___ i __ r..(m

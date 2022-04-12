@@ -9,7 +9,7 @@ c_ Solution(o..
         :type matrix: List[List[int]]
         :rtype: bool
         """
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         ___ i __ r..(m-1, 0, -1
             val matrix[i][0]
             ___ k __ r..(1, n

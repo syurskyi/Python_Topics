@@ -9,7 +9,7 @@ ___ test_total_row_count_after_import
     sql '''SELECT COUNT(*) FROM players'''
     cur.execute(sql)
     ret cur.fetchall()
-    ... ret[0][0] __ 3961
+    ... ret 0 0  __ 3961
 
 
 ___ test_player_with_max_points_per_game

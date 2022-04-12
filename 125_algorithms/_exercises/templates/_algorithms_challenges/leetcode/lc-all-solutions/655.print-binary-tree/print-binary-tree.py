@@ -27,5 +27,5 @@ c_ Solution(o..
 
     h height(root)
     res [[""] * (2 ** h - 1) ___ _ __ r..(h)]
-    fill(root, res, 0, l..(res[0]) - 1, 0)
+    fill(root, res, 0, l..(res 0 - 1, 0)
     r.. res

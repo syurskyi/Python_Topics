@@ -3,6 +3,6 @@ ___ countdown(start
     output [start]
     w.... index <_ start:
         s start - index
-        output.a..(s)
+        ?.a.. s)
         index += 1
-    r.. output
+    r.. ?

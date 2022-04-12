@@ -5,7 +5,7 @@ c_ Solution:
         :rtype: int
         """
         INFINITY f__('inf')
-        m, n l..(G), l..(G[0])
+        m, n l..(G), l..(G 0
         dp [[INFINITY] * (n + 1) ___ _ __ r..(m + 1)]
         dp[m][n - 1] 1
         dp[m - 1][n] 1
@@ -16,4 +16,4 @@ c_ Solution:
                 __ dp[i][j] <_ 0:
                     dp[i][j] 1
 
-        r.. dp[0][0]
+        r.. dp 0 0 

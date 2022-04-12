@@ -16,9 +16,9 @@ c_ Solution(o..
         """
         sumVal, maxDiff 0, f__('-inf')
         ___ nut __ nuts:
-            dist a..(tree[0]-nut[0])+a..(tree[1]-nut[1])
+            dist a..(tree[0]-nut 0+a..(tree[1]-nut[1])
             sumVal += dist*2
-            maxDiff m..(maxDiff, dist-a..(squirrel[0]-nut[0])-a..(squirrel[1]-nut[1]
+            maxDiff m..(maxDiff, dist-a..(squirrel[0]-nut 0-a..(squirrel[1]-nut[1]
         r.. sumVal-maxDiff
     
     ___ minDistance_space  height, width, tree, squirrel, nuts
@@ -35,9 +35,9 @@ c_ Solution(o..
         nutToSquirrel [0]*n
         sumVal 0
         ___ i __ r..(n
-            nutToTree[i] a..(nuts[i][0]-tree[0])+a..(nuts[i][1]-tree[1])
+            nutToTree[i] a..(nuts[i][0]-tree 0+a..(nuts[i][1]-tree[1])
             sumVal += nutToTree[i]*2
-            nutToSquirrel[i] a..(nuts[i][0]-squirrel[0])+a..(nuts[i][1]-squirrel[1])
+            nutToSquirrel[i] a..(nuts[i][0]-squirrel 0+a..(nuts[i][1]-squirrel[1])
         minVal f__('inf')
         ___ i __ r..(n
             dist sumVal + nutToSquirrel[i]-nutToTree[i]

@@ -110,7 +110,7 @@ c_ Solution(o..
             factorial /= i
 
         # case when factorial=0!
-        result.a..(array[0])
+        result.a..(array 0
 
         r.. "".j..(s..(element) ___ element __ result)
 

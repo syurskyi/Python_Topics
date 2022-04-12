@@ -12,7 +12,7 @@ c_ Solution(o..
         :rtype: int
         """
         __ n.. forest o. n.. forest[0]: r.. 0
-        m, n l..(forest), l..(forest[0])
+        m, n l..(forest), l..(forest 0
         heap    # list
         ___ i __ r..(m
             ___ j __ r..(n

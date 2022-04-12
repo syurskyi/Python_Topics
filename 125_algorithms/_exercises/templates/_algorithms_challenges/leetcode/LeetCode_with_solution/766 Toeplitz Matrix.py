@@ -48,7 +48,7 @@ ____ t___ _______ L..
 
 c_ Solution:
     ___ isToeplitzMatrix  matrix: L..[L..[i..]]) __ b..:
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         ___ i __ r..(1, m
             ___ j __ r..(1, n
                 __ matrix[i][j] !_ matrix[i-1][j-1]:
@@ -62,7 +62,7 @@ c_ Solution:
 
         need a good way to go through the matrix
         """
-        m, n l..(matrix), l..(matrix[0])
+        m, n l..(matrix), l..(matrix 0
         ___ j __ r..(n
             r 0
             c j

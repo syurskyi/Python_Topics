@@ -120,7 +120,7 @@ c_ MiniYelp:
             __ distance <_ k:
                 neighbors.a..((distance, restaurant
 
-        neighbors.s..(key=l.... item: item[0])
+        neighbors.s..(key=l.... item: item 0
         r.. [
             restr.name
             ___ _, restr __ neighbors
@@ -249,7 +249,7 @@ c_ MiniYelp:
             __ distance <_ k:
                 neighbors.a..((distance, restaurant
 
-        neighbors.s..(key=l.... item: item[0])
+        neighbors.s..(key=l.... item: item 0
         r.. [
             restr.name
             ___ _, restr __ neighbors

@@ -13,7 +13,7 @@ c_ Solution:
 
         n l..(A)
         dp [[0] * (target + 1) ___ _ __ r..(n + 1)]
-        dp[0][0] 1
+        dp 0 0  1
 
         ___ i __ r..(1, n + 1
             ___ j __ r..(target + 1

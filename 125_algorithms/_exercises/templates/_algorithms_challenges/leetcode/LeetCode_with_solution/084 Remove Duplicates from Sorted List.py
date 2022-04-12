@@ -42,4 +42,4 @@ __ _____ __ ____
     ___ i __ r..(l..(nodes)-1
         nodes[i].next nodes[i+1]
 
-    Solution().deleteDuplicates(nodes[0])
+    Solution().deleteDuplicates(nodes 0

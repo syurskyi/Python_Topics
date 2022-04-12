@@ -62,14 +62,14 @@ c_ Excel(o..
             arr s.s..(':')
             __ l..(arr) __ 1:
                 x i..(arr[0][1:])-1
-                y o..(arr[0][0])-o..('A')
+                y o..(arr 0 0 )-o..('A')
                 vals.a..((x, y
                 sumVal += matrix[x][y]
             ____
                 x0 i..(arr[0][1:])-1
-                y0 o..(arr[0][0])-o..('A')
+                y0 o..(arr 0 0 )-o..('A')
                 x1 i..(arr[1][1:])-1
-                y1 o..(arr[1][0])-o..('A')
+                y1 o..(arr[1] 0-o..('A')
                 ___ i0 __ r..(x0, x1+1
                     ___ j0 __ r..(y0, y1+1
                         vals.a..((i0, j0
