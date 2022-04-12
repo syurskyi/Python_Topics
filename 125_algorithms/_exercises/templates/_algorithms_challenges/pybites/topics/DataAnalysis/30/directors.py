@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 ____ c.. _______ d.., n..
 _______ __
 ____ u__.r.. _______ u..
@@ -8,7 +8,7 @@ TMP __.g.. TMP  /tmp
 
 fname 'movie_metadata.csv'
 #remote = os.path.join(BASE_URL, fname)
-local __.p...j..(TMP, fname)
+local __.p...j.. T.. f..
 #u..(remote, local)
 
 MOVIE_DATA local
@@ -24,7 +24,7 @@ ___ get_movies_by_director
     use the defined Movie namedtuple"""
     director d..(l..)
     w__ o.. local, encoding="utf-8") __ f:
-        movies csv.DictReader(f)
+        movies c__.DictReader(f)
         ___ ? __ ?
             __ movie 'title_year'  !_ '' a.. i..(movie 'title_year' ) > 1960:
                 director[movie 'director_name']].a..(
@@ -52,7 +52,7 @@ ___ get_average_scores(directors
        with >= MIN_MOVIES"""
     #print(len(directors))
     local_list    # list
-    ___ director __ directors:
+    ___ ? __ ?:
         __ l..(directors[director]) >_ MIN_MOVIES: # each director
             total 0
             ___ i __ r..(l..(directors[director]:

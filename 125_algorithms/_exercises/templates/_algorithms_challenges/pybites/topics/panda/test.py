@@ -6,6 +6,6 @@ EPIDEMIC PATH+"epidemic"
 MYSEJAHTERA PATH+"mysejahtera"
 STATIS PATH+"static"
 
-df pd.read_csv(EPIDEMIC+"\\cases_state.csv")
+df __.r..(EPIDEMIC+"\\cases_state.csv")
 
 print(df 'cases_new' .describe

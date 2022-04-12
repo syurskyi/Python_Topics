@@ -13,7 +13,7 @@ ___ movies
 
 ?p__.f..(scope="module")
 ___ scores(movies
-    r.. get_average_scores(movies)
+    r.. ? ?
 
 
 ___ test_get_movies_by_director(movies
@@ -49,12 +49,12 @@ ___ test_get_average_scores_top_directors(scores
     'James Cameron', 'Joss Whedon',
     'Alejandro G. Iñárritu',
 ])
-___ test_director_in_top_scores(director, scores
+___ test_director_in_top_scores director scores
     # order / score might slightly change depending the way the mean
     # is calculated so only test director names in top scores
-    top_scores scores[2:13]
-    directors {score[0] ___ score __ top_scores}
-    ... director __ directors
+    top_scores ? 2|13
+    directors score 0 ___ ?__ ?
+    ... ? __ ?
 
 ___ test_ignore_older_movies(movies
     """Lowell Sherman's Black and White is from 1933 and should

@@ -6,7 +6,7 @@ _______ p.... __ pd
 _______ series __ se
 
 file_name "https://bites-data.s3.us-east-2.amazonaws.com/iris.csv"
-df pd.read_csv(file_name)
+df __.r..(file_name)
 
 
 ?p__.f..()

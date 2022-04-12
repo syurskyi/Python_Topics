@@ -1,5 +1,5 @@
 ____ c.. _______ C..
-_______ csv
+_______ c__
 _______ r__
 
 
@@ -17,7 +17,7 @@ ___ create_user_bar_chart(content
     """Receives csv file (decoded) content and print a table of timezones
        and their corresponding member counts in pluses to standard output
     """
-    rows csv.DictReader(content.s..
+    rows c__.DictReader(content.s..
     counts s..(C..([r 'tz'  ___ r __ rows]).i..,
                     key=l.... x: x 0
 

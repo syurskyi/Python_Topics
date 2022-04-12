@@ -11,12 +11,12 @@ ___ load_data(data
     __ n.. p...i..(dt_file
         u..(data, dt_file)
     w__ o.. dt_file, _ __ f:
-        r.. pd.read_csv(f)
+        r.. __.r..(f)
 
 
 ___ athletes_most_medals(data=data
-    csv load_data(data)
-    df csv.groupby( 'Gender', 'Athlete' ) 'Medal' .c.. )
+    c__ load_data(data)
+    df c__.groupby( 'Gender', 'Athlete' ) 'Medal' .c.. )
     male df.loc 'Men' .nlargest(1)
     female df.loc 'Women' .nlargest(1)
     r.. {r[0]: r[1] ___ r __ c__(male.i..,female.i..}

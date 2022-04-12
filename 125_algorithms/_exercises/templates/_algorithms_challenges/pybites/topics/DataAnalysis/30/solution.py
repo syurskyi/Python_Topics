@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 ____ c.. _______ d.., n..
 _______ __
 ____ u__.r.. _______ u..
@@ -7,8 +7,8 @@ BASE_URL 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP __.g.. TMP  /tmp
 
 fname 'movie_metadata.csv'
-remote __.p...j..(BASE_URL, fname)
-local __.p...j..(TMP, fname)
+remote __.p...j.. B.. f..
+local __.p...j.. T.. f..
 u.. ? ?
 
 MOVIE_DATA local
@@ -24,7 +24,7 @@ ___ get_movies_by_director
     use the defined Movie namedtuple"""
     directors d..(l..)
     w__ o.. MOVIE_DATA) __ f:
-        ___ line __ csv.DictReader(f
+        ___ line __ c__.DictReader(f
             ___
                 director line 'director_name'
                 movie line 'movie_title' .r..('\xa0', '')

@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 
 
 ___ process_classes(classes: l..) __ l..:
@@ -19,7 +19,7 @@ ___ class_rosters(input_file
         per class, correctly formatted.'''
     sis_list l..()
     w__ o.. input_file, _ __ f:
-        ___ row __ csv.reader(f
+        ___ row __ c__.reader(f
             sis_rows process_row(row)
             __ sis_rows:
                 sis_list.e.. sis_rows)

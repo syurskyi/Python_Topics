@@ -1,5 +1,5 @@
 ____ c.. _______ n..
-_______ csv
+_______ c__
 ____ p.. _______ P..
 _______ sqlite3
 
@@ -20,7 +20,7 @@ ___ import_data
     w__ r__.S.. __ session:
         content session.g.. DATA_URL).content.d.. 'utf-8')
 
-    reader csv.DictReader(content.s.. , delimiter=',')
+    reader c__.DictReader(content.s.. , delimiter=',')
 
     players    # list
     ___ row __ reader:

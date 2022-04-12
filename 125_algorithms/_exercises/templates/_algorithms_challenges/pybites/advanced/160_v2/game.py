@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 _______ __
 ____ u__.r.. _______ u..
 ____ c.. _______ d..
@@ -14,7 +14,7 @@ ___ _create_defeat_mapping
     """
     result d..(d..)
     w__ o.. BATTLE_DATA) __ b:
-        reader csv.DictReader(b)
+        reader c__.DictReader(b)
         ___ row __ reader:
             result[row 'Attacker']] row
     r.. result

@@ -43,7 +43,7 @@ ___ process_data(url: s..) __ pd.DataFrame:
         pd.DataFrame: Pandas DataFrame generated from the processed data
     """
     data b..(get_data(url) 'content' ).d.. )
-    r.. pd.read_csv(StringIO(data), parse_dates= 'month' )
+    r.. __.r..(StringIO(data), parse_dates= 'month' )
 
 
 

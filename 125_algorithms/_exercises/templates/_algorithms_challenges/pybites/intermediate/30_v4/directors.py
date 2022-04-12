@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 ____ c.. _______ d.., n..
 _______ __
 ____ u__.r.. _______ u..
@@ -8,8 +8,8 @@ BASE_URL 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP '/tmp'
 
 fname 'movie_metadata.csv'
-remote __.p...j..(BASE_URL, fname)
-local __.p...j..(TMP, fname)
+remote __.p...j.. B.. f..
+local __.p...j.. T.. f..
 u.. ? ?
 
 MOVIE_DATA local
@@ -29,7 +29,7 @@ ___ get_movies_by_director
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
     movie_dict d..(l..)
-    reader csv.DictReader(o.. local
+    reader c__.DictReader(o.. local
 
     ___ row __ reader:
         __ row 'title_year' :
@@ -38,7 +38,7 @@ ___ get_movies_by_director
         ____
             _____
         remap [fun(row[x]) ___ fun, x __ z..(conv, fields)]
-        movie_dict[row[NAME]].a..(Movie(*remap
+        movie_dict[row[NAME]].a.. ? *remap
     r.. movie_dict
 
 

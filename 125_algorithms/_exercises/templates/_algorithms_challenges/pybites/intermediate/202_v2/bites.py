@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 _______ __
 ____ p.. _______ P..
 ____ u__.r.. _______ u..
@@ -18,7 +18,7 @@ ___ get_most_complex_bites(N=10, stats=stats
        Return a list of Bite IDs (int or str values are fine) of the N
        most complex Bites.
     """
-    bites pd.read_csv(stats,sep=';')
+    bites __.r..(stats,sep=';')
 
     bites.Difficulty pd.to_numeric(bites.Difficulty,errors='coerce')
 

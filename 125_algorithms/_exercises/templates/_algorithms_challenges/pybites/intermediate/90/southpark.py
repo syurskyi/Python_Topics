@@ -1,5 +1,5 @@
 ____ c.. _______ C.., d..
-_______ csv
+_______ c__
 ____ t___ _______ DefaultDict
 
 _______ r__
@@ -21,7 +21,7 @@ ___ get_num_words_spoken_by_character_per_episode(content
       which is a mapping of episode=>words spoken"""
    header content.s..("\n")[0].s..(",")
 
-   csv_reader csv.DictReader([row.s..("\n") ___ row __ content.s..("\n")[1:]], fieldnames=header)
+   csv_reader c__.DictReader([row.s..("\n") ___ row __ content.s..("\n")[1:]], fieldnames=header)
 
    words_per_episode DefaultDict(C..)
    ___ row __ csv_reader:

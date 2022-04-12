@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 _______ r__
 _______ __
 _______ s__
@@ -18,7 +18,7 @@ string_classes =  'Formatter', 'Template'
 
 
 ?p__.m__.p.("mod, expected", [
-    (csv, csv_classes),
+    (c__, csv_classes),
     (r__, random_classes),
     (__, re_classes),
     (s__, string_classes),

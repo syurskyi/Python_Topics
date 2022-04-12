@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 _______ __
 ____ c.. _______ d.., n..
 ____ u__.r.. _______ u..
@@ -7,8 +7,8 @@ BASE_URL 'http://projects.bobbelderbos.com/pcc/movies/'
 TMP '/tmp'
 
 fname 'movie_metadata.csv'
-remote __.p...j..(BASE_URL, fname)
-local __.p...j..(TMP, fname)
+remote __.p...j.. B.. f..
+local __.p...j.. T.. f..
 u.. ? ?
 
 MOVIE_DATA local
@@ -23,7 +23,7 @@ ___ get_movies_by_director
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
     w__ o.. MOVIE_DATA) __ f:
-        reader csv.DictReader(f)
+        reader c__.DictReader(f)
         films [{'director': r 'director_name' , 'title': r 'movie_title' , 'year': r 'title_year' ,
                   'score': r 'imdb_score' }
                  ___ r __ reader]

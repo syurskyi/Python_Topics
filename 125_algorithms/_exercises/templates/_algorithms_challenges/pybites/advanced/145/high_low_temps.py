@@ -24,7 +24,7 @@ ___ high_low_record_breakers_for_2015
 
 
 
-    stations pd.read_csv("https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv",parse_dates= 'Date' )
+    stations __.r..("https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv",parse_dates= 'Date' )
     
     stations 'Data_Value'  = stations 'Data_Value' .div(10)
     stations stations[~((stations.Date.dt.day __ 29) & (stations.Date.dt.month __ 2]

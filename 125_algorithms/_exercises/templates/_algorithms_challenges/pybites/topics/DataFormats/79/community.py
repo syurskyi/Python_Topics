@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 ____ c.. _______ C..
 _______ r__
 
@@ -11,7 +11,7 @@ ___ get_csv
     w__ r__.S.. __ s:
         download s.g.. CSV_URL)
         decoded_content download.content.d.. 'utf-8')
-        cr csv.reader(decoded_content.s.. , delimiter=',')
+        cr c__.reader(decoded_content.s.. , delimiter=',')
         next(cr)
         my_list l..(cr)
         r.. my_list

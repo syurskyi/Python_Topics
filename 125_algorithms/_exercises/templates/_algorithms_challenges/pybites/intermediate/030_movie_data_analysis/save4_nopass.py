@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 ____ c.. _______ d.., n..
 _______ __
 ____ u__.r.. _______ u..
@@ -7,8 +7,8 @@ BASE_URL 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP '/tmp'
 
 fname 'movie_metadata.csv'
-remote __.p...j..(BASE_URL, fname)
-local __.p...j..(TMP, fname)
+remote __.p...j.. B.. f..
+local __.p...j.. T.. f..
 u.. ? ?
 
 MOVIE_DATA local
@@ -27,7 +27,7 @@ ___ get_movies_by_director
     full_list    # list
 
     w__ o.. MOVIE_DATA, newline='') __ file:
-        reader csv.DictReader(file)
+        reader c__.D.. ?
         ___ row __ reader:
             year row 'title_year'
             __ year !_ '' a.. i..(year) > 1960:
@@ -37,7 +37,7 @@ ___ get_movies_by_director
                                   f__(row 'imdb_score' )])
 
     ___ name, movie, year, score __ full_list:
-        d[name].a..(Movie(title=movie, year=year, score=score
+        d[name].a.. ? title=movie, year=year, score=score
 
     r.. d
 

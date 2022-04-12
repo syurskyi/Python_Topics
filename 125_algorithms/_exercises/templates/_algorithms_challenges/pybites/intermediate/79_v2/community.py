@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 _______ p.... __ pd
 ____ io _______ StringIO
 _______ r__
@@ -36,7 +36,7 @@ ___ create_user_bar_chart(content
 
 
     
-    data pd.read_csv(StringIO(content
+    data __.r..(StringIO(content
     
 
     max_length data.tz.s...l..().m..()

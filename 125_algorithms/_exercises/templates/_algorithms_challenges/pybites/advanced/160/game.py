@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 _______ __
 ____ u__.r.. _______ u..
 ____ c.. _______ d..
@@ -20,7 +20,7 @@ ___ _create_defeat_mapping
     
     mapping d..(s..)
     w__ o.. BATTLE_DATA _ __ f:
-        reader csv.DictReader(f)
+        reader c__.DictReader(f)
         ___ row __ reader:
             attacker row 'Attacker'
 

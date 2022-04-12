@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 
 _______ r__
 ____ r__.api _______ get
@@ -12,7 +12,7 @@ ___ get_csv
       decoded content"""
    response r__.g.. CSV_URL)
    response.encoding "utf-8"
-   csv_content csv.reader(response.text.s..
+   csv_content c__.reader(response.text.s..
    r.. csv_content
 
 

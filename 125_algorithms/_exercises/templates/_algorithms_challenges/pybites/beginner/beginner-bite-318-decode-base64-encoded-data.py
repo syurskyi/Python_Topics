@@ -33,7 +33,7 @@ an excellent service to quickly get realistic fake data.
 """
 
 _______ base64
-_______ csv
+_______ c__
 
 ___ encode
     input """first_name,last_name,credit_card
@@ -59,7 +59,7 @@ Jaclin,Tonge,3549852104724527"""
     print(bytes.d.. decoded, 'ascii'
     inp bytes.d.. decoded, 'ascii')
     print(t..(inp
-    result csv.reader(inp.s..
+    result c__.reader(inp.s..
     result l..(result)
     r result[1:]
     end    # list

@@ -33,7 +33,7 @@ ___ test_get_average_scores
 
     # order / score might slightly change depending the way the mean
     # is calculated so only test director names in top scores
-    directors {score[0] ___ score __ scores[2:13]}
+    directors {score[0] ___ score __ ? 2|13}
 
     ... 'Quentin Tarantino' __ directors
     ... 'Hayao Miyazaki' __ directors

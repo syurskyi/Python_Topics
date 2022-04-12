@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 
 
 ___ class_rosters(input_file
@@ -10,7 +10,7 @@ ___ class_rosters(input_file
     school_year 2020
     result    # list
     w__ o.. input_file _ __ f:
-        data csv.reader(f)
+        data c__.reader(f)
 
         ___ row __ data:
             _id row[0]

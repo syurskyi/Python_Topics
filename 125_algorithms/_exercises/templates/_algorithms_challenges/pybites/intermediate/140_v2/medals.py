@@ -5,7 +5,7 @@ data "https://bites-data.s3.us-east-2.amazonaws.com/summer.csv"
 
 ___ athletes_most_medals(data=data
 
-    medals pd.read_csv(data)
+    medals __.r..(data)
 
 
     medal_counts medals.groupby( 'Gender','Athlete' ).size()

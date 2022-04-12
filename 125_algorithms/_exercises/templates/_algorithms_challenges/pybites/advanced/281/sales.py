@@ -42,7 +42,7 @@ ___ process_data(url: s..) __ pd.DataFrame:
     """
     data get_data(url)
     download_url data 'download_url'
-    monthly_sales pd.read_csv(download_url,parse_dates= 'month' )
+    monthly_sales __.r..(download_url,parse_dates= 'month' )
     r.. monthly_sales
 
 

@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
  
 
 ___ class_rosters(input_file
@@ -8,7 +8,7 @@ ___ class_rosters(input_file
         per class, correctly formatted.'''
     class_assignments    # list
     w__ o.. input_file) __ csv_file:
-        csv_reader csv.reader(csv_file)
+        csv_reader c__.reader(csv_file)
         ___ row __ csv_reader:
             row_class_check [class_d ___ class_d __ row __ class_d !_ ""]
             __ l..(row_class_check) > 2:

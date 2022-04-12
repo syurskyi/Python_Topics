@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 _______ __
 ____ p.. _______ P..
 ____ u__.r.. _______ u..
@@ -19,7 +19,7 @@ ___ get_most_complex_bites(N=10, stats=stats
     """
     bites    # dict
     w__ o.. stats) __ csv_file:
-        csv_reader csv.reader(csv_file)
+        csv_reader c__.reader(csv_file)
         line_count 0
         ___ row __ csv_reader:
             __ line_count __ 0:

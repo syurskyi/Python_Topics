@@ -4,7 +4,7 @@ data "https://bites-data.s3.us-east-2.amazonaws.com/summer.csv"
 
 
 ___ athletes_most_medals(data=data
-    df pd.read_csv(data)
+    df __.r..(data)
 
     df_grouped df.groupby( 'Athlete', 'Gender' ).c.. )
     df_grouped df_grouped 'Medal' .reset_index()

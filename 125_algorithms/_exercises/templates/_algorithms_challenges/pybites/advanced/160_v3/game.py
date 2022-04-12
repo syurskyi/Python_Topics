@@ -1,4 +1,4 @@
-_______ csv
+_______ c__
 _______ __
 ____ u__.r.. _______ u..
 ____ c.. _______ d..
@@ -19,7 +19,7 @@ ___ _create_defeat_mapping
     """
     defeat_map d..(l..)
     w__ o.. BATTLE_DATA) __ f:
-        rows l..(csv.DictReader(f
+        rows l..(c__.DictReader(f
 
     ___ row __ rows:
         defeat_map[row 'Attacker']] [k ___ k, v __ row.i.. __ v __ 'win'
