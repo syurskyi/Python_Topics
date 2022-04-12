@@ -36,14 +36,14 @@ LETTER_SCORES {letter: score ___ score, letters __ scrabble_scores
 ___ load_words_v1
     """Load the words dictionary (DICTIONARY constant) into a list and return it"""
     l    # list
-    w__ o.. DICTIONARY) __ file:
+    w__ o.. DICTIONARY __ file
         ___ line __ file:
             l.a..(line.s..
     r.. l
 
 ___ load_words_v2
 
-    w__ o.. DICTIONARY) __ file:
+    w__ o.. DICTIONARY __ file
         r.. [word.s.. ___ word __ file.r...s.. ]
 
 ___ calc_word_value_v1(word

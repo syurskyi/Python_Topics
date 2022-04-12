@@ -15,7 +15,7 @@ c_ Solution(o..
         :type points: List[List[int]]
         :rtype: bool
         """
-        d d..(l..)
+        d d.. l..
         ___ x, y __ points:
             d[y].a..(x)
 

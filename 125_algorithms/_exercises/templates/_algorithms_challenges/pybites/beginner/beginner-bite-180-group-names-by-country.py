@@ -48,7 +48,7 @@ Halbard,Davie,CN"""
 
 
 ___ group_names_by_country(data: s.. data) __ d..:
-    countries d..(l..)
+    countries d.. l..
     # you code
     split_lines data.s..
     line_cnt 0

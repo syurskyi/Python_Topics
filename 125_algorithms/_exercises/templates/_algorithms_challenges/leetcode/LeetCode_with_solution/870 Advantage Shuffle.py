@@ -39,7 +39,7 @@ c_ Solution:
         Keep a reverse index mapping is not enough, since duplicate in B
         then keep a list
         """
-        idxes d..(l..)
+        idxes d.. l..
         ___ i, b __ e..(B
             idxes[b].a..(i)
 

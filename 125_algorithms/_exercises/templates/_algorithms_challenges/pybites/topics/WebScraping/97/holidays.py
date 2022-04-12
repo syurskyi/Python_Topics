@@ -18,7 +18,7 @@ u..(
 w__ o.. holidays_page) __ f:
     content f.r..
 
-holidays d..(l..)
+holidays d.. l..
 
 
 ___ get_us_bank_holidays(content=content

@@ -9,7 +9,7 @@ c_ Solution(o..
     :rtype: bool
     """
     n l..(org)
-    graph c...d..(l..)
+    graph c...d.. l..
     visited    # dict
     incomings c...d..(i..)
     nodes s..()

@@ -40,7 +40,7 @@ c_ Solution:
         :type d: List[str]
         :rtype: str
         """
-        h d..(l..)
+        h d.. l..
         ___ d_idx, w __ e..(d
             w_idx 0
             h[w[w_idx]].a..((d_idx, w_idx

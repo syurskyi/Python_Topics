@@ -28,7 +28,7 @@ ___ get_income_distribution(___=countries
 
     soup BeautifulSoup(contents, features='html.parser')
     table soup.find_all('wb:country')
-    d d..(l..)
+    d d.. l..
 
     ___ tr __ table:
         name tr.find('wb:name').text

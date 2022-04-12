@@ -61,7 +61,7 @@ c_ TimeMap:
         BST
         Bineary search
         """
-        m d..(l..)
+        m d.. l..
 
     ___ s..  key: s.., value: s.., timestamp: i..) __ N..
         n (timestamp, value)

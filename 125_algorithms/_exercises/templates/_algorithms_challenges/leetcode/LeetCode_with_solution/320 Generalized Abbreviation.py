@@ -29,7 +29,7 @@ c_ Solution(o..
 
 c_ SolutionTLE(o..
     ___ -
-        cache d..(l..)
+        cache d.. l..
 
     ___ generateAbbreviations  word
         """

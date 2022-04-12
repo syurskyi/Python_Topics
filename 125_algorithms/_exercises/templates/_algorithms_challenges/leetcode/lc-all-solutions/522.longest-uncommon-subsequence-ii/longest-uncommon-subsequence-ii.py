@@ -9,7 +9,7 @@ c_ Solution(o..
       r.. m..(l..(a), l..(b __ a !_ b ____ -1
 
     ___ isSubsequence(s, t
-      d c...d..(l..)
+      d c...d.. l..
       ___ i, c __ e..(t
         d[c].a..(i)
       start 0

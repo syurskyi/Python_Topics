@@ -54,7 +54,7 @@ ___ make_character_index(text=text, characters=CHARACTERS
        - e.g. ('Grandmother', 'Grandma', 'Granny') -
        then return the former as key.
     """
-    locations d..(l..)
+    locations d.. l..
     
 
     in_line l.... word,line: __.s..(word,line,flags=__.I) __ n.. N..

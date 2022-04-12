@@ -51,7 +51,7 @@ ___ exchange_rates(
     start_date: s.. "2020-01-01", end_date: s.. "2020-09-01"
 ) __ Dict[date, d..]:
     
-    w__ o.. RATES_FILE) __ file:
+    w__ o.. RATES_FILE __ file
         data j__.l.. file)
 
     start d__.s..(start_date, "_Y-%m-_d").date()

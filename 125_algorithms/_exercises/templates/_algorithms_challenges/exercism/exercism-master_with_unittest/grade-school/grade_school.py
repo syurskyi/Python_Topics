@@ -3,7 +3,7 @@ ____ c.. _______ d..
 
 c_ School:
     ___ -
-        db d..(l..)
+        db d.. l..
 
     ___ add_student  name, grade
         db[grade].a..(name)

@@ -47,7 +47,7 @@ c_ Solution:
 
         DFS + coloring do a dfs all on nodes O(N) + O(M)
         """
-        G d..(l..)
+        G d.. l..
         ___ u, v __ dislikes:
             G[u].a..(v)
             G[v].a..(u)

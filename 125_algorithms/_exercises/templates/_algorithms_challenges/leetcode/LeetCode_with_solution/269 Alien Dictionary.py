@@ -62,7 +62,7 @@ c_ Solution(o..
         r.. "".j..(r..(ret
 
     ___ construct_graph  words
-        V d..(l..)
+        V d.. l..
         # need to initialize, consider test case ["z", "z"]
         ___ w __ words:  # pitfall
             ___ c __ w:

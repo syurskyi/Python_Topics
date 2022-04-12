@@ -25,7 +25,7 @@ ___ get_all_timestamps
 
         Return a list of MM:SS timestamps
     """
-    w__ o.. COURSE_TIMES) __ file:
+    w__ o.. COURSE_TIMES __ file
         course_timestamps    # list
         file_lines file.r..
         ___ line __ file_lines:

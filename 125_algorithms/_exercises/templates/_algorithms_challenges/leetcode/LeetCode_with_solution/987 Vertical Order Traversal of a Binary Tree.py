@@ -54,7 +54,7 @@ ____ c.. _______ d..
 
 c_ Solution:
     ___ -
-        mp d..(l..)  # element (-Y, val)  # from left to right, top to bottom
+        mp d.. l..  # element (-Y, val)  # from left to right, top to bottom
 
     ___ verticalTraversal  root: TreeNode) __ L..[L..[i..]]:
         dfs(root, 0, 0)

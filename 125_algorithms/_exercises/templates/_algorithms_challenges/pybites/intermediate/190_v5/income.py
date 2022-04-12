@@ -24,7 +24,7 @@ ___ get_income_distribution(___=countries
     namespaces {__: 'http://www.worldbank.org'}
 
     xpath f".//wb:country"
-    country_list d..(l..)
+    country_list d.. l..
     ___ x __ root.f..(xpath, namespaces
         country_list[x.find('wb:incomeLevel', namespaces).text].a..(x.find('wb:name', namespaces).text)
 

@@ -4,7 +4,7 @@ c_ RandomizedCollection(o..
     Initialize your data structure here.
     """
     dOfd c...d..(d..)
-    d c...d..(l..)
+    d c...d.. l..
     a    # list
 
   ___ insert  val

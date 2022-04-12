@@ -17,7 +17,7 @@ u..(
 w__ o.. holidays_page) __ f:
     content f.r..
 
-holidays d..(l..)
+holidays d.. l..
 
 
 ___ _parse_date(date: s..

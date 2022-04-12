@@ -27,10 +27,10 @@ ___ import_data
     w__ r__.S.. __ session:
         content session.g.. DATA_URL).content.d.. 'utf-8')
 
-    reader c__.DictReader(content.s.. , delimiter=',')
+    reader c__.D.. content.s.. , delimiter=',')
 
     players    # list
-    ___ row __ reader:
+    ___ row __ reader
         players.a..(Player(name=row 'Player' ,
                               year=row 'Draft_Yr' ,
                               first_year=row 'first_year' ,

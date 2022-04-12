@@ -27,7 +27,7 @@ ___ get_income_distribution(___=countries
         soup BeautifulSoup(f.read
 
     
-    income_to_countries d..(l..)
+    income_to_countries d.. l..
 
     ___ country __ soup.find_all("wb:country"
         country_name country.find('wb:name').getText()

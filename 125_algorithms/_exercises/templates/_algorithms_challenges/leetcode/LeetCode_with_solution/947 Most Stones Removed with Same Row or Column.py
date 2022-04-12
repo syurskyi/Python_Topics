@@ -41,7 +41,7 @@ c_ Solution:
         construct graph O(N^2)
         DFS - O(N)
         """
-        G d..(l..)
+        G d.. l..
         n l..(stones)
         ___ i __ r..(n
             ___ j __ r..(i

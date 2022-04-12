@@ -15,16 +15,16 @@ MOVIE_DATA local
 MIN_MOVIES 4
 MIN_YEAR 1960
 
-Movie n..('Movie', 'title year score')
+Movie n.. 'Movie', 'title year score'
 
 
 ___ get_movies_by_director
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
-    directors d..(l..)
+    directors d.. l..
     w__ o.. MOVIE_DATA) __ f:
-        ___ line __ c__.DictReader(f
+        ___ line __ c__.D.. f
             ___
                 director line 'director_name'
                 movie line 'movie_title' .r..('\xa0', '')
@@ -41,7 +41,7 @@ ___ get_movies_by_director
     r.. directors
 
 
-___ calc_mean_score(movies
+___ calc_mean_score movies
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
     ratings [m.score ___ m __ movies]
@@ -49,12 +49,12 @@ ___ calc_mean_score(movies
     r.. r..(mean, 1)
 
 
-___ get_average_scores(directors
+___ get_average_scores directors
     """Iterate through the directors dict (returned by get_movies_by_director),
        return a list of tuples (director, average_score) ordered by highest
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
-    ret {director: calc_mean_score(movies)
+    ret {director: calc_mean_score movies)
            ___ director, movies __ directors.i..
            __ l..(movies) >_ MIN_MOVIES}
     r.. s..(ret.i.., key=l.... x: ? 1 r.._T..

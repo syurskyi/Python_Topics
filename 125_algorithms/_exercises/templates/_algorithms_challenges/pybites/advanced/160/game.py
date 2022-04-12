@@ -20,8 +20,8 @@ ___ _create_defeat_mapping
     
     mapping d..(s..)
     w__ o.. BATTLE_DATA _ __ f:
-        reader c__.DictReader(f)
-        ___ row __ reader:
+        reader c__.D.. f)
+        ___ row __ reader
             attacker row 'Attacker'
 
 

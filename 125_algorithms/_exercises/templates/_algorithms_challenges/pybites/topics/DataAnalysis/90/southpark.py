@@ -19,7 +19,7 @@ ___ get_num_words_spoken_by_character_per_episode(content
        keys=characters and values=Counter object,
        which is a mapping of episode=>words spoken"""
     spoken_word d..(C..)
-    lines c__.DictReader(content.s..
+    lines c__.D.. content.s..
     ___ line __ lines:
         spoken_word[line 'Character']][line 'Episode']] += l..(line 'Line' .s..
     r.. spoken_word

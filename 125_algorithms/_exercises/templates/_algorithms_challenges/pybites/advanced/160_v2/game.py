@@ -14,8 +14,8 @@ ___ _create_defeat_mapping
     """
     result d..(d..)
     w__ o.. BATTLE_DATA) __ b:
-        reader c__.DictReader(b)
-        ___ row __ reader:
+        reader c__.D.. b)
+        ___ row __ reader
             result[row 'Attacker']] row
     r.. result
 

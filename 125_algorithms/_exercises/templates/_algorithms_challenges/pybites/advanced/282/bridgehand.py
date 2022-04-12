@@ -33,7 +33,7 @@ c_ BridgeHand:
 
         cards cards
 
-        suit_to_cards d..(l..)
+        suit_to_cards d.. l..
         ___ card __ cards:
             suit_to_cards[card.suit].a..(card.Rank)
 

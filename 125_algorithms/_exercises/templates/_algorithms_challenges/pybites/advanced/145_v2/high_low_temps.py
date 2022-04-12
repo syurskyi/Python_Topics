@@ -55,7 +55,7 @@ ___ high_low_record_breakers_for_2015
             'date': d__.s..(x 'Date' , '_Y-%m-_d').date(),
             'element': x 'Element' ,
             'value': i..(x 'Data_Value' )
-        } ___ x __ c__.DictReader(f) __ n.. __.m.. _ \d{4}-02-29', x 'Date' )],
+        } ___ x __ c__.D.. f) __ n.. __.m.. _ \d{4}-02-29', x 'Date' )],
             key=l.... x: (x 'id'  + x 'date' .s..('%m%d_Y')))
     dataset [{'id': x 'id' ,
                 'monthday': x 'date' .s..('%m_d'),

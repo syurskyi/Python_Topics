@@ -14,7 +14,7 @@ ___ get_friend_with_most_friends(friendships, users=users
    """Receives the friendships list of user ID pairs,
       parse it to see who has most friends, return a tuple
       of (name_friend_with_most_friends, his_or_her_friends)"""
-   friend_frequency d..(l..)
+   friend_frequency d.. l..
 
    ___ f1, f2 __ friendships:
       friend_frequency[f1].a..(f2)

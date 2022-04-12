@@ -14,7 +14,7 @@ c_ Solution:
 
         :rtype: bool
         """
-        d d..(l..)
+        d d.. l..
         ___ i, v __ e..(nums
             heapq.heappush(d[v], i)
 

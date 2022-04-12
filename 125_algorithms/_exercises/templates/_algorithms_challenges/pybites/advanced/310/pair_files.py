@@ -9,7 +9,7 @@ ___ pair_files(filenames
     """
     # TODO: You code
 
-    mapping d..(l..)
+    mapping d.. l..
 
 
     ___ file __ filenames:

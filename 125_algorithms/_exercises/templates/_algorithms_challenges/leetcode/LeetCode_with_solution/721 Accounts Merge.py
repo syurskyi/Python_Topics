@@ -81,7 +81,7 @@ c_ Solution:
         mistake: not dfs, search on the first level
         """
         email_id    # dict
-        id_emails d..(l..)
+        id_emails d.. l..
         ___ i __ r..(l..(accounts:
             person N..
             ___ email __ accounts[i][1:]:

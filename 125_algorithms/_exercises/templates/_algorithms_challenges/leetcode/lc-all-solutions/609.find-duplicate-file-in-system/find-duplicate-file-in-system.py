@@ -4,7 +4,7 @@ c_ Solution(o..
     :type paths: List[str]
     :rtype: List[List[str]]
     """
-    d c...d..(l..)
+    d c...d.. l..
     ___ p.. __ paths:
       raw p...s..(" ")
       dirPath raw[0]

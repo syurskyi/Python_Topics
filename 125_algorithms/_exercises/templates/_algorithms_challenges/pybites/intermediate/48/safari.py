@@ -15,7 +15,7 @@ u__.r...u..(
 ___ create_chart
     slack_frequency    # dict
 
-    w__ o.. SAFARI_LOGS) __ file:
+    w__ o.. SAFARI_LOGS __ file
         safari_logs file.r..
         ___ i __ r..(l..(safari_logs:
             previous safari_logs[i -1]

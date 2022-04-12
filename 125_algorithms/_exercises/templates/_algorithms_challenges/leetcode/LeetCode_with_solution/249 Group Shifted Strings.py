@@ -13,7 +13,7 @@ c_ Solution:
         :type strings: list[str]
         :rtype: list[list[str]]
         """
-        hm d..(l..)
+        hm d.. l..
         ___ s __ strings:
             __ l..(s) __ 1:
                 hm[0].a..(s)

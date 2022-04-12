@@ -15,7 +15,7 @@
 # MIN_MOVIES 4
 # MIN_YEAR 1960
 #
-# Movie n..('Movie', 'title year score')
+# Movie n.. 'Movie', 'title year score'
 #
 #
 # ___ get_movies_by_director

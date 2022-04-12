@@ -36,7 +36,7 @@ c_ Solution(o..
         :type tickets: List[List[str]]
         :rtype: List[str]
         """
-        G d..(l..)  # every list is a heap
+        G d.. l..  # every list is a heap
         ___ s, e __ tickets:
             heapq.heappush(G[s], e)  # heap lexical order
 

@@ -17,9 +17,9 @@ ___ _create_defeat_mapping
     """Parse battle-table.csv building up a defeat_mapping dict
        with keys = attackers / values = who they defeat.
     """
-    defeat_map d..(l..)
+    defeat_map d.. l..
     w__ o.. BATTLE_DATA) __ f:
-        rows l..(c__.DictReader(f
+        rows l..(c__.D.. f
 
     ___ row __ rows:
         defeat_map[row 'Attacker']] [k ___ k, v __ row.i.. __ v __ 'win'

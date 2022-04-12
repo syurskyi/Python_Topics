@@ -29,7 +29,7 @@ c_ Solution:
 
         HashMap + Iterator
         """
-        itrs_m d..(l..)
+        itrs_m d.. l..
         ___ w __ words:
             itrs_m[w[0]].a..(
                 i..(w[1:])

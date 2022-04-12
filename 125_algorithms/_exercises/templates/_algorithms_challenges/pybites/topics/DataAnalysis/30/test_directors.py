@@ -29,8 +29,8 @@ ___ test_director_movies_data_structure(movies
 ___ test_calc_mean_score(movies
     movies_sergio movies 'Sergio Leone'
     movies_nolan movies 'Christopher Nolan'
-    ... calc_mean_score(movies_sergio) __ 8.5
-    ... calc_mean_score(movies_nolan) __ 8.4
+    ... ? ? __ 8.5
+    ... ? ? __ 8.4
 
 ___ test_get_average_scores_top_directors(scores
     e.. [('Sergio Leone', 8.5),

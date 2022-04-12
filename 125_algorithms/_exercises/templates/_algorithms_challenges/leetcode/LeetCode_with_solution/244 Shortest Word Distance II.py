@@ -15,7 +15,7 @@ c_ WordDistance(o..
 
         :type words: list[str]
         """
-        word_dict d..(l..)
+        word_dict d.. l..
         ___ i, w __ e..(words
             word_dict[w].a..(i)
 

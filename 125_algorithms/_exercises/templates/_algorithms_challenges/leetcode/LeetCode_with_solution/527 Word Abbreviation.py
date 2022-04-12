@@ -17,7 +17,7 @@ c_ Solution:
 
         Need to count the #appearances in the TrieNode
         """
-        hm d..(l..)
+        hm d.. l..
         ret [N.. ___ _ __ words]
         ___ i, w __ e..(words
             hm[w[0], w[-1], l..(w)].a..(i)

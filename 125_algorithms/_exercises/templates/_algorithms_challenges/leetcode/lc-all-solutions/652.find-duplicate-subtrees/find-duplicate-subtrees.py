@@ -22,6 +22,6 @@ c_ Solution(o..
       count[node.merkle].a..(node)
       r.. node.merkle
 
-    count c...d..(l..)
+    count c...d.. l..
     merkle(root)
     r.. [nodes.p.. ) ___ nodes __ count.v.. __ l..(nodes) >_ 2]

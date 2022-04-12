@@ -5,7 +5,7 @@ c_ Solution(o..
     :type t: str
     :rtype: bool
     """
-    d c...d..(l..)
+    d c...d.. l..
     ___ i, c __ e..(t
       d[c].a..(i)
     start 0

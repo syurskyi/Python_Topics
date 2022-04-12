@@ -36,7 +36,7 @@ c_ Solution:
         """
         Subsequence - Binary search
         """
-        char_pos d..(l..)
+        char_pos d.. l..
         ___ p, c __ e..(t
             char_pos[c].a..(p)
             # the list is naturally sorted

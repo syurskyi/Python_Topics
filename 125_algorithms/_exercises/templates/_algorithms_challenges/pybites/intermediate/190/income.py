@@ -23,7 +23,7 @@ ___ get_income_distribution(___=countries
       - keys = incomes (wb:incomeLevel)
       - values = list of country names (wb:name)
     """
-    country_incomes d..(l..)
+    country_incomes d.. l..
     tree ET.p..(___)
     root tree.getroot()
     ___ child __ root:

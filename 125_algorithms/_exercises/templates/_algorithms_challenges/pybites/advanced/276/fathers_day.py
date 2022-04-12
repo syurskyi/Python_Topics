@@ -70,7 +70,7 @@ ___ get_father_days y.._2020
 
        Consider using the the 2 _parse* helpers.
     """
-    days_to_countries d..(l..)
+    days_to_countries d.. l..
 
     _parse_father_days_per_country(year,days_to_countries)
     _parse_recurring_father_days(days_to_countries)

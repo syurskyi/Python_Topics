@@ -168,7 +168,7 @@ c_ SolutionError(o..
 
         # bfs
         visisted [F.. ___ _ __ x..(n)]
-        h2v d..(l..)
+        h2v d.. l..
         q    # list
         level 0
         q.a..(leaf)

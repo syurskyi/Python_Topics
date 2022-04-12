@@ -17,7 +17,7 @@ c_ Solution(o..
 
     leftMost f__("inf")
     ans    # list
-    res d..(l..)
+    res d.. l..
     dfs(root, 0, 0, res)
     i leftMost
     w... T...
