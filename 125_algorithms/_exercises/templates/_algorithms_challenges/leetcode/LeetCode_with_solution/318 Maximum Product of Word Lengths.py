@@ -29,8 +29,8 @@ c_ Solution(o..
         :type words: List[str]
         :rtype: int
         """
-        l map(l.., words)
-        codes map(encode, words)
+        l m.. l.., words)
+        codes m.. encode, words)
         maxa 0
         ___ i __ x..(l..(codes:
             ___ j __ x..(i+1, l..(codes:

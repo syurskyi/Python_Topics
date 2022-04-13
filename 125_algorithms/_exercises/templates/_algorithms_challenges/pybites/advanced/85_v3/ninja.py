@@ -36,7 +36,7 @@ c_ NinjaBelt:
         __ _last_earned_belt __ N.. o. _last_earned_belt_number < belt:
             _last_earned_belt_number belt
             print _*Congrats, you earned {new_score} points obtaining the PyBites Ninja '
-                  f'{_last_earned_belt.t..} Belt')
+                  _* _last_earned_belt.t..} Belt')
         ____
             print _*S.. new score to {new_score}')
 

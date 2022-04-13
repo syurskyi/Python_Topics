@@ -50,7 +50,7 @@ c_ Solution:
             r.. ""
 
         r.. "".j..(
-            map(l.... x: "".j..(x), piles)
+            m.. l.... x: "".j..(x), piles)
         )
 
 

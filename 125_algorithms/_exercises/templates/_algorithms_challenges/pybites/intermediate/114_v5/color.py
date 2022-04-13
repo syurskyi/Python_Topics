@@ -58,4 +58,4 @@ c_ Color:
 
     ___ -s
         """Returns the string value of the color object"""
-        r.. f'{rgb}' __ rgb __ n.. N.. ____ 'Unknown'
+        r.. _* rgb}' __ rgb __ n.. N.. ____ 'Unknown'

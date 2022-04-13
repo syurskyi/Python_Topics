@@ -38,7 +38,7 @@ ___ get_belts(data: s..) __ d..:
         points += date 'score'
         __ points >_ score_marker:
 
-            month,day,year map(i..,date 'date' .s..('/'
+            month,day,year m.. i..,date 'date' .s..('/'
             date dt.date(year,month,day)
             date_string date.s..('%B _d, _Y')
             belts[BELTS[score_index]] date_string

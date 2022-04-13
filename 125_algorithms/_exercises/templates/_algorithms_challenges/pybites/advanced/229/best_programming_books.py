@@ -82,7 +82,7 @@ ___ load_data
             _____
         ___
             author_a book.select("h3.authors > a")[0].text.s..(" ")
-            author f'{author_a[-1]}, {" ".j..(author_a[:-1])}'
+            author _* author_a[-1]}, {" ".j..(author_a[:-1])}'
             date_span book.select("span.date")
             __ l..(date_span) __ 0:
                 _____

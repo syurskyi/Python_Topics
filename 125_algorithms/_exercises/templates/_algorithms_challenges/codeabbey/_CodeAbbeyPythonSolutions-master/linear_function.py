@@ -7,7 +7,7 @@ ___ get_slope_intercept(x1, y1, x2, y2
     r.. "("+s..(slope)+" "+s..(intercept)+")"
 
 ___ i __ r..(amount_values
-    x1,y1,x2,y2 map(i.., input().s..
+    x1,y1,x2,y2 m.. i.., input().s..
     results.a..(get_slope_intercept(x1,y1,x2,y2
 
 print(*results)

@@ -33,7 +33,7 @@ c_ Solution:
 
         # added dp to get heights
         dp_height [[-1 ___ _ __ x..(n)] ___ _ __ x..(m)]
-        dp_height[0] map(l.... x: i..(x), matrix 0
+        dp_height[0] m.. l.... x: i..(x), matrix 0
         ___ i __ x..(1, m
             ___ j __ x..(n
                 __ matrix[i][j] __ "1":

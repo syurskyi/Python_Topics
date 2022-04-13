@@ -23,7 +23,7 @@ ___ movies
     files    # list
     w__ o.. DATA_LOCAL) __ f:
         ___ i, line __ e..(f.r.., 1
-            movie_json TMP / f'{i}.json'
+            movie_json TMP / _* i}.json'
             w__ o.. movie_json, 'w') __ f:
                 ?.w.. _*{line}\n')
             files.a..(movie_json)

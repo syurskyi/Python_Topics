@@ -9,7 +9,7 @@ TMP '/tmp'
 ___ test_only_files
     w__ TemporaryDirectory(dir=TMP) __ dirname:
         ___ i __ r..(5
-            filename f'{i}.txt'
+            filename _* i}.txt'
             p.. __.p...j..(dirname, filename)
             w__ o.. p.., 'w') __ f:
                 f.w.. 'hello')
@@ -32,7 +32,7 @@ ___ test_files_and_dirs
                 target_dir __.p...j..(dirname, s..(i
                 __.makedirs(target_dir)
                 ___ j __ r..(5
-                    filename f'{j}.txt'
+                    filename _* j}.txt'
                     p.. __.p...j..(target_dir, filename)
                     w__ o.. p.., 'w') __ f:
                         f.w.. 'hello')

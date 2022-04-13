@@ -29,14 +29,14 @@ c_ Planet:
         _mass N..
 
     ___  -r
-        r.. f'{__class__.__name__}({r.. (color)})'
+        r.. _* __class__.__name__}({r.. (color)})'
 
     @cached_property
     ___ mass
         scale_factor r__()
         sleep(TEMPORAL_SHIFT)
         _mass =  _*{r..(scale_factor * GRAVITY_CONSTANT, 4)} '
-                      f'{SOLAR_MASS_UNITS}')
+                      _* SOLAR_MASS_UNITS}')
         r.. _mass
 
     mass property(mass)

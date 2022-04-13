@@ -5,11 +5,11 @@ c_ Person:
 
 c_ Father(Person
     ___ -s
-        r.. f'{super().-s()} and cool daddy'
+        r.. _* super().-s()} and cool daddy'
 
 c_ Mother(Person
     ___ -s
-        r.. f'{super().-s()} and awesome mom'
+        r.. _* super().-s()} and awesome mom'
 
 c_ Child(Father,Mother
     ___ -s

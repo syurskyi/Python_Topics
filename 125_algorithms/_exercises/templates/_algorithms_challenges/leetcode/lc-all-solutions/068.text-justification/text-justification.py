@@ -7,7 +7,7 @@ c_ Solution(o..
     """
     ans    # list
     line    # list
-    lens map(l.., words)
+    lens m.. l.., words)
     idx 0
     curLen 0
     w.... idx < l..(words

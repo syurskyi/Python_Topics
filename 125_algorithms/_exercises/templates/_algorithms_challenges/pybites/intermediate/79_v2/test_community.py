@@ -50,4 +50,4 @@ ___ test_output(capfd
 
     ___ line __ expected_output:
         ... line.s...r..(' ', '') __ actual_output, \
-               f'{line} not in {actual_output}'
+               _* line} not in {actual_output}'

@@ -18,7 +18,7 @@ ___ test_equation(puzzle, substitutions
 
 ___ solve(puzzle
     letters s..(char ___ char __ puzzle __ char.isupper
-    numbers map(s.., r..(10
+    numbers m.. s.., r..(10
 
     ___ c __ c..numbers, l..(letters:
         ___ p __ p.. c

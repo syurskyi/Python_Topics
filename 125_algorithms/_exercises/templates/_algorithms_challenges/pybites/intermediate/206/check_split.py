@@ -9,4 +9,4 @@ ___ check_split(item_total, tax_rate, tip, people
     s.. r..(grand_total / people, 2)
     split_arr [s.. ___ _ __ r..(people - 1)]
     split_arr.a..(grand_total - s..(split_arr
-    r.. f'{item_total[0]}{grand_total:.2f}', split_arr
+    r.. _* item_total[0]}{grand_total:.2f}', split_arr

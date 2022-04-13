@@ -11,7 +11,7 @@ sizes_in_stock  c...C.. m..(i.., input().s..()))
 total_revenue  0
 
 ___ _ __ r..(i..(input())):
-    size, price  map(i.., input().s..
+    size, price  m.. i.., input().s..
     __ sizes_in_stock[size]:
         total_revenue + price
         sizes_in_stock[size] - 1

@@ -18,7 +18,7 @@ c_ Solution(o..
         ret    # list
         __ n.. nums:
             ret.a..([lower, upper])
-            r.. map(mapper, ret)
+            r.. m.. mapper, ret)
 
         __ nums[0] > lower:
             ret.a..([lower, nums[0]-1])
@@ -30,7 +30,7 @@ c_ Solution(o..
         __ upper > nums[-1]:
             ret.a..([nums[-1]+1, upper])
 
-        r.. map(mapper, ret)
+        r.. m.. mapper, ret)
 
     ___ mapper  x
         __ x[0] __ x[1]:

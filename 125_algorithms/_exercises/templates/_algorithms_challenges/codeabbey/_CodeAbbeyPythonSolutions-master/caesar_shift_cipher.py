@@ -1,4 +1,4 @@
-amount_values,shifter map(i..,(input().s..()))
+amount_values,shifter m.. i..,(input().s..()))
 results    # list
 
 ___ get_cipher(words, shifter

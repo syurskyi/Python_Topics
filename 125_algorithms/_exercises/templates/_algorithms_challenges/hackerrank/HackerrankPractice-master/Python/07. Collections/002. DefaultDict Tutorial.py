@@ -5,7 +5,7 @@
 ____ c.. _______ d..
 
 
-n, m  map(i.., input().s..
+n, m  m.. i.., input().s..
 d  d.. l..
 ___ i __ r..(1, n + 1
     d[input()].a..(s..(i

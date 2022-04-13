@@ -49,5 +49,5 @@ c_ Solution(o..
             r.. l..(s)
 
         r.. m..(
-            map(l.... x: longestSubstring(x, k), s.s..(c
+            m.. l.... x: longestSubstring(x, k), s.s..(c
         )

@@ -29,15 +29,15 @@ ___ pretty_date(date: d__
     __ seconds < 10:
         r.. 'just now'
     __ seconds < 60:
-        r.. f'{seconds} seconds ago'
+        r.. _* seconds} seconds ago'
     __ minutes < 2:
         r.. 'a minute ago'
     __ minutes < 60:
-        r.. f'{minutes} minutes ago'
+        r.. _* minutes} minutes ago'
     __ hours < 2:
         r.. 'an hour ago'
     __ hours < 24:
-        r.. f'{hours} hours ago'
+        r.. _* hours} hours ago'
     __ hours < 48:
         r.. 'yesterday'
     r.. date.s..('%m/_d/%y')

@@ -9,7 +9,7 @@ arr d..(i..)
 frequencies d..(i..)
 result    # list
 ___ i __ r..(i..(input())):
-    command, value map(i.., input().s..
+    command, value m.. i.., input().s..
     __ command __ 1:
         arr[value] += 1
         frequencies[arr[value]] += 1

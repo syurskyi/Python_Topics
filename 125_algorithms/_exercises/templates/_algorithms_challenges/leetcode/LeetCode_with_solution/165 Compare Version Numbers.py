@@ -21,8 +21,8 @@ c_ Solution:
         :type version2: str
         :rtype int
         """
-        version1 map(i.., version1.s..("."
-        version2 map(i.., version2.s..("."
+        version1 m.. i.., version1.s..("."
+        version2 m.. i.., version2.s..("."
         n1 l..(version1)
         n2 l..(version2)
 

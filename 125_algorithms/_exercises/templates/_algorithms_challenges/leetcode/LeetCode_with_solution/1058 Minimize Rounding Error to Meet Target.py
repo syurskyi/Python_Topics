@@ -65,4 +65,4 @@ c_ Solution:
             ____
                 ret += err
 
-        r.. f'{ret:.{3}f}'
+        r.. _* ret:.{3}f}'

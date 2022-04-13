@@ -35,7 +35,7 @@ c_ Codec:
     __ n.. data:
       r.. N..
     vals data.s..(",")
-    preOrder map(i.., vals)
+    preOrder m.. i.., vals)
     inOrder s..(preOrder)
     preIdx 0
     d    # dict

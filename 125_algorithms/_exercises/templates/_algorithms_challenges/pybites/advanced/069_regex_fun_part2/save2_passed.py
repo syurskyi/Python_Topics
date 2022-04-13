@@ -46,4 +46,4 @@ ___ convert_emea_date_to_amer_date(date
        (AMER date format)"""
     pattern __.c.. _ (\d{2})/(\d{2})/(\d{4})')
     m pattern.m..(date)
-    r.. f'{m.group(2)}/{m.group(1)}/{m.group(3)}' __ m ____ date
+    r.. _* m.group(2)}/{m.group(1)}/{m.group(3)}' __ m ____ date

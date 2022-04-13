@@ -30,7 +30,7 @@ c_ Enchantment:
         name name.r..('_', ' ')
 
     ___  -r
-        r.. f'{name} ({max_level}): {description}'
+        r.. _* name} ({max_level}): {description}'
 
 
 @dataclass()
@@ -49,7 +49,7 @@ c_ Item:
     ___  -r
         en _*   [{chant.max_level}] {chant.id_name}'
               ___ chant __ s..(enchantments, k.._l.... x : x.id_name)]
-        r.. f'{name.r..("_"," ").t..}: \n' + '\n'.j..(en)
+        r.. _* name.r..("_"," ").t..}: \n' + '\n'.j..(en)
 
 
 # Lookup values of the first five roman numerals

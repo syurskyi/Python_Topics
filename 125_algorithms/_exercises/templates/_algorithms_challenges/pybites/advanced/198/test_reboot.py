@@ -28,12 +28,12 @@ THIS_YEAR date.t...year
 
 
 ___ test_default_output
-    ... calc_max_uptime(MAC1) __ (30, f'{THIS_YEAR}-02-17')
+    ... calc_max_uptime(MAC1) __ (30, _* THIS_YEAR}-02-17')
 
 
 ___ test_different_output
-    ... calc_max_uptime(MAC2) __ (22, f'{THIS_YEAR}-09-22')
+    ... calc_max_uptime(MAC2) __ (22, _* THIS_YEAR}-09-22')
 
 
 ___ test_yet_another_output
-    ... calc_max_uptime(MAC3) __ (24, f'{THIS_YEAR}-12-11')
+    ... calc_max_uptime(MAC3) __ (24, _* THIS_YEAR}-12-11')

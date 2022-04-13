@@ -23,4 +23,4 @@ c_ Solution:
                     lst.a..((o..(s[i])-o..(s[i-1]%26)
                 hm[t..(lst)].a..(s)
 
-        r.. map(s.., hm.values
+        r.. m.. s.., hm.values

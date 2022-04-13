@@ -9,7 +9,7 @@ c_ Animal:
         
 
     ___ -s
-        r.. f'{Animal.counter}. {name}'
+        r.. _* Animal.counter}. {name}'
 
     @classmethod
     ___ zoo(cls

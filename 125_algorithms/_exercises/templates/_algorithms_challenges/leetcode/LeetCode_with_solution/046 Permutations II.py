@@ -16,7 +16,7 @@ c_ Solution:
         """
         result    # list
         get_permute(num, [], result)
-        r.. map(l.., s.. m..(t.., result)))
+        r.. m.. l.., s.. m..(t.., result)))
 
 
     ___ get_permute_TLE  nums, current, result

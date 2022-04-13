@@ -8,7 +8,7 @@ ___ count_down(data_type
         __ l..(data_type) !_ 4:
             r.. V...
         ___ i __ data_type:
-            d += f'{i}'
+            d += _* i}'
     ______ T..
         r.. V...
     ___ i __ r..(4, 0, -1

@@ -10,12 +10,12 @@ ___ n_days_ago_str(days
 
 
 ?p__.m__.p.("arg, expected", [
-    (NOW - t..(seconds=2), 'just now'),
-    (NOW - t..(seconds=9), 'just now'),
-    (NOW - t..(seconds=10), '10 seconds ago'),
-    (NOW - t..(seconds=59), '59 seconds ago'),
+    (NOW - t..(s.._2), 'just now'),
+    (NOW - t..(s.._9), 'just now'),
+    (NOW - t..(s.._10), '10 seconds ago'),
+    (NOW - t..(s.._59), '59 seconds ago'),
     (NOW - t..(minutes=1), 'a minute ago'),
-    (NOW - t..(minutes=1, seconds=40), 'a minute ago'),
+    (NOW - t..(minutes=1, s.._40), 'a minute ago'),
     (NOW - t..(minutes=2), '2 minutes ago'),
     (NOW - t..(minutes=59), '59 minutes ago'),
     (NOW - t..(hours=1), 'an hour ago'),

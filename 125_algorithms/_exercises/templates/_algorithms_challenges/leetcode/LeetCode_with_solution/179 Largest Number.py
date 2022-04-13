@@ -19,7 +19,7 @@ c_ Solution:
         :type nums: list[int]
         :rtype: str
         """
-        nums map(s.., nums)
+        nums m.. s.., nums)
         nums.s..(cmp=cmp, r.._T..
         nums "".j..(nums)
         nums nums.l..("0")

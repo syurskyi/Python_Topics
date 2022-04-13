@@ -29,7 +29,7 @@ c_ Solution(o..
         """
         queue    # list
         queue.a..((beginWord, 0
-        letters map(chr, r..(o..('a'), o..('z') + 1
+        letters m.. chr, r..(o..('a'), o..('z') + 1
         word_dict wordDict
         # Remove words that are same as beginWord
         ___ word __ s..(wordDict

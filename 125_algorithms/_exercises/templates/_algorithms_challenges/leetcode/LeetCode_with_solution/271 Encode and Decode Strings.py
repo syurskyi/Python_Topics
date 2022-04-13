@@ -14,7 +14,7 @@ c_ Codec(o..
         :type strs: List[str]
         :rtype: str
         """
-        strs map(l.... x: s..(l..(x+"/"+x, strs)
+        strs m.. l.... x: s..(l..(x+"/"+x, strs)
         r.. r.. l.... x, y: x+y, strs, "")  # i.e. "".join(strs)
 
     ___ decode  s
@@ -45,7 +45,7 @@ c_ CodecMethod2(o..
         :type strs: List[str]
         :rtype: str
         """
-        strs map(l.... x: x.r..("\n", "\n\n")+"_\n_", strs)
+        strs m.. l.... x: x.r..("\n", "\n\n")+"_\n_", strs)
         r.. r.. l.... x, y: x+y, strs, "")
 
     ___ decode  s
@@ -57,7 +57,7 @@ c_ CodecMethod2(o..
         """
         strs s.s..("_\n_")
         strs strs[:-1]  # clear the trailing delimiter
-        r.. map(l.... x: x.r..("\n\n", "\n"), strs)
+        r.. m.. l.... x: x.r..("\n\n", "\n"), strs)
 
 
 c_ CodecError(o..
@@ -70,7 +70,7 @@ c_ CodecError(o..
         :type strs: List[str]
         :rtype: str
         """
-        strs map(l.... x: x.r..("\x00", "\\x00"), strs)
+        strs m.. l.... x: x.r..("\x00", "\\x00"), strs)
         ret ""
         ___ s __ strs:
             ret += s+"\x00"
@@ -88,5 +88,5 @@ c_ CodecError(o..
 
         s s[:-1]  # traiing \x00
         strs s.s..("\x00")
-        strs map(l.... x: x.r..("\\x00", "\x00"), strs)
+        strs m.. l.... x: x.r..("\\x00", "\x00"), strs)
         r.. strs

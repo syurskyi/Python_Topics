@@ -10,7 +10,7 @@ c_ Solution(o..
         :rtype: str
         """
         _______ __
-        ints map(i.., __.f..('[+-]?\d+', expression
+        ints m.. i.., __.f..('[+-]?\d+', expression
         A, B 0, 1
         ___ a __ ints:
             b next(ints)

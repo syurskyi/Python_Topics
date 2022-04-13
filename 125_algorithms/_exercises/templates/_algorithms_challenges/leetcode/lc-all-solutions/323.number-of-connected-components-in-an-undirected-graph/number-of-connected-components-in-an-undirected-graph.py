@@ -6,7 +6,7 @@ c_ Solution(o..
       r.. parent[x]
 
     ___ union(xy
-      x, y map(find, xy)
+      x, y m.. find, xy)
       __ rank[x] > rank[y]:
         parent[y] x
       ____
@@ -15,5 +15,5 @@ c_ Solution(o..
           rank[y] += 1
 
     parent, rank r..(n), [0] * n
-    map(union, edges)
+    m.. union, edges)
     r.. l..({find(x) ___ x __ parent})

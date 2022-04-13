@@ -15,5 +15,5 @@ ___ catAndMouse(catA, catB, mouseC
 
 n i..(input
 ___ i __ r..(n
-    catA, catB, mouseC map(i.., input().s..
+    catA, catB, mouseC m.. i.., input().s..
     catAndMouse(catA, catB, mouseC)

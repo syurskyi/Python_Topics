@@ -11,7 +11,7 @@ ___ getMoneySpent(keyboards, drives, b
     r.. result
 
 
-b, n, m map(i.., input().s..
+b, n, m m.. i.., input().s..
 keyboards l.. m..(i.., input().r..().s..()))
 drives l.. m..(i.., input().r..().s..()))
 moneySpent getMoneySpent(keyboards, drives, b)

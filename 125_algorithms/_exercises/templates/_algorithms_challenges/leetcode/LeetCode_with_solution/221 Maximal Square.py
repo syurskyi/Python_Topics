@@ -31,7 +31,7 @@ c_ Solution:
         n l..(matrix 0
         __ n < 1: r.. 0
         ___ i __ x..(m
-            matrix[i] map(i.., matrix[i])
+            matrix[i] m.. i.., matrix[i])
 
         maxa 0
         to_top [[0 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]

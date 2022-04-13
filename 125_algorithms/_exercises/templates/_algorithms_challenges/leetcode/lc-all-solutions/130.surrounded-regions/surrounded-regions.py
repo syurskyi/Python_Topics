@@ -14,7 +14,7 @@ c_ UnionFind
   ___ union  xy
     dad dad
     rank rank
-    x, y map(find, xy)
+    x, y m.. find, xy)
     __ x __ y:
       r.. F..
     __ rank[x] > rank[y]:

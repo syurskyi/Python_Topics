@@ -2,7 +2,7 @@
 #  Score: 35
 
 
-n, k map(i.., input().s..
+n, k m.. i.., input().s..
 prices s..(l.. m..(i.., input().s..())))
 
 count 0

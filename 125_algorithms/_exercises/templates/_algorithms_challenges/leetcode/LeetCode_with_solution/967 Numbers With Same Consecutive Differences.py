@@ -45,7 +45,7 @@ c_ Solution:
             ret.a..( 0  # special case
 
         r.. l..(
-            map(l.... x: i..("".j.. m..(s.., x))), ret)
+            m.. l.... x: i..("".j.. m..(s.., x))), ret)
         )
 
     ___ dfs  start: i.., N: i.., K: i..) __ L..[L..[i..]]:

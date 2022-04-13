@@ -22,7 +22,7 @@ c_ Solution(o..
         :rtype: List[int]
         """
         __ a __ 0:
-            ret map(l.... x: f(x, a, b, c), nums)
+            ret m.. l.... x: f(x, a, b, c), nums)
             r.. ret __ b > 0 ____ ret[::-1]
 
         mid - f__(b) / (2*a)

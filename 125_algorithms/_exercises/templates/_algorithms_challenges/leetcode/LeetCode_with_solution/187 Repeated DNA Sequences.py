@@ -32,7 +32,7 @@ c_ Solution:
         __ l..(s) < 10:
             r.. []
 
-        s map(mapping, l..(s
+        s m.. mapping, l..(s
         h s..()
         # in_ret = set()
         ret s..()
@@ -52,7 +52,7 @@ c_ Solution:
             ____
                 h.add(cur)
 
-        r.. map(decode, ret)
+        r.. m.. decode, ret)
 
     ___ decode  s
         dic {

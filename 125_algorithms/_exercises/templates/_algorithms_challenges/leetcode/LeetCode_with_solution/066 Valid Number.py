@@ -60,7 +60,7 @@ c_ Solution:
                 token SPACE
             ____ char __ ("-", "+"
                 token SIGN
-            ____ char __ map(s.., r..(10:
+            ____ char __ m.. s.., r..(10:
                 token DIGIT
             ____ char__".":
                 token DOT

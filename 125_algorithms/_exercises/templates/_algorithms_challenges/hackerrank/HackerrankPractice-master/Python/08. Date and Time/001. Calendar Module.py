@@ -5,5 +5,5 @@
 _______ ca__
 
 
-m, d, y  map(i.., input().s..
+m, d, y  m.. i.., input().s..
 print(ca__.d..[ca__.weekday(y, m, d)].u..

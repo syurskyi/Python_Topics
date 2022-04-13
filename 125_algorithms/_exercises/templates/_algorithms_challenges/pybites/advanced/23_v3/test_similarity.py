@@ -24,4 +24,4 @@ ___ test_get_similarities
                 ('code challenges', 'codechallenges')]
 
     ___ hit __ e..
-        ... t..(s..(hit __ similar_tags, f'{hit} not in similar tags'
+        ... t..(s..(hit __ similar_tags, _* hit} not in similar tags'

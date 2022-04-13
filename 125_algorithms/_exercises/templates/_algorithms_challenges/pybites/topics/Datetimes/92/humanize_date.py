@@ -31,7 +31,7 @@ ___ pretty_date(date
     r.. date.s..("%m/_d/%y")
 
 
-dt d__.n.. - t..(d.._2, hours=22, minutes=14, seconds=15)
+dt d__.n.. - t..(d.._2, hours=22, minutes=14, s.._15)
 #dt = datetime.now() - timedelta(seconds=125)
 #print(dt)
 print(pretty_date(dt

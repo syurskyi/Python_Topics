@@ -1,5 +1,5 @@
 ___ get_sum
-    A, B map(i.., input().s..
+    A, B m.. i.., input().s..
     result A+B
     
     r.. result

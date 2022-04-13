@@ -9,7 +9,7 @@ c_ Animal:
         _add_to_zoo(self)
 
     ___  -r
-        r.. f'{index}. {name}'
+        r.. _* index}. {name}'
 
     @classmethod
     ___ _next_index(cls

@@ -16,5 +16,5 @@ ___ get_ordinal_suffix(number
     units i..(s_num[-1])
     __ n.. (10 < i..(s_num[-2:]) < 20
         __ 0 < units < 4:
-            r.. f'{number}{["st", "nd", "rd"][units - 1]}'
-    r.. f'{number}th'
+            r.. _* number}{["st", "nd", "rd"][units - 1]}'
+    r.. _* number}th'

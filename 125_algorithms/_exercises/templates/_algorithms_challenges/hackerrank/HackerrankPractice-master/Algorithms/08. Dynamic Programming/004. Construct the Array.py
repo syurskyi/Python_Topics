@@ -15,5 +15,5 @@ ___ count_array(n, k, x
     r.. dp[1][-1]
 
 
-n, k, x map(i.., input().s..
+n, k, x m.. i.., input().s..
 print(count_array(n, k, x

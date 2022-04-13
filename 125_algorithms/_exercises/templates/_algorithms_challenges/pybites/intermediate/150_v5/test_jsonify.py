@@ -38,4 +38,4 @@ ___ test_extracted_data_is_correct ?
                  'Berwick', 'email': 'aberwick8@symantec.com'},
                 {'id': '10', 'first_name': 'Wyn', 'last_name': 'Serginson',
                  'email': 'wserginson9@naver.com'}]:
-        ... row __ data, f'{row} not in output of convert_to_json'
+        ... row __ data, _* row} not in output of convert_to_json'

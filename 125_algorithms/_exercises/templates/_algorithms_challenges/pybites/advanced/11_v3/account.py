@@ -51,4 +51,4 @@ c_ Account:
         _transactions.a..(-other)
 
     ___ -s
-        r.. f'{name} account - balance: {balance}'
+        r.. _* name} account - balance: {balance}'

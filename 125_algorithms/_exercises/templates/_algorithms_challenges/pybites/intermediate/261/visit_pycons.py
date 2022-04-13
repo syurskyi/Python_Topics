@@ -80,7 +80,7 @@ ___ _get_pycons
 
 ___ _km_distance(origin, destination
     """ Helper function that retrieves the air distance in kilometers for two pycons """
-    lon1, lat1, lon2, lat2 map(
+    lon1, lat1, lon2, lat2 m.. 
         radians, [origin.lon, origin.lat, destination.lon, destination.lat]
     )
     r.. 6371 * (

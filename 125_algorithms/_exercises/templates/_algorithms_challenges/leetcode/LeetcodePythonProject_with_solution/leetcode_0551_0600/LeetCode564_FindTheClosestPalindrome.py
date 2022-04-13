@@ -13,7 +13,7 @@ c_ Solution(o..
         candidates [s..(10**k0+d) ___ k0 __ (k-1, k) ___ d __ (-1, 1)]
         prefix n[:i..((k+1)/2)]
         p i..(prefix)
-        ___ start __ map(s.., (p-1, p, p+1:
+        ___ start __ m.. s.., (p-1, p, p+1:
             candidates.a..(start+(start[:-1] __ k%2 ____ start)[::-1])
         ___ delta(x
             r.. a..(i..(n)-i..(x

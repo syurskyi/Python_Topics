@@ -15,6 +15,6 @@ c_ EggCreator:
     ___ __next__
         __ count < limit:
             count += 1
-            r.. f'{c..(COLORS)} egg'
+            r.. _* c..(COLORS)} egg'
         ____
             r.. S..

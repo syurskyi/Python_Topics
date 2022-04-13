@@ -7,12 +7,12 @@ c_ Person(o..
 
 c_ Father(Person
     ___  -r
-        r.. f'{super(). -r()} and cool daddy'
+        r.. _* super(). -r()} and cool daddy'
 
 
 c_ Mother(Person
     ___  -r
-        r.. f'{super(). -r()} and awesome mom'
+        r.. _* super(). -r()} and awesome mom'
 
 
 c_ Child(Father, Mother, Person

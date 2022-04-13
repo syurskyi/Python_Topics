@@ -33,8 +33,8 @@ ___ add_todo(delay_time: s.., task: s..,
             seconds i..(timein[0:-1])
         ____
             seconds i..(timein)
-    scheduled_dt NOW + t..(d.._days, hours=hours, minutes=minutes, seconds=seconds)
-    r.. f'{task} @ {scheduled_dt}'
+    scheduled_dt NOW + t..(d.._days, hours=hours, m.._? s.._?
+    r.. _* task} @ {scheduled_dt}'
 
 
 print(add_todo("11h 10m", "Wash my car"

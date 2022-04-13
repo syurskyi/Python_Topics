@@ -48,5 +48,5 @@ c_ Solution(o..
             ____
                 h__.heappushpop(ret, elt)
 
-        r.. map(l.... x: x.val, ret)
+        r.. m.. l.... x: x.val, ret)
 

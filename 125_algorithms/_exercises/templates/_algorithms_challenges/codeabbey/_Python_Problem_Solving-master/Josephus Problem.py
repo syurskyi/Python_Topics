@@ -1,5 +1,5 @@
 #accept the input number of people in the circle and counter after which people in the circle will be killed
-n,k map(i..,input().s..
+n,k m.. i..,input().s..
 #initialize the list in which the number of people will be stored
 sucide_squad    # list
 #store the number of people

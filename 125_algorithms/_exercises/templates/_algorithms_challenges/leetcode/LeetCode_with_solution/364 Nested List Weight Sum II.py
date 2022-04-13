@@ -70,14 +70,14 @@ c_ Solution(o..
             r.. 1
         __ nl_lst:
             r.. 1 + m..(
-                map(l.... x: height(x.getList, nl_lst)
+                m.. l.... x: height(x.getList, nl_lst)
             )
 
     ___ inverseDepthSum  nl, inv_depth
         nl_lst f.. l.... x: n.. x.isInteger(), nl)
         ni_list f.. l.... x: x.isInteger(), nl)
         __ nl_lst:
-            map(l.... x: inverseDepthSum(x.getList(), inv_depth - 1), nl_lst)
+            m.. l.... x: inverseDepthSum(x.getList(), inv_depth - 1), nl_lst)
         __ ni_list:
             s.. += s.. m..(l.... x: x.getInteger() * inv_depth, ni_list
 
@@ -106,7 +106,7 @@ c_ SolutionError(o..
         ni_list f.. l.... x: x.isInteger(), nl)
         __ nl_lst:
             height 1 + m..(
-                map(l.... x: dfs(x.getList, nl_lst)
+                m.. l.... x: dfs(x.getList, nl_lst)
             )
         __ ni_list:
             s.. += s.. m..(l.... x: x.getInteger() * height, ni_list

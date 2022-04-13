@@ -20,7 +20,7 @@ ___ get_all_days(start_date: date, end_date: date) __ L..[date]:
 
 
 ___ _parse_date(date_string: s..) __ date:
-    r.. date(*map(i.., date_string.s..('-')))
+    r.. date(*m.. i.., date_string.s..('-')))
 
 
 """{
@@ -79,7 +79,7 @@ ___ exchange_rates(
     start_date: s.. "2020-01-01", end_date: s.. "2020-09-01"
 ) __ OrderedDict:
     daily_rates _date_conv(j__.l.. (RATES_FILE.read_text 'rates' )
-    start_date, end_date map(_parse_date, [start_date, end_date])
+    start_date, end_date m.. _parse_date, [start_date, end_date])
     __ start_date < m..(daily_rates.keys o. end_date > m..(daily_rates.k..
         r.. V...('Date out of range for data')
     matches match_daily_rates(start_date, end_date, daily_rates)

@@ -10,7 +10,7 @@ c_ Score(E..
     CHEATED 1
 
     ___ -s
-        r.. f'{name} => {THUMBS_UP * value}'
+        r.. _* name} => {THUMBS_UP * value}'
 
     @classmethod
     ___ average(cls

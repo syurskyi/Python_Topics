@@ -46,7 +46,7 @@ duration_regex __.c.. _ PT(?:(?P<hrs>\d+)H)?(?:(?P<mins>\d+)M)?(?:(?P<secs>\d+)S
 
 ___ _vid_time(vid
     time_parts duration_regex.m..(vid.duration).groupdict(default=0)
-    r.. t..(hours=i..(time_parts 'hrs' ), minutes=i..(time_parts 'mins' ), seconds=i..(time_parts 'secs'
+    r.. t..(hours=i..(time_parts 'hrs' ), minutes=i..(time_parts 'mins' ), s.._i..(time_parts 'secs'
 
 
 ___ get_talks_gt_one_hour(videos

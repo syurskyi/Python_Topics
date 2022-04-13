@@ -16,7 +16,7 @@ c_ Solution(o..
   ___ countNodes  root
     count 0
     w.... root:
-      l, r map(getHeight, (root.left, root.right
+      l, r m.. getHeight, (root.left, root.right
       __ l __ r:
         count += 2 ** l
         root root.right

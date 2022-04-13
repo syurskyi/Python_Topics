@@ -90,7 +90,7 @@ c_ PythonBytes:
 
         ___ entry __ entries:
             duration= entry 'itunes_duration'
-            hours,minutes,seconds map(i..,duration.s..(':'
+            hours,minutes,seconds m.. i..,duration.s..(':'
             total_seconds 3600 * hours + 60 * minutes + seconds
             duration_sums += total_seconds
             __ total_seconds < min_duration_seconds:

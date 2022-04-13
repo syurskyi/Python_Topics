@@ -106,7 +106,7 @@ c_ Solution:
         ___ configuration __ result:
             current    # list
             ___ row __ configuration:
-                row map(l.... x: "." __ x__-1 ____ "Q", row)
+                row m.. l.... x: "." __ x__-1 ____ "Q", row)
                 row "".j..(row)
                 current.a..(row)
             string_result.a..(current)

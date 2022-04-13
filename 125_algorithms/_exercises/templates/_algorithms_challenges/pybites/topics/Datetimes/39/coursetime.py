@@ -11,7 +11,7 @@ COURSE_TIMES __.p...j..(
 )
 u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/course_timings',
-    COURSE_TIMES
+    C..
 )
 
 
@@ -26,7 +26,7 @@ ___ get_all_timestamps
 
         Return a list of MM:SS timestamps
     """
-    w__ o.. COURSE_TIMES) __ f:
+    w__ o.. C..) __ f:
         lines f.r..
         lines [line.r..() ___ line __ lines __ ')' __ line]
     r.. [line.s..('(')[1].s..(')')[0] ___ line __ lines]
@@ -37,7 +37,7 @@ ___ calc_total_course_duration(timestamps
     total_duration d__.s..('00:00', "_M:_S")
     ___ each_time __ timestamps:
         m.., sec each_time.s..(':')
-        total_duration total_duration + t..(minutes=i..(m..), seconds=i..(sec
+        total_duration total_duration + t..(minutes=i..(m..), s.._i..(sec
     r.. d__.s..(total_duration, "_H|_M:_S")
 
 print(calc_total_course_duration(get_all_timestamps()))

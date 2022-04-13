@@ -15,7 +15,7 @@ c_ Groceries:
         """Print a simple table of cart items with total at the end"""
         items items __ items __ n.. N.. ____ self
         ___ item __ items:
-            product f'{item.product}'
+            product _* item.product}'
             __ item.craving:
                 product += ' (craving)'
             print _*{product:<30} | {item.price:>3}')

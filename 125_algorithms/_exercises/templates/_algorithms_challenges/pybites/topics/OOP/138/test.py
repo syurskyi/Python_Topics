@@ -7,7 +7,7 @@ c_ Employee:
         score score
 
     ___ full_name
-        r.. f'{first} {last}'
+        r.. _* first} {last}'
 
 
 khoo Employee('sc', 'khoo', 250)

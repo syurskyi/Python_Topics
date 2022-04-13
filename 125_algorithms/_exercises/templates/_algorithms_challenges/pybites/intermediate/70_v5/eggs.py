@@ -15,4 +15,4 @@ c_ EggCreator:
         __ current > limit:
             r..
         current += 1
-        r.. f'{c..(COLORS)} egg'
+        r.. _* c..(COLORS)} egg'

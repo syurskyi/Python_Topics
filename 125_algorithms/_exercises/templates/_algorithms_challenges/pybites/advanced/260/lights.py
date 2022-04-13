@@ -21,8 +21,8 @@ c_ LightsGrid:
 
         Suggested return are 4 integers representing x1, x2, y1, y2 [hint]"""
 
-        row_1,col_1 map(i..,s1.s..(','
-        row_2,col_2 map(i..,s2.s..(','
+        row_1,col_1 m.. i..,s1.s..(','
+        row_2,col_2 m.. i..,s2.s..(','
 
 
 

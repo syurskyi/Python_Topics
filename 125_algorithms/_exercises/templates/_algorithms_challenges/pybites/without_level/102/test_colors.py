@@ -38,7 +38,7 @@ ___ test_one_invalid_color_then_quit(input_mock, capsys
     # user then enters quit so loop breaks (end function / program)
     call_print_colors()
     a.. capsys.r..[0].s..
-    e.. f'{NOT_VALID}\nbye'
+    e.. _* NOT_VALID}\nbye'
     ... a.. __ e..
 
 
@@ -48,7 +48,7 @@ ___ test_invalid_then_valid_color_then_quit(nput_mock, capsys
     # then user enters red which is valid so print it, then quit
     call_print_colors()
     a.. capsys.r..[0].s..
-    e.. f'{NOT_VALID}\nred\nbye'
+    e.. _* NOT_VALID}\nred\nbye'
     ... a.. __ e..
 
 

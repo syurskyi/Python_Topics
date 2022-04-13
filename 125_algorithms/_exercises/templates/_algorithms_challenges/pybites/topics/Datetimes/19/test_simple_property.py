@@ -5,7 +5,7 @@ ____ simple_property _______ Promo, NOW
 
 
 ___ test_promo_expired
-    past_time NOW - t..(seconds=3)
+    past_time NOW - t..(s.._3)
     twitter_promo Promo('twitter', past_time)
     ... twitter_promo.expired
 

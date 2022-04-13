@@ -2,12 +2,12 @@
 #  Score: 60
 
 
-n, queries map(i.., input().s..
+n, queries m.. i.., input().s..
 
 arr [0 ___ i __ r..(n+2)]
 
 ___ i __ r..(queries
-    start, finish, k map(i.., input().s..
+    start, finish, k m.. i.., input().s..
     arr[start - 1] += k
     arr[finish] -_ k
 
