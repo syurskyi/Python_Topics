@@ -12,13 +12,13 @@ ___ n_digit_numbersnumbers L.. T n i.. __ L.. i..
 
     n_multiply_lookup {1: 1, 2: 10, 3: 100, 4: 1000}
 
-    ___ i __ r..(l..(numbers:
-        numbers[i] r..(numbers[i] * n_multiply_lookup[n])
-        __ l..(s..(numbers[i] > n:
+    ___ i __ r..(l.. ?:
+        numbers[i] r.. ?[i] * n_multiply_lookup[n])
+        __ l..(s.. ?[i] > n:
             __ numbers[i] > 0
-                numbers[i] i..(s..(numbers[i]) :?)
+                numbers[i] i..(s.. ?[i]) :?)
             ____
-                numbers[i] i..(s..(numbers[i]) |? +1])
+                numbers[i] i..(s.. ?[i]) |? +1])
 
     r.. numbers
 

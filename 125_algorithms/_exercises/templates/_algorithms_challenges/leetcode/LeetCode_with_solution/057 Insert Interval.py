@@ -63,7 +63,7 @@ c_ SolutionSlow(o..
         itvls.s..(cmp=l.... a, b: a.start - b.start)
 
         ret [itvls[0]]
-        ___ cur __ itvls[1:]:
+        ___ cur __ itvls 1|
             pre ret[-1]
             __ cur.start <_ pre.end:  # overlap
                 pre.end m..(pre.end, cur.end)

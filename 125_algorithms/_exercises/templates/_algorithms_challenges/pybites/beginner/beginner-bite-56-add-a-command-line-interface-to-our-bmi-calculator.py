@@ -47,7 +47,7 @@ ___ handle_args(args_ N..
        Call calc_bmi with provided args object.
        If args are not provided get them from create_parser"""
     __ args __ N..
-        parser create_parser()
+        parser ?
         args parser.p..
 
     __ args.weight a.. args.length:

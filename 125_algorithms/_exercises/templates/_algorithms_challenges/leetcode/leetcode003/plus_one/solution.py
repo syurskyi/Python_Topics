@@ -7,7 +7,7 @@ c_ Solution:
         t (d..[0] + 1) % 10
         carry (d..[0] + 1) / 10
         res.a..(t)
-        ___ d __ d..[1:]:
+        ___ d __ d.. 1|
             t (d + carry) % 10
             carry (d + carry) / 10
             res.a..(t)

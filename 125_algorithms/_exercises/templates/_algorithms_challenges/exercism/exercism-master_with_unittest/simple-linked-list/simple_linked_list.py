@@ -18,7 +18,7 @@ c_ LinkedList:
         ___ value __ values:
             push(value)
 
-    ___ __len__
+    ___ -l
         r.. _size
 
     ___ head

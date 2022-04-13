@@ -46,7 +46,7 @@ c_ SummaryRanges(o..
         itvls.s..(k.._l.... x: x.start)
 
         ret [itvls[0]]
-        ___ itvl __ itvls[1:]:
+        ___ itvl __ itvls 1|
             pre ret[-1]
             __ itvl.start <_ pre.end + 1:
                 pre.end m..(itvl.end, pre.end)

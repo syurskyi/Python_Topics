@@ -46,5 +46,5 @@ c_ LinkedList(o..
             head shifted_node.succeeding
             r.. shifted_node.value
 
-    ___ __len__
+    ___ -l
         r.. length

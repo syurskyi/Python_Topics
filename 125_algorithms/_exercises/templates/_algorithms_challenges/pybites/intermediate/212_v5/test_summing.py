@@ -5,7 +5,7 @@ ____ summing _______ sum_numbers
 
 ___ test_functionality
     numbers [1, 2, 0, 4, 5, 12, 'a', 3]
-    a.. l..(sum_numbers(numbers
+    a.. l..(sum_numbers ?
     e.. [0.5, 0.0, 0.8, 0.4166666666666667]
     ... a.. __ e..
 

@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ p.. __ paths:
       raw p...s..(" ")
       dirPath raw[0]
-      ___ data __ raw[1:]:
+      ___ data __ raw 1|
         name, sign data.s..("(")
         d[sign].a..(dirPath + "/" + name)
     r.. f.. l.... x: l..(x) > 1, d.values

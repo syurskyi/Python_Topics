@@ -161,7 +161,7 @@ c_ BowlingTest(unittest.TestCase
 
         roll(rolls)
 
-        w__ assertRaisesWithMessage(IndexError
+        w__ assertRaisesWithMessage(I..
             game.score()
 
     ___ test_cannot_roll_if_there_are_already_ten_frames
@@ -169,7 +169,7 @@ c_ BowlingTest(unittest.TestCase
 
         roll(rolls)
 
-        w__ assertRaisesWithMessage(IndexError
+        w__ assertRaisesWithMessage(I..
             game.roll(0)
 
     ___ test_bonus_rolls_for_strike_must_be_rolled_before_score_is_calc
@@ -177,7 +177,7 @@ c_ BowlingTest(unittest.TestCase
 
         roll(rolls)
 
-        w__ assertRaisesWithMessage(IndexError
+        w__ assertRaisesWithMessage(I..
             game.score()
 
     ___ test_both_bonuses_for_strike_must_be_rolled_before_score
@@ -185,7 +185,7 @@ c_ BowlingTest(unittest.TestCase
 
         roll(rolls)
 
-        w__ assertRaisesWithMessage(IndexError
+        w__ assertRaisesWithMessage(I..
             game.score()
 
     ___ test_bonus_rolls_for_spare_must_be_rolled_before_score_is_calc
@@ -193,7 +193,7 @@ c_ BowlingTest(unittest.TestCase
 
         roll(rolls)
 
-        w__ assertRaisesWithMessage(IndexError
+        w__ assertRaisesWithMessage(I..
             game.score()
 
     ___ test_cannot_roll_after_bonus_roll_for_spare
@@ -201,7 +201,7 @@ c_ BowlingTest(unittest.TestCase
 
         roll(rolls)
 
-        w__ assertRaisesWithMessage(IndexError
+        w__ assertRaisesWithMessage(I..
             game.roll(2)
 
     ___ test_cannot_roll_after_bonus_rolls_for_strike
@@ -210,7 +210,7 @@ c_ BowlingTest(unittest.TestCase
 
         roll(rolls)
 
-        w__ assertRaisesWithMessage(IndexError
+        w__ assertRaisesWithMessage(I..
             game.roll(2)
 
     # Utility functions

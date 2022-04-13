@@ -48,7 +48,7 @@ ___ intersection $a.. I..) __ S..[A..]:
     ___
         first l[0]
         r..(first.i.. *l
-    ______ IndexError __ e:
+    ______ I.. __ e:
         print(e)
         r..(s..
 

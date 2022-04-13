@@ -6,7 +6,7 @@ ___ sequence_generator
     numbers [num ___ num __ r..(1, l..(letters) +1, 1)]
     
     sequence    # list
-    ___ pair __ z..(numbers, letters
+    ___ pair __ z.. ?, letters
         sequence.a..(pair 0
         sequence.a..(pair[1])
 

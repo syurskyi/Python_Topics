@@ -77,7 +77,7 @@ c_ Codec:
                 ____
                     insert(root.right, val)
 
-        ___ a __ lst[1:]:
+        ___ a __ lst 1|
             insert(root, a)
 
         r.. root

@@ -45,7 +45,7 @@ c_ JsObject:
         _local.p.. item)
         __dict__.p.. item)
 
-    ___ __len__
+    ___ -l
         r.. l..(_local)
 
     ___ __iter__

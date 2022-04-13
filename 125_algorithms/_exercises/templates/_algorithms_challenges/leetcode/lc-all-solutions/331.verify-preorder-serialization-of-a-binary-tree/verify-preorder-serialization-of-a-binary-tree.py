@@ -10,7 +10,7 @@ c_ Solution(o..
         r.. T..
       r.. F..
     stack [p[0]]
-    ___ c __ p[1:]:
+    ___ c __ p 1|
       __ l..(stack) __ 1 a.. stack[0] __ "#":
         r.. F..
       stack.a..(c)

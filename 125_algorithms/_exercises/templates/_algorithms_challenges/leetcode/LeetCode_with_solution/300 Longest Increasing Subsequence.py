@@ -29,7 +29,7 @@ c_ Solution(o..
         MIN [-1 ___ _ __ x..(n+1)]
         k 1
         MIN[k] A[0]  # store value rather than index
-        ___ v __ A[1:]:
+        ___ v __ A 1|
             idx b__.bisect_left(MIN, v, 1, k+1)
             MIN[idx] v
             k += 1 __ idx __ k+1 ____ 0

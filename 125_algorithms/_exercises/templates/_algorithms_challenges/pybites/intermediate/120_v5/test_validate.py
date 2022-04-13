@@ -5,7 +5,7 @@ ____ Previous.validate _______ int_args
 
 @int_args
 ___ sum_numbers(*numbers
-    r.. s..(numbers)
+    r.. s.. ?)
 
 
 ___ test_valid_args

@@ -42,7 +42,7 @@ ___ my_slice_and_dice(text=text
             item item.r..('!')
             item item.r..('.')
             words item.s..(' ')
-            results.a..(words[words.__len__()-1])
+            results.a..(words[words.-l()-1])
     r.. results
 
 ___ slice_and_dice(text=text

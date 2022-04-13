@@ -49,7 +49,7 @@ c_ Solution:
         """
         email_to_ids d..(s..)
         ___ i, v __ e..(accounts
-            ___ email __ v[1:]:
+            ___ email __ v 1|
                 email_to_ids[email].add(i)
 
         # graph nodes by ids, edges by email
@@ -65,7 +65,7 @@ c_ Solution:
 
     ___ dfs  i, accounts, email_to_ids, emails, visited
         visited[i] T..
-        ___ email __ accounts[i][1:]:
+        ___ email __ accounts[i] 1|
             emails.add(email)
             ___ nbr __ email_to_ids[email]:
                 __ n.. visited[nbr]:
@@ -84,12 +84,12 @@ c_ Solution:
         id_emails d.. l..
         ___ i __ r..(l..(accounts:
             person N..
-            ___ email __ accounts[i][1:]:
+            ___ email __ accounts[i] 1|
                 __ email __ email_id:
                     person email_id[email]
                     _____
 
-            ___ email __ accounts[i][1:]:
+            ___ email __ accounts[i] 1|
                 __ person __ N..
                     person i
                     email_id[email] person

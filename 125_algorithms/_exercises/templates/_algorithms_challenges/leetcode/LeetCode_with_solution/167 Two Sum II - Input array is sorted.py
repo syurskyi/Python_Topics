@@ -11,7 +11,7 @@ c_ Solution(o..
         :type target: int
         :rtype: List[int]
         """
-        n l..(numbers)
+        n l.. ?)
         i 0
         j n-1
         w.... i < j:

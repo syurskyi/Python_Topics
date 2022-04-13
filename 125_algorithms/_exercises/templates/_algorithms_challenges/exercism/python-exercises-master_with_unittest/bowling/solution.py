@@ -59,7 +59,7 @@ c_ BowlingGame(o..
     ___ roll_bonus  pins
         tenth_frame frames[-1]
         __ tenth_frame.is_open
-            r.. IndexError("cannot throw bonus with an open tenth frame")
+            r.. I..("cannot throw bonus with an open tenth frame")
 
         bonus_throws.a..(pins)
 
@@ -70,10 +70,10 @@ c_ BowlingGame(o..
 
         # Check if there are more bonuses than it should be
         __ tenth_frame.is_strike() a.. l..(bonus_throws) > 2:
-            r.. IndexError(
+            r.. I..(
                 "wrong number of fill balls when the tenth frame is a strike")
         ____ tenth_frame.is_spare() a.. l..(bonus_throws) > 1:
-            r.. IndexError(
+            r.. I..(
                 "wrong number of fill balls when the tenth frame is a spare")
 
     ___ roll  pins
@@ -88,12 +88,12 @@ c_ BowlingGame(o..
 
     ___ score
         __ current_frame_idx < MAX_FRAME:
-            r.. IndexError("frame less than 10")
+            r.. I..("frame less than 10")
         __ frames[-1].is_spare() a.. l..(bonus_throws) !_ 1:
-            r.. IndexError(
+            r.. I..(
                 "one bonus must be rolled when the tenth frame is spare")
         __ frames[-1].is_strike() a.. l..(bonus_throws) !_ 2:
-            r.. IndexError(
+            r.. I..(
                 "two bonuses must be rolled when the tenth frame is strike")
         r.. s..(frame.score(next_throws(frame.idx
                    ___ frame __ frames)

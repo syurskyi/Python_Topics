@@ -51,7 +51,7 @@ c_ LinkedList(o..
             head new_node
         length += 1
 
-    ___ __len__
+    ___ -l
         r.. length
 
     ___ __iter__

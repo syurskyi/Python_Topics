@@ -13,7 +13,7 @@ c_ Solution(o..
         __ n.. strs:
             r.. ""
         res strs[0]
-        ___ s __ strs[1:]:
+        ___ s __ strs 1|
             n l..(s)
             ___ i, c __ e..(res
                 __ i >_ n o. res[i] !_ s[i]:

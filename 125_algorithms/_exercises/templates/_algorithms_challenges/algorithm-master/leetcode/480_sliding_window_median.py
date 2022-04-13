@@ -8,7 +8,7 @@ c_ HashHeapq:
     ___  -r
         r.. r.. (__heap)
 
-    ___ __len__
+    ___ -l
         r.. l..(__heap)
 
     ___ __bool__

@@ -36,7 +36,7 @@ c_ Solution:
         # except for the head
         has_lower F..
         has_upper F..
-        ___ w __ word[1:]:
+        ___ w __ word 1|
             __ w.isupper
                 has_upper T..
                 __ has_lower o. n.. head_upper:

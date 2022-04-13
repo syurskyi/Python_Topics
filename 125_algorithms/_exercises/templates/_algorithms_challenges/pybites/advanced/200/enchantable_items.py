@@ -63,7 +63,7 @@ ___ generate_enchantments(soup
     mapping {'I': 1,'II': 2,'III': 3,'IV': 4,'V': 5}
     table ?.f.. 'table',id="minecraft_items")
     all_values    # list
-    ___ table_row __ table.f.. 'tr')[1:]:
+    ___ table_row __ table.f.. 'tr') 1|
         data table_row.f.. 'td')
         values    # list
         ___ i,d __ e..(data

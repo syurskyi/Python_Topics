@@ -28,7 +28,7 @@ c_ Solution(o..
 
         itvls.s..(k.._l.... x: x.start)  # sort first, since time complexity less than brute force
         ret [itvls[0]]
-        ___ cur __ itvls[1:]:
+        ___ cur __ itvls 1|
             pre ret[-1]
             __ cur.start <_ pre.end:  # overlap
                 pre.end m..(pre.end, cur.end)
@@ -48,7 +48,7 @@ c_ Solution(o..
             r.. []
 
         ret [itvls[0]]
-        ___ interval __ itvls[1:]:
+        ___ interval __ itvls 1|
             __ ret[-1].end < interval.start:
                 ret.a..(interval)
                 _____

@@ -9,7 +9,7 @@ c_ IntvArray(o..
     a.. l.... x: _array.a..(x)
     s.. _array.s..
 
-  ___ __len__
+  ___ -l
     r.. l..(_array)
 
   ___ __getitem__  x

@@ -28,7 +28,7 @@ c_ Account:
     ___ balance
         r.. amount + s..(_transactions)
 
-    ___ __len__
+    ___ -l
         r.. l..(_transactions)
 
     ___ __getitem__  position

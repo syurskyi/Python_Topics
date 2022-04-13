@@ -12,7 +12,7 @@ ___ get_weekdays(calendar_output
             days line.s..
         ____
             numbers [i..(line[i:i+2]) __ n.. line[i:i+2].isspace() ____ 0 ___ i __ r..(0,l..(line) - 1,3)]
-            print(numbers)
+            print ?)
 
 
             ___ day,number __ z..(days,numbers

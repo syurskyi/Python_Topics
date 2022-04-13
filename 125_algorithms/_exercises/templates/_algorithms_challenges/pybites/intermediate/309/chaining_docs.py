@@ -49,7 +49,7 @@ c_ Document:
         ___
             lines[index_one],lines[index_two] lines[index_two],lines[index_one]
         ______ I..
-            r.. IndexError("Invalid indexes")
+            r.. I..("Invalid indexes")
 
         r.. self
 
@@ -139,7 +139,7 @@ c_ Document:
 
 
 
-    ___ __len__
+    ___ -l
         """Return the length of the document (i.e. line count)."""
         r.. l..(lines)
 

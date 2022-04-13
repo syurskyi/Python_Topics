@@ -37,7 +37,7 @@ c_ LinkedList(o..
     ___ __iter__
         r.. LinkedIterator(self)
 
-    ___ __len__
+    ___ -l
         r.. _len
 
     ___ head

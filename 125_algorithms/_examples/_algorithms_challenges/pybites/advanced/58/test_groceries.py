@@ -19,7 +19,7 @@ def cart():
 
 @pytest.fixture
 def parser():
-    return create_parser()
+    return ?
 
 
 def test_list(parser, cart, capfd):

@@ -41,7 +41,7 @@ c_ Solution:
             piles.a..([c])
 
         cnt 0
-        ___ _, n, c __ lst[1:]:
+        ___ _, n, c __ lst 1|
             ___ _ __ r..(n
                 piles[cnt].a..(c)
                 cnt (cnt + 1) % l..(piles)

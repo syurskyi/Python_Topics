@@ -33,7 +33,7 @@ c_ Solution:
         """
         ret -f__("inf")
         prev_max A[0]
-        ___ a __ A[1:]:
+        ___ a __ A 1|
             ret m..(ret, prev_max - 1 + a)
             prev_max m..(prev_max - 1, a)
 

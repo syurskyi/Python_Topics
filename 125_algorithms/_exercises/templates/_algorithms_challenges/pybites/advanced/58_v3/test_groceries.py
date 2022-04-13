@@ -19,11 +19,11 @@ ___ cart
 
 ?p__.f..
 ___ parser
-    r.. create_parser()
+    r.. ?
 
 
 ___ test_list(parser, cart, capfd
-    args parser.parse_args( '-l' )
+    args parser..p..  '-l' )
     handle_args(args, cart)
     output ?.r .. 0].s..('\n')
     ... 'pizza (craving)                |   4' __ output
@@ -31,7 +31,7 @@ ___ test_list(parser, cart, capfd
 
 
 ___ test_search(parser, cart, capfd
-    args parser.parse_args( '-s', 'coffee' )
+    args parser..p..  '-s', 'coffee' )
     handle_args(args, cart)
     output ?.r .. 0].s..('\n')
     ... 'coffee                         |   5' __ output
@@ -42,7 +42,7 @@ ___ test_add(parser, cart
     ... l..(cart) __ 6
     ... cart.due __ 22
 
-    args parser.parse_args( '-a', 'honey', '5', 'False' )
+    args parser..p..  '-a', 'honey', '5', 'False' )
     handle_args(args, cart)
 
     ... l..(cart) __ 7
@@ -59,7 +59,7 @@ ___ test_delete(parser, cart
     ... l..(cart) __ 6
     ... cart.due __ 22
 
-    args parser.parse_args( '-d', 'pizza' )
+    args parser..p..  '-d', 'pizza' )
     handle_args(args, cart)
 
     ... l..(cart) __ 5
@@ -74,12 +74,12 @@ ___ test_delete(parser, cart
 ___ test_args_mulually_exclusive(parser
     # argument -l/--list: not allowed with argument -d/--delete
     w__ p__.r..(S..
-        parser.parse_args( '-d', 'pizza', '-l' )
+        parser..p..  '-d', 'pizza', '-l' )
 
     # argument -a/--add: expected 3 arguments
     w__ p__.r..(S..
-        parser.parse_args( '-a', 'pizza' )
+        parser..p..  '-a', 'pizza' )
 
     # unrecognized arguments: coffee
     w__ p__.r..(S..
-        parser.parse_args( '-d', 'pizza', 'coffee' )
+        parser..p..  '-d', 'pizza', 'coffee' )

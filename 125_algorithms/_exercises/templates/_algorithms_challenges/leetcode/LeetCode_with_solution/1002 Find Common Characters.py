@@ -41,7 +41,7 @@ c_ Solution:
             r.. ret
             
         counter C..(A 0
-        ___ a __ A[1:]:
+        ___ a __ A 1|
             cur C..(a)
             ___ c __ s__.a..:
                 counter[c] m..(counter[c], cur[c])

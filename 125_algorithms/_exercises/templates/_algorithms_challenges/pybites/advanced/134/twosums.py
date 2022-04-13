@@ -3,7 +3,7 @@ ___ bs(numbers,value
 
 
 
-    low,high 0,l..(numbers) - 1
+    low,high 0,l.. ?) - 1
 
 
     w.... low <_ high:
@@ -39,7 +39,7 @@ ___ two_sums(numbers, target
 
     
     result N..
-    ___ i,number __ e..(numbers
+    ___ i,number __ e.. ?
         value target - number
         __ value < number a..  value __ mapping:
             index_1 mapping[value]

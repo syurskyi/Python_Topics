@@ -7,7 +7,7 @@ ___ _divide_line(line: s.., col_width: i.. COL_WIDTH
     words line.s..
     result    # list
     line words[0]
-    ___ word __ words[1:]:
+    ___ word __ words 1|
         line2 line + ' ' + word
         __ l..(line2) > col_width:
             result.a..(line)

@@ -13,7 +13,7 @@ c_ LinkedList(o..
     ___ - , values=[]
         p..
 
-    ___ __len__
+    ___ -l
         p..
 
     ___ head

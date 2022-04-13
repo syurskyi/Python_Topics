@@ -15,7 +15,7 @@ ___ test_two_sums
     numbers [3, 10, 14, 8, 15, 5, 16, 13, 9, 2]
     e.. (2, 6)
     target 30
-    result two_sums(numbers, target)
+    result two_sums ?, target)
     ... result __ e..
 
 
@@ -41,7 +41,7 @@ ___ test_two_sums_random
     ordered s..([index1, index2])
     e.. ordered[0], ordered[1]
     target s..(picked)
-    result two_sums(numbers, target)
+    result two_sums ?, target)
     ... result __ e..
 
 

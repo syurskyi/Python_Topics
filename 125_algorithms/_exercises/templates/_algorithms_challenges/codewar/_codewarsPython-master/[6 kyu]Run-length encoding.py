@@ -4,7 +4,7 @@ ___ run_length_encoding(s
 	res    # list
 	char s[0]
 	count 1
-	___ c __ s[1:]:
+	___ c __ s 1|
 		__ char __ c:
 			count += 1
 		____

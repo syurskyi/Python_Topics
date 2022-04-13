@@ -43,7 +43,7 @@ ___ validate_ocr_numbers(ocr_numbers: L..[s..]
 
 ___ validate_numbers(numbers: s..
     __ n.. numbers.i..
-        r.. V...(numbers + ' is not a digit')
+        r.. V... ? + ' is not a digit')
 
 
 ___ _convert_ocr_line(ocr_numbers: L..[s..]) __ s..:
@@ -52,7 +52,7 @@ ___ _convert_ocr_line(ocr_numbers: L..[s..]) __ s..:
         s..(OCR_NUMBERS.i.. ocr __ ocr __ OCR_NUMBERS ____ '?'
         ___ ocr __ ocrs_split
     ]
-    r.. ''.j..(numbers)
+    r.. ''.j.. ?)
 
 
 ___ number(ocr_numbers: L..[s..]) __ s..:

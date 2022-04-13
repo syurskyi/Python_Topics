@@ -5,7 +5,7 @@
 ___ breaking_records(score
     m.. m.. score[0]
     min_count max_count 0
-    ___ i __ score[1:]:
+    ___ i __ score 1|
         __ i > m..:
             max_count += 1
             m.. i

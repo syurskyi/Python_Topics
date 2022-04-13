@@ -40,7 +40,7 @@ c_ Groceries:
                 _items.p.. i)
                 _____
         ____
-            r.. IndexError _*{product} not in cart')
+            r.. I.. _*{product} not in cart')
         show()
 
     ___ s..  s..
@@ -54,7 +54,7 @@ c_ Groceries:
     ___ due
         r.. s..(item.price ___ item __ self)
 
-    ___ __len__
+    ___ -l
         """The len of cart"""
         r.. l..(_items)
 
@@ -91,7 +91,7 @@ ___ handle_args(args=N.., cart_ N..
        - If cart not provided make a Groceries object with 0 or more items
        Modifies the cart object, no return"""
     __ args __ N..
-        parser create_parser()
+        parser ?
         args vars(parser.parse_args
 
     __ cart __ N..

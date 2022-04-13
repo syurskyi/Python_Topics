@@ -9,7 +9,7 @@ c_ Account:
     ___ balance
         r.. start_balance + s..(_transactions)
 
-    ___ __len__
+    ___ -l
         r.. l..(_transactions)
 
     ___ __lt__  other

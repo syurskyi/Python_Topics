@@ -23,7 +23,7 @@ c_ Solution:
         __ s[0] !_ " ":
             ret 1
         prev s[0]
-        ___ c __ s[1:]:
+        ___ c __ s 1|
             __ c !_ " " a.. prev __ " ":
                 ret += 1
             prev c

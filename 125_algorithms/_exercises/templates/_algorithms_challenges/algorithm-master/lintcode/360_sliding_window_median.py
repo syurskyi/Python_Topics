@@ -7,7 +7,7 @@ c_ HashHeapqWithLazy:
         __deleted    # dict
         __size 0
 
-    ___ __len__
+    ___ -l
         r.. __size
 
     ___ __bool__

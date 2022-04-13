@@ -4,8 +4,8 @@ ___ BMI(users
         w.... pairCount < users:
                 pair raw_input()
                 numbers pair.s..(' ')
-                weight f__(numbers 0
-                height f__(numbers[1])
+                weight f__ ? 0
+                height f__ ?[1])
                 BMI f__(weight / (height * height
 
                 __ BMI < 18.5:

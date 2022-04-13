@@ -8,7 +8,7 @@ ___ common_languages(programmers
        of programming languages, return the common languages"""
     lang_list   [s..(lang_list) ___ lang_list __ programmers.v..
     return_set  lang_list[0]
-    ___ lang_set __ lang_list[1:]:
+    ___ lang_set __ lang_list 1|
         return_set  return_set.i.. lang_set)
     r.. return_set
 

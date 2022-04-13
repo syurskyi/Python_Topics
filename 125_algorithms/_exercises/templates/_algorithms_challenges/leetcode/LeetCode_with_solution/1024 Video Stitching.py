@@ -84,7 +84,7 @@ c_ Solution:
         __ prev_s > 0
             r.. F..
 
-        ___ _, _, s, e __ A[1:]:
+        ___ _, _, s, e __ A 1|
             __ s <_ prev_e a.. e > prev_e:
                 prev_e e
                 ret += 1

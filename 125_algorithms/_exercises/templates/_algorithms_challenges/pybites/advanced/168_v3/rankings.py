@@ -82,5 +82,5 @@ c_ Rankings:
         lowest lowest(count)
         r.. l..(z..(highest, lowest
 
-    ___ __len__
+    ___ -l
         r.. l..(ninja_list)

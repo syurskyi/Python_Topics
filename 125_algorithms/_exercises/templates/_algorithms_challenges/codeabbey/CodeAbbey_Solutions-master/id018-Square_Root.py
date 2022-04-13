@@ -1,6 +1,6 @@
 ___ sqRoot(numbers
     answer    # list
-    ___ number __ r..(numbers
+    ___ number __ r.. ?
         data  raw_input().s.. 
         value,runs  i..(data 0,i..(data[1])
         root  1.00

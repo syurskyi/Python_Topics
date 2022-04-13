@@ -68,6 +68,6 @@ c_ Solution:
         XOR O(n)
         """
         ret nums[0]
-        ___ e __ nums[1:]:
+        ___ e __ nums 1|
             ret ^= e
         r.. ret

@@ -3,14 +3,14 @@ ____ decimal _______ Decimal
 
 c_ IntList(l..
     ___ - , numbers
-        numbers _validate(numbers)
-        super().__init__(numbers)
+        numbers _validate ?)
+        super().__init__ ?)
 
     ___ _validate  numbers
-        __ isi..(numbers, (i.., f__, Decimal:
+        __ isi.. ?, (i.., f__, Decimal:
             numbers [numbers]
         numbers [i..(n) ___ n __ numbers __ r..(n, 0) __ i..(n)]
-        __ n.. isi..(numbers, i..) a.. a__(n.. isi..(x, i..) ___ x __ numbers
+        __ n.. isi.. ?, i..) a.. a__(n.. isi..(x, i..) ___ x __ numbers
             r.. T.. _*{__class__.__name__} can only operate with integer values')
         r.. numbers
 
@@ -30,13 +30,13 @@ c_ IntList(l..
         r.. (s..(elems[n // 2 - 1:n // 2 + 1]) / 2.0, elems[n // 2])[n % 2] __ n > 0 ____ N..
 
     ___ a..  numbers
-        _validate(numbers)
-        super().a..(numbers)
+        _validate ?)
+        super().a.. ?)
 
     ___ __add__  numbers
-        _validate(numbers)
-        r.. super().__add__(numbers)
+        _validate ?)
+        r.. super().__add__ ?)
 
     ___ __iadd__  numbers
-        _validate(numbers)
-        r.. super().__iadd__(numbers)
+        _validate ?)
+        r.. super().__iadd__ ?)

@@ -118,7 +118,7 @@ c_ Rankings:
         r.. h__.heappop(rankings)
 
 
-    ___ __len__
+    ___ -l
         r.. l..(rankings)
 
 

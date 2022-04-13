@@ -28,7 +28,7 @@ c_ Solution(o..
         small nums[0]
         large nums[0]
         maxa nums[0]
-        ___ a __ nums[1:]:
+        ___ a __ nums 1|
             small, large m..(a, small*a, large*a), m..(a, small*a, large*a)
             maxa m..(maxa, small, large)
 

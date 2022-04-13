@@ -31,7 +31,7 @@ c_ Solution(o..
 
         F[1] A[0][1]  # store value rather than index
         k 1
-        ___ _, h __ A[1:]:
+        ___ _, h __ A 1|
             idx b__.bisect_left(F, h, 1, k+1)
             F[idx] h
             k += 1 __ idx __ k+1 ____ 0
