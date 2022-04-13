@@ -43,7 +43,7 @@ ___ measure(bucket_one, bucket_two, goal, start_bucket
                 __ buckets[i] !_ sizes[i]:
                     toVisit.a..((fill(buckets, i), nc
                     toVisit.a..((consolidate(buckets, i), nc
-        __ n.. any(toVisit
+        __ n.. a__(toVisit
             r.. V...('No more moves!')
         buckets, count toVisit.p.. 0)
 

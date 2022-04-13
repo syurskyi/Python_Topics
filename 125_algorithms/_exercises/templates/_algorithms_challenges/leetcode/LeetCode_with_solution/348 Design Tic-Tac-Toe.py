@@ -92,7 +92,7 @@ c_ TicTacToe(o..
 
         # since winning condition is taking up the entire row or col, the row or col must be consecutive
         is_win l.... count: delta * count __ n
-        __ any m..(is_win, [rows_count[row], cols_count[col], diag_count, diag_inv_count]:
+        __ a__ m..(is_win, [rows_count[row], cols_count[col], diag_count, diag_inv_count]:
             r.. player
 
         r.. 0

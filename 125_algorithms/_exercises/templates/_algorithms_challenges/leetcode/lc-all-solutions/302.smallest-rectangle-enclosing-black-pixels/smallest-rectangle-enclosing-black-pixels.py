@@ -21,7 +21,7 @@ c_ Solution(o..
   ___ searchCols  image, i, j, top, bottom, opt
     w.... i < j:
       mid i + (j - i) / 2
-      __ any([image[k][mid] __ "1" ___ k __ r..(top, bottom)]) __ opt:
+      __ a__([image[k][mid] __ "1" ___ k __ r..(top, bottom)]) __ opt:
         j mid
       ____
         i mid + 1

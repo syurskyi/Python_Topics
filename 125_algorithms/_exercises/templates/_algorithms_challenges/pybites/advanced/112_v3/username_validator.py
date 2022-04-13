@@ -28,7 +28,7 @@ ___ parse_social_platforms_string
     result d..()
     plat __.f.. _ (\w+)\s+Min: (\d+)\s+Max: (\d+)\s+Can contain: ([^\r\n]+)', social_platforms)
     ___ p __ plat:
-        result[p[0]] Validator(r..(i..(p[1]), i..(p[2], __.c..(rf'^[{__.sub(r" ", "", p[3])}]*$'
+        result[p[0]] Validator(r..(i..(p[1]), i..(p[2], __.c..(rf'^[{__.sub _  ", "", p[3])}]*$'
     r.. result
 
 

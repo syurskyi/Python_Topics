@@ -25,4 +25,4 @@ c_ ZigzagIterator(o..
         r.. N..
     
     ___ hasNext
-        r.. any([x !   # list ___ x __ self.vec])
+        r.. a__([x !   # list ___ x __ self.vec])

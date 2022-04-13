@@ -104,7 +104,7 @@ c_ ParkingLot:
         :type vehicle: Vehicle
         :rtype: bool
         """
-        __ any(
+        __ a__(
             level.park_vehicle(vehicle)
             ___ level __ levels
 

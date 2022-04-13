@@ -8,7 +8,7 @@ c_ BirthdayDict(d..
     ___ __setitem__  name, birthday
         bday birthday.month, birthday.day
 
-        __ any([(v.month, v.day) __ bday ___ v __ v..
+        __ a__([(v.month, v.day) __ bday ___ v __ v..
             print(MSG.f..(name
 
         update({name: birthday})

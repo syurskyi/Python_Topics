@@ -37,7 +37,7 @@ ___ validate_ocr_numbers(ocr_numbers: L..[s..]
     __ l..(ocr_numbers) % OCR_HEIGHT:
         message 'numbers of rows is not a multiple of ' + s..(OCR_HEIGHT)
         r.. V...(message)
-    __ any(l..(line) !_ n_first_line ___ line __ ocr_numbers[1:]
+    __ a__(l..(line) !_ n_first_line ___ line __ ocr_numbers[1:]
         r.. V...('All lines must have the same length.')
 
 

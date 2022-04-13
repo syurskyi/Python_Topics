@@ -38,7 +38,7 @@ c_ Solution:
             ___ v __ r..(target + 1
                 d[i][v] d[i-1][v] + d[i-1][v-nums[i]]
 
-        r.. any(d[i][target] > 0 ___ i __ r..(l..(nums)))
+        r.. a__(d[i][target] > 0 ___ i __ r..(l..(nums)))
 
     ___ canPartition_TLE  nums
         """

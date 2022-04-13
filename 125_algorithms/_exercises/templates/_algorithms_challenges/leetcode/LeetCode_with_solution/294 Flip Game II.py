@@ -26,7 +26,7 @@ c_ Solution(o..
         r.. d[s]
 
     ___ canWin_oneline  s
-        r.. any(n.. canWin_oneline(s[:i]+"--"+s[i+2:]) ___ i __ x..(l..(s)-1) __ s[i:i+2] __ "++")
+        r.. a__(n.. canWin_oneline(s[:i]+"--"+s[i+2:]) ___ i __ x..(l..(s)-1) __ s[i:i+2] __ "++")
 
     ___ canWin_trivial  s
         """

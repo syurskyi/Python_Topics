@@ -3,8 +3,8 @@
 
 
 s input()
-print(any([char.i..() ___ char __ s]
-print(any([char.i.. ___ char __ s]
-print(any([char.i.. ___ char __ s]
-print(any([char.islower() ___ char __ s]
-print(any([char.isupper() ___ char __ s]
+print(a__([char.i..() ___ char __ s]
+print(a__([char.i.. ___ char __ s]
+print(a__([char.i.. ___ char __ s]
+print(a__([char.islower() ___ char __ s]
+print(a__([char.isupper() ___ char __ s]

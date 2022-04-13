@@ -63,7 +63,7 @@ c_ Solution2:
         i 0
 
         w.... right < n:
-            __ any((
+            __ a__((
                 x2day[i] < x2day[left],
                 x2day[i] <_ x2day[right],
             :

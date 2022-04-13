@@ -52,7 +52,7 @@ ___ get_talks_lt_twentyfour_min(videos
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
 
-    r.. [video ___ video __ videos __ ('H' n.. __ video.duration a.. i..(__.s..(r"(\d+)M",video.duration).group(1 < 24)]
+    r.. [video ___ video __ videos __ ('H' n.. __ video.duration a.. i..(__.s.. _ (\d+)M",video.duration).group(1 < 24)]
 
 
 __ _______ __ _______

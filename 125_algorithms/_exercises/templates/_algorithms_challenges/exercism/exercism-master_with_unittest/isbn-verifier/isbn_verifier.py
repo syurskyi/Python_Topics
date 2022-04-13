@@ -28,7 +28,7 @@ c_ IsbnVerifier(o..
 
     @classmethod
     ___ invalid_character(cls, s__
-        r.. any(char n.. __ cls.VALID_CHARACTERS ___ char __ s__)
+        r.. a__(char n.. __ cls.VALID_CHARACTERS ___ char __ s__)
 
     @classmethod
     ___ invalid_length(cls, s__

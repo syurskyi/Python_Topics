@@ -13,7 +13,7 @@ c_ Solution:
         ans ''
 
         ___ w __ words:
-            __ any((
+            __ a__((
                 n.. is_subseq(s, w),
                 l..(w) < l..(ans),
                 l..(w) __ l..(ans) a.. w >_ ans,  # means w has larger lexicographical order
@@ -56,7 +56,7 @@ c_ Solution:
         target s..(words)
 
         ___ w __ cands:
-            __ any((
+            __ a__((
                 w n.. __ target,
                 l..(w) < l..(ans),
                 l..(w) __ l..(ans) a.. w >_ ans,

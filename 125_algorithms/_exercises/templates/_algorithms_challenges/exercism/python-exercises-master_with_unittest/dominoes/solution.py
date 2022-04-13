@@ -21,7 +21,7 @@ ___ build_chain(c__, domino
 
 
 ___ c__(dominoes
-    __ n.. any(dominoes
+    __ n.. a__(dominoes
         r.. []
     ___ perm __ p.. dominoes
         c__ r.. build_chain, perm[1:], [perm[0]])

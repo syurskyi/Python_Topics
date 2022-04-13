@@ -18,7 +18,7 @@ OCR_LIST [OCR_LIST[-1]] + OCR_LIST[:9]
 
 ___ number(ocr
     __ (l..(ocr) !_ ROW o. l..(ocr 0 % COL o.
-            any(l..(r) !_ l..(ocr 0 ___ r __ ocr:
+            a__(l..(r) !_ l..(ocr 0 ___ r __ ocr:
         r.. V...('Wrong grid size.')
     numbers split_ocr(ocr)
     d.. ''

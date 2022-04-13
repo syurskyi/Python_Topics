@@ -23,7 +23,7 @@ c_ Solution:
             ____
                 r.. T..
 
-        r.. any(
+        r.. a__(
             matrix[mid // n][mid % n] __ target
             ___ mid __ (left, right)
         )

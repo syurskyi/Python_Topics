@@ -70,7 +70,7 @@ ___ filter_entries_by_tag(s.., entry
         r.. a..(s...l.. __ entry_tags ___ s.. __ splits)
     ____ '|' __ s..:
         splits s...s..('|')
-        r.. any(s...l.. __ entry_tags ___ s.. __ splits)
+        r.. a__(s...l.. __ entry_tags ___ s.. __ splits)
     ____
         r.. s...l.. __ entry_tags
 

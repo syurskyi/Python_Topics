@@ -26,7 +26,7 @@ c_ TwoSum(o..
         :type value: int
         :rtype: bool
         """
-        r.. any(
+        r.. a__(
             value-k __ hash_map a.. (value-k !_ k o. hash_map[k] > 1)
             ___ k __ hash_map
         )

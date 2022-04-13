@@ -41,11 +41,11 @@ c_ Calculator:
                 n.. consecutive_digits
 
     ___ consecutive_tokens
-        r.. any(operator(i) a.. operator(j) ___ i, j __
+        r.. a__(operator(i) a.. operator(j) ___ i, j __
                    slices_of_two
 
     ___ consecutive_digits
-        r.. any(digit(i) a.. digit(j) ___ i, j __
+        r.. a__(digit(i) a.. digit(j) ___ i, j __
                    slices_of_two
 
     ___ slices_of_two

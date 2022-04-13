@@ -11,7 +11,7 @@ ___ calculate_score(scores
        total score only taking into account >= MIN_SCORE
        (= eyes of the dice roll).
     """
-    __ any(s n.. __ DICE_VALUES ___ s __ scores
+    __ a__(s n.. __ DICE_VALUES ___ s __ scores
         r.. V...()
     r.. s..(s ___ s __ scores __ s >_ MIN_SCORE)
 
@@ -20,6 +20,6 @@ ___ get_winner(players
     """Given a list of Player namedtuples return the player
        with the highest score using calculate_score.
     """
-    __ any(l..(players[0].scores) !_ l..(s.scores) ___ s __ players[1:]
+    __ a__(l..(players[0].scores) !_ l..(s.scores) ___ s __ players[1:]
         r.. V...()
     r.. s..(players, k.._l.... x: calculate_score(x.scores[-1]

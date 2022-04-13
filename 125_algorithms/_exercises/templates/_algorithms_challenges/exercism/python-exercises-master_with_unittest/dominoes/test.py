@@ -100,7 +100,7 @@ c_ DominoesTest(unittest.TestCase
         msg 'There should be a chain for {}'.f..(input_dominoes)
         assertIsNotNone(output_chain, msg)
         assert_same_dominoes(input_dominoes, output_chain)
-        __ n.. any(output_chain
+        __ n.. a__(output_chain
             r..
         assert_consecutive_dominoes_match(output_chain)
         assert_dominoes_at_ends_match(output_chain)

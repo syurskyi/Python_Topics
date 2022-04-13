@@ -20,7 +20,7 @@ ___ can_attack(pos1, pos2
 
 
 ___ validate_position(pos1, pos2
-    __ any(x < 0 o. x > 7 ___ x __ pos1 + pos2
+    __ a__(x < 0 o. x > 7 ___ x __ pos1 + pos2
         r.. V...('Invalid queen position: queen out of the board')
     __ pos1 __ pos2:
         r.. V...('Invalid queen position: both queens in the same '

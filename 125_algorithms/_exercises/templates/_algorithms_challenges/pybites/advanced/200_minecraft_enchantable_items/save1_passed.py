@@ -191,7 +191,7 @@ ___ split_title(title
     :param title: String of the enchantment title
     :return: Tuple(id_names, names)
     """
-    pattern c..(r"(.*)\((.*)\)")
+    pattern c.. _ (.*)\((.*)\)")
     n.., id_names s..(pattern, title).groups()
     r.. id_names, n..
 

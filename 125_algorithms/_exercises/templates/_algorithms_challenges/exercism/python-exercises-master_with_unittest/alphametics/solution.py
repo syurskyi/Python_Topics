@@ -2,7 +2,7 @@ ____ i.. _______ combinations, permutations
 
 
 ___ check_leading_zeros(*numbers
-    r.. any(n[0] __ '0' ___ n __ numbers)
+    r.. a__(n[0] __ '0' ___ n __ numbers)
 
 
 ___ test_equation(puzzle, substitutions

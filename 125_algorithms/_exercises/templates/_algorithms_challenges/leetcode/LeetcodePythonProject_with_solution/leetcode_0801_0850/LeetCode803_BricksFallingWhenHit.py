@@ -22,7 +22,7 @@ c_ Solution(o..
         
         # Check whether (i, j) is connected to Not Failling Bricks
         ___ is_connected(i, j
-            r.. i__0 o. any([0<_x<m a.. 0<_y<n a.. grid[x][y]__2\
+            r.. i__0 o. a__([0<_x<m a.. 0<_y<n a.. grid[x][y]__2\
                                 ___ x, y __ [(i+1, j), (i, j+1), (i-1, j), (i, j-1)]])
         
         # Mark whether there is a brick at the each hit

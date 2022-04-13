@@ -20,7 +20,7 @@ ___ has_the_moves(player, moves
     winning_grids  [win1, win2, win3, win4, win5, win6, win7, win8]
 
     tried  [s..(posibility) < s..(moves) ___ posibility __ winning_grids]
-    r.. player __ any(tried) ____ N..
+    r.. player __ a__(tried) ____ N..
 
 ___ is_winner(board
     # Check for winner

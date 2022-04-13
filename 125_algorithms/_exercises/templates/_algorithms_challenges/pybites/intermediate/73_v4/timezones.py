@@ -7,7 +7,7 @@ TIMEZONES s..(pytz.all_timezones)
 ___ within_schedule(utc, *timezones
     """Receive a utc datetime and one or more timezones and check if
        they are all within schedule (MEETING_HOURS)"""
-    __ any([tz n.. __ TIMEZONES ___ tz __ timezones]
+    __ a__([tz n.. __ TIMEZONES ___ tz __ timezones]
         r.. V...
 
     localized [pytz.utc.localize(utc).astimezone(pytz.timezone(tz

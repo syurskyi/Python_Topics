@@ -36,7 +36,7 @@ c_ CircularBuffer(o..
         write_point (write_point + 1) % l..(buffer)
 
     ___ read
-        __ n.. any(buffer
+        __ n.. a__(buffer
             r.. BufferEmptyException
         data chr(buffer[read_point])
         buffer[read_point] 0

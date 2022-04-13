@@ -68,7 +68,7 @@ ___ filter_entries_by_tag(s.., entry
         r.. s.. __ tag_list
     __ __.s.. _ \|', s..
         s.. __.s.. _ \|', s..)
-        r.. any([item __ tag_list ___ item __ s..])
+        r.. a__([item __ tag_list ___ item __ s..])
     __ __.s.. _ \&', s..
         s.. __.s.. _ \&', s..)
         r.. a..([item __ tag_list ___ item __ s..])

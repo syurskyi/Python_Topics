@@ -4,7 +4,7 @@ amount_values i..(input
 results    # list
 
 ___ is_matching(word
-    word __.sub(r"[^()[\]{}<>]","",word)
+    word __.sub _ [^()[\]{}<>]","",word)
 
     open_brackets ["[","(","{","<"]
     close_brackets ["]",")","}",">"]

@@ -4,4 +4,4 @@ ___ gen_key(parts=4, chars_per_part=8
     ___ part __ r..(parts
         ___ char __ r..(chars_per_part
             password += s__.c..(string_alphabet)
-    r.. '-'.j..(password[i:i+parts] ___ i __ r..(0, l..(password), parts
+    r.. '-'.j..(password[i:i+parts] ___ i __ r..(0, l.. ?, parts

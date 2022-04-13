@@ -37,7 +37,7 @@ c_ Solution(o..
         ___ v __ c.v..
             ret += (v/2) * 2
 
-        __ any m..(l.... x: x % 2 __ 1, c.v..:
+        __ a__ m..(l.... x: x % 2 __ 1, c.v..:
             ret += 1
 
         r.. ret

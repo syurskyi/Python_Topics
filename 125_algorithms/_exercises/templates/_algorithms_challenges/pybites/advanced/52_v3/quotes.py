@@ -28,7 +28,7 @@ ___ _get_quote(qid
 
 ___ _quote_exists(existing_quote
     """Recommended helper"""
-    r.. any(q 'quote'  __ existing_quote 'quote'  a.. q 'movie'  __ existing_quote 'movie'  ___ q __ quotes)
+    r.. a__(q 'quote'  __ existing_quote 'quote'  a.. q 'movie'  __ existing_quote 'movie'  ___ q __ quotes)
 
 
 ___ _new_id

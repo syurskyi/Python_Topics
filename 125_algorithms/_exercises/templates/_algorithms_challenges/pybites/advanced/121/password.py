@@ -5,7 +5,7 @@ ___ password_complexity(password
     """Input: password string, calculate score according to 5 criteria in bite,
        return: score int"""
     score 0
-    __ l..(password) >_ 8:
+    __ l.. ? >_ 8:
         score += 1
         first_eight password[:8]
         __ n.. __.s.. _ (.)\1',password
@@ -31,6 +31,6 @@ ___ password_complexity(password
 __ _______ __ _______
     password '123$Abc1'
 
-    password_complexity(password)
+    password_complexity ?
 
 

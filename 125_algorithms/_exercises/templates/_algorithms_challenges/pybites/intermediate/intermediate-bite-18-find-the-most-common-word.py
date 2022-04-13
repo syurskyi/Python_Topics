@@ -52,10 +52,10 @@ ___ my_solution_get_harry_most_common_word
     ___ line __ f2:
         ___ word __ line.s.. :
             print(word)
-            p word.s..(s__.punctuation).l..
+            p word.s..(s__.p...l..
 
             __ l..(p) > 0 a.. p n.. __ stopwords:
-                filtered.a..(word.s..(s__.punctuation).l..
+                filtered.a..(word.s..(s__.p...l..
 
     counter C..(filtered)
     r.. counter.most_common(1)[0]

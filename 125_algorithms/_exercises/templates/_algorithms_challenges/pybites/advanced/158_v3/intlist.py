@@ -10,7 +10,7 @@ c_ IntList(l..
         __ isi..(numbers, (i.., f__, Decimal:
             numbers [numbers]
         numbers [i..(n) ___ n __ numbers __ r..(n, 0) __ i..(n)]
-        __ n.. isi..(numbers, i..) a.. any(n.. isi..(x, i..) ___ x __ numbers
+        __ n.. isi..(numbers, i..) a.. a__(n.. isi..(x, i..) ___ x __ numbers
             r.. T.. _*{__class__.__name__} can only operate with integer values')
         r.. numbers
 

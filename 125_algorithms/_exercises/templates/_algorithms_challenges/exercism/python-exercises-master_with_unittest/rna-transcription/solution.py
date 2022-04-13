@@ -12,7 +12,7 @@ DNA_TO_RNA maketrans(DNA_CHARS, 'UCGA')
 
 ___ to_rna(dna_strand
     valid_chars s..(DNA_CHARS)
-    __ any(char n.. __ valid_chars ___ char __ dna_strand
+    __ a__(char n.. __ valid_chars ___ char __ dna_strand
         r.. ''
 
     r.. dna_strand.translate(DNA_TO_RNA)

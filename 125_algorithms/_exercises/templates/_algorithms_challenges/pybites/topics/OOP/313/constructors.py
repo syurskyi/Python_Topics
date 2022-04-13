@@ -20,7 +20,7 @@ c_ Domain:
 
     @classmethod
     ___ parse_url(cls, url
-        url_domain __.f..(r"(?:^https?:\/\/([^\/]+)(?:[\/,]|$)|^(.*)$)", url)
+        url_domain __.f.. _ (?:^https?:\/\/([^\/]+)(?:[\/,]|$)|^(.*)$)", url)
         r.. Domain(url_domain 0 0 )
 
     @classmethod

@@ -30,7 +30,7 @@ c_ Solution:
                     r.. F..
                 points[x, y] |= val
 
-        __ any(
+        __ a__(
             # only check the mid-points
             val n.. __ (3, 6, 9, 12, 15)
             ___ (x, y), val __ points.i..

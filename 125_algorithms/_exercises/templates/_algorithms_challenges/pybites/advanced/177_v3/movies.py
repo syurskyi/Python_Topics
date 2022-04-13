@@ -23,7 +23,7 @@ ___ explode(df, lst_cols, fill_value='', preserve_index=F..
         index=idx)
            .assign(**{col: np.concatenate(df.loc[lens > 0, col].values)
                       ___ col __ lst_cols}
-    __ (lens __ 0).any
+    __ (lens __ 0).a__
         res (res.a..(df.loc[lens __ 0, idx_cols], s..=F..)
                .fillna(fill_value
     res res.sort_index()

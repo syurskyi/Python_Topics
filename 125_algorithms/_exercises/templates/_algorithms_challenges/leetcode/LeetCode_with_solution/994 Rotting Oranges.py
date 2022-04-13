@@ -64,7 +64,7 @@ c_ Solution:
                         cur_q.a..((I, J
             q cur_q
 
-        has_fresh any(
+        has_fresh a__(
             grid[i][j] __ 1
             ___ i __ r..(m)
             ___ j __ r..(n)

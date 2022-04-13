@@ -32,8 +32,8 @@ ___ verify_board(inp
     __ cset - s..('+- *|'
         r.. V...("Invalid board")
     # Borders not as expected
-    __ any(inp[i1] !_ '+' + '-' * (rowlen - 2) + '+'
-           ___ i1 __ [0, -1]) o. any(inp[i1][i2] !_ '|'
+    __ a__(inp[i1] !_ '+' + '-' * (rowlen - 2) + '+'
+           ___ i1 __ [0, -1]) o. a__(inp[i1][i2] !_ '|'
                                      ___ i1 __ r..(1, collen - 1)
                                      ___ i2 __ [0, -1]
         r.. V...("Invalid board")

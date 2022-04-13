@@ -12,4 +12,4 @@ c_ Solution(o..
       r.. s..(
         [dp[mid] - dp[start] ___ mid __ r..(start + 1, end) __ dp[mid] - dp[start] __ dp[end + 1] - dp[mid + 1]])
 
-    r.. any(s..(0, i - 1) & s..(i + 1, l..(nums) - 1) ___ i __ r..(3, l..(nums) - 3
+    r.. a__(s..(0, i - 1) & s..(i + 1, l..(nums) - 1) ___ i __ r..(3, l..(nums) - 3

@@ -45,7 +45,7 @@ ___ filter_entries_by_tag(s.., entry
     __ '&' __ s..:
         r.. a..(tag.l.. __ entry.tags ___ tag __ s...s..('&'
     __ '|' __ s..:
-        r.. any(tag.l.. __ entry.tags ___ tag __ s...s..('|'
+        r.. a__(tag.l.. __ entry.tags ___ tag __ s...s..('|'
     r.. s...l.. __ entry.tags
 
 

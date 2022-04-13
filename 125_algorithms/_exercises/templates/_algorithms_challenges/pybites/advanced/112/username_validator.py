@@ -30,7 +30,7 @@ ___ parse_social_platforms_string
     platform_to_validator    # dict
     
     ___ platform __ platforms:
-        result __.s..(r"(.+)\n.*Min: (\d+)\n.*Max: (\d+)\n.+: (.+)",platform,flags=__.M)
+        result __.s.. _ (.+)\n.*Min: (\d+)\n.*Max: (\d+)\n.+: (.+)",platform,flags=__.M)
         
         values    # list
         ___ i __ r..(1,5

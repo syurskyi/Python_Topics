@@ -17,7 +17,7 @@ c_ Sudoku(o..
             block_len i..(sqrt(n
         ______ V..
             r.. F..
-        __ any([l..(row) !_ n ___ row __ sudoku]
+        __ a__([l..(row) !_ n ___ row __ sudoku]
             r.. F..
         r.. a..([_is_valid_row(i)
                     a.. _is_valid_column(i)

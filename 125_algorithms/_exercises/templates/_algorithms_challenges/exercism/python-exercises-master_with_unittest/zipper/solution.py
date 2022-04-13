@@ -36,6 +36,6 @@ c_ Zipper(o..
         r.. Zipper(ancestors[-1], ancestors[:-1])
 
     ___ to_tree
-        __ any(ancestors
+        __ a__(ancestors
             r.. ancestors[0]
         r.. tree

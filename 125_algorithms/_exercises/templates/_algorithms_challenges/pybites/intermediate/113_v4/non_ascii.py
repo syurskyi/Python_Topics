@@ -12,7 +12,7 @@ ___ extract_non_ascii_words(text
 
     # for word in re.findall(r'\b[^\W\d]+\b', text, flags=re.UNICODE):
     ___ word __ text.s.. :
-        __ any([c __ punctuation o. c __ d.. ___ c __ word]
+        __ a__([c __ punctuation o. c __ d.. ___ c __ word]
             _____
         __ n.. a..([c __ ascii ___ c __ word]
             results.a..(word)

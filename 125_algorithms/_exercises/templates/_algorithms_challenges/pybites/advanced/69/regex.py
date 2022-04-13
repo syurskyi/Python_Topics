@@ -63,7 +63,7 @@ ___ convert_emea_date_to_amer_date(date
 
 
     ___
-        dates __.f..(r"(\d\d)/(\d\d)/(\d{4})",date)[0]
+        dates __.f.. _ (\d\d)/(\d\d)/(\d{4})",date)[0]
     ______:
         r.. date
     ____

@@ -5,11 +5,11 @@ c_ Solution(o..
     :rtype: int
     """
     complexBal 3
-    __ any(c __ s__.lowercase ___ c __ s
+    __ a__(c __ s__.lowercase ___ c __ s
       complexBal -_ 1
-    __ any(c __ s__.uppercase ___ c __ s
+    __ a__(c __ s__.uppercase ___ c __ s
       complexBal -_ 1
-    __ any(c.i.. ___ c __ s
+    __ a__(c.i.. ___ c __ s
       complexBal -_ 1
 
     one 0

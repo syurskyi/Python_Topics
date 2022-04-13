@@ -24,7 +24,7 @@ ___ evaluate(input_data
         defines[key] values
     stack    # list
     input_data input_data[-1].s..
-    w.... any(input_data
+    w.... a__(input_data
         word input_data.p.. 0).l..
         ___
             __ is_integer(word

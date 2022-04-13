@@ -34,9 +34,9 @@ c_ Solution:
         :type: input
         :rtype: list[]
         """
-        input_lst __.s..(r"(\D)", input)  # capturing parentheses
-        nums m.. i.., f.. l.... x: __.m..(r"\d+", x), input_lst
-        ops f.. l.... x: __.m..(r"\D", x), input_lst)
+        input_lst __.s.. _ (\D)", input)  # capturing parentheses
+        nums m.. i.., f.. l.... x: __.m.. _ \d+", x), input_lst
+        ops f.. l.... x: __.m.. _ \D", x), input_lst)
         ret dfs_eval(nums, ops)
         r.. ret
 

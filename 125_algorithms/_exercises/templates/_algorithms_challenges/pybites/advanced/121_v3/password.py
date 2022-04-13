@@ -21,7 +21,7 @@ ___ password_complexity(password: s..
         score += 1
     __ 0 < spec:
         score += 1
-    __ l..(password) >_ 8:
+    __ l.. ? >_ 8:
         score += 1
         __ n.. __.s.. _ (.)\1', password
             score += 1
