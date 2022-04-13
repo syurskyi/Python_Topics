@@ -1,13 +1,13 @@
 _______ p__
 
-____ uno _______ create_uno_deck, SUITS, UnoCard
+____ uno _______ c.. S.. U..
 
 
-___ _count_suits(deck, suit
-    r.. l..([card ___ card __ deck __ card.suit __ suit])
+___ _count_suits deck suit
+    r.. l.. card ___ ? __ deck __ ?.s.. __ ?
 
 
-___ _count_suitcard(deck, suit, name
+___ _count_suitcard deck suit, name
     r.. s..(1 ___ card __ deck __ card.suit __ suit
                a.. s..(card.name) __ name)
 
@@ -33,8 +33,8 @@ ___ test_create_uno_deck_type(deck
     ('Blue', 25),
     (N.., 8),  # wild cards don't have an associated suit
 ])
-___ test_create_uno_deck_suit_distribution(deck, suit, count
-    ... _count_suits(deck, suit) __ count
+___ test_create_uno_deck_suit_distribution deck suit, count
+    ... _count_suits deck suit) __ count
 
 
 ?p__.m__.p.("name, count", [
@@ -44,4 +44,4 @@ ___ test_create_uno_deck_suit_distribution(deck, suit, count
 ])
 ___ test_create_uno_deck_suit_cards(deck, name, count
     ___ suit __ SUITS:
-        _count_suitcard(deck, suit, name) __ count
+        _count_suitcard deck suit, name) __ count
