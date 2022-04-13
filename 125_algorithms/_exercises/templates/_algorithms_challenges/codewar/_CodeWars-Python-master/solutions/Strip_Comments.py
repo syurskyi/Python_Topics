@@ -9,7 +9,7 @@ ___ solution(s__, markers
     lines s__.s..('\n')
     ___ i, line __ e..(lines
         ___ marker __ markers:
-            index line.find(marker)
+            index line.f.. marker)
             __ index !_ -1:
                 line line[:index]
         lines[i] line.r..(' ')

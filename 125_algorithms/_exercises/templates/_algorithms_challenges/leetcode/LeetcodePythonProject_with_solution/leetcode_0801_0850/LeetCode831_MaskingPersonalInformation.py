@@ -13,7 +13,7 @@ c_ Solution(o..
         s S
         __ __.m..('^[a-z|A-Z]{2,}@[a-z|A-Z]{2,}.[a-z|A-Z]{2,}$', s
             s s.l..
-            ind s.find('@')
+            ind s.f.. '@')
             name s[:ind]
             mail s[ind:]
             r.. name[0]+'*****'+name[-1]+mail

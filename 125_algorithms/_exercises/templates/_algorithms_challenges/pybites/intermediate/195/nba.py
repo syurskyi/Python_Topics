@@ -63,7 +63,7 @@ ___ player_with_max_points_per_game
             MAX(CAST(avg_points AS INT)) AS points
         FROM players
         """)
-    r.. next(cursor)[0]
+    r.. next(cursor 0
 
 
 ___ number_of_players_from_duke
@@ -76,7 +76,7 @@ ___ number_of_players_from_duke
         WHERE college = 'Duke University'
         """
     )
-    r.. next(cursor)[0]
+    r.. next(cursor 0
 
 
 ___ avg_years_active_players_stanford
@@ -90,7 +90,7 @@ ___ avg_years_active_players_stanford
         WHERE college = 'Stanford University'
         """
     )
-    r.. next(cursor)[0]
+    r.. next(cursor 0
 
 
 ___ year_with_most_new_players

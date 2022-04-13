@@ -57,4 +57,4 @@ ___ get_talks_lt_twentyfour_min(videos
 
 __ _______ __ _______
 
-    print(load_pycon_data()[0].duration)
+    print(load_pycon_data( 0.duration)

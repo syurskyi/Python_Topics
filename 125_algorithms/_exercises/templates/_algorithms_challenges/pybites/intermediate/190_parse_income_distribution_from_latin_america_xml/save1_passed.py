@@ -1,7 +1,7 @@
 _______ __
 ____ p.. _______ P..
 ____ u__.r.. _______ u..
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 ____ c.. _______ d..
 
 # import the countries xml file
@@ -26,13 +26,13 @@ ___ get_income_distribution(___=countries
     w__ o.. countries, _ __ f:
         contents f.r..
 
-    soup BeautifulSoup(contents, features='html.parser')
-    table soup.find_all('wb:country')
+    soup B..(contents, features='html.parser')
+    table ?.f.. 'wb:country')
     d d.. l..
 
     ___ tr __ table:
-        name tr.find('wb:name').text
-        income tr.find('wb:incomelevel').text
+        name tr.f.. 'wb:name').text
+        income tr.f.. 'wb:incomelevel').text
         d[income].a..(name)
 
     r.. d..(s..(d.i.., k.._l.... item: item[1]

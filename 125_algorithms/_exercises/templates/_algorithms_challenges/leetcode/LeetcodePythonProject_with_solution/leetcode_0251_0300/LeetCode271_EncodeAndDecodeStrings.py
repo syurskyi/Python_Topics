@@ -40,7 +40,7 @@ c_ Codec(o..
         result    # list
         i 0
         w.... i < l..(s
-            j s.find(':', i)
+            j s.f.. ':', i)
             i j+1+i..(s[i:j])
             result.a..(s[j+1:i])
         r.. result

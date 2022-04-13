@@ -14,7 +14,7 @@ ___ class_rosters(input_file
             __ l..(row_class_check) > 2:
                 student_id row_class_check[0]
                 ___ class_a __ row_class_check[2:]:
-                    class_name class_a.s..(" ")[0]
+                    class_name class_a.s..(" " 0
                     class_assignments.a..(f"{class_name},2020,{student_id}")
     r.. class_assignments
 

@@ -6,7 +6,7 @@ ____ __ _______ c.., s..
 ____ t___ _______ A.., DefaultDict, L..
 ____ u__.r.. _______ u..
 
-____ bs4 _______ BeautifulSoup __ Soup
+____ ___ _______ B.. __ S..
 
 out_dir "/tmp"
 html_file f"{out_dir}/enchantment_list_pc.html"
@@ -80,10 +80,10 @@ ___ enchantable_items(soup
     :param soup: BeautifulSoup object
     :return: List of enchantable items lists
     """
-    table soup.find("table", {"id": "minecraft_items"})
+    table ?.f.. "table", {"id": "minecraft_items"})
     items [
         clean_up_names(img["data-src"].s..("/")[-1]).s..
-        ___ img __ table.find_all("img")
+        ___ img __ table.f.. "img")
     ]
 
     r.. items
@@ -154,9 +154,9 @@ ___ get_soup(file=HTML_FILE
             u..(URL, HTML_FILE)
 
         w__ file.o.. ) __ html_source:
-            soup Soup(html_source, "html.parser")
+            soup S..(html_source, "html.parser")
     ____
-        soup Soup(file, "html.parser")
+        soup S..(file, "html.parser")
 
     r.. soup
 
@@ -176,9 +176,9 @@ ___ parse_html(soup
     :param soup: BeautifulSoup object
     :return: List of the rows that make up the table
     """
-    table soup.find("table", {"id": "minecraft_items"})
+    table ?.f.. "table", {"id": "minecraft_items"})
     data [
-        [td.get_text() ___ td __ row.find_all("td")] ___ row __ table.find_all("tr")
+        [td.g..  ___ td __ row.f.. "td")] ___ row __ table.f.. "tr")
     ]
 
     r.. data[1:]

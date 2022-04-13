@@ -2,7 +2,7 @@ ____ c.. _______ d..
 _______ __
 ____ u__.r.. _______ u..
 ____ d__ _______ d__
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 
 
 # prep data
@@ -27,10 +27,10 @@ ___ _parse_date(date: s..
 
 ___ _get_table(content=content) __ l..:
     """returns the cleaned table with datetimes for the dates"""
-    soup BeautifulSoup(content, 'html.parser')
-    raw_table soup.find('table', {'class': 'list-table'})
-    table [[c.get_text().s.. ___ c __ r.find_all('td')]
-             ___ r __ raw_table.find_all('tr')]
+    soup B..(content, 'html.parser')
+    raw_table ?.f.. 'table', {'class': 'list-table'})
+    table [[c.g.. .s.. ___ c __ r.f.. 'td')]
+             ___ r __ raw_table.f.. 'tr')]
     table.p.. 0)                # remove header
     ___ row __ table:
         row[1] _parse_date(row[1])

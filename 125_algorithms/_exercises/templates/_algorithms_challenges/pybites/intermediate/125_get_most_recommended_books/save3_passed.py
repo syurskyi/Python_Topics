@@ -1,5 +1,5 @@
 ____ c.. _______ C..
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 _______ r__
 _______ __
 
@@ -26,11 +26,11 @@ ___ get_top_books(content_ N..
     __ content __ N..
         content load_page()
 
-    soup BeautifulSoup(content, 'html.parser')
-    right_table soup.find('div', {'class': 'entry-content'})
+    soup B..(content, 'html.parser')
+    right_table ?.f.. 'div', {'class': 'entry-content'})
 
     books [row.text.s..
-             ___ row __ right_table.find_all(
+             ___ row __ right_table.f.. 
             'a', href=__.c..(AMAZON]
     c C..(books)
 

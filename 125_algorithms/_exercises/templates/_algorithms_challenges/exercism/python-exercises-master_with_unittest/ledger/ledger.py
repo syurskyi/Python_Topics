@@ -12,7 +12,7 @@ c_ LedgerEntry(o..
 ___ create_entry(date, description, change
     entry LedgerEntry()
     entry.date d__.s..(date, '_Y-%m-_d')
-    entry.description description
+    entry.d.. description
     entry.change change
     r.. entry
 
@@ -53,7 +53,7 @@ ___ format_entries(currency, locale, entries
                 __ (
                     entry.date __ min_entry.date a..
                     entry.change __ min_entry.change a..
-                    entry.description < min_entry.description
+                    entry.d.. < min_entry.d..
 
                     min_entry_index i
                     _____
@@ -83,14 +83,14 @@ ___ format_entries(currency, locale, entries
 
             # Write entry description to table
             # Truncate if necessary
-            __ l..(entry.description) > 25:
+            __ l..(entry.d..) > 25:
                 ___ i __ r..(22
-                    table += entry.description[i]
+                    table += entry.d..[i]
                 table += '...'
             ____
                 ___ i __ r..(25
-                    __ l..(entry.description) > i:
-                        table += entry.description[i]
+                    __ l..(entry.d..) > i:
+                        table += entry.d..[i]
                     ____
                         table += ' '
             table += ' | '
@@ -196,7 +196,7 @@ ___ format_entries(currency, locale, entries
                 __ (
                     entry.date __ min_entry.date a..
                     entry.change __ min_entry.change a..
-                    entry.description < min_entry.description
+                    entry.d.. < min_entry.d..
 
                     min_entry_index i
                     _____
@@ -226,14 +226,14 @@ ___ format_entries(currency, locale, entries
 
             # Write entry description to table
             # Truncate if necessary
-            __ l..(entry.description) > 25:
+            __ l..(entry.d..) > 25:
                 ___ i __ r..(22
-                    table += entry.description[i]
+                    table += entry.d..[i]
                 table += '...'
             ____
                 ___ i __ r..(25
-                    __ l..(entry.description) > i:
-                        table += entry.description[i]
+                    __ l..(entry.d..) > i:
+                        table += entry.d..[i]
                     ____
                         table += ' '
             table += ' | '

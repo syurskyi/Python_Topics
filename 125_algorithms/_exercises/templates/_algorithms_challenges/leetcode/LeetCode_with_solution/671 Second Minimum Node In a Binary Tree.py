@@ -41,7 +41,7 @@ c_ TreeNode:
 
 c_ Solution:
     ___ findSecondMinimumValue  root: TreeNode) __ i..:
-        ret find(root)
+        ret f.. root)
         r.. -1 __ ret __ f__('inf') ____ ret
 
     ___ find  root: TreeNode) __ i..:
@@ -53,12 +53,12 @@ c_ Solution:
 
         __ root.left a.. root.right:
             __ root.left.val __ root.val:
-                left find(root.left)
+                left f.. root.left)
             ____
                 left root.left.val
 
             __ root.right.val __ root.val:
-                right find(root.right)
+                right f.. root.right)
             ____
                 right root.right.val
 

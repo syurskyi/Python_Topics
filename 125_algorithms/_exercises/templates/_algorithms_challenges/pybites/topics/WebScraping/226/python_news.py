@@ -1,6 +1,6 @@
 ____ c.. _______ n..
 
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 _______ r__
 
 # feed = https://news.python.sc/, to get predictable results we cached
@@ -15,7 +15,7 @@ ___ _create_soup_obj(url
     """Need utf-8 to properly parse emojis"""
     resp r__.g.. url)
     resp.encoding "utf-8"
-    r.. BeautifulSoup(resp.text, "html.parser")
+    r.. B..(resp.text, "html.parser")
 
 
 ___ get_top_titles(url, top=5
@@ -26,11 +26,11 @@ ___ get_top_titles(url, top=5
     soup _create_soup_obj(url)
     # your code ...
     title_list    # list
-    news_all soup.find_all('span', {'class': 'title'})
-    news_points_all soup.find_all('span', {'class': 'controls'})
+    news_all ?.f.. 'span', {'class': 'title'})
+    news_points_all ?.f.. 'span', {'class': 'controls'})
     ___ i __ r..(l..(news_all:
         meta news_points_all[i].span.text.s...s..
-        title_list.a..(Entry(news_all[i].get_text().s.., i..(meta 0, i..(meta[-2])))
+        title_list.a..(Entry(news_all[i].g.. .s.., i..(meta 0, i..(meta[-2])))
     title_list s..(title_list, k.._l.... x: (x.points, x.comments), r.._T..
     r.. [title_list[i] ___ i __ r..(top)]
 

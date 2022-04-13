@@ -1,4 +1,4 @@
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 _______ __
 # source: https://www.virgin.com/richard-branson/my-top-10-quotes-living-life-better
 HTML """<!DOCTYPE html>
@@ -28,13 +28,13 @@ HTML """<!DOCTYPE html>
 
 ___ extract_quotes(html: s.. HTML) __ d..:
     """See instructions in the Bite description"""
-    soup BeautifulSoup(html)
+    soup B..(html)
 
     author_to_quotes    # dict
 
-    quotes soup.find_all('p')
+    quotes ?.f.. 'p')
     ___ quote __ quotes:
-        quote_text quote.getText(s..=T..)
+        quote_text quote.g.. s..=T..)
         m.. __.s.. _ "(.+)"',quote_text)
         __ m..:
             a m...group(1)

@@ -25,15 +25,15 @@ c_ Solution:
         result    # dict
         root_label ''
         ___ node __ nodes:
-            root_label find(node.label)
+            root_label f.. node.label)
             __ root_label n.. __ result:
                 result[root_label]    # list
             result[root_label].a..(node.label)
         r.. result.v..
 
     ___ connect  a, b
-        root_a find(a)
-        root_b find(b)
+        root_a f.. a)
+        root_b f.. b)
         __ root_a __ n.. root_b:
             nodes[root_a] root_b
 
@@ -43,5 +43,5 @@ c_ Solution:
             r.. a
         ____ nodes[a] __ a:
             r.. a
-        nodes[a] find(nodes[a])
+        nodes[a] f.. nodes[a])
         r.. nodes[a]

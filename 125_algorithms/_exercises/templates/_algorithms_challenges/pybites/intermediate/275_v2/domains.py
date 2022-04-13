@@ -1,6 +1,6 @@
 ____ c.. _______ C..
 _______ __
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 _______ r__
 
 COMMON_DOMAINS ("https://bites-data.s3.us-east-2.amazonaws.com/"
@@ -19,12 +19,12 @@ ___ get_common_domains(url=COMMON_DOMAINS
         r.. []
 
     
-    soup BeautifulSoup(response.text)
+    soup B..(response.text)
 
-    rows soup.find(attrs=TARGET_DIV).find_all('tr')
+    rows ?.f.. attrs=TARGET_DIV).f.. 'tr')
 
 
-    r.. [value.getText(s..=T..) ___ row __ rows ___ value __ row.select('td:nth-child(3)')]
+    r.. [value.g.. s..=T..) ___ row __ rows ___ value __ row.s.. 'td:nth-child(3)')]
 
 
 ___ get_domain(s__

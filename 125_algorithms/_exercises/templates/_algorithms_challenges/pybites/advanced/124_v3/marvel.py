@@ -75,6 +75,6 @@ ___ get_percentage_female_characters(characters=characters
        Agender and Genderfluid Characters.
        Return the result rounded to 2 digits
     """
-    genders C..([c.sex.s..(' ')[0] ___ c __ characters __ c.sex])
+    genders C..([c.sex.s..(' ' 0 ___ c __ characters __ c.sex])
     sum_all_genders s..([x[1] ___ x __ genders.i..])
     r.. r..(100 * genders 'Female'  / sum_all_genders, 2)

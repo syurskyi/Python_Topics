@@ -22,7 +22,7 @@ ___ get_most_complex_bites(N=10, stats=stats
         lines f.r..
         ___ line __ lines:
             __ line[:5] __ 'Bite ':
-                bite line.s..('.')[0][5:]
+                bite line.s..('.' 0[5:]
                 _, diff line.s..(';')
                 #if not bite and not diff:
                 __ 'None' n.. __ diff:

@@ -66,7 +66,7 @@ c_ Solution:
             r..
 
         ___ word __ words:
-            __ n.. word o. s.find(word) !_ 0:
+            __ n.. word o. s.f.. word) !_ 0:
                 # 1. no word
                 # 2. current word must be the first in s passed in prev
                 _____

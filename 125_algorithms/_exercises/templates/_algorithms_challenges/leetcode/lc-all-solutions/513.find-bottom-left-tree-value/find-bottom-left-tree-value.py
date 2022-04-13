@@ -19,4 +19,4 @@ c_ Solution(o..
       right dfs(root.right, h - 1, w + 1)
       r.. m..((h, w, root.val), left, right)
 
-    r.. dfs(root, 0, 0)[2]
+    r.. dfs(root, 0, 0 2

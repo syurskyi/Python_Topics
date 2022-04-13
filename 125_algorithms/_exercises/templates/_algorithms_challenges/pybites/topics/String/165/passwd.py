@@ -40,6 +40,6 @@ ___ get_users_for_shell(passwd_output: s.. PASSWD_OUTPUT,
     """Match the passwd_output string for users with grep_shell.
        Return a list of users.
     """
-    r.. [line.s..(':')[0] ___ line __ passwd_output.s..  __ '/bin/'+grep_shell __ line.s..(':')[-1] ]
+    r.. [line.s..(':' 0 ___ line __ passwd_output.s..  __ '/bin/'+grep_shell __ line.s..(':')[-1] ]
 
 print(get_users_for_shell

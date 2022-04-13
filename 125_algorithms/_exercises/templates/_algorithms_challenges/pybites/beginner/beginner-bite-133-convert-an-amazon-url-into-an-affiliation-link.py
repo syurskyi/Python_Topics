@@ -32,7 +32,7 @@ generate_affiliation_link("https://www.amazon.com/War-Art-Through-Creative-Battl
 PYBITES_LINK 'http://www.amazon.com/dp/{}/?tag=pyb0f-20'
 
 ___ generate_affiliation_link_pybites(url
-    asin url.s..('dp/')[-1].s..('/')[0]
+    asin url.s..('dp/')[-1].s..('/' 0
     r.. PYBITES_LINK.f..(asin)
 
 

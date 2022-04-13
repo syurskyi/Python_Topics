@@ -29,7 +29,7 @@ c_ Solution:
 
         ___ node __ nodes:
             # to correct root again
-            root find(uf, node)
+            root f.. uf, node)
 
             __ root n.. __ ans:
                 ans[root]    # list
@@ -39,8 +39,8 @@ c_ Solution:
         r.. l..(ans.values
 
     ___ union  nodes, a, b
-        _a find(nodes, a)
-        _b find(nodes, b)
+        _a f.. nodes, a)
+        _b f.. nodes, b)
 
         __ _a __ n.. _b:
             nodes[_b] _a
@@ -52,7 +52,7 @@ c_ Solution:
         __ nodes[a] __ a:
             r.. a
 
-        nodes[a] find(nodes, nodes[a])
+        nodes[a] f.. nodes, nodes[a])
         r.. nodes[a]
 
 

@@ -3,7 +3,7 @@ ____ c.. _______ n..
 ____ t___ _______ L..
 
 _______ r__
-____ bs4 _______ BeautifulSoup __ Soup
+____ ___ _______ B.. __ S..
 ____ dateutil.parser _______ p..
 
 PYCON_DATA "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
@@ -107,9 +107,9 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     application/ld+json data structure website data.
     """
 
-    soup Soup ?'html.parser')
+    soup S.. ?'html.parser')
 
-    events soup.find_all('script',attrs={'type': 'application/ld+json'})
+    events ?.f.. 'script',attrs={'type': 'application/ld+json'})
 
     pycon_events    # list
     ___ event __ events:

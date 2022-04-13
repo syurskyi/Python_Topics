@@ -52,7 +52,7 @@ c_ WordSearch(o..
                      ___ x __ r..(width) ___ y __ r..(height
         ___ pos __ positions:
             ___ d __ DIRECTIONS:
-                result find(word, pos, d)
+                result f.. word, pos, d)
                 __ result:
                     r.. result
         r.. N..

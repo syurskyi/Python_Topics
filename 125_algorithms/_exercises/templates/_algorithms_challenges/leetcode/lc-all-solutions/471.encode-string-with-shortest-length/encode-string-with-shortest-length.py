@@ -9,7 +9,7 @@ c_ Solution(o..
     ____ s __ dp:
       r.. dp[s]
     dp[s] s
-    idx (2 * s).find(s, 1)
+    idx (2 * s).f.. s, 1)
     __ 0 <_ idx < l..(s
       dp[s] s..(l..(s) / idx) + "[" + encode(s[:idx], dp) + "]"
     ___ i __ r..(1, l..(s:

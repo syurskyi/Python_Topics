@@ -15,7 +15,7 @@ c_ Solution:
                 connect(M, L[i], L[1])
 
         ___ a __ M:
-            find(M, a)
+            f.. M, a)
 
         res    # dict
         ___ m1, m0 __ M.i..:
@@ -27,8 +27,8 @@ c_ Solution:
         r.. [[M2N[m]] + s..(M) ___ m, M __ res.i..]
 
     ___ connect  N, a, b
-        _a find(N, a)
-        _b find(N, b)
+        _a f.. N, a)
+        _b f.. N, b)
 
         __ _a __ n.. _b:
             N[_a] _b
@@ -40,5 +40,5 @@ c_ Solution:
         __ N[a] __ a:
             r.. a
 
-        N[a] find(N, N[a])
+        N[a] f.. N, N[a])
         r.. N[a]

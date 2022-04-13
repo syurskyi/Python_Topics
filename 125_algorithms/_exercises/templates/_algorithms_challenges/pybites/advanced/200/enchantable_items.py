@@ -3,7 +3,7 @@ ____ p.. _______ P..
 _______ b__
 _______ __
 ____ u__.r.. _______ u..
-____ bs4 _______ BeautifulSoup __ Soup
+____ ___ _______ B.. __ S..
 
 TMP P..(__.g..("TMP", "/tmp"
 HTML_FILE TMP / "enchantment_list_pc.html"
@@ -61,16 +61,16 @@ ___ generate_enchantments(soup
 
     enchantment_dict    # dict
     mapping {'I': 1,'II': 2,'III': 3,'IV': 4,'V': 5}
-    table soup.find('table',id="minecraft_items")
+    table ?.f.. 'table',id="minecraft_items")
     all_values    # list
-    ___ table_row __ table.find_all('tr')[1:]:
-        data table_row.find_all('td')
+    ___ table_row __ table.f.. 'tr')[1:]:
+        data table_row.f.. 'td')
         values    # list
         ___ i,d __ e..(data
-            value d.getText()
+            value d.g.. )
             values.a..(value)
         
-        image_source table_row.find('img') 'data-src'
+        image_source table_row.f.. 'img') 'data-src'
         last_part image_source.s..('/')[-1]
         last_part __.s.. _ \.|png|sm|enchanted|iron','',last_part)
         
@@ -137,9 +137,9 @@ ___ get_soup(file=HTML_FILE
             u..(URL, file)
 
         w__ file.o.. ) __ html_source:
-            soup Soup(html_source, "html.parser")
+            soup S..(html_source, "html.parser")
     ____
-        soup Soup(file, "html.parser")
+        soup S..(file, "html.parser")
 
     r.. soup
 

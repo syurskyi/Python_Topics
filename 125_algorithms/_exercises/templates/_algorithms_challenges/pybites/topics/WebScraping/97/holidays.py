@@ -3,7 +3,7 @@ _______ __
 ____ u__.r.. _______ u..
 
 #from bs4 import BeautifulSoup
-____ bs4 _______ BeautifulSoup __ Soup
+____ ___ _______ B.. __ S..
 
 
 # prep data
@@ -25,11 +25,11 @@ ___ get_us_bank_holidays(content=content
     """Receive scraped html output, make a BS object, parse the bank
        holiday table (css class = list-table), and return a dict of
        keys -> months and values -> list of bank holidays"""
-    soup Soup(content, 'html.parser')
-    table soup.find('table', class_='list-table')
-    table_rows table.find_all('tr')
+    soup S..(content, 'html.parser')
+    table ?.f.. 'table', c.._'list-table')
+    table_rows table.f.. 'tr')
     ___ tr __ table_rows:
-        td tr.find_all('td')
+        td tr.f.. 'td')
         row [i.text ___ i __ td]
         __ l..(row
             #print(row[1][6:8], row[3].strip())

@@ -1,8 +1,8 @@
 c_ Solution(o..
   ___ countComponents  n, edges
-    ___ find(x
+    ___ f.. x
       __ parent[x] !_ x:
-        parent[x] find(parent[x])
+        parent[x] f.. parent[x])
       r.. parent[x]
 
     ___ union(xy
@@ -16,4 +16,4 @@ c_ Solution(o..
 
     parent, rank r..(n), [0] * n
     m.. union, edges)
-    r.. l..({find(x) ___ x __ parent})
+    r.. l..({f.. x) ___ x __ parent})

@@ -39,7 +39,7 @@ c_ Solution:
         ___ row __ r..(m
             ___ col __ r..(n
                 __ board[row][col] __ root 'children' :
-                    find(row, col, root, result)
+                    f.. row, col, root, result)
         r.. result.k..
 
     ___ find  x, y, parent, result
@@ -59,5 +59,5 @@ c_ Solution:
             __ 0 <_ _x < m \
                     a.. 0 <_ _y < n \
                     a.. board[_x][_y] __ parent 'children' :
-                find(_x, _y, parent, result)
+                f.. _x, _y, parent, result)
         board[x][y] char

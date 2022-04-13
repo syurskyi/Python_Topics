@@ -2,7 +2,7 @@ ____ u__.r.. _______ u..
 ____ p.. _______ P..
 
 _______ gender_guesser.detector __ gender
-____ bs4 _______ BeautifulSoup __ Soup
+____ ___ _______ B.. __ S..
 
 TMP P..('/tmp')
 PYCON_HTML TMP / "pycon2019.html"
@@ -14,7 +14,7 @@ __ n.. PYCON_HTML.exists
 
 
 ___ _get_soup(html=PYCON_HTML
-    r.. Soup(html.read_text(encoding="utf-8"), "html.parser")
+    r.. S..(html.read_text(encoding="utf-8"), "html.parser")
 
 
 ___ get_pycon_speaker_first_names(soup_ N..

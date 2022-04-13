@@ -1,5 +1,5 @@
 _______ r__
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 
 cached_so_url 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
 
@@ -12,16 +12,16 @@ ___ top_python_questions(url=cached_so_url
        by num_votes descending (see tests for expected output).
     """
     response r__.g.. url)
-    soup BeautifulSoup(response.text, 'html.parser')
-    right_table soup.find_all('div', {'class': 'question-summary'})
+    soup B..(response.text, 'html.parser')
+    right_table ?.f.. 'div', {'class': 'question-summary'})
 
     q    # list
     vo    # list
     vi    # list
     ___ line __ right_table:
-        question line.find('a', {'class': 'question-hyperlink'}).text
-        vote line.find('span', {'class': 'vote-count-post high-scored-post'})
-        view line.find('div', {'class': 'views supernova'})
+        question line.f.. 'a', {'class': 'question-hyperlink'}).text
+        vote line.f.. 'span', {'class': 'vote-count-post high-scored-post'})
+        view line.f.. 'div', {'class': 'views supernova'})
 
         __ vote __ N..
             vote 0

@@ -14,7 +14,7 @@ c_ ConnectingGraph2:
     ___ find  a
         __ nodes[a] __ a:
             r.. a
-        nodes[a] find(nodes[a])
+        nodes[a] f.. nodes[a])
         r.. nodes[a]
 
     """
@@ -23,8 +23,8 @@ c_ ConnectingGraph2:
     @return: nothing
     """
     ___ connect  a, b
-        root_a find(a)
-        root_b find(b)
+        root_a f.. a)
+        root_b f.. b)
         __ root_a !_ root_b:
             # Assign a as b's child set
             nodes[root_a] root_b
@@ -35,5 +35,5 @@ c_ ConnectingGraph2:
     @return: An integer
     """
     ___ query  a
-        root_a find(a)
+        root_a f.. a)
         r.. count[root_a]

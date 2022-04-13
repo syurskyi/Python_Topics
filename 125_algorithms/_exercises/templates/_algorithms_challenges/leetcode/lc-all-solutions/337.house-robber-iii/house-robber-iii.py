@@ -19,4 +19,4 @@ c_ Solution(o..
       rpre, rppre dfs(root.right)
       r.. m..(root.val + lppre + rppre, lpre + rpre), lpre + rpre
 
-    r.. dfs(root)[0]
+    r.. dfs(root 0

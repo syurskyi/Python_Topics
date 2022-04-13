@@ -21,10 +21,10 @@ c_ Solution:
         """
         ___ s __ queue:
             ___ d __ D:
-                found s.find(d)
+                found s.f.. d)
                 w.... found !_ -1:
                     _s s[:found] + s[found + l..(d]
-                    found s.find(d, found + 1)
+                    found s.f.. d, found + 1)
 
                     __ _s __ visited:
                         _____

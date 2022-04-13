@@ -1,7 +1,7 @@
 ____ c.. _______ n..
 _______ __
 
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 _______ r__
 
 # feed = https://news.python.sc/, to get predictable results we cached
@@ -16,7 +16,7 @@ ___ _create_soup_obj(url
     """Need utf-8 to properly parse emojis"""
     resp r__.g.. url)
     resp.encoding "utf-8"
-    r.. BeautifulSoup(resp.text, "html.parser")
+    r.. B..(resp.text, "html.parser")
 
 
 ___ get_top_titles(url, top=5
@@ -28,18 +28,18 @@ ___ get_top_titles(url, top=5
 
     
     entries    # list
-    rows soup.find_all("tr",id=T..)
+    rows ?.f.. "tr",id=T..)
     
 
     get_number l.... s: i..(__.s.. _ \d+',s).group
 
 
     ___ row __ rows:
-        links row.select('span.title a')
-        title_text links[0].getText(s..=T..)
+        links row.s.. 'span.title a')
+        title_text links[0].g.. s..=T..)
         link_text ''
         __ l..(links) > 1:
-            link_text links[1].getText(s..=T..)
+            link_text links[1].g.. s..=T..)
             link_text f" ({link_text})"
 
 
@@ -48,13 +48,13 @@ ___ get_top_titles(url, top=5
 
         next_row row.find_next_sibling('tr')
 
-        points next_row.select_one('span.controls > span.smaller').getText()
+        points next_row.s.. 'span.controls > span.smaller').g.. )
 
         points get_number(points)
 
 
 
-        comments next_row.select_one('span.naturaltime a').getText(s..=T..)
+        comments next_row.s.. 'span.naturaltime a').g.. s..=T..)
 
         comments get_number(comments)
 

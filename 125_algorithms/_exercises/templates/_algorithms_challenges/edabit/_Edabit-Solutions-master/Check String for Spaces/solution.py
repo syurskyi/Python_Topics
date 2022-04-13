@@ -1,5 +1,5 @@
 ___ has_spaces(txt
-    __ txt.find(" ") __ -1:
+    __ txt.f.. " ") __ -1:
         r.. F..
     ____
         r.. T..

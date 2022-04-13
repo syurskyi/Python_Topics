@@ -79,7 +79,7 @@ ___ get_dates(dates
             format_counts[DateFormat.NONPARSABLE] += 1
 
 
-    max_frequency,max_count format_counts.most_common(1)[0]
+    max_frequency,max_count format_counts.most_common(1 0
 
     __ max_frequency __ DateFormat.NONPARSABLE o. s..(value __ max_count ___ key,value __ format_counts.i.. __ key !_ DateFormat.NONPARSABLE) >_ 2:
         r.. InfDateFmtError

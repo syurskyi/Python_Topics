@@ -19,7 +19,7 @@ c_ Solution(o..
         :rtype: List[int]
         """
         hashmap    # dict
-        find(root, target, hashmap)
+        f.. root, target, hashmap)
         res    # list
         dfs(root, target, K, hashmap[root], res, hashmap)
         r.. res
@@ -29,11 +29,11 @@ c_ Solution(o..
         __ root __ target:
             hashmap[root] 0
             r.. 0
-        left find(root.left, target, hashmap)
+        left f.. root.left, target, hashmap)
         __ left >_ 0:
             hashmap[root] left+1
             r.. left+1
-        right find(root.right, target, hashmap)
+        right f.. root.right, target, hashmap)
         __ right >_ 0:
             hashmap[root] right+1
             r.. right+1

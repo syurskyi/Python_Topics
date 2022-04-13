@@ -3,7 +3,7 @@ ____ gourmet _______ best_match_per_wine, match_wine_5cheeses
 
 
 ___ test_best_match_per_wine_all
-    ... best_match_per_wine()[2] __ 13.0
+    ... best_match_per_wine( 2  __ 13.0
 
 
 cases_best_by_wine [

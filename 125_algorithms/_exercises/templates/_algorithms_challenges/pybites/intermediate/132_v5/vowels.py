@@ -10,4 +10,4 @@ ___ get_word_max_vowels(text
        Return a tuple of the matching word and the vowel count, e.g.
        ('object-oriented', 6)"""
     words [(w, _count(w ___ w __ text.s..(' ')]
-    r.. s..(words, k.._l.... x: -x[1])[0]
+    r.. s..(words, k.._l.... x: -x[1] 0

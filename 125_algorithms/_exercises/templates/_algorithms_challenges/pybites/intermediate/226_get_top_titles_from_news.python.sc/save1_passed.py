@@ -1,5 +1,5 @@
 ____ c.. _______ n..
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 _______ r__
 _______ __
 
@@ -15,7 +15,7 @@ ___ _create_soup_obj(url
     """Need utf-8 to properly parse emojis"""
     resp r__.g.. url)
     resp.encoding "utf-8"
-    r.. BeautifulSoup(resp.text, "html.parser")
+    r.. B..(resp.text, "html.parser")
 
 
 ___ get_top_titles(url, top=5
@@ -24,13 +24,13 @@ ___ get_top_titles(url, top=5
        by number of points and comments.
     """
     soup _create_soup_obj(url)
-    titles soup.findAll('span', {'class': 'title'})
-    title_list [entry.get_text().s.. ___ entry __ titles]
+    titles ?.findAll('span', {'class': 'title'})
+    title_list [entry.g.. .s.. ___ entry __ titles]
     point_list    # list
     comment_list    # list
 
-    ___ entry __ soup.findAll('span', attrs={'class': 'smaller'}
-        entry entry.get_text().s..
+    ___ entry __ ?.findAll('span', attrs={'class': 'smaller'}
+        entry entry.g.. .s..
         points __.s.. _ (\d*) points', entry)
         comments __.s.. _ (\d*) comments', entry)
         __ points:

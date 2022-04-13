@@ -13,7 +13,7 @@ c_ ConnectingGraph3:
     ___ find  a
         __ nodes[a] __ a:
             r.. a
-        nodes[a] find(nodes[a])
+        nodes[a] f.. nodes[a])
         r.. nodes[a]
 
     """
@@ -22,8 +22,8 @@ c_ ConnectingGraph3:
     @return: nothing
     """
     ___ connect  a, b
-        root_a find(a)
-        root_b find(b)
+        root_a f.. a)
+        root_b f.. b)
         __ root_a !_ root_b:
             nodes[root_a] root_b
             count -_ 1

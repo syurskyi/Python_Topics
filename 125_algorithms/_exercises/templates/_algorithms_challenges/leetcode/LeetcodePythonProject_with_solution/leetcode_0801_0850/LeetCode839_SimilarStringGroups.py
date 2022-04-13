@@ -16,13 +16,13 @@ c_ Solution(o..
         n, m l..(arr), l..(arr 0
         count n
         
-        ___ find(x
+        ___ f.. x
             __ x !_ parents[x]:
-                parents[x] find(parents[x])
+                parents[x] f.. parents[x])
             r.. parents[x]
         
         ___ union(x, y
-            x, y find(x), find(y)
+            x, y f.. x), f.. y)
             __ x !_ y:
                 parents[x] y
                 count -_ 1

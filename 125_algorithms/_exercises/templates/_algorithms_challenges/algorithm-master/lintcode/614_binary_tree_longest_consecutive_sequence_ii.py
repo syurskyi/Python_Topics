@@ -26,7 +26,7 @@ c_ Solution:
         __ n.. root:
             r.. 0
 
-        r.. divide_conquer(root)[0]
+        r.. divide_conquer(root 0
 
     ___ divide_conquer  node
         __ n.. node:

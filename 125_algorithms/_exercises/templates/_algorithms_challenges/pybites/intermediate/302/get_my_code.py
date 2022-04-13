@@ -29,7 +29,7 @@ ___ get_passing_code(json_data=json_data
        Write to /tmp (tmp variable).
     """
     ___ row __ json_data["bites"]:
-        filename_pre row["bite"].s..(".")[0].r..(" ", "")
+        filename_pre row["bite"].s..("." 0.r..(" ", "")
         w__ o.. f"{tmp}/{filename_pre}.py", "w") __ f:
             f.w.. row["passing_code"])
 

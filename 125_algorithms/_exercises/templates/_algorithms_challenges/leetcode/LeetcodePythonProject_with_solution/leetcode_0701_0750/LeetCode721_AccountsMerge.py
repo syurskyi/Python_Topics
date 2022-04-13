@@ -17,11 +17,11 @@ c_ Solution(o..
                 parents[a[i]] a[i]
                 owner[a[i]] a[0]
         ___ a __ accounts:
-            p find(a[1], parents)
+            p f.. a[1], parents)
             ___ i __ r..(2, l..(a:
-                parents[find(a[i], parents)] p
+                parents[f.. a[i], parents)] p
         ___ a __ accounts:
-            p find(a[1], parents)
+            p f.. a[1], parents)
             __ p n.. __ unions:
                 unions[p] s..()
             ___ i __ r..(1, l..(a:
@@ -34,7 +34,7 @@ c_ Solution(o..
         r.. res
     
     ___ find  s, hashmap
-        r.. s __ hashmap[s] __ s ____ find(hashmap[s], hashmap)
+        r.. s __ hashmap[s] __ s ____ f.. hashmap[s], hashmap)
     
     ___ test
         testCases [

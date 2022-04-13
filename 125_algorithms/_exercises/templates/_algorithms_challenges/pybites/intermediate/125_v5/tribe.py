@@ -1,6 +1,6 @@
 ____ c.. _______ C..
 
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 _______ r__
 
 AMAZON "amazon.com"
@@ -21,7 +21,7 @@ ___ get_top_books(content=N.., limit=5
        and count them, return the top "limit" books (default 5)"""
     __ content __ N..
         content load_page()
-    soup BeautifulSoup(content)
-    entry_content soup.find('div', class_='entry-content')
-    count C..(link.text ___ link __ entry_content.select('p > a') __ AMAZON __ link.g.. 'href'
+    soup B..(content)
+    entry_content ?.f.. 'div', c.._'entry-content')
+    count C..(link.text ___ link __ entry_content.s.. 'p > a') __ AMAZON __ link.g.. 'href'
     r.. [title ___ title, _ __ count.most_common(limit)]

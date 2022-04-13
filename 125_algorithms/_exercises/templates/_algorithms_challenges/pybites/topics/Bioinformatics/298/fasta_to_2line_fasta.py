@@ -20,7 +20,7 @@ ___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) __ i..:
         sequence l..(SeqIO.p..(fasta_file, "fasta"
         ___ record __ sequence:
             #print(f'>{record.description}\n{record.seq}')
-            ?.w.. _*>{record.description}\n{record.seq}\n')
+            ?.w.. _*>{record.d..}\n{record.seq}\n')
         f.c..
     print(FASTA_FILE)
     r.. l..(sequence)

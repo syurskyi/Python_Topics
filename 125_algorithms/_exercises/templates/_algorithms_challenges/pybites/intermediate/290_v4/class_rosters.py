@@ -3,7 +3,7 @@ _______ c__
 
 ___ process_classes(classes: l..) __ l..:
     '''cleans and returns classes according to SIS as list'''
-    r.. [cls.s..(' - ')[0].r..('"', '') ___ cls __ classes __ cls]
+    r.. [cls.s..(' - ' 0.r..('"', '') ___ cls __ classes __ cls]
 
 
 ___ process_row(row

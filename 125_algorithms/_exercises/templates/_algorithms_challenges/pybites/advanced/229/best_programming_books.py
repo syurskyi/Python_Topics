@@ -2,7 +2,7 @@ ____ p.. _______ P..
 ____ u__.r.. _______ u..
 ____ dataclasses _______ dataclass
 
-____ bs4 _______ BeautifulSoup, Tag
+____ ___ _______ B.., Tag
 
 url "https://bites-data.s3.us-east-2.amazonaws.com/" "best-programming-books.html"
 tmp  P..("/tmp")
@@ -41,7 +41,7 @@ c_ Book:
 
 
 ___ _get_soup(file
-    r.. BeautifulSoup(file.read_text(), "html.parser")
+    r.. B..(file.read_text(), "html.parser")
 
 
 ___ display_books(books, limit=10, year_ N..
@@ -73,22 +73,22 @@ ___ load_data
     with the highest rating should be first and go down from there.
     """
     soup _get_soup(html_file)
-    book_list soup.find("div", {"class": "books"})
+    book_list ?.f.. "div", {"class": "books"})
     books    # list
     book: Tag
-    ___ book __ book_list.find_all("div", {"class": "book"}
-        title book.select("h2.main")[0].text
+    ___ book __ book_list.f.. "div", {"class": "book"}
+        title book.s.. "h2.main" 0.text
         __ "python" n.. __ title.l..:
             _____
         ___
-            author_a book.select("h3.authors > a")[0].text.s..(" ")
+            author_a book.s.. "h3.authors > a" 0.text.s..(" ")
             author _* author_a[-1]}, {" ".j..(author_a[:-1])}'
-            date_span book.select("span.date")
+            date_span book.s.. "span.date")
             __ l..(date_span) __ 0:
                 _____
             year i..(date_span[0].text[-4:])
-            rank i..(book.select("div.rank > span")[0].text)
-            rating f__(book.select("span.our-rating")[0].text)
+            rank i..(book.s.. "div.rank > span" 0.text)
+            rating f__(book.s.. "span.our-rating" 0.text)
         ______ AttributeError:
             _____
         books.a..(

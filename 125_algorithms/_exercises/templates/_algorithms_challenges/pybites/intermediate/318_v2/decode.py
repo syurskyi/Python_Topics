@@ -9,7 +9,7 @@ ___ get_credit_cards(data: bytes) __ L..[s..]:
     to extract the credit card numbers.
     """
     text base64.decodebytes(data).d.. )
-    card_nums [row.s..(',')[2] ___ row __ text.s.. ]
+    card_nums [row.s..(',' 2  ___ row __ text.s.. ]
     card_nums.p.. 0)            # remove header
 
     r.. card_nums

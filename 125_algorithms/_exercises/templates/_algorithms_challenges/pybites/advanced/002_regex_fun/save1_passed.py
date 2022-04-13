@@ -31,4 +31,4 @@ ___ get_all_hashtags_and_links(tweet=TWEET
 ___ match_first_paragraph(html=HTML
     """Extract the first paragraph of the passed in html."""
     m __.c.. _ <p>(.+?)</p>')
-    r.. m.f..(html)[0]
+    r.. m.f..(html 0

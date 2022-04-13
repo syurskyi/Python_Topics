@@ -1,7 +1,7 @@
 ____ c.. _______ C..
 
-____ bs4 _______ BeautifulSoup
-_______ bs4
+____ ___ _______ B..
+_______ ___
 _______ r__
 
 AMAZON "amazon.com"
@@ -26,12 +26,12 @@ ___ get_top_books(content_ N..
     __ content __ N..
         content load_page()
     
-    soup BeautifulSoup(content, "html.parser")
+    soup B..(content, "html.parser")
     
     amazon_books    # list
-    ___ link __ soup.find_all("a"
+    ___ link __ ?.f.. "a"
         __ "amazon" __ link.g.. "href"
-            amazon_books.a..([link.get_text().s...s..("\n")])
+            amazon_books.a..([link.g.. .s...s..("\n")])
 
     amazon_books_counter C..()
     ___ book __ amazon_books:

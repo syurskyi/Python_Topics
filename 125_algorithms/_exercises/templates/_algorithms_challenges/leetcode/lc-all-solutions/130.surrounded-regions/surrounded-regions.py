@@ -8,7 +8,7 @@ c_ UnionFind
   ___ find  x
     dad dad
     __ dad[x] !_ x:
-      dad[x] find(dad[x])
+      dad[x] f.. dad[x])
     r.. dad[x]
 
   ___ union  xy
@@ -51,14 +51,14 @@ c_ Solution:
     ___ i __ r..(0, l..(board:
       ___ j __ [0, l..(board 0 - 1]:
         __ board[i][j] __ "O":
-          regions.add(uf.find(i * m + j
+          regions.add(uf.f.. i * m + j
 
     ___ j __ r..(0, l..(board[0]:
       ___ i __ [0, l..(board) - 1]:
         __ board[i][j] __ "O":
-          regions.add(uf.find(i * m + j
+          regions.add(uf.f.. i * m + j
 
     ___ i __ r..(0, l..(board:
       ___ j __ r..(0, l..(board[0]:
-        __ board[i][j] __ "O" a.. uf.find(i * m + j) n.. __ regions:
+        __ board[i][j] __ "O" a.. uf.f.. i * m + j) n.. __ regions:
           board[i][j] "X"

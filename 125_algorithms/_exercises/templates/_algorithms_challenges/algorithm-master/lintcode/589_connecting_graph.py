@@ -14,7 +14,7 @@ c_ ConnectingGraph:
         __ N[a] __ a:
             r.. a
 
-        N[a] find(N[a])
+        N[a] f.. N[a])
         r.. N[a]
 
     """
@@ -23,8 +23,8 @@ c_ ConnectingGraph:
     @return: nothing
     """
     ___ connect  a, b
-        _a find(a)
-        _b find(b)
+        _a f.. a)
+        _b f.. b)
         __ _a !_ _b:
             N[_a] _b
 
@@ -34,6 +34,6 @@ c_ ConnectingGraph:
     @return: A boolean
     """
     ___ query  a, b
-        _a find(a)
-        _b find(b)
+        _a f.. a)
+        _b f.. b)
         r.. _a __ _b

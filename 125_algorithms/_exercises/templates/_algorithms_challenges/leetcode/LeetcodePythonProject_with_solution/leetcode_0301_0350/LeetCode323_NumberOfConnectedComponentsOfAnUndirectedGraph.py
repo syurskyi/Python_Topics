@@ -26,8 +26,8 @@ c_ Solution(o..
         count n
         roots l..(r..(n
         ___ edge __ edges:
-            root1 find(roots, edge 0
-            root2 find(roots, edge[1])
+            root1 f.. roots, edge 0
+            root2 f.. roots, edge[1])
             __ root1 !_ root2:
                 roots[root1] roots[root2]
                 count -_ 1

@@ -2,7 +2,7 @@ _______ __
 ____ c.. _______ n..
 
 _______ r__
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 
 # feed = https://news.python.sc/, to get predictable results we cached
 # first two pages - use these:
@@ -16,7 +16,7 @@ ___ _create_soup_obj(url
     """Need utf-8 to properly parse emojis"""
     resp r__.g.. url)
     resp.encoding "utf-8"
-    r.. BeautifulSoup(resp.text, "html.parser")
+    r.. B..(resp.text, "html.parser")
 
 
 ___ get_top_titles(url, top=5
@@ -26,7 +26,7 @@ ___ get_top_titles(url, top=5
     """
     soup _create_soup_obj(url)
 
-    article_list soup.select('span.title')
+    article_list ?.s.. 'span.title')
 
     articles    # list
     ___ article __ article_list:

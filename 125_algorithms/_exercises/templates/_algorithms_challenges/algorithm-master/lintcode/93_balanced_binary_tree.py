@@ -13,7 +13,7 @@ c_ Solution:
     @return: True if this Binary tree is Balanced, or false.
     """
     ___ isBalanced  root
-        r.. _divide_conquer(root)[0]
+        r.. _divide_conquer(root 0
 
     ___ _divide_conquer  node
         __ n.. node:

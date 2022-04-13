@@ -1,5 +1,5 @@
 ____ c.. _______ C..
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 _______ r__
 _______ __
 
@@ -12,13 +12,13 @@ ___ get_common_domains(url=COMMON_DOMAINS
     """Scrape the url return the 100 most common domain names"""
 
     response r__.g.. COMMON_DOMAINS)
-    soup BeautifulSoup(response.text, 'html.parser')
-    right_table soup.find('div', TARGET_DIV)
+    soup B..(response.text, 'html.parser')
+    right_table ?.f.. 'div', TARGET_DIV)
 
     domains    # list
     ___ row __ right_table.findAll('tr'
         cells row.findAll('td')
-        domains.a..(cells[2].find(text=T..
+        domains.a..(cells[2].f.. text=T..
 
     r.. domains
 

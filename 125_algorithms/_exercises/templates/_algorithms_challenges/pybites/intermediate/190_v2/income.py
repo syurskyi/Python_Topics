@@ -2,7 +2,7 @@ _______ __
 ____ p.. _______ P..
 ____ c.. _______ d..
 ____ u__.r.. _______ u..
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 
 # import the countries xml file
 tmp  P..(__.g..("TMP", "/tmp"
@@ -24,14 +24,14 @@ ___ get_income_distribution(___=countries
       - values = list of country names (wb:name)
     """
     w__ o.. ___ _ __ f:
-        soup BeautifulSoup(f.read
+        soup B..(f.read
 
     
     income_to_countries d.. l..
 
-    ___ country __ soup.find_all("wb:country"
-        country_name country.find('wb:name').getText()
-        income country.find('wb:incomelevel').getText()
+    ___ country __ ?.f.. "wb:country"
+        country_name country.f.. 'wb:name').g.. )
+        income country.f.. 'wb:incomelevel').g.. )
         income_to_countries[income].a..(country_name)
 
     r.. income_to_countries

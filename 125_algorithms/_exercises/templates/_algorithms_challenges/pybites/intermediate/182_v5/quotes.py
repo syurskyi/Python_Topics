@@ -2,7 +2,7 @@
 _______ __
 _______ s__
 
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 
 HTML """<!DOCTYPE html>
 <head>
@@ -32,8 +32,8 @@ HTML """<!DOCTYPE html>
 ___ extract_quotes(html: s.. HTML) __ d..:
     """See instructions in the Bite description"""
     result d..()
-    root BeautifulSoup(html, 'html.parser')
-    content root.find(class_='content').find_all('p')
+    root B..(html, 'html.parser')
+    content root.f.. c.._'content').f.. 'p')
     ___ para __ content:
         __ para.text[0] __ s__.d..:
             m.. __.m.. _ ^\d+\.\s+"(.+?)" - (.*)$', para.text)

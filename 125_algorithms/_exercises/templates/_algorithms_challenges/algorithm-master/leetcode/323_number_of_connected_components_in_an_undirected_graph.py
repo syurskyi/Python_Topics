@@ -38,8 +38,8 @@ c_ Solution:
         r.. ans
 
     ___ union  nodes, a, b
-        _a find(nodes, a)
-        _b find(nodes, b)
+        _a f.. nodes, a)
+        _b f.. nodes, b)
 
         __ _a __ _b:
             r.. F..
@@ -54,7 +54,7 @@ c_ Solution:
         __ nodes[a] __ a:
             r.. a
 
-        nodes[a] find(nodes[a])
+        nodes[a] f.. nodes[a])
         r.. nodes[a]
 
 

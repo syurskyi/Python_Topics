@@ -50,7 +50,7 @@ c_ Solution:
             r.. F..
 
         target k - node.val
-        __ find(root, target, node
+        __ f.. root, target, node
             r.. T..
 
         __ w..(node.left, k) o. w..(node.right, k
@@ -66,6 +66,6 @@ c_ Solution:
             r.. node !_ existing
 
         __ target < node.val:
-            r.. find(node.left, target, existing)
+            r.. f.. node.left, target, existing)
         ____
-            r.. find(node.right, target, existing)
+            r.. f.. node.right, target, existing)

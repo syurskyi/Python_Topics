@@ -11,8 +11,8 @@ c_ Solution:
         nodes [i ___ i __ r..(n)]
 
         ___ a, b __ edges:
-            _a find(nodes, a)
-            _b find(nodes, b)
+            _a f.. nodes, a)
+            _b f.. nodes, b)
 
             __ _a __ _b:
                 r.. F..
@@ -25,5 +25,5 @@ c_ Solution:
         __ nodes[a] __ a:
             r.. a
 
-        nodes[a] find(nodes, nodes[a])
+        nodes[a] f.. nodes, nodes[a])
         r.. nodes[a]

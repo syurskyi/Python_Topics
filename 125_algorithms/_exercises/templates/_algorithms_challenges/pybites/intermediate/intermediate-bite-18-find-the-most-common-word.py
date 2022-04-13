@@ -58,7 +58,7 @@ ___ my_solution_get_harry_most_common_word
                 filtered.a..(word.s..(s__.p...l..
 
     counter C..(filtered)
-    r.. counter.most_common(1)[0]
+    r.. counter.most_common(1 0
 
 ___ pyb_solution_get_harry_most_common_word
     ___ get_harry_most_common_word
@@ -73,7 +73,7 @@ ___ pyb_solution_get_harry_most_common_word
                      a.. word n.. __ stopwords]
 
             cnt C..(words)
-            r.. cnt.most_common(1)[0]
+            r.. cnt.most_common(1 0
 
 
 print(my_solution_get_harry_most_common_word

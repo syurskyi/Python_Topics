@@ -19,4 +19,4 @@ ___ suggest_word(misspelled_word: s.., words: s.. N..) __ s..:
     __ words __ N..
         words load_words()
 
-    r.. get_close_matches(misspelled_word, words, n=1)[0]
+    r.. get_close_matches(misspelled_word, words, n=1 0

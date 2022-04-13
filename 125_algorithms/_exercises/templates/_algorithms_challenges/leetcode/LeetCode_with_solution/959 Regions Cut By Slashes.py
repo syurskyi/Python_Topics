@@ -80,8 +80,8 @@ c_ DisjointSet:
         pi    # dict
 
     ___ union  x, y
-        pi_x find(x)
-        pi_y find(y)
+        pi_x f.. x)
+        pi_y f.. y)
         pi[pi_y] pi_x
 
     ___ find  x
@@ -89,7 +89,7 @@ c_ DisjointSet:
         __ x n.. __ pi:
             pi[x] x
         __ pi[x] !_ x:
-            pi[x] find(pi[x])
+            pi[x] f.. pi[x])
         r.. pi[x]
 
 c_ Solution:
@@ -138,7 +138,7 @@ c_ Solution:
 
 
         r.. l..(s..(
-            ds.find(x)
+            ds.f.. x)
             ___ x __ ds.pi.k..
 
 

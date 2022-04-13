@@ -1,5 +1,5 @@
 _______ r__
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 _______ __
 
 cached_so_url 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
@@ -23,16 +23,16 @@ ___ top_python_questions(url=cached_so_url
         print('Other Error')
         print(err)
     ____
-        soup BeautifulSoup(response.text,'html.parser')
+        soup B..(response.text,'html.parser')
 
 
-        questions soup.find_all("div",class_='question-summary')
+        questions ?.f.. "div",c.._'question-summary')
         results    # list
         ___ question __ questions:
-            question_text question.find('a',class_='question-hyperlink').getText()
-            views question.find('div',class_='views').getText()
+            question_text question.f.. 'a',c.._'question-hyperlink').g.. )
+            views question.f.. 'div',c.._'views').g.. )
             __ views.s...s.. [0][-1] __ 'm':
-                votes i..(question.find('span',class_='vote-count-post').strong.getText
+                votes i..(question.f.. 'span',c.._'vote-count-post').strong.getText
                 results.a..((question_text,votes
 
         

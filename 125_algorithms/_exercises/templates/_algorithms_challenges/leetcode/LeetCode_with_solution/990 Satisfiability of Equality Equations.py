@@ -51,13 +51,13 @@ c_ DisjointSet:
         pi    # dict
 
     ___ union  x, y
-        pi[find(x)] find(y)
+        pi[f.. x)] f.. y)
 
     ___ find  x
         __ x n.. __ pi:
             pi[x] x
         ____ pi[x] !_ x:
-            pi[x] find(pi[x])
+            pi[x] f.. pi[x])
         r.. pi[x]
 
 c_ Solution:
@@ -77,7 +77,7 @@ c_ Solution:
                 neqs.a..((a, b
 
         ___ a, b __ neqs:
-            __ ds.find(a) __ ds.find(b
+            __ ds.f.. a) __ ds.f.. b
                 r.. F..
 
         r.. T..

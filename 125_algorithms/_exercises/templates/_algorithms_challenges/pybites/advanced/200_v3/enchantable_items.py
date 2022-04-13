@@ -4,7 +4,7 @@ ____ p.. _______ P..
 ____ t___ _______ L..
 ____ u__.r.. _______ u..
 
-____ bs4 _______ BeautifulSoup __ Soup
+____ ___ _______ B.. __ S..
 
 out_dir "/tmp"
 html_file f"{out_dir}/enchantment_list_pc.html"
@@ -66,8 +66,8 @@ ___ generate_enchantments(soup
     With the key being the id_name of the enchantment.
     """
     res d..()
-    ___ row __ soup.select('table#minecraft_items > tr'
-        data_items row.find_all('td')
+    ___ row __ ?.s.. 'table#minecraft_items > tr'
+        data_items row.f.. 'td')
         __ data_items __ N.. o. l..(data_items) __ 0:
             _____
         enchant, maxlevel, descr, id, item, version data_items
@@ -112,9 +112,9 @@ ___ get_soup(file=HTML_FILE
             u..(URL, HTML_FILE)
 
         w__ file.o.. ) __ html_source:
-            soup Soup(html_source, "html.parser")
+            soup S..(html_source, "html.parser")
     ____
-        soup Soup(file, "html.parser")
+        soup S..(file, "html.parser")
 
     r.. soup
 

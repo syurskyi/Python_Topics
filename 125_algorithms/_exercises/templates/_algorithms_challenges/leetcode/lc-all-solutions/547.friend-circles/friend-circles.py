@@ -7,7 +7,7 @@ c_ UnionFind(o..
   ___ find  x
     dad dad
     __ dad[x] !_ x:
-      dad[x] find(dad[x])
+      dad[x] f.. dad[x])
     r.. dad[x]
 
   ___ union  x, y

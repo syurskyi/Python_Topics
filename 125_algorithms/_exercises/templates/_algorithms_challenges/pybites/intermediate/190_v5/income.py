@@ -26,6 +26,6 @@ ___ get_income_distribution(___=countries
     xpath f".//wb:country"
     country_list d.. l..
     ___ x __ root.f..(xpath, namespaces
-        country_list[x.find('wb:incomeLevel', namespaces).text].a..(x.find('wb:name', namespaces).text)
+        country_list[x.f.. 'wb:incomeLevel', namespaces).text].a..(x.f.. 'wb:name', namespaces).text)
 
     r.. country_list

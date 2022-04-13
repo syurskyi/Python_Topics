@@ -35,7 +35,7 @@ c_ Solution:
         __ n & 1 __ 1:
             r.. num * 1.0
 
-        _num h__.heappop(heap)[0]
+        _num h__.heappop(heap 0
         r.. (num + _num) / 2.0
 
 

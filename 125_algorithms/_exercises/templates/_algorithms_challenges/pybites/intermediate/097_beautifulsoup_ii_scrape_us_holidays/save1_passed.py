@@ -2,7 +2,7 @@ ____ c.. _______ d..
 _______ __
 ____ u__.r.. _______ u..
 
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 
 
 # prep data
@@ -25,8 +25,8 @@ ___ get_us_bank_holidays(content=content
        holiday table (css class = list-table), and return a dict of
        keys -> months and values -> list of bank holidays"""
     
-    soup BeautifulSoup(content, 'html.parser')
-    right_table soup.find('table', {'class': 'list-table'})
+    soup B..(content, 'html.parser')
+    right_table ?.f.. 'table', {'class': 'list-table'})
 
     dates    # list
     ___ row __ right_table.findAll('time'

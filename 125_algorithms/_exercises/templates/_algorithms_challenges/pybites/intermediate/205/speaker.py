@@ -4,7 +4,7 @@ _______ __
 ____ p.. _______ P..
 
 _______ gender_guesser.detector __ gender
-____ bs4 _______ BeautifulSoup __ Soup
+____ ___ _______ B.. __ S..
 
 TMP P..(__.g..("TMP", "/tmp"
 PYCON_HTML TMP / "pycon2019.html"
@@ -16,7 +16,7 @@ __ n.. PYCON_HTML.exists
 
 
 ___ _get_soup(html=PYCON_HTML
-    r.. Soup(html.read_text(encoding="utf-8"), "html.parser")
+    r.. S..(html.read_text(encoding="utf-8"), "html.parser")
 
 
 ___ get_pycon_speaker_first_names(soup_ N..
@@ -29,16 +29,16 @@ ___ get_pycon_speaker_first_names(soup_ N..
         soup _get_soup()
     
     first_names    # list
-    soup_speakers soup.find_all("span", class_="speaker")
+    soup_speakers ?.f.. "span", c.._"speaker")
     ___ speaker __ soup_speakers:
-        speaker_clean speaker.get_text().s..
-        __ speaker_clean.find(",") > 0
+        speaker_clean speaker.g.. .s..
+        __ speaker_clean.f.. ",") > 0
             ___ speaker __ speaker_clean.s..(","
-                first_name speaker.s...s..(" ")[0].s..
+                first_name speaker.s...s..(" " 0.s..
                 first_names.a..(first_name)
-        ____ speaker_clean.find("/") > 0
+        ____ speaker_clean.f.. "/") > 0
             ___ speaker __ speaker_clean.s..("/"
-                first_name speaker.s...s..(" ")[0].s..
+                first_name speaker.s...s..(" " 0.s..
                 first_names.a..(first_name)
         ____
             first_names.a..(speaker_clean.s..(" ") 0

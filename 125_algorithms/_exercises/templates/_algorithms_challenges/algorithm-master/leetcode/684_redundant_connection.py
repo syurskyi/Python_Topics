@@ -28,8 +28,8 @@ c_ Solution:
         r.. []
 
     ___ union  nodes, u, v
-        a find(nodes, u)
-        b find(nodes, v)
+        a f.. nodes, u)
+        b f.. nodes, v)
 
         __ a __ b:
             r.. F..
@@ -44,7 +44,7 @@ c_ Solution:
         __ nodes[u] __ u:
             r.. u
 
-        nodes[u] find(nodes, nodes[u])
+        nodes[u] f.. nodes, nodes[u])
         r.. nodes[u]
 
 

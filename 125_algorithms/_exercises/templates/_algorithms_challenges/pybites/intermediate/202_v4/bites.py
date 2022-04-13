@@ -12,7 +12,7 @@ __ n.. stats.exists
 
 
 ___ _bitenum(bite_str
-    r.. bite_str.s..('.')[0].s..(' ')[1]
+    r.. bite_str.s..('.' 0.s..(' ')[1]
 
 
 ___ get_most_complex_bites(N=10, stats=stats

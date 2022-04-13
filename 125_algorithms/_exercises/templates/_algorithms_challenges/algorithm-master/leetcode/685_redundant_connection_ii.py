@@ -43,8 +43,8 @@ c_ Solution:
         r.. res __ res ____ ans
 
     ___ union  uf, u, v
-        a find(uf, u)
-        b find(uf, v)
+        a f.. uf, u)
+        b f.. uf, v)
 
         __ a __ b:
             r.. F..
@@ -59,7 +59,7 @@ c_ Solution:
         __ uf[u] __ u:
             r.. u
 
-        uf[u] find(uf, uf[u])
+        uf[u] f.. uf, uf[u])
         r.. uf[u]
 
     ___ dfs  u, adj, visited

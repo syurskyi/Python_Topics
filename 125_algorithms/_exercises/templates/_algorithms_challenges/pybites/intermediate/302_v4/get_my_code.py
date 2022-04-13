@@ -22,7 +22,7 @@ json_data get_json_data()
 
 ___ _make_filename(bite
     """creates a filename, per spec, for input bite (dict)"""
-    r.. bite 'bite' .s..('.')[0].r..(' ', '') + '.py'
+    r.. bite 'bite' .s..('.' 0.r..(' ', '') + '.py'
 
 
 ___ _write_code(bite

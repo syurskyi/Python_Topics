@@ -47,7 +47,7 @@ c_ Solution:
         ret 0
 
     ___ longestUnivaluePath  root: TreeNode) __ i..:
-        find(root)
+        f.. root)
         r.. ret
 
     ___ find  node
@@ -57,8 +57,8 @@ c_ Solution:
         __ n.. node:
             r.. 0
 
-        left find(node.left)
-        right find(node.right)
+        left f.. node.left)
+        right f.. node.right)
         left_path left + 1 __ node.left a.. node.left.val __ node.val ____ 0
         right_path right + 1 __ node.right a.. node.right.val __ node.val ____ 0
         ret m..(ret, left_path + right_path)
@@ -70,7 +70,7 @@ c_ Solution_error:
         ret 0
 
     ___ longestUnivaluePath  root: TreeNode) __ i..:
-        find(root)
+        f.. root)
         r.. ret
 
     ___ find  node
@@ -80,8 +80,8 @@ c_ Solution_error:
         __ n.. node:
             r.. 0
 
-        left find(node.left)
-        right find(node.right)
+        left f.. node.left)
+        right f.. node.right)
         cur 1  # node.val
         p.. 1
         __ left a.. node.left.val __ node.val:

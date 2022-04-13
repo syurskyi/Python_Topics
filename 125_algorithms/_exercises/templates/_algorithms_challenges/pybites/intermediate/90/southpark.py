@@ -19,7 +19,7 @@ ___ get_num_words_spoken_by_character_per_episode(content
    """Receives loaded csv content (str) and returns a dict of
       keys=characters and values=Counter object,
       which is a mapping of episode=>words spoken"""
-   header content.s..("\n")[0].s..(",")
+   header content.s..("\n" 0.s..(",")
 
    csv_reader c__.D.. [row.s..("\n") ___ row __ content.s..("\n")[1:]], fieldnames=header)
 

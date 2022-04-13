@@ -111,7 +111,7 @@ ___ test_enchantment_class_add_items(enchantment_mock, item_mock
 
 ___ test_enchantment_class_print(enchantment_mock, capfd
     print(enchantment_mock)
-    output ?.r .. 0].s..("\n")[0]
+    output ?.r .. 0].s..("\n" 0
     ... (
         output
         __ "Python Developer (10): Ability automate really boring and repetitive tasks at work"
@@ -131,7 +131,7 @@ ___ test_item_class_print(item_mock, capfd
 
 ___ test_enchantment_print(mock_data, capfd
     print(mock_data["channeling"])
-    output ?.r .. 0].s..("\n")[0]
+    output ?.r .. 0].s..("\n" 0
     ... (
         output
         __ "Channeling (1): Summons a lightning bolt at a targeted mob when enchanted item is thrown (targeted mob must be standing in raining)"
@@ -155,7 +155,7 @@ ___ test_generate_enchantments_with_mock(mock_data
     ... isi..(mock_data, d..)
     ... l..(mock_data.keys __ 4
     ... (
-        mock_data["channeling"].description
+        mock_data["channeling"].d..
         __ "Summons a lightning bolt at a targeted mob when enchanted item is thrown (targeted mob must be standing in raining)"
     )
 

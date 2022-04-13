@@ -8,7 +8,7 @@ ___ meetup_day(year, month, weekday, schedule
     __ schedule __ 'teenth':
         r.. find_teenth(candidates)
     ____
-        r.. find(candidates, schedule)
+        r.. f.. candidates, schedule)
 
 
 ___ find_teenth(candidates
@@ -17,6 +17,6 @@ ___ find_teenth(candidates
             r.. date
 
 
-___ find(candidates, schedule
+___ f.. candidates, schedule
     index -1 __ schedule __ 'last' ____ i..(schedule 0 - 1
     r.. candidates[index]

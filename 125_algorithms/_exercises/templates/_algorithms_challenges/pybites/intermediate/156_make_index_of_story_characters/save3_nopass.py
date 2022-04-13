@@ -68,6 +68,6 @@ ___ make_character_index(text=text, characters=CHARACTERS
     ___ character __ character_list:
         ___ line __ e..(new_text
             __ __.s..(character, line[1]
-                d[character.s..('|')[0].l..].a..(line 0
+                d[character.s..('|' 0.l..].a..(line 0
 
     r.. d..(d)

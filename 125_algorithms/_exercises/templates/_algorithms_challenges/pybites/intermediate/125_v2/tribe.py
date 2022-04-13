@@ -1,7 +1,7 @@
 ____ c.. _______ C..
 
 _______ __
-____ bs4 _______ BeautifulSoup
+____ ___ _______ B..
 _______ r__
 
 AMAZON "amazon.com"
@@ -28,12 +28,12 @@ ___ get_top_books(content_ N..
         content load_page()
 
     counts C..()
-    soup BeautifulSoup(content,'html.parser')
+    soup B..(content,'html.parser')
 
-    links =  soup.find_all('a',href=__.c.. _ amazon.com'
+    links =  ?.f.. 'a',href=__.c.. _ amazon.com'
 
     ___ link __ links:
-        title link.getText(s..=T..)
+        title link.g.. s..=T..)
         counts[title] += 1
 
     
