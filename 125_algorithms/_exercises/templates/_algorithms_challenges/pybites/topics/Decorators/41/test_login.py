@@ -18,4 +18,4 @@ ___ test_loggedin
 
 ___ test_docstring
     """Decorator should not lose function's docstring"""
-    ... welcome.__doc__ __ 'Return a welcome message if logged in'
+    ... welcome.-d __ 'Return a welcome message if logged in'

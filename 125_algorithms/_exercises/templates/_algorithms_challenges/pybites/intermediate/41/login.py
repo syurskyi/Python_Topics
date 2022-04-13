@@ -1,27 +1,27 @@
-____ f.. _______ w..
-
-known_users =  'bob', 'julian', 'mike', 'carmen', 'sue'
-loggedin_users =  'mike', 'sue'
-
-
-___ login_required(func
-    $w.. f..
-    ___ wrapper $
-        __ args[0] __ loggedin_users:
-            r.. func(args 0
-
-        __ args[0] __ known_users a.. args[0] n.. __ loggedin_users:
-            r.. "please login"
-
-        __ args[0] n.. __ known_users a.. args[0] n.. __ loggedin_users:
-            r.. "please create an account"
-    r.. wrapper
-
-
-@login_required
-___ welcome(user
-    '''Return a welcome message if logged in'''
-    r.. f"welcome back {user}"
-
-# if __name__ == "__main__":
-#     welcome("bob")
+# ____ f.. _______ w..
+#
+# known_users =  'bob', 'julian', 'mike', 'carmen', 'sue'
+# loggedin_users =  'mike', 'sue'
+#
+#
+# ___ login_required func
+#     $w.. f..
+#     ___ wrapper $
+#         __ args 0 __ l..
+#             r.. ? ? 0
+#
+#         __ a.. 0 __ k.. a.. a.. 0 n.. __ l..
+#             r.. "please login"
+#
+#         __ a.. 0 n.. __ k.. a.. a.. 0 n.. __ l..
+#             r.. "please create an account"
+#     r.. ?
+#
+#
+# %%
+# ___ welcome user
+#     '''Return a welcome message if logged in'''
+#     r.. _* welcome back ?
+#
+# # if __name__ == "__main__":
+# #     welcome("bob")

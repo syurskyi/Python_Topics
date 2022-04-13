@@ -13,7 +13,7 @@ ___ login_required(func
         ____ args n.. __ loggedin_users:
             r.. 'please login'
         ____
-            r.. func(args)
+            r.. ? ?)
     r.. wrapper
 
 

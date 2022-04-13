@@ -1,24 +1,24 @@
-known_users =  'bob', 'julian', 'mike', 'carmen', 'sue' 
-loggedin_users =  'mike', 'sue' 
-____ f.. _______ w..
-
-
-___ login_required(func
-
-
-    $w.. f..
-    ___ wrapper(user
-        __ user  n.. __ known_users:
-            r.. "please create an account"
-        __ user n.. __ loggedin_users:
-            r.. "please login"
-
-        r.. f"welcome back {user}"
-
-    r.. wrapper
-
-@login_required
-___ welcome(user
-    '''Return a welcome message if logged in'''
-    p..
-
+# known_users   'bob', 'julian', 'mike', 'carmen', 'sue'
+# loggedin_users   'mike', 'sue'
+# ____ f.. _______ w..
+#
+#
+# ___ login_required func
+#
+#
+#     $w.. f..
+#     ___ wrapper user
+#         __ ?  n.. __ k..
+#             r.. "please create an account"
+#         __ ? n.. __ l..
+#             r.. "please login"
+#
+#         r.. _* welcome back ?
+#
+#     r.. ?
+#
+# %%
+# ___ welcome user
+#     '''Return a welcome message if logged in'''
+#     p..
+#
