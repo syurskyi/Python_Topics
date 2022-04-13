@@ -125,7 +125,7 @@ ___ four_day_weekends $,
             __ start_losing > 0
                 date_start_losing weekend_dates[start_losing]
             ___ i,(weekend_start,weekend_end) __ e..(weekend_dates
-                print(f"{weekend_start} - {weekend_end}",end='')
+                print(f"{weekend_start} - {weekend_end}",e.._'')
                 __ (weekend_start,weekend_end) __ date_start_losing:
                     print(' *')
                 ____

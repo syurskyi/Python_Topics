@@ -1,57 +1,57 @@
-_______ __
-_______ u__.r..
-
-TMP __.g.. TMP  /tmp
-DATA 'safari.logs'
-SAFARI_LOGS __.p...j..(TMP, DATA)
-PY_BOOK, OTHER_BOOK '🐍', '.'
-
-u__.r...u..(
-    f'https://bites-data.s3.us-east-2.amazonaws.com/{DATA}',
-    SAFARI_LOGS
-)
-
-
-___ create_chart
-    slack_frequency    # dict
-
-    w__ o.. SAFARI_LOGS __ file
-        safari_logs file.r..
-        ___ i __ r..(l..(safari_logs:
-            previous safari_logs[i -1]
-            current safari_logs[i]
-            __ "sending to slack channel" __ current:
-                __ current[:5] n.. __ slack_frequency:
-                    slack_frequency[current[:5]] [1]
-                    __ 'Python' __ previous:
-                        slack_frequency[current[:5]].a..(slack_frequency[current[:5]] 0
-                ____
-                    slack_frequency[current[:5]][0] += 1
-                    __ 'Python' __ previous:
-                        slack_frequency[current[:5]].a..(slack_frequency[current[:5]] 0
-
-    ___ key, value __ slack_frequency.i..:
-
-        bar ""
-        __ l..(value) __ 1:
-            ___ i __ r..(1, value[0] +1
-                bar += "."
-            print(key, bar)
-        ____
-            j 1
-            ___ i __ r..(1, value[0] +1
-                snake_num l..(value) -1
-                __ j <_ snake_num:
-                    snake_value_at_i value[j]
-
-                __ i __ snake_value_at_i:
-                    bar += "🐍"
-                    j += 1
-                ____
-                    bar += "."
-        
-            print(key, bar)
-
-
-# if __name__ == "__main__":
-#     create_chart()
+# _______ __
+# _______ u__.r..
+#
+# TMP __.g.. TMP  /tmp
+# DATA 'safari.logs'
+# SAFARI_LOGS __.p...j.. ? ?
+# PY_BOOK, OTHER_BOOK '🐍', '.'
+#
+# u__.r...u..
+#     _* https://bites-data.s3.us-east-2.amazonaws.com/ ?
+#     S..
+#
+#
+#
+# ___ create_chart
+#     slack_frequency    # dict
+#
+#     w__ o.. S.. __ file
+#         safari_logs ?.r..
+#         ___ i __ r.. l.. ?
+#             previous ? ? -1
+#             current ? ?
+#             __ "sending to slack channel" __ c..
+#                 __ c.. |5 n.. __ s..
+#                     s.. c.. |5 1
+#                     __ 'Python' __ p..
+#                         s.. c.. |5 .a.. s.. c.. |5  0
+#                 ____
+#                     s.. c.. |5 0 +_ 1
+#                     __ 'Python' __ p..
+#                         s.. c.. |5 .a.. s.. c.. |5  0
+#
+#     ___ key value __ s__.i..
+#
+#         bar ""
+#         __ l.. ? __ 1
+#             ___ i __ r.. 1 v.. 0 +1
+#                 ? +_ "."
+#             print ? ?
+#         ____
+#             j 1
+#             ___ i __ r.. 1 v.. 0 +1
+#                 snake_num l.. v.. -1
+#                 __ j <_ ?
+#                     snake_value_at_i v.. ?
+#
+#                 __ i __ s..
+#                     bar +_ "🐍"
+#                     j +_ 1
+#                 ____
+#                     bar +_ "."
+#
+#             print ? ?
+#
+#
+# # if __name__ == "__main__":
+# #     create_chart()

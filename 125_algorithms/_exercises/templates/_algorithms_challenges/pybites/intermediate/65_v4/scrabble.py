@@ -8,7 +8,7 @@ TMP __.g.. TMP  /tmp
 DICT 'dictionary.txt'
 DICTIONARY __.p...j..(TMP, DICT)
 u__.r...u..(
-    f'https://bites-data.s3.us-east-2.amazonaws.com/{DICT}',
+    _*https://bites-data.s3.us-east-2.amazonaws.com/{DICT}',
     DICTIONARY
 )
 

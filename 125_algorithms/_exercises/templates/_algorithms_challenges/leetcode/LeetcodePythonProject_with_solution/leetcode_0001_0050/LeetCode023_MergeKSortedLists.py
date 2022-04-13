@@ -39,7 +39,7 @@ c_ Solution(o..
         ___ lists __ testCases:
             node mergeKLists(lists)
             w.... node:
-                print('%s -> ' % node.val, end='')
+                print('%s -> ' % node.val, e.._'')
                 node node.next
             print('')
             print('-='*30+'-')

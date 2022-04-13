@@ -7,7 +7,7 @@ _______ __
 # prework
 # download pickle file and store it in a tmp file
 pkl_file 'pycon_videos.pkl'
-data f'https://bites-data.s3.us-east-2.amazonaws.com/{pkl_file}'
+data _*https://bites-data.s3.us-east-2.amazonaws.com/{pkl_file}'
 tmp  __.g.. TMP  /tmp
 pycon_videos __.p...j.. ? pkl_file)
 u__.r...u.. ? pycon_videos)

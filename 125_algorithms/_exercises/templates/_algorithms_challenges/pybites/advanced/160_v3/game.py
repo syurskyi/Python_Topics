@@ -5,10 +5,10 @@ ____ c.. _______ d..
 
 TMP __.g.. TMP  /tmp
 DATA 'battle-table.csv'
-BATTLE_DATA __.p...j..(TMP, DATA)
+BATTLE_DATA __.p...j.. ? ?
 __ n.. __.p...i..(BATTLE_DATA
     u..(
-        f'https://bites-data.s3.us-east-2.amazonaws.com/{DATA}',
+        _*https://bites-data.s3.us-east-2.amazonaws.com/{DATA}',
         BATTLE_DATA
     )
 

@@ -26,7 +26,7 @@ ___ test_get_most_popular_talks_by_views(videos
     e.. =  'T-TwcmT6Rcw', 'GBQAKldqgZs', 'ms29ZPUKxbU',
                 'zJ9z6Ge-vXs', 'WiQqqB9MlkA'
     vids l..(get_most_popular_talks_by_views(videos_copy
-    a.. [vid.id ___ vid __ vids[:5]]
+    a.. [vid.id ___ vid __ vids[|5
     ... e.. __ a..
 
 
@@ -36,7 +36,7 @@ ___ test_get_most_popular_talks_by_like_ratio(videos
     vids l..(get_most_popular_talks_by_like_ratio(videos_copy
     e.. =  '8OoR-P6wE0M', 'h-38HZqanJs', 'C7ZhMnfUKIA',
                 'GmbaKdd6o6A', '3EXvR1shVFQ'
-    a.. [vid.id ___ vid __ vids[:5]]
+    a.. [vid.id ___ vid __ vids[|5
     ... e.. __ a..
 
 

@@ -43,18 +43,18 @@ c_ Solution(o..
         head ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
         node head
         w.... node:
-            print('%s => ' % node.val, end='')
+            print('%s => ' % node.val, e.._'')
             node node.next
         node reverseList(head)
         print()
         newHead node
         w.... node:
-            print('%s => ' % node.val, end='')
+            print('%s => ' % node.val, e.._'')
             node node.next
         print()
         node reverseListRecursive(newHead)
         w.... node:
-            print('%s => ' % node.val, end='')
+            print('%s => ' % node.val, e.._'')
             node node.next
         print()
 

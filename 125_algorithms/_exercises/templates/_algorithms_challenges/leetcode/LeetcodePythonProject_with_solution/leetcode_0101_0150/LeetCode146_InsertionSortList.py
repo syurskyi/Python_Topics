@@ -35,7 +35,7 @@ c_ Solution(o..
         ___ head __ testCases:
             node insertionSortList(head)
             w.... node:
-                print('%s, ' % node.val, end='')
+                print('%s, ' % node.val, e.._'')
                 node node.next
             print()
             print('-='*20+'-')

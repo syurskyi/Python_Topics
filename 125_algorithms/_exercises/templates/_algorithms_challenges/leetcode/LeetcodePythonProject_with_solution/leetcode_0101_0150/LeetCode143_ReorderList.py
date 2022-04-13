@@ -60,14 +60,14 @@ c_ Solution(o..
             print('before:')
             node head
             w.... node:
-                print('%s, ' % node.val, end='')
+                print('%s, ' % node.val, e.._'')
                 node node.next
             print()
             reorderList(head)
             print('after:')
             node head
             w.... node:
-                print('%s, ' % node.val, end='')
+                print('%s, ' % node.val, e.._'')
                 node node.next
             print()
             print('-='*20+'-')
