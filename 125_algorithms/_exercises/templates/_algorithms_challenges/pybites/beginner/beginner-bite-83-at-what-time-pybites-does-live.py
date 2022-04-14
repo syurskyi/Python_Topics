@@ -15,7 +15,7 @@ datetimes returning them in a tuple. For a bit more advanced pytz Bite try Bite 
 Have fun and keep coding in Python!
 '''
 
-____ pytz _______ timezone, utc
+____ p__ _______ timezone, utc
 ____ d__ _______ d__
 
 AUSTRALIA timezone('Australia/Sydney')
@@ -25,8 +25,8 @@ SPAIN timezone('Europe/Madrid')
 ___ what_time_lives_pybites(naive_utc_dt
     """Receives a naive UTC datetime object and returns a two element
        tuple of Australian and Spanish (timezone aware) datetimes"""
-    au naive_utc_dt.astimezone(AUSTRALIA)
-    es naive_utc_dt.astimezone(SPAIN)
+    au naive_utc_dt.a..(AUSTRALIA)
+    es naive_utc_dt.a..(SPAIN)
     t (au,es)
     r.. t
 

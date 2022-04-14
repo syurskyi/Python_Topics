@@ -9,14 +9,14 @@ ___ py2_earth_hours_left start_date_B..
     """Return how many hours, rounded to 2 decimals, Python 2 has
        left on Planet Earth (calculated from start_date)"""
     duration ? - ?
-    r.. r..(duration.total_seconds()/3600,2)
+    r.. r..(duration.t../3600,2)
 
 
 ___ py2_miller_min_left start_date_B..
     """Return how many minutes, rounded to 2 decimals, Python 2 has
        left on Planet Miller (calculated from start_date)"""
     duration ? - ?
-    r.. r..((duration.total_seconds()/60)/61320,2)
+    r.. r..((duration.t../60)/61320,2)
 
 print(py2_miller_min_left
 

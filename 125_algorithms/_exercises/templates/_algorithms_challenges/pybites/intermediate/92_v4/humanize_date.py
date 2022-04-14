@@ -22,7 +22,7 @@ ___ pretty_date(date
     __ n.. isi..(date, d__) o. date > NOW:
         r.. V...
 
-    secs (NOW - date).total_seconds()
+    secs (NOW - date).t..
     print _*{secs=}')
     ___ to __ TIME_OFFSETS:
         __ secs < to.offset:

@@ -1,4 +1,4 @@
-____ pytz _______ timezone, utc
+____ p__ _______ timezone, utc
 ____ d__ _______ d__
 
 AUSTRALIA timezone('Australia/Sydney')
@@ -12,8 +12,8 @@ ___ what_time_lives_pybites( aive_utc_dt
     #print(utc.localize(naive_utc_dt))
     #print(utc.localize(naive_utc_dt).astimezone(SPAIN))
     #print(utc.localize(naive_utc_dt).astimezone(AUSTRALIA))
-    r.. (utc.localize(naive_utc_dt).astimezone(AUSTRALIA),
-            utc.localize(naive_utc_dt).astimezone(SPAIN
+    r.. (utc.localize(naive_utc_dt).a..(AUSTRALIA),
+            utc.localize(naive_utc_dt).a..(SPAIN
 
 
 

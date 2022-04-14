@@ -1,4 +1,4 @@
-____ pytz _______ timezone
+____ p__ _______ timezone
 ____ d__ _______ d__
 
 AUSTRALIA timezone('Australia/Sydney')

@@ -46,7 +46,7 @@ ___ get_srt_section_ids(text: s..) __ L.. i..
        index, timestamp, line dialog.s...s..
        begintime, endtime timestamp.s..(' --> ')
        duration d__.fromisoformat _*{epoch} {endtime[:8]}') - d__.fromisoformat _*{epoch} {begintime[:8]}')
-       line_dict[i..(index)] l..(line)/duration.total_seconds()
+       line_dict[i..(index)] l..(line)/duration.t..
     r.. s..(line_dict, key=line_dict.get, reverse=T.. )
 
 

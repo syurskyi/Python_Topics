@@ -50,7 +50,7 @@ ___ longest_streak(
         commit commits[i]
         __ commit 'passed' :
             date p..(commit 'date' )
-            date date.astimezone(my_tz)
+            date date.a..(my_tz)
 
 
             date date.date()

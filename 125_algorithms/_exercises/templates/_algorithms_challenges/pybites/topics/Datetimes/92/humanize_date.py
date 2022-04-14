@@ -21,7 +21,7 @@ ___ pretty_date(date
        using TIME_OFFSETS"""
     __ n.. isi..(date, d__) o. date > NOW:
         r.. V...
-    elapsed (NOW - date).total_seconds()
+    elapsed (NOW - date).t..
     ___ timeoffset __ TIME_OFFSETS:
         __ elapsed < timeoffset.offset:
             __ timeoffset.divider:

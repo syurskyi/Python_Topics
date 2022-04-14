@@ -1,25 +1,25 @@
-_______ pytz
-____ d__ _______ d__
-
-MEETING_HOURS  r..(6, 23)  # meet from 6 - 22 max
-TIMEZONES  s..(pytz.all_timezones)
-
-
-___ within_schedule(utc, *timezones
-   """Receive a utc datetime and one or more timezones and check if
-      they are all within schedule (MEETING_HOURS)"""
-   
-   ___ time_z __ timezones:
-      
-      __ time_z n.. __ TIMEZONES:
-         r.. V...("Please use valid timezone")
-                  
-      new_tz  pytz.timezone(time_z)
-         
-      utc_localized  new_tz.localize(utc)
-      utc_localized_offset  i..(utc_localized.utcoffset().total_seconds()/60/60)
-      time_difference  utc.hour + utc_localized_offset
-      
-      __ time_difference n.. __ MEETING_HOURS:
-         r.. F..
-   r.. T..
+# _______ pytz
+# ____ d__ _______ d__
+#
+# MEETING_HOURS  r..(6, 23)  # meet from 6 - 22 max
+# TIMEZONES  s.. p__.a..
+#
+#
+# ___ within_schedule utc $timezones
+#    """Receive a utc datetime and one or more timezones and check if
+#       they are all within schedule (MEETING_HOURS)"""
+#
+#    ___ time_z __ ?
+#
+#       __ time_z n.. __ T..
+#          r.. V... "Please use valid timezone"
+#
+#       new_tz  p__.t.. ?
+#
+#       utc_localized  new_tz.l.. u..
+#       utc_localized_offset  i.. ? .u__ .t../60/60
+#       time_difference  utc.h.. + ?
+#
+#       __ t.. n.. __ M..
+#          r.. F..
+#    r.. T..
