@@ -1,6 +1,6 @@
 _______ sqlite3
 ____ e.. _______ E..
-____ t___ _______ A.., Dict, L.., Optional, Tuple, U..
+____ t___ _______ A.., Dict, L.., O.., Tuple, U..
 
 
 c_ SQLiteType(E..
@@ -49,7 +49,7 @@ c_ DB:
             column name and column type.
     """
 
-    ___ - , location: Optional[s..] ":memory:"
+    ___ - , location: O..[s..] ":memory:"
         location location
         cursor N..
         connection N..
@@ -144,8 +144,8 @@ c_ DB:
     ___ select(
             self,
             table: s..,
-            columns: Optional[L..[s..]] N..,
-            target: Optional[Tuple[s.., Optional[s..], A..]] N..,
+            columns: O..[L..[s..]] N..,
+            target: O..[Tuple[s.., O..[s..], A..]] N..,
     ) __ L..[Tuple]:
         """Selects records from the database.
 

@@ -5,7 +5,7 @@ ____ cryptography.hazmat.primitives _______ hashes  # type: ignore
 ____ cryptography.hazmat.primitives.kdf.pbkdf2 _______ PBKDF2HMAC  # type: ignore
 _______ __
 ____ __ _______ urandom
-____ t___ _______ ByteString, Tuple, Optional
+____ t___ _______ ByteString, Tuple, O..
 
 
 c_ ClamyFernet:

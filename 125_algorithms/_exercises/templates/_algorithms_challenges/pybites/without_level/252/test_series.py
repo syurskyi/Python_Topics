@@ -73,7 +73,7 @@ ___ test_get_index(alpha_series
 
 ___ test_get_values(alpha_series
     vals se.get_values(alpha_series)
-    ... isi.. ? np.ndarray)
+    ... isi.. ? ?.n..
     ... l..(vals) __ 26
     ... a..(c __ r..(1, 27) ___ c __ vals)
 

@@ -1,11 +1,11 @@
-____ t___ _______ Optional
+____ t___ _______ O..
 
 _______ n.... __ np
 
 
-___ convolution2D(
-    image: np.array, kernel: np.array, padding: Optional[i..] N.., stride: i.. 1
-) __ np.array:
+___ convolution2D
+    image ?.a.. kernel ?.a.. padding O.. i.. N.. stride i.. 1
+ __ ?.a..
     """Calculate the convolution between the input image and a filter, returning the feature map.
 
     Args:
@@ -18,44 +18,44 @@ ___ convolution2D(
         np.array: the feature map constructed from the image and the kernel.
     """
 
-    arrays (image,kernel)
+    arrays i.. k..
     # assert that both are 2D numpy arrays
-    __ n.. a..(isi..(array,np.ndarray) ___ array __ arrays
+    __ n.. a.. isi.. ? ?.n.. ___ array __ ?
         r.. T..("image and kernel must be numpy arrays of dimension 2")
 
-    __ n.. a..(array.ndim __ 2 ___ array __ arrays
+    __ n.. a.. array.n.. __ 2 ___ ? __ ?
         r.. V...("kernel and filter must be size 2")
         
-    is_not_integer l.... x: n.. isi..(x,i..) o. (isi..(x,f__) a.. n.. x.is_integer
+    is_not_integer l.... x| n.. isi.. ? i.. o. isi.. ? f__ a.. n.. ?.i..
     
     
-    __ n.. a..(array.shape[0] __ array.shape[1] ___ array __ arrays
+    __ n.. a.. a__.s.. 0 __ ?.s.. 1 ___ ? __ ?
         r.. V...("Height must equal width for both kernel and image")
     
 
-    __ n.. a..(np.issubdtype(array.dtype,np.number) ___ array __ arrays
+    __ n.. a.. ?.i.. a__.d.. ?.n.. ___ ? __ ?
         r.. T..("Kernel and image must contain only numeric values")
 
 
 
-    __ kernel.shape[0] % 2 __ 0:
+    __ k__.s.. 0 % 2 __ 0
         r.. V...("Kernel size must be odd")
 
 
-    __ kernel.shape[0] > image.shape[0]:
+    __ k__.s.. 0 > i__.s.. 0
         r.. V...("Kernel must be less than image size")
     
 
 
     types ('padding','stride')
     mins (0,1)
-    values (padding,stride)
+    values  p.. s..
 
     
-    true_values =[]
-    ___ value,type_,min_ __ z..(values,types,mins
+    true_values   # list
+    ___ value,type_,min_ __ z.. ? ? ?
         __ value __ n.. N..
-            __ is_not_integer(value
+            __ is_not_integer ?
                 r.. T..(f"{type_} must be integer")
             __ n.. value >_ min_:
                 r.. V...(f"{type_}, must be greater than zero")
@@ -65,13 +65,13 @@ ___ convolution2D(
 
              
     __ padding __ N..
-        padding (kernel.shape[0] - 1)//2
+        padding (kernel.s.. 0 - 1)//2
     ____
         padding i..(padding)
 
 
 
-    output_array_size i..(np.f..((image.shape[0] + 2 * padding - kernel.shape 0/stride + 1
+    output_array_size i..(np.f..((image.s.. 0 + 2 * padding - kernel.shape 0/stride + 1
 
 
     output_array np.zeros((output_array_size,) * 2)
@@ -81,8 +81,8 @@ ___ convolution2D(
 
     
 
-    rows cols =  image.shape[0]
-    kernel_size kernel.shape[0]
+    rows cols =  image.s.. 0
+    kernel_size kernel.s.. 0
 
     output_row output_col 0
 
