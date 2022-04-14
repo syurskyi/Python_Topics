@@ -4,16 +4,16 @@ c_ RecordScore
     ___ -
         high_score f__('-inf')
 
-    ___ __call__  score
+    ___ -c  score
         score score
         __ score > high_score:
             high_score score
         r.. high_score
 
 
-record RecordScore()
+record ?
 
-print(record(-6
-print(record(-4
-print(record(-2
-print(record(-3
+print( ?-6
+print( ?-4
+print( ?-2
+print( ?-3

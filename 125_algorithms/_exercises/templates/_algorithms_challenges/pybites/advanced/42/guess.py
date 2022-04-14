@@ -75,7 +75,7 @@ c_ Game:
             print(f"{guess} is too low")
         
         r.. correct
-    ___ __call__
+    ___ -c
         """Entry point / game loop, use a loop break/continue,
            see the tests for the exact win/lose messaging"""
 

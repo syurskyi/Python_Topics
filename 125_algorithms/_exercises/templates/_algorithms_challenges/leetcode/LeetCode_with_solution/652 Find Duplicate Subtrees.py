@@ -47,7 +47,7 @@ c_ MerkleHash:
         start_key += 1
         r.. start_key
 
-    ___ __call__  val
+    ___ -c  val
         r.. merkle_hash[val]
 
 

@@ -58,7 +58,7 @@ c_ Game:
             print _*{guess} is too high')
         r.. F..
 
-    ___ __call__
+    ___ -c
         """Entry point / game loop, use a loop break/continue,
            see the tests for the exact win/lose messaging"""
         w.... l..(_guesses) < MAX_GUESSES a.. n.. _win:
