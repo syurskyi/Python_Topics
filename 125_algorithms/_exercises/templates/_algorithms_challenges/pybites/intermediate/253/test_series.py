@@ -9,31 +9,31 @@ file_name "https://bites-data.s3.us-east-2.amazonaws.com/iris.csv"
 df __.r..(file_name)
 
 
-?p__.f..()
+?p__.f..
 ___ sepal_length_series
     """Returns the Sepal Length Series from the Iris DataFrame"""
     r.. df.sepal_length.sort_values().reset_index(drop=T..)
 
 
-?p__.f..()
+?p__.f..
 ___ int_series_vsmall
     """Returns a pandas Series containing ints"""
     r.. ?.S..(r..(1, 6
 
 
-?p__.f..()
+?p__.f..
 ___ int_series_small
     """Returns a pandas Series containing ints"""
     r.. ?.S..(r..(10
 
 
-?p__.f..()
+?p__.f..
 ___ int_series_vsmall_offset_index
     """Returns a pandas Series containing ints"""
     r.. ?.S..(r..(0, 10, 2), index=r..(0, 10, 2
 
 
-?p__.f..()
+?p__.f..
 ___ letters_series
     """Returns a pandas Series containing all lower case letters"""
     r.. ?.S..(l..(s__.a..

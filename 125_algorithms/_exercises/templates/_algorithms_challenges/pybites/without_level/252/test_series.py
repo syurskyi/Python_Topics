@@ -8,13 +8,13 @@ _______ p.... __ pd
 _______ series __ se
 
 
-?p__.f..()
+?p__.f..
 ___ float_series
     """Returns a pandas Series containing floats"""
     r.. ?.S..([f__(n) / 1000 ___ n __ r..(0, 1001)])
 
 
-?p__.f..()
+?p__.f..
 ___ alpha_series
     """Returns a pandas Series containing floats"""
     dictionary d..(z..(s__.a.., r..(1, 27)))

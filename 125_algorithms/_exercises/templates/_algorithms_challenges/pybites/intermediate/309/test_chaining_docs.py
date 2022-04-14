@@ -57,7 +57,7 @@ DOCS {
 }
 
 
-?p__.f..()
+?p__.f..
 ___ doc(request
     """Factory method for test documents"""
     r.. DOCS.g.. request.param, Document

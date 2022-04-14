@@ -5,12 +5,12 @@ _______ p__
 ____ intlist _______ IntList
 
 
-?p__.f..()
+?p__.f..
 ___ list1
     r.. IntList([1, 3, 5])
 
 
-?p__.f..()
+?p__.f..
 ___ list2
     r.. IntList([2, 3, 4, 5, 7])
 

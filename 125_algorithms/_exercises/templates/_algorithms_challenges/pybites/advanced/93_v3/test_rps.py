@@ -6,7 +6,7 @@ ____ rps _______ (_get_winner, game,
                  lose, win, tie)
 
 
-?p__.f..()
+?p__.f..
 ___ my_game
     """Initialize game and move it to point where to
        receive first player (send) input"""

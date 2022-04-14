@@ -3,7 +3,7 @@ ____ s__ _______ a..
 ____ binary_search _______ binary_search
 
 PRIMES [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61]
-ALPHABET l..(a..)
+ALPHABET l.. a..
 
 
 ___ test_binary_search_prime

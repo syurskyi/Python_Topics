@@ -8,7 +8,7 @@ _______ monitor
 ____ monitor _______ timeit, ALERT_MSG
 
 
-?p__.f..()
+?p__.f..
 ___ clean_cache
     """Make sure each test starts with a clean cache dict"""
     monitor.violations C..()

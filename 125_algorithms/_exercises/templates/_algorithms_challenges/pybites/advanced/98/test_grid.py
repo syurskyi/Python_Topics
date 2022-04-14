@@ -27,7 +27,7 @@ ___ test_print_sequence_route_small_grid(capfd
     print_sequence_route(small_grid)
     a.. ?.r .. 0].s..
 
-    ... l..(a..) __ l..(e..)
+    ... l.. a.. __ l..(e..)
 
     ___ i, j __ z..(a.., e..
         ... i.s.. __ j.s..
@@ -68,7 +68,7 @@ ___ test_print_sequence_route_intermediate_grid(capfd
     print_sequence_route(intermediate_grid)
     a.. ?.r .. 0].s..
 
-    ... l..(a..) __ l..(e..)
+    ... l.. a.. __ l..(e..)
 
     ___ i, j __ z..(a.., e..
         ... i.s.. __ j.s..
@@ -117,7 +117,7 @@ ___ test_print_sequence_route_big_grid(capfd
     print_sequence_route(big_grid)
     a.. ?.r .. 0].s..
 
-    ... l..(a..) __ l..(e..)
+    ... l.. a.. __ l..(e..)
 
     ___ i, j __ z..(a.., e..
         ... i.s.. __ j.s..

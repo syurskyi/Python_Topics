@@ -5,7 +5,7 @@ _______ p__
 ____ dc _______ Bite
 
 
-?p__.f..()
+?p__.f..
 ___ bites
     b1 Bite(number=1, title="sum of numbers")
     b2 Bite(number=2, title="a second bite", level="Intermediate")

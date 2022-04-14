@@ -147,7 +147,7 @@ ___ test_lowest_ranking_after_adding_more_ninjas(ninja_ranks
 
 ___ test_pairing_with_no_arg(ninja_ranks
     a.. ninja_ranks.pair_up()
-    ... l..(a..) __ 3
+    ... l.. a.. __ 3
 
     e.. (Ninja(name="doug", bites=469), Ninja(name="sara", bites=196
     ... a..[1] __ e..
@@ -155,7 +155,7 @@ ___ test_pairing_with_no_arg(ninja_ranks
 
 ___ test_pairing_with_count_arg(ninja_ranks
     a.. ninja_ranks.pair_up(5)
-    ... l..(a..) __ 5
+    ... l.. a.. __ 5
 
     e.. (Ninja(name="noah", bites=470),
                 Ninja(name="sam", bites=195

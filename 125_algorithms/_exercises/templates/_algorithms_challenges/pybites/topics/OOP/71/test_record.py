@@ -3,7 +3,7 @@ _______ p__
 ____ ? _______ ?
 
 
-?p__.f..()
+?p__.f..
 ___ record
     """Make a RecordScore object with a few scores"""
     record ?

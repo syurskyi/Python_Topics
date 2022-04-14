@@ -29,7 +29,7 @@ ___ matching_result
 )
 ___ test_get_all_days(start, end, e..
     a.. get_all_days(start, end)
-    ... l..(a..) __ e..
+    ... l.. a.. __ e..
 
     ... isi..(a..[0], date)
     ... isi..(a..[-1], date)
