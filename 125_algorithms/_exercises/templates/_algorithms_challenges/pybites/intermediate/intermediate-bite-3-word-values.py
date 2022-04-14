@@ -22,14 +22,14 @@ TMP __.g.. TMP  /tmp
 print(TMP)
 S3 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DICT 'dictionary.txt'
-DICTIONARY __.p...j..(TMP, DICT)
+DICTIONARY __.p...j.. ? ?)
 print(DICTIONARY)
 u__.r...u.. _*{S3}{DICT}', DICTIONARY)
 
 scrabble_scores [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]
-LETTER_SCORES {letter: score ___ score, letters __ scrabble_scores
-                 ___ letter __ letters.s.. }
+LETTER_SCORES  letter| score ___ ? ? __ ?
+                 ___ ? __ ?.s..
 
 # start coding
 
@@ -57,14 +57,14 @@ ___ calc_word_value_v1(word
     r.. value
 
 ___ calc_word_value_v2(word
-    r.. s..(LETTER_SCORES.g.. char.u.., 0) ___ char __ word)
+    r.. s.. ?.g.. char.u.., 0 ___ ? __ ?
 
 
-___ max_word_value(words
+___ max_word_value words
     """Given a list of words calculate the word with the maximum value and return it"""
     m.. ()
     ___ word __ words:
-        value calc_word_value(word)
+        value calc_word_value word)
         __ m.. __
             m.. (word, value)
         ____
@@ -73,6 +73,6 @@ ___ max_word_value(words
     r.. m..[0]
 
 ___ max_word_value_v2(words
-    r.. m..(words, key=calc_word_value)
+    r.. m.. ? k.._?
 
 print(max_word_value( 'zime', 'fgrtgtrtvv' 

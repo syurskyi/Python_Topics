@@ -5,7 +5,7 @@ _______ u__.r..
 # PREWORK
 TMP __.g.. TMP  /tmp
 DICT 'dictionary.txt'
-DICTIONARY __.p...j..(TMP, DICT)
+DICTIONARY __.p...j.. ? ?)
 u__.r...u..(
     _*https://bites-data.s3.us-east-2.amazonaws.com/{DICT}',
     DICTIONARY
@@ -16,15 +16,15 @@ w__ o.. ? __ f
 
 scrabble_scores [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]
-LETTER_SCORES {letter: score ___ score, letters __ scrabble_scores
-                 ___ letter __ letters.s.. }
+LETTER_SCORES  letter| score ___ ? ? __ ?
+                 ___ ? __ ?.s..
 
 
-___ calc_word_value(word
+___ calc_word_value word
     """Calc a given word value based on Scrabble LETTER_SCORES mapping"""
-    r.. s..(LETTER_SCORES.g.. char.u.., 0) ___ char __ word)
+    r.. s.. ?.g.. char.u.., 0 ___ ? __ ?
 
-___ get_possible_dict_words(draw
+___ get_possible_dict_words draw
     """Get all possible words from a draw (list of letters) which are
        valid dictionary words. Use _get_permutations_draw and provided
        dictionary"""
@@ -42,7 +42,7 @@ ___ get_possible_dict_words(draw
             listOfKeys.a..(key)
     r.. listOfKeys
 
-___ _get_permutations_draw(draw
+___ _get_permutations_draw draw
     """Helper to get all permutations of a draw (list of letters), hint:
        use itertools.permutations (order of letters matters)"""
     """     
