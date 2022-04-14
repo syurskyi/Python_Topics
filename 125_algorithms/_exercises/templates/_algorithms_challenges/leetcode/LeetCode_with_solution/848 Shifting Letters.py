@@ -29,7 +29,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ shiftingLetters  S: s.., shifts: L..[i..]) __ s..:
+    ___ shiftingLetters  S: s.., shifts: L.. i.. __ s..
         """
         preprocess shifts
         """

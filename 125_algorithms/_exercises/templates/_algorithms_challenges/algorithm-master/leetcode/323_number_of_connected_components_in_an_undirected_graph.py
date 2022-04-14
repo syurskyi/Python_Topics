@@ -27,7 +27,7 @@ c_ Solution:
         __ n.. n o. n.. edges:
             r.. 0
 
-        nodes [i ___ i __ r..(n)]
+        nodes  i ___ ? __ r..(n)]
 
         ans n
 

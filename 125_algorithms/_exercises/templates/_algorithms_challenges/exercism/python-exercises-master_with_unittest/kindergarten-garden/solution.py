@@ -6,7 +6,7 @@ c_ Garden(o..
     ___ - , diagram,
                  students=("Alice Bob Charlie David "
                            "Eve Fred Ginny Harriet "
-                           "Ileana Joseph Kincaid Larry").s..:
+                           "Ileana Joseph Kincaid Larry").s..
         plant_rows diagram.s..
         students s..(students)
 

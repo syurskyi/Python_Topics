@@ -49,7 +49,7 @@ c_ Corpora:
         stopwords STOPWORDS
 
     $
-    ___ cleaned(self) __ s..:
+    ___ cleaned(self) __ s..
         """Takes a corpus and cleans it up.
 
         * All text is made lowercase

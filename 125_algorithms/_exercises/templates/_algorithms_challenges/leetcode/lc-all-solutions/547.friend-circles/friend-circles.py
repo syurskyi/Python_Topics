@@ -1,6 +1,6 @@
 c_ UnionFind(o..
   ___ - , n
-    dad [i ___ i __ r..(n)]
+    dad  i ___ ? __ r..(n)]
     rank [0 ___ i __ r..(n)]
     count n
 

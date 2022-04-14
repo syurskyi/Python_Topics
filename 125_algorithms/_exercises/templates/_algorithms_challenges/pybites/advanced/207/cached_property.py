@@ -7,12 +7,12 @@ ___ cached_property(func
     """decorator used to cache expensive object attribute lookup"""
     cache N..
     $w.. f..
-    ___ wrapper $ $$:
+    ___ wrapper $ $$
         nonlocal cache
         __ cache __ N..
             cache func $ $$
         r.. cache
-    r.. wrapper
+    r.. ?
 
 
 c_ Planet:

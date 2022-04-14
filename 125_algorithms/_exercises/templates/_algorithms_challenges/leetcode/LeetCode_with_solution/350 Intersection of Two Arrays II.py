@@ -35,7 +35,7 @@ c_ Solution(o..
             h2[b] += 1
 
         ret    # list
-        ___ k, v __ h1.i..:
+        ___ k, v __ h1.i..
             cnt m..(v, h2[k])
             ret.e.. [k]*cnt)
 

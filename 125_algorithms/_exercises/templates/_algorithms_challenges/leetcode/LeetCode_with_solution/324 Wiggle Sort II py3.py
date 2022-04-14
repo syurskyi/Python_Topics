@@ -21,7 +21,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ wiggleSort  nums: L..[i..]) __ N..
+    ___ wiggleSort  nums: L.. i.. __ N..
         """
         Do not return anything, modify nums in-place instead.
 

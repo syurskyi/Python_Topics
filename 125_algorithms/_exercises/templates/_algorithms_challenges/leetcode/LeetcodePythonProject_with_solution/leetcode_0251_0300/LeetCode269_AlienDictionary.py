@@ -29,7 +29,7 @@ c_ Solution(o..
                     graph[c1].add(c2)
                     _____
         queue    # list
-        ___ c, cnt __ degree.i..:
+        ___ c, cnt __ degree.i..
             __ cnt __ 0:
                 queue.a..(c)
         res ''

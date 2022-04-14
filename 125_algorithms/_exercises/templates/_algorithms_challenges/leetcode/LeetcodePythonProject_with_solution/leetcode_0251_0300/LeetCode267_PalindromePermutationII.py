@@ -16,7 +16,7 @@ c_ Solution(o..
             hashmap[c] hashmap.g.. c, 0)+1
         odd 0
         oddVal ''
-        ___ key, value __ hashmap.i..:
+        ___ key, value __ hashmap.i..
             __ value%2 !_ 0:
                 oddVal key
                 odd += 1
@@ -34,7 +34,7 @@ c_ Solution(o..
         __ l..(s0) >_ length:
             result.a..(s0)
             r..
-        ___ c, val __ hashmap.i..:
+        ___ c, val __ hashmap.i..
             __ val >_ 2:
                 hashmap[c] -_ 2
                 helper(c+s0+c, length, hashmap, result)

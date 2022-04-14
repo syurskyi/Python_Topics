@@ -43,7 +43,7 @@ ____ c.. _______ d.., d..
 
 
 c_ Solution(o..
-    ___ alienOrder  words: L..[s..]) __ s..:
+    ___ alienOrder  words: L..s.. __ s..
         G construct_graph(words)
         visited d..(i..)  # 0 not visited, 1 visiting, 2 visted
         ret d..()

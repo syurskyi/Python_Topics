@@ -42,9 +42,9 @@ ___ filter_entries_by_tag(s.., entry
           e.g. flask|django should match entries with either tag
        3. Else: match if search is in tags
     """
-    __ '&' __ s..:
+    __ '&' __ s..
         r.. a..(tag.l.. __ entry.tags ___ tag __ s...s..('&'
-    __ '|' __ s..:
+    __ '|' __ s..
         r.. a__(tag.l.. __ entry.tags ___ tag __ s...s..('|'
     r.. s...l.. __ entry.tags
 

@@ -26,7 +26,7 @@ number of consecutive 1's and 0's.
 
 
 c_ Solution:
-    ___ countBinarySubstrings  s: s..) __ i..:
+    ___ countBinarySubstrings  s: s..) __ i..
         """
         two-pointers + math
         """
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ countBinarySubstrings_error  s: s..) __ i..:
+    ___ countBinarySubstrings_error  s: s..) __ i..
         """
         two-pointers + math
         """

@@ -36,7 +36,7 @@ c_ Solution:
     ___ -
         ret 0
 
-    ___ maxAncestorDiff  root: TreeNode) __ i..:
+    ___ maxAncestorDiff  root: TreeNode) __ i..
         """
         dfs return min and max
         """

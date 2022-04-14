@@ -29,7 +29,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ numPairsDivisibleBy60  t__: L..[i..]) __ i..:
+    ___ numPairsDivisibleBy60  t__: L.. i.. __ i..
         """
         Running attribution
         """
@@ -42,7 +42,7 @@ c_ Solution:
         r.. ret
 
 
-    ___ numPairsDivisibleBy60_error  t__: L..[i..]) __ i..:
+    ___ numPairsDivisibleBy60_error  t__: L.. i.. __ i..
         """
         O(N^2) check i, j
         Reduce it
@@ -55,7 +55,7 @@ c_ Solution:
             hm[t % 60] += 1
 
         ret 0
-        ___ k, v __ hm.i..:
+        ___ k, v __ hm.i..
             __ k __ 0:
                 ret += (v * (v - 1 // 2
             ____ k <_ 60 - k:  # attribution

@@ -13,7 +13,7 @@ c_ Solution(o..
 
     start, end 0, m * n - 1
     w.... start + 1 < end:
-      mid start + (end - start) / 2
+      mid start + (? - ?) / 2
       __ matrix[mid / n][mid % n] > target:
         end mid
       ____ matrix[mid / n][mid % n] < target:

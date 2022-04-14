@@ -18,7 +18,7 @@ Output: -1
 
 
 c_ Solution:
-    ___ nextGreaterElement  n: i..) __ i..:
+    ___ nextGreaterElement  n: i..) __ i..
         """
         next permutation
 
@@ -51,7 +51,7 @@ c_ Solution:
         ____
             r.. -1
 
-    ___ nextGreaterElement_sort  n: i..) __ i..:
+    ___ nextGreaterElement_sort  n: i..) __ i..
         """
         Looking at the decimal digits rather than binary digits
 

@@ -18,7 +18,7 @@ c_ Solution:
             f.. M, a)
 
         res    # dict
-        ___ m1, m0 __ M.i..:
+        ___ m1, m0 __ M.i..
             __ m0 n.. __ res:
                 res[m0]    # list
 

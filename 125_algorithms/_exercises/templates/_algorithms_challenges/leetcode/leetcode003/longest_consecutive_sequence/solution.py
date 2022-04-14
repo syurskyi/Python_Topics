@@ -5,11 +5,11 @@ c_ Solution:
         __ n.. num:
             r.. 0
         d    # dict
-        ___ e __ num:
+        ___ e __ ?
             __ e n.. __ d:
                 d[e] 1
         res 1
-        ___ c __ num:
+        ___ c __ ?
             current 1
             __ c n.. __ d:
                 _____

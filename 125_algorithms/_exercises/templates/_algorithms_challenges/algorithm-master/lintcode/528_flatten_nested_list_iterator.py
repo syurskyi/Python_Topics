@@ -36,7 +36,7 @@ c_ NestedIterator(o..
         lst, i stack[-1]
         stack[-1][1] += 1
 
-        r.. lst[i].getInteger()
+        r.. ?[i].getInteger()
 
     # @return {boolean} true if the iteration has more element or false
     ___ hasNext

@@ -37,7 +37,7 @@ ____ c.. _______ C..
 
 
 c_ Solution:
-    ___ canReorderDoubled  A: L..[i..]) __ b..:
+    ___ canReorderDoubled  A: L.. i.. __ b..
         A.s..(key=a..)
         counter C..(A)
         ___ a __ A:
@@ -51,7 +51,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ canReorderDoubled_positive_negative  A: L..[i..]) __ b..:
+    ___ canReorderDoubled_positive_negative  A: L.. i.. __ b..
         """
         sort + counter to form the doubled pairs
         """

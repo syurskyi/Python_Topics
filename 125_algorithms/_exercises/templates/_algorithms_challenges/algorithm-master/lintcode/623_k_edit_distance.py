@@ -37,7 +37,7 @@ c_ Solution:
             trie.put(word)
 
         ans    # list
-        dp [i ___ i __ r..(l..(target) + 1)]
+        dp  i ___ ? __ r..(l..(target) + 1)]
 
         dfs(trie.root, k, target, ans, dp)
 

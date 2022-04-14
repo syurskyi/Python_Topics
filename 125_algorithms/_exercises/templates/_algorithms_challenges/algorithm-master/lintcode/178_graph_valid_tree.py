@@ -8,7 +8,7 @@ c_ Solution:
         __ l..(edges) !_ n - 1:
             r.. F..
 
-        nodes [i ___ i __ r..(n)]
+        nodes  i ___ ? __ r..(n)]
 
         ___ a, b __ edges:
             _a f.. nodes, a)

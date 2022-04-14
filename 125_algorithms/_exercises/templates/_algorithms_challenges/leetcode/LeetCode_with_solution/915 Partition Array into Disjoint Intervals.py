@@ -31,7 +31,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ partitionDisjoint  A: L..[i..]) __ i..:
+    ___ partitionDisjoint  A: L.. i.. __ i..
         """
         max(left) <= min(right)
 
@@ -50,7 +50,7 @@ c_ Solution:
                 r.. l
         r..
 
-    ___ partitionDisjoint_2  A: L..[i..]) __ i..:
+    ___ partitionDisjoint_2  A: L.. i.. __ i..
         """
         max(left) <= min(right)
         """

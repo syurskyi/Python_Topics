@@ -35,7 +35,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ largestSumAfterKNegations  A: L..[i..], K: i..) __ i..:
+    ___ largestSumAfterKNegations  A: L..[i..], K: i..) __ i..
         """
         revert all the negative, if positive, revert multiple times the smallest
 

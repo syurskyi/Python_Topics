@@ -1,6 +1,6 @@
 ____ c.. _______ C..
 
-___ freq_digit(num: i..) __ i..:
+___ freq_digit(num: i..) __ i..
     cnt C..(s..(num
     print(t..(cnt
     print(cnt.most_common 1 0 0)

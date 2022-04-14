@@ -24,8 +24,8 @@ ___ has_the_moves(player, moves
 
 ___ is_winner(board
     # Check for winner
-    player_one_moves  [i ___ i, x __ e..(board) __ x __ player_one]
-    player_two_moves  [i ___ i, x __ e..(board) __ x __ player_two]
+    player_one_moves   i ___ ?, x __ e..(board) __ x __ player_one]
+    player_two_moves   i ___ ?, x __ e..(board) __ x __ player_two]
 
     player_one_won  has_the_moves(player_one, player_one_moves)
     player_two_won  has_the_moves(player_two, player_two_moves)

@@ -14,7 +14,7 @@ c_ Solution:
         :rtype : bool
         """
         d C..(nums)
-        ___ k, v __ d.i..:
+        ___ k, v __ d.i..
             __ v > 1:
                 r.. T..
 

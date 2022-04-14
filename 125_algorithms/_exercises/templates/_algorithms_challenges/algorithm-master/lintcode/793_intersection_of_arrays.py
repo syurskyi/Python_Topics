@@ -20,7 +20,7 @@ c_ Solution:
                     C[a] s..()
                 C[a].add(i)
 
-        ___ a, S __ C.i..:
+        ___ a, S __ C.i..
             __ l..(S) __ n:
                 ans += 1
 

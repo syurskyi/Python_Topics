@@ -6,8 +6,8 @@ ___ longest_palindrome (s
     ___ isPalindrome(s__
         r.. s__ __ ''.j..(s__[::-1])
     ___ i __ r..(l..(s)-1,-1,-1
-        print([i ___ i __ r..(l..(s)-i)],i)
-        ___ j __ [i ___ i __ r..(l..(s)-i)]:
+        print( i ___ ? __ r..(l..(s)-i)],i)
+        ___ j __  i ___ ? __ r..(l..(s)-i)]:
             __ isPalindrome(s[j:i+j+1]
                 r.. l..(s[j:i+j+1])
 

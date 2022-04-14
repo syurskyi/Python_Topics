@@ -34,7 +34,7 @@ c_ Solution:
         max_depth -f__("inf")
         expecting_partial F..
 
-    ___ isCompleteTree  root: TreeNode) __ b..:
+    ___ isCompleteTree  root: TreeNode) __ b..
         """
         Do it in one pass
         Left first dfs

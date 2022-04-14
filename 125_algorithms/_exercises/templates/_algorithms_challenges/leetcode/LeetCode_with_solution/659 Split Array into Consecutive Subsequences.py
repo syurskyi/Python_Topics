@@ -31,7 +31,7 @@ _______ h__
 
 
 c_ Solution:
-    ___ isPossible  nums: L..[i..]) __ b..:
+    ___ isPossible  nums: L.. i.. __ b..
         """
         Attribute a number to a existing consecutive subsequences
         future numbers depend on this number to form the subsequence can also
@@ -81,7 +81,7 @@ c_ Interval:
 
 
 c_ Solution2:
-    ___ isPossible  nums: L..[i..]) __ b..:
+    ___ isPossible  nums: L.. i.. __ b..
         """
         (length, last)
         heap sortest first

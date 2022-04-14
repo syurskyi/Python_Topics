@@ -21,7 +21,7 @@ ____ b__ _______ bisect_left
 
 
 c_ Solution:
-    ___ lengthOfLIS  nums: L..[i..]) __ i..:
+    ___ lengthOfLIS  nums: L.. i.. __ i..
         """
         LIS dp + binary search
         Patience sort

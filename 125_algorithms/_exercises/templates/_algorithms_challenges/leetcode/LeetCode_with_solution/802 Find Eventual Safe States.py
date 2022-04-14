@@ -33,7 +33,7 @@ ____ t___ _______ L.., S..
 
 
 c_ Solution:
-    ___ eventualSafeNodes  graph: L..[L..[i..]]) __ L..[i..]:
+    ___ eventualSafeNodes  graph: L..[L..[i..]]) __ L.. i..
         """
         detect cycle in the node
         prune by nodes with no cycle

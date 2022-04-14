@@ -20,7 +20,7 @@ c_ Solution(o..
         __ l..(visited) __ goal: r.. T..
         prevArr arr[l..(arr)-n+1:]
         ___ i __ r..(k
-            nextArr prevArr+[s..(i)]
+            nextArr prevArr+[s.. ?]
             nextStr ''.j..(nextArr)
             __ nextStr n.. __ visited:
                 visited.add(nextStr)

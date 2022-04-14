@@ -26,7 +26,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ isRectangleOverlap  rec1: L..[i..], rec2: L..[i..]) __ b..:
+    ___ isRectangleOverlap  rec1: L..[i..], rec2: L.. i.. __ b..
         """
         De Morgan's Law
            0      1       2        3
@@ -42,7 +42,7 @@ c_ Solution:
         )
 
 
-    ___ isRectangleOverlap_error  rec1: L..[i..], rec2: L..[i..]) __ b..:
+    ___ isRectangleOverlap_error  rec1: L..[i..], rec2: L.. i.. __ b..
         __ rec1[0] > rec2[0]:
             r.. isRectangleOverlap(rec2, rec1)
 

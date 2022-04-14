@@ -54,7 +54,7 @@ ___ _get_date(date_str
     r.. d__.date(d__.s..(date_str, "_d %B _Y"
 
 
-___ _alive_for_opera(composer: Composer, opera: Opera) __ b..:
+___ _alive_for_opera(composer: Composer, opera: Opera) __ b..
     r.. _get_date(composer.born) < _get_date(opera.date) < _get_date(composer.died)
 
 

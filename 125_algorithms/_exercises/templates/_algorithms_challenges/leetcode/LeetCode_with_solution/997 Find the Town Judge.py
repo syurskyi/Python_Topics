@@ -49,7 +49,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ findJudge  N: i.., trust: L..[L..[i..]]) __ i..:
+    ___ findJudge  N: i.., trust: L..[L..[i..]]) __ i..
         """
         like the find the celebrity
         """

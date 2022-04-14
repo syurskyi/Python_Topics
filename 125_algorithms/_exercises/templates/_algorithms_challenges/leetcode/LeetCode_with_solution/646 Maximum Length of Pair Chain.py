@@ -20,7 +20,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findLongestChain  pairs: L..[L..[i..]]) __ i..:
+    ___ findLongestChain  pairs: L..[L..[i..]]) __ i..
         """
         Greedy
         sort by the interval end
@@ -41,7 +41,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ findLongestChain2  pairs: L..[L..[i..]]) __ i..:
+    ___ findLongestChain2  pairs: L..[L..[i..]]) __ i..
         """
         Greedy
         sort by the interval end
@@ -64,7 +64,7 @@ c_ Solution:
 
 
 c_ Solution2:
-    ___ findLongestChain  pairs: L..[L..[i..]]) __ i..:
+    ___ findLongestChain  pairs: L..[L..[i..]]) __ i..
         """
         Let F[i] be the longest chain   ended at A[i]
         F[i] = max(F[j] + 1 if predicate A[i] A[j])

@@ -93,7 +93,7 @@ c_ DisjointSet:
         r.. pi[x]
 
 c_ Solution:
-    ___ regionsBySlashes  grid: L..[s..]) __ i..:
+    ___ regionsBySlashes  grid: L..s.. __ i..
         """
         in 1 x 1 cell
         3 possibilities

@@ -44,4 +44,4 @@ c_ Solution:
 
         end right __ A[right] __ target ____ left
 
-        r.. end - start + 1
+        r.. ? - ? + 1

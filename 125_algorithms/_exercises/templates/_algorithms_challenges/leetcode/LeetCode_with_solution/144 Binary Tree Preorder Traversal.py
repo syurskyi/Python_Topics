@@ -55,7 +55,7 @@ c_ Solution(o..
         """
         lst    # list
         preTraverse_itr(root, lst)
-        r.. lst
+        r.. ?
 
 
     ___ preTraverse  node, lst

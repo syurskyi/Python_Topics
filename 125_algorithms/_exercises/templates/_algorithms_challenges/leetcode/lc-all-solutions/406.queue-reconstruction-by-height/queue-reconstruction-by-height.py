@@ -7,4 +7,4 @@ c_ Solution(o..
     queue    # list
     ___ p __ s..(people, k.._l.... (h, k (-h, k:
       queue.insert(p[1], p)
-    r.. queue
+    r.. ?

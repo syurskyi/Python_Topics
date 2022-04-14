@@ -6,7 +6,7 @@ c_ SgfTree(o..
     ___ -e  other
         __ n.. isi..(other, SgfTree
             r.. F..
-        ___ k, v __ properties.i..:
+        ___ k, v __ properties.i..
             __ k n.. __ other.properties:
                 r.. F..
             __ other.properties[k] !_ v:

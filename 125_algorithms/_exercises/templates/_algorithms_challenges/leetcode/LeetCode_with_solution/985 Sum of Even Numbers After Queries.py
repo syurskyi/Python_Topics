@@ -35,7 +35,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ sumEvenAfterQueries  A: L..[i..], queries: L..[L..[i..]]) __ L..[i..]:
+    ___ sumEvenAfterQueries  A: L..[i..], queries: L..[L..[i..]]) __ L.. i..
         """
         maintain a sum
         """

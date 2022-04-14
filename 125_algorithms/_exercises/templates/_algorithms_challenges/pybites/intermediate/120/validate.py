@@ -12,4 +12,4 @@ ___ int_args(func
                 __ arg < 0:
                     r.. V...
         r.. func $)
-    r.. wrapper
+    r.. ?

@@ -9,7 +9,7 @@ ___ int_args(func
     ___ wrapper $
 
         ___ arg __ args
-            __ t..(arg) !_ i..:
+            __ t..(arg) !_ i..
                 r.. T..("All arguments passed in must be integers")
             
 
@@ -20,7 +20,7 @@ ___ int_args(func
         r.. func $)
 
 
-    r.. wrapper
+    r.. ?
 
 
 

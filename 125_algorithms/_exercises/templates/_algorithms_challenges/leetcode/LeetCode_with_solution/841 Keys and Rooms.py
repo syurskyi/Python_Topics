@@ -37,7 +37,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ canVisitAllRooms  G: L..[L..[i..]]) __ b..:
+    ___ canVisitAllRooms  G: L..[L..[i..]]) __ b..
         """
         starting from 0
 

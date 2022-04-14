@@ -32,7 +32,7 @@ ___ strip_range(start, end
 
             r.. s
 
-        r.. wrapper
+        r.. ?
 
 
 

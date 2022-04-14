@@ -49,7 +49,7 @@ ____ f.. _______ lru_cache
 
 
 c_ Solution:
-    ___ mergeStones  stones: L..[i..], K: i..) __ i..:
+    ___ mergeStones  stones: L..[i..], K: i..) __ i..
         """
         Mergeable? K -> 1. Reduction size (K - 1)
         N - (K - 1) * m = 1

@@ -4,7 +4,7 @@ EAST "E"
 WEST "W"
 
 
-___ search_apartment(buildings: L..[i..], direction: s..) __ L..[i..]:
+___ search_apartment(buildings: L..[i..], direction: s..) __ L.. i..
     """
     Find and return the indices of those building with
     the desired view: EAST (E) or WEST (W).

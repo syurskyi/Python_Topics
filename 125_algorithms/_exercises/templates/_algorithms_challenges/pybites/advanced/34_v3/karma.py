@@ -19,11 +19,11 @@ c_ User:
         _transactions.a..(other)
 
     $
-    ___ name(self) __ s..:
+    ___ name(self) __ s..
         r.. _name
 
     $
-    ___ fans(self) __ i..:
+    ___ fans(self) __ i..
         r.. l..({x.giver ___ x __ _transactions})
 
     $
@@ -31,5 +31,5 @@ c_ User:
         r.. [x.points ___ x __ _transactions]
 
     $
-    ___ karma(self) __ i..:
+    ___ karma(self) __ i..
         r.. s..(points)

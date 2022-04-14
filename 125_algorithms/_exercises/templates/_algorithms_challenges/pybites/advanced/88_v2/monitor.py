@@ -17,10 +17,10 @@ ___ get_today
 
 @contextmanager
 ___ timeit
-    start t__()
+    start t__
     y..
-    end t__()
-    __ end - start >_ OPERATION_THRESHOLD_IN_SECONDS:
+    end t__
+    __ ? - ? >_ OPERATION_THRESHOLD_IN_SECONDS:
         dt get_today()
         violations[dt] += 1
         __ violations[dt] >_ ALERT_THRESHOLD:

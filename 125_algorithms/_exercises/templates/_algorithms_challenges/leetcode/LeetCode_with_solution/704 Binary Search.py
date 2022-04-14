@@ -28,7 +28,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ s..  nums: L..[i..], target: i..) __ i..:
+    ___ s..  nums: L..[i..], target: i..) __ i..
         lo 0
         hi l..(nums)
         w.... lo < hi:

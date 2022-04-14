@@ -32,7 +32,7 @@ c_ Solution:
         ___ i __ r..(l..(lst)-1
             lst[i].next lst[i+1]
         lst[-1].next N..
-        r.. lst[0]
+        r.. ?[0]
 
     ___ sortList  head
         """

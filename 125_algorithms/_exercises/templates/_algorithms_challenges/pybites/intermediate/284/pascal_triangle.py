@@ -13,7 +13,7 @@ ____ t___ _______ L..
 
 
 
-___ pascal(N: i..) __ L..[i..]:
+___ pascal(N: i..) __ L.. i..
 
 
     current_row [1]

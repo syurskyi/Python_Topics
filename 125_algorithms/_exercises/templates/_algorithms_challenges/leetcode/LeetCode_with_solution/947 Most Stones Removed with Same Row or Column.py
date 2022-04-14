@@ -32,7 +32,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ removeStones  stones: L..[L..[i..]]) __ i..:
+    ___ removeStones  stones: L..[L..[i..]]) __ i..
         """
         convert to graph problem
         each component in the graph can be removed to only one node

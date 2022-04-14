@@ -7,7 +7,7 @@ __author__ 'Daniel'
 
 c_ Solution(o..
     ___ minTotalDistance_3lines  grid
-        x s..([i ___ i, row __ e..(grid) ___ v __ row __ v __ 1])
+        x s..( i ___ ?, row __ e..(grid) ___ v __ row __ v __ 1])
         y s..([j ___ row __ grid ___ j, v __ e..(row) __ v __ 1])
         r.. s..([a..(x[l..(x)/2]-i)+a..(y[l..(y)/2]-j) ___ i, row __ e..(grid) ___ j, v __ e..(row) __ v __ 1])
 

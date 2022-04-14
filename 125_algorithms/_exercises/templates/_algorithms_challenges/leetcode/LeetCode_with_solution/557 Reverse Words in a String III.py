@@ -12,5 +12,5 @@ be any extra space in the string.
 
 
 c_ Solution:
-    ___ reverseWords  s: s..) __ s..:
+    ___ reverseWords  s: s..) __ s..
         r.. " ".j.. m..(l.... x: x[::-1], s.s..(" ")))

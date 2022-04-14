@@ -55,7 +55,7 @@ ___ make_character_index(text=text, characters=CHARACTERS
        then return the former as key.
     """
     result d.. l..
-    ___ x, s __ e..(text.s..:
+    ___ x, s __ e..(text.s..
         __ s __ '':
             _____
         ___ c __ characters:

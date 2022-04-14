@@ -24,7 +24,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxScoreSightseeingPair  A: L..[i..]) __ i..:
+    ___ maxScoreSightseeingPair  A: L.. i.. __ i..
         """
         Attribute the result to the ending element
 
@@ -39,7 +39,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ maxScoreSightseeingPair_error  A: L..[i..]) __ i..:
+    ___ maxScoreSightseeingPair_error  A: L.. i.. __ i..
         """
         brute force O(N^2)
 

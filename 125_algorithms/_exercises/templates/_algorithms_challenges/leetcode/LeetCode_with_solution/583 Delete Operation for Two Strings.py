@@ -16,7 +16,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ minDistance  word1: s.., word2: s..) __ i..:
+    ___ minDistance  word1: s.., word2: s..) __ i..
         """
         Longest Common Subsequence (LCS)
         Find the LCS, and delete the char in BOTH strings into LCS
@@ -42,7 +42,7 @@ c_ Solution:
 
         r.. m - F[m][n] + n - F[m][n]
 
-    ___ minDistance_edit_distance  word1: s.., word2: s..) __ i..:
+    ___ minDistance_edit_distance  word1: s.., word2: s..) __ i..
         """
         Edit distance
 

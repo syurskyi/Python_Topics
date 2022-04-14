@@ -116,7 +116,7 @@ c_ Solution:
         # construct
         stk    # list
         root N..
-        ___ k, v __ depths.i..:
+        ___ k, v __ depths.i..
             cur TreeNode(k)
             __ v __ 0:
                 root cur

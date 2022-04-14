@@ -51,7 +51,7 @@ c_ TopVotedCandidate:
             __ n.. maxes o. counter[maxes[-1][1]] <_ counter[p]:
                 maxes.a..((t, p
 
-    ___ q  t: i..) __ i..:
+    ___ q  t: i..) __ i..
         i b__.b__(maxes, (t, 0
         # equal
         __ i < l..(maxes) a.. maxes[i][0] __ t:

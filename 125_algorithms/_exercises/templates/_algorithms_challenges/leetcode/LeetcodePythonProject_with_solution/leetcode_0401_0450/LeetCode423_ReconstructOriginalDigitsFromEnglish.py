@@ -29,5 +29,5 @@ c_ Solution(o..
         count[1] count[1] - count[0] - count[2] - count[4]
         result ''
         ___ i __ r..(10
-            result += s..(i)*count[i]
+            result += s.. ?*count[i]
         r.. result

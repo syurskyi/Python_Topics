@@ -31,7 +31,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ arrayNesting  nums: L..[i..]) __ i..:
+    ___ arrayNesting  nums: L.. i.. __ i..
         """
         You can think of it as graph. If circle, then you can start with any
         node

@@ -23,7 +23,7 @@ c_ Solution:
 
     ___ is_included  a_times, b_times
         """True if A is a subset of B"""
-        ___ char, times __ a_times.i..:
+        ___ char, times __ a_times.i..
             __ char n.. __ b_times:
                 r.. F..
 

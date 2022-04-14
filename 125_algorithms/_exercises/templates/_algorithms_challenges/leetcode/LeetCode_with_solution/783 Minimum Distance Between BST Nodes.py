@@ -41,7 +41,7 @@ c_ Solution:
         prev N..
         ret f__('inf')
 
-    ___ minDiffInBST  root: TreeNode) __ i..:
+    ___ minDiffInBST  root: TreeNode) __ i..
         """
         in-order traversal
         """

@@ -16,7 +16,7 @@ Example:
 
 
 ___ digitize(n
-    r.. [i..(s) ___ s __ s..(n)][::-1]
+    r.. [i..(s) ___ s __ s.. ? ||1
 
 
 print(digitize(35231

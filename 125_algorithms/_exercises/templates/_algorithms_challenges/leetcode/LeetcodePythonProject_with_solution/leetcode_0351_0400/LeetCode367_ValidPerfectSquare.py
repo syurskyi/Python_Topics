@@ -9,7 +9,7 @@ c_ Solution(o..
         l, r 1, num//2+1
         w.... l <_ r:
             mid (l+r)//2
-            __ mid*mid __ num:
+            __ mid*mid __ ?
                 r.. T..
             ____ mid*mid > num:
                 r mid-1

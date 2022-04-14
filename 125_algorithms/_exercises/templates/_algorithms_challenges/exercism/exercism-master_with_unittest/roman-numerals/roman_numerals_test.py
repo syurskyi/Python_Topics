@@ -26,7 +26,7 @@ c_ RomanTest(unittest.TestCase
     }
 
     ___ test_numerals
-        ___ arabic, numeral __ l..(numerals.i..:
+        ___ arabic, numeral __ l..(numerals.i..
             assertEqual(numeral, roman.numeral(arabic
 
 

@@ -23,7 +23,7 @@ ___ get_total_points(belts=ninja_belts
 
        Return the total number of points int from the function."""
     total_score 0
-    ___ value __ ninja_belts.i..:
+    ___ value __ ninja_belts.i..
         score value.score * value.ninjas
         total_score += score
     r.. total_score

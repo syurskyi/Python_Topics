@@ -17,7 +17,7 @@ ____ b__ _______ bisect_right
 
 
 c_ Solution:
-    ___ singleNonDuplicate  nums: L..[i..]) __ i..:
+    ___ singleNonDuplicate  nums: L.. i.. __ i..
         """
         sorted array
 
@@ -42,7 +42,7 @@ c_ Solution:
         r.. nums[lo]
 
 
-    ___ singleNonDuplicate_error  nums: L..[i..]) __ i..:
+    ___ singleNonDuplicate_error  nums: L.. i.. __ i..
         """
         sorted array
 
@@ -63,7 +63,7 @@ c_ Solution:
         r.. nums[hi - 1]
 
 
-    ___ singleNonDuplicate_xor  nums: L..[i..]) __ i..:
+    ___ singleNonDuplicate_xor  nums: L.. i.. __ i..
         """
         XOR O(n)
         """

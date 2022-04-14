@@ -26,7 +26,7 @@ ___ create_uno_deck
     }
     deck    # list
     ___ s __ SUITS:
-        ___ k, v __ inventory.i..:
+        ___ k, v __ inventory.i..
             ___ i __ r..(0, v
                 card UnoCard(s, k)
                 deck.a..(card)

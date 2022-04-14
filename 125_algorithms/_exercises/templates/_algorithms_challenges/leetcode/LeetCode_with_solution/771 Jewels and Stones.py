@@ -20,7 +20,7 @@ Output: 0
 
 
 c_ Solution:
-    ___ numJewelsInStones  J: s.., S: s..) __ i..:
+    ___ numJewelsInStones  J: s.., S: s..) __ i..
         """
         hash map
         """

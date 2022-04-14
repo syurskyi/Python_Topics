@@ -30,7 +30,7 @@ c_ Solution(o..
         ___ task __ tasks:
             hashmap[task] hashmap.g.. task, 0)+1
         heap    # list
-        ___ c, count __ hashmap.i..:
+        ___ c, count __ hashmap.i..
             h__.heappush(heap, (-count, c
         res 0
         queue    # list

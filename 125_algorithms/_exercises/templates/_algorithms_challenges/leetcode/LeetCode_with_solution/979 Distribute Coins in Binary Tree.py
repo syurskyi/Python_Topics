@@ -46,14 +46,14 @@ c_ Solution:
     ___ -
         ret 0
 
-    ___ distributeCoins  root: TreeNode) __ i..:
+    ___ distributeCoins  root: TreeNode) __ i..
         """
         dfs
         """
         demand(root)
         r.. ret
 
-    ___ demand  node) __ i..:
+    ___ demand  node) __ i..
         __ n.. node:
             r.. 0
 

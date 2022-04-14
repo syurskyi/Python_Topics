@@ -31,7 +31,7 @@ c_ Solution(o..
             ___ j __ x..(i+2, n+1
                 P[i][j] P[i+1][j-1] a.. s[i] __ s[j-1]
 
-        C [i ___ i __ x..(n+1)]  # initial values, max is all cut
+        C  i ___ ? __ x..(n+1)]  # initial values, max is all cut
         ___ i __ x..(n+1
             __ P[0][i]:
                 C[i] 0

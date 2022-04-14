@@ -46,7 +46,7 @@ c_ Solution:
     ___ -
         ret 0
 
-    ___ longestUnivaluePath  root: TreeNode) __ i..:
+    ___ longestUnivaluePath  root: TreeNode) __ i..
         f.. root)
         r.. ret
 
@@ -69,7 +69,7 @@ c_ Solution_error:
     ___ -
         ret 0
 
-    ___ longestUnivaluePath  root: TreeNode) __ i..:
+    ___ longestUnivaluePath  root: TreeNode) __ i..
         f.. root)
         r.. ret
 

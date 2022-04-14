@@ -21,7 +21,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findLengthOfLCIS  nums: L..[i..]) __ i..:
+    ___ findLengthOfLCIS  nums: L.. i.. __ i..
         """
         pointer is sufficient
         """

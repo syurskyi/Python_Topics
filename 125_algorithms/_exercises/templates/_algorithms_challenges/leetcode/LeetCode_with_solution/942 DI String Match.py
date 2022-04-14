@@ -32,7 +32,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ diStringMatch  S: s..) __ L..[i..]:
+    ___ diStringMatch  S: s..) __ L.. i..
         """
         Looking at prev rather than cur
             If "I", then put smallest as prev. Increase from the min
@@ -51,7 +51,7 @@ c_ Solution:
         ret.a..(mini)
         r.. ret
 
-    ___ diStringMatchErrror  S: s..) __ L..[i..]:
+    ___ diStringMatchErrror  S: s..) __ L.. i..
         """
         start with 0, then add the min up to 0
 

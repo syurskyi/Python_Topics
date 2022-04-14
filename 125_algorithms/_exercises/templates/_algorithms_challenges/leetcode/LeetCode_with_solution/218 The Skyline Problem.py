@@ -71,7 +71,7 @@ c_ Solution:
         cur_h 0  # current max height of standing buildings. the current skyline
         ret    # list
         # Process events in order by x-coordinate.
-        ___ x, event __ s..(events.i..:  # sort the dictionary by key
+        ___ x, event __ s..(events.i..  # sort the dictionary by key
             ___ building __ event.starts:
                 h__.heappush(heap_h, building)
             ___ building __ event.ends:

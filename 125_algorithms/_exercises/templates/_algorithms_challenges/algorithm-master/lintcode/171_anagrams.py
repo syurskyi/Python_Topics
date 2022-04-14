@@ -15,7 +15,7 @@ c_ Solution:
                 D[_s]    # list
             D[_s].a..(s)
 
-        ___ k, S __ D.i..:
+        ___ k, S __ D.i..
             __ l..(S) > 1:
                 ans.e.. S)
 

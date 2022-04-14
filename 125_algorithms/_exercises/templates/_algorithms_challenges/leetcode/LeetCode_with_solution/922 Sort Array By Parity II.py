@@ -27,7 +27,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ sortArrayByParityII  A: L..[i..]) __ L..[i..]:
+    ___ sortArrayByParityII  A: L.. i.. __ L.. i..
         even_idx 0
         ___ odd_idx __ r..(1, l..(A), 2
             __ A[odd_idx] % 2 __ 0:
@@ -37,7 +37,7 @@ c_ Solution:
 
         r.. A
 
-    ___ sortArrayByParityII_complex  A: L..[i..]) __ L..[i..]:
+    ___ sortArrayByParityII_complex  A: L.. i.. __ L.. i..
         """
         in-place two passes
         """

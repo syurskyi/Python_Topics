@@ -19,7 +19,7 @@ c_ Solution(o..
             l.a..(i)
             hashmap[c] l
         sumVal 0
-        ___ c, l __ hashmap.i..:
+        ___ c, l __ hashmap.i..
             ___ i __ r..(l..(l:
                 __ i __ 0:
                     left l[i]

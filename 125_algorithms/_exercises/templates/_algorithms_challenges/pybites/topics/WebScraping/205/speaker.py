@@ -32,11 +32,11 @@ ___ get_pycon_speaker_first_names(soup_ N..
     speakers ?.f.. 'span', c.._'speaker')
     speakers_list    # list
     ___ slot_speaker __ speakers:
-        __ ',' __ slot_speaker.text.s..:
+        __ ',' __ slot_speaker.text.s..
             slot_speakers slot_speaker.text.s...s..(',')
             ___ speaker __ slot_speakers:
                 speakers_list.a..(get_first_name(speaker.s..()))
-        ____ '/' __ slot_speaker.text.s..:
+        ____ '/' __ slot_speaker.text.s..
             slot_speakers slot_speaker.text.s...s..('/')
             ___ speaker __ slot_speakers:
                 speakers_list.a..(get_first_name(speaker.s..()))

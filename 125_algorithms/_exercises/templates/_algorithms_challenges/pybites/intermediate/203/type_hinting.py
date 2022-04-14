@@ -32,7 +32,7 @@ c_ Employee:
         hours_per_day hours_per_day
         wage wage
 
-    ___ _rounder  number: f__, places: i..) __ s..:
+    ___ _rounder  number: f__, places: i..) __ s..
         """Rounds a number the specified number of places
 
         :param number: Float of number of round

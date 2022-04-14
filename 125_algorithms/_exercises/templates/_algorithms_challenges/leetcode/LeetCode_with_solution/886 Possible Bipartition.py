@@ -39,7 +39,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ possibleBipartition  N: i.., dislikes: L..[L..[i..]]) __ b..:
+    ___ possibleBipartition  N: i.., dislikes: L..[L..[i..]]) __ b..
         """
         If given likes, then we can use union-find. But this is dislikes.
         Two bipartition, A, B. For each dislike, do a dfs on A, B.

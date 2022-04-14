@@ -1,86 +1,86 @@
-____ f.. _______ w..
-____ t__ _______ t__
-____ t___ _______ Deque, L.., S.., Generator
-
-
-___ timing(f
-    """A simple timer decorator to print the elapsed time of
-       the execution of the function it wraps.
-       Returns (timing, result) tuple"""
-    @wraps(f)
-    ___ wrapper $ $$:
-        start t__()
-        result f $ $$
-        end t__()
-        duration end - start
-        print _*Elapsed t__ {f.__name__}: {duration}')
-        r.. duration, result
-    r.. wrapper
-
-
-@timing
-___ contains(sequence: L..[i..], num: i..) __ b..:
-    ___ n __ sequence:
-        __ n __ num:
-            r.. T..
-    r.. F..
-
-
-@timing
-___ contains_fast(sequence: S..[i..], num: i..) __ b..:
-    __ num __ sequence:
-        r.. T..
-    r.. F..
-
-
-@timing
-___ ordered_list_max(sequence: L..[i..]) __ i..:
-    r.. m..(sequence)
-
-
-@timing
-___ ordered_list_max_fast(sequence: L..[i..]) __ i..:
-    r.. sequence[-1]
-
-
-@timing
-___ list_concat(sequence: L..[s..]) __ s..:
-    bigstr ''
-    ___ i __ sequence:
-        bigstr += s..(i)
-    r.. bigstr
-
-
-@timing
-___ list_concat_fast(sequence: L..[s..]) __ s..:
-    r.. ''.j..(sequence)
-
-
-@timing
-___ list_inserts(n: i..) __ L..[i..]:
-    lst: L..[i..]    # list
-    ___ i __ r..(n
-        lst.insert(0, i)
-    r.. lst
-
-
-@timing
-___ list_inserts_fast(n: i..) __ Deque[i..]:
-    queue Deque()
-    ___ i __ r..(n
-        queue.appendleft(i)
-    r.. queue
-
-
-@timing
-___ list_creation(n: i..) __ L..[i..]:
-    lst    # list
-    ___ i __ r..(n
-        lst.a..(i)
-    r.. lst
-
-
-@timing
-___ list_creation_fast(n: i..) __ Generator[i.., N.., N..]:
-    ___ i __ r..(n
-        y.. i
+# ____ f.. _______ w..
+# ____ t__ _______ t__
+# ____ t___ _______ D.. L.., S.., G..
+#
+#
+# ___ timing f
+#     """A simple timer decorator to print the elapsed time of
+#        the execution of the function it wraps.
+#        Returns (timing, result) tuple"""
+#     ?? ?
+#     ___ wrapper $ $$
+#         start t__
+#         result ? $ $$
+#         end t__
+#         duration ? - ?
+#         print _*Elapsed t__  ?.-n : ?
+#         r.. ? ?
+#     r.. ?
+#
+#
+# ??
+# ___ contains sequence L.. i.. num i.. __ b..
+#     ___ n __ ?
+#         __ n __ ?
+#             r.. T..
+#     r.. F..
+#
+#
+# ??
+# ___ contains_fast ? S.. i.. num i.. __ b..
+#     __ num __ ?
+#         r.. T..
+#     r.. F..
+#
+#
+# ??
+# ___ ordered_list_max ? L.. i.. __ i..
+#     r.. m.. ?
+#
+#
+# ??
+# ___ ordered_list_max_fast ? L.. i.. __ i..
+#     r.. ? -1
+#
+#
+# ??
+# ___ list_concat ? L..s.. __ s..
+#     bigstr ''
+#     ___ i __ ?
+#         ? +_ s.. ?
+#     r.. ?
+#
+#
+# ??
+# ___ list_concat_fast ? L..s.. __ s..
+#     r.. ''.j.. ?
+#
+#
+# ??
+# ___ list_inserts n i.. __ L.. i..
+#     lst: L.. i..   # list
+#     ___ i __ r.. ?
+#         ?.i.. 0, ?
+#     r.. ?
+#
+#
+# ??
+# ___ list_inserts_fast n i.. __ D.. i..
+#     queue D..
+#     ___ i __ r.. ?
+#         ?.a.. ?
+#     r.. ?
+#
+#
+# ??
+# ___ list_creation n i.. __ L.. i..
+#     lst    # list
+#     ___ i __ r.. ?
+#         ?.a.. ?
+#     r.. ?
+#
+#
+# ??
+# ___ list_creation_fast n i.. __ G.. i.. N.. N..
+#     ___ i __ r.. ?
+#         y.. ?

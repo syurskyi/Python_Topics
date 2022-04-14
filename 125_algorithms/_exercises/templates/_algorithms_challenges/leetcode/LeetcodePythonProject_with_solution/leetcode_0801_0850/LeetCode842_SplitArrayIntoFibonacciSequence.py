@@ -22,7 +22,7 @@ c_ Solution(o..
             num i..(s0)
             __ num > 2**31-1 o. (s0[0] __ '0' a.. l..(s0) > 1
                 _____
-            __ l..(res) < 2 o. res[-2] + res[-1] __ num:
+            __ l..(res) < 2 o. res[-2] + res[-1] __ ?
                 res.a..(num)
                 __ helper(s, j, res
                     r.. T..

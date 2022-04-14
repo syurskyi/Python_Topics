@@ -44,7 +44,7 @@ ___ rent_or_stream(
     
     
 
-    ___ month,cost __ m.i..:
+    ___ month,cost __ m.i..
         __ cost > streaming_cost_per_month:
             m[month] STREAM
         ____

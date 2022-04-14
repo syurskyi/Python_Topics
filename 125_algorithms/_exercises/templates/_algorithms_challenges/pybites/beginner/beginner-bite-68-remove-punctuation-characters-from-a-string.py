@@ -19,7 +19,7 @@ ___ remove_punctuation_solution_1(input_string
 
 ___ remove_punctuation_solution_2(input_string
     """Return a str with punctuation chards stripped out"""
-    new_list  [i ___ i __ input_string __ i n.. __ s__.punctuation]
+    new_list   i ___ ? __ input_string __ i n.. __ s__.punctuation]
     out  ''.j..(new_list)
     r.. out
 

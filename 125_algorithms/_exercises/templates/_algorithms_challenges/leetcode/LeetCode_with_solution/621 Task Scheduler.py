@@ -29,7 +29,7 @@ _______ h__
 
 
 c_ Solution:
-    ___ leastInterval  tasks: L..[s..], n: i..) __ i..:
+    ___ leastInterval  tasks: L..[s..], n: i..) __ i..
         """
         Gap is n
 
@@ -62,7 +62,7 @@ c_ Solution:
         r.. l..(tasks) + idle
 
 
-    ___ leastInterval_complicated  tasks: L..[s..], n: i..) __ i..:
+    ___ leastInterval_complicated  tasks: L..[s..], n: i..) __ i..
         """
         greedy
         max heap, most tasks first

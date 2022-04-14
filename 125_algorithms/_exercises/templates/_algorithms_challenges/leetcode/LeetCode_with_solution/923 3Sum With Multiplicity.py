@@ -39,7 +39,7 @@ MOD 10 ** 9 + 7
 
 
 c_ Solution:
-    ___ threeSumMulti  A: L..[i..], target: i..) __ i..:
+    ___ threeSumMulti  A: L..[i..], target: i..) __ i..
         """
         Adapted from 3 sum
         3 pointers O(N + K^2)
@@ -82,7 +82,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ threeSumMulti_TLE  A: L..[i..], target: i..) __ i..:
+    ___ threeSumMulti_TLE  A: L..[i..], target: i..) __ i..
         """
         Adapted from 3 sum
         3 pointers O(N^2)
@@ -120,7 +120,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ threeSumMulti_TLE  A: L..[i..], target: i..) __ i..:
+    ___ threeSumMulti_TLE  A: L..[i..], target: i..) __ i..
         """
         O(n * target * 3)
         Let F[i][t][k] be the number of k sums using A[:i] to target t
@@ -142,7 +142,7 @@ c_ Solution:
         print(F[n][target][3])
         r.. F[n][target][3]
 
-    ___ threeSumMulti_TLE  A: L..[i..], target: i..) __ i..:
+    ___ threeSumMulti_TLE  A: L..[i..], target: i..) __ i..
         """
         O(n * target * 3)
         Let F[i][t][k] be the number of k sums using A[:i] to target t

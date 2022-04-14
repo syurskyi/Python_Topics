@@ -37,7 +37,7 @@ ___ intro_bites
 ___ test_different_args_for_N(N, e..
     a.. get_most_complex_bites(N)
     # str or int for IDs is fine with us
-    a.. [s..(i) ___ i __ a..]
+    a.. [s.. ? ___ i __ a..]
     ... a.. __ e..
 
 
@@ -51,5 +51,5 @@ ___ test_different_args_for_N(N, e..
 ___ test_only_intro_bites(intro_bites, N, e..
     a.. get_most_complex_bites(N, stats=intro_bites)
     # str or int for IDs is fine with us
-    a.. [s..(i) ___ i __ a..]
+    a.. [s.. ? ___ i __ a..]
     ... a.. __ e..

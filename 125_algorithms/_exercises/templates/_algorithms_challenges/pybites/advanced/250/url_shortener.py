@@ -19,7 +19,7 @@ INVALID "Not a valid PyBites shortened url"
 NO_RECORD "Not a valid shortened url"
 
 
-___ encode(record: i..) __ s..:
+___ encode(record: i..) __ s..
     """Encodes an integer into Base62"""
     
 
@@ -47,7 +47,7 @@ ___ encode(record: i..) __ s..:
 
 
 
-___ d.. short_url: s..) __ i..:
+___ d.. short_url: s..) __ i..
     """Decodes the Base62 string into a Base10 integer"""
 
     value 0
@@ -59,7 +59,7 @@ ___ d.. short_url: s..) __ i..:
 
 
 
-___ redirect(url: s..) __ s..:
+___ redirect(url: s..) __ s..
     """Retrieves URL from shortened DB (LINKS)
 
     1. Check for valid domain
@@ -88,7 +88,7 @@ ___ redirect(url: s..) __ s..:
 
 
 
-___ shorten_url(url: s.., next_record: i..) __ s..:
+___ shorten_url(url: s.., next_record: i..) __ s..
     """Shortens URL and updates the LINKS DB
 
     1. Encode next_record

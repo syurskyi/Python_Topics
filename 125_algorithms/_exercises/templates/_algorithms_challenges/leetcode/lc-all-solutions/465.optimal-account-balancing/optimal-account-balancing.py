@@ -6,7 +6,7 @@ c_ Solution(o..
       balances[giver] -_ amount
       balances[receiver] += amount
       people |= {giver, receiver}
-    ___ person, balance __ balances.i..:
+    ___ person, balance __ balances.i..
       __ balance __ 0:
         people.discard(person)
         del balances[person]

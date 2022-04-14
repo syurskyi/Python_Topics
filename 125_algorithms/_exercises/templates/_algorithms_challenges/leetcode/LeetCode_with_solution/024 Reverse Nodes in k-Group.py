@@ -68,7 +68,7 @@ c_ Solution:
                 cur cur.next
             ____
                 lst.a..(N..)
-        r.. lst
+        r.. ?
 
 
 

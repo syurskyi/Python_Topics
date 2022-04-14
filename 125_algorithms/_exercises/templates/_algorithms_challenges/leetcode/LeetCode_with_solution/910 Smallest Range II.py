@@ -33,7 +33,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ smallestRangeII  A: L..[i..], K: i..) __ i..:
+    ___ smallestRangeII  A: L..[i..], K: i..) __ i..
         """
         Say A[i] is the largest i that goes up. A[i+1] would be the smallest
         goes down
@@ -50,7 +50,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ smallestRangeII_error  A: L..[i..], K: i..) __ i..:
+    ___ smallestRangeII_error  A: L..[i..], K: i..) __ i..
         """
         find the min max is not enough, since the min max after +/- K may change
         """

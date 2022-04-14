@@ -42,7 +42,7 @@ The decoded string is guaranteed to have less than 2^63 letters.
 
 
 c_ Solution:
-    ___ decodeAtIndex  S: s.., K: i..) __ s..:
+    ___ decodeAtIndex  S: s.., K: i..) __ s..
         """
         walk backward
         """
@@ -66,7 +66,7 @@ c_ Solution:
 
         r..
 
-    ___ decodeAtIndex_error  S: s.., K: i..) __ s..:
+    ___ decodeAtIndex_error  S: s.., K: i..) __ s..
         """
         don't generate the final string, too memory expensive
         two pointer

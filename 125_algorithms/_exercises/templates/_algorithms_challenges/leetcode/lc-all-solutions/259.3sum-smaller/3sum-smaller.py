@@ -11,7 +11,7 @@ c_ Solution(o..
       start, end i + 1, l..(nums) - 1
       w.... start < end:
         __ nums[i] + nums[start] + nums[end] < target:
-          ans += end - start
+          ans += ? - ?
           start += 1
         ____
           end -_ 1

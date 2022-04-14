@@ -20,7 +20,7 @@ How to sort a dictionary using value as a key?
 https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dictionary
 """
 
-___ freq_digit(num: i..) __ i..:
+___ freq_digit(num: i..) __ i..
 
     dict_num    # dict
     num_str s..(num)

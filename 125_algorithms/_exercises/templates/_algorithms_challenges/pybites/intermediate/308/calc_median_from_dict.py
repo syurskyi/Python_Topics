@@ -10,7 +10,7 @@ ___ calc_median_from_dict(d: d..) __ f__:
             r.. T..
 
     frequency    # list
-    ___ key, value __ d.i..:
+    ___ key, value __ d.i..
         key_occurrence value
         __ value > 100_000_000:
             key_occurrence i..(value / 100_000_000)

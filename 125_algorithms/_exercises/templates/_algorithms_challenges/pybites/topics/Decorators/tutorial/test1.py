@@ -3,26 +3,26 @@ ____ t__ _______ t__
 
 ___ timer(func
     $w.. f..
-    ___ wrapper $ $$:
-        start t__()
+    ___ wrapper $ $$
+        start t__
         answer func $ $$
-        end t__()
+        end t__
         print _*Elapsed: {end-start}')
         r.. answer
-    r.. wrapper
+    r.. ?
 
 ___ tracer(func
     $w.. f..
-    ___ wrapper $ $$:
+    ___ wrapper $ $$
         print('Entering...')
         func $ $$
         print('Existing....')
-    r.. wrapper
+    r.. ?
 
 
 @tracer
 @timer
-___ hello_world $ $$:
+___ hello_world $ $$
     print _*Hello World! {args}')
 
 

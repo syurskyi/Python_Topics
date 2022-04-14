@@ -28,7 +28,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ minimumLengthEncoding  words: L..[s..]) __ i..:
+    ___ minimumLengthEncoding  words: L..s.. __ i..
         """
         suffix trie
         only suffix matters

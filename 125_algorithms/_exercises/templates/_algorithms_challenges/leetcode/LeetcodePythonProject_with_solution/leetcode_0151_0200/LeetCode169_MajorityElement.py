@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         count, cand 0, -1
         ___ num __ nums:
-            __ cand __ num:
+            __ cand __ ?
                 count += 1
             ____ count __ 0:
                 cand, count num, 1

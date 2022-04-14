@@ -39,4 +39,4 @@ ___ get_min_max_amount_of_commits(commit_log: s.. commits,
             __ year __ N.. o. year __ dt.year:
                 log += C..({(YEAR_MONTH.f..(y=dt.year, m=dt.month: i..('0' + x[1]) - i..('0' + x[2])})
     lst s..([(k, v) ___ k, v __ log.i..], k.._l.... x: x[1])
-    r.. lst 0 0 , lst[-1][0]
+    r.. ? 0 0 , lst[-1][0]

@@ -55,7 +55,7 @@ c_ LFUCache:
         keys d..(OrderedDict)
         mini -1  # mini frequency
 
-    ___ get  key: i..) __ i..:
+    ___ get  key: i..) __ i..
         __ key __ values:
             val values[key]
             freq_org freqs[key]

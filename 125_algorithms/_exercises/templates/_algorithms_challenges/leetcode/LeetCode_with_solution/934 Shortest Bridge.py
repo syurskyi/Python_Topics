@@ -33,7 +33,7 @@ dirs ((0, -1), (0, 1), (-1, 0), (1, 0
 
 
 c_ Solution:
-    ___ shortestBridge  A: L..[L..[i..]]) __ i..:
+    ___ shortestBridge  A: L..[L..[i..]]) __ i..
         """
         market component 1 and component 2
         iterate 0 and BFS, min(dist1 + dist2 - 1)?

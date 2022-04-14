@@ -47,7 +47,7 @@ c_ MiniUber:
         _distance distance INFINITY
         driver_id -1
 
-        ___ _driver_id, _loc __ driver_to_locs.i..:
+        ___ _driver_id, _loc __ driver_to_locs.i..
             _distance Helper.get_distance(_loc 'lat' , _loc 'lng' , lat, lng)
             __ _distance < distance:
                 driver_id _driver_id

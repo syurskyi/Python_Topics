@@ -39,7 +39,7 @@ S only consists of '(' and ')' characters.
 
 
 c_ Solution:
-    ___ minAddToMakeValid  S: s..) __ i..:
+    ___ minAddToMakeValid  S: s..) __ i..
         """
         stk
         """

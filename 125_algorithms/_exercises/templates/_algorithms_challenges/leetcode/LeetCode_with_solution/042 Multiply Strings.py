@@ -57,7 +57,7 @@ c_ Solution(o..
         ret    # list
 
         carry 0
-        ___ elt __ num:
+        ___ elt __ ?
             mul elt*digit + carry
             carry mul/10
             mul %= 10

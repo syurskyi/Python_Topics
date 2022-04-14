@@ -18,11 +18,11 @@ ___ get_today
 
 @contextmanager
 ___ timeit() __ N..
-    start t__()
+    start t__
     ___
         y..
     _______
-        elapsed t__() - start
+        elapsed t__ - start
         __ elapsed > OPERATION_THRESHOLD_IN_SECONDS:
             violations.update([get_today()])
         __ violations[get_today()] >_ ALERT_THRESHOLD:

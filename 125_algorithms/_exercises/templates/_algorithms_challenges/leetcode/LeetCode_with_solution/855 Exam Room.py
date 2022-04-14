@@ -48,7 +48,7 @@ c_ ExamRoom:
         N N
         idxes    # list  # sorted arry of taken idx
 
-    ___ seat(self) __ i..:
+    ___ seat(self) __ i..
         """
         similar to 849
         """

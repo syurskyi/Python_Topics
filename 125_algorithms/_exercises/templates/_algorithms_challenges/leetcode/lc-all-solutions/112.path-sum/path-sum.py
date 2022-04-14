@@ -23,7 +23,7 @@ c_ Solution(o..
           queue.a..((p.left, s + p.left.val
         __ right:
           queue.a..((p.right, s + p.right.val
-        __ n.. left a.. n.. right a.. s __ s..:
+        __ n.. left a.. n.. right a.. s __ s..
           r.. T..
       r.. F..
     r.. F..

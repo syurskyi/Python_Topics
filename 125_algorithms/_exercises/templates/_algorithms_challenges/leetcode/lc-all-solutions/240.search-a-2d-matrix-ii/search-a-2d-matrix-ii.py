@@ -9,7 +9,7 @@ c_ Solution(o..
     ___ binarySearch(nums, target
       start, end 0, l..(nums) - 1
       w.... start + 1 < end:
-        mid start + (end - start) / 2
+        mid start + (? - ?) / 2
         __ nums[mid] > target:
           end mid
         ____ nums[mid] < target:

@@ -27,7 +27,7 @@ ___ minimum_number d.. L.. i.. __ i..
     reduced  s..(d..)
     s.. s..(reduced)
     r ""
-    ___ e __ s..:
+    ___ e __ s..
         r += s..(e)
     r.. i..(r)
 

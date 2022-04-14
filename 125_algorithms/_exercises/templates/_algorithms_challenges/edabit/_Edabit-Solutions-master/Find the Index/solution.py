@@ -1,5 +1,5 @@
 ___ find_index(lst, txt
-    r.. lst.i.. txt)
+    r.. ?.i.. txt)
 
 
 

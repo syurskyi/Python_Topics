@@ -1,7 +1,7 @@
 ____ t___ _______ Dict
 
 
-___ decompress(s__: s.., table: Dict[s.., s..]) __ s..:
+___ decompress(s__: s.., table: Dict[s.., s..]) __ s..
 
 
     result    # list

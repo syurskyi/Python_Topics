@@ -35,7 +35,7 @@ c_ Solution(o..
         ___ c __ s:
             hashmap[c] hashmap.g.. c, 0)+1
         splitSet s..()
-        ___ c, freq __ hashmap.i..:
+        ___ c, freq __ hashmap.i..
             __ freq < k:
                 splitSet.add(c)
         __ n.. splitSet: r.. l..(s)

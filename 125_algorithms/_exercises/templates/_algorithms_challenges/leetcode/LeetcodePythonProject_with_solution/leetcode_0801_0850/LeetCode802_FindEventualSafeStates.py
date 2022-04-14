@@ -42,7 +42,7 @@ c_ Solution(o..
         ___ i __ r..(n
             visited s..()
             getIsCycle(i, i, graph, visited, isCycle)
-        r.. [i ___ i __ r..(n) __ n.. isCycle[i]]
+        r..  i ___ ? __ r..(n) __ n.. isCycle[i]]
     
     ___ getIsCycle  i, start, graph, visited, isCycle
         __ start __ visited o. isCycle[start]:

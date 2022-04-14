@@ -22,7 +22,7 @@ c_ Solution(o..
         count 0
         res -1
         ___ i, num __ e..(nums
-            __ target __ num:
+            __ target __ ?
                 __ r__.r..(0, count) __ 0:
                     res i
                 count += 1

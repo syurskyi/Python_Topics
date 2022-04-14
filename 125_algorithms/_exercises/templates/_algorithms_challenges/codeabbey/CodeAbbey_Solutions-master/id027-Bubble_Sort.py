@@ -2,7 +2,7 @@ ___ bubbleSort(amount, numbers
     s..  F..
     swapCount, passCount  0,0
 
-    w.... n.. s..:
+    w.... n.. s..
         s..  T..
         ___ i __ r.. ?-1
             __ numbers[i] > numbers[i+1]:

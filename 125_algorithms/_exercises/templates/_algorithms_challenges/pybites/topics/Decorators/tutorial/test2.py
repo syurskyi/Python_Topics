@@ -5,7 +5,7 @@ ___ int_inputs(func
     ___ wrapper $
         newargs [i..(a) ___ a __ args]
         r.. func(*newargs)
-    r.. wrapper
+    r.. ?
 
 
 

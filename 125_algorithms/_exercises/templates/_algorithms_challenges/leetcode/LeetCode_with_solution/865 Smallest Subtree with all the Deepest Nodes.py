@@ -63,7 +63,7 @@ c_ Solution:
         down(node.left, d + 1)
         down(node.right, d + 1)
 
-    ___ c.. self, node: TreeNode) __ i..:
+    ___ c.. self, node: TreeNode) __ i..
         __ n.. node:
             r.. 0
 

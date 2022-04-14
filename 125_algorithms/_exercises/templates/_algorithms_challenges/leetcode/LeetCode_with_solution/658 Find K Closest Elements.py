@@ -21,7 +21,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ findClosestElements  A: L..[i..], k: i.., x: i..) __ L..[i..]:
+    ___ findClosestElements  A: L..[i..], k: i.., x: i..) __ L.. i..
         """
         binary search without two pointers scanning
         """
@@ -38,7 +38,7 @@ c_ Solution:
 
         r.. A[lo:lo+k]
 
-    ___ findClosestElements2  A: L..[i..], k: i.., x: i..) __ L..[i..]:
+    ___ findClosestElements2  A: L..[i..], k: i.., x: i..) __ L.. i..
         """
         input sorted arrya
         two pointers

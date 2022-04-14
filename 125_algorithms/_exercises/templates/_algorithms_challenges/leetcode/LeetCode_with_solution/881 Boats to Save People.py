@@ -34,7 +34,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ numRescueBoats  people: L..[i..], limit: i..) __ i..:
+    ___ numRescueBoats  people: L..[i..], limit: i..) __ i..
         """
         sort + gready
         """

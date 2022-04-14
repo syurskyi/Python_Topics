@@ -12,7 +12,7 @@ ___ retry(func
        you print the exception thrown"""
 
     $w.. f..
-    ___ wrapper $ $$:
+    ___ wrapper $ $$
         count 0
         ___ i __ r..(MAX_RETRIES
             ___
@@ -24,4 +24,4 @@ ___ retry(func
                 r..
         r.. MaxRetriesException()
 
-    r.. wrapper
+    r.. ?

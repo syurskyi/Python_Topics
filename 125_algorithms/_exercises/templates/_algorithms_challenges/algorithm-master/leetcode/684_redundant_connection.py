@@ -67,7 +67,7 @@ c_ Solution:
 
         ___ u, v __ edges:
             # dfs to check u and v are connected already => cycle
-            __ u __ nodes a.. v __ nodes a.. dfs(nodes, u, v, s..:
+            __ u __ nodes a.. v __ nodes a.. dfs(nodes, u, v, s..
                 r.. [u, v]
 
             nodes[u].add(v)

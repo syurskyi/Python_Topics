@@ -23,7 +23,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ postorder  root: 'Node') __ L..[i..]:
+    ___ postorder  root: 'Node') __ L.. i..
         """
         maintain a stack, pop and reverse
         """
@@ -41,7 +41,7 @@ c_ Solution:
 
         r.. l..(ret)
         
-    ___ postorder_visited  root: 'Node') __ L..[i..]:
+    ___ postorder_visited  root: 'Node') __ L.. i..
         """
         maintain a stack, if visited before, then pop
         """

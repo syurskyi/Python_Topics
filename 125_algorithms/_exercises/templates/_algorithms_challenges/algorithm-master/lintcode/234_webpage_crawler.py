@@ -39,6 +39,6 @@ c_ Solution:
 
         queue.j..()
         rt    # list
-        ___ key, value __ results.i..:
+        ___ key, value __ results.i..
             rt.a..(key)
         r.. rt

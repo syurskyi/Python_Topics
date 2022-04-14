@@ -1,6 +1,6 @@
 c_ UnionFind
   ___ - , m, n
-    dad [i ___ i __ r..(0, m * n)]
+    dad  i ___ ? __ r..(0, m * n)]
     rank [0 ___ i __ r..(0, m * n)]
     m m
     n n

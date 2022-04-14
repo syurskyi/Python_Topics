@@ -31,7 +31,7 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, da
     dates_open_lookup s.. m..(l.... x: d__.s..(x, "_Y-%m-_d").date(), daily_rates
 
     dates    # dict
-    date_diff (end - start).days
+    date_diff (? - ?).days
     current_date start
     ___ i __ r..(date_diff +1
         previous_date current_date
@@ -63,7 +63,7 @@ ___ exchange_rates(
     dates match_daily_rates(start, end, data["rates"])
 
     result    # dict
-    ___ key, value __ dates.i..:
+    ___ key, value __ dates.i..
         temp_dict    # dict
         date_string value.s..("_Y-%m-_d")
         temp_dict["Base Date"] value

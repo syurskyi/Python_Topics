@@ -35,7 +35,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ prefixesDivBy5  A: L..[i..]) __ L..[b..]:
+    ___ prefixesDivBy5  A: L.. i.. __ L..[b..]:
         """
         brute force
         """

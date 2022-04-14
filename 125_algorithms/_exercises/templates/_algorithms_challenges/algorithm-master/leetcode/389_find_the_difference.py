@@ -39,7 +39,7 @@ c_ Solution:
 
             freq[c] -_ 1
 
-        ___ c, cnt __ freq.i..:
+        ___ c, cnt __ freq.i..
             __ cnt:
                 r.. c
 

@@ -14,7 +14,7 @@ ___ t __ r..(i..(input())):
             substrings[''.j..(s..(s[j:j+i]] += 1
 
     ans 0
-    ___ key, value __ substrings.i..:
+    ___ key, value __ substrings.i..
         ans += value*(value-1) // 2
 
     print(ans)

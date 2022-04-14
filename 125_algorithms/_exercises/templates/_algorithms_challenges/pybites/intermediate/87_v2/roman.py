@@ -11,7 +11,7 @@ ___ romanize(decimal_number
 
     result    # list
 
-    ___ base_value,numeral __ number_to_numeral.i..:
+    ___ base_value,numeral __ number_to_numeral.i..
         
         __ base_value > decimal_number:
             _____

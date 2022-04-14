@@ -13,7 +13,7 @@ ___ int_args(func
             r.. V...
         ____ a..(isi..(n, i..) ___ n __ args
             r.. func $)
-    r.. wrapper
+    r.. ?
 """ 
 @int_args
 def sum_numbers(*numbers):

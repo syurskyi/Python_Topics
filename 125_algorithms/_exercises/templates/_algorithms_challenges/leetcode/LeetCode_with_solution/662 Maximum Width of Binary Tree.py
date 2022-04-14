@@ -69,7 +69,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ widthOfBinaryTree  root: TreeNode) __ i..:
+    ___ widthOfBinaryTree  root: TreeNode) __ i..
         """
            0
           0 1

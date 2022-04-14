@@ -7,7 +7,7 @@ c_ Solution:
         queue '1'
 
         __ n.. N:
-            r.. queue
+            r.. ?
 
         _queue    # list
 
@@ -26,4 +26,4 @@ c_ Solution:
             _queue.extend((s..(cnt), char
             queue, _queue ''.j..(_queue), []
 
-        r.. queue
+        r.. ?

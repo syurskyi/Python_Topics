@@ -18,7 +18,7 @@ w__ o.. 'test.txt','w') __ f:
 __ n.. __.p...i..(FASTA_FILE
     u__.r...u..(URL, FASTA_FILE)
 
-___ fasta_to_2line_fasta(fasta_file:s..="test.txt", fasta_2line_file: s..='test_converter.txt') __ i..:
+___ fasta_to_2line_fasta(fasta_file:s..="test.txt", fasta_2line_file: s..='test_converter.txt') __ i..
     """
     :param fasta_file: Filename of multi-line FASTA file
     :param fasta_2line_file: Filename of 2-line FASTA file
@@ -34,7 +34,7 @@ ___ fasta_to_2line_fasta(fasta_file:s..="test.txt", fasta_2line_file: s..='test_
                 line line.s..
                 line line.s..
                 __ line[0] __ '>':
-                    __ sequence:
+                    __ ?
                         sequence.a..(''.j..(lines
                         f1.w.. '\n'.j..(sequence
                         f1.w.. '\n')

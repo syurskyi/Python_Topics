@@ -17,7 +17,7 @@ c_ Solution(o..
 
     ___ s.. __ strs:
       count [0] * 26
-      ___ c __ s..:
+      ___ c __ s..
         count[o..(c) - o..('a')] += 1
       key hash(count)
       __ key n.. __ d:

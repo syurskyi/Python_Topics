@@ -19,7 +19,7 @@ c_ Solution(o..
 
         ret    # list
         ___ i __ x..(l..(word)+1
-            left_num s..(i) __ i ____ ""
+            left_num s.. ? __ i ____ ""
             ___ right __ generateAbbreviations(word[i+1:]
                 cur left_num + word[i:i+1] + right
                 ret.a..(cur)

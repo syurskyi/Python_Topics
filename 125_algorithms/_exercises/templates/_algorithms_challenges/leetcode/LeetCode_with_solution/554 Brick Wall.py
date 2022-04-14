@@ -37,7 +37,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ leastBricks  wall: L..[L..[i..]]) __ i..:
+    ___ leastBricks  wall: L..[L..[i..]]) __ i..
         """
         Iterate and count edge at a position
         """

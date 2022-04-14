@@ -9,7 +9,7 @@ c_ Solution(o..
     n l..(citations)
     start, end 0, n - 1
     w.... start < end:
-      mid start + (end - start) / 2
+      mid start + (? - ?) / 2
       __ citations[mid] >_ n - mid:
         end mid
       ____

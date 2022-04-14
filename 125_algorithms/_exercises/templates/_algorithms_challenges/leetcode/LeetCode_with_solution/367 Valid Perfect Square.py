@@ -28,7 +28,7 @@ c_ Solution(o..
         w.... lo < hi:
             mid (lo + hi) / 2
             midsq mid**2
-            __ midsq __ num:
+            __ midsq __ ?
                 r.. T..
             ____ midsq < num:
                 lo mid + 1

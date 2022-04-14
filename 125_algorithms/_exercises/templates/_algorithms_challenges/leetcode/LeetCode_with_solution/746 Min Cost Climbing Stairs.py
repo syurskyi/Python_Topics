@@ -24,7 +24,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ minCostClimbingStairs  cost: L..[i..]) __ i..:
+    ___ minCostClimbingStairs  cost: L.. i.. __ i..
         """
         dp
         let F[i] be the cost to reach i-th stair

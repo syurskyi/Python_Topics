@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ checkPossibility  nums: L..[i..]) __ b..:
+    ___ checkPossibility  nums: L.. i.. __ b..
                 i 0
                 non_count 0
                 equals F..

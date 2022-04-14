@@ -9,7 +9,7 @@ c_ Solution(o..
     """
     d C..(s)
     buf    # dict
-    ___ k, v __ d.i..:
+    ___ k, v __ d.i..
       buf[v] buf.g.. v, "") + k * v
     ans ""
     ___ i __ r..(r..(0, l..(s))):

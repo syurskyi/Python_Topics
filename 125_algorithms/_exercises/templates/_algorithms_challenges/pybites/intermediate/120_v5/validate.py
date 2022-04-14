@@ -3,7 +3,7 @@ ____ f.. _______ w..
 
 ___ int_args(func
     $w.. f..
-    ___ wrapper $ $$:
+    ___ wrapper $ $$
         ___ a __ args
             __ n.. isi..(a, i..
                 r.. T..()
@@ -11,4 +11,4 @@ ___ int_args(func
                 r.. V...()
         r.. func $ $$
 
-    r.. wrapper
+    r.. ?

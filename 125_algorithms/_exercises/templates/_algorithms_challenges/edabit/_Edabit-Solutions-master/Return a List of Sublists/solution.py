@@ -5,6 +5,6 @@ ___ matrix(x, y, z
     ___ q __ lst:
         ___ a __ r..(y
             q.a..(z)
-    r.. lst
+    r.. ?
 
 

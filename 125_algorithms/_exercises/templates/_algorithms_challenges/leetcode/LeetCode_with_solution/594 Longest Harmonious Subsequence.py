@@ -18,7 +18,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ findLHS  nums: L..[i..]) __ i..:
+    ___ findLHS  nums: L.. i.. __ i..
         """
         counter and iterate
         """
@@ -27,7 +27,7 @@ c_ Solution:
             counter[n] += 1
 
         ret 0
-        ___ k, v __ counter.i..:
+        ___ k, v __ counter.i..
             __ k + 1 __ counter:
                 ret m..(ret, v + counter[k + 1])
 

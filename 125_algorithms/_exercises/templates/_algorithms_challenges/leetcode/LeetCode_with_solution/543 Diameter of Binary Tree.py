@@ -33,7 +33,7 @@ c_ Solution:
         """
         ret 0
 
-    ___ diameterOfBinaryTree  root: TreeNode) __ i..:
+    ___ diameterOfBinaryTree  root: TreeNode) __ i..
         dfs(root)
         r.. ret
 

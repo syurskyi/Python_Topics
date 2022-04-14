@@ -13,7 +13,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findMinDifference  timePoints: L..[s..]) __ i..:
+    ___ findMinDifference  timePoints: L..s.. __ i..
         """
         sort and minus
         """

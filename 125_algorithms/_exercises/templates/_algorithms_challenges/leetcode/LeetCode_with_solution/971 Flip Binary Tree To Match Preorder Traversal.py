@@ -54,7 +54,7 @@ c_ Solution:
         ret    # list
         i 0  # currently scanning index of voyage
 
-    ___ flipMatchVoyage  root: TreeNode, voyage: L..[i..]) __ L..[i..]:
+    ___ flipMatchVoyage  root: TreeNode, voyage: L.. i.. __ L.. i..
         """
         match the voyage
         Flip the least number of nodes? There is only one answer

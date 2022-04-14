@@ -8,7 +8,7 @@ WEEKS_PER_YEAR 52
 
 
 ___ get_number_books_read(books_per_year_goal: i..,
-                          at_date: s.. N..) __ i..:
+                          at_date: s.. N..) __ i..
     """Based on books_per_year_goal and at_date, return the
        number of books that should have been read.
        If books_per_year_goal negative or 0, or at_date is in the

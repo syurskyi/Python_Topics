@@ -23,7 +23,7 @@ Note: Do not use the eval built-in library function.
 
 
 c_ Solution:
-    ___ calculate  s: s..) __ i..:
+    ___ calculate  s: s..) __ i..
         """
         make +, - lower precedence operator as a unary operation
         recursively handle bracket

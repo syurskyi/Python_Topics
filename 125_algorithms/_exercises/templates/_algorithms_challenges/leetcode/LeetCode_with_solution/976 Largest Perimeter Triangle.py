@@ -32,7 +32,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ largestPerimeter  A: L..[i..]) __ i..:
+    ___ largestPerimeter  A: L.. i.. __ i..
         """
         sort and scanning from right
         """

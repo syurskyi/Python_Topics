@@ -1,7 +1,7 @@
 ____ t___ _______ L..
 
 
-___ list_to_decimal(nums: L..[i..]) __ i..:
+___ list_to_decimal(nums: L.. i.. __ i..
     """Accept a list of positive integers in the range(0, 10)
        and return a integer where each int of the given list represents
        decimal place values from first element to last.  E.g

@@ -50,7 +50,7 @@ c_ Solution:
         ___ w __ words:
             counter[w] += 1
 
-        ___ w, c __ counter.i..:
+        ___ w, c __ counter.i..
             h__.heappush(h, Word(w, c
             __ l..(h) > k:
                 h__.heappop(h)

@@ -31,7 +31,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxChunksToSorted  arr: L..[i..]) __ i..:
+    ___ maxChunksToSorted  arr: L.. i.. __ i..
         """
         compared to the sorted
         [0, 1, 2, 3, 4]

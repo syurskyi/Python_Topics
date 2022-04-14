@@ -57,7 +57,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ wordsTyping  sentence: L..[s..], rows: i.., cols: i..) __ i..:
+    ___ wordsTyping  sentence: L..[s..], rows: i.., cols: i..) __ i..
         """
         How many times to fit
 

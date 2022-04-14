@@ -19,7 +19,7 @@ c_ Solution(o..
                     graph[seq[i-1]].a..(seq[i])
                     degree[seq[i]] += 1
         queue    # list
-        ___ key, val __ degree.i..:
+        ___ key, val __ degree.i..
             __ val __ 0:
                 queue.a..(key)
         index 0

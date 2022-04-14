@@ -45,7 +45,7 @@ ___ create_user_bar_chart(content
 
 
 
-    ___ tz,count  __ counts.i..:
+    ___ tz,count  __ counts.i..
         print(f"{tz:<{max_length + 1}}| {'+' * count}")
 
 

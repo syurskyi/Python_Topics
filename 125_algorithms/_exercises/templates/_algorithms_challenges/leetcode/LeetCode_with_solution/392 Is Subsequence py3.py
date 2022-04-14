@@ -32,7 +32,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ isSubsequence  s: s.., t: s..) __ b..:
+    ___ isSubsequence  s: s.., t: s..) __ b..
         """
         Subsequence - Binary search
         """

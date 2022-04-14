@@ -59,7 +59,7 @@ c_ RLEIterator:
         cur_used 0
         A A
 
-    ___ next  n: i..) __ i..:
+    ___ next  n: i..) __ i..
         run cur_used + n
         w.... cur_i < l..(A) a.. run > A[cur_i]:
             run -_ A[cur_i]

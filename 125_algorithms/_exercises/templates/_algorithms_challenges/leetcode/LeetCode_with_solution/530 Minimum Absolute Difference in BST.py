@@ -32,7 +32,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ getMinimumDifference  root: 'TreeNode') __ i..:
+    ___ getMinimumDifference  root: 'TreeNode') __ i..
         """
         For every node, find min and max in left or right substree.
         O(n lgn)

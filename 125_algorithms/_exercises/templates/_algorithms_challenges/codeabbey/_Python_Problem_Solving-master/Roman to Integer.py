@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ romanToInt  s: s..) __ i..:
+    ___ romanToInt  s: s..) __ i..
         rom_dic  {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
         count  0
         #i will track the length of the string

@@ -1,4 +1,4 @@
-___ convert(number: i.., base: i.. 2) __ s..:
+___ convert(number: i.., base: i.. 2) __ s..
     """Converts an integer into any base between 2 and 36 inclusive
 
     Args:

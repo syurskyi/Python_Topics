@@ -92,7 +92,7 @@ ___ return_codon_usage_table(
     total s..(codon_to_count.values
 
 
-    ___ codon,count __ codon_to_count.i..:
+    ___ codon,count __ codon_to_count.i..
         amino_acid amino_acid_mapping[codon]
         frequency_per_1000 r..((count/total) * 1000,1)
         codon_to_count[codon] [amino_acid,frequency_per_1000,count]

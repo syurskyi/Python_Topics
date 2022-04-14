@@ -23,7 +23,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ canPlaceFlowers  flowerbed: L..[i..], n: i..) __ b..:
+    ___ canPlaceFlowers  flowerbed: L..[i..], n: i..) __ b..
         """
         greedy
         """

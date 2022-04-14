@@ -6,7 +6,7 @@ c_ Solution(o..
     :rtype: str
     """
     stack    # list
-    ___ c __ num:
+    ___ c __ ?
       w.... k > 0 a.. stack a.. stack[-1] > c:
         stack.p.. )
         k -_ 1

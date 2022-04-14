@@ -42,7 +42,7 @@ c_ Solution:
         covered {N..}
         cnt 0
 
-    ___ minCameraCover  root: TreeNode) __ i..:
+    ___ minCameraCover  root: TreeNode) __ i..
         """
         Greedy?
         Bottom up, cover leaf's parent is strictly better than cover leaf
@@ -77,7 +77,7 @@ c_ SolutionErrror:
     ___ -
         covered s..()
 
-    ___ minCameraCover  root: TreeNode) __ i..:
+    ___ minCameraCover  root: TreeNode) __ i..
         """
         Greedy?
         Top-down, no good.

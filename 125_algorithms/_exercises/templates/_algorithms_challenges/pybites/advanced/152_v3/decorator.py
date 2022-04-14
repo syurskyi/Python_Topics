@@ -19,8 +19,8 @@ ___ strip_range(start, end
             return text
     """
     ___ decorator_replace(fun
-        @wraps(fun)
-        ___ wrapper_replace $ $$:
+        ??(fun)
+        ___ wrapper_replace $ $$
             output l..(fun $,  $$
             this_end end __ end < l.. ?  ____ l.. ?
             this_end this_end __ this_end > 0 ____ 0

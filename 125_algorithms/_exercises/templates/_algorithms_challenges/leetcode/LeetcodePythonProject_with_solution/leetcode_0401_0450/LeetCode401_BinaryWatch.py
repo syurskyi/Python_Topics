@@ -10,7 +10,7 @@ c_ Solution(o..
         ___ i __ r..(12
             ___ j __ r..(60
                 total countDigits(i) + countDigits(j)
-                __ total __ num:
+                __ total __ ?
                     s '%s:%02d' % (i, j)
                     result.a..(s)
         r.. result

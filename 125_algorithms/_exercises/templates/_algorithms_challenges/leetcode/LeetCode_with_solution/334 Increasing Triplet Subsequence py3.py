@@ -23,7 +23,7 @@ ____ b__ _______ bisect_left
 
 
 c_ Solution:
-    ___ increasingTriplet  nums: L..[i..]) __ b..:
+    ___ increasingTriplet  nums: L.. i.. __ b..
         """
         Patience sort
         LIS dp with binary search

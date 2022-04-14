@@ -5,4 +5,4 @@ ___ sieve(limit
         __ prime[i]:
             ___ j __ r..(i * i, limit + 1, i
                 prime[j] F..
-    r.. [i ___ i, x __ e..(prime) __ x]
+    r..  i ___ ?, x __ e..(prime) __ x]

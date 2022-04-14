@@ -36,7 +36,7 @@ ____ c.. _______ C..
 
 
 c_ Solution:
-    ___ reorderedPowerOf2  N: i..) __ b..:
+    ___ reorderedPowerOf2  N: i..) __ b..
         """
         count the digit and compare
         """

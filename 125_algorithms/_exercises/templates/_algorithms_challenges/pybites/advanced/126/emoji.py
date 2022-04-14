@@ -43,7 +43,7 @@ ___ find_emoji(term
 
     # ... your turn ...
 
-    ___ emoji,meaning __ emoji_mapping.i..:
+    ___ emoji,meaning __ emoji_mapping.i..
         __ term __ meaning.l..:
             print(meaning,emoji)
 

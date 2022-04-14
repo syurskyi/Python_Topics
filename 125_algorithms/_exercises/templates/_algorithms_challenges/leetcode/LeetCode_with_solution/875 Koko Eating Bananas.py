@@ -39,7 +39,7 @@ _______ m__
 
 
 c_ Solution:
-    ___ minEatingSpeed  piles: L..[i..], H: i..) __ i..:
+    ___ minEatingSpeed  piles: L..[i..], H: i..) __ i..
         """
         validation:
             each piles  ceil(n/K)

@@ -29,13 +29,13 @@ ___ calculate_gc_content_1st_solution(sequence
     ___ b __ bases:
         bases_dict[b] F..
 
-    ___ seq __ sequence:
+    ___ seq __ ?
         bases_dict[seq] T..
         ___
             counts[seq] += 1
         ______ K..:
             counts[seq] 1
-    ___ k,v __ bases_dict.i..:
+    ___ k,v __ bases_dict.i..
         __ v __ F..:
             counts[k] 0
 

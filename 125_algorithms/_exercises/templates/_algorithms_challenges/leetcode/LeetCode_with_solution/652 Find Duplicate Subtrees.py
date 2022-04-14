@@ -66,7 +66,7 @@ c_ Solution:
         w..(root, ret)
         r.. ret
 
-    ___ w..  cur, ret) __ i..:
+    ___ w..  cur, ret) __ i..
         """
         return merkle hash id
         """
@@ -91,7 +91,7 @@ c_ Solution2:
         w..(root, d..(i..), ret)
         r.. ret
 
-    ___ w..  cur, counter, ret) __ s..:
+    ___ w..  cur, counter, ret) __ s..
         """
         serialize the subtrees and check existence
 

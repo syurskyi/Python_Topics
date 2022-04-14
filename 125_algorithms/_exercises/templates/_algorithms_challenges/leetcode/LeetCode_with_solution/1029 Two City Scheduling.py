@@ -31,7 +31,7 @@ It is guaranteed that costs.length is even.
 
 
 c_ Solution:
-    ___ twoCitySchedCost  costs: L..[L..[i..]]) __ i..:
+    ___ twoCitySchedCost  costs: L..[L..[i..]]) __ i..
         """
         sort by city A and greedy? [30, 20]?
         sort by total?
@@ -52,7 +52,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ twoCitySchedCost_error  costs: L..[L..[i..]]) __ i..:
+    ___ twoCitySchedCost_error  costs: L..[L..[i..]]) __ i..
         """
         sort by city A and greedy? [30, 20]?
         sort by total?

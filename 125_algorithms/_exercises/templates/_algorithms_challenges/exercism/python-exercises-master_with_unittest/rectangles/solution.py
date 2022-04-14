@@ -8,7 +8,7 @@ c_ corners(o..
         j j
 
     ___ -s
-        r.. "[" + s..(i) + ", " + s..(j) + "]"
+        r.. "[" + s.. ? + ", " + s..(j) + "]"
 
 
 # return corner on the same line

@@ -34,7 +34,7 @@ movies [
     Movie('Scarface', 'March 12, 1984'),
 ]
 
-___ get_age(actor: Actor, movie: Movie) __ s..:
+___ get_age(actor: Actor, movie: Movie) __ s..
     """Calculates age of actor / actress when movie was released,
        return a string like this:
 

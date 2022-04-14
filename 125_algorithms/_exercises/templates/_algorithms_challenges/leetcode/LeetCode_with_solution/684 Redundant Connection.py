@@ -75,7 +75,7 @@ c_ DisjointSet
 
 
 c_ Solution:
-    ___ findRedundantConnection  edges: L..[L..[i..]]) __ L..[i..]:
+    ___ findRedundantConnection  edges: L..[L..[i..]]) __ L.. i..
         """
         Union-find
         """
@@ -91,7 +91,7 @@ c_ Solution:
         r..
 
 c_ Solution_dfs:
-    ___ findRedundantConnection  edges: L..[L..[i..]]) __ L..[i..]:
+    ___ findRedundantConnection  edges: L..[L..[i..]]) __ L.. i..
         """
         Construct graph: O(|E|)
         Find circle through dfs: O(|V|)

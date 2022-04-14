@@ -18,7 +18,7 @@ c_ Employee:
     hours_per_day: f__
     wage: f__
 
-    ___ _rounder  number: f__, places: i..) __ s..:
+    ___ _rounder  number: f__, places: i..) __ s..
         """Rounds a number the specified number of places
 
         :param number: Float of number of round
@@ -29,7 +29,7 @@ c_ Employee:
         r.. f"${amount:0.2f}"
 
     $
-    ___ weekly_pay(self) __ s..:
+    ___ weekly_pay(self) __ s..
         """Returns amount of weekly pay in US currency
 
         For instance: $250.75

@@ -17,7 +17,7 @@ c_ Solution:
 
         ans l..(A)
         degree m..(C.values
-        ___ a, c __ C.i..:
+        ___ a, c __ C.i..
             __ c __ degree a.. R[a] - L[a] + 1 < ans:
                 ans R[a] - L[a] + 1
 

@@ -61,7 +61,7 @@ c_ Solution(o..
             d[c] += 1
 
         h    # list
-        ___ char, cnt __ d.i..:
+        ___ char, cnt __ d.i..
             h__.heappush(h, Val(cnt, char
 
         ret    # list

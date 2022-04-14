@@ -10,7 +10,7 @@ c_ PhoneDirectory(o..
     :type maxNumbers: int
     """
     taken [T..] * maxNumbers
-    q d..([i ___ i __ r..(0, maxNumbers)])
+    q d..( i ___ ? __ r..(0, maxNumbers)])
 
   ___ get
     """

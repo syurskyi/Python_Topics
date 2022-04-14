@@ -15,7 +15,7 @@ c_ JsObject:
 
     ___ - ,  $$
         _local d..()
-        ___ k, v __ kwargs.i..:
+        ___ k, v __ kwargs.i..
             __setitem__(k, v)
 
     ___ __getattr__  item
@@ -61,5 +61,5 @@ c_ JsObject:
         r.. _local.v..
 
     ___ update  data
-        ___ k, v __ data.i..:
+        ___ k, v __ data.i..
             __setitem__(k, v)

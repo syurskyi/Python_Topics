@@ -3,5 +3,5 @@ ___ pattern(n
         r.. ''
     res '1'
     ___ i __ r..(2,n+1
-        res += '\n' + s..(i) * i
+        res += '\n' + s.. ? * i
     r.. res

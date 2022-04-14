@@ -1,9 +1,9 @@
-____ t___ _______ Generator
+____ t___ _______ G..
 
 VALUES "[0.1, 0.2, 0.3, 0.005, 0.005, 2.67]"
 
 
-___ calc_sums(values: s.. VALUES) __ Generator[s.., N.., N..]:
+___ calc_sums(values: s.. VALUES) __ G..[s.., N.., N..]:
     """
     Process the above JSON-encoded string of values and calculate the sum of each adjacent pair.
 

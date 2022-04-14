@@ -28,7 +28,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ matrixScore  A: L..[L..[i..]]) __ i..:
+    ___ matrixScore  A: L..[L..[i..]]) __ i..
         """
         MSB > sum of remaining digit
         => Toggle rows to set MSB to 1

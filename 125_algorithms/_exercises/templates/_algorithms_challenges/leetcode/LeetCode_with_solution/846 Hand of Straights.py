@@ -33,7 +33,7 @@ _______ h__
 
 
 c_ Solution:
-    ___ isNStraightHand  A: L..[i..], W: i..) __ b..:
+    ___ isNStraightHand  A: L..[i..], W: i..) __ b..
         """
         sort + queue
 
@@ -56,7 +56,7 @@ c_ Solution:
 
         r.. prev_cnt __ 0
 
-    ___ isNStraightHand_heap  A: L..[i..], W: i..) __ b..:
+    ___ isNStraightHand_heap  A: L..[i..], W: i..) __ b..
         """
         sort + heap
         O(N log N + N log N)

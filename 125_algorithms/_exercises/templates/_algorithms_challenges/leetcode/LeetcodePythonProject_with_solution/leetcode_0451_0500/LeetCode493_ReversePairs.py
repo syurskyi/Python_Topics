@@ -22,7 +22,7 @@ c_ Solution(o..
         ___ msort(lst
             n l..(lst)
             __ n <_ 1:
-                r.. lst
+                r.. ?
             ____
                 r.. merger(msort(lst[:i..(n/2)]), msort(lst[i..(n/2]
         ___ merger(left, right

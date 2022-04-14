@@ -27,7 +27,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ findShortestSubArray  nums: L..[i..]) __ i..:
+    ___ findShortestSubArray  nums: L.. i.. __ i..
         """
         counter + two pointers does not work
         counter + first appearance

@@ -20,7 +20,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ checkPossibility  A: L..[i..]) __ b..:
+    ___ checkPossibility  A: L.. i.. __ b..
         """
         greedy change
         two way of changing
@@ -40,7 +40,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ checkPossibility_error  A: L..[i..]) __ b..:
+    ___ checkPossibility_error  A: L.. i.. __ b..
         """
         greedy change
         """

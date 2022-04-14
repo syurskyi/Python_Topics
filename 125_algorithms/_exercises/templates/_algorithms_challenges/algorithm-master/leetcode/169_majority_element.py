@@ -13,7 +13,7 @@ c_ Solution:
         ___ num __ nums:
             __ cnt __ 0:
                 ans, cnt num, 1
-            ____ ans __ num:
+            ____ ans __ ?
                 cnt += 1
             ____
                 cnt -_ 1
@@ -51,7 +51,7 @@ c_ Solution:
         ___ a __ nums:
             freq[a] freq.g.. a, 0) + 1
 
-        ___ a, cnt __ freq.i..:
+        ___ a, cnt __ freq.i..
             __ cnt > l..(nums) // 2:
                 r.. a
 

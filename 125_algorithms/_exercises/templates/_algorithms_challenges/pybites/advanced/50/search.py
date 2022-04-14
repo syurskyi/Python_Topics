@@ -64,11 +64,11 @@ ___ filter_entries_by_tag(s.., entry
     """
         
     entry_tags entry.tags
-    __ '&' __ s..:
+    __ '&' __ s..
         splits s...s..('&')
 
         r.. a..(s...l.. __ entry_tags ___ s.. __ splits)
-    ____ '|' __ s..:
+    ____ '|' __ s..
         splits s...s..('|')
         r.. a__(s...l.. __ entry_tags ___ s.. __ splits)
     ____

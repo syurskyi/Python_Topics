@@ -33,7 +33,7 @@ c_ Solution:
         __ n.. root:
             r.. ''
         data ''
-        ___ key, node __ root.children.i..:
+        ___ key, node __ root.children.i..
             data += key + serialize(node)
         r.. '<%s>' % data
 

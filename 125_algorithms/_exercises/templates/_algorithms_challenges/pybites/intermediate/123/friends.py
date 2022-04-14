@@ -22,7 +22,7 @@ ___ get_friend_with_most_friends(friendships, users=users
 
    most_friends 0
    previous_value 0
-   ___ key, value __ friend_frequency.i..:
+   ___ key, value __ friend_frequency.i..
       __ l..(value) >_ previous_value:
          most_friends key
          previous_value l..(value)

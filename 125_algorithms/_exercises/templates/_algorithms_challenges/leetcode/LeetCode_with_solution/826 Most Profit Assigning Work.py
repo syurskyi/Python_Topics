@@ -30,7 +30,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxProfitAssignment  difficulty: L..[i..], profit: L..[i..], worker: L..[i..]) __ i..:
+    ___ maxProfitAssignment  difficulty: L..[i..], profit: L..[i..], worker: L.. i.. __ i..
         """
         Greedy? Sort by profit
         """

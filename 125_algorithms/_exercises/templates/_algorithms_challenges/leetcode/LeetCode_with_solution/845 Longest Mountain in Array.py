@@ -35,7 +35,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ longestMountain  A: L..[i..]) __ i..:
+    ___ longestMountain  A: L.. i.. __ i..
         """
         dp
         """
@@ -55,7 +55,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ longestMountain  A: L..[i..]) __ i..:
+    ___ longestMountain  A: L.. i.. __ i..
         """
         dp
         """
@@ -76,7 +76,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ longestMountain_complicated  A: L..[i..]) __ i..:
+    ___ longestMountain_complicated  A: L.. i.. __ i..
         """
         a flag to indicate expecting increase or decrease
         one-pass can

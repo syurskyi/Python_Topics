@@ -48,7 +48,7 @@ c_ GeoHash:
         r.. bins
 
     ___ get_base32_list
-        base32_list [s..(i) ___ i __ r..(10)]
+        base32_list [s.. ? ___ i __ r..(10)]
 
         ignored_char (o..('a'), o..('i'), o..('l'), o..('o'
         ___ i __ r..(o..('a'), o..('z') + 1

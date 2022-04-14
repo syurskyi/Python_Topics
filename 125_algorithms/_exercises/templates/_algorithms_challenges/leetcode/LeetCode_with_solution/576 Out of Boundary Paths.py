@@ -30,7 +30,7 @@ dirs ((0, 1), (0, -1), (1, 0), (-1, 0
 
 
 c_ Solution:
-    ___ findPaths  m: i.., n: i.., N: i.., r: i.., c: i..) __ i..:
+    ___ findPaths  m: i.., n: i.., N: i.., r: i.., c: i..) __ i..
         """
         iterate N epoch
         let F[i][j] be the number of paths to reach i, j

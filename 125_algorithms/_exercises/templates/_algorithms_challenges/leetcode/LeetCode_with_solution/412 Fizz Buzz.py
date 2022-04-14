@@ -44,7 +44,7 @@ c_ Solution(o..
             __ i % 5 __ 0:
                 cur += "Buzz"
             __ n.. cur:
-                cur s..(i)
+                cur s.. ?
 
             ret.a..(cur)
 

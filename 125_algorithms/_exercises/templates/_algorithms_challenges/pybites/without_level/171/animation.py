@@ -10,10 +10,10 @@ ___ spinner(seconds
     """Make a terminal loader/spinner animation using the imports aboveself.
        Takes seconds argument = time for the spinner to runself.
        Does not return anything, only prints to stdout."""
-    t t__()
+    t t__
     c cycle(SPINNER_STATES)
     w... T...
-        __ t__() > t + seconds:
+        __ t__ > t + seconds:
             _____
         print _*\r{next(c)}', e.._'', file=sys.stdout, flush=T..)
         sleep(STATE_TRANSITION_TIME)

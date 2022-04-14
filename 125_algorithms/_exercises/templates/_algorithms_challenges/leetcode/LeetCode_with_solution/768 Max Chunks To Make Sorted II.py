@@ -36,7 +36,7 @@ ____ c.. _______ d.., d..
 
 
 c_ Solution:
-    ___ maxChunksToSorted  arr: L..[i..]) __ i..:
+    ___ maxChunksToSorted  arr: L.. i.. __ i..
         """
         not necessarily distinct
         sort and assign index

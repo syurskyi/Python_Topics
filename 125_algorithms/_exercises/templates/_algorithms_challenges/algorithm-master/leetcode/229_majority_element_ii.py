@@ -13,9 +13,9 @@ c_ Solution:
         c1  c2  0
 
         ___ num __ nums:
-            __ a1 __ num:
+            __ a1 __ ?
                 c1 + 1
-            ____ a2 __ num:
+            ____ a2 __ ?
                 c2 + 1
             ____ c1 __ 0:
                 a1, c1  num, 1

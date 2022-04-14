@@ -51,11 +51,11 @@ c_ Solution:
         """
         c_A, c_B C..(A.s.., C..(B.s..
         ret    # list
-        ___ k, v __ c_A.i..:
+        ___ k, v __ c_A.i..
             __ v __ 1 a.. k n.. __ c_B:
                 ret.a..(k)
 
-        ___ k, v __ c_B.i..:
+        ___ k, v __ c_B.i..
             __ v __ 1 a.. k n.. __ c_A:
                 ret.a..(k)
 

@@ -35,7 +35,7 @@ _______ h__
 
 
 c_ Solution:
-    ___ findMaximizedCapital  k: i.., W: i.., Profits: L..[i..], Capital: L..[i..]) __ i..:
+    ___ findMaximizedCapital  k: i.., W: i.., Profits: L..[i..], Capital: L.. i.. __ i..
         """
         Greedy + dual PQ
         Greedy: need max profit meeting the current capital requirement
@@ -61,7 +61,7 @@ c_ Solution:
 
         r.. capital
 
-    ___ findMaximizedCapital_TLE  k: i.., W: i.., Profits: L..[i..], Capital: L..[i..]) __ i..:
+    ___ findMaximizedCapital_TLE  k: i.., W: i.., Profits: L..[i..], Capital: L.. i.. __ i..
         """
         Knapsack problem
 

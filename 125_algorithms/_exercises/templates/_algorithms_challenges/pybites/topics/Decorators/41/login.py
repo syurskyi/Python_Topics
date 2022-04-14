@@ -14,7 +14,7 @@ ___ login_required(func
             r.. 'please login'
         ____
             r.. ? ?)
-    r.. wrapper
+    r.. ?
 
 
 @login_required

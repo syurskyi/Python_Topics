@@ -25,7 +25,7 @@ ___ _create_defeat_mapping
             attacker row 'Attacker'
 
 
-            ___ key,value __ row.i..:
+            ___ key,value __ row.i..
                 __ key !_ 'Attacker':
                     __ value __ 'win':
                         mapping[attacker].add(key)

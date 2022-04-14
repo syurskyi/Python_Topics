@@ -22,7 +22,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ judgePoint24  nums: L..[i..]) __ b..:
+    ___ judgePoint24  nums: L.. i.. __ b..
         r.. dfs(nums, {})
 
     ___ dfs  A, cache

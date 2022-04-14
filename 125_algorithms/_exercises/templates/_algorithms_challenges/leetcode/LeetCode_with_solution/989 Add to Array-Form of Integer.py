@@ -33,7 +33,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ addToArrayForm  A: L..[i..], K: i..) __ L..[i..]:
+    ___ addToArrayForm  A: L..[i..], K: i..) __ L.. i..
         """
         carry
         """

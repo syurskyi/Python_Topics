@@ -45,7 +45,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ isBipartite  graph: L..[L..[i..]]) __ b..:
+    ___ isBipartite  graph: L..[L..[i..]]) __ b..
         """
         coloring the graph
         dfs coloring
@@ -75,7 +75,7 @@ c_ Solution:
 
 
 c_ SolutionError:
-    ___ isBipartite  graph: L..[L..[i..]]) __ b..:
+    ___ isBipartite  graph: L..[L..[i..]]) __ b..
         G graph
         A, B s..(), s..()
         visited d..(b..)

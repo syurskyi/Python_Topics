@@ -46,7 +46,7 @@ c_ Solution:
     ___ -
         mn: Tuple[i..] N..
 
-    ___ smallestFromLeaf  root: TreeNode) __ s..:
+    ___ smallestFromLeaf  root: TreeNode) __ s..
         """
         dfs
         """

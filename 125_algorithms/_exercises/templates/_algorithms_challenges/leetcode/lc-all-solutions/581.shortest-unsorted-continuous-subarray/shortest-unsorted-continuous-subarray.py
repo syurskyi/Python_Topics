@@ -25,4 +25,4 @@ c_ Solution(o..
         _____
     print
     end, start
-    r.. m..(end - start + 1, 0)
+    r.. m..(? - ? + 1, 0)

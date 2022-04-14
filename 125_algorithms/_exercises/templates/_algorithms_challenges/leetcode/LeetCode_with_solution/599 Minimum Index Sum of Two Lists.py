@@ -29,7 +29,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findRestaurant  list1: L..[s..], list2: L..[s..]) __ L..[s..]:
+    ___ findRestaurant  list1: L..[s..], list2: L..s.. __ L..[s..]:
         index    # dict
         ___ i, v __ e..(list2
             index[v] i

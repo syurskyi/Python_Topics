@@ -47,7 +47,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ removeOuterParentheses  S: s..) __ s..:
+    ___ removeOuterParentheses  S: s..) __ s..
         """
         Primitive parentheses will have equal number of opened and closed
         parentheses.
@@ -70,7 +70,7 @@ c_ Solution:
         r.. "".j..(ret)
 
 
-    ___ removeOuterParentheses_error  S: s..) __ s..:
+    ___ removeOuterParentheses_error  S: s..) __ s..
         """
         stack + deque
         """

@@ -6,7 +6,7 @@ c_ Solution:
         ___ i __ r..(n / 2
             start i
             end n - i - 1
-            width end - start
+            width ? - ?
             ___ j __ r..(start, end
                 offset j - start
                 # Top

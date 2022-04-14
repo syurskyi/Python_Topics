@@ -67,7 +67,7 @@ c_ TimeMap:
         n (timestamp, value)
         b__.i.. (m[key], n)
 
-    ___ get  key: s.., timestamp: i..) __ s..:
+    ___ get  key: s.., timestamp: i..) __ s..
         __ key n.. __ m:
             r.. ""
 
@@ -75,10 +75,10 @@ c_ TimeMap:
         lst m[key]
         i b__.b__(lst, (timestamp, ""
         __ i < l..(lst) a.. lst[i][0] __ timestamp:
-            r.. lst[i][1]
+            r.. ?[i][1]
         i -_ 1
         __ i >_ 0:
-            r.. lst[i][1]
+            r.. ?[i][1]
             
         r.. ""
 

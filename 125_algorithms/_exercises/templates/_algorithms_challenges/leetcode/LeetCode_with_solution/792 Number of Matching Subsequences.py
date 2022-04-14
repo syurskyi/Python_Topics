@@ -22,7 +22,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ numMatchingSubseq  S: s.., words: L..[s..]) __ i..:
+    ___ numMatchingSubseq  S: s.., words: L..s.. __ i..
         """
         Linear O(|S| + sum(|word|))
         no need to if-check
@@ -42,7 +42,7 @@ c_ Solution:
 
         r.. l..(itrs_m[N..])
 
-    ___ numMatchingSubseq_TLE  S: s.., words: L..[s..]) __ i..:
+    ___ numMatchingSubseq_TLE  S: s.., words: L..s.. __ i..
         """
         Brute force O(|S| |Words| M)
 

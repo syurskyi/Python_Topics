@@ -48,7 +48,7 @@ c_ Solution(o..
         # if node has no prerequisites, add it to queue, and repeat
         w.... queue:
             u queue.p.. 0)
-            ___ v, prqs __ prq_graph.i..:
+            ___ v, prqs __ prq_graph.i..
                 __ u __ prqs:
                     prqs.remove(u)
                     __ n.. prqs:

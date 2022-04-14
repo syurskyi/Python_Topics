@@ -33,7 +33,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ validMountainArray  A: L..[i..]) __ b..:
+    ___ validMountainArray  A: L.. i.. __ b..
         """
         related to 845 Longest Mountain in Array
 

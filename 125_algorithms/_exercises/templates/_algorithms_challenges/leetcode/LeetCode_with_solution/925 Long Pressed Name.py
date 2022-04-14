@@ -37,7 +37,7 @@ The characters of name and typed are lowercase letters.
 
 
 c_ Solution:
-    ___ isLongPressedName  name: s.., typed: s..) __ b..:
+    ___ isLongPressedName  name: s.., typed: s..) __ b..
         """
         two pointers
         """

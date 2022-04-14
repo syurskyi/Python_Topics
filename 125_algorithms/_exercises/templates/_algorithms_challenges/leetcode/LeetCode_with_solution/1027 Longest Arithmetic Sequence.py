@@ -34,7 +34,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ longestArithSeqLength  A: L..[i..]) __ i..:
+    ___ longestArithSeqLength  A: L.. i.. __ i..
         """
         Brute force O(n^2)
 

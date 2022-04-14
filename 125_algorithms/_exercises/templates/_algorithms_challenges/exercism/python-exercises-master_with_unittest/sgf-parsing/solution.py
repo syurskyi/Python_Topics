@@ -6,7 +6,7 @@ c_ SgfTree(o..
     ___ -e  other
         __ n.. isi..(other, SgfTree
             r.. F..
-        ___ k, v __ properties.i..:
+        ___ k, v __ properties.i..
             __ k n.. __ other.properties:
                 r.. F..
             __ other.properties[k] !_ v:
@@ -24,7 +24,7 @@ c_ SgfTree(o..
     ___  -r
         """Ironically, encoding to SGF is much easier"""
         rep '(;'
-        ___ k, vs __ properties.i..:
+        ___ k, vs __ properties.i..
             rep += k
             ___ v __ vs:
                 rep += '[{}]'.f..(v)

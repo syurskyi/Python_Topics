@@ -9,5 +9,5 @@ c_ Solution(o..
         :type s: str
         :rtype: str
         """
-        __ n.. s o. n.. s.s..: r.. ''
+        __ n.. s o. n.. s.s.. r.. ''
         r.. ' '.j..([x.s.. ___ x __ s.s...s..(' ') __ x][::-1])

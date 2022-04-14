@@ -20,7 +20,7 @@ ___ retry(func
     # and use wraps to preserve docstring
     #
     $w.. f..
-    ___ wrapper $ $$:
+    ___ wrapper $ $$
         retries 0
         w.... retries < MAX_RETRIES:
             ___
@@ -34,4 +34,4 @@ ___ retry(func
 
         r.. vals
 
-    r.. wrapper
+    r.. ?

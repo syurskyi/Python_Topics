@@ -3,7 +3,7 @@ ____ d__ _______ t..
 
 
 ___ ontrack_reading(books_goal: i.., books_read: i..,
-                    day_of_year: i.. N..) __ b..:
+                    day_of_year: i.. N..) __ b..
 
     year d__.t...year
     boy d__(year, 1, 1)

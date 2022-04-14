@@ -43,7 +43,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxIncreaseKeepingSkyline  grid: L..[L..[i..]]) __ i..:
+    ___ maxIncreaseKeepingSkyline  grid: L..[L..[i..]]) __ i..
         """
         grow the to limit constraint by 2D skyline
         """

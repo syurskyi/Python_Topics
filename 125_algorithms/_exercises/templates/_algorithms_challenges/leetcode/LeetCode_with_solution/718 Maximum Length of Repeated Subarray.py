@@ -19,7 +19,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ findLength  A: L..[i..], B: L..[i..]) __ i..:
+    ___ findLength  A: L..[i..], B: L.. i.. __ i..
         """
         similar to longest substring
         Brute force O(mn)

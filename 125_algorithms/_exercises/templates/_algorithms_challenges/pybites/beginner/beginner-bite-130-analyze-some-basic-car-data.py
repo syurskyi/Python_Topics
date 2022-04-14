@@ -49,7 +49,7 @@ ___ most_prolific_automaker(year
                 result[d 'automaker']] 0
     t ""
     cur 0
-    ___ k,v __ result.i..:
+    ___ k,v __ result.i..
         __ v > cur:
             t k
             cur v

@@ -59,7 +59,7 @@ ___ make_character_index(text=text, characters=CHARACTERS
 
     in_line l.... word,line: __.s..(word,line,flags=__.I) __ n.. N..
 
-    ___ i,line __ e..(text.s..:
+    ___ i,line __ e..(text.s..
         ___ character __ characters:
             __ t..(character) __ t..:
                 ___ value __ character:

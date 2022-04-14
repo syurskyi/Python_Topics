@@ -13,7 +13,7 @@ c_ Solution(o..
         ___ num __ nums:
             hashmap[num] hashmap.g.. num, 0)+1
         maxLen 0
-        ___ num, count __ hashmap.i..:
+        ___ num, count __ hashmap.i..
             __ num+1 __ hashmap:
                 maxLen m..(maxLen, count+hashmap[num+1])
         r.. maxLen

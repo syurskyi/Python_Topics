@@ -8,11 +8,11 @@ ___ binary_search(sequence, target
         mid (low + high)//2
 
 
-        __ sequence[mid] __ target:
+        __ s..[mid] __ target:
             r.. mid
 
 
-        __ sequence[mid] < target:
+        __ s..[mid] < target:
             low mid + 1
         ____
             high =mid - 1

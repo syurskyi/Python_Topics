@@ -34,7 +34,7 @@ c_ Solution(o..
         :rtype: str
         """
         stk    # list  # result after removal
-        ___ char __ num:
+        ___ char __ ?
             w.... k a.. stk a.. stk[-1] > char:
                 stk.p.. )
                 k -_ 1

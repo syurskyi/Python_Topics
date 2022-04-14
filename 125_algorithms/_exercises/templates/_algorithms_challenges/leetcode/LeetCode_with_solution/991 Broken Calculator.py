@@ -41,7 +41,7 @@ Note:
 
 
 c_ Solution:
-    ___ brokenCalc  X: i.., Y: i..) __ i..:
+    ___ brokenCalc  X: i.., Y: i..) __ i..
         """
         greedy + work backward
 
@@ -60,7 +60,7 @@ c_ Solution:
 
         r.. t + X - Y
 
-    ___ brokenCalc_TLE  X: i.., Y: i..) __ i..:
+    ___ brokenCalc_TLE  X: i.., Y: i..) __ i..
         """
         BFS
         """

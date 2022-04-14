@@ -28,7 +28,7 @@ c_ Domain:
         email_domain __.f.. _ @(.*\.[a-z]+)', email)
         r.. Domain(email_domain 0
 
-    ___ -s(self) __ s..:
+    ___ -s(self) __ s..
         r.. _* name}'
 
 print(Domain.parse_url('http://www.khooville.com'

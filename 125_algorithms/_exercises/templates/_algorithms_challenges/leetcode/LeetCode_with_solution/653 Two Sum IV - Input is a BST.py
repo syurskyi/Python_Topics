@@ -41,7 +41,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ findTarget  root: TreeNode, k: i..) __ b..:
+    ___ findTarget  root: TreeNode, k: i..) __ b..
         root root
         r.. w..(root, k)
 

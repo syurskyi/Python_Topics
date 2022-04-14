@@ -37,7 +37,7 @@ c_ Solution(o..
                     w.... i < l..(s) a.. s[i].i..
                         i += 1
                     count i..(s[prev:i])
-                ___ elem, freq __ hashmap0.i..:
+                ___ elem, freq __ hashmap0.i..
                     hashmap[elem] hashmap.g.. elem, 0)+freq*count
             ____
                 __ i+1 < l..(s) a.. __.m..('[a-z]', s[i+1]

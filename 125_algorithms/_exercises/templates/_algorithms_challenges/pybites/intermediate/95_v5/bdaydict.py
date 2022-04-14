@@ -10,6 +10,6 @@ c_ BirthdayDict(d..
         update $ $$
 
     ___ __setitem__  name, birthday
-        __ a__((birthday.day __ x.day a.. birthday.month __ x.month) ___ (_, x) __ i..:
+        __ a__((birthday.day __ x.day a.. birthday.month __ x.month) ___ (_, x) __ i..
             print(MSG.f..(name
         d...__setitem__  name, birthday)

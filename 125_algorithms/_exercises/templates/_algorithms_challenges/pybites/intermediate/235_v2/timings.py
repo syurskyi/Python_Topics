@@ -11,7 +11,7 @@ __ n.. timings_log.exists
     )
 
 
-___ get_bite_with_fastest_avg_test(timings: l..) __ s..:
+___ get_bite_with_fastest_avg_test(timings: l..) __ s..
     """Return the bite which has the fastest average time per test"""
     
     

@@ -109,7 +109,7 @@ c_ Document:
         lines[index] line
         r.. self
 
-    ___ word_count(self) __ i..:
+    ___ word_count(self) __ i..
         """Return the total number of words in the document."""
         r.. s..(l..(_remove_punctuation(line).s.. ___ line __ lines)
 
@@ -128,7 +128,7 @@ c_ Document:
 
 
 
-    ___ _remove_punctuation line: s..) __ s..:
+    ___ _remove_punctuation line: s..) __ s..
         """Remove punctuation from a line."""
         # you can use this function as helper method for
         # Document.word_count() and Document.words

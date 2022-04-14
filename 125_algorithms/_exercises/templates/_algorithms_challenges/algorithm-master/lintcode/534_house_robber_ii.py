@@ -116,7 +116,7 @@ c_ Solution:
         )
 
     ___ rob_in_line  A, start, end
-        n end - start + 1
+        n ? - ? + 1
         dp [0] * (n + 1)
         dp[0] 0
         dp[1] A[start]

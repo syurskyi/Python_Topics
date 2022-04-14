@@ -66,7 +66,7 @@ c_ CBTInserter:
                     candidates.a..(e)
             q cur_q
 
-    ___ insert  v: i..) __ i..:
+    ___ insert  v: i..) __ i..
         pi candidates[0]
         node TreeNode(v)
         __ n.. pi.left:

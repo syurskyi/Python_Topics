@@ -113,7 +113,7 @@ ___ generate_items(data
     item_mapping    # dict
     
 
-    ___ enchantment_id,enchantment __ data.i..:
+    ___ enchantment_id,enchantment __ data.i..
 
         ___ item __ enchantment.items:
             __ item n.. __ item_mapping:

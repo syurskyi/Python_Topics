@@ -35,7 +35,7 @@ Note:
 
 
 c_ Solution:
-    ___ bitwiseComplement  N: i..) __ i..:
+    ___ bitwiseComplement  N: i..) __ i..
         """
         invert the bit, and the mask it
         """

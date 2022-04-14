@@ -61,7 +61,7 @@ dirs (
 
 
 c_ Solution:
-    ___ slidingPuzzle  board: L..[L..[i..]]) __ i..:
+    ___ slidingPuzzle  board: L..[L..[i..]]) __ i..
         """
         BFS + visited
 

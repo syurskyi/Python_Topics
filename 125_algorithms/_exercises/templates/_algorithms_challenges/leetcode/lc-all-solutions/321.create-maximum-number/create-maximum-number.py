@@ -10,7 +10,7 @@ c_ Solution(o..
     ___ getKDigits(num, k
       drop l..(num) - k
       stack    # list
-      ___ c __ num:
+      ___ c __ ?
         w.... drop > 0 a.. stack a.. stack[-1] < c:
           stack.p.. )
           drop -_ 1

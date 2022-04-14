@@ -21,7 +21,7 @@ c_ SegmentedTree(o..
       node.total nums[start]
       r.. node
 
-    mid start + (end - start) / 2
+    mid start + (? - ?) / 2
 
     root STNode(start, end)
     root.left buildTree(nums, start, mid)

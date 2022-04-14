@@ -3,10 +3,10 @@ ____ f.. _______ w..
 
 ___ make_html(tag
     ___ html_tag(orig_func
-        @wraps(orig_func)
-        ___ wrapper $ $$:
+        ??(orig_func)
+        ___ wrapper $ $$
             r.. '<'+tag+'>' + orig_func $ $$ + '</'+tag+'>'
-        r.. wrapper
+        r.. ?
     r.. html_tag
 
 ?? 'p'

@@ -14,9 +14,9 @@ ___ spinner(seconds
     cycles cycle(SPINNER_STATES)
 
 
-    start_time t__()
+    start_time t__
 
-    w.... t__() - start_time <_ seconds:
+    w.... t__ - start_time <_ seconds:
         s next(cycles)
         print(s,end='\r')
         

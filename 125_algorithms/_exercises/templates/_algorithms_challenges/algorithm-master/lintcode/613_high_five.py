@@ -30,7 +30,7 @@ c_ Solution:
                 heappop(top_k[r.id])
 
         _sum 0
-        ___ id, scores __ top_k.i..:
+        ___ id, scores __ top_k.i..
             _sum 0
             ___ score __ scores:
                 _sum += score

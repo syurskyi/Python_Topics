@@ -20,7 +20,7 @@ c_ Solution(o..
                 hashmap2[s] i
         minInd f__('inf')
         res    # list
-        ___ s, i __ hashmap1.i..:
+        ___ s, i __ hashmap1.i..
             __ s __ hashmap2:
                 ind i+hashmap2[s]
                 __ ind __ minInd:

@@ -63,7 +63,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ knightDialer  N: i..) __ i..:
+    ___ knightDialer  N: i..) __ i..
         """
         DP
         F[pos][step] = sum(F[nbr][step+1] for all nbr)
@@ -90,7 +90,7 @@ c_ SolutionTLE2:
     ___ -
         cache    # dict
 
-    ___ knightDialer  N: i..) __ i..:
+    ___ knightDialer  N: i..) __ i..
         ret 0
         ___ i __ r..(10
             ret += dfs(i, N-1)
@@ -119,7 +119,7 @@ c_ SolutionTLE:
         n 3
         cache    # dict
 
-    ___ knightDialer  N: i..) __ i..:
+    ___ knightDialer  N: i..) __ i..
         ret 0
         ___ i __ r..(m
             ___ j __ r..(n

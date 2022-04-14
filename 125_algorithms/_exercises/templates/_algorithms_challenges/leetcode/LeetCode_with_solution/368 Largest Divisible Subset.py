@@ -47,7 +47,7 @@ c_ Solution(o..
                         pi[i] j
 
         max_i, max_v 0, 1
-        ___ k, v __ F.i..:
+        ___ k, v __ F.i..
             __ v > max_v:
                 max_i, max_v k, v
 

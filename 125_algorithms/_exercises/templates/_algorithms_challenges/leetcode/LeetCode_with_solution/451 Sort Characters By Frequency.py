@@ -19,7 +19,7 @@ c_ Solution(o..
             counter[c] += 1
 
         bucket {count: [] ___ count __ r..(1, l..(s)+1)}
-        ___ k, v __ counter.i..:
+        ___ k, v __ counter.i..
             bucket[v].a..(k)
 
         ret    # list

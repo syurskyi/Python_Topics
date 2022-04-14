@@ -45,7 +45,7 @@ _______ b__
 
 
 c_ Solution:
-    ___ fairCandySwap  A: L..[i..], B: L..[i..]) __ L..[i..]:
+    ___ fairCandySwap  A: L..[i..], B: L.. i.. __ L.. i..
         """
         It is a search problem. Use set as search.
         """
@@ -59,7 +59,7 @@ c_ Solution:
                 
         r..
 
-    ___ fairCandySwap_complex  A: L..[i..], B: L..[i..]) __ L..[i..]:
+    ___ fairCandySwap_complex  A: L..[i..], B: L.. i.. __ L.. i..
         """
         sum, to figure out the target O(N)
         exchange one

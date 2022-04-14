@@ -2,7 +2,7 @@ ___ pattern(n
     s__ ''
     res    # list
     ___ i __ r..(n,0,-1
-        s__ += s..(i)
+        s__ += s.. ?
         res.a..(s__)
     r.. '\n'.j..(res)
         

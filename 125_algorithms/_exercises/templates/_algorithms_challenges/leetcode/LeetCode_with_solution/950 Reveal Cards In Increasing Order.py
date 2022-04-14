@@ -44,7 +44,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ deckRevealedIncreasing  deck: L..[i..]) __ L..[i..]:
+    ___ deckRevealedIncreasing  deck: L.. i.. __ L.. i..
         """
         Sorted is [2, 3, 5, 7, 11, 13, 17]
         17 is the last card, start from the right

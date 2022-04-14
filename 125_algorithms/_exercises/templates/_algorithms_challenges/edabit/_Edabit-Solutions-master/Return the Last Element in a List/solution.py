@@ -1,5 +1,5 @@
 ___ getLastItem(lst
-    r.. lst[-1]
+    r.. ?[-1]
 
 
 

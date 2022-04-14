@@ -15,7 +15,7 @@ c_ Solution:
     ___ -
         sums    # list
 
-    ___ checkEqualTree  root: TreeNode) __ b..:
+    ___ checkEqualTree  root: TreeNode) __ b..
         """
         To save 2nd pass, store sums
         space: O(N)
@@ -44,7 +44,7 @@ c_ Solution:
         root N..  # need to handle 0
         total_sum N..
 
-    ___ checkEqualTree  root: TreeNode) __ b..:
+    ___ checkEqualTree  root: TreeNode) __ b..
         """
         two passes
         1st pass, get total sum

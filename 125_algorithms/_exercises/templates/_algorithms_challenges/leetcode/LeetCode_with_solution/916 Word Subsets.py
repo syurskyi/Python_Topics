@@ -47,7 +47,7 @@ ____ c.. _______ C.., d..
 
 
 c_ Solution:
-    ___ wordSubsets  A: L..[s..], B: L..[s..]) __ L..[s..]:
+    ___ wordSubsets  A: L..[s..], B: L..s.. __ L..[s..]:
         """
         brute foce check b subset of a: two pointers O(|a| + |b|)
         O(n * m * (|a|+|b|))
@@ -60,13 +60,13 @@ c_ Solution:
         mx d..(i..)
         ___ b __ B:
             c C..(b)
-            ___ k, v __ c.i..:
+            ___ k, v __ c.i..
                 mx[k] m..(mx[k], v)
 
         ret    # list
         ___ a __ A:
             c C..(a)
-            ___ k, v __ mx.i..:
+            ___ k, v __ mx.i..
                 __ c[k] < v:
                     _____
             ____

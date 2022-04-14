@@ -41,7 +41,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ nextLargerNodes  head: ListNode) __ L..[i..]:
+    ___ nextLargerNodes  head: ListNode) __ L.. i..
         """
         If input is an array, use stack from right to left. Maintain a decreasing stack
 

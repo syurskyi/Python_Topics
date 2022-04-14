@@ -34,7 +34,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ flipEquiv  root1: TreeNode, root2: TreeNode) __ b..:
+    ___ flipEquiv  root1: TreeNode, root2: TreeNode) __ b..
         """
         O(N)
         """

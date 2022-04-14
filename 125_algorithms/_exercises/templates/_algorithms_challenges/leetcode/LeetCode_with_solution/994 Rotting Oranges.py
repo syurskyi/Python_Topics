@@ -40,7 +40,7 @@ dirs ((0, -1), (0, 1), (-1, 0), (1, 0
 
 
 c_ Solution:
-    ___ orangesRotting  grid: L..[L..[i..]]) __ i..:
+    ___ orangesRotting  grid: L..[L..[i..]]) __ i..
         """
         maintain a q for the newly rotten
         """

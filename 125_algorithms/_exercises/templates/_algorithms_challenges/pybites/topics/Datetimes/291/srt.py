@@ -15,7 +15,7 @@ he is talking slooooow
 she is talking super fast here!
 """
 
-___ get_srt_section_ids(text: s..) __ L..[i..]:
+___ get_srt_section_ids(text: s..) __ L.. i..
     """Parse a caption (srt) text passed in and return a
        list of section numbers ordered descending by
        highest speech speed

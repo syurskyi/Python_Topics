@@ -19,7 +19,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ checkInclusion  s1: s.., s2: s..) __ b..:
+    ___ checkInclusion  s1: s.., s2: s..) __ b..
         """
         counter + two pointers
         """

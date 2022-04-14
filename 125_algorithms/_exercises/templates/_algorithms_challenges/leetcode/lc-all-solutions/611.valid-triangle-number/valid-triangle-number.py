@@ -7,7 +7,7 @@ c_ Solution(o..
       end i - 1
       w.... start < end:
         __ nums[start] + nums[end] > nums[i]:
-          ans += end - start
+          ans += ? - ?
           end -_ 1
         ____
           start += 1

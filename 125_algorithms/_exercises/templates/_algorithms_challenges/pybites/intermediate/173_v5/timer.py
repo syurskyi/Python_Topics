@@ -5,7 +5,7 @@ NOW d__ y.._2019,  m.._2,  d.._6,
 
 
 ___ add_todo(delay_time: s.., task: s..,
-             start_time: d__ NOW) __ s..:
+             start_time: d__ NOW) __ s..
     """
     Add a todo list item in the future with a delay time.
 

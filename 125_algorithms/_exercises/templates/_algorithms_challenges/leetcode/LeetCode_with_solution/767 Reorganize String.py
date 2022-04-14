@@ -22,7 +22,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ reorganizeString  S: s..) __ s..:
+    ___ reorganizeString  S: s..) __ s..
         """
         piles by max char and circular append
         """

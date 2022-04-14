@@ -7,7 +7,7 @@ c_ Solution(o..
     n l..(nums) - 1
     start, end 1, n
     w.... start + 1 < end:
-      mid start + (end - start) / 2
+      mid start + (? - ?) / 2
       count 0
       ___ num __ nums:
         __ num < mid:

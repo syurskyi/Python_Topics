@@ -16,4 +16,4 @@ c_ Solution(o..
           unused |= {num}
       r.. ret
 
-    r.. dfs(1, s..([i ___ i __ r..(1, N + 1)]
+    r.. dfs(1, s..( i ___ ? __ r..(1, N + 1)]

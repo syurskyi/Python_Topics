@@ -43,7 +43,7 @@ c_ Solution:
 
         ans INF f__('inf')
 
-        ___ (x, y), t __ times.i..:
+        ___ (x, y), t __ times.i..
             __ t __ cnt a.. steps[x, y] < ans:
                 ans steps[x, y]
 
@@ -121,7 +121,7 @@ c_ Solution:
 
         ans INF f__('inf')
 
-        ___ (x, y), hids __ ids.i..:
+        ___ (x, y), hids __ ids.i..
             __ l..(hids) __ cnt a.. steps[x, y] < ans:
                 ans steps[x, y]
 

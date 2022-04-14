@@ -99,7 +99,7 @@ c_ Solution:
                     id_emails[person].a..(email)
 
         ret    # list
-        ___ k, v __ id_emails.i..:
+        ___ k, v __ id_emails.i..
             ret.a..([accounts[k][0]] + s..(v
 
         r.. ret

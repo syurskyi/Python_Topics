@@ -45,7 +45,7 @@ c_ Solution:
     ___ -
         cache    # dict
 
-    ___ cherryPickup  grid: L..[L..[i..]]) __ i..:
+    ___ cherryPickup  grid: L..[L..[i..]]) __ i..
         """
         DP go and back
         Go back probably related - yes it is related

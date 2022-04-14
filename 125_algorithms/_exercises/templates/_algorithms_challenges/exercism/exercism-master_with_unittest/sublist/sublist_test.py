@@ -19,7 +19,7 @@ c_ SublistTest(unittest.TestCase
         assertEqual(EQUAL, check_lists(l1, l2
 
     ___ test_different_lists
-        l1 l..(r..(1000000
+        l1 l.. r.. 1000000
         l2 l..(r..(1, 1000001
         assertEqual(UNEQUAL, check_lists(l1, l2
 

@@ -44,7 +44,7 @@ ____ c.. _______ C..
 
 
 c_ Solution:
-    ___ hasGroupsSizeX  deck: L..[i..]) __ b..:
+    ___ hasGroupsSizeX  deck: L.. i.. __ b..
         """
         gcd of all > 2
         """

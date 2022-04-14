@@ -17,7 +17,7 @@ c_ Solution(o..
       __ side > sideLen:
         r.. F..
     halfLen 2 * sideLen
-    sticksIdx s..([i ___ i __ r..(0, l..(nums])
+    sticksIdx s..( i ___ ? __ r..(0, l..(nums])
     nums.s..()
 
     ___ backpack(nums, subset

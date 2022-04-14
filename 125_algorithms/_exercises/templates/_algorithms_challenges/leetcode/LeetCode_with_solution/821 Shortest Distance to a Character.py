@@ -19,7 +19,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ shortestToChar  S: s.., C: s..) __ L..[i..]:
+    ___ shortestToChar  S: s.., C: s..) __ L.. i..
         """
         get the sorted indexes of C
         """

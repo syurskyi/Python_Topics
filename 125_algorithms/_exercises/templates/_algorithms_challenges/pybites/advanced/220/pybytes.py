@@ -68,7 +68,7 @@ c_ PythonBytes:
         r.. ?.m..(n)
 
 
-    ___ number_episodes_with_special_guest(self) __ i..:
+    ___ number_episodes_with_special_guest(self) __ i..
         """Return the number of episodes that had one of more special guests
            featured (use SPECIAL_GUEST).
         """

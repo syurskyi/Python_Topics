@@ -29,7 +29,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ validateStackSequences  pushed: L..[i..], popped: L..[i..]) __ b..:
+    ___ validateStackSequences  pushed: L..[i..], popped: L.. i.. __ b..
         """
         maintain a stack and iterate through pushed
         """
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. j __ n
 
-    ___ validateStackSequences  pushed: L..[i..], popped: L..[i..]) __ b..:
+    ___ validateStackSequences  pushed: L..[i..], popped: L.. i.. __ b..
         """
         maintain a stack
         """

@@ -39,7 +39,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ lenLongestFibSubseq  A: L..[i..]) __ i..:
+    ___ lenLongestFibSubseq  A: L.. i.. __ i..
             """
             F[i][j] longest fib subsequence ending at A[i] with 2nd last element
             A[j]
@@ -74,7 +74,7 @@ c_ Solution:
                 ___ j __ r..(i)
             )
 
-    ___ lenLongestFibSubseq_TLE  A: L..[i..]) __ i..:
+    ___ lenLongestFibSubseq_TLE  A: L.. i.. __ i..
         """
         F[i][j] longest fib subsequence ending at A[i] with 2nd last element
         A[j]

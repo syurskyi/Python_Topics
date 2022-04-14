@@ -47,7 +47,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ isToeplitzMatrix  matrix: L..[L..[i..]]) __ b..:
+    ___ isToeplitzMatrix  matrix: L..[L..[i..]]) __ b..
         m, n l..(matrix), l..(matrix 0
         ___ i __ r..(1, m
             ___ j __ r..(1, n
@@ -56,7 +56,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ isToeplitzMatrix_complex  matrix: L..[L..[i..]]) __ b..:
+    ___ isToeplitzMatrix_complex  matrix: L..[L..[i..]]) __ b..
         """
         Brute force iteration will work
 

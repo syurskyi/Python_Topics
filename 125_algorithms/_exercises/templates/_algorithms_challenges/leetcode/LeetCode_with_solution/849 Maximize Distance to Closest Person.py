@@ -35,7 +35,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxDistToClosest  seats: L..[i..]) __ i..:
+    ___ maxDistToClosest  seats: L.. i.. __ i..
         """
         DP from left and right - next array
         Let L[i] be the distant to the left 1 at A[i]
@@ -60,7 +60,7 @@ c_ Solution:
             ___ i __ r..(n)
         )
 
-    ___ maxDistToClosest2  seats: L..[i..]) __ i..:
+    ___ maxDistToClosest2  seats: L.. i.. __ i..
         """
         maintain a sorrted index array
         """

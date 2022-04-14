@@ -43,7 +43,7 @@ c_ Color:
             r.. V... _*Invalid hex value ({exp.args})')
 
     @classmethod
-    ___ rgb2hex(cls, rbg_tuple: t..) __ s..:
+    ___ rgb2hex(cls, rbg_tuple: t..) __ s..
         """Class method that converts an rgb value into a hex one"""
         __ l..(rbg_tuple) !_ 3 o. a__((x < 0) o. (x > 255) ___ x __ rbg_tuple
             r.. V...('Invalid rgb colour triplet')

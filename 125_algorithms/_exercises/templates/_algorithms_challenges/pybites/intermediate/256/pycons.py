@@ -79,7 +79,7 @@ country_lookup {
 }
 
 
-___ get_continent(country: s..) __ s..:
+___ get_continent(country: s..) __ s..
     """
     Given a country name returns the associated continent of the country.
 
@@ -88,7 +88,7 @@ ___ get_continent(country: s..) __ s..:
     :returns: The continent of the country
     :rtype: str
     """
-    ___ continent, countries __ country_lookup.i..:
+    ___ continent, countries __ country_lookup.i..
         ___ c __ countries:
             __ country.l.. __ c.l..:
                 r.. continent

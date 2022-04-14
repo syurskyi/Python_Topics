@@ -45,7 +45,7 @@ ___ _clean_sequence(sequence, str_table
     t!t%ttttAACCG --> TTTTTTAACCG
     """
     bases ''.j..([base.s...s..('\t' 0 ___ base __ str_table.s..  __ base[0] !_ '#' a.. base[:5] !_ ' Base' )
-    return_str ''.j..([char.u.. ___ char __ sequence __ char.u.. __ bases])
+    return_str ''.j..([char.u.. ___ char __ s.. __ char.u.. __ bases])
     r.. return_str
 
 

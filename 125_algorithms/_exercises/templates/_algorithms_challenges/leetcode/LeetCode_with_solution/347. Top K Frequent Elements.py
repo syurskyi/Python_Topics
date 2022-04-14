@@ -38,7 +38,7 @@ c_ Solution(o..
             cnt[e] += 1
 
         lst    # list
-        ___ k, v __ cnt.i..:
+        ___ k, v __ cnt.i..
             lst.a..(C..(k, v
 
         ret    # list

@@ -59,7 +59,7 @@ ___ get_all_jeeps carscars
 ___ get_first_model_each_manufacturer carscars
     """return a list of matching models (original ordering)"""
     r    # list
-    ___ key, value __ cars.i..:
+    ___ key, value __ cars.i..
         r.a..(value 0
     r.. r
 
@@ -69,7 +69,7 @@ ___ get_all_matching_models carscars, grep'trail'
        'grep' string which defaults to 'trail' for this exercise,
        sort the resulting sequence alphabetically"""
     r    # list
-    ___ key, value __ cars.i..:
+    ___ key, value __ cars.i..
         ___ c __ value:
             __ grep.l.. __ c.l..:
                 r.a..(c)
@@ -81,7 +81,7 @@ ___ get_all_matching_models carscars, grep'trail'
 
 ___ sort_car_models carscars
     """sort the car models (values)  and return the resulting cars dict"""
-    ___ key, value __ cars.i..:
+    ___ key, value __ cars.i..
         value.s..()
     r.. cars
 

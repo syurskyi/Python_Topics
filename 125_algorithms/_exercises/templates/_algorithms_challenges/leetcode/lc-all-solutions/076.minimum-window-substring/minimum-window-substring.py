@@ -18,6 +18,6 @@ c_ Solution(o..
           score += 1
         w.... deq a.. d[s[deq[0]]] > wanted[s[deq[0]]]:
           d[s[deq.popleft()]] -_ 1
-        __ score __ l..(t) a.. deq[-1] - deq[0] < end - start:
+        __ score __ l..(t) a.. deq[-1] - deq[0] < ? - ?:
           start, end deq[0], deq[-1]
     r.. s ?|? + 1]

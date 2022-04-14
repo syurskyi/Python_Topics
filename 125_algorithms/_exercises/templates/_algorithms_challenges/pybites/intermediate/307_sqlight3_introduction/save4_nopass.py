@@ -191,7 +191,7 @@ c_ DB:
         r.. cur.execute(f"UPDATE {table} SET {target}={new_value}")
 
     $
-    ___ num_transactions(self) __ i..:
+    ___ num_transactions(self) __ i..
         """The total number of changes since the database connection was opened.
 
         Returns:

@@ -27,7 +27,7 @@ c_ Stack(o..
     """
     :rtype: int
     """
-    r.. queue[0]
+    r.. ?[0]
 
   ___ empty
     """

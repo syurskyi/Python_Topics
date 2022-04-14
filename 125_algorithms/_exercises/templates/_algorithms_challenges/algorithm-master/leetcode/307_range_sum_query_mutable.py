@@ -47,7 +47,7 @@ c_ NumArray:
         :type j: int
         :rtype: int
         """
-        r.. s..(j + 1) - s..(i)
+        r.. s..(j + 1) - s.. ?
 
     ___ s..  i
         res 0

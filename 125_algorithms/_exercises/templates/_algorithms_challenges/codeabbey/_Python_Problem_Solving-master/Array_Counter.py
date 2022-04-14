@@ -57,5 +57,5 @@ w.... l..(ele) < num_ele:
             #print(check)
             
 #finally print the element count
-___ i,v __ arr_check.i..:
+___ i,v __ arr_check.i..
     print(v,end=(' '

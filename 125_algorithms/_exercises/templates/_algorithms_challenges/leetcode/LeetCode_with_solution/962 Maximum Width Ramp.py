@@ -30,7 +30,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxWidthRamp  A: L..[i..]) __ i..:
+    ___ maxWidthRamp  A: L.. i.. __ i..
         """
         Use stack? No, since require the furthest element rather than the closest
         Sort the values, keep its index

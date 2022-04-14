@@ -24,7 +24,7 @@ c_ Node:
 
 
 c_ Solution:
-    ___ maxDepth  root: "Node") __ i..:
+    ___ maxDepth  root: "Node") __ i..
         __ n.. root:
             r.. 0
 

@@ -40,7 +40,7 @@ _______ h__
 
 
 c_ Solution:
-    ___ constructMaximumBinaryTree  nums: L..[i..]) __ TreeNode:
+    ___ constructMaximumBinaryTree  nums: L.. i.. __ TreeNode:
         """
         monotonic stack - a stack to keep a decreasing subsequence from left to
         right
@@ -62,7 +62,7 @@ c_ Solution:
         r.. stk[0]
 
 c_ Solution_heap:
-    ___ constructMaximumBinaryTree  nums: L..[i..]) __ TreeNode:
+    ___ constructMaximumBinaryTree  nums: L.. i.. __ TreeNode:
         """
         heap O(n lgn)
         insert by index O(n lgn)

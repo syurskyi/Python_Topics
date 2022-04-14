@@ -11,7 +11,7 @@ ___ calc_median_from_dict(d: d..) __ f__:
     values_sorted d..(OrderedDict(s..(d.i.., k.._l.... t: t[0])))
 
     ___ value __ values_sorted.v..
-        __ t..(value) __ n.. i..:
+        __ t..(value) __ n.. i..
             r.. T..
 
     __ l..(values_sorted) __ 1:
@@ -23,7 +23,7 @@ ___ calc_median_from_dict(d: d..) __ f__:
     i2 0
     the_key    # list
 
-    ___ key, value __ values_sorted.i..:
+    ___ key, value __ values_sorted.i..
         __ i < determinate:
             i += value
         ____

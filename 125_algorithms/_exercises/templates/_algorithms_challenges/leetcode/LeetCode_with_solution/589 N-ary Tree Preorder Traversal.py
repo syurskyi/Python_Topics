@@ -22,7 +22,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ preorder  root: "Node") __ L..[i..]:
+    ___ preorder  root: "Node") __ L.. i..
         """
         reversely add the children to stk
         """

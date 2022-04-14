@@ -67,7 +67,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        F [i ___ i __ x..(n+1)]
+        F  i ___ ? __ x..(n+1)]
         ___ i __ x..(1, n+1
             ___ j __ x..(1, i..(m__.sqrt(i+1
                 __ i-j*j >_ 0:

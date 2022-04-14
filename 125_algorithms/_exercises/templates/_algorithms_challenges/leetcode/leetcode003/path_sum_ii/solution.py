@@ -21,7 +21,7 @@ c_ Solution:
         __ root __ N..
             r..
         ____ root.left __ N.. a.. root.right __ N..
-            __ root.val __ s..:
+            __ root.val __ s..
                 one.a..(root.val)
                 res.a..(one | )
                 one.p.. )

@@ -21,7 +21,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ partitionLabels  S: s..) __ L..[i..]:
+    ___ partitionLabels  S: s..) __ L.. i..
         lasts    # dict
         n l..(S)
         ___ i __ r..(n-1, -1, -1

@@ -23,7 +23,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ sortArrayByParity  A: L..[i..]) __ L..[i..]:
+    ___ sortArrayByParity  A: L.. i.. __ L.. i..
         """
         pointer
         """

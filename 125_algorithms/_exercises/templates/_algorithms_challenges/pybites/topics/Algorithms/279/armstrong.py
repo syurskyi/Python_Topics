@@ -1,4 +1,4 @@
-___ is_armstrong(n: i..) __ b..:
+___ is_armstrong n i.. __ b..
     total 0
     ___ digit __ r..(l..(s..(n))):
         total += i..(s..(n)[digit]) ** l..(s..(n

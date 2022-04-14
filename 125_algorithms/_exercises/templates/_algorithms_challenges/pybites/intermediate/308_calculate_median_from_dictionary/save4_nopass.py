@@ -19,7 +19,7 @@ ___ calc_median_from_dict(d: d..) __ f__:
     i2 0
     the_key    # list
 
-    ___ key, value __ values_sorted.i..:
+    ___ key, value __ values_sorted.i..
         __ i < determinate:
             i += value
         ____

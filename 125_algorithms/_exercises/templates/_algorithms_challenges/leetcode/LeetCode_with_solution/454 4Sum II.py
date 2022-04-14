@@ -53,7 +53,7 @@ c_ Solution:
 
         ret 0
         # O(N^2)
-        ___ gross, count __ AB.i..:
+        ___ gross, count __ AB.i..
             target 0 - gross
             ret += count * CD[target]
 

@@ -40,7 +40,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ isAlienSorted  words: L..[s..], order: s..) __ b..:
+    ___ isAlienSorted  words: L..[s..], order: s..) __ b..
         h    # dict
         ___ i, c __ e..(order
             h[c] i

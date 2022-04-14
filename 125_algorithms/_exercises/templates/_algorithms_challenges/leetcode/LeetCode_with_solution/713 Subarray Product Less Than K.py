@@ -22,7 +22,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ numSubarrayProductLessThanK  nums: L..[i..], k: i..) __ i..:
+    ___ numSubarrayProductLessThanK  nums: L..[i..], k: i..) __ i..
         """
         Two pointer
         Count attribute to the end

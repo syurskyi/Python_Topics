@@ -2,7 +2,7 @@ ____ t___ _______ L..
 ____ c.. _______ d..
 
 
-___ sum_indices(items: L..[s..]) __ i..:
+___ sum_indices(items: L..s.. __ i..
 
 
 

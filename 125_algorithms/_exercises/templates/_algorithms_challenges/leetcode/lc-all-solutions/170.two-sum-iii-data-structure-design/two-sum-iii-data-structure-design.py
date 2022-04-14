@@ -23,7 +23,7 @@ c_ TwoSum(o..
     ___ num __ d:
       t value - num
       __ t __ d:
-        __ t __ num:
+        __ t __ ?
           __ d[t] >_ 2:
             r.. T..
         ____

@@ -4,7 +4,7 @@ _______ m__
 T T..('T', i.., f__)
 
 
-___ n_digit_number(number: T, n: i..) __ i..:
+___ n_digit_number(number: T, n: i..) __ i..
     '''converts number to an n-digit int, preserving sign'''
     sign -1 __ number < 0 ____ 1
     num a..(number)

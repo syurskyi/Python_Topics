@@ -12,7 +12,7 @@ c_ Solution(o..
             hashmap[num] hashmap.g.. num, 0)+1
             maxCount m..(maxCount, hashmap[num])
         dp [[] ___ _ __ r..(maxCount)]
-        ___ num, count __ hashmap.i..:
+        ___ num, count __ hashmap.i..
             dp[count-1].a..(num)
         result    # list
         i maxCount-1
@@ -33,7 +33,7 @@ c_ Solution(o..
         ___ num __ nums:
             hashmap[num] hashmap.g.. num, 0)+1
         heap    # list
-        ___ num, count __ hashmap.i..:
+        ___ num, count __ hashmap.i..
             h__.heappush(heap, (-count, num
         result    # list
         w.... k > 0

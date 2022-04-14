@@ -181,7 +181,7 @@ c_ DB:
         r.. NotImplementedError("You have to implement this method first.")
 
     $
-    ___ num_transactions(self) __ i..:
+    ___ num_transactions(self) __ i..
         """The total number of changes since the database connection was opened.
 
         Returns:

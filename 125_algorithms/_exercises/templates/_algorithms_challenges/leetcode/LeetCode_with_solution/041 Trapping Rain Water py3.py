@@ -13,7 +13,7 @@ Output: 6
 """
 
 c_ Solution:
-    ___ trap  height: L..[i..]) __ i..:
+    ___ trap  height: L.. i.. __ i..
         """
         At each position, the water is determined by the left and right max
 

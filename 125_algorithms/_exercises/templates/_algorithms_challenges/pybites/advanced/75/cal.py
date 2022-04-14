@@ -4,7 +4,7 @@ ___ get_weekdays(calendar_output
     
 
     mapping    # dict
-    ___ i,line __ e..(calendar_output.s...s..:
+    ___ i,line __ e..(calendar_output.s...s..
         __ i __ 0:
             _____
         ____ i __ 1:

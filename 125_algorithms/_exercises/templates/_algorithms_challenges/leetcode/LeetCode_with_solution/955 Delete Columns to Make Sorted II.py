@@ -50,7 +50,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ minDeletionSize  A: L..[s..]) __ i..:
+    ___ minDeletionSize  A: L..s.. __ i..
         """
         Greedily delete
         Scannign from left to right

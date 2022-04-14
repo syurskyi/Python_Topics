@@ -20,7 +20,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ triangleNumber  nums: L..[i..]) __ i..:
+    ___ triangleNumber  nums: L.. i.. __ i..
         """
         b - a < c < a + b
         Brute force O(n^3)
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ triangleNumber_error  nums: L..[i..]) __ i..:
+    ___ triangleNumber_error  nums: L.. i.. __ i..
         """
         b - a < c < a + b
         Brute force O(n^3)
@@ -69,7 +69,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ triangleNumber_slow  nums: L..[i..]) __ i..:
+    ___ triangleNumber_slow  nums: L.. i.. __ i..
         """
         b - a < c < a + b
         Brute force O(n^3)

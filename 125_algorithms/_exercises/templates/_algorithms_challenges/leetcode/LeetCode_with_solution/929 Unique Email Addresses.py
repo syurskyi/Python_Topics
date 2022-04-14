@@ -43,7 +43,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ numUniqueEmails  emails: L..[s..]) __ i..:
+    ___ numUniqueEmails  emails: L..s.. __ i..
         """
         stemming
         """

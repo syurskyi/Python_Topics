@@ -13,7 +13,7 @@ c_ Solution(o..
       abbr2word[abbr].add(word)
 
     # resolve conflicts in each group
-    ___ abbr, words __ abbr2word.i..:
+    ___ abbr, words __ abbr2word.i..
       __ l..(words) > 1:
         ___ word __ words:
           ___ i __ r..(2, l..(word:

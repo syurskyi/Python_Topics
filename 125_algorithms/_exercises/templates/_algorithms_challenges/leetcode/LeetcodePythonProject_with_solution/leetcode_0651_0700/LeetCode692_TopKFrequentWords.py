@@ -15,7 +15,7 @@ c_ Solution(o..
             hashmap[word] hashmap.g.. word, 0)+1
         n l..(words)
         dp [[] ___ _ __ r..(n+1)]
-        ___ word, freq __ hashmap.i..:
+        ___ word, freq __ hashmap.i..
             dp[freq].a..(word)
         res    # list
         ___ i __ r..(n, -1, -1

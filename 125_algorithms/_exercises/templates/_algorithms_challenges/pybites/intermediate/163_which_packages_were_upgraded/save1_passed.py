@@ -29,8 +29,8 @@ ___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
         new[x[0]] ''.j..(y)
 
     output    # list
-    ___ k1, v1 __ old.i..:
-        ___ k2, v2 __ new.i..:
+    ___ k1, v1 __ old.i..
+        ___ k2, v2 __ new.i..
             __ k1 __ k2:
                 __ l..(v1) > l..(v2
                     v1 v1[:l..(v2)]

@@ -45,7 +45,7 @@ _______ h__
 
 
 c_ Solution:
-    ___ findCheapestPrice  n: i.., flights: L..[L..[i..]], src: i.., dst: i.., K: i..) __ i..:
+    ___ findCheapestPrice  n: i.., flights: L..[L..[i..]], src: i.., dst: i.., K: i..) __ i..
         """
         dijkstra
         """
@@ -62,7 +62,7 @@ c_ Solution:
 
             stops k - 1 + 1
             __ stops <_ K:
-                ___ v, w __ G[u].i..:
+                ___ v, w __ G[u].i..
                     h__.heappush(pq, (cost + w, k + 1, v
 
 

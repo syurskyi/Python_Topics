@@ -19,7 +19,7 @@ c_ Solution(o..
             m[c] += 1
 
         odd N..
-        ___ k, v __ m.i..:
+        ___ k, v __ m.i..
             __ v % 2 __ 1:
                 __ odd __ n.. N..
                     r.. []

@@ -16,7 +16,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ subarraySum  nums: L..[i..], k: i..) __ i..:
+    ___ subarraySum  nums: L..[i..], k: i..) __ i..
         """
         prefix sum
         """

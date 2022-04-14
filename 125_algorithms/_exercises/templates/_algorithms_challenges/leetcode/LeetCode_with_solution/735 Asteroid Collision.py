@@ -45,7 +45,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ asteroidCollision  asteroids: L..[i..]) __ L..[i..]:
+    ___ asteroidCollision  asteroids: L.. i.. __ L.. i..
         """
         simplified
 
@@ -72,7 +72,7 @@ c_ Solution:
 
         r.. stk
 
-    ___ asteroidCollision_complex  asteroids: L..[i..]) __ L..[i..]:
+    ___ asteroidCollision_complex  asteroids: L.. i.. __ L.. i..
         """
         asteroids same speed
         list of size

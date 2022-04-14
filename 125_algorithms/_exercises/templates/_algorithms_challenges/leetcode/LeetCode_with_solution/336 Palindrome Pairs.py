@@ -27,7 +27,7 @@ c_ TrieNode:
 
 
 c_ Solution:
-    ___ palindromePairs  words: L..[s..]) __ L..[L..[i..]]:
+    ___ palindromePairs  words: L..s.. __ L..[L..[i..]]:
         """
         Brute force, i, j and then check palindrom
         O(N^2 * L)

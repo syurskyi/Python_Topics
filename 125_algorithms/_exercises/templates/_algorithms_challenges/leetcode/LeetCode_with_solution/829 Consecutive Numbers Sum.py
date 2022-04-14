@@ -23,7 +23,7 @@ Note: 1 <= N <= 10 ^ 9.
 
 
 c_ Solution:
-    ___ consecutiveNumbersSum  N: i..) __ i..:
+    ___ consecutiveNumbersSum  N: i..) __ i..
         """
         Arithmetic Array
         math
@@ -48,7 +48,7 @@ c_ Solution:
 
         r.. cnt
 
-    ___ consecutiveNumbersSum_error  N: i..) __ i..:
+    ___ consecutiveNumbersSum_error  N: i..) __ i..
         """
         Arithmetic Array
         math
@@ -69,7 +69,7 @@ c_ Solution:
 
         r.. cnt
 
-    ___ consecutiveNumbersSum_error  N: i..) __ i..:
+    ___ consecutiveNumbersSum_error  N: i..) __ i..
         """
         factor related
         9 / 3 = 3

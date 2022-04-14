@@ -35,7 +35,7 @@ ___ sandwich_v1(func
        that is passed in  (@wraps is to preserve the original
        func's docstring)
     """
-    ___ wrapped $ $$:
+    ___ wrapped $ $$
         print(UPPER_SLICE)
         result func $ $$
         print(LOWER_SLICE)
@@ -48,7 +48,7 @@ ___ sandwich_v2(func
        that is passed in  (@wraps is to preserve the original
        func's docstring)
     """
-    ___ wrapped $ $$:
+    ___ wrapped $ $$
         print(UPPER_SLICE)
         func $ $$
         print(LOWER_SLICE)

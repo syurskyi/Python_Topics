@@ -84,7 +84,7 @@ ___ exchange_rates(
         r.. V...('Date out of range for data')
     matches match_daily_rates(start_date, end_date, daily_rates)
     result    # dict
-    ___ day, m.. __ matches.i..:
+    ___ day, m.. __ matches.i..
         result[day] {"Base Date": m.., **daily_rates[m..]}
 
     r.. result

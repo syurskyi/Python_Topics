@@ -61,7 +61,7 @@ c_ DisjointSet:
         r.. pi[x]
 
 c_ Solution:
-    ___ equationsPossible  equations: L..[s..]) __ b..:
+    ___ equationsPossible  equations: L..s.. __ b..
         """
         union find
         """

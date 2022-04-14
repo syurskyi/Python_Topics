@@ -71,7 +71,7 @@ c_ Solution_MLE:  # Memory Limit Exceeds
         cur node
         lst    # list
         w.... cur:
-            lst.insert(0, cur.s__)
+            ?.i.. 0, cur.s__)
             cur cur.pre
         result.a..(lst)
 
@@ -125,7 +125,7 @@ c_ Solution_TLE:
         cur node
         lst    # list
         w.... cur:
-            lst.insert(0, cur.s__)
+            ?.i.. 0, cur.s__)
             cur cur.pre
         result.a..(lst)
 
@@ -203,7 +203,7 @@ c_ Solution_TLE2:
         cur node
         lst    # list
         w.... cur:
-            lst.insert(0, cur.s__)
+            ?.i.. 0, cur.s__)
             cur cur.pre
         result.a..(lst)
 

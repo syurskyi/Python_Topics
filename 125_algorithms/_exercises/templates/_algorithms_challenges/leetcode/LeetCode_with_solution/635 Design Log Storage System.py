@@ -47,7 +47,7 @@ c_ LogSystem:
     ___ put  id: i.., timestamp: s..) __ N..
         b__.i.. (lst, (timestamp, id
 
-    ___ retrieve  s: s.., e: s.., gra: s..) __ L..[i..]:
+    ___ retrieve  s: s.., e: s.., gra: s..) __ L.. i..
         """
         Use timestamp comparison
         Can convert the timestamp to number.

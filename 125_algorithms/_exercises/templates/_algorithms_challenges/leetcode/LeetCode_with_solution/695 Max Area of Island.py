@@ -32,7 +32,7 @@ dirs ((0, -1), (0, 1), (-1, 0), (1, 0
 
 
 c_ Solution:
-    ___ maxAreaOfIsland  grid: L..[L..[i..]]) __ i..:
+    ___ maxAreaOfIsland  grid: L..[L..[i..]]) __ i..
         """
         dfs
         """
@@ -49,7 +49,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ dfs  grid, i, j, visited) __ i..:
+    ___ dfs  grid, i, j, visited) __ i..
         visited[i][j] T..
         ret 1
         m, n l..(grid), l..(grid 0

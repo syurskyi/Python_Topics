@@ -27,7 +27,7 @@ ___ _convert_struct_time_to_dt(stime
     time.struct_time(tm_year=2016, tm_mon=12, tm_mday=28, ...)
     -> date(2016, 12, 28)
     """
-    __ t..(stime) __ s..:
+    __ t..(stime) __ s..
         f..  _a, _d _b _Y _H|_M:_S _z'
         dt_object d__.s..(stime, f..)
         r.. dt_object.date()

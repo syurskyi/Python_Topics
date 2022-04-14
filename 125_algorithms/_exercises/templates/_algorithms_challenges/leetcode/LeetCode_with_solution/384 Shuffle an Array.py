@@ -49,7 +49,7 @@ c_ Solution(o..
             j r__.randrange(i, n)
             lst[i], lst[j] lst[j], lst[i]
 
-        r.. lst
+        r.. ?
 
 
 # Your Solution object will be instantiated and called as such:

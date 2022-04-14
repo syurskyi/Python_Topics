@@ -32,7 +32,7 @@ ____ c.. _______ C..
 
 
 c_ Solution:
-    ___ commonChars  A: L..[s..]) __ L..[s..]:
+    ___ commonChars  A: L..s.. __ L..[s..]:
         """
         running counter
         """

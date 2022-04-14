@@ -24,7 +24,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ sortedSquares  A: L..[i..]) __ L..[i..]:
+    ___ sortedSquares  A: L.. i.. __ L.. i..
         """
         started from two ends
         """

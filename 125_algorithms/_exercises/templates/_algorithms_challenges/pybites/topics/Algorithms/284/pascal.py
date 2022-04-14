@@ -1,7 +1,7 @@
 ____ t___ _______ L..
 
 
-___ pascal(N: i..) __ L..[i..]:
+___ pascal(N: i..) __ L.. i..
     """
     Return the Nth row of Pascal triangle
     """

@@ -29,7 +29,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ repeatedNTimes  A: L..[i..]) __ i..:
+    ___ repeatedNTimes  A: L.. i.. __ i..
         """
         Counter. Straightforward. O(N) space
 

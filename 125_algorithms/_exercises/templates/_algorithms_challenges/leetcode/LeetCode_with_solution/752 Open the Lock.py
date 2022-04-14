@@ -50,7 +50,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ openLock  deadends: L..[s..], target: s..) __ i..:
+    ___ openLock  deadends: L..[s..], target: s..) __ i..
         """
         bfs
         """

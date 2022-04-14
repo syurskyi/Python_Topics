@@ -3,7 +3,7 @@ _______ r__
 
 c_ TinyUrl:
     ___ -
-        chars [s..(i) ___ i __ r..(10)]
+        chars [s.. ? ___ i __ r..(10)]
         chars.e.. chr(i) ___ i __ r..(o..('a'), o..('z') + 1
         chars.e.. chr(i) ___ i __ r..(o..('A'), o..('Z') + 1
 

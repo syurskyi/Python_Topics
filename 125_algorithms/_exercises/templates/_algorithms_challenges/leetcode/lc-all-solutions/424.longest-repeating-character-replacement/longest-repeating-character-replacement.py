@@ -16,8 +16,8 @@ c_ Solution(o..
     ___ end __ r..(0, l..(s:
       d[s[end]]  d.g.. s[end], 0) + 1
       maxCount  m..(maxCount, d[s[end]])
-      __ end - start + 1 - maxCount > k:
+      __ ? - ? + 1 - maxCount > k:
         d[s[start]] - 1
         start + 1
-      ans  m..(ans, end - start + 1)
+      ans  m..(ans, ? - ? + 1)
     r.. ans

@@ -28,7 +28,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maximumProduct  nums: L..[i..]) __ i..:
+    ___ maximumProduct  nums: L.. i.. __ i..
         """
         heapq nlargest nsmallest
         """

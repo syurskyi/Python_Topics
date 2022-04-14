@@ -49,7 +49,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxSubarraySumCircular  A: L..[i..]) __ i..:
+    ___ maxSubarraySumCircular  A: L.. i.. __ i..
         """
         Kadane's Algorithm
         Two cases:
@@ -62,7 +62,7 @@ c_ Solution:
         ret2 s..(A) + max_subarray([-a ___ a __ A[1:-1]])  # max negative (-1)
         r.. m..(ret1, ret2)
 
-    ___ max_subarray  A) __ i..:
+    ___ max_subarray  A) __ i..
         """
         dp[i] = A[i] + max(dp[i-1],0)
         """
@@ -73,7 +73,7 @@ c_ Solution:
             mx m..(mx, cur)
         r.. mx
 
-    ___ maxSubarraySumCircular_error  A: L..[i..]) __ i..:
+    ___ maxSubarraySumCircular_error  A: L.. i.. __ i..
         """
         keep a cur_sum with index, when negative, go back to 0
         """

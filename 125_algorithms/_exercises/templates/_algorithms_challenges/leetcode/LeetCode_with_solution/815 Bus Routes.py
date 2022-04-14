@@ -28,7 +28,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ numBusesToDestination  routes: L..[L..[i..]], S: i.., T: i..) __ i..:
+    ___ numBusesToDestination  routes: L..[L..[i..]], S: i.., T: i..) __ i..
         """
         BFS
         bus based nodes rather than stop based nodes
@@ -50,8 +50,8 @@ c_ Solution:
                         G[j].add(i)
                         _____
 
-        q [i ___ i, stops __ e..(routes) __ S __ stops]
-        target_set s..([i ___ i, stops __ e..(routes) __ T __ stops])
+        q  i ___ ?, stops __ e..(routes) __ S __ stops]
+        target_set s..( i ___ ?, stops __ e..(routes) __ T __ stops])
         visited d..(b..)
         ___ i __ q:
             visited[i] T..
@@ -71,7 +71,7 @@ c_ Solution:
 
         r.. -1
 
-    ___ numBusesToDestination_TLE  routes: L..[L..[i..]], S: i.., T: i..) __ i..:
+    ___ numBusesToDestination_TLE  routes: L..[L..[i..]], S: i.., T: i..) __ i..
         """
         BFS
         Lest number of buses rather than bus stops

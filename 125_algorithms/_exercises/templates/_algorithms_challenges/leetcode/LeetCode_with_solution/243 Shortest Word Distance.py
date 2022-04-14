@@ -15,8 +15,8 @@ c_ Solution:
         :type word2: str
         :rtype: int
         """
-        lst1 [i ___ i, v __ e..(words) __ v __ word1]
-        lst2 [i ___ i, v __ e..(words) __ v __ word2]
+        lst1  i ___ ?, v __ e..(words) __ v __ word1]
+        lst2  i ___ ?, v __ e..(words) __ v __ word2]
         mini ___.maxint
         ___ i __ lst1:
             idx bisect_left(lst2, i)

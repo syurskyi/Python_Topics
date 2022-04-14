@@ -146,7 +146,7 @@ ___ match_wine_5cheeses
             wine_match_scoring[wine].a..((cheese, similarity_score
 
     best_5matches    # list
-    ___ wine, cheeses_scored __ wine_match_scoring.i..:
+    ___ wine, cheeses_scored __ wine_match_scoring.i..
         cheese s..(cheeses_scored, key=operator.i.. 1), r.._T..[:10]
         cheese s..(cheese, k.._l.... x: (-x[1], x[0][:5]
         best_5matches.a..((wine, [name ___ name, score __ cheese]

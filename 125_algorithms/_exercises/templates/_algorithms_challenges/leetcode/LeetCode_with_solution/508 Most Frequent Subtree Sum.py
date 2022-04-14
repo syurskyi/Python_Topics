@@ -47,7 +47,7 @@ c_ Solution:
         counter d..(i..)
         traverse(root, counter)
         ret [[], 0]
-        ___ k, v __ counter.i..:
+        ___ k, v __ counter.i..
             __ v > ret[1]:
                 ret[0] [k]
                 ret[1] v

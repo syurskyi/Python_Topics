@@ -69,7 +69,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ orderOfLargestPlusSign  N: i.., mines: L..[L..[i..]]) __ i..:
+    ___ orderOfLargestPlusSign  N: i.., mines: L..[L..[i..]]) __ i..
         """
         < ^ > V four directions
         Let F[i][j][k] be the number of consecutive 1 including G[i][j] it self

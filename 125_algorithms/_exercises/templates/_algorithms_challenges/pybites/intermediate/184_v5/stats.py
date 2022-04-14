@@ -28,34 +28,34 @@ c_ BiteStats:
         r.. counter
 
     $
-    ___ number_bites_accessed(self) __ i..:
+    ___ number_bites_accessed(self) __ i..
         """Get the number of unique Bites accessed"""
         r.. l..(_count_attribute('bite').i..
 
     $
-    ___ number_bites_resolved(self) __ i..:
+    ___ number_bites_resolved(self) __ i..
         """Get the number of unique Bites resolved (completed=True)"""
         r.. l..(_count_attribute('bite', T..).i..
 
     $
-    ___ number_users_active(self) __ i..:
+    ___ number_users_active(self) __ i..
         """Get the number of unique users in the data set"""
         r.. l..(_count_attribute('user').i..
 
     $
-    ___ number_users_solving_bites(self) __ i..:
+    ___ number_users_solving_bites(self) __ i..
         """Get the number of unique users that resolved
            one or more Bites"""
         r.. l..(_count_attribute('user', T..).i..
 
     $
-    ___ top_bite_by_number_of_clicks(self) __ s..:
+    ___ top_bite_by_number_of_clicks(self) __ s..
         """Get the Bite that got accessed the most
            (= in most rows)"""
         r.. _count_clicks('bite').m.. 0 0 
 
     $
-    ___ top_user_by_bites_completed(self) __ s..:
+    ___ top_user_by_bites_completed(self) __ s..
         """Get the user that completed the most Bites"""
         r.. _count_clicks('user', T..).m.. 0 0 
 

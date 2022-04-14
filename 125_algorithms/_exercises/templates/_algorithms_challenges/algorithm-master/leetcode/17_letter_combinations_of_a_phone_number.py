@@ -26,4 +26,4 @@ c_ Solution:
             queue, _queue _queue, []
 
         queue.s..()
-        r.. queue
+        r.. ?

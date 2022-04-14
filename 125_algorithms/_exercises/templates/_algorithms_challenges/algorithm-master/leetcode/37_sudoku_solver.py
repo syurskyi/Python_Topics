@@ -27,7 +27,7 @@ c_ Solution:
             r.. dfs(board, _x, _y)
 
         ___ i __ r..(1, n + 1
-            board[x][y]  s..(i)
+            board[x][y]  s.. ?
             __ (
                 is_valid(board, x, y) a..
                 dfs(board, _x, _y)

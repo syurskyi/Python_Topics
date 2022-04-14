@@ -26,7 +26,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ advantageCount  A: L..[i..], B: L..[i..]) __ L..[i..]:
+    ___ advantageCount  A: L..[i..], B: L.. i.. __ L.. i..
         """
         Gready select the smallest larger number
         Then we need sort A

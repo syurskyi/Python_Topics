@@ -26,7 +26,7 @@ The string size will be in the range [1, 100].
 
 
 c_ Solution:
-    ___ checkValidString  s: s..) __ b..:
+    ___ checkValidString  s: s..) __ b..
         """
         Brute force: dfs branching on "*".
 

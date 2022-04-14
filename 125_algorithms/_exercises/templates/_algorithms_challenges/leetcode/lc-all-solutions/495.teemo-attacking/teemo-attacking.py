@@ -15,8 +15,8 @@ c_ Solution(o..
       __ s <_ end:
         end s + duration
       ____
-        ans += end - start
+        ans += ? - ?
         start s
         end start + duration
-    ans += end - start
+    ans += ? - ?
     r.. ans

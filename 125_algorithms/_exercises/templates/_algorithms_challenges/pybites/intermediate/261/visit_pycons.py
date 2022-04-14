@@ -95,7 +95,7 @@ ___ _extract_city_country_to_lat_lon
         places j__.l.. f)
     
     mapping    # dict
-    ___ key,places __ places.i..:
+    ___ key,places __ places.i..
         ___ r __ places:
             __ r 'type'  __ 'city':
                 city,*temp,country r 'display_name' .s..(',')

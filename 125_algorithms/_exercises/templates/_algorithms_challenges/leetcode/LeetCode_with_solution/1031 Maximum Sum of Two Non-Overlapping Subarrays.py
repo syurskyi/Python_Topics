@@ -40,7 +40,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxSumTwoNoOverlap  A: L..[i..], L: i.., M: i..) __ i..:
+    ___ maxSumTwoNoOverlap  A: L..[i..], L: i.., M: i..) __ i..
         """
         Prefix sum + Brute force O(N^2)
         two pointer i, j

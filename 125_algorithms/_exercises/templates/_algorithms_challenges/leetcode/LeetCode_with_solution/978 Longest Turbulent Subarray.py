@@ -33,7 +33,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxTurbulenceSize  A: L..[i..]) __ i..:
+    ___ maxTurbulenceSize  A: L.. i.. __ i..
         """
         scan
         """

@@ -17,6 +17,6 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ arrayPairSum  nums: L..[i..]) __ i..:
+    ___ arrayPairSum  nums: L.. i.. __ i..
         nums.s..()
         r.. s..(nums[::2])

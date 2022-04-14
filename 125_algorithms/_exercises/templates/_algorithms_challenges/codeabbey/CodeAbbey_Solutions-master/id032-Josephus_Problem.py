@@ -4,7 +4,7 @@ ___ solveJosephus(specifics
     positionCounter  0
     s..  F..
 
-    w.... n.. s..:
+    w.... n.. s..
         __ l..(people) __ 1:
             print(people 0 # Pyschologically scarred Winner!
             s..  T..

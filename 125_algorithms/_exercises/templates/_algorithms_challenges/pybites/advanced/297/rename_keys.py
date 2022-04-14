@@ -10,7 +10,7 @@ ___ rename_keys(data: Dict[A.., A..]) __ Dict[A.., A..]:
     new_dict    # dict
 
 
-    ___ key,value __ data.i..:
+    ___ key,value __ data.i..
 
 
         __ isi..(key,s..

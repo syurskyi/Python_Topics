@@ -1,5 +1,5 @@
 ___ reverse(lst
-    r.. lst[::-1]
+    r.. ?[::-1]
 
 
 ___ test

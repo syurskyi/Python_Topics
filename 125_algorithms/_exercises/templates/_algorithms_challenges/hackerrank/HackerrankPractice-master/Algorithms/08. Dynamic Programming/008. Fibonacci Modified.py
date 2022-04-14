@@ -8,5 +8,5 @@ __ n <_ 2:
     print(sequence[n-1])
 ____
     ___ i __ r..(n-2
-        sequence.a..(sequence[-2] + sequence[-1]**2)
-    print(sequence[-1])
+        sequence.a..(sequence[-2] + ? -1**2)
+    print(? -1)
