@@ -14,10 +14,10 @@ c_ LinkedIterator(o..
     ___ - , linked_list
         current linked_list._head
 
-    ___ __iter__
+    ___ -i
         r.. self
 
-    ___ __next__
+    ___ -n
         __ current __ N..
             r.. S..
         value current.value()
@@ -25,7 +25,7 @@ c_ LinkedIterator(o..
         r.. value
 
     ___ next
-        r.. __next__()
+        r.. -n()
 
 
 c_ LinkedList(o..
@@ -34,7 +34,7 @@ c_ LinkedList(o..
         _len 0
         [push(v) ___ v __ values]
 
-    ___ __iter__
+    ___ -i
         r.. LinkedIterator(self)
 
     ___ -l

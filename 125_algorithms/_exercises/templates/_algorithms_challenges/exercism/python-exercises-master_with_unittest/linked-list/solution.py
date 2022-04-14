@@ -54,7 +54,7 @@ c_ LinkedList(o..
     ___ -l
         r.. length
 
-    ___ __iter__
+    ___ -i
         current_node head
         w.... (current_node
             y.. current_node.value

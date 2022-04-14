@@ -18,7 +18,7 @@ c_ Tree(o..
     ___ -e  other
         r.. __dict__() __ other.__dict__()
 
-    ___ __iter__
+    ___ -i
         y.. label
         ___ child __ children:
             ___ gchild __ child:

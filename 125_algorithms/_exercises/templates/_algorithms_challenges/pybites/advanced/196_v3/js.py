@@ -48,7 +48,7 @@ c_ JsObject:
     ___ -l
         r.. l..(_local)
 
-    ___ __iter__
+    ___ -i
         y.. ____ _local
 
     ___ -e  other

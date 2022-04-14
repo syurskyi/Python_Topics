@@ -5,7 +5,7 @@ c_ CustomSet(o..
     ___ isempty
         r.. n.. elements
 
-    ___ __iter__
+    ___ -i
         r.. i..(elements)
 
     ___  -c  element

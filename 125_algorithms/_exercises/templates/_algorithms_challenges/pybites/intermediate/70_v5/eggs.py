@@ -1,18 +1,18 @@
-____ r__ _______ c..
-
-COLORS 'red blue green yellow brown purple'.s..
-
-
-c_ EggCreator:
-    ___ - , limit: i..
-        limit limit
-        current 1
-
-    ___ __iter__
-        r.. self
-
-    ___ __next__
-        __ current > limit:
-            r..
-        current += 1
-        r.. _* c..(COLORS)} egg'
+# ____ r__ _______ c..
+#
+# COLORS 'red blue green yellow brown purple'.s..
+#
+#
+# c_ EggCreator
+#     ___ -  limit i..
+#         ? ?
+#         current 1
+#
+#     ___ -i
+#         r.. ?
+#
+#     ___ -n
+#         __ ? > ?
+#             r..
+#         ? +_ 1
+#         r.. _* c.. ? egg

@@ -40,7 +40,7 @@ c_ LinkedList:
     ___ r..
         r.. LinkedList(self)
 
-    ___ __iter__
+    ___ -i
         r.. LinkedListIterator(self)
 
 
@@ -48,10 +48,10 @@ c_ LinkedListIterator:
     ___ - , linked_list
         _current linked_list._head
 
-    ___ __iter__
+    ___ -i
         r.. self
 
-    ___ __next__
+    ___ -n
         __ _current __ N..
             r.. S..
         current_value _current.value()
