@@ -12,7 +12,7 @@ ___ top_python_questions(url=cached_so_url
        by num_votes descending (see tests for expected output).
     """
     response r__.g.. url)
-    soup B..(response.text, 'html.parser')
+    soup B..(?.t.., 'html.parser')
     right_table ?.f.. 'div', {'class': 'question-summary'})
 
     q    # list

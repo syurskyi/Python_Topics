@@ -1,5 +1,5 @@
 # https://pkgstore.datahub.io/core/gold-prices/annual_csv/data/343f626dd4f7bae813cfaac23fccd1bc/annual_csv.csv
-____ io _______ StringIO
+____ i. ______ S..
 _______ p.... __ pd
 gold_prices  """
 1950-12,34.720 1951-12,34.660 1952-12,34.790 1953-12,34.850 1954-12,35.040

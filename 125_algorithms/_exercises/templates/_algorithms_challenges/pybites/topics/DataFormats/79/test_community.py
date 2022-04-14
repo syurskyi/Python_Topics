@@ -1,8 +1,8 @@
-____ community _______ get_csv, create_user_bar_chart
+____ ? _______ ? ?
 
 
 # making sure to call requests just once!
-content get_csv()
+?
 
 expected_output """Africa/Algiers       | ++
 Africa/Cairo         | +
@@ -43,9 +43,9 @@ Pacific/Honolulu     | +
 """.s..
 
 
-___ test_output(capfd
-    create_user_bar_chart(content)
-    actual_output [line.s...r..(' ', '') ___ line __
+___ test_output capfd
+    ? ?
+    actual_output  line.s...r..' ', '') ___ line __
                      ?.r .. 0].s.. ]
 
     ___ line __ expected_output:

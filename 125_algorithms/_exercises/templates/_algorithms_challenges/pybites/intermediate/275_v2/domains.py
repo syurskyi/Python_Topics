@@ -19,7 +19,7 @@ ___ get_common_domains(url=COMMON_DOMAINS
         r.. []
 
     
-    soup B..(response.text)
+    soup B..(?.t..)
 
     rows ?.f.. attrs=TARGET_DIV).f.. 'tr')
 

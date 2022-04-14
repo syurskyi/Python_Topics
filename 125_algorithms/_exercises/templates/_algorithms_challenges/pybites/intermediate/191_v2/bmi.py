@@ -1,5 +1,5 @@
 _______ p.... __ pd
-____ io _______ StringIO
+____ i. ______ S..
 data """Luke Skywalker,172,77
           C-3PO,167,75
           R2-D2,96,32

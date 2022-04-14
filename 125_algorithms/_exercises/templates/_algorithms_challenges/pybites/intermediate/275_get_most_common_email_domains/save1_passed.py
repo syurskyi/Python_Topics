@@ -12,7 +12,7 @@ ___ get_common_domains(url=COMMON_DOMAINS
     """Scrape the url return the 100 most common domain names"""
 
     response r__.g.. COMMON_DOMAINS)
-    soup B..(response.text, 'html.parser')
+    soup B..(?.t.., 'html.parser')
     right_table ?.f.. 'div', TARGET_DIV)
 
     domains    # list

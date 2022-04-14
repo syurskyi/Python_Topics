@@ -28,8 +28,8 @@ ___ get_all_timestamps
     """
     w__ o.. C..) __ f:
         lines f.r..
-        lines [line.r..() ___ line __ lines __ ')' __ line]
-    r.. [line.s..('(')[1].s..(')' 0 ___ line __ lines]
+        lines [line.r..() ___ ? __ lines __ ')' __ line]
+    r.. [line.s..('(')[1].s..(')' 0 ___ ? __ lines]
 
 ___ calc_total_course_duration(timestamps
     """Takes timestamps list as returned by get_all_timestamps

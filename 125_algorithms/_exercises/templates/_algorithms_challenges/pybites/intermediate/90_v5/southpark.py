@@ -1,6 +1,6 @@
 _______ c__
 ____ c.. _______ C.., d..
-____ io _______ StringIO
+____ i. ______ S..
 _______ r__
 
 CSV_URL 'https://raw.githubusercontent.com/pybites/SouthParkData/master/by-season/Season-{}.csv'  # noqa E501

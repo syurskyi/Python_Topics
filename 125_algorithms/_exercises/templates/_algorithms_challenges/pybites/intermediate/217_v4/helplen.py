@@ -1,5 +1,5 @@
 ____ contextlib _______ redirect_stdout
-____ io _______ StringIO
+____ i. ______ S..
 ____ types _______ BuiltinFunctionType
 
 

@@ -17,9 +17,9 @@ IPINFO_URL 'http://ipinfo.io/{ip}/json'
 
 ___ get_ip_country_2(ip_address
     response r__.g.. IPINFO_URL.f..(ip=ip_address
-    print(t..(response.text
-    print(response.text)
-    jso j.l.. (response.text)
+    print(t..(?.t..
+    print(?.t..)
+    jso j.l.. (?.t..)
     print(t..(jso
     print(jso 'country' )
 

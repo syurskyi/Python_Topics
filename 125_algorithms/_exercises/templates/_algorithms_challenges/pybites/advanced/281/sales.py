@@ -25,7 +25,7 @@ ___ get_data(url: s..) __ Dict[s.., s..]:
     ____
         response r__.g.. url)
         response.raise_for_status()
-        data j__.l.. (response.text)
+        data j__.l.. (?.t..)
         w__ TMP.o.. "w") __ tmp:
             j__.d.. data, tmp)
     r.. data

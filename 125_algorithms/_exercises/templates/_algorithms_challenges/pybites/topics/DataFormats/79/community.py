@@ -9,7 +9,7 @@ ___ get_csv
     """Use requests to download the csv and return the
        decoded content"""
     w__ r__.S.. __ s:
-        download s.g.. CSV_URL)
+        download s.g.. ?
         decoded_content download.content.d.. 'utf-8')
         cr c__.reader(decoded_content.s.. , delimiter=',')
         next(cr)

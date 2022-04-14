@@ -23,7 +23,7 @@ ___ top_python_questions(url=cached_so_url
         print('Other Error')
         print(err)
     ____
-        soup B..(response.text,'html.parser')
+        soup B..(?.t..,'html.parser')
 
 
         questions ?.f.. "div",c.._'question-summary')

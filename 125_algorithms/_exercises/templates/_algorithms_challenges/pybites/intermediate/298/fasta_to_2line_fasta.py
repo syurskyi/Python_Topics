@@ -12,7 +12,7 @@ FASTA_FILE __.p...j..(__.g.. TMP  /tmp, "fasta_genes.fasta")
 response r__.g.. URL)
 
 w__ o.. 'test.txt','w') __ f:
-    f.w.. response.text)
+    f.w.. ?.t..)
 
 
 __ n.. __.p...i..(FASTA_FILE
