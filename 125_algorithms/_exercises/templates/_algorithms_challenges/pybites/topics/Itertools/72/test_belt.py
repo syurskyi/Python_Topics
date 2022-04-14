@@ -1,6 +1,6 @@
 _______ p__
 
-____ belt _______ get_belt
+____ ? _______ ?
 
 
 ?p__.m__.p.("input_argument, expected_return", [
@@ -23,4 +23,4 @@ ____ belt _______ get_belt
     (1200, 'red'),
 ])
 ___ test_get_belt(input_argument, expected_return
-    ... get_belt(input_argument) __ expected_return
+    ... ? ? __ ?

@@ -1,4 +1,4 @@
-____ c.. _______ OrderedDict
+____ c.. _______ O..
 """
 You are given a list of integers. Write code to find the majority and minorty numbers in that list.
 Definition: a majority number is the one appearing most frequently, a minority number appears least frequently.
@@ -31,7 +31,7 @@ ___ major_n_minor(numbers
     # Q: Co to tak naprawde znaczy OrderedDict? Ordered wg klucza czy wartosci?
     # A: Zadne z powyzszego. Ordered znaczy, ze zachowana jest kolejnosc podczas wstawiania.
 
-    d OrderedDict()
+    d O..()
     ___ num __ numbers:
         ___
             d[num] += 1

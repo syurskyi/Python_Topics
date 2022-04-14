@@ -2,7 +2,7 @@
 Given an array of integers, find out whether there are two distinct indices i and j in the array such that the
 difference between nums[i] and nums[j] is at most t and the difference between i and j is at most k.
 """
-____ c.. _______ OrderedDict
+____ c.. _______ O..
 
 __author__ 'Daniel'
 
@@ -26,7 +26,7 @@ c_ Solution:
         __ t __ 0:
             r.. containsNearByDuplicate(nums, k)
 
-        od OrderedDict()  # keep the window
+        od O..()  # keep the window
         ___ n __ nums:
             key n/t
             ___ j __ (-1, 0, 1  # (n-t, n, n+t), shrink the interval
@@ -42,7 +42,7 @@ c_ Solution:
         r.. F..
 
     ___ containsNearByDuplicate  nums, k
-        od OrderedDict()
+        od O..()
         ___ n __ nums:
             __ od.g.. n
                 r.. T..

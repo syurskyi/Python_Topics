@@ -5,7 +5,7 @@ Here you probably need to use 2 of the _ methods of namedtuple :)
 """
 
 ____ c.. _______ n..
-____ c.. _______ OrderedDict
+____ c.. _______ O..
 ____ d__ _______ d__
 _______ j__
 
@@ -51,7 +51,7 @@ b ? ?
 # Q: How to serialize datetime object?
 # https://code-maven.com/serialize-datetime-object-as-json-in-python
 # https://stackoverflow.com/questions/11875770/how-to-overcome-datetime-datetime-not-json-serializable/36142844#36142844
-print(j__.d..OrderedDict(b._asdict, default=s.., indent=4
+print(j__.d..O..(b._asdict, default=s.., indent=4
 
 
 ### ---------- PyBites original solution ---------------

@@ -38,7 +38,7 @@ c_ TreeNode:
         left N..
         right N..
 
-____ c.. _______ OrderedDict
+____ c.. _______ O..
 
 
 c_ Solution:
@@ -95,7 +95,7 @@ c_ Solution:
         stack of pi (incompleted)
         """
         depth 0
-        depths OrderedDict()
+        depths O..()
         # parse
         n l..(S)
         i 0

@@ -1,4 +1,4 @@
-____ c.. _______ OrderedDict
+____ c.. _______ O..
 
 ____ attr.validators _______ deep_iterable
 
@@ -6,7 +6,7 @@ ____ attr.validators _______ deep_iterable
 ___ romanize(decimal_number
     """Takes a decimal number int and converts its Roman Numeral str"""
 
-    numeral_lookup OrderedDict([(1, "I"), (4, "IV"), (5, "V"), (9, "IX"), (10, "X"), (40, "XL"), (50, "L"), (90, "XC"), (100, "C"), (400, "CD"), (500, "D"), (900, "CM"), (1000, "M")])
+    numeral_lookup O..([(1, "I"), (4, "IV"), (5, "V"), (9, "IX"), (10, "X"), (40, "XL"), (50, "L"), (90, "XC"), (100, "C"), (400, "CD"), (500, "D"), (900, "CM"), (1000, "M")])
 
     __ isi..(decimal_number, i..
         __ decimal_number <_ 0 o. decimal_number >_ 4000:

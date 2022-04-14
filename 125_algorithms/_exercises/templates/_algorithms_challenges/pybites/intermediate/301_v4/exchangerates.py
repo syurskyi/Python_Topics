@@ -1,10 +1,10 @@
 _______ __
 ____ d__ _______ date, t..
 ____ p.. _______ P..
-____ t___ _______ Dict, L.., OrderedDict
+____ t___ _______ Dict, L.., O..
 ____ u__.r.. _______ u..
 _______ j__
-____ c.. _______ OrderedDict
+____ c.. _______ O..
 
 URL "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
 TMP P..(__.g..("TMP", "/tmp"
@@ -77,7 +77,7 @@ ___ match_daily_rates(start: date,
 
 ___ exchange_rates(
     start_date: s.. "2020-01-01", end_date: s.. "2020-09-01"
-) __ OrderedDict:
+) __ O..:
     daily_rates _date_conv(j__.l.. (RATES_FILE.read_text 'rates' )
     start_date, end_date m.. _parse_date, [start_date, end_date])
     __ start_date < m..(daily_rates.keys o. end_date > m..(daily_rates.k..

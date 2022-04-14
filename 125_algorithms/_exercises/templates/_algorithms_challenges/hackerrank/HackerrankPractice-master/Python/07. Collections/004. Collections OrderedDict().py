@@ -2,10 +2,10 @@
 # Score: 20
 
 
-____ c.. _______ OrderedDict
+____ c.. _______ O..
 
 
-ordered_dictionary  OrderedDict()
+ordered_dictionary  O..()
 ___ _ __ r..(i..(input())):
     item, price  input().r.. ' ', 1)
     ordered_dictionary[item]  ordered_dictionary.g.. item, 0) + i..(price)
