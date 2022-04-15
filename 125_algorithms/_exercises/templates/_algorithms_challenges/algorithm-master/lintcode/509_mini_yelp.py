@@ -21,7 +21,7 @@ Definition of Location:
 class Location:
     # @param {double} latitude, longitude
     # @param {Location}
-    @classmethod
+    ??
     def create(cls, latitude, longitude):
         # This will create a new location object
 
@@ -30,7 +30,7 @@ class Restaurant:
     # @param {str} name
     # @param {Location} location
     # @return {Restaurant}
-    @classmethod
+    ??
     def create(cls, name, location):
         # This will create a new restaurant object,
         # and auto fill id
@@ -38,7 +38,7 @@ class Restaurant:
 Definition of Helper
 class Helper:
     # @param {Location} location1, location2
-    @classmethod
+    ??
     def get_distance(cls, location1, location2):
         # return calculate the distance between two location
 
@@ -52,7 +52,7 @@ class GeoHash:
 
     # @param {str} hashcode
     # @return {Location}
-    @classmethod
+    ??
     def decode(cls, hashcode):
         # return convert a geohash string to location
 """

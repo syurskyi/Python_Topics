@@ -95,7 +95,7 @@ c_ Color:
 
     ___  -r
         """Returns the repl of the object"""
-        r.. f"{t..(self).__name__}('{color}')"
+        r.. f"{t..(self).-n ('{color}')"
 
     ___ -s
         """Returns the string value of the color object"""

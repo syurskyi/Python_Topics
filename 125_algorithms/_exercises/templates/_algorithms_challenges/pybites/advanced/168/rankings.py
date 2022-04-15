@@ -56,7 +56,7 @@ c_ Ninja:
         r.. V...
     
     ___  -r
-        r.. f"[{bites}] {name}"
+        r.. f"[{bites}] n..
 
 
 

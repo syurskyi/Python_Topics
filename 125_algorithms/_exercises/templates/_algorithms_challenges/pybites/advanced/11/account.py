@@ -59,6 +59,6 @@ c_ Account:
 
     
     ___ -s
-        r.. f"{name} account - balance: {balance}"
+        r.. _* n.. account - balance: {balance}"
 
     # add dunder methods below

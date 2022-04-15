@@ -11,7 +11,7 @@ c_ IntList(l..
             numbers [numbers]
         numbers [i..(n) ___ n __ numbers __ r..(n, 0) __ i..(n)]
         __ n.. isi.. ?, i..) a.. a__(n.. isi..(x, i..) ___ x __ numbers
-            r.. T.. _*{__class__.__name__} can only operate with integer values')
+            r.. T.. _*{__class__.-n  can only operate with integer values')
         r.. numbers
 
     ___ _elements

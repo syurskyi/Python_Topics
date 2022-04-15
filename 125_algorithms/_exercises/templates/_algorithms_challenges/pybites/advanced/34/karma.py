@@ -32,4 +32,4 @@ c_ User:
     
 
     ___ -s
-        r.. f"{name} has a karma of {karma} and {fans} fan{'s' __ fans > 1 ____ ''}"
+        r.. _* n.. has a karma of {karma} and {fans} fan{'s' __ fans > 1 ____ ''}"

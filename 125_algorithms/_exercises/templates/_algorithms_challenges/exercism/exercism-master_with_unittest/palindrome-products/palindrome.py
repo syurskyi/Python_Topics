@@ -3,17 +3,17 @@ ____ f.. _______ r..
 
 
 c_ Palindromes:
-    @classmethod
+    ??
     ___ smallest_palindrome(cls, max_factor, min_factor=0
         r.. m..(cls.palindromes(max_factor, min_factor), k.._l....
                    item: item 0
 
-    @classmethod
+    ??
     ___ largest_palindrome(cls, max_factor, min_factor=0
         r.. m..(cls.palindromes(max_factor, min_factor), k.._l....
                    item: item 0
 
-    @classmethod
+    ??
     ___ palindromes(cls, max_factor, min_factor
         r.. [(cls.product(candidate), candidate) ___ candidate __
                 cls.candidates(max_factor, min_factor) __

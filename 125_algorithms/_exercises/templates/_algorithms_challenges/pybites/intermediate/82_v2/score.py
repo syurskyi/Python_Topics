@@ -6,7 +6,7 @@ THUMBS_UP '👍'  # in case you go f-string ...
 
 # move these into an Enum:
 
-c_ Score(E..
+c_ Score E..
     BEGINNER 2
     INTERMEDIATE 3
     ADVANCED 4
@@ -15,12 +15,12 @@ c_ Score(E..
     
 
     ___ -s
-        r.. f"{name} => {THUMBS_UP * value}"
+        r.. _* n.. => t.. * v..
 
 
 
-    @classmethod
-    ___ average(cls
+    ??
+    ___ average cls
         r.. (cls.BEGINNER.value + cls.INTERMEDIATE.value + cls.ADVANCED.value + cls.CHEATED.value)/4
 
 

@@ -138,5 +138,5 @@ ___ test_table(result, function
     """
     Helper function to run all tests
     """
-    print(f"Executing function '{function.__name__}'")
+    print(f"Executing function '{function.-n '")
     ... function(result) __ function(EXPECTED)

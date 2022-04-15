@@ -22,7 +22,7 @@ c_ Luhn:
     ___ is_valid
         r.. checksum() __ 0
 
-    @classmethod
+    ??
     ___ create(cls, num
         ___ i __ r..(0, 10
             __ cls(i..(s..(num) + s..(i))).is_valid

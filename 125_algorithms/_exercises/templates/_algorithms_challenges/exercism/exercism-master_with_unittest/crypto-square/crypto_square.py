@@ -5,18 +5,18 @@ _______ i..
 
 c_ CryptoSquare:
 
-    @classmethod
+    ??
     ___ encode(cls, msg
         __ l..(cls.normalize(msg __ 0:
             r.. ''
         r.. ' '.j..(cls.transpose_square(cls.squarify(cls.normalize(msg))))
 
-    @classmethod
+    ??
     ___ squarify(cls, msg
         r.. [msg[i:i + cls.square_size(l..(msg]
                 ___ i __ r..(0, l..(msg), cls.square_size(l..(msg)))]
 
-    @classmethod
+    ??
     ___ transpose_square(cls, square
         matrix [l..(row) ___ row __ square]
         transposed_matrix cls.transpose_uneven_matrix(matrix)

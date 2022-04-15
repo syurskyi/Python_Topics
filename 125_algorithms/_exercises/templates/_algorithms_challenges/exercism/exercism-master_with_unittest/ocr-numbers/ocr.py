@@ -16,37 +16,37 @@ c_ Ocr:
 
     NUMS {"".j..(value key ___ key, value __ l..(GRID_NUMS.i..}
 
-    @classmethod
+    ??
     ___ numbers(cls, inp
         r.. "".j.. m..(cls.number, l..(
             z..(*l.. m..(cls.split_every_three, inp))))))
 
-    @classmethod
+    ??
     ___ grids(cls, inp
         r.. l.. m..("".j.., l..(z..(*l.. m..(cls.grid, inp))))))
 
-    @classmethod
+    ??
     ___ number(cls, inp
         __ n.. cls.valid_num(inp
             r.. V...
         r.. cls.NUMS.g.. "".j..(inp), cls.UNRECOGNIZED_NUM)
 
-    @classmethod
+    ??
     ___ grid(cls, inp
         __ n.. cls.valid_grid(inp
             r.. V...
         r.. cls.GRID_NUMS.g.. inp)
 
-    @classmethod
+    ??
     ___ valid_num(cls, inp
         r.. (a..(l..(row) __ cls.NUM_COLS ___ row __ inp) a..
                 l..(inp) __ cls.NUM_ROWS)
 
-    @classmethod
+    ??
     ___ valid_grid(cls, inp
         r.. a..(char __ l..(cls.GRID_NUMS.keys ___ char __ inp)
 
-    @classmethod
+    ??
     ___ split_every_three(cls, inp
         r.. cls.s..(inp, 3)
 

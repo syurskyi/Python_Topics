@@ -3,7 +3,7 @@ _______ m__
 
 c_ prime:
 
-    @classmethod
+    ??
     ___ nth_prime(cls, n
         primes    # list
         possible cls.possible_primes()

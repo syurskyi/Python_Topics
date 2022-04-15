@@ -7,11 +7,11 @@ c_ PigLatinTranslator:
     vowels s..( 'a', 'e', 'i', 'o', 'u' )
     consonants alpha - vowels
 
-    @classmethod
+    ??
     ___ translate_phrase(cls, phrase
         r.. ' '.j..([cls.translate(word) ___ word __ phrase.s.. ])
 
-    @classmethod
+    ??
     ___ translate(cls, word
         __ (word[0] __ cls.vowels o.
             word.s.. 'yt') o.

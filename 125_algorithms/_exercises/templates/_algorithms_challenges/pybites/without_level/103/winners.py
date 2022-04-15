@@ -18,4 +18,4 @@ ___ print_game_stats(games_won=games_won
         so no sorting is required for this Bite.)
     """
     ___ name, score __ games_won.i..
-        print(f"{name} has won {score} game{'' __ score __ 1 ____ 's'}")
+        print(_* n.. has won {score} game{'' __ score __ 1 ____ 's'}")

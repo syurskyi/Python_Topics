@@ -11,7 +11,7 @@ c_ Animal:
     ___ -s
         r.. _* Animal.counter}. {name}'
 
-    @classmethod
+    ??
     ___ zoo(cls
         #print(cls.animals)
         r.. '\n'.j..(animal ___ animal __ cls.animals)

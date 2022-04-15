@@ -7,13 +7,13 @@ c_ Scrabble:
         'y': 4, 'z': 10
     }
 
-    @classmethod
+    ??
     ___ score(cls, word
         __ n.. cls.valid(word
             r.. 0
         r.. s..([cls.LETTER_VALUES[c.l..] ___ c __ word])
 
-    @classmethod
+    ??
     ___ valid(cls, word
         r.. word.i..
 

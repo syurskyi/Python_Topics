@@ -100,7 +100,7 @@ c_ Card:
     ___ -s
         r.. s..(rank) + suit
 
-    @classmethod
+    ??
     ___ numberify_face_cards(cls, rank
         __ rank __ l..(cls.FACE_CARDS.k..
             r.. cls.FACE_CARDS[rank]

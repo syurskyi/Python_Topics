@@ -29,7 +29,7 @@ c_ Color:
         colorname color
         rgb COLOR_NAMES.g.. color.u.., N..)
 
-    @classmethod
+    ??
     ___ hex2rgb(cls, hex_str: s..) __ t..:
         """Class method that converts a hex value into an rgb one"""
         # Using regex will perform more comprehensive checking…
@@ -42,7 +42,7 @@ c_ Color:
         ______ V... __ exp:
             r.. V... _*Invalid hex value ({exp.args})')
 
-    @classmethod
+    ??
     ___ rgb2hex(cls, rbg_tuple: t..) __ s..
         """Class method that converts an rgb value into a hex one"""
         __ l..(rbg_tuple) !_ 3 o. a__((x < 0) o. (x > 255) ___ x __ rbg_tuple
@@ -54,7 +54,7 @@ c_ Color:
 
     ___  -r
         """Returns the repl of the object"""
-        r.. f"{__class__.__name__}('{colorname}')"
+        r.. _* -c .-n ('{colorname}')"
 
     ___ -s
         """Returns the string value of the color object"""

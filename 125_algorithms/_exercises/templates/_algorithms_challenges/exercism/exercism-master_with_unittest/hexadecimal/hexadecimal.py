@@ -9,18 +9,18 @@ c_ Hexa:
                       l..(CHAR_VALUES.k.. )))
     BASE 16
 
-    @classmethod
+    ??
     ___ convert(cls, inp
         __ n.. cls.valid(inp
             r.. V...
         r.. s..([cls.convert_char(char) * cls.BASE**index ___ index, char __
                     e..(r..(inp])
 
-    @classmethod
+    ??
     ___ valid(cls, inp
         r.. s..(inp) <_ cls.VALID_CHARS
 
-    @classmethod
+    ??
     ___ convert_char(cls, char
         r.. i..(char) __ char.i.. ____ cls.CHAR_VALUES[char]
 

@@ -32,7 +32,7 @@ c_ Enchantment:
     items: L..[s..] field(default_factory=l..)
 
     ___ -s
-        r.. f"{name} ({max_level}): {description}"
+        r.. _* n.. ({max_level}): {description}"
 
     ___ __lt__  other
         r.. id_name < other.id_name

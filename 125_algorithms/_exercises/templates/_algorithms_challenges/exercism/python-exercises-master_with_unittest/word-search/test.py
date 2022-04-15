@@ -5,7 +5,7 @@ ____ word_search _______ WordSearch, Point
 
 c_ WordSearchTests(unittest.TestCase
 
-    @classmethod
+    ??
     ___ setUpClass
         puzzle ('jefblpepre\n'
                   'camdcimgtc\n'

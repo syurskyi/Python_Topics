@@ -54,11 +54,11 @@ c_ Calculator:
     ___ valid_elements
         r.. a..(valid_element(element) ___ element __ tokens)
 
-    @classmethod
+    ??
     ___ valid_element(cls, element
         r.. element __ cls.VALID_TOKENS o. cls.digit(element)
 
-    @classmethod
+    ??
     ___ tokenize(cls, inp
         ___ operator, token __ l..(cls.OPERATORS.i..
             inp inp.r..(operator, token)
@@ -68,7 +68,7 @@ c_ Calculator:
     ___ digit(element
         r.. element.l..("-").i..
 
-    @classmethod
+    ??
     ___ operator(cls, element
         r.. element __ l..(cls.OPERATORS.values
 

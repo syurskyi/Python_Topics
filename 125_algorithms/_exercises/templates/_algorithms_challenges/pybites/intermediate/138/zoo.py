@@ -12,7 +12,7 @@ c_ Animal:
     ___ -s
         r.. f"{next(Animal.animal_sequence)}. {_name}"
 
-    @classmethod
+    ??
     ___ zoo(cls
         r.. "\n".j..([cls_inst.-s() ___ cls_inst __ cls.instances])
 

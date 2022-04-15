@@ -29,7 +29,7 @@ c_ Enchantment:
         items    # list
 
     ___ -s
-        r.. f"{name} ({max_level}): {description}"
+        r.. _* n.. ({max_level}): {description}"
     
 c_ Item:
     """Minecraft enchantable item class

@@ -53,13 +53,13 @@ ___ create_file(name, contents
 
 
 c_ GrepTest(unittest.TestCase
-    @classmethod
+    ??
     ___ setUpClass
         create_file(ILIADFILENAME, ILIADCONTENTS)
         create_file(MIDSUMMERNIGHTFILENAME, MIDSUMMERNIGHTCONTENTS)
         create_file(PARADISELOSTFILENAME, PARADISELOSTCONTENTS)
 
-    @classmethod
+    ??
     ___ tearDownClass
         remove_file(ILIADFILENAME)
         remove_file(MIDSUMMERNIGHTFILENAME)

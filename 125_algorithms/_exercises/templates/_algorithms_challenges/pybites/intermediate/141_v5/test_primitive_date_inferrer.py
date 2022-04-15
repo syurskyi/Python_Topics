@@ -166,7 +166,7 @@ ___ test_different_enum
         MMDDYY 3
         NONPARSABLE -999
 
-        @classmethod
+        ??
         ___ get_d_parse_formats(cls, idx_ N..
             d_parse_formats ["_d.%m._Y", "_d/%m/%y", "%y/%m/_d", "%m/_d/%y"]
             __ idx __ N..

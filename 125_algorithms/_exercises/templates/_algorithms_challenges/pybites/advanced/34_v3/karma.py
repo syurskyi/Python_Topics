@@ -11,7 +11,7 @@ c_ User:
         _transactions    # list
 
     ___ -s
-        r.. f"{name} has a karma of {karma} and {fans} fan{'s' __ fans > 1 ____ ''}"
+        r.. _* n.. has a karma of {karma} and {fans} fan{'s' __ fans > 1 ____ ''}"
 
     ___ __add__  other: Transaction
         __ n.. isi..(other, Transaction

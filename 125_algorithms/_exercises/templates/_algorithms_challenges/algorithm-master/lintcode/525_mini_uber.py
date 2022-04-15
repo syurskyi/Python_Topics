@@ -8,7 +8,7 @@ class Trip:
 
 Definition of Helper
 class Helper:
-    @classmethod
+    ??
     def get_distance(cls, lat1, lng1, lat2, lng2):
         # return calculate the distance between (lat1, lng1) and (lat2, lng2)
 """

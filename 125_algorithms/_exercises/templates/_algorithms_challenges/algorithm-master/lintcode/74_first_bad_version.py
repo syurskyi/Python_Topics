@@ -4,7 +4,7 @@ Main Concept
     good | T T F F F
 
 class SVNRepo:
-    @classmethod
+    ??
     def isBadVersion(cls, id)
         # Run unit tests to check whether verison `id` is a bad version
         # return true if unit tests passed else false.

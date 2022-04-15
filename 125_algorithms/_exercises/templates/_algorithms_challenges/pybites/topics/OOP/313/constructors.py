@@ -18,12 +18,12 @@ c_ Domain:
     # called parse_from_url and parse_from_email to construct domains
     # from an URL and email respectively
 
-    @classmethod
+    ??
     ___ parse_url(cls, url
         url_domain __.f.. _ (?:^https?:\/\/([^\/]+)(?:[\/,]|$)|^(.*)$)", url)
         r.. Domain(url_domain 0 0 )
 
-    @classmethod
+    ??
     ___ parse_email(cls, email
         email_domain __.f.. _ @(.*\.[a-z]+)', email)
         r.. Domain(email_domain 0

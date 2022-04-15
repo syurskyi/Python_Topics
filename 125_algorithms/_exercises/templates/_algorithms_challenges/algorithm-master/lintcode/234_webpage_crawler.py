@@ -20,7 +20,7 @@ c_ CrawlerThread(Thread
 
 
 #class HtmlHelper:
-#    @classmethod
+#    ??
 #    def parseUrls(cls, url)
 #       # Get all urls from a webpage of given url.
 c_ Solution:

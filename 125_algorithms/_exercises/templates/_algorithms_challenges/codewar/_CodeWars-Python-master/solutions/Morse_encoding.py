@@ -4,7 +4,7 @@ https://www.codewars.com/kata/morse-encoding/train/python
 """
 c_ Morse:
 
-    @classmethod
+    ??
     ___ encode  message
         words message.s..(' ')
         code ('0' * 7).j..( '000'.j..([Morse.alpha[c.u..]
@@ -16,7 +16,7 @@ c_ Morse:
                           (0 __ num[0] __ '0' ____ Morse.neg
         r.. result
 
-    @classmethod
+    ??
     ___ decode  array
         code ''
         ___ num __ array:

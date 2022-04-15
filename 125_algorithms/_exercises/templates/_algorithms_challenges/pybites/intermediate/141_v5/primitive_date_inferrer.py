@@ -9,7 +9,7 @@ c_ DateFormat(E..
     YYMMDD 2  # yy/mm/dd
     NONPARSABLE -999
 
-    @classmethod
+    ??
     ___ get_d_parse_formats(cls, val_ N..
         """ Arg:
         val(int | None) enum member value

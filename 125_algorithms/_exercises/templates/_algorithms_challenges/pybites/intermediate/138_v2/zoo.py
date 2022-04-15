@@ -9,9 +9,9 @@ c_ Animal:
         Animal.animals.a..(self)
 
     ___ -s
-        r.. f"{number}. {name}"
+        r.. f"{number}. n..
 
-    @classmethod
+    ??
     ___ zoo(cls
         r.. '\n'.j..(s..(animal) ___ animal __ cls.animals)
 

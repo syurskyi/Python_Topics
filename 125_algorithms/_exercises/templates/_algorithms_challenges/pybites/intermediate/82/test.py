@@ -4,7 +4,7 @@
 c_ Test:
     x 4
 
-    @classmethod
+    ??
     ___ hello(cls
         print(cls.x)
 

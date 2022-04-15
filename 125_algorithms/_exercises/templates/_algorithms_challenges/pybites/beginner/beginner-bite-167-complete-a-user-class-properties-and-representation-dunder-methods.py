@@ -65,7 +65,7 @@ c_ User:
         """Don't hardcode the class name, hint: use a
            special attribute of self.__class__ ...
         """
-        r.. f"{__class__.__name__}(\"{first_name}\", \"{last_name}\")"
+        r.. _* -c .-n (\"{first_name}\", \"{last_name}\")"
 
 u ? "bob", "belderbos")
 

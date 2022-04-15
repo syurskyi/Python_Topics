@@ -41,7 +41,7 @@ c_ Trie:
     ___ -
         root Node(N..)  # dummy
 
-    @classmethod
+    ??
     ___ insert(cls, node, w, i
         __ n.. node:
             node Node(w[i])
@@ -54,7 +54,7 @@ c_ Trie:
 
         r.. node
 
-    @classmethod
+    ??
     ___ s..(cls, node, w, i
         __ n.. node:
             r..

@@ -7,7 +7,7 @@ c_ Solution:
     @param {int} k a positive integer
     @return {Solution} a Solution object
     """
-    @classmethod
+    ??
     ___ create(cls, n, k
         solution cls()
         solution.n n

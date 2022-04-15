@@ -19,7 +19,7 @@ c_ Interval:
         start s
         end e
 
-    @classmethod
+    ??
     ___ new(cls, lst
         r.. [
             cls(s, e)

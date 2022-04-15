@@ -44,10 +44,10 @@ c_ Caesar:
 
     cipher Cipher('d')
 
-    @classmethod
+    ??
     ___ encode(cls, phrase
         r.. cls.cipher.encode(phrase)
 
-    @classmethod
+    ??
     ___ d.. cls, phrase
         r.. cls.cipher.d.. phrase)
