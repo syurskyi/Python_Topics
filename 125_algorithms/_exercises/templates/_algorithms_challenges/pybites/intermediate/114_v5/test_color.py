@@ -25,8 +25,8 @@ ___ test_color_class(color, e..
     ((0, 128, 0), "#008000"),
     ((255, 128, 0), "#ff8000"),
 ])
-___ test_color_classmethod_rgb2hex(rgb, e..
-    ... Color.rgb2hex(rgb) __ e..
+___ test_color_classmethod_rgb2hex rgb, e..
+    ... Color.rgb2hex ?) __ e..
 
 
 ?p__.m__.p.("rgb", [
@@ -36,9 +36,9 @@ ___ test_color_classmethod_rgb2hex(rgb, e..
     ((256, 0, 0,
 ])
 
-___ test_color_rgb2hex_bad_value(rgb
+___ test_color_rgb2hex_bad_value rgb
     w__ p__.r..(V...
-        Color.rgb2hex(rgb)
+        Color.rgb2hex ?)
 
 
 ?p__.m__.p.("hex, expected", [

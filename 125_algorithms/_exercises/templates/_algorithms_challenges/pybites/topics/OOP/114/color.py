@@ -49,7 +49,7 @@ c_ Color:
 
     ___ -s
         """Returns the string value of the color object"""
-        r.. s..(rgb) __ rgb ____ "Unknown"
+        r.. s.. ?) __ rgb ____ "Unknown"
 
 
 #color = Color('orange')

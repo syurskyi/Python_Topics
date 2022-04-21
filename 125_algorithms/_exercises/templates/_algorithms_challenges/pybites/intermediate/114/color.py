@@ -100,8 +100,8 @@ c_ Color:
     ___ -s
         """Returns the string value of the color object"""
 
-        __ rgb:
-            r.. s..(rgb)
+        __  ?:
+            r.. s.. ?)
         ____
             r.. "Unknown"
 
