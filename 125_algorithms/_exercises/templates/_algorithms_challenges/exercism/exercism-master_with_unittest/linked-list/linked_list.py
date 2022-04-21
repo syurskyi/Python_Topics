@@ -27,7 +27,7 @@ c_ LinkedList(o..
         __ tail __ n.. N..
             popped_node tail
             tail popped_node.previous
-            r.. popped_node.value
+            r.. popped_node.v..
 
     ___ unshift  value
         new_node Node(value)
@@ -44,7 +44,7 @@ c_ LinkedList(o..
         __ head __ n.. N..
             shifted_node head
             head shifted_node.succeeding
-            r.. shifted_node.value
+            r.. shifted_node.v..
 
     ___ -l
         r.. length

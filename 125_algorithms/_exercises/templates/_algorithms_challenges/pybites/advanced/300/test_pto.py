@@ -26,7 +26,7 @@ ___ test_four_day_weekends_workdays(capfd
 ___ test_four_day_weekends_invalid_call
     w__ p__.r..(V...) __ e:
         four_day_weekends(T..)
-    ... s..(e.value) __ pto.ERROR_MSG
+    ... s..(e.v..) __ pto.ERROR_MSG
 
 
 ___ test_four_day_weekends_invalid_call_custom_error_message
@@ -34,7 +34,7 @@ ___ test_four_day_weekends_invalid_call_custom_error_message
     pto.ERROR_MSG new_msg
     w__ p__.r..(V...) __ e:
         four_day_weekends(T..)
-    ... s..(e.value) __ new_msg
+    ... s..(e.v..) __ new_msg
 
 
 ___ test_four_day_weekends_october(capfd

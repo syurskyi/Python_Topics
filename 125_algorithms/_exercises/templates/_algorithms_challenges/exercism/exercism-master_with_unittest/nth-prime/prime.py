@@ -6,10 +6,10 @@ c_ prime:
     ??
     ___ nth_prime(cls, n
         primes    # list
-        possible cls.possible_primes()
+        possible  ?.possible_primes()
         w.... l..(primes) < n:
             x next(possible)
-            __ cls.is_prime(x
+            __  ?.is_prime(x
                 primes.a..(x)
         r.. primes[n - 1]
 

@@ -60,7 +60,7 @@ c_ BridgeHand:
         ___ suit __ Suit:
             __ suit __ suit_to_cards:
                 cards suit_to_cards[suit]
-                cards.s..(k.._l.... x: x.value)
+                cards.s..(k.._l.... x: x.v..)
                 cards ''.j..(card.name ___ card __ cards)
                 s.a..(f"{suit.name}:{cards}")
 
@@ -134,7 +134,7 @@ c_ BridgeHand:
                     losing_tricks += 1
             ____
 
-                cards s..(cards,k.._l.... x: x.value)
+                cards s..(cards,k.._l.... x: x.v..)
                 __ l..(cards) __ 2:
                     __ (cards[0] __ Rank.A a.. cards[1] !_Rank.K) o. (cards[0] __ Rank.K
                         losing_tricks += 1

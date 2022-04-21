@@ -9,9 +9,9 @@ c_ Scrabble:
 
     ??
     ___ score(cls, word
-        __ n.. cls.valid(word
+        __ n..  ?.valid(word
             r.. 0
-        r.. s..([cls.LETTER_VALUES[c.l..] ___ c __ word])
+        r.. s..([ ?.LETTER_VALUES[c.l..] ___ c __ word])
 
     ??
     ___ valid(cls, word

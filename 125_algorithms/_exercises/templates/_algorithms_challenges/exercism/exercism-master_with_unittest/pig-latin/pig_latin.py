@@ -9,11 +9,11 @@ c_ PigLatinTranslator:
 
     ??
     ___ translate_phrase(cls, phrase
-        r.. ' '.j..([cls.translate(word) ___ word __ phrase.s.. ])
+        r.. ' '.j..([ ?.translate(word) ___ word __ phrase.s.. ])
 
     ??
     ___ translate(cls, word
-        __ (word[0] __ cls.vowels o.
+        __ (word[0] __  ?.vowels o.
             word.s.. 'yt') o.
                 word.s.. 'xr':
             r.. word + 'ay'
@@ -21,11 +21,11 @@ c_ PigLatinTranslator:
                 word.s.. 'sch') o.
                 word.s.. 'thr':
             r.. word[3:] + word[0:3] + 'ay'
-        ____ ((word[0] __ cls.consonants a..
-                word[1] __ cls.consonants) o.
+        ____ ((word[0] __  ?.consonants a..
+                word[1] __  ?.consonants) o.
                 word.s.. 'qu':
             r.. word[2:] + word[0:2] + 'ay'
-        ____ (word[0] __ cls.consonants
+        ____ (word[0] __  ?.consonants
             r.. word[1:] + word[0] + 'ay'
 
 

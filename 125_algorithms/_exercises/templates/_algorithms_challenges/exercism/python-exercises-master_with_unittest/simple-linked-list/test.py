@@ -25,11 +25,11 @@ c_ SimpleLinkedListTest(unittest.TestCase
 
     ___ test_singleton_list_has_head
         sut LinkedList([1])
-        assertEqual(sut.head().value(), 1)
+        assertEqual(sut.head().v..(), 1)
 
     ___ test_non_empty_list_has_correct_head
         sut LinkedList([1, 2])
-        assertEqual(sut.head().value(), 2)
+        assertEqual(sut.head().v..(), 2)
 
     ___ test_can_push_to_non_empty_list
         sut LinkedList([1, 2, 3])
@@ -40,13 +40,13 @@ c_ SimpleLinkedListTest(unittest.TestCase
         sut LinkedList()
         sut.push(5)
         assertEqual(l..(sut), 1)
-        assertEqual(sut.head().value(), 5)
+        assertEqual(sut.head().v..(), 5)
 
     ___ test_can_from_non_empty_list
         sut LinkedList([3, 4, 5])
         assertEqual(sut.p.. ), 5)
         assertEqual(l..(sut), 2)
-        assertEqual(sut.head().value(), 4)
+        assertEqual(sut.head().v..(), 4)
 
     ___ test_pop_from_singleton_list_removes_head
         sut LinkedList([1])
@@ -69,7 +69,7 @@ c_ SimpleLinkedListTest(unittest.TestCase
         assertEqual(l..(sut), 0)
         sut.push(4)
         assertEqual(l..(sut), 1)
-        assertEqual(sut.head().value(), 4)
+        assertEqual(sut.head().v..(), 4)
 
     ___ test_singleton_list_head_has_no_next
         sut LinkedList([1])
@@ -79,7 +79,7 @@ c_ SimpleLinkedListTest(unittest.TestCase
         sut LinkedList(r..(10
         current sut.head()
         ___ i __ r..(10
-            assertEqual(current.value(), 9 - i)
+            assertEqual(current.v..(), 9 - i)
             current current.next()
         assertIsNone(current)
 

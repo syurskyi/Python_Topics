@@ -29,7 +29,7 @@ c_ LinkedList(o..
             tail tail.prev
             tail.next N..
         length -_ 1
-        r.. node.value
+        r.. node.v..
 
     ___ shift
         node head
@@ -39,7 +39,7 @@ c_ LinkedList(o..
             head head.next
             head.prev N..
         length -_ 1
-        r.. node.value
+        r.. node.v..
 
     ___ unshift  value
         new_node Node(value)
@@ -57,5 +57,5 @@ c_ LinkedList(o..
     ___ -i
         current_node head
         w.... (current_node
-            y.. current_node.value
+            y.. current_node.v..
             current_node current_node.next

@@ -14,7 +14,7 @@ c_ Animal:
 
     ??
     ___ zoo(cls
-        r.. "\n".j..([cls_inst.-s() ___ cls_inst __ cls.instances])
+        r.. "\n".j..([cls_inst.-s() ___ cls_inst __  ?.instances])
 
 
 # if __name__ == "__main__":

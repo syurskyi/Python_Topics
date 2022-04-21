@@ -10,17 +10,17 @@ c_ ReactTest(unittest.TestCase
 
     ___ test_input_cells_have_a_value
         input_ InputCell(10)
-        assertEqual(input_.value, 10)
+        assertEqual(input_.v.., 10)
 
     ___ test_can_set_input_cell_value
         input_ InputCell(4)
-        input_.value 20
-        assertEqual(input_.value, 20)
+        input_.v.. 20
+        assertEqual(input_.v.., 20)
 
     ___ test_compute_cells_calculate_initial_value
         input_ InputCell(1)
         output ComputeCell([input_], l.... inputs: inputs[0] + 1)
-        assertEqual ? .value, 2)
+        assertEqual ? .v.., 2)
 
     ___ test_compute_cells_take_inputs_in_right_order
         one InputCell(1)
@@ -29,14 +29,14 @@ c_ ReactTest(unittest.TestCase
             [one, two],
             l.... inputs: inputs[0] + inputs[1]*10
         )
-        assertEqual ? .value, 21)
+        assertEqual ? .v.., 21)
 
     ___ test_compute_cells_update_value_when_dependencies_are_changed
         input_ InputCell(1)
         output ComputeCell([input_], l.... inputs: inputs[0] + 1)
 
-        input_.value 3
-        assertEqual ? .value, 4)
+        input_.v.. 3
+        assertEqual ? .v.., 4)
 
     ___ test_compute_cells_can_depend_on_other_compute_cells
         input_ InputCell(1)
@@ -47,9 +47,9 @@ c_ ReactTest(unittest.TestCase
             l.... inputs: inputs[0] + inputs[1]
         )
 
-        assertEqual ? .value, 32)
-        input_.value 3
-        assertEqual ? .value, 96)
+        assertEqual ? .v.., 32)
+        input_.v.. 3
+        assertEqual ? .v.., 96)
 
     ___ test_compute_cells_fire_callbacks
         input_ InputCell(1)
@@ -59,7 +59,7 @@ c_ ReactTest(unittest.TestCase
         callback1 callback_factory(observer)
 
         output.add_callback(callback1)
-        input_.value 3
+        input_.v.. 3
         assertEqual(observer[-1], 4)
 
     ___ test_callbacks_only_fire_on_change
@@ -73,9 +73,9 @@ c_ ReactTest(unittest.TestCase
         callback1 callback_factory(observer)
 
         output.add_callback(callback1)
-        input_.value 2
+        input_.v.. 2
         assertEqual(observer, [])
-        input_.value 4
+        input_.v.. 4
         assertEqual(observer[-1], 222)
 
     ___ test_callbacks_do_not_report_already_reported_values
@@ -86,9 +86,9 @@ c_ ReactTest(unittest.TestCase
         callback1 callback_factory(observer)
 
         output.add_callback(callback1)
-        input_.value 2
+        input_.v.. 2
         assertEqual(observer[-1], 3)
-        input_.value 3
+        input_.v.. 3
         assertEqual(observer[-1], 4)
 
     ___ test_callbacks_can_fire_from_multiple_cells
@@ -102,7 +102,7 @@ c_ ReactTest(unittest.TestCase
 
         plus_one.add_callback(callback1)
         minus_one.add_callback(callback2)
-        input_.value 10
+        input_.v.. 10
 
         assertEqual(cb1_observer[-1], 11)
         assertEqual(cb2_observer[-1], 9)
@@ -118,13 +118,13 @@ c_ ReactTest(unittest.TestCase
 
         output.add_callback(callback1)
         output.add_callback(callback2)
-        input_.value 31
+        input_.v.. 31
         assertEqual(cb1_observer[-1], 32)
         assertEqual(cb2_observer[-1], 32)
 
         output.remove_callback(callback1)
         output.add_callback(callback3)
-        input_.value 41
+        input_.v.. 41
         assertEqual(cb2_observer[-1], 42)
         assertEqual(cb3_observer[-1], 42)
 
@@ -146,7 +146,7 @@ c_ ReactTest(unittest.TestCase
         output.remove_callback(callback1)
         output.remove_callback(callback1)
         output.remove_callback(callback1)
-        input_.value 2
+        input_.v.. 2
 
         assertEqual(cb1_observer, [])
         assertEqual(cb2_observer[-1], 3)
@@ -167,7 +167,7 @@ c_ ReactTest(unittest.TestCase
         callback1 callback_factory(observer)
 
         output.add_callback(callback1)
-        input_.value 4
+        input_.v.. 4
         assertEqual(observer[-1], 10)
 
     ___ test_callbacks_not_called_so_long_as_output_not_changed
@@ -185,10 +185,10 @@ c_ ReactTest(unittest.TestCase
         callback1 callback_factory(observer)
 
         always_two.add_callback(callback1)
-        input_.value 2
-        input_.value 3
-        input_.value 4
-        input_.value 5
+        input_.v.. 2
+        input_.v.. 3
+        input_.v.. 4
+        input_.v.. 5
         assertEqual(observer, [])
 
     # Utility functions.

@@ -102,8 +102,8 @@ c_ Card:
 
     ??
     ___ numberify_face_cards(cls, rank
-        __ rank __ l..(cls.FACE_CARDS.k..
-            r.. cls.FACE_CARDS[rank]
+        __ rank __ l.. ?.FACE_CARDS.k..
+            r..  ?.FACE_CARDS[rank]
         r.. i..(rank)
 
 

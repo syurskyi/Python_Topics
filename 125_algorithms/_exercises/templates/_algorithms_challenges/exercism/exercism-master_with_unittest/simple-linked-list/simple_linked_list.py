@@ -35,7 +35,7 @@ c_ LinkedList:
         current_head head()
         _head current_head.next()
         _size -_ 1
-        r.. current_head.value()
+        r.. current_head.v..()
 
     ___ r..
         r.. LinkedList(self)
@@ -54,7 +54,7 @@ c_ LinkedListIterator:
     ___ -n
         __ _current __ N..
             r.. S..
-        current_value _current.value()
+        current_value _current.v..()
         _current _current.next()
         r.. current_value
 

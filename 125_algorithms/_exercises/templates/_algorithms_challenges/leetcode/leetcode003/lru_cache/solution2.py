@@ -28,7 +28,7 @@ c_ LRUCache(o..
         __ key __ cache:
             node cache[key]
             times.touch(node)
-            r.. node.value
+            r.. node.v..
         r.. -1
 
     ___ s..  key, value
@@ -39,7 +39,7 @@ c_ LRUCache(o..
         """
         __ key __ cache:
             node cache[key]
-            node.value value
+            node.v.. value
             times.touch(node)
         ____
             __ times.size >_ capacity:

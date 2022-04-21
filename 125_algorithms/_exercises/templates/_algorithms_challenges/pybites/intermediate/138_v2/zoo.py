@@ -13,5 +13,5 @@ c_ Animal:
 
     ??
     ___ zoo(cls
-        r.. '\n'.j..(s..(animal) ___ animal __ cls.animals)
+        r.. '\n'.j..(s..(animal) ___ animal __  ?.animals)
 

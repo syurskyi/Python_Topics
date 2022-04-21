@@ -5,19 +5,19 @@ ____ f.. _______ r..
 c_ Palindromes:
     ??
     ___ smallest_palindrome(cls, max_factor, min_factor=0
-        r.. m..(cls.palindromes(max_factor, min_factor), k.._l....
+        r.. m.. ?.palindromes(max_factor, min_factor), k.._l....
                    item: item 0
 
     ??
     ___ largest_palindrome(cls, max_factor, min_factor=0
-        r.. m..(cls.palindromes(max_factor, min_factor), k.._l....
+        r.. m.. ?.palindromes(max_factor, min_factor), k.._l....
                    item: item 0
 
     ??
     ___ palindromes(cls, max_factor, min_factor
-        r.. [(cls.product(candidate), candidate) ___ candidate __
-                cls.candidates(max_factor, min_factor) __
-                cls.is_palindrome(cls.product(candidate]
+        r.. [ ?.product(candidate), candidate) ___ candidate __
+                 ?.candidates(max_factor, min_factor) __
+                 ?.is_palindrome ?.product(candidate]
 
     $
     ___ candidates(max_factor, min_factor

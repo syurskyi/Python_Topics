@@ -30,18 +30,18 @@ c_ TwelveDays:
 
     ??
     ___ verses(cls, start, stop
-        r.. "\n".j..([cls.verse(i) ___ i __ r..(start, stop + 1)]) + "\n"
+        r.. "\n".j..([ ?.verse(i) ___ i __ r..(start, stop + 1)]) + "\n"
 
     ??
     ___ verse(cls, verse_num
-        r.. ", ".j..([_f ___ _f __ [cls.head(verse_num),
-                                        cls.mid(verse_num),
-                                        cls.tail(verse_num)] __ _f])
+        r.. ", ".j..([_f ___ _f __ [ ?.head(verse_num),
+                                         ?.mid(verse_num),
+                                         ?.tail(verse_num)] __ _f])
 
     ??
     ___ head(cls, verse_num
         r.. ("On the %(cardinality)s day of Christmas my true love gave to "
-                "me" % ({"cardinality": cls.CARDINALS[verse_num]}
+                "me" % ({"cardinality":  ?.CARDINALS[verse_num]}
 
     $
     ___ tail(verse_num
@@ -52,7 +52,7 @@ c_ TwelveDays:
     ??
     ___ mid(cls, verse_num
         __ verse_num !_ 1:
-            r.. ", ".j..([cls.PHRASES[i] ___ i __ r..(verse_num, 1, -1)])
+            r.. ", ".j..([ ?.PHRASES[i] ___ i __ r..(verse_num, 1, -1)])
 
 
 ___ verse(verse_num

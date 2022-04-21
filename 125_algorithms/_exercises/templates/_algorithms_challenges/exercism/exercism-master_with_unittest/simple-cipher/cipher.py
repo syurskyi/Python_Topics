@@ -46,8 +46,8 @@ c_ Caesar:
 
     ??
     ___ encode(cls, phrase
-        r.. cls.cipher.encode(phrase)
+        r..  ?.cipher.encode(phrase)
 
     ??
     ___ d.. cls, phrase
-        r.. cls.cipher.d.. phrase)
+        r..  ?.cipher.d.. phrase)

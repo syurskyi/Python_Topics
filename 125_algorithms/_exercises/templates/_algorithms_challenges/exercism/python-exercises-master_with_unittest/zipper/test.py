@@ -32,7 +32,7 @@ c_ ZipperTest(unittest.TestCase
     ___ test_left_and_right_value
         t1, _, _, _ create_trees()
         zipper Zipper.from_tree(t1)
-        assertEqual(zipper.left().right().value(), 3)
+        assertEqual(zipper.left().right().v..(), 3)
 
     ___ test_dead_end
         t1, _, _, _ create_trees()

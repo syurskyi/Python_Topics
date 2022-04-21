@@ -40,7 +40,7 @@ ___ test_account_bad_transaction(socrates
     ... socrates.balance __ 0
     w__ p__.r..(V...) __ exp:
         socrates.add_transaction(3.14)
-    ... 'please use int for amount' __ s..(exp.value)
+    ... 'please use int for amount' __ s..(exp.v..)
     ... socrates.balance __ 0
 
 

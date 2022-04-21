@@ -42,7 +42,7 @@ c_ ComputeCell(Cell
         # Only compute this cell when all inputs have same counters
         __ l..(s..([inp.counter ___ inp __ inputs] > 1:
             r..
-        new_val func([inp.value ___ inp __ inputs])
+        new_val func([inp.v.. ___ inp __ inputs])
         __ new_val !_ _value:
             value new_val
             ___ cb __ callbacks:

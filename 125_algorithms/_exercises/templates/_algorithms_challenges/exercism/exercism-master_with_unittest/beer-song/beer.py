@@ -5,33 +5,33 @@ c_ Beer:
 
     ??
     ___ song(cls, start, stop
-        r.. "\n".j..([cls.verse(verse_num) ___ verse_num
+        r.. "\n".j..([ ?.verse(verse_num) ___ verse_num
                           __ r..(l..(r..(stop, start + 1)))]) + "\n"
 
     ??
     ___ verse(cls, verse_num
-        r.. "\n".j..((cls.prefix(verse_num), cls.suffix(verse_num))) + "\n"
+        r.. "\n".j..(( ?.prefix(verse_num),  ?.suffix(verse_num))) + "\n"
 
     ??
     ___ prefix(cls, verse_num
         r.. ('%(quantity)s %(container)s of beer on the wall, '
                 '%(quantity)s %(container)s of beer.'
-                % cls.vals_for(verse_num.capitalize()
+                %  ?.vals_for(verse_num.capitalize()
 
     ??
     ___ suffix(cls, verse_num
         __ verse_num __ 0:
-            r.. cls.LAST_LINE
+            r..  ?.LAST_LINE
         ____
             r.. ('Take %(cardinality)s down and pass it around, '
                     '%(quantity)s %(container)s of beer on the wall.'
-                    % cls.vals_for(verse_num - 1
+                    %  ?.vals_for(verse_num - 1
 
     ??
     ___ vals_for(cls, num
-        r.. {'quantity': cls.quantity(num),
-                'container': cls.container(num),
-                'cardinality': cls.cardinality(num)}
+        r.. {'quantity':  ?.quantity(num),
+                'container':  ?.container(num),
+                'cardinality':  ?.cardinality(num)}
 
     $
     ___ quantity(num

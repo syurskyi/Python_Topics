@@ -20,7 +20,7 @@ c_ LinkedIterator(o..
     ___ -n
         __ current __ N..
             r.. S..
-        value current.value()
+        value current.v..()
         current current.next()
         r.. value
 
@@ -55,7 +55,7 @@ c_ LinkedList(o..
         __ _head __ N..
             r.. EmptyListException("The list is empty")
         _len -_ 1
-        ret _head.value()
+        ret _head.v..()
         _head _head.next()
         r.. ret
 

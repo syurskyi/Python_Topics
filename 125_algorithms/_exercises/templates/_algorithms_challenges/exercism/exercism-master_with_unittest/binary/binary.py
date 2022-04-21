@@ -3,9 +3,9 @@ c_ Binary:
 
     ??
     ___ parse_binary(cls, inp
-        __ n.. cls.valid(inp
+        __ n..  ?.valid(inp
             r.. V...
-        r.. cls.convert_to_decimal(inp)
+        r..  ?.convert_to_decimal(inp)
 
     ??
     ___ convert_to_decimal(cls, inp
@@ -14,7 +14,7 @@ c_ Binary:
 
     ??
     ___ valid(cls, inp
-        r.. s..(inp) <_ cls.VALID_CHARS
+        r.. s..(inp) <_  ?.VALID_CHARS
 
 
 ___ parse_binary(inp

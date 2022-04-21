@@ -40,7 +40,7 @@ blood_type_text {
 # complete :
 ___ _blood_int(b_type
     __ isi..(b_type, i..
-        __ b_type n.. __ r..(Bloodtype.ZERO_NEG.value, Bloodtype.AB_POS.value + 1
+        __ b_type n.. __ r..(Bloodtype.ZERO_NEG.v.., Bloodtype.AB_POS.v.. + 1
             r.. V... _*Bad blood integer {b_type}')
         r.. b_type
     ____ isi..(b_type, s..
@@ -49,7 +49,7 @@ ___ _blood_int(b_type
         b_type blood_type_text[b_type]
     ____ n.. isi..(b_type, Bloodtype
         r.. T.. _*Invalid blood type type {t..(b_type)}')
-    r.. b_type.value
+    r.. b_type.v..
 
 
 ___ check_bt(donor, recipient

@@ -54,7 +54,7 @@ c_ LRUCache(o..
     __ key n.. __ d:
       r.. -1
     d[key].hit()
-    r.. d[key].value
+    r.. d[key].v..
 
   ___ s..  key, value
     """
@@ -67,7 +67,7 @@ c_ LRUCache(o..
 
     __ key __ d:
       d[key].hit()
-      d[key].value value
+      d[key].v.. value
     ____
       __ l..(d) >_ cap:
         oldNode L...delete(head.next)

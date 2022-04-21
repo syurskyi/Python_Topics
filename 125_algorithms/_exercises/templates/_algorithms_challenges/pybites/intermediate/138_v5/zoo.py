@@ -13,19 +13,19 @@ c_ Animal:
 
     ??
     ___ _next_index(cls
-        __ cls._index __ N..
-            cls._index 10000
-        cls._index += 1
-        r.. cls._index
+        __  ?._index __ N..
+             ?._index 10000
+         ?._index += 1
+        r..  ?._index
 
     ??
     ___ _add_to_zoo(cls, animal
-        __ cls._zoo __ N..
-            cls._zoo    # list
-        cls._zoo.a..(animal)
+        __  ?._zoo __ N..
+             ?._zoo    # list
+         ?._zoo.a..(animal)
 
     ??
     ___ zoo(cls
-        __ cls._zoo __ N..
+        __  ?._zoo __ N..
             r.. ''
-        r.. s..(cls._zoo)
+        r.. s.. ?._zoo)

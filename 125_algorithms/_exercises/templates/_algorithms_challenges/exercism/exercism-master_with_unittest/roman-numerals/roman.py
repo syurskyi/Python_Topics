@@ -18,13 +18,13 @@ c_ Roman:
 
     ??
     ___ numeral(cls, arabic
-        r.. ''.j..([cls.NUMERALS[key]
-                        ___ key __ cls.get_components(arabic)])
+        r.. ''.j..([ ?.NUMERALS[key]
+                        ___ key __  ?.get_components(arabic)])
 
     ??
     ___ get_components(cls, arabic
         components    # list
-        ___ key __ r..(s..(cls.NUMERALS.k.. ))):
+        ___ key __ r..(s.. ?.NUMERALS.k.. ))):
             w.... arabic >_ key:
                 arabic -_ key
                 components.a..(key)

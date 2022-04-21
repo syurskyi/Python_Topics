@@ -50,7 +50,7 @@ c_ Trie:
             node.ended T..
         ____
             nxt w[i + 1]
-            node.children[nxt] cls.insert(node.children[nxt], w, i + 1)
+            node.children[nxt]  ?.insert(node.children[nxt], w, i + 1)
 
         r.. node
 
@@ -65,7 +65,7 @@ c_ Trie:
         __ node.ended:
             r.. w[:i+1]
         ____ i + 1 < l..(w
-            r.. cls.s..(node.children[w[i + 1]], w, i + 1)
+            r..  ?.s..(node.children[w[i + 1]], w, i + 1)
         ____
             r..
 

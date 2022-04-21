@@ -17,49 +17,49 @@ c_ House:
 
     ??
     ___ rhyme(cls
-        r.. "\n\n".j..([cls.verse(i) ___ i __ r..(12)])
+        r.. "\n\n".j..([ ?.verse(i) ___ i __ r..(12)])
 
     ??
     ___ verse(cls, verse_num
-        r.. "\n".j..([_f ___ _f __ cls.parts(verse_num) __ _f])
+        r.. "\n".j..([_f ___ _f __  ?.parts(verse_num) __ _f])
 
     ??
     ___ parts(cls, verse_num
-        r.. [cls.first(verse_num), cls.middle(verse_num),
-                cls.last(verse_num)]
+        r.. [ ?.first(verse_num),  ?.middle(verse_num),
+                 ?.last(verse_num)]
 
     ??
     ___ first(cls, verse_num
         __ verse_num !_ 0:
-            r.. cls.first_partial(verse_num)
-        r.. cls.first_partial(verse_num) + " " + cls.verb(verse_num) + "."
+            r..  ?.first_partial(verse_num)
+        r..  ?.first_partial(verse_num) + " " +  ?.verb(verse_num) + "."
 
     ??
     ___ first_partial(cls, verse_num
-        r.. "This is the " + cls.noun(verse_num)
+        r.. "This is the " +  ?.noun(verse_num)
 
     ??
     ___ middle(cls, verse_num
         __ verse_num >_ 2:
-            r.. "\n".j..([cls.middle_partial(num) ___ num __
+            r.. "\n".j..([ ?.middle_partial(num) ___ num __
                               r..(verse_num - 1, 0, -1)])
 
     ??
     ___ middle_partial(cls, num
-        r.. "that " + cls.verb(num) + " the " + cls.noun(num)
+        r.. "that " +  ?.verb(num) + " the " +  ?.noun(num)
 
     ??
     ___ verb(cls, num
-        r.. cls.LYRICS[num][0]
+        r..  ?.LYRICS[num][0]
 
     ??
     ___ noun(cls, num
-        r.. cls.LYRICS[num][1]
+        r..  ?.LYRICS[num][1]
 
     ??
     ___ last(cls, verse_num
         __ verse_num !_ 0:
-            r.. cls.LAST_LINE
+            r..  ?.LAST_LINE
 
 
 ___ verse(verse_num

@@ -56,11 +56,11 @@ c_ Calculator:
 
     ??
     ___ valid_element(cls, element
-        r.. element __ cls.VALID_TOKENS o. cls.digit(element)
+        r.. element __  ?.VALID_TOKENS o.  ?.digit(element)
 
     ??
     ___ tokenize(cls, inp
-        ___ operator, token __ l..(cls.OPERATORS.i..
+        ___ operator, token __ l.. ?.OPERATORS.i..
             inp inp.r..(operator, token)
         r.. inp
 
@@ -70,7 +70,7 @@ c_ Calculator:
 
     ??
     ___ operator(cls, element
-        r.. element __ l..(cls.OPERATORS.values
+        r.. element __ l.. ?.OPERATORS.values
 
 
 ___ calculate(inp

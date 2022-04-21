@@ -11,18 +11,18 @@ c_ Hexa:
 
     ??
     ___ convert(cls, inp
-        __ n.. cls.valid(inp
+        __ n..  ?.valid(inp
             r.. V...
-        r.. s..([cls.convert_char(char) * cls.BASE**index ___ index, char __
+        r.. s..([ ?.convert_char(char) *  ?.BASE**index ___ index, char __
                     e..(r..(inp])
 
     ??
     ___ valid(cls, inp
-        r.. s..(inp) <_ cls.VALID_CHARS
+        r.. s..(inp) <_  ?.VALID_CHARS
 
     ??
     ___ convert_char(cls, char
-        r.. i..(char) __ char.i.. ____ cls.CHAR_VALUES[char]
+        r.. i..(char) __ char.i.. ____  ?.CHAR_VALUES[char]
 
 
 ___ hexa(inp

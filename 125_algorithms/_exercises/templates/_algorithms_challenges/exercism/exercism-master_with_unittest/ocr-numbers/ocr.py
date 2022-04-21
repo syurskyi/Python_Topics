@@ -18,37 +18,37 @@ c_ Ocr:
 
     ??
     ___ numbers(cls, inp
-        r.. "".j.. m..(cls.number, l..(
-            z..(*l.. m..(cls.split_every_three, inp))))))
+        r.. "".j.. m.. ?.number, l..(
+            z..(*l.. m.. ?.split_every_three, inp))))))
 
     ??
     ___ grids(cls, inp
-        r.. l.. m..("".j.., l..(z..(*l.. m..(cls.grid, inp))))))
+        r.. l.. m..("".j.., l..(z..(*l.. m.. ?.grid, inp))))))
 
     ??
     ___ number(cls, inp
-        __ n.. cls.valid_num(inp
+        __ n..  ?.valid_num(inp
             r.. V...
-        r.. cls.NUMS.g.. "".j..(inp), cls.UNRECOGNIZED_NUM)
+        r..  ?.NUMS.g.. "".j..(inp),  ?.UNRECOGNIZED_NUM)
 
     ??
     ___ grid(cls, inp
-        __ n.. cls.valid_grid(inp
+        __ n..  ?.valid_grid(inp
             r.. V...
-        r.. cls.GRID_NUMS.g.. inp)
+        r..  ?.GRID_NUMS.g.. inp)
 
     ??
     ___ valid_num(cls, inp
-        r.. (a..(l..(row) __ cls.NUM_COLS ___ row __ inp) a..
-                l..(inp) __ cls.NUM_ROWS)
+        r.. (a..(l..(row) __  ?.NUM_COLS ___ row __ inp) a..
+                l..(inp) __  ?.NUM_ROWS)
 
     ??
     ___ valid_grid(cls, inp
-        r.. a..(char __ l..(cls.GRID_NUMS.keys ___ char __ inp)
+        r.. a..(char __ l.. ?.GRID_NUMS.keys ___ char __ inp)
 
     ??
     ___ split_every_three(cls, inp
-        r.. cls.s..(inp, 3)
+        r..  ?.s..(inp, 3)
 
     $
     ___ s..(inp, size

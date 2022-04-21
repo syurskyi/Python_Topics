@@ -53,4 +53,4 @@ ___ calculate(list_of_texts
         queue_of_texts.put(N..)
     ___ t __ threads:
         t.j..()
-    r.. letter_to_frequency.value
+    r.. letter_to_frequency.v..

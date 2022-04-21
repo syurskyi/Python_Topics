@@ -46,4 +46,4 @@ ___ test_get_aws_service_range(json_file
     ... get_aws_service_range('158.152.1.65', services) __ []
     w__ p__.r..(V...) __ exc:
         get_aws_service_range('0.0.0.256', services)
-    ... 'Address must be a valid IPv4 address' __ s..(exc.value)
+    ... 'Address must be a valid IPv4 address' __ s..(exc.v..)

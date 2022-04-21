@@ -21,17 +21,17 @@ c_ AllOne(o..
         __ key __ keyBucketMap:
             bucket keyBucketMap[key]
             nextBucket bucket.next
-            __ nextBucket a.. nextBucket.value __ bucket.value+1:
+            __ nextBucket a.. nextBucket.v.. __ bucket.v..+1:
                 nextBucket.keySet.add(key)
                 keyBucketMap[key] nextBucket
             ____ n.. nextBucket:
-                nextBucket Bucket(bucket.value+1)
+                nextBucket Bucket(bucket.v..+1)
                 nextBucket.keySet.add(key)
                 tail nextBucket
                 bucket.next nextBucket
                 keyBucketMap[key] nextBucket
             ____
-                newBucket Bucket(bucket.value+1)
+                newBucket Bucket(bucket.v..+1)
                 newBucket.keySet.add(key)
                 nextBucket.prev newBucket
                 newBucket.next nextBucket
@@ -51,7 +51,7 @@ c_ AllOne(o..
                     head nextBucket
         ____
             __ head:
-                __ head.value __ 1:
+                __ head.v.. __ 1:
                     head.keySet.add(key)
                 ____
                     bucket Bucket(1)
@@ -71,11 +71,11 @@ c_ AllOne(o..
             bucket keyBucketMap[key]
             prevBucket bucket.prev
             __ prevBucket:
-                __ prevBucket.value+1 __ bucket.value:
+                __ prevBucket.v..+1 __ bucket.v..:
                     prevBucket.keySet.add(key)
                     keyBucketMap[key] prevBucket
                 ____
-                    newBucket Bucket(bucket.value-1)
+                    newBucket Bucket(bucket.v..-1)
                     newBucket.keySet.add(key)
                     newBucket.prev prevBucket
                     newBucket.next bucket
@@ -83,10 +83,10 @@ c_ AllOne(o..
                     bucket.prev newBucket
                     keyBucketMap[key] newBucket
             ____
-                __ bucket.value __ 1:
+                __ bucket.v.. __ 1:
                     del keyBucketMap[key]
                 ____
-                    newBucket Bucket(bucket.value-1)
+                    newBucket Bucket(bucket.v..-1)
                     newBucket.keySet.add(key)
                     newBucket.next bucket
                     bucket.prev newBucket

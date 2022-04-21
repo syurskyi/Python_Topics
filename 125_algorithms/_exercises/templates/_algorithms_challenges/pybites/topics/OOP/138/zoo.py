@@ -14,7 +14,7 @@ c_ Animal:
     ??
     ___ zoo(cls
         #print(cls.animals)
-        r.. '\n'.j..(animal ___ animal __ cls.animals)
+        r.. '\n'.j..(animal ___ animal __  ?.animals)
 
 """
 dog = Animal('dog')
