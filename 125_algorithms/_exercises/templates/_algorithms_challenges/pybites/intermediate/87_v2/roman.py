@@ -1,35 +1,27 @@
-___ romanize(decimal_number
-    """Takes a decimal number int and converts its Roman Numeral str"""
-
-
-    __ t..(decimal_number) !_ i.. o. n.. 0 < decimal_number < 4000:
-        r.. V...("Invalid number")
-
-
-    number_to_numeral {1000: 'M',900: 'CM',500: 'D',400: 'CD',100: 'C',90:'XC',50: 'L',40: 'XL',10: 'X',9: 'IX',5: 'V',4: 'IV',1: 'I'}
-    
-
-    result    # list
-
-    ___ base_value,numeral __ number_to_numeral.i..
-        
-        __ base_value > decimal_number:
-            _____
-        value decimal_number // base_value
-        result.a..(value * numeral)
-
-        decimal_number %= base_value
-        __ decimal_number __ 0:
-            _____
-
-
-    r.. ''.j..(result)
-    
-
-
-
-
-
-
-
+# ___ romanize decimal_number
+#     """Takes a decimal number int and converts its Roman Numeral str"""
+#
+#
+#     __ t.. ? !_ i.. o. n.. 0 < ? < 4000
+#         r.. V... "Invalid number"
+#
+#
+#     number_to_numeral {1000: 'M',900: 'CM',500: 'D',400: 'CD',100: 'C',90:'XC',50: 'L',40: 'XL',10: 'X',9: 'IX',5: 'V',4: 'IV',1: 'I'}
+#
+#
+#     result    # list
+#
+#     ___ base_value,numeral __ ?.i..
+#
+#         __ b.. > d..
+#             _____
+#         value d.. // b..
+#         ?.a.. ? * n..
+#
+#         decimal_number %= b..
+#         __ ? __ 0
+#             _____
+#
+#
+#     r.. ''.j.. ?
 
