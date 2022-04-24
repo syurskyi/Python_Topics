@@ -4,7 +4,7 @@ ____ decimal _______ Decimal
 c_ IntList(l..
     ___ - , numbers
         numbers _validate ?)
-        super().__init__ ?)
+        super(). - ?)
 
     ___ _validate  numbers
         __ isi.. ?, (i.., f__, Decimal:

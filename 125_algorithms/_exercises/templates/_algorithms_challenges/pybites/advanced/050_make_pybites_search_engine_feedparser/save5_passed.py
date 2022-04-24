@@ -15,7 +15,7 @@ c_ AttrDict(d..
        PyBites uses this class for parsing"""
 
     ___ - , $  $$
-        super(AttrDict, self).__init__ $ $$
+        super(AttrDict, self). - $ $$
         __dict__ self
 
 

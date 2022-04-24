@@ -21,13 +21,13 @@ c_ Cell(o..
 
 c_ InputCell(Cell
     ___ - , initial_value
-        super(InputCell, self).__init__()
+        super(InputCell, self). -()
         _value initial_value
 
 
 c_ ComputeCell(Cell
     ___ - , inputs, compute_function
-        super(ComputeCell, self).__init__()
+        super(ComputeCell, self). -()
         inputs inputs
         func compute_function
         callbacks s..()

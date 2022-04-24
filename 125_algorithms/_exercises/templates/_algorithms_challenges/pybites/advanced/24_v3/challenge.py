@@ -18,7 +18,7 @@ c_ Challenge(ABC
 
 c_ BlogChallenge(Challenge
     ___ - , number, title, merged_prs
-        super().__init__(number, title)
+        super(). -(number, title)
         merged_prs merged_prs
 
     ___ verify  pr
@@ -31,7 +31,7 @@ c_ BlogChallenge(Challenge
 
 c_ BiteChallenge(Challenge
     ___ - , number, title, result
-        super().__init__(number, title)
+        super(). -(number, title)
         result result
 
     ___ verify  result

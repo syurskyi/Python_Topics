@@ -13,7 +13,7 @@ c_ JsObject(d..
 
 
     ___ - , $$
-        super().__init__(kwargs)
+        super(). -(kwargs)
     
 
     ___ __getattr__ key

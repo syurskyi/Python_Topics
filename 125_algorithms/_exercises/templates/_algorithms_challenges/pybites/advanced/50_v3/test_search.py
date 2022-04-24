@@ -11,7 +11,7 @@ c_ AttrDict(d..
     """feedparser lets you access dict keys as attributes, hence a bit of
        mocking, got this from https://stackoverflow.com/a/14620633"""
     ___ - , $  $$
-        super(AttrDict, self).__init__ $ $$
+        super(AttrDict, self). - $ $$
         __dict__ self
 
 
