@@ -1,7 +1,7 @@
 ____ t___ _______ L..
 
 
-___ common_words(sentence1: L..[s..], sentence2: L..s.. __ L..[s..]:
+___ common_words(sentence1: L..[s..], sentence2: L..s.. __ L.. s..
     """
     Input:  Two sentences - each is a  list of words in case insensitive ways.
     Output: those common words appearing in both sentences. Capital and lowercase 

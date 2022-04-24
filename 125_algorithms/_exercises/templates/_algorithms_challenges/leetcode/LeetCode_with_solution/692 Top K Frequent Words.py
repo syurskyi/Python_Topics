@@ -40,7 +40,7 @@ c_ Word:
 
 
 c_ Solution:
-    ___ topKFrequent  words: L..[s..], k: i..) __ L..[s..]:
+    ___ topKFrequent  words: L..[s..], k: i..) __ L.. s..
         """
         quick select log n
         heap log k

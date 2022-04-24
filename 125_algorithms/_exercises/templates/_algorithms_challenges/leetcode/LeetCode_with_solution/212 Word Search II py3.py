@@ -32,7 +32,7 @@ c_ TrieNode:
 
 
 c_ Solution:
-    ___ findWords  board: L..[L..[s..]], words: L..s.. __ L..[s..]:
+    ___ findWords  board: L..[L..[s..]], words: L..s.. __ L.. s..
         root construct(words)
         m, n l..(board), l..(board 0
         visited [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]

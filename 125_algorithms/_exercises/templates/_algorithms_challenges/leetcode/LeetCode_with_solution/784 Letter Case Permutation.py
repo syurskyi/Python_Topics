@@ -25,7 +25,7 @@ c_ Solution:
     ___ -
         ret    # list
 
-    ___ letterCasePermutation  S: s..) __ L..[s..]:
+    ___ letterCasePermutation  S: s..) __ L.. s..
         """
         dfs
         """

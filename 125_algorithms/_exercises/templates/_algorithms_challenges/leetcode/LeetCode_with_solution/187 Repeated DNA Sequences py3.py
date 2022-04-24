@@ -17,7 +17,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findRepeatedDnaSequences  s: s..) __ L..[s..]:
+    ___ findRepeatedDnaSequences  s: s..) __ L.. s..
         ret s..()
         seen s..()
         ___ i __ r..(l..(s) - 10 + 1

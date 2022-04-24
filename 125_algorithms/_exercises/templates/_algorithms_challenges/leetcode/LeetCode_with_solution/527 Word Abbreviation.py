@@ -8,7 +8,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ wordsAbbreviation  words: L..s.. __ L..[s..]:
+    ___ wordsAbbreviation  words: L..s.. __ L.. s..
         """
         Sort the word, check prefix and last word
 

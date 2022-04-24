@@ -34,7 +34,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findAndReplacePattern  words: L..[s..], pattern: s..) __ L..[s..]:
+    ___ findAndReplacePattern  words: L..[s..], pattern: s..) __ L.. s..
         """
         mapping
         """

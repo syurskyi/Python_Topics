@@ -66,7 +66,7 @@ weights [
 
 
 c_ Solution:
-    ___ ipToCIDR  ip: s.., n: i..) __ L..[s..]:
+    ___ ipToCIDR  ip: s.., n: i..) __ L.. s..
         """
         bit manipulation
 

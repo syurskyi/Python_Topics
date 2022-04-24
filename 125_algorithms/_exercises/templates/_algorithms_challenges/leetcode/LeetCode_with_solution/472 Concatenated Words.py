@@ -30,7 +30,7 @@ c_ Solution:
         TrieNode l....: d..(TrieNode)  # not defaultdict(lambda: TrieNode)
         root TrieNode()  # root of tire
 
-    ___ findAllConcatenatedWordsInADict  words: L..s.. __ L..[s..]:
+    ___ findAllConcatenatedWordsInADict  words: L..s.. __ L.. s..
         """
         Trie + DFS
         """
@@ -65,7 +65,7 @@ c_ Solution:
 
 
 c_ SolutionTLE:
-    ___ findAllConcatenatedWordsInADict  words: L..s.. __ L..[s..]:
+    ___ findAllConcatenatedWordsInADict  words: L..s.. __ L.. s..
         """
         Trie check cannot be greedy: cat sdog vs cats dog
 
