@@ -1,6 +1,6 @@
 _______ unittest
 
-____ accumulate _______ accumulate
+____ accumulate _______ a...
 
 
 c_ AccumulateTest(unittest.TestCase
