@@ -65,7 +65,7 @@ c_ Corpora:
         r.. text
 
     $
-    ___ metrics(self) __ L..[Tuple[s.., i..]]:
+    ___ metrics(self) __ L..[T.. s.., i..]]:
         """Generates word count metrics.
 
         * Using the cleaned up corpus, count up how many times each word is used

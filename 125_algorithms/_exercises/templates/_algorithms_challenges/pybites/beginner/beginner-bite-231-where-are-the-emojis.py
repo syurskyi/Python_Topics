@@ -24,6 +24,6 @@ ____ t___ _______ L..
 IS_EMOJI  __.c.. _ [^\w\s,]')
 
 
-___ get_emoji_indices(text: s..) __ L.. i..
+___ get_emoji_indices text s.. __ L.. i..
     """Given a text return indices of emoji characters"""
     p..

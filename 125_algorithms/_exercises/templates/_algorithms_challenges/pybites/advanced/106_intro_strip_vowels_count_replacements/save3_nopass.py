@@ -1,4 +1,4 @@
-____ t___ _______ Tuple
+____ t___ _______ T..
 
 text """
 The Zen of Python, by Tim Peters
@@ -26,7 +26,7 @@ Namespaces are one honking great idea -- let's do more of those!
 vowels 'aeiou'
 
 
-___ strip_vowels(text: s..) __ Tuple[s.., i..]:
+___ strip_vowels text s.. __ T.. s.., i..]:
     """Replace all vowels in the input text string by a star
        character (*).
        Return a tuple of (replaced_text, number_of_vowels_found)

@@ -4,7 +4,7 @@ ____ d__ _______ date, t.., tzinfo
 ____ dateutil.parser _______ p..
 ____ p.. _______ P..
 _______ r__
-____ t___ _______ Tuple, O.., L..
+____ t___ _______ T.., O.., L..
 _______ __
 
 DATA_FILE_NAME "test1.json"
@@ -18,7 +18,7 @@ UTC gettz("UTC")
 
 ___ longest_streak(
     data_file: P.. DATA_PATH, my_tz: O..[tzinfo] MY_TZ
-) __ O..[Tuple[date, date]]:
+) __ O..[T.. date, date]]:
     """Retrieve datetime strings of passed commits and calculate the longest
     streak from the user's data
 

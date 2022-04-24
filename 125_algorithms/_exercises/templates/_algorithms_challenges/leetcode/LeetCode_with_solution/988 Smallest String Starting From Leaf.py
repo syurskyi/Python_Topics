@@ -38,13 +38,13 @@ c_ TreeNode:
         right N..
 
 
-____ t___ _______ Tuple
+____ t___ _______ T..
 ____ c.. _______ d..
 
 
 c_ Solution:
     ___ -
-        mn: Tuple[i..] N..
+        mn: T.. i..] N..
 
     ___ smallestFromLeaf  root: TreeNode) __ s..
         """

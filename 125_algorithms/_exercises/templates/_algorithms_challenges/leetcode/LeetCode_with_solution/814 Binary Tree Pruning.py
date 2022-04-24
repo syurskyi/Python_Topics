@@ -45,7 +45,7 @@ c_ TreeNode:
         right N..
 
 
-____ t___ _______ Tuple
+____ t___ _______ T..
 
 
 c_ Solution:
@@ -53,7 +53,7 @@ c_ Solution:
         root, _ prune(root)
         r.. root
 
-    ___ prune  node) __ Tuple[TreeNode, b..]:
+    ___ prune  node) __ T.. TreeNode, b..]:
         __ n.. node:
             r.. N.., F..
 
