@@ -18,7 +18,7 @@ ____ url_shortener _______ decode, encode, redirect, shorten_url
         (5120, "1kA"),
     ],
 )
-___ test_encode(arg, e..
+___ test_encode arg e..
     ... encode(arg) __ e..
 
 
@@ -35,7 +35,7 @@ ___ test_encode(arg, e..
         ("jnRFH", 286438245),
     ],
 )
-___ test_decode(arg, e..
+___ test_decode arg e..
     ... d.. arg) __ e..
 
 

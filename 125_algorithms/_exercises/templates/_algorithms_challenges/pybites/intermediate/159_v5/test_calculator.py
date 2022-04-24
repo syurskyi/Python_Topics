@@ -8,7 +8,7 @@ ____ calculator _______ simple_calculator
     ('5 + 11', 16),
     ('12 + 18', 30),
 ])
-___ test_sum(arg, e..
+___ test_sum arg e..
     ... simple_calculator(arg) __ e..
 
 
@@ -17,7 +17,7 @@ ___ test_sum(arg, e..
     ('16 - 11', 5),
     ('12 - 18', -6),
 ])
-___ test_subtract(arg, e..
+___ test_subtract arg e..
     ... simple_calculator(arg) __ e..
 
 
@@ -26,7 +26,7 @@ ___ test_subtract(arg, e..
     ('-5 * -11', 55),
     ('3 * -6', -18),
 ])
-___ test_multiply(arg, e..
+___ test_multiply arg e..
     ... simple_calculator(arg) __ e..
 
 
@@ -35,7 +35,7 @@ ___ test_multiply(arg, e..
     ('1 / 5', 0.2),
     ('-2 / 175', -0.01),
 ])
-___ test_true_division(arg, e..
+___ test_true_division arg e..
     ... r..(simple_calculator(arg), 2) __ e..
 
 

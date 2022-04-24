@@ -30,5 +30,5 @@ ____ password _______ password_complexity
     ('@@@@@@@@@@', 2),
     ('@$@$@$@$@$', 3),
 ])
-___ test_password_complexity(arg, e..
+___ test_password_complexity arg e..
     ... password_complexity(arg) __ e..

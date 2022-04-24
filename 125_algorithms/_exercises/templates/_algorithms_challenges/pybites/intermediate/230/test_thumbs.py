@@ -30,7 +30,7 @@ ___ thumbs
     (9, "👍 (9x)"),
     (10, "👍 (10x)"),
 ])
-___ test_operator_overloading_works_both_ways(arg, e.., thumbs
+___ test_operator_overloading_works_both_ways arg e.., thumbs
     ... thumbs * arg __ arg * thumbs __ e..
 
 

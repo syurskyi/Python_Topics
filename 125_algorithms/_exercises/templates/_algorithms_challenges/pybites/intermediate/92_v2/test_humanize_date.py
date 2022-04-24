@@ -29,7 +29,7 @@ ___ n_days_ago_str(days
     (NOW - t..(d.._100), n_days_ago_str(100,
     (NOW - t..(d.._365), n_days_ago_str(365,
 ])
-___ test_pretty_date(arg, e..
+___ test_pretty_date arg e..
     ... pretty_date(arg) __ e..
 
 

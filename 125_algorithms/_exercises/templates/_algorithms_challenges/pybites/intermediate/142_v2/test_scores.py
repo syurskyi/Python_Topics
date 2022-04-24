@@ -10,7 +10,7 @@ ____ scores _______ Player, calculate_score, get_winner
     ([4, 5, 1, 2], 9),
     ([6, 6, 5, 5], 22),
 ])
-___ test_calculate_score(arg, e..
+___ test_calculate_score arg e..
     ... calculate_score(arg) __ e..
 
 

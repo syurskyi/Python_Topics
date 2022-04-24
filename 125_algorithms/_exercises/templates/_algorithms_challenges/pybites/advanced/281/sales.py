@@ -11,7 +11,7 @@ STATS: L..[s..] ["sum", "mean", "max"]
 TMP: P.. P..(__.g..("TMP", "/tmp" / "MonthlySales.csv"
 
 
-___ get_data(url: s..) __ Dict[s.., s..]:
+___ get_data(url: s..) __ D.. s.. s..
     """Get data from Github
 
     Args:

@@ -13,7 +13,7 @@ PICKLE_INFILE TMP / 'input.pkl'
 PICKLE_OUTFILE TMP / 'output.pkl'
 
 
-c_ MovieRented(N..
+c_ ? N..
     title: s..
     price: i..
     date: date

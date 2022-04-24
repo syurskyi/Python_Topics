@@ -18,13 +18,13 @@ c_ Bite(N..
 ___ test_deserialize_movie_rented_data
     download_pickle_file()
     e.. [
-        MovieRented('Mad Max Fury Road', 4, date(2020, 12, 1,
-        MovieRented('Mad Max Fury Road', 4, date(2020, 12, 17,
-        MovieRented('Die Hard', 4, date(2020, 12, 3,
-        MovieRented('Tenet', 20, date(2020, 12, 1,
-        MovieRented('Breach', 7, date(2020, 11, 17,
-        MovieRented('Spider-Man', 12, date(2020, 12, 28,
-        MovieRented('Sonic', 10, date(2020, 11, 4
+        ? 'Mad Max Fury Road', 4, date(2020, 12, 1,
+        ? 'Mad Max Fury Road', 4, date(2020, 12, 17,
+        ? 'Die Hard', 4, date(2020, 12, 3,
+        ? 'Tenet', 20, date(2020, 12, 1,
+        ? 'Breach', 7, date(2020, 11, 17,
+        ? 'Spider-Man', 12, date(2020, 12, 28,
+        ? 'Sonic', 10, date(2020, 11, 4
     ]
     a.. deserialize()
     ... a.. __ e..
