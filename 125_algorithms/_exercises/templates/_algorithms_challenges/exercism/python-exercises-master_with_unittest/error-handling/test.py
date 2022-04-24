@@ -18,7 +18,7 @@ c_ FileLike(o..
         is_open F..
         was_open T..
 
-    ___ __enter__
+    ___ -e
         o.. )
         r.. _
 

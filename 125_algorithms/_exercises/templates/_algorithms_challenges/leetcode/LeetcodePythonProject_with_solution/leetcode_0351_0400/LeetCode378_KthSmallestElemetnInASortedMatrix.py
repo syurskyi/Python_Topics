@@ -15,7 +15,7 @@ c_ Solution(o..
                 upper mid
         r.. upper
     
-    ___ c.. self, matrix, target
+    ___ c..  - matrix, target
         m, n l..(matrix), l..(matrix 0
         i, j m-1, 0
         count 0

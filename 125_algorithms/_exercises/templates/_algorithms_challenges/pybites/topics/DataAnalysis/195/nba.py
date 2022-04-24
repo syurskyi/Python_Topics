@@ -2,7 +2,7 @@ ____ c.. _______ n..
 _______ c__
 _______ __
 ____ p.. _______ P..
-_______ sqlite3
+_______ _3
 _______ r__
 _______ s__
 
@@ -41,7 +41,7 @@ ___ import_data
                               avg_min=row 'Minutes.per.Game' ,
                               avg_points=row 'Points.per.Game'
 
-    cur.execute('''CREATE TABLE IF NOT EXISTS players
+    ?.e.. '''CREATE TABLE IF NOT EXISTS players
                   (name, year, first_year, team, college, active,
                   games, avg_min, avg_points)''')
     cur.executemany('INSERT INTO players VALUES (?,?,?,?,?,?,?,?,?)', players)
@@ -56,21 +56,21 @@ import_data()
 ___ player_with_max_points_per_game
     """The player with highest average points per game (don't forget to CAST to
        numeric in your SQL query)"""
-    cur.execute('select name, max(cast(avg_points as float)) from players limit 1')
+    ?.e.. 'select name, max(cast(avg_points as float)) from players limit 1')
     player cur.fetchone()
     r.. player[0]
 
 
 ___ number_of_players_from_duke
     """Return the number of players with college == Duke University"""
-    cur.execute('select count(name) from players where college = "Duke University"')
+    ?.e.. 'select count(name) from players where college = "Duke University"')
     player cur.fetchone()
     r.. player[0]
 
 ___ avg_years_active_players_stanford
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
-    cur.execute('select AVG(cast(active as int)) from players where college = "Stanford University"')
+    ?.e.. 'select AVG(cast(active as int)) from players where college = "Stanford University"')
     player cur.fetchone()
     r.. player[0]
 
@@ -79,7 +79,7 @@ ___ year_with_most_new_players
     """Return the year with the most new players.
        Hint: you can use GROUP BY on the year column.
     """
-    cur.execute('SELECT year, count(year) FROM players GROUP BY year ORDER BY count(year) DESC')
+    ?.e.. 'SELECT year, count(year) FROM players GROUP BY year ORDER BY count(year) DESC')
     player cur.fetchone()
     r.. player[0]
 

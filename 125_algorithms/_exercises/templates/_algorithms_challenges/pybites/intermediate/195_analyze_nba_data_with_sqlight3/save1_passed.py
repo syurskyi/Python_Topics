@@ -2,7 +2,7 @@ ____ c.. _______ n..
 _______ c__
 _______ __
 ____ p.. _______ P..
-_______ sqlite3
+_______ _3
 _______ r__
 _______ s__
 
@@ -41,7 +41,7 @@ ___ import_data
                               avg_min=row 'Minutes.per.Game' ,
                               avg_points=row 'Points.per.Game'
 
-    cur.execute('''CREATE TABLE IF NOT EXISTS players
+    ?.e.. '''CREATE TABLE IF NOT EXISTS players
                   (name, year, first_year, team, college, active,
                   games, avg_min, avg_points)''')
     cur.executemany('INSERT INTO players VALUES (?,?,?,?,?,?,?,?,?)', players)
@@ -54,14 +54,14 @@ import_data()
 ___ player_with_max_points_per_game
     """The player with highest average points per game (don't forget to CAST to
        numeric in your SQL query)"""
-    r.. l..(cur.execute('SELECT name '
+    r.. l..(?.e.. 'SELECT name '
                             'FROM players '
                             'ORDER BY CAST(avg_points as FLOAT) DESC' 0 0 
 
 
 ___ number_of_players_from_duke
     """Return the number of players with college == Duke University"""
-    r.. l..(l..(cur.execute('SELECT name '
+    r.. l..(l..(?.e.. 'SELECT name '
                                 'FROM players '
                                 'WHERE college = "Duke University"')))
 
@@ -69,14 +69,14 @@ ___ number_of_players_from_duke
 ___ avg_years_active_players_stanford
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
-    r.. l..(cur.execute('SELECT ROUND(AVG(active), 2) '
+    r.. l..(?.e.. 'SELECT ROUND(AVG(active), 2) '
                             'FROM players '
                             'WHERE college = "Stanford University"' 0 0 
 
 
 ___ year_with_most_drafts
     """Return the year with the most drafts, in SQL you can use GROUP BY"""
-    r.. l..(cur.execute('SELECT year, COUNT(*) as draft_count '
+    r.. l..(?.e.. 'SELECT year, COUNT(*) as draft_count '
                             'FROM players '
                             'GROUP BY year '
                             'ORDER BY draft_count DESC' 0 0 

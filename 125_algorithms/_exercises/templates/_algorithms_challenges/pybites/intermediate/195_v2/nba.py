@@ -3,7 +3,7 @@ _______ c__
 _______ __
 ____ p.. _______ P..
 _______ p.... __ pd
-_______ sqlite3
+_______ _3
 _______ r__
 _______ s__
 
@@ -42,7 +42,7 @@ ___ import_data
                               avg_min=row 'Minutes.per.Game' ,
                               avg_points=row 'Points.per.Game'
 
-    cur.execute('''CREATE TABLE IF NOT EXISTS players
+    ?.e.. '''CREATE TABLE IF NOT EXISTS players
                   (name, year, first_year, team, college, active,
                   games, avg_min, avg_points)''')
     cur.executemany('INSERT INTO players VALUES (?,?,?,?,?,?,?,?,?)', players)

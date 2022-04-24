@@ -47,7 +47,7 @@ c_ Solution:
         c.. root, p, q)
         r.. ans
 
-    ___ c.. self, node, p, q
+    ___ c..  - node, p, q
         __ n.. node:
             r.. 0
 

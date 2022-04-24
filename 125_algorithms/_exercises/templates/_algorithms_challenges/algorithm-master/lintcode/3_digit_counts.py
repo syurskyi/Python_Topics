@@ -10,7 +10,7 @@ c_ Solution:
             ans += c.. k, i)
         r.. ans
 
-    ___ c.. self, k, a
+    ___ c..  - k, a
         __ k __ a __ 0:
             r.. 1
 

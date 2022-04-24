@@ -7,7 +7,7 @@ The function should return the number of arithmetic slices in the array A.
 """
 
 c_ Solution:
-    ___ c.. self, l
+    ___ c..  - l
         r.. (l-1) * l // 2
 
     ___ numberOfArithmeticSlices  A

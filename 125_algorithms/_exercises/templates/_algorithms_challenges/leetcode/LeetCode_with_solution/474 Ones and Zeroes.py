@@ -69,7 +69,7 @@ c_ Solution:
         )
         r.. ret
 
-    ___ c.. self, s
+    ___ c..  - s
         z, o 0, 0
         ___ e __ s:
             __ e __ "0":

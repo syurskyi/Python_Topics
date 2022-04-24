@@ -7,7 +7,7 @@ ____ nba _______ (cur,
 
 ___ test_total_row_count_after_import
     sql '''SELECT COUNT(*) FROM players'''
-    cur.execute(sql)
+    ?.e.. sql)
     ret cur.fetchall()
     ... ret 0 0  __ 3961
 

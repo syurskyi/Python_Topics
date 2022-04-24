@@ -2,7 +2,7 @@ ____ c.. _______ n..
 _______ c__
 _______ __
 ____ p.. _______ P..
-_______ sqlite3
+_______ _3
 _______ r__
 _______ s__
 
@@ -41,7 +41,7 @@ ___ import_data
                               avg_min=row 'Minutes.per.Game' ,
                               avg_points=row 'Points.per.Game'
 
-    cur.execute('''CREATE TABLE IF NOT EXISTS players
+    ?.e.. '''CREATE TABLE IF NOT EXISTS players
                   (name, year, first_year, team, college, active,
                   games, avg_min, avg_points)''')
     cur.executemany('INSERT INTO players VALUES (?,?,?,?,?,?,?,?,?)', players)
@@ -56,7 +56,7 @@ import_data()
 ___ player_with_max_points_per_game
     """The player with highest average points per game (don't forget to CAST to
        numeric in your SQL query)"""
-    cursor cur.execute(
+    cursor ?.e..
         """
         SELECT 
             name,
@@ -68,7 +68,7 @@ ___ player_with_max_points_per_game
 
 ___ number_of_players_from_duke
     """Return the number of players with college == Duke University"""
-    cursor cur.execute(
+    cursor ?.e..
         """
         SELECT
             COUNT(*) AS record_count
@@ -82,7 +82,7 @@ ___ number_of_players_from_duke
 ___ avg_years_active_players_stanford
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
-    cursor cur.execute(
+    cursor ?.e..
         """
         SELECT
             AVG(active) AS avg_years
@@ -97,7 +97,7 @@ ___ year_with_most_new_players
     """Return the year with the most new players.
        Hint: you can use GROUP BY on the year column.
     """
-    cursor cur.execute(
+    cursor ?.e..
         """
         WITH years_staging AS (
             SELECT

@@ -13,7 +13,7 @@ c_ Account:
     ___ __sub__  amount
         _transactions.a..(-amount)
 
-    ___ __enter__
+    ___ -e
         r.. _
 
     ___ __exit__  *_

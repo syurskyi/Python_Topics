@@ -21,7 +21,7 @@ c_ Solution(o..
                 low mid+1
         r.. high
     
-    ___ c.. self, val, m, n
+    ___ c..  - val, m, n
         count 0
         ___ i __ r..(1, m+1
             tmp  m..(val//i, n)
