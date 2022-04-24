@@ -32,39 +32,39 @@ states =  'Oklahoma', 'Kansas', 'North Carolina', 'Georgia', 'Oregon',
 NOT_FOUND 'N/A'
 
 
-___ get_every_nth_state(states=states, n=10
+___ get_every_nth_state states_? n_10
     """Return a list with every nth item (default argument n=10, so every
        10th item) of the states list above (remember: lists keep order)"""
-    r.. states[n-1::n]
+    r.. ? ?-1||?
 
 
-___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev
+___ get_state_abbrev state_name us_state_abbrev_?
     """Look up a state abbreviation by querying the us_state_abbrev
        dict by full state name, for instance 'Alabama' returns 'AL',
        'Illinois' returns 'IL'.
        If the state is not in the dict, return 'N/A' which we stored
        in the NOT_FOUND constant (takeaway: dicts are great for lookups)"""
-    __ state_name n.. __ us_state_abbrev.k..:
-        r.. NOT_FOUND
+    __ state_name n.. __ ?.k..
+        r.. N..
     ____
-        r.. us_state_abbrev[state_name]
+        r.. ? ?
 
 
-___ get_longest_state(data
+___ get_longest_state data
     """Receives data, which can be the us_state_abbrev dict or the states
        list (see above). It returns the longest state measured by the length
        of the string"""
-    r.. s.. ? key=l.., r.._T..[0]
+    r.. s.. ? key_l.., r.._T.. 0
 
 
-___ combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
-                                          states=states
+___ combine_state_names_and_abbreviations us_state_abbrev_?
+                                          states_?
     """Get the first 10 state abbreviations ('AL', 'AK', 'AZ', ...) from
        the us_state_abbrev dict, and the last 10 states from the states
        list (see above) and combine them into a new list. The resulting list
        has both sorted, so:
        ['AK', 'AL', 'AZ', ..., 'South Dakota', 'Tennessee', 'Texas', ...]
        (see also test_combine_state_names_and_abbreviations)"""
-    l1 l..(us_state_abbrev.values[:10]
-    l1.e.. s..(states)[-10:])
+    l1 l.. ?.v.. |10
+    l1.e.. s.. ?[-10:])
     r.. l1

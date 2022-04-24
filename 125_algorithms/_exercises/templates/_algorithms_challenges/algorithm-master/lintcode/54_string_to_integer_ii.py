@@ -4,9 +4,9 @@ c_ Solution:
     @return: An integer
     """
     ___ atoi  s
-        NOT_FOUND 0
+        N.. 0
         __ n.. s:
-            r.. NOT_FOUND
+            r.. N..
 
         n l..(s)
         is_negative F..
@@ -22,7 +22,7 @@ c_ Solution:
             left += 1
 
         __ left > right:
-            r.. NOT_FOUND
+            r.. N..
 
         ans 0
         zero o..('0')

@@ -39,17 +39,17 @@ c_ Solution:
         :rtype: int
         """
 
-        NOT_FOUND -1
+        N.. -1
 
         __ S __ n.. N.. a.. T __ '':
             r.. 0
 
         __ n.. S o. n.. T:
-            r.. NOT_FOUND
+            r.. N..
 
         m, n l..(S), l..(T)
         __ n > m:
-            r.. NOT_FOUND
+            r.. N..
 
         MOD 1000000  # hashsize to mod
         MG 31  # magic number
@@ -86,4 +86,4 @@ c_ Solution:
             __ _code __ tcode a.. S[i - n + 1:i + 1] __ T:
                 r.. i - n + 1
 
-        r.. NOT_FOUND
+        r.. N..

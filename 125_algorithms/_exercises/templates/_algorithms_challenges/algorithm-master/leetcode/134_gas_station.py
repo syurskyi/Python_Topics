@@ -10,10 +10,10 @@ c_ Solution:
         :type cost: List[int]
         :rtype: int
         """
-        NOT_FOUND -1
+        N.. -1
 
         __ n.. gas o. n.. cost o. l..(gas) !_ l..(cost
-            r.. NOT_FOUND
+            r.. N..
 
         end, start -1, l..(gas) - 1  # since its a circle, end start from `-1` means `n - 1`
         tank gas[start] - cost[start]
@@ -26,7 +26,7 @@ c_ Solution:
                 start -_ 1
                 tank += gas[start] - cost[start]
 
-        r.. start __ tank >_ 0 ____ NOT_FOUND
+        r.. start __ tank >_ 0 ____ N..
 
 
 c_ Solution:
@@ -39,10 +39,10 @@ c_ Solution:
         :type cost: List[int]
         :rtype: int
         """
-        NOT_FOUND -1
+        N.. -1
 
         __ n.. gas o. n.. cost o. l..(gas) !_ l..(cost
-            r.. NOT_FOUND
+            r.. N..
 
         n l..(gas)
         RANGE l..(r..(n
@@ -61,4 +61,4 @@ c_ Solution:
             __ n.. is_failed:
                 r.. start
 
-        r.. NOT_FOUND
+        r.. N..

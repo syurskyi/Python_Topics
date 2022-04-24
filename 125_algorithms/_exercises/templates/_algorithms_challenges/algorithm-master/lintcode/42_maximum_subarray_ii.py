@@ -19,9 +19,9 @@ c_ Solution:
         :type nums: list[int]
         :rtype: int
         """
-        NOT_FOUND 0
+        N.. 0
         __ n.. nums:
-            r.. NOT_FOUND
+            r.. N..
 
         n l..(nums)
         left get_max_sums(nums, r..(n
@@ -35,7 +35,7 @@ c_ Solution:
             __ s > ans:
                 ans s
 
-        r.. ans __ ans > _INF ____ NOT_FOUND
+        r.. ans __ ans > _INF ____ N..
 
     ___ get_max_sums  nums, num_range
         res [0] * l..(nums)

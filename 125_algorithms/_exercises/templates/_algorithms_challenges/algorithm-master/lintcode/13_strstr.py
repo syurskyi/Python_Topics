@@ -5,9 +5,9 @@ c_ Solution:
         :type needle: str
         :rtype: int
         """
-        NOT_FOUND -1
+        N.. -1
         __ haystack __ N.. o. needle __ N..
-            r.. NOT_FOUND
+            r.. N..
         __ haystack __ needle:
             r.. 0
 
@@ -17,4 +17,4 @@ c_ Solution:
             __ haystack[i:i + n] __ needle:
                 r.. i
 
-        r.. NOT_FOUND
+        r.. N..

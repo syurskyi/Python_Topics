@@ -11,9 +11,9 @@ c_ Solution:
     @return: [index1, index2] (index1 < index2)
     """
     ___ twoSum  A, target
-        NOT_FOUND [-1, -1]
+        N.. [-1, -1]
         __ n.. A o. l..(A) < 2:
-            r.. NOT_FOUND
+            r.. N..
 
         remaining    # dict
         ___ i __ r..(l..(A:
@@ -25,7 +25,7 @@ c_ Solution:
 
             remaining[target - A[i]] i
 
-        r.. NOT_FOUND
+        r.. N..
 
 
 """
@@ -41,9 +41,9 @@ c_ Solution:
     @return: [index1, index2] (index1 < index2)
     """
     ___ twoSum  A, target
-        NOT_FOUND [-1, -1]
+        N.. [-1, -1]
         __ n.. A o. l..(A) < 2:
-            r.. NOT_FOUND
+            r.. N..
 
         n l..(A)
         A [(A[i], i) ___ i __ r..(n)]
@@ -63,4 +63,4 @@ c_ Solution:
             ____
                 right -_ 1
 
-        r.. NOT_FOUND
+        r.. N..

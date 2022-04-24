@@ -33,7 +33,7 @@ ___ calculate_gc_content_1st_solution(sequence
         bases_dict[seq] T..
         ___
             counts[seq] += 1
-        ______ K..:
+        ______ K..
             counts[seq] 1
     ___ k,v __ bases_dict.i..
         __ v __ F..:

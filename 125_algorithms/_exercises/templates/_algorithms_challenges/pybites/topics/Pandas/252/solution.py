@@ -9,7 +9,7 @@ ___ return_at_index ser ?.S..  idx i.. __ o..
     """
     ___
         r.. ser[idx]
-    ______ K..:
+    ______ K..
         r..
 
 

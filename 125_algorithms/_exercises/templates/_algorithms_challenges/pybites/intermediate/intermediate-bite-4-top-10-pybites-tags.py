@@ -32,7 +32,7 @@ w__ o.. ? __ f
 
 # start coding
 
-___ get_pybites_top_tags(n=10
+___ get_pybites_top_tags(n_10
     """use Counter to get the top 10 PyBites tags from the feed
        data already loaded into the content variable"""
     m.. __.f.. _ <category>([a-z]+)<\/category>', content)

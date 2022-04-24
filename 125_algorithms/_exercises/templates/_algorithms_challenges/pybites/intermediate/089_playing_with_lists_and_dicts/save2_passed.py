@@ -32,13 +32,13 @@ states =  'Oklahoma', 'Kansas', 'North Carolina', 'Georgia', 'Oregon',
 NOT_FOUND 'N/A'
 
 
-___ get_every_nth_state(states=states, n=10
+___ get_every_nth_state states_? n_10
     """Return a list with every nth item (default argument n=10, so every
        10th item) of the states list above (remember: lists keep order)"""
     r.. states[n-1::n]
 
 
-___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev
+___ get_state_abbrev state_name us_state_abbrev_?
     """Look up a state abbreviation by querying the us_state_abbrev
        dict by full state name, for instance 'Alabama' returns 'AL',
        'Illinois' returns 'IL'.
@@ -57,7 +57,7 @@ ___ get_longest_state(data
     r.. s.. ? key=l.., r.._T..[0]
 
 
-___ combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
+___ combine_state_names_and_abbreviations(us_state_abbrev_?,
                                           states=states
     """Get the first 10 state abbreviations ('AL', 'AK', 'AZ', ...) from
        the us_state_abbrev dict, and the last 10 states from the states

@@ -34,7 +34,7 @@ c_ Solution:
         ___ digit __ r..(num
             ___
                 rev.a.. m..[digit])
-            ______ K..:
+            ______ K..
                 r.. F..
 
         r.. num __ rev

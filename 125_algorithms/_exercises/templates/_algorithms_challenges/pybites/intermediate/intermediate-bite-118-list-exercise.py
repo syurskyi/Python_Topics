@@ -92,7 +92,7 @@ ___ get_duplicate_indices(words
         ___
             mp stats[word]
             mp 'count'  += 1
-        ______ K..:
+        ______ K..
             mp d..()
             mp 'index'  = index
             mp 'count'  = 1

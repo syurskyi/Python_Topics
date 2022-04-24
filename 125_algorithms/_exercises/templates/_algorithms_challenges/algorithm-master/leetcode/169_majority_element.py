@@ -41,10 +41,10 @@ c_ Solution:
         :type nums: List[int]
         :rtype: int
         """
-        NOT_FOUND 0
+        N.. 0
 
         __ n.. nums:
-            r.. NOT_FOUND
+            r.. N..
 
         freq    # dict
 
@@ -55,4 +55,4 @@ c_ Solution:
             __ cnt > l..(nums) // 2:
                 r.. a
 
-        r.. NOT_FOUND
+        r.. N..

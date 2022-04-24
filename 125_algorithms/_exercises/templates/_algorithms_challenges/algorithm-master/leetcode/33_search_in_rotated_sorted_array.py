@@ -5,10 +5,10 @@ c_ Solution:
         :type target: int
         :rtype: int
         """
-        NOT_FOUND -1
+        N.. -1
 
         __ n.. nums:
-            r.. NOT_FOUND
+            r.. N..
 
         left, right 0, l..(nums) - 1
 
@@ -33,4 +33,4 @@ c_ Solution:
             __ nums[mid] __ target:
                 r.. mid
 
-        r.. NOT_FOUND
+        r.. N..

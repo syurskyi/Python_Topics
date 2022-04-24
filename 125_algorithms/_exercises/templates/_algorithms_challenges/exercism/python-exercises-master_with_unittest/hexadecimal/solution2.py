@@ -15,7 +15,7 @@ ___ hexa(hexstring
     ___
         ___ hex_of_lastseen __ hexstring:
             result result*16 + hexchars_to_int[hex_of_lastseen]
-    ______ K..:
+    ______ K..
         # not a valid hexchar
         hex_of_lastseen N..
     __ hex_of_lastseen __ N..

@@ -22,10 +22,10 @@ c_ Solution:
         >>> s.findShortestWay(maze, [4, 3], [3, 0])
         'impossible'
         """
-        NOT_FOUND 'impossible'
+        N.. 'impossible'
 
         __ n.. maze o. n.. maze[0]:
-            r.. NOT_FOUND
+            r.. N..
 
         m, n l..(maze), l..(maze 0
         sx, sy ball
@@ -69,7 +69,7 @@ c_ Solution:
                 paths[_x, _y] paths[x, y] + [dn]
                 queue.a..((_x, _y
 
-        r.. ''.j..(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND
+        r.. ''.j..(paths[tx, ty]) __ (tx, ty) __ paths ____ N..
 
 
 _______ h__
@@ -99,10 +99,10 @@ c_ Solution2:
         >>> s.findShortestWay(maze, [4, 3], [3, 0])
         'impossible'
         """
-        NOT_FOUND 'impossible'
+        N.. 'impossible'
 
         __ n.. maze o. n.. maze[0]:
-            r.. NOT_FOUND
+            r.. N..
 
         m, n l..(maze), l..(maze 0
         sx, sy ball
@@ -145,4 +145,4 @@ c_ Solution2:
                 paths[_x, _y] paths[x, y] + [dn]
                 h__.heappush(heap, (_x, _y
 
-        r.. ''.j..(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND
+        r.. ''.j..(paths[tx, ty]) __ (tx, ty) __ paths ____ N..

@@ -9,7 +9,7 @@ ___ return_at_index ser ?.S..  idx i.. __ o..
     """
     ___
         r.. ser[idx]
-    ______ K..:
+    ______ K..
         r.. K..
 
 ___ get_slice ser ?.S.., start: i.., end: i..) __ ?.c__.s__.S.:
@@ -18,7 +18,7 @@ ___ get_slice ser ?.S.., start: i.., end: i..) __ ?.c__.s__.S.:
     """
     ___
         r.. ser ?|?
-    ______ K..:
+    ______ K..
         r.. K..
 
 ___ get_slice_inclusive ser ?.S..,
@@ -28,7 +28,7 @@ ___ get_slice_inclusive ser ?.S..,
     """
     ___
         r.. ?.loc ?|?
-    ______ K..:
+    ______ K..
         r.. K..
 
 ___ return_head ser ?.S.., num: i..) __ ?.c__.s__.S.:
@@ -36,7 +36,7 @@ ___ return_head ser ?.S.., num: i..) __ ?.c__.s__.S.:
     """
     ___
         r.. ?.h.. ?
-    ______ K..:
+    ______ K..
         r.. K..
 
 ___ return_tail ser ?.S.., num: i..) __ ?.c__.s__.S.:
@@ -44,7 +44,7 @@ ___ return_tail ser ?.S.., num: i..) __ ?.c__.s__.S.:
     """
     ___
         r.. ?.t.. ?
-    ______ K..:
+    ______ K..
         r.. K..
 
 ___ get_index ser ?.S..) __ >?.c__.i__.b__.I..
@@ -52,7 +52,7 @@ ___ get_index ser ?.S..) __ >?.c__.i__.b__.I..
     """
     ___
         r.. ?.index
-    ______ K..:
+    ______ K..
         r.. K..
 
 ___ get_values ser ?.S..) __ ?.n
