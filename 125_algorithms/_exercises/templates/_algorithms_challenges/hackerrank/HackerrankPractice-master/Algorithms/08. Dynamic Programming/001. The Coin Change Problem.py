@@ -2,8 +2,8 @@
 # Score: 60
 
 
-n, m m.. i.., input().s..
-coins l.. m..(i.., input().s..()))
+n, m m.. i.., i.. ).s..
+coins l.. m..(i.., i.. ).s..()))
 ans [1] + [0] * n
 ___ i __ r..(m
     ___ j __ r..(coins[i], n + 1

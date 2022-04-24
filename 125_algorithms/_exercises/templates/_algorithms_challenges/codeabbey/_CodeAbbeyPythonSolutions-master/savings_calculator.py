@@ -8,7 +8,7 @@ ___ get_required_year(S,R,P,year
     r.. get_required_year(S,R,P, year+1)
 
 ___ i __ r..(amount_values
-    S,R,P m.. i.., input().s..
+    S,R,P m.. i.., i.. ).s..
     results.a..(get_required_year(S,R,P,0
 
 print(*results)

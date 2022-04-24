@@ -4,7 +4,7 @@ ___ min_of_three
     answer    # list
     
     ___ run __ r..(runs
-        answer.a..(s..(m..([i..(x) ___ x __ input().s.. ])))
+        answer.a..(s..(m..([i..(x) ___ x __ i.. ).s.. ])))
         
     print(' '.j..(answer
 

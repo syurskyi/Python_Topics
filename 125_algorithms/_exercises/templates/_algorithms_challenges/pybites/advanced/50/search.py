@@ -90,7 +90,7 @@ ___ main
     
     entries.s..(k.._l.... x: x.date)
     w... T...
-        term input("Search Term? ")
+        term i.. "Search Term? ")
         __ term __ '':
             print('Please provide a search term')
             _____

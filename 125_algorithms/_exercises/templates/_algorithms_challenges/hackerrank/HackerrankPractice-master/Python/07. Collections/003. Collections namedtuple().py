@@ -6,4 +6,4 @@ ____ c.. _______ n..
 
 
 n, Student  i..(input, n..('Student', input
-print("{:.2f}".f..(s..([i..(Student(*input().s...MARKS) ___ _ __ r..(n)]) / n
+print("{:.2f}".f..(s..([i..(Student(*i.. ).s...MARKS) ___ _ __ r..(n)]) / n

@@ -1,7 +1,7 @@
 _______ m__
 
-___ i __ r..(i..(input())):
-    x1,y1,x2,y2,x3,y3 l.. m..(i..,input().s..()))
+___ i __ r..(i..(i.. ))):
+    x1,y1,x2,y2,x3,y3 l.. m..(i..,i.. ).s..()))
     
     #distance formula
 

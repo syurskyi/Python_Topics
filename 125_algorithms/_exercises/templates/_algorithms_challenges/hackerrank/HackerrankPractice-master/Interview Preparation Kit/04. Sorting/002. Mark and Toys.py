@@ -2,8 +2,8 @@
 #  Score: 35
 
 
-n, k m.. i.., input().s..
-prices s..(l.. m..(i.., input().s..())))
+n, k m.. i.., i.. ).s..
+prices s..(l.. m..(i.., i.. ).s..())))
 
 count 0
 total_sum 0

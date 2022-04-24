@@ -63,7 +63,7 @@ ___ main
     """
     entries get_feed_entries()
     w... T...
-        term input('Search for (q for exit): ')
+        term i.. 'Search for (q for exit): ')
         __ term __ '':
             print('Please provide a search term')
             _____

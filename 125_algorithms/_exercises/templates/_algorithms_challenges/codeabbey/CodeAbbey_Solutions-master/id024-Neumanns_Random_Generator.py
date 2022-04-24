@@ -2,7 +2,7 @@
 
 ___ neumanns(inputs
     answer    # list
-    ___ num __ [i..(x) ___ x __ input().s.. ]:
+    ___ num __ [i..(x) ___ x __ i.. ).s.. ]:
         loop_count  0
         new_num  num * num
         temp  ''

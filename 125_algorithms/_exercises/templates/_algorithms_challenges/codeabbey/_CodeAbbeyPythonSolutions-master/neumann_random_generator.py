@@ -12,7 +12,7 @@ ___ generate(num, counter
     num (num//100)%10000
     r.. generate(num, counter+1)
 
-values l.. m..(i.., input().s..()))
+values l.. m..(i.., i.. ).s..()))
 
 ___ i __ r..(amount_value
     results.a..(generate(values[i],0

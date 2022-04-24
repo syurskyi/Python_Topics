@@ -3,5 +3,5 @@
 
 
 n  i..(input
-ar  l.. m..(i.., input().s..()))
+ar  l.. m..(i.., i.. ).s..()))
 print(ar.c.. m..(ar)))

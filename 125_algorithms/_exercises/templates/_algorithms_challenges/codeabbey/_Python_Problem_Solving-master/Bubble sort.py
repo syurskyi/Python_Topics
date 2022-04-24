@@ -1,5 +1,5 @@
 number_elements i..(input
-a [i..(ele) ___ ele __ input().s.. ]
+a [i..(ele) ___ ele __ i.. ).s.. ]
 
 swap_count 0
 pass_count 0

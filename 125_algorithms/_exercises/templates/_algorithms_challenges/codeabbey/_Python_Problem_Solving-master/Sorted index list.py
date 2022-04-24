@@ -1,7 +1,7 @@
 #take the input of how many elements you want
 data i..(input
 # take the input of the numbers to be sorted
-a [i..(num) ___ num __ input().s.. ]
+a [i..(num) ___ num __ i.. ).s.. ]
 
 #create a dictionary to store the index of the list
 ele    # dict

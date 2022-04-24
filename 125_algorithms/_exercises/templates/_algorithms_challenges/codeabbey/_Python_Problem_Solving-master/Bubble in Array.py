@@ -1,4 +1,4 @@
-a =  [i..(i) ___ i __ input().s.. ]
+a =  [i..(i) ___ i __ i.. ).s.. ]
 a.remove(a[-1])
 swap_count 0
 seed 0

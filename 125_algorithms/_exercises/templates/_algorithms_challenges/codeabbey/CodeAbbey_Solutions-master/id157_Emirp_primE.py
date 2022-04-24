@@ -9,7 +9,7 @@ ___ find_answer(entry
             r.. emirp
 
 ___ gen_primes(limit300000000
-    data  [i..(input ___ x __ r..(i..(input()))]
+    data  [i..(input ___ x __ r..(i..(i.. )))]
     primes, semirp, answer    # list, [], []
     g.. semirp
 

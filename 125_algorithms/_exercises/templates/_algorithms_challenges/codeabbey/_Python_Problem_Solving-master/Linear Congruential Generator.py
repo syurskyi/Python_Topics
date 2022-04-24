@@ -1,8 +1,8 @@
 #run the for loop for the number of elements
-___ i __ r..(i..(input())):
+___ i __ r..(i..(i.. ))):
     
     #accept the value of a,c,m,x,n in a list
-    listo l.. m..(i..,input().s..()))
+    listo l.. m..(i..,i.. ).s..()))
     
     #assign the list to variables
     a,c,m,x,n listo

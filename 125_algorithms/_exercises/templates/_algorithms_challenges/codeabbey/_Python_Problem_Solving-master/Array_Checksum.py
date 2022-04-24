@@ -4,7 +4,7 @@ result 0
 arr    # list
 
 w.... l..(arr) < data:
-    arr input().s..
+    arr i.. ).s..
     #print('length of arr is:', len(arr))
     #print('values is in arr are :', arr)
     

@@ -2,7 +2,7 @@
 # Score: 15
 
 
-n, k m.. i.., input().s..
-hurdles l.. m..(i.., input().s..()))
+n, k m.. i.., i.. ).s..
+hurdles l.. m..(i.., i.. ).s..()))
 numberOfPotions m..(0, m..(hurdles) - k)
 print(numberOfPotions)

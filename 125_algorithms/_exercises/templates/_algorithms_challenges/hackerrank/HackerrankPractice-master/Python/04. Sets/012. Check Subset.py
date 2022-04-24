@@ -2,7 +2,7 @@
 # Score: 10
 
 
-___ i __ r..(i..(input())):
-    _, a input(), s.. m..(i.., input().s..()))
-    _, b input(), s.. m..(i.., input().s..()))
+___ i __ r..(i..(i.. ))):
+    _, a i.. ), s.. m..(i.., i.. ).s..()))
+    _, b i.. ), s.. m..(i.., i.. ).s..()))
     print(a.issubset(b

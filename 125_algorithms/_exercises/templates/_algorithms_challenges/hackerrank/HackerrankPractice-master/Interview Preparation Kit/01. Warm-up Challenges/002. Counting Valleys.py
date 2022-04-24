@@ -15,7 +15,7 @@ ___ counting_valleys(n, s
     r.. count
 
 
-n i..(input().s..
-s input().s..
+n i..(i.. ).s..
+s i.. ).s..
 result counting_valleys(n, s)
 print(result)

@@ -2,7 +2,7 @@
 # Score: 10
 
 
-___ _ __ r..(i..(input())):
+___ _ __ r..(i..(i.. ))):
     grade i..(input
     __ grade >_ 38 a.. grade % 5 >_ 3:
         grade (grade + 5) // 5 * 5

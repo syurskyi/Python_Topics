@@ -14,7 +14,7 @@ ___ pickingNumbers(arr
     r.. result
 
 
-n i..(input().s..
-arr l.. m..(i.., input().s...s..(' ')))
+n i..(i.. ).s..
+arr l.. m..(i.., i.. ).s...s..(' ')))
 result pickingNumbers(arr)
 print(result)

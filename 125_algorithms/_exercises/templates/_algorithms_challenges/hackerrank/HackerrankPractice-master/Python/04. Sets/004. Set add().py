@@ -2,4 +2,4 @@
 # Score: 10
 
 
-print(l..(s..(input() ___ i __ r..(i..(input())))))
+print(l..(s..(i.. ) ___ i __ r..(i..(i.. ))))))

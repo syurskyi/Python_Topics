@@ -34,7 +34,7 @@ ___ get_match_winner(moves
         r.. 0
     
 ___ i __ r..(amount_values
-    moves l.. m..(s.., input().s..()))
+    moves l.. m..(s.., i.. ).s..()))
     results.a..(get_match_winner(moves
 
 print(*results)

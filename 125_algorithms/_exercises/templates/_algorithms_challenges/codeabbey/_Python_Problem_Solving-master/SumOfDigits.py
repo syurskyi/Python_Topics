@@ -3,7 +3,7 @@ d i..(input
 lista    # list
 w.... l..(lista) < d:
     result 0
-    num =  input().s..
+    num =  i.. ).s..
     mul i..(num 0 * i..(num[1])
     addi mul + i..(num[2])
 

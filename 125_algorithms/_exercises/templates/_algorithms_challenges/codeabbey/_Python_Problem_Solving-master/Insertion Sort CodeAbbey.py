@@ -1,5 +1,5 @@
-a input()
-x l.. m..(i.., input().s..()))
+a i.. )
+x l.. m..(i.., i.. ).s..()))
 
 temp 0
 temp_ind    # list

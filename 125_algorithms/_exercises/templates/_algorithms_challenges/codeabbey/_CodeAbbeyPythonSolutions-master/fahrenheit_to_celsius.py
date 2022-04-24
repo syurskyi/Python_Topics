@@ -1,4 +1,4 @@
-values l.. m..(i.., input().s..()))
+values l.. m..(i.., i.. ).s..()))
 amount_values values[0]
 results    # list
 

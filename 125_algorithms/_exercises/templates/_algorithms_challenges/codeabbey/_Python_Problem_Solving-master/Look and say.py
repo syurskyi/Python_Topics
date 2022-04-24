@@ -1,7 +1,7 @@
 # ask for number of iterations
-num_iter i..(input('Enter the number of iterations:'
+num_iter i..(i.. 'Enter the number of iterations:'
 #initialize the starting element of the sequence
-start_num input('Enter the starting string of the sequence:')
+start_num i.. 'Enter the starting string of the sequence:')
 
 #define the function of lookand say
 ___ look_and_say(data,maxlen

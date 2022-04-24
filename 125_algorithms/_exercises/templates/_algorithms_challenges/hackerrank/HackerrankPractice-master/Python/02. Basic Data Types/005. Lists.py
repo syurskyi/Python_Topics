@@ -3,7 +3,7 @@
 
 
 ___ handler(result
-    inp  input().s..
+    inp  i.. ).s..
     command  inp[0]
     values  inp[1:]
     __ command __ 'print':
@@ -14,5 +14,5 @@ ___ handler(result
 
 
 result    # list
-___ i __ r..(i..(input())):
+___ i __ r..(i..(i.. ))):
     handler(result)

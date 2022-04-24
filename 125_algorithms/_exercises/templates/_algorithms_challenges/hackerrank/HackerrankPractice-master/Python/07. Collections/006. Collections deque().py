@@ -6,8 +6,8 @@ ____ c.. _______ d..
 
 
 d  d..()
-___ _ __ r..(i..(input())):
-    line  input().s..
+___ _ __ r..(i..(i.. ))):
+    line  i.. ).s..
     __ line[0] __ 'append':
         d.a..(line[1])
     ____ line[0] __ 'pop':

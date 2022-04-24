@@ -15,7 +15,7 @@ ___ get_lcm_and_gcd(num1,num2
     r.. "("+s..(gcd(num1,num2+" "+ s..(lcm(num1, num2+")"
 
 ___ i __ r..(amount_values
-    num1, num2 m.. i.., input().s..
+    num1, num2 m.. i.., i.. ).s..
     results.a..(get_lcm_and_gcd(num1,num2
 
 print(*results)

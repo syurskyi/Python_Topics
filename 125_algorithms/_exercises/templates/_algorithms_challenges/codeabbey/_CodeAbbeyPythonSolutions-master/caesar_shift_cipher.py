@@ -1,4 +1,4 @@
-amount_values,shifter m.. i..,(input().s..()))
+amount_values,shifter m.. i..,(i.. ).s..()))
 results    # list
 
 ___ get_cipher(words, shifter
@@ -17,6 +17,6 @@ ___ get_cipher(words, shifter
 
 
 ___ i __ r..(amount_values
-    results.a..(get_cipher(input(),shifter
+    results.a..(get_cipher(i.. ),shifter
 
 print(*results)

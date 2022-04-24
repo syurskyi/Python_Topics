@@ -1,6 +1,6 @@
 # Python 3.4
 ___ mortgage_calculator
-    data  input().s.. 
+    data  i.. ).s..
     p  loan_amount  i..(data 0
     i  interest_rate  (i..(data[1]) / 100.0) / 12
     n  months_until_complete  i..(data[2])

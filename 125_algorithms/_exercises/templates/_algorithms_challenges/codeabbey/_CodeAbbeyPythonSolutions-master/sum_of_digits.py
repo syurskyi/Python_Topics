@@ -12,7 +12,7 @@ ___ sum_digits(num
     r.. s..
 
 ___ i __ r..(amount_values
-    A, B, C m.. i.., input().s..
+    A, B, C m.. i.., i.. ).s..
     num calc(A,B,C)
     results.a..(sum_digits(num
 

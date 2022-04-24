@@ -14,7 +14,7 @@ ___ get_sorting_indexes(array
     ___ i __ sorted_array:
         results.a..(array.i.. i)+1)
 
-array l.. m..(i.., input().s..()))
+array l.. m..(i.., i.. ).s..()))
 get_sorting_indexes(array)
 
 print(*results)

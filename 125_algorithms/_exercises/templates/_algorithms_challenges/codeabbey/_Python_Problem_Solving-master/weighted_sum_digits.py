@@ -4,7 +4,7 @@ result    # list
 #run the following logic while list result is less than data
 w.... l..(result) < data:
     #split all the records so that it can be accessed differently
-    num input().s..
+    num i.. ).s..
     ___ i __ r..(0,l..(num:
         
         digitsum 0

@@ -8,8 +8,8 @@ ____ c.. _______ d..
 arr d..(i..)
 frequencies d..(i..)
 result    # list
-___ i __ r..(i..(input())):
-    command, value m.. i.., input().s..
+___ i __ r..(i..(i.. ))):
+    command, value m.. i.., i.. ).s..
     __ command __ 1:
         arr[value] += 1
         frequencies[arr[value]] += 1

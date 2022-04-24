@@ -5,7 +5,7 @@ ___ get_bmi(weight, height
     r.. weight/height**2
 
 ___ i __ r..(amount_values
-    weight, height m.. f__, input().s..
+    weight, height m.. f__, i.. ).s..
     bmi get_bmi(weight, height)
     __(bmi < 18.5
         results.a..("under")

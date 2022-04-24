@@ -21,6 +21,6 @@ ___ get_swap_number(array
             array[i], array[i+1] array[i+1], array[i]
     r.. swapped
 
-array l.. m..(i.., input().s..()))[:-1]
+array l.. m..(i.., i.. ).s..()))[:-1]
 
 print(get_swap_number(array), get_checksum(array

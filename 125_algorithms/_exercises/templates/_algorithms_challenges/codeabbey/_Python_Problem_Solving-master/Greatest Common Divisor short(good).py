@@ -1,7 +1,7 @@
 # Problem #26
 ___ gcdlcm
-    ___ i __ r..(i..(input())):
-        a, b m.. i.., input().s..
+    ___ i __ r..(i..(i.. ))):
+        a, b m.. i.., i.. ).s..
         g gcd(a, b)
         print('({} {})'.f..(g, a * b // g), end=' ')
 

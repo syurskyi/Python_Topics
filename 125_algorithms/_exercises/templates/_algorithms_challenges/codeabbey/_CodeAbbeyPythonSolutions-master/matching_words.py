@@ -1,5 +1,5 @@
 results    # list
-words input()
+words i.. )
 words_list l..(words.s..[:-1]
 words_list.s..()
 

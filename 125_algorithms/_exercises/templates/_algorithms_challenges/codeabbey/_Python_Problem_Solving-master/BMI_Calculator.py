@@ -2,7 +2,7 @@ ___ BMI_calculator
     num_of_people =  i..(input
     result    # list
     ___ i __ r..(0, num_of_people
-        weight,height input().s..
+        weight,height i.. ).s..
         
         BMI i.. ?/(f__(height)**2)
         

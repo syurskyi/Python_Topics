@@ -2,5 +2,5 @@
 # Score: 10
 
 
-a s..(input().s..
-print(a..(a > s..(input().s.. ___ _ __ r..(i..(input()))))
+a s..(i.. ).s..
+print(a..(a > s..(i.. ).s.. ___ _ __ r..(i..(i.. )))))

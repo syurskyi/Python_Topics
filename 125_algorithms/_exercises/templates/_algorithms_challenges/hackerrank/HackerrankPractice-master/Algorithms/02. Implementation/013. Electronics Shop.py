@@ -11,8 +11,8 @@ ___ getMoneySpent(keyboards, drives, b
     r.. result
 
 
-b, n, m m.. i.., input().s..
-keyboards l.. m..(i.., input().r..().s..()))
-drives l.. m..(i.., input().r..().s..()))
+b, n, m m.. i.., i.. ).s..
+keyboards l.. m..(i.., i.. ).r..().s..()))
+drives l.. m..(i.., i.. ).r..().s..()))
 moneySpent getMoneySpent(keyboards, drives, b)
 print(moneySpent)

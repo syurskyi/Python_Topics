@@ -5,7 +5,7 @@
 ____ d__ _______ d__ __ dt
 
 fmt   _a _d _b _Y _H|_M:_S _z'
-___ _ __ r..(i..(input())):
-    time1  dt.s..(input(), fmt)
-    time2  dt.s..(input(), fmt)
+___ _ __ r..(i..(i.. ))):
+    time1  dt.s..(i.. ), fmt)
+    time2  dt.s..(i.. ), fmt)
     print(i..(a..((time1 - time2).total_seconds())))

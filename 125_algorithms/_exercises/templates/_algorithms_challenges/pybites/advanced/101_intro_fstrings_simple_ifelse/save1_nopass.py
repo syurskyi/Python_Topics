@@ -2,8 +2,8 @@ MIN_DRIVING_AGE 18
 
 
 ___ allowed_driving(name, age
-    name input("What is your name?")
-    age i..(input("How old are you?"
+    name i.. "What is your name?")
+    age i..(i.. "How old are you?"
     MIN_DRIVING_AGE age
     __ MIN_DRIVING_AGE <_ 18:
         print(_* n.. is allowed to drive")

@@ -3,7 +3,7 @@
 
 
 n i..(input
-a l.. m..(i.., input().s..()))
+a l.. m..(i.., i.. ).s..()))
 
 count 0
 

@@ -2,8 +2,8 @@
 # Score: 50
 
 
-_ input()
-array input().s..
-like s..(input().s..
-dislike s..(input().s..
+_ i.. )
+array i.. ).s..
+like s..(i.. ).s..
+dislike s..(i.. ).s..
 print(s..((i __ like) - (i __ dislike) ___ i __ array

@@ -2,5 +2,5 @@
 # Score: 20
 
 
-st  input()
+st  i.. )
 print(' '.j..(word.capitalize() ___ word __ st.s..(' ')))

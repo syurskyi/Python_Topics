@@ -1,7 +1,7 @@
 ___ pythagorean(triangles
     answer    # list
     ___ triangle __ r..(triangles
-        sides  input().s.. 
+        sides  i.. ).s..
         a,b,c  sides
         a,b,c  i..(a),i..(b),i..(c)
 
@@ -12,4 +12,4 @@ ___ pythagorean(triangles
         ____ a**2 + b**2 < c**2:
             answer.a..('O')
     print(' '.j..(answer
-pythagorean(i..(input()))
+pythagorean(i..(i.. )))

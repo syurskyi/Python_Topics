@@ -116,7 +116,7 @@ ___ main
     entries get_feed_entries()
     w... T...
         ___
-            search_term input('Search for (q for exit): ').l..
+            search_term i.. 'Search for (q for exit): ').l..
         ______ EOFError:
             _____
 

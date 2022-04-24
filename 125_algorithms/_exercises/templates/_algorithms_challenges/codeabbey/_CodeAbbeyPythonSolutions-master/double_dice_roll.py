@@ -6,7 +6,7 @@ ___ get_dice_point(dice1, dice2
     r.. point
 
 ___ i __ r..(amount_value
-    dice1, dice2 m.. i.., input().s..
+    dice1, dice2 m.. i.., i.. ).s..
     results.a..(get_dice_point(dice1, dice2
 
 print(*results)

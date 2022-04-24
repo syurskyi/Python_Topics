@@ -3,7 +3,7 @@
 ___ check_brackets(checks
     answer    # list
     ___ check __ r..(checks
-        raw_data  input()
+        raw_data  i.. )
         data  (''.j..([char ___ char __ raw_data __ char __('(){}[]<>')]
         
         # Set higher than len(data) to make sure while loop initates.
@@ -18,4 +18,4 @@ ___ check_brackets(checks
         ____
             answer.a..('1') # String had completely correct bracket usage.
     print(' '.j..(answer
-check_brackets(i..(input()))
+check_brackets(i..(i.. )))

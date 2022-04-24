@@ -12,7 +12,7 @@ ___ get_checksum(values
 
     r.. result
 
-values l.. m..(i.., input().s..()))
+values l.. m..(i.., i.. ).s..()))
 
 __ __name__ __ "__get_checksum__":
     get_checksum(values)

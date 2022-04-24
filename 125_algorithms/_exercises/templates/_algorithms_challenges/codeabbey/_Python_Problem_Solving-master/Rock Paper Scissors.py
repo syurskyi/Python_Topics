@@ -1,8 +1,8 @@
 win_dic {'S':'P','P':'R','R':'S'}
-___ i __ r..(i..(input())):
+___ i __ r..(i..(i.. ))):
     count1 0
     count2 0
-    a l.. m..(s..,input().s..()))
+    a l.. m..(s..,i.. ).s..()))
     ___ j __ a:
         __ j[0] __ j[1]:
             p..

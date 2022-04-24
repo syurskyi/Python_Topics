@@ -12,7 +12,7 @@ ___ checkMagazine(magazine, note
         r.. 'No'
 
 
-m, n m.. i.., input().s..
-magazine l..(input().s..
-note l..(input().s..
+m, n m.. i.., i.. ).s..
+magazine l..(i.. ).s..
+note l..(i.. ).s..
 print(checkMagazine(magazine, note

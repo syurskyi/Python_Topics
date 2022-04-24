@@ -2,7 +2,7 @@ d i..(input
 count 0
 res    # list
 w.... count < d:
-    a input().s..
+    a i.. ).s..
     a l.. m..(i..,a
     val a[0]
     step a[1]

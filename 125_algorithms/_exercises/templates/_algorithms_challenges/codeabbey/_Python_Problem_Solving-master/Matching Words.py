@@ -1,4 +1,4 @@
-d input().s..
+d i.. ).s..
 d.s..()
 res    # list
 d_dic    # dict

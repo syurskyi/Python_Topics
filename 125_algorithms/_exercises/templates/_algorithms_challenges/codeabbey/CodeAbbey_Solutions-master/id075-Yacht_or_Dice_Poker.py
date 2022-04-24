@@ -5,7 +5,7 @@ ___ dice_poker
     answer    # list
     
     ___ roll __ r..(rolls
-        roll input().s..
+        roll i.. ).s..
         values s..([x ___ x __ c...C..(roll).v..)
 
         __ s..(roll) __  '2', '3', '4', '5', '6' :

@@ -2,7 +2,7 @@
 # Score: 10
 
 
-height, length  m.. i.., input().s..
+height, length  m.. i.., i.. ).s..
 ___ i __ r..(0, height // 2
     s  '.|.' * (i * 2 + 1)
     print(s.center(length,'-'

@@ -8,6 +8,6 @@ ___ reverseArray(arr
 
 
 arrСount i..(input
-arr l.. m..(i.., input().r..().s..()))
+arr l.. m..(i.., i.. ).r..().s..()))
 result reverseArray(arr)
 print(*result)

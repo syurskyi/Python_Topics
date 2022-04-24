@@ -9,7 +9,7 @@ ___ get_weight(num
         num //= 10
     results.a..(weight_sum)
 
-values l.. m..(i.., input().s..()))
+values l.. m..(i.., i.. ).s..()))
 ___ i __ r..(amount_values
     get_weight(values[i])
 

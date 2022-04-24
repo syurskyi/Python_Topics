@@ -5,6 +5,6 @@
 _______ i..
 
 
-s  input().s..
+s  i.. ).s..
 s__, number  s..(s 0, i..(s[1])
 print(*l.. m..(''.j.., i...p.. s__, number))), sep'\n')

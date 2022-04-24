@@ -4,7 +4,7 @@ strValues ""
 result 0
 
 w... T...
-    line input()
+    line i.. )
     __(line
         values.a..(line.r..(" ", ""
     ____

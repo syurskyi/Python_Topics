@@ -2,8 +2,8 @@
 # Score: 15
 
 
-_  input()
-calories  l.. m..(i.., input().s..()))
+_  i.. )
+calories  l.. m..(i.., i.. ).s..()))
 calories  s..(calories, r.._T..
 ans  0
 ___ index, cupcake __ e..(calories

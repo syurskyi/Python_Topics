@@ -10,7 +10,7 @@ ___ count_vowels(word
     results.a..(counter)
 
 ___ i __ r..(amount_values
-    word input()
+    word i.. )
     count_vowels(word)
     
 print(*results)

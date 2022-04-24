@@ -6,7 +6,7 @@ ___ check_anagram
     answer    # list
     
     ___ check __ r..(amount
-        word input()
+        word i.. )
         word_data C..(word) # Count the letter composition
         count 0 # Amount of anagrams found for the word.
         

@@ -11,7 +11,7 @@ ___ get_sqrt(num, r, step
         
 ___ i __ r..(amount_values
     r 1
-    num, step m.. i.., input().s..
+    num, step m.. i.., i.. ).s..
     results.a..(get_sqrt(num,r,step
 
 print(*results)

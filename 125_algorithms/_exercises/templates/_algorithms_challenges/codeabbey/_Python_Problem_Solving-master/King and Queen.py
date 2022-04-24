@@ -1,5 +1,5 @@
-___ i __ r..(i..(input())):
-    K,Q l.. m..(s..,input().s..()))
+___ i __ r..(i..(i.. ))):
+    K,Q l.. m..(s..,i.. ).s..()))
     # k and q consist of the character which K[0] and Q[0] holds respectively
     k K[0]
     q Q[0]

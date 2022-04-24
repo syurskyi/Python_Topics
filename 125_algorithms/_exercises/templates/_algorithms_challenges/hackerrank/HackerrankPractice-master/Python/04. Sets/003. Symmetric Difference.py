@@ -2,6 +2,6 @@
 # Score: 10
 
 
-i, m input(), s.. m..(i.., input().s..()))
-i, n input(), s.. m..(i.., input().s..()))
+i, m i.. ), s.. m..(i.., i.. ).s..()))
+i, n i.. ), s.. m..(i.., i.. ).s..()))
 print(*s..(m.symmetric_difference(n, sep='\n')

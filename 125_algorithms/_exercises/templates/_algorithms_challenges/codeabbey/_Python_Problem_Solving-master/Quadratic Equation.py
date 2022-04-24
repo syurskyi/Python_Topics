@@ -4,7 +4,7 @@ ___ i __ r..(data
     cal  0
     deno  0
     res  ''
-    a,b,c  nums  l.. m..(i..,input().s..()))
+    a,b,c  nums  l.. m..(i..,i.. ).s..()))
     cal  b**2 - (4*a*c)
     deno  2*a
     __ cal > 0

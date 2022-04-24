@@ -1,7 +1,7 @@
 #accept the range of input
-___ i __ r..(i..(input())):
+___ i __ r..(i..(i.. ))):
     #accept the types of card
-    a input().s..
+    a i.. ).s..
     # sort the list keeping A at the end
     predefined_list =  'A'
     a =s..(a, k.._l.... x: x __ predefined_list)

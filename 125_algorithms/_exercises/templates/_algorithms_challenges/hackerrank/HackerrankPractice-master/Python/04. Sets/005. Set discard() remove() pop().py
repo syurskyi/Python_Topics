@@ -3,9 +3,9 @@
 
 
 n i..(input
-s s.. m..(i.., input().s..()))
-___ i __ r..(i..(input())):
-    s__ input().s..
+s s.. m..(i.., i.. ).s..()))
+___ i __ r..(i..(i.. ))):
+    s__ i.. ).s..
     __ s__[0] __ 'pop':
         s.p.. )
     ____ s__[0] __ 'remove':

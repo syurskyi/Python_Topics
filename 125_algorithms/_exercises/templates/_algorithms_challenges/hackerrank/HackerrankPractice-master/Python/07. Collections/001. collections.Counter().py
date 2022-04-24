@@ -6,12 +6,12 @@ _______ c..
 
 
 number_of_shoes  i..(input
-sizes_in_stock  c...C.. m..(i.., input().s..()))
+sizes_in_stock  c...C.. m..(i.., i.. ).s..()))
 
 total_revenue  0
 
-___ _ __ r..(i..(input())):
-    size, price  m.. i.., input().s..
+___ _ __ r..(i..(i.. ))):
+    size, price  m.. i.., i.. ).s..
     __ sizes_in_stock[size]:
         total_revenue + price
         sizes_in_stock[size] - 1

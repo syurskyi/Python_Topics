@@ -1,6 +1,6 @@
 ___ bitCount
-    codeAbbeyWaste input() # Required by CodeAbbey
-    numbers input().s..
+    codeAbbeyWaste i.. ) # Required by CodeAbbey
+    numbers i.. ).s..
     answer    # list
     ___ num __ numbers:
         data i..(num) % 0x100000000

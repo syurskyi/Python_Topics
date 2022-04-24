@@ -8,7 +8,7 @@ ___ get_x_next(A,C,M,X0,N
     r.. get_x_next(A,C,M, x_next, N-1)
 
 ___ i __ r..(amount_values
-    A,C,M,X0,N m.. i.., input().s..
+    A,C,M,X0,N m.. i.., i.. ).s..
     results.a..(get_x_next(A,C,M,X0,N
 
 print(*results)

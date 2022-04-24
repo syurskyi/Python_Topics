@@ -11,7 +11,7 @@ ___ get_sum(values
     r.. result
 
 ___ i __ r..(amount_values
-    values l.. m..(i.., input().s..()))
+    values l.. m..(i.., i.. ).s..()))
     results.a..(get_sum(values
 
 print(*results)

@@ -5,7 +5,7 @@
 test i..(input
 ___ i __ r..(test
     n i..(input
-    b l.. m..(i.., input().s..()))
+    b l.. m..(i.., i.. ).s..()))
 
     dp [[0], [0]]
 

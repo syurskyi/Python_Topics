@@ -16,7 +16,7 @@ ___ solution(arr
     r.. m..(results)
 
 
-___ t __ r..(i..(input())):
-    input()
-    items l.. m..(i.., input().s..()))
+___ t __ r..(i..(i.. ))):
+    i.. )
+    items l.. m..(i.., i.. ).s..()))
     print(solution(items

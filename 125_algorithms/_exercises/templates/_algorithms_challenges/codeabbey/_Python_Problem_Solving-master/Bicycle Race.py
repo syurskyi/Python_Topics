@@ -8,9 +8,9 @@
 # 20 = t(1+2) -> t = 20 /(1+2) t = 6.6667
 #to find the distance travelled by cycle A substitute the time travelled into Dist(A)
 # thus dist(A) = 1 * 6.667
-___ i __ r..(i..(input())):
+___ i __ r..(i..(i.. ))):
     res 0
-    data l.. m..(f__,input().s..()))
+    data l.. m..(f__,i.. ).s..()))
     s,a,b data
     res s/(a+b)
     print(res * a,end=' ')

@@ -18,7 +18,7 @@ ___ c.. decimal_number
         r.. 32-counter
     r.. counter
 
-values l.. m..(i.., input().s..()))
+values l.. m..(i.., i.. ).s..()))
 ___ i __ r..(amount_values
     results.a..(c.. values[i]
 

@@ -2,8 +2,8 @@
 # Score: 10
 
 
-___ _ __ r..(i..(input())):
-    a, b  input().s..
+___ _ __ r..(i..(i.. ))):
+    a, b  i.. ).s..
     ___
         print(i..(a) // i..(b
     ______ BaseException __ err:

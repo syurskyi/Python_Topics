@@ -2,7 +2,7 @@
 #  Score: 25
 
 
-___ i __ r..(i..(input())):
+___ i __ r..(i..(i.. ))):
     str1 s..(input
     str2 s..(input
     __ str1 & str2 !_ s..

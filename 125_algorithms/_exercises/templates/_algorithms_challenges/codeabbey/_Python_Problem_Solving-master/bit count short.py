@@ -1,8 +1,8 @@
 ___ bitCount
 
-    codeAbbeyWaste input() # Required by CodeAbbey
+    codeAbbeyWaste i.. ) # Required by CodeAbbey
 
-    numbers input().s..
+    numbers i.. ).s..
 
     answer    # list
 

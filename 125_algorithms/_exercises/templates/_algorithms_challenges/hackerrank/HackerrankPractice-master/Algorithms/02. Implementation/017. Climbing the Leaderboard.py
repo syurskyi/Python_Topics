@@ -33,7 +33,7 @@ ___ createRankings(leaderboard
 
 
 lenOfLeaderboard i..(input
-leaderboard l.. m..(i.., input().r..().s..()))
+leaderboard l.. m..(i.., i.. ).r..().s..()))
 lenOfAliceScores i..(input
-aliceScores l.. m..(i.., input().r..().s..()))
+aliceScores l.. m..(i.., i.. ).r..().s..()))
 climbingLeaderboard(leaderboard, aliceScores)

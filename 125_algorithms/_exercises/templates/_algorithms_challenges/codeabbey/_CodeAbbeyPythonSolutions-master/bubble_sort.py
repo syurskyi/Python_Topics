@@ -19,5 +19,5 @@ ___ get_pass_and_swap_number(array
 
     print (passed, swapped)
 
-array l.. m..(i.., input().s..()))
+array l.. m..(i.., i.. ).s..()))
 get_pass_and_swap_number(array)

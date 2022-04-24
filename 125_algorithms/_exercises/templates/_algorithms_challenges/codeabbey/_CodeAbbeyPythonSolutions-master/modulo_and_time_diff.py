@@ -23,7 +23,7 @@ ___ get_time_diff(d1, h1, m1, s1, d2, h2, m2, s2
     r.. "("+s..(time_diff_day)+" "+s..(time_diff_hour) +" "+ s..(time_diff_minute)+" "+ s..(time_diff_seconds)+")"
 
 ___ i __ r..(amount_values
-    d1,h1,m1,s1,d2,h2,m2,s2 m.. i..,input().s..
+    d1,h1,m1,s1,d2,h2,m2,s2 m.. i..,i.. ).s..
     results.a..(get_time_diff(d1,h1,m1,s1, d2, h2, m2, s2
 
 print(*results)

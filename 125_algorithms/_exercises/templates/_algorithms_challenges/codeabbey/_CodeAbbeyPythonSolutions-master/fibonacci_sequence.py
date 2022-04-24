@@ -10,7 +10,7 @@ ___ get_index_of_fib_number(num
     r.. r..(index)
 
 ___ i __ r..(amount_values
-    results.a..(get_index_of_fib_number(i..(input())))
+    results.a..(get_index_of_fib_number(i..(i.. ))))
 
 print(*results)
 

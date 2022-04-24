@@ -3,8 +3,8 @@
 
 
 # use two-pointers approach on a sorted array
-n, value  m.. i.., input().s..
-points  s..(l.. m..(i.., input().s..())))
+n, value  m.. i.., i.. ).s..
+points  s..(l.. m..(i.., i.. ).s..())))
 
 ans  0
 i  0

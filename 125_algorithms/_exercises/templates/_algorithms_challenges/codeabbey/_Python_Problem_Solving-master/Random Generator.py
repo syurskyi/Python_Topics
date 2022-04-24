@@ -1,7 +1,7 @@
 #accept the number of the element to generate random numbers
 data i..(input
 #accept the numbers from which random numbers will be generated
-a l.. m..(s..,input().s..()))
+a l.. m..(s..,i.. ).s..()))
 #traverse through the list of the numbers
 ___ i __ a:
     #to store the current value of i and this is used if the numbers are repeating then print the random number

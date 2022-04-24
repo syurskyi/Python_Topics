@@ -1,4 +1,4 @@
-d input().s..
+d i.. ).s..
 result    # list
 ___ i __ r..(1,i..(d 0+1
     val i..(d[i])

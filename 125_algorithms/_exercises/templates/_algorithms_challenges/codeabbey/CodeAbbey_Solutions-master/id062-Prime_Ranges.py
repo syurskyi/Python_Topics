@@ -18,7 +18,7 @@ ___ primes_between
   searches  i..(input
   answer    # list
   ___ s.. __ r..(searches
-    a, b  input().s.. 
+    a, b  i.. ).s..
     a, b  i..(a), i..(b)
     primes  gen_primes(a, b)
     count  l..(s..(primes).s..

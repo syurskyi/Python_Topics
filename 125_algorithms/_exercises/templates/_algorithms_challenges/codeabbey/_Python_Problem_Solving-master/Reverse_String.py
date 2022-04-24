@@ -1,4 +1,4 @@
-string_data input().s..
+string_data i.. ).s..
 print(string_data)
 result    # list
 ___ i __ r..(l..(string_data:

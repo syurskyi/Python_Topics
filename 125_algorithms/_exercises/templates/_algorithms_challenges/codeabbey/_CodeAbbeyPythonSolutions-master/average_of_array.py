@@ -6,7 +6,7 @@ ___ avg(values
 
 
 ___ i __ r..(amount_values
-    values l.. m..(i.., input().s..()))
+    values l.. m..(i.., i.. ).s..()))
     avg(values)
 
 print(*results)

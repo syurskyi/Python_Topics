@@ -9,6 +9,6 @@ ___ get_progression(start, inc, s..
     results.a..(progress)
 
 ___ i __ r..(amount_values
-    start, inc, s.. m.. i.., input().s..
+    start, inc, s.. m.. i.., i.. ).s..
     get_progression(start,inc,s..)
 print(*results)

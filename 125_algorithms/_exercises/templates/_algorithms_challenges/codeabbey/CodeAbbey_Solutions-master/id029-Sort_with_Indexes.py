@@ -6,4 +6,4 @@ ___ sortIndexes(amount, values
             __ sortedValue __ values[x]:
                 answer.a..(s..(x+1
     print(' '.j..(answer
-sortIndexes(input(),[i..(x) ___ x __ raw_input().s.. ])
+sortIndexes(i.. ),[i..(x) ___ x __ raw_input().s.. ])

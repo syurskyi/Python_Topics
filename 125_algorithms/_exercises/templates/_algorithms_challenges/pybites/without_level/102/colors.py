@@ -8,7 +8,7 @@ ___ print_colors
        - if the color is not in VALID_COLORS, print 'Not a valid color' and continue.
        - otherwise print the color in lower case."""
     w... T...
-        inp input("Enter a colour:").l..
+        inp i.. "Enter a colour:").l..
         __ inp __ "quit":
             print("bye")
             _____

@@ -25,7 +25,7 @@ ___ is_matching(word
     r.. 1
 
 ___ i __ r..(amount_values
-    word input()
+    word i.. )
     results.a..(is_matching(word
 
 print(*results)

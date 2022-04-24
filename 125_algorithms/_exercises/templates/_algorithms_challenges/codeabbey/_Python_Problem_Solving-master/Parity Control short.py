@@ -1,5 +1,5 @@
 answers    # list
-___ i __ input().s.. :
+___ i __ i.. ).s.. :
     c bin(i..(i
     __ n.. c.c.. "1") % 2:
         answers.a..(chr(i..(i) % 128

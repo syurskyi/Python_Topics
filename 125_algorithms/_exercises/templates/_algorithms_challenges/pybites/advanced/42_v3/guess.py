@@ -26,7 +26,7 @@ c_ Game:
            'Number not in range'
            'Already guessed'
            If all good, return the int"""
-        guess input('Your guess: ')
+        guess i.. 'Your guess: ')
         __ n.. guess:
             print('Please enter a number')
             r.. V...('Nothing entered')

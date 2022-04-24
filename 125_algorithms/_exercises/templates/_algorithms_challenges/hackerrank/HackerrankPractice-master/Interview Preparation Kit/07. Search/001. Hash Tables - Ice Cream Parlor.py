@@ -6,7 +6,7 @@ t i..(input
 ___ i __ r..(t
     money i..(input
     n i..(input
-    arr l.. m..(i.., input().s..()))
+    arr l.. m..(i.., i.. ).s..()))
 
     saved_values    # dict
     ___ counter, value __ e..(arr

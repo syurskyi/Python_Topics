@@ -1,5 +1,5 @@
 #accept both names of the couple
-name1,name2=a,b input('Enter the name of a couple of whom you wanna see FUTURE').s..
+name1,name2=a,b i.. 'Enter the name of a couple of whom you wanna see FUTURE').s..
 
 #remove the similar element from both the string
 ___ i __ a:

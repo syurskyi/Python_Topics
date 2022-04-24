@@ -3,7 +3,7 @@
 
 
 n i..(input
-arr l.. m..(i.., input().s..()))
+arr l.. m..(i.., i.. ).s..()))
 count 0
 
 i 0

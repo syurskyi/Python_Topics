@@ -2,7 +2,7 @@
 # Score: 45
 
 
-n1, n2, n m.. i.., input().s..
+n1, n2, n m.. i.., i.. ).s..
 sequence [n1, n2]
 __ n <_ 2:
     print(sequence[n-1])

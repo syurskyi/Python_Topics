@@ -1,4 +1,4 @@
-values l.. m..(i.., input().s..()))
+values l.. m..(i.., i.. ).s..()))
 
 ___ get_max_and_min
     m.. values[0]

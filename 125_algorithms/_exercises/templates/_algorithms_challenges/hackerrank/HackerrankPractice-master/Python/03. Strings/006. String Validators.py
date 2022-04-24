@@ -2,7 +2,7 @@
 # Score: 10
 
 
-s input()
+s i.. )
 print(a__([char.i..() ___ char __ s]
 print(a__([char.i.. ___ char __ s]
 print(a__([char.i.. ___ char __ s]

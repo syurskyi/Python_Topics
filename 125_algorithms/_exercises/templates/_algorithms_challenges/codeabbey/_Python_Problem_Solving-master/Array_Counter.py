@@ -1,5 +1,5 @@
 #initializing the number of elements and different types of number 
-num_ele, num_type_element input().s..
+num_ele, num_type_element i.. ).s..
 num_ele i..(num_ele)
 num_ele i..(num_ele)
 num_type_element i..(num_type_element)
@@ -15,7 +15,7 @@ ava_check T..
 arr_check ={}
 
 w.... l..(ele) < num_ele:
-    ele input().s..
+    ele i.. ).s..
     ele.s..()
     #going through the all the elements
     ___ i __ r..(l..(ele:

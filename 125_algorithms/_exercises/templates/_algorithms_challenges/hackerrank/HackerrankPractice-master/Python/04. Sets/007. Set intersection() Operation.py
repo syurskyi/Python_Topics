@@ -2,6 +2,6 @@
 # Score: 10
 
 
-_, a input(), s..(input().s..
-_, b input(), s..(input().s..
+_, a i.. ), s..(i.. ).s..
+_, b i.. ), s..(i.. ).s..
 print(l..(a.i.. b)))

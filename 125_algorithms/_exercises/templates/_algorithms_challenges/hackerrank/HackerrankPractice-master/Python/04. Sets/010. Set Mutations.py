@@ -3,8 +3,8 @@
 
 
 ___ handler(a
-    command input().s.. [0]
-    new_set s.. m..(i.., input().s..()))
+    command i.. ).s.. [0]
+    new_set s.. m..(i.., i.. ).s..()))
     __ command __ 'intersection_update':
         a.intersection_update(new_set)
     __ command __ 'update':
@@ -15,7 +15,7 @@ ___ handler(a
         a.difference_update(new_set)
 
 
-_, a input(), s.. m..(i.., input().s..()))
-___ i __ r..(i..(input())):
+_, a i.. ), s.. m..(i.., i.. ).s..()))
+___ i __ r..(i..(i.. ))):
     handler(a)
 print(s..(a

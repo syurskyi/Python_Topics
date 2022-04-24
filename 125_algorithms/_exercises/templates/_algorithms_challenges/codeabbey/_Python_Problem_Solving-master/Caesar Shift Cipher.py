@@ -1,6 +1,6 @@
 _______ s__
 #accept the data
-data, k l.. m..(i..,input().s..()))
+data, k l.. m..(i..,i.. ).s..()))
 
 # import string is used to get all 26 alphabets 
 s1 s__.a..
@@ -18,7 +18,7 @@ ___ i __ r..(l..(s1:
 #now for number of test cases run the for loop
 ___ i __ r..(data
     #accept the test cases and convert it to lowercase
-    s input().l..
+    s i.. ).l..
     #variable to store the result
     res ''
     #check every element of the string

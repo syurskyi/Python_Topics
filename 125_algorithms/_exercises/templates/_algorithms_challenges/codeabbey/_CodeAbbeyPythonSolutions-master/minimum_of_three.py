@@ -10,7 +10,7 @@ ___ get_min(values
     r.. m..
 
 ___ i __ r..(amount_values
-    values l.. m..(i.., input().s..()))
+    values l.. m..(i.., i.. ).s..()))
     results.a..(get_min(values
 
 print(*results)

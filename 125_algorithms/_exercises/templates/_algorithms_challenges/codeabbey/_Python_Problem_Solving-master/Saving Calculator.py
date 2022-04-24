@@ -1,9 +1,9 @@
 #accept the number of inputs
-___ i __ r..(i..(input())):
+___ i __ r..(i..(i.. ))):
     
     #accept the three values S,R and P where S is current money R is the amount of money to be achieved and
     #P is the rate of interest
-    a  l.. m..(i.., input().s..()))
+    a  l.. m..(i.., i.. ).s..()))
     
     s,r,p  a
     year_count  0

@@ -7,4 +7,4 @@ ___ smooth(amount, numbers
             smoothNum (f__(numbers[x-1]) + f__(numbers[x]) + f__(numbers[x+1] / 3
             answer.a..(s..(smoothNum
     print(' '.j..(answer
-smooth(input(),raw_input().s..
+smooth(i.. ),raw_input().s..

@@ -32,7 +32,7 @@ c_ Game:
         
         w... T...
             ___
-                number input("Guess a number between 1 and 20: ")
+                number i.. "Guess a number between 1 and 20: ")
                 result i..(number)
             ______:
                 __ number __ N.. o. l..(number) __ 0:

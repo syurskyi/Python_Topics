@@ -16,6 +16,6 @@ ___ count_triplets(arr, r
     r.. count
 
 
-n, r m.. i.., input().s..
-arr l.. m..(i.., input().s..()))
+n, r m.. i.., i.. ).s..
+arr l.. m..(i.., i.. ).s..()))
 print(count_triplets(arr, r

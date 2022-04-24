@@ -2,7 +2,7 @@ data i..(input
 s__ ''
 
 ___ i __ r..(data
-    a [i..(j) ___ j __ input().s.. ]
+    a [i..(j) ___ j __ i.. ).s.. ]
     dest_a a[:l..(a)//2]
     dest_b a[l..(a)//2:]
     day_a, hour_a, min_a,sec_a dest_a

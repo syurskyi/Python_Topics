@@ -1,6 +1,6 @@
 #accepting the two strings
-s1 ''.j..(i ___ i __ input() __ i.islower
-s2 ''.j..(i ___ i __ input() __ i.islower
+s1 ''.j..(i ___ i __ i.. ) __ i.islower
+s2 ''.j..(i ___ i __ i.. ) __ i.islower
 #using sorted to arrange the string in order before processing them
 s1 s..(s1)
 s2 s..(s2)

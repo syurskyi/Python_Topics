@@ -1,5 +1,5 @@
-input()
-data l.. m..(i.., input().s..()))
+i.. )
+data l.. m..(i.., i.. ).s..()))
 index s..(data)
 print(index)
 ___ i __ index:

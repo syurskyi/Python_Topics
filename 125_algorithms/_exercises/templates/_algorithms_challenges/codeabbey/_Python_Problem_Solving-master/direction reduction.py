@@ -1,5 +1,5 @@
 #accepting the directions from the user
-direction  l.. m..(s.., input().s..()))
+direction  l.. m..(s.., i.. ).s..()))
 #Modifying the directions to uppercase
 direction  [x.u.. ___ x __ direction]
 

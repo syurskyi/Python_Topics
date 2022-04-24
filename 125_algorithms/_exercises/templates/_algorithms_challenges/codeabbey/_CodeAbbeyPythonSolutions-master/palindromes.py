@@ -13,7 +13,7 @@ ___ is_palindrome(s__
     r.. "Y"
 
 ___ i __ r..(amount_values
-    s__ input()
+    s__ i.. )
     results.a..(is_palindrome(s__
 
 print(*results)

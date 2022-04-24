@@ -1,7 +1,7 @@
 #accept the number and the number of guesses
-n,c  l.. m..(s.., input().s..()))
+n,c  l.. m..(s.., i.. ).s..()))
 #accept the guesses
-guess  l.. m..(s.., input().s..()))
+guess  l.. m..(s.., i.. ).s..()))
 
 #look for the bulls and cows
 ___ i __ guess:

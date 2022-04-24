@@ -2,7 +2,7 @@ data i..(input
 
 res= ''
 ___ i __ r..(0,data
-    para input().s..
+    para i.. ).s..
     
     para l.. m..(i..,para
     

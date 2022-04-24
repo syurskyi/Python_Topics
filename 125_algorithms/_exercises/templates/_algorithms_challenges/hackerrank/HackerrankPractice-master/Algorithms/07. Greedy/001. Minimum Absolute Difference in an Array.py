@@ -2,8 +2,8 @@
 # Score: 15
 
 
-_  input()
-arr  s.. m..(i.., input().s..()))
+_  i.. )
+arr  s.. m..(i.., i.. ).s..()))
 diff  2*10**9
 ___ i __ r..(1, l..(arr:
     diff  m..(diff, arr[i] - arr[i-1])

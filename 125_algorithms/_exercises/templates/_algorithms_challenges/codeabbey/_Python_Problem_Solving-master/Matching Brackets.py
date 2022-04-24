@@ -1,7 +1,7 @@
 #take the number of strings that are needed to be checked
-___ i __ r..(i..(input())):
+___ i __ r..(i..(i.. ))):
     #accept the string
-    s__ input()
+    s__ i.. )
     #store_str is used to store only the brackets
     store_str    # list
     #para list is used to check whether the character in string is equal to elements of para

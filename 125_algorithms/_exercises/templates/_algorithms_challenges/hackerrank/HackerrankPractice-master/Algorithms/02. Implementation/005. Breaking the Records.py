@@ -16,5 +16,5 @@ ___ breaking_records(score
 
 
 n i..(input
-score l.. m..(i.., input().s..()))
+score l.. m..(i.., i.. ).s..()))
 print(*breaking_records(score

@@ -1,6 +1,6 @@
 data i..(input
 
-a [i..(x) ___ x __ input().s.. ]
+a [i..(x) ___ x __ i.. ).s.. ]
 #print(len(a))
 res    # list
 ___ i __ r..(l..(a:

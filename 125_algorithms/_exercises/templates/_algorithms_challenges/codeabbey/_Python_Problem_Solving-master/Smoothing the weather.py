@@ -1,7 +1,7 @@
 #number of measurements to inserted
 data i..(input
 #enter all the measurements seperated by space
-mea l.. m..(f__, input().s..()))
+mea l.. m..(f__, i.. ).s..()))
 #this array is used to store the results
 mea_store    # list
 

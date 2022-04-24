@@ -2,7 +2,7 @@
 d i..(input
 
 #accept the decimal numbers to be converted to binary
-binary  = l.. m..(i..,input().s..()))
+binary  = l.. m..(i..,i.. ).s..()))
 
 #loop through all the elements
 ___ j __ binary:

@@ -9,6 +9,6 @@ c_ OrderedCounter(C.., O..
     p..
 
 
-ordered_counter  OrderedCounter(input() ___ _ __ r..(i..(input())))
+ordered_counter  OrderedCounter(i.. ) ___ _ __ r..(i..(i.. ))))
 print(l..(ordered_counter
 print(*ordered_counter.values
