@@ -22,6 +22,6 @@ Note: you need to pip install freezegun if you want to run the tests locally.
 
 ____ d__ _______ d__
 
-___ ontrack_reading(books_goal: i.., books_read: i..,
-                    day_of_year: i.. N..) __ b..
+___ ontrack_reading books_goal i.. books_read i..
+                    day_of_year i.. N.. __ b..
     p..
