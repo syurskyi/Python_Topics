@@ -28,6 +28,6 @@ c_ Solution(o..
                     d[c] T..
                 rest_perms permuteUnique(nums[:i] + nums[i + 1:])
                 ___ perm __ rest_perms:
-                    perm.insert(0, c)
+                    perm.i.. 0, c)
                 res += rest_perms
             r.. res

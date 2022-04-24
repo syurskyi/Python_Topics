@@ -17,10 +17,10 @@ c_ Account:
     # into a 'rollback' context manager
     ___ __enter__
         _rollback _transactions.c..
-        r.. self
+        r.. _
 
     ___ __exit__  exc_type, exc_val, exc_tb
         __ exc_type __ n.. N.. o. balance < 0:
             _transactions _rollback
         _rollback N..
-        r.. self
+        r.. _

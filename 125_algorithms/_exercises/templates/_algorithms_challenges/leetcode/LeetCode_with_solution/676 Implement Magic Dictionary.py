@@ -43,7 +43,7 @@ c_ MagicDictionary:
                     cur.end T..
                 ____
                     nxt s[i+1]
-                    cur.children[nxt] insert(cur.children[nxt], s, i + 1)
+                    cur.children[nxt] i.. cur.children[nxt], s, i + 1)
 
                 r.. cur
 
@@ -71,7 +71,7 @@ c_ MagicDictionary:
         """
         ___ s __ dic:
             root trie.root
-            root.children[s[0]] trie.insert(root.children[s[0]], s, 0)
+            root.children[s[0]] trie.i.. root.children[s[0]], s, 0)
 
     ___ s..  word: s..) __ b..
         """

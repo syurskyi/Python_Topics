@@ -15,7 +15,7 @@ c_ Solution:
                     _____
                 rest_subsets subsets_aux(nums[i + 1:])
                 ___ subset __ rest_subsets:
-                    subset.insert(0, e)
+                    subset.i.. 0, e)
                 res += rest_subsets
             r.. res
 

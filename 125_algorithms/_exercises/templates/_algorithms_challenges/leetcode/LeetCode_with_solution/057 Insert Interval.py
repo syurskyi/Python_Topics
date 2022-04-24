@@ -79,4 +79,4 @@ __ _______ __ _______
     lst_interval    # list
     ___ item __ lst:
         lst_interval.a..(Interval(item[0], item[1]
-    print Solution().insert(lst_interval, Interval(insert[0], insert[1]
+    print Solution().i.. lst_interval, Interval(insert[0], insert[1]

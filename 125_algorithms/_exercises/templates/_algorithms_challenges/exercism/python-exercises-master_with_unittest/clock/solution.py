@@ -21,4 +21,4 @@ c_ Clock(o..
         hour += minute // 60
         hour %= 24
         minute %= 60
-        r.. self
+        r.. _

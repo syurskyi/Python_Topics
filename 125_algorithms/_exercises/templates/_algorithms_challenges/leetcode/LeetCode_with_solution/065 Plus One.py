@@ -23,7 +23,7 @@ c_ Solution(o..
                 d..[i] -_ 10
 
         # MSB
-        d...insert(0, 1)
+        d...i.. 0, 1)
         r.. d..
 
     ___ plusOne  d..

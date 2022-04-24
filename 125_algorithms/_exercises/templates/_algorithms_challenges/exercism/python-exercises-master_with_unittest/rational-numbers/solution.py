@@ -1,4 +1,4 @@
-____ __future__ _______ division
+____ __f.. _______ division
 
 ____ fractions _______ gcd
 
@@ -47,7 +47,7 @@ c_ Rational(o..
 
     ___ __abs__
         __ numer >_ 0:
-            r.. self
+            r.. _
         ____
             r.. Rational(-numer, denom)
 

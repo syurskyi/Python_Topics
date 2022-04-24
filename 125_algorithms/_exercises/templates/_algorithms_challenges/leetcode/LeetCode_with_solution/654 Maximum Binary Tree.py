@@ -79,7 +79,7 @@ c_ Solution_heap:
         root N..
         w.... h:
             _, m h__.heappop(h)
-            root insert(root, m, idx)
+            root i.. root, m, idx)
 
         r.. root
 
@@ -88,9 +88,9 @@ c_ Solution_heap:
             r.. TreeNode(m)
 
         __ idx[m] < idx[node.val]:
-            node.left insert(node.left, m, idx)
+            node.left i.. node.left, m, idx)
         ____ idx[m] > idx[node.val]:
-            node.right insert(node.right, m, idx)
+            node.right i.. node.right, m, idx)
         ____
             r..
 

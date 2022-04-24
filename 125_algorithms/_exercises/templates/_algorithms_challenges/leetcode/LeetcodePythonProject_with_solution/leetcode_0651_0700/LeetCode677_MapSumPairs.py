@@ -50,6 +50,6 @@ c_ MapSum(o..
 
 __ _____ __ _____
     mapSum MapSum()
-    mapSum.insert('aa', 3)
-    mapSum.insert('aa', 2)
+    mapSum.i.. 'aa', 3)
+    mapSum.i.. 'aa', 2)
     print(mapSum.s..('a'

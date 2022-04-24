@@ -40,7 +40,7 @@ c_ IntList(l..
             __ a..(t..(v) __ (i..,f__,Decimal) ___ v __ value
                 ___ v __ value:
                     a..(v)
-                r.. self
+                r.. _
             ____
                 r.. T..
         ____

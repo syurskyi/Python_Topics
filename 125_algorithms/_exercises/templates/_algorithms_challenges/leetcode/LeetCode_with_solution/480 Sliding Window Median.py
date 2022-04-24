@@ -117,12 +117,12 @@ c_ Solution:
         ret    # list
         dh DualHeap()
         ___ i __ r..(k
-            dh.insert(nums[i])
+            dh.i.. nums[i])
 
         ret.a..(dh.get_median(k
 
         ___ i __ r..(k, l..(nums:
-            dh.insert(nums[i])
+            dh.i.. nums[i])
             dh.p.. nums[i-k])
             ret.a..(dh.get_median(k
 

@@ -48,7 +48,7 @@ c_ MapSum:
                     delta val - cur.val
                     cur.val val
                 ____
-                    cur.children[key[i+1]], delta insert(cur.children[key[i+1]], key, i + 1, val)
+                    cur.children[key[i+1]], delta i.. cur.children[key[i+1]], key, i + 1, val)
 
                 cur.s.. += delta
                 r.. cur, delta
@@ -57,7 +57,7 @@ c_ MapSum:
 
     ___ insert  key: s.., val: i..) __ N..
         root trie.root
-        root.children[key[0]], _ trie.insert(root.children[key[0]], key, 0, val)
+        root.children[key[0]], _ trie.i.. root.children[key[0]], key, 0, val)
 
     ___ s..  prefix: s..) __ i..
         node trie.root
@@ -98,7 +98,7 @@ c_ MapSum2:
 
                 cur pi.children[key[i]]
                 __ i + 1 < l..(key
-                    cur.children[key[i+1]], delta insert(cur, key, i + 1, val)
+                    cur.children[key[i+1]], delta i.. cur, key, i + 1, val)
                 ____
                     delta val - cur.val
                     cur.val val
@@ -109,7 +109,7 @@ c_ MapSum2:
         trie Trie()
 
     ___ insert  key: s.., val: i..) __ N..
-        trie.insert(trie.root, key, 0, val)
+        trie.i.. trie.root, key, 0, val)
 
     ___ s..  prefix: s..) __ i..
         node trie.root

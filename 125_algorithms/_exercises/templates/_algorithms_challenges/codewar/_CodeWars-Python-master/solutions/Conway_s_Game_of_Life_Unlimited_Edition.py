@@ -14,9 +14,9 @@ ___ get_generation(cells, generations
         origin get_generation(origin, generations - 1)
 
     ___ row __ origin:
-        row.insert(0, 0)
+        row.i.. 0, 0)
         row.a..(0)
-    origin.insert(0, [0] * l..(origin[0]
+    origin.i.. 0, [0] * l..(origin[0]
     origin.a..([0] * l..(origin[0]
 
     result d..(origin)

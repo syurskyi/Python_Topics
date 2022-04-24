@@ -77,7 +77,7 @@ c_ Solution(o..
         sig 0
         ret [0]
         ___ ind, val __ e..(lst
-            ___ i __ x..(sig val.insert(0, 0)  # possible deque
+            ___ i __ x..(sig val.i.. 0, 0)  # possible deque
             ret add(ret, val)
             sig += 1
         r.. ret

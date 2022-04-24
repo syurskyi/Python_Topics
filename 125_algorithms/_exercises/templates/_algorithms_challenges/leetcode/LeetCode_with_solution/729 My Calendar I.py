@@ -67,13 +67,13 @@ c_ MyCalendar:
             r.. Node(s, e)
 
         __ e <_ node.s:
-            left insert(node.left, s, e)
+            left i.. node.left, s, e)
             __ left __ N..
                 r.. N..
             node.left left
             r.. node
         ____ s >_ node.e:
-            right insert(node.right, s, e)
+            right i.. node.right, s, e)
             __ right __ N..
                 r.. N..
             node.right right
@@ -82,7 +82,7 @@ c_ MyCalendar:
             r.. N..
 
     ___ book  start: i.., end: i..) __ b..
-        ret insert(root, start, end)
+        ret i.. root, start, end)
         __ ret __ N..
             r.. F..
 

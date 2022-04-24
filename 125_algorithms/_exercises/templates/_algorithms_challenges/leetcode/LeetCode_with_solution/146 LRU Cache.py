@@ -92,7 +92,7 @@ c_ LRUCache_TLE(o..
     ___ get  key
         __ key __ dic:
             q.remove(key)
-            q.insert(0, key)
+            q.i.. 0, key)
             r.. dic[key]
         ____
             r.. -1
@@ -108,12 +108,12 @@ c_ LRUCache_TLE(o..
         """
         __ key __ dic:
             q.remove(key)
-            q.insert(0, key)
+            q.i.. 0, key)
         ____
             __ l..(q)+1 <_ capacity:
-                q.insert(0, key)
+                q.i.. 0, key)
             ____
                 dic.p.. q.pop
-                q.insert(0, key)
+                q.i.. 0, key)
 
         dic[key] value

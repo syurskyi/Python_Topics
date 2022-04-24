@@ -26,10 +26,10 @@ c_ Solution:
         length l..(triangle)
 
         # trivial
-        dp.insert(0, [num ___ num __ triangle[length-1]])
+        dp.i.. 0, [num ___ num __ triangle[length-1]])
         # starting from penultimate row
         ___ row __ x..(length-1-1, -1, -1
-            dp.insert(0, [])
+            dp.i.. 0, [])
             ___ col __ x..(l..(triangle[row]:
                 dp[0].a..(triangle[row][col]+m..(dp[1][col], dp[1][col+1]  # next level
 

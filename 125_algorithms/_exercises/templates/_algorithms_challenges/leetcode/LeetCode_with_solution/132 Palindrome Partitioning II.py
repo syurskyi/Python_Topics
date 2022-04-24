@@ -130,7 +130,7 @@ c_ Solution(o..
                         cut2 val[i:]
                         new_cur l..(cur)
                         new_cur[ind] cut1
-                        new_cur.insert(ind+1, cut2)
+                        new_cur.i.. ind+1, cut2)
                         q.a..(new_cur)
             q q[length:]
 

@@ -7,7 +7,7 @@ c_ Thumbs:
 
     ___ __rmul__ number
 
-        r.. self * number
+        r.. _ * number
 
     ___ __mul__ number
         __ isi..(number,i..

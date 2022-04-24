@@ -9,7 +9,7 @@ c_ Solution(o..
         res    # list
         people.s..(k.._l.... x: (-x[0], x[1]
         ___ p __ people:
-            res.insert(p[1], p)
+            res.i.. p[1], p)
         r.. res
         
     ___ test

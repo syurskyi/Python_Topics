@@ -20,7 +20,7 @@ c_ FileLike(o..
 
     ___ __enter__
         o.. )
-        r.. self
+        r.. _
 
     ___ __exit__  *args
         c..

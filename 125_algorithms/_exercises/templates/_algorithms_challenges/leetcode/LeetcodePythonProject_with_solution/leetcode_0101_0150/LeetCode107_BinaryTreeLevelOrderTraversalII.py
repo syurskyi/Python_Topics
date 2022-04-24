@@ -32,7 +32,7 @@ c_ Solution(o..
             __ node.right:
                 nextQueue.a..(node.right)
             __ n.. queue:
-                result.insert(0, elem)
+                result.i.. 0, elem)
                 queue nextQueue
                 nextQueue    # list
                 elem    # list

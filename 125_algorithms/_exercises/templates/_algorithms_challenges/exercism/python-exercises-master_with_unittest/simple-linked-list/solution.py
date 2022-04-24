@@ -15,7 +15,7 @@ c_ LinkedIterator(o..
         current linked_list._head
 
     ___ -i
-        r.. self
+        r.. _
 
     ___ -n
         __ current __ N..

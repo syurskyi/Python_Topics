@@ -23,7 +23,7 @@ c_ Calculator:
             operator operator_stack.p.. 0)
             num1 num_stack.p.. 0)
             num2 num_stack.p.. 0)
-            num_stack.insert(0, evaluate(operator, num1, num2
+            num_stack.i.. 0, evaluate(operator, num1, num2
         r.. num_stack.p.. 0)
 
     ___ evaluate  operator, num1, num2

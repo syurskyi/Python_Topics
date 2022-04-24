@@ -49,7 +49,7 @@ c_ LinkedListIterator:
         _current linked_list._head
 
     ___ -i
-        r.. self
+        r.. _
 
     ___ -n
         __ _current __ N..

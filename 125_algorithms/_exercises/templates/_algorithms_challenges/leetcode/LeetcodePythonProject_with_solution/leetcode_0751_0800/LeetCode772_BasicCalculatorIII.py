@@ -22,10 +22,10 @@ c_ Solution(o..
                     num num*10+o..(s[i])-o..('0')
                 l2 l2*num __ o2__1 ____ l2//num
             ____ c __ '(':
-                d...insert(0, l1)
-                d...insert(0, o1)
-                d...insert(0, l2)
-                d...insert(0, o2)
+                d...i.. 0, l1)
+                d...i.. 0, o1)
+                d...i.. 0, l2)
+                d...i.. 0, o2)
                 l1, o1 0, 1
                 l2, o2 1, 1
             ____ c __ ')':

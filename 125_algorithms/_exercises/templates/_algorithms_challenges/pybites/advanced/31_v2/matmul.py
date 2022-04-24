@@ -23,4 +23,4 @@ c_ Matrix(o..
 
     ___ __imatmul__  other
         _values _matrix_mult(values, other.values)
-        r.. self
+        r.. _

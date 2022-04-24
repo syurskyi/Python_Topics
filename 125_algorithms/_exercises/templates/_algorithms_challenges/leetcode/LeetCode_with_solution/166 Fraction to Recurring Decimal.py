@@ -52,7 +52,7 @@ c_ Solution:
             r num%deno
             __ (q, r) __ d:
                 ret.a..(")")
-                ret.insert(d[(q, r)], "(")
+                ret.i.. d[(q, r)], "(")
                 r.. "".j..(ret)
 
             ret.a..(s..(q
@@ -97,7 +97,7 @@ c_ Solution_error:
             r num/deno
             __ r __ d:
                 ret.a..(")")
-                ret.insert(d[r]-(l-1), "(")
+                ret.i.. d[r]-(l-1), "(")
                 r.. "".j..(ret)
 
             ___ _ __ x..(l-1

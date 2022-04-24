@@ -31,7 +31,7 @@ c_ Solution(o..
                     queue.a..(nextWord)
     
     ___ dfs  beginWord, word, distance, wordSet, res, curr
-        curr.insert(0, word)
+        curr.i.. 0, word)
         __ word __ beginWord:
             res.a..(l..(curr
         ____

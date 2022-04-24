@@ -14,9 +14,9 @@ c_ Account:
         _transactions.a..(-amount)
 
     ___ __enter__
-        r.. self
+        r.. _
 
     ___ __exit__  *_
         w.... balance < 0:
             _transactions.p.. )
-        r.. self
+        r.. _

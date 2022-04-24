@@ -33,7 +33,7 @@ c_ Solution:
             a %= b
 
             __ a __ D:
-                ans.insert(D[a], '(')
+                ans.i.. D[a], '(')
                 ans.a..(')')
                 _____
 

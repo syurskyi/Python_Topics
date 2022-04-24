@@ -64,21 +64,21 @@ c_ Codec:
             
         lst l.. m..(i.., data.s..(DELIMITER)))
         root TreeNode(lst 0
-        ___ insert(root, val
+        ___ i.. root, val
             # need to keep the parent
             __ val < root.val:
                 __ n.. root.left:
                     root.left TreeNode(val)
                 ____
-                    insert(root.left, val)
+                    i.. root.left, val)
             ____
                 __ n.. root.right:
                     root.right TreeNode(val)
                 ____
-                    insert(root.right, val)
+                    i.. root.right, val)
 
         ___ a __ lst 1|
-            insert(root, a)
+            i.. root, a)
 
         r.. root
 

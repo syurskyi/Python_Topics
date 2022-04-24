@@ -41,7 +41,7 @@ c_ LCInfo(o..
         n_int_parts    # list
         w.... n_int > 0
             n_int, x divmod(n_int, 1000)
-            n_int_parts.insert(0, s..(x
+            n_int_parts.i.. 0, s..(x
         r.. '{}{}{:02}'.f..(
             thousands.j..(n_int_parts) o. '0',
             decimal,

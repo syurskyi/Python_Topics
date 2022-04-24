@@ -12,7 +12,7 @@ c_ Zipper(o..
 
     ___ set_value  value
         tree 'value'  = value
-        r.. self
+        r.. _
 
     ___ left
         __ tree 'left'  __ N..
@@ -21,7 +21,7 @@ c_ Zipper(o..
 
     ___ set_left  tree
         tree 'left'  = tree
-        r.. self
+        r.. _
 
     ___ right
         __ tree 'right'  __ N..
@@ -30,7 +30,7 @@ c_ Zipper(o..
 
     ___ set_right  tree
         tree 'right'  = tree
-        r.. self
+        r.. _
 
     ___ up
         r.. Zipper(ancestors[-1], ancestors[:-1])

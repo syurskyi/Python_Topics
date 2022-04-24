@@ -54,7 +54,7 @@ c_ WordDictionary:
     ___ addWord  word
         __ n.. word:
             r..
-        trie.insert(word)
+        trie.i.. word)
 
     """
     @param: word: A word could contain the dot character '.' to represent any one letter.

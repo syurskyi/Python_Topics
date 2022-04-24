@@ -30,7 +30,7 @@ c_ Solution(o..
             r..
         ___ word __ dp[i]:
             __ i >_ l..(word
-                curr.insert(0, word)
+                curr.i.. 0, word)
                 helper(dp, i-l..(word), res, curr)
                 curr.p.. 0)
     

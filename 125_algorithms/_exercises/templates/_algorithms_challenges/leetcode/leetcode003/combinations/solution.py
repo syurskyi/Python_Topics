@@ -34,6 +34,6 @@ c_ Solution(o..
             ___ i, e __ e..(a
                 rest_comb combine_aux(a[i + 1:], k - 1)
                 ___ comb __ rest_comb:
-                    comb.insert(0, e)
+                    comb.i.. 0, e)
                 res += rest_comb
             r.. res

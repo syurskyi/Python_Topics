@@ -49,7 +49,7 @@ c_ LRUCache(o..
             node ListNode(key, value)
             cache[key] node
             # Insert node with key to the head
-            times.insert(node)
+            times.i.. node)
 
 
 c_ ListNode(o..

@@ -17,7 +17,7 @@ c_ JsObject(d..
     
 
     ___ __getattr__ key
-        r.. self[key]
+        r.. _[key]
     
 
     ___ __setattr__ name,value

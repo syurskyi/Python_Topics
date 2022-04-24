@@ -16,6 +16,6 @@ c_ Solution:
                 ____
                     rest_subsets _subsets(S[i + 1:], k - 1)
                     ___ subset __ rest_subsets:
-                        subset.insert(0, S[i])
+                        subset.i.. 0, S[i])
                     res += rest_subsets
             r.. res

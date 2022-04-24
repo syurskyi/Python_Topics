@@ -44,7 +44,7 @@ c_ NestedIterator(o..
                 l ni.getList()
                 l.r..
                 ___ ni0 __ l:
-                    d...insert(0, ni0)
+                    d...i.. 0, ni0)
         result result
 
     ___ next

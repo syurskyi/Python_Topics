@@ -15,8 +15,8 @@ c_ RangeModule(o..
         ___ i.. x
             i b__.bisect_left(X, x)
             __ X[i] !_ x:
-                X.insert(i, x)
-                track.insert(i, track[i-1])
+                X.i.. i, x)
+                track.i.. i, track[i-1])
             r.. i
         i i.. left)
         j i.. right)

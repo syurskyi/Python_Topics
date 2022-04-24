@@ -59,7 +59,7 @@ c_ DB:
         connection sqlite3.connect(location)
         cursor connection.cursor()
 
-        r.. self
+        r.. _
 
     ___ __exit__  exc_type, exc_value, traceback
         connection.c..

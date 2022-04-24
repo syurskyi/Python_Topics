@@ -20,7 +20,7 @@ c_ Matrix(o..
     ___ __imatmul__  other
         Y self @ other
         values Y.values
-        r.. self
+        r.. _
 
     ___ __rmatmul__  other
-        r.. self @ other
+        r.. _ @ other

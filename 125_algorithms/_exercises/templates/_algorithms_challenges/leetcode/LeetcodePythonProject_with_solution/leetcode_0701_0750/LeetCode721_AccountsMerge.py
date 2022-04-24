@@ -29,7 +29,7 @@ c_ Solution(o..
         res    # list
         ___ p __ unions:
             emails s..(l..(unions[p]
-            emails.insert(0, owner[p])
+            emails.i.. 0, owner[p])
             res.a..(emails)
         r.. res
     

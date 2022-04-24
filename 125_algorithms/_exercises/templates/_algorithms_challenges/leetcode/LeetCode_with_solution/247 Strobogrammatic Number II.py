@@ -69,7 +69,7 @@ c_ SolutionArray(o..
 
         ___ elt __ map1:
             __ elt !_ "00" o. l..(cur) !_ n-2:
-                cur.insert(0, elt 0
+                cur.i.. 0, elt 0
                 cur.a..(elt[1])
                 build(n, cur, ret)
                 cur.p.. )

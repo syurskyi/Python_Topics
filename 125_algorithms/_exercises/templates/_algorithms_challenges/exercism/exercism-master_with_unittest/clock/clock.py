@@ -14,7 +14,7 @@ c_ Clock:
     ___ add  additional_mins
         mins += additional_mins
         fixup()
-        r.. self
+        r.. _
 
     ___ fixup
         fixup_mins()

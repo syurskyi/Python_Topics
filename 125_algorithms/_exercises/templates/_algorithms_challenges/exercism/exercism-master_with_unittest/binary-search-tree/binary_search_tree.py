@@ -13,7 +13,7 @@ c_ BinarySearchTree(o..
     ___ - , tree_data
         head N..
         ___ node_data __ tree_data:
-            insert(node_data)
+            i.. node_data)
 
     ___ data
         r.. head

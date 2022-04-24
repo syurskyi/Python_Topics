@@ -56,7 +56,7 @@ c_ DB:
         table_schemas    # dict
 
     ___ __enter__
-        r.. self
+        r.. _
 
     ___ __exit__  exc_type, exc_value, traceback
         connection.c..

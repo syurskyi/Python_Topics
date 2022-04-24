@@ -22,7 +22,7 @@ c_ Solution(o..
     ___ dfs  result, hashmap, elem
         w.... hashmap.g.. elem
             dfs(result, hashmap, h__.heappop(hashmap[elem]
-        result.insert(0, elem)
+        result.i.. 0, elem)
     
     ___ test
         testCases [

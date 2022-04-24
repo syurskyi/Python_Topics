@@ -17,9 +17,9 @@ c_ Solution(o..
             w.... stack a.. nums[stack[-1]] <_ nums[i]:
                 stack.p.. )
             __ stack:
-                res.insert(0, nums[stack[-1]])
+                res.i.. 0, nums[stack[-1]])
             ____
-                res.insert(0, -1)
+                res.i.. 0, -1)
             stack.a..(i)
         r.. res
     

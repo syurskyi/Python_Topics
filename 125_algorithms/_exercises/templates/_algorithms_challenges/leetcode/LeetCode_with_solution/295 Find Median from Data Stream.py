@@ -82,7 +82,7 @@ c_ MedianFinder(o..
         :type num: int
         :rtype: void
         """
-        dh.insert(num)
+        dh.i.. num)
 
     ___ findMedian
         """

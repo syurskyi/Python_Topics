@@ -42,7 +42,7 @@ c_ Trie:
         root Node(N..)  # dummy
 
     ??
-    ___ insert(cls, node, w, i
+    ___ i.. cls, node, w, i
         __ n.. node:
             node Node(w[i])
 
@@ -50,7 +50,7 @@ c_ Trie:
             node.ended T..
         ____
             nxt w[i + 1]
-            node.children[nxt]  ?.insert(node.children[nxt], w, i + 1)
+            node.children[nxt]  ?.i.. node.children[nxt], w, i + 1)
 
         r.. node
 
@@ -74,7 +74,7 @@ c_ Solution:
         trie Trie()
         ___ word __ dic:
             root trie.root
-            root.children[word[0]] Trie.insert(root.children[word[0]], word, 0)
+            root.children[word[0]] Trie.i.. root.children[word[0]], word, 0)
 
         ret    # list
         ___ word __ sentence.s..(" "

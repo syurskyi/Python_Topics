@@ -48,12 +48,12 @@ c_ Matrix(o..
         values d..(result.values)
 
 
-        r.. self
+        r.. _
 
     
     ___ __rmatmul__ other
 
-        r.. self  @ other
+        r.. _  @ other
 
 
 

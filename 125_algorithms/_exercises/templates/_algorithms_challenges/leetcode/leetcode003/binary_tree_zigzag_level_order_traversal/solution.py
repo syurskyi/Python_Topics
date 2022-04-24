@@ -46,7 +46,7 @@ c_ Solution:
                 rev n.. rev  # Toggle direction
             ____
                 __ rev:
-                    level.insert(0, root.val)
+                    level.i.. 0, root.val)
                 ____
                     level.a..(root.val)
                 __ root.left __ n.. N..

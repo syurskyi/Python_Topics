@@ -20,6 +20,6 @@ c_ Solution(o..
             n, remainder divmod(remainder*10, a..(denominator
             result.a..(s..(n
         idx stack.i.. remainder)
-        result.insert(idx+2, '(')
+        result.i.. idx+2, '(')
         result.a..(')')
         r.. ''.j..(result).r..('(0)', '').r..('.')

@@ -32,7 +32,7 @@ c_ Solution(o..
             ____
                 r (i..(a[i]) + c) % 2
                 c (i..(a[i]) + c) / 2
-            res.insert(0, s..(r
+            res.i.. 0, s..(r
         __ c __ 1:
-            res.insert(0, s..(c
+            res.i.. 0, s..(c
         r.. ''.j..(res)

@@ -47,7 +47,7 @@ c_ Solution(o..
             intervals [Interval(x[0], x[1]) ___ x __ intervals]
             newInterval Interval(newInterval[0], newInterval[1])
             print('intervals: %s' % (intervals
-            result insert(intervals, newInterval)
+            result i.. intervals, newInterval)
             print('result: %s' % (result
             print('-='*15+'-')
 

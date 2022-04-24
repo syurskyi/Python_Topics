@@ -42,7 +42,7 @@ c_ Solution:
         people.s..(k.._l.... p: (p[0], -p[1]
 
         ___ i __ r..(l..(people) - 1, -1, -1
-            ans.insert(people[i][1], people[i])
+            ans.i.. people[i][1], people[i])
 
         r.. ans
 
@@ -74,6 +74,6 @@ c_ Solution:
 
         ___ height __ heights ||-1
             ___ k, i __ s..(h2mans[height]
-                ans.insert(k, people[i])
+                ans.i.. k, people[i])
 
         r.. ans

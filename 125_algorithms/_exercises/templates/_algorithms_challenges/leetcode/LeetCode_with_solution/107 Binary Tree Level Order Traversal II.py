@@ -37,7 +37,7 @@ c_ Solution:
         next_level [root]
         w.... next_level:
             current_level next_level
-            result.insert(0, m.. l.... x: x.val, current_level  # current level, only difference with Binary Tree Level Order Traversal I
+            result.i.. 0, m.. l.... x: x.val, current_level  # current level, only difference with Binary Tree Level Order Traversal I
 
             next_level    # list
             ___ element __ current_level:

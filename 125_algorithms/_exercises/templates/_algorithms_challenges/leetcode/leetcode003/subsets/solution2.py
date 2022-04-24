@@ -13,6 +13,6 @@ c_ Solution:
             ___ i, e __ e..(S
                 rest_subsets subsets_aux(S[i + 1:])
                 ___ subset __ rest_subsets:
-                    subset.insert(0, e)
+                    subset.i.. 0, e)
                 res += rest_subsets
             r.. res
