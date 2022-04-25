@@ -18,7 +18,7 @@ w__ o.. ? __ f
 ___ get_pybites_top_tags(n_10
     """use Counter to get the top 10 PyBites tags from the feed
        data already loaded into the content variable"""
-    root ET.f..(content)
+    root ET.f.. ?
     temp_list    # list
     ___ category __ root.i..('category'
         temp_list.a..(category.text)
