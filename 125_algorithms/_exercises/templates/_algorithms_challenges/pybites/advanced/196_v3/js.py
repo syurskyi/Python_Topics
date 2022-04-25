@@ -23,7 +23,7 @@ c_ JsObject:
             r.. -g(item)
 
     ___ __setattr__  key, value
-        super().__setattr__(key, value)
+        ____.__setattr__(key, value)
         __ key n.. __ RESERVED_WORDS a.. key !_ '_local':
             _local[key] value
 

@@ -25,7 +25,7 @@ c_ IntList(l..
 
         __ isi..(values,i..) o. isi..(values,f__) o. isi..(values,Decimal
             values f__(values)
-            super().a..(values)
+            ____.a..(values)
         ____ isi..(values,l..
             __ a..(t..(v) __ (i..,f__,Decimal) ___ v __ values
                 self += values
@@ -55,7 +55,7 @@ c_ IntList(l..
     ___ -a value
         __ isi..(value,l..
             __ a..(t..(v) __ i.. ___ v __ value
-                r.. super().-a(value)
+                r.. ____.-a(value)
             ____
                 r.. T..
         ____

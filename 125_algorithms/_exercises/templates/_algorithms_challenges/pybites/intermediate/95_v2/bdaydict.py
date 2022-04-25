@@ -10,6 +10,6 @@ c_ BirthdayDict(d..
             __ b.month __ birthday.month a.. b.day __ birthday.day:
                 print(MSG.f..(name
 
-        super().__setitem__(name,birthday)
+        ____.__setitem__(name,birthday)
 
 

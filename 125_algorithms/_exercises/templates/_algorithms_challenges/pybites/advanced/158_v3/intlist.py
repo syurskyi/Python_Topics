@@ -4,7 +4,7 @@ ____ decimal _______ Decimal
 c_ IntList(l..
     ___ - , numbers
         numbers _validate ?)
-        super(). - ?)
+        ____. - ?)
 
     ___ _validate  numbers
         __ isi.. ?, (i.., f__, Decimal:
@@ -15,7 +15,7 @@ c_ IntList(l..
         r.. numbers
 
     ___ _elements
-        r.. [i..(i) ___ i __ super().c..]
+        r.. [i..(i) ___ i __ ____.c..]
 
     $
     ___ mean
@@ -31,12 +31,12 @@ c_ IntList(l..
 
     ___ a..  numbers
         _validate ?)
-        super().a.. ?)
+        ____.a.. ?)
 
     ___ -a  numbers
         _validate ?)
-        r.. super().-a ?)
+        r.. ____.-a ?)
 
     ___ __iadd__  numbers
         _validate ?)
-        r.. super().__iadd__ ?)
+        r.. ____.__iadd__ ?)

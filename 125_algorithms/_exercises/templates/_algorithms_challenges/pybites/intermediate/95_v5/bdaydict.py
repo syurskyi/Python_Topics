@@ -6,7 +6,7 @@ c_ BirthdayDict(d..
        the same birthday (day+month) as somebody already in the dict"""
 
     ___ - , $  $$
-        super(). -()
+        ____. -()
         update $ $$
 
     ___ __setitem__  name, birthday

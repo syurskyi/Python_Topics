@@ -9,14 +9,14 @@ c_ Person:
 c_ Father(Person
 
     ___ -s
-        r.. super().-s() + " and cool daddy"
+        r.. ____.-s() + " and cool daddy"
 
 
 
 c_ Mother(Person
 
     ___ -s
-        r.. super().-s() + " and awesome mom"
+        r.. ____.-s() + " and awesome mom"
 
 
 
