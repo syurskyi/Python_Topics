@@ -22,7 +22,7 @@ c_ FileLike(o..
         o.. )
         r.. _
 
-    ___ __exit__  *args
+    ___ -e  *args
         c..
 
     ___ do_something
