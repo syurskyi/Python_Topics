@@ -37,7 +37,7 @@ ___ extract_quotes(html: s.. HTML) __ d..:
         quote_text quote.g.. s..=T..)
         m.. __.s.. _ "(.+)"',quote_text)
         __ m..:
-            a m...group(1)
+            a m...g.. 1)
         ____
             _____
         author __.s.. _ -\s?(.+)$',quote_text).group(1)

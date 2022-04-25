@@ -31,8 +31,8 @@ ___ check_bold(line
     bold_pattern '(.*)__(.*)__(.*)'
     bold_match __.m..(bold_pattern, line)
     __ bold_match:
-        r.. bold_match.group(1) + wrap(bold_match.group(2), 'strong')\
-            + bold_match.group(3)
+        r.. bold_match.g.. 1) + wrap(bold_match.g.. 2), 'strong')\
+            + bold_match.g.. 3)
     ____
         r.. N..
 
@@ -41,8 +41,8 @@ ___ check_italic(line
     italic_pattern '(.*)_(.*)_(.*)'
     italic_match __.m..(italic_pattern, line)
     __ italic_match:
-        r.. italic_match.group(1) + wrap(italic_match.group(2), 'em')\
-            + italic_match.group(3)
+        r.. italic_match.g.. 1) + wrap(italic_match.g.. 2), 'em')\
+            + italic_match.g.. 3)
     ____
         r.. N..
 
@@ -54,10 +54,10 @@ ___ parse_line(line, in_list
 
     __ (list_match
         __ n.. in_list:
-            res '<ul>' + wrap(list_match.group(1), 'li')
+            res '<ul>' + wrap(list_match.g.. 1), 'li')
             in_list T..
         ____
-            res wrap(list_match.group(1), 'li')
+            res wrap(list_match.g.. 1), 'li')
     ____
         __ in_list:
             res += '</ul>'

@@ -1,7 +1,7 @@
 _______ __
 ___ increment_string(strng
     strMatch __.m.. _ ([\w]*)(\d*)',strng)
-    stringPart,numberPart strMatch.group(1),strMatch.group(2)
+    stringPart,numberPart strMatch.g.. 1),strMatch.g.. 2)
     number __.m.. _ 0*(\d*)',numberPart).group(1)
     number 1 __ l..(number) __ 0 ____ i..(number) + 1
     __ l..(s..(number >_ l..(numberPart

@@ -36,8 +36,8 @@ ___ sysinfo_scrape ?
         result __.s.. _ (\S+\s{0,1}\S+):(?!.*:)\s(.+)$',line)
 
         __ result:
-            key result.group(1)
-            value result.group(2)
+            key result.g.. 1)
+            value result.g.. 2)
             mapping[key] value
 
 

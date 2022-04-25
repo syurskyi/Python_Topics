@@ -34,6 +34,6 @@ ___ get_top_titles(url, top=5
         stats article.parent.parent.parent.next_sibling.next_sibling.text
         # Get the number of points and comments, but don't check for plurals… just in case!
         extract __.s.. _ (\d+) point.* (\d+) comment', stats, __.DOTALL)
-        articles.a..(Entry(article.text.s.., i..(extract.group(1, i..(extract.group(2))))
+        articles.a..(Entry(article.text.s.., i..(extract.g.. 1, i..(extract.g.. 2))))
 
     r.. s..(articles, k.._l.... x: -(x.points + x.comments / 1000[:top]

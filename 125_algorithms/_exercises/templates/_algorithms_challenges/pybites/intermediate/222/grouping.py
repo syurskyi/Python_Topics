@@ -2,7 +2,7 @@ _______ types
 ____ i.. _______ islice
 
 
-___ group(iterable, n
+___ g.. iterable, n
     """Splits an iterable set into groups of size n and a group
        of the remaining elements if needed.
 
