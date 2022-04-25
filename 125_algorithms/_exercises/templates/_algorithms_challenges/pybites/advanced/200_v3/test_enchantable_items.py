@@ -54,7 +54,7 @@ mock_html """
 """
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ enchantment_mock
     enchant Enchantment(
         "python_developer",
@@ -65,28 +65,28 @@ ___ enchantment_mock
     r.. enchant
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ item_mock(enchantment_mock
     item Item("clamytoe")
     r.. item
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ mock_soup
     r.. get_soup(mock_html)
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ mock_data(mock_soup
     r.. generate_enchantments(mock_soup)
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ mocked_generate_items(mock_data
     r.. generate_items(mock_data)
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ coders_dataset
     soup get_soup()
     mc_data generate_enchantments(soup)

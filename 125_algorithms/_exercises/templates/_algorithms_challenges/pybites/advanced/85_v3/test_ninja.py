@@ -7,7 +7,7 @@ CONGRATS_MSG ('Congrats, you earned {score} points '
 NEW_SCORE_MSG 'Set new score to {score}'
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ ninja
     """Make a module scope ninja object (save state
        between tests)"""

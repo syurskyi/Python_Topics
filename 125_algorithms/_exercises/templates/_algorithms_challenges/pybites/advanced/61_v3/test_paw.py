@@ -5,17 +5,17 @@ _______ p__
 ____ paw _______ create_paw_deck
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ deck
     r.. l..(create_paw_deck
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ small_deck
     r.. l..(create_paw_deck(4
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ big_deck
     r.. l..(create_paw_deck(16
 

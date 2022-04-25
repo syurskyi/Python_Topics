@@ -5,13 +5,13 @@ _______ p__
 ____ traffic _______ traffic_light, State
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ slice1
     it traffic_light()
     r.. l..(islice(it, 96
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ slice2
     it traffic_light()
     r.. l..(islice(it, 100, 217

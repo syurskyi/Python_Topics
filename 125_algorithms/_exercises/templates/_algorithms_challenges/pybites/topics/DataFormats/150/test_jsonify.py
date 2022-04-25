@@ -5,7 +5,7 @@ _______ p__
 ____ jsonify _______ convert_to_json
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ output
     r.. convert_to_json()
 

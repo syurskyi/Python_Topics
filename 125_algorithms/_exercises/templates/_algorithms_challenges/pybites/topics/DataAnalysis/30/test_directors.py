@@ -6,12 +6,12 @@ ____ directors _______ (get_movies_by_director, get_average_scores,
                        calc_mean_score, Movie)
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ movies
     r.. get_movies_by_director()
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ scores(movies
     r.. ? ?
 

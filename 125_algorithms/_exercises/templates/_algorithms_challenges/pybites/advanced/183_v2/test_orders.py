@@ -7,7 +7,7 @@ ____ Previous.orders _______ (load_excel_into_dataframe,
                              get_most_sold_item)
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ df
     r.. load_excel_into_dataframe()
 

@@ -13,19 +13,19 @@ bracket_2020 [
 ]
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ taxes_2019
     income 40_000
     r.. Taxes(income)
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ taxes_2020_low
     income 8_000
     r.. Taxes(income, bracket_2020)
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ taxes_2020_over
     income 1_000_000
     r.. Taxes(income, bracket_2020)

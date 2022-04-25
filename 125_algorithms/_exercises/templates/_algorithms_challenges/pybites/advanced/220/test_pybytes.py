@@ -6,7 +6,7 @@ REAL_PYTHON "realpython.com"
 PYBITES 'pybit.es'
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ pb
     r.. PythonBytes()
 

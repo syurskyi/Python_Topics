@@ -114,7 +114,7 @@ ___ get_table_dividers(table
 # ############################################################################
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ result
     """
     Provide codon usage table for tests

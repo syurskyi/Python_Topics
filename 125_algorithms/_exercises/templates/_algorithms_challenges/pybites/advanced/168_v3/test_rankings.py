@@ -41,7 +41,7 @@ ___ second_ninjas
     r.. SECOND_NINJAS
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ ninja_ranks
     ranking Rankings()
     ___ ninja __ FIRST_NINJAS:

@@ -1,6 +1,6 @@
 _______ __
 ____ p.. _______ P..
-____ t___ _______ DefaultDict
+____ t___ _______ D..
 ____ u__.r.. _______ u..
 _______ ___.e__.E__ __ ET
 
@@ -24,7 +24,7 @@ ___ get_income_distribution(___=countries
       - keys = incomes (wb:incomeLevel)
       - values = list of country names (wb:name)
     """
-    new_list DefaultDict(l..)
+    new_list D..(l..)
     tree ET.p..(countries)
     root tree.getroot()
     ___ country __ root:

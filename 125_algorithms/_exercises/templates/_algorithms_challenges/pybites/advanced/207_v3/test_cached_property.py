@@ -4,7 +4,7 @@ _______ p__
 ____ Previous.cached_property _______ Planet
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ blue
     r.. Planet('blue')
 

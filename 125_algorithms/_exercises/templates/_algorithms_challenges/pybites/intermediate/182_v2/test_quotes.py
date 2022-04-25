@@ -31,7 +31,7 @@ expected_quotes [
 ]
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ output_your_code
     r.. extract_quotes()
 

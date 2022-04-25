@@ -3,7 +3,7 @@ _______ p__
 ____ Previous.stats _______ BiteStats
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ bite_stats
     r.. BiteStats()
 

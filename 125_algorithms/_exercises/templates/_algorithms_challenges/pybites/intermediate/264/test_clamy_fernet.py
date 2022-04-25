@@ -23,7 +23,7 @@ ___ rcf
     r.. ClamyFernet(password, key)
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ cf
     r.. ClamyFernet(key=KEYS 0
 

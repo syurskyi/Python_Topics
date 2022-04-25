@@ -41,7 +41,7 @@ mac """
 """
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ sysinfo
     """Make a module scope sysinfo object"""
     r.. sysinfo_scrape ?

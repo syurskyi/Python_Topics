@@ -46,7 +46,7 @@ EXPECTED {'High income':  'Aruba',
                                     'Venezuela, RB' }
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ a..
     r.. get_income_distribution()
 

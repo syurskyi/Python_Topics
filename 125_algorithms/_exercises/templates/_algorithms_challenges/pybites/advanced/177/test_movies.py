@@ -4,7 +4,7 @@ _______ p__
 ____ movies _______ group_by_genre
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ df
     r.. group_by_genre()
 

@@ -3,7 +3,7 @@ _______ p__
 ____ thumbs _______ Thumbs
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ thumbs
     r.. Thumbs()
 

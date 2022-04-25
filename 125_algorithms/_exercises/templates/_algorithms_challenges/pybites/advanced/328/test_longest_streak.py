@@ -26,7 +26,7 @@ PATHS [TMP / f"test{x}.json" ___ x __ r..(1, 5)]
 ___.p...a..(TMP)
 
 
-?p__.f..(scope="module")
+?p__.f.. s.._"module"
 ___ download_test_files
     data_zipfile 'bite328_test_data.zip'
     u.. _*{S3}/{data_zipfile}', TMP / data_zipfile)
