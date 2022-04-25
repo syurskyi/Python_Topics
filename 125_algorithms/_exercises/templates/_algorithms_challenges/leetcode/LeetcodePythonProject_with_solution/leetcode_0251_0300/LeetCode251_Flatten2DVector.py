@@ -22,7 +22,7 @@ c_ Vector2D(o..
     ___ hasNext
         __ row>_l..(values
             r.. F..
-        ____ row < l..(values)-1:
+        ____ row < l.. v..-1:
             r.. T..
         ____
             __ col < l..(values[row]

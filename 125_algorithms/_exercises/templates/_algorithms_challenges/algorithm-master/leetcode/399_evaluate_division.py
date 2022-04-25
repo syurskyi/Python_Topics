@@ -15,7 +15,7 @@ c_ Solution:
             equations a..
             values a..
             queries a..
-            l..(equations) __ l..(values)
+            l..(equations) __ l.. v..
 
             r.. ans
 

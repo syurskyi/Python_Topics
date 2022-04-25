@@ -9,7 +9,7 @@ w... T...
         values.a..(line.r..(" ", ""
     ____
         _____
-mod i..(values[l..(values)-1][1:])
+mod i..(values[l.. v..-1][1:])
 
 ___ i __ values:
     strValues += i

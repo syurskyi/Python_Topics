@@ -1,26 +1,26 @@
-c_ Matrix(o..
-
-    ___ - , values
-        _values values
-
-    ___  -r
-        r.. f'<Matrix values="{values}">'
-
-    $
-    ___ values
-        r.. _values
-
-    $
-    ___ _matrix_mult(mat1, mat2
-        result [([s..(a * b ___ a, b __ z..(x, y ___ y __ z..(*mat2)]) ___ x __ mat1]
-        r.. result
-
-    ___ __matmul__  other
-        r.. Matrix(_matrix_mult(values, other.values
-
-    ___ __rmatmul__  other
-        r.. Matrix(_matrix_mult(other.values, values
-
-    ___ __imatmul__  other
-        _values _matrix_mult(values, other.values)
-        r.. _
+# c_ Matrix o..
+#
+#     ___ -  values
+#         _? ?
+#
+#     ___  -r
+#         r.. _*<Matrix values="?">'
+#
+#     $
+#     ___ values
+#         r.. _?
+#
+#     $
+#     ___ _matrix_mult mat1 mat2
+#         result s.. a * b ___ ? ? __ z.. x y ___ ? __ z.. $? ___ ? __ ?
+#         r.. ?
+#
+#     ___ __matmul__  other
+#         r.. ? _? v.. ?.v..
+#
+#     ___ __rmatmul__  other
+#         r.. ? _? ?.v.. v..
+#
+#     ___ __imatmul__  other
+#         _values _? v.. ?.v..
+#         r.. _

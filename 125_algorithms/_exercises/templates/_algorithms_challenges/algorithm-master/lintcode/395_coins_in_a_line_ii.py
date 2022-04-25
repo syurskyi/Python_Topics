@@ -24,7 +24,7 @@ c_ Solution:
         __ n.. values:
             r.. F..
 
-        n l..(values)
+        n l.. v..
 
         __ n < 3:
             r.. T..

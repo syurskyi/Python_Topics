@@ -3,7 +3,7 @@ Conway's Game of Life - Unlimited Edition
 http://www.codewars.com/kata/52423db9add6f6fc39000354/train/python
 """
 
-____ copy _______ d..
+____ c.. _______ d..
 
 
 ___ get_generation(cells, generations
