@@ -1,94 +1,94 @@
-____ ?.m.. _______ p..
-_______ r__
-
-_______ p__
-
-____ guess _______ get_random_number, Game
-
-
-$p.. .o..(r__, 'randint')
-___ test_get_random_number(m
-    m.return_value 17
-    ... get_random_number() __ 17
-
-
-$p.. ("builtins.input", s.._ 11, '12', 'Bob', 12, 5, -1, 21, 7, N..])
-___ test_guess(inp
-    game Game()
-    # good
-    ... game.guess() __ 11
-    ... game.guess() __ 12
-    # not a number
-    w__ p__.r..(V...
-        game.guess()
-    # already guessed 12
-    w__ p__.r..(V...
-        game.guess()
-    # good
-    ... game.guess() __ 5
-    # out of range (x2)
-    w__ p__.r..(V...
-        game.guess()
-    w__ p__.r..(V...
-        game.guess()
-    # good
-    ... game.guess() __ 7
-    # hitting enter / no input
-    w__ p__.r..(V...
-        game.guess()
-
-
-___ test_validate_guess(capfd
-    """pytest capture stdout:
-       https://docs.pytest.org/en/2.9.1/capture.html"""
-    game Game()
-    game._answer 2
-
-    ... n.. game._validate_guess(1)
-    out, _ capfd.r..
-    ... out.r..() __ '1 is too low'
-
-    ... n.. game._validate_guess(3)
-    out, _ capfd.r..
-    ... out.r..() __ '3 is too high'
-
-    ... game._validate_guess(2)
-    out, _ capfd.r..
-    ... out.r..() __ '2 is correct!'
-
-
-$p.. ("builtins.input", s.._ 4, 22, 9, 4, 6])
-___ test_game_win(inp, capfd
-    game Game()
-    game._answer 6
-
-    game()
-    ... game._win __ T..
-
-    out, _ capfd.r..
-    e.. =  '4 is too low', 'Number not in range',
-                '9 is too high', 'Already guessed',
-                '6 is correct!', 'It took you 3 guesses'
-
-    output [line.s.. ___ line __ out.s..('\n') __ line.s..]
-    ___ line, exp __ z.. ? , e..
-        ... line __ exp
-
-
-$p.. ("builtins.input", s.._ N.., 5, 9, 14, 11, 12])
-___ test_game_lose(inp, capfd
-    game Game()
-    game._answer 13
-
-    game()
-    ... game._win __ F..
-
-    out, _ capfd.r..
-    e.. =  'Please enter a number', '5 is too low',
-                '9 is too low', '14 is too high',
-                '11 is too low', '12 is too low',
-                'Guessed 5 times, answer was 13'
-
-    output [line.s.. ___ line __ out.s..('\n') __ line.s..]
-    ___ line, exp __ z.. ? , e..
-        ... line __ exp
+# ____ ?.m.. _______ p..
+# _______ r__
+#
+# _______ p__
+#
+# ____ ? _______ ? ?
+#
+#
+# $p.. .o.. r__ 'randint'
+# ___ test_get_random_number m
+#     ?.r.. 17
+#     ... ? __ 17
+#
+#
+# $p.. "builtins.input", s.._ 11, '12', 'Bob', 12, 5, -1, 21, 7, N..
+# ___ test_guess inp
+#     game ?
+#     # good
+#     ... ?.g.. __ 11
+#     ... ?.g.. __ 12
+#     # not a number
+#     w__ p__.r..(V...
+#         ?.g..
+#     # already guessed 12
+#     w__ p__.r.. V...
+#         ?.g..
+#     # good
+#     ... ?.g.. __ 5
+#     # out of range (x2)
+#     w__ p__.r.. V...
+#         ?.g..
+#     w__ p__.r.. V...
+#         ?.g..
+#     # good
+#     ... ?.g.. __ 7
+#     # hitting enter / no input
+#     w__ p__.r.. V...
+#         ?.g..
+#
+#
+# ___ test_validate_guess capfd
+#     """pytest capture stdout:
+#        https://docs.pytest.org/en/2.9.1/capture.html"""
+#     ? ?
+#     ?._? 2
+#
+#     ... n.. ?._? 1
+#     out, _ ?.r..
+#     ... ?.r.. __ '1 is too low'
+#
+#     ... n.. ?._? 3
+#     out, _ ?.r..
+#     ... ?.r.. __ '3 is too high'
+#
+#     ... ?._? 2
+#     out, _ ?.r..
+#     ... ?.r.. __ '2 is correct!'
+#
+#
+# $p.. "builtins.input", s.._ 4, 22, 9, 4, 6
+# ___ test_game_win inp capfd
+#     ? ?
+#     ?._? 6
+#
+#     ?
+#     ... ?._? __ T..
+#
+#     out, _ ?.r..
+#     e..   '4 is too low', 'Number not in range',
+#                 '9 is too high', 'Already guessed',
+#                 '6 is correct!', 'It took you 3 guesses'
+#
+#     output line.s.. ___ ? __ ?.s.. '\n' __ ?.s..
+#     ___ line exp __ z.. ?  e..
+#         ... ? __ ?
+#
+#
+# $p.. "builtins.input" s.._ N.. 5, 9, 14, 11, 12
+# ___ test_game_loseinp capfd
+#     ? ?
+#     ?._? 13
+#
+#     ?
+#     ... ?._? __ F..
+#
+#     out, _ ?.r..
+#     e..  'Please enter a number', '5 is too low',
+#                 '9 is too low', '14 is too high',
+#                 '11 is too low', '12 is too low',
+#                 'Guessed 5 times, answer was 13'
+#
+#     output line.s.. ___ ? __ ?.s.. '\n' __ ?.s..
+#     ___ line exp __ z.. ?  e..
+#         ... ? __ ?
