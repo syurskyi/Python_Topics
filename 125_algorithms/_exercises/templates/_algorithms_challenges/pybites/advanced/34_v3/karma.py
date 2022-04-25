@@ -13,10 +13,10 @@ c_ User:
     ___ -s
         r.. _* n.. has a karma of {karma} and {fans} fan{'s' __ fans > 1 ____ ''}"
 
-    ___ __add__  other: Transaction
+    ___ -a  other: Transaction
         __ n.. isi..(other, Transaction
             r.. T..('Can only add a transaction')
-        _transactions.a..(other)
+        _?.a..(other)
 
     $
     ___ name(self) __ s..

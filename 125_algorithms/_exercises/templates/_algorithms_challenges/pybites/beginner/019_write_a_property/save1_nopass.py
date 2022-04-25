@@ -5,7 +5,7 @@ NOW d__.n..
 
 c_ Promo
     ___ - , name, expires
-        name name
+        ? ?
         expires expires
     $
     ___ expired

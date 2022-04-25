@@ -1,64 +1,64 @@
-c_ Account:
-
-    ___ - , name, start_balance=0
-        name name
-        start_balance start_balance
-        _transactions    # list
-
-    $
-    ___ balance
-        r.. start_balance + s..(_transactions)
-    
-
-    ___ -l
-        r.. l..(_transactions)
-    
-
-    ___ -e other
-        __ isi..(other,Account
-            r.. balance __ other.balance
-    
-    ___ __lt__ other
-        __ isi..(other,Account
-            r.. balance < other.balance
-    
-    
-
-    ___ __gt__ other
-        __ isi..(other,Account
-            r.. balance > other.balance
-    ___ __le__ other
-        __ isi..(other,Account
-            r.. balance <_ other.balance
-
-    ___ __ge__ other
-        __ isi..(other,Account
-            r.. balance >_ other.balance
-
-
-    ___ __getitem__ index
-        r.. _transactions[index]
-
-
-    ___ __list__
-        r.. l..(_transactions)
-    
-
-    ___ __add__ other
-        __ isi..(other,i..
-            _transactions.a..(other)
-        ____
-            r.. T..("can only subtract integer")
-    
-
-    ___ __sub__ other
-        __ isi..(other,i..
-            _transactions.a..(-other)
-        ____
-            r.. T..("can only subtract integer")
-
-    
-    ___ -s
-        r.. _* n.. account - balance: {balance}"
-
-    # add dunder methods below
+# c_ Account
+#
+#     ___ - name start_balance_0
+#         ? ?
+#         ? ?
+#         _transactions    # list
+#
+#     $
+#     ___ balance
+#         r.. ? + s.. ?
+#
+#
+#     ___ -l
+#         r.. l.. _?
+#
+#
+#     ___ -e other
+#         __ isi.. other ?
+#             r.. b.. __ ?.b..
+#
+#     ___ -l other
+#         __ isi.. ? ?
+#             r.. b.. < ?.b..
+#
+#
+#
+#     ___ -g other
+#         __ isi.. ? ?
+#             r.. b.. > ?.b..
+#     ___ -l other
+#         __ isi.. ? ?
+#             r.. b.. <_ ?.b..
+#
+#     ___ -g other
+#         __ isi.. ? ?
+#             r.. b.. >_ ?.b..
+#
+#
+#     ___ -g index
+#         r.. _? ?
+#
+#
+#     ___ -l
+#         r.. l.. _?
+#
+#
+#     ___ -a other
+#         __ isi.. ? i..
+#             _?.a.. ?
+#         ____
+#             r.. T..("can only subtract integer")
+#
+#
+#     ___ -s other
+#         __ isi..? i..
+#             _?.a.. -?
+#         ____
+#             r.. T..("can only subtract integer")
+#
+#
+#     ___ -s
+#         r.. _* n.. account - balance: ?
+#
+#     # add dunder methods below

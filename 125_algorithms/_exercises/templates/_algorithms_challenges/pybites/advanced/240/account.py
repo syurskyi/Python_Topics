@@ -3,7 +3,7 @@ ____ f.. _______ total_ordering
 
 
 @total_ordering
-c_ Account:
+c_ Account
     'A simple account class'
 
     ___ - , owner, amount=0
@@ -22,25 +22,25 @@ c_ Account:
     ___ add_transaction  amount
         __ n.. isi..(amount, i..
             r.. V...('please use int for amount')
-        _transactions.a..(amount)
+        _?.a..(amount)
 
     $
     ___ balance
-        r.. amount + s..(_transactions)
+        r.. amount + s.. _?
 
     ___ -l
-        r.. l..(_transactions)
+        r.. l.. _?
 
-    ___ __getitem__  position
+    ___ -g  position
         r.. _transactions[position]
 
     ___ -e  other
-        r.. balance __ other.balance
+        r.. b.. __ ?.b..
 
-    ___ __lt__  other
-        r.. balance < other.balance
+    ___ -l  other
+        r.. b.. < ?.b..
 
-    ___ __add__  other
+    ___ -a  other
         owner '{}&{}'.f..(owner, other.owner)
         start_amount amount + other.amount
         acc Account(owner, start_amount)

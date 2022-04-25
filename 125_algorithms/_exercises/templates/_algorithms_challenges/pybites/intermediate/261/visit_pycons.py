@@ -48,7 +48,7 @@ c_ PyCon:
     lon: f__ N..
 
 
-    ___ __lt__ other
+    ___ -l other
         __ isi..(other,PyCon
             r.. start_date < other.start_date
 

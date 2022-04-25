@@ -12,7 +12,7 @@ c_ IntvArray(o..
   ___ -l
     r.. l..(_array)
 
-  ___ __getitem__  x
+  ___ -g  x
     r.. _array[x][0]
 
   ___ getIdx  x

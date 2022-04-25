@@ -1,17 +1,17 @@
-c_ Account:
+c_ Account
 
     ___ -
         _transactions    # list
 
     $
     ___ balance
-        r.. s..(_transactions)
+        r.. s.. _?
 
-    ___ __add__  amount
-        _transactions.a.. ?)
+    ___ -a  amount
+        _?.a.. ?)
 
-    ___ __sub__  amount
-        _transactions.a..(-amount)
+    ___ -s  amount
+        _?.a..(-amount)
 
     # add 2 dunder methods here to turn this class 
     # into a 'rollback' context manager
@@ -27,7 +27,7 @@ c_ Account:
 
 
         w.... balance < 0:
-            _transactions.p.. )
+            _?.p.. )
 
 
         

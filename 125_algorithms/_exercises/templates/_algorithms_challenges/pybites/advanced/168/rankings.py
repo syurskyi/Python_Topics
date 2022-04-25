@@ -33,7 +33,7 @@ c_ Ninja:
     bites: i..
 
     
-    ___ __lt__ other
+    ___ -l other
         __ isi..(other,Ninja
 
             r.. bites < other.bites
@@ -41,7 +41,7 @@ c_ Ninja:
         r.. V...
     
 
-    ___ __gt__ other
+    ___ -g other
         __ isi..(other,Ninja
 
             r.. bites > other.bites

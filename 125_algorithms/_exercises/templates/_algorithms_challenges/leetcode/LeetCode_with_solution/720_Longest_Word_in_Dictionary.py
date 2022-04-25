@@ -23,7 +23,7 @@ class Solution(object):
         trie = Trie()
         END = True
         for i, word in enumerate(words):
-            reduce(dict.__getitem__, word, trie)[END] = i
+            reduce(dict.-g, word, trie)[END] = i
         stack = trie.values()
         ans = ""
         while stack:

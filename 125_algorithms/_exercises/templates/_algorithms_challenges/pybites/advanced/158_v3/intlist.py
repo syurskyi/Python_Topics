@@ -33,9 +33,9 @@ c_ IntList(l..
         _validate ?)
         super().a.. ?)
 
-    ___ __add__  numbers
+    ___ -a  numbers
         _validate ?)
-        r.. super().__add__ ?)
+        r.. super().-a ?)
 
     ___ __iadd__  numbers
         _validate ?)

@@ -3,7 +3,7 @@ c_ Animal:
     number 10001
     animals    # list
     ___ - , name
-        name name.t..
+        ? ?.t..
         number Animal.number
         Animal.number += 1
         Animal.animals.a..(self)

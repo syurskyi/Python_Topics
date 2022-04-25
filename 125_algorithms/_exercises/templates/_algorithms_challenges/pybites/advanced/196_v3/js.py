@@ -20,14 +20,14 @@ c_ JsObject:
 
     ___ __getattr__  item
         __ item __ k..:
-            r.. __getitem__(item)
+            r.. -g(item)
 
     ___ __setattr__  key, value
         super().__setattr__(key, value)
         __ key n.. __ RESERVED_WORDS a.. key !_ '_local':
             _local[key] value
 
-    ___ __getitem__  item
+    ___ -g  item
         r.. _local.g.. item)
 
     ___ __setitem__  key, value

@@ -12,7 +12,7 @@ c_ Tree(o..
     ___ -s  indent_ N..
         r.. dumps(__dict__(), indent=indent)
 
-    ___ __lt__  other
+    ___ -l  other
         r.. label < other.label
 
     ___ -e  other

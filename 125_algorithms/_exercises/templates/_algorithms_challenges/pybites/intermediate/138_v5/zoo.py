@@ -4,7 +4,7 @@ c_ Animal:
     _index N..
 
     ___ - , name: s..
-        name name.t..
+        ? ?.t..
         index _next_index()
         _add_to_zoo(self)
 

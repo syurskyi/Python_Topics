@@ -34,7 +34,7 @@ c_ Enchantment:
     ___ -s
         r.. _* n.. ({max_level}): {description}"
 
-    ___ __lt__  other
+    ___ -l  other
         r.. id_name < other.id_name
 
 

@@ -23,7 +23,7 @@ c_ Enchantment:
 
     ___ - ,id_name,name,max_level,description
         id_name id_name
-        name name
+        ? ?
         max_level max_level
         description description
         items    # list
@@ -39,7 +39,7 @@ c_ Item:
     """
 
     ___ - ,name
-        name name
+        ? ?
         enchantments    # list
 
     ___ add_enchantment enchantment

@@ -31,14 +31,14 @@ c_ CustomSet(o..
                 result.add(x)
         r.. result
 
-    ___ __sub__  other
+    ___ -s  other
         result CustomSet()
         ___ x __ self:
             __ x n.. __ other:
                 result.add(x)
         r.. result
 
-    ___ __add__  other
+    ___ -a  other
         result CustomSet(elements)
         ___ x __ other:
             result.add(x)

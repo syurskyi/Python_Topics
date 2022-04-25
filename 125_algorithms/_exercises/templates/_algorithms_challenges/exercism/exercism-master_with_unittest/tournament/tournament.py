@@ -4,7 +4,7 @@ c_ Team:
     POINTS_PER_DRAW 1
 
     ___ - , name
-        name name
+        ? ?
         wins 0
         draws 0
         losses 0

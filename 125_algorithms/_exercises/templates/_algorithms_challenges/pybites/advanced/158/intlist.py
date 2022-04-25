@@ -52,10 +52,10 @@ c_ IntList(l..
 
 
 
-    ___ __add__ value
+    ___ -a value
         __ isi..(value,l..
             __ a..(t..(v) __ i.. ___ v __ value
-                r.. super().__add__(value)
+                r.. super().-a(value)
             ____
                 r.. T..
         ____

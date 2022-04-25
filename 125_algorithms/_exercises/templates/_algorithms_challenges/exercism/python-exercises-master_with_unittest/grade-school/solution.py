@@ -3,7 +3,7 @@ ____ c.. _______ d..
 
 c_ School(o..
     ___ - , name
-        name name
+        ? ?
         db d..(s..)
 
     ___ add  student, grade

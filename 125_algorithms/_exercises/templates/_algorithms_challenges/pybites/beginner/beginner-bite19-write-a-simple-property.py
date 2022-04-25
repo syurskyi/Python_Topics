@@ -31,7 +31,7 @@ NOW d__.n..
 c_ Promo
 
     ___ - , name, expires=NOW
-        name name
+        ? ?
         expires expires
 
     $

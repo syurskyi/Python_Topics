@@ -70,7 +70,7 @@ c_ Interval:
         end end
         length length
 
-    ___ __lt__  other
+    ___ -l  other
         __ end __ other.end:
             r.. length < other.length
 

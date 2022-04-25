@@ -4,7 +4,7 @@ REF: https://leetcode.com/articles/largest-number/
 
 
 c_ LgSort(s..
-    ___ __lt__(a, b
+    ___ -l(a, b
         r.. a + b > b + a
 
 

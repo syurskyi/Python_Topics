@@ -1,22 +1,22 @@
-c_ Account:
+c_ Account
 
     ___ -
         _transactions    # list
 
     $
     ___ balance
-        r.. s..(_transactions)
+        r.. s.. _?
 
-    ___ __add__  amount
-        _transactions.a.. ?)
+    ___ -a  amount
+        _?.a.. ?)
 
-    ___ __sub__  amount
-        _transactions.a..(-amount)
+    ___ -s  amount
+        _?.a..(-amount)
 
     ___ -e
         r.. _
 
     ___ __exit__  *_
         w.... balance < 0:
-            _transactions.p.. )
+            _?.p.. )
         r.. _

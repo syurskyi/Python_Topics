@@ -4,7 +4,7 @@ c_ Animal:
 
     ___ - , name
         Animal.counter += 1
-        name name.t..
+        ? ?.t..
         animals.a..(s..(self
         
 

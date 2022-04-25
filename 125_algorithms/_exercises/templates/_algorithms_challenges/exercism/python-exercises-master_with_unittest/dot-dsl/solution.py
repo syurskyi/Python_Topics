@@ -3,7 +3,7 @@ NODE, EDGE, ATTR r..(3)
 
 c_ Node(o..
     ___ - , name, attrs={}
-        name name
+        ? ?
         attrs attrs
 
     ___ -e  other

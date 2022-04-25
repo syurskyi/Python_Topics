@@ -1,6 +1,6 @@
 c_ Warrior:
     ___ - ,name
-        name name
+        ? ?
         health 100
         visible T..
         

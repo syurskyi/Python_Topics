@@ -58,7 +58,7 @@ c_ Groceries:
         """The len of cart"""
         r.. l..(_items)
 
-    ___ __getitem__  index
+    ___ -g  index
         """Making the class iterable (cart = Groceries() -> cart[1] etc)
            without this dunder I would get 'TypeError: 'Cart' object does
            not support indexing' when trying to index it"""

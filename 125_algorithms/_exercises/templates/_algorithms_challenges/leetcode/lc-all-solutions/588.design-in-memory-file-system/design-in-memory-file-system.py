@@ -2,7 +2,7 @@ c_ FileNode(o..
   ___ - , name
     isFolder T..
     childs    # dict
-    name name
+    ? ?
     data ""
 
   ___ appendData  data

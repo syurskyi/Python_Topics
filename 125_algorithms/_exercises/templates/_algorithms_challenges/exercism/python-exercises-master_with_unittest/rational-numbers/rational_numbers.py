@@ -12,10 +12,10 @@ c_ Rational(o..
     ___  -r
         r.. '{}/{}'.f..(numer, denom)
 
-    ___ __add__  other
+    ___ -a  other
         p..
 
-    ___ __sub__  other
+    ___ -s  other
         p..
 
     ___ __mul__  other

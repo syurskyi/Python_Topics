@@ -1,54 +1,54 @@
-c_ Account:
-
-    ___ - , name, start_balance=0
-        name name
-        start_balance start_balance
-        _transactions    # list
-
-    $
-    ___ balance
-        r.. start_balance + s..(_transactions)
-
-    ___ -l
-        r.. l..(_transactions)
-
-    ___ __lt__  other
-        __ n.. isi..(other, Account
-            r.. V...()
-        r.. balance < other.balance
-
-    ___ __gt__  other
-        __ n.. isi..(other, Account
-            r.. V...()
-        r.. balance > other.balance
-
-    ___ -e  other
-        __ n.. isi..(other, Account
-            r.. V...()
-        r.. balance __ other.balance
-
-    ___ __le__  other
-        __ n.. isi..(other, Account
-            r.. V...()
-        r.. balance <_ other.balance
-
-    ___ __ge__  other
-        __ n.. isi..(other, Account
-            r.. V...()
-        r.. balance >_ other.balance
-
-    ___ __getitem__  item
-        r.. _transactions[item]
-
-    ___ __add__  other
-        __ n.. isi..(other, i..
-            r.. V...
-        _transactions.a..(other)
-
-    ___ __sub__  other
-        __ n.. isi..(other, i..
-            r.. V...
-        _transactions.a..(-other)
-
-    ___ -s
-        r.. _* name} account - balance: {balance}'
+# c_ Account
+#
+#     ___ - name start_balance_0
+#         ? ?
+#         ? ?
+#         _transactions    # list
+#
+#     $
+#     ___ balance
+#         r.. s.. + s.. _?
+#
+#     ___ -l
+#         r.. l.. _?
+#
+#     ___ -l  other
+#         __ n.. isi..? ?
+#             r.. V...
+#         r.. b.. < ?.b..
+#
+#     ___ -g  other
+#         __ n.. isi..? ?
+#             r.. V...
+#         r.. b.. > ?.b..
+#
+#     ___ -e  other
+#         __ n.. isi..? ?
+#             r.. V...
+#         r.. b.. __ ?.b..
+#
+#     ___ -l  other
+#         __ n.. isi..? ?
+#             r.. V...
+#         r.. b.. <_ ?.b..
+#
+#     ___ -g  other
+#         __ n.. isi..? ?
+#             r.. V...
+#         r.. b.. >_ ?.b..
+#
+#     ___ -g  item
+#         r.. _? ?
+#
+#     ___ -a  other
+#         __ n.. isi.. ? i..
+#             r.. V...
+#         _?.a.. ?
+#
+#     ___ -s  other
+#         __ n.. isi.. ? i..
+#             r.. V...
+#         _?.a.. -?
+#
+#     ___ -s
+#         r.. _* name account - balance: ?

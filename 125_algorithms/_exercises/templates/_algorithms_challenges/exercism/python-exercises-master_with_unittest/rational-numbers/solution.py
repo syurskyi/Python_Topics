@@ -27,13 +27,13 @@ c_ Rational(o..
     ___  -r
         r.. '{}/{}'.f..(numer, denom)
 
-    ___ __add__  other
+    ___ -a  other
         r.. Rational(
             numer*other.denom + denom*other.numer,
             denom*other.denom
         )
 
-    ___ __sub__  other
+    ___ -s  other
         r.. Rational(
             numer*other.denom - denom*other.numer,
             denom*other.denom

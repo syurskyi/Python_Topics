@@ -10,7 +10,7 @@ c_ User:
 
 
     ___ - ,name
-        name name
+        ? ?
         karma 0
         fan_names s..()
         points    # list
@@ -22,10 +22,10 @@ c_ User:
     ___ fans
         r.. l..(fan_names)
 
-    ___ __add__ transaction
+    ___ -a transaction
         __ isi..(transaction,Transaction
             
-            _transactions.a..(transaction)
+            _?.a..(transaction)
             karma += transaction.points
             points.a..(transaction.points)
             fan_names.add(transaction.giver)

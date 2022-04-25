@@ -31,7 +31,7 @@ ____ d__ _______ d__
 
 c_ Promo
     ___ - , name, expires
-        name name
+        ? ?
         expires expires
 
     $

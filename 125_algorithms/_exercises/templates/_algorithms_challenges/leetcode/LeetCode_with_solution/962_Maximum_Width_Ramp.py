@@ -19,7 +19,7 @@ class Solution(object):
         ans = 0
         m = float('inf')
         # Sort index based on value
-        for i in sorted(range(len(A)), key=A.__getitem__):
+        for i in sorted(range(len(A)), key=A.-g):
             ans = max(ans, i - m)
             m = min(m, i)
         return ans

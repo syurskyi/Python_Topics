@@ -32,7 +32,7 @@ c_ Ninja:
     name: s..
     bites: i..
 
-    ___ __lt__  other
+    ___ -l  other
         r.. bites < other.bites
 
     ___ -e  other

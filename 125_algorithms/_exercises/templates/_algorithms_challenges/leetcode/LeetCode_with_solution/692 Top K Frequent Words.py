@@ -32,7 +32,7 @@ c_ Word:
         content content
         count count
 
-    ___ __lt__  other
+    ___ -l  other
         __ count __ other.count:
             r.. content > other.content
 

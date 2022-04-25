@@ -9,10 +9,10 @@ c_ Point(o..
     ___  -r
         r.. 'Point({}:{})'.f..(x, y)
 
-    ___ __add__  other
+    ___ -a  other
         r.. Point(x + other.x, y + other.y)
 
-    ___ __sub__  other
+    ___ -s  other
         r.. Point(x - other.x, y - other.y)
 
     ___ -e  other

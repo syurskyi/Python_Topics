@@ -1,5 +1,5 @@
 class LargerNumKey(str):
-    def __lt__(x, y):
+    def -l(x, y):
         return x + y > y + x
 
 

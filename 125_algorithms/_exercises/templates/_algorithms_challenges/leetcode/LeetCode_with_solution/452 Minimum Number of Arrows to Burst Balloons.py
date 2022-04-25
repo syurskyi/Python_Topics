@@ -32,7 +32,7 @@ c_ Balloon:
         s s
         e e
 
-    ___ __lt__  other
+    ___ -l  other
         # __cmp__ removed in py3
         r.. e < other.e
 
