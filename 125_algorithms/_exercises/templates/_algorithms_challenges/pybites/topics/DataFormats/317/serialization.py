@@ -7,7 +7,7 @@ ____ u__.r.. _______ u..
 _______ t__
 
 
-TMP P..(__.g..("TMP", "/tmp"
+TMP P.. __.g.. "TMP", "/tmp"
 S3 "https://bites-data.s3.us-east-2.amazonaws.com"
 PICKLE_INFILE TMP / 'input.pkl'
 PICKLE_OUTFILE TMP / 'output.pkl'

@@ -6,7 +6,7 @@ ____ p.. _______ P..
 _______ gender_guesser.detector __ gender
 ____ ___ _______ B.. __ S..
 
-TMP P..(__.g..("TMP", "/tmp"
+TMP P.. __.g.. "TMP", "/tmp"
 PYCON_HTML TMP / "pycon2019.html"
 PYCON_PAGE ('https://bites-data.s3.us-east-2.amazonaws.com/'
               'pycon2019.html')

@@ -6,7 +6,7 @@ _______ ___.e__.E__ __ ET
 
 
 # import the countries xml file
-tmp  P..(__.g..("TMP", "/tmp"
+tmp  P.. __.g.. "TMP", "/tmp"
 countries tmp / 'countries.xml'
 
 __ n.. countries.exists

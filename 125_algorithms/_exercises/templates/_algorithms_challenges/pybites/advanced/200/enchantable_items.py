@@ -5,7 +5,7 @@ _______ __
 ____ u__.r.. _______ u..
 ____ ___ _______ B.. __ S..
 
-TMP P..(__.g..("TMP", "/tmp"
+TMP P.. __.g.. "TMP", "/tmp"
 HTML_FILE TMP / "enchantment_list_pc.html"
 
 # source:

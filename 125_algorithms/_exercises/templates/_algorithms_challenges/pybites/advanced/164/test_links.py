@@ -7,7 +7,7 @@ _______ p__
 
 # no need to import make_html_links as we call links.py from CLI!
 
-TMP P..(__.g..("TMP", "/tmp"
+TMP P.. __.g.. "TMP", "/tmp"
 SCRIPT 'links.py'
 IS_LOCAL platform.system() __ 'Darwin'
 MY_CODE SCRIPT __ IS_LOCAL ____ TMP / SCRIPT

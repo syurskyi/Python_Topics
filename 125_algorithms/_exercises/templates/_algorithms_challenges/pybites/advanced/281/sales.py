@@ -8,7 +8,7 @@ _______ r__
 
 URL: s.. "https://bites-data.s3.us-east-2.amazonaws.com/MonthlySales.csv"
 STATS: L..[s..] ["sum", "mean", "max"]
-TMP: P.. P..(__.g..("TMP", "/tmp" / "MonthlySales.csv"
+TMP: P.. P.. __.g.. "TMP", "/tmp" / "MonthlySales.csv"
 
 
 ___ get_data(url: s..) __ D.. s.. s..

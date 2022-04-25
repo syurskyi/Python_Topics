@@ -6,7 +6,7 @@ _______ p__
 
 ____ files _______ get_files
 
-TMP P..(__.g..("TMP", "/tmp"
+TMP P.. __.g.. "TMP", "/tmp"
 
 
 ?p__.m__.p.("byte_sizes, size_in_kb, expected", [

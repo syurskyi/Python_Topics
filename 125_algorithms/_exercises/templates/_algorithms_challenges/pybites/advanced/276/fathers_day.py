@@ -8,7 +8,7 @@ ____ c.. _______ d..
 ____ dateutil.parser _______ p..
 
 # get the data
-TMP P..(__.g..("TMP", "/tmp"
+TMP P.. __.g.. "TMP", "/tmp"
 base_url 'https://bites-data.s3.us-east-2.amazonaws.com/'
 
 fathers_days_countries TMP / 'fathers-day-countries.txt'

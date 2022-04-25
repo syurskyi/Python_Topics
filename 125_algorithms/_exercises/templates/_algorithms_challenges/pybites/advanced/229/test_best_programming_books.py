@@ -3,7 +3,7 @@ _______ p__
 ____ best_programming_books _______ Book, display_books, load_data
 
 
-?p__.f..(scope="session")
+?p__.f.. s.._"session"
 ___ dummy_book
     title "Python Testing with pytest"
     author "Okken, Brian"
@@ -13,7 +13,7 @@ ___ dummy_book
     r.. Book(title, author, year, rank, rating)
 
 
-?p__.f..(scope="session")
+?p__.f.. s.._"session"
 ___ python_books
     data load_data()
     __ isi.. ? l..

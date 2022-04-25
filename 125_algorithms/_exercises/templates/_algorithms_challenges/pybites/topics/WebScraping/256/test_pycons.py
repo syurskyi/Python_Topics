@@ -6,13 +6,13 @@ ____ pycons _______ (get_pycon_events, filter_pycons,
                     get_continent)
 
 
-?p__.f..(scope="session")
+?p__.f.. s.._"session"
 ___ pycon_events
     events get_pycon_events()
     r.. events
 
 
-?p__.f..(scope="session")
+?p__.f.. s.._"session"
 ___ filtered_pycons(pycon_events
     filtered filter_pycons(pycon_events)
     r.. filtered

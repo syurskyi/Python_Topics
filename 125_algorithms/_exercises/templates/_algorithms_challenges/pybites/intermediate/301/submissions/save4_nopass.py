@@ -5,18 +5,18 @@ ____ t___ _______ Dict, L..
 ____ u__.r.. _______ u..
 
 URL "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
-TMP P..(__.g..("TMP", "/tmp"
+TMP P.. __.g.. "TMP", "/tmp"
 RATES_FILE TMP / "exchangerates.json"
 
-__ n.. RATES_FILE.exists
-    u..(URL, RATES_FILE)
+__ n.. ?.e..
+    u.. ? ?
 
 
-___ get_all_days(start_date: date, end_date: date) __ L..[date]:
-    delta end_date - start_date
-    r.. [start_date+t..(d.._x) ___ x __ r..(delta.days+1)]
+___ get_all_days start_date ? end_date ? __ L.. ?
+    delta ? - ?
+    r..  ?+t.. d.._x ___ ? __ r.. ?.d.. +1
 
-___ _parse_date(date_string: s..) __ date:
+___ _parse_date date_string s.. __ d..
     y,m,d date_string.s..
     r.. date(d.._d,  m.._m, year=y)
 
@@ -37,7 +37,7 @@ ___ _parse_date(date_string: s..) __ date:
     }
 }"""
 
-___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, date]:
+___ match_daily_rates start d.. end d.. daily_rates d.. __ D.. ? ?
     
     r_start _parse_date(daily_rates 'start_at' )
     r_end _parse_date(daily_rates 'end_at' )

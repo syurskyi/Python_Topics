@@ -1,80 +1,80 @@
-_______ __
-_______ j__
-____ d__ _______ d__, date, t..
-____ p.. _______ P..
-____ t___ _______ Dict, L..
-____ u__.r.. _______ u..
-
-URL "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
-TMP P..(__.g..("TMP", "/tmp"
-RATES_FILE TMP / "exchangerates.json"
-
-__ n.. RATES_FILE.exists
-    u..(URL, RATES_FILE)
-
-
-___ get_all_days(start_date: date, end_date: date) __ L..[date]:
-    
-    dates    # list
-    date_diff (end_date - start_date).days
-    current_date start_date
-
-    ___ _ __ r..(date_diff +1
-        dates.a..(current_date)
-        current_date current_date + t..(d.._1)
-
-    r.. dates
-
-
-___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, date]:
-
-    dates_open_lookup s.. m..(l.... x: d__.s..(x, "_Y-%m-_d").date(), daily_rates
-
-    dates    # dict
-    date_diff (? - ?).days
-    current_date start
-    ___ i __ r..(date_diff +1
-        previous_date current_date
-        __ current_date n.. __ dates_open_lookup:
-            w.... previous_date n.. __ dates_open_lookup:
-                previous_date previous_date - t..(d.._1)
-            dates[current_date] previous_date
-            current_date current_date + t..(d.._1)
-        ____
-            dates[current_date] current_date
-            current_date current_date + t..(d.._1)
-
-    r.. dates
-
-
-___ exchange_rates(
-    start_date: s.. "2020-01-01", end_date: s.. "2020-09-01"
-) __ Dict[date, d..]:
-    
-    w__ o.. RATES_FILE __ file
-        data j__.l.. file)
-
-    start d__.s..(start_date, "_Y-%m-_d").date()
-    end d__.s..(end_date, "_Y-%m-_d").date()
-
-    __ start < d__.s..(data["start_at"], "_Y-%m-_d").date() o. end > d__.s..(data["end_at"], "_Y-%m-_d").date
-        r.. V...("Invalid start date or end date")
-
-    dates match_daily_rates(start, end, data["rates"])
-
-    result    # dict
-    ___ key, value __ dates.i..
-        temp_dict    # dict
-        date_string value.s..("_Y-%m-_d")
-        temp_dict["Base Date"] value
-        temp_dict.update(data["rates"][date_string])
-        result[key] temp_dict #data["rates"][date_string]
-
-    r.. result
-
-
-# if __name__ == "__main__":
-#     start_date = date(2020, 4, 9)
-#     end_date = date(2020, 4, 14)
-#     get_all_days(start_date, end_date)
-#     print(exchange_rates("2020-04-09", "2020-04-14"))
+# _______ __
+# _______ j__
+# ____ d__ _______ d__ d.. t..
+# ____ p.. _______ P..
+# ____ t___ _______ D.. L..
+# ____ u__.r.. _______ u..
+#
+# URL "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
+# TMP P.. __.g.. "TMP", "/tmp"
+# RATES_FILE ? / "exchangerates.json"
+#
+# __ n.. ?.e..
+#     u.. ? ?
+#
+#
+# ___ get_all_days start_date ? end_date ? __ L.. ?
+#
+#     dates    # list
+#     date_diff (? - ?).d..
+#     current_date s..
+#
+#     ___ _ __ r.. ? +1
+#         ?.a.. ?
+#         c.. ? + t.. d.._1
+#
+#     r.. ?
+#
+#
+# ___ match_daily_rates start d.. end d.. daily_rates d.. __ D.. ? ?
+#
+#     dates_open_lookup s.. m.. l.... x| d__.s.. ? _Y-_m-_d .d.. ?
+#
+#     dates    # dict
+#     date_diff (? - ?).d..
+#     current_date s..
+#     ___ i __ r.. ? +1
+#         previous_date ?
+#         __ c.. n.. __ d..
+#             w.... ? n.. __ d..
+#                 p.. ? - t.. d.._1
+#             d.. c.. p...
+#             c.. ? + t.. d.._1
+#         ____
+#             d.. c.. c..
+#             c.. c.. + t.. d.._1
+#
+#     r.. ?
+#
+#
+# ___ exchange_rates
+#     start_date s.. "2020-01-01" end_date s.. "2020-09-01"
+#  __ D.. d.. d..
+#
+#     w__ o.. ? __ file
+#         data j__.l.. ?
+#
+#     start d__.s.. ? _Y-_m-_d .d..
+#     end d__.s.. ? _Y-_m-_d .d..
+#
+#     __ s.. < d__.s.. d.. "start_at" _Y-_m-_d .d.. o. e.. > d__.s.. d.. "end_at" _Y-_m-_d .d..
+#         r.. V...("Invalid start date or end date"
+#
+#     dates ? ? ? ? "rates"
+#
+#     result    # dict
+#     ___ key value __ ?.i..
+#         temp_dict    # dict
+#         date_string v__.s.. _Y-_m-_d"
+#         ? "Base Date" v...
+#         ?.u.. d.. "rates" ?
+#         ? ? t.. #data["rates"][date_string]
+#
+#     r.. ?
+#
+#
+# # if __name__ == "__main__":
+# #     start_date = date(2020, 4, 9)
+# #     end_date = date(2020, 4, 14)
+# #     get_all_days(start_date, end_date)
+# #     print(exchange_rates("2020-04-09", "2020-04-14"))

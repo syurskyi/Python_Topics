@@ -8,7 +8,7 @@ ____ t___ _______ T.., O.., L..
 _______ __
 
 DATA_FILE_NAME "test1.json"
-TMP P..(__.g..("TMP", "/tmp"
+TMP P.. __.g.. "TMP", "/tmp"
 
 
 DATA_PATH TMP / DATA_FILE_NAME

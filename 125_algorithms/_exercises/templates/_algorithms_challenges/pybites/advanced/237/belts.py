@@ -7,7 +7,7 @@ ____ dateutil.parser _______ p..
 SCORES [10, 50, 100, 175, 250, 400, 600, 800, 1000]
 BELTS ('white yellow orange green blue brown black '
          'paneled red').s..
-TMP P..(__.g..("TMP", "/tmp"
+TMP P.. __.g.. "TMP", "/tmp"
 
 
 ___ get_belts(data: s..) __ d..:
