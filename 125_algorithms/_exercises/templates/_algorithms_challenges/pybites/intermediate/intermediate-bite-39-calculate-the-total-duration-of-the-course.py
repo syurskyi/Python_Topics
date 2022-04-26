@@ -41,9 +41,9 @@ ___ calc_total_course_duration(timestamps
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
     s.. d__ y.._2000,  m.._1,  d.._1, hour=0, minute=0, second=0)
-    s s.. + t..(hours=0, minutes=0, s.._10)
+    s s.. + t..(h.._0, m.._0, s.._10)
     ___ item __ timestamps:
-        s.. s.. + t..(hours=0, minutes=i..(item.s..(':') 0, s.._i..(item.s..(':')[1]
+        s.. s.. + t..(h.._0, m.._i..(item.s..(':') 0, s.._i..(item.s..(':')[1]
     r..(s..(s...t__()))
 
 """

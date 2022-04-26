@@ -1,34 +1,34 @@
-____ c.. _______ n..
-____ d__ _______ d__
-
-TimeOffset n..('TimeOffset', 'offset date_str divider')
-
-NOW d__.n..
-MINUTE, HOUR, DAY 60, 60*60, 24*60*60
-TIME_OFFSETS (
-    TimeOffset(10, 'just now', N..),
-    TimeOffset(MINUTE, '{} seconds ago', N..),
-    TimeOffset(2*MINUTE, 'a minute ago', N..),
-    TimeOffset(HOUR, '{} minutes ago', MINUTE),
-    TimeOffset(2*HOUR, 'an hour ago', N..),
-    TimeOffset(DAY, '{} hours ago', HOUR),
-    TimeOffset(2*DAY, 'yesterday', N..),
-)
-
-
-___ pretty_date(date
-    """Receives a datetime object and converts/returns a readable string
-       using TIME_OFFSETS"""
-    __ n.. isi..(date, d__) o. date > NOW:
-        r.. V...
-
-    secs (NOW - date).t..
-    print _*{secs=}')
-    ___ to __ TIME_OFFSETS:
-        __ secs < to.offset:
-            result to.date_str.f..(i..(secs / (to.divider __ to.divider ____ 1)))
-            _____
-    ____
-        result date.s..('%m/_d/%y')
-
-    r.. result
+# ____ c.. _______ n..
+# ____ d__ _______ d__
+#
+# TimeOffset n..('TimeOffset', 'offset date_str divider')
+#
+# NOW d__.n..
+# MINUTE, HOUR, DAY 60, 60*60, 24*60*60
+# TIME_OFFSETS
+#     ? 10, 'just now', N..
+#     ? M.., '@ seconds ago', N..
+#     ? 2*M.., 'a minute ago', N..
+#     ? H.., '@ minutes ago', M..
+#     ? 2*H.., 'an hour ago', N..
+#     ? D.., '@ hours ago', H..
+#     ? 2*D.., 'yesterday', N..
+#
+#
+#
+# ___ pretty_date date
+#     """Receives a datetime object and converts/returns a readable string
+#        using TIME_OFFSETS"""
+#     __ n.. isi.. ? d__ o. ? > N..
+#         r.. V...
+#
+#     secs  N.. - ? .t..
+#     print _* ?=
+#     ___ to __ T..
+#         __ ? < ?.o..
+#             result ?.d__.f.. i.. s.. / ?.d.. __ ?.d.. ____ 1
+#             _____
+#     ____
+#         result ?.s.. _m/_d/_y
+#
+#     r.. ?

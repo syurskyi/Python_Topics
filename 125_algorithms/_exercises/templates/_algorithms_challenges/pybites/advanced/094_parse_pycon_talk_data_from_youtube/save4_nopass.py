@@ -755,7 +755,7 @@ ___ parse_isoduration(s
     seconds, s get_isosplit(s, 'S')
 
     # Convert all to seconds
-    dt d__.t..(d.._i..(days), hours=i..(hours), minutes=i..(minutes), s.._i..(seconds
+    dt d__.t..(d.._i..(days), h.._i..(hours), m.._i..(minutes), s.._i..(seconds
     r.. i..(dt.total_seconds
 
 

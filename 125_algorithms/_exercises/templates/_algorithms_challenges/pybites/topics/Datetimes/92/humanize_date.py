@@ -6,13 +6,13 @@ TimeOffset n..('TimeOffset', 'offset date_str divider')
 NOW d__.n..
 MINUTE, HOUR, DAY 60, 60*60, 24*60*60
 TIME_OFFSETS (
-    TimeOffset(10, 'just now', N..),
-    TimeOffset(MINUTE, '{} seconds ago', N..),
-    TimeOffset(2*MINUTE, 'a minute ago', N..),
-    TimeOffset(HOUR, '{} minutes ago', MINUTE),
-    TimeOffset(2*HOUR, 'an hour ago', N..),
-    TimeOffset(DAY, '{} hours ago', HOUR),
-    TimeOffset(2*DAY, 'yesterday', N..),
+    ?(10, 'just now', N..),
+    ?(MINUTE, '{} seconds ago', N..),
+    ?(2*MINUTE, 'a minute ago', N..),
+    ?(HOUR, '{} minutes ago', MINUTE),
+    ?(2*HOUR, 'an hour ago', N..),
+    ?(DAY, '{} hours ago', HOUR),
+    ?(2*DAY, 'yesterday', N..),
 )
 
 
@@ -28,10 +28,10 @@ ___ pretty_date(date
                 elapsed elapsed/timeoffset.divider
             elapsed i..(elapsed)
             r.. timeoffset.date_str.f..(elapsed)
-    r.. date.s..("%m/_d/%y")
+    r.. date.s.. _m/_d/_y
 
 
-dt d__.n.. - t..(d.._2, hours=22, minutes=14, s.._15)
+dt d__.n.. - t..(d.._2, h.._22, m.._14, s.._15)
 #dt = datetime.now() - timedelta(seconds=125)
 #print(dt)
 print(pretty_date(dt

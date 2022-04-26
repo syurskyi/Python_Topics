@@ -1,48 +1,48 @@
-____ c.. _______ n..
-____ d__ _______ date, d__
-
-TimeOffset n..('TimeOffset', 'offset date_str divider')
-
-NOW d__.n..
-MINUTE, HOUR, DAY 60, 60*60, 24*60*60
-TIME_OFFSETS (
-    TimeOffset(10, 'just now', N..),
-    TimeOffset(MINUTE, '{} seconds ago', N..),
-    TimeOffset(2*MINUTE, 'a minute ago', N..),
-    TimeOffset(HOUR, '{} minutes ago', MINUTE),
-    TimeOffset(2*HOUR, 'an hour ago', N..),
-    TimeOffset(DAY, '{} hours ago', HOUR),
-    TimeOffset(2*DAY, 'yesterday', N..),
-)
-
-
-___ pretty_date(date
-    """Receives a datetime object and converts/returns a readable string
-       using TIME_OFFSETS"""
-    __ n.. isi..(date, d__) o. date > NOW:
-        r.. V...
-
-    date_delta NOW - date
-    __ date_delta.days __ 0:
-        __ date_delta.seconds < 10:
-            r.. TIME_OFFSETS[0].date_str
-        ____ date_delta.seconds >_ 10 a.. date_delta.seconds < MINUTE:
-            r.. TIME_OFFSETS[1].date_str.f..(date_delta.seconds)
-        ____ date_delta.seconds >_ MINUTE a.. date_delta.seconds < 2 * MINUTE:
-            r.. TIME_OFFSETS[2].date_str
-        ____ date_delta.seconds < HOUR:
-            r.. TIME_OFFSETS[3].date_str.f..(date_delta.seconds // MINUTE)
-        ____ date_delta.seconds __ HOUR:
-            r.. TIME_OFFSETS[4].date_str
-        ____ date_delta.seconds > HOUR:
-            r.. TIME_OFFSETS[5].date_str.f..(date_delta.seconds // HOUR)
-    ____
-        __ date_delta.days __ 1 a.. date_delta.seconds >_ 0:
-            r.. TIME_OFFSETS[6].date_str
-        ____
-            r.. (NOW - date_delta).s..("%m/_d/%y")
-
-
-# if __name__ == "__main__":
-#     test_date = datetime.now()
-#     print(pretty_date(test_date))
+# ____ c.. _______ n..
+# ____ d__ _______ date, d__
+#
+# TimeOffset n..('TimeOffset', 'offset date_str divider')
+#
+# NOW d__.n..
+# MINUTE, HOUR, DAY 60, 60*60, 24*60*60
+# TIME_OFFSETS
+#     ? 10, 'just now', N..
+#     ? M.., '@ seconds ago', N..
+#     ? 2*M.., 'a minute ago', N..
+#     ? H.., '@ minutes ago', M..
+#     ? 2*H.., 'an hour ago', N..
+#     ? D.., '@ hours ago', H..
+#     ? 2*D.., 'yesterday', N..
+#
+#
+#
+# ___ pretty_date date
+#     """Receives a datetime object and converts/returns a readable string
+#        using TIME_OFFSETS"""
+#     __ n.. isi.. ? d__ o. ? > N..
+#         r.. V...
+#
+#     date_delta N.. - ?
+#     __ >.d.. __ 0
+#         __ >.s.. < 10
+#             r.. ? 0 .d..
+#         ____ >.s.. >_ 10 a.. >.s.. < M..
+#             r.. ? 1 .d...f.. >.s..
+#         ____ >.s.. >_ M.. a.. >.s.. < 2 * M..
+#             r.. ? 2 .d..
+#         ____ >.s.. < H..
+#             r.. ? 3 .d...f..(>.s.. // M..
+#         ____ >.s.. __ H..
+#             r.. ? 4 .d..
+#         ____ >.s.. > H..
+#             r.. ? 5 .d...f.. >.s.. // H..
+#     ____
+#         __ >.d.. __ 1 a.. >.s.. >_ 0
+#             r.. ? 6 .d..
+#         ____
+#             r.. N.. - > .s.. _m/_d/_y
+#
+#
+# # if __name__ == "__main__":
+# #     test_date = datetime.now()
+# #     print(pretty_date(test_date))

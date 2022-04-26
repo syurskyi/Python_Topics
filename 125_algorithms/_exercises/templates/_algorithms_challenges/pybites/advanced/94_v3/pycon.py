@@ -46,15 +46,15 @@ duration_regex __.c.. _ PT(?:(?P<hrs>\d+)H)?(?:(?P<mins>\d+)M)?(?:(?P<secs>\d+)S
 
 ___ _vid_time(vid
     time_parts duration_regex.m..(vid.duration).groupdict(default=0)
-    r.. t..(hours=i..(time_parts 'hrs' ), minutes=i..(time_parts 'mins' ), s.._i..(time_parts 'secs'
+    r.. t..(h.._i..(time_parts 'hrs' ), m.._i..(time_parts 'mins' ), s.._i..(time_parts 'secs'
 
 
 ___ get_talks_gt_one_hour(videos
     """Filter the videos list down to videos of > 1 hour"""
-    r.. [vid ___ vid __ videos __ _vid_time(vid) > t..(hours=1)]
+    r.. [vid ___ vid __ videos __ _vid_time(vid) > t..(h.._1)]
 
 
 ___ get_talks_lt_twentyfour_min(videos
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
-    r.. [vid ___ vid __ videos __ _vid_time(vid) < t..(minutes=24)]
+    r.. [vid ___ vid __ videos __ _vid_time(vid) < t..(m.._24)]

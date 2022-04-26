@@ -37,7 +37,7 @@ ___ calc_total_course_duration(timestamps
     total_duration d__.s..('00:00', "_M:_S")
     ___ each_time __ timestamps:
         m.., sec each_time.s..(':')
-        total_duration total_duration + t..(minutes=i..(m..), s.._i..(sec
+        total_duration total_duration + t..(m.._i..(m..), s.._i..(sec
     r.. d__.s..(total_duration, "_H|_M:_S")
 
 print(calc_total_course_duration(get_all_timestamps()))

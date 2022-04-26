@@ -5,7 +5,7 @@ ____ dateutil.rrule _______ *
 NOW d__.n..
 TODAY date.t..
 
-print(NOW, TODAY)
+print N.., TODAY)
 
 print(l..(rrule(DAILY,
                 count=6, 

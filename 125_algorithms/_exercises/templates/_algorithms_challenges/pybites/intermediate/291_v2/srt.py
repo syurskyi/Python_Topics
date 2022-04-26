@@ -46,7 +46,7 @@ ___ get_srt_section_ids text s.. __ L.. i..
             hours i..(hours)
             minutes i..(hours)
             seconds f__('.'.j..(seconds.s..(',')))
-            td t..(hours=hours,m.._?s.._?
+            td t..(h.._hours,m.._?s.._?
             tds.a..(td)
 
 

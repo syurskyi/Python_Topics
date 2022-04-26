@@ -26,9 +26,9 @@ ___ add_todo(delay_time: s.., task: s..,
         __ dl[-1] __ 'd':
             td += t..(d.._i..(dl[:-1]
         ____ dl[-1] __ 'h':
-            td += t..(hours=i..(dl[:-1]
+            td += t..(h.._i..(dl[:-1]
         ____ dl[-1] __ 'm':
-            td += t..(minutes=i..(dl[:-1]
+            td += t..(m.._i..(dl[:-1]
         ____ dl[-1] __ 's':
             td += t..(s.._i..(dl[:-1]
         ____
