@@ -44,10 +44,10 @@ Remember me when no more day by day
 ___ test_shakespeare_text(capfd
     print_hanging_indents(shakespeare_unformatted)
     output ?.r .. 0]
-    ... output.s.. __ shakespeare_formatted.s..
+    ... ?.s.. __ shakespeare_formatted.s..
 
 
 ___ test_rosetti_poem(capfd
     print_hanging_indents(rosetti_unformatted)
     output ?.r .. 0]
-    ... output.s.. __ rosetti_formatted.s..
+    ... ?.s.. __ rosetti_formatted.s..

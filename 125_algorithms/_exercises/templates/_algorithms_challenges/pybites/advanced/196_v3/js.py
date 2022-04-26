@@ -16,7 +16,7 @@ c_ JsObject:
     ___ - ,  $$
         _local d..()
         ___ k, v __ kwargs.i..
-            __setitem__(k, v)
+            -s(k, v)
 
     ___ __getattr__  item
         __ item __ k..:
@@ -30,7 +30,7 @@ c_ JsObject:
     ___ -g  item
         r.. _local.g.. item)
 
-    ___ __setitem__  key, value
+    ___ -s  key, value
         __ key n.. __ RESERVED_WORDS:
             _local[key] value
             __dict__[key] value
@@ -62,4 +62,4 @@ c_ JsObject:
 
     ___ update  data
         ___ k, v __ data.i..
-            __setitem__(k, v)
+            -s(k, v)

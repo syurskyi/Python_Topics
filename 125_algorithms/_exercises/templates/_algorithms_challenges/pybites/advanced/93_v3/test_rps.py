@@ -19,30 +19,30 @@ $p.. ('rps._get_computer_move')
 ___ test_win(computerMoveMock, my_game, capfd
     computerMoveMock.return_value 'rock'
     my_game.send('paper')
-    output ?.r .. 0].s..
-    ... output __ win.f..('paper', 'rock')
+    output ?.r .. 0 .s..
+    ... ? __ win.f..('paper', 'rock')
 
 
 $p.. ('rps._get_computer_move')
 ___ test_loose(computerMoveMock, my_game, capfd
     computerMoveMock.return_value 'rock'
     my_game.send('scissors')
-    output ?.r .. 0].s..
-    ... output __ lose.f..('rock', 'scissors')
+    output ?.r .. 0 .s..
+    ... ? __ lose.f..('rock', 'scissors')
 
 
 $p.. ('rps._get_computer_move')
 ___ test_tie(computerMoveMock, my_game, capfd
     computerMoveMock.return_value 'paper'
     my_game.send('paper')
-    output ?.r .. 0].s..
-    ... output __ tie
+    output ?.r .. 0 .s..
+    ... ? __ tie
 
 
 $p.. ('rps._get_computer_move')
 ___ test_invalid_choice(computerMoveMock, my_game, capfd
     my_game.send('spam')
-    output ?.r .. 0].s..
+    output ?.r .. 0 .s..
     ... 'Invalid' __ output
 
 

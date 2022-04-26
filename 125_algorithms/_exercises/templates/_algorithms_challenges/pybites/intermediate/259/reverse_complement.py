@@ -48,7 +48,7 @@ ___ _str_table_lookup(str_table
         __ i __ [0, 1]:
             _____
         row str_table_split[i].s..("\t")
-        lookup[row[0].s..] row[-1]
+        lookup[row[0 .s..] row[-1]
     r.. lookup
 
 

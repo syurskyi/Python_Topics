@@ -64,7 +64,7 @@ ___ return_codon_usage_table(
         codons [seq[index:index+3] ___ index __ r..(0, l..(seq.s.., 3)]
         condon_count.update(codons)
     translation_table_line [line ___ line __ translation_table_str.s..('\n') __ line]
-    _, AAs translation_table_line[0].s..('  = ')
+    _, AAs translation_table_line[0 .s..('  = ')
     _, Starts translation_table_line[1].s..(' = ')
     _, Base1 translation_table_line[2].s..('  = ')
     _, Base2 translation_table_line[3].s..('  = ')

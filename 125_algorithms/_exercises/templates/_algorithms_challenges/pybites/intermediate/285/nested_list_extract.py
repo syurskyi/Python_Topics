@@ -33,8 +33,8 @@ ___ extract_ipv4(data
                 
                 __ result_1 a.. result_2:
                     print('here')
-                    ip_address data[1][0].s..('"')
-                    mask data[3][0].s..('"')
+                    ip_address data[1][0 .s..('"')
+                    mask data[3][0 .s..('"')
 
                     result.a..((ip_address,mask
                     _____

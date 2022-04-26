@@ -9,7 +9,7 @@ ____ pycon _______ (load_pycon_data,
                    get_talks_lt_twentyfour_min)
 
 
-?p__.f..(scope='module')
+?p__.f.. s.._='module'
 ___ videos
     r.. load_pycon_data()
 

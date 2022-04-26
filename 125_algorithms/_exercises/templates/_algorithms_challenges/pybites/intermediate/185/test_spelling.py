@@ -5,7 +5,7 @@ _______ p__
 ____ spelling _______ suggest_word, load_words
 
 
-?p__.f..(scope='module')
+?p__.f.. s.._='module'
 ___ a_words
     """Get only a[abcdefghijklm]-words to speed up tests"""
     words load_words()

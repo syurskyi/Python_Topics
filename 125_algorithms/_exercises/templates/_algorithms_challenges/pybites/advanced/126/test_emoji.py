@@ -26,4 +26,4 @@ ___ test_find_matches(capfd
 ___ test_find_no_match(capfd
     find_emoji('awesome')
     output ?.r .. 0].l..
-    ... n.. output.s.. o. 'no matches' __ output.l..
+    ... n.. ?.s.. o. 'no matches' __ output.l..

@@ -25,7 +25,7 @@ ___ parser
 ___ test_list(parser, cart, capfd
     args parser..p..  '-l' )
     handle_args(args, cart)
-    output ?.r .. 0].s..('\n')
+    output ?.r .. 0 .s..('\n')
     ... 'pizza (craving)                |   4' __ output
     ... 'Total                          |  22' __ output
 
@@ -33,7 +33,7 @@ ___ test_list(parser, cart, capfd
 ___ test_search(parser, cart, capfd
     args parser..p..  '-s', 'coffee' )
     handle_args(args, cart)
-    output ?.r .. 0].s..('\n')
+    output ?.r .. 0 .s..('\n')
     ... 'coffee                         |   5' __ output
     ... 'Total                          |   5' __ output
 

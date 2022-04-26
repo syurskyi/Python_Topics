@@ -245,7 +245,7 @@ __ _______ __ _______
 
     # The grid size instruction is first
     # Extract it and convert to int
-    grid_size i..(instructions[0].s..(" ")[4])
+    grid_size i..(instructions[0 .s..(" ")[4])
 
     # Create a LightsGrid Class instance
     lights LightsGrid(grid_size, instructions[1:])

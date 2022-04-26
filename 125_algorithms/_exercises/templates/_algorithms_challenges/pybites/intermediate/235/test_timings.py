@@ -3,7 +3,7 @@ _______ p__
 ____ timings _______ timings_log, get_bite_with_fastest_avg_test
 
 
-?p__.f..(scope='module')
+?p__.f.. s.._='module'
 ___ timings
     w__ o.. timings_log) __ f:
         r.. f.r..

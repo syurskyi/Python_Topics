@@ -75,7 +75,7 @@ ___ test_load_data(python_books
 )
 ___ test_display_books(python_books, index, e.., capfd
     display_books(python_books, year=2017)
-    output ?.r .. 0].s..
+    output ?.r .. 0 .s..
     ... output[index] __ e..
 
 
@@ -84,5 +84,5 @@ ___ test_display_books(python_books, index, e.., capfd
 )
 ___ test_display_books_plus(python_books, limit, e.., capfd
     display_books(python_books, limit=limit)
-    output ?.r .. 0].s..
+    output ?.r .. 0 .s..
     ... l.. ?  __ e..

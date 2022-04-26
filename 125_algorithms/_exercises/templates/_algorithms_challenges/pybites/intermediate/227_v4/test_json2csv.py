@@ -51,8 +51,8 @@ ___ test_json2csv(file_no, e.., exception, capfd
             ... 'Invalid control character' __ s..(exc)
 
         # testing you actually caught the exception!
-        output ?.r .. 0].s..
-        ... output __ EXCEPTION
+        output ?.r .. 0 .s..
+        ... ? __ EXCEPTION
         r..
 
     convert_to_csv(mount_json)

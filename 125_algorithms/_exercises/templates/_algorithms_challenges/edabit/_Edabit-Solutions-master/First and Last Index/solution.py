@@ -5,7 +5,7 @@ ___ char_index(word, char
             ?.a.. i)
         ____ char n.. __ word:
             r.. N..
-    output.s..()
+    ?.s..()
     __ l.. ?  __ 1:
         output.a.. ?  0
     __ l.. ?  > 2:

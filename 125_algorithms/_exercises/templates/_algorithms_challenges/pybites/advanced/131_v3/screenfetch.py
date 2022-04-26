@@ -23,7 +23,7 @@ output """
 
 ___ sysinfo_scrape ?
     """Scrapes the output from screenfetch and returns a dictionary"""
-    lines output.s..k.._F..)
+    lines ?.s..k.._F..)
     w.... lines[0] __ '':
         lines.p.. 0)
     line lines[0][::-1]

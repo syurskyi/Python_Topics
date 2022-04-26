@@ -14,7 +14,7 @@ PATH P..(TMP, "ip-ranges.json")
 IP IPv4Network('192.0.2.8/29')
 
 
-?p__.f..(scope='module')
+?p__.f.. s.._='module'
 ___ json_file
     """Import data into tmp folder"""
     u..(URL, PATH)

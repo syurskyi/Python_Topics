@@ -162,12 +162,12 @@ EXPECTED_OUTPUT_WITH_GAP """
 """
 
 
-?p__.f..(scope='module')
+?p__.f.. s.._='module'
 ___ a..
     r.. [line.r..() ___ line __ filter_killed_mutants()]
 
 
-?p__.f..(scope='module')
+?p__.f.. s.._='module'
 ___ actual2
     """Same output but filter out test 10 (killed) and 11 (survived),
        to avoid the hardcoded output gets returned from function

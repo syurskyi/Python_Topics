@@ -48,7 +48,7 @@ ___ gen_files
         ___ line __ infile:
             chunks line.s..(',')
             __ chunks[1].s.. __ "True":
-                s chunks[0].s..('/')
+                s chunks[0 .s..('/')
                 y.. s[1]
 
 ___ diehard_pybites
@@ -65,7 +65,7 @@ ___ diehard_pybites
         ___ line __ infile:
             chunks line.s..(',')
             __ chunks[1].s.. __ "True":
-                s chunks[0].s..('/')
+                s chunks[0 .s..('/')
                 popular_challenges[s[0]] += 1
     s ? ?.m.. 1 0 0, popular_challenges.most_common(1) 0
     r.. s

@@ -11,7 +11,7 @@ c_ BirthdayDict(d..
     ___ - , $  $$
         update $ $$
 
-    ___ __setitem__  name, birthday
+    ___ -s  name birthday
         ___ date __ v..
             __ date.month __ birthday.month a.. date.day __ birthday.day:
                 print(MSG.f..(name
@@ -20,10 +20,10 @@ c_ BirthdayDict(d..
 bd BirthdayDict()
 bd 'khoo'  = date(1968,4,29)
 bd 'chuan'  = date(1968,4,26)
-bd 'bob'  = date(1987, 6, 15)
-bd 'tim'  = date(1984, 7, 15)
-bd 'mary'  = date(1987, 6, 15)
-bd 'sara'  = date(1987, 6, 14)
-bd 'mike'  = date(1981, 7, 15)
+bd 'bob'   ? 1987, 6, 15
+bd 'tim'   ? 1984, 7, 15
+bd 'mary'   ? 1987, 6, 15
+bd 'sara'  ? 1987, 6, 14
+bd 'mike'  ? 1981, 7, 15
 
 #print(type(bd))

@@ -29,7 +29,7 @@ ___ test_code_uses_singledispatch_decorator
 ___ test_count_down_good_inputs(input_argument, capfd
     count_down(input_argument)
     output ?.r .. 0]
-    ... output __ DEFAULT_EXPECTED_OUTPUT
+    ... ? __ DEFAULT_EXPECTED_OUTPUT
 
 
 ?p__.m__.p.("input_argument", [
@@ -47,4 +47,4 @@ ___ test_count_down_float(capfd
     number 12.34
     count_down(number)
     output ?.r .. 0]
-    ... output __ e..
+    ... ? __ e..

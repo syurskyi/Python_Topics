@@ -26,7 +26,7 @@ ___ sysinfo_scrape ?
 
     mapping    # dict
     
-    lines output.s..
+    lines ?.s..
 
     name __.s.. _ \S+$',lines[1]).group()
     mapping 'Name'  = name

@@ -62,7 +62,7 @@ ___ test_four_operations_three_took_too_long(clean_cache, capfd
     w__ timeit
         p..
     output ?.r .. 0]
-    ... output.s.. __ ALERT_MSG
+    ... ?.s.. __ ALERT_MSG
 
 
 $p.. ('monitor.time', MagicMock(s.._ 0, 3, 0, 3, 0, 4, 0, 5]

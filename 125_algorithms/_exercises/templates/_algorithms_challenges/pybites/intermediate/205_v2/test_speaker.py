@@ -4,7 +4,7 @@ ____ speaker _______ (get_pycon_speaker_first_names,
                      get_percentage_of_female_speakers)
 
 
-?p__.f..(scope='module')
+?p__.f.. s.._='module'
 ___ first_names
     r.. get_pycon_speaker_first_names()
 

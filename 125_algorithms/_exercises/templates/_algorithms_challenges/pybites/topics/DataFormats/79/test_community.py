@@ -46,7 +46,7 @@ Pacific/Honolulu     | +
 ___ test_output capfd
     ? ?
     actual_output  line.s...r..' ', '') ___ line __
-                     ?.r .. 0].s.. ]
+                     ?.r .. 0 .s.. ]
 
     ___ line __ expected_output:
         ... line.s...r..(' ', '') __ actual_output, \

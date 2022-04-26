@@ -116,8 +116,8 @@ ___ test_graph_gettysburgh(getty, capfd
     ]
     getty.extra EXTRA_CHAR
     getty.graph
-    output ?.r .. 0].s..
-    ... output __ e..
+    output ?.r .. 0 .s..
+    ... ? __ e..
 
 
 ___ test_graph_beer_tax(beer_tax, capfd
@@ -135,8 +135,8 @@ ___ test_graph_beer_tax(beer_tax, capfd
     ]
     beer_tax.count 10
     beer_tax.graph
-    output ?.r .. 0].s..
-    ... output __ e..
+    output ?.r .. 0 .s..
+    ... ? __ e..
 
 
 ___ test_graph_beer_tax_asterisk(beer_tax, capfd
@@ -149,5 +149,5 @@ ___ test_graph_beer_tax_asterisk(beer_tax, capfd
     ]
     beer_tax.tag "*"
     beer_tax.graph
-    output ?.r .. 0].s..
-    ... output __ e..
+    output ?.r .. 0 .s..
+    ... ? __ e..

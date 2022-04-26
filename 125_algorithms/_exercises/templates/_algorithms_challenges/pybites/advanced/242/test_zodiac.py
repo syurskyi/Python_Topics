@@ -15,7 +15,7 @@ TMP __.g.. TMP  /tmp
 PATH P..(TMP, "zodiac.json")
 
 
-?p__.f..(scope='module')
+?p__.f.. s.._='module'
 ___ signs
     __ n.. PATH.exists
         u..(URL, PATH)

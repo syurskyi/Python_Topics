@@ -3,7 +3,7 @@ _______ p__
 ____ tribe _______ get_top_books, load_page
 
 
-?p__.f..(scope='module')
+?p__.f.. s.._='module'
 ___ content
     """Load content once for all test"""
     r.. load_page()

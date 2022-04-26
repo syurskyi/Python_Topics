@@ -68,11 +68,11 @@ ___ test_ninja_class_and_membership(first_ninjas
 
 ___ test_ninja_str_output(first_ninjas, capfd
     print(first_ninjas[1])
-    output ?.r .. 0].s..
-    ... output __ "[282] natalia"
+    output ?.r .. 0 .s..
+    ... ? __ "[282] natalia"
     print(first_ninjas[3])
-    output ?.r .. 0].s..
-    ... output __ "[263] maquina"
+    output ?.r .. 0 .s..
+    ... ? __ "[263] maquina"
 
 
 # starting len of ninja rankings
