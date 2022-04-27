@@ -14,7 +14,7 @@ Character n..('Character', 'pid name sid align sex appearances year')
 ___ _get_csv_data
     """Download the marvel csv data and return its decoded content"""
     w__ r__.S.. __ session:
-        r.. session.g.. MARVEL_CSV).content.d.. 'utf-8')
+        r.. ?.g.. MARVEL_CSV).c__.d.. utf-8
 
 
 ___ load_data

@@ -26,7 +26,7 @@ cur conn.cursor()
 
 ___ import_data
     w__ r__.S.. __ session:
-        content session.g.. DATA_URL).content.d.. 'utf-8')
+        content ?.g.. DATA_URL).c__.d.. utf-8
 
     reader c__.D.. content.s.. , delimiter=',')
 

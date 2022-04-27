@@ -10,7 +10,7 @@ ___ content
 
 
 ___ test_get_top_5_books(content
-    books get_top_books(content_?)
+    books get_top_books content_?)
     ... books __  'Man’s Search For Meaning',
                      ('The 4-Hour Workweek: Escape the 9-5, '
                       'Live Anywhere and Join the New Rich'),
@@ -20,7 +20,7 @@ ___ test_get_top_5_books(content
 
 
 ___ test_get_top_10_books(content
-    books get_top_books(content_?, limit=10)
+    books get_top_books content_?, limit=10)
     ... books[5:] __ [('The Better Angels of our Nature: Why Violence '
                           'Has Declined'),
                          ('The Beginning of Infinity: Explanations That '

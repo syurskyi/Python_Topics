@@ -14,10 +14,10 @@ MIN_COUNT 3
 ___ load_page
     """Download the blog html and return its decoded content"""
     w__ r__.S.. __ session:
-        r.. session.g.. TIM_BLOG).content.d.. 'utf-8')
+        r.. ?.g.. ? .c__.d.. utf-8
 
 
-___ get_top_books(content_ N..
+___ get_top_books content_ N..
     """Make a BeautifulSoup object loading in content,
        find all links that contain AMAZON, extract the book title
        (stripping spacing characters), and count them.
@@ -25,7 +25,7 @@ ___ get_top_books(content_ N..
        count is at least MIN_COUNT
     """
     __ content __ N..
-        content load_page()
+        ? ?
 
     counts C..()
     soup B..(content,'html.parser')
@@ -33,7 +33,7 @@ ___ get_top_books(content_ N..
     links =  ?.f.. 'a',href=__.c.. _ amazon.com'
 
     ___ link __ links:
-        title link.g.. s..=T..)
+        title ?.g.. s..=T..)
         counts[title] += 1
 
     

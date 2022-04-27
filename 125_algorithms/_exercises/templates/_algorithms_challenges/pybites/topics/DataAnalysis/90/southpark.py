@@ -11,7 +11,7 @@ ___ get_season_csv_file(season
        corresponding CSV_URL"""
     w__ r__.S.. __ s:
         download s.g.. CSV_URL.f..(season
-        r.. download.content.d.. 'utf-8')
+        r.. download.c__.d.. utf-8
 
 
 ___ get_num_words_spoken_by_character_per_episode(content

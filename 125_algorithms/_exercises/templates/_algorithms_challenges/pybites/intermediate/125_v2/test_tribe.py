@@ -10,7 +10,7 @@ ___ content
 
 
 ___ test_return(content
-    books get_top_books(content_?)
+    books get_top_books content_?)
     ... l..(books) __ 16
     ... t..(books) __ l..
     ... a..(t..(book) __ t.. ___ book __ books)
@@ -36,5 +36,5 @@ ___ test_return(content
   ('The Alchemist', 3),
 ])
 ___ test_counts(content, title, count
-    books get_top_books(content_?)
+    books get_top_books content_?)
     ... (title, count) __ books

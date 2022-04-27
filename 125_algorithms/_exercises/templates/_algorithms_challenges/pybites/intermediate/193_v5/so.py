@@ -7,7 +7,7 @@ cached_so_url 'https://bit.ly/2IMrXdp'
 ___ load_page(url
     """Download the blog html and return its decoded content"""
     w__ r__.S.. __ session:
-        r.. session.g.. url).content.d.. 'utf-8')
+        r.. ?.g.. url).c__.d.. utf-8
 
 
 ___ top_python_questions(url=cached_so_url

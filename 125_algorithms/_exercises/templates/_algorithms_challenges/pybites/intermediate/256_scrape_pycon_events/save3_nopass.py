@@ -97,7 +97,7 @@ ___ get_continent(country: s..) __ s..
 ___ _get_pycon_data
     """Helper function that retrieves the required PyCon data"""
     w__ r__.S.. __ session:
-        r.. session.g.. PYCON_DATA).content.d.. "utf-8")
+        r.. ?.g.. PYCON_DATA).content.d.. "utf-8")
 
 
 ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:

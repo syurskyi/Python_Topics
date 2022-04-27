@@ -10,7 +10,7 @@ ___ get_csv
        decoded content"""
     w__ r__.S.. __ s:
         download s.g.. ?
-        decoded_content download.content.d.. 'utf-8')
+        decoded_content download.c__.d.. utf-8
         cr c__.reader(decoded_content.s.. , delimiter=',')
         next(cr)
         my_list l..(cr)
