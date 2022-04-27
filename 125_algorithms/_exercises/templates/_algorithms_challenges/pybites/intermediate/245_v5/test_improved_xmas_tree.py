@@ -51,10 +51,10 @@ ___ test_trunk_used(size, e..
 ___ test_outputs
     actual_tree generate_improved_xmas_tree().s..("\n").s..("\n")
     expected_tree default_tree.s..("\n").s..("\n")
-    ___ i, j __ z..(actual_tree, expected_tree
-        ... i.r..() __ j.r..()
+    ___ i, j __ z.. ? ?
+        ... ?.r.. __ ?.r..
 
     actual_tree generate_improved_xmas_tree(3).s..("\n").s..("\n")
     expected_tree smaller_tree.s..("\n").s..("\n")
-    ___ i, j __ z..(actual_tree, expected_tree
-        ... i.r..() __ j.r..()
+    ___ i, j __ z.. ? ?
+        ... ?.r.. __ ?.r..
