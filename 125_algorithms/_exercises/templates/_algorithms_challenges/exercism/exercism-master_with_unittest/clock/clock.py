@@ -28,7 +28,7 @@ c_ Clock:
         mins i..(mins % 60)
 
     ___ format_hours
-        r.. s..(hours).zfill(2)
+        r.. s..(hours).z.. 2)
 
     ___ format_mins
-        r.. s..(mins).zfill(2)
+        r.. s..(mins).z.. 2)

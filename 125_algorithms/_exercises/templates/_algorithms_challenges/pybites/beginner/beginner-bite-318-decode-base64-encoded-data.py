@@ -56,8 +56,8 @@ Jaclin,Tonge,3549852104724527"""
 
     decoded base64.b..(encoded)
     # print(decoded)???
-    print(bytes.d.. decoded, 'ascii'
-    inp bytes.d.. decoded, 'ascii')
+    print(b__d.. decoded, 'ascii'
+    inp b__d.. decoded, 'ascii')
     print(t..(inp
     result c__.reader(inp.s..
     result l..(result)

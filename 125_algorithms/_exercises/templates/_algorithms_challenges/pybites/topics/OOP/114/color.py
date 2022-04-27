@@ -9,7 +9,7 @@ u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/color_values.py',
     color_values_module
 )
-___.p...a..(tmp)
+___.p...a.. ?
 
 # should be importable now
 ____ color_values _______ COLOR_NAMES  # noqa E402
@@ -22,10 +22,10 @@ c_ Color:
     """
 
     ___ - , color
-        rgb COLOR_NAMES.g.. color.u..
+        rgb ?.g.. ?.u..
         ? ?
 
-    ___ hex2rgb(hex_value
+    ___ hex2rgb hex_value
         """Class method that converts a hex value into an rgb one"""
         __ l..(hex_value) !_ 7 o. hex_value[0] !_ '#':
             r.. V...

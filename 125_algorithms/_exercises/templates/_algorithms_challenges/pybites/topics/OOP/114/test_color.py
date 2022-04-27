@@ -1,6 +1,6 @@
 _______ p__
 
-____ color _______ Color
+____ ? _______ ?
 
 
 ?p__.m__.p.("color, expected", [
@@ -12,9 +12,9 @@ ____ color _______ Color
     ("orange", (255, 128, 0,
     ("puke", N..),
 ])
-___ test_color_class(color, e..
-    c Color(color)
-    ... c.rgb __ e..
+___ test_color_class color e..
+    c ? ?
+    ... ?.r.. __ e..
 
 
 ?p__.m__.p.("rgb, expected", [
@@ -26,7 +26,7 @@ ___ test_color_class(color, e..
     ((255, 128, 0), "#ff8000"),
 ])
 ___ test_color_staticmethod_rgb2hex rgb, e..
-    ... Color.rgb2hex ?) __ e..
+    ... ?.r.. ?) __ e..
 
 
 ?p__.m__.p.("rgb", [
@@ -38,7 +38,7 @@ ___ test_color_staticmethod_rgb2hex rgb, e..
 
 ___ test_color_rgb2hex_bad_value rgb
     w__ p__.r..(V...
-        Color.rgb2hex ?)
+        ?.r.. ?)
 
 
 ?p__.m__.p.("hex, expected", [
@@ -50,7 +50,7 @@ ___ test_color_rgb2hex_bad_value rgb
     ("#ff8000", (255, 128, 0,
 ])
 ___ test_color_staticmethod_hex2rgb(hex, e..
-    ... Color.hex2rgb(hex) __ e..
+    ... ?.h.. ? __ e..
 
 ?p__.m__.p.("value", [
     ("puke"),
@@ -60,7 +60,7 @@ ___ test_color_staticmethod_hex2rgb(hex, e..
 ])
 ___ test_color_hex2rgb_bad_value(value
     w__ p__.r..(V...
-        Color.hex2rgb(value)
+        ?.h.. ?
 
 
 ___ test_color_string_output
