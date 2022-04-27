@@ -13,7 +13,7 @@ ___ test_ipinfo_mexican_ip(mockget
                b'  "city": "Mexico City",\n  "region": "Mexico City",\n  '
                b'"country": "MX",\n ' b'"loc": "11.0000,-00.1111",\n  '
                b'"postal": "12345",\n  "org": "some org"\n}')
-    mockget.return_value Mock(content=content,
+    mockget.return_value Mock(content_?,
                                 text=content.d.. "utf-8"),
                                 j__=l....: j__.l.. (content),
                                 status_code=200)
@@ -27,7 +27,7 @@ ___ test_ipinfo_japan_ip(mockget
                b'"region": "Tokyo",\n ' b'"country": "JP",\n  "loc": '
                b'"00.1111,11.0000",\n  "postal": "123-4567",\n  '
                b'"org": "some other org"\n}')
-    mockget.return_value Mock(content=content,
+    mockget.return_value Mock(content_?,
                                 text=content.d.. "utf-8"),
                                 j__=l....: j__.l.. (content),
                                 status_code=200)

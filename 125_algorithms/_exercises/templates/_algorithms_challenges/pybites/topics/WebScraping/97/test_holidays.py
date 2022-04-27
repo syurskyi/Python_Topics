@@ -1,9 +1,9 @@
 _______ p__
 
-____ holidays _______ get_us_bank_holidays
+____ ? _______ ?
 
 
-holidays get_us_bank_holidays()
+holidays ?
 
 
 ?p__.m__.p.("month, holiday", [
@@ -18,5 +18,5 @@ holidays get_us_bank_holidays()
     #("11", ["Veterans Day", "Thanksgiving", "Day after Thanksgiving"]),
     #("12", ["Christmas Day"]),
 ])
-___ test_get_us_bank_holidays(month, holiday
-    ... holidays.g.. month) __ holiday
+___ test_get_us_bank_holidays month holiday
+    ... ?.g.. ? __ ?

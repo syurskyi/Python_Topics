@@ -16,8 +16,8 @@ ___ get_common_domains(url=COMMON_DOMAINS
     right_table ?.f.. 'div', TARGET_DIV)
 
     domains    # list
-    ___ row __ right_table.findAll('tr'
-        cells row.findAll('td')
+    ___ row __ right_table.f.. 'tr'
+        cells row.f.. 'td')
         domains.a..(cells[2].f.. text=T..
 
     r.. domains

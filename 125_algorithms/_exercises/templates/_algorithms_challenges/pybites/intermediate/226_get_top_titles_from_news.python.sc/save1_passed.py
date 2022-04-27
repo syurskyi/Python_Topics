@@ -24,12 +24,12 @@ ___ get_top_titles(url, top=5
        by number of points and comments.
     """
     soup _create_soup_obj(url)
-    titles ?.findAll('span', {'class': 'title'})
+    titles ?.f.. 'span', {'class': 'title'})
     title_list [entry.g.. .s.. ___ entry __ titles]
     point_list    # list
     comment_list    # list
 
-    ___ entry __ ?.findAll('span', attrs={'class': 'smaller'}
+    ___ entry __ ?.f.. 'span', attrs={'class': 'smaller'}
         entry entry.g.. .s..
         points __.s.. _ (\d*) points', entry)
         comments __.s.. _ (\d*) comments', entry)
