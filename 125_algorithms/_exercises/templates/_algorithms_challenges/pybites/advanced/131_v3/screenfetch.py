@@ -32,6 +32,6 @@ ___ sysinfo_scrape ?
     ___ line __ lines 1|
         s.. __.s.. _ (?P<key>[\w ]+): (?P<value>.*)$', line[info_col:])
         __ s..
-            grp s...groupdict()
+            grp s...g..
             results[grp 'key']] grp 'value'
     r.. results

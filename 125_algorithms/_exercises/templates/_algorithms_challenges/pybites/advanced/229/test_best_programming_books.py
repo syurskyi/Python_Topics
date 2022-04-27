@@ -18,7 +18,7 @@ ___ python_books
     data load_data()
     __ isi.. ? l..
         r.. data
-    r.. l..(data)
+    r.. l.. ?
 
 
 ___ test_book_class_incorrectly

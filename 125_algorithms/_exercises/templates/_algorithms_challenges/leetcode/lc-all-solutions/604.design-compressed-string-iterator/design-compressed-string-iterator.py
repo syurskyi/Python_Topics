@@ -13,7 +13,7 @@ c_ StringIterator(o..
     __ idx + 1 < l..(data
       cur data[idx]
       end idx + 1
-      w.... end < l..(data) a.. data[end].i..
+      w.... end < l.. ? a.. data[end].i..
         end += 1
       print
       end
@@ -36,7 +36,7 @@ c_ StringIterator(o..
     """
     :rtype: bool
     """
-    r.. idx < l..(data) a.. num > 0
+    r.. idx < l.. ? a.. num > 0
 
 # Your StringIterator object will be instantiated and called as such:
 # obj = StringIterator(compressedString)

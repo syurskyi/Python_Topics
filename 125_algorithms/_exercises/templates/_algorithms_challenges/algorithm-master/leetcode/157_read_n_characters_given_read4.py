@@ -36,7 +36,7 @@ c_ Solution:
 
 __ _____ __ _____
     data 'abcdferrdsjfklsdjfdsr'
-    n l..(data)
+    n l.. ?
     i 0
     k 4
 

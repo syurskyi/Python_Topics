@@ -25,7 +25,7 @@ ___ look_and_say(data,maxlen
                     count 1
             ______:
                 #if the loop has reached its last element then store the count of the character of last element.
-                __ k __ l..(data)-1:
+                __ k __ l.. ?-1:
                     res_string.a..(s..(count) + data[k])
         #print the updated string with updated count
         data ''.j..(s..(e) ___ e __ res_string)

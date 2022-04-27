@@ -41,11 +41,11 @@ ___ create_stats_report(data_ N..
         data l..(get_all_line_counts
 
     # taking a sample for the last section
-    sample l..(data)[::2]
+    sample l.. ?[::2]
 
     # TODO 2: complete this dict, use data list and
     # for the last 3 sample_ variables, use sample list
-    stats d..(count=l..(data),
+    stats d..(count=l.. ?,
                  min_=m..(data),
                  max_=m..(data),
                  mean=r..(statistics.mean(data),2),
@@ -59,7 +59,7 @@ ___ create_stats_report(data_ N..
     r.. STATS_OUTPUT.f..(**stats)
 
 data get_all_line_counts()
-sample l..(data)[::2]
+sample l.. ?[::2]
 
 
 print(l..(data

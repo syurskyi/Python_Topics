@@ -44,7 +44,7 @@ c_ Solution:
         __ (n.. data o.
             data[0] !_ '{' o.
             data[-1] !_ '}' o.
-            l..(data) < 3 o.
+            l.. ? < 3 o.
             data[1] __ '#'
 
             r..

@@ -21,13 +21,13 @@ c_ MovingAverage(o..
     data data
 
     leftTop 0
-    __ l..(data) >_ windowSize:
+    __ l.. ? >_ windowSize:
       leftTop data.popleft()
     data.a..(val)
 
     windowSum -_ leftTop
-    __ l..(data) < windowSize:
-      r.. windowSum / l..(data)
+    __ l.. ? < windowSize:
+      r.. windowSum / l.. ?
     r.. windowSum / windowSize
 
 # Your MovingAverage object will be instantiated and called as such:

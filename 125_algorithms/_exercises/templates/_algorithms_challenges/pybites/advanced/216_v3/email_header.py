@@ -33,4 +33,4 @@ ___ get_email_details(header: s..) __ d..:
                 (?:.*\n)*
                 ^Date:\s*(?P<date>.*?)\s+[-+]"""
     results __.s..(regex, header, __.MULTILINE | __.VERBOSE)
-    r.. results.groupdict() __ results __ n.. N.. ____ results
+    r.. results.g.. __ results __ n.. N.. ____ results

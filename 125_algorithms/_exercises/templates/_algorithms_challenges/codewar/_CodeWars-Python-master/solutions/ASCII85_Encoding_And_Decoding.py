@@ -39,7 +39,7 @@ ___ fromAscii85(data
             result += '\0' * 4
             index += 1
         ____
-            padding m..(index + 5 - l..(data), 0)
+            padding m..(index + 5 - l.. ?, 0)
             encoded_block data[index:index + 5] __ padding __ 0 ____ data[index:] + 'u' * padding
             encoded_int 0
             ___ i, c __ e..(encoded_block[::-1]
