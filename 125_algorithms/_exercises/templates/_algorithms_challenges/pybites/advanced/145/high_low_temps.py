@@ -34,11 +34,11 @@ ___ high_low_record_breakers_for_2015
     x stations.set_index('Date')
 
 
-    u s.groupby( 'ID',s.Date.dt.dayofyear]).Data_Value.agg( 'min','max' )
+    u s.g..( 'ID',s.Date.dt.dayofyear]).Data_Value.agg( 'min','max' )
 
     s_2015 stations[stations.Date.dt.year __ 2015]
 
-    records_2015 s_2015.groupby( 'ID',s_2015.Date.dt.dayofyear]).Data_Value.agg( 'min','max' )
+    records_2015 s_2015.g..( 'ID',s_2015.Date.dt.dayofyear]).Data_Value.agg( 'min','max' )
 
     records_2015.columns =  '2015_min','2015_max'
 

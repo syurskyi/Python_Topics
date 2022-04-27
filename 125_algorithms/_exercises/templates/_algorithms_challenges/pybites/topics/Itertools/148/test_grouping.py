@@ -1,4 +1,4 @@
-____ grouping _______ cars, group_cars_by_manufacturer
+____ grouping _______ ? ?
 
 expected_output """
 CHEVROLET
@@ -44,6 +44,6 @@ VOLKSWAGEN
 
 
 ___ test_group_cars_by_manufacturer(capfd
-    group_cars_by_manufacturer(cars)
-    actual_output, _ capfd.r..
-    ... actual_output.s.. __ expected_output.s..
+    ? ?
+    actual_output, _ ?.r..
+    ... ?.s.. __ ?.e..

@@ -25,12 +25,12 @@ ___ get_year_region_breakdown(df
        column. You probably need to make an extra column for
        year, return the new df as shown in the Bite description"""
     df 'Year'  = df.OrderDate.dt.year
-    r.. df.groupby( 'Year','Region' ).Total.s..()
+    r.. df.g..( 'Year','Region' ).Total.s..()
 
 ___ get_best_sales_rep(df
     """Return a tuple of the name of the df rep and
        the total of his/her df"""
-    top df.groupby('Rep').Total.s..().nlargest(1)
+    top df.g..('Rep').Total.s..().nlargest(1)
 
     r.. l..(top.i..[0]
 
@@ -39,6 +39,6 @@ ___ get_most_sold_item(df
        and the number of units sold"""
 
 
-    top df.groupby('Item').Units.s..().nlargest(1)
+    top df.g..('Item').Units.s..().nlargest(1)
 
     r.. l..(top.i..[0]

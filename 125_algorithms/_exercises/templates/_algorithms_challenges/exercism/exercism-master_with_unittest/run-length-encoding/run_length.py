@@ -1,10 +1,10 @@
-____ i.. _______ groupby
+____ i.. _______ g..
 _______ __
 
 
 ___ encode(s__
     r.. ''.j..([helper(g) ___ g __ [l..(group)
-                                        ___ _, group __ groupby(s__)]])
+                                        ___ _, group __ g..(s__)]])
 
 
 ___ helper(g

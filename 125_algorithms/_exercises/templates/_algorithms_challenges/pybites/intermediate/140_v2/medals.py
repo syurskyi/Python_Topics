@@ -8,8 +8,8 @@ ___ athletes_most_medals(data=data
     medals __.r..(data)
 
 
-    medal_counts medals.groupby( 'Gender','Athlete' ).size()
-    r.. medal_counts.groupby(level=0).nlargest(1).reset_index(level=[0,1],drop=T..)
+    medal_counts medals.g..( 'Gender','Athlete' ).size()
+    r.. medal_counts.g..(level=0).nlargest(1).reset_index(level=[0,1],drop=T..)
 
 
 

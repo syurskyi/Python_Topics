@@ -4,7 +4,7 @@
 Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
-____ i.. _______ product, groupby
+____ i.. _______ product, g..
 ____ c.. _______ C.., n..
 _______ o..
 
@@ -143,6 +143,6 @@ ___ match_wine_5cheeses
         scores.a..(Scores(wine, cheese, similarity
     scores s..(scores, k.._l.... x: (x.wine, -x.score, x.cheese
     res    # list
-    ___ k, g __ groupby(scores, l.... x: x.wine
+    ___ k, g __ g..(scores, l.... x: x.wine
         res.a..((k, [rec.cheese ___ rec __ g][:5]
     r.. res

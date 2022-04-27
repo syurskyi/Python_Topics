@@ -16,7 +16,7 @@ ___ load_data(data
 
 ___ athletes_most_medals(data=data
     c__ load_data(data)
-    df c__.groupby( 'Gender', 'Athlete' ) 'Medal' .c.. )
+    df c__.g..( 'Gender', 'Athlete' ) 'Medal' .c.. )
     male df.loc 'Men' .nlargest(1)
     female df.loc 'Women' .nlargest(1)
     r.. {r[0]: r[1] ___ r __ c__(male.i..,female.i..}

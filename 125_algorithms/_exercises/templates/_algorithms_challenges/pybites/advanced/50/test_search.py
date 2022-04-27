@@ -102,7 +102,7 @@ $p.. ("builtins.input", side_effect= 'pycon', 'twitter', 'python', 'nonsense',
                                       '', 'q' )
 ___ test_main(entries, inp, capfd
     main()
-    out, _ capfd.r..
+    out, _ ?.r..
 
     output [line ___ line __ out.s..('\n') __ line.s..]
 

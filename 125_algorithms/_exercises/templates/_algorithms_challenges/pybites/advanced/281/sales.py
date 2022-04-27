@@ -67,7 +67,7 @@ ___ summary_report(df: pd.DataFrame, stats: U..[L..[s..], N..] STATS) __ N..
         2016  733947.03  61162.252500  118447.83
     """
 
-    x df.groupby(df.month.dt.year).sales.agg(stats)
+    x df.g..(df.month.dt.year).sales.agg(stats)
     x.index.name 'year'
     print(x)
 
@@ -111,7 +111,7 @@ ___ yearly_report(df: pd.DataFrame, year: i..) __ N..
     ____
         print(year)
         print()
-        df df.groupby(df.month.dt.month)[['sales']].s..()
+        df df.g..(df.month.dt.month)[['sales']].s..()
         print(df)
 
 

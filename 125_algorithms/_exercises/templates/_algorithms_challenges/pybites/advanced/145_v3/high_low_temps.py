@@ -42,7 +42,7 @@ ___ historical_records(df, element
     '''
     fun 'min' __ element __ 'TMIN' ____ 'max'
     df df[df.Element __ element]
-    records df.groupby( 'Month', 'Day', 'ID' ).agg({'Data_Value': fun})
+    records df.g..( 'Month', 'Day', 'ID' ).agg({'Data_Value': fun})
     r.. records.reset_index()
 
 

@@ -8,11 +8,11 @@ ___ athletes_most_medals(data: s.. data) __ ?.S..:
     df __.r..(data)
 
     # get medal counts for each athlete
-    g df.groupby( 'Athlete', 'Gender' ).agg({'Medal': 'count'}).reset_index()
+    g df.g..( 'Athlete', 'Gender' ).agg({'Medal': 'count'}).reset_index()
 
     # now group by gender and locate the max medal count by group, then
     # drop Gender and squeeze into a series with index 'Athlete'
-    r.. g.loc[g.groupby('Gender') 'Medal'
+    r.. g.loc[g.g..('Gender') 'Medal'
                  .idxmax()].drop(columns='Gender')\
             .set_index('Athlete').squeeze(axis=1)
 

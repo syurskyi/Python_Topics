@@ -49,7 +49,7 @@ ___ group_by_genre(data=movie_excel_file
     df df.assign(genres=df.genres.s...s..('|'
     df explode(df, 'genres')
     df df[df.genres !_ '(no genres listed)'
-    df df.groupby('genres').agg(movie=('movie','count'
+    df df.g..('genres').agg(movie=('movie','count'
     df df.sort_values(by= 'movie' , ascending=F..)
     r.. df
 

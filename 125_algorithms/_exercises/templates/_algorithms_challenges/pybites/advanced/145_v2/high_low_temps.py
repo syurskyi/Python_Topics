@@ -65,21 +65,21 @@ ___ high_low_record_breakers_for_2015
                 } ___ x __ the_data]
 
     data_before_2015_left pd.D.. x ___ x __ dataset __ x 'year'  < 2015 a.. x 'element'  __ 'TMIN').drop(
-         'element', 'year' , axis=1).set_index( 'id', 'monthday' ).groupby(
+         'element', 'year' , axis=1).set_index( 'id', 'monthday' ).g..(
          'id', 'monthday' ).m..(level='monthday').rename(columns={'value': 'mina'})
 
     data_before_2015_right pd.D.. x ___ x __ dataset __ x 'year'  < 2015 a.. x 'element'  __ 'TMAX').drop(
-         'element', 'year' , axis=1).set_index( 'id', 'monthday' ).groupby(
+         'element', 'year' , axis=1).set_index( 'id', 'monthday' ).g..(
          'id', 'monthday' ).m..(level='monthday').rename(columns={'value': 'maxa'})
 
     early_dataset data_before_2015_left.j..(data_before_2015_right, lsuffix='_l', rsuffix='_r')
 
     data_for_2015_left pd.D.. x ___ x __ dataset __ x 'year'  __ 2015 a.. x 'element'  __ 'TMIN').drop(
-         'element', 'year' , axis=1).set_index( 'id', 'monthday' ).groupby(
+         'element', 'year' , axis=1).set_index( 'id', 'monthday' ).g..(
          'id', 'monthday' ).m..(level='monthday').rename(columns={'value': 'minb'})
 
     data_for_2015_right pd.D.. x ___ x __ dataset __ x 'year'  __ 2015 a.. x 'element'  __ 'TMAX').drop(
-         'element', 'year' , axis=1).set_index( 'id', 'monthday' ).groupby(
+         'element', 'year' , axis=1).set_index( 'id', 'monthday' ).g..(
          'id', 'monthday' ).m..(level='monthday').rename(columns={'value': 'maxb'})
 
     late_dataset data_for_2015_left.j..(data_for_2015_right)

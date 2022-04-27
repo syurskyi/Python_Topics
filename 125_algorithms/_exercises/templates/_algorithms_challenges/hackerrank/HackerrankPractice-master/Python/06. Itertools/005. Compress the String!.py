@@ -2,7 +2,7 @@
 # Score: 20
 
 
-____ i.. _______ groupby
+____ i.. _______ g..
 
 
-print(*[(l..(l..(c, i..(x ___ x, c __ groupby(input])
+print(*[(l..(l..(c, i..(x ___ x, c __ g..(input])

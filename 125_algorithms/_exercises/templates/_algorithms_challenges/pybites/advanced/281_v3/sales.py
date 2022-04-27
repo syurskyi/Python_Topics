@@ -69,7 +69,7 @@ ___ summary_report(df: pd.DataFrame, stats: U..[L..[s..], N..] STATS) __ N..
     """
     df df.c..
     df 'year'  = df.month.dt.year
-    s df.groupby( 'year' ).agg({'sales': stats}).-s().s..('\n')[1:]
+    s df.g..( 'year' ).agg({'sales': stats}).-s().s..('\n')[1:]
     print('\n'.j..(s
 
 
@@ -110,7 +110,7 @@ ___ yearly_report(df: pd.DataFrame, year: i..) __ N..
     df df.c..
     df 'year'  = df.month.dt.year
     df 'month'  = df.month.dt.month
-    df df.groupby('year').get_group(year).set_index('month')
+    df df.g..('year').get_group(year).set_index('month')
     print _*\n{year}')
     print(df.to_string(columns= 'sales'
 

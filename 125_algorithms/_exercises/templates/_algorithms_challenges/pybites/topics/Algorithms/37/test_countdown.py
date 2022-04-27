@@ -23,19 +23,19 @@ expected_other_start_arg += e..
 
 ___ test_countdown_for(capfd
     countdown_for()
-    out, _ capfd.r..
+    out, _ ?.r..
     ... out __ e..
 
 
 ___ test_countdown_recursive(capfd
     countdown_recursive()
-    out, _ capfd.r..
+    out, _ ?.r..
     ... out __ e..
 
 
 ___ test_test_countdown_recursive_different_start(capfd
     countdown_recursive(13)
-    out, _ capfd.r..
+    out, _ ?.r..
     ... out __ expected_other_start_arg
 
 
