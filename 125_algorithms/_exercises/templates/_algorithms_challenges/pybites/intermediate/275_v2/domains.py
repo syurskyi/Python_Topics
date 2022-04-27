@@ -12,7 +12,7 @@ ___ get_common_domains(url=COMMON_DOMAINS
     """Scrape the url return the 100 most common domain names"""
 
     ___
-        response r__.g.. url)
+        response r__.g.. ?
         response.raise_for_status()
     ______:
         print('error in getting data')
