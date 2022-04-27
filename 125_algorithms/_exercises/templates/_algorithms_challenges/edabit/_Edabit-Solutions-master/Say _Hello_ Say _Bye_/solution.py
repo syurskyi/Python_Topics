@@ -1,8 +1,8 @@
 ___ say_hello_bye(name, num
     __ num __ 1:
-        r.. "Hello " + name.capitalize()
+        r.. "Hello " + ?.c..
     ____
-        r.. "Bye " + name.capitalize()
+        r.. "Bye " + ?.c..
 
 
 ___ test

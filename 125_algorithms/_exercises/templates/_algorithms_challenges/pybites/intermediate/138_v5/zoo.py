@@ -1,31 +1,31 @@
-c_ Animal:
-    # 'Class variables'
-    _zoo N..
-    _index N..
-
-    ___ - , name: s..
-        ? ?.t..
-        index _next_index()
-        _add_to_zoo(self)
-
-    ___  -r
-        r.. _* index}. {name}'
-
-    ??
-    ___ _next_index(cls
-        __  ?._index __ N..
-             ?._index 10000
-         ?._index += 1
-        r..  ?._index
-
-    ??
-    ___ _add_to_zoo(cls, animal
-        __  ?._zoo __ N..
-             ?._zoo    # list
-         ?._zoo.a..(animal)
-
-    ??
-    ___ zoo(cls
-        __  ?._zoo __ N..
-            r.. ''
-        r.. s.. ?._zoo)
+# c_ Animal
+#     # 'Class variables'
+#     _zoo N..
+#     _index N..
+#
+#     ___ -  name s..
+#         ? ?.t..
+#         index _?
+#         _a.. -
+#
+#     ___  -r
+#         r.. _* i.. .  n..
+#
+#     ??
+#     ___ _next_index cls
+#         __  ?._? __ N..
+#              ?._? 10000
+#          ?._? +_ 1
+#         r..  ?._?
+#
+#     ??
+#     ___ _add_to_zoo cls animal
+#         __  ?._? __ N..
+#              ?._?    # list
+#          ?._?.a.. ?
+#
+#     ??
+#     ___ zoo cls
+#         __  ?._? __ N..
+#             r.. ''
+#         r.. s.. ?._?

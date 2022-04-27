@@ -1,16 +1,16 @@
-____ zoo _______ Animal
+____ ? _______ ?
 
 
 ___ test_zoo_5_animals
     ___ animal __ 'dog cat fish lion mouse'.s.. :
-        Animal(animal)
-    zoo Animal.zoo()
+        ? ?
+    zoo ?.z..
     e.. ("10001. Dog",
                 "10002. Cat",
                 "10003. Fish",
                 "10004. Lion",
                 "10005. Mouse")
-    ... zoo __ '\n'.j..(e..)
+    ... zoo __ '\n'.j.. e..
 
 """
 def test_animal_instance_str():

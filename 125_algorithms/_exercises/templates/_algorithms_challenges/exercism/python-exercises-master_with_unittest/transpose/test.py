@@ -38,7 +38,7 @@ c_ TransposeTests(unittest.TestCase
 
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(e..)
+            "\n".j.. e..
         )
 
     ___ test_single_line
@@ -59,7 +59,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(e..)
+            "\n".j.. e..
         )
 
     ___ test_first_line_longer_than_second_line
@@ -87,7 +87,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(e..)
+            "\n".j.. e..
         )
 
     ___ test_second_line_longer_than_first_line
@@ -115,7 +115,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(e..)
+            "\n".j.. e..
         )
 
     ___ test_square
@@ -135,7 +135,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(e..)
+            "\n".j.. e..
         )
 
     ___ test_rectangle
@@ -157,7 +157,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(e..)
+            "\n".j.. e..
         )
 
     ___ test_triangle
@@ -179,7 +179,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(e..)
+            "\n".j.. e..
         )
 
     ___ test_many_lines
@@ -256,7 +256,7 @@ c_ TransposeTests(unittest.TestCase
         ]
         assertEqual(
             transpose("\n".j..(input_line,
-            "\n".j..(e..)
+            "\n".j.. e..
         )
 
 

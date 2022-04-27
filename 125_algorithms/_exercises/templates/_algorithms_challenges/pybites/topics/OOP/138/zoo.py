@@ -1,4 +1,4 @@
-c_ Animal:
+c_ Animal
     counter 10000
     animals    # list
 
