@@ -14,7 +14,7 @@ ___ starts_with_vowel_sound(word
 
 ___ translate(text
     words    # list
-    ___ word __ text.s.. :
+    ___ word __ ?.s..
         __ starts_with_vowel_sound(word
             words.a..(word + 'ay')
         ____
