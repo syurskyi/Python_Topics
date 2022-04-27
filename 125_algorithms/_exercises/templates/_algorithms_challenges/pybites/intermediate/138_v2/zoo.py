@@ -9,7 +9,7 @@ c_ Animal:
         Animal.animals.a..(self)
 
     ___ -s
-        r.. f"{number}. n..
+        r.. _* ? . n..
 
     ??
     ___ zoo(cls

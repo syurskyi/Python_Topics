@@ -29,7 +29,7 @@ ___ intro_bites
     r.. BITES_CSV
 
 
-?p__.m__.p.("N, expected", [
+?p__.m__.p. "N, expected", [
     (2,  '88', '31' ),
     (6,  '88', '31', '50', '90', '179', '98' ),
     (10,  '88', '31', '50', '90', '179', '98', '190', '42', '69', '40' ),
@@ -41,7 +41,7 @@ ___ test_different_args_for_N(N, e..
     ... a.. __ e..
 
 
-?p__.m__.p.("N, expected", [
+?p__.m__.p. "N, expected", [
     (1,  '105' ),
     (3,  '105', '108', '106' ),
     # res is max = size of bites in file:

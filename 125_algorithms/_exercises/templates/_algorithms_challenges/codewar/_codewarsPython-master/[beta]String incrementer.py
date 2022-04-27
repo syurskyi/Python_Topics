@@ -8,7 +8,7 @@ ___ increment_string(strng
         number number
     ____ :
         number ('0' * (l..(numberPart) - l..(s..(number)))) + s..(number)
-    r.. stringPart + s..(number)
+    r.. stringPart + s.. ?
     
 
 

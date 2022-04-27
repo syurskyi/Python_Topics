@@ -3,7 +3,7 @@ _______ p__
 ____ base_converter _______ convert
 
 
-?p__.m__.p.("number, base, expected", [
+?p__.m__.p. "number, base, expected", [
     (935, 29, "137"),
     (74, 27, "2K"),
     (685, 26, "109"),
@@ -29,7 +29,7 @@ ___ test_convert(number, base, e..
     ... convert(number, base) __ e..
 
 
-?p__.m__.p.("number, base", [
+?p__.m__.p. "number, base", [
     (100, 37),
     (100, 0),
     (100, 1),

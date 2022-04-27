@@ -28,4 +28,4 @@ ___ _drops_for(number
 ___ raindrops(number
     drops _drops_for(number)
 
-    r.. ''.j..(drops) o. s..(number)
+    r.. ''.j..(drops) o. s.. ?

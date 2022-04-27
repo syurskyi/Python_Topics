@@ -17,7 +17,7 @@ re_classes =  'Match', 'Pattern', 'RegexFlag', 'Scanner'
 string_classes =  'Formatter', 'Template'
 
 
-?p__.m__.p.("mod, expected", [
+?p__.m__.p. "mod, expected", [
     (c__, csv_classes),
     (r__, random_classes),
     (__, re_classes),

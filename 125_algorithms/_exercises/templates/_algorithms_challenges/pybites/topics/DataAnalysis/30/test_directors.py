@@ -43,7 +43,7 @@ ___ test_get_average_scores_top_directors(scores
                 ('Joss Whedon', 7.9)]
     ... scores[0:8] __ e..
 
-?p__.m__.p.("director", [
+?p__.m__.p. "director", [
     'Quentin Tarantino', 'Hayao Miyazaki',
     'Frank Darabont', 'Stanley Kubrick',
     'James Cameron', 'Joss Whedon',

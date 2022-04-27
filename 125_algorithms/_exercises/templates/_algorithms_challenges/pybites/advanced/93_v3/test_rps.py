@@ -46,7 +46,7 @@ ___ test_invalid_choice(computerMoveMock, my_game, capfd
     ... 'Invalid' __ output
 
 
-?p__.m__.p.("player1, player2, result", [
+?p__.m__.p. "player1, player2, result", [
     ('scissors', 'paper', 'lose'),
     ('paper', 'scissors', 'win'),
     ('rock', 'paper', 'win'),

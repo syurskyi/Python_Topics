@@ -9,7 +9,7 @@ ___ n_days_ago_str(days
     r..  N.. - t..(d.._d__.s.. _m/_d/_y
 
 
-?p__.m__.p.("arg, expected", [
+?p__.m__.p. "arg, expected", [
      N.. - t..(s.._2), 'just now'),
      N.. - t..(s.._9), 'just now'),
      N.. - t..(s.._10), '10 seconds ago'),

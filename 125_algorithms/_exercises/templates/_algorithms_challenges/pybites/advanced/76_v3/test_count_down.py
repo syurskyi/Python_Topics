@@ -14,7 +14,7 @@ ___ test_code_uses_singledispatch_decorator
     ... '@singledispatch' __ i___.g.. count_down)
 
 
-?p__.m__.p.("input_argument", [
+?p__.m__.p. "input_argument", [
     '1234',
     1234,
     [1, 2, 3, 4],
@@ -32,7 +32,7 @@ ___ test_count_down_good_inputs(input_argument, capfd
     ... ? __ DEFAULT_EXPECTED_OUTPUT
 
 
-?p__.m__.p.("input_argument", [
+?p__.m__.p. "input_argument", [
     compress([1, 2, 3, 4], [1, 1, 1, 1]),
     d__(2018, 4, 21),
     __.c.. _ \d{4}'),

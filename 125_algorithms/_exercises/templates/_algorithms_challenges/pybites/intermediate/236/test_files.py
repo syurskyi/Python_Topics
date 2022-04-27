@@ -7,7 +7,7 @@ FILES ('bite.html commands.sh out_grepped pytest_testrun.out '
          'timings.py').s..
 
 
-?p__.m__.p.("filter_str, expected", [
+?p__.m__.p. "filter_str, expected", [
    ('bite1',  'bite1' ),
    ('Bite',  'bite1' ),
    ('pybites',  'bite1' ),
@@ -25,7 +25,7 @@ ___ test_example_docstring(tmp_path, filter_str, e..
     ... s..(a..) __ s..(e..)
 
 
-?p__.m__.p.("filter_str, expected", [
+?p__.m__.p. "filter_str, expected", [
    ('bite.html',  'bite.html' ),
    ('bite.htm1',  'bite.html' ),
    ('bit$.htm1',  'bite.html' ),

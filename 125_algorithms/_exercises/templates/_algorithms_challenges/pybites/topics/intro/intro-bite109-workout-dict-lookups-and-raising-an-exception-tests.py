@@ -5,7 +5,7 @@ _______ p__
 ____ workouts _______ get_workout_motd
 
 
-?p__.m__.p.("arg, expected", [
+?p__.m__.p. "arg, expected", [
     ('Monday', 'Go train Chest+biceps'),
     ('Tuesday', 'Go train Back+triceps'),
     ('Wednesday', 'Go train Core'),

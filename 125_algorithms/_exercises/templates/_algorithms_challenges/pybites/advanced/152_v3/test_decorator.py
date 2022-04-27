@@ -6,7 +6,7 @@ TEXTS =  'Hello world', 'Welcome to PyBites',
          'Decorators for fun and profit'
 
 
-?p__.m__.p.("start, end, arg, expected", [
+?p__.m__.p. "start, end, arg, expected", [
     (3, 5, TEXTS[0], 'Hel.. world'),
     (4, 8, TEXTS[0], 'Hell....rld'),
     (0, 3, TEXTS[1], '...come to PyBites'),

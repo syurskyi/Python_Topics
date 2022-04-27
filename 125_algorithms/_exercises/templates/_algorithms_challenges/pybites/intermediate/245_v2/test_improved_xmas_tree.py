@@ -27,23 +27,23 @@ smaller_tree """
 """
 
 
-?p__.m__.p.("size, expected", [(10, 13), (5, 8), (20, 23)])
+?p__.m__.p. "size, expected", [(10, 13), (5, 8), (20, 23)])
 ___ test_height_xmas_tree(size, e..
     a.. l..(generate_improved_xmas_tree(size).r..().s..
     ... a.. __ e..
 
 
-?p__.m__.p.("size, expected", [(3, 9), (5, 25), (20, 400)])
+?p__.m__.p. "size, expected", [(3, 9), (5, 25), (20, 400)])
 ___ test_num_leafs_used(size, e..
     ... generate_improved_xmas_tree(size).c.. "*") __ e..
 
 
-?p__.m__.p.("size, expected", [(3, 1), (5, 1), (20, 1)])
+?p__.m__.p. "size, expected", [(3, 1), (5, 1), (20, 1)])
 ___ test_star_used(size, e..
     ... generate_improved_xmas_tree(size).c.. "+") __ e..
 
 
-?p__.m__.p.("size, expected", [(3, 6), (5, 10), (20, 42)])
+?p__.m__.p. "size, expected", [(3, 6), (5, 10), (20, 42)])
 ___ test_trunk_used(size, e..
     ... generate_improved_xmas_tree(size).c.. "|") __ e..
 

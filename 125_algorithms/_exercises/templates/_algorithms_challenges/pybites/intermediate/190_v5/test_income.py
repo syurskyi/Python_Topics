@@ -51,7 +51,7 @@ ___ a..
     r.. get_income_distribution()
 
 
-?p__.m__.p.("income, countries", EXPECTED.i..
+?p__.m__.p. "income, countries", EXPECTED.i..
 ___ test_return_function(a.., income, countries
     ... income __ a..
     ... s..(a..[income]) __ s..(countries)

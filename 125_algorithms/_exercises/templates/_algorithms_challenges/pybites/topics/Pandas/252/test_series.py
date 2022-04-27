@@ -21,7 +21,7 @@ ___ alpha_series
     r.. ?.S..(dictionary)
 
 
-?p__.m__.p.("arg, expected", [
+?p__.m__.p. "arg, expected", [
     (0, 0.000), (500, 0.500), (1000, 1.000)
 ])
 ___ test_return_at_index(float_series, arg, e..
@@ -43,14 +43,14 @@ ___ test_get_slice_inclusive(float_series
     ... l..(slce) __ 6
     ... slce[25] __ 0.025
 
-?p__.m__.p.("arg, expected", [
+?p__.m__.p. "arg, expected", [
     (0, 0.000), (5, 0.005), (9, 0.009)
 ])
 ___ test_return_head(float_series, arg, e..
     ... se.return_head(float_series, 10)[arg] __ e..
     ... ".head" __ i___.g.. se.return_head)
 
-?p__.m__.p.("arg, expected", [
+?p__.m__.p. "arg, expected", [
     (991, 0.991), (995, 0.995), (1000, 1.000)
 ])
 ___ test_return_tail(float_series, arg, e..

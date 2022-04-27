@@ -19,7 +19,7 @@ empty """
 """  # noqa E501
 
 
-?p__.m__.p.("content, expected", [
+?p__.m__.p. "content, expected", [
     (full,  'SCI09-4,2020,36283',
             'MATH09-2,2020,36283',
             'TA09-1,2020,36283',

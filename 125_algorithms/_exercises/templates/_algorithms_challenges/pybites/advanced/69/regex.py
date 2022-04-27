@@ -13,7 +13,7 @@ ___ is_integer(number
     """Return True if number is an integer"""
 
     
-    number s..(number)
+    number s.. ?
 
     r.. __.s.. _ ^\-?\d+$',number) __ n.. N..
 

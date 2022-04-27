@@ -39,7 +39,7 @@ ___ top_python_questions(url=cached_so_url
 
     vi_true    # list
     ___ number __ vi:
-        number s..(number)
+        number s.. ?
         __ number.e.. 'k'
             vi_true.a..(f__(number[:-1]) * 1000)
         __ number.e.. 'm'

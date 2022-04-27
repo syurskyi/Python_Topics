@@ -9,7 +9,7 @@ ___ timings
         r.. f.r..
 
 
-?p__.m__.p.("rows, expected_bites", [
+?p__.m__.p. "rows, expected_bites", [
     (50, '121'),
     (100, '169'),
     (150, '169'),

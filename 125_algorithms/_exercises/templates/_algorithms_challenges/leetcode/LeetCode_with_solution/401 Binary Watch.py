@@ -40,7 +40,7 @@ c_ Solution(o..
                 ___ hour __ hour(hour_n
                     ___ minute __ minute(num-hour_n
                         hour s..(hour)
-                        minute ('0' + s..(minute[-2:]
+                        minute ('0' + s..(minute -2|
                         y.. hour + ':' + minute
 
         r.. l..(gen

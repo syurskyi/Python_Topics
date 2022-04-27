@@ -1,42 +1,42 @@
-___ get_ordinal_suffix(number
-    """Receives a number int and returns it appended with its ordinal suffix,
-       so 1 -> 1st, 2 -> 2nd, 4 -> 4th, 11 -> 11th, etc.
-
-       Rules:
-       https://en.wikipedia.org/wiki/Ordinal_indicator#English
-       - st is used with numbers ending in 1 (e.g. 1st, pronounced first)
-       - nd is used with numbers ending in 2 (e.g. 92nd, pronounced ninety-second)
-       - rd is used with numbers ending in 3 (e.g. 33rd, pronounced thirty-third)
-       - As an exception to the above rules, all the "teen" numbers ending with
-         11, 12 or 13 use -th (e.g. 11th, pronounced eleventh, 112th,
-         pronounced one hundred [and] twelfth)
-       - th is used for all other numbers (e.g. 9th, pronounced ninth).
-       """
-
-    ordinal_suffix {
-      "st": '1',
-      "nd": '2',
-      "rd": '3',
-      "th":  '11', '12', '13'       
-    }
-
-    number s..(number)
-    last_char number[-1]
-    
-    __ number[-2:] __ ordinal_suffix["th"] a.. l..(number) > 1:
-      r.. f"{number}th"
-    ____ last_char __ ordinal_suffix["st"]:
-      r.. f"{number}st"
-    ____ last_char __ ordinal_suffix["nd"]:
-      r.. f"{number}nd"
-    ____ last_char __ ordinal_suffix["rd"]:
-      r.. f"{number}rd"
-    ____
-      r.. f"{number}th"
-
-
-# if __name__ == "__main__":
-#   print(get_ordinal_suffix(1))
-#   print(get_ordinal_suffix(100))
-#   print(get_ordinal_suffix(1001))
-#   print(get_ordinal_suffix(1111))
+# ___ get_ordinal_suffix number
+#     """Receives a number int and returns it appended with its ordinal suffix,
+#        so 1 -> 1st, 2 -> 2nd, 4 -> 4th, 11 -> 11th, etc.
+#
+#        Rules:
+#        https://en.wikipedia.org/wiki/Ordinal_indicator#English
+#        - st is used with numbers ending in 1 (e.g. 1st, pronounced first)
+#        - nd is used with numbers ending in 2 (e.g. 92nd, pronounced ninety-second)
+#        - rd is used with numbers ending in 3 (e.g. 33rd, pronounced thirty-third)
+#        - As an exception to the above rules, all the "teen" numbers ending with
+#          11, 12 or 13 use -th (e.g. 11th, pronounced eleventh, 112th,
+#          pronounced one hundred [and] twelfth)
+#        - th is used for all other numbers (e.g. 9th, pronounced ninth).
+#        """
+#
+#     ordinal_suffix
+#       "st": '1',
+#       "nd": '2',
+#       "rd": '3',
+#       "th":  '11', '12', '13'
+#
+#
+#     number s.. ?
+#     last_char ? -1
+#
+#     __ ? -2| __ ? "th" a.. l.. ? > 1
+#       r.. _* ?th"
+#     ____ ? __ ? "st"
+#       r.. _*? st
+#     ____ ? __ ? "nd"
+#       r.. _* ? nd
+#     ____ ? __ ? "rd"
+#       r.. _* ? rd
+#     ____
+#       r.. _* ?th
+#
+#
+# # if __name__ == "__main__":
+# #   print(get_ordinal_suffix(1))
+# #   print(get_ordinal_suffix(100))
+# #   print(get_ordinal_suffix(1001))
+# #   print(get_ordinal_suffix(1111))

@@ -3,7 +3,7 @@ _______ p__
 ____ division _______ divide_numbers
 
 
-?p__.m__.p.("numerator, denominator, expected", [
+?p__.m__.p. "numerator, denominator, expected", [
     (1, 2, 0.5),
     (8, 2, 4),
     # strings that look like ints are converted (casted) fine
@@ -16,7 +16,7 @@ ___ test_divide_numbers_good_inputs(numerator, denominator, e..
     ... divide_numbers(numerator, denominator) __ e..
 
 
-?p__.m__.p.("numerator, denominator", [
+?p__.m__.p. "numerator, denominator", [
     # ignoring dict/set/list to keep it simple, those would actually
     # throw a TypeError when passed into int()
     (2, 's'),

@@ -43,7 +43,7 @@ e.. (
 )
 
 
-?p__.m__.p.("text, expected", z..(texts, e..
+?p__.m__.p. "text, expected", z..(texts, e..
 ___ test_filter_accents(text, e..
     # get rid of duplicates and sort results
     result filter_accents(text)

@@ -3,7 +3,7 @@ _______ p__
 ____ books _______ get_number_books_read
 
 
-?p__.m__.p.("goal, date_str, expected", [
+?p__.m__.p. "goal, date_str, expected", [
     (52, 'Sunday, March 18th, 2019', 12),
     (52, 'Sunday, March 25th, 2019', 13),
     (52, 'April 2nd, 2019', 14),

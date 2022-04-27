@@ -35,6 +35,6 @@ ___ test_get_all_line_counts
     ... s..(counts) __ 8135
 
 
-?p__.m__.p.("line", EXPECTED_OUTPUT.s...s..
+?p__.m__.p. "line", EXPECTED_OUTPUT.s...s..
 ___ test_create_stats_report(report, line
     ... line __ report
