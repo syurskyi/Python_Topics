@@ -25,7 +25,7 @@ ___ get_us_bank_holidays(content_?
     """Receive scraped html output, make a BS object, parse the bank
        holiday table (css class = list-table), and return a dict of
        keys -> months and values -> list of bank holidays"""
-    soup S..(content, 'html.parser')
+    soup S.. ? html.parser
     table ?.f.. 'table', c.._'list-table')
     table_rows table.f.. 'tr')
     ___ tr __ table_rows:

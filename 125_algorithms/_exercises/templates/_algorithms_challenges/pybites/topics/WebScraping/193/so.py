@@ -17,7 +17,7 @@ ___ top_python_questions(url=cached_so_url
     """
     faq    # list
     content load_page(cached_so_url)
-    soup S..(content, 'html.parser')
+    soup S.. ? html.parser
     question_list [question ___ question __ ?.f.. 'div', c.._'question-summary')]
     ___ question __ question_list:
         question_text question.a.text.s..

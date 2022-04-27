@@ -1,6 +1,6 @@
 _______ p__
 
-____ tribe _______ get_top_books, load_page
+____ ? _______ ? ?
 
 
 ?p__.f.. s.._='module'
@@ -9,14 +9,14 @@ ___ content
     r.. load_page()
 
 
-___ test_return(content
+___ test_return content
     books get_top_books content_?)
     ... l..(books) __ 16
     ... t..(books) __ l..
     ... a..(t..(book) __ t.. ___ book __ books)
 
 
-?p__.m__.p.("title, count", [
+?p__.m__.p. "title, count", [
   ('Man’s Search For Meaning', 6),
   ('Tao Te Ching', 5),
   (('The 4-Hour Workweek: Escape the 9-5, '
@@ -35,6 +35,6 @@ ___ test_return(content
   ('Song of Solomon', 3),
   ('The Alchemist', 3),
 ])
-___ test_counts(content, title, count
+___ test_counts content title count
     books get_top_books content_?)
-    ... (title, count) __ books
+    ... ? ? __ ?

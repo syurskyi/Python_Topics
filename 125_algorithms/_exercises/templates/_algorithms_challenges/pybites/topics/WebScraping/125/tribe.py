@@ -27,7 +27,7 @@ ___ get_top_books content_ N..
         ? ?
     # code here ...
     #print('in get_top_books')
-    soup S..(content, 'html.parser')
+    soup S.. ? html.parser
     book_counter C..([book.f.. "span").text.s.. ___ book __ ?.f.. "a") __ book.f.. "span")])
     r.. [ ? book_counter[book]) ___ book __ book_counter __ book_counter[book] >_ 3]
 
