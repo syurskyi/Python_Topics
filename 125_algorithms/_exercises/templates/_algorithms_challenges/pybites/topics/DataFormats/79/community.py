@@ -8,7 +8,7 @@ CSV_URL 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
 ___ get_csv
     """Use requests to download the csv and return the
        decoded content"""
-    w__ r__.S.. __ s:
+    w__ r__.S.. __ s
         download s.g.. ?
         decoded_content download.c__.d.. utf-8
         cr c__.reader(decoded_content.s.. , delimiter=',')

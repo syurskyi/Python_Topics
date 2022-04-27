@@ -5,19 +5,19 @@ STOCK_DATA 'https://bites-data.s3.us-east-2.amazonaws.com/stocks.json'
 
 # pre-work: load JSON data into program
 
-w__ r__.S.. __ s:
-    data s.g.. STOCK_DATA).j..
+w__ r__.S.. __ s
+    data s.g.. ? .j..
 
 
 # your turn:
 mkdi
-___ _cap_str_to_mln_float(cap
+___ _cap_str_to_mln_float cap
     """If cap = 'n/a' return 0, else:
        - strip off leading '$',
        - if 'M' in cap value, strip it off and return value as float,
        - if 'B', strip it off, multiply by 1,000 and return
          value as float"""
-    __ cap __ "n/a":
+    __ cap __ "n/a"
         r.. 0
     ____ cap[0] __ '$' a.. cap[-1] __ 'M':
         r.. f__(cap[1:-1])
@@ -25,12 +25,12 @@ ___ _cap_str_to_mln_float(cap
          r.. f__(cap[1:-1])*1000
 
 
-___ get_industry_cap(industry
+___ get_industry_cap industry
     """Return the sum of all cap values for given industry, use
        the _cap_str_to_mln_float to parse the cap values,
        return a float with 2 digit precision"""
     locallist [counter 'cap'  ___ counter __ data __ counter 'industry'  __ industry]
-    r.. r..(s..([_cap_str_to_mln_float(cap) ___ cap __ locallist]),2)
+    r.. r..(s..([_cap_str_to_mln_float cap) ___ cap __ locallist]),2)
 
 ___ get_stock_symbol_with_highest_cap
     """Return the stock symbol (e.g. PACD) with the highest cap, use

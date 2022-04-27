@@ -9,7 +9,7 @@ CSV_URL 'https://raw.githubusercontent.com/pybites/SouthParkData/master/by-seaso
 ___ get_season_csv_file(season
     """Receives a season int, and downloads loads in its
        corresponding CSV_URL"""
-    w__ r__.S.. __ s:
+    w__ r__.S.. __ s
         download s.g.. CSV_URL.f..(season
         r.. download.c__.d.. utf-8
 

@@ -32,7 +32,7 @@ CAR_DATA 'https://bit.ly/2Ov65SJ'
 
 # pre-work: load JSON data into program
 
-w__ r__.S.. __ s:
+w__ r__.S.. __ s
     data s.g.. ? .j..
 
 

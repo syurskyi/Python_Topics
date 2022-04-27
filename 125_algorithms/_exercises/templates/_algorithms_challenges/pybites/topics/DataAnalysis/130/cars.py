@@ -6,7 +6,7 @@ CAR_DATA 'https://bites-data.s3.us-east-2.amazonaws.com/cars.json'
 
 # pre-work: load JSON data into program
 
-w__ r__.S.. __ s:
+w__ r__.S.. __ s
     data s.g.. ? .j..
 
 
