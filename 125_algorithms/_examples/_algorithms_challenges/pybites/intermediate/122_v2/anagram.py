@@ -12,7 +12,7 @@ def is_anagram(word1, word2):
 
     for character in word2:
         if character != ' ':
-            word_2_counts[character] += 1
+            ? ? += 1
 
 
     for character in word1:
