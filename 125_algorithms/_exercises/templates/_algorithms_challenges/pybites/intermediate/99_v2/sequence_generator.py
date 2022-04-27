@@ -1,16 +1,16 @@
-_______ s__
-_______ i..
-___ sequence_generator
-    
-
-    numbers l..(r..(1,27
-    sequence  = [numbers[i//2] __ i % 2 __ 0 ____ s__.a..[i//2] ___ i __ r..(52)]
-
-    y.. ____ i...cycle(sequence)
-
-
-
-
-__ _______ __ _______
-
-    sequence_generator()
+# _______ s__
+# _______ i..
+# ___ sequence_generator
+#
+#
+#     numbers l.. r.. 1,27
+#     sequence   ? i//2 __ ? % 2 __ 0 ____ s__.a.. ?//2 ___ ? __ r.. 52
+#
+#     y.. ____ i...c.. ?
+#
+#
+#
+#
+# __ _______ __ _______
+#
+#     ?

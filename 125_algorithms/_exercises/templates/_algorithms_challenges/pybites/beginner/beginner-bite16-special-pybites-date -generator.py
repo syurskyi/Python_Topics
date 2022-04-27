@@ -66,6 +66,6 @@ ___ gen_special_pybites_dates_2
         y.. nextevent
 
 gen gen_special_pybites_dates()
-dates l..(islice(gen,20
+dates l.. is.. ?20
 print(dates)
 
