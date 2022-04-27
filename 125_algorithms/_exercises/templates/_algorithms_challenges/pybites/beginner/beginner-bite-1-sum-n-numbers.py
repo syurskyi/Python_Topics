@@ -57,7 +57,7 @@ ___ my_sum_numbers(numbers_ N..
 ___ pyb_sum_numbers(numbers_ N..
     __ numbers __ N..
         numbers r..(1, 101)
-    r.. s.. ?)
+    r.. s.. ?
 
 ### Tutaj nie wiem, co chcialem osiagnac. Chyba chcialem sprawdzic alternatywny sposob, jak moznaby
 ### cos takiego napisac. Zamiast sprawdzac, co zostalo przekazane jako argument, mozna
@@ -65,7 +65,7 @@ ___ pyb_sum_numbers(numbers_ N..
 
 ___ sum_numbers_1(numbers_ N..
     ___
-        r.. s.. ?)
+        r.. s.. ?
     ______ T..
         r.. s..(r..(1,101
 

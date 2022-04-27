@@ -15,12 +15,12 @@ ___ test_max
 
 ___ test_bad_input
     max1 o..()
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         get_len_help_text(max1)
 
 
 ___ test_another_bad_input
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         get_len_help_text('string')
 
 

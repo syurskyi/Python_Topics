@@ -72,13 +72,13 @@ ___ test_wrong_type
 
 
 ___ test_wrong_cards
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         BridgeHand([Card(Suit.S, Rank.A)] + [N..] * 12)
 
 
 ?p__.m__.p.("hand", malformed_hands)
 ___ test_wrong_number_of_cards(hand
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         BridgeHand(hand.card_list)
 
 

@@ -35,11 +35,11 @@ ___ test_beethoven_mozart
 
 
 ___ test_non_listed_composer
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         l..(operas_both_at_premiere("verdi", "dvorak"
 
 
 ___ test_non_listed_guest
     # a guest must be in the list of composers
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         l..(operas_both_at_premiere("dvorak", "verdi"

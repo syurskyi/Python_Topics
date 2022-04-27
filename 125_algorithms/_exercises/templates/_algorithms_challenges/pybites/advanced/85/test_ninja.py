@@ -68,11 +68,11 @@ ___ test_gt_max_score_highest_belt(ninja, capfd
 
 
 ___ test_new_score_should_be_int(ninja
-    w__ p__.r..(V..., m..="Score takes an int"
+    w__ p__.r.. V..., m..="Score takes an int"
         ninja.score 'a'
 
 
 ___ test_new_score_should_be_higher(yellow_belt
     ... yellow_belt.score __ 50
-    w__ p__.r..(V..., m..="Cannot lower score"
+    w__ p__.r.. V..., m..="Cannot lower score"
         yellow_belt.score 40

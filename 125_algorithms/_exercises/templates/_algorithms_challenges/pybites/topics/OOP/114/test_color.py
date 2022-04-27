@@ -37,7 +37,7 @@ ___ test_color_staticmethod_rgb2hex rgb, e..
 ])
 
 ___ test_color_rgb2hex_bad_value rgb
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         ?.r.. ?)
 
 
@@ -59,7 +59,7 @@ ___ test_color_staticmethod_hex2rgb(hex, e..
     ("pink"),
 ])
 ___ test_color_hex2rgb_bad_value(value
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         ?.h.. ?
 
 

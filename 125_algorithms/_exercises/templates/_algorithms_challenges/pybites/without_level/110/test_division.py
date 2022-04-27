@@ -24,7 +24,7 @@ ___ test_divide_numbers_good_inputs(numerator, denominator, e..
     ('v', 'w'),
 ])
 ___ test_divide_numbers_raises_value_error(numerator, denominator
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         divide_numbers(numerator, denominator)
 
 

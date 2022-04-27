@@ -24,7 +24,7 @@ ___ test_four_day_weekends_workdays(capfd
 
 
 ___ test_four_day_weekends_invalid_call
-    w__ p__.r..(V...) __ e:
+    w__ p__.r.. V...) __ e:
         four_day_weekends(T..)
     ... s..(e.v..) __ pto.ERROR_MSG
 
@@ -32,7 +32,7 @@ ___ test_four_day_weekends_invalid_call
 ___ test_four_day_weekends_invalid_call_custom_error_message
     new_msg "You're calling it wrong dude!"
     pto.ERROR_MSG new_msg
-    w__ p__.r..(V...) __ e:
+    w__ p__.r.. V...) __ e:
         four_day_weekends(T..)
     ... s..(e.v..) __ new_msg
 

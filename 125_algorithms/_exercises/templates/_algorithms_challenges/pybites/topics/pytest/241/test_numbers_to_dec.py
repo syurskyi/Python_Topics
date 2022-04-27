@@ -23,6 +23,6 @@ ___ test_string
 
 
 ___ test_negative_int
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         list_to_decimal([-1])
 

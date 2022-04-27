@@ -17,7 +17,7 @@ ___ test_parse_social_platforms_string
 
 
 ___ test_validate_username_wrong_validator
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         validate_username('Github', 'bob')
 
 

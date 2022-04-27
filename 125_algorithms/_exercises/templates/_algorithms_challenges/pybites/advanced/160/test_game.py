@@ -9,7 +9,7 @@ PLAYERS ("Rock Gun Lightning Devil Dragon Water Air Paper Sponge "
 ?p__.m__.p.("args", [('Rock', 'blabla'),
                                   ('blabla', 'Rock')])
 ___ test_bad_inputs(args
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         get_winner $)
 
 

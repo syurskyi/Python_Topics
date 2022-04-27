@@ -1,7 +1,7 @@
 ____ f.. _______ w..
 
 
-___ int_args(func
+___ int_args func
     $w.. f..
     # complete this decorator
     ___ wrapper $

@@ -36,7 +36,7 @@ ___ test_convert(number, base, e..
     (100, -20),
 ])
 ___ test_convert_base_high(number, base
-    w__ p__.r..(V...
+    w__ p__.r.. V...
         convert(number, base)
 
 
