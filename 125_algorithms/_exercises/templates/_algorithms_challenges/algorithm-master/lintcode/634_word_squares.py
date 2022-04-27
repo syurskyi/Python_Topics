@@ -30,7 +30,7 @@ c_ Solution:
         __ l..(p..) >_ n:
             r..
 
-        ___ i __ r..(l..(words:
+        ___ i __ r..(l.. ?
             p...a..(words[i])
             dfs(words, n, ans, p..)
             p...p.. )

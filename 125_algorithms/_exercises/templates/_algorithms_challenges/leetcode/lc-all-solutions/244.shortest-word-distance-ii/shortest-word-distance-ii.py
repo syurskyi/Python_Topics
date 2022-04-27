@@ -5,7 +5,7 @@ c_ WordDistance(o..
     :type words: List[str]
     """
     d    # dict
-    ___ i __ r..(0, l..(words:
+    ___ i __ r..(0, l.. ?
       d[words[i]] d.g.. words[i], []) + [i]
 
   ___ shortest  word1, word2

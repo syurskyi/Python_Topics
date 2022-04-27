@@ -15,7 +15,7 @@ c_ Solution(o..
         ___ word __ words:
             ___ c __ word:
                 degree[c] 0
-        ___ i __ r..(1, l..(words:
+        ___ i __ r..(1, l.. ?
             currWord words[i]
             prevWord words[i-1]
             length m..(l..(currWord), l..(prevWord

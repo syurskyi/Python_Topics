@@ -8,7 +8,7 @@ c_ Solution(o..
     """
     ans f__("inf")
     idx1 idx2 -1
-    ___ i __ r..(0, l..(words:
+    ___ i __ r..(0, l.. ?
       word words[i]
       __ word __ (word1, word2
         __ word __ word1:

@@ -45,7 +45,7 @@ c_ Solution:
         ___ i, c __ e..(order
             h[c] i
 
-        ___ i __ r..(1, l..(words:
+        ___ i __ r..(1, l.. ?
             __ cmp(words[i], words[i-1], h) __ -1:
                 r.. F..
 

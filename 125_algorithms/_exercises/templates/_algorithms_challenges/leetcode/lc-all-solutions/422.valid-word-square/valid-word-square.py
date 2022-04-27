@@ -4,7 +4,7 @@ c_ Solution(o..
     :type words: List[str]
     :rtype: bool
     """
-    ___ i __ r..(0, l..(words:
+    ___ i __ r..(0, l.. ?
       ___ j __ r..(0, l..(words[i]:
         __ j >_ l..(words) o. i >_ l..(words[j]) o. words[j][i] !_ words[i][j]:
           r.. F..

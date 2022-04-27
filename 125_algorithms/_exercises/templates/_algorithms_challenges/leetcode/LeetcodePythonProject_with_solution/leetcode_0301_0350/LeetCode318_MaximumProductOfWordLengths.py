@@ -13,7 +13,7 @@ c_ Solution(o..
                 arr[i] arr[i] | (1 << (o..(c) - o..('a')))
         result 0
         ___ i, word __ e..(words
-            ___ j __ r..(i+1, l..(words:
+            ___ j __ r..(i+1, l.. ?
                 __ arr[i] & arr[j] __ 0:
                     result m..(result, l..(words[i])*l..(words[j]
         r.. result

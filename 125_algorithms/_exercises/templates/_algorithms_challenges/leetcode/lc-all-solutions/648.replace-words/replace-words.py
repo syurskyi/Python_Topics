@@ -23,9 +23,9 @@ c_ Solution(o..
       p.word word
 
     words sentence.s..
-    ___ i __ r..(l..(words:
+    ___ i __ r..(l.. ?
       p root
-      ___ c __ words[i]:
+      ___ c __ ? ?:
         __ c __ p.children:
           p p.children[c]
           __ p.isWord:

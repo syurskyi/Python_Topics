@@ -22,7 +22,7 @@ c_ Solution(o..
     words.s..(k.._l.... x: -l..(x
     cands s..(words)
     ans    # list
-    ___ i __ r..(0, l..(words:
+    ___ i __ r..(0, l.. ?
       cands -_ {words[i]}
       __ wordBreak(words[i], cands
         ans += words[i],

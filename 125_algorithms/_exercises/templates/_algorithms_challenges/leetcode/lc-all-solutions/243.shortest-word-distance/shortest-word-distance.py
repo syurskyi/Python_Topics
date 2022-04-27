@@ -8,7 +8,7 @@ c_ Solution(o..
     """
     idx1 idx2 -1
     ans l..(words)
-    ___ i __ r..(0, l..(words:
+    ___ i __ r..(0, l.. ?
       word words[i]
       __ word __ (word1, word2
         __ word __ word1:
