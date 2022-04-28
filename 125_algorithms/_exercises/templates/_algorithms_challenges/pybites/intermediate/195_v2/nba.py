@@ -95,5 +95,5 @@ ___ avg_years_active_players_stanford
 ___ year_with_most_drafts
     """Return the year with the most drafts, in SQL you can use GROUP BY"""
 
-    r.. i..(nba.g..('year').size().idxmax
+    r.. i..(nba.g..('year').s...idxmax
 

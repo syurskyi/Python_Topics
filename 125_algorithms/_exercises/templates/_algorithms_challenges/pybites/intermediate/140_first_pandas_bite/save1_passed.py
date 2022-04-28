@@ -1,22 +1,22 @@
-_______ p.... __ pd
-
-data "https://bites-data.s3.us-east-2.amazonaws.com/summer.csv"
-
-
-___ athletes_most_medals(data=data
-    df __.r..(data)
-
-    df_grouped df.g..( 'Athlete', 'Gender' ).c.. )
-    df_grouped df_grouped 'Medal' .reset_index()
-
-    mens df_grouped[df_grouped 'Gender'  __ 'Men' .\
-        sort_values(by='Medal', ascending=F..).head(1)
-    womens df_grouped[df_grouped 'Gender'  __ 'Women' .\
-        sort_values(by='Medal', ascending=F..).head(1)
-
-    output pd.merge(mens, womens, how='outer')[['Athlete', 'Medal']].\
-        set_index('Athlete')
-    output output 'Medal'
-    output.index.name N..
-
-    r.. ?.to_dict()
+# _______ p.... __ pd
+#
+# data "https://bites-data.s3.us-east-2.amazonaws.com/summer.csv"
+#
+#
+# ___ athletes_most_medals data_?
+#     df __.r.. ?
+#
+#     df_grouped ?.g.. 'Athlete', 'Gender' .c..
+#     df_grouped ? 'Medal' .r..
+#
+#     mens ? ? 'Gender'  __ 'Men' .\
+#         sort_values b._'Medal' a.._F.. .h.. 1
+#     womens ? ? 'Gender'  __ 'Women' .\
+#         s.. b._'Medal' a.._F.. .h.. 1
+#
+#     output __.m.. ? ? how='outer' 'Athlete', 'Medal' .\
+#         s.. 'Athlete'
+#     o.. ? 'Medal'
+#     ?.i__.n.. N..
+#
+#     r.. ?.t..

@@ -2,7 +2,7 @@ _______ p.... __ pd
 
 data "https://s3.us-east-2.amazonaws.com/bites-data/menu.csv"
 # load the data in once, functions will use this module object
-df __.r..(data)
+df __.r.. ?
 
 pd.options.mode.chained_assignment N..  # ignore warnings
 
