@@ -24,7 +24,7 @@ ___ import_data
 
     players    # list
     ___ row __ reader
-        players.a..(Player(name=row 'Player' ,
+        players.a..(? name=row 'Player' ,
                               year=row 'Draft_Yr' ,
                               first_year=row 'first_year' ,
                               team=row 'Team' ,

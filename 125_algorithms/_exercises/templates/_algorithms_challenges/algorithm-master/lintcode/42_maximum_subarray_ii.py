@@ -27,7 +27,7 @@ c_ Solution:
         left get_max_sums(nums, r..(n
         right get_max_sums(nums, r..(n - 1, -1, -1
 
-        ans _INF f__('-inf')
+        ans _INF f__ '-inf'
 
         ___ i __ r..(n - 1
             s left[i] + right[i + 1]
@@ -39,7 +39,7 @@ c_ Solution:
 
     ___ get_max_sums  nums, num_range
         res [0] * l..(nums)
-        smax f__('-inf')
+        smax f__ '-inf'
         s smin 0
 
         ___ i __ num_range:

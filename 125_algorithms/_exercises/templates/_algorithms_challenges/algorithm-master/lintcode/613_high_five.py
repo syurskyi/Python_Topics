@@ -32,7 +32,7 @@ c_ Solution:
         _sum 0
         ___ id, scores __ top_k.i..
             _sum 0
-            ___ score __ scores:
+            ___ score __ ?
                 _sum += score
 
             ans[id] _sum * 1.0 / k

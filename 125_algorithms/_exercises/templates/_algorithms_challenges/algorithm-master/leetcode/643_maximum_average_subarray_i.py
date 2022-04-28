@@ -36,7 +36,7 @@ c_ Solution:
               |--> Start to find max sum
                 |--> Start to remove past child
         """
-        max_sum, tmp_sum f__('-inf'), 0
+        max_sum, tmp_sum f__ '-inf', 0
         ___ i __ r..(l..(nums:
             tmp_sum += nums[i]
             __ i >_ k:

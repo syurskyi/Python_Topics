@@ -13,10 +13,10 @@ c_ Solution(o..
         """
         n l..(flights)
         k0 l..(days 0
-        dp [f__('-inf')]*n
+        dp [f__ '-inf']*n
         dp[0] 0
         ___ i __ r..(k0
-            tmp  [f__('-inf')]*n
+            tmp  [f__ '-inf']*n
             ___ j __ r..(n
                 ___ k __ r..(n
                     __ j __ k o. flights[k][j] __ 1:

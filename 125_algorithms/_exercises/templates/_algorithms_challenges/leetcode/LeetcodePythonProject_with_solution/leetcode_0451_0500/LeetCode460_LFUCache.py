@@ -25,7 +25,7 @@ c_ LFUCache(o..
         head Node(-1, -1)
         tail Node(-1, -1)
         head.next tail
-        head.freq f__('-inf')
+        head.freq f__ '-inf'
         tail.freq f__('inf')
     
     ___ get  key

@@ -22,7 +22,7 @@ c_ Solution:
 
     ___ divide_conquer  node
         __ n.. node:
-            r.. f__('-inf'), 0
+            r.. f__ '-inf', 0
 
         max_left, left  divide_conquer(node.left)
         max_right, right  divide_conquer(node.right)
@@ -43,7 +43,7 @@ c_ Solution:
         __ n.. root:
             r.. 0
 
-        ans f__('-inf')
+        ans f__ '-inf'
         divide_conquer(root)
         r.. ans
 

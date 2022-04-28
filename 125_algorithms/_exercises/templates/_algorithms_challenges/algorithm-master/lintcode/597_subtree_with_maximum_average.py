@@ -17,7 +17,7 @@ Test Case:
 """
 
 c_ Solution:
-    max_avg f__('-inf')
+    max_avg f__ '-inf'
     max_node N..
 
     """

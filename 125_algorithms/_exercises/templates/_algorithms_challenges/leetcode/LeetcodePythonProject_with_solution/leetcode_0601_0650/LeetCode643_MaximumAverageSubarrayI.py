@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         __ k <_ 0: r.. 0
         sumVal 0
-        maxVal f__('-inf')
+        maxVal f__ '-inf'
         ___ i, num __ e..(nums
             sumVal += num
             __ i >_ k-1:

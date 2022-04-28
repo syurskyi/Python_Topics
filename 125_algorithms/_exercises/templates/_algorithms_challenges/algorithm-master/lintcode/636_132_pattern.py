@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. A:
             r.. F..
 
-        stack [f__('-inf')]
+        stack [f__ '-inf']
         ___ i __ r..(l..(A) - 1, -1, -1
             __ A[i] < stack[-1]:
                 r.. T..

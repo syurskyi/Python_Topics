@@ -11,7 +11,7 @@ c_ Solution:
         __ n < k:
             r.. 0
 
-        ans f__('-inf')
+        ans f__ '-inf'
         Smin 0
         S [0] * (n + 1)
 

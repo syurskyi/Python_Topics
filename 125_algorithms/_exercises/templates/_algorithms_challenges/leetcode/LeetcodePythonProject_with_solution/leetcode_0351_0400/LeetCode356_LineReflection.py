@@ -6,7 +6,7 @@ Created on Mar 23, 2017
 
 c_ Solution(o..
     ___ isReflected  points
-        minVal, maxVal f__('inf'), f__('-inf')
+        minVal, maxVal f__('inf'), f__ '-inf'
         hashmap    # dict
         ___ point __ points:
             x, y point[0], point[1]

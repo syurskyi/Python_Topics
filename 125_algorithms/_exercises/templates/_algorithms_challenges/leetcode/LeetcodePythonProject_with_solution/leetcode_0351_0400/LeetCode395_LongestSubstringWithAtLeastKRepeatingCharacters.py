@@ -25,7 +25,7 @@ c_ Solution(o..
                 minChar c
         __ hashmap[minChar] >_ k:
             r.. l..(s)
-        maxRes f__('-inf')
+        maxRes f__ '-inf'
         ___ t __ s.s..(minChar
             maxRes m..(maxRes, longestSubstring(t, k
         r.. maxRes

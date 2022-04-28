@@ -36,7 +36,7 @@ c_ Solution(o..
         ___ i __ r..(n-1, -1, -1
             __ seats[i] __ 0:
                 right[i] right[i+1]+1
-        res f__('-inf')
+        res f__ '-inf'
         ___ i __ r..(n
             __ left[i+1] !_ 0 a.. right[i] !_ 0:
                 res m..(res, m..(left[i+1], right[i]

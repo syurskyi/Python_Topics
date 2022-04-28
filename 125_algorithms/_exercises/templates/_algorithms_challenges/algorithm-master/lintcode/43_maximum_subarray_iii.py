@@ -13,7 +13,7 @@ c_ Solution:
         __ n.. A o. n.. k o. l..(A) < k:
             r.. 0
 
-        _INFINITY f__('-inf')
+        _INFINITY f__ '-inf'
         n l..(A)
 
         """

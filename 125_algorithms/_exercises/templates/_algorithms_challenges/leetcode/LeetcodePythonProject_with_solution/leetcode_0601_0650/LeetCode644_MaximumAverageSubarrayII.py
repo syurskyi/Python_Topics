@@ -18,7 +18,7 @@ c_ Solution(o..
         ___ d(x, y
             r.. (dp[y+1]-dp[x])/f__(y+1-x)
         hull c...d..()
-        ans f__('-inf')
+        ans f__ '-inf'
         ___ j __ r..(k-1, n
             w.... l..(hull) >_ 2 a.. d(hull[-2], hull[-1]-1) >_ d(hull[-2], j-k
                 hull.p.. )

@@ -20,7 +20,7 @@ c_ Solution(o..
         w.... root:
             stack.a..(root)
             root root.left
-        prev f__('-inf')
+        prev f__ '-inf'
         res f__('inf')
         w.... stack:
             node stack.p.. )

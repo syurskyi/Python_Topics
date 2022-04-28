@@ -2,7 +2,7 @@ c_ RecordScore
     """Class to track a game's maximum score"""
 
     ___ -
-        high_score f__('-inf')
+        high_score f__ '-inf'
 
     ___ -c  score
         score score

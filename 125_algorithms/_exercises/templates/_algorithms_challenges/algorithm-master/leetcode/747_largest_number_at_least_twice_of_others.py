@@ -5,7 +5,7 @@ c_ Solution:
         :rtype: int
         """
 
-        _max __max f__('-inf')
+        _max __max f__ '-inf'
         _max_i -1
 
         ___ i __ r..(l..(A:

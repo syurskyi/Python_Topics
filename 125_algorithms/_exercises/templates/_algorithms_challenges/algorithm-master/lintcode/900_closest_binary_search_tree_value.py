@@ -15,7 +15,7 @@ c_ Solution:
         :rtype: int
         """
         __ n.. root:
-            r.. f__('-inf')
+            r.. f__ '-inf'
 
         __ root.left a.. target < root.val:
             left closestValue(root.left, target)

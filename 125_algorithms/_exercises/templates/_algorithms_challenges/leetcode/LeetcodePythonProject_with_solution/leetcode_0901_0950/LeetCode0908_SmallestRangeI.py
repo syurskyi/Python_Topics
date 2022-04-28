@@ -17,7 +17,7 @@ c_ Solution(o..
         maxVal m..(A)
         med (minVal+maxVal) // 2
         minVal f__('inf')
-        maxVal f__('-inf')
+        maxVal f__ '-inf'
         ___ num __ A:
             __ num > med:
                 __ num - med > K:

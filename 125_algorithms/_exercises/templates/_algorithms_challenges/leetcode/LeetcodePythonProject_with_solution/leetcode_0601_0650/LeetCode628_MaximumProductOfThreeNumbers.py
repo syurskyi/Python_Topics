@@ -12,7 +12,7 @@ c_ Solution(o..
         __ n.. nums o. l..(nums) < 3:
             r.. 0
         s1, s2 f__('inf'), f__('inf')
-        l1, l2, l3 f__('-inf'), f__('-inf'), f__('-inf')
+        l1, l2, l3 f__ '-inf', f__ '-inf', f__ '-inf'
         ___ num __ nums:
             __ num < s1:
                 s2 s1
@@ -28,7 +28,7 @@ c_ Solution(o..
                 l2 num
             ____ num > l3:
                 l3 num
-        res f__('-inf')
+        res f__ '-inf'
         ___ a1, a2, a3 __ (l1, l2, l3), (s1, s2, l1
             res m..(res, a1*a2*a3)
         r.. res

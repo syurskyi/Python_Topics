@@ -10,7 +10,7 @@ c_ Solution(o..
         :type preorder: List[int]
         :rtype: bool
         """
-        low f__('-inf')
+        low f__ '-inf'
         i -1
         ___ p __ preorder:
             __ p < low:
@@ -28,7 +28,7 @@ c_ Solution(o..
         :rtype: bool
         """
         stack    # list
-        low f__('-inf')
+        low f__ '-inf'
         ___ p __ preorder:
             __ p < low:
                 r.. F..

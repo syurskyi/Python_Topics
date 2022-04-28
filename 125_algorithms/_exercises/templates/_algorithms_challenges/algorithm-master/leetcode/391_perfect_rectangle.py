@@ -11,7 +11,7 @@ c_ Solution:
             r.. F..
 
         left bottom f__('inf')
-        right top f__('-inf')
+        right top f__ '-inf'
         points c...d..(i..)
 
         ___ l, b, r, t __ recs:

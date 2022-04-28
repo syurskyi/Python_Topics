@@ -9,7 +9,7 @@ c_ Solution:
             r.. ans
 
         left right 0
-        _max _sum f__('-inf')
+        _max _sum f__ '-inf'
         ___ i __ r..(l..(A:
             __ _sum < 0:
                 _sum A[i]

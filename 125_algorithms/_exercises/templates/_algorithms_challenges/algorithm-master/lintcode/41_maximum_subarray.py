@@ -14,7 +14,7 @@ c_ Solution:
         __ n.. A:
             r.. 0
 
-        ans f__('-inf')
+        ans f__ '-inf'
         S Smin 0
         ___ i __ r..(l..(A:
             S += A[i]
@@ -49,7 +49,7 @@ c_ Solution:
             r.. 0
 
         n l..(A)
-        ans f__('-inf')
+        ans f__ '-inf'
 
         Smin 0
         S [0] * (n + 1)

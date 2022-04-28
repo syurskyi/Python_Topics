@@ -26,7 +26,7 @@ c_ Solution(o..
         """
         arr A
         res -1
-        val f__('-inf')
+        val f__ '-inf'
         ___ i, num __ e..(arr
             __ num > val:
                 res i

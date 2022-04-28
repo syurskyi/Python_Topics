@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. A:
             r..
 
-        max1 max2 f__('-inf')
+        max1 max2 f__ '-inf'
         ___ a __ A:
             __ a > max1:
                 max2 max1

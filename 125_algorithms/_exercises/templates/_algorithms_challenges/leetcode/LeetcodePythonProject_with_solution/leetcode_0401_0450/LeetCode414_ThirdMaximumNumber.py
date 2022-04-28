@@ -6,7 +6,7 @@ Created on Apr 11, 2017
 
 c_ Solution(o..
     ___ thirdMax  nums
-        first, second, third f__('-inf'), f__('-inf'), f__('-inf')
+        first, second, third f__ '-inf', f__ '-inf', f__ '-inf'
         ___ num __ nums:
             __ num > first:
                 third second
@@ -17,7 +17,7 @@ c_ Solution(o..
                 second num
             ____ second > num > third:
                 third num
-        r.. third __ third !_ f__('-inf') ____ first
+        r.. third __ third !_ f__ '-inf' ____ first
     
     ___ test
         testCases [

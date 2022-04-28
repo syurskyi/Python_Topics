@@ -14,7 +14,7 @@ c_ Solution:
         Rmin get_sum(B, r..(n - 1, -1, -1), factor=-1)
         Rmax get_sum(A, r..(n - 1, -1, -1), factor=1)
 
-        ans f__('-inf')
+        ans f__ '-inf'
         ___ i __ r..(n - 1
             ans m..(
                 ans,
@@ -31,7 +31,7 @@ c_ Solution:
         """
 
         M [0] * l..(A)
-        Smax f__('-inf')
+        Smax f__ '-inf'
         S Smin 0
 
         ___ i __ scope:

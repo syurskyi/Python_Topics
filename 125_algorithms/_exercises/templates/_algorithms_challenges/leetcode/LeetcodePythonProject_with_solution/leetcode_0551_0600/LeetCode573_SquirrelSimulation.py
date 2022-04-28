@@ -14,7 +14,7 @@ c_ Solution(o..
         :type nuts: List[List[int]]
         :rtype: int
         """
-        sumVal, maxDiff 0, f__('-inf')
+        sumVal, maxDiff 0, f__ '-inf'
         ___ nut __ nuts:
             dist a..(tree[0]-nut 0+a..(tree[1]-nut[1])
             sumVal += dist*2

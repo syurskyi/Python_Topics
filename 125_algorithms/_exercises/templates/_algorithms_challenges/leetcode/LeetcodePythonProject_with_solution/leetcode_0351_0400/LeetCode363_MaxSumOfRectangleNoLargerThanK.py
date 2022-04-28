@@ -22,7 +22,7 @@ c_ Solution(o..
                 __ i !_ 0 a.. j __ 0: areas[i][j] matrix[i][j]+areas[i-1][j]
                 __ i !_ 0 a.. j !_ 0:
                     areas[i][j] areas[i][j-1]+areas[i-1][j]+areas[i-1][j-1]+matrix[i][j]
-        maxVal f__('-inf')
+        maxVal f__ '-inf'
         ___ r1 __ r..(m
             ___ r2 __ r..(r1, m
                 sortedlist [0]
