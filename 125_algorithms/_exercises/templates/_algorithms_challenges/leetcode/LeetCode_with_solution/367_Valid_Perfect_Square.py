@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def isPerfectSquare(self, num):
     #     """
     #     :type num: int
@@ -10,18 +10,18 @@ class Solution(object):
     #         i += 2
     #     return num == 0
 
-    def isPerfectSquare(self, num):
+    ___ isPerfectSquare  num):
         low, high = 1, num
-        while low <= high:
+        w.. low <= high:
             mid = (low + high) / 2
             mid_square = mid * mid
-            if mid_square == num:
-                return True
-            elif mid_square < num:
+            __ mid_square __ num:
+                r_ True
+            ____ mid_square < num:
                 low = mid + 1
-            else:
+            ____
                 high = mid - 1
-        return False
+        r_ False
 
     # def isPerfectSquare(self, num):
     #     x = num

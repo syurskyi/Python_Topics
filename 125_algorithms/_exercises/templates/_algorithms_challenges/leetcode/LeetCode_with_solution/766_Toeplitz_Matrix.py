@@ -1,12 +1,12 @@
-class Solution(object):
-    def isToeplitzMatrix(self, matrix):
+c_ Solution o..
+    ___ isToeplitzMatrix  matrix):
         """
         :type matrix: List[List[int]]
         :rtype: bool
         """
         # Actually, we don't need to check the last row and column
-        for r in range(len(matrix) - 1):
-            for c in range(len(matrix[0]) - 1):
-                if matrix[r][c] != matrix[r + 1][c + 1]:
-                    return False
-        return True
+        ___ r __ r.. l.. matrix) - 1):
+            ___ c __ r.. l.. matrix[0]) - 1):
+                __ matrix[r][c] != matrix[r + 1][c + 1]:
+                    r_ False
+        r_ True

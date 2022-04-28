@@ -4,8 +4,8 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-    def deleteNode(self, node):
+c_ Solution o..
+    ___ deleteNode  node):
         """
         :type node: ListNode
         :rtype: void Do not return anything, modify node in-place instead.

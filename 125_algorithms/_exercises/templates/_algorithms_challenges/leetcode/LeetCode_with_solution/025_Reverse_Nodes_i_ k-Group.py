@@ -11,10 +11,10 @@
 #         :type k: int
 #         :rtype: ListNode
 #         """
-class Solution(object):
-    def reverseKGroup(self, head, k):
-        if head is None:
-            return None
+c_ Solution o..
+    ___ reverseKGroup  head, k):
+        __ head is N..:
+            r_ N..
         index = 0
         lead, last = 0, 0
         pos = head
@@ -22,25 +22,25 @@ class Solution(object):
         temp.next = head
         head = temp
         start = head
-        while pos is not None:
-            if index % k == k - 1:
+        w.. pos is not N..:
+            __ index % k __ k - 1:
                 last = pos.next
-                start = self.reverseList(start, last)
+                start = reverseList(start, last)
                 pos = start
             pos = pos.next
             index += 1
-        return head.next
+        r_ head.next
 
-    def reverseList(self, head, end):
+    ___ reverseList  head, end):
         pos = head.next
         last = end
         next_start = pos
-        while pos != end:
+        w.. pos != end:
             head.next = pos
             last_pos = pos
             pos = pos.next
             last_pos.next = last
             last = last_pos
-        return next_start
+        r_ next_start
 
 

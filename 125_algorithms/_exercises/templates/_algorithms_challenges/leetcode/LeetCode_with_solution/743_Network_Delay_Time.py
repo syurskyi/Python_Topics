@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def networkDelayTime(self, times, N, K):
     #     # DFS
     #     graph = collections.defaultdict(list)
@@ -17,28 +17,28 @@ class Solution(object):
     #     ans = max(dist.values())
     #     return ans if ans < float('inf') else -1
 
-    def networkDelayTime(self, times, N, K):
+    ___ networkDelayTime  times, N, K):
         # Dijkstra
         graph = collections.defaultdict(list)
-        for u, v, w in times:
+        ___ u, v, w __ times:
             graph[u].append((v, w))
 
-        dist = {node: float('inf') for node in xrange(1, N + 1)}
+        dist = {node: float('inf') ___ node __ xrange(1, N + 1)}
         seen = [False] * (N + 1)
         dist[K] = 0
 
-        while True:
+        w.. True:
             cand_node = -1
             cand_dist = float('inf')
-            for i in xrange(1, N + 1):
-                if not seen[i] and dist[i] < cand_dist:
+            ___ i __ xrange(1, N + 1):
+                __ not seen[i] and dist[i] < cand_dist:
                     cand_dist = dist[i]
                     cand_node = i
 
-            if cand_node < 0: break
+            __ cand_node < 0: break
             seen[cand_node] = True
-            for nei, d in graph[cand_node]:
+            ___ nei, d __ graph[cand_node]:
                 dist[nei] = min(dist[nei], dist[cand_node] + d)
 
         ans = max(dist.values())
-        return ans if ans < float('inf') else -1
+        r_ ans __ ans < float('inf') ____ -1

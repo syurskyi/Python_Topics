@@ -1,24 +1,24 @@
-class KthLargest(object):
+c_ KthLargest o..
 
-    def __init__(self, k, nums):
-        self.nums = nums
-        self.k = k
+    ___ -  k, nums):
+        nums = nums
+        k = k
         # build min heap
-        heapq.heapify(self.nums)
+        heapq.heapify(nums)
         # remove n - k smallest number
-        while len(self.nums) > k:
-            heapq.heappop(self.nums)
+        w.. l.. nums) > k:
+            heapq.heappop(nums)
 
-    def add(self, val):
+    ___ add  val):
         # add to heaq if it's less then k
-        if len(self.nums) < self.k:
-            heapq.heappush(self.nums, val)
-        elif val > self.nums[0]:
+        __ l.. nums) < k:
+            heapq.heappush(nums, val)
+        ____ val > nums[0]:
             # if len(heaq) == k, and val greater than smallest num
             # then pop smallest num than add val to heap
-            heapq.heapreplace(self.nums, val)
+            heapq.heapreplace(nums, val)
         # return k largest
-        return self.nums[0]
+        r_ nums[0]
 
 # Your KthLargest object will be instantiated and called as such:
 # obj = KthLargest(k, nums)

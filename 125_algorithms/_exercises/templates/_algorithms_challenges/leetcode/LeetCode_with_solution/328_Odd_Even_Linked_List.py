@@ -4,25 +4,25 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-    def oddEvenList(self, head):
+c_ Solution o..
+    ___ oddEvenList  head):
         """
         :type head: ListNode
         :rtype: ListNode
         """
         odd = head
-        if head is None:
-            return None
-        if head.next is None:
-            return head
+        __ head is N..:
+            r_ N..
+        __ head.next is N..:
+            r_ head
         even_head = even = head.next
-        while odd.next is not None and even.next is not None:
+        w.. odd.next is not N.. and even.next is not N..:
             odd.next = even.next
             odd = odd.next
             even.next = odd.next
             even = even.next
         odd.next = even_head
-        return head
+        r_ head
 
     # def oddEvenList(self, head):
     #     # slicing

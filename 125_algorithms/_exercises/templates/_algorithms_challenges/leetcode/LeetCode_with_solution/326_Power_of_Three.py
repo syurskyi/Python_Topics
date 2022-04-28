@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def isPowerOfThree(self, n):
     #     """
     #     :type n: int
@@ -13,8 +13,8 @@ class Solution(object):
     #         return False
     #     return True
 
-    def isPowerOfThree(self, n):
+    ___ isPowerOfThree  n):
         max3pow = 1162261467
-        if n <= 0 or n > max3pow:
-            return False
-        return max3pow % n == 0
+        __ n <= 0 or n > max3pow:
+            r_ False
+        r_ max3pow % n __ 0

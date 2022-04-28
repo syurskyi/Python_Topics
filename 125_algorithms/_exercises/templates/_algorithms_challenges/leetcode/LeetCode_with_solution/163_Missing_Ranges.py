@@ -1,5 +1,5 @@
-class Solution(object):
-    def findMissingRanges(self, nums, lower, upper):
+c_ Solution o..
+    ___ findMissingRanges  nums, lower, upper):
         """
         :type nums: List[int]
         :type lower: int
@@ -8,14 +8,14 @@ class Solution(object):
         """
         ranges = []
         prev = lower - 1
-        for i in range(len(nums) + 1):
-            if i == len(nums):
+        ___ i __ r.. l.. nums) + 1):
+            __ i __ l.. nums):
                 curr = upper + 1
-            else:
+            ____
                 curr = nums[i]
-            if curr - prev > 2:
+            __ curr - prev > 2:
                 ranges.append("%d->%d" % (prev + 1, curr - 1))
-            elif curr - prev == 2:
+            ____ curr - prev __ 2:
                 ranges.append("%d" % (prev + 1))
             prev = curr
-        return ranges
+        r_ ranges

@@ -19,14 +19,14 @@
 # bits[i] is always 0 or 1.
 
 # https://leetcode.com/problems/1-bit-and-2-bit-characters/solution/
-class Solution:
-    def isOneBitCharacter(self, bits: List[int]) -> bool:
+c_ Solution:
+    ___ isOneBitCharacter  bits: List[int]) -> bool:
         pos = 0
         # Go through bits
-        while pos < len(bits) - 1:
+        w.. pos < l.. bits) - 1:
             # if 1, pos + 2; if 0, pos + 1
             pos += bits[pos] + 1
-        return pos == len(bits) - 1
+        r_ pos __ l.. bits) - 1
     
     # def isOneBitCharacter(self, bits):
     #     # From len - 2

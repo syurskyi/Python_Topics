@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def minWindow(self, s, t):
     #     """
     #     :type s: str
@@ -84,44 +84,44 @@ class Solution(object):
     #     else:
     #         return False
     #     return start, end, extra
-    def minWindow(self, s, t):
+    ___ minWindow  s, t):
         # http://articles.leetcode.com/finding-minimum-window-in-s-which/
-        ls_s, ls_t = len(s), len(t)
+        ls_s, ls_t = l.. s), l.. t)
         need_to_find = [0] * 256
         has_found = [0] * 256
         min_begin, min_end = 0, -1
         min_window = 100000000000000
-        for index in range(ls_t):
-            need_to_find[ord(t[index])] += 1
+        ___ index __ r.. ls_t):
+            need_to_find[o.. t[index])] += 1
         count, begin = 0, 0
-        for end in range(ls_s):
-            end_index = ord(s[end])
-            if need_to_find[end_index] == 0:
+        ___ end __ r.. ls_s):
+            end_index = o.. s[end])
+            __ need_to_find[end_index] __ 0:
                 continue
             has_found[end_index] += 1
-            if has_found[end_index] <= need_to_find[end_index]:
+            __ has_found[end_index] <= need_to_find[end_index]:
                 count += 1
-            if count == ls_t:
-                begin_index = ord(s[begin])
-                while need_to_find[begin_index] == 0 or\
+            __ count __ ls_t:
+                begin_index = o.. s[begin])
+                w.. need_to_find[begin_index] __ 0 or\
                     has_found[begin_index] > need_to_find[begin_index]:
-                    if has_found[begin_index] > need_to_find[begin_index]:
+                    __ has_found[begin_index] > need_to_find[begin_index]:
                         has_found[begin_index] -= 1
                     begin += 1
-                    begin_index = ord(s[begin])
+                    begin_index = o.. s[begin])
                 window_ls = end - begin + 1
-                if window_ls < min_window:
+                __ window_ls < min_window:
                     min_begin = begin
                     min_end = end
                     min_window = window_ls
         # print min_begin, min_end
-        if count == ls_t:
-            return s[min_begin: min_end + 1]
-        else:
-            return ''
+        __ count __ ls_t:
+            r_ s[min_begin: min_end + 1]
+        ____
+            r_ ''
 
 
-if __name__ == '__main__':
-    s = Solution()
+__ ____ __ ____
+    s  ?
     print s.minWindow('a', 'a')
 

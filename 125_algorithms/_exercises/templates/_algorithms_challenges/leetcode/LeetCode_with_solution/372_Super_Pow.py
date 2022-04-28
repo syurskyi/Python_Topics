@@ -1,8 +1,8 @@
-class Solution(object):
-    def __init__(self):
-        self.base = 1337
+c_ Solution o..
+    ___ -(self):
+        base = 1337
 
-    def superPow(self, a, b):
+    ___ superPow  a, b):
         """
         :type a: int
         :type b: List[int]
@@ -10,15 +10,15 @@ class Solution(object):
         """
         # One knowledge: ab % k = (a%k)(b%k)%k
         # a^1234567 % k = (a^1234560 % k) * (a^7 % k) % k = (a^123456 % k)^10 % k * (a^7 % k) % k
-        if b is None or len(b) == 0:
-            return 1
+        __ b is N.. or l.. b) __ 0:
+            r_ 1
         last_digit = b.pop()
-        return self.powmod(self.superPow(a, b), 10) * \
-            self.powmod(a, last_digit) % self.base
+        r_ powmod(superPow(a, b), 10) * \
+            powmod(a, last_digit) % base
 
-    def powmod(self, a, k):
-        a %= self.base
+    ___ powmod  a, k):
+        a %= base
         result = 1
-        for i in range(k):
-            result = (result * a) % self.base
-        return result
+        ___ i __ r.. k):
+            result = (result * a) % base
+        r_ result

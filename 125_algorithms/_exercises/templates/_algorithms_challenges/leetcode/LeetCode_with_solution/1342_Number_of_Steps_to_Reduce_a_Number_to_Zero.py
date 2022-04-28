@@ -30,17 +30,17 @@ Constraints:
 0 <= num <= 10^6
 '''
 
-class Solution:
-    def numberOfSteps (self, num: int) -> int:
+c_ Solution:
+    ___ numberOfSteps   num: int) -> int:
         steps = 0
-        while(num > 0):
-            if(num % 2 == 0):
+        w..(num > 0):
+            __(num % 2 __ 0):
                 num = num / 2
                 steps + =1
-            else:
+            ____
                 num = num - 1
                 steps += 1
-        return steps
+        r_ steps
 
     # def numberOfSteps (self, num: int) -> int:
     #     ans = 0

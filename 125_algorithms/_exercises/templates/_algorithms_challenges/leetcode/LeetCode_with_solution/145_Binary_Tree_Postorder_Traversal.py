@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def postorderTraversal(self, root):
     #     """
     #     :type root: TreeNode
@@ -40,18 +40,18 @@ class Solution(object):
     #             stack.append(curr.right)
     #     return res
 
-    def postorderTraversal(self, root):
-        if root is None:
-            return []
+    ___ postorderTraversal  root):
+        __ root is N..:
+            r_ []
         res = []; stack = [root]
-        while len(stack) > 0:
+        w.. l.. stack) > 0:
             curr = stack.pop()
-            if not isinstance(curr, TreeNode):
+            __ not isinstance(curr, TreeNode):
                 res.append(curr)
                 continue
             stack.append(curr.val)
-            if curr.right is not None:
+            __ curr.right is not N..:
                 stack.append(curr.right)
-            if curr.left is not None:
+            __ curr.left is not N..:
                 stack.append(curr.left)
-        return res
+        r_ res

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def multiply(self, num1, num2):
     #     """
     #     :type num1: str
@@ -48,32 +48,32 @@ class Solution(object):
     #         res = str(curr) + res
     #     return res
 
-    def multiply(self, num1, num2):
-        if num1 == '0' or num2 == '0':
-            return '0'
+    ___ multiply  num1, num2):
+        __ num1 __ '0' or num2 __ '0':
+            r_ '0'
         res = ''
-        ls1, ls2, = len(num1), len(num2)
+        ls1, ls2, = l.. num1), l.. num2)
         ls = ls1 + ls2
         # list stores int
         arr = [0] * ls
-        for i in reversed(range(ls1)):
-            for j in reversed(range(ls2)):
+        ___ i __ reversed(r.. ls1)):
+            ___ j __ reversed(r.. ls2)):
                 # store the direct results of multiply two ints
                 arr[i + j + 1] += int(num1[i]) * int(num2[j])
-        for i in reversed(range(1, ls)):
+        ___ i __ reversed(r.. 1, ls)):
             # digital plus
             arr[i - 1] += arr[i] / 10
             arr[i] %= 10
         pos = 0
         # to string
-        if arr[pos] == 0:
+        __ arr[pos] __ 0:
             pos += 1
-        while pos < ls:
+        w.. pos < ls:
             res = res + str(arr[pos])
             pos += 1
-        return res
+        r_ res
 
 
-if __name__ == '__main__':
-    s = Solution()
+__ ____ __ ____
+    s  ?
     print s.multiply("98", "9")

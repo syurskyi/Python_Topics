@@ -1,21 +1,21 @@
-class Solution(object):
+c_ Solution o..
 
-    def __init__(self):
-        self.memo = []
-        self.memo.append(0)
-        self.memo.append(1)
+    ___ -(self):
+        memo = []
+        memo.append(0)
+        memo.append(1)
 
-    def fib(self, N):
+    ___ fib  N):
         """
         DP with memo
         :type N: int
         :rtype: int
         """
-        if N < len(self.memo):
-            return self.memo[N]
-        for i in range(len(self.memo), N + 1):
-            self.memo.append(self.memo[i - 1] + self.memo[i - 2])
-        return self.memo[N]
+        __ N < l.. memo):
+            r_ memo[N]
+        ___ i __ r.. l.. memo), N + 1):
+            memo.append(memo[i - 1] + memo[i - 2])
+        r_ memo[N]
 
     # def fib(self, N):
     #     """

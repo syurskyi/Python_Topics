@@ -1,17 +1,17 @@
-class RecentCounter(object):
+c_ RecentCounter o..
 
-    def __init__(self):
-        self.queue = []
+    ___ -(self):
+        queue = []
 
-    def ping(self, t):
+    ___ ping  t):
         """
         :type t: int
         :rtype: int
         """
-        self.queue.append(t)
-        while self.queue and self.queue[0] < t - 3000:
-            self.queue.pop(0)
-        return len(self.queue)
+        queue.append(t)
+        w.. queue and queue[0] < t - 3000:
+            queue.pop(0)
+        r_ l.. queue)
 
 
 # Your RecentCounter object will be instantiated and called as such:

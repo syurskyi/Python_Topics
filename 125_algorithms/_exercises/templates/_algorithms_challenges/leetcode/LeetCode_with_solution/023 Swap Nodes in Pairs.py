@@ -21,7 +21,7 @@ c_ Solution:
         :param head: ListNode
         :return: ListNode
         """
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
 
         pre dummy

@@ -4,8 +4,8 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-    def removeElements(self, head, val):
+c_ Solution o..
+    ___ removeElements  head, val):
         """
         :type head: ListNode
         :type val: int
@@ -15,11 +15,11 @@ class Solution(object):
         prehead = ListNode(-1)
         prehead.next = head
         last, pos = prehead, head
-        while pos is not None:
-            if pos.val == val:
+        w.. pos is not N..:
+            __ pos.val __ val:
                 last.next = pos.next
-            else:
+            ____
                 last = pos
             pos = pos.next
-        return prehead.next
+        r_ prehead.next
 

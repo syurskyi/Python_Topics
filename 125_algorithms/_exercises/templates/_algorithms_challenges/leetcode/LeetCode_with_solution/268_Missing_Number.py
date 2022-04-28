@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def missingNumber(self, nums):
     #     """
     #     :type nums: List[int]
@@ -7,12 +7,12 @@ class Solution(object):
     #     n = len(nums)
     #     return (n ** 2 + n) / 2 - sum(nums)
 
-    def missingNumber(self, nums):
-        res = len(nums)
-        for i, v in enumerate(nums):
+    ___ missingNumber  nums):
+        res = l.. nums)
+        ___ i, v __ e.. nums):
             res ^= i
             res ^= v
-        return res
+        r_ res
     
     # def missingNumber(self, nums):
     #     nums.sort()

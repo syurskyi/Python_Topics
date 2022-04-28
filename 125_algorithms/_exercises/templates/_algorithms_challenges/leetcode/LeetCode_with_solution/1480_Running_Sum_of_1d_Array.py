@@ -1,10 +1,10 @@
-class Solution:
-    def runningSum(self, nums: List[int]) -> List[int]:
-        if nums is None or len(nums) == 0:
-            return nums
-        for i in range(1, len(nums)):
+c_ Solution:
+    ___ runningSum  nums: List[int]) -> List[int]:
+        __ nums is N.. or l.. nums) __ 0:
+            r_ nums
+        ___ i __ r.. 1, l.. nums)):
             nums[i] += nums[i-1]
-        return nums
+        r_ nums
 
     # def runningSum(self, nums: List[int]) -> List[int]:
     #     # accumulate method

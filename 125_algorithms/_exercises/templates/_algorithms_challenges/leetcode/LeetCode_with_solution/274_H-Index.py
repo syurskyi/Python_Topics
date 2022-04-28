@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def hIndex(self, citations):
     #     """
     #     :type citations: List[int]
@@ -20,14 +20,14 @@ class Solution(object):
     #         i += 1
     #     return i
 
-    def hIndex(self, citations):
+    ___ hIndex  citations):
         # counting sort
-        ls = len(citations)
+        ls = l.. citations)
         papers = [0] * (ls + 1)
-        for c in citations:
+        ___ c __ citations:
             papers[min(ls, c)] += 1
         k, s = ls, papers[ls]
-        while k > s:
+        w.. k > s:
             k -= 1
             s += papers[k]
-        return k
+        r_ k

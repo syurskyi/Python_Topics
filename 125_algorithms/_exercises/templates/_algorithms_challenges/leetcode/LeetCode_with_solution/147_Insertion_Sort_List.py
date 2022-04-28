@@ -4,23 +4,23 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-    def insertionSortList(self, head):
+c_ Solution o..
+    ___ insertionSortList  head):
         """
         :type head: ListNode
         :rtype: ListNode
         """
         # https://discuss.leetcode.com/topic/8570/an-easy-and-clear-way-to-sort-o-1-space
-        if head is None:
-            return None
+        __ head is N..:
+            r_ N..
         helper = ListNode(-1000)
         pre, curr = helper, head
-        while curr is not None:
+        w.. curr is not N..:
             next_step = curr.next
-            while pre.next and pre.next.val < curr.val:
+            w.. pre.next and pre.next.val < curr.val:
                 pre = pre.next
             curr.next = pre.next
             pre.next = curr
             pre = helper
             curr = next_step
-        return helper.next
+        r_ helper.next

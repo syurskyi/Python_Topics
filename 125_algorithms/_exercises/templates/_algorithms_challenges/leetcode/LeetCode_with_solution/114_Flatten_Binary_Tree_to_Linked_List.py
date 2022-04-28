@@ -5,30 +5,30 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # stack
-    def flatten(self, root):
+    ___ flatten  root):
         """
         :type root: TreeNode
         :rtype: void Do not return anything, modify root in-place instead.
         """
-        if root is None:
-            return
-        if root.left is None and root.right is None:
-            return
+        __ root is N..:
+            r_
+        __ root.left is N.. and root.right is N..:
+            r_
         current = root
         stack = [root]
-        while stack:
+        w.. stack:
             node = stack.pop()
-            self.appendNode(stack, node.right)
-            self.appendNode(stack, node.left)
-            if current != node:
+            appendNode(stack, node.right)
+            appendNode(stack, node.left)
+            __ current != node:
                 current.right = node
-                current.left = None
+                current.left = N..
                 current = node
 
-    def appendNode(self, stack, node):
-        if node:
+    ___ appendNode  stack, node):
+        __ node:
             stack.append(node)
 
     # recursive

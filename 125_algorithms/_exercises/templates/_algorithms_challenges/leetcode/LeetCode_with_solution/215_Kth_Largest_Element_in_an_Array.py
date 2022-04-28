@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def findKthLargest(self, nums, k):
     #     """
     #     :type nums: List[int]
@@ -16,25 +16,25 @@ class Solution(object):
     #     return nums[0]
     #     #return heapq.nlargest(k, nums)[-1]
 
-    def findKthLargest(self, nums, k):
+    ___ findKthLargest  nums, k):
         # shuffle nums to avoid n*n
         random.shuffle(nums)
-        return self.quickSelection(nums, 0, len(nums) - 1, len(nums) - k)
+        r_ quickSelection(nums, 0, l.. nums) - 1, l.. nums) - k)
 
-    def quickSelection(self, nums, start, end, k):
-        if start > end:
-            return float('inf')
+    ___ quickSelection  nums, start, end, k):
+        __ start > end:
+            r_ float('inf')
         pivot = nums[end]
         left = start
-        for i in range(start, end):
-            if nums[i] <= pivot:
+        ___ i __ r.. start, end):
+            __ nums[i] <= pivot:
                 # swip left and i
                 nums[left], nums[i] = nums[i], nums[left]
                 left += 1
         nums[left], nums[end] = nums[end], nums[left]
-        if left == k:
-            return nums[left]
-        elif left < k:
-            return self.quickSelection(nums, left + 1, end, k)
-        else:
-            return self.quickSelection(nums, start, left - 1, k)
+        __ left __ k:
+            r_ nums[left]
+        ____ left < k:
+            r_ quickSelection(nums, left + 1, end, k)
+        ____
+            r_ quickSelection(nums, start, left - 1, k)

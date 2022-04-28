@@ -1,18 +1,18 @@
-class Solution(object):
-    def canPermutePalindrome(self, s):
+c_ Solution o..
+    ___ canPermutePalindrome  s):
         """
         :type s: str
         :rtype: bool
         """
-        dic = {}
-        for c in s:
+        dic  # dict
+        ___ c __ s:
             dic[c] = dic.get(c, 0) + 1
         odd, even = 0, 0
-        for c in dic:
-            if dic[c] % 2 == 0:
+        ___ c __ dic:
+            __ dic[c] % 2 __ 0:
                 even += 1
-            else:
+            ____
                 odd += 1
-        if odd <= 1:
-            return True
-        return False
+        __ odd <= 1:
+            r_ True
+        r_ False

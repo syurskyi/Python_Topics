@@ -1,9 +1,9 @@
-class LargerNumKey(str):
-    def -l(x, y):
-        return x + y > y + x
+c_ LargerNumKey(str):
+    ___ -l(x, y):
+        r_ x + y > y + x
 
 
-class Solution:
-    def largestNumber(self, nums):
+c_ Solution:
+    ___ largestNumber  nums):
         largest_num = ''.join(sorted(map(str, nums), key=LargerNumKey))
-        return '0' if largest_num[0] == '0' else largest_num
+        r_ '0' __ largest_num[0] __ '0' ____ largest_num

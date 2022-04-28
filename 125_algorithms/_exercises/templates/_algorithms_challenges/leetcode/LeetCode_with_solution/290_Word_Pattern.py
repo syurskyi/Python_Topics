@@ -1,22 +1,22 @@
-class Solution(object):
-    def wordPattern(self, pattern, str):
+c_ Solution o..
+    ___ wordPattern  pattern, str):
         """
         :type pattern: str
         :type str: str
         :rtype: bool
         """
-        if pattern is None or str is None:
-            return True
+        __ pattern is N.. or str is N..:
+            r_ True
         # double map
-        words_to_pattern = {}
-        pattern_to_words = {}
+        words_to_pattern  # dict
+        pattern_to_words  # dict
         word_list = str.split(' ')
-        if len(word_list) != len(pattern):
-            return False
-        for index, word in enumerate(word_list):
+        __ l.. word_list) != l.. pattern):
+            r_ False
+        ___ index, word __ e.. word_list):
             curr_p = pattern[index]
-            if pattern_to_words.get(curr_p, word) != word or words_to_pattern.get(word, curr_p) != curr_p:
-                return False
+            __ pattern_to_words.get(curr_p, word) != word or words_to_pattern.get(word, curr_p) != curr_p:
+                r_ False
             pattern_to_words[curr_p] = pattern_to_words.get(curr_p, word)
             words_to_pattern[word] = words_to_pattern.get(word, curr_p)
-        return True
+        r_ True

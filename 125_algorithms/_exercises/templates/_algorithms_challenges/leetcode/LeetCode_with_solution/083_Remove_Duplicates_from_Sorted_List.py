@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution o..
     # def deleteDuplicates(self, head):
     #     """
     #     :type head: ListNode
@@ -25,13 +25,13 @@ class Solution(object):
     #         pos = pos.next
     #     return head.next
 
-    def deleteDuplicates(self, head):
-        if head is None:
-            return None
+    ___ deleteDuplicates  head):
+        __ head is N..:
+            r_ N..
         pos = head
-        while pos is not None and pos.next is not None:
-            if pos.val == pos.next.val:
+        w.. pos is not N.. and pos.next is not N..:
+            __ pos.val __ pos.next.val:
                 pos.next = pos.next.next
-            else:
+            ____
                 pos = pos.next
-        return head
+        r_ head

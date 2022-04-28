@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def reverseWords(self, s):
     #     """
     #     :type s: str
@@ -12,28 +12,28 @@ class Solution(object):
     #     temp = reversed(temp)
     #     return ' '.join(temp)
 
-    def reverseWords(self, s):
+    ___ reverseWords  s):
         # remove tail space
         s = s.strip(' ')
         array_s = []
         last = ' '
         # remove multiple spaces
-        for i in range(len(s)):
-            if s[i] != ' ':
+        ___ i __ r.. l.. s)):
+            __ s[i] != ' ':
                 array_s.append(s[i])
-            else:
-                if last != ' ':
+            ____
+                __ last != ' ':
                     array_s.append(s[i])
             last = s[i]
         array_s = array_s[::-1]
-        ls, pos = len(array_s), 0
-        for i in range(ls + 1):
-            if i == ls or array_s[i] == ' ':
-                self.reverse(array_s, pos, i)
+        ls, pos = l.. array_s), 0
+        ___ i __ r.. ls + 1):
+            __ i __ ls or array_s[i] __ ' ':
+                reverse(array_s, pos, i)
                 pos = i + 1
-        return ''.join(array_s)
+        r_ ''.join(array_s)
 
-    def reverse(self, array_s, begin, end):
-        for i in range((end - begin) / 2):
+    ___ reverse  array_s, begin, end):
+        ___ i __ range((end - begin) / 2):
             array_s[begin + i], array_s[end - i - 1] = array_s[end - i - 1], array_s[begin + i]
 

@@ -1,15 +1,15 @@
-class Solution(object):
-    def transpose(self, A):
+c_ Solution o..
+    ___ transpose  A):
         """
         :type A: List[List[int]]
         :rtype: List[List[int]]
         """
-        R, C = len(A), len(A[0])
-        ans = [[None] * R for _ in xrange(C)]
-        for r, row in enumerate(A):
-            for c, val in enumerate(row):
+        R, C = l.. A), l.. A[0])
+        ans = [[N..] * R ___ _ __ xrange(C)]
+        ___ r, row __ e.. A):
+            ___ c, val __ e.. row):
                 ans[c][r] = val
-        return ans
+        r_ ans
         # Alternative Solution:
         # return zip(*A)
 

@@ -4,18 +4,18 @@
 #         :type n: int
 #         :rtype: List[str]
 #         """
-class Solution(object):
-    def generateParenthesis(self, n):
-        if n == 1:
-            return ['()']
-        last_list = self.generateParenthesis(n - 1)
+c_ Solution o..
+    ___ generateParenthesis  n):
+        __ n __ 1:
+            r_ ['()']
+        last_list = generateParenthesis(n - 1)
         res = []
-        for t in last_list:
+        ___ t __ last_list:
             curr = t + ')'
-            for index in range(len(curr)):
-                if curr[index] == ')':
+            ___ index __ r.. l.. curr)):
+                __ curr[index] __ ')':
                     res.append(curr[:index] + '(' + curr[index:])
-        return list(set(res))
+        r_ list(set(res))
 
 
     # def generateParenthesis(self, n):

@@ -106,7 +106,7 @@ ___ yearly_report(df: pd.DataFrame, year: i..) __ N..
         12     69545.62
     """
     __ year n.. __ df.month.dt.year.unique
-        r.. V... _*The year {year} is not included in the report!')
+        r.. V... _*The year {year} is not included __ the report!')
     df df.c..
     df 'year'  = df.month.dt.year
     df 'month'  = df.month.dt.month

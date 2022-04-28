@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def findMin(self, nums):
     #     """
     #     :type nums: List[int]
@@ -24,14 +24,14 @@ class Solution(object):
     #         # left side sorted
     #         return self.get_min(nums, mid, end)
 
-    def findMin(self, nums):
+    ___ findMin  nums):
         # A[l] > A[r]
-        l, r = 0, len(nums) - 1
-        while l < r and nums[l] >= nums[r]:
+        l, r = 0, l.. nums) - 1
+        w.. l < r and nums[l] >= nums[r]:
             mid = (l + r) / 2
-            if nums[mid] > nums[r]:
+            __ nums[mid] > nums[r]:
                 l = mid + 1
-            else:
+            ____
                 r = mid
-        return nums[l]
+        r_ nums[l]
 

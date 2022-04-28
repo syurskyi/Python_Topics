@@ -1,29 +1,29 @@
-class Solution:
-    def compareVersion(self, version1: str, version2: str) -> int:
+c_ Solution:
+    ___ compareVersion  version1: str, version2: str) -> int:
         l1=list(map(int,version1.split('.')))
         l2=list(map(int,version2.split('.')))
-        if l1==l2:
-            return(0)
+        __ l1__l2:
+            r_(0)
         
-        a=len(l1)
-        b=len(l2)
+        a=l.. l1)
+        b=l.. l2)
         
-        if a>b:
-            for i in range(a-b):
+        __ a>b:
+            ___ i __ r.. a-b):
                 l2.append("0")
         
-        else:
-            for i in range(b-a):
+        ____
+            ___ i __ r.. b-a):
                 l1.append("0")
             
-        for i in range(len(l1)):
-            if int(l1[i])>int(l2[i]):
-                return(1)
+        ___ i __ r.. l.. l1)):
+            __ int(l1[i])>int(l2[i]):
+                r_(1)
             
-            elif int(l1[i])<int(l2[i]):
-                return(-1)
+            ____ int(l1[i])<int(l2[i]):
+                r_(-1)
             
-            else:
+            ____
                 pass
         
-        return(0)
+        r_(0)

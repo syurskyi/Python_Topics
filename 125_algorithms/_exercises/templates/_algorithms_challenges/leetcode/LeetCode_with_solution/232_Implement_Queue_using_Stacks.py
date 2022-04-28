@@ -39,45 +39,45 @@
 #         """
 #         return len(self.stack1) == 0
 
-class Queue(object):
-    def __init__(self):
+c_ Queue o..
+    ___ -(self):
         """
         initialize your data structure here.
         """
-        self.stack1 = []
-        self.stack2 = []
+        stack1 = []
+        stack2 = []
 
 
-    def push(self, x):
+    ___ push  x):
         """
         :type x: int
         :rtype: nothing
         """
-        self.stack1.append(x)
+        stack1.append(x)
 
-    def pop(self):
+    ___ pop(self):
         """
         :rtype: nothing
         """
-        if len(self.stack2) == 0:
-            while len(self.stack1):
-                curr = self.stack1.pop()
-                self.stack2.append(curr)
-        self.stack2.pop()
+        __ l.. stack2) __ 0:
+            w.. l.. stack1):
+                curr = stack1.pop()
+                stack2.append(curr)
+        stack2.pop()
 
 
-    def peek(self):
+    ___ peek(self):
         """
         :rtype: int
         """
-        if len(self.stack2) == 0:
-            while len(self.stack1):
-                curr = self.stack1.pop()
-                self.stack2.append(curr)
-        return self.stack2[-1]
+        __ l.. stack2) __ 0:
+            w.. l.. stack1):
+                curr = stack1.pop()
+                stack2.append(curr)
+        r_ stack2[-1]
 
-    def empty(self):
+    ___ empty(self):
         """
         :rtype: bool
         """
-        return len(self.stack1) + len(self.stack2) == 0
+        r_ l.. stack1) + l.. stack2) __ 0

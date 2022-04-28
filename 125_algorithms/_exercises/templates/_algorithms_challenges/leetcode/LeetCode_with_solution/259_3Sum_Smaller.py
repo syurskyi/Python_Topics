@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def threeSumSmaller(self, nums, target):
     #     """
     #     :type nums: List[int]
@@ -31,26 +31,26 @@ class Solution(object):
     #             right = mid - 1
     #     return left
 
-    def threeSumSmaller(self, nums, target):
+    ___ threeSumSmaller  nums, target):
         """
         :type nums: List[int]
         :type target: int
         :rtype: int
         """
         # https://leetcode.com/articles/3sum-smaller/#approach-2-binary-search-accepted
-        nums.sort()
-        ls = len(nums)
+        nums.s..
+        ls = l.. nums)
         res = 0
-        for i in range(ls - 1):
-            res += self.twoSumSmaller(nums, i + 1, target - nums[i])
-        return res
+        ___ i __ r.. ls - 1):
+            res += twoSumSmaller(nums, i + 1, target - nums[i])
+        r_ res
 
-    def twoSumSmaller(self, nums, start, target):
-        res, left, right = 0, start, len(nums) - 1
-        while left < right:
-            if nums[left] + nums[right] < target:
+    ___ twoSumSmaller  nums, start, target):
+        res, left, right = 0, start, l.. nums) - 1
+        w.. left < right:
+            __ nums[left] + nums[right] < target:
                 res += right - left
                 left += 1
-            else:
+            ____
                 right -= 1
-        return res
+        r_ res

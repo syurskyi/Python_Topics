@@ -1,23 +1,23 @@
-class Solution(object):
-    def canCompleteCircuit(self, gas, cost):
+c_ Solution o..
+    ___ canCompleteCircuit  gas, cost):
         """
         :type gas: List[int]
         :type cost: List[int]
         :rtype: int
         """
         # https://discuss.leetcode.com/topic/5088/my-ac-is-o-1-space-o-n-running-time-solution-does-anybody-have-posted-this-solution
-        ls = len(gas)
+        ls = l.. gas)
         begin, end = 0, ls - 1
         curr = gas[end] - cost[end]
-        while begin < end:
-            if curr >= 0:
+        w.. begin < end:
+            __ curr >= 0:
                 curr += gas[begin] - cost[begin]
                 begin += 1
-            else:
+            ____
                 end -= 1
                 curr += gas[end] - cost[end]
-        if curr >= 0:
-            return end
-        else:
-            return -1
+        __ curr >= 0:
+            r_ end
+        ____
+            r_ -1
 

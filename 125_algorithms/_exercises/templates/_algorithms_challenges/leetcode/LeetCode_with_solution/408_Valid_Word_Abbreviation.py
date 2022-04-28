@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def validWordAbbreviation(self, word, abbr):
     #     """
     #     :type word: str
@@ -33,26 +33,26 @@ class Solution(object):
     #     if pos1 == len(abbr) and pos2 == len(word):
     #         return True
     #     return False
-    def validWordAbbreviation(self, word, abbr):
+    ___ validWordAbbreviation  word, abbr):
         pos = curr = 0
-        for i in range(len(abbr)):
+        ___ i __ r.. l.. abbr)):
             try:
                 num = int(abbr[i])
-                if num == 0 and curr == 0:
-                    return False
+                __ num __ 0 and curr __ 0:
+                    r_ False
                 curr = curr * 10 + num
             except ValueError:
                 pos += curr
                 curr = 0
-                if pos >= len(word):
-                    return False
-                if word[pos] != abbr[i]:
-                    return False
+                __ pos >= l.. word):
+                    r_ False
+                __ word[pos] != abbr[i]:
+                    r_ False
                 pos += 1
         pos += curr
-        if pos == len(word):
-            return True
-        return False
+        __ pos __ l.. word):
+            r_ True
+        r_ False
 
 
         

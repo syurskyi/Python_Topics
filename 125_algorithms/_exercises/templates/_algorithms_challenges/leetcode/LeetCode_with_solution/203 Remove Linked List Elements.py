@@ -22,7 +22,7 @@ c_ Solution:
         :param val:
         :rtype: ListNode
         """
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
 
         pre dummy

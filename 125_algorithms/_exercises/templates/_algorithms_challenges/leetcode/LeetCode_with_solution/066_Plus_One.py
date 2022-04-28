@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def plusOne(self, digits):
     #     """
     #     :type digits: List[int]
@@ -19,17 +19,17 @@ class Solution(object):
     #         digits.insert(0, curr)
     #     return digits
 
-    def plusOne(self, digits):
-        ls = len(digits)
-        for index in reversed(range(ls)):
-            if digits[index] < 9:
+    ___ plusOne  digits):
+        ls = l.. digits)
+        ___ index __ reversed(r.. ls)):
+            __ digits[index] < 9:
                 digits[index] += 1
                 # do not need to continue
-                return digits
-            else:
+                r_ digits
+            ____
                 # 10
                 digits[index] = 0
         digits.insert(0, 1)
-        return digits
+        r_ digits
 
 

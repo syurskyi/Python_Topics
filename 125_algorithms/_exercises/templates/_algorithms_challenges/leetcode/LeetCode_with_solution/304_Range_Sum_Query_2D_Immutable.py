@@ -1,4 +1,4 @@
-class NumMatrix(object):
+c_ NumMatrix o..
     # https://leetcode.com/articles/range-sum-query-2d-immutable/#approach-3-caching-rows-accepted
     # def __init__(self, matrix):
     #     """
@@ -29,23 +29,23 @@ class NumMatrix(object):
     #     return sum
 
     # caching smarter
-    def __init__(self, matrix):
+    ___ -  matrix):
         """
         initialize your data structure here.
         :type matrix: List[List[int]]
         """
-        if matrix is None or len(matrix) == 0:
-            return
-        height, width = len(matrix), len(matrix[0])
-        self.dp = [[0]* (width + 1) for i in range(height + 1)]
-        for i in range(height):
-            for j in range(width):
-                self.dp[i + 1][j + 1] = self.dp[i + 1][j] + \
-                                        self.dp[i][j + 1] + matrix[i][j] - self.dp[i][j]
+        __ matrix is N.. or l.. matrix) __ 0:
+            r_
+        height, width = l.. matrix), l.. matrix[0])
+        dp = [[0]* (width + 1) ___ i __ r.. height + 1)]
+        ___ i __ r.. height):
+            ___ j __ r.. width):
+                dp[i + 1][j + 1] = dp[i + 1][j] + \
+                                        dp[i][j + 1] + matrix[i][j] - dp[i][j]
 
 
 
-    def sumRegion(self, row1, col1, row2, col2):
+    ___ sumRegion  row1, col1, row2, col2):
         """
         sum of elements matrix[(row1,col1)..(row2,col2)], inclusive.
         :type row1: int
@@ -54,8 +54,8 @@ class NumMatrix(object):
         :type col2: int
         :rtype: int
         """
-        return self.dp[row2 + 1][col2 + 1] - self.dp[row1][col2 + 1] - \
-               self.dp[row2 + 1][col1] + self.dp[row1][col1]
+        r_ dp[row2 + 1][col2 + 1] - dp[row1][col2 + 1] - \
+               dp[row2 + 1][col1] + dp[row1][col1]
 
 
 

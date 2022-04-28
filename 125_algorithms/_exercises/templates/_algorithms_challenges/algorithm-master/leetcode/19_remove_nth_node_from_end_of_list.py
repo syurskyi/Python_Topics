@@ -17,7 +17,7 @@ c_ Solution:
         __ n.. head o. n.. n:
             r.. head
 
-        dummy slow ListNode(0)
+        dummy slow ? 0
         dummy.next fast head
 
         w.... fast a.. n:

@@ -5,27 +5,27 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def leafSimilar(self, root1, root2):
+c_ Solution o..
+    ___ leafSimilar  root1, root2):
         """
         :type root1: TreeNode
         :type root2: TreeNode
         :rtype: bool
         """
-        if not root1 and not root2:
-            return True
+        __ not root1 and not root2:
+            r_ True
         leaf1 = []
         leaf2 = []
-        self.dfs(root1, leaf1)
-        self.dfs(root2, leaf2)
-        if leaf1 == leaf2:
-            return True
-        return False
+        dfs(root1, leaf1)
+        dfs(root2, leaf2)
+        __ leaf1 __ leaf2:
+            r_ True
+        r_ False
 
-    def dfs(self, node, leavels):
-        if not node:
-            return
-        if not node.left and not node.right:
+    ___ dfs  node, leavels):
+        __ not node:
+            r_
+        __ not node.left and not node.right:
             leavels.append(node.val)
-        self.dfs(node.left, leavels)
-        self.dfs(node.right, leavels)
+        dfs(node.left, leavels)
+        dfs(node.right, leavels)

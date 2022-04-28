@@ -1,25 +1,25 @@
-class Solution(object):
-    def isOneEditDistance(self, s, t):
+c_ Solution o..
+    ___ isOneEditDistance  s, t):
         """
         :type s: str
         :type t: str
         :rtype: bool
         """
-        ls_s, ls_t = len(s) ,len(t)
+        ls_s, ls_t = l.. s) ,l.. t)
         # reverse to reduce conditions
-        if ls_s > ls_t:
-            return self.isOneEditDistance(t, s)
+        __ ls_s > ls_t:
+            r_ isOneEditDistance(t, s)
         # edit distance is greater than 1
-        if ls_t - ls_s > 1:
-            return False
+        __ ls_t - ls_s > 1:
+            r_ False
         i, shift = 0, ls_t - ls_s
         # find the different position
-        while i < ls_s and s[i] == t[i]:
+        w.. i < ls_s and s[i] __ t[i]:
             i += 1
-        if i == ls_s:
-            return shift > 0
-        if shift == 0:
+        __ i __ ls_s:
+            r_ shift > 0
+        __ shift __ 0:
             i += 1
-        while i < ls_s and s[i] == t[i + shift]:
+        w.. i < ls_s and s[i] __ t[i + shift]:
             i += 1
-        return i == ls_s
+        r_ i __ ls_s

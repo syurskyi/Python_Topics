@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def sortColors(self, nums):
     #     """
     #     :type nums: List[int]
@@ -16,19 +16,19 @@ class Solution(object):
     #             count[index] -= 1
     #     return
 
-    def sortColors(self, nums):
+    ___ sortColors  nums):
         # https://leetcode.com/discuss/85658/sharing-c-solution-with-good-explanation
-        low, mid, high = 0, 0, len(nums) - 1
-        while mid <= high:
-            if nums[mid] == 0:
+        low, mid, high = 0, 0, l.. nums) - 1
+        w.. mid <= high:
+            __ nums[mid] __ 0:
                 # swap low mid
                 nums[low], nums[mid] = nums[mid], nums[low]
                 low += 1
                 mid += 1
-            elif nums[mid] == 1:
+            ____ nums[mid] __ 1:
                 mid += 1
-            else:
+            ____
                 # swap mid high
                 nums[high], nums[mid] = nums[mid], nums[high]
                 high -= 1
-        return
+        r_

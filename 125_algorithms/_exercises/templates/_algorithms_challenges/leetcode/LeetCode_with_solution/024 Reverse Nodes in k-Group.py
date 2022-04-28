@@ -32,7 +32,7 @@ c_ Solution:
         :param k: an integer
         :return: ListNode
         """
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
 
         pre dummy

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def uniquePathsWithObstacles(self, obstacleGrid):
     #     """
     #     :type obstacleGrid: List[List[int]]
@@ -28,16 +28,16 @@ class Solution(object):
     #             dmap[i][j] = l + u
     #     return dmap[m - 1][n - 1]
 
-    def uniquePathsWithObstacles(self, obstacleGrid):
-        m, n = len(obstacleGrid), len(obstacleGrid[0])
-        if m == 0:
-            return 0
-        dmap = [[0] * (n + 1) for _ in range(m + 1)]
+    ___ uniquePathsWithObstacles  obstacleGrid):
+        m, n = l.. obstacleGrid), l.. obstacleGrid[0])
+        __ m __ 0:
+            r_ 0
+        dmap = [[0] * (n + 1) ___ _ __ r.. m + 1)]
         dmap[m - 1][n] = 1
-        for i in range(m - 1, -1, -1):
-            for j in  range(n - 1, -1, -1):
-                if obstacleGrid[i][j] == 1:
+        ___ i __ r.. m - 1, -1, -1):
+            ___ j __  r.. n - 1, -1, -1):
+                __ obstacleGrid[i][j] __ 1:
                     dmap[i][j] = 0
-                else:
+                ____
                     dmap[i][j] = dmap[i][j + 1] + dmap[i + 1][j]
-        return dmap[0][0]
+        r_ dmap[0][0]

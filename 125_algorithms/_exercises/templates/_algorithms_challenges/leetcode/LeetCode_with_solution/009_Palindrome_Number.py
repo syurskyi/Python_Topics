@@ -5,12 +5,12 @@
 #         :rtype: bool
 #         """
 
-class Solution(object):
-    def isPalindrome(self, x: int) -> bool:
+c_ Solution o..
+    ___ isPalindrome  x: int) -> bool:
         x = str(x)
-        if (x == x[::-1]):
-            return True
-        return False        
+        __ (x __ x[::-1]):
+            r_ True
+        r_ False        
         
         
     # def isPalindrome(self, x):
@@ -61,7 +61,7 @@ class Solution(object):
     #         return False
 
 
-if __name__ == '__main__':
+__ ____ __ ____
     # begin
-    s = Solution()
+    s  ?
     print s.isPalindrome(1001)

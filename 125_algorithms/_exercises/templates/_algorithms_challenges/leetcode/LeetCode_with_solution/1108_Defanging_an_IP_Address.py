@@ -1,7 +1,7 @@
-class Solution:
-    def defangIPaddr(self, address: str) -> str:
+c_ Solution:
+    ___ defangIPaddr  address: str) -> str:
         # replace
-        return address.replace('.', '[.]')
+        r_ address.replace('.', '[.]')
     # def defangIPaddr(self, address: str) -> str:
     #     # split and join
     #     return '[.]'.join(address.split('.'))

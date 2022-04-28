@@ -1,18 +1,18 @@
-class Solution(object):
-    def maxProfit(self, prices):
+c_ Solution o..
+    ___ maxProfit  prices):
         """
         :type prices: List[int]
         :rtype: int
         """
-        length = len(prices)
-        if length == 0:
-            return 0
+        length = l.. prices)
+        __ length __ 0:
+            r_ 0
         max_profit, low = 0, prices[0]
-        for i in range(1, length):
-            if low > prices[i]:
+        ___ i __ r.. 1, length):
+            __ low > prices[i]:
                 low = prices[i]
-            else:
+            ____
                 temp = prices[i] - low
-                if temp > max_profit:
+                __ temp > max_profit:
                     max_profit = temp
-        return max_profit
+        r_ max_profit

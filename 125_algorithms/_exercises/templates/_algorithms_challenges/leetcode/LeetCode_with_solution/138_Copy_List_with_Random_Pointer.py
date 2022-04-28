@@ -5,7 +5,7 @@
 #         self.next = None
 #         self.random = None
 
-class Solution(object):
+c_ Solution o..
     # def copyRandomList(self, head):
     #     """
     #     :type head: RandomListNode
@@ -40,31 +40,31 @@ class Solution(object):
     #         q = q.next
     #     return dummyHead.next
 
-    def copyRandomList(self, head):
+    ___ copyRandomList  head):
         # Modify original structure: Original->Copy->Original->Copy
         # node.next.random = node.random.next
         # O(n) and O(1)
         p = head
-        while p is not None:
+        w.. p is not N..:
             next = p.next
             copy = RandomListNode(p.label)
             p.next = copy
             copy.next =  next
             p = next
         p = head
-        while p is not None:
-            if p.random is not None:
+        w.. p is not N..:
+            __ p.random is not N..:
                 p.next.random = p.random.next
             p = p.next.next
         p = head
-        if p is not None:
+        __ p is not N..:
             headCopy = p.next
-        else:
-            headCopy = None
-        while p is not None:
+        ____
+            headCopy = N..
+        w.. p is not N..:
             copy = p.next
             p.next = copy.next
             p = p.next
-            if p is not None:
+            __ p is not N..:
                 copy.next = p.next
-        return headCopy
+        r_ headCopy

@@ -1,33 +1,33 @@
-class Solution(object):
-    def kWeakestRows(self, mat, k):
+c_ Solution o..
+    ___ kWeakestRows  mat, k):
         """
         :type mat: List[List[int]]
         :type k: int
         :rtype: List[int]
         """
         res = []
-        num_row = len(mat)
-        num_col = len(mat[0])
+        num_row = l.. mat)
+        num_col = l.. mat[0])
         col = 0
         flag = 1
-        while col < num_col and flag:
-            for i in range(num_row):
-                if i in res:
+        w.. col < num_col and flag:
+            ___ i __ r.. num_row):
+                __ i __ res:
                     continue
                 # Add first row with 0 into res
-                if mat[i][col] == 0:
+                __ mat[i][col] __ 0:
                     res.append(i)
-                if len(res) == k:
+                __ l.. res) __ k:
                     flag = 0
                     break
             col += 1
-        if len(res) == k:
-            return res
+        __ l.. res) __ k:
+            r_ res
         # if res less than k
-        for i in range(num_row):
-            if i in res:
+        ___ i __ r.. num_row):
+            __ i __ res:
                 continue
             res.append(i)
-            if len(res) == k:
+            __ l.. res) __ k:
                 break
-        return res
+        r_ res

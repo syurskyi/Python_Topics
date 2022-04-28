@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def levelOrder(self, root):
     #     """
     #     :type root: TreeNode
@@ -26,19 +26,19 @@ class Solution(object):
     #     self.get_level(res, root.left, depth + 1)
     #     self.get_level(res, root.right, depth + 1)
 
-    def levelOrder(self, root):
+    ___ levelOrder  root):
         # https://leetcode.com/discuss/90680/9-lines-python-code
-        if root is None:
-            return []
+        __ root is N..:
+            r_ []
         q = [[root]]
-        for level in q:
+        ___ level __ q:
             record = []
-            for node in level:
-                if node.left:
+            ___ node __ level:
+                __ node.left:
                     record.append(node.left)
-                if node.right:
+                __ node.right:
                     record.append(node.right)
-            if record:
+            __ record:
                 q.append(record)
-        return [[x.val for x in level] for level in q]
+        r_ [[x.val ___ x __ level] ___ level __ q]
 

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # https://leetcode.com/problems/convert-bst-to-greater-tree/solution/
     # def __init__(self):
     #     self.total = 0
@@ -11,15 +11,15 @@ class Solution(object):
     #         self.convertBST(root.left)
     #     return root
 
-    def convertBST(self, root):
+    ___ convertBST  root):
         total = 0
         
         node = root
         stack = []
-        while stack or node is not None:
+        w.. stack or node is not N..:
             # push all nodes up to (and including) this subtree's maximum on
             # the stack.
-            while node is not None:
+            w.. node is not N..:
                 stack.append(node)
                 node = node.right
 
@@ -31,4 +31,4 @@ class Solution(object):
             # the left subtree.
             node = node.left
 
-        return root
+        r_ root

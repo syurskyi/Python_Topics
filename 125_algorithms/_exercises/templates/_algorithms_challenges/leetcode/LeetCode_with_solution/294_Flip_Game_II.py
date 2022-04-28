@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def canWin(self, s):
     #     """
     #     :type s: str
@@ -12,23 +12,23 @@ class Solution(object):
     #                 return True
     #     return False
 
-    def canWin(self, s):
-        if s is None or len(s) < 2:
-            return False
+    ___ canWin  s):
+        __ s is N.. or l.. s) < 2:
+            r_ False
         list_s = list(s)
-        return self.canWin_helper(list_s)
+        r_ canWin_helper(list_s)
 
-    def canWin_helper(self, s):
-        for i in range(len(s) - 1):
-            if s[i] == '+' and s[i + 1] == '+':
+    ___ canWin_helper  s):
+        ___ i __ r.. l.. s) - 1):
+            __ s[i] __ '+' and s[i + 1] __ '+':
                 s[i] = '-'
                 s[i + 1] = '-'
-                res = self.canWin_helper(s)
+                res = canWin_helper(s)
                 s[i] = '+'
                 s[i + 1] = '+'
-                if not res:
-                    return True
-        return False
+                __ not res:
+                    r_ True
+        r_ False
 
     # def canWin(self, s):
     #     # backtracking with memo
@@ -79,6 +79,6 @@ class Solution(object):
     #             return i
     #     return ls
 
-if __name__ == '__main__':
-    s = Solution()
+__ ____ __ ____
+    s  ?
     print s.canWin("++++")

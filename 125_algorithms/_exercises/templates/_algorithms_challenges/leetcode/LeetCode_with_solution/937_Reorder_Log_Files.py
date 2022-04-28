@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def reorderLogFiles(self, logs):
     #     """
     #     :type logs: List[str]
@@ -11,13 +11,13 @@ class Solution(object):
     #     # Python sort is stable, so digit with keep their order
     #     return sorted(logs, key = f)
 
-    def reorderLogFiles(self, logs):
+    ___ reorderLogFiles  logs):
         letter_logs = []
         digit_logs = []
-        for log in logs:
-            if log.split(' ')[1].isnumeric():
+        ___ log __ logs:
+            __ log.split(' ')[1].isnumeric():
                 digit_logs.append(log)
-            else:
+            ____
                 letter_logs.append(log)
-        return sorted(letter_logs, key=lambda x: x.split(' ')[1:] + x.split(' ')[0]) + digit_logs
+        r_ sorted(letter_logs, key=lambda x: x.split(' ')[1:] + x.split(' ')[0]) + digit_logs
         

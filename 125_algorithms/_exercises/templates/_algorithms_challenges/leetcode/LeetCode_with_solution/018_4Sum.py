@@ -7,34 +7,34 @@
 #         """
 
 
-class Solution(object):
-    def fourSum(self, nums, target):
+c_ Solution o..
+    ___ fourSum  nums, target):
         sort_nums = sorted(nums)
-        ls = len(nums)
-        res = {}
-        pairs = {}
-        for i in range(ls - 3):
-            for j in range(i + 1, ls - 2):
+        ls = l.. nums)
+        res  # dict
+        pairs  # dict
+        ___ i __ r.. ls - 3):
+            ___ j __ r.. i + 1, ls - 2):
                 res_2 = sort_nums[i] + sort_nums[j]
                 try:
                     pairs[target - res_2].append([i, j])
                 except KeyError:
                     pairs[target - res_2] = [[i, j]]
-        for key, temp in pairs.items():
-            for pair in temp:
+        ___ key, temp __ pairs.items():
+            ___ pair __ temp:
                 j = pair[1] + 1
                 k = ls - 1
-                while j < k:
+                w.. j < k:
                     current = sort_nums[j] + sort_nums[k]
-                    if current == key:
+                    __ current __ key:
                         result = (sort_nums[pair[0]], sort_nums[pair[1]], sort_nums[j], sort_nums[k])
                         res[result] = True
                         j += 1
-                    elif current < key:
+                    ____ current < key:
                         j += 1
-                    else:
+                    ____
                         k -= 1
-        return res.keys()
+        r_ res.keys()
 
     # def fourSum(self, nums, target):
     #     # https://leetcode.com/discuss/89989/why-is-python-o-n-3-tle
@@ -55,7 +55,7 @@ class Solution(object):
     #                 index_pairs[sum] = [(i,j)]
     #     return combos.keys()
 
-if __name__ == '__main__':
+__ ____ __ ____
     # begin
-    s = Solution()
+    s  ?
     print s.fourSum([0, 0, 0, 0], 0)

@@ -4,24 +4,24 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution o..
     # https://leetcode.com/articles/intersection-two-linked-lists/
-    def getIntersectionNode(self, headA, headB):
+    ___ getIntersectionNode  headA, headB):
         """
         :type head1, head1: ListNode
         :rtype: ListNode
         """
         # two points
-        if not headA or not headB:
-            return None
+        __ not headA or not headB:
+            r_ N..
         a, b = headA, headB
-        ans = None
-        while a or b:
-            if not a:
+        ans = N..
+        w.. a or b:
+            __ not a:
                 a = headB
-            if not b:
+            __ not b:
                 b = headA
-            if a == b and not ans:
+            __ a __ b and not ans:
                 ans = a
             a, b = a.next, b.next
-        return ans
+        r_ ans

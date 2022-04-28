@@ -1,73 +1,73 @@
-class TrieNode(object):
+c_ TrieNode o..
     # https://leetcode.com/articles/implement-trie-prefix-tree/#trie-node-structure
-    def __init__(self):
+    ___ -(self):
         """
         Initialize your data structure here.
         """
-        self.links = [None] * 26
-        self.isEnd = False
+        links = [N..] * 26
+        isEnd = False
 
-    def containsKey(self, ch):
-        return self.links[ord(ch) - ord('a')] != None
+    ___ containsKey  ch):
+        r_ links[o.. ch) - o.. 'a')] != N..
 
-    def get(self, ch):
-        return self.links[ord(ch) - ord('a')]
+    ___ get  ch):
+        r_ links[o.. ch) - o.. 'a')]
 
-    def put(self, ch, node):
-        self.links[ord(ch) - ord('a')] = node
+    ___ put  ch, node):
+        links[o.. ch) - o.. 'a')] = node
 
-    def setEnd(self):
-        self.isEnd = True
+    ___ setEnd(self):
+        isEnd = True
 
 
-class Trie(object):
-    def __init__(self):
-        self.root = TrieNode()
+c_ Trie o..
+    ___ -(self):
+        root = TrieNode()
 
-    def insert(self, word):
+    ___ insert  word):
         """
         Inserts a word into the trie.
         :type word: str
         :rtype: void
         """
-        node = self.root
-        for i in range(len(word)):
+        node = root
+        ___ i __ r.. l.. word)):
             ch = word[i]
-            if node.containsKey(ch) is False:
+            __ node.containsKey(ch) is False:
                 node.put(ch, TrieNode())
             node = node.get(ch)
         node.setEnd()
 
-    def searchPrefix(self, word):
-        node = self.root
-        for i in range(len(word)):
+    ___ searchPrefix  word):
+        node = root
+        ___ i __ r.. l.. word)):
             ch = word[i]
-            if node.containsKey(ch):
+            __ node.containsKey(ch):
                 node = node.get(ch)
-            else:
-                return None
-        return node
+            ____
+                r_ N..
+        r_ node
 
 
-    def search(self, word):
+    ___ search  word):
         """
         Returns if the word is in the trie.
         :type word: str
         :rtype: bool
         """
-        node = self.searchPrefix(word)
-        return node is not None and node.isEnd
+        node = searchPrefix(word)
+        r_ node is not N.. and node.isEnd
 
 
-    def startsWith(self, prefix):
+    ___ startsWith  prefix):
         """
         Returns if there is any word in the trie
         that starts with the given prefix.
         :type prefix: str
         :rtype: bool
         """
-        node = self.searchPrefix(prefix)
-        return node is not None
+        node = searchPrefix(prefix)
+        r_ node is not N..
 
 
         # Your Trie object will be instantiated and called as such:

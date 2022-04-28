@@ -1,15 +1,15 @@
-class Solution(object):
-    def maxProduct(self, nums):
+c_ Solution o..
+    ___ maxProduct  nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        if nums is None or len(nums) == 0:
-            return 0
+        __ nums is N.. or l.. nums) __ 0:
+            r_ 0
         max_here = min_here = max_so_far = nums[0]
-        for i in range(1, len(nums)):
+        ___ i __ r.. 1, l.. nums)):
             mx, mn = max_here, min_here
             max_here = max(max(mx * nums[i], nums[i]), mn * nums[i])
             min_here = min(min(mx * nums[i], nums[i]), mn * nums[i])
             max_so_far = max(max_here, max_so_far)
-        return max_so_far
+        r_ max_so_far

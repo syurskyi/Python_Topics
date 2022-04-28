@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def subsets(self, nums):
     #     """
     #     :type nums: List[int]
@@ -37,22 +37,22 @@ class Solution(object):
     #            res.append(nums[i])
     #     return res
 
-    def subsets(self, nums):
+    ___ subsets  nums):
         # Sort and iteratively generate n subset with n-1 subset, O(n^2) and O(2^n)
-        nums.sort()
+        nums.s..
         res = [[]]
-        for index in range(len(nums)):
-            size = len(res)
+        ___ index __ r.. l.. nums)):
+            size = l.. res)
             # use existing subsets to generate new subsets
-            for j in range(size):
+            ___ j __ r.. size):
                 curr = list(res[j])
                 curr.append(nums[index])
                 res.append(curr)
-        return res
+        r_ res
 
 
 
 
-if __name__ == "__main__":
-    s = Solution()
+__ __name__ __ "__main__":
+    s  ?
     print s.subsets([1,2,3])

@@ -1,14 +1,14 @@
-class Solution(object):
-    def canJump(self, nums):
+c_ Solution o..
+    ___ canJump  nums):
         """
         :type nums: List[int]
         :rtype: bool
         """
         # greedy
         # https://leetcode.com/articles/jump-game/
-        length = len(nums)
+        length = l.. nums)
         begin = length - 1
-        for i in reversed(range(length - 1)):
-            if i + nums[i] >= begin:
+        ___ i __ reversed(r.. length - 1)):
+            __ i + nums[i] >= begin:
                 begin = i
-        return not begin
+        r_ not begin

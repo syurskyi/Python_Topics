@@ -1,32 +1,32 @@
 import random
-class Solution(object):
-    def __init__(self, nums):
+c_ Solution o..
+    ___ -  nums):
         """
         :type nums: List[int]
         :type size: int
         """
-        self.origin = list(nums)
-        self.curr = list(nums)
-        self.size = len(nums)
+        origin = list(nums)
+        curr = list(nums)
+        size = l.. nums)
 
-    def reset(self):
+    ___ reset(self):
         """
         Resets the array to its original configuration and return it.
         :rtype: List[int]
         """
-        self.curr = list(self.origin)
-        return self.curr
+        curr = list(origin)
+        r_ curr
 
-    def shuffle(self):
+    ___ shuffle(self):
         """
         Returns a random shuffling of the array.
         :rtype: List[int]
         """
-        for i in range(self.size):
+        ___ i __ r.. size):
             pos = random.randint(0, i)
             # swap i and pos
-            self.curr[i], self.curr[pos] = self.curr[pos], self.curr[i]
-        return self.curr
+            curr[i], curr[pos] = curr[pos], curr[i]
+        r_ curr
 
 
         # Your Solution object will be instantiated and called as such:

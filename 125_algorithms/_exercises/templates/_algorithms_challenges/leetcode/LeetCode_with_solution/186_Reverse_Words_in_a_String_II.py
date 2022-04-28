@@ -1,18 +1,18 @@
-class Solution(object):
-    def reverseWords(self, s):
+c_ Solution o..
+    ___ reverseWords  s):
         """
         :type s: a list of 1 length strings (List[str])
         :rtype: nothing
         """
-        ls, pos = len(s), 0
-        if s is None or ls == 0:
-            return
-        self.reverse(s, 0, ls)
-        for i in range(ls + 1):
-            if i == ls or s[i] == ' ':
-                self.reverse(s, pos, i)
+        ls, pos = l.. s), 0
+        __ s is N.. or ls __ 0:
+            r_
+        reverse(s, 0, ls)
+        ___ i __ r.. ls + 1):
+            __ i __ ls or s[i] __ ' ':
+                reverse(s, pos, i)
                 pos = i + 1
 
-    def reverse(self, array_s, begin, end):
-        for i in range((end - begin) / 2):
+    ___ reverse  array_s, begin, end):
+        ___ i __ range((end - begin) / 2):
             array_s[begin + i], array_s[end - i - 1] = array_s[end - i - 1], array_s[begin + i]

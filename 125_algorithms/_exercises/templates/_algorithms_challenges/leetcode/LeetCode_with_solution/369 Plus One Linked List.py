@@ -30,7 +30,7 @@ c_ Solution(o..
             __ cur.val >_ 10:
                 cur.val -_ 10
                 __ n.. cur.next:
-                    cur.next ListNode(0)
+                    cur.next ? 0
                 cur cur.next
             ____
                 _____
@@ -41,7 +41,7 @@ c_ Solution(o..
         __ n.. head:
             r.. N..
 
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
         pre dummy
         cur pre.next

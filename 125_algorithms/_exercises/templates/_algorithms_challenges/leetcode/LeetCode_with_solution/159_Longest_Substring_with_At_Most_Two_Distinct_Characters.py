@@ -1,18 +1,18 @@
-class Solution(object):
-    def lengthOfLongestSubstringTwoDistinct(self, s):
+c_ Solution o..
+    ___ lengthOfLongestSubstringTwoDistinct  s):
         """
         :type s: str
         :rtype: int
         """
         i, j, maxLen = 0, -1, 0
         # i for start, k for end, j for latest pos contains different character from k
-        for k in range(1, len(s)):
-            if s[k] == s[k - 1]:
+        ___ k __ r.. 1, l.. s)):
+            __ s[k] __ s[k - 1]:
                 continue
-            if j >= 0 and s[j] != s[k]:
+            __ j >= 0 and s[j] != s[k]:
                 maxLen = max(k - i, maxLen)
                 # update i
                 i = j + 1
             # update
             j = k - 1
-        return max(len(s) - i, maxLen)
+        r_ max(l.. s) - i, maxLen)

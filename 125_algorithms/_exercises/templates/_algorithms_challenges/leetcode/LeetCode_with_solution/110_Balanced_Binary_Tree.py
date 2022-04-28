@@ -5,32 +5,32 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def isBalanced(self, root):
+c_ Solution o..
+    ___ isBalanced  root):
         """
         :type root: TreeNode
         :rtype: bool
         """
         # Bottom-up recursion with sentinel -1
-        if root is None:
-            return True
-        if self.getDepth(root) < 0:
-            return False
-        return True
+        __ root is N..:
+            r_ True
+        __ getDepth(root) < 0:
+            r_ False
+        r_ True
     
-    def getDepth(self, node):
-        if node is None:
-            return 1
-        ld = self.getDepth(node.left)
-        if ld < 0:
-            return -1
-        rd = self.getDepth(node.right)
-        if rd < 0:
-            return -1
-        elif abs(ld - rd) > 1:
-            return -1
-        else:
-            return max(ld, rd) + 1
+    ___ getDepth  node):
+        __ node is N..:
+            r_ 1
+        ld = getDepth(node.left)
+        __ ld < 0:
+            r_ -1
+        rd = getDepth(node.right)
+        __ rd < 0:
+            r_ -1
+        ____ abs(ld - rd) > 1:
+            r_ -1
+        ____
+            r_ max(ld, rd) + 1
     
 
     # https://discuss.leetcode.com/topic/7798/the-bottom-up-o-n-solution-would-be-better

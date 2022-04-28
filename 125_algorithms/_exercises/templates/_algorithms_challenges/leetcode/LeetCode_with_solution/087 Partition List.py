@@ -27,10 +27,10 @@ c_ Solution:
         :param x: integer
         :return: ListNode
         """
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
-        dummy_smaller ListNode(0)
-        dummy_larger ListNode(0)
+        dummy_smaller ? 0
+        dummy_larger ? 0
 
         pre dummy
         pre_smaller dummy_smaller

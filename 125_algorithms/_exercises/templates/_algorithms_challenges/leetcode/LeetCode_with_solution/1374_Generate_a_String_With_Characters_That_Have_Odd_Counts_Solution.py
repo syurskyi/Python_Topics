@@ -4,9 +4,9 @@ The returned string must contain only lowercase English letters. If there are mu
  Input: n = 4
 Output: "pppz"
 '''
-class Solution:
-    def generateTheString(self, n: int) -> str:
-        if n%2==0:
-            return "a" * (n-1) + "b"
-        else:
-            return "a" * n
+c_ Solution:
+    ___ generateTheString  n: int) -> str:
+        __ n%2__0:
+            r_ "a" * (n-1) + "b"
+        ____
+            r_ "a" * n

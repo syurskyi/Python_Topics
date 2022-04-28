@@ -6,7 +6,7 @@
 #         self.right = None
 #         self.next = None
 
-class Solution(object):
+c_ Solution o..
     # def connect(self, root):
     #     """
     #     :type root: TreeLinkNode
@@ -29,21 +29,21 @@ class Solution(object):
     #             last = node
     #         nodes = next_step
 
-    def connect(self, root):
+    ___ connect  root):
         # https://discuss.leetcode.com/topic/28580/java-solution-with-constant-space
         dummyHead = TreeLinkNode(-1)
         pre = dummyHead
-        while root is not None:
-            if root.left is not None:
+        w.. root is not N..:
+            __ root.left is not N..:
                 pre.next = root.left
                 pre = pre.next
-            if root.right is not None:
+            __ root.right is not N..:
                 pre.next = root.right
                 pre = pre.next
             root = root.next
-            if root is None:
+            __ root is N..:
                 pre = dummyHead
                 root = dummyHead.next
-                dummyHead.next = None
+                dummyHead.next = N..
 
 

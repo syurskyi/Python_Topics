@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def invertTree(self, root):
     #     """
     #     :type root: TreeNode
@@ -20,16 +20,16 @@ class Solution(object):
     #     root.right = left
     #     return root
 
-    def invertTree(self, root):
+    ___ invertTree  root):
         # iteratively
-        if root is None:
-            return None
+        __ root is N..:
+            r_ N..
         queue = [root]
-        while len(queue):
+        w.. l.. queue):
             curr = queue.pop(0)
             curr.left, curr.right = curr.right, curr.left
-            if curr.left is not None:
+            __ curr.left is not N..:
                 queue.append(curr.left)
-            if curr.right is not None:
+            __ curr.right is not N..:
                 queue.append(curr.right)
-        return root
+        r_ root

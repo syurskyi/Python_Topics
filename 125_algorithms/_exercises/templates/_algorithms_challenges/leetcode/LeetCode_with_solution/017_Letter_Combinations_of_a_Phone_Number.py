@@ -13,24 +13,24 @@ dmap = {'2': 'abc',
         '8': 'tuv',
         '9': 'wxyz',
         '0': ' ',
-        None: None}
+        N..: N..}
 
-class Solution(object):
-    def letterCombinations(self, digits):
+c_ Solution o..
+    ___ letterCombinations  digits):
         # DFS
         result = []
-        ls = len(digits)
-        if ls == 0:
-            return result
+        ls = l.. digits)
+        __ ls __ 0:
+            r_ result
         current = digits[0]
-        posfix = self.letterCombinations(digits[1:])
-        for t in dmap[current]:
-            if len(posfix) > 0:
-                for p in posfix:
+        posfix = letterCombinations(digits[1:])
+        ___ t __ dmap[current]:
+            __ l.. posfix) > 0:
+                ___ p __ posfix:
                     temp = t + p
                     result.append(temp)
-            else:
+            ____
                 result.append(t)
-        return result
+        r_ result
 
 

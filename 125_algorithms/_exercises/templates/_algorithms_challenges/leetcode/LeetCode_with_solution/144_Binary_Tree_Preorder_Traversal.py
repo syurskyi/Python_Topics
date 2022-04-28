@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def __init__(self):
     #     self.result = []
     #
@@ -26,18 +26,18 @@ class Solution(object):
     #     self.preorderTraversalHelper(node.left)
     #     self.preorderTraversalHelper(node.right)
 
-    def preorderTraversal(self, root):
+    ___ preorderTraversal  root):
         # stack
-        if root is None:
-            return []
+        __ root is N..:
+            r_ []
         res = []
         stack = [root]
-        while len(stack) > 0:
+        w.. l.. stack) > 0:
             curr = stack.pop()
             res.append(curr.val)
-            if curr.right is not None:
+            __ curr.right is not N..:
                 stack.append(curr.right)
-            if curr.left is not None:
+            __ curr.left is not N..:
                 stack.append(curr.left)
-        return res
+        r_ res
 

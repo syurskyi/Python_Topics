@@ -5,21 +5,21 @@
 #         :type target: int
 #         :rtype: int
 #         """
-class Solution(object):
-    def threeSumClosest(self, nums, target):
-        ls = len(nums)
+c_ Solution o..
+    ___ threeSumClosest  nums, target):
+        ls = l.. nums)
         sort_nums = sorted(nums)
         res = nums[0] + nums[1] + nums[2]
-        for i in range(ls - 2):
+        ___ i __ r.. ls - 2):
             j, k = i + 1, ls - 1
-            while j < k:
+            w.. j < k:
                 temp = sort_nums[i] + sort_nums[j] + sort_nums[k]
-                if abs(target - temp) < abs(target - res):
+                __ abs(target - temp) < abs(target - res):
                     res = temp
-                if temp < target:
+                __ temp < target:
                     j += 1
-                else:
+                ____
                     k -= 1
-        return res
+        r_ res
 
 

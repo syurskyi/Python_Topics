@@ -1,5 +1,5 @@
-class Solution(object):
-    def thirdMax(self, nums):
+c_ Solution o..
+    ___ thirdMax  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -7,14 +7,14 @@ class Solution(object):
         import Queue
         pq = Queue.PriorityQueue(4)
         check = set()
-        for n in nums:
-            if n in check:
+        ___ n __ nums:
+            __ n __ check:
                 continue
             pq.put(n)
             check.add(n)
-            if len(check) > 3:
+            __ l.. check) > 3:
                 check.remove(pq.get())
-        total = len(check)
-        while total < 3 and total > 1:
+        total = l.. check)
+        w.. total < 3 and total > 1:
             total -= 1
-        return pq.get()
+        r_ pq.get()

@@ -6,25 +6,25 @@
 #         self.right = None
 
 
-class Solution(object):
-    def longestConsecutive(self, root):
+c_ Solution o..
+    ___ longestConsecutive  root):
         """
         :type root: TreeNode
         :rtype: int
         """
-        return self.longestConsecutive_helper(root, -10000, 1)
+        r_ longestConsecutive_helper(root, -10000, 1)
 
-    def longestConsecutive_helper(self, root, previous, curr):
+    ___ longestConsecutive_helper  root, previous, curr):
         # Top down recursion
-        if root is None:
-            return 0
-        if root.val - 1 == previous:
+        __ root is N..:
+            r_ 0
+        __ root.val - 1 __ previous:
             curr += 1
-        else:
+        ____
             curr = 1
-        l_res = self.longestConsecutive_helper(root.left, root.val, curr)
-        r_res = self.longestConsecutive_helper(root.right, root.val, curr)
-        return max(curr, l_res, r_res)
+        l_res = longestConsecutive_helper(root.left, root.val, curr)
+        r_res = longestConsecutive_helper(root.right, root.val, curr)
+        r_ max(curr, l_res, r_res)
 
     # def __init__(self):
     #     self.max_length = 0

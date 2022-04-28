@@ -5,21 +5,21 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def isSameTree(self, p, q):
+c_ Solution o..
+    ___ isSameTree  p, q):
         """
         :type p: TreeNode
         :type q: TreeNode
         :rtype: bool
         """
-        if p == q:
-            return True
+        __ p __ q:
+            r_ True
         try:
             left = right = True
-            if p.val == q.val:
-                left = self.isSameTree(p.left, q.left)
-                right = self.isSameTree(p.right, q.right)
-                return (left and right)
+            __ p.val __ q.val:
+                left = isSameTree(p.left, q.left)
+                right = isSameTree(p.right, q.right)
+                r_ (left and right)
         except:
-            return False
-        return False
+            r_ False
+        r_ False

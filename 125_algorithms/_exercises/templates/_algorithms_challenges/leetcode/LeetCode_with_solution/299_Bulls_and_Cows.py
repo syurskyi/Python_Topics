@@ -1,34 +1,34 @@
-class Solution(object):
-    def getHint(self, secret, guess):
+c_ Solution o..
+    ___ getHint  secret, guess):
         """
         :type secret: str
         :type guess: str
         :rtype: str
         """
-        check = {}
-        ls = len(secret)
+        check  # dict
+        ls = l.. secret)
         bull, cow = 0, 0
         different = []
-        for i in range(ls):
-            if guess[i] == secret[i]:
+        ___ i __ r.. ls):
+            __ guess[i] __ secret[i]:
                 bull += 1
-            else:
+            ____
                 # store possible index and count for cow
                 different.append(i)
                 try:
                     check[secret[i]] += 1
                 except KeyError:
                     check[secret[i]] = 1
-        for i in different:
+        ___ i __ different:
             try:
-                if check[guess[i]] > 0:
+                __ check[guess[i]] > 0:
                     cow += 1
                     check[guess[i]] -= 1
             except:
                 pass
-        return "%dA%dB" % (bull, cow)
+        r_ "%dA%dB" % (bull, cow)
 
 
-if __name__ == "__main__":
-    s = Solution()
+__ __name__ __ "__main__":
+    s  ?
     print s.getHint("1122", "1222")

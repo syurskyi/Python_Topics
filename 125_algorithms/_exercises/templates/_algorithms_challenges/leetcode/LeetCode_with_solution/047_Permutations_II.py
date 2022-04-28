@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def __init__(self):
     #     self.result = {}
     #
@@ -29,39 +29,39 @@ class Solution(object):
     #             temp.append(rest[i])
     #             self.getPermute(temp, rest[:i] + rest[i + 1:])
 
-    def permuteUnique(self, num):
+    ___ permuteUnique  num):
         res = []
-        if len(num) == 0:
-            return res
-        self.permute(res, num, 0)
-        return res
+        __ l.. num) __ 0:
+            r_ res
+        permute(res, num, 0)
+        r_ res
 
-    def permute(self, res, num, index):
-        if index == len(num):
+    ___ permute  res, num, index):
+        __ index __ l.. num):
             res.append(list(num))
-            return
+            r_
         appeared = set()
-        for i in range(index, len(num)):
-            if num[i] in appeared:
+        ___ i __ r.. index, l.. num)):
+            __ num[i] __ appeared:
                 continue
             appeared.add(num[i])
             num[i], num[index] = num[index], num[i]
-            self.permute(res, num, index + 1)
+            permute(res, num, index + 1)
             num[i], num[index] = num[index], num[i]
 
-    def permuteUnique(self, num):
+    ___ permuteUnique  num):
         # iterative solution
         res = [[]]
-        for i in range(len(nums)):
+        ___ i __ r.. l.. nums)):
             cache = set()
-            while len(res[0]) == i:
+            w.. l.. res[0]) __ i:
                 curr = res.pop(0)
-                for j in range(len(curr) + 1):
+                ___ j __ r.. l.. curr) + 1):
                     # generate new n permutations from n -1 permutations
                     new_perm = curr[:j] + [nums[i]] + curr[j:]
                     stemp = ''.join(map(str, new_perm))
-                    if stemp not in cache:
+                    __ stemp not __ cache:
                         cache.add(stemp)
                         res.append(new_perm)
-        return res
+        r_ res
 

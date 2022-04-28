@@ -23,7 +23,7 @@
 #         :type n: int
 #         :rtype: ListNode
 #         """
-class Solution(object):
+c_ Solution o..
     # def removeNthFromEnd(self, head, n):
     #     # with O(n) space
     #     index = []
@@ -42,19 +42,19 @@ class Solution(object):
     #         index[index_pos].next = index[index_pos + 1].next
     #         return head
 
-    def removeNthFromEnd(self, head, n):
+    ___ removeNthFromEnd  head, n):
         # https://leetcode.com/discuss/86721/o-n-solution-in-java
-        if head is None:
-            return None
+        __ head is N..:
+            r_ N..
         slow = fast = head
-        for i in range(n):
+        ___ i __ r.. n):
             fast = fast.next
-        if fast is None:
+        __ fast is N..:
             head = head.next
-            return head
-        while fast.next is not None:
+            r_ head
+        w.. fast.next is not N..:
             fast = fast.next
             slow = slow.next
         curr = slow.next
         slow.next = curr.next
-        return head
+        r_ head

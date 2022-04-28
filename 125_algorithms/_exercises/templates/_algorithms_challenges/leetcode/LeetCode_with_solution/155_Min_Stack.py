@@ -49,55 +49,55 @@
 #                 return self.stack[-1]
 #             return None
 
-class MinStack(object):
-    def __init__(self):
+c_ MinStack o..
+    ___ -(self):
         """
         initialize your data structure here.
         """
-        self.stack = []
-        self.min_stack = []
+        stack = []
+        min_stack = []
 
 
-    def push(self, x):
+    ___ push  x):
         """
         :type x: int
         :rtype: nothing
         """
-        self.stack.append(x)
-        if len(self.min_stack) == 0:
-            self.min_stack.append(x)
-            return
-        if x <= self.min_stack[-1]:
-            self.min_stack.append(x)
-        else:
+        stack.append(x)
+        __ l.. min_stack) __ 0:
+            min_stack.append(x)
+            r_
+        __ x <= min_stack[-1]:
+            min_stack.append(x)
+        ____
             # Push top of min stack again
-            self.min_stack.append(self.min_stack[-1])
+            min_stack.append(min_stack[-1])
 
 
-    def pop(self):
+    ___ pop(self):
         """
         :rtype: nothing
         """
-        if len(self.stack) > 0:
+        __ l.. stack) > 0:
             # Much simple than solution 1
             # But use more space
-            self.min_stack.pop()
-            self.stack.pop()
+            min_stack.pop()
+            stack.pop()
 
 
-    def top(self):
+    ___ top(self):
         """
         :rtype: int
         """
-        if len(self.stack) > 0:
-            return self.stack[-1]
-        return None
+        __ l.. stack) > 0:
+            r_ stack[-1]
+        r_ N..
 
 
-    def getMin(self):
+    ___ getMin(self):
         """
         :rtype: int
         """
-        if len(self.min_stack) > 0:
-            return self.min_stack[-1]
-        return None
+        __ l.. min_stack) > 0:
+            r_ min_stack[-1]
+        r_ N..

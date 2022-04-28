@@ -1,10 +1,10 @@
-class Solution(object):
-    def minMoves(self, nums):
+c_ Solution o..
+    ___ minMoves  nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        if nums is None or len(nums) == 0:
-            return 0
+        __ nums is N.. or l.. nums) __ 0:
+            r_ 0
         min_num = min(nums)
-        return sum([i - min_num for i in nums])
+        r_ sum([i - min_num ___ i __ nums])

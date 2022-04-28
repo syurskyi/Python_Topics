@@ -1,18 +1,18 @@
-class Solution(object):
-    def twoSum(self, numbers, target):
+c_ Solution o..
+    ___ twoSum  numbers, target):
         """
         :type numbers: List[int]
         :type target: int
         :rtype: List[int]
         """
         # Two Points
-        begin, end = 0, len(numbers) - 1
-        while begin < end:
+        begin, end = 0, l.. numbers) - 1
+        w.. begin < end:
             curr = numbers[begin] + numbers[end]
-            if curr == target:
-                return [begin + 1, end + 1]
-            elif curr < target:
+            __ curr __ target:
+                r_ [begin + 1, end + 1]
+            ____ curr < target:
                 begin += 1
-            else:
+            ____
                 end -= 1
 

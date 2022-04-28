@@ -1,33 +1,33 @@
-class ValidWordAbbr(object):
-    def __init__(self, dictionary):
+c_ ValidWordAbbr o..
+    ___ -  dictionary):
         """
         initialize your data structure here.
         :type dictionary: List[str]
         """
-        self.dictionary = set(dictionary)
-        self.abb_dic = {}
-        for s in self.dictionary:
-            curr = self.getAbb(s)
-            if curr in self.abb_dic:
-                self.abb_dic[curr] = False
-            else:
-                self.abb_dic[curr] = True
+        dictionary = set(dictionary)
+        abb_dic  # dict
+        ___ s __ dictionary:
+            curr = getAbb(s)
+            __ curr __ abb_dic:
+                abb_dic[curr] = False
+            ____
+                abb_dic[curr] = True
 
-    def isUnique(self, word):
+    ___ isUnique  word):
         """
         check if a word is unique.
         :type word: str
         :rtype: bool
         """
-        abb = self.getAbb(word)
-        hasAbbr = self.abb_dic.get(abb, None)
-        return hasAbbr == None or (hasAbbr and word in self.dictionary)
+        abb = getAbb(word)
+        hasAbbr = abb_dic.get(abb, N..)
+        r_ hasAbbr __ N.. or (hasAbbr and word __ dictionary)
 
 
-    def getAbb(self, word):
-        if len(word) <= 2:
-            return word
-        return word[0] + str(len(word) - 2) + word[-1]
+    ___ getAbb  word):
+        __ l.. word) <= 2:
+            r_ word
+        r_ word[0] + str(l.. word) - 2) + word[-1]
 
 
 

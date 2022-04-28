@@ -46,7 +46,7 @@ c_ Solution:
         __ n.. head o. n.. head.next:
             r.. head
 
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
 
         slow_pre dummy
@@ -56,7 +56,7 @@ c_ Solution:
             slow_pre slow_pre.next
 
         mid_head slow_pre.next
-        dummy_mid ListNode(0)
+        dummy_mid ? 0
 
         # sort sub-problem
         slow_pre.next N..  # break

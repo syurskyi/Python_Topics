@@ -1,5 +1,5 @@
-class Solution(object):
-    def licenseKeyFormatting(self, S, K):
+c_ Solution o..
+    ___ licenseKeyFormatting  S, K):
         """
         :type S: str
         :type K: int
@@ -7,13 +7,13 @@ class Solution(object):
         """
         # https://leetcode.com/problems/license-key-formatting/discuss/96497/Python-solution
         S = S.upper().replace('-', '')
-        ls = len(S)
-        if ls % K == 0:
+        ls = l.. S)
+        __ ls % K __ 0:
             pos = K
-        else:
+        ____
             pos = ls % K
         res = S[:pos]
-        while pos < ls:
+        w.. pos < ls:
             res += '-' + S[pos:pos + K]
             pos += K
-        return res
+        r_ res

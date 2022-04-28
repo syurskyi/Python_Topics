@@ -1,24 +1,24 @@
-class Solution(object):
-    def numDecodings(self, s):
+c_ Solution o..
+    ___ numDecodings  s):
         """
         :type s: str
         :rtype: int
         """
-        ls = len(s)
-        if ls == 0:
-            return 0
+        ls = l.. s)
+        __ ls __ 0:
+            r_ 0
         dp = [0] * ls
-        for index in range(ls):
-            if index >= 1 and int(s[index - 1:index + 1]) < 27 and int(s[index - 1:index + 1]) >= 10:
-                if index == 1:
+        ___ index __ r.. ls):
+            __ index >= 1 and int(s[index - 1:index + 1]) < 27 and int(s[index - 1:index + 1]) >= 10:
+                __ index __ 1:
                     dp[index] = 1
-                else:
+                ____
                     # 11-26
                     dp[index] += dp[index - 2]
-            if int(s[index]) != 0:
-                if index == 0:
+            __ int(s[index]) != 0:
+                __ index __ 0:
                     dp[index] = 1
-                else:
+                ____
                     # 1-9
                     dp[index] += dp[index - 1]
-        return dp[ls - 1]
+        r_ dp[ls - 1]

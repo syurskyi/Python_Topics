@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def letterCasePermutation(self, S):
     #     ans = [[]]
 
@@ -17,23 +17,23 @@ class Solution(object):
 
     #     return map("".join, ans)
 
-    def letterCasePermutation(self, S):
-        B = sum(letter.isalpha() for letter in S)
+    ___ letterCasePermutation  S):
+        B = sum(letter.isalpha() ___ letter __ S)
         ans = []
 
-        for bits in xrange(1 << B):
+        ___ bits __ xrange(1 << B):
             b = 0
             word = []
-            for letter in S:
-                if letter.isalpha():
-                    if (bits >> b) & 1:
+            ___ letter __ S:
+                __ letter.isalpha():
+                    __ (bits >> b) & 1:
                         word.append(letter.lower())
-                    else:
+                    ____
                         word.append(letter.upper())
 
                     b += 1
-                else:
+                ____
                     word.append(letter)
 
             ans.append("".join(word))
-        return ans
+        r_ ans

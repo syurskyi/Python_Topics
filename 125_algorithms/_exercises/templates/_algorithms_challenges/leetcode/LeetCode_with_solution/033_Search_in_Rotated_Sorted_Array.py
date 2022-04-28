@@ -1,5 +1,5 @@
-class Solution:
-    def search(self, nums, target):
+c_ Solution:
+    ___ search  nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -8,20 +8,20 @@ class Solution:
         # binary search
         # if start < mid, then left part is sorted
         # if mid < end, then right part is sorted
-        def get(start, end):
-          if start > end:
-            return -1
+        ___ get(start, end):
+          __ start > end:
+            r_ -1
           mid = (start + end) / 2
-          if nums[mid] == target:
-            return mid
-          elif nums[mid] >= nums[start]: # First half is sorted
-            if target >= nums[start] and target < nums[mid]:
-              return get(start, mid - 1)
-            else:
-              return get(mid + 1, end)
-          elif nums[mid] <= nums[end]: # Second half is sorted
-            if target > nums[mid] and target <= nums[end]:
-              return get(mid + 1, end)
-            else:
-              return get(start, mid - 1)
-        return get(0, len(nums) - 1)
+          __ nums[mid] __ target:
+            r_ mid
+          ____ nums[mid] >= nums[start]: # First half is sorted
+            __ target >= nums[start] and target < nums[mid]:
+              r_ get(start, mid - 1)
+            ____
+              r_ get(mid + 1, end)
+          ____ nums[mid] <= nums[end]: # Second half is sorted
+            __ target > nums[mid] and target <= nums[end]:
+              r_ get(mid + 1, end)
+            ____
+              r_ get(start, mid - 1)
+        r_ get(0, l.. nums) - 1)

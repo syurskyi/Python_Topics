@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def maximalSquare(self, matrix):
     #     """
     #     :type matrix: List[List[str]]
@@ -41,21 +41,21 @@ class Solution(object):
     #                 res = max(res, dp[i][j])
     #     return res * res
 
-    def maximalSquare(self, matrix):
+    ___ maximalSquare  matrix):
         # dp[j] = min([j], dp[j-1], prev) + 1
         # O(n) space
-        if matrix is None or len(matrix) == 0:
-            return 0
-        rows, cols, res, prev = len(matrix), len(matrix[0]), 0, 0
+        __ matrix is N.. or l.. matrix) __ 0:
+            r_ 0
+        rows, cols, res, prev = l.. matrix), l.. matrix[0]), 0, 0
         dp = [0] * (cols + 1)
-        for i in range(1, rows + 1):
-            for j in range(1, cols + 1):
+        ___ i __ r.. 1, rows + 1):
+            ___ j __ r.. 1, cols + 1):
                 temp = dp[j]
-                if matrix[i - 1][j - 1] == '1':
+                __ matrix[i - 1][j - 1] __ '1':
                     dp[j] = min(dp[j - 1], dp[j], prev) + 1
                     res = max(res, dp[j])
-                else:
+                ____
                     dp[j] = 0
                 prev = temp
-        return res * res
+        r_ res * res
 

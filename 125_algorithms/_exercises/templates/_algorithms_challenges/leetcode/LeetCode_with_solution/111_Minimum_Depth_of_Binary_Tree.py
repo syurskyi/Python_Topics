@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def minDepth(self, root):
     #     """
     #     :type root: TreeNode
@@ -21,26 +21,26 @@ class Solution(object):
     #         return 1 + min(ld, rd)
     #     return 1 + ld +rd
 
-    def minDepth(self, root):
+    ___ minDepth  root):
         # BFS
-        if root is None:
-            return 0
+        __ root is N..:
+            r_ 0
         queue = [root]
         depth, rightMost = 1, root
-        while len(queue) > 0:
+        w.. l.. queue) > 0:
             node = queue.pop(0)
-            if node.left is None and node.right is None:
+            __ node.left is N.. and node.right is N..:
                 break
-            if node.left is not None:
+            __ node.left is not N..:
                 queue.append(node.left)
-            if node.right is not None:
+            __ node.right is not N..:
                 queue.append(node.right)
-            if node == rightMost:
+            __ node __ rightMost:
                 # reach the current level end
                 depth += 1
-                if node.right is not None:
+                __ node.right is not N..:
                     rightMost = node.right
-                else:
+                ____
                     rightMost = node.left
-        return depth
+        r_ depth
 

@@ -6,24 +6,24 @@
 #         self.right = None
 
 
-class Solution(object):
-    def constructMaximumBinaryTree(self, nums):
+c_ Solution o..
+    ___ constructMaximumBinaryTree  nums):
         """
         :type nums: List[int]
         :rtype: TreeNode
         """
         # O (n^2) and O(n)
-        if nums is None or len(nums) == 0:
-            return None
+        __ nums is N.. or l.. nums) __ 0:
+            r_ N..
         max_index, max_value = 0, 0
-        for i, value in enumerate(nums):
-            if value >= max_value:
+        ___ i, value __ e.. nums):
+            __ value >= max_value:
                 max_value = value
                 max_index = i
         root = TreeNode(max_value)
-        root.left = self.constructMaximumBinaryTree(nums[:max_index])
-        root.right = self.constructMaximumBinaryTree(nums[max_index+1:])
-        return root
+        root.left = constructMaximumBinaryTree(nums[:max_index])
+        root.right = constructMaximumBinaryTree(nums[max_index+1:])
+        r_ root
 
     # def constructMaximumBinaryTree(self, nums):
     #     # https://leetcode.com/problems/maximum-binary-tree/discuss/106146/C++-O(N)-solution

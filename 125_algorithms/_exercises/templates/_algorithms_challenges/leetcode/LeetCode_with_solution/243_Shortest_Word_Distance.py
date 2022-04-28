@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def shortestDistance(self, words, word1, word2):
     #     """
     #     :type words: List[str]
@@ -21,14 +21,14 @@ class Solution(object):
     #             min_range = curr_range
     #     return min_range
 
-    def shortestDistance(self, words, word1, word2):
+    ___ shortestDistance  words, word1, word2):
         index1 = index2 = -1
-        res = len(words)
-        for index, word in enumerate(words):
-            if word1 == word:
+        res = l.. words)
+        ___ index, word __ e.. words):
+            __ word1 __ word:
                 index1 = index
-            elif word2 == word:
+            ____ word2 __ word:
                 index2 = index
-            if index1 != -1 and index2 != -1:
+            __ index1 != -1 and index2 != -1:
                 res = min(res, abs(index1 - index2))
-        return res
+        r_ res

@@ -13,7 +13,7 @@ c_ Solution:
         """
         comparator l.... x, y: cmp(x.val, y.val)
         # open set & closed set
-        dummy_head ListNode(0)
+        dummy_head ? 0
         dummy_head.next head
 
 
@@ -62,7 +62,7 @@ c_ Solution:
         comparator l.... x, y: cmp(x.val, y.val)
         # open set & closed set
         # iterate through all the nodes
-        dummy ListNode(0)  # Singly-linked list, thus need dummy_head
+        dummy ? 0  # Singly-linked list, thus need dummy_head
         dummy.next head
 
         closed_tail head

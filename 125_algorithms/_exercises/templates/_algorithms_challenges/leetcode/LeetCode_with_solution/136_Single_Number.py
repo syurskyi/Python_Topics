@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def singleNumber(self, nums):
     #     """
     #     :type nums: List[int]
@@ -25,9 +25,9 @@ class Solution(object):
     #             s.add(num)
     #     return s.pop()
 
-    def singleNumber(self, nums):
+    ___ singleNumber  nums):
         # xor
         res = 0
-        for num in nums:
+        ___ num __ nums:
             res ^= num
-        return res
+        r_ res

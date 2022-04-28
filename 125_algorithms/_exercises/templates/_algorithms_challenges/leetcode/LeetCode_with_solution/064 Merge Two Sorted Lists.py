@@ -24,7 +24,7 @@ c_ Solution:
         :param l2: ListNode
         :return:
         """
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next l1
 
         pre dummy

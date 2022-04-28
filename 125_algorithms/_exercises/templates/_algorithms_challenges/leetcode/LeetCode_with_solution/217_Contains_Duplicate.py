@@ -1,11 +1,11 @@
-class Solution(object):
-    def containsDuplicate(self, nums):
+c_ Solution o..
+    ___ containsDuplicate  nums):
         """
         :type nums: List[int]
         :rtype: bool
         """
         # use set to check duplicate
-        return len(nums) != len(set(nums))
+        r_ l.. nums) != l.. set(nums))
 
     # def containsDuplicate(self, nums):
     #     nums.sort()

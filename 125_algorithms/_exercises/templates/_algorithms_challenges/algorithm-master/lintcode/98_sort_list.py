@@ -22,9 +22,9 @@ c_ Solution:
 
         mid find_middle(head)
 
-        left_dummy left_tail ListNode(0)
-        mid_dummy mid_tail ListNode(0)
-        right_dummy right_tail ListNode(0)
+        left_dummy left_tail ? 0
+        mid_dummy mid_tail ? 0
+        right_dummy right_tail ? 0
 
         w.... head:
             __ head.val < mid.val:
@@ -43,7 +43,7 @@ c_ Solution:
         left_dummy.next quick_sort(left_dummy.next)
         right_dummy.next quick_sort(right_dummy.next)
 
-        dummy tail ListNode(0)
+        dummy tail ? 0
         ___ node __ [left_dummy, mid_dummy, right_dummy]:
             tail.next node.next
             tail get_tail(tail)
@@ -62,7 +62,7 @@ c_ Solution:
         left merge_sort(left)
         right merge_sort(right)
 
-        dummy tail ListNode(0)
+        dummy tail ? 0
 
         w.... left a.. right:
             __ left.val < right.val:

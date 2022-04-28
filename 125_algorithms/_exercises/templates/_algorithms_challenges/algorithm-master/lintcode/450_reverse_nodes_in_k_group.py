@@ -17,7 +17,7 @@ c_ Solution:
         __ n.. head:
             r..
 
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
 
         head dummy

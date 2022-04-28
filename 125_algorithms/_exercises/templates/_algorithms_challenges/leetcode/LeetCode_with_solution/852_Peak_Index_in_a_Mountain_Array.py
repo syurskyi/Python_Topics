@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def peakIndexInMountainArray(self, A):
     #     """
     #     :type A: List[int]
@@ -9,12 +9,12 @@ class Solution(object):
     #         i += 1
     #     return i
 
-    def peakIndexInMountainArray(self, A):
-        lo, hi = 0, len(A) - 1
-        while lo < hi:
+    ___ peakIndexInMountainArray  A):
+        lo, hi = 0, l.. A) - 1
+        w.. lo < hi:
             mid = (lo + hi) / 2
-            if A[mid] < A[mid + 1]:
+            __ A[mid] < A[mid + 1]:
                 lo = mid + 1
-            else:
+            ____
                 hi = mid
-        return lo
+        r_ lo

@@ -4,45 +4,45 @@
 #         self.start = s
 #         self.end = e
 
-class Solution(object):
-    def insert(self, intervals, newInterval):
+c_ Solution o..
+    ___ insert  intervals, newInterval):
         """
         :type intervals: List[Interval]
         :type newInterval: Interval
         :rtype: List[Interval]
         """
-        if intervals is None or len(intervals) == 0:
-            return [newInterval]
+        __ intervals is N.. or l.. intervals) __ 0:
+            r_ [newInterval]
         intervals.sort(key=lambda x:x.start)
         pos = 0
-        while pos < len(intervals):
+        w.. pos < l.. intervals):
             # left of pos
-            if newInterval.end < intervals[pos].start:
+            __ newInterval.end < intervals[pos].start:
                 intervals.insert(pos, newInterval)
-                return intervals
+                r_ intervals
             # overlap with pos
-            if self.check_overlap(intervals[pos], newInterval):
+            __ check_overlap(intervals[pos], newInterval):
                 temp = intervals.pop(pos)
-                newInterval = self.merge_intervals(temp, newInterval)
-            else:
+                newInterval = merge_intervals(temp, newInterval)
+            ____
                 pos += 1
-        if len(intervals) == 0 or pos == len(intervals):
+        __ l.. intervals) __ 0 or pos __ l.. intervals):
             intervals.append(newInterval)
-        return intervals
+        r_ intervals
 
-    def check_overlap(self, curr_int, new_int):
-        if curr_int.start <= new_int.start:
-           if curr_int.end > new_int.start:
-               return True
-        else:
-            if curr_int.start <= new_int.end:
-                return True
-        return False
+    ___ check_overlap  curr_int, new_int):
+        __ curr_int.start <= new_int.start:
+           __ curr_int.end > new_int.start:
+               r_ True
+        ____
+            __ curr_int.start <= new_int.end:
+                r_ True
+        r_ False
 
-    def merge_intervals(self, int1, int2):
+    ___ merge_intervals  int1, int2):
         temp_int = Interval()
         temp_int.start = min([int1.start, int2.start])
         temp_int.end = max([int1.end, int2.end])
-        return temp_int
+        r_ temp_int
 
 

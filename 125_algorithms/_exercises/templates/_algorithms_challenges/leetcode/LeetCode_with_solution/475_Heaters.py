@@ -1,5 +1,5 @@
-class Solution(object):
-    def findRadius(self, houses, heaters):
+c_ Solution o..
+    ___ findRadius  houses, heaters):
         """
         :type houses: List[int]
         :type heaters: List[int]
@@ -7,10 +7,10 @@ class Solution(object):
         """
         heaters = sorted(heaters) + [float('inf')]
         i = r = 0
-        for x in sorted(houses):
+        ___ x __ sorted(houses):
             # move to next range
-            while x >= sum(heaters[i:i + 2]) / 2.:
+            w.. x >= sum(heaters[i:i + 2]) / 2.:
                 i += 1
             # ans = hearter - hourse
             r = max(r, abs(heaters[i] - x))
-        return r
+        r_ r

@@ -31,18 +31,18 @@ Each node's value is either 0 or 1.
 #         self.val = x
 #         self.next = None
 
-class Solution:
-    def getDecimalValue(self, head: ListNode) -> int:
+c_ Solution:
+    ___ getDecimalValue  head: ListNode) -> int:
         binary_numbers_list = []
         binary_numbers_list.append(head.val)
-        while(head.next is not None):
+        w..(head.next is not N..):
             head = head.next
             binary_numbers_list.append(head.val)
         answer = 0
         power = 0
         # from len(binary_numbers_list) - 1 -> 0
-        for digit in range(len(binary_numbers_list) - 1, -1, -1):
-            if(binary_numbers_list[digit] > 0):
+        ___ digit __ r.. l.. binary_numbers_list) - 1, -1, -1):
+            __(binary_numbers_list[digit] > 0):
                 answer += ((2 ** power) * binary_numbers_list[digit])
             power += 1
-        return answer
+        r_ answer

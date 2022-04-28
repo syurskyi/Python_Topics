@@ -29,7 +29,7 @@ c_ Solution:
             r.. N..
 
 
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
 
         # find length

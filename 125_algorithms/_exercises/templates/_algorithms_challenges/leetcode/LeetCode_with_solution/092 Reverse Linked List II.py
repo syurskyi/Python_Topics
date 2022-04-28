@@ -37,7 +37,7 @@ c_ Solution:
         __ n.. head o. m>_n:
             r.. head
 
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
 
         cnt 1  # position starting from 1

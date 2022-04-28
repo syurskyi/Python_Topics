@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def sortArrayByParityII(self, A):
     #     N = len(A)
     #     ans = [None] * N
@@ -17,11 +17,11 @@ class Solution(object):
     #     # ans[1::2] = (x for x in A if x % 2 == 1)
     #     return ans
 
-    def sortArrayByParityII(self, A):
+    ___ sortArrayByParityII  A):
         odd = 1
-        for i in xrange(0, len(A), 2):
-            if A[i] % 2:
-                while A[odd] % 2:
+        ___ i __ xrange(0, l.. A), 2):
+            __ A[i] % 2:
+                w.. A[odd] % 2:
                     odd += 2
                 A[i], A[odd] = A[odd], A[i]
-        return A
+        r_ A

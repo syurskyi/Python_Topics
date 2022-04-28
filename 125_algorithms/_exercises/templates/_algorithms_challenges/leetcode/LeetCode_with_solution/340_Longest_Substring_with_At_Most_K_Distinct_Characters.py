@@ -1,5 +1,5 @@
-class Solution(object):
-    def lengthOfLongestSubstringKDistinct(self, s, k):
+c_ Solution o..
+    ___ lengthOfLongestSubstringKDistinct  s, k):
         """
         :type s: str
         :type k: int
@@ -7,16 +7,16 @@ class Solution(object):
         """
         count = [0] * 256
         i, numDistinct, maxLen = 0, 0, 0
-        for j in range(len(s)):
+        ___ j __ r.. l.. s)):
             # udpate j
-            if count[ord(s[j])] == 0:
+            __ count[o.. s[j])] __ 0:
                 numDistinct += 1
-            count[ord(s[j])] += 1
+            count[o.. s[j])] += 1
             # udpate i
-            while numDistinct > k:
-                count[ord(s[i])] -= 1
-                if count[ord(s[i])] == 0:
+            w.. numDistinct > k:
+                count[o.. s[i])] -= 1
+                __ count[o.. s[i])] __ 0:
                     numDistinct -= 1
                 i += 1
             maxLen =  max(j - i + 1, maxLen)
-        return maxLen
+        r_ maxLen

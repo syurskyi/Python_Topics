@@ -107,7 +107,7 @@ ___ yearly_report(df: pd.DataFrame, year: i..) __ N..
     df df[df.month.dt.year __ year]
 
     __ l..(df) __ 0:
-        r.. V... _*The year {year} is not included in the report!')
+        r.. V... _*The year {year} is not included __ the report!')
     ____
         print(year)
         print()

@@ -4,35 +4,35 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-    def rotateRight(self, head, k):
+c_ Solution o..
+    ___ rotateRight  head, k):
         """
         :type head: ListNode
         :type k: int
         :rtype: ListNode
         """
-        if not head or k == 0:
-            return head
+        __ not head or k __ 0:
+            r_ head
 
         slow = fast = head
         length = 1
 
-        while k and fast.next:
+        w.. k and fast.next:
             fast = fast.next
             length += 1
             k -= 1
 
-        if k != 0:
+        __ k != 0:
             k = (k + length - 1) % length # original k % length
-            return self.rotateRight(head, k)
-        else:
-            while fast.next:
+            r_ rotateRight(head, k)
+        ____
+            w.. fast.next:
                 fast = fast.next
                 slow = slow.next
-            return self.rotate(head, fast, slow)
+            r_ rotate(head, fast, slow)
 
-    def rotate(self, head, fast, slow):
+    ___ rotate  head, fast, slow):
         fast.next = head
         head = slow.next
-        slow.next = None
-        return head
+        slow.next = N..
+        r_ head

@@ -1,5 +1,5 @@
 import pdb
-class Solution(object):
+c_ Solution o..
     # def longestValidParentheses(self, s):
     #     """
     #     :type s: str
@@ -19,29 +19,29 @@ class Solution(object):
     #         all[i] = max(start[i], all[i + 1])
     #     return all[0]
 
-    def longestValidParentheses(self, s):
+    ___ longestValidParentheses  s):
         # https://leetcode.com/discuss/87988/my-easy-o-n-java-solution-with-explanation
-        ls = len(s)
+        ls = l.. s)
         stack = []
         data = [0] * ls
-        for i in range(ls):
+        ___ i __ r.. ls):
             curr = s[i]
-            if curr == '(':
+            __ curr __ '(':
                 stack.append(i)
-            else:
-                if len(stack) > 0:
+            ____
+                __ l.. stack) > 0:
                     data[i] = 1
                     data[stack.pop(-1)] = 1
         tep, res = 0, 0
-        for t in data:
-            if t == 1:
+        ___ t __ data:
+            __ t __ 1:
                 tep += 1
-            else:
+            ____
                 res = max(tep, res)
                 tep = 0
-        return max(tep, res)
+        r_ max(tep, res)
 
-if __name__ == '__main__':
-    s = Solution()
+__ ____ __ ____
+    s  ?
     # print s.longestValidParentheses(")(((((()())()()))()(()))(")
     print s.longestValidParentheses(')()())')

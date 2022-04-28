@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def isNumber(self, s):
     #     """
     #     :type s: str
@@ -22,31 +22,31 @@ class Solution(object):
     #             return True
     #     return False
 
-    def isNumber(self, s):
+    ___ isNumber  s):
         s = s.strip()
-        ls, pos = len(s), 0
-        if ls == 0:
-            return False
-        if s[pos] == '+' or s[pos] == '-':
+        ls, pos = l.. s), 0
+        __ ls __ 0:
+            r_ False
+        __ s[pos] __ '+' or s[pos] __ '-':
             pos += 1
         isNumeric = False
-        while pos < ls and s[pos].isdigit():
+        w.. pos < ls and s[pos].isdigit():
             pos += 1
             isNumeric = True
-        if pos < ls and s[pos] == '.':
+        __ pos < ls and s[pos] __ '.':
             pos += 1
-            while pos < ls and s[pos].isdigit():
+            w.. pos < ls and s[pos].isdigit():
                 pos += 1
                 isNumeric = True
-        elif pos < ls and s[pos] == 'e' and isNumeric:
+        ____ pos < ls and s[pos] __ 'e' and isNumeric:
             isNumeric = False
             pos += 1
-            if pos < ls and (s[pos] == '+' or s[pos] == '-'):
+            __ pos < ls and (s[pos] __ '+' or s[pos] __ '-'):
                 pos += 1
-            while pos < ls and s[pos].isdigit():
+            w.. pos < ls and s[pos].isdigit():
                 pos += 1
                 isNumeric = True
         print pos, ls, isNumeric
-        if pos == ls and isNumeric:
-            return True
-        return False
+        __ pos __ ls and isNumeric:
+            r_ True
+        r_ False

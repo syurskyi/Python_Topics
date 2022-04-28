@@ -1,39 +1,39 @@
-class LRUCache(object):
-    def __init__(self, capacity):
+c_ LRUCache o..
+    ___ -  capacity):
         """
         :type capacity: int
         """
-        self.capacity = capacity
-        self.cache = {}
-        self.queue = []
+        capacity = capacity
+        cache  # dict
+        queue = []
 
-    def updateQueue(self, key):
-        self.queue.remove(key)
-        self.queue.insert(0, key)
+    ___ updateQueue  key):
+        queue.remove(key)
+        queue.insert(0, key)
 
-    def get(self, key):
+    ___ get  key):
         """
         :rtype: int
         """
-        if key in self.cache:
-            self.updateQueue(key)
-            return self.cache[key]
-        else:
-            return -1
+        __ key __ cache:
+            updateQueue(key)
+            r_ cache[key]
+        ____
+            r_ -1
 
-    def put(self, key, value):
+    ___ put  key, value):
         """
         :type key: int
         :type value: int
         :rtype: nothing
         """
-        if key in self.cache:
-            self.queue.remove(key)
-        elif len(self.queue) == self.capacity:
-            del self.cache[self.queue.pop(-1)]
+        __ key __ cache:
+            queue.remove(key)
+        ____ l.. queue) __ capacity:
+            del cache[queue.pop(-1)]
 
-        self.cache[key] = value
-        self.queue.insert(0, key)
+        cache[key] = value
+        queue.insert(0, key)
 
     # def __init__(self, capacity):
     #     self.dic = collections.OrderedDict()

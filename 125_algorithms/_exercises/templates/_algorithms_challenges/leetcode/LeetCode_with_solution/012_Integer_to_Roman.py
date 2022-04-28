@@ -5,7 +5,7 @@
 #         :rtype: str
 #         """
 #
-class Solution(object):
+c_ Solution o..
     # def intToRoman(self, num: int) -> str:
         ## http://www.rapidtables.com/convert/number/how-number-to-roman-numerals.htm
         # roman_dim = [[1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
@@ -23,7 +23,7 @@ class Solution(object):
         #         roman_str += roman_dim[dim][1]
         # return roman_str
 
-    def intToRoman(self, num: int) -> str:
+    ___ intToRoman  num: int) -> str:
         values = [1000, 900, 500, 400,
                   100, 90, 50, 40,
                   10, 9, 5, 4, 1]
@@ -33,15 +33,15 @@ class Solution(object):
                    "I"]
         roman = ''
         i = 0
-        while num > 0:
+        w.. num > 0:
             k = num // values[i]
-            for j in range(k):
+            ___ j __ r.. k):
                 roman += symbols[i]
                 num -= values[i]
             i += 1
-        return roman
+        r_ roman
 
-if __name__ == '__main__':
+__ ____ __ ____
     # begin
-    s = Solution()
+    s  ?
     print s.intToRoman(90)

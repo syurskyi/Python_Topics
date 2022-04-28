@@ -1,13 +1,13 @@
-class Solution:
-    def reverseStr(self, s: str, k: int) -> str:
-        N = len(s)
+c_ Solution:
+    ___ reverseStr  s: str, k: int) -> str:
+        N = l.. s)
         ans = ""
         position = 0
-        while position < N:
+        w.. position < N:
             nx = s[position : position + k]
             ans = ans + nx[::-1] + s[position + k : position + 2 * k]
             position += 2 * k
-        return ans
+        r_ ans
 
     # def reverseStr(self, s: str, k: int) -> str:
     #     s = list(s)
@@ -17,7 +17,7 @@ class Solution:
 
         
 
-s1 = Solution()
+s1  ?
 s="abcdefg"
 k=2
 print(s1.reverseStr(s,k))

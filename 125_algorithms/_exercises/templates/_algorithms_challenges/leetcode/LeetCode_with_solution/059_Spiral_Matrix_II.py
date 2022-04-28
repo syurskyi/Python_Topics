@@ -1,22 +1,22 @@
-class Solution(object):
-    def generateMatrix(self, n):
+c_ Solution o..
+    ___ generateMatrix  n):
         """
         :type n: int
         :rtype: List[List[int]]
         """
-        res = [[0] * n for _ in range(n)]
+        res = [[0] * n ___ _ __ r.. n)]
         pos = [0, 0]
         move = (0, 1)
-        for index in range(1, n * n + 1):
+        ___ index __ r.. 1, n * n + 1):
             res[pos[0]][pos[1]] = index
-            if res[(pos[0] + move[0]) % n][(pos[1] + move[1]) % n] > 0:
+            __ res[(pos[0] + move[0]) % n][(pos[1] + move[1]) % n] > 0:
                 # (0, 1) -> (1, 0) -> (0, -1) -> (-1, 0)
                 move = (move[1], -1 * move[0])
             pos[0] = pos[0] + move[0]
             pos[1] = pos[1] + move[1]
-        return res
+        r_ res
 
-if __name__ == '__main__':
+__ ____ __ ____
     # begin
-    s = Solution()
+    s  ?
     print s.generateMatrix(2)

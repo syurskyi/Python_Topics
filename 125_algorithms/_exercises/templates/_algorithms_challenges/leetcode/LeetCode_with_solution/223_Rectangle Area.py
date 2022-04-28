@@ -1,5 +1,5 @@
-class Solution(object):
-    def computeArea(self, A, B, C, D, E, F, G, H):
+c_ Solution o..
+    ___ computeArea  A, B, C, D, E, F, G, H):
         """
         :type A: int
         :type B: int
@@ -14,10 +14,10 @@ class Solution(object):
         # sum of areas of two rectangles
         result = (C - A) * (D - B) + (G - E) * (H - F)
         # no overlap
-        if (C <= E or G <= A or H <= B or D <= F):
-            return result
+        __ (C <= E or G <= A or H <= B or D <= F):
+            r_ result
         # overlap length on x
         dx = min(C, G) - max(A, E)
         # overlap length on y
         dy = min(D, H) - max(B, F)
-        return result - dx * dy
+        r_ result - dx * dy

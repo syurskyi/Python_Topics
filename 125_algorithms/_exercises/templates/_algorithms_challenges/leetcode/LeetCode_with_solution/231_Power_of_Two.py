@@ -1,10 +1,10 @@
-class Solution(object):
-    def isPowerOfTwo(self, n):
+c_ Solution o..
+    ___ isPowerOfTwo  n):
         """
         :type n: int
         :rtype: bool
         """
-        if n < 0:
-            return False
+        __ n < 0:
+            r_ False
         bin_str = bin(n)
-        return sum(map(lambda x: int(x), list(bin_str[2:]))) == 1
+        r_ sum(map(lambda x: int(x), list(bin_str[2:]))) __ 1

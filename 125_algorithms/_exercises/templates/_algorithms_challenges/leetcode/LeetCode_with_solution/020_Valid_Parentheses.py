@@ -2,43 +2,43 @@
 #     def isValid(self, s):
         
 #
-class Solution:
-    def isValid(self, s):
+c_ Solution:
+    ___ isValid  s):
         """
         :type s: str
         :rtype: bool
         """
-        if s is None:
-            return True
+        __ s is N..:
+            r_ True
         stack = []
-        for t in s:
-            if t == ')':
+        ___ t __ s:
+            __ t __ ')':
                 try:
                     current = stack.pop()
-                    if current != '(':
-                        return False
+                    __ current != '(':
+                        r_ False
                 except:
-                    return False
-            elif t == '}':
+                    r_ False
+            ____ t __ '}':
                 try:
                     current = stack.pop()
-                    if current != '{':
-                        return False
+                    __ current != '{':
+                        r_ False
                 except:
-                    return False
-            elif t == ']':
+                    r_ False
+            ____ t __ ']':
                 try:
                     current = stack.pop()
-                    if current != '[':
-                        return False
+                    __ current != '[':
+                        r_ False
                 except:
-                    return False
-            else:
+                    r_ False
+            ____
                 stack.append(t)
-        if len(stack) == 0:
-            return True
-        else:
-            return False
+        __ l.. stack) __ 0:
+            r_ True
+        ____
+            r_ False
 
 
     # def isValid(self, s):

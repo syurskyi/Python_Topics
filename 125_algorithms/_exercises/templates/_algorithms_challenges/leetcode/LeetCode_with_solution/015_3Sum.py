@@ -1,5 +1,5 @@
 
-class Solution(object):
+c_ Solution o..
     # def threeSum(self, nums):
     #     # skip duplicate
     #     # O(n^3)
@@ -50,27 +50,27 @@ class Solution(object):
     #             visited[nums[i]] = 1
     #     return list(result)
 
-    def threeSum(self, nums):
+    ___ threeSum  nums):
         res = []
-        nums.sort()
-        ls = len(nums)
-        for i in range(ls - 2):
-            if i > 0 and nums[i] == nums[i - 1]:
+        nums.s..
+        ls = l.. nums)
+        ___ i __ r.. ls - 2):
+            __ i > 0 and nums[i] __ nums[i - 1]:
                 continue
             j = i + 1
             k = ls - 1
-            while j < k:
+            w.. j < k:
                 curr = nums[i] + nums[j] + nums[k]
-                if curr == 0:
+                __ curr __ 0:
                     res.append([nums[i], nums[j], nums[k]])
-                    while j < k and nums[j] == nums[j + 1]:
+                    w.. j < k and nums[j] __ nums[j + 1]:
                         j += 1
-                    while j < k and nums[k] == nums[k - 1]:
+                    w.. j < k and nums[k] __ nums[k - 1]:
                         k -= 1
                     j += 1
                     k -= 1
-                elif curr < 0:
+                ____ curr < 0:
                     j += 1
-                else:
+                ____
                     k -= 1
-        return res
+        r_ res

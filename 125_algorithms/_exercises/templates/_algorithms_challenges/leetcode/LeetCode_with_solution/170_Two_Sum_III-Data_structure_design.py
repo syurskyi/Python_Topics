@@ -1,37 +1,37 @@
-class TwoSum(object):
+c_ TwoSum o..
 
-    def __init__(self):
+    ___ -(self):
         """
         initialize your data structure here
         """
-        self.internal = []
-        self.dic = {}
+        internal = []
+        dic  # dict
 
-    def add(self, number):
+    ___ add  number):
         """
         Add the number to an internal data structure.
         :rtype: nothing
         """
-        self.internal.append(number)
-        if number in self.dic:
+        internal.append(number)
+        __ number __ dic:
             # more than once
-            self.dic[number] = True
-            return
+            dic[number] = True
+            r_
         # once
-        self.dic[number] = False
+        dic[number] = False
 
-    def find(self, value):
+    ___ find  value):
         """
         Find if there exists any pair of numbers which sum is equal to the value.
         :type value: int
         :rtype: bool
         """
-        for v in self.internal:
-            if value - v in self.dic:
-                if v << 1 == value and not self.dic[v]:
+        ___ v __ internal:
+            __ value - v __ dic:
+                __ v << 1 __ value and not dic[v]:
                     continue
-                return True
-        return False
+                r_ True
+        r_ False
 
 
 # Your TwoSum object will be instantiated and called as such:

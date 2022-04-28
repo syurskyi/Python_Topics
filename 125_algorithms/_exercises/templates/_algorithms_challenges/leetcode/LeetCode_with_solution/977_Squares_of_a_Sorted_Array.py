@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def sortedSquares(self, A):
     #     """
     #     :type A: List[int]
@@ -7,25 +7,25 @@ class Solution(object):
     #     # Directly sort
     #     return sorted(x * x for x in A) 
 
-    def sortedSquares(self, A):
+    ___ sortedSquares  A):
         pos = 0
-        while pos < len(A) and A[pos] < 0:
+        w.. pos < l.. A) and A[pos] < 0:
             pos += 1
         # pos point to first positve
         # npos point to larget negative
         npos = pos - 1
         res = []
-        while pos < len(A) and npos >= 0:
-            if A[npos] ** 2 < A[pos] ** 2:
+        w.. pos < l.. A) and npos >= 0:
+            __ A[npos] ** 2 < A[pos] ** 2:
                 res.append(A[npos] ** 2)
                 npos -= 1
-            else:
+            ____
                 res.append(A[pos] ** 2)
                 pos +=1 
-        while npos >= 0:
+        w.. npos >= 0:
             res.append(A[npos] ** 2)
             npos -= 1
-        while pos < len(A):
+        w.. pos < l.. A):
             res.append(A[pos] ** 2)
             pos += 1
-        return res
+        r_ res

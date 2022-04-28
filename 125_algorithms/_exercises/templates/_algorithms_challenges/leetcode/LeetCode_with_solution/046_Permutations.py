@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # import itertools
     # def permute(self, nums):
     #     """
@@ -9,22 +9,22 @@ class Solution:
     #     result = [list(t) for t in result]
     #     return result
 
-    def permute(self, nums):
+    ___ permute  nums):
         # DPS with swapping
         res = []
-        if len(nums) == 0:
-            return res
-        self.get_permute(res, nums, 0)
-        return res
+        __ l.. nums) __ 0:
+            r_ res
+        get_permute(res, nums, 0)
+        r_ res
 
-    def get_permute(self, res, nums, index):
-        if index == len(nums):
+    ___ get_permute  res, nums, index):
+        __ index __ l.. nums):
             res.append(list(nums))
-            return
-        for i in range(index, len(nums)):
+            r_
+        ___ i __ r.. index, l.. nums)):
             nums[i], nums[index] = nums[index], nums[i]
             # s(n) = 1 + s(n-1)
-            self.get_permute(res, nums, index + 1)
+            get_permute(res, nums, index + 1)
             nums[i], nums[index] = nums[index], nums[i]
 
     # def permute(self, nums):

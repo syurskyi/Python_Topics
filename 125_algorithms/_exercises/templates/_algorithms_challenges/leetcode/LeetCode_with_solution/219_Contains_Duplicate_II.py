@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def containsNearbyDuplicate(self, nums, k):
     #     """
     #     :type nums: List[int]
@@ -22,15 +22,15 @@ class Solution(object):
     #                 pos += 1
     #     return False
 
-    def containsNearbyDuplicate(self, nums, k):
+    ___ containsNearbyDuplicate  nums, k):
         # check k interval
         check = set()
-        for i in range(len(nums)):
-            if i > k:
+        ___ i __ r.. l.. nums)):
+            __ i > k:
                 check.remove(nums[i - k - 1])
-            if nums[i] in check:
-                return True
-            else:
+            __ nums[i] __ check:
+                r_ True
+            ____
                 check.add(nums[i])
-        return False
+        r_ False
 

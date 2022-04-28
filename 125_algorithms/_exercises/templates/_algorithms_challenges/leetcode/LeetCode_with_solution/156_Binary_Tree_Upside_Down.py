@@ -5,24 +5,24 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # p.left = parent.right
     # parent.right = p.right
     # p.right = parent
     # parent = p.left
     # p = left
-    def upsideDownBinaryTree(self, root):
+    ___ upsideDownBinaryTree  root):
         """
         :type root: TreeNode
         :rtype: TreeNode
         """
         # top-down
-        node, parent, parentRight = root, None, None
-        while node is not None:
+        node, parent, parentRight = root, N.., N..
+        w.. node is not N..:
             left = node.left
             node.left = parentRight
             parentRight = node.right
             node.right = parent
             parent = node
             node = left
-        return parent
+        r_ parent

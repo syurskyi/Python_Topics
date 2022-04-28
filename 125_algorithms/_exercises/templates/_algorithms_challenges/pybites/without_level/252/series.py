@@ -10,7 +10,7 @@ ___ return_at_index ser ?.S..  idx i.. __ o..
     ___
         r.. ?,i..[idx]
     ______ K..
-        r.. I.. _*Index error for {idx=} ')
+        r.. I.. _*Index error ___ {idx=} ')
 
 
 ___ get_slice ser ?.S.., start: i.., end: i..) __ ?.c__.s__.S.:

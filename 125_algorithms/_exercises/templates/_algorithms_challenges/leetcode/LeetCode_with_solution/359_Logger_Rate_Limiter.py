@@ -24,16 +24,16 @@
 import heapq
 
 
-class Logger(object):
+c_ Logger o..
 
-    def __init__(self):
+    ___ -(self):
         """
         Initialize your data structure here.
         """
-        self.heap = []
-        self.cache = {}
+        heap = []
+        cache  # dict
 
-    def shouldPrintMessage(self, timestamp, message):
+    ___ shouldPrintMessage  timestamp, message):
         """
         Returns true if the message should be printed in the given timestamp, otherwise returns false.
         If this method returns false, the message will not be printed.
@@ -42,17 +42,17 @@ class Logger(object):
         :type message: str
         :rtype: bool
         """
-        while len(self.heap):
-            if self.heap[0][0] <= timestamp:
-                temp = heapq.heappop(self.heap)
-                self.cache.pop(temp[1])
-            else:
+        w.. l.. heap):
+            __ heap[0][0] <= timestamp:
+                temp = heapq.heappop(heap)
+                cache.pop(temp[1])
+            ____
                 break
-        if timestamp < self.cache.get(message, 0):
-            return False
-        self.cache[message] = timestamp + 10
-        heapq.heappush(self.heap, (timestamp + 10, message))
-        return True
+        __ timestamp < cache.get(message, 0):
+            r_ False
+        cache[message] = timestamp + 10
+        heapq.heappush(heap, (timestamp + 10, message))
+        r_ True
 
 
 # Your Logger object will be instantiated and called as such:

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def convert(self, s, numRows):
     #     """
     #     :type s: str
@@ -30,24 +30,24 @@ class Solution(object):
     #         result += ''.join(temp_s[i])
     #     return result
 
-    def convert(self, s, numRows):
+    ___ convert  s, numRows):
         # https://leetcode.com/discuss/90908/easy-python-o-n-solution-94%25-with-explanations
-        if numRows == 1:
-            return s
+        __ numRows __ 1:
+            r_ s
         # calculate period
         p = 2 * (numRows - 1)
         result = [""] * numRows
-        for i in xrange(len(s)):
+        ___ i __ xrange(l.. s)):
             floor = i % p
-            if floor >= p//2:
+            __ floor >= p//2:
                 floor = p - floor
             result[floor] += s[i]
-        return "".join(result)
+        r_ "".join(result)
 
 
-if __name__ == '__main__':
+__ ____ __ ____
     # begin
-    s = Solution()
+    s  ?
     print s.convert("PAYPALISHIRING", 3)
 
 

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @return an integer
 
     # def reverse(self, x):
@@ -25,15 +25,15 @@ class Solution:
     #     else:
     #         return -1 * result
 
-    def reverse(self, x):
+    ___ reverse  x):
         # Note that in Python -1 / 10 = -1
         res, isPos = 0, 1
-        if x < 0:
+        __ x < 0:
             isPos = -1
             x = -1 * x
-        while x != 0:
+        w.. x != 0:
             res = res * 10 + x % 10
-            if res > 2147483647:
-                return 0
+            __ res > 2147483647:
+                r_ 0
             x /= 10
-        return res * isPos
+        r_ res * isPos

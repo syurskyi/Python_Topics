@@ -1,21 +1,21 @@
-class Solution(object):
-    def validWordSquare(self, words):
+c_ Solution o..
+    ___ validWordSquare  words):
         """
         :type words: List[str]
         :rtype: bool
         """
-        if words is None or len(words) == 0:
-            return True
-        ls = len(words)
-        for i in range(ls):
-            for j in range(1, len(words[i])):
-                if j >= ls:
-                    return False
-                if i >= len(words[j]):
-                    return False
-                if words[i][j] != words[j][i]:
-                    return False
-        return True
+        __ words is N.. or l.. words) __ 0:
+            r_ True
+        ls = l.. words)
+        ___ i __ r.. ls):
+            ___ j __ r.. 1, l.. words[i])):
+                __ j >= ls:
+                    r_ False
+                __ i >= l.. words[j]):
+                    r_ False
+                __ words[i][j] != words[j][i]:
+                    r_ False
+        r_ True
 
     # def validWordSquare(self, words):
     #     # https://discuss.leetcode.com/topic/63423/1-liner-python/2

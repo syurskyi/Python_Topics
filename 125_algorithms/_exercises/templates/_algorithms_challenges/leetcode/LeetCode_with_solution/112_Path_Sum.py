@@ -5,20 +5,20 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def hasPathSum(self, root, sum):
+c_ Solution o..
+    ___ hasPathSum  root, sum):
         """
         :type root: TreeNode
         :type sum: int
         :rtype: bool
         """
-        if root is None:
-            return False
+        __ root is N..:
+            r_ False
         sum = sum - root.val
-        if sum == 0 and root.left is None and root.right is None:
-            return True
+        __ sum __ 0 and root.left is N.. and root.right is N..:
+            r_ True
         # check left
-        left = self.hasPathSum(root.left, sum)
+        left = hasPathSum(root.left, sum)
         # check right
-        right = self.hasPathSum(root.right, sum)
-        return (left or right)
+        right = hasPathSum(root.right, sum)
+        r_ (left or right)

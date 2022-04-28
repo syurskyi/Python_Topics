@@ -1,24 +1,24 @@
-class Solution(object):
+c_ Solution o..
     # def minCut(self, s):
     #     """
     #     :type s: str
     #     :rtype: int
     #     """
     #     # https://discuss.leetcode.com/topic/2840/my-solution-does-not-need-a-table-for-palindrome-is-it-right-it-uses-only-o-n-space
-        ls = len(s)
-        cut = [i -1 for i in range(ls + 1)]
-        for i in range(ls):
+        ls = l.. s)
+        cut = [i -1 ___ i __ r.. ls + 1)]
+        ___ i __ r.. ls):
             # odd length
             pos = 0
-            while i - pos >= 0 and i + pos < ls and s[i - pos] == s[i + pos]:
+            w.. i - pos >= 0 and i + pos < ls and s[i - pos] __ s[i + pos]:
                 cut[i + pos + 1] = min(cut[i + pos + 1], 1 + cut[i - pos])
                 pos += 1
             # even length
             pos = 1
-            while i - pos + 1 >= 0 and i + pos < ls and s[i - pos + 1] == s[i + pos]:
+            w.. i - pos + 1 >= 0 and i + pos < ls and s[i - pos + 1] __ s[i + pos]:
                 cut[i + pos + 1] = min(cut[i + pos + 1], 1 + cut[i - pos + 1])
                 pos += 1
-        return cut[ls]
+        r_ cut[ls]
 
     # def minCut(self, s):
     #     if len(s) <= 1:

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def largestDivisibleSubset(self, nums):
     #     """
     #     :type nums: List[int]
@@ -11,14 +11,14 @@ class Solution(object):
     #         S[x] = max((S[d] for d in S if x % d == 0), key=len) | {x}
     #     return list(max(S.values(), key=len))
 
-    def largestDivisibleSubset(self, nums):
-        ls = len(nums)
+    ___ largestDivisibleSubset  nums):
+        ls = l.. nums)
         S = {-1: set()}
-        for num in sorted(nums):
+        ___ num __ sorted(nums):
             candicate = []
-            for key in S:
-                if num % key == 0:
+            ___ key __ S:
+                __ num % key __ 0:
                     candicate.append(S[key])
             # max previous with curr
             S[num] = max(candicate, key=len) | {num}
-        return 
+        r_

@@ -19,7 +19,7 @@ c_ Solution(o..
         """
         __ n.. head:
             r.. head
-        aHead, bHead ListNode(0), ListNode(0)
+        aHead, bHead ? 0, ? 0
         aTail, bTail aHead, bHead
         w.... head:
             __ head.val < x:

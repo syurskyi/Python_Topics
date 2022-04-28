@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 import sys
-class Solution(object):
+c_ Solution o..
     # def isValidBST(self, root):
     #     """
     #     :type root: TreeNode
@@ -29,12 +29,12 @@ class Solution(object):
     #     result.extend(self.getOrder(node.right))
     #     return result
 
-    def isValidBST(self, root):
-        return self.isVaild_helper(root, -sys.maxint - 1, sys.maxint)
+    ___ isValidBST  root):
+        r_ isVaild_helper(root, -sys.maxint - 1, sys.maxint)
 
-    def isVaild_helper(self, root, minVal, maxVal):
-        if root is None:
-            return True
-        if root.val >= maxVal or root.val <= minVal:
-            return False
-        return self.isVaild_helper(root.left, minVal, root.val) and self.isVaild_helper(root.right, root.val, maxVal)
+    ___ isVaild_helper  root, minVal, maxVal):
+        __ root is N..:
+            r_ True
+        __ root.val >= maxVal or root.val <= minVal:
+            r_ False
+        r_ isVaild_helper(root.left, minVal, root.val) and isVaild_helper(root.right, root.val, maxVal)

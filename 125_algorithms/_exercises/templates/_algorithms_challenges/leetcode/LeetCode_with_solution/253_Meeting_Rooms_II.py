@@ -32,24 +32,24 @@
 #         return len(free_rooms)
 
 
-class Solution(object):
-    def minMeetingRooms(self, intervals):
+c_ Solution o..
+    ___ minMeetingRooms  intervals):
         """
         :type intervals: List[Interval]
         :rtype: int
         """
         timeline = []
-        for interval in intervals:
+        ___ interval __ intervals:
             # meeting root + 1
             timeline.append((interval.start, 1))
             # meeting root - 1
             timeline.append((interval.end, -1))
         # sort by time
-        timeline.sort()
+        timeline.s..
         ans = curr = 0
         # go through timeline
-        for _, v in timeline:
+        ___ _, v __ timeline:
             curr += v
             # max meeting room used at this point
             ans = max(ans, curr)
-        return ans
+        r_ ans

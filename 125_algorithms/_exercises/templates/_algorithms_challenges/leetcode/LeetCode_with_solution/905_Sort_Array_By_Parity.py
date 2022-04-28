@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def sortArrayByParity(self, A):
     #     """
     #     :type A: List[int]
@@ -12,12 +12,12 @@ class Solution(object):
     #     return ([x for x in A if x % 2 == 0] +
     #             [x for x in A if x % 2 == 1])
 
-    def sortArrayByParity(self, A):
+    ___ sortArrayByParity  A):
         # Quit like quick sort or quick selection
-        lo, hi = 0, len(A) - 1
-        while lo < hi:
-            if A[lo] % 2 > A[hi] % 2:
+        lo, hi = 0, l.. A) - 1
+        w.. lo < hi:
+            __ A[lo] % 2 > A[hi] % 2:
                 A[lo], A[hi] = A[hi], A[lo]
-            if A[lo] % 2 == 0: lo += 1
-            if A[hi] % 2 == 1: hi -= 1
-        return A
+            __ A[lo] % 2 __ 0: lo += 1
+            __ A[hi] % 2 __ 1: hi -= 1
+        r_ A

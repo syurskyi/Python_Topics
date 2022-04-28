@@ -5,23 +5,23 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def pathSum(self, root, sum):
+c_ Solution o..
+    ___ pathSum  root, sum):
         """
         :type root: TreeNode
         :type sum: int
         :rtype: List[List[int]]
         """
         res = []
-        if root is None:
-            return res
-        if sum == root.val and root.left is None and root.right is None:
-            return [[root.val]]
+        __ root is N..:
+            r_ res
+        __ sum __ root.val and root.left is N.. and root.right is N..:
+            r_ [[root.val]]
         # left side
-        left_res = self.pathSum(root.left, sum - root.val)
+        left_res = pathSum(root.left, sum - root.val)
         # right side
-        right_res = self.pathSum(root.right, sum - root.val)
+        right_res = pathSum(root.right, sum - root.val)
         # add current prefix
-        for t in left_res + right_res:
+        ___ t __ left_res + right_res:
             res.append([root.val] + t)
-        return res
+        r_ res

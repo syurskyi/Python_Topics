@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def maxProfit(self, prices):
     #     """
     #     :type prices: List[int]
@@ -19,16 +19,16 @@ class Solution(object):
     #     return max_profit
 
     # https://discuss.leetcode.com/topic/50360/python-dp-and-non-dp-solution
-    def maxProfit(self, prices):
-        ls = len(prices)
-        if ls == 0:
-            return 0
+    ___ maxProfit  prices):
+        ls = l.. prices)
+        __ ls __ 0:
+            r_ 0
         b1 = b2 = -prices[0]
         s1 = s2 = 0
-        for i in xrange(1, ls):
+        ___ i __ xrange(1, ls):
             s2 = max(s2, b2 + prices[i])
             b2 = max(b2, s1 - prices[i])
             s1 = max(b1 + prices[i], s1)
             b1 = max(b1, -prices[i])
-        return max(s1, s2)
+        r_ max(s1, s2)
 

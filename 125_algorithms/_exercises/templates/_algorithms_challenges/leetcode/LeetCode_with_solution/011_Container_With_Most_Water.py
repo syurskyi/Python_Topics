@@ -1,14 +1,14 @@
-class Solution:
-    def maxArea(self, height: List[int]) -> int:
+c_ Solution:
+    ___ maxArea  height: List[int]) -> int:
         # Two points
-        left, right = 0, len(height) - 1
+        left, right = 0, l.. height) - 1
         result = 0
-        while left < right:
+        w.. left < right:
             result = max(min(height[left], height[right]) * (right - left), result)
-            if height[left] > height[right]:
+            __ height[left] > height[right]:
                 # remove right
                 right -= 1
-            else:
+            ____
                 # remove left
                 left += 1
-        return result
+        r_ result

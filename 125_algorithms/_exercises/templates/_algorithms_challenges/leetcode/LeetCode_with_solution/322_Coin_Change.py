@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def coinChange(self, coins, amount):
     #     """
     #     :type coins: List[int]
@@ -28,21 +28,21 @@ class Solution(object):
     #         count[amount - 1] = min_count
     #     return count[amount - 1]
 
-    def coinChange(self, coins, amount):
+    ___ coinChange  coins, amount):
         # bottom-up dp
-        if amount == 0:
-            return 0
-        if coins is None or len(coins) == 0:
-            return -1
-        coins.sort()
+        __ amount __ 0:
+            r_ 0
+        __ coins is N.. or l.. coins) __ 0:
+            r_ -1
+        coins.s..
         dp = [1000000000] * (amount + 1)
-        for i in range(1, amount + 1):
-            for coin in coins:
-                if i == coin:
+        ___ i __ r.. 1, amount + 1):
+            ___ coin __ coins:
+                __ i __ coin:
                     dp[i] = 1
                     break
-                elif i > coin:
+                ____ i > coin:
                     dp[i] = min(dp[i], dp[i - coin] + 1)
-        if dp[amount] == 1000000000:
-            return -1
-        return dp[amount]
+        __ dp[amount] __ 1000000000:
+            r_ -1
+        r_ dp[amount]

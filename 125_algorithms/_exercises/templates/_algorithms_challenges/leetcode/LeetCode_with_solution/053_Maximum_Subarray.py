@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def maxSubArray(self, nums):
     #     return self.maxSubArrayHelper(nums, 0, len(nums) - 1)
     #
@@ -40,9 +40,9 @@ class Solution(object):
     #         all = max(start, all)
     #     return all
 
-    def maxSubArray(self, nums):
+    ___ maxSubArray  nums):
         maxEndingHere = maxSofFar = nums[0]
-        for i in range(1, len(nums)):
+        ___ i __ r.. 1, l.. nums)):
             maxEndingHere = max(maxEndingHere + nums[i], nums[i])
             maxSofFar = max(maxEndingHere, maxSofFar)
-        return maxSofFar
+        r_ maxSofFar

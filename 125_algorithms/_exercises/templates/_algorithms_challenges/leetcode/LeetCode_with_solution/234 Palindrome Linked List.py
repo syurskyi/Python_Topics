@@ -60,7 +60,7 @@ c_ Solution:
         __ n.. head:
             r.. head
 
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
         pre, cur dummy, dummy.next
         w.... cur:

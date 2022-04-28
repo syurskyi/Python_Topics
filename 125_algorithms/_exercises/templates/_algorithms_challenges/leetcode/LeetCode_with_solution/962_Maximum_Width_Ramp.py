@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def maxWidthRamp(self, A):
     #     """
     #     :type A: List[int]
@@ -15,14 +15,14 @@ class Solution(object):
     #                 return ans
     #     return 0
 
-    def maxWidthRamp(self, A):
+    ___ maxWidthRamp  A):
         ans = 0
         m = float('inf')
         # Sort index based on value
-        for i in sorted(range(len(A)), key=A.-g):
+        ___ i __ sorted(r.. l.. A)), key=A.-g):
             ans = max(ans, i - m)
             m = min(m, i)
-        return ans
+        r_ ans
 
 
     # def maxWidthRamp(self, A):
@@ -40,7 +40,7 @@ class Solution(object):
     #     return ans
 
 
-if __name__ == '__main__':
-    s = Solution()
+__ ____ __ ____
+    s  ?
     print s.maxWidthRamp([6, 0, 8, 2, 1, 5])
     print s.maxWidthRamp([9, 8, 1, 0, 1, 9, 4, 0, 4, 1])

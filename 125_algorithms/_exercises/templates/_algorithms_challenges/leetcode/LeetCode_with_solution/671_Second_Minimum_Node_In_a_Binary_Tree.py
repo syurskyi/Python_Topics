@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def findSecondMinimumValue(self, root):
     #     """
     #     :type root: TreeNode
@@ -27,19 +27,19 @@ class Solution(object):
     #     self.dfs(root.left, values)
     #     self.dfs(root.right, values)
 
-    def findSecondMinimumValue(self, root):
-        if not root:
-            return -1
+    ___ findSecondMinimumValue  root):
+        __ not root:
+            r_ -1
         ans = float('inf')
         min_val = root.val
         stack = [root]
-        while stack:
+        w.. stack:
             curr = stack.pop()
-            if not curr:
+            __ not curr:
                 continue
-            if min_val < curr.val < ans:
+            __ min_val < curr.val < ans:
                 ans = curr.val
-            elif curr.val == min_val:
+            ____ curr.val __ min_val:
                 stack.append(curr.left)
                 stack.append(curr.right)
-        return ans if ans < float('inf') else -1
+        r_ ans __ ans < float('inf') ____ -1

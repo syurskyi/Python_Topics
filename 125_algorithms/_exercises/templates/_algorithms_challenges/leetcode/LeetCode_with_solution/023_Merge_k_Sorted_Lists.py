@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution o..
     # def mergeKLists(self, lists):
     #     # Priority queue
     #     from Queue import PriorityQueue
@@ -48,41 +48,41 @@ class Solution(object):
 
 
 
-    def mergeKLists(self, lists):
+    ___ mergeKLists  lists):
         # recursive
-        if lists is None:
-            return None
-        elif len(lists) == 0:
-            return None
-        return self.mergeK(lists, 0, len(lists) - 1)
+        __ lists is N..:
+            r_ N..
+        ____ l.. lists) __ 0:
+            r_ N..
+        r_ mergeK(lists, 0, l.. lists) - 1)
 
-    def mergeK(self, lists, low, high):
-        if low == high:
-            return lists[low]
-        elif low + 1 == high:
-            return self.mergeTwolists(lists[low], lists[high])
+    ___ mergeK  lists, low, high):
+        __ low __ high:
+            r_ lists[low]
+        ____ low + 1 __ high:
+            r_ mergeTwolists(lists[low], lists[high])
         mid = (low + high) / 2
-        return self.mergeTwolists(self.mergeK(lists, low, mid), self.mergeK(lists, mid + 1, high))
+        r_ mergeTwolists(mergeK(lists, low, mid), mergeK(lists, mid + 1, high))
 
-    def mergeTwolists(self, l1, l2):
-        if l1 is None:
-            return l2
-        if l2 is None:
-            return l1
+    ___ mergeTwolists  l1, l2):
+        __ l1 is N..:
+            r_ l2
+        __ l2 is N..:
+            r_ l1
         head = curr = ListNode(-1)
-        while l1 is not None and l2 is not None:
-            if l1.val <= l2.val:
+        w.. l1 is not N.. and l2 is not N..:
+            __ l1.val <= l2.val:
                 curr.next = l1
                 l1 = l1.next
-            else:
+            ____
                 curr.next = l2
                 l2 = l2.next
             curr = curr.next
-        if l1 is not None:
+        __ l1 is not N..:
             curr.next = l1
-        if l2 is not None:
+        __ l2 is not N..:
             curr.next = l2
-        return head.next
+        r_ head.next
 
 
 

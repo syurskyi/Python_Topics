@@ -11,7 +11,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # convert to list
     # def __init__(self):
     #     self.nodelist = []
@@ -41,33 +41,33 @@ class Solution(object):
     #     return current
 
     # point in recursive function
-    def __init__(self):
-        self.node = None
+    ___ -(self):
+        node = N..
     
-    def sortedListToBST(self, head):
+    ___ sortedListToBST  head):
         # Bottom-up recursion O(n) and O(lgn)
-        if head is None:
-            return head
+        __ head is N..:
+            r_ head
         size = 0
-        pos = self.node = head
-        while pos is not None:
+        pos = node = head
+        w.. pos is not N..:
            pos = pos.next
            size += 1
-        return self.inorderHelper(0, size - 1)
+        r_ inorderHelper(0, size - 1)
     
-    def inorderHelper(self, start, end):
-        if start > end:
-            return None
+    ___ inorderHelper  start, end):
+        __ start > end:
+            r_ N..
         mid = (start + end) / 2
         # left side and move
-        left = self.inorderHelper(start, mid - 1)
+        left = inorderHelper(start, mid - 1)
         # move and create
-        root = TreeNode(self.node.val)
+        root = TreeNode(node.val)
         root.left = left
-        self.node = self.node.next
+        node = node.next
         # right side and move
-        root.right = self.inorderHelper(mid + 1, end)
-        return root
+        root.right = inorderHelper(mid + 1, end)
+        r_ root
 
     # two point
     # O(nlgn) and O(n)

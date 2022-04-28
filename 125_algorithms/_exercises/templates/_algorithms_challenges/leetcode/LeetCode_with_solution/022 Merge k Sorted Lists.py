@@ -71,7 +71,7 @@ c_ Solution:
         :param l2: ListNode
         :return:
         """
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next l1
 
         pre dummy
@@ -113,7 +113,7 @@ c_ Solution:
             __ head_node:
                 h__.heappush(heap, (head_node.val, head_node
 
-        dummy ListNode(0)
+        dummy ? 0
 
         cur dummy
         w.... heap:
@@ -126,4 +126,4 @@ c_ Solution:
 
 __ _____ __ ____
     ...  Solution().mergeKLists([N.., N..])__None
-    ... Solution().mergeKLists([ListNode(1), ListNode(0)]).val__0
+    ... Solution().mergeKLists([ListNode(1), ? 0]).val__0

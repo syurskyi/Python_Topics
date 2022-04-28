@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def largestPalindrome(self, n):
     #     """
     #     :type n: int
@@ -24,15 +24,15 @@ class Solution(object):
     #         firstHalf -= 1
     #     return palindrom % 1337
 
-    def largestPalindrome(self, n):
+    ___ largestPalindrome  n):
         # https://leetcode.com/problems/largest-palindrome-product/discuss/96305/Python-Solution-Using-Math-In-48ms
         # https://leetcode.com/problems/largest-palindrome-product/discuss/96294/could-any-python-experts-share-their-codes-within-100ms
-        if n == 1:
-            return 9
-        for a in xrange(2, 9 * 10 ** (n - 1)):
+        __ n __ 1:
+            r_ 9
+        ___ a __ xrange(2, 9 * 10 ** (n - 1)):
             hi = (10 ** n) - a
             lo = int(str(hi)[::-1])
-            if a ** 2 - 4 * lo < 0:
+            __ a ** 2 - 4 * lo < 0:
                 continue
-            if (a ** 2 - 4 * lo) ** .5 == int((a ** 2 - 4 * lo) ** .5):
-                return (lo + 10 ** n * (10 ** n - a)) % 1337
+            __ (a ** 2 - 4 * lo) ** .5 __ int((a ** 2 - 4 * lo) ** .5):
+                r_ (lo + 10 ** n * (10 ** n - a)) % 1337

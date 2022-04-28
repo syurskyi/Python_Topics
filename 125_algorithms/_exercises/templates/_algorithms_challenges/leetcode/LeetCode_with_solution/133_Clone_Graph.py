@@ -4,7 +4,7 @@
 #         self.label = x
 #         self.neighbors = []
 
-class Solution(object):
+c_ Solution o..
 
     # def __init__(self):
     #     self.label_map = {}
@@ -26,23 +26,23 @@ class Solution(object):
     #             res.neighbors.append(self.label_map[ne.label])
     #     return res
 
-    def cloneGraph(self, node):
+    ___ cloneGraph  node):
         # BFS
-        if node is None:
-            return None
-        label_map = {}
+        __ node is N..:
+            r_ N..
+        label_map  # dict
         queue = [node]
         graphCopy = UndirectedGraphNode(node.label)
         label_map[node.label] = graphCopy
-        while len(queue) > 0:
+        w.. l.. queue) > 0:
             curr = queue.pop(0)
-            for ne in curr.neighbors:
-                if ne.label in label_map:
+            ___ ne __ curr.neighbors:
+                __ ne.label __ label_map:
                     label_map[curr.label].neighbors.append(label_map[ne.label])
-                else:
+                ____
                     neighborCopy = UndirectedGraphNode(ne.label)
                     label_map[curr.label].neighbors.append(neighborCopy)
                     label_map[ne.label] = neighborCopy
                     queue.append(ne)
-        return graphCopy
+        r_ graphCopy
 

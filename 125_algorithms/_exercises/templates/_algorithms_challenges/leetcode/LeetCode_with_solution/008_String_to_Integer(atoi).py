@@ -1,5 +1,5 @@
-class Solution(object):
-    def myAtoi(self, str):
+c_ Solution o..
+    ___ myAtoi  str):
         """
         :type str: str
         :rtype: int
@@ -7,23 +7,23 @@ class Solution(object):
         sign = 1
         max_int, min_int = 2147483647, -2147483648
         result, pos = 0, 0
-        ls = len(str)
-        while pos < ls and str[pos] == ' ':
+        ls = l.. str)
+        w.. pos < ls and str[pos] __ ' ':
             pos += 1
-        if pos < ls and str[pos] == '-':
+        __ pos < ls and str[pos] __ '-':
             sign = -1
             pos += 1
-        elif pos < ls and str[pos] == '+':
+        ____ pos < ls and str[pos] __ '+':
             pos += 1
-        while pos < ls and ord(str[pos]) >= ord('0') and ord(str[pos]) <= ord('9'):
-            num = ord(str[pos]) - ord('0')
-            if result > max_int / 10 or ( result == max_int / 10 and num >= 8):
-                if sign == -1:
-                    return min_int
-                return max_int
+        w.. pos < ls and o.. str[pos]) >= o.. '0') and o.. str[pos]) <= o.. '9'):
+            num = o.. str[pos]) - o.. '0')
+            __ result > max_int / 10 or ( result __ max_int / 10 and num >= 8):
+                __ sign __ -1:
+                    r_ min_int
+                r_ max_int
             result = result * 10 + num
             pos += 1
-        return sign * result
+        r_ sign * result
 
     # def myAtoi(self, s):
     #     #https://leetcode.com/discuss/83626/line-python-solution-eafp-instead-lbyl-easier-logic-beats-24%25
@@ -37,7 +37,7 @@ class Solution(object):
     #         return 0
 
 
-if __name__ == '__main__':
+__ ____ __ ____
     # begin
-    s = Solution()
+    s  ?
     print s.myAtoi("+-2")

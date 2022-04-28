@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # https://leetcode.com/problems/number-of-segments-in-a-string/solution/
     # def countSegments(self, s):
     #     """
@@ -7,10 +7,10 @@ class Solution(object):
     #     """
     #     return len(s.split())
 
-    def countSegments(self, s):
+    ___ countSegments  s):
          segment_count = 0
-        for i in range(len(s)):
-            if (i == 0 or s[i-1] == ' ') and s[i] != ' ':
+        ___ i __ r.. l.. s)):
+            __ (i __ 0 or s[i-1] __ ' ') and s[i] != ' ':
                 segment_count += 1
 
-        return segment_count
+        r_ segment_count

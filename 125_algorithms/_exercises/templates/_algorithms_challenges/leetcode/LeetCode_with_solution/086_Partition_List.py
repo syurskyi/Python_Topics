@@ -4,33 +4,33 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-    def partition(self, head, x):
+c_ Solution o..
+    ___ partition  head, x):
         """
         :type head: ListNode
         :type x: int
         :rtype: ListNode
         """
-        if head is None:
-            return None
-        less = lesshead = None
+        __ head is N..:
+            r_ N..
+        less = lesshead = N..
         last = pos = head
-        while pos is not None:
-            if pos.val < x:
-                if lesshead is None:
+        w.. pos is not N..:
+            __ pos.val < x:
+                __ lesshead is N..:
                     lesshead = pos
-                else:
+                ____
                     less.next = pos
                 less = pos
-                if head == pos:
+                __ head __ pos:
                     last = head = pos.next
-                else:
+                ____
                     last.next = pos.next
-            else:
+            ____
                 last = pos
             pos = pos.next
-        if lesshead is not None:
+        __ lesshead is not N..:
             less.next = head
-        else:
+        ____
             lesshead = head
-        return lesshead
+        r_ lesshead

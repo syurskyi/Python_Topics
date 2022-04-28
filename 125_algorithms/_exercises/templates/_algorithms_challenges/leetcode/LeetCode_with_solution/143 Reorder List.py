@@ -23,7 +23,7 @@ c_ Solution:
         :param head: ListNode
         :return: nothing
         """
-        dummy_head ListNode(0)
+        dummy_head ? 0
         dummy_head.next head
 
         pre_cur dummy_head
@@ -93,7 +93,7 @@ c_ Solution:
         """
         __ n.. head:
             r..
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
 
         # find the mid point

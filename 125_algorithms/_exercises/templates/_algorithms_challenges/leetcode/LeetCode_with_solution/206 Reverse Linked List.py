@@ -19,7 +19,7 @@ c_ Solution(o..
         __ n.. head:
             r.. head
 
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
 
         pre dummy

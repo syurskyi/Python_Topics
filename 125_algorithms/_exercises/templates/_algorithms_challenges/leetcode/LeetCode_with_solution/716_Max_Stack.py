@@ -1,56 +1,56 @@
-class MaxStack(object):
+c_ MaxStack o..
 
-    def __init__(self):
+    ___ -(self):
         """
         initialize your data structure here.
         """
-        self.stack = []
-        self.max_stack = []
+        stack = []
+        max_stack = []
 
-    def push(self, x):
+    ___ push  x):
         """
         :type x: int
         :rtype: void
         """
-        self.stack.append(x)
-        if len(self.max_stack) == 0:
-            self.max_stack.append(x)
-            return
-        if self.max_stack[-1] > x:
-            self.max_stack.append(self.max_stack[-1])
-        else:
-            self.max_stack.append(x)
+        stack.append(x)
+        __ l.. max_stack) __ 0:
+            max_stack.append(x)
+            r_
+        __ max_stack[-1] > x:
+            max_stack.append(max_stack[-1])
+        ____
+            max_stack.append(x)
 
-    def pop(self):
+    ___ pop(self):
         """
         :rtype: int
         """
-        if len(self.stack) != 0:
-            self.max_stack.pop(-1)
-            return self.stack.pop(-1)
+        __ l.. stack) != 0:
+            max_stack.pop(-1)
+            r_ stack.pop(-1)
 
-    def top(self):
+    ___ top(self):
         """
         :rtype: int
         """
-        return self.stack[-1]
+        r_ stack[-1]
 
-    def peekMax(self):
+    ___ peekMax(self):
         """
         :rtype: int
         """
-        if len(self.max_stack) != 0:
-            return self.max_stack[-1]
+        __ l.. max_stack) != 0:
+            r_ max_stack[-1]
 
-    def popMax(self):
+    ___ popMax(self):
         """
         :rtype: int
         """
-        val = self.peekMax()
+        val = peekMax()
         buff = []
-        while self.top() != val:
-            buff.append(self.pop())
-        self.pop()
-        while len(buff) != 0:
-            self.push(buff.pop(-1))
-        return val
+        w.. top() != val:
+            buff.append(pop())
+        pop()
+        w.. l.. buff) != 0:
+            push(buff.pop(-1))
+        r_ val

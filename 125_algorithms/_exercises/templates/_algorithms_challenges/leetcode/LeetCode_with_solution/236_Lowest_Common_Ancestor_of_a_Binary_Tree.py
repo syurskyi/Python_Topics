@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def lowestCommonAncestor(self, root, p, q):
     #     """
     #     :type root: TreeNode
@@ -27,7 +27,7 @@ class Solution(object):
     #     lowestCommonAncestorHelper(root)
     #     return self.ans
 
-    def lowestCommonAncestor(self, root, p, q):
+    ___ lowestCommonAncestor  root, p, q):
         """
         :type root: TreeNode
         :type p: TreeNode
@@ -37,17 +37,17 @@ class Solution(object):
         # Stack for tree traversal
         stack = [root]
         # Dictionary for parent pointers
-        parent = {root: None}
+        parent = {root: N..}
         # Iterate until we find both the nodes p and q
-        while p not in parent or q not in parent:
+        w.. p not __ parent or q not __ parent:
 
             node = stack.pop()
 
             # While traversing the tree, keep saving the parent pointers.
-            if node.left:
+            __ node.left:
                 parent[node.left] = node
                 stack.append(node.left)
-            if node.right:
+            __ node.right:
                 parent[node.right] = node
                 stack.append(node.right)
 
@@ -55,12 +55,12 @@ class Solution(object):
         ancestors = set()
 
         # Process all ancestors for node p using parent pointers.
-        while p:
+        w.. p:
             ancestors.add(p)
             p = parent[p]
 
         # The first ancestor of q which appears in
         # p's ancestor set() is their lowest common ancestor.
-        while q not in ancestors:
+        w.. q not __ ancestors:
             q = parent[q]
-        return q
+        r_ q

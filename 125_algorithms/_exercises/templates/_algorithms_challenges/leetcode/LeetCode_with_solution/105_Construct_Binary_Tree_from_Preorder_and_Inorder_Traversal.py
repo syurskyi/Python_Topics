@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def buildTree(self, preorder, inorder):
     #     """
     #     :type preorder: List[int]
@@ -39,21 +39,21 @@ class Solution(object):
     #     return root
 
 
-    def buildTree(self, preorder, inorder):
-        n = len(inorder)
-        inOrderMap = {inorder[i]: i for i in range(n)}
-        return self.buildTreeUtil(preorder, inorder, inOrderMap, 0, n - 1, 0, n - 1)
+    ___ buildTree  preorder, inorder):
+        n = l.. inorder)
+        inOrderMap = {inorder[i]: i ___ i __ r.. n)}
+        r_ buildTreeUtil(preorder, inorder, inOrderMap, 0, n - 1, 0, n - 1)
 
-    def buildTreeUtil(self, preorder, inorder, inOrderMap, pStart, pEnd, iStart, iEnd):
-        if pStart > pEnd or iStart > iEnd:
-            return None
+    ___ buildTreeUtil  preorder, inorder, inOrderMap, pStart, pEnd, iStart, iEnd):
+        __ pStart > pEnd or iStart > iEnd:
+            r_ N..
         root = TreeNode(preorder[pStart])
         rootIdx = inOrderMap[root.val]
-        root.left = self.buildTreeUtil(preorder, inorder, inOrderMap, pStart + 1, pStart + rootIdx - iStart + 1, iStart,
+        root.left = buildTreeUtil(preorder, inorder, inOrderMap, pStart + 1, pStart + rootIdx - iStart + 1, iStart,
                                        rootIdx - 1)
-        root.right = self.buildTreeUtil(preorder, inorder, inOrderMap, pStart + rootIdx - iStart + 1, pEnd, rootIdx + 1,
+        root.right = buildTreeUtil(preorder, inorder, inOrderMap, pStart + rootIdx - iStart + 1, pEnd, rootIdx + 1,
                                         iEnd)
-        return root
+        r_ root
 
 
 

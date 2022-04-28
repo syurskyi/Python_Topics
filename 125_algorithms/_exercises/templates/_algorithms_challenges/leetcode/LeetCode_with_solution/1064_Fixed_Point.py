@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def fixedPoint(self, A):
     #     """
     #     :type A: List[int]
@@ -11,14 +11,14 @@ class Solution(object):
     #         elif index < value:
     #             return -1
 
-    def fixedPoint(self, A):
-        l, h = 0, len(A) - 1
-        while l <= h:
+    ___ fixedPoint  A):
+        l, h = 0, l.. A) - 1
+        w.. l <= h:
             mid = (l + h) // 2
-            if A[mid] < mid:
+            __ A[mid] < mid:
                 l = mid + 1
-            elif A[mid] > mid:
+            ____ A[mid] > mid:
                 h = mid - 1
-            else:
-                return mid
-        return -1
+            ____
+                r_ mid
+        r_ -1

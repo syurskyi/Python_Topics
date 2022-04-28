@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def findShortestSubArray(self, nums):
     #     """
     #     :type nums: List[int]
@@ -25,17 +25,17 @@ class Solution(object):
     #         pos += 1
     #     return pos - start
 
-    def findShortestSubArray(self, nums):
-        left, right, count = {}, {}, {}
-        for i, x in enumerate(nums):
-            if x not in left: left[x] = i
+    ___ findShortestSubArray  nums):
+        left, right, count  # dict, {}, {}
+        ___ i, x __ e.. nums):
+            __ x not __ left: left[x] = i
             right[x] = i
             count[x] = count.get(x, 0) + 1
 
-        ans = len(nums)
+        ans = l.. nums)
         degree = max(count.values())
-        for x in count:
-            if count[x] == degree:
+        ___ x __ count:
+            __ count[x] __ degree:
                 ans = min(ans, right[x] - left[x] + 1)
 
-        return ans
+        r_ ans

@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def inorderTraversal(self, root):
     #     """
     #     :type root: TreeNode
@@ -58,22 +58,22 @@ class Solution(object):
     #             root = root.right
     #     return res
 
-    def inorderTraversal(self, root):
-        if root is None:
-            return []
+    ___ inorderTraversal  root):
+        __ root is N..:
+            r_ []
         res = []
         stack = [root]
-        while len(stack) > 0:
+        w.. l.. stack) > 0:
             curr = stack.pop()
-            if not isinstance(curr, TreeNode):
+            __ not isinstance(curr, TreeNode):
                 res.append(curr)
                 continue
-            if curr.right is not None:
+            __ curr.right is not N..:
                 stack.append(curr.right)
             stack.append(curr.val)
-            if curr.left is not None:
+            __ curr.left is not N..:
                 stack.append(curr.left)
-        return res
+        r_ res
 
 
 

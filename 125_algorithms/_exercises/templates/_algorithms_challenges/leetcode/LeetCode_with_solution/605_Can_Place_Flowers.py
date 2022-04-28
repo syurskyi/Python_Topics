@@ -1,20 +1,20 @@
-class Solution(object):
-    def canPlaceFlowers(self, flowerbed, n):
+c_ Solution o..
+    ___ canPlaceFlowers  flowerbed, n):
         """
         :type flowerbed: List[int]
         :type n: int
         :rtype: bool
         """
         count = 0
-        for i in range(len(flowerbed)):
+        ___ i __ r.. l.. flowerbed)):
             curr = flowerbed[i]
-            if i - 1 >= 0:
+            __ i - 1 >= 0:
                 curr += flowerbed[i - 1]
-            if i + 1 < len(flowerbed):
+            __ i + 1 < l.. flowerbed):
                 curr += flowerbed[i + 1]
-            if curr == 0:
+            __ curr __ 0:
                 count += 1
                 flowerbed[i] = 1
-                if count >= n:
-                    return True
-        return False
+                __ count >= n:
+                    r_ True
+        r_ False

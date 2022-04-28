@@ -10,7 +10,7 @@
 #         :type head: ListNode
 #         :rtype: ListNode
 #         """
-class Solution(object):
+c_ Solution o..
     # def swapPairs(self, head):
     #     current = last = last2 = head
     #     while current is not None:
@@ -27,16 +27,16 @@ class Solution(object):
     #         current = nex
     #     return head
 
-    def swapPairs(self, head):
+    ___ swapPairs  head):
         dummyHead = ListNode(-1)
         dummyHead.next = head
         prev, p = dummyHead, head
-        while p != None and p.next != None:
+        w.. p != N.. and p.next != N..:
             q, r = p.next, p.next.next
             prev.next = q
             q.next = p
             p.next = r
             prev = p
             p = r
-        return dummyHead.next
+        r_ dummyHead.next
         

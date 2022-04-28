@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def removeDuplicates(self, nums):
     #     """
     #         :type nums: List[int]
@@ -19,15 +19,15 @@ class Solution(object):
     #     return pos
 
     # https://leetcode.com/articles/remove-duplicates-sorted-array/
-    def removeDuplicates(self, nums):
-        if len(nums) == 0:
-            return 0
+    ___ removeDuplicates  nums):
+        __ l.. nums) __ 0:
+            r_ 0
         left = 0
-        for i in range(1, len(nums)):
-            if nums[left] == nums[i]:
+        ___ i __ r.. 1, l.. nums)):
+            __ nums[left] __ nums[i]:
                 continue
-            else:
+            ____
                 left += 1
                 nums[left] = nums[i]
-        return left + 1
+        r_ left + 1
 

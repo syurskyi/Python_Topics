@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def sortedArrayToBST(self, nums):
     #     """
     #     :type nums: List[int]
@@ -20,15 +20,15 @@ class Solution(object):
     #     root.right = self.sortedArrayToBST(nums[mid + 1:])
     #     return root
 
-    def sortedArrayToBST(self, nums):
+    ___ sortedArrayToBST  nums):
         # Recursion with index
-        return self.getHelper(nums, 0, len(nums) - 1)
+        r_ getHelper(nums, 0, l.. nums) - 1)
 
-    def getHelper(self, nums, start, end):
-        if start > end:
-            return None
+    ___ getHelper  nums, start, end):
+        __ start > end:
+            r_ N..
         mid = (start + end) / 2
         node = TreeNode(nums[mid])
-        node.left = self.getHelper(nums, start, mid - 1)
-        node.right = self.getHelper(nums, mid + 1, end)
-        return node
+        node.left = getHelper(nums, start, mid - 1)
+        node.right = getHelper(nums, mid + 1, end)
+        r_ node

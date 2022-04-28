@@ -1,5 +1,5 @@
-class Solution(object):
-    def poorPigs(self, buckets, minutesToDie, minutesToTest):
+c_ Solution o..
+    ___ poorPigs  buckets, minutesToDie, minutesToTest):
         """
         :type buckets: int
         :type minutesToDie: int
@@ -8,6 +8,6 @@ class Solution(object):
         """
         # https://leetcode.com/problems/poor-pigs/discuss/94266/Another-explanation-and-solution
         pigs = 0
-        while (minutesToTest / minutesToDie + 1) ** pigs < buckets:
+        w.. (minutesToTest / minutesToDie + 1) ** pigs < buckets:
             pigs += 1
-        return pigs
+        r_ pigs

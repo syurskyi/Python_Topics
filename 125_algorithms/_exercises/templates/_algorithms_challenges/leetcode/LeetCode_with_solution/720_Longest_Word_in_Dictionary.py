@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def longestWord(self, words):
     #     words.sort()
     #     words_set, longest_word = set(['']), ''
@@ -18,19 +18,19 @@ class Solution(object):
     #                 ans = word
     #     return ans
 
-    def longestWord(self, words):
+    ___ longestWord  words):
         Trie = lambda: collections.defaultdict(Trie)
         trie = Trie()
         END = True
-        for i, word in enumerate(words):
+        ___ i, word __ e.. words):
             reduce(dict.-g, word, trie)[END] = i
         stack = trie.values()
         ans = ""
-        while stack:
+        w.. stack:
             cur = stack.pop()
-            if END in cur:
+            __ END __ cur:
                 word = words[cur[END]]
-                if len(word) > len(ans) or len(word) == len(ans) and word < ans:
+                __ l.. word) > l.. ans) or l.. word) __ l.. ans) and word < ans:
                     ans = word
-                stack.extend([cur[letter] for letter in cur if letter != END])
-        return ans
+                stack.extend([cur[letter] ___ letter __ cur __ letter != END])
+        r_ ans

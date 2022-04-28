@@ -1,16 +1,16 @@
 
-class Solution(object):
-    def toHex(self, num):
+c_ Solution o..
+    ___ toHex  num):
         """
         :type num: int
         :rtype: str
         """
-        if num == 0:
-            return '0'
+        __ num __ 0:
+            r_ '0'
         # letter map
         mp = '0123456789abcdef'
         ans = ''
-        for _ in range(8):
+        ___ _ __ r.. 8):
             # get last 4 digits
             # num & 1111b
             n = num & 15
@@ -20,7 +20,7 @@ class Solution(object):
             # num = num / 16
             num = num >> 4
         #strip leading zeroes
-        return ans.lstrip('0')
+        r_ ans.lstrip('0')
     
     # def toHex(self, num):
     #     def tohex(val, nbits):

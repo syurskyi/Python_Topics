@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def searchMatrix(self, matrix, target):
     #     """
     #     :type matrix: List[List[int]]
@@ -39,24 +39,24 @@ class Solution(object):
     #     return 1
 
 
-    def searchMatrix(self, matrix, target):
+    ___ searchMatrix  matrix, target):
         # binary search
         try:
-            ls_row, ls_col = len(matrix), len(matrix[0])
+            ls_row, ls_col = l.. matrix), l.. matrix[0])
         except:
-            return False
-        if target < matrix[0][0] or target > matrix[-1][-1]:
-            return False
+            r_ False
+        __ target < matrix[0][0] or target > matrix[-1][-1]:
+            r_ False
         begin, end = 0, ls_row * ls_col - 1
-        while begin <= end:
+        w.. begin <= end:
             mid = (begin + end) / 2
             row, col = mid / ls_col, mid % ls_col
-            if matrix[row][col] == target:
-                return True
-            elif matrix[row][col] > target:
+            __ matrix[row][col] __ target:
+                r_ True
+            ____ matrix[row][col] > target:
                 end = mid - 1
-            else:
+            ____
                 begin = mid + 1
-        return False
+        r_ False
 
 

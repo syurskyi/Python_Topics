@@ -1,24 +1,24 @@
-class Solution(object):
-    def evalRPN(self, tokens):
+c_ Solution o..
+    ___ evalRPN  tokens):
         """
         :type tokens: List[str]
         :rtype: int
         """
         stack = []
-        for t in tokens:
+        ___ t __ tokens:
             try:
                 temp = int(t)
                 stack.append(temp)
             except:
                 b = stack.pop()
                 a = stack.pop()
-                if t == "+":
+                __ t __ "+":
                     a += b
-                elif t == "-":
+                ____ t __ "-":
                     a -= b
-                elif t == "*":
+                ____ t __ "*":
                     a *= b
-                else:
+                ____
                     a = int(a * 1.0 / b)
                 stack.append(a)
-        return stack[-1]
+        r_ stack[-1]

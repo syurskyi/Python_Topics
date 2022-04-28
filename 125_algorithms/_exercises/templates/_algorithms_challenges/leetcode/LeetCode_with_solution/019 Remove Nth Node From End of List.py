@@ -26,7 +26,7 @@ c_ Solution:
         :return: ListNode, head node
         """
         # construct dummy
-        dummy ListNode(0)
+        dummy ? 0
         dummy.next head
 
         # get length of the linked list

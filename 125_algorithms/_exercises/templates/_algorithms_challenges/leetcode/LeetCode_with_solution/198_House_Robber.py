@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def rob(self, nums):
     #     """
     #     :type nums: List[int]
@@ -27,10 +27,10 @@ class Solution(object):
     #         nums[i] = max(nums[i] + nums[i - 2], nums[i - 1])
     #     return nums[-1]
 
-    def rob(self, nums):
+    ___ rob  nums):
         prevMax = currMax = 0
-        for num in nums:
+        ___ num __ nums:
             temp = currMax
             currMax = max(prevMax + num, currMax)
             prevMax = temp
-        return currMax
+        r_ currMax

@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def lowestCommonAncestor(self, root, p, q):
     #     """
     #     :type root: TreeNode
@@ -39,13 +39,13 @@ class Solution(object):
     #         if node.right is not None:
     #             self.get_path(paths, node.right, paths[node])
 
-    def lowestCommonAncestor(self, root, p, q):
+    ___ lowestCommonAncestor  root, p, q):
         # use the BST to reduce the search space
-        if p is None or q is None or root is None:
-            return None
-        if p.val < root.val and q.val < root.val:
-            return self.lowestCommonAncestor(root.left, p, q)
-        elif p.val > root.val and q.val > root.val:
-            return self.lowestCommonAncestor(root.right, p, q)
-        else:
-            return root
+        __ p is N.. or q is N.. or root is N..:
+            r_ N..
+        __ p.val < root.val and q.val < root.val:
+            r_ lowestCommonAncestor(root.left, p, q)
+        ____ p.val > root.val and q.val > root.val:
+            r_ lowestCommonAncestor(root.right, p, q)
+        ____
+            r_ root

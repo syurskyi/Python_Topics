@@ -1,14 +1,14 @@
-class Solution:
-    def sumZero(self, n: int) -> List[int]:
+c_ Solution:
+    ___ sumZero  n: int) -> List[int]:
         prefix_sum = 0
         res = []
         # 1, n-1
-        for i in range(1, n):
+        ___ i __ r.. 1, n):
             res.append(i)
             prefix_sum = prefix_sum + i
         # sum(from 1 to n-1)
         res.append(-prefix_sum)
-        return res
+        r_ res
     
     # def sumZero(self, n: int) -> List[int]:
     #     # 1,n-1

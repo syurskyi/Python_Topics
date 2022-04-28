@@ -1,35 +1,35 @@
-class Solution(object):
-    def search(self, nums, target):
+c_ Solution o..
+    ___ search  nums, target):
         """
         :type nums: List[int]
         :type target: int
         :rtype: bool
         """
-        def get(start, end):
-            if start > end:
-                return False
+        ___ get(start, end):
+            __ start > end:
+                r_ False
             mid = (start + end) / 2
             # handle duplicate
-            while mid < end and nums[mid + 1] == nums[mid]:
+            w.. mid < end and nums[mid + 1] __ nums[mid]:
                 mid += 1
-            while start < mid and nums[start + 1] == nums[start]:
+            w.. start < mid and nums[start + 1] __ nums[start]:
                 start += 1
-            if nums[mid] == target:
-                return True
-            elif mid == end:
-                return get(start, mid - 1)
-            elif start == mid:
-                return get(mid + 1, end)
-            elif nums[mid] >= nums[start]:
+            __ nums[mid] __ target:
+                r_ True
+            ____ mid __ end:
+                r_ get(start, mid - 1)
+            ____ start __ mid:
+                r_ get(mid + 1, end)
+            ____ nums[mid] >= nums[start]:
                 # First half is sorted
-                if target >= nums[start] and target < nums[mid]:
-                    return get(start, mid - 1)
-                else:
-                    return get(mid + 1, end)
-            elif nums[mid] <= nums[end]:
+                __ target >= nums[start] and target < nums[mid]:
+                    r_ get(start, mid - 1)
+                ____
+                    r_ get(mid + 1, end)
+            ____ nums[mid] <= nums[end]:
                 # Second half is sorted
-                if target > nums[mid] and target <= nums[end]:
-                    return get(mid + 1, end)
-                else:
-                    return get(start, mid - 1)
-        return get(0, len(nums) - 1)
+                __ target > nums[mid] and target <= nums[end]:
+                    r_ get(mid + 1, end)
+                ____
+                    r_ get(start, mid - 1)
+        r_ get(0, l.. nums) - 1)

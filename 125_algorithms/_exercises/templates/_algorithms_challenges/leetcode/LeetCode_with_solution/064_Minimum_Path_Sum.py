@@ -1,24 +1,24 @@
-class Solution(object):
-    def minPathSum(self, grid):
+c_ Solution o..
+    ___ minPathSum  grid):
         """
         :type grid: List[List[int]]
         :rtype: int
         """
-        height = len(grid)
-        if height == 0:
-            return 0
-        width = len(grid[0])
+        height = l.. grid)
+        __ height __ 0:
+            r_ 0
+        width = l.. grid[0])
         pathmap = []
-        for i in range(height):
+        ___ i __ r.. height):
             pathmap.append([100000000000] * width)
         pathmap[0][0] = grid[0][0]
-        for i in range(height):
-            for j in range(width):
+        ___ i __ r.. height):
+            ___ j __ r.. width):
                 compare = [pathmap[i][j]]
-                if i - 1 >= 0:
+                __ i - 1 >= 0:
                     compare.append(pathmap[i - 1][j] + grid[i][j])
-                if j - 1 >= 0:
+                __ j - 1 >= 0:
                     compare.append(pathmap[i][j - 1] + grid[i][j])
                 # min choice
                 pathmap[i][j] = min(compare)
-        return pathmap[-1][-1]
+        r_ pathmap[-1][-1]

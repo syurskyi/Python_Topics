@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
-    def maxDepth(self, root):
+c_ Solution:
+    ___ maxDepth  root):
         """
         :type root: TreeNode
         :rtype: int
         """
-        if root is None:
-            return 0
-        ld = self.maxDepth(root.left)
-        rd = self.maxDepth(root.right)
-        return 1 + max(ld, rd)
+        __ root is N..:
+            r_ 0
+        ld = maxDepth(root.left)
+        rd = maxDepth(root.right)
+        r_ 1 + max(ld, rd)

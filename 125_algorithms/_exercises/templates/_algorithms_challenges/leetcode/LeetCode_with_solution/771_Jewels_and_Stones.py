@@ -1,15 +1,15 @@
-class Solution(object):
-    def numJewelsInStones(self, J, S):
+c_ Solution o..
+    ___ numJewelsInStones  J, S):
         """
         :type J: str
         :type S: str
         :rtype: int
         """
-        if len(J) == 0 or len(S) == 0:
-            return 0
+        __ l.. J) __ 0 or l.. S) __ 0:
+            r_ 0
         j_set = set(J)
         ans = 0
-        for c in S:
-            if c in j_set:
+        ___ c __ S:
+            __ c __ j_set:
                 ans += 1
-        return ans
+        r_ ans

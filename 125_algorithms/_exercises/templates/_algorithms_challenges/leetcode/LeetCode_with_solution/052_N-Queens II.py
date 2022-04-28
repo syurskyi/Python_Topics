@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def totalNQueens(self, n):
     #     """
     #     :type n: int
@@ -48,31 +48,31 @@ class Solution(object):
     #                 self.do_solveNQueens(res, board, num - 1)
     #                 board[pos][j] = '.'
 
-    def __init__(self):
-        self.count = 0
+    ___ -(self):
+        count = 0
 
-    def totalNQueens(self, n):
-        self.dfs(0, n, 0, 0, 0)
-        return self.count
+    ___ totalNQueens  n):
+        dfs(0, n, 0, 0, 0)
+        r_ count
 
-    def dfs(self, row, n, column, diag, antiDiag):
+    ___ dfs  row, n, column, diag, antiDiag):
         # https://leetcode.com/discuss/89951/share-my-java-code-beats-97-83%25-run-times
-        if row == n:
-            self.count += 1
-            return
-        for index in range(n):
+        __ row __ n:
+            count += 1
+            r_
+        ___ index __ r.. n):
             # column check
-            isColSafe = (1 << index) & column == 0
+            isColSafe = (1 << index) & column __ 0
             # diagonal, all nodes have the same n - 1 + row - index
-            isDigSafe = (1 << (n - 1 + row - index)) & diag == 0
+            isDigSafe = (1 << (n - 1 + row - index)) & diag __ 0
             # anti diagonal, all nodes have the same row + index
-            isAntiDiagSafe = (1 << (row + index)) & antiDiag == 0
-            if isAntiDiagSafe and isColSafe and isDigSafe:
-                self.dfs(row + 1,  n, (1 << index) | column,
+            isAntiDiagSafe = (1 << (row + index)) & antiDiag __ 0
+            __ isAntiDiagSafe and isColSafe and isDigSafe:
+                dfs(row + 1,  n, (1 << index) | column,
                          (1 << (n - 1 + row - index)) | diag,
                          (1 << (row + index)) | antiDiag)
 
-if __name__ == '__main__':
+__ ____ __ ____
     # begin
-    s = Solution()
+    s  ?
     print s.totalNQueens(4)

@@ -11,25 +11,25 @@
 #         :type l2: ListNode
 #         :rtype: ListNode
 #         """
-class Solution(object):
-    def mergeTwoLists(self, l1, l2):
+c_ Solution o..
+    ___ mergeTwoLists  l1, l2):
         # dummy head
         pos = dummyHead = ListNode(-1)
-        while l1 is not None and l2 is not None:
-            if l1.val <= l2.val:
+        w.. l1 is not N.. and l2 is not N..:
+            __ l1.val <= l2.val:
                 pos.next = l1
                 l1 = l1.next
-            else:
+            ____
                 pos.next = l2
                 l2 = l2.next
             pos = pos.next
         # merge residual l1
-        if l1 is not None:
+        __ l1 is not N..:
             pos.next = l1
         # merge residual l2
-        if l2 is not None:
+        __ l2 is not N..:
             pos.next = l2
-        return dummyHead.next
+        r_ dummyHead.next
 
 
     # def mergeTwoLists(self, l1, l2):

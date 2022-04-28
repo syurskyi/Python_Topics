@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def isUgly(self, num):
     #     """
     #     :type num: int
@@ -17,15 +17,15 @@ class Solution(object):
     #     if num == 1:
     #         return True
     #     return False
-    def isUgly(self, num):
-        if num <= 0:
-            return False
+    ___ isUgly  num):
+        __ num <= 0:
+            r_ False
         divisors = [2, 3, 5]
-        for d in divisors:
-            while num % d == 0:
+        ___ d __ divisors:
+            w.. num % d __ 0:
                 num /= d
-        return num == 1
+        r_ num __ 1
 
-if __name__ == '__main__':
-    s = Solution()
+__ ____ __ ____
+    s  ?
     print s.isUgly(-2147483648)

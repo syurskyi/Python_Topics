@@ -1,5 +1,5 @@
-class Solution(object):
-    def isStrobogrammatic(self, num):
+c_ Solution o..
+    ___ isStrobogrammatic  num):
         """
         :type num: str
         :rtype: bool
@@ -7,13 +7,13 @@ class Solution(object):
         # hash table
         dic = {'0':'0', '6':'9', '9': '6', '1' :'1', '8': '8'}
         temp_s = ''
-        for c in num[::-1]:
-            if c not in dic:
-                return False
+        ___ c __ num[::-1]:
+            __ c not __ dic:
+                r_ False
             temp_s += dic[c]
-        if int(temp_s) == int(num):
-            return True
-        return False
+        __ int(temp_s) __ int(num):
+            r_ True
+        r_ False
 
     # def isStrobogrammatic(self, num):
     #     # https://discuss.leetcode.com/topic/20840/1-liners-python

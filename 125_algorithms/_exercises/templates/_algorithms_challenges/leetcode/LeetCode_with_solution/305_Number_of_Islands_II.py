@@ -1,5 +1,5 @@
-class Solution(object):
-    def numIslands2(self, m, n, positions):
+c_ Solution o..
+    ___ numIslands2  m, n, positions):
         """
         :type m: int
         :type n: int
@@ -9,42 +9,42 @@ class Solution(object):
         # quick union find with weights
         ans = []
         islands = Union()
-        for p in map(tuple, positions):
+        ___ p __ map(tuple, positions):
             islands.add(p)
-            for dp in (0, 1), (0, -1), (1, 0), (-1, 0):
+            ___ dp __ (0, 1), (0, -1), (1, 0), (-1, 0):
                 q = (p[0] + dp[0], p[1] + dp[1])
-                if q in islands.id:
+                __ q __ islands.id:
                     islands.unite(p, q)
             ans += [islands.count]
-        return ans
+        r_ ans
 
-class Union(object):
+c_ Union o..
     """
     quick union find with weights
     """
-    def __init__(self):
+    ___ -(self):
         # use dic to reduce index operations
-        self.id = {}
-        self.sz = {}
-        self.count = 0
+        id  # dict
+        sz  # dict
+        count = 0
 
-    def add(self, p):
-        self.id[p] = p
-        self.sz[p] = 1
-        self.count += 1
+    ___ add  p):
+        id[p] = p
+        sz[p] = 1
+        count += 1
 
-    def root(self, i):
-        while i != self.id[i]:
-            self.id[i] = self.id[self.id[i]]
-            i = self.id[i]
-        return i
+    ___ root  i):
+        w.. i != id[i]:
+            id[i] = id[id[i]]
+            i = id[i]
+        r_ i
 
-    def unite(self, p, q):
-        i, j = self.root(p), self.root(q)
-        if i == j:
-            return
-        if self.sz[i] > self.sz[j]:
+    ___ unite  p, q):
+        i, j = root(p), root(q)
+        __ i __ j:
+            r_
+        __ sz[i] > sz[j]:
             i, j = j, i
-        self.id[i] = j
-        self.sz[j] += self.sz[i]
-        self.count -= 1
+        id[i] = j
+        sz[j] += sz[i]
+        count -= 1

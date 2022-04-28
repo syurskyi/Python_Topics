@@ -5,31 +5,31 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def zigzagLevelOrder(self, root):
+c_ Solution o..
+    ___ zigzagLevelOrder  root):
         """
         :type root: TreeNode
         :rtype: List[List[int]]
         """
         # level order
-        if root is None:
-            return []
+        __ root is N..:
+            r_ []
         q = [[root]]
-        for level in q:
+        ___ level __ q:
             record = []
-            for node in level:
-                if node.left:
+            ___ node __ level:
+                __ node.left:
                     record.append(node.left)
-                if node.right:
+                __ node.right:
                     record.append(node.right)
-            if record:
+            __ record:
                 q.append(record)
         # zigzag order
         res = []
-        for index, level in enumerate(q):
-            temp = [x.val for x in level]
-            if index % 2 == 0:
+        ___ index, level __ e.. q):
+            temp = [x.val ___ x __ level]
+            __ index % 2 __ 0:
                 res.append(temp)
-            else:
+            ____
                 res.append(temp[::-1])
-        return res
+        r_ res

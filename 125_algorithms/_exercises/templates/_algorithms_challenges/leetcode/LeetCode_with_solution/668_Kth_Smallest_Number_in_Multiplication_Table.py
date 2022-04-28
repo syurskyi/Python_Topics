@@ -1,19 +1,19 @@
-class Solution:
-    def findKthNumber(self, m: int, n: int, k: int) -> int:
+c_ Solution:
+    ___ findKthNumber  m: int, n: int, k: int) -> int:
         # https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solution/
-        def enough(x):
+        ___ enough(x):
             count = 0
             # ith row [i, 2*i, 3*i, ..., n*i]
             # for each column, k = x // i
-            for i in range(1, m+1):
+            ___ i __ r.. 1, m+1):
                 count += min(x // i, n)
-            return count >= k
+            r_ count >= k
 
         lo, hi = 1, m * n
-        while lo < hi:
+        w.. lo < hi:
             mi = (lo + hi) // 2
-            if not enough(mi):
+            __ not enough(mi):
                 lo = mi + 1
-            else:
+            ____
                 hi = mi
-        return lo
+        r_ lo

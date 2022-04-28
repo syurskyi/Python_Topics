@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def combinationSum(self, candidates, target):
     #     """
     #     :type candidates: List[int]
@@ -26,25 +26,25 @@ class Solution(object):
     #     return res
 
 
-    def combinationSum(self, candidates, target):
-        candidates.sort()
-        dp = [[] for _ in range(target + 1)]
+    ___ combinationSum  candidates, target):
+        candidates.s..
+        dp = [[] ___ _ __ r.. target + 1)]
         dp[0].append([])
-        for i in range(1, target + 1):
-            for j in range(len(candidates)):
-                if candidates[j] > i:
+        ___ i __ r.. 1, target + 1):
+            ___ j __ r.. l.. candidates)):
+                __ candidates[j] > i:
                     break
-                for k in range(len(dp[i - candidates[j]])):
+                ___ k __ r.. l.. dp[i - candidates[j]])):
                     temp = dp[i - candidates[j]][k][:]
-                    if len(temp) > 0 and temp[-1] > candidates[j]:
+                    __ l.. temp) > 0 and temp[-1] > candidates[j]:
                         continue
                     temp.append(candidates[j])
                     dp[i].append(temp)
-        return dp[target]
+        r_ dp[target]
 
 
-if __name__ == '__main__':
-    s = Solution()
+__ ____ __ ____
+    s  ?
     print s.combinationSum([8,7,4,3], 11)
 
 

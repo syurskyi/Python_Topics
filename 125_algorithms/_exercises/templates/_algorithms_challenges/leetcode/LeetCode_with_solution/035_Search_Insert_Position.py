@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # def searchInsert(self, nums, target):
     #     """
     #     :type nums: List[int]
@@ -22,22 +22,22 @@ class Solution:
     #         return pos + 1
     #     return pos
 
-    def searchInsert(self, nums, target):
-        l, r = int(0), len(nums) - 1
-        while l < r:
+    ___ searchInsert  nums, target):
+        l, r = int(0), l.. nums) - 1
+        w.. l < r:
             mid = int((l + r) / 2)
-            if nums[mid] < target:
+            __ nums[mid] < target:
                 l = mid + 1
-            else:
+            ____
                 r = mid
-        if nums[l] < target:
-            return l + 1
-        return l 
+        __ nums[l] < target:
+            r_ l + 1
+        r_ l
 
     
     
-if __name__ == '__main__':
+__ ____ __ ____
     # begin
-    s = Solution()
+    s  ?
     print (s.searchInsert([1,3,5,6],5))    
     

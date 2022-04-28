@@ -4,37 +4,37 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
-    def reverseBetween(self, head, m, n):
+c_ Solution o..
+    ___ reverseBetween  head, m, n):
         """
         :type head: ListNode
         :type m: int
         :type n: int
         :rtype: ListNode
         """
-        if m == n:
-            return head
-        split_node, prev, curr = None, None, head
+        __ m __ n:
+            r_ head
+        split_node, prev, curr = N.., N.., head
         count = 1
-        while count <= m and curr is not None:
-            if count == m:
+        w.. count <= m and curr is not N..:
+            __ count __ m:
                 split_node = prev
             prev = curr
             curr = curr.next
             count += 1
-        tail, next_node = prev, None
-        while curr is not None and count <= n:
+        tail, next_node = prev, N..
+        w.. curr is not N.. and count <= n:
             next_temp = curr.next
             curr.next = prev
             prev = curr
             curr = next_temp
             count += 1
-        if split_node is not None:
+        __ split_node is not N..:
             split_node.next = prev
-        if tail is not None:
+        __ tail is not N..:
             tail.next = curr
-        if m == 1:
-            return prev
-        return head
+        __ m __ 1:
+            r_ prev
+        r_ head
 
         

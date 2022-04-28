@@ -1,5 +1,5 @@
-class Solution(object):
-    def fullJustify(self, words, maxWidth):
+c_ Solution o..
+    ___ fullJustify  words, maxWidth):
         """
         :type words: List[str]
         :type maxWidth: int
@@ -9,44 +9,44 @@ class Solution(object):
         res_list = []
         curr = []
         count, pos = 0, 0
-        while pos < len(words):
+        w.. pos < l.. words):
             word = words[pos]
-            if len(word) > maxWidth:
+            __ l.. word) > maxWidth:
                 pos += 1
-            if len(word) + count + len(curr)<= maxWidth:
-                count += len(word)
+            __ l.. word) + count + l.. curr)<= maxWidth:
+                count += l.. word)
                 curr.append(word)
                 pos += 1
-            else:
+            ____
                 res_list.append(curr)
                 curr = []
                 count = 0
-        if len(curr) > 0:
+        __ l.. curr) > 0:
             res_list.append(curr)
         # print res_list
-        for index, curr in enumerate(res_list):
+        ___ index, curr __ e.. res_list):
             text = ''
-            remain = sum([len(t) for t in curr])
-            if len(curr) == 1:
+            remain = sum([l.. t) ___ t __ curr])
+            __ l.. curr) __ 1:
                 # single word
                 text = curr[0] + ' ' * (maxWidth - remain)
-            elif index == len(res_list) - 1:
+            ____ index __ l.. res_list) - 1:
                 # last line
                 text = ' '.join(curr)
-                text += ' ' * (maxWidth - remain - len(curr) + 1)
-            else:
+                text += ' ' * (maxWidth - remain - l.. curr) + 1)
+            ____
                 # multiple
-                step = (maxWidth - remain) / (len(curr) - 1 )
-                extra = (maxWidth - remain) % (len(curr) - 1 )
-                for index in range(len(curr) - 1):
+                step = (maxWidth - remain) / (l.. curr) - 1 )
+                extra = (maxWidth - remain) % (l.. curr) - 1 )
+                ___ index __ r.. l.. curr) - 1):
                     text += curr[index] + ' ' * step
-                    if extra > 0:
+                    __ extra > 0:
                         # assign from left
                         text += ' '
                         extra -= 1
                 text += curr[-1]
             res.append(text)
-        return res
+        r_ res
 
     # def fullJustify(self, words, maxWidth):
     #     i, N, result = 0, len(words), []
@@ -68,6 +68,6 @@ class Solution(object):
     #         result.append(''.join([s for pair in zip(oneLine, spaces) for s in pair]))
     #     return result
 
-if __name__ == '__main__':
-    s = Solution()
+__ ____ __ ____
+    s  ?
     print s.fullJustify(["Don't","go","around","saying","the","world","owes","you","a","living;","the","world","owes","you","nothing;","it","was","here","first."],30)

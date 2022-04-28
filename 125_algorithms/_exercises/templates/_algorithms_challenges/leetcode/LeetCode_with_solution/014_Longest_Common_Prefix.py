@@ -5,32 +5,32 @@
 #         :rtype: str
 #         """
 
-class Solution(object):
-    def longestCommonPrefix(self, strs):
-        ls = len(strs)
-        if ls == 1:
-            return strs[0]
+c_ Solution o..
+    ___ longestCommonPrefix  strs):
+        ls = l.. strs)
+        __ ls __ 1:
+            r_ strs[0]
         prefix = ''
         pos = 0
-        while True:
+        w.. True:
             try:
                 current = strs[0][pos]
             except IndexError:
                 break
             index = 1
-            while index < ls:
+            w.. index < ls:
                 try:
-                    if strs[index][pos] != current:
+                    __ strs[index][pos] != current:
                         break
                 except IndexError:
                     break
                 index += 1
-            if index == ls:
+            __ index __ ls:
                 prefix = prefix + current
-            else:
+            ____
                 break
             pos += 1
-        return prefix
+        r_ prefix
 
     # def longestCommonPrefix(self, strs):
     #     # https://leetcode.com/discuss/89987/one-line-solution-using-itertools-takewhile
@@ -38,7 +38,7 @@ class Solution(object):
 
 
 
-if __name__ == '__main__':
+__ ____ __ ____
     # begin
-    s = Solution()
+    s  ?
     print s.longestCommonPrefix(["aca","cba"])

@@ -40,7 +40,7 @@ c_ Groceries:
                 _items.p.. i)
                 _____
         ____
-            r.. I.. _*{product} not in cart')
+            r.. I.. _*{product} not __ cart')
         show()
 
     ___ s..  s..

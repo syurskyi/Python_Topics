@@ -1,42 +1,42 @@
-class Solution(object):
-    def solveNQueens(self, n):
+c_ Solution o..
+    ___ solveNQueens  n):
         """
         :type n: int
         :rtype: List[List[str]]
         """
         # recusive
-        if n == 0:
-            return 0
+        __ n __ 0:
+            r_ 0
         res = []
-        board = [['.'] * n for t in range(n)]
-        self.do_solveNQueens(res, board, n)
-        return res
+        board = [['.'] * n ___ t __ r.. n)]
+        do_solveNQueens(res, board, n)
+        r_ res
 
-    def do_solveNQueens(self, res, board, num):
-        if num == 0:
-            res.append([''.join(t) for t in board])
-            return
-        ls = len(board)
+    ___ do_solveNQueens  res, board, num):
+        __ num __ 0:
+            res.append([''.join(t) ___ t __ board])
+            r_
+        ls = l.. board)
         pos = ls - num
         check = [True] * ls
-        for i in range(pos):
-            for j in range(ls):
-                if board[i][j] == 'Q':
+        ___ i __ r.. pos):
+            ___ j __ r.. ls):
+                __ board[i][j] __ 'Q':
                     check[j] = False
                     step = pos - i
-                    if j + step < ls:
+                    __ j + step < ls:
                         check[j + step] = False
-                    if j - step >= 0:
+                    __ j - step >= 0:
                         check[j - step] = False
                     break
-        for j in range(ls):
-            if check[j]:
+        ___ j __ r.. ls):
+            __ check[j]:
                 board[pos][j] = 'Q'
-                self.do_solveNQueens(res, board, num - 1)
+                do_solveNQueens(res, board, num - 1)
                 board[pos][j] = '.'
 
 
-if __name__ == '__main__':
+__ ____ __ ____
     # begin
-    s = Solution()
+    s  ?
     print s.solveNQueens(4)

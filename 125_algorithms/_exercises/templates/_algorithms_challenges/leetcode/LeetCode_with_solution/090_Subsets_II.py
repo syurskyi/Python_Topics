@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def subsetsWithDup(self, nums):
     #     """
     #     :type nums: List[int]
@@ -25,20 +25,20 @@ class Solution(object):
     #             res.append(nums[i])
     #     return res
 
-    def subsetsWithDup(self, nums):
-        nums.sort()
+    ___ subsetsWithDup  nums):
+        nums.s..
         res = [[]]
         begin = 0
-        for index in range(len(nums)):
-            if index == 0 or nums[index] != nums[index - 1]:
+        ___ index __ r.. l.. nums)):
+            __ index __ 0 or nums[index] != nums[index - 1]:
                 # generate all
                 begin = 0
-            size = len(res)
+            size = l.. res)
             # use existing subsets to generate new subsets
-            for j in range(begin, size):
+            ___ j __ r.. begin, size):
                 curr = list(res[j])
                 curr.append(nums[index])
                 res.append(curr)
             # avoid duplicate subsets
             begin = size
-        return res
+        r_ res

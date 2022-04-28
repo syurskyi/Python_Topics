@@ -1,30 +1,30 @@
-class Solution(object):
-    def findAnagrams(self, s, p):
+c_ Solution o..
+    ___ findAnagrams  s, p):
         """
         :type s: str
         :type p: str
         :rtype: List[int]
         """
         res = []
-        if s is None or p is None or len(s) == 0 or len(p) == 0:
-            return res
+        __ s is N.. or p is N.. or l.. s) __ 0 or l.. p) __ 0:
+            r_ res
         char_map = [0] * 256
-        for c in p:
-            char_map[ord(c)] += 1
-        left, right, count = 0, 0, len(p)
-        while right < len(s):
-            if char_map[ord(s[right])] >= 1:
+        ___ c __ p:
+            char_map[o.. c)] += 1
+        left, right, count = 0, 0, l.. p)
+        w.. right < l.. s):
+            __ char_map[o.. s[right])] >= 1:
                 count -= 1
-            char_map[ord(s[right])] -= 1
+            char_map[o.. s[right])] -= 1
             right += 1
-            if count == 0:
+            __ count __ 0:
                 res.append(left)
-            if right - left == len(p):
-                if char_map[ord(s[left])] >= 0:
+            __ right - left __ l.. p):
+                __ char_map[o.. s[left])] >= 0:
                     count += 1
-                char_map[ord(s[left])] += 1
+                char_map[o.. s[left])] += 1
                 left += 1
-        return res
+        r_ res
 
     # def findAnagrams(self, s, p):
     #     if len(s) < len(p):

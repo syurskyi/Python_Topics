@@ -1,6 +1,6 @@
 import string
-class Solution(object):
-    def ladderLength(self, beginWord, endWord, wordList):
+c_ Solution o..
+    ___ ladderLength  beginWord, endWord, wordList):
         """
         :type beginWord: str
         :type endWord: str
@@ -11,33 +11,33 @@ class Solution(object):
         # one way is not sufficient
         wordList.discard(beginWord)
         wordList.discard(endWord)
-        hash_map, res = {}, []
-        res = self.bfs(set([beginWord]), set([endWord]), wordList, 2)
-        return res
+        hash_map, res  # dict, []
+        res = bfs(set([beginWord]), set([endWord]), wordList, 2)
+        r_ res
 
-    def bfs(self, forward, backward, wordlist, level):
-        if len(forward) == 0 or len(backward) == 0:
-            return 0
-        if len(forward) > len(backward):
-            return self.bfs(backward, forward, wordlist, level)
+    ___ bfs  forward, backward, wordlist, level):
+        __ l.. forward) __ 0 or l.. backward) __ 0:
+            r_ 0
+        __ l.. forward) > l.. backward):
+            r_ bfs(backward, forward, wordlist, level)
         is_connected = False
         next_level = set()
-        for word in forward:
-            for c in string.ascii_lowercase:
-                for index in range(len(word)):
+        ___ word __ forward:
+            ___ c __ string.ascii_lowercase:
+                ___ index __ r.. l.. word)):
                     neigh = word[:index] + c + word[index + 1:]
-                    if neigh in backward:
+                    __ neigh __ backward:
                         is_connected = True
-                        return level
-                    if not is_connected and neigh in wordlist:
+                        r_ level
+                    __ not is_connected and neigh __ wordlist:
                         next_level.add(neigh)
                         wordlist.discard(neigh)
-        if not is_connected:
-            return self.bfs(next_level, backward, wordlist, level + 1)
+        __ not is_connected:
+            r_ bfs(next_level, backward, wordlist, level + 1)
 
 
-if __name__ == "__main__":
-    s = Solution()
+__ __name__ __ "__main__":
+    s  ?
     # print s.ladderLength('hit', 'cog', set(["hot","dot","dog","lot","log"]))
     # print s.ladderLength('a', 'b', set(['a', 'b', 'c']))
     # print s.ladderLength('hot', 'dog', set(['hot', 'dog']))

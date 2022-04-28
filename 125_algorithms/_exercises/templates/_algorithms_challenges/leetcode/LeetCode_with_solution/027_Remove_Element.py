@@ -5,7 +5,7 @@
 #         :type val: int
 #         :rtype: int
 #         """
-class Solution(object):
+c_ Solution o..
     # def removeElement(self, nums, val):
     #     ls = len(nums)
     #     if ls == 0:
@@ -20,22 +20,22 @@ class Solution(object):
     #     # del nums[pos:]
     #     return pos
 
-    def removeElement(self, nums, val):
-        ls = len(nums)
-        if ls == 0:
-            return ls
+    ___ removeElement  nums, val):
+        ls = l.. nums)
+        __ ls __ 0:
+            r_ ls
         count = 0
         index = 0
-        while index < ls - count:
-            if nums[index] == val:
+        w.. index < ls - count:
+            __ nums[index] __ val:
                 nums[index] = nums[ls - 1 - count]
                 count += 1
-            else:
+            ____
                 index += 1
-        return ls - count
+        r_ ls - count
 
-if __name__ == '__main__':
+__ ____ __ ____
     # begin
-    s = Solution()
+    s  ?
     print s.removeElement([1], 1)
 

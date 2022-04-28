@@ -1,5 +1,5 @@
-class Solution(object):
-    def numberOfPatterns(self, m, n):
+c_ Solution o..
+    ___ numberOfPatterns  m, n):
         """
         :type m: int
         :type n: int
@@ -7,37 +7,37 @@ class Solution(object):
         """
         used = [False] * 9
         res = 0
-        for l in range(m, n + 1):
-            res += self.calc_patterns(used, -1, l)
+        ___ l __ r.. m, n + 1):
+            res += calc_patterns(used, -1, l)
             used = [False] * 9
-        return res
+        r_ res
 
-    def is_valid(self, used, index, last):
+    ___ is_valid  used, index, last):
         # markded
-        if used[index]:
-            return False
+        __ used[index]:
+            r_ False
         # first digit
-        if last == -1:
-            return True
+        __ last __ -1:
+            r_ True
         # adjacent cells (in a row or in a column)
-        if (last + index) % 2 == 1:
-            return True
+        __ (last + index) % 2 __ 1:
+            r_ True
         mid = (last + index) / 2
-        if mid == 4:
-            return used[mid]
+        __ mid __ 4:
+            r_ used[mid]
         # adjacent cells on diagonal
-        if (index % 3 != last % 3) and (index / 3 != last / 3):
-            return True
+        __ (index % 3 != last % 3) and (index / 3 != last / 3):
+            r_ True
         # all other cells which are not adjacent
-        return used[mid]
+        r_ used[mid]
 
-    def calc_patterns(self, used, last, length):
-        if length == 0:
-            return 1
+    ___ calc_patterns  used, last, length):
+        __ length __ 0:
+            r_ 1
         res = 0
-        for i in range(9):
-            if self.is_valid(used, i, last):
+        ___ i __ r.. 9):
+            __ is_valid(used, i, last):
                 used[i] = True
-                res += self.calc_patterns(used, i, length - 1)
+                res += calc_patterns(used, i, length - 1)
                 used[i] = False
-        return res
+        r_ res

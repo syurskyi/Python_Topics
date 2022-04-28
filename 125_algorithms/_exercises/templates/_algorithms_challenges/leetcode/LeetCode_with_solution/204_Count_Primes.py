@@ -1,20 +1,20 @@
-class Solution(object):
-    def countPrimes(self, n):
+c_ Solution o..
+    ___ countPrimes  n):
         """
         :type n: int
         :rtype: int
         """
         # https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes#Algorithm_complexity
         isPrime = [True] * n
-        for i in xrange(2, n):
-            if i * i >= n:
+        ___ i __ xrange(2, n):
+            __ i * i >= n:
                 break
-            if not isPrime[i]:
+            __ not isPrime[i]:
                 continue
-            for j in xrange(i * i, n, i):
+            ___ j __ xrange(i * i, n, i):
                 isPrime[j] = False
         count = 0
-        for i in xrange(2, n):
-            if isPrime[i]:
+        ___ i __ xrange(2, n):
+            __ isPrime[i]:
                 count += 1
-        return count
+        r_ count

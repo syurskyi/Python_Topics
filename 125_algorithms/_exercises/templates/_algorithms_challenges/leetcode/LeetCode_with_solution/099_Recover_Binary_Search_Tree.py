@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def recoverTree(self, root):
     #     """
     #     :type root: TreeNode
@@ -42,26 +42,26 @@ class Solution(object):
 
 
     # https://discuss.leetcode.com/topic/3988/no-fancy-algorithm-just-simple-and-powerful-in-order-traversal/2
-    def __init__(self):
-        self.first = self.second = None
-        self.pre = TreeNode(-sys.maxint - 1)
+    ___ -(self):
+        first = second = N..
+        pre = TreeNode(-sys.maxint - 1)
 
 
-    def recoverTree(self, root):
-        self.traverse(root)
-        self.first.val, self.second.val = self.second.val, self.first.val
+    ___ recoverTree  root):
+        traverse(root)
+        first.val, second.val = second.val, first.val
 
-    def traverse(self, root):
-        if root is None:
-            return
-        self.traverse(root.left)
-        if self.pre.val >= root.val:
-            if self.first is None:
-                self.first = self.pre
-            if self.first is not None:
-                self.second = root
-        self.pre = root
-        self.traverse(root.right)
+    ___ traverse  root):
+        __ root is N..:
+            r_
+        traverse(root.left)
+        __ pre.val >= root.val:
+            __ first is N..:
+                first = pre
+            __ first is not N..:
+                second = root
+        pre = root
+        traverse(root.right)
 
 
 

@@ -5,7 +5,7 @@
 #         self.next = None
 
 
-class Solution(object):
+c_ Solution o..
     # def reverseList(self, head):
     #     """
     #     :type head: ListNode
@@ -60,12 +60,12 @@ class Solution(object):
     #         curr = next_temp
     #     return prev
 
-    def reverseList(self, head):
+    ___ reverseList  head):
         # recursion
         # simple recursively without extra space
-        if head is None or head.next is None:
-            return head
-        p = self.reverseList(head.next)
+        __ head is N.. or head.next is N..:
+            r_ head
+        p = reverseList(head.next)
         head.next.next = head
-        head.next = None
-        return p
+        head.next = N..
+        r_ p

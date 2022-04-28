@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def minTotalDistance(self, grid):
     #     """
     #     :type grid: List[List[int]]
@@ -23,35 +23,35 @@ class Solution(object):
     #         distance += abs(point - origin)
     #     return distance
 
-    def minDistance1D(self, points):
+    ___ minDistance1D  points):
         # two points
         distance = 0
-        i, j = 0, len(points) - 1
-        while i < j:
+        i, j = 0, l.. points) - 1
+        w.. i < j:
             distance += points[j] - points[i]
             i += 1
             j -= 1
-        return distance
+        r_ distance
 
-    def minTotalDistance(self, grid):
-        rows = self.collectRows(grid)
-        cols = self.collectCols(grid)
-        row = rows[len(rows) / 2]
-        col = cols[len(cols) / 2]
-        return self.minDistance1D(rows) + self.minDistance1D(cols)
+    ___ minTotalDistance  grid):
+        rows = collectRows(grid)
+        cols = collectCols(grid)
+        row = rows[l.. rows) / 2]
+        col = cols[l.. cols) / 2]
+        r_ minDistance1D(rows) + minDistance1D(cols)
 
-    def collectRows(self, grid):
+    ___ collectRows  grid):
         rows = []
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
-                if grid[i][j] == 1:
+        ___ i __ r.. l.. grid)):
+            ___ j __ r.. l.. grid[0])):
+                __ grid[i][j] __ 1:
                     rows.append(i)
-        return rows
+        r_ rows
 
-    def collectCols(self, grid):
+    ___ collectCols  grid):
         cols = []
-        for j in range(len(grid[0])):
-            for i in range(len(grid)):
-                if grid[i][j] == 1:
+        ___ j __ r.. l.. grid[0])):
+            ___ i __ r.. l.. grid)):
+                __ grid[i][j] __ 1:
                     cols.append(j)
-        return cols
+        r_ cols

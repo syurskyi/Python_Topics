@@ -1,23 +1,23 @@
-class Solution(object):
-    def ipToInt(self, ip):
+c_ Solution o..
+    ___ ipToInt  ip):
         ans = 0
-        for x in ip.split('.'):
+        ___ x __ ip.split('.'):
             ans = 256 * ans + int(x)
-        return ans
+        r_ ans
 
-    def intToIP(self, x):
-        return ".".join(str((x >> i) % 256)
-                        for i in (24, 16, 8, 0))
+    ___ intToIP  x):
+        r_ ".".join(str((x >> i) % 256)
+                        ___ i __ (24, 16, 8, 0))
 
-    def ipToCIDR(self, ip, n):
+    ___ ipToCIDR  ip, n):
         # Start value of IP
-        start = self.ipToInt(ip)
+        start = ipToInt(ip)
         ans = []
-        while n:
+        w.. n:
             # Last 1 of start or can start from 0
             mask = max(33 - (start & -start).bit_length(),
                        33 - n.bit_length())
-            ans.append(self.intToIP(start) + '/' + str(mask))
+            ans.append(intToIP(start) + '/' + str(mask))
             start += 1 << (32 - mask)
             n -= 1 << (32 - mask)
-        return ans
+        r_ ans

@@ -1,8 +1,8 @@
-class Solution(object):
-    def reverseString(self, s):
+c_ Solution o..
+    ___ reverseString  s):
         """
         :type s: str
         :rtype: str
         """
         # slice
-        return s[::-1]
+        r_ s[::-1]

@@ -5,32 +5,32 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def generateTrees(self, n):
+c_ Solution o..
+    ___ generateTrees  n):
         """
         :type n: int
         :rtype: List[TreeNode]
         """
-        if n == 0:
-            return []
-        return self.get_trees(1, n)
+        __ n __ 0:
+            r_ []
+        r_ get_trees(1, n)
 
-    def get_trees(self, start, end):
+    ___ get_trees  start, end):
         # recursive solve this problem
         res = []
-        if start > end:
-            res.append(None)
-            return res
-        for i in range(start, end + 1):
-            lefts = self.get_trees(start, i - 1)
-            rights = self.get_trees(i + 1, end)
-            for j in range(len(lefts)):
-                for k in range(len(rights)):
+        __ start > end:
+            res.append(N..)
+            r_ res
+        ___ i __ r.. start, end + 1):
+            lefts = get_trees(start, i - 1)
+            rights = get_trees(i + 1, end)
+            ___ j __ r.. l.. lefts)):
+                ___ k __ r.. l.. rights)):
                     # root point
                     root = TreeNode(i)
                     root.left = lefts[j]
                     root.right = rights[k]
                     res.append(root)
-        return res
+        r_ res
 
 

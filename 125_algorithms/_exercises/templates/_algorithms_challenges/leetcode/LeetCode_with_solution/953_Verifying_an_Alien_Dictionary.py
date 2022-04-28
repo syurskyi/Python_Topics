@@ -1,32 +1,32 @@
-class Solution(object):
-    def isAlienSorted(self, words, order):
+c_ Solution o..
+    ___ isAlienSorted  words, order):
         """
         :type words: List[str]
         :type order: str
         :rtype: bool
         """
-        order_map = {}
-        for i, v in enumerate(order):
+        order_map  # dict
+        ___ i, v __ e.. order):
             order_map[v] = i
 
-        def cmp_alien(x, y):
-            ls = min(len(x), len(y))
+        ___ cmp_alien(x, y):
+            ls = min(l.. x), l.. y))
             index = 0
-            while index < ls:
-                if x[index] != y[index]:
-                    return order_map[x[index]] - order_map[y[index]]
+            w.. index < ls:
+                __ x[index] != y[index]:
+                    r_ order_map[x[index]] - order_map[y[index]]
                 index += 1
-            return len(x) - len(y)
+            r_ l.. x) - l.. y)
         pos = 0
-        while pos + 1 < len(words):
-            if cmp_alien(words[pos], words[pos + 1]) > 0:
-                return False
+        w.. pos + 1 < l.. words):
+            __ cmp_alien(words[pos], words[pos + 1]) > 0:
+                r_ False
             pos += 1
-        return True
+        r_ True
 
 
-if __name__ == '__main__':
-    s = Solution()
+__ ____ __ ____
+    s  ?
     print s.isAlienSorted(["hello","leetcode"], "hlabcdefgijkmnopqrstuvwxyz")
     print s.isAlienSorted(["word","world","row"], "worldabcefghijkmnpqstuvxyz")
     print s.isAlienSorted(["apple","app"], "abcdefghijklmnopqrstuvwxyz")

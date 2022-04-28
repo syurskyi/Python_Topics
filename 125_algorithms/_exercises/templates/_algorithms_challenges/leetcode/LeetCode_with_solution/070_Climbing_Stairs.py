@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def climbStairs(self, n):
     #     """
     #     :type n: int
@@ -11,13 +11,13 @@ class Solution(object):
     #         dp[i] = dp[i - 2] + dp[i- 1]
     #     return dp[n]
 
-    def climbStairs(self, n):
-        if n <= 1:
-            return 1
+    ___ climbStairs  n):
+        __ n <= 1:
+            r_ 1
         dp = [1] * 2
-        for i in range(2, n + 1):
+        ___ i __ r.. 2, n + 1):
             dp[1], dp[0] = dp[1] + dp[0], dp[1]
-        return dp[1]
+        r_ dp[1]
 
 
 

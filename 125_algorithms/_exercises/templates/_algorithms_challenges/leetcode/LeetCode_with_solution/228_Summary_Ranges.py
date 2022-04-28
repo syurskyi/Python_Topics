@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def summaryRanges(self, nums):
     #     """
     #     :type nums: List[int]
@@ -23,15 +23,15 @@ class Solution(object):
     #         res.append("%d->%d" % (start, prev))
     #     return res
 
-    def summaryRanges(self, nums):
+    ___ summaryRanges  nums):
         res = []
-        start, ls = 0, len(nums)
-        for i in range(ls):
-            if i + 1 <  ls and nums[i + 1] == nums[i] + 1:
+        start, ls = 0, l.. nums)
+        ___ i __ r.. ls):
+            __ i + 1 <  ls and nums[i + 1] __ nums[i] + 1:
                 continue
-            if i == start:
+            __ i __ start:
                 res.append(str(nums[start]))
-            else:
+            ____
                 res.append("%d->%d" % (nums[start], nums[i]))
             start = i + 1
-        return res
+        r_ res

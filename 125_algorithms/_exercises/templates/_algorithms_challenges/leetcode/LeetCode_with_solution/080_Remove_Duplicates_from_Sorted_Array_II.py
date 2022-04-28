@@ -1,29 +1,29 @@
-class Solution:
-    def removeDuplicates(self, nums):
+c_ Solution:
+    ___ removeDuplicates  nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        if nums is None:
-            return 0
-        length = len(nums)
+        __ nums is N..:
+            r_ 0
+        length = l.. nums)
         result = 0
         i = j = 0
-        while i < length:
+        w.. i < length:
             j = i
-            while j < length:
-                if nums[j] != nums[i]:
+            w.. j < length:
+                __ nums[j] != nums[i]:
                     break
                 j += 1
-            if j-i > 2:
+            __ j-i > 2:
                 length -= j-i-2
-                for k in range(j-i-2):
+                ___ k __ r.. j-i-2):
                     del nums[i]
                 result += 2
                 j = i+2
-            else:
+            ____
                 result += (j-i)
             i = j
-        return result
+        r_ result
 
 

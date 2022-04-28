@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def closestValue(self, root, target):
     #     """
     #     :type root: TreeNode
@@ -36,11 +36,11 @@ class Solution(object):
     #         root = root.left if target < root.val else root.right
     #     return min(path, key=lambda x: abs(target - x))
 
-    def closestValue(self, root, target):
+    ___ closestValue  root, target):
         # compare kids' result with root
-        kid = root.left if target < root.val else root.right
-        if not kid:
-            return root.val
-        kid_min = self.closestValue(kid, target)
-        return min((kid_min, root.val), key=lambda x: abs(target - x))
+        kid = root.left __ target < root.val ____ root.right
+        __ not kid:
+            r_ root.val
+        kid_min = closestValue(kid, target)
+        r_ min((kid_min, root.val), key=lambda x: abs(target - x))
 

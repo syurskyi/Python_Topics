@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution o..
     # def hasCycle(self, head):
     #     """
     #     :type head: ListNode
@@ -36,16 +36,16 @@ class Solution(object):
     #         pos = pos.next
     #     return False
 
-    def hasCycle(self, head):
+    ___ hasCycle  head):
         # Two points
         try:
             fast = head.next.next
             slow = head.next
 
-            while fast != slow:
+            w.. fast != slow:
                 fast = fast.next.next
                 slow = slow.next
 
-            return True
+            r_ True
         except:
-            return False
+            r_ False

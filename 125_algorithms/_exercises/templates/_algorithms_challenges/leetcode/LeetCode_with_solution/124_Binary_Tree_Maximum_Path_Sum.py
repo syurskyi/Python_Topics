@@ -6,27 +6,27 @@
 #         self.right = None
 
 
-class Solution(object):
-    def __init__(self):
-        self.result = -2147483647
+c_ Solution o..
+    ___ -(self):
+        result = -2147483647
 
-    def maxPathSum(self, root):
+    ___ maxPathSum  root):
         """
         :type root: TreeNode
         :rtype: int
         """
         # return (root.val,left+root.val,right+root.val,left+right+root);
-        self.getNodeMaxValue(root)
-        return self.result
+        getNodeMaxValue(root)
+        r_ result
 
-    def getNodeMaxValue(self, node):
-        if node is None:
-            return 0
-        lresult = self.getNodeMaxValue(node.left)
-        rresult = self.getNodeMaxValue(node.right)
-        self.result = max(lresult + rresult + node.val, self.result)
+    ___ getNodeMaxValue  node):
+        __ node is N..:
+            r_ 0
+        lresult = getNodeMaxValue(node.left)
+        rresult = getNodeMaxValue(node.right)
+        result = max(lresult + rresult + node.val, result)
         ret = node.val + max(lresult, rresult)
         # if max left or right < 0 then return 0
-        if ret > 0:
-            return ret
-        return 0
+        __ ret > 0:
+            r_ ret
+        r_ 0

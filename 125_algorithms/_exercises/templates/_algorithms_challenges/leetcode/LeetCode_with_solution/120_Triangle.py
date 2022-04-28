@@ -1,18 +1,18 @@
-class Solution(object):
-    def minimumTotal(self, triangle):
+c_ Solution o..
+    ___ minimumTotal  triangle):
         """
         :type triangle: List[List[int]]
         :rtype: int
         """
-        if triangle is None or len(triangle) == 0:
-            return 0
-        ls = len(triangle)
+        __ triangle is N.. or l.. triangle) __ 0:
+            r_ 0
+        ls = l.. triangle)
         dp = [0] * ls
         dp[0] = triangle[0][0]
-        for i in range(1, ls):
+        ___ i __ r.. 1, ls):
             # note that dp should be updated in reversed order
             dp[i] = dp[i - 1] + triangle[i][i]
-            for j in reversed(range(1, i)):
+            ___ j __ reversed(r.. 1, i)):
                 dp[j] = min(dp[j - 1] + triangle[i][j], dp[j] + triangle[i][j])
             dp[0] = dp[0] + triangle[i][0]
-        return min(dp)
+        r_ min(dp)

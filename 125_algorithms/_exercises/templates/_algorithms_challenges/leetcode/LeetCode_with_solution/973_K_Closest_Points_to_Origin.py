@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def kClosest(self, points, K):
     #     """
     #     :type points: List[List[int]]
@@ -8,6 +8,6 @@ class Solution(object):
     #     # Sort
     #     return sorted(points, key=lambda x: x[0] ** 2 + x[1] ** 2)[:K]
     
-    def kClosest(self, points, K):
+    ___ kClosest  points, K):
         # K smallest heaq
-        return heapq.nsmallest(K, points, key=lambda x: x[0] ** 2 + x[1] ** 2)
+        r_ heapq.nsmallest(K, points, key=lambda x: x[0] ** 2 + x[1] ** 2)

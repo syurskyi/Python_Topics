@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
     #     sorted_index = {}
     #     # sort nums and store sorted position in hashmap
@@ -11,21 +11,21 @@ class Solution:
     #         res.append(sorted_index[value])
     #     return res
     
-    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+    ___ smallerNumbersThanCurrent  nums: List[int]) -> List[int]:
         count_list = [0] * 101
         # count numbers
-        for v in nums:
+        ___ v __ nums:
             count_list[v] += 1
         # compute numbers before current index
-        for i in range(1, 101):
+        ___ i __ r.. 1, 101):
             count_list[i] += count_list[i-1]
         res = []
-        for v in nums:
-            if v == 0:
+        ___ v __ nums:
+            __ v __ 0:
                 res.append(0)
-            else:
+            ____
                 res.append(count_list[v-1])
-        return res
+        r_ res
 
     # def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
     #     count = collections.Counter(nums)

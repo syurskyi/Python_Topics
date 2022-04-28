@@ -1,14 +1,14 @@
-class Solution(object):
-    def pivotIndex(self, nums):
+c_ Solution o..
+    ___ pivotIndex  nums):
         """
         :type nums: List[int]
         :rtype: int
         """
         totalsum = sum(nums)
         leftsum = 0
-        for i, v in enumerate(nums):
+        ___ i, v __ e.. nums):
             # leftsum == rightsum
-            if leftsum == totalsum - leftsum - v:
-                return i
+            __ leftsum __ totalsum - leftsum - v:
+                r_ i
             leftsum += v
-        return -1
+        r_ -1

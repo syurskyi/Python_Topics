@@ -1,28 +1,28 @@
-class Solution(object):
-    def searchRange(self, nums, target):
+c_ Solution o..
+    ___ searchRange  nums, target):
         """
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
         """
-        length = len(nums)
-        if length == 0:
-            return [-1, -1]
+        length = l.. nums)
+        __ length __ 0:
+            r_ [-1, -1]
         min = 0
         max = length - 1
-        while min <= max:
+        w.. min <= max:
             pos = (min + max) / 2
-            if nums[pos] > target:
+            __ nums[pos] > target:
                 max = pos - 1
-            elif nums[pos] < target:
+            ____ nums[pos] < target:
                 min = pos + 1
-            else:
+            ____
                 # when nums[pos] == target
                 # find the min and max
-                for i in range(min, max + 1):
-                    if nums[i] == target:
-                        if min < i and nums[min] != nums[i]:
+                ___ i __ r.. min, max + 1):
+                    __ nums[i] __ target:
+                        __ min < i and nums[min] != nums[i]:
                             min = i
                         max = i
-                return [min, max]
-        return [-1, -1]
+                r_ [min, max]
+        r_ [-1, -1]

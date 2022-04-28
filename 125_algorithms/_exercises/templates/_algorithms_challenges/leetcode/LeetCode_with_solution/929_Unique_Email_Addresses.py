@@ -1,11 +1,11 @@
-class Solution(object):
-    def numUniqueEmails(self, emails):
+c_ Solution o..
+    ___ numUniqueEmails  emails):
         """
         :type emails: List[str]
         :rtype: int
         """
         email_set = set()
-        for email in emails:
+        ___ email __ emails:
             elements = email.split('@')
             email_set.add(elements[0].split('+')[0].replace('.', '') + elements[1])
-        return len(email_set)
+        r_ l.. email_set)

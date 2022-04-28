@@ -1,19 +1,19 @@
-class Solution(object):
-    def candy(self, ratings):
+c_ Solution o..
+    ___ candy  ratings):
         """
         :type ratings: List[int]
         :rtype: int
         """
         # https://discuss.leetcode.com/topic/5243/a-simple-solution
-        if ratings is None or len(ratings) == 0:
-            return 0
-        ls = len(ratings)
+        __ ratings is N.. or l.. ratings) __ 0:
+            r_ 0
+        ls = l.. ratings)
         num = [1] * ls
-        for i in range(1, ls):
-            if ratings[i] > ratings[i - 1]:
+        ___ i __ r.. 1, ls):
+            __ ratings[i] > ratings[i - 1]:
                 num[i] = num[i - 1] + 1
-        for i in range(ls - 1, 0, -1):
-            if ratings[i - 1] > ratings[i]:
+        ___ i __ r.. ls - 1, 0, -1):
+            __ ratings[i - 1] > ratings[i]:
                 num[i - 1] = max(num[i] + 1, num[i - 1])
-        return sum(num)
+        r_ sum(num)
 

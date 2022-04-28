@@ -5,23 +5,23 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     # @param {TreeNode} root
     # @return {string[]}
-    def binaryTreePaths(self, root):
-        if root is None:
-            return []
+    ___ binaryTreePaths  root):
+        __ root is N..:
+            r_ []
         paths = []
-        self.get_path(paths, [], root)
-        res = ['->'.join(p) for p in paths ]
-        return res
+        get_path(paths, [], root)
+        res = ['->'.join(p) ___ p __ paths ]
+        r_ res
 
-    def get_path(self, result, path, node):
-        if node.left is None and node.right is None:
+    ___ get_path  result, path, node):
+        __ node.left is N.. and node.right is N..:
             result.append(path + [str(node.val)])
-            return
+            r_
         path = path + [str(node.val)]
-        if node.left is not None:
-            self.get_path(result, path, node.left)
-        if node.right is not None:
-            self.get_path(result, path, node.right)
+        __ node.left is not N..:
+            get_path(result, path, node.left)
+        __ node.right is not N..:
+            get_path(result, path, node.right)

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def addBinary(self, a, b):
     #     """
     #     :type a: str
@@ -42,19 +42,19 @@ class Solution(object):
     #         res = '1' + res
     #     return res
 
-    def addBinary(self, a, b):
+    ___ addBinary  a, b):
         res = ''
-        lsa, lsb = len(a), len(b)
+        lsa, lsb = l.. a), l.. b)
         pos, plus, curr = -1, 0, 0
         # plus a[pos], b[pos] and curr % 2
-        while (lsa + pos) >= 0 or (lsb + pos) >= 0:
-            if (lsa + pos) >= 0:
+        w.. (lsa + pos) >= 0 or (lsb + pos) >= 0:
+            __ (lsa + pos) >= 0:
                 curr += int(a[pos])
-            if (lsb + pos) >= 0:
+            __ (lsb + pos) >= 0:
                 curr += int(b[pos])
             res = str(curr % 2) + res
             curr //= 2
             pos -= 1
-        if curr == 1:
+        __ curr __ 1:
             res = '1' + res
-        return res
+        r_ res

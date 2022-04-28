@@ -6,7 +6,7 @@
 #         self.right = None
 
 
-class Solution(object):
+c_ Solution o..
     # def findLeaves(self, root):
     #     """
     #     :type root: TreeNode
@@ -35,16 +35,16 @@ class Solution(object):
     #             check_set.remove(node)
     #     return res
 
-    def findLeaves(self, root):
+    ___ findLeaves  root):
         res = []
-        self.findLeaves_helper(root, res)
-        return res
+        findLeaves_helper(root, res)
+        r_ res
 
-    def findLeaves_helper(self, node, res):
-        if node is None:
-            return -1
-        level = 1 + max(self.findLeaves_helper(node.left, res), self.findLeaves_helper(node.right, res))
-        if len(res) < level + 1:
+    ___ findLeaves_helper  node, res):
+        __ node is N..:
+            r_ -1
+        level = 1 + max(findLeaves_helper(node.left, res), findLeaves_helper(node.right, res))
+        __ l.. res) < level + 1:
             res.append([])
         res[level].append(node.val)
-        return level
+        r_ level

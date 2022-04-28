@@ -3,17 +3,17 @@
 # @return a bool
 # def isBadVersion(version):
 
-class Solution(object):
-    def firstBadVersion(self, n):
+c_ Solution o..
+    ___ firstBadVersion  n):
         """
         :type n: int
         :rtype: int
         """
         left, right= 1, n
-        while left < right:
+        w.. left < right:
             mid = (right + left) / 2
-            if isBadVersion(mid):
+            __ isBadVersion(mid):
                 right = mid
-            else:
+            ____
                 left = mid + 1
-        return left
+        r_ left

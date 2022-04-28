@@ -1,5 +1,5 @@
-class Solution(object):
-    def partition(self, s):
+c_ Solution o..
+    ___ partition  s):
         """
         :type s: str
         :rtype: List[List[str]]
@@ -7,22 +7,22 @@ class Solution(object):
         # https://discuss.leetcode.com/topic/6186/java-backtracking-solution/2
         result = []
         curr = []
-        self.recurPartition(result, curr, s, 0)
-        return result
+        recurPartition(result, curr, s, 0)
+        r_ result
 
-    def recurPartition(self, result, curr, s, start):
-        if start == len(s):
+    ___ recurPartition  result, curr, s, start):
+        __ start __ l.. s):
             result.append(list(curr))
-        for i in range(start, len(s)):
-            if self.isPalindrome(s, start, i):
+        ___ i __ r.. start, l.. s)):
+            __ isPalindrome(s, start, i):
                 curr.append(s[start:i + 1])
-                self.recurPartition(result, curr, s, i + 1)
+                recurPartition(result, curr, s, i + 1)
                 curr.pop()
 
-    def isPalindrome(self, s, begin, end):
-        while begin < end:
-            if s[begin] != s[end]:
-                return False
+    ___ isPalindrome  s, begin, end):
+        w.. begin < end:
+            __ s[begin] != s[end]:
+                r_ False
             begin += 1
             end -= 1
-        return True
+        r_ True

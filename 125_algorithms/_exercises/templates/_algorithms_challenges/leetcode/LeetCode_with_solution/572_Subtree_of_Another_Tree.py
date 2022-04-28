@@ -5,25 +5,25 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # https://leetcode.com/problems/subtree-of-another-tree/solution/
-    def isSubtree(self, s, t):
+    ___ isSubtree  s, t):
         """
         :type s: TreeNode
         :type t: TreeNode
         :rtype: bool
         """
-        s_res = self.preorder(s, True)
-        t_res = self.preorder(t, True)
-        return t_res in s_res
+        s_res = preorder(s, True)
+        t_res = preorder(t, True)
+        r_ t_res __ s_res
     
-    def preorder(self, root, isLeft):
-        if root is None:
-            if isLeft:
-                return "lnull"
-            else:
-                return "rnull"
-        return "#" + str(root.val) + " " + self.preorder(root.left, True) + " " + self.preorder(root.right, False)
+    ___ preorder  root, isLeft):
+        __ root is N..:
+            __ isLeft:
+                r_ "lnull"
+            ____
+                r_ "rnull"
+        r_ "#" + str(root.val) + " " + preorder(root.left, True) + " " + preorder(root.right, False)
 
     # def isSubtree(self, s, t):
     #     return self.traverse(s, t)

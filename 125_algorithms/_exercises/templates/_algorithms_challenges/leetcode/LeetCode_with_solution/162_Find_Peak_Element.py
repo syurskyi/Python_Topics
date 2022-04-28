@@ -5,15 +5,15 @@
 #         :rtype: int
 #         """
 
-class Solution(object):
-    def findPeakElement(self, nums):
+c_ Solution o..
+    ___ findPeakElement  nums):
         # https://leetcode.com/discuss/88467/tricky-problem-tricky-solution
         # note that num[-1] = num[n] = -∞
-        start, end = 0, len(nums) - 1
-        while start < end:
+        start, end = 0, l.. nums) - 1
+        w.. start < end:
             mid = (start + end) / 2
-            if nums[mid] < nums[mid+1]:
+            __ nums[mid] < nums[mid+1]:
                 start= mid + 1
-            else:
+            ____
                 end = mid
-        return start
+        r_ start

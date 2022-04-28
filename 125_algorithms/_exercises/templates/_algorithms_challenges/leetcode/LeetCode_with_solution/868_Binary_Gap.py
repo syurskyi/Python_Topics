@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
 
     # def binaryGap(self, n: int) -> int:
     #     # Store index
@@ -7,19 +7,19 @@ class Solution:
     #     return max(A[i+1] - A[i] for i in xrange(len(A) - 1))
 
 
-    def binaryGap(self, n: int) -> int:
+    ___ binaryGap  n: int) -> int:
         # one pass and store max
         current = 1
         last1 = -1
         out = 0
-        while n > 0:
-            if n % 2 == 1:
-                if last1 >= 1:
+        w.. n > 0:
+            __ n % 2 __ 1:
+                __ last1 >= 1:
                     out = max(out, current - last1)
                 last1 = current
             current += 1
             n = n // 2
-        return out
+        r_ out
     
     # def binaryGap(self, n: int) -> int:
     #     # one pass and store max

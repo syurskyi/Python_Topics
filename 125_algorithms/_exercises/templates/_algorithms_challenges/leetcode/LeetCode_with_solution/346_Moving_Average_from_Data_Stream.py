@@ -1,23 +1,23 @@
-class MovingAverage(object):
+c_ MovingAverage o..
 
-    def __init__(self, size):
+    ___ -  size):
         """
         Initialize your data structure here.
         :type size: int
         """
-        self.size = size
-        self.curr_range = []
+        size = size
+        curr_range = []
         
 
-    def next(self, val):
+    ___ next  val):
         """
         :type val: int
         :rtype: float
         """
-        if len(self.curr_range) == self.size:
-            self.curr_range.pop(0)
-        self.curr_range.append(val)
-        return sum(self.curr_range) * 1.0 / len(self.curr_range)
+        __ l.. curr_range) __ size:
+            curr_range.pop(0)
+        curr_range.append(val)
+        r_ sum(curr_range) * 1.0 / l.. curr_range)
         
 
 

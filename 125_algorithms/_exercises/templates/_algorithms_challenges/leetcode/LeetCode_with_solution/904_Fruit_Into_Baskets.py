@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def totalFruit(self, tree):
     #     """
     #     :type tree: List[int]
@@ -43,15 +43,15 @@ class Solution(object):
     #             break
     #     return ans
 
-    def totalFruit(self, tree):
+    ___ totalFruit  tree):
         ans = i = 0
         count = collections.Counter()
-        for j, x in enumerate(tree):
+        ___ j, x __ e.. tree):
             count[x] += 1
-            while len(count) >= 3:
+            w.. l.. count) >= 3:
                 count[tree[i]] -= 1
-                if count[tree[i]] == 0:
+                __ count[tree[i]] __ 0:
                     del count[tree[i]]
                 i += 1
             ans = max(ans, j - i + 1)
-        return ans
+        r_ ans

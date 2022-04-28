@@ -1,5 +1,5 @@
 import string
-class Solution(object):
+c_ Solution o..
     # def findLadders(self, beginWord, endWord, wordlist):
     #     """
     #     :type beginWord: str
@@ -50,60 +50,60 @@ class Solution(object):
     #     return paths
 
 
-    def findLadders(self, beginWord, endWord, wordlist):
+    ___ findLadders  beginWord, endWord, wordlist):
         # do not use single dfs or bfs, because both of them
         # try to get result in single direction, which check lots
         # of unnecessary branches
         # https://leetcode.com/discuss/67716/my-30ms-bidirectional-bfs-and-dfs-based-java-solution
         wordlist.discard(beginWord)
         wordlist.discard(endWord)
-        hash_map, res = {}, []
-        self.bfs(set([beginWord]), set([endWord]), wordlist, False, hash_map)
+        hash_map, res  # dict, []
+        bfs(set([beginWord]), set([endWord]), wordlist, False, hash_map)
         print hash_map
-        self.dfs(res, [beginWord], beginWord, endWord, hash_map)
-        return res
+        dfs(res, [beginWord], beginWord, endWord, hash_map)
+        r_ res
 
-    def bfs(self, forward, backward, wordlist, reverse, hash_map):
-        if len(forward) == 0 or len(backward) == 0:
-            return
-        if len(forward) > len(backward):
-            self.bfs(backward, forward, wordlist, not reverse, hash_map)
-            return
+    ___ bfs  forward, backward, wordlist, reverse, hash_map):
+        __ l.. forward) __ 0 or l.. backward) __ 0:
+            r_
+        __ l.. forward) > l.. backward):
+            bfs(backward, forward, wordlist, not reverse, hash_map)
+            r_
         is_connected = False
         next_level = set()
-        for word in forward:
-            for c in string.ascii_lowercase:
-                for index in range(len(word)):
+        ___ word __ forward:
+            ___ c __ string.ascii_lowercase:
+                ___ index __ r.. l.. word)):
                     neigh = word[:index] + c + word[index + 1:]
-                    if not reverse:
+                    __ not reverse:
                         key, value = word, neigh
-                    else:
+                    ____
                         key, value = neigh, word
-                    if neigh in backward:
+                    __ neigh __ backward:
                         hash_map[key] = hash_map.get(key, []) + [value]
                         is_connected = True
-                    if not is_connected and neigh in wordlist:
+                    __ not is_connected and neigh __ wordlist:
                         next_level.add(neigh)
                         hash_map[key] = hash_map.get(key, []) + [value]
                         wordlist.discard(neigh)
 
-        if not is_connected:
-            self.bfs(next_level, backward, wordlist, reverse, hash_map)
+        __ not is_connected:
+            bfs(next_level, backward, wordlist, reverse, hash_map)
 
-    def dfs(self, res, path, begin, end, hash_map):
-        if begin == end:
+    ___ dfs  res, path, begin, end, hash_map):
+        __ begin __ end:
             res.append(path)
-            return
+            r_
         try:
             next_step = hash_map[begin]
-            for word in next_step:
-                self.dfs(res, path + [word], word, end, hash_map)
+            ___ word __ next_step:
+                dfs(res, path + [word], word, end, hash_map)
         except KeyError:
             pass
 
 
-if __name__ == "__main__":
-    s = Solution()
+__ __name__ __ "__main__":
+    s  ?
     # print s.findLadders('hit', 'cog', set(["hot","dot","dog","lot","log"]))
     # print s.findLadders('a', 'b', set(['a', 'b', 'c']))
     # print s.findLadders('hot', 'dog', set(['hot', 'dog']))

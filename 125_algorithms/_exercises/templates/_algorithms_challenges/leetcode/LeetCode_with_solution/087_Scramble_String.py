@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     #https://discuss.leetcode.com/topic/20094/my-c-solutions-recursion-with-cache-dp-recursion-with-cache-and-pruning-with-explanation-4ms/2
     # def isScramble(self, s1, s2):
     #     """
@@ -26,27 +26,27 @@ class Solution(object):
     #             return True
     #     return False
 
-    def isScramble(self, s1, s2, memo={}):
+    ___ isScramble  s1, s2, memo={}):
         # recursive with memo
         # Check with sorted is fundamental, otherwise TLE
-        if len(s1) != len(s2) or sorted(s1) != sorted(s2):
-            return False
-        if len(s1) <= len(s2) <= 1:
-            return s1 == s2
-        if s1 == s2:
-            return True
-        if (s1, s2) in memo:
-            return memo[s1, s2]
-        n = len(s1)
-        for i in range(1, n):
-            a = self.isScramble(s1[:i], s2[:i], memo) and self.isScramble(s1[i:], s2[i:], memo)
-            if not a:
-                b = self.isScramble(s1[:i], s2[-i:], memo) and self.isScramble(s1[i:], s2[:-i], memo)
-            if a or b:
+        __ l.. s1) != l.. s2) or sorted(s1) != sorted(s2):
+            r_ False
+        __ l.. s1) <= l.. s2) <= 1:
+            r_ s1 __ s2
+        __ s1 __ s2:
+            r_ True
+        __ (s1, s2) __ memo:
+            r_ memo[s1, s2]
+        n = l.. s1)
+        ___ i __ r.. 1, n):
+            a = isScramble(s1[:i], s2[:i], memo) and isScramble(s1[i:], s2[i:], memo)
+            __ not a:
+                b = isScramble(s1[:i], s2[-i:], memo) and isScramble(s1[i:], s2[:-i], memo)
+            __ a or b:
                 memo[s1, s2] = True
-                return True
+                r_ True
         memo[s1, s2] = False
-        return False
+        r_ False
 
     # def isScramble(self, s1, s2):
     #     # dp TLE

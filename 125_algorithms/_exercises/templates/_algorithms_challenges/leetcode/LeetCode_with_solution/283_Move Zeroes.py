@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def moveZeroes(self, nums):
     #     """
     #     :type nums: List[int]
@@ -19,12 +19,12 @@ class Solution(object):
     #                 curr += 1
     #         pos += 1
 
-    def moveZeroes(self, nums):
+    ___ moveZeroes  nums):
         # O(n)
-        ls = len(nums)
+        ls = l.. nums)
         n_pos = 0
-        for i in range(ls):
-            if nums[i] != 0:
+        ___ i __ r.. ls):
+            __ nums[i] != 0:
                 temp = nums[n_pos]
                 nums[n_pos] = nums[i]
                 nums[i] = temp

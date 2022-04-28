@@ -1,11 +1,11 @@
-class Solution(object):
-    def nthUglyNumber(self, n):
+c_ Solution o..
+    ___ nthUglyNumber  n):
         """
         :type n: int
         :rtype: int
         """
-        if n <= 5:
-            return n
+        __ n <= 5:
+            r_ n
         dp = [0] * (n + 1)
         l1 = l2 = l3 = 1
         dp[1] = 1
@@ -13,19 +13,19 @@ class Solution(object):
         dp[3] = 3
         dp[4] = 4
         dp[5] = 5
-        for i in range(6, n + 1):
-            while dp[l1] * 2 <= dp[i - 1]:
+        ___ i __ r.. 6, n + 1):
+            w.. dp[l1] * 2 <= dp[i - 1]:
                 l1 += 1
-            while dp[l2] * 3 <= dp[i - 1]:
+            w.. dp[l2] * 3 <= dp[i - 1]:
                 l2 += 1
-            while dp[l3] * 5 <= dp[i - 1]:
+            w.. dp[l3] * 5 <= dp[i - 1]:
                 l3 += 1
             print l1, l2, l3
             dp[i] = min(dp[l1] * 2, dp[l2] * 3, dp[l3] * 5)
         # print dp
-        return dp[n]
+        r_ dp[n]
 
-if __name__ == '__main__':
+__ ____ __ ____
     # begin
-    s = Solution()
+    s  ?
     print s.nthUglyNumber(10)

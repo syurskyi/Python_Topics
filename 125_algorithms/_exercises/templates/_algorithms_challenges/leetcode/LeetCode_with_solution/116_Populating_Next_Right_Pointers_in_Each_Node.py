@@ -6,24 +6,24 @@
 #         self.right = None
 #         self.next = None
 
-class Solution(object):
-    def connect(self, root):
+c_ Solution o..
+    ___ connect  root):
         """
         :type root: TreeLinkNode
         :rtype: nothing
         """
-        if root is None:
-            return
+        __ root is N..:
+            r_
         nodes = [root]
-        while len(nodes) != 0:
+        w.. l.. nodes) != 0:
             next_step = []
-            last = None
-            for node in nodes:
-                if last is not None:
+            last = N..
+            ___ node __ nodes:
+                __ last is not N..:
                     last.next = node
-                if node.left is not None:
+                __ node.left is not N..:
                     next_step.append(node.left)
-                if node.right is not None:
+                __ node.right is not N..:
                     next_step.append(node.right)
                 last = node
             nodes = next_step

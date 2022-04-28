@@ -1,5 +1,5 @@
-class Solution(object):
-    def reverseVowels(self, s):
+c_ Solution o..
+    ___ reverseVowels  s):
         """
         :type s: str
         :rtype: str
@@ -8,17 +8,17 @@ class Solution(object):
         vowel = []
         res = []
         pos = -1
-        for index, value in enumerate(s):
-            if value in 'aeiouAEIOU':
+        ___ index, value __ e.. s):
+            __ value __ 'aeiouAEIOU':
                 str_index.append(-1)
                 vowel.append(value)
-            else:
+            ____
                 str_index.append(index)
-        for index in str_index:
-            if index < 0:
+        ___ index __ str_index:
+            __ index < 0:
                 res.append(vowel[pos])
                 pos -= 1
-            else:
+            ____
                 res.append(s[index])
-        return ''.join(res)
+        r_ ''.join(res)
 

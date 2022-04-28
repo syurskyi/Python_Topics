@@ -1,23 +1,23 @@
-class Solution(object):
-    def findCircleNum(self, M):
+c_ Solution o..
+    ___ findCircleNum  M):
         """
         :type M: List[List[int]]
         :rtype: int
         """
         # because
-        visited = [0] * len(M)
+        visited = [0] * l.. M)
         count = 0
-        for i in range(len(M)):
-            if visited[i] == 0:
-                self.dfs(M, visited, i)
+        ___ i __ r.. l.. M)):
+            __ visited[i] __ 0:
+                dfs(M, visited, i)
                 count += 1
-        return count
+        r_ count
 
-    def dfs(self, M, visited, i):
-        for j in range(len(M)):
-            if M[i][j] == 1 and visited[j] == 0:
+    ___ dfs  M, visited, i):
+        ___ j __ r.. l.. M)):
+            __ M[i][j] __ 1 and visited[j] __ 0:
                 visited[j] = 1
-                self.dfs(M, visited, j)
+                dfs(M, visited, j)
 
     # def findCircleNum(self, M):
     #     # BFS

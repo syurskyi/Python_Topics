@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # https://leetcode.com/problems/shortest-unsorted-continuous-subarray/solution/
     # def findUnsortedSubarray(self, nums):
     #     """
@@ -17,25 +17,25 @@ class Solution(object):
     #         return end - start + 1
     #     return 0
 
-    def findUnsortedSubarray(self, nums):
+    ___ findUnsortedSubarray  nums):
         """
         :type nums: List[int]
         :rtype: int
         """
         stack = []
-        l, r = len(nums), 0
-        for i in range(len(nums)):
-            while len(stack) != 0 and nums[stack[-1]] > nums[i]:
+        l, r = l.. nums), 0
+        ___ i __ r.. l.. nums)):
+            w.. l.. stack) != 0 and nums[stack[-1]] > nums[i]:
                 l = min(l, stack.pop())
             stack.append(i)
         stack = []
-        for i in range(len(nums) - 1, -1, -1):
-            while len(stack) != 0 and nums[stack[-1]] < nums[i]:
+        ___ i __ r.. l.. nums) - 1, -1, -1):
+            w.. l.. stack) != 0 and nums[stack[-1]] < nums[i]:
                 r = max(r, stack.pop())
             stack.append(i)
-        if r > l:
-            return r - l + 1
-        return 0
+        __ r > l:
+            r_ r - l + 1
+        r_ 0
 
     # def findUnsortedSubarray(self, nums):
     #     smin = 2 ** 31 -1

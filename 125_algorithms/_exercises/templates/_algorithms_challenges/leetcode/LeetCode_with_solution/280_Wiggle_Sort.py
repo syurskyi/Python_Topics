@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def wiggleSort(self, nums):
     #     """
     #     :type nums: List[int]
@@ -33,8 +33,8 @@ class Solution(object):
     #                 nums[i], nums[i + 1] = nums[i + 1], nums[i]
     #         less = not less
 
-    def wiggleSort(self, nums):
-        for i in range(len(nums) - 1):
-            if (i % 2 == 0 and nums[i] > nums[i + 1]) or\
-               (i % 2 == 1 and nums[i] < nums[i + 1]):
+    ___ wiggleSort  nums):
+        ___ i __ r.. l.. nums) - 1):
+            __ (i % 2 __ 0 and nums[i] > nums[i + 1]) or\
+               (i % 2 __ 1 and nums[i] < nums[i + 1]):
                 nums[i], nums[i + 1] = nums[i + 1], nums[i]

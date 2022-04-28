@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def searchBST(self, root, val):
     #     """
     #     :type root: TreeNode
@@ -22,12 +22,12 @@ class Solution(object):
     #     else:
     #         return self.searchBST(root.right, val)
 
-    def searchBST(self, root, val):
-        while root:
-            if root.val == val:
-                return root
-            elif root.val > val:
+    ___ searchBST  root, val):
+        w.. root:
+            __ root.val __ val:
+                r_ root
+            ____ root.val > val:
                 root = root.left
-            else:
+            ____
                 root = root.right
-        return root
+        r_ root

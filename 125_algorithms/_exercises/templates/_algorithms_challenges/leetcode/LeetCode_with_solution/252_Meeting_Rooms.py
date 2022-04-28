@@ -4,7 +4,7 @@
 #         self.start = s
 #         self.end = e
 
-class Solution(object):
+c_ Solution o..
     # def canAttendMeetings(self, intervals):
     #     """
     #     :type intervals: List[Interval]
@@ -28,10 +28,10 @@ class Solution(object):
     #             count -= 1
     #     return True
 
-    def canAttendMeetings(self, intervals):
+    ___ canAttendMeetings  intervals):
         intervals.sort(key=lambda x: x.start)
-        ls = len(intervals)
-        for i in range(ls - 1):
-            if intervals[i].end > intervals[i + 1].start:
-                return False
-        return True
+        ls = l.. intervals)
+        ___ i __ r.. ls - 1):
+            __ intervals[i].end > intervals[i + 1].start:
+                r_ False
+        r_ True

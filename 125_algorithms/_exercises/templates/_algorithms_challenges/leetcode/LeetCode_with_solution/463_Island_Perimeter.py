@@ -1,22 +1,22 @@
-class Solution(object):
-    def islandPerimeter(self, grid):
+c_ Solution o..
+    ___ islandPerimeter  grid):
         """
         :type grid: List[List[int]]
         :rtype: int
         """
         # https://leetcode.com/problems/island-perimeter/discuss/95001/clear-and-easy-java-solution
-        row_num = len(grid)
-        if row_num == 0 || len(grid[0]) == 0:
-            return 0
+        row_num = l.. grid)
+        __ row_num __ 0 || l.. grid[0]) __ 0:
+            r_ 0
         islands, overlaps = 0, 0
-        col_num = len(grid[0])
-        for i in range(row_num):
-            for j in range(col_num):
-                if (grid[i][j] == 1):
+        col_num = l.. grid[0])
+        ___ i __ r.. row_num):
+            ___ j __ r.. col_num):
+                __ (grid[i][j] __ 1):
                     islands += 1
                     # careful about right and down
-                    if (i < row_num - 1 && grid[i + 1][j] == 1):
+                    __ (i < row_num - 1 && grid[i + 1][j] __ 1):
                         overlaps += 1
-                    if (j < col_num - 1 && grid[i][j + 1] == 1):
+                    __ (j < col_num - 1 && grid[i][j + 1] __ 1):
                         overlaps += 1
-        return islands * 4 - overlaps * 2
+        r_ islands * 4 - overlaps * 2

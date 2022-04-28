@@ -5,20 +5,20 @@ Morse_tab = [".-","-...","-.-.",
              "...","-","..-","...-",".--",
              "-..-","-.--","--.."]
 
-class Solution(object):
+c_ Solution o..
     # https://leetcode.com/problems/unique-morse-code-words/solution/
-    def uniqueMorseRepresentations(self, words):
+    ___ uniqueMorseRepresentations  words):
         """
         :type words: List[str]
         :rtype: int
         """
-        if len(words) == 0:
-            return 0
+        __ l.. words) __ 0:
+            r_ 0
         ans_set = set()
-        for word in words:
+        ___ word __ words:
             morsed = ""
-            for c in word:
-                morsed += Morse_tab[ord(c) - ord('a')]
+            ___ c __ word:
+                morsed += Morse_tab[o.. c) - o.. 'a')]
             
             ans_set.add(morsed)
-        return len(ans_set)
+        r_ l.. ans_set)

@@ -1,30 +1,30 @@
-class Solution(object):
-    def groupStrings(self, strings):
+c_ Solution o..
+    ___ groupStrings  strings):
         """
         :type strings: List[str]
         :rtype: List[List[str]]
         """
-        dic = {}
-        for s in strings:
-            key = self.hashCode(s)
+        dic  # dict
+        ___ s __ strings:
+            key = hashCode(s)
             try:
                 dic[key].append(s)
             except KeyError:
                 dic[key] = [s]
-        return dic.values()
+        r_ dic.values()
 
-    def hashCode(self, string):
-        if string is None or len(string) == 0:
-            return ''
-        if len(string) == 1:
-            return 'a'
-        step = abs(ord(string[0]) - ord('a'))
-        if step == 0:
-            return string
+    ___ hashCode  string):
+        __ string is N.. or l.. string) __ 0:
+            r_ ''
+        __ l.. string) __ 1:
+            r_ 'a'
+        step = abs(o.. string[0]) - o.. 'a'))
+        __ step __ 0:
+            r_ string
         key = 'a'
-        for ch in string[1:]:
-            curr = ord(ch) - step
-            if ord(ch) - step < ord('a'):
+        ___ ch __ string[1:]:
+            curr = o.. ch) - step
+            __ o.. ch) - step < o.. 'a'):
                 curr += 26
             key += chr(curr)
-        return key
+        r_ key

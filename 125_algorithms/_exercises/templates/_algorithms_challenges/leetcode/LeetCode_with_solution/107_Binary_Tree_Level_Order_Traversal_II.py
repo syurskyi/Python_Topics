@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def levelOrderBottom(self, root):
     #     """
     #     :type root: TreeNode
@@ -27,21 +27,21 @@ class Solution(object):
     #     res[depth].append(root.val)
     #     self.get_level(res, root.left, depth + 1)
     #     self.get_level(res, root.right, depth + 1)
-    def levelOrderBottom(self, root):
-        if root is None:
-            return []
+    ___ levelOrderBottom  root):
+        __ root is N..:
+            r_ []
         # use stack
         stack = [[root]]
         res = []
-        while len(stack) > 0:
+        w.. l.. stack) > 0:
             top = stack.pop()
-            res.insert(0, [t.val for t in top])
+            res.insert(0, [t.val ___ t __ top])
             temp = []
-            for node in top:
-                if node.left is not None:
+            ___ node __ top:
+                __ node.left is not N..:
                     temp.append(node.left)
-                if node.right is not None:
+                __ node.right is not N..:
                     temp.append(node.right)
-            if len(temp) > 0:
+            __ l.. temp) > 0:
                 stack.append(temp)
-        return res
+        r_ res

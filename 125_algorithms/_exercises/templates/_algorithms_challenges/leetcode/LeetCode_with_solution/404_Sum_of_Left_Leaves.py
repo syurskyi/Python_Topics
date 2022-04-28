@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution o..
     # def sumOfLeftLeaves(self, root):
     #     """
     #     :type root: TreeNode
@@ -18,15 +18,15 @@ class Solution(object):
     #             return root.left.val + self.sumOfLeftLeaves(root.right)
     #     return self.sumOfLeftLeaves(root.left) + self.sumOfLeftLeaves(root.right)
 
-    def sumOfLeftLeaves(self, root):
+    ___ sumOfLeftLeaves  root):
         stack = [root]
         res = 0
-        while len(stack) > 0:
+        w.. l.. stack) > 0:
             curr = stack.pop(0)
-            if curr is not None:
-                if curr.left is not None:
-                    if curr.left.left is None and curr.left.right is None:
+            __ curr is not N..:
+                __ curr.left is not N..:
+                    __ curr.left.left is N.. and curr.left.right is N..:
                         res += curr.left.val
                 stack.insert(0, curr.right)
                 stack.insert(0, curr.left)
-        return res
+        r_ res

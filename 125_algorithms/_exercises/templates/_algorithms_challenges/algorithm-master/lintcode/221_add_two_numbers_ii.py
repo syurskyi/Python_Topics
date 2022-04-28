@@ -24,7 +24,7 @@ c_ Solution:
         a rev_list(a)
         b rev_list(b)
 
-        dummy tail ListNode(0)
+        dummy tail ? 0
         carry 0
 
         w.... a a.. b:

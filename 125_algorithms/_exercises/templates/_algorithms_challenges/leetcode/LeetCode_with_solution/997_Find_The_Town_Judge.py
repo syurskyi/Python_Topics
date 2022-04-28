@@ -1,21 +1,21 @@
-class Solution:
-    def findJudge(self, N: int, trust: List[List[int]]) -> int:
-        if N==1:
-            return 1
+c_ Solution:
+    ___ findJudge  N: int, trust: List[List[int]]) -> int:
+        __ N__1:
+            r_ 1
         d1={}
         d2={}
-        for i, j in trust:
-            if j in d1:
+        ___ i, j __ trust:
+            __ j __ d1:
                 d1[j]+=1
-            else:
+            ____
                 d1[j]=1
-            if i in d2:
+            __ i __ d2:
                 d2[i]+=1
-            else:
+            ____
                 d2[i]=1
-        for i,j in d1.items():
-            if j==N-1:
-                if i not in d2:
-                    return i
-        return -1
+        ___ i,j __ d1.items():
+            __ j__N-1:
+                __ i not __ d2:
+                    r_ i
+        r_ -1
                     

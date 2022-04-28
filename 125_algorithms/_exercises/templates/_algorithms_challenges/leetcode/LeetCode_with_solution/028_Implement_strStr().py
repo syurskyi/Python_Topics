@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def strStr(self, haystack, needle):
     #     """
     #     :type haystack: str
@@ -37,34 +37,34 @@ class Solution(object):
 
     # KMP
     # https://discuss.leetcode.com/topic/3576/accepted-kmp-solution-in-java-for-reference/2
-    def strStr(self, haystack, needle):
-        lsh, lsn = len(haystack), len(needle)
-        if lsn == 0:
-            return 0
-        next = self.makeNext(needle)
+    ___ strStr  haystack, needle):
+        lsh, lsn = l.. haystack), l.. needle)
+        __ lsn __ 0:
+            r_ 0
+        next = makeNext(needle)
         i = j = 0
-        while i < lsh:
-            if j == -1 or haystack[i] == needle[j]:
+        w.. i < lsh:
+            __ j __ -1 or haystack[i] __ needle[j]:
                 i += 1
                 j += 1
-                if j == lsn:
-                    return i - lsn
-            if i < lsh and haystack[i] != needle[j]:
+                __ j __ lsn:
+                    r_ i - lsn
+            __ i < lsh and haystack[i] != needle[j]:
                 j = next[j]
-        return -1
+        r_ -1
 
-    def makeNext(self, needle):
-        ls = len(needle)
+    ___ makeNext  needle):
+        ls = l.. needle)
         next = [0] * ls
         next[0], i, j = -1, 0, -1
-        while i < ls - 1:
-            if j == -1 or needle[i] == needle[j]:
+        w.. i < ls - 1:
+            __ j __ -1 or needle[i] __ needle[j]:
                 next[i + 1] = j + 1
-                if needle[i + 1] == needle[j + 1]:
+                __ needle[i + 1] __ needle[j + 1]:
                     next[i + 1] = next[j + 1]
                 i += 1
                 j += 1
-            if needle[i] != needle[j]:
+            __ needle[i] != needle[j]:
                 j = next[j]
-        return next
+        r_ next
 

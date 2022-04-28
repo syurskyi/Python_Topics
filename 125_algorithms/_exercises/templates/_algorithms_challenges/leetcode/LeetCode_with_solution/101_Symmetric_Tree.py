@@ -5,23 +5,23 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-    def isSymmetric(self, root):
+c_ Solution o..
+    ___ isSymmetric  root):
         """
         :type root: TreeNode
         :rtype: bool
         """
-        if root is None:
-            return True
-        return self.mirrorVisit(root.left, root.right)
+        __ root is N..:
+            r_ True
+        r_ mirrorVisit(root.left, root.right)
 
-    def mirrorVisit(self, left, right):
-        if left is None and right is None:
-            return True
+    ___ mirrorVisit  left, right):
+        __ left is N.. and right is N..:
+            r_ True
         try:
-            if left.val == right.val:
-                if self.mirrorVisit(left.left, right.right) and self.mirrorVisit(left.right, right.left):
-                    return True
-            return False
+            __ left.val __ right.val:
+                __ mirrorVisit(left.left, right.right) and mirrorVisit(left.right, right.left):
+                    r_ True
+            r_ False
         except:
-            return False
+            r_ False

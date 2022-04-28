@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
     # def groupAnagrams(self, strs):
     #     """
     #     :type strs: List[str]
@@ -25,21 +25,21 @@ class Solution(object):
     #         table[index] += 1
     #     return str(table)
 
-    def groupAnagrams(self, strs):
-        strs.sort()
-        hash = {}
-        for s in strs:
-            key = self.hash_key(s)
+    ___ groupAnagrams  strs):
+        strs.s..
+        hash  # dict
+        ___ s __ strs:
+            key = hash_key(s)
             try:
                 hash[key].append(s)
             except KeyError:
                 hash[key] = [s]
-        return hash.values()
+        r_ hash.values()
 
-    def hash_key(self, s):
+    ___ hash_key  s):
         # hash string with 26 length array
         table = [0] * 26
-        for ch in s:
-            index = ord(ch) - ord('a')
+        ___ ch __ s:
+            index = o.. ch) - o.. 'a')
             table[index] += 1
-        return str(table)
+        r_ str(table)

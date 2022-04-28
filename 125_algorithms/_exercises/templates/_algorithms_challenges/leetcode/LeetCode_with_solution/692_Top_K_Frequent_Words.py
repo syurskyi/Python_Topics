@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution o..
 #     def topKFrequent(self, words, k):
 #         """
 #         :type words: List[str]
@@ -20,10 +20,10 @@ class Solution(object):
     #     candidates.sort(key = lambda w: (-count[w], w))
     #     return candidates[:k]
 
-    def topKFrequent(self, words, k):
+    ___ topKFrequent  words, k):
         count = collections.Counter(words)
         # Note that python heapq only support min heap
         # So, we can make the value negative to create a max heap
-        heap = [(-freq, word) for word, freq in count.items()]
+        heap = [(-freq, word) ___ word, freq __ count.items()]
         heapq.heapify(heap)
-        return [heapq.heappop(heap)[1] for _ in xrange(k)]
+        r_ [heapq.heappop(heap)[1] ___ _ __ xrange(k)]

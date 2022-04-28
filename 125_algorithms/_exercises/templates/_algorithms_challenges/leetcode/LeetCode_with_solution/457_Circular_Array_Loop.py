@@ -1,29 +1,29 @@
-class Solution:
-    def circularArrayLoop(self, nums: List[int]) -> bool:
-        for i in range(len(nums)):
-            if nums[i] == 0:
+c_ Solution:
+    ___ circularArrayLoop  nums: List[int]) -> bool:
+        ___ i __ r.. l.. nums)):
+            __ nums[i] __ 0:
                 continue
             
             # if slow and fast pointers collide, then there exists a loop
             slow = i
-            fast = self.index(nums, slow)
-            while nums[slow] * nums[fast] > 0 and nums[slow] * nums[self.index(nums, fast)] > 0:
-                if slow == fast and fast != self.index(nums, fast):
-                    return True
-                elif slow == fast and fast == self.index(nums, fast):
+            fast = index(nums, slow)
+            w.. nums[slow] * nums[fast] > 0 and nums[slow] * nums[index(nums, fast)] > 0:
+                __ slow __ fast and fast != index(nums, fast):
+                    r_ True
+                ____ slow __ fast and fast __ index(nums, fast):
                     break
-                slow = self.index(nums, slow)
-                fast = self.index(nums, self.index(nums, fast))
+                slow = index(nums, slow)
+                fast = index(nums, index(nums, fast))
                 
             # set path to all 0s since it doesn't work
             runner = i
             value = nums[runner]
-            while nums[runner] * value > 0:
-                temp = self.index(nums, runner)
+            w.. nums[runner] * value > 0:
+                temp = index(nums, runner)
                 nums[runner] = 0
                 runner = temp
-        return False
+        r_ False
             
-    def index(self, nums, index):
-        length = len(nums)
-        return (index + nums[index] + length) % length
+    ___ index  nums, index):
+        length = l.. nums)
+        r_ (index + nums[index] + length) % length

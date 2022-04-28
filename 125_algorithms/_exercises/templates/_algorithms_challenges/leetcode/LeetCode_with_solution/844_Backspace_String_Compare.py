@@ -1,25 +1,25 @@
-class Solution(object):
-    def backspaceCompare(self, S, T):
+c_ Solution o..
+    ___ backspaceCompare  S, T):
         """
         :type S: str
         :type T: str
         :rtype: bool
         """
-        if S == T:
-            return True
+        __ S __ T:
+            r_ True
         s_stack = []
         t_stack = []
-        for c in S:
-            if c != '#':
+        ___ c __ S:
+            __ c != '#':
                 s_stack.append(c)
-            elif len(s_stack) != 0:
+            ____ l.. s_stack) != 0:
                 s_stack.pop(-1)
-        for c in T:
-            if c != '#':
+        ___ c __ T:
+            __ c != '#':
                 t_stack.append(c)
-            elif len(t_stack) != 0:
+            ____ l.. t_stack) != 0:
                 t_stack.pop(-1)
-        return ''.join(s_stack) == ''.join(t_stack)
+        r_ ''.join(s_stack) __ ''.join(t_stack)
 
     # def backspaceCompare(self, S, T):
     #     # https://leetcode.com/problems/backspace-string-compare/discuss/135603/C%2B%2BJavaPython-O(N)-time-and-O(1)-space

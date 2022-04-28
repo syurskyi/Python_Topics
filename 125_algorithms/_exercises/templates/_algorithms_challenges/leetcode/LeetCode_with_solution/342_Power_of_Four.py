@@ -1,5 +1,5 @@
-class Solution(object):
-    def isPowerOfFour(self, num):
+c_ Solution o..
+    ___ isPowerOfFour  num):
         """
         :type num: int
         :rtype: bool
@@ -8,4 +8,4 @@ class Solution(object):
         # bin(4**1) '0b100'
         # bin(4**2) '0b10000'
         # bin(4**3) '0b1000000'
-        return num > 0 and num & (num-1) == 0 and len(bin(num)[3:]) % 2 == 0
+        r_ num > 0 and num & (num-1) __ 0 and l.. bin(num)[3:]) % 2 __ 0

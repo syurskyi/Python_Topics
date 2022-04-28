@@ -1,27 +1,27 @@
-class Solution:
-    def countAndSay(self, n):
+c_ Solution:
+    ___ countAndSay  n):
         """
         :type n: int
         :rtype: str
         """
-        if n == 1:
-            return '1'
+        __ n __ 1:
+            r_ '1'
         x = '1'
-        while n > 1:
+        w.. n > 1:
             # each round, read itself
-            x = self.count(x)
+            x = count(x)
             n -= 1
-        return x
+        r_ x
 
-    def count(self, x):
+    ___ count  x):
         m = list(x)
         res = []
-        m.append(None)
+        m.append(N..)
         i , j = 0 , 0
-        while i < len(m) - 1:
+        w.. i < l.. m) - 1:
             j += 1
-            if m[j] != m[i]:
+            __ m[j] != m[i]:
                 # note j - i is the count of m[i]
                 res += [j - i, m[i]]
                 i = j
-        return ''.join(str(s) for s in res)
+        r_ ''.join(str(s) ___ s __ res)

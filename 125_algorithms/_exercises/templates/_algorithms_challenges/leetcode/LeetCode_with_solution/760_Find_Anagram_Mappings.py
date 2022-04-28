@@ -1,14 +1,14 @@
-class Solution(object):
-    def anagramMappings(self, A, B):
+c_ Solution o..
+    ___ anagramMappings  A, B):
         """
         :type A: List[int]
         :type B: List[int]
         :rtype: List[int]
         """
-        val_index = {}
+        val_index  # dict
         ans = []
-        for i, n in enumerate(B):
+        ___ i, n __ e.. B):
             val_index[n] = i
-        for n in A:
+        ___ n __ A:
             ans.append(val_index[n])
-        return ans
+        r_ ans

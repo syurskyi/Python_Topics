@@ -1,7 +1,7 @@
-class Solution(object):
-    def canWinNim(self, n):
+c_ Solution o..
+    ___ canWinNim  n):
         """
         :type n: int
         :rtype: bool
         """
-        return n % 4 != 0
+        r_ n % 4 != 0
