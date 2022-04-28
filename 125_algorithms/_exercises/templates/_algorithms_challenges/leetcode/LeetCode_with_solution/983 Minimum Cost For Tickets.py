@@ -84,7 +84,7 @@ c_ Solution:
         Iterate throughout the year is more elegant
         Need buffer day
         """
-        n l..(days)
+        n l.. ?
         F [f__("inf") ___ _ __ r..(n)]
         F[-1] costs[0]
         ___ i __ r..(n-2, -1, -1
