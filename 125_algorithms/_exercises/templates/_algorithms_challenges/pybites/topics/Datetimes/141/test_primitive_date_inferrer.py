@@ -1,5 +1,5 @@
 _______ p__
-____ primitive_date_inferrer _______ get_dates, InfDateFmtError
+____ ? _______ ? ?
 
 
 ___ test_tie
@@ -21,7 +21,7 @@ ___ test_tie
         "03/10/02",
     ]
     w__ p__.r..(InfDateFmtError
-        get_dates(dates)
+        ? ?
 
 ___ test_too_many_nonparsable
     """{<DateFormat.MMDDYY: 1>: 2,  <DateFormat.NONPARSABLE: -999>: 5,
@@ -42,7 +42,7 @@ ___ test_too_many_nonparsable
         "85/08/09",
     ]
     w__ p__.r..(InfDateFmtError
-        get_dates(dates)
+        ? ?
 
 ___ test_mmddyy
     """ {<DateFormat.MMDDYY: 1>: 7, <DateFormat.DDMMYY: 0>: 5,
@@ -77,7 +77,7 @@ ___ test_mmddyy
         "Invalid",
         "Invalid",
     ]
-    ... get_dates(dates) __ results
+    ... ? ? __ ?
 
 ___ test_yymmdd
     """ {<DateFormat.YYMMDD: 2>: 7, <DateFormat.NONPARSABLE: -999>: 1,
@@ -111,7 +111,7 @@ ___ test_yymmdd
         "1971-04-19",
         "1985-08-09",
     ]
-    ... get_dates(dates) __ results
+    ... ? ? __ ?
 
 ___ test_ddmmyy
     """ {<DateFormat.MMDDYY: 1>: 7, <DateFormat.DDMMYY: 0>: 9,
@@ -145,7 +145,7 @@ ___ test_ddmmyy
         "2024-11-30",
         "2051-01-08",
     ]
-    ... get_dates(dates) __ results
+    ... ? ? __ ?
 
 ___ test_different_enum
     """ Modified enum - now it supports 4 different time formats.
@@ -162,12 +162,12 @@ ___ test_different_enum
         NONPARSABLE -999
 
         ??
-        ___ get_d_parse_formats(cls, idx_ N..
-            d_parse_formats ["_d.%m._Y", "_d/%m/%y", "%y/%m/_d", "%m/_d/%y"]
+        ___ get_d_parse_formats cls idx_ N..
+            d_parse_formats _d._m._Y  _d/_m/_y _y/_m/_d _m/_d/_y
             __ idx __ N..
-                r.. d_parse_formats
-            __ 0 <_ idx <_ l..(d_parse_formats
-                r.. d_parse_formats[idx]
+                r.. ?
+            __ 0 <_ idx <_ l.. ?
+                r.. ?[idx]
             r.. V...
 
     # override the enum in the tested code module
@@ -201,4 +201,4 @@ ___ test_different_enum
         "Invalid",
         "1951-01-08",
     ]
-    ... get_dates(dates) __ results
+    ... ? ? __ ?

@@ -10,7 +10,7 @@ c_ DateFormat(E..
     NONPARSABLE -999
 
     ??
-    ___ get_d_parse_formats(cls, val_ N..
+    ___ get_d_parse_formats cls val_ N..
         """ Arg:
         val(int | None) enum member value
         Returns:
@@ -18,41 +18,41 @@ c_ DateFormat(E..
             for all supported date formats in this enum
         2. for val=n an explicit format string for a given enum member value
         """
-        d_parse_formats ["_d/%m/%y", "%m/_d/%y", "%y/%m/_d"]
+        d_parse_formats _d/_m/_y _m/_d/_y _y/_m/_d
         __ val __ N..
-            r.. d_parse_formats
-        __ 0 <_ val <_ l..(d_parse_formats
-            r.. d_parse_formats[val]
+            r.. ?
+        __ 0 <_ val <_ l.. ?
+            r.. ? ?
         r.. V...
 
 
-c_ InfDateFmtError(E..
+c_ InfDateFmtError E..
     """custom exception when it is not possible to infer a date format
     e.g. too many NONPARSABLE or a tie """
     p..
 
 
-___ _maybe_DateFormats(date_str
+___ _maybe_DateFormats date_str
     """ Args:
     date_str (str) string representing a date in unknown format
     Returns:
     a list of enum members, where each member represents
     a possible date format for the input date_str
     """
-    d_parse_formats DateFormat.get_d_parse_formats()
+    d_parse_formats ?.g..
     maybe_formats    # list
-    ___ idx, d_parse_fmt __ e..(d_parse_formats
+    ___ idx, d_parse_fmt __ e.. ?
         ___
-            _parsed_date d__.s..(date_str, d_parse_fmt) # pylint: disable=W0612
-            maybe_formats.a..(DateFormat(idx
+            _parsed_date d__.s.. ? ? # pylint: disable=W0612
+            ?.a.. ? i..
         ______ V..
             p..
-    __ l..(maybe_formats) __ 0:
-        maybe_formats.a..(DateFormat.NONPARSABLE)
-    r.. maybe_formats
+    __ l.. ? __ 0:
+        ?.a.. ?.N..
+    r.. ?
 
 
-___ get_dates(dates
+___ get_dates dates
     """ Args:
     dates (list) list of date strings
     where each list item represents a date in unknown format
