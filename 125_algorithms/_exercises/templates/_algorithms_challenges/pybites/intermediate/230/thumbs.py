@@ -8,7 +8,7 @@ c_ Thumbs:
             r.. V...("Specify a number")
 
         __ (other > 0 a.. other <_ 3) o. (other >_ -3 a.. other < 0
-            r.. f"{(THUMBS_UP __ other > 0 ____ THUMBS_DOWN) * a..(other)}"
+            r.. _* THUMBS_UP __ other > 0 ____ THUMBS_DOWN) * a..(other)}"
 
         r.. f"{THUMBS_UP __ other > 0 ____ THUMBS_DOWN} ({a..(other)}x)"
 
