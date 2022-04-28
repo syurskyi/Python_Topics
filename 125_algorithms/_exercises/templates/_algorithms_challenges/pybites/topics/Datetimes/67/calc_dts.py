@@ -1,4 +1,4 @@
-____ d__ _______ date, t..
+____ d__ _______ d__, t..
 
 start_100days date(2017, 3, 30)
 pybites_founded date(2016, 12, 19)

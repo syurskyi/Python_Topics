@@ -2,7 +2,7 @@ ____ dataclasses _______ dataclass
 
 _______ dateutil
 ____ dateutil.parser _______ p..
-____ dateutil.relativedelta _______ relativedelta
+____ d__.r.. _______ r..
 
 @dataclass
 c_ Actor:

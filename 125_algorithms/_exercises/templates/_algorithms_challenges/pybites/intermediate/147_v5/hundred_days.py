@@ -1,6 +1,6 @@
-____ d__ _______ date
+____ d__ _______ d__
 
-____ dateutil.relativedelta _______ relativedelta
+____ d__.r.. _______ r..
 
 TODAY date y.._2018,  m.._11,  d.._29)
 FRIDAY 4

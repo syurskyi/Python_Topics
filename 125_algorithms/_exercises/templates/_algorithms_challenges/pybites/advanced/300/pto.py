@@ -1,6 +1,6 @@
 _______ ca__
-____ d__ _______ date
-____ dateutil.relativedelta _______ relativedelta,FR,MO
+____ d__ _______ d__
+____ d__.r.. _______ r..,FR,MO
 
 
 ERROR_MSG (

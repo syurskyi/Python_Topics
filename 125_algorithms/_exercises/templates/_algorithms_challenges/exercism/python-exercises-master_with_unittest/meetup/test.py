@@ -1,6 +1,6 @@
 _______ unittest
 
-____ d__ _______ date
+____ d__ _______ d__
 
 ____ meetup _______ meetup_day
 

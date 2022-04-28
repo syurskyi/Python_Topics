@@ -1,13 +1,13 @@
-____ d__ _______ date, d__
+____ d__ _______ d__, d__
 
-____ dateutil.relativedelta _______ relativedelta
+____ d__.r.. _______ r..
 
-START_DATE date(2018, 11, 1)
+START_DATE ? 2018, 11, 1
 MIN_DAYS_TO_COUNT_AS_MONTH 10
 MONTHS_PER_YEAR 12
 
 
-___ calc_months_passed(year, month, day
+___ calc_months_passed year month day
     """Construct a date object from the passed in arguments.
        If this fails due to bad inputs reraise the exception.
        Also if the new date is < START_DATE raise a ValueError.
@@ -31,17 +31,17 @@ ___ calc_months_passed(year, month, day
     """
     ___
         in_date d__ y.._year, m.._month, d.._day)
-        __ date(year, month, day) < START_DATE:
+        __ date year month day) < START_DATE:
             r.. V...
         months_passed 0
-        difference_dt relativedelta(date(year, month, day), START_DATE)
+        difference_dt relativedelta(date year month day), START_DATE)
         #print(difference_dt.years, difference_dt.months, difference_dt.days)
-        __ difference_dt.days >_ MIN_DAYS_TO_COUNT_AS_MONTH:
+        __ difference_dt.days >_ M..
             months_passed difference_dt.months + 1
         ____
             months_passed difference_dt.months
         __ difference_dt.years > 0
-            months_passed += difference_dt.years * MONTHS_PER_YEAR
+            months_passed += difference_dt.years * M..
         r.. months_passed
     ______ V..
         r.. V...

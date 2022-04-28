@@ -1,4 +1,4 @@
-____ d__ _______ date, t..
+____ d__ _______ d__, t..
 
 ____ hundred_days _______ get_hundred_weekdays, TODAY
 

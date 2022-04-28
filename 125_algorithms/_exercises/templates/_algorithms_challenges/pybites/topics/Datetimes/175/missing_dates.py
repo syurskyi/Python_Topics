@@ -1,4 +1,4 @@
-____ d__ _______ date, t..
+____ d__ _______ d__, t..
 ____ r__ _______ shuffle
 
 ___ get_missing_dates(dates

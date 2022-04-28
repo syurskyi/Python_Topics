@@ -1,4 +1,4 @@
-____ d__ _______ date, t..
+____ d__ _______ d__, t..
 
 ___ tomorrow(input_dt_ N..
     __ n.. input_dt:

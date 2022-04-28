@@ -1,6 +1,6 @@
 ____ dataclasses _______ dataclass
 ____ dateutil.parser _______ p..
-____ dateutil.relativedelta _______ relativedelta
+____ d__.r.. _______ r..
 
 RETURN_FORMAT '{name} was {age} years old when {movie} came out.'
 

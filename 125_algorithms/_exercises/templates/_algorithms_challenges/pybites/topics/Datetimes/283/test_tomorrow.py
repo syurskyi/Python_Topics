@@ -30,4 +30,4 @@ ___ test_non_leap_year
 
 ___ test_random_date
     year, month, day r..(2000, 2020), r..(1, 12), r..(1, 27)
-    ... tomorrow(d__.date(year, month, day __ d__.date(year, month, day + 1)
+    ... tomorrow(d__.date year month day __ d__.date year month day + 1)

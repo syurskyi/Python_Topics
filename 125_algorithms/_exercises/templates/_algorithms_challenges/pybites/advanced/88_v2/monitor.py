@@ -1,6 +1,6 @@
 ____ c.. _______ C..
 ____ contextlib _______ contextmanager
-____ d__ _______ date
+____ d__ _______ d__
 ____ t__ _______ t__
 
 OPERATION_THRESHOLD_IN_SECONDS 2.2

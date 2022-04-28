@@ -1,6 +1,6 @@
-____ d__ _______ date
+____ d__ _______ d__
 
-____ dateutil.relativedelta _______ relativedelta, SU
+____ d__.r.. _______ r.., SU
 
 
 ___ get_mothers_day_date(year

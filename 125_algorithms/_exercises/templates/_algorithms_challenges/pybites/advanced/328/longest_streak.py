@@ -1,6 +1,6 @@
 _______ j__
 ____ dateutil.tz _______ gettz
-____ d__ _______ date, t.., tzinfo
+____ d__ _______ d__, t.., tzinfo
 ____ dateutil.parser _______ p..
 ____ p.. _______ P..
 _______ r__

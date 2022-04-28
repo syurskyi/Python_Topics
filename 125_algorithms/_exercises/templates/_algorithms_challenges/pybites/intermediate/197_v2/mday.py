@@ -1,5 +1,5 @@
-____ d__ _______ date
-____ dateutil.relativedelta _______ relativedelta,SU
+____ d__ _______ d__
+____ d__.r.. _______ r..,SU
 
 
 

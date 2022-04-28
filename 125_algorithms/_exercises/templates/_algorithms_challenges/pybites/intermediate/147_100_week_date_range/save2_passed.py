@@ -1,4 +1,4 @@
-____ d__ _______ date
+____ d__ _______ d__
 ____ dateutil _______ parser
 ____ dateutil.rrule _______ *
 
