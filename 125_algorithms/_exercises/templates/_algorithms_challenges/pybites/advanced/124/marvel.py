@@ -46,7 +46,7 @@ ___ most_popular_characters(characters=characters, top=5
 
     character_counts C..()
 
-    ___ character __ characters:
+    ___ character __ ?
         __ character.appearances:
             __ character.name n.. __ character_counts o. (character.n.. __ character_counts a.. i..(character.appearances) > character_counts[character.name]
                 character_counts[character.name] i..(character.appearances)
@@ -66,7 +66,7 @@ ___ max_and_min_years_new_characters(characters=characters
     most_year min_year=N..
     year_counts C..()
 
-    ___ character __ characters:
+    ___ character __ ?
         __ character.year:
             year_counts[character.year] += 1
 
@@ -98,7 +98,7 @@ ___ get_percentage_female_characters(characters=characters
     sex_counts C..()
 
 
-    ___ character __ characters:
+    ___ character __ ?
         __ character.sex:
             sex_counts[character.sex] += 1
 
