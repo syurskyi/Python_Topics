@@ -1,5 +1,5 @@
 _______ __
-____ dataclasses _______ dataclass, field
+____ d.. _______ d__ f__
 ____ p.. _______ P..
 ____ t___ _______ L..
 ____ u__.r.. _______ u..
@@ -13,7 +13,7 @@ HTML_FILE P..(html_file)
 URL "https://www.digminecraft.com/lists/enchantment_list_pc.php"
 
 
-@dataclass
+??
 c_ Enchantment:
     """Minecraft enchantment class
     
@@ -33,7 +33,7 @@ c_ Enchantment:
         r.. _* name} ({max_level}): {description}'
 
 
-@dataclass()
+??()
 c_ Item:
     """Minecraft enchantable item class
     

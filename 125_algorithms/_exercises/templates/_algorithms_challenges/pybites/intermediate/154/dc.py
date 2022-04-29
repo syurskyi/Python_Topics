@@ -1,15 +1,15 @@
-____ dataclasses _______ dataclass, field
-
-
-___ get_level
-    r.. "Beginner"
-
-@dataclass(order=T..)
-c_ Bite:
-
-    number: i..
-    title: s..
-    level: s.. field(default_factory=get_level)
-
-    ___ __post_init__
-        title title.capitalize()
+# ____ d.. _______ d__ f__
+#
+#
+# ___ get_level
+#     r.. "Beginner"
+#
+# ?? order_T..
+# c_ Bite
+#
+#     number: i..
+#     title: s..
+#     level: s.. f.. default_factory_?
+#
+#     ___ __post_init__
+#         title ?.c..

@@ -1,5 +1,5 @@
 ____ c.. _______ d..
-____ dataclasses _______ dataclass, field
+____ d.. _______ d__ f__
 ____ f.. _______ total_ordering
 ____ p.. _______ P..
 ____ __ _______ c.., s..
@@ -20,7 +20,7 @@ URL ("https://bites-data.s3.us-east-2.amazonaws.com/"
 ROMAN {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5}
 
 
-@dataclass
+??
 @total_ordering
 c_ Enchantment:
     """Minecraft enchantment"""
@@ -38,7 +38,7 @@ c_ Enchantment:
         r.. id_name < other.id_name
 
 
-@dataclass
+??
 c_ Item:
     """Minecraft enchantable item"""
 

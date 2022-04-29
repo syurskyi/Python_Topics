@@ -1,16 +1,16 @@
-____ dataclasses _______ dataclass
+____ d.. _______ d..
 
 _______ dateutil
 ____ dateutil.parser _______ p..
 ____ d__.r.. _______ r..
 
-@dataclass
+??
 c_ Actor:
     name: s..
     born: s..
 
 
-@dataclass
+??
 c_ Movie:
     title: s..
     release_date: s..

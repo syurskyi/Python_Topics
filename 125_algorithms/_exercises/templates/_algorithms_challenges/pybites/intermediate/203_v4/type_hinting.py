@@ -1,6 +1,6 @@
-____ dataclasses _______ dataclass
+____ d.. _______ d..
 
-@dataclass
+??
 c_ Employee:
     """Simple Employee class
 

@@ -1,12 +1,12 @@
 _______ j__
 ____ c.. _______ s__
-____ dataclasses _______ dataclass
+____ d.. _______ d..
 ____ ipaddress _______ AddressValueError, IPv4Address, IPv4Network
 ____ p.. _______ P..
 ____ t___ _______ L..
 
 
-@dataclass(frozen=T..)
+??(frozen=T..)
 c_ ServiceIPRange:
     """
     Represents an IPv4 public network range, allocated by AWS for use with

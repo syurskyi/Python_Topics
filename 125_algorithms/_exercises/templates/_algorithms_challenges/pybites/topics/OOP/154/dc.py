@@ -1,9 +1,9 @@
-____ dataclasses _______ dataclass
+____ d.. _______ d..
 
 # 'number': int, 'title': str, 'level': str
 
-@dataclass(order=T..)
-c_ Bite:
+?? order_T..
+c_ Bite
 
     number: i..
     title: s..
@@ -11,5 +11,5 @@ c_ Bite:
 
     ___ - , number, title, level='Beginner'
         number number
-        title title.capitalize()
+        title ?.c..
         level level

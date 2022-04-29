@@ -1,4 +1,4 @@
-____ dataclasses _______ dataclass
+____ d.. _______ d..
 ____ f.. _______ total_ordering
 ____ t___ _______ L..
 
@@ -18,7 +18,7 @@ names: L..[s..] [
 ]
 
 
-@dataclass
+??
 @total_ordering
 c_ Ninja:
     """
@@ -33,16 +33,16 @@ c_ Ninja:
     bites: i..
 
     ___ -l  other
-        r.. bites < other.bites
+        r.. ? < other.bites
 
     ___ -e  other
-        r.. bites __ other.bites
+        r.. ? __ other.bites
 
     ___ -s
         r.. f'[{bites}] {name}'
 
 
-@dataclass
+??
 c_ Rankings:
     """
     The Rankings class will have the following features:

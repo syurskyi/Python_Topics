@@ -46,8 +46,8 @@ c_ Bite(N..
     level: s..
 
 data [
-    Bite('Sum of Numbers', 1, 'Beginner'),
-    Bite('Regex Fun', 2, 'Advanced'),
+    ? 'Sum of Numbers', 1, 'Beginner'),
+    ? 'Regex Fun', 2, 'Advanced'),
 ]
 pkl_file 'khoo.pickle'
 serialize(pkl_file, data=data)

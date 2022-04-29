@@ -1,4 +1,4 @@
-____ dataclasses _______ dataclass,field
+____ d.. _______ d..,field
 ____ t___ _______ L.., Tuple
 _______ h__
 
@@ -19,7 +19,7 @@ names: L..[s..] [
 ]
 
 
-@dataclass
+??
 c_ Ninja:
     """
     The Ninja class will have the following features:
@@ -36,7 +36,7 @@ c_ Ninja:
     ___ -l other
         __ isi..(other,Ninja
 
-            r.. bites < other.bites
+            r.. ? < other.bites
 
         r.. V...
     
@@ -44,14 +44,14 @@ c_ Ninja:
     ___ -g other
         __ isi..(other,Ninja
 
-            r.. bites > other.bites
+            r.. ? > other.bites
 
         r.. V...
 
     ___ -e other
         __ isi..(other,Ninja
 
-            r.. bites __ other.bites
+            r.. ? __ other.bites
 
         r.. V...
     
@@ -66,7 +66,7 @@ c_ Ninja:
 
 
 
-@dataclass
+??
 c_ Rankings:
     """
     The Rankings class will have the following features:

@@ -1,7 +1,7 @@
 _______ j__
 _______ t__
 _______ r__
-____ dataclasses _______ dataclass
+____ d.. _______ d..
 ____ d__ _______ d__
 ____ m__ _______ acos, cos, radians, sin
 _______ __
@@ -36,7 +36,7 @@ __ n.. pycons_file.exists() o. n.. nominatim_responses.exists
     u..(RESPONSES, nominatim_responses)
 
 
-@dataclass
+??
 c_ PyCon:
     name: s..
     city: s..
@@ -53,7 +53,7 @@ c_ PyCon:
             r.. start_date < other.start_date
 
 
-@dataclass
+??
 c_ Trip:
     origin: PyCon
     destination: PyCon

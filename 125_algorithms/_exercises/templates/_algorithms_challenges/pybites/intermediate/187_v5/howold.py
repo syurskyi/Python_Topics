@@ -1,17 +1,17 @@
-____ dataclasses _______ dataclass
+____ d.. _______ d..
 ____ dateutil.parser _______ p..
 ____ d__.r.. _______ r..
 
 RETURN_FORMAT '{name} was {age} years old when {movie} came out.'
 
 
-@dataclass
+??
 c_ Actor:
     name: s..
     born: s..
 
 
-@dataclass
+??
 c_ Movie:
     title: s..
     release_date: s..

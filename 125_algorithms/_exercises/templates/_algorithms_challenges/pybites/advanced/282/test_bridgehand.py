@@ -1,4 +1,4 @@
-____ dataclasses _______ dataclass, field
+____ d.. _______ d__ f__
 ____ r__ _______ shuffle
 ____ t___ _______ L..
 
@@ -7,7 +7,7 @@ _______ p__
 ____ bridgehand _______ Suit, Rank, Card, BridgeHand
 
 
-@dataclass
+??
 c_ TestHand:
     card_string: s..
     doubletons: i..

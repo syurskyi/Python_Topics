@@ -39,7 +39,7 @@ Sample output from running the code in the if/main clause:
 ----------------------------------
               Total =     4,658.50
 """
-____ dataclasses _______ dataclass, field
+____ d.. _______ d__ f__
 ____ t___ _______ L.., N..
 
 Bracket N..("Bracket", [("end", i..), ("rate", f__)])

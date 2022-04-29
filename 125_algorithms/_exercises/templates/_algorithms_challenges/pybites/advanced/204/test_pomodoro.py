@@ -7,7 +7,7 @@ ____ pomodoro _______ break_time, lunch_time, main, session, work_time
 
 @p__.mark.asyncio
 async ___ test_break_time(capfd
-    anno break_time.__annotations__
+    anno break_time. -a
     ... anno["delay"] __ U..[i.., f__]
     ... anno["loop"] __ i..
     ... anno["return"] __ N..
@@ -20,7 +20,7 @@ async ___ test_break_time(capfd
 
 @p__.mark.asyncio
 async ___ test_lunch_time(capfd
-    anno lunch_time.__annotations__
+    anno lunch_time. -a
     ... anno["delay"] __ U..[i.., f__]
     ... anno["return"] __ N..
     delay 0.06
@@ -31,7 +31,7 @@ async ___ test_lunch_time(capfd
 
 @p__.mark.asyncio
 async ___ test_work_time(capfd
-    anno work_time.__annotations__
+    anno work_time. -a
     ... anno["delay"] __ U..[i.., f__]
     ... anno["return"] __ N..
     delay 0.0025
@@ -43,7 +43,7 @@ async ___ test_work_time(capfd
 
 @p__.mark.asyncio
 async ___ test_session(capfd
-    anno session.__annotations__
+    anno session. -a
     ... anno["work_length"] __ U..[i.., f__]
     ... anno["short_break_length"] __ U..[i.., f__]
     ... anno["long_break_length"] __ U..[i.., f__]
@@ -58,7 +58,7 @@ async ___ test_session(capfd
 
 @p__.mark.asyncio
 async ___ test_main(capfd
-    anno main.__annotations__
+    anno main. -a
     ... anno["work_length"] __ U..[i.., f__]
     ... anno["short_break_length"] __ U..[i.., f__]
     ... anno["long_break_length"] __ U..[i.., f__]
