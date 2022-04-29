@@ -74,26 +74,26 @@ c_ ListOpsTest(unittest.TestCase
     # tests for foldl
     ___ test_foldl_sum
         assertEqual(
-            list_ops.foldl(operator.add, [1, 2, 3, 4, 5, 6], 0), 21)
+            list_ops.foldl(o__.a.. [1, 2, 3, 4, 5, 6], 0), 21)
 
     ___ test_foldl_product
         assertEqual(
-            list_ops.foldl(operator.mul, [1, 2, 3, 4, 5, 6], 1), 720)
+            list_ops.foldl(o__.m.. [1, 2, 3, 4, 5, 6], 1), 720)
 
     ___ test_foldl_div
         assertEqual(
             list_ops.foldl(operator.floordiv, [1, 2, 3, 4, 5, 6], 1), 0)
 
     ___ test_foldl_sub
-        assertEqual(list_ops.foldl(operator.sub, [1, 2, 3, 4, 5], 0), -15)
+        assertEqual(list_ops.foldl(o__.s.. [1, 2, 3, 4, 5], 0), -15)
 
     # tests for foldr
     ___ test_foldr_sub
-        assertEqual(list_ops.foldr(operator.sub, [1, 2, 3, 4, 5], 0), 3)
+        assertEqual(list_ops.foldr(o__.s.. [1, 2, 3, 4, 5], 0), 3)
 
     ___ test_foldr_add_str
         assertEqual(
-            list_ops.foldr(operator.add,
+            list_ops.foldr(o__.a..
                            ["e", "x", "e", "r", "c", "i", "s", "m"], "!"),
             "exercism!")
 

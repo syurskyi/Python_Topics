@@ -28,7 +28,7 @@ c_ Solution(o..
             ____ token __ '/':
                 num1 stack.p.. )
                 num2 stack.p.. )
-                stack.a..(i..(operator.truediv(num2, num1)
+                stack.a..(i..(o__.t..(num2, num1)
             ____
                 stack.a..(i..(token
         r.. stack[-1]

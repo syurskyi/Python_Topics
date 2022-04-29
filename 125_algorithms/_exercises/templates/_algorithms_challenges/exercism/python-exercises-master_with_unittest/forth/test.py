@@ -107,7 +107,7 @@ c_ ForthDivisionTest(unittest.TestCase
 
     ___ test_errors_if_dividing_by_zero
         input_data ["4 0 /"]
-        w__ assertRaisesWithMessage(ZeroDivisionError
+        w__ assertRaisesWithMessage(Z..
             evaluate(input_data)
 
     ___ test_errors_if_there_is_nothing_on_the_stack

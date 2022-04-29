@@ -6,7 +6,7 @@ _______ o..
 
 
 c_ Calculator(o..
-    operands {'+': operator.add, '-': operator.sub, '*': operator.mul, '/': operator.div}
+    operands {'+': o__.a.. '-': o__.s.. '*': o__.m.. '/': operator.div}
 
     ___ -
         result    # list

@@ -12,5 +12,5 @@ ___ sum_numbers(numbers
     ___ i, j __ z.. ?, numbers[1:]
         # replace the block below
         w__ suppress T..
-            w__ suppress(ZeroDivisionError
+            w__ suppress(Z..
                 y.. i/j

@@ -40,7 +40,7 @@ ___ evaluate(input_data
             ____ word __ '/':
                 divisor stack.p.. )
                 __ divisor __ 0:
-                    r.. ZeroDivisionError("Attempted to divide by zero")
+                    r.. Z..("Attempted to divide by zero")
                 stack.a..(i..(stack.p.. ) / divisor
             ____ word __ 'dup':
                 stack.a..(stack[-1])

@@ -59,20 +59,20 @@ c_ ListOpsTest(unittest.TestCase
 
     # tests for foldl
     ___ test_foldl_empty_list
-        assertEqual(list_ops.foldl(operator.mul, [], 2), 2)
+        assertEqual(list_ops.foldl(o__.m.. [], 2), 2)
 
     ___ test_foldl_nonempty_list_addition
-        assertEqual(list_ops.foldl(operator.add, [1, 2, 3, 4], 5), 15)
+        assertEqual(list_ops.foldl(o__.a.. [1, 2, 3, 4], 5), 15)
 
     ___ test_foldl_nonempty_list_floordiv
         assertEqual(list_ops.foldl(operator.floordiv, [2, 5], 5), 0)
 
     # tests for foldr
     ___ test_foldr_empty_list
-        assertEqual(list_ops.foldr(operator.mul, [], 2), 2)
+        assertEqual(list_ops.foldr(o__.m.. [], 2), 2)
 
     ___ test_foldr_nonempty_list_addition
-        assertEqual(list_ops.foldr(operator.add, [1, 2, 3, 4], 5), 15)
+        assertEqual(list_ops.foldr(o__.a.. [1, 2, 3, 4], 5), 15)
 
     ___ test_foldr_nonempty_list_floordiv
         assertEqual(list_ops.foldr(operator.floordiv, [2, 5], 5), 2)
@@ -80,7 +80,7 @@ c_ ListOpsTest(unittest.TestCase
     # additional test for foldr
     ___ test_foldr_add_str
         assertEqual(
-            list_ops.foldr(operator.add,
+            list_ops.foldr(o__.a..
                            ["e", "x", "e", "r", "c", "i", "s", "m"], "!"),
             "exercism!")
 

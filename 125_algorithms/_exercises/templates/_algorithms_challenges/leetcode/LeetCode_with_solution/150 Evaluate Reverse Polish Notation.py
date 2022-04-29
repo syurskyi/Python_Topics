@@ -27,7 +27,7 @@ c_ Solution(o..
         # not supported by leetcode
         # import operator
         # ops = {
-        # "+": operator.add,
+        # "+": o__.a..
         #     "-": operator.sub,
         #     "*": operator.mul,
         #     "/": operator.div,

@@ -4,7 +4,7 @@ ___ div(a,b
     ___
         r.. a/b
     ______:
-        r.. ZeroDivisionError
+        r.. Z..
 
 
 ___ test_div_simple
@@ -14,7 +14,7 @@ ___ test_div_second
     ... div(3,6) __ 0.5
 
 ___ test_div_zerodivision
-    w__ p__.r..(ZeroDivisionError
+    w__ p__.r..(Z..
         div(3,0)
 
 

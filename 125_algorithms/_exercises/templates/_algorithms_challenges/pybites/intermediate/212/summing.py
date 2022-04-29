@@ -11,7 +11,7 @@ ___ sum_numbers(numbers
     """
     ___ i, j __ z.. ?, numbers[1:]
         # replace the block below
-        w__ suppress(ZeroDivisionError, T..
+        w__ suppress(Z.., T..
             y.. i/j
         # try:
         #     try:
