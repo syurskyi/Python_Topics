@@ -46,7 +46,7 @@ Little Red Riding Hood and her Grandmother had a nice lunch and a long chat.
 """
 
 
-___ make_character_index(text=text, characters=CHARACTERS
+___ make_character_index text_? characters_?
     """Return a dict with keys are characters (lowercased) and values
        the lines they appear in sorted order.
        Matches should be case insensitive.

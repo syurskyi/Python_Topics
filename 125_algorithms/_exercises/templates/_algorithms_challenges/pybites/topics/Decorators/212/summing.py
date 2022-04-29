@@ -1,7 +1,7 @@
-____ contextlib _______ suppress
+____ c.. _______ s__
 
 #
-___ sum_numbers(numbers
+___ sum_numbers numbers
     """This generator divides each nummber by its consecutive number.
        So if it gets passed in [4, 2, 1] it yields 4/2 and 2/1.
        It ignores ZeroDivisionError and TypeError exceptions (latter happens
