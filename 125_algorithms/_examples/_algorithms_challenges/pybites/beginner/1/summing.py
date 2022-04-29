@@ -13,3 +13,5 @@ def sum_numbers(numbers=None):
         for i in range(0,count):
             total = total + numbers[i]
     return total
+
+# The isinstance() function checks if the object (first argument) is an instance or subclass of classinfo class (second argument).

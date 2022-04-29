@@ -1,0 +1,24 @@
+# ''''
+# Iterate over the given names and countries lists. In each loop print the value
+# of each and also the counter of
+# the loop (starting at 1).
+#
+# Here is the output you need to deliver. Ideally you use only one for loop.
+#
+# The 2nd column should be exactly 10 chars wide aligning to the left (format magic):
+#
+#        1. Julian     Australia
+#        2. Bob        Spain
+#        3. PyBites    Global
+#        4. Dante      Argentina
+#        5. Martin     USA
+#        6. Rodolfo    Mexico
+#
+# '''
+#
+# names = 'Julian Bob PyBites Dante Martin Rodolfo'.s..
+# countries = 'Australia Spain Global Argentina USA Mexico'.s..
+#
+#
+# ___ index ? ? __ e.. z.. ? ? 1
+#     print _* ?. ?|10 ?

@@ -37,3 +37,8 @@
 #             ? o.. ?  i..  # update last visited index
 #
 #         r.. ?
+
+# __ _____ __ _____
+#     s ?
+#     answer  ?.l.. "fivestarview"
+#     print ?

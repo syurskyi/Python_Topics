@@ -4,7 +4,7 @@ Created on May 5, 2017
 @author: MT
 '''
 
-c_ Solution(o..
+c_ Solution o..
     ___ lengthOfLongestSubstring  s
         """
         :type s: str
