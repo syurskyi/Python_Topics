@@ -1,17 +1,17 @@
-_______ unicodedata
-___ filter_accents(text
-    """Return a sequence of accented characters found in
-       the passed in lowercased text string
-    """
-    text text.l..
-    result    # list
-    
-
-    s unicodedata.normalize('NFD',text).encode("ascii",'ignore').d.. 'utf-8')
-    ___ character_1,character_2 __ z..(text,s
-        __ character_1 !_ character_2:
-            result.a..(character_1)
-
-
-    r.. result
-
+# _______ u..
+# ___ filter_accents text
+#     """Return a sequence of accented characters found in
+#        the passed in lowercased text string
+#     """
+#     text ?.l..
+#     result    # list
+#
+#
+#     s ?.n.. 'NFD' ? .e.. "ascii",'ignore' .d.. 'utf-8'
+#     ___ character_1,character_2 __ z.. ? s
+#         __ ? !_ ?
+#             ?.a.. ?
+#
+#
+#     r.. ?
+#

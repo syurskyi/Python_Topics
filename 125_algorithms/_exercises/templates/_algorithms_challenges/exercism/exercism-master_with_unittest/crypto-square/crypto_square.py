@@ -7,7 +7,7 @@ c_ CryptoSquare:
 
     ??
     ___ encode(cls, msg
-        __ l..?normalize(msg __ 0:
+        __ l..?n.. msg __ 0:
             r.. ''
         r.. ' '.j..?transpose_square?squarify ? normalize(msg))))
 
@@ -41,4 +41,4 @@ c_ CryptoSquare:
 
 
 ___ encode(msg
-    r.. CryptoSquare.encode(msg)
+    r.. CryptoSquare.e.. msg)

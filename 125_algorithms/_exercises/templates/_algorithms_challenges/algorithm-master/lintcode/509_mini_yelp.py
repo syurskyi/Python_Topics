@@ -105,7 +105,7 @@ c_ MiniYelp:
     # distance from near to far.
     ___ neighbors  location, k
         length get_length(k)
-        prefix GeoHash.encode(location)[:length]
+        prefix GeoHash.e.. location)[:length]
 
         # chr(ord('z') + 1) == '{'
         left b__.bisect_left(geohashs, prefix)
@@ -137,7 +137,7 @@ c_ MiniYelp:
 
     ___ get_restr_hashcode  restaurant
         r.. '{0}:{1}'.f..(
-            GeoHash.encode(restaurant.location),
+            GeoHash.e.. restaurant.location),
             restaurant.id
         )
 
@@ -238,7 +238,7 @@ c_ MiniYelp:
     # distance from near to far.
     ___ neighbors  location, k
         length get_length(k)
-        prefix GeoHash.encode(location)[:length]
+        prefix GeoHash.e.. location)[:length]
         hashcodes trie.get_keys_by_prefix(prefix)
 
         neighbors    # list
@@ -266,6 +266,6 @@ c_ MiniYelp:
 
     ___ get_restr_hashcode  restaurant
         r.. '{0}:{1}'.f..(
-            GeoHash.encode(restaurant.location),
+            GeoHash.e.. restaurant.location),
             restaurant.id
         )

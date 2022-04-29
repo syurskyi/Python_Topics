@@ -91,7 +91,7 @@ c_ Morse:
         ' ': '0'}
 
 __ _____ __ _____
-    print(Morse.encode('hello world'
+    print(Morse.e.. 'hello world'
     # print(Morse.encode('EEEEEEEIE'))
     # print(Morse.decode([-2004318070, 536870912]))
     print(Morse.d.. [-1440552402, -1547992901, -1896993141, -1461059584]

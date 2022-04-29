@@ -30,7 +30,7 @@ c_ Atbash:
 
 
 ___ encode(msg
-    r.. Atbash.encode(Atbash, msg)
+    r.. Atbash.e.. Atbash, msg)
 
 
 ___ d.. msg

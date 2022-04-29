@@ -7,17 +7,17 @@ c_ CipherTest(unittest.TestCase
 
     ___ test_caesar_encode1
         assertEqual('lwlvdzhvrphsurjudpplqjlqsbwkrq',
-                         Caesar().encode('itisawesomeprogramminginpython'
+                         Caesar().e.. 'itisawesomeprogramminginpython'
 
     ___ test_caesar_encode2
-        assertEqual('yhqlylglylfl', Caesar().encode('venividivici'
+        assertEqual('yhqlylglylfl', Caesar().e.. 'venividivici'
 
     ___ test_caesar_encode3
         assertEqual('wzdvwkhqljkwehiruhfkulvwpdv',
-                         Caesar().encode('\'Twas the night before Christmas'
+                         Caesar().e.. '\'Twas the night before Christmas'
 
     ___ test_caesar_encode_with_numbers
-        assertEqual('jr', Caesar().encode('1, 2, 3, Go!'
+        assertEqual('jr', Caesar().e.. '1, 2, 3, Go!'
 
     ___ test_caesar_decode
         assertEqual('venividivici', Caesar().d.. 'yhqlylglylfl'
@@ -25,38 +25,38 @@ c_ CipherTest(unittest.TestCase
     ___ test_cipher_encode1
         c Cipher('a')
         assertEqual('itisawesomeprogramminginpython',
-                         c.encode('itisawesomeprogramminginpython'
+                         c.e.. 'itisawesomeprogramminginpython'
 
     ___ test_cipher_encode2
         c Cipher('aaaaaaaaaaaaaaaaaaaaaa')
         assertEqual('itisawesomeprogramminginpython',
-                         c.encode('itisawesomeprogramminginpython'
+                         c.e.. 'itisawesomeprogramminginpython'
 
     ___ test_cipher_encode3
         c Cipher('dddddddddddddddddddddd')
-        assertEqual('yhqlylglylfl', c.encode('venividivici'
+        assertEqual('yhqlylglylfl', c.e.. 'venividivici'
 
     ___ test_cipher_encode4
         key ('duxrceqyaimciuucnelkeoxjhdyduucpmrxmaivacmybmsdrzwqxvbxsy'
                'gzsabdjmdjabeorttiwinfrpmpogvabiofqexnohrqu')
         c Cipher(key)
-        assertEqual('gccwkixcltycv', c.encode('diffiehellman'
+        assertEqual('gccwkixcltycv', c.e.. 'diffiehellman'
 
     ___ test_cipher_encode_short_key
         c Cipher('abcd')
-        assertEqual('abcdabcd', c.encode('aaaaaaaa'
+        assertEqual('abcdabcd', c.e.. 'aaaaaaaa'
 
     ___ test_cipher_compositiion1
         key ('duxrceqyaimciuucnelkeoxjhdyduucpmrxmaivacmybmsdrzwqxvbxsy'
                'gzsabdjmdjabeorttiwinfrpmpogvabiofqexnohrqu')
         plaintext 'adaywithoutlaughterisadaywasted'
         c Cipher(key)
-        assertEqual(plaintext, c.d.. c.encode(plaintext)))
+        assertEqual(plaintext, c.d.. c.e.. plaintext)))
 
     ___ test_cipher_compositiion2
         plaintext 'adaywithoutlaughterisadaywasted'
         c Cipher()
-        assertEqual(plaintext, c.d.. c.encode(plaintext)))
+        assertEqual(plaintext, c.d.. c.e.. plaintext)))
 
     ___ test_cipher_random_key
         c Cipher()
