@@ -1,13 +1,13 @@
-# # ######################################################################################################################
+# ######################################################################################################################
 # Annotations
 
-# ___ my_func a 'annotation for a'
-#             b 'annotation for b'  'annotation for return'
-#     r_ a * b
-#
-# help my_func
-#
-# print()
+def my_func(a: 'annotation for a',
+            b: 'annotation for b') -> 'annotation for return':
+    return a * b
+
+help(my_func)
+
+print()
 # ######################################################################################################################
 # The annotations can be any expression, not just strings:
 

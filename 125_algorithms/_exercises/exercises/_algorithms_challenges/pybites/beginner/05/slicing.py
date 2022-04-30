@@ -22,7 +22,7 @@ def slice_and_dice(text: str=text) -> list:
     remove_chars = ['.', '!']
     results = []    # list
     for lines in text.split('\n'):
-        line = line.strip()
+        line = lines.strip()
         if line and line[0].islower():
             words = line.split()
             #print(words[-1], words[-1][-1])
