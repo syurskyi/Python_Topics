@@ -1,24 +1,24 @@
-___ version_newer(old, new
-    o [i..(v) ___ v __ old.s..('.')]
-    n [i..(v) ___ v __ new.s..('.')]
-    __ o[0] < n[0]:
-        r.. T..
-    ____ o[0] __ n[0]:
-        __ o[1] < n[1]:
-            r.. T..
-        ____ o[1] __ n[1]:
-            __ o[2] < n[2]:
-                r.. T..
-    r.. F..
-
-
-___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
-    """Compare old vs new requirement multiline strings
-       and return a list of dependencies that have been upgraded
-       (have a newer version)
-    """
-    old [x.s..('==') ___ x __ (old_reqs.s..k.._F.. __ l..(x.s.. > 0]
-    new [x.s..('==') ___ x __ (new_reqs.s..k.._F.. __ l..(x.s.. > 0]
-    ___ o, n __ z..(old, new
-        __ version_newer(o[1], n[1]
-            y.. n[0]
+# ___ version_newer old new
+#     o i.. v ___ ? __ o__.s.. '.'
+#     n i.. v ___ ? __ n__.s.. '.'
+#     __ ? 0 < ? 0
+#         r.. T..
+#     ____ ? 0 __ ? 0
+#         __ ? 1 < ? 1
+#             r.. T..
+#         ____ ? 1 __ ? 1
+#             __ ? 2 < ? 2
+#                 r.. T..
+#     r.. F..
+#
+#
+# ___ changed_dependencies old_reqs s.. new_reqs s.. __ l..
+#     """Compare old vs new requirement multiline strings
+#        and return a list of dependencies that have been upgraded
+#        (have a newer version)
+#     """
+#     old x.s.. '==' ___ ? __ ?.s..k.._F.. __ l.. ?.s.. > 0
+#     new x.s.. '==' ___ ? __ ?.s..k.._F.. __ l.. ?.s.. > 0
+#     ___ o, n __ z.. ? ?
+#         __ ? ? 1 ? 1
+#             y.. ? 0

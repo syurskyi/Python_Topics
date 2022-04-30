@@ -25,4 +25,4 @@ string_classes =  'Formatter', 'Template'
 ])
 ___ test_cls(mod, e..
     a.. get_classes(mod)
-    ... s..(a..) __ s..(e..)
+    ... s.. a.. __ s..(e..)

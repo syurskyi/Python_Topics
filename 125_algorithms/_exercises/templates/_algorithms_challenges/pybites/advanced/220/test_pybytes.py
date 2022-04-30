@@ -14,7 +14,7 @@ ___ pb
 ___ test_get_episodes_pybites_was_mentioned(pb
     a.. pb.get_episode_numbers_for_mentioned_domain(PYBITES)
     e.. =  '106', '98', '34', '26', '14'
-    ... s..(a..) __ s..(e..)
+    ... s.. a.. __ s..(e..)
 
 
 ___ test_get_episodes_realpython_was_mentioned(pb
@@ -22,7 +22,7 @@ ___ test_get_episodes_realpython_was_mentioned(pb
     e.. =  '143', '134', '123', '119', '118', '114', '110', '102',
                 '100', '97', '88', '86', '85', '84', '83', '82', '80', '76',
                 '75', '71', '66', '56', '37', '20', '7'
-    ... s..(a..) __ s..(e..)
+    ... s.. a.. __ s..(e..)
 
 
 ___ test_number_episodes_with_special_guests(pb

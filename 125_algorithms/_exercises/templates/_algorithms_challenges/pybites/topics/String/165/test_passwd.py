@@ -21,7 +21,7 @@ ___ test_get_users_for_shell_default_args
     a.. get_users_for_shell()
     e.. =  'artagnon', 'avar', 'chad', 'gerrit2',
                 'git-svn-mirror', 'root', 'ssh-rsa'
-    ... s..(a..) __ e..
+    ... s.. a.. __ e..
 
 
 ___ test_get_users_for_sh_shell
@@ -29,17 +29,17 @@ ___ test_get_users_for_sh_shell
     e.. =  'backup', 'bin', 'daemon', 'games', 'gnats', 'irc',
                 'libuuid', 'list', 'lp', 'mail', 'man', 'news',
                 'nobody', 'proxy', 'sys', 'uucp', 'www-data'
-    ... s..(a..) __ e..
+    ... s.. a.. __ e..
 
 ___ test_get_users_for_false_shell
     a.. get_users_for_shell(grep_shell='false')
     e.. =  'Debian-exim', 'avahi', 'ftp', 'messagebus',
                 'mysql', 'postfix', 'statd'
-    ... s..(a..) __ e..
+    ... s.. a.. __ e..
 
 
 ___ test_get_users_for_different_passwd_output_and_ksh_shell
     a.. get_users_for_shell(passwd_output=OTHER_PASSWD_OUTPUT,
                                  grep_shell='ksh')
     e.. =  'invscout', 'jdoe', 'paul', 'root'
-    ... s..(a..) __ e..
+    ... s.. a.. __ e..

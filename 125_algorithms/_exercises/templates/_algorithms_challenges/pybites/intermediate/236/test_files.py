@@ -22,7 +22,7 @@ ___ test_example_docstring(tmp_path, filter_str, e..
     ___ fi __ 'bite1 test output'.s.. :
         o.. tmp_path / fi, 'a').c..
     a.. get_matching_files(tmp_path, filter_str)
-    ... s..(a..) __ s..(e..)
+    ... s.. a.. __ s..(e..)
 
 
 ?p__.m__.p. "filter_str, expected", [
@@ -44,4 +44,4 @@ ___ test_other_files(tmp_path, filter_str, e..
     ___ fi __ FILES:
         o.. tmp_path / fi, 'a').c..
     a.. get_matching_files(tmp_path, filter_str)
-    ... s..(a..) __ s..(e..)
+    ... s.. a.. __ s..(e..)
