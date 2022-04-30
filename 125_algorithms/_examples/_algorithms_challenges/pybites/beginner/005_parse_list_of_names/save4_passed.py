@@ -3,6 +3,10 @@ NAMES = ['arnold schwarzenegger', 'alec baldwin', 'bob belderbos',
          'julbob pybites', 'bob belderbos', 'julian sequeira',
          'al pacino', 'brad pitt', 'matt damon', 'brad pitt']
 
+PY_CONTENT_CREATORS = ['brian okken', 'michael kennedy', 'trey hunner',
+                       'matt harrison', 'julian sequeira', 'dan bader',
+                       'michael kennedy', 'brian okken', 'dan bader']
+
 
 def dedup_and_title_case_names(names):
     """Should return a list of title cased names,
@@ -30,3 +34,13 @@ def shortest_first_name(names):
     first_name = [x.split()[0] for x in names]
     shortest_name = min(first_name, key=len)
     return shortest_name
+
+if __name__ == '__main__':
+    names = dedup_and_title_case_names(NAMES)
+    print(names)
+    names = dedup_and_title_case_names(PY_CONTENT_CREATORS)
+    print(names)
+    sort_by_surname_desc = sort_by_surname_desc(NAMES)
+    print(sort_by_surname_desc)
+    shortest_first_name = shortest_first_name(NAMES)
+    print(shortest_first_name)
