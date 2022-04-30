@@ -21,7 +21,7 @@ c_ Calculator(o..
         i 1
         w.... i < l..(result) - 1:
             __ result[i] __ operators:
-                result[i - 1] s..(__class__.operands[result[i]](f__(result[i - 1]), f__(result[i + 1])))
+                result[i - 1] s..( -c.operands[result[i]](f__(result[i - 1]), f__(result[i + 1])))
                 result.p.. i + 1)
                 result.p.. i)
                 _____

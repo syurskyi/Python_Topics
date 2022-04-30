@@ -45,7 +45,7 @@ c_ Color:
 
     ___  -r
         """Returns the repl of the object"""
-        r.. "%s(%r)"%(__class__.__name__, color)
+        r.. "%s(%r)"%( -c.__name__, color)
 
     ___ -s
         """Returns the string value of the color object"""

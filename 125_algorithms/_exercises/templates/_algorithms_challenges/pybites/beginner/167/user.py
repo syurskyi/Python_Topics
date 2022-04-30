@@ -3,7 +3,7 @@
 #        (Django's User model inspired us)
 #     """
 #
-#     ___ - , first_name, last_name
+#     ___ -  first_name last_name
 #         """Constructor, base values"""
 #         ? ?
 #         ? ?

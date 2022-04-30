@@ -26,8 +26,8 @@ c_ Employee:
 
     ___ - , first_name: s.., last_name: s.., days_per_week: i..,
             hours_per_day:i.., wage: f__
-        first_name first_name
-        last_name last_name
+        ? ?
+        ? ?
         days_per_week days_per_week
         hours_per_day hours_per_day
         wage wage
