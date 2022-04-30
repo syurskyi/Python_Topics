@@ -2,11 +2,11 @@ ____ d__ _______ d__, t..
 _______ __
 
 NOW d__ y.._2019,  m.._2,  d.._6,
-               hour=22, minute=0, second=0)
+               h.._22, m.._0 s.._0
 
 
-___ add_todo(delay_time: s.., task: s..,
-             start_time: d__ NOW) __ s..
+___ add_todo delay_time s.. task s..
+             start_time d__ N.. __ s..
     """
     Add a todo list item in the future with a delay time.
 
@@ -22,7 +22,7 @@ ___ add_todo(delay_time: s.., task: s..,
     >>> "Wash my car @ 2019-02-06 23:10:00"
     """
     days, hours, minutes, seconds 0, 0, 0, 0
-    ___ timein __ delay_time.s.. :
+    ___ timein __ ?.s.. :
         __ timein[-1] __ 'd':
             days i..(timein[0:-1])
         ____ timein[-1] __ 'h':
