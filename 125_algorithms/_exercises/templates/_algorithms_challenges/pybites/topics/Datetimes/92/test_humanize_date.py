@@ -23,7 +23,7 @@ ___ n_days_ago_str(days
      N.. - t..(h.._23), '23 hours ago'),
      N.. - t..(h.._24), 'yesterday'),
      N.. - t..(h.._47), 'yesterday'),
-     N.. - t..(d.._1), 'yesterday'),
+     N.. - t.. d.._1, 'yesterday'),
      N.. - t..(d.._2), n_days_ago_str(2,
      N.. - t..(d.._7), n_days_ago_str(7,
      N.. - t..(d.._100), n_days_ago_str(100,

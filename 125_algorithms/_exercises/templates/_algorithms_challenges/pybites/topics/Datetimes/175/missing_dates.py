@@ -1,7 +1,7 @@
 ____ d__ _______ d__, t..
-____ r__ _______ shuffle
+____ r__ _______ s..
 
-___ get_missing_dates(dates
+___ get_missing_dates dates
     """Receives a range of dates and returns a sequence
        of missing datetime.date objects (no worries about order).
 
@@ -16,7 +16,7 @@ ___ get_missing_dates(dates
     r.. s..(s..(full_dt)-s..(dates
 
 
-___ _create_dates(missing, year=2019,  m.._2
+___ _create_dates missing  y.._2019  m.._2
     """Helper function to build up test cases.
 
        Returns a list of dates omitting days given
@@ -24,18 +24,18 @@ ___ _create_dates(missing, year=2019,  m.._2
 
        You can optionally specify year and month.
     """
-    first date y.._year,  m.._month,  d.._1)
-    last first.r..( m.._month+1) - t..(d.._1)
+    first date y.._?  m.._?  d.._1)
+    last first.r.. m.._?+1 - t.. d.._1
 
     # always yield first and last, for the in between dates
     # only the ones not in missing
-    y.. first
+    y.. f..
 
-    ___ day __ r..(first.day + 1, last.day
-        __ day n.. __ missing:
-            y.. first.r..( d.._day)
+    ___ day __ r.. ?.d.. + 1 ?.d..
+        __ day n.. __ missing
+            y.. f...r.. d.._?
 
-    y.. last
+    y.. l..
 
 
 date_list l..(_create_dates([2, 7, 11], 2

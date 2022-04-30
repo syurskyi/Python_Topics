@@ -1,7 +1,7 @@
 _______ __
 ____ d__ _______ d__, t.., date
 
-ONE_DAY t..(d.._1)
+ONE_DAY t.. d.._1
 
 TODAY date(2018, 11, 12)
 

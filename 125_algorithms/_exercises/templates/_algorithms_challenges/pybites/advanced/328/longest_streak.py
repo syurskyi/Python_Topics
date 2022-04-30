@@ -43,7 +43,7 @@ ___ longest_streak(
     longest_streak f__("-inf")
     start_date end_date N..
     
-    day_timedelta t..(d.._1)
+    day_timedelta t.. d.._1
     previous_date= current_start =N..
     current_streak 1
     ___ i __ r..(l..(commits:

@@ -11,7 +11,7 @@ ___ test_promo_expired
 
 
 ___ test_promo_not_expired
-    future_date NOW + t..(d.._1)
+    future_date NOW + t.. d.._1
     newsletter_promo Promo('newsletter', future_date)
     ... n.. newsletter_promo.expired
 

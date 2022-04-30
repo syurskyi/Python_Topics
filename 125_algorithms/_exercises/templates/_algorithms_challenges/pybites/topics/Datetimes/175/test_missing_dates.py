@@ -1,12 +1,12 @@
 ____ d__ _______ d__, t..
-____ r__ _______ shuffle
+____ r__ _______ s..
 
 _______ p__
 
-____ missing_dates _______ get_missing_dates
+____ ? _______ ?
 
 
-___ _create_dates(missing, year=2019,  m.._2
+___ _create_dates missing  y.._2019  m.._2
     """Helper function to build up test cases.
 
        Returns a list of dates omitting days given
@@ -14,18 +14,18 @@ ___ _create_dates(missing, year=2019,  m.._2
 
        You can optionally specify year and month.
     """
-    first date y.._year,  m.._month,  d.._1)
-    last first.r..( m.._month+1) - t..(d.._1)
+    first date y.._?  m.._?  d.._1)
+    last first.r.. m.._?+1 - t.. d.._1
 
     # always yield first and last, for the in between dates
     # only the ones not in missing
-    y.. first
+    y.. f..
 
-    ___ day __ r..(first.day + 1, last.day
-        __ day n.. __ missing:
-            y.. first.r..( d.._day)
+    ___ day __ r.. ?.d.. + 1 ?.d..
+        __ day n.. __ missing
+            y.. f...r.. d.._?
 
-    y.. last
+    y.. l..
 
 
 ?p__.m__.p. "missing, month", [
@@ -36,19 +36,19 @@ ___ _create_dates(missing, year=2019,  m.._2
     ([1, 3, 7, 31], 5),  # expected = 3, 7, not start/end month
     (l..(r..(1, 31, 6),  # 0 missing
 ])
-___ test_get_missing_dates(missing, month
-    my_date_range l..(_create_dates(missing,  m.._month
-    start, end my_date_range[0].day, my_date_range[-1].day
+___ test_get_missing_dates missing month
+    my_date_range l.. ? missing  m.._?
+    start, end ? 0 .d.. ? -1 .d..
 
     # order passed in arg should not matter
     shuffle(my_date_range)
 
     # get days from return sequence
     a.. s..(d.day ___ d __
-                    get_missing_dates(my_date_range
+                    g.. m..
 
     # filter out begin and end dates of range
-    e.. s..(d ___ d __ missing __
-                      d n.. __ (start, end
+    e.. s.. d ___ ? __ m.. __
+                      ? n.. __ s.. e..
 
     ... a.. __ e..

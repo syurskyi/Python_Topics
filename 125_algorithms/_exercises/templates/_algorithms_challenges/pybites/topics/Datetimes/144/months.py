@@ -30,7 +30,7 @@ ___ calc_months_passed year month day
        Return the number of months passed int.
     """
     ___
-        in_date d__ y.._year, m.._month, d.._day)
+        in_date d__ y.._? m.._?d.._day)
         __ date year month day) < START_DATE:
             r.. V...
         months_passed 0

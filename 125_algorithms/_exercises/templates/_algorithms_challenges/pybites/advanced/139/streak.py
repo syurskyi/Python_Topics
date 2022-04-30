@@ -17,7 +17,7 @@ ___ extract_dates(data
             date_ __.s.. _ ^\s*\|\s(\S+)\s\|',line).group(1)
             year,month,day m.. i..,date_.s..("-"
 
-            date_ date y.._year, m.._month, d.._day)
+            date_ date y.._? m.._?d.._day)
             dates.add(date_)
 
     r.. dates
@@ -44,7 +44,7 @@ ___ calculate_streak(dates
     streak 0
 
     
-    delta t..(d.._1)
+    delta t.. d.._1
     day TODAY - delta
 
     w.... day __ dates:
