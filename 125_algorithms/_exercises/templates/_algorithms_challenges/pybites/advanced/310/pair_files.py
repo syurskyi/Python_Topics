@@ -28,7 +28,7 @@ ___ pair_files(filenames
     
     result    # list
     ___ value __ mapping.v..
-        __ l..(value) __ 2:
+        __ l.. ? __ 2:
 
             __ '_R1_' __ value[1]:
                 value.r..

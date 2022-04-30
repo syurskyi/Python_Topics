@@ -5,7 +5,7 @@ ____ rename_keys _______ rename_keys
 
 
 ___ fb(value
-    r.. s..(value)
+    r.. s.. ?
 
 
 ?p__.m__.p.('test_input, expected', [
