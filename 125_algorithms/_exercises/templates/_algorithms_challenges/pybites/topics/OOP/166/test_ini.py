@@ -1,6 +1,6 @@
 _______ p__
 
-____ ini _______ ToxIniParser
+____ ? _______ ?
 
 cookiecutter """[tox]
 envlist = py27, py34, py35, py36, pypy, flake8
@@ -307,7 +307,7 @@ deps =
     setuptools
     wheel"""
 
-ini_files (cookiecutter, django, oeuvre, pyramid)
+ini_files ? ? ? ?
 
 
 ?p__.m__.p. "ini_file, num_sections, envs, base_pys", [
@@ -326,12 +326,12 @@ ini_files (cookiecutter, django, oeuvre, pyramid)
       'py35', 'py36' ,
       'python3' ),
 ])
-___ test_tox_ini_parser(ini_file, num_sections, envs, base_pys, tmp_path
+___ test_tox_ini_parser ini_file num_sections envs base_pys tmp_path
     f tmp_path / "some_file.txt"
-    f.w..(ini_file.encode  # https://bugs.python.org/issue17271
+    ?.w.. i__.e..  # https://bugs.python.org/issue17271
 
-    tip ToxIniParser(f.r..
+    tip ? ?.r..
 
-    ... tip.number_of_sections __ num_sections
-    ... s..(tip.environments) __ s..(envs)
-    ... s..(tip.base_python_versions) __ s..(base_pys)
+    ... ?.n.. __ N..
+    ... s.. ?.E.. __ s.. ?
+    ... s.. ?.b.. __ s.. b..

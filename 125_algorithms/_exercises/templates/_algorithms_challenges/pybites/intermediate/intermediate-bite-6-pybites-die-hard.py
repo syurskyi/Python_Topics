@@ -46,7 +46,7 @@ ___ gen_files
     """
     w__ o.. tempfile) __ infile:
         ___ line __ infile:
-            chunks line.s..(',')
+            chunks ?.s.. ','
             __ chunks[1].s.. __ "True":
                 s chunks[0 .s..('/')
                 y.. s[1]
@@ -63,7 +63,7 @@ ___ diehard_pybites
             users[i] += 1
     w__ o.. tempfile) __ infile:
         ___ line __ infile:
-            chunks line.s..(',')
+            chunks ?.s.. ','
             __ chunks[1].s.. __ "True":
                 s chunks[0 .s..('/')
                 popular_challenges[s[0]] += 1

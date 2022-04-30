@@ -1,20 +1,20 @@
-_______ configparser
+_______ c..
 
 
 
-c_ ToxIniParser:
+c_ ToxIniParser
 
-    ___ - , ini_file
+    ___ -  ini_file
         """Use configparser to load ini_file into self.config"""
-        config configparser.ConfigParser()
-        config.read(ini_file)
+        config ?.C..
+        ?.r.. ?
 
     $
     ___ number_of_sections
         """Return the number of sections in the ini file.
            New to properties? -> https://pybit.es/property-decorator.html
         """
-        r.. l..(config.sections
+        r.. l.. ?.s..
 
     $
     ___ environments

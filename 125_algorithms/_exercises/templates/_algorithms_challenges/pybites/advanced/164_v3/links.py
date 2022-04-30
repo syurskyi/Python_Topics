@@ -13,7 +13,7 @@ ___ make_html_links
 
 ___ process_line(line
     __ line.s.. 'http'
-        url, *title [l.s.. ___ l __ line.s..(',')]
+        url, *title [l.s.. ___ l __ ?.s.. ',']
         __ l..(title) > 1:
             r.. ''
         title title[0]

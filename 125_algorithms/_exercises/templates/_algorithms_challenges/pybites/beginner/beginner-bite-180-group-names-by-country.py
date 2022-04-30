@@ -57,7 +57,7 @@ ___ group_names_by_country(data: s.. data) __ d..:
         __ line_cnt __ 0:
             line_cnt += 1
             _____
-        arr line.s..(',')
+        arr ?.s.. ','
         print(arr)
         name arr[1] + " " + arr[0]
         ___

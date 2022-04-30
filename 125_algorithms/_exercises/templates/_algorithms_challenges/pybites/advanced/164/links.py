@@ -10,7 +10,7 @@ ___ make_html_links
         line line.s..
         __ line.s.. 'http') a.. comma.c.. ',') __ 1:
 
-            href,link_name line.s..(',')
+            href,link_name ?.s.. ','
             href href.s..
             link_name link_name.s..
 
