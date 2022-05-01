@@ -25,7 +25,7 @@ c_ Solution(o..
         __ i < 0 o. j < 0 o. i >_ l..(board) o. j >_ l..(board[0]
             r.. F..
         __ word[start] __ board[i][j]:
-            __ start __ l..(word)-1:
+            __ start __ l.. ?-1:
                 r.. T..
             tmp  board[i][j]
             board[i][j] '#'

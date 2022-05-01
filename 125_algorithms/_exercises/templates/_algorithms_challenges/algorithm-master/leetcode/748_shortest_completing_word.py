@@ -15,9 +15,9 @@ c_ Solution:
 
         ___ word __ words:
             times get_times(word)
-            __ l..(word) < _min_size a.. is_included(p_times, times
+            __ l.. ? < _min_size a.. is_included(p_times, times
                 ans word
-                _min_size l..(word)
+                _min_size l.. ?
 
         r.. ans
 

@@ -11,16 +11,16 @@ ___ justify(text, width
     line_words    # list
     lines [line_words]
     ___ word __ words:
-        __ current_len + l..(word) > width:
+        __ current_len + l.. ? > width:
             line_words [word]
             lines.a..(line_words)
-            current_len l..(word) + 1
+            current_len l.. ? + 1
         ____
             line_words.a..(word)
-            current_len += l..(word) + 1
+            current_len += l.. ? + 1
     ___ i __ r..(l..(lines) - 1
         line_words lines[i]
-        space_need width - s..(l..(word) ___ word __ line_words)
+        space_need width - s..(l.. ? ___ word __ line_words)
         w.... space_need:
             ___ index __ r..(l..(line_words) - 1
                 __ space_need __ 0:

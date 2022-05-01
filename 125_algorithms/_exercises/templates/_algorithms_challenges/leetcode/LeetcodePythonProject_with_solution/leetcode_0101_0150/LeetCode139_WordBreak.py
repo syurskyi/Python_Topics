@@ -18,7 +18,7 @@ c_ Solution(o..
             __ n.. dp[i]:
                 _____
             ___ word __ wordDict:
-                end i+l..(word)
+                end i+l.. ?
                 sub s[i:end]
                 __ sub __ word:
                     dp[end] T..

@@ -17,7 +17,7 @@ c_ Solution(o..
         res ''
         ___ i __ r..(l..(s:
             ___ word __ words:
-                __ i+l..(word) <_ l..(s) a.. s[i:i+l..(word)] __ word:
+                __ i+l.. ? <_ l..(s) a.. s[i:i+l.. ?] __ word:
                     __ n.. start:
                         res += '<b>'
                         start T..

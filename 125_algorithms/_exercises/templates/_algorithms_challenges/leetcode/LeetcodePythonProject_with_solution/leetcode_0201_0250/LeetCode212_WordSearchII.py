@@ -20,7 +20,7 @@ ___ buildTrie(words
             ____
                 t p.children[c]
             p t
-            __ i __ l..(word)-1:
+            __ i __ l.. ?-1:
                 t.isLeaf T..
     r.. root
 

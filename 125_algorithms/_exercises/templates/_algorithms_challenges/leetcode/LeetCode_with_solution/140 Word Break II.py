@@ -49,8 +49,8 @@ c_ Solution:
                 _____
 
             ___ word __ d..:
-                __ s[i:i + l..(word)] __ word:
-                    dp[i + l..(word)].a..(word)
+                __ s[i:i + l.. ?] __ word:
+                    dp[i + l.. ?].a..(word)
 
         # build result
         __ n.. dp[-1]:

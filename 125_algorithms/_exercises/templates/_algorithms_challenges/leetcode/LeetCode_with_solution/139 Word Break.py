@@ -76,12 +76,12 @@ c_ Solution:
                 ___ word __ d..:
                     ___
                         # trivial
-                        __ dp[i+l..(word)]__True:
+                        __ dp[i+l.. ?]__True:
                             _____
 
                         # main
-                        __ s[i:i+l..(word)]__word: # test whether [i, i+len) can construct a word. THE BEAUTY OF HALF OPEN
-                            dp[i+l..(word)] T..  # record the checking
+                        __ s[i:i+l.. ?]__word: # test whether [i, i+len) can construct a word. THE BEAUTY OF HALF OPEN
+                            dp[i+l.. ?] T..  # record the checking
                     ______ I..
                         _____
 

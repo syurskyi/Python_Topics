@@ -28,10 +28,10 @@ c_ Solution(o..
             r.. [("", 0)]
 
         ret    # list
-        ___ l __ x..(l..(word)+1
+        ___ l __ x..(l.. ?+1
             left_num s..(l) __ l ____ ""
             left_l 1 __ left_num !_ "" ____ 0
-            left_l += 1 __ l < l..(word) ____ 0
+            left_l += 1 __ l < l.. ? ____ 0
 
             ___ right, right_l __ dfs(word[l+1:]
                 cur left_num + word[l:l+1] + right  # word[l:l+1] possible ""
@@ -55,7 +55,7 @@ c_ Solution(o..
         """
         w 0
         a 0
-        w.... w < l..(word) a.. a < l..(abbr
+        w.... w < l.. ? a.. a < l..(abbr
             __ abbr[a].i.. a.. abbr[a] !_ '0':
                 e a
                 w.... e < l..(abbr) a.. abbr[e].i.. e += 1
@@ -69,7 +69,7 @@ c_ Solution(o..
                 w += 1
                 a += 1
 
-        r.. w __ l..(word) a.. a __ l..(abbr)
+        r.. w __ l.. ? a.. a __ l..(abbr)
 
 
 __ _______ __ _______

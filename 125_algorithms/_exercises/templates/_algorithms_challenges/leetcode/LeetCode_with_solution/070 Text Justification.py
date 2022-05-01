@@ -53,7 +53,7 @@ c_ Solution:
         w.... i<l..(words
             word words[i]
             cur_length += 1 # space in left justified
-            cur_length += l..(word)
+            cur_length += l.. ?
             __ cur_length>L: _____
             lst.a..(word)
             i += 1
@@ -67,7 +67,7 @@ c_ Solution:
         ___ ind, line __ e..(result
             word_cnt l..(line)
             str_builder    # list
-            space_cnt L-s..(l..(word) ___ word __ line)
+            space_cnt L-s..(l.. ? ___ word __ line)
             hole_cnt word_cnt-1
             __ ind<l..(result)-1:
                 __ hole_cnt>0:

@@ -9,7 +9,7 @@ c_ Solution:
 
         ans    # list
         gotcha s..()
-        max_size m..(l..(word) ___ word __ words)
+        max_size m..(l.. ? ___ word __ words)
 
         ___ j __ r..(max_size
             ___ word __ words:

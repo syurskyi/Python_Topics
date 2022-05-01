@@ -14,7 +14,7 @@ c_ Solution(o..
         """
         w 0
         a 0
-        w.... w < l..(word) a.. a < l..(abbr
+        w.... w < l.. ? a.. a < l..(abbr
             __ abbr[a].i.. a.. abbr[a] !_ '0':
                 e a
                 w.... e < l..(abbr) a.. abbr[e].i.. e += 1
@@ -28,7 +28,7 @@ c_ Solution(o..
                 w += 1
                 a += 1
 
-        r.. w __ l..(word) a.. a __ l..(abbr)
+        r.. w __ l.. ? a.. a __ l..(abbr)
 
 
 __ _______ __ _______

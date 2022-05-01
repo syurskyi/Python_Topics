@@ -7,7 +7,7 @@ Created on Apr 10, 2017
 c_ Solution(o..
     ___ validWordAbbreviation  word, abbr
         i, j 0, 0
-        w.... i < l..(word) a.. j < l..(abbr
+        w.... i < l.. ? a.. j < l..(abbr
             __ abbr[j].i..
                 prev j
                 w.... j+1 < l..(abbr) a.. abbr[j+1].i..
@@ -21,7 +21,7 @@ c_ Solution(o..
                     r.. F..
                 i+=1
                 j+=1
-        __ i !_ l..(word) o. j !_ l..(abbr
+        __ i !_ l.. ? o. j !_ l..(abbr
             r.. F..
         r.. T..
     

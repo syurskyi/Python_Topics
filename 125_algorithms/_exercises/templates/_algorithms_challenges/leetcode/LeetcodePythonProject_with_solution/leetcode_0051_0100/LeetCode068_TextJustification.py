@@ -31,9 +31,9 @@ c_ Solution(o..
         __ n.. words: r.. result
         count, last 0, 0
         ___ i, word __ e..(words
-            count += l..(word)
+            count += l.. ?
             __ count+i-last > maxWidth:
-                wordsLen count-l..(word)
+                wordsLen count-l.. ?
                 spaceLen maxWidth-wordsLen
                 eachLen 1
                 extraLen 0
@@ -55,7 +55,7 @@ c_ Solution(o..
                     s += ' '
                 result.a..(s)
                 last i
-                count l..(word)
+                count l.. ?
         s ''
         ___ i __ r..(last, l..(words)-1
             count += l..(words[i])

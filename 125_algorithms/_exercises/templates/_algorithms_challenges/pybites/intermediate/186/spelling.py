@@ -4,7 +4,7 @@ ____ u__.r.. _______ u..
 
 TMP __.g.. TMP  /tmp
 DICTIONARY __.p...j..(TMP, 'dictionary.txt')
-__ n.. __.p...i..(DICTIONARY
+__ n.. __.p...i.. ?
     u..(
         'https://bites-data.s3.us-east-2.amazonaws.com/dictionary.txt',
         DICTIONARY
@@ -14,14 +14,14 @@ __ n.. __.p...i..(DICTIONARY
 ___ load_words
     'return dict of words in DICTIONARY'
     w__ o.. ? __ f
-        r.. {word.s...l.. ___ word __ f.r..}
+        r..  word.s...l.. ___ ? __ f.r..
 
 
-___ suggest_word(misspelled_word: s.., words: s.. N..) __ s..
+___ suggest_word misspelled_word s.. words s.. N.. __ s..
     """Return a valid alternative word that best matches
        the entered misspelled word"""
     __ words __ N..
-        words load_words()
+        words ?
     
 
     r.. m..(words,k.._l.... x:SequenceMatcher(N..,misspelled_word,x).ratio

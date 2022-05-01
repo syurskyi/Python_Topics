@@ -22,7 +22,7 @@ c_ Solution(o..
             size l..(d..)
             ___ i __ r..(size
                 word d...p.. 0)
-                __ l..(word) __ 1:
+                __ l.. ? __ 1:
                     count += 1
                 ____
                     hashmap[word[1]].a..(word[1:])

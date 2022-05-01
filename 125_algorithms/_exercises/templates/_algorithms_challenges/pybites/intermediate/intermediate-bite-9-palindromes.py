@@ -56,14 +56,14 @@ ___ get_longest_palindrome(words_ N..
     __ words:
         ___ word __ words:
             __ is_palindrome(word
-                __ l..(word) > max_pal:
-                    max_pal l..(word)
+                __ l.. ? > max_pal:
+                    max_pal l.. ?
                     pal word
     ____
         ___ word __ load_dictionary
             __ is_palindrome(word
-                __ l..(word) > max_pal:
-                    max_pal l..(word)
+                __ l.. ? > max_pal:
+                    max_pal l.. ?
                     pal word
 
     r.. pal

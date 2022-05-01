@@ -46,7 +46,7 @@ c_ Solution:
         r.. ans
 
     ___ is_palindrome  word
-        n l..(word)
+        n l.. ?
         left, right 0, n - 1
 
         w.... left < right:

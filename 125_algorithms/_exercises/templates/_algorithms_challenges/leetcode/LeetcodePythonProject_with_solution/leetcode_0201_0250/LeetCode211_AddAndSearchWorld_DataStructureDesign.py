@@ -23,7 +23,7 @@ c_ WordDictionary(o..
                 t TrieNode(c)
                 children[c] t
             children t.children
-            __ i __ l..(word)-1:
+            __ i __ l.. ?-1:
                 t.isLeaf T..
     
     ___ searchDFS  children, word, startInd
@@ -31,12 +31,12 @@ c_ WordDictionary(o..
             r.. b..(n.. children)
         c word[startInd]
         __ c __ children:
-            __ startInd __ l..(word)-1 a.. children[c].isLeaf:
+            __ startInd __ l.. ?-1 a.. children[c].isLeaf:
                 r.. T..
             r.. searchDFS(children[c].children, word, startInd+1)
         ____ c __ '.':
             ___ key, node __ children.iteritems
-                __ startInd __ l..(word)-1 a.. node.isLeaf:
+                __ startInd __ l.. ?-1 a.. node.isLeaf:
                     r.. T..
                 __ searchDFS(children[key].children, word, startInd+1
                     r.. T..

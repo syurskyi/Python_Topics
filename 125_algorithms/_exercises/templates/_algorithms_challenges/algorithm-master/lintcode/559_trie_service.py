@@ -20,7 +20,7 @@ c_ TrieService:
     # @param {int} frequency an integer
     # @return nothing
     ___ insert  word, frequency
-        __ n.. word o. l..(word) < 1 \
+        __ n.. word o. l.. ? < 1 \
                 o. n.. frequency:
             r..
         parent root

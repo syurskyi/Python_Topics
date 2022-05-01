@@ -15,7 +15,7 @@ c_ Solution(o..
                 hashset.discard(word[i:])
         res 0
         ___ word __ hashset:
-            res += l..(word)+1
+            res += l.. ?+1
         r.. res
     
     ___ test

@@ -12,7 +12,7 @@ c_ Solution(o..
         ___ i, word __ e..(words
             hashmap[word] i
         ___ i, word __ e..(words
-            ___ j __ r..(l..(word)+1
+            ___ j __ r..(l.. ?+1
                 s1 word[:j]
                 s2 word[j:]
                 __ isPalindrome(s1

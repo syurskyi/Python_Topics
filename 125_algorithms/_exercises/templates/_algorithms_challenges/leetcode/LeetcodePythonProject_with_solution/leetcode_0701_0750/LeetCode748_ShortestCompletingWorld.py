@@ -17,7 +17,7 @@ c_ Solution(o..
         res ''
         l f__('inf')
         ___ word __ words:
-            __ l..(word) < l:
+            __ l.. ? < l:
                 __ contains(hashmap, word
                     res word
                     l l..(res)

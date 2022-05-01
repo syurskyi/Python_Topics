@@ -18,7 +18,7 @@ c_ Solution(o..
             r.. [""]
 
         ret    # list
-        ___ i __ x..(l..(word)+1
+        ___ i __ x..(l.. ?+1
             left_num s.. ? __ i ____ ""
             ___ right __ generateAbbreviations(word[i+1:]
                 cur left_num + word[i:i+1] + right
@@ -43,9 +43,9 @@ c_ SolutionTLE(o..
     ___ dfs  word
         __ word n.. __ cache:
             ret    # list
-            ___ l __ x..(1, l..(word)+1
+            ___ l __ x..(1, l.. ?+1
                 pivot s..(l)
-                ___ i __ x..(l..(word)-l+1
+                ___ i __ x..(l.. ?-l+1
                     lefts dfs(word[:i])
                     rights dfs(word[i+l:])
                     ___ left __ lefts:

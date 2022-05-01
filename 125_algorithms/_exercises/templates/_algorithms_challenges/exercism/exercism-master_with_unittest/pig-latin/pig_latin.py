@@ -22,7 +22,7 @@ c_ PigLatinTranslator:
                 word.s.. 'thr':
             r.. word[3:] + word[0:3] + 'ay'
         ____ ((word[0] __  ?.consonants a..
-                word[1] __  ?.consonants) o.
+                ? 1 __  ?.consonants) o.
                 word.s.. 'qu':
             r.. word[2:] + word[0:2] + 'ay'
         ____ (word[0] __  ?.consonants

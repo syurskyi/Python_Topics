@@ -45,7 +45,7 @@ c_ Solution:
         r.. ret
 
     ___ m..  word, pattern
-        __ l..(word) !_ l..(pattern
+        __ l.. ? !_ l..(pattern
             r.. F..
 
         m    # dict

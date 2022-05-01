@@ -14,8 +14,8 @@ c_ Solution(o..
         n l..(words[-1])
         dp [s..() ___ _ __ r..(n+1)]
         ___ word __ words:
-            __ l..(word) __ 1 o. word[:-1] __ dp[l..(word)-1]:
-                dp[l..(word)].add(word)
+            __ l.. ? __ 1 o. word[:-1] __ dp[l.. ?-1]:
+                dp[l.. ?].add(word)
         ___ i __ r..(n, -1, -1
             __ dp[i]:
                 r.. s..(l..(dp[i].p.. 0)

@@ -32,7 +32,7 @@ c_ WordFilter(o..
                     node.children[c] TreeNode('')
                 node node.children[c]
                 node.candidates.add(i0)
-                __ i __ l..(word)-1:
+                __ i __ l.. ?-1:
                     node.isLeaf T..
     
     ___ f  prefix, suffix
@@ -56,7 +56,7 @@ c_ WordFilter(o..
             __ c n.. __ root.children:
                 r.. s..()
             root root.children[c]
-            __ i __ l..(word)-1:
+            __ i __ l.. ?-1:
                 r.. root.candidates
 
 __ _____ __ _____

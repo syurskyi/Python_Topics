@@ -23,7 +23,7 @@ c_ Trie(o..
                 t TrieNode(c)
                 children[c] t
             children t.children
-            __ i __ l..(word)-1:
+            __ i __ l.. ?-1:
                 t.isLeaf T..
     
     ___ searchNode  word

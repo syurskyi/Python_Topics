@@ -28,7 +28,7 @@ c_ Solution(o..
 
         __ pattern[0] __ char2word:
             word char2word[pattern[0]]
-            __ s[:l..(word)] !_ word:
+            __ s[:l.. ?] !_ word:
                 r.. F..
             ____
                 ... word __ words

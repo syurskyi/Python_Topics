@@ -17,8 +17,8 @@ c_ Solution(o..
         ___ i __ r..(l..(s)+1
             __ dp[i]:
                 ___ word __ wordDict:
-                    __ s[i:i+l..(word)] __ word:
-                        dp[i+l..(word)].a..(word)
+                    __ s[i:i+l.. ?] __ word:
+                        dp[i+l.. ?].a..(word)
         res    # list
         helper(dp, l..(s), res, [])
         r.. res
@@ -31,7 +31,7 @@ c_ Solution(o..
         ___ word __ dp[i]:
             __ i >_ l..(word
                 curr.i.. 0, word)
-                helper(dp, i-l..(word), res, curr)
+                helper(dp, i-l.. ?, res, curr)
                 curr.p.. 0)
     
     ___ test

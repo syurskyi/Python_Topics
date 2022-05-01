@@ -51,7 +51,7 @@ c_ Solution:
         __ n.. word:
             r.. F..
 
-        k l..(word)
+        k l.. ?
         __ lo >_ k:
             r.. T..
 
