@@ -53,8 +53,8 @@ ___ four_day_weekends $,
         weekend_dates =[]
         workday_dates    # list
         current date(year,start_month,1)
-        current += relativedelta(weekday=FR)
-        first_monday current + relativedelta(weekday=MO(-1
+        current += r..(weekday=FR)
+        first_monday current + r..(weekday=MO(-1
         __ first_monday.year __ year a.. first_monday.month __ start_month:
             workday_dates.a..(first_monday)
             
@@ -62,8 +62,8 @@ ___ four_day_weekends $,
 
 
         w.... current.year __ year:
-            monday current + relativedelta(weekday=MO)
-            thursday current - relativedelta(d.._1)
+            monday current + r..(weekday=MO)
+            thursday current - r..(d.._1)
             __ thursday.year __ year  a.. thursday n.. __ FEDERAL_HOLIDAYS:
                 workday_dates.a..(thursday)
 
@@ -87,11 +87,11 @@ ___ four_day_weekends $,
 
 
 
-            current += relativedelta(weeks=1)
+            current += r..(weeks=1)
         
 
 
-        last_thursday current - relativedelta(d.._1)
+        last_thursday current - r..(d.._1)
         __ last_thursday.year __ year a.. last_thursday n.. __ FEDERAL_HOLIDAYS:
             workday_dates.a..(last_thursday)
         workdays l..(workday_dates)

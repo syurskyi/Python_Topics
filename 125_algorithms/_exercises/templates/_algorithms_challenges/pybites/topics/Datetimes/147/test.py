@@ -1,5 +1,5 @@
 ____ d__ _______ *
-____ dateutil.relativedelta _______ *
+____ dateutil.r.. _______ *
 ____ dateutil.rrule _______ *
 
 NOW d__.n..

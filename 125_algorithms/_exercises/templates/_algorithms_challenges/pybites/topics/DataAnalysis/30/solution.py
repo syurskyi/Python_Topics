@@ -35,7 +35,7 @@ ___ get_movies_by_director
             __ year a.. year < MIN_YEAR:
                 _____
 
-            m Movie(title=movie, year=year, score=score)
+            m ? title=movie, year=year, score=score)
             directors[director].a..(m)
 
     r.. directors

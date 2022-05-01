@@ -28,7 +28,7 @@ ___ get_movies_by_director
         ___ ? __ ?
             __ movie 'title_year'  !_ '' a.. i..(movie 'title_year' ) > 1960:
                 director[movie 'director_name']].a..(
-                    Movie(
+                    ?
                         movie 'movie_title' .s..,
                         movie 'title_year' ,
                         movie 'imdb_score' )

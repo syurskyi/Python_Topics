@@ -32,7 +32,7 @@ ___ get_movie_longest_runtime
     """Call get_tree again and return the movie title for the movie with the longest
        runtime in minutes, for latter consider adding a _get_runtime helper"""
     tree get_tree()
-    movies [(movie.attrib 'title' , _get_runtime(movie
+    movies (movie.attrib 'title' , _get_runtime(movie
               ___ movie __ tree.i..(tag='movie')]
     max_movie, max_runtime m..(movies, k.._l.... m: m[1])
     r.. max_movie

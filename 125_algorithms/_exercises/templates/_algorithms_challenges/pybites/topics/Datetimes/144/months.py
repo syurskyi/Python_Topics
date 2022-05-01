@@ -34,7 +34,7 @@ ___ calc_months_passed year month day
         __ date year month day) < START_DATE:
             r.. V...
         months_passed 0
-        difference_dt relativedelta(date year month day), START_DATE)
+        difference_dt r..(date year month day), START_DATE)
         #print(difference_dt.years, difference_dt.months, difference_dt.days)
         __ difference_dt.days >_ M..
             months_passed difference_dt.months + 1
