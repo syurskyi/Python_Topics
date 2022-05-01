@@ -21,7 +21,7 @@ ___ load_data
     """Converts marvel.csv into a sequence of Character namedtuples
        as defined above"""
     content _get_csv_data()
-    reader c__.D.. content.s.. , delimiter=',')
+    reader c__.D.. content.s.. , d.._',')
     ___ row __ reader
         name __.s.. _ (.*?)\(.*', r'\1', row 'name' ).s..
         y.. Character(pid=row 'page_id' ,

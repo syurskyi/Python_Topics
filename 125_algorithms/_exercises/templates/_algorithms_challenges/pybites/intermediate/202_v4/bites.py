@@ -22,7 +22,7 @@ ___ get_most_complex_bites(N=10, stats=stats
        most complex Bites.
     """
     w__ o.. stats, encoding="utf-8-sig") __ f:
-        bites l..(c__.reader(f, delimiter=';'
+        bites l..(c__.reader(f, d.._';'
     bites.p.. 0)  # remove header
     bites [[b[0], f__(b[1])] ___ b __ bites __ b[1] !_ 'None'
     bites.s..(k.._l.... x: ? 1 r.._T..
