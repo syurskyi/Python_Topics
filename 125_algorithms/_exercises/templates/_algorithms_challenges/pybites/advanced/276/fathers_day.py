@@ -5,7 +5,7 @@ _______ __
 _______ d__
 
 ____ c.. _______ d..
-____ dateutil.parser _______ p..
+____ d__.p.. _______ p..
 
 # get the data
 TMP P.. __.g.. "TMP", "/tmp"

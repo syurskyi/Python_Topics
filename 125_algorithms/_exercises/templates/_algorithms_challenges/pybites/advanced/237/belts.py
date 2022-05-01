@@ -2,7 +2,7 @@ _______ j__
 _______ __
 ____ p.. _______ P..
 _______ d__ __ dt
-____ dateutil.parser _______ p..
+____ d__.p.. _______ p..
 
 SCORES [10, 50, 100, 175, 250, 400, 600, 800, 1000]
 BELTS ('white yellow orange green blue brown black '

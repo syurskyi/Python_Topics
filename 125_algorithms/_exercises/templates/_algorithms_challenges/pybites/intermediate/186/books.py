@@ -1,6 +1,6 @@
 ____ d__ _______ d__
 ____ m__ _______ f..
-____ dateutil.parser _______ p..
+____ d__.p.. _______ p..
 
 # work with a static date for tests, real use = datetime.now()
 NOW d__(2019, 3, 17, 16, 28, 42, 966663)

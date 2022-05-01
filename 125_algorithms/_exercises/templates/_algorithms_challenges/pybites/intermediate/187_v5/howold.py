@@ -1,5 +1,5 @@
 ____ d.. _______ d..
-____ dateutil.parser _______ p..
+____ d__.p.. _______ p..
 ____ d__.r.. _______ r..
 
 RETURN_FORMAT '{name} was {age} years old when {movie} came out.'

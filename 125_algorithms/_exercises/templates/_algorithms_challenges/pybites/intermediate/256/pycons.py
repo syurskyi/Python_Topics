@@ -4,7 +4,7 @@ ____ t___ _______ L..
 
 _______ r__
 ____ ___ _______ B.. __ S..
-____ dateutil.parser _______ p..
+____ d__.p.. _______ p..
 
 PYCON_DATA "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
 

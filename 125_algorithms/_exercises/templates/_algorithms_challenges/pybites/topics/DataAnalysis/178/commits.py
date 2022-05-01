@@ -5,7 +5,7 @@ ____ c.. _______ d..
 ____ d__ _______ d__
 
 
-____ dateutil.parser _______ p..
+____ d__.p.. _______ p..
 
 commits __.p...j..(__.g.. TMP  /tmp, 'commits')
 u..(
@@ -17,8 +17,8 @@ u..(
 YEAR_MONTH '{y}-{m:02d}'
 
 
-___ get_min_max_amount_of_commits(commit_log: s.. commits,
-                                  year: i.. N..) __ (s.., s..
+___ get_min_max_amount_of_commits commit_log s.. commits
+                                  year i.. N.. __ s.. s..
     """
     Calculate the amount of inserts / deletes per month from the
     provided commit log.

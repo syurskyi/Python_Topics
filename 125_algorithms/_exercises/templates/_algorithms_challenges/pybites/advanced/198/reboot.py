@@ -1,5 +1,5 @@
 _______ d__ __ td
-____ dateutil.parser _______ p..
+____ d__.p.. _______ p..
 MAC1 """
 reboot    ~                         Wed Apr 10 22:39
 reboot    ~                         Wed Mar 27 16:24
