@@ -72,7 +72,7 @@ ___ player_with_max_points_per_game
 
 
 
-    r.. nba.nlargest(1,'avg_points').squeeze() 'name'
+    r.. nba.nlargest(1,'avg_points').s.. 'name'
 
     
 

@@ -2,86 +2,86 @@ _______ i___
 
 _______ p__
 
-____ person _______ Person, Father, Mother, Child
+____ ? _______ ? ? ? ?
 
 
 ?p__.f..
 ___ person
-    r.. Person()
+    r.. ?
 
 
 ?p__.f..
 ___ dad
-    r.. Father()
+    r.. ?
 
 
 ?p__.f..
 ___ mom
-    r.. Mother()
+    r.. ?
 
 
 ?p__.f..
 ___ child
-    r.. Child()
+    r.. ?
 
 
-___ test_string_repr_person(person
-    ... s..(person) __ 'I am a person'
+___ test_string_repr_person person
+    ... s.. ? __ 'I am a person'
 
 
-___ test_string_repr_dad(dad
-    ... s..(dad) __ 'I am a person and cool daddy'
+___ test_string_repr_dad dad
+    ... s.. ? __ 'I am a person and cool daddy'
 
 
-___ test_string_repr_mom(mom
-    ... s..(mom) __ 'I am a person and awesome mom'
+___ test_string_repr_mom mom
+    ... s.. ? __ 'I am a person and awesome mom'
 
 
-___ test_string_repr_child(child
-    ... s..(child) __ 'I am the coolest kid'
+___ test_string_repr_child child
+    ... s.. ? __ 'I am the coolest kid'
 
 
 ___ test_mro_of_person
-    ... Person.__mro__ __ (Person, o..)
+    ... ?. -m __  ? o..
 
 
 ___ test_mro_of_dad
-    ... Father.__mro__ __ (Father, Person, o..)
+    ... ?. -m __ ? ? o..
 
 
 ___ test_mro_of_mom
-    ... Mother.__mro__ __ (Mother, Person, o..)
+    ... ?. -m __ ? ? o..
 
 
 ___ test_mro_of_child
-    ... Child.__mro__ __ (Child, Father, Mother, Person, o..)
+    ... ?. -m __ ? ? ? ? o..
 
 
 ___ test_subclass_person
-    ... i.. Person, o..)
+    ... i.. ? o..
 
 
 ___ test_subclass_dad
-    ... i.. Father, Person)
-    ... i.. Father, o..)
+    ... ... i.. ? ?
+    ... i.. ? o..
 
 
 ___ test_subclass_mom
-    ... i.. Mother, Person)
-    ... i.. Mother, o..)
+    ... ... i.. ? ?
+    ... i.. ? o..
 
 
 ___ test_subclass_child
-    ... i.. Child, Father)
-    ... i.. Child, Mother)
-    ... i.. Child, Person)
-    ... i.. Child, o..)
+    ... i.. ? ?
+    ... i.. ? ?
+    ... i.. ? ?
+    ... i.. ? o..
 
 
 ___ test_use_inheritance
     # dry code!
     # should not duplicate substr in subclass
     substr 'I am a person'
-    ___ src __ (i___.g.. Father),
-                i___.g.. Mother:
-        ... substr n.. __ src
+    ___ src __  i___.g.. ?
+                i___.g.. ?
+        ... ? n.. __ ?

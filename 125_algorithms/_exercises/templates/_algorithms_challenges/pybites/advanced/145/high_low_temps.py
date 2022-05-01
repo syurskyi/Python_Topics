@@ -68,8 +68,8 @@ ___ high_low_record_breakers_for_2015
     n[0] n[0].astype('float')
 
 
-    minimum n.nsmallest(1,0).T.squeeze()
-    maximum n.nlargest(1,0).T.squeeze()
+    minimum n.nsmallest(1,0).T.s..
+    maximum n.nlargest(1,0).T.s..
     
     s1 STATION(minimum.ID,minimum.Date,minimum 0
     s2 STATION(maximum.ID,maximum.Date,maximum 0

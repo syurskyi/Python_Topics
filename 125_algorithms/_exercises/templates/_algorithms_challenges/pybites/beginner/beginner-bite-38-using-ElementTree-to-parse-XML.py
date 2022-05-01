@@ -26,7 +26,7 @@ ___ get_tree
 
 ___ get_movies
     """Call get_tree and retrieve all movie titles, return a list or generator"""
-    tree get_tree().getroot()
+    tree get_tree().g..
     result    # list
     ___ m __ tree:
         result.a..(m.attrib 'title' )
@@ -35,7 +35,7 @@ ___ get_movies
 ___ get_movie_longest_runtime
     """Call get_tree again and return the movie with the longest runtime in minutes,
        for latter consider adding a _get_runtime helper"""
-    tree get_tree().getroot()
+    tree get_tree().g..
     current_longest_runtime 0
     current_longest_title "None"
     ___ m __ tree:

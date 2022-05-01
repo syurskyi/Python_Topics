@@ -1,37 +1,37 @@
-_______ p.... __ pd
-____ i. ______ S..
-data """Luke Skywalker,172,77
-          C-3PO,167,75
-          R2-D2,96,32
-          Darth Vader,202,136
-          Leia Organa,150,49
-          Owen Lars,178,120
-          Beru Whitesun lars,165,75
-          R5-D4,97,32
-          Biggs Darklighter,183,84
-          Obi-Wan Kenobi,182,77
-          Anakin Skywalker,188,84
-          Chewbacca,228,112
-          Han Solo,180,80
-          Greedo,173,74
-          Jek Tono Porkins,180,110
-          Yoda,66,17
-          Palpatine,170,75
-          Boba Fett,183,78.2
-          IG-88,200,140
-          Bossk,190,113
-"""
-
-
-___ person_max_bmi(data=data
-    """Return (name, BMI float) of the character in data that
-       has the highest BMI (rounded on 2 decimals)"""
-
-    star_wars __.r..(StringIO(data),names= 'character','height','weight' )
-    star_wars.character star_wars.character.s...s..
-
-    star_wars 'bmi'  = star_wars.weight.div(star_wars.height.div(100)**2).r..(2)
-    
-    largest =  star_wars.nlargest(1,'bmi').squeeze()
-    r.. (largest 'character' ,largest 'bmi' )
-
+# _______ p.... __ pd
+# ____ i. ______ S..
+# data """Luke Skywalker,172,77
+#           C-3PO,167,75
+#           R2-D2,96,32
+#           Darth Vader,202,136
+#           Leia Organa,150,49
+#           Owen Lars,178,120
+#           Beru Whitesun lars,165,75
+#           R5-D4,97,32
+#           Biggs Darklighter,183,84
+#           Obi-Wan Kenobi,182,77
+#           Anakin Skywalker,188,84
+#           Chewbacca,228,112
+#           Han Solo,180,80
+#           Greedo,173,74
+#           Jek Tono Porkins,180,110
+#           Yoda,66,17
+#           Palpatine,170,75
+#           Boba Fett,183,78.2
+#           IG-88,200,140
+#           Bossk,190,113
+# """
+#
+#
+# ___ person_max_bmi data_?
+#     """Return (name, BMI float) of the character in data that
+#        has the highest BMI (rounded on 2 decimals)"""
+#
+#     star_wars __.r.. S.. ? n.._ 'character''height','weight'
+#     ?.c.. ?.c__.s...s..
+#
+#     star_wars 'bmi'   s__.w__.d.. ?.h__.d..(100)**2).r.. 2
+#
+#     largest  ?.n.. 1,'bmi' .s..
+#     r.. ? 'character' ? 'bmi'
+#

@@ -1,6 +1,6 @@
 _______ p__
 
-____ income _______ get_income_distribution
+____ ? _______ ?
 
 EXPECTED {'High income':  'Aruba',
                             'Argentina',
@@ -48,7 +48,7 @@ EXPECTED {'High income':  'Aruba',
 
 ?p__.f.. s.._"module"
 ___ a..
-    r.. get_income_distribution()
+    r.. ?
 
 
 ?p__.m__.p. "income, countries", EXPECTED.i..

@@ -11,7 +11,7 @@ ___ get_food_most_calories(df=df
     """Return the food "Item" string with most calories"""
 
 
-    r.. df.nlargest(1,'Calories').squeeze() 'Item'
+    r.. df.nlargest(1,'Calories').s.. 'Item'
 
 
 
