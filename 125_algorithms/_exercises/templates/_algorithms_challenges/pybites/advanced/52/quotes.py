@@ -24,7 +24,7 @@ quotes [
 ___ _get_quote(qid
     """Recommended helper"""
 
-    ___ quote __ quotes:
+    ___ quote __ ?
         __ quote["id"] __ qid:
             r.. quote
 
@@ -33,7 +33,7 @@ ___ _quote_exists(existing_quote
     """Recommended helper"""
 
 
-    ___ quote __ quotes:
+    ___ quote __ ?
         __ quote 'quote'  __ existing_quote 'quote'  a.. quote 'movie'  __ existing_quote 'movie' :
             r.. T..
 
