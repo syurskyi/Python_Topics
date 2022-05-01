@@ -40,7 +40,7 @@ Note:
 2 <= x <= 100
 1 <= target <= 2 * 10^8
 """
-____ f.. _______ lru_cache
+____ f.. _______ l..
 
 
 c_ Solution:
@@ -55,7 +55,7 @@ c_ Solution:
         """
         r.. dfs(target, x, 0) - 1
 
-    @lru_cache(maxsize=N..)
+    ?? m.._N..
     ___ dfs  target, x, power
         """
         power: power, pow(x, power)

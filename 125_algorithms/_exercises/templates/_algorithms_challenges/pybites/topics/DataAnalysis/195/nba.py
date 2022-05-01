@@ -19,36 +19,36 @@ DB TMP / f'nba_{salt}.db'
 Player n..('Player', ('name year first_year team college active '
                                'games avg_min avg_points'
 
-conn sqlite3.connect(DB)
-cur conn.cursor()
+conn _____.c.. ?
+cur ?.c..
 
 
 ___ import_data
     w__ r__.S.. __ session:
-        content ?.g.. DATA_URL).c__.d.. utf-8
+        content ?.g.. D...c__.d.. utf-8
 
-    reader c__.D.. content.s.. , d.._',')
+    reader c__.D.. ?.s..  d.._','
 
     players    # list
-    ___ row __ reader
-        players.a..(? name=row 'Player' ,
-                              year=row 'Draft_Yr' ,
-                              first_year=row 'first_year' ,
-                              team=row 'Team' ,
-                              college=row 'College' ,
-                              active=row 'Yrs' ,
-                              games=row 'Games' ,
-                              avg_min=row 'Minutes.per.Game' ,
-                              avg_points=row 'Points.per.Game'
+    ___ row __ ?
+        ?.a.. ? name_?'Player'
+                              year_?'Draft_Yr'
+                              first_year_? 'first_year'
+                              team_?'Team'
+                              college_? 'College'
+                              active_? 'Yrs'
+                              games_? 'Games'
+                              avg_min_? 'Minutes.per.Game'
+                              avg_points_? 'Points.per.Game'
 
     ?.e.. '''CREATE TABLE IF NOT EXISTS players
                   (name, year, first_year, team, college, active,
                   games, avg_min, avg_points)''')
-    cur.executemany('INSERT INTO players VALUES (?,?,?,?,?,?,?,?,?)', players)
-    conn.commit()
+    ?.e.. I.. I.. players V.. (?,?,?,?,?,?,?,?,?)' ?
+    ?.c..
 
 
-import_data()
+?
 
 
 # you code:

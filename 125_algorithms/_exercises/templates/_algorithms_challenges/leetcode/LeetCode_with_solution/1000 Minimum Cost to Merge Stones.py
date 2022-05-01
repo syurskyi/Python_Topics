@@ -45,7 +45,7 @@ Note:
 1 <= stones[i] <= 100
 """
 ____ t___ _______ L..
-____ f.. _______ lru_cache
+____ f.. _______ l..
 
 
 c_ Solution:
@@ -87,7 +87,7 @@ c_ Solution:
         ___ s __ stones:
             sums.a..(sums[-1] + s)
 
-        @lru_cache(N..)
+        ??(N..)
         ___ F(i, j, m
             __ i >_ j o. m < 1:
                 r.. f__("inf")

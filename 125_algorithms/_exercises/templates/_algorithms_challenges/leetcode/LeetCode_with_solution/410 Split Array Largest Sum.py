@@ -24,7 +24,7 @@ The best way is to split it into [7,2,5] and [10,8],
 where the largest sum among the two subarrays is only 18.
 """
 ____ t___ _______ L..
-____ f.. _______ lru_cache
+____ f.. _______ l..
 
 
 c_ SolutionDP:
@@ -96,7 +96,7 @@ c_ SolutionTLE2:
         ret dfs(l..(nums), m)
         r.. ret
 
-    @lru_cache(maxsize=N..)
+    ?? m.._N..
     ___ dfs  hi, m
         """
         j break the nums[:hi] into left and right part
@@ -129,7 +129,7 @@ c_ SolutionTLE:
         ret dfs(t..(nums), 0, l..(nums), m)
         r.. ret
 
-    @lru_cache(maxsize=N..)
+    ?? m.._N..
     ___ dfs  nums, lo, hi, m
         """
         j break the nums[lo:hi] into left and right part

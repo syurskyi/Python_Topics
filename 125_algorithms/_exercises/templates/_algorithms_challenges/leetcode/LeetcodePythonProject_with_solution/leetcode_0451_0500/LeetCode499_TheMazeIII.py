@@ -20,7 +20,7 @@ c_ Solution(o..
         helper(maze, ball, hole, '', 0, result, visited)
         result.s..(k.._l.... x: (x[1], x[0]
         __ result:
-            r.. result 0 0 
+            r.. ? 0 0
         ____
             r.. 'impossible'
     

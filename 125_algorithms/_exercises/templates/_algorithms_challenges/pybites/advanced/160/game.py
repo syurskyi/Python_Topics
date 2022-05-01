@@ -21,7 +21,7 @@ ___ _create_defeat_mapping
     mapping d..(s..)
     w__ o.. BATTLE_DATA _ __ f:
         reader c__.D.. f)
-        ___ row __ reader
+        ___ row __ ?
             attacker row 'Attacker'
 
 

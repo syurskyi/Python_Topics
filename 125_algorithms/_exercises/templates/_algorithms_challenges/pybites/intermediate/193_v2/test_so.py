@@ -1,8 +1,8 @@
 _______ p__
-____ so _______ top_python_questions
+____ ? _______ ?
 
-actual_return top_python_questions()
-expected_return [
+?
+expected_return
     ('What does the “yield” keyword do?', 9169),
     ('Does Python have a ternary conditional operator?', 5135),
     ('What does if __name__ == “__main__”: do?', 4927),
@@ -25,8 +25,8 @@ expected_return [
 ]
 
 
-?p__.m__.p.('actual, expected',
-                         z..(actual_return, expected_return)
+?p__.m__.p. 'actual, expected',
+                         z.. ? ?
                          )
-___ test_top_python_questions(a.., e..
+___ test_top_python_questions a.. e..
     ... a.. __ e..
