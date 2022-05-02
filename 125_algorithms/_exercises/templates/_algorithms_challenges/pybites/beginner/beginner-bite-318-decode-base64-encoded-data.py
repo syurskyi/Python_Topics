@@ -32,7 +32,7 @@ We generated the data for this exercise using Mockaroo service,
 an excellent service to quickly get realistic fake data.
 """
 
-_______ base64
+_______ b..
 _______ c__
 
 ___ encode
