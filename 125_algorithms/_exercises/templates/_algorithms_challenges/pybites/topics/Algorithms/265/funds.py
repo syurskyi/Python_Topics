@@ -13,7 +13,7 @@ community [3, 2, 6,  4, 7,  5, -8, -9, 3,  8,  4, -12, 3, -10, -15,
              0, 2, 5, -2, 4, 1, 2, 4, 2, -5, 7, 4, 5, -2, 7, 5, -8]
 
 
-___ max_fund(village
+___ max_fund village
     """Find a contiguous subarray with the largest sum."""
     # Hint: while iterating, you could save the best_sum collected so far
     # return total, starting, ending
