@@ -1,6 +1,6 @@
 _______ p__
 
-____ island _______ island_size
+____ ? _______ ?
 
 rectangle [[0, 1, 1, 0],
              [0, 1, 1, 0],
@@ -27,4 +27,4 @@ whole [[1, 1, 1],
     (whole, 16),
 ])
 ___ test_island_size(map_, e..
-    ... island_size(map_) __ e..
+    ... ? ? __ e..
