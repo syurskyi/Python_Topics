@@ -1,5 +1,5 @@
 
-c_ Employee:
+c_ Employee
 
     ___ - , fname, lname, score) __ N..
         first fname.t..
