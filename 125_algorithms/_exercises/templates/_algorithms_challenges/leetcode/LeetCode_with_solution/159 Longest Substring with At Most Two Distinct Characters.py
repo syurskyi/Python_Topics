@@ -13,7 +13,7 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        m d..(i..)
+        m d.. i..
         i 0
         j 0
         maxa 0

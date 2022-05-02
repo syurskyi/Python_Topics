@@ -30,7 +30,7 @@ ___ rent_or_stream(
 
        Check out the tests for examples.
     """
-    month_rental d..(i..)
+    month_rental d.. i..
     return_dict d..(s..)
     ___ movie __ renting_history:
         month_rental[getattr(movie,'date').s.. _Y-_m ] += getattr(movie,'price')

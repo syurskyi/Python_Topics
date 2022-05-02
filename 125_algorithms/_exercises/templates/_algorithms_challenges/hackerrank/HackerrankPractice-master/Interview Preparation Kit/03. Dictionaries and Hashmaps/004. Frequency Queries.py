@@ -5,8 +5,8 @@
 ____ c.. _______ d..
 
 
-arr d..(i..)
-frequencies d..(i..)
+arr d.. i..
+frequencies d.. i..
 result    # list
 ___ i __ r..(i..(i.. ))):
     command, value m.. i.., i.. ).s..

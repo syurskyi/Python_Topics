@@ -57,7 +57,7 @@ c_ Solution:
         For every letter
         C_letter (a) >= max(C_letter(b) for b in B)
         """
-        mx d..(i..)
+        mx d.. i..
         ___ b __ B:
             c C..(b)
             ___ k, v __ c.i..

@@ -77,7 +77,7 @@ ___ return_codon_usage_table(
     
     amino_acid_mapping get_translation_table(translation_table_str)
     total 0
-    codon_to_count d..(i..)
+    codon_to_count d.. i..
     
     ___ sequence __ sequences:
         sequence sequence.s..

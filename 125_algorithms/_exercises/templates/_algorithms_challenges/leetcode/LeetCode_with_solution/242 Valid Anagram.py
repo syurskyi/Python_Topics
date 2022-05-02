@@ -22,7 +22,7 @@ c_ Solution:
         :type t: str
         :rtype: bool
         """
-        cnt d..(i..)
+        cnt d.. i..
         ___ c __ s:
             cnt[c] += 1
 

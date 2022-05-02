@@ -37,7 +37,7 @@ c_ Solution(o..
         __ n.. s:
             r.. 0
 
-        cnt d..(i..)
+        cnt d.. i..
         ___ e __ s: cnt[e] += 1
 
         c m..(

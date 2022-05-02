@@ -33,9 +33,9 @@ c_ Solution:
         """
         Running attribution
         """
-        counter d..(i..)
+        counter d.. i..
         ret 0
-        ___ t __ t__:
+        ___ t __ t__
             ret += counter[(60 - t) % 60]  # handle 0
             counter[t % 60] += 1
 
@@ -50,8 +50,8 @@ c_ Solution:
 
         attribution error
         """
-        hm d..(i..)
-        ___ t __ t__:
+        hm d.. i..
+        ___ t __ t__
             hm[t % 60] += 1
 
         ret 0

@@ -7,7 +7,7 @@ ____ c.. _______ d..
 
 ___ t __ r..(i..(i.. ))):
     s i.. )
-    substrings d..(i..)
+    substrings d.. i..
 
     ___ i __ r..(1, l..(s:
         ___ j __ r..(l..(s) - i + 1

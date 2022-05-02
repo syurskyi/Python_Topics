@@ -35,7 +35,7 @@ c_ Solution:
         __ n.. nums:
             r..
 
-        counter d..(i..)
+        counter d.. i..
         first    # dict  # map from number to index
         mx [0, 0]  #  [degree, length]
         ___ i, n __ e..(nums

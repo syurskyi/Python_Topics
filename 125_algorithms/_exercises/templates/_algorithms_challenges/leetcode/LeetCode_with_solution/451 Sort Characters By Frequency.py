@@ -14,7 +14,7 @@ c_ Solution(o..
         :type s: str
         :rtype: str
         """
-        counter d..(i..)
+        counter d.. i..
         ___ c __ s:
             counter[c] += 1
 

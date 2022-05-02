@@ -66,7 +66,7 @@ ___ get_dates dates
     return_list    # list
     #
     # to find the most prevalent date format
-    enum_dict d..(i..)
+    enum_dict d.. i..
     ___ date __ dates:
         enum_list _maybe_DateFormats(date)
         ___ index __ r..(l..(enum_list:

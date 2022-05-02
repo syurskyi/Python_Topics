@@ -16,7 +16,7 @@ c_ Solution(o..
         :type guess: str
         :rtype: str
         """
-        cnt d..(i..)
+        cnt d.. i..
         A 0
         B 0
         ___ c __ secret:

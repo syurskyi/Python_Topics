@@ -22,7 +22,7 @@ c_ Solution:
         """
         counter and iterate
         """
-        counter d..(i..)
+        counter d.. i..
         ___ n __ nums:
             counter[n] += 1
 

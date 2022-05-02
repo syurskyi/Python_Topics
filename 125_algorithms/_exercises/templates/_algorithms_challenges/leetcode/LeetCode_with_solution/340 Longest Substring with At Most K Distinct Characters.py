@@ -25,7 +25,7 @@ c_ Solution(o..
         :rtype: int
         """
         st 0  # start
-        counter d..(i..)
+        counter d.. i..
         maxa 0
         ___ idx, val __ e..(s
             __ counter[val] __ 0:

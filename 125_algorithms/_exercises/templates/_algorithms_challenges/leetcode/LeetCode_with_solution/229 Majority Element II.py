@@ -14,7 +14,7 @@ c_ Solution:
         :type nums: list[int]
         :rtype: list[int]
         """
-        cnt d..(i..)
+        cnt d.. i..
         ___ num __ nums:
             __ num __ cnt:
                 cnt[num] += 1

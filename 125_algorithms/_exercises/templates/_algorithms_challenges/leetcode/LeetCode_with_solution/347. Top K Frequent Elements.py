@@ -33,7 +33,7 @@ c_ Solution(o..
         :type K: int
         :rtype: List[int]
         """
-        cnt d..(i..)
+        cnt d.. i..
         ___ e __ nums:
             cnt[e] += 1
 

@@ -41,7 +41,7 @@ c_ Solution:
         """
         Iterate and count edge at a position
         """
-        h d..(i..)
+        h d.. i..
         m l..(wall)
         ___ i __ r..(m
             s 0

@@ -30,7 +30,7 @@ c_ Solution(o..
         :type t: str
         :rtype: str
         """
-        d d..(i..)
+        d d.. i..
         ___ e __ s:
             d[e] += 1
 

@@ -27,7 +27,7 @@ c_ Solution:
         nC2
         """
         prefix_sum 0
-        counter d..(i..)
+        counter d.. i..
         counter[0] 1  # important trival case
         ___ a __ A:
             prefix_sum += a
@@ -50,7 +50,7 @@ c_ Solution:
         prefix sum has to be MOD by K.
         """
         prefix_sum 0
-        counter d..(i..)
+        counter d.. i..
         counter[0] 1  # trival case. !important
         ret 0
         ___ a __ A:

@@ -28,7 +28,7 @@ c_ Solution:
 
         cnt 0
 
-        ___ t, is_start __ t__:
+        ___ t, is_start __ t__
             __ is_start:
                 cnt += 1
             ____

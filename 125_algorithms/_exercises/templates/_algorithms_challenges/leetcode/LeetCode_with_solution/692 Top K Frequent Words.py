@@ -46,7 +46,7 @@ c_ Solution:
         heap log k
         """
         h    # list
-        counter d..(i..)
+        counter d.. i..
         ___ w __ words:
             counter[w] += 1
 

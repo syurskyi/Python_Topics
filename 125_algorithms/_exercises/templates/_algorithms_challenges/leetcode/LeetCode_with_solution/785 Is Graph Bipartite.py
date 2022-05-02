@@ -51,7 +51,7 @@ c_ Solution:
         dfs coloring
         """
         G graph
-        color d..(i..)
+        color d.. i..
         ___ k __ r..(l..(G:
             __ k n.. __ color:
                 color[k] 0

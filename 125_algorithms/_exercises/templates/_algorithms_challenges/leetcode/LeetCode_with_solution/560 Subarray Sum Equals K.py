@@ -20,7 +20,7 @@ c_ Solution:
         """
         prefix sum
         """
-        h d..(i..)
+        h d.. i..
         ret 0
         s 0
         h[s] += 1

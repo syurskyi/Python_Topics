@@ -42,11 +42,11 @@ c_ Solution:
 
         Let F[i] be the number of consecutive subsequence at A[i]
         """
-        counter d..(i..)
+        counter d.. i..
         ___ e __ nums:
             counter[e] += 1
 
-        F d..(i..)
+        F d.. i..
         ___ e __ nums:
             __ counter[e] __ 0:
                 _____

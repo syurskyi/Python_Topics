@@ -23,7 +23,7 @@ c_ Solution(o..
         :type magazine: str
         :rtype: bool
         """
-        d d..(i..)
+        d d.. i..
 
         ___ e __ magazine:
             d[e] += 1

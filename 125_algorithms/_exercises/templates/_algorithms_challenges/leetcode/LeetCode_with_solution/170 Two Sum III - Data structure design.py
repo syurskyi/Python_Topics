@@ -11,7 +11,7 @@ c_ TwoSum(o..
         """
         initialize your data structure here
         """
-        hash_map d..(i..)
+        hash_map d.. i..
 
     ___ add  number
         """

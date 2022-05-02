@@ -42,7 +42,7 @@ c_ Solution:
         Free page size is n + 1 - (# of max)
         Find the idle count
         """
-        counter d..(i..)
+        counter d.. i..
         ___ t __ tasks:
             counter[t] += 1
 
@@ -68,7 +68,7 @@ c_ Solution:
         max heap, most tasks first
         cool down queue
         """
-        counter d..(i..)
+        counter d.. i..
         ___ t __ tasks:
             counter[t] += 1
 

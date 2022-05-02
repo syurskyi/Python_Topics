@@ -6,8 +6,8 @@ ____ c.. _______ d..
 
 
 ___ count_triplets(arr, r
-    arr2 d..(i..)
-    arr3 d..(i..)
+    arr2 d.. i..
+    arr3 d.. i..
     count 0
     ___ i __ arr:
         count += arr3[i]

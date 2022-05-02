@@ -68,7 +68,7 @@ c_ Solution:
             F[n-2] + reward if pick n
 
         """
-        counter d..(i..)
+        counter d.. i..
         ___ n __ nums:
             counter[n] += 1
 

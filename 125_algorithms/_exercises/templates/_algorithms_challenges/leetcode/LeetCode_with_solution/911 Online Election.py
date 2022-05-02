@@ -44,7 +44,7 @@ c_ TopVotedCandidate:
         query is binary search
         """
         maxes    # list  # [(t, i)]  at time t
-        counter d..(i..)
+        counter d.. i..
         tp s..(z..(times, persons
         ___ t, p __ tp:
             counter[p] += 1

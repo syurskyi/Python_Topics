@@ -44,8 +44,8 @@ c_ Solution:
         :rtype: int
         """
         N l..(A)
-        AB d..(i..)
-        CD d..(i..)
+        AB d.. i..
+        CD d.. i..
         ___ i __ r..(N
             ___ j __ r..(N
                 AB[A[i] + B[j]] += 1

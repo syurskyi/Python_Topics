@@ -20,7 +20,7 @@ c_ Solution:
         cnt 0
         time2cnt    # dict
 
-        ___ t, status __ t__:
+        ___ t, status __ t__
             __ status __ 0:
                 cnt -_ 1
             ____ status __ 1:

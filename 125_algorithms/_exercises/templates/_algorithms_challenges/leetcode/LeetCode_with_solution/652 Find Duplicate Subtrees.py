@@ -53,7 +53,7 @@ c_ MerkleHash:
 
 c_ Solution:
     ___ -
-        counter d..(i..)
+        counter d.. i..
         merkle_hash MerkleHash()
 
     ___ findDuplicateSubtrees  root: TreeNode) __ L..[TreeNode]:
@@ -88,7 +88,7 @@ c_ Solution2:
         Only need to return the root
         """
         ret    # list
-        w..(root, d..(i..), ret)
+        w..(root, d.. i.., ret)
         r.. ret
 
     ___ w..  cur, counter, ret) __ s..

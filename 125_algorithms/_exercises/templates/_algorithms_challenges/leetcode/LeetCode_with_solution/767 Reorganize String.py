@@ -26,7 +26,7 @@ c_ Solution:
         """
         piles by max char and circular append
         """
-        counter d..(i..)
+        counter d.. i..
         ___ c __ S:
             counter[c] += 1
 

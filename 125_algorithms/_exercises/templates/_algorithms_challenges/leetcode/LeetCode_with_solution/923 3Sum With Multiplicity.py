@@ -45,7 +45,7 @@ c_ Solution:
         3 pointers O(N + K^2)
         j, k scan each element once
         """
-        counter d..(i..)
+        counter d.. i..
         ___ a __ A:
             counter[a] += 1
 

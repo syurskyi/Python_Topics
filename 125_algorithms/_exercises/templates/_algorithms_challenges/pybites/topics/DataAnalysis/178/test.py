@@ -16,7 +16,7 @@ u..(
 year_argument 'None'
 
 w__ o.. commits) __ f:
-    commit_log d..(i..)
+    commit_log d.. i..
     ___ line __ f:
         #print(line)
         date, commit  = line.s..(' | ')

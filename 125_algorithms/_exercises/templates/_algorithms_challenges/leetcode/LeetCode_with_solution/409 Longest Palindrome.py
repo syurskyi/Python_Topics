@@ -29,7 +29,7 @@ c_ Solution(o..
         :type s: str
         :rtype: int
         """
-        c d..(i..)
+        c d.. i..
         ___ elt __ s:
             c[elt] += 1
 

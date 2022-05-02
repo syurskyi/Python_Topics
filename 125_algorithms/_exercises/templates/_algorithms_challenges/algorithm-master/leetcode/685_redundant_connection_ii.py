@@ -22,7 +22,7 @@ c_ Solution:
         """
         ans edge N..  # `edge` is the last edge in a loop
         adj c...d..(s..)
-        uf c...d..(i..)
+        uf c...d.. i..
         has_parent s..()
 
         ___ u, v __ edges:

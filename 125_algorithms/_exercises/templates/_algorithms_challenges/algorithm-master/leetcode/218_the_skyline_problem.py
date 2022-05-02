@@ -60,7 +60,7 @@ c_ Solution:
         t__.s..()
         heap HashHeapq()
 
-        ___ x, height, is_start __ t__:
+        ___ x, height, is_start __ t__
             __ is_start:
                 heap.push(-height)
             ____

@@ -56,7 +56,7 @@ c_ Solution(o..
         """
         __ n.. s o. k __ 0: r.. s
 
-        d d..(i..)
+        d d.. i..
         ___ c __ s:
             d[c] += 1
 

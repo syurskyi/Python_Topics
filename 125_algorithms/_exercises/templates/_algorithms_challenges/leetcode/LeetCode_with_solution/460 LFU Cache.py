@@ -51,7 +51,7 @@ c_ LFUCache:
         """
         cap capacity
         values    # dict
-        freqs d..(i..)
+        freqs d.. i..
         keys d..(O..)
         mini -1  # mini frequency
 

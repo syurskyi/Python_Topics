@@ -23,7 +23,7 @@ c_ Solution:
         """
         counter + two pointers
         """
-        counter d..(i..)
+        counter d.. i..
         s1_set s..(s1)
         ___ c __ s1:
             counter[c] += 1
