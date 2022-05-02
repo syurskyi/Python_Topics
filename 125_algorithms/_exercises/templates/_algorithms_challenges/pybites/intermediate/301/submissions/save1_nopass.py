@@ -1,7 +1,7 @@
 _______ __
 ____ d__ _______ d__, t..
 ____ p.. _______ P..
-____ t___ _______ Dict, L..
+____ t___ _______ D.., L..
 ____ u__.r.. _______ u..
 
 URL "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"

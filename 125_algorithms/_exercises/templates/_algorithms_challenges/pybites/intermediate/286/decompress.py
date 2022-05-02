@@ -1,23 +1,14 @@
-____ t___ _______ Dict
-
-
-___ decompress(s__: s.., table: Dict[s.., s..]) __ s..
-
-
-    result    # list
-    ___ c __ s__:
-        __ c __ table:
-            result.e.. decompress(table[c],table
-        ____
-            result.a..(c)
-
-    r.. ''.j..(result)
-
-
-
-
-
-
-
-
-
+# ____ t___ _______ D..
+#
+#
+# ___ decompress s__ s.. table D.. s.. s.. __ s..
+#
+#
+#     result    # list
+#     ___ c __ s__
+#         __ ? __ t..
+#             ?.e.. d.. t.. ? t..
+#         ____
+#             ?.a.. ?
+#
+#     r.. ''.j.. ?
