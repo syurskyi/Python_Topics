@@ -7,11 +7,11 @@ data 'https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv'
 tmp  P.. __.g.. "TMP", "/tmp"
 stats tmp / 'bites.csv'
 
-__ n.. stats.exists
+__ n.. ?.e..
     u.. ? stats)
 
 
-___ get_most_complex_bites(N=10, stats=stats
+___ get_most_complex_bites N_10 stats_?
     """Parse the bites.csv file (= stats variable passed in), see example
        output in the Bite description.
        Return a list of Bite IDs (int or str values are fine) of the N
@@ -31,7 +31,7 @@ ___ get_most_complex_bites(N=10, stats=stats
         r.. newlist[0:N]
 
 __ _____ __ _____
-    res get_most_complex_bites()
-    print(res)
+    res ?
+    print ?
 
 #get_most_complex_bites()

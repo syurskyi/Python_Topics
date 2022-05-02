@@ -42,7 +42,7 @@ ___ test_get_not_existing_quote
 ___ test_create_quote
     new_quote d..(quote='You talking to me?',
                      movie='Taxi driver')
-    response client.post(API_ENDPOINT,
+    response client.p.. API_ENDPOINT,
                            data=j__.d..new_quote),
                            content_type='application/json')
     ... response.status_code __ 201
@@ -55,7 +55,7 @@ ___ test_create_quote
 
 ___ test_create_quote_missing_data
     new_quote    # dict
-    response client.post(API_ENDPOINT,
+    response client.p.. API_ENDPOINT,
                            data=j__.d..new_quote),
                            content_type='application/json')
     ... response.status_code __ 400
@@ -63,7 +63,7 @@ ___ test_create_quote_missing_data
 
 ___ test_create_quote_incomplete_data
     new_quote d..(quote='You talking to me?')
-    response client.post(API_ENDPOINT,
+    response client.p.. API_ENDPOINT,
                            data=j__.d..new_quote),
                            content_type='application/json')
     ... response.status_code __ 400
@@ -72,7 +72,7 @@ ___ test_create_quote_incomplete_data
 ___ test_create_existing_quote
     new_quote d..(quote='You talking to me?',
                      movie='Taxi driver')
-    response client.post(API_ENDPOINT,
+    response client.p.. API_ENDPOINT,
                            data=j__.d..new_quote),
                            content_type='application/json')
     ... response.status_code __ 400

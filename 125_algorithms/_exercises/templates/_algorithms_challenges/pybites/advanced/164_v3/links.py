@@ -8,7 +8,7 @@ ___ make_html_links
     ___ line __ ___.stdin:
         res process_line(line)
         __ res a.. l..(res.s.. > 0
-            print(res)
+            print ?
 
 
 ___ process_line(line

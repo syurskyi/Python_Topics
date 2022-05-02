@@ -19,7 +19,7 @@ c_ RestAPITest(unittest.TestCase
         payload j__.d..{
             'user': 'Adam'
         })
-        response api.post('/add', payload)
+        response api.p.. '/add', payload)
         e.. {
             'name': 'Adam',
             'owes': {},
@@ -85,7 +85,7 @@ c_ RestAPITest(unittest.TestCase
             'borrower': 'Bob',
             'amount': 3
         })
-        response api.post('/iou', payload)
+        response api.p.. '/iou', payload)
         e.. {
             'users': [
                 {
@@ -141,7 +141,7 @@ c_ RestAPITest(unittest.TestCase
             'borrower': 'Bob',
             'amount': 3
         })
-        response api.post('/iou', payload)
+        response api.p.. '/iou', payload)
         e.. {
             'users': [
                 {
@@ -198,7 +198,7 @@ c_ RestAPITest(unittest.TestCase
             'borrower': 'Adam',
             'amount': 3
         })
-        response api.post('/iou', payload)
+        response api.p.. '/iou', payload)
         e.. {
             'users': [
                 {
@@ -250,7 +250,7 @@ c_ RestAPITest(unittest.TestCase
             'borrower': 'Bob',
             'amount': 2
         })
-        response api.post('/iou', payload)
+        response api.p.. '/iou', payload)
         e.. {
             'users': [
                 {
@@ -300,7 +300,7 @@ c_ RestAPITest(unittest.TestCase
             'borrower': 'Bob',
             'amount': 4.0
         })
-        response api.post('/iou', payload)
+        response api.p.. '/iou', payload)
         e.. {
             'users': [
                 {
@@ -352,7 +352,7 @@ c_ RestAPITest(unittest.TestCase
             'borrower': 'Bob',
             'amount': 3.0
         })
-        response api.post('/iou', payload)
+        response api.p.. '/iou', payload)
         e.. {
             'users': [
                 {

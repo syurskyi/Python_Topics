@@ -53,4 +53,4 @@ __ _____ __ _____
 
     s Solution()
     res s.read([0] * 4, 4)
-    print(res)
+    print ?

@@ -13,4 +13,4 @@ w.... n.. solved:
     ____
         res res % i..(cal[1])
         solved T..
-        print(res)
+        print ?

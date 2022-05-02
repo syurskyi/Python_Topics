@@ -15,4 +15,4 @@ ___ i __ r..(1,i..(d 0+1
         
     
 res ' '.j..(s..(e) ___ e __ result)
-print(res)
+print ?

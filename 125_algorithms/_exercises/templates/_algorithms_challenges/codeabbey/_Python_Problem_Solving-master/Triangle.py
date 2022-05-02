@@ -17,4 +17,4 @@ ___ i __ r..(0,data
         res += '0'
         res += ' '
     
-print(res)
+print ?

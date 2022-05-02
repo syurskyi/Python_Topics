@@ -1,9 +1,9 @@
 ____ p.. _______ P..
-____ tempfile _______ TemporaryDirectory
+____ t.. _______ T..
 
 _______ p__
 
-____ bites _______ get_most_complex_bites
+____ ? _______ ?
 
 TMP P..('/tmp')
 BITES_CSV TMP / 'intro_bites.csv'
@@ -23,9 +23,9 @@ Bite 110. Type conversion and exception handling;1.5
 
 ?p__.f..
 ___ intro_bites
-    w__ TemporaryDirectory(dir=TMP
-        w__ o.. BITES_CSV, 'w') __ f:
-            f.w.. INTRO_BITE_STATS)
+    w__ T.. dir_T..
+        w__ o.. ? _ __ f:
+            ?.w.. ?
     r.. BITES_CSV
 
 
@@ -34,8 +34,8 @@ ___ intro_bites
     (6,  '88', '31', '50', '90', '179', '98' ),
     (10,  '88', '31', '50', '90', '179', '98', '190', '42', '69', '40' ),
 ])
-___ test_different_args_for_N(N, e..
-    a.. get_most_complex_bites(N)
+___ test_different_args_for_N N e..
+    a.. ? ?
     # str or int for IDs is fine with us
     a.. [s.. ? ___ i __ a..]
     ... a.. __ e..

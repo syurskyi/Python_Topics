@@ -16,4 +16,4 @@ w.... count < d:
     count count + 1
     
 res ' '.j..(s..(j) ___ j __ res)
-print(res)
+print ?
