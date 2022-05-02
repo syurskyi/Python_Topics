@@ -1,6 +1,6 @@
 _______ p__
 
-____ strings _______ common_words
+____ ? _______ ?
 
 sentence1 =  'To', 'be', 'or', 'not', 'to', 'be',
              'that', 'is', 'a', 'question'
@@ -19,6 +19,6 @@ sentence5 =  'be', 'a', 'good', 'man'
     (sentence2, sentence3,  'to' ),
     (sentence5, sentence1,  'a', 'be' ),
 ])
-___ test_common_words(sentence1, sentence2, e..
-    a.. common_words(sentence1, sentence2)
+___ test_common_words sentence1 sentence2 e..
+    a.. ? ? ?
     ... a.. __ e..

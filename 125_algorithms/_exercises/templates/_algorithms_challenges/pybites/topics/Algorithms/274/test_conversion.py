@@ -1,6 +1,6 @@
 _______ p__
 
-____ conversion _______ dec_to_base
+____ ? _______ ?
 
 
 ?p__.m__.p. "number, base, expected", [
@@ -11,5 +11,5 @@ ____ conversion _______ dec_to_base
     (177, 8, 261), (256, 8, 400), (1024, 8, 2000),
     (2020, 8, 3744),
 ])
-___ test_dec_to_base(number, base, e..
-    ... dec_to_base(number, base) __ e..
+___ test_dec_to_base number base e..
+    ... ? ? ? __ e..
