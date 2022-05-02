@@ -10,7 +10,7 @@ c_ Solution:
         S s..(S)
 
         ans    # list
-        dfs(S, ans, [])
+        dfs(S, ans,    # list)
         r.. ans
 
     ___ dfs  S, ans, p..

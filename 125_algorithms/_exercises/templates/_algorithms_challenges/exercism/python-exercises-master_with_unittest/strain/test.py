@@ -5,7 +5,7 @@ ____ strain _______ keep, discard
 
 c_ StrainTest(unittest.TestCase
     ___ test_empty_sequence
-        assertEqual(keep([], l.... x: x % 2 __ 0), [])
+        assertEqual(keep(   # list, l.... x: x % 2 __ 0), [])
 
     ___ test_empty_keep
         inp [2, 4, 6, 8, 10]
@@ -33,7 +33,7 @@ c_ StrainTest(unittest.TestCase
 
     ___ test_keep_discard
         inp =  '1,2,3', 'one', 'almost!', 'love'
-        assertEqual(discard(keep(inp, s...i..), s...i..), [])
+        assertEqual(discard(keep(inp, s...i..), s...i..),    # list)
 
     ___ test_keep_plus_discard
         inp =  '1,2,3', 'one', 'almost!', 'love'

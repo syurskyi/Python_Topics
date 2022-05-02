@@ -5,7 +5,7 @@ c_ Solution:
     """
     ___ groupAnagrams  s
         __ n.. s:
-            r.. []
+            r..    # list
 
         group    # dict
 

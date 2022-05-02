@@ -16,9 +16,9 @@ c_ Board:
         r.. x >_ 0 a.. x < width a.. y >_ 0 a.. y < height
 
     ___ w..  x, y,
-             visited_territory=[],
-             visited_coords=[],
-             visited_stones=[]
+             visited_territory=   # list,
+             visited_coords=   # list,
+             visited_stones=   # list
         __ n.. (x, y) __ visited_coords a.. valid(x, y
             s board[y][x]
             __ s __ STONES:

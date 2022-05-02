@@ -14,6 +14,6 @@ ___ n_digit_number(number: T, n: i..) __ i..
 
 
 ___ n_digit_numbersnumbers L.. T n i.. __ L.. i..
-    __ n < 1:
+    __ n < 1
         r.. V...
     r.. l.. m..(l.... x: n_digit_number(x, n), numbers

@@ -17,7 +17,7 @@ c_ Solution:
         __ n.. s:
             r.. ans
 
-        dfs(s, 0, target, 0, 0, ans, [])
+        dfs(s, 0, target, 0, 0, ans,    # list)
         r.. ans
 
     ___ dfs  s, start, target, val, multi, ans, p..

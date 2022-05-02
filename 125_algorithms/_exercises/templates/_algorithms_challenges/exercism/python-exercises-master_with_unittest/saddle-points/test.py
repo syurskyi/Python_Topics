@@ -24,7 +24,7 @@ c_ SaddlePointTest(unittest.TestCase
         assertEqual(saddle_points(inp), ans)
 
     ___ test_empty_matrix
-        assertEqual(saddle_points([]), s..
+        assertEqual(saddle_points(   # list), s..
 
     ___ test_irregular_matrix
         inp [[3, 2, 1], [0, 1], [2, 1, 0]]

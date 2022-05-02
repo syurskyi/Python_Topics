@@ -74,7 +74,7 @@ c_ ReactTest(unittest.TestCase
 
         output.add_callback(callback1)
         input_.v.. 2
-        assertEqual(observer, [])
+        assertEqual(observer,    # list)
         input_.v.. 4
         assertEqual(observer[-1], 222)
 
@@ -148,7 +148,7 @@ c_ ReactTest(unittest.TestCase
         output.remove_callback(callback1)
         input_.v.. 2
 
-        assertEqual(cb1_observer, [])
+        assertEqual(cb1_observer,    # list)
         assertEqual(cb2_observer[-1], 3)
 
     ___ test_callbacks_should_only_be_called_once
@@ -189,7 +189,7 @@ c_ ReactTest(unittest.TestCase
         input_.v.. 3
         input_.v.. 4
         input_.v.. 5
-        assertEqual(observer, [])
+        assertEqual(observer,    # list)
 
     # Utility functions.
     ___ callback_factory  observer

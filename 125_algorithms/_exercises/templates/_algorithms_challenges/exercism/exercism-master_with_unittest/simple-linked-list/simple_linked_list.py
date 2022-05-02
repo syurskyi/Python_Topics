@@ -11,7 +11,7 @@ c_ Node:
 
 
 c_ LinkedList:
-    ___ - , values=[]
+    ___ - , values=   # list
         _size 0
         _head N..
 

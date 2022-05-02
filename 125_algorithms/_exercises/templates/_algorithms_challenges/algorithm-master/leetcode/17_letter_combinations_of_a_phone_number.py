@@ -5,7 +5,7 @@ c_ Solution:
         :rtype: List[str]
         """
         __ n.. s:
-            r.. []
+            r..    # list
 
         L {
             '2': 'abc', '3': 'def',  '4': 'ghi', '5': 'jkl',
@@ -15,7 +15,7 @@ c_ Solution:
         queue, _queue    # list, []
         ___ d __ s:
             __ d n.. __ L:
-                r.. []
+                r..    # list
             __ n.. queue:
                 queue.e.. l..(L[d]
                 _____
@@ -23,7 +23,7 @@ c_ Solution:
             ___ c __ L[d]:
                 ___ _c __ queue:
                     _queue.a..(_c + c)
-            queue, _queue _queue, []
+            queue, _queue _queue,    # list
 
         queue.s..()
         r.. ?

@@ -29,7 +29,7 @@ c_ Solution(o..
         :rtype: int
         """
         res [0]
-        dfs(0, group, profit, G, P, [], 0, res)
+        dfs(0, group, profit, G, P,    # list, 0, res)
         r.. res[0]
     
     ___ dfs  ind, group, profit, G, P, curGroup, curProfit, res

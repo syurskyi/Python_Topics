@@ -15,7 +15,7 @@ c_ Solution:
         :return: a list of lists of integers
         """
         result    # list
-        get_permute(num, [], result)
+        get_permute(num,    # list, result)
         r.. m.. l.., s.. m..(t.., result)))
 
 
@@ -37,7 +37,7 @@ c_ Solution:
         """
         result    # list
         num.s..()
-        get_permute(num, [], result)
+        get_permute(num,    # list, result)
         r.. result
 
     ___ get_permute  nums, current, result

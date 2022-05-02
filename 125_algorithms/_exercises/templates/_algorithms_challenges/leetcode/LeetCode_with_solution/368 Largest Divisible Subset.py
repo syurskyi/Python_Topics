@@ -32,7 +32,7 @@ c_ Solution(o..
         :type A: List[int]
         :rtype: List[int]
         """
-        __ n.. A: r.. []
+        __ n.. A: r..    # list
 
         F    # dict
         pi    # dict

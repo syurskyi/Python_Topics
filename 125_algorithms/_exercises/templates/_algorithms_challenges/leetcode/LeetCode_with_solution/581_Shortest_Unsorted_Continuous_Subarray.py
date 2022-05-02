@@ -22,13 +22,13 @@ c_ Solution o..
         :type nums: List[int]
         :rtype: int
         """
-        stack = []
+        stack =    # list
         l, r = l.. nums), 0
         ___ i __ r.. l.. nums)):
             w.. l.. stack) != 0 and nums[stack[-1]] > nums[i]:
                 l = min(l, stack.pop())
             stack.append(i)
-        stack = []
+        stack =    # list
         ___ i __ r.. l.. nums) - 1, -1, -1):
             w.. l.. stack) != 0 and nums[stack[-1]] < nums[i]:
                 r = max(r, stack.pop())

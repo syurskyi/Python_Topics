@@ -11,7 +11,7 @@ c_ Solution(o..
         :type wordDict: List[str]
         :rtype: List[str]
         """
-        __ n.. s: r.. []
+        __ n.. s: r..    # list
         dp [[] ___ _ __ r..(l..(s)+1)]
         dp[0] T..
         ___ i __ r..(l..(s)+1
@@ -20,7 +20,7 @@ c_ Solution(o..
                     __ s[i:i+l.. ?] __ word:
                         dp[i+l.. ?].a..(word)
         res    # list
-        helper(dp, l..(s), res, [])
+        helper(dp, l..(s), res,    # list)
         r.. res
     
     ___ helper  dp, i, res, curr

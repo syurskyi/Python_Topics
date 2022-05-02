@@ -5,7 +5,7 @@ ____ accumulate _______ a...
 
 c_ AccumulateTest(unittest.TestCase
     ___ test_empty_sequence
-        assertEqual(accumulate([], l.... x: x / 2), [])
+        assertEqual(accumulate(   # list, l.... x: x / 2), [])
 
     ___ test_pow
         assertEqual(

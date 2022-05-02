@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: int
         """
         __ n <_ 0:
-            r.. []
+            r..    # list
         sumArr [0]
         usedColumns [0]*n
         placeQueen(usedColumns, 0, sumArr)

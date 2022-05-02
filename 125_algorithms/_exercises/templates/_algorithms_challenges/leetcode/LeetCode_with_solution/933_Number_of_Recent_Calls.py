@@ -1,7 +1,7 @@
 c_ RecentCounter o..
 
     ___ -(self):
-        queue = []
+        queue =    # list
 
     ___ ping  t):
         """

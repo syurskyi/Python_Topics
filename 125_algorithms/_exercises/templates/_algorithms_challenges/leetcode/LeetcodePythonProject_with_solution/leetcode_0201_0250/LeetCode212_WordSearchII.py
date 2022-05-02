@@ -36,7 +36,7 @@ c_ Solution(o..
         m, n l..(board), l..(board 0
         ___ i __ r..(m
             ___ j __ r..(n
-                dfs(board, i, j, root, [], result)
+                dfs(board, i, j, root,    # list, result)
         r.. l..(result)
     
     ___ dfs  board, i, j, p, elem, result

@@ -13,7 +13,7 @@ ___ chatroom_status(users
 
 ___ test
     print("test has started")
-    __ chatroom_status([]) ! "no one online":
+    __ chatroom_status(   # list) ! "no one online":
         print("error1")
     __ chatroom_status(["becky325"]) ! "becky325 online":
         print("erro2")

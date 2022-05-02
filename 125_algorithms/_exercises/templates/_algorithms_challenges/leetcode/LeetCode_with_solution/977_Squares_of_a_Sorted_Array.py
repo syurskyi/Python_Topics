@@ -14,7 +14,7 @@ c_ Solution o..
         # pos point to first positve
         # npos point to larget negative
         npos = pos - 1
-        res = []
+        res =    # list
         w.. pos < l.. A) and npos >= 0:
             __ A[npos] ** 2 < A[pos] ** 2:
                 res.append(A[npos] ** 2)

@@ -20,7 +20,7 @@ c_ Solution:
         __ n.. root:
             r.. ans
 
-        dfs(root, target, ans, [])
+        dfs(root, target, ans,    # list)
 
         r.. ans
 

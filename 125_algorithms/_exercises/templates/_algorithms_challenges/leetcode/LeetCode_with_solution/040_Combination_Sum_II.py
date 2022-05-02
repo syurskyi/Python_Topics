@@ -7,7 +7,7 @@ c_ Solution o..
         """
         candidates.s..
         dp = [[] ___ _ __ r.. target + 1)]
-        dp[0].append([])
+        dp[0].append(   # list)
         ___ i __ r.. 1, target + 1):
             ___ j __ r.. l.. candidates)):
                 __ candidates[j] > i:
@@ -20,7 +20,7 @@ c_ Solution o..
                     # store index
                     temp.append(j)
                     dp[i].append(temp)
-        res = []
+        res =    # list
         check  # dict
         ___ temp __ dp[target]:
             value = [candidates[t] ___ t __ temp]

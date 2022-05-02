@@ -51,7 +51,7 @@ c_ Solution(o..
         __ n.. edges:
             r.. [0]
 
-        V {i: [] ___ i __ x..(n)}
+        V {i:    # list ___ i __ x..(n)}
         ___ a, b __ edges:
             V[a].a..(b)
             V[b].a..(a)
@@ -106,7 +106,7 @@ c_ Solution_TLE(o..
         __ n.. edges:
             r.. 0
 
-        V {i: [] ___ i __ x..(n)}
+        V {i:    # list ___ i __ x..(n)}
         ___ a, b __ edges:
             V[a].a..(b)
             V[b].a..(a)
@@ -155,7 +155,7 @@ c_ SolutionError(o..
         __ n.. edges:
             r.. 0
 
-        V {i: [] ___ i __ x..(n)}
+        V {i:    # list ___ i __ x..(n)}
         ___ a, b __ edges:
             V[a].a..(b)
             V[b].a..(a)

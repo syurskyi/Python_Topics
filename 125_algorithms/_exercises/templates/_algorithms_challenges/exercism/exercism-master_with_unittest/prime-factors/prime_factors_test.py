@@ -5,7 +5,7 @@ ____ prime_factors _______ prime_factors
 
 c_ PrimeFactorsTest(unittest.TestCase
     ___ test_1
-        assertEqual([], prime_factors(1
+        assertEqual(   # list, prime_factors(1
 
     ___ test_2
         assertEqual([2], prime_factors(2

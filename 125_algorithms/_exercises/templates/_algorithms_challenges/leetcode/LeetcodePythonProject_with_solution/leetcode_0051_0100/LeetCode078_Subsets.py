@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: List[List[int]]
         """
         __ n.. nums:
-            r.. []
+            r..    # list
         result    # list
         elem    # list
         helper(nums, elem, 0, result)

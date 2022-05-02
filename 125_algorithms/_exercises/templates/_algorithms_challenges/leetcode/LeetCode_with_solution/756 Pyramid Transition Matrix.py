@@ -96,7 +96,7 @@ c_ Solution:
             nxt_level.a..(nxt)
             __ dfs(T, level, lo + 1, nxt_level
                 # Too deep - check till top
-                __ dfs(T, nxt_level, 0, []
+                __ dfs(T, nxt_level, 0,    # list
                     r.. T..
             nxt_level.p.. )
 

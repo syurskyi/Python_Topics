@@ -134,7 +134,7 @@ c_ Solution_TLE:
             r..
 
         sequence r..(1, n+1)
-        result get_kth_permutation_dfs(sequence, k, [])
+        result get_kth_permutation_dfs(sequence, k,    # list)
         r.. "".j..(s..(element) ___ element __ result)
 
 

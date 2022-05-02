@@ -53,7 +53,7 @@ c_ Solution:
         ___ k __ V.k..:
             __ k n.. __ visited:
                 __ n.. dfs(V, k, visited, marked, ret
-                    r.. []
+                    r..    # list
 
         ret.r..
         r.. ret
@@ -80,4 +80,4 @@ c_ Solution:
 
 
 __ _______ __ _______
-    ... Solution().findOrder(2, [[0, 1], [1, 0]]) __ []
+    ... Solution().findOrder(2, [[0, 1], [1, 0]]) __    # list

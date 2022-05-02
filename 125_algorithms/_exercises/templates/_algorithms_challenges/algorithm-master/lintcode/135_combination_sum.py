@@ -10,7 +10,7 @@ c_ Solution:
             r.. ans
 
         A.s..()
-        dfs(A, 0, target, ans, [])
+        dfs(A, 0, target, ans,    # list)
         r.. ans
 
     ___ dfs  A, start, remaining, ans, p..

@@ -47,7 +47,7 @@ c_ MiniTwitter:
                     res.e.. tweets[follow_id][-10:])
 
         __ n.. res:
-            r.. []
+            r..    # list
 
         res.s..()
         r.. [tweet ___ _, tweet __ res[-10:]][::-1]
@@ -58,7 +58,7 @@ c_ MiniTwitter:
     """
     ___ getTimeline  user_id
         __ user_id n.. __ tweets:
-            r.. []
+            r..    # list
 
         r.. [tweet ___ _, tweet __ tweets[user_id][-10:]][::-1]
 

@@ -5,7 +5,7 @@ c_ Solution o..
         :rtype: List[int]
         """
         # https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/discuss/92956/Java-accepted-simple-solution
-        res = []
+        res =    # list
         __ nums:
             n = l.. nums)
             ___ i __ r.. n):

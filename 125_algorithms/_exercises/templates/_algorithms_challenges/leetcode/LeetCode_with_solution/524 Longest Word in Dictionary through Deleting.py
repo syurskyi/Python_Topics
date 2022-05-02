@@ -47,7 +47,7 @@ c_ Solution:
 
         ret ""
         ___ e __ s:
-            lst h.p.. e, [])
+            lst h.p.. e,    # list)
             ___ d_idx, w_idx __ lst:
                 w d[d_idx]
                 w_idx += 1

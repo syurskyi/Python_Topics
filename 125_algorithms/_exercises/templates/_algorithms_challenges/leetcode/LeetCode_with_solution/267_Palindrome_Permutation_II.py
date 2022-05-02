@@ -5,8 +5,8 @@ c_ Solution o..
         :rtype: List[str]
         """
         dic  # dict
-        half = []
-        res = []
+        half =    # list
+        res =    # list
         ___ c __ s:
             dic[c] = dic.get(c, 0) + 1
         odd, even = 0, 0
@@ -16,9 +16,9 @@ c_ Solution o..
             ____
                 odd += 1
         __ odd > 1:
-            r_ []
+            r_    # list
         # generate half
-        seed = []
+        seed =    # list
         mid = ''
         ___ c __ dic:
             __ dic[c] % 2 __ 1:

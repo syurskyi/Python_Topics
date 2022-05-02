@@ -1,7 +1,7 @@
 c_ Zipper(o..
     $
     ___ from_tree(tree
-        r.. Zipper(d..(tree), [])
+        r.. Zipper(d..(tree),    # list)
 
     ___ - , tree, ancestors
         tree tree

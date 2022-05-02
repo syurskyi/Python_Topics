@@ -7,7 +7,7 @@ c_ Solution o..
         ls = l.. nums)
         __ ls <= 1:
             r_
-        pair = []
+        pair =    # list
         ___ i __ r.. ls):
             ___ j __ r.. i + 1, ls):
                 # append ascending order pair

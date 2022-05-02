@@ -15,10 +15,10 @@ c_ HandshakeTest(unittest.TestCase
         assertEqual(handshake('101'),  'wink', 'close your eyes' )
 
     ___ test_shake_negative_int
-        assertEqual(handshake(-9), [])
+        assertEqual(handshake(-9),    # list)
 
     ___ test_shake_bin_invalid
-        assertEqual(handshake('121'), [])
+        assertEqual(handshake('121'),    # list)
 
     ___ test_unknown_action
         assertEqual(code( 'wink', 'sneeze' ), '0')

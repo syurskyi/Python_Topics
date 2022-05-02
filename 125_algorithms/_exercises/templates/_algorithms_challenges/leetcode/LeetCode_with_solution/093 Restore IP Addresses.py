@@ -18,7 +18,7 @@ c_ Solution:
         :return: list of strings
         """
         result    # list
-        dfs(s, [], result)
+        dfs(s,    # list, result)
         r.. result
 
     ___ dfs_complicated  seq, cur, result

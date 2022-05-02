@@ -31,7 +31,7 @@ c_ Solution:
         :rtype: List[int]
         """
         __ n.. d..
-            r.. []
+            r..    # list
 
         carry 0
         d..[-1] += 1

@@ -22,10 +22,10 @@ c_ Solution(o..
                 odd += 1
         __ l..(s)%2 __ 0:
             __ odd !_ 0:
-                r.. []
+                r..    # list
         ____
             __ odd >_ 2:
-                r.. []
+                r..    # list
         result    # list
         helper(oddVal, l..(s), hashmap, result)
         r.. result

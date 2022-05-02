@@ -17,7 +17,7 @@ c_ Solution:
         __ n.. root:
             r.. ans
 
-        dfs(root, ans, [])
+        dfs(root, ans,    # list)
 
         r.. ans
 

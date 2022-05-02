@@ -33,7 +33,7 @@ c_ Solution o..
     #     return ''.join(res)
 
     ___ addStrings  num1, num2):
-        res = []
+        res =    # list
         pos1 = l.. num1) - 1
         pos2 = l.. num2) - 1
         carry = 0

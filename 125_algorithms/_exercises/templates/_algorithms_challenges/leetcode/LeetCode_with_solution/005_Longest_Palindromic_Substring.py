@@ -18,7 +18,7 @@ c_ Solution o..
         # this table stores the max length palindrome
         len_table = [0] * tls
         ___ step __ r.. 1, tls / 2 + 1):
-            final = []
+            final =    # list
             ___ pos __ seed:
                 __ pos - step < 0 or pos + step >= tls:
                     continue

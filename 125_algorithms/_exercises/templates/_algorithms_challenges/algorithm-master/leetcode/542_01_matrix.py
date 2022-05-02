@@ -5,7 +5,7 @@ c_ Solution:
         :rtype: List[List[int]]
         """
         __ n.. matrix o. n.. matrix[0]:
-            r.. []
+            r..    # list
 
         m, n l..(matrix), l..(matrix 0
         ans [[f__('inf')] * n ___ _ __ r..(m)]

@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. s:
             r.. ['']
         ans    # list
-        dfs(s, 0, ans, [])
+        dfs(s, 0, ans,    # list)
         r.. ans
 
     ___ dfs  s, i, ans, p..

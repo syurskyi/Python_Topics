@@ -13,7 +13,7 @@ c_ Solution(o..
         hashmap    # dict
         ___ s __ strings:
             hashStr getHash(s)
-            hashmap[hashStr] hashmap.g.. hashStr, []) + [s]
+            hashmap[hashStr] hashmap.g.. hashStr,    # list) + [s]
         res    # list
         ___ vals __ hashmap.v..
             res.a..(vals)

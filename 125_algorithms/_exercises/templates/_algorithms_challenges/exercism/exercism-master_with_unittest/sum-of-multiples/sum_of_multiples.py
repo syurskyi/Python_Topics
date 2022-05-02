@@ -12,5 +12,5 @@ ___ all_multiples(limit, factors
 
 ___ get_multiples(limit, factor
     __ factor __ 0:
-        r.. []
+        r..    # list
     r.. [multiple ___ multiple __ r..(limit) __ multiple % factor __ 0]

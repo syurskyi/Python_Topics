@@ -35,7 +35,7 @@ ___ test_get_words_spoken_season1_cartman_least_talkative(words_spoken_s1
 
 
 ___ get_words_spoken_non_existing_character(words_spoken_s1
-    ... words_spoken_s1 'bogus' .m.. __ []
+    ... words_spoken_s1 'bogus' .m.. __    # list
 
 
 # let's look at another season and other characters

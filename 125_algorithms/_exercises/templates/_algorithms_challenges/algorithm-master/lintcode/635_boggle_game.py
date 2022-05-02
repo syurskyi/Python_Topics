@@ -39,7 +39,7 @@ c_ Solution:
         ___ x __ r..(i, m
             ___ y __ r..(j, n
                 next_words    # list
-                find_next_words(board, x, y, visited, cnt, root, next_words, [])
+                find_next_words(board, x, y, visited, cnt, root, next_words,    # list)
 
                 ___ pos __ next_words:
                     ___ p __ pos:

@@ -15,7 +15,7 @@ c_ BookStoreTests(unittest.TestCase
                                places=2)
 
     ___ test_empty_basket
-        assertAlmostEqual(calculate_total([]), 0.00,
+        assertAlmostEqual(calculate_total(   # list), 0.00,
                                places=2)
 
     ___ test_two_different_books

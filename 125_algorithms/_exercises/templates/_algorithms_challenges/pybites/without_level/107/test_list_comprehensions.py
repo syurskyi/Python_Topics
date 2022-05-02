@@ -13,4 +13,4 @@ ___ test_only_positives
 
 ___ test_filter_zero_and_negatives
     numbers [0, -1, -3, -5]
-    ... filter_positive_even_numbers ?) __ []
+    ... filter_positive_even_numbers ?) __    # list

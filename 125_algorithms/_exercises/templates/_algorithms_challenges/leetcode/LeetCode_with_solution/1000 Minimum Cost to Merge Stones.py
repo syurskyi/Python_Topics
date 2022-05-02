@@ -89,7 +89,7 @@ c_ Solution:
 
         ??(N..)
         ___ F(i, j, m
-            __ i >_ j o. m < 1:
+            __ i >_ j o. m < 1
                 r.. f__("inf")
 
             n j - i

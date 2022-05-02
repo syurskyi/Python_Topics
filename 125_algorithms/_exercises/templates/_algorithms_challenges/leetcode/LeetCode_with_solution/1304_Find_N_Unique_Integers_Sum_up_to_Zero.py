@@ -1,7 +1,7 @@
 c_ Solution:
     ___ sumZero  n: int) -> List[int]:
         prefix_sum = 0
-        res = []
+        res =    # list
         # 1, n-1
         ___ i __ r.. 1, n):
             res.append(i)

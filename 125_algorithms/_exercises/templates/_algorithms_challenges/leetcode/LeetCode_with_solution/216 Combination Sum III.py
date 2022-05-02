@@ -34,7 +34,7 @@ c_ Solution:
         :rtype: list[list[int]]
         """
         ret    # list
-        dfs(k, n, [], ret)
+        dfs(k, n,    # list, ret)
         r.. ret
 
     ___ dfs  remain_k, remain_n, cur, ret

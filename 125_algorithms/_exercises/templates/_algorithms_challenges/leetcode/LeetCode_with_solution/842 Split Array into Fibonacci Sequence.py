@@ -95,7 +95,7 @@ c_ Solution:
                     __ k __ l a.. l..(ret) >_ 3:
                         r.. ret
 
-        r.. []
+        r..    # list
 
 
 __ _______ __ _______

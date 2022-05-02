@@ -11,19 +11,19 @@ c_ SublistTest(unittest.TestCase
 
     ___ test_empty_lists
         assertEqual(
-            check_lists([], []),
+            check_lists(   # list, []),
             EQUAL
         )
 
     ___ test_empty_list_within_non_empty_list
         assertEqual(
-            check_lists([], [1, 2, 3]),
+            check_lists(   # list, [1, 2, 3]),
             SUBLIST
         )
 
     ___ test_non_empty_list_contains_empty_list
         assertEqual(
-            check_lists([1, 2, 3], []),
+            check_lists([1, 2, 3],    # list),
             SUPERLIST
         )
 

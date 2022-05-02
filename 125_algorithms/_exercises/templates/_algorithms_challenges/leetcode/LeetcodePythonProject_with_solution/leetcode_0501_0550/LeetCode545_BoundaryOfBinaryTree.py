@@ -17,7 +17,7 @@ c_ Solution(o..
         :type root: TreeNode
         :rtype: List[int]
         """
-        __ n.. root: r.. []
+        __ n.. root: r..    # list
         __ n.. root.left a.. n.. root.right: r.. [root.val]
         leftBoundary getLeft(root)
         leaves    # list

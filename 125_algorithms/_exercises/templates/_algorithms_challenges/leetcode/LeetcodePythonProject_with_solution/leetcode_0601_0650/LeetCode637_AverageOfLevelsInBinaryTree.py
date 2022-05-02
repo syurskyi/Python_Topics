@@ -16,7 +16,7 @@ c_ Solution(o..
         :type root: TreeNode
         :rtype: List[float]
         """
-        __ n.. root: r.. []
+        __ n.. root: r..    # list
         queue [root]
         nextQueue    # list
         sumVal 0

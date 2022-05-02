@@ -24,7 +24,7 @@ c_ Solution(o..
         :return: a list of Interval
         """
         __ n.. itvls:
-            r.. []
+            r..    # list
 
         itvls.s..(k.._l.... x: x.start)  # sort first, since time complexity less than brute force
         ret [itvls[0]]
@@ -45,7 +45,7 @@ c_ Solution(o..
         :return: a list of Interval
         """
         __ n.. itvls:
-            r.. []
+            r..    # list
 
         ret [itvls[0]]
         ___ interval __ itvls 1|

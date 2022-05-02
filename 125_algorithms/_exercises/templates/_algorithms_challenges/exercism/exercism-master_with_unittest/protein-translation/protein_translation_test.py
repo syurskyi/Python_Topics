@@ -35,7 +35,7 @@ c_ ProteinTranslationTest(unittest.TestCase
 
     ___ test_identifies_stop_codons
         ___ codon __  'UAA', 'UAG', 'UGA' :
-            assertEqual(proteins(codon), [])
+            assertEqual(proteins(codon),    # list)
 
     ___ test_translates_rna_strand_into_correct_protein_list
         strand 'AUGUUUUGG'

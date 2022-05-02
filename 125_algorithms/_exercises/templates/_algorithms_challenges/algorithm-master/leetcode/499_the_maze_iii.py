@@ -31,7 +31,7 @@ c_ Solution:
         sx, sy ball
         tx, ty hole
         queue [(sx, sy)]
-        paths {(sx, sy []}
+        paths {(sx, sy    # list}
         distance {(sx, sy 0}
 
         ___ x, y __ queue:
@@ -108,7 +108,7 @@ c_ Solution2:
         sx, sy ball
         tx, ty hole
         heap [(sx, sy)]
-        paths {(sx, sy []}
+        paths {(sx, sy    # list}
         distance {(sx, sy 0}
 
         w.... heap:

@@ -26,7 +26,7 @@ c_ ListOpsTest(unittest.TestCase
             [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
     ___ test_map_empty
-        assertEqual(list_ops.map_clone(operator.index, []), [])
+        assertEqual(list_ops.map_clone(operator.index,    # list), [])
 
     # tests for length
     ___ test_pos_leng
@@ -34,7 +34,7 @@ c_ ListOpsTest(unittest.TestCase
             list_ops.length([-1, 2, -3, 4, -5, 6, -7, 8, -9, 10]), 10)
 
     ___ test_empty_len
-        assertEqual(list_ops.length([]), 0)
+        assertEqual(list_ops.length(   # list), 0)
 
     # tests for filter
     ___ test_filter_odd
@@ -56,7 +56,7 @@ c_ ListOpsTest(unittest.TestCase
             list_ops.reverse(["xyz", 4.0, "cat", 1]), [1, "cat", 4.0, "xyz"])
 
     ___ test_reverse_empty
-        assertEqual(list_ops.reverse([]), [])
+        assertEqual(list_ops.reverse(   # list), [])
 
     # tests for append
     ___ test_append_tuple
@@ -69,7 +69,7 @@ c_ ListOpsTest(unittest.TestCase
             list_ops.a..([100], r..(1000, [100, r..(1000)])
 
     ___ test_append_to_empty
-        assertEqual(list_ops.a..([], 42), [42])
+        assertEqual(list_ops.a..(   # list, 42), [42])
 
     # tests for foldl
     ___ test_foldl_sum
@@ -105,7 +105,7 @@ c_ ListOpsTest(unittest.TestCase
         assertEqual(list_ops.flat([["x", "y", "z"]]), ["x", "y", "z"])
 
     ___ test_flatten_empty
-        assertEqual(list_ops.flat([]), [])
+        assertEqual(list_ops.flat(   # list), [])
 
     # tests for concat
     ___ test_concat_two
@@ -119,7 +119,7 @@ c_ ListOpsTest(unittest.TestCase
             ["orange", "apple", "banana"])
 
     ___ test_concat_empty
-        assertEqual(list_ops.concat([], []), [])
+        assertEqual(list_ops.concat(   # list, []), [])
 
 
 __ _____ __ _____

@@ -26,7 +26,7 @@ c_ AllergiesTests(unittest.TestCase
         assertFalse(allergies.is_allergic_to('strawberries'
 
     ___ test_no_allergies_at_all
-        assertEqual(Allergies(0).lst, [])
+        assertEqual(Allergies(0).lst,    # list)
 
     ___ test_allergic_to_just_eggs
         assertEqual(Allergies(1).lst,  'eggs' )

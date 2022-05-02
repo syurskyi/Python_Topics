@@ -6,7 +6,7 @@ c_ Solution o..
         """
         # https://leetcode.com/problems/palindrome-pairs/discuss/79219/Python-solution~
         # reverse word and create a word to index map
-        word2index, res = dict([(w[::-1], i) ___ i, w __ e.. words)]), []
+        word2index, res = dict([(w[::-1], i) ___ i, w __ e.. words)]),    # list
         ___ i, word __ e.. words):
             ___ j __ xrange(l.. word) + 1):
                 # Use prefix and postfix

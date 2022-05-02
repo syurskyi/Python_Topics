@@ -12,7 +12,7 @@ c_ Solution(o..
         :rtype: List[List[int]]
         """
         __ n <_ 0 o. n < k:
-            r.. []
+            r..    # list
         result    # list
         elem    # list
         helper(elem, result, 1, n, k)

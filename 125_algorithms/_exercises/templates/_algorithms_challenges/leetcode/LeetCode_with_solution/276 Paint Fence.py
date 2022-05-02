@@ -24,7 +24,7 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        __ n < 1:
+        __ n < 1
             r.. 0
 
         num_diff k
@@ -42,7 +42,7 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        __ n < 1:
+        __ n < 1
             r.. 0
 
         F [[[0 ___ _ __ x..(k)] ___ _ __ x..(k)] ___ _ __ x..(2)]
@@ -82,7 +82,7 @@ c_ Solution(o..
         :type k: int
         :rtype: int
         """
-        __ n < 1:
+        __ n < 1
             r.. 0
 
         F [[[0 ___ _ __ x..(k)] ___ _ __ x..(k)] ___ _ __ x..(n+1)]

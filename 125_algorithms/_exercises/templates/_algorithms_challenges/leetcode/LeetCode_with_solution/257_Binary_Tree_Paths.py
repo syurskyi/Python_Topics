@@ -10,9 +10,9 @@ c_ Solution:
     # @return {string[]}
     ___ binaryTreePaths  root):
         __ root is N..:
-            r_ []
-        paths = []
-        get_path(paths, [], root)
+            r_    # list
+        paths =    # list
+        get_path(paths,    # list, root)
         res = ['->'.join(p) ___ p __ paths ]
         r_ res
 

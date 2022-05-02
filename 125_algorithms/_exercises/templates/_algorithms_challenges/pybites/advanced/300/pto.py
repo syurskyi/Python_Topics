@@ -50,7 +50,7 @@ ___ four_day_weekends $,
         r.. V...(ERROR_MSG)
     ____
         four_day_weekends workdays =  0
-        weekend_dates =[]
+        weekend_dates =   # list
         workday_dates    # list
         current date(year,start_month,1)
         current += r..(weekday=FR)

@@ -80,11 +80,11 @@ c_ Solution o..
                     ____
                         key, value = neigh, word
                     __ neigh __ backward:
-                        hash_map[key] = hash_map.get(key, []) + [value]
+                        hash_map[key] = hash_map.get(key,    # list) + [value]
                         is_connected = True
                     __ not is_connected and neigh __ wordlist:
                         next_level.add(neigh)
-                        hash_map[key] = hash_map.get(key, []) + [value]
+                        hash_map[key] = hash_map.get(key,    # list) + [value]
                         wordlist.discard(neigh)
 
         __ not is_connected:

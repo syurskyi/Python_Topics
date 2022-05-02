@@ -44,7 +44,7 @@ c_ Solution(o..
             ],
             [
                 'aaabbcc',
-                [],
+                   # list,
             ],
         ]
         ___ s, d __ testCases:

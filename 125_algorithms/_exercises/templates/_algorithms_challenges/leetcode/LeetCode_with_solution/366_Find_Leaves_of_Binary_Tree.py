@@ -36,7 +36,7 @@ c_ Solution o..
     #     return res
 
     ___ findLeaves  root):
-        res = []
+        res =    # list
         findLeaves_helper(root, res)
         r_ res
 
@@ -45,6 +45,6 @@ c_ Solution o..
             r_ -1
         level = 1 + max(findLeaves_helper(node.left, res), findLeaves_helper(node.right, res))
         __ l.. res) < level + 1:
-            res.append([])
+            res.append(   # list)
         res[level].append(node.val)
         r_ level

@@ -3,7 +3,7 @@ c_ ConnectingGraph2:
     @param: n: An integer
     """
     ___ - , n
-        __ n < 1:
+        __ n < 1
             r..
         nodes    # dict
         count    # dict

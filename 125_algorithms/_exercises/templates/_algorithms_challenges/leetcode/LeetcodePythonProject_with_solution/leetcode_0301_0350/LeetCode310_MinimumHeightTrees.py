@@ -10,7 +10,7 @@ c_ Solution(o..
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        __ n __ 0: r.. []
+        __ n __ 0: r..    # list
         __ n __ 1: r.. [0]
         graph [s..() ___ _ __ r..(n)]
         ___ e __ edges:
@@ -21,7 +21,7 @@ c_ Solution(o..
             __ l..(nodes) __ 1:
                 leaves.a..(i)
         __ n.. leaves:
-            r.. []
+            r..    # list
         w.... n > 2:
             n n-l..(leaves)
             newLeaves    # list

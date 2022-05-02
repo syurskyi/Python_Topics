@@ -11,7 +11,7 @@ c_ Solution:
             r.. [[]]
 
         ans    # list
-        dfs(s..(A), 0, ans, [])
+        dfs(s..(A), 0, ans,    # list)
         r.. ans
 
     ___ dfs  A, start, ans, subset

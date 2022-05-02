@@ -4,7 +4,7 @@ c_ Solution o..
         :type tokens: List[str]
         :rtype: int
         """
-        stack = []
+        stack =    # list
         ___ t __ tokens:
             try:
                 temp = int(t)

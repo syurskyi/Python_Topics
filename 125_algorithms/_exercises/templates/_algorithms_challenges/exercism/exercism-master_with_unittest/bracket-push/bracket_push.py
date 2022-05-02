@@ -1,5 +1,5 @@
 ___ is_empty(stack
-    r.. stack __ []
+    r.. stack __    # list
 
 
 c_ CheckBrackets:

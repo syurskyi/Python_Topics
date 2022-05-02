@@ -27,7 +27,7 @@ c_ Solution:
             cnt[c] += 1
 
         ___ c __ t:
-            __ c n.. __ cnt o. cnt[c] < 1:
+            __ c n.. __ cnt o. cnt[c] < 1
                 r.. F..
 
             cnt[c] -_ 1

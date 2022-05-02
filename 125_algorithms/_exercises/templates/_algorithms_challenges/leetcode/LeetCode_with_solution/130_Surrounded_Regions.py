@@ -16,7 +16,7 @@ c_ Solution o..
                 board[i][j] = "O" __ board[i][j] __ "S" ____ "X"
 
     ___ buildLeakWall  board):
-        leakWall, height, width = [], l.. board), l.. board[0])
+        leakWall, height, width =    # list, l.. board), l.. board[0])
         ___ i __ r.. height):
             __ board[i][0] __ "O":
                 leakWall.append((i, 0))

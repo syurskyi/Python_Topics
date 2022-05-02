@@ -8,7 +8,7 @@ c_ Solution:
         :rtype: List[int]
         """
         __ n.. nums:
-            r.. []
+            r..    # list
 
         n l..(nums)
         ans [0] * n

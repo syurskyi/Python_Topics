@@ -42,8 +42,8 @@ c_ Solution o..
 
     ___ postorderTraversal  root):
         __ root is N..:
-            r_ []
-        res = []; stack = [root]
+            r_    # list
+        res =    # list; stack = [root]
         w.. l.. stack) > 0:
             curr = stack.pop()
             __ not isinstance(curr, TreeNode):

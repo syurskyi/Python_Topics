@@ -10,10 +10,10 @@ c_ Solution(o..
         :type target: int
         :rtype: List[List[int]]
         """
-        __ n.. candidates: r..[]
+        __ n.. candidates: r..   # list
         candidates.s..()
         res    # list
-        helper2(candidates, 0, [], res, target)
+        helper2(candidates, 0,    # list, res, target)
         r.. res
     
     ___ helper2  nums, ind, curr, res, target
@@ -35,10 +35,10 @@ c_ Solution(o..
         :type target: int
         :rtype: List[List[int]]
         """
-        __ n.. candidates: r.. []
+        __ n.. candidates: r..    # list
         candidates.s..()
         res    # list
-        helper(candidates, target, 0, [], res)
+        helper(candidates, target, 0,    # list, res)
         r.. res
     
     ___ helper  nums, target, ind, curr, res

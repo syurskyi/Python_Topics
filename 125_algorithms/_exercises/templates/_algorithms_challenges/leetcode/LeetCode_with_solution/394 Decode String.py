@@ -33,7 +33,7 @@ c_ Solution(o..
                 j i+1
                 w.... s[j] !_ ' ': j += 1
                 stk.a..([
-                    i..(s[i:j]), []
+                    i..(s[i:j]),    # list
                 ])
                 i j+1
             ____ s[i].isl..  # append alphabet
@@ -62,7 +62,7 @@ c_ SolutionVerbose(o..
                 j i+1
                 w.... s[j] !_ ' ': j += 1
                 stk.a..([
-                    i..(s[i:j]), []
+                    i..(s[i:j]),    # list
                 ])
                 i j+1
             ____ s[i].isl..  # append alphabet

@@ -9,7 +9,7 @@ c_ Solution o..
         __ n __ 1:
             r_ ['()']
         last_list = generateParenthesis(n - 1)
-        res = []
+        res =    # list
         ___ t __ last_list:
             curr = t + ')'
             ___ index __ r.. l.. curr)):

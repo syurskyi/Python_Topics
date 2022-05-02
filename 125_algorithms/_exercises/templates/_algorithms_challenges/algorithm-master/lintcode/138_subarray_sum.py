@@ -15,7 +15,7 @@ c_ Solution:
         => start = hashmap[sum] + 1, end = i
         """
         __ n.. nums:
-            r.. []
+            r..    # list
 
         sum_to_index    # dict
         sum_to_index[0] -1
@@ -32,4 +32,4 @@ c_ Solution:
 
             sum_to_index[prefix_sum] i
 
-        r.. []
+        r..    # list

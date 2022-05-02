@@ -19,7 +19,7 @@ c_ PythagoreanTripletTest(unittest.TestCase
         assertEqual(triplets_with_sum(1000), e..)
 
     ___ test_no_triplet_exists
-        e.. s..([])
+        e.. s..(   # list)
         assertEqual(triplets_with_sum(1001), e..)
 
     ___ test_two_matching_triplets

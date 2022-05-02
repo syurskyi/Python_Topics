@@ -22,7 +22,7 @@ c_ Solution(o..
         ___ k, v __ m.i..
             __ v % 2 __ 1:
                 __ odd __ n.. N..
-                    r.. []
+                    r..    # list
                 odd k
 
         cur ""

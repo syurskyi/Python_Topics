@@ -15,7 +15,7 @@ c_ Solution:
 
     ___ count  x):
         m = list(x)
-        res = []
+        res =    # list
         m.append(N..)
         i , j = 0 , 0
         w.. i < l.. m) - 1:

@@ -91,7 +91,7 @@ c_ Solution:
         __ n.. root:
             r..
 
-        queue, _queue [root], []
+        queue, _queue [root],    # list
 
         w.... queue:
             n l..(queue)
@@ -106,4 +106,4 @@ c_ Solution:
                 __ queue[i].right:
                     _queue.a..(queue[i].right)
 
-            queue, _queue _queue, []
+            queue, _queue _queue,    # list

@@ -11,7 +11,7 @@ c_ Solution o..
 
     ___ get_spiralOrder  matrix, r_start, r_end, c_start, c_end):
         __ r_start > r_end or c_start > c_end:
-            r_ []
+            r_    # list
         ____ r_start __ r_end:
             r_ matrix[r_start][c_start:c_end + 1]
         ____ c_start __ c_end:

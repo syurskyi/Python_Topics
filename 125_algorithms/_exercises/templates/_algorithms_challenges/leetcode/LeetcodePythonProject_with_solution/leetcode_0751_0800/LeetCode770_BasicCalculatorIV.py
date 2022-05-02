@@ -27,18 +27,18 @@ c_ Solution(o..
             ],
             [
                 "7 - 7",
-                [],
-                [],
+                   # list,
+                   # list,
             ],
             [
                 "a * b * c + b * a * c * 4",
-                [],
-                [],
+                   # list,
+                   # list,
             ],
             [
                 "((a - b) * (b - c) + (c - a)) * ((a - b) + (b - c) * (c - a))",
-                [],
-                [],
+                   # list,
+                   # list,
             ],
         ]
         ___ expression, evalvars, evalints __ testCases:

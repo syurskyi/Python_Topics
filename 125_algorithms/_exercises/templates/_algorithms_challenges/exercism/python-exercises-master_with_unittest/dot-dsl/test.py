@@ -7,8 +7,8 @@ c_ DotDslTest(unittest.TestCase
     ___ test_empty_graph
         g Graph()
 
-        assertEqual(g.nodes, [])
-        assertEqual(g.edges, [])
+        assertEqual(g.nodes,    # list)
+        assertEqual(g.edges,    # list)
         assertEqual(g.attrs, {})
 
     ___ test_graph_with_one_node
@@ -17,7 +17,7 @@ c_ DotDslTest(unittest.TestCase
         ])
 
         assertEqual(g.nodes, [Node("a")])
-        assertEqual(g.edges, [])
+        assertEqual(g.edges,    # list)
         assertEqual(g.attrs, {})
 
     ___ test_graph_with_one_node_with_keywords
@@ -26,7 +26,7 @@ c_ DotDslTest(unittest.TestCase
         ])
 
         assertEqual(g.nodes, [Node("a", {"color": "green"})])
-        assertEqual(g.edges, [])
+        assertEqual(g.edges,    # list)
         assertEqual(g.attrs, {})
 
     ___ test_graph_with_one_edge
@@ -34,7 +34,7 @@ c_ DotDslTest(unittest.TestCase
             (EDGE, "a", "b", {})
         ])
 
-        assertEqual(g.nodes, [])
+        assertEqual(g.nodes,    # list)
         assertEqual(g.edges, [Edge("a", "b", {})])
         assertEqual(g.attrs, {})
 
@@ -43,8 +43,8 @@ c_ DotDslTest(unittest.TestCase
             (ATTR, "foo", "1")
         ])
 
-        assertEqual(g.nodes, [])
-        assertEqual(g.edges, [])
+        assertEqual(g.nodes,    # list)
+        assertEqual(g.edges,    # list)
         assertEqual(g.attrs, {"foo": "1"})
 
     ___ test_graph_with_attributes

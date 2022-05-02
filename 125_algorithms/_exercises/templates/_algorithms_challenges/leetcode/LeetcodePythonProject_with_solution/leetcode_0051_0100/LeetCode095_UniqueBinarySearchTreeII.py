@@ -17,7 +17,7 @@ c_ Solution(o..
         :type n: int
         :rtype: List[TreeNode]
         """
-        __ n < 1: r.. []
+        __ n < 1 r..    # list
         res helper(1, n)
         r.. res
     

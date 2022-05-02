@@ -14,7 +14,7 @@ c_ Solution(o..
         degree 0
         cands s..()
         ___ i, num __ e..(nums
-            hashmap[num] hashmap.g.. num, [])+[i]
+            hashmap[num] hashmap.g.. num,    # list)+[i]
             __ l..(hashmap[num]) > degree:
                 degree l..(hashmap[num])
                 cands s..([num])

@@ -29,10 +29,10 @@ c_ Solution o..
     ___ levelOrder  root):
         # https://leetcode.com/discuss/90680/9-lines-python-code
         __ root is N..:
-            r_ []
+            r_    # list
         q = [[root]]
         ___ level __ q:
-            record = []
+            record =    # list
             ___ node __ level:
                 __ node.left:
                     record.append(node.left)

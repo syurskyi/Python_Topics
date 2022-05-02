@@ -35,7 +35,7 @@ ____ t___ _______ L..
 c_ Solution:
     ___ combinationSum  candidates: L..[i..], target: i..) __ L..[L..[i..]]:
         ret    # list
-        dfs(candidates, 0, [], 0, target, ret)
+        dfs(candidates, 0,    # list, 0, target, ret)
         r.. ret
 
     ___ dfs  candidates, i, cur, cur_sum, target, ret

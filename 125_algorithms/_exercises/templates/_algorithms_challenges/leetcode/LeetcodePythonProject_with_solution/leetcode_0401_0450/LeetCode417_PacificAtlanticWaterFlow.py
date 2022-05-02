@@ -10,7 +10,7 @@ c_ Solution(o..
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
         """
-        __ n.. matrix o. n.. matrix[0]: r.. []
+        __ n.. matrix o. n.. matrix[0]: r..    # list
         m, n l..(matrix), l..(matrix 0
         pacific [[F..]*n ___ _ __ r..(m)]
         atlantic [[F..]*n ___ _ __ r..(m)]

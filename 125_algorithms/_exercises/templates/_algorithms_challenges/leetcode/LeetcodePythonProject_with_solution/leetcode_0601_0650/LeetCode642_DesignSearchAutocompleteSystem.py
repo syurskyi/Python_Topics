@@ -53,7 +53,7 @@ c_ AutocompleteSystem(o..
                 r.. [s ___ count, s __ res]
             ____
                 node N..
-                r.. []
+                r..    # list
     
     ___ addCandidate  s
         node root

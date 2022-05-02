@@ -20,7 +20,7 @@ c_ Solution:
         :return: a list of lists of string
         """
         result    # list
-        get_partition(s, [], result)
+        get_partition(s,    # list, result)
         r.. result
 
     ___ get_partition  seq, cur, result

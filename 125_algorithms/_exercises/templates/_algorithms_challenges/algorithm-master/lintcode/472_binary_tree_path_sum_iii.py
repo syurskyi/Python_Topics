@@ -27,7 +27,7 @@ c_ Solution:
         __ n.. node:
             r..
 
-        find_path(node, node, target, ans, [])
+        find_path(node, node, target, ans,    # list)
 
         dfs(node.left, target, ans)
         dfs(node.right, target, ans)

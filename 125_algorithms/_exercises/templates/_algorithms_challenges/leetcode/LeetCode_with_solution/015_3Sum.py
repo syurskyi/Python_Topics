@@ -51,7 +51,7 @@ c_ Solution o..
     #     return list(result)
 
     ___ threeSum  nums):
-        res = []
+        res =    # list
         nums.s..
         ls = l.. nums)
         ___ i __ r.. ls - 2):

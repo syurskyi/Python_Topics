@@ -13,7 +13,7 @@ c_ Solution:
         :rtype: List[List[int]]
         """
         __ n.. matrix o. n.. matrix[0]:
-            r.. []
+            r..    # list
 
         m, n l..(matrix), l..(matrix 0
         pqueue    # list
@@ -67,7 +67,7 @@ c_ Solution:
         :rtype: List[List[int]]
         """
         __ n.. matrix o. n.. matrix[0]:
-            r.. []
+            r..    # list
 
         m, n l..(matrix), l..(matrix 0
         pvisited s..()

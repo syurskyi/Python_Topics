@@ -9,9 +9,9 @@ c_ Solution(o..
         :type s: str
         :rtype: List[str]
         """
-        __ l..(s) > 12: r.. []
+        __ l..(s) > 12: r..    # list
         res    # list
-        helper(res, [], s, 0)
+        helper(res,    # list, s, 0)
         r.. res
     
     ___ helper  res, curr, s, ind

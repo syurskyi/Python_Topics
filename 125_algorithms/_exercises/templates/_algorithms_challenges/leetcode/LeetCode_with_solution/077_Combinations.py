@@ -20,8 +20,8 @@ c_ Solution o..
     #                          k - 1, index + 1)
 
     ___ combine  n, k):
-        res = []
-        get_combine(res, [], n, k, 1)
+        res =    # list
+        get_combine(res,    # list, n, k, 1)
         r_ res
 
     ___ get_combine  res, prefix, n, k, start):

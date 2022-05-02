@@ -33,7 +33,7 @@ c_ Solution:
         :return:  a list of lists of integers
         """
         __ n.. root:
-            r.. []
+            r..    # list
 
         result    # list
         lst [root]

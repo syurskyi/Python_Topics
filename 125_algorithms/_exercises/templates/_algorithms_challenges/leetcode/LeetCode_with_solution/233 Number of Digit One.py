@@ -19,7 +19,7 @@ c_ Solution:
         :type n: int
         :rtype: int
         """
-        __ n < 1:
+        __ n < 1
             r.. 0
 
         cnt 0

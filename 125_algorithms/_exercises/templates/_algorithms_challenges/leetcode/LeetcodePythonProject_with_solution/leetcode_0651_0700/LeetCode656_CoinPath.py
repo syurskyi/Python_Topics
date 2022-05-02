@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: List[int]
         """
         nums A
-        __ n.. nums o. nums[-1] __ -1: r.. []
+        __ n.. nums o. nums[-1] __ -1: r..    # list
         res    # list
         n l..(nums)
         dp [f__('inf')]*n

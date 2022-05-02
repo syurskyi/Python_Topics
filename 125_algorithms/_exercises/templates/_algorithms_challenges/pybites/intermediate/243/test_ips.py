@@ -43,7 +43,7 @@ ___ test_get_aws_service_range(json_file
     ... l..(service_range) __ 2
     ... s..(s.region ___ s __ service_range) __ {'eu-west-1'}
     ... s..(s.service ___ s __ service_range) __ {'AMAZON', 'GLOBALACCELERATOR'}
-    ... get_aws_service_range('158.152.1.65', services) __ []
+    ... get_aws_service_range('158.152.1.65', services) __    # list
     w__ p__.r.. V...) __ exc:
         get_aws_service_range('0.0.0.256', services)
     ... 'Address must be a valid IPv4 address' __ s..(exc.v..)

@@ -30,7 +30,7 @@ c_ Solution(o..
                 degree[node0] -_ 1
                 __ degree[node0] __ 0:
                     queue.a..(node0)
-        r.. res __ count __ numCourses ____ []
+        r.. res __ count __ numCourses ____    # list
     
     ___ test
         testCases [

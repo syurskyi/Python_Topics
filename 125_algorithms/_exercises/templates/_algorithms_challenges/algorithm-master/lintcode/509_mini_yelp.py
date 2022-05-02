@@ -186,7 +186,7 @@ c_ Trie:
 
         ___ char __ prefix:
             __ char n.. __ parent 'children' :
-                r.. []
+                r..    # list
             parent parent 'children' [char]
 
         r.. l..(parent 'keys' )

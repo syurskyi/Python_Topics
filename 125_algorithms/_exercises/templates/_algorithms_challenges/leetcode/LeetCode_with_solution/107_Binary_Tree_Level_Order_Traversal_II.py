@@ -29,14 +29,14 @@ c_ Solution o..
     #     self.get_level(res, root.right, depth + 1)
     ___ levelOrderBottom  root):
         __ root is N..:
-            r_ []
+            r_    # list
         # use stack
         stack = [[root]]
-        res = []
+        res =    # list
         w.. l.. stack) > 0:
             top = stack.pop()
             res.insert(0, [t.val ___ t __ top])
-            temp = []
+            temp =    # list
             ___ node __ top:
                 __ node.left is not N..:
                     temp.append(node.left)

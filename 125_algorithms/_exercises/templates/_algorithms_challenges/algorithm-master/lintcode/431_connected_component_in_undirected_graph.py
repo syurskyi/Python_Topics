@@ -17,7 +17,7 @@ c_ Solution:
         :rtype: list[list[UndirectedGraphNode]]
         """
         __ n.. nodes:
-            r.. []
+            r..    # list
 
         uf    # dict
 

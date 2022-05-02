@@ -34,7 +34,7 @@ c_ ChangeTest(unittest.TestCase
                          [4, 4, 4, 5, 5, 5])
 
     ___ test_no_coins_make_0_change
-        assertEqual(find_minimum_coins(0, [1, 5, 10, 21, 25]), [])
+        assertEqual(find_minimum_coins(0, [1, 5, 10, 21, 25]),    # list)
 
     ___ test_error_testing_for_change_smaller_than_smallest_coin
         w__ assertRaisesWithMessage(V...

@@ -23,7 +23,7 @@ c_ Solution(o..
         w.... queue:
             node queue.p.. 0)
             result.add(node)
-            ___ node0 __ hashmap.g.. node, []
+            ___ node0 __ hashmap.g.. node,    # list
                 __ node0 n.. __ result:
                     queue.a..(node0)
         r.. l..(result)

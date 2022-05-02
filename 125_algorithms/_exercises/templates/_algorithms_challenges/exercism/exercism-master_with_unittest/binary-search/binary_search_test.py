@@ -42,7 +42,7 @@ c_ BinarySearchTest(unittest.TestCase
 
     ___ test_empty_array
         w__ assertRaisesWithMessage(V...
-            binary_search([], 1)
+            binary_search(   # list, 1)
 
     ___ test_nothing_is_found_when_left_and_right_bounds_cross
         w__ assertRaisesWithMessage(V...

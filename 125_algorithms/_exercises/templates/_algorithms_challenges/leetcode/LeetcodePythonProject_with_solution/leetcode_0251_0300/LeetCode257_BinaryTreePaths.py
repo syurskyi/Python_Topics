@@ -15,7 +15,7 @@ c_ Solution:
     # @param {TreeNode} root
     # @return {string[]}
     ___ binaryTreePaths  root
-        __ n.. root: r.. []
+        __ n.. root: r..    # list
         res    # list
         helper(root, res, s..(root.val
         r.. res

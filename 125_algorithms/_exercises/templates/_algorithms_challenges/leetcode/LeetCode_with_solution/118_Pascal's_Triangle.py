@@ -4,7 +4,7 @@ c_ Solution:
         :type numRows: int
         :rtype: List[List[int]]
         """
-        result = []
+        result =    # list
         ___ i __ r.. numRows):
             result.append([0] * (i + 1))
         ___ i __ r.. numRows):

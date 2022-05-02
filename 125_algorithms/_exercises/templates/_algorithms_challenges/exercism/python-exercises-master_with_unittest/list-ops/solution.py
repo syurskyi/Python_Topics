@@ -12,7 +12,7 @@ ___ filter_clone(function, xs
 
 ___ reverse(xs
     __ n.. xs:
-        r.. []
+        r..    # list
     ____
         r.. xs[::-1]
 

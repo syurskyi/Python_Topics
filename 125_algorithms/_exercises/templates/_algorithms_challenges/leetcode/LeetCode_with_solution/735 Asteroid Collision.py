@@ -108,4 +108,4 @@ c_ Solution:
 __ _______ __ _______
     ... Solution().asteroidCollision([10, 2, -5]) __ [10]
     ... Solution().asteroidCollision([5, 10, -5]) __ [5, 10]
-    ... Solution().asteroidCollision([8, -8]) __ []
+    ... Solution().asteroidCollision([8, -8]) __    # list

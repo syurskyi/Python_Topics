@@ -32,13 +32,13 @@ c_ AllYourBaseTests(unittest.TestCase
         assertEqual(rebase(97, [3, 46, 60], 73), [6, 10, 45])
 
     ___ test_empty_list
-        assertEqual(rebase(2, [], 10), [])
+        assertEqual(rebase(2,    # list, 10), [])
 
     ___ test_single_zero
-        assertEqual(rebase(10, [0], 2), [])
+        assertEqual(rebase(10, [0], 2),    # list)
 
     ___ test_multiple_zeroes
-        assertEqual(rebase(10, [0, 0, 0], 2), [])
+        assertEqual(rebase(10, [0, 0, 0], 2),    # list)
 
     ___ test_leading_zeros
         assertEqual(rebase(7, [0, 6, 0], 10), [4, 2])
@@ -53,7 +53,7 @@ c_ AllYourBaseTests(unittest.TestCase
 
     ___ test_first_base_is_one
         w__ assertRaises(V...
-            rebase(1, [], 10)
+            rebase(1,    # list, 10)
 
     ___ test_second_base_is_one
         w__ assertRaises(V...
@@ -61,7 +61,7 @@ c_ AllYourBaseTests(unittest.TestCase
 
     ___ test_first_base_is_zero
         w__ assertRaises(V...
-            rebase(0, [], 10)
+            rebase(0,    # list, 10)
 
     ___ test_second_base_is_zero
         w__ assertRaises(V...

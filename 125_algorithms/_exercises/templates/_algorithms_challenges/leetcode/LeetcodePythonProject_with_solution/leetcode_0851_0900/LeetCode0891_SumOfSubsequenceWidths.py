@@ -23,7 +23,7 @@ c_ Solution(o..
         """
         nums    # list
         arr A
-        dfs(arr, 0, [], nums)
+        dfs(arr, 0,    # list, nums)
         res 0
         ___ arr __ nums:
             res (res + m..(arr) - m..(arr % (10**9+7)

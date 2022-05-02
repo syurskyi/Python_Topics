@@ -9,7 +9,7 @@ c_ Solution(o..
         :type numRows: int
         :rtype: List[List[int]]
         """
-        __ numRows <_ 0: r.. []
+        __ numRows <_ 0: r..    # list
         res [[1]]
         ___ i __ r..(1, numRows
             tmp    # list

@@ -49,7 +49,7 @@ c_ SolutionArray(o..
         :rtype: List[str]
         """
         ret    # list
-        build(n, [], ret)
+        build(n,    # list, ret)
         r.. ret
 
     ___ build  n, cur, ret
@@ -93,7 +93,7 @@ c_ SolutionOutputLimitExceeded(o..
         :rtype: List[str]
         """
         ret    # list
-        build(0, n, [], ret)
+        build(0, n,    # list, ret)
         r.. ret
 
     ___ build  idx, n, cur, ret

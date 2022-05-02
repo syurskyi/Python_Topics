@@ -62,7 +62,7 @@ c_ Solution:
         __ n __ 1 a.. k __ 0:
             r.. 1.0
 
-        queue, _queue [(r, c)], []
+        queue, _queue [(r, c)],    # list
         total 8 ** k
         valid 0
 
@@ -92,6 +92,6 @@ c_ Solution:
                     __ k > 0
                         _queue.a..((_x, _y
 
-            queue, _queue _queue, []
+            queue, _queue _queue,    # list
 
         r.. valid / total

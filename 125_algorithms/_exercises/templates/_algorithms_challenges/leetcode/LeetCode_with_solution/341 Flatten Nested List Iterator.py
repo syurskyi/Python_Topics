@@ -44,7 +44,7 @@ c_ NestedInteger(o..
         Return None if this NestedInteger holds a single integer
         :rtype List[NestedInteger]
         """
-        r.. []
+        r..    # list
 
 
 c_ NestedIterator(o..

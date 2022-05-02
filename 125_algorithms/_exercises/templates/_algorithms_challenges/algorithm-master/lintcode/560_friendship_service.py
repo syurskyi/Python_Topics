@@ -17,7 +17,7 @@ c_ FriendshipService:
         __ user_id __ followers:
             r.. s..(followers[user_id])
 
-        r.. []
+        r..    # list
 
     """
     @param: user_id: An integer
@@ -27,7 +27,7 @@ c_ FriendshipService:
         __ user_id __ followings:
             r.. s..(followings[user_id])
 
-        r.. []
+        r..    # list
 
     """
     @param: to_id: An integer

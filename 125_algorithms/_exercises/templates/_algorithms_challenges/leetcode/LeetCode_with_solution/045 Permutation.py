@@ -14,7 +14,7 @@ c_ Solution:
         :return: a list of lists of integers
         """
         result    # list
-        get_permute(num, [], result)
+        get_permute(num,    # list, result)
         r.. result
 
     ___ get_permute  seq, current, result

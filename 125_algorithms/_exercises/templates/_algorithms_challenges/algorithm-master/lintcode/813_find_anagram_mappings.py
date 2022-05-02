@@ -9,7 +9,7 @@ c_ Solution:
         :rtype: list[int]
         """
         __ n.. a o. n.. b o. l..(a) !_ l..(b
-            r.. []
+            r..    # list
 
         n l..(a)
         ans [-1] * n
@@ -20,7 +20,7 @@ c_ Solution:
 
         ___ i __ r..(n
             __ a[i] n.. __ b2i:
-                r.. []
+                r..    # list
 
             ans[i] b2i[a[i]]
 
@@ -38,7 +38,7 @@ c_ Solution:
         :rtype: list[int]
         """
         __ n.. a o. n.. b o. l..(a) !_ l..(b
-            r.. []
+            r..    # list
 
         n l..(a)
         ans [-1] * n
@@ -54,7 +54,7 @@ c_ Solution:
             __ n.. b2i.g.. a[i]
                 # a[i] not in b2i
                 # b2i[a[i]] is empty list
-                r.. []
+                r..    # list
 
             ans[i] b2i[a[i]].p.. )
 

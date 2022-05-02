@@ -4,8 +4,8 @@ c_ Solution:
         :type n: int
         :rtype: List[List[int]]
         """
-        __ n.. n o. n < 1:
-            r.. []
+        __ n.. n o. n < 1
+            r..    # list
         __ n __ 1:
             r.. [[1]]
 

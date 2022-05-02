@@ -5,7 +5,7 @@ c_ Solution o..
         :type k: int
         :rtype: List[int]
         """
-        res = []
+        res =    # list
         num_row = l.. mat)
         num_col = l.. mat[0])
         col = 0

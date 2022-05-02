@@ -44,8 +44,8 @@ c_ Queue o..
         """
         initialize your data structure here.
         """
-        stack1 = []
-        stack2 = []
+        stack1 =    # list
+        stack2 =    # list
 
 
     ___ push  x):

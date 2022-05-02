@@ -30,7 +30,7 @@ c_ Solution o..
     #             self.getPermute(temp, rest[:i] + rest[i + 1:])
 
     ___ permuteUnique  num):
-        res = []
+        res =    # list
         __ l.. num) __ 0:
             r_ res
         permute(res, num, 0)

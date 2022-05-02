@@ -30,7 +30,7 @@ c_ Solution:
         :rtype: list[str]
         """
         __ l..(s) < 10:
-            r.. []
+            r..    # list
 
         s m.. mapping, l..(s
         h s..()

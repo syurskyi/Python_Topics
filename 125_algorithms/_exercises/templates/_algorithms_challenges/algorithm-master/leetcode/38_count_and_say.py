@@ -24,6 +24,6 @@ c_ Solution:
                 char c
 
             _queue.extend((s..(cnt), char
-            queue, _queue ''.j..(_queue), []
+            queue, _queue ''.j..(_queue),    # list
 
         r.. ?

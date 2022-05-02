@@ -13,7 +13,7 @@ c_ Solution o..
             r_ solution[s]
         except KeyError:
             pass
-        result = []
+        result =    # list
         __ s __ wordDict:
             result.append(s)
         ___ i __ r.. 1, l.. s)):

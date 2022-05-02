@@ -16,7 +16,7 @@ ___ parse_game(game_line
     __ l..(game) __ 3 a.. game[2] __ RESULTS:
         result RESULTS[game[2]]
         r.. (game[0], result), (game[1], invert_result(result
-    r.. []
+    r..    # list
 
 
 ___ calculate_points(stats

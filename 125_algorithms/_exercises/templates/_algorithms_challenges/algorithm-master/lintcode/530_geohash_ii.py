@@ -12,14 +12,14 @@ c_ GeoHash:
     """
     ___ decode  geohash
         __ n.. geohash:
-            r.. []
+            r..    # list
         __ n.. base32:
             base32 get_base32_list()
 
         bin_codes    # list
         ___ char __ geohash:
             __ char n.. __ base32:
-                r.. []
+                r..    # list
             bin_codes.e.. _oct_to_bins(base32.i.. char)))
 
         n l..(bin_codes)

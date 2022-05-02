@@ -23,7 +23,7 @@ c_ Edge(o..
 
 
 c_ Graph(o..
-    ___ - , data=[]
+    ___ - , data=   # list
         nodes    # list
         edges    # list
         attrs    # dict

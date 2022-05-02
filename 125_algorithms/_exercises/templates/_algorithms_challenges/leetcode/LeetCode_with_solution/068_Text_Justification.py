@@ -5,9 +5,9 @@ c_ Solution o..
         :type maxWidth: int
         :rtype: List[str]
         """
-        res = []
-        res_list = []
-        curr = []
+        res =    # list
+        res_list =    # list
+        curr =    # list
         count, pos = 0, 0
         w.. pos < l.. words):
             word = words[pos]
@@ -19,7 +19,7 @@ c_ Solution o..
                 pos += 1
             ____
                 res_list.append(curr)
-                curr = []
+                curr =    # list
                 count = 0
         __ l.. curr) > 0:
             res_list.append(curr)

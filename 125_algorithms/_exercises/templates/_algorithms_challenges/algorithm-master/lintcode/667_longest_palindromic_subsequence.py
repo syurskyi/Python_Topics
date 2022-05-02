@@ -20,7 +20,7 @@ c_ Solution:
         ___ end __ r..(n
             dp[end][end] 1
 
-            __ n < 1:
+            __ n < 1
                 _____
 
             start end - 1

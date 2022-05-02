@@ -16,7 +16,7 @@ c_ Solution(o..
                 degree[m, c, 1] l..(graph[m])
                 degree[m, c, 2] l..(graph[c]) - (0 __ graph[c])
 
-        queue c...d..([])
+        queue c...d..(   # list)
         ___ i __ r..(N
             ___ t __ r..(1, 3
                 color[0, i, t] MOUSE

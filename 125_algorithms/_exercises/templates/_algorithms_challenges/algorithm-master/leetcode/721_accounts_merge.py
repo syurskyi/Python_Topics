@@ -5,7 +5,7 @@ c_ Solution:
         :rtype: List[List[str]]
         """
         __ n.. A:
-            r.. []
+            r..    # list
 
         M    # dict  # mails
         M2N    # dict  # mail to name

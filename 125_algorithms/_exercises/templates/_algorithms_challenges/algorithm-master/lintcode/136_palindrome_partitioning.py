@@ -13,7 +13,7 @@ c_ Solution:
 
         n l..(s)
         check_palindrome(s)
-        dfs(s, 0, [])
+        dfs(s, 0,    # list)
 
         r.. ans
 

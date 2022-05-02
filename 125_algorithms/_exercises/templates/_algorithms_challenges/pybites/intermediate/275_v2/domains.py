@@ -16,7 +16,7 @@ ___ get_common_domains(url=COMMON_DOMAINS
         response.raise_for_status()
     ______:
         print('error in getting data')
-        r.. []
+        r..    # list
 
     
     soup B..(?.t..)

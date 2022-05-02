@@ -6,7 +6,7 @@ c_ Solution:
     """
     ___ topKFrequentWords  words, k
         __ n.. words o. n.. k:
-            r.. []
+            r..    # list
 
         F    # dict
         ___ word __ words:

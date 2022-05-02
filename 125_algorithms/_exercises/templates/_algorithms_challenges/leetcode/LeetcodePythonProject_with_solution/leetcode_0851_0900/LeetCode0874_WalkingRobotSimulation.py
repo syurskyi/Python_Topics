@@ -39,7 +39,7 @@ c_ Solution(o..
         testCases [
             [
                 [4,-1,3],
-                [],
+                   # list,
             ],
         ]
         ___ commands, obstacles __ testCases:

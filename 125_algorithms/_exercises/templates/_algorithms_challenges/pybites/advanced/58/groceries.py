@@ -9,7 +9,7 @@ c_ Groceries:
     ___ - , items_ N..
         """This cart can be instantiated with a list of namedtuple
            items, if not provided use an empty list"""
-        _items items __ items __ n.. N.. ____ []
+        _items items __ items __ n.. N.. ____    # list
 
     ___ show  items_ N..
         """Print a simple table of cart items with total at the end"""

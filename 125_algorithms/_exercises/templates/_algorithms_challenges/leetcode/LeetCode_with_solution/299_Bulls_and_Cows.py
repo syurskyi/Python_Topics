@@ -8,7 +8,7 @@ c_ Solution o..
         check  # dict
         ls = l.. secret)
         bull, cow = 0, 0
-        different = []
+        different =    # list
         ___ i __ r.. ls):
             __ guess[i] __ secret[i]:
                 bull += 1

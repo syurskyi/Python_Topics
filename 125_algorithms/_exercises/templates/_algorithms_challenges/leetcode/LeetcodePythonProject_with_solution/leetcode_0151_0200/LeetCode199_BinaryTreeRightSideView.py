@@ -16,7 +16,7 @@ c_ Solution(o..
         :type root: TreeNode
         :rtype: List[int]
         """
-        __ n.. root: r.. []
+        __ n.. root: r..    # list
         queue [root]
         nextQueue    # list
         res [root.val]

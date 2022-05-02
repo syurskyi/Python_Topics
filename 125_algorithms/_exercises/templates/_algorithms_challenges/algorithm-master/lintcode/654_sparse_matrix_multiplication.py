@@ -6,7 +6,7 @@ c_ Solution:
     """
     ___ multiply  A, B
         __ n.. A o. n.. B o. l..(A 0 !_ l..(B
-            r.. []
+            r..    # list
 
         m, n l..(A), l..(B 0
         l l..(B)

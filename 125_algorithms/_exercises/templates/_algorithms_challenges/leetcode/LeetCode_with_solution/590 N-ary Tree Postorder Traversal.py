@@ -28,7 +28,7 @@ c_ Solution:
         maintain a stack, pop and reverse
         """
         __ n.. root:
-            r.. []
+            r..    # list
 
         ret d..()
         stk [root]

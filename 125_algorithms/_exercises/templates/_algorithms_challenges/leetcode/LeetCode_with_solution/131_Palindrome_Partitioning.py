@@ -5,8 +5,8 @@ c_ Solution o..
         :rtype: List[List[str]]
         """
         # https://discuss.leetcode.com/topic/6186/java-backtracking-solution/2
-        result = []
-        curr = []
+        result =    # list
+        curr =    # list
         recurPartition(result, curr, s, 0)
         r_ result
 

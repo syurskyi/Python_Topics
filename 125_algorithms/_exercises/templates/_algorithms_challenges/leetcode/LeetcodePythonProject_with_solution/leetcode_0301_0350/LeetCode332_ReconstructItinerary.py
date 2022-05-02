@@ -9,7 +9,7 @@ _______ h__
 c_ Solution(o..
     ___ findItinerary_orig  tickets
         __ n.. tickets:
-            r.. []
+            r..    # list
         hashmap    # dict
         ___ t1, t2 __ tickets:
             __ t1 n.. __ hashmap:

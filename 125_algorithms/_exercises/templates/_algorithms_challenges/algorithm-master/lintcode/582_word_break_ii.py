@@ -56,7 +56,7 @@ c_ Solution:
         __ n.. words:
             r.. ans
 
-        dfs(s, words, ans, [])
+        dfs(s, words, ans,    # list)
 
         r.. ans
 

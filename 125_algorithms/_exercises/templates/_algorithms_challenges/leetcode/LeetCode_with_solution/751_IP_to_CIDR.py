@@ -12,7 +12,7 @@ c_ Solution o..
     ___ ipToCIDR  ip, n):
         # Start value of IP
         start = ipToInt(ip)
-        ans = []
+        ans =    # list
         w.. n:
             # Last 1 of start or can start from 0
             mask = max(33 - (start & -start).bit_length(),

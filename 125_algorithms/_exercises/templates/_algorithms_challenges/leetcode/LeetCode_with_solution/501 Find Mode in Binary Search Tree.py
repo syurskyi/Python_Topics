@@ -87,7 +87,7 @@ c_ Solution:
         :rtype: List[int]
         """
         __ n.. root:
-            r.. []
+            r..    # list
 
         ret [0, []]
         find_mode_error(root, root.val, ret)

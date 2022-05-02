@@ -12,7 +12,7 @@ c_ Solution(o..
         s S
         res    # list
         helper(s, 0, res)
-        r.. res __ l..(res) > 2 ____ []
+        r.. res __ l..(res) > 2 ____    # list
     
     ___ helper  s, i, res
         __ i >_ l..(s) a.. l..(res) > 2:

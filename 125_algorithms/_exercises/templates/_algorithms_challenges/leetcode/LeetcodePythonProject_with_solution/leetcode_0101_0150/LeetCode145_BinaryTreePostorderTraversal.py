@@ -17,8 +17,8 @@ c_ Solution(o..
         :type root: TreeNode
         :rtype: List[int]
         """
-        __ n.. root: r.. []
-        stack, result [root], []
+        __ n.. root: r..    # list
+        stack, result [root],    # list
         w.... stack:
             node stack[-1] # peek
             __ n.. node.left a.. n.. node.right:

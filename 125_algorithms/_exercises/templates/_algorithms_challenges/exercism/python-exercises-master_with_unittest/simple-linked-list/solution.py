@@ -29,7 +29,7 @@ c_ LinkedIterator(o..
 
 
 c_ LinkedList(o..
-    ___ - , values=[]
+    ___ - , values=   # list
         _head N..
         _len 0
         [push(v) ___ v __ values]

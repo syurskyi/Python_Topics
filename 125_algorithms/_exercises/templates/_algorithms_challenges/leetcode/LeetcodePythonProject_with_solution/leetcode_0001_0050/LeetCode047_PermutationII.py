@@ -9,14 +9,14 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        __ n.. nums: r.. []
-        __ nums __ []: r.. [[]]
+        __ n.. nums: r..    # list
+        __ nums __    # list: r.. [[]]
         res    # list
-        dfs(s..(nums), [], res)
+        dfs(s..(nums),    # list, res)
         r.. res
     
     ___ dfs  nums, curr, res
-        __ nums __ []:
+        __ nums __    # list:
             res.a..(l..(curr
             r..
         ___ i, num __ e..(nums

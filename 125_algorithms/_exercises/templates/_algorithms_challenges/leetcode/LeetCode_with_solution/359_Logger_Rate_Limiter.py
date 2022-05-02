@@ -30,7 +30,7 @@ c_ Logger o..
         """
         Initialize your data structure here.
         """
-        heap = []
+        heap =    # list
         cache  # dict
 
     ___ shouldPrintMessage  timestamp, message):

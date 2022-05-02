@@ -96,7 +96,7 @@ ___ coders_dataset
 
 ___ test_enchantment_class(enchantment_mock
     ... enchantment_mock.n.. __ "Python Developer"
-    ... enchantment_mock.items __ []
+    ... enchantment_mock.items __    # list
 
 
 ___ test_enchantment_class_add_items(enchantment_mock, item_mock

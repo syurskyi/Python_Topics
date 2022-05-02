@@ -5,7 +5,7 @@ c_ Solution o..
         :type p: str
         :rtype: List[int]
         """
-        res = []
+        res =    # list
         __ s is N.. or p is N.. or l.. s) __ 0 or l.. p) __ 0:
             r_ res
         char_map = [0] * 256

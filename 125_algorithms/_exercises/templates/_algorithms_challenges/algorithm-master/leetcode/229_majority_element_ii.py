@@ -7,7 +7,7 @@ c_ Solution:
         ans    # list
 
         __ n.. nums:
-            r.. []
+            r..    # list
 
         a1  a2  N..
         c1  c2  0

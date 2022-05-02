@@ -1,5 +1,5 @@
 c_ CustomSet(o..
-    ___ - , elements=[]
+    ___ - , elements=   # list
         p..
 
     ___ isempty

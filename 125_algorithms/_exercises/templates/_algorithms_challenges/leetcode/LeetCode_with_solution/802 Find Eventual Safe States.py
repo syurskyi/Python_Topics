@@ -72,4 +72,4 @@ c_ Solution:
 
 
 __ _______ __ _______
-    ... Solution().eventualSafeNodes([[1,2],[2,3],[5],[0],[5],[],[]]) __ [2,4,5,6]
+    ... Solution().eventualSafeNodes([[1,2],[2,3],[5],[0],[5],   # list,[]]) __ [2,4,5,6]

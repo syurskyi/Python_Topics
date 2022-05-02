@@ -8,7 +8,7 @@ ____ anagram _______ find_anagrams
 c_ AnagramTest(unittest.TestCase
     ___ test_no_matches
         candidates ["hello", "world", "zombies", "pants"]
-        assertEqual(find_anagrams("diaper", candidates), [])
+        assertEqual(find_anagrams("diaper", candidates),    # list)
 
     ___ test_detects_two_anagrams
         candidates ["stream", "pigeon", "maters"]
@@ -16,7 +16,7 @@ c_ AnagramTest(unittest.TestCase
             find_anagrams("master", candidates), ["stream", "maters"])
 
     ___ test_does_not_detect_anagram_subsets
-        assertEqual(find_anagrams("good", ["dog", "goody"]), [])
+        assertEqual(find_anagrams("good", ["dog", "goody"]),    # list)
 
     ___ test_detects_anagram
         candidates ["enlists", "google", "inlets", "banana"]
@@ -31,7 +31,7 @@ c_ AnagramTest(unittest.TestCase
             ["gallery", "regally", "largely"])
 
     ___ test_does_not_detect_non_anagrams_with_identical_checksum
-        assertEqual(find_anagrams("mass", ["last"]), [])
+        assertEqual(find_anagrams("mass", ["last"]),    # list)
 
     ___ test_detects_anagrams_case_insensitively
         candidates ["cashregister", "Carthorse", "radishes"]
@@ -49,14 +49,14 @@ c_ AnagramTest(unittest.TestCase
             find_anagrams("orchestra", candidates), ["Carthorse"])
 
     ___ test_does_not_detect_a_anagram_if_the_original_word_is_repeated
-        assertEqual(find_anagrams("go", ["go Go GO"]), [])
+        assertEqual(find_anagrams("go", ["go Go GO"]),    # list)
 
     ___ test_anagrams_must_use_all_letters_exactly_once
-        assertEqual(find_anagrams("tapper", ["patter"]), [])
+        assertEqual(find_anagrams("tapper", ["patter"]),    # list)
 
     ___ test_words_are_not_anagrams_of_themselves_case_insensitive
         candidates ["BANANA", "Banana", "banana"]
-        assertEqual(find_anagrams("BANANA", candidates), [])
+        assertEqual(find_anagrams("BANANA", candidates),    # list)
 
 
 __ _____ __ _____

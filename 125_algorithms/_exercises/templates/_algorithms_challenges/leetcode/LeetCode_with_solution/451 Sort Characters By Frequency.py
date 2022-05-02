@@ -18,7 +18,7 @@ c_ Solution(o..
         ___ c __ s:
             counter[c] += 1
 
-        bucket {count: [] ___ count __ r..(1, l..(s)+1)}
+        bucket {count:    # list ___ count __ r..(1, l..(s)+1)}
         ___ k, v __ counter.i..
             bucket[v].a..(k)
 

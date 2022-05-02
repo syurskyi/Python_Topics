@@ -1,5 +1,5 @@
 f  o.. 'file.txt' _
-a []
+a    # list
 ___ y __ f:
     y  y.r..()
     __ l..(y) __ 12 o. l..(y)__ 14:

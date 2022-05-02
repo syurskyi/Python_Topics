@@ -34,7 +34,7 @@ empty """
                'MATH09-2,2020,17409',
                'ENG09-4,2020,17409',
                'PE09-1,2020,17409' ),
-    (empty, []),
+    (empty,    # list),
 ])
 ___ test_class_rosters(content, e.., tmp_path
     csvfile tmp_path / "content"

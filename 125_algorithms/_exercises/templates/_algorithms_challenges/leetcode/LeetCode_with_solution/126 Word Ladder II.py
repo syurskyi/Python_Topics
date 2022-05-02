@@ -65,7 +65,7 @@ c_ Solution_MLE:  # Memory Limit Exceeds
                             queue.a..(Node(temp, queue[i], queue[i].d..-{temp}
 
             queue queue[length_0:]
-        r.. []  # natural break, no result
+        r..    # list  # natural break, no result
 
     ___ a..  node, result
         cur node
@@ -119,7 +119,7 @@ c_ Solution_TLE:
                             queue.a..(Node(temp, queue[i]
 
             queue queue[length_0:]
-        r.. []  # natural break, no result
+        r..    # list  # natural break, no result
 
     ___ a..  node, result
         cur node
@@ -197,7 +197,7 @@ c_ Solution_TLE2:
                             queue.a..(Node(temp, queue[i]
 
             queue queue[length_0:]
-        r.. []  # natural break, no result
+        r..    # list  # natural break, no result
 
     ___ a..  node, result
         cur node
@@ -218,11 +218,11 @@ c_ Solution:  # use set to mimic queue, fastest
         """
         d.. |= {start}
         d.. |= {end}
-        result=[]
+        result=   # list
 
         prevMap={}  # predecessors of a word, e.g. {cog:[log, dog]}
         ___ i __ d..:
-            prevMap[i]=[]
+            prevMap[i]=   # list
 
         candidates=[s..(), s..()]  # mimic the queue, use set to reduce time complexity
         current=0
@@ -244,9 +244,9 @@ c_ Solution:  # use set to mimic queue, fastest
                                 prevMap[nextword].a..(word)
                                 candidates[current] |= {nextword}
 
-            __ l..(candidates[current])__0: r.. []  # path impossible
+            __ l..(candidates[current])__0: r..    # list  # path impossible
 
-        buildpath(prevMap, end, [], result)
+        buildpath(prevMap, end,    # list, result)
         r.. result
 
     ___ buildpath  prevMap, word, p.., result

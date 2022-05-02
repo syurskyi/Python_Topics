@@ -39,7 +39,7 @@ c_ Solution(o..
             g guess(mid)
             __ g __ 0:
                 r.. mid
-            ____ g < 1:
+            ____ g < 1
                 hi mid
             ____
                 lo mid + 1

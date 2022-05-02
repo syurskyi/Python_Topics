@@ -38,7 +38,7 @@ c_ Solution o..
         :type intervals: List[Interval]
         :rtype: int
         """
-        timeline = []
+        timeline =    # list
         ___ interval __ intervals:
             # meeting root + 1
             timeline.append((interval.start, 1))

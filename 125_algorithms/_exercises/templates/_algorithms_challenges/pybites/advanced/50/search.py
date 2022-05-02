@@ -30,7 +30,7 @@ ___ get_feed_entries(feed=FEED
     d feedparser.p..(feed)
     entries d.entries
     
-    all_entries =[]
+    all_entries =   # list
     ___ entry __ entries:
         title entry.title
         link entry.link

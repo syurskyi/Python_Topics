@@ -11,11 +11,11 @@ c_ Solution(o..
         """
         res    # list
         __ n.. nums: r.. res
-        dfs(nums, [], res)
+        dfs(nums,    # list, res)
         r.. res
     
     ___ dfs  nums, curr, res
-        __ nums __ []:
+        __ nums __    # list:
             res.a..(l..(curr
             r..
         ___ i, num __ e..(nums

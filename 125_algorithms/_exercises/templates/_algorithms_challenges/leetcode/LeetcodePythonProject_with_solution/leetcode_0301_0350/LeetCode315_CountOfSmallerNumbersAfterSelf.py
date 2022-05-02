@@ -19,7 +19,7 @@ c_ TreeNode(o..
 
 c_ Solution(o..
     ___ countSmaller  nums
-        __ n.. nums: r.. []
+        __ n.. nums: r..    # list
         root TreeNode(nums[-1])
         result [0]
         ___ i __ r..(l..(nums)-2, -1, -1

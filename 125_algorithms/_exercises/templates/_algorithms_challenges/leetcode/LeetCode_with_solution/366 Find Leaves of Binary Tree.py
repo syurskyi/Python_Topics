@@ -36,7 +36,7 @@ c_ Solution(o..
 
         height 1 + m..(dfs(node.left, leaves), dfs(node.right, leaves
         __ height >_ l..(leaves
-            leaves.a..([])  # grow
+            leaves.a..(   # list)  # grow
 
         leaves[height].a..(node.val)
         r.. height

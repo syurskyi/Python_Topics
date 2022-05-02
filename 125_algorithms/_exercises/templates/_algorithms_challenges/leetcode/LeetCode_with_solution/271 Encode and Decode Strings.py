@@ -84,7 +84,7 @@ c_ CodecError(o..
         :rtype: List[str]
         """
         __ "\x00" n.. __ s:
-            r.. []
+            r..    # list
 
         s s[:-1]  # traiing \x00
         strs s.s..("\x00")

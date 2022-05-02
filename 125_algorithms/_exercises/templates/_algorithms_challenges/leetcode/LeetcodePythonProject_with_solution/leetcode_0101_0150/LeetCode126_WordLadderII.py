@@ -16,7 +16,7 @@ c_ Solution(o..
         distance    # dict
         bfs(beginWord, endWord, distance, wordSet)
         res    # list
-        dfs(beginWord, endWord, distance, wordSet, res, [])
+        dfs(beginWord, endWord, distance, wordSet, res,    # list)
         r.. res
     
     ___ bfs  beginWord, endWord, distance, wordSet

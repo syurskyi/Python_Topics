@@ -15,7 +15,7 @@ c_ Solution:
     """
     ___ binaryTreePathSum  root, target
         ans    # list
-        dfs(root, target, ans, [])
+        dfs(root, target, ans,    # list)
         r.. ans
 
     ___ dfs  node, remaining, ans, p..

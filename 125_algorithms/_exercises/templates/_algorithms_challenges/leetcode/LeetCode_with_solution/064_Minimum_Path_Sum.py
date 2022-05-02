@@ -8,7 +8,7 @@ c_ Solution o..
         __ height __ 0:
             r_ 0
         width = l.. grid[0])
-        pathmap = []
+        pathmap =    # list
         ___ i __ r.. height):
             pathmap.append([100000000000] * width)
         pathmap[0][0] = grid[0][0]

@@ -14,7 +14,7 @@ c_ Solution o..
                 target_dict[word] += 1
             except KeyError:
                 target_dict[word] = 1
-        res = []
+        res =    # list
         ___ start __ r.. ls - word_ls * l.. words) + 1):
             curr_dict = target_dict.copy()
             ___ pos __ r.. start, start + word_ls * l.. words), word_ls):

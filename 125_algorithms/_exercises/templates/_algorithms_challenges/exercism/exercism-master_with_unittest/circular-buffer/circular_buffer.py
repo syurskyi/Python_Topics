@@ -5,7 +5,7 @@ c_ CircularBuffer:
 
     ___ - , capacity
         capacity capacity
-        buffer d..([], capacity)
+        buffer d..(   # list, capacity)
 
     ___ read
         __ empty

@@ -1,5 +1,5 @@
 ___ sort_nums_ascending(lst
     __ l..(lst) __ 0:
-        r.. []
+        r..    # list
     ____
         r.. s..(lst)

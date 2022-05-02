@@ -4,7 +4,7 @@ c_ Solution:
         # Compute accumulated xor from head
         ___ e __ arr:
             pref.append(e ^ pref[-1])
-        ans = []
+        ans =    # list
         # query result equal to xor[0, l] xor x[0, r]
         ___ [l, r] __ queries:
             ans.append(pref[r+1] ^ pref[l])

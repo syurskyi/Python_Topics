@@ -5,7 +5,7 @@ ___ pascal(N: i..) __ L.. i..
     Return the Nth row of Pascal triangle
     """
     __ N __ 0:
-        r.. []
+        r..    # list
     __ N __ 1:
         r.. [1]
     ____ N > 1:

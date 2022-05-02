@@ -15,7 +15,7 @@ c_ Solution o..
     ___ reverseWords  s):
         # remove tail space
         s = s.strip(' ')
-        array_s = []
+        array_s =    # list
         last = ' '
         # remove multiple spaces
         ___ i __ r.. l.. s)):

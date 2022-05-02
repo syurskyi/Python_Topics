@@ -29,7 +29,7 @@ c_ ConnectGame:
         __ player __ white:
             r.. y __ height - 1
 
-    ___ walk_board  player, x, y, visited=[]
+    ___ walk_board  player, x, y, visited=   # list
         __ (x, y) __ visited:
             r.. F..
 

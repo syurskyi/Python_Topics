@@ -15,7 +15,7 @@ c_ FlattenArrayTests(unittest.TestCase
         assertEqual(flatten([0, [1, [2, 3]], [4]]), [0, 1, 2, 3, 4])
 
     ___ test_empty_nested_lists
-        assertEqual(flatten([[()]]), [])
+        assertEqual(flatten([[()]]),    # list)
 
     ___ test_with_none_values
         inputs [0, 2, [[2, 3], 8, [[100]], N.., [[N..]]], -2]

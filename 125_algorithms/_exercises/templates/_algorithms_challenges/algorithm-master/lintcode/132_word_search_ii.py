@@ -29,8 +29,8 @@ c_ Solution:
     ___ wordSearchII  board, words
         __ n.. words o. l..(words) < 1 \
                 o. n.. board o. l..(board) < 1 \
-                o. l..(board 0 < 1:
-            r.. []
+                o. l..(board 0 < 1
+            r..    # list
         m, n l..(board), l..(board 0
         board board
         ___ word __ words:

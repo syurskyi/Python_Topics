@@ -33,7 +33,7 @@ Each node's value is either 0 or 1.
 
 c_ Solution:
     ___ getDecimalValue  head: ListNode) -> int:
-        binary_numbers_list = []
+        binary_numbers_list =    # list
         binary_numbers_list.append(head.val)
         w..(head.next is not N..):
             head = head.next

@@ -27,6 +27,6 @@ c_ Solution:
                     queue.a..(c)
 
         __ l..(queue) !_ n:
-            r.. []
+            r..    # list
 
         r.. ?

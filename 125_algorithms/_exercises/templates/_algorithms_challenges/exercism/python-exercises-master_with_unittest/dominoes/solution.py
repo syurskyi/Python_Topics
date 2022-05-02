@@ -22,7 +22,7 @@ ___ build_chain(c__, domino
 
 ___ c__(dominoes
     __ n.. a__(dominoes
-        r.. []
+        r..    # list
     ___ perm __ p.. dominoes
         c__ r.. build_chain, perm[1:], [perm[0]])
         __ c__ __ n.. N.. a.. c__ 0 0  __ c__[-1][1]:

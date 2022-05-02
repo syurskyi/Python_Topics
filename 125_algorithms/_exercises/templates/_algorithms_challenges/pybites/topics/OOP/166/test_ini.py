@@ -313,7 +313,7 @@ ini_files ? ? ? ?
 ?p__.m__.p. "ini_file, num_sections, envs, base_pys", [
     (cookiecutter, 4,
       'flake8', 'py34', 'py35', 'py36', 'pypy', 'py27' ,
-     []),
+        # list),
     (django, 7,
       'docs', 'flake8', 'isort', 'py3' ,
       'python3' ),

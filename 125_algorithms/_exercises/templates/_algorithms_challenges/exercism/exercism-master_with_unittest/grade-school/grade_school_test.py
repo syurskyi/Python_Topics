@@ -28,7 +28,7 @@ c_ GradeSchoolTest(unittest.TestCase
         assertEqual(school.roster(), e..)
 
     ___ test_roster_returns_empty_list_if_no_students_are_enrolled
-        assertEqual(School().roster(), [])
+        assertEqual(School().roster(),    # list)
 
     ___ test_roster_is_sorted_by_grade_then_name
         school School()
@@ -54,7 +54,7 @@ c_ GradeSchoolTest(unittest.TestCase
         assertEqual(school.grade(5), e..)
 
     ___ test_grade_returns_empty_list_if_no_students_are_in_that_grade
-        assertEqual(School().grade(1), [])
+        assertEqual(School().grade(1),    # list)
 
 
 __ _____ __ _____

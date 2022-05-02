@@ -17,7 +17,7 @@ c_ Solution(o..
         :type num: int
         :rtype: bool
         """
-        __ num < 1:
+        __ num < 1
             r.. F..
         __ num __ 1:
             r.. T..

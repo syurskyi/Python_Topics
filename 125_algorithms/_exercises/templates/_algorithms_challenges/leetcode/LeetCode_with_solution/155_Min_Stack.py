@@ -54,8 +54,8 @@ c_ MinStack o..
         """
         initialize your data structure here.
         """
-        stack = []
-        min_stack = []
+        stack =    # list
+        min_stack =    # list
 
 
     ___ push  x):

@@ -49,7 +49,7 @@ c_ Solution:
         __ n.. data \
                 o. data[0] !_ '<' \
                 o. data[-1] !_ '>' \
-                o. l.. ? < 1:
+                o. l.. ? < 1
             r..
         root TrieNode()
         current root

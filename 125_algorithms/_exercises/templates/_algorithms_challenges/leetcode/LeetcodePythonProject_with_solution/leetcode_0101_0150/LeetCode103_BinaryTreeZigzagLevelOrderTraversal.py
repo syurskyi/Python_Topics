@@ -18,7 +18,7 @@ c_ Solution(o..
         """
         res    # list
         __ n.. root: r.. res
-        queue, nextQueue, elem [root], [], []
+        queue, nextQueue, elem [root],    # list, []
         order T..
         w.... queue:
             node queue.p.. 0)

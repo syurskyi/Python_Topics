@@ -26,7 +26,7 @@ c_ Solution(o..
             [1, 1, 1, 1],
             [1, 1, 2],
             [10, 10, 10],
-            [],
+               # list,
         ]
         ___ answers __ testCases:
             print('answers: %s' % answers)

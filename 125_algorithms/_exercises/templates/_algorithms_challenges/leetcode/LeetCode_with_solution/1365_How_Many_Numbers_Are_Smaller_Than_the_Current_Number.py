@@ -19,7 +19,7 @@ c_ Solution:
         # compute numbers before current index
         ___ i __ r.. 1, 101):
             count_list[i] += count_list[i-1]
-        res = []
+        res =    # list
         ___ v __ nums:
             __ v __ 0:
                 res.append(0)

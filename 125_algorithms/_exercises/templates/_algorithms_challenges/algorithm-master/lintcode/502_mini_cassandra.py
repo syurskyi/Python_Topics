@@ -31,7 +31,7 @@ c_ MiniCassandra:
     """
     ___ query  raw_key, column_start, column_end
         __ raw_key n.. __ storage:
-            r.. []
+            r..    # list
 
         result [
             column

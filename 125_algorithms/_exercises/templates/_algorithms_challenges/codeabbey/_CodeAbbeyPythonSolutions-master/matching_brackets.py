@@ -9,7 +9,7 @@ ___ is_matching(word
     open_brackets ["[","(","{","<"]
     close_brackets ["]",")","}",">"]
 
-    open_brackets_in_word =[]
+    open_brackets_in_word =   # list
     ___ i __ word:
         __(i __ open_brackets
             open_brackets_in_word.a..(i)

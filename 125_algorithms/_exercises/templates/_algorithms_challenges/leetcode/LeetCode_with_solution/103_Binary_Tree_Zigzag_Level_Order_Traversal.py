@@ -13,10 +13,10 @@ c_ Solution o..
         """
         # level order
         __ root is N..:
-            r_ []
+            r_    # list
         q = [[root]]
         ___ level __ q:
-            record = []
+            record =    # list
             ___ node __ level:
                 __ node.left:
                     record.append(node.left)
@@ -25,7 +25,7 @@ c_ Solution o..
             __ record:
                 q.append(record)
         # zigzag order
-        res = []
+        res =    # list
         ___ index, level __ e.. q):
             temp = [x.val ___ x __ level]
             __ index % 2 __ 0:

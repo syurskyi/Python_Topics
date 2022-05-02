@@ -5,13 +5,13 @@ ____ sublist _______ check_lists, SUBLIST, SUPERLIST, EQUAL, UNEQUAL
 
 c_ SublistTest(unittest.TestCase
     ___ test_empty_lists
-        assertEqual(EQUAL, check_lists([], []
+        assertEqual(EQUAL, check_lists(   # list, []
 
     ___ test_empty_list_within
-        assertEqual(SUBLIST, check_lists([], [1, 2, 3]
+        assertEqual(SUBLIST, check_lists(   # list, [1, 2, 3]
 
     ___ test_within_empty_list
-        assertEqual(SUPERLIST, check_lists([1], []
+        assertEqual(SUPERLIST, check_lists([1],    # list
 
     ___ test_equal_lists
         l1 [0, 1, 2]

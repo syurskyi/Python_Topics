@@ -25,7 +25,7 @@ c_ Solution:
         ___ i __ r..(m
             ___ j __ r..(n
                 __ (i * n + j) % c __ 0:
-                    ret.a..([])
+                    ret.a..(   # list)
                 ret[-1].a..(nums[i][j])
 
         r.. ret

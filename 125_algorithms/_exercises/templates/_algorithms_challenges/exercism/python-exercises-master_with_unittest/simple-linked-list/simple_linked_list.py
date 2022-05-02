@@ -10,7 +10,7 @@ c_ Node(o..
 
 
 c_ LinkedList(o..
-    ___ - , values=[]
+    ___ - , values=   # list
         p..
 
     ___ -l

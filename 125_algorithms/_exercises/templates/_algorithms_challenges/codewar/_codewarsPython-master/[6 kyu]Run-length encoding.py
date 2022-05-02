@@ -1,6 +1,6 @@
 ___ run_length_encoding(s
 	__ l..(s) __ 0:
-		r.. []
+		r..    # list
 	res    # list
 	char s[0]
 	count 1

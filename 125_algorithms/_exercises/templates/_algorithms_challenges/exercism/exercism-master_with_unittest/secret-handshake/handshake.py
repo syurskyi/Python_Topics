@@ -7,7 +7,7 @@ c_ Handshake:
 
     ___ commands  inp
         __ n.. valid_inp(inp
-            r.. []
+            r..    # list
         r.. commands_for_num(to_num(inp
 
     ___ commands_for_num  num

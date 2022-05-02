@@ -29,7 +29,7 @@ c_ Solution o..
     ___ combinationSum  candidates, target):
         candidates.s..
         dp = [[] ___ _ __ r.. target + 1)]
-        dp[0].append([])
+        dp[0].append(   # list)
         ___ i __ r.. 1, target + 1):
             ___ j __ r.. l.. candidates)):
                 __ candidates[j] > i:

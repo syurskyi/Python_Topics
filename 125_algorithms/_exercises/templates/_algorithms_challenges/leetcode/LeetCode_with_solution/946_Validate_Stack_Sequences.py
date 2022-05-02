@@ -5,7 +5,7 @@ c_ Solution o..
         :type popped: List[int]
         :rtype: bool
         """
-        in_stack = []
+        in_stack =    # list
         pos = 0
         w.. pos != l.. pushed):
             curr = pushed[pos]

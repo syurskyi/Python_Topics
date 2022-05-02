@@ -19,6 +19,6 @@ ___ print_game_stats(games_won
     ___ person, winnings __ games_won.i..
         __ winnings > 1:
             print(f"{person} has won {winnings} games")
-        __ winnings < 1:
+        __ winnings < 1
             print(f"{person} has won {winnings} game")
     p..

@@ -7,7 +7,7 @@ c_ Solution o..
         :rtype: List[int]
         """
         # quick union find with weights
-        ans = []
+        ans =    # list
         islands = Union()
         ___ p __ map(tuple, positions):
             islands.add(p)

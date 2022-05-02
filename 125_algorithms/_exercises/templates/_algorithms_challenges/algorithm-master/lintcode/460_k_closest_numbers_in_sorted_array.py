@@ -7,7 +7,7 @@ c_ Solution:
     """
     ___ kClosestNumbers  A, target, k
         __ n.. A:
-            r.. []
+            r..    # list
 
         n l..(A)
 

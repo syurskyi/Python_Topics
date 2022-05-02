@@ -8,7 +8,7 @@ c_ Solution o..
             r_ 0
         res = 0
         num_set = set()
-        duplicate = []
+        duplicate =    # list
         A.s..
         left, right = A[0], A[-1]
         holes = right - left + 1

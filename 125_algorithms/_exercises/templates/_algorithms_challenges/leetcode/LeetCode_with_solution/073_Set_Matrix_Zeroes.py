@@ -9,8 +9,8 @@ c_ Solution o..
         m = l.. matrix)
         __ m __ 0:
             r_
-        r = []
-        c = []
+        r =    # list
+        c =    # list
         n = l.. matrix[0])
         ___ i __ r.. m):
             ___ j __ r.. n):

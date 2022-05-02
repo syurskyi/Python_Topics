@@ -29,7 +29,7 @@ c_ Solution(o..
         r.. level
     
     ___ findLeavesOwn  root
-        __ n.. root: r.. []
+        __ n.. root: r..    # list
         result    # list
         dummy TreeNode(-1)
         dummy.left root

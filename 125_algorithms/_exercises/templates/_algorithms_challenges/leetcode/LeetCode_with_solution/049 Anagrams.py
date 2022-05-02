@@ -22,7 +22,7 @@ c_ Solution:
 
         hash_map    # dict
         ___ ind, s__ __ e..(temp
-            indexes hash_map.g.. s__, [])
+            indexes hash_map.g.. s__,    # list)
             indexes.a..(ind)  # side-effect
             hash_map[s__] indexes
 

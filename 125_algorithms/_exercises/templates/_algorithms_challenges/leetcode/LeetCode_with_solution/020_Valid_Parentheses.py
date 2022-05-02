@@ -10,7 +10,7 @@ c_ Solution:
         """
         __ s is N..:
             r_ True
-        stack = []
+        stack =    # list
         ___ t __ s:
             __ t __ ')':
                 try:

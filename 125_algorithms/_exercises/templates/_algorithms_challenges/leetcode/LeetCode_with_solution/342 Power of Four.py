@@ -21,7 +21,7 @@ c_ Solution(o..
         :param num:
         :return:
         """
-        __ num < 1:
+        __ num < 1
             r.. F..
         __ num & num -1 !_ 0:
             r.. F..
@@ -34,7 +34,7 @@ c_ Solution(o..
         :type num: int
         :rtype: bool
         """
-        __ num < 1:
+        __ num < 1
             r.. F..
         __ num & num-1 !_ 0:
             r.. F..

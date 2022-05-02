@@ -31,7 +31,7 @@ c_ Solution(o..
         :rtype: List[List[int]]
         """
         result    # list
-        helper(result, [], n, 2)
+        helper(result,    # list, n, 2)
         r.. result
     
     ___ helper  result, item, n, start

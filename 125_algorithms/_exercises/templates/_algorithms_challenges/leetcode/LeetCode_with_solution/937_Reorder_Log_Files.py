@@ -12,8 +12,8 @@ c_ Solution o..
     #     return sorted(logs, key = f)
 
     ___ reorderLogFiles  logs):
-        letter_logs = []
-        digit_logs = []
+        letter_logs =    # list
+        digit_logs =    # list
         ___ log __ logs:
             __ log.split(' ')[1].isnumeric():
                 digit_logs.append(log)

@@ -63,7 +63,7 @@ c_ Solution(o..
                 r.. S..
 
         __ n.. nums1 o. n.. nums2:
-            r.. []
+            r..    # list
 
         h    # list
         ___ i __ x..(m..(k, l..(nums1))):

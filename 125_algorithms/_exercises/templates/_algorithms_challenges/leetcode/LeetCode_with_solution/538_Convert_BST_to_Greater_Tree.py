@@ -15,7 +15,7 @@ c_ Solution o..
         total = 0
         
         node = root
-        stack = []
+        stack =    # list
         w.. stack or node is not N..:
             # push all nodes up to (and including) this subtree's maximum on
             # the stack.

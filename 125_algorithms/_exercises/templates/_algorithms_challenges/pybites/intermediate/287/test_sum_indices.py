@@ -4,7 +4,7 @@ ____ sum_indices _______ sum_indices
 
 
 ?p__.m__.p.('test_input, expected', [
-                        ([], 0),
+                        (   # list, 0),
                         ( 'a' , 0),
                         ( 'a', 'b', 'c' , 3),
                         ( 'a', 'b', 'b', 'c' , 7),

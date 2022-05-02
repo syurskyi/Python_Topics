@@ -28,7 +28,7 @@ c_ Solution(o..
             idx[o..(c)].a..(i)
         prev 0
         ___ i, c __ e..(s
-            __ idx[o..(c)] __ []: r.. F..
+            __ idx[o..(c)] __    # list: r.. F..
             j b__.bisect_left(idx[o..(c)], prev)
             __ j __ l..(idx[o..(c)] r.. F..
             prev idx[o..(c)][j] + 1

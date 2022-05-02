@@ -6,7 +6,7 @@ c_ MovingAverage o..
         :type size: int
         """
         size = size
-        curr_range = []
+        curr_range =    # list
         
 
     ___ next  val):

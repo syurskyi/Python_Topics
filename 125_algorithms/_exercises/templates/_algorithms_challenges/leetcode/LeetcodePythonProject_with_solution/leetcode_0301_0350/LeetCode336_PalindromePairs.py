@@ -6,7 +6,7 @@ Created on Mar 19, 2017
 
 c_ Solution(o..
     ___ palindromePairs  words
-        __ n.. words: r.. []
+        __ n.. words: r..    # list
         hashmap    # dict
         result    # list
         ___ i, word __ e..(words

@@ -242,7 +242,7 @@ ____ pair_files _______ pair_files
                     "NCTC8325_S1_L001_R1_001.fastq.gz.fastq.gz",
                     "NCTC8325_S1_L001_R2_001.fastq.gz.fastq.gz",
                 ],
-            [],
+               # list,
         ),
         (
             "S number missing",
@@ -250,7 +250,7 @@ ____ pair_files _______ pair_files
                 "NCTC8325_S_L001_R1_001.fastq.gz",
                 "NCTC8325_S_L001_R2_001.fastq.gz",
             ],
-            [],
+               # list,
         ),
     ],
 )

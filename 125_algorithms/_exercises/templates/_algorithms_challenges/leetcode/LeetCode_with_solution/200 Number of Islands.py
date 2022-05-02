@@ -32,10 +32,10 @@ c_ Solution:
         :rtype: int
         """
         m l..(grid)
-        __ m < 1:
+        __ m < 1
             r.. 0
         n l..(grid 0
-        __ n < 1:
+        __ n < 1
             r.. 0
 
         cnt 0

@@ -38,8 +38,8 @@ c_ Solution o..
     ___ restoreIpAddresses  s):
         ls = l.. s)
         __ ls __ 0 or ls > 12:
-            r_ []
-        res = []
+            r_    # list
+        res =    # list
         ___ i __ r.. 1, 4):
             ___ j __ r.. 1, 4):
                 ___ k __ r.. 1, 4):

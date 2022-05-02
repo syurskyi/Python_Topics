@@ -16,7 +16,7 @@ c_ Solution(o..
         :type root: TreeNode
         :rtype: int
         """
-        r.. dfs(root, 0, 1, [], [])
+        r.. dfs(root, 0, 1,    # list, [])
         
     ___ dfs  root, level, order, start, end
         __ n.. root: r.. 0

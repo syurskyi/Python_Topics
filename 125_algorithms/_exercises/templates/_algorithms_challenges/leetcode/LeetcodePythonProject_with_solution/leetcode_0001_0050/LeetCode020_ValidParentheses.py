@@ -20,7 +20,7 @@ c_ Solution(o..
                     stack.p.. )
                 ____
                     r.. F..
-        r.. stack __ []
+        r.. stack __    # list
     
     ___ test
         testCases [

@@ -29,7 +29,7 @@ c_ Solution:
         recursively handle bracket
         """
         s s + "\0"  # signal the end
-        ret, _ eval(s, 0, [])
+        ret, _ eval(s, 0,    # list)
         r.. ret
 
     ___ eval  s, i, stk
@@ -62,7 +62,7 @@ c_ Solution:
                 ____ c __ (")", "\0"
                     r.. s..(stk), i
             ____ c __ "(":  # "(" is not delimiter
-                operand, i eval(s, i + 1, [])
+                operand, i eval(s, i + 1,    # list)
             ____
                 r..
 

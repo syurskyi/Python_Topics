@@ -10,7 +10,7 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: List[int]
         """
-        __ n.. nums: r.. []
+        __ n.. nums: r..    # list
         length l..(nums)
         result    # list
         result.a..(1)
@@ -27,7 +27,7 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: List[int]
         """
-        __ n.. nums: r.. []
+        __ n.. nums: r..    # list
         length l..(nums)
         left [1]*length
         right [1]*length

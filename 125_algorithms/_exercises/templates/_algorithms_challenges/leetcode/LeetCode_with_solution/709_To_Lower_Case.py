@@ -4,7 +4,7 @@ c_ Solution o..
         :type str: str
         :rtype: str
         """
-        res = []
+        res =    # list
         gap = o.. 'a') - o.. 'A')
         ___ c __ str:
             __ o.. c) >= o.. 'A') and o.. c) <= o.. 'Z'):

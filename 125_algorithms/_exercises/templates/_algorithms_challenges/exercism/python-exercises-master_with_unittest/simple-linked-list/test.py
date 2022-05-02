@@ -85,7 +85,7 @@ c_ SimpleLinkedListTest(unittest.TestCase
 
     ___ test_empty_linked_list_to_list_is_empty
         sut LinkedList()
-        assertEqual(l..(sut), [])
+        assertEqual(l..(sut),    # list)
 
     ___ test_singleton_linked_list_to_list_list_with_singular_element
         sut LinkedList([1])
@@ -96,8 +96,8 @@ c_ SimpleLinkedListTest(unittest.TestCase
         assertEqual(l..(sut), [3, 2, 1])
 
     ___ test_reversed_empty_list_is_empty_list
-        sut LinkedList([])
-        assertEqual(l..(sut.r.., [])
+        sut LinkedList(   # list)
+        assertEqual(l..(sut.r..,    # list)
 
     ___ test_reversed_singleton_list_is_same_list
         sut LinkedList([1])

@@ -86,7 +86,7 @@ ___ high_low_record_breakers_for_2015
 
     compare_set early_dataset.j..(late_dataset)
 
-    result {'min': [], 'max': []}
+    result {'min':    # list, 'max': []}
     ___ row __ compare_set.itertuples
         __ row.mina > row.minb:
             result 'min' .a..(

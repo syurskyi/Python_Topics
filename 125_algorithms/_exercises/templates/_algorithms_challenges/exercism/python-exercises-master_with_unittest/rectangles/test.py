@@ -7,7 +7,7 @@ ____ rectangles _______ count
 
 c_ WordTest(unittest.TestCase
     ___ test_no_rows
-        assertEqual(c.. []), 0)
+        assertEqual(c..    # list), 0)
 
     ___ test_no_columns
         assertEqual(c.. ['']), 0)

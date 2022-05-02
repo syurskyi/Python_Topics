@@ -12,7 +12,7 @@ c_ Solution(o..
         _______ m__
         matrix M
         __ n.. matrix o. n.. matrix[0]:
-            r.. []
+            r..    # list
         m, n l..(matrix), l..(matrix 0
         res [[0]*n ___ _ __ r..(m)]
         ___ i __ r..(m

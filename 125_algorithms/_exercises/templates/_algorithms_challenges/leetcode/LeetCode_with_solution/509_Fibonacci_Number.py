@@ -1,7 +1,7 @@
 c_ Solution o..
 
     ___ -(self):
-        memo = []
+        memo =    # list
         memo.append(0)
         memo.append(1)
 

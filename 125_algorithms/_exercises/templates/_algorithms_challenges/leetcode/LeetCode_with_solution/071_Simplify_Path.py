@@ -4,7 +4,7 @@ c_ Solution o..
         :type path: str
         :rtype: str
         """
-        result = []
+        result =    # list
         plist = path.split('/')
         ___ pos __ plist:
             __ pos:
@@ -14,7 +14,7 @@ c_ Solution o..
                         result.pop()
                     except:
                         # arrive top level
-                        result = []
+                        result =    # list
                 ____ pos != '.':
                     result.append(pos)
         r_ '/'+'/'.join(result)

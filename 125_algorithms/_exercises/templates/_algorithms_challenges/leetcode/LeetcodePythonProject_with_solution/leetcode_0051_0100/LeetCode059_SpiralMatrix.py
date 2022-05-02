@@ -10,7 +10,7 @@ c_ Solution(o..
         :type n: int
         :rtype: List[List[int]]
         """
-        __ n <_ 0: r.. []
+        __ n <_ 0: r..    # list
         result [[0]*n ___ i __ r..(n)]
         left, right, top, down 0, n-1, 0, n-1
         count 1

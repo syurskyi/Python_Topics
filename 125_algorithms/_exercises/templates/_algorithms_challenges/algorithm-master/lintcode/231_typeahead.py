@@ -22,7 +22,7 @@ c_ Typeahead:
     ___ s..  s..
         __ s.. __ map:
             r.. map[s..]
-        r.. []
+        r..    # list
 
 
 # Solution2
@@ -38,7 +38,7 @@ c_ Trie:
 
     ___ new_node
         r.. {
-            'result': [],
+            'result':    # list,
             'children': {}
         }
 
@@ -58,11 +58,11 @@ c_ Trie:
 
     ___ s..  key
         __ n.. key:
-            r.. []
+            r..    # list
         parent root
         ___ char __ key.l..:
             __ char n.. __ parent 'children' :
-                r.. []
+                r..    # list
             parent parent 'children' [char]
         r.. parent 'result'
 

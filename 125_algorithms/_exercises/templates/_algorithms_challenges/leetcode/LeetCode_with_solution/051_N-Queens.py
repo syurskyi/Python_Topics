@@ -7,7 +7,7 @@ c_ Solution o..
         # recusive
         __ n __ 0:
             r_ 0
-        res = []
+        res =    # list
         board = [['.'] * n ___ t __ r.. n)]
         do_solveNQueens(res, board, n)
         r_ res

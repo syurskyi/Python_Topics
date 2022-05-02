@@ -14,8 +14,8 @@ c_ Solution o..
         """
         __ not root1 and not root2:
             r_ True
-        leaf1 = []
-        leaf2 = []
+        leaf1 =    # list
+        leaf2 =    # list
         dfs(root1, leaf1)
         dfs(root2, leaf2)
         __ leaf1 __ leaf2:

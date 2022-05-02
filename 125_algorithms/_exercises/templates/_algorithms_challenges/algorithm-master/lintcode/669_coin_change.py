@@ -13,7 +13,7 @@ c_ Solution:
         __ n.. coins o. n.. amount:
             r.. ans
 
-        queue, _queue [0], []
+        queue, _queue [0],    # list
         visited s..(queue)
 
         w.... queue:
@@ -32,7 +32,7 @@ c_ Solution:
                     visited.add(_a)
                     _queue.a..(_a)
 
-            queue, _queue _queue, []
+            queue, _queue _queue,    # list
 
         r.. -1
 

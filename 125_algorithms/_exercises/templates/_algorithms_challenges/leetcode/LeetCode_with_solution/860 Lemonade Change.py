@@ -61,7 +61,7 @@ c_ Solution:
             __ b __ 5:
                 five += 1
             ____ b __ 10:
-                __ five < 1:
+                __ five < 1
                     r.. F..
                 five -_ 1
                 ten += 1

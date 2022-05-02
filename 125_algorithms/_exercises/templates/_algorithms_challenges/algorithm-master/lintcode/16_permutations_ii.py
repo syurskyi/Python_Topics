@@ -14,7 +14,7 @@ c_ Solution:
         ans    # list
 
         nums.s..()
-        dfs(nums, ans, [])
+        dfs(nums, ans,    # list)
 
         r.. ans
 
@@ -55,7 +55,7 @@ c_ Solution:
         visited [F..] * l..(nums)
 
         nums.s..()
-        dfs(nums, visited, ans, [])
+        dfs(nums, visited, ans,    # list)
 
         r.. ans
 

@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         result s..()
         resultCodes s..()
-        __ n.. s o. l..(s) < 10: r.. []
+        __ n.. s o. l..(s) < 10: r..    # list
         ___ i __ r..(0, l..(s)-9
             subStr s[i:i+10]
             code encode(subStr)

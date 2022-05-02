@@ -47,8 +47,8 @@ c_ Stack o..
         """
         initialize your data structure here.
         """
-        queue1 = []
-        queue2 = []
+        queue1 =    # list
+        queue2 =    # list
         curr_top = 0
 
     ___ push  x):

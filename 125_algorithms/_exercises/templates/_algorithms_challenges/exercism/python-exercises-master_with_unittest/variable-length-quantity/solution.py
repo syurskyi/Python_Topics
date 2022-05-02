@@ -14,7 +14,7 @@ ___ encode_single(n
 
 
 ___ encode(numbers
-    r.. s..((encode_single(n) ___ n __ numbers), [])
+    r.. s..((encode_single(n) ___ n __ numbers),    # list)
 
 
 ___ d.. bytes

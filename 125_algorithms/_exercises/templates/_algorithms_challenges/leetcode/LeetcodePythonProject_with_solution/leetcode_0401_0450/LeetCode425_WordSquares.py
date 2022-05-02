@@ -13,11 +13,11 @@ c_ TrieNode(o..
 
 c_ Solution(o..
     ___ wordSquares  words
-        __ n.. words: r.. []
+        __ n.. words: r..    # list
         root TrieNode(-1)
         buildTrie(words)
         res    # list
-        dfs(words, [], res, words)
+        dfs(words,    # list, res, words)
         r.. res
     
     ___ dfs  words, elems, result, nextWords
@@ -50,7 +50,7 @@ c_ Solution(o..
                 children node.children
     
     ___ wordsWithPrefix  prefix
-        __ n.. prefix: r.. []
+        __ n.. prefix: r..    # list
         children root.children
         ___ i, c __ e..(prefix
             __ c __ children:
@@ -60,8 +60,8 @@ c_ Solution(o..
                 ____
                     children node.children
             ____
-                r.. []
-        r.. []
+                r..    # list
+        r..    # list
     
     ___ test
         testCases [

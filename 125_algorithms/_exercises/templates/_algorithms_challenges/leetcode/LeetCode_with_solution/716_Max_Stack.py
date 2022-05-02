@@ -4,8 +4,8 @@ c_ MaxStack o..
         """
         initialize your data structure here.
         """
-        stack = []
-        max_stack = []
+        stack =    # list
+        max_stack =    # list
 
     ___ push  x):
         """
@@ -47,7 +47,7 @@ c_ MaxStack o..
         :rtype: int
         """
         val = peekMax()
-        buff = []
+        buff =    # list
         w.. top() != val:
             buff.append(pop())
         pop()

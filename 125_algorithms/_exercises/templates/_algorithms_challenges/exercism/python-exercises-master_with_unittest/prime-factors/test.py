@@ -7,7 +7,7 @@ ____ prime_factors _______ prime_factors
 
 c_ PrimeFactorsTest(unittest.TestCase
     ___ test_no_factors
-        assertEqual(prime_factors(1), [])
+        assertEqual(prime_factors(1),    # list)
 
     ___ test_prime_number
         assertEqual(prime_factors(2), [2])

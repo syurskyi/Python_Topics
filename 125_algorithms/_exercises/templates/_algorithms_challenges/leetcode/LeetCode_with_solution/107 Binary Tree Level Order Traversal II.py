@@ -32,7 +32,7 @@ c_ Solution:
         :return: Integers
         """
         __ n.. root:
-            r.. []
+            r..    # list
         result    # list
         next_level [root]
         w.... next_level:

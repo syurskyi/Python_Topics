@@ -135,7 +135,7 @@ ___ main
             titles ', '.j..([entry.title ___ entry __ output_list])
 
             output_number l..(output_list)
-            __ output_number < 1:
+            __ output_number < 1
                 print _*{output_number} entries matched')
             __ output_number __ 1:
                 print(titles)

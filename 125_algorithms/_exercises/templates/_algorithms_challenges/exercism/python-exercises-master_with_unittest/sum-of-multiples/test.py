@@ -49,7 +49,7 @@ c_ SumOfMultiplesTest(unittest.TestCase
         assertEqual(sum_of_multiples(100, [1]), 4950)
 
     ___ test_multiples_of_an_empty_list_up_to_10000
-        assertEqual(sum_of_multiples(10000, []), 0)
+        assertEqual(sum_of_multiples(10000,    # list), 0)
 
 
 __ _____ __ _____

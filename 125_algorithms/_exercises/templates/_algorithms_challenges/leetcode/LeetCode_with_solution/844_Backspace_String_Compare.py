@@ -7,8 +7,8 @@ c_ Solution o..
         """
         __ S __ T:
             r_ True
-        s_stack = []
-        t_stack = []
+        s_stack =    # list
+        t_stack =    # list
         ___ c __ S:
             __ c != '#':
                 s_stack.append(c)

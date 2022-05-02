@@ -12,7 +12,7 @@ c_ Solution o..
         :type sum: int
         :rtype: List[List[int]]
         """
-        res = []
+        res =    # list
         __ root is N..:
             r_ res
         __ sum __ root.val and root.left is N.. and root.right is N..:

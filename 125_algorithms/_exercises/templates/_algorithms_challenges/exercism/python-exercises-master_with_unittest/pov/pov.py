@@ -2,7 +2,7 @@ ____ j__ _______ dumps
 
 
 c_ Tree(o..
-    ___ - , label, children=[]
+    ___ - , label, children=   # list
         label label
         children children
 

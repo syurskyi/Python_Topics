@@ -27,7 +27,7 @@ c_ HeartBeat:
     """
     ___ getDiedSlaves  timestamp
         __ n.. timestamp:
-            r.. []
+            r..    # list
         r.. [ ip
             ___ ip, t0 __ slaves_ip_list.i..
             __ timestamp - t0 >_ ttl

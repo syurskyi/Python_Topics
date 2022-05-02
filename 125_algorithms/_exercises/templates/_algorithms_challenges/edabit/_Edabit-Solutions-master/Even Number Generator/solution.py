@@ -1,6 +1,6 @@
 ___ find_even_nums(num
     __ num < 2:
-        r.. []
+        r..    # list
     index  2
     output    # list
     w.... index < num:

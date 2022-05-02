@@ -51,7 +51,7 @@ c_ Solution:
 
     ___ bfs  grid, x, y, times, steps
         m, n l..(grid), l..(grid 0
-        queue, _queue [(x, y)], []
+        queue, _queue [(x, y)],    # list
         visited s..(queue)
         step 0
 
@@ -79,7 +79,7 @@ c_ Solution:
                     steps[_x, _y] += step
                     times[_x, _y] += 1
 
-            queue, _queue _queue, []
+            queue, _queue _queue,    # list
 
 
 _______ c..

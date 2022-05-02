@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         nums.s..()
         res    # list
-        helper(nums, 0, [], res)
+        helper(nums, 0,    # list, res)
         r.. res
     
     ___ helper  nums, ind, curr, res

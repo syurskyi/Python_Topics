@@ -5,7 +5,7 @@ c_ LRUCache o..
         """
         capacity = capacity
         cache  # dict
-        queue = []
+        queue =    # list
 
     ___ updateQueue  key):
         queue.remove(key)

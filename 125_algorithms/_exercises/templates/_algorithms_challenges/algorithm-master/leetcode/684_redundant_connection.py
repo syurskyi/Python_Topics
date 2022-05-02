@@ -17,7 +17,7 @@ c_ Solution:
         :rtype: List[int]
         """
         __ n.. edges:
-            r.. []
+            r..    # list
 
         nodes    # dict
 
@@ -25,7 +25,7 @@ c_ Solution:
             __ n.. union(nodes, u, v
                 r.. [u, v]
 
-        r.. []
+        r..    # list
 
     ___ union  nodes, u, v
         a f.. nodes, u)
@@ -61,7 +61,7 @@ c_ Solution:
         :rtype: List[int]
         """
         __ n.. edges:
-            r.. []
+            r..    # list
 
         nodes c...d..(s..)
 
@@ -73,7 +73,7 @@ c_ Solution:
             nodes[u].add(v)
             nodes[v].add(u)
 
-        r.. []
+        r..    # list
 
     ___ dfs  nodes, u, v, visited
         __ u __ v:

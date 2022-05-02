@@ -10,7 +10,7 @@ c_ Solution o..
         __ m __ 0:
             r_
         n = l.. rooms[0])
-        q = []
+        q =    # list
         ___ row __ r.. m):
             ___ col __ r.. n):
                 # gate

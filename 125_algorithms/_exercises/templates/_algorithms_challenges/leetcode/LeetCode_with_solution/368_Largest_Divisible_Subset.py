@@ -15,7 +15,7 @@ c_ Solution o..
         ls = l.. nums)
         S = {-1: set()}
         ___ num __ sorted(nums):
-            candicate = []
+            candicate =    # list
             ___ key __ S:
                 __ num % key __ 0:
                     candicate.append(S[key])

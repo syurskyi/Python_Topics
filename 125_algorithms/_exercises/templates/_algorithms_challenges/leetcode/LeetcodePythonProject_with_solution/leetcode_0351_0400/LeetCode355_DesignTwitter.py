@@ -49,7 +49,7 @@ c_ Twitter(o..
         _______ h__
         heap    # list
         __ userId n.. __ following:
-            r.. []
+            r..    # list
         followingUsers following[userId]
         followingUsers.add(userId)
         ___ following_id __ followingUsers:

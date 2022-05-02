@@ -44,7 +44,7 @@ c_ Solution(o..
         :rtype: List[TreeNode]
         """
         __ N <_ 0:
-            r.. []
+            r..    # list
         __ N __ 1:
             r.. [TreeNode(0)]
         res    # list

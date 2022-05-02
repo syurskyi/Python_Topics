@@ -14,7 +14,7 @@ c_ Solution:
         """
         ret    # list
         n l..(nums)
-        __ n < 1:
+        __ n < 1
             r.. ret
 
         bgn nums[0]

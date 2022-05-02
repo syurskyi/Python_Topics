@@ -42,7 +42,7 @@ c_ Solution(o..
         ___ d __ dislikes:
             hashmap[d[0]].add(d[1])
             hashmap[d[1]].add(d 0
-        g0, g1 [1], []
+        g0, g1 [1],    # list
         r.. dfs2(g0, g1, hashmap, 2, N)
     
     ___ dfs2  g0, g1, hashmap, n, N

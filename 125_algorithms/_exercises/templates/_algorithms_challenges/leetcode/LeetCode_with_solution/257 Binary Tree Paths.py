@@ -31,10 +31,10 @@ c_ Solution:
         :rtype: list[str]
         """
         __ n.. root:
-            r.. []
+            r..    # list
 
         ret    # list
-        dfs(root, [], ret)
+        dfs(root,    # list, ret)
         r.. ret
 
     ___ dfs  cur, p.., ret

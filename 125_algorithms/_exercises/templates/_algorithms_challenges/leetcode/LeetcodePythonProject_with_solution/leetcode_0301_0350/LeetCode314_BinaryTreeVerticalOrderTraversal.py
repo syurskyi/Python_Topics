@@ -13,7 +13,7 @@ c_ TreeNode(o..
 
 c_ Solution(o..
     ___ verticalOrder  root
-        __ n.. root: r.. []
+        __ n.. root: r..    # list
         hashmap    # dict
         result    # list
         queue [(0, root)]

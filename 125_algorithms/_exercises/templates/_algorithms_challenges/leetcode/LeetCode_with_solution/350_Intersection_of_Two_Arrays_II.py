@@ -7,7 +7,7 @@ c_ Solution o..
         """
         nums1.s..
         nums2.s..
-        res = []
+        res =    # list
         pos1 = pos2 = 0
         w.. pos1 < l.. nums1) and pos2 < l.. nums2):
             __ nums1[pos1] __ nums2[pos2]:

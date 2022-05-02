@@ -4,7 +4,7 @@ c_ TwoSum o..
         """
         initialize your data structure here
         """
-        internal = []
+        internal =    # list
         dic  # dict
 
     ___ add  number):

@@ -32,7 +32,7 @@ c_ Solution:
 
     ___ dfs  node, ans, preorder, parent_at
         __ l..(ans) < preorder[parent_at][1]:
-            ans.a..([])
+            ans.a..(   # list)
 
         depth preorder[parent_at][1] + 1
 

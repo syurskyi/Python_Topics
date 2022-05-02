@@ -27,7 +27,7 @@ c_ Solution(o..
             d i..(d)
             __ d n.. __ (0, 1
                 l.a..(letMap[d])
-        __ n.. l: r.. []
+        __ n.. l: r..    # list
         elem ''
         result    # list
         dfs(l, 0, elem, result)

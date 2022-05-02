@@ -16,7 +16,7 @@ c_ Solution(o..
         :type root: TreeNode
         :rtype: List[List[str]]
         """
-        __ n.. root: r.. []
+        __ n.. root: r..    # list
         h getHeight(root)
         n 2**h-1
         res [['']*n ___ _ __ r..(h)]

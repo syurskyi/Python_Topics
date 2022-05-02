@@ -28,7 +28,7 @@ c_ Solution(o..
         :rtype: List[int]
         """
         __ n.. nums o. l..(nums) < 2:
-            r.. []
+            r..    # list
         xor 0
         ___ num __ nums:
             xor ^= num

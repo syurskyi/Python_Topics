@@ -7,7 +7,7 @@ ____ sieve _______ sieve
 
 c_ SieveTest(unittest.TestCase
     ___ test_no_primes_under_two
-        assertEqual(sieve(1), [])
+        assertEqual(sieve(1),    # list)
 
     ___ test_find_first_prime
         assertEqual(sieve(2), [2])

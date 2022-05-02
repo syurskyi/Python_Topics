@@ -20,7 +20,7 @@ c_ Solution:
         :rtype: List[List[int]]
         """
         __ n.. root:
-            r.. []
+            r..    # list
 
         q [root]
         ret    # list

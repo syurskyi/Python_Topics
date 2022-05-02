@@ -12,7 +12,7 @@ ___ is_integer(s__
 
 ___ evaluate(input_data
     __ n.. input_data:
-        r.. []
+        r..    # list
     defines    # dict
     w.... input_data[0][:1] __ ':':
         values input_data.p.. 0).s..

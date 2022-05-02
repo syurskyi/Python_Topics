@@ -22,7 +22,7 @@ c_ Solution o..
     ___ longestValidParentheses  s):
         # https://leetcode.com/discuss/87988/my-easy-o-n-java-solution-with-explanation
         ls = l.. s)
-        stack = []
+        stack =    # list
         data = [0] * ls
         ___ i __ r.. ls):
             curr = s[i]

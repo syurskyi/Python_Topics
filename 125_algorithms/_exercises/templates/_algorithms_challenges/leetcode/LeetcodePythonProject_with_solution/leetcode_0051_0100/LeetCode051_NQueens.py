@@ -10,9 +10,9 @@ c_ Solution(o..
         :type n: int
         :rtype: List[List[str]]
         """
-        __ n <_ 0: r.. []
+        __ n <_ 0: r..    # list
         res    # list
-        helper(n, res, [], 0)
+        helper(n, res,    # list, 0)
         res convert(res)
         r.. res
     
@@ -27,7 +27,7 @@ c_ Solution(o..
                 cur.p.. )
     
     ___ convert  nums
-        __ n.. nums: r.. []
+        __ n.. nums: r..    # list
         res    # list
         ___ row __ nums:
             n l..(row)

@@ -6,7 +6,7 @@ c_ Solution o..
         :type upper: int
         :rtype: List[str]
         """
-        ranges = []
+        ranges =    # list
         prev = lower - 1
         ___ i __ r.. l.. nums) + 1):
             __ i __ l.. nums):

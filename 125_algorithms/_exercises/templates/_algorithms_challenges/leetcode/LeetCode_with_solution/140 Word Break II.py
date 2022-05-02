@@ -54,7 +54,7 @@ c_ Solution:
 
         # build result
         __ n.. dp[-1]:
-            r.. []
+            r..    # list
 
         result    # list
         build_result(dp, l..(s), d..(), result)

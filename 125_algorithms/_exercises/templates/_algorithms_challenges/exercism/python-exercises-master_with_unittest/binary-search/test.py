@@ -37,7 +37,7 @@ c_ BinarySearchTests(unittest.TestCase
                           13)
 
     ___ test_empty_array
-        assertRaises(V..., binary_search, [], 1)
+        assertRaises(V..., binary_search,    # list, 1)
 
 
 __ _____ __ _____

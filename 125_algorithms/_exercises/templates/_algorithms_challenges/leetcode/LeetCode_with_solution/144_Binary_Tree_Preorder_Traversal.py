@@ -29,8 +29,8 @@ c_ Solution o..
     ___ preorderTraversal  root):
         # stack
         __ root is N..:
-            r_ []
-        res = []
+            r_    # list
+        res =    # list
         stack = [root]
         w.. l.. stack) > 0:
             curr = stack.pop()

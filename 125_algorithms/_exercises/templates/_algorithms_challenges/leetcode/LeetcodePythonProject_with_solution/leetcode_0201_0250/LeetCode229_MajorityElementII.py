@@ -10,7 +10,7 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: List[int]
         """
-        __ n.. nums: r.. []
+        __ n.. nums: r..    # list
         count1, count2, candidate1, candidate2 0, 0, 0, 0
         ___ n __ nums:
             __ n __ candidate1:

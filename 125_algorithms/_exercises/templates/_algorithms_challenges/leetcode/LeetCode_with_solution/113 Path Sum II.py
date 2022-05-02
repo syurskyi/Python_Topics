@@ -32,7 +32,7 @@ c_ Solution:
         :return: a list of lists of integers
         """
         result    # list
-        accumulatePathSum(root, s.., [], result)
+        accumulatePathSum(root, s..,    # list, result)
         r.. result
 
     ___ accumulatePathSum  root, s.., cur_path, result

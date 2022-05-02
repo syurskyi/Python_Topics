@@ -15,7 +15,7 @@ FILES ('bite.html commands.sh out_grepped pytest_testrun.out '
    ('test2',  'test' ),
    ('output',  'output' ),
    ('o$tput',  'output' ),
-   ('nonsense', []),
+   ('nonsense',    # list),
 ])
 ___ test_example_docstring(tmp_path, filter_str, e..
     # let's create some files in tmp
@@ -34,7 +34,7 @@ ___ test_example_docstring(tmp_path, filter_str, e..
    ('commando',  'commands.sh' ),
    ('pytest_testruns.out',  'pytest_testrun.out', 'pytest_timings.out' ),
    ('out_greped',  'out_grepped' ),
-   ('nonsensical', []),
+   ('nonsensical',    # list),
    ('commands.py',  'commands.sh' ),
    ('pytest_t',  'pytest_testrun.out', 'pytest_timings.out' ),
    ('timings-templates.PY',  'timings-template.py' ),

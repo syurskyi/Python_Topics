@@ -16,7 +16,7 @@ c_ Solution o..
             r_
         nodes = [root]
         w.. l.. nodes) != 0:
-            next_step = []
+            next_step =    # list
             last = N..
             ___ node __ nodes:
                 __ last is not N..:

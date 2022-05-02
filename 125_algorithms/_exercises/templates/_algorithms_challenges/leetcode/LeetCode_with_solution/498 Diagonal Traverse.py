@@ -27,7 +27,7 @@ c_ Solution:
         :rtype: List[int]
         """
         __ n.. matrix:
-            r.. []
+            r..    # list
 
         R, C l..(matrix), l..(matrix 0
         F [[] ___ _ __ r..(R+C-1)]
@@ -53,7 +53,7 @@ c_ Solution:
         :rtype: List[int]
         """
         __ n.. matrix:
-            r.. []
+            r..    # list
         i 0
         j 0
         inc T..

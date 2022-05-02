@@ -11,7 +11,7 @@ c_ Solution:
 
     ___ permute  nums):
         # DPS with swapping
-        res = []
+        res =    # list
         __ l.. nums) __ 0:
             r_ res
         get_permute(res, nums, 0)

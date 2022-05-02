@@ -1,6 +1,6 @@
 ___ repeat(item, times
     __ times __ 0:
-        r.. []
+        r..    # list
     index 1
     output    # list
     w.... index <_ times:

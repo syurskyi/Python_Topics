@@ -20,7 +20,7 @@ c_ Solution:
         queue [root]
         w.... queue:
             _queue    # list
-            ans.a..([])
+            ans.a..(   # list)
 
             ___ node __ queue:
                 __ node.left:

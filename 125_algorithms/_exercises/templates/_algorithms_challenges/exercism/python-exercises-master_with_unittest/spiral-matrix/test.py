@@ -8,7 +8,7 @@ ____ spiral_matrix _______ spiral
 
 c_ SpiralMatrixTest(unittest.TestCase
     ___ test_spiral_matrix_with_size_0
-        assertEqual(spiral(0), [])
+        assertEqual(spiral(0),    # list)
 
     ___ test_spiral_matrix_with_size_1
         assertEqual(spiral(1), [[1]])

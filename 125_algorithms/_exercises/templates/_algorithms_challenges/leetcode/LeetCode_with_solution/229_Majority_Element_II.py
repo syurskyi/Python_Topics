@@ -2,8 +2,8 @@ c_ Solution o..
     ___ majorityElement  nums):
         # O(1) space
         ls = l.. nums)
-        res = []
-        check_value = []
+        res =    # list
+        check_value =    # list
         ___ i __ r.. ls):
             __ nums[i] __ check_value:
                 continue

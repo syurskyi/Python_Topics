@@ -6,7 +6,7 @@ Created on Mar 28, 2017
 
 c_ Solution(o..
     ___ largestDivisibleSubset  nums
-        __ n.. nums: r.. []
+        __ n.. nums: r..    # list
         nums.s..()
         n l..(nums)
         idx [-1]*n

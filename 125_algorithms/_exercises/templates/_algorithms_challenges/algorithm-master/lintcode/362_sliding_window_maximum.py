@@ -65,7 +65,7 @@ c_ Solution:
     """
     ___ maxSlidingWindow  A, k
         ans    # list
-        __ n.. A o. l..(A) < 1:
+        __ n.. A o. l..(A) < 1
             r.. ans
         ___ r __ r..(l..(A:
             __ r >_ k - 1:

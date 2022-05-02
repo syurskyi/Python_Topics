@@ -53,7 +53,7 @@ c_ Solution:
         :rtype: List[List[int]]
         """
         __ n.. matrix o. n.. matrix[0]:
-            r.. []
+            r..    # list
 
         m, n l..(matrix), l..(matrix 0  # row, col
         # don't do [[False] * n ] * m, memory management, all rows reference the same row
@@ -97,7 +97,7 @@ c_ Solution:
         :rtype: List[List[int]]
         """
         __ n.. matrix o. n.. matrix[0]:
-            r.. []
+            r..    # list
 
         m, n l..(matrix), l..(matrix 0  # row, col
         P [[F..] * n ] * m

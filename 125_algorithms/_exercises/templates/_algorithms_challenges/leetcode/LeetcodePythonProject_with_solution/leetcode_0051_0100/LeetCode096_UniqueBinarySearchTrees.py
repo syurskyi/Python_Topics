@@ -9,7 +9,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        __ n < 1: r.. 1
+        __ n < 1 r.. 1
         dp [0]*(n+1)
         dp[0] 1
         dp[1] 1

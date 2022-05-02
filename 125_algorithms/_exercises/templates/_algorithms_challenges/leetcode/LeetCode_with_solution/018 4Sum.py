@@ -77,7 +77,7 @@ c_ Solution:
         """
         length, result_set, sum2index l..(num), s..(), {}
         __ length<4:
-            r.. []
+            r..    # list
         num.s..()
 
         ___ p __ x..(length

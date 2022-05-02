@@ -1,10 +1,10 @@
 _______ p__
 
-____ n_digit_numbers _______ n_digit_numbers
+____ ? _______ ?
 
 
-?p__.m__.p.('input_list, n, expected', [
-    ([], 1, []),
+?p__.m__.p. 'input_list, n, expected', [
+    (   # list, 1, []),
     ([1, 2, 3], 1, [1, 2, 3]),
     ([1, 2, 3], 2, [10, 20, 30]),
     ([0, 1, 2, 3], 2, [0, 10, 20, 30]),
@@ -15,10 +15,10 @@ ____ n_digit_numbers _______ n_digit_numbers
     ([-1.1, 2.22, -3.333, 4444, 55555], 4,
      [-1100, 2220, -3333, 4444, 5555]),
 ])
-___ test_n_digit_numbers(input_list, n, e..
-    ... n_digit_numbers(input_list, n) __ e..
+___ test_n_digit_numbers input_list n e..
+    ... ? ? ? __ e..
 
 
 ___ test_invalid_n
     w__ p__.r.. V...
-        n_digit_numbers([1, 2, 3], 0)
+        ? 1, 2, 3], 0)

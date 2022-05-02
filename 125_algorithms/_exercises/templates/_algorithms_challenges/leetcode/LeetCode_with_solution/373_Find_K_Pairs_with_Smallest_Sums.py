@@ -7,12 +7,12 @@ c_ Solution o..
         :rtype: List[List[int]]
         """
         # https://discuss.leetcode.com/topic/50450/slow-1-liner-to-fast-solutions
-        queue = []
+        queue =    # list
         ___ push(i, j):
             __ i < l.. nums1) and j < l.. nums2):
                 heapq.heappush(queue, [nums1[i] + nums2[j], i, j])
         push(0, 0)
-        pairs = []
+        pairs =    # list
         w.. queue and l.. pairs) < k:
             _, i, j = heapq.heappop(queue)
             pairs.append([nums1[i], nums2[j]])

@@ -19,7 +19,7 @@ ___ test_get_common_domains(common_domains
 ?p__.m__.p. "emails, expected", [
     (["a@gmail.com", "b@pybit.es", "c@pybit.es", "d@domain.de"],
      [('pybit.es', 2), ('domain.de', 1)]),
-    (["a@hotmail.com", "b@gmail.com"], []),
+    (["a@hotmail.com", "b@gmail.com"],    # list),
     (["a@hotmail.com", "b@hotmail.se",
       "c@paris.com", "d@paris.com", "e@hotmail.it"],
      [('paris.com', 2), ('hotmail.se', 1)]),

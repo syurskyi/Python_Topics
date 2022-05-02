@@ -28,7 +28,7 @@ c_ Solution:
         """
         S.s..()
         result    # list
-        generate_subsets(S, [], result)
+        generate_subsets(S,    # list, result)
         r.. result
 
     ___ generate_subsets  S, current, result

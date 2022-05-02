@@ -8,13 +8,13 @@ ____ rest_api _______ RestAPI
 
 c_ RestAPITest(unittest.TestCase
     ___ test_no_users
-        database {"users": []}
+        database {"users":    # list}
         api RestAPI(database)
         response api.g.. '/users')
         assertDictEqual(j__.l.. (response), database)
 
     ___ test_add_user
-        database {"users": []}
+        database {"users":    # list}
         api RestAPI(database)
         payload j__.d..{
             'user': 'Adam'

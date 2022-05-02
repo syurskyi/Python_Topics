@@ -19,11 +19,11 @@ c_ Solution o..
 
     ___ letterCasePermutation  S):
         B = sum(letter.isalpha() ___ letter __ S)
-        ans = []
+        ans =    # list
 
         ___ bits __ xrange(1 << B):
             b = 0
-            word = []
+            word =    # list
             ___ letter __ S:
                 __ letter.isalpha():
                     __ (bits >> b) & 1:

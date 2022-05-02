@@ -12,12 +12,12 @@ c_ Solution o..
         :rtype: List[TreeNode]
         """
         __ n __ 0:
-            r_ []
+            r_    # list
         r_ get_trees(1, n)
 
     ___ get_trees  start, end):
         # recursive solve this problem
-        res = []
+        res =    # list
         __ start > end:
             res.append(N..)
             r_ res

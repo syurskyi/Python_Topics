@@ -23,7 +23,7 @@ c_ Solution:
         :rtype: list[Interval]
         """
         __ n.. intvs a.. n.. intv:
-            r.. []
+            r..    # list
         __ n.. intvs:
             r.. [intv]
         __ n.. intv:

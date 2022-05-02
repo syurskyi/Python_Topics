@@ -41,7 +41,7 @@ c_ Solution o..
         r_ minDistance1D(rows) + minDistance1D(cols)
 
     ___ collectRows  grid):
-        rows = []
+        rows =    # list
         ___ i __ r.. l.. grid)):
             ___ j __ r.. l.. grid[0])):
                 __ grid[i][j] __ 1:
@@ -49,7 +49,7 @@ c_ Solution o..
         r_ rows
 
     ___ collectCols  grid):
-        cols = []
+        cols =    # list
         ___ j __ r.. l.. grid[0])):
             ___ i __ r.. l.. grid)):
                 __ grid[i][j] __ 1:

@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         result    # list
         __ n.. s: r.. result
-        helper(s, 0, [], result)
+        helper(s, 0,    # list, result)
         r.. result
     
     ___ helper  s, startInd, elem, result

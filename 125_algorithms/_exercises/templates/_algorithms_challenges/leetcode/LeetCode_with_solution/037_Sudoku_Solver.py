@@ -5,7 +5,7 @@ c_ Solution o..
         :rtype: void Do not return anything, modify board in-place instead.
         """
         #https://leetcode.com/discuss/84831/java-backtracking-stack-20ms
-        empty = []
+        empty =    # list
         ___ i __ r.. 9):
             ___ j __ r.. 9):
                 __ board[i][j] __ '.':

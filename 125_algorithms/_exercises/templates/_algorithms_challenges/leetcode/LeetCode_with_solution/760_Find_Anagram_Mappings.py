@@ -6,7 +6,7 @@ c_ Solution o..
         :rtype: List[int]
         """
         val_index  # dict
-        ans = []
+        ans =    # list
         ___ i, n __ e.. B):
             val_index[n] = i
         ___ n __ A:

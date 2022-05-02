@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: List[List[int]]
         """
         res s..()
-        helper(nums, 0, [], res)
+        helper(nums, 0,    # list, res)
         r.. [l..(row) ___ row __ res]
     
     ___ helper  nums, ind, curr, res

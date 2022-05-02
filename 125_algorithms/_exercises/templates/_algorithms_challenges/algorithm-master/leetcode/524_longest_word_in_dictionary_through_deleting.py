@@ -50,7 +50,7 @@ c_ Solution:
         :rtype: str
         """
         cands    # list
-        find_cands(s, 0, cands, [])
+        find_cands(s, 0, cands,    # list)
 
         ans ''
         target s..(words)

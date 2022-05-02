@@ -31,7 +31,7 @@ c_ Solution:
         2. maintain stk of operands to sum
         3. handle bracket recursively
         """
-        ret, _ eval(s + "\0", 0, [])
+        ret, _ eval(s + "\0", 0,    # list)
         r.. ret
 
     ___ eval  s: s.., start: i.., stk: L.. i.. __ i..
@@ -56,7 +56,7 @@ c_ Solution:
                     r.. s..(stk), i
             ____ s[i] __ "(":
                 # avoid setting operand to 0
-                operand, i eval(s, i + 1, [])
+                operand, i eval(s, i + 1,    # list)
             ____
                 r..
 
