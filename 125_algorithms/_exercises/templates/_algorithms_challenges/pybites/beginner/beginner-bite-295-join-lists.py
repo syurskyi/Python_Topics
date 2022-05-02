@@ -43,7 +43,7 @@ print(my_join_lists([['a', 'b' ,  'c']], '&'
 ### -------------------------------- Pybites solution -------------------------------
 
 ___ join_lists(lst_of_lst: L..[L..[s..]], sep: s..) __ U..[L..[s..], N..]:
-    __ n.. lst_of_lst:
+    __ n.. lst_of_lst
         r.. N..
 
     r.. r.. l.... x, y: x + [sep] + y, lst_of_lst)
