@@ -34,7 +34,7 @@ ___ get_best_seller_titles(url=URL_NON_FICTION
     books    # list
     ___
         response r__.g.. url,params=params)
-        response.raise_for_status()
+        ?.r..
     ______ r__.HTTPError __ e:
         print('HTTP Error')
         print(e)

@@ -24,7 +24,7 @@ ___ get_data(url: s..) __ D.. s.. s..
         data j__.l.. (TMP.read_text
     ____
         response r__.g.. url)
-        response.raise_for_status()
+        ?.r..
         data j__.l.. (?.t..)
         w__ TMP.o.. "w") __ tmp:
             j__.d.. data, tmp)
