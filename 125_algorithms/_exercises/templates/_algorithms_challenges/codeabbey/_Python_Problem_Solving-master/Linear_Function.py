@@ -2,11 +2,11 @@ _______ n.... __ np
 f o.. 'input.txt')
 res    # list
 
-T i..(f.readline().s..
+T i..(?.r...s..
 
 boards    # list
 ___ i __ r..(0,T
-    boards.a..(f.readline().s...s..(' '
+    boards.a..(?.r...s...s..(' '
 
 ___ i __ r..(T
     a [i..(j) ___ j __ boards[i]]

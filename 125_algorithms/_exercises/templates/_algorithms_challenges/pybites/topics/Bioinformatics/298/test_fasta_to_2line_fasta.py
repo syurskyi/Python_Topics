@@ -1,4 +1,4 @@
-____ fasta_to_2line_fasta _______ fasta_to_2line_fasta, FASTA_FILE
+____ ? _______ ? ?
 
 EXPECTED_RECORDS 59
 
@@ -10,18 +10,18 @@ ___ test_well_formed_fasta
 
     CONVERTED_FASTA f"{FASTA_FILE}-test.fasta"
 
-    ... fasta_to_2line_fasta(FASTA_FILE, CONVERTED_FASTA) __ EXPECTED_RECORDS
-    w__ o.. FASTA_FILE, "r") __ f:
-        f.readline()
+    ...? ? ? __ ?
+    w__ o.. F.. _ __ f
+        ?.r..
         ... (
-            f.readline().s..
+            ?.r...s..
             __ "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
         )
 
-    w__ o.. CONVERTED_FASTA, "r") __ f_conv:
-        f_conv.readline()
+    w__ o.. C.. _ __ f_conv
+        ?.r..
         ... (
-            f_conv.readline().s..
+            ?.r...s..
             __ "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
             "LPISILSARIYYVLFEWAYYKNHLNEIFAIWNGGIAIHGGLIGAIVTTIVFTKKRNISF"
             "WKLADIAAPSLILGQAIGRWGNFMNQEAHGGPVSRTFLESLRLPDIIINQMYINGSYYH"
