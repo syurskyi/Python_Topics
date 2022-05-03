@@ -1,4 +1,4 @@
-____ decimal _______ Decimal
+____ d.. _______ D..
 
 
 c_ IntList(l..
