@@ -1,15 +1,15 @@
-____ d__ _______ d__, t..
-
-TODAY date.t..
-
-
-___ gen_bite_planning(num_bites=1, num_days=1, start_date=TODAY
-
-
-    current_date start_date + t..(d.._num_days)
-    w... T...
-        ___ _ __ r..(num_bites
-            y.. current_date
-        current_date += t..(d.._num_days)
-
-
+# ____ d__ _______ d__, t..
+#
+# TODAY d__.t..
+#
+#
+# ___ gen_bite_planning num_bites_1 num_days=1 start_date_?
+#
+#
+#     current_date s.. + t.. d.._n..
+#     w... T...
+#         ___ _ __ r.. n..
+#             y.. c..
+#         c.. +_ t.. d.._n..
+#
+#

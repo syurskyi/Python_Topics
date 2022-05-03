@@ -1,30 +1,30 @@
-_______ i___
-
-_______ p__
-
-____ helplen _______ get_len_help_text
-
-
-___ test_pow
-    # py 3.7 / 3.8 difference
-    ... get_len_help_text(pow) __ (278, 284)
-
-___ test_max
-    ... get_len_help_text(m..) __ 402
-
-
-___ test_bad_input
-    max1 o..()
-    w__ p__.r.. V...
-        get_len_help_text(max1)
-
-
-___ test_another_bad_input
-    w__ p__.r.. V...
-        get_len_help_text('string')
-
-
-___ test_src
-    src i___.g.. get_len_help_text)
-    ... 'help' __ src
-    ... 'redirect_stdout' __ src
+# _______ i___
+#
+# _______ p__
+#
+# ____ ? _______ ?
+#
+#
+# ___ test_pow
+#     # py 3.7 / 3.8 difference
+#     ... ? (pow) __ (278, 284)
+#
+# ___ test_max
+#     ... ? m.. __ 402
+#
+#
+# ___ test_bad_input
+#     max1 o..
+#     w__ p__.r.. V...
+#         ? ?
+#
+#
+# ___ test_another_bad_input
+#     w__ p__.r.. V...
+#         ? 'string'
+#
+#
+# ___ test_src
+#     src i___.g.. ?
+#     ... 'help' __ ?
+#     ... 'redirect_stdout' __ ?

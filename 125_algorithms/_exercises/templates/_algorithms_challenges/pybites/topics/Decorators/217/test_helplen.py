@@ -2,29 +2,29 @@ _______ i___
 
 _______ p__
 
-____ helplen _______ get_len_help_text
+____ ? _______ ?
 
 
 ___ test_pow
     # py 3.7 / 3.8 difference
-    ... get_len_help_text(pow) __ (278, 284)
+    ... ? (pow) __ (278, 284)
 
 ___ test_max
-    ... get_len_help_text(m..) __ 402
+    ... ? m.. __ 402
 
 
 ___ test_bad_input
-    max1 o..()
+    max1 o..
     w__ p__.r.. V...
-        get_len_help_text(max1)
+        ? ?
 
 
 ___ test_another_bad_input
     w__ p__.r.. V...
-        get_len_help_text('string')
+        ? 'string'
 
 
 ___ test_src
-    src i___.g.. get_len_help_text)
-    ... 'help' __ src
-    ... 'redirect_stdout' __ src
+    src i___.g.. ?
+    ... 'help' __ ?
+    ... 'redirect_stdout' __ ?

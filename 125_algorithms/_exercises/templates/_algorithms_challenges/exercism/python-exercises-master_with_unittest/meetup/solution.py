@@ -2,7 +2,7 @@ ____ ca__ _______ Calendar
 
 
 ___ meetup_day(year, month, day_of_the_week, which
-    candidates [date
+    candidates ?
                   ___ date __ Calendar().itermonthdates(year, month)
                   __ date.month __ month
                   __ date.s..('%A') __ day_of_the_week]

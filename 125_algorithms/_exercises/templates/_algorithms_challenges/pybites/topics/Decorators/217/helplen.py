@@ -1,9 +1,9 @@
-____ contextlib _______ redirect_stdout
+____ c.. _______ r..
 ____ i. ______ S..
-____ types _______ BuiltinFunctionType
+____ t.. _______ B..
 
 
-___ get_len_help_text(builtin: BuiltinFunctionType) __ i..
+___ get_len_help_text builtin ? __ i..
     """Receives a builtin, and returns the length of its help text.
        You need to redirect stdout from the help builtin.
        If the the object passed in is not a builtin, raise a ValueError.
@@ -16,4 +16,4 @@ ___ get_len_help_text(builtin: BuiltinFunctionType) __ i..
     r.. l..(std_out.getvalue
 
 
-get_len_help_text(pow)
+? (pow)

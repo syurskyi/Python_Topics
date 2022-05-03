@@ -50,5 +50,5 @@ ___ match_daily_rates start d.. end d.. daily_rates d.. __ D.. ? ?
 
 ___ exchange_rates(
     start_date: s.. "2020-01-01", end_date: s.. "2020-09-01"
-) __ Dict[date, d..]:
+) __ Dict? , d..]:
     p..

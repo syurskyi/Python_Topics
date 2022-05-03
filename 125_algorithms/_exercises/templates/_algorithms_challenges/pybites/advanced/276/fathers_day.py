@@ -53,7 +53,7 @@ ___ _parse_recurring_father_days(days_to_countries,filename=fathers_days_recurri
             __ line.s.. '*'
                 date line[2:]
             ____
-                days_to_countries[date].a..(line)
+                days_to_countries? ].a..(line)
 
 
 
@@ -115,7 +115,7 @@ ___ generate_father_day_planning(days_to_countries_ N..
         date date.s..('%B _d')
         date __.s.. _ 0(\d)',r'\1',date)
 
-        countries days_to_countries[date]
+        countries days_to_countries? ]
 
         print(date)
 

@@ -1,5 +1,5 @@
 ____ d__ _______ d__
-____ i.. _______ islice
+____ i.. _______ i..
 
 ____ gendates _______ gen_special_pybites_dates
 

@@ -38,7 +38,7 @@ def test_gen_special_pybites_dates():
 
 ____ d__ _______ d__
 ____ d__ _______ t..
-____ i.. _______ islice
+____ i.. _______ i..
 
 PYBITES_BORN d__ y.._2016,  m.._12,  d.._19)
 
