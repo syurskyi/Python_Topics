@@ -11,19 +11,19 @@ _______ r__
 Entry n..('Entry', 'title points comments')
 
 
-___ _create_soup_obj(url
+___ _create_soup_obj url
     """Need utf-8 to properly parse emojis"""
-    resp r__.g.. url)
-    resp.encoding "utf-8"
-    r.. B..(resp.text, "html.parser")
+    resp r__.g.. ?
+    ?.e.. "utf-8"
+    r.. B.. ?.t.., "html.parser"
 
 
-___ get_top_titles(url, top=5
+___ get_top_titles url top=5
     """Parse the titles (class 'title') using the soup object.
        Return a list of top (default = 5) titles ordered descending
        by number of points and comments.
     """
-    soup _create_soup_obj(url)
+    soup ? ?
     # your code ...
     title_list    # list
     news_all ?.f.. 'span', {'class': 'title'})
