@@ -1,21 +1,21 @@
-THUMBS_UP, THUMBS_DOWN '👍', '👎'
-
-
-c_ Thumbs:
-    
-    ___ __mul__  other
-        __ other __ 0:
-            r.. V...("Specify a number")
-
-        __ (other > 0 a.. other <_ 3) o. (other >_ -3 a.. other < 0
-            r.. _* THUMBS_UP __ other > 0 ____ THUMBS_DOWN) * a..(other)}"
-
-        r.. f"{THUMBS_UP __ other > 0 ____ THUMBS_DOWN} ({a..(other)}x)"
-
-    ___ __rmul__  other
-        r.. __mul__(other)
-
-
-__ _______ __ _______
-    print(Thumbs() * 2)
-    
+# THUMBS_UP, THUMBS_DOWN '👍', '👎'
+#
+#
+# c_ Thumbs
+#
+#     ___  -m  other
+#         __ ? __ 0
+#             r.. V... "Specify a number"
+#
+#         __ ? > 0 a.. ? <_ 3 o. ? >_ -3 a.. ? < 0
+#             r.. _* ? __ ? > 0 ____ ?)* a..(?)
+#
+#         r.. _* ? __ ? > 0 ____ ?  a.. ?)}x
+#
+#     ___ -r  ?
+#         r..  -m ?
+#
+#
+# __ _______ __ _______
+#     print ?() * 2)
+#

@@ -39,7 +39,7 @@ c_ Rational(o..
             denom*other.denom
         )
 
-    ___ __mul__  other
+    ___  -m  other
         r.. Rational(numer * other.numer, denom * other.denom)
 
     ___ __truediv__  other

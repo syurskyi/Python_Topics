@@ -18,7 +18,7 @@ c_ Rational(o..
     ___ -s  other
         p..
 
-    ___ __mul__  other
+    ___  -m  other
         p..
 
     ___ __truediv__  other
