@@ -73,7 +73,7 @@ ___ generate_enchantments(soup
         enchant, maxlevel, descr, id, item, version data_items
         id_name enchant.em.text
         name enchant.a.text
-        max_level LEVEL_TRANSLATE[maxlevel.text.s..]
+        max_level LEVEL_TRANSLATE[maxlevel.?.s..]
         description descr.text
         item_url item.img.attrs.g.. 'data-src')
         items __.s.. _ .*/(?:enchanted_)?(?:iron_)?([^/]+?)(?:_sm)?\.png', r'\1', item_url)

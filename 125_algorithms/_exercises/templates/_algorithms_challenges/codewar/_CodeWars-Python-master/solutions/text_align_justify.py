@@ -6,7 +6,7 @@ http://www.codewars.com/kata/537e18b6147aa838f600001b/train/python
 
 
 ___ justify(text, width
-    words text.s..
+    words ?.s..
     current_len 0
     line_words    # list
     lines [line_words]

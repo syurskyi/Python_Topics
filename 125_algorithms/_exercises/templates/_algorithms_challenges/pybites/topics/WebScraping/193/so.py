@@ -20,9 +20,9 @@ ___ top_python_questions url_?
     soup S.. ? html.parser
     question_list [question ___ question __ ?.f.. 'div', c.._'question-summary')]
     ___ question __ question_list:
-        question_text question.a.text.s..
-        question_vote question.f.. 'span', c.._'vote-count-post').strong.text.s..
-        question_view question.f.. 'div', c.._'views').text.s..
+        question_text question.a.?.s..
+        question_vote question.f.. 'span', c.._'vote-count-post').strong.?.s..
+        question_view question.f.. 'div', c.._'views').?.s..
         __ 'm views' __ question_view:
             faq.a..((question_text,i..(question_vote)))
     r.. s..(faq, k.._l.... x:x[1], r.._T..

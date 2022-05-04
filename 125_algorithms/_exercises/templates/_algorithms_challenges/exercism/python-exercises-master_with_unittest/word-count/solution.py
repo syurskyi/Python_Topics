@@ -5,4 +5,4 @@ ___ word_count(text
     ___ replace_nonalpha(char
         r.. char.l.. __ char.i..() ____ ' '
     text ''.j..(replace_nonalpha(c) ___ c __ text)
-    r.. C..(text.s..
+    r.. C..(?.s..

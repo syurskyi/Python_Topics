@@ -41,7 +41,7 @@ ___ get_srt_section_ids text s.. __ L.. i..
     """
     line_dict    # dict
     epoch '1970-01-01'
-    dialog_list text.s..('\n\n')
+    dialog_list ?.s..('\n\n')
     ___ dialog __ dialog_list:
        index, timestamp, line dialog.s...s..
        begintime, endtime timestamp.s..(' --> ')

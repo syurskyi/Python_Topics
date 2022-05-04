@@ -32,16 +32,16 @@ ___ get_pycon_speaker_first_names soup_ N..
     speakers ?.f.. 'span', c.._'speaker')
     speakers_list    # list
     ___ slot_speaker __ speakers:
-        __ ',' __ slot_speaker.text.s..
+        __ ',' __ slot_speaker.?.s..
             slot_speakers slot_speaker.text.s...s..(',')
             ___ speaker __ slot_speakers:
                 speakers_list.a..(get_first_name(speaker.s..()))
-        ____ '/' __ slot_speaker.text.s..
+        ____ '/' __ slot_speaker.?.s..
             slot_speakers slot_speaker.text.s...s..('/')
             ___ speaker __ slot_speakers:
                 speakers_list.a..(get_first_name(speaker.s..()))
         ____
-            speakers_list.a..(get_first_name(slot_speaker.text.s..()))
+            speakers_list.a..(get_first_name(slot_speaker.?.s..()))
     r.. speakers_list
 
 ___ get_percentage_of_female_speakers first_names

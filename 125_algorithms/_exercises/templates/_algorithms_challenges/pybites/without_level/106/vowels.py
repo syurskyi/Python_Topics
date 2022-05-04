@@ -39,7 +39,7 @@ ___ strip_vowels text s.. __ (s.., i..
        of Python's new type hinting:
        https://docs.python.org/3/library/typing.html"""
     count 0
-    lines text.s..("\n")
+    lines ?.s..("\n")
     results    # list
     ___ line __ lines:
         newline ''

@@ -20,8 +20,8 @@ ___ slice_and_dice(text: s.. text) __ l..:
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
     #strip off any leading spaces,
-    s.. text.s..(" . !")
-    s.. text.s..("\n")
+    s.. ?.s..(" . !")
+    s.. ?.s..("\n")
     ___ words __ text:
         s.., s..
     #check if the first character is lowercase,

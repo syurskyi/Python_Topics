@@ -15,9 +15,9 @@ ___ get_book
 
     soup S.. ? 'html.parser')
 
-    title ?.f.. 'div', c.._'dotd-title').h2.text.s..
+    title ?.f.. 'div', c.._'dotd-title').h2.?.s..
 
-    description ?.s.. '.dotd-main-book-summary div' 2 .text.s..
+    description ?.s.. '.dotd-main-book-summary div' 2 .?.s..
 
 
     image ?.f.. 'img', c.._"bookimage imagecache imagecache-dotd_main_image") 'src'

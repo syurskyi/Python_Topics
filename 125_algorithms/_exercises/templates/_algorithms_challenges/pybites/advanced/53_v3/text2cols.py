@@ -24,6 +24,6 @@ ___ text_to_columns(text
        Return a string with the column output like:
        line1\nline2\nline3\n ... etc ...
        See also the tests for more info."""
-    lines [_divide_line(col) ___ col __ (text.s..('\n\n']
+    lines [_divide_line(col) ___ col __ (?.s..('\n\n']
     rv =  ' '.j..(combination) ___ combination __ z__(*lines, fillvalue=' ')]
     r.. '\n'.j..(rv)

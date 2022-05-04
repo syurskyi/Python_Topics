@@ -12,7 +12,7 @@ ___ text_to_columns(text
        See also the tests for more info."""
 
 
-    paragraphs text.s..('\n\n')
+    paragraphs ?.s..('\n\n')
     number_of_columns l..(paragraphs)
 
     l    # list

@@ -81,7 +81,7 @@ ___ load_data
         __ "python" n.. __ title.l..:
             _____
         ___
-            author_a book.s.. "h3.authors > a" 0.text.s..(" ")
+            author_a book.s.. "h3.authors > a" 0.?.s..(" ")
             author _* author_a[-1]}, {" ".j..(author_a[:-1])}'
             date_span book.s.. "span.date")
             __ l..(date_span) __ 0:
