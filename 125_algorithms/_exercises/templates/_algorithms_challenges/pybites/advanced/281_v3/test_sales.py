@@ -26,7 +26,7 @@ ___ test_data(df
 )
 ___ test_summary_report(df, capfd, line, e..
     summary_report(df)
-    output ?.r .. 0 .s..("\n")
+    output ?.r .. 0 .s..  \n
     ... output[line].s.. __ e..
 
 
@@ -35,7 +35,7 @@ ___ test_summary_report(df, capfd, line, e..
 )
 ___ test_summary_report_custom(df, capfd, lst, e..
     summary_report(df, lst)
-    output ?.r .. 0 .s..("\n")
+    output ?.r .. 0 .s..  \n
     ... output[0 .s.. __ e..
 
 
@@ -50,7 +50,7 @@ ___ test_summary_report_custom(df, capfd, lst, e..
 )
 ___ test_yearly_report(df, capfd, year, e..
     yearly_report(df, year)
-    output ?.r .. 0 .s..("\n")
+    output ?.r .. 0 .s..  \n
     ... output[9] __ e..
 
 

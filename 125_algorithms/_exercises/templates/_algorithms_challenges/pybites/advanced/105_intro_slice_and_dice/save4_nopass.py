@@ -21,7 +21,7 @@ ___ slice_and_dice(text: s.. text) __ l..:
        See the Bite description for step by step instructions"""
     #strip off any leading spaces,
     s.. ?.s..(" . !")
-    s.. ?.s..("\n")
+    s.. ?.s..  \n
     ___ words __ text:
        s...s..
     #check if the first character is lowercase,

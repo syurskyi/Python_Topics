@@ -20,7 +20,7 @@ ___ slice_and_dice(text: s.. text) __ l..:
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
     s.. ?.s..(" . !")
-    s.. ?.s..("\n")
+    s.. ?.s..  \n
     ___ words __ text:
         s.., s..
     ___ firstword __ text:

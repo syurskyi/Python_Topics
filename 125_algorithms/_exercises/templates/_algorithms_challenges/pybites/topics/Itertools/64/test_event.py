@@ -3,7 +3,7 @@ ____ event _______ get_attendees
 
 ___ test_get_attendees(capfd
     get_attendees()
-    output ?.r .. 0].s...s..("\n")
+    output ?.r .. 0].s...s..  \n
 
     ... l.. ?  __ 8
     ... "('Kim', '-', '-')" __ output

@@ -1,5 +1,5 @@
 ___ transpose(input_lines
-    lines input_lines.s..("\n")
+    lines input_lines.s..  \n
     zipped m.. l..,
                  [line.l.. l..(m..(lines, key=l..)))
                   ___ line __ lines])

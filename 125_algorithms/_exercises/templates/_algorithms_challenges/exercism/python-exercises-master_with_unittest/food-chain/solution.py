@@ -50,7 +50,7 @@ ___ verses(letter
 
 
 ___ recite(start_verse, end_verse
-    generated [verse.s...s..("\n") ___ verse __ verses(c__]
+    generated [verse.s...s..  \n ___ verse __ verses(c__]
     __ start_verse __ end_verse:
         r.. generated[start_verse-1]
     ____
