@@ -1,4 +1,4 @@
-____ i.. _______ combinations
+____ i.. _______ c..
 ____ i.. _______ permutations
 
 

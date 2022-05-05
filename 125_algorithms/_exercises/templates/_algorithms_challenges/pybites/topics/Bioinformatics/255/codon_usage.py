@@ -23,16 +23,16 @@ URL "https://bites-data.s3.us-east-2.amazonaws.com/NC_009641.txt"
 BASE_ORDER ["U", "C", "A", "G"]
 
 
-___ _preload_sequences(url=URL
+___ _preload_sequences url_?
     """
     Provided helper function
     Returns coding sequences, one sequence each line
     """
-    filename __.p...j..(__.g.. TMP  /tmp, "NC_009641.txt")
-    __ n.. __.p...i..(filename
-        u..(url, filename)
-    w__ o.. filename, "r") __ f:
-        r.. f.r..
+    filename __.p...j.. __.g.. T.. /t.. "NC_009641.txt")
+    __ n.. __.p...i.. ?
+        u.. ? ?
+    w__ o.. ? _ __ f
+        r.. ?.r..
 
 ___ codon_info(codons, count, total, translation
     return_str '|'

@@ -1,4 +1,4 @@
-____ i.. _______ combinations, permutations
+____ i.. _______ c.., permutations
 
 ___ friends_teams(friend_list, t.._2, o.._F..
     #print(len(friend_list), team_size, order_does_matter)

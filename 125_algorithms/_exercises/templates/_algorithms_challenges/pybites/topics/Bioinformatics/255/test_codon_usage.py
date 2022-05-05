@@ -42,9 +42,9 @@ ___ get_whole_table(table
     """
     r.. [
         entry.s...s..
-        ___ line __ table.s...s.. "\n"
-        ___ entry __ line.s..("|")
-        __ entry.r..("-", "") !_ "" a.. entry.s.. !_ ""
+        ___ line __ ?.s...s..  \n
+        ___ ? __ ?.s.. "|"
+        __ ?.r.. "-", "" !_ "" a.. ?.s.. !_ ""
     ]
 
 
@@ -54,7 +54,7 @@ ___ get_field(table, field_number
     Receives a results table
     Returns a list of queried field
     """
-    r.. [entry[field_number] ___ entry __ get_whole_table(table)]
+    r.. entry f.. ___ ? __ g.. ?
 
 
 ___ get_codons(table
@@ -63,7 +63,7 @@ ___ get_codons(table
     Receives a results table
     Returns a list of queried field
     """
-    r.. get_field(table, 0)
+    r.. ? ? 0
 
 
 ___ get_amino_acids(table
@@ -72,7 +72,7 @@ ___ get_amino_acids(table
     Receives a results table
     Returns a list of amino acids
     """
-    r.. get_field(table, 1)
+    r.. ? ? 1
 
 
 ___ get_frequencies(table
@@ -81,7 +81,7 @@ ___ get_frequencies(table
     Receives a results table
     Returns a list of frequencies
     """
-    r.. get_field(table, 2)
+    r.. ? ? 2
 
 
 ___ get_absolute_numbers(table
@@ -90,7 +90,7 @@ ___ get_absolute_numbers(table
     Receives a results table
     Returns a list of absolute codon numbers
     """
-    r.. get_field(table, 3)
+    r.. ? ? 3
 
 
 ___ get_table_bars(table
@@ -98,7 +98,7 @@ ___ get_table_bars(table
     Receives a results table
     Returns a list of bars/pipes (|) per line
     """
-    r.. [l..(__.f.. _ \|", line ___ line __ table.s.. "\n" ]
+    r.. l.. __.f.. _ \|" line ___ ? __ ?.s.. \n
 
 
 ___ get_table_dividers(table
@@ -106,7 +106,7 @@ ___ get_table_dividers(table
     Receives a results table
     Returns a list of divider rows (------)
     """
-    r.. [l..(__.f.. _ ^-{3,}$", line ___ line __ table.s.. "\n" ]
+    r.. l.. __.f.. _ ^-{3,}$" line ___ ? __ ?.s.. \n
 
 
 # ############################################################################

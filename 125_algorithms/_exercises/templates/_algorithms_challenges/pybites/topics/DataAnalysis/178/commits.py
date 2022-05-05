@@ -7,7 +7,7 @@ ____ d__ _______ d__
 
 ____ d__.p.. _______ p..
 
-commits __.p...j..(__.g.. TMP  /tmp, 'commits')
+commits __.p...j.. __.g.. T.. /t.. 'commits')
 u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/git_log_stat.out',
     commits

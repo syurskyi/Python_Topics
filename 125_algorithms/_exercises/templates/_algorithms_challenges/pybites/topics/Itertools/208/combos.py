@@ -1,4 +1,4 @@
-____ i.. _______ combinations
+____ i.. _______ c..
 
 """ def find_number_pairs(numbers, N=10):
     temp = []

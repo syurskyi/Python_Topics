@@ -1,4 +1,4 @@
-____ i.. _______ combinations, permutations
+____ i.. _______ c.., permutations
 
 
 ___ check_leading_zeros(*numbers
