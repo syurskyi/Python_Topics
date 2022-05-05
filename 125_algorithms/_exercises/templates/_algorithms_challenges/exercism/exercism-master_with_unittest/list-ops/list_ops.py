@@ -19,7 +19,7 @@ ___ filter_clone(function, l
     ___ element __ l:
         __ function(element
             filtered a..(filtered, [element])
-    r.. filtered
+    r.. ?
 
 
 ___ length(l

@@ -24,7 +24,7 @@ cur ?.c..
 
 
 ___ import_data
-    w__ r__.S.. __ session:
+    w__ r__.S.. __ session
         content ?.g.. D...c__.d.. utf-8
 
     reader c__.D.. ?.s..  d.._','

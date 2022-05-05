@@ -31,7 +31,7 @@ ___ filter_names_1(names
         ____
             _____
         cnt += 1
-    r.. filtered
+    r.. ?
 
 print(filter_names_1(names
 

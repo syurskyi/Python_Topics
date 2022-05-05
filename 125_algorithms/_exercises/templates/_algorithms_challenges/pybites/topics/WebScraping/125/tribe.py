@@ -12,7 +12,7 @@ MIN_COUNT 3
 
 ___ load_page
     """Download the blog html and return its decoded content"""
-    w__ r__.S.. __ session:
+    w__ r__.S.. __ session
         r.. ?.g.. ? .c__.d.. utf-8
 
 

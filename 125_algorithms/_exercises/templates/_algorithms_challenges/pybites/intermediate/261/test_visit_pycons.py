@@ -9,7 +9,7 @@ ____ visit_pycons _______ (
 ___ test_update_pycons_lat_lon
     pycons _get_pycons()
     update_pycons_lat_lon(pycons)
-    ___ pycon __ pycons:
+    ___ pycon __ ?
         ... isi..(pycon.lat, f__)
         ... isi..(pycon.lon, f__)
 

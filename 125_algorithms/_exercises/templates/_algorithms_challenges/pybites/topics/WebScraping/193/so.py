@@ -5,7 +5,7 @@ cached_so_url 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
 
 ___ load_page(so_url
     """Download the blog html and return its decoded content"""
-    w__ r__.S.. __ session:
+    w__ r__.S.. __ session
         r.. ?.g.. so_url).c__.d.. utf-8
 
 ___ top_python_questions url_?

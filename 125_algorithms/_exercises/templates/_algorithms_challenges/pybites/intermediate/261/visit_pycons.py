@@ -115,7 +115,7 @@ ___ update_pycons_lat_lon(pycons
     """
     mapping _extract_city_country_to_lat_lon()
 
-    ___ pycon __ pycons:
+    ___ pycon __ ?
         city pycon.city
         country pycon.country
 

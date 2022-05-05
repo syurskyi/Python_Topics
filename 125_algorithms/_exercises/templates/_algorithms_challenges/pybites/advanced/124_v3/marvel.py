@@ -13,7 +13,7 @@ Character n..('Character', 'pid name sid align sex first_appearance appearances 
 
 ___ _get_csv_data
     """Download the marvel csv data and return its decoded content"""
-    w__ r__.S.. __ session:
+    w__ r__.S.. __ session
         r.. ?.g.. MARVEL_CSV).c__.d.. utf-8
 
 
@@ -25,7 +25,7 @@ ___ load_data
     ___ row __ ?
         name __.s.. _ (.*?)\(.*', r'\1', row 'name' ).s..
         y.. Character(pid=row 'page_id' ,
-                        name=name,
+                        n.._?
                         sid=row 'ID' ,
                         align=row 'ALIGN' ,
                         sex=row 'SEX' ,

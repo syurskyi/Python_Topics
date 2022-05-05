@@ -79,7 +79,7 @@ country_lookup {
 }
 
 
-___ get_continent(country: s..) __ s..
+___ get_continent c.. s.. __ s..
     """
     Given a country name returns the associated continent of the country.
 
@@ -88,19 +88,19 @@ ___ get_continent(country: s..) __ s..
     :returns: The continent of the country
     :rtype: str
     """
-    ___ continent, countries __ country_lookup.i..
-        ___ c __ countries:
-            __ country.l.. __ c.l..:
-                r.. continent
+    ___ continent, countries __ ?.i..
+        ___ c __ c..
+            __ c__.l.. __ ?.l..
+                r.. ?
 
 
 ___ _get_pycon_data
     """Helper function that retrieves the required PyCon data"""
-    w__ r__.S.. __ session:
-        r.. ?.g.. PYCON_DATA).content.d.. "utf-8")
+    w__ r__.S.. __ session
+        r.. ?.g.. P.. .c__.d.. utf-8
 
 
-___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
+___ get_pycon_events data_? __ L.. P..
     """
     Scrape the PyCon events from the given website data and
     return a list of PyCon namedtuples. Pay attention to the
@@ -110,7 +110,7 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     events whole_text.f.. "script", {"type":"application/ld+json"})
     #print(events[0].text.strip())
     pycon_events    # list
-    ___ event __ events:
+    ___ event __ ?
         event_json j__.l.. (event.?.s..
         __ 'pycon' __ event_json["name"].l..:
             # { "@context": "http://schema.org", "@type": "Event", 
@@ -125,7 +125,7 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
             event_url event_json 'url'
             pycon_tuple PyCon(name=event_name,
                                 city=event_city,
-                                country=event_country,
+                                country_event_country,
                                 start_date=event_startDate,
                                 end_date=event_endDate,
                                 url=event_url
@@ -135,16 +135,16 @@ ___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
 
 
 
-___ filter_pycons(pycons: L..[PyCon],
-                  year: i.. 2019,
-                  continent: s.. "Europe") __ L..[PyCon]:
+___ filter_pycons pycons L.. ?
+                  y.. i.. 2019
+                  c.. s.. Europe __ L.. ?
     """
     Given a list of PyCons a year and a continent return
     a list of PyCons that take place in that year and on
     that continent.
     """
     filtered_event    # list
-    ___ pycon __ pycons:
+    ___ pycon __ ?
         event_year pycon.start_date.year
         event_continent get_continent(pycon.country)
         print(event_year, event_continent)
