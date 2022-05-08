@@ -17,8 +17,8 @@ c_ AttrDict(d..
        PyBites uses this class for parsing"""
 
     ___ - , $  $$
-        super(AttrDict, self). - $ $$
-        __dict__ self
+        s.. ? - - $ $$
+        -d self
 
 
 ___ _convert_struct_time_to_dt(stime
@@ -32,14 +32,14 @@ ___ _convert_struct_time_to_dt(stime
         dt_object d__.s..(stime, f..)
         r.. dt_object.date()
     ____
-        r.. d__.fromtimestamp(mktime(stime.date()
+        r.. d__.f.. m.. ?.date()
 
 
-___ get_feed_entries(feed=FEED
+___ get_feed_entries feed_?
     """Use feedparser to parse PyBites RSS feed.
        Return a list of Entry namedtuples (date = date, drop time part)
     """
-    __ t..(feed) __ AttrDict:
+    __ t..(feed) __ ?:
         file feed
     ____
         file p..(feed)
@@ -99,7 +99,7 @@ ___ main
 
         __ search_term !_ '' a.. search_term !_ 'q':
             output_list    # list
-            ___ entry __ entries:
+            ___ entry __ ?
                 __ filter_entries_by_tag(search_term, entry
                     output_list.a..(entry)
             output_list s..(output_list, k.._l.... x: x.date)

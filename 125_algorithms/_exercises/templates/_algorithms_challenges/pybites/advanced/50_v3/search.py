@@ -17,11 +17,11 @@ ___ _convert_struct_time_to_dt(stime
     r.. date y.._stime.tm_year,  m.._stime.tm_mon,  d.._stime.tm_mday)
 
 
-___ get_feed_entries(feed=FEED
+___ get_feed_entries feed_?
     """Use feedparser to parse PyBites RSS feed.
        Return a list of Entry namedtuples (date = date, drop time part)
     """
-    f feedparser.p..(feed)
+    f f__.p.. ?
     result    # list
     ___ item __ f.entries:
         result.a..(Entry(_convert_struct_time_to_dt(item.published_parsed),

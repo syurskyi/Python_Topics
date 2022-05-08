@@ -6,17 +6,17 @@ c_ Tree(o..
         label label
         children children
 
-    ___ __dict__
-        r.. {label: [c.__dict__() ___ c __ s..(children)]}
+    ___ -d
+        r.. {label: [c.-d() ___ c __ s..(children)]}
 
     ___ -s  indent_ N..
-        r.. dumps(__dict__(), indent=indent)
+        r.. dumps(-d(), indent=indent)
 
     ___ -l  other
         r.. label < other.label
 
     ___ -e  other
-        r.. __dict__() __ other.__dict__()
+        r.. -d() __ other.-d()
 
     ___ -i
         y.. label

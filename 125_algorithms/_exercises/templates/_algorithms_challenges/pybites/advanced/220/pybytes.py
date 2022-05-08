@@ -31,7 +31,7 @@ c_ PythonBytes:
         episode_ids    # list
 
 
-        ___ entry __ entries:
+        ___ entry __ ?
             #summary = entry['summary']
             summary entry 'summary'
             __ domain __ summary:
@@ -56,7 +56,7 @@ c_ PythonBytes:
            Return a list of (domain, count) tuples (use Counter).
         """
         counts C..()
-        ___ entry __ entries:
+        ___ entry __ ?
             summary entry 'summary'
             domains s..(__.f.. _ https?://[^/]+',summary
             ___ domain __ domains:
@@ -88,7 +88,7 @@ c_ PythonBytes:
         duration_sums 0
 
 
-        ___ entry __ entries:
+        ___ entry __ ?
             duration= entry 'itunes_duration'
             hours,minutes,seconds m.. i..,duration.s..(':'
             total_seconds 3600 * hours + 60 * minutes + seconds

@@ -33,17 +33,17 @@ c_ JsObject:
     ___ -s  key, value
         __ key n.. __ RESERVED_WORDS:
             _local[key] value
-            __dict__[key] value
+            -d[key] value
         ____
             r.. AttributeError("Reserved words not allowed")
 
     ___ __delitem__  key
         _local.p.. key)
-        __dict__.p.. key)
+        -d.p.. key)
 
     ___ __delattr__  item
         _local.p.. item)
-        __dict__.p.. item)
+        -d.p.. item)
 
     ___ -l
         r.. l..(_local)

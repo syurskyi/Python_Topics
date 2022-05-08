@@ -11,35 +11,35 @@ c_ AttrDict(d..
     """feedparser lets you access dict keys as attributes, hence a bit of
        mocking, got this from https://stackoverflow.com/a/14620633"""
     ___ - , $  $$
-        super(AttrDict, self). - $ $$
-        __dict__ self
+        s.. ? - - $ $$
+        -d self
 
 
 dt1 d__(2018, 2, 18, 19, 52, 0).t..
 dt2 d__(2017, 1, 6, 11, 0, 0).t..
 
-MOCK_ENTRIES AttrDict({'entries':
-                [AttrDict({'author': 'PyBites',
+MOCK_ENTRIES ?({'entries':
+                [?({'author': 'PyBites',
                            'link':
                            'https://pybit.es/twitter_digest_201808.html',  # noqa E501
                            'published': 'Sun, 18 Feb 2018 20:52:00 +0100',  # noqa E501
                            'published_parsed': dt1,
                            'summary': 'Every weekend we share ...',
-                           'tags': [AttrDict({'term': 'twitter'}),
-                                    AttrDict({'term': 'Flask'}),
-                                    AttrDict({'term': 'Python'}),
-                                    AttrDict({'term': 'Regex'})],
+                           'tags': [?({'term': 'twitter'}),
+                                    ?({'term': 'Flask'}),
+                                    ?({'term': 'Python'}),
+                                    ?({'term': 'Regex'})],
                            'title': 'Twitter Digest 2018 Week 08'}),
-                 AttrDict({'author': 'Julian',
+                 ?({'author': 'Julian',
                            'link': 'https://pybit.es/pyperclip.html',
                            'published': 'Fri, 06 Jan 2017 12:00:00 +0100',  # noqa E501
                            'published_parsed': dt2,
                            'summary': 'Use the Pyperclip module to ...',
-                           'tags': [AttrDict({'term': 'python'}),
-                                    AttrDict({'term': 'tips'}),
-                                    AttrDict({'term': 'tricks'}),
-                                    AttrDict({'term': 'code'}),
-                                    AttrDict({'term': 'pybites'})],
+                           'tags': [?({'term': 'python'}),
+                                    ?({'term': 'tips'}),
+                                    ?({'term': 'tricks'}),
+                                    ?({'term': 'code'}),
+                                    ?({'term': 'pybites'})],
                            'title': 'Copy and Paste with Pyperclip'})]})
 
 
@@ -55,9 +55,9 @@ ___ test_convert_struct_time_to_dt(arg, ret
     ... _convert_struct_time_to_dt(arg) __ ret
 
 
-$p.. ("feedparser.parse", s.._ MOCK_ENTRIES])
-___ test_get_feed_entries(inp
-    first, last t..(get_feed_entries
+$p.. ("feedparser.parse", s.._ M..
+___ test_get_feed_entries inp
+    first, last t.. ?
 
     ... first.date __ date y.._2018,  m.._2,  d.._18)
     ... first.title __ 'Twitter Digest 2018 Week 08'
@@ -93,10 +93,10 @@ ___ test_filter_entries_by_tag(arg, ret
                   tags={'pythonic', 'data science',
                         'tips', 'tricks', 'matplotlib',
                         'pandas', 'books', 'collections'})
-    ... filter_entries_by_tag(arg, entry) __ ret
+    ... ? ? ? __ ?
 
 
-$p.. ("feedparser.parse", s.._ MOCK_ENTRIES])
+$p.. ("feedparser.parse", s.._ M..
 $p.. ("builtins.input", side_effect= 'pycon', 'twitter', 'python', 'nonsense',
                                       'python|regex', 'python&regex', 'REGeX',
                                       '', 'q' )

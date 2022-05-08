@@ -17,32 +17,32 @@ c_ AttrDict(d..
        PyBites uses this class for parsing"""
 
     ___ - , $  $$
-        super(AttrDict, self). - $ $$
-        __dict__ self
+        s.. ? - - $ $$
+        -d self
 
 
-FEED= AttrDict({'entries':
-                [AttrDict({'author': 'PyBites',
+FEED= ?({'entries':
+                [?({'author': 'PyBites',
                            'link':
                            'https://pybit.es/twitter_digest_201808.html',  # noqa E501
                            'published': 'Sun, 18 Feb 2018 20:52:00 +0100',  # noqa E501
                            'published_parsed': dt1,
                            'summary': 'Every weekend we share ...',
-                           'tags': [AttrDict({'term': 'twitter'}),
-                                    AttrDict({'term': 'Flask'}),
-                                    AttrDict({'term': 'Python'}),
-                                    AttrDict({'term': 'Regex'})],
+                           'tags': [?({'term': 'twitter'}),
+                                    ?({'term': 'Flask'}),
+                                    ?({'term': 'Python'}),
+                                    ?({'term': 'Regex'})],
                            'title': 'Twitter Digest 2018 Week 08'}),
-                 AttrDict({'author': 'Julian',
+                 ?({'author': 'Julian',
                            'link': 'https://pybit.es/pyperclip.html',
                            'published': 'Fri, 06 Jan 2017 12:00:00 +0100',  # noqa E501
                            'published_parsed': dt2,
                            'summary': 'Use the Pyperclip module to ...',
-                           'tags': [AttrDict({'term': 'python'}),
-                                    AttrDict({'term': 'tips'}),
-                                    AttrDict({'term': 'tricks'}),
-                                    AttrDict({'term': 'code'}),
-                                    AttrDict({'term': 'pybites'})],
+                           'tags': [?({'term': 'python'}),
+                                    ?({'term': 'tips'}),
+                                    ?({'term': 'tricks'}),
+                                    ?({'term': 'code'}),
+                                    ?({'term': 'pybites'})],
                            'title': 'Copy and Paste with Pyperclip'})]})
 
 
@@ -58,14 +58,14 @@ ___ _convert_struct_time_to_dt(stime
         dt_object d__.s..(stime, f..)
         r.. dt_object.date()
     ____
-        r.. d__.fromtimestamp(mktime(stime.date()
+        r.. d__.f.. m.. ?.date()
 
 
-___ get_feed_entries(feed=FEED
+___ get_feed_entries feed_?
     """Use feedparser to parse PyBites RSS feed.
        Return a list of Entry namedtuples (date = date, drop time part)
     """
-    __ t..(feed) __ AttrDict:
+    __ t..(feed) __ ?:
         file feed
     ____
         file p..(feed)
@@ -125,7 +125,7 @@ ___ main
 
         __ search_term !_ '' a.. search_term !_ 'q':
             output_list    # list
-            ___ entry __ entries:
+            ___ entry __ ?
                 __ filter_entries_by_tag(search_term, entry
                     output_list.a..(entry)
             output_list s..(output_list, k.._l.... x: x.date)
