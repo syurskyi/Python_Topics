@@ -16,7 +16,7 @@ c_ Solution(o..
             ___ j __ r..(i+1, l.. ?
                 __ arr[i] & arr[j] __ 0:
                     result m..(result, l..(words[i])*l..(words[j]
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

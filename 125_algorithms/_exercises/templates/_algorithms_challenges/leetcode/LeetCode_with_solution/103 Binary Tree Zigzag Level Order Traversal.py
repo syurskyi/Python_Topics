@@ -51,6 +51,6 @@ c_ Solution:
                 __ element.right:
                     lst.a..(element.right)
             direction n.. direction
-        r.. result
+        r.. ?
 
 

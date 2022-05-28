@@ -8,7 +8,7 @@ ___ getMoneySpent(keyboards, drives, b
         ___ j __ r..(1, l..(drives:
             __ result < keyboards[i] + drives[j] <_ b:
                 result keyboards[i] + drives[j]
-    r.. result
+    r.. ?
 
 
 b, n, m m.. i.., i.. ).s..

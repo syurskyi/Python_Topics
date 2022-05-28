@@ -11,7 +11,7 @@ ___ pickingNumbers(arr
             __ maxCount > result:
                 result maxCount
             checked.add(i)
-    r.. result
+    r.. ?
 
 
 n i..(i.. ).s..

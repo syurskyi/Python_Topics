@@ -31,7 +31,7 @@ c_ Solution:
             __ l..(val)>1:
                 # result.append([strs[i] for i in val])
                 result += [strs[i] ___ i __ val]
-        r.. result
+        r.. ?
 
     ___ anagrams  strs
         """
@@ -55,7 +55,7 @@ c_ Solution:
             __ l..(val)>1:
                 # result.append([strs[i] for i in val])
                 result += [strs[i] ___ i __ val]
-        r.. result
+        r.. ?
 
 __ _____ __ ____
     Solution().anagrams(["", ""])

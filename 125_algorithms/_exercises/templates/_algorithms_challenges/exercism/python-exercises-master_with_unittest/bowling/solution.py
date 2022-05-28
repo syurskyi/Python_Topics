@@ -35,7 +35,7 @@ c_ Frame(o..
             result += s..(next_throws[:2])
         ____ is_spare
             result += s..(next_throws[:1])
-        r.. result
+        r.. ?
 
 
 c_ BowlingGame(o..

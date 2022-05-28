@@ -22,7 +22,7 @@ c_ Solution(o..
                 maxArr[i] m..(minArr[i-1]*num, num)
                 minArr[i] m..(maxArr[i-1]*num, num)
             result m..(result, maxArr[i])
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

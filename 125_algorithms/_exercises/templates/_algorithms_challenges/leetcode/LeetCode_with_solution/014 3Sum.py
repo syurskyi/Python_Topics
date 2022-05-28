@@ -39,7 +39,7 @@ c_ Solution:
                     __ i !_ index a.. j !_ index:
                         result.a..([num[i], num[j], target])
                         _____
-        r.. result
+        r.. ?
 
     ___ threeSum_TLE  num
         """
@@ -70,7 +70,7 @@ c_ Solution:
                         result[lst] 1  # hash
                         _____
 
-        r.. result.k..
+        r.. ?.k..
 
     ___ threeSum  num
         """
@@ -122,7 +122,7 @@ c_ Solution:
             w.... i < l..(num)-2 a.. num[i] __ num[i-1]:
                 i += 1
 
-        r.. result
+        r.. ?
 
 
 __ _______ __ _______

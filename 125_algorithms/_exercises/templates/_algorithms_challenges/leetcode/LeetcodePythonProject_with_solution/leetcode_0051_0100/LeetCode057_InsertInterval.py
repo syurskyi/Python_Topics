@@ -35,7 +35,7 @@ c_ Solution(o..
                     m..(newInterval.start, interval.start),\
                     m..(newInterval.end, interval.end
         result.a..(newInterval)
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

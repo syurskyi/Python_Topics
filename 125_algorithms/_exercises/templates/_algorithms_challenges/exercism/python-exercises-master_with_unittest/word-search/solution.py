@@ -54,5 +54,5 @@ c_ WordSearch(o..
             ___ d __ DIRECTIONS:
                 result f.. word, pos, d)
                 __ result:
-                    r.. result
+                    r.. ?
         r.. N..

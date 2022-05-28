@@ -17,7 +17,7 @@ c_ Solution(o..
             w.... bucket[i]:
                 c bucket[i].p.. )
                 result += c*(i)
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

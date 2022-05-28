@@ -30,7 +30,7 @@ ___ get_generation(cells, generations
 
     trim_result(result)
 
-    r.. result
+    r.. ?
 
 
 ___ trim_result(result

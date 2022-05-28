@@ -21,7 +21,7 @@ c_ Solution:
         """
         result    # list
         get_partition(s,    # list, result)
-        r.. result
+        r.. ?
 
     ___ get_partition  seq, cur, result
         __ n.. seq:

@@ -20,4 +20,4 @@ c_ Solution:
                     result[word]    # list
                 __ doc.id n.. __ result[word]:
                     result[word].a..(doc.id)
-        r.. result
+        r.. ?

@@ -31,7 +31,7 @@ c_ Solution(o..
                 result[i][left] count
                 count+=1
             left += 1
-        r.. result
+        r.. ?
     
     ___ test
         ___ n __ r..(1, 5

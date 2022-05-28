@@ -34,7 +34,7 @@ ___ get_all_timestamps
             __ timestamp:
                 result.a..(timestamp 0
         print(result)
-    r.. result
+    r.. ?
 
 
 ___ calc_total_course_duration(timestamps

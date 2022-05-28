@@ -13,8 +13,8 @@ ___ r..(num1, num2
         result i..(result)
     
     __(is_negative
-        r.. result*-1
-    r.. result
+        r.. ?*-1
+    r.. ?
 
 ___ i __ r..(amount_values
     num1, num2 m.. i.., i.. ).s..

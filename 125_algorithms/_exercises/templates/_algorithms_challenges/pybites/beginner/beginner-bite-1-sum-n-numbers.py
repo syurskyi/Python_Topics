@@ -47,10 +47,10 @@ ___ my_sum_numbers(numbers_ N..
     __ numbers !_ N..
         ___ item __ numbers:
             result += item
-        r.. result
+        r.. ?
     ___ i __ r..(101
         result += i
-    r.. result
+    r.. ?
 
 ### ---------- PyBites original solution ---------------
 

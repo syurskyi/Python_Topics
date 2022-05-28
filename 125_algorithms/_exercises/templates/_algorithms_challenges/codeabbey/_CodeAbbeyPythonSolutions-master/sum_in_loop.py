@@ -7,6 +7,6 @@ ___ get_sum
     ___ i __ values:
         result result + i
 
-    r.. result
+    r.. ?
 
 print(get_sum

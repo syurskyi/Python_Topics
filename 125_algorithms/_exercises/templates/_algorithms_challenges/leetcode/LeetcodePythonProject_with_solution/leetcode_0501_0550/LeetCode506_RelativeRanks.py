@@ -25,4 +25,4 @@ c_ Solution(o..
                 result.a..('Bronze Medal')
             ____
                 result.a..(s..(ind
-        r.. result
+        r.. ?

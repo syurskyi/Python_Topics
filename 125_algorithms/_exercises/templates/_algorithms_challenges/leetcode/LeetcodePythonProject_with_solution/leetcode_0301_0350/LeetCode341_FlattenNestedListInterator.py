@@ -48,7 +48,7 @@ c_ NestedIterator(o..
         result result
 
     ___ next
-        r.. result.p.. 0)
+        r.. ?.p.. 0)
 
     ___ hasNext
         __ result:

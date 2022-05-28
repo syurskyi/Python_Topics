@@ -18,7 +18,7 @@ ___ my_solution_positive_divide(numerator, denominator
         r..
     __ result < 0:
         r.. V...
-    r.. result
+    r.. ?
 
 print(my_solution_positive_divide(1,2
 
@@ -42,4 +42,4 @@ ___ pybites_solution_positive_divide(numerator, denominator
     ____
         __ result < 0:
             r.. V...('Cannot be negative')
-        r.. result
+        r.. ?

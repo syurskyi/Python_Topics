@@ -20,4 +20,4 @@ c_ Solution(o..
                     singleNum T..
             ____
                 result += count
-        r.. result
+        r.. ?

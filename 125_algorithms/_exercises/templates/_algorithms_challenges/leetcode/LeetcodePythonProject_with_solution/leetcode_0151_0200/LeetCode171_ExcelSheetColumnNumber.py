@@ -15,7 +15,7 @@ c_ Solution(o..
             result result*26
             num o..(c)-o..('A')+1
             result += num
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

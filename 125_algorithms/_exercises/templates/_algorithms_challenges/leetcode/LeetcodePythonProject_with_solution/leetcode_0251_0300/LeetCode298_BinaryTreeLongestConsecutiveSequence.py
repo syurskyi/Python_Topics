@@ -16,7 +16,7 @@ c_ Solution(o..
         __ n.. root: r.. 0
         result [1]
         helper(root, 1, result)
-        r.. result[0]
+        r.. ?[0]
     
     ___ helper  root, length, result
         __ n.. root.left a.. n.. root.right:

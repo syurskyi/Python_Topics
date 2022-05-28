@@ -15,7 +15,7 @@ c_ Solution:
         """
         result    # list
         get_permute(num,    # list, result)
-        r.. result
+        r.. ?
 
     ___ get_permute  seq, current, result
         length l..(seq)

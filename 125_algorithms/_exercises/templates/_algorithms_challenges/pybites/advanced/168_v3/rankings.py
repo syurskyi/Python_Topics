@@ -71,11 +71,11 @@ c_ Rankings:
     ___ highest  count: i.. 1
         result ninja_list[-count:]
         result.r..
-        r.. result
+        r.. ?
 
     ___ lowest  count: i.. 1
         result ninja_list[:count]
-        r.. result
+        r.. ?
 
     ___ pair_up  count: i.. 3
         highest highest(count)

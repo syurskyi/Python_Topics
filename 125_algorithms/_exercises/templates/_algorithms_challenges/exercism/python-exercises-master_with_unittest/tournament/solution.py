@@ -8,7 +8,7 @@ ___ invert_result(result
         r.. 2
     ____ result __ 2:
         r.. 0
-    r.. result
+    r.. ?
 
 
 ___ parse_game(game_line

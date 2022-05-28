@@ -60,4 +60,4 @@ ___ recite(start_verse, end_verse
 
         # Pop out the last empty string
         result.p.. )
-        r.. result
+        r.. ?

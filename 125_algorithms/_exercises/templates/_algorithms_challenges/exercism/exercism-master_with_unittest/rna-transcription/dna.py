@@ -4,7 +4,7 @@ ___ to_rna(strand
     ___ i __ strand:
         result += pairing_for(i)
 
-    r.. result
+    r.. ?
 
 
 ___ pairing_for(nucleobase

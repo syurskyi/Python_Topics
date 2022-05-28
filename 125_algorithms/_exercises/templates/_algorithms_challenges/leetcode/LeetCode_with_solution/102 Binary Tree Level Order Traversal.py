@@ -48,7 +48,7 @@ c_ Solution:
                     q.a..(cur.right)
             result.a.. m..(l.... x: x.val, q[:length]  # no need to create a new list
             q q[length:]  # no need to create a new list
-        r.. result
+        r.. ?
 
 __ _____ __ ____
     nodes [TreeNode(i) ___ i __ r..(3)]

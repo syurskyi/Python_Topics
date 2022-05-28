@@ -20,10 +20,10 @@ c_ Solution(o..
         """
         result    # list
         __ n.. root:
-            r.. result
+            r.. ?
         elem [root.val]
         dfs(result, elem, root, sumVal-root.val)
-        r.. result
+        r.. ?
     
     ___ dfs  result, elem, root, sumVal
         __ n.. root:

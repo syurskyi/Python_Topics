@@ -58,5 +58,5 @@ c_ NumArray(o..
         mid root.start + (root.end-root.start)//2
         result sumRangeHelper(root.leftChild, i, m..(j, mid +\
             sumRangeHelper(root.rightChild, m..(i, mid+1), j)
-        r.. result
+        r.. ?
     

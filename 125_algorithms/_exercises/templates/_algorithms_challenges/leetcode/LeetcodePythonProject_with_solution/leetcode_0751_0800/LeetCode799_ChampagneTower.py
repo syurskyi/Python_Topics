@@ -19,7 +19,7 @@ c_ Solution(o..
                     result[i+1][j] += (result[i][j]-1)/2.0
                     result[i+1][j+1] += (result[i][j]-1)/2.0
                     result[i][j] 1.0
-        r.. result[query_row][query_glass]
+        r.. ?[query_row][query_glass]
     
     ___ test
         testCases [

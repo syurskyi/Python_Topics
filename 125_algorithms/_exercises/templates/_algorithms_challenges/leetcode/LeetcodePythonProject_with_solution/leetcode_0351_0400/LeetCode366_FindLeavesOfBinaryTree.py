@@ -37,7 +37,7 @@ c_ Solution(o..
             tmpResult    # list
             getLeaves(dummy, root, tmpResult)
             result.a..(tmpResult)
-        r.. result
+        r.. ?
     
     ___ getLeaves  parent, root, result
         __ n.. root: r..

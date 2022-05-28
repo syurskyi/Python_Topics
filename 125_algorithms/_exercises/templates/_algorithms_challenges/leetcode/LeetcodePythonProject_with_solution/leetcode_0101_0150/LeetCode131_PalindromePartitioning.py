@@ -10,9 +10,9 @@ c_ Solution(o..
         :rtype: List[List[str]]
         """
         result    # list
-        __ n.. s: r.. result
+        __ n.. s: r.. ?
         helper(s, 0,    # list, result)
-        r.. result
+        r.. ?
     
     ___ helper  s, startInd, elem, result
         __ startInd __ l..(s

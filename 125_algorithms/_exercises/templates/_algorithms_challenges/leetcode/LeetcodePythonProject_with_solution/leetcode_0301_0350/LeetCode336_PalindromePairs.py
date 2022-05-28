@@ -23,7 +23,7 @@ c_ Solution(o..
                     str1rvs s1[::-1]
                     __ str1rvs __ hashmap a.. hashmap[str1rvs] !_ i a.. s2:
                         result.a..([i, hashmap[str1rvs]])
-        r.. result
+        r.. ?
     
     ___ isPalindrome  s
         left, right 0, l..(s)-1

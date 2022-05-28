@@ -26,7 +26,7 @@ c_ Solution:
         candidates.s..()
         result    # list
         get_combination(target, candidates,    # list, result)
-        r.. result
+        r.. ?
 
     ___ get_combination  target, candidates, current, result
         __ n.. candidates o. s..(current)>target:

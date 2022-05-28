@@ -44,7 +44,7 @@ c_ Solution(o..
                     added T..
             __ n.. added:
                 result.a..([s])
-        r.. result
+        r.. ?
     
     ___ isSameGroup  s1, s2
         __ l..(s1) !_ l..(s2

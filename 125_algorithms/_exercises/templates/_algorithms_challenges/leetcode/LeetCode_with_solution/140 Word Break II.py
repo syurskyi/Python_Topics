@@ -58,7 +58,7 @@ c_ Solution:
 
         result    # list
         build_result(dp, l..(s), d..(), result)
-        r.. result
+        r.. ?
 
 
     ___ build_result  dp, cur_index, cur_sentence, result

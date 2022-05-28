@@ -36,7 +36,7 @@ c_ Solution(o..
                 burst(memo, nums, left, i) +\
                 burst(memo, nums, i, right
             memo[left][right] result
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

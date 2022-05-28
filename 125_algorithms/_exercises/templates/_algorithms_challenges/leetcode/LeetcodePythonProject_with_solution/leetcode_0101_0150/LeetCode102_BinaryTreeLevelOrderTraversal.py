@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: List[List[int]]
         """
         result    # list
-        __ n.. root: r.. result
+        __ n.. root: r.. ?
         queue    # list
         nextQueue    # list
         elem    # list
@@ -29,4 +29,4 @@ c_ Solution(o..
                 elem    # list
                 queue nextQueue
                 nextQueue    # list
-        r.. result
+        r.. ?

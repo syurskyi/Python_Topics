@@ -10,7 +10,7 @@ ___ get_checksum(values
         __(result > limit
             result result % limit
 
-    r.. result
+    r.. ?
 
 values l.. m..(i.., i.. ).s..()))
 

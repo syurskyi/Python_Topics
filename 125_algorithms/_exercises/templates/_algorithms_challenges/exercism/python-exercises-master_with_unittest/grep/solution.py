@@ -20,7 +20,7 @@ ___ format_files(matched_lines
         __ file_name n.. __ result:
             result += file_name + '\n'
 
-    r.. result
+    r.. ?
 
 
 ___ format_lines(matched_lines, files, flags

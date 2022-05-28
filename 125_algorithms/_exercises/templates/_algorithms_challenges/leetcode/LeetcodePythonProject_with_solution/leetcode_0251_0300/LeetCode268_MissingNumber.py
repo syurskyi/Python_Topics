@@ -16,6 +16,6 @@ c_ Solution(o..
         result sumVal
         ___ num __ nums:
             result -_ num
-        r.. result
+        r.. ?
     
     

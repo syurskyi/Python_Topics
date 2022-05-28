@@ -67,7 +67,7 @@ c_ Solution:
                 window_t i+3
                 i += 3
 
-        r.. result
+        r.. ?
 
     ___ findSubstring  S, L
         """

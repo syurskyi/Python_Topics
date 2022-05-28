@@ -68,4 +68,4 @@ c_ NumMatrix(o..
         result 0
         ___ j __ r..(col1, col2+1
             result += colSums[row2+1][j] - colSums[row1][j]
-        r.. result
+        r.. ?

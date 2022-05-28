@@ -13,7 +13,7 @@ c_ Solution(o..
                 result.a..(a..(num
             ____
                 nums[ind] -nums[ind]
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

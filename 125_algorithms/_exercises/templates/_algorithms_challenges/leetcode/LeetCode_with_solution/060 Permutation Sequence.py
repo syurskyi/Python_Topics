@@ -153,7 +153,7 @@ c_ Solution_TLE:
 
         ___ ind, val __ e..(remaining_seq
             result get_kth_permutation_dfs(remaining_seq[:ind]+remaining_seq[ind+1:], k, cur+[val])
-            __ result: r.. result
+            __ result: r.. ?
 
 
 __ _______ __ _______

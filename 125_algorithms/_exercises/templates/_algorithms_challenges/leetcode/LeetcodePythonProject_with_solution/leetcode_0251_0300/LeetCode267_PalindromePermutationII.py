@@ -28,7 +28,7 @@ c_ Solution(o..
                 r..    # list
         result    # list
         helper(oddVal, l..(s), hashmap, result)
-        r.. result
+        r.. ?
     
     ___ helper  s0, length, hashmap, result
         __ l..(s0) >_ length:

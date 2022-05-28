@@ -24,7 +24,7 @@ c_ Solution(o..
         result [0]
         ___ i __ r..(l..(nums)-2, -1, -1
             result.i.. 0, getVal(root, nums[i], 0
-        r.. result, root
+        r.. ?, root
     
     ___ getVal  root, val, num
         __ root.val >_ val:

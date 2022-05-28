@@ -19,7 +19,7 @@ c_ Solution:
         """
         result    # list
         dfs(s,    # list, result)
-        r.. result
+        r.. ?
 
     ___ dfs_complicated  seq, cur, result
         """

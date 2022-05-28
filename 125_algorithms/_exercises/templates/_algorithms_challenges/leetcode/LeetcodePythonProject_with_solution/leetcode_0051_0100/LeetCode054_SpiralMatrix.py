@@ -42,7 +42,7 @@ c_ Solution(o..
                 result.a..(matrix[i][left])
             left+=1
         
-        r.. result
+        r.. ?
     
     ___ test
         matrixes [

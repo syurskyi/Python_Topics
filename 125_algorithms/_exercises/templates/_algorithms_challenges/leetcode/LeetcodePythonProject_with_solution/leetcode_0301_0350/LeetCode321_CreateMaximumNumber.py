@@ -16,7 +16,7 @@ c_ Solution(o..
             right getMax(nums2, j)
             tmpResult merge(left, right)
             result m..(result, tmpResult)
-        r.. result
+        r.. ?
     
     ___ getMax  nums, maxLen
         result    # list
@@ -26,7 +26,7 @@ c_ Solution(o..
                 result.p.. )
             __ l..(result) < maxLen:
                 result.a..(nums[x])
-        r.. result
+        r.. ?
     
     ___ merge  nums1, nums2
         result    # list
@@ -39,7 +39,7 @@ c_ Solution(o..
             result.a..(nums1.p.. 0
         w.... nums2:
             result.a..(nums2.p.. 0
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

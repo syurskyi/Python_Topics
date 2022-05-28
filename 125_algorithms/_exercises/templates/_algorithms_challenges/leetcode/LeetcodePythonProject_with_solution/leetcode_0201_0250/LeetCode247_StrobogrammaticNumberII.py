@@ -48,7 +48,7 @@ c_ Solution(o..
         ___ c __ midCandidate:
             ___ p __ pre:
                 result.a..(p[:premid]+c+p[premid:])
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

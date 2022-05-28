@@ -30,7 +30,7 @@ c_ Solution:
                     current.a..(result[row-1][col-1]+result[row-1][col])
             result.a..(current)
 
-        r.. result
+        r.. ?
 
 __ _____ __ ____
     print Solution().generate(5)

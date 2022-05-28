@@ -22,7 +22,7 @@ c_ Solution(o..
         nextQueue    # list
         elem    # list
         __ n.. root:
-            r.. result
+            r.. ?
         queue.a..(root)
         w.... queue:
             node queue.p.. 0)
@@ -36,7 +36,7 @@ c_ Solution(o..
                 queue nextQueue
                 nextQueue    # list
                 elem    # list
-        r.. result
+        r.. ?
     
     ___ test
         root TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))

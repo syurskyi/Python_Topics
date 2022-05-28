@@ -14,7 +14,7 @@ c_ Morse:
             num code[i:i + 32].l.. 32, '0')
             result.a..(i..(num[1:], 2) -
                           (0 __ num[0] __ '0' ____ Morse.neg
-        r.. result
+        r.. ?
 
     ??
     ___ decode  array
@@ -29,7 +29,7 @@ c_ Morse:
         result ' '.j..([''.j..([next(k ___ k, v __ Morse.alpha.i.. __ v __ char)
                                     ___ char __ words.s..('000')]) ___ words __ code.s..('0' * 7)])
 
-        r.. result
+        r.. ?
 
     neg 1 << 31
 

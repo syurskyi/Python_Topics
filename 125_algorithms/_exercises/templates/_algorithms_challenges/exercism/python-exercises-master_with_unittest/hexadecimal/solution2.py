@@ -21,4 +21,4 @@ ___ hexa(hexstring
     __ hex_of_lastseen __ N..
         # hexstring was empty or triggered KeyError
         r.. V...('Invalid hexadecimal string')
-    r.. result
+    r.. ?

@@ -33,7 +33,7 @@ c_ Solution:
         """
         result    # list
         accumulatePathSum(root, s..,    # list, result)
-        r.. result
+        r.. ?
 
     ___ accumulatePathSum  root, s.., cur_path, result
         """

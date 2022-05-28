@@ -47,7 +47,7 @@ c_ Solution(o..
         h__.heapify(nums)
         ___ _ __ r..(l..(nums)-k+1
             result h__.heappop(nums)
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

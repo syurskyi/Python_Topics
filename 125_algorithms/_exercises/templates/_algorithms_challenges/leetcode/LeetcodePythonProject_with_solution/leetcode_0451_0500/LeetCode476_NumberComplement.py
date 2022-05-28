@@ -20,4 +20,4 @@ c_ Solution
             __ start:
                 __ first __ 0:
                     result += (1 << i)
-        r.. result
+        r.. ?

@@ -38,7 +38,7 @@ c_ Solution:
         result    # list
         num.s..()
         get_permute(num,    # list, result)
-        r.. result
+        r.. ?
 
     ___ get_permute  nums, current, result
         __ n.. nums:

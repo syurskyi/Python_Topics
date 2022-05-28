@@ -32,7 +32,7 @@ c_ Solution(o..
         """
         result    # list
         helper(result,    # list, n, 2)
-        r.. result
+        r.. ?
     
     ___ helper  result, item, n, start
         __ n <_ 1:

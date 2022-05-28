@@ -14,7 +14,7 @@ c_ Solution:
         """
         result    # list
         generateParenthesisDfs(result, "", n, n)
-        r.. result
+        r.. ?
 
     ___ generateParenthesisDfs  result, cur, left, right
         """

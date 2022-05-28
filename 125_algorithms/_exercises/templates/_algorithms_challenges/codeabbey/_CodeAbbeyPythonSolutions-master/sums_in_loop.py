@@ -8,7 +8,7 @@ ___ get_sum(values
     ___ i __ values:
         result result + i
     
-    r.. result
+    r.. ?
 
 ___ i __ r..(amount_values
     values l.. m..(i.., i.. ).s..()))

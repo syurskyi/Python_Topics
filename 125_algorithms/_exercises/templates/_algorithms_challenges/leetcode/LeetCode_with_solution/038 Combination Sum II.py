@@ -27,7 +27,7 @@ c_ Solution:
         result    # list
         candidates.s..()
         get_combination_sum(candidates,    # list, target, result)
-        r.. result
+        r.. ?
 
     ___ get_combination_sum  candidates, cur, target, result
         """

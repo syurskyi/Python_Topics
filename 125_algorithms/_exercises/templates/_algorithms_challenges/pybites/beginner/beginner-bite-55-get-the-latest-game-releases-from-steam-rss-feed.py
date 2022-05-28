@@ -5,7 +5,7 @@ To make sure you work with a static feed we copied today's version so use the UR
 
 ____ c.. _______ n..
 
-_______ feedparser
+_______ f..
 _______ j__
 
 

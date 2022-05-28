@@ -26,7 +26,7 @@ c_ Solution:
         result    # list
         nums [i+1 ___ i __ x..(n)]  # sorted, avoid duplicate
         get_combination(k, nums,    # list, result)
-        r.. result
+        r.. ?
 
     ___ get_combination  k, nums, current, result
         __ l..(current)__k:

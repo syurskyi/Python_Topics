@@ -34,7 +34,7 @@ c_ Solution(o..
                     root.left leftNode
                     root.right rightNode
                     result.a..(root)
-        r.. result
+        r.. ?
     
     ___ test
         result generateTrees(3)

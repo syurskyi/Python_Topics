@@ -46,7 +46,7 @@ c_ Solution(o..
         result "".j.. m..(s.., lst.l..("0")
         __ n.. result:
             r.. "0"
-        r.. result
+        r.. ?
 
     ___ multiply_1_digit  digit, num
         """

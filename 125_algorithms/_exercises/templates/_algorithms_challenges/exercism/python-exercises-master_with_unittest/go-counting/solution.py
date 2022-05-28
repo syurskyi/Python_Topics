@@ -59,4 +59,4 @@ c_ Board:
                     result[owner].update(owned_territories)
                     visited.update(owned_territories)
 
-        r.. result
+        r.. ?

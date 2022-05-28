@@ -40,7 +40,7 @@ c_ Solution:
             ___ col __ r..(n
                 __ board[row][col] __ root 'children' :
                     f.. row, col, root, result)
-        r.. result.k..
+        r.. ?.k..
 
     ___ find  x, y, parent, result
         char board[x][y]

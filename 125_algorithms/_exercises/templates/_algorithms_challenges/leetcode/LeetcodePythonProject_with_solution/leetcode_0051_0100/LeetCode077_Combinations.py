@@ -16,7 +16,7 @@ c_ Solution(o..
         result    # list
         elem    # list
         helper(elem, result, 1, n, k)
-        r.. result
+        r.. ?
     
     ___ helper  elem, result, start, n, k
         __ l..(elem) __ k:

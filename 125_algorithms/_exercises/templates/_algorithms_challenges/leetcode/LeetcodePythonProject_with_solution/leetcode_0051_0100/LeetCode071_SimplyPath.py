@@ -28,7 +28,7 @@ c_ Solution(o..
                 result '/' + l[i] + result
         __ result __ '':
             result '/'
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

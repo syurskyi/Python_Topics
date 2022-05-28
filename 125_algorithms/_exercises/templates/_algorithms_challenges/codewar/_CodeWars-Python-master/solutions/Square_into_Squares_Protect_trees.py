@@ -18,5 +18,5 @@ ___ decompose(n
                 result.a..(i)
                 __ goal __ 0:
                     result.s..()
-                    r.. result
+                    r.. ?
     r.. N..

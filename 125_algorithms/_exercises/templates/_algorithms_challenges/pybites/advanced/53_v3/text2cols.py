@@ -15,7 +15,7 @@ ___ _divide_line(line: s.., col_width: i.. COL_WIDTH
         ____
             line line2
     result.a..(line)
-    r.. result
+    r.. ?
 
 
 ___ text_to_columns(text

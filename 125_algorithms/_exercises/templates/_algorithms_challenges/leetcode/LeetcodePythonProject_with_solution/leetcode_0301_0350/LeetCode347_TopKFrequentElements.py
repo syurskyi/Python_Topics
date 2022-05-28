@@ -24,7 +24,7 @@ c_ Solution(o..
             ____
                 result.a..(dp[i].p.. 0
                 k-_1
-        r.. result
+        r.. ?
         
     
     ___ topKFrequentHeap  nums, k
@@ -39,7 +39,7 @@ c_ Solution(o..
         w.... k > 0
             result.a..(h__.heappop(heap)[1])
             k -_ 1
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

@@ -70,4 +70,4 @@ c_ Solution(o..
                         queue.a..(ni0)
             prev += sumVal
             result += prev
-        r.. result
+        r.. ?

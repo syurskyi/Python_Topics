@@ -31,6 +31,6 @@ ___ look_and_say(data,maxlen
         data ''.j..(s..(e) ___ e __ res_string)
         result.a..(data)
         #print(start_num)
-    r.. result
+    r.. ?
 
 look_and_say(start_num,num_iter)

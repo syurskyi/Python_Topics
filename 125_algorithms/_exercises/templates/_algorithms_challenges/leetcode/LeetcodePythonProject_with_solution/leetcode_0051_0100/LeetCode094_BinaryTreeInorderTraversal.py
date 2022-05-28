@@ -19,7 +19,7 @@ c_ Solution(o..
         """
         result    # list
         __ n.. root:
-            r.. result
+            r.. ?
         stack    # list
         node root
         w.... node:
@@ -33,7 +33,7 @@ c_ Solution(o..
                 w.... node:
                     stack.a..(node)
                     node node.left
-        r.. result
+        r.. ?
     
     ___ test
         root TreeNode(1, N.., TreeNode(2, TreeNode(3)))

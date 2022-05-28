@@ -2,7 +2,7 @@ ____ c.. _______ n.., C..
 _______ __
 ____ t___ _______ N..
 
-_______ feedparser
+_______ f..
 
 SPECIAL_GUEST 'Special guest'
 

@@ -45,7 +45,7 @@ c_ Solution:
                     next_level.a..(element.left)
                 __ element.right:
                     next_level.a..(element.right)
-        r.. result
+        r.. ?
 
 __ _____ __ ____
     Solution().levelOrderBottom(TreeNode(1

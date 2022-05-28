@@ -52,7 +52,7 @@ c_ Solution_MLE:  # Memory Limit Exceeds
                 __ current.string__end:  # reached
                     a..(current, result)
             __ result:  # shortest, thus pruning
-                r.. result
+                r.. ?
 
             ___ i __ x..(length_0
                 current queue[i].s__
@@ -106,7 +106,7 @@ c_ Solution_TLE:
                 __ current.string__end:  # reached
                     a..(current, result)
             __ result:  # shortest, thus pruning
-                r.. result
+                r.. ?
 
             ___ i __ x..(length_0
                 current queue[i].s__
@@ -184,7 +184,7 @@ c_ Solution_TLE2:
                     a..(current, result)
 
             __ result:  # shortest, thus pruning
-                r.. result
+                r.. ?
 
             ___ i __ x..(length_0
                 current queue[i].s__
@@ -247,7 +247,7 @@ c_ Solution:  # use set to mimic queue, fastest
             __ l..(candidates[current])__0: r..    # list  # path impossible
 
         buildpath(prevMap, end,    # list, result)
-        r.. result
+        r.. ?
 
     ___ buildpath  prevMap, word, p.., result
         # reach the end

@@ -31,7 +31,7 @@ c_ Solution(o..
                 __ node.left:
                     stack.a..(node.left)
                     node.left N..
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

@@ -20,7 +20,7 @@ c_ Solution(o..
         ___ i __ r..(l..(res)-1, -1, -1
             result += s..(res[i])
         result i..(result)
-        r.. result __ result < 2**31-1 ____ 0
+        r.. ? __ result < 2**31-1 ____ 0
     
     ___ test
         testCases [

@@ -23,7 +23,7 @@ c_ Codec:
                 stack.a..(node.left)
             ____
                 result += '#,'
-        r.. result[:-1]
+        r.. ?[:-1]
     
     ___ deserialize  data
         arr data.s..(',')

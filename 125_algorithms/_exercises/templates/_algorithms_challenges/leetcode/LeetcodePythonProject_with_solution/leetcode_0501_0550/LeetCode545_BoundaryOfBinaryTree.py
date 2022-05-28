@@ -35,7 +35,7 @@ c_ Solution(o..
                 root root.left
             ____
                 root root.right
-        r.. result
+        r.. ?
     
     ___ getLeaves  root, leaves
         __ n.. root: r..
@@ -56,7 +56,7 @@ c_ Solution(o..
             ____
                 root root.left
         result.r..
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

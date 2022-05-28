@@ -11,7 +11,7 @@ ___ allmax(iterable, key_ N..
             result, maxval [x], xval
         ____ xval __ maxval:
             result.a..(x)
-    r.. result
+    r.. ?
 
 
 ___ hand_rank(hand

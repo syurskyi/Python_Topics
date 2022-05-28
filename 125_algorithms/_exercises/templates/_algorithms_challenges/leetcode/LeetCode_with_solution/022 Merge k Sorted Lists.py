@@ -59,7 +59,7 @@ c_ Solution:
         result lists[0]
         ___ i __ x..(1, l..(lists:
             result mergeTwoLists(result, lists[i])
-        r.. result
+        r.. ?
 
 
 

@@ -60,7 +60,7 @@ c_ Solution:
             ___ element __ r..(result
                 result.a..(msb+element)
 
-        r.. result
+        r.. ?
 
 
     ___ grayCode_math  n

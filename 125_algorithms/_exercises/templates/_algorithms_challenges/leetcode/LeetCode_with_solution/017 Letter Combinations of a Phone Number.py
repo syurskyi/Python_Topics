@@ -27,7 +27,7 @@ c_ Solution:
         """
         result    # list
         dfs_traverse(d.., "", result)
-        r.. result
+        r.. ?
 
     ___ dfs_traverse  string_seq, current, result
         __ n.. string_seq:

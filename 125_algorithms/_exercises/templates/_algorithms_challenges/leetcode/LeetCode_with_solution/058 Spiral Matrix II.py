@@ -48,7 +48,7 @@ c_ Solution:
             top += 1
             bottom -_ 1
 
-        r.. result
+        r.. ?
 
 
 c_ SolutionError:
@@ -86,7 +86,7 @@ c_ SolutionError:
             top += 1
             bottom -_ 1
 
-        r.. result
+        r.. ?
 
 
 __ _____ __ ____

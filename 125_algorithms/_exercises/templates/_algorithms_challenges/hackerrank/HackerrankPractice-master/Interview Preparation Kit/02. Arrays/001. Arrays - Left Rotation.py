@@ -4,7 +4,7 @@
 
 ___ array_left_rotation(a, k
     result a[k:] + a[:k]
-    r.. result
+    r.. ?
 
 
 n, k m.. i.., i.. ).s...s..(' '

@@ -40,7 +40,7 @@ c_ Solution(o..
             ____
                 group1 ^= num
         result [group0, group1]
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

@@ -33,7 +33,7 @@ c_ Solution(o..
                 prev t__
             maxTime m..(maxTime, t__+duration)
         result += maxTime-prev
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

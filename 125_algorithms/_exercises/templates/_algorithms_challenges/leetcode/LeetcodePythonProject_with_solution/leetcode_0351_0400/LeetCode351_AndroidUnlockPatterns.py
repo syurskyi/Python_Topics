@@ -19,7 +19,7 @@ c_ Solution(o..
             result += helper(p.., 1, i-1)*4
             result += helper(p.., 2, i-1)*4
             result += helper(p.., 5, i-1)
-        r.. result
+        r.. ?
     
     ___ helper  p.., curr, remain
         __ remain < 0: r.. 0
@@ -30,4 +30,4 @@ c_ Solution(o..
             __ to n.. __ p.. a.. (skip[curr][to]__0 o. skip[curr][to] __ p..
                 result += helper(p.., to, remain-1)
         p...remove(curr)
-        r.. result
+        r.. ?

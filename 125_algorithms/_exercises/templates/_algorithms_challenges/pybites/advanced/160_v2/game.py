@@ -17,7 +17,7 @@ ___ _create_defeat_mapping
         reader c__.D.. b)
         ___ row __ ?
             result[row 'Attacker']] row
-    r.. result
+    r.. ?
 
 
 ___ get_winner(player1, player2, defeat_mapping_ N..

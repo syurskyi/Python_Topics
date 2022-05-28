@@ -12,7 +12,7 @@ c_ Solution(o..
             ___ j __ r..(n
                 __ grid[i][j] __ 1:
                     result += getParameter(i, j, grid)
-        r.. result
+        r.. ?
     
     ___ getParameter  i, j, grid
         m, n l..(grid), l..(grid 0

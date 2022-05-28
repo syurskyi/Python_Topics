@@ -9,4 +9,4 @@ ___ get_weekdays(calendar_output
             s line[p * 3:p * 3 + 2].s..
             __ s:
                 result[i..(s)] days[p]
-    r.. result
+    r.. ?

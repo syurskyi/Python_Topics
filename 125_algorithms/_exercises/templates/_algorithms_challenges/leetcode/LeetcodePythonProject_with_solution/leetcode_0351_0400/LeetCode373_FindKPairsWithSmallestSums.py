@@ -17,7 +17,7 @@ c_ Solution(o..
                 _____
             _, num1, num2 h__.heappop(heap)
             result.a..((num1, num2
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

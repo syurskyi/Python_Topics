@@ -43,4 +43,4 @@ c_ Codec(o..
             j s.f.. ':', i)
             i j+1+i..(s[i:j])
             result.a..(s[j+1:i])
-        r.. result
+        r.. ?

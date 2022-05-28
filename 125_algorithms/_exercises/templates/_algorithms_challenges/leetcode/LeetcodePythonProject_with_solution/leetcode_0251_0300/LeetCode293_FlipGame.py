@@ -10,7 +10,7 @@ c_ Solution(o..
         ___ i __ r..(1, l..(s:
             __ s[i-1] __ '+' a.. s[i] __ '+':
                 result.a..(s[:i-1]+'--'+s[i+1:])
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

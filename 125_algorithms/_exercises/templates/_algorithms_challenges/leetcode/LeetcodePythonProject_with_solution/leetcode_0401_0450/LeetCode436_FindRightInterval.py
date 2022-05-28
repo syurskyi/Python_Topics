@@ -21,7 +21,7 @@ c_ Solution(o..
                 result.a..(ind)
             ____
                 result.a..(-1)
-        r.. result
+        r.. ?
     
     ___ binary_search  target, sortedList
         start, end 0, l..(sortedList)

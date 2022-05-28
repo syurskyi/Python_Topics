@@ -67,7 +67,7 @@ c_ Twitter(o..
                 newTweet tweetTuple[2]
                 newTweetTuple (-newTweet.tweet_id, newTweet.tweetContext, newTweet.prevTweet)
                 h__.heappush(heap, newTweetTuple)
-        r.. result
+        r.. ?
 
     ___ follow  followerId, followeeId
         """

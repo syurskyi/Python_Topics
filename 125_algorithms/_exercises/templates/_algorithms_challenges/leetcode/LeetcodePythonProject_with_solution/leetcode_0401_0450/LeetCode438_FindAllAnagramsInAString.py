@@ -52,7 +52,7 @@ c_ Solution(o..
                 arr1[o..(s[left]) - o..('a')] -_ 1
                 count += 1
                 left += 1
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

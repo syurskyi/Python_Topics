@@ -18,4 +18,4 @@ c_ Solution(o..
         ___ i __ r..(length
             val += result[i]
             result[i] val
-        r.. result
+        r.. ?

@@ -69,7 +69,7 @@ c_ Solution:
             top += 1
             bottom -_ 1
 
-        r.. result
+        r.. ?
 
 __ _____ __ ____
     print Solution().spiralOrder([[2, 3]])

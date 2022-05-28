@@ -34,4 +34,4 @@ c_ Solution(o..
                 __ colSumB[j]:
                     ___ i0 __ r..(nA
                         result[i][j] += A[i][i0]*B[i0][j]
-        r.. result
+        r.. ?

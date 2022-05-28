@@ -28,7 +28,7 @@ c_ Solution(o..
         :rtype: List[str]
         """
         result    # list
-        __ n.. words: r.. result
+        __ n.. words: r.. ?
         count, last 0, 0
         ___ i, word __ e..(words
             count += l.. ?
@@ -63,7 +63,7 @@ c_ Solution(o..
         s += words[-1]
         s += ' '*(maxWidth-l..(s
         result.a..(s)
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

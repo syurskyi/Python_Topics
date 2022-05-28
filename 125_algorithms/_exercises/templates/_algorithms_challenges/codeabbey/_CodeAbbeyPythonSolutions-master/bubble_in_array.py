@@ -8,7 +8,7 @@ ___ get_checksum(values
         __(result > limit
             result result % limit
 
-    r.. result
+    r.. ?
 
 ___ get_swap_number(array
 

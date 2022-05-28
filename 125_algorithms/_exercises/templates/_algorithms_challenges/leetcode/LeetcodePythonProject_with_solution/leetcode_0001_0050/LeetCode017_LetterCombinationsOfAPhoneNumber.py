@@ -31,12 +31,12 @@ c_ Solution(o..
         elem ''
         result    # list
         dfs(l, 0, elem, result)
-        r.. result
+        r.. ?
     
     ___ dfs  l, ind, elem, result
         __ l..(elem) __ l..(l
             result.a..(s..(elem
-            r.. result
+            r.. ?
         ___ c __ l[ind]:
             elem += c
             dfs(l, ind+1, elem, result)

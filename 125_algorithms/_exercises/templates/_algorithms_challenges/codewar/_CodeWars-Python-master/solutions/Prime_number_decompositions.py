@@ -16,7 +16,7 @@ ___ getAllPrimeFactors(n
                 n /= factor
                 result.a..(factor)
             factor += 1
-    r.. result
+    r.. ?
 
 
 ___ getUniquePrimeFactorsWithCount(n
@@ -29,7 +29,7 @@ ___ getUniquePrimeFactorsWithCount(n
             ____
                 result[0].a..(f)
                 result[1].a..(1)
-    r.. result
+    r.. ?
 
 
 ___ getUniquePrimeFactorsWithProducts(n
@@ -37,7 +37,7 @@ ___ getUniquePrimeFactorsWithProducts(n
     __ isvalidparameter(n
         factors getUniquePrimeFactorsWithCount(n)
         result m.. l.... x: x[0] ** x[1], z..(factors[0], factors[1]
-    r.. result
+    r.. ?
 
 
 ___ isvalidparameter(n

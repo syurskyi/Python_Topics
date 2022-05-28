@@ -39,7 +39,7 @@ c_ Solution(o..
             i j
             result.a..(Interval(curr.start, nextEnd
         
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

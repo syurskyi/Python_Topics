@@ -4,7 +4,7 @@
 
 ___ reverseArray(arr
     result arr[::-1]
-    r.. result
+    r.. ?
 
 
 arrСount i..(input

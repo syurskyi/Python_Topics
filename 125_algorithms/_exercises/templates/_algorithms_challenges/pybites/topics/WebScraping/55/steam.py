@@ -1,6 +1,6 @@
 ____ c.. _______ n..
 
-_______ feedparser
+_______ f..
 
 # cached version to have predictable results for testing
 FEED_URL "https://bites-data.s3.us-east-2.amazonaws.com/steam_gaming.xml"

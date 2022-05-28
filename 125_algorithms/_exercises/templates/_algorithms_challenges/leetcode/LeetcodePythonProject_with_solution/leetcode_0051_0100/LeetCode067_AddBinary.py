@@ -55,7 +55,7 @@ c_ Solution(o..
                 result tmp + result
         ____
             result a[:i1+1]+ result
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

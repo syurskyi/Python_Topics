@@ -13,7 +13,7 @@ c_ Solution(o..
                 __ total __ ?
                     s '%s:%02d' % (i, j)
                     result.a..(s)
-        r.. result
+        r.. ?
     
     ___ countDigits  num
         result 0
@@ -21,5 +21,5 @@ c_ Solution(o..
             __ num & 1 __ 1:
                 result += 1
             num >>= 1
-        r.. result
+        r.. ?
     

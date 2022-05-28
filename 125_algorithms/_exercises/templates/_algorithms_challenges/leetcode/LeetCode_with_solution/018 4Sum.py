@@ -64,7 +64,7 @@ c_ Solution:
             w.... h<length-3 a.. num[h]__num[h-1]:
                 h += 1
 
-        r.. result
+        r.. ?
 
     ___ fourSum  num, target
         """

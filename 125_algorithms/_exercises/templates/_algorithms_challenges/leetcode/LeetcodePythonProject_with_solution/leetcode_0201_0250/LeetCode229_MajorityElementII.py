@@ -29,7 +29,7 @@ c_ Solution(o..
             result.a..(candidate1)
         __ nums.c.. candidate2) > l..(nums)//3 a.. candidate2 !_ candidate1:
             result.a..(candidate2)
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

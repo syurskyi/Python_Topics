@@ -20,7 +20,7 @@ c_ Solution(o..
         ___ i __ r..(length-2, -1, -1
             right *= nums[i+1]
             result[i] right*result[i]
-        r.. result
+        r.. ?
     
     ___ productExceptSelfExtra  nums
         """
@@ -40,7 +40,7 @@ c_ Solution(o..
         print('right: %s' % right)
         ___ i __ r..(length
             result.a..(left[i]*right[i])
-        r.. result
+        r.. ?
     
     ___ test
         testCases [

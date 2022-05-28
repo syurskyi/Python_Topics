@@ -50,4 +50,4 @@ c_ Solution:
                 end mid
 
         result.a..(start-1)
-        r.. result
+        r.. ?

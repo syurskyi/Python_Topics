@@ -68,7 +68,7 @@ c_ Solution:
         ___ i __ x..(32
             result |= cnt[i]<<i
 
-        r.. result
+        r.. ?
 
 
     ___ singleNumber  A

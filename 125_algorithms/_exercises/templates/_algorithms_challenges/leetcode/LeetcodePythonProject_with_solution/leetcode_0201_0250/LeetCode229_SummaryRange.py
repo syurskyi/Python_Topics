@@ -11,7 +11,7 @@ c_ Solution(o..
         :rtype: List[str]
         """
         result    # list
-        __ n.. nums: r.. result
+        __ n.. nums: r.. ?
         i 0
         w.... i < l..(nums
             start nums[i]
@@ -23,4 +23,4 @@ c_ Solution(o..
             ____
                 result.a..('%s->%s' % (start, end
             i += 1
-        r.. result
+        r.. ?

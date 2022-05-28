@@ -35,7 +35,7 @@ ___ my_join_lists(lst_of_lst: L..[L..[s..]], sep: s..) __ U..[L..[s..], N..]:
             result.a..(sep)
         ___ element __ inner_list:
             result.a..(element)
-    r.. result
+    r.. ?
 
 
 print(my_join_lists([['a', 'b' ,  'c']], '&'

@@ -17,7 +17,7 @@ ___ get_belt(user_score, scores=scores, belts=belts
     __ user_score >_ scores[l..(scores)-1]:
         r.. belts[l..(belts)-1]
     ____
-        r.. result[user_score]
+        r.. ?[user_score]
 
 print(get_belt(1000, scores, belts
 
