@@ -37,11 +37,6 @@ c_ BridgeHand:
         ___ card __ cards:
             suit_to_cards[card.suit].a..(card.Rank)
 
-
-
-
-
-
     ___ -s(self) __ s..
         """
         Return a string representing this hand, in the following format:

@@ -1,6 +1,6 @@
 _______ __
 ____ c.. _______ d..
-___ pair_files(filenames
+___ pair_files filenames
     """
     Function that pairs filenames
 
@@ -17,7 +17,7 @@ ___ pair_files(filenames
 
         m.. __.s.. _ (\S+?_S[1-9][0-9]?_L\d{3})_R[12]_([0-9]{2}[1-9]).fastq.gz$',file,flags=__.I)
 
-        __ m..:
+        __ m..
             first_part m...g.. 1).l..
             second_part m...g.. 2).l..
 
