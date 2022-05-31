@@ -92,7 +92,7 @@ ___ load_data
         ______ AttributeError:
             _____
         books.a..(
-            Book(title=title, author=author, year=year, rank=rank, rating=rating)
+            Book t.._title, author=author, year=year, rank=rank, rating=rating)
         )
     res    # list
     ___ n, b __ e..(
