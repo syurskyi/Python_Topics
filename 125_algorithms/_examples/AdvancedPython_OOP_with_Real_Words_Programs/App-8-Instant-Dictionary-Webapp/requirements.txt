@@ -6,7 +6,7 @@ click==7.1.2
 demjson==2.2.4
 h11==0.12.0
 httpcore==0.12.2
-httpx==0.16.1
+httpx==0.23.0
 idna==2.10
 itsdangerous==1.1.0
 Jinja2==2.11.2
