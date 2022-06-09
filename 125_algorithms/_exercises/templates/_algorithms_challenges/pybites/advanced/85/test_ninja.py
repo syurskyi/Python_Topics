@@ -1,78 +1,78 @@
-_______ p__
-
-____ ninja _______ NinjaBelt
-
-CONGRATS_MSG ('Congrats, you earned {score} points '
-                'obtaining the PyBites Ninja {rank} Belt')
-NEW_SCORE_MSG 'Set new score to {score}'
-
-
-?p__.f..
-___ ninja
-    r.. NinjaBelt()
-
-
-?p__.f..
-___ white_belt
-    ninja NinjaBelt(score=10)
-    ninja._last_earned_belt 'white'
-    r.. ninja
-
-
-?p__.f..
-___ yellow_belt
-    ninja NinjaBelt(score=50)
-    ninja._last_earned_belt 'yellow'
-    r.. ninja
-
-
-___ test_initial_state(ninja
-    ... ninja.score __ 0
-    ... ninja._last_earned_belt __ N..
-
-
-___ test_white_belt(ninja, capfd
-    ninja.score 20
-    ... ninja._last_earned_belt __ 'white'
-    output ?.r .. 0 .s..('\n')
-    ... CONGRATS_MSG.f..(score=20, rank='White') __ output
-
-
-___ test_new_score_same_belt_no_congrats_msg(white_belt, capfd
-    ... white_belt.score __ 10
-    white_belt.score 49
-    ... white_belt._last_earned_belt __ 'white'
-    output ?.r .. 0 .s..('\n')
-    ... NEW_SCORE_MSG.f..(score=49) __ output
-
-
-___ test_new_score_new_belt(ninja, capfd
-    ninja.score 50
-    ... ninja._last_earned_belt __ 'yellow'
-    output ?.r .. 0 .s..('\n')
-    ... CONGRATS_MSG.f..(score=50, rank='Yellow') __ output
-
-
-___ test_higher_belt(ninja, capfd
-    ninja.score 177
-    ... ninja._last_earned_belt.l.. __ 'green'
-    output ?.r .. 0 .s..('\n')
-    ... CONGRATS_MSG.f..(score=177, rank='Green') __ output
-
-
-___ test_gt_max_score_highest_belt(ninja, capfd
-    ninja.score 1010
-    ... ninja._last_earned_belt.l.. __ 'red'
-    output ?.r .. 0 .s..('\n')
-    ... CONGRATS_MSG.f..(score=1010, rank='Red') __ output
-
-
-___ test_new_score_should_be_int(ninja
-    w__ p__.r.. V..., m..="Score takes an int"
-        ninja.score 'a'
-
-
-___ test_new_score_should_be_higher(yellow_belt
-    ... yellow_belt.score __ 50
-    w__ p__.r.. V..., m..="Cannot lower score"
-        yellow_belt.score 40
+# _______ p__
+#
+# ____ ? _______ ?
+#
+# CONGRATS_MSG ('Congrats, you earned {score} points '
+#                 'obtaining the PyBites Ninja {rank} Belt')
+# NEW_SCORE_MSG 'Set new score to {score}'
+#
+#
+# ?p__.f..
+# ___ ninja
+#     r.. ?
+#
+#
+# ?p__.f..
+# ___ white_belt
+#     ninja ? s.._10
+#     ?._? white
+#     r.. ?
+#
+#
+# ?p__.f..
+# ___ yellow_belt
+#     ninja ? s.._50
+#     ?._? yellow
+#     r.. ?
+#
+#
+# ___ test_initial_state ninja
+#     ... ?.score __ 0
+#     ... ?._? __ N..
+#
+#
+# ___ test_white_belt ninja capfd
+#     ?.score 20
+#     ... ?._? __ white
+#     output ?.r .. 0 .s.. '\n'
+#     ... C__.f.. s.._20 r.._ White __ ?
+#
+#
+# ___ test_new_score_same_belt_no_congrats_msg white_belt capfd
+#     ... ?.s.. __ 10
+#     ?.s.. 49
+#     ... ?._? __ white
+#     output ?.r .. 0 .s.. '\n'
+#     ... N_.f.. s.._49 __ ?
+#
+#
+# ___ test_new_score_new_belt ninja, capfd
+#     ?.s.. 50
+#     ... ?._? __ yellow
+#     output ?.r .. 0 .s.. '\n'
+#     ... C__.f.. s.._50 r.._ Yellow __ ?
+#
+#
+# ___ test_higher_belt ninja capfd
+#     ?.s.. 177
+#     ... ?._?.l.. __ green
+#     output ?.r .. 0 .s.. '\n'
+#     ... C__.f.. s.._177 r.._ Green __ ?
+#
+#
+# ___ test_gt_max_score_highest_belt ninja capfd
+#     ?.s.. 1010
+#     ... ?._?.l.. __ red
+#     output ?.r .. 0 .s.. '\n'
+#     ... C__.f.. s.._1010 r.._ Red __ ?
+#
+#
+# ___ test_new_score_should_be_int ninja
+#     w__ p__.r.. V... m.._"Score takes an int"
+#         ?.s.. 'a'
+#
+#
+# ___ test_new_score_should_be_higher yellow_belt
+#     ... ?.s.. __ 50
+#     w__ p__.r.. V... m.._"Cannot lower score"
+#         ?.s.. 40
