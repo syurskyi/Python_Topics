@@ -1,30 +1,30 @@
-____ f.. _______ singledispatch
-
-
-@singledispatch
-___ count_down(data_type
-    d ''
-    ___
-        __ l..(data_type) !_ 4:
-            r.. V...
-        ___ i __ data_type:
-            d += _* i}'
-    ______ T..
-        r.. V...
-    ___ i __ r..(4, 0, -1
-        print(d[:i])
-
-
-@count_down.register(i..)
-___ _(data_type
-    w.... data_type > 0
-        print(data_type)
-        data_type //= 10
-
-
-@count_down.register(f__)
-___ _(data_type: f__
-    s s..(data_type)
-    w.... s !_ '':
-        print(s)
-        s s[:-1]
+# ____ f.. _______ s..
+#
+#
+# ?s..
+# ___ count_down data_type
+#     d ''
+#     ___
+#         __ l.. ? !_ 4
+#             r.. V...
+#         ___ i __ ?
+#             d += _* ?
+#     ______ T..
+#         r.. V...
+#     ___ i __ r.. 4, 0, -1
+#         print ? |?
+#
+#
+# ? ?.r.. i..
+# ___ _ ?
+#     w.... ? > 0
+#         print ?
+#         ? //= 10
+#
+#
+# ? ?.r.. f__
+# ___ _ ? f__
+#     s s.. ?
+#     w.... ? !_ '':
+#         print ?
+#         s ? |-1
