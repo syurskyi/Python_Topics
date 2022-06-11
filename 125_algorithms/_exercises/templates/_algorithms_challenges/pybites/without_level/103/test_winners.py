@@ -8,7 +8,7 @@ ___ test_print_game_stats(capfd
                      "julian has won 3 games",
                      "jim has won 1 game"]
 
-    print_game_stats(games_won)
+    print_game_stats games_won)
     output ?.r .. 0 .s..
 
     # dict + Python 3.7 = insert order should be retained
