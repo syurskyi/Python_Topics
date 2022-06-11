@@ -65,7 +65,7 @@ ___ number(ocr_numbers: L..s.. __ s..
 ___ grid(numbers: s..) __ L.. s..
     validate_numbers(numbers)
     ocr_numbers_split [
-        OCR_NUMBERS[i..(number)] ___ number __ numbers
+        OCR_NUMBERS[i.. ?] ___ number __ numbers
     ]
     r.. [
         ''.j..(lines) ___ lines __ z..(*ocr_numbers_split)

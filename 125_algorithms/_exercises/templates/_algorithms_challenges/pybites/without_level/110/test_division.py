@@ -13,7 +13,7 @@ ____ division _______ divide_numbers
     (1, 2.9, 0.5),
 ])
 ___ test_divide_numbers_good_inputs(numerator, denominator, e..
-    ... divide_numbers(numerator, denominator) __ e..
+    ... divide_numbers numerator denominator) __ e..
 
 
 ?p__.m__.p. "numerator, denominator", [
@@ -25,7 +25,7 @@ ___ test_divide_numbers_good_inputs(numerator, denominator, e..
 ])
 ___ test_divide_numbers_raises_value_error(numerator, denominator
     w__ p__.r.. V...
-        divide_numbers(numerator, denominator)
+        divide_numbers numerator denominator)
 
 
 ___ test_divide_by_zero_does_not_raise_zero_division_exception
