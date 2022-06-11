@@ -19,7 +19,7 @@ ___ get_workout_motd(day
 
        Trivia: /etc/motd is a file on Unix-like systems that contains
        a 'message of the day'"""
-    dy day.t..
+    dy ?.t..
     __ dy __ workout_schedule:
         r.. chill __ workout_schedule[dy] __ rest ____ go_train.f..(workout_schedule[dy])
     ____
