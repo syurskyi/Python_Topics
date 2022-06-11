@@ -35,6 +35,6 @@ ___ print_colors
             print('Not a valid color')
             _____
 
-        print(color)
+        print ?
 
 print_colors()
