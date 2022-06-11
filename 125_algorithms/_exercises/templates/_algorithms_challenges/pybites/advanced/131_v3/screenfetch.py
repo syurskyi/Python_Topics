@@ -34,4 +34,4 @@ ___ sysinfo_scrape ?
         __ s..
             grp s...g..
             results[grp 'key']] grp 'value'
-    r.. results
+    r.. ?

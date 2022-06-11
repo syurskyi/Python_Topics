@@ -43,7 +43,7 @@ ___ my_slice_and_dice(text=text
             item item.r..('.')
             words item.s..(' ')
             results.a..(words[words.-l()-1])
-    r.. results
+    r.. ?
 
 ___ slice_and_dice(text=text
     """Strip the whitespace (newlines) off text at both ends,
@@ -63,6 +63,6 @@ ___ slice_and_dice(text=text
         last_word_stripped words[-1].r..('!.')
         results.a..(last_word_stripped)
 
-    r.. results
+    r.. ?
 
 slice_and_dice(text)

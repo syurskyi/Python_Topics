@@ -16,15 +16,15 @@ keep enjoying our bites!
 """
 
 
-___ slice_and_dice(text: s.. text) __ l..:
+___ slice_and_dice text s.. text __ l..
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
-    s.. ?.s..(" . !")
+    s.. ?.s.. " . !"
     s.. ?.s..  \n
-    ___ words __ text:
+    ___ words __ ?
         s.., s..
-    ___ firstword __ text:
-        __ firstword.isl..
-            firstword.s..
-    results [""].s...s..
-    r.. results
+    ___ firstword __ ?
+        __ ?.isl..
+            ?.s..
+    results "" .s...s..
+    r.. ?

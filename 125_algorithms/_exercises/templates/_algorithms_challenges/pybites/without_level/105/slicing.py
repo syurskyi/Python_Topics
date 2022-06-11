@@ -16,7 +16,7 @@ keep enjoying our bites!
 """
 
 
-___ slice_and_dice(text: s.. text) __ l..:
+___ slice_and_dice text s.. text __ l..
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
     results    # list
@@ -26,4 +26,4 @@ ___ slice_and_dice(text: s.. text) __ l..:
         __ l[:1].isl..
             word line.s..(' ')[-1].r..('.!')
             results.a..(word)
-    r.. results
+    r.. ?
