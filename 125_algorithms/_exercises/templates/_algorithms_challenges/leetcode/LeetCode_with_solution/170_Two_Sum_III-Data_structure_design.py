@@ -1,6 +1,6 @@
 c_ TwoSum o..
 
-    ___ -(self):
+    ___ - ____:
         """
         initialize your data structure here
         """

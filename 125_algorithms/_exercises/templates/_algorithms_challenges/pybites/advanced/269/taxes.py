@@ -72,7 +72,7 @@ c_ Taxes:
         taxes_owed taxes
 
 
-    ___ -s(self) __ s..
+    ___ -s ____ __ s..
         """Summary Report
 
         Returns:
@@ -115,7 +115,7 @@ c_ Taxes:
 
     ___ report
         """Prints taxes breakdown report"""
-        print(self)
+        print ____
 
 
         print(f"{'Taxes Breakdown':^{OUTPUT_WIDTH}}")
@@ -147,7 +147,7 @@ c_ Taxes:
 
 
     $
-    ___ taxes(self) __ f__:
+    ___ taxes ____ __ f__:
         """Calculates the taxes owed
 
         As it's calculating the taxes, it is also populating the tax_amounts list
@@ -187,7 +187,7 @@ c_ Taxes:
 
 
     $
-    ___ total(self) __ f__:
+    ___ total ____ __ f__:
         """Calculates total taxes owed
 
         Returns:
@@ -196,7 +196,7 @@ c_ Taxes:
         r.. taxes_owed
 
     $
-    ___ tax_rate(self) __ f__:
+    ___ tax_rate ____ __ f__:
         """Calculates the actual tax rate
 
         Returns:

@@ -49,7 +49,7 @@ c_ Corpora:
         stopwords STOPWORDS
 
     $
-    ___ cleaned(self) __ s..
+    ___ cleaned ____ __ s..
         """Takes a corpus and cleans it up.
 
         * All text is made lowercase
@@ -65,7 +65,7 @@ c_ Corpora:
         r.. text
 
     $
-    ___ metrics(self) __ L..[T.. s.., i..]]:
+    ___ metrics ____ __ L..[T.. s.., i..]]:
         """Generates word count metrics.
 
         * Using the cleaned up corpus, count up how many times each word is used
@@ -80,7 +80,7 @@ c_ Corpora:
         r.. metrics.most_common(count)
 
     $
-    ___ graph(self) __ N..
+    ___ graph ____ __ N..
         """Generates a textual graph of the words
 
         * Prints out the words along with a "tag" bar graph, defaults to using

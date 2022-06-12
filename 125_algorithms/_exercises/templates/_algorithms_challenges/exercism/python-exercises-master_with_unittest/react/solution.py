@@ -36,7 +36,7 @@ c_ ComputeCell(Cell
 
     ___ _register_inputs
         ___ inp __ inputs:
-            inp.add_watcher(self)
+            inp.add_watcher ____
 
     ___ compute
         # Only compute this cell when all inputs have same counters

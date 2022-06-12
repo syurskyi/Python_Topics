@@ -1,6 +1,6 @@
 c_ TrieNode o..
     # https://leetcode.com/articles/implement-trie-prefix-tree/#trie-node-structure
-    ___ -(self):
+    ___ - ____:
         """
         Initialize your data structure here.
         """
@@ -16,12 +16,12 @@ c_ TrieNode o..
     ___ put  ch, node):
         links[o.. ch) - o.. 'a')] = node
 
-    ___ setEnd(self):
+    ___ setEnd ____:
         isEnd = True
 
 
 c_ Trie o..
-    ___ -(self):
+    ___ - ____:
         root = TrieNode()
 
     ___ insert  word):

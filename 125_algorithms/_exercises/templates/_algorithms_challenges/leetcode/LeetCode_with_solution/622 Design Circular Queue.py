@@ -49,7 +49,7 @@ c_ MyCircularQueue:
         sz += 1
         r.. T..
 
-    ___ deQueue(self) __ b..
+    ___ deQueue ____ __ b..
         """
         Delete an element from the circular queue. Return true if the operation is successful.
         """
@@ -61,27 +61,27 @@ c_ MyCircularQueue:
         sz -_ 1
         r.. T..
 
-    ___ Front(self) __ i..
+    ___ Front ____ __ i..
         """
         Get the front item from the queue.
         """
         ret lst[head % k]
         r.. ret __ ret __ n.. N.. ____ -1
 
-    ___ Rear(self) __ i..
+    ___ Rear ____ __ i..
         """
         Get the last item from the queue.
         """
         ret lst[tail % k]
         r.. ret __ ret __ n.. N.. ____ -1
 
-    ___ isEmpty(self) __ b..
+    ___ isEmpty ____ __ b..
         """
         Checks whether the circular queue is empty or not.
         """
         r.. sz __ 0
 
-    ___ isFull(self) __ b..
+    ___ isFull ____ __ b..
         """
         Checks whether the circular queue is full or not.
         """

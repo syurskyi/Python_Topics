@@ -7,7 +7,7 @@
 
 
 c_ Solution o..
-    ___ -(self):
+    ___ - ____:
         result = -2147483647
 
     ___ maxPathSum  root):

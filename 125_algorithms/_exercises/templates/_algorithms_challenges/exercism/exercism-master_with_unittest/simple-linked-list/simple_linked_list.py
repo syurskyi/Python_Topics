@@ -38,10 +38,10 @@ c_ LinkedList:
         r.. current_head.v..()
 
     ___ r..
-        r.. LinkedList(self)
+        r.. LinkedList ____
 
     ___ -i
-        r.. LinkedListIterator(self)
+        r.. LinkedListIterator ____
 
 
 c_ LinkedListIterator:

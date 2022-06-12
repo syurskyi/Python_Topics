@@ -18,7 +18,7 @@ c_ CustomSet(o..
         r.. a..(x n.. __ other ___ x __ self)
 
     ___ -e  other
-        r.. issubset(other) a.. other.issubset(self)
+        r.. issubset(other) a.. other.issubset ____
 
     ___ add  element
         __ element n.. __ self:

@@ -11,7 +11,7 @@ c_ Clock(o..
         r.. "%02d:%02d" % (hour, minute)
 
     ___ -e  other
-        r.. r.. (self) __ r.. (other)
+        r.. r..  ____ __ r.. (other)
 
     ___ add  minutes
         minute += minutes

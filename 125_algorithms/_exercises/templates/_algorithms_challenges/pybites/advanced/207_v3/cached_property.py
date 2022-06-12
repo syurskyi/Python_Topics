@@ -11,7 +11,7 @@ ___ cached_property(func
         __ n.. hasattr(cached_property, "cache"
             cached_property.cache d..()
         __ func n.. __ cached_property.cache:
-            cached_property.cache[func] func(self)
+            cached_property.cache[func] func ____
         r.. cached_property.cache[func]
 
     r.. getter

@@ -42,7 +42,7 @@ c_ Solution o..
 
 
     # https://discuss.leetcode.com/topic/3988/no-fancy-algorithm-just-simple-and-powerful-in-order-traversal/2
-    ___ -(self):
+    ___ - ____:
         first = second = N..
         pre = TreeNode(-sys.maxint - 1)
 

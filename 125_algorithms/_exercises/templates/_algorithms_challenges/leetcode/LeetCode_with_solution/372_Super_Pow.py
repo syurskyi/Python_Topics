@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ -(self):
+    ___ - ____:
         base = 1337
 
     ___ superPow  a, b):

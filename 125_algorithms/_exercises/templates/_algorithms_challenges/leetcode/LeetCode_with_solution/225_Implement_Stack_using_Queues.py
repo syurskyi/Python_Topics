@@ -43,7 +43,7 @@
 
 
 c_ Stack o..
-    ___ -(self):
+    ___ - ____:
         """
         initialize your data structure here.
         """
@@ -64,7 +64,7 @@ c_ Stack o..
         queue2 = queue1
         queue1 = temp
 
-    ___ pop(self):
+    ___ pop ____:
         """
         :rtype: nothing
         """
@@ -72,14 +72,14 @@ c_ Stack o..
         __ l.. queue1):
             curr_top = queue1[0]
 
-    ___ top(self):
+    ___ top ____:
         """
         :rtype: int
         """
         __ empty() is False:
             r_ curr_top
 
-    ___ empty(self):
+    ___ empty ____:
         """
         :rtype: bool
         """

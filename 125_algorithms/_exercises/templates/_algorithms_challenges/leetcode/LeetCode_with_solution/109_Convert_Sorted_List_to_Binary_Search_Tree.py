@@ -41,7 +41,7 @@ c_ Solution o..
     #     return current
 
     # point in recursive function
-    ___ -(self):
+    ___ - ____:
         node = N..
     
     ___ sortedListToBST  head):

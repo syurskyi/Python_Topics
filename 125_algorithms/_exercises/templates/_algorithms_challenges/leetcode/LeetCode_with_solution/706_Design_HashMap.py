@@ -1,7 +1,7 @@
 c_ MyHashMap o..
 
     # https://leetcode.com/problems/design-hashmap/discuss/152746/Java-Solution
-    ___ -(self):
+    ___ - ____:
         """
         Initialize your data structure here.
         """

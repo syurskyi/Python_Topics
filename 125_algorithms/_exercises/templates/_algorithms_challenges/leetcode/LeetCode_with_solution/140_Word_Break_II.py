@@ -1,6 +1,6 @@
 c_ Solution o..
     # https://discuss.leetcode.com/topic/12997/11ms-c-solution-concise
-    ___ -(self):
+    ___ - ____:
         solution  # dict
 
     ___ wordBreak  s, wordDict):

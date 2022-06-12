@@ -50,7 +50,7 @@
 #             return None
 
 c_ MinStack o..
-    ___ -(self):
+    ___ - ____:
         """
         initialize your data structure here.
         """
@@ -74,7 +74,7 @@ c_ MinStack o..
             min_stack.append(min_stack[-1])
 
 
-    ___ pop(self):
+    ___ pop ____:
         """
         :rtype: nothing
         """
@@ -85,7 +85,7 @@ c_ MinStack o..
             stack.pop()
 
 
-    ___ top(self):
+    ___ top ____:
         """
         :rtype: int
         """
@@ -94,7 +94,7 @@ c_ MinStack o..
         r_ N..
 
 
-    ___ getMin(self):
+    ___ getMin ____:
         """
         :rtype: int
         """

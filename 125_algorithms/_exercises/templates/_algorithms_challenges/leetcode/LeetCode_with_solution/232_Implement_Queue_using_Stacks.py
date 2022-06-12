@@ -40,7 +40,7 @@
 #         return len(self.stack1) == 0
 
 c_ Queue o..
-    ___ -(self):
+    ___ - ____:
         """
         initialize your data structure here.
         """
@@ -55,7 +55,7 @@ c_ Queue o..
         """
         stack1.append(x)
 
-    ___ pop(self):
+    ___ pop ____:
         """
         :rtype: nothing
         """
@@ -66,7 +66,7 @@ c_ Queue o..
         stack2.pop()
 
 
-    ___ peek(self):
+    ___ peek ____:
         """
         :rtype: int
         """
@@ -76,7 +76,7 @@ c_ Queue o..
                 stack2.append(curr)
         r_ stack2[-1]
 
-    ___ empty(self):
+    ___ empty ____:
         """
         :rtype: bool
         """

@@ -1,6 +1,6 @@
 c_ RecentCounter o..
 
-    ___ -(self):
+    ___ - ____:
         queue =    # list
 
     ___ ping  t):

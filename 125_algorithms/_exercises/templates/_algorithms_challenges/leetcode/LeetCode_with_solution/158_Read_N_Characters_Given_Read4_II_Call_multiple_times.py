@@ -5,7 +5,7 @@
 
 c_ Solution o..
 
-    ___ -(self):
+    ___ - ____:
         buff = [''] * 4
         offset = 0
         bufsize = 0

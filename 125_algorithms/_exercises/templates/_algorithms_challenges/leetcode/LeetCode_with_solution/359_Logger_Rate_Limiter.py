@@ -26,7 +26,7 @@ import heapq
 
 c_ Logger o..
 
-    ___ -(self):
+    ___ - ____:
         """
         Initialize your data structure here.
         """

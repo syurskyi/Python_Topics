@@ -35,7 +35,7 @@ c_ LinkedList(o..
         [push(v) ___ v __ values]
 
     ___ -i
-        r.. LinkedIterator(self)
+        r.. LinkedIterator ____
 
     ___ -l
         r.. _len
@@ -60,7 +60,7 @@ c_ LinkedList(o..
         r.. ret
 
     ___ r..
-        r.. LinkedList(self)
+        r.. LinkedList ____
 
 
 c_ EmptyListException(E..

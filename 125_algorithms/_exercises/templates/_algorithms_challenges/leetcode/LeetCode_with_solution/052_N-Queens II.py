@@ -48,7 +48,7 @@ c_ Solution o..
     #                 self.do_solveNQueens(res, board, num - 1)
     #                 board[pos][j] = '.'
 
-    ___ -(self):
+    ___ - ____:
         count = 0
 
     ___ totalNQueens  n):

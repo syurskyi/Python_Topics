@@ -80,7 +80,7 @@ c_ CBTInserter:
         candidates.a..(node)
         r.. pi.val
 
-    ___ get_root(self) __ TreeNode:
+    ___ get_root ____ __ TreeNode:
         r.. root
 
 

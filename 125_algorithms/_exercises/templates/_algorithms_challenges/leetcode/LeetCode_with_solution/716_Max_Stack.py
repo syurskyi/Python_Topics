@@ -1,6 +1,6 @@
 c_ MaxStack o..
 
-    ___ -(self):
+    ___ - ____:
         """
         initialize your data structure here.
         """
@@ -21,7 +21,7 @@ c_ MaxStack o..
         ____
             max_stack.append(x)
 
-    ___ pop(self):
+    ___ pop ____:
         """
         :rtype: int
         """
@@ -29,20 +29,20 @@ c_ MaxStack o..
             max_stack.pop(-1)
             r_ stack.pop(-1)
 
-    ___ top(self):
+    ___ top ____:
         """
         :rtype: int
         """
         r_ stack[-1]
 
-    ___ peekMax(self):
+    ___ peekMax ____:
         """
         :rtype: int
         """
         __ l.. max_stack) != 0:
             r_ max_stack[-1]
 
-    ___ popMax(self):
+    ___ popMax ____:
         """
         :rtype: int
         """

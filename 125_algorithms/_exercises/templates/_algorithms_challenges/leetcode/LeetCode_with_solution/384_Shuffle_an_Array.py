@@ -9,7 +9,7 @@ c_ Solution o..
         curr = list(nums)
         size = l.. nums)
 
-    ___ reset(self):
+    ___ reset ____:
         """
         Resets the array to its original configuration and return it.
         :rtype: List[int]
@@ -17,7 +17,7 @@ c_ Solution o..
         curr = list(origin)
         r_ curr
 
-    ___ shuffle(self):
+    ___ shuffle ____:
         """
         Returns a random shuffling of the array.
         :rtype: List[int]

@@ -22,7 +22,7 @@ c_ Union o..
     """
     quick union find with weights
     """
-    ___ -(self):
+    ___ - ____:
         # use dic to reduce index operations
         id  # dict
         sz  # dict
