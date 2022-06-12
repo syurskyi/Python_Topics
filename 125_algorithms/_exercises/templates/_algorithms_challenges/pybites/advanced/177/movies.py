@@ -15,7 +15,7 @@ ___ explode(df, lst_cols, fill_value='', preserve_index=F..
     idx_cols df.columns.difference(lst_cols)
     lens df[lst_cols[0]].s...l..()
     idx np.repeat(df.index.values, lens)
-    res (pd.D.. {
+    res (__.D.. {
                 col:np.repeat(df[col].values, lens)
                 ___ col __ idx_cols},
                 index=idx)

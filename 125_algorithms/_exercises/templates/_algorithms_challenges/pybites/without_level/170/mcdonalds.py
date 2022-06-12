@@ -23,7 +23,7 @@ ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..
        right results.
 
        Return a list of the top 5 foot Item stings."""
-    df.drop(df[df.Calories __ 0].index, inplace=T..)
+    df.d.. df[df.Calories __ 0].index, inplace=T..)
 
     df 'PC_Ratio'  = df.Protein / df.Calories
 

@@ -8,7 +8,7 @@ c_ LightsGrid:
 
     ___ - , grid_size: i.., instructions: L..[s..]
         grid_size grid_size
-        grid pd.D.. np.zeros([grid_size, grid_size], dtype=i..
+        grid __.D.. np.zeros([grid_size, grid_size], dtype=i..
         instructions instructions
 
     ___ process_grid_coordinates  s1: s.., s2: s..
