@@ -38,7 +38,7 @@ ___ format_table(results
 ___ tally(data
     table d..(l....: [0, 0, 0])
 
-    ___ line __ data.s..('\n'
+    ___ line __ ?.s..('\n'
         ___ team, result __ parse_game(line
             table[team][result] += 1
 

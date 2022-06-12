@@ -62,7 +62,7 @@ c_ Codec:
         __ n.. data:
             r..
             
-        lst l.. m..(i.., data.s..(DELIMITER)))
+        lst l.. m..(i.., ?.s..(DELIMITER)))
         root TreeNode(lst 0
         ___ i.. root, val
             # need to keep the parent

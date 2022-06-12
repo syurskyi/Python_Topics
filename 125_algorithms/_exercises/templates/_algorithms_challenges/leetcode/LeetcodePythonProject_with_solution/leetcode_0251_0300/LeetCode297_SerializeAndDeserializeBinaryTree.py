@@ -26,7 +26,7 @@ c_ Codec:
         r.. ?[:-1]
     
     ___ deserialize  data
-        arr data.s..(',')
+        arr ?.s..(',')
         ind [0]
         root helper(arr, ind)
         r.. root
