@@ -12,7 +12,7 @@ c_ HighScores(o..
         r.. scores[-1]
 
     ___ top
-        r.. h__.nlargest(3, scores)
+        r.. h__.n.. 3, scores)
 
     ___ report
         r.. f"{latest_score_message()} {personal_best_message()}"

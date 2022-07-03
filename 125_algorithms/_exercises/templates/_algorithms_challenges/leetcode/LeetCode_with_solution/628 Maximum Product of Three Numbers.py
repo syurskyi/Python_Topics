@@ -32,7 +32,7 @@ c_ Solution:
         """
         heapq nlargest nsmallest
         """
-        mxes h__.nlargest(3, nums)
+        mxes h__.n.. 3, nums)
         mns h__.nsmallest(3, nums)
         r.. m..(
             mxes[0] * mxes[1] * mxes[2],
