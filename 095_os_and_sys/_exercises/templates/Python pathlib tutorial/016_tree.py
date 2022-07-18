@@ -3,25 +3,25 @@
 
 #!/usr/bin/env python
 
-from pathlib import Path
+____ p.. ______ P__
 
-def tree(directory):
+___ tree(directory):
 
     print(f'+ {directory}')
 
-    for path in sorted(directory.rglob('*')):
+    ___ path __ sorted(directory.rglob('*')):
 
         depth = len(path.relative_to(directory).parts)
         spacer = '    ' * depth
 
         # print(f'{spacer}+ {path.name}')
 
-        if path.is_file():
+        __ path.is_file():
             print(f'{spacer}f {path.name}')
         else:
             print(f'{spacer}d {path.name}')
 
-path = Path.home() / 'Downloads'
+path = P__.home() / 'Downloads'
 
 tree(path)
 

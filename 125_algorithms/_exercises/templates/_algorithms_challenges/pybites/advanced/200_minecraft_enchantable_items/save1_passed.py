@@ -83,7 +83,7 @@ ___ enchantable_items(soup
     table ?.f.. "table", {"id": "minecraft_items"})
     items [
         clean_up_names(img["data-src"].s..("/")[-1]).s..
-        ___ img __ table.f.. "img")
+        ___ img __ ? f.. "img")
     ]
 
     r.. items
@@ -178,7 +178,7 @@ ___ parse_html(soup
     """
     table ?.f.. "table", {"id": "minecraft_items"})
     data [
-        [td.g..  ___ td __ row.f.. "td")] ___ row __ table.f.. "tr")
+        [td.g..  ___ td __ row.f.. "td")] ___ row __ ? f.. "tr")
     ]
 
     r.. data[1:]

@@ -3,9 +3,9 @@
 
 #!/usr/bin/python3
 
-from pathlib import Path
+____ p.. ______ P__
 
-path = Path('myfile.txt')
+path = P__('myfile.txt')
 path.touch()
 
 path.write_text('This is myfile.txt')

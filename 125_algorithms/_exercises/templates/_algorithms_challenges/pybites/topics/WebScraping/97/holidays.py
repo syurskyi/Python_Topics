@@ -27,7 +27,7 @@ ___ get_us_bank_holidays(content_?
        keys -> months and values -> list of bank holidays"""
     soup S.. ? html.parser
     table ?.f.. 'table', c.._'list-table')
-    table_rows table.f.. 'tr')
+    table_rows ? f.. 'tr')
     ___ tr __ table_rows:
         td tr.f.. 'td')
         row [i.text ___ i __ td]

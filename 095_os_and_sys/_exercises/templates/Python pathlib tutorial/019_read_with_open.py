@@ -3,15 +3,15 @@
 
 #!/usr/bin/env python
 
-from pathlib import Path
+____ p.. ______ P__
 
-path = Path('words.txt')
+path = P__('words.txt')
 
 with path.open() as f:
     lines = f.r..
     print(lines)
 
-for line in lines:
+___ line __ lines:
     print(line.rstrip())
 
 # The example opens the words.txt file with open() and reads the contents with r...

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-from pathlib import Path
+____ p.. ______ P__
 
-path = Path.home()
+path = P__.home()
 
 docs = path / 'Documents'
 pictures = path / 'Pictures'

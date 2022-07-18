@@ -3,11 +3,11 @@
 
 #!/usr/bin/env python
 
-from pathlib import Path
+____ p.. ______ P__
 
-path = Path('C:/Users/Jano/Documents')
+path = P__('C:/Users/Jano/Documents')
 
-files = [e for e in path.iterdir() if e.is_file()]
+files = [e ___ e __ path.iterdir() __ e.is_file()]
 print(files)
 
 # We check if a path object is a file with is_file().

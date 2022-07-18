@@ -3,8 +3,8 @@
 
 #!/usr/bin/python3
 
-from pathlib import Path
+____ p.. ______ P__
 
-Path('myfile.txt').touch()
+P__('myfile.txt').touch()
 
 # We create a new empty myfile.txt.

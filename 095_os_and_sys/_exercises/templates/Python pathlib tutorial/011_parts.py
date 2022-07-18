@@ -3,9 +3,9 @@
 #
 #!/usr/bin/env python
 
-from pathlib import Path
+____ p.. ______ P__
 
-path = Path('C:/Users/Jano/Documents')
+path = P__('C:/Users/Jano/Documents')
 
 print(path.parts)
 print(path.drive)

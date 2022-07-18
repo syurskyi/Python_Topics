@@ -5,11 +5,11 @@
 #
 #!/usr/bin/env python
 
-from pathlib import Path
+____ p.. ______ P__
 
-path = Path('C:/Users/Jano/Downloads/wordpress-5.1.tar.gz')
+path = P__('C:/Users/Jano/Downloads/wordpress-5.1.tar.gz')
 
-home = Path.home()
+home = P__.home()
 
 relative = path.relative_to(home)
 print(relative)

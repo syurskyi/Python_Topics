@@ -7,11 +7,11 @@
 #
 #!/usr/bin/env python
 
-from pathlib import Path
+____ p.. ______ P__
 
-path = Path('C:/Users/Jano/Documents/pyprogs')
+path = P__('C:/Users/Jano/Documents/pyprogs')
 
-for e in path.rglob('*.py'):
+___ e __ path.rglob('*.py'):
     print(e)
 
 # for e in path.glob('**/*.py'):
@@ -20,7 +20,7 @@ for e in path.rglob('*.py'):
 # The example prints all Python files in the specified directory and all its subdirectories. Notice that
 # such operations may be very time consuming.
 #
-for e in path.rglob('*.py'):
+___ e __ path.rglob('*.py'):
     print(e)
 
 # # for e in path.glob('**/*.py'):

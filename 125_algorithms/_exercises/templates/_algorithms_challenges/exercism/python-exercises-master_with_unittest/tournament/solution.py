@@ -29,7 +29,7 @@ ___ format_table(results
     ___ team, games __ s..(
             results.i.., k.._l.... g: (-calculate_points(g[1]), g[0]:
         team_fmt '{0:30} | {1:2} | {3:2} | {4:2} | {5:2} | {2:2}'
-        table.a..(
+        ? a..(
             team_fmt.f..(team, s..(games), calculate_points(games), *games
 
     r.. '\n'.j..(table)

@@ -3,11 +3,11 @@
 
 # !/usr/bin/env python
 
-from pathlib import Path
-import datetime
-from prettytable import PrettyTable
+____ p.. ______ P__
+______ datetime
+____ prettytable ______ PrettyTable
 
-path = Path('C:/Users/Jano/Documents/')
+path = P__('C:/Users/Jano/Documents/')
 
 pt = PrettyTable()
 pt.field_names = ["File name", "Size", "Created"]
@@ -16,7 +16,7 @@ pt.align["File name"] = "l"
 pt.align["Size"] = "r"
 pt.align["Created"] = "l"
 
-for e in path.glob('**/*.txt'):
+___ e __ path.glob('**/*.txt'):
     created = datetime.datetime.fromtimestamp(e.stat().st_ctime)
     size = e.stat().st_size
     pt.add_row([e.name, size, f"{created:%Y-%m-%d}"])

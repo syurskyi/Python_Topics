@@ -30,3 +30,13 @@
 #     first_name  x.s.. 0 ___ ? __ ?
 #     shortest_name  m.. ? k.._l..
 #     r.. ?
+
+# if __name__ == '__main__':
+#     names = dedup_and_title_case_names(NAMES)
+#     print(names)
+#     names = dedup_and_title_case_names(PY_CONTENT_CREATORS)
+#     print(names)
+#     sort_by_surname_desc = sort_by_surname_desc(NAMES)
+#     print(sort_by_surname_desc)
+#     shortest_first_name = shortest_first_name(NAMES)
+#     print(shortest_first_name)

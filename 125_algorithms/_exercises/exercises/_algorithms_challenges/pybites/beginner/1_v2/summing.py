@@ -1,10 +1,10 @@
-def sum_numbers(numbers=None):
-
-
-    if numbers is not None:
-        return sum(numbers)
-
-
-    return 5050
-
-
+# ___ sum_numbers numbers _ N..
+#
+#
+#     __ numbers __ n.. N..
+#         r.. s.. ?
+#
+#
+#     r.. 5050
+#
+#

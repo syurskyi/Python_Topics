@@ -3,9 +3,9 @@
 #
 #!/usr/bin/env python
 
-from pathlib import Path
+____ p.. ______ P__
 
-path = Path('words.txt')
+path = P__('words.txt')
 
 content = path.read_text()
 print(content)

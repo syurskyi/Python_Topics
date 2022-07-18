@@ -3,8 +3,8 @@
 
 #!/usr/bin/env python
 
-from pathlib import Path
-import datetime
+____ p.. ______ P__
+______ datetime
 
 now = datetime.datetime.now()
 year = now.year
@@ -12,7 +12,7 @@ month = now.month
 
 name = input('Enter article name:')
 
-path1 = Path('articles') / str(year) / str(month)
+path1 = P__('articles') / str(year) / str(month)
 path1.mkdir(parents=True)
 
 path2 = path1 /  f'{name}.txt'

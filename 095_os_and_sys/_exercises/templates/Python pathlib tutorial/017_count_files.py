@@ -3,22 +3,22 @@
 
 #!/usr/bin/env python
 
-import collections
-from pathlib import Path
+______ collections
+____ p.. ______ P__
 
-docs = Path.home() / 'Documents'
+docs = P__.home() / 'Documents'
 
-files = [path.suffix for path in docs.iterdir() if path.is_file() and path.suffix]
+files = [path.suffix ___ path __ docs.iterdir() __ path.is_file() and path.suffix]
 data = collections.Counter(files)
 
 print(data)
 
-for key, val in data.items():
+___ key, val __ data.items():
     print(f'{key}: {val}')
 
 # The example counts files grouped by their extension in the Documents directory.
 
-files = [path.suffix for path in docs.iterdir() if path.is_file() and path.suffix]
+files = [path.suffix ___ path __ docs.iterdir() __ path.is_file() and path.suffix]
 
 # In the list comprehension, we ensure that the path object is a file with is_file() and that the file has en extension. Files may not have extensions; especially on Unix systems.
 

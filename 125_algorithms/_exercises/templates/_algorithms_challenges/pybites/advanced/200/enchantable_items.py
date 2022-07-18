@@ -6,7 +6,7 @@ ____ u__.r.. _______ u..
 ____ ___ _______ B.. __ S..
 
 TMP P.. __.g.. "TMP", "/tmp"
-HTML_FILE TMP / "enchantment_list_pc.html"
+HTML_FILE ? / "enchantment_list_pc.html"
 
 # source:
 # https://www.digminecraft.com/lists/enchantment_list_pc.php
@@ -14,46 +14,46 @@ URL ("https://bites-data.s3.us-east-2.amazonaws.com/"
        "minecraft-enchantment.html")
 
 
-c_ Enchantment:
+c_ Enchantment
     """Minecraft enchantment class
     
     Implements the following: 
         id_name, name, max_level, description, items
     """
 
-    ___ - ,id_name,name,max_level,description
-        id_name id_name
+    ___ - id_name name max_level description
         ? ?
-        max_level max_level
-        description description
+        ? ?
+        ? ?
+        ? ?
         items    # list
 
     ___ -s
-        r.. _* n.. ({max_level}): {description}"
+        r.. _* n.. ( m.. : d..
     
-c_ Item:
+c_ Item
     """Minecraft enchantable item class
     
     Implements the following: 
         name, enchantments
     """
 
-    ___ - ,name
+    ___ - name
         ? ?
         enchantments    # list
 
     ___ add_enchantment enchantment
-        enchantments.a..(enchantment)
+        ?.a.. ?
     
 
     ___ -s
         s__ name.r..('_',' ').t.. + ': '
-        sorted_enchantments s..(enchantments,k.._l.... x: x.id_name)
-        ___ enchantment __ sorted_enchantments:
-            s__ += f'\n  [{enchantment.max_level}] {enchantment.id_name}'
+        sorted_enchantments s.. e.. k.._l.... x ?.i..
+        ___ enchantment __ ?
+            s__ += _* \n  ?.m.. ?.i..
         r.. s__
 
-___ generate_enchantments(soup
+___ generate_enchantments soup
     """Generates a dictionary of Enchantment objects
     
     With the key being the id_name of the enchantment.
@@ -63,22 +63,22 @@ ___ generate_enchantments(soup
     mapping {'I': 1,'II': 2,'III': 3,'IV': 4,'V': 5}
     table ?.f.. 'table',id="minecraft_items")
     all_values    # list
-    ___ table_row __ table.f.. 'tr') 1|
-        data table_row.f.. 'td')
+    ___ table_row __ ? f.. 'tr' 1|
+        data ?.f.. 'td'
         values    # list
-        ___ i,d __ e..(data
-            value d.g.. )
-            values.a..(value)
+        ___ i,d __ e.. d..
+            value ?.g..
+            v__.a.. ?
         
-        image_source table_row.f.. 'img') 'data-src'
-        last_part image_source.s..('/')[-1]
-        last_part __.s.. _ \.|png|sm|enchanted|iron','',last_part)
+        image_source t__.f.. img data-src
+        last_part ?.s.. '/' -1
+        last_part __.s.. _ \.|png|sm|enchanted|iron ,'' ?
         
-        items last_part.s...s..('_')
+        items last_part.s...s.. '_'
         valid_items    # list
-        ___ item __ items:
-            __ item:
-                __ item __ 'fishing':
+        ___ item __ ?
+            __ ?
+                __ ? __ fishing
                     valid_items.a..('fishing_rod')
                 ____ item __ 'rod':
                     _____
