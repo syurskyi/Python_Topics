@@ -17,35 +17,35 @@
 # # We can then easily create a dictionary this way - the non-Pythonic way!
 #
 # d _ ||  # creates an empty dictionary
-# ___ k, v i_ zi. k.. v...
-#     d|k| _ v
+# ___ k, v i_ zi. ? '?
+#     ? ? _ ?
 # d
 #
 # # But it is much simpler to use a dictionary comprehension:
 #
-# d _ |k: v ___ k, v i_ zi. k.. v.. |
+# d _ |k v ___ ? ? __ z.. ? ? |
 #
 # #  list comprehensions - you can have nested loops, i_ statements, etc.
 # keys _ |'a' 'b' 'c' 'd'|
 # values _  1 2 3 4
 #
-# d _ |k v ___ k v i_ zi. k.. v...  i_ v % 2 __ 0|
+# d _ |k v ___ ? ? __ z.. ? ?  __ ? % 2 __ 0|
 # d
 #
 # #  create a grid of 2D coordinate pairs, and calculate their distance from the origin:
 # x_coords _  -2, -1, 0, 1, 2
 # y_coords _  -2, -1, 0, 1, 2
 # grid _ | x, y
-#          ___ x i_ x_coords
-#          ___ y i_ y_coords|
+#          ___ ? __ ?
+#          ___ ? __ ?|
 # grid
 # ______ math
-# grid_extended _ | x, y, ma__.hy___ x y ___ x, y i_ grid|
+# grid_extended _ | x, y, ma__.hy___ ? ? ___ ? ? __ g..|
 # grid_extended
 #
 # # We can now easily tweak this to make a dictionary, where the coordinate pairs are the key, and the distance the value:
 #
-# grid_extended _ | x, y  ma__.hy__ x y  ___ x, y i_ grid|
+# grid_extended _ | x, y  ma__.hy__ ? ?  ___ ? ? __ ?|
 #
 # grid_extended
 #
@@ -54,11 +54,11 @@
 # counters
 #
 # # i_ we do not specify a value, then None is used:
-# d _ di__.fromkeys 'abc'
+# d _ di__.f.. 'abc'
 # d
 #
 # # Dictionaries support the len function - this simply returns the number of key/value pairs i_ the dictionary:
-# d _ di__ zi. 'abc' ra... 1, 4
+# d _ di__ z.. 'abc' ra... 1, 4
 # d
 # le. d
 #
@@ -69,18 +69,18 @@
 #
 # text _ 'Put here some long text'
 # counts _ di__
-# ___ c i_ text:
-#     co...|c| _ co___.ge. c, 0  + 1
+# ___ c __ ?
+#     co...|?| _ co___.ge. c, 0  + 1
 # print counts
 #
 # # We can refine this a bit - first we'll ignore spaces, then we'll want to consider lowercase and uppercase
 # # characters as the same:
 #
 # counts _ di__
-# ___ c i_ text
-#     key _ c.lo..  .str..
-#     i_ key:
-#         co...|key| _ co___.ge. ke., 0  + 1
+# ___ c __ text
+#     key _ ?.lo..  .str..
+#     __ ?
+#         co...|?| _ co___.ge. k.. 0  + 1
 # print counts
 #
 # # Membership Tests
@@ -130,15 +130,15 @@
 # # Function
 #
 # ___ insert_if_not_present d, key, value :
-#     i_ ke. no. i_ d:
-#         d|ke.| _ value
+#     __ k.. no. __ d
+#         ?|k..| _ v..
 #         r_ v...
-#     else:
-#         r_ d|ke.|
+#     ____
+#         r_ ? k..|
 #
 # print d
 #
-# result _ insert_if_not_present d, 'a', 0
+# result _ ? d, 'a', 0
 # print r.... d
 #
 # print d

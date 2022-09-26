@@ -2,11 +2,11 @@
 #
 # # update
 # # uрdаtе <Список кортежей с двумя элементами>
-#
-# d _ "a" 1 "c" 3 "b" 2 "d" 4
-# d.up... | "d" 80   "e" 6 |
-# # Список кортежей
-# print d
+#,
+d = {"a": 1, "c": 3, "b": 2, "d": 4}
+d.update([("d", 80), ("e", 6)])
+# Список кортежейQC - Ipmroved the key/edges for water splash. Improved the breather mask pipe interaction with water. Reduced the noices for CG water splash. Improved some Spider's edges. Shuffled DIMattes layers.
+print(d)
 #
 # # update
 # # uрdаtе <Список списков с двумя элементами>
@@ -28,14 +28,14 @@
 # #  'a': 1, 'b': |'new', 20|, 'a': 800, 'b': |'new', 20|
 #
 # # Генераторы словарей
-# keys _ |"a", "b"|  # Список с ключами
-# values _ |1, 2| # Список со значениями
-# print k; v ___  ? ?  __ z.. ? ?
+keys = ["a", "b"]  # Список с ключами
+values = [1, 2] # Список со значениями
+print({k: v for (k, v) in zip(keys, values)})
 # #  'a': 1, 'b': 2
-# print k; 0 ___ ? __ k...
+print({k: 0 for k in keys})
 # #  'a': 0, 'b': 0
-# d _ "a" 1 "b" 2 "c" 3 "d" 4
-# print k; v ___  ? ?  __ ?.it..   __ v % 2 __ 0
+d = {"a": 1, "b": 2, "c": 3, "d": 4}
+print({k: v for (k, v) in d.items() if v % 2 == 0})
 # # # 'b': 2, 'd': 4
 #
 # # dixt keyword argument form
@@ -45,7 +45,7 @@
 # print di.. | 'name' 'mel'   'age' 45 |
 #
 # # zip together keys and values
-# print li.. z.. |'a' 'b' 'c'| |1 2 3|
+print(list(zip(['a', 'b', 'c'], [1, 2, 3])))
 #
 # # Make a dict from zip result
 # D _ di.. z.. |'a' 'b' 'c'| |1 2 3|))
@@ -69,20 +69,20 @@
 #
 # # Initialize dict from keys
 # # with a comprehension
-# D _ di...f... |'a' 'b' 'c'| 0
+D = dict.fromkeys(['a', 'b', 'c'], 0)
 # # Initialize dict from keys
-# print D
-# D _ k 0 ___ ? __ |'a' 'b' 'c'|
-# # Same, but with a comprehension
-# print D
+print(D)
+D = {k: 0 for k in ['a', 'b', 'c']}
+# Same, but with a comprehension
+print(D)
 #
 # # len d  – количество элементов.
-# phonebook _
-#     'Jack': '032-846',
-#     'Guido': '917-333',
-#     'Mario': '120-422',
-#     'Mary': '890-532',  # последняя запятая игнорируется
-#
+phonebook = {
+    'Jack': '032-846',
+    'Guido': '917-333',
+    'Mario': '120-422',
+    'Mary': '890-532',  # последняя запятая игнорируется
+}
 #
 # print le. ? 'entries found'
 #
@@ -92,11 +92,11 @@
 # # # вызывается. Если ключ не существует и метод __missing__ не определён,
 # # # выбрасывается исключение KeyError.
 # #
-# ___
-#     print 'Mary:' ?|'Mary'|
-#     print 'Lumberjack:' ?|'Lumberjack'|
-# e... K..E.. a. e
-#     print 'No entry for' 0e.a...
+try:
+    print('Mary:', phonebook['Mary'])
+    print('Lumberjack:', phonebook['Lumberjack'])
+except KeyError as e:
+    print('No entry for', *e.args)
 #
 # # d|key| _ value
 # # value – изменить значение или создать новую пару ключ-значение, если ключ не существует.
