@@ -1,1 +1,0 @@
-Hint: Here you would need two loops, one for checking for username and one that checks for the password.

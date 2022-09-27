@@ -1,1 +1,0 @@
-______ ?                   r _ ?.g.. "http://www.pythonhow.com"                     print r.text[:100]

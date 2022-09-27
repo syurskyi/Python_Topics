@@ -1,1 +1,0 @@
-Hint: You could use the webbrowser module for this.

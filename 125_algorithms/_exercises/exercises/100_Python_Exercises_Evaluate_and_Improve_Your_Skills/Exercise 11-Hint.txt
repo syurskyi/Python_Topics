@@ -1,1 +1,0 @@
-Hint: Take a look at the range function.

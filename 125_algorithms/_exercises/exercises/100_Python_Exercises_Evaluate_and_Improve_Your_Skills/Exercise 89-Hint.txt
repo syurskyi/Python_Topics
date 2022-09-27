@@ -1,1 +1,0 @@
-Hint: Use sqlite3 with its methods such as connect, cursor, execute, fetchall, and close.

@@ -1,4 +1,4 @@
-# ___ sum_numbers numbers_ N..
-#     __ ? __ N..
-#         numbers _ r.. 1 101
-#     r.. s.. ?
+def sum_numbers(numbers=None):
+    if numbers is None:
+        numbers = range(1, 101)
+    return sum(numbers)

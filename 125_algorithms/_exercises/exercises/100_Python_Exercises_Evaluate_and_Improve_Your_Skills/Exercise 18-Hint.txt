@@ -1,1 +1,0 @@
-Hint: A KeyError always means there is no such given key in the dictionary

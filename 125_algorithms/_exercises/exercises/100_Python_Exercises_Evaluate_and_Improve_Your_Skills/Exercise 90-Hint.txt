@@ -1,1 +1,0 @@
-Hint: You can use pandas.DataFrame.from_records

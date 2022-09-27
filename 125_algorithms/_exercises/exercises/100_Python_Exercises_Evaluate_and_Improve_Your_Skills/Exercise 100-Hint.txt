@@ -1,1 +1,0 @@
-Hint: You can use the code from exercise 81 and put it inside the function that returns your HTML page.

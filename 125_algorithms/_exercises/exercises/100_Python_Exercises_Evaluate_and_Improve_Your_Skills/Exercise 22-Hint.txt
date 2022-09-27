@@ -1,1 +1,0 @@
-Hint: Use a range function to create the lists

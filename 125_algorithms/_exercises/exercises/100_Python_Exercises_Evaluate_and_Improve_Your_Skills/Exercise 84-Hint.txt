@@ -1,1 +1,0 @@
-Hint: The pyglet homepage on PyPi could lead you to the answer: https://pypi.python.org/pypi/pyglet
