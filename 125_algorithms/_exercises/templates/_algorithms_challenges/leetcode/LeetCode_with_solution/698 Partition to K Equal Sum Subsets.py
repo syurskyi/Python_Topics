@@ -20,7 +20,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ canPartitionKSubsets  nums: L..[i..], k: i..) __ b..
+    ___ canPartitionKSubsets  nums: L..[i..], k: i.. __ b..
         """
         resurive search
         """
@@ -63,7 +63,7 @@ c_ Solution:
 
 
 c_ Solution_TLE:
-    ___ canPartitionKSubsets  nums: L..[i..], k: i..) __ b..
+    ___ canPartitionKSubsets  nums: L..[i..], k: i.. __ b..
         """
         resurive search
         """

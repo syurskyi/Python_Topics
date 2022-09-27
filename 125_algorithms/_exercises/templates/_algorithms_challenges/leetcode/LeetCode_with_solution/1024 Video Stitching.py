@@ -48,7 +48,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ videoStitching  clips: L..[L..[i..]], T: i..) __ i..
+    ___ videoStitching  clips: L..[L..[i..]], T: i.. __ i..
         """
         Greedy is correct. The larger the coverage, the better
         """
@@ -73,7 +73,7 @@ c_ Solution:
 
         r.. ret __ prev_e >_ T ____ -1
 
-    ___ videoStitching_error  clips: L..[L..[i..]], T: i..) __ i..
+    ___ videoStitching_error  clips: L..[L..[i..]], T: i.. __ i..
         """
         gready take the max coverage?
         """

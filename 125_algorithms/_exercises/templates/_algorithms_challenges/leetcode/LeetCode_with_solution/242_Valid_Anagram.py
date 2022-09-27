@@ -17,12 +17,12 @@ c_ Solution o..
         # hash
         # https://leetcode.com/articles/valid-anagram/
         __ l.. s) != l.. t):
-            r_ False
+            r_ F..
         counter = [0] * 26
         ___ i __ r.. l.. s)):
             counter[o.. s[i]) - o.. 'a')] += 1
             counter[o.. t[i]) - o.. 'a')] -= 1
         ___ num __ counter:
             __ num != 0:
-                r_ False
-        r_ True
+                r_ F..
+        r_ T..

@@ -24,4 +24,4 @@ c_ Solution:
                 # note j - i is the count of m[i]
                 res += [j - i, m[i]]
                 i = j
-        r_ ''.join(str(s) ___ s __ res)
+        r_ ''.join(s..(s) ___ s __ res)

@@ -9,9 +9,9 @@ c_ ValidWordAbbr o..
         ___ s __ dictionary:
             curr = getAbb(s)
             __ curr __ abb_dic:
-                abb_dic[curr] = False
+                abb_dic[curr] = F..
             ____
-                abb_dic[curr] = True
+                abb_dic[curr] = T..
 
     ___ isUnique  word):
         """
@@ -27,7 +27,7 @@ c_ ValidWordAbbr o..
     ___ getAbb  word):
         __ l.. word) <= 2:
             r_ word
-        r_ word[0] + str(l.. word) - 2) + word[-1]
+        r_ word[0] + s..(l.. word) - 2) + word[-1]
 
 
 

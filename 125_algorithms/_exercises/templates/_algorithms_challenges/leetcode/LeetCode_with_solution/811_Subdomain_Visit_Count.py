@@ -10,8 +10,8 @@ c_ Solution o..
             sub_domain = domain.split('.')
             ___ i __ r.. l.. sub_domain)):
                 curr = '.'.join(sub_domain[i:])
-                domain_count[curr] = domain_count.get(curr, 0) + int(count)
-        r_ [str(v) + ' ' + k ___ k, v __ domain_count.items()]
+                domain_count[curr] = domain_count.get(curr, 0) + i..(count)
+        r_ [s..(v) + ' ' + k ___ k, v __ domain_count.items()]
 
 
     # def subdomainVisits(self, cpdomains):

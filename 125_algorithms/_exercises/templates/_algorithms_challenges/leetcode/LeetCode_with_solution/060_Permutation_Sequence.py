@@ -9,12 +9,12 @@ c_ Solution o..
         # target in (k - 1) / (n - 1)! block
         remain = r.. 1, n + 1)
         __ k <= 1:
-            r_ ''.join(str(t) ___ t __ remain)
+            r_ ''.join(s..(t) ___ t __ remain)
         total = 1
         ___ num __ remain[:-1]:
             total *= num
         res = do_getPermutation(remain, total, n - 1, k - 1)
-        r_ ''.join(str(t) ___ t __ res)
+        r_ ''.join(s..(t) ___ t __ res)
 
 
     ___ do_getPermutation  remain, curr, n, k):

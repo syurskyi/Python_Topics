@@ -11,7 +11,7 @@ c_ Solution:
     #         res.append(sorted_index[value])
     #     return res
     
-    ___ smallerNumbersThanCurrent  nums: List[int]) -> List[int]:
+    ___ smallerNumbersThanCurrent  nums: List[i..])   List[i..]:
         count_list = [0] * 101
         # count numbers
         ___ v __ nums:

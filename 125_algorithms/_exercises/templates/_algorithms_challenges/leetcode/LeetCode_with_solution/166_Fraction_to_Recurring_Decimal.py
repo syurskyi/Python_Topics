@@ -12,7 +12,7 @@ c_ Solution o..
             fraction += '-'
         dividend = abs(numerator)
         divisor = abs(denominator)
-        fraction += str(dividend / divisor)
+        fraction += s..(dividend / divisor)
         remainder = dividend % divisor
         __ remainder __ 0:
             r_ fraction
@@ -24,7 +24,7 @@ c_ Solution o..
                 break
             dic[remainder] = l.. fraction)
             remainder *= 10
-            fraction += str(remainder / divisor)
+            fraction += s..(remainder / divisor)
             remainder %= divisor
         r_ fraction
 

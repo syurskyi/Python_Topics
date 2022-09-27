@@ -17,7 +17,7 @@ The binary representation of 7 is: 111.
 
 
 c_ Solution:
-    ___ hasAlternatingBits  n: i..) __ b..
+    ___ hasAlternatingBits  n: i.. __ b..
         last N..
         w.... n:
             cur n & 1

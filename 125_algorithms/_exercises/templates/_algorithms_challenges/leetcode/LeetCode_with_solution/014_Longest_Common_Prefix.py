@@ -12,7 +12,7 @@ c_ Solution o..
             r_ strs[0]
         prefix = ''
         pos = 0
-        w.. True:
+        w.. T..:
             try:
                 current = strs[0][pos]
             except IndexError:

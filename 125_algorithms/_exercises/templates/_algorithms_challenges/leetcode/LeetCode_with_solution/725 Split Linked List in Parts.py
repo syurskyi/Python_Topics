@@ -49,7 +49,7 @@ _______ m__
 
 
 c_ Solution:
-    ___ splitListToParts  root: ListNode, k: i..) __ L..[ListNode]:
+    ___ splitListToParts  root: ListNode, k: i.. __ L..[ListNode]:
         """
         calculate the chunk/page size at a time
 
@@ -87,7 +87,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ splitListToParts_2  root: ListNode, k: i..) __ L..[ListNode]:
+    ___ splitListToParts_2  root: ListNode, k: i.. __ L..[ListNode]:
         """
         [1,2,3,4,5,6,7]
         3
@@ -125,7 +125,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ splitListToParts_error  root: ListNode, k: i..) __ L..[ListNode]:
+    ___ splitListToParts_error  root: ListNode, k: i.. __ L..[ListNode]:
         """
         mistake, the length should be dynamically calculated
 

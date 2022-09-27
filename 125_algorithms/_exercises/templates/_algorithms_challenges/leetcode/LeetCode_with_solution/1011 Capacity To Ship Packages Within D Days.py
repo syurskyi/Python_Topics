@@ -56,7 +56,7 @@ ____ tying _______ L..
 
 
 c_ Solution:
-    ___ shipWithinDays  weights: L..[i..], D: i..) __ i..
+    ___ shipWithinDays  weights: L..[i..], D: i.. __ i..
         """
         Must respect conveyor's order
 

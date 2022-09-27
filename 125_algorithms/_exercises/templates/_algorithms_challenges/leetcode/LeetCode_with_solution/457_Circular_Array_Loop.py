@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ circularArrayLoop  nums: List[int]) -> bool:
+    ___ circularArrayLoop  nums: List[i..])    b..
         ___ i __ r.. l.. nums)):
             __ nums[i] __ 0:
                 continue
@@ -9,7 +9,7 @@ c_ Solution:
             fast = index(nums, slow)
             w.. nums[slow] * nums[fast] > 0 and nums[slow] * nums[index(nums, fast)] > 0:
                 __ slow __ fast and fast != index(nums, fast):
-                    r_ True
+                    r_ T..
                 ____ slow __ fast and fast __ index(nums, fast):
                     break
                 slow = index(nums, slow)
@@ -22,7 +22,7 @@ c_ Solution:
                 temp = index(nums, runner)
                 nums[runner] = 0
                 runner = temp
-        r_ False
+        r_ F..
             
     ___ index  nums, index):
         length = l.. nums)

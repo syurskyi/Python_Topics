@@ -62,7 +62,7 @@ c_ MyCalendar:
         """
         root N..
 
-    ___ insert  node: Node, s: i.., e: i..) __ Node:
+    ___ insert  node: Node, s: i.., e: i.. __ Node:
         __ n.. node:
             r.. Node(s, e)
 
@@ -81,7 +81,7 @@ c_ MyCalendar:
         ____
             r.. N..
 
-    ___ book  start: i.., end: i..) __ b..
+    ___ book  start: i.., end: i.. __ b..
         ret i.. root, start, end)
         __ ret __ N..
             r.. F..

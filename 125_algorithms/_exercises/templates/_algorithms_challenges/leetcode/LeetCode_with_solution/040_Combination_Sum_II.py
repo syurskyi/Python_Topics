@@ -25,8 +25,8 @@ c_ Solution o..
         ___ temp __ dp[target]:
             value = [candidates[t] ___ t __ temp]
             try:
-                check[str(value)] += 1
+                check[s..(value)] += 1
             except KeyError:
-                check[str(value)] = 1
+                check[s..(value)] = 1
                 res.append(value)
         r_ res

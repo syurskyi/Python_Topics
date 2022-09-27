@@ -8,13 +8,13 @@ c_ Solution o..
         # bottom up o(m*n)
         # https://leetcode.com/discuss/93024/easy-dp-java-solution-with-detailed-explanation
         __ s __ p:
-            r_ True
+            r_ T..
         m, n = l.. s), l.. p)
-        dp = [[False] * (n + 1) ___ _ __ r.. m + 1)]
-        dp[0][0] = True
+        dp = [[F..] * (n + 1) ___ _ __ r.. m + 1)]
+        dp[0][0] = T..
         ___ j __ r.. 1, n):
             __ p[j] __ '*' and dp[0][j - 1]:
-                dp[0][j + 1] = True
+                dp[0][j + 1] = T..
         # print dp
         ___ i __ r.. m):
             ___ j __ r.. n):

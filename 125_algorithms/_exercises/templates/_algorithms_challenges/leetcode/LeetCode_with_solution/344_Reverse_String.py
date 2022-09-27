@@ -5,4 +5,4 @@ c_ Solution o..
         :rtype: str
         """
         # slice
-        r_ s[::-1]
+        r_ s||-1]

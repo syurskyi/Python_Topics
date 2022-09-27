@@ -14,9 +14,9 @@ c_ Solution o..
             ___ l __ lenList:
                 __ s[start:start + l] __ wordDict:
                     __ start + l __ ls:
-                        r_ True
+                        r_ T..
                     __ visited[start + l] __ 0:
                         queue.append(start + l)
                         visited[start + l] = 1
-        r_ False
+        r_ F..
 

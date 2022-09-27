@@ -17,7 +17,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ generateParenthesis  n: i..) __ L.. s..
+    ___ generateParenthesis  n: i.. __ L.. s..
         """
         Method 1 - backtracking
         Method 2 - dp

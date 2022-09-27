@@ -26,27 +26,27 @@ c_ Solution o..
         s = s.strip()
         ls, pos = l.. s), 0
         __ ls __ 0:
-            r_ False
+            r_ F..
         __ s[pos] __ '+' or s[pos] __ '-':
             pos += 1
-        isNumeric = False
+        isNumeric = F..
         w.. pos < ls and s[pos].isdigit():
             pos += 1
-            isNumeric = True
+            isNumeric = T..
         __ pos < ls and s[pos] __ '.':
             pos += 1
             w.. pos < ls and s[pos].isdigit():
                 pos += 1
-                isNumeric = True
+                isNumeric = T..
         ____ pos < ls and s[pos] __ 'e' and isNumeric:
-            isNumeric = False
+            isNumeric = F..
             pos += 1
             __ pos < ls and (s[pos] __ '+' or s[pos] __ '-'):
                 pos += 1
             w.. pos < ls and s[pos].isdigit():
                 pos += 1
-                isNumeric = True
+                isNumeric = T..
         print pos, ls, isNumeric
         __ pos __ ls and isNumeric:
-            r_ True
-        r_ False
+            r_ T..
+        r_ F..

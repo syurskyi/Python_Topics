@@ -18,16 +18,16 @@ c_ Solution o..
             r_
         ls = l.. board)
         pos = ls - num
-        check = [True] * ls
+        check = [T..] * ls
         ___ i __ r.. pos):
             ___ j __ r.. ls):
                 __ board[i][j] __ 'Q':
-                    check[j] = False
+                    check[j] = F..
                     step = pos - i
                     __ j + step < ls:
-                        check[j + step] = False
+                        check[j + step] = F..
                     __ j - step >= 0:
-                        check[j - step] = False
+                        check[j - step] = F..
                     break
         ___ j __ r.. ls):
             __ check[j]:

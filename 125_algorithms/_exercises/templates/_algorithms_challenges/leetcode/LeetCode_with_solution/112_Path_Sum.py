@@ -13,10 +13,10 @@ c_ Solution o..
         :rtype: bool
         """
         __ root is N..:
-            r_ False
+            r_ F..
         sum = sum - root.val
         __ sum __ 0 and root.left is N.. and root.right is N..:
-            r_ True
+            r_ T..
         # check left
         left = hasPathSum(root.left, sum)
         # check right

@@ -7,13 +7,13 @@ c_ Solution o..
         # hash table
         dic = {'0':'0', '6':'9', '9': '6', '1' :'1', '8': '8'}
         temp_s = ''
-        ___ c __ num[::-1]:
+        ___ c __ num||-1]:
             __ c not __ dic:
-                r_ False
+                r_ F..
             temp_s += dic[c]
-        __ int(temp_s) __ int(num):
-            r_ True
-        r_ False
+        __ i..(temp_s) __ i..(num):
+            r_ T..
+        r_ F..
 
     # def isStrobogrammatic(self, num):
     #     # https://discuss.leetcode.com/topic/20840/1-liners-python

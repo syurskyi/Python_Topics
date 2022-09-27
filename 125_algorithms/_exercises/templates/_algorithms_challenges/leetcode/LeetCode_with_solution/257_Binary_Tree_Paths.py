@@ -18,9 +18,9 @@ c_ Solution:
 
     ___ get_path  result, path, node):
         __ node.left is N.. and node.right is N..:
-            result.append(path + [str(node.val)])
+            result.append(path + [s..(node.val)])
             r_
-        path = path + [str(node.val)]
+        path = path + [s..(node.val)]
         __ node.left is not N..:
             get_path(result, path, node.left)
         __ node.right is not N..:

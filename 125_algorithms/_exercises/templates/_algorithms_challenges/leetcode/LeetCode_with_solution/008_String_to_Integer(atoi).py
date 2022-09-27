@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ myAtoi  str):
+    ___ myAtoi  s..):
         """
         :type str: str
         :rtype: int
@@ -7,16 +7,16 @@ c_ Solution o..
         sign = 1
         max_int, min_int = 2147483647, -2147483648
         result, pos = 0, 0
-        ls = l.. str)
-        w.. pos < ls and str[pos] __ ' ':
+        ls = l.. s..)
+        w.. pos < ls and s..[pos] __ ' ':
             pos += 1
-        __ pos < ls and str[pos] __ '-':
+        __ pos < ls and s..[pos] __ '-':
             sign = -1
             pos += 1
-        ____ pos < ls and str[pos] __ '+':
+        ____ pos < ls and s..[pos] __ '+':
             pos += 1
-        w.. pos < ls and o.. str[pos]) >= o.. '0') and o.. str[pos]) <= o.. '9'):
-            num = o.. str[pos]) - o.. '0')
+        w.. pos < ls and o.. s..[pos]) >= o.. '0') and o.. s..[pos]) <= o.. '9'):
+            num = o.. s..[pos]) - o.. '0')
             __ result > max_int / 10 or ( result __ max_int / 10 and num >= 8):
                 __ sign __ -1:
                     r_ min_int

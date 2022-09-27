@@ -55,7 +55,7 @@ c_ MapSum:
 
         trie Trie()
 
-    ___ insert  key: s.., val: i..) __ N..
+    ___ insert  key: s.., val: i.. __ N..
         root trie.root
         root.children[key[0]], _ trie.i.. root.children[key[0]], key, 0, val)
 
@@ -108,7 +108,7 @@ c_ MapSum2:
 
         trie Trie()
 
-    ___ insert  key: s.., val: i..) __ N..
+    ___ insert  key: s.., val: i.. __ N..
         trie.i.. trie.root, key, 0, val)
 
     ___ s..  prefix: s..) __ i..

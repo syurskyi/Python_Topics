@@ -49,7 +49,7 @@ c_ MyCalendarThree:
     ___ -
         lst    # list
 
-    ___ book  start: i.., end: i..) __ i..
+    ___ book  start: i.., end: i.. __ i..
         b__.i.. (lst, (start, "start"
         b__.i.. (lst, (end, "end"
         ret 0

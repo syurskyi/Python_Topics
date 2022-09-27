@@ -33,7 +33,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ combinationSum  candidates: L..[i..], target: i..) __ L..[L..[i..]]:
+    ___ combinationSum  candidates: L..[i..], target: i.. __ L..[L..[i..]]:
         ret    # list
         dfs(candidates, 0,    # list, 0, target, ret)
         r.. ret

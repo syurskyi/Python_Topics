@@ -25,7 +25,7 @@ c_ Solution:
     ___ -
         count 0
 
-    ___ pathSum  root: TreeNode, target: i..) __ i..
+    ___ pathSum  root: TreeNode, target: i.. __ i..
         """
         The path does not need to start or end at the root or a leaf, but it
         must go downwards (traveling only from parent nodes to child nodes).

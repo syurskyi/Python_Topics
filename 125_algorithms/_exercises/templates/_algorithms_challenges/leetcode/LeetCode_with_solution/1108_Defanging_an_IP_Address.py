@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ defangIPaddr  address: str) -> str:
+    ___ defangIPaddr  address: s..)   s..:
         # replace
         r_ address.replace('.', '[.]')
     # def defangIPaddr(self, address: str) -> str:

@@ -19,7 +19,7 @@ c_ Solution o..
         n = abs(divisor)
         # ln and exp
         res = math.log(m) - math.log(n)
-        res = int(math.exp(res))
+        res = i..(math.exp(res))
         __ isPositive:
             r_ min(res, 2147483647)
         r_ max(0 - res, -2147483648)

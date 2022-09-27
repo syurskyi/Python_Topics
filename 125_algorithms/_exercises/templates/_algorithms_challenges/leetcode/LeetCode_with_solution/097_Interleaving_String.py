@@ -7,15 +7,15 @@ c_ Solution o..
         :rtype: bool
         """
         __ l.. s1) + l.. s2) != l.. s3):
-            r_ False
+            r_ F..
         queue = [(0, 0), (-1, -1)]
         visited = set()
-        isSuccess = False
+        isSuccess = F..
         index = 0
         w.. l.. queue) != 1 or queue[0][0] != -1:
             p = queue.pop(0)
             __ p[0] __ l.. s1) and p[1] __ l.. s2):
-                r_ True
+                r_ T..
             __ p[0] __ -1:
                 queue.append(p)
                 index += 1
@@ -29,4 +29,4 @@ c_ Solution o..
             __ p[1] < l.. s2):
                 __ s2[p[1]] __ s3[index]:
                     queue.append((p[0], p[1] + 1))
-        r_ False
+        r_ F..

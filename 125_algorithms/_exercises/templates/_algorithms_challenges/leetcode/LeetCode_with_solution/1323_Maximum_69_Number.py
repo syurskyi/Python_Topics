@@ -1,4 +1,4 @@
 c_ Solution:
-    ___ maximum69Number   num: int) -> int:
+    ___ maximum69Number   num: i..   i..:
         # Replace first 6 with 9 if exists
-        r_(str(num).replace('6', '9', 1))
+        r_(s..(num).replace('6', '9', 1))

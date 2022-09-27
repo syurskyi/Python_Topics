@@ -26,7 +26,7 @@ c_ Solution o..
 
     ___ isIsomorphic  s, t):
         __ l.. s) != l.. t):
-            r_ False
+            r_ F..
         ls = l.. s)
         mapStoT = [0] * 127
         mapTtoS = [0] * 127
@@ -36,6 +36,6 @@ c_ Solution o..
                 mapStoT[s_num] = t_num
                 mapTtoS[t_num] = s_num
             ____ mapTtoS[t_num] != s_num or mapStoT[s_num] != t_num:
-                r_ False
-        r_ True
+                r_ F..
+        r_ T..
 

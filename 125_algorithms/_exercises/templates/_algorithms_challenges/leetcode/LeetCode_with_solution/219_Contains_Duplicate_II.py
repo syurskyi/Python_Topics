@@ -29,8 +29,8 @@ c_ Solution o..
             __ i > k:
                 check.remove(nums[i - k - 1])
             __ nums[i] __ check:
-                r_ True
+                r_ T..
             ____
                 check.add(nums[i])
-        r_ False
+        r_ F..
 

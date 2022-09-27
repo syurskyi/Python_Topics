@@ -19,7 +19,7 @@ c_ Solution:
         :type s: str
         :rtype: str
         """
-        s_r s[::-1]
+        s_r s||-1]
         l l..(s)
         __ l < 2:
             r.. s

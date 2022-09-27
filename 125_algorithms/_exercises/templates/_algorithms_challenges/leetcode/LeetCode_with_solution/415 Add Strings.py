@@ -25,8 +25,8 @@ c_ Solution:
         __ l..(num1) > l..(num2
             num1, num2 num2, num1
 
-        num1 num1[::-1]
-        num2 num2[::-1]
+        num1 num1||-1]
+        num2 num2||-1]
         carry 0
         idx 0
         w.... idx < l..(num2
@@ -47,7 +47,7 @@ c_ Solution:
         __ carry:
             ret.a..(carry)
 
-        r.. "".j.. m..(s.., ret[::-1]
+        r.. "".j.. m..(s.., ret||-1]
 
 
 __ _______ __ _______

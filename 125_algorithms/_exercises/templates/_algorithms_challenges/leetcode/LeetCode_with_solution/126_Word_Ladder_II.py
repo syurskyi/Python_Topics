@@ -58,7 +58,7 @@ c_ Solution o..
         wordlist.discard(beginWord)
         wordlist.discard(endWord)
         hash_map, res  # dict, []
-        bfs(set([beginWord]), set([endWord]), wordlist, False, hash_map)
+        bfs(set([beginWord]), set([endWord]), wordlist, F.., hash_map)
         print hash_map
         dfs(res, [beginWord], beginWord, endWord, hash_map)
         r_ res
@@ -69,7 +69,7 @@ c_ Solution o..
         __ l.. forward) > l.. backward):
             bfs(backward, forward, wordlist, not reverse, hash_map)
             r_
-        is_connected = False
+        is_connected = F..
         next_level = set()
         ___ word __ forward:
             ___ c __ string.ascii_lowercase:
@@ -81,7 +81,7 @@ c_ Solution o..
                         key, value = neigh, word
                     __ neigh __ backward:
                         hash_map[key] = hash_map.get(key,    # list) + [value]
-                        is_connected = True
+                        is_connected = T..
                     __ not is_connected and neigh __ wordlist:
                         next_level.add(neigh)
                         hash_map[key] = hash_map.get(key,    # list) + [value]

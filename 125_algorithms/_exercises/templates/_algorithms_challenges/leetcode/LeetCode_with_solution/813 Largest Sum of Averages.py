@@ -30,7 +30,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ largestSumOfAverages  A: L..[i..], K: i..) __ f__:
+    ___ largestSumOfAverages  A: L..[i..], K: i.. __ f__:
         """
         Memoized Backtracking + Prefix sum
         My first hunch is correct

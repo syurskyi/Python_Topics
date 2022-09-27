@@ -7,7 +7,7 @@ c_ Solution o..
         stack =    # list
         ___ t __ tokens:
             try:
-                temp = int(t)
+                temp = i..(t)
                 stack.append(temp)
             except:
                 b = stack.pop()
@@ -19,6 +19,6 @@ c_ Solution o..
                 ____ t __ "*":
                     a *= b
                 ____
-                    a = int(a * 1.0 / b)
+                    a = i..(a * 1.0 / b)
                 stack.append(a)
         r_ stack[-1]

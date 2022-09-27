@@ -17,11 +17,11 @@ c_ Solution o..
                     __ (hset[i] & index) > 0 or\
                                     (vset[j] & index) > 0 or\
                                     (bset[(i / 3) * 3 + j / 3] & index) > 0:
-                        r_ False
+                        r_ F..
                     hset[i] |= index
                     vset[j] |= index
                     bset[(i / 3) * 3 + j / 3] |= index
-        r_ True
+        r_ T..
 
     # def isValidSudoku(self, board):
     #     if board is None:

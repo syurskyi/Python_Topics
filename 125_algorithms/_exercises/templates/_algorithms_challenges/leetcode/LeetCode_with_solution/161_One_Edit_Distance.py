@@ -11,7 +11,7 @@ c_ Solution o..
             r_ isOneEditDistance(t, s)
         # edit distance is greater than 1
         __ ls_t - ls_s > 1:
-            r_ False
+            r_ F..
         i, shift = 0, ls_t - ls_s
         # find the different position
         w.. i < ls_s and s[i] __ t[i]:

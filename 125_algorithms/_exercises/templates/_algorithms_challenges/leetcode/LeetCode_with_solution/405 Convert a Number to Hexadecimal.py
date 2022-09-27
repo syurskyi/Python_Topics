@@ -39,7 +39,7 @@ c_ Solution(o..
             ret.a..(encode(num & 0xf
             num >>= 4
 
-        r.. ''.j..(ret[::-1]) o. '0'
+        r.. ''.j..(ret||-1]) o. '0'
 
     ___ toHexNormal  num
         """
@@ -52,7 +52,7 @@ c_ Solution(o..
             ret.a..(encode(num % 16
             num /= 16
 
-        r.. ''.j..(ret[::-1]) o. '0'
+        r.. ''.j..(ret||-1]) o. '0'
 
     ___ encode  d
         __ 0 <_ d < 10:

@@ -45,7 +45,7 @@ _______ h__
 
 
 c_ Solution:
-    ___ findCheapestPrice  n: i.., flights: L..[L..[i..]], src: i.., dst: i.., K: i..) __ i..
+    ___ findCheapestPrice  n: i.., flights: L..[L..[i..]], src: i.., dst: i.., K: i.. __ i..
         """
         dijkstra
         """

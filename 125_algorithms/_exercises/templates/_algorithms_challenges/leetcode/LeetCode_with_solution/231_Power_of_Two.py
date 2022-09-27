@@ -5,6 +5,6 @@ c_ Solution o..
         :rtype: bool
         """
         __ n < 0:
-            r_ False
+            r_ F..
         bin_str = bin(n)
-        r_ sum(map(lambda x: int(x), list(bin_str[2:]))) __ 1
+        r_ sum(map(lambda x: i..(x), list(bin_str[2:]))) __ 1

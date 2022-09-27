@@ -16,12 +16,12 @@ c_ Solution o..
             mid = (low + high) / 2
             mid_square = mid * mid
             __ mid_square __ num:
-                r_ True
+                r_ T..
             ____ mid_square < num:
                 low = mid + 1
             ____
                 high = mid - 1
-        r_ False
+        r_ F..
 
     # def isPerfectSquare(self, num):
     #     x = num

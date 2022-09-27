@@ -11,8 +11,8 @@ c_ Solution o..
         ___ letter __ ransomNote:
             letter_map[letter] = letter_map.get(letter, 0) - 1
             __ letter_map[letter] < 0:
-                r_ False
-        r_ True
+                r_ F..
+        r_ T..
 
     # def canConstruct(self, ransomNote, magazine):
     #     return not collections.Counter(ransomNote) - collections.Counter(magazine)

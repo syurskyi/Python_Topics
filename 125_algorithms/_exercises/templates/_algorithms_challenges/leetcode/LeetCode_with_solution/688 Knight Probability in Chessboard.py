@@ -41,7 +41,7 @@ dirs (
 
 
 c_ Solution:
-    ___ knightProbability  N: i.., K: i.., r: i.., c: i..) __ f__:
+    ___ knightProbability  N: i.., K: i.., r: i.., c: i.. __ f__:
         """
         brute force K step
 
@@ -73,7 +73,7 @@ c_ Solution:
         ])
 
 
-    ___ knightProbability_error  N: i.., K: i.., r: i.., c: i..) __ f__:
+    ___ knightProbability_error  N: i.., K: i.., r: i.., c: i.. __ f__:
         """
         brute force K step
         """

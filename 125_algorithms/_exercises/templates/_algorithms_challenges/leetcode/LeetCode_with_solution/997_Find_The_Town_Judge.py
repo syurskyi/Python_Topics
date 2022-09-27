@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findJudge  N: int, trust: List[List[int]]) -> int:
+    ___ findJudge  N: i.., trust: List[List[i..]])   i..:
         __ N__1:
             r_ 1
         d1={}

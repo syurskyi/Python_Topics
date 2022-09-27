@@ -59,7 +59,7 @@ c_ Solution o..
                 ___ j __ r.. l.. curr) + 1):
                     # generate new n permutations from n -1 permutations
                     new_perm = curr[:j] + [nums[i]] + curr[j:]
-                    stemp = ''.join(map(str, new_perm))
+                    stemp = ''.join(map(s.., new_perm))
                     __ stemp not __ cache:
                         cache.add(stemp)
                         res.append(new_perm)

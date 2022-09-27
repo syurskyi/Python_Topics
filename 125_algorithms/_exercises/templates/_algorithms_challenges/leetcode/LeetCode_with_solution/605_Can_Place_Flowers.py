@@ -16,5 +16,5 @@ c_ Solution o..
                 count += 1
                 flowerbed[i] = 1
                 __ count >= n:
-                    r_ True
-        r_ False
+                    r_ T..
+        r_ F..

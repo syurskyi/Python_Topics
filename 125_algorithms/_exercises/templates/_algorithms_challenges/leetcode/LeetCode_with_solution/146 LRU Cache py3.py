@@ -54,7 +54,7 @@ c_ LRUCache:
         cap capacity
         map    # dict
 
-    ___ get  key: i..) __ i..
+    ___ get  key: i.. __ i..
         __ key __ map:
             node map[key]
             _remove(key)
@@ -63,7 +63,7 @@ c_ LRUCache:
 
         r.. -1
 
-    ___ put  key: i.., value: i..) __ N..
+    ___ put  key: i.., value: i.. __ N..
         __ key __ map:
             _remove(key)
         ____ l.. m..) >_ cap:

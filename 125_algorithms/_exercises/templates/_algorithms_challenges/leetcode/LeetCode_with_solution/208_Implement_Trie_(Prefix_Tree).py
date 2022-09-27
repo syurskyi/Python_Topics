@@ -5,7 +5,7 @@ c_ TrieNode o..
         Initialize your data structure here.
         """
         links = [N..] * 26
-        isEnd = False
+        isEnd = F..
 
     ___ containsKey  ch):
         r_ links[o.. ch) - o.. 'a')] != N..
@@ -17,7 +17,7 @@ c_ TrieNode o..
         links[o.. ch) - o.. 'a')] = node
 
     ___ setEnd ____:
-        isEnd = True
+        isEnd = T..
 
 
 c_ Trie o..
@@ -33,7 +33,7 @@ c_ Trie o..
         node = root
         ___ i __ r.. l.. word)):
             ch = word[i]
-            __ node.containsKey(ch) is False:
+            __ node.containsKey(ch) is F..:
                 node.put(ch, TrieNode())
             node = node.get(ch)
         node.setEnd()

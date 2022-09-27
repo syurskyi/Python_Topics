@@ -58,7 +58,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ fullJustify  words: L..[s..], maxWidth: i..) __ L.. s..
+    ___ fullJustify  words: L..[s..], maxWidth: i.. __ L.. s..
         """
         Round robin distribution of spaces
 
@@ -90,7 +90,7 @@ c_ Solution:
 
 
 c_ Solution2:
-    ___ fullJustify  words: L..[s..], maxWidth: i..) __ L.. s..
+    ___ fullJustify  words: L..[s..], maxWidth: i.. __ L.. s..
         """
         Round robin distribution of spaces
 

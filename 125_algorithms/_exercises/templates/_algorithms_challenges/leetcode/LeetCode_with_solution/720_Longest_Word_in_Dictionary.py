@@ -21,7 +21,7 @@ c_ Solution o..
     ___ longestWord  words):
         Trie = lambda: collections.defaultdict(Trie)
         trie = Trie()
-        END = True
+        END = T..
         ___ i, word __ e.. words):
             reduce(dict.-g, word, trie)[END] = i
         stack = trie.values()

@@ -31,7 +31,7 @@ c_ Solution o..
         # p3 is in middle + 1
         # p2 is in the end
         __ head is N..:
-            r_ True
+            r_ T..
         p1, p2 = head, head
         p3, pre = p1.next, p1
         w.. p2.next is not N.. and p2.next.next is not N..:
@@ -45,7 +45,7 @@ c_ Solution o..
 
         w.. p3 is not N..:
             __ p1.val != p3.val:
-                r_ False
+                r_ F..
             p1 = p1.next
             p3 = p3.next
-        r_ True
+        r_ T..

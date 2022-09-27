@@ -5,7 +5,7 @@ The returned string must contain only lowercase English letters. If there are mu
 Output: "pppz"
 '''
 c_ Solution:
-    ___ generateTheString  n: int) -> str:
+    ___ generateTheString  n: i..   s..:
         __ n%2__0:
             r_ "a" * (n-1) + "b"
         ____

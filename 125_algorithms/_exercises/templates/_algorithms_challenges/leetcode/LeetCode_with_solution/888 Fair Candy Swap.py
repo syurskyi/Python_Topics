@@ -69,7 +69,7 @@ c_ Solution:
         sum_A s..(A)
         sum_B s..(B)
         __ sum_A > sum_B:
-            r.. fairCandySwap(B, A)[::-1]
+            r.. fairCandySwap(B, A)||-1]
 
         A.s..()
         B.s..()

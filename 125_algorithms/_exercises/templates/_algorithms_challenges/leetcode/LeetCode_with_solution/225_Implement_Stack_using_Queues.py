@@ -76,7 +76,7 @@ c_ Stack o..
         """
         :rtype: int
         """
-        __ empty() is False:
+        __ empty() is F..:
             r_ curr_top
 
     ___ empty ____:

@@ -7,9 +7,9 @@ c_ Solution o..
         alnum_s = [t.lower() ___ t __ s __ t.isalnum()]
         ls = l.. alnum_s)
         __ ls <= 1:
-            r_ True
+            r_ T..
         mid = ls / 2
         ___ i __ r.. mid):
             __ alnum_s[i] != alnum_s[ls - 1 - i]:
-                r_ False
-        r_ True
+                r_ F..
+        r_ T..

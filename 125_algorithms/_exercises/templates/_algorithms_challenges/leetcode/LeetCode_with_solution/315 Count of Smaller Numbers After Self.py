@@ -83,7 +83,7 @@ c_ Solution(o..
             ret.a..(st.query_less(st.root, A[i]
             st.inc(A[i], 1)
 
-        r.. ret[::-1]
+        r.. ret||-1]
 
 
 __ _______ __ _______

@@ -85,7 +85,7 @@ c_ Solution(o..
             __ RET[cur] __ -1: _____
             cur RET[cur]
 
-        ret ret[::-1]
+        ret ret||-1]
         print ret
 
         r.. l

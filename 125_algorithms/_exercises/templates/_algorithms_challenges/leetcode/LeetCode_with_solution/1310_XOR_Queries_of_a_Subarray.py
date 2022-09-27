@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ xorQueries  arr: List[int], queries: List[List[int]]) -> List[int]:
+    ___ xorQueries  arr: List[i..], queries: List[List[i..]])   List[i..]:
         pref = [0]
         # Compute accumulated xor from head
         ___ e __ arr:

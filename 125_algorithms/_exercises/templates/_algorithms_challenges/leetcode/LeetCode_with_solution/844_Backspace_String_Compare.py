@@ -6,7 +6,7 @@ c_ Solution o..
         :rtype: bool
         """
         __ S __ T:
-            r_ True
+            r_ T..
         s_stack =    # list
         t_stack =    # list
         ___ c __ S:

@@ -13,13 +13,13 @@ c_ Solution o..
         :rtype: bool
         """
         __ p __ q:
-            r_ True
+            r_ T..
         try:
-            left = right = True
+            left = right = T..
             __ p.val __ q.val:
                 left = isSameTree(p.left, q.left)
                 right = isSameTree(p.right, q.right)
                 r_ (left and right)
         except:
-            r_ False
-        r_ False
+            r_ F..
+        r_ F..

@@ -20,7 +20,7 @@
 
 # https://leetcode.com/problems/1-bit-and-2-bit-characters/solution/
 c_ Solution:
-    ___ isOneBitCharacter  bits: List[int]) -> bool:
+    ___ isOneBitCharacter  bits: List[i..])    b..
         pos = 0
         # Go through bits
         w.. pos < l.. bits) - 1:

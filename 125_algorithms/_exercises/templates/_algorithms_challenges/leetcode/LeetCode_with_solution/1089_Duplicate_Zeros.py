@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ duplicateZeros  arr: List[int]) -> N..:
+    ___ duplicateZeros  arr: List[i..])   N..:
         """
         Do not return anything, modify arr in-place instead.
         """

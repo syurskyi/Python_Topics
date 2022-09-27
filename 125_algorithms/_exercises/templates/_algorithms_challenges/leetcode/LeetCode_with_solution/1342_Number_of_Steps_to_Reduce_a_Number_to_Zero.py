@@ -31,7 +31,7 @@ Constraints:
 '''
 
 c_ Solution:
-    ___ numberOfSteps   num: int) -> int:
+    ___ numberOfSteps   num: i..   i..:
         steps = 0
         w..(num > 0):
             __(num % 2 __ 0):

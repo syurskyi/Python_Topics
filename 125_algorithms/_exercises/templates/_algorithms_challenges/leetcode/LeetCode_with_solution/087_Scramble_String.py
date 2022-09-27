@@ -30,11 +30,11 @@ c_ Solution o..
         # recursive with memo
         # Check with sorted is fundamental, otherwise TLE
         __ l.. s1) != l.. s2) or sorted(s1) != sorted(s2):
-            r_ False
+            r_ F..
         __ l.. s1) <= l.. s2) <= 1:
             r_ s1 __ s2
         __ s1 __ s2:
-            r_ True
+            r_ T..
         __ (s1, s2) __ memo:
             r_ memo[s1, s2]
         n = l.. s1)
@@ -43,10 +43,10 @@ c_ Solution o..
             __ not a:
                 b = isScramble(s1[:i], s2[-i:], memo) and isScramble(s1[i:], s2[:-i], memo)
             __ a or b:
-                memo[s1, s2] = True
-                r_ True
-        memo[s1, s2] = False
-        r_ False
+                memo[s1, s2] = T..
+                r_ T..
+        memo[s1, s2] = F..
+        r_ F..
 
     # def isScramble(self, s1, s2):
     #     # dp TLE

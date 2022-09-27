@@ -30,7 +30,7 @@ c_ Solution o..
             __ i + 1 <  ls and nums[i + 1] __ nums[i] + 1:
                 continue
             __ i __ start:
-                res.append(str(nums[start]))
+                res.append(s..(nums[start]))
             ____
                 res.append("%d->%d" % (nums[start], nums[i]))
             start = i + 1

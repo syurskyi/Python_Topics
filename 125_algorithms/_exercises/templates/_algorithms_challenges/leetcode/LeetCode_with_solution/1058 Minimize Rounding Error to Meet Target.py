@@ -39,7 +39,7 @@ _______ m__
 
 
 c_ Solution:
-    ___ minimizeError  prices: L..[s..], target: i..) __ s..
+    ___ minimizeError  prices: L..[s..], target: i.. __ s..
         """
         to determine possible, floor all or ceil all
 

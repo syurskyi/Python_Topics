@@ -22,7 +22,7 @@ _______ h__
 
 
 c_ Solution:
-    ___ networkDelayTime  times: L..[L..[i..]], N: i.., K: i..) __ i..
+    ___ networkDelayTime  times: L..[L..[i..]], N: i.., K: i.. __ i..
         """
         Dijkstra's algorithm
         """

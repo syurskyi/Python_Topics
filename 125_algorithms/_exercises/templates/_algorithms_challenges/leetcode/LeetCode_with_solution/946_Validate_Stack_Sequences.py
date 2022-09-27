@@ -23,8 +23,8 @@ c_ Solution o..
             in_stack.pop(-1)
             popped.pop(0)
         __ l.. in_stack) __ 0:
-            r_ True
-        r_ False
+            r_ T..
+        r_ F..
 
 
 __ ____ __ ____

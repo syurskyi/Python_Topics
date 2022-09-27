@@ -55,7 +55,7 @@ c_ LFUCache:
         keys d..(O..)
         mini -1  # mini frequency
 
-    ___ get  key: i..) __ i..
+    ___ get  key: i.. __ i..
         __ key __ values:
             val values[key]
             freq_org freqs[key]
@@ -70,7 +70,7 @@ c_ LFUCache:
         ____
             r.. - 1
 
-    ___ put  key: i.., value: i..) __ N..
+    ___ put  key: i.., value: i.. __ N..
         __ cap __ 0:  # trivial
             r..
 

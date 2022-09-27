@@ -49,10 +49,10 @@ c_ Logger o..
             ____
                 break
         __ timestamp < cache.get(message, 0):
-            r_ False
+            r_ F..
         cache[message] = timestamp + 10
         heapq.heappush(heap, (timestamp + 10, message))
-        r_ True
+        r_ T..
 
 
 # Your Logger object will be instantiated and called as such:

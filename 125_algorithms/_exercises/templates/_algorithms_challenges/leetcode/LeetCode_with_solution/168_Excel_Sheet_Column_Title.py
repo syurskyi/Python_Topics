@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ convertToTitle  n: int) -> str:
+    ___ convertToTitle  n: i..   s..:
         res = ""
         w.. n > 0:
             n -= 1

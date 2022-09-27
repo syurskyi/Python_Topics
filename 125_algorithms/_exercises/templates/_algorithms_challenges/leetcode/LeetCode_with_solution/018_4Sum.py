@@ -28,7 +28,7 @@ c_ Solution o..
                     current = sort_nums[j] + sort_nums[k]
                     __ current __ key:
                         result = (sort_nums[pair[0]], sort_nums[pair[1]], sort_nums[j], sort_nums[k])
-                        res[result] = True
+                        res[result] = T..
                         j += 1
                     ____ current < key:
                         j += 1

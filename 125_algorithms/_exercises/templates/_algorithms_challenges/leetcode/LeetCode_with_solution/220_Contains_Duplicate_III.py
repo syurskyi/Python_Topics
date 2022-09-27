@@ -18,11 +18,11 @@ c_ Solution o..
             bucketNum, offset = (v / t, 1) __ t ____ (v, 0)
             ___ idx __ xrange(bucketNum - offset, bucketNum + offset + 1):
                 __ idx __ buckets and abs(buckets[idx] - nums[i]) <= t:
-                    r_ True
+                    r_ T..
 
             buckets[bucketNum] = nums[i]
             __ l.. buckets) > k:
                 # Remove the bucket which is too far away. Beware of zero t.
                 del buckets[nums[i - k] / t __ t ____ nums[i - k]]
 
-        r_ False
+        r_ F..

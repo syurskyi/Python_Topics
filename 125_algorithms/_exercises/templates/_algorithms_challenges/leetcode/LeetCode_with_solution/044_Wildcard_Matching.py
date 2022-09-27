@@ -65,7 +65,7 @@ c_ Solution o..
                 s_star += 1
                 s_index = s_star
             ____
-                r_ False
+                r_ F..
         w.. p_index < p_len and p[p_index] __ '*':
             p_index += 1
         r_ p_index __ p_len

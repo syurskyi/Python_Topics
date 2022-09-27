@@ -37,22 +37,22 @@ c_ Solution o..
         pos = curr = 0
         ___ i __ r.. l.. abbr)):
             try:
-                num = int(abbr[i])
+                num = i..(abbr[i])
                 __ num __ 0 and curr __ 0:
-                    r_ False
+                    r_ F..
                 curr = curr * 10 + num
             except ValueError:
                 pos += curr
                 curr = 0
                 __ pos >= l.. word):
-                    r_ False
+                    r_ F..
                 __ word[pos] != abbr[i]:
-                    r_ False
+                    r_ F..
                 pos += 1
         pos += curr
         __ pos __ l.. word):
-            r_ True
-        r_ False
+            r_ T..
+        r_ F..
 
 
         

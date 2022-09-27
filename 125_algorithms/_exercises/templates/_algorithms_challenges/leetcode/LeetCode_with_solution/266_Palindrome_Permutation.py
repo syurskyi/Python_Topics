@@ -14,5 +14,5 @@ c_ Solution o..
             ____
                 odd += 1
         __ odd <= 1:
-            r_ True
-        r_ False
+            r_ T..
+        r_ F..

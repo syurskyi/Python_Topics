@@ -42,7 +42,7 @@ c_ Solution:
             ret.a..(stk[-1] __ stk ____ -1)
             stk.a..(n)
 
-        r.. ret[::-1]
+        r.. ret||-1]
 
     ___ nextGreaterElements_error  nums
         """

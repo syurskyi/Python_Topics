@@ -10,12 +10,12 @@ c_ Solution o..
         :type n: Maximum number of characters to read (int)
         :rtype: The number of characters read (int)
         """
-        pos, eof = 0, False
+        pos, eof = 0, F..
         w.. not eof and pos < n:
             buffer = [''] * 4
             sz = read4(buffer)
             __ sz < 4:
-                eof = True
+                eof = T..
             ___ i __ r.. sz):
                 buf[pos + i] = buffer[i]
             pos += min(n - pos, sz)

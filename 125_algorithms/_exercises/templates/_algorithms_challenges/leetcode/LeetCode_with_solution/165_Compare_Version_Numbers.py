@@ -1,7 +1,7 @@
 c_ Solution:
-    ___ compareVersion  version1: str, version2: str) -> int:
-        l1=list(map(int,version1.split('.')))
-        l2=list(map(int,version2.split('.')))
+    ___ compareVersion  version1: s.., version2: s..)   i..:
+        l1=list(map(i..,version1.split('.')))
+        l2=list(map(i..,version2.split('.')))
         __ l1__l2:
             r_(0)
         
@@ -17,10 +17,10 @@ c_ Solution:
                 l1.append("0")
             
         ___ i __ r.. l.. l1)):
-            __ int(l1[i])>int(l2[i]):
+            __ i..(l1[i])>i..(l2[i 
                 r_(1)
             
-            ____ int(l1[i])<int(l2[i]):
+            ____ i..(l1[i])<i..(l2[i 
                 r_(-1)
             
             ____

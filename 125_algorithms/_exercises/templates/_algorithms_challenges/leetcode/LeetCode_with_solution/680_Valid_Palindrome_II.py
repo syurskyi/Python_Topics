@@ -23,8 +23,8 @@ c_ Solution o..
             left += 1
             right -= 1
         __ left >= l.. s) or right < 0 or left >= right:
-            r_ True
+            r_ T..
         __ budget __ 0:
-            r_ False
+            r_ F..
         budget -= 1
         r_ validPalindromeHelper(s, left + 1, right, budget) or validPalindromeHelper(s, left, right - 1, budget)

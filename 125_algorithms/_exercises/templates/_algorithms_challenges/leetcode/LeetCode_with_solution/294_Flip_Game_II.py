@@ -14,7 +14,7 @@ c_ Solution o..
 
     ___ canWin  s):
         __ s is N.. or l.. s) < 2:
-            r_ False
+            r_ F..
         list_s = list(s)
         r_ canWin_helper(list_s)
 
@@ -27,8 +27,8 @@ c_ Solution o..
                 s[i] = '+'
                 s[i + 1] = '+'
                 __ not res:
-                    r_ True
-        r_ False
+                    r_ T..
+        r_ F..
 
     # def canWin(self, s):
     #     # backtracking with memo

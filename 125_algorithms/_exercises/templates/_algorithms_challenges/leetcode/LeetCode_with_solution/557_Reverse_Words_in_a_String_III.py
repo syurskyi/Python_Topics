@@ -4,4 +4,4 @@ c_ Solution o..
         :type s: str
         :rtype: str
         """
-        r_ ' '.join([word[::-1] ___ word __ s.split(' ')])
+        r_ ' '.join([word||-1] ___ word __ s.split(' ')])

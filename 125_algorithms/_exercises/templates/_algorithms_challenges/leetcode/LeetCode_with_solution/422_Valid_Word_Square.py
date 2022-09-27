@@ -5,17 +5,17 @@ c_ Solution o..
         :rtype: bool
         """
         __ words is N.. or l.. words) __ 0:
-            r_ True
+            r_ T..
         ls = l.. words)
         ___ i __ r.. ls):
             ___ j __ r.. 1, l.. words[i])):
                 __ j >= ls:
-                    r_ False
-                __ i >= l.. words[j]):
-                    r_ False
+                    r_ F..
+                __ i >= l.. words[j 
+                    r_ F..
                 __ words[i][j] != words[j][i]:
-                    r_ False
-        r_ True
+                    r_ F..
+        r_ T..
 
     # def validWordSquare(self, words):
     #     # https://discuss.leetcode.com/topic/63423/1-liner-python/2

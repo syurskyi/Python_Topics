@@ -20,7 +20,7 @@ Note: N is an integer in the range [0, 10^9].
 
 
 c_ Solution:
-    ___ monotoneIncreasingDigits  N: i..) __ i..
+    ___ monotoneIncreasingDigits  N: i.. __ i..
         """
         332
         322

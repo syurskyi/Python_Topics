@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findKthNumber  m: int, n: int, k: int) -> int:
+    ___ findKthNumber  m: i.., n: i.., k: i..   i..:
         # https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/solution/
         ___ enough(x):
             count = 0

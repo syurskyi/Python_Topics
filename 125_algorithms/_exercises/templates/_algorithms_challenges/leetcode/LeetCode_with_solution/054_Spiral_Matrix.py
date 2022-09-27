@@ -17,7 +17,7 @@ c_ Solution o..
         ____ c_start __ c_end:
             r_ [matrix[j][c_end] ___ j __ r.. r_start, r_end + 1)]
         curr = matrix[r_start][c_start:c_end + 1] + [matrix[j][c_end] ___ j __ r.. r_start + 1, r_end)] +\
-                matrix[r_end][c_start:c_end + 1][::-1] +\
+                matrix[r_end][c_start:c_end + 1]||-1] +\
                 [matrix[j][c_start] ___ j __ reversed(r.. r_start + 1, r_end))]
         res = curr + get_spiralOrder(matrix, r_start + 1, r_end - 1, c_start + 1, c_end - 1)
         r_ res

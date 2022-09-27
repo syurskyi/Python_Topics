@@ -15,8 +15,8 @@ c_ Solution o..
                 v_map[n] -= 1
                 v_map[2 * n] -= 1
             ____
-                r_ False
-        r_ True
+                r_ F..
+        r_ T..
 
 
 __ ____ __ ____

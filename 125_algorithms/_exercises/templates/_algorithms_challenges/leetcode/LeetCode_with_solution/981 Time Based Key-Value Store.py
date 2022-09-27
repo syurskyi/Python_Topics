@@ -63,11 +63,11 @@ c_ TimeMap:
         """
         m d.. l..
 
-    ___ s..  key: s.., value: s.., timestamp: i..) __ N..
+    ___ s..  key: s.., value: s.., timestamp: i.. __ N..
         n (timestamp, value)
         b__.i.. (m[key], n)
 
-    ___ get  key: s.., timestamp: i..) __ s..
+    ___ get  key: s.., timestamp: i.. __ s..
         __ key n.. __ m:
             r.. ""
 

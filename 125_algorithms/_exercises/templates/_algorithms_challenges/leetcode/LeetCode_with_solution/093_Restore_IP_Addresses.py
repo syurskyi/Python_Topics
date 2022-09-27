@@ -56,12 +56,12 @@ c_ Solution o..
 
     ___ isValid  add):
         __ l.. add) __ 1:
-            r_ True
+            r_ T..
         __ add[0] __ '0':
-            r_ False
-        __ int(add) <= 255:
-            r_ True
-        r_ False
+            r_ F..
+        __ i..(add) <= 255:
+            r_ T..
+        r_ F..
 
 
 __ ____ __ ____

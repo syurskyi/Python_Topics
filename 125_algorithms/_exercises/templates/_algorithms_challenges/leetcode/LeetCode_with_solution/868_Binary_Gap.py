@@ -7,7 +7,7 @@ c_ Solution:
     #     return max(A[i+1] - A[i] for i in xrange(len(A) - 1))
 
 
-    ___ binaryGap  n: int) -> int:
+    ___ binaryGap  n: i..   i..:
         # one pass and store max
         current = 1
         last1 = -1

@@ -39,7 +39,7 @@ c_ Solution:
         r.. T..
 
     ___ is_palindrome  s
-        r.. s __ s[::-1]
+        r.. s __ s||-1]
 
 
 __ _______ __ _______

@@ -44,19 +44,19 @@ c_ Solution o..
         try:
             ls_row, ls_col = l.. matrix), l.. matrix[0])
         except:
-            r_ False
+            r_ F..
         __ target < matrix[0][0] or target > matrix[-1][-1]:
-            r_ False
+            r_ F..
         begin, end = 0, ls_row * ls_col - 1
         w.. begin <= end:
             mid = (begin + end) / 2
             row, col = mid / ls_col, mid % ls_col
             __ matrix[row][col] __ target:
-                r_ True
+                r_ T..
             ____ matrix[row][col] > target:
                 end = mid - 1
             ____
                 begin = mid + 1
-        r_ False
+        r_ F..
 
 

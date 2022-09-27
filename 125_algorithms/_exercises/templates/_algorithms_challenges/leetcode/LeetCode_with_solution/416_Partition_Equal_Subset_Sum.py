@@ -24,7 +24,7 @@ c_ Solution o..
     ___ canPartition  nums):
         total_sum = sum(nums)
         __ total_sum & 1:
-            r_ False
+            r_ F..
         # if sum of some elements can be half of total sum then true
         target = total_sum >> 1
         dp = [0] * (target + 1)

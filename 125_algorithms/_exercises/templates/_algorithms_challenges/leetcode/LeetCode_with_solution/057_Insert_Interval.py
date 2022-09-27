@@ -33,11 +33,11 @@ c_ Solution o..
     ___ check_overlap  curr_int, new_int):
         __ curr_int.start <= new_int.start:
            __ curr_int.end > new_int.start:
-               r_ True
+               r_ T..
         ____
             __ curr_int.start <= new_int.end:
-                r_ True
-        r_ False
+                r_ T..
+        r_ F..
 
     ___ merge_intervals  int1, int2):
         temp_int = Interval()

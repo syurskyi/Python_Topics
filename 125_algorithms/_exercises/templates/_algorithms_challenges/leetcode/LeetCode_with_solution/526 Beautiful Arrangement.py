@@ -36,7 +36,7 @@ N is a positive integer and will not exceed 15.
 
 
 c_ Solution:
-    ___ countArrangement  N: i..) __ i..
+    ___ countArrangement  N: i.. __ i..
         """
         dfs
         """

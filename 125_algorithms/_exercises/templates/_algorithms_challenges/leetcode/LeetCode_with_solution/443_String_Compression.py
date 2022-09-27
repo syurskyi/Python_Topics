@@ -11,7 +11,7 @@ c_ Solution o..
                 chars[write] = chars[anchor]
                 write += 1
                 __ read > anchor:
-                    ___ digit __ str(read - anchor + 1):
+                    ___ digit __ s..(read - anchor + 1):
                         chars[write] = digit
                         write += 1
                 anchor = read + 1

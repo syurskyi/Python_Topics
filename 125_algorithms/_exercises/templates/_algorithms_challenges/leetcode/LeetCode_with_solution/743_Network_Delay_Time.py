@@ -24,10 +24,10 @@ c_ Solution o..
             graph[u].append((v, w))
 
         dist = {node: float('inf') ___ node __ xrange(1, N + 1)}
-        seen = [False] * (N + 1)
+        seen = [F..] * (N + 1)
         dist[K] = 0
 
-        w.. True:
+        w.. T..:
             cand_node = -1
             cand_dist = float('inf')
             ___ i __ xrange(1, N + 1):
@@ -36,7 +36,7 @@ c_ Solution o..
                     cand_node = i
 
             __ cand_node < 0: break
-            seen[cand_node] = True
+            seen[cand_node] = T..
             ___ nei, d __ graph[cand_node]:
                 dist[nei] = min(dist[nei], dist[cand_node] + d)
 

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ sumZero  n: int) -> List[int]:
+    ___ sumZero  n: i..   List[i..]:
         prefix_sum = 0
         res =    # list
         # 1, n-1

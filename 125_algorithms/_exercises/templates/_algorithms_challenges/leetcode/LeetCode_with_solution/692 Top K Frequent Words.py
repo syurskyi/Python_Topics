@@ -40,7 +40,7 @@ c_ Word:
 
 
 c_ Solution:
-    ___ topKFrequent  words: L..[s..], k: i..) __ L.. s..
+    ___ topKFrequent  words: L..[s..], k: i.. __ L.. s..
         """
         quick select log n
         heap log k
@@ -60,7 +60,7 @@ c_ Solution:
             w h__.heappop(h).content
             ret.a..(w)
 
-        r.. ret[::-1]
+        r.. ret||-1]
 
 
 __ _______ __ _______

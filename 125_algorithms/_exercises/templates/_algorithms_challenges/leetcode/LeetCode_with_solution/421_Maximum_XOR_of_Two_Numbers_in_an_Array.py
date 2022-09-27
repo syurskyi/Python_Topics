@@ -6,7 +6,7 @@ c_ Solution o..
         """
         # https://discuss.leetcode.com/topic/63299/python-6-lines-bit-by-bit
         answer = 0
-        ___ i __ r.. 32)[::-1]:
+        ___ i __ r.. 32)||-1]:
             answer <<= 1
             # use a set to remove duplicate
             prefixes = {num >> i ___ num __ nums}

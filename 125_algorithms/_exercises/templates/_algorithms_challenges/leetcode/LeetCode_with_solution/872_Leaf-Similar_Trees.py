@@ -13,14 +13,14 @@ c_ Solution o..
         :rtype: bool
         """
         __ not root1 and not root2:
-            r_ True
+            r_ T..
         leaf1 =    # list
         leaf2 =    # list
         dfs(root1, leaf1)
         dfs(root2, leaf2)
         __ leaf1 __ leaf2:
-            r_ True
-        r_ False
+            r_ T..
+        r_ F..
 
     ___ dfs  node, leavels):
         __ not node:

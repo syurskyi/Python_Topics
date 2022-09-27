@@ -38,7 +38,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ allCellsDistOrder  R: i.., C: i.., r0: i.., c0: i..) __ L..[L..[i..]]:
+    ___ allCellsDistOrder  R: i.., C: i.., r0: i.., c0: i.. __ L..[L..[i..]]:
         """
         bucket sort
         """

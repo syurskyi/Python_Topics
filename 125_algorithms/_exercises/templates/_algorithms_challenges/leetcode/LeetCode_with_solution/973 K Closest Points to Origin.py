@@ -35,5 +35,5 @@ _______ h__
 
 
 c_ Solution:
-    ___ kClosest  points: L..[L..[i..]], K: i..) __ L..[L..[i..]]:
+    ___ kClosest  points: L..[L..[i..]], K: i.. __ L..[L..[i..]]:
         r.. h__.nsmallest(K, points, k.._l.... x: x[0]**2 + x[1]**2)

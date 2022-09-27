@@ -34,7 +34,7 @@ c_ Solution o..
 
     ___ isVaild_helper  root, minVal, maxVal):
         __ root is N..:
-            r_ True
+            r_ T..
         __ root.val >= maxVal or root.val <= minVal:
-            r_ False
+            r_ F..
         r_ isVaild_helper(root.left, minVal, root.val) and isVaild_helper(root.right, root.val, maxVal)

@@ -25,7 +25,7 @@ c_ Solution o..
                 __ last != ' ':
                     array_s.append(s[i])
             last = s[i]
-        array_s = array_s[::-1]
+        array_s = array_s||-1]
         ls, pos = l.. array_s), 0
         ___ i __ r.. ls + 1):
             __ i __ ls or array_s[i] __ ' ':

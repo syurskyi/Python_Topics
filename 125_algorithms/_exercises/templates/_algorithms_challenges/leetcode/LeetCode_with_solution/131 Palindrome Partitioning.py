@@ -36,7 +36,7 @@ c_ Solution:
     ___ is_palindrome  s
         # O(n)
         # return s == reversed(s)  # error, need to use ''.join(reversed(s))
-        r.. s __ s[::-1]
+        r.. s __ s||-1]
 
 __ _____ __ ____
     ... Solution().partition("aab")__[['a', 'a', 'b' ,  'aa', 'b']]

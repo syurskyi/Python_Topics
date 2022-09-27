@@ -1,11 +1,11 @@
 c_ Solution:
-    ___ reverseStr  s: str, k: int) -> str:
+    ___ reverseStr  s: s.., k: i..   s..:
         N = l.. s)
         ans = ""
         position = 0
         w.. position < N:
             nx = s[position : position + k]
-            ans = ans + nx[::-1] + s[position + k : position + 2 * k]
+            ans = ans + nx||-1] + s[position + k : position + 2 * k]
             position += 2 * k
         r_ ans
 

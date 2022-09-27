@@ -101,7 +101,7 @@ c_ Solution:
 
         r.. [
             asteroids[i]
-            ___ i __ stk[::-1]
+            ___ i __ stk||-1]
         ]
 
 

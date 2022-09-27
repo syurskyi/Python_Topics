@@ -14,5 +14,5 @@ c_ Solution o..
             count *= 10
             start *= 10
         start += (n - 1) / curr_len
-        s = str(start)
-        r_ int(s[(n - 1) % curr_len]
+        s = s..(start)
+        r_ i..(s[(n - 1) % curr_len]

@@ -46,6 +46,6 @@ c_ Solution o..
                 fast = fast.next.next
                 slow = slow.next
 
-            r_ True
+            r_ T..
         except:
-            r_ False
+            r_ F..

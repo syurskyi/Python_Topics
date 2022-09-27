@@ -13,8 +13,8 @@ c_ Solution o..
         :type t: TreeNode
         :rtype: bool
         """
-        s_res = preorder(s, True)
-        t_res = preorder(t, True)
+        s_res = preorder(s, T..)
+        t_res = preorder(t, T..)
         r_ t_res __ s_res
     
     ___ preorder  root, isLeft):
@@ -23,7 +23,7 @@ c_ Solution o..
                 r_ "lnull"
             ____
                 r_ "rnull"
-        r_ "#" + str(root.val) + " " + preorder(root.left, True) + " " + preorder(root.right, False)
+        r_ "#" + s..(root.val) + " " + preorder(root.left, T..) + " " + preorder(root.right, F..)
 
     # def isSubtree(self, s, t):
     #     return self.traverse(s, t)

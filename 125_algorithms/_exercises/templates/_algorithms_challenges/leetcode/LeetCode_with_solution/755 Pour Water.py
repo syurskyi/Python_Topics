@@ -123,7 +123,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ pourWater  heights: L..[i..], V: i.., K: i..) __ L.. i..
+    ___ pourWater  heights: L..[i..], V: i.., K: i.. __ L.. i..
         """
         Simulation?
         O(V * L)

@@ -36,5 +36,5 @@ c_ Solution o..
     ___ wiggleSort  nums):
         ___ i __ r.. l.. nums) - 1):
             __ (i % 2 __ 0 and nums[i] > nums[i + 1]) or\
-               (i % 2 __ 1 and nums[i] < nums[i + 1]):
+               (i % 2 __ 1 and nums[i] < nums[i + 1 
                 nums[i], nums[i + 1] = nums[i + 1], nums[i]

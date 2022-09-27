@@ -98,7 +98,7 @@ c_ DualHeap:
 
 
 c_ Solution:
-    ___ medianSlidingWindow  nums: L..[i..], k: i..) __ L..[f__]:
+    ___ medianSlidingWindow  nums: L..[i..], k: i.. __ L..[f__]:
         """
         1. BST, proxied by bisect
         dual heap + lazy removal + balance the valid element

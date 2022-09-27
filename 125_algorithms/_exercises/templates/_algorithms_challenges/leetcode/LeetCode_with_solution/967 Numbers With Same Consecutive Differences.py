@@ -33,7 +33,7 @@ c_ Solution:
     ___ -
         cache    # dict
 
-    ___ numsSameConsecDiff  N: i.., K: i..) __ L.. i..
+    ___ numsSameConsecDiff  N: i.., K: i.. __ L.. i..
         """
         dfs + memoization
         """
@@ -48,7 +48,7 @@ c_ Solution:
             m.. l.... x: i..("".j.. m..(s.., x))), ret)
         )
 
-    ___ dfs  start: i.., N: i.., K: i..) __ L..[L..[i..]]:
+    ___ dfs  start: i.., N: i.., K: i.. __ L..[L..[i..]]:
         __ (start, N, K) n.. __ cache:
             ret    # list
             __ N __ 1:

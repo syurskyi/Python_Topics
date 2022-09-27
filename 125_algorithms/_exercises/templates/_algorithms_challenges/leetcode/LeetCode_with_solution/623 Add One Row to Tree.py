@@ -66,7 +66,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ addOneRow  root: TreeNode, v: i.., d: i..) __ TreeNode:
+    ___ addOneRow  root: TreeNode, v: i.., d: i.. __ TreeNode:
         r.. add(root, v, d, 1, "left")
 
     ___ add  node, v, d, cur_d, child) __ TreeNode:
@@ -83,7 +83,7 @@ c_ Solution:
 
 
 c_ Solution2:
-    ___ addOneRow  root: TreeNode, v: i.., d: i..) __ TreeNode:
+    ___ addOneRow  root: TreeNode, v: i.., d: i.. __ TreeNode:
         __ d __ 1:
             node TreeNode(v)
             node.left root

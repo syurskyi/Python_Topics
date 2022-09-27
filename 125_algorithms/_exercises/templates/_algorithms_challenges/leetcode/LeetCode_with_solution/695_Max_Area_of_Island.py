@@ -24,7 +24,7 @@ c_ Solution o..
             area += 1
             ___ nr, nc __ ((r - 1, c), (r + 1, c), (r, c - 1), (r, c + 1)):
                 __ (0 <= nr < l.. grid) and
-                        0 <= nc < l.. grid[0]) and grid[nr][nc]):
+                        0 <= nc < l.. grid[0]) and grid[nr][nc 
                     stack.append((nr, nc))
                     grid[nr][nc] = 0
         r_ area

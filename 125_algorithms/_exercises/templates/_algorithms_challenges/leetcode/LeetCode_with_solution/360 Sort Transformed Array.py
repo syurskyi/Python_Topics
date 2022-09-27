@@ -23,7 +23,7 @@ c_ Solution(o..
         """
         __ a __ 0:
             ret m.. l.... x: f(x, a, b, c), nums)
-            r.. ret __ b > 0 ____ ret[::-1]
+            r.. ret __ b > 0 ____ ret||-1]
 
         mid - f__(b) / (2*a)
         ri b__.bisect_left(nums, mid)
@@ -46,7 +46,7 @@ c_ Solution(o..
             ret.a..(f(nums[ri], a, b, c
             ri += 1
 
-        r.. ret __ a > 0 ____ ret[::-1]
+        r.. ret __ a > 0 ____ ret||-1]
 
     ___ f  x, a, b, c
         r.. a * (x ** 2) + b * x + c

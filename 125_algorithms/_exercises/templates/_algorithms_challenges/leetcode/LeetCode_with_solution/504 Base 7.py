@@ -28,7 +28,7 @@ c_ Solution:
             ret.a..(n % 7)
             n //= 7
 
-        ret "".j.. m..(s.., ret[::-1]
+        ret "".j.. m..(s.., ret||-1]
         __ num < 0:
             ret "-" + ret
 

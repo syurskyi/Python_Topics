@@ -40,7 +40,7 @@ dirs ((-1, 0), (1, 0), (0, -1), (0, 1
 
 
 c_ Solution:
-    ___ floodFill  image: L..[L..[i..]], sr: i.., sc: i.., newColor: i..) __ L..[L..[i..]]:
+    ___ floodFill  image: L..[L..[i..]], sr: i.., sc: i.., newColor: i.. __ L..[L..[i..]]:
         """
         dfs fill
 

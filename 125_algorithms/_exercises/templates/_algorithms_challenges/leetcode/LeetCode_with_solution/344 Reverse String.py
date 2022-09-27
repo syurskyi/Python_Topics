@@ -10,4 +10,4 @@ c_ Solution(o..
         :type s: str
         :rtype: str
         """
-        r.. s[::-1]
+        r.. s||-1]

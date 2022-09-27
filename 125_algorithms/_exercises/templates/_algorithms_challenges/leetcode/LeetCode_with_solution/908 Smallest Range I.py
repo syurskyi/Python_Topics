@@ -34,7 +34,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ smallestRangeI  A: L..[i..], K: i..) __ i..
+    ___ smallestRangeI  A: L..[i..], K: i.. __ i..
         """
         only need the max and min
         """

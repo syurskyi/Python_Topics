@@ -44,7 +44,7 @@ c_ Solution:
         pi    # list
         depths    # list
 
-    ___ isCousins  root: TreeNode, x: i.., y: i..) __ b..
+    ___ isCousins  root: TreeNode, x: i.., y: i.. __ b..
         """
         need to know parent and depth
         """

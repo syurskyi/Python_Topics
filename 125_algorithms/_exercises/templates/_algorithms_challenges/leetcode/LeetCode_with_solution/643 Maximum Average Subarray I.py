@@ -20,7 +20,7 @@ ____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findMaxAverage  nums: L..[i..], k: i..) __ f__:
+    ___ findMaxAverage  nums: L..[i..], k: i.. __ f__:
         """
         two pointers
         """

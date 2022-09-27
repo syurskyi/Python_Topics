@@ -19,7 +19,7 @@ c_ Solution o..
     #     return False
     ___ isUgly  num):
         __ num <= 0:
-            r_ False
+            r_ F..
         divisors = [2, 3, 5]
         ___ d __ divisors:
             w.. num % d __ 0:

@@ -253,7 +253,7 @@ c_ Solution:  # use set to mimic queue, fastest
         # reach the end
         __ l..(prevMap[word])__0:
             p...a..(word)
-            result.a..(p..[::-1])
+            result.a..(p..||-1])
             p...p.. )
             r..
 

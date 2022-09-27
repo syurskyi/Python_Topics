@@ -30,7 +30,7 @@ c_ Solution:
     ___ -
         cache    # dict
 
-    ___ allPossibleFBT  N: i..) __ L..[TreeNode]:
+    ___ allPossibleFBT  N: i.. __ L..[TreeNode]:
         """
         recursive + memoization
         """

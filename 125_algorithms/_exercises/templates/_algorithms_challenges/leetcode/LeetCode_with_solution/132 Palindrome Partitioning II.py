@@ -178,7 +178,7 @@ c_ Solution(o..
         r.. dp[0][length]
 
     ___ is_palindrome  s
-        r.. s __ s[::-1]
+        r.. s __ s||-1]
 
     ___ minCut_TLE2  s
         """

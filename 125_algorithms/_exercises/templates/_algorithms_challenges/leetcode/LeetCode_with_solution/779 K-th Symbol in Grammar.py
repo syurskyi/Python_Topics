@@ -33,7 +33,7 @@ K will be an integer in the range [1, 2^(N-1)].
 
 
 c_ Solution:
-    ___ kthGrammar  N: i.., K: i..) __ i..
+    ___ kthGrammar  N: i.., K: i.. __ i..
         """
         pattern
 
@@ -54,7 +54,7 @@ c_ Solution:
         ____
             r.. dfs(N - 1, K - half_l, n.. not_flip)
 
-    ___ kthGrammar_TLE  N: i.., K: i..) __ i..
+    ___ kthGrammar_TLE  N: i.., K: i.. __ i..
         """
         Find pattern
         Precedence: Logic < Bitwise < Arithmetic operator < Unary

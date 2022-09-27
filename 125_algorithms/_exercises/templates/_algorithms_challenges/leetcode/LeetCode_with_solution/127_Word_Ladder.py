@@ -20,14 +20,14 @@ c_ Solution o..
             r_ 0
         __ l.. forward) > l.. backward):
             r_ bfs(backward, forward, wordlist, level)
-        is_connected = False
+        is_connected = F..
         next_level = set()
         ___ word __ forward:
             ___ c __ string.ascii_lowercase:
                 ___ index __ r.. l.. word)):
                     neigh = word[:index] + c + word[index + 1:]
                     __ neigh __ backward:
-                        is_connected = True
+                        is_connected = T..
                         r_ level
                     __ not is_connected and neigh __ wordlist:
                         next_level.add(neigh)

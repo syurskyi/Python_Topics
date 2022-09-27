@@ -40,7 +40,7 @@ c_ Solution:
             __ i % 2 __ 1:
                 ret.e.. F[i])
             ____
-                ret.e.. F[i][::-1])
+                ret.e.. F[i]||-1])
 
         r.. ret
 

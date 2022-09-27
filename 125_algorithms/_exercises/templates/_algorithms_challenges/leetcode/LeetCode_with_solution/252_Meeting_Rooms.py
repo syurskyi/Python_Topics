@@ -33,5 +33,5 @@ c_ Solution o..
         ls = l.. intervals)
         ___ i __ r.. ls - 1):
             __ intervals[i].end > intervals[i + 1].start:
-                r_ False
-        r_ True
+                r_ F..
+        r_ T..

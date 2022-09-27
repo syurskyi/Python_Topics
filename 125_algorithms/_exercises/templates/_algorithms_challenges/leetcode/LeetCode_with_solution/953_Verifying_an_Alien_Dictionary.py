@@ -20,9 +20,9 @@ c_ Solution o..
         pos = 0
         w.. pos + 1 < l.. words):
             __ cmp_alien(words[pos], words[pos + 1]) > 0:
-                r_ False
+                r_ F..
             pos += 1
-        r_ True
+        r_ T..
 
 
 __ ____ __ ____

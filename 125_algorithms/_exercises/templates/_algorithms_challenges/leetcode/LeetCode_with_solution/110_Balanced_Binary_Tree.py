@@ -13,10 +13,10 @@ c_ Solution o..
         """
         # Bottom-up recursion with sentinel -1
         __ root is N..:
-            r_ True
+            r_ T..
         __ getDepth(root) < 0:
-            r_ False
-        r_ True
+            r_ F..
+        r_ T..
     
     ___ getDepth  node):
         __ node is N..:

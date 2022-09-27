@@ -23,7 +23,7 @@ c_ Solution o..
         #         roman_str += roman_dim[dim][1]
         # return roman_str
 
-    ___ intToRoman  num: int) -> str:
+    ___ intToRoman  num: i..   s..:
         values = [1000, 900, 500, 400,
                   100, 90, 50, 40,
                   10, 9, 5, 4, 1]

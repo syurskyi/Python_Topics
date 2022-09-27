@@ -49,10 +49,10 @@ c_ Solution o..
         # plus a[pos], b[pos] and curr % 2
         w.. (lsa + pos) >= 0 or (lsb + pos) >= 0:
             __ (lsa + pos) >= 0:
-                curr += int(a[pos])
+                curr += i..(a[pos])
             __ (lsb + pos) >= 0:
-                curr += int(b[pos])
-            res = str(curr % 2) + res
+                curr += i..(b[pos])
+            res = s..(curr % 2) + res
             curr //= 2
             pos -= 1
         __ curr __ 1:

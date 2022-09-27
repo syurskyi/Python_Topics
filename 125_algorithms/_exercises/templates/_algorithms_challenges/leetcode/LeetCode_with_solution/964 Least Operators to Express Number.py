@@ -44,7 +44,7 @@ ____ f.. _______ l..
 
 
 c_ Solution:
-    ___ leastOpsExpressTarget  x: i.., target: i..) __ i..
+    ___ leastOpsExpressTarget  x: i.., target: i.. __ i..
         """
         x/x is 1
         x * x is power 2

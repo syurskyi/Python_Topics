@@ -12,16 +12,16 @@ c_ Solution o..
         :rtype: bool
         """
         __ root is N..:
-            r_ True
+            r_ T..
         r_ mirrorVisit(root.left, root.right)
 
     ___ mirrorVisit  left, right):
         __ left is N.. and right is N..:
-            r_ True
+            r_ T..
         try:
             __ left.val __ right.val:
                 __ mirrorVisit(left.left, right.right) and mirrorVisit(left.right, right.left):
-                    r_ True
-            r_ False
+                    r_ T..
+            r_ F..
         except:
-            r_ False
+            r_ F..

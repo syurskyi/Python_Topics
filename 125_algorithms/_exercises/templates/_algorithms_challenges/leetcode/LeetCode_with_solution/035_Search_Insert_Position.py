@@ -23,9 +23,9 @@ c_ Solution:
     #     return pos
 
     ___ searchInsert  nums, target):
-        l, r = int(0), l.. nums) - 1
+        l, r = i..(0), l.. nums) - 1
         w.. l < r:
-            mid = int((l + r) / 2)
+            mid = i..((l + r) / 2)
             __ nums[mid] < target:
                 l = mid + 1
             ____

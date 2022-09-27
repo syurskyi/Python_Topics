@@ -22,7 +22,7 @@ c_ Solution o..
     ___ isPalindrome  s, begin, end):
         w.. begin < end:
             __ s[begin] != s[end]:
-                r_ False
+                r_ F..
             begin += 1
             end -= 1
-        r_ True
+        r_ T..

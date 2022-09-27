@@ -45,9 +45,9 @@ c_ Solution o..
                 digit1 = o.. num1[pos1]) - o.. '0')
             __ pos2 >= 0:
                 digit2 = o.. num2[pos2]) - o.. '0')
-            res.append(str((digit1 + digit2 + carry) % 10))
+            res.append(s..((digit1 + digit2 + carry) % 10))
             carry = (digit1 + digit2 + carry) / 10
             pos1 -= 1
             pos2 -= 1
         # reverse res
-        r_ ''.join(res[::-1])
+        r_ ''.join(res||-1])

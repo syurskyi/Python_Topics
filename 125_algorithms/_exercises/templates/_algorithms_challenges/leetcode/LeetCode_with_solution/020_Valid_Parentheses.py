@@ -9,36 +9,36 @@ c_ Solution:
         :rtype: bool
         """
         __ s is N..:
-            r_ True
+            r_ T..
         stack =    # list
         ___ t __ s:
             __ t __ ')':
                 try:
                     current = stack.pop()
                     __ current != '(':
-                        r_ False
+                        r_ F..
                 except:
-                    r_ False
+                    r_ F..
             ____ t __ '}':
                 try:
                     current = stack.pop()
                     __ current != '{':
-                        r_ False
+                        r_ F..
                 except:
-                    r_ False
+                    r_ F..
             ____ t __ ']':
                 try:
                     current = stack.pop()
                     __ current != '[':
-                        r_ False
+                        r_ F..
                 except:
-                    r_ False
+                    r_ F..
             ____
                 stack.append(t)
         __ l.. stack) __ 0:
-            r_ True
+            r_ T..
         ____
-            r_ False
+            r_ F..
 
 
     # def isValid(self, s):

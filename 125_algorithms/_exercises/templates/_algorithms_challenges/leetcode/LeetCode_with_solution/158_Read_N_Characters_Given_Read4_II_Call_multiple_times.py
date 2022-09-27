@@ -16,7 +16,7 @@ c_ Solution o..
         :type n: Maximum number of characters to read (int)
         :rtype: The number of characters read (int)
         """
-        pos, eof = 0, False
+        pos, eof = 0, F..
         w.. not eof and pos < n:
             __ bufsize __ 0:
                 bufsize = read4(buff)

@@ -42,4 +42,4 @@ c_ Solution o..
         ___ ch __ s:
             index = o.. ch) - o.. 'a')
             table[index] += 1
-        r_ str(table)
+        r_ s..(table)

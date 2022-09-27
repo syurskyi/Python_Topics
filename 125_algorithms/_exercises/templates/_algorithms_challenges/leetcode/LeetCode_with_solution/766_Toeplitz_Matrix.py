@@ -8,5 +8,5 @@ c_ Solution o..
         ___ r __ r.. l.. matrix) - 1):
             ___ c __ r.. l.. matrix[0]) - 1):
                 __ matrix[r][c] != matrix[r + 1][c + 1]:
-                    r_ False
-        r_ True
+                    r_ F..
+        r_ T..

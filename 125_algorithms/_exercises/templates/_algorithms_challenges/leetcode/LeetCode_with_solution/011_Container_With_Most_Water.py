@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ maxArea  height: List[int]) -> int:
+    ___ maxArea  height: List[i..])   i..:
         # Two points
         left, right = 0, l.. height) - 1
         result = 0

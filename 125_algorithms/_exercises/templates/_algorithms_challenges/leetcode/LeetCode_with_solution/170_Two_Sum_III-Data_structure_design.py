@@ -15,10 +15,10 @@ c_ TwoSum o..
         internal.append(number)
         __ number __ dic:
             # more than once
-            dic[number] = True
+            dic[number] = T..
             r_
         # once
-        dic[number] = False
+        dic[number] = F..
 
     ___ find  value):
         """
@@ -30,8 +30,8 @@ c_ TwoSum o..
             __ value - v __ dic:
                 __ v << 1 __ value and not dic[v]:
                     continue
-                r_ True
-        r_ False
+                r_ T..
+        r_ F..
 
 
 # Your TwoSum object will be instantiated and called as such:

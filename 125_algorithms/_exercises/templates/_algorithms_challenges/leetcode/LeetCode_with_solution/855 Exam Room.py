@@ -77,7 +77,7 @@ c_ ExamRoom:
         b__.i.. (idxes, ret_idx)
         r.. ret_idx
 
-    ___ leave  p: i..) __ N..
+    ___ leave  p: i.. __ N..
         idxes.remove(p)
 
 

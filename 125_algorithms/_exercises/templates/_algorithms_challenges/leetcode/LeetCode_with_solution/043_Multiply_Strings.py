@@ -59,7 +59,7 @@ c_ Solution o..
         ___ i __ reversed(r.. ls1)):
             ___ j __ reversed(r.. ls2)):
                 # store the direct results of multiply two ints
-                arr[i + j + 1] += int(num1[i]) * int(num2[j])
+                arr[i + j + 1] += i..(num1[i]) * i..(num2[j])
         ___ i __ reversed(r.. 1, ls)):
             # digital plus
             arr[i - 1] += arr[i] / 10
@@ -69,7 +69,7 @@ c_ Solution o..
         __ arr[pos] __ 0:
             pos += 1
         w.. pos < ls:
-            res = res + str(arr[pos])
+            res = res + s..(arr[pos])
             pos += 1
         r_ res
 

@@ -31,5 +31,5 @@ c_ Solution o..
             __ index % 2 __ 0:
                 res.append(temp)
             ____
-                res.append(temp[::-1])
+                res.append(temp||-1])
         r_ res

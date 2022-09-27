@@ -50,7 +50,7 @@ c_ Solution:
         c.. root)
         r.. ret
 
-    ___ down  node: TreeNode, d: i..) __ N..
+    ___ down  node: TreeNode, d: i.. __ N..
         __ n.. node:
             r..
 

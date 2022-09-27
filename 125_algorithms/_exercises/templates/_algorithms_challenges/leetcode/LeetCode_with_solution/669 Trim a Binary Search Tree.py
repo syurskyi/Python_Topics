@@ -49,7 +49,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ trimBST  root: TreeNode, L: i.., R: i..) __ TreeNode:
+    ___ trimBST  root: TreeNode, L: i.., R: i.. __ TreeNode:
         """
         post-order traverse
         """
