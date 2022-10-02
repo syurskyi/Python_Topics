@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# print li.. m.. l_____ x ?.ca..  |*cat* dog cow
+print(list(map(lambda x: x.capitalize(), ['cat', 'dog', 'cow'])))
 # # ['Cat', 'Dog', 'Cow']
 #
 # # Вам необходимо вызвать list() для преобразования итератора, возвращаемого map(),
@@ -8,5 +8,5 @@
 # #
 # # Использование генератора списка исключает необходимость определения и вызова лямбда-функции:
 #
-# print |x.ca..  ___ ? __ |*cat* dog cow
+print([x.capitalize() for x in ['cat', 'dog', 'cow']])
 # # ['Cat', 'Dog', 'Cow']
