@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# ______ fun00
-# pairs _ ||1, 'a'| 2, 'b' |3, 'c'   # list and tuple
-# print f___.r.. l_____ acc pair ? + ? 0  p... 0
+import functools
+pairs = [(1, 'a'), (2, 'b'), (3, 'c')]   # list and tuple
+print(functools.reduce(lambda acc, pair: acc + pair[0],  pairs, 0))
 # # 6
 #
 # # Более идиоматический подход, использующий выражение генератора в качестве аргумента для sum() в следующем примере:
