@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-lambda x: x + 1
-print((lambda x: x + 1)(2))
-
-add_one = lambda x: x + 1
-add_one(2)
-# 3
+# l_____ x x + 1
+# print l_____ x x + 1||2
+#
+# add_one _ l_____ x x + 1
+# add_one 2
+# # 3
 #
 # # Вышеупомянутая лямбда-функция эквивалентна написанию этого:
 #
@@ -13,17 +13,15 @@ add_one(2)
 #     r_ ? + 1
 #
 #
-full_name = lambda first, last: f"Full name: {first.title()}, {last.title()}"
-print(full_name('guido', 'van rossum'))
-
-# 'Full name: Guido Van Rossum'
+# full_name _ l_____ first last _*Full name: |?.ti.. |?.t..*
+# print ? guido van rossum
+# # 'Full name: Guido Van Rossum'
 #
 # # ругой шаблон, используемый в других языках, таких как JavaScript, – это немедленное выполнение лямбда-функции Python.
 # # Это называется выражением немедленного вызова функции (IIFE –  Immediately Invoked Function Expression,
 # # произносится «iffy»). Вот пример:
 #
-five = (lambda x, y: x + y)(2, 3)
-print(five)
+# print l_____ x y x + y|2 3
 # # 5
 #
 # # Лямбда-функции часто используются с функциями более высокого порядка, которые принимают одну или несколько функций
@@ -32,8 +30,8 @@ print(five)
 # # Лямбда-функция может быть функцией более высокого порядка, принимая функцию (нормальную или лямбда-функцию)
 # # в качестве аргумента, как в следующем надуманном примере:
 #
-high_ord_func = lambda x, func: x + func(x)
-print(high_ord_func(2, lambda x: x * x))
+# high_ord_func _ l_____ x func x + ? x
+# print ? 2 l_____ x x * x
 # # 6
 # print ? 2 l_____ x x + 3
 # # 7

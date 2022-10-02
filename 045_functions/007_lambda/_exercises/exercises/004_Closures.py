@@ -1,25 +1,25 @@
 # -*- coding: utf-8 -*-
 
-def outer_func(x):
-     y = 4
-     def inner_func(z):
-         print(f"x = {x}, y = {y}, z = {z}")
-         return x + y + z
-     return inner_func
-
-for i in range(3):
-    closure = outer_func(i)
-    print(f'closure({i+5}) = {closure(i+5)}')
-
-# Точно так же лямбда также может быть замыканием. Вот тот же пример с лямбда-функцией Python:
-print('#' * 52 + '  ')
-print('#' * 52 + '  ')
-print('#' * 52 + '  ')
-
-def outer_func(x):
-    y = 4
-    return lambda z: x + y + z
-for i in range(3):
-    closure = outer_func(i)
-    print(f'closure({i+5}) = {closure(i+5)}')
-
+# ___ outer_func x
+#      y _ 4
+#      ___ inner_func z
+#          print _*x _ ?| y _ ?| z _ ?|*|
+#          r_ ? + ? + ?
+#      r_ ?
+#
+# ___ i __ ra.. 3
+#     closure _ ? ?
+#     print |_*c___||?+5|| _ |c__|?+5||*|
+#
+# # Точно так же лямбда также может быть замыканием. Вот тот же пример с лямбда-функцией Python:
+# print('#' * 52 + '  ')
+# print('#' * 52 + '  ')
+# print('#' * 52 + '  ')
+#
+# ___ outer_func x
+#     y _ 4
+#     r_ l_____ z ? + ? + ?
+# ___ i __ ra__ 3
+#     closure _ ? ?
+#     print|_*c__||?+5|| _ |c__|?+5||*|
+#

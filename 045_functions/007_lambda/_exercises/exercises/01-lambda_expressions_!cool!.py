@@ -1,11 +1,11 @@
 ﻿# -*- coding: utf-8 -*-
 
-# """Пример использования лямбда-выражений"""
-#
-# operations _
-#     '+' l____ x y x + y
-#     '-' l____ x y x - y
-#
-#
-# print ? '+' 2, 3
-# print ? '-' 2, 3
+"""Пример использования лямбда-выражений"""
+
+operations = {
+    '+': lambda x, y: x + y,
+    '-': lambda x, y: x - y
+}
+
+print(operations['+'](2, 3))
+print(operations['-'](2, 3))
