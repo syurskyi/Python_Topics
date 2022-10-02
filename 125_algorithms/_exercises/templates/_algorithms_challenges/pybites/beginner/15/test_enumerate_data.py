@@ -10,8 +10,8 @@
 #                   '6. Rodolfo    Mexico']
 #
 #
-# @pytest.mark.parametrize("line", expected_lines)
-# ___ test_enumerate_names_countries(capfd, line):
-#     enumerate_names_countries()
-#     output = capfd.readouterr()[0]
-#     ... line __ output, f'{line} not in output'
+# ??.m__.p__("line" e..
+# ___ test_enumerate_names_countries capfd, line
+#     ?
+#     output = ?.r.. 0
+#     ... l.. __ ? _8=*|?| not in output*
