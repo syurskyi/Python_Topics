@@ -1,4 +1,7 @@
+from collections import deque
 def rotate(string, n):
-    string  d.. ?
-    ?.r.. -?
-    r.. print("".j.. ?
+    string = deque(string)
+    string.rotate(-n)
+    return print("".join(string))
+
+rotate('hello', 2)
