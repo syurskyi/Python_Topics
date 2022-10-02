@@ -17,3 +17,6 @@ def enumerate_names_countries():
         else:
             output += str(count) + ".".ljust(2) + name.ljust(11) + countries[count-1]
     print(output)
+
+
+print(enumerate_names_countries())
