@@ -27,7 +27,7 @@
 #     #for belt in belts:
 #     #    total_points += belts[belt].score*belts[belt].ninjas
 #     #return total_points
-#     r.. s.. ? b__.score*belts[belt].ninjas ___ belt __ belts)
+#     r.. s.. ? |belt|.score*?|b..|.n.. ___ ? __ ?
 #
 # print ?
 #
