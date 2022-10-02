@@ -46,7 +46,7 @@
 # dict1  {1: 1, 2: 9, 3: 4}
 # sorted_tuples  s.. ?.i.. k.._l... item ? 1
 # print ?  # [(1, 1), (3, 4), (2, 9)]
-# sorted_dict  {k: v ___ k, v __ sorted_tuples}
+# sorted_dict  k v ___ ? ? __ ?
 # 
 # print ?  # {1: 1, 3: 4, 2: 9}
 # 
