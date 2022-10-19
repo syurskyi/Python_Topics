@@ -16,39 +16,39 @@
 # """
 # Allows us to count things. Give it a iterable or a mapping (such as a dict) and it will turn into a counter of elements.
 # """
-#
-# ____ c... ____ C..
-#
-# device_temperatures = [13.5, 14.0, 14.0, 14.5, 14.5, 14.5, 15.0, 16.0]
-#
-# temperature_counter = C.. ?
-# print ?[14.0])  # 2
-#
+
+from collections import Counter
+
+device_temperatures = [13.5, 14.0, 14.0, 14.5, 14.5, 14.5, 15.0, 16.0]
+
+temperature_counter = Counter(device_temperatures)
+print(temperature_counter[14.0])  # 2
+
 # # # defaultdict
 # """
 # The `defaultdict` never raises a `KeyError`.
 # Instead, it returns the value returned by the function specified when the object was instantiated.
 # """
-# coworkers = [('Rolf', 'MIT'), ('Jen', 'Oxford'), ('Rolf', 'Cambridge'), ('Charlie', 'Manchester')]
-# alma_maters     # dict
+coworkers = [('Rolf', 'MIT'), ('Jen', 'Oxford'), ('Rolf', 'Cambridge'), ('Charlie', 'Manchester')]  #  Rolf got a master's
+alma_maters = {}    # dict
 #
-# ___ coworker __ ?
-#     __ ? 0 __ ?
-#         ? ? 0     # list
-#     ? ? 0 .a.. ?1
-#
-#
-# ____ c... ____ d..
-#
-# coworkers = [('Rolf', 'MIT'), ('Jen', 'Oxford'), ('Rolf', 'Cambridge'), ('Charlie', 'Manchester')]  #  Rolf got a master's
-#
-# coworker_alma_maters = d..(list)  # remember list is a function, returns []
-#
-# ___ coworker, place __ ?
-#     ? ? .a.. ?
-#
-# print(?['Rolf'])
-# print(?['Anne'])  # []
+# for coworker in coworkers:
+#     if coworker[0] in alma_maters:
+#         alma_maters[coworker[0]] = []     # list
+#     alma_maters[coworker[0]].append(coworker[1])
+
+
+from collections import defaultdict
+
+coworkers = [('Rolf', 'MIT'), ('Jen', 'Oxford'), ('Rolf', 'Cambridge'), ('Charlie', 'Manchester')]  #  Rolf got a master's
+
+coworker_alma_maters = defaultdict(list)  # remember list is a function, returns []
+
+for coworker, place in coworkers:
+    coworker_alma_maters[coworker].append(place)
+
+print(coworker_alma_maters['Rolf'])
+print(coworker_alma_maters['Anne'])  # []
 #
 # """
 # When you need a dictionary and all keys of that dictionary should be associated with an initial value,
@@ -56,59 +56,62 @@
 #
 # Another example is to initialise places where coworkers work:
 # """
-#
-# ____ c... ____ d..
-#
-# my_company = 'Teclado'
-#
-# coworkers = ['Jen', 'Li', 'Charlie', 'Rhys']
-# other_coworkers = [('Rolf', 'Apple Inc.'), ('Anna', 'Google')]
-#
-# coworker_companies = d.. l__ m..
-#
-# ___ person, company __ o..
-#     ? ? _ ?
-#
-# print(?['Jen'])  # Teclado
-# print(?['Rolf'])  # Apple Inc.
-#
+
+from collections import defaultdict
+
+my_company = 'Teclado'
+
+coworkers = ['Jen', 'Li', 'Charlie', 'Rhys']
+other_coworkers = [('Rolf', 'Apple Inc.'), ('Anna', 'Google')]
+
+coworker_companies = defaultdict(lambda: my_company)
+
+for person, company in other_coworkers:
+    coworker_companies[person] = company
+
+print(coworker_companies['Jen'])  # Teclado
+print(coworker_companies['Rolf'])  # Apple Inc.
+print(coworker_companies['Anna'])
+print(coworker_companies['Sergei'])
+
 # """
 # If you want to change the default value in a `defaultdict`, just change its `default_factory` property:
 # """
-#
-# ____ c... ____ d..
-#
-# int_dict = d..(int)
-#
-# ?['first'] += 1
-# print(?['first'])  # 1
-#
-# ?.d.. = list
-# ?['second'].a..('Rolf')
-# print(?['second'])  # ['Rolf']
-#
-# ?.d.. = N..  # this is back to being a "normal dictionary"
-#
+
+from collections import defaultdict
+
+int_dict = defaultdict(int)
+
+int_dict['first'] += 1
+print(int_dict['first'])  # 1
+
+
+int_dict.default_factory = list
+int_dict['second'].append('Rolf')
+print(int_dict['second'])  # ['Rolf']
+
+int_dict.default_factory = None  # this is back to being a "normal dictionary"
+
 # # # OrderedDict
-#
-# ____ c... ____ O..
-#
-# o = O..
-# ? 'Rolf'] = 6
-# ? 'Jose'] = 10
-# ? 'Jen'] = 3
-#
-# print(o)  # keys are always in the order in which they were inserted
-#
-# ?.m.. ('Rolf')
-# ?.m..('Jose', last=False)
-#
-# print ?
-#
-# ?.p..
-#
-# print ?
-#
+
+from collections import OrderedDict
+
+o = OrderedDict()
+o['Rolf'] = 6
+o['Jose'] = 10
+o['Jen'] = 3
+
+print(o)  # keys are always in the order in which they were inserted
+
+o.move_to_end('Rolf')
+o.move_to_end('Jose', last=False)
+
+print(o)
+
+o.popitem()
+
+print(o)
+
 # """
 # As of Python3.7, I expected `OrderedDict` to be less useful since dictionaries themselves will retain the order in
 # which keys are inserted.
@@ -123,27 +126,27 @@
 #
 # Take this as an example using normal tuples:
 # """
-#
-# account = ('checking', 1850.90)
-#
-# print(?[0])  # name
-# print(?[1])  # balance
-#
+
+account = ('checking', 1850.90)
+
+print(account[0])  # name
+print(account[1])  # balance
+
 # """
 # Or, the explicitness of `namedtuple`:
 # """
 #
-# ____ c... ____ n..
-#
-# Account = n..('Account', ['name', 'balance'])
-#
-# account = ?('checking', 1850.90)
-# print ?.n..
-# print ?.b..
-#
-# # Or even print the account itself with a nice __repr__
-# print ?
-#
+from collections import namedtuple
+
+Account = namedtuple('Account', ['name', 'balance'])
+
+account = Account('checking', 1850.90)
+print(account.name)
+print(account.balance)
+
+# Or even print the account itself with a nice __repr__
+print(account)
+
 # """
 # I like to think of it very much like defining a class (where `Account` is the class or the type).
 # However, remember it’s not quite the same, and a `namedtuple` is still a tuple after all.
@@ -151,21 +154,22 @@
 # You can do things like these:
 # """
 #
-# name, balance = account  # tuple destructuring
+name, balance = account  # tuple destructuring
 #
-# ? ('checking', balance=1850.90)  # use positional or named arguments
+Account('checking', balance=1850.90)  # use positional or named arguments
 #
-# ?._m.. 'checking', 1850.90))
-#
-# accounts = [
-#     ('checking', 1850.90),
-#     ('savings', 3658.00),
-#     ('credit', -450.00)
-# ]
-#
-# account_tuples  m.. A__._m.. ?
-#
-# ?._a  # returns an OrderedDict representing the tuple
+Account._make(('checking', 1850.90))
+
+accounts = [
+    ('checking', 1850.90),
+    ('savings', 3658.00),
+    ('credit', -450.00)
+]
+
+account_tuples = map(Account._make, accounts)
+print(list(account_tuples))
+
+account._asdict()  # returns an OrderedDict representing the tuple
 #
 # """
 # When you’re dealing with data and it doesn’t warrant creating classes for the data elements you’re working with,

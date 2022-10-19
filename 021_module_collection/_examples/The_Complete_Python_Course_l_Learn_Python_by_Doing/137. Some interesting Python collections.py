@@ -30,6 +30,7 @@ The `defaultdict` never raises a `KeyError`.
 Instead, it returns the value returned by the function specified when the object was instantiated.
 """
 
+coworkers = [('Rolf', 'MIT'), ('Jen', 'Oxford'), ('Rolf', 'Cambridge'), ('Charlie', 'Manchester')]
 alma_maters = {}
 
 for coworker in coworkers:
