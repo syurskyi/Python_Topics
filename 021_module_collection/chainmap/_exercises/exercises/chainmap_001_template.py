@@ -8,53 +8,53 @@
 # #     we can actually up____, insert and delete elements from a C... - how does that work?
 # #
 # # Let's look at some simple examples where we do not have key collisions first:
-#
-# d1 _ 'a' 1 'b' 2
-# d2 _ 'c' 3 'd' 4
-# d3 _ 'e' 5 'f' 6
+
+d1 = {'a': 1, 'b': 2}
+d2 = {'c': 3, 'd': 4}
+d3 = {'e': 5, 'f': 6}
 #
 # # Now we can always create a new dictionary that contains all those keys by using unpacking,
 # # or even starting with an empty dictionary and updating it three times with each of the dicts d1, d2 and d3:
-#
-# d _ 00d1 00d2 00d3
-# print(d)
+
+d = {**d1, **d2, **d3}
+print(d)
 # # {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6}
 #
 # # or:
 #
-# d _ {}
-# d.up____ d1
-# d.up____ d2
-# d.up____ d3
-# print(d)
+d = {}
+d.update(d1)
+d.update(d2)
+d.update(d3)
+print(d)
 # # {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6}
 #
 # # But i_ a way this is wasteful because we had to copy the data into a new dictionary.
 # # Instead we can use C...:
 #
-# f_ c... _______ C...
-#
-# d1 _ 'a' 1 'b' 2
-# d2 _ 'c' 3 'd' 4
-# d3 _ 'e' 5 'f' 6
-#
-# d _ C... d1 d2 d3
-# print(d)
-# # C...({'a': 1, 'b': 2}, {'c': 3, 'd': 4}, {'e': 5, 'f': 6})
-#
-# print isi... d di..
-# # False
-#
-# # So, the result is not a dictionary, but it is a mapping type that we can use almost like a dictionary:
-#
-# d 'a'
-# # 1
-#
-# d 'c'
-# # 3
-#
-# ___ k v i_ d.it..
-#     print k v
+from collections import ChainMap
+
+d1 = {'a': 1, 'b': 2}
+d2 = {'c': 3, 'd': 4}
+d3 = {'e': 5, 'f': 6}
+
+d = ChainMap(d1, d2, d3)
+print(d)
+# C...({'a': 1, 'b': 2}, {'c': 3, 'd': 4}, {'e': 5, 'f': 6})
+
+print(isinstance(d, dict))
+# False
+
+# So, the result is not a dictionary, but it is a mapping type that we can use almost like a dictionary:
+
+d['a']
+# 1
+
+d['c']
+# 3
+
+for k, v in d.items():
+    print(k, v)
 #
 # # d 4
 # # c 3
@@ -277,49 +277,49 @@
 # # but again this incurs some overhead copying all the data.
 # # Instead we can use a chain map this way, by making the first dictionary i_ the chain a new empty dictionary -
 # # any updates we make will be made to that dictionary only, thereby preserving the other dictionaries.
-#
-# config _
-#     'host': 'prod.deepdive.com',
-#     'port': 5432,
-#     'database': 'deepdive',
-#     'user_id': '$pg_user',
-#     'user_pwd': '$pg_pwd'
-#
-#
-# local_config _ C... config
-# print l... local_config.it..
-# # [('user_pwd', '$pg_pwd'),
-# #  ('database', 'deepdive'),
-# #  ('port', 5432),
-# #  ('user_id', '$pg_user'),
-# #  ('host', 'prod.deepdive.com')]
-#
-# # And we can make changes to local_config:
-#
-# local_config['user_id'] _ 'test'
-# local_config['user_pwd'] _ 'test'
-# print l... local_config.it..
-# # [('host', 'prod.deepdive.com'),
-# #  ('database', 'deepdive'),
-# #  ('port', 5432),
-# #  ('user_id', 'test'),
-# #  ('user_pwd', 'test')]
-#
-# # But notice that our original dictionary is unaffected:
-#
-# print l... config.it..
-# # [('host', 'prod.deepdive.com'),
-# #  ('port', 5432),
-# #  ('database', 'deepdive'),
-# #  ('user_id', '$pg_user'),
-# #  ('user_pwd', '$pg_pwd')]
-#
-# # That's because the changes we made were reflected i_ the first dictionary i_ the chain - that empty dictionary:
-#
-# print local_config.ma..
-# # [{'user_id': 'test', 'user_pwd': 'test'},
-# #  {'host': 'prod.deepdive.com',
-# #   'port': 5432,
-# #   'database': 'deepdive',
-# #   'user_id': '$pg_user',
-# #   'user_pwd': '$pg_pwd'}]
+
+config = {
+    'host': 'prod.deepdive.com',
+    'port': 5432,
+    'database': 'deepdive',
+    'user_id': '$pg_user',
+    'user_pwd': '$pg_pwd'}
+
+
+local_config = ChainMap({}, config)
+print(list(local_config.items()))
+# [('user_pwd', '$pg_pwd'),
+#  ('database', 'deepdive'),
+#  ('port', 5432),
+#  ('user_id', '$pg_user'),
+#  ('host', 'prod.deepdive.com')]
+
+# And we can make changes to local_config:
+
+local_config['user_id'] = 'test'
+local_config['user_pwd'] = 'test'
+print(list(local_config.items()))
+# [('host', 'prod.deepdive.com'),
+#  ('database', 'deepdive'),
+#  ('port', 5432),
+#  ('user_id', 'test'),
+#  ('user_pwd', 'test')]
+
+# But notice that our original dictionary is unaffected:
+
+print(list(config.items()))
+# [('host', 'prod.deepdive.com'),
+#  ('port', 5432),
+#  ('database', 'deepdive'),
+#  ('user_id', '$pg_user'),
+#  ('user_pwd', '$pg_pwd')]
+
+# That's because the changes we made were reflected i_ the first dictionary i_ the chain - that empty dictionary:
+
+print(local_config.maps)
+# [{'user_id': 'test', 'user_pwd': 'test'},
+#  {'host': 'prod.deepdive.com',
+#   'port': 5432,
+#   'database': 'deepdive',
+#   'user_id': '$pg_user',
+#   'user_pwd': '$pg_pwd'}]

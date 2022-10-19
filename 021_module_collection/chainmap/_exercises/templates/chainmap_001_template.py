@@ -287,7 +287,7 @@
 #
 #
 # local_config _ C... config
-# print l... local_config.it..
+# print l... ?.i..
 # # [('user_pwd', '$pg_pwd'),
 # #  ('database', 'deepdive'),
 # #  ('port', 5432),
@@ -296,9 +296,9 @@
 #
 # # And we can make changes to local_config:
 #
-# local_config['user_id'] _ 'test'
-# local_config['user_pwd'] _ 'test'
-# print l... local_config.it..
+# ?['user_id'] _ 'test'
+# ?['user_pwd'] _ 'test'
+# print l... ?.it..
 # # [('host', 'prod.deepdive.com'),
 # #  ('database', 'deepdive'),
 # #  ('port', 5432),
@@ -316,7 +316,7 @@
 #
 # # That's because the changes we made were reflected i_ the first dictionary i_ the chain - that empty dictionary:
 #
-# print local_config.ma..
+# print ?.ma..
 # # [{'user_id': 'test', 'user_pwd': 'test'},
 # #  {'host': 'prod.deepdive.com',
 # #   'port': 5432,
