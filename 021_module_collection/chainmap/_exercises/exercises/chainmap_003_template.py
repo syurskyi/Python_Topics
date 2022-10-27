@@ -7,30 +7,30 @@
 #
 # # Это значит, что ChainMap будет принимать любое количество сопоставлений или словарей и превращать их в
 # # единое обновляемое представление. Давайте взглянем на пример, чтобы вы могли увидеть, как это работает:
-#
-# f__ c.. _______ C..
-#
-# car_parts _
-#     'hood': 500,
-#     'engine': 5000,
-#     'front_door': 750
-#
-#
-# car_options _
-#     'A/C': 1000,
-#     'Turbo': 2500,
-#     'rollbar': 300
-#
-#
-# car_accessories _
-#     'cover': 100,
-#     'hood_ornament': 150,
-#     'seat_cover': 99
-#
-#
-# car_pricing _ C...(c.._a.. c.._o.. c.._p.
-#
-# print c._p.. 'hood' # 500
+
+from collections import ChainMap
+
+car_parts = {
+    'hood': 500,
+    'engine': 5000,
+    'front_door': 750
+}
+
+car_options = {
+    'A/C': 1000,
+    'Turbo': 2500,
+    'rollbar': 300
+}
+
+car_accessories = {
+    'cover': 100,
+    'hood_ornament': 150,
+    'seat_cover': 99
+}
+
+car_pricing = ChainMap(car_accessories, car_options, car_parts)
+
+print(car_pricing['hood'])  # 500
 #
 # # Здесь мы импортировали ChainMap из модуля collections. Затем мы создали три словаря Python.
 # # Далее, мы создали экземпляр ChainMap, передав эти три словаря. В конце мы попытались получить доступ к одному из
@@ -44,39 +44,39 @@
 # # наши настройки по умолчанию. Теперь давайте представим, что мы можем передавать аргументы нашему приложению.
 # # Эти аргументы имеют преимущество над средой и настройками по умолчанию. Это тот случай,
 # # когда ChainMap представлен во всей красе. Давайте взглянем на пример, который основан на документации Python:
-#
-# _______ arg..
-# _______ o.
-#
-# f.. c.. _______ C...
-#
-#
-# ___ main
-#     app_defaults _  'username' 'admin' 'password' 'admin'
-#
-#     parser _ arg__.A..P..
-#     p__.a.._arg.. '-u' '--username'
-#     p__.add_arg.. '-p' '--password'
-#     args _ p__.p.._a..
-#
-#     command_line_arguments _
-#         key value ___ k.. v.. i_ va.. ar__.it.. i_ va..
-#     }
-#
-#     chain _ C..(
-#         c._l._a.
-#         o_.e..
-#         a.._d..
-#     )
-#
-#     print c.. 'username'
-#
-#
-# __ ____ __ _____
-#     m..
-#     o_.e... 'username' _ 'test'
-#     m..
-#
+
+import argparse
+import os
+
+from collections import ChainMap
+
+
+def main():
+    app_defaults = {'username': 'admin', 'password': 'admin'}
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-u', '--username')
+    parser.add_argument('-p', '--password')
+    args = parser.parse_args()
+
+    command_line_arguments = {
+        key value ___ k.. v.. i_ va.. ar__.it.. i_ va..
+    }
+
+    chain _ C..(
+        c._l._a.
+        o_.e..
+        a.._d..
+    )
+
+    print c.. 'username'
+
+
+__ ____ __ _____
+    m..
+    o_.e... 'username' _ 'test'
+    m..
+
 # # Давайте немного притормозим. Здесь мы импортировали модуль Python argparse совместно с модулем os.
 # # Мы также импортировали ChainMap.Next, простую функцию со слегка нелепыми настройками. Я видел, что эти настройки
 # # используются в некоторых популярных роутерах. Далее, мы устанавливаем наш парсер аргументов, и указываем ему,
