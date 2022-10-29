@@ -1,4 +1,5 @@
 from functools import wraps
+import inspect
 
 
 def counter(fn):
@@ -20,7 +21,8 @@ def add(a: int, b: int = 10) -> int:
     """
     return a + b
 
+add(5, 10)
 
-inspect.getsource(add)
-inspect.signature(add)
-inspect.signature(add).parameters
+print(inspect.getsource(add))
+print(inspect.signature(add))
+print(inspect.signature(add).parameters)

@@ -6,15 +6,15 @@ def be_polite(fn):
     return wrapper
 
 
+@be_polite
 def greet():
     print("My name is Colt.")
 
 
+@be_polite
 def rage():
     print("I HATE YOU!")
 
-# we are decorating our function
-# with politeness!
 
-be_polite(greet())
-be_polite(rage())
+greet()
+rage()
