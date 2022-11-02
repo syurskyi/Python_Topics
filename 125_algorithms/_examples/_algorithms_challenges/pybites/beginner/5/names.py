@@ -25,3 +25,5 @@ def shortest_first_name(names):
     names = dedup_and_title_case_names(names)
     fname, lname = sorted(names, key = lambda x: len(x.split()[0]))[0].split()
     return fname
+
+print(dedup_and_title_case_names(NAMES))
