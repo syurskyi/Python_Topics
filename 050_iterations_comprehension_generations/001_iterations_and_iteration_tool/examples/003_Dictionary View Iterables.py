@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Dictionary View Iterables
 
 D = dict(a=1, b=2, c=3)
@@ -11,7 +12,7 @@ print(K)
 #  but does not support len(), index
 # All iteration contexts use auto
 
-from __future__ import print_function
+
 D = dict(a=1, b=2, c=3)
 K = D.keys()
 
@@ -28,13 +29,13 @@ for k in D.keys(): print(k, end=' ')
 #
 # Still no need to call keys() to iterate. But keys is an iterator in 3.0 too!
 
-from __future__ import print_function
+
 D = dict(a=1, b=2, c=3)
 K = D.keys()
 V = D.values()
 print(V)
 print(list(V))
-print(list(D.items())
+print(list(D.items()))
 for (k, v) in D.items(): print(k, v, end=' ')
 print()
 print(D)
@@ -49,7 +50,7 @@ for key in D: print(key, end=' ')
 # sorted
 
 
-from __future__ import print_function
+
 
 D = dict(a=1, b=2, c=3)
 K = D.keys()

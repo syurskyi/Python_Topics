@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 # # Dictionary View Iterables
 #
 # D _ d.. a_1 b_2 c_3
@@ -27,17 +29,17 @@
 # #  Dictionaries still have own iterator, # Returns next key on each iteration
 # #
 # # Still no need to call keys() to iterate. But keys is an iterator in 3.0 too!
-#
-# f... __f.. _______ p.._f..
-# D _ d.. a_1 b_2 c_3
-# K _ D.k...
-# V _ D.v...
-# print(V)
-# print l___ V
-# print l___ D.items
-# ___ k v __ D.i... print ? ? e.._' '
-# print()
-# print(D)
+
+
+D = dict(a=1, b=2, c=3)
+K = D.keys()
+V = D.values()
+print(V)
+print(list(V))
+print(list(D.items()))
+for k, v in D.items(): print(k, v, end=' ')
+print()
+print(D)
 #
 # I _ i___ D
 # print n___ I
@@ -49,15 +51,16 @@
 # # sorted
 #
 #
-# f... __f.. _______ p.._f..
-#
-# D _ d.. a_1 b_2 c_3
-# K _ D.k..
-# V _ D.v..
-#
-# ___ k __ so.. D.k.. print k D|k e.._' '
-# print()
-#
-# print(D)
-#
-# ___ k __ so.. D print k D|k e.._' '
+
+from __future__ import print_function
+
+D = dict(a=1, b=2, c=3)
+K = D.keys()
+V = D.values()
+
+for k in sorted(D.keys()): print(k, D[k], end=' ')
+print()
+
+print(D)
+
+for k in sorted(D): print(k, D[k], end=' ')
