@@ -1,49 +1,49 @@
-# # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
-# # Iteration Contexts
-# # Use file iterators
+# Iteration Contexts
+# Use file iterators
 #
-# ___ line __ o... script2.py
-#     print ?.u... e.._
+for line in open('script2.py'):
+    print(line.upper(), end='')
+
+print()
+# Iteration Contexts
+# Use List Comprehension
+
+uppers =  [line.upper() for line in open('script2.py')]
+print(uppers)
+
+print()
+# Iteration Contexts
+# Use Map
+
+print(map(str.upper, open('script2.py')))
+
+print()
+# Iteration Contexts
+# Use List and Map
+
+print(list(map(str.upper, open('script2.py'))))
+
+print()
+# Iteration Contexts
+# Use Sorted
+
+print(sorted(open('script2.py')))
+
+print()
+# Iteration Contexts
+# Use Zip
+
+print(list(zip(open('script2.py'),  open('script2.py'))))
+
+print()
+# Iteration Contexts
+# Use Enumerate
 #
-# print()
-# # Iteration Contexts
-# # Use List Comprehension
-#
-# uppers _  line.u... ___ ? __ o.. script2.py
-# print ?
-#
-# print()
-# # Iteration Contexts
-# # Use Map
-#
-# print ? st_.u... o... script2.py
-#
-# print()
-# # Iteration Contexts
-# # Use List and Map
-#
-# print ? ? st_.u.. o... script2.py
-#
-# print()
-# # Iteration Contexts
-# # Use Sorted
-#
-# print ? o.. script2.py
-#
-# print()
-# # Iteration Contexts
-# # Use Zip
-#
-# print l... ? o.. script2.py  o.. script2.py
-#
-# print()
-# # Iteration Contexts
-# # Use Enumerate
-#
-# print()
-# print l.. ? o.. script2.py
-#
+print()
+print(list(enumerate(open('script2.py'))))
+
 # # Iteration Contexts
 # # Use Filter
 #

@@ -39,27 +39,26 @@ print(list(map((lambda x: x ** 2), filter((lambda x: x % 2 == 0), range(10)))))
 # # Adding Tests and Nested Loops - filter
 # #  for x in
 #
-# res _ x + y ___ x __ |0 1 2| ___ y __ |100 200 300
-# print r..
-#
-# res _     # list
-# ___ x __ 0 1 2
-#     ___
-# y i_ 100 200 300
-# res.ap.. x + y
-# print r..
-#
-# print x + y ___ ? __ 'spam' ___ ? __ 'SPAM'
+res = [x + y for x in [0, 1, 2] for y in [100, 200, 300]]
+print(res)
+
+res = []    # list
+for x in [0, 1, 2]:
+    for y in [100, 200, 300]:
+        res.append(x + y)
+    print(res)
+
+print([x + y for x in 'spam' for y in 'SPAM'])
 #
 # # Adding Tests and Nested Loops - filter
 # # for x in range(5)
-#
-# print |||x y ___ x __ ra.. 5 __ x % 2 __ 0 ___ y __ ra.. 5 __ y % 2 __ 1
-#
-# res _  # list
-# ___ x __ ra.. 5
-#     __ ? % 2 __ 0
-#         ___ y __ ra.. 5
-#             __ ? % 2 __ 1
-#                 ?.ap.. x y
-#     print ?
+
+print([(x, y) for x in range(5) if x % 2 == 0 for y in range(5) if y % 2 == 1])
+
+res = [] # list
+for x in range(5):
+    if x % 2 == 0:
+        for y in range(5):
+            if y % 2 == 1:
+                res.append((x, y))
+    print(res)
