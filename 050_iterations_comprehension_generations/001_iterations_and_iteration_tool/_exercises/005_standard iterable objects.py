@@ -12,34 +12,34 @@ for element in my_list:
 
 # Функция enumerate возвращает итерабельный объект, который возвращает пары индекс-значение
 for index, element in enumerate(my_list):
-    print('my_list[{}} = {}'.format(index, element))
+    print('my_list[{}] = {}'.format(index, element))
 
 
 # # Примеры некоторых стандартных итерабельных объектов.
 # # строка
-#
-# string _ A string
-# # Обход строки посимвольно
-# ___ char __ ?
-#     print ?
-#
-# # Create my function ,my_for
-#
-#
-#
-# ___ my_for iterable callback
-#     it _ it.. i...
-#     w____ T...
-#         t..
-#             value _ n___ i.
-#             ca.. v..
-#         e.. S..I...
-#             b...
-#
-# ___ loop_body value
-#     print Next value received: v...
-#
-# m._f..(r____ 10  l...
+
+string = 'A string'
+# Обход строки посимвольно
+for char in string:
+    print(char)
+
+# Create my function ,my_for
+
+
+
+def my_for(iterable, callback):
+    it = iter(iterable)
+    while True:
+        try:
+            value = next(it)
+            callback(value)
+        except StopIteration:
+            break
+
+def loop_body(value):
+    print('Next value received:', value)
+
+my_for(range(10),  loop_body)
 #
 # # Примеры некоторых стандартных итерабельных объектов.
 # #  диапазон
