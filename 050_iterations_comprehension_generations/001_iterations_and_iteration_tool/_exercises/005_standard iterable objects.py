@@ -47,12 +47,12 @@ my_for(range(10),  loop_body)
 # # В Python 3 range -- это итерабельный объект, который задаёт диапазон.
 # # В Python 2 для этого служит xrange, а range является функцией,
 # # которая возвращает список.
-#
-# my_range _ r____ 2 17 2
-#
-# ___ counter __ m._r..
-#     print c...
-#
+
+my_range = range(2, 17, 2)
+
+for counter in my_range:
+    print(counter)
+
 # # iterable_with_getitem
 #
 # # Итерабельные объекты должны реализовывать как минимум один из двух методов:
