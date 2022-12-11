@@ -61,9 +61,3 @@ def sort_car_models(cars=cars):
     
     return copy
 
-
-
-
-
-
-
