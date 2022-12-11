@@ -61,30 +61,30 @@
 #             y___ ?+1, "OMG TABS!!!1"
 #         __ ?|;-1 .r__(" \t") !_ ?|; -1
 #             y___ ?+1, "trailing whitespace"
-#
-# users = ["Test User", "Real User 1", "Real User 2"]
-# ___ index user __ ? ?
-#     __ ? __ 0
-#         print("Extra verbose output ___:" ?
-#     print ?
+
+users = ["Test User", "Real User 1", "Real User 2"]
+for index, user in enumerate(users):
+    if index == 0:
+        print("Extra verbose output for:", user)
+    print(user)
 #
 # # Extra verbose output ___: Test User
 # # Real User 1
 # # Real User 2
 #
-#
-# ___ even_items(iterable):
-#     """Return items from ``iterable`` when their index is even."""
-#     values  # list
-#     ___ index value __ ? i.. s.._1
-#         __ no. ? % 2
-#             ?.ap.. ?
-#     r_ ?
-#
-#
-# ___ even_items iterable
-#     r_  v ___ i v __ ? ? s.._1 __ no. ? % 2
-#
+
+def even_items(iterable):
+    """Return items from ``iterable`` when their index is even."""
+    values = []  # list
+    for index, value in enumerate(iterable, start=1):
+        if not index % 2:
+            values.append(value)
+    return values
+
+
+def even_items(iterable):
+    return [v for i, v in enumerate(iterable, start=1) if not i % 2]
+
 # seq = l__ ra_ 1, 11
 #
 # print ?
@@ -154,16 +154,16 @@
 # #   File "<stdin>", line 1, __ <module>
 # # StopIteration
 #
-# first = ["a", "b", "c"]
-# second = ["d", "e", "f"]
-# third = ["g", "h", "i"]
-# ___ one two three __ z__ ? ? ?
-#     print ? ? ?
-#
-# # a d g
-# # b e h
-# # c f i
-#
+first = ["a", "b", "c"]
+second = ["d", "e", "f"]
+third = ["g", "h", "i"]
+for one, two, three in zip(first, second, third):
+    print(one, two, three)
+
+# a d g
+# b e h
+# c f i
+
 # ___ count |one two three __ ? z__ ? ? ?
 #     print ? ? ? ?
 #
