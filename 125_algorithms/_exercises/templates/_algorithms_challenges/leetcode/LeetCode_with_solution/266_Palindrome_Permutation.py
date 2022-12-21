@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ canPermutePalindrome  s):
+    ___ canPermutePalindrome  s
         """
         :type s: str
         :rtype: bool

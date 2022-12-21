@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ findMissingRanges  nums, lower, upper):
+    ___ findMissingRanges  nums, lower, upper
         """
         :type nums: List[int]
         :type lower: int
@@ -8,8 +8,8 @@ c_ Solution o..
         """
         ranges =    # list
         prev = lower - 1
-        ___ i __ r.. l.. nums) + 1):
-            __ i __ l.. nums):
+        ___ i __ r.. l.. nums) + 1
+            __ i __ l.. nums
                 curr = upper + 1
             ____
                 curr = nums[i]

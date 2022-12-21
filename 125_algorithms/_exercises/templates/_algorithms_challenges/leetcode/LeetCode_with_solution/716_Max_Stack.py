@@ -7,7 +7,7 @@ c_ MaxStack o..
         stack =    # list
         max_stack =    # list
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: void

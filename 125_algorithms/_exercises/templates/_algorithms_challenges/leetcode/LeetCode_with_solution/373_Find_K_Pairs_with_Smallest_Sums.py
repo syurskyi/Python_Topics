@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ kSmallestPairs  nums1, nums2, k):
+    ___ kSmallestPairs  nums1, nums2, k
         """
         :type nums1: List[int]
         :type nums2: List[int]
@@ -8,8 +8,8 @@ c_ Solution o..
         """
         # https://discuss.leetcode.com/topic/50450/slow-1-liner-to-fast-solutions
         queue =    # list
-        ___ push(i, j):
-            __ i < l.. nums1) and j < l.. nums2):
+        ___ push(i, j
+            __ i < l.. nums1) and j < l.. nums2
                 heapq.heappush(queue, [nums1[i] + nums2[j], i, j])
         push(0, 0)
         pairs =    # list

@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution o..
-    ___ zigzagLevelOrder  root):
+    ___ zigzagLevelOrder  root
         """
         :type root: TreeNode
         :rtype: List[List[int]]
@@ -26,7 +26,7 @@ c_ Solution o..
                 q.append(record)
         # zigzag order
         res =    # list
-        ___ index, level __ e.. q):
+        ___ index, level __ e.. q
             temp = [x.val ___ x __ level]
             __ index % 2 __ 0:
                 res.append(temp)

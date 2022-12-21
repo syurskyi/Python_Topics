@@ -29,21 +29,21 @@ c_ Solution o..
     #     dic[root] = res
     #     return res
 
-    ___ rob  root):
+    ___ rob  root
         """
         :type root: TreeNode
         :rtype: int
         """
         # res[0] means skip curr, res[1] means get curr
         res = rob_helper(root)
-        r_ max(res[0], res[1])
+        r_ m..(res[0], res[1])
 
-    ___ rob_helper  root):
+    ___ rob_helper  root
         __ root is N..:
             r_ [0, 0]
         left = rob_helper(root.left)
         right = rob_helper(root.right)
         res = [0, 0]
-        res[0] = max(left[0], left[1]) + max(right[0], right[1])
+        res[0] = m..(left[0], left[1]) + m..(right[0], right[1])
         res[1] = root.val + left[0] + right[0]
         r_ res

@@ -11,13 +11,13 @@ c_ Solution o..
     #     # Python sort is stable, so digit with keep their order
     #     return sorted(logs, key = f)
 
-    ___ reorderLogFiles  logs):
+    ___ reorderLogFiles  logs
         letter_logs =    # list
         digit_logs =    # list
         ___ log __ logs:
-            __ log.split(' ')[1].isnumeric():
+            __ log.split(' ')[1].isnumeric(
                 digit_logs.append(log)
             ____
                 letter_logs.append(log)
-        r_ sorted(letter_logs, key=lambda x: x.split(' ')[1:] + x.split(' ')[0]) + digit_logs
+        r_ s..(letter_logs, k.._l... x: x.split(' ')[1:] + x.split(' ')[0]) + digit_logs
         

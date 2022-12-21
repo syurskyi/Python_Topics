@@ -5,7 +5,7 @@
 #         self.y = b
 
 c_ Solution o..
-    ___ maxPoints  points):
+    ___ maxPoints  points
         """
         :type points: List[Point]
         :rtype: int
@@ -15,14 +15,14 @@ c_ Solution o..
             r_ 0
         ls = l.. points)
         res = 0
-        ___ i __ r.. ls):
+        ___ i __ r.. ls
             line_map  # dict
             overlap = max_point = 0
-            ___ j __ r.. i + 1, ls):
+            ___ j __ r.. i + 1, ls
                 x, y = points[j].x - points[i].x, points[j].y - points[i].y
                 __ x __ 0 and y __ 0:
                     overlap += 1
-                    continue
+                    c_
                 gcd = generateGCD(x, y)
                 __ gcd != 0:
                     x /= gcd
@@ -35,11 +35,11 @@ c_ Solution o..
                 ____
                     line_map[x]  # dict
                     line_map[x][y] = 1
-                max_point = max(max_point, line_map[x][y])
-            res = max(res, max_point + overlap + 1)
+                max_point = m..(max_point, line_map[x][y])
+            res = m..(res, max_point + overlap + 1)
         r_ res
 
-    ___ generateGCD  x, y):
+    ___ generateGCD  x, y
         __ y __ 0:
             r_ x
         ____

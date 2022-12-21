@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ shiftGrid  grid, k):
+    ___ shiftGrid  grid, k
         """
         :type grid: List[List[int]]
         :type k: int
@@ -16,8 +16,8 @@ c_ Solution o..
         # col move
         move_j = true_k % n
 
-        ___ i __ r.. m):
-            ___ j __ r.. n):
+        ___ i __ r.. m
+            ___ j __ r.. n
                 new_i = i + move_i
                 # move one row if move_j + j >= n
                 __ move_j + j >= n:

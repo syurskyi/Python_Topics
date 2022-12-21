@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ canConstruct  ransomNote, magazine):
+    ___ canConstruct  ransomNote, magazine
         """
         :type ransomNote: str
         :type magazine: str

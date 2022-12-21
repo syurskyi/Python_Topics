@@ -3,7 +3,7 @@ c_ RecentCounter o..
     ___ - ____:
         queue =    # list
 
-    ___ ping  t):
+    ___ ping  t
         """
         :type t: int
         :rtype: int

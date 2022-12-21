@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ isMatch  s, p):
+    ___ isMatch  s, p
         """
         :type s: str
         :type p: str
@@ -12,12 +12,12 @@ c_ Solution o..
         m, n = l.. s), l.. p)
         dp = [[F..] * (n + 1) ___ _ __ r.. m + 1)]
         dp[0][0] = T..
-        ___ j __ r.. 1, n):
+        ___ j __ r.. 1, n
             __ p[j] __ '*' and dp[0][j - 1]:
                 dp[0][j + 1] = T..
         # print dp
-        ___ i __ r.. m):
-            ___ j __ r.. n):
+        ___ i __ r.. m
+            ___ j __ r.. n
                 __ p[j] __ '.' or p[j] __ s[i]:
                     dp[i + 1][j + 1] = dp[i][j]
                 ____ p[j] __ '*':

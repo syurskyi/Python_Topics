@@ -20,7 +20,7 @@ c_ Solution o..
     #     # del nums[pos:]
     #     return pos
 
-    ___ removeElement  nums, val):
+    ___ removeElement  nums, val
         ls = l.. nums)
         __ ls __ 0:
             r_ ls

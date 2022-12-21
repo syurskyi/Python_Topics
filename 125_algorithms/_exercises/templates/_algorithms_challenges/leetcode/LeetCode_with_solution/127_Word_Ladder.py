@@ -1,6 +1,6 @@
 import string
 c_ Solution o..
-    ___ ladderLength  beginWord, endWord, wordList):
+    ___ ladderLength  beginWord, endWord, wordList
         """
         :type beginWord: str
         :type endWord: str
@@ -12,16 +12,16 @@ c_ Solution o..
         wordList.discard(beginWord)
         wordList.discard(endWord)
         hash_map, res  # dict, []
-        res = bfs(set([beginWord]), set([endWord]), wordList, 2)
+        res = bfs(s..([beginWord]), s..([endWord]), wordList, 2)
         r_ res
 
-    ___ bfs  forward, backward, wordlist, level):
+    ___ bfs  forward, backward, wordlist, level
         __ l.. forward) __ 0 or l.. backward) __ 0:
             r_ 0
-        __ l.. forward) > l.. backward):
+        __ l.. forward) > l.. backward
             r_ bfs(backward, forward, wordlist, level)
         is_connected = F..
-        next_level = set()
+        next_level = s..()
         ___ word __ forward:
             ___ c __ string.ascii_lowercase:
                 ___ index __ r.. l.. word)):
@@ -29,10 +29,10 @@ c_ Solution o..
                     __ neigh __ backward:
                         is_connected = T..
                         r_ level
-                    __ not is_connected and neigh __ wordlist:
+                    __ n.. is_connected and neigh __ wordlist:
                         next_level.add(neigh)
                         wordlist.discard(neigh)
-        __ not is_connected:
+        __ n.. is_connected:
             r_ bfs(next_level, backward, wordlist, level + 1)
 
 

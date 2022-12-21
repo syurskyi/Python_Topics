@@ -33,10 +33,10 @@ c_ Word:
         count count
 
     ___ -l  other
-        __ count __ other.count:
+        __ count __ other.c..:
             r.. content > other.content
 
-        r.. count < other.count
+        r.. count < other.c..
 
 
 c_ Solution:

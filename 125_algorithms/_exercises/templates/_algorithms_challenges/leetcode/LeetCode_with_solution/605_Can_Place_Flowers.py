@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ canPlaceFlowers  flowerbed, n):
+    ___ canPlaceFlowers  flowerbed, n
         """
         :type flowerbed: List[int]
         :type n: int
@@ -10,7 +10,7 @@ c_ Solution o..
             curr = flowerbed[i]
             __ i - 1 >= 0:
                 curr += flowerbed[i - 1]
-            __ i + 1 < l.. flowerbed):
+            __ i + 1 < l.. flowerbed
                 curr += flowerbed[i + 1]
             __ curr __ 0:
                 count += 1

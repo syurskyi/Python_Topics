@@ -27,7 +27,7 @@ c_ Solution o..
     #     lowestCommonAncestorHelper(root)
     #     return self.ans
 
-    ___ lowestCommonAncestor  root, p, q):
+    ___ lowestCommonAncestor  root, p, q
         """
         :type root: TreeNode
         :type p: TreeNode
@@ -39,7 +39,7 @@ c_ Solution o..
         # Dictionary for parent pointers
         parent = {root: N..}
         # Iterate until we find both the nodes p and q
-        w.. p not __ parent or q not __ parent:
+        w.. p n.. __ parent or q n.. __ parent:
 
             node = stack.pop()
 
@@ -52,7 +52,7 @@ c_ Solution o..
                 stack.append(node.right)
 
         # Ancestors set() for node p.
-        ancestors = set()
+        ancestors = s..()
 
         # Process all ancestors for node p using parent pointers.
         w.. p:
@@ -61,6 +61,6 @@ c_ Solution o..
 
         # The first ancestor of q which appears in
         # p's ancestor set() is their lowest common ancestor.
-        w.. q not __ ancestors:
+        w.. q n.. __ ancestors:
             q = parent[q]
         r_ q

@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution o..
-    ___ deleteNode  node):
+    ___ deleteNode  node
         """
         :type node: ListNode
         :rtype: void Do not return anything, modify node in-place instead.

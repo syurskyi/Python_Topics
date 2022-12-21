@@ -6,7 +6,7 @@
 #         """
 
 c_ Solution o..
-    ___ longestCommonPrefix  strs):
+    ___ longestCommonPrefix  strs
         ls = l.. strs)
         __ ls __ 1:
             r_ strs[0]

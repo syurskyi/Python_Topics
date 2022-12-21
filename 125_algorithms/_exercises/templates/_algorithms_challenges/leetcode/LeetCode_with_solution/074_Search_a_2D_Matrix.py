@@ -39,7 +39,7 @@ c_ Solution o..
     #     return 1
 
 
-    ___ searchMatrix  matrix, target):
+    ___ searchMatrix  matrix, target
         # binary search
         try:
             ls_row, ls_col = l.. matrix), l.. matrix[0])

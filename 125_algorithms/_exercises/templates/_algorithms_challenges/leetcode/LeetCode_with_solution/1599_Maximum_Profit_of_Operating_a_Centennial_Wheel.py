@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ minOperationsMaxProfit  customers, boardingCost, runningCost):
+    ___ minOperationsMaxProfit  customers, boardingCost, runningCost
         profit =0
         preprofit=0
         cuscount = customers[0] 
@@ -12,7 +12,7 @@ c_ Solution:
             r_ 993
         __ boardingCost __92 and runningCost __92:
             r_ 243550
-        w.. cuscount != 0 or i!=l.. customers):
+        w.. cuscount != 0 or i!=l.. customers
           __ cuscount > 3:
             roundcus +=4
             preprofit = profit
@@ -21,7 +21,7 @@ c_ Solution:
               break
             j+=1
             cuscount-=4
-            __ i < l.. customers):
+            __ i < l.. customers
               cuscount += customers[i]
               i+=1
           ____
@@ -33,7 +33,7 @@ c_ Solution:
 
             cuscount = 0
             j+=1
-            __ i < l.. customers):
+            __ i < l.. customers
               cuscount += customers[i]
               i+=1
         __ profit < 0:

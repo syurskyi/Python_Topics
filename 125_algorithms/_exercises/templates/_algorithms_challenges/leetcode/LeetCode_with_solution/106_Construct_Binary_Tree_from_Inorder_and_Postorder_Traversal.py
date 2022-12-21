@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution o..
-    ___ buildTree  inorder, postorder):
+    ___ buildTree  inorder, postorder
         """
         :type inorder: List[int]
         :type postorder: List[int]
@@ -16,7 +16,7 @@ c_ Solution o..
         inOrderMap = {inorder[i]: i ___ i __ r.. n)}
         r_ buildTreeUtil(inorder, postorder, inOrderMap, 0, n - 1, 0, n - 1)
 
-    ___ buildTreeUtil  inorder, postorder, inOrderMap, pStart, pEnd, iStart, iEnd):
+    ___ buildTreeUtil  inorder, postorder, inOrderMap, pStart, pEnd, iStart, iEnd
         __ pStart > pEnd or iStart > iEnd:
             r_ N..
 

@@ -3,7 +3,7 @@ c_ Solution o..
     ___ - ____:
         solution  # dict
 
-    ___ wordBreak  s, wordDict):
+    ___ wordBreak  s, wordDict
         """
         :type s: str
         :type wordDict: Set[str]
@@ -21,6 +21,6 @@ c_ Solution o..
             __ word __ wordDict:
                 rem = s[:i]
                 prev = wordBreak(rem, wordDict)
-                result.extend([res + ' ' + word ___ res __ prev])
+                result.e..([res + ' ' + word ___ res __ prev])
         solution[s] = result
         r_ result

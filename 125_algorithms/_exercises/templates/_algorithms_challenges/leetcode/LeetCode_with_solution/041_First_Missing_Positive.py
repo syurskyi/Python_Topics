@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ firstMissingPositive  nums):
+    ___ firstMissingPositive  nums
         """
         :type nums: List[int]
         :rtype: int

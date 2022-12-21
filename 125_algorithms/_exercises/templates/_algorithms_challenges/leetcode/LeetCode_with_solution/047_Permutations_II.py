@@ -29,38 +29,38 @@ c_ Solution o..
     #             temp.append(rest[i])
     #             self.getPermute(temp, rest[:i] + rest[i + 1:])
 
-    ___ permuteUnique  num):
+    ___ permuteUnique  num
         res =    # list
         __ l.. num) __ 0:
             r_ res
         permute(res, num, 0)
         r_ res
 
-    ___ permute  res, num, index):
-        __ index __ l.. num):
+    ___ permute  res, num, index
+        __ index __ l.. num
             res.append(list(num))
             r_
-        appeared = set()
+        appeared = s..()
         ___ i __ r.. index, l.. num)):
             __ num[i] __ appeared:
-                continue
+                c_
             appeared.add(num[i])
             num[i], num[index] = num[index], num[i]
             permute(res, num, index + 1)
             num[i], num[index] = num[index], num[i]
 
-    ___ permuteUnique  num):
+    ___ permuteUnique  num
         # iterative solution
         res = [[]]
         ___ i __ r.. l.. nums)):
-            cache = set()
+            cache = s..()
             w.. l.. res[0]) __ i:
                 curr = res.pop(0)
-                ___ j __ r.. l.. curr) + 1):
+                ___ j __ r.. l.. curr) + 1
                     # generate new n permutations from n -1 permutations
                     new_perm = curr[:j] + [nums[i]] + curr[j:]
                     stemp = ''.join(map(s.., new_perm))
-                    __ stemp not __ cache:
+                    __ stemp n.. __ cache:
                         cache.add(stemp)
                         res.append(new_perm)
         r_ res

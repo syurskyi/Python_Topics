@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ canCompleteCircuit  gas, cost):
+    ___ canCompleteCircuit  gas, cost
         """
         :type gas: List[int]
         :type cost: List[int]

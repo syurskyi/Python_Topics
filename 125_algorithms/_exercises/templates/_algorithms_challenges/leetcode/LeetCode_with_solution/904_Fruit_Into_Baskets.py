@@ -43,15 +43,15 @@ c_ Solution o..
     #             break
     #     return ans
 
-    ___ totalFruit  tree):
+    ___ totalFruit  tree
         ans = i = 0
         count = collections.Counter()
-        ___ j, x __ e.. tree):
+        ___ j, x __ e.. tree
             count[x] += 1
             w.. l.. count) >= 3:
                 count[tree[i]] -= 1
                 __ count[tree[i]] __ 0:
                     del count[tree[i]]
                 i += 1
-            ans = max(ans, j - i + 1)
+            ans = m..(ans, j - i + 1)
         r_ ans

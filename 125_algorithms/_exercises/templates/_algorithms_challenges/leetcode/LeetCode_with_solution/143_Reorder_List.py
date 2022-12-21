@@ -25,7 +25,7 @@ c_ Solution o..
     #         dmap[i].next = dmap[t]
     #     dmap[ls / 2].next = None
 
-    ___ reorderList  head):
+    ___ reorderList  head
         # Two points
         __ head is N.. or head.next is N..:
             r_

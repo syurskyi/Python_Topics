@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ validWordSquare  words):
+    ___ validWordSquare  words
         """
         :type words: List[str]
         :rtype: bool
@@ -7,7 +7,7 @@ c_ Solution o..
         __ words is N.. or l.. words) __ 0:
             r_ T..
         ls = l.. words)
-        ___ i __ r.. ls):
+        ___ i __ r.. ls
             ___ j __ r.. 1, l.. words[i])):
                 __ j >= ls:
                     r_ F..

@@ -28,14 +28,14 @@ c_ Solution o..
     #             dmap[i][j] = l + u
     #     return dmap[m - 1][n - 1]
 
-    ___ uniquePathsWithObstacles  obstacleGrid):
+    ___ uniquePathsWithObstacles  obstacleGrid
         m, n = l.. obstacleGrid), l.. obstacleGrid[0])
         __ m __ 0:
             r_ 0
         dmap = [[0] * (n + 1) ___ _ __ r.. m + 1)]
         dmap[m - 1][n] = 1
-        ___ i __ r.. m - 1, -1, -1):
-            ___ j __  r.. n - 1, -1, -1):
+        ___ i __ r.. m - 1, -1, -1
+            ___ j __  r.. n - 1, -1, -1
                 __ obstacleGrid[i][j] __ 1:
                     dmap[i][j] = 0
                 ____

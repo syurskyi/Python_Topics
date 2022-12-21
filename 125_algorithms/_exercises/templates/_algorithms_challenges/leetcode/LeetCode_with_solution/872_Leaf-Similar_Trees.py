@@ -6,13 +6,13 @@
 #         self.right = None
 
 c_ Solution o..
-    ___ leafSimilar  root1, root2):
+    ___ leafSimilar  root1, root2
         """
         :type root1: TreeNode
         :type root2: TreeNode
         :rtype: bool
         """
-        __ not root1 and not root2:
+        __ n.. root1 and n.. root2:
             r_ T..
         leaf1 =    # list
         leaf2 =    # list
@@ -22,10 +22,10 @@ c_ Solution o..
             r_ T..
         r_ F..
 
-    ___ dfs  node, leavels):
-        __ not node:
+    ___ dfs  node, leavels
+        __ n.. node:
             r_
-        __ not node.left and not node.right:
+        __ n.. node.left and n.. node.right:
             leavels.append(node.val)
         dfs(node.left, leavels)
         dfs(node.right, leavels)

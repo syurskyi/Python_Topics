@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ lengthOfLastWord  s):
+    ___ lengthOfLastWord  s
         """
         :type s: str
         :rtype: int

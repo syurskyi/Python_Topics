@@ -58,20 +58,20 @@ c_ Solution o..
     #             root = root.right
     #     return res
 
-    ___ inorderTraversal  root):
+    ___ inorderTraversal  root
         __ root is N..:
             r_    # list
         res =    # list
         stack = [root]
         w.. l.. stack) > 0:
             curr = stack.pop()
-            __ not isinstance(curr, TreeNode):
+            __ n.. isinstance(curr, TreeNode
                 res.append(curr)
-                continue
-            __ curr.right is not N..:
+                c_
+            __ curr.right is n.. N..:
                 stack.append(curr.right)
             stack.append(curr.val)
-            __ curr.left is not N..:
+            __ curr.left is n.. N..:
                 stack.append(curr.left)
         r_ res
 

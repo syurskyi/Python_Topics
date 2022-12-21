@@ -7,7 +7,7 @@
 
 c_ Solution o..
     # stack
-    ___ flatten  root):
+    ___ flatten  root
         """
         :type root: TreeNode
         :rtype: void Do not return anything, modify root in-place instead.
@@ -27,7 +27,7 @@ c_ Solution o..
                 current.left = N..
                 current = node
 
-    ___ appendNode  stack, node):
+    ___ appendNode  stack, node
         __ node:
             stack.append(node)
 

@@ -12,7 +12,7 @@ c_ Solution o..
     #     return ([x for x in A if x % 2 == 0] +
     #             [x for x in A if x % 2 == 1])
 
-    ___ sortArrayByParity  A):
+    ___ sortArrayByParity  A
         # Quit like quick sort or quick selection
         lo, hi = 0, l.. A) - 1
         w.. lo < hi:

@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ numIslands2  m, n, positions):
+    ___ numIslands2  m, n, positions
         """
         :type m: int
         :type n: int
@@ -9,13 +9,13 @@ c_ Solution o..
         # quick union find with weights
         ans =    # list
         islands = Union()
-        ___ p __ map(tuple, positions):
+        ___ p __ map(tuple, positions
             islands.add(p)
-            ___ dp __ (0, 1), (0, -1), (1, 0), (-1, 0):
+            ___ dp __ (0, 1), (0, -1), (1, 0), (-1, 0
                 q = (p[0] + dp[0], p[1] + dp[1])
                 __ q __ islands.id:
                     islands.unite(p, q)
-            ans += [islands.count]
+            ans += [islands.c..]
         r_ ans
 
 c_ Union o..
@@ -28,18 +28,18 @@ c_ Union o..
         sz  # dict
         count = 0
 
-    ___ add  p):
+    ___ add  p
         id[p] = p
         sz[p] = 1
         count += 1
 
-    ___ root  i):
+    ___ root  i
         w.. i != id[i]:
             id[i] = id[id[i]]
             i = id[i]
         r_ i
 
-    ___ unite  p, q):
+    ___ unite  p, q
         i, j = root(p), root(q)
         __ i __ j:
             r_

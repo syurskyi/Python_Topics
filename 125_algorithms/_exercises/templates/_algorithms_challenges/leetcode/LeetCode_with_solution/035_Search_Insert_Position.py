@@ -22,7 +22,7 @@ c_ Solution:
     #         return pos + 1
     #     return pos
 
-    ___ searchInsert  nums, target):
+    ___ searchInsert  nums, target
         l, r = i..(0), l.. nums) - 1
         w.. l < r:
             mid = i..((l + r) / 2)

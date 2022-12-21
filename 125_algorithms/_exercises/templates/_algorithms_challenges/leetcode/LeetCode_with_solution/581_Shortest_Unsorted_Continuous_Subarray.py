@@ -17,7 +17,7 @@ c_ Solution o..
     #         return end - start + 1
     #     return 0
 
-    ___ findUnsortedSubarray  nums):
+    ___ findUnsortedSubarray  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -29,9 +29,9 @@ c_ Solution o..
                 l = min(l, stack.pop())
             stack.append(i)
         stack =    # list
-        ___ i __ r.. l.. nums) - 1, -1, -1):
+        ___ i __ r.. l.. nums) - 1, -1, -1
             w.. l.. stack) != 0 and nums[stack[-1]] < nums[i]:
-                r = max(r, stack.pop())
+                r = m..(r, stack.pop())
             stack.append(i)
         __ r > l:
             r_ r - l + 1

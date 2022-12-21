@@ -37,14 +37,14 @@ c_ Solution o..
     #            res.append(nums[i])
     #     return res
 
-    ___ subsets  nums):
+    ___ subsets  nums
         # Sort and iteratively generate n subset with n-1 subset, O(n^2) and O(2^n)
         nums.s..
         res = [[]]
         ___ index __ r.. l.. nums)):
             size = l.. res)
             # use existing subsets to generate new subsets
-            ___ j __ r.. size):
+            ___ j __ r.. size
                 curr = list(res[j])
                 curr.append(nums[index])
                 res.append(curr)

@@ -20,7 +20,7 @@ c_ Solution o..
     #     candidates.sort(key = lambda w: (-count[w], w))
     #     return candidates[:k]
 
-    ___ topKFrequent  words, k):
+    ___ topKFrequent  words, k
         count = collections.Counter(words)
         # Note that python heapq only support min heap
         # So, we can make the value negative to create a max heap

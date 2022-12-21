@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ generatePossibleNextMoves  s):
+    ___ generatePossibleNextMoves  s
         """
         :type s: str
         :rtype: List[str]
@@ -9,7 +9,7 @@ c_ Solution o..
         __ s is N.. or l.. s) __ 0:
             r_ res
         ls = l.. s)
-        ___ i __ r.. ls - 1):
+        ___ i __ r.. ls - 1
             __ s[i] __ '+' and s[i + 1] __ '+':
                 res.append(s[:i] + '--' + s[i + 2:])
         r_ res

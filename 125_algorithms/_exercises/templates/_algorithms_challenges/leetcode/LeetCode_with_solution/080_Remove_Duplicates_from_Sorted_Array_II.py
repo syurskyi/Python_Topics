@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ removeDuplicates  nums):
+    ___ removeDuplicates  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -17,7 +17,7 @@ c_ Solution:
                 j += 1
             __ j-i > 2:
                 length -= j-i-2
-                ___ k __ r.. j-i-2):
+                ___ k __ r.. j-i-2
                     del nums[i]
                 result += 2
                 j = i+2

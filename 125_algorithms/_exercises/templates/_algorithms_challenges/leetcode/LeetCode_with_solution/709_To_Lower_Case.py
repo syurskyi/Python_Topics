@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ toLowerCase  s..):
+    ___ toLowerCase  s..
         """
         :type str: str
         :rtype: str
@@ -7,7 +7,7 @@ c_ Solution o..
         res =    # list
         gap = o.. 'a') - o.. 'A')
         ___ c __ s..:
-            __ o.. c) >= o.. 'A') and o.. c) <= o.. 'Z'):
+            __ o.. c) >= o.. 'A') and o.. c) <= o.. 'Z'
                 res.append(chr(o.. c) + gap))
             ____
                 res.append(c)

@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ numJewelsInStones  J, S):
+    ___ numJewelsInStones  J, S
         """
         :type J: str
         :type S: str
@@ -7,7 +7,7 @@ c_ Solution o..
         """
         __ l.. J) __ 0 or l.. S) __ 0:
             r_ 0
-        j_set = set(J)
+        j_set = s..(J)
         ans = 0
         ___ c __ S:
             __ c __ j_set:

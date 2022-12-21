@@ -43,7 +43,7 @@ c_ Solution o..
     #                 dp[i + 1][j + 1] = dp[i + 1][j] or dp[i][j + 1]
     #     return dp[m][n]
 
-    ___ isMatch  s, p):
+    ___ isMatch  s, p
         """
         :type s: str
         :type p: str
@@ -53,7 +53,7 @@ c_ Solution o..
         star, s_star = -1, 0
         s_len, p_len = l.. s), l.. p)
         w.. s_index < s_len:
-            __ p_index < p_len and (s[s_index] __ p[p_index] or p[p_index] __ '?'):
+            __ p_index < p_len and (s[s_index] __ p[p_index] or p[p_index] __ '?'
                 s_index += 1
                 p_index += 1
             ____ p_index < p_len and p[p_index] __ '*':

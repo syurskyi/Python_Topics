@@ -7,7 +7,7 @@ c_ Solution o..
     #     # https://discuss.leetcode.com/topic/2840/my-solution-does-not-need-a-table-for-palindrome-is-it-right-it-uses-only-o-n-space
         ls = l.. s)
         cut = [i -1 ___ i __ r.. ls + 1)]
-        ___ i __ r.. ls):
+        ___ i __ r.. ls
             # odd length
             pos = 0
             w.. i - pos >= 0 and i + pos < ls and s[i - pos] __ s[i + pos]:

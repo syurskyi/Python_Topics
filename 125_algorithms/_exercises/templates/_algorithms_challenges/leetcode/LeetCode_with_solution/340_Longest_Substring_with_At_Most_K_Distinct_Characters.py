@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ lengthOfLongestSubstringKDistinct  s, k):
+    ___ lengthOfLongestSubstringKDistinct  s, k
         """
         :type s: str
         :type k: int
@@ -18,5 +18,5 @@ c_ Solution o..
                 __ count[o.. s[i])] __ 0:
                     numDistinct -= 1
                 i += 1
-            maxLen =  max(j - i + 1, maxLen)
+            maxLen =  m..(j - i + 1, maxLen)
         r_ maxLen

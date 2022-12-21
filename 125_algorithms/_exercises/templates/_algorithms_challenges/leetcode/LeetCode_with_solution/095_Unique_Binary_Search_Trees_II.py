@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution o..
-    ___ generateTrees  n):
+    ___ generateTrees  n
         """
         :type n: int
         :rtype: List[TreeNode]
@@ -15,13 +15,13 @@ c_ Solution o..
             r_    # list
         r_ get_trees(1, n)
 
-    ___ get_trees  start, end):
+    ___ get_trees  start, end
         # recursive solve this problem
         res =    # list
         __ start > end:
             res.append(N..)
             r_ res
-        ___ i __ r.. start, end + 1):
+        ___ i __ r.. start, end + 1
             lefts = get_trees(start, i - 1)
             rights = get_trees(i + 1, end)
             ___ j __ r.. l.. lefts)):

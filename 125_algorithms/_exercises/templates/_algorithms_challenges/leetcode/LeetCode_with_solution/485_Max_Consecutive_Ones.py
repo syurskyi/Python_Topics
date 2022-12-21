@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ findMaxConsecutiveOnes  nums):
+    ___ findMaxConsecutiveOnes  nums
         """
         :type nums: List[int]
         :rtype: int

@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ spiralOrder  matrix):
+    ___ spiralOrder  matrix
         """
         :type matrix: List[List[int]]
         :rtype: List[int]
@@ -9,7 +9,7 @@ c_ Solution o..
         m, n = l.. matrix), l.. matrix[0])
         r_ get_spiralOrder(matrix, 0, m - 1, 0, n - 1)
 
-    ___ get_spiralOrder  matrix, r_start, r_end, c_start, c_end):
+    ___ get_spiralOrder  matrix, r_start, r_end, c_start, c_end
         __ r_start > r_end or c_start > c_end:
             r_    # list
         ____ r_start __ r_end:

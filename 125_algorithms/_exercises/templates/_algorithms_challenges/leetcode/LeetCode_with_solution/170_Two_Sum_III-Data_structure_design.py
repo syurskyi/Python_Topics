@@ -7,7 +7,7 @@ c_ TwoSum o..
         internal =    # list
         dic  # dict
 
-    ___ add  number):
+    ___ add  number
         """
         Add the number to an internal data structure.
         :rtype: nothing
@@ -20,7 +20,7 @@ c_ TwoSum o..
         # once
         dic[number] = F..
 
-    ___ find  value):
+    ___ find  value
         """
         Find if there exists any pair of numbers which sum is equal to the value.
         :type value: int
@@ -28,8 +28,8 @@ c_ TwoSum o..
         """
         ___ v __ internal:
             __ value - v __ dic:
-                __ v << 1 __ value and not dic[v]:
-                    continue
+                __ v << 1 __ value and n.. dic[v]:
+                    c_
                 r_ T..
         r_ F..
 

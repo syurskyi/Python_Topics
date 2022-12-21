@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ longestPalindrome  s):
+    ___ longestPalindrome  s
         """
         :type s: str
         :rtype: str
@@ -8,29 +8,29 @@ c_ Solution o..
         # expand string according to Manacher algorithm
         # but extend radius step by step
         ls = l.. s)
-        __ ls <= 1 or l.. set(s)) __ 1:
+        __ ls <= 1 or l.. s..(s)) __ 1:
             r_ s
         # create a new list like this: "abc"->"a#b#c"
-        temp_s = '#'.join('{}'.format(s))
+        temp_s = '#'.join('{}'.f..(s))
         # print temp_s
         tls = l.. temp_s)
         seed = r.. 1, tls - 1)
         # this table stores the max length palindrome
         len_table = [0] * tls
-        ___ step __ r.. 1, tls / 2 + 1):
+        ___ step __ r.. 1, tls / 2 + 1
             final =    # list
             ___ pos __ seed:
                 __ pos - step < 0 or pos + step >= tls:
-                    continue
+                    c_
                 __ temp_s[pos - step] != temp_s[pos + step]:
-                    continue
+                    c_
                 final.append(pos)
                 __ temp_s[pos - step] __ '#':
-                    continue
+                    c_
                 len_table[pos] = step
             seed = final
         max_pos, max_step = 0, 0
-        ___ i, s __ e.. len_table):
+        ___ i, s __ e.. len_table
             __ s >= max_step:
                 max_step = s
                 max_pos = i

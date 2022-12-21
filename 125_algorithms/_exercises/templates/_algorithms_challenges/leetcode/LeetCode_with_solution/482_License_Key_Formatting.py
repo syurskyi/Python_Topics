@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ licenseKeyFormatting  S, K):
+    ___ licenseKeyFormatting  S, K
         """
         :type S: str
         :type K: int

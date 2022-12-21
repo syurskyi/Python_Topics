@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ computeArea  A, B, C, D, E, F, G, H):
+    ___ computeArea  A, B, C, D, E, F, G, H
         """
         :type A: int
         :type B: int
@@ -14,10 +14,10 @@ c_ Solution o..
         # sum of areas of two rectangles
         result = (C - A) * (D - B) + (G - E) * (H - F)
         # no overlap
-        __ (C <= E or G <= A or H <= B or D <= F):
+        __ (C <= E or G <= A or H <= B or D <= F
             r_ result
         # overlap length on x
-        dx = min(C, G) - max(A, E)
+        dx = min(C, G) - m..(A, E)
         # overlap length on y
-        dy = min(D, H) - max(B, F)
+        dy = min(D, H) - m..(B, F)
         r_ result - dx * dy

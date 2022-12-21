@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ findMaximumXOR  nums):
+    ___ findMaximumXOR  nums
         """
         :type nums: List[int]
         :rtype: int

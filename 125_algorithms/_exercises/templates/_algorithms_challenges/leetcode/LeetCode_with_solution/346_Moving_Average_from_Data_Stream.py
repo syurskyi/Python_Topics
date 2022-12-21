@@ -1,6 +1,6 @@
 c_ MovingAverage o..
 
-    ___ -  size):
+    ___ -  size
         """
         Initialize your data structure here.
         :type size: int
@@ -9,7 +9,7 @@ c_ MovingAverage o..
         curr_range =    # list
         
 
-    ___ next  val):
+    ___ next  val
         """
         :type val: int
         :rtype: float
@@ -17,7 +17,7 @@ c_ MovingAverage o..
         __ l.. curr_range) __ size:
             curr_range.pop(0)
         curr_range.append(val)
-        r_ sum(curr_range) * 1.0 / l.. curr_range)
+        r_ s..(curr_range) * 1.0 / l.. curr_range)
         
 
 

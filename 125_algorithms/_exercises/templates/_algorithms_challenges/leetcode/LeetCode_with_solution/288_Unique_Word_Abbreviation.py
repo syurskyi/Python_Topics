@@ -1,10 +1,10 @@
 c_ ValidWordAbbr o..
-    ___ -  dictionary):
+    ___ -  dictionary
         """
         initialize your data structure here.
         :type dictionary: List[str]
         """
-        dictionary = set(dictionary)
+        dictionary = s..(dictionary)
         abb_dic  # dict
         ___ s __ dictionary:
             curr = getAbb(s)
@@ -13,7 +13,7 @@ c_ ValidWordAbbr o..
             ____
                 abb_dic[curr] = T..
 
-    ___ isUnique  word):
+    ___ isUnique  word
         """
         check if a word is unique.
         :type word: str
@@ -24,7 +24,7 @@ c_ ValidWordAbbr o..
         r_ hasAbbr __ N.. or (hasAbbr and word __ dictionary)
 
 
-    ___ getAbb  word):
+    ___ getAbb  word
         __ l.. word) <= 2:
             r_ word
         r_ word[0] + s..(l.. word) - 2) + word[-1]

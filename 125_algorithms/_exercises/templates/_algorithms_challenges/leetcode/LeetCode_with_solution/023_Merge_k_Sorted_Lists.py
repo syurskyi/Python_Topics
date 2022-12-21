@@ -48,7 +48,7 @@ c_ Solution o..
 
 
 
-    ___ mergeKLists  lists):
+    ___ mergeKLists  lists
         # recursive
         __ lists is N..:
             r_ N..
@@ -56,7 +56,7 @@ c_ Solution o..
             r_ N..
         r_ mergeK(lists, 0, l.. lists) - 1)
 
-    ___ mergeK  lists, low, high):
+    ___ mergeK  lists, low, high
         __ low __ high:
             r_ lists[low]
         ____ low + 1 __ high:
@@ -64,13 +64,13 @@ c_ Solution o..
         mid = (low + high) / 2
         r_ mergeTwolists(mergeK(lists, low, mid), mergeK(lists, mid + 1, high))
 
-    ___ mergeTwolists  l1, l2):
+    ___ mergeTwolists  l1, l2
         __ l1 is N..:
             r_ l2
         __ l2 is N..:
             r_ l1
         head = curr = ListNode(-1)
-        w.. l1 is not N.. and l2 is not N..:
+        w.. l1 is n.. N.. and l2 is n.. N..:
             __ l1.val <= l2.val:
                 curr.next = l1
                 l1 = l1.next
@@ -78,9 +78,9 @@ c_ Solution o..
                 curr.next = l2
                 l2 = l2.next
             curr = curr.next
-        __ l1 is not N..:
+        __ l1 is n.. N..:
             curr.next = l1
-        __ l2 is not N..:
+        __ l2 is n.. N..:
             curr.next = l2
         r_ head.next
 

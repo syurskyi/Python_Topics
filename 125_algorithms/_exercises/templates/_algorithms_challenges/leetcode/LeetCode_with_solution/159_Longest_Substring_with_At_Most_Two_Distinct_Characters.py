@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ lengthOfLongestSubstringTwoDistinct  s):
+    ___ lengthOfLongestSubstringTwoDistinct  s
         """
         :type s: str
         :rtype: int
@@ -8,11 +8,11 @@ c_ Solution o..
         # i for start, k for end, j for latest pos contains different character from k
         ___ k __ r.. 1, l.. s)):
             __ s[k] __ s[k - 1]:
-                continue
+                c_
             __ j >= 0 and s[j] != s[k]:
-                maxLen = max(k - i, maxLen)
+                maxLen = m..(k - i, maxLen)
                 # update i
                 i = j + 1
             # update
             j = k - 1
-        r_ max(l.. s) - i, maxLen)
+        r_ m..(l.. s) - i, maxLen)

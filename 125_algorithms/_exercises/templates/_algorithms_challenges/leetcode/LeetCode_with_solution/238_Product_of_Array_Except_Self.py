@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ productExceptSelf  nums):
+    ___ productExceptSelf  nums
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -8,7 +8,7 @@ c_ Solution o..
         ___ i __ r.. 1, l.. nums)):
             ans[i] = ans[i - 1] * nums[i - 1]
         right = 1
-        ___ i __ r.. l.. nums) - 1, -1, -1):
+        ___ i __ r.. l.. nums) - 1, -1, -1
             ans[i] *= right
             right *= nums[i]
         r_ ans

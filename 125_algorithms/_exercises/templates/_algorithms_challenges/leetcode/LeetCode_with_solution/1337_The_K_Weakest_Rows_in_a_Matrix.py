@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ kWeakestRows  mat, k):
+    ___ kWeakestRows  mat, k
         """
         :type mat: List[List[int]]
         :type k: int
@@ -11,9 +11,9 @@ c_ Solution o..
         col = 0
         flag = 1
         w.. col < num_col and flag:
-            ___ i __ r.. num_row):
+            ___ i __ r.. num_row
                 __ i __ res:
-                    continue
+                    c_
                 # Add first row with 0 into res
                 __ mat[i][col] __ 0:
                     res.append(i)
@@ -24,9 +24,9 @@ c_ Solution o..
         __ l.. res) __ k:
             r_ res
         # if res less than k
-        ___ i __ r.. num_row):
+        ___ i __ r.. num_row
             __ i __ res:
-                continue
+                c_
             res.append(i)
             __ l.. res) __ k:
                 break

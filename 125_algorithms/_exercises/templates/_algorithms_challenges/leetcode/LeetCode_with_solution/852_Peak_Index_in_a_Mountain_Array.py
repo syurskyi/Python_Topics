@@ -9,7 +9,7 @@ c_ Solution o..
     #         i += 1
     #     return i
 
-    ___ peakIndexInMountainArray  A):
+    ___ peakIndexInMountainArray  A
         lo, hi = 0, l.. A) - 1
         w.. lo < hi:
             mid = (lo + hi) / 2

@@ -19,12 +19,12 @@ c_ Solution o..
     #         all[i] = max(start[i], all[i + 1])
     #     return all[0]
 
-    ___ longestValidParentheses  s):
+    ___ longestValidParentheses  s
         # https://leetcode.com/discuss/87988/my-easy-o-n-java-solution-with-explanation
         ls = l.. s)
         stack =    # list
         data = [0] * ls
-        ___ i __ r.. ls):
+        ___ i __ r.. ls
             curr = s[i]
             __ curr __ '(':
                 stack.append(i)
@@ -37,9 +37,9 @@ c_ Solution o..
             __ t __ 1:
                 tep += 1
             ____
-                res = max(tep, res)
+                res = m..(tep, res)
                 tep = 0
-        r_ max(tep, res)
+        r_ m..(tep, res)
 
 __ ____ __ ____
     s  ?

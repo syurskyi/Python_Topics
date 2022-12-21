@@ -25,7 +25,7 @@ c_ Solution o..
     #             res.append(nums[i])
     #     return res
 
-    ___ subsetsWithDup  nums):
+    ___ subsetsWithDup  nums
         nums.s..
         res = [[]]
         begin = 0
@@ -35,7 +35,7 @@ c_ Solution o..
                 begin = 0
             size = l.. res)
             # use existing subsets to generate new subsets
-            ___ j __ r.. begin, size):
+            ___ j __ r.. begin, size
                 curr = list(res[j])
                 curr.append(nums[index])
                 res.append(curr)

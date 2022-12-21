@@ -9,11 +9,11 @@ c_ Solution:
         b=l.. l2)
         
         __ a>b:
-            ___ i __ r.. a-b):
+            ___ i __ r.. a-b
                 l2.append("0")
         
         ____
-            ___ i __ r.. b-a):
+            ___ i __ r.. b-a
                 l1.append("0")
             
         ___ i __ r.. l.. l1)):

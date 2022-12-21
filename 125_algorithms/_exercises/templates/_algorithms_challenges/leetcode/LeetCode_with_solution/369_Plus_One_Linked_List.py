@@ -6,7 +6,7 @@
 
 
 c_ Solution o..
-    ___ plusOne  head):
+    ___ plusOne  head
         """
         :type head: ListNode
         :rtype: ListNode
@@ -15,7 +15,7 @@ c_ Solution o..
         dummy.next = head
         place_stop, tail = dummy, dummy
         # find the tail
-        w.. tail.next is not N..:
+        w.. tail.next is n.. N..:
             tail = tail.next
             __ tail.val != 9:
                 place_stop = tail
@@ -27,7 +27,7 @@ c_ Solution o..
             place_stop.val += 1
             place_stop = place_stop.next
             # set all node behind this place to zero
-            w.. place_stop is not N..:
+            w.. place_stop is n.. N..:
                 place_stop.val = 0
                 place_stop = place_stop.next
         __ dummy.val __ 0:

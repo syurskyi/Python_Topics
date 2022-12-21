@@ -27,10 +27,10 @@ c_ Solution o..
     #         nums[i] = max(nums[i] + nums[i - 2], nums[i - 1])
     #     return nums[-1]
 
-    ___ rob  nums):
+    ___ rob  nums
         prevMax = currMax = 0
         ___ num __ nums:
             temp = currMax
-            currMax = max(prevMax + num, currMax)
+            currMax = m..(prevMax + num, currMax)
             prevMax = temp
         r_ currMax

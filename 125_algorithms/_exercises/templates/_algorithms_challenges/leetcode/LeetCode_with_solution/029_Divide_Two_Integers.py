@@ -9,7 +9,7 @@
 import math
 
 c_ Solution o..
-    ___ divide  dividend, divisor):
+    ___ divide  dividend, divisor
         __ divisor __ 0:
             r_ MAX_INT
         __ dividend __ 0:
@@ -22,7 +22,7 @@ c_ Solution o..
         res = i..(math.exp(res))
         __ isPositive:
             r_ min(res, 2147483647)
-        r_ max(0 - res, -2147483648)
+        r_ m..(0 - res, -2147483648)
 
     # def divide(self, dividend, divisor):
     #     # (dividend >= 0) ^ (divisor < 0)

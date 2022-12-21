@@ -24,17 +24,17 @@
 #        """
 
 c_ Solution o..
-    ___ depthSum  nestedList):
+    ___ depthSum  nestedList
         """
         :type nestedList: List[NestedInteger]
         :rtype: int
         """
         r_ depthSum_helper(nestedList, 1)
 
-    ___ depthSum_helper  nestedList, depth):
+    ___ depthSum_helper  nestedList, depth
         res = 0
         ___ l __ nestedList:
-            __ l.isInteger():
+            __ l.isInteger(
                 res += l.getInteger() * depth
             ____
                 res += depthSum_helper(l.getList(), depth + 1)

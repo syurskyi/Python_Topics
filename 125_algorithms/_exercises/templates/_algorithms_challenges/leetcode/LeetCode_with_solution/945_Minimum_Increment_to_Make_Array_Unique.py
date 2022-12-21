@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ minIncrementForUnique  A):
+    ___ minIncrementForUnique  A
         """
         :type A: List[int]
         :rtype: int
@@ -7,7 +7,7 @@ c_ Solution o..
         __ A is N.. or l.. A) __ 0:
             r_ 0
         res = 0
-        num_set = set()
+        num_set = s..()
         duplicate =    # list
         A.s..
         left, right = A[0], A[-1]
@@ -19,10 +19,10 @@ c_ Solution o..
                 num_set.add(v)
         holes = holes - l.. num_set)
         # find a hole for these numbers
-        ___ hole __ r.. left + 1, right):
+        ___ hole __ r.. left + 1, right
             __ holes __ 0 or l.. duplicate) __ 0:
                 break
-            __ hole not __ num_set and hole > duplicate[0]:
+            __ hole n.. __ num_set and hole > duplicate[0]:
                 res += hole - duplicate.pop(0)
                 holes -= 1
         w.. l.. duplicate) != 0:

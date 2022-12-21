@@ -24,7 +24,7 @@ c_ Solution o..
     #         firstHalf -= 1
     #     return palindrom % 1337
 
-    ___ largestPalindrome  n):
+    ___ largestPalindrome  n
         # https://leetcode.com/problems/largest-palindrome-product/discuss/96305/Python-Solution-Using-Math-In-48ms
         # https://leetcode.com/problems/largest-palindrome-product/discuss/96294/could-any-python-experts-share-their-codes-within-100ms
         __ n __ 1:
@@ -33,6 +33,6 @@ c_ Solution o..
             hi = (10 ** n) - a
             lo = i..(s..(hi)||-1])
             __ a ** 2 - 4 * lo < 0:
-                continue
-            __ (a ** 2 - 4 * lo) ** .5 __ i..((a ** 2 - 4 * lo) ** .5):
+                c_
+            __ (a ** 2 - 4 * lo) ** .5 __ i..((a ** 2 - 4 * lo) ** .5
                 r_ (lo + 10 ** n * (10 ** n - a)) % 1337

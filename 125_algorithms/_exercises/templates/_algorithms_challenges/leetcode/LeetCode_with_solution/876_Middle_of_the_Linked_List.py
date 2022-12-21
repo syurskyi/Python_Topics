@@ -16,7 +16,7 @@ c_ Solution o..
     #         head = head.next
     #     return res[len(res) / 2]
 
-    ___ middleNode  head):
+    ___ middleNode  head
         # Fast point is 2 times faster than slow point
         fast = slow = head
         w.. fast and fast.next:

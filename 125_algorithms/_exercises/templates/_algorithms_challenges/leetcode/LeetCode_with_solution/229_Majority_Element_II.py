@@ -1,14 +1,14 @@
 c_ Solution o..
-    ___ majorityElement  nums):
+    ___ majorityElement  nums
         # O(1) space
         ls = l.. nums)
         res =    # list
         check_value =    # list
-        ___ i __ r.. ls):
+        ___ i __ r.. ls
             __ nums[i] __ check_value:
-                continue
+                c_
             count = 1
-            ___ j __ r.. i + 1, ls):
+            ___ j __ r.. i + 1, ls
                 __ nums[i] __ nums[j]:
                     count += 1
             __ count > ls / 3:

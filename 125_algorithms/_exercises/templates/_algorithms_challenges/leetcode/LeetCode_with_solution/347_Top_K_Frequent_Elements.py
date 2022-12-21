@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ topKFrequent  nums, k):
+    ___ topKFrequent  nums, k
         """
         :type nums: List[int]
         :type k: int

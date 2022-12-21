@@ -42,17 +42,17 @@ c_ Solution o..
     #         index[index_pos].next = index[index_pos + 1].next
     #         return head
 
-    ___ removeNthFromEnd  head, n):
+    ___ removeNthFromEnd  head, n
         # https://leetcode.com/discuss/86721/o-n-solution-in-java
         __ head is N..:
             r_ N..
         slow = fast = head
-        ___ i __ r.. n):
+        ___ i __ r.. n
             fast = fast.next
         __ fast is N..:
             head = head.next
             r_ head
-        w.. fast.next is not N..:
+        w.. fast.next is n.. N..:
             fast = fast.next
             slow = slow.next
         curr = slow.next

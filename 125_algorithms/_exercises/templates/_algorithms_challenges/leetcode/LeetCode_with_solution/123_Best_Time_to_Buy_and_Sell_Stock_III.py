@@ -19,16 +19,16 @@ c_ Solution o..
     #     return max_profit
 
     # https://discuss.leetcode.com/topic/50360/python-dp-and-non-dp-solution
-    ___ maxProfit  prices):
+    ___ maxProfit  prices
         ls = l.. prices)
         __ ls __ 0:
             r_ 0
         b1 = b2 = -prices[0]
         s1 = s2 = 0
-        ___ i __ xrange(1, ls):
-            s2 = max(s2, b2 + prices[i])
-            b2 = max(b2, s1 - prices[i])
-            s1 = max(b1 + prices[i], s1)
-            b1 = max(b1, -prices[i])
-        r_ max(s1, s2)
+        ___ i __ xrange(1, ls
+            s2 = m..(s2, b2 + prices[i])
+            b2 = m..(b2, s1 - prices[i])
+            s1 = m..(b1 + prices[i], s1)
+            b1 = m..(b1, -prices[i])
+        r_ m..(s1, s2)
 

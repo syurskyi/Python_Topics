@@ -5,12 +5,12 @@
 #         :rtype: bool
 #         """
 c_ Solution o..
-    ___ isValidSudoku  board):
+    ___ isValidSudoku  board
         vset = [0] * 9
         hset = [0] * 9
         bset = [0] * 9
-        ___ i __ r.. 9):
-            ___ j __ r.. 9):
+        ___ i __ r.. 9
+            ___ j __ r.. 9
                 curr = board[i][j]
                 __ curr != '.':
                     index = 1 << (o.. curr) - o.. '0'))

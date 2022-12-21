@@ -19,12 +19,12 @@ c_ Solution o..
     #                          prefix + [candidates[index]],
     #                          k - 1, index + 1)
 
-    ___ combine  n, k):
+    ___ combine  n, k
         res =    # list
         get_combine(res,    # list, n, k, 1)
         r_ res
 
-    ___ get_combine  res, prefix, n, k, start):
+    ___ get_combine  res, prefix, n, k, start
         # recursive with only one array
         __ k __ 0:
             res.append(list(prefix))

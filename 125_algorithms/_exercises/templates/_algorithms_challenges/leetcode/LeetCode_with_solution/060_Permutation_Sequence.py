@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ getPermutation  n, k):
+    ___ getPermutation  n, k
         """
         :type n: int
         :type k: int
@@ -17,7 +17,7 @@ c_ Solution o..
         r_ ''.join(s..(t) ___ t __ res)
 
 
-    ___ do_getPermutation  remain, curr, n, k):
+    ___ do_getPermutation  remain, curr, n, k
         __ n __ 0 or k <= 0 or curr __ 0:
             r_ remain
         # which block

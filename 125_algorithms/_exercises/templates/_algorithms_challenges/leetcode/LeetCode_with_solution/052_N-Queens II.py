@@ -51,16 +51,16 @@ c_ Solution o..
     ___ - ____:
         count = 0
 
-    ___ totalNQueens  n):
+    ___ totalNQueens  n
         dfs(0, n, 0, 0, 0)
         r_ count
 
-    ___ dfs  row, n, column, diag, antiDiag):
+    ___ dfs  row, n, column, diag, antiDiag
         # https://leetcode.com/discuss/89951/share-my-java-code-beats-97-83%25-run-times
         __ row __ n:
             count += 1
             r_
-        ___ index __ r.. n):
+        ___ index __ r.. n
             # column check
             isColSafe = (1 << index) & column __ 0
             # diagonal, all nodes have the same n - 1 + row - index

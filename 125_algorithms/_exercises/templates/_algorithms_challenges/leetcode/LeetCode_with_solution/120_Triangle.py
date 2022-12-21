@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ minimumTotal  triangle):
+    ___ minimumTotal  triangle
         """
         :type triangle: List[List[int]]
         :rtype: int
@@ -9,7 +9,7 @@ c_ Solution o..
         ls = l.. triangle)
         dp = [0] * ls
         dp[0] = triangle[0][0]
-        ___ i __ r.. 1, ls):
+        ___ i __ r.. 1, ls
             # note that dp should be updated in reversed order
             dp[i] = dp[i - 1] + triangle[i][i]
             ___ j __ reversed(r.. 1, i)):

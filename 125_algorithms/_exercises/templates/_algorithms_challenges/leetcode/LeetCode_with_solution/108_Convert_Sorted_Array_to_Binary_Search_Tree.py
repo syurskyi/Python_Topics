@@ -20,11 +20,11 @@ c_ Solution o..
     #     root.right = self.sortedArrayToBST(nums[mid + 1:])
     #     return root
 
-    ___ sortedArrayToBST  nums):
+    ___ sortedArrayToBST  nums
         # Recursion with index
         r_ getHelper(nums, 0, l.. nums) - 1)
 
-    ___ getHelper  nums, start, end):
+    ___ getHelper  nums, start, end
         __ start > end:
             r_ N..
         mid = (start + end) / 2

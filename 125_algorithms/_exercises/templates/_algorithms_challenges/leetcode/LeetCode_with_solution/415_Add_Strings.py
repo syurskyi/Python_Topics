@@ -32,7 +32,7 @@ c_ Solution o..
     #         res.insert(0, str(carry))
     #     return ''.join(res)
 
-    ___ addStrings  num1, num2):
+    ___ addStrings  num1, num2
         res =    # list
         pos1 = l.. num1) - 1
         pos2 = l.. num2) - 1

@@ -16,7 +16,7 @@ c_ Solution o..
     #         res.value |= ((count[i] % 3) << i)
     #     return res.value
 
-    ___ singleNumber  nums):
+    ___ singleNumber  nums
         # bitmask
         # ones as a bitmask to represent the ith bit had appeared once.
         # twos as a bitmask to represent the ith bit had appeared twice.

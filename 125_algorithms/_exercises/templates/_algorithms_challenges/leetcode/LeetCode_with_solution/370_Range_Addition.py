@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ getModifiedArray  length, updates):
+    ___ getModifiedArray  length, updates
         """
         :type length: int
         :type updates: List[List[int]]
@@ -13,6 +13,6 @@ c_ Solution o..
             __ end < length - 1:
                 res[end + 1] -= val
         # Cumulative sums
-        ___ i __ r.. 1, length):
+        ___ i __ r.. 1, length
             res[i] = res[i] + res[i - 1]
         r_ res

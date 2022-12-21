@@ -48,7 +48,7 @@ c_ Queue o..
         stack2 =    # list
 
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: nothing
@@ -60,7 +60,7 @@ c_ Queue o..
         :rtype: nothing
         """
         __ l.. stack2) __ 0:
-            w.. l.. stack1):
+            w.. l.. stack1
                 curr = stack1.pop()
                 stack2.append(curr)
         stack2.pop()
@@ -71,7 +71,7 @@ c_ Queue o..
         :rtype: int
         """
         __ l.. stack2) __ 0:
-            w.. l.. stack1):
+            w.. l.. stack1
                 curr = stack1.pop()
                 stack2.append(curr)
         r_ stack2[-1]

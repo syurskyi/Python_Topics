@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution o..
-    ___ hasPathSum  root, sum):
+    ___ hasPathSum  root, s..
         """
         :type root: TreeNode
         :type sum: int
@@ -14,11 +14,11 @@ c_ Solution o..
         """
         __ root is N..:
             r_ F..
-        sum = sum - root.val
-        __ sum __ 0 and root.left is N.. and root.right is N..:
+        s.. = s.. - root.val
+        __ s.. __ 0 and root.left is N.. and root.right is N..:
             r_ T..
         # check left
-        left = hasPathSum(root.left, sum)
+        left = hasPathSum(root.left, s..)
         # check right
-        right = hasPathSum(root.right, sum)
+        right = hasPathSum(root.right, s..)
         r_ (left or right)

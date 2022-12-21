@@ -7,7 +7,7 @@
 
 
 c_ Solution o..
-    ___ constructMaximumBinaryTree  nums):
+    ___ constructMaximumBinaryTree  nums
         """
         :type nums: List[int]
         :rtype: TreeNode
@@ -16,7 +16,7 @@ c_ Solution o..
         __ nums is N.. or l.. nums) __ 0:
             r_ N..
         max_index, max_value = 0, 0
-        ___ i, value __ e.. nums):
+        ___ i, value __ e.. nums
             __ value >= max_value:
                 max_value = value
                 max_index = i

@@ -11,14 +11,14 @@ c_ Solution o..
     #         S[x] = max((S[d] for d in S if x % d == 0), key=len) | {x}
     #     return list(max(S.values(), key=len))
 
-    ___ largestDivisibleSubset  nums):
+    ___ largestDivisibleSubset  nums
         ls = l.. nums)
-        S = {-1: set()}
-        ___ num __ sorted(nums):
+        S = {-1: s..()}
+        ___ num __ s..(nums
             candicate =    # list
             ___ key __ S:
                 __ num % key __ 0:
                     candicate.append(S[key])
             # max previous with curr
-            S[num] = max(candicate, key=len) | {num}
+            S[num] = m..(candicate, key=l..) | {num}
         r_

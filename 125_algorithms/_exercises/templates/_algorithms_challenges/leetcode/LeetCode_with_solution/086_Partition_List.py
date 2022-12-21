@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution o..
-    ___ partition  head, x):
+    ___ partition  head, x
         """
         :type head: ListNode
         :type x: int
@@ -15,7 +15,7 @@ c_ Solution o..
             r_ N..
         less = lesshead = N..
         last = pos = head
-        w.. pos is not N..:
+        w.. pos is n.. N..:
             __ pos.val < x:
                 __ lesshead is N..:
                     lesshead = pos
@@ -29,7 +29,7 @@ c_ Solution o..
             ____
                 last = pos
             pos = pos.next
-        __ lesshead is not N..:
+        __ lesshead is n.. N..:
             less.next = head
         ____
             lesshead = head

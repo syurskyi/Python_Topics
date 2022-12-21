@@ -1,11 +1,11 @@
 c_ Solution o..
-    ___ containsDuplicate  nums):
+    ___ containsDuplicate  nums
         """
         :type nums: List[int]
         :rtype: bool
         """
         # use set to check duplicate
-        r_ l.. nums) != l.. set(nums))
+        r_ l.. nums) != l.. s..(nums))
 
     # def containsDuplicate(self, nums):
     #     nums.sort()

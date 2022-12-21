@@ -5,15 +5,15 @@ c_ Solution o..
         memo.append(0)
         memo.append(1)
 
-    ___ fib  N):
+    ___ fib  N
         """
         DP with memo
         :type N: int
         :rtype: int
         """
-        __ N < l.. memo):
+        __ N < l.. memo
             r_ memo[N]
-        ___ i __ r.. l.. memo), N + 1):
+        ___ i __ r.. l.. memo), N + 1
             memo.append(memo[i - 1] + memo[i - 2])
         r_ memo[N]
 

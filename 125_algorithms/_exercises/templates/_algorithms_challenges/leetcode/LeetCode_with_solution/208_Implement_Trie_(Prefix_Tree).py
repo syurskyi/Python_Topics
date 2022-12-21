@@ -7,13 +7,13 @@ c_ TrieNode o..
         links = [N..] * 26
         isEnd = F..
 
-    ___ containsKey  ch):
+    ___ containsKey  ch
         r_ links[o.. ch) - o.. 'a')] != N..
 
-    ___ get  ch):
+    ___ get  ch
         r_ links[o.. ch) - o.. 'a')]
 
-    ___ put  ch, node):
+    ___ put  ch, node
         links[o.. ch) - o.. 'a')] = node
 
     ___ setEnd ____:
@@ -24,7 +24,7 @@ c_ Trie o..
     ___ - ____:
         root = TrieNode()
 
-    ___ insert  word):
+    ___ insert  word
         """
         Inserts a word into the trie.
         :type word: str
@@ -38,28 +38,28 @@ c_ Trie o..
             node = node.get(ch)
         node.setEnd()
 
-    ___ searchPrefix  word):
+    ___ searchPrefix  word
         node = root
         ___ i __ r.. l.. word)):
             ch = word[i]
-            __ node.containsKey(ch):
+            __ node.containsKey(ch
                 node = node.get(ch)
             ____
                 r_ N..
         r_ node
 
 
-    ___ search  word):
+    ___ search  word
         """
         Returns if the word is in the trie.
         :type word: str
         :rtype: bool
         """
         node = searchPrefix(word)
-        r_ node is not N.. and node.isEnd
+        r_ node is n.. N.. and node.isEnd
 
 
-    ___ startsWith  prefix):
+    ___ startsWith  prefix
         """
         Returns if there is any word in the trie
         that starts with the given prefix.
@@ -67,7 +67,7 @@ c_ Trie o..
         :rtype: bool
         """
         node = searchPrefix(prefix)
-        r_ node is not N..
+        r_ node is n.. N..
 
 
         # Your Trie object will be instantiated and called as such:

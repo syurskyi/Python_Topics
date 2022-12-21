@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution o..
-    ___ insertionSortList  head):
+    ___ insertionSortList  head
         """
         :type head: ListNode
         :rtype: ListNode
@@ -15,7 +15,7 @@ c_ Solution o..
             r_ N..
         helper = ListNode(-1000)
         pre, curr = helper, head
-        w.. curr is not N..:
+        w.. curr is n.. N..:
             next_step = curr.next
             w.. pre.next and pre.next.val < curr.val:
                 pre = pre.next

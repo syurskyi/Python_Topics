@@ -26,7 +26,7 @@ c_ Solution o..
     #     self.preorderTraversalHelper(node.left)
     #     self.preorderTraversalHelper(node.right)
 
-    ___ preorderTraversal  root):
+    ___ preorderTraversal  root
         # stack
         __ root is N..:
             r_    # list
@@ -35,9 +35,9 @@ c_ Solution o..
         w.. l.. stack) > 0:
             curr = stack.pop()
             res.append(curr.val)
-            __ curr.right is not N..:
+            __ curr.right is n.. N..:
                 stack.append(curr.right)
-            __ curr.left is not N..:
+            __ curr.left is n.. N..:
                 stack.append(curr.left)
         r_ res
 

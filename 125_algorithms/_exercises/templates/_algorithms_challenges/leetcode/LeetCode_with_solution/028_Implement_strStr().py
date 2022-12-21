@@ -37,7 +37,7 @@ c_ Solution o..
 
     # KMP
     # https://discuss.leetcode.com/topic/3576/accepted-kmp-solution-in-java-for-reference/2
-    ___ strStr  haystack, needle):
+    ___ strStr  haystack, needle
         lsh, lsn = l.. haystack), l.. needle)
         __ lsn __ 0:
             r_ 0
@@ -53,7 +53,7 @@ c_ Solution o..
                 j = next[j]
         r_ -1
 
-    ___ makeNext  needle):
+    ___ makeNext  needle
         ls = l.. needle)
         next = [0] * ls
         next[0], i, j = -1, 0, -1

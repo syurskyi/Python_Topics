@@ -42,7 +42,7 @@ c_ Solution o..
     #         res = '1' + res
     #     return res
 
-    ___ addBinary  a, b):
+    ___ addBinary  a, b
         res = ''
         lsa, lsb = l.. a), l.. b)
         pos, plus, curr = -1, 0, 0

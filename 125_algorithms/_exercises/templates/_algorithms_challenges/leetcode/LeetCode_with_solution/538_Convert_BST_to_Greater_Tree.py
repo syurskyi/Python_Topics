@@ -11,15 +11,15 @@ c_ Solution o..
     #         self.convertBST(root.left)
     #     return root
 
-    ___ convertBST  root):
+    ___ convertBST  root
         total = 0
         
         node = root
         stack =    # list
-        w.. stack or node is not N..:
+        w.. stack or node is n.. N..:
             # push all nodes up to (and including) this subtree's maximum on
             # the stack.
-            w.. node is not N..:
+            w.. node is n.. N..:
                 stack.append(node)
                 node = node.right
 

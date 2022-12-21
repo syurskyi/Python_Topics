@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ jump  nums):
+    ___ jump  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -11,9 +11,9 @@ c_ Solution:
         step = 1
         maxDis = 0 + nums[0]
         w.. end < l.. nums) - 1:
-            ___ i __ r.. start + 1, end + 1):
+            ___ i __ r.. start + 1, end + 1
                 # greedy
-                maxDis = max(maxDis, nums[i] + i)
+                maxDis = m..(maxDis, nums[i] + i)
             start = end
             end = maxDis
             step += 1

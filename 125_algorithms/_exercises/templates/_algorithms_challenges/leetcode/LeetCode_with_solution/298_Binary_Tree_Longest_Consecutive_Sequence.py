@@ -7,14 +7,14 @@
 
 
 c_ Solution o..
-    ___ longestConsecutive  root):
+    ___ longestConsecutive  root
         """
         :type root: TreeNode
         :rtype: int
         """
         r_ longestConsecutive_helper(root, -10000, 1)
 
-    ___ longestConsecutive_helper  root, previous, curr):
+    ___ longestConsecutive_helper  root, previous, curr
         # Top down recursion
         __ root is N..:
             r_ 0
@@ -24,7 +24,7 @@ c_ Solution o..
             curr = 1
         l_res = longestConsecutive_helper(root.left, root.val, curr)
         r_res = longestConsecutive_helper(root.right, root.val, curr)
-        r_ max(curr, l_res, r_res)
+        r_ m..(curr, l_res, r_res)
 
     # def __init__(self):
     #     self.max_length = 0

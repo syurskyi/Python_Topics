@@ -25,15 +25,15 @@ c_ Solution o..
     #         pos += 1
     #     return pos - start
 
-    ___ findShortestSubArray  nums):
+    ___ findShortestSubArray  nums
         left, right, count  # dict, {}, {}
-        ___ i, x __ e.. nums):
-            __ x not __ left: left[x] = i
+        ___ i, x __ e.. nums
+            __ x n.. __ left: left[x] = i
             right[x] = i
             count[x] = count.get(x, 0) + 1
 
         ans = l.. nums)
-        degree = max(count.values())
+        degree = m..(count.values())
         ___ x __ count:
             __ count[x] __ degree:
                 ans = min(ans, right[x] - left[x] + 1)

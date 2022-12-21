@@ -34,7 +34,7 @@ c_ Solution o..
     #         res.append(curr)
     #     return res
 
-    ___ fizzBuzz  n):
+    ___ fizzBuzz  n
         r_ [s..(i) * (i % 3 != 0 and i % 5 != 0) + "Fizz" * (i % 3 __ 0) + "Buzz" * (i % 5 __ 0)
                 ___ i __ r.. 1, n + 1)]
     

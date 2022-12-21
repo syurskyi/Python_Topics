@@ -3,7 +3,7 @@
         
 #
 c_ Solution:
-    ___ isValid  s):
+    ___ isValid  s
         """
         :type s: str
         :rtype: bool

@@ -17,15 +17,15 @@ c_ Solution o..
 
     #     return map("".join, ans)
 
-    ___ letterCasePermutation  S):
-        B = sum(letter.isalpha() ___ letter __ S)
+    ___ letterCasePermutation  S
+        B = s..(letter.isalpha() ___ letter __ S)
         ans =    # list
 
-        ___ bits __ xrange(1 << B):
+        ___ bits __ xrange(1 << B
             b = 0
             word =    # list
             ___ letter __ S:
-                __ letter.isalpha():
+                __ letter.isalpha(
                     __ (bits >> b) & 1:
                         word.append(letter.lower())
                     ____

@@ -24,7 +24,7 @@ c_ Solution o..
     #         # left side sorted
     #         return self.get_min(nums, mid, end)
 
-    ___ findMin  nums):
+    ___ findMin  nums
         # A[l] > A[r]
         l, r = 0, l.. nums) - 1
         w.. l < r and nums[l] >= nums[r]:

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ search  nums, target):
+    ___ search  nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -8,7 +8,7 @@ c_ Solution:
         # binary search
         # if start < mid, then left part is sorted
         # if mid < end, then right part is sorted
-        ___ get(start, end):
+        ___ get(start, end
           __ start > end:
             r_ -1
           mid = (start + end) / 2

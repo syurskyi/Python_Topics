@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ numIslands  grid):
+    ___ numIslands  grid
         """
         :type grid: List[List[str]]
         :rtype: int
@@ -15,7 +15,7 @@ c_ Solution o..
                     islands += 1
         r_ islands
 
-    ___ explore  grid, i, j):
+    ___ explore  grid, i, j
         grid[i][j] = 'X'
         __ i - 1 >= 0 and grid[i - 1][j] __ '1':
             explore(grid, i - 1, j)

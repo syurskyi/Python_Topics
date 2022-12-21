@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ rotate  matrix):
+    ___ rotate  matrix
         """
         :type matrix: List[List[int]]
         :rtype: void Do not return anything, modify matrix in-place instead.
@@ -8,10 +8,10 @@ c_ Solution o..
         __ matrix is N.. or l.. matrix) __ 1:
             r_
         ls = l.. matrix)
-        ___ i __ r.. ls / 2):
+        ___ i __ r.. ls / 2
             # border
             begin, end = i, ls - 1 - i
-            ___ k __ r.. ls - 2 * i - 1):
+            ___ k __ r.. ls - 2 * i - 1
                 temp = matrix[end - k][begin]
                 matrix[end - k][begin] = matrix[end][end - k]
                 matrix[end][end - k] = matrix[begin + k][end]

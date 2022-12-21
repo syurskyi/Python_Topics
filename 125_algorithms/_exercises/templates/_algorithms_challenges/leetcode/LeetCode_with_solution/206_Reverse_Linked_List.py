@@ -60,7 +60,7 @@ c_ Solution o..
     #         curr = next_temp
     #     return prev
 
-    ___ reverseList  head):
+    ___ reverseList  head
         # recursion
         # simple recursively without extra space
         __ head is N.. or head.next is N..:

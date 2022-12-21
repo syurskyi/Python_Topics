@@ -18,11 +18,11 @@ c_ Solution o..
     #                 ans = word
     #     return ans
 
-    ___ longestWord  words):
+    ___ longestWord  words
         Trie = lambda: collections.defaultdict(Trie)
         trie = Trie()
         END = T..
-        ___ i, word __ e.. words):
+        ___ i, word __ e.. words
             reduce(dict.-g, word, trie)[END] = i
         stack = trie.values()
         ans = ""
@@ -32,5 +32,5 @@ c_ Solution o..
                 word = words[cur[END]]
                 __ l.. word) > l.. ans) or l.. word) __ l.. ans) and word < ans:
                     ans = word
-                stack.extend([cur[letter] ___ letter __ cur __ letter != END])
+                stack.e..([cur[letter] ___ letter __ cur __ letter != END])
         r_ ans

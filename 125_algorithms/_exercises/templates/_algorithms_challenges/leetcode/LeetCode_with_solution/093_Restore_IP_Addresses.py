@@ -35,14 +35,14 @@ c_ Solution o..
     #         return False
     #     return True
 
-    ___ restoreIpAddresses  s):
+    ___ restoreIpAddresses  s
         ls = l.. s)
         __ ls __ 0 or ls > 12:
             r_    # list
         res =    # list
-        ___ i __ r.. 1, 4):
-            ___ j __ r.. 1, 4):
-                ___ k __ r.. 1, 4):
+        ___ i __ r.. 1, 4
+            ___ j __ r.. 1, 4
+                ___ k __ r.. 1, 4
                     m = ls - i - j - k
                     __ m > 0 and m <= 3:
                         add1 = s[0:i]
@@ -50,11 +50,11 @@ c_ Solution o..
                         add3 = s[i + j:i + j + k]
                         add4 = s[i + j + k:]
                         __ isValid(add1) and isValid(add2) and \
-                                        isValid(add3) and isValid(add4):
+                                        isValid(add3) and isValid(add4
                             res.append(add1 + '.' + add2 + '.' + add3 + '.' + add4)
         r_ res
 
-    ___ isValid  add):
+    ___ isValid  add
         __ l.. add) __ 1:
             r_ T..
         __ add[0] __ '0':

@@ -13,7 +13,7 @@ c_ Solution o..
     #         return False
     #     return True
 
-    ___ isPowerOfThree  n):
+    ___ isPowerOfThree  n
         max3pow = 1162261467
         __ n <= 0 or n > max3pow:
             r_ F..

@@ -1,15 +1,15 @@
 c_ Solution o..
-    ___ thirdMax  nums):
+    ___ thirdMax  nums
         """
         :type nums: List[int]
         :rtype: int
         """
         import Queue
         pq = Queue.PriorityQueue(4)
-        check = set()
+        check = s..()
         ___ n __ nums:
             __ n __ check:
-                continue
+                c_
             pq.put(n)
             check.add(n)
             __ l.. check) > 3:

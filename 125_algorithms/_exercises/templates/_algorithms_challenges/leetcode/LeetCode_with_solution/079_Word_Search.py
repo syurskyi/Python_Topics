@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ exist  board, word):
+    ___ exist  board, word
         """
         :type board: List[List[str]]
         :type word: str
@@ -17,7 +17,7 @@ c_ Solution o..
         r_ F..
 
 
-    ___ check_exist  check_board, board, word, index, ls, row, col):
+    ___ check_exist  check_board, board, word, index, ls, row, col
         __ index __ ls:
             r_ T..
         ___ temp __ [(0, 1),(0, -1),(1, 0),(-1, 0)]:

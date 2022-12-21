@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ nextPermutation  nums):
+    ___ nextPermutation  nums
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
@@ -8,8 +8,8 @@ c_ Solution o..
         __ ls <= 1:
             r_
         pair =    # list
-        ___ i __ r.. ls):
-            ___ j __ r.. i + 1, ls):
+        ___ i __ r.. ls
+            ___ j __ r.. i + 1, ls
                 # append ascending order pair
                 __ nums[i] < nums[j]:
                     pair.append([i,j])
@@ -18,12 +18,12 @@ c_ Solution o..
             swap(nums, pair[-1][0], pair[-1][1])
             pos = pair[-1][0] + 1
         # sort from pos
-        ___ i __ r.. pos, ls):
-            ___ j __ r.. i + 1, ls):
+        ___ i __ r.. pos, ls
+            ___ j __ r.. i + 1, ls
                 __ nums[i] > nums[j]:
                     swap(nums, i, j)
 
-    ___ swap  nums, index1, index2):
+    ___ swap  nums, index1, index2
         __ index1 __ index2:
             r_
         nums[index1], nums[index2] = nums[index2], nums[index1]

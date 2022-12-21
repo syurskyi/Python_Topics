@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ maxProfit  prices):
+    ___ maxProfit  prices
         """
         :type prices: List[int]
         :rtype: int
@@ -8,7 +8,7 @@ c_ Solution o..
         __ length __ 0:
             r_ 0
         max_profit, low = 0, prices[0]
-        ___ i __ r.. 1, length):
+        ___ i __ r.. 1, length
             __ low > prices[i]:
                 low = prices[i]
             ____

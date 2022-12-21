@@ -1,5 +1,5 @@
 c_ LRUCache o..
-    ___ -  capacity):
+    ___ -  capacity
         """
         :type capacity: int
         """
@@ -7,11 +7,11 @@ c_ LRUCache o..
         cache  # dict
         queue =    # list
 
-    ___ updateQueue  key):
+    ___ updateQueue  key
         queue.remove(key)
         queue.insert(0, key)
 
-    ___ get  key):
+    ___ get  key
         """
         :rtype: int
         """
@@ -21,7 +21,7 @@ c_ LRUCache o..
         ____
             r_ -1
 
-    ___ put  key, value):
+    ___ put  key, value
         """
         :type key: int
         :type value: int

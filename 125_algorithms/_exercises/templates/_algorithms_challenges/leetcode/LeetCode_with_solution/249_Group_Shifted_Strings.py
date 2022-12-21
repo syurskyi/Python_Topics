@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ groupStrings  strings):
+    ___ groupStrings  strings
         """
         :type strings: List[str]
         :rtype: List[List[str]]
@@ -13,7 +13,7 @@ c_ Solution o..
                 dic[key] = [s]
         r_ dic.values()
 
-    ___ hashCode  string):
+    ___ hashCode  string
         __ string is N.. or l.. string) __ 0:
             r_ ''
         __ l.. string) __ 1:
@@ -24,7 +24,7 @@ c_ Solution o..
         key = 'a'
         ___ ch __ string[1:]:
             curr = o.. ch) - step
-            __ o.. ch) - step < o.. 'a'):
+            __ o.. ch) - step < o.. 'a'
                 curr += 26
             key += chr(curr)
         r_ key

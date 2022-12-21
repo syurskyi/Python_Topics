@@ -10,19 +10,19 @@ c_ Solution o..
         offset = 0
         bufsize = 0
 
-    ___ read  buf, n):
+    ___ read  buf, n
         """
         :type buf: Destination buffer (List[str])
         :type n: Maximum number of characters to read (int)
         :rtype: The number of characters read (int)
         """
         pos, eof = 0, F..
-        w.. not eof and pos < n:
+        w.. n.. eof and pos < n:
             __ bufsize __ 0:
                 bufsize = read4(buff)
                 eof = bufsize < 4
             byte = min(n - pos, bufsize)
-            ___ i __ r.. byte):
+            ___ i __ r.. byte
                 buf[pos + i] = buff[offset + i]
             offset = (offset + byte) % 4
             bufsize -= byte

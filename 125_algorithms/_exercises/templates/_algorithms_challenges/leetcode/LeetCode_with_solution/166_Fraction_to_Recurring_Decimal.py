@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ fractionToDecimal  numerator, denominator):
+    ___ fractionToDecimal  numerator, denominator
         """
         :type numerator: int
         :type denominator: int
@@ -8,7 +8,7 @@ c_ Solution o..
         __ numerator __ 0:
             r_ '0'
         fraction = ''
-        __ (numerator < 0) ^ (denominator < 0):
+        __ (numerator < 0) ^ (denominator < 0
             fraction += '-'
         dividend = abs(numerator)
         divisor = abs(denominator)

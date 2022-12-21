@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ isPowerOfTwo  n):
+    ___ isPowerOfTwo  n
         """
         :type n: int
         :rtype: bool
@@ -7,4 +7,4 @@ c_ Solution o..
         __ n < 0:
             r_ F..
         bin_str = bin(n)
-        r_ sum(map(lambda x: i..(x), list(bin_str[2:]))) __ 1
+        r_ s..(map(lambda x: i..(x), list(bin_str[2:]))) __ 1

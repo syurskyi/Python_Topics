@@ -7,7 +7,7 @@
 #         self.next = None
 
 c_ Solution o..
-    ___ connect  root):
+    ___ connect  root
         """
         :type root: TreeLinkNode
         :rtype: nothing
@@ -19,11 +19,11 @@ c_ Solution o..
             next_step =    # list
             last = N..
             ___ node __ nodes:
-                __ last is not N..:
+                __ last is n.. N..:
                     last.next = node
-                __ node.left is not N..:
+                __ node.left is n.. N..:
                     next_step.append(node.left)
-                __ node.right is not N..:
+                __ node.right is n.. N..:
                     next_step.append(node.right)
                 last = node
             nodes = next_step

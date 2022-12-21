@@ -20,15 +20,15 @@ c_ Solution o..
     #     dp[begin][end] = res
     #     return res
 
-    ___ getMoneyAmount  n):
+    ___ getMoneyAmount  n
         # bottom up dp
         # https://discuss.leetcode.com/topic/51353/simple-dp-solution-with-explanation/2
         dp = [[0] * (n + 1) ___ _ __ r.. n + 1)]
-        ___ j __ r.. 2, n + 1):
-            ___ i __ r.. j - 1, 0, -1):
+        ___ j __ r.. 2, n + 1
+            ___ i __ r.. j - 1, 0, -1
                 globalMin = sys.maxint
-                ___ k __ r.. i + 1, j):
-                    localMax = k + max(dp[i][k - 1], dp[k + 1][j])
+                ___ k __ r.. i + 1, j
+                    localMax = k + m..(dp[i][k - 1], dp[k + 1][j])
                     globalMin = min(globalMin, localMax)
                 __ i + 1 __ j:
                     dp[i][j] = i

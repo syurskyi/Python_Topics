@@ -28,7 +28,7 @@ c_ Solution o..
     #         count[amount - 1] = min_count
     #     return count[amount - 1]
 
-    ___ coinChange  coins, amount):
+    ___ coinChange  coins, amount
         # bottom-up dp
         __ amount __ 0:
             r_ 0
@@ -36,7 +36,7 @@ c_ Solution o..
             r_ -1
         coins.s..
         dp = [1000000000] * (amount + 1)
-        ___ i __ r.. 1, amount + 1):
+        ___ i __ r.. 1, amount + 1
             ___ coin __ coins:
                 __ i __ coin:
                     dp[i] = 1

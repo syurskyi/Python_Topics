@@ -4,7 +4,7 @@
 # def isBadVersion(version):
 
 c_ Solution o..
-    ___ firstBadVersion  n):
+    ___ firstBadVersion  n
         """
         :type n: int
         :rtype: int
@@ -12,7 +12,7 @@ c_ Solution o..
         left, right= 1, n
         w.. left < right:
             mid = (right + left) / 2
-            __ isBadVersion(mid):
+            __ isBadVersion(mid
                 right = mid
             ____
                 left = mid + 1

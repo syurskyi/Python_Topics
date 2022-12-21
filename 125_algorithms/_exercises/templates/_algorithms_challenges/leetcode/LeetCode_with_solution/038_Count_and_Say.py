@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ countAndSay  n):
+    ___ countAndSay  n
         """
         :type n: int
         :rtype: str
@@ -13,7 +13,7 @@ c_ Solution:
             n -= 1
         r_ x
 
-    ___ count  x):
+    ___ count  x
         m = list(x)
         res =    # list
         m.append(N..)

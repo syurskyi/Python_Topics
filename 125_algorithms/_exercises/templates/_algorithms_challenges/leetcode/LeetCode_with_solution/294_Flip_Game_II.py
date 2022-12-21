@@ -12,21 +12,21 @@ c_ Solution o..
     #                 return True
     #     return False
 
-    ___ canWin  s):
+    ___ canWin  s
         __ s is N.. or l.. s) < 2:
             r_ F..
         list_s = list(s)
         r_ canWin_helper(list_s)
 
-    ___ canWin_helper  s):
-        ___ i __ r.. l.. s) - 1):
+    ___ canWin_helper  s
+        ___ i __ r.. l.. s) - 1
             __ s[i] __ '+' and s[i + 1] __ '+':
                 s[i] = '-'
                 s[i + 1] = '-'
                 res = canWin_helper(s)
                 s[i] = '+'
                 s[i + 1] = '+'
-                __ not res:
+                __ n.. res:
                     r_ T..
         r_ F..
 

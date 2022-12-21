@@ -25,7 +25,7 @@ c_ Solution:
     #     else:
     #         return -1 * result
 
-    ___ reverse  x):
+    ___ reverse  x
         # Note that in Python -1 / 10 = -1
         res, isPos = 0, 1
         __ x < 0:

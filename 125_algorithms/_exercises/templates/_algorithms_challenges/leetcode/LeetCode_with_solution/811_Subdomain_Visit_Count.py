@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ subdomainVisits  cpdomains):
+    ___ subdomainVisits  cpdomains
         """
         :type cpdomains: List[str]
         :rtype: List[str]

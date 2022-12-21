@@ -25,7 +25,7 @@ c_ Solution o..
     #             s.add(num)
     #     return s.pop()
 
-    ___ singleNumber  nums):
+    ___ singleNumber  nums
         # xor
         res = 0
         ___ num __ nums:

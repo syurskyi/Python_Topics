@@ -12,7 +12,7 @@
 #         :rtype: ListNode
 #         """
 c_ Solution o..
-    ___ reverseKGroup  head, k):
+    ___ reverseKGroup  head, k
         __ head is N..:
             r_ N..
         index = 0
@@ -22,7 +22,7 @@ c_ Solution o..
         temp.next = head
         head = temp
         start = head
-        w.. pos is not N..:
+        w.. pos is n.. N..:
             __ index % k __ k - 1:
                 last = pos.next
                 start = reverseList(start, last)
@@ -31,7 +31,7 @@ c_ Solution o..
             index += 1
         r_ head.next
 
-    ___ reverseList  head, end):
+    ___ reverseList  head, end
         pos = head.next
         last = end
         next_start = pos

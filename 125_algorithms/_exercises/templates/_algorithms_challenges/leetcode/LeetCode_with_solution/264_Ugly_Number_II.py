@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ nthUglyNumber  n):
+    ___ nthUglyNumber  n
         """
         :type n: int
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution o..
         dp[3] = 3
         dp[4] = 4
         dp[5] = 5
-        ___ i __ r.. 6, n + 1):
+        ___ i __ r.. 6, n + 1
             w.. dp[l1] * 2 <= dp[i - 1]:
                 l1 += 1
             w.. dp[l2] * 3 <= dp[i - 1]:

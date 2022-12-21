@@ -1,6 +1,6 @@
 from collections import OrderedDict
 c_ Solution o..
-    ___ containsNearbyAlmostDuplicate  nums, k, t):
+    ___ containsNearbyAlmostDuplicate  nums, k, t
         """
         :type nums: List[int]
         :type k: int
@@ -12,11 +12,11 @@ c_ Solution o..
         # candidate can only be in the same bucket or the two buckets besides.
         # Keep as many as k buckets to ensure that the difference is at most k.
         buckets  # dict
-        ___ i, v __ e.. nums):
+        ___ i, v __ e.. nums
             # t == 0 is a special case where we only have to check the bucket
             # that v is in.
             bucketNum, offset = (v / t, 1) __ t ____ (v, 0)
-            ___ idx __ xrange(bucketNum - offset, bucketNum + offset + 1):
+            ___ idx __ xrange(bucketNum - offset, bucketNum + offset + 1
                 __ idx __ buckets and abs(buckets[idx] - nums[i]) <= t:
                     r_ T..
 

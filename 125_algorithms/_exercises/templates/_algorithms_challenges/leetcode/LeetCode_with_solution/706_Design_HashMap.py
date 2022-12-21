@@ -8,7 +8,7 @@ c_ MyHashMap o..
         size = 10000
         nodes = [N..] * size
 
-    ___ put  key, value):
+    ___ put  key, value
         """
         value will always be non-negative.
         :type key: int
@@ -24,7 +24,7 @@ c_ MyHashMap o..
         ____
             prev.next.val = value
 
-    ___ get  key):
+    ___ get  key
         """
         Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key
         :type key: int
@@ -39,7 +39,7 @@ c_ MyHashMap o..
         ____
             r_ prev.next.val
 
-    ___ remove  key):
+    ___ remove  key
         """
         Removes the mapping of the specified value key if this map contains a mapping for the key
         :type key: int
@@ -54,20 +54,20 @@ c_ MyHashMap o..
         prev.next = prev.next.next
 
 
-___ find(bucket, key):
+___ find(bucket, key
     # find prev node of this key
     node = bucket
     prev = N..
-    w.. node is not N.. and node.key != key:
+    w.. node is n.. N.. and node.key != key:
         prev = node
         node = node.next
     r_ prev
 
 
 # Basic node in hash map
-c_ ListNode():
+c_ ListNode(
 
-    ___ -  key, val):
+    ___ -  key, val
         key = key
         val = val
         next = N..

@@ -7,7 +7,7 @@
 
 c_ Solution o..
     # https://leetcode.com/problems/subtree-of-another-tree/solution/
-    ___ isSubtree  s, t):
+    ___ isSubtree  s, t
         """
         :type s: TreeNode
         :type t: TreeNode
@@ -17,7 +17,7 @@ c_ Solution o..
         t_res = preorder(t, T..)
         r_ t_res __ s_res
     
-    ___ preorder  root, isLeft):
+    ___ preorder  root, isLeft
         __ root is N..:
             __ isLeft:
                 r_ "lnull"

@@ -5,13 +5,13 @@
 #         self.next = None
 
 c_ Solution o..
-    ___ rotateRight  head, k):
+    ___ rotateRight  head, k
         """
         :type head: ListNode
         :type k: int
         :rtype: ListNode
         """
-        __ not head or k __ 0:
+        __ n.. head or k __ 0:
             r_ head
 
         slow = fast = head
@@ -31,7 +31,7 @@ c_ Solution o..
                 slow = slow.next
             r_ rotate(head, fast, slow)
 
-    ___ rotate  head, fast, slow):
+    ___ rotate  head, fast, slow
         fast.next = head
         head = slow.next
         slow.next = N..

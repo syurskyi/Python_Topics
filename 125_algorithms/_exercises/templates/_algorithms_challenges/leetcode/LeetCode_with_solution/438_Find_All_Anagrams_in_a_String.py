@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ findAnagrams  s, p):
+    ___ findAnagrams  s, p
         """
         :type s: str
         :type p: str
@@ -12,14 +12,14 @@ c_ Solution o..
         ___ c __ p:
             char_map[o.. c)] += 1
         left, right, count = 0, 0, l.. p)
-        w.. right < l.. s):
+        w.. right < l.. s
             __ char_map[o.. s[right])] >= 1:
                 count -= 1
             char_map[o.. s[right])] -= 1
             right += 1
             __ count __ 0:
                 res.append(left)
-            __ right - left __ l.. p):
+            __ right - left __ l.. p
                 __ char_map[o.. s[left])] >= 0:
                     count += 1
                 char_map[o.. s[left])] += 1

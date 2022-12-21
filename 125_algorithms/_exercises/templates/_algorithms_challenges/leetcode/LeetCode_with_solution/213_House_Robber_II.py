@@ -25,17 +25,17 @@ c_ Solution o..
     #             dp[i] = max(dp[i - 2] + nums[i], dp[i - 1])
     #     return max(res, dp[ls - 1])
 
-    ___ rob  nums):
+    ___ rob  nums
         __ l.. nums) __ 1:
             r_ nums[0]
-        r_ max(rob_helper(nums, 0, l.. nums) - 2),
+        r_ m..(rob_helper(nums, 0, l.. nums) - 2),
                    rob_helper(nums, 1, l.. nums) - 1))
 
 
-    ___ rob_helper  nums, low, high):
+    ___ rob_helper  nums, low, high
         prevMax = currMax = 0
-        ___ index __ r.. low, high + 1):
+        ___ index __ r.. low, high + 1
             temp = currMax
-            currMax = max(prevMax + nums[index], currMax)
+            currMax = m..(prevMax + nums[index], currMax)
             prevMax = temp
         r_ currMax

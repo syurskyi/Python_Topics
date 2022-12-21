@@ -8,7 +8,7 @@
 c_ Solution:
     # @param {TreeNode} root
     # @return {string[]}
-    ___ binaryTreePaths  root):
+    ___ binaryTreePaths  root
         __ root is N..:
             r_    # list
         paths =    # list
@@ -16,12 +16,12 @@ c_ Solution:
         res = ['->'.join(p) ___ p __ paths ]
         r_ res
 
-    ___ get_path  result, path, node):
+    ___ get_path  result, path, node
         __ node.left is N.. and node.right is N..:
             result.append(path + [s..(node.val)])
             r_
         path = path + [s..(node.val)]
-        __ node.left is not N..:
+        __ node.left is n.. N..:
             get_path(result, path, node.left)
-        __ node.right is not N..:
+        __ node.right is n.. N..:
             get_path(result, path, node.right)

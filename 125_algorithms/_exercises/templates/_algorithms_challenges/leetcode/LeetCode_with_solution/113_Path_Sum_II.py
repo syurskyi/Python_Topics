@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution o..
-    ___ pathSum  root, sum):
+    ___ pathSum  root, s..
         """
         :type root: TreeNode
         :type sum: int
@@ -15,12 +15,12 @@ c_ Solution o..
         res =    # list
         __ root is N..:
             r_ res
-        __ sum __ root.val and root.left is N.. and root.right is N..:
+        __ s.. __ root.val and root.left is N.. and root.right is N..:
             r_ [[root.val]]
         # left side
-        left_res = pathSum(root.left, sum - root.val)
+        left_res = pathSum(root.left, s.. - root.val)
         # right side
-        right_res = pathSum(root.right, sum - root.val)
+        right_res = pathSum(root.right, s.. - root.val)
         # add current prefix
         ___ t __ left_res + right_res:
             res.append([root.val] + t)

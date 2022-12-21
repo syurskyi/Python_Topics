@@ -26,10 +26,10 @@ c_ Solution o..
     #             return True
     #     return False
 
-    ___ isScramble  s1, s2, memo={}):
+    ___ isScramble  s1, s2, memo={}
         # recursive with memo
         # Check with sorted is fundamental, otherwise TLE
-        __ l.. s1) != l.. s2) or sorted(s1) != sorted(s2):
+        __ l.. s1) != l.. s2) or s..(s1) != s..(s2
             r_ F..
         __ l.. s1) <= l.. s2) <= 1:
             r_ s1 __ s2
@@ -38,9 +38,9 @@ c_ Solution o..
         __ (s1, s2) __ memo:
             r_ memo[s1, s2]
         n = l.. s1)
-        ___ i __ r.. 1, n):
+        ___ i __ r.. 1, n
             a = isScramble(s1[:i], s2[:i], memo) and isScramble(s1[i:], s2[i:], memo)
-            __ not a:
+            __ n.. a:
                 b = isScramble(s1[:i], s2[-i:], memo) and isScramble(s1[i:], s2[:-i], memo)
             __ a or b:
                 memo[s1, s2] = T..

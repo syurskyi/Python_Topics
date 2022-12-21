@@ -35,15 +35,15 @@ c_ Solution o..
     #             check_set.remove(node)
     #     return res
 
-    ___ findLeaves  root):
+    ___ findLeaves  root
         res =    # list
         findLeaves_helper(root, res)
         r_ res
 
-    ___ findLeaves_helper  node, res):
+    ___ findLeaves_helper  node, res
         __ node is N..:
             r_ -1
-        level = 1 + max(findLeaves_helper(node.left, res), findLeaves_helper(node.right, res))
+        level = 1 + m..(findLeaves_helper(node.left, res), findLeaves_helper(node.right, res))
         __ l.. res) < level + 1:
             res.append(   # list)
         res[level].append(node.val)

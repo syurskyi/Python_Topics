@@ -33,7 +33,7 @@ c_ Logger o..
         heap =    # list
         cache  # dict
 
-    ___ shouldPrintMessage  timestamp, message):
+    ___ shouldPrintMessage  timestamp, message
         """
         Returns true if the message should be printed in the given timestamp, otherwise returns false.
         If this method returns false, the message will not be printed.
@@ -42,13 +42,13 @@ c_ Logger o..
         :type message: str
         :rtype: bool
         """
-        w.. l.. heap):
+        w.. l.. heap
             __ heap[0][0] <= timestamp:
                 temp = heapq.heappop(heap)
                 cache.pop(temp[1])
             ____
                 break
-        __ timestamp < cache.get(message, 0):
+        __ timestamp < cache.get(message, 0
             r_ F..
         cache[message] = timestamp + 10
         heapq.heappush(heap, (timestamp + 10, message))

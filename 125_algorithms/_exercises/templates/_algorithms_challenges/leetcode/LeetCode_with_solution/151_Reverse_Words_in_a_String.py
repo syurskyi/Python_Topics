@@ -12,7 +12,7 @@ c_ Solution o..
     #     temp = reversed(temp)
     #     return ' '.join(temp)
 
-    ___ reverseWords  s):
+    ___ reverseWords  s
         # remove tail space
         s = s.strip(' ')
         array_s =    # list
@@ -27,13 +27,13 @@ c_ Solution o..
             last = s[i]
         array_s = array_s||-1]
         ls, pos = l.. array_s), 0
-        ___ i __ r.. ls + 1):
+        ___ i __ r.. ls + 1
             __ i __ ls or array_s[i] __ ' ':
                 reverse(array_s, pos, i)
                 pos = i + 1
         r_ ''.join(array_s)
 
-    ___ reverse  array_s, begin, end):
-        ___ i __ range((end - begin) / 2):
+    ___ reverse  array_s, begin, end
+        ___ i __ r..((end - begin) / 2
             array_s[begin + i], array_s[end - i - 1] = array_s[end - i - 1], array_s[begin + i]
 

@@ -25,7 +25,7 @@ c_ Solution o..
     #         table[index] += 1
     #     return str(table)
 
-    ___ groupAnagrams  strs):
+    ___ groupAnagrams  strs
         strs.s..
         hash  # dict
         ___ s __ strs:
@@ -36,7 +36,7 @@ c_ Solution o..
                 hash[key] = [s]
         r_ hash.values()
 
-    ___ hash_key  s):
+    ___ hash_key  s
         # hash string with 26 length array
         table = [0] * 26
         ___ ch __ s:

@@ -23,7 +23,7 @@ c_ Solution o..
     #         distance += abs(point - origin)
     #     return distance
 
-    ___ minDistance1D  points):
+    ___ minDistance1D  points
         # two points
         distance = 0
         i, j = 0, l.. points) - 1
@@ -33,14 +33,14 @@ c_ Solution o..
             j -= 1
         r_ distance
 
-    ___ minTotalDistance  grid):
+    ___ minTotalDistance  grid
         rows = collectRows(grid)
         cols = collectCols(grid)
         row = rows[l.. rows) / 2]
         col = cols[l.. cols) / 2]
         r_ minDistance1D(rows) + minDistance1D(cols)
 
-    ___ collectRows  grid):
+    ___ collectRows  grid
         rows =    # list
         ___ i __ r.. l.. grid)):
             ___ j __ r.. l.. grid[0])):
@@ -48,7 +48,7 @@ c_ Solution o..
                     rows.append(i)
         r_ rows
 
-    ___ collectCols  grid):
+    ___ collectCols  grid
         cols =    # list
         ___ j __ r.. l.. grid[0])):
             ___ i __ r.. l.. grid)):

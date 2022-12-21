@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ backspaceCompare  S, T):
+    ___ backspaceCompare  S, T
         """
         :type S: str
         :type T: str

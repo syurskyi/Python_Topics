@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ validateStackSequences  pushed, popped):
+    ___ validateStackSequences  pushed, popped
         """
         :type pushed: List[int]
         :type popped: List[int]
@@ -7,7 +7,7 @@ c_ Solution o..
         """
         in_stack =    # list
         pos = 0
-        w.. pos != l.. pushed):
+        w.. pos != l.. pushed
             curr = pushed[pos]
             w.. l.. in_stack) > 0 and l.. popped) > 0 and in_stack[-1] __ popped[0]:
                 in_stack.pop(-1)

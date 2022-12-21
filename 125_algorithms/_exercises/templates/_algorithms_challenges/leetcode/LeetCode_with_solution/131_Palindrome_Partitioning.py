@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ partition  s):
+    ___ partition  s
         """
         :type s: str
         :rtype: List[List[str]]
@@ -10,16 +10,16 @@ c_ Solution o..
         recurPartition(result, curr, s, 0)
         r_ result
 
-    ___ recurPartition  result, curr, s, start):
-        __ start __ l.. s):
+    ___ recurPartition  result, curr, s, start
+        __ start __ l.. s
             result.append(list(curr))
         ___ i __ r.. start, l.. s)):
-            __ isPalindrome(s, start, i):
+            __ isPalindrome(s, start, i
                 curr.append(s[start:i + 1])
                 recurPartition(result, curr, s, i + 1)
                 curr.pop()
 
-    ___ isPalindrome  s, begin, end):
+    ___ isPalindrome  s, begin, end
         w.. begin < end:
             __ s[begin] != s[end]:
                 r_ F..

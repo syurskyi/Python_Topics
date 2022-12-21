@@ -27,7 +27,7 @@ c_ Solution o..
     #         current = nex
     #     return head
 
-    ___ swapPairs  head):
+    ___ swapPairs  head
         dummyHead = ListNode(-1)
         dummyHead.next = head
         prev, p = dummyHead, head

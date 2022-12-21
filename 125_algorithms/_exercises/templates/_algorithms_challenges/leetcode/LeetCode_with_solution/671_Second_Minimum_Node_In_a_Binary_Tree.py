@@ -27,16 +27,16 @@ c_ Solution o..
     #     self.dfs(root.left, values)
     #     self.dfs(root.right, values)
 
-    ___ findSecondMinimumValue  root):
-        __ not root:
+    ___ findSecondMinimumValue  root
+        __ n.. root:
             r_ -1
         ans = float('inf')
         min_val = root.val
         stack = [root]
         w.. stack:
             curr = stack.pop()
-            __ not curr:
-                continue
+            __ n.. curr:
+                c_
             __ min_val < curr.val < ans:
                 ans = curr.val
             ____ curr.val __ min_val:

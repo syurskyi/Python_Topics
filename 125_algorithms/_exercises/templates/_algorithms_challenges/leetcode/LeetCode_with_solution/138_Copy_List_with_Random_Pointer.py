@@ -40,31 +40,31 @@ c_ Solution o..
     #         q = q.next
     #     return dummyHead.next
 
-    ___ copyRandomList  head):
+    ___ copyRandomList  head
         # Modify original structure: Original->Copy->Original->Copy
         # node.next.random = node.random.next
         # O(n) and O(1)
         p = head
-        w.. p is not N..:
+        w.. p is n.. N..:
             next = p.next
             copy = RandomListNode(p.label)
             p.next = copy
             copy.next =  next
             p = next
         p = head
-        w.. p is not N..:
-            __ p.random is not N..:
+        w.. p is n.. N..:
+            __ p.random is n.. N..:
                 p.next.random = p.random.next
             p = p.next.next
         p = head
-        __ p is not N..:
+        __ p is n.. N..:
             headCopy = p.next
         ____
             headCopy = N..
-        w.. p is not N..:
+        w.. p is n.. N..:
             copy = p.next
             p.next = copy.next
             p = p.next
-            __ p is not N..:
+            __ p is n.. N..:
                 copy.next = p.next
         r_ headCopy

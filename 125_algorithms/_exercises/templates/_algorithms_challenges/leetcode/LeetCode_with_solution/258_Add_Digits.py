@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ addDigits  num):
+    ___ addDigits  num
         """
         :type num: int
         :rtype: int

@@ -84,20 +84,20 @@ c_ Solution o..
     #     else:
     #         return False
     #     return start, end, extra
-    ___ minWindow  s, t):
+    ___ minWindow  s, t
         # http://articles.leetcode.com/finding-minimum-window-in-s-which/
         ls_s, ls_t = l.. s), l.. t)
         need_to_find = [0] * 256
         has_found = [0] * 256
         min_begin, min_end = 0, -1
         min_window = 100000000000000
-        ___ index __ r.. ls_t):
+        ___ index __ r.. ls_t
             need_to_find[o.. t[index])] += 1
         count, begin = 0, 0
-        ___ end __ r.. ls_s):
+        ___ end __ r.. ls_s
             end_index = o.. s[end])
             __ need_to_find[end_index] __ 0:
-                continue
+                c_
             has_found[end_index] += 1
             __ has_found[end_index] <= need_to_find[end_index]:
                 count += 1

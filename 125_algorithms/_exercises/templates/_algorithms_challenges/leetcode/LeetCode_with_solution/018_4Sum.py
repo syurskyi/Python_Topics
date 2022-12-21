@@ -8,19 +8,19 @@
 
 
 c_ Solution o..
-    ___ fourSum  nums, target):
-        sort_nums = sorted(nums)
+    ___ fourSum  nums, target
+        sort_nums = s..(nums)
         ls = l.. nums)
         res  # dict
         pairs  # dict
-        ___ i __ r.. ls - 3):
-            ___ j __ r.. i + 1, ls - 2):
+        ___ i __ r.. ls - 3
+            ___ j __ r.. i + 1, ls - 2
                 res_2 = sort_nums[i] + sort_nums[j]
                 try:
                     pairs[target - res_2].append([i, j])
                 except KeyError:
                     pairs[target - res_2] = [[i, j]]
-        ___ key, temp __ pairs.items():
+        ___ key, temp __ pairs.items(
             ___ pair __ temp:
                 j = pair[1] + 1
                 k = ls - 1

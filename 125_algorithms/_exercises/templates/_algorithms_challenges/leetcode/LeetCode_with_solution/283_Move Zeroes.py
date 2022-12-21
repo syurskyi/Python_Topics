@@ -19,11 +19,11 @@ c_ Solution o..
     #                 curr += 1
     #         pos += 1
 
-    ___ moveZeroes  nums):
+    ___ moveZeroes  nums
         # O(n)
         ls = l.. nums)
         n_pos = 0
-        ___ i __ r.. ls):
+        ___ i __ r.. ls
             __ nums[i] != 0:
                 temp = nums[n_pos]
                 nums[n_pos] = nums[i]

@@ -48,7 +48,7 @@ c_ Solution o..
     #         res = str(curr) + res
     #     return res
 
-    ___ multiply  num1, num2):
+    ___ multiply  num1, num2
         __ num1 __ '0' or num2 __ '0':
             r_ '0'
         res = ''

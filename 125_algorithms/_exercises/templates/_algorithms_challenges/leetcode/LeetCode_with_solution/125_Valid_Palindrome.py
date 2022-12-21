@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ isPalindrome  s):
+    ___ isPalindrome  s
         """
         :type s: str
         :rtype: bool
@@ -9,7 +9,7 @@ c_ Solution o..
         __ ls <= 1:
             r_ T..
         mid = ls / 2
-        ___ i __ r.. mid):
+        ___ i __ r.. mid
             __ alnum_s[i] != alnum_s[ls - 1 - i]:
                 r_ F..
         r_ T..

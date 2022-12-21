@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ reverseWords  s):
+    ___ reverseWords  s
         """
         :type s: str
         :rtype: str

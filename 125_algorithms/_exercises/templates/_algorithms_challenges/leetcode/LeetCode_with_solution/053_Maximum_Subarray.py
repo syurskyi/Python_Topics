@@ -40,9 +40,9 @@ c_ Solution o..
     #         all = max(start, all)
     #     return all
 
-    ___ maxSubArray  nums):
+    ___ maxSubArray  nums
         maxEndingHere = maxSofFar = nums[0]
         ___ i __ r.. 1, l.. nums)):
-            maxEndingHere = max(maxEndingHere + nums[i], nums[i])
-            maxSofFar = max(maxEndingHere, maxSofFar)
+            maxEndingHere = m..(maxEndingHere + nums[i], nums[i])
+            maxSofFar = m..(maxEndingHere, maxSofFar)
         r_ maxSofFar

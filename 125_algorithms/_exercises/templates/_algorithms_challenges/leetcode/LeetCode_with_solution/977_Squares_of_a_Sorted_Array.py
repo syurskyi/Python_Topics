@@ -7,7 +7,7 @@ c_ Solution o..
     #     # Directly sort
     #     return sorted(x * x for x in A) 
 
-    ___ sortedSquares  A):
+    ___ sortedSquares  A
         pos = 0
         w.. pos < l.. A) and A[pos] < 0:
             pos += 1
@@ -25,7 +25,7 @@ c_ Solution o..
         w.. npos >= 0:
             res.append(A[npos] ** 2)
             npos -= 1
-        w.. pos < l.. A):
+        w.. pos < l.. A
             res.append(A[pos] ** 2)
             pos += 1
         r_ res

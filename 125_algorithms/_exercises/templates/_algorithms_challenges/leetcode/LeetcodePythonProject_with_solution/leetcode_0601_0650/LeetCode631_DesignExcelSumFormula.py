@@ -27,7 +27,7 @@ c_ Excel(o..
         diff v-matrix[i][j]
         matrix[i][j] v
         ___ (i0, j0), vals __ hashmap.i..
-            matrix[i0][j0] += diff*(vals.count((i, j)))
+            matrix[i0][j0] += diff*(vals.c..((i, j)))
         __ (i, j) __ hashmap:
             del hashmap[(i, j)]
 

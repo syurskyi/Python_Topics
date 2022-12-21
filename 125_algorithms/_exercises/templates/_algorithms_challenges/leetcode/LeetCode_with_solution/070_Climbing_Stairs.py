@@ -11,11 +11,11 @@ c_ Solution o..
     #         dp[i] = dp[i - 2] + dp[i- 1]
     #     return dp[n]
 
-    ___ climbStairs  n):
+    ___ climbStairs  n
         __ n <= 1:
             r_ 1
         dp = [1] * 2
-        ___ i __ r.. 2, n + 1):
+        ___ i __ r.. 2, n + 1
             dp[1], dp[0] = dp[1] + dp[0], dp[1]
         r_ dp[1]
 

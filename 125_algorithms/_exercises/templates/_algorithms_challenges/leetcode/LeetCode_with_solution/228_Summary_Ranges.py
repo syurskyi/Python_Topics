@@ -23,12 +23,12 @@ c_ Solution o..
     #         res.append("%d->%d" % (start, prev))
     #     return res
 
-    ___ summaryRanges  nums):
+    ___ summaryRanges  nums
         res =    # list
         start, ls = 0, l.. nums)
-        ___ i __ r.. ls):
+        ___ i __ r.. ls
             __ i + 1 <  ls and nums[i + 1] __ nums[i] + 1:
-                continue
+                c_
             __ i __ start:
                 res.append(s..(nums[start]))
             ____

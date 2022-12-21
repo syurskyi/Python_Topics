@@ -16,17 +16,17 @@ c_ Solution o..
     #     return nums[0]
     #     #return heapq.nlargest(k, nums)[-1]
 
-    ___ findKthLargest  nums, k):
+    ___ findKthLargest  nums, k
         # shuffle nums to avoid n*n
         random.shuffle(nums)
         r_ quickSelection(nums, 0, l.. nums) - 1, l.. nums) - k)
 
-    ___ quickSelection  nums, start, end, k):
+    ___ quickSelection  nums, start, end, k
         __ start > end:
             r_ float('inf')
         pivot = nums[end]
         left = start
-        ___ i __ r.. start, end):
+        ___ i __ r.. start, end
             __ nums[i] <= pivot:
                 # swip left and i
                 nums[left], nums[i] = nums[i], nums[left]

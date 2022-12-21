@@ -20,16 +20,16 @@ c_ Solution o..
     #     root.right = left
     #     return root
 
-    ___ invertTree  root):
+    ___ invertTree  root
         # iteratively
         __ root is N..:
             r_ N..
         queue = [root]
-        w.. l.. queue):
+        w.. l.. queue
             curr = queue.pop(0)
             curr.left, curr.right = curr.right, curr.left
-            __ curr.left is not N..:
+            __ curr.left is n.. N..:
                 queue.append(curr.left)
-            __ curr.right is not N..:
+            __ curr.right is n.. N..:
                 queue.append(curr.right)
         r_ root

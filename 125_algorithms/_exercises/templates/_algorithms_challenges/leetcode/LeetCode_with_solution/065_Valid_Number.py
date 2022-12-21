@@ -22,7 +22,7 @@ c_ Solution o..
     #             return True
     #     return False
 
-    ___ isNumber  s):
+    ___ isNumber  s
         s = s.strip()
         ls, pos = l.. s), 0
         __ ls __ 0:
@@ -30,20 +30,20 @@ c_ Solution o..
         __ s[pos] __ '+' or s[pos] __ '-':
             pos += 1
         isNumeric = F..
-        w.. pos < ls and s[pos].isdigit():
+        w.. pos < ls and s[pos].isdigit(
             pos += 1
             isNumeric = T..
         __ pos < ls and s[pos] __ '.':
             pos += 1
-            w.. pos < ls and s[pos].isdigit():
+            w.. pos < ls and s[pos].isdigit(
                 pos += 1
                 isNumeric = T..
         ____ pos < ls and s[pos] __ 'e' and isNumeric:
             isNumeric = F..
             pos += 1
-            __ pos < ls and (s[pos] __ '+' or s[pos] __ '-'):
+            __ pos < ls and (s[pos] __ '+' or s[pos] __ '-'
                 pos += 1
-            w.. pos < ls and s[pos].isdigit():
+            w.. pos < ls and s[pos].isdigit(
                 pos += 1
                 isNumeric = T..
         print pos, ls, isNumeric

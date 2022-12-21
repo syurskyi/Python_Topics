@@ -15,12 +15,12 @@ c_ Solution o..
     #                 return ans
     #     return 0
 
-    ___ maxWidthRamp  A):
+    ___ maxWidthRamp  A
         ans = 0
         m = float('inf')
         # Sort index based on value
-        ___ i __ sorted(r.. l.. A)), key=A.-g):
-            ans = max(ans, i - m)
+        ___ i __ s..(r.. l.. A)), key=A.-g
+            ans = m..(ans, i - m)
             m = min(m, i)
         r_ ans
 

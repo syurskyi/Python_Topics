@@ -5,7 +5,7 @@
 #         :rtype: List[str]
 #         """
 c_ Solution o..
-    ___ generateParenthesis  n):
+    ___ generateParenthesis  n
         __ n __ 1:
             r_ ['()']
         last_list = generateParenthesis(n - 1)
@@ -15,7 +15,7 @@ c_ Solution o..
             ___ index __ r.. l.. curr)):
                 __ curr[index] __ ')':
                     res.append(curr[:index] + '(' + curr[index:])
-        r_ list(set(res))
+        r_ list(s..(res))
 
 
     # def generateParenthesis(self, n):

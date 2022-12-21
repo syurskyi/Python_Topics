@@ -27,7 +27,7 @@ c_ Solution o..
     #         + self.pathSum(root.right, sum)
     #     return 0
 
-    ___ pathSumHelper  root, target, so_far, cache):
+    ___ pathSumHelper  root, target, so_far, cache
         __ root:
             # complement == 1, root->curr path
             complement = so_far + root.val - target
@@ -40,12 +40,12 @@ c_ Solution o..
             cache[so_far + root.val] -= 1
         r_
 
-    ___ pathSum  root, sum):
+    ___ pathSum  root, s..
         """
         :type root: TreeNode
         :type sum: int
         :rtype: int
         """
         result = 0
-        pathSumHelper(root, sum, 0, {0: 1})
+        pathSumHelper(root, s.., 0, {0: 1})
         r_ result

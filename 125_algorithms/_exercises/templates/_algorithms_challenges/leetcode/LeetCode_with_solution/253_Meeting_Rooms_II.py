@@ -33,7 +33,7 @@
 
 
 c_ Solution o..
-    ___ minMeetingRooms  intervals):
+    ___ minMeetingRooms  intervals
         """
         :type intervals: List[Interval]
         :rtype: int
@@ -51,5 +51,5 @@ c_ Solution o..
         ___ _, v __ timeline:
             curr += v
             # max meeting room used at this point
-            ans = max(ans, curr)
+            ans = m..(ans, curr)
         r_ ans

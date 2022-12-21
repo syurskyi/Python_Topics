@@ -16,7 +16,7 @@ dmap = {'2': 'abc',
         N..: N..}
 
 c_ Solution o..
-    ___ letterCombinations  digits):
+    ___ letterCombinations  digits
         # DFS
         result =    # list
         ls = l.. digits)

@@ -1,13 +1,13 @@
 c_ Solution o..
-    ___ transpose  A):
+    ___ transpose  A
         """
         :type A: List[List[int]]
         :rtype: List[List[int]]
         """
         R, C = l.. A), l.. A[0])
         ans = [[N..] * R ___ _ __ xrange(C)]
-        ___ r, row __ e.. A):
-            ___ c, val __ e.. row):
+        ___ r, row __ e.. A
+            ___ c, val __ e.. row
                 ans[c][r] = val
         r_ ans
         # Alternative Solution:

@@ -35,14 +35,14 @@ c_ Solution:
     ___ getDecimalValue  head: ListNode)   i..:
         binary_numbers_list =    # list
         binary_numbers_list.append(head.val)
-        w..(head.next is not N..):
+        w..(head.next is n.. N..
             head = head.next
             binary_numbers_list.append(head.val)
         answer = 0
         power = 0
         # from len(binary_numbers_list) - 1 -> 0
-        ___ digit __ r.. l.. binary_numbers_list) - 1, -1, -1):
-            __(binary_numbers_list[digit] > 0):
+        ___ digit __ r.. l.. binary_numbers_list) - 1, -1, -1
+            __(binary_numbers_list[digit] > 0
                 answer += ((2 ** power) * binary_numbers_list[digit])
             power += 1
         r_ answer

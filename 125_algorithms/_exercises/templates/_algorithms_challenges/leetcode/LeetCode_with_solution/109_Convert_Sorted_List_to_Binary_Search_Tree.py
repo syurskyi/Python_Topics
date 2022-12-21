@@ -44,18 +44,18 @@ c_ Solution o..
     ___ - ____:
         node = N..
     
-    ___ sortedListToBST  head):
+    ___ sortedListToBST  head
         # Bottom-up recursion O(n) and O(lgn)
         __ head is N..:
             r_ head
         size = 0
         pos = node = head
-        w.. pos is not N..:
+        w.. pos is n.. N..:
            pos = pos.next
            size += 1
         r_ inorderHelper(0, size - 1)
     
-    ___ inorderHelper  start, end):
+    ___ inorderHelper  start, end
         __ start > end:
             r_ N..
         mid = (start + end) / 2

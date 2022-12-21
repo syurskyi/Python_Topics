@@ -8,7 +8,7 @@ c_ Solution o..
     #     s_n = bin(n)[2:]
     #     return s_n.count('1')
 
-    ___ hammingWeight  n):
+    ___ hammingWeight  n
         """
         :type n: int
         :rtype: int

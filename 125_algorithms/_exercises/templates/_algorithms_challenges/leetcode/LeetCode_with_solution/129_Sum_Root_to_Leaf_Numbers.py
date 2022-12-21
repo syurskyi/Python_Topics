@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution o..
-    ___ sumNumbers  root):
+    ___ sumNumbers  root
         """
         :type root: TreeNode
         :rtype: int
@@ -20,7 +20,7 @@ c_ Solution o..
             curr, curr_value = queue.pop(0)
             __ curr.left is N.. and curr.right is N..:
                 res += curr_value
-                continue
+                c_
             __ curr.left:
                 queue.append((curr.left, curr_value * 10 + curr.left.val))
             __ curr.right:

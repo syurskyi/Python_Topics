@@ -12,10 +12,10 @@
 #         :rtype: ListNode
 #         """
 c_ Solution o..
-    ___ mergeTwoLists  l1, l2):
+    ___ mergeTwoLists  l1, l2
         # dummy head
         pos = dummyHead = ListNode(-1)
-        w.. l1 is not N.. and l2 is not N..:
+        w.. l1 is n.. N.. and l2 is n.. N..:
             __ l1.val <= l2.val:
                 pos.next = l1
                 l1 = l1.next
@@ -24,10 +24,10 @@ c_ Solution o..
                 l2 = l2.next
             pos = pos.next
         # merge residual l1
-        __ l1 is not N..:
+        __ l1 is n.. N..:
             pos.next = l1
         # merge residual l2
-        __ l2 is not N..:
+        __ l2 is n.. N..:
             pos.next = l2
         r_ dummyHead.next
 

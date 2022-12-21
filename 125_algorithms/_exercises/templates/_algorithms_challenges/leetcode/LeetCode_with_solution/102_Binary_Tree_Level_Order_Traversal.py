@@ -26,7 +26,7 @@ c_ Solution o..
     #     self.get_level(res, root.left, depth + 1)
     #     self.get_level(res, root.right, depth + 1)
 
-    ___ levelOrder  root):
+    ___ levelOrder  root
         # https://leetcode.com/discuss/90680/9-lines-python-code
         __ root is N..:
             r_    # list

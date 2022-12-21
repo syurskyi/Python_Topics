@@ -26,18 +26,18 @@ c_ Solution o..
     #     return res
 
 
-    ___ combinationSum  candidates, target):
+    ___ combinationSum  candidates, target
         candidates.s..
         dp = [[] ___ _ __ r.. target + 1)]
         dp[0].append(   # list)
-        ___ i __ r.. 1, target + 1):
+        ___ i __ r.. 1, target + 1
             ___ j __ r.. l.. candidates)):
                 __ candidates[j] > i:
                     break
                 ___ k __ r.. l.. dp[i - candidates[j]])):
                     temp = dp[i - candidates[j]][k][:]
                     __ l.. temp) > 0 and temp[-1] > candidates[j]:
-                        continue
+                        c_
                     temp.append(candidates[j])
                     dp[i].append(temp)
         r_ dp[target]

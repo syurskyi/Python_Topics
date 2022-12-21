@@ -13,7 +13,7 @@ c_ Solution:
     #     else:
     #         return temp * temp * x
 
-    ___ myPow  x, n):
+    ___ myPow  x, n
         # https://leetcode.com/discuss/93413/iterative-log-n-solution-with-clear-explanation
         # 9 = 2^3 + 2^0 = 1001
         # x^9 = x^(2^3)*x(2^0)

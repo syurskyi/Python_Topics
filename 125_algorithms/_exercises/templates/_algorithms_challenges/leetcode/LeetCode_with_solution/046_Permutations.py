@@ -9,7 +9,7 @@ c_ Solution:
     #     result = [list(t) for t in result]
     #     return result
 
-    ___ permute  nums):
+    ___ permute  nums
         # DPS with swapping
         res =    # list
         __ l.. nums) __ 0:
@@ -17,8 +17,8 @@ c_ Solution:
         get_permute(res, nums, 0)
         r_ res
 
-    ___ get_permute  res, nums, index):
-        __ index __ l.. nums):
+    ___ get_permute  res, nums, index
+        __ index __ l.. nums
             res.append(list(nums))
             r_
         ___ i __ r.. index, l.. nums)):

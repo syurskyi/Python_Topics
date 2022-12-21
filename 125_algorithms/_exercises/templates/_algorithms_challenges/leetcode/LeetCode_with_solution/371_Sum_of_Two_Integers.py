@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ getSum  a, b):
+    ___ getSum  a, b
         """
         :type a: int
         :type b: int
@@ -9,11 +9,11 @@ c_ Solution o..
         # in Python this problem is much different because of the negative number
         # https://leetcode.com/discuss/111705/one-positive-one-negative-case-successful-for-python-rules
         import ctypes
-        sum = 0
+        s.. = 0
         carry = ctypes.c_int32(b)
         w.. carry.value != 0:
-            sum = a ^ carry.value
+            s.. = a ^ carry.value
             carry = ctypes.c_int32(a & carry.value)
             carry.value <<= 1
-            a = sum
-        r_ sum
+            a = s..
+        r_ s..

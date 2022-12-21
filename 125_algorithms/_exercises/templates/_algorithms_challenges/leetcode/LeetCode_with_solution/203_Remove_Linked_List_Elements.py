@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution o..
-    ___ removeElements  head, val):
+    ___ removeElements  head, val
         """
         :type head: ListNode
         :type val: int
@@ -15,7 +15,7 @@ c_ Solution o..
         prehead = ListNode(-1)
         prehead.next = head
         last, pos = prehead, head
-        w.. pos is not N..:
+        w.. pos is n.. N..:
             __ pos.val __ val:
                 last.next = pos.next
             ____

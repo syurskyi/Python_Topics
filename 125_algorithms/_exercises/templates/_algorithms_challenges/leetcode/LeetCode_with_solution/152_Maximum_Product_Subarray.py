@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ maxProduct  nums):
+    ___ maxProduct  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -9,7 +9,7 @@ c_ Solution o..
         max_here = min_here = max_so_far = nums[0]
         ___ i __ r.. 1, l.. nums)):
             mx, mn = max_here, min_here
-            max_here = max(max(mx * nums[i], nums[i]), mn * nums[i])
+            max_here = m..(m..(mx * nums[i], nums[i]), mn * nums[i])
             min_here = min(min(mx * nums[i], nums[i]), mn * nums[i])
-            max_so_far = max(max_here, max_so_far)
+            max_so_far = m..(max_here, max_so_far)
         r_ max_so_far

@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ generatePalindromes  s):
+    ___ generatePalindromes  s
         """
         :type s: str
         :rtype: List[str]
@@ -23,21 +23,21 @@ c_ Solution o..
         ___ c __ dic:
             __ dic[c] % 2 __ 1:
                 mid = c
-            seed.extend([c] * (dic[c] / 2))
+            seed.e..([c] * (dic[c] / 2))
         permute(half, seed, 0)
         # merge half to get res
         ___ r __ half:
             res.append(''.join(r) + mid + ''.join(reversed(r)))
         r_ res
 
-    ___ permute  res, num, index):
-        __ index __ l.. num):
+    ___ permute  res, num, index
+        __ index __ l.. num
             res.append(list(num))
             r_
-        appeared = set()
+        appeared = s..()
         ___ i __ r.. index, l.. num)):
             __ num[i] __ appeared:
-                continue
+                c_
             appeared.add(num[i])
             num[i], num[index] = num[index], num[i]
             permute(res, num, index + 1)

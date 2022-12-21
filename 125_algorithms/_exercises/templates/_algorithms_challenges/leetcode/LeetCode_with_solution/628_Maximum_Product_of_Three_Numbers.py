@@ -9,7 +9,7 @@ c_ Solution o..
     #     return max(reduce(lambda x, y: x * y, nums[:2]) * nums[-1],
     #                reduce(lambda x, y: x * y, nums[-3:]))
 
-    ___ maximumProduct  nums):
+    ___ maximumProduct  nums
         min1 = min2 = float('inf')
         max1 = max2 = max3 = float('-inf')
         ___ num __ nums:
@@ -27,4 +27,4 @@ c_ Solution o..
                 max2 = num
             ____ num >= max3:
                 max3 = num
-        r_ max(min1 * min2 * max1, max1 * max2 * max3)
+        r_ m..(min1 * min2 * max1, max1 * max2 * max3)

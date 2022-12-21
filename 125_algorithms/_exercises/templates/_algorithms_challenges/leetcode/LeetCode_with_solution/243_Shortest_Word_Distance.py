@@ -21,10 +21,10 @@ c_ Solution o..
     #             min_range = curr_range
     #     return min_range
 
-    ___ shortestDistance  words, word1, word2):
+    ___ shortestDistance  words, word1, word2
         index1 = index2 = -1
         res = l.. words)
-        ___ index, word __ e.. words):
+        ___ index, word __ e.. words
             __ word1 __ word:
                 index1 = index
             ____ word2 __ word:

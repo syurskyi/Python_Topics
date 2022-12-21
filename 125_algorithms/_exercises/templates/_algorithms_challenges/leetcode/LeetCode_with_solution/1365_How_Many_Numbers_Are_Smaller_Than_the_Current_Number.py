@@ -17,7 +17,7 @@ c_ Solution:
         ___ v __ nums:
             count_list[v] += 1
         # compute numbers before current index
-        ___ i __ r.. 1, 101):
+        ___ i __ r.. 1, 101
             count_list[i] += count_list[i-1]
         res =    # list
         ___ v __ nums:

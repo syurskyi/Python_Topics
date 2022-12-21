@@ -7,9 +7,9 @@ c_ Solution o..
     #     n = len(nums)
     #     return (n ** 2 + n) / 2 - sum(nums)
 
-    ___ missingNumber  nums):
+    ___ missingNumber  nums
         res = l.. nums)
-        ___ i, v __ e.. nums):
+        ___ i, v __ e.. nums
             res ^= i
             res ^= v
         r_ res

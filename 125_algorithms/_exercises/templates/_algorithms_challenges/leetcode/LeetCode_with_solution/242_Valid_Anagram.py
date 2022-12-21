@@ -8,7 +8,7 @@ c_ Solution o..
     #     # sort
     #     return sorted(s) == sorted(t)
 
-    ___ isAnagram  s, t):
+    ___ isAnagram  s, t
         """
         :type s: str
         :type t: str
@@ -16,7 +16,7 @@ c_ Solution o..
         """
         # hash
         # https://leetcode.com/articles/valid-anagram/
-        __ l.. s) != l.. t):
+        __ l.. s) != l.. t
             r_ F..
         counter = [0] * 26
         ___ i __ r.. l.. s)):

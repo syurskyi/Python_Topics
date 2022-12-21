@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ findCircleNum  M):
+    ___ findCircleNum  M
         """
         :type M: List[List[int]]
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution o..
                 count += 1
         r_ count
 
-    ___ dfs  M, visited, i):
+    ___ dfs  M, visited, i
         ___ j __ r.. l.. M)):
             __ M[i][j] __ 1 and visited[j] __ 0:
                 visited[j] = 1

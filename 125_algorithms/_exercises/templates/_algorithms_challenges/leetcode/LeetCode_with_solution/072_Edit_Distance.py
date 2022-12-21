@@ -22,13 +22,13 @@ c_ Solution o..
     #                                dp[i - 1][j] + 1)
     #     return dp[ls_1][ls_2]
 
-    ___ minDistance  word1, word2):
+    ___ minDistance  word1, word2
         ls_1, ls_2 = l.. word1), l.. word2)
         dp = list(r.. ls_1 + 1))
-        ___ j __ r.. 1, ls_2 + 1):
+        ___ j __ r.. 1, ls_2 + 1
             pre = dp[0]
             dp[0] = j
-            ___ i __ r.. 1, ls_1 + 1):
+            ___ i __ r.. 1, ls_1 + 1
                 temp = dp[i]
                 __ word1[i - 1] __ word2[j - 1]:
                     dp[i] = pre

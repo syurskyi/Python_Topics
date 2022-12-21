@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution o..
-    ___ mergeTrees  t1, t2):
+    ___ mergeTrees  t1, t2
         """
         :type t1: TreeNode
         :type t2: TreeNode

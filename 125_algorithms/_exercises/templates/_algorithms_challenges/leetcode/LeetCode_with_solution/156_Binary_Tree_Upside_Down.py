@@ -11,14 +11,14 @@ c_ Solution o..
     # p.right = parent
     # parent = p.left
     # p = left
-    ___ upsideDownBinaryTree  root):
+    ___ upsideDownBinaryTree  root
         """
         :type root: TreeNode
         :rtype: TreeNode
         """
         # top-down
         node, parent, parentRight = root, N.., N..
-        w.. node is not N..:
+        w.. node is n.. N..:
             left = node.left
             node.left = parentRight
             parentRight = node.right

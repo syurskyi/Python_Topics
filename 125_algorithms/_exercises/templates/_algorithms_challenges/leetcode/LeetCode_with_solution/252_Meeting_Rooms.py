@@ -28,10 +28,10 @@ c_ Solution o..
     #             count -= 1
     #     return True
 
-    ___ canAttendMeetings  intervals):
-        intervals.sort(key=lambda x: x.start)
+    ___ canAttendMeetings  intervals
+        intervals.sort(k.._l... x: x.start)
         ls = l.. intervals)
-        ___ i __ r.. ls - 1):
+        ___ i __ r.. ls - 1
             __ intervals[i].end > intervals[i + 1].start:
                 r_ F..
         r_ T..

@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ lengthLongestPath  input):
+    ___ lengthLongestPath  input
         """
         :type input: str
         :rtype: int
@@ -15,7 +15,7 @@ c_ Solution o..
                 level = 0
             cur_len = last_level_len[level + 1] = last_level_len[level] + l.. line) - level + 1
             __ '.' __ line:
-                max_len = max(max_len, cur_len - 1)
+                max_len = m..(max_len, cur_len - 1)
         r_ max_len
 
 __ ____ __ ____

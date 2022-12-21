@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ reverseVowels  s):
+    ___ reverseVowels  s
         """
         :type s: str
         :rtype: str
@@ -8,7 +8,7 @@ c_ Solution o..
         vowel =    # list
         res =    # list
         pos = -1
-        ___ index, value __ e.. s):
+        ___ index, value __ e.. s
             __ value __ 'aeiouAEIOU':
                 str_index.append(-1)
                 vowel.append(value)

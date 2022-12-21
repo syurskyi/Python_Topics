@@ -35,7 +35,7 @@ c_ Solution o..
         i = 0
         w.. num > 0:
             k = num // values[i]
-            ___ j __ r.. k):
+            ___ j __ r.. k
                 roman += symbols[i]
                 num -= values[i]
             i += 1

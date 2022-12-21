@@ -31,7 +31,7 @@ c_ Solution o..
     #             right = mid - 1
     #     return left
 
-    ___ threeSumSmaller  nums, target):
+    ___ threeSumSmaller  nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -41,11 +41,11 @@ c_ Solution o..
         nums.s..
         ls = l.. nums)
         res = 0
-        ___ i __ r.. ls - 1):
+        ___ i __ r.. ls - 1
             res += twoSumSmaller(nums, i + 1, target - nums[i])
         r_ res
 
-    ___ twoSumSmaller  nums, start, target):
+    ___ twoSumSmaller  nums, start, target
         res, left, right = 0, start, l.. nums) - 1
         w.. left < right:
             __ nums[left] + nums[right] < target:

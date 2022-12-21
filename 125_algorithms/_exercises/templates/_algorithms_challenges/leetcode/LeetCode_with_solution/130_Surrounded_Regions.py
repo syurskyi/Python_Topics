@@ -1,7 +1,7 @@
 c_ Solution o..
-    ___ solve  board):
+    ___ solve  board
         # https://discuss.leetcode.com/topic/22503/some-tips-for-python-code
-        __ not board:
+        __ n.. board:
             r_
         height, width = l.. board), l.. board[0])
         leakWall = buildLeakWall(board)
@@ -11,18 +11,18 @@ c_ Solution o..
                 __ board[i][j] __ "O":
                     board[i][j] = "S"
                     leakWall += (i - 1, j), (i + 1, j), (i, j - 1), (i, j + 1)
-        ___ i __ r.. height):
-            ___ j __ r.. width):
+        ___ i __ r.. height
+            ___ j __ r.. width
                 board[i][j] = "O" __ board[i][j] __ "S" ____ "X"
 
-    ___ buildLeakWall  board):
+    ___ buildLeakWall  board
         leakWall, height, width =    # list, l.. board), l.. board[0])
-        ___ i __ r.. height):
+        ___ i __ r.. height
             __ board[i][0] __ "O":
                 leakWall.append((i, 0))
             __ board[i][width - 1] __ "O":
                 leakWall.append((i, width - 1))
-        ___ j __ r.. width):
+        ___ j __ r.. width
             __ board[0][j] __ "O":
                 leakWall.append((0, j))
             __ board[height - 1][j] __ "O":

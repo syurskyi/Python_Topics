@@ -30,7 +30,7 @@ c_ Solution o..
     #         result += ''.join(temp_s[i])
     #     return result
 
-    ___ convert  s, numRows):
+    ___ convert  s, numRows
         # https://leetcode.com/discuss/90908/easy-python-o-n-solution-94%25-with-explanations
         __ numRows __ 1:
             r_ s

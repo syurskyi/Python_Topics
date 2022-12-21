@@ -40,18 +40,18 @@ c_ Solution o..
     #             stack.append(curr.right)
     #     return res
 
-    ___ postorderTraversal  root):
+    ___ postorderTraversal  root
         __ root is N..:
             r_    # list
         res =    # list; stack = [root]
         w.. l.. stack) > 0:
             curr = stack.pop()
-            __ not isinstance(curr, TreeNode):
+            __ n.. isinstance(curr, TreeNode
                 res.append(curr)
-                continue
+                c_
             stack.append(curr.val)
-            __ curr.right is not N..:
+            __ curr.right is n.. N..:
                 stack.append(curr.right)
-            __ curr.left is not N..:
+            __ curr.left is n.. N..:
                 stack.append(curr.left)
         r_ res

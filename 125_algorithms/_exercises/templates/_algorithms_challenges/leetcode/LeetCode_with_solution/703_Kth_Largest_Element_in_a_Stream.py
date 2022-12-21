@@ -1,6 +1,6 @@
 c_ KthLargest o..
 
-    ___ -  k, nums):
+    ___ -  k, nums
         nums = nums
         k = k
         # build min heap
@@ -9,7 +9,7 @@ c_ KthLargest o..
         w.. l.. nums) > k:
             heapq.heappop(nums)
 
-    ___ add  val):
+    ___ add  val
         # add to heaq if it's less then k
         __ l.. nums) < k:
             heapq.heappush(nums, val)

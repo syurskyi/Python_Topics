@@ -6,7 +6,7 @@
 #         """
 
 c_ Solution o..
-    ___ findPeakElement  nums):
+    ___ findPeakElement  nums
         # https://leetcode.com/discuss/88467/tricky-problem-tricky-solution
         # note that num[-1] = num[n] = -∞
         start, end = 0, l.. nums) - 1

@@ -27,7 +27,7 @@ c_ Solution o..
     #     res[depth].append(root.val)
     #     self.get_level(res, root.left, depth + 1)
     #     self.get_level(res, root.right, depth + 1)
-    ___ levelOrderBottom  root):
+    ___ levelOrderBottom  root
         __ root is N..:
             r_    # list
         # use stack
@@ -38,9 +38,9 @@ c_ Solution o..
             res.insert(0, [t.val ___ t __ top])
             temp =    # list
             ___ node __ top:
-                __ node.left is not N..:
+                __ node.left is n.. N..:
                     temp.append(node.left)
-                __ node.right is not N..:
+                __ node.right is n.. N..:
                     temp.append(node.right)
             __ l.. temp) > 0:
                 stack.append(temp)

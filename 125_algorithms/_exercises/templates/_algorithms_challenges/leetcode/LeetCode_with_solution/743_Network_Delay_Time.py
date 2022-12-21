@@ -17,7 +17,7 @@ c_ Solution o..
     #     ans = max(dist.values())
     #     return ans if ans < float('inf') else -1
 
-    ___ networkDelayTime  times, N, K):
+    ___ networkDelayTime  times, N, K
         # Dijkstra
         graph = collections.defaultdict(list)
         ___ u, v, w __ times:
@@ -30,8 +30,8 @@ c_ Solution o..
         w.. T..:
             cand_node = -1
             cand_dist = float('inf')
-            ___ i __ xrange(1, N + 1):
-                __ not seen[i] and dist[i] < cand_dist:
+            ___ i __ xrange(1, N + 1
+                __ n.. seen[i] and dist[i] < cand_dist:
                     cand_dist = dist[i]
                     cand_node = i
 
@@ -40,5 +40,5 @@ c_ Solution o..
             ___ nei, d __ graph[cand_node]:
                 dist[nei] = min(dist[nei], dist[cand_node] + d)
 
-        ans = max(dist.values())
+        ans = m..(dist.values())
         r_ ans __ ans < float('inf') ____ -1

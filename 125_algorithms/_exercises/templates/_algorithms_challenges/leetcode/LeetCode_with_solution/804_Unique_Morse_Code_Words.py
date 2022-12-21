@@ -7,14 +7,14 @@ Morse_tab = [".-","-...","-.-.",
 
 c_ Solution o..
     # https://leetcode.com/problems/unique-morse-code-words/solution/
-    ___ uniqueMorseRepresentations  words):
+    ___ uniqueMorseRepresentations  words
         """
         :type words: List[str]
         :rtype: int
         """
         __ l.. words) __ 0:
             r_ 0
-        ans_set = set()
+        ans_set = s..()
         ___ word __ words:
             morsed = ""
             ___ c __ word:

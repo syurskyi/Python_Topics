@@ -51,14 +51,14 @@ c_ Stack o..
         queue2 =    # list
         curr_top = 0
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: nothing
         """
         queue2.append(x)
         curr_top = x
-        w.. l.. queue1):
+        w.. l.. queue1
             queue2.append(queue1.pop(0))
         temp = queue2
         queue2 = queue1
@@ -69,7 +69,7 @@ c_ Stack o..
         :rtype: nothing
         """
         queue1.pop(0)
-        __ l.. queue1):
+        __ l.. queue1
             curr_top = queue1[0]
 
     ___ top ____:

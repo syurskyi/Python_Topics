@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ reverseWords  s):
+    ___ reverseWords  s
         """
         :type s: a list of 1 length strings (List[str])
         :rtype: nothing
@@ -8,11 +8,11 @@ c_ Solution o..
         __ s is N.. or ls __ 0:
             r_
         reverse(s, 0, ls)
-        ___ i __ r.. ls + 1):
+        ___ i __ r.. ls + 1
             __ i __ ls or s[i] __ ' ':
                 reverse(s, pos, i)
                 pos = i + 1
 
-    ___ reverse  array_s, begin, end):
-        ___ i __ range((end - begin) / 2):
+    ___ reverse  array_s, begin, end
+        ___ i __ r..((end - begin) / 2
             array_s[begin + i], array_s[end - i - 1] = array_s[end - i - 1], array_s[begin + i]

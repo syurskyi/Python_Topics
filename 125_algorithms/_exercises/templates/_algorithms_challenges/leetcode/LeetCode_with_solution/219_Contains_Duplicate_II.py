@@ -22,9 +22,9 @@ c_ Solution o..
     #                 pos += 1
     #     return False
 
-    ___ containsNearbyDuplicate  nums, k):
+    ___ containsNearbyDuplicate  nums, k
         # check k interval
-        check = set()
+        check = s..()
         ___ i __ r.. l.. nums)):
             __ i > k:
                 check.remove(nums[i - k - 1])

@@ -25,11 +25,11 @@ c_ Solution o..
     #         pos = pos.next
     #     return head.next
 
-    ___ deleteDuplicates  head):
+    ___ deleteDuplicates  head
         __ head is N..:
             r_ N..
         pos = head
-        w.. pos is not N.. and pos.next is not N..:
+        w.. pos is n.. N.. and pos.next is n.. N..:
             __ pos.val __ pos.next.val:
                 pos.next = pos.next.next
             ____

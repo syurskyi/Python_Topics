@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ poorPigs  buckets, minutesToDie, minutesToTest):
+    ___ poorPigs  buckets, minutesToDie, minutesToTest
         """
         :type buckets: int
         :type minutesToDie: int

@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ getHint  secret, guess):
+    ___ getHint  secret, guess
         """
         :type secret: str
         :type guess: str
@@ -9,7 +9,7 @@ c_ Solution o..
         ls = l.. secret)
         bull, cow = 0, 0
         different =    # list
-        ___ i __ r.. ls):
+        ___ i __ r.. ls
             __ guess[i] __ secret[i]:
                 bull += 1
             ____

@@ -33,8 +33,8 @@ Constraints:
 c_ Solution:
     ___ numberOfSteps   num: i..   i..:
         steps = 0
-        w..(num > 0):
-            __(num % 2 __ 0):
+        w..(num > 0
+            __(num % 2 __ 0
                 num = num / 2
                 steps + =1
             ____

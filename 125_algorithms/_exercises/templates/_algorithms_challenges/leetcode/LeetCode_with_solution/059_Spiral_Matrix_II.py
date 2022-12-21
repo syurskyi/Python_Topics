@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ generateMatrix  n):
+    ___ generateMatrix  n
         """
         :type n: int
         :rtype: List[List[int]]
@@ -7,7 +7,7 @@ c_ Solution o..
         res = [[0] * n ___ _ __ r.. n)]
         pos = [0, 0]
         move = (0, 1)
-        ___ index __ r.. 1, n * n + 1):
+        ___ index __ r.. 1, n * n + 1
             res[pos[0]][pos[1]] = index
             __ res[(pos[0] + move[0]) % n][(pos[1] + move[1]) % n] > 0:
                 # (0, 1) -> (1, 0) -> (0, -1) -> (-1, 0)

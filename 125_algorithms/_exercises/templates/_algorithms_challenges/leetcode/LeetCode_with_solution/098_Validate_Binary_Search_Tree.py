@@ -29,10 +29,10 @@ c_ Solution o..
     #     result.extend(self.getOrder(node.right))
     #     return result
 
-    ___ isValidBST  root):
+    ___ isValidBST  root
         r_ isVaild_helper(root, -sys.maxint - 1, sys.maxint)
 
-    ___ isVaild_helper  root, minVal, maxVal):
+    ___ isVaild_helper  root, minVal, maxVal
         __ root is N..:
             r_ T..
         __ root.val >= maxVal or root.val <= minVal:

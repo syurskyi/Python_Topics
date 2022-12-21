@@ -17,7 +17,7 @@ c_ Solution o..
     #     if num == 1:
     #         return True
     #     return False
-    ___ isUgly  num):
+    ___ isUgly  num
         __ num <= 0:
             r_ F..
         divisors = [2, 3, 5]

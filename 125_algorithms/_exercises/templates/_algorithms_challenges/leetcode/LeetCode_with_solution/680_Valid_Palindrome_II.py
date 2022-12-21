@@ -14,10 +14,10 @@ c_ Solution o..
     #     return True
 
     # Actually we can make this solution more general
-    ___ validPalindrome  s):
+    ___ validPalindrome  s
         r_ validPalindromeHelper(s, 0, l.. s) - 1, 1)
 
-    ___ validPalindromeHelper  s, left, right, budget):
+    ___ validPalindromeHelper  s, left, right, budget
         # Note that budget can be more than 1
         w.. left < l.. s) and right >= 0 and left <= right and s[left] __ s[right]:
             left += 1

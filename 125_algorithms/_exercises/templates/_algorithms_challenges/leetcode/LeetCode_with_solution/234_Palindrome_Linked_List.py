@@ -23,7 +23,7 @@ c_ Solution o..
     #     self.curr_head = self.curr_head.next
     #     return isPal
 
-    ___ isPalindrome  head):
+    ___ isPalindrome  head
         # p2 is 2 times faster than p3
         # p1 and pre is used to reverse the first half of the list
         # so when the first while is over
@@ -34,7 +34,7 @@ c_ Solution o..
             r_ T..
         p1, p2 = head, head
         p3, pre = p1.next, p1
-        w.. p2.next is not N.. and p2.next.next is not N..:
+        w.. p2.next is n.. N.. and p2.next.next is n.. N..:
             p2 = p2.next.next
             pre = p1
             p1 = p3
@@ -43,7 +43,7 @@ c_ Solution o..
         __ p2.next is N..:
             p1 = p1.next
 
-        w.. p3 is not N..:
+        w.. p3 is n.. N..:
             __ p1.val != p3.val:
                 r_ F..
             p1 = p1.next

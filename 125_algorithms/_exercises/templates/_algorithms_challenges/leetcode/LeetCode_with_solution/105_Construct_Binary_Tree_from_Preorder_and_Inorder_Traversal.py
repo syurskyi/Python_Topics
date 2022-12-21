@@ -39,12 +39,12 @@ c_ Solution o..
     #     return root
 
 
-    ___ buildTree  preorder, inorder):
+    ___ buildTree  preorder, inorder
         n = l.. inorder)
         inOrderMap = {inorder[i]: i ___ i __ r.. n)}
         r_ buildTreeUtil(preorder, inorder, inOrderMap, 0, n - 1, 0, n - 1)
 
-    ___ buildTreeUtil  preorder, inorder, inOrderMap, pStart, pEnd, iStart, iEnd):
+    ___ buildTreeUtil  preorder, inorder, inOrderMap, pStart, pEnd, iStart, iEnd
         __ pStart > pEnd or iStart > iEnd:
             r_ N..
         root = TreeNode(preorder[pStart])

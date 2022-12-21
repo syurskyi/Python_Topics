@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ largestRectangleArea  heights):
+    ___ largestRectangleArea  heights
         """
         :type heights: List[int]
         :rtype: int
@@ -11,15 +11,15 @@ c_ Solution o..
         # keep the increase order
         stack = [-1]
         top, pos = 0, 0
-        ___ pos __ r.. ls):
+        ___ pos __ r.. ls
             w.. top > 0 and heights[stack[top]] > heights[pos]:
-                largest_rectangle = max(largest_rectangle, heights[stack[top]] * (pos - stack[top - 1] - 1))
+                largest_rectangle = m..(largest_rectangle, heights[stack[top]] * (pos - stack[top - 1] - 1))
                 top -= 1
                 stack.pop()
             stack.append(pos)
             top += 1
         w.. top > 0:
-            largest_rectangle = max(largest_rectangle, heights[stack[top]] * (ls - stack[top - 1] - 1))
+            largest_rectangle = m..(largest_rectangle, heights[stack[top]] * (ls - stack[top - 1] - 1))
             top -= 1
         r_ largest_rectangle
 

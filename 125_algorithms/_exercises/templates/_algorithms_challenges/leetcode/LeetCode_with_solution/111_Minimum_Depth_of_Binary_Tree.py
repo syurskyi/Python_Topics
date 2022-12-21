@@ -21,7 +21,7 @@ c_ Solution o..
     #         return 1 + min(ld, rd)
     #     return 1 + ld +rd
 
-    ___ minDepth  root):
+    ___ minDepth  root
         # BFS
         __ root is N..:
             r_ 0
@@ -31,14 +31,14 @@ c_ Solution o..
             node = queue.pop(0)
             __ node.left is N.. and node.right is N..:
                 break
-            __ node.left is not N..:
+            __ node.left is n.. N..:
                 queue.append(node.left)
-            __ node.right is not N..:
+            __ node.right is n.. N..:
                 queue.append(node.right)
             __ node __ rightMost:
                 # reach the current level end
                 depth += 1
-                __ node.right is not N..:
+                __ node.right is n.. N..:
                     rightMost = node.right
                 ____
                     rightMost = node.left

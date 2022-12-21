@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ combinationSum2  candidates, target):
+    ___ combinationSum2  candidates, target
         """
         :type candidates: List[int]
         :type target: int
@@ -8,7 +8,7 @@ c_ Solution o..
         candidates.s..
         dp = [[] ___ _ __ r.. target + 1)]
         dp[0].append(   # list)
-        ___ i __ r.. 1, target + 1):
+        ___ i __ r.. 1, target + 1
             ___ j __ r.. l.. candidates)):
                 __ candidates[j] > i:
                     break
@@ -16,7 +16,7 @@ c_ Solution o..
                     temp = dp[i - candidates[j]][k][:]
                     # check if this number is used
                     __ l.. temp) > 0 and temp[-1] >= j:
-                        continue
+                        c_
                     # store index
                     temp.append(j)
                     dp[i].append(temp)

@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ trap  height):
+    ___ trap  height
         """
         :type height: List[int]
         :rtype: int
@@ -20,7 +20,7 @@ c_ Solution o..
             ____ pos __ ls - 1:
                 # left bar is higher than all right bar
                 max_value, max_index = 0, pos
-                ___ index __ r.. left + 1, ls):
+                ___ index __ r.. left + 1, ls
                     __ height[index] > max_value:
                         max_value = height[index]
                         max_index = index
@@ -31,14 +31,14 @@ c_ Solution o..
                 pos += 1
         r_ res
 
-    ___ rain_water  height, start, end):
+    ___ rain_water  height, start, end
         # computer rain water
         __ end - start <= 1:
             r_ 0
         min_m = min(height[start], height[end])
         res = min_m * (end - start - 1)
         step = 0
-        ___ index __ r.. start + 1, end):
+        ___ index __ r.. start + 1, end
             __ height[index] > 0:
                 step += height[index]
         r_ res - step

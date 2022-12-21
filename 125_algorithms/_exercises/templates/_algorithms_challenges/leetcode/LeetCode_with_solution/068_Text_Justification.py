@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ fullJustify  words, maxWidth):
+    ___ fullJustify  words, maxWidth
         """
         :type words: List[str]
         :type maxWidth: int
@@ -9,7 +9,7 @@ c_ Solution o..
         res_list =    # list
         curr =    # list
         count, pos = 0, 0
-        w.. pos < l.. words):
+        w.. pos < l.. words
             word = words[pos]
             __ l.. word) > maxWidth:
                 pos += 1
@@ -24,9 +24,9 @@ c_ Solution o..
         __ l.. curr) > 0:
             res_list.append(curr)
         # print res_list
-        ___ index, curr __ e.. res_list):
+        ___ index, curr __ e.. res_list
             text = ''
-            remain = sum([l.. t) ___ t __ curr])
+            remain = s..([l.. t) ___ t __ curr])
             __ l.. curr) __ 1:
                 # single word
                 text = curr[0] + ' ' * (maxWidth - remain)
@@ -38,7 +38,7 @@ c_ Solution o..
                 # multiple
                 step = (maxWidth - remain) / (l.. curr) - 1 )
                 extra = (maxWidth - remain) % (l.. curr) - 1 )
-                ___ index __ r.. l.. curr) - 1):
+                ___ index __ r.. l.. curr) - 1
                     text += curr[index] + ' ' * step
                     __ extra > 0:
                         # assign from left

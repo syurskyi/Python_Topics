@@ -18,13 +18,13 @@ c_ Solution o..
     #             return root.left.val + self.sumOfLeftLeaves(root.right)
     #     return self.sumOfLeftLeaves(root.left) + self.sumOfLeftLeaves(root.right)
 
-    ___ sumOfLeftLeaves  root):
+    ___ sumOfLeftLeaves  root
         stack = [root]
         res = 0
         w.. l.. stack) > 0:
             curr = stack.pop(0)
-            __ curr is not N..:
-                __ curr.left is not N..:
+            __ curr is n.. N..:
+                __ curr.left is n.. N..:
                     __ curr.left.left is N.. and curr.left.right is N..:
                         res += curr.left.val
                 stack.insert(0, curr.right)

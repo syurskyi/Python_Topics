@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ solveNQueens  n):
+    ___ solveNQueens  n
         """
         :type n: int
         :rtype: List[List[str]]
@@ -12,15 +12,15 @@ c_ Solution o..
         do_solveNQueens(res, board, n)
         r_ res
 
-    ___ do_solveNQueens  res, board, num):
+    ___ do_solveNQueens  res, board, num
         __ num __ 0:
             res.append([''.join(t) ___ t __ board])
             r_
         ls = l.. board)
         pos = ls - num
         check = [T..] * ls
-        ___ i __ r.. pos):
-            ___ j __ r.. ls):
+        ___ i __ r.. pos
+            ___ j __ r.. ls
                 __ board[i][j] __ 'Q':
                     check[j] = F..
                     step = pos - i
@@ -29,7 +29,7 @@ c_ Solution o..
                     __ j - step >= 0:
                         check[j - step] = F..
                     break
-        ___ j __ r.. ls):
+        ___ j __ r.. ls
             __ check[j]:
                 board[pos][j] = 'Q'
                 do_solveNQueens(res, board, num - 1)

@@ -39,7 +39,7 @@ c_ Solution o..
     #         if node.right is not None:
     #             self.get_path(paths, node.right, paths[node])
 
-    ___ lowestCommonAncestor  root, p, q):
+    ___ lowestCommonAncestor  root, p, q
         # use the BST to reduce the search space
         __ p is N.. or q is N.. or root is N..:
             r_ N..

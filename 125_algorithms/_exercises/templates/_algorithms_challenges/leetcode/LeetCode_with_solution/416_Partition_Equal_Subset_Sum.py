@@ -21,8 +21,8 @@ c_ Solution o..
     #             dp[j] = dp[j] or dp[j - nums[i - 1]]
     #     return dp[volumn]
 
-    ___ canPartition  nums):
-        total_sum = sum(nums)
+    ___ canPartition  nums
+        total_sum = s..(nums)
         __ total_sum & 1:
             r_ F..
         # if sum of some elements can be half of total sum then true
@@ -30,6 +30,6 @@ c_ Solution o..
         dp = [0] * (target + 1)
         dp[0] = 1
         ___ num __ nums:
-            ___ i __ r.. target, num - 1, -1):
+            ___ i __ r.. target, num - 1, -1
                 dp[i] = dp[i] | dp[i - num]
         r_ dp[target] __ 1

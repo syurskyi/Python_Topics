@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ wallsAndGates  rooms):
+    ___ wallsAndGates  rooms
         """
         :type rooms: List[List[int]]
         :rtype: void Do not return anything, modify rooms in-place instead.
@@ -11,8 +11,8 @@ c_ Solution o..
             r_
         n = l.. rooms[0])
         q =    # list
-        ___ row __ r.. m):
-            ___ col __ r.. n):
+        ___ row __ r.. m
+            ___ col __ r.. n
                 # gate
                 __ rooms[row][col] __ 0:
                     q.append((row, col))
@@ -25,6 +25,6 @@ c_ Solution o..
                 c = col + d[1]
                 # wall or out of rooms
                 __ r < 0 or c < 0 or r >= m or c >= n or rooms[r][c] != 2147483647:
-                    continue
+                    c_
                 rooms[r][c] = rooms[row][col] + 1
                 q.append((r, c))

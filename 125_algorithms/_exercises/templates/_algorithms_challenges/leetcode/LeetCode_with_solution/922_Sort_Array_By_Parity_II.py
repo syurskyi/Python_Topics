@@ -17,9 +17,9 @@ c_ Solution o..
     #     # ans[1::2] = (x for x in A if x % 2 == 1)
     #     return ans
 
-    ___ sortArrayByParityII  A):
+    ___ sortArrayByParityII  A
         odd = 1
-        ___ i __ xrange(0, l.. A), 2):
+        ___ i __ xrange(0, l.. A), 2
             __ A[i] % 2:
                 w.. A[odd] % 2:
                     odd += 2

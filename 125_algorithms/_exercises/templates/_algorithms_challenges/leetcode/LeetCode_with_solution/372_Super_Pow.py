@@ -2,7 +2,7 @@ c_ Solution o..
     ___ - ____:
         base = 1337
 
-    ___ superPow  a, b):
+    ___ superPow  a, b
         """
         :type a: int
         :type b: List[int]
@@ -16,9 +16,9 @@ c_ Solution o..
         r_ powmod(superPow(a, b), 10) * \
             powmod(a, last_digit) % base
 
-    ___ powmod  a, k):
+    ___ powmod  a, k
         a %= base
         result = 1
-        ___ i __ r.. k):
+        ___ i __ r.. k
             result = (result * a) % base
         r_ result

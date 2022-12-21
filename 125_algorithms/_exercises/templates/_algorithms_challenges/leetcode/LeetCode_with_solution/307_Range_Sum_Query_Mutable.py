@@ -43,7 +43,7 @@
 
 
 c_ NumArray o..
-    ___ -  nums):
+    ___ -  nums
         """
         initialize your data structure here.
         :type nums: List[int]
@@ -52,7 +52,7 @@ c_ NumArray o..
         tree = [0] * (ls * 2)
         buildTree(nums)
 
-    ___ buildTree  nums):
+    ___ buildTree  nums
         i, j = ls, 0
         w.. i < 2 * ls:
             tree[i] = nums[j]
@@ -62,7 +62,7 @@ c_ NumArray o..
             tree[i] = tree[i * 2] + tree[i * 2  + 1]
 
 
-    ___ update  i, val):
+    ___ update  i, val
         """
         :type i: int
         :type val: int
@@ -79,7 +79,7 @@ c_ NumArray o..
             tree[i / 2] = tree[left] + tree[right]
             i /= 2
 
-    ___ sumRange  i, j):
+    ___ sumRange  i, j
         """
         sum of elements nums[i..j], inclusive.
         :type i: int

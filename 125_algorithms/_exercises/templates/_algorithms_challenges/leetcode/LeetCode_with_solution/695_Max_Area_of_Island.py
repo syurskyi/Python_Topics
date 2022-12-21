@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ maxAreaOfIsland  grid):
+    ___ maxAreaOfIsland  grid
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -10,11 +10,11 @@ c_ Solution o..
             ___ j __ r.. l.. grid[0])):
                 __ grid[i][j] __ 1:
                     grid[i][j] = 0
-                    ans = max(dfs(grid, i, j), ans)
+                    ans = m..(dfs(grid, i, j), ans)
                     # ans = max(self.bfs(grid, i, j), ans)
         r_ ans
 
-    ___ dfs  grid, i, j):
+    ___ dfs  grid, i, j
         # DFS based on stack
         stack = [(i, j)]
         area = 0

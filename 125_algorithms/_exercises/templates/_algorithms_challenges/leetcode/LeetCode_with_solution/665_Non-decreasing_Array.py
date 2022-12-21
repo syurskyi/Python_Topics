@@ -17,14 +17,14 @@ c_ Solution o..
     #     # Remove pos or remove pos + 1
     #     return (nums[pos - 1] <= nums[pos + 1] or nums[pos] <= nums[pos + 2])
 
-    ___ checkPossibility  nums):
+    ___ checkPossibility  nums
         """
         :type nums: List[int]
         :rtype: bool
         """
         # https://leetcode.com/problems/non-decreasing-array/discuss/106826/JavaC%2B%2B-Simple-greedy-like-solution-with-explanation
         broken_num = 0
-        ___ i __ r.. l.. nums) - 1):
+        ___ i __ r.. l.. nums) - 1
             __ (nums[i] > nums[i + 1 
                 broken_num += 1
                 __ broken_num >= 2:

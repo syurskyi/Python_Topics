@@ -6,22 +6,22 @@
 
 c_ Solution o..
     # https://leetcode.com/articles/intersection-two-linked-lists/
-    ___ getIntersectionNode  headA, headB):
+    ___ getIntersectionNode  headA, headB
         """
         :type head1, head1: ListNode
         :rtype: ListNode
         """
         # two points
-        __ not headA or not headB:
+        __ n.. headA or n.. headB:
             r_ N..
         a, b = headA, headB
         ans = N..
         w.. a or b:
-            __ not a:
+            __ n.. a:
                 a = headB
-            __ not b:
+            __ n.. b:
                 b = headA
-            __ a __ b and not ans:
+            __ a __ b and n.. ans:
                 ans = a
             a, b = a.next, b.next
         r_ ans

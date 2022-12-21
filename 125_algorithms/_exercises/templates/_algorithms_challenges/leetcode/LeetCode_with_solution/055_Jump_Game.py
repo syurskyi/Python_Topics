@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ canJump  nums):
+    ___ canJump  nums
         """
         :type nums: List[int]
         :rtype: bool
@@ -11,4 +11,4 @@ c_ Solution o..
         ___ i __ reversed(r.. length - 1)):
             __ i + nums[i] >= begin:
                 begin = i
-        r_ not begin
+        r_ n.. begin

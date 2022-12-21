@@ -24,13 +24,13 @@ c_ Solution o..
     #         check[i] = True
     #     return True
 
-    ___ isIsomorphic  s, t):
-        __ l.. s) != l.. t):
+    ___ isIsomorphic  s, t
+        __ l.. s) != l.. t
             r_ F..
         ls = l.. s)
         mapStoT = [0] * 127
         mapTtoS = [0] * 127
-        ___ i __ r.. ls):
+        ___ i __ r.. ls
             s_num, t_num = o.. s[i]), o.. t[i])
             __ mapStoT[s_num] __ 0 and mapTtoS[t_num] __ 0:
                 mapStoT[s_num] = t_num

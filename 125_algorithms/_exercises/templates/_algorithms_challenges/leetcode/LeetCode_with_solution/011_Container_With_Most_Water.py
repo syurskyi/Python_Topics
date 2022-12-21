@@ -4,7 +4,7 @@ c_ Solution:
         left, right = 0, l.. height) - 1
         result = 0
         w.. left < right:
-            result = max(min(height[left], height[right]) * (right - left), result)
+            result = m..(min(height[left], height[right]) * (right - left), result)
             __ height[left] > height[right]:
                 # remove right
                 right -= 1

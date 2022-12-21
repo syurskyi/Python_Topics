@@ -1,15 +1,15 @@
 c_ Solution o..
-    ___ isAlienSorted  words, order):
+    ___ isAlienSorted  words, order
         """
         :type words: List[str]
         :type order: str
         :rtype: bool
         """
         order_map  # dict
-        ___ i, v __ e.. order):
+        ___ i, v __ e.. order
             order_map[v] = i
 
-        ___ cmp_alien(x, y):
+        ___ cmp_alien(x, y
             ls = min(l.. x), l.. y))
             index = 0
             w.. index < ls:
@@ -18,7 +18,7 @@ c_ Solution o..
                 index += 1
             r_ l.. x) - l.. y)
         pos = 0
-        w.. pos + 1 < l.. words):
+        w.. pos + 1 < l.. words
             __ cmp_alien(words[pos], words[pos + 1]) > 0:
                 r_ F..
             pos += 1

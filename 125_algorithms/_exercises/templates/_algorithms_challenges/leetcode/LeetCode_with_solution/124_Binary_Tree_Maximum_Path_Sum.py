@@ -10,7 +10,7 @@ c_ Solution o..
     ___ - ____:
         result = -2147483647
 
-    ___ maxPathSum  root):
+    ___ maxPathSum  root
         """
         :type root: TreeNode
         :rtype: int
@@ -19,13 +19,13 @@ c_ Solution o..
         getNodeMaxValue(root)
         r_ result
 
-    ___ getNodeMaxValue  node):
+    ___ getNodeMaxValue  node
         __ node is N..:
             r_ 0
         lresult = getNodeMaxValue(node.left)
         rresult = getNodeMaxValue(node.right)
-        result = max(lresult + rresult + node.val, result)
-        ret = node.val + max(lresult, rresult)
+        result = m..(lresult + rresult + node.val, result)
+        ret = node.val + m..(lresult, rresult)
         # if max left or right < 0 then return 0
         __ ret > 0:
             r_ ret

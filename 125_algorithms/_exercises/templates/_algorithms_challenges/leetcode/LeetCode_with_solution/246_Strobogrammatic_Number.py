@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ isStrobogrammatic  num):
+    ___ isStrobogrammatic  num
         """
         :type num: str
         :rtype: bool
@@ -8,10 +8,10 @@ c_ Solution o..
         dic = {'0':'0', '6':'9', '9': '6', '1' :'1', '8': '8'}
         temp_s = ''
         ___ c __ num||-1]:
-            __ c not __ dic:
+            __ c n.. __ dic:
                 r_ F..
             temp_s += dic[c]
-        __ i..(temp_s) __ i..(num):
+        __ i..(temp_s) __ i..(num
             r_ T..
         r_ F..
 

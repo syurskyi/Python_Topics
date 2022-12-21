@@ -16,7 +16,7 @@ c_ Solution o..
     #             count[index] -= 1
     #     return
 
-    ___ sortColors  nums):
+    ___ sortColors  nums
         # https://leetcode.com/discuss/85658/sharing-c-solution-with-good-explanation
         low, mid, high = 0, 0, l.. nums) - 1
         w.. mid <= high:

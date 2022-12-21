@@ -58,7 +58,7 @@ c_ MinStack o..
         min_stack =    # list
 
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: nothing

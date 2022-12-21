@@ -15,7 +15,7 @@ c_ Solution:
         w.. n > 0:
             __ n % 2 __ 1:
                 __ last1 >= 1:
-                    out = max(out, current - last1)
+                    out = m..(out, current - last1)
                 last1 = current
             current += 1
             n = n // 2

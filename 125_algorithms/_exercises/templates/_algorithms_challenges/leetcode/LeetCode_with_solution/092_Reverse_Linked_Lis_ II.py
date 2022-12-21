@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution o..
-    ___ reverseBetween  head, m, n):
+    ___ reverseBetween  head, m, n
         """
         :type head: ListNode
         :type m: int
@@ -16,22 +16,22 @@ c_ Solution o..
             r_ head
         split_node, prev, curr = N.., N.., head
         count = 1
-        w.. count <= m and curr is not N..:
+        w.. count <= m and curr is n.. N..:
             __ count __ m:
                 split_node = prev
             prev = curr
             curr = curr.next
             count += 1
         tail, next_node = prev, N..
-        w.. curr is not N.. and count <= n:
+        w.. curr is n.. N.. and count <= n:
             next_temp = curr.next
             curr.next = prev
             prev = curr
             curr = next_temp
             count += 1
-        __ split_node is not N..:
+        __ split_node is n.. N..:
             split_node.next = prev
-        __ tail is not N..:
+        __ tail is n.. N..:
             tail.next = curr
         __ m __ 1:
             r_ prev

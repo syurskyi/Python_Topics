@@ -1,11 +1,11 @@
 c_ Solution o..
-    ___ search  nums, target):
+    ___ search  nums, target
         """
         :type nums: List[int]
         :type target: int
         :rtype: bool
         """
-        ___ get(start, end):
+        ___ get(start, end
             __ start > end:
                 r_ F..
             mid = (start + end) / 2

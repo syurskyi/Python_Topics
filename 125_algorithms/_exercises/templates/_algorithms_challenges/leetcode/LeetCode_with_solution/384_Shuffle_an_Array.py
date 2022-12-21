@@ -1,6 +1,6 @@
 import random
 c_ Solution o..
-    ___ -  nums):
+    ___ -  nums
         """
         :type nums: List[int]
         :type size: int
@@ -22,7 +22,7 @@ c_ Solution o..
         Returns a random shuffling of the array.
         :rtype: List[int]
         """
-        ___ i __ r.. size):
+        ___ i __ r.. size
             pos = random.randint(0, i)
             # swap i and pos
             curr[i], curr[pos] = curr[pos], curr[i]

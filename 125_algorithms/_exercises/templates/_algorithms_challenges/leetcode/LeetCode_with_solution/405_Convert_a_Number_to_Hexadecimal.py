@@ -1,6 +1,6 @@
 
 c_ Solution o..
-    ___ toHex  num):
+    ___ toHex  num
         """
         :type num: int
         :rtype: str
@@ -10,7 +10,7 @@ c_ Solution o..
         # letter map
         mp = '0123456789abcdef'
         ans = ''
-        ___ _ __ r.. 8):
+        ___ _ __ r.. 8
             # get last 4 digits
             # num & 1111b
             n = num & 15

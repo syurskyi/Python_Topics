@@ -7,12 +7,12 @@ c_ Solution:
     #         if ans % 2 == 0 and v % 2 == 1:
     #             ans += 1
     #     return ans
-    ___ longestPalindrome  s):
+    ___ longestPalindrome  s
         ans = 0
         char_map  # dict
         ___ c __ s:
             char_map[c] = char_map.get(c, 0) + 1
-        ___ c __ char_map.keys():
+        ___ c __ char_map.keys(
             __ char_map[c] % 2 __ 0:
                 ans += char_map.pop(c)
             ____

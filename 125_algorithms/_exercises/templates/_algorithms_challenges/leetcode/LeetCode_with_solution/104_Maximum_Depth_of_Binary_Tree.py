@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution:
-    ___ maxDepth  root):
+    ___ maxDepth  root
         """
         :type root: TreeNode
         :rtype: int
@@ -15,4 +15,4 @@ c_ Solution:
             r_ 0
         ld = maxDepth(root.left)
         rd = maxDepth(root.right)
-        r_ 1 + max(ld, rd)
+        r_ 1 + m..(ld, rd)

@@ -2,7 +2,7 @@ import collections
 
 
 c_ Solution o..
-    ___ repeatedNTimes  A):
+    ___ repeatedNTimes  A
         """
         :type A: List[int]
         :rtype: int

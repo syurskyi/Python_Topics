@@ -5,7 +5,7 @@
 #         self.end = e
 
 c_ Solution o..
-    ___ merge  intervals):
+    ___ merge  intervals
         """
         :type intervals: List[Interval]
         :rtype: List[Interval]
@@ -16,7 +16,7 @@ c_ Solution o..
         __ ls <= 1:
             r_ intervals
         # sort by start
-        intervals.sort(key=lambda x: x.start)
+        intervals.sort(k.._l... x: x.start)
         pos = 0
         w.. pos < l.. intervals) - 1:
             # check overlap

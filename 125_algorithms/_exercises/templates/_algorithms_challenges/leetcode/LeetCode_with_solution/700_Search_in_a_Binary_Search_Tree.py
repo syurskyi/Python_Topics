@@ -22,7 +22,7 @@ c_ Solution o..
     #     else:
     #         return self.searchBST(root.right, val)
 
-    ___ searchBST  root, val):
+    ___ searchBST  root, val
         w.. root:
             __ root.val __ val:
                 r_ root

@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution o..
-    ___ isBalanced  root):
+    ___ isBalanced  root
         """
         :type root: TreeNode
         :rtype: bool
@@ -18,7 +18,7 @@ c_ Solution o..
             r_ F..
         r_ T..
     
-    ___ getDepth  node):
+    ___ getDepth  node
         __ node is N..:
             r_ 1
         ld = getDepth(node.left)
@@ -30,7 +30,7 @@ c_ Solution o..
         ____ abs(ld - rd) > 1:
             r_ -1
         ____
-            r_ max(ld, rd) + 1
+            r_ m..(ld, rd) + 1
     
 
     # https://discuss.leetcode.com/topic/7798/the-bottom-up-o-n-solution-would-be-better

@@ -10,7 +10,7 @@ c_ Solution o..
     #         i += 2
     #     return num == 0
 
-    ___ isPerfectSquare  num):
+    ___ isPerfectSquare  num
         low, high = 1, num
         w.. low <= high:
             mid = (low + high) / 2

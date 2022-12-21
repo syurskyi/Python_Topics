@@ -47,18 +47,18 @@ c_ Solution o..
         pre = TreeNode(-sys.maxint - 1)
 
 
-    ___ recoverTree  root):
+    ___ recoverTree  root
         traverse(root)
         first.val, second.val = second.val, first.val
 
-    ___ traverse  root):
+    ___ traverse  root
         __ root is N..:
             r_
         traverse(root.left)
         __ pre.val >= root.val:
             __ first is N..:
                 first = pre
-            __ first is not N..:
+            __ first is n.. N..:
                 second = root
         pre = root
         traverse(root.right)

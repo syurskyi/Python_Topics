@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ anagramMappings  A, B):
+    ___ anagramMappings  A, B
         """
         :type A: List[int]
         :type B: List[int]
@@ -7,7 +7,7 @@ c_ Solution o..
         """
         val_index  # dict
         ans =    # list
-        ___ i, n __ e.. B):
+        ___ i, n __ e.. B
             val_index[n] = i
         ___ n __ A:
             ans.append(val_index[n])

@@ -29,15 +29,15 @@ c_ Solution o..
     #             last = node
     #         nodes = next_step
 
-    ___ connect  root):
+    ___ connect  root
         # https://discuss.leetcode.com/topic/28580/java-solution-with-constant-space
         dummyHead = TreeLinkNode(-1)
         pre = dummyHead
-        w.. root is not N..:
-            __ root.left is not N..:
+        w.. root is n.. N..:
+            __ root.left is n.. N..:
                 pre.next = root.left
                 pre = pre.next
-            __ root.right is not N..:
+            __ root.right is n.. N..:
                 pre.next = root.right
                 pre = pre.next
             root = root.next

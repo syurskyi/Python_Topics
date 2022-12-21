@@ -41,19 +41,19 @@ c_ Solution o..
     #                 res = max(res, dp[i][j])
     #     return res * res
 
-    ___ maximalSquare  matrix):
+    ___ maximalSquare  matrix
         # dp[j] = min([j], dp[j-1], prev) + 1
         # O(n) space
         __ matrix is N.. or l.. matrix) __ 0:
             r_ 0
         rows, cols, res, prev = l.. matrix), l.. matrix[0]), 0, 0
         dp = [0] * (cols + 1)
-        ___ i __ r.. 1, rows + 1):
-            ___ j __ r.. 1, cols + 1):
+        ___ i __ r.. 1, rows + 1
+            ___ j __ r.. 1, cols + 1
                 temp = dp[j]
                 __ matrix[i - 1][j - 1] __ '1':
                     dp[j] = min(dp[j - 1], dp[j], prev) + 1
-                    res = max(res, dp[j])
+                    res = m..(res, dp[j])
                 ____
                     dp[j] = 0
                 prev = temp

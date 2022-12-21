@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ myAtoi  s..):
+    ___ myAtoi  s..
         """
         :type str: str
         :rtype: int
@@ -15,9 +15,9 @@ c_ Solution o..
             pos += 1
         ____ pos < ls and s..[pos] __ '+':
             pos += 1
-        w.. pos < ls and o.. s..[pos]) >= o.. '0') and o.. s..[pos]) <= o.. '9'):
+        w.. pos < ls and o.. s..[pos]) >= o.. '0') and o.. s..[pos]) <= o.. '9'
             num = o.. s..[pos]) - o.. '0')
-            __ result > max_int / 10 or ( result __ max_int / 10 and num >= 8):
+            __ result > max_int / 10 or ( result __ max_int / 10 and num >= 8
                 __ sign __ -1:
                     r_ min_int
                 r_ max_int

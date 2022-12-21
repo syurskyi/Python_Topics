@@ -40,7 +40,7 @@ c_ Solution o..
     #     return nums[start]
 
 
-    ___ findMin  nums):
+    ___ findMin  nums
         l, r = 0, l.. nums) - 1
         w.. l < r and nums[l] >= nums[r]:
             mid = (l + r) / 2

@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution o..
-    ___ oddEvenList  head):
+    ___ oddEvenList  head
         """
         :type head: ListNode
         :rtype: ListNode
@@ -16,7 +16,7 @@ c_ Solution o..
         __ head.next is N..:
             r_ head
         even_head = even = head.next
-        w.. odd.next is not N.. and even.next is not N..:
+        w.. odd.next is n.. N.. and even.next is n.. N..:
             odd.next = even.next
             odd = odd.next
             even.next = odd.next

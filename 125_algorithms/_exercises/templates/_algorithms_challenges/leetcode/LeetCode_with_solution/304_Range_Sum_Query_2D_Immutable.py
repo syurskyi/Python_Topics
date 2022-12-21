@@ -29,7 +29,7 @@ c_ NumMatrix o..
     #     return sum
 
     # caching smarter
-    ___ -  matrix):
+    ___ -  matrix
         """
         initialize your data structure here.
         :type matrix: List[List[int]]
@@ -38,14 +38,14 @@ c_ NumMatrix o..
             r_
         height, width = l.. matrix), l.. matrix[0])
         dp = [[0]* (width + 1) ___ i __ r.. height + 1)]
-        ___ i __ r.. height):
-            ___ j __ r.. width):
+        ___ i __ r.. height
+            ___ j __ r.. width
                 dp[i + 1][j + 1] = dp[i + 1][j] + \
                                         dp[i][j + 1] + matrix[i][j] - dp[i][j]
 
 
 
-    ___ sumRegion  row1, col1, row2, col2):
+    ___ sumRegion  row1, col1, row2, col2
         """
         sum of elements matrix[(row1,col1)..(row2,col2)], inclusive.
         :type row1: int

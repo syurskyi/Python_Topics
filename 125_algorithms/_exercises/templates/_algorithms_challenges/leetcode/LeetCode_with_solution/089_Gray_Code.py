@@ -1,12 +1,12 @@
 c_ Solution o..
-    ___ grayCode  n):
+    ___ grayCode  n
         """
         :type n: int
         :rtype: List[int]
         """
         # https://leetcode.com/discuss/86617/6-line-java-solution-very-concise
         res = [0]
-        ___ i __ r.. n):
+        ___ i __ r.. n
             ___ j __ reversed(r.. l.. res))):
                 res.append(res[j] + (1 << i))
         r_ res

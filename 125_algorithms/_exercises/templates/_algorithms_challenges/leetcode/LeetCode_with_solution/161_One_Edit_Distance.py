@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ isOneEditDistance  s, t):
+    ___ isOneEditDistance  s, t
         """
         :type s: str
         :type t: str

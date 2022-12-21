@@ -36,7 +36,7 @@ c_ Solution o..
     #         pos = pos.next
     #     return False
 
-    ___ hasCycle  head):
+    ___ hasCycle  head
         # Two points
         try:
             fast = head.next.next

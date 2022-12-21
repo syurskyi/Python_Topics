@@ -1,13 +1,13 @@
 c_ Solution o..
-    ___ longestConsecutive  nums):
+    ___ longestConsecutive  nums
         """
         :type nums: List[int]
         :rtype: int
         """
 
-        ___ longestConsecutive  num):
+        ___ longestConsecutive  num
             # Pop adjacency O(n) and O(n)
-            num = set(num)
+            num = s..(num)
             maxLen = 0
             w.. num:
                 n = num.pop()
@@ -23,5 +23,5 @@ c_ Solution o..
                     num.remove(i)
                     i -= 1
                     l2 += 1
-                maxLen = max(maxLen, l1 + l2 + 1)
+                maxLen = m..(maxLen, l1 + l2 + 1)
             r_ maxLen

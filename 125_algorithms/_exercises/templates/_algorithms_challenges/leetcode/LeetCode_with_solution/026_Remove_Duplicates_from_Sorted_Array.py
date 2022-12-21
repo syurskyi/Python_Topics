@@ -19,13 +19,13 @@ c_ Solution o..
     #     return pos
 
     # https://leetcode.com/articles/remove-duplicates-sorted-array/
-    ___ removeDuplicates  nums):
+    ___ removeDuplicates  nums
         __ l.. nums) __ 0:
             r_ 0
         left = 0
         ___ i __ r.. 1, l.. nums)):
             __ nums[left] __ nums[i]:
-                continue
+                c_
             ____
                 left += 1
                 nums[left] = nums[i]

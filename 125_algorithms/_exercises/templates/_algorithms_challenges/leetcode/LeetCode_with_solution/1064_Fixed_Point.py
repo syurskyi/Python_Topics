@@ -11,7 +11,7 @@ c_ Solution o..
     #         elif index < value:
     #             return -1
 
-    ___ fixedPoint  A):
+    ___ fixedPoint  A
         l, h = 0, l.. A) - 1
         w.. l <= h:
             mid = (l + h) // 2

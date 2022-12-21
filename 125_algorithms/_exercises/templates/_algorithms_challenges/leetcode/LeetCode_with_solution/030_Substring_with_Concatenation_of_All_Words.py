@@ -1,5 +1,5 @@
 c_ Solution o..
-    ___ findSubstring  s, words):
+    ___ findSubstring  s, words
         """
         :type s: str
         :type words: List[str]
@@ -15,9 +15,9 @@ c_ Solution o..
             except KeyError:
                 target_dict[word] = 1
         res =    # list
-        ___ start __ r.. ls - word_ls * l.. words) + 1):
+        ___ start __ r.. ls - word_ls * l.. words) + 1
             curr_dict = target_dict.copy()
-            ___ pos __ r.. start, start + word_ls * l.. words), word_ls):
+            ___ pos __ r.. start, start + word_ls * l.. words), word_ls
                 curr = s[pos:pos + word_ls]
                 try:
                     curr_dict[curr] -= 1

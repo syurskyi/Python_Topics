@@ -36,11 +36,11 @@ c_ Solution o..
     #         root = root.left if target < root.val else root.right
     #     return min(path, key=lambda x: abs(target - x))
 
-    ___ closestValue  root, target):
+    ___ closestValue  root, target
         # compare kids' result with root
         kid = root.left __ target < root.val ____ root.right
-        __ not kid:
+        __ n.. kid:
             r_ root.val
         kid_min = closestValue(kid, target)
-        r_ min((kid_min, root.val), key=lambda x: abs(target - x))
+        r_ min((kid_min, root.val), k.._l... x: abs(target - x))
 

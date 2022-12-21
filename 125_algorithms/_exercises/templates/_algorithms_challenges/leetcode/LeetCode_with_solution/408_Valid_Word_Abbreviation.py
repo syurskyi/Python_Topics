@@ -33,7 +33,7 @@ c_ Solution o..
     #     if pos1 == len(abbr) and pos2 == len(word):
     #         return True
     #     return False
-    ___ validWordAbbreviation  word, abbr):
+    ___ validWordAbbreviation  word, abbr
         pos = curr = 0
         ___ i __ r.. l.. abbr)):
             try:
@@ -44,13 +44,13 @@ c_ Solution o..
             except ValueError:
                 pos += curr
                 curr = 0
-                __ pos >= l.. word):
+                __ pos >= l.. word
                     r_ F..
                 __ word[pos] != abbr[i]:
                     r_ F..
                 pos += 1
         pos += curr
-        __ pos __ l.. word):
+        __ pos __ l.. word
             r_ T..
         r_ F..
 

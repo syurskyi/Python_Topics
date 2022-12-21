@@ -50,13 +50,13 @@ c_ Solution o..
     #             visited[nums[i]] = 1
     #     return list(result)
 
-    ___ threeSum  nums):
+    ___ threeSum  nums
         res =    # list
         nums.s..
         ls = l.. nums)
-        ___ i __ r.. ls - 2):
+        ___ i __ r.. ls - 2
             __ i > 0 and nums[i] __ nums[i - 1]:
-                continue
+                c_
             j = i + 1
             k = ls - 1
             w.. j < k:

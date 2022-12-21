@@ -1,5 +1,5 @@
 c_ NumArray o..
-    ___ -  nums):
+    ___ -  nums
         """
         initialize your data structure here.
         :type nums: List[int]
@@ -9,7 +9,7 @@ c_ NumArray o..
         ___ i __ r.. l.. data)):
             res[i + 1] = res[i] + nums[i]
 
-    ___ sumRange  i, j):
+    ___ sumRange  i, j
         """
         sum of elements nums[i..j], inclusive.
         :type i: int

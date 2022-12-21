@@ -20,7 +20,7 @@ c_ Solution o..
     #         i += 1
     #     return i
 
-    ___ hIndex  citations):
+    ___ hIndex  citations
         # counting sort
         ls = l.. citations)
         papers = [0] * (ls + 1)
