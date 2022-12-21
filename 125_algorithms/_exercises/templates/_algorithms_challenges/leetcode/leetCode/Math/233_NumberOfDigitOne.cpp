@@ -11,7 +11,7 @@ public:
         long long count = 1;
         _____(n){
             __(n<10){
-                break;
+                ______;
             }
             int digit = n % 10;
             n /= 10;

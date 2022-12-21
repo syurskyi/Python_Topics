@@ -13,7 +13,7 @@ c_ Solution o..
         dp = [[F..] * (n + 1) ___ _ __ r.. m + 1)]
         dp[0][0] = T..
         ___ j __ r.. 1, n
-            __ p[j] __ '*' and dp[0][j - 1]:
+            __ p[j] __ '*' a.. dp[0][j - 1]:
                 dp[0][j + 1] = T..
         # print dp
         ___ i __ r.. m
@@ -21,7 +21,7 @@ c_ Solution o..
                 __ p[j] __ '.' or p[j] __ s[i]:
                     dp[i + 1][j + 1] = dp[i][j]
                 ____ p[j] __ '*':
-                    __ p[j - 1] != s[i] and p[j - 1] != '.':
+                    __ p[j - 1] != s[i] a.. p[j - 1] != '.':
                         dp[i + 1][j + 1] = dp[i + 1][j - 1]
                     ____
                         dp[i + 1][j + 1] = dp[i + 1][j] or dp[i][j + 1] or dp[i + 1][j - 1]

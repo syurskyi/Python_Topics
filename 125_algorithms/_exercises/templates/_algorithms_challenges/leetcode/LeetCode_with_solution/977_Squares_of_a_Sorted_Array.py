@@ -9,13 +9,13 @@ c_ Solution o..
 
     ___ sortedSquares  A
         pos = 0
-        w.. pos < l.. A) and A[pos] < 0:
+        w.. pos < l.. A) a.. A[pos] < 0:
             pos += 1
         # pos point to first positve
         # npos point to larget negative
         npos = pos - 1
         res =    # list
-        w.. pos < l.. A) and npos >= 0:
+        w.. pos < l.. A) a.. npos >= 0:
             __ A[npos] ** 2 < A[pos] ** 2:
                 res.append(A[npos] ** 2)
                 npos -= 1

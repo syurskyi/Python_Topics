@@ -43,9 +43,9 @@ c_ Solution o..
         # use the BST to reduce the search space
         __ p is N.. or q is N.. or root is N..:
             r_ N..
-        __ p.val < root.val and q.val < root.val:
+        __ p.val < root.val a.. q.val < root.val:
             r_ lowestCommonAncestor(root.left, p, q)
-        ____ p.val > root.val and q.val > root.val:
+        ____ p.val > root.val a.. q.val > root.val:
             r_ lowestCommonAncestor(root.right, p, q)
         ____
             r_ root

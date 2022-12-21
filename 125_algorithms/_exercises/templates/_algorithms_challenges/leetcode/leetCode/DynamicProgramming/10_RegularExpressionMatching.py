@@ -34,15 +34,15 @@ c.. Solution o..
                 """
                 __ p[i] __ "*":
                     m_0 = dp[i - 2][j]
-                    m_1 = (p[i - 1] __ "." or p[i - 1] __ s[j]) and dp[i - 2][j - 1]
-                    m_more = (p[i - 1] __ "." or p[i - 1] __ s[j]) and dp[i][j - 1]
+                    m_1 = (p[i - 1] __ "." or p[i - 1] __ s[j]) a.. dp[i - 2][j - 1]
+                    m_more = (p[i - 1] __ "." or p[i - 1] __ s[j]) a.. dp[i][j - 1]
                     dp[i][j] = m_0 or m_1 or m_more
 
                     # p[i] matches "" is equal p[i-2] matches "".
                     dp[i][-1] = dp[i - 2][-1]
 
                 ____
-                    dp[i][j] = (dp[i - 1][j - 1] and
+                    dp[i][j] = (dp[i - 1][j - 1] a..
                                 (p[i] __ s[j] or p[i] __ "."))
                     # p[i] doesn't match ""
                     dp[i][-1] = False

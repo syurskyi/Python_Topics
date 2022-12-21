@@ -11,7 +11,7 @@ c_ Solution o..
         :rtype: The number of characters read (int)
         """
         pos, eof = 0, F..
-        w.. n.. eof and pos < n:
+        w.. n.. eof a.. pos < n:
             buffer = [''] * 4
             sz = read4(buffer)
             __ sz < 4:

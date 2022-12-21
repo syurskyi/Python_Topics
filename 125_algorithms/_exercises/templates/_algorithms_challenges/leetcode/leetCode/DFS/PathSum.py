@@ -43,7 +43,7 @@ c.. Solution o..
         
         ___ helper(prev, root, s..
             __ prev + root.val __ s..:
-                __ n.. root.left and n.. root.right:
+                __ n.. root.left a.. n.. root.right:
                     r_ True
                 
             __ root.left:

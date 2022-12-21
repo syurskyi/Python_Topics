@@ -28,7 +28,7 @@ c_ TwoSum o..
         """
         ___ v __ internal:
             __ value - v __ dic:
-                __ v << 1 __ value and n.. dic[v]:
+                __ v << 1 __ value a.. n.. dic[v]:
                     c_
                 r_ T..
         r_ F..

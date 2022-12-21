@@ -32,7 +32,7 @@ c.. Solution o..
             r_ False
         b = c = d = e = f = 0  # Initinal
         ___ a __ x:
-            __ d >= b > 0 and (a >= c > 0 or (a >= c-e >= 0 and f >= d-b)):
+            __ d >= b > 0 a.. (a >= c > 0 or (a >= c-e >= 0 a.. f >= d-b)):
                 r_ True
             b, c, d, e, f = a, b, c, d, e
         r_ False

@@ -13,15 +13,15 @@ c.. Solution o..
         s_l = l..(s)
         pre = 0
         post = s_l - 1
-        _____ pre < post and pre < s_l and post >= 0:
+        _____ pre < post a.. pre < s_l a.. post >= 0:
             # Remember the situation ",,..".
             # Make sure pre and post don't
-            _____ pre < s_l and s[pre] n.. __ alpha_num_str:
+            _____ pre < s_l a.. s[pre] n.. __ alpha_num_str:
                 pre += 1
-            _____ post >= 0 and s[post] n.. __ alpha_num_str:
+            _____ post >= 0 a.. s[post] n.. __ alpha_num_str:
                 post -= 1
             __ pre >= post:
-                break
+                ______
             __ s[pre] != s[post]:
                 r_ False
             pre += 1

@@ -10,7 +10,7 @@ c_ Solution o..
     ___ countSegments  s
          segment_count = 0
         ___ i __ r.. l.. s)):
-            __ (i __ 0 or s[i-1] __ ' ') and s[i] != ' ':
+            __ (i __ 0 or s[i-1] __ ' ') a.. s[i] != ' ':
                 segment_count += 1
 
         r_ segment_count

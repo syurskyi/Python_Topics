@@ -8,13 +8,13 @@ c_ Solution:
         ___ i __ r.. last_pos + 1
             # Only check [0, lastPos - movePos]
             __ i > last_pos - move_pos:
-                break
+                ______
             __ arr[i] __ 0:
                 # Special case
                 __ i __ last_pos - move_pos:
                     arr[last_pos] = 0
                     last_pos -= 1
-                    break
+                    ______
                 move_pos += 1
         last_pos -= move_pos
         ___ i __ r.. last, -1, -1

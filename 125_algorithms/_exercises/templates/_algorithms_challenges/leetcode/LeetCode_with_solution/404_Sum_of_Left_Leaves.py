@@ -25,7 +25,7 @@ c_ Solution o..
             curr = stack.pop(0)
             __ curr is n.. N..:
                 __ curr.left is n.. N..:
-                    __ curr.left.left is N.. and curr.left.right is N..:
+                    __ curr.left.left is N.. a.. curr.left.right is N..:
                         res += curr.left.val
                 stack.insert(0, curr.right)
                 stack.insert(0, curr.left)

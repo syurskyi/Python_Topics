@@ -25,7 +25,7 @@ c.. Solution o..
                 __ n.. next_head:
                     next_head = cur_head.left
                 cur_head.left.next = cur_head.right
-            __ cur_head.right and cur_head.next:
+            __ cur_head.right a.. cur_head.next:
                 cur_head.right.next = cur_head.next.left
 
             cur_head = cur_head.next

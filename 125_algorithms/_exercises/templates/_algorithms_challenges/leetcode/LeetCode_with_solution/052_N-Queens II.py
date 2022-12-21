@@ -67,7 +67,7 @@ c_ Solution o..
             isDigSafe = (1 << (n - 1 + row - index)) & diag __ 0
             # anti diagonal, all nodes have the same row + index
             isAntiDiagSafe = (1 << (row + index)) & antiDiag __ 0
-            __ isAntiDiagSafe and isColSafe and isDigSafe:
+            __ isAntiDiagSafe a.. isColSafe a.. isDigSafe:
                 dfs(row + 1,  n, (1 << index) | column,
                          (1 << (n - 1 + row - index)) | diag,
                          (1 << (row + index)) | antiDiag)

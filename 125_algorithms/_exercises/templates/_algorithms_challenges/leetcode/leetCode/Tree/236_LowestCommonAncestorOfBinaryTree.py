@@ -26,7 +26,7 @@ c.. Solution o..
         left = self.lowestCommonAncestor(root.left, p, q)
         right = self.lowestCommonAncestor(root.right, p, q)
         # if p and q are on both sides
-        __ left and right:
+        __ left a.. right:
             r_ root
         ____
             r_ left or right

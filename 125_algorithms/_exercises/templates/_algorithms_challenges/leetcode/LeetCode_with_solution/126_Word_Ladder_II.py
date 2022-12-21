@@ -82,7 +82,7 @@ c_ Solution o..
                     __ neigh __ backward:
                         hash_map[key] = hash_map.get(key,    # list) + [value]
                         is_connected = T..
-                    __ n.. is_connected and neigh __ wordlist:
+                    __ n.. is_connected a.. neigh __ wordlist:
                         next_level.add(neigh)
                         hash_map[key] = hash_map.get(key,    # list) + [value]
                         wordlist.discard(neigh)

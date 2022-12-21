@@ -29,7 +29,7 @@ c_ Solution o..
                     __ neigh __ backward:
                         is_connected = T..
                         r_ level
-                    __ n.. is_connected and neigh __ wordlist:
+                    __ n.. is_connected a.. neigh __ wordlist:
                         next_level.add(neigh)
                         wordlist.discard(neigh)
         __ n.. is_connected:

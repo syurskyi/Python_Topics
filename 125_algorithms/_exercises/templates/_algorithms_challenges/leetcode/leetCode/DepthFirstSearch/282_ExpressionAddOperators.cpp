@@ -34,7 +34,7 @@ public:
         ___(int i=1; i+pos<=num.size(); i++){
             string cur_str = num.substr(pos, i);
             // Digit can not begin with 0 (01, 00, 02 are not valid), except 0 itself.
-            __(i>1 && cur_str[0] __ '0')    break;
+            __(i>1 && cur_str[0] __ '0')    ______;
             long cur_d = stoll(cur_str);
             __(pos__0){
                 dfs_search(ans, cur_str, num, target, pos+i, cur_d, cur_d);

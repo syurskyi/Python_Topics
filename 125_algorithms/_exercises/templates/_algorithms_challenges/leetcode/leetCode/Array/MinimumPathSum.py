@@ -54,7 +54,7 @@ c.. Solution o..
                 up = grid[xy[0][1]][xy[0][0]] __ xy[0] else float('inf')
                 left = grid[xy[1][1]][xy[1][0]] __ xy[1] else float('inf')
                 
-                __ up __ float('inf') and left __ float('inf'
+                __ up __ float('inf') a.. left __ float('inf'
                     c_
                 grid[i][j] = grid[i][j] + min(up, left)
                 

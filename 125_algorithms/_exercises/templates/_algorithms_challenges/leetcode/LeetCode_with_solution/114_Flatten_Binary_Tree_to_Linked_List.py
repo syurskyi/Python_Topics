@@ -14,7 +14,7 @@ c_ Solution o..
         """
         __ root is N..:
             r_
-        __ root.left is N.. and root.right is N..:
+        __ root.left is N.. a.. root.right is N..:
             r_
         current = root
         stack = [root]

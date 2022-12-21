@@ -8,7 +8,7 @@ c_ Solution o..
         __ ls __ 0:
             r_ 0
         res, left = 0, 0
-        w.. left < ls and height[left] __ 0:
+        w.. left < ls a.. height[left] __ 0:
             left += 1
         pos = left + 1
         w.. pos < ls:

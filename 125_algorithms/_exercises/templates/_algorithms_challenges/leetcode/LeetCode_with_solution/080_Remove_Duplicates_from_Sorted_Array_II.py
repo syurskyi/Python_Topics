@@ -13,7 +13,7 @@ c_ Solution:
             j = i
             w.. j < length:
                 __ nums[j] != nums[i]:
-                    break
+                    ______
                 j += 1
             __ j-i > 2:
                 length -= j-i-2

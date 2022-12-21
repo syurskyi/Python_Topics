@@ -15,7 +15,7 @@ c_ Solution o..
         res =    # list
         __ root is N..:
             r_ res
-        __ s.. __ root.val and root.left is N.. and root.right is N..:
+        __ s.. __ root.val a.. root.left is N.. a.. root.right is N..:
             r_ [[root.val]]
         # left side
         left_res = pathSum(root.left, s.. - root.val)

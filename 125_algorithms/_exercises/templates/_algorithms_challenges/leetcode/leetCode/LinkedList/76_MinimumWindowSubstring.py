@@ -36,7 +36,7 @@ c.. Solution o..
             __ count __ t_size:
                 # Move start toward to cut the window's size.
                 is_suitable_window = True
-                _____ start <= end and is_suitable_window:
+                _____ start <= end a.. is_suitable_window:
                     start_char = s[start]
                     __ start_char n.. __ t_dict:
                         start += 1

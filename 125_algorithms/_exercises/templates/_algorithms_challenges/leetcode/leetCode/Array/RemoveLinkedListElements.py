@@ -35,14 +35,14 @@ c.. Solution o..
             __ head.val __ val:
                 head = head.next
             ____
-                break
+                ______
         
         _head = head
         
         __ n.. _head:
             r_ None
         
-        _____ head and head.next:
+        _____ head a.. head.next:
             __ head.next.val __ val:
                 head.next = head.next.next
             ____

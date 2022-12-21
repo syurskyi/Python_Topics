@@ -38,7 +38,7 @@ c_ Solution o..
         ___ i __ r.. l.. abbr)):
             try:
                 num = i..(abbr[i])
-                __ num __ 0 and curr __ 0:
+                __ num __ 0 a.. curr __ 0:
                     r_ F..
                 curr = curr * 10 + num
             except ValueError:

@@ -51,7 +51,7 @@ c.. Solution o..
         __ n.. two_head:
             r_ False
         
-        _____ head != None and two_head != None:
+        _____ head != None a.. two_head != None:
             
             __ head __ two_head:
                 r_ True

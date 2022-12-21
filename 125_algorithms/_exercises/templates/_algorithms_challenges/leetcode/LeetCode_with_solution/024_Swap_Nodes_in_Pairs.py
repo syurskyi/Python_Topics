@@ -31,7 +31,7 @@ c_ Solution o..
         dummyHead = ListNode(-1)
         dummyHead.next = head
         prev, p = dummyHead, head
-        w.. p != N.. and p.next != N..:
+        w.. p != N.. a.. p.next != N..:
             q, r = p.next, p.next.next
             prev.next = q
             q.next = p

@@ -30,7 +30,7 @@ c_ Solution o..
         __ head is N.. or head.next is N..:
             r_
         p1, p2 = head, head.next
-        w.. p2 and p2.next:
+        w.. p2 a.. p2.next:
             p1 = p1.next
             p2 = p2.next.next
         head2 = p1.next

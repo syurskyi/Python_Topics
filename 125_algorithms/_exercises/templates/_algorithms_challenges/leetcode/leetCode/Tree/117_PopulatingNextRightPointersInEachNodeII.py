@@ -25,10 +25,10 @@ c.. Solution o..
             _____ next_node:
                 __ next_node.left:
                     next_node = next_node.left
-                    break
+                    ______
                 __ next_node.right:
                     next_node = next_node.right
-                    break
+                    ______
                 next_node = next_node.next
 
             __ cur_head.left:

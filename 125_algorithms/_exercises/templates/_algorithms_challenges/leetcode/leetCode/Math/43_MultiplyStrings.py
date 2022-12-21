@@ -24,7 +24,7 @@ c.. Solution o..
                 pos[i + j + 1] = pos_sum % 10
 
         first_not_0 = 0
-        _____ first_not_0 < m + n and pos[first_not_0] __ 0:
+        _____ first_not_0 < m + n a.. pos[first_not_0] __ 0:
             first_not_0 += 1
 
         r_ "".join(map(str, pos[first_not_0:] or [0]))

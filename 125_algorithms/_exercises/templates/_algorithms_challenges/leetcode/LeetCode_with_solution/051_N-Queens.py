@@ -28,7 +28,7 @@ c_ Solution o..
                         check[j + step] = F..
                     __ j - step >= 0:
                         check[j - step] = F..
-                    break
+                    ______
         ___ j __ r.. ls
             __ check[j]:
                 board[pos][j] = 'Q'

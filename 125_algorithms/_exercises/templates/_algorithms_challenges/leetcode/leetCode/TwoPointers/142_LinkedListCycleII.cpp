@@ -44,7 +44,7 @@ public:
             slow=slow->next;
             __(slow__fast){
                 hasCycle=true;
-                break;
+                ______;
             }
         }
         __(!hasCycle){

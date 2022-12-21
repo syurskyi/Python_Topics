@@ -8,4 +8,4 @@ c_ Solution o..
         # bin(4**1) '0b100'
         # bin(4**2) '0b10000'
         # bin(4**3) '0b1000000'
-        r_ num > 0 and num & (num-1) __ 0 and l.. bin(num)[3:]) % 2 __ 0
+        r_ num > 0 a.. num & (num-1) __ 0 a.. l.. bin(num)[3:]) % 2 __ 0

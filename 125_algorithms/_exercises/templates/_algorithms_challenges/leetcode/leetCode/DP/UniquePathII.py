@@ -102,8 +102,8 @@ c.. Solution o..
                     _map[i][j] = 'x'
                     c_
                     
-                x = _map[i-1][j] __ i - 1 >= 0 and _map[i-1][j] != 'x' else 0
-                y = _map[i][j-1] __ j - 1 >= 0 and _map[i][j-1] != 'x' else 0
+                x = _map[i-1][j] __ i - 1 >= 0 a.. _map[i-1][j] != 'x' else 0
+                y = _map[i][j-1] __ j - 1 >= 0 a.. _map[i][j-1] != 'x' else 0
                 
                 __ x + y != 0:
                     _map[i][j] = x + y

@@ -11,14 +11,14 @@ c.. Solution o..
 
         char_word _ # dict
         ___ i, char __ enumerate(pattern
-            __ char __ char_word and char_word[char] != words[i]:
+            __ char __ char_word a.. char_word[char] != words[i]:
                 r_ False
             __ char n.. __ char_word:
                 char_word[char] = words[i]
 
         word_char _ # dict
         ___ j, word __ enumerate(words
-            __ word __ word_char and word_char[word] != pattern[j]:
+            __ word __ word_char a.. word_char[word] != pattern[j]:
                 r_ False
             __ word n.. __ word_char:
                 word_char[word] = pattern[j]

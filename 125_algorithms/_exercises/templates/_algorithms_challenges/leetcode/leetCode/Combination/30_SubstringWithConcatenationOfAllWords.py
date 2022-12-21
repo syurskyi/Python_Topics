@@ -28,10 +28,10 @@ c.. Solution o..
             _____ j < l..(words
                 w = s[i + j * word_l: i + (j + 1) * word_l]
                 __ w n.. __ word_cnt:
-                    break
+                    ______
                 candidate_map[w] = candidate_map.get(w, 0) + 1
                 __ candidate_map.get(w, 0) > word_cnt[w]:
-                    break
+                    ______
                 j += 1
 
             __ j __ l..(words

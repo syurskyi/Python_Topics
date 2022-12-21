@@ -66,7 +66,7 @@ c.. Solution o..
         rightList = rawList[split:]
 
 
-        __ leftList[-1] <= target and rightList[0] > target:
+        __ leftList[-1] <= target a.. rightList[0] > target:
             r_ l..(leftList) + index - 1
 
         __ rightList[0] __ target:
@@ -84,19 +84,19 @@ c.. Solution o..
         left = rawList[:split]
         right = rawList[split:]
         
-        __ n.. left and n.. right:
+        __ n.. left a.. n.. right:
             r_ False
         
-        __ left and left[-1] __ target:
+        __ left a.. left[-1] __ target:
             r_ True
         
-        __ right and right[0] __ target:
+        __ right a.. right[0] __ target:
             r_ True
         
-        __ l..(left) > 1 and left[-1] > target:
+        __ l..(left) > 1 a.. left[-1] > target:
             r_ self.binarySearch2(left, target)
         
-        __ l..(right) > 1 and right[0] < target:
+        __ l..(right) > 1 a.. right[0] < target:
             r_ self.binarySearch2(right, target)
         
         r_ False

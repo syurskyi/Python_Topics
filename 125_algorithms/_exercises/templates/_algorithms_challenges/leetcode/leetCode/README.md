@@ -1,4 +1,4 @@
-<h3 align="center">算法知识储备 Leetcode with Python <sub>and Js<sub></h3>
+<h3 align="center">算法知识储备 Leetcode with Python <sub>a.. Js<sub></h3>
 <div align="center">
     <img src="0_icons/book.png">
 </div>

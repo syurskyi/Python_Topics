@@ -53,10 +53,10 @@ c_ Solution o..
         star, s_star = -1, 0
         s_len, p_len = l.. s), l.. p)
         w.. s_index < s_len:
-            __ p_index < p_len and (s[s_index] __ p[p_index] or p[p_index] __ '?'
+            __ p_index < p_len a.. (s[s_index] __ p[p_index] or p[p_index] __ '?'
                 s_index += 1
                 p_index += 1
-            ____ p_index < p_len and p[p_index] __ '*':
+            ____ p_index < p_len a.. p[p_index] __ '*':
                 star = p_index
                 s_star = s_index
                 p_index += 1
@@ -66,7 +66,7 @@ c_ Solution o..
                 s_index = s_star
             ____
                 r_ F..
-        w.. p_index < p_len and p[p_index] __ '*':
+        w.. p_index < p_len a.. p[p_index] __ '*':
             p_index += 1
         r_ p_index __ p_len
 

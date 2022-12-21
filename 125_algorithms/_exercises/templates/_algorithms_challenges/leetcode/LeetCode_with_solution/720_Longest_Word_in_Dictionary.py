@@ -30,7 +30,7 @@ c_ Solution o..
             cur = stack.pop()
             __ END __ cur:
                 word = words[cur[END]]
-                __ l.. word) > l.. ans) or l.. word) __ l.. ans) and word < ans:
+                __ l.. word) > l.. ans) or l.. word) __ l.. ans) a.. word < ans:
                     ans = word
                 stack.e..([cur[letter] ___ letter __ cur __ letter != END])
         r_ ans

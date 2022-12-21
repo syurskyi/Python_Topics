@@ -21,7 +21,7 @@ c_ ValidWordAbbr o..
         """
         abb = getAbb(word)
         hasAbbr = abb_dic.get(abb, N..)
-        r_ hasAbbr __ N.. or (hasAbbr and word __ dictionary)
+        r_ hasAbbr __ N.. or (hasAbbr a.. word __ dictionary)
 
 
     ___ getAbb  word

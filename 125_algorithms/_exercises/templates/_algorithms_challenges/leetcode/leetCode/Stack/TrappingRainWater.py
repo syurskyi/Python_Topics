@@ -104,7 +104,7 @@ c.. Solution o..
                 ___ j __ xrange(stack[0], i
                     _ = mins - height[j]
 
-                    __ _ > 0 and _ > result[j]:
+                    __ _ > 0 a.. _ > result[j]:
                         result[j] = _
                 
                 __ height[stack[0]] <= height[i]:

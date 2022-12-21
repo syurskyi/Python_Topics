@@ -49,7 +49,7 @@ c_ Solution o..
                 j += 1
                 __ j __ lsn:
                     r_ i - lsn
-            __ i < lsh and haystack[i] != needle[j]:
+            __ i < lsh a.. haystack[i] != needle[j]:
                 j = next[j]
         r_ -1
 

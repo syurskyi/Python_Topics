@@ -32,11 +32,11 @@ c.. Solution o..
                     # Split the l+1 string into two parts,
                     # k is the length of first part, so 1 <= k <= l;
                     ___ k __ r..(1, l+1
-                        scramble_1 = dp[k-1][i][j] and dp[l-k][k+i][k+j]
-                        scramble_2 = dp[k-1][i][j+l-k+1] and dp[l-k][i+k][j]
+                        scramble_1 = dp[k-1][i][j] a.. dp[l-k][k+i][k+j]
+                        scramble_2 = dp[k-1][i][j+l-k+1] a.. dp[l-k][i+k][j]
                         dp[l][i][j] = (scramble_1 or scramble_2)
                         __ dp[l][i][j]:
-                            break
+                            ______
         r_ dp[str_l-1][0][0]
 
 """

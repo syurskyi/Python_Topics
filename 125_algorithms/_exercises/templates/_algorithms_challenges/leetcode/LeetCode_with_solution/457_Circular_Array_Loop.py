@@ -7,11 +7,11 @@ c_ Solution:
             # if slow and fast pointers collide, then there exists a loop
             slow = i
             fast = index(nums, slow)
-            w.. nums[slow] * nums[fast] > 0 and nums[slow] * nums[index(nums, fast)] > 0:
-                __ slow __ fast and fast != index(nums, fast
+            w.. nums[slow] * nums[fast] > 0 a.. nums[slow] * nums[index(nums, fast)] > 0:
+                __ slow __ fast a.. fast != index(nums, fast
                     r_ T..
-                ____ slow __ fast and fast __ index(nums, fast
-                    break
+                ____ slow __ fast a.. fast __ index(nums, fast
+                    ______
                 slow = index(nums, slow)
                 fast = index(nums, index(nums, fast))
                 

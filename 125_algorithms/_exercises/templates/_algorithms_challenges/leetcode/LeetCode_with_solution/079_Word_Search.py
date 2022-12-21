@@ -8,7 +8,7 @@ c_ Solution o..
         check_board = [[T..] * l.. board[0]) ___ _ __ r.. l.. board))]
         ___ i __ r.. l.. board)):
             ___ j __ r.. l.. board[0])):
-                __ board[i][j] __ word[0] and check_board:
+                __ board[i][j] __ word[0] a.. check_board:
                     check_board[i][j] = F..
                     res = check_exist(check_board, board, word, 1, l.. word), i, j)
                     __ res:
@@ -23,8 +23,8 @@ c_ Solution o..
         ___ temp __ [(0, 1),(0, -1),(1, 0),(-1, 0)]:
             curr_row = row + temp[0]
             curr_col = col + temp[1]
-            __ curr_row >= 0 and curr_row < l.. board) and curr_col >= 0 and curr_col < l.. board[0 
-                __ check_board[curr_row][curr_col] and board[curr_row][curr_col] __ word[index]:
+            __ curr_row >= 0 a.. curr_row < l.. board) a.. curr_col >= 0 a.. curr_col < l.. board[0
+                __ check_board[curr_row][curr_col] a.. board[curr_row][curr_col] __ word[index]:
                     check_board[curr_row][curr_col] = F..
                     res = check_exist(check_board, board, word, index + 1, l.. word), curr_row, curr_col)
                     __ res:

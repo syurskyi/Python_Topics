@@ -44,4 +44,4 @@ c.. Solution o..
         __ l..(pattern) != l..(string
             r_ False
         temp = l..(s..(zip(pattern, string)))
-        r_ temp __ l..(s..(pattern)) and temp __ l..(s..(string))
+        r_ temp __ l..(s..(pattern)) a.. temp __ l..(s..(string))

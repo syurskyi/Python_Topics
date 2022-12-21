@@ -4,7 +4,7 @@
 
 c.. Solution o..
     ___ exist  board, word
-        __ n.. board and word:
+        __ n.. board a.. word:
             r_ False
         __ n.. word:
             r_ True

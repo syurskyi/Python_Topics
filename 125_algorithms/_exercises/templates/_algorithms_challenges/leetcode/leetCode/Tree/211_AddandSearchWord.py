@@ -25,9 +25,9 @@ c.. WordDictionary o..
         ___ w __ self.words_dict[l..(word)]:
             is_match = True
             ___ i, ch __ enumerate(word
-                __ ch != "." and ch != w[i]:
+                __ ch != "." a.. ch != w[i]:
                     is_match = False
-                    break
+                    ______
             __ is_match:
                 r_ True
         r_ False
@@ -64,7 +64,7 @@ c.. WordDictionary_Trie o..
 
     # Depth First Search the trie tree.
     ___ _dfs_searh  word, cur_node
-        __ n.. word and cur_node.is_word:
+        __ n.. word a.. cur_node.is_word:
             r_ True
         word_len = l..(word)
         ___ i __ r..(word_len

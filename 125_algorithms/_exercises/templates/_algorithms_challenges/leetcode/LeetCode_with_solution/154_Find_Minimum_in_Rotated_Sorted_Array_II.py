@@ -42,7 +42,7 @@ c_ Solution o..
 
     ___ findMin  nums
         l, r = 0, l.. nums) - 1
-        w.. l < r and nums[l] >= nums[r]:
+        w.. l < r a.. nums[l] >= nums[r]:
             mid = (l + r) / 2
             __ nums[mid] > nums[r]:
                 l = mid + 1

@@ -17,11 +17,11 @@ c_ Solution o..
 
     ___ explore  grid, i, j
         grid[i][j] = 'X'
-        __ i - 1 >= 0 and grid[i - 1][j] __ '1':
+        __ i - 1 >= 0 a.. grid[i - 1][j] __ '1':
             explore(grid, i - 1, j)
-        __ j - 1 >= 0 and grid[i][j - 1] __ '1':
+        __ j - 1 >= 0 a.. grid[i][j - 1] __ '1':
             explore(grid, i, j - 1)
-        __ i + 1 < l.. grid) and grid[i + 1][j] __ '1':
+        __ i + 1 < l.. grid) a.. grid[i + 1][j] __ '1':
             explore(grid, i + 1, j)
-        __ j + 1 < l.. grid[i]) and grid[i][j + 1] __ '1':
+        __ j + 1 < l.. grid[i]) a.. grid[i][j + 1] __ '1':
             explore(grid, i, j + 1)

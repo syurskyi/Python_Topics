@@ -33,7 +33,7 @@ c.. Solution o..
         __ root.left:
             self.find_conflict(root.left)
 
-        __ self.pre_node and root.val < self.pre_node.val:
+        __ self.pre_node a.. root.val < self.pre_node.val:
             __ n.. self.conflict_first:
                 self.conflict_first = self.pre_node
             self.conflict_second = root

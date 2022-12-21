@@ -15,12 +15,12 @@ c_ Solution:
           __ nums[mid] __ target:
             r_ mid
           ____ nums[mid] >= nums[start]: # First half is sorted
-            __ target >= nums[start] and target < nums[mid]:
+            __ target >= nums[start] a.. target < nums[mid]:
               r_ get(start, mid - 1)
             ____
               r_ get(mid + 1, end)
           ____ nums[mid] <= nums[end]: # Second half is sorted
-            __ target > nums[mid] and target <= nums[end]:
+            __ target > nums[mid] a.. target <= nums[end]:
               r_ get(mid + 1, end)
             ____
               r_ get(start, mid - 1)

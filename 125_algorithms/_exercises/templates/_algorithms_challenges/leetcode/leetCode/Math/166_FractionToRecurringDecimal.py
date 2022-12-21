@@ -22,7 +22,7 @@ c.. Solution o..
             __ remainder __ remainder_start:
                 answer.insert(remainder_start[remainder], "(")
                 answer.append(")")
-                break
+                ______
             ____
                 remainder_start[remainder] = l..(answer)
                 answer.append(str(remainder/denominator))

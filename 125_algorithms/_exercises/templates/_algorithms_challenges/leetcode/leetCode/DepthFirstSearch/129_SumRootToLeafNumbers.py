@@ -31,11 +31,11 @@ c.. Solution o..
                     root = pop_record[0].right
                     cur_node_num = pop_record[1]
                     # Meet a leaf node
-                    __ n.. pop_record[0].left and n.. root:
+                    __ n.. pop_record[0].left a.. n.. root:
                         path_sum += cur_node_num
 
                 ____
-                    break
+                    ______
         r_ path_sum
 
 """

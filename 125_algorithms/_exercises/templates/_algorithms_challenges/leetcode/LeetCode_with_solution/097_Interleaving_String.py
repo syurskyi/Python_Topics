@@ -14,7 +14,7 @@ c_ Solution o..
         index = 0
         w.. l.. queue) != 1 or queue[0][0] != -1:
             p = queue.pop(0)
-            __ p[0] __ l.. s1) and p[1] __ l.. s2
+            __ p[0] __ l.. s1) a.. p[1] __ l.. s2
                 r_ T..
             __ p[0] __ -1:
                 queue.append(p)

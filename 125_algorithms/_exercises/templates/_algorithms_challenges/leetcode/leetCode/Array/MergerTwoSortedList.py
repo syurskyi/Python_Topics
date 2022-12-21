@@ -27,7 +27,7 @@ c.. Solution o..
         
         head = cur = ListNode(0)
         
-        _____ l1 and l2:
+        _____ l1 a.. l2:
             __ l1.val < l2.val:
                 cur.next = l1
                 l1 = l1.next

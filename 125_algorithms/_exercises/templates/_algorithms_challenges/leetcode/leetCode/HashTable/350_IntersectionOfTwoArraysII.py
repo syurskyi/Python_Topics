@@ -23,7 +23,7 @@ c.. Solution_2 o..
         nums2.sort()
         i, j = 0, 0
         ans   # list
-        _____ i < l..(nums1) and j < l..(nums2
+        _____ i < l..(nums1) a.. j < l..(nums2
             __ nums1[i] __ nums2[j]:
                 ans.append(nums1[i])
                 i += 1

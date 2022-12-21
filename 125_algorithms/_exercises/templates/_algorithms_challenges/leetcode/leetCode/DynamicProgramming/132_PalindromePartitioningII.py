@@ -34,7 +34,7 @@ c.. Solution o..
         ___ i __ r..(s_len - 1, -1, -1
             ___ j __ r..(i, s_len
                 # if self.is_palindrome(i, j):
-                __ ((j - i < 2 and s[i] __ s[j]) or (s[i] __ s[j] and is_palindrome[i + 1][j - 1])):
+                __ ((j - i < 2 a.. s[i] __ s[j]) or (s[i] __ s[j] a.. is_palindrome[i + 1][j - 1])):
                     is_palindrome[i][j] = True
                     __ j __ s_len - 1:
                         cuts[i] = 0

@@ -40,9 +40,9 @@ c.. binarySearchTree o..
             __ root.val < value:
                 __ root.right is None:
                     __ self.search(value
-                        break
+                        ______
                     root.right = TreeNode(value)
-                    break
+                    ______
                 ____
                     root = root.right
                     c_
@@ -50,15 +50,15 @@ c.. binarySearchTree o..
             __ root.val > value:
                 __ root.left is None:
                     __ self.search(value
-                        break
+                        ______
                     root.left = TreeNode(value)
-                    break
+                    ______
                 ____
                     root = root.left
                     c_
 
             __ root.val __ value:
-                break
+                ______
 
     ___ search  value
         # 查找一个值是否存在于这颗树中。

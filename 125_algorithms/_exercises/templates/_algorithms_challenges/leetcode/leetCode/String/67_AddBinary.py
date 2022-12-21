@@ -11,9 +11,9 @@ c.. Solution o..
         __ l..(b) __ 0:
             r_ a
 
-        __ a[-1] __ '1' and b[-1] __ '1':
+        __ a[-1] __ '1' a.. b[-1] __ '1':
             r_ self.addBinary(self.addBinary(a[:-1], b[:-1]), '1') + '0'
-        ____ a[-1] __ '0' and b[-1] __ '0':
+        ____ a[-1] __ '0' a.. b[-1] __ '0':
             r_ self.addBinary(a[:-1], b[:-1]) + '0'
         ____
             r_ self.addBinary(a[:-1], b[:-1]) + '1'

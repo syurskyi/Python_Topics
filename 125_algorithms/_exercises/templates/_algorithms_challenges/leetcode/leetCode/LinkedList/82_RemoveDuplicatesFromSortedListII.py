@@ -17,7 +17,7 @@ c.. Solution o..
         __ n.. head or n.. head.next:
             r_ head
         __ head.val __ head.next.val:
-            _____ head.next and head.val __ head.next.val:
+            _____ head.next a.. head.val __ head.next.val:
                 head = head.next
             r_ self.deleteDuplicates(head.next)
         ____
@@ -30,9 +30,9 @@ c.. Solution_2 o..
     ___ deleteDuplicates  head
         cur = pre_head = ListNode(0)
         _____ head:
-            __ head.next and head.val __ head.next.val:
+            __ head.next a.. head.val __ head.next.val:
                 # Skip the duplicated nodes.
-                _____ head.next and head.val __ head.next.val:
+                _____ head.next a.. head.val __ head.next.val:
                     head = head.next
                 head = head.next
             # we can make sure head is one single node here.

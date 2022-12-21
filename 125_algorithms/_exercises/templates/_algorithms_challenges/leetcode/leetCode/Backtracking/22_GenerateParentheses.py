@@ -25,7 +25,7 @@ ___ generate_child_tree  node, n, solution
         solution.append(node[4])
 
     # the node have both left and right child
-    ____ node[2] > node[3] and node[2] < n:
+    ____ node[2] > node[3] a.. node[2] < n:
         left_child = [None, None, node[2] + 1, node[3], node[4] + "("]
         right_child = [None, None, node[2], node[3] + 1, node[4] + ")"]
         node[0] = left_child
@@ -34,7 +34,7 @@ ___ generate_child_tree  node, n, solution
         self.generate_child_tree(right_child, n, solution)
 
     # the node have only left child
-    ____ node[2] __ node[3] and node[2] < n:
+    ____ node[2] __ node[3] a.. node[2] < n:
         left_child = [None, None, node[2] + 1, node[3], node[4] + "("]
         node[0] = left_child
         self.generate_child_tree(left_child, n, solution)

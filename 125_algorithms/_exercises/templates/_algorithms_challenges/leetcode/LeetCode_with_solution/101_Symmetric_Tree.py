@@ -16,11 +16,11 @@ c_ Solution o..
         r_ mirrorVisit(root.left, root.right)
 
     ___ mirrorVisit  left, right
-        __ left is N.. and right is N..:
+        __ left is N.. a.. right is N..:
             r_ T..
         try:
             __ left.val __ right.val:
-                __ mirrorVisit(left.left, right.right) and mirrorVisit(left.right, right.left
+                __ mirrorVisit(left.left, right.right) a.. mirrorVisit(left.right, right.left
                     r_ T..
             r_ F..
         except:

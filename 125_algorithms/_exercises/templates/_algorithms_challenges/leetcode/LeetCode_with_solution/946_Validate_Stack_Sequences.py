@@ -9,17 +9,17 @@ c_ Solution o..
         pos = 0
         w.. pos != l.. pushed
             curr = pushed[pos]
-            w.. l.. in_stack) > 0 and l.. popped) > 0 and in_stack[-1] __ popped[0]:
+            w.. l.. in_stack) > 0 a.. l.. popped) > 0 a.. in_stack[-1] __ popped[0]:
                 in_stack.pop(-1)
                 popped.pop(0)
             __ l.. popped) __ 0:
-                break
+                ______
             __ curr __ popped[0]:
                 popped.pop(0)
             ____
                 in_stack.append(curr)
             pos += 1
-        w.. l.. in_stack) > 0 and l.. popped) > 0 and in_stack[-1] __ popped[0]:
+        w.. l.. in_stack) > 0 a.. l.. popped) > 0 a.. in_stack[-1] __ popped[0]:
             in_stack.pop(-1)
             popped.pop(0)
         __ l.. in_stack) __ 0:

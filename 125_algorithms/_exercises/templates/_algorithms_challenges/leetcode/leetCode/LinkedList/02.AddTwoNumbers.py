@@ -20,7 +20,7 @@ c.. Solution o..
         head = ListNode(0)
         l_sum = head
 
-        _____ l1 and l2:
+        _____ l1 a.. l2:
             l_sum.next = ListNode((l1.val + l2.val + carry_in) % 10)
             carry_in = (l1.val + l2.val + carry_in) / 10
             l1 = l1.next

@@ -23,13 +23,13 @@ c.. Solution o..
             # print "step.._ |", step, horizontal_len, vertical_len
 
             # Add the current up edge to spiral order.
-            __ vertical_len __ 0 and horizontal_len > 0:
+            __ vertical_len __ 0 a.. horizontal_len > 0:
                 horizontal_len += 1
             ___ i __ r..(horizontal_len
                 spiral_order.append(matrix[step][i + step])
 
             # Add the current right edge to spiral order.
-            __ horizontal_len __ 0 and vertical_len > 0:
+            __ horizontal_len __ 0 a.. vertical_len > 0:
                 vertical_len += 1
             ___ i __ r..(vertical_len
                 spiral_order.append(matrix[i + step][n_col - 1 - step])
@@ -49,7 +49,7 @@ c.. Solution o..
             step += 1
 
         # For N * N matrix, where N is an odd number.
-        __ vertical_len __ horizontal_len __ 0 and m_row __ n_col:
+        __ vertical_len __ horizontal_len __ 0 a.. m_row __ n_col:
             spiral_order.append(matrix[m_row / 2][n_col / 2])
 
         r_ spiral_order

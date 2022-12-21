@@ -40,7 +40,7 @@ c_ Solution o..
             ___ coin __ coins:
                 __ i __ coin:
                     dp[i] = 1
-                    break
+                    ______
                 ____ i > coin:
                     dp[i] = min(dp[i], dp[i - coin] + 1)
         __ dp[amount] __ 1000000000:

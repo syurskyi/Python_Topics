@@ -34,7 +34,7 @@ c_ Solution o..
             r_ T..
         p1, p2 = head, head
         p3, pre = p1.next, p1
-        w.. p2.next is n.. N.. and p2.next.next is n.. N..:
+        w.. p2.next is n.. N.. a.. p2.next.next is n.. N..:
             p2 = p2.next.next
             pre = p1
             p1 = p3

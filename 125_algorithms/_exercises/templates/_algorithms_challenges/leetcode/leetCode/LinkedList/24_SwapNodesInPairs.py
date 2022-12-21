@@ -38,7 +38,7 @@ c.. Solution o..
                 before_node = head
                 head = head.next
             ____
-                break
+                ______
         r_ result.next
 
 """

@@ -17,7 +17,7 @@ c.. Solution o..
             r_
 
         ___ i __ r..(begin, l..(num)):
-            __ i != begin and num[i] __ num[begin]:
+            __ i != begin a.. num[i] __ num[begin]:
                 c_
             num[i], num[begin] = num[begin], num[i]
             # num[:], get a new copy.  Just like pass by value

@@ -42,7 +42,7 @@ c.. Solution o..
         """
         
         x = abs(dividend) // abs(divisor)
-        __ (dividend < 0 and divisor > 0) or (dividend > 0 and divisor < 0
+        __ (dividend < 0 a.. divisor > 0) or (dividend > 0 a.. divisor < 0
             
             __ -x < -2**31:
                 r_ -2**31

@@ -17,7 +17,7 @@ c.. Solution o..
         # We start search the matrix from top right corner
         # Initialize the current position to top right corner.
         row, col = 0, n - 1
-        _____ row < m and col >= 0:
+        _____ row < m a.. col >= 0:
             __ matrix[row][col] __ target:
                 r_ True
             ____ matrix[row][col] > target:
@@ -37,7 +37,7 @@ c.. Solution_2 o..
         n = l..(matrix[0])
         col = -1
         ___ row __ matrix:
-            _____ col + n > 0 and row[col] > target:
+            _____ col + n > 0 a.. row[col] > target:
                 col -= 1
             __ row[col] __ target:
                 r_ True

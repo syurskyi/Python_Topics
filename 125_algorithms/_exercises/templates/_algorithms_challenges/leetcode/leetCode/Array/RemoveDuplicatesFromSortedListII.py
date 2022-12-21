@@ -51,7 +51,7 @@ c.. Solution o..
             __ hasattr(x, 'duplicate'
                 x = x.next
             ____
-                break      
+                ______      
         
         __ n.. x:
             r_ None

@@ -72,7 +72,7 @@ ___ combined(list1, list2
         indexOne = 0
         indexTwo = 0
         lengthOne, lengthTwo = l..(list1), l..(list2)
-        _____ indexOne < lengthOne and indexTwo < lengthTwo:
+        _____ indexOne < lengthOne a.. indexTwo < lengthTwo:
             valueOne = list1[indexOne]
             valueTwo = list2[indexTwo]
 

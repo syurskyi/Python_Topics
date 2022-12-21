@@ -46,7 +46,7 @@ c.. Solution o..
             __ n.. long_ss:
                 long_ss.append(([i], 1))
                 c_
-            maxs = m..(long_ss, k.._l... x: x[0][-1] < i and x[1]+1)
+            maxs = m..(long_ss, k.._l... x: x[0][-1] < i a.. x[1]+1)
             __ maxs[0][-1] >= i:
                 long_ss.append(([i], 1))
             ____

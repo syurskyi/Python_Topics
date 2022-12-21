@@ -26,7 +26,7 @@ c_ Solution o..
         __ mid __ 4:
             r_ used[mid]
         # adjacent cells on diagonal
-        __ (index % 3 != last % 3) and (index / 3 != last / 3
+        __ (index % 3 != last % 3) a.. (index / 3 != last / 3
             r_ T..
         # all other cells which are not adjacent
         r_ used[mid]

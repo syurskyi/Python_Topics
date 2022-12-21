@@ -78,7 +78,7 @@ c.. Solution o..
                 __ d[0] __ j[0]:
                     __ judge(j[1:], d[1:]
                         sentence[i] = j
-                        break
+                        ______
                         
         r_ ' '.join(sentence)
 

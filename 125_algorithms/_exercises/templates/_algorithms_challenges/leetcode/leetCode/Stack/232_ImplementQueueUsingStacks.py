@@ -24,7 +24,7 @@ c.. Queue o..
         r_ self.out_stack[-1]
 
     ___ empty(self
-        r_ (n.. self.in_stack) and (n.. self.out_stack)
+        r_ (n.. self.in_stack) a.. (n.. self.out_stack)
 
     ___ move(self
         __ n.. self.out_stack:

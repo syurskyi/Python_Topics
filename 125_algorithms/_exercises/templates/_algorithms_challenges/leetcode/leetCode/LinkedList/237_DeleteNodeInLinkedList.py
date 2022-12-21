@@ -19,4 +19,4 @@ c.. Solution o..
                 node = node.next
             ____
                 node.next = None
-                break
+                ______

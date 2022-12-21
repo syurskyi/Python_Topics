@@ -6,7 +6,7 @@
 c.. Solution o..
     ___ isUgly  num
         ___ p __ [2, 3, 5]:
-            _____ num and num % p __ 0:
+            _____ num a.. num % p __ 0:
                 num /= p
         r_ num __ 1
 

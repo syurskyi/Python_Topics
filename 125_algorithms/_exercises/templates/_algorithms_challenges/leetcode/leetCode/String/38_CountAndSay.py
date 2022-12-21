@@ -24,7 +24,7 @@ c.. Solution o..
                 char = pre_str[index]
                 repeat = 0
                 pos = index + 1
-                _____ pos < length and pre_str[pos] __ char:
+                _____ pos < length a.. pre_str[pos] __ char:
                     repeat += 1
                     pos += 1
 

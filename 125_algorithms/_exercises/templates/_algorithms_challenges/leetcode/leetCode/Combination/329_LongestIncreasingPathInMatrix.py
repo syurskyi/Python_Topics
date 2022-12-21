@@ -18,10 +18,10 @@ c.. Solution o..
             __ n.. dp[i][j]:
                 val = matrix[i][j]
                 dp[i][j] = 1 + m..(
-                    dfs(i - 1, j) __ i and val > matrix[i - 1][j] else 0,
-                    dfs(i + 1, j) __ i < M - 1 and val > matrix[i + 1][j] else 0,
-                    dfs(i, j - 1) __ j and val > matrix[i][j - 1] else 0,
-                    dfs(i, j + 1) __ j < N - 1 and val > matrix[i][j + 1] else 0)
+                    dfs(i - 1, j) __ i a.. val > matrix[i - 1][j] else 0,
+                    dfs(i + 1, j) __ i < M - 1 a.. val > matrix[i + 1][j] else 0,
+                    dfs(i, j - 1) __ j a.. val > matrix[i][j - 1] else 0,
+                    dfs(i, j + 1) __ j < N - 1 a.. val > matrix[i][j + 1] else 0)
             r_ dp[i][j]
 
         __ n.. matrix or n.. matrix[0]:

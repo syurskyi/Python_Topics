@@ -129,7 +129,7 @@ c.. Solution o..
         """
         mn = m + n - 1
         
-        _____ m > 0 and n > 0:
+        _____ m > 0 a.. n > 0:
            
             
             __ nums1[m-1] > nums2[n-1]:

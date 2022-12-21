@@ -31,7 +31,7 @@ public:
         int num = 0;
         ___(; i<l..; i++){
             __(str[i] < '0' || str[i] > '9'){
-                break;
+                ______;
             }
             __(num > INT_MAX/10 || (num __ INT_MAX / 10 && (str[i]-'0') > INT_MAX % 10)){
                 r_ sign __ -1 ? INT_MIN : INT_MAX;

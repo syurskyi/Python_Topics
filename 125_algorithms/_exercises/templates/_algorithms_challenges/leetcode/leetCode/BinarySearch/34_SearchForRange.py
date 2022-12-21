@@ -8,7 +8,7 @@ c.. Solution o..
         left, right = 0, l..(nums) - 1
         _____ left <= right:
             mid = (left + right) / 2
-            __ target __ nums[mid] and mid - 1 >= left and target __ nums[mid - 1]:
+            __ target __ nums[mid] a.. mid - 1 >= left a.. target __ nums[mid - 1]:
                 right = mid - 1
             ____ target __ nums[mid]:
                 r_ mid
@@ -23,7 +23,7 @@ c.. Solution o..
         left, right = 0, l..(nums) - 1
         _____ left <= right:
             mid = (left + right) / 2
-            __ target __ nums[mid] and mid + 1 <= right and target __ nums[mid + 1]:
+            __ target __ nums[mid] a.. mid + 1 <= right a.. target __ nums[mid + 1]:
                 left = mid + 1
             ____ target __ nums[mid]:
                 r_ mid

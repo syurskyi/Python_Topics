@@ -29,7 +29,7 @@ c_ Solution o..
         __ head is N..:
             r_ N..
         pos = head
-        w.. pos is n.. N.. and pos.next is n.. N..:
+        w.. pos is n.. N.. a.. pos.next is n.. N..:
             __ pos.val __ pos.next.val:
                 pos.next = pos.next.next
             ____

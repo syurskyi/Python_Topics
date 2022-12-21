@@ -7,7 +7,7 @@ c_ Solution o..
         leakWall = buildLeakWall(board)
         w.. leakWall:
             i, j = leakWall.pop()
-            __ 0 <= i < height and 0 <= j < width:
+            __ 0 <= i < height a.. 0 <= j < width:
                 __ board[i][j] __ "O":
                     board[i][j] = "S"
                     leakWall += (i - 1, j), (i + 1, j), (i, j - 1), (i, j + 1)

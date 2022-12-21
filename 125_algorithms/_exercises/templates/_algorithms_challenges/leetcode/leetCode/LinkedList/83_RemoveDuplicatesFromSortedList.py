@@ -26,7 +26,7 @@ c.. Solution o..
         cur = head
         _____ cur:
             # Skip all the duplicated nodes of cur.
-            _____ cur.next and cur.val __ cur.next.val:
+            _____ cur.next a.. cur.val __ cur.next.val:
                 cur.next = cur.next.next
             # No duplicated nodes, move cur to next node
             cur = cur.next

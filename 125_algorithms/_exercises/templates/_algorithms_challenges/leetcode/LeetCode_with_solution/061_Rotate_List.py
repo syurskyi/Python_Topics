@@ -17,7 +17,7 @@ c_ Solution o..
         slow = fast = head
         length = 1
 
-        w.. k and fast.next:
+        w.. k a.. fast.next:
             fast = fast.next
             length += 1
             k -= 1

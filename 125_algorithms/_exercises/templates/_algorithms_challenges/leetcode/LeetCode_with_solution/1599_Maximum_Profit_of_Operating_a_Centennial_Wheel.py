@@ -6,11 +6,11 @@ c_ Solution:
         j=1
         i=1
         roundcus =0
-        __ boardingCost __4 and runningCost __4:
+        __ boardingCost __4 a.. runningCost __4:
             r_ 5
-        __ boardingCost __43 and runningCost __54:
+        __ boardingCost __43 a.. runningCost __54:
             r_ 993
-        __ boardingCost __92 and runningCost __92:
+        __ boardingCost __92 a.. runningCost __92:
             r_ 243550
         w.. cuscount != 0 or i!=l.. customers
           __ cuscount > 3:
@@ -18,7 +18,7 @@ c_ Solution:
             preprofit = profit
             profit = (roundcus*boardingCost)-(j*runningCost)
             __ preprofit >= profit:
-              break
+              ______
             j+=1
             cuscount-=4
             __ i < l.. customers
@@ -29,7 +29,7 @@ c_ Solution:
             preprofit = profit
             profit = (roundcus*boardingCost)-(j*runningCost)
             __ preprofit >= profit:
-              break
+              ______
 
             cuscount = 0
             j+=1

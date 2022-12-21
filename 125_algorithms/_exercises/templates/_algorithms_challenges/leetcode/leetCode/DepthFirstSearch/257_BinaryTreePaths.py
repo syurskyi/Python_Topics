@@ -24,7 +24,7 @@ c.. Solution o..
             __ node.right:
                 new_path = path + "->" + str(node.right.val)
                 node_stack.append([node.right, new_path])
-            __ n.. node.left and n.. node.right:
+            __ n.. node.left a.. n.. node.right:
                 path_str.append(path)
         r_ path_str
 

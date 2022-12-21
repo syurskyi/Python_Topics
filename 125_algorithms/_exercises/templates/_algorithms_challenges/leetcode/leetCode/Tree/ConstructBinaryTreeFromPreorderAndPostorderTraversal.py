@@ -109,7 +109,7 @@ c.. Solution o..
             
         ___ construct(root, pre, post
             x = getLeftAndRight(pre[1:], post)
-            __ root and x:
+            __ root a.. x:
                 __ x[0] is n.. None:
                     root.left = TreeNode(x[0])
                 __ x[1] is n.. None:

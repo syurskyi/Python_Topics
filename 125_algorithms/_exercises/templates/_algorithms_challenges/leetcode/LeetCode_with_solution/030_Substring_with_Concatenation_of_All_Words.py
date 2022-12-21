@@ -23,10 +23,10 @@ c_ Solution o..
                     curr_dict[curr] -= 1
                     # word appears more than target
                     __ curr_dict[curr] < 0:
-                        break
+                        ______
                 except KeyError:
                     # word not in words
-                    break
+                    ______
             ____
                 # all word in target dict
                 res.append(start)

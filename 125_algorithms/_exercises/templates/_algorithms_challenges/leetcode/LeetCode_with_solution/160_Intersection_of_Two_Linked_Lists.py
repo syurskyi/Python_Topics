@@ -21,7 +21,7 @@ c_ Solution o..
                 a = headB
             __ n.. b:
                 b = headA
-            __ a __ b and n.. ans:
+            __ a __ b a.. n.. ans:
                 ans = a
             a, b = a.next, b.next
         r_ ans

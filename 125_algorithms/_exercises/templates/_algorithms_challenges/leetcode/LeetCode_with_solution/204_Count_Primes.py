@@ -8,7 +8,7 @@ c_ Solution o..
         isPrime = [T..] * n
         ___ i __ xrange(2, n
             __ i * i >= n:
-                break
+                ______
             __ n.. isPrime[i]:
                 c_
             ___ j __ xrange(i * i, n, i

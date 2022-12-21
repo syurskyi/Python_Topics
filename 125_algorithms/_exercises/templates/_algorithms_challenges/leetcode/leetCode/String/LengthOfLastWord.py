@@ -23,9 +23,9 @@ c.. Solution o..
         flag = False
         
         ___ i __ s[::-1]:
-            __ i __ ' ' and n.. flag:
+            __ i __ ' ' a.. n.. flag:
                 c_
-            ____ i __ ' ' and flag:
+            ____ i __ ' ' a.. flag:
                 r_ result
             ____
                 result += 1

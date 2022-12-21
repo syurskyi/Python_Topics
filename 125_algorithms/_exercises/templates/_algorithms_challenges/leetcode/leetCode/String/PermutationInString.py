@@ -59,7 +59,7 @@ c.. Solution o..
                     __ i != s2[c-l..(s1)+s..(pre.values())]:
                         ___ t __ s2[c-l..(s1)+s..(pre.values()):c]:
                             __ t __ i:
-                                break
+                                ______
                             try:
                                 pre[t] += 1
                             except:

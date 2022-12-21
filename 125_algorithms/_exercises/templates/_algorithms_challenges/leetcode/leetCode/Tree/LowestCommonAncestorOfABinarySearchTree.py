@@ -66,12 +66,12 @@ c.. Solution o..
         __ p.val __ root.val or q.val __ root.val:
             r_ root
         
-        __ p.val < root.val and q.val > root.val:
+        __ p.val < root.val a.. q.val > root.val:
             r_ root
-        ____ p.val > root.val and q.val < root.val:
+        ____ p.val > root.val a.. q.val < root.val:
             r_ root
         
-        __ p.val > root.val and q.val > root.val:
+        __ p.val > root.val a.. q.val > root.val:
             
             r_ self.lowestCommonAncestor(root.right, p, q)
         

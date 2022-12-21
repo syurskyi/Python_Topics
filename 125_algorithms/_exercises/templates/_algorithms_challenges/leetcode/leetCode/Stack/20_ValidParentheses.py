@@ -16,7 +16,7 @@ c.. Solution o..
 
             ____
                 # Check if stack top matches the current ), ] or }.
-                __ (parenthes_stack and
+                __ (parenthes_stack a..
                         parenthes_stack[-1] __ match_rule[symble]
                     parenthes_stack.pop()
                 ____

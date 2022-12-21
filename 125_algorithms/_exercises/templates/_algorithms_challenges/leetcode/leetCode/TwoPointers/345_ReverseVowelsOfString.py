@@ -12,7 +12,7 @@ c.. Solution o..
         s = list(s)
         left, right = 0, l..(s) - 1
         _____ left < right:
-            __ s[left] __ all_vowels and s[right] __ all_vowels:
+            __ s[left] __ all_vowels a.. s[right] __ all_vowels:
                 s[left], s[right] = s[right], s[left]
                 left += 1
                 right -= 1

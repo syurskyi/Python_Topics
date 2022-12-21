@@ -11,10 +11,10 @@ c.. Solution o..
         queue   # list
         ___ i, v __ enumerate(nums
             # remove numbers out of range k
-            __ queue and queue[0] __ i-k:
+            __ queue a.. queue[0] __ i-k:
                 queue = queue[1:]
             # remove smaller numbers in k range as they are useless
-            _____ queue and v > nums[queue[-1]]:
+            _____ queue a.. v > nums[queue[-1]]:
                 queue.pop()
             queue.append(i)
             __ i+1 >= k:
@@ -29,9 +29,9 @@ c.. Solution_2 o..
         max_num   # list
         queue = deque()
         ___ i, v __ enumerate(nums
-            __ queue and queue[0] __ i-k:
+            __ queue a.. queue[0] __ i-k:
                 queue.popleft()
-            _____ queue and v > nums[queue[-1]]:
+            _____ queue a.. v > nums[queue[-1]]:
                 queue.pop()
             queue.append(i)
             __ i+1 >= k:

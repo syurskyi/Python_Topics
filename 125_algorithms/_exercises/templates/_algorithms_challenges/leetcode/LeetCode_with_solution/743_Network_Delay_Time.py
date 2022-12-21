@@ -31,11 +31,11 @@ c_ Solution o..
             cand_node = -1
             cand_dist = float('inf')
             ___ i __ xrange(1, N + 1
-                __ n.. seen[i] and dist[i] < cand_dist:
+                __ n.. seen[i] a.. dist[i] < cand_dist:
                     cand_dist = dist[i]
                     cand_node = i
 
-            __ cand_node < 0: break
+            __ cand_node < 0: ______
             seen[cand_node] = T..
             ___ nei, d __ graph[cand_node]:
                 dist[nei] = min(dist[nei], dist[cand_node] + d)

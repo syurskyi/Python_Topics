@@ -29,6 +29,6 @@ c_ Solution o..
                 index1 = index
             ____ word2 __ word:
                 index2 = index
-            __ index1 != -1 and index2 != -1:
+            __ index1 != -1 a.. index2 != -1:
                 res = min(res, abs(index1 - index2))
         r_ res

@@ -18,7 +18,7 @@ c.. Solution o..
         # Get the two half parts.
         pre_slow = None
         slow = fast = head
-        _____ fast and fast.next:
+        _____ fast a.. fast.next:
             pre_slow = slow
             slow = slow.next
             fast = fast.next.next
@@ -30,7 +30,7 @@ c.. Solution o..
     # Operator merge.
     ___ merge  left_list, right_list
         pre_head = dummy = ListNode(None)
-        _____ left_list and right_list:
+        _____ left_list a.. right_list:
             __ left_list.val < right_list.val:
                 dummy.next = left_list
                 left_list = left_list.next

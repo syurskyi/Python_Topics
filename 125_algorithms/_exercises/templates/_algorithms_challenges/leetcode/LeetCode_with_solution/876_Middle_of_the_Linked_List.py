@@ -19,7 +19,7 @@ c_ Solution o..
     ___ middleNode  head
         # Fast point is 2 times faster than slow point
         fast = slow = head
-        w.. fast and fast.next:
+        w.. fast a.. fast.next:
             slow = slow.next
             fast = fast.next.next
         r_ slow

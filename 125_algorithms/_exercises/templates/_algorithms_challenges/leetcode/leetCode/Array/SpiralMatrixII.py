@@ -49,7 +49,7 @@ c.. Solution o..
                 __ n.. current_value:
                     r_ maps
                 xy = makeXY(x, y)
-                __ (y > -1 and x > -1) and (y < n and x < n
+                __ (y > -1 a.. x > -1) a.. (y < n a.. x < n
                     __ maps[y][x] __ 0:
                         maps[y][x] = current_value.pop()
                         y, x = xy[2][1], xy[2][0] 
@@ -66,7 +66,7 @@ c.. Solution o..
                 __ n.. current_value:
                     r_ maps
                 xy = makeXY(x, y)
-                __ (y > -1 and x > -1) and (y < n and x < n
+                __ (y > -1 a.. x > -1) a.. (y < n a.. x < n
                     __ maps[y][x] __ 0:
                         maps[y][x] = current_value.pop()
                         y, x = xy[1][1], xy[1][0] 
@@ -84,7 +84,7 @@ c.. Solution o..
                     r_ maps
                 xy = makeXY(x, y)
 
-                __ y > -1 and x > -1 and y < n and x < n:
+                __ y > -1 a.. x > -1 a.. y < n a.. x < n:
                     __ maps[y][x] __ 0:
                         maps[y][x] = current_value.pop()
                         y, x = xy[3][1], xy[3][0] 
@@ -101,7 +101,7 @@ c.. Solution o..
                     r_ maps
                 xy = makeXY(x, y)
                 
-                __ y > -1 and x > -1 and y < n and x < n:
+                __ y > -1 a.. x > -1 a.. y < n a.. x < n:
                     __ maps[y][x] __ 0:
                         maps[y][x] = current_value.pop()
                         y, x = xy[0][1], xy[0][0] 

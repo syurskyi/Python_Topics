@@ -19,7 +19,7 @@ c_ Solution o..
             __ p.val __ q.val:
                 left = isSameTree(p.left, q.left)
                 right = isSameTree(p.right, q.right)
-                r_ (left and right)
+                r_ (left a.. right)
         except:
             r_ F..
         r_ F..

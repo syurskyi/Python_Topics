@@ -10,9 +10,9 @@ c_ Solution o..
                 r_ F..
             mid = (start + end) / 2
             # handle duplicate
-            w.. mid < end and nums[mid + 1] __ nums[mid]:
+            w.. mid < end a.. nums[mid + 1] __ nums[mid]:
                 mid += 1
-            w.. start < mid and nums[start + 1] __ nums[start]:
+            w.. start < mid a.. nums[start + 1] __ nums[start]:
                 start += 1
             __ nums[mid] __ target:
                 r_ T..
@@ -22,13 +22,13 @@ c_ Solution o..
                 r_ get(mid + 1, end)
             ____ nums[mid] >= nums[start]:
                 # First half is sorted
-                __ target >= nums[start] and target < nums[mid]:
+                __ target >= nums[start] a.. target < nums[mid]:
                     r_ get(start, mid - 1)
                 ____
                     r_ get(mid + 1, end)
             ____ nums[mid] <= nums[end]:
                 # Second half is sorted
-                __ target > nums[mid] and target <= nums[end]:
+                __ target > nums[mid] a.. target <= nums[end]:
                     r_ get(mid + 1, end)
                 ____
                     r_ get(start, mid - 1)

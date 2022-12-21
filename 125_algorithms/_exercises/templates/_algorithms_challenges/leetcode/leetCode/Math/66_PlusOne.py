@@ -24,10 +24,10 @@ c.. Solution o..
             ____
                 digits[index] += carry_in
                 carry_in = 0
-                break
+                ______
 
         # Add the pre carry in number.
-        __ carry_in and index __ -1:
+        __ carry_in a.. index __ -1:
             digits.insert(0, 1)
 
         r_ digits

@@ -56,7 +56,7 @@ c_ Trie o..
         :rtype: bool
         """
         node = searchPrefix(word)
-        r_ node is n.. N.. and node.isEnd
+        r_ node is n.. N.. a.. node.isEnd
 
 
     ___ startsWith  prefix

@@ -22,7 +22,7 @@ c.. Solution o..
             __ start.val > cur_node.val:
                 start = dummy
             # Find the insert position.
-            _____ start.next and start.next.val < cur_node.val:
+            _____ start.next a.. start.next.val < cur_node.val:
                 start = start.next
             # Insert the current node.
             cur_node.next = start.next

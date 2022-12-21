@@ -21,7 +21,7 @@ c_ Solution o..
                 # find the min and max
                 ___ i __ r.. min, m.. + 1
                     __ nums[i] __ target:
-                        __ min < i and nums[min] != nums[i]:
+                        __ min < i a.. nums[min] != nums[i]:
                             min = i
                         m.. = i
                 r_ [min, m..]

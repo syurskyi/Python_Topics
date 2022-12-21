@@ -18,7 +18,7 @@ c.. Solution o..
         __ n.. root:
             r_ 0
 
-        __ root.left and root.right:
+        __ root.left a.. root.right:
             r_ 1 + min(self.minDepth(root.left), self.minDepth(root.right))
         __ n.. root.left:
             r_ 1 + self.minDepth(root.right)

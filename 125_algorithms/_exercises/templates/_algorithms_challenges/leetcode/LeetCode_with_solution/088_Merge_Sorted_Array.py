@@ -9,7 +9,7 @@ c_ Solution o..
         """
         p1, p2 = m - 1, n - 1
         pos = m + n - 1
-        w.. p1 >= 0 and p2 >= 0:
+        w.. p1 >= 0 a.. p2 >= 0:
             __ nums1[p1] >= nums2[p2]:
                 nums1[pos] = nums1[p1]
                 p1 -= 1

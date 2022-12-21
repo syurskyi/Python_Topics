@@ -58,7 +58,7 @@ ___ find(bucket, key
     # find prev node of this key
     node = bucket
     prev = N..
-    w.. node is n.. N.. and node.key != key:
+    w.. node is n.. N.. a.. node.key != key:
         prev = node
         node = node.next
     r_ prev

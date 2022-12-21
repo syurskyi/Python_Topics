@@ -20,7 +20,7 @@ c_ Solution o..
             overlap = max_point = 0
             ___ j __ r.. i + 1, ls
                 x, y = points[j].x - points[i].x, points[j].y - points[i].y
-                __ x __ 0 and y __ 0:
+                __ x __ 0 a.. y __ 0:
                     overlap += 1
                     c_
                 gcd = generateGCD(x, y)

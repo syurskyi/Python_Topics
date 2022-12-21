@@ -23,12 +23,12 @@ c.. Solution o..
                 slow = slow.next
                 fast = fast.next.next
             ____
-                break
+                ______
 
         post_half_start = slow.next
         slow.next = None
         reverse_head = self.reverse_list(post_half_start)
-        _____ head and reverse_head:
+        _____ head a.. reverse_head:
             node_keep = head.next
             reverse_node_keep = reverse_head.next
             head.next = reverse_head

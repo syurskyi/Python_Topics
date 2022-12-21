@@ -31,7 +31,7 @@ c.. Solution o..
         result   # list
         
         ___ _generateParenthesis(x, y, parenthesis
-            __ n.. x and n.. y:
+            __ n.. x a.. n.. y:
                 result.append(parenthesis)
                 r_
             

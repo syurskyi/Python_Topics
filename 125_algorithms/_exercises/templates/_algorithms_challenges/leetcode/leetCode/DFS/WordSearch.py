@@ -390,24 +390,24 @@ c.. Solution o..
                 r_ False
                 
             # up
-            __ y-1 >= 0 and board[y-1][x] __ word[1]:
+            __ y-1 >= 0 a.. board[y-1][x] __ word[1]:
                 __ find(board, x, y-1, word[1:]
                     board[y][x] = raw
                     r_ True
             # down
-            __ y+1 < l..(board) and board[y+1][x] __ word[1]:
+            __ y+1 < l..(board) a.. board[y+1][x] __ word[1]:
                 __ find(board, x, y+1, word[1:]
                     board[y][x] = raw
                     r_ True
                 
             # left
-            __ x-1 >= 0 and board[y][x-1] __ word[1]:
+            __ x-1 >= 0 a.. board[y][x-1] __ word[1]:
                 __ find(board, x-1, y, word[1:]
                     board[y][x] = raw
                     r_ True
                 
             # right
-            __ x+1 < l..(board[0]) and board[y][x+1] __ word[1]:
+            __ x+1 < l..(board[0]) a.. board[y][x+1] __ word[1]:
                 __ find(board, x+1, y, word[1:]
                     board[y][x] = raw
                     r_ True

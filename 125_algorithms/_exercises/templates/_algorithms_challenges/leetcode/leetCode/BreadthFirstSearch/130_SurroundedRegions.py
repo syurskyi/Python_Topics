@@ -48,16 +48,16 @@ c.. Solution o..
         adjacency_node   # list
         m_rows = l..(board)
         n_cols = l..(board[0])
-        __ row - 1 >= 0 and board[row-1][col] __ "O":
+        __ row - 1 >= 0 a.. board[row-1][col] __ "O":
             board[row-1][col] = "#"
             adjacency_node.append([row-1, col])
-        __ row + 1 < m_rows and board[row+1][col] __ "O":
+        __ row + 1 < m_rows a.. board[row+1][col] __ "O":
             board[row+1][col] = "#"
             adjacency_node.append([row+1, col])
-        __ col - 1 >= 0 and board[row][col-1] __ "O":
+        __ col - 1 >= 0 a.. board[row][col-1] __ "O":
             board[row][col-1] = "#"
             adjacency_node.append([row, col-1])
-        __ col + 1 < n_cols and board[row][col+1] __ "O":
+        __ col + 1 < n_cols a.. board[row][col+1] __ "O":
             board[row][col+1] = "#"
             adjacency_node.append([row, col+1])
         r_ adjacency_node

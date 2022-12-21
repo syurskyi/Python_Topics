@@ -21,7 +21,7 @@ c_ Solution o..
         w.. remainder != 0:
             __ remainder __ dic:
                 fraction = fraction[:dic[remainder]] + '(' + fraction[dic[remainder]:] + ')'
-                break
+                ______
             dic[remainder] = l.. fraction)
             remainder *= 10
             fraction += s..(remainder / divisor)

@@ -16,9 +16,9 @@ c.. Solution o..
         :type q: TreeNode
         :rtype: bool
         """
-        __ n.. p and n.. q:
+        __ n.. p a.. n.. q:
             r_ True
-        __ (n.. p and q) or (p and n.. q
+        __ (n.. p a.. q) or (p a.. n.. q
             r_ False
 
         __ p.val != q.val:

@@ -17,7 +17,7 @@ c_ Solution:
         r_ res
 
     ___ get_path  result, path, node
-        __ node.left is N.. and node.right is N..:
+        __ node.left is N.. a.. node.right is N..:
             result.append(path + [s..(node.val)])
             r_
         path = path + [s..(node.val)]

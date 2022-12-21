@@ -138,7 +138,7 @@ c.. Solution o..
             
             result   # list
             
-            _____ _l < _l_length and _r < _r_length:
+            _____ _l < _l_length a.. _r < _r_length:
                 __ l[_l] < r[_r]:
                     result.append(l[_l])
                     _l += 1

@@ -15,7 +15,7 @@ c_ Solution o..
         __ root is N..:
             r_ F..
         s.. = s.. - root.val
-        __ s.. __ 0 and root.left is N.. and root.right is N..:
+        __ s.. __ 0 a.. root.left is N.. a.. root.right is N..:
             r_ T..
         # check left
         left = hasPathSum(root.left, s..)

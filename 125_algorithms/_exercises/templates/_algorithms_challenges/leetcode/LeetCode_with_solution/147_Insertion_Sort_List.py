@@ -17,7 +17,7 @@ c_ Solution o..
         pre, curr = helper, head
         w.. curr is n.. N..:
             next_step = curr.next
-            w.. pre.next and pre.next.val < curr.val:
+            w.. pre.next a.. pre.next.val < curr.val:
                 pre = pre.next
             curr.next = pre.next
             pre.next = curr

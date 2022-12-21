@@ -18,7 +18,7 @@ c.. Solution o..
             index = row
             _____ index < len_s:
                 zigzag_list.append(s[index])
-                __ row != 0 and row != numRows - 1:
+                __ row != 0 a.. row != numRows - 1:
                     next_num = magic_number + index - 2 * row
                     __ next_num < len_s:
                         zigzag_list.append(s[next_num])

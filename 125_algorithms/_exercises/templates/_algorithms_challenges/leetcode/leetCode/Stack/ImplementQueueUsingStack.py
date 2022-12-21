@@ -51,7 +51,7 @@ c.. Queue:
         __ self.stack_two.empty(
             _____ 1:
                 __ self.stack_one.empty(
-                    break
+                    ______
 
                 self.stack_two.push(self.stack_one.pop())
 

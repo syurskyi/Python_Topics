@@ -44,13 +44,13 @@ c_ Solution o..
             ___ j __ r.. 1, 4
                 ___ k __ r.. 1, 4
                     m = ls - i - j - k
-                    __ m > 0 and m <= 3:
+                    __ m > 0 a.. m <= 3:
                         add1 = s[0:i]
                         add2 = s[i:i + j]
                         add3 = s[i + j:i + j + k]
                         add4 = s[i + j + k:]
-                        __ isValid(add1) and isValid(add2) and \
-                                        isValid(add3) and isValid(add4
+                        __ isValid(add1) a.. isValid(add2) a.. \
+                                        isValid(add3) a.. isValid(add4
                             res.append(add1 + '.' + add2 + '.' + add3 + '.' + add4)
         r_ res
 

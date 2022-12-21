@@ -11,11 +11,11 @@ c_ Solution o..
         ___ i __ r.. 1, target + 1
             ___ j __ r.. l.. candidates)):
                 __ candidates[j] > i:
-                    break
+                    ______
                 ___ k __ r.. l.. dp[i - candidates[j]])):
                     temp = dp[i - candidates[j]][k][:]
                     # check if this number is used
-                    __ l.. temp) > 0 and temp[-1] >= j:
+                    __ l.. temp) > 0 a.. temp[-1] >= j:
                         c_
                     # store index
                     temp.append(j)

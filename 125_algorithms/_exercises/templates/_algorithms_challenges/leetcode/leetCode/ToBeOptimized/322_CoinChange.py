@@ -35,7 +35,7 @@ c.. Solution_2 o..
         upperBound = amount / coins[-1] + 1
 
         # Use upperBound to pruning.
-        _____ coins_sum and count < upperBound:
+        _____ coins_sum a.. count < upperBound:
             new_coins_sum   # list
             count += 1
             ___ s __ coins_sum:

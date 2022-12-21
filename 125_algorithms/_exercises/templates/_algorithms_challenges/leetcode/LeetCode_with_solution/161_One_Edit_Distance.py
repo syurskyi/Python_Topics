@@ -14,12 +14,12 @@ c_ Solution o..
             r_ F..
         i, shift = 0, ls_t - ls_s
         # find the different position
-        w.. i < ls_s and s[i] __ t[i]:
+        w.. i < ls_s a.. s[i] __ t[i]:
             i += 1
         __ i __ ls_s:
             r_ shift > 0
         __ shift __ 0:
             i += 1
-        w.. i < ls_s and s[i] __ t[i + shift]:
+        w.. i < ls_s a.. s[i] __ t[i + shift]:
             i += 1
         r_ i __ ls_s

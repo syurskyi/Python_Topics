@@ -35,14 +35,14 @@ c.. Solution o..
             left_childs = self.root_list(start, i-1)
             right_childs = self.root_list(i+1, end)
             # Have no left childs
-            __ n.. left_childs and right_childs:
+            __ n.. left_childs a.. right_childs:
                 ___ child __ right_childs:
                     root_node = TreeNode(i)
                     root_node.right = child
                     root_node.left = None
                     roots.append(root_node)
             # Have no right childs
-            ____ n.. right_childs and left_childs:
+            ____ n.. right_childs a.. left_childs:
                 ___ child __ left_childs:
                     root_node = TreeNode(i)
                     root_node.left = child

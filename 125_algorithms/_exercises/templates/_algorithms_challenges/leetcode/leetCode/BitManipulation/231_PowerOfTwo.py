@@ -9,7 +9,7 @@ c.. Solution o..
         __ n <= 0:
             r_ False
         _____ n:
-            __ n & 1 and n != 1:
+            __ n & 1 a.. n != 1:
                 r_ False
             n >>= 1
         r_ True
@@ -18,7 +18,7 @@ c.. Solution o..
 # Another solution: using n&(n-1) trick
 c.. Solution_2 o..
     ___ isPowerOfTwo  n
-        r_ n > 0 and n.. n & (n-1)
+        r_ n > 0 a.. n.. n & (n-1)
 
 """
 -7

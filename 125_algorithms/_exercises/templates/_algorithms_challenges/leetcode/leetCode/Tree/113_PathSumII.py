@@ -14,7 +14,7 @@ c.. Solution o..
         __ n.. root:
             r_ []
         paths_list   # list
-        __ n.. root.left and n.. root.right:
+        __ n.. root.left a.. n.. root.right:
             __ root.val __ s..:
                 paths_list.append([root.val])
             r_ paths_list
@@ -44,7 +44,7 @@ c.. Solution_2 o..
     ___ pathSum  root, s..
         __ n.. root:
             r_ []
-        __ n.. root.left and n.. root.right and s.. __ root.val:
+        __ n.. root.left a.. n.. root.right a.. s.. __ root.val:
             r_ [[root.val]]
         tmp = (self.pathSum(root.left, s..-root.val) +
                self.pathSum(root.right, s..-root.val))

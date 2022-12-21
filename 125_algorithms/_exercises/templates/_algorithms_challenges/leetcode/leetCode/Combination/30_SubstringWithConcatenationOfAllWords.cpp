@@ -26,12 +26,12 @@ public:
             _____(j<w_len){
                 string cur_word = s.substr(i+j*wl, wl);
                 __(word_cnt.find(cur_word)__word_cnt.end()){
-                    break;
+                    ______;
                 }
                 else{
                     tmp_cnt[cur_word] ++;
                     __(tmp_cnt[cur_word] > word_cnt[cur_word]){
-                        break;
+                        ______;
                     }
                 }
                 j++;

@@ -28,14 +28,14 @@ c.. Solution o..
         dp = [[False ___ col __ r..(l..(s) + 1)] ___ row __ r..(l..(p) + 1)]
         dp[0][0] = True     # isMatch("", "") = True
         ___ i __ r..(l..(p)):
-            dp[i + 1][0] = dp[i][0] and p[i] __ '*'
+            dp[i + 1][0] = dp[i][0] a.. p[i] __ '*'
 
         ___ i __ r..(l..(p)):
             ___ j __ r..(l..(s)):
                 __ p[i] __ "*":
                     dp[i + 1][j + 1] = dp[i][j + 1] or dp[i][j] or dp[i + 1][j]
                 ____
-                    dp[i + 1][j + 1] = dp[i][j] and (p[i] __ s[j] or p[i] __ "?")
+                    dp[i + 1][j + 1] = dp[i][j] a.. (p[i] __ s[j] or p[i] __ "?")
 
         r_ dp[l..(p)][l..(s)]
 

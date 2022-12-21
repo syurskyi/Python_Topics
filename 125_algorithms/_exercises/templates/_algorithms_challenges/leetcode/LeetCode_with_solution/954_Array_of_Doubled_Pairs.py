@@ -11,7 +11,7 @@ c_ Solution o..
         ___ n __ A:
             __ v_map[n] <= 0:
                 c_
-            __ 2 * n __ v_map and v_map[2 * n] > 0:
+            __ 2 * n __ v_map a.. v_map[2 * n] > 0:
                 v_map[n] -= 1
                 v_map[2 * n] -= 1
             ____

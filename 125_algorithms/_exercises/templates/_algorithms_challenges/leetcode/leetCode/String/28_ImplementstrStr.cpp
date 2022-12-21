@@ -13,7 +13,7 @@ public:
             int j=0;
             ___(;j<pat_len;j++){
                 __(haystack[i+j] != needle[j]){
-                    break;
+                    ______;
                 }
             }
             __(j __ pat_len){

@@ -55,7 +55,7 @@ c_ Solution o..
         nums.s..
         ls = l.. nums)
         ___ i __ r.. ls - 2
-            __ i > 0 and nums[i] __ nums[i - 1]:
+            __ i > 0 a.. nums[i] __ nums[i - 1]:
                 c_
             j = i + 1
             k = ls - 1
@@ -63,9 +63,9 @@ c_ Solution o..
                 curr = nums[i] + nums[j] + nums[k]
                 __ curr __ 0:
                     res.append([nums[i], nums[j], nums[k]])
-                    w.. j < k and nums[j] __ nums[j + 1]:
+                    w.. j < k a.. nums[j] __ nums[j + 1]:
                         j += 1
-                    w.. j < k and nums[k] __ nums[k - 1]:
+                    w.. j < k a.. nums[k] __ nums[k - 1]:
                         k -= 1
                     j += 1
                     k -= 1

@@ -19,7 +19,7 @@ public:
         int steps = 0;
         _____(first){
             __(steps __ n+1){
-                break;
+                ______;
             }
             first = first->next;
             steps += 1;

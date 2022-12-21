@@ -13,7 +13,7 @@ c.. Solution o..
     ___ isPalindrome  head
         slow, fast, new_head = head, head, None
         # Reverse the first half while finding the middle.
-        _____ fast and fast.next:
+        _____ fast a.. fast.next:
             fast = fast.next.next
             # Reverse the slow nodes, Pythonic way
             new_head, new_head.next, slow = slow, new_head, slow.next
@@ -28,7 +28,7 @@ c.. Solution o..
             slow = slow.next
 
         # Compare the reversed(pre_half) and post half
-        _____ new_head and new_head.val __ slow.val:
+        _____ new_head a.. new_head.val __ slow.val:
             new_head, slow = new_head.next, slow.next
 
         r_ n.. new_head

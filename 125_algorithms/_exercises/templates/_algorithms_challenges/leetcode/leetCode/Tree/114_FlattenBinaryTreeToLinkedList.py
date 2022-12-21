@@ -25,7 +25,7 @@ c.. Solution o..
         right_child = root.right
 
         # Leaf node: do nothing, and the linked list has just one node.
-        __ n.. left_child and n.. right_child:
+        __ n.. left_child a.. n.. right_child:
             r_ root
 
         # Have left child node, move it to the next node in the linked list.

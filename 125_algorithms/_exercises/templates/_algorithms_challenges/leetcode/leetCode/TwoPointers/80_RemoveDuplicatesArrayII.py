@@ -16,7 +16,7 @@ c.. Solution o..
             __ first_occ __ nums_l - 1:
                 nums[count] = nums[first_occ]
                 count += 1
-                break
+                ______
 
             # Always keep the first occurence of a number
             first_num = nums[first_occ]
@@ -33,7 +33,7 @@ c.. Solution o..
                 nums[count] = first_num
                 nums[count+1] = second_num
                 next_occ = first_occ+2
-                _____ next_occ < nums_l and nums[next_occ] __ second_num:
+                _____ next_occ < nums_l a.. nums[next_occ] __ second_num:
                     next_occ += 1
                 count += 2
                 first_occ = next_occ

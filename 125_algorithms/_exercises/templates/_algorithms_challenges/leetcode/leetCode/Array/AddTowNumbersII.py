@@ -91,7 +91,7 @@ c.. Solution o..
         b_l1 = l1
         b_l2 = l2
         
-        _____ b_l1 is n.. None and b_l2 is n.. None:
+        _____ b_l1 is n.. None a.. b_l2 is n.. None:
             b_l1 = b_l1.next
             b_l2 = b_l2.next
         

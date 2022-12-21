@@ -13,7 +13,7 @@ c.. Solution o..
         top = min(D, H)
 
         # There is an area coverd by both the two rectangle
-        __ left < right and bottom < top:
+        __ left < right a.. bottom < top:
             r_ size_1 + size_2 - (top-bottom) * (right-left)
         ____
             r_ size_1 + size_2

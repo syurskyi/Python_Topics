@@ -17,7 +17,7 @@ c_ Solution o..
         :rtype: The number of characters read (int)
         """
         pos, eof = 0, F..
-        w.. n.. eof and pos < n:
+        w.. n.. eof a.. pos < n:
             __ bufsize __ 0:
                 bufsize = read4(buff)
                 eof = bufsize < 4

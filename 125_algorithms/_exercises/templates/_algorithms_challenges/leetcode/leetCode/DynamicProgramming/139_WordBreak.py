@@ -20,9 +20,9 @@ c.. Solution o..
             k = 0
             _____ k+i < s_len:
                 cur_fisrt_word = s[i:i+k+1]
-                __ cur_fisrt_word __ wordDict and dp[i+k+1]:
+                __ cur_fisrt_word __ wordDict a.. dp[i+k+1]:
                     dp[i] = True
-                    break
+                    ______
                 ____
                     k += 1
         r_ dp[0]

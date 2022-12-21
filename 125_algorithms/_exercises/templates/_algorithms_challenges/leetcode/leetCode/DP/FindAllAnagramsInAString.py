@@ -143,7 +143,7 @@ c.. Solution o..
                     __ s[i] != s[i-l..(p)+s..(dp.values())]:
                         ___ t __ s[i-l..(p)+s..(dp.values()):i]:
                             __ t __ s[i]:
-                                break
+                                ______
                             try:
                                 dp[t] += 1
                             except:
@@ -207,7 +207,7 @@ c.. Solution o..
 
                     dp = x
             ____
-                __ s[i] __ _p and s[i] != s[i-1] and s[i] __ s[i-l..(p)+s..(dp.values())]:
+                __ s[i] __ _p a.. s[i] != s[i-1] a.. s[i] __ s[i-l..(p)+s..(dp.values())]:
                     c_
                 x = _p.copy()
                 __ s[i] __ x:

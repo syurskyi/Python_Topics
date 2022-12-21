@@ -97,18 +97,18 @@ c.. Solution o..
                 board[y][x] = 0
 
                 # up
-                __ y-1 >= 0 and board[y-1][x] __ w:
+                __ y-1 >= 0 a.. board[y-1][x] __ w:
                     find(board, x, y-1, word[w], pre+w)
                 # down
-                __ y+1 < l..(board) and board[y+1][x] __ w:
+                __ y+1 < l..(board) a.. board[y+1][x] __ w:
                     find(board, x, y+1, word[w], pre+w)
 
                 # left
-                __ x-1 >= 0 and board[y][x-1] __ w:
+                __ x-1 >= 0 a.. board[y][x-1] __ w:
                     find(board, x-1, y, word[w], pre+w)
 
                 # right
-                __ x+1 < l..(board[0]) and board[y][x+1] __ w:
+                __ x+1 < l..(board[0]) a.. board[y][x+1] __ w:
                     find(board, x+1, y, word[w], pre+w)
 
                 board[y][x] = raw      

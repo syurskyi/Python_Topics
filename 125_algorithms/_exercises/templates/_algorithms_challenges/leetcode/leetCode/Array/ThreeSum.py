@@ -63,7 +63,7 @@ c.. Solution o..
         result   # list
         ___ i, data __ enumerate(sortedNums
             __ data > 0:
-                break
+                ______
             target = 0 - data
             start = i + 1
             end = length
@@ -87,7 +87,7 @@ c.. Solution o..
                     result.append([0, 0, 0])
                     c_
 
-            __ l..(index_dict.get(i)) >= 2 and i != 0:
+            __ l..(index_dict.get(i)) >= 2 a.. i != 0:
                 __ index_dict.get(-2*i
                     result.append(s..((i,i,-2*i)))
 

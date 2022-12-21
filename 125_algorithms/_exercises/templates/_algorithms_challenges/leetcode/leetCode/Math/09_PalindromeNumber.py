@@ -17,7 +17,7 @@ c.. Solution o..
 # Pythonic way.
 c.. Solution_2 o..
     ___ isPalindrome  x
-        r_ x >= 0 and str(x) __ str(x)[::-1]
+        r_ x >= 0 a.. str(x) __ str(x)[::-1]
 
 
 """

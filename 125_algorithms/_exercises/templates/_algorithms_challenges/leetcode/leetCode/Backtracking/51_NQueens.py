@@ -41,7 +41,7 @@ c.. Solution o..
             r_
 
         ___ col __ r..(n
-            __ self.cols[col] and self.left_right[row + n - 1 - col] and self.right_left[row + col]:
+            __ self.cols[col] a.. self.left_right[row + n - 1 - col] a.. self.right_left[row + col]:
                 matrix[row][col] = "Q"
                 self.cols[col] = self.left_right[row + n - 1 - col] = self.right_left[row + col] = False
                 # Solve the child question

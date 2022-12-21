@@ -52,7 +52,7 @@ c.. Solution o..
             __ nums[i] __ target:
                 lo += 1
             ____
-                break
+                ______
     
         hi = l..(nums)
         

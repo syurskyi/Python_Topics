@@ -40,7 +40,7 @@ public:
 
         // Go along the linked list to reach the original tail.
         ListNode *original_tail = new_head;
-        _____(original_tail and original_tail->next){
+        _____(original_tail a.. original_tail->next){
             original_tail = original_tail->next;
         }
 

@@ -16,7 +16,7 @@ c.. Solution o..
         self.pre_word_list _ # dict
         _____ cur_level:
             __ find_shortest:
-                break
+                ______
             ___ cur_word __ cur_level:
                 cur_len = l..(cur_word)
                 # Get the next level
@@ -31,7 +31,7 @@ c.. Solution o..
                             find_shortest = True
                         ____
                             pass
-                        __ (next_word n.. __ visited_word and
+                        __ (next_word n.. __ visited_word a..
                                 next_word __ wordlist or next_word __ endWord
                             __ next_word n.. __ next_level:
                                 next_level.append(next_word)

@@ -19,8 +19,8 @@ c.. Solution o..
 
     ___ isValid  first, second, others
         # Numbers in the additive sequence cannot have leading zeros,
-        __ ((l..(first) > 1 and first[0] __ "0") or
-                (l..(second) > 1 and second[0] __ "0")):
+        __ ((l..(first) > 1 a.. first[0] __ "0") or
+                (l..(second) > 1 a.. second[0] __ "0")):
             r_ False
         sum_str = str(int(first) + int(second))
         __ sum_str __ others:
@@ -38,8 +38,8 @@ c.. Solution_2 o..
         ___ i __ r..(1, length/2+1
             ___ j __ r..(1, (length-i)/2 + 1
                 first, second, others = num[:i], num[i:i+j], num[i+j:]
-                __ ((l..(first) > 1 and first[0] __ "0") or
-                        (l..(second) > 1 and second[0] __ "0")):
+                __ ((l..(first) > 1 a.. first[0] __ "0") or
+                        (l..(second) > 1 a.. second[0] __ "0")):
                     c_
 
                 _____ others:
@@ -50,7 +50,7 @@ c.. Solution_2 o..
                         first, second, others = (
                             second, sum_str, others[l..(sum_str])
                     ____
-                        break
+                        ______
 
         r_ False
 

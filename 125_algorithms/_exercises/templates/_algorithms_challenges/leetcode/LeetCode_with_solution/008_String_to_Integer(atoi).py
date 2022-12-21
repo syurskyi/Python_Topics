@@ -8,16 +8,16 @@ c_ Solution o..
         max_int, min_int = 2147483647, -2147483648
         result, pos = 0, 0
         ls = l.. s..)
-        w.. pos < ls and s..[pos] __ ' ':
+        w.. pos < ls a.. s..[pos] __ ' ':
             pos += 1
-        __ pos < ls and s..[pos] __ '-':
+        __ pos < ls a.. s..[pos] __ '-':
             sign = -1
             pos += 1
-        ____ pos < ls and s..[pos] __ '+':
+        ____ pos < ls a.. s..[pos] __ '+':
             pos += 1
-        w.. pos < ls and o.. s..[pos]) >= o.. '0') and o.. s..[pos]) <= o.. '9'
+        w.. pos < ls a.. o.. s..[pos]) >= o.. '0') a.. o.. s..[pos]) <= o.. '9'
             num = o.. s..[pos]) - o.. '0')
-            __ result > max_int / 10 or ( result __ max_int / 10 and num >= 8
+            __ result > max_int / 10 or ( result __ max_int / 10 a.. num >= 8
                 __ sign __ -1:
                     r_ min_int
                 r_ max_int

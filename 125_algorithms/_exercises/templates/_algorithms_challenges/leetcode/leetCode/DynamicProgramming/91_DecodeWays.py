@@ -27,7 +27,7 @@ c.. Solution o..
                     dp[i+1] = dp[i-1]
 
             ____
-                __ num <= 26 and pre_num != 0:
+                __ num <= 26 a.. pre_num != 0:
                     dp[i + 1] = dp[i] + dp[i - 1]
                 ____
                     dp[i + 1] = dp[i]

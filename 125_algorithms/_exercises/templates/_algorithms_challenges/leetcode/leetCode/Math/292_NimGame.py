@@ -20,7 +20,7 @@ c.. Solution_2 o..
         __ n > 3:
             dp[4] = False
             ___ i __ r..(5, n+1
-                __ dp[i-1] and dp[i-2] and dp[i-3]:
+                __ dp[i-1] a.. dp[i-2] a.. dp[i-3]:
                     dp[i] = False
         r_ dp[n]
 

@@ -28,10 +28,10 @@ c.. Solution o..
                         count[i+1][j+1] += board[i][j]
                 # Current cell interacts with its eight neighbors
                 # Live cell turn dead
-                __ board[i][j] and (count[i][j] < 2 or count[i][j] > 3
+                __ board[i][j] a.. (count[i][j] < 2 or count[i][j] > 3
                     board[i][j] = 0
                 # Dead cell turn live
-                __ n.. board[i][j] and count[i][j] __ 3:
+                __ n.. board[i][j] a.. count[i][j] __ 3:
                     board[i][j] = 1
         r_
 

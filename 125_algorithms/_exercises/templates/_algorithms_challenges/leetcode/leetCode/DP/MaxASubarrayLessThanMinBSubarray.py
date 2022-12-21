@@ -120,7 +120,7 @@ ___ maxALEminB(a, b
             x2 = j[x]
             __ x2[0] <= value[0]:
                 dp1[i] = [[value[0], s..([t[1] ___ t __ j[:x+1]])+1]] + j[x+1:]
-                break
+                ______
 
     ___ i __ r..(1, l..(dp2)):
         value = dp2[i][0]
@@ -133,15 +133,15 @@ ___ maxALEminB(a, b
             x2 = j[x]
             __ x2[0] >= value[0]:
                 dp2[i] = [[value[0], s..([t[1] ___ t __ j[:x+1]])+1]] + j[x+1:]
-                break
+                ______
 
     result = 0
     ___ i, j __ zip(dp1, dp2
         valueA = 0
         valueB = 0
         _____ 1:
-            __ n.. i and n.. j:
-                break
+            __ n.. i a.. n.. j:
+                ______
 
             __ valueA __ 0:
                 a = i.pop()

@@ -32,7 +32,7 @@ c.. Solution_2 o..
         merged_head = merged_list
 
         # Scan through l1 and l2, get the smaller one to merged list
-        _____ l1 and l2:
+        _____ l1 a.. l2:
             __ l1.val <= l2.val:
                 merged_list.next = l1
                 l1 = l1.next

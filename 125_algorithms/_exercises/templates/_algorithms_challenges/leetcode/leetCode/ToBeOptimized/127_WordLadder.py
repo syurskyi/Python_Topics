@@ -25,7 +25,7 @@ c.. Solution o..
                     __ cur_word[i] != endWord[i]:
                         __ one_distance __ 1:
                             one_distance = 0
-                            break
+                            ______
                         one_distance += 1
                 __ one_distance __ 1:
                     r_ length + 1
@@ -37,7 +37,7 @@ c.. Solution o..
                     post_word = cur_word[i+1:]
                     ___ j __ "abcdefghijklmnopqrstuvwxyz":
                         next_word = pre_word + j + post_word
-                        __ (next_word n.. __ visited_word and
+                        __ (next_word n.. __ visited_word a..
                                 next_word __ wordList
                             next_level.append(next_word)
                             visited_word[next_word] = 1

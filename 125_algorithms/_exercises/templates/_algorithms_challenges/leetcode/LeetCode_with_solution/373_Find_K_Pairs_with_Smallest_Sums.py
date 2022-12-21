@@ -9,11 +9,11 @@ c_ Solution o..
         # https://discuss.leetcode.com/topic/50450/slow-1-liner-to-fast-solutions
         queue =    # list
         ___ push(i, j
-            __ i < l.. nums1) and j < l.. nums2
+            __ i < l.. nums1) a.. j < l.. nums2
                 heapq.heappush(queue, [nums1[i] + nums2[j], i, j])
         push(0, 0)
         pairs =    # list
-        w.. queue and l.. pairs) < k:
+        w.. queue a.. l.. pairs) < k:
             _, i, j = heapq.heappop(queue)
             pairs.append([nums1[i], nums2[j]])
             push(i, j + 1)

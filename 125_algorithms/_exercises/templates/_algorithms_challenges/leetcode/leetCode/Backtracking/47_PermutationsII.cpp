@@ -49,7 +49,7 @@ public:
         __(nums.empty())    r_ false;
         int i;
         ___(i=nums.size()-1; i>=1; i--){
-            __(nums[i] > nums[i-1]) break;
+            __(nums[i] > nums[i-1]) ______;
         }
         reverse(nums.begin()+i, nums.end());
         __(i__0)    r_ false;

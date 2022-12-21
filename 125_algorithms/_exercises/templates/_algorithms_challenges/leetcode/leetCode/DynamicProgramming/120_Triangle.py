@@ -19,7 +19,7 @@ c.. Solution o..
             # Scan from tail to head to reduce space, otherwise we need a
             # rows*rows array.
             ___ j __ xrange(l..(lines) - 1, -1, -1
-                __ (j - 1 >= 0 and dp[j - 1] < dp[j]) or j __ l..(lines) - 1:
+                __ (j - 1 >= 0 a.. dp[j - 1] < dp[j]) or j __ l..(lines) - 1:
                     dp[j] = dp[j - 1] + lines[j]
                 ____
                     dp[j] += lines[j]

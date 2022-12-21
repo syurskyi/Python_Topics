@@ -47,7 +47,7 @@ c_ Logger o..
                 temp = heapq.heappop(heap)
                 cache.pop(temp[1])
             ____
-                break
+                ______
         __ timestamp < cache.get(message, 0
             r_ F..
         cache[message] = timestamp + 10

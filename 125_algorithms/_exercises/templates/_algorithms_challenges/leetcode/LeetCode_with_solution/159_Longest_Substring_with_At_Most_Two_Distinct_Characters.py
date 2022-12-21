@@ -9,7 +9,7 @@ c_ Solution o..
         ___ k __ r.. 1, l.. s)):
             __ s[k] __ s[k - 1]:
                 c_
-            __ j >= 0 and s[j] != s[k]:
+            __ j >= 0 a.. s[j] != s[k]:
                 maxLen = m..(k - i, maxLen)
                 # update i
                 i = j + 1

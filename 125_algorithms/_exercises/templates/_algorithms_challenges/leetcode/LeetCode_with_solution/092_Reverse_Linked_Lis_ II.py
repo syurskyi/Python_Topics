@@ -16,14 +16,14 @@ c_ Solution o..
             r_ head
         split_node, prev, curr = N.., N.., head
         count = 1
-        w.. count <= m and curr is n.. N..:
+        w.. count <= m a.. curr is n.. N..:
             __ count __ m:
                 split_node = prev
             prev = curr
             curr = curr.next
             count += 1
         tail, next_node = prev, N..
-        w.. curr is n.. N.. and count <= n:
+        w.. curr is n.. N.. a.. count <= n:
             next_temp = curr.next
             curr.next = prev
             prev = curr

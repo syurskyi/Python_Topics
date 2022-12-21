@@ -17,7 +17,7 @@ c_ Solution o..
             # that v is in.
             bucketNum, offset = (v / t, 1) __ t ____ (v, 0)
             ___ idx __ xrange(bucketNum - offset, bucketNum + offset + 1
-                __ idx __ buckets and abs(buckets[idx] - nums[i]) <= t:
+                __ idx __ buckets a.. abs(buckets[idx] - nums[i]) <= t:
                     r_ T..
 
             buckets[bucketNum] = nums[i]

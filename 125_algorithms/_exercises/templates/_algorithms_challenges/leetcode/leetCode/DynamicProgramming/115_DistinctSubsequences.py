@@ -14,7 +14,7 @@ c.. Solution o..
             r_ 0
 
         s_l, t_l = l..(s), l..(t)
-        __ s_l < t_l or (s_l __ t_l and s != t
+        __ s_l < t_l or (s_l __ t_l a.. s != t
             r_ 0
 
         dp = [0 ___ i __ r..(t_l + 1)]

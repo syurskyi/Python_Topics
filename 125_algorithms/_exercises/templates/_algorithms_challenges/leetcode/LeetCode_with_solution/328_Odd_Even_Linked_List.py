@@ -16,7 +16,7 @@ c_ Solution o..
         __ head.next is N..:
             r_ head
         even_head = even = head.next
-        w.. odd.next is n.. N.. and even.next is n.. N..:
+        w.. odd.next is n.. N.. a.. even.next is n.. N..:
             odd.next = even.next
             odd = odd.next
             even.next = odd.next

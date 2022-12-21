@@ -30,6 +30,6 @@ c_ Solution:
             r_ 1
         res = 2 * mySqrt(x / 4)
         # (res + 1) * (res + 1) >= 0 for avoiding overflow
-        __ (res + 1) * (res + 1) <= x and (res + 1) * (res + 1) >= 0:
+        __ (res + 1) * (res + 1) <= x a.. (res + 1) * (res + 1) >= 0:
             r_ res + 1
         r_  res

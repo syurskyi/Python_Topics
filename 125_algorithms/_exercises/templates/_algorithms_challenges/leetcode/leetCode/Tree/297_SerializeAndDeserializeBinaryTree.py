@@ -27,7 +27,7 @@ c.. Codec:
             ____
                 data.append("null")
         # Remove the tail null node.
-        _____ data and data[-1] __ "null":
+        _____ data a.. data[-1] __ "null":
             del data[-1]
         r_ ",".join(data)
 
@@ -56,7 +56,7 @@ c.. Codec:
                     node_list[cur_pos].right = node_list[offset]
                     offset += 1
                 ____
-                    break
+                    ______
             ____
                 pass
             cur_pos += 1

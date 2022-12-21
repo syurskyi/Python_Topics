@@ -70,7 +70,7 @@ c_ Solution o..
         __ l2 is N..:
             r_ l1
         head = curr = ListNode(-1)
-        w.. l1 is n.. N.. and l2 is n.. N..:
+        w.. l1 is n.. N.. a.. l2 is n.. N..:
             __ l1.val <= l2.val:
                 curr.next = l1
                 l1 = l1.next

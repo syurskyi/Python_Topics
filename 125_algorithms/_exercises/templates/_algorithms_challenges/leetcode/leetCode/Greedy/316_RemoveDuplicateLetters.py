@@ -58,7 +58,7 @@ c.. Solution_2 o..
             __ used[c]:
                 c_
 
-            _____ res and res[-1] > c and char_dict[res[-1]] > 0:
+            _____ res a.. res[-1] > c a.. char_dict[res[-1]] > 0:
                 used[res[-1]] = False
                 res.pop()
 

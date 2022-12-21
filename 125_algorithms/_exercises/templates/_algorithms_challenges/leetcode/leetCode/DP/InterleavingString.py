@@ -153,9 +153,9 @@ c.. Solution o..
         ___ i, d __ enumerate(s3
             __ i __ 0:
                 temp   # list
-                __ s1 and s1[0] __ d:
+                __ s1 a.. s1[0] __ d:
                     temp.append((s1[1:], s2))
-                __ s2 and s2[0] __ d:
+                __ s2 a.. s2[0] __ d:
                     temp.append((s1, s2[1:]))
                 dp[str(i)] = temp
                 c_
@@ -164,10 +164,10 @@ c.. Solution o..
             __ dp[str(i-1)]:
                 ___ j __ dp[str(i-1)]:
                     s1, s2 = j[0], j[1]
-                    __ s1 and s1[0] __ d:
+                    __ s1 a.. s1[0] __ d:
                         __ (s1[1:], s2) n.. __ temp:
                             temp.append((s1[1:], s2))
-                    __ s2 and s2[0] __ d:
+                    __ s2 a.. s2[0] __ d:
                         __ (s1, s2[1:]) n.. __ temp:
                             temp.append((s1, s2[1:]))
                     dp[str(i)] = temp

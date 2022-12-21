@@ -6,7 +6,7 @@ c.. Solution o..
     ___ lengthOfLastWord  s
         s = s.strip()
         length = 0
-        _____ length < l..(s) and s[-(length + 1)] != " ":
+        _____ length < l..(s) a.. s[-(length + 1)] != " ":
             length += 1
 
         r_ length

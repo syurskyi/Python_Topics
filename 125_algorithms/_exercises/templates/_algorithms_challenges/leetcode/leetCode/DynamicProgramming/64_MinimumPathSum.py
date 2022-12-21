@@ -16,11 +16,11 @@ c.. Solution o..
         ___ row __ r..(m_row
             ___ col __ r..(n_col
                 dp[row][col] = grid[row][col]
-                __ row __ 0 and col > 0:
+                __ row __ 0 a.. col > 0:
                     dp[row][col] += dp[row][col - 1]
-                ____ row > 0 and col __ 0:
+                ____ row > 0 a.. col __ 0:
                     dp[row][col] += dp[row - 1][col]
-                ____ row > 0 and col > 0:
+                ____ row > 0 a.. col > 0:
                     dp[row][col] += min(dp[row - 1][col], dp[row][col - 1])
                 ____
                     pass

@@ -54,7 +54,7 @@ c.. Solution o..
         x_length = l..(name)
         y_length = l..(typed)
         
-        _____ x < x_length and y < y_length:
+        _____ x < x_length a.. y < y_length:
             
             __ typed[y] __ name[x]:
                 y += 1

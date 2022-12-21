@@ -32,7 +32,7 @@ c_ Solution o..
         mapTtoS = [0] * 127
         ___ i __ r.. ls
             s_num, t_num = o.. s[i]), o.. t[i])
-            __ mapStoT[s_num] __ 0 and mapTtoS[t_num] __ 0:
+            __ mapStoT[s_num] __ 0 a.. mapTtoS[t_num] __ 0:
                 mapStoT[s_num] = t_num
                 mapTtoS[t_num] = s_num
             ____ mapTtoS[t_num] != s_num or mapStoT[s_num] != t_num:

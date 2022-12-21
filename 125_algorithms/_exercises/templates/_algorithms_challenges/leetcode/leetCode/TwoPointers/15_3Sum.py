@@ -30,9 +30,9 @@ c.. Solution o..
                         left += 1
                         right -= 1
                         # avoid duplicate triplets.
-                        _____ left < right and nums[left] __ nums[left-1]:
+                        _____ left < right a.. nums[left] __ nums[left-1]:
                             left += 1
-                        _____ left < right and nums[right] __ nums[right+1]:
+                        _____ left < right a.. nums[right] __ nums[right+1]:
                             right -= 1
 
         r_ solution

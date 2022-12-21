@@ -29,7 +29,7 @@ c.. Solution o..
                         # Find the endWord
                         __ next_word __ endWord:
                             r_ length + 1
-                        ____ (next_word n.. __ visited_word and
+                        ____ (next_word n.. __ visited_word a..
                                 next_word __ wordList
                             visited_word[next_word] = 1
                             next_level.append(next_word)

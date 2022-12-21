@@ -25,12 +25,12 @@ c_ Solution o..
         stack =    # list
         l, r = l.. nums), 0
         ___ i __ r.. l.. nums)):
-            w.. l.. stack) != 0 and nums[stack[-1]] > nums[i]:
+            w.. l.. stack) != 0 a.. nums[stack[-1]] > nums[i]:
                 l = min(l, stack.pop())
             stack.append(i)
         stack =    # list
         ___ i __ r.. l.. nums) - 1, -1, -1
-            w.. l.. stack) != 0 and nums[stack[-1]] < nums[i]:
+            w.. l.. stack) != 0 a.. nums[stack[-1]] < nums[i]:
                 r = m..(r, stack.pop())
             stack.append(i)
         __ r > l:

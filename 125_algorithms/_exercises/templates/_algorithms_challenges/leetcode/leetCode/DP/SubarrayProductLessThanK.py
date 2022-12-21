@@ -39,10 +39,10 @@ c.. Solution o..
                 result += 1
                 dp = [nums[i]]
                 start = i
-                break
+                ______
         
         ___ i __ r..(start+1, l..(nums)):
-            __ nums[i] __ 1 and nums[i] < k:
+            __ nums[i] __ 1 a.. nums[i] < k:
                 dp.append(1)
                 result += l..(dp)
                 c_

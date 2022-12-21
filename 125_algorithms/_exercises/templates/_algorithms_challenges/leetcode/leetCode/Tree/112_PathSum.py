@@ -15,11 +15,11 @@ c.. Solution o..
             r_ False
 
         root_val = root.val
-        __ root.left and self.hasPathSum(root.left, s..-root_val
+        __ root.left a.. self.hasPathSum(root.left, s..-root_val
             r_ True
-        __ root.right and self.hasPathSum(root.right, s..-root_val
+        __ root.right a.. self.hasPathSum(root.right, s..-root_val
             r_ True
-        __ n.. root.left and n.. root.right and s.. __ root.val:
+        __ n.. root.left a.. n.. root.right a.. s.. __ root.val:
             r_ True
         r_ False
 

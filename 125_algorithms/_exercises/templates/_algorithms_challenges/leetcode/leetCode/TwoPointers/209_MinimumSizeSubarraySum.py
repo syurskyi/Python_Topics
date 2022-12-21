@@ -11,7 +11,7 @@ c.. Solution o..
         start, end, sums, min_len = 0, 0, nums[0], 0
         len_nums = l..(nums)
         _____ end < len_nums:
-            __ sums < s and end + 1 < len_nums:
+            __ sums < s a.. end + 1 < len_nums:
                 end += 1
                 sums += nums[end]
             __ sums >= s:
@@ -22,8 +22,8 @@ c.. Solution o..
                 sums -= nums[start]
                 __ start < end:
                     start += 1
-            __ end __ len_nums - 1 and sums < s:
-                break
+            __ end __ len_nums - 1 a.. sums < s:
+                ______
         r_ min_len
 
 """

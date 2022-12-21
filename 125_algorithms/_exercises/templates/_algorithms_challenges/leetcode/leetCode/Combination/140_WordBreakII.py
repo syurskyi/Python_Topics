@@ -24,9 +24,9 @@ c.. Solution o..
             k = 0
             _____ k + i < self.s_len:
                 cur_fisrt_word = self.str[i:i+k+1]
-                __ cur_fisrt_word __ self.words and dp[i + k + 1]:
+                __ cur_fisrt_word __ self.words a.. dp[i + k + 1]:
                     dp[i] = True
-                    break
+                    ______
 
                 k += 1
 
@@ -42,7 +42,7 @@ c.. Solution o..
         k = 0
         _____ start+k < self.s_len:
             cur_word = self.str[start:start+k+1]
-            __ cur_word __ self.words and dp[start+k+1]:
+            __ cur_word __ self.words a.. dp[start+k+1]:
                 word_list.append(cur_word)
                 self.word_break(start+k+1, word_list, dp)
                 word_list.pop()

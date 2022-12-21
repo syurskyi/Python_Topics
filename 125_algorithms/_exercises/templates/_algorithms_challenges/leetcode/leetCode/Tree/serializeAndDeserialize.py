@@ -72,7 +72,7 @@ c.. Node:
 
     ___ _serialize(self
 
-        r_ {"val": self.val, "left": self.left and self.left._serialize(), "right": self.right and self.right._serialize()}
+        r_ {"val": self.val, "left": self.left a.. self.left._serialize(), "right": self.right a.. self.right._serialize()}
 
     ___ construct  constructDict
         r_ Node(**constructDict)

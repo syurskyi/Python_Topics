@@ -14,7 +14,7 @@ public:
         _____(pos < s_len){
             // No need to check the remainming, pruning here
             __(max_end-max_begin >= (s_len-pos) * 2 - 1){
-                break;
+                ______;
             }
             int left = pos, right = pos+1;
             _____(right < s_len && s[right] __ s[right-1]){

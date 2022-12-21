@@ -18,13 +18,13 @@ c.. Solution o..
         _____ i < s_len:
             # No need to check the remainming, pruning here
             __ max_end - max_start >= (s_len-i) * 2 - 1:
-                break
+                ______
             left, right = i, i+1
             # Skip duplicate characters i.
-            _____ right < s_len and s[right-1] __ s[right]:
+            _____ right < s_len a.. s[right-1] __ s[right]:
                 right += 1
             i = right
-            _____ left-1 >= 0 and right < s_len and s[left-1] __ s[right]:
+            _____ left-1 >= 0 a.. right < s_len a.. s[left-1] __ s[right]:
                 left -= 1
                 right += 1
             __ right-left > max_end-max_start:

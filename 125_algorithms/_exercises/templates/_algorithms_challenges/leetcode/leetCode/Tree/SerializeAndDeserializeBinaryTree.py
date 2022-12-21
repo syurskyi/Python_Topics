@@ -161,7 +161,7 @@ c.. Codec:
             __ result[-1] __ None:
                 result.pop()
             ____
-                break
+                ______
         
         r_ str(result)
         

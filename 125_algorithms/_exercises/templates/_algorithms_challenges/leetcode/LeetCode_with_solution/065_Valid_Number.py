@@ -30,23 +30,23 @@ c_ Solution o..
         __ s[pos] __ '+' or s[pos] __ '-':
             pos += 1
         isNumeric = F..
-        w.. pos < ls and s[pos].isdigit(
+        w.. pos < ls a.. s[pos].isdigit(
             pos += 1
             isNumeric = T..
-        __ pos < ls and s[pos] __ '.':
+        __ pos < ls a.. s[pos] __ '.':
             pos += 1
-            w.. pos < ls and s[pos].isdigit(
+            w.. pos < ls a.. s[pos].isdigit(
                 pos += 1
                 isNumeric = T..
-        ____ pos < ls and s[pos] __ 'e' and isNumeric:
+        ____ pos < ls a.. s[pos] __ 'e' a.. isNumeric:
             isNumeric = F..
             pos += 1
-            __ pos < ls and (s[pos] __ '+' or s[pos] __ '-'
+            __ pos < ls a.. (s[pos] __ '+' or s[pos] __ '-'
                 pos += 1
-            w.. pos < ls and s[pos].isdigit(
+            w.. pos < ls a.. s[pos].isdigit(
                 pos += 1
                 isNumeric = T..
         print pos, ls, isNumeric
-        __ pos __ ls and isNumeric:
+        __ pos __ ls a.. isNumeric:
             r_ T..
         r_ F..

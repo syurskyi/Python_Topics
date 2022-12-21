@@ -116,7 +116,7 @@ c.. Trie o..
         ___ j __ self.root:
             __ word[0] __ j:
                 rootWord = j
-                break
+                ______
         ____
 
             rootWord = TrieNode(word[0])
@@ -133,17 +133,17 @@ c.. Trie o..
         _____ 1:
             __ n.. word:
                 rootWord.setBreakable(True)
-                break
+                ______
                 
             ___ i __ rootWord.nextNodes:
                 __ i __ word[0]:
                     rootWord = i
                     word = word[1:]
-                    break
+                    ______
             ____
                 ___ i __ word:
                     nextNode = TrieNode(i)
                     rootWord.addNext(nextNode)
                     rootWord = nextNode
                 rootWord.setBreakable(True)
-                break
+                ______

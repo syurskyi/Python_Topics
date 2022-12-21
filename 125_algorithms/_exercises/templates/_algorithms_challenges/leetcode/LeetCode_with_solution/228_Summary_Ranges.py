@@ -27,7 +27,7 @@ c_ Solution o..
         res =    # list
         start, ls = 0, l.. nums)
         ___ i __ r.. ls
-            __ i + 1 <  ls and nums[i + 1] __ nums[i] + 1:
+            __ i + 1 <  ls a.. nums[i + 1] __ nums[i] + 1:
                 c_
             __ i __ start:
                 res.append(s..(nums[start]))

@@ -64,7 +64,7 @@ c.. Solution_2 o..
                 c_
             # Remove one ( or )
             new = s[:i] + s[i+1:]
-            __ new n.. __ self.visited and self.mismatchedCount(new) < count:
+            __ new n.. __ self.visited a.. self.mismatchedCount(new) < count:
                 self.visited.add(new)
                 result.e..(self.dfsRemove(new))
         r_ result
@@ -103,7 +103,7 @@ c.. Solution_3 o..
         # Scan s from left to right to remove mismatched ).
         ___ i, ch __ enumerate(s
             # Remove pre or current ) to make count["("] >= count[")"]
-            __ ch __ ")" and count["("] __ count[")"]:
+            __ ch __ ")" a.. count["("] __ count[")"]:
                 new_possible = s..()
                 _____ possibles:
                     j = 0
@@ -128,7 +128,7 @@ c.. Solution_3 o..
             pos -= 1
             ch = s[pos]
             # Remove post or current ( to make count["("] <= count[")"]
-            __ ch __ "(" and count["("] __ count[")"]:
+            __ ch __ "(" a.. count["("] __ count[")"]:
                 new_possible = s..()
                 _____ possibles:
                     str = possibles.pop()

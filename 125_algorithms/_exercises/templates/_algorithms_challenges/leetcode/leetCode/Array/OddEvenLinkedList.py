@@ -53,7 +53,7 @@ c.. Solution o..
         even = head.next
         even_head = even
         
-        _____ odd.next and even.next:
+        _____ odd.next a.. even.next:
             odd.next = odd.next.next
             even.next = even.next.next
             

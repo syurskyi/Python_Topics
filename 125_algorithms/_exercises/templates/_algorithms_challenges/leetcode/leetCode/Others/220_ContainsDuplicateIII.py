@@ -20,7 +20,7 @@ c.. Solution o..
             bucket_num = val / (t+1)
             # Find out if there is a satisfied candidate or not.
             ___ b __ r..(bucket_num-1, bucket_num+2
-                __ b __ buckets and abs(buckets[b] - nums[i]) <= t:
+                __ b __ buckets a.. abs(buckets[b] - nums[i]) <= t:
                     r_ True
             # update the bucket.
             buckets[bucket_num] = nums[i]

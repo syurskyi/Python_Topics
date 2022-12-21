@@ -10,7 +10,7 @@ c_ Solution o..
         num_col = l.. mat[0])
         col = 0
         flag = 1
-        w.. col < num_col and flag:
+        w.. col < num_col a.. flag:
             ___ i __ r.. num_row
                 __ i __ res:
                     c_
@@ -19,7 +19,7 @@ c_ Solution o..
                     res.append(i)
                 __ l.. res) __ k:
                     flag = 0
-                    break
+                    ______
             col += 1
         __ l.. res) __ k:
             r_ res
@@ -29,5 +29,5 @@ c_ Solution o..
                 c_
             res.append(i)
             __ l.. res) __ k:
-                break
+                ______
         r_ res

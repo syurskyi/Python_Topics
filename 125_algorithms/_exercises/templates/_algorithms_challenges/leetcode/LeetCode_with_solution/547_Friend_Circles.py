@@ -15,7 +15,7 @@ c_ Solution o..
 
     ___ dfs  M, visited, i
         ___ j __ r.. l.. M)):
-            __ M[i][j] __ 1 and visited[j] __ 0:
+            __ M[i][j] __ 1 a.. visited[j] __ 0:
                 visited[j] = 1
                 dfs(M, visited, j)
 

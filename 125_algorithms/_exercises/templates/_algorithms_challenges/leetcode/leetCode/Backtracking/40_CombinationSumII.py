@@ -27,7 +27,7 @@ c.. Solution o..
             __ num > target:
                 r_
             # Here skip the same `adjacent` element to avoid duplicated.
-            __ i > start and candidates[i] __ candidates[i - 1]:
+            __ i > start a.. candidates[i] __ candidates[i - 1]:
                 c_
             self.dfs_search(candidates, i + 1,
                             target - num, path + [num], ans)

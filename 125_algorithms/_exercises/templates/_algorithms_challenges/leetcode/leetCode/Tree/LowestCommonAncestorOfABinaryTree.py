@@ -81,7 +81,7 @@ c.. Solution o..
         __ root.left:
             left = self.lowestCommonAncestor(root.left, p, q)
         
-        __ right and left:
+        __ right a.. left:
             r_ root
         
         __ right:

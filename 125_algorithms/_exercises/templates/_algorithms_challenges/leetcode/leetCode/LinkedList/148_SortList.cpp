@@ -39,7 +39,7 @@ public:
         }
         ListNode *slow=head, *fast=head, *pre_tail= nullptr;
         // Cut the list into two parts
-        _____ (fast != nullptr and fast->next != nullptr){
+        _____ (fast != nullptr a.. fast->next != nullptr){
             pre_tail = slow;
             slow = slow->next;
             fast = fast->next->next;

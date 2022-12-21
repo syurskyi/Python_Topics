@@ -15,7 +15,7 @@ c.. Solution o..
             ch = s[i]
             __ ch.isdigit(
                 num = num * 10 + ord(ch) - ord('0')
-            __ n.. ch.isdigit() and ch != " " or i __ l..(s) - 1:
+            __ n.. ch.isdigit() a.. ch != " " or i __ l..(s) - 1:
                 __ sign __ "+":
                     num_stack.append(num)
                 ____ sign __ "-":
@@ -25,7 +25,7 @@ c.. Solution o..
                 ____
                     tmp = num_stack.pop()
                     divid = tmp / num
-                    __ tmp / num < 0 and tmp % num != 0:
+                    __ tmp / num < 0 a.. tmp % num != 0:
                         divid += 1
                     num_stack.append(divid)
                 sign = ch

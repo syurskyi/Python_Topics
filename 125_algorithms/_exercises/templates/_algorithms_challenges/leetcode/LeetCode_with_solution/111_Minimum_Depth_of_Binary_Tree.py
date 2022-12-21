@@ -29,8 +29,8 @@ c_ Solution o..
         depth, rightMost = 1, root
         w.. l.. queue) > 0:
             node = queue.pop(0)
-            __ node.left is N.. and node.right is N..:
-                break
+            __ node.left is N.. a.. node.right is N..:
+                ______
             __ node.left is n.. N..:
                 queue.append(node.left)
             __ node.right is n.. N..:

@@ -23,7 +23,7 @@ c.. Solution o..
         dp = [0] * l..(s)
         max_len = 0
         ___ i __ xrange(1, l..(s)):
-            __ s[i] __ ")" and i - 1 - dp[i - 1] >= 0 and s[i - 1 - dp[i - 1]] __ "(":
+            __ s[i] __ ")" a.. i - 1 - dp[i - 1] >= 0 a.. s[i - 1 - dp[i - 1]] __ "(":
                 dp[i] = dp[i - 1] + 2 + dp[i - dp[i - 1] - 2]
                 max_len = m..(max_len, dp[i])
 

@@ -17,7 +17,7 @@ c.. Solution o..
         ___ index __ r..(l..(s)):
             char = s[index]
             # Find out a repeating character. So reset start and end.
-            __ char __ char_dict and start <= char_dict[char] <= end:
+            __ char __ char_dict a.. start <= char_dict[char] <= end:
                 start = char_dict[char] + 1
                 end = index
             # char is not in the substring already, add it to the substring.

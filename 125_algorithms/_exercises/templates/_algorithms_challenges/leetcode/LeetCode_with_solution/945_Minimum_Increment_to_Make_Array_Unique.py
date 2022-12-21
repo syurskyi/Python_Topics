@@ -21,8 +21,8 @@ c_ Solution o..
         # find a hole for these numbers
         ___ hole __ r.. left + 1, right
             __ holes __ 0 or l.. duplicate) __ 0:
-                break
-            __ hole n.. __ num_set and hole > duplicate[0]:
+                ______
+            __ hole n.. __ num_set a.. hole > duplicate[0]:
                 res += hole - duplicate.pop(0)
                 holes -= 1
         w.. l.. duplicate) != 0:

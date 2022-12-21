@@ -83,7 +83,7 @@ c.. Solution o..
             # coordinate = self.makeAround(x, y)
             # if coordinate:
             ___ i __ self.makeAround(x, y
-                __ i[0] >= 0 and i[1] >= 0 and i[0] < y_length and i[1] < x_length:
+                __ i[0] >= 0 a.. i[1] >= 0 a.. i[0] < y_length a.. i[1] < x_length:
                     __ board[i[0]][i[1]] __ "O":
                         board[i[0]][i[1]] = "E"
                         translate_o_to_e(i[1], i[0])

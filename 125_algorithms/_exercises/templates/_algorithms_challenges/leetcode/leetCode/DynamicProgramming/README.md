@@ -56,15 +56,20 @@
 动态规划是通过拆分问题，定义问题状态和状态之间的关系，使得问题能够以递推（或者说分治）的方式去解决。
 
 设计动态规划算法的核心就是找到一个合适的状态转移方程，使我们能够从一个已知的初始状态经过状态转移方程到达目标状态。
-1. 分析求解问题的性质，定义问题在某一时刻的状态；2. 找到状态转移方程；
-3. 确定初始状态；动态规划算法的设计步骤：
+
+1. 分析求解问题的性质，定义问题在某一时刻的状态；
+2. 找到状态转移方程；
+3. 确定初始状态；
+
+动态规划算法的设计步骤：
 
 * 刻画最优解的结构特征（寻找最优子结构）
 * 递归地定义最优解的值（确定状态转移方程）
 * 计算最优解的值（有两种方法：带备忘录自顶向下法、自底向上法）
 * 利用计算出的信息构造一个最优解（通常是将具体的最优解输出）
 
-
+
+
 # 实现：程序的细节
 
 动态规划实现通常可以采用以下两种策略：
@@ -109,6 +114,6 @@
 [fibonacci数列为什么那么重要](https://www.zhihu.com/question/28062458)   
 [Dynamic Programming：From Novice to Advanced](https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/)  
 [什么是动态规划？动态规划的意义是什么？](https://www.zhihu.com/question/23995189/answer/35429905)   
-[动态规划与状态机：最大子序列和问题的扩展](http://liam0205.me/2016/05/13/dynamic-programming-and-state-machine/)  
+[动态规划与状态机：最大子序列和问题的扩展](http://liam0205.me/2016/05/13/dynamic-programming-a..-state-machine/)  
 [hiho一下第113周《Fibonacci》题目分析](http://hihocoder.com/discuss/question/3634)  
 

@@ -11,7 +11,7 @@ c.. Solution o..
         ___ i __ r..(m + n, l..(nums1)):
             nums1[i] = 0
 
-        _____ nums1_left < m + n and nums2_left < n:
+        _____ nums1_left < m + n a.. nums2_left < n:
             # All the number in nums1 is in the suitable position
             __ n.. m or nums1_left __ m + nums2_left:
                 nums1[nums1_left] = nums2[nums2_left]

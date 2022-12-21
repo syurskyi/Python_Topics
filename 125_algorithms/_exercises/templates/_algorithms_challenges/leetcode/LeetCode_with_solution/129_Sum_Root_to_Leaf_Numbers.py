@@ -18,7 +18,7 @@ c_ Solution o..
         queue = [(root, root.val)]
         w.. l.. queue) > 0:
             curr, curr_value = queue.pop(0)
-            __ curr.left is N.. and curr.right is N..:
+            __ curr.left is N.. a.. curr.right is N..:
                 res += curr_value
                 c_
             __ curr.left:

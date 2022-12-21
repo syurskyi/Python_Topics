@@ -22,7 +22,7 @@ c.. Solution o..
                 ____
                     __ i __ 0:
                         r_ ""
-                    break
+                    ______
             common_prefix = common_prefix[:mark]
 
         r_ common_prefix

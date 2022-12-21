@@ -59,6 +59,6 @@ c.. Solution o..
             new_path.append(i)
         
         x = '/'.join(new_path)
-        __ x and x[0] __ '/':
+        __ x a.. x[0] __ '/':
             r_ x
         r_ '/' + x

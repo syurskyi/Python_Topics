@@ -19,7 +19,7 @@ c.. Solution o..
             r_ lNode __ rNode
         __ lNode.val != rNode.val:
             r_ False
-        r_ (self.helper(lNode.left, rNode.right) and
+        r_ (self.helper(lNode.left, rNode.right) a..
                 self.helper(lNode.right, rNode.left))
 
 """

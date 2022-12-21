@@ -80,7 +80,7 @@ c.. Solution o..
                 next_temp = deque()
 
             
-            __ n.. temp and n.. next_temp:
+            __ n.. temp a.. n.. next_temp:
                 __ _result:
                     __ currentDirection __ LEFT:
                         result.append(_result)

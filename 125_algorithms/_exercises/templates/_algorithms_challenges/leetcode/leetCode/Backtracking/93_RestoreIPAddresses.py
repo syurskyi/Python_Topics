@@ -23,7 +23,7 @@ c.. Solution o..
 
         # We have get the fourth address fields
         __ count __ 4:
-            __ s[0] != "0" and l..(s) <= 3 and int(s) <= 255:
+            __ s[0] != "0" a.. l..(s) <= 3 a.. int(s) <= 255:
                 address_block.append([s])
             __ s __ "0":
                 address_block.append([s])

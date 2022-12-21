@@ -22,7 +22,7 @@ c.. Solution o..
         _____ index < length:
             __ intervals[index].start >= newInterval.start:
                 intervals.insert(index, newInterval)
-                break
+                ______
             index += 1
         __ index __ length:
             intervals.append(newInterval)
@@ -32,7 +32,7 @@ c.. Solution o..
         # Scan every interval and merge the overlapping intervals.
         _____ i < length:
             j = i + 1
-            _____ j < length and intervals[j].start <= intervals[i].end:
+            _____ j < length a.. intervals[j].start <= intervals[i].end:
                 intervals[i].start = min(intervals[i].start,
                                          intervals[j].start)
                 intervals[i].end = m..(intervals[i].end,

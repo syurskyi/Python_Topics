@@ -22,7 +22,7 @@ c.. Solution o..
     ___ twoConsecutive  stack
         __ l..(stack) < 3:
             r_ False
-        r_ stack[-1] __ stack[-2] __ "#" and stack[-3] != "#"
+        r_ stack[-1] __ stack[-2] __ "#" a.. stack[-3] != "#"
 
 
 c.. Solution_2 o..

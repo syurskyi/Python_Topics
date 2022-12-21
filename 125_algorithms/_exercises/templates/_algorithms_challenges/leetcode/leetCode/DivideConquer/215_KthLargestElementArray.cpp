@@ -38,7 +38,7 @@ public:
             int pos = partition(arr, begin, end);
             __(pos __ k-1){
                 target_num = arr[pos];
-                break;
+                ______;
             }
             else __(pos > k-1){
                 end = pos;

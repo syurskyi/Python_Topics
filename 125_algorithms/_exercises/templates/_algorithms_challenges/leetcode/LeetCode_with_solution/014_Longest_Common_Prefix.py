@@ -16,19 +16,19 @@ c_ Solution o..
             try:
                 current = strs[0][pos]
             except IndexError:
-                break
+                ______
             index = 1
             w.. index < ls:
                 try:
                     __ strs[index][pos] != current:
-                        break
+                        ______
                 except IndexError:
-                    break
+                    ______
                 index += 1
             __ index __ ls:
                 prefix = prefix + current
             ____
-                break
+                ______
             pos += 1
         r_ prefix
 

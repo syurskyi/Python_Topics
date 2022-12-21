@@ -26,7 +26,7 @@ c.. Solution o..
         max_len, max_pos = 1, 0
         ___ i __ xrange(1, length
             ___ j __ xrange(i - 1, -1, -1
-                __ nums[i] % nums[j] __ 0 and dp[i] < dp[j] + 1:
+                __ nums[i] % nums[j] __ 0 a.. dp[i] < dp[j] + 1:
                     dp[i] = dp[j] + 1
                     pre_num[i] = j
                     max_pos = i __ max_len < dp[i] else max_pos

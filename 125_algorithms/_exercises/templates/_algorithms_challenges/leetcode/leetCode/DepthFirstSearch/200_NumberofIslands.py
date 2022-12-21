@@ -24,16 +24,16 @@ c.. Solution o..
     # Merge all the adjacent islands to one island.
     ___ merge_surround  i, j
         __ self.grid[i][j] __ "1" or self.grid[i][j] __ "#":
-            __ i+1 < self.m_rows and self.grid[i+1][j] __ "1":
+            __ i+1 < self.m_rows a.. self.grid[i+1][j] __ "1":
                 self.grid[i+1][j] = "#"
                 self.merge_surround(i+1, j)
-            __ j+1 < self.n_cols and self.grid[i][j+1] __ "1":
+            __ j+1 < self.n_cols a.. self.grid[i][j+1] __ "1":
                 self.grid[i][j+1] = "#"
                 self.merge_surround(i, j+1)
-            __ i-1 >= 0 and self.grid[i-1][j] __ "1":
+            __ i-1 >= 0 a.. self.grid[i-1][j] __ "1":
                 self.grid[i-1][j] = "#"
                 self.merge_surround(i-1, j)
-            __ j-1 >= 0 and self.grid[i][j-1] __ "1":
+            __ j-1 >= 0 a.. self.grid[i][j-1] __ "1":
                 self.grid[i][j-1] = "#"
                 self.merge_surround(i, j-1)
         r_

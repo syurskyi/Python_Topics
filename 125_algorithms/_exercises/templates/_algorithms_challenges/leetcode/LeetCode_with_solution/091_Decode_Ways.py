@@ -9,7 +9,7 @@ c_ Solution o..
             r_ 0
         dp = [0] * ls
         ___ index __ r.. ls
-            __ index >= 1 and i..(s[index - 1:index + 1]) < 27 and i..(s[index - 1:index + 1]) >= 10:
+            __ index >= 1 a.. i..(s[index - 1:index + 1]) < 27 a.. i..(s[index - 1:index + 1]) >= 10:
                 __ index __ 1:
                     dp[index] = 1
                 ____

@@ -141,7 +141,7 @@ c.. Solution o..
         
         ___ helper(root
             myValue = root.val
-            __ n.. root.left and n.. root.right:
+            __ n.. root.left a.. n.. root.right:
                 self.maxes = myValue __ myValue > self.maxes else self.maxes
                 r_ myValue
             

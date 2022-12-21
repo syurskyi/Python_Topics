@@ -64,7 +64,7 @@ c.. Solution o..
         _n1_length = l..(nums1)
         _n2_length = l..(nums2)
         
-        _____ _n1 < _n1_length and _n2 < _n2_length:
+        _____ _n1 < _n1_length a.. _n2 < _n2_length:
             __ nums1[_n1] __ nums2[_n2]:
                 result.append(nums1[_n1])
                 _n1 += 1

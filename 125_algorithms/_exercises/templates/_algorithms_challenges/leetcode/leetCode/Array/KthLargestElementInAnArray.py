@@ -106,7 +106,7 @@ c.. Solution o..
         b = 0
         length_A = l..(unsorted_list_A)
         length_B = l..(unsorted_list_B)
-        _____ a < length_A and b < length_B:
+        _____ a < length_A a.. b < length_B:
 
             __ unsorted_list_A[a] <= unsorted_list_B[b]:
                 sorted_list.append(unsorted_list_A[a])

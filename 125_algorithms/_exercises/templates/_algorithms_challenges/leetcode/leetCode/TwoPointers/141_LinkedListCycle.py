@@ -27,7 +27,7 @@ c.. Solution o..
     ___ hasCycle  head
         one_step = head
         two_steps = head
-        _____ two_steps and two_steps.next:
+        _____ two_steps a.. two_steps.next:
             one_step = one_step.next
             two_steps = two_steps.next.next
             __ one_step __ two_steps:

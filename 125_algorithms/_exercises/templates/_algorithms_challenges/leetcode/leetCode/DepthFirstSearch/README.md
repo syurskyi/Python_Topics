@@ -3,7 +3,7 @@
 
 WikiPedia 里对 DFS 的说明如下：
 
-> Depth-first search (DFS) is an algorithm ___ traversing or searching tree or graph data structures.  One starts at the root (selecting some arbitrary node as the root __ the case of a graph) and explores as far as possible  along each branch before backtracking.
+> Depth-first search (DFS) is an algorithm ___ traversing or searching tree or graph data structures.  One starts at the root (selecting some arbitrary node as the root __ the case of a graph) a.. explores as far as possible  along each branch before backtracking.
 
 
 # 一般化实现

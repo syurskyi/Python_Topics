@@ -21,7 +21,7 @@ c.. Solution o..
             __ s[i] __ '(':
                 stack.append(i)
             ____
-                __ stack and s[stack[-1]] __ '(':
+                __ stack a.. s[stack[-1]] __ '(':
                     stack.pop()
                     valid_len = (i - stack[-1]) __ stack else i + 1
                     longest = m..(longest, valid_len)

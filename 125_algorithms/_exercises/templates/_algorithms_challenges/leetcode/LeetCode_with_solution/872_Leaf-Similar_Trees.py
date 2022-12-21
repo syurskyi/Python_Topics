@@ -12,7 +12,7 @@ c_ Solution o..
         :type root2: TreeNode
         :rtype: bool
         """
-        __ n.. root1 and n.. root2:
+        __ n.. root1 a.. n.. root2:
             r_ T..
         leaf1 =    # list
         leaf2 =    # list
@@ -25,7 +25,7 @@ c_ Solution o..
     ___ dfs  node, leavels
         __ n.. node:
             r_
-        __ n.. node.left and n.. node.right:
+        __ n.. node.left a.. n.. node.right:
             leavels.append(node.val)
         dfs(node.left, leavels)
         dfs(node.right, leavels)

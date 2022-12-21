@@ -10,12 +10,12 @@ c_ Solution o..
         ___ i __ r.. ls
             # odd length
             pos = 0
-            w.. i - pos >= 0 and i + pos < ls and s[i - pos] __ s[i + pos]:
+            w.. i - pos >= 0 a.. i + pos < ls a.. s[i - pos] __ s[i + pos]:
                 cut[i + pos + 1] = min(cut[i + pos + 1], 1 + cut[i - pos])
                 pos += 1
             # even length
             pos = 1
-            w.. i - pos + 1 >= 0 and i + pos < ls and s[i - pos + 1] __ s[i + pos]:
+            w.. i - pos + 1 >= 0 a.. i + pos < ls a.. s[i - pos + 1] __ s[i + pos]:
                 cut[i + pos + 1] = min(cut[i + pos + 1], 1 + cut[i - pos + 1])
                 pos += 1
         r_ cut[ls]

@@ -8,7 +8,7 @@ c.. Solution o..
         ___ row __ board:
             row_hash _ # dict
             ___ c __ row:
-                __ c != "." and c __ row_hash:
+                __ c != "." a.. c __ row_hash:
                     r_ False
                 row_hash[c] = 1
 
@@ -16,7 +16,7 @@ c.. Solution o..
         ___ i __ r..(9
             col_hash _ # dict
             ___ row __ board:
-                __ row[i] != "." and row[i] __ col_hash:
+                __ row[i] != "." a.. row[i] __ col_hash:
                     r_ False
                 col_hash[row[i]] = 1
 
@@ -28,7 +28,7 @@ c.. Solution o..
                 _____(count < 9
                     c = board[i + count // 3][j + count % 3]
                     count += 1
-                    __ c != "." and c __ panel_hash:
+                    __ c != "." a.. c __ panel_hash:
                         r_ False
                     panel_hash[c] = 1
 

@@ -17,7 +17,7 @@ c.. Solution_2 o..
             nums1_dict[n] = nums1_dict.get(n, 0) + 1
 
         ___ n __ nums2:
-            __ n __ nums1_dict and nums1_dict[n] != -1:
+            __ n __ nums1_dict a.. nums1_dict[n] != -1:
                 ans.append(n)
                 nums1_dict[n] = -1
         r_ ans
@@ -30,7 +30,7 @@ c.. Solution_3 o..
         nums1.sort()
         nums2.sort()
         i = j = 0
-        _____ (i < l..(nums1) and j < l..(nums2)):
+        _____ (i < l..(nums1) a.. j < l..(nums2)):
             __ nums1[i] > nums2[j]:
                 j += 1
             ____ nums1[i] < nums2[j]:

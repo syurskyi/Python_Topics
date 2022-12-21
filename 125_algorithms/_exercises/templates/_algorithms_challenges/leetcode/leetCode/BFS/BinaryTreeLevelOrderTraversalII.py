@@ -63,7 +63,7 @@ c.. Solution o..
                 temp = next_temp
                 next_temp = deque()
             
-            __ n.. temp and n.. next_temp:
+            __ n.. temp a.. n.. next_temp:
                 __ _result:
                     result.append(_result)
                 r_ result[::-1]

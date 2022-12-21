@@ -48,7 +48,7 @@ c.. Solution o..
         
         ___ helper(prev, root, s.., path
             __ prev + root.val __ s..:
-                __ n.. root.left and n.. root.right:
+                __ n.. root.left a.. n.. root.right:
                     result.append(list(map(int, path.split(' ')[1:]))+[root.val])
                     r_ True
                 

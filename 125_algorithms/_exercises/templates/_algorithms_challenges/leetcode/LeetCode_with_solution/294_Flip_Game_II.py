@@ -20,7 +20,7 @@ c_ Solution o..
 
     ___ canWin_helper  s
         ___ i __ r.. l.. s) - 1
-            __ s[i] __ '+' and s[i + 1] __ '+':
+            __ s[i] __ '+' a.. s[i + 1] __ '+':
                 s[i] = '-'
                 s[i + 1] = '-'
                 res = canWin_helper(s)

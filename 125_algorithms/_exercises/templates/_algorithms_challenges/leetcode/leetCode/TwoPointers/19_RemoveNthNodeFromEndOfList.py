@@ -17,7 +17,7 @@ c.. Solution o..
             first = first.next
             steps += 1
             __ steps __ n + 1:
-                break
+                ______
 
         # the node to be removed is the head node.
         __ steps < n + 1:

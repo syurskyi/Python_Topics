@@ -16,6 +16,6 @@ c_ Solution o..
                 pos = nums[index] - 1
                 nums[index], nums[pos] = nums[pos], nums[index]
         res = 0
-        w.. res < ls and nums[res] __ res + 1:
+        w.. res < ls a.. nums[res] __ res + 1:
             res += 1
         r_ res + 1

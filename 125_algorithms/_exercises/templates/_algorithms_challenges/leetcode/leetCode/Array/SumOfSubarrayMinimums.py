@@ -131,7 +131,7 @@ c.. Solution o..
                     base += _left[-1][1]
                     _left.pop()
                 ____
-                    break
+                    ______
 
             _left.append((i, base))
             left.append(base)
@@ -143,7 +143,7 @@ c.. Solution o..
                     base += _right[-1][1]
                     _right.pop()
                 ____
-                    break
+                    ______
 
             _right.append((i, base))
             right.append(base)

@@ -19,7 +19,7 @@ c_ Solution o..
 
     ___ validPalindromeHelper  s, left, right, budget
         # Note that budget can be more than 1
-        w.. left < l.. s) and right >= 0 and left <= right and s[left] __ s[right]:
+        w.. left < l.. s) a.. right >= 0 a.. left <= right a.. s[left] __ s[right]:
             left += 1
             right -= 1
         __ left >= l.. s) or right < 0 or left >= right:

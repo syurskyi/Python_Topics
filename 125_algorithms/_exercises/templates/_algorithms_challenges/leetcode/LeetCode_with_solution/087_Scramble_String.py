@@ -39,9 +39,9 @@ c_ Solution o..
             r_ memo[s1, s2]
         n = l.. s1)
         ___ i __ r.. 1, n
-            a = isScramble(s1[:i], s2[:i], memo) and isScramble(s1[i:], s2[i:], memo)
+            a = isScramble(s1[:i], s2[:i], memo) a.. isScramble(s1[i:], s2[i:], memo)
             __ n.. a:
-                b = isScramble(s1[:i], s2[-i:], memo) and isScramble(s1[i:], s2[:-i], memo)
+                b = isScramble(s1[:i], s2[-i:], memo) a.. isScramble(s1[i:], s2[:-i], memo)
             __ a or b:
                 memo[s1, s2] = T..
                 r_ T..

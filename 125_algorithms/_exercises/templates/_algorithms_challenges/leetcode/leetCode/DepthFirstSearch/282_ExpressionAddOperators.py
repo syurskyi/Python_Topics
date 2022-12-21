@@ -28,8 +28,8 @@ c.. Solution o..
         ___ i __ r..(pos + 1, l..(num) + 1
             cur_str, cur_n = num[pos: i], int(num[pos: i])
             # Digit can not begin with 0 (01, 00, 02 are not valid), except 0 itself.
-            __ i > pos + 1 and num[pos] __ '0':
-                break
+            __ i > pos + 1 a.. num[pos] __ '0':
+                ______
             __ pos __ 0:
                 self.dfs_search(ans, path + cur_str, num, target, i, cur_n, cur_n)
             # All three different binary operators: +, -, *

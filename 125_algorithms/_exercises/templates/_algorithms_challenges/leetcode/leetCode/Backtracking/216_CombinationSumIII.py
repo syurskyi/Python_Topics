@@ -30,7 +30,7 @@ c.. Solution o..
                 self._combination_sum(k - 1, n, nums)
                 del nums[-1]    # Backtracking
             ____
-                break
+                ______
 
 """
 0

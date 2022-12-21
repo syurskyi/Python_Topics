@@ -30,18 +30,18 @@ c.. Solution o..
             __ s1[i-1] __ s3[i-1]:
                 dp[i][0] = True
             ____
-                break
+                ______
 
         ___ j __ xrange(1, s2_l+1
             __ s2[j-1] __ s3[j-1]:
                 dp[0][j] = True
             ____
-                break
+                ______
 
         ___ i __ xrange(1, s1_l+1
             ___ j __ xrange(1, s2_l+1
-                __ (s1[i-1] __ s3[i+j-1] and dp[i-1][j] or
-                        s2[j-1] __ s3[i+j-1] and dp[i][j-1]
+                __ (s1[i-1] __ s3[i+j-1] a.. dp[i-1][j] or
+                        s2[j-1] __ s3[i+j-1] a.. dp[i][j-1]
                     dp[i][j] = True
 
         r_ dp[s1_l][s2_l]

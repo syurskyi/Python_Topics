@@ -23,7 +23,7 @@ c.. Solution o..
         patch_cnt = 0
         length = l..(nums)
         _____ miss_num <= n:
-            __ index < length and nums[index] <= miss_num:
+            __ index < length a.. nums[index] <= miss_num:
                 miss_num += nums[index]
                 index += 1
             ____

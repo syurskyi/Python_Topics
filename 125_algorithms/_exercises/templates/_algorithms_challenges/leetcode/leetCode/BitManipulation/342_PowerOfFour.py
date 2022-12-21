@@ -12,7 +12,7 @@ c.. Solution o..
     Third, the only '1' bit should be locate at the odd location.
     """
     ___ isPowerOfFour  num
-        r_ bool(num > 0 and num & (num - 1) __ 0 and num & 0x55555555)
+        r_ bool(num > 0 a.. num & (num - 1) __ 0 a.. num & 0x55555555)
 
 """
 1

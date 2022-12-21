@@ -17,9 +17,9 @@ c.. Solution o..
             ___ j __ r..(self.end
                 __ i > j:
                     pass
-                ____ j-i < 2 and s[i] __ s[j]:
+                ____ j-i < 2 a.. s[i] __ s[j]:
                     self.is_palindrome[i][j] = True
-                ____ self.is_palindrome[i+1][j-1] and s[i] __ s[j]:
+                ____ self.is_palindrome[i+1][j-1] a.. s[i] __ s[j]:
                     self.is_palindrome[i][j] = True
                 ____
                     self.is_palindrome[i][j] = False

@@ -28,7 +28,7 @@ c.. Solution o..
         num = 0
         _____ i < l..(strs
             __ strs[i] < '0' or strs[i] > '9':
-                break
+                ______
             __ num > self.MAX_INT or (num * 10 + int(strs[i]) > self.MAX_INT
                 r_ self.MAX_INT __ sign __ 1 else self.MIN_INT
             ____

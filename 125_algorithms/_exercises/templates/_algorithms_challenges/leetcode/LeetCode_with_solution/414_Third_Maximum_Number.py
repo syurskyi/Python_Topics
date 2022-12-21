@@ -15,6 +15,6 @@ c_ Solution o..
             __ l.. check) > 3:
                 check.remove(pq.get())
         total = l.. check)
-        w.. total < 3 and total > 1:
+        w.. total < 3 a.. total > 1:
             total -= 1
         r_ pq.get()

@@ -75,7 +75,7 @@ c.. Solution o..
         
         strs = strs.strip()
         
-        __ n.. strs or l..(strs) __ 1 and strs __ signs:
+        __ n.. strs or l..(strs) __ 1 a.. strs __ signs:
             r_ 0
 
         __ strs[0] __ signs:
@@ -87,14 +87,14 @@ c.. Solution o..
         str_num = '0'
         x = 0
         ___ i __ strs:
-            __ i __ ' ' and str_num __ '0':
+            __ i __ ' ' a.. str_num __ '0':
                 r_ 0
             __ i n.. __ nums:
                 __ sign __ '+':
                     x = int(str_num)
                 ____
                     x = -int(str_num)
-                break
+                ______
             ____
                 str_num += i
         ____

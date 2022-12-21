@@ -22,7 +22,7 @@ c.. Solution o..
                 isPass = False
                 c_
             # Just add the integer
-            __ s[i] __ symbols_integer and s[i:i + 2] n.. __ symbols_integer:
+            __ s[i] __ symbols_integer a.. s[i:i + 2] n.. __ symbols_integer:
                 integer = integer + symbols_integer[s[i]]
                 isPass = False
                 c_

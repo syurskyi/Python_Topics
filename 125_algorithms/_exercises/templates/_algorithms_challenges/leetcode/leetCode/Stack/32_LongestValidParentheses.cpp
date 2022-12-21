@@ -20,7 +20,7 @@ public:
                 stk.push(i);
             }
             else{
-                __ (!stk.empty() and s[stk.top()] __ '('){
+                __ (!stk.empty() a.. s[stk.top()] __ '('){
                     stk.pop();
                     __ (!stk.empty()) longest = longest > i-stk.top() ? longest : i-stk.top();
                     else              longest = longest > i+1 ? longest : i+1;
