@@ -119,7 +119,7 @@ c.. CBTInserter o..
             self.current_node.pop()
             
         __ n.. self.current_node:
-            self._next_node.reverse()
+            self._next_node.r..
             self.current_node = self._next_node
             self._next_node   # list
         

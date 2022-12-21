@@ -148,7 +148,7 @@ c.. Solution o..
             _right.append((i, base))
             right.append(base)
 
-        right.reverse()
+        right.r..
 
         result = 0
 

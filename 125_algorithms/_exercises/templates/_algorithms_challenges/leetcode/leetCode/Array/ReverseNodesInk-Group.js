@@ -47,7 +47,7 @@ var reverseKGroup = function(head, k) {
         // 最后一个节点是翻转前的第一个节点
         let lastNode = nodes[0]
 
-        let rNodes = nodes.reverse()
+        let rNodes = nodes.r..
         // 翻转后的头节点是翻转后的最后一个节点。
         let first = rNodes[0]
         let indexF = first

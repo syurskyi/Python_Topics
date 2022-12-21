@@ -20,7 +20,7 @@ c.. Solution o..
             r_
         n = l..(nums)
         k = k % n
-        nums.reverse()
+        nums.r..
         self.reverse_part(nums, 0, k-1)
         self.reverse_part(nums, k, n-1)
 

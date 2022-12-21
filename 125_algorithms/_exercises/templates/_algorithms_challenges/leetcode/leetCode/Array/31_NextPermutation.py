@@ -4,8 +4,8 @@
 
 c.. Solution o..
     ___ nextPermutation  nums
-        length = l..(nums)
-        index = length - 1
+        length _ l.. ?
+        index = ? - 1
 
         """
         Scan from the end of nums and get nums[index],
@@ -13,18 +13,18 @@ c.. Solution o..
         then swap the smallest number in nums[mark:] and nums[mark - 1].
         Finally sort nums[mark:] and we will slove the problem.
         """
-        _____ index >= 1:
-            __ nums[index] > nums[index - 1]:
-                ___ i __ r..(length - 1, index - 1, -1
-                    __ nums[i] > nums[index - 1]:
-                        nums[i], nums[index - 1] = nums[index - 1], nums[i]
-                        nums[index:] = s..(nums[index:])
+        _____ i.. >_ 1
+            __ ?|? > ?|? - 1
+                ___ i __ r.. l.. - 1, ? - 1, -1
+                    __ ? ? > ?|? - 1
+                        ? ?, ?|? - 1] _ ?|? - 1 , ? ?
+                        ?|?| = s.. ?|?|
                         r_
             ____
-                index -= 1
+                ? -_ 1
 
         # Nums is in descending order, just reverse it.
-        nums.reverse()
+        ?.r..
 
 """
 []

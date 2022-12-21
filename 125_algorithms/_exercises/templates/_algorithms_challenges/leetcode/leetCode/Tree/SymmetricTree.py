@@ -68,7 +68,7 @@ c.. Solution o..
                 left_node.append(_left.right)
                 left_node.append(_left.left)
         
-        left_node_value.reverse()
+        left_node_value.r..
         
         _____ right_node:
             _right = right_node.pop()

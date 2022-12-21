@@ -72,7 +72,7 @@ c.. Solution o..
                     result.append(_result)
                     currentDirection = RIGHT
                 ____
-                    _result.reverse()
+                    _result.r..
                     result.append(_result)
                     currentDirection = LEFT
                 _result   # list
@@ -86,7 +86,7 @@ c.. Solution o..
                         result.append(_result)
                         currentDirection = RIGHT
                     ____
-                        _result.reverse()
+                        _result.r..
                         result.append(_result)
 
                 r_ result

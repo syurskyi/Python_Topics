@@ -68,8 +68,8 @@ c.. Solution o..
         smaller = [i ___ i __ nums[:l..(nums)//2] __ i != middle]
         equal = [i ___ i __ nums __ i __ middle]
         
-        larger.reverse()
-        smaller.reverse()
+        larger.r..
+        smaller.r..
         length = l..(nums)
         odd = 1
         even = length - 1 __ (length-1) % 2 __ 0 else length - 2

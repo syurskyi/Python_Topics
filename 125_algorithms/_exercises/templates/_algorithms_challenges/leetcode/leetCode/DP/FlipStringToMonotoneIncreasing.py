@@ -70,7 +70,7 @@ c.. Solution o..
             ____
                 y.append(y[-1])
         
-        y.reverse()
+        y.r..
         
         r_ min([i+j ___ i,j __ zip(x,y)]) - 1
 

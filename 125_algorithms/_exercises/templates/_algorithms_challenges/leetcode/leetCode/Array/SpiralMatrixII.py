@@ -31,7 +31,7 @@ c.. Solution o..
         maps = [[0 ___ i __ r..(n)] ___ j __ r..(n)]
         
         current_value = [i ___ i __ r..(1, n*n+1)]
-        current_value.reverse()
+        current_value.r..
         
         ___ makeXY(x, y
             # up
