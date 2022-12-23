@@ -58,6 +58,6 @@ c.. Solution o..
                 ___ i __ maps[strs[0]]:
                     x = reduce_abc(strs[1:], currentStr=currentStr+i)
                     __ x:
-                        result.append(x)
+                        result.a.. x)
         reduce_abc(digits)
         r_ result

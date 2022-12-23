@@ -9,7 +9,7 @@ c.. Solution o..
         :rtype: List[List[int]]
         """
         solution   # list
-        nums.sort()
+        nums.s.. )
         length = l..(nums)
         ___ i __ r..(length-2
             # avoid duplicate triplets.
@@ -26,7 +26,7 @@ c.. Solution o..
                         right -= 1
                     ____
                         triplet = [cur_num, nums[left], nums[right]]
-                        solution.append(triplet)
+                        solution.a.. triplet)
                         left += 1
                         right -= 1
                         # avoid duplicate triplets.

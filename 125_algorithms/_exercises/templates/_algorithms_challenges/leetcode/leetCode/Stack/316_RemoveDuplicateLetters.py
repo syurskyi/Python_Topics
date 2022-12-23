@@ -62,7 +62,7 @@ c.. Solution_2 o..
                 used[res[-1]] = False
                 res.pop()
 
-            res.append(c)
+            res.a.. c)
             used[c] = True
         r_ "".join(res)
 

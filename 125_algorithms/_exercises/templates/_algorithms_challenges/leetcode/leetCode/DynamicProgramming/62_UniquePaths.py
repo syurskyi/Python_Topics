@@ -25,7 +25,7 @@ c.. Solution_2 o..
         reduce the numerator and denominator and get
         C = ( (n - k + 1) * (n - k + 2) * ... * n ) / k!
         """
-        N, K = m + n - 2, min(n, m) - 1
+        N, K = m + n - 2, m.. n, m) - 1
         path_cnts = 1
         ___ i __ xrange(1, K + 1
             path_cnts = path_cnts * (N - K + i) / i

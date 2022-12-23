@@ -12,7 +12,7 @@ c.. Solution o..
         address_list   # list
         ___ address __ address_block_list:
             __ l..(address) __ 4:
-                address_list.append(".".join(address))
+                address_list.a.. ".".join(address))
         r_ address_list
 
     ___ restoreAddress  s, count
@@ -24,9 +24,9 @@ c.. Solution o..
         # We have get the fourth address fields
         __ count __ 4:
             __ s[0] != "0" a.. l..(s) <= 3 a.. int(s) <= 255:
-                address_block.append([s])
+                address_block.a.. [s])
             __ s __ "0":
-                address_block.append([s])
+                address_block.a.. [s])
             r_ address_block
 
         # Current field is '0'
@@ -36,7 +36,7 @@ c.. Solution o..
                 cur_address = ['0']
                 cur_address.e..(block)
                 __ l..(cur_address) __ 5 - count:
-                    address_block.append(cur_address)
+                    address_block.a.. cur_address)
             r_ address_block
 
         # Current address field is made by i numbers.
@@ -48,7 +48,7 @@ c.. Solution o..
                 cur_address = [s[:i]]
                 cur_address.e..(block)
                 __ l..(cur_address) __ 5 - count:
-                    address_block.append(cur_address)
+                    address_block.a.. cur_address)
         r_ address_block
 
 """

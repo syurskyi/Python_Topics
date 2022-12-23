@@ -35,10 +35,10 @@ c_ Solution o..
             record =    # list
             ___ node __ level:
                 __ node.left:
-                    record.append(node.left)
+                    record.a.. node.left)
                 __ node.right:
-                    record.append(node.right)
+                    record.a.. node.right)
             __ record:
-                q.append(record)
+                q.a.. record)
         r_ [[x.val ___ x __ level] ___ level __ q]
 

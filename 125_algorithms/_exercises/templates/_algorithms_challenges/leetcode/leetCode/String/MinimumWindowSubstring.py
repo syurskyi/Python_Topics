@@ -86,7 +86,7 @@ c.. Solution o..
         ___ i, d __ enumerate(s
             __ d __ b:
                 try:
-                    x[d].append(i)
+                    x[d].a.. i)
                 except:
                     x[d] = deque([i], maxlen=b[d])
                 
@@ -101,7 +101,7 @@ c.. Solution o..
             
                         mins = s[min((q[0] ___ q __ values)):m..((q[-1] ___ q __ values))+1]
                     ____
-                        mins = min(mins, s[min((q[0] ___ q __ values)):m..((q[-1] ___ q __ values))+1], key=l..)
+                        mins = m.. mins, s[min((q[0] ___ q __ values)):m..((q[-1] ___ q __ values))+1], key=l..)
 
         __ a:
             r_ ""

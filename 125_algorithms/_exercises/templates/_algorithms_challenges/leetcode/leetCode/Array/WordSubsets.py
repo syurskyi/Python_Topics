@@ -81,6 +81,6 @@ c.. Solution o..
                 __ dict_B[j] > dict_A[i].get(j
                     ______
             ____
-                result.append(i)
+                result.a.. i)
                     
         r_ result

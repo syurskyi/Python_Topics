@@ -20,13 +20,13 @@ c.. Solution o..
 
         adj = [[] ___ i __ xrange(n)]
         ___ i, j __ edges:
-            adj[i].append(j)
-            adj[j].append(i)
+            adj[i].a.. j)
+            adj[j].a.. i)
 
         leaves   # list
         ___ i __ xrange(n
             __ l..(adj[i]) __ 1:
-                leaves.append(i)
+                leaves.a.. i)
 
         _____ n > 2:
             n -= l..(leaves)
@@ -35,7 +35,7 @@ c.. Solution o..
                 adj_node = adj[node][0]
                 adj[adj_node].remove(node)
                 __ l..(adj[adj_node]) __ 1:
-                    new_leaves.append(adj_node)
+                    new_leaves.a.. adj_node)
             leaves = new_leaves
 
         r_ leaves

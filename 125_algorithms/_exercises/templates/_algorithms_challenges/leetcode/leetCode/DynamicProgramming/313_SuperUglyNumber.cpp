@@ -13,7 +13,7 @@ public:
         ugly_numbers[0] = 1;
         ___(int i=1; i<n; i++){
             ___(int j=0; j<primes.size();j++){
-                ugly_numbers[i]=min(ugly_numbers[i], ugly_numbers[index[j]]*primes[j]);
+                ugly_numbers[i]=m.. ugly_numbers[i], ugly_numbers[index[j]]*primes[j]);
             }
             ___(int j=0; j<primes.size();j++){
                 index[j] += (ugly_numbers[i]__ugly_numbers[index[j]]*primes[j]);

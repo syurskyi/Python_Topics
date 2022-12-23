@@ -54,14 +54,14 @@ c.. Solution o..
         ___ i __ S[1:]:
             __ i __ ')':
                 __ n.. t:
-                    t.append(i)
+                    t.a.. i)
                     c_
                     
                 __ t[-1] __ '(':
                     t.pop()
                 ____
-                    t.append(i)
+                    t.a.. i)
             ____
-                t.append(i)
+                t.a.. i)
         r_ l..(t)
         

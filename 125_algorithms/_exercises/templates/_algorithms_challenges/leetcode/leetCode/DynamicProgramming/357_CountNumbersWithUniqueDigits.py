@@ -29,7 +29,7 @@ c.. Solution o..
         dp[2] = 81
 
         result = 91
-        ___ i __ r..(3, min(n + 1, 11)):
+        ___ i __ r..(3, m.. n + 1, 11)):
             dp[i] = dp[i - 1] * (11 - i)
             result += dp[i]
 

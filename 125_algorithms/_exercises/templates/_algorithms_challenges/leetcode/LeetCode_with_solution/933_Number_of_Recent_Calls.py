@@ -8,7 +8,7 @@ c_ RecentCounter o..
         :type t: int
         :rtype: int
         """
-        queue.append(t)
+        queue.a.. t)
         w.. queue a.. queue[0] < t - 3000:
             queue.pop(0)
         r_ l.. queue)

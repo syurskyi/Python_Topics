@@ -14,5 +14,5 @@ c_ Solution o..
                     nums[val] = -nums[val]
             ___ i __ r.. n
                 __ nums[i] > 0:
-                    res.append(i + 1)
+                    res.a.. i + 1)
         r_ res

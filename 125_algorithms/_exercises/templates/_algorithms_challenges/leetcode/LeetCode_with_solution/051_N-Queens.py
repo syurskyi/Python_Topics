@@ -14,7 +14,7 @@ c_ Solution o..
 
     ___ do_solveNQueens  res, board, num
         __ num __ 0:
-            res.append([''.join(t) ___ t __ board])
+            res.a.. [''.join(t) ___ t __ board])
             r_
         ls = l.. board)
         pos = ls - num

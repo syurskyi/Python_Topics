@@ -5,7 +5,7 @@ c_ Solution o..
         :rtype: bool
         """
         v_map  # dict
-        A.sort(k.._l... x: abs(x))
+        A.s.. k.._l... x: abs(x))
         ___ n __ A:
             v_map[n] = v_map.get(n, 0) + 1
         ___ n __ A:

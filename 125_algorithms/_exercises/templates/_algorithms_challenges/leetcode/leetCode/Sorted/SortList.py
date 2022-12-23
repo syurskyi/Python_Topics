@@ -124,7 +124,7 @@ c.. Solution o..
         lists   # list
         
         _____ head:
-            lists.append(head.val)
+            lists.a.. head.val)
             head = head.next
         
     
@@ -140,19 +140,19 @@ c.. Solution o..
             
             _____ _l < _l_length a.. _r < _r_length:
                 __ l[_l] < r[_r]:
-                    result.append(l[_l])
+                    result.a.. l[_l])
                     _l += 1
                 ____
-                    result.append(r[_r])
+                    result.a.. r[_r])
                     _r += 1
                     
             __ _l __ _l_length:
                 _____ _r < _r_length:
-                    result.append(r[_r])
+                    result.a.. r[_r])
                     _r += 1
             ____
                 _____ _l < _l_length:
-                    result.append(l[_l])
+                    result.a.. l[_l])
                     _l += 1
             
             r_ result

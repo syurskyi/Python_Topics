@@ -56,21 +56,21 @@ c.. Solution o..
         _____ 1:
             __ temp:
                 node = temp.popleft()
-                _result.append(node.val)
+                _result.a.. node.val)
                 __ node.left:
-                    next_temp.append(node.left)
+                    next_temp.a.. node.left)
                     
                 __ node.right:
-                    next_temp.append(node.right)
+                    next_temp.a.. node.right)
             ____
-                result.append(_result)
+                result.a.. _result)
                 _result   # list
                 temp = next_temp
                 next_temp = deque()
             
             __ n.. temp a.. n.. next_temp:
                 __ _result:
-                    result.append(_result)
+                    result.a.. _result)
                 r_ result
             
         

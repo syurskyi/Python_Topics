@@ -1,8 +1,8 @@
 def square_patch(n):
     output = []
     for i in range(n):
-        output.append([])
+        output.a.. [])
     for i in output:
         for x in range(n):
-            i.append(n)
+            i.a.. n)
     return output

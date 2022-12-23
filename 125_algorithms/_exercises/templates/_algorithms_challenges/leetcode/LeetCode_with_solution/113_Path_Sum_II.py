@@ -23,5 +23,5 @@ c_ Solution o..
         right_res = pathSum(root.right, s.. - root.val)
         # add current prefix
         ___ t __ left_res + right_res:
-            res.append([root.val] + t)
+            res.a.. [root.val] + t)
         r_ res

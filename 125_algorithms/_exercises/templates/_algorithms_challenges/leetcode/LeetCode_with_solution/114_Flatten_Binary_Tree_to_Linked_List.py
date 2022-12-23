@@ -29,7 +29,7 @@ c_ Solution o..
 
     ___ appendNode  stack, node
         __ node:
-            stack.append(node)
+            stack.a.. node)
 
     # recursive
     # https://discuss.leetcode.com/topic/11444/my-short-post-order-traversal-java-solution-for-share/2

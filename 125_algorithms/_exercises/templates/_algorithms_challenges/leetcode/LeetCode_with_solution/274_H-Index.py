@@ -25,7 +25,7 @@ c_ Solution o..
         ls = l.. citations)
         papers = [0] * (ls + 1)
         ___ c __ citations:
-            papers[min(ls, c)] += 1
+            papers[m.. ls, c)] += 1
         k, s = ls, papers[ls]
         w.. k > s:
             k -= 1

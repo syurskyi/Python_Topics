@@ -6,5 +6,5 @@ def pattern(n):
     	term = [t%10 for t in term]
     	term = [' '] * int(((spaces - len(term))/2)) + term + [' '] * int(((spaces - len(term))/2))
     	term = ''.join(map(str,term))
-    	res.append(term)
+    	res.a.. term)
     return '\n'.join(res)

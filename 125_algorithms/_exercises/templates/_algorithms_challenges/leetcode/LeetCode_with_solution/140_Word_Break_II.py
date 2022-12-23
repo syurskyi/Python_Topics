@@ -15,7 +15,7 @@ c_ Solution o..
             pass
         result =    # list
         __ s __ wordDict:
-            result.append(s)
+            result.a.. s)
         ___ i __ r.. 1, l.. s)):
             word = s[i:]
             __ word __ wordDict:

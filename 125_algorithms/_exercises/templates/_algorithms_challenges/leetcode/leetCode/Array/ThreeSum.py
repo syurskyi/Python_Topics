@@ -53,7 +53,7 @@ c.. Solution o..
         index_dict _ # dict
         ___ i, d __ enumerate(sortedNums
             try:
-                index_dict[d].append(i)
+                index_dict[d].a.. i)
             except KeyError:
                 index_dict[d] = [i]
         
@@ -70,7 +70,7 @@ c.. Solution o..
             _____ start < end:
                 __ sortedNums[start] + sortedNums[end] __ target:
                     # print(target)
-                    result.append(s..((sortedNums[start], sortedNums[end], data)))
+                    result.a.. s..((sortedNums[start], sortedNums[end], data)))
                     # break
                     end -= 1
                     start += 1
@@ -84,12 +84,12 @@ c.. Solution o..
         ___ i __ index_dict:
             __ i __ 0:
                 __ l..(index_dict.get(i)) >= 3:
-                    result.append([0, 0, 0])
+                    result.a.. [0, 0, 0])
                     c_
 
             __ l..(index_dict.get(i)) >= 2 a.. i != 0:
                 __ index_dict.get(-2*i
-                    result.append(s..((i,i,-2*i)))
+                    result.a.. s..((i,i,-2*i)))
 
 
         r_ result

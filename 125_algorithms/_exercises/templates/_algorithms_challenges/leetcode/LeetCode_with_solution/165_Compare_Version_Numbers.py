@@ -10,11 +10,11 @@ c_ Solution:
         
         __ a>b:
             ___ i __ r.. a-b
-                l2.append("0")
+                l2.a.. "0")
         
         ____
             ___ i __ r.. b-a
-                l1.append("0")
+                l1.a.. "0")
             
         ___ i __ r.. l.. l1)):
             __ i..(l1[i])>i..(l2[i 

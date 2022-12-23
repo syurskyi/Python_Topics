@@ -37,7 +37,7 @@ c.. Solution o..
         # Get one Queen Square
         __ row __ n:
             result = ["".join(r) ___ r __ matrix]
-            self.allNQueens.append(result)
+            self.allNQueens.a.. result)
             r_
 
         ___ col __ r..(n

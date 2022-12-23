@@ -12,14 +12,14 @@ c_ MaxStack o..
         :type x: int
         :rtype: void
         """
-        stack.append(x)
+        stack.a.. x)
         __ l.. max_stack) __ 0:
-            max_stack.append(x)
+            max_stack.a.. x)
             r_
         __ max_stack[-1] > x:
-            max_stack.append(max_stack[-1])
+            max_stack.a.. max_stack[-1])
         ____
-            max_stack.append(x)
+            max_stack.a.. x)
 
     ___ pop ____:
         """
@@ -49,7 +49,7 @@ c_ MaxStack o..
         val = peekMax()
         buff =    # list
         w.. top() != val:
-            buff.append(pop())
+            buff.a.. pop())
         pop()
         w.. l.. buff) != 0:
             push(buff.pop(-1))

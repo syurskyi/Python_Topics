@@ -12,7 +12,7 @@ c.. Solution o..
         __ n.. nums:
             r_ []
 
-        nums.sort()
+        nums.s.. )
         nums_len = l..(nums)
 
         # Keep the subsets without duplicate subsets
@@ -26,8 +26,8 @@ c.. Solution o..
             __ nums[i] __ nums[i-1]:
                 ___ j __ r..(l..(pre_subset)):
                     one_set = pre_subset[j][:]
-                    one_set.append(nums[i])
-                    subsets.append(one_set)
+                    one_set.a.. nums[i])
+                    subsets.a.. one_set)
                     pre_subset[j] = one_set
 
             # Combine current num with all the subsets before.
@@ -36,13 +36,13 @@ c.. Solution o..
                 pre_subset   # list
                 ___ j __ r..(l..(subsets)):
                     one_set = subsets[j][:]
-                    one_set.append(nums[i])
-                    subsets.append(one_set)
-                    pre_subset.append(one_set)
-                pre_subset.append([nums[i]])
-                subsets.append([nums[i]])
+                    one_set.a.. nums[i])
+                    subsets.a.. one_set)
+                    pre_subset.a.. one_set)
+                pre_subset.a.. [nums[i]])
+                subsets.a.. [nums[i]])
 
-        subsets.append([])
+        subsets.a.. [])
         r_ subsets
 
 """

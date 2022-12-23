@@ -19,7 +19,7 @@ c_ Solution:
 
     ___ get_permute  res, nums, index
         __ index __ l.. nums
-            res.append(list(nums))
+            res.a.. list(nums))
             r_
         ___ i __ r.. index, l.. nums)):
             nums[i], nums[index] = nums[index], nums[i]

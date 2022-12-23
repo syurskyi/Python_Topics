@@ -21,7 +21,7 @@ c_ Solution o..
         res = math.log(m) - math.log(n)
         res = i..(math.exp(res))
         __ isPositive:
-            r_ min(res, 2147483647)
+            r_ m.. res, 2147483647)
         r_ m..(0 - res, -2147483648)
 
     # def divide(self, dividend, divisor):

@@ -17,15 +17,15 @@ c_ Solution o..
         res =    # list
         w.. pos < l.. A) a.. npos >= 0:
             __ A[npos] ** 2 < A[pos] ** 2:
-                res.append(A[npos] ** 2)
+                res.a.. A[npos] ** 2)
                 npos -= 1
             ____
-                res.append(A[pos] ** 2)
+                res.a.. A[pos] ** 2)
                 pos +=1 
         w.. npos >= 0:
-            res.append(A[npos] ** 2)
+            res.a.. A[npos] ** 2)
             npos -= 1
         w.. pos < l.. A
-            res.append(A[pos] ** 2)
+            res.a.. A[pos] ** 2)
             pos += 1
         r_ res

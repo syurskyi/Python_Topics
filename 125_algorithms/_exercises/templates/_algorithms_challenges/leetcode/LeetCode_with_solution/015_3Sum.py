@@ -62,7 +62,7 @@ c_ Solution o..
             w.. j < k:
                 curr = nums[i] + nums[j] + nums[k]
                 __ curr __ 0:
-                    res.append([nums[i], nums[j], nums[k]])
+                    res.a.. [nums[i], nums[j], nums[k]])
                     w.. j < k a.. nums[j] __ nums[j + 1]:
                         j += 1
                     w.. j < k a.. nums[k] __ nums[k - 1]:

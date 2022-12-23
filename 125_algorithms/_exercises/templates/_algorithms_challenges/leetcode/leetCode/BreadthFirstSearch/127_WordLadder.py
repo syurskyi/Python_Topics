@@ -32,7 +32,7 @@ c.. Solution o..
                         ____ (next_word n.. __ visited_word a..
                                 next_word __ wordList
                             visited_word[next_word] = 1
-                            next_level.append(next_word)
+                            next_level.a.. next_word)
                         ____
                             pass
 

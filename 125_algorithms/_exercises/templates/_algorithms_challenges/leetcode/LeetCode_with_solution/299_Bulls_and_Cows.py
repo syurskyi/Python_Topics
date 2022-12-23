@@ -14,7 +14,7 @@ c_ Solution o..
                 bull += 1
             ____
                 # store possible index and count for cow
-                different.append(i)
+                different.a.. i)
                 try:
                     check[secret[i]] += 1
                 except KeyError:

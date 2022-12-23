@@ -9,7 +9,7 @@ c.. Solution o..
         :type target: int
         :rtype: List[List[int]]
         """
-        nums.sort()
+        nums.s.. )
         solution   # list
         length = l..(nums)
 
@@ -37,7 +37,7 @@ c.. Solution o..
                     ____ a + b + c + d > target:
                         right -= 1
                     ____
-                        solution.append([a, b, c, d])
+                        solution.a.. [a, b, c, d])
                         # avoid duplicate triplets.
                         left += 1
                         _____ left < right a.. nums[left] __ nums[left-1]:

@@ -18,7 +18,7 @@ c_ Solution o..
             char_map[o.. s[right])] -= 1
             right += 1
             __ count __ 0:
-                res.append(left)
+                res.a.. left)
             __ right - left __ l.. p
                 __ char_map[o.. s[left])] >= 0:
                     count += 1

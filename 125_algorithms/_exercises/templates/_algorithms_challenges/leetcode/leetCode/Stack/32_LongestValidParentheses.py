@@ -19,14 +19,14 @@ c.. Solution o..
         stack, longest = [0], 0
         ___ i __ xrange(1, l..(s)):
             __ s[i] __ '(':
-                stack.append(i)
+                stack.a.. i)
             ____
                 __ stack a.. s[stack[-1]] __ '(':
                     stack.pop()
                     valid_len = (i - stack[-1]) __ stack else i + 1
                     longest = m..(longest, valid_len)
                 ____
-                    stack.append(i)
+                    stack.a.. i)
         r_ longest
 
 """

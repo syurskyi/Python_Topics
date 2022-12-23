@@ -17,7 +17,7 @@ c_ Solution o..
             # Last 1 of start or can start from 0
             mask = m..(33 - (start & -start).bit_length(),
                        33 - n.bit_length())
-            ans.append(intToIP(start) + '/' + s..(mask))
+            ans.a.. intToIP(start) + '/' + s..(mask))
             start += 1 << (32 - mask)
             n -= 1 << (32 - mask)
         r_ ans

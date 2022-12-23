@@ -108,7 +108,7 @@ c.. Solution o..
             
             # repeat self_value
             __ tree[i] __ prev.get('self_value'
-                tree_seed.append({'count': prev.get('count') + 1,
+                tree_seed.a.. {'count': prev.get('count') + 1,
                                  'repeat_count': prev.get('repeat_count') + 1,
                                  'capacity': prev.get('capacity'),
                                  'self_value': tree[i]})
@@ -117,7 +117,7 @@ c.. Solution o..
             # already into basket but cannot beside each other.
             
             __ tree[i] __ prev.get('capacity'
-                tree_seed.append({'count': prev.get('count') + 1,
+                tree_seed.a.. {'count': prev.get('count') + 1,
                                  'repeat_count': 1,
                                  'capacity': prev.get('capacity'),
                                  'self_value': tree[i]})
@@ -128,7 +128,7 @@ c.. Solution o..
                 new = prev.get('capacity')
                 new.add(tree[i])
                 
-                tree_seed.append({'count': prev.get('count') + 1,
+                tree_seed.a.. {'count': prev.get('count') + 1,
                                  'repeat_count': 1,
                                  'capacity': new,
                                  'self_value': tree[i]})
@@ -138,7 +138,7 @@ c.. Solution o..
             new = s..()
             new.add(tree[i])
             new.add(tree[i-1])
-            tree_seed.append({'count': tree_seed[i-1].get('repeat_count') + 1,
+            tree_seed.a.. {'count': tree_seed[i-1].get('repeat_count') + 1,
                              'repeat_count': 1,
                              'capacity': new,
                              'self_value': tree[i]})    

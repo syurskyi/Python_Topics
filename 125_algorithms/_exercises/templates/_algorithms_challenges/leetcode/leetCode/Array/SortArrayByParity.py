@@ -37,9 +37,9 @@ c.. Solution o..
         odd   # list
         ___ i __ A:
             __ i % 2 __ 0:
-                even.append(i)
+                even.a.. i)
             ____
-                odd.append(i)
+                odd.a.. i)
         
         r_ even + odd
 

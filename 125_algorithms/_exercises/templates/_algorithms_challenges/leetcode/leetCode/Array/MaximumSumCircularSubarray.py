@@ -71,9 +71,9 @@ c.. Solution o..
         ___ i __ r..(1, l..(A)):
             __ A[i] + dp[i-1] > 0:
                 maxes = m..(maxes, A[i]+dp[i-1], A[i])
-                dp.append(m..(A[i]+dp[i-1], A[i]))
+                dp.a.. m..(A[i]+dp[i-1], A[i]))
             ____
-                dp.append(A[i])
+                dp.a.. A[i])
                 maxes = m..(maxes, A[i])
         
         __ maxes < 0:
@@ -85,11 +85,11 @@ c.. Solution o..
         
         ___ i __ r..(1, l..(A)):
             __ A[i] + dp[-1] < 0:
-                mines = min(mines, A[i]+dp[-1], A[i])
-                dp.append(min(A[i]+dp[-1], A[i]))
+                mines = m.. mines, A[i]+dp[-1], A[i])
+                dp.a.. m.. A[i]+dp[-1], A[i]))
             ____
-                dp.append(A[i])
-                mines = min(mines, A[i])
+                dp.a.. A[i])
+                mines = m.. mines, A[i])
         
         
         maxes = m..(maxes, s..(A) - mines)

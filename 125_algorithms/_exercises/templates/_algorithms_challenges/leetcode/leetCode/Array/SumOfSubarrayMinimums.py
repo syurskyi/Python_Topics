@@ -134,7 +134,7 @@ c.. Solution o..
                     ______
 
             _left.append((i, base))
-            left.append(base)
+            left.a.. base)
 
         ___ i __ reversed(A
             base = 1
@@ -146,7 +146,7 @@ c.. Solution o..
                     ______
 
             _right.append((i, base))
-            right.append(base)
+            right.a.. base)
 
         right.r..
 

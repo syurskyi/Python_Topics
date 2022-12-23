@@ -12,9 +12,9 @@ c.. Stack o..
         # Pushing to back and
         # then rotating the queue until the new element is at the front
         q = self._queue
-        q.append(x)
+        q.a.. x)
         ___ i __ xrange(l..(q) - 1
-            q.append(q.popleft())
+            q.a.. q.popleft())
 
     ___ pop(self
         self._queue.popleft()

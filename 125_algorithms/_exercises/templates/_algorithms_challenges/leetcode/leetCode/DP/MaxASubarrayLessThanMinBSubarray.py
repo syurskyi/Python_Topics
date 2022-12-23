@@ -150,7 +150,7 @@ ___ maxALEminB(a, b
                 b = j.pop()
                 valueB = b[1]
 
-            minx = min(valueA, valueB)
+            minx = m.. valueA, valueB)
 
             __ b[0] > a[0]:
                 result += minx

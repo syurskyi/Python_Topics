@@ -27,9 +27,9 @@ c_ Solution o..
     ___ get_combine  res, prefix, n, k, start
         # recursive with only one array
         __ k __ 0:
-            res.append(list(prefix))
+            res.a.. list(prefix))
         ____ start <= n:
-            prefix.append(start)
+            prefix.a.. start)
             get_combine(res, prefix,
                              n, k - 1, start + 1)
             prefix.pop()

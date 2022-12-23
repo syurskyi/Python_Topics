@@ -15,7 +15,7 @@ public:
 
         int min_buy = prices[0];
         ___(int i=1;i<n;i++){
-            min_buy = min(prices[i], min_buy);
+            min_buy = m.. prices[i], min_buy);
             pre_profit[i] =  m..(pre_profit[i-1], prices[i]-min_buy);
         }
 

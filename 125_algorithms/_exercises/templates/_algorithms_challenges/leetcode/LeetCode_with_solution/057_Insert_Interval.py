@@ -13,7 +13,7 @@ c_ Solution o..
         """
         __ intervals is N.. or l.. intervals) __ 0:
             r_ [newInterval]
-        intervals.sort(k.._l... x:x.start)
+        intervals.s.. k.._l... x:x.start)
         pos = 0
         w.. pos < l.. intervals
             # left of pos
@@ -27,7 +27,7 @@ c_ Solution o..
             ____
                 pos += 1
         __ l.. intervals) __ 0 or pos __ l.. intervals
-            intervals.append(newInterval)
+            intervals.a.. newInterval)
         r_ intervals
 
     ___ check_overlap  curr_int, new_int
@@ -41,7 +41,7 @@ c_ Solution o..
 
     ___ merge_intervals  int1, int2
         temp_int = Interval()
-        temp_int.start = min([int1.start, int2.start])
+        temp_int.start = m.. [int1.start, int2.start])
         temp_int.end = m..([int1.end, int2.end])
         r_ temp_int
 

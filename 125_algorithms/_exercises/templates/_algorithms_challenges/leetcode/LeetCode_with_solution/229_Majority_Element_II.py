@@ -12,8 +12,8 @@ c_ Solution o..
                 __ nums[i] __ nums[j]:
                     count += 1
             __ count > ls / 3:
-                res.append(nums[i])
-            check_value.append(nums[i])
+                res.a.. nums[i])
+            check_value.a.. nums[i])
         r_ res
 
     # def majorityElement(self, nums):

@@ -39,7 +39,7 @@ c.. Solution o..
             key = ''.join(s..(i))
             
             try:
-                result[key].append(i)
+                result[key].a.. i)
             except:
                 result[key] = [i]
         

@@ -24,7 +24,7 @@ c.. Solution o..
                 ____
                     dp[j] += lines[j]
 
-        r_ min(dp)
+        r_ m.. dp)
 
 
 """

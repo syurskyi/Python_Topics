@@ -10,9 +10,9 @@ c.. MinStack o..
         self.stack_m   # list
 
     ___ push  x
-        self.stack_d.append(x)
+        self.stack_d.a.. x)
         __ n.. self.stack_m or x <= self.getMin(
-            self.stack_m.append(x)
+            self.stack_m.a.. x)
 
     ___ pop(self
         __ self.top() __ self.getMin(

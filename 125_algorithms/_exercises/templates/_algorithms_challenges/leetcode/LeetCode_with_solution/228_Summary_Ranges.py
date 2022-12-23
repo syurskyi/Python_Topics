@@ -30,8 +30,8 @@ c_ Solution o..
             __ i + 1 <  ls a.. nums[i + 1] __ nums[i] + 1:
                 c_
             __ i __ start:
-                res.append(s..(nums[start]))
+                res.a.. s..(nums[start]))
             ____
-                res.append("%d->%d" % (nums[start], nums[i]))
+                res.a.. "%d->%d" % (nums[start], nums[i]))
             start = i + 1
         r_ res

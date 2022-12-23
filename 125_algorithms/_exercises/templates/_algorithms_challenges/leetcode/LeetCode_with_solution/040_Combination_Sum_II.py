@@ -7,7 +7,7 @@ c_ Solution o..
         """
         candidates.s..
         dp = [[] ___ _ __ r.. target + 1)]
-        dp[0].append(   # list)
+        dp[0].a..    # list)
         ___ i __ r.. 1, target + 1
             ___ j __ r.. l.. candidates)):
                 __ candidates[j] > i:
@@ -18,8 +18,8 @@ c_ Solution o..
                     __ l.. temp) > 0 a.. temp[-1] >= j:
                         c_
                     # store index
-                    temp.append(j)
-                    dp[i].append(temp)
+                    temp.a.. j)
+                    dp[i].a.. temp)
         res =    # list
         check  # dict
         ___ temp __ dp[target]:
@@ -28,5 +28,5 @@ c_ Solution o..
                 check[s..(value)] += 1
             except KeyError:
                 check[s..(value)] = 1
-                res.append(value)
+                res.a.. value)
         r_ res

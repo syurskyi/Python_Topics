@@ -19,7 +19,7 @@ c.. Solution o..
         exp = 1
         _____ max_num / exp > 0:
             ___ num __ nums:
-                bucket[(num / exp) % 10].append(num)
+                bucket[(num / exp) % 10].a.. num)
             nums   # list
             ___ each __ bucket:
                 nums.e..(each)

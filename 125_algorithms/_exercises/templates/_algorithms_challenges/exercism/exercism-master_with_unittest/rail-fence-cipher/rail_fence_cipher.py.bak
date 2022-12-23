@@ -7,12 +7,12 @@ class Rails:
     def populate_rails_linear(self, message, rail_lengths):
         message_list = list(message)
         for rail in self.linear_iterator(rail_lengths):
-            rail.append(message_list.pop(0))
+            rail.a.. message_list.pop(0))
 
     def populate_rails_zig_zag(self, message):
         message_list = list(message)
         for rail in self.zig_zag_iterator(message):
-            rail.append(message_list.pop(0))
+            rail.a.. message_list.pop(0))
 
     def to_string_linear(self):
         return ''.join([data for rail in self.rails for data in rail])

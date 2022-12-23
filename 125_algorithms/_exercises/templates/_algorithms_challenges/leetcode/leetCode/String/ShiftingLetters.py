@@ -56,7 +56,7 @@ c.. Solution o..
             
             new_index = (index+j+old_index)%26
             
-            new_s.append(letters[new_index])
+            new_s.a.. letters[new_index])
             old_index += j
         r_ ''.join(new_s[::-1])
         

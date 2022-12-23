@@ -63,9 +63,9 @@ c.. Solution o..
             ___ j __ r..(lengthX
                 __ grid[i][j] != 0:
                     temp_result = 6 * grid[i][j] - 2 * (grid[i][j] - 1)
-                    left = min(grid[i][j-1], grid[i][j]) __ j-1 >= 0 else 0
-                    right = min(grid[i][j+1], grid[i][j]) __ j+1 <= lengthX-1 else 0
-                    up = min(grid[i-1][j], grid[i][j]) __ i-1 >= 0 else 0
-                    down = min(grid[i+1][j], grid[i][j]) __ i+1 <= lengthY-1 else 0
+                    left = m.. grid[i][j-1], grid[i][j]) __ j-1 >= 0 else 0
+                    right = m.. grid[i][j+1], grid[i][j]) __ j+1 <= lengthX-1 else 0
+                    up = m.. grid[i-1][j], grid[i][j]) __ i-1 >= 0 else 0
+                    down = m.. grid[i+1][j], grid[i][j]) __ i+1 <= lengthY-1 else 0
                     result += (temp_result - s..([left, right, up, down]))
         r_ result

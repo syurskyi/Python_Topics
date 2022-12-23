@@ -59,10 +59,10 @@ c.. Solution o..
             x = nums[i]
             temp = [x*j ___ j __ currentNums[i-1]]
             
-            minx = min(x, min(temp))
+            minx = m.. x, m.. temp))
             maxx = m..(x, m..(temp))
             
-            currentNums.append([minx, maxx])
+            currentNums.a.. [minx, maxx])
             maxes = m..(maxes, maxx)           
         
         r_ maxes

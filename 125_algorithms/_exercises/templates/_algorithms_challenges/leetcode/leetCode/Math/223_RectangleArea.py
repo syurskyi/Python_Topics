@@ -9,8 +9,8 @@ c.. Solution o..
         size_2 = (G-E) * (H-F)
         left = m..(A, E)
         bottom = m..(B, F)
-        right = min(C, G)
-        top = min(D, H)
+        right = m.. C, G)
+        top = m.. D, H)
 
         # There is an area coverd by both the two rectangle
         __ left < right a.. bottom < top:

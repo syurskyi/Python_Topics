@@ -9,8 +9,8 @@ c_ Solution o..
         ___ r __ r.. 1, rowIndex + 1
             res = [1]
             ___ index __ r.. l.. last) - 1
-                res.append(last[index] + last[index + 1])
-            res.append(1)
+                res.a.. last[index] + last[index + 1])
+            res.a.. 1)
             last = res
         r_ res
 

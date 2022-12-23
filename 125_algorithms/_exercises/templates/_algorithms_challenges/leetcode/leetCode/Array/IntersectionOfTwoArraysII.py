@@ -55,8 +55,8 @@ c.. Solution o..
         result   # list
     
     
-        nums1.sort()
-        nums2.sort()
+        nums1.s.. )
+        nums2.s.. )
         
         _n1 = 0
         _n2 = 0
@@ -66,7 +66,7 @@ c.. Solution o..
         
         _____ _n1 < _n1_length a.. _n2 < _n2_length:
             __ nums1[_n1] __ nums2[_n2]:
-                result.append(nums1[_n1])
+                result.a.. nums1[_n1])
                 _n1 += 1
                 _n2 += 1
             

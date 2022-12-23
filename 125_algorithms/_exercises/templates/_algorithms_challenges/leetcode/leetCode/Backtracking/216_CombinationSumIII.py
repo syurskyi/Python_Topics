@@ -15,7 +15,7 @@ c.. Solution o..
                 # self.combination.append(nums)
                 # Warning: nums[:] get a new list.
                 # If not, we will get self.combination = [[], [], ...] finally.
-                self.combination.append(nums[:])
+                self.combination.a.. nums[:])
             ____
                 r_
 
@@ -26,7 +26,7 @@ c.. Solution o..
         ___ i __ r..(start, 10
             cur_sum = s..(nums) + i
             __ cur_sum <= n:
-                nums.append(i)
+                nums.a.. i)
                 self._combination_sum(k - 1, n, nums)
                 del nums[-1]    # Backtracking
             ____

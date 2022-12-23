@@ -63,15 +63,15 @@ c_ MinStack o..
         :type x: int
         :rtype: nothing
         """
-        stack.append(x)
+        stack.a.. x)
         __ l.. min_stack) __ 0:
-            min_stack.append(x)
+            min_stack.a.. x)
             r_
         __ x <= min_stack[-1]:
-            min_stack.append(x)
+            min_stack.a.. x)
         ____
             # Push top of min stack again
-            min_stack.append(min_stack[-1])
+            min_stack.a.. min_stack[-1])
 
 
     ___ pop ____:

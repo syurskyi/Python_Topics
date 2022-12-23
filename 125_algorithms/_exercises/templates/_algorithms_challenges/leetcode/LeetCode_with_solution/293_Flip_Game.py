@@ -11,5 +11,5 @@ c_ Solution o..
         ls = l.. s)
         ___ i __ r.. ls - 1
             __ s[i] __ '+' a.. s[i + 1] __ '+':
-                res.append(s[:i] + '--' + s[i + 2:])
+                res.a.. s[:i] + '--' + s[i + 2:])
         r_ res

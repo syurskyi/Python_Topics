@@ -22,7 +22,7 @@ c.. Solution o..
 
         ugly_index = 0
         _____ ugly_index < n:
-            min_val = min(value_record)
+            min_val = m.. value_record)
             ugly_numbers[ugly_index] = min_val
 
             ___ i __ r..(k

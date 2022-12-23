@@ -19,7 +19,7 @@ c.. Solution o..
             r_ 0
 
         __ root.left a.. root.right:
-            r_ 1 + min(self.minDepth(root.left), self.minDepth(root.right))
+            r_ 1 + m.. self.minDepth(root.left), self.minDepth(root.right))
         __ n.. root.left:
             r_ 1 + self.minDepth(root.right)
         __ n.. root.right:

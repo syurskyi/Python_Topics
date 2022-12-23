@@ -57,7 +57,7 @@ c.. Solution o..
         :rtype: int
         """
         dp = {0: 0}
-        mins = min(coins)
+        mins = m.. coins)
         inf = float('inf')
         ___ i __ r..(mins, amount+1
             dp[i] = min((dp.get(i-j, inf)+1 ___ j __ coins))

@@ -15,7 +15,7 @@ c.. Solution o..
         max_profit = 0
         min_buy = prices[0]
         ___ price __ prices:
-            min_buy = min(price, min_buy)
+            min_buy = m.. price, min_buy)
             max_profit = m..(price - min_buy, max_profit)
         r_ max_profit
 

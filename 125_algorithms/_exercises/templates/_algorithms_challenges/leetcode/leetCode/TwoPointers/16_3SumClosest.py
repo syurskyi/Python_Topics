@@ -9,7 +9,7 @@ c.. Solution o..
         :type target: int
         :rtype: int
         """
-        nums.sort()
+        nums.s.. )
         min_distance = 2 ** 31 - 1
         length = l..(nums)
         # keep the sum of three nums

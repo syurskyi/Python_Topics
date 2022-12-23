@@ -28,7 +28,7 @@ c.. Solution o..
             k %= factorial[pos - 1]
             target_num = remain_list[cur_num]
             remain_list.remove(target_num)
-            result.append(str(target_num))
+            result.a.. str(target_num))
             pos -= 1
 
         r_ "".join(result)

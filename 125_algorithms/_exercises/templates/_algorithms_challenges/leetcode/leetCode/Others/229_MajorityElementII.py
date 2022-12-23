@@ -26,7 +26,7 @@ c.. Solution o..
         result   # list
         ___ num __ [candidate_1, candidate_2]:
             __ nums.c..(num) > l..(nums) / 3:
-                result.append(num)
+                result.a.. num)
         r_ result
 """
 []

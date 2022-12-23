@@ -89,19 +89,19 @@ c.. binarySearchTree o..
             __ n.. nodes:
                 r_ result
             node = nodes.pop()
-            result.append(node.val)
+            result.a.. node.val)
 
             __ node.right:
-                nodes.append(node.right)
+                nodes.a.. node.right)
 
             __ node.left:
-                nodes.append(node.left)
+                nodes.a.. node.left)
 
     ___ _middlePrint  root, result
         __ root.left:
             self._middlePrint(root.left, result)
 
-        result.append(root.val)
+        result.a.. root.val)
 
         __ root.right:
             self._middlePrint(root.right,result)
@@ -120,7 +120,7 @@ c.. binarySearchTree o..
         __ root.right:
             self._suffPrint(root.right,result)
         
-        result.append(root.val)
+        result.a.. root.val)
 
     ___ suffPrint(self
         # 左右根

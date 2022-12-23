@@ -27,8 +27,8 @@ ___ selectionSort(shuffledList
 
     new   # list
     ___ i __ r..(l..(shuffledList)):
-        currentMinValue = min(shuffledList)
-        new.append(currentMinValue)
+        currentMinValue = m.. shuffledList)
+        new.a.. currentMinValue)
         shuffledList.remove(currentMinValue)
 
     r_ new
@@ -77,10 +77,10 @@ ___ combined(list1, list2
             valueTwo = list2[indexTwo]
 
             __ valueOne > valueTwo:
-                new.append(valueTwo)
+                new.a.. valueTwo)
                 indexTwo += 1
             ____
-                new.append(valueOne)
+                new.a.. valueOne)
                 indexOne +=1
 
         __ indexOne __ lengthOne:

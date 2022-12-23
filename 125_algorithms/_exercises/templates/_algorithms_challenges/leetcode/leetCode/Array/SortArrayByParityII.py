@@ -35,13 +35,13 @@ c.. Solution o..
         
         ___ i __ A:
             __ i%2 __ 0:
-                even.append(i)
+                even.a.. i)
             ____
-                odd.append(i)
+                odd.a.. i)
         
         result   # list
         ___ j, k __ zip(even, odd
-            result.append(j)
-            result.append(k)
+            result.a.. j)
+            result.a.. k)
         r_ result
         

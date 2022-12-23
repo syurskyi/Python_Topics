@@ -11,7 +11,7 @@ c.. Solution o..
             cur_str = s[i:i+10]
             str_hash[cur_str] = str_hash.get(cur_str, 0) + 1
             __ str_hash[cur_str] __ 2:
-                sequence.append(cur_str)
+                sequence.a.. cur_str)
         r_ sequence
 
 

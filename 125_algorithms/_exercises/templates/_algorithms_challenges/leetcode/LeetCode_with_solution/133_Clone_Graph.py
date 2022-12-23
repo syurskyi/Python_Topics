@@ -38,11 +38,11 @@ c_ Solution o..
             curr = queue.pop(0)
             ___ ne __ curr.neighbors:
                 __ ne.label __ label_map:
-                    label_map[curr.label].neighbors.append(label_map[ne.label])
+                    label_map[curr.label].neighbors.a.. label_map[ne.label])
                 ____
                     neighborCopy = UndirectedGraphNode(ne.label)
-                    label_map[curr.label].neighbors.append(neighborCopy)
+                    label_map[curr.label].neighbors.a.. neighborCopy)
                     label_map[ne.label] = neighborCopy
-                    queue.append(ne)
+                    queue.a.. ne)
         r_ graphCopy
 

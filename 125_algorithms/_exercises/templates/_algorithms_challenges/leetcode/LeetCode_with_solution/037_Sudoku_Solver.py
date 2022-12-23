@@ -9,7 +9,7 @@ c_ Solution o..
         ___ i __ r.. 9
             ___ j __ r.. 9
                 __ board[i][j] __ '.':
-                    empty.append(9 * i + j)
+                    empty.a.. 9 * i + j)
         solve(board, empty)
 
     ___ solve  board, empty
@@ -24,7 +24,7 @@ c_ Solution o..
                 __ solve(board, empty
                     r_ T..
                 board[row][col] = '.'
-                empty.append(first_value)
+                empty.a.. first_value)
         r_ F..
 
     ___ is_safe  board, row, col, ch

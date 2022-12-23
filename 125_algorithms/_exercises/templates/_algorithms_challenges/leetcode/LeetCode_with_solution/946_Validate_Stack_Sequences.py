@@ -17,7 +17,7 @@ c_ Solution o..
             __ curr __ popped[0]:
                 popped.pop(0)
             ____
-                in_stack.append(curr)
+                in_stack.a.. curr)
             pos += 1
         w.. l.. in_stack) > 0 a.. l.. popped) > 0 a.. in_stack[-1] __ popped[0]:
             in_stack.pop(-1)

@@ -148,7 +148,7 @@ c.. Solution o..
         currentMax = 0
         
         _____ l != r:
-            currentMax = m..(min(height[r], height[l]) * (r-l), currentMax)
+            currentMax = m..(m.. height[r], height[l]) * (r-l), currentMax)
             __ height[r] > height[l]:
                 l += 1
             ____

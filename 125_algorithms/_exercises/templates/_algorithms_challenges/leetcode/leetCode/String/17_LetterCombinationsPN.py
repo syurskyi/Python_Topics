@@ -37,7 +37,7 @@ c.. Solution o..
         combine_str   # list
         ___ a __ str_a:
             ___ b __ str_b:
-                combine_str.append(a + b)
+                combine_str.a.. a + b)
 
         r_ combine_str
 

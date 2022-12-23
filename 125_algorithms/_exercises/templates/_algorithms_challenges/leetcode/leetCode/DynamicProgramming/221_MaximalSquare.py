@@ -32,7 +32,7 @@ c.. Solution o..
                 ____ matrix[row][col] __ "0":
                     dp[row][col] = 0
                 ____
-                    dp[row][col] = min(
+                    dp[row][col] = m.. 
                         dp[row-1][col],
                         dp[row][col-1],
                         dp[row-1][col-1]) + 1

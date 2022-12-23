@@ -22,7 +22,7 @@ c.. Solution o..
             v_2 = ugly_nums[l_2] * 2
             v_3 = ugly_nums[l_3] * 3
             v_5 = ugly_nums[l_5] * 5
-            ugly_nums[i] = min(v_2, v_3, v_5)
+            ugly_nums[i] = m.. v_2, v_3, v_5)
             __ ugly_nums[i] __ v_2:
                 l_2 += 1
             __ ugly_nums[i] __ v_3:

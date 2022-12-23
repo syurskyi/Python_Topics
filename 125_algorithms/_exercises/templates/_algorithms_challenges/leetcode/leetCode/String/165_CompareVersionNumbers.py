@@ -16,9 +16,9 @@ c.. Solution o..
 
         len_max = m..(len_1, len_2)
         ___ i __ r..(len_1, len_max
-            ver_list_1.append(0)
+            ver_list_1.a.. 0)
         ___ i __ r..(len_2, len_max
-            ver_list_2.append(0)
+            ver_list_2.a.. 0)
 
         ___ i __ r..(len_max
             __ ver_list_1[i] < ver_list_2[i]:

@@ -29,7 +29,7 @@ c_ Solution o..
                 globalMin = sys.maxint
                 ___ k __ r.. i + 1, j
                     localMax = k + m..(dp[i][k - 1], dp[k + 1][j])
-                    globalMin = min(globalMin, localMax)
+                    globalMin = m.. globalMin, localMax)
                 __ i + 1 __ j:
                     dp[i][j] = i
                 ____

@@ -39,9 +39,9 @@ c_ Solution o..
             temp =    # list
             ___ node __ top:
                 __ node.left is n.. N..:
-                    temp.append(node.left)
+                    temp.a.. node.left)
                 __ node.right is n.. N..:
-                    temp.append(node.right)
+                    temp.a.. node.right)
             __ l.. temp) > 0:
-                stack.append(temp)
+                stack.a.. temp)
         r_ res

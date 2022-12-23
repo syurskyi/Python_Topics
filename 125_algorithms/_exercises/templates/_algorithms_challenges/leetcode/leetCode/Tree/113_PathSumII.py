@@ -16,7 +16,7 @@ c.. Solution o..
         paths_list   # list
         __ n.. root.left a.. n.. root.right:
             __ root.val __ s..:
-                paths_list.append([root.val])
+                paths_list.a.. [root.val])
             r_ paths_list
 
         __ root.left:
@@ -26,7 +26,7 @@ c.. Solution o..
                 ___ path __ l_paths:
                     one_path = [root.val]
                     one_path.e..(path)
-                    paths_list.append(one_path)
+                    paths_list.a.. one_path)
 
         __ root.right:
             r_paths = self.pathSum(root.right, s..-root.val)
@@ -35,7 +35,7 @@ c.. Solution o..
                 ___ path __ r_paths:
                     one_path = [root.val]
                     one_path.e..(path)
-                    paths_list.append(one_path)
+                    paths_list.a.. one_path)
         r_ paths_list
 
 

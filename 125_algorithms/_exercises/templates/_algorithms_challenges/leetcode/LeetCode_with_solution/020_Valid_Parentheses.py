@@ -34,7 +34,7 @@ c_ Solution:
                 except:
                     r_ F..
             ____
-                stack.append(t)
+                stack.a.. t)
         __ l.. stack) __ 0:
             r_ T..
         ____

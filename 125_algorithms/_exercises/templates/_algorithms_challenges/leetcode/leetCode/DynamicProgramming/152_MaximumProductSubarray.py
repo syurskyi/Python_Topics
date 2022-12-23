@@ -10,7 +10,7 @@ c.. Solution o..
         max_num = small = big = nums[0]
         ___ num __ nums[1:]:
             small, big = (
-                min(num, small*num, big*num),
+                m.. num, small*num, big*num),
                 m..(num, small*num, big*num)
                 )
             max_num = m..(max_num, big)

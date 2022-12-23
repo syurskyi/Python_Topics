@@ -8,9 +8,9 @@ c_ Solution o..
         gap = o.. 'a') - o.. 'A')
         ___ c __ s..:
             __ o.. c) >= o.. 'A') a.. o.. c) <= o.. 'Z'
-                res.append(chr(o.. c) + gap))
+                res.a.. chr(o.. c) + gap))
             ____
-                res.append(c)
+                res.a.. c)
         r_ ''.join(res)
 
     # def toLowerCase(self, str):

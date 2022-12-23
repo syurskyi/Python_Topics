@@ -60,13 +60,13 @@ c.. Solution o..
         col = cur_pos[1]
         adj_list   # list
         __ row - 1 >= 0:
-            adj_list.append([row - 1, col])
+            adj_list.a.. [row - 1, col])
         __ row + 1 < m_rows:
-            adj_list.append([row + 1, col])
+            adj_list.a.. [row + 1, col])
         __ col - 1 >= 0:
-            adj_list.append([row, col - 1])
+            adj_list.a.. [row, col - 1])
         __ col + 1 < n_cols:
-            adj_list.append([row, col + 1])
+            adj_list.a.. [row, col + 1])
         r_ adj_list
 
 """

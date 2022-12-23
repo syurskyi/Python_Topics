@@ -24,7 +24,7 @@ c_ Solution o..
                     left[j], curr_left = 0, j + 1
             ___ j __ r.. ls_col - 1, -1, -1
                 __ matrix[i][j] __ '1':
-                    right[j] = min(right[j], curr_right)
+                    right[j] = m.. right[j], curr_right)
                 ____
                     right[j], curr_right = ls_col, j
             ___ j __ r.. ls_col

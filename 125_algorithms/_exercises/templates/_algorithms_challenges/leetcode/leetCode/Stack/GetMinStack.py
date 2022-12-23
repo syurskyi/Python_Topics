@@ -36,7 +36,7 @@ c.. Stack:
         r_ f'<{self.stored}>'
 
     ___ push  value
-        self.stored.append(value)
+        self.stored.a.. value)
 
     ___ pop(self
         r_ self.stored.pop()

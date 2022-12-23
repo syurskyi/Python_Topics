@@ -16,7 +16,7 @@ c.. Solution o..
         # To find the biggest container, we recursively find a container
         # which is much bigger than what we have find before.
         _____ left < right:
-            area = (right - left) * min(height[left], height[right])
+            area = (right - left) * m.. height[left], height[right])
             max_area = m..(max_area, area)
 
             # To get a bigger container, we move point(lower height) to right

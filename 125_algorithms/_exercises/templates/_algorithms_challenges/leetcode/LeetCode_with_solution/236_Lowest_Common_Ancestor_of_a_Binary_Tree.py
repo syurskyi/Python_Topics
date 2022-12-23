@@ -46,10 +46,10 @@ c_ Solution o..
             # While traversing the tree, keep saving the parent pointers.
             __ node.left:
                 parent[node.left] = node
-                stack.append(node.left)
+                stack.a.. node.left)
             __ node.right:
                 parent[node.right] = node
-                stack.append(node.right)
+                stack.a.. node.right)
 
         # Ancestors set() for node p.
         ancestors = s..()

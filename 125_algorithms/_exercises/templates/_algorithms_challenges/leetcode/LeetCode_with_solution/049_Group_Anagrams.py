@@ -31,7 +31,7 @@ c_ Solution o..
         ___ s __ strs:
             key = hash_key(s)
             try:
-                hash[key].append(s)
+                hash[key].a.. s)
             except KeyError:
                 hash[key] = [s]
         r_ hash.values()

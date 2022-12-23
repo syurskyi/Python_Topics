@@ -19,17 +19,17 @@ c_ Solution o..
             record =    # list
             ___ node __ level:
                 __ node.left:
-                    record.append(node.left)
+                    record.a.. node.left)
                 __ node.right:
-                    record.append(node.right)
+                    record.a.. node.right)
             __ record:
-                q.append(record)
+                q.a.. record)
         # zigzag order
         res =    # list
         ___ index, level __ e.. q
             temp = [x.val ___ x __ level]
             __ index % 2 __ 0:
-                res.append(temp)
+                res.a.. temp)
             ____
-                res.append(temp||-1])
+                res.a.. temp||-1])
         r_ res

@@ -29,7 +29,7 @@ c_ Solution o..
     #     return True
 
     ___ canAttendMeetings  intervals
-        intervals.sort(k.._l... x: x.start)
+        intervals.s.. k.._l... x: x.start)
         ls = l.. intervals)
         ___ i __ r.. ls - 1
             __ intervals[i].end > intervals[i + 1].start:

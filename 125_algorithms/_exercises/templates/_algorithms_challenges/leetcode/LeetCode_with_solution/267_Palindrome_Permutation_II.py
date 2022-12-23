@@ -27,12 +27,12 @@ c_ Solution o..
         permute(half, seed, 0)
         # merge half to get res
         ___ r __ half:
-            res.append(''.join(r) + mid + ''.join(reversed(r)))
+            res.a.. ''.join(r) + mid + ''.join(reversed(r)))
         r_ res
 
     ___ permute  res, num, index
         __ index __ l.. num
-            res.append(list(num))
+            res.a.. list(num))
             r_
         appeared = s..()
         ___ i __ r.. index, l.. num)):

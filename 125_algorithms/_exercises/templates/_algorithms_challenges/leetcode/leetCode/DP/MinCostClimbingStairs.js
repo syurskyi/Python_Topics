@@ -41,8 +41,8 @@ cost[i] 将会是一个整型数据，范围为 [0, 999] 。
     }
 
     ___ (let i=2;i<cost.length;i++) {
-        dp.push(Math.min(dp[i-1]+cost[i], dp[i-2]+cost[i]))
+        dp.push(Math.m.. dp[i-1]+cost[i], dp[i-2]+cost[i]))
     }
 
-    r_ Math.min(dp[dp.length-1], dp[dp.length-2])
+    r_ Math.m.. dp[dp.length-1], dp[dp.length-2])
 };

@@ -41,7 +41,7 @@ c.. Solution o..
         :type newInterval: Interval
         :rtype: List[Interval]
         """
-        _sentences.append(newInterval)
+        _sentences.a.. newInterval)
         
         _sentences = s..(_sentences, k.._l... x: x.start)
 
@@ -58,10 +58,10 @@ c.. Solution o..
             __ tail >= i.start:
                 tail = m..(tail, i.end)
             ____
-                result.append([head, tail])
+                result.a.. [head, tail])
                 head = i.start
                 tail = i.end
 
-        result.append([head, tail])
+        result.a.. [head, tail])
         r_ result
 

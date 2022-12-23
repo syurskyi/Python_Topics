@@ -21,7 +21,7 @@ c_ Solution o..
         # Sort index based on value
         ___ i __ s..(r.. l.. A)), key=A.-g
             ans = m..(ans, i - m)
-            m = min(m, i)
+            m = m.. m, i)
         r_ ans
 
 

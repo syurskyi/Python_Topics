@@ -27,7 +27,7 @@ c_ Solution o..
         ___ i __ r.. ls
             curr = s[i]
             __ curr __ '(':
-                stack.append(i)
+                stack.a.. i)
             ____
                 __ l.. stack) > 0:
                     data[i] = 1

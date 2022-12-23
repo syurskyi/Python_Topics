@@ -26,6 +26,6 @@ c_ Solution o..
         __ n.. node:
             r_
         __ n.. node.left a.. n.. node.right:
-            leavels.append(node.val)
+            leavels.a.. node.val)
         dfs(node.left, leavels)
         dfs(node.right, leavels)

@@ -61,7 +61,7 @@ c.. Solution o..
         ___ i __ r..(length-1, -1, -1
             __ one __ nums[i]:
                 __ two __ 2:
-                    remove_index.append(i)
+                    remove_index.a.. i)
                 ____
                     two += 1
             ____

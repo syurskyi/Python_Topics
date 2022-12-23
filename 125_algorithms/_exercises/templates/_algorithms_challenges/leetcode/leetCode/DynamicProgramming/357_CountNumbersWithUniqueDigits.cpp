@@ -20,7 +20,7 @@ public:
         dp[1] = 10;
         dp[2] = 81;
         int result = 91;
-        ___(int i=3; i<min(11, n+1); i++){
+        ___(int i=3; i<m.. 11, n+1); i++){
             dp[i] = dp[i-1] * (11-i);
             result += dp[i];
         }

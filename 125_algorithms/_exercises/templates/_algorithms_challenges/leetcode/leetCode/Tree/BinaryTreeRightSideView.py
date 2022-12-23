@@ -47,12 +47,12 @@ c.. Solution o..
         _____ current or next_nodes:
             ___ i __ current:
                 __ i.left:
-                    next_nodes.append(i.left)
+                    next_nodes.a.. i.left)
                 __ i.right:
-                    next_nodes.append(i.right)
+                    next_nodes.a.. i.right)
             __ next_nodes:
 
-                result.append(next_nodes[-1].val)
+                result.a.. next_nodes[-1].val)
             current = next_nodes
             next_nodes   # list
         

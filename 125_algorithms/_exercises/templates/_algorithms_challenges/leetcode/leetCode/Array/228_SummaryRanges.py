@@ -5,7 +5,7 @@
 
 c.. Solution o..
     ___ summaryRanges  nums
-        nums.append("#")      # Guard
+        nums.a.. "#")      # Guard
         range_str   # list
         start, end = nums[0], nums[0]
         ___ i __ xrange(1, l..(nums)):
@@ -13,9 +13,9 @@ c.. Solution o..
                 end += 1
             ____
                 __ start __ end:
-                    range_str.append(str(start))
+                    range_str.a.. str(start))
                 ____
-                    range_str.append(str(start) + "->" + str(end))
+                    range_str.a.. str(start) + "->" + str(end))
                 start = end = nums[i]
         r_ range_str
 

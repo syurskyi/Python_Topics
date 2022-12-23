@@ -18,7 +18,7 @@ c.. Solution o..
             j = 0
             _____ i-j >= 0 a.. i+j < s_len:
                 __ s[i-j] __ s[i+j]:
-                    min_cuts[i+j+1] = min(min_cuts[i+j+1], min_cuts[i-j]+1)
+                    min_cuts[i+j+1] = m.. min_cuts[i+j+1], min_cuts[i-j]+1)
                     j += 1
                 ____
                     ______
@@ -26,7 +26,7 @@ c.. Solution o..
             j = 1
             _____ i-j+1 >= 0 a.. i+j < s_len:
                 __ s[i-j+1] __ s[i+j]:
-                    min_cuts[i+j+1] = min(min_cuts[i+j+1], min_cuts[i-j+1]+1)
+                    min_cuts[i+j+1] = m.. min_cuts[i+j+1], min_cuts[i-j+1]+1)
                     j += 1
                 ____
                     ______

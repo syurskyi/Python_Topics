@@ -104,7 +104,7 @@ ___ judgeEqual(cards, target
                     r_ True
 
                 __ x - d[0] > 0:
-                    temp.append(x - d[0])
+                    temp.a.. x - d[0])
             dp[i] = temp
     
     r_ False

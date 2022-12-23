@@ -17,13 +17,13 @@ c.. Solution o..
             r_ []
 
         ans   # list
-        candidates.sort()
+        candidates.s.. )
         self.dfs_search(candidates, 0, target, [], ans)
         r_ ans
 
     ___ dfs_search  candidates, start, target, path, ans
         __ target __ 0:
-            ans.append(path)
+            ans.a.. path)
         ____
             ___ i __ xrange(start, l..(candidates)):
                 # Cannot find the suitable sets, just return.

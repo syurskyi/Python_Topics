@@ -76,7 +76,7 @@ c.. Solution o..
         maxes = 0
         
         ___ i __ r..(1, l..(prices)):
-            mins = min(prices[i], mins)
+            mins = m.. prices[i], mins)
             maxes = m..(prices[i]-mins, maxes)
         
         r_ maxes

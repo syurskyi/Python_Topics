@@ -20,7 +20,7 @@ c_ Solution o..
             # push all nodes up to (and including) this subtree's maximum on
             # the stack.
             w.. node is n.. N..:
-                stack.append(node)
+                stack.a.. node)
                 node = node.right
 
             node = stack.pop()

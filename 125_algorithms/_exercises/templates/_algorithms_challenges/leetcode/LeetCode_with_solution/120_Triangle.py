@@ -13,6 +13,6 @@ c_ Solution o..
             # note that dp should be updated in reversed order
             dp[i] = dp[i - 1] + triangle[i][i]
             ___ j __ reversed(r.. 1, i)):
-                dp[j] = min(dp[j - 1] + triangle[i][j], dp[j] + triangle[i][j])
+                dp[j] = m.. dp[j - 1] + triangle[i][j], dp[j] + triangle[i][j])
             dp[0] = dp[0] + triangle[i][0]
-        r_ min(dp)
+        r_ m.. dp)

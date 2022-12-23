@@ -129,7 +129,7 @@ c.. LRUCache o..
     ___ _put_and_remove  key, value
         # remove the least key and put the new key.
         
-        min_weight = min(self.lru_cache_number)
+        min_weight = m.. self.lru_cache_number)
 
 
         self.lru_cache.pop(self.lru_cache_number[min_weight])

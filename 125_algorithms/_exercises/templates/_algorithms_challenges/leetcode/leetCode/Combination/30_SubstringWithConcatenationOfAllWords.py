@@ -35,7 +35,7 @@ c.. Solution o..
                 j += 1
 
             __ j __ l..(words
-                ans.append(i)
+                ans.a.. i)
 
         r_ ans
 
@@ -82,7 +82,7 @@ c.. Solution_2 o..
 
                     # come to a result
                     __ count __ cnt:
-                        ans.append(left)
+                        ans.a.. left)
                         candidate_cnt[s[left:left + w_len]] -= 1
                         count -= 1
                         left += w_len
@@ -114,7 +114,7 @@ c.. Solution_Fail o..
                          ___ j __ r..(0, concatenation_l, word_l)]
             candidate_cnt = collections.Counter(split_str)
             __ n.. (word_cnt - candidate_cnt
-                ans.append(i)
+                ans.a.. i)
         r_ ans
 
 """

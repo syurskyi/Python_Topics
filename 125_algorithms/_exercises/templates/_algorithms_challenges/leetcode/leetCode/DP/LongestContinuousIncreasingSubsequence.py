@@ -34,9 +34,9 @@ c.. Solution o..
         
         ___ i __ r..(1, l..(nums)):
             __ nums[i] > nums[i-1]:
-                dp.append(dp[i-1]+1)
+                dp.a.. dp[i-1]+1)
             ____
-                dp.append(1)
+                dp.a.. 1)
         r_ m..(dp)
         
 

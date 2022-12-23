@@ -13,7 +13,7 @@
 c.. Solution o..
     # Easy to understand
     ___ lowestCommonAncestor  root, p, q
-        min_val = min(p.val, q.val)
+        min_val = m.. p.val, q.val)
         max_val = m..(p.val, q.val)
         _____ root:
             value = root.val

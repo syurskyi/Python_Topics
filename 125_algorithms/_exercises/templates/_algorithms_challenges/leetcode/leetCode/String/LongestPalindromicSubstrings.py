@@ -52,7 +52,7 @@ c.. Solution o..
         s_dict _ # dict
         ___ i, d __ enumerate(s
             try:
-                s_dict[d].append(i)
+                s_dict[d].a.. i)
             except KeyError:
                 s_dict[d] = [i]
         # print(s_dict)
@@ -64,7 +64,7 @@ c.. Solution o..
             __ l..(s_dict[i]) >= 2:
                 ___ j __ self.makeCombinations(s_dict[i]
                     try:
-                        value_dict[j[1]-j[0]].append(j)
+                        value_dict[j[1]-j[0]].a.. j)
                     except KeyError:
                         value_dict[j[1]-j[0]] = [j]
         # print(value_dict)

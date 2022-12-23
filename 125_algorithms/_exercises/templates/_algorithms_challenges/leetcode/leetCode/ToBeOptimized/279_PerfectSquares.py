@@ -15,8 +15,8 @@ c.. Solution o..
             i = l..(dp)
             min_count = 2 ** 31 - 1
             ___ j __ r..(1, int(i**0.5) + 1
-                min_count = min(min_count, dp[i-j*j]+1)
-            dp.append(min_count)
+                min_count = m.. min_count, dp[i-j*j]+1)
+            dp.a.. min_count)
         r_ dp[n]
 
 
@@ -28,7 +28,7 @@ c.. Solution_2 o..
         ___ i __ r..(1, n+1
             min_count = 2 ** 31 - 1
             ___ j __ r..(1, int(i**0.5) + 1
-                min_count = min(min_count, dp[i-j*j]+1)
+                min_count = m.. min_count, dp[i-j*j]+1)
             dp[i] = min_count
         r_ dp[n]
 

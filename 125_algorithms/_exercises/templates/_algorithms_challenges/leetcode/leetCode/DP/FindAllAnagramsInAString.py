@@ -132,7 +132,7 @@ c.. Solution o..
                     t.pop(s[i])
                 
                 __ n.. t:
-                    result.append(i-l..(p)+1)
+                    result.a.. i-l..(p)+1)
                     x _ # dict
                     _t = s[i-l..(p)+1]
                     x[_t] = 1
@@ -200,7 +200,7 @@ c.. Solution o..
                     t.pop(s[i])
                 
                 __ n.. t:
-                    result.append(i-l..(p)+1)
+                    result.a.. i-l..(p)+1)
                     x _ # dict
                     _t = s[i-l..(p)+1]
                     x[_t] = 1

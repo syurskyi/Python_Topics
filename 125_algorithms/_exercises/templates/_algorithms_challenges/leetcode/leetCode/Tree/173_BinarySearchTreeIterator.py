@@ -23,7 +23,7 @@ c.. BSTIterator o..
     ___ next(self
         # inorder traversal
         _____ self.cur_node:
-            self.node_stack.append(self.cur_node)
+            self.node_stack.a.. self.cur_node)
             self.cur_node = self.cur_node.left
 
         top = self.node_stack.pop()

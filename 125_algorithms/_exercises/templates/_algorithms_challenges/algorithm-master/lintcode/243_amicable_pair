@@ -11,7 +11,7 @@ class Solution:
         for a in range(2, n + 1):
             b = self.get_factor_sum(a)
             if a < b <= n and self.get_factor_sum(b) == a:
-                ans.append([a, b])
+                ans.a.. [a, b])
 
         return ans
 

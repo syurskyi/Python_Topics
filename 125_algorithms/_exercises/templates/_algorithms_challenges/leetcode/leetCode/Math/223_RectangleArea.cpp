@@ -8,8 +8,8 @@ public:
     int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {
         int left = m..(A, E);
         int bottom = m..(B, F);
-        int right = min(C, G);
-        int top = min(D, H);
+        int right = m.. C, G);
+        int top = m.. D, H);
         int size = (D-B) * (C-A) + (H-F) * (G-E);
         __(left < right && bottom < top){
             size -= (top-bottom) * (right-left);

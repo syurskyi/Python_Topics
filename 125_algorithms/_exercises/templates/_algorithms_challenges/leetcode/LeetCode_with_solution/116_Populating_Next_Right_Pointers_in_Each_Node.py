@@ -22,9 +22,9 @@ c_ Solution o..
                 __ last is n.. N..:
                     last.next = node
                 __ node.left is n.. N..:
-                    next_step.append(node.left)
+                    next_step.a.. node.left)
                 __ node.right is n.. N..:
-                    next_step.append(node.right)
+                    next_step.a.. node.right)
                 last = node
             nodes = next_step
 

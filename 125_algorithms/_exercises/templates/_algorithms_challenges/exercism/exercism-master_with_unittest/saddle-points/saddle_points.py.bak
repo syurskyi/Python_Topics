@@ -18,7 +18,7 @@ class SaddlePoints:
 
     def saddle_point(self, row, col):
         return (self.matrix[row][col] == max(self.matrix[row]) and
-                self.matrix[row][col] == min(self.columns[col]))
+                self.matrix[row][col] == m.. self.columns[col]))
 
     def invalid_matrix(self):
         for row in range(len(self.matrix)):

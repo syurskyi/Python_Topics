@@ -52,7 +52,7 @@ c_ Solution o..
             ___ j __ r.. 1, cols + 1
                 temp = dp[j]
                 __ matrix[i - 1][j - 1] __ '1':
-                    dp[j] = min(dp[j - 1], dp[j], prev) + 1
+                    dp[j] = m.. dp[j - 1], dp[j], prev) + 1
                     res = m..(res, dp[j])
                 ____
                     dp[j] = 0

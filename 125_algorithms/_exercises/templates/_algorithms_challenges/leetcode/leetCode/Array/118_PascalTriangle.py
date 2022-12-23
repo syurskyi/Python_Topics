@@ -21,7 +21,7 @@ c.. Solution o..
                     num = triangle[i-1][j]
                 __ i > j-1 >= 0:
                     num += triangle[i-1][j-1]
-                one_row.append(num)
+                one_row.a.. num)
 
             triangle[i] = one_row
 

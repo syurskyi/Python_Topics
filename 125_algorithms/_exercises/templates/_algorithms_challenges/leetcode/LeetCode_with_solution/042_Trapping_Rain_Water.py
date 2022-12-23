@@ -35,7 +35,7 @@ c_ Solution o..
         # computer rain water
         __ end - start <= 1:
             r_ 0
-        min_m = min(height[start], height[end])
+        min_m = m.. height[start], height[end])
         res = min_m * (end - start - 1)
         step = 0
         ___ index __ r.. start + 1, end

@@ -17,17 +17,17 @@ c.. Solution o..
                 num = num * 10 + ord(ch) - ord('0')
             __ n.. ch.isdigit() a.. ch != " " or i __ l..(s) - 1:
                 __ sign __ "+":
-                    num_stack.append(num)
+                    num_stack.a.. num)
                 ____ sign __ "-":
-                    num_stack.append(-num)
+                    num_stack.a.. -num)
                 ____ sign __ "*":
-                    num_stack.append(num * num_stack.pop())
+                    num_stack.a.. num * num_stack.pop())
                 ____
                     tmp = num_stack.pop()
                     divid = tmp / num
                     __ tmp / num < 0 a.. tmp % num != 0:
                         divid += 1
-                    num_stack.append(divid)
+                    num_stack.a.. divid)
                 sign = ch
                 num = 0
         r_ s..(num_stack)

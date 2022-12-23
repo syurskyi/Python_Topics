@@ -64,7 +64,7 @@ c.. Solution o..
                 # matrix
                 __ matrix[y][x] __ 'x':
                     raise IndexError
-                result.append(matrix[y][x])
+                result.a.. matrix[y][x])
                 matrix[y][x] = 'x'
                 x += 1
 
@@ -80,7 +80,7 @@ c.. Solution o..
                 # matrix
                 __ matrix[y][x] __ 'x':
                     raise IndexError
-                result.append(matrix[y][x])
+                result.a.. matrix[y][x])
                 matrix[y][x] = 'x'
                 y += 1
             except IndexError:
@@ -95,7 +95,7 @@ c.. Solution o..
                 # matrix
                 __ matrix[y][x] __ 'x' or x < 0:
                     raise IndexError
-                result.append(matrix[y][x])
+                result.a.. matrix[y][x])
                 matrix[y][x] = 'x'
                 x -= 1
             except IndexError:
@@ -111,7 +111,7 @@ c.. Solution o..
                 # matrix
                 __ matrix[y][x] __ 'x' or y < 0:
                     raise IndexError
-                result.append(matrix[y][x])
+                result.a.. matrix[y][x])
                 matrix[y][x] = 'x'
                 y -= 1
             except IndexError:

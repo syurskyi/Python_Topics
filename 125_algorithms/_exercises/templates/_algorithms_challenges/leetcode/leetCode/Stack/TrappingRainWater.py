@@ -96,10 +96,10 @@ c.. Solution o..
         
         _____ i < length:
             __ height[i] <= height[stack[-1]]:
-                stack.append(i)
+                stack.a.. i)
                 i += 1
             ____
-                mins = min(height[stack[0]], height[i])
+                mins = m.. height[stack[0]], height[i])
                 index = 0
                 ___ j __ xrange(stack[0], i
                     _ = mins - height[j]
@@ -112,7 +112,7 @@ c.. Solution o..
                 ____
                     stack = [stack[0]]
                 
-                stack.append(i)
+                stack.a.. i)
                 i += 1
 
         r_ s..(result)

@@ -46,11 +46,11 @@ c.. Solution o..
             __ tail >= i.start:
                 tail = m..(tail, i.end)
             ____
-                result.append([head, tail])
+                result.a.. [head, tail])
                 head = i.start
                 tail = i.end
 
-        result.append([head, tail])
+        result.a.. [head, tail])
         r_ result
 
 test = (
@@ -87,11 +87,11 @@ ___ mergeArray(sentences
         __ tail >= i[0]:
             tail = m..(tail, i[1])
         ____
-            result.append([head, tail])
+            result.a.. [head, tail])
             head = i[0]
             tail = i[1]
 
-    result.append([head, tail])
+    result.a.. [head, tail])
     print(result)
 
 mergeArray(test)

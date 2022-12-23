@@ -17,12 +17,12 @@ c.. Solution o..
         _____ root or tree_stack:
             # Go along the left child
             __ root:
-                tree_stack.append(root)
+                tree_stack.a.. root)
                 root = root.left
             # Meet a left, go back to the parent node
             ____
                 node = tree_stack.pop()
-                inorder_tra.append(node.val)
+                inorder_tra.a.. node.val)
                 root = node.right
 
         r_ inorder_tra
@@ -38,7 +38,7 @@ c.. Solution_2 o..
     ___ helper  root, inorder_tra
         __ root:
             self.helper(root.left, inorder_tra)
-            inorder_tra.append(root.val)
+            inorder_tra.a.. root.val)
             self.helper(root.right, inorder_tra)
 
 """

@@ -36,7 +36,7 @@ c.. Solution o..
         result   # list
         
         ___ i __ nums[::-1]:
-            result.append(bisect.bisect_left(x, i))
+            result.a.. bisect.bisect_left(x, i))
             bisect.insort(x,i)
         
         r_ result[::-1]

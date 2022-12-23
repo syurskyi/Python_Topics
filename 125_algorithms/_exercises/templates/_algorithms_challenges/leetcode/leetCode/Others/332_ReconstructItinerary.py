@@ -19,7 +19,7 @@ c.. Solution o..
         ___ visit(airport
             _____ targets[airport]:
                 visit(targets[airport].pop())
-            route.append(airport)
+            route.a.. airport)
         visit('JFK')
 
         r_ route[::-1]

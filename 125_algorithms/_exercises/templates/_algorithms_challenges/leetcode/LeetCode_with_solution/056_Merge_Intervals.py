@@ -16,7 +16,7 @@ c_ Solution o..
         __ ls <= 1:
             r_ intervals
         # sort by start
-        intervals.sort(k.._l... x: x.start)
+        intervals.s.. k.._l... x: x.start)
         pos = 0
         w.. pos < l.. intervals) - 1:
             # check overlap

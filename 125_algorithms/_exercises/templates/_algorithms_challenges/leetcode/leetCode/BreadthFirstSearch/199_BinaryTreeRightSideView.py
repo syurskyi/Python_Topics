@@ -20,10 +20,10 @@ c.. Solution o..
         _____ cur_level:
             ___ node __ cur_level:
                 __ node.left:
-                    next_level.append(node.left)
+                    next_level.a.. node.left)
                 __ node.right:
-                    next_level.append(node.right)
-            result.append(cur_level[-1].val)
+                    next_level.a.. node.right)
+            result.a.. cur_level[-1].val)
             cur_level = next_level
             next_level   # list
         r_ result

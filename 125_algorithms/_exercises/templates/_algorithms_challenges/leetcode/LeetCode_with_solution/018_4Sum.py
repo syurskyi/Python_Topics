@@ -17,7 +17,7 @@ c_ Solution o..
             ___ j __ r.. i + 1, ls - 2
                 res_2 = sort_nums[i] + sort_nums[j]
                 try:
-                    pairs[target - res_2].append([i, j])
+                    pairs[target - res_2].a.. [i, j])
                 except KeyError:
                     pairs[target - res_2] = [[i, j]]
         ___ key, temp __ pairs.items(

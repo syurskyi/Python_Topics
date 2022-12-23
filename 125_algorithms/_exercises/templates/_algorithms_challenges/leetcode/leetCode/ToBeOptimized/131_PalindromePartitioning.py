@@ -31,12 +31,12 @@ c.. Solution o..
         __ start __ self.end:
             # It's confused the following sentence doesn't work.
             # self.result.append(sub_strs)
-            self.result.append(sub_strs[:])
+            self.result.a.. sub_strs[:])
             r_
 
         ___ i __ r..(start, self.end
             __ self.is_palindrome[start][i]:
-                sub_strs.append(self.str[start:i+1])
+                sub_strs.a.. self.str[start:i+1])
                 self.palindrome_partition(i+1, sub_strs)
                 sub_strs.pop()      # Backtracking here
 

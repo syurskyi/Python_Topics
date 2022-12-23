@@ -62,7 +62,7 @@ c.. Solution o..
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         
-        nums.sort()
+        nums.s.. )
         middle = nums[l..(nums) // 2]
         larger = [i ___ i __ nums[l..(nums)//2:] __ i != middle]
         smaller = [i ___ i __ nums[:l..(nums)//2] __ i != middle]

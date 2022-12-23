@@ -4,10 +4,10 @@ c_ Solution:
         res =    # list
         # 1, n-1
         ___ i __ r.. 1, n
-            res.append(i)
+            res.a.. i)
             prefix_sum = prefix_sum + i
         # sum(from 1 to n-1)
-        res.append(-prefix_sum)
+        res.a.. -prefix_sum)
         r_ res
     
     # def sumZero(self, n: int) -> List[int]:

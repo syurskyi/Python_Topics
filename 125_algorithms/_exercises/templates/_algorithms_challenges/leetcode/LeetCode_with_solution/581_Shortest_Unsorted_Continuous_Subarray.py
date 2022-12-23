@@ -26,13 +26,13 @@ c_ Solution o..
         l, r = l.. nums), 0
         ___ i __ r.. l.. nums)):
             w.. l.. stack) != 0 a.. nums[stack[-1]] > nums[i]:
-                l = min(l, stack.pop())
-            stack.append(i)
+                l = m.. l, stack.pop())
+            stack.a.. i)
         stack =    # list
         ___ i __ r.. l.. nums) - 1, -1, -1
             w.. l.. stack) != 0 a.. nums[stack[-1]] < nums[i]:
                 r = m..(r, stack.pop())
-            stack.append(i)
+            stack.a.. i)
         __ r > l:
             r_ r - l + 1
         r_ 0

@@ -34,10 +34,10 @@ c_ Solution o..
         stack = [root]
         w.. l.. stack) > 0:
             curr = stack.pop()
-            res.append(curr.val)
+            res.a.. curr.val)
             __ curr.right is n.. N..:
-                stack.append(curr.right)
+                stack.a.. curr.right)
             __ curr.left is n.. N..:
-                stack.append(curr.left)
+                stack.a.. curr.left)
         r_ res
 

@@ -34,14 +34,14 @@ c.. Solution o..
                         __ (next_word n.. __ visited_word a..
                                 next_word __ wordlist or next_word __ endWord
                             __ next_word n.. __ next_level:
-                                next_level.append(next_word)
+                                next_level.a.. next_word)
                             ____
                                 pass
 
                             __ next_word n.. __ self.pre_word_list:
                                 self.pre_word_list[next_word] = [cur_word]
                             ____
-                                self.pre_word_list[next_word].append(cur_word)
+                                self.pre_word_list[next_word].a.. cur_word)
                         ____
                             pass
             ___ w __ next_level:
@@ -61,10 +61,10 @@ c.. Solution o..
     """
     ___ dfs_sequences  beginWord, endWord, path
         __ beginWord __ endWord:
-            self.results.append(list(path[-1::-1]))
+            self.results.a.. list(path[-1::-1]))
         ____ endWord __ self.pre_word_list:
             ___ pre_w __ self.pre_word_list[endWord]:
-                path.append(pre_w)
+                path.a.. pre_w)
                 self.dfs_sequences(beginWord, pre_w, path)
                 path.pop()
         ____

@@ -18,5 +18,5 @@ c_ Solution o..
                 eof = T..
             ___ i __ r.. sz
                 buf[pos + i] = buffer[i]
-            pos += min(n - pos, sz)
+            pos += m.. n - pos, sz)
         r_ pos

@@ -56,10 +56,10 @@ c_ Stack o..
         :type x: int
         :rtype: nothing
         """
-        queue2.append(x)
+        queue2.a.. x)
         curr_top = x
         w.. l.. queue1
-            queue2.append(queue1.pop(0))
+            queue2.a.. queue1.pop(0))
         temp = queue2
         queue2 = queue1
         queue1 = temp

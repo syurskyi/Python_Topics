@@ -87,12 +87,12 @@ c.. CBTInserter o..
         _____ current_nodes or _next_node:
             ___ i __ current_nodes:
                 __ i.left:
-                    result.append(i.left.val)
-                    _next_node.append(i.left)
+                    result.a.. i.left.val)
+                    _next_node.a.. i.left)
         
                 __ i.right:
-                    result.append(i.right.val)
-                    _next_node.append(i.right)
+                    result.a.. i.right.val)
+                    _next_node.a.. i.right)
             
             current_nodes = _next_node
             _next_node   # list
@@ -110,12 +110,12 @@ c.. CBTInserter o..
         __ n.. node.left:
             node.left = TreeNode(v)
             parent = node
-            self._next_node.append(node.left)
+            self._next_node.a.. node.left)
 
         ____ n.. node.right:
             node.right = TreeNode(v)
             parent = node
-            self._next_node.append(node.right)
+            self._next_node.a.. node.right)
             self.current_node.pop()
             
         __ n.. self.current_node:

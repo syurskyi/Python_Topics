@@ -10,5 +10,5 @@ c_ Solution o..
         ___ i, n __ e.. B
             val_index[n] = i
         ___ n __ A:
-            ans.append(val_index[n])
+            ans.a.. val_index[n])
         r_ ans

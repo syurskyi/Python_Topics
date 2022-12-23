@@ -22,7 +22,7 @@ ___ generate_child_tree  node, n, solution
     __ node[2] __ node[3] __ n:
         node[0] = None
         node[1] = None
-        solution.append(node[4])
+        solution.a.. node[4])
 
     # the node have both left and right child
     ____ node[2] > node[3] a.. node[2] < n:

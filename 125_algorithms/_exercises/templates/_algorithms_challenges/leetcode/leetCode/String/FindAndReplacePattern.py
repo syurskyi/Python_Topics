@@ -54,11 +54,11 @@ c.. Solution o..
             patterns = {word[0]: '0'} 
             ___ i __ word[1:]:
                 __ patterns.get(i) is n.. None:
-                    result.append(patterns.get(i))
+                    result.a.. patterns.get(i))
                 ____
                     current = str(int(current)+1)
                     patterns[i] = current
-                    result.append(current)
+                    result.a.. current)
 
             r_ ''.join(result)
         
@@ -67,6 +67,6 @@ c.. Solution o..
         result   # list
         ___ i __ words:
             __ x __ translate_pattern(i
-                result.append(i)
+                result.a.. i)
         
         r_ result

@@ -16,8 +16,8 @@ c_ Solution o..
         digit_logs =    # list
         ___ log __ logs:
             __ log.split(' ')[1].isnumeric(
-                digit_logs.append(log)
+                digit_logs.a.. log)
             ____
-                letter_logs.append(log)
+                letter_logs.a.. log)
         r_ s..(letter_logs, k.._l... x: x.split(' ')[1:] + x.split(' ')[0]) + digit_logs
         

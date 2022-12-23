@@ -6,7 +6,7 @@ c_ Solution:
             # ith row [i, 2*i, 3*i, ..., n*i]
             # for each column, k = x // i
             ___ i __ r.. 1, m+1
-                count += min(x // i, n)
+                count += m.. x // i, n)
             r_ count >= k
 
         lo, hi = 1, m * n

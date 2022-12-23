@@ -45,10 +45,10 @@ c.. Solution_2 o..
         _____ p n.. __ parent_record or q n.. __ parent_record:
             node = node_stack.pop()
             __ node.left:
-                node_stack.append(node.left)
+                node_stack.a.. node.left)
                 parent_record[node.left] = node
             __ node.right:
-                node_stack.append(node.right)
+                node_stack.a.. node.right)
                 parent_record[node.right] = node
 
         # Trace brack from one node, record the path.

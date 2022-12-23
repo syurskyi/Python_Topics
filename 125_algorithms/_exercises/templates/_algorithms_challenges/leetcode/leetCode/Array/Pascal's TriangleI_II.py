@@ -50,7 +50,7 @@ c.. Solution o..
             ___ j __ r..(1, i-1
                 x[j] = result[-1][j] + result[-1][j-1]
             
-            result.append(x)
+            result.a.. x)
         
         r_ result
 
@@ -70,6 +70,6 @@ c.. Solution o..
             ___ j __ r..(1, i-1
                 x[j] = result[-1][j] + result[-1][j-1]
             
-            result.append(x)
+            result.a.. x)
         
         r_ result[-1]

@@ -8,7 +8,7 @@ c.. Solution o..
     ___ hIndex  citations
         __ n.. citations:
             r_ 0
-        citations.sort()
+        citations.s.. )
         length = l..(citations)
         ___ i __ r..(length, 0, -1
             __ citations[length-i] >= i:

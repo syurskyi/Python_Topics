@@ -23,9 +23,9 @@ c.. Solution o..
                     # Leetcode think 12/-7 = -1, 12/-13 = 0
                     result = abs(operand_1) / abs(operand_2) * negative
 
-                value_stack.append(result)
+                value_stack.a.. result)
             ____
-                value_stack.append(int(token))
+                value_stack.a.. int(token))
         r_ value_stack[-1]
 
 """

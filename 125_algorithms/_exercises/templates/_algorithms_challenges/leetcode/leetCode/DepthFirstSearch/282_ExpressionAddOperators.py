@@ -22,7 +22,7 @@ c.. Solution o..
         """
         __ pos __ l..(num
             __ value __ target:
-                ans.append(path)
+                ans.a.. path)
             r_
 
         ___ i __ r..(pos + 1, l..(num) + 1

@@ -100,14 +100,14 @@ c.. Solution o..
 #         return maxes
 
     # O(n²)
-        pairs.sort(k.._l... x: x[1])
+        pairs.s.. k.._l... x: x[1])
         dp = [1]
         
         currentMaxes = 0
         
         ___ i __ r..(1, l..(pairs)):
             maxes = m..([dp[j]+1 __ pairs[i][0] > pairs[j][1] else 1 ___ j __ r..(i)])
-            dp.append(maxes)
+            dp.a.. maxes)
             currentMaxes = m..(maxes, currentMaxes)
 
             

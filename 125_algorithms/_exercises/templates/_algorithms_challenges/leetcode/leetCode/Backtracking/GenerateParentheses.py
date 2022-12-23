@@ -32,7 +32,7 @@ c.. Solution o..
         
         ___ _generateParenthesis(x, y, parenthesis
             __ n.. x a.. n.. y:
-                result.append(parenthesis)
+                result.a.. parenthesis)
                 r_
             
             __ y > x:

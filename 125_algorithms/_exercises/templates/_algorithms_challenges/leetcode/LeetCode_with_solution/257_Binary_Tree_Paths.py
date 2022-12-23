@@ -18,7 +18,7 @@ c_ Solution:
 
     ___ get_path  result, path, node
         __ node.left is N.. a.. node.right is N..:
-            result.append(path + [s..(node.val)])
+            result.a.. path + [s..(node.val)])
             r_
         path = path + [s..(node.val)]
         __ node.left is n.. N..:

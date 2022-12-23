@@ -66,18 +66,18 @@ c.. Solution o..
         
         ___ i __ r..(1, l..(A)):
             __ A[i] > maxes[i-1]:
-                maxes.append(A[i])
+                maxes.a.. A[i])
             ____
-                maxes.append(maxes[i-1])
+                maxes.a.. maxes[i-1])
         
         A = A[::-1]
         
         ___ i __ r..(1, l..(A)):
             
             __ A[i] < mines[i-1]:
-                mines.append(A[i])
+                mines.a.. A[i])
             ____
-                mines.append(mines[i-1])
+                mines.a.. mines[i-1])
         
         mines = mines[::-1]
         ___ i __ r..(l..(mines)-1

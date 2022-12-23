@@ -16,7 +16,7 @@ c_ Solution o..
                     __ start + l __ ls:
                         r_ T..
                     __ visited[start + l] __ 0:
-                        queue.append(start + l)
+                        queue.a.. start + l)
                         visited[start + l] = 1
         r_ F..
 

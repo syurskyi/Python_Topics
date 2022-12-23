@@ -10,15 +10,15 @@ c_ Solution o..
         pos = -1
         ___ index, value __ e.. s
             __ value __ 'aeiouAEIOU':
-                str_index.append(-1)
-                vowel.append(value)
+                str_index.a.. -1)
+                vowel.a.. value)
             ____
-                str_index.append(index)
+                str_index.a.. index)
         ___ index __ str_index:
             __ index < 0:
-                res.append(vowel[pos])
+                res.a.. vowel[pos])
                 pos -= 1
             ____
-                res.append(s[index])
+                res.a.. s[index])
         r_ ''.join(res)
 

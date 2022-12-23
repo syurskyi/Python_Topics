@@ -48,7 +48,7 @@ c.. Solution o..
         """
         output = [1]
         ___ i __ r..(l..(nums)-1
-            output.append(output[-1] * nums[i])
+            output.a.. output[-1] * nums[i])
         
         right = 1
         ___ i __ r..(l..(nums)-1, -1, -1

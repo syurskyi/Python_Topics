@@ -66,13 +66,13 @@ c_ Solution o..
         w.. l.. stack) > 0:
             curr = stack.pop()
             __ n.. isinstance(curr, TreeNode
-                res.append(curr)
+                res.a.. curr)
                 c_
             __ curr.right is n.. N..:
-                stack.append(curr.right)
-            stack.append(curr.val)
+                stack.a.. curr.right)
+            stack.a.. curr.val)
             __ curr.left is n.. N..:
-                stack.append(curr.left)
+                stack.a.. curr.left)
         r_ res
 
 

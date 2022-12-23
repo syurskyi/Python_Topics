@@ -50,7 +50,7 @@ c.. NestedIterator o..
         """
         self.stack   # list
         ___ item __ nestedList[::-1]:
-            self.stack.append(item)
+            self.stack.a.. item)
 
     ___ next(self
         val = self.stack[-1].getInteger()
@@ -65,7 +65,7 @@ c.. NestedIterator o..
             self.stack.pop()
             __ curr.getList(
                 ___ i __ curr.getList()[::-1]:
-                    self.stack.append(i)
+                    self.stack.a.. i)
         r_ False
 
 

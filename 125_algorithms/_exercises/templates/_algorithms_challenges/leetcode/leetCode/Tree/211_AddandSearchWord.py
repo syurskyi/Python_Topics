@@ -13,7 +13,7 @@ c.. WordDictionary o..
 
     ___ addWord  word
         __ word:
-            self.words_dict[l..(word)].append(word)
+            self.words_dict[l..(word)].a.. word)
 
     ___ search  word
         """

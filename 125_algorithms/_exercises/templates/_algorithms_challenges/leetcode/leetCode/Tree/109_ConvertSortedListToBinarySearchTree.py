@@ -23,7 +23,7 @@ c.. Solution o..
         """
         nums   # list
         _____ head:
-            nums.append(head.val)
+            nums.a.. head.val)
             head = head.next
         __ n.. nums:
             r_ None

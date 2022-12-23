@@ -12,7 +12,7 @@ c_ TwoSum o..
         Add the number to an internal data structure.
         :rtype: nothing
         """
-        internal.append(number)
+        internal.a.. number)
         __ number __ dic:
             # more than once
             dic[number] = T..

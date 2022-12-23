@@ -41,10 +41,10 @@ c.. Solution o..
         __ n1 __ 0:
             r_ list2[begin2 + k - 1]
         __ k __ 1:
-            r_ min(list1[begin1], list2[begin2])
+            r_ m.. list1[begin1], list2[begin2])
 
         # Get the next search interval
-        t1 = min(k / 2, n1)
+        t1 = m.. k / 2, n1)
         t2 = k - t1
         __ list1[begin1 + t1 - 1] < list2[begin2 + t2 - 1]:
             r_ self.find_kth_num(list1, begin1 + t1, end1, list2, begin2, begin2 + t2, k - t1)

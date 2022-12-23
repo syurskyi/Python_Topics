@@ -12,7 +12,7 @@ c.. Solution o..
         match_rule = {")": "(", "]": "[", "}": "{"}
         ___ symble __ s:
             __ symble __ "(" or symble __ "[" or symble __ "{":
-                parenthes_stack.append(symble)
+                parenthes_stack.a.. symble)
 
             ____
                 # Check if stack top matches the current ), ] or }.

@@ -14,7 +14,7 @@ c_ Solution o..
             curr = t + ')'
             ___ index __ r.. l.. curr)):
                 __ curr[index] __ ')':
-                    res.append(curr[:index] + '(' + curr[index:])
+                    res.a.. curr[:index] + '(' + curr[index:])
         r_ list(s..(res))
 
 

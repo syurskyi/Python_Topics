@@ -14,14 +14,14 @@ c.. Solution o..
     ___ combinationSum2  candidates, target
         __ n.. candidates:
             r_ []
-        candidates.sort()
+        candidates.s.. )
         ans   # list
         self.dfs_search(candidates, 0, target, [], ans)
         r_ ans
 
     ___ dfs_search  candidates, start, target, path, ans
         __ target __ 0:
-            ans.append(path)
+            ans.a.. path)
         ___ i __ xrange(start, l..(candidates)):
             num = candidates[i]
             __ num > target:

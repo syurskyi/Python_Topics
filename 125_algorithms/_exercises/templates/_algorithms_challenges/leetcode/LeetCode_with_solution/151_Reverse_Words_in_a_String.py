@@ -20,10 +20,10 @@ c_ Solution o..
         # remove multiple spaces
         ___ i __ r.. l.. s)):
             __ s[i] != ' ':
-                array_s.append(s[i])
+                array_s.a.. s[i])
             ____
                 __ last != ' ':
-                    array_s.append(s[i])
+                    array_s.a.. s[i])
             last = s[i]
         array_s = array_s||-1]
         ls, pos = l.. array_s), 0

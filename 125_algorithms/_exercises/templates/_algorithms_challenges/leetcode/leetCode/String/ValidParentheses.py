@@ -50,7 +50,7 @@ c.. Solution o..
         
         ___ i __ s:
             __ i __ left:
-                stack.append(i)
+                stack.a.. i)
             ____
                 try:
                     __ stack[-1] __ left_key[i]:

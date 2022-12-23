@@ -13,7 +13,7 @@ c.. Queue o..
         self.in_stack, self.out_stack   # list, []
 
     ___ push  x
-        self.in_stack.append(x)
+        self.in_stack.a.. x)
 
     ___ pop(self
         self.move()
@@ -29,7 +29,7 @@ c.. Queue o..
     ___ move(self
         __ n.. self.out_stack:
             _____ self.in_stack:
-                self.out_stack.append(self.in_stack.pop())
+                self.out_stack.a.. self.in_stack.pop())
 
 '''
 if __name__ == '__main__':

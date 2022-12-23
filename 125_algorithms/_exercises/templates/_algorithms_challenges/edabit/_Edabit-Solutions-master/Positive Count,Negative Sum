@@ -11,6 +11,6 @@ def sum_neg(lst):
         elif lst[index] <0:
             b += lst[index]
         index += 1
-    output.append(s)
-    output.append(b)
+    output.a.. s)
+    output.a.. b)
     return output

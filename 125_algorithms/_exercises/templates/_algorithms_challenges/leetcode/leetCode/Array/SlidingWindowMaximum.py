@@ -77,13 +77,13 @@ c.. Solution o..
         
         ___ i __ nums[k:]:
             pop = x.popleft()
-            x.append(i)
+            x.a.. i)
             
             index = self.find_bi(y, pop)
             y.pop(index)
             
             bisect.insort_left(y, i)
             
-            result.append(y[-1])
+            result.a.. y[-1])
         r_ result
         

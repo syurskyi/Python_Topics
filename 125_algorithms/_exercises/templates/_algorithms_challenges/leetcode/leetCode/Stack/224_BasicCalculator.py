@@ -26,7 +26,7 @@ c.. Solution o..
             __ ch __ " ":
                 pass
             ____ ch __ "(":
-                sign_stack.append(sign)
+                sign_stack.a.. sign)
             ____ ch __ "+-":
                 result += num * sign
                 sign = sign_stack[-1] * (1 __ ch __ "+" else -1)

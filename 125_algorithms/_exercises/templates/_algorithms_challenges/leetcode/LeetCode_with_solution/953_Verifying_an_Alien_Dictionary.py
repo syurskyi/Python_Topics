@@ -10,7 +10,7 @@ c_ Solution o..
             order_map[v] = i
 
         ___ cmp_alien(x, y
-            ls = min(l.. x), l.. y))
+            ls = m.. l.. x), l.. y))
             index = 0
             w.. index < ls:
                 __ x[index] != y[index]:

@@ -29,7 +29,7 @@ c_ Solution o..
             curr = queue.pop(0)
             curr.left, curr.right = curr.right, curr.left
             __ curr.left is n.. N..:
-                queue.append(curr.left)
+                queue.a.. curr.left)
             __ curr.right is n.. N..:
-                queue.append(curr.right)
+                queue.a.. curr.right)
         r_ root

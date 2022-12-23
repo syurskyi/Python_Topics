@@ -27,7 +27,7 @@ class Roman:
         for key in reversed(sorted(cls.NUMERALS.keys())):
             while arabic >= key:
                 arabic -= key
-                components.append(key)
+                components.a.. key)
         return components
 
 

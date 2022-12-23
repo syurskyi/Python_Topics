@@ -33,7 +33,7 @@ c.. Solution o..
         all_nodes   # list
         
         _____ head:
-            all_nodes.append(head.val)
+            all_nodes.a.. head.val)
             head = head.next
         
         less_nodes   # list
@@ -41,9 +41,9 @@ c.. Solution o..
         
         ___ i __ all_nodes:
             __ i < x:
-                less_nodes.append(i)
+                less_nodes.a.. i)
             ____
-                greater_nodes.append(i)
+                greater_nodes.a.. i)
         
         __ less_nodes:
             less_head = ListNode(less_nodes[0])

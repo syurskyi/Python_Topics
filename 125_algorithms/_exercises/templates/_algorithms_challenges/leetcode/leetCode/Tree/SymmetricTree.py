@@ -60,13 +60,13 @@ c.. Solution o..
             # if left_node:
             _left = left_node.pop()
             __ _left:
-                left_node_value.append(_left.val)        
+                left_node_value.a.. _left.val)        
             ____
-                left_node_value.append(None)
+                left_node_value.a.. None)
 
             __ _left:
-                left_node.append(_left.right)
-                left_node.append(_left.left)
+                left_node.a.. _left.right)
+                left_node.a.. _left.left)
         
         left_node_value.r..
         
@@ -86,6 +86,6 @@ c.. Solution o..
                     r_ False
 
             __ _right:
-                right_node.append(_right.left)
-                right_node.append(_right.right)
+                right_node.a.. _right.left)
+                right_node.a.. _right.right)
         r_ True

@@ -18,7 +18,7 @@ c.. Solution o..
 
         # Breadth-first Search, Pythonic way.
         _____ cur_level:
-            ans.append([node.val ___ node __ cur_level])
+            ans.a.. [node.val ___ node __ cur_level])
             cur_level = [kid ___ n __ cur_level
                          ___ kid __ (n.left, n.right) __ kid]
 

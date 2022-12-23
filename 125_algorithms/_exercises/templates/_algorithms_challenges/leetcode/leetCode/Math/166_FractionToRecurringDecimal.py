@@ -11,21 +11,21 @@ c.. Solution o..
         numerator, denominator = abs(numerator), abs(denominator)
 
         answer   # list
-        answer.append(str(numerator/denominator))
+        answer.a.. str(numerator/denominator))
         remainder = numerator % denominator
         __ remainder:
-            answer.append(".")
+            answer.a.. ".")
         # Keep the start position of the repeating part
         remainder_start _ # dict
         _____ remainder:
             remainder *= 10
             __ remainder __ remainder_start:
                 answer.insert(remainder_start[remainder], "(")
-                answer.append(")")
+                answer.a.. ")")
                 ______
             ____
                 remainder_start[remainder] = l..(answer)
-                answer.append(str(remainder/denominator))
+                answer.a.. str(remainder/denominator))
                 remainder = remainder % denominator
         __ negative:
             answer.insert(0, "-")

@@ -50,16 +50,16 @@ c.. Solution o..
         n_cols = l..(board[0])
         __ row - 1 >= 0 a.. board[row-1][col] __ "O":
             board[row-1][col] = "#"
-            adjacency_node.append([row-1, col])
+            adjacency_node.a.. [row-1, col])
         __ row + 1 < m_rows a.. board[row+1][col] __ "O":
             board[row+1][col] = "#"
-            adjacency_node.append([row+1, col])
+            adjacency_node.a.. [row+1, col])
         __ col - 1 >= 0 a.. board[row][col-1] __ "O":
             board[row][col-1] = "#"
-            adjacency_node.append([row, col-1])
+            adjacency_node.a.. [row, col-1])
         __ col + 1 < n_cols a.. board[row][col+1] __ "O":
             board[row][col+1] = "#"
-            adjacency_node.append([row, col+1])
+            adjacency_node.a.. [row, col+1])
         r_ adjacency_node
 
     # Do BFS to every out border O ndoe.

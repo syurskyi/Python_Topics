@@ -16,7 +16,7 @@ c_ MovingAverage o..
         """
         __ l.. curr_range) __ size:
             curr_range.pop(0)
-        curr_range.append(val)
+        curr_range.a.. val)
         r_ s..(curr_range) * 1.0 / l.. curr_range)
         
 

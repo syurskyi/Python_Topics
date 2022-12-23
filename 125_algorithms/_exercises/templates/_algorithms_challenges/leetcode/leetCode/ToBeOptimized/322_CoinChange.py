@@ -17,7 +17,7 @@ c.. Solution o..
         ___ i __ xrange(amount+1
             ___ coin __ coins:
                 __ coin <= i:
-                    dp[i] = min(dp[i], dp[i-coin]+1)
+                    dp[i] = m.. dp[i], dp[i-coin]+1)
         r_ -1 __ dp[amount] > amount else dp[amount]
 
 
@@ -31,7 +31,7 @@ c.. Solution_2 o..
         count = 0
 
         # upper bound on number of coins (+1 to represent the impossible case)
-        coins.sort(reverse = True)
+        coins.s.. reverse = True)
         upperBound = amount / coins[-1] + 1
 
         # Use upperBound to pruning.
@@ -47,7 +47,7 @@ c.. Solution_2 o..
                         c_
                     ____ n.. amounts[new_sum]:
                         amounts[new_sum] = True
-                        new_coins_sum.append(new_sum)
+                        new_coins_sum.a.. new_sum)
                     ____
                         pass
             coins_sum = new_coins_sum

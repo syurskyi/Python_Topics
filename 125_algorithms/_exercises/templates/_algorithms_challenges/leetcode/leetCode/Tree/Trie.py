@@ -35,7 +35,7 @@ c.. TrieNode o..
         self.breakable = False
     
     ___ addNext  nextNode
-        self.nextNodes.append(nextNode)
+        self.nextNodes.a.. nextNode)
     
     ___ setBreakable  enable
         self.breakable = enable
@@ -120,7 +120,7 @@ c.. Trie o..
         ____
 
             rootWord = TrieNode(word[0])
-            self.root.append(rootWord)
+            self.root.a.. rootWord)
             ___ i __ word[1:]:
                 nextNode = TrieNode(i)
                 rootWord.addNext(nextNode)

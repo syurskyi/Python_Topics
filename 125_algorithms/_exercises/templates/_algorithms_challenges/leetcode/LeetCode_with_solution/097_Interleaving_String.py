@@ -17,7 +17,7 @@ c_ Solution o..
             __ p[0] __ l.. s1) a.. p[1] __ l.. s2
                 r_ T..
             __ p[0] __ -1:
-                queue.append(p)
+                queue.a.. p)
                 index += 1
                 c_
             __ p __ visited:

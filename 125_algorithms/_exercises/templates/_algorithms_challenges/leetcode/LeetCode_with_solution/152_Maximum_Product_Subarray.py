@@ -10,6 +10,6 @@ c_ Solution o..
         ___ i __ r.. 1, l.. nums)):
             mx, mn = max_here, min_here
             max_here = m..(m..(mx * nums[i], nums[i]), mn * nums[i])
-            min_here = min(min(mx * nums[i], nums[i]), mn * nums[i])
+            min_here = m.. m.. mx * nums[i], nums[i]), mn * nums[i])
             max_so_far = m..(max_here, max_so_far)
         r_ max_so_far

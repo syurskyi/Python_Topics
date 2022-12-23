@@ -19,7 +19,7 @@ c.. Solution o..
         copyed_node_pair[node] = copy_head
 
         nodes_stack   # list
-        nodes_stack.append(node)
+        nodes_stack.a.. node)
         _____ nodes_stack:
             one_node = nodes_stack.pop()
 
@@ -28,9 +28,9 @@ c.. Solution o..
                     copy_node = UndirectedGraphNode(neighbor.label)
                     copy_node.neighbors   # list
                     copyed_node_pair[neighbor] = copy_node
-                    nodes_stack.append(neighbor)
+                    nodes_stack.a.. neighbor)
 
-                copyed_node_pair[one_node].neighbors.append(
+                copyed_node_pair[one_node].neighbors.a..
                     copyed_node_pair[neighbor])
 
         r_ copy_head

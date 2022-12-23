@@ -18,7 +18,7 @@ c.. Solution o..
                 __ min_len __ 0:
                     min_len = end - start + 1
                 ____
-                    min_len = min(min_len, end - start + 1)
+                    min_len = m.. min_len, end - start + 1)
                 sums -= nums[start]
                 __ start < end:
                     start += 1

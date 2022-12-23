@@ -12,10 +12,10 @@ c.. Solution o..
         preorder = preorder.split(",")
         stack   # list
         ___ val __ preorder:
-            stack.append(val)
+            stack.a.. val)
             _____ self.twoConsecutive(stack
                 stack = stack[:-3]
-                stack.append("#")
+                stack.a.. "#")
 
         r_ stack __ ["#"]
 

@@ -65,12 +65,12 @@ c.. Solution:
                     __ next_nodes:
                         next_nodes[-1].next = i.left
                         
-                    next_nodes.append(i.left)
+                    next_nodes.a.. i.left)
                 __ i.right:
                     __ next_nodes:
                         next_nodes[-1].next = i.right
                     
-                    next_nodes.append(i.right)
+                    next_nodes.a.. i.right)
             
             current = next_nodes
             next_nodes   # list

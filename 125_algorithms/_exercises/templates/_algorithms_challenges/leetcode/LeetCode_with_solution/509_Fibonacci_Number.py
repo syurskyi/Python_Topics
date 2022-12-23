@@ -2,8 +2,8 @@ c_ Solution o..
 
     ___ - ____:
         memo =    # list
-        memo.append(0)
-        memo.append(1)
+        memo.a.. 0)
+        memo.a.. 1)
 
     ___ fib  N
         """
@@ -14,7 +14,7 @@ c_ Solution o..
         __ N < l.. memo
             r_ memo[N]
         ___ i __ r.. l.. memo), N + 1
-            memo.append(memo[i - 1] + memo[i - 2])
+            memo.a.. memo[i - 1] + memo[i - 2])
         r_ memo[N]
 
     # def fib(self, N):

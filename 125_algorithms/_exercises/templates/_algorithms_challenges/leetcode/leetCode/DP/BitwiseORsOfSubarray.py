@@ -81,7 +81,7 @@ c.. Solution o..
             new = {A[i]}
             ___ j __ dp[i-1]:
                 new.add(j|A[i])
-            dp.append(new)
+            dp.a.. new)
 
         r_ l..(s...union(*dp))
 

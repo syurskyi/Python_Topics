@@ -38,7 +38,7 @@ c_ Solution o..
             __ cand_node < 0: ______
             seen[cand_node] = T..
             ___ nei, d __ graph[cand_node]:
-                dist[nei] = min(dist[nei], dist[cand_node] + d)
+                dist[nei] = m.. dist[nei], dist[cand_node] + d)
 
         ans = m..(dist.values())
         r_ ans __ ans < float('inf') ____ -1

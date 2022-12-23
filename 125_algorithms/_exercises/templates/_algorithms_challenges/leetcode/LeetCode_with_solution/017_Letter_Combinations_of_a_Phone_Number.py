@@ -28,9 +28,9 @@ c_ Solution o..
             __ l.. posfix) > 0:
                 ___ p __ posfix:
                     temp = t + p
-                    result.append(temp)
+                    result.a.. temp)
             ____
-                result.append(t)
+                result.a.. t)
         r_ result
 
 

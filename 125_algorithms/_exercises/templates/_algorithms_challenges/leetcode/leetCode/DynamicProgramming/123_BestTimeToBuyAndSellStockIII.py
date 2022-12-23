@@ -13,7 +13,7 @@ c.. Solution o..
         # Get max profit when buy and sell Stock only once in pre ith day.
         min_buy = prices[0]
         ___ i __ r..(1, days_count
-            min_buy = min(min_buy, prices[i])
+            min_buy = m.. min_buy, prices[i])
             pre_profit[i] = m..(pre_profit[i - 1], prices[i] - min_buy)
 
         # Get max profit when buy and sell Stock only once in post (n-i) days.

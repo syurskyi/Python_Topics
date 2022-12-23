@@ -59,7 +59,7 @@ c.. Solution o..
         robber = [nums[0], nums[1], nums[2]+nums[0]]
         
         ___ i __ r..(3, l..(nums)-1
-            robber.append(m..(nums[i] + robber[i-2], nums[i] + robber[i-3]))
+            robber.a.. m..(nums[i] + robber[i-2], nums[i] + robber[i-3]))
         
         maxes = m..(robber)
         
@@ -69,7 +69,7 @@ c.. Solution o..
         robber = [nums[0], nums[1], nums[2]+nums[0]]
         
         ___ i __ r..(3, l..(nums)-1
-            robber.append(m..(nums[i] + robber[i-2], nums[i] + robber[i-3]))
+            robber.a.. m..(nums[i] + robber[i-2], nums[i] + robber[i-3]))
         
         
         r_ m..(robber+[maxes])

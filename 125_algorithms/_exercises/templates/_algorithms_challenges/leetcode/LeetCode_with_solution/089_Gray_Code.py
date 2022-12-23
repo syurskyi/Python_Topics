@@ -8,7 +8,7 @@ c_ Solution o..
         res = [0]
         ___ i __ r.. n
             ___ j __ reversed(r.. l.. res))):
-                res.append(res[j] + (1 << i))
+                res.a.. res[j] + (1 << i))
         r_ res
 
 

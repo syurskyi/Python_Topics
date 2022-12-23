@@ -21,7 +21,7 @@ c.. Solution o..
         high_digit = 2 ** (n-1)
         gray_code_list = self.grayCode(n-1)
         ___ num __ gray_code_list[::-1]:
-            gray_code_list.append(high_digit + num)
+            gray_code_list.a.. high_digit + num)
 
         r_ gray_code_list
 

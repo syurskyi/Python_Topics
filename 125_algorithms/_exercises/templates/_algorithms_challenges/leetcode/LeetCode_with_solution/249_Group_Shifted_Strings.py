@@ -8,7 +8,7 @@ c_ Solution o..
         ___ s __ strings:
             key = hashCode(s)
             try:
-                dic[key].append(s)
+                dic[key].a.. s)
             except KeyError:
                 dic[key] = [s]
         r_ dic.values()

@@ -7,13 +7,13 @@ c.. Solution o..
     # Just like get permute for distinct numbers.
     ___ permuteUnique  nums
         ans   # list
-        nums.sort()
+        nums.s.. )
         self.dfs(nums, 0, ans)
         r_ ans
 
     ___ dfs  num, begin, ans
         __ begin __ l..(num) - 1:
-            ans.append(num)
+            ans.a.. num)
             r_
 
         ___ i __ r..(begin, l..(num)):
@@ -31,11 +31,11 @@ c.. Solution_2 o..
     3. repeat 2 until the next permutation of nums.
     '''
     ___ permuteUnique  nums
-        nums.sort()
+        nums.s.. )
         ans   # list
-        ans.append(nums[:])
+        ans.a.. nums[:])
         _____ self.nextPermutation(nums
-            ans.append(nums[:])
+            ans.a.. nums[:])
 
         r_ ans
 

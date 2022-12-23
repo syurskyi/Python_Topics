@@ -16,7 +16,7 @@ while count < d:
                 continue
                 
                 
-    res.append(a[1])
+    res.a.. a[1])
     count =  count +1
 res = ' '.join(str(e) for e in res)
 print(res)

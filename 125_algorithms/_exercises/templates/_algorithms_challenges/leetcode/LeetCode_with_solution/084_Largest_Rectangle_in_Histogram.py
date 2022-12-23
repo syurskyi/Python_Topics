@@ -16,7 +16,7 @@ c_ Solution o..
                 largest_rectangle = m..(largest_rectangle, heights[stack[top]] * (pos - stack[top - 1] - 1))
                 top -= 1
                 stack.pop()
-            stack.append(pos)
+            stack.a.. pos)
             top += 1
         w.. top > 0:
             largest_rectangle = m..(largest_rectangle, heights[stack[top]] * (ls - stack[top - 1] - 1))

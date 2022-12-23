@@ -15,7 +15,7 @@ c_ Solution o..
         pairs =    # list
         w.. queue a.. l.. pairs) < k:
             _, i, j = heapq.heappop(queue)
-            pairs.append([nums1[i], nums2[j]])
+            pairs.a.. [nums1[i], nums2[j]])
             push(i, j + 1)
             __ j __ 0:
                 push(i + 1, 0)

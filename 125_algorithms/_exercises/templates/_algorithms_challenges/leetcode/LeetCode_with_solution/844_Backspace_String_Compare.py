@@ -11,12 +11,12 @@ c_ Solution o..
         t_stack =    # list
         ___ c __ S:
             __ c != '#':
-                s_stack.append(c)
+                s_stack.a.. c)
             ____ l.. s_stack) != 0:
                 s_stack.pop(-1)
         ___ c __ T:
             __ c != '#':
-                t_stack.append(c)
+                t_stack.a.. c)
             ____ l.. t_stack) != 0:
                 t_stack.pop(-1)
         r_ ''.join(s_stack) __ ''.join(t_stack)

@@ -15,14 +15,14 @@ c_ Solution o..
                 pos += 1
             __ l.. word) + count + l.. curr)<= maxWidth:
                 count += l.. word)
-                curr.append(word)
+                curr.a.. word)
                 pos += 1
             ____
-                res_list.append(curr)
+                res_list.a.. curr)
                 curr =    # list
                 count = 0
         __ l.. curr) > 0:
-            res_list.append(curr)
+            res_list.a.. curr)
         # print res_list
         ___ index, curr __ e.. res_list
             text = ''
@@ -45,7 +45,7 @@ c_ Solution o..
                         text += ' '
                         extra -= 1
                 text += curr[-1]
-            res.append(text)
+            res.a.. text)
         r_ res
 
     # def fullJustify(self, words, maxWidth):

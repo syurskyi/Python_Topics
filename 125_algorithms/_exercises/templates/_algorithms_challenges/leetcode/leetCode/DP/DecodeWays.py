@@ -69,20 +69,20 @@ c.. Solution o..
         letters_dict = {str(iletters[i-1] ___ i __ r..(1, 27)}
         dp   # list
         __ 0 < int(s[0]) < 10:
-            dp.append(1)
+            dp.a.. 1)
         ____
-            dp.append(0)
+            dp.a.. 0)
 
         __ 10 <= int(s[0]+s[1]) < 27:
             __ 0 < int(s[1]) < 10:
-                dp.append(2)
+                dp.a.. 2)
             ____ 
-                dp.append(1)
+                dp.a.. 1)
         ____
             __ s[1] != '0':
-                dp.append(dp[0])
+                dp.a.. dp[0])
             ____
-                dp.append(0)
+                dp.a.. 0)
                 
         ___ i __ r..(2, l..(s)):
             x = 0
@@ -93,7 +93,7 @@ c.. Solution o..
                 __ '10' <= s[i-1] + s[i] < '27':
 
                     x += dp[i-2]
-            dp.append(x)
+            dp.a.. x)
 
         r_ dp[-1]
 #         self.result = 0

@@ -4,7 +4,7 @@
 
 c.. Solution o..
     ___ majorityElement  nums
-        nums.sort()
+        nums.s.. )
         r_ nums[l..(nums) / 2]
 
     # Boyer–Moore majority vote algorithm. Refer to:

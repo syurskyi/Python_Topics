@@ -18,7 +18,7 @@ c.. Solution_2 o..
 
         ___ n __ nums2:
             __ n __ nums1_dict a.. nums1_dict[n] != -1:
-                ans.append(n)
+                ans.a.. n)
                 nums1_dict[n] = -1
         r_ ans
 
@@ -27,8 +27,8 @@ c.. Solution_3 o..
     ___ intersection  nums1, nums2
         # sort the two list, and use two pointer to search to find common elements.
         ans   # list
-        nums1.sort()
-        nums2.sort()
+        nums1.s.. )
+        nums2.s.. )
         i = j = 0
         _____ (i < l..(nums1) a.. j < l..(nums2)):
             __ nums1[i] > nums2[j]:
@@ -37,7 +37,7 @@ c.. Solution_3 o..
                 i += 1
             ____
                 __ n.. l..(ans) or nums1[i] != ans[-1]:
-                    ans.append(nums1[i])
+                    ans.a.. nums1[i])
                 i += 1
                 j += 1
 

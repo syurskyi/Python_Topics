@@ -45,6 +45,6 @@ c_ Solution o..
             r_ -1
         level = 1 + m..(findLeaves_helper(node.left, res), findLeaves_helper(node.right, res))
         __ l.. res) < level + 1:
-            res.append(   # list)
-        res[level].append(node.val)
+            res.a..    # list)
+        res[level].a.. node.val)
         r_ level

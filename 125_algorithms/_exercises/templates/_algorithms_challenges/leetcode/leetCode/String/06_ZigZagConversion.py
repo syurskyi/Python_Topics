@@ -17,11 +17,11 @@ c.. Solution o..
         ___ row __ r..(numRows
             index = row
             _____ index < len_s:
-                zigzag_list.append(s[index])
+                zigzag_list.a.. s[index])
                 __ row != 0 a.. row != numRows - 1:
                     next_num = magic_number + index - 2 * row
                     __ next_num < len_s:
-                        zigzag_list.append(s[next_num])
+                        zigzag_list.a.. s[next_num])
                 index += magic_number
 
         r_ "".join(zigzag_list)

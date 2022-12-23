@@ -18,8 +18,8 @@ c.. Solution o..
         node_stack   # list
         _____ root or node_stack:
             __ root:
-                node_stack.append(root)
-                result.append(root.val)
+                node_stack.a.. root)
+                result.a.. root.val)
                 root = root.left
             ____
                 node = node_stack.pop()

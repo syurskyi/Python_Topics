@@ -21,7 +21,7 @@ c.. Solution o..
                 ____ row > 0 a.. col __ 0:
                     dp[row][col] += dp[row - 1][col]
                 ____ row > 0 a.. col > 0:
-                    dp[row][col] += min(dp[row - 1][col], dp[row][col - 1])
+                    dp[row][col] += m.. dp[row - 1][col], dp[row][col - 1])
                 ____
                     pass
 

@@ -22,7 +22,7 @@ c.. Solution o..
         _____ root or node_stack:
             __ root:
                 cur_node_num = cur_node_num * 10 + root.val
-                node_stack.append([root, cur_node_num])
+                node_stack.a.. [root, cur_node_num])
                 root = root.left
 
             ____

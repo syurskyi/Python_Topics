@@ -47,6 +47,6 @@ c.. Solution o..
                 a = A[y-1][x-1] __ x-1 >= 0 else float('inf')
                 b = A[y-1][x+1] __ x+1 < l..(A[0]) else float('inf')
                 
-                A[y][x] += min(A[y-1][x], a, b)
+                A[y][x] += m.. A[y-1][x], a, b)
         
-        r_ min(A[-1])
+        r_ m.. A[-1])

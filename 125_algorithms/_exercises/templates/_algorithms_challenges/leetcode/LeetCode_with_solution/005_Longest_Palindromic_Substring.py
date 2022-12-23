@@ -24,7 +24,7 @@ c_ Solution o..
                     c_
                 __ temp_s[pos - step] != temp_s[pos + step]:
                     c_
-                final.append(pos)
+                final.a.. pos)
                 __ temp_s[pos - step] __ '#':
                     c_
                 len_table[pos] = step

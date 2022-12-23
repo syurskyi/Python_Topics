@@ -9,7 +9,7 @@ ___ comp(a, b
 c.. Solution o..
     ___ largestNumber  nums
         nums = map(str, nums)
-        nums.sort(cmp=comp, reverse=True)
+        nums.s.. cmp=comp, reverse=True)
         r_ str(int("".join(nums)))
 
 """

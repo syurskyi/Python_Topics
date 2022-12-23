@@ -12,7 +12,7 @@ c.. Solution o..
             r_ ""
         common_prefix = strs[0]
         ___ string __ strs:
-            min_len = min(l..(string), l..(common_prefix))
+            min_len = m.. l..(string), l..(common_prefix))
             mark = 0        # Record the longest commen prefix index right now.
             ___ i __ r..(min_len
                 mark = i

@@ -62,7 +62,7 @@ c.. Solution o..
         
         ___ helper(root, string
             __ n.. root.left a.. n.. root.right:
-                result.append(int(string+str(root.val)))
+                result.a.. int(string+str(root.val)))
                 r_ 
             
             __ root.left:

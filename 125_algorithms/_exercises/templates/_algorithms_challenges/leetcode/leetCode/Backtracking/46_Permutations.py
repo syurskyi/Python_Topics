@@ -11,7 +11,7 @@ c.. Solution o..
 
     ___ dfs  nums, path, ans
         __ n.. nums:
-            ans.append(path)
+            ans.a.. path)
         ___ i, n __ enumerate(nums
             self.dfs(nums[:i] + nums[i + 1:], path + [n], ans)
 

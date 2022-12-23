@@ -17,7 +17,7 @@ c_ Solution o..
         __ (C <= E or G <= A or H <= B or D <= F
             r_ result
         # overlap length on x
-        dx = min(C, G) - m..(A, E)
+        dx = m.. C, G) - m..(A, E)
         # overlap length on y
-        dy = min(D, H) - m..(B, F)
+        dy = m.. D, H) - m..(B, F)
         r_ result - dx * dy

@@ -43,7 +43,7 @@ c.. Solution o..
         
         ___ i __ r..(start+1, l..(nums)):
             __ nums[i] __ 1 a.. nums[i] < k:
-                dp.append(1)
+                dp.a.. 1)
                 result += l..(dp)
                 c_
                 
@@ -51,13 +51,13 @@ c.. Solution o..
             
             __ nums[i] < k:
                 result += 1
-                new.append(nums[i])
+                new.a.. nums[i])
                 
             
             ___ j __ dp:
                 __ j * nums[i] < k:
                     result += 1
-                    new.append(j * nums[i])
+                    new.a.. j * nums[i])
             
             dp = new
         r_ result

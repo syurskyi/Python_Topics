@@ -38,7 +38,7 @@ c_ Solution o..
 
     ___ permute  res, num, index
         __ index __ l.. num
-            res.append(list(num))
+            res.a.. list(num))
             r_
         appeared = s..()
         ___ i __ r.. index, l.. num)):
@@ -62,6 +62,6 @@ c_ Solution o..
                     stemp = ''.join(map(s.., new_perm))
                     __ stemp n.. __ cache:
                         cache.add(stemp)
-                        res.append(new_perm)
+                        res.a.. new_perm)
         r_ res
 

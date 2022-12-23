@@ -41,7 +41,7 @@ public:
                         cuts[i]=0;
                     }
                     else{
-                        cuts[i] = min(cuts[i], cuts[j+1]+1);
+                        cuts[i] = m.. cuts[i], cuts[j+1]+1);
                     }
                 }
             }

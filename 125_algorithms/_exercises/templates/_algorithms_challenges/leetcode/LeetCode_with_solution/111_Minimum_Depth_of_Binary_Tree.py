@@ -32,9 +32,9 @@ c_ Solution o..
             __ node.left is N.. a.. node.right is N..:
                 ______
             __ node.left is n.. N..:
-                queue.append(node.left)
+                queue.a.. node.left)
             __ node.right is n.. N..:
-                queue.append(node.right)
+                queue.a.. node.right)
             __ node __ rightMost:
                 # reach the current level end
                 depth += 1

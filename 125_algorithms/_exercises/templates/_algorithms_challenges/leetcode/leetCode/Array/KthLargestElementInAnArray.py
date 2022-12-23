@@ -59,9 +59,9 @@ c.. Solution o..
         meta = self._getMiddle(unsorted_list)
         ___ i __ unsorted_list[:meta] + unsorted_list[meta+1:]:
             __ i <= unsorted_list[meta]:
-                left.append(i)
+                left.a.. i)
                 c_
-            right.append(i)
+            right.a.. i)
 
         r_ self.quickSort(left) + [unsorted_list[meta]] + self.quickSort(right)
 
@@ -109,10 +109,10 @@ c.. Solution o..
         _____ a < length_A a.. b < length_B:
 
             __ unsorted_list_A[a] <= unsorted_list_B[b]:
-                sorted_list.append(unsorted_list_A[a])
+                sorted_list.a.. unsorted_list_A[a])
                 a += 1
             ____
-                sorted_list.append(unsorted_list_B[b])
+                sorted_list.a.. unsorted_list_B[b])
                 b += 1            
         __ a < length_A:
             sorted_list.e..(unsorted_list_A[a:])

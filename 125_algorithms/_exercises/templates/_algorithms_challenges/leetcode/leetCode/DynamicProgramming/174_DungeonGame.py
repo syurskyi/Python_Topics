@@ -38,7 +38,7 @@ c.. Solution o..
                     ____
                         right_left = dp[i][j+1] - dungeon[i][j]
                 __ right_left a.. down_up:
-                    dp[i][j] = min(down_up, right_left)
+                    dp[i][j] = m.. down_up, right_left)
                 ____ right_left or down_up:
                     dp[i][j] = down_up or right_left
                 ____

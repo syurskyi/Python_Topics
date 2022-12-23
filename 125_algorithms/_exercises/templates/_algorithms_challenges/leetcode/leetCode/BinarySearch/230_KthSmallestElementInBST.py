@@ -54,7 +54,7 @@ c.. Solution_3 o..
         count, result = 0, 0
         _____ root or node_stack:
             __ root:
-                node_stack.append(root)
+                node_stack.a.. root)
                 root = root.left
             ____
                 __ node_stack:

@@ -29,7 +29,7 @@ c_ Solution o..
                     ______
             ____
                 # all word in target dict
-                res.append(start)
+                res.a.. start)
         r_ res
 
     # def findSubstring(self, s, words):

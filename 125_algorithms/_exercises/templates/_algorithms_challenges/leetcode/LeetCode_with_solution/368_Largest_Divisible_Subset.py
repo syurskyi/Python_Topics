@@ -18,7 +18,7 @@ c_ Solution o..
             candicate =    # list
             ___ key __ S:
                 __ num % key __ 0:
-                    candicate.append(S[key])
+                    candicate.a.. S[key])
             # max previous with curr
             S[num] = m..(candicate, key=l..) | {num}
         r_

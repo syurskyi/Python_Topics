@@ -27,13 +27,13 @@ c_ Solution o..
             ___ letter __ S:
                 __ letter.isalpha(
                     __ (bits >> b) & 1:
-                        word.append(letter.lower())
+                        word.a.. letter.lower())
                     ____
-                        word.append(letter.upper())
+                        word.a.. letter.upper())
 
                     b += 1
                 ____
-                    word.append(letter)
+                    word.a.. letter)
 
-            ans.append("".join(word))
+            ans.a.. "".join(word))
         r_ ans

@@ -9,7 +9,7 @@ c.. Solution o..
         :type target: int
         :rtype: List[List[int]]
         """
-        nums.sort()
+        nums.s.. )
         length = l..(nums)
 
         # Get all the two sums and their two addend's index.
@@ -19,10 +19,10 @@ c.. Solution o..
                 two_sums = nums[i] + nums[j]
                 __ two_sums n.. __ two_sums_dict:
                     two_sums_dict[two_sums]   # list
-                two_sums_dict[two_sums].append([i, j])
+                two_sums_dict[two_sums].a.. [i, j])
 
         sums_list = two_sums_dict.keys
-        sums_list.sort()
+        sums_list.s.. )
         solution   # list
 
 

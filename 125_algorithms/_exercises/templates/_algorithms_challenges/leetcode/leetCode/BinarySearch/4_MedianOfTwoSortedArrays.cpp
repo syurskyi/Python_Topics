@@ -49,10 +49,10 @@ public:
             r_ list2[begin2+k-1];
         }
         __(k__1){
-            r_ min(list1[begin1], list2[begin2]);
+            r_ m.. list1[begin1], list2[begin2]);
         }
 
-        int t1 = min(k/2, len1);
+        int t1 = m.. k/2, len1);
         int t2 = k - t1;
         __(list1[begin1+t1-1] < list2[begin2+t2-1]){
             r_ find_kth(list1, begin1+t1, end1, list2, begin2, begin2+t2, k-t1);

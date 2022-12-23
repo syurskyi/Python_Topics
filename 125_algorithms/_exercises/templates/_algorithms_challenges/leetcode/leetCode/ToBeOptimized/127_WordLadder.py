@@ -39,7 +39,7 @@ c.. Solution o..
                         next_word = pre_word + j + post_word
                         __ (next_word n.. __ visited_word a..
                                 next_word __ wordList
-                            next_level.append(next_word)
+                            next_level.a.. next_word)
                             visited_word[next_word] = 1
             # Scan the next level then
             cur_level = next_level

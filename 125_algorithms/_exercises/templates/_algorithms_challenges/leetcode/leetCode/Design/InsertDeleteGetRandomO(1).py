@@ -88,7 +88,7 @@ c.. RandomizedSet o..
         
         self.data_dict[val] = self.length
         self.length += 1
-        self.data_list.append(val)
+        self.data_list.a.. val)
         
         r_ True
     

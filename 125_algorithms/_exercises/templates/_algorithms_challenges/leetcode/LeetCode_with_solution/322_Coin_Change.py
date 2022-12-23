@@ -42,7 +42,7 @@ c_ Solution o..
                     dp[i] = 1
                     ______
                 ____ i > coin:
-                    dp[i] = min(dp[i], dp[i - coin] + 1)
+                    dp[i] = m.. dp[i], dp[i - coin] + 1)
         __ dp[amount] __ 1000000000:
             r_ -1
         r_ dp[amount]

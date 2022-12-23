@@ -39,7 +39,7 @@ c.. Solution o..
                     __ j __ s_len - 1:
                         cuts[i] = 0
                     ____
-                        cuts[i] = min(cuts[i], 1 + cuts[j + 1])
+                        cuts[i] = m.. cuts[i], 1 + cuts[j + 1])
                 ____
                     pass
 

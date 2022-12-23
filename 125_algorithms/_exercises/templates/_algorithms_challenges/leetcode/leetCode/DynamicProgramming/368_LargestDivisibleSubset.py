@@ -18,7 +18,7 @@ c.. Solution o..
     ___ largestDivisibleSubset  nums
         __ n.. nums:
             r_ []
-        nums.sort()
+        nums.s.. )
         length = l..(nums)
         dp = [1] * length
 
@@ -34,7 +34,7 @@ c.. Solution o..
 
         ans   # list
         ___ i __ r..(max_len
-            ans.append(nums[max_pos])
+            ans.a.. nums[max_pos])
             max_pos = pre_num[max_pos]
         r_ ans
 

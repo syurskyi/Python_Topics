@@ -90,7 +90,7 @@ c.. Solution o..
         ___ find(board, x, y, word, pre
             # print(word)
             __ '!' __ word:
-                result.append(pre)
+                result.a.. pre)
 
             ___ w __ word:
                 raw = board[y][x]

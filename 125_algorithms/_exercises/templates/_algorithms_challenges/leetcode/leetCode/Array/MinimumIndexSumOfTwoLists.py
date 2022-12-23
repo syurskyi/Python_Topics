@@ -48,9 +48,9 @@ c.. Solution o..
         ___ index, value __ enumerate(list2
             __ list1_dict.get(value) is n.. None:
                 try:
-                    commonInterest[index + list1_dict.get(value)].append(value)
+                    commonInterest[index + list1_dict.get(value)].a.. value)
                 except KeyError:
                     commonInterest[index + list1_dict.get(value)] = [value]
 
-        r_ commonInterest[min(commonInterest)]
+        r_ commonInterest[m.. commonInterest)]
 

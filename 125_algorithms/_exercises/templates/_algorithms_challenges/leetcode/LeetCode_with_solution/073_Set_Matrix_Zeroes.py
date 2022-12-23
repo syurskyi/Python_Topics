@@ -15,8 +15,8 @@ c_ Solution o..
         ___ i __ r.. m
             ___ j __ r.. n
                 __ matrix[i][j] __ 0:
-                    r.append(i)
-                    c.append(j)
+                    r.a.. i)
+                    c.a.. j)
         # row with zero
         r = s..(r)
         # column with zero

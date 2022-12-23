@@ -16,9 +16,9 @@ c.. Solution o..
             # remove smaller numbers in k range as they are useless
             _____ queue a.. v > nums[queue[-1]]:
                 queue.pop()
-            queue.append(i)
+            queue.a.. i)
             __ i+1 >= k:
-                max_num.append(nums[queue[0]])
+                max_num.a.. nums[queue[0]])
 
         r_ max_num
 
@@ -33,9 +33,9 @@ c.. Solution_2 o..
                 queue.popleft()
             _____ queue a.. v > nums[queue[-1]]:
                 queue.pop()
-            queue.append(i)
+            queue.a.. i)
             __ i+1 >= k:
-                max_num.append(nums[queue[0]])
+                max_num.a.. nums[queue[0]])
 
         r_ max_num
 """

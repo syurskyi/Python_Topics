@@ -92,7 +92,7 @@ c_ Solution o..
 
     ___ dfs  res, path, begin, end, hash_map
         __ begin __ end:
-            res.append(path)
+            res.a.. path)
             r_
         try:
             next_step = hash_map[begin]

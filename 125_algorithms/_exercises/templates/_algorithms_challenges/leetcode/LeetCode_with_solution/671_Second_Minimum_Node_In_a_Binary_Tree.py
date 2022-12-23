@@ -40,6 +40,6 @@ c_ Solution o..
             __ min_val < curr.val < ans:
                 ans = curr.val
             ____ curr.val __ min_val:
-                stack.append(curr.left)
-                stack.append(curr.right)
+                stack.a.. curr.left)
+                stack.a.. curr.right)
         r_ ans __ ans < float('inf') ____ -1

@@ -61,7 +61,7 @@ c.. Solution o..
             fizzbuzz_time += 1
             
             __ fizzbuzz_time __ 15:
-                result.append("FizzBuzz")
+                result.a.. "FizzBuzz")
                 fizzbuzz_time = 0
                 fizz_time = 0
                 buzz_time = 0
@@ -69,13 +69,13 @@ c.. Solution o..
                 
             __ fizz_time __ 3:
                 fizz_time = 0
-                result.append("Fizz")
+                result.a.. "Fizz")
                 c_
             
             __ buzz_time __ 5:
                 buzz_time = 0
-                result.append("Buzz")
+                result.a.. "Buzz")
                 c_
             
-            result.append(str(i))
+            result.a.. str(i))
         r_ result

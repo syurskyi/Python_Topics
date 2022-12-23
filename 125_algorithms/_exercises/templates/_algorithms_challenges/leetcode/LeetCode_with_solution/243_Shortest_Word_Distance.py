@@ -30,5 +30,5 @@ c_ Solution o..
             ____ word2 __ word:
                 index2 = index
             __ index1 != -1 a.. index2 != -1:
-                res = min(res, abs(index1 - index2))
+                res = m.. res, abs(index1 - index2))
         r_ res

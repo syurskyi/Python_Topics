@@ -18,9 +18,9 @@ c.. Solution_2 o..
         nums1, nums2   # list, []
         ___ num __ nums:
             __ num > pivot:
-                nums1.append(num)
+                nums1.a.. num)
             ____ num < pivot:
-                nums2.append(num)
+                nums2.a.. num)
         __ k <= l..(nums1
             r_ self.findKthLargest(nums1, k)
         ____ k > l..(nums) - l..(nums2

@@ -20,7 +20,7 @@ c.. Solution o..
                 hash_secret[sec] = hash_secret.get(sec, 0) + 1
         ___ digit __ hash_secret:
             __ digit __ hash_guess:
-                cows += min(hash_guess[digit], hash_secret[digit])
+                cows += m.. hash_guess[digit], hash_secret[digit])
         r_ "".join([str(bulls), "A", str(cows), "B"])
 
 

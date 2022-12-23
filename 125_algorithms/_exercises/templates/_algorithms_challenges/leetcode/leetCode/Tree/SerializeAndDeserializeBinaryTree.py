@@ -143,12 +143,12 @@ c.. Codec:
             _next   # list
             ___ i __ roots:
                 __ i:
-                    result.append(i.val)
-                    _next.append(i.left)
-                    _next.append(i.right)
+                    result.a.. i.val)
+                    _next.a.. i.left)
+                    _next.a.. i.right)
 
                 ____
-                    result.append(None)
+                    result.a.. None)
             
             r_ _next
         
@@ -198,7 +198,7 @@ c.. Codec:
                         val = int(val)
                         
                     i.left = TreeNode(val)
-                    _next.append(i.left)
+                    _next.a.. i.left)
                     
                 __ nodes:
                     val = nodes.pop(0)
@@ -208,7 +208,7 @@ c.. Codec:
                         val = int(val)
                         
                     i.right = TreeNode(val)
-                    _next.append(i.right)
+                    _next.a.. i.right)
             r_ _next
         base = _deserialize(leaves, data[:length])
         data = data[length:]

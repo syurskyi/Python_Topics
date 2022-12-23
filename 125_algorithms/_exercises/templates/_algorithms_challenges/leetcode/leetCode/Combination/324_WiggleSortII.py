@@ -19,7 +19,7 @@ c.. Solution o..
         Clear solutionm, explanation and proof can be found here:
         https://leetcode.com/discuss/76965/3-lines-python-with-explanation-proof
         """
-        nums.sort()
+        nums.s.. )
         # half = len(nums[::2]) or half = (len(nums) + 1) // 2
         # nums[::2], nums[1::2] = nums[:half][::-1], nums[half:][::-1]
         half = l..(nums[::2]) - 1

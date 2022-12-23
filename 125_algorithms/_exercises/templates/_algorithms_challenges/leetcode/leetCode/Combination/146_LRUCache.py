@@ -14,7 +14,7 @@ c.. LRUCache o..
         __ key __ self.cache:
             node = self.cache[key]
             self.doubleLinkedList.delete(node)
-            self.doubleLinkedList.append(node)
+            self.doubleLinkedList.a.. node)
             r_ self.cache[key].value
         ____
             r_ -1
@@ -25,21 +25,21 @@ c.. LRUCache o..
             node = self.cache[key]
             self.doubleLinkedList.delete(node)
             new_node = Node(key, value)
-            self.doubleLinkedList.append(new_node)
+            self.doubleLinkedList.a.. new_node)
             self.cache[key] = new_node
 
         ____
             node = Node(key, value)
             # Add the new node to cache
             __ self.l.. < self.capacity:
-                self.doubleLinkedList.append(node)
+                self.doubleLinkedList.a.. node)
                 self.cache[key] = node
                 self.l.. += 1
             # Remove the head of linked list and append the new node
             ____
                 replaced_node = self.doubleLinkedList.del_head()
                 del self.cache[replaced_node.key]
-                self.doubleLinkedList.append(node)
+                self.doubleLinkedList.a.. node)
                 self.cache[key] = node
 
 

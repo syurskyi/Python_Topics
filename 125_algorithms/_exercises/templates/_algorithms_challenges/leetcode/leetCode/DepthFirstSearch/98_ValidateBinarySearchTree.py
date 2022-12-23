@@ -29,7 +29,7 @@ c.. Solution o..
                     r_ False
                 root = node.right
             ____
-                node_stack.append(root)
+                node_stack.a.. root)
                 root = root.left
         r_ True
 

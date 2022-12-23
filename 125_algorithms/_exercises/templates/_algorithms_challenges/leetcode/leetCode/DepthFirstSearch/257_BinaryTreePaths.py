@@ -20,12 +20,12 @@ c.. Solution o..
             node, path = node_stack.pop()
             __ node.left:
                 new_path = path + "->" + str(node.left.val)
-                node_stack.append([node.left, new_path])
+                node_stack.a.. [node.left, new_path])
             __ node.right:
                 new_path = path + "->" + str(node.right.val)
-                node_stack.append([node.right, new_path])
+                node_stack.a.. [node.right, new_path])
             __ n.. node.left a.. n.. node.right:
-                path_str.append(path)
+                path_str.a.. path)
         r_ path_str
 
 """

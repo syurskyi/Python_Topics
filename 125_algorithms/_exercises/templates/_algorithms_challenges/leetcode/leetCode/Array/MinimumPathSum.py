@@ -56,7 +56,7 @@ c.. Solution o..
                 
                 __ up __ float('inf') a.. left __ float('inf'
                     c_
-                grid[i][j] = grid[i][j] + min(up, left)
+                grid[i][j] = grid[i][j] + m.. up, left)
                 
                 
         r_ grid[-1][-1]

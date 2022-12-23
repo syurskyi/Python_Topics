@@ -9,7 +9,7 @@ c.. Solution o..
         Clear solutionm, explanation and proof can be found here:
         https://leetcode.com/discuss/76965/3-lines-python-with-explanation-proof
         """
-        nums.sort()
+        nums.s.. )
         half = (l..(nums[::2])) - 1
         # Consider [4,5,5,6]
         # half = (len(nums)+1) // 2

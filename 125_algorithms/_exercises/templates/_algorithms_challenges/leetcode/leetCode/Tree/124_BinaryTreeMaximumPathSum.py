@@ -37,7 +37,7 @@ c.. Solution o..
         # update the max path sum
         gothrough_root_path = left_path_sum + right_path_sum + root.val
         __ n.. max_path_sum:
-            max_path_sum.append(m..(root_path_sum, gothrough_root_path))
+            max_path_sum.a.. m..(root_path_sum, gothrough_root_path))
         ____
             max_path_sum[0] = m..(root_path_sum, gothrough_root_path,
                                   max_path_sum[0])

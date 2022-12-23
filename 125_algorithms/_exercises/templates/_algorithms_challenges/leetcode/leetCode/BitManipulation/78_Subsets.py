@@ -11,7 +11,7 @@ c.. Solution o..
 
         subsets   # list
         n = l..(nums)
-        nums.sort()
+        nums.s.. )
         # We know there are totally 2^n subsets,
         # becase every num may in or not in one subsets.
         # So we check the jth(0<=j<n) bit for every ith(0=<i<2^n) subset.
@@ -22,9 +22,9 @@ c.. Solution o..
             ___ j __ r..(n
                 power = 2 ** j
                 __ i & power __ power:
-                    cur_set.append(nums[j])
+                    cur_set.a.. nums[j])
 
-            subsets.append(cur_set)
+            subsets.a.. cur_set)
 
         r_ subsets
 

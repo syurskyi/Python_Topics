@@ -19,7 +19,7 @@ c_ Solution o..
         # recursive solve this problem
         res =    # list
         __ start > end:
-            res.append(N..)
+            res.a.. N..)
             r_ res
         ___ i __ r.. start, end + 1
             lefts = get_trees(start, i - 1)
@@ -30,7 +30,7 @@ c_ Solution o..
                     root = TreeNode(i)
                     root.left = lefts[j]
                     root.right = rights[k]
-                    res.append(root)
+                    res.a.. root)
         r_ res
 
 

@@ -36,6 +36,6 @@ c_ Solution o..
         degree = m..(count.values())
         ___ x __ count:
             __ count[x] __ degree:
-                ans = min(ans, right[x] - left[x] + 1)
+                ans = m.. ans, right[x] - left[x] + 1)
 
         r_ ans

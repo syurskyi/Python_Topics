@@ -16,7 +16,7 @@ public:
             int v_2 = uglys[p_2] * 2;
             int v_3 = uglys[p_3] * 3;
             int v_5 = uglys[p_5] * 5;
-            uglys[i] = min(v_2, min(v_3, v_5));
+            uglys[i] = m.. v_2, m.. v_3, v_5));
 
             // Update the p_2, p_3, p_5;
             __(uglys[i] __ v_2)     p_2++;

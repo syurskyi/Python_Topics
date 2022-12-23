@@ -22,11 +22,11 @@ c.. Solution o..
                 pad_space_cnt = maxWidth - cur_letters
                 ___ i __ r..(pad_space_cnt
                     cur_words[i % (l..(cur_words) - 1 or 1)] += ' '
-                ans.append(''.join(cur_words))
+                ans.a.. ''.join(cur_words))
 
                 cur_words, cur_letters   # list, 0
 
-            cur_words.append(w)
+            cur_words.a.. w)
             cur_letters += l..(w)
 
         r_ ans + [' '.join(cur_words).ljust(maxWidth)]

@@ -20,7 +20,7 @@ c.. Solution o..
         # k == 1, just return the list[start, end]
         __ k __ 1:
             ___ i __ r..(start, n+1
-                combine_k.append([i])
+                combine_k.a.. [i])
             r_ combine_k
 
         # k > 1, return every i combines all the k-1 th combine in [i+1, n]
@@ -29,7 +29,7 @@ c.. Solution o..
             ___ combine_1 __ combine_k_1:
                 combine = [i]
                 combine.e..(combine_1)
-                combine_k.append(combine)
+                combine_k.a.. combine)
 
         r_ combine_k
 

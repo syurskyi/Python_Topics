@@ -41,6 +41,6 @@ c.. Solution o..
 
                 _right = triangle[i+1][j+1] 
                 _self = triangle[i+1][j]
-                mins = min(_right, _self)
+                mins = m.. _right, _self)
                 triangle[i][j] += mins
-        r_ min(triangle[0])
+        r_ m.. triangle[0])

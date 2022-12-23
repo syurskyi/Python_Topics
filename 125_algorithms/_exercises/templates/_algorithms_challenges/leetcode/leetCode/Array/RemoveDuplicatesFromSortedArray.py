@@ -64,7 +64,7 @@ c.. Solution o..
         
         ___ i __ r..(length-1, -1, -1
             __ one __ nums[i]:
-                remove_index.append(i)
+                remove_index.a.. i)
                 c_
             one = nums[i]
         

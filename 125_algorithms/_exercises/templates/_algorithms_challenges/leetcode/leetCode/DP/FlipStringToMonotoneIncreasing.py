@@ -56,9 +56,9 @@ c.. Solution o..
         # 1 -> 0
         ___ i __ r..(1, l..(S)):
             __ S[i] __ '1':
-                x.append(x[-1]+1)
+                x.a.. x[-1]+1)
             ____
-                x.append(x[-1])
+                x.a.. x[-1])
         
         # right to left
         # 0 -> 1
@@ -66,11 +66,11 @@ c.. Solution o..
         y = [0] __ S[0] __ '1' else [1]
         ___ i __ r..(1, l..(S)):
             __ S[i] __ '0':
-                y.append(y[-1]+1)
+                y.a.. y[-1]+1)
             ____
-                y.append(y[-1])
+                y.a.. y[-1])
         
         y.r..
         
-        r_ min([i+j ___ i,j __ zip(x,y)]) - 1
+        r_ m.. [i+j ___ i,j __ zip(x,y)]) - 1
 

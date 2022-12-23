@@ -32,11 +32,11 @@ c.. Solution o..
                 l_child = node.left
                 r_child = node.right
                 __ l_child:
-                    node_level.append(l_child.val)
-                    node_list.append(l_child)
+                    node_level.a.. l_child.val)
+                    node_list.a.. l_child)
                 __ r_child:
-                    node_level.append(r_child.val)
-                    node_list.append(r_child)
+                    node_level.a.. r_child.val)
+                    node_list.a.. r_child)
             __ node_level:
                 level_traversal.insert(0, node_level)
 

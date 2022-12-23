@@ -33,7 +33,7 @@ c_ Solution o..
                 __ word1[i - 1] __ word2[j - 1]:
                     dp[i] = pre
                 ____
-                    dp[i] = min(pre + 1, dp[i] + 1, dp[i - 1] + 1)
+                    dp[i] = m.. pre + 1, dp[i] + 1, dp[i - 1] + 1)
                 pre = temp
         r_ dp[ls_1]
     

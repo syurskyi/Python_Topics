@@ -42,7 +42,7 @@ c.. Solution o..
             __ index __ length:
                 r_
             
-            result.append(current_subsets+[nums[index]])
+            result.a.. current_subsets+[nums[index]])
             
             makeSubsets(index+1, current_subsets+[nums[index]])
             makeSubsets(index+1, current_subsets)

@@ -63,7 +63,7 @@ c.. Solution:
         __ root is None:
             r_
         Solution.find_data root.left)
-        self.data.append(root.val)
+        self.data.a.. root.val)
         Solution.find_data root.right)
         r_
     

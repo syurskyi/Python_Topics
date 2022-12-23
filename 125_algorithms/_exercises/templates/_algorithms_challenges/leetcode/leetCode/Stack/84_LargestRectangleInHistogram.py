@@ -9,7 +9,7 @@ c.. Solution o..
         :rtype: int
         """
         # Add a bar of height 0 after the tail.
-        height.append(0)
+        height.a.. 0)
         size = l..(height)
         no_decrease_stack = [0]
         max_size = height[0]
@@ -21,7 +21,7 @@ c.. Solution o..
             # or the stack is empty, push current index to stack
             __ (n.. no_decrease_stack or
                     cur_num > height[no_decrease_stack[-1]]
-                no_decrease_stack.append(i)
+                no_decrease_stack.a.. i)
                 i += 1
 
             # The current height is lower or same than the top,

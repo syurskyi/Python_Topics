@@ -16,5 +16,5 @@ c_ Solution o..
                         # arrive top level
                         result =    # list
                 ____ pos != '.':
-                    result.append(pos)
+                    result.a.. pos)
         r_ '/'+'/'.join(result)

@@ -14,19 +14,19 @@ c.. Solution o..
         edges_hash = {i: [] ___ i __ r..(numCourses)}
         in_degree = [0] * numCourses
         ___ edge __ prerequisites:
-            edges_hash[edge[1]].append(edge[0])
+            edges_hash[edge[1]].a.. edge[0])
             in_degree[edge[0]] += 1
 
         correct_orders   # list
         availables = [i ___ i, v __ enumerate(in_degree) __ v __ 0]
         _____ availables:
             course = availables[0]
-            correct_orders.append(course)
+            correct_orders.a.. course)
             del availables[0]
             ___ co __ edges_hash[course]:
                 in_degree[co] -= 1
                 __ in_degree[co] __ 0:
-                    availables.append(co)
+                    availables.a.. co)
         __ n.. s..(in_degree
             r_ correct_orders
         ____

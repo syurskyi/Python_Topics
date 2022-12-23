@@ -16,7 +16,7 @@ c_ Solution o..
                     c_
                 # Add first row with 0 into res
                 __ mat[i][col] __ 0:
-                    res.append(i)
+                    res.a.. i)
                 __ l.. res) __ k:
                     flag = 0
                     ______
@@ -27,7 +27,7 @@ c_ Solution o..
         ___ i __ r.. num_row
             __ i __ res:
                 c_
-            res.append(i)
+            res.a.. i)
             __ l.. res) __ k:
                 ______
         r_ res

@@ -12,10 +12,10 @@ c_ Solution o..
 
     ___ recurPartition  result, curr, s, start
         __ start __ l.. s
-            result.append(list(curr))
+            result.a.. list(curr))
         ___ i __ r.. start, l.. s)):
             __ isPalindrome(s, start, i
-                curr.append(s[start:i + 1])
+                curr.a.. s[start:i + 1])
                 recurPartition(result, curr, s, i + 1)
                 curr.pop()
 

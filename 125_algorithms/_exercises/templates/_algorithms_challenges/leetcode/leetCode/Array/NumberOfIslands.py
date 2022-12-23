@@ -70,7 +70,7 @@ c.. Solution o..
             ___ x __ r..(x_length
                 __ court[y][x] __ '1':
                     court[y][x] = '0'
-                    fans_groups.append(helper(x, y))
+                    fans_groups.a.. helper(x, y))
 
 
 

@@ -18,7 +18,7 @@ c.. Solution o..
             __ edge[1] n.. __ course_req_dict:
                 course_req_dict[edge[1]] = [edge[0]]
             ____
-                course_req_dict[edge[1]].append(edge[0])
+                course_req_dict[edge[1]].a.. edge[0])
             pre_count[edge[0]] += 1
 
         # Keep nodes which have no incoming edges.
@@ -30,7 +30,7 @@ c.. Solution o..
             ___ post_course __ course_req_dict.get(course, []
                 pre_count[post_course] -= 1
                 __ pre_count[post_course] __ 0:
-                    available.append(post_course)
+                    available.a.. post_course)
         r_ s..(pre_count) __ 0
 
 """

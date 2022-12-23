@@ -12,20 +12,20 @@ c.. Solution o..
         ans   # list
         ___ n __ nums2:
             __ nums1_dict.get(n, 0) > 0:
-                ans.append(n)
+                ans.a.. n)
                 nums1_dict[n] = nums1_dict.get(n, 0) - 1
         r_ ans
 
 
 c.. Solution_2 o..
     ___ intersect  nums1, nums2
-        nums1.sort()
-        nums2.sort()
+        nums1.s.. )
+        nums2.s.. )
         i, j = 0, 0
         ans   # list
         _____ i < l..(nums1) a.. j < l..(nums2
             __ nums1[i] __ nums2[j]:
-                ans.append(nums1[i])
+                ans.a.. nums1[i])
                 i += 1
                 j += 1
             ____ nums1[i] < nums2[j]:

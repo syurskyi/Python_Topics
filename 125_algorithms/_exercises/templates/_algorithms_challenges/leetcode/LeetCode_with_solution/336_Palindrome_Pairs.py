@@ -14,8 +14,8 @@ c_ Solution o..
                 prefix, postfix = word[:j], word[j:]
                 # prefix + postfix + reverse(prfix)
                 __ prefix __ word2index a.. i != word2index[prefix] a.. postfix __ postfix||-1]:
-                    res.append([i, word2index[prefix]])
+                    res.a.. [i, word2index[prefix]])
                 # reverse(postfix) + prefix + postfix
                 __ j > 0 a.. postfix __ word2index a.. i != word2index[postfix] a.. prefix __ prefix||-1]:
-                    res.append([word2index[postfix], i])
+                    res.a.. [word2index[postfix], i])
         r_ res

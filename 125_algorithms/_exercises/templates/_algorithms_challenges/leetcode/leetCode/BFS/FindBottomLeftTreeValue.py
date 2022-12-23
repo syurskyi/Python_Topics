@@ -83,10 +83,10 @@ c.. Solution o..
                 node = waiting_for_access.pop()
                 
                 __ node.right:
-                    new_waiting_for_access.append(node.right)
+                    new_waiting_for_access.a.. node.right)
                     result = node.right.val
                 __ node.left:
-                    new_waiting_for_access.append(node.left)
+                    new_waiting_for_access.a.. node.left)
                     result = node.left.val
             __ n.. new_waiting_for_access:
                 r_ result

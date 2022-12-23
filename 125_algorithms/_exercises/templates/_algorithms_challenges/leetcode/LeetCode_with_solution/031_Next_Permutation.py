@@ -12,7 +12,7 @@ c_ Solution o..
             ___ j __ r.. i + 1, ls
                 # append ascending order pair
                 __ nums[i] < nums[j]:
-                    pair.append([i,j])
+                    pair.a.. [i,j])
         pos = 0
         __ l.. pair) > 0:
             swap(nums, pair[-1][0], pair[-1][1])

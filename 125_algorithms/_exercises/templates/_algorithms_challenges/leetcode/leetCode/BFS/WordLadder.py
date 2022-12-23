@@ -82,6 +82,6 @@ c.. Solution o..
                     
                     __ new __ _wordList:
                         _wordList.remove(new)
-                        result.append([new, _length])
+                        result.a.. [new, _length])
         
         r_ 0

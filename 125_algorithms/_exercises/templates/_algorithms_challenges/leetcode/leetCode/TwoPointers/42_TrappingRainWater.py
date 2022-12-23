@@ -18,7 +18,7 @@ c.. Solution o..
         ___ high __ height:
             __ high > max_high:
                 max_high = high
-            left_side.append(max_high)
+            left_side.a.. max_high)
 
         # Get the right highest elevation of each bar
         right_side   # list
@@ -26,13 +26,13 @@ c.. Solution o..
         ___ high __ height[::-1]:
             __ high > max_high:
                 max_high = high
-            right_side.append(max_high)
+            right_side.a.. max_high)
 
         # Scan each bar and get the water
         water = 0
         length = l..(height)
         ___ i __ r..(length
-            min_side = min(left_side[i], right_side[length - i - 1])
+            min_side = m.. left_side[i], right_side[length - i - 1])
             __ min_side > height[i]:
                 water += min_side - height[i]
 

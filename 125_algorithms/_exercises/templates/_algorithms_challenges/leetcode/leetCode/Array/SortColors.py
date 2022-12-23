@@ -70,6 +70,6 @@ c.. Solution o..
                 index += 1
             ____ nums[index] __ 2:
                 x = nums.pop(index)
-                nums.append(x)
+                nums.a.. x)
             ____
                 index += 1

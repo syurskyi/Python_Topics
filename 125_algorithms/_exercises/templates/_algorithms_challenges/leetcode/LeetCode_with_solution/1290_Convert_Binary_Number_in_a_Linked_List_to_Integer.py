@@ -34,10 +34,10 @@ Each node's value is either 0 or 1.
 c_ Solution:
     ___ getDecimalValue  head: ListNode)   i..:
         binary_numbers_list =    # list
-        binary_numbers_list.append(head.val)
+        binary_numbers_list.a.. head.val)
         w..(head.next is n.. N..
             head = head.next
-            binary_numbers_list.append(head.val)
+            binary_numbers_list.a.. head.val)
         answer = 0
         power = 0
         # from len(binary_numbers_list) - 1 -> 0

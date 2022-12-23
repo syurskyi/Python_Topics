@@ -40,14 +40,14 @@ c.. Solution o..
                     root_node = TreeNode(i)
                     root_node.right = child
                     root_node.left = None
-                    roots.append(root_node)
+                    roots.a.. root_node)
             # Have no right childs
             ____ n.. right_childs a.. left_childs:
                 ___ child __ left_childs:
                     root_node = TreeNode(i)
                     root_node.left = child
                     root_node.right = None
-                    roots.append(root_node)
+                    roots.a.. root_node)
             # Have both left childs and right childs
             ____
                 ___ l_child __ left_childs:
@@ -55,7 +55,7 @@ c.. Solution o..
                         root_node = TreeNode(i)
                         root_node.left = l_child
                         root_node.right = r_child
-                        roots.append(root_node)
+                        roots.a.. root_node)
 
         r_ roots
 

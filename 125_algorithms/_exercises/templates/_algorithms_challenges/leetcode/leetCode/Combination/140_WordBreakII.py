@@ -36,14 +36,14 @@ c.. Solution o..
     # Depth First Search
     ___ word_break  start, word_list, dp
         __ start __ self.s_len:
-            self.result.append(" ".join(word_list))
+            self.result.a.. " ".join(word_list))
             r_
 
         k = 0
         _____ start+k < self.s_len:
             cur_word = self.str[start:start+k+1]
             __ cur_word __ self.words a.. dp[start+k+1]:
-                word_list.append(cur_word)
+                word_list.a.. cur_word)
                 self.word_break(start+k+1, word_list, dp)
                 word_list.pop()
             k += 1

@@ -14,7 +14,7 @@ c_ Solution o..
         holes = right - left + 1
         ___ v __ A:
             __ v __ num_set:
-                duplicate.append(v)
+                duplicate.a.. v)
             ____
                 num_set.add(v)
         holes = holes - l.. num_set)

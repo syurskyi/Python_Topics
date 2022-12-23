@@ -21,11 +21,11 @@ c.. Codec:
             node = node_queue[start]
             start += 1
             __ node:
-                data.append(str(node.val))
-                node_queue.append(node.left)
-                node_queue.append(node.right)
+                data.a.. str(node.val))
+                node_queue.a.. node.left)
+                node_queue.a.. node.right)
             ____
-                data.append("null")
+                data.a.. "null")
         # Remove the tail null node.
         _____ data a.. data[-1] __ "null":
             del data[-1]
@@ -70,11 +70,11 @@ c.. Codec_2:
     ___ serialize  root
         ___ helper(node
             __ node:
-                vals.append(str(node.val))
+                vals.a.. str(node.val))
                 helper(node.left)
                 helper(node.right)
             ____
-                vals.append('#')
+                vals.a.. '#')
 
         vals   # list
         helper(root)

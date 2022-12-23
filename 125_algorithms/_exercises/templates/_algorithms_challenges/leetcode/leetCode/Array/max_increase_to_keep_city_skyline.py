@@ -46,6 +46,6 @@ c.. Solution o..
         
         ___ index, line __ enumerate(grid
             ___ index2, cell __ enumerate(line
-                total_increases += min([line_dict[str(index)], column_dict[str(index2)]]) - cell
+                total_increases += m.. [line_dict[str(index)], column_dict[str(index2)]]) - cell
         
         r_ total_increases

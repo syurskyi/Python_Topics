@@ -85,7 +85,7 @@ c.. Solution o..
         _____ lo < hi:
             mid = (lo + hi) // 2
             __ target __ nums[mid]:
-                equals.append(mid)
+                equals.a.. mid)
             
             __ target < nums[mid]:
                 hi = mid
@@ -101,7 +101,7 @@ c.. Solution o..
         _____ lo < hi:
             mid = (lo + hi) // 2
             __ target __ nums[mid]:
-                equals.append(mid)
+                equals.a.. mid)
             
             __ target > nums[mid]:
                 lo = mid + 1

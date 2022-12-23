@@ -51,7 +51,7 @@ c_ Solution o..
                         add4 = s[i + j + k:]
                         __ isValid(add1) a.. isValid(add2) a.. \
                                         isValid(add3) a.. isValid(add4
-                            res.append(add1 + '.' + add2 + '.' + add3 + '.' + add4)
+                            res.a.. add1 + '.' + add2 + '.' + add3 + '.' + add4)
         r_ res
 
     ___ isValid  add

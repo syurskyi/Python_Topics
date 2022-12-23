@@ -45,7 +45,7 @@ c_ Solution o..
         ___ i __ r.. l.. grid)):
             ___ j __ r.. l.. grid[0])):
                 __ grid[i][j] __ 1:
-                    rows.append(i)
+                    rows.a.. i)
         r_ rows
 
     ___ collectCols  grid
@@ -53,5 +53,5 @@ c_ Solution o..
         ___ j __ r.. l.. grid[0])):
             ___ i __ r.. l.. grid)):
                 __ grid[i][j] __ 1:
-                    cols.append(j)
+                    cols.a.. j)
         r_ cols

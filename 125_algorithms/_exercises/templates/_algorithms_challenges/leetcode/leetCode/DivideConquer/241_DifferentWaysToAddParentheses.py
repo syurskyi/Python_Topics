@@ -21,7 +21,7 @@ c.. Solution o..
                 res_right = self.diffWaysToCompute(input[i + 1:])
                 ___ left __ res_left:
                     ___ right __ res_right:
-                        res.append(self.computer(left, right, input[i]))
+                        res.a.. self.computer(left, right, input[i]))
         r_ res
 
     ___ computer  m, n, op
@@ -56,7 +56,7 @@ c.. Solution_2 o..
 
                 ___ left __ res_left:
                     ___ right __ res_right:
-                        res.append(self.computer(left, right, input[i]))
+                        res.a.. self.computer(left, right, input[i]))
         self.cache[input] = res
         r_ res
 

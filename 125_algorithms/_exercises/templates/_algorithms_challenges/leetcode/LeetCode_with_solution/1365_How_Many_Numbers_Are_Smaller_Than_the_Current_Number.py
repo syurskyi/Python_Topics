@@ -22,9 +22,9 @@ c_ Solution:
         res =    # list
         ___ v __ nums:
             __ v __ 0:
-                res.append(0)
+                res.a.. 0)
             ____
-                res.append(count_list[v-1])
+                res.a.. count_list[v-1])
         r_ res
 
     # def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:

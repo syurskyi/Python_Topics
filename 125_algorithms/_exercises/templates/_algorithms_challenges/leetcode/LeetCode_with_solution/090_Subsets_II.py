@@ -37,8 +37,8 @@ c_ Solution o..
             # use existing subsets to generate new subsets
             ___ j __ r.. begin, size
                 curr = list(res[j])
-                curr.append(nums[index])
-                res.append(curr)
+                curr.a.. nums[index])
+                res.a.. curr)
             # avoid duplicate subsets
             begin = size
         r_ res

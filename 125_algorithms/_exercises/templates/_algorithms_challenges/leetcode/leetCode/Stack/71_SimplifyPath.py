@@ -29,7 +29,7 @@ c.. Solution o..
 
                 # 'path/': push path to stack
                 ____
-                    stack.append(path_str)
+                    stack.a.. path_str)
                     path_str = ""
             ____
                 path_str += char
@@ -42,7 +42,7 @@ c.. Solution o..
         ____ path_str __ "." or path_str __ "":
             pass
         ____
-            stack.append(path_str)
+            stack.a.. path_str)
         r_ "/" + "/".join(stack)
 
 """
