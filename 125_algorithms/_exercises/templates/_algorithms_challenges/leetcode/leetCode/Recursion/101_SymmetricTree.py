@@ -18,7 +18,7 @@ c.. Solution o..
         __ n.. lNode or n.. rNode:
             r_ lNode __ rNode
         __ lNode.val != rNode.val:
-            r_ False
+            r_ F..
         r_ (self.helper(lNode.left, rNode.right) a..
                 self.helper(lNode.right, rNode.left))
 

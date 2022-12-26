@@ -26,7 +26,7 @@ c.. Solution o..
                 __ max_val __ "init" or node.val > max_val:
                     max_val = node.val
                 ____
-                    r_ False
+                    r_ F..
                 root = node.right
             ____
                 node_stack.a.. root)

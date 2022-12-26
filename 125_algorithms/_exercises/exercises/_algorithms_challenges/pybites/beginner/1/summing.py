@@ -1,6 +1,6 @@
 def sum_numbers(numbers=None):
     total = 0
-    if numbers == None:
+    if numbers is None:
         for i in range(1, 101):
             total = total + i
     elif len(numbers) == 0:

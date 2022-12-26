@@ -32,7 +32,7 @@ c.. Solution o..
     Just remember we have proved:  (m + i) mode k == 0 before.
     """
     ___ detectCycle  head
-        has_cycle = False
+        has_cycle = F..
         one_step = head
         two_steps = head
         _____ two_steps a.. two_steps.next:

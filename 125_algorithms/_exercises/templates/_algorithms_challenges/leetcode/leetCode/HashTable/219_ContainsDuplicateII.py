@@ -7,14 +7,14 @@ c.. Solution o..
     ___ containsNearbyDuplicate  nums, k
         hash_dict _ # dict
         __ n.. nums:
-            r_ False
+            r_ F..
         len_nums = l..(nums)
         ___ i __ r..(len_nums
             num = nums[i]
             __ num __ hash_dict a.. i - hash_dict[num] <= k:
                 r_ True
             hash_dict[num] = i
-        r_ False
+        r_ F..
 
 """
 []

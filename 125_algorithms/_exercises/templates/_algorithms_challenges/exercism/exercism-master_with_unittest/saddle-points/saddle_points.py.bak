@@ -24,7 +24,7 @@ class SaddlePoints:
         for row in range(len(self.matrix)):
             if len(self.matrix[row]) != len(self.matrix[0]):
                 return True
-        return False
+        return F..
 
 
 def saddle_points(inp):

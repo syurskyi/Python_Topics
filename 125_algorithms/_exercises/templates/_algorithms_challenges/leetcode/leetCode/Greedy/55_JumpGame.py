@@ -23,7 +23,7 @@ c.. Solution o..
                 max_distance = m..(max_distance, index + nums[index])
             ____
                 # Current position cannot be reached.
-                r_ False
+                r_ F..
             index += 1
 
         r_ True

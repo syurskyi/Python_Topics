@@ -64,7 +64,7 @@ c.. Solution o..
         """
         
         __ l..(nums) < 3:
-            r_ False
+            r_ F..
         
         one = None
         two = None
@@ -83,7 +83,7 @@ c.. Solution o..
                     two = (i, d)
             ____
                 one = (i, d)
-        r_ False
+        r_ F..
 
 
 

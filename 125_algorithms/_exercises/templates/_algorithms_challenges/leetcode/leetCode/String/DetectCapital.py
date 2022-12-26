@@ -62,8 +62,8 @@ c.. Solution o..
     
     ___ letter_all_capital_or_lower  word
         #
-        lower = False
-        capital = False
+        lower = F..
+        capital = F..
         
         # A-Z
         left = 65
@@ -75,12 +75,12 @@ c.. Solution o..
             
         ___ i __ word:
             __ n.. left <= ord(i) <= right:
-                r_ False
+                r_ F..
         r_ True
     
     ___ letter_all_lower  word
         ___ i __ word:
             __ n.. 97 <= ord(i) <= 122:
-                r_ False
+                r_ F..
         r_ True
 

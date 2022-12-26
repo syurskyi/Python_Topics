@@ -10,7 +10,7 @@ class IsbnVerifier(object):
     @classmethod
     def is_valid(cls, string):
         if cls.invalid(string):
-            return False
+            return F..
         return cls.verify(string)
 
     @classmethod

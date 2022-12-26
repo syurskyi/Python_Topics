@@ -76,7 +76,7 @@ c.. binarySearchTree o..
             __ root.val > value:
                 r_ self._search(root.left, value)
 
-        r_ False
+        r_ F..
 
     ___ delete(self
         pass

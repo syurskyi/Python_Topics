@@ -61,7 +61,7 @@ c.. Solution o..
         :rtype: bool
         """
             
-        dp = [True] + [False] * l..(s)
+        dp = [True] + [F..] * l..(s)
 
         ___ i __ r..(l..(s)):
             ___ j __ r..(i+1

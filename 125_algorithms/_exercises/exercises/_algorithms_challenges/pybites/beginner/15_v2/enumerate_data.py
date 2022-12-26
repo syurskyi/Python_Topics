@@ -18,6 +18,8 @@ def enumerate_names_countries():
         print(f"{i+1}. {name:<11}{country}")
 
 
+
+
 enumerate_names_countries()
 
 

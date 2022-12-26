@@ -27,7 +27,7 @@ c.. Solution o..
             r_ 0
         s_len = l..(s)
 
-        is_palindrome = [[False ___ i __ r..(s_len)]
+        is_palindrome = [[F.. ___ i __ r..(s_len)]
                          ___ j __ r..(s_len)]
 
         cuts = [s_len - 1 - i ___ i __ r..(s_len)]

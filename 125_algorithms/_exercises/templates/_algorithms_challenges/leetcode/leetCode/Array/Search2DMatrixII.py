@@ -81,7 +81,7 @@ c.. Solution o..
         right = rawList[split:]
         
         __ n.. left a.. n.. right:
-            r_ False
+            r_ F..
         
         __ left a.. left[-1] __ target:
             r_ True
@@ -95,12 +95,12 @@ c.. Solution o..
         __ l..(right) > 1 a.. right[0] < target:
             r_ self.binarySearch2(right, target)
         
-        r_ False
+        r_ F..
 
     ___ searchMatrix  matrix, target
 
         __ n.. any(matrix
-            r_ False
+            r_ F..
 
         # column + row -
         column, row = 0, l..(matrix) - 1
@@ -116,7 +116,7 @@ c.. Solution o..
             ____
                 column += 1
 
-        r_ False
+        r_ F..
 
     # def searchMatrix(self, matrix, target):
     #     """

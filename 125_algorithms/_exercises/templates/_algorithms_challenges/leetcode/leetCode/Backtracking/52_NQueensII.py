@@ -44,15 +44,15 @@ c.. Solution o..
         ___ i __ r..(row
             # Check for the according col above the current row.
             __ cols_used[i] __ col:
-                r_ False
+                r_ F..
 
             # Check from left-top to right-bottom
             __ cols_used[i] __ col - row + i:
-                r_ False
+                r_ F..
 
             # Check from right-top to left-bottom
             __ cols_used[i] __ col + row - i:
-                r_ False
+                r_ F..
         r_ True
 
 """

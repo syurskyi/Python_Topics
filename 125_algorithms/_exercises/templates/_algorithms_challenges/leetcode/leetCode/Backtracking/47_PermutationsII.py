@@ -54,7 +54,7 @@ c.. Solution_2 o..
                 index -= 1
 
         # Nums is in descending order, just reverse it.
-        r_ False
+        r_ F..
 
 
 """

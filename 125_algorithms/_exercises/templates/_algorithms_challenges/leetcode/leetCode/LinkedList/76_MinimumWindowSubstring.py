@@ -45,7 +45,7 @@ c.. Solution o..
                             win_dict[start_char] -= 1
                             start += 1
                         ____
-                            is_suitable_window = False
+                            is_suitable_window = F..
 
                 # Update the minimum window
                 window_size = end - start + 1

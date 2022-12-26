@@ -14,7 +14,7 @@ c.. Solution o..
                 __ square_sum __ 1:
                     r_ True
                 __ square_sum __ sum_record:
-                    r_ False
+                    r_ F..
                 ____
                     n = square_sum
                     square_sum = 0

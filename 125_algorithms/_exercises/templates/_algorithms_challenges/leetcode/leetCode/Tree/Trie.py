@@ -32,7 +32,7 @@ c.. TrieNode o..
             self.nextNodes = [nextNode]
         ____
             self.nextNodes   # list
-        self.breakable = False
+        self.breakable = F..
     
     ___ addNext  nextNode
         self.nextNodes.a.. nextNode)
@@ -72,21 +72,21 @@ c.. Trie o..
             __ i __ word[0]:
             
                 r_ self._search(i, word[1:])
-        r_ False
+        r_ F..
     
     ___ _search  root, word
         __ n.. word:
             __ root.breakable:
                 r_ True
-            r_ False
+            r_ F..
         __ n.. root.nextNodes:
-            r_ False
+            r_ F..
         
         ___ i __ root.nextNodes:
             __ i __ word[0]:
                 r_ self._search(i, word[1:])
         
-        r_ False
+        r_ F..
 
     ___ startsWith  prefix
         """
@@ -97,20 +97,20 @@ c.. Trie o..
         ___ i __ self.root:
             __ i __ prefix[0]:
                 r_ self._startWith(i, prefix[1:])
-        r_ False
+        r_ F..
     
     ___ _startWith  root, prefix
         __ n.. prefix:
             r_ True
         
         __ n.. root.nextNodes:
-            r_ False
+            r_ F..
         
         ___ i __ root.nextNodes:
             __ i __ prefix[0]:
                 r_ self._startWith(i, prefix[1:])
         
-        r_ False
+        r_ F..
         
     ___ makeATrieNodes  word
         ___ j __ self.root:

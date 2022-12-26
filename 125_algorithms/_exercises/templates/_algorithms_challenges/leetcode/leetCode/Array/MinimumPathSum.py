@@ -31,11 +31,11 @@ https://leetcode.com/problems/minimum-path-sum/description/
 c.. Solution o..
     ___ get_up_left  x, y
         __ y-1 < 0:
-            up = False
+            up = F..
         ____
             up = (x, y-1)
         __ x-1 < 0:
-            left = False
+            left = F..
         ____
             left = (x-1,y)
             

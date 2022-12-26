@@ -91,7 +91,7 @@ ___ judgeEqual(cards, target
         r_ True
 
     __ cards[0][0] > target:
-        r_ False
+        r_ F..
 
     __ cards[0][0] < target:
         # init = target - cards[0][0]
@@ -107,7 +107,7 @@ ___ judgeEqual(cards, target
                     temp.a.. x - d[0])
             dp[i] = temp
     
-    r_ False
+    r_ F..
 
 
 print(maxCardsScope(test2))

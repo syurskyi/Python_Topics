@@ -12,7 +12,7 @@ c.. Solution o..
         visited_word[beginWord] = 1
 
         # BFS: find whether there are shortest transformation sequence(s)
-        find_shortest = False
+        find_shortest = F..
         self.pre_word_list _ # dict
         _____ cur_level:
             __ find_shortest:

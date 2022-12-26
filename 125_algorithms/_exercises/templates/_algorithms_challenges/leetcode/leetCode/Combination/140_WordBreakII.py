@@ -17,7 +17,7 @@ c.. Solution o..
         self.str = s
         self.words = wordDict
 
-        dp = [False ___ i __ r..(self.s_len + 1)]
+        dp = [F.. ___ i __ r..(self.s_len + 1)]
         dp[-1] = True
 
         ___ i __ r..(self.s_len - 1, -1, -1

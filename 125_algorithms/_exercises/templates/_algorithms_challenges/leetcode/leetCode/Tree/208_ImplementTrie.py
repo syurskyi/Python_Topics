@@ -8,7 +8,7 @@
 c.. TrieNode o..
     ___ __init__(self
         self.children _ # dict
-        self.is_word = False
+        self.is_word = F..
 
 
 c.. Trie o..
@@ -29,7 +29,7 @@ c.. Trie o..
         cur_node = self.root
         ___ ch __ word:
             __ ch n.. __ cur_node.children:
-                r_ False
+                r_ F..
             cur_node = cur_node.children[ch]
         r_ cur_node.is_word
 
@@ -39,7 +39,7 @@ c.. Trie o..
         cur_node = self.root
         ___ ch __ prefix:
             __ ch n.. __ cur_node.children:
-                r_ False
+                r_ F..
             cur_node = cur_node.children[ch]
         r_ True
 

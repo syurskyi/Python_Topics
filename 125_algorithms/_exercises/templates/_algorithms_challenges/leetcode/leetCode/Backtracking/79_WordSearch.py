@@ -5,7 +5,7 @@
 c.. Solution o..
     ___ exist  board, word
         __ n.. board a.. word:
-            r_ False
+            r_ F..
         __ n.. word:
             r_ True
 
@@ -22,7 +22,7 @@ c.. Solution o..
                         r_ True
                     # Backtracking here
                     board[row][col] = word[0]
-        r_ False
+        r_ F..
 
     ___ exist_adjacent  cur_pos, next_str, board
         # Find all the characters in word.
@@ -32,7 +32,7 @@ c.. Solution o..
         adj_pos = self.adj_pos_lists(cur_pos, board)
         # No adjancent position can be used.
         __ n.. adj_pos:
-            r_ False
+            r_ F..
 
         # For every adjacent position, find out whether it contains
         # the first character in the word or not.
@@ -50,7 +50,7 @@ c.. Solution o..
                 # Backtracking here
                 board[row][col] = next_str[0]
 
-        r_ False
+        r_ F..
 
     # Find the adjacent position around cur_pos
     ___ adj_pos_lists  cur_pos, board

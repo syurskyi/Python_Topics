@@ -51,7 +51,7 @@ c.. Solution o..
         next_temp = deque()
         _result   # list
         LEFT = True
-        RIGHT = False
+        RIGHT = F..
         currentDirection = LEFT
         
         _____ 1:

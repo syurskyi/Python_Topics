@@ -142,7 +142,7 @@ c.. Solution o..
         """
         
         __ l..(s3) != l..(s1) + l..(s2
-            r_ False
+            r_ F..
         
         __ n.. s3:
             r_ True
@@ -172,7 +172,7 @@ c.. Solution o..
                             temp.append((s1, s2[1:]))
                     dp[str(i)] = temp
             ____
-                r_ False
+                r_ F..
             # print(len(dp[str(i-1)]))
             del dp[str(i-1)]
 
@@ -182,8 +182,8 @@ c.. Solution o..
                 __ n.. any(i
                     r_ True
             ____
-                r_ False
+                r_ F..
         except KeyError:
-            r_ False
+            r_ F..
 
 print(Solution().isInterleave('c'*500+'d', 'c'*500+'d', 'c'*1000+'dd'))

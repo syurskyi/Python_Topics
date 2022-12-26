@@ -10,20 +10,20 @@ c.. Solution o..
         :rtype: bool
         """
         __ (l..(s1) != l..(s2)) or n.. l..(s1) or n.. l..(s2
-            r_ False
+            r_ F..
 
         __ s1 __ s2:
             r_ True
 
         str_l = l..(s1)
         # dp[l][i][j]: whether s1[i:i+l+1] is a scrambled string of s2[j:j+l+1]
-        dp = [[[False ___ i __ xrange(str_l)]
+        dp = [[[F.. ___ i __ xrange(str_l)]
                ___ j __ xrange(str_l)] ___ l __ xrange(str_l)]
 
         # Initialization: dp[0][i][j], s1[i] is a scrambled string of s2[j]
         ___ i __ xrange(str_l
             ___ j __ xrange(str_l
-                dp[0][i][j] = True __ s1[i] __ s2[j] else False
+                dp[0][i][j] = True __ s1[i] __ s2[j] else F..
 
         ___ l __ xrange(1, str_l
             # The length of current substring is l+1

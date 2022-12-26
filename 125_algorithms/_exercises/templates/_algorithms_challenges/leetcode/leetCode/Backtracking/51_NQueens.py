@@ -43,7 +43,7 @@ c.. Solution o..
         ___ col __ r..(n
             __ self.cols[col] a.. self.left_right[row + n - 1 - col] a.. self.right_left[row + col]:
                 matrix[row][col] = "Q"
-                self.cols[col] = self.left_right[row + n - 1 - col] = self.right_left[row + col] = False
+                self.cols[col] = self.left_right[row + n - 1 - col] = self.right_left[row + col] = F..
                 # Solve the child question
                 self.solve(row + 1, matrix, n)
                 # Backtracking here.

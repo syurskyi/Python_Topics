@@ -50,14 +50,14 @@ Halbard,Davie,CN"""
 ___ group_names_by_country(data: s.. data) __ d..:
     countries d.. l..
     # you code
-    split_lines data.s..
+    split_lines ?.s..
     line_cnt 0
     ___ line __ split_lines:
         print(line)
         __ line_cnt __ 0:
             line_cnt += 1
             _____
-        arr line.s..(',')
+        arr ?.s.. ','
         print(arr)
         name arr[1] + " " + arr[0]
         ___

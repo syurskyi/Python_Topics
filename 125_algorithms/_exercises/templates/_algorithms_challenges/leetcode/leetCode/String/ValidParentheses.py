@@ -56,10 +56,10 @@ c.. Solution o..
                     __ stack[-1] __ left_key[i]:
                         stack.pop()
                     ____
-                        r_ False
+                        r_ F..
                 except:
-                    r_ False
+                    r_ F..
 
         __ stack:
-            r_ False
+            r_ F..
         r_ True

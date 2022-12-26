@@ -66,7 +66,7 @@ c.. NestedIterator o..
             __ curr.getList(
                 ___ i __ curr.getList()[::-1]:
                     self.stack.a.. i)
-        r_ False
+        r_ F..
 
 
 c.. NestedIterator_2 o..
@@ -96,7 +96,7 @@ c.. NestedIterator_2 o..
             self.value = next(self.gen)
             r_ True
         except StopIteration:
-            r_ False
+            r_ F..
 
 # Your NestedIterator object will be instantiated and called as such:
 # i, v = NestedIterator(nestedList), []

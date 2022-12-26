@@ -76,14 +76,14 @@ c.. Solution o..
             __ left_node_value:
                 left_value = left_node_value.pop()
             ____
-                r_ False
+                r_ F..
             
             __ _right:
                 __ left_value != _right.val:
-                    r_ False
+                    r_ F..
             ____
                 __ left_value != None:
-                    r_ False
+                    r_ F..
 
             __ _right:
                 right_node.a.. _right.left)

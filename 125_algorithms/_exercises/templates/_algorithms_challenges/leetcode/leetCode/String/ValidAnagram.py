@@ -42,5 +42,5 @@ c.. Solution o..
         """
         __ s..(s) __ s..(t
             r_ True
-        r_ False
+        r_ F..
         

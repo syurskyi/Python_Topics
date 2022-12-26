@@ -20,10 +20,10 @@ c.. Solution o..
                         parenthes_stack[-1] __ match_rule[symble]
                     parenthes_stack.pop()
                 ____
-                    r_ False
+                    r_ F..
         # Have some symbles that is not matched.
         __ parenthes_stack:
-            r_ False
+            r_ F..
 
         r_ True
 

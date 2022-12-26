@@ -39,7 +39,7 @@ c.. Solution o..
         :rtype: bool
         """
         __ n.. root:
-            r_ False
+            r_ F..
         
         ___ helper(prev, root, s..
             __ prev + root.val __ s..:
@@ -54,6 +54,6 @@ c.. Solution o..
                 __ helper(prev + root.val, root.right, s..
                     r_ True
             
-            r_ False
+            r_ F..
     
         r_ helper(0, root, s..)

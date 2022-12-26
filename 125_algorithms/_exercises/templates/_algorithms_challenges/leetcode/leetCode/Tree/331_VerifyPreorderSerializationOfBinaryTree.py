@@ -21,7 +21,7 @@ c.. Solution o..
 
     ___ twoConsecutive  stack
         __ l..(stack) < 3:
-            r_ False
+            r_ F..
         r_ stack[-1] __ stack[-2] __ "#" a.. stack[-3] != "#"
 
 
@@ -45,7 +45,7 @@ c.. Solution_2 o..
         ___ val __ preorder:
             diff -= 1
             __ diff < 0:
-                r_ False
+                r_ F..
             __ val != "#":
                 diff += 2
         r_ diff __ 0

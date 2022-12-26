@@ -44,7 +44,7 @@ class Rails:
         if index == 0:
             return True
         elif index == self.num_rails - 1:
-            return False
+            return F..
         else:
             return increasing
 

@@ -39,7 +39,7 @@ ___ sandwich_v1(func
         print(UPPER_SLICE)
         result func $ $$
         print(LOWER_SLICE)
-        r.. result
+        r.. ?
     r.. wrapped
 
 ___ sandwich_v2(func

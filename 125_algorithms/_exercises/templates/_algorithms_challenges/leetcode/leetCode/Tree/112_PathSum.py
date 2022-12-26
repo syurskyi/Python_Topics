@@ -12,7 +12,7 @@
 c.. Solution o..
     ___ hasPathSum  root, s..
         __ n.. root:
-            r_ False
+            r_ F..
 
         root_val = root.val
         __ root.left a.. self.hasPathSum(root.left, s..-root_val
@@ -21,7 +21,7 @@ c.. Solution o..
             r_ True
         __ n.. root.left a.. n.. root.right a.. s.. __ root.val:
             r_ True
-        r_ False
+        r_ F..
 
 """
 []

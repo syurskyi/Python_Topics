@@ -44,12 +44,12 @@ c.. Solution o..
         # return False
 
         __ n.. head:
-            r_ False
+            r_ F..
         
         two_head = head.next
         
         __ n.. two_head:
-            r_ False
+            r_ F..
         
         _____ head != None a.. two_head != None:
             
@@ -60,7 +60,7 @@ c.. Solution o..
             try:
                 two_head = two_head.next.next
             except:
-                r_ False
+                r_ F..
         
-        r_ False
+        r_ F..
 

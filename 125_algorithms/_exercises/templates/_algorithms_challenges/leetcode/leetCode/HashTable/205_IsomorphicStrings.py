@@ -18,7 +18,7 @@ c.. Solution o..
                 __ replace_hash[s[i]] __ t[i]:
                     pass
                 ____
-                    r_ False
+                    r_ F..
         # t --> s
         replace_hash_2 _ # dict
         ___ i __ r..(str_len
@@ -28,7 +28,7 @@ c.. Solution o..
                 __ replace_hash_2[t[i]] __ s[i]:
                     pass
                 ____
-                    r_ False
+                    r_ F..
 
         r_ True
 
@@ -44,7 +44,7 @@ c.. Solution o..
         str_len = l..(s)
         ___ i __ r..(str_len
             __ s_l[ord(s[i])] != t_l[ord(t[i])]:
-                r_ False
+                r_ F..
             s_l[ord(s[i])], t_l[ord(t[i])] = i, i
         r_ True
 

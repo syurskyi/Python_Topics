@@ -13,14 +13,14 @@ c.. Solution o..
         __ n.. s:
             # .*.*.*.* Return True, others return False.
             __ l..(p) % 2 != 0:
-                r_ False
+                r_ F..
             ___ k __ r..(1, l..(p), 2
                 __ p[k] != "*":
-                    r_ False
+                    r_ F..
             r_ True
 
         # dp = [[False] * (len(s)+1)] * (len(p)+1)
-        dp = [[False ___ col __ r..(l..(s) + 1)]
+        dp = [[F.. ___ col __ r..(l..(s) + 1)]
               ___ row __ r..(l..(p) + 1)]
         dp[-1][-1] = True
 
@@ -45,7 +45,7 @@ c.. Solution o..
                     dp[i][j] = (dp[i - 1][j - 1] a..
                                 (p[i] __ s[j] or p[i] __ "."))
                     # p[i] doesn't match ""
-                    dp[i][-1] = False
+                    dp[i][-1] = F..
 
         r_ dp[l..(p) - 1][l..(s) - 1]
 

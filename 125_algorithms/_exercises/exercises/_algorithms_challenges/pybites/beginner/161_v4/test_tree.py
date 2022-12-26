@@ -1,5 +1,5 @@
 _______ __
-____ tempfile _______ TemporaryDirectory
+____ t.. _______ T..
 
 ____ tree _______ count_dirs_and_files
 
@@ -7,7 +7,7 @@ TMP '/tmp'
 
 
 ___ test_only_files
-    w__ TemporaryDirectory(dir=TMP) __ dirname:
+    w__ T.. dir_T..) __ dirname:
         ___ i __ r..(5
             filename _* i}.txt'
             p.. __.p...j..(dirname, filename)
@@ -18,7 +18,7 @@ ___ test_only_files
 
 
 ___ test_only_dirs
-    w__ TemporaryDirectory(dir=TMP) __ dirname:
+    w__ T.. dir_T..) __ dirname:
         ___ i __ r..(5
             __.makedirs(__.p...j..(dirname, s..(i)))
 
@@ -26,7 +26,7 @@ ___ test_only_dirs
 
 
 ___ test_files_and_dirs
-    w__ TemporaryDirectory(dir=TMP) __ dirname:
+    w__ T.. dir_T..) __ dirname:
         ___ i __ r..(10
             __ i % 2 __ 0:
                 target_dir __.p...j..(dirname, s..(i

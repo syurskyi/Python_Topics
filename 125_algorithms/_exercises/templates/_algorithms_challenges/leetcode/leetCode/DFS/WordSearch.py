@@ -201,7 +201,7 @@ c.. Solution o..
                 __ d2 __ word[0]:
                     __ self.search(board, i2, i, word
                         r_ True
-        r_ False
+        r_ F..
 
     ___ search  board, x, y, word
         """
@@ -212,7 +212,7 @@ c.. Solution o..
         # if x == len(board[0][0]) and y == len(board):
         #     return False
         __ board[y][x] != word[0]:
-            r_ False
+            r_ F..
 
         __ board[y][x] __ word[0]:
             word = word[1:]
@@ -245,7 +245,7 @@ c.. Solution o..
                 __ self.search(board, x+1, y, word # r
                     r_ True
         board[y][x] = temp_data
-        r_ False
+        r_ F..
         # return 
         # if not word:
         #     return True
@@ -387,7 +387,7 @@ c.. Solution o..
                     board[y][x] = raw
                     r_ True
             ____
-                r_ False
+                r_ F..
                 
             # up
             __ y-1 >= 0 a.. board[y-1][x] __ word[1]:
@@ -413,7 +413,7 @@ c.. Solution o..
                     r_ True
                 
             board[y][x] = raw      
-            r_ False
+            r_ F..
         
         ___ i __ r..(l..(board)):
             ___ j __ r..(l..(board[0])):
@@ -421,5 +421,5 @@ c.. Solution o..
                     __ find(board, j, i, word
                         r_ True
 
-        r_ False
+        r_ F..
 

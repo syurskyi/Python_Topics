@@ -115,5 +115,5 @@ c.. Solution o..
                 t_k += 1
                 
             __ s_k2 != t_k2:
-                r_ False
+                r_ F..
         r_ True

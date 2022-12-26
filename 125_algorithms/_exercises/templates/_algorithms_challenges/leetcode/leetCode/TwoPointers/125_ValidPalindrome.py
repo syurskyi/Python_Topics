@@ -23,7 +23,7 @@ c.. Solution o..
             __ pre >= post:
                 ______
             __ s[pre] != s[post]:
-                r_ False
+                r_ F..
             pre += 1
             post -= 1
 

@@ -16,7 +16,7 @@ c.. Solution o..
                 high = mid - 1
             ____
                 low = mid + 1
-        r_ False
+        r_ F..
 
 
 c.. Solution_2 o..

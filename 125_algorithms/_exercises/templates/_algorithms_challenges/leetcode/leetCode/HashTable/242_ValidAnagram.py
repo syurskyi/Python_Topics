@@ -11,10 +11,10 @@ c.. Solution o..
 
         ___ c __ t:
             __ c n.. __ char_hash:
-                r_ False
+                r_ F..
             char_hash[c] -= 1
             __ char_hash[c] < 0:
-                r_ False
+                r_ F..
         r_ n.. s..(char_hash.values())
 
 """

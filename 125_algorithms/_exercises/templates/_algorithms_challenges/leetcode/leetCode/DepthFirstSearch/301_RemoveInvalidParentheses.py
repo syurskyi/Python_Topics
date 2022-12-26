@@ -34,7 +34,7 @@ c.. Solution o..
             ____ c __ ")":
                 count -= 1
                 __ count < 0:
-                    r_ False
+                    r_ F..
             ____
                 pass
 

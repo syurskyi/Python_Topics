@@ -50,7 +50,7 @@ c.. Solution_2 o..
         used _ # dict
         ___ c __ s:
             char_dict[c] = char_dict.get(c, 0) + 1
-            used[c] = False
+            used[c] = F..
 
         res   # list        # Use as a Stack.
         ___ c __ s:
@@ -59,7 +59,7 @@ c.. Solution_2 o..
                 c_
 
             _____ res a.. res[-1] > c a.. char_dict[res[-1]] > 0:
-                used[res[-1]] = False
+                used[res[-1]] = F..
                 res.pop()
 
             res.a.. c)

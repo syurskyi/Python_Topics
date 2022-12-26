@@ -32,4 +32,4 @@ c.. Solution o..
             two_steps = two_steps.next.next
             __ one_step __ two_steps:
                 r_ True
-        r_ False
+        r_ F..

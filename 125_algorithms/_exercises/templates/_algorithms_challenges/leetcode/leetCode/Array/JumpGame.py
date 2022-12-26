@@ -55,7 +55,7 @@ c.. Solution o..
                     index = i
             
             __ current_index __ index:
-                r_ False
+                r_ F..
             
             current_index = index
             dp.a.. base-index)

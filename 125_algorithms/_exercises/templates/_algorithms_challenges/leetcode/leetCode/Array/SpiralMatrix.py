@@ -48,7 +48,7 @@ ___ checkStop(matrix, x, y
                 c_
                 
             __ matrix[i[1]][i[0]] != 'x':
-                r_ False
+                r_ F..
         except IndexError:
             c_
     ____

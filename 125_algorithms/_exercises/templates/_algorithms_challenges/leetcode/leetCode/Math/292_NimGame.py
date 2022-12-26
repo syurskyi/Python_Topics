@@ -9,7 +9,7 @@ c.. Solution o..
         __ n % 4:
             r_ True
         ____
-            r_ False
+            r_ F..
 
 
 c.. Solution_2 o..
@@ -18,10 +18,10 @@ c.. Solution_2 o..
     ___ canWinNim  n
         dp = [True] * (n+1)
         __ n > 3:
-            dp[4] = False
+            dp[4] = F..
             ___ i __ r..(5, n+1
                 __ dp[i-1] a.. dp[i-2] a.. dp[i-3]:
-                    dp[i] = False
+                    dp[i] = F..
         r_ dp[n]
 
 """

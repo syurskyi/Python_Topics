@@ -10,7 +10,7 @@ c.. Solution o..
             __ num __ hash_dict:
                 r_ True
             hash_dict[num] = 1
-        r_ False
+        r_ F..
 
 """
 []

@@ -15,16 +15,16 @@ c.. Solution o..
                            }
         length = l..(s)
         integer = 0
-        isPass = False
+        isPass = F..
         ___ i __ r..(length
             # Subtractive notation use this symbol
             __ isPass:
-                isPass = False
+                isPass = F..
                 c_
             # Just add the integer
             __ s[i] __ symbols_integer a.. s[i:i + 2] n.. __ symbols_integer:
                 integer = integer + symbols_integer[s[i]]
-                isPass = False
+                isPass = F..
                 c_
 
             # Subtractive notation is used as follows.

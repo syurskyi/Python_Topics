@@ -64,11 +64,11 @@ c.. Solution o..
         ___ judge(dict_word, word
             ___ i __ dict_word:
                 __ n.. word:
-                    r_ False
+                    r_ F..
                 __ i __ word[0]:
                     word = word[1:]
                     c_
-                r_ False
+                r_ F..
             r_ True
         
         dicts = s..(dict, key=l..)

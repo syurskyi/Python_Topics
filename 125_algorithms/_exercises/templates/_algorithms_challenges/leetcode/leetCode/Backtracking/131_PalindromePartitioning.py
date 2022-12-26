@@ -10,7 +10,7 @@ c.. Solution o..
         self.end = l..(s)
         self.str = s
 
-        self.is_palindrome = [[False ___ i __ r..(self.end)]
+        self.is_palindrome = [[F.. ___ i __ r..(self.end)]
                               ___ j __ r..(self.end)]
 
         ___ i __ r..(self.end-1, -1, -1
@@ -22,7 +22,7 @@ c.. Solution o..
                 ____ self.is_palindrome[i+1][j-1] a.. s[i] __ s[j]:
                     self.is_palindrome[i][j] = True
                 ____
-                    self.is_palindrome[i][j] = False
+                    self.is_palindrome[i][j] = F..
 
         self.palindrome_partition(0, [])
         r_ self.result

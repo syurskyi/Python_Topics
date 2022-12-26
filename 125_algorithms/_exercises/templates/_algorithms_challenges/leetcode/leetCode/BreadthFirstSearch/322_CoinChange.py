@@ -27,7 +27,7 @@ c.. Solution_2 o..
         # BFS Way.  Scan the possible tree level by level. More Faster!
         __ amount __ 0:
             r_ 0
-        amounts = [False] * (amount + 1)
+        amounts = [F..] * (amount + 1)
         coins_sum = [0]
         count = 0
 

@@ -86,7 +86,7 @@ c.. Solution o..
         :rtype: int
         """
         __ n.. nums:
-            r_ False
+            r_ F..
         
         rotate_index = self.find_rotate(nums)
         
@@ -100,4 +100,4 @@ c.. Solution o..
         two = self.bi_search(nums, target, hi, l..(nums))
         __ two != -1:
             r_ True
-        r_ False
+        r_ F..

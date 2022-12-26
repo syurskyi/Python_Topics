@@ -8,18 +8,18 @@ c.. Solution o..
         :type matrix: List[List[int]]
         :rtype: void Do not return anything, modify matrix in-place instead.
         """
-        __ n.. matrix:
-            r_ []
+        __ n.. ?
+            r_ # list
 
-        m = l..(matrix)
-        n = l..(matrix[0])
+        m _ l.. ?
+        n _ l.. ? 0
 
         # Frist, make sure whether first row and first col is all 0.
-        first_row = False
-        ___ i __ r..(n
-            __ matrix[0][i] __ 0:
+        first_row _ F..
+        ___ i __ r.. ?
+            __ m..|0|? __ 0
                 first_row = True
-        first_col = False
+        first_col = F..
         ___ j __ r..(m
             __ matrix[j][0] __ 0:
                 first_col = True

@@ -17,15 +17,15 @@ c.. Solution o..
         """
         __ n.. s:
             __ p.c..('*') != l..(p
-                r_ False
+                r_ F..
             r_ True
 
         # Optimized for the big data.
         __ l..(p) - p.c..('*') > l..(s
-            r_ False
+            r_ F..
 
         # Initinal process
-        dp = [[False ___ col __ r..(l..(s) + 1)] ___ row __ r..(l..(p) + 1)]
+        dp = [[F.. ___ col __ r..(l..(s) + 1)] ___ row __ r..(l..(p) + 1)]
         dp[0][0] = True     # isMatch("", "") = True
         ___ i __ r..(l..(p)):
             dp[i + 1][0] = dp[i][0] a.. p[i] __ '*'

@@ -15,20 +15,20 @@ c.. Solution o..
                 first, second, others = num[:i], num[i:i+j], num[i+j:]
                 __ self.isValid(first, second, others
                     r_ True
-        r_ False
+        r_ F..
 
     ___ isValid  first, second, others
         # Numbers in the additive sequence cannot have leading zeros,
         __ ((l..(first) > 1 a.. first[0] __ "0") or
                 (l..(second) > 1 a.. second[0] __ "0")):
-            r_ False
+            r_ F..
         sum_str = str(int(first) + int(second))
         __ sum_str __ others:
             r_ True
         ____ others.startswith(sum_str
             r_ self.isValid(second, sum_str, others[l..(sum_str])
         ____
-            r_ False
+            r_ F..
 
 
 c.. Solution_2 o..
@@ -52,7 +52,7 @@ c.. Solution_2 o..
                     ____
                         ______
 
-        r_ False
+        r_ F..
 
 """
 "1123"

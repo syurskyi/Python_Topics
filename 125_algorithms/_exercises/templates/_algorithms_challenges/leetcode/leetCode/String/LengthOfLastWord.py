@@ -20,7 +20,7 @@ c.. Solution o..
             r_ 0
         
         result = 0
-        flag = False
+        flag = F..
         
         ___ i __ s[::-1]:
             __ i __ ' ' a.. n.. flag:

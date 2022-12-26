@@ -9,7 +9,7 @@ c.. Solution o..
             row_hash _ # dict
             ___ c __ row:
                 __ c != "." a.. c __ row_hash:
-                    r_ False
+                    r_ F..
                 row_hash[c] = 1
 
         # check for cols
@@ -17,7 +17,7 @@ c.. Solution o..
             col_hash _ # dict
             ___ row __ board:
                 __ row[i] != "." a.. row[i] __ col_hash:
-                    r_ False
+                    r_ F..
                 col_hash[row[i]] = 1
 
         # check for panel
@@ -29,7 +29,7 @@ c.. Solution o..
                     c = board[i + count // 3][j + count % 3]
                     count += 1
                     __ c != "." a.. c __ panel_hash:
-                        r_ False
+                        r_ F..
                     panel_hash[c] = 1
 
         r_ True

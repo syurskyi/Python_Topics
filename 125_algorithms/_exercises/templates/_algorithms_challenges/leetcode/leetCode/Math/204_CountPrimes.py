@@ -27,11 +27,11 @@ c.. Solution o..
         __ n <= 2:
             r_ 0
         nums = [True] * n
-        nums[:2] = [False] * 2
-        nums[2:n:2] = [False] * ((n-1)/2)
+        nums[:2] = [F..] * 2
+        nums[2:n:2] = [F..] * ((n-1)/2)
         ___ i __ r..(3, int(n ** 0.5) + 1, 2
             __ nums[i]:
-                nums[i*i:n:i] = [False] * ((n-i*i-1)/i+1)
+                nums[i*i:n:i] = [F..] * ((n-i*i-1)/i+1)
 
         r_ s..(nums)+1
 

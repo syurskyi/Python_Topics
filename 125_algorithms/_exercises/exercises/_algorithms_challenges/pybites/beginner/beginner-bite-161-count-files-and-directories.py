@@ -53,6 +53,6 @@ ___ count_dirs_and_files(directory='.'
         count_dirs += l..(number_of_dirs)
         count_files += l..(number_of_files)
     result (count_dirs, count_files)
-    r.. result
+    r.. ?
 
 print(count_dirs_and_files

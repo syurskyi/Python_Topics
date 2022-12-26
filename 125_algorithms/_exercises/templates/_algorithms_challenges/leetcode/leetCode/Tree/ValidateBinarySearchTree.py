@@ -74,5 +74,5 @@ c.. Solution o..
                 __ inOrderTraversal(root.right) __ -1:
                     r_ -1
         __ inOrderTraversal(root) __ -1:
-            r_ False
+            r_ F..
         r_ True

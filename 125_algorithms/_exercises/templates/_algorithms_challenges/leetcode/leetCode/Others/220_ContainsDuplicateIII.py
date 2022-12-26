@@ -14,7 +14,7 @@ c.. Solution o..
     """
     ___ containsNearbyAlmostDuplicate  nums, k, t
         __ t < 0 or k < 1:
-            r_ False
+            r_ F..
         buckets _ # dict
         ___ i, val __ enumerate(nums
             bucket_num = val / (t+1)
@@ -29,7 +29,7 @@ c.. Solution o..
             __ l..(buckets) > k:
                 del buckets[nums[i - k] / (t+1)]
 
-        r_ False
+        r_ F..
 
     # Intuitively, easy to understand, but time limit exceed.
     """

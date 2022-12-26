@@ -14,16 +14,16 @@ c.. Solution o..
             __ s2 __ s3:
                 r_ True
             ____
-                r_ False
+                r_ F..
         s1_l = l..(s1)
         s2_l = l..(s2)
         s3_l = l..(s3)
         __ s3_l != s1_l + s2_l:
-            r_ False
+            r_ F..
 
         # dp[i][j] is true when s3[i+j-1] is formed by the interleaving of
         # s1[:i](previous i chars of s1) and s2[:j](previous j chars of s2).
-        dp = [[False ___ j __ xrange(s2_l+1)] ___ i __ xrange(s1_l+1)]
+        dp = [[F.. ___ j __ xrange(s2_l+1)] ___ i __ xrange(s1_l+1)]
         dp[0][0] = True
 
         ___ i __ xrange(1, s1_l+1

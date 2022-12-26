@@ -11,7 +11,7 @@ c.. Solution o..
     """
     ___ searchMatrix  matrix, target
         __ n.. matrix or l..(matrix[0]) < 1:
-            r_ False
+            r_ F..
         m, n = l..(matrix), l..(matrix[0])
 
         # We start search the matrix from top right corner
@@ -24,7 +24,7 @@ c.. Solution o..
                 col -= 1
             ____
                 row += 1
-        r_ False
+        r_ F..
 
 
 c.. Solution_2 o..
@@ -33,7 +33,7 @@ c.. Solution_2 o..
     # https://leetcode.com/discuss/47571/4-lines-c-6-lines-ruby-7-lines-python-1-liners
     ___ searchMatrix  matrix, target
         __ n.. matrix or l..(matrix[0]) < 1:
-            r_ False
+            r_ F..
         n = l..(matrix[0])
         col = -1
         ___ row __ matrix:
@@ -41,7 +41,7 @@ c.. Solution_2 o..
                 col -= 1
             __ row[col] __ target:
                 r_ True
-        r_ False
+        r_ F..
 
 
 c.. Solution_3 o..

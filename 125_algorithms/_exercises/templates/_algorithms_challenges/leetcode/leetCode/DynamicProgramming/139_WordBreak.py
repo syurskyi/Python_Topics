@@ -12,9 +12,9 @@ c.. Solution o..
         __ n.. s:
             r_ True
         __ n.. wordDict:
-            r_ False
+            r_ F..
         s_len = l..(s)
-        dp = [False ___ i __ r..(s_len+1)]
+        dp = [F.. ___ i __ r..(s_len+1)]
         dp[-1] = True
         ___ i __ r..(s_len-1, -1, -1
             k = 0

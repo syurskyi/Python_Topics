@@ -21,7 +21,7 @@ c.. LRUCache:
         __ key __ self.cache:
             self.cache.pop(key)
         ____ l..(self.cache) __ self.capacity:
-            self.cache.popitem(last=False)
+            self.cache.popitem(last=F..)
         ____
             pass
         self.cache[key] = value

@@ -19,14 +19,14 @@ c.. Solution o..
         __ n.. p a.. n.. q:
             r_ True
         __ (n.. p a.. q) or (p a.. n.. q
-            r_ False
+            r_ F..
 
         __ p.val != q.val:
-            r_ False
+            r_ F..
         __ n.. self.isSameTree(p.left, q.left
-            r_ False
+            r_ F..
         __ n.. self.isSameTree(p.right, q.right
-            r_ False
+            r_ F..
 
         r_ True
 

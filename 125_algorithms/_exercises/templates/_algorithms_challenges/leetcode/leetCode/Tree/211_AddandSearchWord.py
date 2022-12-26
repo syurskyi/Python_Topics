@@ -21,22 +21,22 @@ c.. WordDictionary o..
         contain the dot character '.' to represent any one letter.
         """
         __ n.. word:
-            r_ False
+            r_ F..
         ___ w __ self.words_dict[l..(word)]:
             is_match = True
             ___ i, ch __ enumerate(word
                 __ ch != "." a.. ch != w[i]:
-                    is_match = False
+                    is_match = F..
                     ______
             __ is_match:
                 r_ True
-        r_ False
+        r_ F..
 
 
 c.. TrieNode(
     # Refer to: 208. Implement Trie
     ___ __init__(self
-        self.is_word = False
+        self.is_word = F..
         self.childrens _ # dict
 
 
@@ -74,16 +74,16 @@ c.. WordDictionary_Trie o..
                     __ self._dfs_searh(word[i+1:],
                                        cur_node.childrens[child_ch]
                         r_ True
-                r_ False
+                r_ F..
             ____
                 __ ch n.. __ cur_node.childrens:
-                    r_ False
+                    r_ F..
                 ____
                     cur_node = cur_node.childrens[ch]
         __ cur_node.is_word:
             r_ True
         ____
-            r_ False
+            r_ F..
 
 """
 if __name__ == '__main__':

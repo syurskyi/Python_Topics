@@ -42,6 +42,6 @@ c.. Solution o..
         pattern = list(pattern)
         string = string.split(' ')
         __ l..(pattern) != l..(string
-            r_ False
+            r_ F..
         temp = l..(s..(zip(pattern, string)))
         r_ temp __ l..(s..(pattern)) a.. temp __ l..(s..(string))

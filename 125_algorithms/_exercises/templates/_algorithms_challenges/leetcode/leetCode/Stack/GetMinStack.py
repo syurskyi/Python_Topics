@@ -49,7 +49,7 @@ c.. Stack:
 
     ___ empty(self
         __ self.stored:
-            r_ False
+            r_ F..
         r_ True
 
 

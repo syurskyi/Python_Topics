@@ -12,7 +12,7 @@ c.. Solution o..
         """
         s = s.strip()
         __ n.. s:
-            r_ False
+            r_ F..
 
         # DFA states change table
         DFA_states_change = {
@@ -30,17 +30,17 @@ c.. Solution o..
         ___ char __ s:
             input_num = self.input_num(char)
             __ n.. input_num:
-                r_ False
+                r_ F..
             next_state = DFA_states_change[current_state][input_num]
             __ next_state __ -1:
-                r_ False
+                r_ F..
             current_state = next_state
 
         __ (current_state __ 2 or current_state __ 3 or
            current_state __ 4 or current_state __ 7
             r_ True
         ____
-            r_ False
+            r_ F..
 
     ___ input_num  char
         __ char __ "0123456789":

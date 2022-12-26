@@ -7,10 +7,10 @@
 c.. Solution o..
     ___ isPowerOfTwo  n
         __ n <= 0:
-            r_ False
+            r_ F..
         _____ n:
             __ n & 1 a.. n != 1:
-                r_ False
+                r_ F..
             n >>= 1
         r_ True
 

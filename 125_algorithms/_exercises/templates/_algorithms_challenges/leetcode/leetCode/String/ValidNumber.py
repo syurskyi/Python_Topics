@@ -46,4 +46,4 @@ c.. Solution o..
             float(s)
             r_ True
         except:
-            r_ False
+            r_ F..

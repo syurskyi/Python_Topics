@@ -5,7 +5,7 @@
 c.. Solution o..
     ___ isPalindrome  x
         __ x < 0:
-            r_ False
+            r_ F..
         reversed_x = 0
         original_x = x
         _____ x > 0:

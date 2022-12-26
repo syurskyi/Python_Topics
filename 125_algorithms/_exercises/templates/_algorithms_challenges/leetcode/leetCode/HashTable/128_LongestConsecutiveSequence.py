@@ -7,7 +7,7 @@ c.. Solution o..
         """
         Build a hash to find whether a num in nums or not in O(1) time.
         """
-        nums_dict = {num: False ___ num __ nums}
+        nums_dict = {num: F.. ___ num __ nums}
         max_length = 0
         ___ num __ nums:
             __ nums_dict[num]:

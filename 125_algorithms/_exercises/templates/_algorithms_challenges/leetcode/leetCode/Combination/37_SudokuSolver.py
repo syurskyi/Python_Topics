@@ -42,13 +42,13 @@ c.. Solution o..
                     # Remember to bacrtrack here.
                     board[r][c] = "."
                     self.backtrack(n - 1, r, c)
-            r_ False
+            r_ F..
 
     ___ try_num  num, row, col
         panel_pos = row / 3 * 3 + col / 3
         __ (self.rows_hash[row][num] or self.cols_hash[col][num] or
                 self.panel_hash[panel_pos][num]
-            r_ False
+            r_ F..
         ____
             self.rows_hash[row][num] = 1
             self.cols_hash[col][num] = 1

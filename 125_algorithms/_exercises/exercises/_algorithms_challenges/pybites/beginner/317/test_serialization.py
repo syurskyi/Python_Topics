@@ -32,8 +32,8 @@ ___ test_deserialize_movie_rented_data
 
 ___ test_serialize_and_deserialize_other_data
     data [
-        Bite('Sum of Numbers', 1, 'Beginner'),
-        Bite('Regex Fun', 2, 'Advanced'),
+        ? 'Sum of Numbers', 1, 'Beginner'),
+        ? 'Regex Fun', 2, 'Advanced'),
     ]
     pkl_file TMP / s..(i..(t__.t__()))
     serialize(pkl_file, data=data)

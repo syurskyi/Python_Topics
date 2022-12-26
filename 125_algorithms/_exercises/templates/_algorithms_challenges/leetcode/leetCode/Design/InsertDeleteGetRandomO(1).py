@@ -84,7 +84,7 @@ c.. RandomizedSet o..
         :rtype: bool
         """
         __ self.data_dict.get(val) is n.. None:
-            r_ False
+            r_ F..
         
         self.data_dict[val] = self.length
         self.length += 1
@@ -112,7 +112,7 @@ c.. RandomizedSet o..
 
             r_ True
         
-        r_ False
+        r_ F..
         
     ___ getRandom(self
         """

@@ -18,7 +18,7 @@ c.. BSTIterator o..
         __ self.cur_node or self.node_stack:
             r_ True
         ____
-            r_ False
+            r_ F..
 
     ___ next(self
         # inorder traversal

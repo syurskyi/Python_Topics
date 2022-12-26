@@ -29,13 +29,13 @@ The "special case" of the e-line stabbing the a-line from below.
 c.. Solution o..
     ___ isSelfCrossing  x
         __ n.. x or l..(x) < 4:
-            r_ False
+            r_ F..
         b = c = d = e = f = 0  # Initinal
         ___ a __ x:
             __ d >= b > 0 a.. (a >= c > 0 or (a >= c-e >= 0 a.. f >= d-b)):
                 r_ True
             b, c, d, e, f = a, b, c, d, e
-        r_ False
+        r_ F..
 
 """
 []
