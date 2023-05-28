@@ -9,4 +9,4 @@ class MyClass:
     def __init__(self, value):
         self.v = value
 c = MyClass(5)
-print(c.v)
+# print(c.v)

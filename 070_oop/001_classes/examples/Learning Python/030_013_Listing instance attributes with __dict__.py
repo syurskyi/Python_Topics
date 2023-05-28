@@ -1,4 +1,6 @@
 from lister import ListInstance
+
+
 class Spam(ListInstance):                    # Inherit a __str__ method
     def __init__(self):
         self.data1 = 'food'
@@ -20,17 +22,21 @@ x                                            # The __repr__ still is a default
 
 from lister import *                  # Get lister tool classes
 
+
 class Super:
     def __init__(self):               # Superclass __init__
         self.data1 = 'spam'           # Create instance attrs
+
     def ham(self):
         pass
+
 
 class Sub(Super, ListInstance):       # Mix in ham and a __str__
     def __init__(self):               # listers have access to self
         Super.__init__(self)
         self.data2 = 'eggs'           # More instance attrs
         self.data3 = 42
+
     def spam(self):                   # Define another method here
         pass
 
@@ -49,6 +55,3 @@ print(x)
 #         name a=1
 #         name b=2
 #         name c=3
-
-
-

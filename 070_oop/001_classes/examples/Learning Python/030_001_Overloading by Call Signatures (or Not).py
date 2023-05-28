@@ -10,7 +10,7 @@ class C:
     def meth(self, *args):
         if len(args) == 1:
             pass
-        elif type(arg[0]) == int:
+        elif type(args[0]) == int:
             pass
 
 

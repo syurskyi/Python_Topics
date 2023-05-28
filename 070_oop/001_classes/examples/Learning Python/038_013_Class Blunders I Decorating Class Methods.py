@@ -2,6 +2,7 @@ class tracer:
     def __init__(self, func):                # On @ decorator
         self.calls = 0                       # Save func for later call
         self.func  = func
+
     def __call__(self, *args, **kwargs):     # On call to original function
         self.calls += 1
         print('call %s to %s' % (self.calls, self.func.__name__))

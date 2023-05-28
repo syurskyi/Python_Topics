@@ -10,7 +10,6 @@ class C:
    meth = staticmethod(meth)                     # Rebind name
 
 
-
 class Spam:
     numInstances = 0
     def __init__(self):

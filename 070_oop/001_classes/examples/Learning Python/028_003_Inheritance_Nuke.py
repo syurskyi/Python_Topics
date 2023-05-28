@@ -1,5 +1,6 @@
 import nuke
 
+
 class Super:
     def method(self):
         nuke.tprint('#' * 23 + ' Default behavior')
@@ -9,15 +10,16 @@ class Super:
     def delegate(self):
         self.action()
 
+
 class  Inheritor(Super):
     pass
+
 
 class Replacer(Super):
     def method(self):
         nuke.tprint('#' * 23 + ' Replace method completely')
         blur = nuke.createNode('Blur', inpanel=False)
         nuke.tprint('#' * 23 + ' in Replacer.method')
-
 
 
 class Extender(Super):

@@ -48,15 +48,18 @@ class Tool:
     def __method(self):                 # Becomes _Tool__method
         pass
 
-    def other(self): self.__method()       # Use my internal method
+    def other(self):
+        self.__method()       # Use my internal method
 
 
 class Sub1(Tool, Super):
     pass
 
-    def actions(self): self.method()       # Runs Super.method as expected
+    def actions(self):
+        self.method()       # Runs Super.method as expected
 
 
 class Sub2(Tool):
-    def __init__(self): self.method = 99   # Doesn't break Tool.__method
+    def __init__(self):
+        self.method = 99   # Doesn't break Tool.__method
 

@@ -41,6 +41,7 @@ class Super:
     def method(self):
         print('#' * 23 + ' Default behavior')
         print('in Super.method')           # Default behavior
+
     def delegate(self):
         self.action()                      # Expected to be defined
 

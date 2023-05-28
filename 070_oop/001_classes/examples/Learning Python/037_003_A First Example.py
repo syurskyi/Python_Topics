@@ -1,12 +1,15 @@
 class Person:                       # Use (object) in 2.6
     def __init__(self, name):
         self._name = name
+
     def getName(self):
         print('fetch...')
         return self._name
+
     def setName(self, value):
         print('change...')
         self._name = value
+
     def delName(self):
         print('remove...')
         del self._name
@@ -28,15 +31,19 @@ print('#' * 82)
 print('#' * 82)
 print('#' * 82)
 
+
 class Super:
     def __init__(self, name):
         self._name = name
+
     def getName(self):
         print('fetch...')
         return self._name
+
     def setName(self, value):
         print('change...')
         self._name = value
+
     def delName(self):
         print('remove...')
         del self._name
