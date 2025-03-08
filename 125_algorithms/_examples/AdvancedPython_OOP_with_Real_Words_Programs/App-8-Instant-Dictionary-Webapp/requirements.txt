@@ -9,7 +9,7 @@ httpcore==0.12.2
 httpx==0.16.1
 idna==2.10
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 justpy==0.1.5
 MarkupSafe==1.1.1
 numpy==1.19.4
