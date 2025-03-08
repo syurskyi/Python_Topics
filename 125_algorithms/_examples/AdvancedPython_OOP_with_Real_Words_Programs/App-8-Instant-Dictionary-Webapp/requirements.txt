@@ -20,7 +20,7 @@ requests==2.25.1
 rfc3986==1.4.0
 six==1.15.0
 sniffio==1.2.0
-starlette==0.14.1
+starlette==0.25.0
 urllib3==1.26.2
 uvicorn==0.13.3
 websockets==8.1
